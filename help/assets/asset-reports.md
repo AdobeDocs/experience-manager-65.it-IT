@@ -1,0 +1,141 @@
+---
+title: Report sulle risorse digitali
+description: Comprendi i rapporti sulle tue risorse in Risorse AEM che ti aiutano a capire l’utilizzo, l’attività e la condivisione delle tue risorse digitali.
+contentOwner: AG
+translation-type: tm+mt
+source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+
+---
+
+
+# Rapporti su risorse {#asset-reports}
+
+Il reporting delle risorse è uno strumento chiave per valutare l’utilità della distribuzione di Risorse Adobe Experience Manager (AEM). Risorse AEM consente di generare vari rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, su come gli utenti interagiscono con le risorse e quali risorse vengono scaricate e condivise.
+
+Utilizzate le informazioni contenute nei rapporti per derivare le metriche di successo chiave per misurare l&#39;adozione di AEM Assets all&#39;interno dell&#39;azienda e da parte dei clienti.
+
+Il framework di reporting di AEM Assets utilizza i processi Sling per elaborare in modo asincrono le richieste di rapporti in modo ordinato. È scalabile per archivi di grandi dimensioni. L&#39;elaborazione asincrona dei report aumenta l&#39;efficienza e la velocità con cui vengono generati i report.
+
+L&#39;interfaccia di gestione dei report è intuitiva e include opzioni e controlli di granulometria per accedere ai report archiviati e visualizzare gli stati di esecuzione dei report (operazione riuscita, non riuscita e in coda).
+
+Quando viene generato un rapporto, riceverete una notifica via e-mail (facoltativo) e una notifica nella inbox. Puoi visualizzare, scaricare o eliminare un rapporto dalla pagina di elenco dei rapporti, dove vengono visualizzati tutti i rapporti generati in precedenza.
+
+## Generazione di rapporti {#generate-reports}
+
+Risorse AEM genera i seguenti rapporti standard:
+
+* Carica
+* Scarica
+* Scadenza
+* Modifiche
+* Pubblicazione
+* Pubblicazione Brand Portal
+* Utilizzo disco
+* File
+* Condivisione collegamenti
+
+Gli amministratori di AEM possono generare e personalizzare facilmente questi rapporti per la vostra implementazione. Per generare un rapporto, un amministratore può effettuare le seguenti operazioni:
+
+1. Toccate o fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
+
+![Spostamento del rapporto risorse](assets/AssetsReportNavigation.png)
+
+1. Nella pagina Rapporti risorse, toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto che desiderate creare e toccate o fate clic su **[!UICONTROL Avanti]**.
+
+   ![Choose_report](assets/choose_report.png)
+
+   >[!NOTE]
+   >
+   >Prima di generare un rapporto sulle **[!UICONTROL risorse scaricate]** , accertatevi che il servizio di download sia attivato. Dalla console Web (`https://[aem_server]:[port]/system/console/configMgr`), aprite la configurazione del registratore **[!UICONTROL eventi CQ]** Day DAM e selezionate l&#39;opzione **[!UICONTROL Risorsa scaricata (DOWNLOADED)]** in Tipi di evento se non è già selezionata.
+
+   >[!NOTE]
+   >
+   >Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto Risorse scaricate. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
+
+1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è */content/dam*. Potete specificare un percorso diverso.
+
+   ![report_configuration](assets/report_configuration.png)
+
+   Scegli l&#39;intervallo di date per il rapporto.
+
+   Puoi scegliere di generare il rapporto adesso o in una data e in un&#39;ora future.
+
+   >[!NOTE]
+   >
+   >Se scegli di pianificare il rapporto in un secondo momento, accertati di specificare la data e l’ora nei campi Data e Ora. Se non si specifica alcun valore, il motore di report lo gestisce come un report da generare all&#39;istante.
+
+   I campi di configurazione possono essere diversi in base al tipo di rapporto creato. Ad esempio, il rapporto Uso **[!UICONTROL del]** disco offre opzioni per includere le rappresentazioni delle risorse nel calcolo dello spazio su disco utilizzato dalle risorse. Potete scegliere di includere o escludere le risorse nelle sottocartelle per il calcolo dell’utilizzo del disco.
+
+   >[!NOTE]
+   >
+   >Il rapporto Uso **[!UICONTROL del]** disco non include campi intervallo di date perché indica solo l&#39;utilizzo corrente dello spazio su disco.
+
+   ![disk_usage_configuration](assets/disk_usage_configuration.png)
+
+   Quando create il rapporto **[!UICONTROL File]** , potete includere o escludere sottocartelle. Tuttavia, non potete includere rappresentazioni delle risorse per questo rapporto.
+
+   ![files_report](assets/files_report.png)
+
+   Il rapporto Condivisione **** collegamenti visualizza gli URL delle risorse condivise con utenti esterni da Risorse AEM. Include gli ID e-mail dell’utente che ha condiviso le risorse, gli ID e-mail degli utenti con cui le risorse sono condivise, la data di condivisione e la data di scadenza del collegamento. Le colonne non sono personalizzabili.
+
+   Il rapporto Condivisione **** collegamenti non include opzioni per sottocartelle e rappresentazioni, in quanto pubblica semplicemente gli URL condivisi visualizzati sotto di `/var/dam/share`.
+
+   ![link_share](assets/link_share.png)
+
+1. Toccate/fate clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
+
+1. Nella pagina **[!UICONTROL Configura colonne]** , per impostazione predefinita nel rapporto vengono selezionate alcune colonne. È possibile selezionare più colonne. Deselezionate una colonna selezionata per escluderla nel rapporto.
+
+   ![configure_Columns](assets/configure_columns.png)
+
+   Per visualizzare un nome di colonna personalizzato o un percorso di proprietà, configurate le proprietà per il binario della risorsa sotto il nodo jcr:content in CRX. In alternativa, aggiungetelo tramite il selettore del percorso della proprietà.
+
+   ![custom_Columns](assets/custom_columns.png)
+
+1. Toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
+1. Nella pagina Rapporti risorse, lo stato di generazione del rapporto si basa sullo stato corrente del processo del rapporto, ad esempio Successo, Non riuscito, In coda o Pianificato. Lo stesso stato viene visualizzato nella inbox delle notifiche. Per visualizzare la pagina del rapporto, toccate o fate clic sul collegamento del rapporto. In alternativa, seleziona il rapporto e tocca **[!UICONTROL Visualizza]** dalla barra degli strumenti.
+
+   ![report_page](assets/report_page.png)
+
+   Toccate **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
+
+## Aggiungere colonne personalizzate {#add-custom-columns}
+
+Puoi aggiungere colonne personalizzate ai report seguenti per visualizzare più dati per i tuoi requisiti personalizzati:
+
+* Carica
+* Scarica
+* Scadenza
+* Modifiche
+* Pubblicazione
+* Pubblicazione Brand Portal
+* File
+
+1. Toccate o fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
+1. Nella pagina Rapporti risorse, toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+
+1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto che desiderate creare e toccate o fate clic su **[!UICONTROL Avanti]**.
+1. Configura i dettagli del rapporto come titolo, descrizione, miniatura, percorso della cartella e intervallo di date, a seconda delle necessità.
+
+1. Per visualizzare una colonna personalizzata, specificate il nome della colonna in in Colonne **[!UICONTROL personalizzate]**.
+
+   ![custom_Columns-1](assets/custom_columns-1.png)
+
+1. Aggiungete il percorso della proprietà sotto il `jcr:content` nodo in CRXDE utilizzando il selettore del percorso della proprietà. 
+In alternativa, digitare il percorso nel campo percorso della proprietà.
+
+   ![property_picker](assets/property_picker.png)
+
+   Per aggiungere altre colonne personalizzate, toccate/fate clic su **[!UICONTROL Aggiungi]** e ripetete i passaggi 5 e 6.
+
+1. Toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
+
+## Configurare il servizio di eliminazione {#configure-purging-service}
+
+Per rimuovere i rapporti non più necessari, configura il servizio Rimozione rapporti DAM dalla console Web per eliminare i rapporti esistenti in base alla loro quantità e età.
+
+1. Accedere alla console Web (Gestione configurazione) da `https://[aem_server]:[port]/system/console/configMgr`.
+1. Apri la configurazione **[!UICONTROL DAM Report Purge Service]** .
+1. Specificare la frequenza (intervallo di tempo) per il servizio di eliminazione nel `scheduler.expression.name` campo. Puoi anche configurare la soglia di età e quantità per i rapporti.
+1. Salva le modifiche.
