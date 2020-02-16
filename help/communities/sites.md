@@ -1,0 +1,98 @@
+---
+title: Modelli per siti
+seo-title: Modelli per siti
+description: Come accedere alla console Modelli per sito
+seo-description: Come accedere alla console Modelli per sito
+uuid: d2f7556e-7e43-424e-82f1-41790aeb2d98
+contentOwner: Janice Kendall
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: administering
+content-type: reference
+discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# Modelli per siti {#site-templates}
+
+La console Modelli per sito è molto simile alla console Modelli [per](tools-groups.md) gruppi, incentrata sulle funzioni di interesse per i gruppi community.
+
+>[!NOTE]
+>
+>Le console per la creazione di siti [](sites-console.md)community, modelli [di siti](sites.md)community, modelli [di gruppi](tools-groups.md) community e funzioni [](functions.md) community sono utilizzabili solo nell’ambiente di authoring.
+
+## Console Modelli per siti {#site-templates-console}
+
+Nell’ambiente di authoring, per accedere alla console Siti community
+
+* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Modelli per siti]**
+
+Questa console visualizza i modelli da cui è possibile creare un sito [](sites-console.md) community e consente di creare nuovi modelli di sito.
+
+![chlimage_1-18](assets/chlimage_1-18.png)
+
+## Crea modello sito {#create-site-template}
+
+Per iniziare a creare un nuovo modello di sito, selezionate `Create`.
+
+Viene visualizzato il pannello Editor sito che contiene 3 sottopannelli:
+
+### Basic info {#basic-info}
+
+![chlimage_1-19](assets/chlimage_1-19.png)
+
+Nel pannello Informazioni di base, un nome, una descrizione e se il modello è abilitato o disabilitato sono configurati:
+
+* **[!UICONTROL Nome]** modello sito community Il nome del modello id
+
+* **[!UICONTROL Descrizione]** del modello del sito community
+
+* **[!UICONTROL Disattivato/Abilitato]** Un interruttore di attivazione/disattivazione che controlla se il modello è referente o meno
+
+### Miniatura {#thumbnail}
+
+![chlimage_1-20](assets/chlimage_1-20.png)
+
+(Facoltativo) Selezionate l’icona Carica immagine per visualizzare una miniatura con il nome e la descrizione per gli autori dei siti della community.
+
+### Struttura {#structure}
+
+![chlimage_1-21](assets/chlimage_1-21.png)
+
+Per aggiungere funzioni per la community, trascinate dal lato destro a sinistra nell&#39;ordine in cui dovrebbero essere visualizzati i collegamenti del menu del sito. Gli stili verranno applicati al modello durante la creazione del sito.
+
+Ad esempio, se desiderate una pagina principale, trascinate la funzione Pagina dalla libreria e rilasciatela sotto il generatore di modelli. Viene visualizzata la finestra di dialogo di configurazione della pagina. Per informazioni sulle finestre di dialogo di configurazione, vedere la console [](functions.md) delle funzioni.
+
+Trascinate e rilasciate tutte le altre funzioni della community desiderate per un sito community basato su questo modello.
+
+La funzione page fornisce una pagina vuota. La funzione group consente di creare un sito di gruppo (sub-community) all&#39;interno del sito community.
+
+>[!CAUTION]
+>
+>La funzione group *non* deve essere la *prima né l&#39;unica* funzione nella struttura del sito.
+>
+>Qualsiasi altra funzione, come la funzione [](functions.md#page-function)page, deve essere inclusa ed elencata per prima.
+
+![chlimage_1-22](assets/chlimage_1-22.png)
+
+### Modelli di gruppo per la funzione Gruppi {#group-templates-for-groups-function}
+
+Quando si inserisce una funzione di gruppo nel modello di sito, la configurazione richiede la specifica delle scelte di modelli di gruppo consentite quando viene creato un nuovo gruppo nell&#39;ambiente di pubblicazione.
+
+>[!CAUTION]
+>
+>La funzione Groups *non* deve essere né la *prima né l&#39;unica* funzione nella struttura del sito.
+
+![chlimage_1-23](assets/chlimage_1-23.png)
+
+Selezionando due o più modelli di gruppo community, l&#39;amministratore del gruppo può scegliere se creare effettivamente un nuovo gruppo nella community.
+
+![chlimage_1-24](assets/chlimage_1-24.png)
+
+## Modifica modello sito{#edit-site-template}
+
+Quando visualizzate i modelli di sito nella console [principale Modelli](#site-templates-console)sito, è possibile selezionare un modello di sito esistente da modificare.
+
+Questo processo fornisce gli stessi pannelli utilizzati per [creare un modello](#create-site-template)di sito.
