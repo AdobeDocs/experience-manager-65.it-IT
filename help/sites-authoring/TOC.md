@@ -1,0 +1,92 @@
+---
+cloud: experience-cloud
+product: adobe experience manager
+audience: end-user
+user-guide-title: AEM 6.5 Authoring User Guide
+translation-type: tm+mt
+source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+
+---
+
+
+# AEM 6.5 Authoring User Guide {#authoring}
+
++ [Panoramica della Guida utente all’authoring](home.md)
++ Attività, strumenti e concetti fondamentali per l’authoring AEM {#essentials}
+   + [Primi passi per gli autori](first-steps.md)
+   + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
+   + [Concetto di authoring](author.md)
+   + [Operazioni di base](basic-handling.md)
+   + [Ricerca](search.md)
+   + [Configurazione dell’ambiente dell’account](user-properties.md)
+   + [Casella in entrata](inbox.md)
+   + [Scelte rapide da tastiera per le console](keyboard-shortcuts.md)
+   + [Selezione dell’interfaccia](select-ui.md)
++ Authoring {#authoring}
+   + [Ambiente e strumenti di authoring](author-environment-tools.md)
+   + [Annotazioni durante la modifica di una pagina](annotations.md)
+   + [Creazione e organizzazione delle pagine](managing-pages.md)
+   + [Modifica del contenuto di una pagina](editing-content.md)
+   + [Utilizzo dell’editor Rich Text per creare contenuto](rich-text-editor.md)
+   + [Modifica delle proprietà di una pagina](editing-page-properties.md)
+   + [Pubblicazione delle pagine](publishing-pages.md)
+   + [Authoring delle pagine con frammenti di contenuto](content-fragments.md)
+   + [Frammenti esperienza](experience-fragments.md)
+   + [Esportazione in formato CSV](csv-export.md)
+   + [Componenti](default-components.md)
+   + [Authoring di una pagina per dispositivi mobili](mobile.md)
+   + [Risoluzione di problemi AEM nell’ambiente di creazione](troubleshooting.md)
+   + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
+   + [Best practice](best-practices.md)
++ Funzioni per il sito e le pagine {#siteandpage}
+   + [Utilizzo dei tag](tags.md)
+   + [Creazione di modelli di pagina](templates.md)
+   + [Sistema di stili](style-system.md)
+   + [Utilizzo delle versioni di una pagina](working-with-page-versions.md)
+   + [Differenze tra pagine](page-diff.md)
+   + [Console Componenti](default-components-console.md)
+   + [Layout reattivo](responsive-layout.md)
+   + [Approfondimenti contenuto](content-insights.md)
+   + [Creazione di contenuto accessibile (conformità WCAG 2.0)](creating-accessible-content.md)
+   + [Scaffolding](scaffolding.md)
+   + [Configurazione dei componenti in modalità Progettazione](default-components-designmode.md)
+   + [Componenti di base](default-components-foundation.md)
+   + [Scaffolding](scaffolding.md)
+   + [Visualizzazione dei dati analitici sulle pagine](page-analytics-using.md)
++ Progetti {#projects}
+   + [Progetti](projects.md)
+   + [Gestione di progetti](touch-ui-managing-projects.md)
+   + [Utilizzo delle attività](task-content.md)
+   + [Integrazione di Progetto creativo e PIM](managing-product-information.md)
+   + [Utilizzo dei flussi di lavoro del progetto](projects-with-workflows.md)
++ Lanci {#launches}
+   + [Lanci](launches.md)
+   + [Creazione di lanci](launches-creating.md)
+   + [Modifica dei lanci](launches-editing.md)
+   + [Promozione del lancio](launches-promoting.md)
++ Flussi di lavoro {#workflows}
+   + [Utilizzo dei flussi di lavoro](workflows.md)
+   + [Applicazione dei flussi di lavoro alle pagine](workflows-applying.md)
+   + [Partecipazione ai flussi di lavoro](workflows-participating.md)
+   + [Utilizzo dei flussi di lavoro del progetto](projects-with-workflows.md)
++ Prestazioni pagina {#page-performance}
+   + [Approfondimenti contenuto](content-insights.md)
+   + [Analisi delle prestazioni della pagina](ci-analyze.md)
+   + [Visualizzazione dei dati analitici sulle pagine](pa-using.md)
+   + [Aggiunta delle funzionalità di Search&amp;Promote alla pagina](search-and-promote.md)
++ Personalizzazione {#personalization}
+   + [Personalizzazione](personalization.md)
+   + [Anteprima delle pagine tramite i dati di ContextHub](ch-previewing.md)
+   + [Creazione di contenuti mirati utilizzando la modalità Targeting](content-targeting-touch.md)
+   + [Lavorare con i contenuti di destinazione in multisito](multisite-support-targeted-content.md)
+   + [Struttura della gestione multisito per contenuti di destinazione](technical-multisite-targeted.md)
+   + [Gestione delle attività](activitylib.md) 
+   + [Gestione pubblico](managing-audiences.md)
+   + [Creazione e gestione di Offerte](offerlib.md) 
+   + [Informazioni sulla segmentazione](segmentation-overview.md)
++ AEM e Adobe Campaign {aem-adobe-campaign}
+   + [Utilizzo di Adobe Campaign](adobe-campaign.md)
+   + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
+   + [Targeting con Adobe Campaign](target-adobe-campaign.md)
+   + [Creazione di moduli di Adobe Campaign in AEM](adobe-campaign-forms.md)
+   + [Componenti di Adobe Campaign](adobe-campaign-components.md)
