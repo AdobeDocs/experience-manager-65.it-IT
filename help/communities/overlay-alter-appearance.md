@@ -1,0 +1,75 @@
+---
+title: Modifica dell'aspetto
+seo-title: Modifica dell'aspetto
+description: Modificare lo script
+seo-description: Modificare lo script
+uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
+contentOwner: User
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: developing
+content-type: reference
+discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+
+---
+
+
+# Modifica dell&#39;aspetto {#alter-the-appearance}
+
+## Modificare lo script {#modify-the-script}
+
+Lo script comment.hbs è responsabile della creazione dell&#39;HTML complessivo per ciascun commento.
+
+Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
+
+1. copia `comment.hbs`da `libs`a `apps`
+
+   1. select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. seleziona **Copia**
+   1. select `/apps/social/commons/components/hbs/comments/comment`
+   1. seleziona **Incolla**
+
+1. aprire la sovrapposizione `comment.hbs`
+
+   * fai doppio clic sul nodo `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
+
+1. trova le righe seguenti ed elimina o commenta:
+
+```xml
+  <aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
+
+Eliminare le righe o circondarle con &#39;&lt;!—&#39; e &#39;—>&#39; per commentare. Inoltre, i caratteri &#39;xxx&#39; vengono aggiunti come indicatore visivo del punto in cui l&#39;avatar sarebbe stato.
+
+```xml
+   xxx
+   <!-- do not display avatar with comment
+    <aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
+
+### Replica della sovrapposizione {#replicate-the-overlay}
+
+Inviate il componente dei commenti sovrapposti all’istanza di pubblicazione utilizzando lo strumento di replica.
+
+>[!NOTE]
+>
+>Una replica più affidabile consiste nel creare un pacchetto in Gestione pacchetti e [attivarlo](/help/sites-administering/package-manager.md#replicating-packages) . Un pacchetto può essere esportato e archiviato.
+
+Nella navigazione globale, selezionare **Strumenti, Distribuzione, Replica** , quindi **Attiva albero**.
+
+Per Percorso iniziale immettete `/apps/social/commons`** **e selezionate **Attiva**.
+
+![chlimage_1-77](assets/chlimage_1-77.png)
+
+### Visualizza risultati {#view-results}
+
+Se accedete all’istanza di pubblicazione come amministratore, ad esempio https://localhost:4503/crx/de come amministratore/amministratore, potete verificare che i componenti sovrapposti siano presenti.
+
+Se effettuate il logout e accedete nuovamente come `aaron.mcdonald@mailinator.com/password` e aggiornate la pagina, il commento pubblicato non viene più visualizzato con un avatar, ma viene visualizzato un semplice &#39;xxx&#39;.
+
+![chlimage_1-78](assets/chlimage_1-78.png)
+
