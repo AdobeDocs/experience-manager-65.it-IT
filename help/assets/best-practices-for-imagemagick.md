@@ -1,0 +1,84 @@
+---
+title: Installazione e configurazione di ImageMagick per l’utilizzo con Risorse AEM
+description: Scopri il software ImageMagick, come installarlo, impostare il passaggio della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
+contentOwner: AG
+translation-type: tm+mt
+source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+
+---
+
+
+# Installazione e configurazione di ImageMagick per l’utilizzo con Risorse AEM{#install-and-configure-imagemagick-to-work-with-aem-assets}
+
+ImageMagick è un plug-in software per creare, modificare, comporre o convertire immagini bitmap. Può leggere e scrivere immagini in vari formati (oltre 200), tra cui PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF e SVG. ImageMagick consente di ridimensionare, riflettere, ruotare, distorcere, inclinare e trasformare le immagini. Con ImageMagick potete anche regolare i colori delle immagini, applicare vari effetti speciali o disegnare testo, linee, poligoni, ellissi e curve.
+
+Utilizzate il gestore di file multimediali Adobe Experience Manager (AEM) dalla riga di comando per elaborare le immagini tramite ImageMagick. Per utilizzare vari formati di file con ImageMagick, consulta Best practice [per i formati di file](/help/assets/assets-file-format-best-practices.md)Assets. Per informazioni su tutti i formati di file supportati, consulta Formati [supportati per le](/help/assets/assets-formats.md)risorse.
+
+Per elaborare file di grandi dimensioni con ImageMagick, considerate requisiti di memoria superiori a quelli usuali, modifiche potenziali richieste ai criteri IM e l&#39;impatto complessivo sulle prestazioni. I requisiti di memoria dipendono da vari fattori come risoluzione, profondità di bit, profilo colore e formato file. Se intendete elaborare file di grandi dimensioni con ImageMagick, eseguite correttamente il benchmark del server AEM. Alla fine vengono fornite alcune risorse utili.
+
+>[!NOTE]
+>
+>Se utilizzi AEM su Adobe Managed Services (AMS), contatta il supporto Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni.
+
+## Installazione di ImageMagick {#installing-imagemagick}
+
+Sono disponibili diverse versioni dei file di installazione ImageMagic per vari sistemi operativi. Utilizzate la versione appropriata per il sistema operativo in uso.
+
+1. Scaricate i file [di installazione](https://www.imagemagick.org/script/download.php) ImageMagick appropriati per il sistema operativo in uso.
+1. Per installare ImageMagick sul disco che ospita il server AEM, avviate il file di installazione.
+
+1. Impostate la variabile del percorso Ambiente sulla directory di installazione ImageMagic.
+1. Per verificare se l&#39;installazione è riuscita, eseguite il `identify -version` comando.
+
+## Impostazione del passaggio della riga di comando {#set-up-the-command-line-process-step}
+
+È possibile impostare il passaggio della riga di comando per il caso di utilizzo specifico. Per generare un’immagine e miniature capovolta (140x100, 48x48, 319x319 e 1280x1280) ogni volta che aggiungete un file immagine JPEG `/content/dam` sul server AEM:
+
+1. Nel server AEM, accedete alla console Flusso di lavoro ( `https://[*AEM server*]:[*Port*]/workflow`) e aprite il modello di flusso di lavoro Aggiorna risorsa **** DAM.
+1. Dal modello di flusso di lavoro **[!UICONTROL DAM Update Asset]** (Aggiorna risorsa **[!UICONTROL DAM), aprite il passaggio delle miniature]** EPS (basato su ImageMagick).
+1. Nella scheda **[!UICONTROL Argomenti]**, aggiungete `image/jpeg` all&#39;elenco **[!UICONTROL Tipi]** mime.
+
+   ![mime_types_jpeg](assets/mime_types_jpeg.png)
+
+1. Nella casella **[!UICONTROL Comandi]** , immettere il comando seguente:
+
+   `convert ./${filename} -flip ./${basename}.flipped.jpg`
+
+1. Selezionare i flag **[!UICONTROL Elimina rappresentazione]** generata e **[!UICONTROL Genera rappresentazione]** Web.
+
+   ![select_flags](assets/select_flags.png)
+
+1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, specificate i dettagli per la rappresentazione con dimensioni 1280x1280 pixel. Inoltre, specificate *image/jpeg* nella casella **[!UICONTROL Mimetype]** .
+
+   ![web_enabled_image](assets/web_enabled_image.png)
+
+1. Tap/click **[!UICONTROL OK]** to save the changes.
+
+   >[!NOTE]
+   >
+   >Il `convert` `convert` comando potrebbe non essere eseguito con alcune versioni di Windows (ad esempio Windows SE), in quanto è in conflitto con l&#39;utility nativa che fa parte dell&#39;installazione di Windows. In questo caso, indicare il percorso completo per l&#39;utilità ImageMagick. Ad esempio, specificate
+   >
+   >
+   >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
+
+1. Aprite il passaggio Miniature **[!UICONTROL di]** processo e aggiungete il tipo MIME `image/jpeg` in **[!UICONTROL Skip Mime Types]**.
+
+   ![skip_mime_types](assets/skip_mime_types.png)
+
+1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, aggiungere il tipo MIME `image/jpeg` sotto l&#39;elenco **** Salta. Tap/click **[!UICONTROL OK]** to save the changes.
+
+   ![web_enabled](assets/web_enabled.png)
+
+1. Salvare il flusso di lavoro.
+1. Per verificare se ImageMagic è in grado di elaborare correttamente le immagini, caricate un’immagine JPG in Risorse AEM. Verificate se per l&#39;immagine capovolta e le rappresentazioni sono generate.
+
+## Riduzione delle vulnerabilità di sicurezza {#mitigating-security-vulnerabilities}
+
+L’utilizzo di ImageMagick per elaborare le immagini presenta diverse vulnerabilità di sicurezza. Ad esempio, l’elaborazione di immagini inviate dall’utente comporta il rischio di esecuzione di codice remoto (RCE).
+
+Inoltre, diversi plug-in per l&#39;elaborazione delle immagini dipendono dalla libreria ImageMagick, tra cui, tra l&#39;altro, l&#39;immagine di PHP, il clip di immagine di Ruby e l&#39;immagine di nodejs.
+
+Se utilizzate ImageMagick o una libreria interessata, Adobe consiglia di attenuare le vulnerabilità note eseguendo almeno una delle seguenti operazioni (preferibilmente entrambe):
+
+1. Verificate che tutti i file di immagine inizino con i [&quot;byte magici&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) previsti corrispondenti ai tipi di file di immagine supportati prima di inviarli a ImageMagick per l&#39;elaborazione.
+1. Usate un file di criteri per disabilitare i codificatori ImageMagick vulnerabili. La politica globale per ImageMagick è disponibile all&#39;indirizzo `/etc/ImageMagick`.
