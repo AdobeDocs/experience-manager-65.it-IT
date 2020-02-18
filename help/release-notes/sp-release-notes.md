@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0b8e1605f6d8f6cc04a4173731351df002a67d
+source-git-commit: 37d0225f69800225e82f253ad9dbab8b2b30ac5e
 
 ---
 
@@ -163,6 +163,8 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * In AEM viene visualizzata un’eccezione durante il polling per i dettagli del processo relativi a una risorsa (CQ-4283569).
 
+* vulnerabilità XSS in DAM (NPR-31654).
+
 #### Sites {#sites}
 
 * Se l&#39;ereditarietà LiveCopy è interrotta, nelle pagine di LiveCopy sono visualizzati i collegamenti per la copia della lingua invece dei collegamenti LiveCopy (NPR-30980).
@@ -175,6 +177,9 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * L&#39;API ResponsiveGridExporter non restituisce l&#39;interfaccia com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter. Il pacchetto com.day.cq.wcm.foundation.model.impl è dichiarato pacchetto privato (NPR-31398).
 * Quando una pagina contenente alcuni frammenti esperienza viene aperta in modalità non editor (in Author senza il `editor.html` prefisso e, `wcmmode=disabled`o in Publisher)., la richiesta termina con il codice di errore dello stato HTTP 500 (NPR-30743).
 * Gli utenti non possono modificare la password e accedere alla pagina del profilo (NPR-31161).
+* Sul lato server viene generato un file JavaScript con dati utente (NPR-30822).
+* L&#39;interfaccia utente di authoring di AEM consente il phishing mediante contenuti esterni (NPR-29745).
+* Vulnerabilità nell’iniezione di linguaggio nelle espressioni nell’editor di metadati AEM 6.5 (NPR-31017).
 
 #### Ricerca e interfaccia utente {#search-ui-interface}
 
