@@ -185,7 +185,7 @@ Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma ma
 
 1. Selezionare **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**. Selezionate **[!UICONTROL Richiedi attivazione]**, quindi selezionate **[!UICONTROL Modifica]**.
 
-1. Selezionate **[!UICONTROL Modifica]**, aprite il menu Informazioni **** pagina, quindi selezionate **[UICONTROL Apri proprietà]** e passate alla scheda **[!UICONTROL Base]** (se non è già aperta).
+1. Selezionate **[!UICONTROL Modifica]**, aprite il menu Informazioni **** pagina, quindi selezionate **[!UICONTROL Apri proprietà]** e passate alla scheda **[!UICONTROL Base]** (se non è già aperta).
 
 1. Aggiungere `Workflow : DAM` al campo **[!UICONTROL Tag]** . Confermare la selezione con il segno di spunta (segno di spunta).
 
