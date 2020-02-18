@@ -9,12 +9,12 @@ topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
 
-# Stile in linea dei componenti per moduli adattivi{#inline-styling-of-adaptive-form-components}
+# Stile in linea dei componenti per moduli adattivi {#inline-styling-of-adaptive-form-components}
 
 È possibile definire l&#39;aspetto e lo stile complessivi di un modulo adattivo specificando gli stili mediante l&#39;editor [](../../forms/using/themes.md)tema. Inoltre, potete applicare stili CSS in linea a singoli componenti di moduli adattivi e visualizzare rapidamente l&#39;anteprima delle modifiche. Gli stili in linea sostituiscono lo stile fornito nel tema.
 
