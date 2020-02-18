@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 9532c1fb8af37b29285007bc72e86d42d5eb9c4d
+source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
 
 ---
 
@@ -27,7 +27,7 @@ Tally è una classe astratta che fornisce un metodo standard per raccogliere i c
 
 [La valutazione](rating-basics.md) è un&#39;implementazione di tally che utilizza un sistema a stella per esprimere una serie di opinioni da positive a negative.
 
-A partire da AEM 6.1, il componente [sondaggio](poll-basics.md) non è più disponibile.
+A partire da AEM 6.1, il componente Sondaggio non è più disponibile.
 
 [Revisioni](reviews-basics.md) è un componente SCF ibrido di [commenti](essentials-comments.md) e [valutazioni](rating-basics.md).
 
