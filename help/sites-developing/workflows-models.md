@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
 
 ---
 
@@ -174,19 +174,25 @@ Quando eseguite un flusso di lavoro in modalità [temporanea](/help/sites-develo
 
 ## Rendere disponibili i modelli di workflow nell&#39;interfaccia utente touch {#classic2touchui}
 
-Se un modello di workflow presente nell’interfaccia classica ma mancante nel menu a comparsa di selezione nella barra laterale Timeline dell’interfaccia touch, segui la configurazione per renderlo disponibile. Nei passaggi seguenti viene illustrato l’utilizzo dei modelli di flusso di lavoro di Risorse AEM, denominati **[!UICONTROL Richiesta di attivazione]** e **[!UICONTROL Richiesta di disattivazione]**.
+Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma manca nel menu a comparsa di selezione nella barra **[!UICONTROL Timeline]** dell’interfaccia touch, seguite la configurazione per renderlo disponibile. Nei passaggi seguenti viene illustrato l&#39;utilizzo del modello di workflow denominato **[!UICONTROL Richiesta di attivazione]**.
 
-1. Verificate che il modello non sia disponibile nell&#39;interfaccia touch. Accedete a una risorsa utilizzando il `/assets.html/content/dam` percorso. Selezionate la risorsa. Aprite **[!UICONTROL Timeline]** nella parte sinistra. Fare clic su **[!UICONTROL Avvia flusso di lavoro]** e notare che i modelli **[!UICONTROL Richiesta attivazione]** e **[!UICONTROL Richiesta disattivazione]** non sono presenti nell&#39;elenco a comparsa.
-1. Fate clic su **[!UICONTROL Strumenti > Generale > Assegnazione tag]**. Selezionate **[!UICONTROL Flusso di lavoro]**.
-1. Fate clic su **[!UICONTROL Crea > Crea tag]**. Impostate **[!UICONTROL Titolo]** come `DAM` e **[!UICONTROL Nome]** come `dam`. Fate clic su **[!UICONTROL Invia]**.
+1. Verificate che il modello non sia disponibile nell&#39;interfaccia touch. Accedete a una risorsa utilizzando il `/assets.html/content/dam` percorso. Selezionate una risorsa. Aprite **[!UICONTROL Timeline]** nella parte sinistra. Fare clic su **[!UICONTROL Avvia flusso di lavoro]** e confermare che il modello **[!UICONTROL Richiedi attivazione]** non è presente nell&#39;elenco a comparsa.
 
+1. Passare a **[!UICONTROL Strumenti > Generale > Assegnazione tag]**. Selezionate **[!UICONTROL Flusso di lavoro]**.
+
+1. Selezionare **[!UICONTROL Crea > Crea tag]**. Impostate **[!UICONTROL Titolo]** come `DAM` e **[!UICONTROL Nome]** come `dam`. Seleziona **[!UICONTROL Invia]**.
    ![Crea tag nel modello di workflow](assets/workflow_create_tag.png)
 
-1. Fare clic su **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**. Selezionate **[!UICONTROL Richiedi attivazione]** (o **[!UICONTROL Richiedi disattivazione]**). Fate clic su **[!UICONTROL Modifica]**. 
-1. Nella barra laterale passate alla scheda **[!UICONTROL Pagina]** . Open **[!UICONTROL Page Properties]**.
-1. Aggiungere `Workflow : DAM` al campo **[!UICONTROL Tag/Parole chiave]** . Fai clic su **[!UICONTROL OK]**. Fai clic su **[!UICONTROL Salva]**.
+1. Selezionare **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**. Selezionate **[!UICONTROL Richiedi attivazione]**, quindi selezionate **[!UICONTROL Modifica]**.
 
+1. Selezionate **[!UICONTROL Modifica]**, aprite il menu Informazioni **** pagina, quindi selezionate **[UICONTROL Apri proprietà]** e passate alla scheda **[!UICONTROL Base]** (se non è già aperta).
+
+1. Aggiungere `Workflow : DAM` al campo **[!UICONTROL Tag]** . Confermare la selezione con il segno di spunta (segno di spunta).
+
+1. Confermate l&#39;aggiunta del tag con **[!UICONTROL Salva e chiudi]**.
    ![Modifica proprietà pagina del modello](assets/workflow_model_edit_activation1.png)
+
+1. Completate il processo con **[!UICONTROL Sync]**. Il flusso di lavoro è ora disponibile nell’interfaccia touch.
 
 ### Configurazione di un flusso di lavoro per il supporto di più risorse {#configuring-a-workflow-for-multi-resource-support}
 
