@@ -2,12 +2,9 @@
 title: Cercare risorse digitali e immagini in AEM
 description: Scopri come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
-docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
+source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
 
 ---
 
@@ -62,11 +59,15 @@ Dalla pagina dei risultati della ricerca potete individuare più rapidamente le 
 
 Potete eseguire ricerche per parole chiave dal campo OmniSearch. La ricerca per parola chiave non fa distinzione tra maiuscole e minuscole ed è una ricerca full-text (nei più comuni campi di metadati). Se viene cercata più di una parola chiave, l’operatore predefinito tra le parole chiave è `AND` per la ricerca predefinita ed è `OR` quando le risorse sono dotate di tag avanzati.
 
-I risultati sono ordinati in base alla rilevanza, a partire da corrispondenze più simili. Per più parole chiave, i risultati più rilevanti sono le risorse che contengono entrambi i termini nei metadati. All’interno dei metadati, le parole chiave che appaiono come smart tag hanno una classificazione più alta rispetto alle parole chiave che appaiono in altri campi di metadati. AEM consente di attribuire a un particolare termine di ricerca una maggiore rilevanza. Inoltre, è possibile [aumentare il rango](#searchrank) di alcune risorse con targeting per termini di ricerca specifici.
+I risultati sono ordinati in base alla rilevanza, a partire da corrispondenze più simili. Per più parole chiave, i risultati più rilevanti sono le risorse che contengono entrambi i termini nei metadati. All’interno dei metadati, le parole chiave che appaiono come smart tag hanno una classificazione più alta rispetto alle parole chiave che appaiono in altri campi di metadati. AEM consente di attribuire maggiore importanza a un particolare termine di ricerca. Inoltre, è possibile [aumentare il rango](#searchrank) di alcune risorse con targeting per termini di ricerca specifici.
 
-Per trovare rapidamente le risorse rilevanti, l’interfaccia avanzata offre meccanismi di filtraggio, ordinamento e selezione. Potete filtrare i risultati in base a più criteri e visualizzare il numero di risorse ricercate per vari filtri. In alternativa, potete eseguire nuovamente la ricerca modificando la query nel campo Omnisearch. Quando modificate i termini di ricerca o i filtri, gli altri filtri rimangono applicati per mantenere il contesto della ricerca. Se i risultati sono superiori a 1000, AEM non visualizza tutte le risorse ricercate e ne visualizza più di 1000 come numero di risorse ricercate. Ciò consente di migliorare le prestazioni di ricerca. Quando scorrete per visualizzare più risorse, oltre i 1000 il numero aumenta gradualmente nei passaggi da 200.
+Per trovare rapidamente le risorse rilevanti, l’interfaccia avanzata offre meccanismi di filtraggio, ordinamento e selezione. Potete filtrare i risultati in base a più criteri e visualizzare il numero di risorse ricercate per vari filtri. In alternativa, potete eseguire nuovamente la ricerca modificando la query nel campo Omnisearch. Quando modificate i termini di ricerca o i filtri, gli altri filtri rimangono applicati per mantenere il contesto della ricerca.
 
-In alcuni casi, nei risultati della ricerca potrebbero essere presenti risorse impreviste. Per ulteriori informazioni, consultate [risultati](#unexpectedresults)imprevisti.
+Quando i risultati sono molte risorse, AEM visualizza le prime 100 nella vista a schede e 200 nella vista a elenco. Quando gli utenti scorrono, vengono caricate più risorse. Questo per migliorare le prestazioni.
+
+>[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+
+In alcuni casi, nei risultati della ricerca potrebbero essere presenti risorse impreviste. Per ulteriori informazioni, consultate [risultati](#troubleshoot-unexpected-search-results-and-issues)imprevisti.
 
 AEM può cercare in molti formati di file e i filtri di ricerca possono essere personalizzati in base alle tue esigenze aziendali. Per conoscere le opzioni di ricerca disponibili per l&#39;archivio DAM e le limitazioni applicate all&#39;account, contattare l&#39;amministratore.
 
@@ -243,7 +244,7 @@ Puoi trasmettere i seguenti parametri di richiesta in un URL per avviare il sele
 | assettype (S) | immagini, documenti, contenuti multimediali, archivi | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Utilizzate questa opzione per filtrare i tipi di risorse in base al valore passato. |
 | root | &lt;percorso_cartella> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Utilizzate questa opzione per specificare la cartella principale per il selettore di risorse. In questo caso, il selettore delle risorse consente di selezionare solo le risorse secondarie (dirette/indirette) sotto la cartella principale. |
 
-Per accedere all’interfaccia del selettore delle risorse, passate a `https://[AEM server]:[port]/aem/assetpicker`. Individuate la cartella desiderata e selezionate una o più risorse. In alternativa, cercate la risorsa desiderata dalla casella di ricerca Omnico, applicate il filtro in base alle esigenze, quindi selezionatela.
+Per accedere all’interfaccia del selettore delle risorse, passate a `https://[aem_server]:[port]/aem/assetpicker`. Individuate la cartella desiderata e selezionate una o più risorse. In alternativa, cercate la risorsa desiderata dalla casella di ricerca Omnico, applicate il filtro in base alle esigenze, quindi selezionatela.
 
 ![Sfogliare e selezionare la risorsa nel selettore risorse](assets/assetpicker.png)
 
@@ -258,7 +259,7 @@ La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 * AEM potrebbe continuare a visualizzare il termine di ricerca dopo che avrete selezionato le proprietà di una risorsa dai risultati della ricerca e quindi annullato la ricerca. <!-- (CQ-4273540) -->
 * Durante la ricerca di cartelle, file e cartelle, i risultati della ricerca non possono essere ordinati in base ad alcun parametro.
 * Se premete Invio senza digitare nulla nella barra di ricerca Omnico, AEM restituisce un elenco di soli file e non di cartelle. Se cercate specificamente delle cartelle senza utilizzare una parola chiave, AEM non restituisce alcun risultato.
-* Utilizzando la casella di controllo [!UICONTROL Seleziona tutto] , potete selezionare solo le prime 100 risorse ricercate nella vista a schede e le prime 200 risorse ricercate nella vista a elenco.
+* Utilizzando la casella di controllo [!UICONTROL Seleziona tutto] , potete selezionare solo le prime 100 risorse ricercate nella vista a schede e le prime 200 risorse ricercate nella vista a elenco. Se scorrete e caricate più risorse nell’interfaccia utente, potete selezionarne altre utilizzando l’opzione [!UICONTROL Seleziona tutto] .
 
 La ricerca visiva o per similarità presenta le seguenti limitazioni:
 
@@ -457,7 +458,7 @@ Potete creare raccolte dinamiche in base ai criteri di ricerca. Dal pannello **[
 | Filtro/predicato di ricerca non disponibile | <ul><li>Il filtro di ricerca non è configurato.</li><li>Non è disponibile per l&#39;accesso.</li><li>(Meno probabile) Le opzioni di ricerca non vengono personalizzate sulla distribuzione in uso.</li></ul> | <ul><li>Contattate l’amministratore per verificare se le personalizzazioni della ricerca sono disponibili o meno.</li><li>Contattate l’amministratore per verificare se l’account dispone dei privilegi o delle autorizzazioni necessari per utilizzare la personalizzazione.</li><li>Contatta l’amministratore e verifica le personalizzazioni disponibili per la distribuzione di Risorse AEM in uso.</li></ul> |
 | Quando si ricercano immagini visivamente simili, manca un&#39;immagine prevista | <ul><li>L’immagine non è disponibile in AEM.</li><li>L&#39;immagine non è indicizzata. In genere, quando viene caricato di recente.</li><li>L&#39;immagine non è dotata di smart tag.</li></ul> | <ul><li>Aggiungi l’immagine a Risorse AEM.</li><li>Contattate l’amministratore per reindirizzare la directory archivio. Inoltre, accertatevi di utilizzare l&#39;indice appropriato.</li><li>Contattate l’amministratore per assegnare tag avanzati alle risorse pertinenti.</li></ul> |
 | Quando si ricercano immagini visivamente simili, viene visualizzata un’immagine irrilevante | Comportamento di ricerca visiva. | AEM visualizza il maggior numero possibile di risorse potenzialmente rilevanti. Eventuali immagini meno rilevanti vengono aggiunte ai risultati, ma con una classificazione di ricerca più bassa. La qualità delle corrispondenze e la rilevanza delle risorse ricercate diminuiscono mano a mano che scorrete i risultati della ricerca. |
-| Quando si selezionano e si utilizzano le risorse ricercate, tutte le risorse ricercate non vengono utilizzate | L&#39;opzione [!UICONTROL Seleziona tutto] seleziona solo i primi 100 risultati di ricerca nella vista a schede e i primi 200 risultati di ricerca nella vista a elenco. |  |
+| Quando si selezionano e si utilizzano i risultati della ricerca, tutte le risorse ricercate non vengono utilizzate | L&#39;opzione [!UICONTROL Seleziona tutto] seleziona solo i primi 100 risultati di ricerca nella vista a schede e i primi 200 risultati di ricerca nella vista a elenco. |  |
 
 >[!MORELIKETHIS]
 >
