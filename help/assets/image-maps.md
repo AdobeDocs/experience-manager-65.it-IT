@@ -3,7 +3,7 @@ title: Aggiungere mappe immagine con collegamenti ipertestuali alle immagini dig
 description: Scoprite come aggiungere una mappa immagine con collegamenti ipertestuali a un’immagine.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: e547dde53011003a2db4814916c3e923da947cce
 
 ---
 
