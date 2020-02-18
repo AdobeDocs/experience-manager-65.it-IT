@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
+source-git-commit: 9f260d3ccb98409790cd18b2540329fc36a07c05
 
 ---
 
@@ -48,8 +48,9 @@ Per creare un nuovo flusso di lavoro con l’editor:
 >Se create modelli a livello di programmazione (utilizzando un pacchetto crx), potete anche creare una sottocartella all&#39;interno di:
 >
 >`/var/workflow/models`
-
+>
 >Esempio, `/var/workflow/models/prototypes`
+>
 >Questa cartella può quindi essere utilizzata per [gestire l’accesso ai modelli presenti nella cartella](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
 ## Modifica di un flusso di lavoro {#editing-a-workflow}
@@ -89,7 +90,8 @@ Quando si apre un modello [](/help/sites-developing/workflows.md#workflow-types)
 * consente di apportare modifiche
 
 >[!NOTE]
-Per ulteriori informazioni, consulta [Posizioni dei modelli](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) di flussi di lavoro.
+>
+>Per ulteriori informazioni, consulta [Posizioni dei modelli](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) di flussi di lavoro.
 
 ![wf-22](assets/wf-22.png)
 
@@ -102,7 +104,8 @@ Quando modificate un modello, i passaggi disponibili vengono visualizzati nei va
 ![wf-10](assets/wf-10.png)
 
 >[!NOTE]
-Per informazioni sui componenti del passaggio principale installati con AEM, consultate Riferimento [per i passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
+>
+>Per informazioni sui componenti del passaggio principale installati con AEM, consultate Riferimento [per i passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
 
 Per aggiungere passaggi al modello di workflow:
 
@@ -144,7 +147,8 @@ Potete **configurare** e personalizzare il comportamento di un passaggio di work
 
    * Fare doppio clic sul passaggio.
    >[!NOTE]
-   Per informazioni sui componenti del passaggio principale installati con AEM, consultate Riferimento [per i passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
+   >
+   >Per informazioni sui componenti del passaggio principale installati con AEM, consultate Riferimento [per i passaggi del](/help/sites-developing/workflows-step-ref.md)flusso di lavoro.
 
 1. Configurare le proprietà **del** passo come necessario; le proprietà disponibili dipendono dal tipo di passaggio. Possono essere disponibili anche diverse schede. Ad esempio, il Passaggio **** partecipante predefinito, presente in un nuovo flusso di lavoro come `Step 1`:
 
@@ -170,7 +174,8 @@ Potete **configurare** e personalizzare il comportamento di un passaggio di work
    Consultate [Sincronizzazione del flusso di lavoro](#sync-your-workflow-generate-a-runtime-model) .
 
 >[!NOTE]
-Quando eseguite un flusso di lavoro in modalità [temporanea](/help/sites-developing/workflows.md#transient-workflows) , AEM non memorizza alcuna cronologia del flusso di lavoro. Pertanto, la [timeline](/help/sites-authoring/basic-handling.md#timeline) non visualizza alcuna informazione relativa a tale flusso di lavoro. [](/help/sites-authoring/basic-handling.md#timeline)
+>
+>Quando eseguite un flusso di lavoro in modalità [temporanea](/help/sites-developing/workflows.md#transient-workflows) , AEM non memorizza alcuna cronologia del flusso di lavoro. Pertanto, la [timeline](/help/sites-authoring/basic-handling.md#timeline) non visualizza alcuna informazione relativa a tale flusso di lavoro. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Rendere disponibili i modelli di workflow nell&#39;interfaccia utente touch {#classic2touchui}
 
@@ -214,7 +219,8 @@ Se un modello di flusso di lavoro è presente nell’interfaccia classica, ma ma
 [Le fasi](/help/sites-developing/workflows.md#workflow-stages) del flusso di lavoro consentono di visualizzare l’avanzamento di un flusso di lavoro durante la gestione delle attività.
 
 >[!CAUTION]
-Se le fasi del flusso di lavoro sono definite in Proprietà **** pagina, ma non sono utilizzate per i passaggi del flusso di lavoro, la barra di avanzamento non mostrerà alcun avanzamento (indipendentemente dal passaggio del flusso di lavoro corrente).
+>
+>Se le fasi del flusso di lavoro sono definite in Proprietà **** pagina, ma non sono utilizzate per i passaggi del flusso di lavoro, la barra di avanzamento non mostrerà alcun avanzamento (indipendentemente dal passaggio del flusso di lavoro corrente).
 
 Le fasi da rendere disponibili sono definite nei modelli di flusso di lavoro; i modelli di flusso di lavoro esistenti possono essere aggiornati per includere le definizioni di fase. Potete definire un numero qualsiasi di fasi per il modello di workflow.
 
@@ -340,7 +346,8 @@ Per illustrare alcune delle possibilità di creazione di un flusso di lavoro, ne
    * Activate **Notify user via email**.
    * Selezionare `Administrator` ( `admin`) per il campo **Utente/Gruppo** .
    >[!NOTE]
-   Per inviare le e-mail, è necessario configurare [](/help/sites-administering/notification.md)i dettagli del servizio e dell&#39;account utente.
+   >
+   >Per inviare le e-mail, è necessario configurare [](/help/sites-administering/notification.md)i dettagli del servizio e dell&#39;account utente.
 
 1. Conferma gli aggiornamenti con il segno di spunta.
 
@@ -393,7 +400,8 @@ Per definire una regola OR, procedere come segue:
    `/apps/myapp/workflow/scripts`
 
    >[!NOTE]
-   Gli script devono avere una [funzione `check()`](#function-check) che restituisce un valore booleano.
+   >
+   >Gli script devono avere una [funzione `check()`](#function-check) che restituisce un valore booleano.
 
 1. Modificate il flusso di lavoro e aggiungete la **divisione** OR al modello.
 1. Modificare le proprietà del **ramo 1** della divisione **OR**:
@@ -403,7 +411,8 @@ Per definire una regola OR, procedere come segue:
    * Come **regola**, imposta il percorso dello script. Esempio:
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
-   Se necessario, è possibile cambiare l&#39;ordine del ramo.
+   >
+   >Se necessario, è possibile cambiare l&#39;ordine del ramo.
 
 1. Modificare le proprietà del **ramo 2** della divisione **OR**.
 
@@ -418,7 +427,8 @@ Per definire una regola OR, procedere come segue:
 #### Function Check() {#function-check}
 
 >[!NOTE]
-Vedere [Uso di ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+>
+>Vedere [Uso di ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
 
 Lo script di esempio seguente restituisce `true` se il nodo è `JCR_PATH` situato in `/content/we-retail/us/en`:
 
