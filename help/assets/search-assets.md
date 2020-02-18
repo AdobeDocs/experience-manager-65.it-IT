@@ -7,7 +7,7 @@ discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
 
 ---
 
@@ -459,7 +459,7 @@ Potete creare raccolte dinamiche in base ai criteri di ricerca. Dal pannello **[
 | Quando si ricercano immagini visivamente simili, viene visualizzata un’immagine irrilevante | Comportamento di ricerca visiva. | AEM visualizza il maggior numero possibile di risorse potenzialmente rilevanti. Eventuali immagini meno rilevanti vengono aggiunte ai risultati, ma con una classificazione di ricerca più bassa. La qualità delle corrispondenze e la rilevanza delle risorse ricercate diminuiscono mano a mano che scorrete i risultati della ricerca. |
 | Quando si selezionano e si utilizzano le risorse ricercate, tutte le risorse ricercate non vengono utilizzate | L&#39;opzione [!UICONTROL Seleziona tutto] seleziona solo i primi 100 risultati di ricerca nella vista a schede e i primi 200 risultati di ricerca nella vista a elenco. |  |
 
->[!MORE COME QUESTO]
+>[!MORELIKETHIS]
 >
 >* [Guida all’implementazione della ricerca AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configurazione avanzata dei predicati per la ricerca di più valori e tag](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
