@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 ---
 
@@ -154,7 +154,6 @@ Per eliminare un paragrafo:
 >Se hai impostato le [Proprietà utente per mostrare la barra degli strumenti di modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md), è anche possibile eseguire alcune azioni sui paragrafi utilizzando i pulsanti disponibili **Copia**, **Taglia**, **Incolla**, **Elimina**.
 >
 >Sono inoltre disponibili varie [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
->
 
 ## Operazioni di Taglia, Copia e Incolla su un componente {#cut-copy-paste-a-component}
 
