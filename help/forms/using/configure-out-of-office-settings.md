@@ -4,7 +4,7 @@ seo-title: Configurare le impostazioni Fuori sede
 description: Configurazione delle impostazioni Fuori sede
 seo-description: Configurare le impostazioni Fuori sede
 translation-type: tm+mt
-source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
+source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
 
 ---
 
@@ -57,7 +57,6 @@ Ora, gli elementi assegnati durante il periodo di tempo Fuori sede vengono autom
 ![Fuori sede](assets/out-of-office.png)
 
 >[!NOTE]
->
 >(Solo per gli elementi del flusso di lavoro incentrati su Forms) Abilitare l&#39;opzione **Consenti all&#39;assegnatario di delegare utilizzando l&#39;opzione** &quot;Fuori sede&quot; del passaggio dell&#39;attività **** Assegna nel flusso di lavoro. Solo gli elementi con la suddetta opzione abilitata sono delegati ad altri utenti.
 
 ## Limiti {#limitations}
