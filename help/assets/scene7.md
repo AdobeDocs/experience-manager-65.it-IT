@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e9f5d8f63bc342723f2002f677c1673b4af6f891
 
 ---
 
@@ -70,7 +70,7 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 >
 >If you are creating and developing custom viewers and using the Content Finder, you need to explicity add the **[!UICONTROL allowfullscreen]** parameter.
 
-### Avviso di terminazione dei visualizzatori Flash {#flash-viewers-end-of-life-notice}
+### Avviso sulla fine del ciclo di vita dei visualizzatori Flash {#flash-viewers-end-of-life-notice}
 
 A partire dal 31 gennaio 2017, Adobe Dynamic Media Classic ha terminato il supporto per la piattaforma di visualizzatori Flash.
 
@@ -265,9 +265,10 @@ Se si dispone di più configurazioni, per impostazione predefinita AEM visualizz
 >* Quando Anteprima [protetta è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), le risorse pubblicate e non pubblicate su Dynamic Media Classic vengono visualizzate nel browser dei contenuti di Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Per i video, il browser di contenuti Dynamic Media Classic supporta:
->   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
->   * Video MP4 singolo
->   * Video F4V singolo
+   >   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
+   >   * Video MP4 singolo
+   >   * Video F4V singolo
+
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
 
