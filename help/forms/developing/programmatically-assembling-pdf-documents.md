@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
 
 ---
 
@@ -100,7 +100,7 @@ Sia il file map.pdf che il file direction.pdf devono essere inseriti in un ogget
 
 >[!NOTE]
 >
->Se si richiama l&#39; `AssemblerResult` operazione, viene restituito un oggetto `invokeDDX` che contiene un oggetto raccolta. Questa operazione viene utilizzata quando si passano due o più documenti PDF di input al servizio Assembler. Tuttavia, se trasmettete un solo PDF di input al servizio Assembler e prevedete un solo documento di restituzione, richiamate l&#39; `invokeOneDocument` operazione. Quando si richiama questa operazione, viene restituito un singolo documento. Per ulteriori informazioni sull&#39;utilizzo di questa operazione, vedere [Assembling Encrypted PDF Documents](/help/forms/developing/assembling-encryling-pdf-documents-assembling assembling-encryling-pdf-documents-assembling.md#assembling-Encrypted-pdf-documents).
+>Se si richiama l&#39; `AssemblerResult` operazione, viene restituito un oggetto `invokeDDX` che contiene un oggetto raccolta. Questa operazione viene utilizzata quando si passano due o più documenti PDF di input al servizio Assembler. Tuttavia, se trasmettete un solo PDF di input al servizio Assembler e prevedete un solo documento di restituzione, richiamate l&#39; `invokeOneDocument` operazione. Quando si richiama questa operazione, viene restituito un singolo documento. Per informazioni sull&#39;utilizzo di questa operazione, vedere [Assemblaggio di documenti](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)PDF crittografati.
 
 **Impostazione delle opzioni di esecuzione**
 
