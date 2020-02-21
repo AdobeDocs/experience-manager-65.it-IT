@@ -36,16 +36,13 @@ che aiutano uno sviluppatore a:
 >
 >* È disponibile solo nell’interfaccia touch (durante la modifica delle pagine).
 >* Non è disponibile sui dispositivi mobili o su piccole finestre sul desktop (a causa di limitazioni di spazio).
-   >
-   >    
-   * Questo si verifica quando la larghezza è inferiore a 1024 px.
 >
-* Richiede autorizzazioni/privilegi appropriati:
-
-   * L&#39;accesso alla modalità Sviluppatore è concesso agli utenti che dispongono dell&#39;accesso in scrittura su `/apps`.
-
-
-
+>    * Questo si verifica quando la larghezza è inferiore a 1024 px.
+>
+>* Richiede autorizzazioni/privilegi appropriati:
+>
+>    * L&#39;accesso alla modalità Sviluppatore è concesso agli utenti che dispongono dell&#39;accesso in scrittura su `/apps`.
+>
 
 >[!CAUTION]
 >

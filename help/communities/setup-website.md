@@ -37,11 +37,9 @@ Il codice riportato in questa esercitazione si basa sul fatto che il nome della 
 >* I nomi visualizzati in CRXDE sono nomi di nodi che formano il percorso del contenuto indirizzabile
 >* I nomi dei nodi possono contenere spazi, ma se utilizzati in un URI, lo spazio deve essere codificato come &#39;%20&#39; o &#39;+&#39;
 >* I nomi dei nodi possono contenere trattini e caratteri di sottolineatura, ma devono essere codificati quando viene fatto riferimento come nome di pacchetto all&#39;interno di un file Java. Sia i trattini che i caratteri di sottolineatura sono preceduti dal relativo valore Unicode:
-   >
-   >  
-* hyphen diventa &#39;_002d&#39;
->  * carattere di sottolineatura diventa &#39;_005f&#39;
-
+>
+>   * hyphen diventa &#39;_002d&#39;
+>   * carattere di sottolineatura diventa &#39;_005f&#39;
 
 ## Configurare la directory applicazione (/apps) {#setup-the-application-directory-apps}
 

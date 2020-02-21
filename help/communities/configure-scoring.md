@@ -183,16 +183,16 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 
 * aggiungere proprietà di punteggio e contrassegno
 
-   ```
-       scoringRules = [/etc/community/scoring/rules/comments-scoring,
-        /etc/community/scoring/rules/forums-scoring]
-       ```
-   
-       ```
-       badgingRules =[/etc/community/badging/rules/comments-scoring,
-        /etc/community/badging/rules/forums-scoring]
-       ```
-   
+  ```
+  scoringRules = [/etc/community/scoring/rules/comments-scoring,
+  /etc/community/scoring/rules/forums-scoring]
+  ```
+
+  ```
+  badgingRules =[/etc/community/badging/rules/comments-scoring,
+  /etc/community/badging/rules/forums-scoring]
+  ```
+
 * individuare il nodo del componente forum
 
    * `/content/community-components/en/forum/jcr:content/content/forum`

@@ -265,12 +265,9 @@ Se si dispone di più configurazioni, per impostazione predefinita AEM visualizz
 >* Quando Anteprima [protetta è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), le risorse pubblicate e non pubblicate su Dynamic Media Classic vengono visualizzate nel browser dei contenuti di Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Per i video, il browser di contenuti Dynamic Media Classic supporta:
-   >
-   >  
-* Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
->  * Video MP4 singolo
->  * Video F4V singolo
-
+>   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
+>   * Video MP4 singolo
+>   * Video F4V singolo
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
 

@@ -52,7 +52,7 @@ Per modificare la pianificazione di pubblicazione, effettuate le seguenti operaz
 >Se stai eseguendo l&#39;implementazione di AEM Forms su un cluster, effettua i seguenti passaggi su ciascun nodo del cluster.
 
 1. Arrestate l&#39;istanza del server AEM Forms.
-1. 
+1. &#x200B;
 
    * (Per Windows) Aprite il `[JBoss root]/bin/run.conf.bat` file in un editor.
    * (per Linux, AIX e Solaris) `[JBoss root]/bin/run.conf.sh` in un editor.

@@ -423,7 +423,7 @@ Se si desidera inviare la stessa lettera in lingue diverse ai clienti, è possib
 1. Toccate **OK** nell&#39;avviso. Gestione corrispondenza scarica un file zip nel computer con il nome DataDictionary-&lt;NomeFile>.zip.
 1. Il file ZIP contiene un file .properties. Questo file definisce il dizionario dati scaricato. Il contenuto del file delle proprietà è simile al seguente:
 
-   # Wed maggio 20 16:06:23 BST 2015
+   &#x200B;# Wed maggio 20 16:06:23 BST 2015
    DataDictionary.DipendenteDD.description=DataDictionary.DipendenteDD.displayName=DipendenteDataDictionaryDataDictionaryElement.name.description=DataDictionaryElement.name.displayName=nameDataDictionaryElement.Person.description=DataDictionaryElement.Person.displayName=persona
 
    La struttura del file delle proprietà definisce una riga ciascuna per la descrizione e il nome visualizzato per il dizionario dati e per ciascun elemento del dizionario dati nel dizionario dati. Inoltre, il file delle proprietà definisce una riga per un valore enum impostato per ciascun elemento del dizionario dati. Come per un dizionario dati, il file delle proprietà corrispondente può avere più definizioni di elementi del dizionario dati. Inoltre, il file può contenere le definizioni per uno o più set di valori enum.

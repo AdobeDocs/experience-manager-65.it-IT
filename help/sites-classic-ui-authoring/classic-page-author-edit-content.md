@@ -152,16 +152,18 @@ Per eliminare un paragrafo:
 >[!NOTE]
 >
 >Se hai impostato le [Proprietà utente per mostrare la barra degli strumenti di modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md), è anche possibile eseguire alcune azioni sui paragrafi utilizzando i pulsanti disponibili **Copia**, **Taglia**, **Incolla**, **Elimina**.
-
+>
 >Sono inoltre disponibili varie [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
+
 ## Operazioni di Taglia, Copia e Incolla su un componente {#cut-copy-paste-a-component}
 
 Come per l’[Eliminazione di un componente](#deleting-a-component), è possibile utilizzare il menu di scelta rapida per copiare, tagliare e/o incollare un componente
 
 >[!NOTE]
-Se hai impostato le [Proprietà utente per mostrare la barra degli strumenti di modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md), è anche possibile eseguire alcune azioni sui paragrafi utilizzando i pulsanti disponibili **Copia**, **Taglia**, **Incolla**, **Elimina**.
-
+>
+>Se hai impostato le [Proprietà utente per mostrare la barra degli strumenti di modifica globale](/help/sites-classic-ui-authoring/author-env-user-props.md), è anche possibile eseguire alcune azioni sui paragrafi utilizzando i pulsanti disponibili **Copia**, **Taglia**, **Incolla**, **Elimina**.
+>
 >Sono inoltre disponibili varie [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]

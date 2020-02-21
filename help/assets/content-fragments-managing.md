@@ -138,12 +138,9 @@ Per aprire il frammento per la modifica:
    >[!NOTE]
    >
    >1. Viene visualizzato un messaggio se al frammento è già fatto riferimento in una pagina di contenuto.
-      >
-      >
-      >
-
-   2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello** laterale.
-
+   >
+   >
+   >2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello** laterale.
 
 1. Per spostarsi tra le tre modalità, usate le icone nel pannello laterale:
 

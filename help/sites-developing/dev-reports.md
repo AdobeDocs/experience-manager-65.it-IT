@@ -1318,11 +1318,11 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
    >
    >Si tratta delle stesse definizioni:
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >Se la funzione restituisce semplicemente il valore ricevuto.
 
 1. Definite la struttura del rapporto. Ad esempio `osgireport[cq:Page]` sotto `/etc/designs/reports`.
@@ -1389,13 +1389,13 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
    >
    >Poiché in questo esempio non sono presenti colonne raggruppabili, i grafici non saranno disponibili. Per visualizzare i grafici, impostate `groupable` su `true`:
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Configurazione dei servizi del framework di report {#configuring-the-report-framework-services}
 

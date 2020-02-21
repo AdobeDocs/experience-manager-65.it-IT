@@ -60,11 +60,8 @@ Per casi d&#39;uso più avanzati, MSM può essere utilizzato anche nelle lingue 
 >Per tutti i casi di utilizzo si consiglia di consultare le best practice seguenti:
 >
 >* [Best practice per MSM](/help/sites-administering/msm-best-practices.md); in particolare:
-   >
-   >  
-* [Crea sito](/help/sites-administering/msm-best-practices.md#create-site)
->  * [MSM e siti Web multilingue](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-   >
-   >
-* [Best practice per la traduzione](/help/sites-administering/tc-bp.md)
-
+>
+>   * [Crea sito](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM e siti Web multilingue](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>* [Best practice per la traduzione](/help/sites-administering/tc-bp.md)

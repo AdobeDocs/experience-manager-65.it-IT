@@ -48,7 +48,7 @@ Effettuate le seguenti operazioni per abilitare l&#39;impostazione Fuori sede pe
 
    Ripetere il passaggio per aggiungere altri assegnatari. <br>
 
-   [!NOTE]
+   >[!NOTE]
    >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha attivato l&#39;impostazione fuori sede, l&#39;elemento viene valutato rispetto all&#39;elenco assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento soddisfa i criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non viene selezionato.
 
 1. Toccate **[!UICONTROL Salva]**. L&#39;impostazione ha effetto alla data e all&#39;ora di inizio specificate. Se accedete mentre siete fuori dall&#39;ufficio, non sarete considerati in ufficio finché non cambiate le impostazioni.
@@ -56,9 +56,10 @@ Effettuate le seguenti operazioni per abilitare l&#39;impostazione Fuori sede pe
 Ora, gli elementi assegnati durante il periodo di tempo Fuori sede vengono automaticamente assegnati al cessionario specificato.\
 ![Fuori sede](assets/out-of-office.png)
 
-[!NOTE]
+>[!NOTE]
+>
 >(Solo per gli elementi del flusso di lavoro incentrati su Forms) Abilitare l&#39;opzione **Consenti all&#39;assegnatario di delegare utilizzando l&#39;opzione** &quot;Fuori sede&quot; del passaggio dell&#39;attività **** Assegna nel flusso di lavoro. Solo gli elementi con la suddetta opzione abilitata sono delegati ad altri utenti.
-> 
+
 ## Limiti {#limitations}
 
 * L&#39;assegnazione di elementi a un gruppo non è supportata.

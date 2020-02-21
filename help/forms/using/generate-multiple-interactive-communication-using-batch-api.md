@@ -190,6 +190,7 @@ Prima di distribuire il servlet Java, accertatevi di disporre di una comunicazio
           <scope>provided</scope>
        </dependency>
    ```
+
 1. Aprite il progetto Java, create un file .java, ad esempio CCMBatchServlet.java. Aggiungi al file il codice seguente:
 
    ```java

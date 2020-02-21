@@ -282,19 +282,18 @@ Quindi, specificare le posizioni dei fogli di stile a cui fare riferimento:
 >
 >L’Editor Rich Text utilizza un elemento DOM contenitore con un ID `CQrte` che può essere utilizzato per fornire stili diversi per la visualizzazione e la modifica:
 >
->
-```>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
-
-
+>```
+>
 
 ### Specificare gli stili disponibili nell&#39;elenco a comparsa {#stylesindropdown}
 

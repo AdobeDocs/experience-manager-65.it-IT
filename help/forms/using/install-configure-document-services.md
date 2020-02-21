@@ -415,6 +415,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implemen
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Salvate e chiudete il file.
 
 ### Configurazione del servizio di gestione dei font {#configuring-the-font-manager-service}

@@ -358,27 +358,33 @@ In alcune circostanze può essere utile creare un file di registro personalizzat
 
          Valore: specificare come necessario per controllare la rotazione del file per dimensione/data; ad esempio, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` controlla la rotazione del file di registro impostando:
-   * una dimensione massima del file
-   * una pianificazione di ora/data
-   per indicare quando verrà creato un nuovo file (e il file esistente verrà rinominato in base al pattern del nome).
-   * È possibile specificare un limite di dimensioni con un numero. Se non viene fornito alcun indicatore di dimensione, questo viene considerato come il numero di byte, oppure è possibile aggiungere uno degli indicatori di dimensione - `KB`, `MB`o `GB` (il caso viene ignorato).
-   * È possibile specificare come `java.util.SimpleDateFormat` pattern una pianificazione di ora/data. Definisce il periodo di tempo dopo il quale il file verrà ruotato; inoltre il suffisso aggiunto al file ruotato (per l’identificazione).
-   Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera del registro).
-   Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo tale data sarà preciso), ../logs/error.log verrà rinominato in ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio verrà restituita a (un nuovo e vuoto) ../logs/error.log finché non viene eseguito il rollback al cambio di giorno successivo.
-       | `&#39;.&#39;
-    yyyy-MM`|Rotazione all&#39;inizio di ogni mese|
- |—|—|     | `&#39;.&quot;yyyy-ww`|La rotazione al primo giorno di ogni settimana (dipende dalle impostazioni internazionali). |
-       | `&#39;.&#39;yyyy-MM-dd`|Rotazione a mezzanotte ogni giorno. |
-       | `&#39;.&#39;yyyy-MM-dd-a`|Rotazione a mezzanotte e a mezzogiorno di ogni giorno. |
-       | `&#39;.&#39;yyyy-MM-dd-HH`|Rotazione nella parte superiore di ogni ora. |
-       | `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Rotazione all&#39;inizio di ogni minuto. 
- |    
-      
-Nota: Quando si specifica un&#39;ora/data:       1. 
- È necessario &quot;escape&quot; testo letterale all&#39;interno di una coppia di virgolette singole (&#39; &#39;);   per     evitare che alcuni caratteri vengano interpretati come lettere del pattern.
-       1. Utilizzate solo i caratteri consentiti per un nome di file valido in qualsiasi punto dell&#39;opzione.
-   
+   >
+   >`org.apache.sling.commons.log.file.size` controlla la rotazione del file di registro impostando:
+   >
+   >* una dimensione massima del file
+   >* una pianificazione di ora/data
+   >
+   >per indicare quando verrà creato un nuovo file (e il file esistente verrà rinominato in base al pattern del nome).
+   >
+   >* È possibile specificare un limite di dimensioni con un numero. Se non viene fornito alcun indicatore di dimensione, questo viene considerato come il numero di byte, oppure è possibile aggiungere uno degli indicatori di dimensione - `KB`, `MB`o `GB` (il caso viene ignorato).
+   >* È possibile specificare come `java.util.SimpleDateFormat` pattern una pianificazione di ora/data. Definisce il periodo di tempo dopo il quale il file verrà ruotato; inoltre il suffisso aggiunto al file ruotato (per l’identificazione).
+   >
+   >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera del registro).
+   >
+   >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo tale data sarà preciso), ../logs/error.log verrà rinominato in ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio verrà restituita a (un nuovo e vuoto) ../logs/error.log finché non viene eseguito il rollback al cambio di giorno successivo.
+   >
+   >| `&#39;.&#39;yyyy-MM`|Rotazione all&#39;inizio di ogni mese|
+   >|---|---|
+   >| `&#39;.&quot;yyyy-ww`|La rotazione al primo giorno di ogni settimana (dipende dalle impostazioni internazionali). |
+   >| `&#39;.&#39;yyyy-MM-dd`|Rotazione a mezzanotte ogni giorno. |
+   >| `&#39;.&#39;yyyy-MM-dd-a`|Rotazione a mezzanotte e a mezzogiorno di ogni giorno. |
+   >| `&#39;.&#39;yyyy-MM-dd-HH`|Rotazione nella parte superiore di ogni ora. |
+   >| `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Rotazione all&#39;inizio di ogni minuto. |
+   >
+   >Nota: Quando si specifica un&#39;ora/data:
+   >1. È necessario &quot;escape&quot; testo letterale all&#39;interno di una coppia di virgolette singole (&#39; &#39;);
+   >   per evitare che alcuni caratteri vengano interpretati come lettere del pattern.
+   >1. Utilizzate solo i caratteri consentiti per un nome di file valido in qualsiasi punto dell&#39;opzione.
 
 1. Leggere il nuovo file di registro con lo strumento scelto.
 
