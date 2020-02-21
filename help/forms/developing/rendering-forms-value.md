@@ -138,7 +138,7 @@ Eseguire il rendering di un modulo per valore tramite l&#39;API Forms (Java):
 
 **Consulta anche**
 
-[Rendering dei moduli in base al valore](/help/forms/developing/rendering-forms-rendering-forms-value-rendering-forms.md#rendering-forms-by-value)
+[Rendering dei moduli in base al valore](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
 
 [Avvio rapido (modalità SOAP): Rendering per valore tramite l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
