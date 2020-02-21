@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 0885fb6eb6b6a6b8fefd522b2656c8f64e0a537e
 
 ---
 
@@ -60,8 +60,10 @@ Per casi d&#39;uso più avanzati, MSM può essere utilizzato anche nelle lingue 
 >Per tutti i casi di utilizzo si consiglia di consultare le best practice seguenti:
 >
 >* [Best practice per MSM](/help/sites-administering/msm-best-practices.md); in particolare:
->
->   * [Crea sito](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM e siti Web multilingue](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+   >
+   >   
+   * [Crea sito](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM e siti Web multilingue](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Best practice per la traduzione](/help/sites-administering/tc-bp.md)
+
