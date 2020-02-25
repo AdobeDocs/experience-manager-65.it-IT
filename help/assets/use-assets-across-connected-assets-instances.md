@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a107f3d3f10e2f5b5aed7722aee467a838f9d13d
+source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
 
 ---
 
@@ -27,9 +27,9 @@ Prima di utilizzare o configurare questa funzionalità, accertati di:
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
 * Per i tipi di distribuzione di Adobe Experience Manager, uno dei criteri supportati è soddisfatto. Risorse AEM 6.5 funziona con AEM come servizio cloud. Per ulteriori informazioni, vedi [Funzionalità delle risorse connesse in AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)cloud.
 
-   |  | AEM Sites come servizio cloud | Siti AEM 6.5 su AMS | AEM 6.5 Sites on-premise |
+   |  | AEM Sites come Cloud Service | Siti AEM 6.5 su AMS | AEM 6.5 Sites on-premise |
    |---|---|---|---|
-   | **Risorse AEM come servizio cloud** | Supportato | Supportato | Supportato |
+   | **AEM Assets come Cloud Service** | Supportato | Supportato | Supportato |
    | **Risorse AEM 6.5 su AMS** | Non supportato | Supportato | Supportato |
    | **Risorse AEM 6.5 in sede** | Non supportato | Non supportato | Non supportato |
 
@@ -171,7 +171,7 @@ Le risorse recuperate possono essere usate come qualsiasi altra risorsa locale, 
 * Tutti gli autori dei siti dispongono di autorizzazioni di lettura sulle copie recuperate, anche se non dispongono dell&#39;accesso alla distribuzione remota di DAM.
 * Nessun supporto API per personalizzare l&#39;integrazione.
 * Questa funzionalità supporta la ricerca e l&#39;utilizzo senza soluzione di continuità delle risorse remote. Per rendere disponibili molte risorse remote nella distribuzione locale in un&#39;unica operazione, è consigliabile eseguire la migrazione delle risorse. Consulta la guida [alla migrazione delle](assets-migration-guide.md)risorse.
-* Non è possibile utilizzare una risorsa remota come miniatura per una pagina Web nella scheda [!UICONTROL Miniature] in Proprietà  pagina facendo clic su [!UICONTROL Seleziona immagine].
+* Non è possibile utilizzare una risorsa remota come miniatura di pagina nell’interfaccia utente Proprietà  pagina. Per impostare una miniatura di una pagina Web nell’interfaccia utente Proprietà  pagina dalla [!UICONTROL miniatura] , fare clic su [!UICONTROL Seleziona immagine].
 
 **Configurazione e licenze**
 
