@@ -576,8 +576,7 @@ Per ottenere l&#39;eliminazione delle classi compilate dai JSP, abbiamo impostat
 >
 >Ad esempio, se includete `/libs/foundation/global.jsp`, potete utilizzare la seguente configurazione per il `maven-resources-plugin` posto della configurazione sopra la quale saltare completamente `/libs`.
 >
->
-```
+>```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -586,6 +585,7 @@ Per ottenere l&#39;eliminazione delle classi compilate dai JSP, abbiamo impostat
 >       </includes>  
 >   </resource>  
 >```
+>
 
 ### Come utilizzare i sistemi SCM {#how-to-work-with-scm-systems}
 
