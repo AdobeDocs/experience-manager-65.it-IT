@@ -3,7 +3,7 @@ title: Gestione di più risorse e raccolte
 description: Scoprite come modificare i metadati di più risorse e raccolte contemporaneamente per diffondere rapidamente le comuni modifiche ai metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
 
 ---
 
@@ -44,31 +44,11 @@ Per personalizzare la pagina delle proprietà dei metadati, ad esempio aggiunger
 
 1. Per selezionare uno schema di metadati diverso per le risorse, toccate o fate clic sull’icona **[!UICONTROL Impostazioni]** nella barra degli strumenti, quindi selezionate lo schema desiderato.
 1. Salva le modifiche.
-1. Per aggiungere i nuovi metadati ai metadati esistenti nei campi contenenti più valori, selezionate **[!UICONTROL Aggiungi modalità]**. Se non selezionate questa opzione, i nuovi metadati sostituiranno quelli esistenti nei campi. Toccate o fate clic su **[!UICONTROL Invia]**.
+1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Tocca o fai clic su **[!UICONTROL Invia]**.
 
    >[!CAUTION]
    >
-   >Per i campi con valore singolo, i nuovi metadati non vengono aggiunti al valore esistente nel campo, anche se selezionate la modalità **** Aggiungi.
-
-## Modifica delle proprietà dei metadati di più raccolte {#editing-metadata-properties-of-multiple-collections}
-
-1. Dalla console Raccolte, selezionate le raccolte da modificare.
-1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà per le raccolte selezionate.
-1. Modificate le proprietà dei metadati per le raccolte selezionate nelle varie schede.
-
-   >[!NOTE]
-   >
-   >I metadati aggiunti per le raccolte selezionate sovrascrivono i metadati precedenti per queste raccolte, ad eccezione dei tag. Eventuali tag aggiunti nel campo **[!UICONTROL Tag]** vengono aggiunti all’elenco esistente di tag presenti nei metadati.
-
-1. Per visualizzare le proprietà dei metadati per una raccolta specifica, deselezionate le raccolte rimanenti nell&#39;elenco delle raccolte. I campi dell&#39;editor di metadati vengono compilati con i metadati per la raccolta specifica.
-
-   >[!NOTE]
-   >
-   >* Nella pagina delle proprietà della raccolta, potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita. I metadati per le raccolte rimosse non vengono aggiornati.
-   >* Nella parte superiore dell&#39;elenco, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per alternare tra la selezione delle raccolte e la cancellazione dell&#39;elenco.
-
-
-1. Salva le modifiche.
+   >Per i campi con valore singolo, i nuovi metadati non vengono aggiunti al valore esistente nel campo, nemmeno se selezioni **[!UICONTROL Modalità di aggiunta]**.
 
 ## Configurare il limite per l&#39;aggiornamento in massa dei metadati {#configlimit}
 
@@ -76,4 +56,9 @@ Per evitare situazioni simili a DOS, AEM limita il numero di parametri supportat
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Per modificare il limite, accedete alla console Web ( **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web) e modificate il valore dei parametri **[!UICONTROL POST]** massimi nella configurazione **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi.
+Per modificare il limite, accedi alla Console web da **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]** e modifica il valore di **[!UICONTROL Maximum POST Parameters (Parametri massimi POST)]** nella configurazione OSGi **[!UICONTROL Apache Sling Request Parameter Handling]**.
+
+>[!MORELIKETHIS]
+>
+>* [Modificare le proprietà dei metadati di più raccolte](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
