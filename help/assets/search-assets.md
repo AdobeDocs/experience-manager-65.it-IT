@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
+source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
 
 ---
 
@@ -42,7 +42,7 @@ Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
 *Figura: Informazioni sulle parti dell’interfaccia dei risultati di ricerca di Risorse*
 
-**** A. Salvate la ricerca come Smart Collection. **** B. Filtri (predicati) per limitare i risultati della ricerca. **C.** Visualizzare file, cartelle o entrambi nei risultati della ricerca. **** D. Fate clic su Filtri per aprire o chiudere la barra a sinistra. **** E. Il percorso di ricerca è DAM. **** F. Campo di ricerca Omnisearch con parola chiave di ricerca fornita dall’utente. **** G. Casella di controllo per selezionare tutti i risultati della ricerca. **** H. Numero di risultati della ricerca visualizzati rispetto al totale dei risultati della ricerca. ******I. Chiudere la ricerca** J. Passa dalla vista a scheda a quella a elenco.
+**A.** Salva la ricerca come Raccolta avanzata. **B.** Filtri (predicati) per limitare i risultati della ricerca. **C.** Visualizza file, cartelle o entrambi nei risultati della ricerca. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. ************ F. Campo di ricerca Omnisearch con parola chiave di ricerca fornita dall’utente. **G. Casella di controllo per selezionare tutti i risultati della ricerca.** H. Numero di risultati della ricerca visualizzati rispetto al totale dei risultati della ricerca. **Io. Chiudere la ricerca** J. Passa dalla vista a scheda a quella a elenco.
 
 ### Facet di ricerca dinamici {#dynamicfacets}
 
@@ -113,7 +113,7 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 
 Potete migliorare la rilevanza delle parole chiave per risorse particolari per migliorare le ricerche in base alle parole chiave. In altre parole, le immagini per le quali vengono promosse parole chiave specifiche vengono visualizzate nella parte superiore dei risultati della ricerca quando si esegue una ricerca basata su tali parole chiave.
 
-1. Dall’interfaccia utente Risorse, aprite la pagina delle proprietà della risorsa. Fate clic su **[!UICONTROL Avanzate]** e toccate o fate clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Elevate per cercare le parole chiave]**.
+1. Dall’interfaccia utente Assets, apri la pagina delle proprietà della risorsa. Fai clic su **[!UICONTROL Avanzate]** e tocca o fai clic su **[!UICONTROL Aggiungi]** in **[!UICONTROL Privilegi elevati per parole chiave di ricerca]**.
 1. Nella casella **[!UICONTROL Search Promote (Promuovi]** ricerca), specificate una parola chiave per la quale desiderate incrementare la ricerca dell&#39;immagine e quindi fate clic o toccate **[!UICONTROL Aggiungi]**. Potete specificare più parole chiave nello stesso modo.
 1. Tocca o fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i primi risultati della ricerca.
 
@@ -138,7 +138,7 @@ In AEM sono disponibili vari metodi, come i filtri, che consentono di individuar
 
 ### Trovare immagini simili {#visualsearch}
 
-Per trovare immagini visivamente simili a quelle selezionate dall’utente, fate clic su **[!UICONTROL Trova simili]** nella vista a schede di un’immagine o nella barra degli strumenti. AEM visualizza le immagini con tag avanzati dell’archivio DAM simili a una selezionata dall’utente. Scopri [come configurare la ricerca](#configvisualsearch)per similarità.
+Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai clic su **[!UICONTROL Trova simili]** nella vista a schede di un’immagine o nella barra degli strumenti. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Scopri [come configurare la ricerca per similarità](#configvisualsearch).
 
 ![Trovare immagini simili utilizzando l&#39;opzione nella vista a schede](assets/search_find_similar.png)
 
@@ -151,7 +151,7 @@ Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle r
 
 ### Risorse per file multimediali dinamici {#dmassets}
 
-Per filtrare le immagini per gli elementi multimediali dinamici, selezionate Contenuti multimediali **[!UICONTROL dinamici > Set]** dal pannello **[!UICONTROL Filtri]** . Filtra e visualizza risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
+Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri seleziona Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
 
 ### Ricerca utilizzando valori specifici nei campi di metadati {#gqlsearch}
 
@@ -217,7 +217,7 @@ Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle r
 
 ### Ricerca di risorse per file multimediali dinamici {#dynamicmedia}
 
-Per filtrare le immagini per gli elementi multimediali dinamici, selezionate **[!UICONTROL Contenuti multimediali]** dinamici > **[!UICONTROL Set]** dal pannello **[!UICONTROL Filtri]** . Filtra e visualizza risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi. Durante la creazione di pagine Web, gli autori possono cercare i set direttamente da Content Finder. Un filtro per i set è disponibile in un menu a comparsa.
+Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi. Durante la creazione di pagine web, gli autori possono cercare i set direttamente da Content Finder. Nel menu pop-up è disponibile un filtro per i set.
 
 ### Cercare risorse in Content Finder durante la creazione di pagine Web {#contentfinder}
 
@@ -293,7 +293,7 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 *Figura:Comportamento di ricerca con e senza virgolette*
 
-**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Esempio,
+**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Ad esempio:
 
 * `run` restituisce le risorse con la parola chiave run esatta
 * `run*` restituisce le risorse in esecuzione, in esecuzione, in esecuzione e così via.
@@ -408,7 +408,7 @@ Una volta visualizzate le risorse ricercate che corrispondono ai criteri specifi
 
 ### Ordinare i risultati della ricerca {#sort}
 
-L’ordinamento dei risultati di ricerca consente di individuare più rapidamente le risorse necessarie. L’ordinamento dei risultati della ricerca funziona nella vista a elenco e solo quando si seleziona **[!UICONTROL [File](#searchui)]**dal pannello**[!UICONTROL  Filtri ]**. Risorse AEM utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse (indipendentemente dal numero di risorse) all’interno di una cartella o dai risultati di una query di ricerca. L&#39;ordinamento lato server fornisce risultati più rapidi e precisi rispetto all&#39;ordinamento lato client.
+L’ordinamento dei risultati di ricerca consente di individuare più rapidamente le risorse necessarie. L’ordinamento dei risultati della ricerca funziona nella vista a elenco e solo quando si seleziona **[!UICONTROL [File](#searchui)]**dal pannello**[!UICONTROL  Filtri ]**. AEM Assets utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse all’interno di una cartella o nei risultati di una query di ricerca, indipendentemente dal numero. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
 
 Nella vista a elenco, potete ordinare i risultati della ricerca esattamente come potete ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimensioni, Dimensioni, Valutazione, Utilizzo, Data creazione, Data modifica, Data pubblicazione, Flusso di lavoro e Estratto.
 
@@ -420,7 +420,7 @@ Potete controllare informazioni dettagliate su una risorsa ricercata dalla pagin
 
 Per visualizzare tutti i metadati di una risorsa, selezionate la risorsa e fate clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
 
-Per controllare i commenti relativi a una risorsa o alla cronologia della versione di una risorsa, fate clic sulla risorsa per aprire l’anteprima di grandi dimensioni. Aprite la timeline nella barra a sinistra e selezionate **[!UICONTROL Commenti]** o **[!UICONTROL Versioni]**. Potete anche ordinare l&#39;attività della cronologia come commenti o versioni in ordine cronologico.
+Per controllare i commenti relativi a una risorsa o alla sua cronologia della versione, fai clic sulla risorsa per aprirne l’anteprima di grandi dimensioni. Apri la timeline nella barra a sinistra e seleziona **[!UICONTROL Commenti]** o **[!UICONTROL Versioni]**. Puoi anche ordinare l’attività della timeline come commenti o versioni in ordine cronologico.
 
 ![Ordinare le voci della cronologia per una risorsa di ricerca](assets/sort_timeline_search_results.gif)
 
@@ -435,7 +435,7 @@ Potete scaricare le risorse ricercate e le relative rappresentazioni esattamente
 
 È possibile eseguire aggiornamenti in blocco ai campi di metadati comuni di più risorse. Dai risultati della ricerca, selezionate una o più risorse. Fate clic su **[!UICONTROL Proprietà]** nella barra degli strumenti e aggiornate i metadati come necessario. Al termine, fate clic su **[!UICONTROL Salva e chiudi]** . I metadati esistenti in precedenza nei campi aggiornati vengono sovrascritti.
 
-Per le risorse disponibili in una singola cartella o raccolta, è più semplice [aggiornare i metadati in massa](/help/assets/managing-multiple-assets.md). Per le risorse disponibili in più cartelle o che corrispondono a criteri comuni, è più rapido aggiornare in massa i metadati tramite la ricerca.
+Per le risorse disponibili in una singola cartella o raccolta, è più semplice [aggiornare i metadati in blocco](/help/assets/managing-multiple-assets.md) senza utilizzare la funzionalità di ricerca. Per le risorse disponibili in più cartelle o che corrispondono a criteri comuni, è più rapido aggiornare in massa i metadati tramite la ricerca.
 
 ### Raccolte intelligenti {#collections-1}
 
@@ -444,7 +444,7 @@ Una raccolta è un set ordinato di risorse che può includere risorse da posizio
 * Un elenco di riferimento statico di risorse, cartelle e altre raccolte.
 * Un elenco dinamico (raccolta avanzata) che popola le risorse nella raccolta in base a un criterio di ricerca.
 
-Potete creare raccolte dinamiche in base ai criteri di ricerca. Dal pannello **[!UICONTROL Filtri]** , selezionate **[!UICONTROL File]** e fate clic su **[!UICONTROL Salva raccolta]** avanzata. Consultate [Gestione delle raccolte](/help/assets/managing-collections-touch-ui.md).
+Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UICONTROL Filtri]**, seleziona **[!UICONTROL File]** e fai clic su **[!UICONTROL Salva raccolta avanzata]**. Consulta la sezione [Gestisci raccolte](/help/assets/managing-collections-touch-ui.md).
 
 ## Risoluzione di problemi e risultati della ricerca imprevisti {#troubleshoot-unexpected-search-results-and-issues}
 
