@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -70,7 +70,7 @@ Per configurare il database MySQL, effettuate le seguenti operazioni:
       * **** Nome origine dati: Potete specificare qualsiasi nome. Ad esempio, specificate **WeRetailMySQL**.
       * **Nome** proprietà del servizio DataSource: Specificare il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell&#39;istanza dell&#39;origine dati come servizio OSGi. Ad esempio, **datasource.name**.
       * **Classe** driver JDBC: Specificate il nome della classe Java del driver JDBC. Per il database MySQL, specificate **com.mysql.jdbc.Driver**.
-      * **URI** connessione JDBC: Specificate l&#39;URL di connessione del database. Per il database MySQL in esecuzione sulla porta 3306 e lo schema weretail, l&#39;URL è: jdbc:mysql://[server]:3306/weretail?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8
+      * **URI** connessione JDBC: Specificate l&#39;URL di connessione del database. Per il database MySQL in esecuzione sulla porta 3306 e lo schema weretail, l&#39;URL è: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **** Nome utente: Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
       * **** Password: Password del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
       * **** Test sul credito: Abilitate l&#39;opzione **Prova in prestito** .
@@ -162,11 +162,11 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
    1. Specificate quanto segue nella finestra di dialogo Modifica proprietà:
 
       * **Titolo**: Specificate il titolo del servizio. Ad esempio: Recupera indirizzo di spedizione.
-      * **Descrizione**: Specificare la descrizione contenente il funzionamento dettagliato del servizio. Esempio:
+      * **Descrizione**: Specificare la descrizione contenente il funzionamento dettagliato del servizio. Ad esempio:
 
          Questo servizio recupera l&#39;indirizzo di spedizione e altri dettagli cliente dal database MySQL
 
-      * **Oggetto** modello di output: Selezionare lo schema contenente i dati del cliente. Esempio:
+      * **Oggetto** modello di output: Selezionare lo schema contenente i dati del cliente. Ad esempio:
 
          schema dettaglio cliente
 
@@ -181,11 +181,11 @@ Per configurare il modello dati del modulo, effettuare le seguenti operazioni:
    1. Specificate quanto segue nella finestra di dialogo Modifica proprietà:
 
       * **Titolo**: Specificate il titolo del servizio. Ad esempio, Aggiorna indirizzo di spedizione.
-      * **Descrizione**: Specificare la descrizione contenente il funzionamento dettagliato del servizio. Esempio:
+      * **Descrizione**: Specificare la descrizione contenente il funzionamento dettagliato del servizio. Ad esempio:
 
          Questo servizio aggiorna l&#39;indirizzo di spedizione e i campi correlati nel database MySQL
 
-      * **Oggetto** del modello di input: Selezionare lo schema contenente i dati del cliente. Esempio:
+      * **Oggetto** del modello di input: Selezionare lo schema contenente i dati del cliente. Ad esempio:
 
          schema dettaglio cliente
 
