@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -788,13 +788,13 @@ Sarah Rose sta pensando di investire in un fondo comune. È un cliente esistente
 
 #### Come funziona {#how-it-works-17}
 
-Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Utilizza testi, immagini, grafici e componenti di tabella (frammenti di documento) per visualizzare il riepilogo del prodotto, lo stile delle scorte, le prestazioni del fondo, i dettagli del fondo e altre informazioni correlate. [ Potete controllare la comunicazione interattiva in modalità di modifica all&#39;indirizzo https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Utilizza testi, immagini, grafici e componenti di tabella (frammenti di documento) per visualizzare il riepilogo del prodotto, lo stile delle scorte, le prestazioni del fondo, i dettagli del fondo e altre informazioni correlate. È possibile esaminare la comunicazione interattiva in modalità di modifica in `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`
 
-I grafici e le tabelle recuperano i dati da un modello dati del modulo. Il modello dati del modulo si connette alle origini dati configurate, un database in questa procedura dettagliata, per recuperare informazioni specifiche per il fondo. È possibile esaminare il modello di dati del modulo all&#39;indirizzo https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management
+I grafici e le tabelle recuperano i dati da un modello dati del modulo. Il modello dati del modulo si connette alle origini dati configurate, un database in questa procedura dettagliata, per recuperare informazioni specifiche per il fondo. È possibile esaminare il modello dati del modulo in `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management`
 
 #### Vedi te stesso {#see-it-yourself-15}
 
-Andate al portale We.Finance all&#39;indirizzo https://[publishHost]:[publishPort]/wefinance, toccate Gestione patrimoniale, espandete i fondi per classe asset e toccate We.Finance Blue Chip Growth Fund. Viene aperto il prospetto del Fondo di crescita per i chip blu We.Finance.
+Andate al portale We.Finance `https://[publishHost]:[publishPort]/wefinance`, toccate Gestione patrimoniale, espandete i fondi per classe di asset e toccate We.Finance Blue Chip Growth Fund. Viene aperto il prospetto del Fondo di crescita per i chip blu We.Finance.
 
 ### Sarah esplora il prospetto Blue Chip Growth Fund per conoscere il fondo {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
@@ -806,11 +806,11 @@ Sarah esplora le schede Panoramica, Prezzi e Prestazioni, Gestione dei portafogl
 
 La comunicazione interattiva Blue Chip Growth Fund utilizza i pannelli padre e figlio per separare le informazioni correlate in sezioni diverse. Il pannello principale organizza tutti i pannelli secondari in schede.
 
-Il layout della scheda principale è impostato su Tabulazioni in alto per convertire tutti i pannelli secondari in schede. [ Potete controllare i pannelli della comunicazione interattiva in modalità di modifica all&#39;indirizzo https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+Il layout della scheda principale è impostato su Tabulazioni in alto per convertire tutti i pannelli secondari in schede. Potete controllare i pannelli della comunicazione interattiva in modalità di modifica all&#39;indirizzo `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
 
 #### Vedi te stesso {#see-it-yourself-16}
 
-[ Andate alla comunicazione interattiva Blue Chip Growth Fund all&#39;indirizzo https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Esplora tutte le schede.
+Andate alla comunicazione interattiva Blue Chip Growth Fund all&#39;indirizzo `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled`. Esplora tutte le schede.
 
 ### Sarah visualizza ed e-mail la versione PDF della pagina Blue Chip Growth Fund {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
@@ -820,15 +820,15 @@ Sarah sta viaggiando in campagna durante il weekend. Ha intenzione di discutere 
 
 #### Come funziona {#how-it-works-19}
 
-Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Ha un canale Web e PDF. La comunicazione interattiva si integra con AEM Workflows per inviare la versione PDF tramite e-mail. [ Per vedere il modello di workflow, visitate https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+Il prospetto Blue Chip Growth Fund è una comunicazione interattiva. Ha un canale Web e PDF. La comunicazione interattiva si integra con AEM Workflows per inviare la versione PDF tramite e-mail. È possibile esaminare il modello di workflow in `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html`.
 
 ![gestione patrimoniale](assets/wealth-management.png)
 
 #### Vedi te stesso {#see-it-yourself-17}
 
-[ Per scaricare la versione PDF, andate alla comunicazione interattiva Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, toccate Scarica PDF.
+Per scaricare la versione PDF, accedete alla comunicazione interattiva Blue Chip Growth Fund `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`e toccate Scarica PDF.
 
-[ Per inviare PDF tramite e-mail, andate alla comunicazione interattiva Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, toccate EMAIL PDF. Specificate **Nome** completo e Indirizzo **** e-mail. Fate clic su **Invia e-mail**.
+Per inviare PDF tramite e-mail, accedete alla comunicazione interattiva Blue Chip Growth Fund `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`, toccate EMAIL PDF. Specificate **Nome** completo e Indirizzo **** e-mail. Fate clic su **Invia e-mail**.
 
 ## Procedura dettagliata sulle applicazioni di assicurazione automatica {#auto-insurance-application-walkthrough}
 
@@ -849,13 +849,13 @@ Conrad accede all’istanza AEM, apre il dashboard Assicurazione automatica che 
 
 #### Come funziona {#how-it-works-20}
 
-La comunicazione sul rinnovo della polizza assicurativa è una comunicazione interattiva. Conrad Simms utilizza l&#39;interfaccia utente dell&#39;agente per inviare la comunicazione sul rinnovo del polizza assicurativa a Sarah. La comunicazione include la stampa (PDF) e il collegamento al canale Web della comunicazione interattiva. La comunicazione interattiva utilizza AEM Workflow per inviare l’e-mail. [ Per informazioni sul flusso di lavoro, consultate https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+La comunicazione sul rinnovo della polizza assicurativa è una comunicazione interattiva. Conrad Simms utilizza l&#39;interfaccia utente dell&#39;agente per inviare la comunicazione sul rinnovo del polizza assicurativa a Sarah. La comunicazione include la stampa (PDF) e il collegamento al canale Web della comunicazione interattiva. La comunicazione interattiva utilizza AEM Workflow per inviare l’e-mail. Potete visualizzare il flusso di lavoro in `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
 
 ![autoassicurazione-flusso di lavoro](assets/auto-insurance-workflow.png)
 
 #### Vedi te stesso {#see-it-yourself-18}
 
-Accedete al dashboard **di assicurazione automatica** We.Finance come Conrad Simms (csimms/password). L’URL è https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specificate l&#39;ID **** cliente. L&#39;ID cliente di Sarah Rose è 900001. Fate clic su **Rinnova criterio**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Nell’interfaccia utente dell’agente, immettete un indirizzo e-mail valido per inviare l’e-mail con allegato il documento del criterio e fate clic su **Invia**. Sullo schermo viene visualizzato un messaggio, Inviato, e in pochi secondi viene visualizzato un altro messaggio, Inviato correttamente. Un messaggio e-mail con oggetto Rinnovo **** assicurazione automatica e viene inviato all&#39;indirizzo e-mail specificato. La politica offerta a Sarah Rose è una politica premium.
+Accedete al dashboard **di assicurazione automatica** We.Finance come Conrad Simms (csimms/password). L&#39;URL è `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Specificate l&#39;ID **** cliente. L&#39;ID cliente di Sarah Rose è 900001. Fate clic su **Rinnova criterio**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Nell’interfaccia utente dell’agente, immettete un indirizzo e-mail valido per inviare l’e-mail con allegato il documento del criterio e fate clic su **Invia**. Sullo schermo viene visualizzato un messaggio, Inviato, e in pochi secondi viene visualizzato un altro messaggio, Inviato correttamente. Un messaggio e-mail con oggetto Rinnovo **** assicurazione automatica e viene inviato all&#39;indirizzo e-mail specificato. La politica offerta a Sarah Rose è una politica premium.
 
 La procedura guidata di assicurazione auto contiene anche un altro cliente, Alison Jones. L&#39;ID cliente di Alison Jones è 900002. Quando inviate la comunicazione interattiva ad Alison Jones, viene inviata una policy standard. La differenza tra la polizza standard e quella premium è:
 
@@ -863,18 +863,18 @@ La procedura guidata di assicurazione auto contiene anche un altro cliente, Alis
 * La politica standard costa meno della politica dei premi.
 * La politica premium ha una ricompensa anti-furto e la politica standard ha una ricompensa intelligente
 
-Entrambi i criteri utilizzano la stessa comunicazione interattiva. Le sezioni del criterio vengono modificate o nascoste in base alla condizione del tipo di criterio. È possibile accedere e rivedere la comunicazione interattiva per il rinnovo automatico dell&#39;assicurazione direttamente da https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoInsurance/auto-rispririmento
+Entrambi i criteri utilizzano la stessa comunicazione interattiva. Le sezioni del criterio vengono modificate o nascoste in base alla condizione del tipo di criterio. Puoi accedere e rivedere la comunicazione interattiva per il rinnovo dell&#39;assicurazione auto direttamente da `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Utilizzo di Microsoft Dynamics come origine dati**
 
 Il sito di riferimento fornisce inoltre una comunicazione interattiva che utilizza Microsoft Dynamics come origine dati per il modello dati del modulo. Effettuate le seguenti operazioni per configurare la comunicazione interattiva per la procedura dettagliata di assicurazione automatica:
 
-1. Accedete a https://[author]:[port]/crx/de come amministratore.
+1. Accedete a `https://[author]:[port]/crx/de as an administrator`.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Impostate il valore `FormFieldRequestParameter`su `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Toccate **Salva tutto**. Il sito di riferimento è configurato per utilizzare la comunicazione interattiva che utilizza MS Dynamics come origine dati.
 
-Accedete ora al dashboard **di assicurazione automatica** We.Finance come Conrad Simms (csimms/password). L’URL è https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Specificate l&#39;ID **** cliente. L&#39;ID cliente di Sarah Rose è 900001. Fate clic su **Rinnova criterio**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Nell’interfaccia utente dell’agente, immettete un indirizzo e-mail valido per inviare l’e-mail con allegato il documento del criterio e fate clic su **Invia**. Sullo schermo viene visualizzato un messaggio, Inviato, e in pochi secondi viene visualizzato un altro messaggio, Inviato correttamente. All&#39;indirizzo e-mail specificato viene inviato un messaggio e-mail con l&#39;oggetto Rinnovo **** assicurazione automatica.
+Accedete ora al dashboard **di assicurazione automatica** We.Finance come Conrad Simms (csimms/password). L&#39;URL è `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Specificate l&#39;ID **** cliente. L&#39;ID cliente di Sarah Rose è 900001. Fate clic su **Rinnova criterio**. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Nell’interfaccia utente dell’agente, immettete un indirizzo e-mail valido per inviare l’e-mail con allegato il documento del criterio e fate clic su **Invia**. Sullo schermo viene visualizzato un messaggio, Inviato, e in pochi secondi viene visualizzato un altro messaggio, Inviato correttamente. All&#39;indirizzo e-mail specificato viene inviato un messaggio e-mail con l&#39;oggetto Rinnovo **** assicurazione automatica.
 
 >[!NOTE]
 >
@@ -902,7 +902,7 @@ Devi aver ricevuto un&#39;e-mail con un PDF allegato. Il PDF è una versione car
 
 Il pulsante **Rinnova ora** nell&#39;e-mail indirizza Sarah alla versione Web del criterio. Potete visitare il seguente URL:
 
-https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
+`https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001`
 
 È possibile controllare il riepilogo dettagliato del rinnovo dell&#39;assicurazione auto e fare clic su **Rinnova ora** nella parte inferiore della pagina.
 
@@ -920,6 +920,6 @@ Il pulsante Rinnova ora indirizza Sarah alla pagina di pagamento. La pagina di p
 
 Fare clic su **Rinnova ora** per accedere alla pagina Pagamento. Compila le informazioni sulla carta di credito e fai clic su **Effettua pagamento**. Puoi accedere alla pagina del pagamento nell’istanza di creazione all’indirizzo:
 
-https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;schema=fdm&amp;customerId=900001
+`https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001`
 
 Il messaggio di ringraziamento viene visualizzato dopo aver fatto clic sul pulsante Imposta pagamento.
