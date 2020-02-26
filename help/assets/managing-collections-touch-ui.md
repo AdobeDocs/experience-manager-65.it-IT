@@ -150,33 +150,19 @@ I metadati della raccolta includono i dati sulla raccolta, compresi eventuali ta
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, seleziona le schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]** per visualizzare i metadati della raccolta.
 1. Modificate i metadati, se necessario, quindi toccate o fate clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti per salvare le modifiche.
 
-## Modificare i metadati di più raccolte in blocco {#editing-collection-metadata-in-bulk}
+### Modificare i metadati della raccolta in blocco {#editing-collection-metadata-in-bulk}
 
 Potete modificare i metadati di più raccolte contemporaneamente. Questa funzionalità consente di replicare rapidamente i metadati comuni in più raccolte.
 
 1. Nella console Raccolte, selezionate due o più raccolte per le quali desiderate modificare i metadati.
 1. Dalla barra degli strumenti, toccate o fate clic sull’icona **[!UICONTROL Proprietà]** .
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, modifica i metadati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, secondo necessità.
-1. Per visualizzare le proprietà dei metadati per una raccolta specifica, deselezionate le raccolte rimanenti nell&#39;elenco delle raccolte. I campi dell&#39;editor di metadati vengono compilati con i metadati per la raccolta specifica.
-
-   >[!NOTE]
-   >
-   >* Nella pagina delle proprietà della raccolta, potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita. I metadati per le raccolte rimosse non vengono aggiornati.
-   >* Nella parte superiore dell&#39;elenco, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per alternare tra la selezione delle raccolte e la cancellazione dell&#39;elenco.
-
-
 1. Toccate/fate clic su **[!UICONTROL Salva e chiudi]** nella barra degli strumenti, quindi chiudete la finestra di dialogo di conferma per completare il processo.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Tocca o fai clic su **[!UICONTROL Invia]**.
 
    >[!NOTE]
    >
-   >I metadati aggiunti per le raccolte selezionate sovrascrivono i metadati precedenti per queste raccolte. Utilizzate la modalità  Aggiungi per aggiungere nuovi valori ai metadati esistenti nei campi che possono contenere più valori. I campi con valore singolo vengono sempre sovrascritti. Eventuali tag aggiunti nel campo [!UICONTROL Tag] vengono aggiunti all’elenco esistente di tag presenti nei metadati.
-
-Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;aggiunta, la modifica, l&#39;eliminazione delle proprietà dei metadati, utilizzare l&#39;Editor schema.
-
->[!TIP]
->
->Il metodo di modifica collettiva funziona per le risorse disponibili in una raccolta. Per le risorse disponibili in più cartelle o che corrispondono a criteri comuni, è possibile aggiornare [in massa i metadati dopo la ricerca](/help/assets/search-assets.md#metadataupdates).
+   >La modalità di aggiunta funziona solo per i campi che possono contenere più valori. Per i campi che possono includere un solo valore, i nuovi metadati non vengono aggiunti al valore esistente del campo, anche se selezioni **[!UICONTROL Modalità di aggiunta]**.
 
 ## Cerca raccolte {#searching-collections}
 
@@ -220,6 +206,34 @@ Quando scaricate una raccolta, viene scaricata l&#39;intera gerarchia di risorse
 1. Nella finestra di dialogo **[!UICONTROL Scarica]** , toccate o fate clic su **[!UICONTROL Scarica]**. Se desiderate scaricare i rendering delle risorse all&#39;interno della raccolta, selezionate **[!UICONTROL Rendering]**. Selezionate l&#39;opzione **[!UICONTROL E-mail]** per inviare una notifica e-mail al proprietario della raccolta.
 
    Quando selezionate una raccolta da scaricare, viene scaricata l&#39;intera gerarchia di cartelle sotto la raccolta. Per includere ciascuna raccolta scaricata (comprese le risorse nelle raccolte figlie nidificate sotto la raccolta principale) in una singola cartella, selezionate **[!UICONTROL Crea cartella separata per ciascuna risorsa]**.
+
+## Modifica delle proprietà dei metadati di più raccolte {#edit-metadata-in-bulk}
+
+Risorse Adobe Enterprise Manager (AEM) consente di modificare i metadati di molte raccolte in blocco. Utilizzate la pagina [!UICONTROL Proprietà] per eseguire modifiche ai metadati su più raccolte, ad esempio per modificare le proprietà dei metadati impostando un valore comune o aggiungere o modificare i tag.
+
+Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;aggiunta, la modifica, l&#39;eliminazione delle proprietà dei metadati, utilizzare l&#39;Editor schema.
+
+>[!NOTE]
+>
+>I metodi di modifica collettiva funzionano per le risorse disponibili in una raccolta. Per le risorse disponibili in più cartelle o che corrispondono a criteri comuni, è possibile aggiornare [in massa i metadati dopo la ricerca](/help/assets/search-assets.md#metadataupdates).
+
+1. Dalla console Raccolte, selezionate le raccolte da modificare.
+1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Proprietà]** per aprire la pagina [!UICONTROL Proprietà] per le raccolte selezionate.
+1. Modificate le proprietà dei metadati per le raccolte selezionate nelle varie schede.
+
+   >[!NOTE]
+   >
+   >I metadati aggiunti per le raccolte selezionate sovrascrivono i metadati precedenti per queste raccolte, ad eccezione dei tag. Eventuali tag aggiunti nel campo **[!UICONTROL Tag]** vengono aggiunti all’elenco esistente di tag presenti nei metadati.
+
+1. Per visualizzare le proprietà dei metadati per una raccolta specifica, deselezionate le raccolte rimanenti nell&#39;elenco delle raccolte. I campi dell&#39;editor di metadati vengono compilati con i metadati per la raccolta specifica.
+
+   >[!NOTE]
+   >
+   >* Nella pagina delle proprietà della raccolta, potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita. I metadati per le raccolte rimosse non vengono aggiornati.
+   >* Nella parte superiore dell&#39;elenco, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per alternare tra la selezione delle raccolte e la cancellazione dell&#39;elenco.
+
+
+1. Salva le modifiche.
 
 ## Creare raccolte nidificate {#creating-nested-collections}
 
@@ -286,5 +300,6 @@ Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccol
 >[!MORELIKETHIS]
 >
 >* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Modificare le proprietà dei metadati di più raccolte](managing-multiple-assets.md)
 >* [Creazione di un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
