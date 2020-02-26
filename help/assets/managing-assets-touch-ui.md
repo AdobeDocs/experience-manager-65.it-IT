@@ -346,7 +346,7 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/
    >
    >Il layout della pagina [!UICONTROL Proprietà] e le proprietà dei metadati disponibili dipendono dallo schema di metadati sottostante. Per informazioni su come modificare il layout della pagina [!UICONTROL Proprietà] , consultate Schemi [di](/help/assets/metadata-schemas.md)metadati.
 
-1. Per pianificare una data/ora specifica per l’attivazione della risorsa, utilizzate il selettore data accanto al campo Ora **** di attivazione.
+1. Per pianificare una data/ora specifica per l’attivazione della risorsa, utilizza il selettore data posto accanto al campo **[!UICONTROL On Time (All’ora)]**.
 
    ![chlimage_1-217](assets/chlimage_1-12.png)
 
@@ -360,7 +360,7 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/
    >
    >Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura `/content/cq:tags/default` nell&#39;archivio CRX.
 
-1. Per assegnare una valutazione alla risorsa, toccate o fate clic sulla scheda **[!UICONTROL Avanzate]** , quindi toccate o fate clic sulla stella nella posizione appropriata per assegnare la valutazione desiderata.
+1. Per assegnare una valutazione alla risorsa, tocca o fai clic sulla scheda **[!UICONTROL Avanzate]**, quindi tocca o fai clic sulla stella appropriata per assegnare la valutazione desiderata.
 
    ![valutazioni](assets/ratings.png)
 
@@ -477,17 +477,17 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    **Caricare una nuova rappresentazione**
 
-   Andate alla pagina dei dettagli della risorsa, quindi toccate o fate clic sull&#39;icona **[!UICONTROL Aggiungi rappresentazione]** nella barra degli strumenti per caricare una nuova rappresentazione per la risorsa.
+   Vai alla pagina dei dettagli della risorsa, quindi tocca o fai clic sull’icona **[!UICONTROL Aggiungi rappresentazione]** della barra degli strumenti per caricare una nuova rappresentazione della risorsa.
 
    ![chlimage_1-221](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >Se selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , la barra degli strumenti cambia contesto e visualizza solo le azioni rilevanti per la rappresentazione. Le opzioni, ad esempio l&#39;icona Carica rappresentazione, non vengono visualizzate. Per visualizzare queste opzioni nella barra degli strumenti, andate alla pagina dei dettagli della risorsa.
+   >Se selezioni un rendering dal pannello **[!UICONTROL Rendering]**, la barra degli strumenti cambia contesto, visualizzando solo le azioni del rendering specifico. Le opzioni non sono visualizzate, ad esempio l’icona Carica rappresentazione. Per visualizzare queste opzioni nella barra degli strumenti, vai alla pagina dei dettagli della risorsa.
 
    Potete configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, Risorse AEM visualizza la rappresentazione con le dimensioni esatte o più vicine.
 
-   Per configurare le dimensioni di rappresentazione di un’immagine a livello di dettaglio della risorsa, sovrapponete il `renditionpicker` nodo (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configurate il valore della proprietà width. Configura la **[!UICONTROL dimensione della proprietà (Long) in KB]** al posto della larghezza per personalizzare la rappresentazione sulla pagina dei dettagli della risorsa in base alle dimensioni dell’immagine. Per la personalizzazione basata sulle dimensioni, la proprietà `preferOriginal` assegna le preferenze all&#39;originale se la dimensione della rappresentazione corrispondente è maggiore dell&#39;originale.
+   Per configurare le dimensioni di rendering di un’immagine a livello di dettaglio della risorsa, sovrapponi il nodo `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configura il valore della proprietà larghezza.  Per personalizzare il rendering sulla pagina dei dettagli della risorsa in base alle dimensioni dell’immagine, configura la proprietà **[!UICONTROL size (Long) in KB (dimensione (lunga) in KB)]** al posto della larghezza. Per la personalizzazione basata sulle dimensioni, la proprietà `preferOriginal` assegna le preferenze all’originale se la dimensione del rendering corrispondente è maggiore.
 
    Allo stesso modo, potete personalizzare l&#39;immagine della pagina Annotazione sovrapponendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -540,7 +540,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Andate alla posizione delle risorse o delle cartelle da pubblicare.
 
-1. Selezionate l’azione rapida **[!UICONTROL Pubblica]** dalla scheda delle risorse oppure selezionate la risorsa e toccate o fate clic sull’icona Pubblicazione **** rapida dalla barra degli strumenti.
+1. Seleziona l’azione rapida **[!UICONTROL Pubblica]** dalla scheda delle risorse oppure fai clic sulla risorsa e tocca o fai clic sull’icona **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti.
 1. Se la risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti non pubblicati o modificati dopo l’ultima pubblicazione o l’annullamento della pubblicazione. Scegliete i riferimenti da pubblicare.
 
    ![chlimage_1-225](assets/chlimage_1-21.png)
@@ -650,7 +650,7 @@ Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effett
 
    ![chlimage_1-226](assets/chlimage_1-22.png)
 
-1. Selezionate l’opzione desiderata dall’elenco. L’area di ritaglio viene visualizzata sull’immagine in base all’opzione scelta. L’opzione Mano **** libera consente di ritagliare l’immagine senza limitazioni di proporzioni.
+1. Seleziona l’opzione desiderata dall’elenco. L’area di ritaglio viene visualizzata sull’immagine in base all’opzione scelta. L’opzione **Mano libera** consente di ritagliare l’immagine senza limitazioni di proporzioni.
 
    ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
 
@@ -659,7 +659,7 @@ Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effett
 
    ![chlimage_1-228](assets/chlimage_1-24.png)
 
-1. Utilizzate le icone **Annulla** e **Ripristina** in alto a destra per ripristinare l’immagine non ritagliata o mantenere l’immagine ritagliata, rispettivamente.
+1. Utilizza le icone **Annulla** e **Ripeti** in alto a destra rispettivamente per ripristinare l’immagine non ritagliata o mantenere l’immagine ritagliata.
 
    ![chlimage_1-229](assets/chlimage_1-25.png)
 
@@ -716,7 +716,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
    ![chlimage_1-233](assets/chlimage_1-29.png)
 
-1. Aggiungete un commento nella casella **[!UICONTROL Commento]** nella parte inferiore della timeline. In alternativa, contrassegnate un’area sull’immagine e aggiungete un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]** .
+1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
 
    ![chlimage_1-234](assets/chlimage_1-30.png)
 
@@ -747,7 +747,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    ![Selezionate l&#39;icona del profilo utente e quindi Preferenze personali per aprire Preferenze utente](assets/User-profile-preferences.png)
 
-   Specificate il colore desiderato nella casella Colore **** annotazione e toccate o fate clic su **[!UICONTROL Accetta]**.
+   Nella casella **[!UICONTROL Colore annotazione]**, specifica il colore desiderato, infine tocca o fai clic su **[!UICONTROL Accetta]**.
 
    ![Selezionate il colore dell’annotazione nelle Preferenze utente per impostare il colore Persona utente](assets/Annotation-color.png)
 
@@ -763,7 +763,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    ![chlimage_1-239](assets/chlimage_1-35.png)
 
-1. Dall’elenco **[!UICONTROL Mostra tutto]** nella timeline, selezionate **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
+1. Dall’elenco **[!UICONTROL Mostra tutti]** nella timeline, seleziona **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
 
    ![chlimage_1-240](assets/chlimage_1-36.png)
 
@@ -803,13 +803,13 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
    ![Selezionare la posizione dell&#39;annotazione/stato revisione da visualizzare sul PDF dalla finestra di dialogo Stampa](assets/Print-annotation-dialog.png)
 
-   È possibile scegliere altre impostazioni a seconda della posizione in cui si desidera visualizzare le annotazioni o lo stato nel PDF stampato. Se desiderate che le annotazioni o lo stato vengano visualizzati in una pagina separata dalla risorsa stampata, scegliete Pagina **** successiva.
+   È possibile scegliere altre impostazioni, a seconda della posizione in cui si desidera visualizzare le annotazioni o lo stato nel PDF stampato. Se vuoi che le annotazioni o lo stato vengano visualizzati in una pagina separata dalla risorsa stampata, scegli **[!UICONTROL Pagina successiva]**.
 
    >[!NOTE]
    >
    >Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale, Adobe consiglia di limitare le annotazioni a 50 parole.
 
-1. Toccate o fate clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al punto 2, il PDF generato visualizza le annotazioni/stato nella posizione specificata. Ad esempio, se scegliete di stampare sia le annotazioni che lo stato di revisione utilizzando l&#39;impostazione **In alto a sinistra** , l&#39;output generato sarà simile al file PDF rappresentato qui.
+1. Tocca o fai clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
    ![chlimage_1-246](assets/chlimage_1-42.png)
 
@@ -891,7 +891,7 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
    ![chlimage_1-251](assets/chlimage_1-47.png)
 
-1. Per visualizzare la nuova versione, aprite l’elenco **[!UICONTROL Mostra tutto]** nella timeline dalla pagina dei dettagli della risorsa o dall’interfaccia utente delle risorse e scegliete **[!UICONTROL Versioni]**. Tutte le versioni create per una risorsa sono elencate nella scheda della cronologia. Potete filtrare l&#39;elenco per visualizzare Versioni, facendo clic sulla freccia rivolta verso il basso e selezionando **[!UICONTROL Versioni]** dall&#39;elenco.
+1. Per visualizzare la nuova versione, apri l’elenco **[!UICONTROL Mostra tutti]** nella timeline dalla pagina dei dettagli della risorsa o dall’interfaccia utente Assets, quindi scegli **[!UICONTROL Versioni]**. Tutte le versioni create per una risorsa sono elencate nella scheda della timeline. Puoi filtrare l’elenco Versioni, facendo clic sulla freccia rivolta verso il basso e selezionando **[!UICONTROL Versioni]** dall’elenco.
 
    ![version_option](assets/versions_option.png)
 
@@ -907,7 +907,7 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
    ![save_version](assets/save_version.png)
 
-1. Per generare un&#39;anteprima per la versione, toccate o fate clic su Versione **** anteprima.
+1. Per generare un’anteprima per la versione, tocca o fai clic su **[!UICONTROL Anteprima versione]**.
 1. Per visualizzare questa versione nell’interfaccia utente delle risorse, seleziona **[!UICONTROL Ripristina questa versione]**.
 1. Per confrontare tra due versioni, andate alla pagina delle risorse e toccate o fate clic sulla versione da confrontare con la versione corrente.
 
@@ -932,7 +932,7 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
    ![chlimage_1-253](assets/chlimage_1-49.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Avvia flusso di lavoro]** , selezionate un modello di workflow dall’elenco.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-50.png)
 
@@ -940,7 +940,7 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
    ![chlimage_1-255](assets/chlimage_1-51.png)
 
-1. Toccate **[!UICONTROL Avvia]**, quindi toccate **[!UICONTROL Procedi]** nella finestra di dialogo per confermare. Ciascun passaggio del flusso di lavoro viene visualizzato nella timeline come un evento.
+1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Ciascun passaggio del flusso di lavoro viene visualizzato nella timeline come un evento.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
