@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -220,8 +220,8 @@ Per ulteriori informazioni sull&#39;utilizzo dei pacchetti e della condivisione 
 
 Dopo aver installato i pacchetti e avviato le istanze di creazione e pubblicazione, visitate i seguenti URL nel browser:
 
-* https://[server]:[port]/wegov
-* https://[server]:[port]/wefinance
+* `https://[server]:[port]/wegov`
+* `https://[server]:[port]/wefinance`
 
 Se l&#39;installazione ha esito positivo, potete accedere alle pagine di destinazione dei siti di riferimento e We.Finance.
 
@@ -231,12 +231,12 @@ I siti di riferimento dell&#39;applicazione ipoteca principale e dell&#39;applic
 
 Per importare l&#39;entità personalizzata per l&#39;applicazione di assicurazione automatica:
 
-1. Scaricate il pacchetto della soluzione **WeFinanceAutoInsurance_1_0.zip** da https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip sull’istanza di creazione di AEM.
+1. Scaricate il pacchetto della soluzione **WeFinanceAutoInsurance_1_0.zip** dall&#39;istanza di `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` creazione di AEM.
 1. Nell’istanza di Microsoft Dynamics, accedete a **Impostazioni > Soluzioni** e fate clic su **Importa**. Selezionate e importate il pacchetto.
 
 Per importare l&#39;entità personalizzata per l&#39;applicazione di assicurazione automatica:
 
-1. Scaricate il pacchetto **AEMFormsFSIRefsite_1_0.zip** da https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Selezionate e importate il pacchetto.
+1. Scaricate il pacchetto **AEMFormsFSIRefsite_1_0.zip** da `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Selezionate e importate il pacchetto.
 
 1. Nell’istanza di Microsoft Dynamics, accedete a **Impostazioni > Soluzioni** e fate clic su **Importa**. Selezionate e importate il pacchetto.
 
@@ -244,9 +244,9 @@ Per importare i record cliente e polizza assicurativa:
 
 1. Scarica i file di dati **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv** e **home ipoteca** dalle seguenti posizioni nell’istanza di creazione di AEM:
 
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv
-   * https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-ipoteca/ms-dDynamics/Sarah%20Rose%20Contact.csv
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Nell’istanza di Microsoft Dynamics, effettuate le seguenti operazioni:
 
@@ -273,7 +273,7 @@ Configurate il servizio cloud OAuth in AEM Forms per abilitare la comunicazione 
 
 Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
-1. Andate alla console di configurazione Web di AEM all&#39;indirizzo https://[server]:[host]/sistema/console/configMgr.
+1. Andate alla console di configurazione Web di AEM all&#39;indirizzo `https://[server]:[host]/system/console/configMgr`.
 1. Individua e tocca il servizio **[!UICONTROL di configurazione di]** Adobe Sign per aprirlo alla configurazione.
 1. Configurare l&#39;espressione **[!UICONTROL del pianificatore di aggiornamento]** dello stato come **0 0/2 * * ?**.
 
@@ -369,7 +369,7 @@ Per provare l&#39;integrazione nel sito di riferimento, effettuate le seguenti o
 
 1. Fate clic su Configurazione **[!UICONTROL destinazione]** AEM Forms.
 1. Selezionate un framework Target.
-1. Nel campo URL **[!UICONTROL di]** Target, specificate l&#39;URL di AEM Forms. Esempio: `https://<hostname>:<port>/`.
+1. Nel campo URL **[!UICONTROL di]** Target, specificate l&#39;URL di AEM Forms. Ad esempio: `https://<hostname>:<port>/`.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
