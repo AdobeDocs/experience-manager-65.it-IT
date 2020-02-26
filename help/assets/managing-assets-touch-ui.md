@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
 
 ---
 
@@ -354,13 +354,11 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/
 
    ![chlimage_1-218](assets/chlimage_1-13.png)
 
-1. Nel campo **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete Invio. Il nuovo tag viene salvato in AEM.
-
-   YouTube richiede la pubblicazione di tag e un collegamento a YouTube (se è possibile trovare un collegamento appropriato).
+1. Nel campo **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete Invio. Il nuovo tag viene salvato in AEM. YouTube richiede tag per la pubblicazione. Consultate [pubblicare i video su YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura per `/content/cq:tags/default` l&#39;archivio CRX.
+   >Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura `/content/cq:tags/default` nell&#39;archivio CRX.
 
 1. Per assegnare una valutazione alla risorsa, toccate o fate clic sulla scheda **[!UICONTROL Avanzate]** , quindi toccate o fate clic sulla stella nella posizione appropriata per assegnare la valutazione desiderata.
 
@@ -532,7 +530,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
 ## Scaricare le risorse {#downloading-assets}
 
-Consultate [Scaricare risorse da AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
@@ -602,7 +600,7 @@ I COG consentono di limitare l’accesso alle risorse. Potete anche configurare 
 1. Pubblicate la cartella, quindi provate ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di login.
 1. Se siete un membro CUG, immettete le vostre credenziali di protezione. La cartella viene visualizzata dopo l’autenticazione da parte di AEM.
 
-## Search assets {#assetsearch}
+## Cercare risorse {#assetsearch}
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM.
 
