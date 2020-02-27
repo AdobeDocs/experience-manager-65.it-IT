@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -49,7 +49,6 @@ Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 Dalla pagina dei risultati della ricerca potete individuare più rapidamente le risorse desiderate utilizzando il numero dinamico di risultati di ricerca previsti nei facet di ricerca. Il numero previsto di risorse viene aggiornato anche prima dell’applicazione del filtro di ricerca. La visualizzazione del conteggio previsto rispetto al filtro consente di navigare nei risultati di ricerca in modo rapido ed efficiente. Per ulteriori informazioni, consultate [Cercare risorse in AEM](search-assets.md).
 
 ![Visualizzate il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.](assets/asset_search_results_in_facets_filters.png)
-
 
 *Figura:Visualizzate il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.*
 
@@ -100,7 +99,6 @@ Per ricevere suggerimenti per più parole chiave di ricerca, continuate a digita
 
 ![Digitate più parole chiave per visualizzare i suggerimenti che vi rientrano](assets/search_suggestionsmanykeywords.gif)
 
-
 *Figura:Digitate più parole chiave per visualizzare i suggerimenti che vi rientrano*
 
 ### Classificazione e incremento della ricerca {#searchrank}
@@ -133,7 +131,6 @@ In AEM sono disponibili vari metodi, come i filtri, che consentono di individuar
 
 ![Limitare i risultati di ricerca in una cartella aggiungendo un percorso di cartella nel pannello Filtri](assets/search_folder_select.gif)
 
-
 *Figura:Limitare i risultati di ricerca in una cartella aggiungendo un percorso di cartella nel pannello Filtri*
 
 ### Trovare immagini simili {#visualsearch}
@@ -141,7 +138,6 @@ In AEM sono disponibili vari metodi, come i filtri, che consentono di individuar
 Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai clic su **[!UICONTROL Trova simili]** nella vista a schede di un’immagine o nella barra degli strumenti. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Scopri [come configurare la ricerca per similarità](#configvisualsearch).
 
 ![Trovare immagini simili utilizzando l&#39;opzione nella vista a schede](assets/search_find_similar.png)
-
 
 *Figura:Trovare immagini simili utilizzando l&#39;opzione nella vista a schede*
 
@@ -248,7 +244,6 @@ Per accedere all’interfaccia del selettore delle risorse, passate a `https://[
 
 ![Sfogliare e selezionare la risorsa nel selettore risorse](assets/assetpicker.png)
 
-
 *Figura:Sfogliare e selezionare la risorsa nel selettore risorse*
 
 ## Limiti {#limitations}
@@ -290,7 +285,6 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 ![Comportamento di ricerca con e senza virgolette](assets/search_with_quotes.gif)
 
-
 *Figura:Comportamento di ricerca con e senza virgolette*
 
 **Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Ad esempio:
@@ -301,7 +295,6 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 * `*run*` restituisce tutte le possibili combinazioni.
 
 ![Illustrazione dell’utilizzo di un carattere jolly asterisco nella ricerca di risorse tramite un esempio](assets/search_with_asterisk_run.gif)
-
 
 *Figura:Illustrazione dell’utilizzo di un carattere jolly asterisco nella ricerca di risorse tramite un esempio*
 
@@ -315,13 +308,11 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 ![Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio](assets/search_with_questionmark_run.gif)
 
-
 *Figura:Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio*
 
 **Escludere una parola chiave**: Usate il trattino per cercare risorse che non contengono una parola chiave. Ad esempio, `running -shoe` la query restituisce risorse che contengono `running`, ma non `shoe`. Analogamente, `camp -night` query restituisce risorse che contengono `camp` ma non `night`. La `camp-night` query restituisce risorse contenenti sia `camp` che `night`.
 
 ![Utilizzo del trattino per cercare risorse non contenenti una parola chiave esclusa](assets/search_dash_exclude_keyword.gif)
-
 
 *Figura:Utilizzo del trattino per cercare risorse non contenenti una parola chiave esclusa*
 
@@ -423,7 +414,6 @@ Per visualizzare tutti i metadati di una risorsa, selezionate la risorsa e fate 
 Per controllare i commenti relativi a una risorsa o alla sua cronologia della versione, fai clic sulla risorsa per aprirne l’anteprima di grandi dimensioni. Apri la timeline nella barra a sinistra e seleziona **[!UICONTROL Commenti]** o **[!UICONTROL Versioni]**. Puoi anche ordinare l’attività della timeline come commenti o versioni in ordine cronologico.
 
 ![Ordinare le voci della cronologia per una risorsa di ricerca](assets/sort_timeline_search_results.gif)
-
 
 *Figura:Ordinare le voci della cronologia per una risorsa di ricerca*
 
