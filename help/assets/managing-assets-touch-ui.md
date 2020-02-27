@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -689,7 +689,9 @@ Potete anche aggiungere mappe immagine utilizzando l’editor immagini. Per info
 
 La timeline consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti/annotazioni, registri attività e versioni.
 
-![Ordinare le voci della timeline per una risorsa](assets/sort_timeline.gif)*Figura: Ordinare le voci della cronologia per una risorsa*
+![Ordinare le voci della cronologia per una risorsa](assets/sort_timeline.gif)
+
+*Figura: Ordinare le voci della cronologia per una risorsa*
 
 >[!NOTE]
 >
