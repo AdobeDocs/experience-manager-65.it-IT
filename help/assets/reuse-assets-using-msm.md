@@ -4,7 +4,7 @@ description: Utilizzate le risorse tra più pagine/cartelle derivate e collegate
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -68,23 +68,25 @@ Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 1. Selezionate le risorse o le cartelle sorgente. Dalla barra degli strumenti, fate clic su **[!UICONTROL Crea > Live Copy]**.
 
    ![Creare una live copy dall’interfaccia di AEM](assets/create_lc1.png)
+
    *Figura:Creare una live copy dall’interfaccia di AEM*
 
 1. Selezionate una cartella di destinazione. Fai clic su **[!UICONTROL Avanti]**.
 1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere elementi figlio.
-1. Selezionate una configurazione di rollout. Fai clic su **[!UICONTROL Crea]**. 
+1. Selezionate una configurazione di rollout. Fai clic su **[!UICONTROL Crea]**.
 
 Per creare copie live con il secondo metodo, attenetevi alla seguente procedura:
 
 1. Nell’interfaccia di AEM, dall’angolo in alto a destra, fate clic su **[!UICONTROL Crea > Live Copy]**.
 
    ![Creare una live copy dall’interfaccia di AEM](assets/create_lc2.png)
+
    *Figura:Creare una live copy dall’interfaccia di AEM*
 
 1. Selezionate la risorsa o la cartella sorgente. Fai clic su **[!UICONTROL Avanti]**.
 1. Selezionate la cartella di destinazione. Fai clic su **[!UICONTROL Avanti]**.
 1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere elementi figlio.
-1. Selezionate una configurazione di rollout. Fai clic su **[!UICONTROL Crea]**. 
+1. Selezionate una configurazione di rollout. Fai clic su **[!UICONTROL Crea]**.
 
 >[!NOTE]
 >
@@ -101,16 +103,17 @@ Per risorse e cartelle funzionano i due metodi seguenti:
 
 >[!TIP]
 >
-> Per verificare lo stato di alcune Live Copy separate, utilizzate il primo metodo che consiste nella visualizzazione della pagina Proprietà. Per verificare lo stato di molte copie live, utilizzare il secondo metodo, ovvero vedere la pagina Stato **** relazione.
+> Per verificare lo stato di alcune Live Copy separate, utilizzate il primo metodo che consiste nella visualizzazione della pagina Proprietà. Per verificare lo stato di molte Live Copies, utilizza il secondo metodo, ovvero visualizzare la pagina **[!UICONTROL Stato di relazione]**.
 
 ### Informazioni e stato di una Live Copy {#statuslcasset}
 
 Per verificare le informazioni e gli stati di una risorsa Live Copy o di una cartella, effettuate le seguenti operazioni.
 
 1. Selezionate una risorsa Live Copy o una cartella. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera `p`.
-1. Fate clic su **[!UICONTROL Live Copy]**. Potete controllare il percorso dell&#39;origine, lo stato di sospensione, lo stato di sincronizzazione, l&#39;ultima data di rollout e l&#39;utente che ha eseguito l&#39;ultimo rollout.
+1. Click **[!UICONTROL Live Copy]**. Potete controllare il percorso dell&#39;origine, lo stato di sospensione, lo stato di sincronizzazione, l&#39;ultima data di rollout e l&#39;utente che ha eseguito l&#39;ultimo rollout.
 
    ![Le informazioni e gli stati della Live Copy vengono visualizzati in una console in Proprietà](assets/lcfolder_info_properties.png)
+
    *Figura:Informazioni e stati Live Copy*
 
 1. Potete attivare o disattivare se le risorse secondarie prendono in prestito la configurazione della Live Copy.
@@ -122,12 +125,13 @@ Per verificare le informazioni e gli stati di una risorsa Live Copy o di una car
 In AEM è disponibile una console per controllare le statue di tutte le copie in diretta di una cartella sorgente. In questa console viene visualizzato lo stato di tutte le risorse figlio.
 
 1. Selezionate una cartella sorgente. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera `p`.
-1. Fate clic su Origine **** Live Copy. Per aprire la console, fate clic su Panoramica **[!UICONTROL Live Copy]**. Questo dashboard fornisce uno stato di livello principale per tutte le risorse secondarie.
+1. Fai clic su **[!UICONTROL Origine Live Copy]**. Per aprire la console, fai clic su **[!UICONTROL Panoramica Live Copy]**. Questo dashboard offre uno stato di primo livello per tutte le risorse figlie.
 
    ![Visualizzare gli stati delle copie in diretta nella console Live Copy di origine](assets/livecopy-statuses.png)
+
    *Figura:Visualizzare gli stati delle copie in diretta nella console Live Copy di origine*
 
-1. Per visualizzare le informazioni dettagliate su ciascuna risorsa nella cartella Live Copy, selezionate una risorsa e fate clic su Stato **** relazione dalla barra degli strumenti.
+1. Per visualizzare informazioni dettagliate su ciascuna risorsa della cartella Live Copy, seleziona la risorsa in questione, quindi dalla barra degli strumenti fai clic su **[!UICONTROL Stato di relazione]**.
 
    ![Informazioni dettagliate e stato di una risorsa figlia Live Copy in una cartella](assets/livecopy_relationship_status.png)
 
@@ -147,13 +151,17 @@ Per una risorsa o una cartella sorgente, potete visualizzare le informazioni seg
 * Sospendi relazione o modifica configurazione rollout per una Live Copy specifica.
 * Accedete alla console della panoramica Live Copy.
 
-Selezionate la risorsa o la cartella sorgente, aprite la barra a sinistra e fate clic su **[!UICONTROL Riferimenti]**. In alternativa, selezionate una risorsa o una cartella e utilizzate la scelta rapida da tastiera `Alt + 4`.
+Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. In alternativa, seleziona una risorsa o una cartella e utilizza la scelta rapida da tastiera `Alt + 4`.
 
-![Azioni e informazioni disponibili nella barra laterale Riferimenti per la sorgente](assets/referencerail_source.png)*Figura selezionata:Azioni e informazioni disponibili nella barra laterale Riferimenti per l&#39;origine selezionata*
+![Azioni e informazioni disponibili nella barra laterale Riferimenti per l&#39;origine selezionata](assets/referencerail_source.png)
+
+*Figura:Azioni e informazioni disponibili nella barra laterale Riferimenti per l&#39;origine selezionata*
 
 Per una Live Copy specifica, fate clic su **[!UICONTROL Modifica Live Copy]** per sospendere la relazione o modificare la configurazione del rollout.
 
-![Per una Live Copy specifica, l&#39;opzione per sospendere la relazione o modificare la configurazione del rollout è accessibile dalla barra laterale Riferimenti quando la risorsa di origine è selezionata](assets/referencerail_editlc_options.png)*Figura:Sospendere la relazione o modificare la configurazione di rollout di una Live Copy specifica*
+![Per una Live Copy specifica, l&#39;opzione per sospendere la relazione o modificare la configurazione del rollout è accessibile dalla barra laterale Riferimenti quando la risorsa di origine è selezionata](assets/referencerail_editlc_options.png)
+
+*Figura:Sospendere la relazione o modificare la configurazione di rollout di una Live Copy specifica*
 
 ### Azioni rapide dalla barra laterale Riferimenti per la Live Copy {#refraillc}
 
@@ -163,9 +171,11 @@ Per una risorsa o una cartella Live Copy, potete visualizzare le informazioni se
 * Aprite o visualizzate una Live Copy specifica nell’interfaccia utente di AEM.
 * Implementate gli aggiornamenti.
 
-Selezionate una risorsa o una cartella Live Copy, aprite la barra a sinistra e fate clic su **[!UICONTROL Riferimenti]**. In alternativa, selezionate una risorsa o una cartella e utilizzate la scelta rapida da tastiera `Alt + 4`.
+Seleziona una risorsa o una cartella Live Copy, apri la barra a sinistra e fai clic su **[!UICONTROL Riferimenti]**. In alternativa, seleziona una risorsa o una cartella e utilizza la scelta rapida da tastiera `Alt + 4`.
 
-![Azioni disponibili nella barra laterale Riferimenti per la Live Copy](assets/referencerail_livecopy.png)*Figure selezionata:Azioni disponibili nella barra laterale Riferimenti per la Live Copy selezionata*
+![Azioni disponibili nella barra laterale Riferimenti per la Live Copy selezionata](assets/referencerail_livecopy.png)
+
+*Figura:Azioni disponibili nella barra laterale Riferimenti per la Live Copy selezionata*
 
 ## Propagare le modifiche dall’origine alle Live Copy {#rolloutsync}
 
@@ -176,10 +186,11 @@ Dopo la modifica di un&#39;origine, le modifiche possono essere propagate alle L
 Potete avviare un’azione di rollout dalla risorsa di origine e aggiornare tutte o alcune copie attive selezionate.
 
 1. Selezionate una risorsa Live Copy o una cartella. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera `p`.
-1. Fate clic su Origine **** Live Copy. Fate clic su **[!UICONTROL Rollout]** nella barra degli strumenti nella parte superiore.
+1. Fai clic su **[!UICONTROL Origine Live Copy]**. Nella barra degli strumenti della parte superiore, fai clic su **[!UICONTROL Rollout]**.
 1. Selezionate le Live Copy da aggiornare. Fate clic su **[!UICONTROL Rollout]**. Per distribuire gli aggiornamenti apportati alle risorse figlio, selezionate Origine **[!UICONTROL rollout e tutti gli elementi figlio]**.
 
    ![Distribuire le modifiche di origine a alcune o tutte le copie live](assets/livecopy_rollout_page.png)
+
    *Figura:Distribuire le modifiche di origine a alcune o tutte le copie live*
 
 >[!NOTE]
@@ -188,7 +199,9 @@ Potete avviare un’azione di rollout dalla risorsa di origine e aggiornare tutt
 
 In alternativa, potete avviare un’azione di rollout dalla barra laterale Riferimenti dopo aver selezionato una Live Copy specifica. Per ulteriori informazioni, consultate Azioni [rapide dalla barra laterale Riferimenti per la Live Copy](#refraillc). In questo metodo di rollout, vengono aggiornati solo la Live Copy selezionata e facoltativamente i relativi elementi figlio.
 
-![Inserite le modifiche della sorgente nella copia](assets/livecopy_rollout_dialog.png)live *Figura:Rollout delle modifiche dell&#39;origine sulla Live Copy selezionata*
+![Rollout delle modifiche dell&#39;origine sulla Live Copy selezionata](assets/livecopy_rollout_dialog.png)
+
+*Figura:Rollout delle modifiche dell&#39;origine sulla Live Copy selezionata*
 
 ### Informazioni sull&#39;azione di sincronizzazione {#aboutsync}
 
@@ -202,11 +215,13 @@ Un&#39;azione di sincronizzazione richiama le modifiche da un&#39;origine solo a
 
 ### Sincronizzazione di una Live Copy {#synclc}
 
-Per avviare un&#39;azione di sincronizzazione, aprite la pagina **[!UICONTROL Proprietà]** di una Live Copy, fate clic su **[!UICONTROL Live Copy]** e fate clic sull&#39;azione desiderata dalla barra degli strumenti.
+Per avviare un’azione di sincronizzazione, apri la pagina **[!UICONTROL Proprietà]** di una Live Copy, fai clic su **[!UICONTROL Live Copy]** e nella barra degli strumenti seleziona l’azione desiderata.
 
-Per visualizzare gli stati e le informazioni relativi a un&#39;azione di sincronizzazione, consulta [Informazioni e stato di una Live Copy](#statuslcasset) , [Informazioni e stati di tutte le Live Copy di una cartella](#statuslcfolder).
+Per visualizzare gli stati e le informazioni relativi a un’azione di sincronizzazione, consulta le sezioni [Informazioni e stato di una Live Copy](#statuslcasset) e [Informazioni e stati di tutte le Live Copy di una cartella](#statuslcfolder).
 
-![L’azione di sincronizzazione richiama le modifiche apportate alla](assets/livecopy_sync.png)*figura di origine:L’azione di sincronizzazione richiama le modifiche apportate all’origine*
+![L’azione di sincronizzazione richiama le modifiche apportate all’origine](assets/livecopy_sync.png)
+
+*Figura:L’azione di sincronizzazione richiama le modifiche apportate all’origine*
 
 >[!NOTE]
 >
@@ -216,19 +231,20 @@ Per visualizzare gli stati e le informazioni relativi a un&#39;azione di sincron
 
 Potete sospendere temporaneamente la relazione per impedire a una Live Copy di ricevere le modifiche apportate alla risorsa o alla cartella di origine. È inoltre possibile riprendere la relazione affinché la Live Copy inizi a ricevere le modifiche dall&#39;origine.
 
-Per sospendere o riprendere, aprite la pagina **[!UICONTROL Proprietà]** di una Live Copy, fate clic su **[!UICONTROL Live Copy]** e fate clic sull’azione desiderata dalla barra degli strumenti.
+Per sospendere o riprendere, apri la pagina **[!UICONTROL Proprietà]** di una Live Copy, fai clic su **[!UICONTROL Live Copy]** e nella barra degli strumenti fai clic sull’azione desiderata.
 
-In alternativa, potete sospendere o riprendere rapidamente le relazioni di più risorse in una cartella Live Copy dalla console Panoramica **[!UICONTROL di]** Live Copy. Consultate [Azioni su molte risorse presenti nelle cartelle](#bulkactions)Live Copy.
+In alternativa, puoi sospendere o riprendere rapidamente le relazioni tra più risorse in una cartella Live Copy della console **[!UICONTROL Panoramica Live Copy]**. Consulta la sezione [Azioni su numerose risorse presenti nelle cartelle Live Copy](#bulkactions).
 
 ## Apportate modifiche locali a una Live Copy {#localmods}
 
 Una Live Copy è una replica dell&#39;origine originale al momento della creazione. I valori dei metadati di una Live Copy vengono ereditati dall&#39;origine. I campi di metadati mantengono l’ereditarietà singolarmente con i rispettivi campi della risorsa sorgente.
 
-Tuttavia, potete apportare modifiche locali a una Live Copy per modificare alcune proprietà selezionate. Per apportare modifiche locali, annullare l’ereditarietà della proprietà desiderata. Quando l’ereditarietà di uno o più campi di metadati viene annullata, la relazione in tempo reale della risorsa e l’ereditarietà degli altri campi di metadati vengono mantenute. Qualsiasi sincronizzazione o implementazione non sovrascrive le modifiche locali. Per farlo, aprite la pagina **[!UICONTROL Proprietà]** di una risorsa Live Copy, fate clic sull&#39;icona **[!UICONTROL Annulla ereditarietà]** accanto a un campo di metadati.
+Tuttavia, puoi apportare modifiche locali a una Live Copy per cambiare alcune proprietà selezionate. Per eseguire modifiche locali, annulla l’ereditarietà della proprietà desiderata. Quando l’ereditarietà di uno o più campi di metadati viene annullata, si mantiene la relazione live della risorsa e l’ereditarietà degli altri campi di metadati. Qualsiasi sincronizzazione o rollout non sovrascrive le modifiche locali. Per farlo, apri la pagina **[!UICONTROL Proprietà]** di una risorsa Live Copy e fai clic sull’icona **[!UICONTROL Annulla ereditarietà]** posta accanto a un campo di metadati.
 
 Potete annullare tutte le modifiche locali e ripristinare lo stato della risorsa all’origine. L’azione Reimposta sostituisce in modo irrevocabile e immediato tutte le modifiche locali e ripristina l’ereditarietà in tutti i campi di metadati. Per ripristinare, dalla pagina **[!UICONTROL Proprietà]** di una risorsa Live Copy, fate clic su **[!UICONTROL Ripristina]** nella barra degli strumenti.
 
 ![L’azione Reimposta sovrascrive le modifiche locali e inserisce la Live Copy nella relativa origine.](assets/livecopy_reset.png)
+
 *Figura: L’azione Reimposta sovrascrive le modifiche locali e porta la live copy in parte con la relativa origine*
 
 ## Rimuovi relazione diretta {#detach}
@@ -237,26 +253,28 @@ Potete annullare tutte le modifiche locali e ripristinare lo stato della risorsa
 
 1. Selezionate una risorsa o una cartella Live Copy. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera `p`.
 
-1. Fate clic su **[!UICONTROL Live Copy]**. Fare clic su **[!UICONTROL Scollega]** nella barra degli strumenti. Fate clic su **[!UICONTROL Scollega]** dalla finestra di dialogo visualizzata.
+1. Click **[!UICONTROL Live Copy]**. Fare clic su **[!UICONTROL Scollega]** nella barra degli strumenti. Fate clic su **[!UICONTROL Scollega]** dalla finestra di dialogo visualizzata.
 
    ![L&#39;azione Scollega rimuove completamente la relazione tra sorgente e live copy](assets/livecopy_detach.png)
+
    *Figura:L&#39;azione Scollega rimuove completamente la relazione tra sorgente e live copy*
 
    >[!CAUTION]
    >
    >La relazione viene rimossa immediatamente quando si fa clic su **[!UICONTROL Scollega]** dalla finestra di dialogo. Non è possibile annullare l’operazione facendo clic su **[!UICONTROL Annulla]** nella pagina Proprietà.
 
-In alternativa, potete scollegare rapidamente più risorse in una cartella Live Copy dalla console Panoramica **[!UICONTROL di]** Live Copy. Consultate [Azioni su molte risorse presenti nelle cartelle](#bulkactions)Live Copy.
+Alternatively, you can quickly detach multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. Consulta la sezione [Azioni su numerose risorse presenti nelle cartelle Live Copy](#bulkactions).
 
 ## Azioni su più risorse in una cartella Live Copy {#bulkactions}
 
 Se in una cartella di Live Copy sono presenti più risorse, l’avvio di azioni su ciascuna risorsa può risultare noioso. Puoi avviare rapidamente le azioni di base su più risorse dalla console Live Copy. I metodi indicati sopra continuano a funzionare per singole risorse.
 
 1. Selezionate una cartella sorgente. Click **[!UICONTROL Properties]** from the toolbar. In alternativa, utilizzare la scelta rapida da tastiera `p`.
-1. Fate clic su Origine **** Live Copy. Per aprire la console, fate clic su Panoramica **[!UICONTROL Live Copy]**.
-1. In questo dashboard, selezionate una risorsa Live Copy da una cartella Live Copy. Fate clic sulle azioni desiderate nella barra degli strumenti. Le azioni disponibili sono **[!UICONTROL Sincronizza]**, **[!UICONTROL Reimposta]**, **[!UICONTROL Sospendi]** e **[!UICONTROL Scollega]**. Potete avviare rapidamente queste azioni su qualsiasi risorsa presente in un numero qualsiasi di cartelle di Live Copy che si trovano in una relazione live con la cartella sorgente selezionata.
+1. Fai clic su **[!UICONTROL Origine Live Copy]**. Per aprire la console, fai clic su **[!UICONTROL Panoramica Live Copy]**.
+1. In questo dashboard, seleziona una risorsa Live Copy da una cartella Live Copy. Nella barra degli strumenti, scegli le azioni desiderate. Le azioni disponibili sono: **[!UICONTROL Sincronizza]**, **[!UICONTROL Reimposta]**, **[!UICONTROL Sospendi]** e **[!UICONTROL Stacca]**. Potete avviare rapidamente queste azioni su qualsiasi risorsa presente in un numero qualsiasi di cartelle di Live Copy che si trovano in una relazione live con la cartella sorgente selezionata.
 
    ![Aggiornare facilmente molte risorse nelle cartelle di Live Copy dalla console Panoramica di Live Copy](assets/livecopyconsole_update_many_assets.png)
+
    *Figura:Aggiornare facilmente molte risorse nelle cartelle di Live Copy dalla console Panoramica di Live Copy*
 
 ## Estendi MSM per risorse {#extendapi}
