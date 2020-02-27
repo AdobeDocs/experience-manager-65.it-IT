@@ -3,7 +3,7 @@ title: Generare un URL per le risorse condivise
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte in Risorse AEM come URL per parti esterne.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -47,14 +47,14 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
    >[!NOTE]
    Se una risorsa condivisa viene spostata in un percorso diverso, il collegamento non funziona più. Create nuovamente il collegamento e condividete nuovamente con gli utenti.
 
-1. Dalla console Web, aprite la configurazione **[!UICONTROL Day CQ Link Externalizer]** e modificate le seguenti proprietà nel campo **[!UICONTROL Domains]** con i valori indicati per ciascuno:
+1. Dalla console web, apri la configurazione **[!UICONTROL Day CQ Link Externalizer]** e modifica le seguenti proprietà nel campo **[!UICONTROL Domini]**, indicando i valori:
 
    * locale
    * author
    * pubblicazione
    Per le proprietà locale e di authoring, fornite l’URL rispettivamente per l’istanza locale e per l’istanza di creazione. Le proprietà locali e di authoring hanno lo stesso valore se si esegue una singola istanza di creazione AEM. Per la pubblicazione, fornite l’URL per l’istanza di pubblicazione.
 
-1. Nella casella dell’indirizzo e-mail della finestra di dialogo Condivisione **** collegamento, digitate l’ID e-mail dell’utente con cui desiderate condividere il collegamento. Potete anche condividere il collegamento con più utenti.
+1. Nella casella dell’indirizzo e-mail della finestra di dialogo **[!UICONTROL Condivisione collegamenti]**, digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi anche condividere il collegamento con più utenti.
 
    Se l’utente è membro dell’organizzazione, selezionate l’ID e-mail dell’utente dagli ID e-mail suggeriti che vengono visualizzati nell’elenco al di sotto dell’area di digitazione. Per un utente esterno, digitate l’ID e-mail completo e selezionatelo dall’elenco.
 
@@ -85,7 +85,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    Per passare alla vista a elenco, toccate o fate clic sull’opzione di layout nella barra degli strumenti.
 
-1. Per generare un’anteprima della risorsa, toccate o fate clic sulla risorsa condivisa. Per chiudere l&#39;anteprima e tornare alla pagina **[!UICONTROL Marketing Cloud]** , tocca o fai clic su **[!UICONTROL Indietro]** nella barra degli strumenti. Se avete condiviso una cartella, toccate o fate clic su Cartella **** principale per tornare alla cartella principale.
+1. Per generare un’anteprima della risorsa, tocca o fai clic sulla risorsa condivisa. Per chiudere l’anteprima e tornare alla pagina **[!UICONTROL Experience Cloud]**, nella barra degli strumenti, tocca o fai clic su **[!UICONTROL Indietro]**. Se hai condiviso una cartella, tocca o fai clic su **[!UICONTROL Cartella padre]** per tornare ad essa.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
@@ -97,14 +97,14 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
 1. Per visualizzare le risorse condivise come collegamenti, accedi all’interfaccia utente delle risorse e tocca il logo Experience Manager. Scegliere **[!UICONTROL Navigazione]** dall&#39;elenco per visualizzare il riquadro di navigazione.
-1. Nel riquadro di navigazione, scegliete Collegamenti **** condivisi per visualizzare un elenco delle risorse condivise.
+1. Per visualizzare un elenco delle risorse condivise, scegli **[!UICONTROL Collegamenti condivisi]** nel riquadro di navigazione.
 1. Per annullare la condivisione di una risorsa, selezionatela e toccate o fate clic su **[!UICONTROL Annulla condivisione]** nella barra degli strumenti. Segue un messaggio di conferma. La voce relativa alla risorsa viene rimossa dall’elenco.
 
 ## Configura servizio di posta CQ Day {#configmailservice}
 
 1. Nella home page di Experience Manager, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
 1. Dall&#39;elenco dei servizi, individuare il servizio **[!UICONTROL di posta]** Day CQ.
-1. Toccate **[!UICONTROL Modifica]** accanto al servizio e configurate i seguenti parametri per **[!UICONTROL Day CQ Mail Service]** con i dettagli indicati con i relativi nomi:
+1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * Nome host del server SMTP: nome host del server di posta elettronica
    * Porta server SMTP: porta del server di posta elettronica
@@ -118,9 +118,9 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
 Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti, AEM comprime la gerarchia delle risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione del servizio a causa di questa situazione, configurate la dimensione massima utilizzando il parametro **[!UICONTROL Max Content Size (non compresso)]** per il servlet [!UICONTROL proxy di condivisione risorse Adhoc] Day CQ DAM in Configuration Manager. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 1. Dalla console Web, individua la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** .
-1. Aprite la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** in modalità di modifica e modificate il valore del parametro **[!UICONTROL Max Content Size (Dimensione contenuto massima) (non compresso)]** .
+1. Apri la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** in modalità di modifica e cambia il valore del parametro in **[!UICONTROL Max Content Size (uncompressed)]**.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 
