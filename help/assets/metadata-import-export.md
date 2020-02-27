@@ -3,7 +3,7 @@ title: Importare ed esportare in massa i metadati delle risorse
 description: Importare ed esportare in massa i metadati delle risorse
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -22,7 +22,7 @@ L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del s
 
 1. Passa all’interfaccia utente Risorse e tocca o fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Dal menu, selezionate **[!UICONTROL Metadati]**.
-1. Nella pagina Importazione **** metadati, toccate o fate clic su **[!UICONTROL Seleziona file]**. Selezionate il file CSV con i metadati.
+1. Nella pagina **[!UICONTROL Importazione metadati]**, tocca o fai clic su **[!UICONTROL Seleziona un file]**. Scegli il file CSV con i metadati.
 1. Specificate i seguenti parametri:
 
    | Parametri di importazione metadati | Descrizione |
@@ -56,9 +56,10 @@ Alcuni esempi di utilizzo per l’esportazione di metadati in massa sono:
 1. Nel campo **[!UICONTROL Proprietà da esportare]** , specificate se esportare tutte le proprietà o solo proprietà specifiche. Se scegliete le proprietà selettive da esportare, aggiungete le proprietà desiderate.
 
 1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Esporta]**. Viene visualizzato un messaggio di conferma dell’esportazione dei metadati. Chiudi il messaggio.
-1. Aprite la notifica della inbox per il processo di esportazione. Selezionate il processo e fate clic su **[!UICONTROL Apri]** nella barra degli strumenti. Per scaricare il file CSV con i metadati, toccate o fate clic su Download **** CSV dalla barra degli strumenti. Click **[!UICONTROL Close]**.
+1. Apri la notifica della casella in entrata del processo di esportazione. Seleziona il processo e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti. Per scaricare il file CSV con i metadati, tocca o fai clic su **[!UICONTROL Scarica CSV]** nella barra degli strumenti. Fai clic su **[!UICONTROL Chiudi]**.
 
    ![Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in massa](assets/csv_download.png)
+
    *Figura: Finestra di dialogo per scaricare il file CSV contenente i metadati esportati in massa*
 
 >[!MORELIKETHIS]
