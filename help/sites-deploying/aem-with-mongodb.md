@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 56006a1f49e4d357cd7ee44a4a1dd1af7189e70a
 
 ---
 
@@ -41,7 +41,7 @@ Se i criteri non sono soddisfatti, si consiglia di installare TarMK attivo/in st
 
 ### Implementazione MongoDB minima per AEM {#minimal-mongodb-deployment-for-aem}
 
-Di seguito è riportata una distribuzione minima per AEM su MongoDB. Per semplicità, la terminazione SSL e i componenti proxy HTTP sono stati generalizzati. È costituito da un singolo set di repliche MongoBD, con un elemento primario e due secondari.
+Di seguito è riportata una distribuzione minima per AEM su MongoDB. Per semplicità, la terminazione SSL e i componenti proxy HTTP sono stati generalizzati. È costituito da un singolo set di repliche MongoDB, con un elemento primario e due secondari.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
