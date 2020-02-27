@@ -3,7 +3,7 @@ title: Schemi metadati
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
 
 ---
 
@@ -33,22 +33,21 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
    AEM offre i seguenti modelli:
-
    * **predefinito**: Modulo schema metadati di base per le risorse.
-   I seguenti moduli secondari ereditano le proprietà del modulo predefinito:
-i. **immagine**: Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio `image/jpeg`, `image/png`e così via.
-Il modulo &quot;immagine&quot; include i seguenti modelli di modulo figlio:a. **jpeg**: Modulo schema per risorse con sottotipo `jpeg`.
-b. **tiff**: Modulo schema per le risorse con sottotipo `tiff`.
 
-   ii) **applicazione**: Modulo schema per risorse con tipo MIME `application`, ad esempio `application/pdf`, `application/zip`e così via.
-a. **pdf**: Modulo schema per risorse con sottotipo `pdf`.
+      I seguenti moduli secondari ereditano le proprietà del modulo predefinito:
 
-   iii) **video**: Modulo schema per risorse con tipo MIME `video`, ad esempio `video/avi`, `video/mp4`e così via.
+      1. **immagine**: Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio `image/jpeg`, `image/png`e così via.
 
+         Il modulo &quot;immagine&quot; include i seguenti modelli di modulo figlio:
+         * **jpeg**: Modulo schema per risorse con sottotipo `jpeg`.
+         * **tiff**: Modulo schema per le risorse con sottotipo `tiff`.
+      1. **applicazione**: Modulo schema per risorse con tipo MIME `application`, ad esempio `application/pdf`, `application/zip`e così via.
+         * **pdf**: Modulo schema per risorse con sottotipo `pdf`.
+      1. **video**: Modulo schema per risorse con tipo MIME `video`, ad esempio `video/avi`, `video/mp4`e così via.
    * **insieme**: Modulo schema per le raccolte.
    * **** content fragment: Modulo schema per frammenti di contenuto.
    * **moduli**: Questo modulo schema si riferisce ad [Adobe Experience Manager Forms](/help/forms/home.md).
-
 
 >[!NOTE]
 >
@@ -77,11 +76,11 @@ a. **pdf**: Modulo schema per risorse con sottotipo `pdf`.
 
 È possibile aggiungere nuove schede o elementi modulo al modulo schema di metadati. Le schede e gli elementi del modulo derivati dall&#39;elemento padre sono nello stato bloccato. Non è possibile modificarle a livello di figlio.
 
-1. Nella pagina Moduli schema, selezionare la casella di controllo prima di un modulo, quindi fare clic sull&#39;icona Modifica sulla barra degli strumenti.
+1. Nella pagina Moduli schema, seleziona la casella di controllo che precede il modulo, quindi fai clic sull’icona Modifica nella barra degli strumenti.
 
    ![chlimage_1-39](assets/chlimage_1-175.png)
 
-1. Nella pagina Editor **[!UICONTROL schema]** metadati, personalizza la pagina delle proprietà della risorsa trascinando uno o più componenti dall’elenco dei tipi di componenti nella scheda **[!UICONTROL Genera modulo]** alla scheda **[!UICONTROL Base]** .
+1. Nella pagina **[!UICONTROL Editor schema metadati]**, personalizza la pagina delle proprietà della risorsa trascinando uno o più componenti dall’elenco dei tipi di componenti della scheda **[!UICONTROL Genera modulo]** alla scheda **[!UICONTROL Base]**.
 
    ![chlimage_1-40](assets/chlimage_1-176.png)
 
@@ -120,9 +119,9 @@ Di seguito sono riportati i valori validi per questa proprietà:
 
 Di seguito sono riportati i valori validi per questa proprietà:
 
-* `./jcr:content/metadata/dc:title`: Memorizza il valore nel nodo di metadati della risorsa come proprietà `dc:title`.
+* `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della risorsa `dc:title`.
 
-* `./jcr:created`: Visualizza la proprietà JCR nel nodo della risorsa. Se configurate queste proprietà sulle proprietà di visualizzazione, è consigliabile contrassegnarle come Disattiva modifica, in quanto sono protette. In caso contrario, quando si salvano le proprietà della risorsa non è possibile modificare [!UICONTROL i risultati delle] risorse di errore.
+* `./jcr:created`: Visualizza la proprietà JCR nel nodo della risorsa. Se configuri queste proprietà come View Properties (Visualizza proprietà), è consigliabile contrassegnarle con l’opzione Disattiva modifica, in quanto sono protette. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema di metadati, il percorso della proprietà non deve includere spazi.
 
@@ -140,7 +139,7 @@ Per garantire che il componente venga visualizzato correttamente nel modulo dell
 >
 >Il componente Campo nascosto non include questi attributi. ma include proprietà quali Nome, Valore, Etichetta campo e Descrizione. I valori per il componente Campo nascosto vengono inviati come parametro POST ogni volta che la risorsa viene salvata. Non viene salvato come metadati per la risorsa.
 
-Se selezionate l’opzione **[!UICONTROL Obbligatorio]** , potete cercare le risorse per le quali mancano i metadati obbligatori. Dal pannello **[!UICONTROL Filtri]** , espandete il predicato Convalida **** metadati e selezionate l’opzione **[!UICONTROL Non valido]** . Nei risultati della ricerca vengono visualizzate le risorse per le quali mancano i metadati obbligatori configurati tramite il modulo schema.
+Se selezioni l’opzione **[!UICONTROL Obbligatorio]**, puoi cercare le risorse per le quali mancano i metadati obbligatori. Dal pannello **[!UICONTROL Filtri]**, espandi il predicato **[!UICONTROL Convalida metadati]** e seleziona l’opzione **[!UICONTROL Non valido]**. Nei risultati della ricerca vengono visualizzate le risorse per le quali mancano i metadati obbligatori, che sono stati configurati dal modulo schema.
 
 ![chlimage_1-42](assets/chlimage_1-178.png)
 
@@ -154,11 +153,11 @@ Per includere una scheda qualsiasi nella pagina delle proprietà, oltre alla sch
 
 ### Specificare le proprietà nel file JSON {#specify-properties-in-json-file}
 
-Invece di specificare le proprietà per le opzioni nella scheda **[!UICONTROL Impostazioni]** , potete definire le opzioni in un file JSON specificando le coppie chiave-valore corrispondenti. Specificate il percorso del file JSON nel campo Percorso **** JSON.
+Invece di specificare le proprietà delle opzioni nella scheda **[!UICONTROL Impostazioni]**, puoi definire le opzioni in un file JSON, specificando le coppie chiave-valore corrispondenti. Nel campo **[!UICONTROL Percorso JSON]**, specifica il percorso del file JSON.
 
 #### Aggiunta o eliminazione di una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
 
-L&#39;editor dello schema consente di aggiungere o eliminare una scheda. Il modulo schema predefinito include per impostazione predefinita le schede **[!UICONTROL Base]**, **[!UICONTROL Avanzate]** , **[!UICONTROL IPTC]** e **[!UICONTROL IPTC Extension]** .
+L’editor dello schema consente di aggiungere o eliminare una scheda. Per impostazione predefinita, il modulo schema predefinito include le schede **[!UICONTROL Base]**, **[!UICONTROL Avanzate]**, **[!UICONTROL IPTC]** ed **[!UICONTROL Estensione IPTC]**.
 
 ![chlimage_1-45](assets/chlimage_1-181.png)
 
@@ -190,7 +189,7 @@ Risorse AEM fornisce moduli predefiniti per vari tipi MIME. Tuttavia, è possibi
 
 ### Aggiunta di nuovi moduli per i tipi MIME {#add-new-forms-for-mime-types}
 
-Creare un nuovo modulo con il tipo appropriato. Ad esempio, per aggiungere un nuovo modello per il sottotipo **immagine/png** , creare il modulo sotto i moduli &quot;immagine&quot;. Il titolo del modulo schema è il nome del sottotipo. In questo caso, il titolo è &quot;png.**&quot;**
+Crea un nuovo modulo con il tipo appropriato. Ad esempio, per aggiungere un nuovo modello per il sottotipo **image/png**, crea il modulo sotto i moduli “image”. Il titolo del modulo schema è il nome del sottotipo. In questo caso, il titolo è “png.**”**
 
 #### Utilizzare un modello di schema esistente per vari tipi MIME {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -237,7 +236,7 @@ L’ereditarietà dei metadati per risorse si basa sullo schema applicato alla c
 
 Se la cartella dispone di una sottocartella, le risorse all’interno della sottocartella ereditano i metadati dallo schema applicato a livello di sottocartella se viene applicato uno schema diverso a livello di sottocartella. Tuttavia, se a livello di sottocartella non viene applicato alcuno schema o lo stesso schema, le risorse della sottocartella ereditano i metadati dallo schema applicato a livello di cartella principale.
 
-1. Fate clic sul logo AEM, quindi selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina Moduli **[!UICONTROL schema]** metadati.
+1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Selezionare la casella di controllo prima di un modulo, ad esempio il modulo di metadati predefinito, quindi fare clic o toccare l&#39;icona di copia e salvarlo come modulo personalizzato. Specificare un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -270,7 +269,7 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 >
 >Un campo di metadati può essere definito come obbligatorio in base al valore di un altro campo. Nella vista Schede, AEM non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
 
-1. Fate clic sul logo AEM, quindi selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina Moduli **[!UICONTROL schema]** metadati.
+1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salvare il modulo di metadati predefinito come modulo personalizzato. Ad esempio, salvatelo come `my_default`.
 
    ![chlimage_1-53](assets/chlimage_1-189.png)
