@@ -3,7 +3,7 @@ title: Configurare approfondimenti risorse
 description: Configurare approfondimenti risorse in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -20,15 +20,14 @@ Risorse Adobe Experience Manager (AEM) recupera i dati di utilizzo relativi alle
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
-1. Fate clic sulla scheda Configurazione **** Insights.
+1. Fai clic sulla scheda **[!UICONTROL Configurazione approfondimenti]**.
 1. Nella procedura guidata, selezionate un centro dati e fornite le credenziali, incluso il nome dell&#39;organizzazione, il nome utente e il segreto condiviso.
 
    ![Configurare Adobe Analytics per Assets Insights in AEM](assets/insights_config2.png)
 
-
    *Figura:Configurare Adobe Analytics per Assets Insights in AEM*
 
-1. Tocca o fai clic su **[!UICONTROL Autenticazione]**.
+1. Tocca o fai clic su **[!UICONTROL Autentica]**.
 1. Dopo l’autenticazione delle credenziali da parte di AEM, dall’elenco Suite **[!UICONTROL di]** rapporti, scegliete una suite di rapporti di Adobe Analytics da cui recuperare i dati da Asset Insights. Fate clic su **[!UICONTROL Aggiungi]**.
 1. Dopo aver impostato la suite di rapporti in AEM, tocca o fai clic su **[!UICONTROL Fine]**.
 
@@ -40,5 +39,5 @@ Dopo aver configurato l’account Adobe Analytics, viene generato il codice Page
 
    ![chlimage_1-73](assets/chlimage_1-214.png)
 
-1. Nella pagina **[!UICONTROL Navigazione]** , fai clic sulla scheda **[!UICONTROL Insights Page Tracker]** (Tracciatore pagina approfondimenti).
+1. Nella pagina **[!UICONTROL Navigazione]**, fai clic sulla scheda **[!UICONTROL Tracciamento pagina approfondimenti]**.
 1. Fate clic su **[!UICONTROL Scarica]** per scaricare il codice tracciatore pagina.
