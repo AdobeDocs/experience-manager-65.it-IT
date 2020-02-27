@@ -3,7 +3,7 @@ title: Abilita rilevamento delle risorse duplicate
 description: Scoprite come attivare il rilevamento di risorse duplicate in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -17,7 +17,6 @@ Se tenti di caricare una risorsa già esistente in Risorse Adobe Experience Mana
 1. Selezionate l’opzione **[!UICONTROL Rileva duplicato]** e toccate o fate clic su **[!UICONTROL Salva]**.
 
    ![Selezionate l’opzione Rileva duplicato nel servlet](assets/chlimage_1-377.png)
-
 
    *Figura:Selezionate l’opzione Rileva duplicato nel servlet*
 
