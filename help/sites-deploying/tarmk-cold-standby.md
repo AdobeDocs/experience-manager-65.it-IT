@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ---
 
@@ -362,13 +362,15 @@ Osservando il primario vengono esposte alcune informazioni generali tramite un M
 
 ## Manutenzione archivio in standby a freddo {#cold-standby-repository-maintenance}
 
+### Pulizia revisioni {#revision-clean}
+
 >[!NOTE]
 Se si esegue [Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md) sull&#39;istanza principale, la procedura manuale presentata di seguito non è necessaria. Inoltre, se si utilizza la funzione di pulizia revisioni online, l&#39; `cleanup ()` operazione sull&#39;istanza standby viene eseguita automaticamente.
 
 >[!NOTE]
 Non eseguire la pulizia revisioni offline in standby. Non è necessario e non ridurrà la dimensione del segmento store.
 
-Adobe consiglia di eseguire regolarmente operazioni di manutenzione per evitare un&#39;eccessiva crescita del repository nel tempo. Per eseguire manualmente la manutenzione del repository in standby a freddo, procedere come segue:
+Adobe consiglia di eseguire regolarmente operazioni di manutenzione per evitare un eccessivo aumento del repository nel tempo. Per eseguire manualmente la manutenzione del repository in standby a freddo, procedere come segue:
 
 1. Arrestate il processo di standby sull’istanza standby accedendo alla console JMX e utilizzando **org.apache.jackrabbit.oak: Fava di stato (&quot;Standby&quot;)** . Per ulteriori informazioni su come eseguire questa operazione, consulta la sezione precedente sul [monitoraggio](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
