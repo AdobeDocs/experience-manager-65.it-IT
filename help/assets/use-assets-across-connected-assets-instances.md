@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -27,24 +27,15 @@ Prima di utilizzare o configurare questa funzionalità, accertati di:
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
 * Per i tipi di distribuzione di Adobe Experience Manager, uno dei criteri supportati è soddisfatto. Risorse AEM 6.5 funziona con AEM come servizio cloud. Per ulteriori informazioni, vedi [Funzionalità delle risorse connesse in AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)cloud.
 
-   |  | AEM Sites come Cloud Service | Siti AEM 6.5 su AMS | AEM 6.5 Sites on-premise |
+   |  | AEM Sites as a Cloud Service | Siti AEM 6.5 su AMS | AEM 6.5 Sites on-premise |
    |---|---|---|---|
-   | **AEM Assets come Cloud Service** | Supportato | Supportato | Supportato |
+   | **AEM Assets as a Cloud Service** | Supportato | Supportato | Supportato |
    | **Risorse AEM 6.5 su AMS** | Non supportato | Supportato | Supportato |
    | **Risorse AEM 6.5 in sede** | Non supportato | Non supportato | Non supportato |
 
 ### Formati di file supportati {#mimetypes}
 
-Gli autori possono cercare immagini e i seguenti tipi di documenti in Content Finder e utilizzare le risorse ricercate in Editor pagina. È possibile aggiungere dei documenti al `Download` componente e aggiungere delle immagini al `Image` componente. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image` .
-
-* Microsoft Word (DOC e DOCX)
-* Microsoft Excel (XLS e XLSX)
-* Microsoft PowerPoint (PPT e PPTX)
-* Adobe PDF (PDF)
-* Testo OpenDocument (ODT)
-* Formato RTF (Rich Text Format)
-* Testo normale (TXT)
-* Pagine Web (HTML)
+Gli autori possono cercare immagini e i seguenti tipi di documenti in Content Finder e utilizzare le risorse ricercate in Editor pagina. È possibile aggiungere dei documenti al `Download` componente e aggiungere delle immagini al `Image` componente. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image` . Per un elenco dei formati supportati, consulta Formati [supportati per le risorse](assets-formats.md#supported-document-formats)connesse.
 
 ### Users and groups involved {#users-and-groups-involved}
 
