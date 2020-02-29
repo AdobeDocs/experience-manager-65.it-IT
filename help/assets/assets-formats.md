@@ -3,7 +3,7 @@ title: Formati supportati per le risorse
 description: Elenco dei formati di file supportati da Risorse AEM e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
 
 ---
 
@@ -87,13 +87,13 @@ Consultate Libreria [transcodifica](imaging-transcoding-library.md)Imaging.
 
 ## Camera Raw supportata {#supported-camera-raw}
 
-La libreria Adobe Camera Raw consente a Risorse AEM di acquisire immagini crude. See [Camera Raw Support](camera-raw.md).
+La libreria Adobe Camera Raw consente a Risorse AEM di acquisire immagini crude. See [Camera Raw support](camera-raw.md).
 
 ## Formati di documento supportati {#supported-document-formats}
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti:
 
-| Formato | Archiviazione | Gestione metadati<br> | Metadata<br> extraction | Generazione delle miniature<br> | Modifica interattiva<br> | Write-back metadati<br> | Approfondimenti | Risorse collegate |
+| Formato | Archiviazione | Gestione metadati<br> | Metadata<br> extraction | Generazione delle miniature<br> | Modifica interattiva<br> | Write-back metadati<br> | [Approfondimenti](touch-ui-asset-insights.md) | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
