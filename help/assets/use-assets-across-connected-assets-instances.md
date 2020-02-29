@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
 
 ---
 
@@ -35,7 +35,10 @@ Prima di utilizzare o configurare questa funzionalità, accertati di:
 
 ### Formati di file supportati {#mimetypes}
 
-Gli autori possono cercare immagini e i seguenti tipi di documenti in Content Finder e utilizzare le risorse ricercate in Editor pagina. È possibile aggiungere dei documenti al `Download` componente e aggiungere delle immagini al `Image` componente. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image` . Per un elenco dei formati supportati, consulta Formati [supportati per le risorse](assets-formats.md#supported-document-formats)connesse.
+Gli autori possono cercare immagini e i seguenti tipi di documenti in Content Finder e utilizzare le risorse ricercate in Editor pagina. È possibile aggiungere dei documenti al `Download` componente e aggiungere delle immagini al `Image` componente. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image` . L&#39;elenco dei formati supportati è:
+
+* **Formati** immagine: I formati immagine supportati dal componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Immagine sono supportati da Risorse collegate. I componenti per contenuti multimediali dinamici non sono supportati.
+* **Formati** del documento: Consulta Formati [di documenti supportati per le risorse](assets-formats.md#supported-document-formats)connesse.
 
 ### Users and groups involved {#users-and-groups-involved}
 
