@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -189,22 +189,22 @@ Questa sezione descrive l&#39;installazione e la configurazione del software EMC
 
 1. Impostate la password del file di configurazione come segue:
 
-   * Aprite un prompt dei comandi e passate a *[NetWorker_root]*\Legato\nsr\bin.
+   * Aprite un prompt dei comandi e passate a `[NetWorker_root]\Legato\nsr\bin`.
    * Eseguite il comando seguente: `-nsrnmdsv.exe -f`*&lt;percorso_del_file_cfg> -P &lt;password>*
 
 1. Create i file batch eseguibili (.bat) utilizzati per il backup del database. (vedere la documentazione di NetWorker.) Impostate i dettagli nei file batch in base all&#39;installazione.
 
    * Backup completo del database (nsrnmddbf.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nome utente`-U`*[]*password`-P`*[]*`-l full`*&lt;nome_database>*
+      `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]`password`-P`*[]*`-l full`*&lt;nome_database>*
 
    * Backup incrementale del database (nsrnmddbi.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nome utente`-U`*[]*password`-P`*[]*`-l 1 -R`*&lt;nome_database>*
+      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;nome_database>*
 
    * Backup del registro del database (nsrnmddbl.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nome utente`-U`*[]*password`-P`*[]*`-l incr -R`*&lt;nome_database>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]``-l incr -R`*&lt;nome_database>*
 
       Dove:
 
@@ -240,7 +240,7 @@ Effettuate le seguenti operazioni dopo aver completato il backup completo dei da
 >
 >Gli script di comando richiedono il percorso completo del file nsrnmd_win.cfg creato durante la [preparazione di EMC Document Content Server per il backup e il ripristino](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Aprite un prompt dei comandi e passate a *[NetWorker_root]*\Legato\nsr\bin.
+1. Aprite un prompt dei comandi e passate a `[NetWorker_root]\Legato\nsr\bin`.
 1. Eseguite il comando seguente:
 
    ```as3
@@ -266,4 +266,3 @@ Effettuare le seguenti operazioni prima di ripristinare i dati dei moduli AEM. (
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-
