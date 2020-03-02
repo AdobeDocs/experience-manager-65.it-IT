@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -43,7 +43,7 @@ I seguenti valori mostrano alcuni esempi di valori URI:
 
 >[!NOTE]
 >
->È possibile esplorare l&#39;archivio moduli AEM utilizzando un browser Web. Per esplorare la directory archivio, immettete il seguente URL in un browser Web https://[server name]:[server port]/repository. È possibile verificare i risultati di avvio rapido associati alla sezione Utilizzo di AEM Forms Repository utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio moduli di AEM, potete visualizzarne il contenuto in un browser Web. (Vedere Avvio [rapido (modalità SOAP): Scrivere una risorsa utilizzando l&#39;API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)Java.
+>È possibile esplorare l&#39;archivio moduli AEM utilizzando un browser Web. Per esplorare la directory archivio, immettete il seguente URL in un browser Web `https://[server name]:[server port]/repository`. È possibile verificare i risultati di avvio rapido associati alla sezione Utilizzo di AEM Forms Repository utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio moduli di AEM, potete visualizzarne il contenuto in un browser Web. (Vedere Avvio [rapido (modalità SOAP): Scrivere una risorsa utilizzando l&#39;API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)Java.
 
 L&#39;API del repository fornisce una serie di operazioni che è possibile utilizzare per memorizzare e recuperare informazioni dal repository. Ad esempio, è possibile ottenere un elenco di risorse o recuperare risorse specifiche memorizzate nella directory archivio quando una risorsa è necessaria durante l&#39;elaborazione di un&#39;applicazione.
 
@@ -142,7 +142,7 @@ Create una cartella utilizzando l&#39;API del servizio Repository (Java):
 
    * Identificatore `com.adobe.repository.infomodel.Id` UUID da assegnare alla risorsa.
    * Identificatore `com.adobe.repository.infomodel.Lid` UUID da assegnare alla risorsa.
-   * Un `java.lang.String` contenente il nome della raccolta di risorse. Esempio, `FormsFolder`.
+   * Un `java.lang.String` contenente il nome della raccolta di risorse. Ad esempio, `FormsFolder`.
    Il metodo restituisce un `com.adobe.repository.infomodel.bean.ResourceCollection` oggetto che rappresenta la nuova cartella.
 
    Impostate la descrizione della cartella utilizzando il `setDescription` metodo e passate il seguente parametro:
