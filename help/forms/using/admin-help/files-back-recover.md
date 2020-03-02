@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -154,7 +154,7 @@ La directory principale di Content Storage contiene l&#39;archivio di Content Se
 
 La directory principale dell&#39;archivio contenuti viene creata quando è installato Content Services (obsoleto). La posizione della directory principale di archiviazione dei contenuti è determinata durante il processo di installazione dei moduli AEM.
 
-Il percorso predefinito per la directory principale dell&#39;archivio contenuti è *[aem-forms root]*/lccs_data.
+Il percorso predefinito per la directory principale dell&#39;archiviazione dei contenuti è `[aem-forms root]/lccs_data`.
 
 Esegui il backup delle seguenti directory che si trovano nella directory principale di Content Storage:
 
@@ -176,7 +176,7 @@ Quando installate Content Services (obsoleto) in un ambiente cluster, la directo
 
 **** Directory radice indice: Una directory creata su ciascun nodo del cluster, sempre con lo stesso percorso e lo stesso nome di directory
 
-Il percorso predefinito per la directory radice di memorizzazione dei contenuti è *[GDS root]*/lccs_data, dove *[GDS root]* è il percorso descritto nel percorso [](files-back-recover.md#gds-location)GDS. Esegui il backup delle seguenti directory che si trovano nella directory principale di Content Storage:
+Il percorso predefinito per la directory principale dell&#39;archivio dei contenuti è `[GDS root]/lccs_data`, dove `[GDS root]` corrisponde al percorso descritto nel percorso [](files-back-recover.md#gds-location)GDS. Esegui il backup delle seguenti directory che si trovano nella directory principale di Content Storage:
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ Il percorso predefinito per la directory radice di memorizzazione dei contenuti 
 
 Se la directory /backup-lucene-indexes non è presente, eseguite il backup della directory /lucene-indexes, anch&#39;essa presente nella directory principale dell&#39;archiviazione dei contenuti. Se la directory /backup-lucene-index è presente, non eseguire il backup della directory /lucene-index perché potrebbe causare errori.
 
-La posizione predefinita per la directory radice dell&#39;indice è *[aem-forms root]*/lucene-index su ciascun nodo.
+La posizione predefinita per la directory radice dell&#39;indice è `[aem-forms root]/lucene-indexes` su ciascun nodo.
 
 ## Font installati dal cliente {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ Se sono stati installati font aggiuntivi nell&#39;ambiente dei moduli AEM, è ne
 
 >[!NOTE]
 >
->Per impostazione predefinita, i font Adobe installati con i moduli AEM si trovano nella directory root [/fonts dei moduli]AEM.
+>Per impostazione predefinita, i font Adobe installati con i moduli AEM si trovano nella `[aem-forms root]/fonts` directory.
 
 Se si sta reinizializzando il sistema operativo sul computer host e si desidera utilizzare i font del sistema operativo precedente, è necessario eseguire il backup anche del contenuto della directory dei font di sistema. Per istruzioni specifiche, consultate la documentazione del sistema operativo in uso.
