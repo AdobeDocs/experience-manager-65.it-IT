@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -431,7 +431,7 @@ L&#39;illustrazione seguente mostra il contenuto del progetto Eclipse, che viene
 
 ### Distribuzione del file WAR nel server applicazioni J2EE in cui è installato AEM Forms {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}
 
-Distribuisci il file WAR sul server applicazione J2EE su cui è distribuito AEM Forms. Per distribuire il file WAR al server applicazione J2EE, copiate il file WAR dal percorso di esportazione in *[AEM Forms Install]*\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy.
+Distribuisci il file WAR sul server applicazione J2EE su cui è distribuito AEM Forms. Per distribuire il file WAR al server applicazione J2EE, copiate il file WAR dal percorso di esportazione a `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`.
 
 >[!NOTE]
 >
