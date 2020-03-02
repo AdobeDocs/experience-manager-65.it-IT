@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: 049e28176c9b98eeb3c2c6764cb868c51f1141bb
+source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
 
 ---
 
@@ -44,7 +44,7 @@ Per utilizzare lo strumento VLT, è prima necessario installarlo. Per impostazio
    >
    >L&#39;origine dello strumento VLT è [disponibile su GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Estrarre l&#39;archivio.
-1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file dei comandi `vlt` o `vlt.bat` siano accessibili come appropriato. Esempio:
+1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file dei comandi `vlt` o `vlt.bat` siano accessibili come appropriato. Ad esempio:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -190,7 +190,7 @@ Commands:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-Per informazioni su un particolare comando, digitare il comando help seguito dal nome del comando. Esempio:
+Per informazioni su un particolare comando, digitare il comando help seguito dal nome del comando. Ad esempio:
 
 ```shell
 vlt --help export
@@ -215,7 +215,7 @@ Options:
 
 Di seguito sono riportate alcune attività comuni eseguite in VLT. Per informazioni dettagliate su ciascun comando, vedere i singoli [comandi](#vlt-commands).
 
-### Estrazione di una struttura ad albero {#checking-out-a-subtree}
+### Estrazione di una sottostruttura {#checking-out-a-subtree}
 
 Se desiderate ad esempio estrarre solo una sottostruttura del repository, `/apps/geometrixx`digitate quanto segue:
 
@@ -738,7 +738,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->Le `--exclude` opzioni devono essere seguite da un&#39;altra opzione prima degli `<src>` argomenti e `<dst>` . Esempio:
+>Le `--exclude` opzioni devono essere seguite da un&#39;altra opzione prima degli `<src>` argomenti e `<dst>` . Ad esempio:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
