@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -368,7 +368,7 @@ Il sito Web di Adobe Developer contiene il seguente articolo che illustra come r
 1. Installate JDK 1.6 o versione successiva.
 
    * Aggiungete la directory bin JDK al percorso della classe.
-   * Aggiungete la directory JRE bin al percorso della classe. Questo bin si trova nella directory [*JDK_INSTALL_LOCATION*]/jre.
+   * Aggiungete la directory JRE bin al percorso della classe. Questo bin si trova nella `[JDK_INSTALL_LOCATION]/jre` directory.
    * Impostate la variabile di `JAVA_HOME` ambiente sulla directory in cui avete installato il JDK.
    JDK 1.6 include il programma wsimport utilizzato nel file build.xml. JDK 1.5 non include tale programma.
 
@@ -558,7 +558,7 @@ Il sito Web di Adobe Developer contiene il seguente articolo che illustra come r
    * xalan.jar
    * xchild.jar
    * xercesImpl.jar
-   Questi file JAR si trovano nella directory di *[installazione]*/Adobe/Adobe Experience Manager Forms/sdk/lib/third-party.
+   Questi file JAR si trovano nella `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` directory.
 
 **Consulta anche**
 
@@ -762,7 +762,7 @@ Dopo aver creato un riferimento a un servizio, i tipi di dati associati al servi
 
 1. Creare un progetto .NET utilizzando Microsoft Visual Studio 2008.
 1. Nel menu **Progetto** , selezionate **Aggiungi riferimento** servizio.
-1. Nella finestra di dialogo **Indirizzo** , specificare il WSDL nel servizio AEM Forms. Esempio,
+1. Nella finestra di dialogo **Indirizzo** , specificare il WSDL nel servizio AEM Forms. Ad esempio:
 
    ```as3
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
