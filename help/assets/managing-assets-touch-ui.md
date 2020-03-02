@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
+source-git-commit: 68692e7b82aecd81a21f3a970f3707f2ff39792a
 
 ---
 
@@ -627,7 +627,7 @@ Nella vista a schede, l&#39;opzione **[!UICONTROL Seleziona]** viene visualizzat
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Quando sfogliate una cartella o una raccolta nell&#39;interfaccia utente Risorse in un browser, potete selezionare tutte le risorse utilizzando l&#39;opzione [!UICONTROL Seleziona tutto] nell&#39;angolo superiore destro.
+Quando sfogliate una cartella o una raccolta nell&#39;interfaccia utente Risorse in un browser, potete selezionare tutte le risorse visualizzate o caricate utilizzando l&#39;opzione [!UICONTROL Seleziona tutto] nell&#39;angolo superiore destro. Se non scorrete sotto, nella vista a schede vengono caricate solo 100 risorse e nella vista a elenco ne vengono caricate 200. Selezionate All (Tutte) per selezionare solo queste risorse.
 
 Per ulteriori informazioni, consultate [Visualizzare e selezionare le risorse](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
