@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -32,7 +32,7 @@ Prima di aggiungere un rapporto personalizzato, effettuate le seguenti operazion
 
 L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l’interfaccia [REST](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder prima di eseguire i seguenti passaggi:
 
-1. Passate all’URL https://[server]:[porta]/lc/bin/querybuilder.json
+1. Passa all’URL `https://[server]:[port]/lc/bin/querybuilder.json`
 1. Creare una query basata sulla struttura del nodo di storage Report processo e sulle proprietà del nodo.
 
    Potete specificare parametri facoltativi per offset, limite, hit e proprietà. È possibile codificare gli argomenti per i report statici e recuperare i parametri dall&#39;interfaccia per i report dinamici.
