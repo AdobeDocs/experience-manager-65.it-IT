@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 44c0b6c5a8e7688b597e4b9de857d7f54ff23d49
 
 ---
 
@@ -24,7 +24,7 @@ Nel diagramma di architettura riportato di seguito viene descritto il funzioname
 
 Con la nuova architettura, AEM è responsabile delle risorse principali e delle sincronizzazioni con Dynamic Media per l’elaborazione e la pubblicazione delle risorse:
 
-1. Quando la risorsa principale viene caricata in AEM, viene replicata in Contenuti multimediali dinamici. A questo punto, Dynamic Media gestisce l’elaborazione e la generazione di rappresentazioni di tutte le risorse, ad esempio la codifica video e le varianti dinamiche di un’immagine. In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file non superiori a 2 GB.
+1. Quando la risorsa principale viene caricata in AEM, viene replicata in Contenuti multimediali dinamici. A questo punto, Dynamic Media gestisce l’elaborazione e la generazione di rappresentazioni di tutte le risorse, ad esempio la codifica video e le varianti dinamiche di un’immagine. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
 1. Dopo la generazione delle rappresentazioni, AEM può accedere e visualizzare in modo sicuro le rappresentazioni remote per contenuti multimediali dinamici (non vengono più inviati binari all’istanza di AEM).
 1. Quando il contenuto è pronto per essere pubblicato e approvato, attiva il servizio Contenuti multimediali dinamici per inviare contenuti ai server di distribuzione e memorizzare il contenuto nella cache del CDN.
 
@@ -75,7 +75,7 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
 Per configurare i servizi cloud per contenuti multimediali dinamici:
 
 1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale e tocca o fai clic sull’icona Strumenti, quindi tocca Servizi **[!UICONTROL Cloud > Configurazione]** elementi multimediali dinamici.
-1. Nella pagina del browser Configurazione elemento multimediale dinamico, nel riquadro a sinistra, toccate **[!UICONTROL globale]** (non toccate o selezionate l’icona della cartella a sinistra del **[!UICONTROL file globale]**), quindi toccate **[!UICONTROL Crea]**.
+1. Nella pagina del Browser configurazioni Dynamic Media, seleziona il riquadro a sinistra e tocca **[!UICONTROL global (globale)]** (non toccare o selezionare l’icona della cartella a sinistra di **[!UICONTROL global]**), quindi tocca **[!UICONTROL Crea]**.
 1. Nella pagina Crea configurazione elemento multimediale dinamico, immetti un titolo, l’indirizzo e-mail dell’account elemento multimediale dinamico, la password, quindi seleziona la tua area geografica. Questi vengono forniti da Adobe nel messaggio e-mail di provisioning. Se non avete ricevuto questa richiesta, contattate l&#39;assistenza.
 
    Click **[!UICONTROL Connect to Dynamic Media]**.
@@ -96,7 +96,7 @@ Per configurare i servizi cloud per contenuti multimediali dinamici:
 A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale, Adobe Systems consiglia di lasciare questa impostazione come specificato.
    >[!NOTE]
    >
-   >Non è supportato il controllo delle versioni in DMS7. Inoltre, l’attivazione ritardata si applica solo se **[!UICONTROL Pubblica risorse]** nella pagina Modifica configurazione file multimediali dinamici è impostata su **[!UICONTROL Al momento dell’attivazione]** e solo fino alla prima attivazione della risorsa.
+   >Non è supportato il controllo delle versioni in DMS7. Inoltre, l’attivazione ritardata si applica solo se l’opzione **[!UICONTROL Pubblica risorse]** della pagina Modifica configurazione Dynamic Media è impostata su **[!UICONTROL All’attivazione]** e soltanto fino alla prima attivazione della risorsa.
    >
    >
    >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in diretta su S7 Delivery.
@@ -179,7 +179,7 @@ Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazi
 
 >[!NOTE]
 >
->Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** e 15 predefiniti per visualizzatori quando selezionate **[!UICONTROL Visualizzatori]** nella visualizzazione Dettagli della risorsa. Puoi aumentare questo limite. Consultate [Aumentare il numero di predefiniti per immagini da visualizzare](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) o [Aumentare il numero di predefiniti per visualizzatori da visualizzare](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
 #### Configurazione della gestione del colore {#configuring-color-management}
@@ -189,7 +189,7 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
 1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione]** applicazione.
-1. Espandete l’area Impostazione **** pubblicazione e selezionate Server **** immagini. Impostate Contesto **[!UICONTROL di]** pubblicazione su Server **** immagini per le istanze di pubblicazione.
+1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
 
    Potete impostare le seguenti proprietà di correzione del colore:
@@ -197,11 +197,11 @@ Per configurare le proprietà colore predefinite per attivare la correzione colo
    * **[!UICONTROL Spazio]** colore predefinito CMYK - Nome del profilo colore CMYK predefinito
    * **[!UICONTROL Scala di grigio Spazio]** colore predefinito - Nome del profilo colore grigio predefinito
    * **[!UICONTROL Spazio]** colore predefinito RGB - Nome del profilo colore RGB predefinito
-   * **[!UICONTROL Intento]** di rendering conversione colore - Specifica l&#39;intento di rendering. I valori accettabili sono: **[!UICONTROL percettivo]**, colometrico **** relativo, **[!UICONTROL saturazione]**, colometrico **** assoluto. Adobe consiglia **[!UICONTROL relativa]]**come impostazione predefinita.
+   * **[!UICONTROL Intento]** di rendering conversione colore - Specifica l&#39;intento di rendering. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]]**as the default.
 
 1. Toccate **[!UICONTROL Salva]**.
 
-Ad esempio, potete impostare lo spazio **[!UICONTROL colore predefinito]** RGB su *sRGB* e lo spazio **[!UICONTROL colore predefinito]** CMYK su *WebCoated*.
+Ad esempio, puoi impostare **[!UICONTROL Spazio colore predefinito RGB]** su *sRGB* e **[!UICONTROL Spazio colore predefinito CMYK]** su *WebCoated*.
 
 In questo modo si effettua quanto segue:
 
@@ -247,11 +247,11 @@ Consulta [Caricamento delle risorse](/help/assets/managing-assets-touch-ui.md#up
 
 #### Aggiunta di tipi MIME personalizzati per i formati non supportati {#adding-custom-mime-types-for-unsupported-formats}
 
-In Risorse AEM puoi aggiungere tipi MIME personalizzati per i formati non supportati. Per fare in modo che AEM non elimini eventuali nuovi nodi aggiunti in CRXDE Lite, devi assicurarti di spostare il tipo MIME prima `image_` e che il suo valore abilitato sia impostato su **[!UICONTROL false]**.
+All’interno di AEM Assets puoi aggiungere tipi MIME personalizzati per i formati non supportati. Per assicurarti che AEM non elimini eventuali nuovi nodi che aggiungi in CRXDE Lite, devi accertarti di spostare il tipo MIME prima di `image_` e che il suo valore abilitato sia impostato su **[!UICONTROL false]**.
 
 **Aggiunta di tipi MIME personalizzati per i formati non supportati**
 
-1. Da AEM, toccate **[!UICONTROL Strumenti > Operazioni > Console]** Web.
+1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -259,7 +259,7 @@ In Risorse AEM puoi aggiungere tipi MIME personalizzati per i formati non suppor
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. Nella pagina, scorrete verso il basso fino al nome *Adobe CQ Scene7 Asset MIME type Service* , come illustrato di seguito. A destra del nome, toccate **[!UICONTROL Modifica i valori]** di configurazione (icona matita).
+1. Nella pagina, scorri verso il basso fino al nome *Adobe CQ Scene7 Asset MIME type Service*, come illustrato nella schermata successiva. A destra del nome, tocca **[!UICONTROL Modifica i valori di configurazione]** (icona a forma di matita).
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
@@ -278,7 +278,7 @@ In Risorse AEM puoi aggiungere tipi MIME personalizzati per i formati non suppor
    A questo punto, puoi chiudere la scheda del browser contenente la pagina di configurazione della console Web di Adobe Experience Manager aperta.
 
 1. Tornate alla scheda del browser con la console AEM aperta.
-1. Da AEM, toccate **[!UICONTROL Strumenti > Generale > CRXDE Lite]**.
+1. From AEM, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -290,7 +290,7 @@ In Risorse AEM puoi aggiungere tipi MIME personalizzati per i formati non suppor
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Con il tipo mime `image_vnd.dwg` ancora selezionato, nella scheda **[!UICONTROL Proprietà]** , nella riga **[!UICONTROL abilitata]** , nell&#39;intestazione della colonna **[!UICONTROL Valore]** , fare doppio clic sul valore per aprire l&#39;elenco a discesa **[!UICONTROL Valore]** .
+1. Con il tipo mime `image_vnd.dwg` ancora selezionato, nella scheda **[!UICONTROL Proprietà]** della riga **[!UICONTROL abilitata]**, seleziona l’intestazione della colonna **[!UICONTROL Valore]** e fai doppio clic sul valore per aprire l’elenco a discesa **[!UICONTROL Valore]**.
 1. Digitare `false` il campo o selezionare **[!UICONTROL false]** dall&#39;elenco a discesa.
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -322,7 +322,7 @@ Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Qu
    Le credenziali e l&#39;accesso sono stati forniti da Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
 1. Nella barra di navigazione accanto alla parte superiore della pagina, toccate **[!UICONTROL Configurazione > Impostazione applicazione > Predefiniti set di batch > Denominazione]** predefinita.
-1. Selezionare **[!UICONTROL Visualizza modulo]** o **[!UICONTROL Visualizza codice]** per specificare come si desidera visualizzare e immettere informazioni su ciascun elemento.
+1. Per specificare come visualizzare e immettere le informazioni di ciascun elemento, seleziona **[!UICONTROL Visualizza modulo]** o **[!UICONTROL Visualizza codice]**.
 
    È possibile selezionare la casella di controllo **[!UICONTROL Visualizza codice]** per visualizzare il valore dell&#39;espressione regolare che viene generato insieme alle selezioni del modulo. Potete immettere o modificare questi valori per definire meglio gli elementi della convenzione di denominazione, se la visualizzazione modulo vi limita per qualsiasi motivo. Se i valori non possono essere analizzati nella visualizzazione modulo, i campi del modulo diventano inattivi.
 
@@ -364,9 +364,9 @@ Potete definire un predefinito per set di batch con i campi modulo o con il meto
 1. Nel menu a discesa Tipo set di batch, selezionate un tipo di predefinito.
 1. Effettua una delle operazioni seguenti:
 
-   * Se usate una convenzione di denominazione predefinita precedentemente impostata in Impostazione **[!UICONTROL applicazione > Predefiniti set di batch > Denominazione]** predefinita, espandete Convenzioni **[!UICONTROL di denominazione delle]** risorse e, nell’elenco a discesa Denominazione file, toccate **[!UICONTROL Predefinito]**.
+   * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, tap **[!UICONTROL Default]**.
 
-   * Per definire una nuova convenzione di denominazione durante l’impostazione del predefinito, espandete Convenzioni **[!UICONTROL di denominazione delle]** risorse e fate clic su **[!UICONTROL Personalizzato]** nell’elenco Denominazione file.
+   * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, click **[!UICONTROL Custom]**.
 
 1. Per l’ordine della sequenza, definite l’ordine in cui le immagini vengono visualizzate dopo che il set è stato raggruppato in Contenuti multimediali dinamici.
 
@@ -401,9 +401,9 @@ Con queste informazioni, la ricetta Tipo set di batch potrebbe essere creata com
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-Il raggruppamento per la parte del nome della risorsa condivisa del set 360 gradi viene aggiunto al campo **Corrispondenza** (come evidenziato). La parte variabile del nome della risorsa contenente la riga e la colonna viene aggiunta rispettivamente ai campi **Riga** e **Colonna** .
+Il raggruppamento per la parte del nome della risorsa condivisa del set 360 gradi viene aggiunto al campo **Match (Corrispondenza)** (come evidenziato). La parte variabile del nome della risorsa, contenente la riga e la colonna, viene aggiunta rispettivamente ai campi **Riga** e **Colonna**.
 
-Quando il set 360 gradi viene caricato e pubblicato, potete attivare il nome della definizione del set 360 gradi 2D elencata in Predefiniti **per set di** batch nella finestra di dialogo Opzioni **processo di** caricamento.
+Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della definizione del set 360 gradi 2D che è riportato in **Predefiniti set di batch**, nella finestra di dialogo **Opzioni processo di caricamento**.
 
 **Per creare un predefinito per set di batch per la generazione automatica di un set 360 gradi 2D**
 
@@ -417,10 +417,10 @@ Quando il set 360 gradi viene caricato e pubblicato, potete attivare il nome del
 
 1. Nel pannello Elenco predefiniti, fate clic su **[!UICONTROL Aggiungi]** per attivare i campi delle definizioni nel pannello Dettagli, a destra della schermata.
 1. Nel pannello Dettagli, digitate nel campo Nome predefinito un nome per il predefinito.
-1. Nel menu a discesa Tipo set di batch, selezionate Set **** risorse.
+1. Nel menu a discesa Tipo set di batch, seleziona **[!UICONTROL Set risorse]**.
 1. Nell’elenco a discesa Sottotipo, selezionate Set 360 gradi con asse **[!UICONTROL multiplo]**.
 1. Espandete Convenzioni **[!UICONTROL di denominazione delle]** risorse e, nell’elenco a discesa Denominazione file, fate clic su **[!UICONTROL Personalizzato]**.
-1. Utilizzate gli attributi **[!UICONTROL Corrispondenza]** e, facoltativamente, Nome **** base per definire un’espressione regolare per la denominazione delle risorse di immagine che compongono il raggruppamento.
+1. Utilizza gli attributi **[!UICONTROL Match (Corrispondenza)]** e, facoltativamente, **[!UICONTROL Nome base]** per definire un’espressione regolare per la denominazione delle risorse dell’immagine che compongono il raggruppamento.
 
    Ad esempio, l&#39;espressione regolare letterale Corrispondenza potrebbe essere simile a quella riportata di seguito:
 
