@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68692e7b82aecd81a21f3a970f3707f2ff39792a
+source-git-commit: f191f90f7a417387930d2d4cf7b9482aabbd6156
 
 ---
 
@@ -19,7 +19,9 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->La condivisione di una cartella di risorse di tipo `sling:OrderedFolder`non è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una cartella di risorse di tipo `sling:OrderedFolder`non è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* Experience Manager non consente l&#39;uso di `subassets` parole come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
+
 
 1. Andate alla posizione nella cartella delle risorse digitali in cui desiderate creare una nuova cartella. Nel menu, fate clic su **[!UICONTROL Crea]**. Selezionate **[!UICONTROL Nuova cartella]**.
 1. Nel campo **[!UICONTROL Titolo]** , inserite un nome di cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, potete sostituire quella predefinita e specificare un altro nome di cartella.
