@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7029d6e7047680880ef89365826dd47af478c0b6
+source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
 
 ---
 
@@ -68,11 +68,13 @@ Il Feature Pack 18912 consente di caricare le risorse in blocco tramite FTP o di
 
 Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md) in massa delle risorse.
 
-## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
+## Creazione di una configurazione per contenuti multimediali dinamici {#configuring-dynamic-media-cloud-services}
 
-**Prima di configurare i servizi** Dynamic Media Cloud: Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per gli elementi multimediali dinamici, dovete [accedere](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che Dynamic Media Cloud Service sia configurato con le credenziali corrette.
+**Prima di configurare gli elementi multimediali** dinamici: Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per gli elementi multimediali dinamici, dovete [accedere](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che Dynamic Media Cloud Service sia configurato con le credenziali corrette.
 
-Per configurare i servizi cloud per contenuti multimediali dinamici:
+![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+
+**Per creare una configurazione per contenuti multimediali dinamici**
 
 1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale e tocca o fai clic sull’icona Strumenti, quindi tocca Servizi **[!UICONTROL Cloud > Configurazione]** elementi multimediali dinamici.
 1. Nella pagina del Browser configurazioni Dynamic Media, seleziona il riquadro a sinistra e tocca **[!UICONTROL global (globale)]** (non toccare o selezionare l’icona della cartella a sinistra di **[!UICONTROL global]**), quindi tocca **[!UICONTROL Crea]**.
@@ -110,8 +112,6 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con gli elem
    >
    >
    >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in diretta su S7 Delivery.
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Toccate **[!UICONTROL Salva]**.
 1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima di pubblicarlo, è necessario &quot;inserire in una whitelist&quot; l’istanza di creazione di AEM per collegarsi a Contenuti multimediali dinamici:
