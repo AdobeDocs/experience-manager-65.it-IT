@@ -39,7 +39,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Dynamic Media ora supporta le risorse video SmartCrop. Smart Crop è una funzione guidata di apprendimento automatico che ritaglia un video mentre si sposta il fotogramma per seguire il punto focale della scena.
 
-* Dynamic Media supporta le immagini intelligenti.
+* Dynamic Media supporta la funzione Smart Imaging.
 
 * Possibilità di [impostare le preferenze di Office](../forms/using/configure-out-of-office-settings.md) nei flussi di lavoro AEM.
 
@@ -87,11 +87,11 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Il conteggio dei risultati della ricerca nell&#39;angolo in alto a destra non si aggiorna con precisione quando la ricerca viene attivata dalla barra laterale del filtro (NPR-31316).
 
-* Tutte le caselle di controllo vengono deselezionate quando si deseleziona la casella di controllo di secondo livello nel filtro Tipo file e il testo nella barra di ricerca non è sincronizzato con le proprietà selezionate o non selezionate (NPR-31287).
+* Tutte le caselle di controllo vengono deselezionate quando si deseleziona la casella di controllo di secondo livello nel filtro Tipo di file e il testo nella barra di ricerca non è sincronizzato con le proprietà selezionate o non selezionate (NPR-31287).
 
 * Tutti i membri (utenti/gruppi) non possono essere rimossi dalla sezione Membri di una cartella; quando si tenta di rimuovere tutti gli utenti, l&#39;utente connesso viene aggiunto all&#39;elenco (NPR-31171).
 
-* Impossibile eliminare le risorse con il simbolo &quot;+&quot; nel nome del file (NPR-31162).
+* Impossibile eliminare le risorse con il simbolo più &quot;+&quot; nel nome del file (NPR-31162).
 
 * Il menu a discesa Crea, visibile nel menu principale quando si seleziona una cartella, non mostra l&#39;opzione &quot;Cartella&quot; come opzione di creazione (NPR-30877).
 
@@ -105,7 +105,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in AEM, in esecuzione in modalità di esecuzione Dynamic Media Scene 7 (NPR-31630).
 
-* Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata come nome della società Scene 7 (NPR-31340).
+* Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata uguale al nome della società di Scene 7 (NPR-31340).
 
 * Le risorse multimediali dinamiche contenenti riferimenti non vengono pubblicate (NPR-31180).
 
@@ -211,7 +211,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * La ricerca all&#39;interno dei componenti del selettore non funziona (NPR-31692).
 
-* Viene visualizzato un errore quando si allega un file ZIP a un post di AEM Communities a causa di versioni diverse del bundle Apache POI e Apache Tika (NPR-31018).
+* Viene visualizzato un errore durante l&#39;associazione di un file ZIP a un post di AEM Communities a causa delle diverse versioni del bundle Apache POI e Apache Tika (NPR-31018).
 
 * Il ``org.apache.sling.distribution.api`` bundle è nascosto nel gestore di configurazione e pertanto non è disponibile per i bundle personalizzati (NPR-31720).
 
@@ -227,9 +227,9 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 **Problemi risolti**
 
-* Quando si crea una nuova cartella Contribution nella funzione Asset Sourcing (CQ-4282825), viene visualizzata un’icona errata.
+* Quando si crea una nuova cartella Contribution in Asset Sourcing feature (CQ-4282825), viene visualizzata un’icona errata.
 * Quando create una nuova cartella Contribution, una o entrambe le sottocartelle (NEW e SHARED) non vengono visualizzate all’interno della cartella Contribution (CQ-4282424).
-* Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da AEM a Brand Portal dopo aver ricevuto nuove risorse nella cartella Contribution da Brand Portal end (CQ-4279740).
+* Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da AEM a Brand Portal dopo la ricezione delle nuove risorse nella cartella Contribution da Brand Portal end (CQ-4279740).
 * La creazione di una cartella Contribution all’interno di una cartella Contribution (cartella nidificata) non è consentita per evitare la complessità (CQ-4278391).
 * Il sistema genera un’eccezione durante il caricamento dell’elenco di utenti Brand Portal (file .csv) importato da AEM Admin Console. Nel file .csv sono obbligatori solo i campi Email, FirstName e LastName (CQ-4278390).
 
@@ -290,7 +290,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 **JEE per Foundation**
 
-* La configurazione dell&#39;azione non carica i nomi dei processi per l&#39;azione di invio di un flusso di lavoro moduli (NPR-31478).
+* La configurazione dell&#39;azione non carica i nomi dei processi per l&#39;azione di invio Richiamo un flusso di lavoro moduli (NPR-31478).
 * Gli utenti di AEM Forms su JEE riscontrano errori simili a quelli riportati di seguito durante l’importazione di file .lca o la configurazione di LDAP nella console di amministrazione:
 
    `com.ibm.ws.webcontainer.filter.FilterInstanceWrapper doFilter SRVE8109W: Uncaught exception thrown by filter um: java.lang.NoClassDefFoundError: org/apache/commons/io/IOUtils at org.apache.commons.fileupload.util.Streams.copy`
@@ -365,7 +365,7 @@ In order to see what platforms are certified to run with this release, please re
 
 >[!NOTE]
 >
->AEM 6.5.3.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Se si utilizza una versione precedente del pacchetto di compatibilità AEM Forms e si aggiorna a AEM 6.5.3.0, installare la versione più recente del pacchetto di compatibilità AEM Forms dopo l&#39;installazione del pacchetto di componenti aggiuntivi Forms.
+>AEM 6.5.3.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Se si utilizza una versione precedente del pacchetto di compatibilità AEM Forms e si aggiorna a AEM 6.5.3.0, installare la versione più recente del pacchetto di compatibilità AEM Forms dopo l&#39;installazione del pacchetto di componenti aggiuntivi di Forms.
 
 1. Assicurati di aver installato il Service Pack di AEM.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
