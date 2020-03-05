@@ -1,8 +1,8 @@
 ---
 title: Progettazione di modelli di modulo per moduli HTML5
 seo-title: Progettazione di modelli di modulo per moduli HTML5
-description: AEM Forms offre il rendering del modello di modulo XFA in formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando Designer e utilizzare la funzionalità di rappresentazione HTML5.
-seo-description: AEM Forms offre il rendering del modello di modulo XFA in formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando Designer e utilizzare la funzionalità di rappresentazione HTML5.
+description: AEM Forms offre il rendering del modello di modulo XFA in formato HTML5. I progettisti di moduli possono progettare i modelli di modulo utilizzando Designer e utilizzare la funzionalità di rappresentazione HTML5.
+seo-description: AEM Forms offre il rendering del modello di modulo XFA in formato HTML5. I progettisti di moduli possono progettare i modelli di modulo utilizzando Designer e utilizzare la funzionalità di rappresentazione HTML5.
 uuid: 4f6b7231-4479-400a-adcd-c68064f06b4e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -25,7 +25,7 @@ Per le funzioni XFA comuni, vedere le procedure ottimali e le linee guida riport
 
 ## Best practices {#best-practices}
 
-La maggior parte dei passaggi necessari per progettare un modello di modulo, ad esempio i binding degli schemi o per scrivere la logica del modulo, sono identici. Tuttavia, a causa delle differenze intrinseche tra il rendering e il motore di script di un client spesso come Adobe Reader e i moduli basati su browser, sono disponibili alcune raccomandazioni descritte nell&#39;articolo relativo alle [best practice](/help/forms/using/design-accessible-html5-forms.md) . Queste best practice consentono di progettare i modelli di modulo in modo che funzionino come previsto in entrambi i formati.
+La maggior parte dei passaggi necessari per progettare un modello di modulo, ad esempio i binding degli schemi o per scrivere la logica del modulo, sono gli stessi. Tuttavia, a causa delle differenze intrinseche tra il rendering e il motore di script di un client spesso come Adobe Reader e i moduli basati su browser, sono disponibili alcune raccomandazioni descritte nell&#39;articolo relativo alle [best practice](/help/forms/using/design-accessible-html5-forms.md) . Queste best practice consentono di progettare i modelli di modulo in modo che funzionino come previsto in entrambi i formati.
 
 ### Funzionalità di AEM Forms Designer per moduli HTML5 {#capabilities-in-aem-forms-designer-for-html-forms}
 
@@ -38,5 +38,9 @@ La scheda Anteprima HTML viene aggiunta nella modalità Progettazione per i prog
 La destinazione chiave per i moduli HTML5 sono i dispositivi touch. In AEM Forms Designer, quindi, è stato aggiunto un nuovo controllo di firma con script. È possibile fare clic o trascinare e rilasciare il controllo firma script sul modello di modulo e configurarlo. Viene rappresentato come campo di script nella rappresentazione HTML5 e può essere utilizzato per creare script di firma sui dispositivi touch. Sui computer desktop, può essere utilizzato come campo di scripting utilizzando il controllo del mouse. Per ulteriori informazioni sull&#39;utilizzo di questa funzione, vedere Campo [di](../../forms/using/scribble-signature.md)scorrimento XFA.
 
 ![4](assets/4.png)
+
+#### Rich text format {#rich-text-format}
+
+Per aggiungere un elenco di opzioni di formattazione a un campo di testo nel modulo HTML5 di cui è stato effettuato il rendering, è possibile definire un formato di campo per il campo di testo in Forms Designer. Toccate il campo di testo in visualizzazione **** Struttura. Nella scheda **[!UICONTROL Campo]** , selezionare Testo **** RTF dall&#39;elenco a discesa Formato **** campo per applicare le impostazioni. Il campo di testo visualizza le opzioni di formattazione quando viene eseguito il rendering in un modulo HTML5.
 
 [Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
