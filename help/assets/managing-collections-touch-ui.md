@@ -4,14 +4,14 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 27fdeaf50255379fd6e5bb45eaf593cec895cd04
 
 ---
 
 
 # Gestire le raccolte {#managing-collections}
 
-Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o dinamica basata sui risultati di ricerca.
+Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
@@ -29,7 +29,7 @@ Per aprire le **[!UICONTROL raccolte]**, toccate o fate clic sul logo Experience
 
 ## Creare una raccolta {#creating-a-collection}
 
-Potete creare una raccolta con riferimenti [](#creating-a-collection-with-static-references) statici o basati su un filtro [basato su criteri di](#creating-a-smart-collection)ricerca. Potete anche creare una raccolta da una scatola luminosa.
+Potete creare una raccolta con riferimenti [](#creating-a-collection-with-static-references) statici o in base a un filtro [basato su criteri di](#creating-a-smart-collection)ricerca. Potete anche creare una raccolta da una scatola luminosa.
 
 ### Creare una raccolta con riferimenti statici {#creating-a-collection-with-static-references}
 
@@ -119,7 +119,7 @@ Potete aggiungere risorse a una raccolta contenente un elenco di risorse o carte
 
 ## Modificare una raccolta smart {#editing-a-smart-collection}
 
-Le raccolte intelligenti vengono create salvando una ricerca in modo da modificarne il contenuto modificando i parametri di ricerca della ricerca [](#editing-saved-searches)salvata.
+Le raccolte intelligenti vengono create salvando una ricerca in modo da modificarne il contenuto modificando i parametri di ricerca della ricerca [](#saved-searches)salvata.
 
 1. Nell’interfaccia utente Risorse, tocca o fai clic sull’icona di ricerca nella barra degli strumenti.
 
@@ -209,7 +209,7 @@ Potete modificare le impostazioni della raccolta, ad esempio titolo e descrizion
 
    >[!NOTE]
    >
-   >Potete inoltre eliminare le raccolte avanzate [eliminando le ricerche](#deleting-saved-searches)salvate.
+   >Potete inoltre eliminare le raccolte avanzate [eliminando le ricerche](#saved-searches)salvate.
 
 ## Scaricare una raccolta {#downloading-a-collection}
 
@@ -239,7 +239,7 @@ Potete aggiungere una raccolta a un&#39;altra raccolta, creando in tal modo una 
 >
 >Le raccolte avanzate non possono essere nidificate. In altre parole, le raccolte avanzate non possono contenere altre raccolte.
 
-## Saved searches {#saved-searches}
+## Ricerche salvate {#saved-searches}
 
 Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzata. Se salvi queste ricerche come **[!UICONTROL Ricerche salvate]**, puoi accedervi in un secondo momento dall’elenco **[!UICONTROL Ricerche salvate]** nel pannello Filtro. La creazione di una ricerca salvata genera anche una raccolta avanzata.
 
