@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9c73abc3291f2847c705cb649d2993fb186b0993
+source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 
 ---
 
 
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
-In qualità di amministratore di Risorse Adobe Experience Manager (AEM), potete pubblicare le raccolte nell&#39;istanza del Portale marchio di AEM Assets per la vostra organizzazione. Tuttavia, devi prima integrare AEM Assets con il Brand Portal. Per informazioni dettagliate, consultate [Configurare l&#39;integrazione di AEM Assets con Brand Portal](/help/assets/brand-portal-configuring-integration.md).
+In qualità di amministratore di Risorse Adobe Experience Manager (AEM), potete pubblicare le raccolte nell&#39;istanza del Portale marchio di AEM Assets per la vostra organizzazione. Tuttavia, devi prima integrare AEM Assets con il Brand Portal. Per informazioni dettagliate, consultate [Configurare AEM Assets con il Portale](/help/assets/configure-aem-assets-with-brand-portal.md)marchio.
 
 Se apportate modifiche successive alla raccolta originale in Risorse AEM, le modifiche non vengono riportate nel Portale marchio finché non pubblicate nuovamente la raccolta. Questa caratteristica garantisce che le modifiche in corso di lavoro non siano disponibili in Brand Portal. Solo le modifiche approvate pubblicate da un amministratore sono disponibili in Brand Portal.
 
@@ -31,7 +31,7 @@ Se apportate modifiche successive alla raccolta originale in Risorse AEM, le mod
 ## Pubblicare una raccolta in Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. Nell’interfaccia utente di Risorse AEM, fai clic sul logo AEM.
-1. Dalla pagina **di navigazione** , andate a **Risorse > Raccolte**.
+1. From **Navigation** page, go to **Assets > Collections**.
 1. Dalla console Raccolte, selezionate la raccolta che desiderate pubblicare nel portale dei marchi.
 
    ![select_collection](assets/select_collection.png)
@@ -43,7 +43,7 @@ Se apportate modifiche successive alla raccolta originale in Risorse AEM, le mod
 
    ![raccolta pubblicata](assets/published_collection.png)
 
-## Annulla pubblicazione delle raccolte {#unpublish-collections}
+## Annullamento della pubblicazione delle raccolte {#unpublish-collections}
 
 Potete annullare la pubblicazione delle raccolte pubblicate da AEM Assets al Brand Portal. Dopo aver annullato la pubblicazione della raccolta originale, la relativa copia non è più disponibile per gli utenti di Brand Portal.
 
