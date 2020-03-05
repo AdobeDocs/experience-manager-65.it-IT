@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
+source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
 
 ---
 
@@ -30,7 +30,7 @@ Prima di utilizzare o configurare questa funzionalità, accertati di:
    |  | AEM Sites as a Cloud Service | Siti AEM 6.5 su AMS | AEM 6.5 Sites on-premise |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Supportato | Supportato | Supportato |
-   | **Risorse AEM 6.5 su AMS** | Non supportato | Supportato | Supportato |
+   | **Risorse AEM 6.5 su AMS** | Supportato | Supportato | Supportato |
    | **Risorse AEM 6.5 in sede** | Non supportato | Non supportato | Non supportato |
 
 ### Formati di file supportati {#mimetypes}
@@ -66,7 +66,7 @@ Per configurare le risorse connesse e la connettività ai siti locali, segui que
 
    1. Dopo alcuni minuti, il server AEM si avvia correttamente. Considerate questa implementazione di AEM Sites come computer locale per l&#39;authoring delle pagine Web, ad esempio in `https://[local_sites]:4502`.
 
-1. Verifica che gli utenti e i ruoli con ambito locale siano presenti nella distribuzione di AEM Sites e nella distribuzione di AEM Assets su AMS. Crea un utente tecnico per la distribuzione delle risorse e aggiungi al gruppo di utenti menzionato in [utenti e gruppi coinvolti](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
+1. Assicurati che gli utenti e i ruoli con ambito locale siano presenti nella distribuzione di AEM Sites e nella distribuzione di AEM Assets su AMS. Crea un utente tecnico per la distribuzione delle risorse e aggiungi al gruppo di utenti menzionato negli [utenti e nei gruppi coinvolti](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
 1. Accedi alla distribuzione locale di AEM Sites in `https://[local_sites]:4502`. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Configurazione **[!UICONTROL risorse]** connesse e specifica i seguenti valori:
 
@@ -78,13 +78,13 @@ Per configurare le risorse connesse e la connettività ai siti locali, segui que
    1. Se utilizzi un archivio dati per archiviare le risorse, seleziona **[!UICONTROL archivio dati condiviso con risorse]** collegate e il datastore è lo storage comune tra le due distribuzioni AEM. In questo caso, il limite di soglia non ha importanza in quanto i binari di attività effettivi risiedono nel datastore e non vengono trasferiti.
    ![Configurazione tipica per le risorse connesse](assets/connected-assets-typical-config.png)
 
-   *Figura:Configurazione tipica per le risorse connesse*
+   *Figura: Configurazione tipica per le risorse connesse*
 
-1. Poiché le risorse sono già state elaborate e le rappresentazioni vengono recuperate, disattivate gli avviatori dei flussi di lavoro. Regolate le configurazioni di avvio nella distribuzione locale (AEM Sites) per escludere la `connectedassets` cartella in cui vengono recuperate le risorse remote.
+1. Poiché le risorse sono già state elaborate e le rappresentazioni vengono recuperate, disattivate gli avviatori dei flussi di lavoro. Regolate le configurazioni del modulo di avvio nella distribuzione locale (AEM Sites) per escludere la `connectedassets` cartella in cui vengono recuperate le risorse remote.
 
-   1. Nella distribuzione AEM Sites, fate clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Lanci]**.
+   1. Nella distribuzione di AEM Sites, fate clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Lanci]**.
 
-   1. Cerca avviatori con flussi di lavoro come **[!UICONTROL DAM Update Asset]** e **[!UICONTROL DAM Metadata Write]**.
+   1. Cerca avviatori con flussi di lavoro come **[!UICONTROL DAM Update Asset]** e **[!UICONTROL DAM Metadata Writeback]**.
 
    1. Selezionate il lancio del flusso di lavoro e fate clic su **[!UICONTROL Proprietà]** nella barra delle azioni.
 
@@ -97,7 +97,7 @@ Per configurare le risorse connesse e la connettività ai siti locali, segui que
 
    >[!NOTE]
    >
-   >Quando gli autori recuperano una risorsa, vengono recuperate tutte le rappresentazioni disponibili nella distribuzione AEM remota. Se desiderate creare più rappresentazioni di una risorsa recuperata, saltate questo passaggio di configurazione. Viene attivato il flusso di lavoro Aggiorna risorsa DAM e vengono create più rappresentazioni. Queste rappresentazioni sono disponibili solo nella distribuzione di Siti locali e non nella distribuzione remota di DAM.
+   >Quando gli autori recuperano una risorsa, vengono recuperate tutte le rappresentazioni disponibili nella distribuzione AEM remota. Se desiderate creare più rappresentazioni di una risorsa recuperata, saltate questo passaggio di configurazione. Viene attivato il flusso di lavoro Aggiorna risorsa DAM e vengono create ulteriori rappresentazioni. Queste rappresentazioni sono disponibili solo nella distribuzione di Siti locali e non nella distribuzione remota di DAM.
 
 1. Aggiungi l’istanza AEM Sites come una delle origini **[!UICONTROL consentite]** nella configurazione CORS di Risorse AEM remota.
 
@@ -121,9 +121,9 @@ Utilizzate la configurazione di cui sopra per provare l’esperienza di authorin
 
 1. Passa all’interfaccia utente Risorse nella distribuzione remota accedendo a **[!UICONTROL Risorse]** > **[!UICONTROL File]** dall’area di lavoro di AEM. In alternativa, potete accedere `https://[assets_servername_ams]:[port]/assets.html/content/dam` in un browser. Caricate le risorse di vostra scelta.
 1. Nell’istanza Siti, nell’attivatore del profilo nell’angolo in alto a destra, fate clic su **[!UICONTROL Impersona con nome]**. Specificate `ksaner` come nome utente, selezionate l’opzione fornita e fate clic su **[!UICONTROL OK]**.
-1. Aprite una pagina Web We.Retail in **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL it]**. Modificate la pagina. In alternativa, potete accedere `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` a un browser per modificare una pagina.
+1. Aprite una pagina Web We.Retail in **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL it]**. Modificate la pagina. In alternativa, accedete `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` a un browser per modificare una pagina.
 
-   Fate clic su **[!UICONTROL Attiva/disattiva pannello]** laterale nell’angolo superiore sinistro della pagina.
+   Fate clic su **[!UICONTROL Attiva/disattiva pannello]** laterale nell’angolo in alto a sinistra della pagina.
 
 1. Aprite la scheda Risorse e fate clic su **[!UICONTROL Accedi alle risorse]** connesse.
 1. Immettete le credenziali, `ksaner` come nome utente e `password` come password. Questo utente dispone di autorizzazioni di authoring per entrambe le distribuzioni AEM.
@@ -137,9 +137,9 @@ Utilizzate la configurazione di cui sopra per provare l’esperienza di authorin
 
 1. Un autore del sito riceve una notifica se una risorsa viene recuperata in modo asincrono e se un’attività di recupero ha esito negativo. Durante l’authoring o anche dopo l’authoring, gli autori possono visualizzare informazioni dettagliate sulle attività di recupero e sugli errori nell’interfaccia utente dei processi [](/help/assets/asynchronous-jobs.md) asincroni.
 
-   ![Notifica del recupero asincrono delle risorse che si verifica in background.](assets/assets_async_transfer_fails.png)
+   ![Notifica relativa al recupero asincrono delle risorse che si verifica in background.](assets/assets_async_transfer_fails.png)
 
-   *Figura: Notifica del recupero asincrono delle risorse che si verifica in background.*
+   *Figura: Notifica relativa al recupero asincrono delle risorse che si verifica in background.*
 
 1. Quando si pubblica una pagina, AEM visualizza un elenco completo delle risorse utilizzate nella pagina. Accertatevi che le risorse remote vengano recuperate correttamente al momento della pubblicazione. Per verificare lo stato di ciascuna risorsa recuperata, consultate Interfaccia utente dei processi [](/help/assets/asynchronous-jobs.md) asincroni.
 
@@ -153,7 +153,7 @@ Utilizzate la configurazione di cui sopra per provare l’esperienza di authorin
 
 Le risorse recuperate possono essere usate come qualsiasi altra risorsa locale, a eccezione del fatto che i metadati associati non possono essere modificati.
 
-## Limiti {#limitations}
+## Limiti   {#limitations}
 
 **Autorizzazioni e gestione delle risorse**
 
