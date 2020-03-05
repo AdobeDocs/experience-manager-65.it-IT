@@ -10,14 +10,14 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cc4b667bb20622949c71eee64b07d679109482c1
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
 
 # Utilizzare la modalità Layout per ridimensionare i componenti{#use-layout-mode-to-resize-components}
 
-L’interfaccia per la creazione di canali Web per la comunicazione adattiva e la comunicazione interattiva consente di ridimensionare i componenti in modalità Layout. Trascinare i punti blu all’interno delle colonne per definire i punti iniziale e finale per posizionare i componenti. I punti blu vengono visualizzati dopo aver toccato il componente all’interno della griglia reattiva. La griglia reattiva è composta da 12 colonne uguali. L&#39;ombreggiatura del colore bianco e blu nelle colonne alternative differisce una colonna dall&#39;altra.
+L’interfaccia per la creazione di canali Web per la comunicazione adattiva e la comunicazione interattiva consente di ridimensionare i componenti in modalità Layout. Trascinate i punti blu all’interno delle colonne per definire i punti iniziale e finale per posizionare i componenti. I punti blu vengono visualizzati dopo aver toccato il componente all’interno della griglia reattiva. La griglia reattiva è composta da 12 colonne uguali. L&#39;ombreggiatura del colore bianco e blu nelle colonne alternative differisce una colonna dall&#39;altra.
 
 Potete utilizzare la modalità Layout per ridimensionare i componenti per tutti i tipi di dispositivi, ad esempio desktop, tablet, telefoni e altri dispositivi più piccoli. Il tablet deriva automaticamente la configurazione del layout dalla versione desktop e i dispositivi più piccoli derivano la configurazione del layout dal telefono. Tuttavia, potete ignorare le configurazioni derivate automaticamente per definire una configurazione diversa per ciascun tipo di dispositivo.
 
@@ -33,7 +33,7 @@ Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superior
 
    ![Modalità Layout per le comunicazioni interattive](assets/layout_mode_ic_new.png)
 
-## Ridimensionare i componenti {#resize-components}
+## Ridimensiona i componenti {#resize-components}
 
 1. In modalità Layout, toccate il componente per ridimensionarlo. I punti blu vengono visualizzati all&#39;inizio e alla fine della griglia reattiva.
 1. Trascinate e rilasciate i punti blu per definire la posizione del componente nella griglia reattiva.
@@ -42,8 +42,8 @@ Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superior
 
    La barra degli strumenti visualizzata dopo aver toccato i componenti è composta dalle seguenti opzioni:
 
-   * **** Elemento padre: Selezionate l’elemento padre di un componente.
-   * **** Mobile in nuova riga: Se sono presenti più componenti nella stessa riga, sposta il componente sulla riga successiva.
+   * **Elemento padre:** Selezionate l’elemento padre di un componente.
+   * **Mobile in nuova riga:** Se sono presenti più componenti nella stessa riga, sposta il componente sulla riga successiva.
    Potete annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito al pannello contenente i componenti ridimensionati utilizzando l’opzione **[!UICONTROL Ripristina layout]** punto di interruzione ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)). Toccate l’elemento padre del componente ridimensionato per visualizzare l’opzione.
 
    >[!NOTE]
@@ -52,7 +52,7 @@ Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superior
 
 ### Esempio {#example}
 
-**** Obiettivo: Inserire un componente tabella e un componente Immagine e posizionarli parallelamente in una comunicazione interattiva.
+**Obiettivo:** Inserire un componente tabella e un componente Immagine e posizionarli parallelamente in una comunicazione interattiva.
 
 1. Inserite i componenti di tabella e immagine utilizzando la modalità Modifica nel canale Web. Il componente Immagine viene visualizzato dopo il componente Tabella.
 1. Passate alla modalità Layout e toccate il componente Tabella. I punti blu per ridimensionare il componente vengono visualizzati nelle colonne 1 e 12.
@@ -60,7 +60,7 @@ Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superior
 
    ![Definire il punto finale della tabella](assets/layout_mode_end_point_table_new.png)
 
-1. Analogamente, selezionate il componente Immagine e trascinate il punto blu nella colonna 1 alla colonna 7 della griglia reattiva. I componenti di tabella e immagine vengono visualizzati parallelamente.
+1. Analogamente, selezionate il componente Immagine e trascinate il punto blu nella colonna 1 alla colonna 7 della griglia reattiva. I componenti di tabella e immagine vengono visualizzati parallelamente l’uno all’altro.
 
    ![Tabella e immagine in parallelo in modalità Layout](assets/table_image_parallel_new.png)
 
@@ -76,6 +76,20 @@ Per ridimensionare l’intero pannello invece dei singoli componenti, eseguite i
 
 1. Trascinate e rilasciate i punti blu per definire la posizione del pannello nella griglia reattiva.
 Potete ripetere i passaggi 1 e 2 e selezionare ![Seleziona padre](assets/float_to_new_line_icon.svg) per spostare il pannello ridimensionato sulla riga successiva.
+
+## Definire il layout a più colonne per un pannello
+
+Per definire il numero di colonne per un pannello, eseguite i seguenti passaggi:
+
+1. In modalità **[!UICONTROL Modifica]** , toccate il pannello, selezionate ![Configura](assets/configure_icon.png)e selezionate **[!UICONTROL Reattivo - tutto sulla pagina senza l’opzione di navigazione]** .
+
+1. Toccate ![Salva](assets/save_icon.svg) per salvare le proprietà.
+
+1. In modalità **[!UICONTROL Layout]** , toccate uno dei componenti del pannello che desiderate ridimensionare, selezionate ![Seleziona elemento padre](assets/select_parent_icon.svg), quindi selezionate la prima opzione nell’elenco a discesa, se il pannello è l’elemento padre immediato del componente.
+
+1. Toccate ![più colonne](assets/multi-column.svg) e selezionate il numero di colonne dall&#39;elenco a discesa. Il numero di colonne può essere compreso tra 1 e 12. Il pannello viene diviso in un layout a più colonne.
+
+![più colonne in modalità di layout](assets/multi-column-layout.png)
 
 ## Abilita la nuova griglia reattiva per i vecchi layout reattivi {#enableresponsivegrid}
 
