@@ -1,6 +1,6 @@
 ---
-title: Casella in entrata
-seo-title: Casella in entrata
+title: 'Casella in entrata  '
+seo-title: 'Casella in entrata  '
 description: Gestione delle attività con la casella in entrata
 seo-description: Gestione delle attività con la casella in entrata
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,12 +10,12 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
 
-# Casella in entrata{#your-inbox}
+# Casella in entrata  {#your-inbox}
 
 Puoi ricevere notifiche da diverse aree di AEM, inclusi flussi di lavoro e progetti; ad esempio, informazioni su:
 
@@ -69,22 +69,22 @@ AEM pronto all&#39;uso è precaricato con quattro attività assegnate al gruppo 
 * Abilita raccolta di statistiche di utilizzo aggregati
 * [Configura HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Apertura della casella in entrata {#opening-the-inbox}
+## Apertura della casella in entrata   {#opening-the-inbox}
 
 Per aprire la casella in entrata delle notifiche AEM:
 
-1. Toccate o fate clic sull’indicatore nella barra degli strumenti.
+1. Tocca o fai clic sull’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM.** La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
-1. La vista predefinita è [Vista a elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view) dal selettore delle viste (barra degli strumenti in alto a destra).
+1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
    Per entrambe le viste puoi inoltre definire le [Visualizza impostazioni](#inbox-view-settings); le opzioni disponibili dipendono dalla vista corrente.
 
-   ![wf-79](assets/wf-79.png)
+   ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>La casella in entrata funziona come una console; puoi quindi utilizzare le funzioni di [Navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation) o [Ricerca](/help/sites-authoring/search.md) per passare a un’altra posizione al termine dell’operazione.
 
 ### Casella in entrata - Vista a elenco {#inbox-list-view}
 
@@ -98,7 +98,7 @@ Questa vista mostra gli elementi in base alla loro posizione nel calendario e al
 
 ![wf-93](assets/wf-93.png)
 
-È possibile:
+Operazioni disponibili:
 
 * selezionare una vista specifica: **Timeline**,**Colonna**, **Elenco**
 
@@ -109,7 +109,7 @@ Questa vista mostra gli elementi in base alla loro posizione nel calendario e al
 
 ![wf-91](assets/wf-91.png)
 
-### Casella in entrata - Visualizza impostazioni {#inbox-view-settings}
+### Inbox - Settings {#inbox-view-settings}
 
 Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
@@ -118,7 +118,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    Per la **Vista calendario** puoi configurare:
 
    * **Raggruppa per**
-   * **Programma** o **Nessuno**
+   * **Pianificazione** o **Nessuna**
    * **Dimensioni scheda**
    ![wf-92](assets/wf-92.png)
 
@@ -126,19 +126,39 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
    Per la **Vista a elenco** puoi configurare il metodo di ordinamento:
 
-   * **Ordina per**
+   * **Campo di ordinamento**
    * **Ordinamento**
-   ![wf-83](assets/wf-83.png)
+   ![wf-83](assets/inbox-settings.png)
 
-## Intraprendere un’azione su un elemento {#taking-action-on-an-item}
+### Casella in entrata - Controllo amministratore {#inbox-admin-control}
 
-1. Per intervenire su un elemento, seleziona la miniatura dell&#39;elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
+Gli utenti che fanno parte del gruppo **workflow-amministratori** possono visualizzare l&#39;opzione Admin Control nell&#39;elenco. Utilizzando questa opzione, gli amministratori possono:
+
+* Definite le personalizzazioni per il testo e il logo disponibili nell’intestazione.
+
+* Controlla la visualizzazione delle opzioni di navigazione disponibili nell’intestazione e limita gli utenti a passare alla modalità di authoring del flusso di lavoro o passare all’Aiuto o ad altri collegamenti della soluzione.
+
+![admin-control](assets/admin-control.png)
+
+* **Personalizzazione branding**
+
+   * **Personalizzare il testo dell’intestazione:** Specificate il testo in questo campo per sostituire il testo esistente di **Adobe Experience Manager** visualizzato nell’intestazione.
+
+   * **Personalizza logo:** Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine utilizzando questo campo per sostituire il logo Adobe Experience Manager visualizzato nell’intestazione.
+
+* **Navigazione utente**
+   * **Nascondi opzioni di navigazione:** Selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione, ad esempio l’opzione per passare ad altre soluzioni, il collegamento Aiuto e le opzioni visualizzate toccando il logo o il testo di Adobe Experience Manager.
+* **Salva:** Toccate/fate clic su questa opzione per salvare le impostazioni.
+
+## Intervenire su un elemento {#taking-action-on-an-item}
+
+1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
 
    ![wf-84](assets/wf-84.png)
 
    Le azioni dipendono dall’elemento selezionato e includono:
 
-   * **Completa** l’azione; ad esempio, un’attività o un elemento di un flusso di lavoro.
+   * **Completa** l’azione; ad esempio, un&#39;attività o un elemento di un flusso di lavoro.
    * **Riassegna**/**Delega** un elemento.
    * **Apri** un elemento; a seconda del tipo di elemento, questa azione può:
 
@@ -146,8 +166,8 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
       * aprire un dashboard o una procedura guidata per ulteriori azioni
       * aprire la documentazione correlata
    * **Indietro** per tornare a un passaggio precedente.
-   * Visualizzare il payload di un flusso di lavoro.
-   * Creare un progetto dall&#39;elemento.
+   * Visualizzazione del payload di un flusso di lavoro.
+   * Creazione di un progetto dall’elemento.
    >[!NOTE]
    >
    >Per ulteriori informazioni, consulta:
@@ -197,7 +217,7 @@ Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto {#creating-a-project}
+## Creazione di un progetto   {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/projects.md) basato su tale attività:
 
@@ -205,11 +225,11 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/proje
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >Per creare un progetto, è possibile utilizzare solo le attività create con l’opzione **Crea** della **Casella in entrata**.
    >
    >Gli elementi di lavoro (da un flusso di lavoro) non possono essere utilizzati per creare un progetto.
 
-1. Seleziona **Crea progetto** nella barra degli strumenti per aprire la procedura guidata.
+1. Dalla barra degli strumenti, seleziona **Crea progetto** per aprire la procedura guidata.
 1. Seleziona il modello appropriato, quindi **Avanti**.
 1. Specifica le proprietà richieste:
 
@@ -229,9 +249,9 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/proje
 
 1. Seleziona **Crea** per confermare l’azione.
 
-## Filtrare gli elementi nella casella in entrata di AEM {#filtering-items-in-the-aem-inbox}
+## Filtrare gli elementi nella Casella in entrata AEM {#filtering-items-in-the-aem-inbox}
 
-Potete filtrare gli elementi elencati:
+Puoi filtrare gli elementi elencati:
 
 1. Apri la **Casella in entrata AEM**.
 
@@ -245,5 +265,5 @@ Potete filtrare gli elementi elencati:
 
    >[!NOTE]
    >
-   >Con [Visualizza impostazioni](#inbox-view-settings) è anche possibile configurare l’ordinamento quando si usa la [Vista a elenco](#inbox-list-view).
+   >Con [Impostazioni vista](#inbox-view-settings) è anche possibile configurare l’ordinamento quando si utilizza la [Vista a elenco](#inbox-list-view).
 
