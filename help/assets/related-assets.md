@@ -3,16 +3,19 @@ title: Risorse correlate
 description: Scoprite come collegare risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
 
 ---
 
 
 # Risorse correlate {#related-assets}
 
-Risorse Adobe Experience Manager (AEM) consente di collegare manualmente le risorse in base alle esigenze dell’organizzazione mediante la funzione delle risorse correlate. Ad esempio, potete collegare un file di licenza a una risorsa o un&#39;immagine/video su un argomento simile. Potete correlare le risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
+Risorse Adobe Experience Manager (AEM) consente di correlare manualmente le risorse in base alle esigenze dell’organizzazione mediante la funzione delle risorse correlate. Ad esempio, potete collegare un file di licenza a una risorsa o un&#39;immagine/video su un argomento simile. Potete correlare le risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
 
 Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzione con fornitori o agenzie e rendere il file INDD ad alta risoluzione disponibile solo su richiesta.
+
+>[!NOTE] Gli utenti con autorizzazioni di modifica possono correlare e non correlare le risorse.
+>
 
 ## Relate assets {#relating-assets}
 
@@ -89,6 +92,6 @@ Se il file sorgente è correlato a un’altra risorsa, Risorse AEM recupera la r
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Selezionate la risorsa correlata all’origine, quindi toccate o fate clic su **[!UICONTROL Mostra in risorse]**. Viene visualizzata la risorsa correlata convertita.
+1. Selezionate la risorsa correlata all’origine, quindi toccate o fate clic su **[!UICONTROL Rivela in risorse]**. Viene visualizzata la risorsa correlata convertita.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
