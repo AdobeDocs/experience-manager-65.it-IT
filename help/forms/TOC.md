@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 translation-type: tm+mt
-source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
+source-git-commit: 42a08dca17df382b875c5326a64b5584028741d8
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Note sulla versione](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
    + [Riepilogo delle nuove funzioni](using/whats-new.md)
    + [Funzioni obsolete](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
-+ Introduzione {#getting-started}
++ Guida introduttiva {#getting-started}
    + [Introduzione ad AEM Forms](using/introduction-aem-forms.md)
    + [Introduzione alla creazione di moduli adattivi](using/introduction-forms-authoring.md)
    + [Introduzione alle comunicazioni interattive](using/interactive-communications-overview.md)
@@ -25,7 +25,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + Esercitazione: Creare il primo modulo adattivo {#create-first-adaptive-form}
       + [Esercitazione: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
       + [Esercitazione: Creare un modulo adattivo](using/create-adaptive-form.md)
-      + [Esercitazione:Crea modello dati modulo](using/create-form-data-model.md)
+      + [Esercitazione: Crea modello dati modulo](using/create-form-data-model.md)
       + [Esercitazione: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
       + [Esercitazione: Stile del modulo adattivo](using/style-your-adaptive-form.md)
       + [Esercitazione: Pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
@@ -33,11 +33,11 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
       + [Esercitazione: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
-      + [Esercitazione:Crea modello dati modulo](using/create-form-data-model0.md)
+      + [Esercitazione: Crea modello dati modulo](using/create-form-data-model0.md)
       + [Esercitazione: Creazione di frammenti di documento](using/create-document-fragments.md)
       + [Esercitazione: Creare i modelli](using/create-templates-print-web.md)
       + [Esercitazione: Creazione di comunicazioni interattive](using/create-interactive-communication0.md)
-   + Materiali di riferimento moduli AEM {#aem-forms-reference-collaterals}
+   + Materiali di riferimento per i moduli AEM {#aem-forms-reference-collaterals}
       + [Configurare e configurare siti di riferimento self-service per We.Finance e Dipendenti](using/setup-reference-sites.md)
       + [Configurare e configurare il sito di riferimento We.Gov](/help/forms/using/forms-install-configure-gov-reference-site.md)
       + [Procedura dettagliata sul sito di riferimento We.Finance](using/finance-reference-site-walkthrough.md)
@@ -62,7 +62,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Installare e configurare il servizio di conversione dei moduli automatizzati](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [Piattaforme supportate per i moduli AEM su JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Installazione e implementazione di AEM Forms su JEE tramite chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+      + [Installazione e implementazione di AEM Forms su JEE tramite chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [Installazione e configurazione di AEM Forms Document Security Server](using/installing-and-configuring-the-document-security-server.md)
       + [Preparazione all&#39;installazione del server singolo di AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
       + [Installare e distribuire AEM Forms su JEE per JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
@@ -76,7 +76,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Ottimizzazione delle prestazioni del server AEM Forms](using/performance-tuning-aem-forms.md)
       + [Configurare la cache dei moduli adattivi](using/configure-adaptive-forms-cache.md)
       + [Configurazione delle impostazioni di AEM DS](using/configuring-the-processing-server-url-.md)
-      + [Configurazione del pianificatore di sincronizzazione](using/configure-synchronization-scheduler.md)
+      + [Configurazione dell&#39;utilità di pianificazione della sincronizzazione](using/configure-synchronization-scheduler.md)
       + [Configurazione del connettore per Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Connessione di AEM Forms con Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Configurazione di AEM Forms per l&#39;invio dei dati del modulo a un processo AEM Forms su JEE](using/submit-form-data-livecycle-process.md)
@@ -161,7 +161,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Creare un modulo adattivo utilizzando un set di moduli adattivi](using/create-adaptive-form-using-adaptive-form-set.md)
    + [Modelli di moduli adattivi](using/template-editor.md)
    + [Espressioni modulo adattivo](using/adaptive-form-expressions.md)
-   + [Genera documento record per i moduli adattivi](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+   + [Genera documento di registrazione per i moduli adattivi](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
    + [Miglioramento delle prestazioni dei moduli di grandi dimensioni con caricamento lento](using/lazy-loading-adaptive-forms.md)
    + [Precompila campi modulo adattivo](using/prepopulate-adaptive-form-fields.md)
    + [Utilizzo di espressioni SOM nei moduli adattivi](using/using-som-expressions-adaptive-forms.md)
@@ -210,7 +210,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Nuovo servizio di rendering e invio](using/new-render-submit-service.md)
    + [Informazioni sulla struttura delle cartelle](using/folder-structure.md)
    + [Integrazione di applicazioni di terze parti nell&#39;area di lavoro di AEM Forms](using/integrating-correspondence-management-html-workspace.md)
-   + [Descrizione oggetto JSON dell&#39;area di lavoro AEM Forms](using/html-workspace-json-object-description.md)
+   + [Descrizione dell&#39;oggetto JSON dell&#39;area di lavoro AEM Forms](using/html-workspace-json-object-description.md)
    + [Introduzione alla personalizzazione dell&#39;area di lavoro dei moduli AEM](using/introduction-customizing-html-workspace.md)
    + [Passaggi generici per la personalizzazione dell&#39;area di lavoro di AEM Forms](using/generic-steps-html-workspace-customization.md)
    + [Modifica delle impostazioni internazionali dell&#39;interfaccia utente dell&#39;area di lavoro AEM Forms](using/changing-locale-user-interface.md)
@@ -219,7 +219,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Personalizzazione delle schede per un&#39;attività](using/customizing-tabs-task.md)
    + [Personalizzazione della pagina dei dettagli dell’attività](using/customizing-task-details-page.md)
    + [Personalizzazione dell&#39;elenco delle istanze del processo](using/customizing-listing-process-instances.md)
-   + [Personalizzazione delle azioni](using/customizing-task-actions.md)
+   + [Personalizzazione delle azioni attività](using/customizing-task-actions.md)
    + [Visualizzazione di dati aggiuntivi nell&#39;elenco Attività](using/display-additional-data-in-todo-list.md)
    + [Ottenimento delle variabili attività nell&#39;URL di riepilogo](using/getting-task-variables-summary-url.md)
    + [Personalizzare le immagini utilizzate nelle azioni di route](using/images-route-actions.md)
@@ -302,6 +302,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Panoramica sulla gestione della corrispondenza](using/cm-overview.md)
    + [Progettazione layout](using/layout-design-details.md)
    + [Dizionario dati](using/data-dictionary.md)
+   + [Frammenti del documento](using/document-fragments.md)
    + [Crea lettera](using/create-letter.md)
    + [Crea corrispondenza](using/create-correspondence.md)
    + [Funzioni remote in Generatore di espressioni](using/expression-builder.md)
@@ -312,13 +313,13 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Aggiunta di proprietà personalizzate alle risorse Gestione corrispondenza](using/add-custom-properties-cm-assets.md)
    + [Personalizzare l’interfaccia utente per la corrispondenza](using/customize-create-correspondence-ui.md)
    + [Personalizza editor di testo](using/customize-text-editor.md)
-   + [Gestione corrispondenza:Risoluzione dei problemi](using/cm-troubleshooting.md)
+   + [Gestione corrispondenza: Risoluzione dei problemi](using/cm-troubleshooting.md)
    + [API per accedere alle istanze della lettera](using/cm-apis-to-access-letter-instances.md)
    + [Integrazione dell&#39;interfaccia utente Crea corrispondenza con il portale personalizzato](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Caratteri speciali personalizzati in Gestione corrispondenza](using/custom-special-characters.md)
    + [Filigrana personalizzata nell&#39;anteprima PDF della lettera](using/custom-watermark.md)
    + [Configurazione di una soluzione di gestione della corrispondenza](using/configuring-a-cm-solution.md)
-   + [Condizione in linea e ripetizione in comunicazioni interattive e lettere](using/cm-inline-condition.md)
+   + [Condizione in linea e ripetizione in Comunicazioni interattive e lettere](using/cm-inline-condition.md)
    + [Frammenti del documento](using/lists.md)
    + [Proprietà di configurazione della gestione della corrispondenza](using/cm-configuration-properties.md)
 + Integrare AEM Forms con le soluzioni Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
@@ -334,7 +335,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Gestione di applicazioni e attività per moduli in AEM Inbox](using/manage-applications-inbox.md)
    + [Cartella esaminata in AEM Forms](using/watched-folder-in-aem-forms.md)
    + [Componenti Bozze e invii](using/draft-submission-component.md)
-   + [Incorporazione del componente collegamento in una pagina](using/embedding-link-component-page.md)
+   + [Incorporazione di un componente collegamento in una pagina](using/embedding-link-component-page.md)
    + [Pubblicazione e annullamento della pubblicazione di moduli e documenti](using/publishing-unpublishing-forms.md)
    + [Inserimento di moduli in una pagina Web tramite API](using/listing-forms-webpage-using-apis.md)
    + [Accesso e compilazione dei moduli pubblicati](using/accessing-filling-published-forms.md)
@@ -451,7 +452,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Tipi di certificato utilizzati dalle estensioni Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Riconoscimento di certificati validi e scaduti nei documenti PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configurazione delle estensioni Acrobat Reader DC per l’acquisizione dei dati](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-      + [Verifica informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
+      + [Rivedere le informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
       + [Configurazione delle credenziali per l’uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
       + [Verificare i diritti di utilizzo di un file PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Abilitazione dei commenti online per il plug-in del browser Web di Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
@@ -523,7 +524,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Gestione delle categorie visualizzate in Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
    + Monitoraggio stato {#health-monitor}
       + [Panoramica di Health Monitor](/help/forms/using/admin-help/overview-11.md)
-      + [Ottimizzazione delle prestazioni del monitor](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
+      + [Ottimizzazione delle prestazioni del monitor di stato](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
       + [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md)
       + [Visualizzazione delle informazioni sul sistema](/help/forms/using/admin-help/view-system-information.md)
       + [Eliminare i record dal database di Gestione processi](/help/forms/using/admin-help/purge-records-job-manager-database.md)
@@ -564,7 +565,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Introduzione a Process Reporting](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Guida introduttiva a Process Reporting](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Come funziona Reporting dei processi](/help/forms/using/process-reporting/process-reporting-architecture.md)
-   + [Report predefiniti in Process Reporting](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)
+   + [Rapporti predefiniti in Process Reporting](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)
    + [Report personalizzati in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md)
    + [Query ad hoc in Process Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Risoluzione dei problemi relativi ai processi di reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
@@ -613,9 +614,9 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
          + [XMP Utilities Service Java APIQuick Start(SOAP)](developing/xmp-utilities-service-java-api.md)
       + Richiamo di moduli AEM su JEE tramite API {#invoking-aem-forms-jee-apis}
          + [Richiamo di moduli AEM tramite richieste REST](developing/invoking-aem-forms-using-rest.md)
-         + [Attivazione di moduli AEM tramite i servizi Web](developing/invoking-aem-forms-using-web.md)
+         + [Richiamo di moduli AEM tramite i servizi Web](developing/invoking-aem-forms-using-web.md)
          + [Richiamo di moduli AEM tramite REMOTO](developing/invoking-aem-forms-using-remoting.md)
-         + [Attivazione di moduli AEM tramite i servizi Web](developing/invoking-human-centric-long-lived.md)
+         + [Richiamo di moduli AEM tramite i servizi Web](developing/invoking-human-centric-long-lived.md)
          + [Richiamo di moduli AEM tramite JavaAPI](developing/invoking-aem-forms-using-java.md)
          + [Creazione di applicazioni Flash Builder che eseguono l&#39;autenticazione SSO tramite token HTTP](developing/creating-flash-builder-applications-perform.md)
       + Esecuzione di operazioni di servizio tramite API {#performing-service-operations-using-apis}
