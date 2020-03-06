@@ -12,14 +12,14 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
 
 # Upgrading to AEM 6.5 {#upgrading-to-aem}
 
-In questa sezione viene descritto l’aggiornamento di un’installazione AEM a AEM 6.5:
+In questa sezione viene descritto l’aggiornamento di un’installazione di AEM a AEM 6.5:
 
 * [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)
 * [Valutazione della complessità dell&#39;aggiornamento con il rilevamento dei pattern](/help/sites-deploying/pattern-detector.md)
@@ -31,7 +31,7 @@ In questa sezione viene descritto l’aggiornamento di un’installazione AEM a 
 * [Post Upgrade Checks e risoluzione dei problemi](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md)
 * [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
-* [Ristrutturazione repository in AEM 6.5](/help/sites-deploying/repository-restructuring-in-aem65.md)
+* [Ristrutturazione repository in AEM 6.5](/help/sites-deploying/repository-restructuring.md)
 
 Per fare un riferimento più semplice alle istanze AEM coinvolte in queste procedure, in questi articoli vengono usati i termini seguenti:
 
@@ -75,11 +75,11 @@ Per ulteriori dettagli sulle modifiche apportate alle versioni recenti di AEM, c
 
 ## Panoramica sull&#39;aggiornamento {#upgrade-overview}
 
-L’aggiornamento di AEM è un processo a più fasi, a volte a più mesi. La struttura seguente è stata fornita come panoramica di ciò che è incluso in un progetto di aggiornamento e del contenuto incluso in questa documentazione:
+L’aggiornamento di AEM è un processo a più fasi, a volte a più mesi. La struttura seguente è stata fornita come panoramica di ciò che è incluso in un progetto di aggiornamento e del contenuto che è stato incluso in questa documentazione:
 
 ![screen_shot_2018-03-30at80708am](assets/screen_shot_2018-03-30at80708am.png)
 
-## Flusso aggiornamento {#upgrade-overview-1}
+## Flusso di aggiornamento {#upgrade-overview-1}
 
 Il diagramma seguente cattura il flusso complessivo raccomandato evidenziando l&#39;approccio di aggiornamento. Prendete nota del riferimento alle nuove funzioni introdotte. L’aggiornamento dovrebbe iniziare con il rilevamento dei pattern (consultate [Valutare la complessità dell’aggiornamento con il rilevamento](/help/sites-deploying/pattern-detector.md)dei pattern), che dovrebbe consentirvi di scegliere il percorso da seguire per compatibilità con AEM 6.4 in base ai pattern presenti nel rapporto generato.
 
