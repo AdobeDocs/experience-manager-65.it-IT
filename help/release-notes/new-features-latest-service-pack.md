@@ -4,14 +4,14 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d867ee46ca9cd5945c7413d42fc002b90332c3c
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
 
 # Novità in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Nel 2020, per Adobe Experience Manager (AEM) 6.5, i Service Pack trimestrali contengono nuove funzioni e miglioramenti. I clienti traggono vantaggio da questo nuovo approccio per adottare le innovazioni più rapidamente.
+Nel 2020, Adobe Experience Manager (AEM) 6.5 offre funzioni e miglioramenti continui nei Service Pack trimestrali. I clienti traggono vantaggio da questo nuovo approccio per adottare le innovazioni più rapidamente.
 
 L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020**. In questo articolo vengono evidenziate le funzioni offerte dall’ultimo Service Pack per rendere il vostro viaggio AEM più ricco.
 
@@ -19,15 +19,16 @@ L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020
 
 ### Miglioramenti delle prestazioni in varie aree {#performance-improvements}
 
-* Ridurre il tempo necessario per caricare e inizializzare ContextHub in un sito (contexthub.kernel.js). Consente di caricare più rapidamente la prima pagina durante una visita del sito.
+* È stato ridotto il tempo necessario per caricare e inizializzare ContextHub in un sito (contexthub.kernel.js). Questo consente di caricare una pagina più rapidamente durante una visita del sito.
 
-* Nell’Editor pagina, riduci il tempo di aggiornamento della pagina dopo aver trascinato e rilasciato frammenti esperienza nell’area di lavoro della pagina.
+* È stato ridotto il tempo necessario per aggiornare una pagina dopo aver trascinato e rilasciato frammenti esperienza nell’area di lavoro di un editor di pagina.
 
-* In Panoramica di Live Copy, riducete il tempo necessario per caricare le voci se il sito contiene molte copie in tempo reale (+200).
+* In Panoramica di Live Copy, è stato ridotto il tempo necessario per caricare le voci se il sito contiene più di 200 copie dal vivo.
 
-* Nell’Editor modelli, è possibile migliorare la gestione degli URL incompleti/non validi che potrebbero rallentare l’Editor modelli.
+* Nell&#39;Editor modelli è stata migliorata la gestione di URL incompleti o non validi che possono rallentare l&#39;Editor modelli.
 
-Inoltre, a partire da AEM 6.5 SP4, il sistema di stile è stato migliorato e ora è possibile selezionare gli stili anche all&#39;interno di una finestra di dialogo dei componenti.
+Inoltre, AEM 6.5 SP4 include miglioramenti a Style System. È ora possibile selezionare gli stili anche all&#39;interno di una finestra di dialogo del componente.
+
 
 ## AEM Assets {#aem-assets}
 
