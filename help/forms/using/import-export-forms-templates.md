@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms, la struttura e i percorsi dell’archivio crx sono cambiati. Se si importano risorse da una versione precedente a AEM 6.4 Forms e il modulo ha alcune dipendenze dalla struttura precedente, è necessario esportare manualmente le dipendenze. Per informazioni dettagliate sulle modifiche nella struttura e nei percorsi dell&#39;archivio, consultate Ristrutturazione dell&#39; [archivio in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+>* In AEM 6.4 Forms, la struttura e i percorsi dell’archivio crx sono cambiati. Se si importano risorse da una versione precedente a AEM 6.4 Forms e il modulo ha alcune dipendenze dalla struttura precedente, è necessario esportare manualmente le dipendenze. Per informazioni dettagliate sulle modifiche nella struttura e nei percorsi del repository, consultate Ristrutturazione [repository in AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 
@@ -39,14 +39,14 @@ Per questi tipi di risorse, è necessario utilizzare AEM Package Manager per cre
 Per scaricare le risorse Moduli e Documenti:
 
 1. Effettuate l&#39;accesso all&#39;istanza AEM Forms.
-1. Toccate l&#39;icona ![adobeexperience](assets/adobeexperiencemanager.png) emanager > icona di navigazione ![bussola](assets/compass.png) > Moduli > Moduli e documenti.
+1. Toccate l&#39;icona ![adobeexperience](assets/adobeexperiencemanager.png) emanager > icona di navigazione della ![bussola](assets/compass.png) > Moduli > Moduli e documenti.
 1. Selezionare le risorse dei moduli e toccare l&#39;icona **Scarica** .
 1. In Scarica risorse, scegliete una delle seguenti opzioni e toccate **Scarica**.
 
-   * **** Scarica come pacchetto CRX: Utilizzate l&#39;opzione per scaricare e spostare tutte le risorse selezionate e le dipendenze correlate da un&#39;istanza di AEM Forms a un&#39;altra. Consente di scaricare tutte le risorse e le cartelle come pacchetto crx. È possibile scaricare come pacchetto dall&#39;interfaccia utente di AEM Forms tutte le risorse dei moduli, compresi i moduli creati in AEM (moduli adattivi, comunicazioni interattive e frammenti di modulo adattivi), i set di moduli, i modelli di moduli, i documenti PDF e le risorse (XSD, XFS, immagini).
-Il vantaggio di scaricare come pacchetto le risorse è che vengono anche scaricate dalle risorse selezionate per il download. Ad esempio, se si dispone di un modulo adattivo che utilizza un modello di modulo, XSD e un&#39;immagine. Quando selezionate questo modulo adattivo e lo scaricate come pacchetto, il pacchetto scaricato contiene anche il modello di modulo, XSD e l&#39;immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
+   * **Scarica come pacchetto CRX:** Utilizzate l&#39;opzione per scaricare e spostare tutte le risorse selezionate e le dipendenze correlate da un&#39;istanza di AEM Forms a un&#39;altra. Consente di scaricare tutte le risorse e le cartelle come pacchetto crx. È possibile scaricare come pacchetto dall&#39;interfaccia utente di AEM Forms tutte le risorse dei moduli, compresi i moduli creati in AEM (moduli adattivi, comunicazioni interattive e frammenti di modulo adattivi), i set di moduli, i modelli di moduli, i documenti PDF e le risorse (XSD, XFS, immagini).
+Il vantaggio di scaricare come pacchetto le risorse è che vengono scaricate anche quelle usate dalla risorsa selezionata per il download. Ad esempio, se si dispone di un modulo adattivo che utilizza un modello di modulo, XSD e un&#39;immagine. Quando selezionate questo modulo adattivo e lo scaricate come pacchetto, il pacchetto scaricato contiene anche il modello di modulo, XSD e l&#39;immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
 
-   * **** Scarica le risorse come file binari: Utilizzare l&#39;opzione per scaricare solo i modelli di modulo (XDP), i moduli PDF (PDF), il documento (PDF) e le risorse (immagini, schemi, fogli di stile). Potete modificare queste risorse con applicazioni esterne. Consente di scaricare come file .zip le risorse dei moduli che contengono file binari, come XSD, XDP, immagini, PDF e XDP.
+   * **Scarica le risorse come file binari:** Utilizzare l&#39;opzione per scaricare solo i modelli di modulo (XDP), i moduli PDF (PDF), il documento (PDF) e le risorse (immagini, schemi, fogli di stile). Potete modificare queste risorse con applicazioni esterne. Consente di scaricare come file .zip le risorse dei moduli che contengono file binari, come XSD, XDP, immagini, PDF e XDP.
 Non è possibile scaricare moduli adattivi, comunicazioni interattive, frammenti di modulo adattivi, temi e set di moduli con l&#39;opzione **Scarica risorse come file** binari. Per scaricare queste risorse, usate l’opzione **Scarica come pacchetto** CRX.
    Le risorse selezionate vengono scaricate come archivio (file .zip).
 
@@ -102,7 +102,7 @@ Il tema caricato è disponibile nella pagina dei temi.
 1. Toccate l&#39;icona ![adobeexperience](assets/adobeexperiencemanager.png) emanager > icona di navigazione della ![bussola](assets/compass.png) > Moduli > Temi.
 1. fate clic su **Crea** > Caricamento **** file. Nel prompt Caricamento file, individuate e selezionate un pacchetto di temi sul computer e fate clic su **Carica**. Il tema viene caricato.
 
-## Importazione ed esportazione di risorse in Gestione corrispondenza {#import-and-export-assets-in-correspondence-management}
+## Importare ed esportare le risorse in Gestione corrispondenza {#import-and-export-assets-in-correspondence-management}
 
 Per condividere risorse, come dizionari di dati, lettere e frammenti di documento, tra due diverse implementazioni di Gestione corrispondenza, potete creare e condividere file .cmp. Un file .cmp può includere uno o più dizionari di dati, lettere, frammenti di documento e moduli.
 
@@ -127,7 +127,7 @@ Utilizzate questa opzione per scaricare tutte le risorse Gestione corrispondenza
 
 Ad esempio, se Gestione corrispondenza ha una lettera che utilizza un&#39;immagine e un testo, il pacchetto scaricato contiene anche l&#39;immagine e il testo relativi alla lettera. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa. Dopo aver scaricato il pacchetto (.cmp), potete [importare il pacchetto in un’altra istanza](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)di AEM Forms.
 
-Per scaricare come pacchetto tutte le risorse Gestione corrispondenza e le relative dipendenze, effettua i seguenti passaggi:
+Per scaricare come pacchetto tutte le risorse Gestione corrispondenza e le dipendenze correlate, effettua i seguenti passaggi:
 
 1. Accedete al server AEM Forms come utente dei moduli.
 1. Toccate **Adobe Experience Manager** nella barra di navigazione globale.
@@ -175,7 +175,7 @@ Potete importare le risorse esportate in un file .cmp. Un file .cmp può contene
 
 Potete utilizzare AEM Package Manager per esportare le applicazioni dei flussi di lavoro. La procedura è la seguente:
 
-1. Apri Gestione pacchetti di AEM Forms. L&#39;URL del gestore pacchetti è https://&lt;server>:&lt;porta>/crx/packmgr.
+1. Aprite il gestore pacchetti di AEM Forms. L&#39;URL del gestore pacchetti è https://&lt;server>:&lt;porta>/crx/packmgr.
 1. Fate clic su **[!UICONTROL Crea pacchetto]**. The **[!UICONTROL New Package]** dialog box appears.
 1. Specificate nome, versione e gruppo per il pacchetto. Fai clic su **[!UICONTROL OK]**. 
 1. Fate clic su **[!UICONTROL Modifica]** e aprite la scheda **[!UICONTROL Filtri]** . Fate clic su **[!UICONTROL Aggiungi filtro]**. Specificate il percorso dell’applicazione del flusso di lavoro. Ad esempio, /etc/fd/dashboard/startpoints/homemortgage. Fate clic su **[!UICONTROL Aggiungi regola]**.
@@ -191,7 +191,7 @@ Potete utilizzare AEM Package Manager per esportare le applicazioni dei flussi d
 
 ## Cartelle e organizzazione delle risorse {#folders-and-organizing-assets}
 
-L’interfaccia utente di AEM Forms utilizza le cartelle per disporre le risorse. Queste cartelle vengono utilizzate per disporre le risorse create all&#39;interno dell&#39;interfaccia utente di AEM Forms. Potete rinominare, creare sottocartelle e archiviare risorse e documenti in queste cartelle. Organizzando documenti e risorse in una cartella potete raggruppare i file per facilitarne la gestione. Potete selezionare una cartella e scegliere se scaricarla o eliminarla.
+L’interfaccia utente di AEM Forms utilizza le cartelle per disporre le risorse. Queste cartelle vengono utilizzate per disporre le risorse create all&#39;interno dell&#39;interfaccia utente di AEM Forms. Potete rinominare, creare sottocartelle e archiviare risorse e documenti in queste cartelle. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per facilitarne la gestione. Potete selezionare una cartella e scegliere se scaricarla o eliminarla.
 
 Per creare una cartella, effettuate le seguenti operazioni:
 
@@ -202,8 +202,8 @@ Per creare una cartella, effettuate le seguenti operazioni:
 1. Toccate Crea > Cartella.
 1. Inserite i seguenti dettagli:
 
-   * **** Titolo: Nome visualizzato per la cartella
-   * **** Nome: *(Obbligatorio)* Nome del nodo in cui si desidera memorizzare la cartella nell&#39;archivio
+   * **Titolo:** Nome visualizzato per la cartella
+   * **Nome:** *(Obbligatorio)* Nome del nodo in cui si desidera memorizzare la cartella nell&#39;archivio
    >[!NOTE]
    >
    >Per impostazione predefinita, il valore del campo nome viene compilato automaticamente dal titolo. Il nome può contenere solo caratteri alfanumerici, oppure caratteri speciali trattino (-) e carattere di sottolineatura (_). Eventuali altri caratteri speciali immessi nel titolo vengono sostituiti automaticamente con un trattino e viene richiesto di confermare il nuovo nome. Potete scegliere di continuare con il nome suggerito o di modificarlo ulteriormente.
@@ -220,10 +220,10 @@ Per creare una cartella, effettuate le seguenti operazioni:
 
 Potete usare risorse e lettere esistenti per creare rapidamente risorse e lettere con proprietà, contenuto e risorse ereditate simili. È possibile copiare e incollare dizionari di dati, frammenti di documento e lettere.
 
-Per creare copie di risorse e lettere, effettuate le seguenti operazioni:
+Per creare copie delle risorse e delle lettere, effettuate le seguenti operazioni:
 
 1. Nella pagina Risorse o Lettere, seleziona una o più risorse/lettere. L’interfaccia utente presenta l’icona Copia.
-1. Toccate Copia. Nell’interfaccia utente viene visualizzata l’icona Incolla. Potete anche scegliere di andare o navigare all’interno di una cartella prima di incollare. Cartelle diverse possono contenere risorse con gli stessi nomi. Per ulteriori informazioni sulle cartelle, consultate [Cartelle e organizzazione delle risorse](#folders-and-organizing-assets).
+1. Tocca Copia. Nell’interfaccia utente viene visualizzata l’icona Incolla. Potete anche scegliere di passare o navigare all’interno di una cartella prima di incollare. Cartelle diverse possono contenere risorse con gli stessi nomi. Per ulteriori informazioni sulle cartelle, consultate [Cartelle e organizzazione delle risorse](#folders-and-organizing-assets).
 1. Toccate Incolla. Viene visualizzata la finestra di dialogo Incolla. Il sistema genera automaticamente nomi e titoli alle nuove copie di risorse/lettere, ma è possibile modificare titoli e nomi delle risorse/lettere.
 
    Se copiate e incollate le risorse/lettere nello stesso punto, al nome esistente della risorsa/lettera viene aggiunto il suffisso &quot;-CopyXX&quot;. Se non esiste alcun titolo per la risorsa o la lettera copiata, il campo del titolo generato automaticamente rimane vuoto.
@@ -239,7 +239,7 @@ Quando si ricercano risorse, in AEM Forms viene visualizzato il pannello lateral
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Ricerca** B. Filtro
+**A.** Ricerca **B.** Filtro
 
 ![Pannello laterale - Filtri](assets/search_sidepanel.png)
 
