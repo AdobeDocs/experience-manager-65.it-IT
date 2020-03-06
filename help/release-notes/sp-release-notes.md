@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 | Versione | 6.5.4.0 |
 | Tipo | Versione Service Pack |
 | Data | 05 marzo 2020 |
-| URL di download | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| URL di download | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), distribuzione [software (Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Contenuto in Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -128,8 +128,6 @@ Per un elenco completo delle funzioni, degli elementi di rilievo e delle funzion
 
 * Quando si sposta il contenuto all&#39;interno della stessa cartella, l&#39;opzione di spostamento della pagina è disabilitata (NPR-31840).
 
-* Quando si accede agli URL che terminano con /_jcr_content/.html o /jcr:content/.html, i picchi della CPU e AEM non rispondono più (NPR-31837).
-
 * In modalità struttura modelli modificabili, l&#39;elenco dei componenti consentiti nel contenitore di layout presenta risultati non corretti. Nel contenitore di layout (NPR-31816) vengono visualizzati solo i componenti con finestra di dialogo di progettazione.
 
 * Quando una pagina dispone di autorizzazioni di sola lettura per un utente, l&#39;opzione Apri proprietà è visibile in sites.html ma non in editor.html (NPR-31770).
@@ -179,8 +177,6 @@ Per un elenco completo delle funzioni, degli elementi di rilievo e delle funzion
 ### Editor modelli WCM {#wcm-template-editor-6540}
 
 * In modalità struttura modelli modificabili, l&#39;elenco dei componenti consentiti nel contenitore di layout non visualizza il componente pulsante di collegamento (CQ-4282099).
-
-* I picchi della CPU e Experience Manager diventano inattivi quando gli URL che terminano con `/_jcr_content/.html` o `/jcr:content/.html` sono accessibili (CQ-4280770).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
