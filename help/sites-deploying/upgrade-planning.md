@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -30,7 +30,7 @@ Il processo di aggiornamento di AEM richiede una gestione accurata delle fasi di
 
 >[!CAUTION]
 >
->Se si esegue l’aggiornamento da AEM 6.2 a 6.3, è necessario effettuare l’aggiornamento dalle versioni (**6.2-SP1-CFP1 - -6.2SP1-CFP12.1**) o **6.2SP1-CFP15** in avanti. In caso contrario, se effettui l’aggiornamento da **6.2SP1-CFP13/6.2SP1CFP14** ad AEM 6.3, devi anche eseguire l’aggiornamento ad almeno la versione **6.3.2.2**. In caso contrario, AEM Sites fallisce dopo l&#39;aggiornamento.
+>Se state effettuando l’aggiornamento da AEM 6.2 a 6.3, è necessario effettuare l’aggiornamento dalle versioni (**6.2-SP1-CFP1 - -6.2SP1-CFP12.1**) o **6.2SP1-CFP15** in avanti. In caso contrario, se effettui l’aggiornamento da **6.2SP1-CFP13/6.2SP1CFP14** ad AEM 6.3, devi anche eseguire l’aggiornamento ad almeno la versione **6.3.2.2**. In caso contrario, AEM Sites fallisce dopo l&#39;aggiornamento.
 
 ## Ambito e requisiti dell&#39;aggiornamento {#upgrade-scope-requirements}
 
@@ -56,7 +56,7 @@ Di seguito viene riportato un elenco delle aree interessate da un tipico progett
   <tr>
    <td>Hardware</td>
    <td>Impatto moderato</td>
-   <td>La pulizia online delle revisioni richiede spazio libero<br /> su disco pari al 25% delle dimensioni dell'archivio e al 15% dello spazio<br /> heap gratuito per il completamento. Potrebbe essere necessario aggiornare l'hardware per<br /> garantire risorse sufficienti per l'esecuzione completa<br /> della pulizia delle revisioni online. Inoltre, se si effettua l’aggiornamento da una versione precedente a AEM 6, potrebbero<br /> essere presenti requisiti di storage aggiuntivi.</td>
+   <td>La pulizia online delle revisioni richiede spazio libero<br /> su disco pari al 25% delle dimensioni dell'archivio e al 15% dello spazio<br /> heap gratuito per il completamento. Potrebbe essere necessario aggiornare l'hardware per<br /> garantire risorse sufficienti per l'esecuzione completa<br /> della pulizia delle revisioni online. Inoltre, se si effettua l’aggiornamento da una versione precedente a AEM 6, potrebbero essere presenti<br /> ulteriori requisiti di storage.</td>
   </tr>
   <tr>
    <td>Repository dei contenuti (CRX o Oak)</td>
@@ -102,7 +102,7 @@ Nuove funzioni di AEM 6.5 sono disponibili [nella sezione AEM di adobe.com](/hel
 
 ### Creazione di un piano di test {#creating-a-test-plan}
 
-L’implementazione di AEM da parte di ogni cliente è unica ed è stata personalizzata per soddisfare le proprie esigenze aziendali. Di conseguenza, è importante determinare tutte le personalizzazioni effettuate al sistema in modo che possano essere incluse in un piano di test. Questo piano di test alimenterà il processo di QA che eseguiamo sull&#39;istanza aggiornata.
+L’implementazione di AEM da parte di ogni cliente è unica ed è stata personalizzata per soddisfare le proprie esigenze aziendali. Di conseguenza, è importante determinare tutte le personalizzazioni che sono state effettuate al sistema in modo che possano essere incluse in un piano di test. Questo piano di test alimenterà il processo di QA che eseguiamo sull&#39;istanza aggiornata.
 
 ![piano di prova](assets/test-plan.png)
 
@@ -110,11 +110,11 @@ L&#39;ambiente di produzione deve essere duplicato e il test deve essere eseguit
 
 ### Determinazione dei cambiamenti di architettura e di infrastruttura necessari {#determining-architectural-and-infrastructure-changes-needed}
 
-Durante l&#39;aggiornamento, potrebbe essere necessario aggiornare anche altri componenti nello stack tecnico, come il sistema operativo o JVM. Inoltre, è possibile che a causa delle modifiche nella struttura del repository sia necessario hardware aggiuntivo. In genere questo problema si verifica solo per i clienti che eseguono la migrazione da istanze pre 6.x, ma è importante tenerne conto. Infine, potrebbero essere necessarie modifiche alle procedure operative, inclusi i processi di monitoraggio, manutenzione, backup e disaster recovery.
+Durante l&#39;aggiornamento, è possibile che sia necessario aggiornare anche altri componenti nello stack tecnico, come il sistema operativo o JVM. Inoltre, è possibile che a causa delle modifiche nella struttura del repository sia necessario hardware aggiuntivo. In genere questo problema si verifica solo per i clienti che eseguono la migrazione da istanze precedenti alla 6.x, ma è importante tenerne conto. Infine, potrebbero essere necessarie modifiche alle procedure operative, inclusi i processi di monitoraggio, manutenzione, backup e disaster recovery.
 
 ![doi_ritagliato](assets/doi_cropped.png)
 
-Verifica i requisiti tecnici per AEM 6.5 e assicurati che l’hardware e il software attuali siano sufficienti. Per potenziali modifiche ai processi operativi, consulta i documenti seguenti:
+Verifica i requisiti tecnici per AEM 6.5 e assicurati che l’hardware e il software in uso siano sufficienti. Per le potenziali modifiche ai processi operativi, consulta i documenti seguenti:
 
 **Monitoraggio e manutenzione:**
 
@@ -136,7 +136,7 @@ Verifica i requisiti tecnici per AEM 6.5 e assicurati che l’hardware e il soft
 
 #### Considerazioni sulla ristrutturazione dei contenuti {#content-restructuring-considerations}
 
-AEM ha introdotto modifiche alla struttura del repository per rendere più semplici gli aggiornamenti. Le modifiche comportano lo spostamento del contenuto dalla cartella /etc a cartelle quali /libs, /apps e /content, a seconda che Adobe o un cliente sia proprietario del contenuto, limitando così le possibilità di sovrascrivere il contenuto durante le release. La ristrutturazione dell’archivio è stata realizzata in modo tale da non richiedere modifiche al codice al momento dell’aggiornamento 6.5, anche se si consiglia di esaminare i dettagli in Ristrutturazione [repository in AEM](/help/sites-deploying/repository-restructuring-in-aem65.md) durante la pianificazione di un aggiornamento.
+AEM ha introdotto modifiche alla struttura del repository per rendere più semplici gli aggiornamenti. Le modifiche comportano lo spostamento del contenuto dalla cartella /etc a cartelle quali /libs, /apps e /content, a seconda che Adobe o un cliente sia proprietario del contenuto, limitando così le possibilità di sovrascrivere il contenuto durante le release. La ristrutturazione dell’archivio è stata realizzata in modo tale da non richiedere modifiche al codice al momento dell’aggiornamento 6.5, anche se si consiglia di esaminare i dettagli in Ristrutturazione [repository in AEM](/help/sites-deploying/repository-restructuring.md) durante la pianificazione di un aggiornamento.
 
 ### Valutazione della complessità dell&#39;aggiornamento {#assessing-upgrade-complexity}
 
