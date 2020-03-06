@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di Communities
-seo-title: Distribuzione di Communities
+title: Implementazione di Communities
+seo-title: Implementazione di Communities
 description: Come implementare AEM Communities
 seo-description: Come implementare AEM Communities
 uuid: 18d9b424-004d-43b2-968a-318e27a93759
@@ -11,12 +11,12 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
 
-# Distribuzione di Communities{#deploying-communities}
+# Implementazione di Communities{#deploying-communities}
 
 ## Prerequisiti {#prerequisites}
 
@@ -63,7 +63,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
       * [select DSRP](/help/communities/srp-config.md)
    * se Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
-      * collaborazione con il rappresentante commerciale di riferimento
+      * collaborazione con il rappresentante commerciale di riferimento per il provisioning
       * [seleziona ASRP](/help/communities/srp-config.md)
    * se JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
@@ -74,7 +74,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
       * il valore predefinito è JSRP
    Per la funzione di **[abilitazione](/help/communities/overview.md#enablement-community)**
 
-   * [installare e configurare FFmpeg](/help/communities/ffmpeg.md)
+   * [installazione e configurazione di FFmpeg](/help/communities/ffmpeg.md)
    * [installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
    * [installare AEM Communities SCORM Engine](#scorm-package)
    * [installazione e configurazione di MySQL per l&#39;abilitazione](/help/communities/mysql.md)
@@ -102,7 +102,7 @@ Con AEM 6.4 e versioni successive, le funzioni e gli hotfix di AEM Communities f
 
 Due funzionalità Community utilizzano un database MySQL:
 
-* per [abilitazione](/help/communities/enablement.md) : registrazione delle attività SCORM e degli studenti
+* per l&#39; [abilitazione](/help/communities/enablement.md) : registrazione delle attività SCORM e degli studenti
 * per [DSRP](/help/communities/dsrp.md) : memorizzazione di contenuto generato dall&#39;utente (UGC)
 
 Il connettore MySQL deve essere ottenuto e installato separatamente.
@@ -130,7 +130,7 @@ Le misure necessarie sono:
 
 1. ripetere i passaggi 3 e 4 per tutte le istanze di creazione e pubblicazione
 
-Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella pagina Console [](/help/sites-deploying/configuring-web-console.md#bundles) Web.
+Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella pagina Console [](/help/sites-deploying/web-console.md) Web.
 
 #### Esempio: Bundle del connettore MySQL installato {#example-installed-mysql-connector-bundle}
 
@@ -138,7 +138,7 @@ Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella 
 
 ### Pacchetto SCORM {#scorm-package}
 
-SCORM (Shareable Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere incluso in un pacchetto ZIP trasferibile.
+SCORM (Shareable Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere incluso in un file ZIP trasferibile.
 
 Il motore SCORM di AEM Communities è richiesto per la funzione di [abilitazione](/help/communities/overview.md#enablement-community) . Pacchetti Scorm supportati da AEM 6.5 Communities:
 
@@ -146,7 +146,7 @@ Il motore SCORM di AEM Communities è richiesto per la funzione di [abilitazione
 
 **Per installare un pacchetto SCORM**
 
-1. Installate il pacchetto [cq-social-scorm versione 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) da Package Share.
+1. Installate il pacchetto [cq-social-scorm, versione 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) , da Package Share.
 1. Scaricate `/libs/social/config/scorm/database_scormengine_data.sql` dall&#39;istanza cq ed eseguitela in server mysql per creare uno schema scormEngineDB aggiornato.
 1. Aggiungi `/content/communities/scorm/RecordResults` nella proprietà Percorsi esclusi nel filtro CSRF dagli `https://<hostname>:<port>/system/console/configMgr` editori.
 
@@ -172,7 +172,7 @@ Il download avanzato di MLS (noto anche come &#39;phasetwo&#39;) è disponibile 
 
 Per informazioni dettagliate e sull&#39;installazione, visitare Configurazione [](/help/communities/solr.md) solare per SRP.
 
-### Collegamenti a Package Share {#about-links-to-package-share}
+### Informazioni sui collegamenti a Package Share {#about-links-to-package-share}
 
 **Pacchetti visibili in Adobe AEM Cloud**
 
@@ -187,7 +187,7 @@ Per installare i pacchetti visibili in `adobeaemcloud.com` un’istanza AEM loca
 
 Nell&#39;istanza locale di AEM, utilizza il gestore pacchetti (ad esempio [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) per caricare nell&#39;archivio pacchetti di AEM locale.
 
-In alternativa, accedendo al pacchetto utilizzando la condivisione di pacchetti dall&#39;istanza locale di AEM (ad esempio, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), il `Download`pulsante verrà scaricato nell&#39;archivio pacchetti dell&#39;istanza locale AEM.
+In alternativa, accedendo al pacchetto utilizzando la condivisione di pacchetti dall&#39;istanza locale di AEM (ad esempio, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), il `Download`pulsante viene scaricato nell&#39;archivio pacchetti dell&#39;istanza locale di AEM.
 
 Una volta nell&#39;archivio pacchetti dell&#39;istanza AEM locale, utilizzate il gestore pacchetti per installare il pacchetto.
 
@@ -213,7 +213,7 @@ Oltre ad aggiornare la piattaforma, leggi [Aggiornamento ad AEM Communities 6.5]
 
 ### Editore principale {#primary-publisher}
 
-Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano su **notifications **o **Adobe Analytics**.
+Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano su **notifications **o su **Adobe Analytics**.
 
 Per impostazione predefinita, la configurazione `AEM Communities Publisher Configuration` OSGi è configurata con la **`Primary Publisher`** casella di controllo selezionata, in modo che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino automaticamente come principali.
 
@@ -257,7 +257,7 @@ Nell’ambiente di authoring sono disponibili due agenti di replica che richiedo
       1. select the **Transport** tab
       1. se non la porta `4503`, modificate l&#39; **URI** per specificare la porta corretta
 
-      1. in caso contrario, `admin`modificate **Utente** e **Password** per specificare un membro del gruppo di `administrators` utenti
+      1. in caso contrario, modificate `admin`l’ **utente** e la **password** per specificare un membro del gruppo di `administrators` utenti
 
 Le immagini seguenti mostrano i risultati della modifica della porta da 4503 a 6103 tramite:
 
@@ -306,7 +306,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * il `bundle.info` file identificherà il bundle
-   * ad esempio, passare alla cartella dati,
+   * ad esempio, passare alla cartella di dati,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * copiare i file hmac e master
@@ -315,7 +315,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
 * per ogni istanza AEM di destinazione
 
-   * ad esempio, passare alla cartella dati,
+   * ad esempio, passare alla cartella di dati,
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * incollare i 2 file precedentemente copiati
