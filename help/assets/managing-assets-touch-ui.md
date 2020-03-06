@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f191f90f7a417387930d2d4cf7b9482aabbd6156
+source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
 
 ---
 
@@ -331,6 +331,24 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
    Toccate **[!UICONTROL Ripristina]** per ripristinare le dimensioni originali della visualizzazione.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
+
+**Visualizzare in anteprima le risorse utilizzando solo i tasti di scelta rapida**
+
+Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le seguenti operazioni:
+
+1. Dall’interfaccia utente Risorse, andate alla posizione della risorsa da visualizzare in anteprima, utilizzando `Tab` i tasti freccia e freccia.
+
+1. Aprite la risorsa desiderata.
+
+   Nella modalità di anteprima, le opzioni di zoom e ripristino sono disponibili per i tipi [di immagini](/help/assets/assets-formats.md#supported-raster-image-formats) supportati (con modifica interattiva).
+1. Per ingrandire la risorsa:
+   1. Utilizzate `Tab` il tasto per spostare lo stato attivo sull&#39;icona di zoom in.
+   1. Utilizzate `Enter` il tasto per ingrandire l&#39;immagine.
+   Per ridurre la visualizzazione, usate `Tab` il tasto per spostare la messa a fuoco sull’icona dello zoom out e premete `Enter`.
+
+1. Utilizzare `Shift` + `Tab` per spostare la messa a fuoco sull&#39;immagine.
+
+1. Utilizzate i tasti freccia per spostarsi intorno all&#39;immagine ingrandita.
 
 Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/previewing-assets.md)
 
