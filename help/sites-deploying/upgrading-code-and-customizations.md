@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -37,7 +37,7 @@ Durante la pianificazione e l&#39;aggiornamento, è necessario esaminare e affro
 1. **Implementazione in ambiente** 6.5 - Un&#39;istanza pulita di AEM 6.5 (Autore + Pubblicazione) dovrebbe essere presente in un ambiente Dev/QA. È necessario aggiornare la base di codice e distribuire un campione rappresentativo di contenuto (proveniente dalla produzione corrente).
 1. **Convalida della qualità e correzione** dei bug - QA deve convalidare l&#39;applicazione sia nelle istanze Author che Publish di 6.5. Eventuali bug rilevati devono essere corretti e impegnati nella base di codici 6.5. Ripetere Dev-Cycle secondo necessità fino a risolvere tutti i bug.
 
-Prima di procedere con un aggiornamento, devi disporre di una base di codice applicazione stabile che sia stata completamente testata rispetto alla versione di destinazione di AEM. Sulla base delle osservazioni fatte durante il test, potrebbero esserci modi per ottimizzare il codice personalizzato. Ciò potrebbe includere il refactoring del codice per evitare l&#39;attraversamento del repository, l&#39;indicizzazione personalizzata per ottimizzare la ricerca o l&#39;uso di nodi non ordinati in JCR, tra gli altri.
+Prima di procedere con l’aggiornamento, è necessario disporre di una base di codice applicazione stabile che sia stata completamente testata rispetto alla versione di destinazione di AEM. Sulla base delle osservazioni fatte durante il test, potrebbero esserci modi per ottimizzare il codice personalizzato. Ciò potrebbe includere il refactoring del codice per evitare l&#39;attraversamento del repository, l&#39;indicizzazione personalizzata per ottimizzare la ricerca o l&#39;uso di nodi non ordinati in JCR, tra gli altri.
 
 Oltre all&#39;opzione di aggiornare la base di codice e le personalizzazioni per l&#39;utilizzo con la nuova versione di AEM, la versione 6.5 consente anche di gestire le personalizzazioni in modo più efficiente con la funzione Compatibilità con le versioni precedenti, come descritto in [questa pagina](/help/sites-deploying/backward-compatibility.md).
 
@@ -66,7 +66,7 @@ AEM Uber Jar include tutte le API AEM come singola dipendenza nel progetto Maven
 
 ### Eliminazione graduale dell&#39;utilizzo di Administrative Resource Resolver {#phase-out-use-of-administrative-resource-resolver}
 
-Prima di AEM 6.0, l’utilizzo di una sessione amministrativa `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` era piuttosto diffuso nelle basi di codice. Tali metodi sono stati dichiarati obsoleti per motivi di sicurezza, in quanto forniscono un livello di accesso troppo ampio. [Nelle versioni future di Sling questi metodi verranno rimossi](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Si consiglia vivamente di rigenerare il codice per utilizzare gli utenti del servizio. Per ulteriori informazioni sugli utenti dei servizi e su [come eliminare gradualmente le sessioni amministrative, consultate]/help/sites-administering/security-service-users.md#how to phasing out admin session.
+Prima di AEM 6.0, l’utilizzo di una sessione amministrativa `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` era piuttosto diffuso nelle basi di codice. Tali metodi sono stati dichiarati obsoleti per motivi di sicurezza, in quanto forniscono un livello di accesso troppo ampio. [Nelle versioni future di Sling questi metodi verranno rimossi](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Si consiglia vivamente di rigenerare il codice in modo da utilizzare gli utenti del servizio. Per ulteriori informazioni sugli utenti dei servizi e su [come eliminare gradualmente le sessioni amministrative, consultate]/help/sites-administering/security-service-users.md#how to phasing out admin session.
 
 ### Query e indici Oak {#queries-and-oak-indexes}
 
@@ -82,13 +82,13 @@ Sono disponibili diversi strumenti per l’analisi e l’analisi delle prestazio
 
 ### Classic UI Authoring {#classic-ui-authoring}
 
-L’authoring con l’interfaccia classica è ancora disponibile in AEM 6.5 ma è diventato obsoleto. Ulteriori informazioni sono disponibili [qui](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Se l’applicazione è attualmente in esecuzione nell’ambiente di authoring dell’interfaccia classica, si consiglia di effettuare l’aggiornamento ad AEM 6.5 e continuare a utilizzare l’interfaccia classica. La migrazione all&#39;interfaccia utente touch può essere pianificata come progetto separato da completare in diversi cicli di sviluppo. Per utilizzare l’interfaccia classica in AEM 6.5, sono necessarie diverse configurazioni OSGi per il commit nella base di codice. Per ulteriori dettagli su come configurare questa funzione, consultate [qui](/help/sites-administering/enable-classic-ui.md).
+L’authoring con l’interfaccia classica è ancora disponibile in AEM 6.5 ma è diventato obsoleto. Ulteriori informazioni sono disponibili [qui](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Se l’applicazione è attualmente in esecuzione nell’ambiente di authoring dell’interfaccia classica, si consiglia di effettuare l’aggiornamento ad AEM 6.5 e continuare a utilizzare l’interfaccia classica. La migrazione all&#39;interfaccia utente touch può essere pianificata come progetto separato da completare in diversi cicli di sviluppo. Per utilizzare l’interfaccia classica in AEM 6.5, sono necessarie diverse configurazioni OSGi per il commit nella base di codice. Per ulteriori dettagli su come configurare questa funzione, consulta [qui](/help/sites-administering/enable-classic-ui.md).
 
 ## Allinea con struttura archivio 6.5 {#align-repository-structure}
 
 Per semplificare gli aggiornamenti e garantire che le configurazioni non vengano sovrascritte durante un aggiornamento, il repository viene ristrutturato in 6.4 per separare il contenuto dalla configurazione.
 
-Pertanto, alcune impostazioni devono essere spostate per non risiedere più `/etc` come in passato. Per esaminare l’intera serie di problemi di ristrutturazione dell’archivio che devono essere esaminati e inseriti nell’aggiornamento ad AEM 6.4, consultate Ristrutturazione dell’ [archivio in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+Pertanto, alcune impostazioni devono essere spostate per non risiedere più `/etc` come in passato. Per esaminare l’intera serie di problemi di ristrutturazione dell’archivio che devono essere esaminati e inseriti nell’aggiornamento ad AEM 6.4, consultate Ristrutturazione dell’ [archivio in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## Personalizzazioni AEM {#aem-customizations}
 
@@ -118,7 +118,7 @@ Per preparare le personalizzazioni all’interfaccia utente delle risorse, effet
 
    * `/apps/dam/content`
 
-1. Rinominare il nodo di contenuto in **content_backup**. A tale scopo, fare clic con il pulsante destro del mouse sul riquadro dell&#39;elenco delle cartelle nella parte sinistra della finestra e scegliere **Rinomina**.
+1. Rinominare il nodo di contenuto in **content_backup**. Per eseguire questa operazione, fare clic con il pulsante destro del mouse sul riquadro dell&#39;elenco delle cartelle nella parte sinistra della finestra e scegliere **Rinomina**.
 
 1. Dopo aver rinominato il nodo, crea un nuovo nodo denominato content in `/apps/dam` named **content** e imposta il tipo di nodo su **sling:Folder**.
 
@@ -128,9 +128,9 @@ Per preparare le personalizzazioni all’interfaccia utente delle risorse, effet
 
 1. I nodi aggiornati sotto `/apps/dam` con il tipo di nodo corretto di `sling:Folder` dovrebbero idealmente essere salvati nel controllo della versione e distribuiti con la base di codice o almeno sottoposti a backup come pacchetto di contenuto.
 
-### Generazione di ID risorsa per risorse esistenti {#generating-asset-ids-for-existing-assets}
+### Generazione degli ID risorsa per le risorse esistenti {#generating-asset-ids-for-existing-assets}
 
-Per generare ID di risorse per le risorse esistenti, aggiornate le risorse quando aggiornate l’istanza di AEM per eseguire AEM 6.5. Questa funzione è necessaria per abilitare la funzione [Risorse approfondite](/help/assets/touch-ui-asset-insights.md). Per ulteriori dettagli, consultate [Aggiungere il codice](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)da incorporare.
+Per generare ID di risorse per le risorse esistenti, aggiornate le risorse quando aggiornate l’istanza di AEM per l’esecuzione di AEM 6.5. Questa funzione è necessaria per abilitare la funzione [Risorse approfondite](/help/assets/touch-ui-asset-insights.md). Per ulteriori dettagli, consultate [Aggiungere il codice](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)da incorporare.
 
 Per aggiornare le risorse, configura il pacchetto Associate Asset ID (ID risorsa associati) nella console JMX. A seconda del numero di risorse presenti nella directory archivio, `migrateAllAssets` potrebbe essere necessario molto tempo. I nostri test interni stimano circa un&#39;ora per 125mila asset su TarMK.
 
@@ -158,7 +158,7 @@ Le configurazioni ContextHub vengono eseguite mediante un aggiornamento. Le istr
 >
 >Questa procedura è necessaria solo per gli aggiornamenti di Siti che utilizzano Modelli modificabili da AEM 6.2
 
-La struttura dei modelli modificabili è cambiata tra AEM 6.2 e 6.3. Se state effettuando l’aggiornamento dalla versione 6.2 o precedente e il contenuto del sito è stato creato utilizzando modelli modificabili, dovrete utilizzare lo strumento [Pulizia nodi](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)reattivi. Lo strumento deve essere eseguito **dopo** un aggiornamento per ripulire il contenuto. Dovrà essere eseguito su livelli Autore e Pubblica.
+La struttura dei modelli modificabili è cambiata tra AEM 6.2 e 6.3. Se state effettuando l&#39;aggiornamento dalla versione 6.2 o precedente e se il contenuto del sito è generato utilizzando modelli modificabili, dovrete utilizzare lo strumento [Pulizia nodi](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)reattivi. Lo strumento deve essere eseguito **dopo** un aggiornamento per ripulire il contenuto. Dovrà essere eseguito su livelli Autore e Pubblica.
 
 ### Modifiche all’implementazione CUG {#cug-implementation-changes}
 
@@ -170,7 +170,7 @@ Dovrebbe essere preparato un piano di test completo per gli aggiornamenti di tes
 
 ### Verifica della procedura di aggiornamento {#testing-the-upgrade-procedure}
 
-La procedura di aggiornamento come illustrato qui deve essere testata sugli ambienti Dev e QA come documentato nel manuale di esecuzione personalizzato (vedere [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)). La procedura di aggiornamento deve essere ripetuta fino a quando tutte le fasi non sono documentate nel libro di esecuzione dell&#39;aggiornamento e il processo di aggiornamento non è uniforme.
+La procedura di aggiornamento come illustrato di seguito deve essere testata sugli ambienti Dev e QA come documentato nel manuale di esecuzione personalizzato (vedere [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)). La procedura di aggiornamento deve essere ripetuta fino a quando tutti i passaggi non sono documentati nel registro di esecuzione dell&#39;aggiornamento e il processo di aggiornamento non è uniforme.
 
 ### Aree di test di implementazione {#implementation-test-areas-}
 
@@ -184,11 +184,11 @@ Di seguito sono riportate le aree critiche di qualsiasi implementazione di AEM c
   </tr>
   <tr>
    <td>Siti pubblicati</td>
-   <td>Verifica dell’implementazione AEM e del codice associato sul livello<br /> di pubblicazione tramite il dispatcher. Deve includere criteri per gli aggiornamenti delle pagine e per<br /> l’annullamento della validità della cache.</td>
+   <td>Verifica dell’implementazione di AEM e del codice associato sul livello<br /> di pubblicazione tramite il dispatcher. Deve includere criteri per gli aggiornamenti delle pagine e per<br /> l’annullamento della validità della cache.</td>
   </tr>
   <tr>
-   <td>Authoring</td>
-   <td>Verifica dell’implementazione AEM e del codice associato sul livello Autore. Deve includere finestre di dialogo e di authoring delle pagine e dei componenti.</td>
+   <td>Authoring  </td>
+   <td>Verifica dell’implementazione di AEM e del codice associato sul livello Autore. Deve includere finestre di dialogo e di authoring delle pagine e dei componenti.</td>
   </tr>
   <tr>
    <td>Integrazioni con le soluzioni Marketing Cloud</td>
