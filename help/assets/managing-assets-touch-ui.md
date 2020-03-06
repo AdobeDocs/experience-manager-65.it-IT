@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
+source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
 
 ---
 
@@ -562,8 +562,6 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Seleziona l’azione rapida **[!UICONTROL Pubblica]** dalla scheda delle risorse oppure fai clic sulla risorsa e tocca o fai clic sull’icona **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti.
 1. Se la risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti non pubblicati o modificati dopo l’ultima pubblicazione o l’annullamento della pubblicazione. Scegliete i riferimenti da pubblicare.
-
-   ![chlimage_1-225](assets/chlimage_1-21.png)
 
    >[!NOTE]
    >
