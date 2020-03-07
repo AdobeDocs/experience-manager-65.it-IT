@@ -44,7 +44,7 @@ Per utilizzare lo strumento VLT, è prima necessario installarlo. Per impostazio
    >
    >L&#39;origine dello strumento VLT è [disponibile su GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Estrarre l&#39;archivio.
-1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file dei comandi `vlt` o `vlt.bat` siano accessibili come appropriato. Ad esempio:
+1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file dei comandi `vlt` o `vlt.bat` siano accessibili come appropriato. Esempio:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -190,7 +190,7 @@ Commands:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-Per informazioni su un particolare comando, digitare il comando help seguito dal nome del comando. Ad esempio:
+Per informazioni su un particolare comando, digitare il comando help seguito dal nome del comando. Esempio:
 
 ```shell
 vlt --help export
@@ -738,7 +738,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->Le `--exclude` opzioni devono essere seguite da un&#39;altra opzione prima degli `<src>` argomenti e `<dst>` . Ad esempio:
+>Le `--exclude` opzioni devono essere seguite da un&#39;altra opzione prima degli `<src>` argomenti e `<dst>` . Esempio:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
