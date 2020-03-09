@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -53,22 +53,22 @@ Una volta configurato il progetto AEM, definisci la strategia per la creazione e
 * AEM Forms consente di creare moduli adattivi basati sui seguenti modelli di modulo. I modelli di modulo fungono da interfaccia per lo scambio di dati tra un modulo e un sistema AEM e forniscono una struttura basata su XML per il flusso di dati all&#39;interno e all&#39;esterno di un modulo adattivo. Inoltre, i modelli di modulo impongono regole e vincoli ai moduli adattivi sotto forma di vincoli di schema e XFA.
 
    * **Nessuno**: I moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura semplice con campi e valori corrispondenti.
-   * **Schema** XML o JSON:Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o consumati dal sistema back-end della tua organizzazione. È possibile associare uno schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili nella scheda Oggetto modello dati del browser del contenuto per la creazione di moduli adattivi. È possibile trascinare gli elementi dello schema per creare il modulo.
-   * **Modello** di modulo XFA: Si tratta di un modello di modulo ideale per gli investimenti in moduli HTML5 basati su XFA. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
+   * **Schema** XML o JSON: Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o consumati dal sistema back-end della tua organizzazione. È possibile associare uno schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili nella scheda Oggetto modello dati del browser del contenuto per la creazione di moduli adattivi. È possibile trascinare gli elementi dello schema per creare il modulo.
+   * **Modello** di modulo XFA: Si tratta di un modello di modulo ideale per gli investimenti in moduli HTML5 basati su XFA. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono conservate nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
    * **Modello** dati modulo: Si tratta di un modello di modulo preferenziale se si desidera integrare i sistemi di back-end come database, servizi Web e profilo utente AEM per precompilare i moduli adattivi e riscrivere i dati dei moduli inviati nei sistemi di back-end. L&#39;Editor modello dati modulo consente di definire e configurare entità e servizi in un modello dati modulo che è possibile utilizzare per creare moduli adattivi. Per ulteriori informazioni, consultate Integrazione dei dati [AEM Forms](/help/forms/using/data-integration.md).
 
 È importante scegliere con attenzione il modello di dati che non solo soddisfa le vostre esigenze ma che estenda gli investimenti esistenti in risorse XFA e XSD, se presenti. È consigliabile utilizzare il modello XSD per creare modelli di modulo, in quanto l&#39;XML generato contiene dati in base al percorso XPATH definito dallo schema. L&#39;utilizzo del modello XSD come scelta predefinita per il modello dati del modulo è utile anche perché consente di separare la struttura del modulo dal sistema back-end che elabora e consuma i dati e migliora le prestazioni del modulo grazie a una mappatura da uno a un campo del modulo. Inoltre, BindRef del campo può essere impostato come XPATH del valore dei dati in XML.
 
 Per ulteriori informazioni, vedere [Creazione di un modulo](/help/forms/using/creating-adaptive-form.md)adattivo.
 
-* Esistono alcune sezioni comuni tra i moduli adattivi. Potete identificarli e definire una strategia per promuovere il riutilizzo dei contenuti. I moduli adattivi consentono di creare frammenti autonomi e di riutilizzarli in più moduli. È inoltre possibile salvare un pannello in un modulo adattivo come frammento. Qualsiasi modifica apportata a un frammento si riflette in tutti i moduli associati. Questo consente di ridurre i tempi di authoring e assicura la coerenza tra i diversi moduli. Inoltre, l&#39;uso dei frammenti rende i moduli adattivi leggeri e offre una migliore esperienza di authoring, soprattutto per i moduli di grandi dimensioni. Per ulteriori informazioni, vedere [Frammenti](/help/forms/using/adaptive-form-fragments.md)di moduli adattivi.
+* Esistono alcune sezioni comuni tra i moduli adattivi. Potete identificarli e definire una strategia per promuovere il riutilizzo dei contenuti. I moduli adattivi consentono di creare frammenti autonomi e di riutilizzarli in più moduli. È inoltre possibile salvare un pannello in un modulo adattivo come frammento. Qualsiasi modifica apportata a un frammento si riflette in tutti i moduli associati. Questo consente di ridurre i tempi di authoring e assicura la coerenza tra i diversi moduli. Inoltre, l&#39;uso dei frammenti rende i moduli adattivi leggeri e offre una migliore esperienza di authoring, in particolare per i moduli di grandi dimensioni. Per ulteriori informazioni, vedere [Frammenti](/help/forms/using/adaptive-form-fragments.md)di moduli adattivi.
 
 ### Personalizzazione di moduli e componenti adattivi {#customize-components}
 
 * In AEM Forms sono disponibili modelli di moduli adattivi predefiniti che è possibile utilizzare per creare moduli adattivi. Potete anche creare dei modelli personalizzati. AEM fornisce modelli statici e modificabili.
 
    * I modelli statici sono definiti e configurati dagli sviluppatori.
-   * I modelli modificabili vengono creati dagli autori tramite l&#39;editor modelli. L’editor modelli consente di definire una struttura di base e il contenuto iniziale in un modello. Qualsiasi modifica apportata al livello struttura si riflette in tutti i moduli che utilizzano tale modello. Il contenuto iniziale può includere tema preconfigurato, servizio di precompilazione, azione di invio e così via. Tuttavia, queste impostazioni possono essere modificate per un modulo utilizzando l&#39;editor del modulo. Per ulteriori informazioni, vedere Modelli [di moduli](/help/forms/using/template-editor.md)adattivi.
+   * I modelli modificabili vengono creati dagli autori che utilizzano l’editor modelli. L’editor modelli consente di definire una struttura di base e il contenuto iniziale in un modello. Qualsiasi modifica apportata al livello struttura si riflette in tutti i moduli che utilizzano tale modello. Il contenuto iniziale può includere tema preconfigurato, servizio di precompilazione, azione di invio e così via. Tuttavia, queste impostazioni possono essere modificate per un modulo utilizzando l&#39;editor del modulo. Per ulteriori informazioni, vedere Modelli [di moduli](/help/forms/using/template-editor.md)adattivi.
 
 * Per definire lo stile di un’istanza di un campo o di un pannello specifica, usate lo stile [in linea](/help/forms/using/inline-style-adaptive-forms.md). In alternativa, potete definire una classe in un file CSS e specificare il nome della classe nella proprietà Classe CSS del componente.
 * Includere una libreria client in un componente per applicare in modo coerente gli stili ai moduli adattivi o ai frammenti che utilizzano tale componente. Per ulteriori informazioni, vedere [Creare un componente](/help/forms/using/custom-adaptive-forms-templates.md)di pagina per moduli adattivi.
@@ -79,7 +79,7 @@ Per ulteriori informazioni, vedere [Creazione di un modulo](/help/forms/using/cr
 
    * Utilizzate la funzionalità [Sovrapposizione](/help/sites-developing/overlays.md) di AEM per modificare una copia di un componente. Non è consigliabile modificare i componenti predefiniti.
    * Per personalizzare il layout dei componenti modulo adattivi forniti con il prodotto in /libs, [create componenti](/help/forms/using/custom-layout-components-forms.md) di layout personalizzati oltre ai layout [predefiniti](/help/forms/using/layout-capabilities-adaptive-forms.md).
-   * Potete introdurre interattività personalizzate creando widget o apparenze personalizzati. Non è consigliabile modificare i componenti predefiniti. Per ulteriori informazioni, vedere [Struttura](/help/forms/using/introduction-widgets.md)aspetto.
+   * Introducete interattività personalizzate creando widget o apparenze personalizzati. Non è consigliabile modificare i componenti predefiniti. Per ulteriori informazioni, vedere [Struttura](/help/forms/using/introduction-widgets.md)aspetto.
 
 * Consultate [Gestione delle informazioni](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) personali per le raccomandazioni sulla gestione dei dati PII.
 
@@ -87,7 +87,7 @@ Per ulteriori informazioni, vedere [Creazione di un modulo](/help/forms/using/cr
 
 ### Utilizzo dell’interfaccia touch per la creazione {#using-touch-optimized-ui-for-authoring}
 
-* Utilizzare il browser Oggetti nella barra laterale per accedere rapidamente ai campi all&#39;interno della gerarchia del modulo. È possibile utilizzare la casella di ricerca per cercare oggetti nel modulo o nella struttura ad albero degli oggetti per spostarsi da un oggetto all&#39;altro.
+* Utilizzare il browser Oggetti nella barra laterale per accedere rapidamente ai campi all&#39;interno della gerarchia del modulo. È possibile utilizzare la casella di ricerca per cercare gli oggetti nel modulo o nella struttura ad albero degli oggetti per spostarsi da un oggetto all&#39;altro.
 * Per visualizzare e modificare le proprietà di un componente nel browser Componenti nella barra laterale, selezionate il componente e fate clic su ![cmppr-1](assets/cmppr-1.png). È inoltre possibile fare doppio clic su un componente per visualizzarne le proprietà nel browser delle proprietà.
 * Utilizzare le scelte rapide da tastiera per eseguire azioni rapide sui moduli. Consultate Scelte rapide da tastiera di [AEM Forms](/help/forms/using/keyboard-shortcuts.md).
 
@@ -141,7 +141,7 @@ For more information, see [Themes](/help/forms/using/themes.md).
 
 ### Ottimizzazione delle prestazioni di moduli grandi e complessi {#optimizing-performance-of-large-and-complex-forms}
 
-Gli autori e gli utenti finali dei moduli in genere si trovano di fronte a problemi di prestazioni quando caricano moduli di grandi dimensioni in modalità di creazione o in fase di esecuzione. Con l&#39;aumento del numero di oggetti (campi e pannelli) nel modulo, l&#39;esperienza di creazione e esecuzione inizia a diminuire. Consente inoltre a più autori di collaborare e creare contemporaneamente un modulo.
+Gli autori e gli utenti finali dei moduli in genere si trovano di fronte a problemi di prestazioni durante il caricamento di moduli di grandi dimensioni in modalità di creazione o in fase di esecuzione. Con l&#39;aumento del numero di oggetti (campi e pannelli) nel modulo, l&#39;esperienza di creazione e esecuzione inizia a diminuire. Consente inoltre a più autori di collaborare e creare contemporaneamente un modulo.
 
 Per risolvere i problemi di prestazioni relativi ai moduli di grandi dimensioni, attenersi alle procedure ottimali riportate di seguito.
 
@@ -153,7 +153,7 @@ Per risolvere i problemi di prestazioni relativi ai moduli di grandi dimensioni,
    * Evitare di utilizzare script tra frammenti. Se all&#39;esterno del frammento è presente un oggetto a cui è necessario fare riferimento, provare a renderlo parte del modulo principale. Se l&#39;oggetto deve ancora risiedere in un altro frammento, fare riferimento ad esso con il nome corrispondente nello script.
 
 * Per salvare periodicamente il modulo adattivo e consentire agli utenti di rivederlo in un secondo momento per completare il modulo, utilizzare Salva e riprendi con salvataggio automatico.
-* Configurare i frammenti per il caricamento lento. In fase di esecuzione, i frammenti contrassegnati per il caricamento vengono sottoposti a rendering solo quando sono necessari. Riduce notevolmente il tempo di caricamento dei moduli di grandi dimensioni. È inoltre supportata nei frammenti con pannelli ripetibili. Per ulteriori informazioni, consultate [Configurare il caricamento](/help/forms/using/lazy-loading-adaptive-forms.md)pigro.
+* Configurare i frammenti per il caricamento lento. In fase di esecuzione, i frammenti contrassegnati per il caricamento vengono sottoposti a rendering solo quando sono obbligatori. Riduce notevolmente il tempo di caricamento dei moduli di grandi dimensioni. È inoltre supportata nei frammenti con pannelli ripetibili. Per ulteriori informazioni, consultate [Configurare il caricamento](/help/forms/using/lazy-loading-adaptive-forms.md)pigro.
 
    * Non configurate il caricamento pigro sui frammenti in un layout griglia reattivo o nel primo pannello.
    * I componenti Allegati e Termini e Condizioni del file non sono supportati nei frammenti caricati lentamente.
@@ -169,7 +169,7 @@ Per risolvere i problemi di prestazioni relativi ai moduli di grandi dimensioni,
 * Includere `afBoundedData` e `afUnBoundedData` sezioni nel file XML di precompilazione per precompilare i campi associati e non associati in un modulo adattivo.
 
 * Per i moduli adattivi basati sul modello di dati del modulo, in AEM Forms è disponibile il servizio di precompilazione dei modelli di dati del modulo fornito con il prodotto. Il servizio precompila le query sulle origini dati per gli oggetti del modello dati nel modulo adattivo e precompila i valori dei campi durante il rendering del modulo.
-* È inoltre possibile utilizzare i moduli adattivi precompilati per file, crx, service o protocolli http.
+* È inoltre possibile utilizzare i moduli adattivi per la precompilazione di file, crx, servizi o protocolli http.
 * AEM Forms supporta i servizi di precompilazione personalizzati che è possibile collegare come servizio OSGi per precompilare i moduli adattivi.
 
 Per ulteriori informazioni, vedere [Precompilare i campi](/help/forms/using/prepopulate-adaptive-form-fields.md)dei moduli adattivi.
@@ -239,15 +239,15 @@ AEM offre flussi di lavoro di traduzione che è possibile utilizzare per localiz
 
 Di seguito sono riportate alcune best practice per la localizzazione di moduli adattivi:
 
-* Utilizzare frammenti di modulo adattivi per elementi comuni tra i moduli e localizzare i frammenti. In questo modo, è possibile localizzare un frammento una sola volta e lo si riflette in tutti i moduli in cui viene utilizzato il frammento localizzato.
+* Utilizzare frammenti di modulo adattivi per elementi comuni all&#39;interno dei moduli e localizzare i frammenti. In questo modo, è possibile localizzare un frammento una sola volta e lo si riflette in tutti i moduli in cui viene utilizzato il frammento localizzato.
 * Eventuali modifiche, come l’aggiunta di un nuovo componente o l’applicazione di uno script in un modulo localizzato, non vengono localizzate automaticamente. Pertanto, è necessario finalizzare un modulo prima di localizzarlo per evitare più cicli di localizzazione.
 * Utilizzare il parametro `afAcceptLang` request per ignorare le impostazioni internazionali del browser ed eseguire il rendering del modulo nelle impostazioni internazionali specificate. Ad esempio, l&#39;URL seguente imporrà il rendering del modulo in lingua giapponese, indipendentemente dalle impostazioni internazionali specificate nel browser:
 
    `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-br), cinese-tn, cinese-tw (zh-tw) e coreano (ko-kr). Tuttavia, è possibile aggiungere il supporto per le nuove impostazioni internazionali per i moduli adattivi in fase di esecuzione. Per ulteriori informazioni, vedere [Supporto di nuove impostazioni internazionali per la localizzazione](/help/forms/using/supporting-new-language-localization.md)dei moduli adattivi.
+* AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). Tuttavia, è possibile aggiungere il supporto per le nuove impostazioni internazionali per i moduli adattivi in fase di esecuzione. Per ulteriori informazioni, vedere [Supporto di nuove impostazioni internazionali per la localizzazione](/help/forms/using/supporting-new-language-localization.md)dei moduli adattivi.
 
-## Prepara progetto moduli per la produzione {#prepare-forms-project-for-production}
+## Preparare il progetto di moduli per la produzione {#prepare-forms-project-for-production}
 
 ### Aggiunta di un server di elaborazione moduli {#adding-forms-processing-server}
 
@@ -258,7 +258,7 @@ Puoi configurare un&#39;istanza aggiuntiva del server AEM Forms che risiede diet
 
 ### Spostamento del progetto in un altro ambiente {#moving-project-to-another-environment}
 
-Spesso devi spostare i tuoi progetti AEM da un ambiente all’altro. Alcuni degli elementi chiave da ricordare durante lo spostamento sono:
+Spesso devi spostare i tuoi progetti AEM da un ambiente all’altro. Alcuni degli elementi chiave da ricordare durante lo spostamento sono i seguenti:
 
 * Esegui il backup delle librerie client, del codice personalizzato e delle configurazioni esistenti.
 * Distribuire pacchetti di prodotti e patch manualmente e nell&#39;ordine specificato nel nuovo ambiente.
@@ -289,7 +289,7 @@ Alcune best practice per configurare AEM per migliorare le prestazioni complessi
 
 ### Configurazione della memorizzazione esterna per le bozze e i dati dei moduli inviati {#external-storage}
 
-In un ambiente di produzione, si consiglia di non memorizzare i dati del modulo inviato nell&#39;archivio AEM. L&#39;implementazione predefinita delle azioni di invio PDF per store, store e store di Forms Portal memorizza i dati dei moduli nell&#39;archivio di AEM. Tali azioni di invio sono intese solo a scopo dimostrativo. Inoltre, per impostazione predefinita, le funzioni Salva e Riprendi e Salva automaticamente utilizzano l&#39;archiviazione del portale. Considerate pertanto le seguenti raccomandazioni:
+In un ambiente di produzione, si consiglia di non memorizzare i dati del modulo inviato nell&#39;archivio AEM. L&#39;implementazione predefinita delle azioni di invio PDF per store, store contenuti e store di Forms Portal memorizza i dati dei moduli nell&#39;archivio di AEM. Tali azioni di invio sono destinate solo a scopo dimostrativo. Inoltre, per impostazione predefinita, le funzioni Salva e Riprendi e Salva automaticamente utilizzano l&#39;archiviazione del portale. Considerate pertanto le seguenti raccomandazioni:
 
 * **Memorizzazione dei dati** bozza: Se si utilizza la funzione Bozza di moduli adattivi, è necessario implementare un&#39;interfaccia SPI (Service Provider Interface) personalizzata per memorizzare i dati bozza in un archivio più sicuro, come il database. Per ulteriori informazioni, vedere [Esempio per l&#39;integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
 
