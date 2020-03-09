@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
 
 ---
 
@@ -132,22 +132,24 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 ### Casella in entrata - Controllo amministratore {#inbox-admin-control}
 
-Gli utenti che fanno parte del gruppo **workflow-amministratori** possono visualizzare l&#39;opzione Admin Control nell&#39;elenco. Utilizzando questa opzione, gli amministratori possono:
+L&#39;opzione Controllo amministratore consente agli amministratori di:
 
-* Definite le personalizzazioni per il testo e il logo disponibili nell’intestazione.
+* Personalizzare il testo dell’intestazione e il logo
 
-* Controlla la visualizzazione delle opzioni di navigazione disponibili nell’intestazione e limita gli utenti a passare alla modalità di authoring del flusso di lavoro o passare all’Aiuto o ad altri collegamenti della soluzione.
+* Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
+
+L’opzione Controllo amministratore viene visualizzata nell’elenco a discesa del selettore di visualizzazione solo se siete membri del gruppo amministratori o amministratori di workflow.
 
 ![admin-control](assets/admin-control.png)
 
 * **Personalizzazione branding**
 
-   * **Personalizzare il testo dell’intestazione:** Specificate il testo in questo campo per sostituire il testo esistente di **Adobe Experience Manager** visualizzato nell’intestazione.
+   * **Personalizzare il testo dell’intestazione:** Specificate il testo da visualizzare nell’intestazione.
 
-   * **Personalizza logo:** Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine utilizzando questo campo per sostituire il logo Adobe Experience Manager visualizzato nell’intestazione.
+   * **Personalizza logo:** Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine per visualizzarla nell’intestazione.
 
 * **Navigazione utente**
-   * **Nascondi opzioni di navigazione:** Selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione, ad esempio l’opzione per passare ad altre soluzioni, il collegamento Aiuto e le opzioni visualizzate toccando il logo o il testo di Adobe Experience Manager.
+   * **Nascondi opzioni di navigazione:** Selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili quando si tocca il logo Adobe Experience Manager o si tocca un testo.
 * **Salva:** Toccate/fate clic su questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
