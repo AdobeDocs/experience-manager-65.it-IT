@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
+source-git-commit: 93521f102596a7f5cb247ddc430626d352338ce8
 
 ---
 
@@ -112,7 +112,7 @@ Per ulteriori informazioni, vedere [Progettazione di modelli di modulo per modul
 
 Oltre alle nuove funzioni, AEM 6.5 Service Pack 4 include le seguenti funzionalità principali:
 
-* Ora è possibile sincronizzare in Scene7 solo le sottostrutture di contenuto selettivo, anziché tutte `content/dam`.
+* Ora è possibile sincronizzare solo le sottostrutture di contenuto selettivo su Contenuti multimediali *dinamici - Modalità* Scene7 invece di usare tutte le `content/dam`.
 
 * L&#39;integrazione del modello di dati del modulo con il servizio Web SOAP ora supporta i gruppi di scelta o gli attributi sugli elementi.
 
