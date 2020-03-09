@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -81,11 +81,11 @@ Potete ripetere i passaggi 1 e 2 e selezionare ![Seleziona padre](assets/float_t
 
 Per definire il numero di colonne per un pannello, eseguite i seguenti passaggi:
 
-1. In modalità **[!UICONTROL Modifica]** , toccate il pannello, selezionate ![Configura](assets/configure_icon.png)e selezionate **[!UICONTROL Reattivo - tutto sulla pagina senza l’opzione di navigazione]** .
+1. In modalità **[!UICONTROL Modifica]** , toccate il pannello, selezionate ![Configura](assets/configure_icon.png)e selezionate **[!UICONTROL Reattivo - tutto sulla pagina senza l’opzione di navigazione]** dall’elenco a discesa Layout **** pannello.
 
 1. Toccate ![Salva](assets/save_icon.svg) per salvare le proprietà.
 
-1. In modalità **[!UICONTROL Layout]** , toccate uno dei componenti del pannello che desiderate ridimensionare, selezionate ![Seleziona elemento padre](assets/select_parent_icon.svg), quindi selezionate la prima opzione nell’elenco a discesa, se il pannello è l’elemento padre immediato del componente.
+1. In modalità **[!UICONTROL Layout]** , toccate uno dei componenti del pannello, selezionate ![Seleziona elemento padre](assets/select_parent_icon.svg), quindi selezionate il pannello.
 
 1. Toccate ![più colonne](assets/multi-column.svg) e selezionate il numero di colonne dall&#39;elenco a discesa. Il numero di colonne può essere compreso tra 1 e 12. Il pannello viene diviso in un layout a più colonne.
 
