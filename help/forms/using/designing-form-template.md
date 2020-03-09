@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -41,6 +41,6 @@ La destinazione chiave per i moduli HTML5 sono i dispositivi touch. In AEM Forms
 
 #### Rich text format {#rich-text-format}
 
-Per aggiungere un elenco di opzioni di formattazione a un campo di testo nel modulo HTML5 di cui è stato effettuato il rendering, è possibile definire un formato di campo per il campo di testo in Forms Designer. Toccate il campo di testo in visualizzazione **** Struttura. Nella scheda **[!UICONTROL Campo]** , selezionare Testo **** RTF dall&#39;elenco a discesa Formato **** campo per applicare le impostazioni. Il campo di testo visualizza le opzioni di formattazione quando viene eseguito il rendering in un modulo HTML5.
+In Forms Designer, definire un formato RTF per il campo di testo per aggiungere un elenco di opzioni di formattazione al campo del modulo HTML5 di cui è stato effettuato il rendering. Per applicare le impostazioni, toccate il campo di testo in visualizzazione **** Struttura. Nella scheda **[!UICONTROL Campo]** , selezionare **[!UICONTROL RTF]** dall&#39;elenco a discesa Formato **** campo. Il campo di testo visualizza le opzioni di formattazione quando viene eseguito il rendering in un modulo HTML5.
 
 [Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
