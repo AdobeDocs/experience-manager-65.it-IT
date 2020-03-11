@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per condividere le risorse DAM nel flusso
 description: Utilizza le risorse disponibili in una distribuzione remota di Risorse Adobe Experience Manager quando crei le pagine Web in un’altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -139,7 +139,7 @@ Utilizzate la configurazione di cui sopra per provare l’esperienza di authorin
 
    ![Notifica relativa al recupero asincrono delle risorse che si verifica in background.](assets/assets_async_transfer_fails.png)
 
-   *Figura: Notifica relativa al recupero asincrono delle risorse che si verifica in background.*
+   *Figura: Notifica del recupero asincrono delle risorse che si verifica in background*
 
 1. Quando si pubblica una pagina, AEM visualizza un elenco completo delle risorse utilizzate nella pagina. Accertatevi che le risorse remote vengano recuperate correttamente al momento della pubblicazione. Per verificare lo stato di ciascuna risorsa recuperata, consultate Interfaccia utente dei processi [](/help/assets/asynchronous-jobs.md) asincroni.
 
@@ -184,5 +184,5 @@ Le risorse recuperate possono essere usate come qualsiasi altra risorsa locale, 
 
 Per risolvere eventuali situazioni di errore comuni, effettuate le seguenti operazioni:
 
-* Se non riuscite a cercare risorse remote da Content Finder, verificate nuovamente e accertatevi che i ruoli e le autorizzazioni richiesti siano attivi.
+* Se non riuscite a cercare risorse remote da Content Finder, verificate nuovamente e accertatevi che siano presenti i ruoli e le autorizzazioni richiesti.
 * Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per i seguenti motivi: non esiste sul telecomando; mancanza di autorizzazioni adeguate per recuperarla; errore di rete. Assicurati che la risorsa non venga rimossa dal DAM remoto o che le autorizzazioni non vengano modificate; garantire che siano soddisfatti i prerequisiti adeguati; provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controllate l’ [elenco dei processi](/help/assets/asynchronous-jobs.md) asincroni per verificare la presenza di errori nel recupero delle risorse.
