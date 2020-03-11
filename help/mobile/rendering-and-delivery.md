@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Il rendering del contenuto AEM può essere facilmente eseguito tramite servlet [predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) Sling per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+Il rendering del contenuto AEM può essere facilmente eseguito tramite i servlet [predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) Sling per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 Tali rendering out-of-the-box generalmente passano alla directory archivio e restituiscono il contenuto così com&#39;è.
 
@@ -127,7 +127,7 @@ La tabella seguente mostra le proprietà di Export Configs:
    <td>renameProperties</td>
    <td>Stringa[]<br /> <br /> </td>
    <td>rename nothing</td>
-   <td>&lt;nome_proprietà_effettiva&gt;,&lt;nome_proprietà_sostituzione&gt;</td>
+   <td>&lt;nome_proprietà_effettiva&gt;,&lt;nome_proprietà_sostitutivo&gt;</td>
    <td>rinominare le proprietà utilizzando le sostituzioni</td>
   </tr>
  </tbody>
@@ -157,7 +157,7 @@ Nella tabella seguente sono riportate le proprietà:
    <td>Stringa[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Per i seguenti tipi di risorse di sling, non restituire l'esportazione predefinita CaaS json.<br /><br /> Restituire l’esportazione di un singolo cliente eseguendo il rendering della risorsa come; &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Per i seguenti tipi di risorse di sling, non restituire l'esportazione predefinita CaaS json.<br /> Restituire l’esportazione di un singolo cliente eseguendo il rendering della risorsa come;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -167,7 +167,7 @@ Nella tabella seguente sono riportate le proprietà:
 Content Services include due configurazioni di esportazione:
 
 * default (nessuna configurazione specificata)
-* page (per rappresentare le pagine del sito)
+* page (per eseguire il rendering delle pagine del sito)
 
 #### Configurazione esportazione predefinita {#default-export-configuration}
 
@@ -226,7 +226,7 @@ Questa configurazione estende l&#39;impostazione predefinita per includere il ra
 
 Consultate le risorse di seguito per ulteriori argomenti in Content Services:
 
-* [Sviluppo di modelli](/help/mobile/models-in-repository.md)
+* [Sviluppo di modelli](/help/mobile/administer-mobile-apps.md)
 * [Authoring di Content Services](/help/mobile/develop-content-as-a-service.md)
 * [Amministrazione di Content Services](/help/mobile/developing-content-services.md)
 
