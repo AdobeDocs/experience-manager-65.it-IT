@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
 
-# Configurare l’editor Rich Text {#configure-the-rich-text-editor}
+# Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 L’editor Rich Text (RTE) offre agli autori un’ampia gamma di funzionalità per la modifica del contenuto testuale. Le icone, le caselle di selezione, la barra degli strumenti e i menu sono disponibili per un’esperienza di modifica del testo WYSIWYG.
 
@@ -20,15 +20,21 @@ L’editor Rich Text può essere configurato per abilitare, disabilitare ed este
 
 Il seguente flusso di lavoro illustra un ordine consigliato per completare le attività di configurazione dell’editor Rich Text.
 
-![Sequenza di passaggi per apprendere come configurare](assets/rte_workflow_v1.png)rte *Figure: Sequenza di passaggi per apprendere come configurare l’editor Rich Text*
+![Sequenza di passaggi per apprendere come configurare la metrica](assets/rte_workflow_v1.png)
+
+*Figura: Sequenza di passaggi per apprendere come configurare l’editor Rich Text*
 
 ## Comprendere l’interfaccia touch e l’interfaccia classica {#understand-touch-enabled-ui-and-classic-ui}
 
-L’interfaccia touch è l’interfaccia utente standard di AEM. Adobe ha introdotto l&#39;interfaccia utente touch con design [](/help/sites-authoring/responsive-layout.md) reattivo per l&#39;ambiente di authoring. L’interfaccia utente touch è progettata per i dispositivi touch e desktop. L’interfaccia utente è molto diversa dall’interfaccia classica originale.
+L’interfaccia touch è l’interfaccia utente standard di AEM. Adobe ha introdotto l&#39;interfaccia utente touch con [design](/help/sites-authoring/responsive-layout.md) reattivo per l&#39;ambiente di authoring. L’interfaccia utente touch è progettata per i dispositivi touch e desktop. L’interfaccia utente è molto diversa dall’interfaccia classica originale.
 
-![Barra degli strumenti Editor Rich Text nell’interfaccia](assets/chlimage_1-35.png)*Figura touch: Barra degli strumenti Editor Rich Text nell’interfaccia touch*
+![Barra degli strumenti Editor Rich Text nell’interfaccia touch](assets/chlimage_1-35.png)
 
-![Barra degli strumenti Editor Rich Text in Classic UI](assets/rtedefault.png)*Figura: Barra degli strumenti Editor Rich Text nell’interfaccia classica*
+*Figura: Barra degli strumenti Editor Rich Text nell’interfaccia touch*
+
+![Barra degli strumenti Editor Rich Text nell’interfaccia classica](assets/rtedefault.png)
+
+*Figura: Barra degli strumenti Editor Rich Text nell’interfaccia classica*
 
 >[!MORELIKETHIS]
 >
@@ -55,27 +61,35 @@ Gli autori possono creare e modificare contenuti testuali in AEM utilizzando le 
 
 ### Modifica in linea {#inline-editing}
 
-Quando il contenuto viene aperto (con un doppio tocco o clic lento), può essere modificato all’interno della pagina. Viene visualizzata una barra degli strumenti compatta con opzioni molto semplici.
+Quando il contenuto viene aperto (con un doppio tocco o clic lento), è possibile modificarlo all’interno della pagina. Viene visualizzata una barra degli strumenti compatta con opzioni molto semplici.
 
-![Modifica in linea con la barra degli strumenti di base nell’interfaccia](assets/chlimage_1-36.png)*Figura touch: Modifica in linea con la barra degli strumenti di base nell’interfaccia touch*
+![Modifica in linea con la barra degli strumenti di base nell’interfaccia touch](assets/chlimage_1-36.png)
+
+*Figura: Modifica in linea con la barra degli strumenti di base nell’interfaccia touch*
 
 Nell’interfaccia classica, un doppio clic lento sul componente consente la modifica in linea e un contorno arancione evidenzia il contenuto. Se Content Finder è aperto, nella parte superiore della finestra viene visualizzata una barra degli strumenti con le opzioni di formattazione RTE disponibili. Se Content Finder non è aperto, le opzioni di formattazione non vengono visualizzate e potete eseguire solo modifiche di testo di base.
 
-### Modifica a schermo intero {#full-screen-editing}
+### Full screen editing {#full-screen-editing}
 
 I componenti AEM possono essere aperti a schermo intero, in modo da nascondere il contenuto della pagina e occupare lo schermo disponibile. Considerate la possibilità di modificare a schermo intero una versione dettagliata dell&#39;editing in linea in quanto offre il maggior numero di opzioni di modifica. È possibile aprirlo facendo clic su ![rte_fullscreen](assets/rte_fullscreen.png), dalla barra degli strumenti compatta, quando si utilizza la modalità di modifica in linea.
 
 Nella finestra di dialogo a schermo intero, insieme a una barra degli strumenti dettagliata dell’editor Rich Text, sono disponibili anche le opzioni e i componenti disponibili in una finestra di dialogo. È applicabile solo per una finestra di dialogo che contiene l’editor Rich Text insieme ad altri componenti.
 
-![La barra degli strumenti dettagliata dell’editor Rich Text durante la modifica in modalità a schermo intero in Touch UI](assets/chlimage_1-37.png)*Figure: Barra degli strumenti dettagliata dell’editor Rich Text per la modifica in modalità a schermo intero nell’interfaccia touch*
+![Barra degli strumenti dettagliata dell’editor Rich Text per la modifica in modalità a schermo intero nell’interfaccia touch](assets/chlimage_1-37.png)
+
+*Figura: Barra degli strumenti dettagliata dell’editor Rich Text per la modifica in modalità a schermo intero nell’interfaccia touch*
 
 ### Modifica finestra di dialogo {#dialog-editing}
 
 Quando si fa doppio clic su un componente, si apre una finestra di dialogo per la modifica del contenuto. Viene visualizzata la finestra di dialogo sopra la pagina esistente. In alcuni scenari specifici, la finestra di dialogo si apre come finestra a comparsa. Ad esempio, quando un componente Testo fa parte di una colonna in un layout di pagina a più colonne e l’area disponibile per la finestra di dialogo è minore.
 
-![Modalità di modifica finestra di dialogo nell’interfaccia](assets/dialog_editing_modetouchui.png)*Figura touch: Modalità di modifica finestra di dialogo nell’interfaccia touch*
+![Modalità di modifica finestra di dialogo nell’interfaccia touch](assets/dialog_editing_modetouchui.png)
 
-![Finestra di dialogo nell’interfaccia classica che contiene una barra degli strumenti dettagliata per la modifica](assets/chlimage_1-38.png)*di Figura: Finestra di dialogo nell’interfaccia classica che contiene una barra degli strumenti dettagliata per la modifica*
+*Figura: Modalità di modifica finestra di dialogo nell’interfaccia touch*
+
+![Finestra di dialogo nell’interfaccia classica che contiene una barra degli strumenti dettagliata per la modifica](assets/chlimage_1-38.png)
+
+*Figura: Finestra di dialogo nell’interfaccia classica che contiene una barra degli strumenti dettagliata per la modifica*
 
 ## Informazioni sui plug-in RTE e le relative funzioni {#aboutplugins}
 
@@ -102,7 +116,7 @@ Nella tabella seguente sono elencati i plug-in correnti, che mostrano:
 | modifica | cut copy paste-default paste-plintext paste-wordhtml | [Tagliare, copiare e incollare le tre modalità](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [punto](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | trova sostituzione | Trova e sostituisci. |
 | [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | grassetto sottolineato in corsivo | [Formattazione](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)di base del testo. |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | immagine | Supporto per immagini di base (trascinamento da Content Finder). A seconda del browser, il supporto ha diversi comportamenti per gli autori |
+| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | immagine | Supporto per immagini di base (trascinate da Content Finder). A seconda del browser, il supporto ha diversi comportamenti per gli autori |
 | [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Per definire questo valore, vedere [Dimensione](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)tabulazione. |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter righright | Allineamento del paragrafo. |
 | [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ancoraggio di scollegamento modifica collegamento | [Collegamenti ipertestuali e ancoraggi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -223,7 +237,7 @@ Per configurare la barra degli strumenti per `dialogFullScreen`, utilizzate la s
 </uiSettings>
 ```
 
-Per la modalità in linea e per la modalità a schermo intero vengono utilizzate diverse impostazioni dell&#39;interfaccia utente. La proprietà toolbar viene utilizzata per specificare i pulsanti della barra degli strumenti.
+Per la modalità in linea e per la modalità a schermo intero vengono utilizzate diverse impostazioni dell&#39;interfaccia utente. La proprietà della barra degli strumenti viene utilizzata per specificare i pulsanti della barra degli strumenti.
 
 Ad esempio, se il pulsante è esso stesso una funzione (ad esempio, `Bold`), viene specificato come `PluginName#FeatureName` (ad esempio, `links#modifylink`).
 
@@ -235,7 +249,7 @@ Il nodo a comparsa nella modalità in linea o a schermo intero contiene un elenc
 
 ## Impostazioni dell&#39;interfaccia utente e criteri di contenuto RTE {#rtecontentpolicies}
 
-Gli amministratori possono controllare le opzioni dell&#39;editor Rich Text utilizzando criteri di contenuto, ad esempio anziché eseguire la configurazione come descritto in precedenza. I criteri di contenuto definiscono le proprietà di progettazione di un componente quando viene utilizzato come parte di un modello [](/help/sites-authoring/templates.md)modificabile. Ad esempio, se un componente di testo che utilizza l’editor Rich Text viene utilizzato con un modello modificabile, il criterio del contenuto può definire la disponibilità dell’opzione grassetto e alcune opzioni di formattazione del paragrafo. I criteri dei contenuti sono riutilizzabili e possono essere applicati a più modelli.
+Gli amministratori possono controllare le opzioni dell&#39;editor Rich Text utilizzando criteri di contenuto, ad esempio anziché eseguire la configurazione come descritto in precedenza. I criteri di contenuto definiscono le proprietà di progettazione di un componente quando viene utilizzato come parte di un modello [](/help/sites-authoring/templates.md)modificabile. Ad esempio, se un componente di testo che utilizza l’editor Rich Text viene utilizzato con un modello modificabile, il criterio del contenuto può definire la disponibilità dell’opzione grassetto e alcune opzioni di formattazione del paragrafo. I criteri di contenuto sono riutilizzabili e possono essere applicati a più modelli.
 
 Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configurazioni dell’interfaccia utente ai criteri dei contenuti.
 
@@ -282,7 +296,7 @@ In una pagina, è possibile includere la clientlib dell’editor Rich Text Coral
 
 >[!NOTE]
 >
->Adobe non lo consiglia come procedura ottimale. Passate all’editor Rich Text CoralUI 2 come ultima risorsa. I plug-in personalizzati per l’editor Rich Text CoralUI 2 funzionano con l’editor Rich Text CoralUI 3 se i plug-in non dipendono da elementi interni dell’editor Rich Text, ad esempio classi.
+>Adobe non lo consiglia come procedura ottimale. Passate all’editor Rich Text CoralUI 2 come ultima risorsa. I plug-in personalizzati per l’editor Rich Text CoralUI 2 funzionano con l’editor Rich Text CoralUI 3 se i plug-in non dipendono da elementi interni dell’editor Rich Text, ad esempio le classi.
 >
 >Se utilizzate plug-in personalizzati per l&#39;editor Rich Text CoralUI3, utilizzate `rte.coralui3` la libreria.
 
@@ -307,7 +321,7 @@ In una pagina, è possibile includere la clientlib dell’editor Rich Text Coral
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sulla configurazione dell&#39;editor Rich Text, consultate il riferimento API [Widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) AEM.
+Per ulteriori informazioni sulla configurazione dell&#39;editor Rich Text, consulta il riferimento API [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) AEM Widget.
 
 In particolare, per visualizzare i plug-in e le relative opzioni disponibili:
 
@@ -331,7 +345,7 @@ La funzionalità AEM RTE presenta i seguenti limiti:
 
 * Non assegnare un nome al nodo di configurazione RTE `config`. In caso contrario, la configurazione dell’editor Rich Text ha effetto solo per gli amministratori e non per gli utenti del gruppo `content-author`.
 
-* L’editor Rich Text non supporta frame in linea o iframe per incorporare il contenuto.
+* L’editor Rich Text non supporta la cornice in linea o l’iframe per incorporare il contenuto.
 
 ## Best practices and tips {#best-practices-and-tips}
 
@@ -349,7 +363,7 @@ A questo punto, eseguire un&#39;operazione sulla selezione, ad esempio impostare
 
 **I collegamenti ipertestuali si perdono quando si modifica un componente utilizzando il pulsante Configura**
 
-Aggiungete un collegamento ipertestuale in un componente di testo modificandolo utilizzando il pulsante Configura. Se si modifica nuovamente il collegamento ipertestuale e si convalida il collegamento ipertestuale per la seconda volta, il collegamento potrebbe risultare mancante.
+Aggiungete un collegamento ipertestuale in un componente di testo modificandolo utilizzando il pulsante Configura. Se si modifica nuovamente il collegamento ipertestuale e si convalida il collegamento ipertestuale per la seconda volta, il collegamento potrebbe perdere il collegamento.
 
 Una soluzione consiste nel fare clic nel componente di testo quando la finestra di dialogo di modifica viene visualizzata una seconda volta ed eseguire la convalida del collegamento.
 
@@ -363,7 +377,7 @@ Per verificare che l’HTML incollato sia salvato, controllate il contenuto salv
 
 Se non viene salvato, l’HTML deve essere stato rimosso dall’editor Rich Text in quanto non rispettava le regole dell’editor Rich Text.
 
-Se viene salvato in CRXDE ma non viene eseguito il rendering sulla pagina (per verificare il rendering, consultate [Anteprima](/help/sites-authoring/editing-content.md#preview-mode)della pagina, viene rimosso dalle regole AEM XSS.
+Se salvato in CRXDE ma non ne viene eseguito il rendering sulla pagina (per verificare il rendering, consultate [Anteprima](/help/sites-authoring/editing-content.md#preview-mode)della pagina, viene rimosso dalle regole AEM XSS.
 
 **Il componente multicampo non funziona come previsto**
 
@@ -379,7 +393,7 @@ Se gli aggiornamenti delle configurazioni di interfaccia vengono riportati per g
 >
 >* [Configurare i plug-in RTE](configure-rich-text-editor-plug-ins.md)
 >* [Utilizzo dell’editor Rich Text per la creazione](../sites-authoring/rich-text-editor.md)
->* [Configurare l&#39;editor Rich Text per i siti accessibili](rte-accessible-content.md)
+>* [Configurare l&#39;editor Rich Text per i siti con accesso facilitato](rte-accessible-content.md)
 >* [Interfaccia touch e parità delle funzioni dell’interfaccia classica](../release-notes/touch-ui-features-status.md)
 >* [Esempio di esercitazione per creare un componente multicampo composito](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)
 
