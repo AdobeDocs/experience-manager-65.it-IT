@@ -3,7 +3,7 @@ title: Esaminare raccolte e risorse delle cartelle
 description: Configurate i flussi di lavoro di revisione per le risorse all'interno di una cartella o di una raccolta e condividetela con revisori o partner creativi per ottenere feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -39,7 +39,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    >
    >I membri/gruppi del progetto selezionato sono disponibili come approvatori nell&#39;elenco **[!UICONTROL Assegna a]** .
 
-1. Inserire una descrizione, la priorità dell&#39;attività e la data di scadenza dell&#39;attività di revisione.
+1. Inserire una descrizione, la priorità dell&#39;attività e la data di scadenza per l&#39;attività di revisione.
 
    ![task_details](assets/task_details.png)
 
@@ -64,7 +64,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 
    ![Rivedere lo stato come visualizzato nella vista a schede](assets/chlimage_1-404.png)
 
-   **Visualizzazione elenco**
+   **Vista a elenco**
 
    ![Rivedere lo stato come visualizzato nella vista a elenco](assets/review_status_listview.png)
 
@@ -87,7 +87,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    >
    >I membri/gruppi del progetto selezionato sono disponibili come approvatori nell&#39;elenco **[!UICONTROL Assegna a]** .
 
-1. Inserire una descrizione, la priorità dell&#39;attività e la data di scadenza dell&#39;attività di revisione.
+1. Inserire una descrizione, la priorità dell&#39;attività e la data di scadenza per l&#39;attività di revisione.
 
    ![task_details-collection](assets/task_details-collection.png)
 
@@ -99,12 +99,12 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    ![review_task_collection](assets/review_task_collection.png)
 
 1. Tap **[!UICONTROL Complete]** from the toolbar. Nella finestra di dialogo, inserite un commento e toccate o fate clic su **[!UICONTROL Completa]** per confermare.
-1. Passate alla console Raccolte e aprite la raccolta. Le icone dello stato di approvazione per le risorse vengono visualizzate nelle viste a schede e Elenco.
+1. Passate alla console Raccolte e aprite la raccolta. Le icone dello stato di approvazione per le risorse vengono visualizzate nelle viste a schede e a elenco.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figura:Vista a schede*
+   *Figura: Vista a schede*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figura:Visualizzazione elenco*
+   *Figura: Visualizzazione elenco*
