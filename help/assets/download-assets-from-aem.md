@@ -3,7 +3,7 @@ title: Scaricare risorse da AEM
 description: Scoprite come scaricare risorse da AEM e abilitare o disabilitare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,7 +20,9 @@ Per scaricare le risorse, individuate una risorsa, selezionatela e toccate **[!U
 
 Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file multimediali diversi e Set caroselli.
 
-![Opzioni disponibili quando si scaricano le risorse da Risorse](assets/asset_download_dialog.png)*di AEM: Opzioni disponibili durante il download delle risorse da Risorse AEM*
+![Opzioni disponibili quando si scaricano le risorse da Risorse AEM](assets/asset_download_dialog.png)
+
+*Figura: Opzioni disponibili quando si scaricano le risorse da Risorse AEM*
 
 Di seguito sono riportate le opzioni di esportazione/download. Le rappresentazioni dinamiche sono univoche per gli elementi multimediali dinamici e consentono di generare rapidamente rappresentazioni oltre alla risorsa selezionata. Tale opzione è disponibile solo se è stata attivata l’opzione per gli elementi multimediali dinamici.
 
