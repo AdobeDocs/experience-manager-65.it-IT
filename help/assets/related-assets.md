@@ -3,7 +3,7 @@ title: Risorse correlate
 description: Scoprite come collegare risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
+source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
 
 ---
 
@@ -14,7 +14,7 @@ Risorse Adobe Experience Manager (AEM) consente di correlare manualmente le riso
 
 Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzione con fornitori o agenzie e rendere il file INDD ad alta risoluzione disponibile solo su richiesta.
 
->[!NOTE] Gli utenti con autorizzazioni di modifica possono correlare e non correlare le risorse.
+>[!NOTE] Solo gli utenti con autorizzazioni di modifica possono correlare e non correlare le risorse.
 >
 
 ## Relate assets {#relating-assets}
