@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -138,15 +138,15 @@ L&#39;opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
 
-L’opzione Controllo amministratore viene visualizzata nell’elenco a discesa del selettore di visualizzazione solo se siete membri del gruppo amministratori o amministratori di workflow.
+L’opzione Controllo amministratore è visibile solo ai membri del gruppo Amministratori o Amministratori di workflow.
 
 ![admin-control](assets/admin-control.png)
 
 * **Personalizzazione branding**
 
-   * **Personalizzare il testo dell’intestazione:** Specificate il testo da visualizzare nell’intestazione.
+   * **Personalizzare il testo dell’intestazione:** Specificate il testo da visualizzare nell’intestazione per sostituire il testo predefinito di **Adobe Experience Manager** .
 
-   * **Personalizza logo:** Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine per visualizzarla nell’intestazione.
+   * **Personalizza logo:** Specificate l&#39;immagine da visualizzare nell&#39;intestazione come logo. Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine nel campo.
 
 * **Navigazione utente**
    * **Nascondi opzioni di navigazione:** Selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili quando si tocca il logo Adobe Experience Manager o si tocca un testo.
