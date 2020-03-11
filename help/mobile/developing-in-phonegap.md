@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -30,12 +30,12 @@ Le seguenti risorse sono utili per iniziare a usare AEM Mobile con Adobe PhoneGa
 
 * [Sviluppo di applicazioni mobili in AEM](/help/mobile/developing-mobile-applications.md)
 * [Mobile con sincronizzazione dei contenuti](/help/mobile/phonegap-contentsync.md)
-* [Modelli pagina](/help/mobile/phonegap-apps-arch-page-templates.md)
+* [Modelli di pagina](/help/mobile/phonegap-apps-arch-page-templates.md)
 
 * [AEM Mobile Content Services: Panoramica](/help/mobile/develop-content-as-a-service.md)
 
    * Per abilitare Content Services e i modelli di dati, consulta [Amministrazione di Content Services](/help/mobile/developing-content-services.md)
-   * Per ulteriori informazioni sulla creazione di modelli, vedere [Sviluppo di modelli](/help/mobile/models-in-repository.md)
+   * Per ulteriori informazioni sulla creazione di modelli, vedere [Sviluppo di modelli](/help/mobile/administer-mobile-apps.md)
    * Per informazioni su Rendering e distribuzione, consulta [Rendering e distribuzione di Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
