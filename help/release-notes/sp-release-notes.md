@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -243,6 +243,8 @@ Per un elenco completo delle funzioni, degli elementi di rilievo e delle funzion
 * Designer: Se l&#39;opzione relativa ai tag è attivata, il bordo del sottomodulo scompare nell&#39;output PDF generato (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer: Se in una tabella sono presenti celle unite, il test di accessibilità non riesce per il file PDF di output convertito da un modulo XDP utilizzando il servizio di output (CQ-4285372).
+
+* Foundation JEE: Il server che viene disconnesso da un cluster non riesce a riconnettersi a causa di problemi di cache (NPR-32412).
 
 ## Install 6.5.4.0 {#install}
 
