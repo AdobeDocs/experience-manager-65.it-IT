@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d09e02c451c01955b93bc3149fc663754435fdf
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -52,7 +52,7 @@ Dalla pagina dei risultati della ricerca potete individuare più rapidamente le 
 
 ![Visualizzate il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura: Visualizzate il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.*
+*Figura: Visualizzare il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca*
 
 ## Comprendere i risultati della ricerca e il comportamento {#searchbehavior}
 
