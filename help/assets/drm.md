@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,19 +20,19 @@ Potete visualizzare lo stato di scadenza di una risorsa nella console Risorse ne
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figura: Nella vista a schede, un flag sulla scheda indica la risorsa scaduta.*
+*Figura: Nella vista a schede, un flag sulla scheda indica la risorsa scaduta*
 
-**Visualizzazione elenco**
+**Vista a elenco**
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
 *Figura: Nella vista a elenco, nella colonna[!UICONTROL Stato]viene visualizzato il banner[!UICONTROL Scaduto].*
 
- Potete visualizzare lo stato di scadenza di una risorsa nella timeline. Selezionate la risorsa e scegliete Timeline dal menu Navigazione globale.
+Potete visualizzare lo stato di scadenza di una risorsa nella timeline. Selezionate la risorsa e scegliete Timeline dal menu Navigazione globale.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
- Potete inoltre visualizzare lo stato di scadenza delle risorse nella barra **[!UICONTROL Riferimenti]** . Gestisce gli stati di scadenza delle risorse e le relazioni tra le risorse composte e le risorse secondarie, le raccolte e i progetti a cui viene fatto riferimento.
+Potete inoltre visualizzare lo stato di scadenza delle risorse nella barra **[!UICONTROL Riferimenti]** . Gestisce gli stati di scadenza delle risorse e le relazioni tra le risorse composte e le risorse secondarie, le raccolte e i progetti a cui viene fatto riferimento.
 
 1. Andate alla risorsa per la quale desiderate visualizzare il riferimento a pagine Web e risorse composte.
 1. Selezionate la risorsa e il logo Experience Manager.
@@ -45,7 +45,7 @@ Potete visualizzare lo stato di scadenza di una risorsa nella console Risorse ne
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Se la risorsa è scaduta, nella barra laterale Riferimenti viene visualizzato lo stato Risorse secondarie scadute della **[!UICONTROL risorsa]**.
+   Se la risorsa è scaduta, nella barra laterale Riferimenti viene visualizzato lo stato Risorse secondarie scadute per la **[!UICONTROL risorsa]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
