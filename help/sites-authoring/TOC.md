@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 
 ---
 
@@ -12,8 +12,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti fondamentali per l’authoring AEM {#essentials}
++ Attività, strumenti e concetti essenziali per l’authoring con AEM {#essentials}
    + [Primi passi per gli autori](first-steps.md)
+   + [Authoring delle pagine](page-authoring.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
    + [Concetto di authoring](author.md)
    + [Operazioni di base](basic-handling.md)
@@ -27,22 +28,22 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Annotazioni durante la modifica di una pagina](annotations.md)
    + [Creazione e organizzazione delle pagine](managing-pages.md)
    + [Modifica del contenuto di una pagina](editing-content.md)
-   + [Utilizzo dell’editor Rich Text per creare contenuto](rich-text-editor.md)
+   + [Utilizzo dell’Editor Rich Text per l’authoring dei contenuti](rich-text-editor.md)
    + [Modifica delle proprietà di una pagina](editing-page-properties.md)
    + [Pubblicazione delle pagine](publishing-pages.md)
    + [Authoring delle pagine con frammenti di contenuto](content-fragments.md)
    + [Frammenti esperienza](experience-fragments.md)
    + [Esportazione in formato CSV](csv-export.md)
    + [Componenti](default-components.md)
-   + [Authoring di una pagina per dispositivi mobili](mobile.md)
-   + [Risoluzione di problemi AEM nell’ambiente di creazione](troubleshooting.md)
+   + [Authoring di una pagina per dispositivi mobili  ](mobile.md)
+   + [Risoluzione di problemi AEM nell’ambiente di authoring ](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
-   + [Best practice](best-practices.md)
+   + [Best practice  ](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Utilizzo dei tag](tags.md)
-   + [Creazione di modelli di pagina](templates.md)
+   + [Creazione di modelli di pagina  ](templates.md)
    + [Sistema di stili](style-system.md)
-   + [Utilizzo delle versioni di una pagina](working-with-page-versions.md)
+   + [Utilizzo delle versioni di una pagina  ](working-with-page-versions.md)
    + [Differenze tra pagine](page-diff.md)
    + [Console Componenti](default-components-console.md)
    + [Layout reattivo](responsive-layout.md)
@@ -55,7 +56,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Visualizzazione dei dati analitici sulle pagine](page-analytics-using.md)
 + Progetti {#projects}
    + [Progetti](projects.md)
-   + [Gestione di progetti](touch-ui-managing-projects.md)
+   + [Gestione dei progetti](touch-ui-managing-projects.md)
    + [Utilizzo delle attività](task-content.md)
    + [Integrazione di Progetto creativo e PIM](managing-product-information.md)
    + [Utilizzo dei flussi di lavoro del progetto](projects-with-workflows.md)
@@ -80,10 +81,10 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Creazione di contenuti mirati utilizzando la modalità Targeting](content-targeting-touch.md)
    + [Lavorare con i contenuti di destinazione in multisito](multisite-support-targeted-content.md)
    + [Struttura della gestione multisito per contenuti di destinazione](technical-multisite-targeted.md)
-   + [Gestione delle attività](activitylib.md) 
-   + [Gestione pubblico](managing-audiences.md)
-   + [Creazione e gestione di Offerte](offerlib.md) 
-   + [Informazioni sulla segmentazione](segmentation-overview.md)
+   + [Gestione delle attività](activitylib.md)
+   + [Gestione dei tipi di pubblico](managing-audiences.md)
+   + [Creazione e gestione delle offerte](offerlib.md)
+   + [Segmentazione](segmentation-overview.md)
 + AEM e Adobe Campaign {aem-adobe-campaign}
    + [Utilizzo di Adobe Campaign](adobe-campaign.md)
    + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
