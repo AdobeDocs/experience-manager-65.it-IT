@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
+source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
 
 ---
 
@@ -100,7 +100,7 @@ A meno che non disponiate di una disposizione speciale per utilizzare il server 
    * **[!UICONTROL Sincronizza tutto il contenuto]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Selezionato per impostazione predefinita. Deselezionate questa opzione se desiderate includere o escludere selettivamente le risorse dalla sincronizzazione a elementi multimediali dinamici. Deselezionando questa opzione, potete scegliere tra le due seguenti modalità di sincronizzazione per elementi multimediali dinamici:
 
    * **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
-      * **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non venga contrassegnata una cartella specifica per l’esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non venga contrassegnata una cartella specifica per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non si contrassegna in modo esplicito una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.
 Per contrassegnare una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici, selezionate una cartella di risorse, quindi fate clic su **[!UICONTROL Proprietà]** sulla barra degli strumenti. Nella scheda **[!UICONTROL Dettagli]** , nell’elenco a discesa Modalità **[!UICONTROL sincronizzazione file multimediali]** dinamici, scegliete una delle tre opzioni seguenti. Al termine, toccate **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se avete selezionato **Sincronizza tutto il contenuto**in precedenza.*
          * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito sulla cartella; invece, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.
@@ -323,7 +323,7 @@ Sebbene l’impostazione di una convenzione di denominazione predefinita non sia
 
 In alternativa, è possibile utilizzare **[!UICONTROL Visualizza codice]** senza campi modulo. In questa visualizzazione potete creare definizioni complete delle convenzioni di denominazione utilizzando espressioni regolari.
 
-Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una convenzione di denominazione individuale di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
+Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una singola convenzione di denominazione di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
 
 **Per configurare la denominazione predefinita**
 
