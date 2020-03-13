@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 
 ---
 
@@ -31,15 +31,15 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Pubblicazione delle pagine](classic-page-author-publish-pages.md)
    + [Modifica delle proprietà di una pagina](classic-page-author-edit-page-properties.md)
    + [Annotazioni durante la modifica di una pagina](classic-page-author-annotations.md)
-   + [Risoluzione di problemi AEM nell’ambiente di creazione](classic-page-author-troubleshooting.md)
+   + [Risoluzione di problemi AEM nell’ambiente di authoring ](classic-page-author-troubleshooting.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Authoring di una pagina per dispositivi mobili](classic-feature-mobile.md)
+   + [Authoring di una pagina per dispositivi mobili  ](classic-feature-mobile.md)
    + [Componenti per l’authoring delle pagine](classic-page-author-edit-mode.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](classic-page-author-keyboard-shortcuts.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Authoring delle pagine con frammenti di contenuto](classic-page-author-content-fragments.md)
    + [Layout reattivo](classic-page-author-responsive-layout.md)
-   + [Utilizzo delle versioni di una pagina](classic-page-author-work-with-versions.md)
+   + [Utilizzo delle versioni di una pagina  ](classic-page-author-work-with-versions.md)
    + [Utilizzo dei tag](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurazione dei componenti in modalità Progettazione](classic-page-author-design-mode.md)
@@ -55,7 +55,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Modifica dei lanci](classic-launches-editing.md)
    + [Promozione del lancio](classic-launches-promoting.md)
 + Personalizzazione {#personalization}
-   + [Informazioni sulla segmentazione](classic-personalization-campaigns-segmentation.md)
+   + [Segmentazione](classic-personalization-campaigns-segmentation.md)
    + [Gestione delle campagne](classic-personalization-campaigns.md)
    + [Teaser e strategie](classic-personalization-campaigns-teasers-strategy.md)
    + [Pagine di destinazione](classic-personalization-campaigns-landingpage.md)
@@ -74,11 +74,12 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Utilizzo di Adobe Campaign](classic-personalization-ac.md)
    + [Componenti di Adobe Campaign](classic-personalization-ac-components.md)
    + [Targeting con Adobe Campaign](classic-personalization-ac-target.md)
+   + [Creazione di moduli di Adobe Campaign in AEM](classic-personalization-ac-forms.md)
 + Authoring delle risorse nell’interfaccia classica {#assets}
    + [Utilizzo delle risorse](classicui-assets.md)
    + [Distribuzione di risorse Dynamic Media](dynamic-media-assets-delivering.md)
    + [Aggiunta di Risorse multimediali dinamiche alle pagine](dynamic-media-assets-adding-to-page.md)
    + [Aggiunta di funzionalità di Scene7 alla pagina](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
-   + [Utilizzo di elementi multimediali dinamici](dynamic-media-assets.md)
+   + [Utilizzo di Dynamic Media](dynamic-media-assets.md)
    + [Convenzioni di denominazione per il test delle risorse](asset-naming-conventions.md)
