@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ded190d4fee4e4ef9849dc34372774c529844f
+source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
 
 ---
 
@@ -38,7 +38,7 @@ Alcune funzioni chiave e miglioramenti introdotti in AEM 6.5.4.0 includono:
 
 * Supporto per [Rich Text](../forms/using/designing-form-template.md) nei moduli HTML5.
 
-* Miglioramenti dell’accessibilità in Risorse.
+* [Miglioramenti](new-features-latest-service-pack.md#accessibility-enhancements) dell&#39;accessibilità in Experience Manager Assets.
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.10.8.
 
