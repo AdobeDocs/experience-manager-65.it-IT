@@ -1,18 +1,18 @@
 ---
 title: Note sulla versione di AEM Sites
-description: Note sulla versione specifiche di Adobe Experience Manager 6.4 Sites.
+description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Sites.
 uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
 
-# AEM Sites Note sulla versione{#aem-sites-release-notes}
+# Note sulla versione di AEM Sites{#aem-sites-release-notes}
 
 Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferimenti:
 
@@ -95,7 +95,7 @@ Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferim
 
 ## Gestione multisito (MSM) {#multi-site-management-msm}
 
-* Per le configurazioni di rollout che utilizzano PushOnModify, una migliore gestione dell&#39;operazione di spostamento pagina per evitare uno stato incoerente
+* Per le configurazioni di rollout che utilizzano PushOnModify, una migliore gestione dell&#39;operazione di spostamento delle pagine per evitare uno stato incoerente
 * La creazione di una nuova pagina all’interno della struttura di livecopy creerà ora per impostazione predefinita una pagina autonoma
 * Utilizzate le funzionalità MSM nelle app a pagina singola che utilizzano l&#39;SDK JS (detto anche editor SPA)
 
