@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -60,7 +60,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    [ ![Barra degli strumenti](assets/advancedediting.png)
 
-   * **Collegamento**: Inserisci collegamento ipertestuale nel testo. Toccate **[!UICONTROL Collegamento]**, specificate il collegamento nel campo **[!UICONTROL URL]** , rimuovete il nome oggetto predefinito dal campo Testo **** Alt e toccate ![Salva](assets/save_icon.svg).
+   * **Collegamento**: Inserisci [collegamento ipertestuale](#insert-hyperlink) nel testo.
    * **Ripeti**: Ripete la stampa dell&#39;elemento raccolta nel dizionario dati utilizzando un delimitatore.
    * **Condizione**: Toccate per inserire una condizione. Inserisci testo in base alla condizione. Se la condizione è true, il testo è visibile nella lettera, altrimenti non è visibile.
    * **Aggiungi descrizione**: Aggiungete un’annotazione a un elemento di testo. Si tratta di metadati visibili all’autore, ma non a una parte della lettera creata.
@@ -131,6 +131,18 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
 1. È possibile utilizzare le condizioni in linea e ripetere per rendere la lettera altamente contestuale e ben strutturata. Per ulteriori informazioni sulle condizioni in linea e sulla ripetizione, vedere Condizioni in [linea e ripetere in lettere](/help/forms/using/cm-inline-condition.md).
 1. Toccate **Salva**.
+
+#### Inserire un collegamento ipertestuale in un testo {#insert-hyperlink}
+
+Per creare un collegamento ipertestuale in una risorsa di testo, effettuate le seguenti operazioni:
+
+1. Selezionare l&#39;oggetto testo o modello dati nell&#39;editor di testo.
+
+2. Toccate **[!UICONTROL Collega]**. Toccare il campo Testo **** Alt per rimuovere il nome o il testo dell&#39;oggetto modello dati esistente.
+
+3. Specificate l&#39;URL e toccate ![Salva](assets/save_icon.svg).
+
+![Creare un collegamento ipertestuale in una risorsa di testo](assets/text-create-hyperlink.png)
 
 #### Ricerca e sostituzione del testo {#searching-and-replacing-text}
 
