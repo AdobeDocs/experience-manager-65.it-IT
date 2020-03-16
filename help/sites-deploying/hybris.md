@@ -12,7 +12,7 @@ discoiquuid: c5dcc90a-05d2-4701-a625-2b655ad0b458
 docset: aem65
 pagetitle: Deploying eCommerce with hybris
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 9e39868768d2fc70f587b18d36042e742d5fae45
 
 ---
 
@@ -42,13 +42,13 @@ Questo è disponibile nella sezione inglese (US) del sito Geometrixx Outdoors `/
 * [Informazioni](#productinformationwithcolorvariants) sul prodotto (con eventuali varianti di colore)
 
 * [Sovrapposizioni di contenuti del carrello](#shoppingcartcontentoverview)
-* [Iscrizione](#customersignup) cliente e accesso [cliente](#customersignin)
+* [Iscrizione](#customersignup) del cliente e accesso [del cliente](#customersignin)
 
 * [Accesso alla console di gestione ibrida](#accesstothehybrismanagementconsole)
 
 ### Requisiti tecnici - hybris Server {#technical-requirements-hybris-server}
 
-L&#39;estensione hybris di eCommerce Integration Framework è stata aggiornata per supportare Hybris 5 (come impostazione predefinita), pur mantenendo la compatibilità con [Hybris 4](/help/sites-developing/hybris.md#developing-for-hybris).
+L&#39;estensione hybris di eCommerce Integration Framework è stata aggiornata per supportare Hybris 5 (come impostazione predefinita), pur mantenendo la compatibilità con Hybris 4 <!--[Hybris 4](/help/sites-developing/hybris.md#developing-for-hybris). -->
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
    >
    >Sarà necessario un account (da hybris) per accedere a questo.
 
-1. Decomprimete il file di distribuzione nel percorso richiesto (denominato &lt;directory-radice>).
+1. Decomprimete il file di distribuzione nel percorso richiesto (denominato &lt;directory-radice-hybris>).
 1. Dalla riga di comando, eseguire le operazioni seguenti:
 
    ```shell
@@ -185,7 +185,7 @@ I passaggi descritti in questa procedura consentono di scaricare e creare il ser
 
    >[!NOTE]
    >
-   >A seconda del sistema, il completamento di diversi passaggi potrebbe richiedere alcuni minuti.
+   >A seconda del sistema in uso, il completamento di diversi passaggi potrebbe richiedere alcuni minuti.
 
 1. Nel browser, accedete alla console **di amministrazione** ibrida all’indirizzo:
 
@@ -219,7 +219,7 @@ Questa procedura consente di caricare e configurare lo store dimostrativo Geomet
 
    [Ottieni file](assets/geometrixx-outdoors-export.csv)
 
-1. Impostare l&#39;impostazione **delle impostazioni** internazionali su:
+1. Impostate l&#39;impostazione **delle impostazioni** internazionali su:
 
    `en_US - English (United States)`
 
@@ -240,7 +240,7 @@ Questa procedura consente di caricare e configurare lo store dimostrativo Geomet
 
    [Ottieni file](assets/base-store-5_7.csv)
 
-1. Impostare l&#39;impostazione **delle impostazioni** internazionali su:
+1. Impostate l&#39;impostazione **delle impostazioni** internazionali su:
 
    `en_US - English (United States)`
 
