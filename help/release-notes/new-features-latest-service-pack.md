@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
+source-git-commit: ed756d785864131c2e031aec4331388bc057576b
 
 ---
 
@@ -39,15 +39,17 @@ Potete creare una nuova integrazione o aggiornare le impostazioni di integrazion
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-* Le caselle di controllo con stato misto dispongono ora di un attributo con controllo aria con valore &quot;misto&quot; per esporre lo stato misto agli assistenti vocali.
+Experience Manager Assets include i seguenti miglioramenti a livello di accessibilità:
 
-* I controlli basati su tastiera sono ora supportati oltre ai gesti basati sul percorso per spostarsi intorno alle immagini ingrandite.
+* I tasti freccia sulla tastiera possono essere utilizzati per spostare e scorrere le aree all&#39;interno delle immagini ingrandite. Per ulteriori informazioni, consultate [Anteprima delle risorse solo](../assets/managing-assets-touch-ui.md#previewing-assets)con i tasti di scelta rapida.
 
-* Nelle etichette dei campi sono stati inseriti vincoli di formato data che consentono agli utenti di utilizzare solo la tastiera per immettere manualmente la data.
+* Le caselle di controllo dello stato misto (in cui, a meno che non si selezionino tutti i predicati nidificati, le caselle di controllo di primo livello non vengono selezionate e vengono evidenziate) nel pannello Filtri sono leggibili dagli assistenti vocali.
 
-* L&#39;attributo Alt è stato aggiunto alle icone decorative e rimosso l&#39;attributo role=img, in modo che tali icone e immagini non siano esposte agli utenti dell&#39;assistente vocale.
+* Le limitazioni relative al formato di data e ora sono fornite nelle etichette dei campi data, per consentire agli utenti di immettere la data nel formato corretto utilizzando la tastiera.
 
-* È stato aggiunto l&#39;attributo Alt per chiudere le icone e indicare agli utenti dell&#39;assistente vocale quando si spostano con il tasto Tab.
+   Esempio, `On Time (MM-DD-YYYY HH:mm)`. Qui MM è mese in formato a due cifre, AAAA è anno, GG è giorno in formato a due cifre, HH è ora in formato militare a 24 ore e mm è minuto.
+
+* Il `X` simbolo sul pulsante per rimuovere i tag attualmente selezionati viene ora annunciato dagli assistenti vocali insieme al numero di tag selezionati.
 
 ## AEM Forms {#aem-forms}
 
