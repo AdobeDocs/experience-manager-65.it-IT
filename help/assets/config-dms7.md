@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
+source-git-commit: 64fe2634bae6289aa313dd1e5a135d1bdd654dbe
 
 ---
 
@@ -92,8 +92,9 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
 
    * **[!UICONTROL Percorso cartella principale della società]**
 
-   * **[!UICONTROL Pubblicazione delle risorse]** - l’opzione **[!UICONTROL Immediatamente]** significa che quando vengono caricate le risorse, il sistema le raccoglie e fornisce l’URL/Incorpora immediatamente. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse. L’opzione **[!UICONTROL Al momento dell’attivazione]** indica che è necessario pubblicare esplicitamente la risorsa prima di fornire un collegamento URL/Incorpora.
-
+   * **[!UICONTROL Pubblicazione delle risorse]** - Potete scegliere tra le tre opzioni seguenti:
+      * **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le raccoglie e fornisce l’URL/Incorpora immediatamente. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.
+      * **[!UICONTROL Al momento dell’attivazione]** , è necessario pubblicare la risorsa in modo esplicito prima di fornire un collegamento URL/Incorpora.
    * **[!UICONTROL Server]** di anteprima protetto: consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM può accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (non viene inviato alcun file binario all’istanza di AEM).
 A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale, Adobe Systems consiglia di lasciare questa impostazione come specificato.
 
@@ -323,7 +324,7 @@ Sebbene l’impostazione di una convenzione di denominazione predefinita non sia
 
 In alternativa, è possibile utilizzare **[!UICONTROL Visualizza codice]** senza campi modulo. In questa visualizzazione potete creare definizioni complete delle convenzioni di denominazione utilizzando espressioni regolari.
 
-Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una singola convenzione di denominazione di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
+Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una convenzione di denominazione individuale di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
 
 **Per configurare la denominazione predefinita**
 
