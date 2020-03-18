@@ -3,7 +3,7 @@ title: Formati supportati per le risorse
 description: Elenco dei formati di file supportati da Risorse AEM e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
+source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
 
 ---
 
@@ -55,11 +55,11 @@ I formati immagine raster supportati per le funzioni di Dynamic Media sono i seg
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
- &amp;ast; L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
+&amp;ast; L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
 Oltre alle informazioni di cui sopra, considerate quanto segue:
 
-* Il supporto per i file EPS si applica solo alle immagini raster. Ad esempio, la generazione di miniature per le immagini vettoriali EPS non è supportata per impostazione predefinita. Per aggiungere supporto, [configurare ImageMagick](best-practices-for-imagemagick.md). Per integrare strumenti di terze parti per abilitare funzionalità aggiuntive, vedi Gestore [multimediale basato su riga di](media-handlers.md#command-line-based-media-handler)comando.
+* Il supporto per i file EPS si applica solo alle immagini raster. Ad esempio, la generazione di miniature per le immagini vettoriali EPS non è supportata per impostazione predefinita. Per aggiungere supporto, [configurare ImageMagick](best-practices-for-imagemagick.md). Per integrare strumenti di terze parti per abilitare funzionalità aggiuntive, consulta Gestore [multimediale basato su riga di](media-handlers.md#command-line-based-media-handler)comando.
 
 * La funzione di reimpostazione dei metadati funziona per il formato di file PSB quando viene aggiunta al `NComm` gestore.
 
@@ -71,7 +71,7 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 
 La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file Adobe Illustrator e PDF di grandi dimensioni e ricchi di contenuti. Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
 
-* I file AI/PDF che richiedono molta risorse per l&#39;elaborazione.
+* I file AI/PDF ad alta intensità di contenuto che richiedono molte risorse per l&#39;elaborazione.
 * File AI/PDF, per i quali le miniature non vengono generate per impostazione predefinita.
 * File AI con colori Pantone Matching System (PMS).
 
@@ -93,7 +93,7 @@ La libreria Adobe Camera Raw consente a Risorse AEM di acquisire immagini crude.
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti:
 
-| Formato | Archiviazione | Gestione metadati<br> | Metadata<br> extraction | Generazione delle miniature<br> | Modifica interattiva<br> | Write-back metadati<br> | [Approfondimenti](touch-ui-asset-insights.md) | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
+| Formato | Archiviazione | Gestione dei metadati<br> | Metadata<br> extraction | Generazione delle miniature<br> | Modifica interattiva<br> | Write-back metadati<br> | [Approfondimenti](touch-ui-asset-insights.md) | [Risorse collegate](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
@@ -188,18 +188,17 @@ I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM
 
 ## Altri formati supportati {#other-supported-formats}
 
-L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di file è descritta nella tabella seguente.
+L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di file è descritta nella tabella seguente. Per tutti i file è supportata la funzionalità DAM standard, eccetto Dynamic Media Delivery.
 
 | Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (se configurato con un proprio dominio di consegna) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Gli altri formati sono supportati in DAM per l&#39;archiviazione, il controllo delle versioni, ACL, il flusso di lavoro, la pubblicazione e la gestione dei metadati.
+**&amp;ast;** Gli altri formati sono supportati in DAM per l&#39;archiviazione, il controllo delle versioni, ACL, il flusso di lavoro, la pubblicazione e la gestione dei metadati.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -209,7 +208,7 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite all&#39;indirizz
 
 Consultate [Configurazione del supporto](config-dynamic.md)dei parametri di processo di caricamento in base al tipo MIME.
 
-Consultate anche [Abilitazione del supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento di risorse/Scene7 basati su tipi MIME.
+Consultate anche [Abilitazione del supporto](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di processo di caricamento di risorse/Scene7 basati su tipi MIME.
 
 | Estensione file | Tipo MIME/ Tipo di supporto Internet | Valore jobParam predefinito | Valore jobParam consentito |
 |---|---|---|---|
@@ -247,7 +246,7 @@ Consultate anche [Abilitazione del supporto](/help/sites-administering/scene7.md
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
