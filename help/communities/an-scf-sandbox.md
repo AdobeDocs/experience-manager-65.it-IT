@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
@@ -50,14 +50,14 @@ Questa esercitazione presuppone che siano installati un’istanza di creazione A
 
 Di seguito sono riportati alcuni utili collegamenti per gli sviluppatori che hanno introdotto la piattaforma AEM:
 
-* [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) : per distribuire le istanze di AEM
+* [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started): per la distribuzione di istanze AEM
 
-   * [Nozioni di base](../../help/sites-developing/the-basics.md) - Per gli sviluppatori di siti Web e funzionalità
-   * [Primi passi per gli autori](../../help/sites-authoring/first-steps.md) - Per creare contenuti di una pagina
+   * [Nozioni di base](../../help/sites-developing/the-basics.md): per sviluppatori di siti Web e funzionalità
+   * [Primi passi per gli autori](../../help/sites-authoring/first-steps.md): per la creazione di contenuto di una pagina
 
 ## Utilizzo dell&#39;ambiente di sviluppo CRXDE Lite {#using-crxde-lite-development-environment}
 
-Gli sviluppatori AEM dedicano gran parte del loro tempo all’ambiente di sviluppo [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) in un’istanza di authoring. CRXDE Lite offre un accesso meno limitato al repository CRX. Gli strumenti dell’interfaccia classica e le console dell’interfaccia touch consentono di accedere in modo più strutturato a porzioni specifiche dell’archivio CRX.
+Gli sviluppatori AEM dedicano gran parte del loro tempo all’ambiente di sviluppo [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) in un’istanza di authoring. CRXDE Lite offre un accesso meno limitato all&#39;archivio CRX. Gli strumenti dell’interfaccia classica e le console dell’interfaccia touch consentono di accedere in modo più strutturato a porzioni specifiche dell’archivio CRX.
 
 Dopo l&#39;accesso con privilegi amministrativi, esistono diversi modi per accedere a CRXDE Lite:
 
@@ -71,7 +71,7 @@ Dopo l&#39;accesso con privilegi amministrativi, esistono diversi modi per acced
 
 3. Passa direttamente a `CRXDE Lite`: `<server>:<port>/crx/de`
 
-   Ad esempio, in un’istanza di creazione locale: ` [http://localhost:4502/crx/de](http://localhost:4502/crx/de)`
+   Ad esempio, in un’istanza di creazione locale: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 Per lavorare con CRXDE Lite, dovete accedere con i privilegi di sviluppatore o amministratore. Per l&#39;istanza localhost predefinita, è possibile accedere con
 
@@ -79,10 +79,10 @@ Per lavorare con CRXDE Lite, dovete accedere con i privilegi di sviluppatore o a
 * `password: admin`
 
 
-**Tieni presente** che questo accesso si interromperà e che sarà necessario eseguire nuovamente l&#39;accesso utilizzando il pull down a destra della barra degli strumenti CRXDe Lite.
+**Tieni presente** che questo accesso si interromperà e che sarà necessario eseguire nuovamente l&#39;accesso utilizzando il pull down all&#39;estremità destra della barra degli strumenti CRXDe Lite.
 
 Se non è stato effettuato l&#39;accesso, non sarà possibile navigare nell&#39;archivio JCR né eseguire operazioni di modifica/salvataggio.
 
-***In caso di dubbi, effettuate nuovamente il login!***
+***In caso di dubbi, effettuate nuovamente l&#39;accesso!***
 
 ![chlimage_1-352](assets/chlimage_1-352.png)
