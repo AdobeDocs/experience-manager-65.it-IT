@@ -1,8 +1,8 @@
 ---
 title: Accesso a UGC con SRP
 seo-title: Accesso a UGC con SRP
-description: Quando un sito è configurato per utilizzare ASRP o MSRP, l'UGC effettivo non viene memorizzato nell'archivio nodi di AEM (JCR)
-seo-description: Quando un sito è configurato per utilizzare ASRP o MSRP, l'UGC effettivo non viene memorizzato nell'archivio nodi di AEM (JCR)
+description: Quando un sito è configurato per l’utilizzo di ASRP o MSRP, l’UGC effettivo non viene memorizzato nell’archivio nodi di AEM (JCR)
+seo-description: Quando un sito è configurato per l’utilizzo di ASRP o MSRP, l’UGC effettivo non viene memorizzato nell’archivio nodi di AEM (JCR)
 uuid: 30549f93-e370-4b8b-a35a-69e05884227e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Accesso a UGC con SRP{#accessing-ugc-with-srp}
+# Accesso a UGC con SRP {#accessing-ugc-with-srp}
 
 ## Informazioni su SRP {#about-srp}
 
@@ -69,7 +69,7 @@ Diversi SRP possono avere lingue di query native diverse. È consigliabile utili
 
 Per ulteriori informazioni, consulta [Ricerca in Essentials](/help/communities/search-implementation.md).
 
-## Risorse {#resources}
+## Riferimenti {#resources}
 
 * [Archiviazione](/help/communities/working-with-srp.md) dei contenuti della community - illustra le opzioni SRP disponibili per uno store comune UGC
 * [Panoramica](/help/communities/srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
