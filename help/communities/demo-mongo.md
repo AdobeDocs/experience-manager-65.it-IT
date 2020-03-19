@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -69,7 +69,7 @@ Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 
 >[!NOTE]
 >
->Se MongoDB viene avviato *dopo *AEM, **riavviare **tutte le istanze **AEM **in modo che si connettano correttamente a MongoDB.
+>Se MongoDB viene avviato *dopo* AEM, **riavviate** tutte le istanze **AEM** in modo che si connettano correttamente a MongoDB.
 
 ### Opzione Produzione Demo: Imposta set di replica MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -121,7 +121,7 @@ Per semplicità, utilizzando la versione 4.10 come esempio, avviate Solr in moda
 * da CD a &lt;solrinstall>/example
 * java -jar start.jar
 
-Verrà avviato un server Solr HTTP utilizzando la porta predefinita 8983. Per ottenere una console Solr per il test, potete accedere alla console Solr.
+Verrà avviato un server Solr HTTP utilizzando la porta predefinita 8983. Per ottenere una console Solr da testare, è possibile accedere alla console Solr.
 
 * console Solr predefinita: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
