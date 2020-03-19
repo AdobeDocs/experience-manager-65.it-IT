@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
 
 ---
 
@@ -24,7 +24,7 @@ Quando la distribuzione è una farm [di](/help/sites-deploying/recommended-deplo
 
 Gli utenti e i gruppi di utenti (dati utente) creati nell’ambiente di pubblicazione non sono necessari nell’ambiente di authoring.
 
-La maggior parte dei dati utente creati nell’ambiente di authoring deve rimanere nell’ambiente di authoring e non essere copiata nelle istanze di pubblicazione.
+La maggior parte dei dati utente creati nell’ambiente di authoring deve restare nell’ambiente di authoring e non deve essere copiata nelle istanze di pubblicazione.
 
 Per poter accedere agli stessi dati utente, le registrazioni e le modifiche effettuate su un’istanza di pubblicazione devono essere sincronizzate con altre istanze di pubblicazione.
 
@@ -36,7 +36,7 @@ I dati utente, insieme ai relativi [ACL](/help/sites-administering/security.md),
 
 Rispetto alla replica tradizionale, i vantaggi della sincronizzazione utente mediante la distribuzione Sling sono i seguenti:
 
-* *gli utenti*, i profili ** utente e i gruppi *di* utenti creati al momento della pubblicazione non vengono creati all’autore
+* *gli utenti*, i profili ** utente e i gruppi *di* utenti creati al momento della pubblicazione non vengono creati in fase di creazione
 
 * La distribuzione Sling imposta le proprietà negli eventi jcr, consentendo di agire all&#39;interno dei listener di eventi lato pubblicazione senza preoccuparsi di cicli di replica infiniti
 * La distribuzione Sling invia solo i dati utente alle istanze di pubblicazione non originarie, eliminando il traffico non necessario
@@ -50,7 +50,7 @@ Rispetto alla replica tradizionale, i vantaggi della sincronizzazione utente med
 >
 >La sincronizzazione del gruppo di ***amministratori*** non è supportata, anche se è abilitata la sincronizzazione degli utenti. Al contrario, un&#39;operazione di importazione delle diff verrà registrata nel registro degli errori.
 >
->Pertanto, se la distribuzione è una farm di pubblicazione, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
+>Pertanto, se la distribuzione è una pubblicazione farm, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
 
 ## Abilita sincronizzazione utente {#enable-user-sync}
 
@@ -60,7 +60,7 @@ Rispetto alla replica tradizionale, i vantaggi della sincronizzazione utente med
 >
 >L&#39;abilitazione della sincronizzazione utente comporta la modifica delle configurazioni OSGi *esistenti* .
 >
->Non è necessario aggiungere nuove configurazioni per abilitare la sincronizzazione utente.
+>Non è necessario aggiungere nuove configurazioni per abilitare la sincronizzazione degli utenti.
 
 La sincronizzazione utente si basa sull’ambiente di authoring per gestire le distribuzioni dei dati utente, anche se i dati utente non vengono creati in fase di creazione. Gran parte, ma non tutti, della configurazione avviene nell’ambiente di authoring e ogni passaggio indica chiaramente se deve essere eseguita sull’autore o sulla pubblicazione.
 
@@ -77,7 +77,7 @@ Una volta attivata la sincronizzazione degli utenti, vengono sincronizzati solo 
 * [Aggiornamenti della piattaforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [Aggiornamenti di AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
-### 1.Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory}
+### 1. Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Abilita sincronizzazione utente**
 
@@ -141,7 +141,7 @@ Una volta attivata la sincronizzazione degli utenti, vengono sincronizzati solo 
    * **Tipo**: `Allow`
    * **Privilegi**: `jcr:all`
    * **Limitazioni** rep:idspn: `*/activities/*`
-   * selezionare **OK**
+   * selezionate **OK**
 
 * seleziona **Salva tutto**
 
@@ -174,7 +174,7 @@ Una volta creato un utente autorizzato, membro del gruppo di utenti **`administr
 
 ![](assets/chlimage_1-22.png)
 
-### 4.Apache Sling Distribution Agent - Coda Agenti Factory {#apache-sling-distribution-agent-queue-agents-factory}
+### 4. Apache Sling Distribution Agent - Coda Agenti Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Abilita sincronizzazione utente**
 
@@ -218,7 +218,7 @@ Una volta creato un utente autorizzato, membro del gruppo di utenti **`administr
 
 ![](assets/screen-shot_2019-05-24at090809.png)
 
-### 6.Trigger di distribuzione Apache Sling - Factory Triggers programmati {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### 6. Trigger di distribuzione Apache Sling - Factory Triggers programmati {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Facoltativo) modificare l’intervallo di polling**
 
@@ -244,9 +244,9 @@ Per impostazione predefinita, l’autore effettua il sondaggio per le modifiche 
 
 ## Configurare per più istanze di pubblicazione {#configure-for-multiple-publish-instances}
 
-La configurazione predefinita è per una singola istanza di pubblicazione. Poiché l’abilitazione della sincronizzazione degli utenti consente di sincronizzare più istanze di pubblicazione, ad esempio per una farm di pubblicazione, è necessario aggiungere ulteriori istanze di pubblicazione alla fabbrica di sincronizzazione agenti.
+La configurazione predefinita è per una singola istanza di pubblicazione. Poiché l’abilitazione della sincronizzazione degli utenti consente di sincronizzare più istanze di pubblicazione, ad esempio per una farm di pubblicazione, è necessario aggiungere ulteriori istanze di pubblicazione alla fabbrica di sincronizzazione degli agenti.
 
-### 7.Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory-1}
+### 7. Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Aggiungi istanze di pubblicazione:**
 
@@ -263,19 +263,19 @@ La configurazione predefinita è per una singola istanza di pubblicazione. Poich
 
 ![](assets/chlimage_1-25.png)
 
-* **Endpoint** esportazione Per ogni editore deve essere presente un endpoint di esportazione. Ad esempio, se ci sono 2 editori, localhost:4503 e 4504, dovrebbero essere 2 voci:
+* **Endpoint** di esportazione Per ogni editore deve essere presente un endpoint di esportazione. Ad esempio, se ci sono 2 editori, localhost:4503 e 4504, dovrebbero essere 2 voci:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
-* **Endpoint** importazioneÈ necessario un endpoint di importazione per ogni editore. Ad esempio, se ci sono 2 editori, localhost:4503 e 4504, dovrebbero essere 2 voci:
+* **Endpoint** importazioneÈ necessario disporre di un endpoint di importazione per ogni editore. Ad esempio, se ci sono 2 editori, localhost:4503 e 4504, dovrebbero essere 2 voci:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
 * select `Save`
 
-### 8.Listener di sincronizzazione utenti di AEM Communities {#aem-communities-user-sync-listener}
+### 8. Listener di sincronizzazione utenti di AEM Communities {#aem-communities-user-sync-listener}
 
 **(Facoltativo) Sincronizzare nodi JCR aggiuntivi**
 
@@ -318,7 +318,7 @@ Cartelle predefinite da sincronizzare
    * social/relazioni
    * attività
 
-### 9.ID Sling univoco {#unique-sling-id}
+### 9. ID Sling univoco {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -328,7 +328,7 @@ Se l’ID Sling è lo stesso per più istanze pubblicate in una farm di pubblica
 
 Per verificare che tutti i valori Sling ID siano diversi, per ogni istanza di pubblicazione:
 
-1. individuare [https://*host:porta*/sistema/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. individuare `http://<host>:<port>/system/console/status-slingsettings`
 1. verifica il valore di **Sling ID**
 
 ![](assets/chlimage_1-27.png)
@@ -542,7 +542,7 @@ Per configurare o abilitare la sincronizzazione degli utenti, andate al punto 1:
 
 ### Quando un editore diventa non disponibile {#when-a-publisher-becomes-unavailable}
 
-Quando un&#39;istanza di pubblicazione diventa non disponibile, non deve essere rimossa se torna online in futuro. Le modifiche verranno messe in coda per l&#39;editore e, una volta che l&#39;editore sarà nuovamente online, saranno elaborate.
+Quando un&#39;istanza di pubblicazione diventa non disponibile, non deve essere rimossa se torna in linea in futuro. Le modifiche verranno messe in coda per l&#39;editore e, una volta che l&#39;editore sarà nuovamente online, saranno elaborate.
 
 Se l’istanza di pubblicazione non torna mai online, se è offline in modo permanente, deve essere rimossa perché la compilazione della coda comporterà un utilizzo notevole dello spazio su disco nell’ambiente di authoring.
 
@@ -558,7 +558,7 @@ Quando un editore non è attivo, nel registro dell’autore sono presenti eccezi
 
 ### Come rimuovere un editore {#how-to-remove-a-publisher}
 
-Per rimuovere un editore da [Apache Sling Distribution Agent - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory), la coda di distribuzione deve essere vuota e silenziosa.
+Per rimuovere un editore dall&#39;agente di distribuzione [Apache Sling - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory), la coda di distribuzione deve essere vuota e silenziosa.
 
 * autore:
 
@@ -567,6 +567,6 @@ Per rimuovere un editore da [Apache Sling Distribution Agent - Sync Agent Factor
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
-   * riabilitare la sincronizzazione utente
+   * riabilitare la sincronizzazione degli utenti
 
       * selezionare la `Enabled` casella di controllo per [Apache Sling Distribution Agent - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory)
