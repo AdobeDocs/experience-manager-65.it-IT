@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Utilizzo dei commenti{#using-comments}
+# Utilizzo dei commenti {#using-comments}
 
 ## Introduzione {#introduction}
 
@@ -24,8 +24,8 @@ La funzione commenti consente ai visitatori del sito che hanno effettuato l’ac
 
 Il documento descrive:
 
-* aggiunta `Comments`a una pagina.
-* impostazioni di configurazione per il `Comments`componente.
+* Aggiunta `Comments`a una pagina.
+* Impostazioni di configurazione per il `Comments`componente.
 
 >[!NOTE]
 >
@@ -33,13 +33,13 @@ Il documento descrive:
 
 ### Aggiunta di commenti a una pagina {#adding-comments-to-a-page}
 
-Per aggiungere un `Comments`componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un `Comments`componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
 
 * `Communities / Comments`
 
 trascinatelo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione in cui gli utenti possono inserire commenti oppure semplicemente nella parte inferiore della pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
 Quando sono incluse le librerie [lato client](/help/communities/essentials-comments.md#essentials-for-client-side) richieste, viene visualizzato così il `Comments`componente.
 
@@ -81,7 +81,7 @@ Nella scheda **Commenti** , specificare il modo in cui i visitatori inseriscono 
 
 * **Tipi di file consentiti**
 
-   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Un elenco separato da virgole di estensioni di nomi di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non sono consentiti. Il valore predefinito non è specificato in modo che** **tutti i tipi di file siano consentiti.
+   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Un elenco separato da virgole di estensioni di nomi di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non sono consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Editor Rich Text**
 
@@ -101,9 +101,11 @@ Nella scheda **Commenti** , specificare il modo in cui i visitatori inseriscono 
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda **User Moderation **specificare la modalità di gestione dei commenti inviati. Per ulteriori informazioni, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Nella scheda Moderazione **** utente, specificate le modalità di gestione dei commenti inviati. Per ulteriori informazioni, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
 
-* **Pre-moderazione** Se questa opzione è selezionata, i commenti devono essere approvati prima di essere visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
+* **Premoderazione**
+
+   Se questa opzione è attivata, i commenti devono essere approvati prima di essere visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
 * **Elimina commenti**
 
@@ -139,7 +141,7 @@ Nella scheda **User Moderation **specificare la modalità di gestione dei commen
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
-Nella scheda **Sort Settings **(Impostazioni ordinamento), specificare l&#39;ordine dei commenti inviati quando vengono visualizzati.
+Nella scheda **Impostazioni** ordinamento, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
 
 * **Campo di ordinamento**
 
@@ -155,7 +157,7 @@ Modificando il Tipo risorsa commento, il sistema di commenti non genera più un&
 
 Una volta noti i tipi di risorse personalizzati, immettete la modalità [](/help/sites-authoring/default-components-designmode.md) Progettazione e fate doppio clic sul `Comments` componente inserito per aprire una finestra di dialogo con una scheda aggiuntiva.
 
-Nella scheda **Resource Types **specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting`componenti:
+Nella scheda Tipi **di** risorse, specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting`componenti:
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -185,10 +187,10 @@ Quando l’utente che ha effettuato l’accesso dispone di privilegi di moderato
 
 Quando il visitatore del sito ha effettuato l&#39;accesso, a seconda della configurazione, può
 
-* inserire un nuovo commento
-* modificare il proprio commento
-* eliminare il proprio commento
-* contrassegnare altri commenti
+* Pubblicare un nuovo commento
+* Modificare il proprio commento
+* Elimina il proprio commento
+* Contrassegnare altri commenti
 
 #### Anonimo {#anonymous}
 
