@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e776d1f7a9433e80633cdcfdf5ffed37b29da
+source-git-commit: 4f3928558641af89d138bfbf85ba099a4286b2f3
 
 ---
 
@@ -201,9 +201,8 @@ Assicurarsi di aver eseguito i seguenti passaggi:
 >
 >Create una sola configurazione IMS valida. Non creare più configurazioni IMS.
 >
-> Verificare che la configurazione sia sana. Nel caso in cui la configurazione non sia sana, eliminarla e creare una nuova configurazione sana.
+> Verificate che la configurazione sia sana. Nel caso in cui la configurazione non sia sana, eliminarla e creare una nuova configurazione sana.
 
-<br/> <br/>
 
 ### Configurare il servizio cloud {#configure-the-cloud-service}
 
