@@ -10,14 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Console community {#communities-consoles}
 
-Le console di AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere alle attività amministrative come
+Le console di AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere a attività amministrative quali:
 
 * [Creazione di un sito community](sites-console.md)
 * Aggiunta di [gruppi](groups.md) nidificati nel sito
@@ -33,7 +33,7 @@ Nell’ambiente di authoring, dopo aver effettuato l’accesso con i privilegi d
 
 >[!NOTE]
 >
->Nell&#39;ambiente di pubblicazione, un sito [](sites-console.md) community visualizza una voce di `Administration`menu quando il membro che ha effettuato l&#39;accesso dispone dei privilegi appropriati.
+>Nell&#39;ambiente di pubblicazione, un sito [](sites-console.md) community visualizzerà una voce di `Administration` menu quando il membro che ha effettuato l&#39;accesso dispone dei privilegi appropriati.
 
 ## Pannello di navigazione globale {#global-navigation-panel}
 
@@ -66,7 +66,7 @@ Per accedere alle varie console Community, dalla navigazione globale selezionate
 
    La console Rapporti consente di generare rapporti su assegnazioni, visualizzazioni di pagina e contenuto pubblicato (UGC) quando un sito community ha [attivato Adobe Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
 
-* [Risorse](resources.md)
+* [Riferimenti](resources.md)
 
    La console Risorse è il luogo in cui [i manager](enablement.md#communitymanagers) di abilitazione creano, gestiscono e assegnano le risorse ai membri di un sito [della community di](overview.md#enablement-community)abilitazione. La console è disponibile solo nell’ambiente di authoring.
 
