@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Clientlibs per componenti Community{#clientlibs-for-communities-components}
+# Clientlibs per componenti Community {#clientlibs-for-communities-components}
 
 ## Introduzione {#introduction}
 
@@ -57,7 +57,7 @@ Ad esempio, nella parte superiore della pagina [](https://localhost:4502/content
 
 ![chlimage_1-134](assets/chlimage_1-134.png)
 
-## Aggiunta Di Client Richiesti {#adding-required-clientlibs}
+## Aggiunta Di Clientlibs Richiesti {#adding-required-clientlibs}
 
 Se si desidera aggiungere un componente Community a una pagina, sarà necessario aggiungere i clientlibs richiesti per il componente, se non è già presente.
 
@@ -65,22 +65,22 @@ Utilizzare [CRXDE|Lite](#using-crxde-lite) per modificare un elenco di clientlib
 
 Per aggiungere una clientlib per un sito community utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* individuare [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
-* individuare il `clientlibslist` nodo della pagina in cui si desidera aggiungere il componente
+* Passa a [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
+* Individuare il `clientlibslist` nodo della pagina in cui si desidera aggiungere il componente
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* con `clientlibslist` nodo selezionato
+* Con `clientlibslist` nodo selezionato
 
-   * individuare la proprietà String[]`scg:requiredClientLibs`
-   * selezionatene `Value` per accedere alla finestra di dialogo Array String
+   * Individuare la proprietà String[]`scg:requiredClientLibs`
+   * Selezionare la stringa `Value` per accedere alla finestra di dialogo dell&#39;array String
 
-      * scorrimento verso il basso se necessario
-      * selezionare + per immettere una nuova libreria client
+      * Scorri verso il basso se necessario
+      * Seleziona + per inserire una nuova libreria client
 
-         * ripetizione per aggiungere altre librerie client
-      * select** OK**
-   * seleziona **Salva tutto**
+         * Ripeti per aggiungere altre librerie client
+      * Selezionare **OK**
+   * Seleziona **Salva tutto**
 
 
 
