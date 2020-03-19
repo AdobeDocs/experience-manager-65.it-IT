@@ -1,8 +1,8 @@
 ---
 title: Componenti di Communities
 seo-title: Componenti di Communities
-description: Aggiunta di funzioni per community Internet a qualsiasi sito AEM
-seo-description: Aggiunta di funzioni per community Internet a qualsiasi sito AEM
+description: Aggiunta di funzioni per la community Internet a qualsiasi sito AEM
+seo-description: Aggiunta di funzioni per la community Internet a qualsiasi sito AEM
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aaa067e0718d15cedde46296c1be69d422359097
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Componenti di Communities{#communities-components}
+# Componenti di Communities {#communities-components}
 
 ## Introduzione {#introduction}
 
@@ -30,7 +30,7 @@ Per saperne di più sulla creazione di un sito community visita:
 
 >[!NOTE]
 >
->Se non avete familiarità con l’ambiente Authoring, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida all’authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
+>Se non avete familiarità con l’ambiente di authoring, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida all’authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
 
 ## Componenti community disponibili {#available-communities-components}
 
@@ -70,7 +70,7 @@ Vedere anche la guida [interattiva sui componenti](/help/communities/components-
 | Domande correlate | [Domande e risposte](/help/communities/working-with-qna.md) |
 | Recensioni | [Recensioni](/help/communities/reviews.md) |
 | Riepilogo recensioni (visualizzazione) | [Recensioni](/help/communities/reviews.md) |
-| Ricerca | [Ricerca](/help/communities/search.md) |
+| Ricerca   | [Ricerca](/help/communities/search.md) |
 | Risultato di ricerca | [Ricerca](/help/communities/search.md) |
 | Tag cloud per social network | [Tag cloud per social network](/help/communities/tagcloud.md) |
 | Votazione | [Votazione](/help/communities/voting.md) |
