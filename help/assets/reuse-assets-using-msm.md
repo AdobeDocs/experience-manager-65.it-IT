@@ -4,7 +4,7 @@ description: Utilizzate le risorse tra più pagine/cartelle derivate e collegate
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: dc1a9eb4c02c7751b99ed074e0f3250193957c59
 
 ---
 
@@ -25,7 +25,7 @@ Per utilizzare MSM per Assets, installa almeno Service Pack 1. Per ulteriori inf
 
 ### Come funziona e vantaggi {#how-it-works-and-the-benefits}
 
-Per comprendere gli scenari di utilizzo per riutilizzare lo stesso contenuto (testo e risorse) in più posizioni Web, consultate [possibili scenari](/help/sites-administering/msm.md)MSM. AEM gestisce un collegamento tra la risorsa originale e le relative copie collegate, denominate Live Copy (LC). Il collegamento mantenuto consente di trasferire le modifiche centralizzate a molte copie live. Questo consente di velocizzare gli aggiornamenti eliminando i limiti di gestione delle copie duplicate. La propagazione delle modifiche è senza errori e centralizzata. Questa funzione consente di aggiornare le copie in diretta selezionate. Gli utenti possono scollegare il collegamento, ossia interrompere l’ereditarietà, e apportare modifiche locali che non verranno sovrascritte al successivo aggiornamento della copia master e al rollout delle modifiche. Lo scollegamento può essere eseguito per alcuni campi di metadati selezionati o per un’intera risorsa. Consente di aggiornare localmente le risorse che sono state originariamente ereditate da una copia master.
+Per comprendere gli scenari di utilizzo per riutilizzare lo stesso contenuto (testo e risorse) in più posizioni Web, consultate [possibili scenari](/help/sites-administering/msm.md)MSM. AEM gestisce un collegamento tra la risorsa originale e le relative copie collegate, denominate Live Copy (LC). Il collegamento mantenuto consente di trasferire le modifiche centralizzate a molte copie dal vivo. Questo consente di velocizzare gli aggiornamenti eliminando i limiti di gestione delle copie duplicate. La propagazione delle modifiche è senza errori e centralizzata. Questa funzione consente di aggiornare le copie in diretta selezionate. Gli utenti possono scollegare il collegamento, ossia interrompere l’ereditarietà, e apportare modifiche locali che non verranno sovrascritte al successivo aggiornamento della copia master e al rollout delle modifiche. Lo scollegamento può essere eseguito per alcuni campi di metadati selezionati o per un’intera risorsa. Consente di aggiornare localmente le risorse che sono state originariamente ereditate da una copia master.
 
 MSM mantiene una relazione live tra la risorsa di origine e le sue copie in tempo reale in modo che:
 
@@ -34,25 +34,25 @@ MSM mantiene una relazione live tra la risorsa di origine e le sue copie in temp
 
 ### Glossario di MSM per i termini di Risorse {#glossary}
 
-**Origine** Le risorse o le cartelle originali. Copia principale da cui derivano le copie in diretta.
+**Origine:** Le risorse o le cartelle originali. Copia principale da cui derivano le copie in diretta.
 
-**Live Copy** La copia delle risorse/delle cartelle sorgente in sincronizzazione con l’origine. Le copie in diretta possono essere fonte di ulteriori copie in diretta. Scopri come creare LC.
+**Live Copy:** La copia delle risorse/cartelle sorgente in sincronizzazione con la relativa origine. Le copie in diretta possono essere fonte di ulteriori copie in diretta. Scopri come creare LC.
 
-**Ereditarietà** Un collegamento/riferimento tra una risorsa/cartella Live Copy e la relativa origine utilizzata dal sistema per ricordare dove inviare gli aggiornamenti. L’ereditarietà esiste a un livello granulare per i campi di metadati. L’ereditarietà può essere rimossa per i campi di metadati selettivi, mantenendo al contempo la relazione live tra l’origine e la copia dal vivo.
+**Ereditarietà:** Un collegamento/riferimento tra una risorsa/cartella Live Copy e la relativa origine utilizzata dal sistema per ricordare dove inviare gli aggiornamenti. L’ereditarietà esiste a un livello granulare per i campi di metadati. L’ereditarietà può essere rimossa per i campi di metadati selettivi, mantenendo al contempo la relazione live tra l’origine e la copia dal vivo.
 
-**Rollout** Un&#39;azione che invia le modifiche apportate all&#39;origine a valle alle sue copie live. È possibile aggiornare una o più copie live in una sola volta mediante l&#39;azione di rollout. Consultate Rollout.
+**Rollout:** Un&#39;azione che trasmette le modifiche apportate alla sorgente a valle alle sue copie live. È possibile aggiornare una o più copie live in una sola volta mediante l&#39;azione di rollout. Consultate Rollout.
 
-**Regole di configurazione** rollout che determinano le proprietà da sincronizzare, come e quando. Queste configurazioni vengono applicate durante la creazione di copie live; può essere modificato successivamente; e un figlio può ereditare la configurazione di rollout dalla risorsa principale. Per MSM for Assets, usa solo la configurazione rollout standard. Le altre configurazioni di rollout non sono disponibili per MSM for Assets.
+**Configurazione rollout:** Regole che determinano le proprietà da sincronizzare, come e quando. Queste configurazioni vengono applicate durante la creazione di copie live; può essere modificato successivamente; e un figlio può ereditare la configurazione di rollout dalla risorsa principale. Per MSM for Assets, usa solo la configurazione rollout standard. Le altre configurazioni di rollout non sono disponibili per MSM for Assets.
 
-**Sincronizza** un’altra azione, oltre al rollout, che porta la parità tra l’origine e la sua live copy inviando gli aggiornamenti dall’origine alle Live Copy. Viene avviata la sincronizzazione per una particolare Live Copy e l&#39;azione richiama le modifiche dall&#39;origine. Utilizzando questa azione, è possibile aggiornare solo una delle Live Copy. Consultate Sincronizzare l’azione.
+**Sincronizza:** Un&#39;altra azione, oltre al rollout, che porta la parità tra l&#39;origine e la sua live copy inviando gli aggiornamenti dall&#39;origine alle Live Copy. Viene avviata la sincronizzazione per una particolare Live Copy e l&#39;azione richiama le modifiche dall&#39;origine. Utilizzando questa azione, è possibile aggiornare solo una delle Live Copy. Consultate Sincronizzare l’azione.
 
-**Sospendi** Rimuove temporaneamente la relazione dal vivo tra una Live Copy e la risorsa/cartella di origine. È possibile riprendere la relazione. Consultate sospensione dell’azione.
+**Sospendi:** Rimuovete temporaneamente la relazione dal vivo tra una Live Copy e la risorsa o la cartella di origine. È possibile riprendere la relazione. Consultate sospensione dell’azione.
 
-**Riprendi** Riprendi la relazione dal vivo in modo che una live copy riceva nuovamente gli aggiornamenti dall&#39;origine. Consultate Azione di ripresa.
+**Riprendi:** Riprende la relazione live in modo che una Live Copy riceva nuovamente gli aggiornamenti dall&#39;origine. Consultate Azione di ripresa.
 
-**Con l’azione Ripristina** , la Live Copy viene nuovamente trasformata in una replica dell’origine, sovrascrivendo eventuali modifiche locali. Inoltre rimuove le cancellazioni dell’ereditarietà e ripristina l’ereditarietà in tutti i campi di metadati. Per apportare modifiche locali in futuro, è necessario annullare nuovamente l&#39;ereditarietà di campi specifici. Consultate le modifiche locali a LC.
+**Reimposta:** Con l’azione Reimposta, la Live Copy diventa nuovamente una replica dell’origine sovrascrivendo eventuali modifiche locali. Inoltre rimuove le cancellazioni dell’ereditarietà e ripristina l’ereditarietà in tutti i campi di metadati. Per apportare modifiche locali in futuro, è necessario annullare nuovamente l&#39;ereditarietà di campi specifici. Consultate le modifiche locali a LC.
 
-**Scollega** in modo irreversibile rimuove la relazione live di una risorsa o una cartella Live Copy. Dopo l&#39;azione di scollegamento, le copie live non potranno mai ricevere gli aggiornamenti dall&#39;origine e non saranno più una live copy. Consultate rimuovere la relazione.
+**Scollega:** Rimuovete in modo irreversibile la relazione dal vivo di una risorsa/cartella Live Copy. Dopo l&#39;azione di scollegamento, le copie live non potranno mai ricevere gli aggiornamenti dall&#39;origine e non saranno più una live copy. Consultate rimuovere la relazione.
 
 ## Creare una Live Copy di una risorsa {#createlc}
 
@@ -61,7 +61,7 @@ Per creare una Live Copy da una o più risorse o cartelle sorgente, effettuate l
 * Metodo 1: Selezionate le risorse sorgente e fate clic su **[!UICONTROL Crea > Live Copy]** dalla barra degli strumenti nella parte superiore.
 * Metodo 2: Nell’interfaccia utente di AEM, fai clic su **[!UICONTROL Crea > Live Copy]** nell’angolo in alto a destra dell’interfaccia.
 
-Potete creare copie live di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+Potete creare copie live di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati come accade senza alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
 
 Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
@@ -69,10 +69,10 @@ Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
    ![Creare una live copy dall’interfaccia di AEM](assets/create_lc1.png)
 
-   *Figura:Creare una live copy dall’interfaccia di AEM*
+   *Figura: Creare una live copy dall’interfaccia di AEM*
 
 1. Selezionate una cartella di destinazione. Fai clic su **[!UICONTROL Avanti]**.
-1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere elementi figlio.
+1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere gli elementi figlio.
 1. Selezionate una configurazione di rollout. Fai clic su **[!UICONTROL Crea]**.
 
 Per creare copie live con il secondo metodo, attenetevi alla seguente procedura:
@@ -81,11 +81,11 @@ Per creare copie live con il secondo metodo, attenetevi alla seguente procedura:
 
    ![Creare una live copy dall’interfaccia di AEM](assets/create_lc2.png)
 
-   *Figura:Creare una live copy dall’interfaccia di AEM*
+   *Figura: Creare una live copy dall’interfaccia di AEM*
 
 1. Selezionate la risorsa o la cartella sorgente. Fai clic su **[!UICONTROL Avanti]**.
 1. Selezionate la cartella di destinazione. Fai clic su **[!UICONTROL Avanti]**.
-1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere elementi figlio.
+1. Fornire titolo e nome. Le risorse non hanno elementi figlio. Quando create una Live Copy di cartelle, potete scegliere di includere o escludere gli elementi figlio.
 1. Selezionate una configurazione di rollout. Fai clic su **[!UICONTROL Crea]**.
 
 >[!NOTE]
@@ -103,7 +103,7 @@ Per risorse e cartelle funzionano i due metodi seguenti:
 
 >[!TIP]
 >
-> Per verificare lo stato di alcune Live Copy separate, utilizzate il primo metodo che consiste nella visualizzazione della pagina Proprietà. Per verificare lo stato di molte Live Copies, utilizza il secondo metodo, ovvero visualizzare la pagina **[!UICONTROL Stato di relazione]**.
+>Per verificare lo stato di alcune Live Copy separate, utilizzate il primo metodo che consiste nella visualizzazione della pagina Proprietà. Per verificare lo stato di molte Live Copies, utilizza il secondo metodo, ovvero visualizzare la pagina **[!UICONTROL Stato di relazione]**.
 
 ### Informazioni e stato di una Live Copy {#statuslcasset}
 
@@ -114,7 +114,7 @@ Per verificare le informazioni e gli stati di una risorsa Live Copy o di una car
 
    ![Le informazioni e gli stati della Live Copy vengono visualizzati in una console in Proprietà](assets/lcfolder_info_properties.png)
 
-   *Figura:Informazioni e stati Live Copy*
+   *Figura: Informazioni e stati Live Copy*
 
 1. Potete attivare o disattivare se le risorse secondarie prendono in prestito la configurazione della Live Copy.
 
@@ -129,7 +129,7 @@ In AEM è disponibile una console per controllare le statue di tutte le copie in
 
    ![Visualizzare gli stati delle copie in diretta nella console Live Copy di origine](assets/livecopy-statuses.png)
 
-   *Figura:Visualizzare gli stati delle copie in diretta nella console Live Copy di origine*
+   *Figura: Visualizzare gli stati delle copie in diretta nella console Live Copy di origine*
 
 1. Per visualizzare informazioni dettagliate su ciascuna risorsa della cartella Live Copy, seleziona la risorsa in questione, quindi dalla barra degli strumenti fai clic su **[!UICONTROL Stato di relazione]**.
 
@@ -139,7 +139,7 @@ In AEM è disponibile una console per controllare le statue di tutte le copie in
 
 >[!TIP]
 >
-> È possibile visualizzare rapidamente gli stati delle Live Copy di altre cartelle senza dover consultare troppo. È sufficiente cambiare la cartella nell&#39;elenco a comparsa nella parte superiore centrale dell&#39;interfaccia Panoramica **[!UICONTROL di]** Live Copy.
+>È possibile visualizzare rapidamente gli stati delle Live Copy di altre cartelle senza dover consultare troppo. È sufficiente cambiare la cartella nell&#39;elenco a comparsa nella parte superiore centrale dell&#39;interfaccia Panoramica **[!UICONTROL di]** Live Copy.
 
 ### Azioni rapide dalla barra laterale Riferimenti per la sorgente {#refrailsource}
 
@@ -148,20 +148,20 @@ Per una risorsa o una cartella sorgente, potete visualizzare le informazioni seg
 * Visualizzare i percorsi delle copie dal vivo.
 * Aprite o visualizzate una Live Copy specifica nell’interfaccia utente di AEM.
 * Sincronizzate gli aggiornamenti con una Live Copy specifica.
-* Sospendi relazione o modifica configurazione rollout per una Live Copy specifica.
+* Sospendi la relazione o modifica la configurazione di rollout per una Live Copy specifica.
 * Accedete alla console della panoramica Live Copy.
 
 Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. In alternativa, seleziona una risorsa o una cartella e utilizza la scelta rapida da tastiera `Alt + 4`.
 
 ![Azioni e informazioni disponibili nella barra laterale Riferimenti per l&#39;origine selezionata](assets/referencerail_source.png)
 
-*Figura:Azioni e informazioni disponibili nella barra laterale Riferimenti per l&#39;origine selezionata*
+*Figura: Azioni e informazioni disponibili nella barra laterale Riferimenti per l&#39;origine selezionata*
 
 Per una Live Copy specifica, fate clic su **[!UICONTROL Modifica Live Copy]** per sospendere la relazione o modificare la configurazione del rollout.
 
 ![Per una Live Copy specifica, l&#39;opzione per sospendere la relazione o modificare la configurazione del rollout è accessibile dalla barra laterale Riferimenti quando la risorsa di origine è selezionata](assets/referencerail_editlc_options.png)
 
-*Figura:Sospendere la relazione o modificare la configurazione di rollout di una Live Copy specifica*
+*Figura: Sospendere la relazione o modificare la configurazione di rollout di una Live Copy specifica*
 
 ### Azioni rapide dalla barra laterale Riferimenti per la Live Copy {#refraillc}
 
@@ -175,7 +175,7 @@ Seleziona una risorsa o una cartella Live Copy, apri la barra a sinistra e fai c
 
 ![Azioni disponibili nella barra laterale Riferimenti per la Live Copy selezionata](assets/referencerail_livecopy.png)
 
-*Figura:Azioni disponibili nella barra laterale Riferimenti per la Live Copy selezionata*
+*Figura: Azioni disponibili nella barra laterale Riferimenti per la Live Copy selezionata*
 
 ## Propagare le modifiche dall’origine alle Live Copy {#rolloutsync}
 
@@ -189,9 +189,9 @@ Potete avviare un’azione di rollout dalla risorsa di origine e aggiornare tutt
 1. Fai clic su **[!UICONTROL Origine Live Copy]**. Nella barra degli strumenti della parte superiore, fai clic su **[!UICONTROL Rollout]**.
 1. Selezionate le Live Copy da aggiornare. Fate clic su **[!UICONTROL Rollout]**. Per distribuire gli aggiornamenti apportati alle risorse figlio, selezionate Origine **[!UICONTROL rollout e tutti gli elementi figlio]**.
 
-   ![Distribuire le modifiche di origine a alcune o tutte le copie live](assets/livecopy_rollout_page.png)
+   ![Distribuire le modifiche di origine a alcune o tutte le copie in diretta](assets/livecopy_rollout_page.png)
 
-   *Figura:Distribuire le modifiche di origine a alcune o tutte le copie live*
+   *Figura: Distribuire le modifiche di origine a alcune o tutte le copie in diretta*
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ In alternativa, potete avviare un’azione di rollout dalla barra laterale Rifer
 
 ![Rollout delle modifiche dell&#39;origine sulla Live Copy selezionata](assets/livecopy_rollout_dialog.png)
 
-*Figura:Rollout delle modifiche dell&#39;origine sulla Live Copy selezionata*
+*Figura: Rollout delle modifiche dell&#39;origine sulla Live Copy selezionata*
 
 ### Informazioni sull&#39;azione di sincronizzazione {#aboutsync}
 
@@ -221,11 +221,11 @@ Per visualizzare gli stati e le informazioni relativi a un’azione di sincroniz
 
 ![L’azione di sincronizzazione richiama le modifiche apportate all’origine](assets/livecopy_sync.png)
 
-*Figura:L’azione di sincronizzazione richiama le modifiche apportate all’origine*
+*Figura: L’azione di sincronizzazione richiama le modifiche apportate all’origine*
 
 >[!NOTE]
 >
->Se la relazione è sospesa, l’azione di sincronizzazione non è disponibile nella barra degli strumenti. Mentre l’azione di sincronizzazione è disponibile nella barra laterale Riferimenti, le modifiche non vengono propagate nemmeno dopo l’implementazione corretta.
+>Se la relazione è sospesa, l’azione di sincronizzazione non è disponibile nella barra degli strumenti. Mentre l’azione di sincronizzazione è disponibile nella barra laterale Riferimenti, le modifiche non vengono propagate anche dopo un’implementazione completata correttamente.
 
 ## Sospendi e riprendi relazione {#suspendresume}
 
@@ -257,7 +257,7 @@ Potete annullare tutte le modifiche locali e ripristinare lo stato della risorsa
 
    ![L&#39;azione Scollega rimuove completamente la relazione tra sorgente e live copy](assets/livecopy_detach.png)
 
-   *Figura:L&#39;azione Scollega rimuove completamente la relazione tra sorgente e live copy*
+   *Figura: L&#39;azione Scollega rimuove completamente la relazione tra sorgente e live copy*
 
    >[!CAUTION]
    >
@@ -275,7 +275,7 @@ Se in una cartella di Live Copy sono presenti più risorse, l’avvio di azioni 
 
    ![Aggiornare facilmente molte risorse nelle cartelle di Live Copy dalla console Panoramica di Live Copy](assets/livecopyconsole_update_many_assets.png)
 
-   *Figura:Aggiornare facilmente molte risorse nelle cartelle di Live Copy dalla console Panoramica di Live Copy*
+   *Figura: Aggiornare facilmente molte risorse nelle cartelle di Live Copy dalla console Panoramica di Live Copy*
 
 ## Estendi MSM per risorse {#extendapi}
 
@@ -293,7 +293,7 @@ AEM consente di estendere le funzionalità tramite le API Java MSM. Per Assets, 
 >* La configurazione dei blocchi MSM sulle proprietà della pagina (interfaccia touch) non è supportata in MSM for Assets.
 
 
-## Impatto delle attività di gestione delle risorse sulle copie live {#manageassets}
+## Impatto delle attività di gestione delle risorse sulle copie in diretta {#manageassets}
 
 Le copie e le origini dal vivo sono risorse o cartelle che possono essere gestite, in una certa misura, come risorse digitali. Alcune attività di gestione delle risorse in AEM hanno un impatto specifico sulle copie live.
 
