@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -34,50 +34,50 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 **Per la piattaforma[AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
-* installa gli ultimi aggiornamenti di [AEM 6.5](#aem64updates)
+* Installa gli ultimi aggiornamenti di [AEM 6.5](#aem64updates)
 
-* se non si utilizzano le porte predefinite (4502, 4503), [configurare gli agenti di replica](#replication-agents-on-author)
-* [replicare la chiave di crittografia](#replicate-the-crypto-key)
-* se supporta la globalizzazione, [imposta la traduzione](/help/sites-administering/translation.md)automatica (è disponibile l&#39;impostazione di esempio per lo sviluppo)
+* Se non si utilizzano le porte predefinite (4502, 4503), [configurare gli agenti di replica](#replication-agents-on-author)
+* [Replicare la chiave di crittografia](#replicate-the-crypto-key)
+* Se supporta la globalizzazione, [imposta la traduzione](/help/sites-administering/translation.md)automatica (è disponibile l&#39;impostazione di esempio per lo sviluppo)
 
 **Per la funzionalità[Community](/help/communities/overview.md)**
 
-* se distribuite una farm [di](/help/sites-deploying/recommended-deploys.md#tarmk-farm)pubblicazione, [identificate l&#39;editore principale](#primary-publisher)
+* Se distribuite una farm [di](/help/sites-deploying/recommended-deploys.md#tarmk-farm)pubblicazione, [identificate l&#39;editore principale](#primary-publisher)
 
-* [abilitare il servizio tunnel](#tunnel-service-on-author)
-* [abilita login mediante profilo sociale](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
-* [configurare Adobe Analytics](/help/communities/analytics.md)
-* impostare un servizio e-mail [predefinito](/help/communities/email.md)
-* identificare la scelta per lo storage [UGC](/help/communities/working-with-srp.md) condiviso (**SRP**)
+* [Abilita il servizio tunnel](#tunnel-service-on-author)
+* [Abilita login per social network](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
+* [Configurare Adobe Analytics](/help/communities/analytics.md)
+* Impostazione di un servizio e-mail [predefinito](/help/communities/email.md)
+* Identificare la scelta per lo storage [UGC](/help/communities/working-with-srp.md) condiviso (**SRP**)
 
-   * se MongoDB SRP [(MSRP)](/help/communities/msrp.md)
+   * Se MongoDB SRP [(MSRP)](/help/communities/msrp.md)
 
-      * [installazione e configurazione di MongoDB](/help/communities/msrp.md#mongodb-configuration)
-      * [configura Solr](/help/communities/solr.md)
-      * [select MSRP](/help/communities/srp-config.md)
-   * se database relazionale SRP [(DSRP)](/help/communities/dsrp.md)
+      * [Installare e configurare MongoDB](/help/communities/msrp.md#mongodb-configuration)
+      * [Configura Solr](/help/communities/solr.md)
+      * [Select MSRP](/help/communities/srp-config.md)
+   * Se il database relazionale SRP [(DSRP)](/help/communities/dsrp.md)
 
-      * [installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
-      * [installazione e configurazione di MySQL per DSRP](/help/communities/dsrp-mysql.md)
-      * [configura Solr](/help/communities/solr.md)
-      * [select DSRP](/help/communities/srp-config.md)
-   * se Adobe SRP [(ASRP)](/help/communities/asrp.md)
+      * [Installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
+      * [Installare e configurare MySQL per DSRP](/help/communities/dsrp-mysql.md)
+      * [Configura Solr](/help/communities/solr.md)
+      * [Seleziona DSRP](/help/communities/srp-config.md)
+   * Se Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
-      * collaborazione con il rappresentante commerciale di riferimento per il provisioning
-      * [seleziona ASRP](/help/communities/srp-config.md)
-   * se JCR SRP [(JSRP)](/help/communities/jsrp.md)
+      * Consultate il rappresentante commerciale di riferimento per il provisioning
+      * [Seleziona ASRP](/help/communities/srp-config.md)
+   * Se JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * non è un archivio UGC condiviso:
+      * Store UGC non condiviso:
 
          * UGC non è mai replicato
          * UGC visibile solo nell’istanza o nel cluster AEM in cui è stato immesso
-      * il valore predefinito è JSRP
+      * Il valore predefinito è JSRP
    Per la funzione di **[abilitazione](/help/communities/overview.md#enablement-community)**
 
-   * [installazione e configurazione di FFmpeg](/help/communities/ffmpeg.md)
-   * [installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
-   * [installare AEM Communities SCORM Engine](#scorm-package)
-   * [installazione e configurazione di MySQL per l&#39;abilitazione](/help/communities/mysql.md)
+   * [Installare e configurare FFmpeg](/help/communities/ffmpeg.md)
+   * [Installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
+   * [Installare AEM Communities SCORM Engine](#scorm-package)
+   * [Installazione e configurazione di MySQL per l&#39;abilitazione](/help/communities/mysql.md)
 
 
 
@@ -102,33 +102,33 @@ Con AEM 6.4 e versioni successive, le funzioni e gli hotfix di AEM Communities f
 
 Due funzionalità Community utilizzano un database MySQL:
 
-* per l&#39; [abilitazione](/help/communities/enablement.md) : registrazione delle attività SCORM e degli studenti
-* per [DSRP](/help/communities/dsrp.md) : memorizzazione di contenuto generato dall&#39;utente (UGC)
+* Per l&#39; [abilitazione](/help/communities/enablement.md) : registrazione delle attività SCORM e degli studenti
+* Per [DSRP](/help/communities/dsrp.md) : memorizzazione di contenuto generato dall&#39;utente (UGC)
 
 Il connettore MySQL deve essere ottenuto e installato separatamente.
 
 Le misure necessarie sono:
 
-1. scaricate l&#39;archivio ZIP da [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
+1. Scaricate l&#39;archivio ZIP da [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
 
-   * la versione deve essere >= 5.1.38
+   * La versione deve essere >= 5.1.38
 
-1. estrarre mysql-Connector-java-&lt;versione>-bin.jar (bundle) dall&#39;archivio
-1. utilizzate la console Web per installare e avviare il bundle:
+1. Estrarre mysql-Connector-java-&lt;versione>-bin.jar (bundle) dall&#39;archivio
+1. Utilizzate la console Web per installare e avviare il bundle:
 
-   * ad esempio, https://localhost:4502/system/console/bundles
-   * select **`Install/Update`**
+   * Ad esempio, https://localhost:4502/system/console/bundles
+   * Seleziona **`Install/Update`**
    * Sfoglia... per selezionare il bundle estratto dall&#39;archivio ZIP scaricato
-   * verificare che* Il driver JDBC di Oracle Corporation per MySQLcom.mysql.jdbc* sia attivo e avviarlo in caso contrario (o controllare i registri)
+   * Verificare che il driver JDBC di *Oracle Corporation per MySQLcom.mysql.jdbc* sia attivo e avviarlo in caso contrario (o controllare i registri)
 
-1. se l&#39;installazione avviene su una distribuzione esistente dopo la configurazione di JDBC, eseguire un nuovo riferimento JDBC al nuovo connettore salvando nuovamente la configurazione JDBC dalla console Web:
+1. Se l&#39;installazione avviene su una distribuzione esistente dopo la configurazione di JDBC, eseguire nuovamente il backup di JDBC sul nuovo connettore salvando nuovamente la configurazione JDBC dalla console Web:
 
-   * ad esempio, https://localhost:4502/system/console/configMgr
-   * individua `Day Commons JDBC Connections Pool` configurazione
-   * selezionare per aprire
-   * select `Save`
+   * Ad esempio, https://localhost:4502/system/console/configMgr
+   * Individua `Day Commons JDBC Connections Pool` configurazione
+   * Seleziona per aprire
+   * Seleziona `Save`
 
-1. ripetere i passaggi 3 e 4 per tutte le istanze di creazione e pubblicazione
+1. Ripetere i passaggi 3 e 4 per tutte le istanze di creazione e pubblicazione
 
 Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella pagina Console [](/help/sites-deploying/web-console.md) Web.
 
@@ -167,8 +167,8 @@ Il download avanzato di MLS (noto anche come &#39;phasetwo&#39;) è disponibile 
 
 * [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
-   * versione 1.2.40, 6 aprile 2016
-   * scarica AEM-SOLR-MLS-phasetwo-1.2.40.zip
+   * Versione 1.2.40, 6 aprile 2016
+   * Scarica AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 Per informazioni dettagliate e sull&#39;installazione, visitare Configurazione [](/help/communities/solr.md) solare per SRP.
 
@@ -176,18 +176,18 @@ Per informazioni dettagliate e sull&#39;installazione, visitare Configurazione [
 
 **Pacchetti visibili in Adobe AEM Cloud**
 
-I collegamenti ai pacchetti in questa pagina non richiedono alcuna istanza in esecuzione di AEM in quanto devono creare pacchetti di condivisione su `adobeaemcloud.com`. Mentre i pacchetti sono visualizzabili, il `Install`pulsante consente di installare i pacchetti in un sito ospitato da Adobe. Se si desidera eseguire l&#39;installazione in un&#39;istanza AEM locale, la selezione `Install`darà luogo a un errore.
+I collegamenti ai pacchetti in questa pagina non richiedono alcuna istanza in esecuzione di AEM in quanto devono creare pacchetti di condivisione su `adobeaemcloud.com`. Mentre i pacchetti sono visualizzabili, il `Install` pulsante consente di installare i pacchetti in un sito ospitato da Adobe. Se si desidera eseguire l&#39;installazione in un&#39;istanza AEM locale, la selezione `Install` darà luogo a un errore.
 
 **Come eseguire l&#39;installazione su un&#39;istanza AEM locale**
 
 Per installare i pacchetti visibili in `adobeaemcloud.com` un’istanza AEM locale, è necessario prima scaricare il pacchetto su un disco locale:
 
-* select the **Assets** tab
-* seleziona **download su disco**
+* Select the **Assets** tab
+* Seleziona **download su disco**
 
 Nell&#39;istanza locale di AEM, utilizza il gestore pacchetti (ad esempio [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) per caricare nell&#39;archivio pacchetti di AEM locale.
 
-In alternativa, accedendo al pacchetto utilizzando la condivisione di pacchetti dall&#39;istanza locale di AEM (ad esempio, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), il `Download`pulsante viene scaricato nell&#39;archivio pacchetti dell&#39;istanza locale di AEM.
+In alternativa, accedendo al pacchetto utilizzando la condivisione di pacchetti dall&#39;istanza locale di AEM (ad esempio, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), il `Download` pulsante verrà scaricato nell&#39;archivio pacchetti dell&#39;istanza locale AEM.
 
 Una volta nell&#39;archivio pacchetti dell&#39;istanza AEM locale, utilizzate il gestore pacchetti per installare il pacchetto.
 
@@ -213,7 +213,7 @@ Oltre ad aggiornare la piattaforma, leggi [Aggiornamento ad AEM Communities 6.5]
 
 ### Editore principale {#primary-publisher}
 
-Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano su **notifications **o su **Adobe Analytics**.
+Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano sulle **notifiche** o su **Adobe Analytics**.
 
 Per impostazione predefinita, la configurazione `AEM Communities Publisher Configuration` OSGi è configurata con la **`Primary Publisher`** casella di controllo selezionata, in modo che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino automaticamente come principali.
 
@@ -223,15 +223,15 @@ Pertanto, è necessario **modificare la configurazione su tutte le istanze** di 
 
 Per tutte le altre istanze di pubblicazione (secondarie) in una farm di pubblicazione:
 
-* accesso con privilegi di amministratore
-* accedere alla console [Web](/help/sites-deploying/configuring-osgi.md)
+* Accesso con privilegi di amministratore
+* Accedere alla console [Web](/help/sites-deploying/configuring-osgi.md)
 
-   * ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+   * Ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-* individuare la `AEM Communities Publisher Configuration`
-* seleziona l’icona di modifica
-* deselezionare la casella Editore **** principale
-* select **Save**
+* Individua la variabile `AEM Communities Publisher Configuration`
+* Selezionate l’icona di modifica
+* Deselezionare la casella Editore **** principale
+* Seleziona **Salva**
 
 ### Agenti di replica sull&#39;autore {#replication-agents-on-author}
 
@@ -243,21 +243,21 @@ Affinché un altro utente disponga delle autorizzazioni appropriate, deve essere
 
 Nell’ambiente di authoring sono disponibili due agenti di replica che richiedono la corretta configurazione del trasporto.
 
-* accedere alla console Replica all’istanza di creazione
+* Accedere alla console Replica durante l’authoring
 
-   * dalla navigazione globale : **Strumenti, distribuzione, replica, agenti sull&#39;autore**
+   * Dalla navigazione globale, andate a **[UIControl Tools > Distribuzione > Replica > Agenti sull’autore]**
 
-* seguire la stessa procedura per entrambi gli agenti:
+* Seguire la stessa procedura per entrambi gli agenti:
 
    * **Agente predefinito (pubblicazione)**
    * **Agente replica inversa (pubblicazione invertita)**
 
-      1. selezionare l&#39;agente
-      1. select **edit**
-      1. select the **Transport** tab
-      1. se non la porta `4503`, modificate l&#39; **URI** per specificare la porta corretta
+      1. Selezionare l&#39;agente
+      1. Select **edit**
+      1. Select the **Transport** tab
+      1. Se non è una porta `4503`, modificate l&#39; **URI** per specificare la porta corretta
 
-      1. in caso contrario, modificate `admin`l’ **utente** e la **password** per specificare un membro del gruppo di `administrators` utenti
+      1. In caso contrario, modificate `admin`l’ **utente** e la **password** per specificare un membro del gruppo di `administrators` utenti
 
 Le immagini seguenti mostrano i risultati della modifica della porta da 4503 a 6103 tramite:
 
@@ -277,18 +277,18 @@ Il servizio tunnel fornisce questo accesso tramite l&#39;agente di replica in fa
 
 Per abilitare il servizio tunnel:
 
-* sull’ **autore**
-* accesso con privilegi amministrativi
-* se l&#39;editore non è localhost:4503 o l&#39;utente del trasporto non lo è, `admin`[configurare l&#39;agente di replica](#replication-agents-on-author)
+* All’ **autore**
+* Accesso con privilegi amministrativi
+* Se l&#39;editore non è localhost:4503 o l&#39;utente del trasporto non lo è, `admin`[configurare l&#39;agente di replica](#replication-agents-on-author)
 
-* accedere alla console [Web](/help/sites-deploying/configuring-osgi.md)
+* Accesso alla console [Web](/help/sites-deploying/configuring-osgi.md)
 
-   * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+   * Ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-* individuare la `AEM Communities Publish Tunnel Service`
-* seleziona l’icona di modifica
-* selezionare **enable **box
-* select **Save**
+* Individua la variabile `AEM Communities Publish Tunnel Service`
+* Selezionate l’icona di modifica
+* Selezionare la casella di **attivazione**
+* Seleziona **Salva**
 
 ![](/help/communities/assets/chlimage_1-129.png)
 
@@ -300,26 +300,26 @@ A partire da AEM 6.3, il materiale chiave viene memorizzato nel file system e no
 
 Per copiare il materiale chiave dall’autore a tutte le altre istanze, è necessario:
 
-* accedere all’istanza di AEM, in genere un’istanza di creazione, che contiene il materiale chiave da copiare
+* Accedete all’istanza di AEM, in genere un’istanza di creazione, che contiene il materiale chiave da copiare
 
-   * individuare il `com.adobe.granite.crypto.file` bundle nel file system locale, ad esempio
+   * Individuare il `com.adobe.granite.crypto.file` bundle nel file system locale, ad esempio
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-      * il `bundle.info` file identificherà il bundle
-   * ad esempio, passare alla cartella di dati,
+      * Il `bundle.info` file identificherà il bundle
+   * Navigare nella cartella dati, ad esempio
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * copiare i file hmac e master
+   * Copiare i file hmac e master
 
 
 
-* per ogni istanza AEM di destinazione
+* Per ogni istanza AEM di destinazione
 
-   * ad esempio, passare alla cartella di dati,
+   * Navigare nella cartella dati, ad esempio
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * incollare i 2 file precedentemente copiati
-   * è necessario [aggiornare il bundle](#refresh-the-granite-crypto-bundle) Granite Crypto se l’istanza AEM di destinazione è in esecuzione
+   * Incolla i 2 file precedentemente copiati
+   * È necessario [aggiornare il bundle](#refresh-the-granite-crypto-bundle) Granite Crypto se l’istanza AEM di destinazione è in esecuzione
 
 
 >[!CAUTION]
@@ -340,27 +340,27 @@ Con il materiale chiave memorizzato nella directory archivio, la procedura per r
 
 Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* individuare [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
-* select `/etc/key`
-* apri `Replication` scheda
-* select `Replicate`
+* Passa a [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
+* Seleziona `/etc/key`
+* Apri, `Replication` scheda
+* Seleziona `Replicate`
 
-* [aggiorna il bundle Granite Crypto](#refresh-the-granite-crypto-bundle)
+* [Aggiornare il bundle Granite Crypto](#refresh-the-granite-crypto-bundle)
 
 ![](/help/communities/assets/chlimage_1-130.png)
 
 #### Aggiornare il pacchetto Granite Crypto {#refresh-the-granite-crypto-bundle}
 
-* per ogni istanza di pubblicazione, accedete alla console [Web](/help/sites-deploying/configuring-osgi.md)
+* Per ogni istanza di pubblicazione, accedete alla console [Web](/help/sites-deploying/configuring-osgi.md)
 
-   * ad esempio, [https://&lt;server>:&lt;porta>/system/console/bundle](https://localhost:4503/system/console/bundles)
+   * Ad esempio, [https://&lt;server>:&lt;porta>/system/console/bundle](https://localhost:4503/system/console/bundles)
 
-* locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
-* seleziona **Aggiorna**
+* Individua `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
+* Seleziona **aggiornamento**
 
 ![](/help/communities/assets/chlimage_1-131.png)
 
-* dopo un momento, dovrebbe comparire una finestra di dialogo **Success **Success :
+* Dopo un momento, dovrebbe comparire una finestra di dialogo **Successo** :
    `Operation completed successfully.`
 
 ### Server Apache HTTP {#apache-http-server}
