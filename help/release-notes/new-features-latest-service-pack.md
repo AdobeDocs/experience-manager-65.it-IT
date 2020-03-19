@@ -4,14 +4,14 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
+source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
 
 ---
 
 
 # Novità in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 offre funzionalità e miglioramenti continui tramite i Service Pack trimestrali di quest&#39;anno. Il nuovo approccio è vantaggioso per i nostri clienti che adottano le innovazioni più rapidamente.
+Adobe Experience Manager (AEM) 6.5 offre funzioni e miglioramenti continui tramite i Service Pack trimestrali. Il nuovo approccio è vantaggioso per i nostri clienti che adottano le innovazioni più rapidamente.
 
 L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020**. In questo articolo vengono evidenziate le funzioni offerte dall’ultimo Service Pack per rendere il vostro viaggio AEM più ricco.
 
@@ -19,11 +19,11 @@ L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020
 
 ### Miglioramenti delle prestazioni in varie aree {#performance-improvements}
 
-* È stato ridotto il tempo necessario per caricare e inizializzare ContextHub in un sito (contexthub.kernel.js). Ne risulta un caricamento più rapido delle pagine durante una visita del sito.
+* È stato ridotto il tempo necessario per caricare e inizializzare ContextHub in un sito (`contexthub.kernel.js`). Ne risulta un caricamento più rapido delle pagine durante una visita del sito.
 
-* È stato ridotto il tempo necessario per aggiornare una pagina dopo aver trascinato e rilasciato frammenti esperienza nell’editor pagina Siti.
+* È stato ridotto il tempo necessario per aggiornare una pagina dopo aver trascinato i frammenti esperienza nell’Editor pagina Siti.
 
-* È stato ridotto il tempo necessario per caricare le voci per una pagina Siti con più di 200 copie dal vivo in Panoramica di Live Copy.
+* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie dal vivo in Panoramica **** Live Copy.
 
 * Gestione migliorata degli URL incompleti o non validi. Tali URL possono rallentare l’Editor modelli.
 
@@ -56,120 +56,104 @@ Experience Manager Assets include i seguenti miglioramenti a livello di accessib
 
 ### Genera output stampabile nei flussi di lavoro AEM Forms {#generate-printable-output}
 
-Se desiderate una soluzione per stampare o salvare più copie di un file modello di origine e integrarlo con un file di dati contenente numerosi record, in AEM Forms è disponibile un nuovo passaggio del flusso di lavoro Genera output stampabile. Ad esempio, se si desidera stampare un modulo di origine con un nome diverso ogni volta che viene stampato, è possibile inserire tali nomi nel file di dati e integrarlo con un file modello standard.
-
-Sfruttate questa funzione tramite **Strumenti** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]** > **[!UICONTROL Crea]** e quindi cercate il passaggio del flusso di lavoro **[!UICONTROL Genera output]** stampabile.
+Il nuovo passaggio del flusso di lavoro Genera output stampabile consente di integrare un file modello sorgente con un file di dati. Questa integrazione consente di stampare o salvare copie diverse del file modello. Ad esempio, è possibile stampare un modulo di origine con un nome diverso ogni volta che viene stampato. Salvare i nomi nel file di dati e integrare il file di dati con un file modello standard. Per ulteriori informazioni su questa funzione, vedere [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
 
 ![Genera output stampabile](assets/generate-print-output-demo.gif)
 
-Per ulteriori informazioni su questa funzione, vedere [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
+### Supporto per più colonne per moduli adattivi e comunicazioni interattive in modalità Layout {#multi-column-adaptive-forms}
 
-### Supporto a più colonne per moduli adattivi e comunicazioni interattive in modalità Layout {#multi-column-adaptive-forms}
+È ora possibile definire il numero di colonne per un pannello nei moduli adattivi e nelle comunicazioni interattive. Passate alla modalità di layout per utilizzare la nuova opzione a più colonne. Per ulteriori informazioni, vedere [Uso della modalità Layout per ridimensionare i componenti](../forms/using/resize-using-layout-mode.md).
 
-È ora possibile definire il numero di colonne per un pannello nei moduli adattivi e nelle comunicazioni interattive.
-
-Per trovare la nuova opzione, passate alla modalità Layout. Toccate il pannello da convertire in formato a più colonne, selezionate il relativo elemento padre e toccate l’icona a più colonne, per definire il numero di colonne per il pannello.
 
 ![Layout a più colonne](assets/multi-column-layout.gif)
 
-Per ulteriori informazioni, vedere [Uso della modalità Layout per ridimensionare i componenti](../forms/using/resize-using-layout-mode.md).
+
 
 ### Personalizzazioni di AEM Inbox {#aem-inbox}
 
-È mai necessario personalizzare le opzioni disponibili nell’intestazione di AEM? È ora possibile con la nuova versione di Service Pack con l&#39;introduzione di un&#39;opzione **[!UICONTROL Admin Control]** .
+La nuova opzione Controllo amministratore consente agli amministratori di:
 
-**Personalizza il testo dell’intestazione**
+* Personalizzare il testo dell’intestazione e il logo
 
-Gli amministratori del flusso di lavoro possono ora specificare il testo dell’intestazione desiderato.
+* Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
 
-La nuova opzione **[!UICONTROL Personalizza testo]** intestazione è disponibile nel selettore delle viste (disponibile in alto a destra della barra degli strumenti) > **[!UICONTROL Admin Control]**.
-
-**Personalizza logo**
-
-Simile al testo personalizzato dell’intestazione, gli amministratori del flusso di lavoro possono ora specificare il logo intestazione desiderato.
-
-La nuova opzione **[!UICONTROL Personalizza logo]** è disponibile in Selettore visualizzazione > **[!UICONTROL Controllo]** amministratore.
-
-Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
-
-### Controllo navigazione utente {#user-navigation-control}
-
-Gli amministratori dei flussi di lavoro possono ora fare in modo che gli utenti lavorino su AEM in modalità limitata in base al loro ruolo. Gli amministratori possono controllare la visualizzazione delle opzioni di navigazione disponibili nell&#39;intestazione per limitare gli utenti a passare alla modalità di authoring del flusso di lavoro o ad altri collegamenti della soluzione.
-
-Scopri le nuove opzioni **[!UICONTROL di navigazione]** Nascondi opzioni **[!UICONTROL in Selettore vista > Controllo]** amministratore.
-
-Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L’opzione Controllo amministratore è visibile solo ai membri del gruppo Amministratori o Amministratori di workflow. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 ### Supporto di testo RTF nei moduli HTML5 {#rich-text-support}
 
-Nel campo di testo è ora possibile visualizzare un elenco delle opzioni di formattazione nel modulo HTML5 di cui è stato effettuato il rendering. È necessario definire un formato per il campo di testo in Forms Designer per applicare le impostazioni appropriate al campo.
+È ora possibile convertire un campo di testo in un modulo XFA in un campo di testo RTF se viene eseguito il rendering in un modulo HTML5. Di conseguenza, il campo di testo visualizza un elenco di altre opzioni di formattazione in un modulo HTML5. Per ulteriori informazioni, vedere [Progettazione di modelli di modulo per moduli](../forms/using/designing-form-template.md)HTML5.
 
-Per utilizzare questa funzione, toccare il campo di testo in visualizzazione **** Struttura in Forms Designer. Nella scheda **[!UICONTROL Campo]** , selezionare Testo **** RTF dall&#39;elenco a discesa Formato **** campo per applicare le impostazioni.
+### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
-Per ulteriori informazioni, vedere [Progettazione di modelli di modulo per moduli](../forms/using/designing-form-template.md)HTML5.
+Experience Manager Forms include i seguenti miglioramenti a livello di accessibilità:
 
-## Evidenziazioni principali
+* Gli utenti possono spostare lo stato attivo sulla scheda senza problemi per il tema di riferimento Ultramarine-Accessible di un modulo adattivo.
 
-Oltre alle nuove funzioni, AEM 6.5 Service Pack 4 include le seguenti funzionalità principali:
+* Gli assistenti vocali annunciano le caselle di controllo, i collegamenti, il selettore data e i campi di immissione data correttamente in un modulo adattivo.
 
-* Ora potete sincronizzare le sottostrutture per contenuti selettivi su Contenuti multimediali *dinamici - Modalità* Scene7 invece di tutti i contenuti disponibili in `content/dam`.
-
-* L&#39;integrazione del modello dati del modulo con il servizio Web SOAP ora supporta i gruppi di scelta o gli attributi sugli elementi.
-
-* Le strutture di input o output SOAP e i dati complessi ora supportano la sostituzione di gruppi dinamici.
+* Ogni pagina di un modulo adattivo ora include un titolo e un’etichetta con il punto di riferimento principale.
 
 ## Funzioni principali nei precedenti Service Pack di AEM 6.5
 
-### Immagini intelligenti per contenuti multimediali dinamici {#smart-imaging}
+### Immagini intelligenti per contenuti multimediali dinamici (6.5.3.0) {#smart-imaging}
 
-La tecnologia di imaging intelligente sfrutta le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento. La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Consultate [Smart Imaging](../assets/imaging-faq.md).
+Le immagini intelligenti utilizzano le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento. La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Consultate [Smart Imaging](../assets/imaging-faq.md).
 
-### Ricerca visiva per AEM Assets {#visual-search}
+### Ricerca visiva di Risorse AEM (6.5.2.0) {#visual-search}
 
 Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di Assets. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. See [Visual search](../assets/search-assets.md).
 
-### Condividere e richiedere l&#39;accesso agli elementi Inbox di un utente {#share-request-access}
+### Condivisione e richiesta dell&#39;accesso agli elementi Inbox di un utente (6.5.3.0) {#share-request-access}
 
-È possibile condividere gli elementi Inbox con un altro utente. Quando un altro utente ha accesso agli elementi della Casella in entrata, può richiedere e intervenire sugli elementi condivisi. Allo stesso modo, potete richiedere l’accesso agli elementi della casella in entrata ad altri utenti. Consultate [Condividere e richiedere l’accesso agli elementi in entrata di un utente](../forms/using/configure-shared-queues-osgi.md).
+È possibile condividere gli elementi Inbox con un altro utente. Quando un altro utente accede agli elementi della Casella in entrata, può richiedere e intervenire sugli elementi condivisi. Allo stesso modo, potete richiedere l’accesso agli elementi della casella in entrata ad altri utenti. Consultate [Condividere e richiedere l’accesso agli elementi in entrata di un utente](../forms/using/configure-shared-queues-osgi.md).
 
-### Configurazione dell&#39;impostazione fuori sede per gli elementi della casella in entrata {#configure-out-of-office}
+### Configurare l&#39;impostazione out-of-office per gli elementi in entrata (6.5.3.0) {#configure-out-of-office}
 
 Se prevedete di uscire dall&#39;ufficio, potete specificare cosa accade agli elementi assegnati a quel periodo.
-È possibile specificare una data e un&#39;ora di inizio e una data e un&#39;ora di fine affinché le impostazioni fuori sede siano attive. Potete impostare una persona predefinita alla quale vengono inviati tutti gli elementi. Consultate [Configurare le impostazioni](../forms/using/configure-out-of-office-settings.md)Fuori sede.
+È possibile specificare una data e un&#39;ora di inizio e una data e un&#39;ora di fine affinché le impostazioni fuori sede siano attive. Potete impostare una persona predefinita a cui vengono inviati tutti gli elementi. Consultate [Configurare le impostazioni](../forms/using/configure-out-of-office-settings.md)Fuori sede.
 
-### Generazione di più comunicazioni interattive mediante l&#39;API Batch {#generate-multiple-ic}
+### Generazione di più comunicazioni interattive mediante l&#39;API Batch (6.5.3.0) {#generate-multiple-ic}
 
 Potete utilizzare l&#39;API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L&#39;API Batch combina i dati con un modello per produrre una comunicazione interattiva. L&#39;API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto della carta di credito per più clienti. Consultate [Generare più comunicazioni interattive utilizzando l&#39;API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
-### Messaggi di errore di convalida standard per i moduli adattivi {#standard-validation}
 
-I moduli adattivi possono ora integrarsi con i servizi personalizzati per eseguire le convalide dei dati. Se i valori di input non soddisfano i criteri di convalida e il messaggio di errore di convalida restituito dal server è nel formato di messaggio standard, i messaggi di errore vengono visualizzati a livello di campo nel modulo. Se i valori di input non soddisfano i criteri di convalida e il messaggio di errore convalida server non è nel formato di messaggio standard, i moduli adattivi forniscono un meccanismo per trasformare i messaggi di errore di convalida in un formato standard in modo che siano visualizzati a livello di campo nel modulo. Vedere Messaggi di errore di convalida [standard per i moduli](../forms/using/standard-validation-error-messages-adaptive-forms.md)adattivi.
 
 ## Versioni principali da AEM 6.5 SP3
 
-Tra il 12 dicembre 2019 e il 5 marzo 2020 Adobe ha rilasciato le seguenti funzionalità che non rientrano nel risultato finale di AEM:
+Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzionalità che non rientrano nel risultato finale di AEM:
 
-* AEM Cloud Manager 2020.1.0 e 2020.2.0Miglioramenti mensili a Cloud Manager, le ultime due release sono incentrate sul miglioramento dello stato della pipeline e sulla possibilità di scaricare i registri per i vari passaggi. Leggi le note complete sulla versione qui:
+* AEM Cloud Manager 2020.1.0 e 2020.2.0Gli aggiornamenti della versione migliorano lo stato della pipeline e la possibilità di scaricare i registri per vari passaggi. Per ulteriori informazioni, vedere:
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
 
-* Aggiornamenti CLI di AEM Cloud ManagerAutomatizzare le attività di Cloud Manager utilizzando lo strumento della riga di comando. Stiamo continuando a estendere l&#39;CLI - join su [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+* Aggiornamenti CLI di AEM Cloud Manager
 
-* AEM Sites: Project Archetype 23Il modo migliore per avviare un nuovo progetto AEM. Con Archetype 23 stiamo [unendo il Project Archetype per SPA e i siti regolari in un unico](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23), fornendo inoltre un tema predefinito per dare il via al vostro sviluppo front-end.
+   Gli aggiornamenti della release includono l&#39;automazione delle attività di Cloud Manager tramite lo strumento della riga di comando. Consulta [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
-* AEM Sites: Sito di riferimento WKNDTutti i [nuovi progetti](https://www.wknd.site/) di riferimento dotati di procedure ottimali per la creazione di siti con AEM. Per saperne di più, leggi l’esercitazione [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) WKND completamente aggiornata e acquisisci il codice da [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+* AEM Sites: Archetype progetto 23
 
-* AEM Sites: Commerce CIF Componenti di base 0.7.0 e 0.9.0Integrazione di AEM Sites e Magento Commerce. Stiamo [estendendo continuamente i componenti core dedicati e un archetipo di progetto con attenzione su Commerce](https://github.com/adobe/aem-core-cif-components/releases).
+   Il modo migliore per avviare un nuovo progetto AEM. Archetype 23 unisce l&#39;Archetype di [Progetto per SPA e i siti regolari in un unico](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23) e fornisce un tema predefinito per avviare lo sviluppo front-end.
+
+* AEM Sites: Sito di riferimento WKND
+
+   [Nuovo progetto](https://www.wknd.site/) di riferimento con best practice per la creazione di siti con AEM. Per saperne di più, leggi l&#39;esercitazione [WKND aggiornata](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html). Puoi prendere l&#39;ultimo codice da [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+
+* AEM Sites: Commerce CIF Componenti di base 0.7.0 e 0.9.0
+
+   Integra AEM Sites con Magento Commerce. Consulta [Estensione dei componenti core dedicati e del tipo di archivio dei progetti con focus su Commerce](https://github.com/adobe/aem-core-cif-components/releases).
 
 * Risorse AEM: Desktop App 2.0.1.1
-   [Accesso desktop alle risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)
 
-* AEM Screens: Feature Pack 202001Digital Signage direttamente da AEM. Scopri gli ultimi miglioramenti apportati al Feature Pack più recente, questa volta [abilitiamo la riproduzione sincrona tra più lettori](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202001.html)multimediali.
+   Per ulteriori informazioni, consultate [Ottenere l’accesso desktop alle risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+
+* AEM Screens: Feature Pack 202001
+
+   Digital Signage direttamente da AEM. Installate i miglioramenti con l&#39;ultimo Feature Pack per [abilitare la riproduzione sincrona tra più lettori](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202001.html)multimediali.
 
 ## Risorse utili
 
-* [Guide utente di AEM 6.5](../user-guide/capabilities.md)
+* [Guide utente di AEM 6.5](../user-guide/home.md)
 
 * [Note generali sulla versione per Adobe Experience Manager 6.5](release-notes.md)
 
