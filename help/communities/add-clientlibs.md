@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Aggiungi Clientlibs{#add-clientlibs}
+# Aggiungi Clientlibs {#add-clientlibs}
 
 ## Aggiungere una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
@@ -24,33 +24,33 @@ Create una ClientLibraryFolder denominata `clientlibs`che conterrà i file JS e 
 
 Il valore della `categories`proprietà dato a questa libreria client è l&#39;identificatore utilizzato per includere direttamente questa clientlib da una pagina di contenuto o per incorporarla in altri clientlibs.
 
-1. utilizzando **CRXDE Lite**, espandere `/etc/designs`
+1. Utilizzando **CRXDE Lite**, espandete `/etc/designs`
 
-1. fare clic con il pulsante destro del mouse `an-scf-sandbox` e selezionare `Create Node`
+1. Fare clic con il pulsante destro del mouse `an-scf-sandbox` e selezionare `Create Node`
 
    * Nome : `clientlibs`
    * Tipo : `cq:ClientLibraryFolder`
 
-1. click **OK**
+1. Fai clic su **OK**
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-Nella scheda **Proprietà** per il nuovo `clientlibs` nodo, immettere la proprietà **`categories`**s:
+Nella scheda **Proprietà** del nuovo `clientlibs` nodo, immettere la proprietà **category** :
 
 * Nome : **categorie**
 * Tipo: **Stringa**
 * Valore: **apps.an-scf-sandbox**
-* click **Add**
-* fate clic su **Salva tutto**
+* Fate clic su **Aggiungi**
+* Fate clic su **Salva tutto**
 
-Nota: anteprima del valore delle categorie con &#39;app&#39;. è una convenzione per identificare l&#39;applicazione proprietaria come nella cartella /apps, non /libs.  IMPORTANTE: Aggiungete i file segnaposto `js.tx`t e**`css.tx`**t. (non è ufficialmente una cq:ClientLibraryFolder senza di esse.)
+Nota: visualizzazione in anteprima del valore delle categorie con &#39;app&#39;. è una convenzione per identificare l&#39;applicazione proprietaria come nella cartella /apps, non /libs.  IMPORTANTE: Aggiungere segnaposto `js.tx`a e **`css.txt`** file. (non è ufficialmente una cq:ClientLibraryFolder senza di esse.)
 
-1. clic destro **`/etc/designs/an-scf-sandbox/clientlibs`**
-1. selezionate **Crea file...**
-1. **immettere** Nome: `css.txt`
-1. selezionate **Crea file...**
-1. **immettere** Nome: `js.txt`
-1. fate clic su **Salva tutto**
+1. Clic con il pulsante destro del mouse **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Seleziona **Crea file...**
+1. Enter **Name:** `css.txt`
+1. Seleziona **Crea file...**
+1. Enter **Name:** `js.txt`
+1. Fate clic su **Salva tutto**
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -77,24 +77,28 @@ Nella scheda **Proprietà** del `clientlibs` nodo, immettere la proprietà Strin
 
 **Notate** che questo potrebbe essere l&#39;approccio desiderato per un sito di produzione, in quanto vi sono considerazioni di convenienza rispetto alla dimensione/velocità dei clientlibs scaricati per ogni pagina.
 
-Se si utilizza una sola funzione su una pagina, è possibile includere direttamente sulla pagina la clientlib completa della funzionalità, ad esempio &lt;% ui:includeClientLib category=cq.social.hbs.forum&quot; %>
+Se si utilizza una sola funzione su una pagina, è possibile includere la clientlib completa di tale funzione direttamente sulla pagina, ad esempio,
 
-In questo caso, includendo tutti e così i clienti SCF più basilari che sono gli autori clientlibé sono preferiti:
+`% ui:includeClientLib categories=cq.social.hbs.forum" %`
+
+In questo caso, includendo tutti e così i clienti SCF più basilari che sono gli autori clientlibé sono preferite:
 
 * Nome : **`embed`**
 * Tipo : **`String`**
-* clic **`Multi`**
-* Valore: **`cq.social.scf`***&lt;enter> aprirà una finestra di dialogo clicca **[+]**dopo ogni voce per aggiungere le seguenti categorie clientlib:*
+* Clic **`Multi`**
+* Valore: **`cq.social.scf`**
 
-   * **`cq.ckeditor`**
-   * **`cq.social.author.hbs.comments`**
-   * **`cq.social.author.hbs.forum`**
-   * **`cq.social.author.hbs.rating`**
-   * **`cq.social.author.hbs.reviews`**
-   * **`cq.social.author.hbs.voting`**
-   * click **OK**
+   * Viene visualizzata una finestra di dialogo, fate clic **`+`** dopo ogni voce per aggiungere le seguenti categorie clientlib:
 
-* fate clic su **Salva tutto**
+      * **`cq.ckeditor`**
+      * **`cq.social.author.hbs.comments`**
+      * **`cq.social.author.hbs.forum`**
+      * **`cq.social.author.hbs.rating`**
+      * **`cq.social.author.hbs.reviews`**
+      * **`cq.social.author.hbs.voting`**
+      * click **OK**
+
+* Fate clic su **Salva tutto**
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -114,20 +118,20 @@ Una volta inclusi i clientlibs apps.an-scf-sandbox, il componente dei commenti S
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-L&#39;istruzione include appartiene alla variabile <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> della sezione <html> script. L&#39;impostazione predefinita **`foundation head.jsp`** include uno script che può essere sovrapposto : **`headlibs.jsp`**.
+L&#39;istruzione include appartiene alla `head` sezione dello `html` script. L&#39;impostazione predefinita **`foundation head.jsp`** include uno script che può essere sovrapposto : **`headlibs.jsp`**.
 
 **Copiate headlibs.jsp e includete clientlibs:**
 
-1. utilizzando **CRXDE Lite**, selezionare **`/libs/foundation/components/page/headlibs.jsp`**
+1. Utilizzando **CRXDE Lite**, selezionare **`/libs/foundation/components/page/headlibs.jsp`**
 
-1. fare clic con il pulsante destro del mouse e selezionare **Copy **(oppure selezionare Copia dalla barra degli strumenti)
-1. select**`/apps/an-scf-sandbox/components/playpage`**
-1. fare clic con il pulsante destro del mouse e selezionare **Incolla **(oppure selezionare Incolla dalla barra degli strumenti)
-1. fare doppio clic **`headlibs.jsp`** per aprirlo
-1. aggiungi la seguente riga alla fine del file
+1. Fare clic con il pulsante destro del mouse e selezionare **Copia** (oppure selezionare Copia dalla barra degli strumenti)
+1. Seleziona **`/apps/an-scf-sandbox/components/playpage`**
+1. Fare clic con il pulsante destro del mouse e selezionare **Incolla** (oppure selezionare Incolla dalla barra degli strumenti)
+1. Fate doppio clic **`headlibs.jsp`** per aprirlo
+1. Aggiungi la riga seguente alla fine del file
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. fate clic su **Salva tutto**
+1. Fate clic su **Salva tutto**
 
 ```xml
 <%@ page session="false" %><%
@@ -153,30 +157,30 @@ Questo pacchetto è disponibile nell’esercitazione [Crea una pagina](/help/com
 
 Per creare un pacchetto:
 
-* da CRXDE Lite fate clic sull&#39;icona [Pacchetto](https://localhost:4502/crx/packmgr/)
-* fate clic su **Crea pacchetto**
+* Da CRXDE Lite fate clic sull&#39;icona [Pacchetto](https://localhost:4502/crx/packmgr/)
+* Fate clic su **Crea pacchetto**
 
    * Nome pacchetto: an-scf-sandbox-minimal-pkg
    * Versione: 0,1
-   * Gruppo: &lt;lasciare come predefinito>
-   * click **OK**
+   * Gruppo: `leave as default`
+   * Fai clic su **OK**
 
-* click **Edit**
+* Fai clic su **Modifica**
 
-   * select **Filters **tab
+   * Seleziona **filtri** , scheda
 
-      * fate clic su **Aggiungi filtro**
-      * Percorso directory principale: &lt;Browse to** /apps/an-scf-sandbox**>
-      * fai clic su **Fine**
-      * fate clic su **Aggiungi filtro**
-      * Percorso directory principale: &lt;individuare **/etc/designs/an-scf-sandbox**>
-      * fai clic su **Fine**
-      * fate clic su **Aggiungi filtro**
-      * Percorso directory principale: &lt;individuare **/content/an-scf-sandbox**>
-      * fai clic su **Fine**
-   * click **Save**
+      * Fate clic su **Aggiungi filtro**
+      * Percorso directory principale: individuare `/apps/an-scf-sandbox`
+      * Fate clic su **Fine**
+      * Fate clic su **Aggiungi filtro**
+      * Percorso directory principale: individuare `/etc/designs/an-scf-sandbox`
+      * Fate clic su **Fine**
+      * Fate clic su **Aggiungi filtro**
+      * Percorso directory principale: individuare `/content/an-scf-sandbox**`
+      * Fate clic su **Fine**
+   * Fai clic su **Salva**
 
 
-* fate clic su **Genera**
+* Fate clic su **Genera**
 
-Ora potete selezionare **Scarica** per salvarlo su disco e **caricare il pacchetto** altrove, nonché **Altro > Replica** per inviare la sandbox a un&#39;istanza di pubblicazione localhost per espandere il realm della sandbox.
+Ora potete selezionare **Scarica** per salvarlo su disco e **caricare il pacchetto** altrove, nonché **Altro > Replica** per inviare la sandbox a un&#39;istanza di pubblicazione localhost per espandere l&#39;area di autenticazione della sandbox.
