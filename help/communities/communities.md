@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 AEM Communities semplifica la creazione e la personalizzazione di funzioni per community quali forum, gruppi di utenti, blog, D e R, calendari, commenti, revisioni, voti, valutazioni e assegnazioni. Queste funzioni consentono di inserire nell’ambiente di pubblicazione il contenuto generato dall’utente (UGC).
 
-La creazione di un sito [](overview.md#communitiessites) comunitario costituisce il quadro [della componente](scf.md) sociale. La creazione di un sito community inizia con la selezione di un modello [di sito](sites-console.md) community composto da funzioni [](functions.md)community.
+La creazione di un sito [](overview.md#communitiessites) comunitario costituisce il quadro [della componente](scf.md) sociale (SCF). La creazione di un sito community inizia con la selezione di un modello [di sito](sites-console.md) community composto da funzioni [](functions.md)community.
 
 Per una panoramica ed esercitazioni introduttive, visitate:
 
@@ -48,11 +48,11 @@ Per una panoramica ed esercitazioni introduttive, visitate:
 * [Linee guida](code-guide.md)sulla codifica: linee guida, suggerimenti e trucchi
 * [Guida](components-guide.md)ai componenti community: strumento di sviluppo interattivo
 
-## Componenti, funzioni e funzioni essenziali {#component-function-and-feature-essentials}
+## Componenti, funzioni e funzioni di base {#component-function-and-feature-essentials}
 
 I componenti, le funzioni e le funzioni di AEM Communities sono gli elementi costitutivi dei siti [](sites-console.md)community.
 
-* [Componenti, funzioni e funzioni essenziali](essentials.md)
+* [Componenti, funzioni e funzioni di base](essentials.md)
 * [Clientlibs per componenti Community](clientlibs.md)
 * [Funzioni per community](functions.md)
 * [Modelli per gruppi community](tools-groups.md)
