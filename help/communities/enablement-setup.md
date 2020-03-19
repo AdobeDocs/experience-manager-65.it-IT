@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -23,8 +23,8 @@ A scopo di sviluppo e dimostrazione, sarà necessario eseguire un&#39;istanza di
 
 Seguite le istruzioni di base della [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) di AEM per
 
-* ambiente di authoring su [localhost:4502](http://localhost:4502/)
-* ambiente di pubblicazione su [localhost:4503](http://localhost:4503/)
+* Ambiente di authoring su [localhost:4502](http://localhost:4502/)
+* Ambiente di pubblicazione su [localhost:4503](http://localhost:4503/)
 
 Per AEM Communities,
 
@@ -103,7 +103,7 @@ Esempio di pacchetto di tag creati per le esercitazioni introduttive di AEM Comm
 
 ## Creazione di membri e gruppi di abilitazione {#create-enablement-members-and-groups}
 
-Per un sito community di abilitazione, i visitatori del sito non devono poter registrarsi [autonomamente né utilizzare il login](sites-console.md#user-management)social.
+Per un sito di abilitazione per community, i visitatori del sito non devono poter registrarsi [autonomamente né utilizzare il login](sites-console.md#user-management)per social network.
 
 Con il servizio [](#enable-the-tunnel-service) tunnel attivato, la console [](members.md) Membri viene utilizzata per registrare nuovi membri nell’ambiente di pubblicazione.
 
@@ -125,8 +125,8 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 
 * **ID**: riley
 * **E-mail**: riley.taylor@mailinator.com
-* **Password**:password
-* **Conferma password**:password
+* **Password**: password
+* **Conferma password**: password
 * **Nome**: Riley
 * **Cognome**: Taylor
 
@@ -134,10 +134,10 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 
 [Crea un secondo membro](members.md#create-new-member) che verrà aggiunto al gruppo Community Ski Class.
 
-* **ID**:sidney
+* **ID**: sidney
 * **E-mail**: sidney.croft@mailinator.com
-* **Password**:password
-* **Conferma password**:password
+* **Password**: password
+* **Conferma password**: password
 * **Nome**: Sidney
 * **Cognome**: Croft
 
@@ -147,8 +147,8 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 
 * **ID**: quinn
 * **E-mail**: quinn.harper@mailinator.com
-* **Password**:password
-* **Conferma password**:password
+* **Password**: password
+* **Conferma password**: password
 * **Nome**: Quinn
 * **Cognome**: Harper
 
@@ -161,7 +161,7 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 * **Descrizione**: un gruppo di esempio per assegnare le risorse di abilitazione
 * **Aggiungi membri al gruppo** &#39;aggiungi&#39;:
 
-   *  riley
+   * riley
    * sidney
 
 * Seleziona **[!UICONTROL Salva]**
@@ -197,8 +197,8 @@ Create un utente all’ *autore*, al quale verrà assegnato il ruolo di Amminist
 
    * **ID&amp;ast;**: sirius
    * **Indirizzo** e-mail: sirius.nilson@mailinator.com
-   * **Password&amp;ast;**:password
-   * **Conferma password&amp;ast;**:password
+   * **Password&amp;ast;**: password
+   * **Conferma password&amp;ast;**: password
    * **Nome**: Sirio
    * **Cognome&amp;ast;**: Nilson
 
