@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Blog Essentials{#blog-essentials}
+# Blog Essentials {#blog-essentials}
 
 A partire da AEM 6.1 Communities, un blog è un&#39;attività della community. Gli articoli dei blog vengono ora pubblicati dall&#39;ambiente di pubblicazione, dove in precedenza, gli articoli dei blog potevano essere creati solo nell&#39;ambiente di authoring e pubblicati.
 
@@ -92,11 +92,11 @@ Una struttura del sito community che include la funzione [](/help/communities/fu
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](/help/communities/working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l’utilizzo di uno store [](/help/communities/working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi :
+Consulta :
 
 * [Panoramica](/help/communities/srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
 * [Caratteristiche essenziali di SRP e UGC](/help/communities/srp-and-ugc.md) - Metodi e esempi di utilità SRP
