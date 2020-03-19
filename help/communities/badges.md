@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Console Badge{#badges-console}
+# Console Badge {#badges-console}
 
-## Informazioni sui simboli {#about-badges}
+## Informazioni sui Badge {#about-badges}
 
 La console Community Badges consente di aggiungere distintivi personalizzati che possono essere visualizzati per un membro quando guadagnato (assegnato) o assume un ruolo specifico nella comunità (assegnato).
 
@@ -26,15 +26,15 @@ La console Community Badges consente di aggiungere distintivi personalizzati che
 
 Attualmente, i simboli assegnati a un membro della community o assegnati vengono visualizzati insieme al nome e all&#39;avatar nelle seguenti posizioni:
 
-* profili
-* [forum](/help/communities/forum.md)
+* Profili
+* [Forum](/help/communities/forum.md)
 * [D/R](/help/communities/working-with-qna.md)
-* [classifica](/help/communities/enabling-leaderboard.md)
-* [ideazione](/help/communities/ideation-feature.md)
+* [Leaderboards](/help/communities/enabling-leaderboard.md)
+* [Ideazione](/help/communities/ideation-feature.md)
 
 Nell’ambiente di authoring, per accedere alla console Badges
 
-* dalla navigazione globale : **Strumenti, Community, Badge**
+* Dalla navigazione globale, andate a **[UIControl Tools > Communities > Badge]**
 
 In questa console vengono visualizzati i simboli attualmente disponibili e dai quali è possibile aggiungere nuovi simboli.
 
@@ -48,13 +48,21 @@ Se l’ambiente di pubblicazione è una farm di editori, è necessario configura
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-* **Carica immagine**(*richiesta*) Un’immagine con un contrassegno di 32 x 32 pixel consigliati a 72 dpi in formato JPEG o PNG.
+* **Carica immagine**
 
-* **Nome**(*obbligatorio*) Il nome del contrassegno. È il nome predefinito `Display Name` e il nome del nodo del repository. Se il nome del nodo del repository non `Name` è valido, verrà modificato.
+   (*Obbligatorio*) Un’immagine con un’immagine con dimensioni consigliate di 32 x 32 pixel a 72 dpi in formato JPEG o PNG.
 
-* **Nome** visualizzato (*facoltativo*) Nome da visualizzare per il contrassegno nell’interfaccia utente. Il valore predefinito è il testo non modificato immesso per il `Name`.
+* **Nome**
 
-* **Descrizione**(*facoltativo*) Una descrizione del contrassegno.
+   (*Obbligatorio*) Il nome del contrassegno. È il nome predefinito `Display Name` e il nome del nodo del repository. Se il nome del nodo del repository non `Name` è valido, verrà modificato.
+
+* **Nome visualizzato**
+
+   (*Facoltativo*) Nome da visualizzare per il contrassegno nell’interfaccia utente. Il valore predefinito è il testo non modificato immesso per il `Name`.
+
+* **Descrizione**
+
+   (*Facoltativo*) Una descrizione del contrassegno.
 
 ## Informazioni aggiuntive {#additional-information}
 
