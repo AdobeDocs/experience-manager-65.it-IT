@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -40,7 +40,7 @@ Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebb
 
 ## Visitatore del sito anonimo {#anonymous-site-visitor}
 
-A un visitatore del sito anonimo viene immediatamente presentata la pagina di login per questo sito community di abilitazione privato. Notate che non è disponibile l&#39;opzione di autoregistrazione né di accesso con Facebook o Twitter.
+A un visitatore del sito anonimo viene immediatamente presentata la pagina di login per questo sito della community di abilitazione privata. Notate che non è disponibile l&#39;opzione di autoregistrazione né di accesso con Facebook o Twitter.
 
 Questa home page include quattro voci di menu: `Assignments, Ski Catalog, What's New` e `Discussions`, ma nessuno può essere raggiunto senza effettuare l&#39;accesso.
 
@@ -90,7 +90,7 @@ Al successivo accesso del membro, viene visualizzata la pagina principale, ident
 
 ### Assegnazioni {#assignments}
 
-Nella pagina Assegnazioni viene visualizzato il membro di tutti i percorsi di apprendimento e le risorse di abilitazione assegnate specificamente a tale utente.
+Nella pagina Assegnazioni viene visualizzato il membro di tutti i percorsi di apprendimento e le risorse di abilitazione assegnate specificatamente a tale utente.
 
 Ogni assegnazione fornisce informazioni di base su
 
@@ -118,7 +118,7 @@ Le interazioni con la risorsa di abilitazione saranno riportate nella sezione Ra
 
 ### Catalogo sciistico {#ski-catalog}
 
-La pagina Catalogo sci è il catalogo di risorse di abilitazione con tag dallo `Tutorial` spazio nomi. Alle due risorse *di lezioni* di sci viene assegnato il `Skiing` tag , in modo che se sono selezionati tag diversi da `All` o `Tutorial: Sports / Skiing` è selezionato, non verrà visualizzato nulla.
+La pagina Catalogo sci è il catalogo di risorse di abilitazione con tag dallo `Tutorial` spazio dei nomi. Alle due risorse *di lezioni* di sci viene assegnato il `Skiing` tag , in modo che se sono selezionati tag diversi da `All` o `Tutorial: Sports / Skiing` è selezionato, non verrà visualizzato nulla.
 
 Se a un membro non sono state assegnate risorse di abilitazione, direttamente o attraverso un percorso di apprendimento, è possibile interagire con le risorse di abilitazione presenti in un catalogo e fornire feedback attraverso commenti e valutazioni.
 
@@ -161,9 +161,9 @@ La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Qui
 
 ### Amministrazione {#administration}
 
-Ciò che è, è l&#39;attività dei due studenti, `Riley Taylor` e `Sidney Croft. By s`selezionando il `Administration`collegamento per accedere alla console Moderazione, Quinn è in grado di utilizzare la console [di moderazione](moderation.md) in massa per moderare i loro post.
+Ciò che c&#39;è, è l&#39;attività dei due studenti, `Riley Taylor` e `Sidney Croft`. Selezionando il `Administration` collegamento per accedere alla console Moderazione, Quinn è in grado di utilizzare la console [di moderazione](moderation.md) collettiva per moderare i propri post.
 
-Selezionando l&#39;icona del pannello laterale si aprono i filtri utilizzati per la ricerca di contenuti della community.
+Selezionando l&#39;icona del pannello laterale si aprono i filtri utilizzati per la ricerca di contenuti per le community.
 
 Passando il puntatore su una scheda di commento vengono visualizzate le azioni di moderazione.
 
@@ -203,8 +203,8 @@ Con una piccola attività e un’interazione con le risorse durante la pubblicaz
 * Accesso con privilegi amministrativi
 * Navigare dal menu principale a **[!UICONTROL Community > Risorse]**
 * Seleziona il `Enablement Tutorial` sito
-* Selezionare l&#39; `Report`icona per un riepilogo di tutte le risorse
-* Selezionare una risorsa e quindi l&#39; `Report`icona relativa a un rapporto sulla risorsa
+* Selezionare l&#39; `Report` icona per un riepilogo di tutte le risorse
+* Selezionare una risorsa, quindi l&#39; `Report` icona relativa a un rapporto sulla risorsa
 
 È probabile che la visualizzazione dei dati di Adobe Analytics sia troppo presto, e che la visualizzazione potrebbe richiedere da 1 a 12 ore. Tuttavia, il reporting SCORM di base è già disponibile.
 
@@ -218,13 +218,13 @@ Con una piccola attività e un’interazione con le risorse durante la pubblicaz
 
 * Open Card `Enablement Tutorial`
 * Open Card `Ski Lessons`
-* `select Report, User Report`
+* Seleziona `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
 ### Console Rapporti {#reports-console}
 
-La console Rapporti consente di generare rapporti su
+La console Rapporti consente la generazione di rapporti su
 
 * **Assegnazioni** per qualsiasi sito community di abilitazione
 * **Visualizzazioni** per qualsiasi sito community
