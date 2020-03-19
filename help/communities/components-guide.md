@@ -10,12 +10,12 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Guida ai componenti community {#community-components-guide}
+# Guida ai componenti community  {#community-components-guide}
 
 La guida Componenti comunitari è uno strumento di sviluppo interattivo per il quadro della componente [sociale (SCF)](scf.md). Contiene un elenco dei componenti AEM Communities disponibili o le funzioni più complesse create da più componenti.
 
@@ -23,11 +23,11 @@ Oltre alle informazioni di base per ciascun componente, la guida consente di spe
 
 Per informazioni relative alle informazioni di sviluppo essenziali relative a ciascun componente, vedere [Feature e Componenti di base](essentials.md).
 
-## Introduzione {#getting-started}
+## Guida introduttiva {#getting-started}
 
 La guida è destinata alle installazioni di sviluppo di istanze di creazione (localhost:4502) e pubblicazione (localhost:4503).
 
-Per accedere al sito Community Components, visita
+Per accedere al sito Community Components, consulta
 
 * [https://&lt;server>:&lt;porta>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
@@ -118,7 +118,7 @@ Quando si utilizza la guida in un’istanza pubblicata, è possibile utilizzare 
 
 >[!NOTE]
 >
->Tenete presente che se l’SRP viene lasciato impostato come predefinito su [JSRP](jsrp.md), l’UGC immesso nell’istanza di pubblicazione sarà visibile solo al momento della pubblicazione e *non sarà visibile dalla console di [moderazione](moderate-ugc.md) nell’istanza di creazione.
+>Tenete presente che se l’SRP viene mantenuto come impostazione predefinita su [JSRP](jsrp.md), l’UGC immesso nell’istanza di pubblicazione sarà visibile solo al momento della pubblicazione e *non* sarà visibile dalla console di [moderazione](moderate-ugc.md) nell’istanza di creazione.
 
 ## Librerie lato client {#client-side-libraries}
 
@@ -144,7 +144,7 @@ Quando attivato, ciascun componente SCF è disponibile per la creazione di proto
 
 Per sperimentare rapidamente le personalizzazioni, la `scg:showIde`proprietà deve essere aggiunta al nodo JCR del contenuto della pagina del componente e impostata su true.
 
-Utilizzando il componente commenti come esempio, nell’istanza di creazione o di pubblicazione, con diritti di amministratore:
+Utilizzando il componente commenti come esempio, nell’istanza di creazione o di pubblicazione, è stato effettuato l’accesso con privilegi di amministratore:
 
 1. Passa a [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
