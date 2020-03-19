@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -30,9 +30,9 @@ Il primo passaggio consiste nell&#39;aggiungere al `/apps/an-scf-sandbox/compone
 Utilizzo di CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nome: `sling:resourceSuperType`
-    * Tipo: &quot;String`
-    * Valore: &quot;foundation/components/page&quot;
+    Nome: `sling:resourceSuperType`
+    Type: `String`
+    Value: &quot;foundation/components/page&quot;
 
 1. Fate clic su verde **[!UICONTROL [+]Aggiungi]**
 1. Fate clic su **[!UICONTROL Salva tutto]**
@@ -86,9 +86,9 @@ Utilizzo di CRXDE Lite:
 
    Per impostare l’authoring, sovrapponete `body.jsp` con uno script locale e includete nel corpo un sistema paragrafo (parsys):
 
-   1. navigate to `/apps/an-scf-sandbox/components`
-   1. selezionare il `playpage`nodo
-   1. fare clic con il pulsante destro del mouse e selezionare `Create > Create File...`
+   1. Accedi a `/apps/an-scf-sandbox/components`
+   1. Selezionare il `playpage`nodo
+   1. Fare clic con il pulsante destro del mouse e selezionare `Create > Create File...`
 
       * Nome: **body.jsp**
    1. Fate clic su **[!UICONTROL Salva tutto]**
@@ -134,7 +134,7 @@ Per abilitare i componenti di Communities per la creazione, attenetevi alle istr
 
 * [Accesso ai componenti Community](basics.md#accessing-communities-components)
 
-Ai fini di questa sandbox, iniziate con questi componenti **Community** (attivabili selezionando la casella):
+Ai fini di questa sandbox, iniziate con i seguenti componenti **Community** (attivabili selezionando la casella):
 
 * Commenti
 * Forum
@@ -143,7 +143,7 @@ Ai fini di questa sandbox, iniziate con questi componenti **Community** (attivab
 * Riepilogo recensioni (visualizzazione)
 * Votazione
 
-Inoltre, scegliete i componenti **[!UICONTROL Generali]** , come
+Inoltre, scegliete i componenti **[!UICONTROL Generali]** , ad esempio
 
 * Immagine
 * Tabella
@@ -174,4 +174,4 @@ Modificate l’URL del browser nella pagina principale: [http://localhost:4502/e
 
 Una volta pubblicato il sito, quando si passa alla pagina principale di un’istanza di pubblicazione si passa alla pagina inglese.
 
-L&#39;ultimo passaggio prima di giocare con i componenti SCF delle community è aggiungere una cartella libreria client (clientlibs) ... . **[⇒](add-clientlibs.md)**
+L&#39;ultimo passaggio prima di giocare con i componenti SCF delle community è aggiungere una cartella libreria client (clientlibs) .... [Aggiungi Clienlibs](add-clientlibs.md)
