@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -125,8 +125,8 @@ Lo script SQL viene ottenuto dall&#39;archivio AEM:
 
 Un metodo per scaricare lo schema è:
 
-* Selezionare il `jcr:content`nodo del file sql
-* Il valore della `jcr:data`proprietà è un collegamento di visualizzazione
+* Selezionare il `jcr:content` nodo del file sql
+* Il valore della `jcr:data` proprietà è un collegamento di visualizzazione
 
 * Selezionare il collegamento di visualizzazione per salvare i dati in un file locale
 
@@ -155,7 +155,7 @@ Nell&#39;immagine seguente, il `init_schema.sql` file è pronto per essere esegu
 
 #### Aggiorna {#refresh}
 
-Una volta eseguito lo script, è necessario aggiornare la `SCHEMAS`sezione del `Navigator` database per visualizzare il nuovo database. Utilizzate l&#39;icona di aggiornamento a destra di &#39;SCHEMAS&#39;:
+Una volta eseguito lo script, è necessario aggiornare la `SCHEMAS` sezione del `Navigator` database per visualizzare il nuovo database. Utilizzate l&#39;icona di aggiornamento a destra di &#39;SCHEMAS&#39;:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -173,7 +173,7 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
 
    * Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
-* Individua il `Day Commons JDBC Connections Pool`
+* Individua la variabile `Day Commons JDBC Connections Pool`
 * Selezionate l&#39; `+` icona per creare una nuova configurazione di connessione
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
@@ -183,7 +183,7 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
    * **[!UICONTROL Classe]** driver JDBC: `com.mysql.jdbc.Driver`
    * **[!UICONTROL URI]** connessione JDBC: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Specificare il server al posto di localhost se MySQL Server non è lo stesso di AEM Server
+      Specificare il server al posto di localhost se MySQL Server non è uguale a &#39;this&#39; AEM Server
 
       *community* è il nome predefinito del database (schema)
 
