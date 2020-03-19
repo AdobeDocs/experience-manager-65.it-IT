@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
+source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
 
 ---
 
@@ -39,7 +39,7 @@ Per iniziare a utilizzare VLT, è necessario effettuare le seguenti operazioni:
 
 Per utilizzare lo strumento VLT, è prima necessario installarlo. Per impostazione predefinita, non è installato in quanto è uno strumento aggiuntivo. Inoltre, è necessario impostare la variabile di ambiente del sistema.
 
-1. Scaricate il file di archivio FileVault dal sito Web [Apache Jackrabbit.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Scaricare il file di archivio FileVault dall&#39;archivio [Maven artifact.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >L&#39;origine dello strumento VLT è [disponibile su GitHub.](https://github.com/apache/jackrabbit-filevault)
@@ -217,7 +217,7 @@ Di seguito sono riportate alcune attività comuni eseguite in VLT. Per informazi
 
 ### Estrazione di una sottostruttura {#checking-out-a-subtree}
 
-Se desiderate ad esempio estrarre solo una sottostruttura del repository, `/apps/geometrixx`digitate quanto segue:
+Se desiderate ad esempio estrarre solo una sottostruttura dell&#39;archivio, `/apps/geometrixx`digitate quanto segue:
 
 ```shell
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
@@ -247,9 +247,9 @@ Esempio di filtro:
 
 È possibile importare ed esportare contenuti tra un repository JCR e il file system locale senza utilizzare file di controllo.
 
-Per importare ed esportare contenuti senza ricorrere al `.vlt` controllo:
+Per importare ed esportare contenuti senza `.vlt` controllo:
 
-1. Configurare inizialmente il repository:
+1. Configurare inizialmente la directory archivio:
 
    ```shell
    $ cd /projects
@@ -327,7 +327,7 @@ Nella tabella seguente sono descritti tutti i comandi VLT disponibili. Per infor
 | `proplist` | `pl` | Stampa le proprietà su file o directory. |
 | `propset` | `ps` | Imposta il valore di una proprietà su file o directory. |
 | `add` |  | Posiziona i file e le directory sotto il controllo della versione. |
-| `delete` | `del` o `rm` | Rimuove file e directory dal controllo della versione. |
+| `delete` | `del` o `rm` | Rimuove i file e le directory dal controllo della versione. |
 | `diff` | `di` | Visualizza le differenze tra due percorsi. |
 | `console` |  | Esegue una console interattiva. |
 | `rcp` |  | Copia una struttura di nodi da un repository remoto a un altro. |
@@ -351,7 +351,7 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 | `-t (--type) <arg>` | specifica il tipo di esportazione, piattaforma o jar. |
 | `-p (--prune-missing)` | specifica se i file locali mancanti devono essere eliminati |
 | `<uri>` | uri di montagna |
-| `<jcrPath>` |  Percorso JCR |
+| `<jcrPath>` | Percorso JCR |
 | `<localPath>` | percorso locale |
 
 #### Esempi {#examples}
@@ -377,7 +377,7 @@ import -v|-s <uri> <local-path> <jcr-path>
 | `-v (--verbose)` | output dettagliato |
 | `-s (-- sync)` | mette i file locali sotto controllo archivio |
 | `<uri>` | uri di montagna |
-| `<jcrPath>` |  Percorso JCR |
+| `<jcrPath>` | Percorso JCR |
 | `<localPath>` | percorso locale |
 
 #### Esempi {#examples-1}
@@ -388,7 +388,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Checkout (co) {#checkout-co}
 
-Esegue un check-out iniziale da un repository JCR al file system locale a partire da &lt;uri> al file system locale in &lt;local-path>. È inoltre possibile aggiungere un argomento &lt;jcrPath> per estrarre una sottodirectory della struttura remota. È possibile specificare i filtri Workspace che vengono copiati nella directory META-INF.
+Esegue un check-out iniziale da un repository JCR al file system locale a partire da &lt;uri> al file system locale in &lt;local-path>. È inoltre possibile aggiungere un argomento &lt;jcrPath> per estrarre una sottodirectory della struttura ad albero remota. È possibile specificare i filtri dell&#39;area di lavoro che vengono copiati nella directory META-INF.
 
 #### Sintassi {#syntax-2}
 
@@ -402,8 +402,8 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 |--- |--- |
 | `--force` | forza il checkout per sovrascrivere i file locali, se già esistenti |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
-| `-f (--filter) <file>` | specifica i filtri automatici se non ne sono definiti |
+| `-q (--quiet)` | stampa il minor numero possibile |
+| `-f (--filter) <file>` | specifica i filtri automatici se non ne sono definiti nessuno |
 | `<uri>` | uri di montagna |
 | `<jcrPath>` | (facoltativo) percorso remoto |
 | `<localPath>` | (facoltativo) percorso locale |
@@ -442,9 +442,9 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf per collegamenti con hotfix (nome, id, ad esempio) `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf per i collegamenti con hotfix (nome, id, ad esempio) `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `<localPaths> [<localPaths> ...]` | percorso locale |
 
 ### Stato {#status}
@@ -464,9 +464,9 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `-u (--show-update)` | visualizza informazioni di aggiornamento |
-| `-N (--non-recursive)` | opera su una singola directory |
+| `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `<file> [<file> ...]` | file o directory per visualizzare lo stato |
 
 ### Aggiorna {#update}
@@ -484,9 +484,9 @@ update -v|-q|--force|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `--force` | forza la sovrascrittura dei file locali |
-| `-N (--non-recursive)` | opera su una singola directory |
+| `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `<file> [<file> ...]` | file o directory da aggiornare |
 
 ### Info {#info}
@@ -504,7 +504,7 @@ info -v|-q|-R <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `-R (--recursive)` | opera ricorsiva |
 | `<file> [<file> ...]` | file o directory per visualizzare le informazioni |
 
@@ -523,9 +523,9 @@ commit -v|-q|--force|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `--force` | forza il commit anche se la copia remota viene modificata |
-| `-N (--non-recursive)` | opera su una singola directory |
+| `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `<file> [<file> ...]` | file o directory da impegnare |
 
 ### Versione precedente {#revert}
@@ -542,7 +542,7 @@ revert -q|-R <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<file> [<file> ...]` | file o directory da impegnare |
 
@@ -564,7 +564,7 @@ resolved -q|-R|--force <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `--force` | risolve, anche in presenza di indicatori di conflitto |
 | `<file> [<file> ...]` | file o directory da risolvere |
@@ -583,7 +583,7 @@ propget -q|-R <propname> <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<propname>` | il nome della proprietà |
 | `<file> [<file> ...]` | file o directory da cui ottenere la proprietà |
@@ -602,7 +602,7 @@ proplist -q|-R <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<file> [<file> ...]` | file o directory per elencare le proprietà da |
 
@@ -612,7 +612,7 @@ Imposta il valore di una proprietà su file o directory.
 
 >[!NOTE]
 >
->VLT riconosce le seguenti proprietà speciali con versione:
+>VLT riconosce le seguenti proprietà speciali con le versioni:
 >
 >`vlt:mime-type`
 >
@@ -628,7 +628,7 @@ propset -q|-R <propname> <propval> <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<propname>` | il nome della proprietà |
 | `<propval>` | il valore della proprietà |
@@ -649,14 +649,14 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
-| `-N (--non-recursive)` | opera su una singola directory |
+| `-q (--quiet)` | stampa il minor numero possibile |
+| `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `--force` | forza l&#39;esecuzione dell&#39;operazione |
 | `<file> [<file> ...]` | file o directory locale da aggiungere |
 
 ### Elimina {#delete}
 
-Rimuove file e directory dal controllo della versione.
+Rimuove i file e le directory dal controllo della versione.
 
 #### Sintassi {#syntax-14}
 
@@ -669,7 +669,7 @@ delete -v|-q|--force <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | il minor numero possibile di stampe |
+| `-q (--quiet)` | stampa il minor numero possibile |
 | `--force` | forza l&#39;esecuzione dell&#39;operazione |
 | `<file> [<file> ...]` | file o directory locale da eliminare |
 
@@ -687,8 +687,8 @@ diff -N <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-N (--non-recursive)` | opera su una singola directory |
-| `<file> [<file> ...]` | file o directory per visualizzare le differenze |
+| `-N (--non-recursive)` | opera su un&#39;unica directory |
+| `<file> [<file> ...]` | file o directory per visualizzare le differenze da |
 
 ### Console {#console}
 
@@ -775,7 +775,7 @@ I codici di stato utilizzati da VLT sono:
 * &#39;R&#39; Sostituito
 * &#39;?&#39; l&#39;elemento non è sotto il controllo della versione
 * &#39;!&#39; elemento mancante (rimosso dal comando non-svn) o incompleto
-* Elemento con versione &#39;~&#39; bloccato da un elemento di un tipo diverso
+* Elemento con versione &#39;~&#39; ostruito da un elemento di un tipo diverso
 
 ## Impostazione della sincronizzazione di FileVault {#setting-up-filevault-sync}
 
@@ -787,7 +787,7 @@ Il servizio di sincronizzazione di archivi viene utilizzato per sincronizzare il
 
 ### Installazione del servizio tramite vlt {#installing-the-service-using-vlt}
 
-Il `vlt sync install` comando può essere utilizzato per installare automaticamente il bundle e la configurazione del servizio di sincronizzazione di archivi.
+Il `vlt sync install` comando può essere utilizzato per installare automaticamente il bundle e la configurazione del servizio di sincronizzazione di volta in volta.
 
 Il bundle viene installato di seguito `/libs/crx/vault/install` e il nodo di configurazione viene creato in `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Inizialmente il servizio è attivato ma non sono configurate radici di sincronizzazione.
 
