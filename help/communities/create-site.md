@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
@@ -25,11 +25,11 @@ Utilizzate l&#39;istanza di creazione per creare un sito community. Nell&#39;ist
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Dalla navigazione globale, andate a **Navigazione, Community, Siti.**
 
-La console Siti community offre una procedura guidata che guida l’utente attraverso i passaggi necessari per creare un sito community. È possibile passare al `Next`passo precedente o `Back`al passo precedente prima di impegnare il sito nel passaggio finale.
+La console Siti community offre una procedura guidata che guida l’utente attraverso i passaggi necessari per creare un sito community. È possibile passare al `Next` passaggio o `Back` al passaggio precedente prima di impegnare il sito nel passaggio finale.
 
 Per iniziare a creare un nuovo sito community:
 
-* selezionate il `Create`pulsante.
+* Selezionare il `Create`pulsante.
 
 ![createcommunitysite](assets/createcommunitysite.png)
 
@@ -43,14 +43,14 @@ Nel passaggio [Modello](/help/communities/sites-console.md#step2013asitetemplate
 * **Descrizione del sito community**: `A site for engaging with the community.`
 * **Radice** sito community: (lasciare vuoto per la radice predefinita `/content/sites`)
 * **Configurazioni** cloud: (lasciate vuoto se non sono specificate configurazioni cloud) fornite il percorso alle configurazioni cloud specificate.
-* **Lingua** di base del sito community: (lasciare invariate le lingue per una sola: Inglese) utilizzare l&#39;elenco a discesa per scegliere una *o più* lingue di base dalle lingue disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese tradizionale e cinese (semplificato). Verrà creato un sito community per ogni lingua aggiunta, all&#39;interno della stessa cartella del sito seguendo la procedura descritta in [Traduzione di contenuti per siti](/help/sites-administering/translation.md)multilingue. La pagina principale di ciascun sito conterrà una pagina figlia denominata dal codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
+* **Lingua** di base del sito community: (lasciare invariate le lingue per una sola: Inglese) utilizzare l&#39;elenco a discesa per scegliere una *o più* lingue di base dalle lingue disponibili: tedesco, italiano, francese, giapponese, spagnolo, portoghese (Brasile), cinese (tradizionale) e cinese (semplificato). Verrà creato un sito community per ogni lingua aggiunta, all&#39;interno della stessa cartella del sito seguendo la procedura descritta in [Traduzione di contenuti per siti](/help/sites-administering/translation.md)multilingue. La pagina principale di ciascun sito conterrà una pagina figlia denominata dal codice della lingua di una delle lingue selezionate, ad esempio &#39;en&#39; per l&#39;inglese o &#39;fr&#39; per il francese.
 
 * **Nome** sito community: coinvolgimento
 
-   * controllate il nome perché non viene facilmente modificato dopo la creazione del sito
-   * l&#39;URL iniziale verrà visualizzato sotto il nome del sito community
-   * per un URL valido, aggiungete un codice della lingua di base + &quot;.html&quot;
-   * *ad esempio*, https://localhost:4502/content/sites/ `engage/en.html`
+   * Ricontrolla il nome perché non viene facilmente modificato dopo la creazione del sito
+   * L&#39;URL iniziale verrà visualizzato sotto il nome del sito community
+   * Per un URL valido, aggiungete un codice della lingua di base + &quot;.html&quot;
+   * *Ad esempio*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Modello**: premuto per scegliere `Reference Site`
 
@@ -72,7 +72,7 @@ Selezionate lo stile da applicare al modello. Quando viene selezionato, al tema 
 
 Seleziona **Avanti**.
 
-### Passaggio 3:Impostazioni {#step-settings}
+### Passaggio 3: Impostazioni {#step-settings}
 
 Nella fase Settings (Impostazioni), prima di selezionare `Next`, tenete presente che sono presenti sette sezioni che forniscono l&#39;accesso alle configurazioni che includono gestione utente, tag, moderazione, gestione dei gruppi, analisi, traduzione e abilitazione.
 
@@ -82,11 +82,11 @@ Per provare a utilizzare le funzioni di abilitazione, consulta l’esercitazione
 
 Seleziona tutte le caselle di controllo per Gestione [utente](/help/communities/sites-console.md#user-management)
 
-* per consentire ai visitatori del sito di registrarsi autonomamente
-* per consentire ai visitatori del sito di visualizzare il sito senza effettuare l&#39;accesso
-* per consentire ai membri di inviare e ricevere messaggi da altri membri della community
-* per consentire l&#39;accesso a Facebook invece di registrare e creare un profilo
-* per consentire l&#39;accesso con Twitter invece di registrare e creare un profilo
+* Per consentire ai visitatori del sito di registrarsi autonomamente
+* Per consentire ai visitatori del sito di visualizzare il sito senza effettuare l&#39;accesso
+* Per consentire ai membri di inviare e ricevere messaggi da altri membri della community
+* Per consentire l&#39;accesso a Facebook invece di registrare e creare un profilo
+* Per consentire l&#39;accesso con Twitter invece di registrare e creare un profilo
 
 >[!NOTE]
 >
@@ -100,8 +100,8 @@ I tag che possono essere applicati al contenuto della community sono controllati
 
 La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio,
 
-* type &#39;tut&#39;
-* select `Tutorial`
+* Tipo `tut`
+* Seleziona `Tutorial`
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -109,12 +109,12 @@ La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio
 
 [I ruoli](/help/communities/users.md) dei membri della community vengono assegnati tramite le impostazioni nella sezione Ruoli.
 
-Per consentire a un membro della community (o a un gruppo di membri) di utilizzare il sito come manager della community, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
+Per consentire a un membro della comunità (o a un gruppo di membri) di utilizzare il sito come manager della comunità, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
 
 Esempio,
 
-* type &quot;q&quot;
-* seleziona [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Tipo `q`
+* Seleziona [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
@@ -140,12 +140,12 @@ Consultate Configurazione [di Analytics per le funzioni](/help/communities/analy
 
 Le impostazioni [di](/help/communities/sites-console.md#translation) traduzione specificano la lingua di base del sito, nonché se è possibile tradurre o meno l&#39;UGC e in quale lingua, in tal caso.
 
-* check **Allow Machine Translation**
-* lasciare le lingue predefinite selezionate per la traduzione dal servizio di traduzione automatica predefinito
-* lascia provider di traduzione e configurazione predefiniti
-* non c&#39;è bisogno di uno store globale perché non ci sono copie in lingua
-* selezionate **Traduci tutta la pagina**
-* lasciate l&#39;opzione di persistenza predefinita
+* Controlla **Consenti traduzione automatica**
+* Lasciare le lingue predefinite selezionate per la traduzione dal servizio di traduzione automatica predefinito
+* Lascia il provider di traduzione predefinito e la configurazione
+* Non c&#39;è bisogno di uno store globale perché non ci sono copie in lingua
+* Seleziona **Traduci tutta la pagina**
+* Opzione Mantieni persistenza predefinita
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -181,16 +181,26 @@ Selezionando la quarta icona di ellissi (Altre azioni), vengono visualizzate le 
 
 Da sinistra a destra sono:
 
-* **Apri sito** seleziona l’icona matita per aprire il sito della community in modalità di modifica dell’autore, per aggiungere e/o configurare componenti della pagina
+* **Apri sito**
 
-* **Modifica sito** selezionate l&#39;icona delle proprietà per aprire il sito della community e modificare le proprietà, ad esempio il titolo o per modificare il tema
+   Selezionate l’icona matita per aprire il sito della community in modalità di modifica dell’autore, per aggiungere e/o configurare i componenti della pagina
 
-* **Pubblica sito** seleziona l&#39;icona del mondo per pubblicare il sito della community (ad esempio, se il server di pubblicazione è in esecuzione sul computer locale, per impostazione predefinita viene utilizzato localhost:4503)
+* **Modifica sito**
 
-* **Esporta sito** selezionate l&#39;icona di esportazione per creare un pacchetto del sito della community che viene memorizzato e scaricato in [Gestione](/help/sites-administering/package-manager.md) pacchetti.
+   Selezionate l&#39;icona delle proprietà per aprire il sito della community e modificare le proprietà, ad esempio il titolo o il tema
+
+* **Pubblica sito**
+
+   Selezionate l&#39;icona del mondo per pubblicare il sito della community (ad esempio, se il server di pubblicazione è in esecuzione nel computer locale, per impostazione predefinita localhost:4503)
+
+* **Esporta sito**
+
+   Selezionate l&#39;icona di esportazione per creare un pacchetto del sito community che viene memorizzato e scaricato in [Package Manager](/help/sites-administering/package-manager.md) .
 UGC non è incluso nel pacchetto del sito.
 
-* **Elimina sito**selezionare l&#39;icona Elimina per eliminare il sito community dalla console Community > Siti. Questa azione rimuove tutti gli elementi associati al sito, come UGC, gruppi di utenti, risorse e record del database.
+* **Elimina sito**
+
+   Selezionate l&#39;icona Elimina per eliminare il sito community dalla console **[di]** UIControl Communities > Sites. Questa azione rimuove tutti gli elementi associati al sito, come UGC, gruppi di utenti, risorse e record del database.
 
 ![siteazioni](assets/siteactions.png)
 
@@ -200,16 +210,17 @@ UGC non è incluso nel pacchetto del sito.
 >
 >Nell’istanza di creazione, dal menu principale:
 >
->1. Selezionare Strumenti > Operazioni > Menu Replica.
-1. Selezionare &quot;Agenti sull&#39;autore&quot;.
-1. Selezionate &quot;Agente predefinito (pubblicazione)&quot;.
-1. Accanto a &quot;Impostazioni&quot; selezionare &quot;Modifica&quot;.
-1. Nella finestra di dialogo a comparsa per Impostazioni agente, selezionate la scheda Trasporto.
-1. In URI, modificate il numero di porta, 4503, in numero di porta desiderato >
-   * ad esempio, per utilizzare la porta 6103:
-https://localhost:6103/bin/receive?sling:authRequestLogin=1
-1. Selezionare &quot;OK&quot;.
-1. (Facoltativo) Selezionare &quot;Cancella&quot; o &quot;Forza tentativo&quot; per ripristinare la coda di replica.
+>1. Passare al menu Strumenti **[di controllo UIC > Operazioni > Replica]** .
+>1. Selezionate Agenti **[di controllo UIControl sull’autore]**.
+>1. Selezionate **[UIControl Default Agent (pubblica)]**.
+>1. Accanto a Impostazioni **[]** UIControl, selezionate Modifica **[]** UIControl.
+>1. Nella finestra di dialogo a comparsa per Impostazioni agente, selezionate la scheda Trasporto **[]** UIControl.
+>1. In URI, modificate il numero di porta, 4503, in numero di porta desiderato >
+   >    * Ad esempio, per utilizzare la porta 6103:
+      >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>
+1. Selezionate **[UIControl OK]**.
+1. (Facoltativo) Selezionare **[UIControl Clear]** o **[UIControl Force Retry]** per ripristinare la coda di replica.
 
 
 
@@ -220,27 +231,27 @@ Dopo aver verificato che il server di pubblicazione sia in esecuzione, seleziona
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-Quando il sito community è stato pubblicato correttamente, viene visualizzato un breve messaggio:
+Quando il sito della community è stato pubblicato correttamente, viene visualizzato un breve messaggio:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
 ### Nuovi gruppi di utenti della community {#new-community-user-groups}
 
-Insieme al nuovo sito della community, vengono creati nuovi gruppi di utenti con le autorizzazioni appropriate impostate per diverse funzioni amministrative. Per informazioni dettagliate, consultate Gruppi di [utenti per i siti](/help/communities/users.md#usergroupsforcommunitysites)della community.
+Insieme al nuovo sito della community, vengono creati nuovi gruppi di utenti che dispongono delle autorizzazioni appropriate impostate per diverse funzioni amministrative. Per informazioni dettagliate, visitate Gruppi di [utenti per i siti](/help/communities/users.md#usergroupsforcommunitysites)della community.
 
 Per questo nuovo sito community, dato il nome del sito &quot;coinvolgimento&quot; nel passaggio 1, i quattro nuovi gruppi di utenti possono essere visualizzati dalla console [](/help/communities/members.md) Gruppi (navigazione globale: Community, Gruppi):
 
 * Manager Community Engagement
 * Amministratori gruppo di coinvolgimento community
 * Membri di coinvolgimento della community
-*  Moderatori di coinvolgimento community
+* Moderatori di coinvolgimento community
 * Partecipazione community con membri privilegiati
 * Community Engagement Site Content Manager
 
 Ricorda che [Aaron McDonald](/help/communities/tutorials.md#demo-users) è membro di
 
 * Manager Community Engagement
-*  Moderatori di coinvolgimento community
+* Moderatori di coinvolgimento community
 * Partecipazione community (indirettamente come membro del gruppo Moderatori)
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
@@ -251,11 +262,11 @@ Ricorda che [Aaron McDonald](/help/communities/tutorials.md#demo-users) è membr
 
 ## Configura per errore di autenticazione {#configure-for-authentication-error}
 
-Una volta configurato un sito e inviato per la pubblicazione, [configurate la mappatura](/help/communities/sites-console.md#configure-for-authentication-error) di accesso ( `Adobe Granite Login Selector Authentication Handler`) nell’istanza di pubblicazione. Il vantaggio è che, se le credenziali di accesso non vengono immesse correttamente, l&#39;errore di autenticazione rivisualizzerà la pagina di accesso del sito community con un messaggio di errore.
+Una volta configurato un sito e inviato per la pubblicazione, [configurate la mappatura](/help/communities/sites-console.md#configure-for-authentication-error) di accesso ( `Adobe Granite Login Selector Authentication Handler`) nell’istanza di pubblicazione. Il vantaggio è che, se le credenziali di accesso non vengono immesse correttamente, l&#39;errore di autenticazione rivisualizzerà la pagina di accesso del sito della community con un messaggio di errore.
 
 Aggiungi un `Login Page Mapping` nome
 
-* /content/sites/interazione/it/signing:/content/sites/interazione/it
+* `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 ## Passaggi opzionali {#optional-steps}
 
@@ -293,13 +304,14 @@ Per iniziare:
 
 
 1. Selezionate **Salva tutto.**
-1. (facoltativo) Elimina la cronologia di navigazione.
+1. (Facoltativo) Eliminare la cronologia di navigazione.
 1. Andate a https://localhost:4503/.
 
-   * arrivate a https://localhost:4503/content/sites/engage/en.html
+   * Arrivate a https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
-Per disattivare, è sufficiente preimpostare il valore della `sling:match` proprietà con &#39;x&#39; - `xlocalhost.4503/$` - e **Salva tutto**.
+>
+>Per disattivare, è sufficiente preimpostare il valore della `sling:match` proprietà con &#39;x&#39; - `xlocalhost.4503/$` - e **Salva tutto**.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -322,5 +334,6 @@ Inoltre, gli amministratori possono utilizzare l’icona [](/help/communities/si
 Dopo ogni modifica, ricordate di **salvare** e **pubblicare** nuovamente il sito.
 
 >[!NOTE]
-Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](/help/sites-authoring/qg-page-authoring.md)di authoring.
+>
+>Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](/help/sites-authoring/qg-page-authoring.md)di authoring.
 
