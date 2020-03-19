@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
@@ -39,9 +39,9 @@ La directory /apps è il primo posto in cui è stata eseguita la ricerca per ris
 
 Il componente predefinito nella directory /libs non deve mai essere modificato in quanto le patch e gli aggiornamenti futuri sono liberi di modificare la directory /libs in qualsiasi modo necessario pur mantenendo le interfacce pubbliche.
 
-Ciò è diverso dall’ [estensione](#extensions) di un componente predefinito in cui si desidera apportare modifiche per un uso specifico, la creazione di un percorso univoco per il componente e l’utilizzo del riferimento al componente predefinito originale nella directory /libs come tipo di risorsa super.
+Ciò è diverso dall’ [estensione](#extensions) di un componente predefinito in cui si desidera apportare modifiche per un uso specifico, la creazione di un percorso univoco per il componente e l’utilizzo di un riferimento al componente predefinito originale nella directory /libs come tipo di risorsa super.
 
-Per un rapido esempio di sovrapposizione del componente Commenti, provate l’esercitazione [sul componente](overlay-comments.md)Sovrapponi commenti.
+Per un rapido esempio di sovrapposizione del componente commenti, provate l’esercitazione [sul componente](overlay-comments.md)Overlay Comments (Commenti sovrapposizione).
 
 ## Estensioni {#extensions}
 
@@ -102,9 +102,9 @@ Gli stili personalizzati sostituiranno gli stili framework predefiniti e il comp
 
 >[!CAUTION]
 >
->Qualsiasi nome di classe CSS con il prefisso** scf-js-&amp;ast;**è utilizzato in modo specifico nel codice javascript. Queste classi influiscono sullo stato di un componente (ad esempio, passare da nascosto a visibile) e non devono essere né ignorate né rimosse.
+>Qualsiasi nome di classe CSS con il prefisso `scf-js` ha un uso specifico nel codice javascript. Queste classi influiscono sullo stato di un componente (ad esempio, per passare da nascosto a visibile) e non devono essere né ignorate né rimosse.
 >
->Mentre scf-js-amp;ast; le classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati in fogli di stile con la conferma che, controllando gli stati degli elementi, possono verificarsi effetti collaterali.
+>Anche se le `scf-js` classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati in fogli di stile con l&#39;avvertenza che, mentre controllano gli stati degli elementi, ci possono essere effetti collaterali.
 
 ## Estensione di Javascript {#extending-javascript}
 
@@ -145,15 +145,15 @@ Per estendere un’implementazione Javascript dei componenti, è necessario solo
 
 I tag script sono parte integrante del framework lato client. Sono la combinazione che consente di associare la marcatura generata sul lato server ai modelli e alle viste sul lato client.
 
-I tag script negli script SCF non devono essere rimossi quando si sovrappongono o si ignorano i componenti. I tag script SCF creati automaticamente per l&#39;invio di JSON nell&#39;HTML sono identificati con l&#39;attributo `data-scf-json=`true.
+I tag script negli script SCF non devono essere rimossi quando si sovrappongono o si ignorano i componenti. I tag script SCF creati automaticamente per l&#39;invio di JSON nell&#39;HTML sono identificati con l&#39;attributo `data-scf-json=true`.
 
 ## Clientlibs per SCF {#clientlibs-for-scf}
 
 L&#39;utilizzo di librerie [lato](../../help/sites-developing/clientlibs.md) client (clientlibs) consente di organizzare e ottimizzare i file Javascript e CSS utilizzati per il rendering del contenuto sul client.
 
-I clientlibs per SCF seguono un pattern di denominazione molto specifico per due varianti, che varia solo dalla presenza di &quot;author&quot; nel nome della categoria:
+I clientlibs per SCF seguono un pattern di denominazione molto specifico per due varianti, che varia solo in base alla presenza di &quot;author&quot; nel nome della categoria:
 
-| Clientlib | Pattern per la proprietà Categories |
+| Clientlib Variant | Pattern per la proprietà Categories |
 |--- |--- |
 | clientlib complete | cq.social.hbs.&lt;nome componente> |
 | clientlib autore | cq.social.author.hbs.&lt;nome componente> |
@@ -164,12 +164,12 @@ I clientlibs completi (non autori) includono dipendenze e sono utili per l&#39;i
 
 Queste versioni sono disponibili in:
 
-* /etc/clientlibs/social/hbs/&lt;nome componente>
+* `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
 Esempio:
 
-* Nodo cartella client: /etc/clientlibs/social/hbs/forum
-* Proprietà Categories: cq.social.hbs.forum
+* Nodo cartella client: `/etc/clientlibs/social/hbs/forum`
+* Proprietà Categories: `cq.social.hbs.forum`
 
 La guida [Componenti](components-guide.md) community elenca tutti i clientlibs richiesti per ciascun componente SCF.
 
@@ -183,12 +183,12 @@ Questi clientlibs non dovrebbero mai essere inclusi direttamente, ma sono invece
 
 Queste versioni si trovano nella cartella delle librerie SCF:
 
-* /libs/social/&lt;feature>/components/hbs/&lt;nome componente>/clientlibs
+* `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
 Esempio:
 
-* Nodo cartella client: /libs/social/forum/hbs/forum/clientlibs
-* Proprietà Categories: cq.social.author.hbs.forum
+* Nodo cartella client: `/libs/social/forum/hbs/forum/clientlibs`
+* Proprietà Categories: `cq.social.author.hbs.forum`
 
 Nota: mentre i clientlibs di autori non incorporano mai altre librerie, elencano comunque le rispettive dipendenze. Se incorporate in altre librerie, le dipendenze non vengono inserite automaticamente e devono essere incorporate.
 
