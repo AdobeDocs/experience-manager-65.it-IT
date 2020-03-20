@@ -3,14 +3,14 @@ title: Gestione di risorse composte con riferimenti e risorse con più pagine in
 description: Scoprite come creare riferimenti a risorse AEM da InDesign, Illustrator e Photoshop. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b13fe70c4b67b27e0f18bdb557c52e25d21e7f75
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
 
 # Gestione di risorse composte e multipagina {#managing-compound-assets}
 
-Risorse Adobe Experience Manager (AEM) può identificare se un file caricato contiene riferimenti a risorse già presenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a risorse AEM, viene creato un collegamento bidirezionale tra le risorse caricate e a cui viene fatto riferimento.
+Risorse Adobe Experience Manager (AEM) può identificare se un file caricato contiene riferimenti a risorse già presenti nell’archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a risorse AEM, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui viene fatto riferimento.
 
 Oltre ad eliminare la ridondanza, il riferimento alle risorse AEM nelle applicazioni Adobe Creative Cloud migliora la collaborazione e aumenta l&#39;efficienza e la produttività degli utenti.
 
@@ -24,7 +24,9 @@ Potete fare riferimento a risorse AEM esistenti direttamente da un file Adobe Il
 
 1. Utilizzando l’app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM, installa l’archivio Risorse AEM come unità nel computer locale. Nell’unità montata, andate alla posizione della risorsa a cui desiderate fare riferimento.
 1. Trascinate la risorsa dall’unità montata al file Illustrator.
+
 1. Salvate il file Illustrator nell’unità montata o [caricatelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) nell’archivio di AEM.
+
 1. Al termine del flusso di lavoro, passate alla pagina dei dettagli della risorsa. I riferimenti alle risorse AEM esistenti sono elencati in **[!UICONTROL Dipendenze]** nella colonna **[!UICONTROL Riferimenti]** .
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
@@ -35,7 +37,9 @@ Potete fare riferimento a risorse AEM esistenti direttamente da un file Adobe Il
 
 1. Fare clic su **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti. Nella pagina [!UICONTROL Proprietà] , l’elenco dei file che fanno riferimento alla risorsa corrente viene visualizzato nella colonna **[!UICONTROL Riferimenti]** della scheda **[!UICONTROL Base]** .
 
-   ![chlimage_1-86](assets/chlimage_1-260.png)
+   ![visualizzare i riferimenti di Experience Manager Assets nella colonna Riferimenti nei dettagli delle risorse](assets/asset-references.png)
+
+   *Figura: Riferimenti alle risorse nei dettagli delle risorse*
 
 ## Aggiunta di risorse AEM come riferimenti in Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -45,7 +49,7 @@ Le risorse di riferimento esistono già in AEM Assets. Potete estrarre le risors
 
 >[!NOTE]
 >
->Se il server InDesign è proxy, i file InDesign hanno la loro anteprima incorporata nei metadati XMP. In questo caso, l&#39;estrazione delle miniature non è obbligatoria in modo esplicito. Tuttavia, se il server InDesign non è proxy, le miniature devono essere estratte esplicitamente per i file InDesign.
+>Se il server InDesign è proxy, i file InDesign hanno la loro anteprima incorporata nei metadati XMP. In questo caso, l&#39;estrazione delle miniature non è obbligatoria in modo esplicito. Tuttavia, se il server InDesign non è proxy, le miniature devono essere estratte in modo esplicito per i file InDesign.
 
 ### Creare riferimenti trascinando le risorse {#create-references-by-dragging-aem-assets}
 
@@ -53,7 +57,7 @@ Questa procedura è simile a [Aggiungi risorse AEM come riferimenti in Adobe Ill
 
 ### Creare riferimenti alle risorse esportando un file ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Per creare un nuovo flusso di lavoro, effettua i passaggi descritti in [Creazione di modelli](/help/sites-developing/workflows-models.md) di workflow.
+1. Per creare un nuovo flusso di lavoro, effettua i passaggi descritti in [Creazione di modelli](/help/sites-developing/workflows-models.md) di flusso di lavoro.
 1. Utilizzate la funzione Pacchetto di Adobe InDesign per esportare il documento.
 Adobe InDesign può esportare come pacchetto un documento e le risorse collegate. In questo caso, la cartella esportata contiene una cartella Links che contiene risorse secondarie nel file InDesign.
 1. Create un file ZIP e caricatelo nell’archivio AEM.
@@ -84,9 +88,9 @@ Per le risorse supportate con formati con più pagine — File PDF, file AI, fil
 
 La generazione di risorse secondarie è disabilitata per impostazione predefinita. Per attivare la generazione di risorse secondarie, effettuate le seguenti operazioni:
 
-1. Accedi a Experience Manager come amministratore. Accedere **[!UICONTROL a Strumenti > Workflow > Modelli]**.
+1. Accedi a Experience Manager come amministratore. Accedere **[!UICONTROL a Strumenti > Flusso di lavoro > Modelli]**.
 1. Selezionate il flusso di lavoro Aggiorna risorsa **** DAM e fate clic su **[!UICONTROL Modifica]**.
-1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungi il passaggio al flusso di lavoro. Fate clic su **[!UICONTROL Sincronizza]**.
+1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungete il passaggio al flusso di lavoro. Fate clic su **[!UICONTROL Sincronizza]**.
 
 Per generare le risorse secondarie, effettuate una delle seguenti operazioni:
 
@@ -110,7 +114,7 @@ Potete visualizzare un file con più pagine, ad esempio PDF, INDD, PPT, PPTX e A
 
 ![Visualizzare e visualizzare le pagine di una risorsa con più pagine](assets/view_multipage_asset_fmr.gif)
 
-Per InDesign, potete estrarre pagine utilizzando il server InDesign. Se le anteprime delle pagine vengono salvate durante la creazione di file InDesign, InDesign Server non è richiesto per l&#39;estrazione della pagina.
+Per InDesign, potete estrarre le pagine utilizzando il server InDesign. Se le anteprime delle pagine vengono salvate durante la creazione di file InDesign, InDesign Server non è richiesto per l&#39;estrazione della pagina.
 
 Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a sinistra e nei controlli Visualizzatore pagina:
 
@@ -120,6 +124,6 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 * **[!UICONTROL L’opzione Annota]** consente di inserire note sulla risorsa secondaria specifica. Le annotazioni utilizzate in risorse secondarie separate vengono raccolte e visualizzate insieme all’apertura della risorsa principale per la visualizzazione.
 
-* **[!UICONTROL L’opzione Panoramica]** pagina mostra tutte le risorse secondarie contemporaneamente.
+* **[!UICONTROL L’opzione Panoramica]** pagina consente di visualizzare tutte le risorse secondarie contemporaneamente.
 
 * **[!UICONTROL L&#39;opzione Timeline]** dalla barra a sinistra dopo aver fatto clic sull&#39;icona ![della barra a](assets/do-not-localize/aem_leftrail_contentonly.png) sinistra mostra il flusso di attività per il file.
