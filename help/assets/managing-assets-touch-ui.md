@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -336,11 +336,10 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
 
 Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le seguenti operazioni:
 
-1. Dall’interfaccia utente Risorse, andate alla posizione della risorsa da visualizzare in anteprima, utilizzando `Tab` i tasti freccia e freccia.
+1. Dall’interfaccia utente Risorse, passa alla risorsa desiderata utilizzando `Tab` e i tasti freccia.
 
-1. Aprite la risorsa desiderata.
+1. Premete `Enter` il tasto sulla risorsa desiderata per aprirla. Potete ingrandire le risorse in modalità di anteprima.
 
-   Nella modalità di anteprima, le opzioni di zoom e ripristino sono disponibili per i tipi [di immagini](/help/assets/assets-formats.md#supported-raster-image-formats) supportati (con modifica interattiva).
 1. Per ingrandire la risorsa:
    1. Utilizzate `Tab` il tasto per spostare lo stato attivo sull&#39;icona di zoom in.
    1. Utilizzate `Enter` il tasto per ingrandire l&#39;immagine.
@@ -368,11 +367,15 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/
 
 1. Per pianificare una data/ora specifica per l’attivazione della risorsa, utilizza il selettore data posto accanto al campo **[!UICONTROL On Time (All’ora)]**.
 
-   ![chlimage_1-217](assets/chlimage_1-12.png)
+   ![utilizzare il selettore data/ora o i tasti della tastiera nel campo Ora di attivazione per aggiungere data e ora per l’attivazione delle risorse](assets/schedule-activation.png)
+
+   *Figura: Pianificazione dell&#39;attivazione delle risorse*
 
 1. Per disattivare la risorsa dopo una determinata durata, scegliete la data/ora di disattivazione dal selettore data accanto al campo **[!UICONTROL Ora]** disattivazione. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni non sono disponibili né tramite l’interfaccia Web di Assets né tramite l’API HTTP.
 
-   ![chlimage_1-218](assets/chlimage_1-13.png)
+   ![utilizzare il selettore data/ora o i tasti della tastiera nel campo Ora di disattivazione per aggiungere data e ora alla disattivazione delle risorse](assets/schedule-deactivation.png)
+
+   *Figura: Pianificazione disattivazione risorsa*
 
 1. Nel campo **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete Invio. Il nuovo tag viene salvato in AEM. YouTube richiede tag per la pubblicazione. Consultate [pubblicare i video su YouTube](video.md#publishing-videos-to-youtube).
 
