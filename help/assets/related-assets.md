@@ -3,7 +3,7 @@ title: Risorse correlate
 description: Scoprite come collegare risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,14 +14,16 @@ Risorse Adobe Experience Manager (AEM) consente di correlare manualmente le riso
 
 Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzione con fornitori o agenzie e rendere il file INDD ad alta risoluzione disponibile solo su richiesta.
 
->[!NOTE] Solo gli utenti con autorizzazioni di modifica possono correlare e non correlare le risorse.
+>[!NOTE] Solo gli utenti con autorizzazioni di modifica per le risorse possono collegare e scollegare le risorse.
 >
 
 ## Relate assets {#relating-assets}
 
-1. Dall’interfaccia di AEM, aprite la pagina [!UICONTROL Proprietà] di una risorsa da correlare.
+1. Dall’interfaccia di AEM, aprite la pagina **[!UICONTROL Proprietà]** di una risorsa da correlare.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![aprire la pagina Proprietà di una risorsa per correlare la risorsa](assets/asset-properties-relate-assets.png)
+
+   *Figura: Pagina delle proprietà della risorsa per correlare le risorse*
 
    In alternativa, selezionate la risorsa dalla vista a elenco.
 
@@ -67,11 +69,14 @@ La creazione di relazioni sorgente/derivate tra risorse mediante la funzione Ris
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se il file sorgente è correlato a un’altra risorsa, Risorse AEM recupera la risorsa a cui si fa riferimento e la include per la traduzione.
+Se il file di origine è correlato a un’altra risorsa, Experience Manager Assets recupera la risorsa di riferimento e la include per la traduzione.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![la pagina Proprietà risorsa mostra il file di origine della risorsa correlata da includere per la traduzione](assets/asset-properties-source-asset.png)
+
+*Figura: Risorsa di origine delle risorse correlate da includere per la traduzione*
 
 1. Traducete le risorse presenti nella cartella di origine in una lingua di destinazione seguendo la procedura descritta in [Creazione di un nuovo progetto](translation-projects.md#create-a-new-translation-project)di traduzione. Ad esempio, in questo caso, potete tradurre le risorse in francese.
+
 1. Dalla pagina [!UICONTROL Progetti] , aprite la cartella di traduzione.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
