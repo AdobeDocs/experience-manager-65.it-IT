@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
+source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
 
 ---
 
@@ -17,6 +17,8 @@ L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020
 
 ## AEM Sites {#aem-sites}
 
+AEM 6.5.4.0 include miglioramenti a Style System. È ora possibile selezionare gli stili nella finestra di dialogo del componente.
+
 ### Miglioramenti delle prestazioni in varie aree {#performance-improvements}
 
 * È stato ridotto il tempo necessario per caricare e inizializzare ContextHub in un sito (`contexthub.kernel.js`). Ne risulta un caricamento più rapido delle pagine durante una visita del sito.
@@ -26,8 +28,6 @@ L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020
 * È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie dal vivo in Panoramica **** Live Copy.
 
 * Gestione migliorata degli URL incompleti o non validi. Tali URL possono rallentare l’Editor modelli.
-
-Inoltre, AEM 6.5.4.0 include i miglioramenti di Style System. È ora possibile selezionare gli stili nella finestra di dialogo del componente.
 
 ## AEM Assets {#aem-assets}
 
@@ -116,16 +116,19 @@ Se prevedete di uscire dall&#39;ufficio, potete specificare cosa accade agli ele
 
 Potete utilizzare l&#39;API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L&#39;API Batch combina i dati con un modello per produrre una comunicazione interattiva. L&#39;API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto della carta di credito per più clienti. Consultate [Generare più comunicazioni interattive utilizzando l&#39;API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
-
-
 ## Versioni principali da AEM 6.5 SP3
 
 Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzionalità che non rientrano nel risultato finale di AEM:
 
-* AEM Cloud Manager 2020.1.0 e 2020.2.0Gli aggiornamenti della versione migliorano lo stato della pipeline e la possibilità di scaricare i registri per vari passaggi. Per ulteriori informazioni, vedere:
+* AEM Cloud Manager 2020.1.0 e 2020.2.0
+
+   Gli aggiornamenti delle versioni migliorano lo stato della pipeline e la possibilità di scaricare i registri per vari passaggi. Per ulteriori informazioni, vedere:
+
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * Aggiornamenti CLI di AEM Cloud Manager
 
