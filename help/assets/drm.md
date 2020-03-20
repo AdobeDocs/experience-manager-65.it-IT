@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -118,9 +118,12 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Nella scheda Avanzate, quindi imposta una data di scadenza per la risorsa dal campo **[!UICONTROL Scade]** in.
+1. Nella scheda Avanzate, imposta una data di scadenza per la risorsa dal campo **[!UICONTROL Scadenza]** .
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+   ![imposta data e ora di scadenza risorsa nel campo Scadenza](assets/asset-properties-advanced-tab.png)
+
+
+   *Figura: Scheda Avanzate nelle proprietà della risorsa per impostare la scadenza della risorsa*
 
 1. Fate clic su **[!UICONTROL Salva]** , quindi su **[!UICONTROL Chiudi]** per visualizzare la console Risorse.
 1. Lo stato di pubblicazione della risorsa indica uno stato scaduto nella parte inferiore della miniatura della risorsa nella vista a schede. Nella vista a elenco, lo stato della risorsa viene visualizzato come **[!UICONTROL Scaduto]**.
