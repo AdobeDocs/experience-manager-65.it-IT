@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -30,9 +30,7 @@ AEM supporta i seguenti casi di utilizzo e questo articolo descrive l’utilizzo
 
 Cercate le risorse utilizzando il campo Omnisearch nella parte superiore dell’interfaccia Web di AEM. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in AEM, fai clic sull’icona di ricerca nella barra superiore, immetti la parola chiave di ricerca e premi Invio. In alternativa, usate la scelta rapida per parole chiave / (barra) per aprire il campo di ricerca Omnisearch. Posizione: le risorse sono già selezionate per limitare le ricerche alle risorse DAM. AEM offre suggerimenti durante la digitazione iniziale di una parola chiave di ricerca.
 
-Usate il pannello **[!UICONTROL Filtri]** per limitare la ricerca filtrando i risultati della ricerca in base alle varie opzioni (predicati), come il tipo di file, la dimensione del file, la data dell’ultima modifica, lo stato della risorsa, i dati di approfondimento e le licenze Adobe Stock. Gli amministratori possono personalizzare il pannello Filtri e aggiungere o rimuovere i predicati di ricerca utilizzando i facet di ricerca.
-
-Il filtro Tipo [!UICONTROL di] file nel pannello [!UICONTROL Filtri] dispone di caselle di controllo con stati misti, il che significa che a meno che non si selezionino tutti i predicati (o i formati) nidificati, le caselle di controllo di primo livello non sono selezionate e vengono visualizzate.
+Usate il pannello **[!UICONTROL Filtri]** per limitare la ricerca filtrando i risultati della ricerca in base alle varie opzioni (predicati), come il tipo di file, la dimensione del file, la data dell’ultima modifica, lo stato della risorsa, i dati di approfondimento e le licenze Adobe Stock. Gli amministratori possono personalizzare il pannello Filtri e aggiungere o rimuovere i predicati di ricerca utilizzando i facet di ricerca. Il filtro Tipo [!UICONTROL di] file nel pannello [!UICONTROL Filtri] dispone di caselle di controllo con più stati. Pertanto, a meno che non selezioniate tutti i predicati (o formati) nidificati, le caselle di controllo di primo livello non vengono selezionate e vengono invece evidenziate.
 
 La funzionalità di ricerca di AEM supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
 
@@ -248,7 +246,7 @@ Per accedere all’interfaccia del selettore delle risorse, passate a `https://[
 
 *Figura: Sfogliare e selezionare la risorsa nel selettore delle risorse*
 
-## Limiti   {#limitations}
+## Limitazioni  {#limitations}
 
 La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 
