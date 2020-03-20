@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
 
 ---
 
@@ -37,30 +37,12 @@ La classe fornisce inoltre diversi metodi per intervenire nei cicli di vita del 
 
 La tabella seguente contiene collegamenti alla documentazione di riferimento di diversi oggetti Java chiave da utilizzare per interagire in modo programmatico con i flussi di lavoro. Gli esempi seguenti illustrano come ottenere e utilizzare gli oggetti classe nel codice.
 
-<table>
- <tbody>
-  <tr>
-   <th>Funzioni<a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th>
-   <th>Oggetti<br /> </th>
-  </tr>
-  <tr>
-   <td>Accesso a un flusso di lavoro<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Esecuzione e query di un'istanza del flusso di lavoro<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Gestione di un modello di workflow<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Informazioni per un nodo che si trova o meno nel flusso di lavoro </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td>
-  </tr>
- </tbody>
-</table>
+| Funzioni | Oggetti |
+|---|---|
+| Accesso a un flusso di lavoro | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Esecuzione e query di un&#39;istanza del flusso di lavoro | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Gestione di un modello di workflow | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Informazioni per un nodo che si trova o meno nel flusso di lavoro | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Ottenimento di oggetti del flusso di lavoro negli script ECMA {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -115,7 +97,7 @@ Si applicano i seguenti metodi di richiesta HTTP:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crea una nuova istanza del flusso di lavoro. <br /> I parametri sono: - <code>model</code>: l’ID (URI) del rispettivo modello<br /> di workflow - <code>payloadType</code>: contenente il tipo di payload (ad esempio <code>JCR_PATH</code> o URL).<br /> Il payload viene inviato come parametro <code>payload</code>. Una <code>201</code> (<code>CREATED</code>) risposta viene restituita con un'intestazione di posizione contenente l'URL della nuova risorsa di istanza del flusso di lavoro.</p> </td>
+   <td><p>Crea una nuova istanza del flusso di lavoro. I parametri sono:<br /> - <code>model</code>: l’ID (URI) del rispettivo modello<br /> di workflow - <code>payloadType</code>: contenente il tipo di payload (ad esempio <code>JCR_PATH</code> o URL).<br /> Il payload viene inviato come parametro <code>payload</code>. Una <code>201</code> (<code>CREATED</code>) risposta viene restituita con un'intestazione di posizione contenente l'URL della nuova risorsa di istanza del flusso di lavoro.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -167,7 +149,7 @@ Si applicano i seguenti metodi di richiesta HTTP:
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Elenca i modelli di workflow disponibili.</td>
+   <td>Elenca i modelli di flusso di lavoro disponibili.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
@@ -357,7 +339,7 @@ Si applicano i seguenti metodi di richiesta HTTP:
 |---|---|
 | `GET` | Ottiene i dati del modello nella versione specificata (se presente). |
 
-### Gestione delle inbox (utente) {#managing-user-inboxes}
+### Gestione delle caselle in entrata (utente) {#managing-user-inboxes}
 
 Si applicano i seguenti metodi di richiesta HTTP:
 
@@ -500,7 +482,7 @@ Gli esempi utilizzati:
 
 >[!NOTE]
 >
->L&#39;eliminazione del modello imposta la `deleted` proprietà del nodo figlio del modello su `metaData``true`.
+>L&#39;eliminazione del modello imposta la `deleted` proprietà del nodo figlio del modello su `metaData` su `true`.
 >
 >L&#39;eliminazione non rimuove il nodo del modello.
 
@@ -595,7 +577,7 @@ Se dovete far avanzare automaticamente un passaggio **Partecipante** che non è 
 1. Specificate un timeout (scadenza), quindi create un processo di sling pianificato da attivare in quel momento.
 1. Scrivete un gestore di processi a cui verrà notificato il momento della scadenza del timeout e che attiva il processo.
 
-   Se l&#39;attività non è ancora stata completata, il gestore eseguirà l&#39;azione richiesta
+   Se l&#39;attività non è ancora stata completata, il gestore eseguirà l&#39;azione richiesta.
 
 >[!NOTE]
 >
