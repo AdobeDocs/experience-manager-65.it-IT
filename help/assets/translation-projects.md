@@ -3,7 +3,7 @@ title: Creazione di progetti di traduzione
 description: Scoprite come creare progetti di traduzione in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro di copia per lingua disponibili nella barra laterale Riferimenti nell’interfaccia utente di AEM.
 
-* **Crea e traduci**:In questo flusso di lavoro, le risorse da tradurre vengono copiate nella directory principale della lingua in cui desiderate tradurre. Inoltre, a seconda delle opzioni selezionate, viene creato un progetto di traduzione per le risorse nella console Progetti. A seconda delle impostazioni, il progetto di traduzione può essere avviato manualmente o può essere eseguito automaticamente non appena viene creato il progetto di traduzione.
+* **Crea e traduci**: In questo flusso di lavoro, le risorse da tradurre vengono copiate nella directory principale della lingua in cui desiderate tradurre. Inoltre, a seconda delle opzioni selezionate, viene creato un progetto di traduzione per le risorse nella console Progetti. A seconda delle impostazioni, il progetto di traduzione può essere avviato manualmente o può essere eseguito automaticamente non appena viene creato il progetto di traduzione.
 
 * **Aggiorna copie** della lingua: Eseguite questo flusso di lavoro per tradurre un altro gruppo di risorse e includerlo in una copia per lingua per una lingua specifica. In questo caso, le risorse convertite vengono aggiunte alla cartella di destinazione che contiene già risorse tradotte in precedenza.
 
@@ -24,7 +24,7 @@ Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro di cop
 >
 >Se avviate un flusso di lavoro di traduzione per risorse complesse, come file PDF e InDesign, le relative risorse secondarie o rappresentazioni (se presenti) non vengono inviate per la traduzione.
 
-## Creazione e conversione di flussi di lavoro {#create-and-translate-workflow}
+## Crea e traduci flusso di lavoro {#create-and-translate-workflow}
 
 È possibile utilizzare il flusso di lavoro di creazione e traduzione per generare per la prima volta copie della lingua per una lingua particolare. Il flusso di lavoro offre le seguenti opzioni:
 
@@ -34,10 +34,10 @@ Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro di cop
 
 ### Crea solo struttura {#create-structure-only}
 
-Utilizzare l&#39;opzione **[!UICONTROL Crea solo]** struttura per creare una gerarchia di cartelle di destinazione all&#39;interno della radice della lingua di destinazione, in modo che corrisponda alla gerarchia della cartella di origine all&#39;interno della radice della lingua di origine. In questo caso, le risorse sorgente vengono copiate nella cartella di destinazione. Tuttavia, non viene generato alcun progetto di traduzione.
+Utilizza l’opzione **[!UICONTROL Crea solo struttura]** per creare una gerarchia di cartelle di destinazione all’interno della directory principale lingua di destinazione, in modo che corrisponda alla gerarchia della cartella di origine all’interno della directory principale lingua di origine. In questo caso, le risorse di origine vengono copiate nella cartella di destinazione. Tuttavia, non viene generato alcun progetto di traduzione.
 
 1. Nell’interfaccia utente Risorse, seleziona la cartella di origine per la quale vuoi creare una struttura nella directory principale della lingua di destinazione.
-1. Aprite il riquadro **[!UICONTROL Riferimenti]** e toccate o fate clic su Copie **[!UICONTROL lingua]** in **[!UICONTROL Copie]**.
+1. Apri il riquadro **[!UICONTROL Riferimenti]** e tocca o fai clic su **[!UICONTROL Copie per lingua]** sotto **[!UICONTROL Copie]**.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -45,15 +45,15 @@ Utilizzare l&#39;opzione **[!UICONTROL Crea solo]** struttura per creare una ger
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
-1. Nell&#39;elenco Lingue **[!UICONTROL di]** destinazione, selezionate la lingua per la quale desiderate creare una struttura di cartelle.
+1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
-1. Dall’elenco **[!UICONTROL Progetto]** , scegliete **[!UICONTROL Crea solo]** struttura.
+1. Dall’elenco **[!UICONTROL Progetto]**, scegli **[!UICONTROL Crea solo struttura]**.
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. Click/tap **[!UICONTROL Create]**. La nuova struttura per la lingua di destinazione è elencata in Copie **[!UICONTROL lingua]**.
+1. Tocca o fai clic su **[!UICONTROL Crea]**. La nuova struttura per la lingua di destinazione è elencata in Copie **[!UICONTROL lingua]**.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -66,7 +66,7 @@ Utilizzare l&#39;opzione **[!UICONTROL Crea solo]** struttura per creare una ger
 Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella directory principale della lingua in cui desiderate tradurre. A seconda delle opzioni selezionate, viene creato un progetto di traduzione per le risorse nella console Progetti. A seconda delle impostazioni, il progetto di traduzione può essere avviato manualmente o eseguito automaticamente non appena viene creato il progetto di traduzione.
 
 1. Nell’interfaccia utente Risorse, seleziona la cartella di origine per la quale vuoi creare una copia per la lingua.
-1. Aprite il riquadro **[!UICONTROL Riferimenti]** e toccate o fate clic su Copie **[!UICONTROL lingua]** in **[!UICONTROL Copie]**.
+1. Apri il riquadro **[!UICONTROL Riferimenti]** e tocca o fai clic su **[!UICONTROL Copie per lingua]** sotto **[!UICONTROL Copie]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -74,7 +74,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Nell&#39;elenco Lingue **** di destinazione, selezionate le lingue per le quali desiderate creare una struttura di cartelle.
+1. Nell’elenco **[!UICONTROL Lingue di destinazione]**, seleziona le lingue per le quali vuoi creare una struttura di cartelle.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -82,11 +82,11 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Nel campo Titolo **** progetto, inserite un titolo per il progetto.
+1. Nel campo **[!UICONTROL Titolo progetto]**, inserisci un titolo.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Click/tap **[!UICONTROL Create]**. Le risorse della cartella sorgente vengono copiate nelle cartelle di destinazione per le impostazioni internazionali selezionate al punto 4.
+1. Tocca o fai clic su **[!UICONTROL Crea]**. Le risorse della cartella di origine vengono copiate nelle cartelle di destinazione per le impostazioni internazionali selezionate al punto 4.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -114,7 +114,10 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
 1. Andate all’interfaccia utente delle risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+   ![visualizzare i metadati convertiti nella pagina Proprietà della risorsa](assets/translated-metadata-asset-properties.png)
+
+   *Figura: Metadati tradotti nella pagina delle proprietà delle risorse*
+
 
    >[!NOTE]
    >
@@ -122,20 +125,20 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
 ### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project}
 
-Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito per le risorse aggiunte alla cartella di origine dopo aver eseguito un flusso di lavoro di traduzione precedente. Solo le risorse appena aggiunte vengono copiate nella cartella di destinazione contenente le risorse tradotte in precedenza. In questo caso non viene creato alcun nuovo progetto di traduzione.
+Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito per le risorse aggiunte alla cartella di origine dopo aver eseguito un flusso di lavoro di traduzione precedente. Solo le risorse appena aggiunte vengono copiate nella cartella di destinazione che contiene le risorse tradotte in precedenza. In questo caso non viene creato alcun nuovo progetto di traduzione.
 
 1. Nell’interfaccia utente Risorse, passa alla cartella di origine contenente le risorse non tradotte.
-1. Selezionate una risorsa da tradurre e aprite il riquadro **** Riferimento. Nella sezione Copie **[!UICONTROL di]** lingua viene visualizzato il numero di copie di traduzione attualmente disponibili.
-1. Tocca o fai clic su Copie **** lingua in **[!UICONTROL Copie]**. Viene visualizzato un elenco delle copie di traduzione disponibili.
+1. Seleziona una risorsa da tradurre e apri il **[!UICONTROL riquadro Riferimento]**. Nella sezione **[!UICONTROL Copie per lingua]** viene visualizzato il numero di copie di traduzione attualmente disponibili.
+1. Nella sezione **[!UICONTROL Copie per lingua]**, tocca o fai clic su **[!UICONTROL Copie]**. Viene visualizzato un elenco delle copie di traduzione disponibili.
 1. Tocca o fai clic su **[!UICONTROL Crea e traslina]** in basso.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Nell&#39;elenco Lingue **** di destinazione, selezionate le lingue per le quali desiderate creare una struttura di cartelle.
+1. Nell’elenco **[!UICONTROL Lingue di destinazione]**, seleziona le lingue per le quali vuoi creare una struttura di cartelle.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Dall’elenco **[!UICONTROL Progetto]** , selezionate **[!UICONTROL Aggiungi al progetto]** di traduzione esistente per eseguire il flusso di lavoro di traduzione nella cartella.
+1. Dall’elenco **[!UICONTROL Progetto]**, seleziona **[!UICONTROL Aggiungi al progetto di traduzione esistente]** per eseguire il flusso di lavoro di traduzione nella cartella.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -147,7 +150,7 @@ Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito p
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Click/tap **[!UICONTROL Create]**. Le risorse da convertire vengono aggiunte alla cartella di destinazione. La cartella aggiornata è elencata nella sezione Copie **** lingua.
+1. Tocca o fai clic su **[!UICONTROL Crea]**. Le risorse da tradurre vengono aggiunte alla cartella di destinazione. La cartella aggiornata è elencata nella sezione **[!UICONTROL Copie per lingua]**.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -198,8 +201,8 @@ Eseguite questo flusso di lavoro per tradurre qualsiasi altro set di risorse e i
 Se utilizzate questa opzione, viene creato un progetto di traduzione per il set di risorse per il quale desiderate aggiornare una copia in lingua.
 
 1. Nell’interfaccia utente Risorse, seleziona la cartella di origine in cui hai aggiunto una risorsa.
-1. Aprite il riquadro **[!UICONTROL Riferimenti]** e toccate o fate clic su Copie **[!UICONTROL di]** lingua in **[!UICONTROL Copie]** per visualizzare l’elenco delle copie di lingua.
-1. Selezionare la casella di controllo prima di Copie **** lingua, quindi selezionare la cartella di destinazione corrispondente alle impostazioni internazionali appropriate.
+1. Apri il riquadro **[!UICONTROL Riferimenti]** e, per visualizzare l’elenco delle copie per lingua, in **[!UICONTROL Copie]**, tocca o fai clic su **[!UICONTROL Copie per lingua]**.
+1. Seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**, quindi fai clic sulla cartella di destinazione che corrisponde alle impostazioni internazionali appropriate.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -211,7 +214,7 @@ Se utilizzate questa opzione, viene creato un progetto di traduzione per il set 
 
    ![chlimage_1-86](assets/chlimage_1-86.png)
 
-1. Nel campo Titolo **** progetto, inserite un titolo per il progetto.
+1. Nel campo **[!UICONTROL Titolo progetto]**, inserisci un titolo.
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -249,11 +252,11 @@ Se utilizzate questa opzione, viene creato un progetto di traduzione per il set 
 Se utilizzate questa opzione, il set di risorse viene aggiunto a un progetto di traduzione esistente per aggiornare la copia della lingua per le impostazioni internazionali scelte.
 
 1. Dall’interfaccia utente Risorse, selezionate la cartella di origine in cui avete aggiunto una cartella di risorse.
-1. Aprite il riquadro **** Riferimenti e toccate o fate clic su Copie **[!UICONTROL di]** lingua in **[!UICONTROL Copie]** per visualizzare l’elenco delle copie di lingua.
+1. Apri il riquadro **[!UICONTROL Riferimenti]** e, per visualizzare l’elenco delle copie per lingua, in **[!UICONTROL Copie]**, tocca o fai clic su **[!UICONTROL Copie per lingua]**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Selezionare la casella di controllo prima di Copie **** lingua, per selezionare tutte le copie della lingua. Deselezionare altre copie tranne la copia della lingua (copie) corrispondente alle impostazioni internazionali in cui si desidera tradurre.
+1. Per selezionare tutte le copie della lingua, seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**. Deseleziona le altre copie, ad eccezione della copia (o copie) per lingua corrispondente alle impostazioni internazionali verso cui vuoi tradurre.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -276,7 +279,7 @@ Se utilizzate questa opzione, il set di risorse viene aggiunto a un progetto di 
 
 Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per lingua con versioni modificate di risorse originali, la copia per lingua esistente viene mantenuta fino all’approvazione delle risorse tradotte. Risorse AEM memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia della lingua esistente dopo che l’utente ha esplicitamente approvato le risorse. Se rifiutate le risorse, la copia nella lingua rimane invariata.
 
-1. Tocca o fai clic sulla cartella principale di origine in Copie **** lingua per la quale hai già creato una copia per la lingua, quindi tocca o fai clic su **[!UICONTROL Mostra in risorse]** per aprire la cartella in Risorse AEM.
+1. Tocca o fai clic sulla cartella principale di origine di **[!UICONTROL Copie per lingua]** per la quale hai già creato una copia per lingua, quindi tocca o fai clic su **[!UICONTROL Mostra in Assets]** per aprire la cartella in AEM Assets.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -288,7 +291,7 @@ Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per l
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Selezionate la casella di controllo accanto a **[!UICONTROL Titolo]**.
-1. Dalla barra degli strumenti, tocca o fai clic su **[!UICONTROL Accetta traduzione]** , quindi tocca o fai clic su **[!UICONTROL Accetta]** nella finestra di dialogo per sovrascrivere la risorsa convertita nella cartella di destinazione con la versione convertita della risorsa modificata.
+1. Dalla barra degli strumenti, tocca o fai clic su **[!UICONTROL Accetta traduzione]**, quindi tocca o fai clic su **[!UICONTROL Accetta]** nella finestra di dialogo, così da sovrascrivere la risorsa tradotta nella cartella di destinazione con la versione tradotta della risorsa modificata.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -300,6 +303,6 @@ Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per l
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Passate alla console Risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
+1. Passate alla console Risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
 
 Per suggerimenti sulla traduzione efficiente dei metadati per le risorse, consultate [5 Passaggi per una traduzione efficiente dei metadati](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
