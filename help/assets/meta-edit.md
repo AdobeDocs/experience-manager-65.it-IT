@@ -3,7 +3,7 @@ title: Come modificare o aggiungere i metadati
 description: Scopri i metadati delle risorse in Risorse AEM e vari modi per modificare i metadati delle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,8 @@ Per modificare i metadati:
    * Dalla miniatura della risorsa, selezionate l’azione rapida **[!UICONTROL Visualizza proprietà]** .
    * Dalla pagina della risorsa, tocca o fai clic sull’icona **[!UICONTROL Visualizza proprietà]** nella barra degli strumenti.
       ![chlimage_1-168](assets/chlimage_1-168.png)
-      *Figura: Icona Proprietà*
+   *Figura: Icona Proprietà*
+
    Nella pagina della risorsa vengono visualizzati tutti i metadati della risorsa. Questi metadati sono stati estratti automaticamente al momento del caricamento (caricamento) in Risorse AEM.
 
    ![selezionate Proprietà risorsa per visualizzare i metadati](assets/asset-metadata.png)
