@@ -3,7 +3,7 @@ title: Schemi metadati
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,10 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
 1. Modificate le varie proprietà di metadati nelle varie schede. Tuttavia, non potete modificare il tipo di risorsa nella pagina delle proprietà.
 
-   ![chlimage_1-36](assets/chlimage_1-172.png)
+   ![non potete modificare il tipo di risorsa nella scheda di base Proprietà risorsa](assets/asset-properties-basic-tab.png)
+
+   *Figura: Scheda di base sulle proprietà della risorsa*
+
 
    Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modificare i moduli](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) dello schema metadati. Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
@@ -46,7 +49,7 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
          * **pdf**: Modulo schema per risorse con sottotipo `pdf`.
       1. **video**: Modulo schema per risorse con tipo MIME `video`, ad esempio `video/avi`, `video/mp4`e così via.
    * **insieme**: Modulo schema per le raccolte.
-   * **** content fragment: Modulo schema per frammenti di contenuto.
+   * **content fragment:** Modulo schema per frammenti di contenuto.
    * **moduli**: Questo modulo schema si riferisce ad [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
@@ -74,7 +77,7 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
 È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX.
 
-È possibile aggiungere nuove schede o elementi modulo al modulo schema di metadati. Le schede e gli elementi del modulo derivati dall&#39;elemento padre sono nello stato bloccato. Non è possibile modificarle a livello di figlio.
+È possibile aggiungere nuove schede o elementi del modulo al modulo schema di metadati. Le schede e gli elementi del modulo derivati dall&#39;elemento padre sono nello stato bloccato. Non è possibile modificarle a livello di figlio.
 
 1. Nella pagina Moduli schema, seleziona la casella di controllo che precede il modulo, quindi fai clic sull’icona Modifica nella barra degli strumenti.
 
@@ -82,7 +85,10 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
 1. Nella pagina **[!UICONTROL Editor schema metadati]**, personalizza la pagina delle proprietà della risorsa trascinando uno o più componenti dall’elenco dei tipi di componenti della scheda **[!UICONTROL Genera modulo]** alla scheda **[!UICONTROL Base]**.
 
-   ![chlimage_1-40](assets/chlimage_1-176.png)
+   ![aggiunta di componenti da Crea modulo all&#39;editor dello schema di metadati per personalizzare le proprietà della risorsa](assets/metadata-schema-editor.png)
+
+
+   *Figura: Scheda di base dell&#39;editor dello schema di metadati*
 
 1. Per configurare un componente, selezionatelo e modificatene le proprietà nella scheda **Impostazioni** .
 
@@ -147,9 +153,11 @@ Se aggiungete il componente Metadati contestuali a qualsiasi scheda di un modulo
 
 ![chlimage_1-43](assets/chlimage_1-179.png)
 
-Per includere una scheda qualsiasi nella pagina delle proprietà, oltre alla scheda in cui è applicato il componente Metadati contestuali, selezionare la scheda dall&#39;elenco. La scheda viene aggiunta alla pagina delle proprietà.
+Per visualizzare una scheda qualsiasi nella pagina delle proprietà, oltre alla scheda in cui è applicato il componente Metadati contestuali, selezionare la scheda dall&#39;elenco. La scheda viene aggiunta alla pagina delle proprietà.
 
-![chlimage_1-44](assets/chlimage_1-180.png)
+![selezionare una scheda dall&#39;elenco di metadati contestuali da visualizzare sulla pagina delle proprietà](assets/contextual-metadata-asset-properties.png)
+
+*Figura: Metadati contestuali nella pagina delle proprietà delle risorse*
 
 ### Specificare le proprietà nel file JSON {#specify-properties-in-json-file}
 
@@ -199,7 +207,7 @@ In questo caso, create un nuovo nodo `/etc/dam/metadataeditor/mimetypemappings` 
 
 | Nome | Descrizione | Tipo | Valore |
 |---|---|---|---|
-| `exposedmimetype` |  Nome del modulo esistente da mappare | `String` | `image/jpeg` |
+| `exposedmimetype` | Nome del modulo esistente da mappare | `String` | `image/jpeg` |
 | `mimetypes` | Elenco di tipi MIME che utilizzano il modulo definito nell&#39; `exposedmimetype` attributo | `String` | `image/png` |
 
 Risorse AEM esegue la mappatura dei seguenti tipi MIME e moduli di schema:
@@ -220,7 +228,7 @@ Risorse AEM esegue la mappatura dei seguenti tipi MIME e moduli di schema:
 
 ## Come concedere l’accesso agli schemi di metadati {#grant-access-to-metadata-schemas}
 
-La funzione Schema metadati è disponibile solo per gli amministratori. Tuttavia, gli amministratori possono fornire l&#39;accesso ai non amministratori modificando alcune autorizzazioni. L’amministratore non è tenuto a creare, modificare ed eliminare le autorizzazioni nella `/conf` cartella.
+La funzione Schema metadati è disponibile solo per gli amministratori. Tuttavia, gli amministratori possono fornire l&#39;accesso ai non amministratori modificando alcune autorizzazioni. L’amministratore non è tenuto a creare, modificare ed eliminare le autorizzazioni per la `/conf` cartella.
 
 ## Applicare metadati specifici per le cartelle {#apply-folder-specific-metadata}
 
@@ -246,7 +254,9 @@ Se la cartella dispone di una sottocartella, le risorse all’interno della sott
 
 1. Nella pagina Editor **[!UICONTROL schema]** metadati, aggiungere un campo di testo al modulo schema. Ad esempio, aggiungere un campo con l&#39;etichetta **[!UICONTROL Categoria]**.
 
-   ![chlimage_1-50](assets/chlimage_1-186.png)
+   ![aggiunta di un campo di testo all&#39;editor di moduli dello schema di metadati](assets/text-field-metadata-schema-editor.png)
+
+   *Figura: Campo di testo aggiunto all&#39;editor dello schema di metadati*
 
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** .
 1. Toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
@@ -257,7 +267,7 @@ Se la cartella dispone di una sottocartella, le risorse all’interno della sott
 
    ![chlimage_1-52](assets/chlimage_1-188.png)
 
-1. Se alla cartella è applicato un altro schema di metadati, viene visualizzato un messaggio di avviso che segnala la sovrascrittura dello schema di metadati esistente. Fate clic su **Sovrascrivi**.
+1. Se alla cartella è applicato un altro schema di metadati, viene visualizzato un messaggio di avviso che informa che lo schema di metadati esistente sta per essere sovrascritto. Fate clic su **Sovrascrivi**.
 1. Fate clic su **OK** per chiudere il messaggio di riuscita.
 1. Andate alla cartella a cui avete applicato lo schema di metadati modificato.
 
@@ -270,13 +280,15 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 >Un campo di metadati può essere definito come obbligatorio in base al valore di un altro campo. Nella vista Schede, AEM non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
 
 1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
-1. Salvare il modulo di metadati predefinito come modulo personalizzato. Ad esempio, salvatelo come `my_default`.
+1. Salvare il modulo di metadati predefinito come modulo personalizzato. Ad esempio, salvatelo con nome `my_default`.
 
    ![chlimage_1-53](assets/chlimage_1-189.png)
 
 1. Modificare il modulo personalizzato. Aggiungere un campo obbligatorio. Ad esempio, aggiungere un campo **[!UICONTROL Categoria]** e rendere il campo obbligatorio.
 
-   ![chlimage_1-54](assets/chlimage_1-190.png)
+   ![aggiungere un campo al modulo di metadati e selezionare Obbligatorio nella scheda Regole per renderlo obbligatorio](assets/mandatory-field-metadata-schema-editor.png)
+
+   *Figura: Campo obbligatorio nell&#39;editor di moduli dello schema di metadati*
 
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** . Selezionate il modulo, quindi toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
@@ -296,4 +308,4 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 
    >[!CAUTION]
    >
-   >I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
+   >I controlli di convalida dei metadati richiedono molte risorse e possono avere un impatto sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
