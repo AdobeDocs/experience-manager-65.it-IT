@@ -1,14 +1,14 @@
 ---
-title: Come modificare o aggiungere metadati
+title: Come modificare o aggiungere i metadati
 description: Scopri i metadati delle risorse in Risorse AEM e vari modi per modificare i metadati delle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
 
 ---
 
 
-# Come modificare o aggiungere metadati {#how-to-edit-or-add-metadata}
+# Come modificare o aggiungere i metadati {#how-to-edit-or-add-metadata}
 
 I metadati sono informazioni aggiuntive sulla risorsa ricercabile. Viene estratto automaticamente quando caricate un’immagine. Potete modificare i metadati esistenti o aggiungere nuove proprietà di metadati ai campi esistenti (ad esempio, quando un campo di metadati è vuoto).
 
@@ -24,11 +24,15 @@ Per modificare i metadati:
    * Dalla miniatura della risorsa, selezionate l’azione rapida **[!UICONTROL Visualizza proprietà]** .
    * Dalla pagina della risorsa, tocca o fai clic sull’icona **[!UICONTROL Visualizza proprietà]** nella barra degli strumenti.
       ![chlimage_1-168](assets/chlimage_1-168.png)
+      *Figura: Icona Proprietà*
    Nella pagina della risorsa vengono visualizzati tutti i metadati della risorsa. Questi metadati sono stati estratti automaticamente al momento del caricamento (caricamento) in Risorse AEM.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![selezionate Proprietà risorsa per visualizzare i metadati](assets/asset-metadata.png)
 
-1. Apportate le modifiche necessarie ai metadati sotto le varie schede e, al termine, toccate o fate clic su **[!UICONTROL Salva]** dalla barra degli strumenti per salvare le modifiche. Tocca o fai clic su **[!UICONTROL Chiudi]** per tornare all’interfaccia Web Risorse.
+
+   *Figura: Modificare o aggiungere metadati nella pagina Proprietà risorsa*
+
+1. Apporta le modifiche necessarie ai metadati delle varie schede e, al termine, per salvarle tocca o fai clic su **[!UICONTROL Salva]** nella barra degli strumenti. Tocca o fai clic su **[!UICONTROL Chiudi]** per tornare all’interfaccia web Assets.
 
    >[!NOTE]
    >
