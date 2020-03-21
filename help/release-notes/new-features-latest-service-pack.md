@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
+source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
 
 ---
 
@@ -17,6 +17,8 @@ L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020
 
 ## AEM Sites {#aem-sites}
 
+### Miglioramenti di Style System
+
 AEM 6.5.4.0 include miglioramenti a Style System. È ora possibile selezionare gli stili nella finestra di dialogo del componente.
 
 ### Miglioramenti delle prestazioni in varie aree {#performance-improvements}
@@ -25,7 +27,7 @@ AEM 6.5.4.0 include miglioramenti a Style System. È ora possibile selezionare g
 
 * È stato ridotto il tempo necessario per aggiornare una pagina dopo aver trascinato i frammenti esperienza nell’Editor pagina Siti.
 
-* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie dal vivo in Panoramica **** Live Copy.
+* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie in diretta nella panoramica **** Live Copy.
 
 * Gestione migliorata degli URL incompleti o non validi. Tali URL possono rallentare l’Editor modelli.
 
@@ -81,7 +83,7 @@ L’opzione Controllo amministratore è visibile solo ai membri del gruppo Ammin
 
 ### Supporto di testo RTF nei moduli HTML5 {#rich-text-support}
 
-È ora possibile convertire un campo di testo in un modulo XFA in un campo di testo RTF se viene eseguito il rendering in un modulo HTML5. Di conseguenza, il campo di testo visualizza un elenco di altre opzioni di formattazione in un modulo HTML5. Per ulteriori informazioni, vedere [Progettazione di modelli di modulo per moduli](../forms/using/designing-form-template.md)HTML5.
+È ora possibile convertire un campo di testo di un modulo XFA in un campo di testo RTF se viene eseguito il rendering in un modulo HTML5. Di conseguenza, il campo di testo visualizza un elenco di altre opzioni di formattazione in un modulo HTML5. Per ulteriori informazioni, vedere [Progettazione di modelli di modulo per moduli](../forms/using/designing-form-template.md)HTML5.
 
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
@@ -122,7 +124,7 @@ Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzi
 
 * AEM Cloud Manager 2020.1.0 e 2020.2.0
 
-   Gli aggiornamenti delle versioni migliorano lo stato della pipeline e la possibilità di scaricare i registri per vari passaggi. Per ulteriori informazioni, vedere:
+   Migliorate lo stato della pipeline e la possibilità di scaricare i registri per vari passaggi. Consulta:
 
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
@@ -132,7 +134,7 @@ Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzi
 
 * Aggiornamenti CLI di AEM Cloud Manager
 
-   Gli aggiornamenti della release includono l&#39;automazione delle attività di Cloud Manager tramite lo strumento della riga di comando. Consulta [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+   Automatizza le attività di Cloud Manager utilizzando lo strumento della riga di comando. Consulta [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * AEM Sites: Archetype progetto 23
 
@@ -148,7 +150,7 @@ Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzi
 
 * Risorse AEM: Desktop App 2.0.1.1
 
-   Per ulteriori informazioni, consultate [Ottenere l’accesso desktop alle risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+   Consultate [Ottenere l’accesso desktop alle risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens: Feature Pack 202001
 
