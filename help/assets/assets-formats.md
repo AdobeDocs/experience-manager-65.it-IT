@@ -3,7 +3,7 @@ title: Formati supportati per le risorse
 description: Elenco dei formati di file supportati da Risorse AEM e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8431275c0e4de408e1ebafafafa94dcfae3c1127
+source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
 
 ---
 
@@ -34,7 +34,7 @@ I formati immagine raster supportati per le funzioni di gestione delle risorse s
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PFM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
 | PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
@@ -190,18 +190,15 @@ I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM
 
 ## Altri formati supportati {#other-supported-formats}
 
-L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di file è descritta nella tabella seguente. Per tutti i file è supportata la funzionalità DAM standard, eccetto Dynamic Media Delivery.
+L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di file è descritta nella tabella seguente. Per tutti i file è supportata la consueta funzionalità DAM come archiviazione, controllo delle versioni, ACL, flusso di lavoro, pubblicazione e gestione dei metadati, ad eccezione di Distribuzione di contenuti multimediali dinamici.
 
 | Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **²** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (se configurato con un proprio dominio di consegna) |  |  |  |  |  | ✓ |
-
-**²** Gli altri formati sono supportati in DAM per l&#39;archiviazione, il controllo delle versioni, ACL, il flusso di lavoro, la pubblicazione e la gestione dei metadati.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -249,7 +246,7 @@ Consultate anche [Abilitazione del supporto](/help/sites-administering/scene7.md
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
