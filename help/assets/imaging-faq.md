@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
+source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
 
 ---
 
@@ -88,7 +88,7 @@ Inoltre, se i predefiniti per immagini vengono utilizzati per restituire `fmt !=
 
 ## Dovrò cambiare URL, predefiniti per immagini o distribuire un nuovo codice sul mio sito per Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Le immagini intelligenti si integrano perfettamente con gli URL esistenti e con i predefiniti per immagini. Inoltre, per rilevare il browser di un utente non è necessario aggiungere codice al sito Web. Tutto questo viene gestito automaticamente.
+No. Le immagini intelligenti si integrano perfettamente con gli URL esistenti e con i predefiniti per immagini. Inoltre, per rilevare il browser di un utente non è necessario aggiungere codice al sito Web. Tutto questo viene gestito automaticamente.
 
 Come già detto, Smart Imaging supporta solo i formati di immagine JPEG e PNG. Per altri formati, è necessario aggiungere il `bfc=off` modificatore all’URL come descritto in precedenza.
 
@@ -115,11 +115,11 @@ Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per
 
 È necessario avviare la richiesta per utilizzare l&#39;imaging intelligente; non è abilitata automaticamente.
 
-1. Avviate una richiesta di assistenza tecnica (e-mail: s7support@adobe.com).
+1. Avviate una richiesta di assistenza tecnica (e-mail: `s7support@adobe.com`).
 1. Nella richiesta di assistenza, fornite le seguenti informazioni:
 
    1. Nome contatto principale, email, telefono.
-   1. Tutti i domini da abilitare per l’imaging intelligente (ovvero, images.company.com o mycompany.scene7.com).
+   1. Tutti i domini da abilitare per l&#39;imaging intelligente (ossia `images.company.com` o `mycompany.scene7.com`).
 
       Per trovare i domini, accedi al tuo account o account della società.
 
