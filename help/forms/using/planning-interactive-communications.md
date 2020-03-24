@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
@@ -33,15 +33,13 @@ Una comunicazione interattiva include i seguenti elementi:
 * **Ordine** in cui i vari paragrafi di testo vengono visualizzati nella comunicazione interattiva.
 * **Dati immessi da un dipendente in prima linea (interfaccia utente agente)** che sta personalizzando la comunicazione prima di inviarla. Ad esempio, la data di scadenza del pagamento.
 
-* **Dati** condizionali compilati in base a condizioni predefinite. Ad esempio, la data in cui viene generata la comunicazione interattiva.
+* **Dati** condizionali che vengono compilati in base a condizioni predefinite. Ad esempio, la data in cui viene generata la comunicazione interattiva.
 * **Immagini memorizzate in un archivio**, ad esempio logo e immagini della firma. Immagini come il logo aziendale apparirebbero nella maggior parte o nella totalità della comunicazione interattiva.
 * **Grafici e tabelle** necessari per semplificare la rappresentazione di dati complessi in una comunicazione interattiva
 
 ## Anatomia della comunicazione interattiva {#anatomy-of-the-interactive-communication}
 
-Una volta completati i contenuti e gli elementi utilizzati per creare la comunicazione interattiva, potete creare un&#39;anatomia della comunicazione interattiva. L&#39;anatomia deve avere i dettagli elencati nella sezione Considerazioni sulla [pianificazione](/help/forms/using/planning-interactive-communications.md#planning-considerations) . In base al nostro caso di utilizzo, quanto segue è un esempio di anatomia della fattura mensile che un operatore di telecomunicazioni invia ai suoi clienti.
-
-Segnaposto per il video di anatomia
+Una volta completati i contenuti e gli elementi utilizzati per creare la comunicazione interattiva, potete creare un&#39;anatomia della comunicazione interattiva. L&#39;anatomia deve avere i dettagli elencati nella sezione Considerazioni sulla [pianificazione](/help/forms/using/planning-interactive-communications.md#planning-considerations) . In base al nostro caso d&#39;uso, quanto segue è un esempio di anatomia della fattura mensile che un operatore di telecomunicazioni invia ai suoi clienti.
 
 L&#39;anatomia include i dati con le seguenti modalità di input:
 
@@ -67,7 +65,7 @@ Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’an
   <tr>
    <td>Dettagli fattura</td>
    <td><p>Numero fattura</p> <p>Data fatturazione</p> <p>Periodo fatturazione</p> <p>Il tuo piano</p> </td>
-   <td><p>Valore del <strong>campo </strong>Piano</p> <p>Tabella - cliente</p> </td>
+   <td><p>Valore per il <strong>tuo </strong>campo Piano</p> <p>Tabella - cliente</p> </td>
    <td><p>Valori per i campi seguenti:</p>
     <ul>
      <li>Numero fattura</li>
