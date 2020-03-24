@@ -125,7 +125,7 @@ Se esegui l’aggiornamento da un sito della community social network AEM 6.0 es
 
 ### Errori di autenticazione {#authentication-errors}
 
-Se ricevete errori di autenticazione rispetto all’URL del datacenter e il file di registro degli errori AEM contiene messaggi sulle marche temporali non aggiornate, verificate che la sincronizzazione dell’ora sia in corso.
+Se ricevete errori di autenticazione rispetto all’URL del datacenter e il file di registro dell’errore AEM contiene messaggi sulle marche temporali non aggiornate, verificate che la sincronizzazione dell’ora avvenga.
 
 Utilizzate uno strumento come il protocollo NTP ( [Network Time Protocol)](https://www.ntp.org/) per sincronizzare ora tutti i server di creazione e pubblicazione AEM.
 
