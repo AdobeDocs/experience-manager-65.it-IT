@@ -247,7 +247,7 @@ Esempio di filtro:
 
 È possibile importare ed esportare contenuti tra un repository JCR e il file system locale senza utilizzare file di controllo.
 
-Per importare ed esportare contenuti senza `.vlt` controllo:
+Per importare ed esportare contenuti senza ricorrere al `.vlt` controllo:
 
 1. Configurare inizialmente la directory archivio:
 
