@@ -246,7 +246,7 @@ Per accedere all’interfaccia del selettore delle risorse, passate a `https://[
 
 *Figura: Sfogliare e selezionare la risorsa nel selettore delle risorse*
 
-## Limitazioni  {#limitations}
+## Limitazioni   {#limitations}
 
 La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 
