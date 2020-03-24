@@ -170,7 +170,7 @@ Nella scheda **Impostazioni** , specificate le funzioni di base del blog:
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è attivata, consentite ai membri di ricevere notifiche sui nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, consentite ai membri di ricevere notifiche relative ai nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **Visualizza badge**
 
