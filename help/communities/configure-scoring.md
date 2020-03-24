@@ -119,7 +119,7 @@ Per visualizzare le voci di registro:
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui fornitori di risorse di archiviazione e archiviazione).
+È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui provider di risorse di archiviazione e archiviazione).
 
 Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
