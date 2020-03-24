@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 7ee76afa11384aedc79b17e823c8dc9594662388
 
 ---
 
@@ -25,7 +25,7 @@ A causa della natura RESTful del framework Sling su cui è basato AEM, la maggio
 
 cURL è uno strumento della riga di comando open-source utilizzato per eseguire manipolazioni URL. Supporta un&#39;ampia gamma di protocolli Internet tra cui HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, DAP, DICT, TELNET, FILE, IMAP, POP3, SMTP e RTSP.
 
-cURL è uno strumento noto e ampiamente utilizzato per ottenere o inviare dati utilizzando la sintassi URL ed è stato originariamente rilasciato nel 1997. Il nome cURL originariamente intendeva &quot;vedere URL&quot;.
+cURL è uno strumento noto e ampiamente utilizzato per ottenere o inviare dati utilizzando la sintassi URL ed è stato originariamente rilasciato nel 1997. Il nome cURL in origine significava &quot;see URL&quot;.
 
 A causa della natura RESTful del framework Sling su cui è basato AEM, la maggior parte delle attività può essere ridotta a una chiamata URL, che può essere eseguita con cURL. [Le attività](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) di manipolazione dei contenuti, come l’attivazione delle pagine, l’avvio dei flussi di lavoro e le attività [](/help/sites-administering/curl.md#common-operational-aem-curl-commands) operative come la gestione dei pacchetti e la gestione degli utenti possono essere automatizzate tramite cURL. Inoltre, potete [creare comandi cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) personalizzati per la maggior parte delle attività in AEM.
 
@@ -301,7 +301,7 @@ Consultate [Scelta in Adobe Analytics e Adobe Target](/help/sites-administering/
 
 #### Invia intestazione test {#send-test-header}
 
-Per informazioni dettagliate, consultate Accesso [](/help/sites-deploying/single-sign-on.md) singolo.
+Per informazioni dettagliate, consultate [Single Sign On](/help/sites-deploying/single-sign-on.md) .
 
 ## Comandi comuni per la gestione dei contenuti di AEM cURL {#common-content-manipulation-aem-curl-commands}
 
@@ -355,7 +355,7 @@ Per informazioni dettagliate, vedere [Interazione con flussi di lavoro a livello
 
 ### Contenuto Sling {#sling-content}
 
-#### Creare una cartella {#create-a-folder}
+#### Create a Folder {#create-a-folder}
 
 ```shell
 curl -u admin:admin -F jcr:primaryType=sling:Folder http://localhost:4502/etc/test
@@ -370,13 +370,13 @@ curl -u admin:admin -F :operation=delete http://localhost:4502/etc/test/test.pro
 #### Sposta un nodo {#move-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Copiare un nodo {#copy-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Caricare i file tramite Sling PostServlet {#upload-files-using-sling-postservlet}
@@ -391,7 +391,7 @@ curl -u admin:admin -F"*=@test.properties"  http://localhost:4502/etc/test
 curl -u admin:admin -F"test2.properties=@test.properties"  http://localhost:4502/etc/test
 ```
 
-#### Carica file che specificano un tipo di contenuto {#upload-files-specifying-a-content-type}
+#### Caricare i file che specificano un tipo di contenuto {#upload-files-specifying-a-content-type}
 
 ```shell
 curl -u admin:admin -F "*=@test.properties;type=text/plain" http://localhost:4502/etc/test
