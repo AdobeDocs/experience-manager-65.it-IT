@@ -4,22 +4,22 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
+source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
 
 ---
 
 
 # Novità in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 offre funzioni e miglioramenti continui tramite i Service Pack trimestrali. Il nuovo approccio è vantaggioso per i nostri clienti che adottano le innovazioni più rapidamente.
+Adobe Experience Manager (AEM) 6.5 offre funzioni e miglioramenti continui tramite i Service Pack trimestrali. L&#39;approccio è vantaggioso per voi come le innovazioni diventano più facili da adottare.
 
-L’ultimo Service Pack 4 di AEM (6.5.4.0) è stato rilasciato il 5 **marzo 2020**. In questo articolo vengono evidenziate le funzioni offerte dall’ultimo Service Pack per rendere il vostro viaggio AEM più ricco.
+AEM Service Pack 4 (6.5.4.0) è rilasciato il 5 **marzo 2020**. In questo articolo vengono evidenziate le caratteristiche chiave offerte dai Service Pack 6.5 per rendere il viaggio AEM più ricco.
 
 ## AEM Sites {#aem-sites}
 
 ### Miglioramenti di Style System
 
-AEM 6.5.4.0 include miglioramenti a Style System. È ora possibile selezionare gli stili nella finestra di dialogo del componente.
+È ora possibile selezionare gli stili nella finestra di dialogo del componente utilizzando il sistema di stile avanzato.
 
 ### Miglioramenti delle prestazioni in varie aree {#performance-improvements}
 
@@ -58,7 +58,7 @@ Experience Manager Assets include i seguenti miglioramenti a livello di accessib
 
 ### Genera output stampabile nei flussi di lavoro AEM Forms {#generate-printable-output}
 
-Il nuovo passaggio del flusso di lavoro Genera output stampabile consente di integrare un file modello sorgente con un file di dati. Questa integrazione consente di stampare o salvare copie diverse del file modello. Ad esempio, è possibile stampare un modulo di origine con un nome diverso ogni volta che viene stampato. Salvare i nomi nel file di dati e integrare il file di dati con un file modello standard. Per ulteriori informazioni su questa funzione, vedere [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
+Il passaggio del flusso di lavoro Genera output stampabile consente di integrare un file modello sorgente con un file di dati. Questa integrazione consente di stampare o salvare copie diverse del file modello. Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL. Per ulteriori informazioni su questa funzione, vedere [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
 
 ![Genera output stampabile](assets/generate-print-output-demo.gif)
 
@@ -66,10 +66,7 @@ Il nuovo passaggio del flusso di lavoro Genera output stampabile consente di int
 
 È ora possibile definire il numero di colonne per un pannello nei moduli adattivi e nelle comunicazioni interattive. Passate alla modalità di layout per utilizzare la nuova opzione a più colonne. Per ulteriori informazioni, vedere [Uso della modalità Layout per ridimensionare i componenti](../forms/using/resize-using-layout-mode.md).
 
-
 ![Layout a più colonne](assets/multi-column-layout.gif)
-
-
 
 ### Personalizzazioni di AEM Inbox {#aem-inbox}
 
@@ -83,7 +80,7 @@ L’opzione Controllo amministratore è visibile solo ai membri del gruppo Ammin
 
 ### Supporto di testo RTF nei moduli HTML5 {#rich-text-support}
 
-È ora possibile convertire un campo di testo di un modulo XFA in un campo di testo RTF se viene eseguito il rendering in un modulo HTML5. Di conseguenza, il campo di testo visualizza un elenco di altre opzioni di formattazione in un modulo HTML5. Per ulteriori informazioni, vedere [Progettazione di modelli di modulo per moduli](../forms/using/designing-form-template.md)HTML5.
+Convertire un campo di testo in un modulo XFA in un campo di testo RTF in un modulo HTML5. Per ulteriori informazioni, vedere [Progettazione di modelli di modulo per moduli](../forms/using/designing-form-template.md)HTML5.
 
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
@@ -105,16 +102,16 @@ Le immagini intelligenti utilizzano le caratteristiche di visualizzazione esclus
 
 Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di Assets. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. See [Visual search](../assets/search-assets.md).
 
-### Condivisione e richiesta dell&#39;accesso agli elementi Inbox di un utente (6.5.3.0) {#share-request-access}
+### Condivisione e richiesta dell&#39;accesso agli elementi in entrata di un utente AEM Forms (6.5.3.0) {#share-request-access}
 
 È possibile condividere gli elementi Inbox con un altro utente. Quando un altro utente accede agli elementi della Casella in entrata, può richiedere e intervenire sugli elementi condivisi. Allo stesso modo, potete richiedere l’accesso agli elementi della casella in entrata ad altri utenti. Consultate [Condividere e richiedere l’accesso agli elementi in entrata di un utente](../forms/using/configure-shared-queues-osgi.md).
 
-### Configurare l&#39;impostazione out-of-office per gli elementi in entrata (6.5.3.0) {#configure-out-of-office}
+### Configurare le impostazioni predefinite per gli elementi in entrata di un utente AEM Forms (6.5.3.0) {#configure-out-of-office}
 
 Se prevedete di uscire dall&#39;ufficio, potete specificare cosa accade agli elementi assegnati a quel periodo.
 È possibile specificare una data e un&#39;ora di inizio e una data e un&#39;ora di fine affinché le impostazioni fuori sede siano attive. Potete impostare una persona predefinita a cui vengono inviati tutti gli elementi. Consultate [Configurare le impostazioni](../forms/using/configure-out-of-office-settings.md)Fuori sede.
 
-### Generazione di più comunicazioni interattive mediante l&#39;API Batch (6.5.3.0) {#generate-multiple-ic}
+### Generazione di più comunicazioni interattive mediante l&#39;API Batch per AEM Forms (6.5.3.0) {#generate-multiple-ic}
 
 Potete utilizzare l&#39;API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L&#39;API Batch combina i dati con un modello per produrre una comunicazione interattiva. L&#39;API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto della carta di credito per più clienti. Consultate [Generare più comunicazioni interattive utilizzando l&#39;API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
