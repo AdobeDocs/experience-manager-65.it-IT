@@ -50,7 +50,7 @@ Rispetto alla replica tradizionale, i vantaggi della sincronizzazione utente med
 >
 >La sincronizzazione del gruppo di ***amministratori*** non è supportata, anche se è abilitata la sincronizzazione degli utenti. Al contrario, un&#39;operazione di importazione delle diff verrà registrata nel registro degli errori.
 >
->Pertanto, se la distribuzione è una pubblicazione farm, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
+>Pertanto, se la distribuzione è una farm di pubblicazione, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
 
 ## Abilita sincronizzazione utente {#enable-user-sync}
 
