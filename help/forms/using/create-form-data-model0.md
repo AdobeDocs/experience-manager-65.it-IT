@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
@@ -22,7 +22,7 @@ Questa esercitazione è un passaggio della serie [Create your first Interactive 
 
 ## Informazioni sull&#39;esercitazione {#about-the-tutorial}
 
-Il modulo di integrazione dei dati di AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, quali profilo utente AEM, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati modulo e associarlo a un modulo adattivo. I campi modulo adattivi sono associati alle proprietà dell&#39;oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e di riscrivere i dati del modulo inviato all&#39;oggetto modello dati.
+Il modulo di integrazione dei dati di AEM Forms consente di creare un modello di dati del modulo da origini dati back-end diverse, quali profilo utente AEM, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi modulo adattivi sono associati alle proprietà dell&#39;oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e di riscrivere i dati del modulo inviato all&#39;oggetto modello dati.
 
 Per ulteriori informazioni sull&#39;integrazione dei dati del modulo e sul modello di dati del modulo, consultate Integrazione [dei dati di](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)AEM Forms.
 
@@ -38,7 +38,7 @@ Il modello dati del modulo è simile al seguente:
 
 ![Modello dati modulo](assets/form_data_model_callouts_new.png)
 
-**********A. Origini dati configurate** B. Schemi origine dati **C.** Servizi disponibili **D. Oggetti del modello dati** E. Servizi configurati
+**A.** Origini dati configurate **B.** Schemi origine dati **C.** Servizi disponibili **D.** Oggetti del modello dati **E.** Servizi configurati
 
 ## Prerequisiti {#prerequisites}
 
@@ -54,9 +54,61 @@ L&#39;immagine seguente illustra i dati di esempio per la tabella cliente:
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-La tabella delle chiamate include i dettagli delle chiamate, come la data di chiamata, l&#39;ora di chiamata, il numero di chiamata, la durata delle chiamate e le spese di chiamata. La tabella del cliente è collegata alla tabella delle chiamate utilizzando il campo Numero mobile (mobilenum). Per ogni numero di cellulare elencato nella tabella del cliente, nella tabella delle chiamate sono presenti più record. Ad esempio, puoi recuperare i dettagli della chiamata per il numero mobile **1457892541** facendo riferimento alla tabella delle chiamate.
+Utilizzate la seguente istruzione DDL per creare la tabella **cliente** nel database.
 
-La tabella delle fatture include i dettagli delle fatture, ad esempio data di fatturazione, periodo di fatturazione, spese mensili e spese di chiamata. La tabella cliente è collegata alla tabella delle fatture utilizzando il campo Piano fatture. Nella tabella cliente è presente un piano associato a ciascun cliente. La tabella delle fatture include i dettagli dei prezzi per tutti i piani esistenti. Ad esempio, è possibile recuperare i dettagli del piano per **Sarah** dalla tabella dei clienti e utilizzare tali dettagli per recuperare i dettagli dei prezzi dalla tabella delle fatture.
+```sql
+CREATE TABLE `customer` (
+   `mobilenum` int(11) NOT NULL,
+   `name` varchar(45) NOT NULL,
+   `address` varchar(45) NOT NULL,
+   `alternatemobilenumber` int(11) DEFAULT NULL,
+   `relationshipnumber` int(11) DEFAULT NULL,
+   `customerplan` varchar(45) DEFAULT NULL,
+   PRIMARY KEY (`mobilenum`),
+   UNIQUE KEY `mobilenum_UNIQUE` (`mobilenum`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Utilizzare la seguente istruzione DDL per creare la tabella delle **fatture** nel database.
+
+```sql
+CREATE TABLE `bills` (
+   `billplan` varchar(45) NOT NULL,
+   `latepayment` decimal(4,2) NOT NULL,
+   `monthlycharges` decimal(4,2) NOT NULL,
+   `billdate` date NOT NULL,
+   `billperiod` varchar(45) NOT NULL,
+   `prevbal` decimal(4,2) NOT NULL,
+   `callcharges` decimal(4,2) NOT NULL,
+   `confcallcharges` decimal(4,2) NOT NULL,
+   `smscharges` decimal(4,2) NOT NULL,
+   `internetcharges` decimal(4,2) NOT NULL,
+   `roamingnational` decimal(4,2) NOT NULL,
+   `roamingintnl` decimal(4,2) NOT NULL,
+   `vas` decimal(4,2) NOT NULL,
+   `discounts` decimal(4,2) NOT NULL,
+   `tax` decimal(4,2) NOT NULL,
+   PRIMARY KEY (`billplan`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Utilizzate la seguente istruzione DDL per creare la tabella delle **chiamate** nel database.
+
+```sql
+CREATE TABLE `calls` (
+   `mobilenum` int(11) DEFAULT NULL,
+   `calldate` date DEFAULT NULL,
+   `calltime` varchar(45) DEFAULT NULL,
+   `callnumber` int(11) DEFAULT NULL,
+   `callduration` varchar(45) DEFAULT NULL,
+   `callcharges` decimal(4,2) DEFAULT NULL,
+   `calltype` varchar(45) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+La tabella **delle chiamate** include i dettagli delle chiamate, come la data di chiamata, l&#39;ora di chiamata, il numero di chiamata, la durata delle chiamate e le spese di chiamata. La tabella **cliente** è collegata alla tabella delle chiamate utilizzando il campo Numero mobile (mobilenum). Per ogni numero di cellulare elencato nella tabella **del cliente** , nella tabella delle **chiamate** sono presenti più record. Ad esempio, puoi recuperare i dettagli della chiamata per il numero mobile **1457892541** facendo riferimento alla tabella delle **chiamate** .
+
+La **tabella delle fatture** include i dettagli delle fatture, ad esempio data di fatturazione, periodo di fatturazione, spese mensili e spese di chiamata. La tabella **cliente** è collegata alla tabella **fatture** utilizzando il campo Piano fatture. Nella tabella **cliente** è presente un piano associato a ciascun cliente. La **tabella delle fatture** include i dettagli dei prezzi per tutti i piani esistenti. Ad esempio, è possibile recuperare i dettagli del piano per **Sarah** dalla tabella **cliente** e utilizzare tali dettagli per recuperare i dettagli dei prezzi dalla tabella **fatture** .
 
 ## Passaggio 2: Configurare il database MySQL come origine dati {#step-configure-mysql-database-as-data-source}
 
@@ -77,25 +129,25 @@ Per configurare il database MySQL, effettuate le seguenti operazioni:
    1. Individua la configurazione DataSource **** in pool di connessione Apache Sling. Toccate per aprire la configurazione in modalità di modifica.
    1. Nella finestra di dialogo di configurazione, specificate i seguenti dettagli:
 
-      * **** Nome origine dati: Potete specificare qualsiasi nome. Ad esempio, specificare **MySQL**.
+      * **Nome origine dati:** Potete specificare qualsiasi nome. Ad esempio, specificare **MySQL**.
 
       * **Nome** proprietà del servizio DataSource: Specificare il nome della proprietà del servizio contenente il nome DataSource. Viene specificato durante la registrazione dell&#39;istanza dell&#39;origine dati come servizio OSGi. Ad esempio, **datasource.name**.
 
       * **Classe** driver JDBC: Specificate il nome della classe Java del driver JDBC. Per il database MySQL, specificate **com.mysql.jdbc.Driver**.
 
       * **URI** connessione JDBC: Specificate l&#39;URL di connessione del database. Per il database MySQL in esecuzione sulla porta 3306 e sullo schema teleca, l&#39;URL è: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** Nome utente: Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
-      * **** Password: Password del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
-      * **** Test sul credito: Abilitate l&#39;opzione **Prova in prestito** .
+      * **Nome utente:** Nome utente del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
+      * **Password:** Password del database. È necessario per consentire al driver JDBC di stabilire una connessione con il database.
+      * **Test sul credito:** Abilitate l&#39;opzione **Prova in prestito** .
 
-      * **** Test al ritorno: Abilitate l&#39;opzione **Test on Return** (Test su ritorno).
+      * **Test al ritorno:** Abilitate l&#39;opzione **Test on Return** (Test su ritorno).
 
-      * **** Query di convalida: Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio, **selezionare * dal cliente**.
+      * **Query di convalida:** Specificare una query SQL SELECT per convalidare le connessioni dal pool. La query deve restituire almeno una riga. Ad esempio, **selezionare * dal cliente**.
 
       * **Isolamento** transazione: Impostare il valore su **READ_COMMTED**.
    Lasciate le altre proprietà con [i valori](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) predefiniti e toccate **Salva**.
 
-   Viene creata una configurazione simile alla seguente.
+   Viene creata una configurazione simile a quella riportata di seguito.
 
    ![Configurazione Apache](assets/apache_configuration_new.png)
 
@@ -258,11 +310,11 @@ Gli oggetti delle distinte e del modello dati cliente sono collegati utilizzando
 
 ### Modifica delle proprietà dell&#39;oggetto modello dati {#edit-data-model-object-properties}
 
-Dopo aver creato associazioni tra il cliente e altri oggetti modello dati, modificare le proprietà del cliente per definire la proprietà in base alla quale i dati vengono recuperati dall&#39;oggetto modello dati. In base al caso di utilizzo, il numero mobile viene utilizzato come proprietà per recuperare i dati dall&#39;oggetto modello dati cliente.
+Dopo aver creato associazioni tra il cliente e altri oggetti del modello dati, modificare le proprietà del cliente per definire la proprietà in base alla quale i dati vengono recuperati dall&#39;oggetto del modello dati. In base al caso di utilizzo, il numero mobile viene utilizzato come proprietà per recuperare i dati dall&#39;oggetto modello dati cliente.
 
 1. Selezionare la casella di controllo nella parte superiore dell&#39;oggetto modello dati **cliente** per selezionarlo e toccare **Modifica proprietà**. Viene visualizzato il riquadro **Modifica proprietà** .
 1. Specificare **il cliente** come oggetto **modello di livello** principale.
-1. Selezionare **get** dall&#39;elenco a discesa **Read Service** .
+1. Selezionare **Ottieni** dall&#39;elenco a discesa **Servizio** di lettura.
 1. Nella sezione **Argomenti** :
 
    * Selezionare **Richiedi attributo** dall&#39;elenco a discesa **Binding** a.
@@ -281,7 +333,7 @@ Dopo aver creato associazioni tra il cliente e altri oggetti modello dati, modif
    ![Configurare i servizi](assets/configure_services_customer_new.png)
 
 1. Selezionare la casella di controllo nella parte superiore dell&#39;oggetto modello dati **chiamate** per selezionarlo e toccare **Modifica proprietà**. Viene visualizzato il riquadro **Modifica proprietà** .
-1. Disabilitare l&#39;oggetto **Modello di livello** principale per l&#39;oggetto modello dati **chiamate** .
+1. Disabilitare l&#39;oggetto **Modello di livello** principale per le **chiamate** all&#39;oggetto modello dati.
 1. Toccate **Chiudi**.
 
    Ripetere i passaggi da 8 a 10 per configurare le proprietà per l&#39;oggetto modello dati **distinte** .
@@ -306,7 +358,7 @@ Dopo aver creato associazioni tra il cliente e altri oggetti modello dati, modif
 
    * Toccate **Chiudi**.
    * Toccare **Salva** per salvare il modello dati del modulo.
-   ![Aggiorna proprietà servizio](assets/update_service_properties_new.png)
+   ![Aggiorna proprietà del servizio](assets/update_service_properties_new.png)
 
 ## Passaggio 5: Verifica modello dati modulo e servizi {#step-test-form-data-model-and-services}
 
@@ -323,7 +375,7 @@ Per eseguire il test, effettuate le seguenti operazioni:
    ![Test del modello dati](assets/test_data_model_new.png)
 
 1. Passate alla scheda **Servizi** .
-1. Selezionate il servizio **get** e toccate **Test Service.**
+1. Selezionate il servizio **get** e toccate Servizio **di prova.**
 1. Nella sezione **Input** , specificate un valore per la proprietà **mobilenum** presente nel database MySQL configurato e toccate **Test**.
 
    I dettagli del cliente associati alla proprietà mobilenum specificata vengono recuperati e visualizzati nella sezione Output come illustrato di seguito. Chiudete la finestra di dialogo.
@@ -336,7 +388,7 @@ L&#39;editor dei modelli di dati modulo consente di generare dati di esempio per
 
 Per generare, modificare e salvare dati di esempio, effettuate le seguenti operazioni:
 
-1. Nella pagina del modello dati del modulo, toccare **Modifica dati** di esempio. Genera e visualizza i dati di esempio nella finestra Modifica dati campione.
+1. Nella pagina del modello dati del modulo, toccare **Modifica dati** di esempio. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
 
    ![Modifica dei dati di esempio](assets/edit_sample_data_new.png)
 
