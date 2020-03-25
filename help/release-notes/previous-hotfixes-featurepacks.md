@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7ae0055e09c3ae2ff2898ac4f6c537a825dc0cf0
+source-git-commit: 7345d629aa628c2e2e094a8194d9306d7c3d2d60
 
 ---
 
@@ -22,7 +22,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.10.6.
 
-* Experience Manager Assets ora supporta gli archivi ZIP creati utilizzando l&#39;algoritmo Deflate 64.
+* Risorse Adobe Experience Manager ora supporta gli archivi ZIP creati utilizzando l&#39;algoritmo Deflate64.
 
 * La nuova colonna relativa alla data di creazione, ordinabile, è stata aggiunta nella visualizzazione a elenco DAM e nei risultati della ricerca di risorse nella visualizzazione a elenco.
 
@@ -94,7 +94,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in AEM, in esecuzione in modalità di esecuzione Dynamic Media Scene 7 (NPR-31630).
 
-* Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata uguale al nome della società di Scene 7 (NPR-31340).
+* Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata come nome della società di Scene 7 (NPR-31340).
 
 * Le risorse multimediali dinamiche contenenti riferimenti non vengono pubblicate (NPR-31180).
 
@@ -195,7 +195,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * La ricerca all&#39;interno dei componenti del selettore non funziona (NPR-31692).
 
-* Viene visualizzato un errore durante l&#39;associazione di un file ZIP a un post di AEM Communities a causa delle diverse versioni del bundle Apache POI e Apache Tika (NPR-31018).
+* Viene visualizzato un errore quando si allega un file ZIP a un post di AEM Communities a causa di versioni diverse del bundle Apache POI e Apache Tika (NPR-31018).
 
 * Il ``org.apache.sling.distribution.api`` bundle è nascosto nel gestore di configurazione e pertanto non è disponibile per i bundle personalizzati (NPR-31720).
 
@@ -211,7 +211,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 **Problemi risolti**
 
-* Quando si crea una nuova cartella Contribution in Asset Sourcing feature (CQ-4282825), viene visualizzata un’icona errata.
+* Quando si crea una nuova cartella Contribution nella funzione Asset Sourcing (CQ-4282825), viene visualizzata un’icona errata.
 * Quando create una nuova cartella Contribution, una o entrambe le sottocartelle (NEW e SHARED) non vengono visualizzate all’interno della cartella Contribution (CQ-4282424).
 * Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da AEM a Brand Portal dopo la ricezione delle nuove risorse nella cartella Contribution da Brand Portal end (CQ-4279740).
 * La creazione di una cartella Contribution all’interno di una cartella Contribution (cartella nidificata) non è consentita per evitare la complessità (CQ-4278391).
