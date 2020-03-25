@@ -7,34 +7,34 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7345d629aa628c2e2e094a8194d9306d7c3d2d60
+source-git-commit: 0e95ac8850a693764b82a29960b472d156dac535
 
 ---
 
 
 # Hotfix e Feature Pack inclusi nei Service Pack precedenti {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## AEM 6.5.3.0
+## Adobe Experience Manager 6.5.3.0
 
-Adobe Experience Manager 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. Può essere installato sopra Adobe Experience Manager (AEM) 6.5.
+[!DNL Adobe Experience Manager] 6.5.3.0 è una versione importante che include correzioni e miglioramenti a livello di prestazioni, stabilità e sicurezza introdotti dai clienti a partire dalla release 6.5 di **aprile 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
 Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.10.6.
 
-* Risorse Adobe Experience Manager ora supporta gli archivi ZIP creati utilizzando l&#39;algoritmo Deflate64.
+* [!DNL Experience Manager Assets] ora supporta gli archivi ZIP creati utilizzando l&#39;algoritmo Deflate64.
 
 * La nuova colonna relativa alla data di creazione, ordinabile, è stata aggiunta nella visualizzazione a elenco DAM e nei risultati della ricerca di risorse nella visualizzazione a elenco.
 
 * L’ordinamento delle risorse basato sulla colonna Nome è stato attivato nella visualizzazione Elenco.
 
-* Dynamic Media ora supporta le risorse video SmartCrop. Smart Crop è una funzione guidata di apprendimento automatico che ritaglia un video mentre si sposta il fotogramma per seguire il punto focale della scena.
+* [!DNL Dynamic Media] ora supporta la funzione di ritaglio avanzato delle risorse video. Smart Crop è una funzione guidata di apprendimento automatico che ritaglia un video mentre si sposta il fotogramma per seguire il punto focale della scena.
 
-* Dynamic Media supporta la funzione Smart Imaging.
+* [!DNL Dynamic Media] supporta le immagini intelligenti.
 
-* Possibilità di [impostare le preferenze di Office](../forms/using/configure-out-of-office-settings.md) nei flussi di lavoro AEM.
+* Possibilità di [impostare le preferenze di Office](../forms/using/configure-out-of-office-settings.md) nei [!DNL Experience Manager] flussi di lavoro.
 
-* Possibilità di [condividere elementi](../forms/using/configure-shared-queues-osgi.md) Inbox o Inbox con altri utenti nei flussi di lavoro AEM.
+* Possibilità di [condividere elementi](../forms/using/configure-shared-queues-osgi.md) Inbox o Inbox con altri utenti nei [!DNL Experience Manager] flussi di lavoro.
 
 * Possibilità di [generare comunicazioni interattive in modalità](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
@@ -44,7 +44,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 **Miglioramenti apportati al prodotto**
 
-* Experience Manager Assets ora supporta gli archivi ZIP creati con l&#39;algoritmo Deflate 64 (NPR-27573).
+* [!DNL Experience Manager Assets] ora supporta gli archivi ZIP creati utilizzando l&#39;algoritmo Deflate64 (NPR-27573).
 
 * La nuova colonna relativa alla data di creazione, ordinabile, è stata aggiunta nella visualizzazione a elenco DAM e nei risultati della ricerca di risorse nella visualizzazione a elenco (NPR-31312).
 
@@ -52,11 +52,11 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * I file di risorse GLB, GLTF, OBJ e STL supportano l’anteprima delle risorse nella pagina Dettagli risorsa in DAM (CQ-4282277).
 
-* L&#39;evento ReplicationOnModifyListener viene attivato per i nodi di blocco durante il caricamento di blocchi in elementi multimediali dinamici (CQ-4281279).
+* L&#39;evento ReplicationOnModifyListener viene attivato per i nodi blocco durante il caricamento del blocco in [!DNL Dynamic Media] (CQ-4281279).
 
-* Dynamic Media ora supporta le risorse video SmartCrop. Smart Crop è una funzione guidata per l&#39;apprendimento automatico che ritaglia un video mentre si sposta il fotogramma per seguire il punto focale della scena (CQ-4278995).
+* [!DNL Dynamic Media] ora supporta la funzione di ritaglio avanzato delle risorse video. Smart Crop è una funzione guidata per l&#39;apprendimento automatico che ritaglia un video mentre si sposta il fotogramma per seguire il punto focale della scena (CQ-4278995).
 
-* Dynamic Media supporta la funzione Smart Imaging (CQ-422249).
+* [!DNL Dynamic Media] supporta le immagini intelligenti (CQ-422249).
 
 * La visualizzazione di ricerca/ricerca è stata impostata come visualizzazione predefinita nel selettore Foundation se i parametri di query vengono passati nella richiesta (NPR-31601).
 
@@ -92,27 +92,27 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Lo spostamento di massa delle risorse non riesce e viene visualizzato un messaggio di avviso (NPR-30610).
 
-* I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in AEM, in esecuzione in modalità di esecuzione Dynamic Media Scene 7 (NPR-31630).
+* I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in [!DNL Experience Manager] esecuzione in modalità di esecuzione di [!DNL Dynamic Media] Scene7 (NPR-31630).
 
 * Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata come nome della società di Scene 7 (NPR-31340).
 
-* Le risorse multimediali dinamiche contenenti riferimenti non vengono pubblicate (NPR-31180).
+* [!DNL Dynamic Media] le risorse contenenti riferimenti non vengono pubblicate (NPR-31180).
 
-* I caricamenti da AEM Dynamic Media - La modalità di esecuzione di Scene7 su Scene7 richiedono troppo tempo per essere completati (NPR-31048).
+* I caricamenti dalla modalità [!DNL Experience Manager Dynamic Media] di esecuzione di Scene7 a Scene7 richiedono troppo tempo per essere completati (NPR-31048).
 
 * L’area sensibile aggiunta a una risorsa immagine non è visibile tramite il visualizzatore immagini interattivo nella pagina dei dettagli della risorsa (NPR-30979).
 
-* Vengono creati enormi processi di sling e il banner di elaborazione viene nuovamente visualizzato quando le azioni eseguite sulle risorse in AEM Assets vengono passate a Scene7 (NPR-30947).
+* Vengono creati enormi processi di sling e il banner di elaborazione viene nuovamente visualizzato quando le azioni eseguite sulle risorse in [!DNL Experience manager Assets] vengono trasmesse a Scene7 (NPR-30947).
 
 * Si verifica un conflitto durante la creazione della copia in lingua delle risorse e delle risorse non caricate in Scene7 (NPR-30932).
 
-* Le rappresentazioni dinamiche scaricate da AEM in esecuzione in modalità Dynamic Media Hybrid sono interrotte (sono di tipo testo con contenuto &quot;impossibile trovare l&#39;immagine&quot; invece del tipo di contenuto dell&#39;immagine) (NPR-30876).
+* Le rappresentazioni dinamiche scaricate dall&#39; [!DNL Experience Manager] esecuzione in modalità [!DNL Dynamic Media] ibrida sono interrotte (sono di tipo testo con contenuto &quot;impossibile trovare l&#39;immagine&quot; invece del tipo di contenuto dell&#39;immagine) (NPR-30876).
 
-* Il flusso di lavoro Codifica video elemento multimediale dinamico non riesce a generare la miniatura per il video migrato da Scene7 a Contenuti multimediali dinamici - Modalità di esecuzione di Scene7 (CQ-4282011).
+* [!DNL Dynamic Media] Il flusso di lavoro di codifica video non genera la miniatura per il video migrato da Scene7 alla modalità di esecuzione di Scene7 (CQ-4282011). [!DNL Dynamic Media]
 
 * IpsApiException durante la migrazione delle risorse da un’istanza all’altra tramite ID società Scene7 diversi (CQ-4280548).
 
-* La miniatura della risorsa 3D non è informativa, quando un modello 3D supportato viene assimilato in AEM (CQ-4283701).
+* La miniatura della risorsa 3D non è informativa, quando un modello 3D supportato viene assimilato in [!DNL Experience Manager] (CQ-4283701).
 
 * I pulsanti di scorrimento vengono visualizzati nel visualizzatore, se una risorsa 3D dispone di poche viste della fotocamera (CQ-4283322).
 
@@ -120,7 +120,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * I video non possono essere riprodotti con SmartCropVideoViewer su Internet Explorer 11 e Safari (CQ-4281422).
 
-* L’utilizzo del pulsante Sposta per spostare più risorse, da una cartella all’altra, non riesce in AEM su Dynamic Media - modalità di esecuzione di Scene7 (CQ-4280384).
+* L’utilizzo del pulsante di spostamento per spostare più risorse, da una cartella all’altra, non riesce [!DNL Experience Manager] in esecuzione in modalità [!DNL Dynamic Media] - Scene7 runmode (CQ-4280384).
 
 * I video distorti vengono visualizzati sui dettagli delle risorse quando il tipo MIME è diverso da MP4 (CQ-4279704).
 
@@ -150,7 +150,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * La barra delle azioni e il conteggio delle risorse non si aggiornano quando si selezionano tutti gli elementi (cartelle o singole risorse) nell&#39;interfaccia utente touch (NPR-31118).
 
-* In AEM viene visualizzata un’eccezione durante il polling per i dettagli del processo relativi a una risorsa (CQ-4283569).
+* Durante [!DNL Experience Manager] il polling dei dettagli del processo di una risorsa, viene visualizzata un’eccezione (CQ-4283569).
 
 ### Sites {#sites}
 
@@ -169,7 +169,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Quando si passa dalla vista Scheda alla vista Elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima dello scorrimento della pagina (NPR-31286).
 
-* La casella di controllo Seleziona tutto è nascosta nella vista Elenco dell&#39;interfaccia utente Siti (NPR-31614).
+* La casella di controllo Seleziona tutto è nascosta nella vista Elenco dell&#39; [!DNL Sites] interfaccia utente (NPR-31614).
 
 * Il conteggio Seleziona tutto in una pagina di risultati della ricerca non è corretto (NPR-31120).
 
@@ -189,13 +189,13 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * QueryBuilder supporta ora l&#39;ordine ``fn:name()`` nelle query xpath (NPR-31322).
 
-* La struttura di attivazione duplicata viene creata al momento dell&#39;aggiornamento da AEM 6.3 (NPR-31513).
+* L&#39;albero di attivazione duplicato viene creato durante l&#39;aggiornamento dalla versione [!DNL Experience Manager] 6.3 (NPR-31513).
 
 * Le richieste inoltrate non conservano le intestazioni di risposta impostate durante l&#39;autenticazione Sling (NPR-30013).
 
 * La ricerca all&#39;interno dei componenti del selettore non funziona (NPR-31692).
 
-* Viene visualizzato un errore quando si allega un file ZIP a un post di AEM Communities a causa di versioni diverse del bundle Apache POI e Apache Tika (NPR-31018).
+* Viene visualizzato un errore quando si allega un file ZIP a un [!DNL Experience Manager Communities] post a causa di diverse versioni del bundle Apache POI e Apache Tika (NPR-31018).
 
 * Il ``org.apache.sling.distribution.api`` bundle è nascosto nel gestore di configurazione e pertanto non è disponibile per i bundle personalizzati (NPR-31720).
 
@@ -207,15 +207,15 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 **Miglioramenti apportati al prodotto**
 
-* Il flusso di lavoro di importazione di Asset Sourcing in AEM Assets viene modificato per recuperare solo le risorse create di recente da Brand Portal ad AEM e per ignorare le risorse già presenti nella NUOVA cartella per evitare la replica (CQ-4278527).
+* Il flusso di lavoro di importazione di Asset Sourcing in [!DNL Experience Manager Assets] viene modificato per recuperare solo le risorse appena create da [!DNL Brand Portal] a [!DNL Experience Manager], e per evitare la replica ignorate le risorse già presenti nella cartella NEW (CQ-4278527).
 
 **Problemi risolti**
 
 * Quando si crea una nuova cartella Contribution nella funzione Asset Sourcing (CQ-4282825), viene visualizzata un’icona errata.
 * Quando create una nuova cartella Contribution, una o entrambe le sottocartelle (NEW e SHARED) non vengono visualizzate all’interno della cartella Contribution (CQ-4282424).
-* Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da AEM a Brand Portal dopo la ricezione delle nuove risorse nella cartella Contribution da Brand Portal end (CQ-4279740).
+* Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da [!DNL Experience Manager] a [!DNL Brand Portal] dopo aver ricevuto nuove risorse dalla [!DNL Brand Portal] fine della cartella Contribution (CQ-4279740).
 * La creazione di una cartella Contribution all’interno di una cartella Contribution (cartella nidificata) non è consentita per evitare la complessità (CQ-4278391).
-* Il sistema genera un’eccezione durante il caricamento dell’elenco di utenti Brand Portal (file .csv) importato da AEM Admin Console. Nel file .csv sono obbligatori solo i campi Email, FirstName e LastName (CQ-4278390).
+* Il sistema genera un&#39;eccezione durante il caricamento dell&#39;elenco di [!DNL Brand Portal] utenti (file .csv) importato da [!DNL Experience Manager] Admin Console. Nel file .csv sono obbligatori solo i campi Email, FirstName e LastName (CQ-4278390).
 
 ### Communities {#communities}
 
@@ -224,11 +224,11 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * I collegamenti rapidi per gestire i gruppi (Open/Edit/Publish/Delete Groups) non sono visibili agli amministratori della community (Group admin/Site admin) (NPR-31627).
 * Un blog inviato viene visualizzato solo se la pagina viene aggiornata/ricaricata manualmente (NPR-31599).
 * La query JCR utilizzata dalla funzione &quot;Mentions&quot; è sensibile alle maiuscole/minuscole e richiede troppo tempo per restituire i risultati (NPR-31475).
-* Il file UberJar di AEM 6.5 genera un&#39;eccezione, `cq-social-translation` bundle mancante nel file UberJar di AEM 6.5 (NPR-31186).
+* [!DNL Experience Manager] 6.5 Il file UberJar genera un&#39;eccezione, `cq-social-translation` bundle mancante nel file [!DNL Experience Manager] UberJar 6.5 (NPR-31186).
 * Librerie Databind di Jackson aggiornate alla versione 2.9.9.3 per risolvere nuove vulnerabilità (NPR-30967).
 * I titoli di Attività e Notifiche non sono coerenti (NPR-30941).
-* La paginazione non funziona correttamente nei blog di Communities (NPR-30914).
-* I rapporti di Analytics non vengono compilati nell’ambiente di authoring di AEM. Viene visualizzata una pagina vuota (NPR-30913).
+* Pagination is not working properly in [!DNL Communities] Blogs (NPR-30914).
+* Analytics reports are not populated in [!DNL Experience Manager] author environment, blank page appears (NPR-30913).
 
 ### Quercia {#oak}
 
@@ -238,7 +238,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 >[!NOTE]
 >
->Il Service Pack di AEM non include le correzioni per AEM Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack non include correzioni per [!DNL Experience Manager Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. Per ulteriori informazioni, consultate [Installare il componente aggiuntivo](#install-aem-forms-add-on-package) Experience Manager Forms e [Installare i moduli Experience Manager su JEE](#install-aem-forms-jee-installer).
 
 #### Pacchetto di componenti aggiuntivi per Forms {#forms-add-on-package-6530}
 
@@ -254,7 +254,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 **Gestione della corrispondenza**
 
-* Le didascalie e le descrizioni comandi non vengono visualizzate durante la migrazione delle lettere da LiveCycle ES4SP1 ad AEM 6.5 (NPR-31615).
+* Le didascalie e le descrizioni comandi non vengono visualizzate durante la migrazione delle lettere da LiveCycle ES4SP1 a [!DNL Experience Manager] 6.5 (NPR-31615).
 
 * **Durante il salvataggio delle lettere come bozze (NPR-30463), la formattazione del flusso di testo non è più supportata** .
 
@@ -280,27 +280,27 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 >[!NOTE]
 >
->Per i clienti di AEM Forms, è essenziale installare il pacchetto dei componenti aggiuntivi per AEM Forms dopo l’installazione del Service Pack, del Cumulative Fix Pack o del Feature Pack di AEM.
+>For [!DNL Experience Manager Forms] customers, it is essential to install [!DNL Experience Manager Forms] add-on package after installing any [!DNL Experience Manager] Service Pack, Cumulative Fix Pack, or Feature Pack.
 
 #### Forms - JEE di base {#forms-foundation-jee-feature}
 
-* Supporto di AEM Forms per Oracle 18c (NPR-29155).
+* [!DNL Experience Manager] Supporto dei moduli per Oracle 18c (NPR-29155).
 
-## AEM 6.5.2.0
+## Adobe Experience Manager 6.5.2.0
 
-AEM 6.5.2.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of AEM 6.5 in **April 2019**. Può essere installato sopra AEM 6.5.
+[!DNL Adobe Experience Manager] 6.5.2.0 è una versione importante che include correzioni e miglioramenti a livello di prestazioni, stabilità e sicurezza introdotti dai clienti a partire dalla data di disponibilità generale del [!DNL Adobe Experience Manager] 6.5 di **aprile 2019**. It can be installed on top of [!DNL Experience Manager] 6.5.
 
 Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.10.3.
-* Aggiunta di una proprietà di configurazione per consentire l’esportazione di Frammenti esperienza direttamente in aree di lavoro definite dall’utente per Adobe Target.
-* Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di Assets. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Consulta la sezione sulla [ricerca visiva](../assets/search-assets.md#visualsearch).
+* Aggiunta di una proprietà di configurazione per consentire l’esportazione di Frammenti esperienza direttamente in aree di lavoro definite dall’utente per [!DNL Adobe Target].
+* Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di Assets. [!DNL Experience Manager]Dall’archivio DAM,  visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Consulta la sezione sulla [ricerca visiva](../assets/search-assets.md#visualsearch).
 
 * Miglioramento della funzionalità Risorse collegate per aggiungere il supporto per il recupero di documenti da implementazioni DAM remote. Gli autori di siti possono ora cercare e filtrare i tipi di documenti supportati in Content Finder. I documenti remoti possono essere aggiunti al componente Download nelle pagine Web. Consulta la sezione sull’[utilizzo di risorse collegate](../assets/use-assets-across-connected-assets-instances.md).
 
 * Ottimizza i filtri di tipo Documento con più tipi MIME per supportare le opzioni multivalore.
 * Introduzione di un flusso di lavoro Rielabora esterno per il supporto di più risorse.
-* Ottimizzazione delle prestazioni di Dynamic Media mediante l’uso di filtri di risorse predefiniti per la replica.
+* Prestazioni ottimizzate [!DNL Dynamic Media] utilizzando i filtri risorse predefiniti per la replica.
 * Ripristino delle opzioni di modifica di Assets relative a ritaglio/rotazione per DMS7.
 * Implementazione di un’opzione per la disattivazione audio di un video durante il caricamento in VideoPlayer.
 * Implementazione di una correzione per fare in modo che nella vista a colonne dell’interfaccia utente di Assets sia visualizzato solo il contenuto specifico del tenant.
@@ -312,12 +312,12 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Miglioramento della funzionalità Risorse collegate per aggiungere il supporto per il recupero di documenti da implementazioni DAM remote. Gli autori di siti possono ora cercare e filtrare i tipi di documenti supportati in Content Finder. I documenti remoti possono essere aggiunti al componente Download nelle pagine Web. Hotfix per CQ-4270245. Consulta la sezione sull’[utilizzo di risorse collegate](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di Assets. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Consulta la sezione sulla [ricerca visiva](../assets/search-assets.md#visualsearch).
+* [!DNL Experience Manager Assets]Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di [!DNL Experience Manager]Dall’archivio DAM,  visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Consulta la sezione sulla [ricerca visiva](../assets/search-assets.md#visualsearch).
 
 **Problemi risolti**
 
 * I percorsi delle risorse negli URL e i metadati delle cartelle generati dall’API ACP non sono codificati in URL. GRANITE-26198: Hotfix per CQ-4271814
-* Non è possibile utilizzare l’interfaccia di Assets per decomprimere e aprire un archivio contenente una cartella il cui nome include un segno di percentuale (%). NPR-29989: Hotfix per CQ-4270467
+* Unzipping an archive with a folder having a percent sign (%) in its name can not be opened using [!DNL Experience Manager Assets] interface. NPR-29989: Hotfix per CQ-4270467
 * Interfaccia touch: Durante la procedura guidata di gestione della pubblicazione, i riferimenti vengono aggiunti dopo la pagina nel corpo della richiesta di pubblicazione, causando la pubblicazione di tutte le risorse dopo la pagina, e quando viene eseguito il rendering della pagina, alcune risorse nell’istanza di pubblicazione vengono perdute. NPR-29985: Hotfix per CQ-4270724
 * La funzione Scollega di Assets non funziona per le risorse correlate il cui nome contiene caratteri speciali (caratteri che diventano con codifica URI). NPR-30387: Hotfix per CQ-4274446
 * Quando si modifica un frammento di contenuto, la versione viene creata con l’utente errato.
@@ -335,11 +335,11 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * Con il collegamento di Condivisione risorse di una cartella il cui nome include spazi e il carattere “&amp;” vengono visualizzate schede grigie vuote per alcune risorse. NPR-30557: Hotfix per CQ-4270187
 * Il modulo dello schema dei metadati della cartella non rileva automaticamente il tipo di dati e, di conseguenza, non crea l’elemento TypeHint correlato nell’invio del modulo. NPR-30599: Hotfix per CQ-4275227
 * Le opzioni di modifica di Assets relative a ritaglio e rotazione vengono disabilitate dall’interfaccia utente di authoring di DMS7. NPR-30118: Hotfix per CQ-4273221
-* La funzionalità Condividi collegamento non funziona sull’istanza di AEM con la configurazione DMS7. NPR-30080, NPR-30492: Hotfix per CQ-4273651
-* Se si aggiunge alla pagina il componente Dynamic Media Scene7 e quindi si pubblica la pagina, la configurazione dmscene7 non viene attivata ogni volta. NPR-30641: Hotfix per CQ-4275962
-* Aggiunta di un elemento IPSJobJournal in AEM per creare un solo processo IPS (Intrusion Prevention Systems) per profilo di elaborazione. NPR-30490: Hotfix per CQ-4273614
-* Elemento multimediale dinamico: Sono stati aggiunti filtri predefiniti per escludere la replica delle risorse nel nodo di pubblicazione AEM. NPR-30538: Hotfix per CQ-4274678
-* Introduzione di un flusso di lavoro Rielabora esterno per supportare più risorse e consentire la creazione della cartella come payload. Il flusso di lavoro prevede due passaggi: rielaborazione delle risorse senza alcun handle tramite la mappatura dei metadati al passaggio successivo e ricaricamento di tutte le risorse senza handle di risorsa a S7 in un singolo processo IPS. Per ulteriori informazioni, consulta Configurazione di Cloud Services di Dynamic Media. NPR-30489: Hotfix per CQ-4272903
+* Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492: Hotfix per CQ-4273651
+* Adding the [!DNL Dynamic Media] Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix per CQ-4275962
+* Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490: Hotfix per CQ-4273614
+* [!DNL Dynamic Media]: Aggiunta di filtri predefiniti per escludere le risorse dalla replica nel nodo di Publish. [!DNL Experience Manager] NPR-30538: Hotfix per CQ-4274678
+* Introduzione di un flusso di lavoro Rielabora esterno per supportare più risorse e consentire la creazione della cartella come payload. Il flusso di lavoro prevede due passaggi: rielaborazione delle risorse senza alcun handle tramite la mappatura dei metadati al passaggio successivo e ricaricamento di tutte le risorse senza handle di risorsa a S7 in un singolo processo IPS. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489: Hotfix per CQ-4272903
 * Caricamento di un CSV non corretto dopo la cancellazione del CSV corretto. Hotfix per CQ-4277694, CQ-4277814
 * Icona errata specifica delle cartelle contributi da rimuovere. Hotfix per CQ-4277580
 * Selezionando un utente nel selettore utenti della scheda Contributo risorse, il nome dell’utente non viene visualizzato nella tabella e nella pagina delle proprietà della finestra di dialogo Elimina utente viene visualizzato testo errato. Hotfix per CQ-4277875
@@ -348,11 +348,11 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * Gli utenti non amministratori possono pubblicare risorse in una nuova cartella di una cartella Contributo risorse. Hotfix per CQ-4278200
 * L’utente DAM (non amministratore) non può scegliere di aggiungere collaboratori alla cartella Contributo risorse. Hotfix per CQ-4278192
 * Il pulsante “Crea” è visibile nella cartella Contributo risorse. Hotfix per CQ-4277560
-* Se si ordinano le query di ricerca in base alla rilevanza, oltre ai modelli InDesign vengono restituiti documenti InDesign. Hotfix per CQ-4273864
+* Sorting search query by relevance returns [!DNL InDesign] documents along with [!DNL InDesign] templates. Hotfix per CQ-4273864
 * Se l’utente dispone di un ID e-mail in maiuscolo, non potrà eseguire la consegna per le risorse ritirate in precedenza. Hotfix per CQ-4276575
 * L’operazione Elimina si applica solo ai predefiniti selezionati; se la schermata aggiorna automaticamente l’elenco dopo l’operazione, vengono visualizzati altri predefiniti già aggiornati. Hotfix per CQ-4261461
-* Se si configura Cloud Services di Dynamic Media in modalità DMHybrid, verranno create più suite di rapporti vuote in Analytics e in AEM non verrà memorizzato alcun ID suite di rapporti, con conseguente duplicazione delle suite di rapporti. Hotfix per CQ-4249780
-* L’operazione di ridenominazione di una risorsa AEM in un nome duplicato non può essere sincronizzata con Scene7. Hotfix per CQ-4276763
+* Configuring [!DNL Dynamic Media] Cloud Services in DMHybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix per CQ-4249780
+* Rename operation in [!DNL Experience Manager] asset to duplicated name fails to synchronize to Scene7. Hotfix per CQ-4276763
 * I contenuti generati dall’utente non vengono visualizzati correttamente nel pannello del filtro di ricerca. Hotfix per CQ-4273875
 * L’opzione Trova simile non è disponibile per le immagini TIFF. Hotfix per CQ-4278238
 * Implementazione di un’opzione per disattivare l’audio dei video durante il caricamento in VideoPlayer. Hotfix per CQ-4266465
@@ -389,8 +389,8 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 ### Interfaccia utente - Foundation {#ui-foundation}
 
 * Con l’attivazione dei tasti di scelta rapida l’utente non può usare i tasti m, p ed e all’interno di specifiche interfacce utente. NPR-30355: Hotfix per GRANITE-26346
-* La chiusura dell’interfaccia utente di ricerca di Risorse non reimposta la barra a sinistra sulla selezione del contenuto, impedendo all’utente di aprire la barra laterale del filtro una seconda volta. NPR-30509: Hotfix per CQ-4274716
-* Ambiente multi-tenant: gli elementi di navigazione nella parte superiore dell’interfaccia utente di Assets non sono disponibili e viene generato un errore JavaScript. NPR-30104: Hotfix per GRANITE-26344
+* Closing [!DNL Experience Manager Assets] Search UI does not reset the left rail to Content selection preventing the user from opening the filter rail the second time subsequently. NPR-30509: Hotfix per CQ-4274716
+* Multi-tenant environment: [!DNL Experience Manager Assets] UI top navigation is not available and throwing JavaScript error. NPR-30104: Hotfix per GRANITE-26344
 
 ### Traduzione {#translation-6520}
 
@@ -398,7 +398,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 ### Piattaforma {#platform-6520}
 
-* Il mittente predefinito di AEM non è in grado di inviare messaggi a un server SMTP remoto tramite TLS v1.2. NPR-30476: Hotfix per GRANITE-26605
+* [!DNL Experience Manager]Il mittente predefinito di non è in grado di inviare messaggi a un server SMTP remoto tramite TLS v1.2. NPR-30476: Hotfix per GRANITE-26605
 
 ### Progetti {#projects-6520}
 
@@ -422,11 +422,11 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 >[!NOTE]
 >
->Il Service Pack di AEM non include le correzioni per AEM Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il componente aggiuntivo per AEM Forms](#install-aem-forms-add-on-package) e [Installare il programma di installazione di JEE per AEM Forms](#forms-jee-installer).
+>[!DNL Experience Manager] Service Pack non include correzioni per [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](#install-aem-forms-add-on-package) and [Install Experience Manager Forms JEE installer](#forms-jee-installer).
 
-Elementi di rilievo di AEM 6.5.2.0 Forms:
+The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
-* Aggiunta dell’impostazione Auto a `RenderAtClient` nell’API `PDFFormRenderOptions` per la specifica OSGi di AEM Forms.
+* Added &#39;Auto&#39; setting to `RenderAtClient` in `PDFFormRenderOptions` API for [!DNL Experience Manager] Forms OSGi.
 
 #### Pacchetto di componenti aggiuntivi per Forms {#forms-add-on-package}
 
@@ -471,58 +471,58 @@ Elementi di rilievo di AEM 6.5.2.0 Forms:
 **Forms - JEE di base**
 
 * Il servizio HTMLtoPDF non visualizza maxReuseCount nella console JMX. NPR-30134, NPR-30304: Hotfix per CQ-4273763
-* L&#39;aggiunta o la modifica di una connessione a un servizio Web richiamando i servizi Web da AEM Forms Workbench genera un errore: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix per CQ-4273217
+* Adding or editing a Web Service connection by invoking web services from [!DNL Experience Manager Forms] Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix per CQ-4273217
 
 ### Feature Pack inclusi {#feature-packs-included}
 
 >[!NOTE]
 >
->Per i clienti di AEM Forms, è essenziale installare il pacchetto dei componenti aggiuntivi per AEM Forms dopo l’installazione del Service Pack, del Cumulative Fix Pack o del Feature Pack di AEM.
+>For [!DNL Experience Manager Forms] customers, it is essential to install [!DNL Experience Manager Forms] add-on package after installing any [!DNL Experience Manager] Service Pack, Cumulative Fix Pack, or Feature Pack.
 
 #### Sites {#sites-feature-packs-included}
 
-* Aggiunta di una proprietà di configurazione per consentire l’esportazione di Frammenti esperienza direttamente in aree di lavoro definite dall’utente per Adobe Target. NPR-29189: Hotfix per CQ-4249782
+* Aggiunta di una proprietà di configurazione per consentire l’esportazione di Frammenti esperienza direttamente in aree di lavoro definite dall’utente per [!DNL Adobe Target]. NPR-29189: Hotfix per CQ-4249782
 
 #### Forms - Servizi basati su documenti {#forms-document-services-1}
 
-* Aggiunta dell’impostazione Auto a `RenderAtClient` nell’API `PDFFormRenderOptions` per la specifica OSGi di AEM Forms. NPR-30759: Hotfix per CQ-4278193
+* Added &#39;Auto&#39; setting to `RenderAtClient` in `PDFFormRenderOptions` API for [!DNL Experience Manager Forms] OSGi. NPR-30759: Hotfix per CQ-4278193
 
-## AEM 6.5.1.0 {#release-6510}
+## Adobe Experience Manager 6.5.1.0 {#release-6510}
 
-AEM 6.5.1.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of AEM 6.5 in *April 2019.* Può essere installato sopra AEM 6.5.
+[!DNL Adobe Experience Manager] 6.5.1.0 è una versione importante che include correzioni suggerite dai clienti e miglioramenti a prestazioni, stabilità sicurezza rilasciati a partire dalla data di disponibilità generale del [!DNL Adobe Experience Manager] 6.5 di *aprile 2019.* Può essere installato sulla parte superiore di [!DNL Experience Manager] 6.5.
 
 Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Abilitazione dell’inclusione dello stato dell’interfaccia utente dinamica negli eventi di tracciamento come attributi personalizzati.
-* Inclusione del supporto per la distribuzione di risorse video 360° in Scene7 di Dynamic Media.
+* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media] Scene 7.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
 ### Assets
 
 * Aggiornamento dell’interfaccia DMGGateway di DAM per il supporto multipart di S3. NPR-29740: Hotfix per CQ-4226303
-* L&#39;anteprima delle rappresentazioni genera `Only empty tenantId is currently supported` un errore dopo l&#39;aggiornamento ad AEM 6.5\. NPR-29986: Hotfix per CQ-4272353
+* L&#39;anteprima delle rappresentazioni genera `Only empty tenantId is currently supported` un errore dopo l&#39;aggiornamento a [!DNL Experience Manager] 6.5. NPR-29986: Hotfix per CQ-4272353
 * La finestra di dialogo Elimina non è visibile per consentire l’eliminazione di lavori. NPR-29720: Hotfix per CQ-4271074
-* Dopo aver aggiunto il titolo della risorsa nella pagina delle proprietà, quando un utente prova a chiudere la pagina, AEM riapre la pagina delle proprietà. NPR-29627: Hotfix per CQ-4264929
+* After adding asset title in the properties page, when a user attempts to close the page, [!DNL Experience Manager] opens the properties page again. NPR-29627: Hotfix per CQ-4264929
 * VersioningTimelineEventProvider deve fornire la versione principale unitamente al nodo della versione nt: del tipo. Hotfix per GRANITE-26063
-* Implementazione della funzionalità per caricare e riprodurre video sferici a 360° in modalità Scene7 DM di AEM. Hotfix per CQ-4265131
+* Implemented the ability to upload and play 360 spherical videos in [!DNL Experience Manager] DM-Scene7 mode. Hotfix per CQ-4265131
 * Live Copy recupera lo stato non corretto in caso di modifica dell’origine. Hotfix per CQ-4265451
-* Abilitazione del supporto per l’utilità di gestione di più siti per Assets. Hotfix per CQ-4271453, CQ-4268621, CQ-4257491
-* L’interfaccia di AEM deve contenere una voce aggiuntiva per la versione corrente della risorsa nella cronologia della timeline, per visualizzare l’ultimo commento di consegna fornito da Adobe Asset Link. Hotfix per CQ-4262864
+* Abilitazione del supporto per l’utilità di gestione di più siti per [!DNL Experience Manager Assets]. Hotfix per CQ-4271453, CQ-4268621, CQ-4257491
+* [!DNL Experience Manager] nell’interfaccia deve essere visualizzata una voce aggiuntiva per la versione corrente della risorsa nella cronologia del tempo, in cui viene visualizzato il commento di archiviazione più recente da [!DNL Adobe Asset Link]. Hotfix per CQ-4262864
 * Nella timeline dei frammenti di contenuto viene visualizzato un messaggio di errore in caso di assenza di proprietà. Hotfix per CQ-4272560
 * Problema relativo al lettore video di Scene7 quando viene espanso a schermo intero. Hotfix per CQ-4266700
 * ZoomVerticalViewer: i pulsanti di spostamento non devono essere visualizzati se viene utilizzata una singola risorsa immagine. Hotfix per CQ-4264795
 * Se si elimina un nodo figlio nella Live Copy, è necessario scollegare liveRelationship. Hotfix per CQ-4270395
 * Lo schema di metadati contiene solo elementi della configurazione globale; quelli del tenant attivo non sono presenti. Il valore dell’URL di formPath viene ripristinato a quello predefinito anche se modificato. NPR-29945: Hotfix per CQ-4262898
-* La pubblicazione di predefiniti per immagini su Brand Portal non riesce e viene restituito il codice di errore 500. NPR-29510: Hotfix per CQ-4268659
+* Publish image presets to [!DNL Brand Portal] fails with 500 error code. NPR-29510: Hotfix per CQ-4268659
 
 ### Sites
 
 * Le proprietà vuote e multiple non vengono propagate dalla blueprint durante il rollout. Il ripristino di Live Copy con la blueprint non funziona per i componenti. NPR-29253: Hotfix per CQ-4264928, CQ-4264926, CQ-4267722
 * CoralUI, when used with `Multifield`, stores the `fileReferenceParameter` at the component level instead of multifield level. NPR-29537: Hotfix per CQ-4266129
-* Miglioramento del componente di testo AEM e dell’editor di testo per il giapponese. NPR-29785: Hotfix per CQ-4265090
+* Enhancement of [!DNL Experience Manager] text component and Text Editor to Japanese. NPR-29785: Hotfix per CQ-4265090
 * La pagina ripristinata con Timewarp deve fare riferimento all’immagine corretta al momento del controllo delle versioni. NPR-29431: Hotfix per CQ-4262638
 * Un problema relativo all&#39;ereditarietà dei nodi Style System dall&#39;elemento padre all&#39;elemento secondario. NPR-29516: Hotfix per CQ-4270330
-* Messaggio di errore durante la configurazione dell’autenticazione per il social posting su Facebook. NPR-29211: Hotfix per CQ-4266630
+* An error message while setting up the social posting to [!DNL Facebook] authentication. NPR-29211: Hotfix per CQ-4266630
 * La miniatura di cui è stato eseguito il rendering nel frammento di contenuto mostra la rappresentazione interna del calendario per il campo Data e ora. NPR-29531: Hotfix per CQ-4269362
 * All’apertura della scheda Autorizzazioni nell’implementazione di Coral2 non viene visualizzato alcun pulsante. Hotfix per CQ-4269419
 
@@ -536,7 +536,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 ### Frammenti esperienza
 
-* Esporta Frammenti esperienza AEM in Adobe Target. Hotfix per CQ-4265469
+* Esporta frammenti [!DNL Experience Manager] esperienza in [!DNL Adobe Target]. Hotfix per CQ-4265469
 * L’esportazione di frammenti esperienza come destinazione non riesce con l’immagine intelligente. Hotfix per CQ-4269606
 
 * L’utente rimane bloccato quando prova a spostare i frammenti esperienza tramite Omnisearch nella vista a schede. Hotfix per CQ-4263848
@@ -560,13 +560,13 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 ### WCM - MSM
 
-* Con l’aggiornamento ad AEM 6.4.3 il rollout dell’utilità di gestione di più siti richiede molto tempo. Hotfix per CQ-4271410
+* Upgrade to [!DNL Experience Manager] 6.4.3 makes Multi-Site Manager take a long time to roll out. Hotfix per CQ-4271410
 
 ### Integrazione
 
 * Credenziali BrightEdge non valide ed errore di connessione. NPR-29168: Hotfix per CQ-4265872
 
-* Viene visualizzato un messaggio di eccezione quando si prova a modificare e salvare la configurazione di avvio di AEM. NPR-29176: Hotfix per CQ-4265782/CQ-4266153
+* An exception message is displayed when trying to edit and save the [!DNL Experience Manager] launch configuration. NPR-29176: Hotfix per CQ-4265782/CQ-4266153
 
 ### Interfaccia utente
 
@@ -584,11 +584,11 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Il componente Agente di replica è soggetto a una vulnerabilità per cui informazioni sensibili vengono rivelate a utenti non autorizzati. NPR-29611: Hotfix per GRANITE-25070
 
-* Falla nella sessione durante OAuth per ogni replica su Brand Portal. NPR-30001: Hotfix per GRANITE-26196
+* Falla nella sessione durante OAuth per ogni replica su [!DNL Brand Portal]. NPR-30001: Hotfix per GRANITE-26196
 
 ### Progetti
 
-* La pubblicazione di risorse dalla cartella /content/dam/mac di AEM Author a Brand Portal non funziona. NPR-29819: Hotfix per CQ-4271118
+* Publish [!DNL Experience Manager Assets] from [!DNL Experience Manager] Author /content/dam/mac folder to [!DNL Brand Portal] doesn&#39;t work. NPR-29819: Hotfix per CQ-4271118
 
 ### Piattaforma
 
@@ -600,7 +600,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 ### Forms
 
-Elementi di rilievo di AEM 6.5.1.0 Forms:
+The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 * OSGi only: Added a new attribute `PAGECOUNT` in Output and Forms Service.
 
@@ -613,7 +613,7 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 **Integrazione con il back-end**
 
 * Errore durante il recupero del linguaggio WSDL (Web Service Definition Language) protetto. NPR-29944: Hotfix per CQ-4270777
-* Quando AEM Forms è installato in IBM WebSphere, si verifica un errore nella creazione di un modello dati del modulo basato su SOAP. Hotfix per CQ-4251134
+* When [!DNL Experience Manager Forms]  is installed on IBM WebSphere, creating a form data model based on SOAP fails. Hotfix per CQ-4251134
 * Abilitazione del supporto per ADFS (Active Directory Federation Services) v3.0 per l’integrazione On-Premise di Microsoft Dynamics. Hotfix per CQ-4270586
 * Quando si modifica il titolo di un’origine dati, il modello dati del modulo non visualizza il titolo aggiornato. Hotfix per CQ-4265599
 * Se il nome di un&#39;entità o di un attributo contiene trattino o spazio, le espressioni non riescono a valutare tali entità e attributi. Hotfix per CQ-4225129
@@ -627,10 +627,10 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 * Impossibile aggiungere una nuova istanza nel frammento di modulo adattivo durante il caricamento lento. NPR-29818: Hotfix per CQ-4269875
 * Il componente Verifica non registra o visualizza errori per i modelli della documentazione. Hotfix per CQ-4272999
 * Aggiunta del supporto per disabilitare l’editor di layout per Moduli adattivi. Hotfix per CQ-4270810
-* È stato ripristinato il passaggio di verifica per i moduli adattivi in AEM 6.5\. Hotfix per CQ-4269583
+* Restored the verify step for Adaptive Forms in [!DNL Experience Manager] 6.5. Hotfix for CQ-4269583
 
-* Un errore di convalida del campo Modulo adattivo interrompe l’esecuzione di Adobe Sign. Hotfix per CQ-4269463
-* Se in un’istanza di AEM Forms sono presenti più di 20 frammenti di modulo adattivo e il nome di tutti i frammenti di modulo inizia con la stessa stringa, la ricerca non restituisce alcun frammento oppure restituisce solo 20 frammenti creati di recente. Hotfix per CQ-4264414, CQ-4264914
+* Adaptive Form field validation failure breaks [!DNL Adobe Sign]. Hotfix per CQ-4269463
+* When an [!DNL Experience Manager Forms] instance has more than 20 adaptive form fragments and name of all the form fragments starts with the same string, the search returns no or only recent 20 created fragments. Hotfix per CQ-4264414, CQ-4264914
 
 * Problemi di prestazioni quando l’app Moduli adattivi viene utilizzata con set di dati di grandi dimensioni. . Hotfix per CQ-4235310
 
@@ -651,8 +651,8 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 
 * Quando un modulo viene nuovamente inviato dalla casella in uscita dell’app Moduli adattivi, si verifica una perdita di dati. NPR-28345: Hotfix per CQ-4260929
 * I documenti non vengono chiusi durante il salvataggio per i casi non variabili. Hotfix per CQ-4269784
-* L&#39;app per moduli adattivi non supporta più Microsoft Windows 8.1\. Hotfix per CQ-4265274
-* Quando un’immagine di dimensioni superiori a 2 MB viene associata a un modulo come allegato a livello di campo nella versione Android dell’app AEM Forms, si verifica un arresto anomalo dell’app. Hotfix per CQ-4265578
+* L’app Moduli adattivi non supporta più Microsoft Windows 8.1. Hotfix per CQ-4265274
+* When an image of more than 2 MB is attached as a field level attachment to a form in the Android version of [!DNL Experience Manager Forms] app, the app crashes. Hotfix per CQ-4265578
 
 * Abilitazione delle opzioni di precompilazione per il canale di stampa delle comunicazioni interattive nell’attività Assegna. Hotfix per CQ-4265577
 * Gli utenti non possono visualizzare un’attività condivisa finché non diventano membri del gruppo a cui è assegnata l’attività. Hotfix per CQ-4248733
@@ -668,7 +668,7 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 
 **Forms - Gestione della corrispondenza**
 
-* L’interfaccia utente di Crea corrispondenza (interfaccia utente CCR) per AEM 6.5 Forms non riesce ad aprire la corrispondenza creata con AEM 6.3 Forms. Hotfix per CQ-4266392
+* [!DNL Experience Manager Forms] 6.5 L&#39;interfaccia utente Crea corrispondenza (interfaccia utente CCR) non riesce ad aprire la corrispondenza creata con [!DNL Experience Manager Forms] 6.3. Hotfix per CQ-4266392
 * La funzione di somma in XDP non funziona se i dati DDE sono di tipo numero. Hotfix per CQ-4227403
 * La logica di annullamento validità della cache in memoria delle lettere deve essere aggiornata, perché quando viene pubblicata una risorsa, l’ora dell’ultima modifica non viene aggiornata. Hotfix per CQ-4250465
 * Impossibile pubblicare il frammento di documento, DD e lettere. Hotfix per CQ-4272893
@@ -683,7 +683,7 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 
 **Forms - Designer**
 
-* Quando viene eseguito un controllo di accessibilità completo sul PDF statico creato con AEM Forms Designer, il controllo Lingua principale non riesce perché manca l’attributo della lingua. Hotfix per CQ-4272923, CQ-4271002
+* When a full accessibility check is performed on the static PDF created using [!DNL Experience Manager Forms Designer], the Primary Language check fails due to missing language attribute. Hotfix per CQ-4272923, CQ-4271002
 
 **Forms - Sicurezza dei documenti**
 
@@ -697,9 +697,9 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 * La conversione del PDF in PDF/A-1b con il campo Modulo non ha il codice di aspetto. NPR-29940: Hotfix per CQ-4269618
 
 * OSGi: Impossibile determinare il numero di pagine generate durante il rendering. NPR-28922: Hotfix per CQ-4270870
-* Abilitato il supporto per i file PDF statici tramite Forms Service in AEM Forms OSGi. NPR-28572: Hotfix per CQ-4270869
+* Abilitato il supporto per i file PDF statici tramite Forms Service in [!DNL Experience Manager Forms OSGi]. NPR-28572: Hotfix per CQ-4270869
 * Impossibile modificare le autorizzazioni per XMLForm.exe. NPR-29828, NPR-29237: Hotfix per Q-4267080
-* Il PDF statico creato dal modulo di output del server di AEM Forms non compila l’attributo/tag della lingua con la lingua del documento creato. NPR-27332: Hotfix per CQ-4271002
+* The static PDF created by the [!DNL Experience Manager Forms] server’s output module does not populate the language attribute/tag with the language of the document created. NPR-27332: Hotfix per CQ-4271002
 
 **Forms - JEE di base**
 
@@ -711,11 +711,11 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 
 #### Risorse - Incluse
 
-* Abilitazione del supporto per l’utilità di gestione di più siti per Assets. For more information, see [Reuse assets using MSM for Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: Hotfix per CQ-4259922
+* Abilitazione del supporto per l’utilità di gestione di più siti per [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: Hotfix per CQ-4259922
 
 #### Siti - Inclusi
 
-* Esporta Frammenti esperienza AEM in Adobe Target. For more details, see [The Experience Fragment Link Rewriter Provider - HTML](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML). Hotfix per CQ-4265469
+* Esporta frammenti [!DNL Experience Manager] esperienza in [!DNL Adobe Target]. For more details, see [The Experience Fragment Link Rewriter Provider - HTML](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML). Hotfix per CQ-4265469
 
 #### Forms - Servizi basati su documenti - Incluso
 
@@ -725,12 +725,12 @@ Elementi di rilievo di AEM 6.5.1.0 Forms:
 
 ### Bundle OSGi e pacchetti di contenuti
 
-Nei documenti di testo seguenti sono elencati i bundle OSGi e i pacchetti di contenuti inclusi in AEM 6.5.1.0
+The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.1.0
 
-Elenco dei bundle OSGi inclusi in AEM 6.5.1.0
+List of OSGi bundles included in [!DNL Experience Manager] 6.5.1.0
 
 [Ottieni file](assets/6_5-bundle-list.txt)
 
-Elenco dei pacchetti di contenuti inclusi in AEM 6.5.1.0
+List of Content Packages included in [!DNL Experience Manager] 6.5.1.0
 
 [Ottieni file](assets/6_5-content-package-list.txt)
