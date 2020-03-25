@@ -3,7 +3,7 @@ title: Informazioni su AEM Assets
 description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e l’offerta Adobe AEM Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
 
 ---
 
@@ -72,7 +72,7 @@ Quando lavori con risorse digitali in AEM, è importante comprendere la seguente
 
 * **Rappresentazioni** Una rappresentazione è la rappresentazione binaria di una risorsa. Le risorse dispongono sempre di una rappresentazione principale, cioè quella del file caricato. Possono disporre di diverse rappresentazioni aggiuntive create, ad esempio, dai passaggi personalizzati del flusso di lavoro o durante il caricamento di una risorsa. Le rappresentazioni possono essere di dimensioni diverse, con diverse risoluzioni, con filigrana aggiunta o altre caratteristiche modificate.
 
-* **Versioni** Quando si crea un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. Consulta Controllo delle versioni in AEM Assets.
+* **Versioni** Quando si crea una versione, viene creata un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **Risorse secondarie** Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un file Adobe Photoshop o le pagine di un file PDF. In AEM Assets, le risorse secondarie vengono gestite in modo analogo alle risorse.
 
