@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
+source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
 
 ---
 
@@ -27,7 +27,7 @@ AEM Service Pack 4 (6.5.4.0) è rilasciato il 5 **marzo 2020**. In questo artico
 
 * È stato ridotto il tempo necessario per aggiornare una pagina dopo aver trascinato i frammenti esperienza nell’Editor pagina Siti.
 
-* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie in diretta nella panoramica **** Live Copy.
+* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie dal vivo in Panoramica **** Live Copy.
 
 * Gestione migliorata degli URL incompleti o non validi. Tali URL possono rallentare l’Editor modelli.
 
@@ -85,8 +85,6 @@ Convertire un campo di testo in un modulo XFA in un campo di testo RTF in un mod
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
 Experience Manager Forms include i seguenti miglioramenti a livello di accessibilità:
-
-* Gli utenti possono spostare lo stato attivo sulla scheda senza problemi per il tema di riferimento Ultramarine-Accessible di un modulo adattivo.
 
 * Gli assistenti vocali annunciano le caselle di controllo, i collegamenti, il selettore data e i campi di immissione data correttamente in un modulo adattivo.
 
