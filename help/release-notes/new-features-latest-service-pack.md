@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
+source-git-commit: 61d1531c020b5a25207b5e3f1c2b0c14e2974e02
 
 ---
 
@@ -27,7 +27,7 @@ AEM Service Pack 4 (6.5.4.0) è rilasciato il 5 **marzo 2020**. In questo artico
 
 * È stato ridotto il tempo necessario per aggiornare una pagina dopo aver trascinato i frammenti esperienza nell’Editor pagina Siti.
 
-* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie dal vivo in Panoramica **** Live Copy.
+* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie in diretta nella panoramica **** Live Copy.
 
 * Gestione migliorata degli URL incompleti o non validi. Tali URL possono rallentare l’Editor modelli.
 
@@ -60,7 +60,7 @@ Experience Manager Assets include i seguenti miglioramenti a livello di accessib
 
 Il passaggio del flusso di lavoro Genera output stampabile consente di integrare un file modello sorgente con un file di dati. Questa integrazione consente di stampare o salvare copie diverse del file modello. Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL. Per ulteriori informazioni su questa funzione, vedere [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
 
-![Genera output stampabile](assets/generate-print-output-demo.gif)
+![Genera output stampabile](assets/generate-print-output-step.gif)
 
 ### Supporto per più colonne per moduli adattivi e comunicazioni interattive in modalità Layout {#multi-column-adaptive-forms}
 
@@ -124,7 +124,7 @@ Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzi
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
 
-   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-2-0.html)
 
 
 * Aggiornamenti CLI di AEM Cloud Manager
