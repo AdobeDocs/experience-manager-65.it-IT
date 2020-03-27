@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a26bc4e4ea10370dd2fc3403500004b9e378c418
 
 ---
 
@@ -49,7 +49,7 @@ Quando l&#39;amministratore del server applicazioni determina le impostazioni co
 ### Configurare le impostazioni del pool di connessioni per WebLogic per SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
 
 1. In Centro modifiche, fate clic su Blocca e modifica.
-1. In Struttura dominio fare clic su Servizi > JDBC > Origini dati e, nel riquadro a destra, fare clic su EDC_DS.
+1. In Struttura dominio, fare clic su Servizi > JDBC > Origini dati e, nel riquadro a destra, fare clic su EDC_DS.
 1. Nella schermata successiva, fate clic sulla scheda Configurazione > Pool di connessioni e immettete un valore nelle caselle seguenti:
 
    * Capacità iniziale
@@ -78,7 +78,7 @@ Quando l&#39;amministratore del server applicazioni determina le impostazioni co
 
 1. Nella struttura di navigazione, fare clic su Risorse > JDBC > Fornitori JDBC e, nel riquadro a destra, fare clic sull&#39;origine dati del driver JDBC definita dall&#39;utente creata.
 1. In Proprietà aggiuntive, fare clic su Origini dati, quindi selezionare IDP_DS.
-1. Nella schermata successiva, in Proprietà aggiuntive, fare clic su Proprietà pool di connessioni e immettere un valore nelle caselle Numero massimo di connessioni e Connessioni minime:
+1. Nella schermata successiva, in Proprietà aggiuntive, fate clic su Proprietà pool di connessioni e immettete un valore nelle caselle Numero massimo di connessioni e Connessioni minime:
 1. Fate clic su OK o Applica, quindi fate clic su Salva direttamente in configurazione principale.
 
 ## Ottimizzazione dei documenti in linea e impatto sulla memoria JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
@@ -109,7 +109,7 @@ Quando il contenuto del documento è inline (ovvero inferiore alla dimensione ma
 
 1. Riavviate il server applicazione con la seguente proprietà di sistema:
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=[*valore specificato al punto 2*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
@@ -139,7 +139,7 @@ L&#39;aumento richiesto nella dimensione massima dell&#39;heap JVM è calcolato 
 
 La dimensione massima dell&#39;heap JVM deve essere aumentata di 50 MB per un totale di 562 MB.
 
-**Considerazione della frammentazione heap**
+**Considerazione della frammentazione dell&#39;heap**
 
 Se si impostano le dimensioni dei documenti in linea su valori elevati, si aumenta il rischio di un errore OutOfMemoryError sui sistemi che sono inclini a un&#39;elevata frammentazione. Per memorizzare un documento in linea, la memoria heap JVM deve disporre di spazio contiguo sufficiente. Alcuni sistemi operativi, JVM e algoritmi di raccolta dei rifiuti sono inclini ad accumulare la frammentazione. La frammentazione riduce la quantità di spazio heap contiguo e può portare a un OutOfMemoryError anche quando esiste spazio totale sufficiente.
 
@@ -155,7 +155,7 @@ Questa sezione descrive le impostazioni specifiche di un ambiente WebSphere Appl
 
 Se si esegue Configuration Manager o si tenta di generare codice di implementazione Enterprise JavaBeans (EJB) utilizzando l&#39;utility della riga di comando *ejbdeployment* e si verifica un errore OutOfMemory, aumentare la quantità di memoria allocata alla JVM.
 
-1. Modificare lo script ejbdeployment nella directory *[appserver root]*/deploytool/itp/:
+1. Modificate lo script ejbdeployment nella directory *[appserver root]*/deploytool/itp/:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux e UNIX) `ejbdeploy.sh`
