@@ -1,6 +1,6 @@
 ---
-title: Funzioni di base del flusso di attività
-seo-title: Funzioni di base del flusso di attività
+title: Nozioni di base sul flusso di attività
+seo-title: Nozioni di base sul flusso di attività
 description: Elenco delle attività recenti eseguite da un membro o elenco delle attività recenti su un singolo thread di contenuto
 seo-description: Elenco delle attività recenti eseguite da un membro o elenco delle attività recenti su un singolo thread di contenuto
 uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Funzioni di base del flusso di attività{#activity-stream-essentials}
+# Nozioni di base sul flusso di attività {#activity-stream-essentials}
 
 Le attività di un membro della comunità firmato, come l&#39;invio a un forum o blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi attraverso la configurazione del componente Flussi di attività.
 
@@ -24,7 +24,7 @@ La possibilità di seguire aggiunge un altro gruppo di attività quando i membri
 
 Tutti i siti [](/help/communities/overview.md#communitiessites) della community includono una pagina del profilo utente per il membro che ha effettuato l&#39;accesso, che mostrerà le attività dei membri allo stesso modo.
 
-##  Concetti {#concepts}
+## Concetti {#concepts}
 
 Un flusso *di* attività è l&#39;elenco delle attività recenti eseguite da un membro o un elenco delle attività recenti su un singolo thread di contenuto, ad esempio un argomento del forum o un blog.
 
@@ -32,7 +32,7 @@ Un membro può seguire un flusso di attività, seguendo un altro individuo o con
 
 Un feed *di* notizie è un&#39;unione dei flussi di attività seguiti da un membro in un singolo flusso.
 
-Un * grafico [](/help/communities/essentials-socialgraph.md)sociale* acquisisce le seguenti relazioni di un membro all&#39;altro.
+Un grafico *[](/help/communities/essentials-socialgraph.md)*sociale acquisisce le seguenti relazioni di un membro con un altro.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -60,7 +60,7 @@ Un * grafico [](/help/communities/essentials-socialgraph.md)sociale* acquisisce 
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>consulta Funzione <a href="/help/communities/activities.md">Flussi di attività</a></td>
+   <td>consulta la funzione <a href="/help/communities/activities.md">Flussi di attività</a></td>
   </tr>
  </tbody>
 </table>
