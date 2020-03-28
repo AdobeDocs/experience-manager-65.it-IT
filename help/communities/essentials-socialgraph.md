@@ -1,8 +1,8 @@
 ---
 title: Social Graph Essentials
 seo-title: Social Graph Essentials
-description: seguire la panoramica dei componenti
-seo-description: seguire la panoramica dei componenti
+description: seguire la panoramica del componente e del componente seguente
+seo-description: seguire la panoramica del componente e del componente seguente
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 La capacità di un membro della Comunità di seguire e seguire [le attività](essentials-activities.md) è stabilita attraverso due componenti:
 
-Il `follow`componente deve essere associato a un&#39;altra risorsa, e questa associazione è già stabilita per i membri e le funzionalità di Community esistenti in un sito [](overview.md#communitiessites)community.
+Il `following` componente deve essere associato a un&#39;altra risorsa, e questa associazione è già stabilita per i membri e le funzionalità di Community esistenti in un sito [](overview.md#communitiessites)community.
 
-Il `following`componente elenca i membri che seguono il membro corrente o che sono seguiti dal membro corrente. Questo grafico social delle relazioni tra i membri è incluso nel profilo utente stabilito per un sito community.
+Il `following` componente elenca i membri che seguono il membro corrente o che sono seguiti dal membro corrente. Questo grafico social delle relazioni tra i membri è incluso nel profilo utente stabilito per un sito community.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -61,21 +61,21 @@ Il `following`componente elenca i membri che seguono il membro corrente o che so
      <li>Tipo: booleano</li>
      <li>Valore:<br />
       <ul>
-       <li><i>true </i>- il <code>following</code> componente elenca i membri che hanno effettuato l’accesso <code>follows</code></li>
-       <li><i>false </i>- il <code>following</code> componente elenca i membri <code>follow </code>del membro attualmente connesso</li>
+       <li><i>True </i>- Il <code>following</code> componente elenca i membri che hanno effettuato l'accesso <code>follows</code></li>
+       <li><i>Falso </i>- Il <code>following</code> componente elenca i membri <code>follow </code>del membro attualmente connesso</li>
       </ul> </li>
-    </ul> <p>Se manca la proprietà, il valore predefinito è <i>true</i> . Al momento non è possibile impostare questa proprietà utilizzando la finestra di dialogo di modifica in modalità di creazione. La proprietà deve essere aggiunta a un'istanza del <code>following </code>nodo utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Se manca la proprietà, il valore predefinito è <i>true</i> . Al momento, non è possibile impostare questa proprietà utilizzando la finestra di dialogo di modifica in modalità di creazione. La proprietà deve essere aggiunta a un'istanza del <code>following </code>nodo utilizzando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Segui {#follow}
 
-| **resourceType** | social/socialgrafo/componenti/hbs/seguenti |
+| **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
 | [**inclusa **](scf.md#add-or-include-a-communities-component) | No |
-| **templates** | /libs/social/socialgraph/components/hbs/following/following.hbs |
-| **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
+| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Personalizzazioni lato client](client-customize.md)
 
