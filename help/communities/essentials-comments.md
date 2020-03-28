@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -34,7 +34,7 @@ Il componente Commenti stabilisce un sistema di commenti in modo che ogni singol
    <td>Sì - le proprietà sono modificabili in <i>modalità </i>di progettazione</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.Voto</td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@ Altre funzionalità includono già il sistema dei commenti. Si tratta di:
 
 L&#39;elenco dei motivi di segnalazione può essere personalizzato aggiungendo flagrasonlist.hbs all&#39;app per sovrascrivere il contenuto
 
-* /libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs
+* `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
 Questo vale per qualsiasi componente che estende un sistema di commenti.
 
@@ -88,11 +88,11 @@ Questo vale per qualsiasi componente che estende un sistema di commenti.
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi:
+Consulta:
 
 * [Panoramica](srp.md) del provider di risorse di storage - Introduzione e panoramica sull&#39;utilizzo del repository
 * [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
