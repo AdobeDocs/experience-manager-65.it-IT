@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Nozioni di base sui messaggi{#messaging-essentials}
+# Nozioni di base sui messaggi {#messaging-essentials}
 
 Questa pagina illustra i dettagli dell’utilizzo del componente Messaggi per includere una funzione di messaggistica in un sito Web.
 
@@ -98,18 +98,21 @@ Vedere anche Personalizzazioni lato [client](/help/communities/client-customize.
 
 >[!CAUTION]
 >
->Il parametro String *non deve contenere una barra finale &quot;/&quot; per i seguenti metodi di MessageBuilder:
+>Il parametro String *non* deve contenere una barra finale &quot;/&quot; per i seguenti metodi di MessageBuilder:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
 >
->Esempio:
 >
->```
+Esempio:
+>
+>
+```>
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```
->
+>```>
+
+
 
 ### Sito community {#community-site}
 
@@ -123,22 +126,22 @@ L&#39;esempio seguente fa riferimento a un gestore di eventi che ascolta l&#39; 
 
 Per provare lo script di esempio lato server, è necessario un ambiente di sviluppo e la capacità di creare un bundle OSGi:
 
-1. Accedi come amministratore a ` [CRXDE|Lite](https://localhost:4502/crx/de).`
+1. Accedete come amministratore a ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
 1. Create un `bundle node`in `/apps/engage/install` con nomi arbitrari, ad esempio:
 
-   * Nome simbolico: com.interazione.media.social.messaging.MessagingNotification
+   * Nome simbolico: `com.engage.media.social.messaging.MessagingNotification`
    * Nome: Notifica dei messaggi per l’esercitazione introduttiva
-   * Descrizione: un servizio di esempio per inviare una notifica e-mail agli utenti che ricevono un messaggio
-   * Pacchetto: com.connect.media.social.messaging.notification
+   * Descrizione: Un servizio di esempio per inviare una notifica e-mail agli utenti che ricevono un messaggio
+   * Pacchetto: `com.engage.media.social.messaging.notification`
 
-1. Andate a /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/connect/media/social/messaging/notification, quindi:
+1. Passa a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`, quindi:
 
-   1. Eliminate la classe Activator.java creata automaticamente.
-   1. Create la classe MessageEventHandler.java.
-   1. Copiate e incollate il codice seguente in MessageEventHandler.java.
+   1. Eliminate la `Activator.java` classe creata automaticamente.
+   1. Create class `MessageEventHandler.java`.
+   1. Copiate e incollate il codice riportato di seguito in `MessageEventHandler.java`.
 
-1. Fate clic su **Salva tutto.**
-1. Andate a /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd e aggiungete tutte le istruzioni di importazione come scritto nel codice MessageEventHandler.java.
+1. Fate clic su **Salva tutto**.
+1. Individuare `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`e aggiungere tutte le istruzioni di importazione come scritte nel `MessageEventHandler.java` codice.
 1. Create il bundle.
 1. Verifica che il servizio `Day CQ Mail Service`OSGi sia configurato.
 1. Effettuate l&#39;accesso come utente dimostrativo e inviate un&#39;e-mail a un altro utente.
