@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Modifica dell&#39;aspetto (HBS){#alter-the-appearance-hbs}
+# Modifica dell&#39;aspetto (HBS) {#alter-the-appearance-hbs}
 
 Ora che i componenti per il sistema di commenti personalizzati nella directory dell&#39;applicazione (/apps) sono già presenti, con un resourceSuperType che fa riferimento al sistema di commenti predefinito e il modello/vista personalizzato registrato, è possibile modificare l&#39;implementazione.
 
@@ -30,7 +30,7 @@ Per una semplice dimostrazione, viene rimossa una funzione visiva, l’avatar mo
 
 Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* open [/apps/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Apri [/app/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * commentare il tag che include l&#39;avatar per un post di commento (~ riga 21):
 
@@ -40,7 +40,7 @@ Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* open [/apps/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Apri [/app/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * commentare il tag che include l&#39;avatar per la voce di commento successiva (~ riga 44):
 
@@ -50,7 +50,7 @@ Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* seleziona **Salva tutto**
+* Seleziona **Salva tutto**
 
 ### Replica app personalizzata {#replicate-custom-app}
 
@@ -58,13 +58,13 @@ Dopo che l’applicazione è stata modificata, è necessario replicare nuovament
 
 Un modo per farlo è
 
-* dal menu principale
+* Dal menu principale
 
    * selezionare **Strumenti > Operazioni > Replica**
    * select `Activate Tree`
    * set `Start Path`: to `/apps/custom`
    * deselect `Only Modified`
-   * seleziona `Activate`pulsante
+   * pulsante `Activate`di selezione
 
 ### Visualizza commento modificato sulla pagina di esempio pubblicata {#view-modified-comment-on-published-sample-page}
 
