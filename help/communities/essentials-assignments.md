@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Assignments Essentials{#assignments-essentials}
+# Assignments Essentials {#assignments-essentials}
 
 Continua a leggere per conoscere le informazioni essenziali per l&#39;utilizzo delle funzioni di assegnazione dei siti della community di [abilitazione](/help/communities/overview.md#enablement-community) .
 
@@ -48,7 +48,7 @@ La funzione di assegnazione consente di assegnare risorse di abilitazione e perc
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>consulta Funzione <a href="/help/communities/assignments.md">Assegnazioni</a></td>
+   <td>Vedere, Funzionalità <a href="/help/communities/assignments.md">Assegnazioni</a></td>
   </tr>
  </tbody>
 </table>
