@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -22,7 +22,7 @@ Nell’esempio di estensione dei componenti viene utilizzato il sistema di comme
 * Commenti - Il sistema di commenti che include il componente inserito in una pagina
 * Commento: il componente che acquisisce un’istanza di un commento pubblicato
 
-Entrambi i componenti devono essere installati, soprattutto se si personalizzano l’aspetto di un commento pubblicato.
+Entrambi i componenti devono essere implementati, soprattutto se si personalizzano l’aspetto di un commento pubblicato.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 
       * Da `social/commons/components/hbs/comments`
       * A `/apps/custom/components/comments`
-   * Modificare per includere il componente commento personalizzato (~riga 75):
+   * Modificate per includere il componente commento personalizzato (~riga 75):
 
       * Sostituisci `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
       * Con `{{include this resourceType='/apps/custom/components/comments/comment'}}`
