@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 Quando i membri interagiscono con le funzioni Community, vengono inviati eventi OSGi che possono attivare listener asincroni, come notifiche o gamificazioni (punteggio e contrassegno).
 
-L&#39;istanza [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) di un componente registra gli eventi come `actions`si verificano per un `topic`. SocialEvent include un metodo per restituire un `verb`associato all&#39;azione. C&#39;è una relazione *n-1* tra `actions`e `verbs`.
+L&#39;istanza [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) di un componente registra gli eventi come `actions` si verificano per un `topic`. SocialEvent include un metodo per restituire un `verb` associato all&#39;azione. C&#39;è una relazione *n-1* tra `actions` e `verbs`.
 
-Per i componenti Community consegnati nella release, le tabelle seguenti descrivono i `verbs`definiti per ciascun componente `topic`disponibile.
+Per i componenti Community consegnati nella release, le tabelle seguenti descrivono i `verbs` definiti per ciascun componente `topic` disponibile.
 
 ## Argomenti e verbi {#topics-and-verbs}
 
@@ -42,7 +42,7 @@ Per i componenti Community consegnati nella release, le tabelle seguenti descriv
 |---|---|
 | POST | crea un commento |
 | AGGIUNGI | risposta del membro al commento |
-| AGGIORNA | commento del membro è modificato |
+| AGGIORNA | commento del membro è stato modificato |
 | ELIMINA | commento del membro è eliminato |
 
 [Componente](essentials-file-library.md)Libreria file SocialEvent `topic`= com/adobe/cq/social/fileLibrary
