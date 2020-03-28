@@ -11,23 +11,23 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Funzionalità della classifica{#leaderboard-feature}
+# Funzionalità della classifica {#leaderboard-feature}
 
 ## Introduzione {#introduction}
 
-Il `Leaderboard` componente fornisce la capacità di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
+Il `Leaderboard` componente fornisce la capacità di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, classificando i membri in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
 
 Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](/help/communities/implementing-scoring.md).
 
 Questa sezione della documentazione descrive
 
-* aggiunta del `Leaderboard` componente a un sito [community](/help/communities/overview.md#community-sites)
-* impostazioni di configurazione per il `Leaderboard` componente
+* Aggiunta del `Leaderboard` componente a un sito [community](/help/communities/overview.md#community-sites)
+* Impostazioni di configurazione per il `Leaderboard` componente
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -37,7 +37,7 @@ Per aggiungere un `Leaderboard` componente a una pagina in modalità di creazion
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
@@ -51,7 +51,7 @@ Selezionate il `Leaderboard` componente inserito a cui accedere e selezionate l�
 
 #### scheda Impostazioni {#settings-tab}
 
-Nella scheda **Settings **(Impostazioni), specificare quali informazioni relative al membro vengono visualizzate:
+Nella scheda **Impostazioni** , specificate le informazioni relative al membro da visualizzare:
 
 * **Nome visualizzato**
 
@@ -79,23 +79,21 @@ Nella scheda **Regole** , il sito della community e le relative regole di valuta
 
 * **Percorso regola**
 
-   (obbligatorio) Posizione in cui è configurata la regola Punteggio/Badging.
+   (Obbligatorio) Posizione in cui è configurata la regola Punteggio/Badging.
 
 * **Regola punteggio**
 
-   (obbligatorio) Regola specifica che genera i punteggi da visualizzare.
+   (Obbligatorio) Regola specifica che genera i punteggi da visualizzare.
 
 * **Regola assegnazione badge**
 
-   (obbligatorio) Regola specifica che genera il contrassegno da visualizzare.
+   (Obbligatorio) Regola specifica che genera il contrassegno da visualizzare.
 
 * **Limite di visualizzazione**
 
-   Numero di membri da visualizzare per pagina.
+   Numero di membri da visualizzare per pagina. Il valore predefinito è 10.
 
-   Il valore predefinito è 10.
-
-### Esempio: Guida dei partecipanti {#example-participants-leaderboard}
+### Esempio: Leaderboard dei partecipanti {#example-participants-leaderboard}
 
 Questo rapporto della classifica deriva dall&#39;applicazione di regole di punteggio di base.
 
