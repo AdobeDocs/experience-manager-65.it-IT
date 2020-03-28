@@ -1,6 +1,6 @@
 ---
-title: Componenti, funzioni e funzioni essenziali
-seo-title: Componenti, funzioni e funzioni essenziali
+title: Componenti, funzioni e funzioni di base
+seo-title: Componenti, funzioni e funzioni di base
 description: Funzionamento di siti, modelli e gruppi di community
 seo-description: Funzionamento di siti, modelli e gruppi di community
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
@@ -10,12 +10,12 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
-source-git-commit: 941ffeb40805c991eec6a601d01796cfc2cc95e4
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Componenti, funzioni e funzioni essenziali {#component-function-and-feature-essentials}
+# Componenti, funzioni e funzioni di base {#component-function-and-feature-essentials}
 
 Le funzioni di AEM Communities richiedono che i visitatori del sito diventino membri e accedano al sito [della](overview.md#communitiessites) community prima di poter pubblicare contenuti. Pertanto, i modelli [di sito](sites.md)community, da cui viene [creato](sites-console.md)un sito community, sono progettati per includere una funzione di login, nonché profili utente, messaggistica, ricerca, moderazione e traduzione.
 
