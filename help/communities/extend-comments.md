@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -31,7 +31,7 @@ Supponiamo che l’intestazione del componente commento debba essere visualizzat
 
 Per implementare questa soluzione, crea un nuovo componente che estende (sostituisce) quello esistente e modifica lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quella estesa, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
 
-Il componente commento è in realtà uno dei due componenti che compongono il sistema di commenti. Esistono quindi due componenti da estendere: *commenti* e *commenti*. Lo script da modificare si trova nel `header.hbs` file del componente *comment *e il componente *commenti* padre (il sistema di commenti) è ciò che un autore aggiunge effettivamente alla pagina.
+Il componente commento è in realtà uno dei due componenti che compongono il sistema di commenti. Esistono quindi due componenti da estendere: *commenti* e *commenti*. Lo script da modificare si trova nel *file del componente* commento `header.hbs` , mentre il componente *commenti* principale (il sistema dei commenti) è quello che un autore aggiunge alla pagina.
 
 Per estendere i commenti è necessario:
 
