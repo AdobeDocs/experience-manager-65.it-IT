@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -45,7 +45,7 @@ A partire dal [](deploy-communities.md#latestfeaturepack)feature pack 1 di Commu
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Vedere Gruppo <a href="creating-groups.md">community</a></td>
+   <td>Consulta Gruppo <a href="creating-groups.md">community</a></td>
   </tr>
  </tbody>
 </table>
@@ -100,7 +100,7 @@ Quando un sito o un modello di gruppo community include la funzione Groups, è p
 * Creare una sub-community nell’ambiente di authoring
 * Creare un gruppo nell’ambiente di pubblicazione, se configurato per consentirne l’utilizzo
 
-Quando create un gruppo nell’ambiente di authoring, è necessario prima pubblicare il sito della community, quindi pubblicarlo. La pubblicazione del sito della community consente di pubblicare le pagine del gruppo, senza creare i gruppi membri della sottocomunità ai quali sono impostati gli ACL. Pertanto, un gruppo con restrizioni (segreto) può essere visibile finché il gruppo non viene pubblicato in modo esplicito.
+Quando create un gruppo nell’ambiente di authoring, è necessario prima pubblicare il sito della community, quindi pubblicare il gruppo. La pubblicazione del sito della community consente di pubblicare le pagine del gruppo, senza creare i gruppi membri della sottocomunità ai quali sono impostati gli ACL. Pertanto, un gruppo con restrizioni (segreto) può essere visibile finché il gruppo non viene pubblicato in modo esplicito.
 
 ## Collegamenti e informazioni correlate {#links-and-related-information}
 
