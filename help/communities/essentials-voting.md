@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -49,7 +49,7 @@ L&#39;invio anonimo di un voto non è supportato. I visitatori del sito devono r
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td><p>Vedere <a href="voting.md">Utilizzo delle votazioni</a></p> </td>
+   <td><p>Vedere, <a href="voting.md">Utilizzo delle votazioni</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -69,11 +69,11 @@ L&#39;invio anonimo di un voto non è supportato. I visitatori del sito devono r
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi:
+Consulta:
 
 * [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
 * [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
