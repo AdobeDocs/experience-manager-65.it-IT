@@ -2,7 +2,7 @@
 title: Note sulla versione di Adobe Experience Manager Assets
 description: Nuove funzionalità e miglioramenti di Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: 23f838b681d4d9eda55e287519f330addf7928aa
+source-git-commit: 92619acaa2eb820eda304355f8eaf79ec4a400e1
 
 ---
 
@@ -31,7 +31,7 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock]Il servizio offre a designer e aziende l’accesso a milioni di foto, immagini vettoriali, illustrazioni, video, modelli e risorse 3D di alta qualità, curate ed esenti da royalty, per qualsiasi progetto creativo.
 
-For more info, see [Use DNL Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Visualizzare in anteprima l’immagine e la licenza di Adobe Stock da Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
