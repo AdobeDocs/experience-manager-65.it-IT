@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: a7ce63433f7e46feae8b0d23778e36d10c33972a
+source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
 
 ---
 
@@ -158,7 +158,7 @@ In questa procedura:
 
 
 
-1. Per accedere alla console di amministrazione tramite SSL, digita `https://[host name]:[port]/adminui` in un browser Web:
+1. Per accedere alla console di amministrazione tramite SSL, digita `https://[host name]:'port'/adminui` in un browser Web:
 
    La porta SSL predefinita per JBoss è 8443. Da qui in avanti, specificate questa porta per accedere ai moduli AEM.
 
