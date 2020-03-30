@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -53,7 +53,7 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
    | **Proprietà** | **Descrizione** | **Valore** |
    |---|---|---|
    | Servizio dati bozza di Forms Portal | Identificatore per il servizio dati bozza | formsPortal.sampledataservice |
-   | Servizio metadati bozza del portale Forms | Identificatore per il servizio metadati bozza | formsPortal.samplemetadataservice |
+   | Servizio metadati bozza del portale Forms | Identificatore per il servizio di metadati bozza | formsPortal.samplemetadataservice |
    | Servizio di invio dati Forms Portal | Identificatore per il servizio dati di invio | formsPortal.sampledataservice |
    | Servizio di invio metadati del portale Forms | Identificatore per il servizio di invio metadati | formsPortal.samplemetadataservice |
    | Servizio di firma dati in sospeso di Forms Portal | Identificatore per il servizio dati Firma in sospeso | formsPortal.sampledataservice |
@@ -296,23 +296,23 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-L&#39;implementazione di esempio è ora configurata, che consente di elencare le bozze e gli invii durante la memorizzazione di tutti i dati e metadati in un database. Vediamo ora in che modo i servizi dati e metadati sono configurati nell’esempio.
+L&#39;implementazione di esempio è ora configurata, che consente di elencare le bozze e gli invii durante la memorizzazione di tutti i dati e metadati in un database. Vediamo ora in che modo i servizi di dati e metadati sono configurati nell’esempio.
 
 ## Installare il file mysql-Connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
 Per installare il file mysql-Connector-java-5.1.39-bin.jar, eseguite i seguenti passaggi in tutte le istanze di creazione e pubblicazione:
 
-1. Individuate `https://[server]:[port]/system/console/depfinder` e cercate il pacchetto com.mysql.jdbc.
+1. Individuate `https://'[server]:[port]'/system/console/depfinder` e cercate il pacchetto com.mysql.jdbc.
 1. Nella colonna Esportato da, verificate che il pacchetto sia esportato da un pacchetto qualsiasi.
 
    Continuate se il pacchetto non viene esportato da alcun bundle.
 
-1. Andate a `https://[server]:[port]/system/console/bundles` e fate clic su **[!UICONTROL Installa/Aggiorna]**.
+1. Andate a `https://'[server]:[port]'/system/console/bundles` e fate clic su **[!UICONTROL Installa/Aggiorna]**.
 1. Fate clic su **[!UICONTROL Scegli file]** e individuate il file mysql-Connector-java-5.1.39-bin.jar. Inoltre, selezionate le caselle di controllo **[!UICONTROL Avvia pacchetto]** e **[!UICONTROL Aggiorna pacchetti]** .
 1. Fate clic su **[!UICONTROL Installa o Aggiorna]**. Al termine, riavviare il server.
 1. (Solo ** Windows) Disattivare il firewall di sistema del sistema operativo in uso.
 
-## Codice di esempio per i dati del portale moduli e il servizio di metadati {#sample-code-for-forms-portal-data-and-metadata-service}
+## Codice di esempio per i dati del portale dei moduli e il servizio di metadati {#sample-code-for-forms-portal-data-and-metadata-service}
 
 Il file ZIP seguente contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMetadataServiceImpl` (classi di implementazione) per le interfacce di servizi di dati e metadati. Contiene inoltre tutte le classi necessarie per la compilazione delle suddette classi di implementazione.
 
@@ -336,7 +336,7 @@ Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizz
     util.js
    ```
 
-   Nel codice riportato sopra, `util` è il nome della cartella e `util.js` del file nella `util` cartella. La `util` cartella e `util.js` il file vengono creati nei passaggi successivi.
+   Nel codice riportato sopra, `util` è il nome della cartella e `util.js` il nome del file nella `util` cartella. La `util` cartella e `util.js` il file vengono creati nei passaggi successivi.
 
 1. Fate clic con il pulsante destro del mouse sul `cq:ClientLibraryFolder` nodo creato al punto 2, selezionate Crea > Crea cartella. Create una cartella denominata `util`. Fate clic su **[!UICONTROL Salva tutto]**. Fate clic con il pulsante destro del mouse sulla `util` cartella e scegliete Crea > Crea file. Create un file denominato `util.js`. Fate clic su **[!UICONTROL Salva tutto]**.
 
@@ -399,13 +399,13 @@ Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizz
 
 1. Aggiungete la seguente proprietà alla cartella creata nel passaggio 2 e fate clic su **[!UICONTROL Salva tutto]**.
 
-   * **** Nome: category
+   * **[!UICONTROL Nome:]** category
 
-   * **** Tipo:Stringa
+   * **[!UICONTROL Tipo:]** Stringa
 
-   * **** Valore: fp.validation
+   * **[!UICONTROL Valore:]** fp.validation
 
-   * **** opzione multipla: Abilitato
+   * **[!UICONTROL opzione multipla:]** Abilitato
 
 1. Spostarsi `/libs/fd/af/runtime/clientlibs/guideRuntime`e aggiungere il `fp.validation` valore alla proprietà embed.
 
