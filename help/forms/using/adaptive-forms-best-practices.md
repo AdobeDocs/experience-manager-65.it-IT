@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -182,7 +182,7 @@ I moduli adattivi richiedono azioni di invio per elaborare i dati specificati da
 * È possibile scrivere un&#39;azione di invio personalizzata se le azioni di invio predefinite non soddisfano il caso d&#39;uso. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli](/help/forms/using/custom-submit-action-form.md)adattivi.
 * Includi convalide lato server per impedire l&#39;invio di dati non validi.
 
-È possibile sfruttare l&#39;esperienza di firma multipla di Adobe Sign nei moduli adattivi. Durante la configurazione di Adobe Sign nei moduli adattivi, tenere in considerazione quanto segue. Per informazioni dettagliate, vedere [Uso di Adobe Sign in un modulo](/help/forms/using/working-with-adobe-sign.md)adattivo.
+È possibile utilizzare l&#39;esperienza di firma multipla di Adobe Sign nei moduli adattivi. Durante la configurazione di Adobe Sign nei moduli adattivi, tenere in considerazione quanto segue. Per informazioni dettagliate, vedere [Uso di Adobe Sign in un modulo](/help/forms/using/working-with-adobe-sign.md)adattivo.
 
 * Il modulo adattivo abilitato per Adobe Sign viene inviato solo dopo che tutti i firmatari avranno firmato il modulo. I moduli vengono visualizzati nello stato Firma in sospeso finché il modulo non viene firmato da tutti i firmatari.
 * Al momento dell&#39;invio è possibile configurare l&#39;esperienza di firma all&#39;interno del modulo o reindirizzare i firmatari a una pagina di firma.
@@ -243,7 +243,7 @@ Di seguito sono riportate alcune best practice per la localizzazione di moduli a
 * Eventuali modifiche, come l’aggiunta di un nuovo componente o l’applicazione di uno script in un modulo localizzato, non vengono localizzate automaticamente. Pertanto, è necessario finalizzare un modulo prima di localizzarlo per evitare più cicli di localizzazione.
 * Utilizzare il parametro `afAcceptLang` request per ignorare le impostazioni internazionali del browser ed eseguire il rendering del modulo nelle impostazioni internazionali specificate. Ad esempio, l&#39;URL seguente imporrà il rendering del modulo in lingua giapponese, indipendentemente dalle impostazioni internazionali specificate nel browser:
 
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). Tuttavia, è possibile aggiungere il supporto per le nuove impostazioni internazionali per i moduli adattivi in fase di esecuzione. Per ulteriori informazioni, vedere [Supporto di nuove impostazioni internazionali per la localizzazione](/help/forms/using/supporting-new-language-localization.md)dei moduli adattivi.
 
