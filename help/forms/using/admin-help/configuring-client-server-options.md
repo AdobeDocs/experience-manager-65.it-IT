@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,35 +22,35 @@ source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
 
 ## Impostazioni di configurazione del server {#server-configuration-settings}
 
-**** URL di base: L&#39;URL di protezione del documento di base, contenente il nome del server e la porta. Le informazioni aggiunte alla base creano gli URL di connessione. Ad esempio, /edc/Main.do viene aggiunto per accedere alle pagine Web. Gli utenti rispondono anche agli inviti di registrazione degli utenti esterni tramite questo URL.
+**URL di base:** L&#39;URL di protezione del documento di base, contenente il nome del server e la porta. Le informazioni aggiunte alla base creano gli URL di connessione. Ad esempio, /edc/Main.do viene aggiunto per accedere alle pagine Web. Gli utenti rispondono anche agli inviti di registrazione degli utenti esterni tramite questo URL.
 
 Se si utilizza IPv6, immettere l&#39;URL di base come nome del computer o nome DNS. Se si utilizza un indirizzo IP numerico, Acrobat non riuscirà ad aprire i file protetti tramite criterio. Inoltre, utilizzate l&#39;URL HTTP sicuro (HTTPS) per il vostro server.
 
 ***Nota **: L&#39;URL di base è incorporato nei file protetti tramite criterio. Le applicazioni client utilizzano l&#39;URL di base per la connessione al server. I file protetti continueranno a contenere l&#39;URL di base, anche se successivamente verranno modificati. Se modificate l&#39;URL di base, le informazioni di configurazione dovranno essere aggiornate per tutti i client che si connettono.*
 
-**** Periodo di leasing offline predefinito: Il tempo predefinito entro il quale un utente può utilizzare un documento protetto offline. Questa impostazione determina il valore iniziale dell&#39;impostazione del periodo di tempo consentito per l&#39;utilizzo non in linea automatico quando si crea un criterio. Consultate Creazione e modifica dei criteri. Alla scadenza del periodo consentito, il destinatario deve sincronizzare di nuovo il documento per continuare a utilizzarlo.
+**Periodo di leasing offline predefinito:** Il tempo predefinito entro il quale un utente può utilizzare un documento protetto offline. Questa impostazione determina il valore iniziale dell&#39;impostazione del periodo di tempo consentito per l&#39;utilizzo non in linea automatico quando si crea un criterio. Consultate Creazione e modifica dei criteri. Alla scadenza del periodo consentito, il destinatario deve sincronizzare di nuovo il documento per continuare a utilizzarlo.
 
 Per informazioni sul funzionamento del lease e della sincronizzazione offline, consultate [Primer on configuring offline lease and sync](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html)(Introduzione alla configurazione del leasing e della sincronizzazione offline).
 
-**** Periodo di sincronizzazione offline predefinito: La durata massima di utilizzo offline di un documento da parte di un&#39;applicazione di protezione iniziale.
+**Periodo di sincronizzazione offline predefinito:** La durata massima di utilizzo offline di un documento da parte di un&#39;applicazione di protezione iniziale.
 
-**** Timeout sessione client: Il tempo, in minuti, al termine del quale la protezione dei documenti si disconnette se un utente che ha eseguito l&#39;accesso tramite un&#39;applicazione client non interagisce con la protezione dei documenti.
+**Timeout sessione client:** Il tempo, in minuti, al termine del quale la protezione dei documenti si disconnette se un utente che ha eseguito l&#39;accesso tramite un&#39;applicazione client non interagisce con la protezione dei documenti.
 
-**** Consenti accesso utenti anonimi: Selezionate questa opzione per abilitare la possibilità di creare criteri condivisi e personali che consentano agli utenti anonimi di aprire documenti protetti tramite criterio. Gli utenti che non dispongono di account possono accedere al documento, ma non possono accedere a Document Security o utilizzare altri documenti protetti tramite criterio.
+**Consenti accesso utenti anonimi:** Selezionate questa opzione per abilitare la possibilità di creare criteri condivisi e personali che consentano agli utenti anonimi di aprire documenti protetti tramite criterio. Gli utenti che non dispongono di account possono accedere al documento, ma non possono accedere a Document Security o utilizzare altri documenti protetti tramite criterio.
 
-**** Disattiva accesso ai client della versione 7: Specifica se gli utenti possono utilizzare Acrobat o Reader 7.0 per connettersi al server. Quando questa opzione è selezionata, gli utenti devono utilizzare Acrobat o Reader 8.0 e versioni successive per completare le operazioni di protezione dei documenti sui documenti PDF. Se i criteri richiedono l&#39;esecuzione in modalità certificata di Acrobat o Reader 8.0 e versioni successive all&#39;apertura dei documenti protetti tramite criterio, è consigliabile disattivare l&#39;accesso ad Acrobat o Reader 7. Consultate Specificare le autorizzazioni del documento per utenti e gruppi.
+**Disattiva accesso ai client della versione 7:** Specifica se gli utenti possono utilizzare Acrobat o Reader 7.0 per connettersi al server. Quando questa opzione è selezionata, gli utenti devono utilizzare Acrobat o Reader 8.0 e versioni successive per completare le operazioni di protezione dei documenti sui documenti PDF. Se i criteri richiedono l&#39;esecuzione in modalità certificata di Acrobat o Reader 8.0 e versioni successive all&#39;apertura dei documenti protetti tramite criterio, è consigliabile disattivare l&#39;accesso ad Acrobat o Reader 7. Consultate Specificare le autorizzazioni del documento per utenti e gruppi.
 
 **Consenti accesso offline per documento** Selezionate questa opzione per specificare l&#39;accesso offline per documento. Se questa impostazione è abilitata, l&#39;utente avrà accesso non in linea solo ai documenti che l&#39;utente ha aperto online almeno una volta.
 
-**** Consenti autenticazione password nome utente: Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione tramite nome utente/password durante la connessione al server.
+**Consenti autenticazione password nome utente:** Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione tramite nome utente/password durante la connessione al server.
 
-**** Consenti autenticazione Kerberos: Selezionare questa opzione per abilitare l&#39;autenticazione Kerberos per le applicazioni client durante la connessione al server.
+**Consenti autenticazione Kerberos:** Selezionare questa opzione per abilitare l&#39;autenticazione Kerberos per le applicazioni client durante la connessione al server.
 
-**** Consenti autenticazione certificato client: Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione tramite certificato durante la connessione al server.
+**Consenti autenticazione certificato client:** Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione basata sui certificati durante la connessione al server.
 
 **Consenti autenticazione** estesa Selezionate questa opzione per abilitare l&#39;autenticazione estesa e immettete l&#39;URL di destinazione autenticazione estesa.
 
-Selezionando questa opzione le applicazioni client possono utilizzare l&#39;autenticazione estesa. L&#39;autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server moduli AEM. Ad esempio, ora gli utenti possono utilizzare l&#39;autenticazione basata su SAML invece del nome utente/password dei moduli AEM, da Acrobat e Reader Client. Per impostazione predefinita, l’URL di destinazione contiene *localhost* come nome del server. Sostituite il nome del server con un nome host completo. Il nome host nell&#39;URL di destinazione viene popolato automaticamente dall&#39;URL di base, se l&#39;autenticazione estesa non è ancora abilitata. Consultate [Aggiunta del provider](configuring-client-server-options.md#add-the-extended-authentication-provider)di autenticazione estesa.
+Selezionando questa opzione, le applicazioni client possono utilizzare l&#39;autenticazione estesa. L&#39;autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server moduli AEM. Ad esempio, ora gli utenti possono utilizzare l&#39;autenticazione basata su SAML invece del nome utente/password dei moduli AEM, da Acrobat e Reader Client. Per impostazione predefinita, l’URL di destinazione contiene *localhost* come nome del server. Sostituite il nome del server con un nome host completo. Il nome host nell&#39;URL di destinazione viene popolato automaticamente dall&#39;URL di base, se l&#39;autenticazione estesa non è ancora abilitata. Consultate [Aggiunta del provider](configuring-client-server-options.md#add-the-extended-authentication-provider)di autenticazione estesa.
 
 ***nota **: L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.*
 
@@ -58,12 +58,11 @@ Selezionando questa opzione le applicazioni client possono utilizzare l&#39;aute
 
 **Altezza di controllo HTML preferita per l&#39;autenticazione** estesa Consente di specificare l&#39;altezza della finestra di dialogo di autenticazione estesa che si apre in Acrobat per l&#39;immissione delle credenziali utente.
 
-*****nota *: I limiti di larghezza e altezza per questa finestra di dialogo sono i seguenti:
-Larghezza: Minimo = 400, massimo = 900
+***nota **: I limiti di larghezza e altezza per questa finestra di dialogo sono i seguenti:*Larghezza: Minimo = 400, massimo = 900
 
 Altezza: Minimo = 450; max = 800
 
-**** Abilita cache credenziali client: Selezionate questa opzione per consentire agli utenti di memorizzare nella cache le credenziali (nome utente e password). Quando le credenziali degli utenti vengono memorizzate nella cache, non devono immettere le credenziali ogni volta che aprono un documento o quando fanno clic sul pulsante Aggiorna nella pagina Gestisci criteri di protezione di Adobe Acrobat. È possibile specificare il numero di giorni prima che gli utenti debbano nuovamente fornire le proprie credenziali. Impostando il numero di giorni su 0, le credenziali possono essere memorizzate nella cache a tempo indeterminato.
+**Abilita cache credenziali client:** Selezionate questa opzione per consentire agli utenti di memorizzare nella cache le credenziali (nome utente e password). Quando le credenziali degli utenti vengono memorizzate nella cache, non devono immettere le credenziali ogni volta che aprono un documento o quando fanno clic sul pulsante Aggiorna nella pagina Gestisci criteri di protezione di Adobe Acrobat. È possibile specificare il numero di giorni prima che gli utenti debbano nuovamente fornire le proprie credenziali. Impostando il numero di giorni su 0, le credenziali possono essere memorizzate nella cache a tempo indeterminato.
 
 ## Configurazione di utenti e amministratori per la protezione dei documenti {#configuring-document-security-users-and-administrators}
 
@@ -95,11 +94,11 @@ I moduli AEM forniscono un esempio di configurazione personalizzabile per il pro
 
 >[!NOTE]
 >
-> L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
+>L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
 
 1. Ottenere il file WAR di esempio distribuirlo. Consultate la guida all’installazione appropriata per il server delle applicazioni.
 1. Verificare che il server dei moduli disponga di un nome completo invece degli indirizzi IP come URL di base e che sia un URL HTTPS. Consultate Impostazioni [di configurazione del](configuring-client-server-options.md#server-configuration-settings)server.
-1. Abilita autenticazione estesa dalla pagina Configurazione server. Consultate Impostazioni [di configurazione del](configuring-client-server-options.md#server-configuration-settings)server.
+1. Abilitare l&#39;autenticazione estesa dalla pagina Configurazione server. Consultate Impostazioni [di configurazione del](configuring-client-server-options.md#server-configuration-settings)server.
 1. Aggiungete gli URL di reindirizzamento SSO richiesti nel file di configurazione Gestione utente. Consultate [Aggiungere URL di reindirizzamento SSO per l&#39;autenticazione](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication)estesa.
 
 ### Aggiunta di URL di reindirizzamento SSO per l&#39;autenticazione estesa {#add-sso-redirect-urls-for-extended-authentication}
@@ -108,7 +107,7 @@ Se l&#39;autenticazione estesa è abilitata, gli utenti che aprono un documento 
 
 >[!NOTE]
 >
-> L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
+>L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 1. Fate clic su Esporta e salvate il file di configurazione sul disco.
@@ -121,11 +120,11 @@ Se l&#39;autenticazione estesa è abilitata, gli utenti che aprono un documento 
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
    ```
 
-1. Salvate il file, quindi importate il file aggiornato dalla pagina Configurazione manuale:Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
+1. Salvate il file, quindi importate il file aggiornato dalla pagina Configurazione manuale: Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 
 ## Configurazione della protezione offline {#configuring-offline-security}
 
-la protezione dei documenti consente di utilizzare i documenti protetti tramite criterio offline senza connessione di rete o Internet. Questa funzionalità richiede che il criterio consenta l&#39;accesso offline, come descritto in [Specificare le autorizzazioni del documento per utenti e gruppi](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Prima che un documento con tale criterio possa essere utilizzato offline, il destinatario deve aprire il documento mentre è in linea e abilitare l&#39;accesso offline, facendo clic su Sì quando richiesto. Il destinatario può anche essere invitato ad autenticare la propria identità. Il destinatario può quindi utilizzare i documenti offline per tutta la durata del periodo di tempo consentito per l&#39;utilizzo offline specificata nel criterio.
+la protezione dei documenti consente di utilizzare i documenti protetti tramite criterio offline senza una connessione di rete o Internet. Questa funzionalità richiede che il criterio consenta l&#39;accesso offline, come descritto in [Specificare le autorizzazioni del documento per utenti e gruppi](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Prima che un documento con tale criterio possa essere utilizzato offline, il destinatario deve aprire il documento mentre è in linea e abilitare l&#39;accesso offline, facendo clic su Sì quando richiesto. Il destinatario può anche essere invitato ad autenticare la propria identità. Il destinatario può quindi utilizzare i documenti offline per tutta la durata del periodo di tempo consentito per l&#39;utilizzo offline specificata nel criterio.
 
 Al termine del periodo di tempo consentito per l’utilizzo non in linea, il destinatario deve sincronizzarsi nuovamente con la protezione del documento aprendo un documento in linea oppure utilizzando un comando di menu delle estensioni Acrobat o Acrobat Reader DC per la sincronizzazione. (Vedere la Guida *di* Acrobat o la Guida *delle estensioni di* Acrobat Reader DC appropriata.)
 
@@ -135,7 +134,7 @@ Poiché i documenti che consentono l&#39;accesso offline richiedono la memorizza
 
 I destinatari dei documenti protetti tramite criterio possono portare i documenti offline per il numero di giorni specificato nel criterio. Dopo aver inizialmente sincronizzato il documento con la protezione del documento, il destinatario può utilizzarlo offline fino alla scadenza del periodo consentito per la trasmissione offline. Alla scadenza del periodo consentito, il destinatario deve portare il documento online ed effettuare l&#39;accesso per sincronizzarsi con la protezione del documento per continuare a utilizzare il documento.
 
-È possibile configurare un periodo di tempo consentito per la modalità offline. Il periodo di leasing può essere modificato dall&#39;impostazione predefinita quando qualcuno crea o modifica un criterio.
+È possibile configurare un periodo di tempo consentito per l&#39;utilizzo offline predefinito. Il periodo di leasing può essere modificato dall&#39;impostazione predefinita quando qualcuno crea o modifica un criterio.
 
 1. Nella pagina di protezione del documento, fare clic su Configurazione > Configurazione server.
 1. Nella casella Periodo di leasing offline predefinito, specificare il numero di giorni per il periodo di leasing offline.
@@ -153,9 +152,9 @@ Per aprire offline un documento protetto tramite criterio, il computer dell&#39;
 
 Un modo per ridurre la minaccia per i documenti offline è evitare di consentire l&#39;accesso offline a documenti particolarmente sensibili. Un altro metodo consiste nel passare periodicamente i tasti principali. Quando Document Security sposta il tasto sopra, le chiavi esistenti non possono più accedere ai documenti protetti tramite criterio. Ad esempio, se un autore ottiene una chiave principale da un computer portatile rubato, tale chiave non può essere utilizzata per accedere ai documenti protetti dopo il rollover. Se sospettate che una specifica chiave dell&#39;entità sia stata compromessa, potete passare manualmente il mouse sulla chiave.
 
-Tuttavia, dovete anche essere consapevoli del fatto che un rollover di tasti interessa tutte le chiavi principali, non solo una. Riduce inoltre la scalabilità del sistema perché i client devono memorizzare più chiavi per l&#39;accesso offline. La frequenza di rollover predefinita della chiave è 20 giorni. Si consiglia di non impostare questo valore su un valore inferiore a 14 giorni, perché agli utenti potrebbe essere impedito di visualizzare documenti offline e le prestazioni del sistema potrebbero essere influenzate.
+Tuttavia, dovete anche essere consapevoli del fatto che un rollover di tasti interessa tutte le chiavi principali, non solo una. Riduce inoltre la scalabilità del sistema, perché i client devono memorizzare più chiavi per l&#39;accesso offline. La frequenza di rollover predefinita della chiave è 20 giorni. Si consiglia di non impostare questo valore su un valore inferiore a 14 giorni, perché agli utenti potrebbe essere impedito di visualizzare documenti offline e le prestazioni del sistema potrebbero essere influenzate.
 
-Nell&#39;esempio seguente, Key1 è la prima delle due chiavi principali e Key2 è la più recente. Quando si fa clic sul pulsante Rollover Tasti ora la prima volta, Key1 diventa non valido e viene generata una nuova chiave principale valida (Key3). Gli utenti otterranno Key3 quando si sincronizzano con la protezione dei documenti, in genere aprendo un documento protetto online. Tuttavia, gli utenti non sono obbligati a sincronizzarsi con la protezione dei documenti fino a raggiungere il periodo di tempo consentito massimo per l&#39;utilizzo non in linea specificato in un criterio. Dopo il primo passaggio del tasto, gli utenti che restano offline possono comunque aprire i documenti offline, inclusi quelli protetti da Key3, fino a raggiungere il periodo massimo di tempo consentito per l&#39;utilizzo non in linea. Quando si fa clic nuovamente sul pulsante Rollover Tasti, Key2 diventa non valido e Key4 viene creato. Gli utenti che restano offline durante i due rollover chiave non possono aprire documenti protetti con Key3 o Key4 finché non si sincronizzano con la protezione del documento.
+Nell&#39;esempio seguente, Key1 è la prima delle due chiavi principali e Key2 è la più recente. Quando si fa clic sul pulsante Rollover Tasti ora la prima volta, Key1 diventa non valido e viene generata una nuova chiave principale valida (Key3). Gli utenti otterranno Key3 quando si sincronizzano con la protezione dei documenti, in genere aprendo un documento protetto online. Tuttavia, gli utenti non sono obbligati a sincronizzarsi con la protezione dei documenti fino a raggiungere il periodo di tempo consentito massimo per l&#39;utilizzo non in linea specificato in un criterio. Dopo il primo passaggio del tasto, gli utenti che restano offline possono comunque aprire i documenti offline, inclusi quelli protetti da Key3, fino a raggiungere il periodo massimo di tempo consentito per l&#39;utilizzo non in linea. Quando si fa clic nuovamente sul pulsante Rollover Tasti ora, Key2 diventa non valido e Key4 viene creato. Gli utenti che restano offline durante i due rollover chiave non possono aprire documenti protetti con Key3 o Key4 finché non si sincronizzano con la protezione del documento.
 
 **Modificare la frequenza di rollover chiave**
 
@@ -183,9 +182,9 @@ Per annullare la validità delle chiavi dei computer client, è necessario esegu
 
 ## Configurazione del controllo degli eventi e delle impostazioni di privacy {#configuring-event-auditing-and-privacy-settings}
 
-Document Security consente di controllare e registrare le informazioni relative agli eventi correlati all&#39;interazione con documenti, criteri, amministratori e server protetti tramite criterio. Potete configurare il controllo degli eventi e specificare i tipi di eventi da controllare. Per controllare gli eventi di un particolare documento, è necessario abilitare anche l&#39;opzione di controllo del criterio.
+Document Security consente di controllare e registrare le informazioni relative agli eventi correlati all&#39;interazione con documenti, criteri, amministratori e server protetti tramite criterio. Potete configurare il controllo degli eventi e specificare i tipi di eventi da controllare. Per eseguire il controllo degli eventi per un particolare documento, è necessario abilitare anche l&#39;opzione di controllo del criterio.
 
-Quando il controllo è abilitato, è possibile visualizzare i dettagli degli eventi controllati nella pagina Eventi. gli utenti di Document Security possono inoltre visualizzare gli eventi relativi specificamente ai documenti protetti tramite criterio che utilizzano o creano.
+Quando il controllo è abilitato, è possibile visualizzare i dettagli degli eventi sottoposti a controllo nella pagina Eventi. gli utenti di Document Security possono inoltre visualizzare gli eventi relativi specificamente ai documenti protetti tramite criterio che utilizzano o creano.
 
 È possibile selezionare i seguenti tipi di eventi per il controllo:
 
@@ -196,7 +195,7 @@ Quando il controllo è abilitato, è possibile visualizzare i dettagli degli eve
 
 ### Attivare o disattivare il controllo degli eventi {#enable-or-disable-event-auditing}
 
-Potete abilitare e disabilitare il controllo degli eventi relativi al server, ai documenti protetti tramite criterio, ai criteri, ai set di criteri e agli utenti. Quando abilitate il controllo degli eventi, potete scegliere di controllare tutti gli eventi possibili o selezionare eventi specifici da controllare.
+Potete abilitare e disabilitare il controllo degli eventi relativi al server, ai documenti protetti tramite criterio, ai criteri, ai set di criteri e agli utenti. Quando abilitate il controllo degli eventi, potete scegliere di controllare tutti gli eventi possibili o di selezionare eventi specifici da controllare.
 
 Quando abilitate il controllo del server, potete visualizzare gli eventi sottoposti a controllo nella pagina Eventi.
 
@@ -219,7 +218,7 @@ Quando abilitate il controllo del server, potete visualizzare gli eventi sottopo
 
 Potete attivare e disattivare un messaggio di notifica sulla privacy. Quando abilitate la notifica sulla privacy, viene visualizzato un messaggio quando un destinatario tenta di aprire un documento protetto tramite criterio. L&#39;avviso informa l&#39;utente che l&#39;utilizzo del documento è sottoposto a controllo. Potete inoltre specificare un URL che l&#39;utente può utilizzare per visualizzare la pagina dell&#39;informativa sulla privacy, se disponibile.
 
-1. Nella console di amministrazione, fate clic su Servizi > Document Security > Configurazione > Impostazioni di audit e privacy.
+1. Nella console di amministrazione, fate clic su Servizi > Document Security > Configuration (Configurazione) > Audit and Privacy Settings (Impostazioni controllo e privacy).
 1. Per configurare la notifica sulla privacy, in Abilita informativa sulla privacy selezionare Sì o No.
 
    Se il criterio allegato a un documento consente l&#39;accesso anonimo dell&#39;utente e l&#39;opzione Abilita informativa sulla privacy è impostata su No, all&#39;utente non viene richiesto di accedere e il messaggio di notifica sulla privacy non viene visualizzato.
@@ -277,95 +276,95 @@ Potete abilitare e disabilitare il controllo degli eventi e specificare i tipi d
 
 **Eventi dei documenti**
 
-**** Visualizza documento: Un destinatario visualizza un documento protetto tramite criterio.
+**Visualizza documento:** Un destinatario visualizza un documento protetto tramite criterio.
 
-**** Chiudi documento: Un destinatario chiude un documento protetto tramite criterio.
+**Chiudi documento:** Un destinatario chiude un documento protetto tramite criterio.
 
 **Stampa a bassa risoluzione** Un destinatario stampa un documento protetto tramite criterio con l&#39;opzione a bassa risoluzione specificata.
 
-**** Stampa ad alta risoluzione: Un destinatario stampa un documento protetto tramite criterio con l&#39;opzione ad alta risoluzione specificata.
+**Stampa ad alta risoluzione:** Un destinatario stampa un documento protetto tramite criterio con l&#39;opzione ad alta risoluzione specificata.
 
-**** Aggiungi annotazione al documento: Un destinatario aggiunge un&#39;annotazione a un documento PDF.
+**Aggiungi annotazione al documento:** Un destinatario aggiunge un&#39;annotazione a un documento PDF.
 
-**** Revoca documento: Un utente o un amministratore revoca l&#39;accesso a un documento protetto tramite criterio.
+**Revoca documento:** Un utente o un amministratore revoca l&#39;accesso a un documento protetto tramite criterio.
 
-**** Annulla revoca documento: Un utente o un amministratore ripristina l&#39;accesso a un documento protetto tramite criterio.
+**Annulla revoca documento:** Un utente o un amministratore ripristina l&#39;accesso a un documento protetto tramite criterio.
 
-**** Compilazione modulo: Un destinatario immette informazioni in un documento PDF che è un modulo compilabile.
+**Compilazione modulo:** Un destinatario immette informazioni in un documento PDF che è un modulo compilabile.
 
-**** Criterio rimosso: Un editore rimuove un criterio da un documento per ritirare le protezioni di protezione.
+**Criterio rimosso:** Un editore rimuove un criterio da un documento per ritirare le protezioni di protezione.
 
-**** Modifica URL revoca documento: Una chiamata dal livello API modifica l&#39;URL di revoca specificato per accedere a un nuovo documento che sostituisce un documento revocato.
+**Modifica URL revoca documento:** Una chiamata dal livello API modifica l&#39;URL di revoca specificato per accedere a un nuovo documento che sostituisce un documento revocato.
 
-**** Modifica documento: Un destinatario modifica il contenuto di un documento protetto tramite criterio.
+**Modifica documento:** Un destinatario modifica il contenuto di un documento protetto tramite criterio.
 
-**** Firma documento: Un destinatario firma un documento.
+**Firma documento:** Un destinatario firma un documento.
 
-**** Proteggere un nuovo documento: Un utente applica un criterio per proteggere un documento.
+**Proteggere un nuovo documento:** Un utente applica un criterio per proteggere un documento.
 
-**** Cambia criterio sul documento: Un utente o un amministratore modifica il criterio associato a un documento.
+**Cambia criterio sul documento:** Un utente o un amministratore modifica il criterio associato a un documento.
 
-**** Pubblica documento come: Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti non hanno una relazione padre-figlio. Questo evento può essere attivato mediante l’SDK dei moduli AEM.
+**Pubblica documento come:** Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti non hanno una relazione padre-figlio. Questo evento può essere attivato mediante l’SDK dei moduli AEM.
 
-**** Inserisci documento: Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti hanno una relazione padre-figlio. Questo evento può essere attivato mediante l’SDK dei moduli AEM.
+**Inserisci documento:** Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti hanno una relazione padre-figlio. Questo evento può essere attivato mediante l’SDK dei moduli AEM.
 
 **Eventi dei criteri**
 
-**** Criterio creato: Un utente o un amministratore crea un criterio.
+**Criterio creato:** Un utente o un amministratore crea un criterio.
 
-**** Criterio attivato: Un amministratore rende disponibile un criterio.
+**Criterio attivato:** Un amministratore rende disponibile un criterio.
 
-**** Criterio modificato: Un utente o un amministratore modifica un criterio.
+**Criterio modificato:** Un utente o un amministratore modifica un criterio.
 
-**** Criterio disabilitato: Un amministratore rende un criterio non disponibile.
+**Criterio disabilitato:** Un amministratore rende un criterio non disponibile.
 
-**** Criterio eliminato: Un utente o un amministratore elimina un criterio.
+**Criterio eliminato:** Un utente o un amministratore elimina un criterio.
 
-**** Cambia proprietario criterio: Una chiamata dal livello API modifica il proprietario del criterio.
+**Cambia proprietario criterio:** Una chiamata dal livello API modifica il proprietario del criterio.
 
 **Eventi utente**
 
-**** Utente eliminato: Un amministratore elimina un account utente.
+**Utente eliminato:** Un amministratore elimina un account utente.
 
-**** Registra utente invitato: Un utente esterno si registra con Document Security.
+**Registra utente invitato:** Un utente esterno si registra con Document Security.
 
-**** Login riuscito: Tentativi di accesso riusciti da parte di amministratori o utenti.
+**Login riuscito:** Tentativi di accesso riusciti da parte di amministratori o utenti.
 
-**** Utenti invitati: Document Security invita un utente a registrarsi.
+**Utenti invitati:** Document Security invita un utente a registrarsi.
 
-**** Utenti attivati: Gli utenti esterni attivano i propri account utilizzando l&#39;URL contenuto nel messaggio e-mail di attivazione, oppure un amministratore attiva un account.
+**Utenti attivati:** Gli utenti esterni attivano i propri account utilizzando l&#39;URL contenuto nel messaggio e-mail di attivazione, oppure un amministratore attiva un account.
 
-**** Cambia password: Gli utenti invitati a cambiare la propria password o un amministratore reimposta una password per un utente locale.
+**Cambia password:** Gli utenti invitati a cambiare la propria password o un amministratore reimposta una password per un utente locale.
 
-**** Login non riuscito: Tentativi di login non riusciti da parte di amministratori o utenti.
+**Login non riuscito:** Tentativi di login non riusciti da parte di amministratori o utenti.
 
-**** Utenti disattivati: Un amministratore disabilita un account utente locale.
+**Utenti disattivati:** Un amministratore disabilita un account utente locale.
 
-**** Aggiornamento profilo: Gli utenti invitati cambiano nome, nome organizzazione e password.
+**Aggiornamento profilo:** Gli utenti invitati cambiano nome, nome organizzazione e password.
 
-**** Account bloccato: Un amministratore blocca un account.
+**Account bloccato:** Un amministratore blocca un account.
 
 **Eventi set di criteri**
 
-**** Set di criteri creati: Un amministratore o un coordinatore di set di criteri crea un set di criteri.
+**Set di criteri creati:** Un amministratore o un coordinatore di set di criteri crea un set di criteri.
 
-**** Set di criteri eliminato: Un amministratore o un coordinatore di set di criteri elimina un set di criteri.
+**Set di criteri eliminato:** Un amministratore o un coordinatore di set di criteri elimina un set di criteri.
 
-**** Set di criteri modificato: Un amministratore o un coordinatore di set di criteri modifica un set di criteri.
+**Set di criteri modificato:** Un amministratore o un coordinatore di set di criteri modifica un set di criteri.
 
 **Eventi di sistema**
 
-**** Sincronizzazione directory completata: Queste informazioni non sono disponibili nella pagina Eventi. Nella pagina Gestione dominio vengono visualizzate le informazioni sulla sincronizzazione della directory corrente, incluso lo stato e l’ora dell’ultima sincronizzazione. Per accedere alla pagina Gestione dominio nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
+**Sincronizzazione directory completata:** Queste informazioni non sono disponibili nella pagina Eventi. Le informazioni sulla sincronizzazione della directory corrente, incluso lo stato e l&#39;ora della sincronizzazione correnti dell&#39;ultima sincronizzazione, vengono visualizzate nella pagina Gestione dominio. Per accedere alla pagina Gestione dominio nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 
-**** Accesso offline client abilitato: Un utente ha attivato l&#39;accesso offline ai documenti protetti rispetto al server sul computer dell&#39;utente.
+**Accesso offline client abilitato:** Un utente ha attivato l&#39;accesso offline ai documenti protetti rispetto al server nel computer dell&#39;utente.
 
 **L&#39;applicazione client** client sincronizzata deve sincronizzare le informazioni con il server per consentire l&#39;accesso offline.
 
-**** Versione non corrispondente: Versione dell’SDK dei moduli AEM incompatibile con il server che ha tentato di connettersi al server.
+**Versione non corrispondente:** Versione dell’SDK dei moduli AEM incompatibile con il server che ha tentato di connettersi al server.
 
-**** Informazioni sulla sincronizzazione della directory: Queste informazioni non sono disponibili nella pagina Eventi. Nella pagina Gestione dominio vengono visualizzate le informazioni sulla sincronizzazione della directory corrente, incluso lo stato e l’ora dell’ultima sincronizzazione. Per accedere alla pagina Gestione dominio nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
+**Informazioni sulla sincronizzazione della directory:** Queste informazioni non sono disponibili nella pagina Eventi. Le informazioni sulla sincronizzazione della directory corrente, incluso lo stato e l&#39;ora della sincronizzazione correnti dell&#39;ultima sincronizzazione, vengono visualizzate nella pagina Gestione dominio. Per accedere alla pagina Gestione dominio nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 
-**** Modifica configurazione server: Modifiche alla configurazione del server che vengono effettuate tramite le pagine Web o manualmente importando un file config.xml. Ciò include modifiche all&#39;URL di base, timeout sessione, blocchi login, impostazioni directory, rollover chiave, impostazioni server SMTP per la registrazione esterna, configurazione delle filigrane, opzioni di visualizzazione e così via.
+**Modifica configurazione server:** Modifiche alla configurazione del server che vengono effettuate tramite le pagine Web o manualmente importando un file config.xml. Ciò include modifiche all&#39;URL di base, timeout sessione, blocchi login, impostazioni directory, rollover chiave, impostazioni server SMTP per la registrazione esterna, configurazione delle filigrane, opzioni di visualizzazione e così via.
 
 ## Configurazione del tracciamento dell’utilizzo esteso {#configuring-extended-usage-tracking}
 
@@ -381,7 +380,7 @@ Prima di iniziare, accertatevi che l&#39;audit del server sia attivato. Per ulte
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Configuration (Protezione documento) > Audit and Privacy Settings (Impostazioni controllo e privacy).
 1. Per configurare il tracciamento dell’uso esteso, in Abilita tracciamento, selezionare Sì o No.
-1. Per impostare la selezione della casella di controllo Consenti raccolta di dati di utilizzo dettagliati nella pagina di accesso, in Attiva tracciamento predefinito selezionare Sì o No.
+1. Per impostare la selezione della casella di controllo Consenti raccolta di dati di utilizzo dettagliati nella pagina di accesso, in Attiva tracciamento predefinito, selezionare Sì o No.
 
 Per visualizzare gli eventi tracciati è possibile utilizzare il filtro Eventi documenti nella pagina Eventi. Gli eventi tracciati tramite JavaScript sono etichettati come Tracciamento dettagliato dell&#39;utilizzo. Per ulteriori informazioni sugli eventi, vedere Eventi [di](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) monitoraggio.
 
@@ -392,31 +391,31 @@ Per visualizzare gli eventi tracciati è possibile utilizzare il filtro Eventi d
 
 ### Display settings {#display-settings}
 
-**** Righe da visualizzare per i risultati della ricerca: Numero di righe che vengono visualizzate su una pagina quando vengono eseguite le ricerche.
+**Righe da visualizzare per i risultati della ricerca:** Numero di righe che vengono visualizzate su una pagina quando vengono eseguite le ricerche.
 
 **Finestra di dialogo Personalizzazione per accesso client**
 
 Queste impostazioni controllano il testo visualizzato nel prompt di accesso che viene visualizzato quando un utente accede alla protezione del documento tramite un&#39;applicazione client.
 
-**** Testo di benvenuto: Testo del messaggio di benvenuto, ad esempio &quot;Accedi con il tuo nome utente e la password&quot;. Il testo del messaggio di benvenuto deve contenere informazioni su come accedere a Document Security e su come contattare un amministratore o un&#39;altra persona di supporto designata nell&#39;organizzazione per ottenere assistenza. Ad esempio, gli utenti esterni potrebbero dover contattare un amministratore se dimenticano la password o necessitano di assistenza per il processo di registrazione o di accesso. La lunghezza massima del testo di benvenuto è di 512 caratteri.
+**Testo di benvenuto:** Testo del messaggio di benvenuto, ad esempio &quot;Accedi con il tuo nome utente e la password&quot;. Il testo del messaggio di benvenuto deve contenere informazioni su come accedere a Document Security e su come contattare un amministratore o un&#39;altra persona di supporto designata nell&#39;organizzazione per ottenere assistenza. Ad esempio, gli utenti esterni potrebbero dover contattare un amministratore se dimenticano la password o necessitano di assistenza per il processo di registrazione o di accesso. La lunghezza massima del testo di benvenuto è di 512 caratteri.
 
-**** Testo nome utente: Etichetta di testo per la casella del nome utente.
+**Testo nome utente:** Etichetta di testo per la casella del nome utente.
 
-**** Testo password: Etichetta di testo per la casella della password.
+**Testo password:** Etichetta di testo per la casella della password.
 
 **Personalizzazione per la finestra di dialogo di autenticazione client basata sui certificati**
 
 Queste impostazioni controllano il testo visualizzato nella finestra di dialogo di autenticazione del certificato.
 
-**** Scegli tipo di autenticazione: Testo visualizzato per indirizzare l&#39;utente alla selezione di un tipo di autenticazione.
+**Scegli tipo di autenticazione:** Testo visualizzato per indirizzare l&#39;utente alla selezione di un tipo di autenticazione.
 
-**** Scegli testo certificato: Testo visualizzato per indirizzare l&#39;utente alla selezione di un tipo di certificato.
+**Scegli testo certificato:** Testo visualizzato per indirizzare l&#39;utente alla selezione di un tipo di certificato.
 
-**** Testo errore certificati non disponibili: Messaggio con un massimo di 512 caratteri da visualizzare quando il certificato selezionato non è disponibile.
+**Testo errore certificati non disponibili:** Messaggio con un massimo di 512 caratteri da visualizzare quando il certificato selezionato non è disponibile.
 
 **Personalizzazione per visualizzazione certificato client**
 
-**** Visualizza solo emittenti di credenziali attendibili: Quando questa opzione è selezionata, l&#39;applicazione client presenta all&#39;utente solo i certificati provenienti da emittenti di credenziali per i quali i moduli AEM sono configurati per essere affidabili (consultate Gestione di certificati e credenziali.) Se questa opzione non è selezionata, l&#39;utente riceve un elenco di tutti i certificati presenti nel sistema dell&#39;utente.
+**Visualizza solo emittenti di credenziali attendibili:** Quando questa opzione è selezionata, l&#39;applicazione client presenta all&#39;utente solo i certificati provenienti da emittenti di credenziali per i quali i moduli AEM sono configurati per essere affidabili (consultate Gestione di certificati e credenziali.) Se questa opzione non è selezionata, l&#39;utente riceve un elenco di tutti i certificati presenti nel sistema dell&#39;utente.
 
 ## Configurare le filigrane dinamiche {#configure-dynamic-watermarks}
 
@@ -436,9 +435,9 @@ Le filigrane dinamiche sono diverse dalle filigrane che gli utenti possono aggiu
 
 Se scegliete una filigrana basata su testo, potete specificare diversi elementi all’interno della filigrana con più voci di testo e specificare il posizionamento di ciascun elemento. Assegnate nomi significativi a questi elementi, ad esempio intestazione, piè di pagina e così via.
 
-Ad esempio, se si desidera specificare come filigrana testo diverso nell&#39;intestazione, nel piè di pagina, nei margini e all&#39;interno del documento, è possibile creare diversi elementi di filigrana e specificarne le posizioni. Se si desidera che l&#39;ID utente dell&#39;utente e la data corrente di accesso al documento vengano visualizzati nell&#39;intestazione, il nome del criterio sul margine destro e un testo personalizzato &quot;CONFIDENTIAL&quot; venga visualizzato diagonalmente nel documento, è necessario definire elementi di filigrana separati con testo come tipo e specificarne la formattazione e il posizionamento. Quando la filigrana viene applicata a un documento, tutti gli elementi della filigrana vengono applicati contemporaneamente al documento, nell&#39;ordine in cui vengono aggiunti alla filigrana.
+Ad esempio, se si desidera specificare come filigrana un testo diverso nell&#39;intestazione, nel piè di pagina, nei margini e all&#39;interno del documento, è possibile creare diversi elementi di filigrana e specificarne le posizioni. Se si desidera che l&#39;ID utente dell&#39;utente e la data corrente di accesso al documento vengano visualizzati nell&#39;intestazione, il nome del criterio sul margine destro e un testo personalizzato &quot;CONFIDENTIAL&quot; venga visualizzato diagonalmente nel documento, è necessario definire elementi di filigrana separati con testo come tipo e specificarne la formattazione e il posizionamento. Quando la filigrana viene applicata a un documento, tutti gli elementi della filigrana vengono applicati contemporaneamente al documento, nell&#39;ordine in cui vengono aggiunti alla filigrana.
 
-In genere, le filigrane basate su PDF vengono utilizzate per includere contenuti grafici quali logo o simboli speciali quali copyright o marchi registrati.
+In genere, le filigrane basate su PDF vengono utilizzate per includere contenuti grafici quali logo o simboli speciali quali il copyright o il marchio registrato.
 
 È possibile modificare i limiti relativi al numero di elementi della filigrana e alla dimensione del file PDF modificando il file di configurazione della protezione del documento. Consultate [Modificare i parametri](configuring-client-server-options.md#change-the-watermark-configuration-parameters)di configurazione delle filigrane.
 
@@ -451,7 +450,7 @@ Quando configurate le filigrane, tenete presente quanto segue:
 * Quando specificate il nome del font, immettete correttamente il nome. I moduli AEM sostituiscono il font specificato se non è presente nel computer client in cui viene aperto il documento.
 * Se il testo è stato selezionato come contenuto della filigrana, specificando l&#39;opzione di ridimensionamento Adatta alla pagina non sarà possibile utilizzare pagine con larghezza diversa.
 * Quando specificate il posizionamento degli elementi della filigrana, accertatevi che non vi sia più di un elemento con lo stesso posizionamento. Se due elementi di filigrana hanno lo stesso posizionamento, ad esempio il centro, appaiono sovrapposti sul documento e nell&#39;ordine in cui sono stati aggiunti alla filigrana.
-* Quando specificate la dimensione e il tipo di font, accertatevi che la lunghezza del testo sia completamente visibile nella pagina. Il contenuto del testo viene disposto su nuove righe, pertanto il contenuto della filigrana che si intende presentare ai margini potrebbe sovrapporsi alle aree contenuto delle pagine. Tuttavia, se il documento viene aperto in Acrobat 9, il testo oltre la singola riga viene troncato.
+* Quando specificate la dimensione e il tipo di font, accertatevi che la lunghezza del testo sia completamente visibile all’interno della pagina. Il contenuto del testo viene disposto su nuove righe, pertanto il contenuto della filigrana che si intende presentare ai margini potrebbe sovrapporsi alle aree contenuto delle pagine. Tuttavia, se il documento viene aperto in Acrobat 9, il testo oltre la singola riga viene troncato.
 
 ### Limitazioni delle filigrane dinamiche {#limitations-of-dynamic-watermarks}
 
@@ -473,7 +472,7 @@ Potete creare modelli di filigrane dinamiche. Tali modelli restano disponibili c
 
 >[!NOTE]
 >
->Le informazioni di configurazione delle filigrane dinamiche non vengono acquisite con le altre informazioni di configurazione quando esportate un file di configurazione.
+>Le informazioni di configurazione delle filigrane dinamiche non vengono acquisite con le altre informazioni di configurazione al momento dell&#39;esportazione di un file di configurazione.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Configuration > Watermarks.
 1. Fai clic su Nuovo.
@@ -500,7 +499,7 @@ Potete creare modelli di filigrane dinamiche. Tali modelli restano disponibili c
 
 1. Per controllare la posizione della filigrana sul documento, configurare le opzioni Allineamento verticale e Allineamento orizzontale.
 1. Selezionare Adatta alla pagina oppure selezionare % e digitare una percentuale nella casella. Il valore deve essere un numero intero, non una frazione. Per configurare la dimensione della filigrana, è possibile utilizzare un valore pari alla percentuale della pagina oppure impostare la filigrana in modo che rientri nella dimensione della pagina.
-1. Nella casella Rotazione, digitare i gradi di rotazione della filigrana. L&#39;intervallo è compreso tra -180 e 180. Usate un valore negativo per ruotare la filigrana in senso antiorario. Il valore deve essere un numero intero, non una frazione.
+1. Nella casella Rotazione, digitare i gradi in base ai quali ruotare la filigrana. L&#39;intervallo è compreso tra -180 e 180. Usate un valore negativo per ruotare la filigrana in senso antiorario. Il valore deve essere un numero intero, non una frazione.
 1. Nella casella Opacità, digitare una percentuale. Utilizzate un numero intero, non una frazione.
 1. In Opzioni avanzate, impostate quanto segue:
 
@@ -547,9 +546,9 @@ Document Security genera automaticamente un messaggio e-mail di invito alla regi
 * Un utente esistente aggiunge un utente invitato a un criterio
 * Un amministratore aggiunge un account utente invitato nella pagina Registrazione utente invitata
 
-Il messaggio e-mail di registrazione contiene un collegamento a una pagina di registrazione e informazioni su come registrarsi. Dopo che l&#39;utente invitato si è registrato, la protezione del documento genera un messaggio e-mail di attivazione con un collegamento a una pagina di attivazione. Quando attivato, l&#39;account rimane valido fino a quando non viene disattivato o eliminato.
+Il messaggio e-mail di registrazione contiene un collegamento a una pagina di registrazione e informazioni su come registrarsi. Dopo che l&#39;utente invitato si è registrato, la protezione del documento genera un messaggio e-mail di attivazione con un collegamento a una pagina di attivazione. Quando è attivato, l&#39;account rimane valido fino a quando non viene disattivato o eliminato.
 
-Se abilitate la registrazione integrata, specificate il server SMTP, i dettagli e-mail di registrazione, le funzionalità di accesso e reimpostate le informazioni relative alla password solo una volta. Prima di abilitare la registrazione integrata, accertatevi di aver creato un dominio locale in Gestione utenti che abbia assegnato il ruolo &quot;Utente invito protezione documento&quot; agli utenti e ai gruppi appropriati dell&#39;organizzazione. Consultate [Aggiungere un dominio](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) locale e [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles). Se non utilizzate la registrazione integrata, è necessario che sia creato un sistema di registrazione utente personalizzato tramite l&#39;SDK dei moduli AEM. Consulta la guida sullo sviluppo di SPI per moduli AEM nella [programmazione con i moduli](https://www.adobe.com/go/learn-aemforms-programming-63)AEM. Se non utilizzate l&#39;opzione Registrazione incorporata, si consiglia di configurare un messaggio nel messaggio e-mail di attivazione e nella schermata di accesso del client per informare gli utenti su come contattare l&#39;amministratore per ottenere una nuova password o per altre informazioni.
+Se abilitate la registrazione integrata, specificate il vostro server SMTP, i dettagli e-mail di registrazione, le capacità di accesso e reimpostate le informazioni relative alla password solo una volta. Prima di abilitare la registrazione integrata, accertatevi di aver creato un dominio locale in Gestione utenti che abbia assegnato il ruolo &quot;Utente invito protezione documento&quot; agli utenti e ai gruppi appropriati dell&#39;organizzazione. Consultate [Aggiungere un dominio](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) locale e [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles). Se non utilizzate la registrazione integrata, è necessario che sia creato un sistema di registrazione utente personalizzato tramite l&#39;SDK dei moduli AEM. Consulta la guida sullo sviluppo di SPI per moduli AEM nella [programmazione con i moduli](https://www.adobe.com/go/learn-aemforms-programming-63)AEM. Se non utilizzate l&#39;opzione Registrazione incorporata, si consiglia di configurare un messaggio nel messaggio e-mail di attivazione e nella schermata di accesso del client per informare gli utenti su come contattare l&#39;amministratore per ottenere una nuova password o per altre informazioni.
 
 **Abilitare e configurare la registrazione degli utenti invitati**
 
@@ -563,7 +562,7 @@ Per impostazione predefinita, il processo di registrazione degli utenti invitati
    * [Parametri del server e dell&#39;account di registrazione](configuring-client-server-options.md#server-and-registration-account-parameters)
    * [Impostazioni e-mail invito alla registrazione](configuring-client-server-options.md#registration-invitation-email-settings)
    * [Impostazioni e-mail attivazione](configuring-client-server-options.md#activation-email-settings)
-   * [Configurare un messaggio e-mail di ripristino password](configuring-client-server-options.md#configure-a-password-reset-email)
+   * [Configurare un messaggio e-mail per la reimpostazione della password](configuring-client-server-options.md#configure-a-password-reset-email)
 
 1. (Facoltativo) In Registrazione incorporata, selezionate Sì per abilitare questa opzione. Se non abilitate la registrazione integrata, dovete configurare il vostro sistema di registrazione utente.
 1. Fate clic su OK.
@@ -574,31 +573,31 @@ Per impostazione predefinita, il processo di registrazione degli utenti invitati
 
 Le seguenti impostazioni si trovano nell’area Filtro limitazioni e-mail della pagina Registrazione utente invitato.
 
-**** Esclusione: Digitate l’indirizzo e-mail di un utente o gruppo da escludere. Per escludere più utenti o gruppi, digitate ogni indirizzo e-mail su una nuova riga. Per escludere tutti gli utenti che appartengono a un dominio particolare, immettete un carattere jolly e il nome del dominio. Ad esempio, per escludere tutti gli utenti nel dominio example.com, immetti &amp;ast;.example.com.
+**Esclusione:** Digitate l’indirizzo e-mail di un utente o gruppo da escludere. Per escludere più utenti o gruppi, digitate ogni indirizzo e-mail su una nuova riga. Per escludere tutti gli utenti che appartengono a un dominio particolare, immettete un carattere jolly e il nome del dominio. Ad esempio, per escludere tutti gli utenti nel dominio example.com, immetti &amp;ast;.example.com.
 
-**** Inclusione: Digitate l’indirizzo e-mail di un utente o gruppo da includere. Per includere più utenti o gruppi, digitate ogni indirizzo e-mail su una nuova riga. Per includere tutti gli utenti che appartengono a un dominio particolare, immettete un carattere jolly e il nome del dominio. Ad esempio, per includere tutti gli utenti nel dominio example.com, immetti &amp;ast;.example.com.
+**Inclusione:** Digitate l’indirizzo e-mail di un utente o gruppo da includere. Per includere più utenti o gruppi, digitate ogni indirizzo e-mail su una nuova riga. Per includere tutti gli utenti che appartengono a un dominio particolare, immettete un carattere jolly e il nome del dominio. Ad esempio, per includere tutti gli utenti nel dominio example.com, immetti &amp;ast;.example.com.
 
 ### Parametri del server e dell&#39;account di registrazione {#server-and-registration-account-parameters}
 
 Le seguenti impostazioni si trovano nell’area Impostazioni generali della pagina Registrazione degli utenti invitati.
 
-**** Host SMTP: Il nome host del server SMTP. Il server SMTP gestisce le notifiche e-mail in uscita per registrare e attivare gli account utente invitati.
+**Host SMTP:** Il nome host del server SMTP. Il server SMTP gestisce le notifiche e-mail in uscita per registrare e attivare gli account utente invitati.
 
 Se richiesto dall&#39;host SMTP, digitare le informazioni richieste nelle caselle Nome account server SMTP e Password account server SMTP per connettersi al server SMTP. Alcune organizzazioni non applicano questo requisito. Per ulteriori informazioni, rivolgetevi all’amministratore di sistema.
 
-**** Nome classe socket server SMTP: Nome della classe Socket per il server SMTP. Ad esempio, javax.net.ssl.SSLSocketFactory.
+**Nome classe socket server SMTP:** Nome della classe Socket per il server SMTP. Ad esempio, javax.net.ssl.SSLSocketFactory.
 
-**** Tipo di contenuto e-mail: Tipo MIME accettato come text/plain o text/html.
+**Tipo di contenuto e-mail:** Tipo MIME accettato come text/plain o text/html.
 
-**** Codifica e-mail: Formato di codifica da utilizzare per l&#39;invio di messaggi e-mail. È possibile specificare qualsiasi codifica, ad esempio UTF-8 per Unicode o ISO-8859-1 per Latin. Il valore predefinito è UTF-8.
+**Codifica e-mail:** Formato di codifica da utilizzare per l&#39;invio di messaggi e-mail. È possibile specificare qualsiasi codifica, ad esempio UTF-8 per Unicode o ISO-8859-1 per Latin. Il valore predefinito è UTF-8.
 
-**** Indirizzo e-mail di reindirizzamento: Quando specificate un indirizzo e-mail per questa impostazione, tutti i nuovi inviti vengono inviati all&#39;indirizzo fornito. Questa impostazione può essere utile a scopo di test.
+**Indirizzo e-mail di reindirizzamento:** Quando specificate un indirizzo e-mail per questa impostazione, tutti i nuovi inviti vengono inviati all&#39;indirizzo fornito. Questa impostazione può essere utile a scopo di test.
 
-**** Usa domini locali: Selezionare il dominio appropriato. In una nuova installazione, accertati di aver creato il dominio utilizzando Gestione utente. Se si tratta di un aggiornamento, durante l&#39;aggiornamento è stato creato un dominio utente esterno che può essere utilizzato.
+**Usa domini locali:** Selezionare il dominio appropriato. In una nuova installazione, accertati di aver creato il dominio utilizzando Gestione utente. Se si tratta di un aggiornamento, durante l&#39;aggiornamento è stato creato un dominio utente esterno che può essere utilizzato.
 
-**** Usa SSL per il server SMTP: Selezionare questa opzione per abilitare SSL per il server SMTP.
+**Usa SSL per il server SMTP:** Selezionare questa opzione per abilitare SSL per il server SMTP.
 
-**** Visualizza il collegamento di accesso sulla pagina di registrazione: Visualizza un collegamento di login nella pagina di registrazione visualizzata per gli utenti invitati.
+**Visualizza il collegamento di accesso sulla pagina di registrazione:** Visualizza un collegamento di login nella pagina di registrazione visualizzata per gli utenti invitati.
 
 **Per abilitare Transport Layer Security (TLS) per il server SMTP**
 
@@ -613,14 +612,14 @@ Se richiesto dall&#39;host SMTP, digitare le informazioni richieste nelle casell
    >
    >Se utilizzate Microsoft Office 365 come server SMTP per inviare gli inviti per la registrazione degli utenti, utilizzate le seguenti impostazioni:
    >
-   >**** Host SMTP: smtp.office365.com
-   >**** Porta: 587
+   >**Host SMTP:** smtp.office365.com
+   >**Porta:** 587
 
 1. Quindi, è necessario aggiornare config.xml. Consultate [Configurazione per abilitare SMTP per Transport Layer Security (TLS)](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)
 
 >[!NOTE]
 >
->Se apportate delle modifiche alle opzioni Registrazione utente invitata, il file config.xml viene sovrascritto e TLS viene disattivato. Se sovrascrivete le modifiche, dovete eseguire il passaggio precedente per riattivare il supporto TLS per la registrazione degli utenti invitati.
+>Se apportate delle modifiche alle opzioni di registrazione degli utenti invitati, il file config.xml viene sovrascritto e TLS viene disattivato. Se sovrascrivete le modifiche, dovete eseguire il passaggio precedente per riattivare il supporto TLS per la registrazione degli utenti invitati.
 
 ### Impostazioni e-mail invito alla registrazione {#registration-invitation-email-settings}
 
@@ -630,13 +629,13 @@ Quando il destinatario attiva l&#39;account, l&#39;utente diventa un utente loca
 
 Le seguenti impostazioni si trovano nell’area Configurazione e-mail di invito della pagina Registrazione utente invitata.
 
-**** Da: L’indirizzo e-mail dal quale viene inviato l’invito. Il formato predefinito dell&#39;indirizzo e-mail Da è postmaster@[your_install_domain].com.
+**Da:** L’indirizzo e-mail dal quale viene inviato l’invito. Il formato predefinito dell&#39;indirizzo e-mail Da è postmaster@[your_install_domain].com.
 
-**** Oggetto: Oggetto predefinito per il messaggio e-mail di invito.
+**Oggetto:** Oggetto predefinito per il messaggio e-mail di invito.
 
-**** Timeout: Il numero di giorni successivi alla scadenza dell’invito di registrazione se l’utente esterno non si registra. Il valore predefinito è 30 giorni.
+**Timeout:** Il numero di giorni successivi alla scadenza dell’invito di registrazione se l’utente esterno non si registra. Il valore predefinito è 30 giorni.
 
-**** Messaggio: Testo visualizzato nel corpo del messaggio che invita l’utente a registrarsi.
+**Messaggio:** Testo visualizzato nel corpo del messaggio che invita l’utente a registrarsi.
 
 ### Impostazioni e-mail attivazione {#activation-email-settings}
 
@@ -650,33 +649,33 @@ Le seguenti impostazioni si trovano nell’area Configurazione e-mail attivazion
 >
 >È inoltre consigliabile configurare un messaggio nella schermata di accesso per informare gli utenti esterni su come contattare l’amministratore per ottenere una nuova password o per altre informazioni.
 
-**** Da: L’indirizzo e-mail dal quale viene inviato il messaggio e-mail di attivazione. Questo indirizzo e-mail riceve le notifiche di consegna non riuscite dall’ospitante dell’e-mail dell’utente registrato e tutti i messaggi inviati dal destinatario in risposta all’e-mail di registrazione. Il formato predefinito dell&#39;indirizzo e-mail Da è postmaster@[your_install_domain].com.
+**Da:** L’indirizzo e-mail dal quale viene inviato il messaggio e-mail di attivazione. Questo indirizzo e-mail riceve le notifiche di consegna non riuscite dall’ospitante dell’e-mail dell’utente registrato e tutti i messaggi inviati dal destinatario in risposta all’e-mail di registrazione. Il formato predefinito dell&#39;indirizzo e-mail Da è postmaster@[your_install_domain].com.
 
-**** Oggetto: Oggetto predefinito per il messaggio e-mail di attivazione.
+**Oggetto:** Oggetto predefinito per il messaggio e-mail di attivazione.
 
-**** Timeout: Il numero di giorni successivi alla scadenza dell&#39;invito di attivazione se l&#39;utente non attiva l&#39;account. Il valore predefinito è 30 giorni.
+**Timeout:** Il numero di giorni successivi alla scadenza dell&#39;invito di attivazione se l&#39;utente non attiva l&#39;account. Il valore predefinito è 30 giorni.
 
-**** Messaggio: Testo che appare nel corpo del messaggio un messaggio che indica che l&#39;account utente del destinatario deve essere attivato. È inoltre possibile includere informazioni come contattare un amministratore per ottenere una nuova password.
+**Messaggio:** Testo che appare nel corpo del messaggio un messaggio che indica che l&#39;account utente del destinatario deve essere attivato. È inoltre possibile includere informazioni come contattare un amministratore per ottenere una nuova password.
 
-### Configurare un messaggio e-mail di ripristino password {#configure-a-password-reset-email}
+### Configurare un messaggio e-mail per la reimpostazione della password {#configure-a-password-reset-email}
 
 Se dovete ripristinare la password di un utente invitato, viene generato un messaggio e-mail di conferma che invita l&#39;utente a scegliere una nuova password. Impossibile determinare la password di un utente; se l&#39;utente lo dimentica, è necessario reimpostarlo.
 
 Le seguenti impostazioni si trovano nell’area Reimposta password e-mail della pagina Registrazione utente invitata.
 
-**** Da: Indirizzo e-mail da cui viene inviato il messaggio e-mail di reimpostazione della password. Il formato predefinito dell&#39;indirizzo e-mail Da è postmaster@[your_install_domain].com.
+**Da:** Indirizzo e-mail da cui viene inviato il messaggio e-mail di reimpostazione della password. Il formato predefinito dell&#39;indirizzo e-mail Da è postmaster@[your_install_domain].com.
 
-**** Oggetto: Oggetto predefinito per il messaggio e-mail di ripristino.
+**Oggetto:** Oggetto predefinito per il messaggio e-mail di ripristino.
 
-**** Messaggio: Testo che appare nel corpo del messaggio un messaggio per indicare che la password utente esterna del destinatario viene reimpostata.
+**Messaggio:** Testo che appare nel corpo del messaggio un messaggio per indicare che la password utente esterna del destinatario viene reimpostata.
 
 ## Abilitare utenti e gruppi a creare criteri {#enable-users-and-groups-to-create-policies}
 
 Nella pagina Configurazione è presente un collegamento alla pagina Criteri personali, in cui è possibile specificare quali utenti finali possono creare i miei criteri e quali utenti e gruppi sono visibili nei risultati della ricerca. La pagina Criteri personali presenta due schede:
 
-**** Scheda Crea criteri: Utilizzate per configurare le autorizzazioni utente per creare criteri personalizzati.
+**Scheda Crea criteri:** Utilizzate per configurare le autorizzazioni utente per creare criteri personalizzati.
 
-**** Scheda Utenti e gruppi visibili: Consente di controllare quali utenti e gruppi sono visibili nei risultati della ricerca utente. L&#39;amministratore super utente o set di criteri deve selezionare e aggiungere i domini, creati in Gestione utente, all&#39;utente e al gruppo visibile per ciascun set di criteri. Questo elenco è visibile al coordinatore del set di criteri e viene utilizzato per limitare i domini che il coordinatore del set di criteri può esplorare quando sceglie gli utenti da aggiungere ai criteri.
+**Scheda Utenti e gruppi visibili:** Consente di controllare quali utenti e gruppi sono visibili nei risultati della ricerca utente. L&#39;amministratore super utente o set di criteri deve selezionare e aggiungere i domini, creati in Gestione utente, all&#39;utente e al gruppo visibile per ciascun set di criteri. Questo elenco è visibile al coordinatore del set di criteri e viene utilizzato per limitare i domini a cui il coordinatore del set di criteri può accedere quando sceglie gli utenti da aggiungere ai criteri.
 
 Prima di concedere agli utenti l&#39;autorizzazione per creare criteri personalizzati, considerate l&#39;accesso o il controllo che desiderate concedere ai singoli utenti. Inoltre, considerate come debbano essere esposti gli utenti e i gruppi quando li rendete visibili alle ricerche.
 
@@ -766,8 +765,8 @@ Nel file di configurazione della protezione del documento, potete specificare la
 
 È possibile configurare la protezione dei documenti per negare i servizi alle applicazioni che soddisfano criteri specifici. I criteri possono specificare un singolo attributo, ad esempio un nome di piattaforma, oppure più set di attributi. Questa funzione consente di controllare le richieste che la protezione del documento deve gestire. Di seguito sono riportate alcune applicazioni di questa funzione:
 
-* **** Protezione delle entrate: È possibile negare l&#39;accesso a qualsiasi applicazione client che non supporta le convenzioni sulle entrate.
-* **** Compatibilità dell&#39;applicazione: Alcune applicazioni potrebbero essere incompatibili con i criteri o il comportamento del server di protezione dei documenti.
+* **Protezione delle entrate:** È possibile negare l&#39;accesso a qualsiasi applicazione client che non supporta le convenzioni sulle entrate.
+* **Compatibilità dell&#39;applicazione:** Alcune applicazioni potrebbero essere incompatibili con i criteri o il comportamento del server di protezione dei documenti.
 
 Quando le applicazioni client tentano di stabilire un collegamento con la protezione dei documenti, forniscono informazioni su applicazione, versione e piattaforma. Document Security confronta queste informazioni con le impostazioni Rifiuti che ottengono dal file di configurazione Document Security.
 
@@ -779,7 +778,7 @@ La funzione di negazione del servizio richiede che le applicazioni client utiliz
 * Adobe Reader 9.0 e versioni successive
 * Estensioni di Acrobat Reader DC per Microsoft Office 8.2 e versioni successive
 
-Le applicazioni client utilizzano l&#39;API client dall&#39;SDK client C++ per la protezione dei documenti per richiedere i servizi dalla protezione dei documenti. Le richieste API client includono informazioni sulla piattaforma e sulla versione SDK (precompilate nell&#39;API client) e informazioni sui prodotti ottenute dall&#39;applicazione client.
+Le applicazioni client utilizzano l&#39;API client dall&#39;SDK client per la protezione dei documenti C++ per richiedere i servizi dalla protezione dei documenti. Le richieste API client includono informazioni sulla piattaforma e sulla versione SDK (precompilate nell&#39;API client) e informazioni sui prodotti ottenute dall&#39;applicazione client.
 
 Le applicazioni client o i plug-in forniscono informazioni sui prodotti nella loro implementazione di una funzione di callback. L&#39;applicazione fornisce le seguenti informazioni:
 
@@ -797,21 +796,21 @@ Diverse applicazioni Adobe includono informazioni sui prodotti durante la richie
 
 Quando Acrobat o Adobe Reader richiedono un servizio di protezione dei documenti, fornisce le seguenti informazioni sul prodotto:
 
-* **** Integratore: Adobe Systems, Inc.
-* **** Versione integratore: 1,0
-* **** Famiglia di applicazioni:Acrobat
-* **** Nome applicazione:Acrobat
-* **** Versione applicazione: 9.0.0
+* **Integratore:** Adobe Systems, Inc.
+* **Versione integratore:** 1,0
+* **Famiglia di applicazioni:** Acrobat
+* **Nome applicazione:** Acrobat
+* **Versione applicazione:** 9.0.0
 
 **Estensioni di Acrobat Reader DC per Microsoft Office**
 
 Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato con i prodotti Microsoft Office Microsoft Word, Microsoft Excel e Microsoft PowerPoint. Quando richiede un servizio, fornisce le seguenti informazioni:
 
-* **** Integratore: Adobe Systems Incorporated
-* **** Versione integratore: 8.2
-* **** Famiglia di applicazioni: Estensioni di Acrobat Reader DC per Microsoft Office
-* **** Nome applicazione: Microsoft Word, Microsoft Excel o Microsoft PowerPoint
-* **** Versione applicazione: 2003 o 2007
+* **Integratore:** Adobe Systems Incorporated
+* **Versione integratore:** 8.2
+* **Famiglia di applicazioni:** Estensioni di Acrobat Reader DC per Microsoft Office
+* **Nome applicazione:** Microsoft Word, Microsoft Excel o Microsoft PowerPoint
+* **Versione applicazione:** 2003 o 2007
 
 **Configurare la protezione dei documenti per negare i servizi per applicazioni specifiche**
 
@@ -940,7 +939,7 @@ In questo esempio, tutte le richieste provenienti da un&#39;installazione di Mic
 
 Per impostazione predefinita, è possibile specificare fino a cinque elementi in una filigrana. Inoltre, la dimensione massima del file del documento PDF che si desidera utilizzare come filigrana è limitata a 100 KB. Potete modificare questi parametri nel file config.xml.
 
-***nota **: Modificare questi parametri con cautela.*
+***nota **: È necessario modificare questi parametri con cautela.*
 
 1. Esportare il file di configurazione della protezione del documento. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 1. Apri il file di configurazione in un editor e individua il `ServerSettings` nodo.
@@ -961,8 +960,8 @@ Per impostazione predefinita, è possibile specificare fino a cinque elementi in
 
 Molti utenti di Document Security non hanno accesso a collegamenti esterni, ad esempio **www.adobe.com** , mentre utilizzano le interfacce utente Right Management:
 
-* `https://[host]:[port]/adminui`
-* `https://[host]:[port]/edc`.
+* `https://[host]:'port'/adminui`
+* `https://[host]:'port'/edc`.
 
 Le seguenti modifiche al file config.xml disattivano tutti i collegamenti esterni dalle interfacce utente Right Management.
 
@@ -982,7 +981,7 @@ Le seguenti modifiche al file config.xml abilitano il supporto TLS per la funzio
 
 1. Esportare il file di configurazione della protezione del documento. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 1. Apri il file di configurazione in un editor e individua il `DisplaySettings` nodo.
-1. Individuare il nodo seguente: `<node name="ExternalUser">`
+1. Individua il nodo seguente: `<node name="ExternalUser">`
 
    ```as3
    <node name="ExternalUser">
@@ -1004,7 +1003,7 @@ Le seguenti modifiche al file config.xml per disabilitare gli endpoint SOAP per 
    <node name="DRM">
    ```
 
-1. Nel nodo DRM individuare il `entry` nodo:
+1. Nel nodo DRM, individuare il `entry` nodo:
 
    `<entry key="AllowUnencryptedVoucher" value="true"/>`
 
@@ -1021,7 +1020,7 @@ Le seguenti modifiche al file config.xml per disabilitare gli endpoint SOAP per 
 1. Salva il `config.xml`.
 1. Importa il file di configurazione. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 
-### Maggiore scalabilità del server di protezione dei documenti {#increasingscalability}
+### Aumento della scalabilità del server di protezione dei documenti {#increasingscalability}
 
 Per impostazione predefinita, durante la sincronizzazione di un documento per l&#39;uso offline, insieme alle informazioni per il documento corrente, i client di protezione dei documenti recuperano informazioni su criteri, filigrane, licenze e aggiornamenti di revoca per tutti gli altri documenti a cui l&#39;utente ha accesso. Se questi aggiornamenti e queste informazioni non vengono sincronizzati con il client, è possibile che un documento aperto in modalità offline si apra ancora con informazioni su criteri, filigrane e revoche meno recenti.
 
