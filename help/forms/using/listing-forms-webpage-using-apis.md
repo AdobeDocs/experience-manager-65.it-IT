@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
 
 AEM Forms offre un’API di ricerca basata su REST che gli sviluppatori Web possono utilizzare per eseguire query e recuperare un set di moduli che soddisfa i criteri di ricerca. È possibile utilizzare le API per cercare moduli basati su vari filtri. L&#39;oggetto response contiene attributi modulo, proprietà e punti finali di rendering dei moduli.
 
-Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richiesta GET al server `https://[server]:[port]/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
+Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richiesta GET al server `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
 
 ## Query parameters {#query-parameters}
 
@@ -32,7 +32,7 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
    <td>func<br /> </td>
    <td><p>Specifica la funzione da chiamare. Per eseguire la ricerca nei moduli, impostare il valore dell' <code>func </code>attributo su <code>searchForms</code>.</p> <p>Esempio, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong></strong> Nota: <em>Questo parametro è obbligatorio.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Questo parametro è obbligatorio.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -91,12 +91,12 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
        <li>ENDSWITH - A termina con B se B è la parte finale di A</li>
        <li>LIKE - Implementa l'operatore LIKE</li>
        <li>AND - Combinare più istruzioni</li>
-      </ul> <p><strong></strong> Nota: Gli operatori <em>GT, LT, GTEQ e LTEQ sono applicabili per proprietà di tipo lineare quali LONG, DOUBLE e DATE.</em></p> </li>
+      </ul> <p><strong>Nota:</strong> Gli operatori <em>GT, LT, GTEQ e LTEQ sono applicabili per proprietà di tipo lineare quali LONG, DOUBLE e DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>ordine<br /> </td>
-   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti nel formato JSON. Potete ordinare i risultati della ricerca in più campi. I risultati vengono ordinati nell’ordine in cui vengono visualizzati i campi nella query.</p> <p>Esempio,</p> <p>Per recuperare i risultati della query ordinati dalla proprietà title nell'ordine crescente, aggiungere il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti nel formato JSON. È possibile ordinare i risultati della ricerca in più campi. I risultati vengono ordinati nell’ordine in cui vengono visualizzati i campi nella query.</p> <p>Esempio,</p> <p>Per recuperare i risultati della query ordinati dalla proprietà title nell'ordine crescente, aggiungere il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
@@ -107,7 +107,7 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
      <li><strong>criteri</strong>: Specifica l'ordine dei risultati. L'attributo order accetta i seguenti valori:
       <ul>
        <li>ASC - Utilizzate ASC per disporre i risultati in ordine crescente.<br /> </li>
-       <li>DES - Utilizza DES per disporre i risultati in ordine decrescente.</li>
+       <li>DES - Utilizzate DES per disporre i risultati in ordine decrescente.</li>
       </ul> </li>
     </ul> </td>
   </tr>
