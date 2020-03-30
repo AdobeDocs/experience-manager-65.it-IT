@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: a7ef7682df1dc627565f1cc30047ed775d2dbd13
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -554,7 +554,7 @@ Per utilizzare la cifratura AES 256 per i file PDF, è necessario ottenere e ins
 
 Il servizio Assembler dipende dal servizio Reader Extensions, dal servizio Signature, dal servizio Forms e dal servizio Output. Effettuate le seguenti operazioni per verificare che i servizi richiesti siano operativi:
 
-1. Accedete all&#39;URL `https://[server]:[port]/system/console/bundles` come amministratore.
+1. Accedete all&#39;URL `https://'[server]:[port]'/system/console/bundles` come amministratore.
 1. Cercate il servizio seguente e verificate che i servizi siano operativi:
 
 <table> 
