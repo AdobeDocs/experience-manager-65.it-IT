@@ -9,14 +9,14 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Integrazione di applicazioni di terze parti nell&#39;area di lavoro di AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
-L&#39;area di lavoro Moduli AEM supporta la gestione delle attività di assegnazione e completamento per moduli e documenti. È possibile utilizzare moduli XDP, moduli Flex® o guide (obsoleti) per il rendering in formato XDP, PDF, HTML o Flex.
+L&#39;area di lavoro Moduli AEM supporta la gestione delle attività di assegnazione e completamento per moduli e documenti. Tali moduli e documenti possono essere moduli XDP, Flex® o Guide (obsoleto) per i quali è stato eseguito il rendering in formato XDP, PDF, HTML o Flex.
 
 Tali capacità sono ulteriormente migliorate. AEM Forms ora supporta la collaborazione con applicazioni di terze parti che supportano funzionalità simili all’area di lavoro Moduli AEM. Una parte comune di questa funzionalità è rappresentata dal flusso di lavoro dell&#39;assegnazione e successiva approvazione di un&#39;attività. AEM Forms offre un&#39;unica esperienza unificata agli utenti enterprise di AEM Forms affinché tutte queste assegnazioni di attività o approvazioni per le applicazioni supportate possano essere gestite tramite l&#39;area di lavoro Moduli AEM.
 
@@ -26,7 +26,7 @@ Ad esempio, consideriamo la gestione della corrispondenza come il modello di ese
 
 Per iniziare, create un modello di gestione della corrispondenza di esempio di cui viene eseguito il rendering nell&#39;area di lavoro Moduli AEM. Per ulteriori dettagli, vedere [Creare un modello](../../forms/using/create-letter.md)di lettera.
 
-Per verificare se il rendering del modello di gestione della corrispondenza può essere eseguito correttamente, accedete al modello di gestione della corrispondenza nel relativo URL. L&#39;URL ha un pattern simile a `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Per verificare se il rendering del modello di gestione della corrispondenza può essere eseguito correttamente, accedete al modello di gestione della corrispondenza nel relativo URL. L&#39;URL ha un pattern simile a `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 dove `encodedLetterId` è l’ID lettera con codifica URL. Quando si definisce il processo di rendering per l&#39;attività dell&#39;area di lavoro in Workbench, specificare lo stesso ID lettera.
 
@@ -101,10 +101,10 @@ Per creare un’attività di rendering e inviare una lettera in AEM Workspace, e
 
    [Ottieni DSC](assets/dscsample.zip)download file: Un DSC di esempio è disponibile nel file DSCSample.zip allegato qui sopra. Scaricate e decomprimete il file DSCSample.zip. Prima di utilizzare il servizio DSC, è necessario configurarlo. Per informazioni, consultate [Configurare il servizio](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
 
-   Nella finestra di dialogo Definisci attività, selezionate l&#39;attività appropriata come getLetterInstanceInfo e fate clic su **OK**.
+   Nella finestra di dialogo Definisci attività, selezionate l&#39;attività appropriata, ad esempio getLetterInstanceInfo, quindi fate clic su **OK**.
 
 1. Implementare l&#39;applicazione. Se richiesto, archiviate e salvate le risorse.
-1. Accedete all&#39;area di lavoro moduli di AEM all&#39;indirizzo https://[server]:[port]/lc/content/ws.
+1. Accedete all&#39;area di lavoro moduli di AEM all&#39;indirizzo https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Aprite il compito aggiunto, CMRenderer. Viene visualizzata la lettera Gestione corrispondenza.
 
    ![cminworkspace](assets/cminworkspace.png)
