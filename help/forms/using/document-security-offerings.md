@@ -11,20 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 91e85e86-2361-4d1d-aa73-c3cce46ab1f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: e45e335d433f17a48ba1bf27a93c5b1003369512
 
 ---
 
 
 # Offerte sulla protezione dei documenti{#document-security-offerings}
 
-La protezione dei documenti Adobe Experience Manager Forms garantisce che i documenti vengano utilizzati solo dagli utenti autorizzati. La protezione dei documenti consente di distribuire in modo sicuro tutte le informazioni salvate in un formato supportato. I formati di file supportati includono file Adobe PDF (Portable Document Format) e Microsoft Word, Excel e PowerPoint.
+La protezione dei documenti Adobe Experience Manager Forms garantisce che i documenti vengano utilizzati solo dagli utenti autorizzati. La protezione dei documenti consente di distribuire in modo sicuro tutte le informazioni salvate in un formato supportato. I formati di file supportati includono i file Adobe Portable Document Format (PDF) e Microsoft Word, Excel e PowerPoint.
 
-È possibile proteggere i documenti utilizzando i criteri. Le impostazioni di riservatezza specificate in un criterio determinano in che modo il destinatario può utilizzare il documento a cui si applica il criterio. Ad esempio, è possibile specificare se i destinatari possono stampare o copiare il testo, modificare il testo o aggiungere firme e commenti ai documenti protetti.
+You can protect documents by using policies. Le impostazioni di riservatezza specificate in un criterio determinano in che modo il destinatario può utilizzare il documento a cui si applica il criterio. For example, you can specify whether recipients can print or copy text, edit text, or add signatures and comments to protected documents.
 
-I criteri sono memorizzati in Document Security Server; i criteri vengono applicati ai documenti tramite l&#39;applicazione client. Quando applicate un criterio a un documento, le impostazioni di riservatezza specificate nel criterio proteggono le informazioni contenute nel documento. Potete distribuire il documento protetto tramite criterio ai destinatari autorizzati dal criterio.
+The policies are stored on Document Security server; you apply the policies to documents through your client application. Quando applicate un criterio a un documento, le impostazioni di riservatezza specificate nel criterio proteggono le informazioni contenute nel documento. Potete distribuire il documento protetto tramite criterio ai destinatari autorizzati dal criterio.
 
-Il diagramma seguente mostra l&#39;architettura tipica di AEM Forms Document Security:
+Nel diagramma seguente è illustrata l&#39;architettura tipica di AEM Forms Document Security:
 
 ![Document Security - Architettura consigliata](do-not-localize/document_security_architecture.png)
 
@@ -46,21 +46,21 @@ AEM Forms Document Security offre diversi strumenti per l&#39;applicazione dei c
 
 Potete utilizzare l&#39;SDK di Document Security, Adobe Acrobat, Document Security Extension for Microsoft Office o la libreria Protezione portatile per applicare e tenere traccia dei criteri di protezione:
 
-* **** SDK di Document Security: L’SDK è un client ricco di funzioni. Document Security SDK può essere utilizzato per accedere alle funzionalità del server documenti, aprire documenti protetti tramite criterio e sviluppare estensioni, plug-in o applicazioni personalizzate. Ad esempio, puoi sviluppare estensioni per proteggere i formati di file personalizzati o integrare SDK con soluzioni DLP (Data Loss Prevention). Estensioni, applicazioni e plug-in sviluppati con Document Security SDK inviano documenti a un server AEM Forms designato e i criteri vengono applicati al server. Inoltre, l’SDK per client per la protezione dei documenti di AEM Forms (CSDK) non è in grado di rimuovere la protezione dei documenti protetti utilizzando la libreria di protezione mobile (PPL) e viceversa.
+* **SDK di Document Security:** L’SDK è un client ricco di funzioni. Potete utilizzare l&#39;SDK di Document Security per accedere alle funzionalità del server documenti, aprire documenti protetti tramite criterio e sviluppare estensioni, plug-in o applicazioni personalizzate. Ad esempio, puoi sviluppare estensioni per proteggere i formati di file personalizzati o integrare SDK con soluzioni DLP (Data Loss Prevention). Estensioni, applicazioni e plug-in sviluppati con Document Security SDK inviano documenti a un server AEM Forms designato e i criteri vengono applicati al server. Inoltre, l’SDK per client per la protezione dei documenti di AEM Forms (CSDK) non è in grado di rimuovere la protezione dei documenti protetti utilizzando la libreria di protezione mobile (PPL) e viceversa.
 
    Document Security SDK è disponibile sia per Java che per C++. L’SDK Java è incluso nell’offerta AEM Forms Document Security e viene installato nella distribuzione di moduli AEM su JEE. Puoi contattare il team [di supporto di](https://helpx.adobe.com/marketing-cloud/contact-support.html) AEM per acquisire l’SDK C++. L&#39;SDK C++ può essere compilato con Microsoft Visual Studio 2013. Potete visitare il sito della documentazione [API di](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) Document Security per apprendere e usare le funzioni dell&#39;SDK.
 
-* **** Adobe Acrobat: È possibile utilizzare Adobe Acrobat per applicare criteri di protezione ai documenti PDF creati utilizzando le più comuni applicazioni desktop, come Microsoft Office, browser Web o qualsiasi applicazione che supporti la stampa in formato PDF.
+* **Adobe Acrobat:** È possibile utilizzare Adobe Acrobat per applicare criteri di protezione ai documenti PDF creati utilizzando le più comuni applicazioni desktop, come Microsoft Office, browser Web o qualsiasi applicazione che supporti la stampa in formato PDF.
 
    Potete acquistare e scaricare Adobe Acrobat dal sito Web di [Adobe](https://acrobat.adobe.com/us/en/free-trial-download.html). L&#39;articolo di Adobe Acrobat [che configura criteri di protezione per i PDF](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html) fornisce informazioni dettagliate sulla creazione e l&#39;applicazione dei criteri in Adobe Acrobat.
 
 * **Document Security Extension for Microsoft Office**: Potete utilizzare Document Security Extension for Microsoft Office per applicare criteri predefiniti ai file di Microsoft Office direttamente dalle applicazioni di Microsoft Office. L&#39;estensione assicura che solo gli utenti autorizzati possano utilizzare i file Microsoft Word, Excel e PowerPoint protetti tramite criterio. Solo gli utenti autorizzati che hanno installato il plug-in possono utilizzare i file protetti tramite criterio.
 
-   L&#39;estensione Document Security è disponibile come plug-in di Microsoft Office. Puoi contattare il team [di supporto di](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) AEM per ottenere l’estensione. Successivamente, potrete consultare la guida di [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) per informazioni sull&#39;installazione, la configurazione e l&#39;utilizzo dell&#39;estensione.
+   L&#39;estensione Document Security è disponibile come plug-in di Microsoft Office. Puoi contattare il team [di supporto di](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) AEM per ottenere l’estensione. Successivamente, potrete consultare la guida di [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html) per informazioni sull&#39;installazione, la configurazione e l&#39;utilizzo dell&#39;estensione.
 
-* **** Libreria di protezione portatile: La Portable Protection Library (PPL) protegge un documento localmente senza inviarlo al server AEM Forms. Solo le credenziali di sicurezza e i dettagli dei criteri viaggano sulla rete. PPL consente inoltre di limitare l&#39;accesso al recupero dei criteri solo agli utenti connessi. Potete recuperare i criteri con il contesto dell&#39;utente che ha eseguito l&#39;accesso all&#39;utente AEM.
+* **Libreria di protezione portatile:** La Portable Protection Library (PPL) protegge un documento localmente senza inviarlo al server AEM Forms. Solo le credenziali di sicurezza e i dettagli dei criteri viaggano attraverso la rete. PPL consente inoltre di limitare l&#39;accesso al recupero dei criteri solo agli utenti connessi. Potete recuperare i criteri con il contesto dell&#39;utente che ha eseguito l&#39;accesso all&#39;utente AEM.
 
-   Oltre a quanto sopra, la Libreria protezione rettangolare offre tutte le funzioni di Document Security SDK. Document Security SDK può essere utilizzato per accedere alle funzionalità del server documenti, aprire documenti protetti tramite criterio e sviluppare estensioni, plug-in o applicazioni personalizzate. Inoltre, la libreria di protezione portatile (PPL) non è in grado di rimuovere la protezione dei documenti protetti tramite l’SDK (Document Security Client SDK) di AEM Forms e viceversa.
+   Oltre a quanto sopra, la Libreria protezione rettangolare dispone di tutte le funzioni di Document Security SDK. Potete utilizzare l&#39;SDK di Document Security per accedere alle funzionalità del server documenti, aprire documenti protetti tramite criterio e sviluppare estensioni, plug-in o applicazioni personalizzate. Inoltre, la libreria di protezione portatile (PPL) non è in grado di rimuovere la protezione dei documenti protetti tramite l’SDK (Document Security Client SDK) di AEM Forms e viceversa.
 
    La Portable Protection Library è disponibile per le lingue Java e C++ nelle versioni a 32 bit e a 64 bit. È inoltre disponibile come bundle OSGi per AEM Forms su OSGi. È possibile compilare il PPL C++ con Microsoft Visual Studio 2013. Se si dispone della licenza per il componente aggiuntivo AEM Forms Document Security, è possibile contattare il team di supporto di [AEM Forms Document Security](https://helpx.adobe.com/marketing-cloud/contact-support.html) per acquistare la libreria Protezione portatile. Successivamente, sarà possibile utilizzare la Guida della libreria Protezione portatile (fornita con la libreria) per configurare e utilizzare la libreria Protezione portatile.
 
@@ -74,7 +74,7 @@ Potete utilizzare l&#39;SDK di Document Security, Adobe Acrobat, Document Securi
 
 I motori di ricerca full-text di Microsoft Windows (SharePoint Index Server) e Adobe Experience Manager (AEM) possono eseguire ricerche full-text nei formati di documento comunemente utilizzati, come file di testo normale, documenti di Microsoft Office e documenti PDF. Potete utilizzare gli indici di Document Security per consentire ai motori di ricerca full-text di effettuare ricerche nei documenti PDF protetti:
 
-* **** Indicatore iFilter: È possibile utilizzare l&#39;indicizzatore iFilter per indicizzare i documenti PDF protetti e abilitare i motori di ricerca full-text di Microsoft Windows (Desktop Indexing Service e SharePoint Indexserver) per eseguire ricerche nei documenti PDF protetti. Per informazioni dettagliate, consultate [AEM SharePoint IFilter per documenti](assets/sharepoint-ifilter-doc-security.pdf)protetti.
+* **Indicatore iFilter:** È possibile utilizzare l&#39;indicizzatore iFilter per indicizzare i documenti PDF protetti e abilitare i motori di ricerca full-text di Microsoft Windows (Desktop Indexing Service e SharePoint Indexserver) per eseguire ricerche nei documenti PDF protetti. Per informazioni dettagliate, consultate [AEM SharePoint IFilter per documenti](assets/sharepoint-ifilter-doc-security.pdf)protetti.
 
-* **** AEM Forms Document Security Indexer: È possibile utilizzare l&#39;indicizzatore AEM Forms Document Security per indicizzare i documenti PDF protetti e consentire ad Adobe Experience Manager di effettuare ricerche nei documenti PDF protetti. Gli indici fanno parte dell&#39;offerta AEM Forms Document Security. Sono inclusi nei programmi di installazione AEM Forms su JEE.
+* **AEM Forms Document Security Indexer:** È possibile utilizzare l&#39;indicizzatore AEM Forms Document Security per indicizzare i documenti PDF protetti e consentire ad Adobe Experience Manager di effettuare ricerche nei documenti PDF protetti. Gli indici fanno parte dell&#39;offerta AEM Forms Document Security. Sono inclusi nei programmi di installazione AEM Forms su JEE.
 
