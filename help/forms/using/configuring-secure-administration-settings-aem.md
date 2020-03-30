@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -35,7 +35,7 @@ Completa questa procedura utilizzando la pagina Web Applicazioni e servizi nella
 1. Accedete alla console di amministrazione digitando il seguente URL in un browser Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Fare clic su **Servizi > Applicazioni e servizi > Preferenze**.
@@ -43,7 +43,7 @@ Completa questa procedura utilizzando la pagina Web Applicazioni e servizi nella
 1. Fai clic su **Servizi** > **Applicazioni e servizi** > Gestione **** endpoint.
 1. Selezionate **EJB** dall&#39;elenco **Fornitori** , quindi fate clic su **Filtro**.
 1. Per disattivare tutti gli endpoint EJB, selezionate la casella di controllo accanto a ciascuno nell’elenco e fate clic su **Disattiva**.
-1. Fate clic su **Avanti** e ripetete il passaggio precedente per tutti gli endpoint EJB. Prima di disattivare gli endpoint, verificate che EJB sia elencato nella colonna Provider.
+1. Fate clic su **Avanti** e ripetete il passaggio precedente per tutti gli endpoint EJB. Prima di disattivare gli endpoint, accertatevi che EJB sia elencato nella colonna Provider.
 1. Selezionare **SOAP** dall&#39;elenco **Fornitori** , quindi fare clic su **Filtro**.
 1. Per rimuovere gli endpoint SOAP, selezionare la casella di controllo accanto a ciascuno nell&#39;elenco e fare clic su **Rimuovi**. Non rimuovere i seguenti endpoint:
 
@@ -70,7 +70,7 @@ Alcuni servizi server moduli consentono chiamate non autenticate (anonime) per a
 1. Accedete alla console di amministrazione digitando il seguente URL in un browser Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Fai clic su **Servizi > Applicazioni e servizi > Gestione** dei servizi.
@@ -105,14 +105,14 @@ Alcuni servizi server moduli consentono chiamate non autenticate (anonime) per a
 
 ## Modifica del timeout globale predefinito {#changing-the-default-global-time-out}
 
-Gli utenti finali possono eseguire l&#39;autenticazione su AEM Forms tramite Workbench, le applicazioni Web AEM Forms o le applicazioni personalizzate che richiamano i servizi server AEM Forms. Una singola impostazione globale del timeout viene utilizzata per specificare per quanto tempo gli utenti possono interagire con AEM Forms (utilizzando un&#39;asserzione basata su SAML) prima di essere costretti a eseguire nuovamente l&#39;autenticazione. L’impostazione predefinita è due ore. In un ambiente di produzione, il tempo deve essere ridotto al numero minimo di minuti accettabile.
+Gli utenti finali possono eseguire l&#39;autenticazione su AEM Forms tramite Workbench, le applicazioni Web AEM Forms o le applicazioni personalizzate che richiamano i servizi server AEM Forms. Un’impostazione globale relativa al timeout viene utilizzata per specificare per quanto tempo gli utenti possono interagire con AEM Forms (utilizzando un’asserzione basata su SAML) prima che siano costretti a eseguire nuovamente l’autenticazione. L’impostazione predefinita è due ore. In un ambiente di produzione, il tempo deve essere ridotto al numero minimo di minuti accettabile.
 
 ### Limite minimo di tempo per la riautenticazione {#minimize-reauthentication-time-limit}
 
 1. Accedete alla console di amministrazione digitando il seguente URL in un browser Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Fate clic su **Impostazioni > Gestione utente > Configurazione > Importa ed esporta file** di configurazione.
