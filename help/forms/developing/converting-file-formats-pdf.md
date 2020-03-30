@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -107,13 +107,13 @@ Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazio
 
 Prima di eseguire un&#39;operazione Genera PDF a livello di programmazione, creare un client di servizi Genera PDF. Se utilizzate l&#39;API Java, create un `GeneratePdfServiceClient` oggetto. Se si utilizza l&#39;API del servizio Web, creare un `GeneratePDFServiceService` oggetto.
 
-**Recuperare il file da convertire in documento PDF**
+**Recuperare il file da convertire in un documento PDF**
 
 Recuperare il documento di Microsoft Word per la conversione in documento PDF.
 
 **Conversione del file in un documento PDF**
 
-Dopo aver creato il client del servizio Genera PDF, potete richiamare il `createPDF2` metodo. Questo metodo richiede informazioni sul documento da convertire, inclusa l’estensione del file.
+Dopo aver creato il client del servizio Genera PDF, è possibile richiamare il `createPDF2` metodo. Questo metodo richiede informazioni sul documento da convertire, inclusa l’estensione del file.
 
 **Recuperare i risultati**
 
@@ -156,7 +156,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
    * Un `com.adobe.idp.Document` oggetto che rappresenta il file da convertire.
    * Un `java.lang.String` oggetto che contiene l&#39;estensione del file.
    * Un `java.lang.String` oggetto che contiene le impostazioni del tipo di file da utilizzare nella conversione. Le impostazioni relative ai tipi di file forniscono le impostazioni di conversione per diversi tipi di file, ad esempio .doc o .xls.
-   * Un `java.lang.String` oggetto che contiene il nome delle impostazioni PDF da utilizzare. Ad esempio, potete specificare `Standard`.
+   * Un `java.lang.String` oggetto che contiene il nome delle impostazioni PDF da utilizzare. For example, you can specify `Standard`.
    * Un `java.lang.String` oggetto che contiene il nome delle impostazioni di protezione da utilizzare.
    * Un `com.adobe.idp.Document` oggetto facoltativo che contiene le impostazioni da applicare durante la generazione del documento PDF.
    * Un `com.adobe.idp.Document` oggetto facoltativo che contiene le informazioni sui metadati da applicare al documento PDF.
@@ -211,7 +211,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
 
 1. Recuperare il file da convertire in un documento PDF.
 
-   * Creare un `BLOB` oggetto utilizzando il relativo costruttore. L&#39; `BLOB` oggetto viene utilizzato per memorizzare il file da convertire in documento PDF.
+   * Creare un `BLOB` oggetto utilizzando il relativo costruttore. L&#39; `BLOB` oggetto viene utilizzato per memorizzare il file da convertire in un documento PDF.
    * Creare un `System.IO.FileStream` oggetto richiamandone il costruttore. Passa un valore di stringa che rappresenta la posizione del file da convertire e la modalità in cui aprire il file.
    * Creare un array di byte che memorizza il contenuto dell&#39; `System.IO.FileStream` oggetto. È possibile determinare la dimensione dell&#39;array di byte ottenendo la proprietà dell&#39; `System.IO.FileStream` oggetto `Length` .
    * Compilare l&#39;array di byte con i dati del flusso richiamando il `System.IO.FileStream` `Read` metodo dell&#39;oggetto e passando l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
@@ -261,7 +261,7 @@ Per convertire un documento HTML in un documento PDF, effettuare le seguenti ope
 1. Includere i file di progetto.
 1. Creare un client Generate PDF.
 1. Recuperate il contenuto HTML da convertire in un documento PDF.
-1. Convertire il contenuto HTML in un documento PDF.
+1. Convertite il contenuto HTML in un documento PDF.
 1. Recuperate i risultati.
 
 **Includi file di progetto**
@@ -274,7 +274,7 @@ Prima di eseguire un&#39;operazione Genera PDF a livello di programmazione, è n
 
 **Recuperare il contenuto HTML da convertire in un documento PDF**
 
-Fate riferimento al contenuto HTML da convertire in un documento PDF. Potete fare riferimento al contenuto HTML, ad esempio un file HTML o contenuto HTML accessibile tramite un URL.
+Fate riferimento al contenuto HTML da convertire in un documento PDF. Potete fare riferimento al contenuto HTML, ad esempio un file HTML o un contenuto HTML accessibile tramite un URL.
 
 **Conversione del contenuto HTML in un documento PDF**
 
@@ -312,7 +312,7 @@ Convertire un documento HTML in un documento PDF utilizzando l&#39;API Generate 
 
    Recuperate il contenuto HTML creando una variabile stringa e assegnando un URL che punta al contenuto HTML.
 
-1. Convertire il contenuto HTML in un documento PDF.
+1. Convertite il contenuto HTML in un documento PDF.
 
    Richiama il metodo dell’ `GeneratePdfServiceClient` oggetto `htmlToPDF2` e passa i seguenti valori:
 
@@ -370,7 +370,7 @@ Convertire il contenuto HTML in un documento PDF utilizzando l&#39;API Generate 
 
    Recuperate il contenuto HTML creando una variabile stringa e assegnando un URL che punta al contenuto HTML.
 
-1. Convertire il contenuto HTML in un documento PDF.
+1. Convertite il contenuto HTML in un documento PDF.
 
    Convertire il contenuto HTML in un documento PDF richiamando il metodo dell&#39; `GeneratePDFServiceService` oggetto `HtmlToPDF2` e passando i seguenti valori:
 
@@ -398,7 +398,7 @@ Convertire il contenuto HTML in un documento PDF utilizzando l&#39;API Generate 
 
 ## Conversione di documenti PDF in formati non immagine {#converting-pdf-documents-to-non-image-formats}
 
-Questa sezione descrive come utilizzare l&#39;API Java Generate PDF e l&#39;API del servizio Web per convertire un documento PDF in un file RTF a livello di programmazione, che è un esempio di formato non immagine. Altri formati non immagine includono HTML, testo, DOC ed EPS. Durante la conversione di un documento PDF in formato RTF, assicurarsi che il documento PDF non contenga elementi del modulo, ad esempio un pulsante di invio. Gli elementi modulo non vengono convertiti.
+Questa sezione descrive come utilizzare l&#39;API Java Generate PDF e l&#39;API del servizio Web per convertire un documento PDF in un file RTF a livello di programmazione, che è un esempio di formato non immagine. Altri formati non immagine includono HTML, testo, DOC ed EPS. Durante la conversione di un documento PDF in formato RTF, assicurarsi che il documento PDF non contenga elementi del modulo, ad esempio un pulsante di invio. Gli elementi del modulo non vengono convertiti.
 
 >[!NOTE]
 >
@@ -529,7 +529,7 @@ Convertire un documento PDF in un file RTF utilizzando l&#39;API Generate PDF (s
    Richiama il metodo dell’ `GeneratePDFServiceServiceWse` oggetto `ExportPDF2` e passa i seguenti valori:
 
    * Un `BLOB` oggetto che rappresenta il file PDF da convertire.
-   * Una stringa che contiene il nome percorso del file da convertire.
+   * Una stringa che contiene il nome del percorso del file da convertire.
    * Un `java.lang.String` oggetto che specifica la posizione del file.
    * Un oggetto stringa che specifica il tipo di file di destinazione per la conversione. Specificate `RTF`.
    * Un `BLOB` oggetto facoltativo che contiene le impostazioni da applicare durante la generazione del documento PDF.
@@ -581,7 +581,7 @@ In questo documento viene utilizzato il termine applicazione ** nativa per indic
 
 AppMon utilizza le API Win32 standard per interagire con le applicazioni di terze parti al fine di trasferire eventi dell&#39;interfaccia utente quali tasti e clic del mouse, il che è utile per controllare queste applicazioni e generare file PDF da esse.
 
-A causa di un limite con queste API Win32, AppMon non è in grado di inviare questi eventi dell&#39;interfaccia utente ad alcuni tipi specifici di finestre, come barre di menu mobili (trovate in alcune applicazioni come TextPad) e certi tipi di finestre di dialogo il cui contenuto non può essere recuperato utilizzando le API Win32.
+A causa di un limite con queste API Win32, AppMon non è in grado di inviare questi eventi dell&#39;interfaccia utente ad alcuni tipi specifici di finestre, come barre di menu mobili (trovate in alcune applicazioni come TextPad), e certi tipi di finestre di dialogo il cui contenuto non può essere recuperato utilizzando le API Win32.
 
 È facile identificare visivamente una barra di menu mobile; tuttavia, potrebbe non essere possibile identificare i tipi speciali di dialoghi solo attraverso l&#39;ispezione visiva. È necessario un&#39;applicazione di terze parti come Microsoft Spy++ (parte dell&#39;ambiente di sviluppo di Microsoft Visual C++) o il suo WinID equivalente (che può essere scaricato gratuitamente da [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)) per esaminare una finestra di dialogo per determinare se AppMon sarebbe in grado di interagire con esso utilizzando le API Win32 standard.
 
@@ -615,12 +615,12 @@ In questa tabella sono elencati i tipi di informazioni utilizzati per la stampa 
   </tr>
   <tr>
    <td><p>Istruzioni per la finestra di dialogo specifica per l'applicazione</p></td>
-   <td><p>Specifica come rispondere alle finestre di dialogo specifiche dell'applicazione. </p><p>Il file che contiene queste informazioni è appmon.<i>[nomeapp]</i>.dialog.<i>[locale]</i>.xml (ad esempio, appmon.word.en_US.xml).</p></td>
+   <td><p>Specifica come rispondere alle finestre di dialogo specifiche dell'applicazione. </p><p>Il file che contiene queste informazioni è appmon.<i>`[nomeapp]`</i>.dialog.<i>`[locale]`</i>.xml (ad esempio, appmon.word.en_US.xml).</p></td>
    <td><p>Non modificate questo file. </p><p>Per aggiungere le istruzioni della finestra di dialogo per una nuova applicazione nativa, vedere <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Creazione o modifica di un file XML di dialogo aggiuntivo per un'applicazione</a>nativa.</p></td>
   </tr>
   <tr>
    <td><p>Istruzioni aggiuntive per la finestra di dialogo specifica per l’applicazione </p></td>
-   <td><p>Specifica sostituzioni e aggiunte alle istruzioni della finestra di dialogo specifica per l’applicazione. La sezione presenta un esempio di tali informazioni. </p><p>Il file che contiene queste informazioni è appmon.<i>[nomeapp]</i>.add.<i>[locale]</i>.xml. Un esempio è appmon.addizione.en_US.xml.</p></td>
+   <td><p>Specifica sostituzioni e aggiunte alle istruzioni della finestra di dialogo specifica per l’applicazione. La sezione presenta un esempio di tali informazioni. </p><p>Il file che contiene queste informazioni è appmon.<i>`[nomeapp]`</i>.add.<i>`[locale]`</i>.xml. Un esempio è appmon.addizione.en_US.xml.</p></td>
    <td><p>I file di questo tipo possono essere creati e modificati utilizzando un'applicazione di modifica XML. (Vedere <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creazione o modifica di un file XML di dialogo aggiuntivo per un'applicazione</a>nativa.) </p><p><strong>Importante</strong>: È necessario creare ulteriori istruzioni per la finestra di dialogo specifiche per l'applicazione per ogni applicazione nativa supportata dal server. </p></td>
   </tr>
  </tbody>
@@ -632,9 +632,9 @@ I file XML di script indirizzano il servizio Genera PDF per spostarsi tra le fin
 
 Al contrario, i file XML di dialogo rispondono semplicemente a finestre di dialogo con gli stessi tipi di azioni utilizzate nei file XML di script.
 
-#### Terminologia degli elementi finestra e finestra {#dialog-box-and-window-element-terminology}
+#### Terminologia della finestra di dialogo e dell&#39;elemento finestra {#dialog-box-and-window-element-terminology}
 
-In questa sezione e nella sezione successiva viene utilizzata una terminologia diversa per le finestre di dialogo e i componenti che contengono, a seconda della prospettiva descritta. I componenti della finestra di dialogo sono elementi quali pulsanti, campi e caselle combinate.
+In questa sezione e nella sezione successiva viene utilizzata una terminologia diversa per le finestre di dialogo e per i componenti che contengono, a seconda della prospettiva descritta. I componenti della finestra di dialogo sono elementi quali pulsanti, campi e caselle combinate.
 
 Quando questa sezione e la sezione successiva descrivono le finestre di dialogo e i relativi componenti dal punto di vista di un utente, vengono utilizzati termini quali finestra di *dialogo*, *pulsante*, *campo* e casella ** combinata.
 
@@ -642,7 +642,7 @@ Quando questa sezione e la sezione successiva descrivono le finestre di dialogo 
 
 Dal punto di vista dell&#39;utente, le finestre di dialogo e i relativi componenti mostrano comportamenti diversi, dove alcuni elementi delle finestre di dialogo vengono nascosti fino all&#39;attivazione. Dal punto di vista della rappresentazione interna, non esiste alcun problema di comportamento. Ad esempio, la rappresentazione interna di una finestra di dialogo ha un aspetto simile a quello dei componenti che contiene, ad eccezione del fatto che i componenti sono nidificati all&#39;interno della finestra di dialogo.
 
-Questa sezione descrive gli elementi XML che forniscono istruzioni ad AppMon. Questi elementi hanno nomi quali l&#39; `dialog` elemento e l&#39; `window` elemento. In questo documento viene utilizzato un font monospazio per distinguere gli elementi XML. L&#39; `dialog` elemento identifica una finestra di dialogo che può causare la visualizzazione intenzionale o non intenzionale di un file di script XML. L&#39; `window` elemento identifica un elemento finestra (finestra di dialogo o componenti di una finestra di dialogo).
+Questa sezione descrive gli elementi XML che forniscono istruzioni ad AppMon. Questi elementi hanno nomi quali l&#39; `dialog` elemento e l&#39; `window` elemento. In questo documento viene utilizzato un font monospazio per distinguere gli elementi XML. L&#39; `dialog` elemento identifica una finestra di dialogo che può causare la visualizzazione intenzionale o non intenzionale di un file di script XML. L&#39; `window` elemento identifica un elemento finestra (finestra di dialogo o i componenti di una finestra di dialogo).
 
 #### Gerarchia {#hierarchy}
 
@@ -654,7 +654,7 @@ Gerarchia dello script e della finestra di dialogo XML
 
 #### Script, file XML {#script-xml-files}
 
-Un file *XML di* script specifica una serie di passaggi che indirizzano l&#39;applicazione nativa a passare ad alcuni elementi della finestra e a fornire le risposte a tali elementi. La maggior parte delle risposte è costituita da testo o tasti che corrispondono all&#39;input che un utente immette a un campo, a una casella combinata o a un pulsante nella finestra di dialogo corrispondente.
+Un file *XML di* script specifica una serie di passaggi che indirizzano l&#39;applicazione nativa a passare ad alcuni elementi della finestra e quindi a fornire le risposte a tali elementi. La maggior parte delle risposte è costituita da testo o tasti che corrispondono all&#39;input che un utente immette a un campo, a una casella combinata o a un pulsante nella finestra di dialogo corrispondente.
 
 Il supporto del servizio Genera PDF per i file XML di script ha lo scopo di indirizzare un&#39;applicazione nativa alla stampa di un file nativo. Tuttavia, i file XML di script possono essere utilizzati per eseguire qualsiasi attività che un utente può eseguire quando interagisce con le finestre di dialogo dell&#39;applicazione nativa.
 
@@ -672,9 +672,9 @@ Un file *XML di* finestra di dialogo specifica in che modo il servizio Genera PD
 
 Quando nel sistema o nell&#39;applicazione nativa viene visualizzata una finestra di dialogo non gestita dal file XML di script attualmente in esecuzione, il servizio Genera PDF esegue la ricerca nei file XML della finestra di dialogo in questo ordine, arrestandosi quando viene rilevata una corrispondenza:
 
-* appmon.*[appname]*.Additional.*[locale]*.xml
-* appmon.*[nomeapp].[locale]*.xml (non modificate questo file).
-* appmon.global.*[locale]*.xml (non modificate questo file).
+* appmon.`[appname]`.Additional.`[locale]`.xml
+* appmon.`[appname]`.`[locale]`.xml (non modificate questo file).
+* appmon.global.`[locale]`.xml (non modificate questo file).
 
 Se il servizio Genera PDF trova una corrispondenza per la finestra di dialogo, la ignora inviando la tastiera o altre azioni specificate per la finestra di dialogo. Se nelle istruzioni della finestra di dialogo viene specificato un messaggio di interruzione, il servizio Genera PDF interrompe il processo in esecuzione e genera un messaggio di errore. Tale messaggio di interruzione viene specificato nell&#39; `abortMessage` elemento della grammatica XML dello script.
 
@@ -690,7 +690,7 @@ Prima di poter aggiungere o modificare il supporto, è necessario completare le 
 
 I file XML di finestra di dialogo e script richiedono l&#39;identificazione dell&#39;elemento finestra (finestra di dialogo, campo o altro componente di dialogo) a cui l&#39;elemento script o finestra di dialogo risponde. Ad esempio, dopo che uno script richiama un menu per un&#39;applicazione nativa, lo script deve identificare l&#39;elemento finestra del menu a cui applicare i tasti o un&#39;azione.
 
-È possibile identificare facilmente una finestra di dialogo mediante la didascalia visualizzata nella barra del titolo. Tuttavia, è necessario utilizzare uno strumento come Microsoft Spy++ per identificare gli elementi della finestra di livello inferiore. Gli elementi della finestra di livello inferiore possono essere identificati attraverso una serie di attributi, che non sono evidenti. Inoltre, ogni applicazione nativa può identificare in modo diverso il proprio elemento finestra. Di conseguenza, esistono diversi modi per identificare un elemento finestra. Di seguito è riportato l&#39;ordine consigliato per l&#39;identificazione dell&#39;elemento finestra:
+È possibile identificare facilmente una finestra di dialogo mediante la didascalia visualizzata nella barra del titolo. Tuttavia, è necessario utilizzare uno strumento come Microsoft Spy++ per identificare gli elementi della finestra di livello inferiore. Gli elementi della finestra di livello inferiore possono essere identificati attraverso una serie di attributi, che non sono ovvi. Inoltre, ogni applicazione nativa può identificare in modo diverso il proprio elemento finestra. Di conseguenza, esistono diversi modi per identificare un elemento finestra. Di seguito è riportato l&#39;ordine consigliato per l&#39;identificazione dell&#39;elemento finestra:
 
 1. Didascalia se è univoca
 1. ID controllo, che può essere univoco o meno per una determinata finestra di dialogo
@@ -731,7 +731,7 @@ Dopo aver aggiunto questi file XML al file adobe-appmondata.jar, è necessario r
 1. Quando il componente è interrotto, fare clic con il pulsante destro del mouse e selezionare Disinstalla componente per rimuoverlo.
 1. Fare clic con il pulsante destro del mouse sull&#39;icona **Componenti** e selezionare **Installa componente**.
 1. Individuate e selezionate il file adobe-generatepdf-dsc.jar modificato, quindi fate clic su Apri. Accanto al componente GeneratePDF viene visualizzato un quadrato rosso.
-1. Espandere il componente GeneratePDF, selezionare Service Descriptor, quindi fare clic con il pulsante destro del mouse su GeneratePDFervice e selezionare Activate Service.
+1. Espandere il componente GeneratePDF, selezionare Service Descriptor, quindi fare clic con il pulsante destro del mouse su GeneratePDFService e selezionare Activate Service.
 1. Nella finestra di dialogo di configurazione visualizzata, immettete i valori di configurazione applicabili. Se lasciate vuoti questi valori, vengono utilizzati i valori di configurazione predefiniti.
 1. Fare clic con il pulsante destro del mouse su GeneratePDF e selezionare Avvia componente.
 1. Espandi servizi attivi. Se è in esecuzione, accanto al nome del servizio viene visualizzata una freccia verde. In caso contrario, il servizio è in stato di arresto.
@@ -741,7 +741,7 @@ Dopo aver aggiunto questi file XML al file adobe-appmondata.jar, è necessario r
 
 Se si desidera indirizzare i file a una nuova applicazione nativa, è necessario creare un file XML di script per tale applicazione. Per modificare il modo in cui il servizio Genera PDF interagisce con un&#39;applicazione nativa già supportata, è necessario modificare lo script per tale applicazione.
 
-Lo script contiene istruzioni che si spostano tra gli elementi della finestra dell&#39;applicazione nativa e forniscono risposte specifiche a tali elementi. Il file che contiene queste informazioni è `appmon.[appname]``.script.[locale].xml`. Un esempio è appmon.blocco note.script.en_US.xml.
+Lo script contiene istruzioni che si spostano tra gli elementi della finestra dell&#39;applicazione nativa e forniscono risposte specifiche a tali elementi. Il file che contiene queste informazioni è `appmon.`[nomeapp]&quot; `.script.`[locale]`.xml`. Un esempio è appmon.blocco note.script.en_US.xml.
 
 #### Identificazione dei passi che lo script deve eseguire {#identifying-steps-the-script-must-execute}
 
@@ -786,7 +786,7 @@ Utilizzate Microsoft Spy++ per ottenere le identità delle proprietà degli elem
 È necessario ordinare `window` ed `windowList` elementi come segue:
 
 * Quando più `window` elementi appaiono come elementi secondari in un elemento `windowList` o `dialog` elemento, ordinate tali `window` elementi in ordine decrescente, con le lunghezze dei `caption` nomi che indicano la posizione nell&#39;ordine.
-* Quando più `windowList` elementi appaiono in un `window` elemento, ordinate tali `windowList` elementi in ordine decrescente, con le lunghezze degli `caption` attributi del primo `indexes/`elemento che indicano la posizione nell&#39;ordine.
+* Quando più `windowList` elementi compaiono in un `window` elemento, ordinate tali `windowList` elementi in ordine decrescente, con le lunghezze degli `caption` attributi del primo `indexes/`elemento che indicano la posizione nell&#39;ordine.
 
 **Ordinamento degli elementi della finestra in un file di dialogo**
 
@@ -836,12 +836,12 @@ Se si crea uno script per un&#39;applicazione nativa non supportata in precedenz
 
 >[!NOTE]
 >
->In questo contesto, il termine aggiuntivo indica il contenuto del `appmon.[applicationname].addition.[locale].xml` file. Tale file specifica sostituzioni e aggiunte al file XML della finestra di dialogo.
+>In questo contesto, il termine aggiuntivo indica il contenuto del file `appmon.[applicationname].addition.[locale]`.xml. Tale file specifica sostituzioni e aggiunte al file XML della finestra di dialogo.
 
 È inoltre possibile modificare il file XML della finestra di dialogo aggiuntivo per un&#39;applicazione nativa per i seguenti scopi:
 
 * Per ignorare il file XML della finestra di dialogo per un&#39;applicazione con una risposta diversa
-* Aggiunta di una risposta a una finestra di dialogo non indirizzata nel file XML della finestra di dialogo per tale applicazione
+* Aggiunta di una risposta a una finestra di dialogo non indirizzata nel file XML della finestra di dialogo per l&#39;applicazione
 
 Il nome file che identifica un ulteriore file dialogXML è `appmon.[appname].addition.[locale].xml`. Un esempio è appmon.excel.addizione.en_US.xml.
 
@@ -849,7 +849,7 @@ Il nome del file XML della finestra di dialogo aggiuntiva deve utilizzare il for
 
 >[!NOTE]
 >
->Nessuna delle applicazioni generiche specificate nel file di configurazione native2pdfconfig.xml dispone di un file XML di dialogo primario. La sezione [Aggiunta o modifica del supporto per un formato](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) di file nativo descrive tali specifiche.
+>Nessuna delle applicazioni generiche specificate nel file di configurazione native2pdfconfig.xml dispone di un file XML della finestra di dialogo principale. La sezione [Aggiunta o modifica del supporto per un formato](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) di file nativo descrive tali specifiche.
 
 È necessario ordinare `windowList` gli elementi che vengono visualizzati come elementi secondari in un `window` elemento. (Vedere [Ordinamento degli elementi](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements)window e windowList.)
 
@@ -871,7 +871,7 @@ In questa procedura viene illustrato come aggiornare il file di configurazione d
 >
 >Il nome dell&#39;applicazione è specificato come valore dell&#39;attributo dell&#39; `GenericApp` elemento `name` . Questo valore deve corrispondere esattamente al nome corrispondente specificato nello script sviluppato per quell&#39;applicazione. Analogamente, l&#39;attributo dell&#39; `GenericApp` elemento `displayName` deve corrispondere esattamente alla didascalia della `expectedWindow` finestra dello script corrispondente. Tale equivalenza viene valutata dopo la risoluzione di eventuali espressioni regolari visualizzate negli `displayName` attributi o `caption` .
 
-In questo esempio, i dati di configurazione predefiniti forniti con il servizio Genera PDF sono stati modificati per specificare che Notepad (non Microsoft Word) deve essere utilizzato per elaborare i file con l&#39;estensione .txt. Prima di questa modifica, Microsoft Word veniva specificato come applicazione nativa che doveva elaborare tali file.
+In questo esempio, i dati di configurazione predefiniti forniti con il servizio Genera PDF sono stati modificati per specificare che Notepad (non Microsoft Word) deve essere utilizzato per elaborare i file con l&#39;estensione .txt. Prima di questa modifica, Microsoft Word veniva specificato come applicazione nativa che avrebbe dovuto elaborare tali file.
 
 **Modifiche per reindirizzare i file di testo a Notepad (native2pdfconfig.xml)**
 
