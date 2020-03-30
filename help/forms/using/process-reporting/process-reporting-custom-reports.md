@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,16 +30,16 @@ Prima di aggiungere un rapporto personalizzato, effettuate le seguenti operazion
 
 ## Utilizzo dell&#39;interfaccia REST di QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l’interfaccia [REST](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder prima di eseguire i seguenti passaggi:
+L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scoprite come utilizzare l&#39;interfaccia [REST](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder prima di eseguire i seguenti passaggi:
 
-1. Passa all’URL `https://[server]:[port]/lc/bin/querybuilder.json`
+1. Passa all’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Creare una query basata sulla struttura del nodo di storage Report processo e sulle proprietà del nodo.
 
-   Potete specificare parametri facoltativi per offset, limite, hit e proprietà. È possibile codificare gli argomenti per i report statici e recuperare i parametri dall&#39;interfaccia per i report dinamici.
+   Potete specificare parametri facoltativi per l’offset, il limite, gli hit e le proprietà. È possibile codificare gli argomenti per i report statici e recuperare i parametri dall&#39;interfaccia per i report dinamici.
 
    Per recuperare tutti i nomi dei processi, la query è:
 
-   `https://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
+   `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >
@@ -638,8 +638,8 @@ I prerequisiti per la creazione di un’interfaccia utente separata per la visua
    * **id**- Specifica un numero di identificazione univoco del report.
    * **name**- Specifica il nome del report. Il nome viene visualizzato nell’interfaccia utente.
    * **link**- Specifica il collegamento relativo al renderer dell&#39;interfaccia utente separata. Il collegamento viene creato al punto 1.
-   * **description**- Specifica la descrizione di una riga del report. È possibile lasciare vuoto il campo descrizione.
-   * **icon**- Specifica l&#39;immagine da rappresentare pittoricamente il rapporto. Potete lasciare vuoto il campo dell’icona.
+   * **description**- Specifica la descrizione di una riga del report. È possibile lasciare vuoto il campo di descrizione.
+   * **icon**- Specifica l&#39;immagine da rappresentare pittoricamente il rapporto. È possibile lasciare vuoto il campo dell&#39;icona.
    ![Proprietà del nodo ](assets/node_properties_new.png)
 
    Proprietà del nodo
