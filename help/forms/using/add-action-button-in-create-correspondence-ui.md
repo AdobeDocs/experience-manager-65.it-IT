@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,29 +40,29 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia lettera per l
 
 ### Aggiungere il pulsante all’interfaccia utente Crea corrispondenza {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
+1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 1. Nella cartella delle app, crea una cartella denominata `defaultApp` con percorso/struttura simile alla cartella defaultApp (che si trova nella cartella di configurazione). Per creare la cartella, effettuate le seguenti operazioni:
 
    1. Fai clic con il pulsante destro del mouse sulla cartella **defaultApp** nel percorso seguente e seleziona Nodo **** sovrapposizione:
 
-       /libs/fd/cm/config/defaultApp/
+      /libs/fd/cm/config/defaultApp/
 
-      ![Overlay, nodo](assets/1_defaultapp.png)
+      ![Sovrapposizione, nodo](assets/1_defaultapp.png)
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/config/defaultApp/
+      **Percorso:** /libs/fd/cm/config/defaultApp/
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
-      ![Overlay, nodo](assets/2_defaultappoverlaynode.png)
+      ![Sovrapposizione, nodo](assets/2_defaultappoverlaynode.png)
 
    1. Fai clic su **OK**. 
    1. Fate clic su **Salva tutto**.
 
-1. Eseguite una copia del file acmExtensionsConfig.xml (esiste nel ramo /libs) nel ramo /apps.
+1. Eseguite una copia del file acmExtensionsConfig.xml (esiste nel ramo /libs) sotto il ramo /apps.
 
    1. Vai a &quot;/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml&quot;
 
@@ -125,17 +125,17 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia lettera per l
 
 Il file ACMExtensionMessages.properties include etichette e messaggi di descrizione dei vari campi nell&#39;interfaccia utente Crea corrispondenza. Affinché le azioni/i pulsanti personalizzati funzionino, create una copia di questo file nel ramo /apps.
 
-1. Fate clic con il pulsante destro del mouse sulla cartella delle **impostazioni** internazionali nel percorso seguente e selezionate **Overlay Node**:
+1. Fate clic con il pulsante destro del mouse sulla cartella delle **impostazioni** internazionali nel percorso seguente e selezionate Nodo **** sovrapposizione:
 
    /libs/fd/cm/config/defaultApp/locale
 
 1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-   **** Percorso:/libs/fd/cm/config/defaultApp/locale
+   **Percorso:** /libs/fd/cm/config/defaultApp/locale
 
-   **** Posizione overlay: /apps/
+   **Posizione overlay:** /apps/
 
-   **** Corrispondenza tipi di nodo: Selezionato
+   **Corrispondenza tipi di nodo:** Selezionato
 
 1. Fai clic su **OK**. 
 1. Fate clic su **Salva tutto**.
@@ -155,7 +155,7 @@ Il file ACMExtensionMessages.properties include etichette e messaggi di descrizi
 
    `loc.letterInstance.letterreview.label=Revue De Lettre`
 
-   In modo simile, in questo file è possibile aggiungere più proprietà, ad esempio per descrizioni e stili.
+   In modo simile, in questo file è possibile aggiungere più proprietà, ad esempio per la descrizione comandi e lo stile.
 
 1. Fate clic su **Salva tutto**.
 
@@ -167,7 +167,7 @@ Dopo aver apportato ogni modifica sul lato server, riavviate il bundle Adobe Ass
 >
 >Potrebbe essere necessario cancellare la cache del browser.
 
-1. Passa a `https://[host]:[port]/system/console/bundles`. Se necessario, effettuate l’accesso come amministratore.
+1. Passa a `https://[host]:'port'/system/console/bundles`. Se necessario, effettuate l’accesso come amministratore.
 
 1. Individuate il bundle Adobe Asset Composer Building Block. Riavviate il bundle: fate clic su Interrompi e quindi su Avvia.
 
@@ -189,7 +189,7 @@ La gestione dell&#39;azione o del pulsante quando si fa clic su action/button in
 * Attivare/disattivare l’azione aggiunta: eseguito ignorando la funzione actionEnabled().
 * Gestione effettiva dell&#39;azione quando l&#39;utente fa clic sul pulsante: viene eseguito ignorando l&#39;implementazione della funzione handleAction().
 
-1. Passa a `https://[server]:[port]/[ContextPath]/crx/de`. Se necessario, effettuate l’accesso come amministratore.
+1. Passa a `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessario, effettuate l’accesso come amministratore.
 
 1. Nella cartella delle app, create una cartella denominata `js` nel ramo /apps di CRX con una struttura simile alla seguente:
 
@@ -203,11 +203,11 @@ La gestione dell&#39;azione o del pulsante quando si fa clic su action/button in
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
    1. Fai clic su **OK**. 
    1. Fate clic su **Salva tutto**.
@@ -338,7 +338,7 @@ components.zip
 
 Il processo LCA viene eseguito sul server LiveCycle e richiede l&#39;indirizzo del server e le credenziali di accesso.
 
-1. Accedete a `https://[server]:[port]/system/console/configMgr` e accedete come amministratore.
+1. Accedete a `https://'[server]:[port]'/system/console/configMgr` e accedete come amministratore.
 1. Individuare la configurazione Adobe LiveCycle Client SDK e fare clic su **Modifica** (icona di modifica). Viene visualizzato il pannello Configurazioni.
 
 1. Immettete i seguenti dettagli e fate clic su **Salva**:
@@ -360,7 +360,7 @@ Processo di LiveCycle richiesto per abilitare il processo del servizio e-mail.
 
 1. Vai a **Home > Servizi > Applicazioni e servizi > Gestione** applicazione.
 
-1. Se l&#39;applicazione SendLetterForReview è già presente, ignora i passaggi rimanenti di questa procedura, altrimenti continua con i passaggi successivi.
+1. Se l’applicazione SendLetterForReview è già presente, ignora i passaggi rimanenti di questa procedura, altrimenti continua con i passaggi successivi.
 
    ![Applicazione SendLetterForReview nell&#39;interfaccia utente](assets/12_applicationmanagementlc.png)
 
@@ -380,7 +380,7 @@ Processo di LiveCycle richiesto per abilitare il processo del servizio e-mail.
 
 Ricorda nel server AEM i servizi LiveCycle a cui vuoi accedere.
 
-1. Accedete come amministratore a `https:/[host]/:[port]/system/console/configMgr`.
+1. Accedete come amministratore a `https:/[host]:'port'/system/console/configMgr`.
 
 1. Individua e fai clic su Configurazione **SDK client** Adobe LiveCycle. Viene visualizzato il pannello Configurazione Adobe LiveCycle Client SDK.
 1. Nell’elenco Nome servizio, fare clic sull’icona + e aggiungere un serviceName **SendLetterForReview/SendLetterForReviewProcess**.
@@ -397,13 +397,13 @@ In questo scenario, affinché Gestione corrispondenza possa inviare un messaggio
 
 1. Individua e fai clic su **EmailService**.
 
-1. Nell&#39;host **** SMTP configurate il servizio e-mail.
+1. Nell&#39;host **** SMTP, configurare il servizio e-mail.
 
 1. Fai clic su **Salva**.
 
 #### Configurare il servizio DSC {#configure-the-dsc-service}
 
-Per utilizzare l&#39;API di gestione della corrispondenza, scaricate il file DSCSample.jar (allegato in questo documento come parte di components.zip) e caricatelo nel server LiveCycle. Dopo il caricamento del file DSCSample.jar nel server LiveCycle, il server AEM utilizza il file DSCSample.jar per accedere all&#39;API renderingLetter.
+Per utilizzare l&#39;API di gestione della corrispondenza, scaricate il file DSCSample.jar (allegato in questo documento come parte di components.zip) e caricatelo nel server di LiveCycle. Dopo il caricamento del file DSCSample.jar nel server LiveCycle, il server AEM utilizza il file DSCSample.jar per accedere all&#39;API renderingLetter.
 
 Per ulteriori informazioni, consultate [Connessione di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
@@ -413,7 +413,7 @@ Per ulteriori informazioni, consultate [Connessione di AEM Forms con Adobe LiveC
 
 1. Immettete i seguenti parametri nel file di configurazione:
 
-   * **crx.serverUrl**=https:/[host]/:[porta]/percorso[]contestuale/URL[AEM]
+   * **crx.serverUrl**=https:/host:port/[percorso]contestuale/URL[AEM]
    * **crx.username**= nome utente AEM
    * **crx.password**= password AEM
    * **crx.appRoot**=/content/apps/cm
