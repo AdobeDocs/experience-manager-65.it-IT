@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ L&#39;integrazione dei dati supporta tipi di autenticazione oututh2.0, autentica
 
 Puoi configurare i database relazionali utilizzando la configurazione della console Web di AEM. Effettua le seguenti operazioni:
 
-1. Andate alla console Web di AEM all&#39;indirizzo https://[server]:[host]/sistema/console/configMgr.
+1. Andate alla console Web di AEM all&#39;indirizzo https://server:host/system/console/configMgr.
 1. Cerca la configurazione **[!UICONTROL Apache Sling Connection Pooled DataSource]** . Toccate per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione, specificate i dettagli per il database da configurare, ad esempio:
 
@@ -47,7 +47,7 @@ Puoi configurare i database relazionali utilizzando la configurazione della cons
    >
    >    
    >    
-   >    1. Andate a https://[server]:[porta]/sistema/console/crittografia.
+   >    1. Accedete a https://&#39;[server]:[porta]&#39;/system/console/crypto.
    >    1. Nel campo Testo **** normale, specificare la password o qualsiasi stringa da cifrare e fare clic su **[!UICONTROL Proteggi]**.
    >    
    >    
@@ -66,7 +66,7 @@ Puoi configurare i database relazionali utilizzando la configurazione della cons
 
 Puoi configurare il profilo utente AEM tramite la configurazione del connettore profilo utente nella console Web di AEM. Effettua le seguenti operazioni:
 
-1. Andate alla console Web di AEM all&#39;indirizzo https://[server]:[host]/sistema/console/configMgr.
+1. Andate alla console Web di AEM all&#39;indirizzo https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Cerca integrazioni dati **[!UICONTROL AEM Forms - Configurazione]** connettore profilo utente e tocca per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo Configurazione connettore profilo utente, potete aggiungere, rimuovere o aggiornare le proprietà del profilo utente. Le proprietà specificate saranno disponibili per l&#39;uso nel modello dati del modulo. Utilizzate il formato seguente per specificare le proprietà del profilo utente:
 
@@ -78,7 +78,7 @@ Puoi configurare il profilo utente AEM tramite la configurazione del connettore 
    * `name=profile/empLocation/*/city,type=string`
    >[!NOTE] {graybox=&quot;true&quot;}
    >
-   >L&#39;esempio ***** riportato sopra indica tutti i nodi sotto il `profile/empLocation/` nodo nel profilo utente AEM nella struttura CRXDE. Significa che il modello dati modulo può accedere alla `city` proprietà di tipo `string` presente in qualsiasi nodo sotto il `profile/empLocation/` nodo. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
+   >L&#39;esempio ***** riportato sopra indica tutti i nodi sotto il `profile/empLocation/` nodo nel profilo utente AEM nella struttura CRXDE. Ciò significa che il modello dati modulo può accedere alla `city` proprietà di tipo `string` presente in qualsiasi nodo sotto il `profile/empLocation/` nodo. Tuttavia, i nodi che contengono la proprietà specificata devono seguire una struttura coerente.
 
 1. Toccate **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -150,7 +150,7 @@ I servizi Web basati su SOAP sono descritti utilizzando le specifiche [WSDL (](h
 Un servizio OData è identificato dall&#39;URL principale del servizio. Per configurare un servizio OData nei servizi cloud AEM, accertatevi di disporre dell’URL principale del servizio per il servizio ed effettuate le seguenti operazioni:
 
 >[!NOTE]
-Per una guida dettagliata sulla configurazione di Microsoft Dynamics 365, online o in locale, vedere Configurazione [di](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft Dynamics OData.
+Per una guida dettagliata sulla configurazione di Microsoft Dynamics 365, in linea o in locale, vedere Configurazione [di](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft Dynamics OData.
 
 1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini]** dati. Toccate per selezionare la cartella in cui desiderate creare una configurazione cloud.
 
