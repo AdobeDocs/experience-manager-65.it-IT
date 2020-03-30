@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari di lingua
 Quando viene eseguito il rendering di un modulo adattivo, identifica le impostazioni internazionali richieste, esaminando i seguenti parametri nell&#39;ordine specificato:
 
 * Parametro della richiesta `afAcceptLang`Per ignorare le impostazioni internazionali del browser degli utenti, potete trasmettere il parametro della `afAcceptLang` richiesta per imporre le impostazioni internazionali. Ad esempio, con il seguente URL sarà necessario eseguire il rendering del modulo in lingua giapponese:
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * Le impostazioni internazionali del browser impostate per l’utente, specificate nella richiesta utilizzando l’ `Accept-Language` intestazione.
 
@@ -56,7 +56,7 @@ Per aggiungere il supporto per una nuova impostazione internazionale in fase di 
 
 ### Aggiunta di un&#39;impostazione internazionale al servizio Guide Localization {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Passa a `https://[server]:[port]/system/console/configMgr`.
+1. Passa a `https://'[server]:[port]'/system/console/configMgr`.
 1. Fare clic per modificare il componente **Guide Localization Service** .
 1. Aggiungere le impostazioni internazionali da aggiungere all&#39;elenco delle impostazioni internazionali supportate.
 
@@ -102,7 +102,7 @@ Esegui questo passaggio solo se il `<locale>` contenuto aggiunto non è compreso
 
 1. Aggiungete i valori `<locale>` della `languages` proprietà di `/etc/languages`.
 
-Il `<locale>` simbolo verrà visualizzato in `https://[server]:[port]/libs/cq/i18n/translator.html`.
+Il `<locale>` simbolo verrà visualizzato in `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
 
 ### Restart the server {#restart-the-server}
 
