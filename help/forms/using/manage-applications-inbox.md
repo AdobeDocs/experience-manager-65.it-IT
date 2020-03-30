@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,7 +31,7 @@ In sintesi, Inbox consente di creare una nuova applicazione e di gestire le atti
 
 ## Creare l&#39;applicazione {#create-application}
 
-1. Andate alla Casella in entrata AEM all&#39;indirizzo https://[server]:[porta]/aem/inbox.
+1. Andate alla Casella in entrata AEM all&#39;indirizzo https://&#39;[server]:[porta]&#39;/aem/inbox.
 1. Nell’interfaccia utente Inbox, toccate **[!UICONTROL Crea > Applicazione]**. Viene visualizzata la pagina Seleziona applicazione.
 1. Selezionate un’applicazione e fate clic su **[!UICONTROL Crea]**. Viene aperto il modulo adattivo associato all&#39;applicazione. Compila le informazioni nel modulo adattivo e tocca **[!UICONTROL Invia]**. Avvia il flusso di lavoro associato e crea un&#39;attività nella Casella in entrata dell&#39;assegnatario.
 
@@ -60,7 +60,7 @@ Le attività assegnate a un gruppo vengono visualizzate nella casella in entrata
 Quando si apre un&#39;attività, è possibile visualizzare i dettagli dell&#39;attività ed eseguire le azioni disponibili. Le azioni disponibili per un&#39;attività sono definite nel passaggio attività Assegna del flusso di lavoro Forms associato.
 
 1. Toccate per selezionare la miniatura dell’attività. Le opzioni per aprire o delegare l&#39;attività selezionata vengono visualizzate nella parte superiore.
-1. Toccate **Apri** per visualizzare i dettagli delle attività e intervenire. Viene visualizzata la visualizzazione dettagliata delle attività. In questa visualizzazione è possibile visualizzare i dettagli dell&#39;attività e intervenire sull&#39;attività.
+1. Toccate **Apri** per visualizzare i dettagli dell&#39;attività e intervenire. Viene visualizzata la visualizzazione dettagliata delle attività. In questa visualizzazione è possibile visualizzare i dettagli dell&#39;attività e intervenire sull&#39;attività.
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Quando si interviene sull&#39;attività, questa continua a essere implementata n
 
 ### Visualizza attività completate {#view-completed-tasks}
 
-AEM Inbox visualizza solo le attività attive. Le attività completate non vengono visualizzate nell&#39;elenco. È tuttavia possibile utilizzare i filtri Inbox per filtrare le attività in base a diversi parametri, quali tipo di attività, stato, date di inizio e fine e così via. Per visualizzare le attività completate:
+AEM Inbox visualizza solo le attività attive. Le attività completate non vengono visualizzate nell&#39;elenco. Tuttavia, è possibile utilizzare i filtri Inbox per filtrare le attività in base a diversi parametri, quali tipo di attività, stato, date di inizio e fine e così via. Per visualizzare le attività completate:
 
 1. In AEM Inbox, toccate ![toggle-side-panel1](assets/toggle-side-panel1.png) per aprire il selettore dei filtri.
 1. Toccate **[!UICONTROL Stato]** attività a soffietto e selezionate **[!UICONTROL Completa]**. Vengono visualizzate tutte le attività completate.
