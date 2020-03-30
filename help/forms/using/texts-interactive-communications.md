@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -34,7 +34,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 1. Specificate le seguenti informazioni:
 
    * **[!UICONTROL Titolo]**: (Facoltativo) Immettere il titolo per il frammento di documento di testo. I titoli non devono essere univoci e possono contenere caratteri speciali e caratteri non inglesi. I testi sono indicati dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà.
-   * **[!UICONTROL Nome]**: Nome univoco del testo, all’interno di una cartella. In una cartella non possono essere presenti due frammenti di documento (testo, condizione o elenco) con lo stesso nome. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **[!UICONTROL Nome]**: Nome univoco del testo, all’interno di una cartella. In una cartella non possono essere presenti due frammenti di documento (testo, condizione o elenco) con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
 
    * **[!UICONTROL Descrizione]**: Digitate una descrizione del testo.
    * **[!UICONTROL Modello]** dati modulo: Facoltativamente, selezionare il pulsante di opzione Modello dati modulo per creare il testo basato su un modello dati del modulo. Quando si seleziona il pulsante di scelta Modello dati modulo, viene visualizzato il campo Modello **[!UICONTROL dati]** modulo. Individuare e selezionare un modello dati del modulo. Durante la creazione di testo e condizioni per una comunicazione interattiva, accertatevi di utilizzare lo stesso modello dati che intendete utilizzare nella comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, vedere Integrazione [](/help/forms/using/data-integration.md)dei dati.
@@ -72,7 +72,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 È possibile modificare un frammento di documento di testo esistente utilizzando la procedura seguente. È inoltre possibile scegliere di modificare un frammento di documento di testo direttamente da un editor di comunicazione interattiva.
 
 1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
-1. Selezionare un frammento di documento di testo.
+1. Individuare e selezionare un frammento di documento di testo.
 1. Toccate **[!UICONTROL Modifica]**.
 1. Apportate le modifiche necessarie. Per ulteriori informazioni sulle opzioni nel testo, consultate [Creare testo](#createtext).
 1. Toccate **[!UICONTROL Salva]** , quindi toccate **[!UICONTROL Chiudi]**.
@@ -85,7 +85,7 @@ Se durante la creazione di un testo è stato specificato un modello dati modulo,
 
 ![insert tfdmelementtext](assets/insertfdmelementtext.png)
 
-* Per inserire nel testo una proprietà del modello dati del modulo, posizionare il cursore nel punto in cui si desidera inserire la proprietà, quindi selezionare la proprietà **[A]** nel riquadro a sinistra toccando la proprietà, quindi toccare **[!UICONTROL [B]Aggiungi selezionato]**. È inoltre possibile toccare due volte la proprietà per inserirla nella posizione del cursore**[ C ]**. Le proprietà del modello dati modulo sono evidenziate in un colore di sfondo brunastro.
+* Per inserire nel testo una proprietà del modello dati del modulo, posizionare il cursore nel punto in cui si desidera inserire la proprietà, quindi selezionare la proprietà **[A]** nel riquadro a sinistra toccando la proprietà, quindi toccare **[!UICONTROL [B]Aggiungi selezionato]**. È inoltre possibile toccare due volte la proprietà per inserirla nella posizione del cursore**[ C ]**. Le proprietà del modello dati del modulo sono evidenziate in un colore di sfondo brunastro.
 
 In alternativa, è possibile cercare e aggiungere la proprietà del modello dati del modulo utilizzando il simbolo @ nell&#39;editor di testo. Posizionare il cursore nel punto in cui si desidera inserire la proprietà. Digitare @ seguito dalla stringa di ricerca. L&#39;operazione di ricerca viene eseguita su tutte le proprietà del modello dati del modulo e le variabili disponibili nel frammento di documento. Le proprietà o le variabili contenenti la stringa di ricerca vengono recuperate e visualizzate come elenco a discesa. Scorrete i risultati della ricerca e fate clic sulla proprietà che desiderate inserire nella posizione del cursore. Premete Esc per nascondere i risultati della ricerca.
 
@@ -100,7 +100,7 @@ Le variabili sono segnaposto che possono essere associati durante la creazione d
 È possibile utilizzare le variabili invece delle proprietà del modello dati modulo quando:
 
 * Un frammento di documento di testo deve essere utilizzato in più comunicazioni interattive in cui il binding deve essere diverso per le diverse comunicazioni interattive.
-* Al momento della creazione del frammento di testo non è presente un modello dati del modulo. È possibile inserire variabili e successivamente associarle alle proprietà del modello dati del modulo al momento della creazione della comunicazione interattiva.
+* Al momento della creazione del frammento di documento di testo non è presente un modello dati del modulo. È possibile inserire variabili e successivamente associarle alle proprietà del modello dati del modulo al momento della creazione della comunicazione interattiva.
 * È necessario eseguire un binding e recuperare il testo da un frammento di documento di testo. Solo i frammenti di documento di testo che possono essere associati a variabili non devono contenere variabili al loro interno.
 
 Durante la creazione o la modifica di un frammento di documento di testo, è possibile creare e inserire variabili. Le variabili create vengono visualizzate nella scheda Dati dell’interfaccia utente agente. L&#39;agente specifica i valori per le variabili durante la [preparazione e l&#39;invio della comunicazione interattiva tramite l&#39;interfaccia utente](/help/forms/using/prepare-send-interactive-communication.md)agente.
@@ -179,7 +179,7 @@ Utilizzando l&#39;editor di regole in un testo, potete creare regole per visuali
 
    Regola per visualizzare il testo selezionato se la posizione del destinatario è US in base ai dati di origine di FDM
 
-   * Quando create o modificate una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a tutta finestra consente di trascinare le proprietà e le variabili del modello dati del modulo per creare le regole. Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola.
+   * Durante la creazione o la modifica di una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a tutta finestra consente di trascinare le proprietà e le variabili del modello dati del modulo per creare le regole. Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola.
    * È inoltre possibile creare più condizioni in una regola.
    * Potete anche creare regole di sovrapposizione, in cui una regola viene applicata a una parte di contenuto a cui è già applicata una regola.
 
@@ -206,9 +206,9 @@ Barra degli strumenti di modifica dei font
 
 Allineamento, barra degli strumenti
 
-![Barra degli strumenti Elenco](do-not-localize/listingtoolbar.png)
+![Elenco, barra degli strumenti](do-not-localize/listingtoolbar.png)
 
-Barra degli strumenti Elenco
+Elenco, barra degli strumenti
 
 ### Evidenziare/enfatizzare parti di testo {#highlight}
 
@@ -216,9 +216,9 @@ Per evidenziare\enfatizzare parti di testo in un frammento di documento modifica
 
 ![textbackground-color-application-1](assets/textbackgroundcolorapplied-1.png)
 
-È possibile toccare direttamente un colore di base **[A]** presente nella palette Colori base oppure **selezionare** dopo aver utilizzato il cursore **[B]** per scegliere l&#39;ombreggiatura appropriata del colore.
+È possibile toccare direttamente un colore di base `**[A]**` presente nella palette Colori base oppure toccare **Seleziona** dopo aver utilizzato il cursore `**[B]**` per scegliere l&#39;ombreggiatura appropriata del colore.
 
-Facoltativamente, potete anche passare alla scheda Avanzate per selezionare la Tonalità, Luminosità e Saturazione appropriata **[C]** per creare il colore preciso e quindi toccare Seleziona **[D]** per applicare il colore per evidenziare il testo.
+Facoltativamente, potete anche passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione appropriata `**[C]**` per creare il colore preciso, quindi toccare Seleziona `**[D]**` per applicare il colore per evidenziare il testo.
 
 ![textbackground-color-2](assets/textbackgroundcolor-2.png)
 
