@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -42,7 +42,7 @@ La procedura seguente aggiunge un comando &quot;Scarica PDF semplice&quot; alla 
 
 Per personalizzare la gestione della corrispondenza per consentire agli utenti di scaricare un PDF semplice di lettere, procedere come segue:
 
-1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
+1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 
 1. Nella cartella delle app, create una cartella denominata items con percorso/struttura simile alla cartella degli elementi che si trova nella cartella di selezione mediante la procedura seguente:
 
@@ -61,13 +61,13 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **Percorso:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **** Posizione: /apps/
+      **Posizione:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
-      ![Overlay, nodo](assets/2_createnodedownloadflatpdf.png)
+      ![Sovrapposizione, nodo](assets/2_createnodedownloadflatpdf.png)
 
    1. Fai clic su **OK**. La struttura delle cartelle viene creata nella cartella delle app.
 
@@ -79,9 +79,9 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Crea nodo contenga i valori seguenti e fate clic su **OK**:
 
-      **** Nome: downloadFlatPDF (o il nome che si desidera assegnare a questa proprietà)
+      **Nome:** downloadFlatPDF (o il nome che si desidera assegnare a questa proprietà)
 
-      **** Tipo: nt:non strutturato
+      **Tipo:** nt:non strutturato
 
    1. Fare clic sul nuovo nodo creato (qui downloadFlatPDF). CRX visualizza le proprietà del nodo.
 
@@ -102,7 +102,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
         <tr>
         <td>foundation-collection-action</td>
         <td>Stringa</td>
-        <td><p>{"target": ".cq-management-asset-admin-pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> activeSelectionCount <strong></strong> può essere uno o più elementi per consentire la selezione di una o più risorse sulle quali viene eseguita l'azione personalizzata.</p> <p><strong>type</strong> può essere una o più voci (virgole separate, voci multiple) tra le seguenti: LETTERA,TESTO,ELENCO,CONDIZIONE,DATADICTIONARIO</p> </td>
+        <td><p>{"target": ".cq-management-asset-admin-child-pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> activeSelectionCount <strong></strong> può essere uno o più elementi, per consentire la selezione di una o più risorse sulle quali viene eseguita l'azione personalizzata.</p> <p><strong>type</strong> può essere una o più voci (virgole separate, voci multiple) tra le seguenti: LETTERA,TESTO,ELENCO,CONDIZIONE,DATADICTIONARIO</p> </td>
         </tr>
         <tr>
         <td>icon</td>
@@ -132,7 +132,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
         <tr>
         <td>titolo</td>
         <td>Stringa</td>
-        <td>Scaricare un PDF semplice della lettera selezionata (o qualsiasi altro testo etichetta/Alt)<br /> <br /> Il titolo è il testo alternativo visualizzato quando l'utente passa il puntatore del mouse sul comando personalizzato.</td>
+        <td>Scaricare un PDF semplice della lettera selezionata (o qualsiasi altro testo etichetta/Alt)<br /> <br /> Il titolo è il testo alternativo che Gestione corrispondenza visualizza quando l'utente passa il puntatore del mouse sul comando personalizzato.</td>
         </tr>
         </tbody>
        </table>
@@ -145,11 +145,11 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **Percorso:** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Posizione: /apps/
+      **Posizione:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
    1. Fai clic su **OK**. La struttura delle cartelle viene creata nella cartella delle app. Fate clic su **Salva tutto**.
 
@@ -223,7 +223,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
       '</div>';
       ```
 
-      Il codice aggiunto in questo passaggio ha la priorità sul codice presente nella cartella libs, pertanto copia il codice precedente nel file formaction.js nel ramo /apps. Copiando il codice dal ramo /libs al ramo /apps si garantisce che funzioni anche la funzionalità precedente.
+      Il codice aggiunto in questo passaggio ha la priorità sul codice presente nella cartella libs, quindi copiate il codice precedente nel file formaction.js nel ramo /apps. Copiando il codice dal ramo /libs al ramo /apps si garantisce che funzioni anche la funzionalità precedente.
 
       Il codice riportato sopra è relativo alla gestione dell&#39;azione specifica delle lettere del comando creato in questa procedura. Per la gestione delle azioni di altre risorse, modificate il codice JavaScript.
 
@@ -235,11 +235,11 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **Percorso:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Posizione: /apps/
+      **Posizione:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
    1. Fai clic su **OK**. La struttura delle cartelle viene creata nella cartella delle app.
 
@@ -251,9 +251,9 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
    1. Verificate che la finestra di dialogo Crea nodo contenga i valori seguenti e fate clic su **OK**:
 
-      **** Nome: letterpdfdownloader (oppure il nome che si desidera assegnare a questa proprietà) deve essere univoco. Se utilizzate un nome diverso, specificate lo stesso nella variabile ACTION_URL del file formaction.js.)
+      **Nome:** letterpdfdownloader (oppure il nome che si desidera assegnare a questa proprietà) deve essere univoco. Se utilizzate un nome diverso, specificate lo stesso nella variabile ACTION_URL del file formaction.js.)
 
-      **** Tipo: nt:non strutturato
+      **Tipo:** nt:non strutturato
 
    1. Fare clic sul nuovo nodo creato (qui downloadFlatPDF). CRX visualizza le proprietà del nodo.
 
@@ -347,9 +347,9 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
 ## Download di un PDF semplice di una lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Dopo aver aggiunto funzionalità personalizzate per scaricare il PDF piatto delle lettere, è possibile utilizzare la procedura seguente per scaricare la versione PDF semplice della lettera selezionata:
+Dopo aver aggiunto funzionalità personalizzate per scaricare il PDF piatto delle lettere, è possibile utilizzare i seguenti passaggi per scaricare la versione PDF semplice della lettera selezionata:
 
-1. Vai a `https://[server]:[port]/[ContextPath]/projects.html` e accedi.
+1. Vai a `https://'[server]:[port]'/[ContextPath]/projects.html` e accedi.
 
 1. Selezionare **Moduli > Lettere**. Gestione corrispondenza elenca le lettere disponibili nel sistema.
 1. Fare clic su **Seleziona** , quindi su una lettera per selezionarla.
@@ -359,7 +359,7 @@ Dopo aver aggiunto funzionalità personalizzate per scaricare il PDF piatto dell
 
    ![Funzionalità personalizzata: Scarica PDF semplice](assets/5_downloadflatpdf.png)
 
-1. Nella finestra di dialogo Scarica lettera come PDF, selezionare il codice XML appropriato da cui compilare i dati nel PDF.
+1. Nella finestra di dialogo Scarica lettera come PDF, selezionare il codice XML appropriato dal quale si desidera compilare i dati nel PDF.
 
    >[!NOTE]
    >
