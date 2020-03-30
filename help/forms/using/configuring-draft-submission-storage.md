@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
 
 ## Panoramica {#overview}
 
-Con AEM Forms puoi archiviare:
+Con AEM Forms è possibile archiviare:
 
 * **Bozze**: Modulo di lavoro in corso che gli utenti finali compilano e salvano per un secondo momento e che inviano successivamente.
 
@@ -38,7 +38,7 @@ Oltre al suddetto approccio predefinito, è disponibile un&#39;implementazione a
 
 ## Configurazione dei servizi di bozza e di invio di Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-In Configurazione console Web AEM ( `https://[host]:[port]/system/console/configMgr`), fare clic per aprire la configurazione **bozza e invio del portale** Forms Portal in modalità di modifica.
+In Configurazione console Web AEM ( `https://[host]:'port'/system/console/configMgr`), fare clic per aprire la configurazione **bozza e invio del portale** Forms Portal in modalità di modifica.
 
 Specificate i valori per le proprietà in base ai vostri requisiti come descritto di seguito:
 
@@ -102,7 +102,7 @@ I dati vengono inviati direttamente all&#39;istanza remota configurata
 
 Oltre alla configurazione specificata in precedenza, fornisci informazioni sull&#39;istanza di elaborazione remota configurata.
 
-In Configurazione console Web AEM ( `https://[host]:[port]/system/console/configMgr`), fai clic per aprire il servizio **** Impostazioni di AEM DS in modalità di modifica. Nella finestra di dialogo Servizio impostazioni AEM DS, fornisci informazioni sull’URL del server di elaborazione, il nome utente e la password del server di elaborazione.
+In Configurazione console Web AEM ( `https://[host]:'port'/system/console/configMgr`), fai clic per aprire il servizio **** Impostazioni di AEM DS in modalità di modifica. Nella finestra di dialogo Servizio impostazioni AEM DS, fornisci informazioni sull’URL del server di elaborazione, il nome utente e la password del server di elaborazione.
 
 >[!NOTE]
 >
