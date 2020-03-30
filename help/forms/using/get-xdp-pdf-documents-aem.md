@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ Potete caricare i tipi di risorse supportati singolarmente o come archivio ZIP. 
 
 ## Caricamento di moduli {#uploading-forms}
 
-1. Accedi all’interfaccia utente di AEM Forms effettuando l’accesso `https://[server]:[port]/aem/forms.html`.
+1. Accedi all’interfaccia utente di AEM Forms effettuando l’accesso `https://'[server]:[port]'/aem/forms.html`.
 1. Passare alla cartella in cui si desidera caricare il modulo o la cartella che contiene i moduli.
 1. Nella barra degli strumenti delle azioni, toccate **Crea > Caricamento** file.
 
@@ -65,7 +65,7 @@ Il server AEM Forms consente di eseguire il codice JavaScript. Un codice JavaScr
 
 Per impostazione predefinita, la modalità protetta è attivata. Se necessario, potete disattivare la modalità protetta:
 
-1. Accedete alla console Web di AEM come amministratore. L’URL è https://[server]:[porta]/sistema/console/configMgr
+1. Accedete alla console Web di AEM come amministratore. L’URL è https://&#39;[server]:[porta]&#39;/system/console/configMgr
 1. Aprire le configurazioni dei moduli mobili per la modifica.
 1. Deselezionare l’opzione Modalità protetta e fare clic su **Salva**. La modalità protetta è disabilitata.
 
