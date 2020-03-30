@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,14 +22,14 @@ Se eliminate una risorsa dall’istanza Autore, anche la risorsa viene eliminata
 
 ## Come eliminare un modulo {#how-to-delete-a-form}
 
-1. Accedi all’interfaccia utente di AEM Forms effettuando l’accesso `https://[hostname]:[portport]/aem/forms.html.`
+1. Accedi all’interfaccia utente di AEM Forms effettuando l’accesso `https://[hostname]:'port'/aem/forms.html.`
 1. Individuare e selezionare il modulo da eliminare. Fare clic su Elimina ![aem6forms_delete2](assets/aem6forms_delete2.png) dalla barra degli strumenti e confermare l&#39;operazione di eliminazione.
 
    >[!NOTE]
    >
    >È possibile eliminare un solo modulo alla volta. Eliminare più moduli singolarmente o eliminare la cartella principale.
 
-1. Prima di eliminare una risorsa, in AEM Forms sono disponibili riferimenti e viene richiesta una conferma esplicita. Fate clic su Forza eliminazione per eliminare la risorsa indipendentemente dallo stato della relazione.
+1. Prima di eliminare una risorsa, in AEM Forms vengono cercati riferimenti e viene richiesta una conferma esplicita. Fate clic su Forza eliminazione per eliminare la risorsa indipendentemente dallo stato della relazione.
 
    >[!NOTE]
    >
