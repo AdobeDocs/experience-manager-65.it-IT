@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -47,18 +47,18 @@ Dopo aver creato una cartella, aprite la cartella ed eseguite i seguenti passagg
 
 Quando apri un modello per la modifica, puoi vedere i seguenti componenti di AEM Editor:
 
-* **Barra degli strumenti** Pagina Contiene le seguenti opzioni:
+* **Barra degli strumenti** della pagina Contiene le seguenti opzioni:
 
    * **Attiva/Disattiva pannello** laterale: Consente di mostrare o nascondere la barra laterale.
    * **Informazioni** pagina: Consente di specificare informazioni quali l’ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri pagina e la libreria lato client della progettazione della pagina.
    * **Emulatore**: Consente di simulare e personalizzare l’aspetto di diversi dispositivi.
-   * **** Selettore livello: Consente di modificare il livello.
+   * **Selettore livello:** Consente di modificare il livello.
 Potete scegliere il livello **Struttura** o Contenuto **** iniziale. Il livello Struttura consente di aggiungere e personalizzare l’intestazione e il piè di pagina. Il livello Contenuto iniziale consente di personalizzare il contenuto del modulo.
 
-   * **** Anteprima: Consente di visualizzare un’anteprima dell’aspetto del modello al momento della pubblicazione. Potete usare Selettore livello e Anteprima per alternare le modalità di modifica e anteprima.
+   * **Anteprima:** Consente di visualizzare un’anteprima dell’aspetto del modello al momento della pubblicazione. Potete usare Selettore livello e Anteprima per alternare le modalità di modifica e anteprima.
 
-* **** Barra laterale: Fornisce i browser Contenuto, Proprietà, Risorse e Componenti.
-* **** Barra degli strumenti del componente: Quando selezionate un componente, compare una barra degli strumenti che consente di personalizzare il componente.
+* **Barra laterale:** Fornisce i browser Contenuto, Proprietà, Risorse e Componenti.
+* **Barra degli strumenti del componente:** Quando selezionate un componente, compare una barra degli strumenti che consente di personalizzare il componente.
 * **Pagina**: Area in cui aggiungere il contenuto per creare il modello.
 
 Vedere [Introduzione alla creazione di moduli](../../forms/using/introduction-forms-authoring.md) adattivi per comprendere meglio l&#39;editor dell&#39;interfaccia utente touch.
@@ -80,7 +80,7 @@ Quando si seleziona il livello struttura nell&#39;Editor modelli, è possibile v
 
 Contenitori di layout nel livello struttura
 
-******A. Contenitore di layout per il componente Intestazione** B. Contenitore di layout per il componente Piè di pagina
+**A.** Contenitore di layout per il componente Intestazione **B.** Contenitore di layout per il componente Piè di pagina
 
 Trascinare il componente Intestazione modulo adattiva nel contenitore di layout sopra il contenitore Modulo adattivo. Dopo aver aggiunto il componente, potete specificarne le proprietà che consentono di aggiungere un logo e il relativo titolo.
 
@@ -117,7 +117,7 @@ Consultate [Barra laterale](../../forms/using/introduction-forms-authoring.md#si
 
 >[!NOTE]
 >
->Quando si seleziona Memorizza contenuto o Memorizza PDF come azione di invio, è possibile specificare il percorso di archiviazione. Se si specifica il percorso nel modello, tutti i moduli creati da esso avranno lo stesso percorso. È possibile specificare il percorso di memorizzazione corretto o assicurarsi che gli autori dei moduli lo aggiornino per evitare che i dati di ogni modulo vengano memorizzati nella stessa posizione.
+>Quando si seleziona Archivia contenuto o Memorizza PDF come azione di invio, è possibile specificare il percorso di archiviazione. Se si specifica il percorso nel modello, tutti i moduli creati da esso avranno lo stesso percorso. È possibile specificare il percorso di memorizzazione corretto o assicurarsi che gli autori dei moduli lo aggiornino per evitare che i dati di ogni modulo vengano memorizzati nella stessa posizione.
 
 #### Creazione di un modello di modulo adattivo con schede e pannelli {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
@@ -126,7 +126,7 @@ Ad esempio, potete creare un modello con le seguenti schede:
 * Informazioni generali
 * Informazioni professionali
 
-Avete aggiunto un logo, un titolo e un piè di pagina nel livello struttura. Bloccare l&#39;intestazione e il piè di pagina per impedire agli autori di modificarli quando utilizzano il modello per creare moduli.
+È stato aggiunto un logo, un titolo e un piè di pagina al livello struttura. Bloccare l&#39;intestazione e il piè di pagina per impedire agli autori di modificarli quando utilizzano il modello per creare moduli.
 
 Modificate il livello da Struttura a Contenuto iniziale e iniziate ad aggiungere contenuto al modulo. Per creare una struttura a schede, aggiungere un pannello secondario nel pannello guideRoot del contenitore Modulo adattivo. Per aggiungere un pannello:
 
@@ -163,7 +163,7 @@ Quando si crea un modulo adattivo, è possibile visualizzare il modello elencato
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando importate il modulo in un’altra istanza di AEM Forms, questo viene importato senza il relativo modello. Se un modulo viene importato ma il suo modello non è disponibile, non viene eseguito il rendering. Potete creare un pacchetto del modello personalizzato da un `/conf` nodo all&#39;interno di `https://<server>:<port>/crx/packmgr`e portarlo nell&#39;istanza AEM Forms in cui desiderate caricare il modulo.
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando importate il modulo in un’altra istanza di AEM Forms, questo viene importato senza il relativo modello. Se un modulo viene importato ma il suo modello non è disponibile, non viene eseguito il rendering. Potete creare un pacchetto del modello personalizzato da un `/conf` nodo all&#39;interno di `https://<server>:<port>/crx/packmgr`e portarlo nell&#39;istanza di AEM Forms in cui desiderate caricare il modulo.
 
 ## Creazione di un modulo adattivo utilizzando il modello {#creating-an-adaptive-form-using-the-template}
 
@@ -179,7 +179,7 @@ Per visualizzare e nascondere i modelli, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >L’URL della console Web di AEM è https://[server]:[porta]/sistema/console/configMgr
+   >L’URL della console Web di AEM è https://&#39;[server]:[porta]&#39;/system/console/configMgr
 
 1. Individuare e aprire le impostazioni di configurazione **di** FormsManager:
 
@@ -191,6 +191,6 @@ Per visualizzare e nascondere i modelli, effettuate le seguenti operazioni:
 ## Consigli {#recommendations}
 
 * Quando si modificano le proprietà del modulo nell&#39;editor modelli, non utilizzare la proprietà BindReference.
-* Per aggiungere un punto di interruzione, crearlo al momento della creazione di un modello di modulo adattivo.
+* Se si desidera aggiungere un punto di interruzione, crearlo al momento della creazione di un modello di modulo adattivo.
 Per ulteriori informazioni sui punti di interruzione, consultate Layout [](/help/sites-authoring/responsive-layout.md)reattivo.
 
