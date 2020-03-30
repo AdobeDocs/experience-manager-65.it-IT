@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua i seguenti passaggi:
 
 1. Andate al pacchetto shareURL: `https://<server>:<port>/crx/packageshare`.
 
-1. Scaricate il pacchetto sorgente. Quando scaricate il pacchetto, questo viene aggiunto nel gestore pacchetti di AEM Forms.
+1. Scaricate il pacchetto di origine. Quando scaricate il pacchetto, questo viene aggiunto nel gestore pacchetti di AEM Forms.
 1. Dopo il download, passa a: `https://<server>:<port>/crx/packmgr/index.jsp`e installare `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 1. Per scaricare l&#39;archivio del codice sorgente, aprite `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.
@@ -70,7 +70,7 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
 
 1. Copiate l&#39; `adobe-lc-mobileworkspace-src-<version>.zip` archivio dalla cartella dei download a `[User_Home]/Projects/`.
 1. Estrarre l&#39;archivio nella `[User_Home]/Projects/[your-project]`directory.
-1. Andate alla directory ` [User_Home]/Projects/ `[del progetto]`/adobe-lc-mobileworkspace-src-[version]/ios` .
+1. Andate alla directory del ` [User_Home]/Projects/ `[vostro progetto]`/adobe-lc-mobileworkspace-src-[version]/ios` .
 1. Apri il `AEM Forms.xcodeproj` progetto in Xcode.
 1. Fate clic su **AEM Forms**, in **TARGET**, selezionate **AEM Forms**. Selezionate la scheda **Build Settings **(Impostazioni build), individuate la sezione **Code Signing Entitlement (Adesione firma** codice) e, nei campi Debug e Rilascio, effettuate una delle seguenti operazioni:
 
@@ -123,7 +123,7 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
 
 1. In **PROJECT**, seleziona **AEM Forms** e accertati che sia selezionata la firma appropriata per Identità **di firma del** codice, **Debug**, **Rilascio** **** e Qualsiasi SDK iOS.
 1. Collegate un iPad in provisioning a un computer Mac.
-1. Seleziona il dispositivo per il progetto **AEM Forms** .
+1. Seleziona il dispositivo di provisioning per il progetto **AEM Forms** .
 
    ![ipad](assets/ipad.png)
 
@@ -137,7 +137,7 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
 È necessario archiviare il progetto Xcode per creare il programma di installazione (un file .ipa) e un file elenco di proprietà (un file .plist). Il file dell&#39;elenco delle proprietà contiene le informazioni di configurazione dell&#39;app in hosting, ad esempio il nome e il percorso di hosting dell&#39;app. Per ulteriori informazioni sul file dell&#39;elenco delle proprietà, vedere [Informazioni sui file](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)dell&#39;elenco delle proprietà.
 
 1. Collegate un iPad in provisioning a un computer Mac. Per informazioni dettagliate sul provisioning di un iPad, consultate [Creazione e scaricamento di profili di provisioning di sviluppo](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
-1. Seleziona il dispositivo per il progetto **AEM Forms** .
+1. Seleziona il dispositivo di provisioning per il progetto **AEM Forms** .
 
    ![ipad-1](assets/ipad-1.png)
 
@@ -150,7 +150,7 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
 1. Selezionate **Salva per distribuzione** Enterprise o Ad Hoc come metodo di distribuzione e fate clic su **Avanti**.
 1. Selezionare l&#39;identità **di firma del** codice appropriata e fare clic su **Avanti**. Fare clic su **Consenti** di applicare la firma.
 1. Immettete il nome dell&#39;app e selezionate **Salva per distribuzione** Enterprise.
-1. Fornite l&#39;URL **** applicazione per l&#39;app. Ad esempio, per ospitare l&#39;app su un server CRX, immetti l&#39;URL `https://[LC_host]:[port]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Fornite l&#39;URL **** applicazione per l&#39;app. Ad esempio, per ospitare l&#39;app su un server CRX, immetti l&#39;URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. Nel campo **Titolo** , specificate Moduli AEM.
 1. Fate clic su **Salva** e chiudete Xcode.
 
