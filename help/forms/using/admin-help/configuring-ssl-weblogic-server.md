@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,9 +20,9 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 Per configurare SSL sul server WebLogic, è necessario disporre di una credenziale SSL per l&#39;autenticazione. Per creare una credenziale è possibile utilizzare Java keytool per eseguire le seguenti operazioni:
 
 * Create una coppia chiave pubblica/privata, racchiudete la chiave pubblica in un certificato autofirmato X.509 v1 memorizzato come catena di certificati a elemento singolo, quindi archiviate la catena di certificati e la chiave privata in un nuovo archivio chiavi. Questo archivio di chiavi è l&#39;archivio di chiavi Identità personalizzata del server dell&#39;applicazione.
-* Estrarre il certificato e inserirlo in un nuovo archivio chiavi. Questo keystore è l&#39;archivio chiavi Trust personalizzato del server dell&#39;applicazione.
+* Estrarre il certificato e inserirlo in un nuovo archivio di chiavi. Questo keystore è l&#39;archivio chiavi Trust personalizzato del server dell&#39;applicazione.
 
-Quindi, configurare WebLogic in modo che utilizzi l&#39;archivio chiavi identità personalizzata e l&#39;archivio chiavi trust personalizzato creato. Inoltre, disabilitare la funzione di verifica del nome host WebLogic perché il nome distinto utilizzato per creare i file dell&#39;archivio chiavi non includeva il nome del computer che ospita WebLogic.
+Quindi, configurare WebLogic in modo che utilizzi l&#39;archivio chiavi identità personalizzata e l&#39;archivio chiavi trust personalizzato creato. Inoltre, disabilitare la funzione di verifica del nome host WebLogic perché il nome distinto utilizzato per creare i file dell&#39;archivio di chiavi non includeva il nome del computer che ospita WebLogic.
 
 ## Creazione di una credenziale SSL da utilizzare sul server WebLogic {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
@@ -39,7 +39,7 @@ Il comando keytool si trova in genere nella directory Java jre/bin e deve includ
  <tbody>
   <tr>
    <td><p>-alias</p></td>
-   <td><p>Alias dell'archivio di chiavi.</p></td>
+   <td><p>L'alias dell'archivio di chiavi.</p></td>
    <td>
     <ul>
      <li><p>Keystore identità personalizzata: <code>ads-credentials</code></p></li>
@@ -86,7 +86,7 @@ Il comando keytool si trova in genere nella directory Java jre/bin e deve includ
   </tr>
   <tr>
    <td><p>-dname</p></td>
-   <td><p>Nome distinto che identifica la persona proprietaria dello store di chiavi.</p></td>
+   <td><p>Nome distinto che identifica la persona proprietaria dell'archivio di chiavi.</p></td>
    <td><p><code>"CN=</code><code>[User name]</code><code>,OU=</code><code>[Group Name]</code><code>, O=</code><code>[Company Name]</code><code>, L=</code><code>[City Name]</code><code>, S=</code><code>[State or province]</code><code>, C=</code><code>[Country Code]</code><code>"</code></p>
     <ul>
      <li><p><code><i>[User name]</i></code> è l'identificazione dell'utente proprietario dell'archivio di chiavi.</p></li>
@@ -131,7 +131,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
 
    >[!NOTE]
    >
-   >Sostituire `[JAVA_HOME]` con la directory in cui è installato il JDK e sostituire `store`*_*`password`* con la password per l&#39;archivio chiavi identità personalizzata.*
+   >Sostituire `[JAVA_HOME]` con la directory in cui è installato il JDK e sostituire `store`*_*`password`* con la password per l&#39;archivio di chiavi Identità personalizzata.*
 
    Esempio:
 
@@ -142,7 +142,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    Il file del certificato denominato &quot;ads-ca.cer&quot; viene creato nella directory [appserverdomain]/adobe/[*server name*] .
 
 1. Copiate il file ads-ca.cer nei computer host che richiedono una comunicazione sicura con il server dell&#39;applicazione.
-1. Inserire il certificato in un nuovo file dell&#39;archivio chiavi (l&#39;archivio chiavi personalizzato) immettendo il seguente comando:
+1. Inserite il certificato in un nuovo file dell&#39;archivio chiavi (l&#39;archivio chiavi personalizzato) immettendo il seguente comando:
 
    [JAVA_HOME]`/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
@@ -156,24 +156,24 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-Il file dell&#39;archivio chiavi personalizzato denominato &quot;ads-ca.jks&quot; viene creato nella directory [appserverdomain]/adobe/[server] .
+Il file dell&#39;archivio chiavi personalizzato denominato &quot;ads-ca.jks&quot; viene creato nella directory [appserverdomain]/adobe/&#39;server&#39;.
 
 Configurare WebLogic in modo che utilizzi l&#39;archivio chiavi identità personalizzata e l&#39;archivio chiavi trust personalizzato creato. Inoltre, disabilitare la funzione di verifica del nome host WebLogic perché il nome distinto utilizzato per creare i file dell&#39;archivio chiavi non includeva il nome del computer che ospita WebLogic Server.
 
 ## Configurare WebLogic per utilizzare SSL {#configure-weblogic-to-use-ssl}
 
 1. Avviate la console di amministrazione di WebLogic Server digitando il nome `https://`*[]*host`:7001/console`nella riga URL di un browser Web.
-1. In Ambiente, in Configurazioni dominio, selezionare **Server >[server]> Configurazione > Generale**.
-1. In Generale, in Configurazione, assicurarsi che la porta di **ascolto abilitata** e la porta di ascolto **SSL abilitata** siano selezionate. Se non è attivata, effettuate le seguenti operazioni:
+1. In Ambiente, in Configurazioni dominio, selezionare **Server > &#39;server&#39; > Configurazione > Generale**.
+1. In Generale, in Configuration (Configurazione), assicurarsi che la porta di **ascolto abilitata** e la porta di ascolto **SSL abilitata** siano selezionate. Se non è attivata, effettuate le seguenti operazioni:
 
-   1. In Centro modifiche, fate clic su **Blocca e modifica** per modificare selezioni e valori.
+   1. In Centro modifiche, fate clic su **Blocca e modifica** per modificare le selezioni e i valori.
    1. Selezionare le caselle di controllo Porta di **ascolto abilitata** e Porta di ascolto **SSL abilitata** .
 
 1. Se il server è un server gestito, modificate Porta di ascolto in un valore di porta non utilizzato (ad esempio 8001) e Porta di ascolto SSL in un valore di porta non utilizzato (ad esempio 8002). Su un server autonomo, la porta SSL predefinita è 7002.
 1. Fate clic su **Rilascia configurazione**.
 1. In Ambiente, in Configurazioni dominio, fare clic su **Server > Server [*gestiti*]> Configurazione > Generale**.
 1. In Generale, in Configurazione, selezionare **Keystores**.
-1. In Centro modifiche, fate clic su **Blocca e modifica** per modificare selezioni e valori.
+1. In Centro modifiche, fate clic su **Blocca e modifica** per modificare le selezioni e i valori.
 1. Fare clic su **Modifica** per ottenere l&#39;elenco a discesa degli archivi di chiavi e selezionare Identità **personalizzata e attendibilità** personalizzata.
 1. In Identità, specificate i seguenti valori:
 
@@ -185,7 +185,7 @@ Configurare WebLogic in modo che utilizzi l&#39;archivio chiavi identità person
 
 1. In Trust, specificate i seguenti valori:
 
-   **Nome** file archivio chiavi trust personalizzato: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, dove `*[appserverdomain]*` è il percorso effettivo
+   **Nome** file archivio chiavi trust personalizzato: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, dove `*[appserverdomain]*` è il percorso effettivo
 
    **Tipo** chiave trust personalizzato: JKS
 
@@ -195,7 +195,7 @@ Configurare WebLogic in modo che utilizzi l&#39;archivio chiavi identità person
 1. Per impostazione predefinita, l&#39;opzione Keystore è selezionata per le posizioni di identità e trust. In caso contrario, cambiatelo in keystore.
 1. In Identità, specificate i seguenti valori:
 
-   **Alias** chiave privata: pubblicitari
+   **Alias** chiave privata: ads-permissions
 
    **Passphrase**: *mypassword*
 
