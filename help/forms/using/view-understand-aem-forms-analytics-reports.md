@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Experience Manager Forms si integra con Adobe Analytics per acquisire e te
 
 La funzione di analisi in AEM Forms è disponibile come parte del pacchetto del componente aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo, consultate [Installazione e configurazione di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
-Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics. Per informazioni sulla soluzione, consultate [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+Oltre al pacchetto del componente aggiuntivo, è necessario un account Adobe Analytics. Per informazioni sulla soluzione, consulta [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
 Una volta ottenuto il pacchetto del componente aggiuntivo AEM Forms e un account Adobe Analytics, integrate l&#39;account Adobe Analytics con AEM Forms e abilitate il tracciamento dei moduli o dei documenti come descritto in [Configura analisi e rapporti](../../forms/using/configure-analytics-forms-documents.md).
 
@@ -49,20 +49,20 @@ Quando un utente interagisce con il modulo, le interazioni vengono registrate e 
 
 Per visualizzare i rapporti di analisi, effettuate le seguenti operazioni:
 
-1. Accedi al portale AEM all&#39;indirizzo `https://[hostname]:[port]`
+1. Accedi al portale AEM all&#39;indirizzo `https://[hostname]:'port'`
 1. Fare clic su **Moduli > Moduli e documenti**.
 1. Selezionare il modulo per il quale si desidera visualizzare i report di analisi.
 1. Selezionate **Altro > Report** di Analytics.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**** A. Report analisi, comando
+**A.** Report analisi, comando
 
 In AEM Forms sono visualizzati i rapporti di analisi per il modulo e per ciascun pannello del modulo, come illustrato di seguito.
 
 ![Report di riepilogo di un modulo adattivo](assets/analyticsdashboard_callout.png)
 
-************ A. Conversioni **B. Riepilogo a livello di modulo** C.**Riepilogo a livello di pannello** D. Browser di visitatori - filtro **E. Sistema operativo dei visitatori - filtro** F. Lingua dei visitatori - filtro
+**A.** Conversioni **B.** Riepilogo a livello di modulo **C.** Riepilogo a livello di pannello **D.** Browser di visitatori - filtro **E.** Sistema operativo dei visitatori - filtro **F.** Lingua dei visitatori - filtro
 
 Per impostazione predefinita, viene visualizzato il rapporto di analisi per gli ultimi sette giorni. Puoi visualizzare i rapporti degli ultimi 15 giorni, degli ultimi 1 mese e così via, oppure specificare un intervallo di date.
 
@@ -101,7 +101,7 @@ La sezione di riepilogo a livello di pannello contiene le seguenti informazioni 
 
 * **Tempo** medio di riempimento: Tempo medio trascorso sul pannello, che il modulo sia stato inviato o meno
 * **Errori riscontrati**: Numero medio di errori riscontrati dagli utenti sui campi di un pannello. Gli errori riscontrati vengono generati dividendo gli errori totali in un campo per numero di rappresentazioni del modulo.
-* **Aiuto accessibile**: Numero medio di volte in cui gli utenti accedevano alla guida contestuale per i campi nel pannello. L&#39;Aiuto accessibile viene fornito suddividendo il numero totale di volte in cui l&#39;Aiuto è accessibile per un campo in base al numero di rappresentazioni del modulo.
+* **Aiuto accessibile**: Numero medio di volte in cui gli utenti hanno eseguito l’accesso alla guida contestuale per i campi nel pannello. L&#39;Aiuto accessibile viene fornito suddividendo il numero totale di volte in cui l&#39;Aiuto è accessibile per un campo in base al numero di rappresentazioni del modulo.
 
 #### Report dettagliato del pannello {#detailed-panel-report}
 
