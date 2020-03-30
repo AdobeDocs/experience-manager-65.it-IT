@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -51,22 +51,22 @@ Il ramo /apps (struttura delle cartelle):
 
 Utilizzate i passaggi seguenti per creare la struttura di cartelle richiesta nel ramo /apps:
 
-1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
+1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 1. Nella cartella delle app, create una cartella denominata `css` con percorso/struttura simile alla cartella css (che si trova nella cartella ccrui).
 
    Passaggi per la creazione della cartella css:
 
    1. Fate clic con il pulsante destro del mouse sulla cartella **css** nel percorso seguente e selezionate Nodo **** sovrapposizione: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      ![Overlay, nodo](assets/1_overlaynode_css.png)
+      ![Sovrapposizione, nodo](assets/1_overlaynode_css.png)
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       ![Percorso nodo overlay](assets/0_1_5ioverlaynodedialog.png)
 
@@ -90,11 +90,11 @@ Utilizzate i passaggi seguenti per creare la struttura di cartelle richiesta nel
    1. Fate clic con il pulsante destro del mouse sulla cartella **imgs** nel percorso seguente e selezionate **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
    1. Fai clic su **OK**. 
 
@@ -114,7 +114,7 @@ Caricate il file del logo personalizzato in CRX. Le regole HTML standard determi
 
 Per caricare il file del logo personalizzato in CRX, effettuate le seguenti operazioni:
 
-1. Passa a `https://[server]:[port]/[contextpath]/crx/de`. Se necessario, effettuate l’accesso come amministratore.
+1. Passa a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, effettuate l’accesso come amministratore.
 1. In CRXDE, fate clic con il pulsante destro del mouse sulla cartella **imgs** nel percorso seguente e selezionate **Crea > Crea file**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -139,7 +139,7 @@ Per caricare il file del logo personalizzato in CRX, effettuate le seguenti oper
 
    Viene visualizzata la finestra di dialogo Modifica jcr:data.
 
-   Ora fate clic sulla cartella newlogo.png, fate doppio clic su jcr:content (opzione dim) e impostate type nt:resource. Se non è presente, create una proprietà con nome jcr:content.
+   Ora fate clic sulla cartella newlogo.png, fate doppio clic su jcr:content (opzione dim) e impostate il tipo nt:resource. Se non è presente, create una proprietà con nome jcr:content.
 
 1. Nella finestra di dialogo Edit jcr:data, fate clic su **Sfoglia** e selezionate il file immagine da usare come logo (in questo caso CustomLogo.png).
 
@@ -153,11 +153,11 @@ Per caricare il file del logo personalizzato in CRX, effettuate le seguenti oper
 
 ## Creare il CSS per integrare il logo nell’interfaccia utente {#createcss}
 
-L&#39;immagine logo personalizzata richiede il caricamento di un foglio di stile aggiuntivo nel contesto del contenuto.
+L&#39;immagine del logo personalizzato richiede il caricamento di un foglio di stile aggiuntivo nel contesto del contenuto.
 
 Per impostare il foglio di stile per il rendering del logo, procedere come segue:
 
-1. Passa a `https://[server]:[port]/[contextpath]/crx/de`. Se necessario, effettuate l’accesso come amministratore.
+1. Passa a `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessario, effettuate l’accesso come amministratore.
 1. Create un file denominato customcss.css (non potete usare un nome di file diverso) nel percorso seguente:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
