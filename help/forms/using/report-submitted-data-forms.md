@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -72,7 +72,7 @@ Specificate i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Specifica il percorso dell'archivio CRX in cui si trova il modulo. Se non si specifica il percorso del modulo, restituisce una risposta vuota.<br /> </td>
+   <td>Specifica il percorso dell'archivio CRX in cui si trova il modulo. Se non si specifica il percorso del modulo, viene restituita una risposta vuota.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code> (facoltativo)</td>
@@ -92,7 +92,7 @@ Specificate i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facoltativo)</td>
-   <td>Specifica un elenco separato da virgole di proprietà del modulo da includere nei risultati. <br /> Le proprietà predefinite sono: <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Specifica un elenco separato da virgole di proprietà del modulo da includere nei risultati. Le proprietà predefinite sono:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (facoltativo)</td>
@@ -148,7 +148,7 @@ Restituisce un ID commento in caso di pubblicazione corretta di un commento.
 **URL richiesta**
 
 ```
-https://[host:[port]/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
+https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
 **Risposta**
@@ -186,7 +186,7 @@ L&#39;oggetto response contiene un array JSON che include tutti i commenti assoc
 **URL richiesta**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
+https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
 **Risposta**
@@ -218,7 +218,7 @@ Restituisce un oggetto JSON con informazioni sull&#39;aggiornamento pubblicato.
 **URL richiesta**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
+https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
 **Risposta**
