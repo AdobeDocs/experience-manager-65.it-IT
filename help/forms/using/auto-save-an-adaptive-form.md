@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -29,10 +29,10 @@ Per un modulo adattivo, l&#39;opzione di salvataggio automatico non è abilitata
 1. Per accedere alla sezione di salvataggio automatico nelle proprietà, selezionare un componente, quindi toccare il livello ![del](assets/field-level.png) campo > Contenitore **[!UICONTROL modulo]** adattivo, quindi toccare ![cmppr](assets/cmppr.png).
 1. Nella sezione Salvataggio **** automatico, **[!UICONTROL selezionate]** l’opzione di salvataggio automatico.
 1. Nella casella Evento **[!UICONTROL modulo]** adattivo, specificare 1 o TRUE per avviare automaticamente il salvataggio del modulo quando il modulo viene caricato nel browser. È inoltre possibile specificare un&#39;espressione condizionale per un evento che, quando viene attivato e restituisce true, inizia a salvare il contenuto del modulo.
-1. Specifica l&#39;attivatore. Il salvataggio automatico viene attivato in base alla configurazione. Le opzioni disponibili sono:
+1. Specifica l&#39;attivatore. Il salvataggio automatico viene attivato in base alla configurazione in uso. Le opzioni disponibili sono:
 
-   * **** Basato su ora: Selezionate l’opzione per iniziare a salvare il contenuto in base a un intervallo di tempo specifico.
-   * **** Basato sull&#39;evento: Selezionate l&#39;opzione per iniziare a salvare il contenuto in base all&#39;attivazione di un evento.
+   * **[!UICONTROL Basato su ora:]** Selezionate l’opzione per iniziare a salvare il contenuto in base a un intervallo di tempo specifico.
+   * **[!UICONTROL Basato sull&#39;evento:]** Selezionate l&#39;opzione per iniziare a salvare il contenuto in base all&#39;attivazione di un evento.
    Quando selezionate un attivatore, la casella Configurazione strategia è abilitata. La finestra Configurazione strategia consente di:
 
    * Specificate un intervallo di tempo se selezionate l&#39;attivatore **[!UICONTROL basato su]** tempo.
@@ -53,7 +53,7 @@ Per un modulo adattivo, l&#39;opzione di salvataggio automatico non è abilitata
    >
    >Affinché l&#39;opzione di salvataggio automatico funzioni correttamente per gli utenti anonimi, è necessario configurare Forms Common Configuration Service in modo da consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
    >
-   >Per configurare il servizio, andate alla configurazione della console Web di AEM in `https://[server]:[host]/system/console/configMgr` e modificate il servizio **[!UICONTROL di configurazione comune]** Forms per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvate la configurazione.
+   >Per configurare il servizio, andate alla configurazione della console Web di AEM in `https://server:port/system/console/configMgr` e modificate il servizio **[!UICONTROL di configurazione comune]** Forms per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvate la configurazione.
 
 ## Implementare una strategia personalizzata per abilitare l&#39;salvataggio automatico per i moduli adattivi {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 
