@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,6 +25,6 @@ PDF Generator converte in PDF vari formati di file. Consente inoltre di converti
 Esistono tre modi per inviare i file a PDF Generator per l&#39;elaborazione:
 
 * Gli amministratori possono accedere alle pagine PDF nella console di amministrazione. (Vedere [Conversione di file tramite PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
-* Gli utenti possono accedere alle pagine dell&#39;utente finale PDFG accedendo a `http(s)://[server]:[port]/pdfgui.` Da tale pagina, possono accedere alla stampante di rete PDFG, creare PDF, HTML in PDF, esportare PDF e ottimizzare le pagine PDF.
+* Gli utenti possono accedere alle pagine dell&#39;utente finale PDFG accedendo a `http(s)://'[server]:[port]'/pdfgui.` Da tale pagina, possono accedere alla stampante di rete PDFG, creare file PDF, HTML in PDF, esportare file PDF e ottimizzare le pagine PDF.
 * Puoi configurare gli endpoint per i servizi. Consultate <!--Fix broken link to Managing Endpoints --> e [Genera raccomandazioni](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)per i servizi PDF. [](/help/forms/using/admin-help/overview-5.md#main-pars-header)
 
