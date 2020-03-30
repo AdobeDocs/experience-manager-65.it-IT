@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -35,7 +35,7 @@ Selezionate la lettera da visualizzare in anteprima con la procedura seguente:
 
    >[!NOTE]
    >
-   >Se un dizionario dati non è associato alla lettera, viene visualizzata l&#39;anteprima della lettera. In caso contrario, se la lettera è basata su un dizionario dati, Gestione corrispondenza visualizza le opzioni Anteprima e Personalizzato nel menu Anteprima ed è possibile selezionare una delle due opzioni. È inoltre possibile associare i dati del test a un dizionario dati. Quando al dizionario [dati sono associati dati](../../forms/using/data-dictionary.md#p-working-with-test-data-p)di test, quando si seleziona l&#39;opzione di anteprima viene visualizzata l&#39;anteprima normale con i dati di test caricati.
+   >Se un dizionario dati non è associato alla lettera, viene visualizzata l&#39;anteprima della lettera. In caso contrario, se la lettera è basata su un dizionario dati, Gestione corrispondenza visualizza le opzioni Anteprima e Personalizzato nel menu Anteprima ed è possibile selezionare una delle due opzioni. È inoltre possibile associare i dati del test a un dizionario dati. Quando al dizionario [dati sono associati dati](../../forms/using/data-dictionary.md#p-working-with-test-data-p)di prova, quando si seleziona l&#39;opzione di anteprima viene visualizzata l&#39;anteprima normale con i dati di prova compilati.
 
 1. Per eseguire il rendering di una corrispondenza durante la visualizzazione in anteprima, è necessario essere un amministratore o parte di uno dei seguenti gruppi:
 
@@ -51,7 +51,7 @@ Selezionate la lettera da visualizzare in anteprima con la procedura seguente:
 
    Per ulteriori informazioni sui moduli per dispositivi mobili e sulle relative funzioni, vedere Differenza tra le [funzioni nei moduli per dispositivi mobili e nei moduli](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)PDF.
 
-   Sono disponibili tre schede: dati, contenuto e allegati. Se non sono presenti elementi di dati (variabili segnaposto e campi di layout), la lettera si apre direttamente con la scheda Contenuto. La scheda Allegati è disponibile solo quando gli allegati sono presenti o l&#39;accesso alla libreria è abilitato.
+   Sono disponibili tre schede: dati, contenuto e allegati. Se non sono presenti elementi di dati (variabili segnaposto e campi di layout), la lettera si apre direttamente con la scheda Contenuto visualizzata. La scheda Allegati è disponibile solo quando gli allegati sono presenti o l&#39;accesso alla libreria è abilitato.
 
    >[!NOTE]
 
@@ -73,7 +73,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
 1. Select **Content**. Gestione corrispondenza visualizza la scheda del contenuto della lettera.
 
-   ![Scheda Contenuto - Modulo evidenziato nel contenuto](assets/3_content.png)
+   ![Scheda Contenuto - Modulo evidenziazione nel contenuto](assets/3_content.png)
 
 1. Modificate i moduli di contenuto, come necessario, nella scheda Contenuto. Per attivare il modulo di contenuto rilevante nella gerarchia dei contenuti, potete toccare la riga o il paragrafo pertinenti nell&#39;anteprima della lettera o toccare il modulo di contenuto direttamente nella gerarchia Contenuto.
 
@@ -86,7 +86,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
    Per ulteriori informazioni sulle azioni disponibili per i vari moduli nell’interfaccia utente Crea corrispondenza, consultate [Azioni e informazioni disponibili nell’interfaccia](../../forms/using/create-letter.md#main-pars-header-9)utente Crea corrispondenza.
 
 1. Per individuare i moduli di contenuto, utilizzare il campo Trova. Immettete il nome o il titolo completo o parziale del modulo di contenuto per la ricerca nella corrispondenza.
-1. Toccate l&#39;icona Visualizza ( ![visualizzazione](assets/display.png)) davanti a un elenco, testo, condizione o area di destinazione per visualizzarla o nasconderla nella lettera.
+1. Toccate l&#39;icona Visualizza ( ![visualizzazione](assets/display.png)) davanti a un elenco, un testo, una condizione o un&#39;area di destinazione per visualizzarla o nasconderla nella lettera.
 1. Per modificare un modulo di testo in linea o modificabile, toccate l&#39;icona **Modifica** (modulo ![edittextmodule](assets/edittextmodule.png)) o fate doppio clic sul modulo di testo corrispondente nell&#39;anteprima della lettera.
 
    Il sistema visualizza un editor di testo per modificare e formattare il testo.
@@ -132,13 +132,13 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
 1. Per evidenziare\enfatizzare parti di testo in un modulo in linea modificabile, selezionate il testo e toccate Colore evidenziazione.
 
-   ![letterbackground color](assets/letterbackgroundcolor.png)
+   ![letterbackground, colore](assets/letterbackgroundcolor.png)
 
-   È possibile toccare direttamente un colore di base **[A]** presente nella palette Colori base oppure **selezionare** dopo aver utilizzato il cursore **[B]** per scegliere l&#39;ombreggiatura appropriata del colore.
+   È possibile toccare direttamente un colore di base `**[A]**` presente nella palette Colori base oppure toccare **Seleziona** dopo aver utilizzato il cursore `**[B]**` per scegliere l&#39;ombreggiatura appropriata del colore.
 
-   Facoltativamente, potete anche passare alla scheda Avanzate per selezionare la Tonalità, Luminosità e Saturazione appropriata **[C]** per creare il colore preciso e quindi toccare Seleziona **[D]** per applicare il colore per evidenziare il testo.
+   Facoltativamente, potete anche passare alla scheda Avanzate per selezionare la tonalità, la luminosità e la saturazione appropriata `**[C]**` per creare il colore preciso, quindi toccare Seleziona `**[D]**` per applicare il colore per evidenziare il testo.
 
-   ![textbackground color](assets/textbackgroundcolor.png)
+   ![textbackground, colore](assets/textbackgroundcolor.png)
 
 1. Apportate le modifiche appropriate al contenuto e al formato, quindi toccate **Salva**. Toccate ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) per passare da un modulo di testo modificabile all&#39;altro oppure toccate **Salva e Avanti** per salvare le modifiche e passare al successivo modulo di testo modificabile.
 1. Il sistema visualizza anche le variabili non compilate per ciascuno dei rami. In assenza di variabili non compilate, le variabili non compilate vengono visualizzate come 0. Se è presente una variabile non compilata, potete toccare un ramo per espanderla e individuare la variabile non compilata. Utilizzate la barra degli strumenti del contenuto per eliminare il contenuto, aumentare/diminuire il rientro del contenuto e inserire interruzioni di pagina prima/dopo il contenuto.
@@ -160,7 +160,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    Per l&#39;area di destinazione, il modulo e la variabile il conteggio viene visualizzato a destra di ciascun oggetto nel modello lettera. Tuttavia, per il modello completo, il conteggio viene visualizzato nella barra di stato Crea corrispondenza.
 
-   I moduli in un modello Lettera visualizzano il conteggio delle variabili non compilate come descritto di seguito:
+   I moduli in un modello di lettera visualizzano il conteggio delle variabili non compilate come descritto di seguito:
 
    * **Testo** Visualizza la somma delle variabili segnaposto univoche e degli elementi del dizionario dati non compilati contenuti nel modulo di testo.
    * **Condizione** Visualizza la somma delle variabili di condizione univoche non compilate contenute nella condizione e delle variabili contenute nei moduli risultanti.
@@ -186,7 +186,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 **Modulo**
 
 * Selezione (icona occhio): Include\esclude il modulo dalla lettera.
-* Skip Bullets (applicabile ai moduli elenco e ai relativi moduli figlio): Ignora i punti elenco in un particolare modulo.
+* Skip Bullets (applicabile per i moduli elenco e i relativi moduli figlio): Ignora i punti elenco in un particolare modulo.
 * Interruzione di pagina prima (applicabile per i moduli figlio dell&#39;area di destinazione): Inserisce un&#39;interruzione di pagina prima del modulo.
 * Interruzione di pagina dopo (applicabile per i moduli figlio dell&#39;area di destinazione): Inserisce un&#39;interruzione di pagina prima del modulo.
 * Valori non compilati (info): Indica il numero di variabili non compilate nell&#39;area di destinazione.
@@ -203,7 +203,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 ### Gestire gli allegati {#manage-attachments}
 
 1. Selezionare **Allegati**. Gestione corrispondenza visualizza gli allegati disponibili, così come impostati durante la creazione del modello di lettera.
-1. È possibile scegliere di non inviare un allegato insieme alla lettera toccando l&#39;icona della vista e toccando la croce nell&#39;allegato per eliminarla dalla lettera. Per gli allegati specificati, durante la creazione di un modello di lettera, come obbligatorio, le icone Visualizza ed Elimina sono disattivate.
+1. È possibile scegliere di non inviare un allegato insieme alla lettera toccando l&#39;icona della vista e toccando la croce nell&#39;allegato per eliminarla dalla lettera. Per gli allegati specificati, durante la creazione di un modello di lettera, come Obbligatorio, le icone Visualizza ed Elimina sono disattivate.
 1. Toccate l&#39;icona Accesso ![libreria (accesso](assets/libraryaccess.png)libreria) per accedere alla libreria Contenuto per inserire risorse DAM come allegati.
 
    >[!NOTE]
@@ -238,7 +238,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    >[!NOTE]
    >
-   >Poiché i moduli mobili non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati solo una volta. È tuttavia possibile impostare esplicitamente intestazioni e piè di pagina nel layout (per pagina) in modo che vengano visualizzati nell&#39;anteprima dei moduli per dispositivi mobili. Inoltre, le eventuali pagine vuote nella lettera non vengono visualizzate nell&#39;anteprima dei moduli per dispositivi mobili.
+   >Poiché i moduli per dispositivi mobili non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati solo una volta. È tuttavia possibile impostare esplicitamente intestazioni e piè di pagina nel layout (per pagina) in modo che vengano visualizzati nell&#39;anteprima dei moduli per dispositivi mobili. Inoltre, le eventuali pagine vuote nella lettera non vengono visualizzate nell&#39;anteprima dei moduli per dispositivi mobili.
 
    ![Interruzione di pagina esplicita](assets/8_pagebreak.png)
 
@@ -254,13 +254,13 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    >[!NOTE]
    >
-   >Se utilizzate Mozilla Firefox e il tipo di rappresentazione HTML, per visualizzare l&#39;anteprima della lettera come PDF appiattito, accertatevi di utilizzare il plug-in nativo del browser e non il plug-in di Acrobat. Per selezionare il plug-in del browser nativo, andate alle impostazioni di Mozilla Firefox e, per il tipo di contenuto PDF, selezionate Anteprima in Firefox.
+   >Se utilizzate Mozilla Firefox e il tipo di rappresentazione HTML, per visualizzare l&#39;anteprima della lettera come PDF appiattito, accertatevi di utilizzare il plug-in nativo del browser e non il plug-in di Acrobat. Per selezionare il plug-in del browser nativo, accedete alle impostazioni di Mozilla Firefox e, per il tipo di contenuto PDF, selezionate Anteprima in Firefox.
 
 1. Se l’anteprima PDF appiattita è soddisfacente, toccate **Invia** per inviare la lettera. Oppure, per apportare modifiche alla lettera, toccate **Esci da anteprima** per tornare all’anteprima dell’interfaccia utente Crea corrispondenza della lettera e apportare modifiche alla lettera. Toccando Invia, se nell’istanza Pubblica è abilitata la configurazione Gestisci istanza lettera, viene generata l’istanza Invia lettera.
 
    Per ulteriori informazioni, vedere Istanza bozza in Salvataggio di bozze e invio di istanze di lettere.
 
-   È inoltre possibile salvare la lettera come bozza per apportare successivamente modifiche alla lettera.
+   È inoltre possibile salvare la lettera come bozza per apportare modifiche alla lettera in un secondo momento.
 
    Dopo aver apportato le modifiche necessarie, potete inviare la lettera dall’anteprima HTML5 oppure toccare nuovamente Anteprima per controllare l’output PDF appiattito.
 
@@ -282,7 +282,7 @@ Tali istanze possono essere salvate solo quando la lettera viene visualizzata ne
 1. Individuate le configurazioni di **[!UICONTROL gestione della corrispondenza]** e fate clic su di essa.
 1. Selezionate **[!UICONTROL Gestisci istanze lettera nella configurazione Pubblica]** , quindi fate clic su **[!UICONTROL Salva]**.
 
-Quando il salvataggio delle istanze di lettera è attivato, è possibile scegliere dove salvare le istanze di lettera. Esistono due opzioni per salvare le istanze della lettera: Salvataggio locale o salvataggio remoto.
+Quando il salvataggio delle istanze di lettera è attivato, è possibile selezionare la posizione in cui salvare le istanze di lettera. Esistono due opzioni per salvare le istanze della lettera: Salvataggio locale o salvataggio remoto.
 
 ### Salvataggio locale {#local-save}
 
@@ -290,7 +290,7 @@ Le istanze di lettere vengono salvate nell’istanza di pubblicazione e vengono 
 
 ### Salvataggio remoto {#remote-save}
 
-Questa opzione è disponibile per le persone che hanno dei dubbi sul salvataggio di dati utente in istanze pubblicate, che in genere si trovano al di fuori del firewall aziendale. Quando il salvataggio remoto è attivato, le istanze della lettera non vengono salvate nell&#39;istanza di pubblicazione, ma vengono salvate in remoto nell&#39;autore di elaborazione specificata dalle configurazioni SDK di LiveCycle Client.
+Questa opzione è disponibile per le persone che hanno dei dubbi sul salvataggio di dati utente in istanze pubblicate, che in genere si trovano al di fuori del firewall aziendale. Quando il salvataggio remoto è attivato, le istanze della lettera non vengono salvate nell&#39;istanza di pubblicazione, ma vengono salvate in remoto nell&#39;autore di elaborazione specificata dalle configurazioni dell&#39;SDK del client LiveCycle.
 
 #### Abilita salvataggio remoto {#enable-remote-save}
 
@@ -321,15 +321,15 @@ Questa opzione è disponibile per le persone che hanno dei dubbi sul salvataggio
 
 ## Modalità di rappresentazione dell&#39;anteprima della lettera: Anteprima dei moduli mobili e anteprima PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Correspondence Management visualizza una lettera come HTML nell&#39;interfaccia utente Crea corrispondenza. Tuttavia, la gestione della corrispondenza supporta ancora il ripristino dell&#39;anteprima PDF invece dell&#39;anteprima HTML. Per ulteriori informazioni sul passaggio tra la modalità di anteprima HTML e PDF, consultate [Modificare la modalità di rappresentazione della lettera](#changerenditionmode).
+AEM Forms Correspondence Management visualizza una lettera come HTML nell&#39;interfaccia utente Crea corrispondenza. Tuttavia, la gestione della corrispondenza continua a supportare il ripristino dell&#39;anteprima PDF invece dell&#39;anteprima HTML. Per ulteriori informazioni sul passaggio tra la modalità di anteprima HTML e PDF, consultate [Modificare la modalità di rappresentazione della lettera](#changerenditionmode).
 
 Di seguito sono riportati i vantaggi e le funzionalità disponibili nell’anteprima HTML e PDF.
 
 **Vantaggi dei moduli mobili/anteprima HTML**
 
-* **Toccate un valore del campo dati per evidenziare il campo** dati corrispondente: Nell&#39;interfaccia utente Crea corrispondenza, puoi toccare un valore del campo dati nella lettera per evidenziare il campo dati corrispondente nella scheda Dati. Per ulteriori informazioni, vedere [Immettere i dati](#enterdata).
+* **Toccate un valore del campo di dati per evidenziare il campo** di dati corrispondente: Nell&#39;interfaccia utente Crea corrispondenza, è possibile toccare un valore del campo dati nella lettera per evidenziare il campo dati corrispondente nella scheda Dati. Per ulteriori informazioni, vedere [Immettere i dati](#enterdata).
 
-* **Supporto** browser: Consente di rimuovere gradualmente il supporto per NPAPI, con effetto sull’anteprima PDF della lettera. L&#39;anteprima della lettera nei moduli HTML/mobili non viene modificata.
+* **Supporto** browser: Consente di rimuovere gradualmente il supporto per NPAPI, con effetto sull’anteprima PDF della lettera. L&#39;anteprima della lettera nei moduli HTML/mobili non viene modificata da questo problema.
 * **Evidenziare il contenuto modificabile in una lettera**: Nell’interfaccia utente Crea corrispondenza, potete toccare Evidenzia contenuto modificabile per evidenziare in grigio tutto il contenuto modificabile della lettera. Per ulteriori informazioni, consultate [Gestire il contenuto](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>``<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>``<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>``<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Vantaggi dell&#39;anteprima PDF**
@@ -343,13 +343,13 @@ Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [S
 
 ### Modifica della modalità di rappresentazione della lettera {#changerenditionmode}
 
-Per impostazione predefinita, l’interfaccia utente Crea corrispondenza utilizza i moduli HTML o mobili per rappresentare l’anteprima della lettera. L&#39;anteprima dei moduli per dispositivi mobili non presenta problemi di rendering in alcun browser, in quanto utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. È possibile modificare la modalità Anteprima lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per diverse funzioni dell&#39;anteprima PDF interattiva della lettera.
+Per impostazione predefinita, l’interfaccia utente Crea corrispondenza utilizza i moduli HTML o mobili per eseguire il rendering dell’anteprima della lettera. L&#39;anteprima dei moduli per dispositivi mobili non presenta problemi di rendering in alcun browser, in quanto utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. È possibile modificare la modalità di anteprima della lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per diverse funzioni dell&#39;anteprima PDF interattiva della lettera.
 
 Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, consultate [Discontinuità dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
 Per modificare la modalità di anteprima della lettera, completare i seguenti passaggi:
 
-1. Vai a `https://[system]:[port]/system/console/configMgr` e, se necessario, accedi come Amministratore.
+1. Vai a `https://[system]:'port'/system/console/configMgr` e, se necessario, accedi come Amministratore.
 1. Accedete a **[!UICONTROL Corrispondence Management Configurations (Configurazioni]** di gestione corrispondenza) > **[!UICONTROL Rendition Type]** (Tipo **di rappresentazione) e selezionate** HTML Rendition **(Predefinito) o** PDF Rendition(RenderingPDF).
 1. Fai clic su **[!UICONTROL Salva]**.
 
