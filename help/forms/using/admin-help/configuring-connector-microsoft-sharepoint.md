@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,13 +22,13 @@ Il connettore per Microsoft SharePoint consente la comunicazione tra i moduli AE
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per Microsoft SharePoint.
 1. Specificate le seguenti impostazioni per SharePoint Server:
 
-   **** Nome host di SharePoint Server: Il numero della porta del nome host dell&#39;applicazione Web nel server SharePoint, nel formato `[hostname]:[port]`.
+   **Nome host di SharePoint Server:** Il numero della porta del nome host dell&#39;applicazione Web nel server SharePoint, nel formato `[hostname]:'port'`.
 
-   **** Nome utente: L&#39;account utente utilizzato per connettersi al server SharePoint.
+   **Nome utente:** L&#39;account utente utilizzato per connettersi al server SharePoint.
 
-   **** Password: Password per l&#39;account utente utilizzato per connettersi al server SharePoint
+   **Password:** Password per l&#39;account utente utilizzato per connettersi al server SharePoint
 
-   **** Nome dominio: Dominio in cui si trova il server SharePoint.
+   **Nome dominio:** Dominio in cui si trova il server SharePoint.
 
 1. Fate clic su Salva.
 
