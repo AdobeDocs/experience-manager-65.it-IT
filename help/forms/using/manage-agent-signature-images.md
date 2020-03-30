@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 1. Accertati che l’immagine della firma dell’agente abbia lo stesso nome del nome utente AEM dell’utente. L’estensione non è necessaria per il nome del file immagine.
 1. In CRX, create una cartella denominata `cmUserRoot` nella cartella del contenuto.
 
-   1. Passa a `https://[server]:[port]/crx/de`. Se necessario, effettuate l’accesso come amministratore.
+   1. Passa a `https://'[server]:[port]'/crx/de`. Se necessario, effettuate l’accesso come amministratore.
 
    1. Fate clic con il pulsante destro del mouse sulla cartella del **contenuto** e selezionate **Crea** > **Crea cartella**.
 
@@ -47,7 +47,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 
 1. In Content Explorer, andate alla cartella cmUserRoot e aggiungete l&#39;immagine della firma dell&#39;agente al suo interno.
 
-   1. Passa a `https://[server]:[port]/crx/explorer/index.jsp`. Effettuate l&#39;accesso come amministratore, se necessario.
+   1. Passa a `https://'[server]:[port]'/crx/explorer/index.jsp`. Effettuate l&#39;accesso come amministratore, se necessario.
    1. Fate clic su **Content Explorer**. Content Explorer si apre in una nuova finestra.
    1. In Esplora contenuti, andate alla cartella cmUserRoot e selezionatela. Fare clic con il pulsante destro del mouse sulla cartella **cmUserRoot** e selezionare **Nuovo nodo**.
 
@@ -55,13 +55,13 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 
       Immettere le seguenti voci nella riga per il nuovo nodo, quindi fare clic sul segno di spunta verde.
 
-      **** Nome: JohnDoe (o il nome del file di firma dell&#39;agente)
+      **Nome:** JohnDoe (o il nome del file di firma dell&#39;agente)
 
-      **** Tipo:nt:file
+      **Tipo:** nt:file
 
       Sotto la `cmUserRoot` cartella viene creata una nuova cartella denominata `JohnDoe` (o il nome specificato nel passaggio precedente).
 
-   1. Fate clic sulla nuova cartella creata (qui `JohnDoe`). In Content Explorer il contenuto della cartella viene visualizzato in modo attenuato.
+   1. Fate clic sulla nuova cartella che avete creato (qui `JohnDoe`). In Content Explorer il contenuto della cartella viene visualizzato in modo attenuato.
 
    1. Fate doppio clic sulla proprietà **jcr:content** , impostatene il tipo come **nt:resource**, quindi fate clic sul segno di spunta verde per salvare la voce.
 
@@ -74,7 +74,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
       ![Dati JCR](assets/5_jcrdata.png)
    Fate clic su **Salva tutto**.
 
-1. Verificare che il layout XDP\layout utilizzato nella lettera contenga un campo immagine in basso a sinistra (o in un&#39;altra posizione appropriata nel layout in cui si desidera eseguire il rendering della firma) per rappresentare l&#39;immagine della firma.
+1. Verificare che il layout XDP\layout utilizzato nella lettera contenga un campo immagine in basso a sinistra (o in un&#39;altra posizione appropriata nel layout in cui si desidera eseguire il rendering della firma) per eseguire il rendering dell&#39;immagine della firma.
 1. Durante la creazione della corrispondenza, nella scheda Dati selezionare un campo immagine per l&#39;immagine della firma utilizzando la procedura seguente:
 
    1. Selezionare Sistema dal menu a comparsa Tipo di collegamento nel riquadro a destra.
