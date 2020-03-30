@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ Un&#39;applicazione HTML esistente può sfruttare l&#39;API FormBridge per inter
 
 1. **Scegliete un profilo o create un profilo**
 
-   1. Nell&#39;interfaccia CRX DE, passare a: `https://[server]:[port]/crx/de`.
+   1. Nell&#39;interfaccia CRX DE, passare a: `https://'[server]:[port]'/crx/de`.
    1. Effettuate l&#39;accesso con le credenziali di amministratore.
    1. Create un profilo o scegliete un profilo esistente.
 
@@ -86,7 +86,7 @@ Un&#39;applicazione HTML esistente può sfruttare l&#39;API FormBridge per inter
 
 1. **Accesso ai campi modulo dalla pagina**
 
-   Di seguito è riportato uno script di esempio che è possibile aggiungere per impostare i valori in un campo modulo.
+   Di seguito è riportato uno script di esempio che è possibile aggiungere per impostare i valori in un campo del modulo.
 
    Ad esempio, se si desidera impostare il **NomeDipendente** utilizzando i valori in Nome **campo e** Cognome **, chiamare la funzione** window.formBridge.setFieldValue **** .
 
