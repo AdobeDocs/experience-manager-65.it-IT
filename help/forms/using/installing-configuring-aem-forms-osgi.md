@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
 
 In AEM Forms è disponibile un set di moduli per ottenere i dati dall’utente finale: moduli adattivi, moduli HTML5 e moduli PDF. Fornisce inoltre strumenti per elencare tutti i moduli disponibili su una pagina Web, analizzare l’uso dei moduli e indirizzare gli utenti in base al relativo profilo. Queste funzionalità sono incluse nel pacchetto del componente aggiuntivo AEM Forms. Il pacchetto del componente aggiuntivo viene distribuito su un’istanza Author o Publish di AEM.
 
-**** Moduli adattivi: Questi moduli cambiano aspetto in base alle dimensioni dello schermo del dispositivo, sono interattivi e coinvolgenti. I moduli adattivi possono essere integrati anche con Adobe Analytics, Adobe Sign e Adobe Target. Consentiva di distribuire moduli personalizzati ed esperienze orientate ai processi agli utenti in base alla loro demografia e ad altre funzioni. È inoltre possibile integrare moduli adattivi con Adobe Sign.
+**Moduli adattivi:** Questi moduli modificano l&#39;aspetto in base alle dimensioni dello schermo del dispositivo, sono interattivi e coinvolgenti. I moduli adattivi possono essere integrati anche con Adobe Analytics, Adobe Sign e Adobe Target. Consentiva di distribuire moduli personalizzati ed esperienze orientate ai processi agli utenti in base alla loro demografia e ad altre funzioni. È inoltre possibile integrare moduli adattivi con Adobe Sign.
 
 **I moduli** PDF sono adatti per la stampa perfetta in pixel e l&#39;acquisizione di informazioni digitali all&#39;interno di un documento PDF. Nell&#39;avatar digitale è possibile utilizzare Adobe Acrobat o Acrobat Reader per compilare i moduli. È possibile ospitare tali moduli sul sito Web o utilizzare il portale dei moduli per elencarli in un sito AEM. È inoltre possibile inviare questi moduli ad altri come allegati. Questi moduli sono particolarmente adatti agli ambienti desktop.
 
@@ -30,7 +30,7 @@ AEM Forms è una potente piattaforma aziendale e l’acquisizione dei dati (modu
 
 ## Topologia di distribuzione {#deployment-topology}
 
-Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implementata in AEM. Per eseguire le funzionalità di acquisizione dati di AEM Forms è necessario solo un&#39;istanza AEM Author e AEM Publish. Per eseguire le funzionalità di acquisizione dati di AEM Forms è consigliabile utilizzare la seguente topologia. Per informazioni dettagliate sulla topologia, consultate Topologie di [architettura e distribuzione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implementata in AEM. Per eseguire le funzionalità di acquisizione dati di AEM Forms è necessario solo un&#39;istanza AEM Author e AEM Publish. Per eseguire le funzionalità di acquisizione dei dati di AEM Forms è consigliabile utilizzare la seguente topologia. Per informazioni dettagliate sulla topologia, consultate Topologie di [architettura e distribuzione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![topologia consigliata](assets/recommended-topology.png)
 
@@ -41,7 +41,7 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione de
 * L&#39;infrastruttura hardware e software è già in funzione. Per un elenco dettagliato di hardware e software supportati, consultate i requisiti [tecnici](/help/sites-deploying/technical-requirements.md).
 
 * Il percorso di installazione dell’istanza AEM non contiene spazi bianchi.
-* Un’istanza di AEM è attiva e in esecuzione. Nella terminologia di AEM, un’istanza è una copia di AEM in esecuzione su un server in modalità di creazione o pubblicazione. Per eseguire le funzionalità di acquisizione dei dati di AEM Forms è necessario disporre di almeno due istanze [AEM (Autore e Pubblicazione)](/help/sites-deploying/deploy.md) :
+* Un’istanza di AEM è attiva e in esecuzione. Nella terminologia di AEM, per &quot;istanza&quot; si intende una copia di AEM in esecuzione su un server in modalità di creazione o pubblicazione. Per eseguire le funzionalità di acquisizione dei dati di AEM Forms è necessario disporre di almeno due istanze [AEM (Autore e Pubblicazione)](/help/sites-deploying/deploy.md) :
 
    * **Autore**: Un’istanza di AEM utilizzata per creare, caricare e modificare i contenuti e per amministrare il sito Web. Quando il contenuto è pronto per essere live, viene replicato nell’istanza di pubblicazione.
    * **Pubblica**: Un’istanza di AEM che trasmette il contenuto pubblicato al pubblico su Internet o su una rete interna.
@@ -51,7 +51,7 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione de
    * 15 GB di spazio temporaneo per le installazioni basate su Microsoft Windows.
    * 6 GB di spazio temporaneo per le installazioni basate su UNIX.
 
-* È impostata la replica e la replica inversa per le istanze di creazione e pubblicazione. Per informazioni dettagliate, vedere [Replica](/help/sites-deploying/replication.md).
+* È impostata la replica e la replica inversa per le istanze di creazione e pubblicazione. For details, see [Replication](/help/sites-deploying/replication.md).
 * Per i sistemi basati su UNIX:
 
    * Installate i seguenti pacchetti a 32 bit dal supporto di installazione:
@@ -116,7 +116,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implemen
 
    Se scaricate manualmente il pacchetto tramite il collegamento diretto elencato nell&#39;articolo delle release [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms, accedete a Gestione pacchetti, fate clic su **Carica pacchetto**, selezionate il pacchetto scaricato e fate clic su Carica. Dopo aver caricato il pacchetto, fate clic sul nome del pacchetto e fate clic su **Installa.**
 
-1. Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendete che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` file e che il registro sia stabile.
+1. Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendete che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` file e che il registro sia stabile.
 1. Ripetete i passaggi da 1 a 4 su tutte le istanze Author e Publish.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
@@ -130,9 +130,9 @@ In AEM Forms sono disponibili alcune configurazioni obbligatorie e facoltative. 
 Per avviare la delega delle librerie, eseguite i seguenti passaggi su tutte le istanze Autore e Pubblica:
 
 1. Interrompi l’istanza AEM sottostante.
-1. Aprite il file [\crx-quickstart\conf\sling.properties della directory]di installazione di AEM per la modifica.
+1. Open the `[AEM installation directory]\crx-quickstart\conf\sling.properties` file for editing.
 
-   Se avete utilizzato la directory [di installazione di]AEM [\crx-quickstart\bin\start.bat per avviare AEM, modificate le proprietà sling.properties ubicate in]AEM_root\crx-quickstart\.
+   Se avete iniziato `[AEM installation directory]\crx-quickstart\bin\start.bat` AEM, modificate le proprietà sling.properties che si trovano in `[AEM_root]\crx-quickstart\`.
 
 1. Aggiungete le seguenti proprietà al file sling.properties:
 
@@ -148,7 +148,7 @@ Per avviare la delega delle librerie, eseguite i seguenti passaggi su tutte le i
 
 Per inserire nella whitelist il pacchetto, eseguite i seguenti passaggi su tutte le istanze Author e Publish:
 
-1. Aprite AEM Configuration Manager in una finestra del browser. L’URL predefinito è `https://[server]:[port]/system/console/configMgr`.
+1. Aprite AEM Configuration Manager in una finestra del browser. L’URL predefinito è `https://'[server]:[port]'/system/console/configMgr`.
 1. Cercate **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** e aprite la configurazione.
 1. Aggiungete il pacchetto **sun.util.Calendar** al campo **whitelist** . Fai clic su **Salva**.
 1. Ripetete i passaggi da 1 a 3 su tutte le istanze Author e Publish.
@@ -169,18 +169,18 @@ Dispatcher: strumento di caching e bilanciamento del carico per AEM. AEM Dispatc
 
 1. Configurare il servizio filtro di riferimento:
 
-   Accedete al gestore di configurazione Apache Felix come amministratore. L’URL predefinito del gestore di configurazione è https://[server]:[port_number]/system/console/configMgr. Nel menu **Configurations **, selezionare l&#39;opzione **Apache Sling Referrer Filter** . Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **Salva**. Il formato della voce è https://[server]:[port].
+   Accedete al gestore di configurazione Apache Felix come amministratore. L&#39;URL predefinito del gestore di configurazione è `https://[server]:[port_number]/system/console/configMgr`. Nel menu **Configurazioni** , selezionate l&#39;opzione Filtro **di riferimento** Apache Sling. Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **Salva**. Il formato della voce è `https://[server]:[port]&#39;.
 
 #### Configura cache {#configure-cache}
 
-La cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di ingresso/uscita (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare i dati precompilati. Consente di ridurre il tempo necessario per il rendering di un modulo adattivo.
+La cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di ingresso/uscita (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare i dati precompilati. Consente di ridurre il tempo necessario per eseguire il rendering di un modulo adattivo.
 
 * Utilizzando la cache dei moduli adattivi, utilizzate il dispatcher [AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) per memorizzare nella cache le librerie client (CSS e JavaScript) di un modulo adattivo.
 * Durante lo sviluppo di componenti personalizzati, mantenere disattivata la cache dei moduli adattivi sul server utilizzato per lo sviluppo.
 
 Per configurare la cache dei moduli adattivi, effettuate le seguenti operazioni:
 
-1. Andate al gestore di configurazione della console Web AEM all&#39;indirizzo https://[server]:[port]/system/console/configMgr.
+1. Andate al gestore di configurazione della console Web AEM all&#39;indirizzo https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Fate clic su Configurazione **canale Web per moduli** adattivi e comunicazioni interattive per modificarne i valori di configurazione. Nella finestra di dialogo Modifica valori di configurazione, specificare il numero massimo di moduli o documenti che un’istanza del server AEM Forms può memorizzare nella cache nel campo **Numero di moduli** adattivi. Il valore predefinito è 100. Fai clic su **Salva**.
 
    >[!NOTE]
@@ -215,7 +215,7 @@ I moduli AEM si integrano con Adobe Target, una soluzione Adobe Marketing Cloud,
 
 ## Passaggi successivi {#next-steps}
 
-Hai configurato un ambiente per utilizzare le funzionalità di acquisizione dati di AEM Forms. Ora, i passaggi successivi per utilizzare la funzionalità sono:
+Hai configurato un ambiente per utilizzare le funzionalità di acquisizione dei dati di AEM Forms. Ora, i passaggi successivi per utilizzare la funzionalità sono:
 
 * [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md)
 * [Creare il primo modulo PDF](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
