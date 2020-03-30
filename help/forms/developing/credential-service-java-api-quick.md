@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -95,7 +95,7 @@ Nell&#39;esempio di codice seguente viene importata una credenziale basata su un
  
           //Set connection properties required to invoke AEM Forms using SOAP mode
               Properties connectionProps = new Properties();
-              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -130,9 +130,9 @@ Nell&#39;esempio di codice seguente viene importata una credenziale basata su un
  
 ```
 
-## Avvio rapido (modalità SOAP):Eliminazione delle credenziali tramite l&#39;API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Avvio rapido (modalità SOAP): Eliminazione delle credenziali tramite l&#39;API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene eliminata una credenziale basata su un valore alias *protetto*. (vedere [Eliminazione delle credenziali tramite l&#39;API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)di Trust Manager).
+Nell&#39;esempio di codice riportato di seguito viene eliminata una credenziale basata su un valore alias *protetto*. (vedere [Eliminazione delle credenziali tramite l&#39;API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)di Trust Manager).
 
 ```as3
  /*
@@ -197,7 +197,7 @@ Nell&#39;esempio di codice seguente viene eliminata una credenziale basata su un
  
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
