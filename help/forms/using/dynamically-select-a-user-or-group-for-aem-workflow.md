@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,7 +25,7 @@ I passaggi dell’attività e di Adobe Sign dei flussi di lavoro incentrati su [
 
 ECMAScript è un linguaggio di script. Viene utilizzato per applicazioni di script sul lato client e server. Per selezionare in modo dinamico un utente o un gruppo utilizzando ECMAScript, effettuate le seguenti operazioni:
 
-1. Aprite CRXDE Lite. L&#39;URL è `https://[server]:[port]/crx/de/index.jsp`
+1. Aprite CRXDE Lite. L&#39;URL è `https://'[server]:[port]'/crx/de/index.jsp`
 1. Create un file con estensione .ecma nel percorso seguente. Se il percorso (struttura del nodo) non esiste, crearlo:
 
    * (Percorso del passaggio Assegna attività) `/apps/fd/dashboard/scripts/participantChooser`
@@ -75,7 +75,7 @@ Il seguente esempio di ECMAScript seleziona dinamicamente un assegnatario per il
 
 >[!NOTE]
 >
->Quando si utilizza ECMAScript per Adobe Sign, lo script deve trovarsi nell&#39;archivio crx in /apps/fd/workflow/scripts/adobesign/ e deve avere una funzione denominata getAdobeSignRecipients per restituire un elenco di utenti.
+>Quando si utilizza ECMAScript per Adobe Sign, lo script deve trovarsi nell&#39;archivio crx all&#39;indirizzo /apps/fd/workflow/scripts/adobesign/ e deve avere una funzione denominata getAdobeSignRecipients per restituire un elenco di utenti.
 
 ```
 function getAdobeSignRecipients() {
@@ -116,7 +116,7 @@ function getAdobeSignRecipients() {
 
 È possibile utilizzare l&#39;interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere in modo dinamico un utente o un gruppo per i passaggi Adobe Sign e Assign Task. Puoi creare un bundle OSGi che utilizza l’interfaccia Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e distribuirlo nel server AEM Forms. Questa opzione è disponibile per la selezione nei componenti Assegna attività e Adobe Sign del flusso di lavoro AEM.
 
-Per compilare l’esempio di codice riportato di seguito, è necessario disporre dei file JAR e Jar [dell’SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per client AEM Forms e [dei file JAR](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) per i graniti. Aggiungete questi file JAR come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente fornisce i passaggi per utilizzare Eclipse per creare un bundle OSGi:
+Per compilare l’esempio di codice riportato di seguito, è necessario disporre dei file JAR e Jar [dell’SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per client AEM Forms e [dei file JAR](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) per i graniti. Aggiungete questi file JAR come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente illustra i passaggi per utilizzare Eclipse per creare un bundle OSGi:
 
 1. Aprite Eclipse IDE. Passare a **[!UICONTROL File]**> **[!UICONTROL Nuovo progetto]**.
 1. Nella schermata Seleziona una procedura guidata, selezionate Progetto **** Paradiso e fate clic su **[!UICONTROL Avanti]**.
