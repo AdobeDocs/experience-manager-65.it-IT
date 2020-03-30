@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -80,7 +80,7 @@ Per abilitare la registrazione di debug per i flussi di lavoro AEM Forms, effett
 
 1. Andate al gestore di configurazione della console Web AEM all&#39;indirizzo:
 
-   https://[server]:[porta]/sistema/console/configMgr
+   https://&#39;[server]:[porta]&#39;/sistema/console/configMgr
 
 1. Selezionare **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
 1. Toccate **[!UICONTROL Aggiungi nuovo logger.]**
