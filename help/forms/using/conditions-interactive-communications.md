@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,7 +24,7 @@ Condizione è un frammento di documento che è possibile includere in una comuni
 
 Esempi:
 
-* In un estratto conto della carta di credito, visualizzare l&#39;immagine della tariffa annuale e della carta di credito sulla base del tipo di carta di credito del cliente.
+* In un estratto conto della carta di credito, visualizzare l&#39;immagine della tariffa annuale e della carta di credito della carta di credito in base al tipo di carta di credito del cliente.
 * In un promemoria di scadenza premio assicurativo, visualizzare i calcoli delle imposte in base alle imposte dello stato del cliente.
 
 Le risorse nelle condizioni di cui viene eseguito il rendering in base alle regole applicate e ai valori passati alla regola. Le regole nelle condizioni possono controllare i valori nei seguenti tipi di dati:
@@ -43,7 +43,7 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
 1. Specificate le seguenti informazioni:
 
    * **[!UICONTROL Titolo]**: (Facoltativo) Immettere il titolo per la condizione. I titoli non devono essere univoci e possono contenere caratteri speciali e caratteri non inglesi. Le condizioni sono indicate dai titoli (se disponibili), ad esempio nelle miniature e nelle proprietà.
-   * **[!UICONTROL Nome]**: Nome univoco della condizione, all’interno di una cartella. In uno stato non possono esistere due frammenti di documento (testo, condizione o elenco) con lo stesso nome all’interno di una cartella. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **[!UICONTROL Nome]**: Nome univoco della condizione, all’interno di una cartella. In uno stato non possono esistere due frammenti di documento (testo, condizione o elenco) con lo stesso nome all’interno di una cartella. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
 
    * **[!UICONTROL Descrizione]**: Digitare una descrizione del frammento di documento.
    * **[!UICONTROL Modello]** dati modulo: Facoltativamente, selezionare il pulsante di opzione Modello dati modulo per creare la condizione in base a un modello dati del modulo. Quando si seleziona il pulsante di scelta Modello dati modulo, viene visualizzato il campo Modello **[!UICONTROL dati]** modulo. Individuare e selezionare un modello dati del modulo. Durante la creazione di una condizione per una comunicazione interattiva, accertatevi di utilizzare lo stesso modello dati che intendete utilizzare nella comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, vedere Integrazione [](../../forms/using/data-integration.md)dei dati.
@@ -74,7 +74,7 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Un]Rifiuto Del Cambiamento.**Toccate questa icona per rifiutare le modifiche eventualmente apportate alla risorsa e alla regola nella condizione.   **[B]Accetta Modifica.**Toccate questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.   **[C]Duplica risorsa.**Toccate questa icona per creare una copia della risorsa insieme alla regola applicata, se presente, nella condizione. Quindi potete procedere alla modifica della regola e della risorsa per la risorsa duplicata. Duplicare una risorsa è utile per creare regole simili per visualizzare risorse alternative basate su un contesto particolare.   **[D]Mostra anteprima.**Toccate questa icona per visualizzare un&#39;anteprima della risorsa nella pagina Crea\Modifica condizione.   **[E]Reorder.**Toccate e tenete premuto questa icona per trascinare le risorse e riordinarle in una condizione.
+   **[Un]Rifiuto Del Cambiamento.**Toccate questa icona per rifiutare le modifiche eventualmente apportate alla risorsa e alla regola nella condizione.   **[B]Accetta Modifica.**Toccate questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.   **[C]Duplica risorsa.**Toccate questa icona per creare una copia della risorsa insieme alla regola applicata, se presente, nella condizione. Quindi potete procedere alla modifica della regola e della risorsa per la risorsa duplicata. Duplicare una risorsa è utile per creare regole simili per visualizzare risorse alternative basate su un contesto particolare.   **[D]Mostra anteprima.**Toccate questa icona per visualizzare un&#39;anteprima della risorsa nella pagina Crea\Modifica condizione.   **&#39;server&#39; Reorder.** Toccate e tenete premuto questa icona per trascinare le risorse e riordinarle in una condizione.
 
    Potete selezionare le seguenti opzioni per specificare il comportamento della condizione in fase di esecuzione:
 
@@ -144,7 +144,7 @@ Utilizzando l’editor di regole in una condizione, potete creare regole per vis
 
    Regola per visualizzare una risorsa quando il tipo di criterio è standard
 
-   * Quando create o modificate una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a finestra intera consente di creare [variabili](#variables) per creare regole. Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola.
+   * Durante la creazione o la modifica di una regola, potete anche toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola/Modifica regola. La finestra di dialogo estesa a finestra intera consente di creare [variabili](#variables) per creare regole. Toccate di nuovo Ridimensiona per tornare alla finestra di dialogo Crea regola.
 
    * È inoltre possibile creare più condizioni in una regola.
 
@@ -167,7 +167,7 @@ Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola
 
    Viene visualizzata la finestra di dialogo Espansa e completa.
 
-   ![expandeditruledialog](assets/expandededitruledialog.png)
+   ![expandeditrulefinestra di dialogo](assets/expandededitruledialog.png)
 
 1. Nel riquadro a sinistra, toccate **[!UICONTROL Variabili]**.
 
