@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -45,7 +45,7 @@ Le posizioni predefinite dell&#39;archivio in cui risiedono payload, bozze e cro
    <td>AEM 6.3 Forms</td>
   </tr>
   <tr>
-   <td><strong>Istanza del flusso di lavoro <br /></strong></td>
+   <td><strong>Istanza <br /> del flusso di lavoro</strong></td>
    <td>/var/workflow/instance/[server_id]/&lt;data&gt;/[workflow-instance]/</td>
    <td>/etc/workflow/instance/[server_id]/[data]/[workflow-instance]/</td>
   </tr>
@@ -80,7 +80,7 @@ Tuttavia, non è possibile identificare i flussi di lavoro associati a un inizia
 
 Per identificare e accedere ai dati utente memorizzati per un&#39;istanza di workflow, effettua le seguenti operazioni:
 
-1. Nell’istanza di creazione di AEM, andate a `https://[server]:[port]/crx/de` Strumenti > **[!UICONTROL Query]**.
+1. Nell’istanza di creazione di AEM, andate a `https://'[server]:[port]'/crx/de` Strumenti > **[!UICONTROL Query]**.
 
    Selezionare **[!UICONTROL SQL2]** dal menu a discesa **[!UICONTROL Tipo]** .
 
@@ -106,7 +106,7 @@ Per identificare e accedere ai dati utente memorizzati per un&#39;istanza di wor
 
    ![percorso di payload](assets/payload-path.png)
 
-1. Andate alle posizioni delle bozze e alla cronologia per l&#39;istanza del flusso di lavoro.
+1. Andate alle posizioni per le bozze e la cronologia per l&#39;istanza del flusso di lavoro.
 
    Esempio:
 
@@ -133,14 +133,14 @@ Per identificare e accedere ai dati utente memorizzati per un&#39;istanza di wor
 
 1. Per le istanze del flusso di lavoro in stato **ESECUZIONE**, **SOSPENSIONE** o **STALE** , eseguite questo passaggio:
 
-   1. Accedete a `https://[server]:[port]/aem/start.html` e accedete con le credenziali di amministratore.
+   1. Accedete a `https://'[server]:[port]'/aem/start.html` e accedete con le credenziali di amministratore.
    1. Passare a **[!UICONTROL Strumenti > Flusso di lavoro > Istanze]**.
    1. Selezionate le istanze del flusso di lavoro rilevanti per l&#39;utente e toccate **[!UICONTROL Termina]** per terminare le istanze in esecuzione.
-   Per ulteriori informazioni sull&#39;utilizzo delle istanze del flusso di lavoro, consultate [Amministrazione delle istanze](/help/sites-administering/workflows-administering.md)del flusso di lavoro.
+   Per ulteriori informazioni sull&#39;utilizzo delle istanze del flusso di lavoro, consulta [Amministrazione delle istanze](/help/sites-administering/workflows-administering.md)del flusso di lavoro.
 
-1. Passate alla console CRXDE Lite, individuate il percorso di payload per un’istanza di workflow ed eliminate il `payload` nodo.
+1. Passate alla console CRXDE Lite, individuate il percorso di payload per un’istanza del flusso di lavoro ed eliminate il `payload` nodo.
 1. Andate al percorso delle bozze per un&#39;istanza di workflow ed eliminate il `draft` nodo.
-1. Andate al percorso della cronologia per un&#39;istanza di workflow ed eliminate il `history` nodo.
+1. Andate al percorso della cronologia per un&#39;istanza del flusso di lavoro ed eliminate il `history` nodo.
 1. Andate al percorso dell&#39;istanza del flusso di lavoro per un&#39;istanza del flusso di lavoro ed eliminate il `[workflow-instance-ID]` nodo del flusso di lavoro.
 
    >[!NOTE]
