@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 08e53eec26e29c2403cdfc3239da3ea23da3f321
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ L&#39;amministratore può aggiungere il supporto per più o più caratteri speci
 
 Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate le seguenti operazioni:
 
-1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
+1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 1. Nella cartella delle app, create una cartella denominata **[!UICONTROL specialfonts]** con percorso/struttura simile alla cartella dei caratteri speciali (che si trova nella cartella textEditorConfig in libs):
 
    1. Fate clic con il pulsante destro del mouse sulla cartella **dei caratteri** speciali nel percorso seguente e selezionate Nodo **** sovrapposizione:
@@ -49,11 +49,11 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts
+      **Percorso:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       >[!NOTE]
       >
@@ -107,7 +107,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
    <td>
     <ol>
      <li>Sovrapporre il nodo da aggiornare come descritto in precedenza e verificare tag e classi.</li>
-     <li>Modificate eventuali valori, quali didascalia, valore, endValue e multipleCaption. </li>
+     <li>Modificate eventuali valori, ad esempio didascalia, valore, endValue e multipleCaption. </li>
      <li>Fate clic su Salva tutto. </li>
      <li>Aggiornate l'Editor di testo\Create l'interfaccia utente di corrispondenza per visualizzare le modifiche.</li>
     </ol> </td>
@@ -138,7 +138,7 @@ Per aggiungere il supporto per i caratteri speciali personalizzati, effettuate l
     <ol>
      <li>Aggiungete un nodo figlio in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialfonts" con proprietà obbligatorie. </li>
      <li>Aggiungete la proprietà "sling:orderBefore (String)" al nodo figlio appena creato. </li>
-     <li>Aggiungete il nome del nodo come valore prima del quale verrà visualizzato il nuovo carattere speciale aggiunto. </li>
+     <li>Aggiungete il nome del nodo come valore prima del quale deve essere visualizzato il nuovo carattere speciale aggiunto. </li>
      <li>Fate clic su Salva tutto. </li>
      <li>Aggiornate l'Editor di testo\Create l'interfaccia utente di corrispondenza per visualizzare le modifiche.<br /> </li>
     </ol> </td>
