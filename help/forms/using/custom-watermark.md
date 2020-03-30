@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,15 +23,15 @@ Nell’interfaccia utente Crea corrispondenza, gli utenti agente visualizzano un
 
 Per impedire l’uso non autorizzato di tali dati, le organizzazioni possono imporre una filigrana al PDF di anteprima. La filigrana predefinita è &quot;ANTEPRIMA&quot;, che viene visualizzata nel PDF.
 
-Per abilitare la filigrana nell&#39;anteprima PDF, selezionare l&#39;opzione **[!UICONTROL Applica filigrana]** durante l&#39;anteprima in **[!UICONTROL Correspondence Management Configurations]** all&#39;indirizzo https://[server]:[porta]/sistema/console/configMgr.
+Per abilitare la filigrana nell&#39;anteprima PDF, selezionare l&#39;opzione **[!UICONTROL Applica filigrana]** durante l&#39;anteprima in **[!UICONTROL Correspondence Management Configurations]** all&#39;indirizzo https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
 ![filigrana predefinita](assets/default-watermark.png)
 
-Per personalizzare il testo e l’aspetto della filigrana è possibile effettuare le seguenti operazioni:
+Per personalizzare il testo e l’aspetto della filigrana è possibile utilizzare i seguenti passaggi:
 
 ## Personalizzare la filigrana nell’anteprima PDF nell’interfaccia utente Crea corrispondenza {#customizewatermark-}
 
-1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
+1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 1. Nella cartella delle app, create una cartella denominata **[!UICONTROL previewwatermark]** con percorso/struttura simile alla cartella della filigrana di anteprima nella cartella libs:
 
    1. Fate clic con il pulsante destro del mouse sulla cartella della filigrana **di** anteprima nel percorso seguente e selezionate Nodo **** sovrapposizione:
@@ -40,11 +40,11 @@ Per personalizzare il testo e l’aspetto della filigrana è possibile effettuar
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/configFiles/previewwatermark
+      **Percorso:** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Posizione overlay: /apps/
+      **Posizione overlay:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
       >[!NOTE]
       >
