@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ Il servizio supporta inoltre le seguenti simbologie **monodimensionali** fornite
 * Estrarre i dati dei codici a barre dalle immagini dei codici a barre (TIFF o PDF). I dati vengono memorizzati come testo delimitato.
 * Conversione di dati di testo delimitati in XML (XDP o XFDF). I dati XML sono più facili da analizzare rispetto al testo delimitato. Inoltre, i dati in formato XDP o XFDF possono essere utilizzati come input per altri servizi in AEM Forms.
 
-Per ciascun codice a barre contenuto in un&#39;immagine, il servizio Moduli codici a barre individua il codice a barre, lo decodifica ed estrae i dati. Il servizio restituisce i dati del codice a barre (utilizzando la codifica di entità dove richiesto) in un elemento di contenuto di un documento XML. Ad esempio, la seguente immagine TIFF digitalizzata di un modulo contiene due codici a barre:
+Per ciascun codice a barre contenuto in un&#39;immagine, il servizio Moduli con codice a barre individua il codice a barre, lo decodifica ed estrae i dati. Il servizio restituisce i dati del codice a barre (utilizzando la codifica di entità dove richiesto) in un elemento di contenuto di un documento XML. Ad esempio, la seguente immagine TIFF digitalizzata di un modulo contiene due codici a barre:
 
 ![esempio](assets/example.png)
 
@@ -109,7 +109,7 @@ Durante la decodifica dei codici a barre, specificare il carattere utilizzato pe
 
 Se gli autori dei moduli aggiungono oggetti codice a barre ai moduli utilizzando Designer, è possibile specificare una codifica dei caratteri. Le codifiche riconosciute sono UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16. Per impostazione predefinita, tutti i dati sono codificati nei codici a barre come UTF-8.
 
-Durante la decodifica dei codici a barre, è possibile specificare la codifica dei set di caratteri da utilizzare. Per garantire la corretta decodifica di tutti i dati, specificare lo stesso set di caratteri specificato dall&#39;autore del modulo al momento della progettazione del modulo.
+Durante la decodifica dei codici a barre, è possibile specificare la codifica dei set di caratteri da utilizzare. Per garantire che tutti i dati siano decodificati correttamente, specificare lo stesso set di caratteri specificato dall&#39;autore del modulo al momento della progettazione del modulo.
 
 ### Limitazioni API {#api-limitations}
 
@@ -130,7 +130,7 @@ Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la 
 
 ## Configurare le proprietà del servizio {#configureproperties}
 
-È possibile utilizzare il servizio **AEMFD** Barcoded Forms Servicenella console AEM per configurare le proprietà per questo servizio. L’URL predefinito della console AEM è `https://[host]:[port]/system/console/configMgr`.
+È possibile utilizzare il servizio **AEMFD** Barcoded Forms Servicenella console AEM per configurare le proprietà per questo servizio. L’URL predefinito della console AEM è `https://[host]:'port'/system/console/configMgr`.
 
 ## Utilizzo del servizio {#using}
 
