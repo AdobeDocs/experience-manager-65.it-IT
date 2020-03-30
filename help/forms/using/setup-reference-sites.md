@@ -1,8 +1,8 @@
 ---
 title: Configurare e configurare siti di riferimento self-service per We.Finance e Dipendenti
 seo-title: Configurare e configurare siti di riferimento self-service per We.Finance e Dipendenti
-description: I siti di riferimento AEM Forms mostrano come utilizzare AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
-seo-description: I siti di riferimento AEM Forms mostrano come utilizzare AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
+description: I siti di riferimento di AEM Forms mostrano come utilizzare AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
+seo-description: I siti di riferimento di AEM Forms mostrano come utilizzare AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
 uuid: 199349b7-97bd-4eca-a2e7-19d6708fcbee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -88,12 +88,12 @@ Effettuate i seguenti passaggi nella sequenza consigliata per configurare e impo
   </tr>
   <tr>
    <td><a href="#aemds">Configurare le impostazioni di AEM DS</a></td>
-   <td>Authoring</td>
+   <td>Autore</td>
    <td>Configurare AEM DS per l'invio del modulo nell'istanza di pubblicazione e i flussi di lavoro di elaborazione nell'istanza di creazione.</td>
   </tr>
   <tr>
    <td><a href="#refsite">Distribuzione di pacchetti di siti di riferimento</a></td>
-   <td>Authoring</td>
+   <td>Autore</td>
    <td>Distribuire pacchetti per siti di riferimento nell'istanza di creazione di AEM Forms.</td>
   </tr>
   <tr>
@@ -153,7 +153,7 @@ In AEM, **Externalizer** è un servizio OSGI che consente di trasformare program
 >
 >Non esternalizzate con l’URL HTTPS se utilizzate un certificato autofirmato per SSL.
 >
->Inoltre, per il server locale utilizzate localhost invece del relativo nome host.
+>Inoltre, utilizzate localhost invece del relativo nome host per il server locale.
 
 Effettuate le seguenti operazioni sia sulle istanze di creazione che di pubblicazione:
 
@@ -175,7 +175,7 @@ L&#39;implementazione del sito di riferimento richiede l&#39;invio di e-mail agl
 Per configurare il servizio di posta elettronica nell’istanza di pubblicazione, effettuate le seguenti operazioni:
 
 1. Andate alla configurazione OSGi all&#39;indirizzo https://&lt;*hostname>*:&lt;*port>*/system/console/configMgr.
-1. Tocca e trova il servizio **di posta** Day per aprirlo alla configurazione.
+1. Tocca e trova il servizio **di posta** Day CQ Mail per aprirlo alla configurazione.
 1. Specificare il nome host del server SMTP e i valori della porta.
 1. Toccate **Salva.**
 
@@ -220,8 +220,8 @@ Per ulteriori informazioni sull&#39;utilizzo dei pacchetti e della condivisione 
 
 Dopo aver installato i pacchetti e avviato le istanze di creazione e pubblicazione, visitate i seguenti URL nel browser:
 
-* `https://[server]:[port]/wegov`
-* `https://[server]:[port]/wefinance`
+* `https://'[server]:[port]'/wegov`
+* `https://'[server]:[port]'/wefinance`
 
 Se l&#39;installazione ha esito positivo, potete accedere alle pagine di destinazione dei siti di riferimento e We.Finance.
 
@@ -231,12 +231,12 @@ I siti di riferimento dell&#39;applicazione ipoteca principale e dell&#39;applic
 
 Per importare l&#39;entità personalizzata per l&#39;applicazione di assicurazione automatica:
 
-1. Scaricate il pacchetto della soluzione **WeFinanceAutoInsurance_1_0.zip** dall&#39;istanza di `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` creazione di AEM.
+1. Scaricate il pacchetto della soluzione **WeFinanceAutoInsurance_1_0.zip** dall&#39;istanza di `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` creazione di AEM.
 1. Nell’istanza di Microsoft Dynamics, accedete a **Impostazioni > Soluzioni** e fate clic su **Importa**. Selezionate e importate il pacchetto.
 
 Per importare l&#39;entità personalizzata per l&#39;applicazione di assicurazione automatica:
 
-1. Scaricate il pacchetto **AEMFormsFSIRefsite_1_0.zip** da `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Selezionate e importate il pacchetto.
+1. Scaricate il pacchetto **AEMFormsFSIRefsite_1_0.zip** da `https://[author]:'port'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Selezionate e importate il pacchetto.
 
 1. Nell’istanza di Microsoft Dynamics, accedete a **Impostazioni > Soluzioni** e fate clic su **Importa**. Selezionate e importate il pacchetto.
 
@@ -244,9 +244,9 @@ Per importare i record cliente e polizza assicurativa:
 
 1. Scarica i file di dati **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv** e **home ipoteca** dalle seguenti posizioni nell’istanza di creazione di AEM:
 
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
-   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Nell’istanza di Microsoft Dynamics, effettuate le seguenti operazioni:
 
@@ -261,7 +261,7 @@ Per importare i record cliente e polizza assicurativa:
 Configurate il servizio cloud OAuth in AEM Forms per abilitare la comunicazione tra AEM Forms e Microsoft Dynamics. Per configurare il servizio OAuth Cloud sulle istanze di creazione e pubblicazione di AEM, effettuate le seguenti operazioni:
 
 1. Nell’istanza di creazione di AEM, andate a **Strumenti** > Servizi **** Cloud > Origini **** dati > **globale**. Tocca l&#39;icona **Refsite Dynamics Integration** e tocca Proprietà.
-1. Accedere all&#39;account Microsoft Azure Active Directory. Aggiungete l&#39;URL di configurazione del servizio cloud copiato nell&#39;impostazione **Rispondi URL** per l&#39;applicazione registrata. Salvate la configurazione.
+1. Accedere all&#39;account Microsoft Azure Active Directory. Aggiungete l&#39;URL di configurazione del servizio cloud copiato nell&#39;impostazione **Rispondi URL** per l&#39;applicazione registrata. Salva la configurazione.
 1. Nella scheda Impostazioni autenticazione, specificate **Origine** servizio, ID **** client, Segreto **** cliente e URL **** risorsa per l&#39;istanza di Microsoft Dynamics. Fate clic su **Connetti a OAuth** per reindirizzare alla pagina di accesso di Microsoft Dynamics.
 1. Immettete le credenziali di accesso. Una volta effettuato l&#39;accesso, si viene reindirizzati alla pagina di configurazione del servizio cloud AEM Forms. Fate clic su **Salva e chiudi**. La configurazione del servizio cloud viene salvata.
 1. Vai a **Forms** > Integrazioni **** dati > **We.Finance**. Selezionare Auto Insurance (Dynamics) e fare clic su Edit (Modifica). Le entità di Microsoft Dynamics sono elencate nella scheda Origini dati. Attendere che tutte le entità siano recuperate da Microsoft Dynamics ed elencate nella scheda origini dati.
@@ -273,7 +273,7 @@ Configurate il servizio cloud OAuth in AEM Forms per abilitare la comunicazione 
 
 Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
-1. Andate alla console di configurazione Web di AEM all&#39;indirizzo `https://[server]:[host]/system/console/configMgr`.
+1. Andate alla console di configurazione Web di AEM all&#39;indirizzo `https://'[server]:[port]'system/console/configMgr`.
 1. Individua e tocca il servizio **[!UICONTROL di configurazione di]** Adobe Sign per aprirlo alla configurazione.
 1. Configurare l&#39;espressione **[!UICONTROL del pianificatore di aggiornamento]** dello stato come **0 0/2 * * ?**.
 
@@ -283,7 +283,7 @@ Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
 1. Toccate **[!UICONTROL Salva]**.
 
-## Configurare il sito di riferimento Servizio cloud Adobe Sign {#sign-service}
+## Configurare il sito di riferimento il servizio cloud Adobe Sign {#sign-service}
 
 Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
@@ -301,7 +301,7 @@ Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
 Effettuate le seguenti operazioni nell’istanza di pubblicazione per consentire l’accesso agli utenti anonimi:
 
-1. Andate alla console di configurazione Web di AEM all&#39;indirizzo `https://[server]:[port]/system/console/configMgr`.
+1. Andate alla console di configurazione Web di AEM all&#39;indirizzo `https://'[server]:[port]'/system/console/configMgr`.
 1. Individuare e toccare **[!UICONTROL Forms Common Configuration Service]** per aprirlo alla configurazione.
 1. Configura il campo **[!UICONTROL Consenti]** per **[!UICONTROL tutti gli utenti]**.
 1. Toccate **[!UICONTROL Salva]**.
@@ -310,7 +310,7 @@ Effettuate le seguenti operazioni nell’istanza di pubblicazione per consentire
 
 Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
-1. Vai a CRXDE a `https://[server]:[port]/crx/de/index.jsp`.
+1. Vai a CRXDE a `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Andate a **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** e aprite il file swagger.
 1. Aggiornate le impostazioni di host e porta in base all&#39;ambiente in uso.
 1. Salvate le impostazioni.
@@ -369,7 +369,7 @@ Per provare l&#39;integrazione nel sito di riferimento, effettuate le seguenti o
 
 1. Fate clic su Configurazione **[!UICONTROL destinazione]** AEM Forms.
 1. Selezionate un framework Target.
-1. Nel campo URL **[!UICONTROL di]** Target, specificate l&#39;URL di AEM Forms. Ad esempio: `https://<hostname>:<port>/`.
+1. Nel campo URL **[!UICONTROL di]** Target, specificate l&#39;URL di AEM Forms. Esempio: `https://<hostname>:<port>/`.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
