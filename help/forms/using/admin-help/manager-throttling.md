@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Gestione del lavoro e limitazione{#work-manager-and-throttling}
 
-I moduli AEM (e versioni precedenti) utilizzavano code JMS per eseguire le operazioni in modo asincrono. Nei moduli AEM, le code JMS sono state sostituite da Work Manager. Questo documento fornisce informazioni di base su Work Manager e istruzioni sulla configurazione delle opzioni di limitazione di Work Manager.
+I moduli AEM (e le versioni precedenti) utilizzavano le code JMS per eseguire le operazioni in modo asincrono. Nei moduli AEM, le code JMS sono state sostituite da Work Manager. Questo documento fornisce informazioni di base su Work Manager e istruzioni sulla configurazione delle opzioni di limitazione di Work Manager.
 
 ## Informazioni sulle operazioni longeve (asincrone) {#about-long-lived-asynchronous-operations}
 
@@ -27,7 +27,7 @@ Le operazioni di lunga durata possono estendersi anche oltre l&#39;organizzazion
 
 ## Informazioni su Work Manager {#about-work-manager}
 
-I moduli AEM (e versioni precedenti) utilizzavano code JMS per eseguire le operazioni in modo asincrono. I moduli AEM utilizzano Work Manager per pianificare ed eseguire operazioni asincrone tramite thread gestiti.
+I moduli AEM (e le versioni precedenti) utilizzavano le code JMS per eseguire le operazioni in modo asincrono. I moduli AEM utilizzano Work Manager per pianificare ed eseguire operazioni asincrone tramite thread gestiti.
 
 Le operazioni asincrone vengono gestite in questo modo:
 
@@ -67,7 +67,7 @@ Gli amministratori di moduli AEM possono utilizzare il monitoraggio integrità p
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>
-   <td><p>Specifica la percentuale massima di memoria utilizzabile prima che Work Manager interrompa la limitazione dei processi in arrivo.</p><p>Il valore predefinito per questa opzione è <code>20</code>. Questo valore deve essere valido per la maggior parte dei sistemi.</p></td>
+   <td><p>Specifica la percentuale massima di memoria che può essere utilizzata prima che Work Manager interrompa la limitazione dei processi in arrivo.</p><p>Il valore predefinito per questa opzione è <code>20</code>. Questo valore deve essere valido per la maggior parte dei sistemi.</p></td>
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
@@ -82,15 +82,15 @@ Gli amministratori di moduli AEM possono utilizzare il monitoraggio integrità p
 1. Aprite l&#39; *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungete le opzioni Java necessarie nel formato `-Dproperty=value`.
 1. Riavviate il server.
 
-**Aggiungere opzioni Java a WebLogic**
+**Aggiunta di opzioni Java a WebLogic**
 
-1. Avviate la console di amministrazione WebLogic digitando il nome `https://`*[]*host`:`*[porta]* `/console` in un browser Web.
+1. Avviate la console di amministrazione WebLogic digitando `https://[host name]:[port]/console` in un browser Web.
 1. Digitare il nome utente e la password creati per il dominio WebLogic Server e fare clic su Log In Change Center, quindi fare clic su Lock &amp; Edit (Blocca e modifica).
 1. In Struttura dominio, fare clic su Ambiente > Server e, nel riquadro a destra, fare clic sul nome del server gestito.
 1. Nella schermata successiva, fate clic sulla scheda Configurazione > scheda Avvio server.
 1. Nella casella Argomenti, aggiungere gli argomenti richiesti alla fine del contenuto corrente. Ad esempio, per disattivare il monitoraggio integrità, aggiungete:
 
-   `-Dadobe.healthmonitor.enabled=false` disattiva Monitoraggio integrità.
+   `-Dadobe.healthmonitor.enabled=false` disattiva il monitoraggio integrità.
 
 1. Fate clic su Salva, quindi su Attiva modifiche.
 1. Riavviare il server gestito WebLogic.
@@ -99,7 +99,7 @@ Gli amministratori di moduli AEM possono utilizzare il monitoraggio integrità p
 
 1. Nella struttura di navigazione della console di amministrazione di WebSphere, fare clic su Server > Tipi di server > Server applicazioni WebSphere.
 1. Nel riquadro a destra, fare clic sul nome del server.
-1. In Infrastruttura server fare clic su Flusso di lavoro Java e moduli > Definizione processo.
+1. In Infrastruttura server, fare clic su Flusso di lavoro Java e moduli > Definizione processo.
 1. In Proprietà aggiuntive fare clic su Java Virtual Machine.
 1. Nella casella Argomenti JVM generici, digitare gli argomenti richiesti.
 1. Fate clic su OK o Applica, quindi fate clic su Salva direttamente nella configurazione principale.
