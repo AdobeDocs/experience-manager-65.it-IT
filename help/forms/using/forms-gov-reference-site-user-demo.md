@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -80,7 +80,7 @@ Sono inclusi anche i seguenti gruppi:
    *https://&lt;aemserver>:&lt;porta>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
 1. **Sito** Adobe We.Gov: *https://&lt;aemserver>:&lt;porta>/content/we-gov/home.html*
-1. **Adobe Inbox**: Posizione dell’icona [Bell nella barra dei menu principale nella parte posteriore] di AEM.
+1. **Adobe Inbox**: Posizione dell’icona [Bell nella barra dei menu principale nella parte posteriore](assets/bell.svg) di AEM.
 
    *https://&lt;aemserver>:&lt;porta>/aem/start.html*
 
@@ -98,7 +98,7 @@ Sono inclusi anche i seguenti gruppi:
 1. Effettua l’accesso con:
 
    1. **Utente**: aya.tan
-   1. **Password**:password
+   1. **Password**: password
 
 1. Ridimensionate nuovamente la finestra del browser o utilizzate l&#39;emulatore del browser per replicare le dimensioni di un dispositivo mobile.
 
@@ -170,19 +170,19 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
    ![Dettagli modulo adattivo](/help/forms/using/assets/adaptive_form.png)
 
-## Demo desktop {#desktop-demo}
+## Demo sul desktop {#desktop-demo}
 
-**** Questa sezione: Tornando a casa, Aya ha trovato le informazioni necessarie e riprende l&#39;applicazione dal suo desktop. Aya passa al portale dei moduli online per riprendere l&#39;applicazione. Con una semplice personalizzazione, le agenzie possono anche generare automaticamente e inviare via e-mail un collegamento per riprendere l&#39;applicazione.
+**Questa sezione:** Tornando a casa, Aya ha trovato le informazioni di cui aveva bisogno e riprende l&#39;applicazione dal suo desktop. Aya passa al portale dei moduli online per riprendere l&#39;applicazione. Con una semplice personalizzazione, le agenzie possono anche generare automaticamente e inviare via e-mail un collegamento per riprendere l&#39;applicazione.
 
 ### Storia utente Aya (modulo adattivo continuo) {#aya-user-story-continued-adaptive-form}
 
 **Istruzioni utente:**
 
 1. Andate a *https://&lt;aemserver>:&lt;porta>/content/we-gov/home.html*
-1. Dalla barra di navigazione, selezionate &quot;**Online Services**&quot;.
+1. Dalla barra di navigazione, selezionate click on &quot;**Online Services**&quot; (Servizionline).
 1. Nel pannello &quot;Bozze di moduli&quot;, selezionare l&#39;esistente &quot;Iscrizione applicazione per benefici sanitari&quot;.
 
-   ![Domanda di iscrizione per benefici per la salute](/help/forms/using/assets/enrollment_application.png)
+   ![Domanda di iscrizione per i benefici per la salute](/help/forms/using/assets/enrollment_application.png)
 
    L&#39;aspetto e la sensazione sono gli stessi, e non ha bisogno di reimmettere dati.
 
@@ -219,7 +219,7 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
 ![Agente governativo George](/help/forms/using/assets/george_lang-1.png)
 
-**** Questa sezione: George è un analista d&#39;affari dell&#39;agenzia governativa Aya, che chiede un servizio. George dispone di un&#39;unica dashboard in cui può vedere tutte le applicazioni di richiesta di servizio che gli sono state assegnate per la revisione.
+**Questa sezione:** George è un analista d&#39;affari dell&#39;agenzia governativa Aya, che chiede un servizio. George dispone di un&#39;unica dashboard in cui può vedere tutte le applicazioni di richiesta di servizio che gli sono state assegnate per la revisione.
 
 ### George User Story (inbox AEM) {#george-user-story-aem-inbox}
 
@@ -230,8 +230,8 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
    1. Effettua l’accesso con:
 
-      1. **** Utente: george.lang
-      1. **** Password:password
+      1. **Utente:** george.lang
+      1. **Password:** password
    1. O Impersona:
 
       1. Digitare &quot;**George**&quot; nel campo &quot;**Impersonate as**&quot;.
@@ -247,7 +247,7 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
 ### George User Story (inbox AEM e MS Dynamics) {#george-user-story-aem-inbox-and-ms-dynamics}
 
-Grazie alle integrazioni di dati e ai flussi di lavoro automatizzati, viene visualizzata l&#39;applicazione di Aya, insieme a un record CRM generato automaticamente al momento dell&#39;invio dei dati.
+Grazie alle integrazioni di dati e ai flussi di lavoro automatizzati, viene visualizzata l&#39;applicazione di Aya, insieme a un record CRM che è stato generato automaticamente al momento dell&#39;invio dei dati.
 
 **Istruzioni utente:**
 
@@ -278,7 +278,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
 ![Camila (CX lead)](/help/forms/using/assets/camila_santos-1.png)
 
-**** Questa sezione: Camila il lead CX ha creato una telefonata di benvenuto con Aya per spiegare come utilizzare i servizi governativi per i quali è stata approvata.
+**Questa sezione:** Camila il lead CX ha organizzato una telefonata di benvenuto con Aya per spiegare come utilizzare i servizi governativi per i quali è stata approvata.
 
 ### Storia utente di Camila (inbox AEM e MS Dynamics) {#camila-user-story-aem-inbox-ms-dynamics}
 
@@ -290,7 +290,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
    1. Effettua l’accesso con:
 
       1. **Utente**: camila.santos
-      1. **Password**:password
+      1. **Password**: password
    1. O Impersona:
 
       1. Digitare &quot;**Camila**&quot; nel campo &quot;**Impersonate as**&quot;.
@@ -313,10 +313,10 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
    1. Facoltativamente, aggiungi una nuova attività di chiamata direttamente in Dynamics.
    1. Aprite la sezione &quot;**Attività**&quot;.
    1. Fate clic sull&#39;opzione &quot;**Nuova chiamata** telefonica&quot;.
-   1. Aggiungete i dettagli della chiamata telefonica.
+   1. Aggiungete i dettagli delle chiamate telefoniche.
    1. Salvare e chiudere la finestra.
 
-1. In AEM, andate in alto a sinistra e fate clic su &quot;**Invia**&quot; per inviare l’applicazione.
+1. In AEM, andate all’angolo in alto a sinistra e fate clic su &quot;**Invia**&quot; per inviare l’applicazione.
 1. Nella finestra modale puoi lasciare un messaggio.
 1. Fate clic su Fine.
 
@@ -324,7 +324,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
 ## Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
 
-**** Questa sezione: Aya riceve un messaggio e-mail contenente un collegamento a una comunicazione interattiva che riepiloga i vantaggi e include anche campi modulo da compilare. Con l&#39;indicazione dei vantaggi PDF allegata e collegamento alla lettera di comunicazione interattiva nella posta (con lo stesso tema/marchio della comunicazione interattiva).
+**Questa sezione:** Aya riceve un messaggio e-mail contenente un collegamento a una comunicazione interattiva che riepiloga i vantaggi e include anche campi modulo da compilare. Con l&#39;indicazione dei vantaggi PDF allegata e il collegamento alla lettera di comunicazione interattiva nella posta (con lo stesso tema/marchio della comunicazione interattiva).
 
 ### Aya User Story (client e-mail) {#aya-user-story-email-client}
 
@@ -339,7 +339,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
 1. Per un riferimento rapido direttamente al PDF:
 
-   *https://&lt;aemserver>:&lt;porta>/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
+   *https://&lt;server aemserver>:&lt;porta>/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
 1. Per un riferimento rapido a IC direttamente:
 
@@ -349,7 +349,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
 ## Renewal Promemoria Citizen (Aya) {#renewal-reminder-citizen-aya}
 
-**** Questa sezione: Camila pianifica anche un promemoria di comunicazione così un anno dopo. (Procedura del flusso di lavoro che automatizza/esegue e invia per e-mail).
+**Questa sezione:** Camila pianifica anche un promemoria di comunicazione così un anno dopo. (Procedura del flusso di lavoro che automatizza/esegue e invia per e-mail).
 
 ### Aya User Story (client e-mail) {#aya-user-story-email-client-1}
 
@@ -360,11 +360,11 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 1. Fare clic sul pulsante &quot;**Invia una nuova applicazione**&quot; per aprire il modulo adattivo.
 
    1. Questa sezione viene lasciata intenzionalmente vuota per supportare la precompilazione dei dati nella fase 2.
-   ![E-mail promemoria rinnovo](/help/forms/using/assets/renewal_reminder_email.png)
+   ![E-mail promemoria rinnovamento](/help/forms/using/assets/renewal_reminder_email.png)
 
 ## Lead CX di Analytics (Camila) {#analytics-cx-lead-camila}
 
-**** Questa sezione: Camila passa a un dashboard in cui può vedere i KPI dell&#39;agenzia, come la percentuale di cittadini che iniziano a compilare un modulo di richiesta di servizio e abbandonano, la durata media del tempo che trascorre tra la richiesta di invio e la risposta di approvazione/rifiuto e le statistiche di coinvolgimento per i manuali sui benefici che ha inviato ai cittadini.
+**Questa sezione:** Camila passa a un dashboard in cui può vedere i KPI dell&#39;agenzia, come la percentuale di cittadini che iniziano a compilare un modulo di richiesta di servizio e abbandonano, la durata media del tempo che trascorre tra la richiesta di invio e la risposta di approvazione/rifiuto e le statistiche di coinvolgimento per i manuali sui benefici che ha inviato ai cittadini.
 
 ### Recensioni di Camila Sites reporting (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
@@ -378,7 +378,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
    ![Metriche chiave di Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. Tornando alla pagina di visualizzazione della pagina (a cui si accede al punto 3.3), è possibile visualizzare anche le informazioni di visualizzazione della pagina modificando l&#39;impostazione di visualizzazione per visualizzare gli elementi nella &quot;Vista **** elenco&quot;.
+1. Tornando alla pagina di visualizzazione della pagina (a cui si accede al punto 3.3), è possibile visualizzare anche le informazioni di visualizzazione della pagina modificando l&#39;impostazione di visualizzazione per visualizzare gli elementi nella &quot;Vista **** a elenco&quot;.
 1. Individuate il menu a discesa &quot;**Visualizza**&quot; e selezionate &quot;Visualizzazione **** elenco&quot;.
 
    ![Visualizzazione a elenco nel menu a discesa Visualizza](/help/forms/using/assets/list_view_view_dropdown.jpg)
@@ -399,7 +399,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
 1. Selezionate il modulo adattivo &quot;**Iscrizione applicazione per benefici** sanitari&quot; e selezionate l&#39;opzione &quot;Rapporto **** analisi&quot;.
 
-   ![Domanda di iscrizione per benefici per la salute](/help/forms/using/assets/analytics_report_benefits.jpg)
+   ![Domanda di iscrizione per i benefici per la salute](/help/forms/using/assets/analytics_report_benefits.jpg)
 
 1. Attendete che la pagina venga caricata e visualizzate i dati del rapporto di Analytics.
 
