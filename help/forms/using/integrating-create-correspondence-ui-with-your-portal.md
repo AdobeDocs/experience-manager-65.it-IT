@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ Un modo per chiamare l’applicazione Crea corrispondenza da un portale personal
 * l&#39;URL dei dati XML recuperati dall&#39;origine dati desiderata (utilizzando il parametro cmDataUrl).
 
 Ad esempio, il portale personalizzato prepara l&#39;URL come\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, che può essere il href di un collegamento nel portale.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, che può essere il href di un collegamento nel portale.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Ad esempio, il portale personalizzato prepara l&#39;URL come\
 
 ## Chiamata in linea basata sui dati {#inline-data-based-invocation}
 
-Un altro metodo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe essere quello di accedere semplicemente all’URL in https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html, inviando i parametri e i dati per chiamare l’applicazione Create Correspondence come richiesta POST (nascondendoli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nel precedente approccio.
+Un altro metodo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe essere quello di accedere semplicemente all’URL in https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, inviando i parametri e i dati per chiamare l’applicazione Create Correspondence come richiesta POST (nascondendoli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
 
 ### Parametri per la specifica della lettera {#parameters-for-specifying-letter}
 
