@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,11 +23,11 @@ AEM Forms si integra con Adobe Analytics per acquisire e tenere traccia delle me
 >
 >La funzione di analisi in AEM Forms è disponibile come parte del pacchetto del componente aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo, consultate [Installazione e configurazione di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
->Oltre al pacchetto del componente aggiuntivo, sono necessari un account Adobe Analytics e privilegi di amministratore per l&#39;istanza di AEM. Per informazioni sulla soluzione, consultate [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+>Oltre al pacchetto del componente aggiuntivo, è necessario disporre di un account Adobe Analytics e di privilegi di amministratore per l&#39;istanza di AEM. Per informazioni sulla soluzione, consulta [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
 ## Panoramica {#overview}
 
-È possibile utilizzare Adobe Analytics per scoprire i pattern di interazione e i problemi che gli utenti devono affrontare durante l&#39;uso di moduli adattivi, moduli HTML5 e comunicazioni interattive. Adobe Analytics tiene traccia e memorizza automaticamente le informazioni sui seguenti parametri:
+È possibile utilizzare Adobe Analytics per scoprire i pattern di interazione e i problemi che gli utenti devono affrontare durante l&#39;uso di moduli adattivi, moduli HTML5 e comunicazioni interattive. Adobe Analytics tiene traccia e memorizza automaticamente le informazioni relative ai seguenti parametri:
 
 * **Tempo** medio di riempimento: Tempo medio impiegato per compilare il modulo.
 * **Rappresentazioni**: Numero di volte che un modulo viene aperto.
@@ -70,7 +70,7 @@ Per creare una suite di rapporti, effettuate le seguenti operazioni.
 
    Impostazioni account generali
 
-1. Nella schermata Impostazioni account generali, abilitate **Reporting** geografia e fate clic su **Salva.**
+1. Nella schermata Impostazioni account generali, abilita **Reporting** geografia e fai clic su **Salva.**
 1. Andate a **Modifica impostazioni** > **Traffico** > Variabili **** traffico.
 1. Nella suite di rapporti, configura e abilita le seguenti variabili di traffico.
 
@@ -105,7 +105,7 @@ Per creare una suite di rapporti, effettuate le seguenti operazioni.
 
 ## Creazione della configurazione del servizio Cloud {#creating-cloud-service-configuration}
 
-La configurazione del servizio cloud è un&#39;informazione sull&#39;account Adobe Analytics. La configurazione consente ad Adobe Experience Manager (AEM) di connettersi ad Adobe Analytics. Create una configurazione separata per ciascun account Analytics utilizzato.
+La configurazione del servizio cloud è un&#39;informazione sull&#39;account Adobe Analytics. La configurazione consente ad Adobe Experience Manager (AEM) di connettersi ad Adobe Analytics. Create una configurazione separata per ciascun account Analytics che utilizzate.
 
 1. Accedete all’istanza di creazione di AEM come amministratore.
 1. Nell&#39;angolo in alto a sinistra, fai clic su **Adobe Experience Manager** > **Strumenti** ![](/help/forms/using/assets/tools.png) > **Distribuzione** > Servizi **** Cloud.
@@ -113,7 +113,7 @@ La configurazione del servizio cloud è un&#39;informazione sull&#39;account Ado
 
    Se siete un utente principiante, fate clic su **Configura ora**.
 
-1. Aggiungete un Titolo alla nuova configurazione (la compilazione del campo Nome è facoltativa). Ad esempio, Configurazione della mia analisi. Fai clic su **Crea**. 
+1. Aggiungete un Titolo alla nuova configurazione (la compilazione del campo Nome è facoltativa). Ad esempio, Configurazione della mia analisi. Fai clic su **Crea**.
 
 1. Quando il pannello Modifica si apre nella pagina di configurazione, compila i campi:
 
@@ -124,7 +124,7 @@ La configurazione del servizio cloud è un&#39;informazione sull&#39;account Ado
 
 1. Fate clic su **Connetti ad Analytics**. Viene visualizzata una finestra di dialogo con il messaggio che indica che la connessione è stata eseguita correttamente. Fai clic su **OK**. 
 
-## Creazione del framework di servizi cloud {#creating-cloud-service-framework}
+## Creazione di un framework di servizi cloud {#creating-cloud-service-framework}
 
 Un framework di Adobe Analytics è un set di mappature tra le variabili Adobe Analytics e AEM. Utilizzare un framework per configurare il modo in cui i moduli compilano i dati nei rapporti di Adobe Analytics. I framework sono associati a una configurazione di Adobe Analytics. Potete creare più framework per ciascuna configurazione.
 
@@ -164,10 +164,10 @@ Un framework di Adobe Analytics è un set di mappature tra le variabili Adobe An
 
    * **Cron** di sincronizzazione dei report di analisi: Specifica l&#39;espressione cron per il recupero dei report da Adobe Analytics. Il valore predefinito è 0 0 2 ? * *.
 
-   * **** Timeout report recupero: Specificate la durata, in secondi, dell&#39;attesa che il server risponda al report di analisi. Il tempo predefinito è 120 secondi.
+   * **Timeout report recupero:** Specificate la durata, in secondi, dell&#39;attesa che il server risponda al report di analisi. Il tempo predefinito è 120 secondi.
    >[!NOTE]
    >
-   >L&#39;operazione di recupero del rapporto di timeout può richiedere fino a 10 secondi, quindi il numero specificato di secondi.
+   >L&#39;operazione di recupero del rapporto di timeout può richiedere fino a 10 secondi in più, quindi il numero specificato di secondi.
 
 1. Ripetete i passaggi da 1 a 3 nell’istanza di pubblicazione per configurare l’analisi.
 
@@ -175,14 +175,14 @@ Ora è possibile abilitare l&#39;analisi per i moduli e generare un rapporto di 
 
 ## Abilitazione dell&#39;analisi per un modulo o un documento {#enabling-analytics-for-a-form-or-document}
 
-1. Accedete al portale AEM all&#39;indirizzo `https://[hostname]:[port]`.
+1. Effettuate l&#39;accesso al portale AEM all&#39;indirizzo `https://[hostname]:'port'`.
 1. Fare clic su **Moduli > Moduli e documenti**, selezionare un modulo o un documento, quindi fare clic su **Abilita analisi**. L&#39;analisi è abilitata.
 
    ![Abilitazione dell&#39;analisi per un modulo o un documento](assets/enable-analytics-1.png)
 
    Abilitazione dell&#39;analisi per un modulo
 
-   ******A. Pulsante Abilita Analytics** B. Modulo selezionato
+   **A.** Pulsante Abilita Analytics **B.** Modulo selezionato
 
    Per informazioni dettagliate sulla visualizzazione dei rapporti di analisi dei moduli, consultate [Visualizzazione e comprensione dei rapporti di analisi di AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md)
 
