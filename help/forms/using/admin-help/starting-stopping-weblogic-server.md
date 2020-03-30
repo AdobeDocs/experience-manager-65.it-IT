@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -69,7 +69,7 @@ Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza di Web
 1. Selezionare Al completamento del lavoro per arrestare correttamente il server o selezionare Forza arresto per arrestare immediatamente il server senza completare le attività in corso.
 1. Nel riquadro Assistente ciclo di vita server fare clic su Sì per completare l&#39;arresto.
 
-La console di amministrazione del server WebLogic non è più disponibile e il prompt dei comandi da cui è stato eseguito il comando start è disponibile.
+La console di amministrazione del server WebLogic non è più disponibile ed è disponibile il prompt dei comandi da cui è stato eseguito il comando start.
 
 ## Avvia console di amministrazione WebLogic {#start-weblogic-administration-console}
 
@@ -78,7 +78,7 @@ La console di amministrazione del server WebLogic non è più disponibile e il p
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Per accedere alla console di amministrazione del server WebLogic, digitate `https://*[host name]:`[Porta] `/console` nella riga URL di un browser Web, dove *[Porta]* è la porta di ascolto non sicura. Per impostazione predefinita, questo valore della porta è 7001.
+1. Accedete alla console di amministrazione del server WebLogic digitando `https://[host name]:[port]/console` nella riga URL di un browser Web, dove *[la porta]* è la porta di ascolto non sicura. Per impostazione predefinita, questo valore della porta è 7001.
 1. Nella schermata di accesso, digitate il nome utente e la password dell’amministratore e fate clic su Accedi.
 
 ## Avvia Node Manager {#start-node-manager}
@@ -101,11 +101,11 @@ Dopo aver chiuso WebLogic Server, è possibile chiudere il prompt dei comandi da
 >Questa attività può essere eseguita solo dopo la creazione di un dominio WebLogic e di un server gestito.
 
 1. Verificare che WebLogic Server e Node Manager siano in esecuzione.
-1. Avviate la console di amministrazione di WebLogic Server digitando nome `https://`*[]host:[porta ]*`/console`nella riga URL di un browser Web.
+1. Avviate la console di amministrazione di WebLogic Server digitando `https://host name]:[port]`/console` nella riga URL di un browser Web.
 1. In Struttura dominio, fare clic su Ambiente > Server.
 1. Nel riquadro a destra, fare clic sulla scheda Controllo.
 1. Selezionare il server gestito da avviare.
-1. Fare clic sul pulsante Start sotto il server gestito da avviare.
+1. Fare clic sul pulsante Start sotto il server gestito che si desidera avviare.
 
 ## Arrestare un server gestito WebLogic {#stop-a-weblogic-managed-server}
 
