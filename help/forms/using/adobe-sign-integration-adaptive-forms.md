@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -73,7 +73,7 @@ Dopo aver creato i prerequisiti, effettua i seguenti passaggi per configurare Ad
 
    **na1** fa riferimento alla condivisione di database predefinita.
 
-   Potete modificare il valore per la condivisione del database. Riavviate il server per poter utilizzare il nuovo valore per la condivisione del database.
+   È possibile modificare il valore per la condivisione del database. Riavviate il server per poter utilizzare il nuovo valore per la condivisione del database.
 
 1. Specificate l&#39;ID **** client (altrimenti denominato ID applicazione) e il segreto **** client. Selezionare l&#39;opzione **Abilita Adobe Sign per gli allegati anche** per aggiungere i file allegati a un modulo adattivo al documento Adobe Sign corrispondente inviato per la firma.
 
@@ -81,7 +81,7 @@ Dopo aver creato i prerequisiti, effettua i seguenti passaggi per configurare Ad
 
    Tocca **[!UICONTROL Crea]** per creare la configurazione di Adobe Sign.
 
-1. Aprite la console Web di AEM. L&#39;URL è `https://[server]:[port]/system/console/configMgr`
+1. Aprite la console Web di AEM. L&#39;URL è `https://'[server]:[port]'/system/console/configMgr`
 1. Aprire **Forms Common Configuration Service.**
 1. Nel campo **Consenti** , **selezionare** Tutti gli utenti - Tutti gli utenti, anonimi o connessi, possono visualizzare in anteprima gli allegati, verificare e firmare i moduli e fare clic su **Salva.** L’istanza Author è configurata per l’utilizzo di Adobe Sign.
 1. Nell’istanza [Pubblica](/help/sites-deploying/deploy.md) , effettuate l’accesso e aprite il seguente URL:
@@ -99,7 +99,7 @@ Un modulo adattivo abilitato per Adobe Sign viene inviato solo dopo che tutti i 
 1. Accedi al server AEM Forms con credenziali di amministratore e passa a **Strumenti** > **Operazioni** > Console **** Web.
 
    Potete anche aprire il seguente URL in una finestra del browser:
-   `https://[localhost]:[port]/system/console/configMgr`
+   `https://[localhost]:'port'/system/console/configMgr`
 
 1. Individuare e aprire l&#39;opzione **Adobe Sign Configuration Service** . Specificate un&#39;espressione [cron nel campo Espressione](https://en.wikipedia.org/wiki/Cron#CRON_expression) Utilità di pianificazione **Aggiornamento stato e fate clic su** Salva ****. Ad esempio, per eseguire il servizio di configurazione ogni giorno alle 00:00, specificate `0 0 0 1/1 * ? *` nel campo Espressione **Utilità di pianificazione aggiornamento** stato.
 
