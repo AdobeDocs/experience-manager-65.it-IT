@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -36,7 +36,7 @@ Il servizio del Registro di sistema degli endpoint consente di gestire gli endpo
 
    È possibile organizzare gli endpoint di TaskManager in gruppi denominati *categorie*. Queste categorie vengono quindi esposte a Workspace tramite TaskManager, con gli utenti finali che visualizzano gli endpoint di TaskManager man mano che vengono classificati. In Workspace, gli utenti finali visualizzano queste categorie nel riquadro di navigazione. Gli endpoint all&#39;interno di ciascuna categoria vengono visualizzati come schede di processo nella pagina Processi iniziali di Workspace.
 
-   È possibile eseguire queste attività utilizzando il servizio del Registro di sistema di Endpoint:
+   È possibile eseguire le seguenti attività utilizzando il servizio del Registro di sistema di Endpoint:
 
 * Aggiungete gli endpoint EJB. (Vedere [Aggiunta di endpoint](programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
 * Aggiungere endpoint SOAP. (Vedere [Aggiunta di endpoint](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
@@ -89,11 +89,11 @@ Prima di poter aggiungere un endpoint EJB a livello di programmazione, è necess
 
 Per creare un endpoint EJB per un servizio, specificate i seguenti valori:
 
-* **Identificatore** connettore: Specifica il tipo di endpoint da creare. Per creare un endpoint EJB, specificate `EJB`.
+* **Identificatore** del connettore: Specifica il tipo di endpoint da creare. Per creare un endpoint EJB, specificate `EJB`.
 * **Descrizione**: Specifica la descrizione dell&#39;endpoint.
 * **Nome**: Specifica il nome dell&#39;endpoint.
 * **Identificatore** servizio: Specifica il servizio a cui appartiene l&#39;endpoint.
-* **Nome** operazione: Specifica il nome dell&#39;operazione richiamata utilizzando l&#39;endpoint. Quando create un endpoint EJB, specificate un carattere jolly ( `*`). Tuttavia, se si desidera specificare un&#39;operazione specifica invece di richiamare tutte le operazioni del servizio, specificare il nome dell&#39;operazione anziché utilizzare il carattere jolly ( `*`).
+* **Nome** operazione: Specifica il nome dell&#39;operazione richiamata utilizzando l&#39;endpoint. Quando create un endpoint EJB, specificate un carattere jolly ( `*`). Tuttavia, se si desidera specificare un&#39;operazione specifica invece di richiamare tutte le operazioni del servizio, specificare il nome dell&#39;operazione invece di utilizzare il carattere jolly ( `*`).
 
 **Creare un endpoint EJB**
 
@@ -128,9 +128,9 @@ Aggiungete un endpoint EJB utilizzando l&#39;API Java:
 
    * Creare un `CreateEndpointInfo` oggetto utilizzando il relativo costruttore.
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setConnectorId` e passando il valore della stringa `EJB`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
+   * Specificate la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` `setServiceId` oggetto e passando un valore di stringa che specifica il nome del servizio.
+   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setServiceId` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setOperationName` e passare un valore di stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificate un carattere jolly ( `*`), che implica tutte le operazioni.
 
 1. Create un endpoint EJB.
@@ -145,7 +145,7 @@ Aggiungete un endpoint EJB utilizzando l&#39;API Java:
 
 [Riepilogo dei passaggi](programmatically-endpoints.md#summary-of-steps)
 
-[Avvio rapido:Aggiunta di un endpoint EJB tramite l&#39;API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[Avvio rapido: Aggiunta di un endpoint EJB tramite l&#39;API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
 [Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -153,7 +153,7 @@ Aggiungete un endpoint EJB utilizzando l&#39;API Java:
 
 ## Aggiunta di endpoint SOAP {#adding-soap-endpoints}
 
-È possibile aggiungere a livello di programmazione un endpoint SOAP a un servizio utilizzando l&#39;API Java di AEM Forms. Aggiungendo un endpoint SOAP, si abilita un&#39;applicazione client per richiamare il servizio utilizzando la modalità SOAP. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità SOAP.
+Potete aggiungere a livello di programmazione un endpoint SOAP a un servizio utilizzando l&#39;API Java di AEM Forms. Aggiungendo un endpoint SOAP, si abilita un&#39;applicazione client per richiamare il servizio utilizzando la modalità SOAP. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità SOAP.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Per aggiungere un endpoint SOAP a un servizio, eseguire le operazioni seguenti:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -198,7 +198,7 @@ Per aggiungere un endpoint SOAP a un servizio, specificate i seguenti valori:
 * **Descrizione**: Specifica la descrizione dell&#39;endpoint.
 * **Nome**: Specifica il nome dell&#39;endpoint.
 * **Valore** ID servizio: Specifica il servizio a cui appartiene l&#39;endpoint.
-* **Nome** operazione: Specifica il nome dell&#39;operazione richiamata utilizzando l&#39;endpoint. Quando create un endpoint SOAP, specificate un carattere jolly ( `*`). Tuttavia, se si desidera specificare un&#39;operazione specifica invece di richiamare tutte le operazioni del servizio, specificare il nome dell&#39;operazione anziché utilizzare il carattere jolly ( `*`).
+* **Nome** operazione: Specifica il nome dell&#39;operazione richiamata utilizzando l&#39;endpoint. Quando create un endpoint SOAP, specificate un carattere jolly ( `*`). Tuttavia, se si desidera specificare un&#39;operazione specifica invece di richiamare tutte le operazioni del servizio, specificare il nome dell&#39;operazione invece di utilizzare il carattere jolly ( `*`).
 
 **Creare un endpoint SOAP**
 
@@ -233,9 +233,9 @@ Aggiungete un endpoint SOAP a un servizio utilizzando l&#39;API Java:
 
    * Creare un `CreateEndpointInfo` oggetto utilizzando il relativo costruttore.
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setConnectorId` e passando il valore della stringa `SOAP`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
+   * Specificate la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` `setServiceId` oggetto e passando un valore di stringa che specifica il nome del servizio.
+   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setServiceId` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setOperationName` e passando un valore di stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificate un carattere jolly ( `*`), che implica tutte le operazioni.
 
 1. Creare un endpoint SOAP.
@@ -258,13 +258,13 @@ Aggiungete un endpoint SOAP a un servizio utilizzando l&#39;API Java:
 
 ## Aggiunta di endpoint cartelle esaminate {#adding-watched-folder-endpoints}
 
-È possibile aggiungere a livello di programmazione un endpoint di cartelle esaminate a un servizio utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint cartella esaminata, gli utenti possono inserire un file (ad esempio un file PDF) in una cartella. Quando il file viene inserito nella cartella, il servizio configurato viene quindi richiamato e manipolato. Dopo che il servizio ha eseguito l&#39;operazione specificata, salva il file modificato in una cartella di output specificata. Una cartella esaminata è configurata per essere analizzata a un intervallo di frequenza fissa o con una pianificazione cron, ad esempio ogni lunedì, mercoledì e venerdì a mezzogiorno.
+È possibile aggiungere a livello di programmazione un endpoint di cartelle esaminate a un servizio utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint cartella esaminata, gli utenti possono inserire un file (ad esempio un file PDF) in una cartella. Quando il file viene inserito nella cartella, viene richiamato il servizio configurato e manipolato il file. Dopo che il servizio ha eseguito l&#39;operazione specificata, salva il file modificato in una cartella di output specificata. Una cartella esaminata è configurata per essere analizzata a un intervallo di frequenza fissa o con una pianificazione cron, ad esempio ogni lunedì, mercoledì e venerdì a mezzogiorno.
 
 Per aggiungere in modo programmatico un endpoint di una cartella esaminata a un servizio, è consigliabile seguire il seguente processo di breve durata denominato *EncryptDocument*. (Vedere [Informazioni sui processi](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)dei moduli AEM.)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Questo processo accetta un documento PDF non protetto come valore di input e quindi trasmette il documento PDF non protetto all&#39;operazione del servizio `EncryptPDFUsingPassword` cifratura. Il documento PDF è crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore immesso (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
+Questo processo accetta un documento PDF non protetto come valore di input e quindi passa il documento PDF non protetto all&#39;operazione del servizio `EncryptPDFUsingPassword` di cifratura. Il documento PDF è crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Per aggiungere a un servizio un endpoint della cartella esaminata, eseguire le o
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -298,13 +298,13 @@ Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di f
 
 **Creare un oggetto Client EndpointRegistry**
 
-Per aggiungere a livello di programmazione un endpoint Cartella esaminata, è necessario creare un `EndpointRegistryClient` oggetto.
+Per aggiungere a livello di programmazione un endpoint Cartella osservata, è necessario creare un `EndpointRegistryClient` oggetto.
 
 **Imposta attributi endpoint cartella esaminata**
 
 Per creare un endpoint della cartella esaminata per un servizio, specificate i seguenti valori:
 
-* **Identificatore** connettore: Specifica il tipo di endpoint creato. Per creare un endpoint cartella esaminata, specificate `WatchedFolder`.
+* **Identificatore** del connettore: Specifica il tipo di endpoint creato. Per creare un endpoint cartella esaminata, specificate `WatchedFolder`.
 * **Descrizione**: Specifica la descrizione dell&#39;endpoint.
 * **Nome**: Specifica il nome dell&#39;endpoint.
 * **Identificatore** servizio: Specifica il servizio a cui appartiene l&#39;endpoint. Ad esempio, per aggiungere un endpoint cartella esaminata al processo introdotto in questa sezione (un processo diventa un servizio quando attivato tramite Workbench), specificare `EncryptDocument`.
@@ -326,7 +326,7 @@ L&#39;elenco seguente specifica i valori di configurazione impostati durante l&#
 * **userName**: Nome utente utilizzato per richiamare un servizio di destinazione dalla cartella esaminata. Questo valore è obbligatorio. Il valore predefinito è SuperAdmin.
 * **domainName**: Il dominio dell’utente. Questo valore è obbligatorio. Il valore predefinito è DefaultDom.
 * **batchSize**: Numero di file o cartelle da raccogliere per scansione. utilizzare questo valore per evitare un sovraccarico del sistema; la scansione di troppi file alla volta può causare un arresto anomalo. Il valore predefinito è 2.
-* **waitTime**: Tempo, in millisecondi, di attesa prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 36.000.000 millisecondi (un&#39;ora) e il file è stato creato un minuto fa, questo file viene recuperato dopo che sono passati 59 o più minuti. Questo attributo è utile per garantire che un file o una cartella venga copiato completamente nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il file richiede dieci minuti per il download, impostare il tempo di attesa su 10&amp;ast;60 &amp;ast;1000 millisecondi. Questa impostazione impedisce alla cartella esaminata di eseguire la scansione del file se non è in attesa da dieci minuti. Il valore predefinito è 0.
+* **waitTime**: Tempo, in millisecondi, di attesa prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 36.000.000 millisecondi (un&#39;ora) e il file è stato creato un minuto fa, questo file viene recuperato dopo che sono passati 59 o più minuti. Questo attributo è utile per garantire che un file o una cartella venga copiato completamente nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il file richiede dieci minuti per il download, impostare il tempo di attesa su 10&amp;ast;60 &amp;ast;1000 millisecondi. Questa impostazione impedisce alla cartella esaminata di eseguire la scansione del file se non è stato in attesa per dieci minuti. Il valore predefinito è 0.
 * **excludeFilePattern**: Il pattern utilizzato da una cartella esaminata per determinare quali file e cartelle acquisire. I file o le cartelle con questo pattern non verranno analizzati per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella che contiene più file. Il contenuto della cartella può essere copiato in una cartella con un nome che verrà scelto dalla cartella esaminata. Questo passaggio impedisce alla cartella esaminata di raccogliere una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Ad esempio, se il valore excludeFilePattern è `data*`, tutti i file e le cartelle corrispondenti non `data*` vengono prelevati. Sono inclusi file e cartelle denominati `data1`, `data2`e così via. Inoltre, il pattern può essere completato con pattern di caratteri jolly per specificare i pattern di file. La cartella esaminata modifica l&#39;espressione regolare per supportare pattern con caratteri jolly quali `*.*` e `*.pdf`. Questi pattern carattere jolly non sono supportati dalle espressioni regolari.
 * **includeFilePattern**: Il pattern utilizzato dalla cartella esaminata per determinare quali cartelle e file acquisire e acquisire. Ad esempio, se questo valore è `*`, `input*` vengono raccolti tutti i file e le cartelle corrispondenti. Sono inclusi file e cartelle denominati `input1`, `input2`e così via. Il valore predefinito è `*`. Questo valore indica tutti i file e le cartelle. Inoltre, il pattern può essere completato con pattern di caratteri jolly per specificare i pattern di file. La cartella esaminata modifica l&#39;espressione regolare per supportare pattern con caratteri jolly quali `*.*` e `*.pdf`. Questi pattern carattere jolly non sono supportati dalle espressioni regolari. Questo valore è obbligatorio.
 * **resultFolderName**: La cartella in cui sono memorizzati i risultati salvati. Questo percorso può essere assoluto o relativo. Se i risultati non vengono visualizzati in questa cartella, controllare la cartella degli errori. I file di sola lettura non vengono elaborati e verranno salvati nella cartella degli errori. Il valore predefinito è `result/%Y/%M/%D/`. Si tratta della cartella dei risultati all’interno della cartella esaminata.
@@ -337,9 +337,9 @@ L&#39;elenco seguente specifica i valori di configurazione impostati durante l&#
 
 **Definire i valori dei parametri di input**
 
-Quando si crea un endpoint della cartella esaminata, è necessario definire i valori dei parametri di input. È quindi necessario descrivere i valori di input passati all&#39;operazione richiamata dalla cartella esaminata. Ad esempio, prendete in considerazione il processo introdotto in questo argomento. Ha un valore di input denominato `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Quando create un endpoint della cartella esaminata per questo processo (dopo che un processo è stato attivato, diventa un servizio), dovete definire il valore del parametro di input.
+Quando si crea un endpoint della cartella esaminata, è necessario definire i valori dei parametri di input. È quindi necessario descrivere i valori di input passati all&#39;operazione richiamata dalla cartella esaminata. Ad esempio, prendete in considerazione il processo introdotto in questo argomento. Ha un valore di input denominato `InDoc` e il suo tipo di dati è `com.adobe.idp.Document`. Quando create un endpoint della cartella esaminata per questo processo (dopo che un processo è stato attivato, diventa un servizio), dovete definire il valore del parametro di input.
 
-Per definire i valori dei parametri di input richiesti per un endpoint di una cartella esaminata, specificate i seguenti valori:
+Per definire i valori dei parametri di input richiesti per l’endpoint di una cartella esaminata, specificate i seguenti valori:
 
 **Nome** del parametro di input: Nome del parametro di input. Il nome di un valore di input è specificato in Workbench per un processo. Se il valore di input appartiene a un&#39;operazione di servizio (un servizio che non è un processo creato in Workbench), il nome di input è specificato nel file component.xml. Ad esempio, il nome del parametro di input per il processo introdotto in questa sezione è `InDoc`.
 
@@ -348,9 +348,9 @@ Per definire i valori dei parametri di input richiesti per un endpoint di una ca
 * `Literal`: L’endpoint Cartella osservata utilizza il valore immesso nel campo così come viene visualizzato. Sono supportati tutti i tipi Java di base. Ad esempio, se un&#39;API utilizza input quali String, long, int e Boolean, la stringa viene convertita nel tipo corretto e il servizio viene richiamato.
 * `Variable`: Il valore immesso è un pattern di file utilizzato dalla cartella esaminata per selezionare l&#39;input. Ad esempio, se si seleziona Variabile per il tipo di mappatura e il documento di input deve essere un file PDF, è possibile specificare `*.pdf`come valore di mappatura.
 
-**Valore** mapping: Specifica il valore del tipo di mappatura. Ad esempio, se si seleziona un tipo di `Variable` mapping, è possibile specificare `*.pdf` come pattern di file.
+**Valore** mappatura: Specifica il valore del tipo di mappatura. Ad esempio, se si seleziona un tipo di `Variable` mapping, è possibile specificare `*.pdf` come pattern di file.
 
-**Tipo** di dati: Specifica il tipo di dati dei valori immessi. Ad esempio, il tipo di dati del valore immesso nel processo introdotto in questa sezione è `com.adobe.idp.Document`.
+**Tipo** di dati: Specifica il tipo di dati dei valori di input. Ad esempio, il tipo di dati del valore immesso per il processo introdotto in questa sezione è `com.adobe.idp.Document`.
 
 **Definire un valore di parametro di output**
 
@@ -386,7 +386,7 @@ Dopo aver creato un endpoint cartella esaminata, è necessario attivarlo. Quando
 
 ### Aggiunta di un endpoint cartella esaminata tramite l&#39;API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java AEM Forms:
+Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java di AEM Forms:
 
 1. Includere i file di progetto.
 
@@ -401,9 +401,9 @@ Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java AEM For
 
    * Creare un `CreateEndpointInfo` oggetto utilizzando il relativo costruttore.
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setConnectorId` e passando il valore della stringa `WatchedFolder`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
+   * Specificate la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` `setServiceId` oggetto e passando un valore di stringa che specifica il nome del servizio.
+   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setServiceId` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setOperationName` e passando un valore di stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint di tipo Cartella esaminata per un servizio originato da un processo creato in Workbench, viene richiamato il nome dell&#39;operazione.
 
 1. Specificate i valori di configurazione.
@@ -422,8 +422,8 @@ Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java AEM For
 
    * Un valore di stringa che specifica il nome del parametro di input. Ad esempio, il nome del parametro di input per il servizio EncryptDocument è `InDoc`.
    * Una stringa che specifica il tipo di dati del parametro di input. Ad esempio, il tipo di dati del parametro di `InDoc` input è `com.adobe.idp.Document`.
-   * Un valore di stringa che specifica il tipo di mapping. Ad esempio, potete specificare `variable`.
-   * Un valore di stringa che specifica il valore del tipo di mapping. Ad esempio, è possibile specificare &amp;ast;.pdf come pattern di file.
+   * Un valore di stringa che specifica il tipo di mapping. For example, you can specify `variable`.
+   * Un valore di stringa che specifica il valore del tipo di mappatura. Ad esempio, è possibile specificare &amp;ast;.pdf come pattern di file.
    >[!NOTE]
    >
    >Richiama il `setInputParameterMapping` metodo da definire per ogni valore del parametro di input. Poiché il processo EncryptDocument ha un solo parametro di input, è necessario richiamare questo metodo una volta.
@@ -434,7 +434,7 @@ Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java AEM For
 
    * Un valore di stringa che specifica il nome del parametro di output. Ad esempio, il nome del parametro di output per il servizio EncryptDocument è `SecuredDoc`.
    * Una stringa che specifica il tipo di dati del parametro di output. Ad esempio, il tipo di dati del parametro di `SecuredDoc` output è `com.adobe.idp.Document`.
-   * Un valore di stringa che specifica il tipo di mapping. Ad esempio, potete specificare `%F.pdf`.
+   * Un valore di stringa che specifica il tipo di mapping. For example, you can specify `%F.pdf`.
 
 1. Crea un endpoint cartella esaminata.
 
@@ -489,13 +489,13 @@ Avvio [rapido: L&#39;aggiunta di un endpoint di cartelle esaminate tramite l&#39
 
 ## Aggiunta di endpoint e-mail {#adding-email-endpoints}
 
-Puoi aggiungere un endpoint e-mail a un servizio a livello di programmazione utilizzando l&#39;API Java di AEM Forms. Aggiungendo un endpoint e-mail, gli utenti possono inviare un messaggio e-mail contenente uno o più file allegati a un account e-mail specificato. Quindi, viene richiamata l’operazione di configurazione del servizio e vengono modificati i file. Dopo che il servizio ha eseguito l&#39;operazione specificata, invia un messaggio e-mail al mittente con i file modificati come allegati di file.
+Puoi aggiungere un endpoint e-mail a un servizio a livello di programmazione utilizzando l’API Java di AEM Forms. Aggiungendo un endpoint e-mail, gli utenti possono inviare un messaggio e-mail contenente uno o più file allegati a un account e-mail specificato. Quindi, viene richiamata l’operazione di configurazione del servizio e vengono modificati i file. Dopo che il servizio ha eseguito l&#39;operazione specificata, invia un messaggio e-mail al mittente con i file modificati come allegati di file.
 
 Ai fini dell&#39;aggiunta programmatica di un endpoint e-mail a un servizio, tenere in considerazione il seguente processo di breve durata denominato *MyApplication\EncryptDocument*. Per informazioni sui processi di breve durata, consultate [I processi](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Questo processo accetta un documento PDF non protetto come valore di input e quindi trasmette il documento PDF non protetto all&#39;operazione del servizio `EncryptPDFUsingPassword` cifratura. In questo modo il documento PDF viene crittografato con una password e il documento PDF crittografato con password viene restituito come valore di output. Il nome del valore immesso (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
+Questo processo accetta un documento PDF non protetto come valore di input e quindi passa il documento PDF non protetto all&#39;operazione del servizio `EncryptPDFUsingPassword` di cifratura. In questo modo il documento PDF viene crittografato con una password e il documento PDF crittografato con password viene restituito come valore di output. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -516,7 +516,7 @@ Per aggiungere un endpoint e-mail a un servizio, eseguite le seguenti operazioni
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -559,7 +559,7 @@ I seguenti valori di configurazione vengono impostati quando si aggiunge a livel
 * **userName**: Nome utente utilizzato per richiamare un servizio di destinazione dall’e-mail. Il valore predefinito è `SuperAdmin`.
 * **domainName**: Un valore di configurazione obbligatorio. Il valore predefinito è `DefaultDom`.
 * **domainPattern**: Specifica i pattern di dominio dell&#39;e-mail in arrivo che il provider accetta. Ad esempio, se `adobe.com` viene utilizzato, vengono elaborati solo i messaggi e-mail provenienti da adobe.com, mentre quelli provenienti da altri domini vengono ignorati.
-* **filePattern**: Specifica i pattern di allegati che il provider accetta. Questo include file con estensioni di nomi file specifiche (&amp;ast;.dat, &amp;ast;.xml), file con nomi specifici (dati) e file con espressioni composite nel nome e nell&#39;estensione (&amp;ast;.[dD][a][Tt]). Il valore predefinito è `*`.
+* **filePattern**: Specifica i pattern di allegati che il provider accetta. Questo include file con estensioni di nomi file specifiche (&amp;ast;.dat, &amp;ast;.xml), file con nomi specifici (dati) e file con espressioni composite nel nome e nell&#39;estensione (&amp;ast;.[dD][aA]&#39;port&#39;). Il valore predefinito è `*`.
 * **receiveSuccfulJob**: Indirizzo e-mail cui vengono inviati i messaggi per indicare l’esito positivo dei processi. Per impostazione predefinita, al mittente viene sempre inviato un messaggio di processo riuscito. Se digitate `sender`, i risultati dell&#39;e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specificate altri destinatari con indirizzi e-mail, separati da una virgola. Per disattivare questa opzione, lasciate vuoto questo valore. In alcuni casi, potrebbe essere utile attivare un processo e non si desidera inviare una notifica via e-mail del risultato. Il valore predefinito è `sender`.
 * **receiveFailedJob**: Indirizzo e-mail cui vengono inviati i messaggi per indicare che i processi non sono riusciti. Per impostazione predefinita, al mittente viene sempre inviato un messaggio di processo non riuscito. Se digitate `sender`, i risultati dell&#39;e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specificate altri destinatari con indirizzi e-mail, separati da una virgola. Per disattivare questa opzione, lasciate vuoto questo valore. Il valore predefinito è `sender`.
 * **inboxHost**: Il nome host della inbox o l&#39;indirizzo IP per il provider di posta elettronica da analizzare.
@@ -571,7 +571,7 @@ I seguenti valori di configurazione vengono impostati quando si aggiunge a livel
 * **inboxSSLEnabled**: Impostate questo valore per obbligare il provider di posta elettronica a utilizzare SSL per inviare messaggi di notifica di risultati o errori. Assicurarsi che l&#39;host IMAP o POP3 supporti SSL.
 * **smtpHost**: Il nome host del server di posta elettronica a cui il provider invia i risultati e i messaggi di errore.
 * **smtpPort**: Il valore predefinito per la porta SMTP è 25.
-* **smtpUser**: L’account utente del provider di posta elettronica da utilizzare per inviare le notifiche e-mail di risultati ed errori.
+* **smtpUser**: L’account utente del provider di posta elettronica da utilizzare per l’invio di notifiche e-mail di risultati ed errori.
 * **smtpPassword**: La password dell&#39;account SMTP. Alcuni server di posta elettronica non richiedono una password SMTP.
 * **charSet**: Set di caratteri utilizzato dal provider di posta elettronica. Il valore predefinito è `UTF-8`.
 * **smtpSSLEnabled**: Impostate questo valore per obbligare il provider di posta elettronica a utilizzare SSL per inviare messaggi di notifica di risultati o errori. Verificate che l&#39;host SMTP supporti SSL.
@@ -580,7 +580,7 @@ I seguenti valori di configurazione vengono impostati quando si aggiunge a livel
 
 **Definire i valori dei parametri di input**
 
-Quando create un endpoint e-mail, dovete definire i valori dei parametri di input. Ovvero, devi descrivere i valori di input passati all&#39;operazione richiamata dall&#39;endpoint e-mail. Ad esempio, prendete in considerazione il processo introdotto in questo argomento. Ha un valore di input denominato `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Quando create un endpoint e-mail per questo processo (dopo che un processo viene attivato, diventa un servizio), dovete definire il valore del parametro di input.
+Quando create un endpoint e-mail, dovete definire i valori dei parametri di input. In altre parole, devi descrivere i valori di input passati all&#39;operazione richiamata dall&#39;endpoint e-mail. Ad esempio, prendete in considerazione il processo introdotto in questo argomento. Ha un valore di input denominato `InDoc` e il suo tipo di dati è `com.adobe.idp.Document`. Quando create un endpoint e-mail per questo processo (dopo che un processo viene attivato, diventa un servizio), dovete definire il valore del parametro di input.
 
 Per definire i valori dei parametri di input richiesti per un endpoint e-mail, specificate i seguenti valori:
 
@@ -591,7 +591,7 @@ Per definire i valori dei parametri di input richiesti per un endpoint e-mail, s
 * `Literal`: L&#39;endpoint e-mail utilizza il valore immesso nel campo così come viene visualizzato. Sono supportati tutti i tipi Java di base. Ad esempio, se un&#39;API utilizza input quali String, long, int e Boolean, la stringa viene convertita nel tipo corretto e il servizio viene richiamato.
 * `Variable`: Il valore immesso è un pattern di file utilizzato dall&#39;endpoint e-mail per selezionare l&#39;input. Ad esempio, se si seleziona Variabile per il tipo di mappatura e il documento di input deve essere un file PDF, è possibile specificare `*.pdf` come valore di mappatura.
 
-**Valore** mapping: Specifica il valore del tipo di mappatura. Ad esempio, se si seleziona un tipo di mappatura della variabile, è possibile specificare `*.pdf` come pattern di file.
+**Valore** mappatura: Specifica il valore del tipo di mappatura. Ad esempio, se si seleziona un tipo di mappatura della variabile, è possibile specificare `*.pdf` come pattern di file.
 
 **Tipo** di dati: Specifica il tipo di dati dei valori di input. Ad esempio, il tipo di dati del valore di input del processo introdotto in questa sezione è com.adobe.idp.Document.
 
@@ -644,14 +644,14 @@ Aggiungete un endpoint e-mail utilizzando l&#39;API Java:
 
    * Creare un `CreateEndpointInfo` oggetto utilizzando il relativo costruttore.
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setConnectorId` e passando il valore della stringa `Email`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
+   * Specificate la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` `setServiceId` oggetto e passando un valore di stringa che specifica il nome del servizio.
+   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setServiceId` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setOperationName` e passando un valore di stringa che specifica il nome dell&#39;operazione. In genere, quando si crea un endpoint e-mail per un servizio originato da un processo creato in Workbench, viene richiamato il nome dell&#39;operazione.
 
 1. Specificate i valori di configurazione.
 
-   Per ogni valore di configurazione da impostare per l&#39;endpoint e-mail, è necessario richiamare il `CreateEndpointInfo` metodo dell&#39; `setConfigParameterAsText` . Ad esempio, per impostare il valore di `smtpHost` configurazione, richiamare il metodo dell&#39; `CreateEndpointInfo` oggetto `setConfigParameterAsText` e passare i seguenti valori:
+   Per ogni valore di configurazione da impostare per l&#39;endpoint e-mail, è necessario richiamare il `CreateEndpointInfo` metodo dell&#39; `setConfigParameterAsText` oggetto. Ad esempio, per impostare il valore di `smtpHost` configurazione, richiamare il metodo dell&#39; `CreateEndpointInfo` oggetto `setConfigParameterAsText` e passare i seguenti valori:
 
    * Un valore di stringa che specifica il nome del valore di configurazione. Quando impostate il valore di `smtpHost` configurazione, specificate `smtpHost`.
    * Un valore di stringa che specifica il valore del valore di configurazione. Quando si imposta il valore di `smtpHost` configurazione, specificare un valore di stringa che specifica il nome del server SMTP.
@@ -665,8 +665,8 @@ Aggiungete un endpoint e-mail utilizzando l&#39;API Java:
 
    * Un valore di stringa che specifica il nome del parametro di input. Ad esempio, il nome del parametro di input per il servizio EncryptDocument è `InDoc`.
    * Una stringa che specifica il tipo di dati del parametro di input. Ad esempio, il tipo di dati del parametro di `InDoc` input è `com.adobe.idp.Document`.
-   * Un valore di stringa che specifica il tipo di mapping. Ad esempio, potete specificare `variable`.
-   * Un valore di stringa che specifica il valore del tipo di mapping. Ad esempio, è possibile specificare &amp;ast;.pdf come pattern di file.
+   * Un valore di stringa che specifica il tipo di mapping. For example, you can specify `variable`.
+   * Un valore di stringa che specifica il valore del tipo di mappatura. Ad esempio, è possibile specificare &amp;ast;.pdf come pattern di file.
    >[!NOTE]
    >
    >Richiama il `setInputParameterMapping` metodo da definire per ogni valore del parametro di input. Poiché il processo EncryptDocument ha un solo parametro di input, è necessario richiamare questo metodo una volta.
@@ -677,7 +677,7 @@ Aggiungete un endpoint e-mail utilizzando l&#39;API Java:
 
    * Un valore di stringa che specifica il nome del parametro di output. Ad esempio, il nome del parametro di output per il servizio EncryptDocument è `SecuredDoc`.
    * Una stringa che specifica il tipo di dati del parametro di output. Ad esempio, il tipo di dati del parametro di `SecuredDoc` output è `com.adobe.idp.Document`.
-   * Un valore di stringa che specifica il tipo di mapping. Ad esempio, potete specificare `%F.pdf`.
+   * Un valore di stringa che specifica il tipo di mapping. For example, you can specify `%F.pdf`.
 
 1. Create l’endpoint e-mail.
 
@@ -743,15 +743,15 @@ Avvio [rapido: L&#39;aggiunta di un endpoint e-mail tramite l&#39;API](/help/for
 >
 >Le API LiveCycle Remoting non sono più utilizzate per i moduli AEM su JEE.
 
-Puoi aggiungere a livello di programmazione un endpoint remoto a un servizio utilizzando l&#39;API Java di AEM Forms. Aggiungendo un endpoint remoto, si sta abilitando un&#39;applicazione Flex per richiamare il servizio utilizzando la rimozione. (consultate [Richiamo di moduli AEM con (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+È possibile aggiungere a livello di programmazione un endpoint remoto a un servizio utilizzando l&#39;API Java di AEM Forms. Aggiungendo un endpoint remoto, si sta abilitando un&#39;applicazione Flex per richiamare il servizio utilizzando la rimozione. (consultate [Richiamo di moduli AEM con (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Ai fini dell&#39;aggiunta programmatica di un endpoint Remoting a un servizio, tenere in considerazione il seguente processo di breve durata denominato *EncryptDocument*.
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Questo processo accetta un documento PDF non protetto come valore di input e quindi trasmette il documento PDF non protetto all&#39;operazione del servizio `EncryptPDFUsingPassword` cifratura. Il documento PDF è crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore immesso (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
+Questo processo accetta un documento PDF non protetto come valore di input e quindi passa il documento PDF non protetto all&#39;operazione del servizio `EncryptPDFUsingPassword` di cifratura. Il documento PDF è crittografato con una password e il documento PDF crittografato con password è il valore di output di questo processo. Il nome del valore di input (il documento PDF non protetto) è `InDoc` e il tipo di dati è `com.adobe.idp.Document`. Il nome del valore di output (il documento PDF crittografato con password) è `SecuredDoc` e il tipo di dati è `com.adobe.idp.Document`.
 
-Per dimostrare come aggiungere un endpoint remoto a un servizio, questa sezione aggiunge un endpoint remoto a un servizio denominato EncryptDocument.
+Per dimostrare come aggiungere un endpoint remoto a un servizio, in questa sezione viene aggiunto un endpoint remoto a un servizio denominato EncryptDocument.
 
 >[!NOTE]
 >
@@ -769,7 +769,7 @@ Per rimuovere un endpoint da un servizio, eseguire le operazioni seguenti:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -827,9 +827,9 @@ Aggiungete un endpoint remoto utilizzando l&#39;API Java:
 
    * Creare un `CreateEndpointInfo` oggetto utilizzando il relativo costruttore.
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setConnectorId` e passando il valore della stringa `Remoting`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
+   * Specificate la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` `setServiceId` oggetto e passando un valore di stringa che specifica il nome del servizio.
+   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setServiceId` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare l&#39;operazione richiamata dal `CreateEndpointInfo` metodo dell&#39; `setOperationName` oggetto e passare un valore di stringa che specifica il nome dell&#39;operazione. Per un endpoint remoto, specificate un carattere jolly (&amp;ast;).
 
 1. Creare un endpoint remoto.
@@ -871,7 +871,7 @@ Per aggiungere un endpoint TaskManager a un servizio, eseguire le operazioni seg
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -888,7 +888,7 @@ Prima di poter aggiungere un endpoint TaskManager in modo programmatico, è nece
 
 **Creare una categoria per l&#39;endpoint**
 
-Le categorie vengono utilizzate per organizzare i servizi all&#39;interno di Workspace. In altre parole, un utente di Workspace può richiamare un servizio che dispone di un endpoint TaskManager selezionando una categoria in Workspace. Quando si crea un endpoint TaskManager, è possibile fare riferimento a una categoria esistente o creare una nuova categoria a livello di programmazione.
+Le categorie vengono utilizzate per organizzare i servizi all&#39;interno di Workspace. In altre parole, un utente di Workspace può richiamare un servizio che dispone di un endpoint TaskManager selezionando una categoria all&#39;interno di Workspace. Quando si crea un endpoint TaskManager, è possibile fare riferimento a una categoria esistente o creare una nuova categoria a livello di programmazione.
 
 >[!NOTE]
 >
@@ -898,7 +898,7 @@ Le categorie vengono utilizzate per organizzare i servizi all&#39;interno di Wor
 
 Per creare un endpoint TaskManager per un servizio, specificare i valori seguenti:
 
-* **Identificatore** connettore: Specifica il tipo di endpoint creato. Per creare un endpoint TaskManager, specificare `TaskManagerConnector`.
+* **Identificatore** del connettore: Specifica il tipo di endpoint creato. Per creare un endpoint TaskManager, specificare `TaskManagerConnector`.
 * **Descrizione**: Specifica la descrizione dell&#39;endpoint.
 * **Nome**: Specifica il nome dell&#39;endpoint.
 * **Identificatore** servizio: Specifica il servizio a cui appartiene l&#39;endpoint.
@@ -938,8 +938,8 @@ Aggiungete un endpoint TaskManager utilizzando l&#39;API Java:
 
    * Creare un `CreateEndpointCategoryInfo` oggetto utilizzando il relativo costruttore e passando i seguenti valori:
 
-      * Valore stringa che specifica il valore identificatore della categoria
-      * Valore stringa che specifica la descrizione della categoria
+      * Un valore di stringa che specifica il valore di identificatore della categoria
+      * Un valore di stringa che specifica la descrizione della categoria
    * Creare la categoria richiamando il metodo dell&#39; `EndpointRegistryClient` oggetto `createEndpointCategory` e passando l&#39; `CreateEndpointCategoryInfo` oggetto. Questo metodo restituisce un `EndpointCategory` oggetto che rappresenta la nuova categoria.
 
 
@@ -947,9 +947,9 @@ Aggiungete un endpoint TaskManager utilizzando l&#39;API Java:
 
    * Creare un `CreateEndpointInfo` oggetto utilizzando il relativo costruttore.
    * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setConnectorId` e passando il valore della stringa `TaskManagerConnector`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
+   * Specificate la descrizione dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setDescription` e passando un valore di stringa che descrive l&#39;endpoint.
    * Specificare il nome dell&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setName` e passando un valore di stringa che specifica il nome.
-   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` `setServiceId` oggetto e passando un valore di stringa che specifica il nome del servizio.
+   * Specificare il servizio al quale appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setServiceId` e passando un valore di stringa che specifica il nome del servizio.
    * Specificare la categoria a cui appartiene l&#39;endpoint richiamando il metodo dell&#39; `CreateEndpointInfo` `setCategoryId` oggetto e passando un valore di stringa che specifica il valore dell&#39;identificatore della categoria. È possibile richiamare il metodo dell&#39; `EndpointCategory` oggetto `getId` per ottenere il valore dell&#39;identificatore di questa categoria.
    * Specificare l&#39;operazione richiamata richiamando il metodo dell&#39; `CreateEndpointInfo` oggetto `setOperationName` e passando un valore di stringa che specifica il nome dell&#39;operazione. In genere, quando si crea un `TaskManager` endpoint per un servizio originato da un processo creato in Workbench, il nome dell&#39;operazione è `invoke`.
 
@@ -992,7 +992,7 @@ Per modificare un endpoint, eseguire le operazioni seguenti:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -1094,7 +1094,7 @@ Per rimuovere un endpoint da un servizio, eseguire le operazioni seguenti:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -1155,7 +1155,7 @@ Rimuovete un endpoint utilizzando l&#39;API Java:
 
 [Riepilogo dei passaggi](programmatically-endpoints.md#summary-of-steps)
 
-[Avvio rapido:Rimozione di un endpoint tramite l&#39;API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[Avvio rapido: Rimozione di un endpoint tramite l&#39;API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
 [Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1173,7 +1173,7 @@ Per dimostrare come recuperare informazioni sui connettori endpoint, questa sezi
 
 >[!NOTE]
 >
->Questo argomento utilizza l&#39; `ConnectorRegistryClient` API per recuperare informazioni sui connettori endpoint. Consultate Riferimento [API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+>In questo argomento viene utilizzata l&#39; `ConnectorRegistryClient` API per recuperare informazioni sui connettori endpoint. Consultate Riferimento [API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 ### Riepilogo dei passaggi {#summary_of_steps-8}
 
@@ -1186,7 +1186,7 @@ Per recuperare le informazioni sul connettore endpoint, eseguire le operazioni s
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -1205,7 +1205,7 @@ Per recuperare le informazioni sul connettore dell&#39;endpoint a livello di pro
 
 Specificare il tipo di connettore da cui recuperare le informazioni. Esistono i seguenti tipi di connettori:
 
-* **EJB**: Abilita un&#39;applicazione client a richiamare un servizio utilizzando la modalità EJB.
+* **EJB**: Consente a un&#39;applicazione client di richiamare un servizio utilizzando la modalità EJB.
 * **SOAP**: Abilita un&#39;applicazione client a richiamare un servizio utilizzando la modalità SOAP.
 * **Cartella** esaminata: Consente alle cartelle esaminate di richiamare un servizio.
 * **E-mail**: Consente ai messaggi e-mail di richiamare un servizio.
@@ -1214,17 +1214,17 @@ Specificare il tipo di connettore da cui recuperare le informazioni. Esistono i 
 
 **Recuperare i valori di configurazione**
 
-Dopo aver specificato il tipo di connettore, è possibile recuperare informazioni sul connettore, ad esempio il valore di configurazione supportato. Ad esempio, per qualsiasi connettore, potete determinare quali valori di configurazione sono obbligatori e quali sono facoltativi.
+Dopo aver specificato il tipo di connettore, è possibile recuperare informazioni sul connettore, ad esempio il valore di configurazione supportato. Ad esempio, per qualsiasi connettore, è possibile determinare quali valori di configurazione sono obbligatori e quali sono facoltativi.
 
 **Consulta anche**
 
-[Recuperare le informazioni sul connettore endpoint utilizzando l&#39;API Java](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
+[Recuperare le informazioni sul connettore dell&#39;endpoint utilizzando l&#39;API Java](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
 
 [Inclusione di file libreria Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Recuperare le informazioni sul connettore endpoint utilizzando l&#39;API Java {#retrieve-endpoint-connector-information-using-the-java-api}
+### Recuperare le informazioni sul connettore dell&#39;endpoint utilizzando l&#39;API Java {#retrieve-endpoint-connector-information-using-the-java-api}
 
 Recuperate le informazioni sul connettore endpoint utilizzando l&#39;API Java:
 
