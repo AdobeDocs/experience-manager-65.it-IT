@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f5f6cc88bc0408af117ad5760d4313c9f7d54b9
+source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
 
 ---
 
@@ -179,7 +179,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono 
 
 * Aprite le proprietà di una singola risorsa. Le proprietà indicano i set di risorse selezionate a cui viene fatto riferimento per un membro. Fate clic sul nome del set per visualizzare l’intero set.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
+   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
 * Da un’immagine inclusa in un qualsiasi set. Per visualizzare i set di cui fa parte la risorsa, seleziona il menu **[!UICONTROL Set**.
 
