@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8f90dc4865126d52e04effc9197ef7145b1a167e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -72,12 +72,12 @@ Inverti replica copia i dati delle transazioni nella casella in uscita predefini
 
 Potete visualizzare i rapporti sulle transazioni sulle istanze di creazione o pubblicazione. Il rapporto sulle transazioni nell&#39;istanza di creazione fornisce una somma aggregata di tutte le transazioni che avvengono nelle istanze di creazione e pubblicazione configurate. Il rapporto sulle transazioni nell&#39;istanza di pubblicazione fornisce un conteggio delle transazioni che avvengono solo nell&#39;istanza di pubblicazione sottostante. Per visualizzare il rapporto, effettuate le seguenti operazioni:
 
-1. Accedete al server AEM Forms all&#39;indirizzo `https://[hostname]:[port]`.
+1. Accedete al server AEM Forms all&#39;indirizzo `https://[hostname]:'port'`.
 1. Passare a **Strumenti** > **Moduli**>**Visualizza rapporto** transazioni.
 
 ## Informazioni sul rapporto {#understanding-the-report}
 
-In AEM Forms sono visualizzati i rapporti sulle transazioni a partire dalla data configurata, come illustrato in un rapporto di riepilogo seguente:
+In AEM Forms sono visualizzati i rapporti sulle transazioni a partire dalla data configurata, come illustrato in un rapporto di riepilogo riportato di seguito:
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
