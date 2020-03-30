@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -110,7 +110,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene assegnata un&#39;atti
          try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -236,7 +236,7 @@ L&#39;esempio di codice Java seguente blocca un&#39;attività che corrisponde al
      try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -327,7 +327,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le
          try{
               //Set connection properties required to invoke AEM Forms
                Properties connectionProps = new Properties();
-               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -455,7 +455,7 @@ L&#39;esempio di codice Java riportato di seguito recupera i dati del modulo da 
          try{
               //Set connection properties required to invoke AEM Forms
                Properties connectionProps = new Properties();
-               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -562,7 +562,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo 
      try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -670,7 +670,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli alle
          try{
               //Set connection properties required to invoke AEM Forms
                Properties connectionProps = new Properties();
-               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -709,7 +709,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli alle
 
 ## Avvio rapido (modalità SOAP): Recupero delle informazioni sulle attività tramite l&#39;API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività basate su un processo denominato *Mutuo*- Pregenerato. Lo stato di ogni attività restituita viene controllato per verificare che sia un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell&#39;utente che ha completato l&#39;attività e la data in cui è stata completata.
+Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività basate su un processo denominato *Mutuo*- Pregenerato. Lo stato di ogni attività restituita viene controllato per verificare che si tratti di un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell&#39;utente che ha completato l&#39;attività e la data in cui è stata completata.
 
 ```as3
  /*
@@ -776,7 +776,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
