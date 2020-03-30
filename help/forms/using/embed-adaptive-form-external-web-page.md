@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,12 +23,12 @@ source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
 Effettuare le seguenti operazioni prima di incorporare un modulo adattivo in un sito Web esterno
 
 * Pubblicate il modulo adattivo da incorporare nell’istanza di pubblicazione del server AEM Forms.
-* Create o identificate una pagina Web nel sito Web in cui è installato il modulo adattivo. Verificate che la pagina Web sia in grado di [leggere i file jQuery da un CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o che disponga di una copia locale di jQuery incorporata. jQuery è richiesto per eseguire il rendering di un modulo adattivo.
+* Create o identificate una pagina Web nel sito Web in cui è ospitato il modulo adattivo. Verificate che la pagina Web sia in grado di [leggere i file jQuery da un CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o che disponga di una copia locale del file jQuery incorporato. jQuery è richiesto per eseguire il rendering di un modulo adattivo.
 * Quando il server AEM e la pagina Web si trovano su domini diversi, effettua i passaggi elencati nella sezione, [abilita AEM Forms per distribuire moduli adattivi a un sito](#cross-site)interdominio.
 
 ## Incorpora modulo adattivo {#embed-adaptive-form}
 
-È possibile incorporare un modulo adattivo inserendo alcune righe di JavaScript nella pagina Web. L’API nel codice invia una richiesta HTTP al server AEM per risorse di moduli adattivi e inserisce il modulo adattivo nel contenitore specificato.
+È possibile incorporare un modulo adattivo inserendo alcune righe di JavaScript nella pagina Web. L’API nel codice invia una richiesta HTTP al server AEM per risorse di moduli adattivi e inserisce il modulo adattivo nel contenitore di moduli specificato.
 
 Per incorporare il modulo adattivo:
 
@@ -152,7 +152,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 ## Best practices {#best-practices}
 
-Durante l&#39;incorporazione di un modulo adattivo in una pagina Web, tenere in considerazione le seguenti procedure ottimali:
+Durante l&#39;incorporazione di un modulo adattivo in una pagina Web, tenere in considerazione le procedure ottimali seguenti:
 
 * Assicurarsi che le regole di stile definite nella pagina Web CSS non siano in conflitto con l&#39;oggetto modulo CSS. Per evitare i conflitti, potete riutilizzare il CSS della pagina Web nel tema del modulo adattivo utilizzando la libreria client AEM. Per informazioni sull&#39;uso della libreria client nei temi dei moduli adattivi, consultate [Temi in AEM Forms](../../forms/using/themes.md).
 * Per fare in modo che il contenitore del modulo nella pagina Web utilizzi l’intera larghezza della finestra. Garantisce il funzionamento delle regole CSS configurate per i dispositivi mobili senza alcuna modifica. Se il contenitore del modulo non occupa l&#39;intera larghezza della finestra, è necessario scrivere CSS personalizzato per adattare il modulo ai diversi dispositivi mobili.
@@ -162,7 +162,7 @@ Durante l&#39;incorporazione di un modulo adattivo in una pagina Web, tenere in 
 
 ## Abilitare AEM Forms per distribuire moduli adattivi a un sito interdominio {#cross-site}
 
-1. Nell’istanza di creazione di AEM, andate a Gestione configurazione console Web AEM all’indirizzo `https://[server]:[port]/system/console/configMgr`.
+1. Nell’istanza di creazione di AEM, andate a Gestione configurazione console Web AEM all’indirizzo `https://'[server]:[port]'/system/console/configMgr`.
 1. Individuate e aprite la configurazione del filtro **** Apache Sling Referrer.
 1. Nel campo Host consentiti, specificate il dominio in cui risiede la pagina Web. Consente all’host di effettuare richieste POST al server AEM. È inoltre possibile utilizzare l&#39;espressione regolare per specificare una serie di domini applicazione esterni.
 
