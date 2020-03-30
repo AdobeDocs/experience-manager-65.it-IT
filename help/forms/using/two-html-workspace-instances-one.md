@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,16 +18,16 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 L’installazione e le impostazioni predefinite di AEM Forms consentono la disponibilità sul server di un’unica area di lavoro AEM Forms. Tuttavia, potrebbe essere necessario ospitare due istanze diverse dell&#39;area di lavoro AEM Forms su un singolo server AEM Forms. Le due istanze sono accessibili tramite URL diversi.
 
-Gli amministratori di AEM Forms personalizzano l’area di lavoro per creare due URL diversi e rendere disponibili due aree di lavoro sullo stesso server. In questo articolo sulla personalizzazione, si presuppone che le due aree di lavoro siano accessibili in `https://[server]:[port]/lc/ws` e `https://[server]:[port]:/lc/ws2`.
+Gli amministratori di AEM Forms personalizzano l’area di lavoro per creare due URL diversi e rendere disponibili due aree di lavoro sullo stesso server. In questo articolo sulla personalizzazione, si presuppone che le due aree di lavoro siano accessibili in `https://'[server]:[port]'/lc/ws` e `https://'[server]:[port]':/lc/ws2`.
 
-Per configurare l&#39;area di lavoro Moduli AEM, effettuate le seguenti operazioni.
+Per configurare l&#39;area di lavoro Moduli AEM, procedi come indicato di seguito.
 
 1. Installa il pacchetto di sviluppo dell’area di lavoro AEM Forms sul server. Per istruzioni su come crearlo, consultate [dev package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
-1. Accedi a CRXDE Lite come amministratore, accedendo `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Copiare il nodo in /content e incollare in /content. Rinominare il nodo in ws2. Fate clic su **[!UICONTROL Salva tutto]**. Nelle proprietà di questo nodo, modificare il valore di `sling:resourceType` su ws2. Fate clic su **[!UICONTROL Salva tutto]**.
+1. Accedi a CRXDE Lite come amministratore, accedendo `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Copiare il nodo era in /content e incollare in /content. Rinominare il nodo in ws2. Fate clic su **[!UICONTROL Salva tutto]**. Nelle proprietà di questo nodo, modificare il valore di `sling:resourceType` su ws2. Fate clic su **[!UICONTROL Salva tutto]**.
 
 1. Copiare la cartella era da /libs e incollare in /apps. Rinominate la cartella in ws2. Fate clic su **[!UICONTROL Salva tutto]**.
-1. Nella `GET.jsp` parte `/apps/ws2`, apportate le seguenti modifiche al codice. Sostituisci quanto segue
+1. Nella `GET.jsp` pagina `/apps/ws2`, apportate le seguenti modifiche al codice. Sostituisci quanto segue
 
    ```
    <html lang="en">
@@ -91,6 +91,6 @@ Per configurare l&#39;area di lavoro Moduli AEM, effettuate le seguenti operazio
 
 1. Nelle proprietà di `ws2`, modificare il valore di `sling:redirect` in `content/ws2`.
 
-1. Cambia il valore `sling:match` in `^[^/\||]/[^/\||]/ws2$`.
+1. Modificate il valore di `sling:match` in `^[^/\||]/[^/\||]/ws2$`.
 
 [Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
