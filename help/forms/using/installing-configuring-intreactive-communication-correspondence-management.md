@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,10 +40,10 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
 * L&#39;infrastruttura hardware e software è già in funzione. Per un elenco dettagliato di hardware e software supportati, consultate i requisiti [tecnici](/help/sites-deploying/technical-requirements.md).
 
 * Il percorso di installazione dell’istanza AEM non contiene spazi bianchi.
-* Un’istanza di AEM è attiva e in esecuzione. Nella terminologia di AEM, un’istanza è una copia di AEM in esecuzione su un server in modalità di creazione o pubblicazione. Per eseguire le funzionalità di comunicazione interattiva e gestione della corrispondenza di AEM Forms è necessario disporre di almeno un’istanza AEM (Author o Processing):
+* Un’istanza di AEM è attiva e in esecuzione. Nella terminologia di AEM, per &quot;istanza&quot; si intende una copia di AEM in esecuzione su un server in modalità di creazione o pubblicazione. Per eseguire le funzionalità di comunicazione interattiva e gestione della corrispondenza di AEM Forms è necessario disporre di almeno un’istanza di AEM (Author o Processing):
 
    * **Autore**: Un’istanza di AEM utilizzata per creare, caricare e modificare i contenuti e per amministrare il sito Web. Quando il contenuto è pronto per essere live, viene replicato nell’istanza di pubblicazione.
-   * **** Elaborazione: Un&#39;istanza di elaborazione è un&#39;istanza AEM Author [protetta](/help/forms/using/hardening-securing-aem-forms-environment.md) . Potete impostare un&#39;istanza Author e renderla più indurita dopo l&#39;installazione.
+   * **Elaborazione:** Un&#39;istanza di elaborazione è un&#39;istanza AEM Author [protetta](/help/forms/using/hardening-securing-aem-forms-environment.md) . Potete impostare un&#39;istanza Author e renderla più indurita dopo l&#39;installazione.
 
    * **Pubblica**: Un’istanza di AEM che trasmette il contenuto pubblicato al pubblico su Internet o su una rete interna.
 
@@ -96,7 +96,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un&#39;applicazione implemen
 
    Se scaricate manualmente il pacchetto tramite il collegamento diretto elencato nell&#39;articolo delle release [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms, accedete a Gestione pacchetti, fate clic su **Carica pacchetto**, selezionate il pacchetto scaricato e fate clic su Carica. Dopo aver caricato il pacchetto, fate clic sul nome del pacchetto e fate clic su **Installa.**
 
-1. Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendete che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file [AEM-Installation-Directory]/crx-quickstart/logs/error.log e il registro sia stabile.
+1. Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendete che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file [AEM-Installation-Directory]/crx-quickstart/logs/error.log e il registro sia stabile.
 1. Ripetete i passaggi da 1 a 4 su tutte le istanze Author e Publish.
 
 ## Configurazioni post-installazione {#post-installation-configurations}
@@ -128,7 +128,7 @@ Per avviare la delega delle librerie, eseguite i seguenti passaggi su tutte le i
 
 Per inserire nella whitelist il pacchetto, eseguite i seguenti passaggi su tutte le istanze Author e Publish:
 
-1. Aprite AEM Configuration Manager in una finestra del browser. L’URL predefinito è https://[server]:[port]/system/console/configMgr.
+1. Aprite AEM Configuration Manager in una finestra del browser. L’URL predefinito è https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Cerca e apri la configurazione **del firewall di** deserializzazione.
 1. Aggiungete il pacchetto **sun.util.Calendar** al campo **whitelist** . Fate clic su Salva.
 1. Ripetete i passaggi da 1 a 3 su tutte le istanze Author e Publish.
@@ -160,7 +160,7 @@ Dispatcher: strumento di caching e bilanciamento del carico per AEM. AEM Dispatc
 
 1. Configurare il servizio filtro di riferimento:
 
-   Accedete al gestore di configurazione Apache Felix come amministratore. L’URL predefinito del gestore di configurazione è https://[server]:[port_number]/system/console/configMgr. Nel menu **Configurazioni** , selezionate l&#39;opzione Filtro **di riferimento** Apache Sling. Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **Salva**. Il formato della voce è https://[server]:[port].
+   Accedete al gestore di configurazione Apache Felix come amministratore. L’URL predefinito del gestore di configurazione è https://&#39;server&#39;:[port_number]/system/console/configMgr. Nel menu **Configurazioni** , selezionate l&#39;opzione Filtro **di riferimento** Apache Sling. Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **Salva**. Il formato della voce è https://&#39;[server]:[port]&#39;.
 
 #### Integrare Adobe Target {#integrate-adobe-target}
 
