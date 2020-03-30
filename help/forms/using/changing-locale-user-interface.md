@@ -1,8 +1,8 @@
 ---
 title: Modifica delle impostazioni internazionali dell'interfaccia utente dell'area di lavoro AEM Forms
 seo-title: Modifica delle impostazioni internazionali dell'interfaccia utente dell'area di lavoro AEM Forms
-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore data sull'interfaccia.
-seo-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore data sull'interfaccia.
+description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore della data nell'interfaccia.
+seo-description: Come modificare l'area di lavoro Moduli AEM per localizzare testo, categorie ridotte, code e processi, nonché il selettore della data nell'interfaccia.
 uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -26,7 +26,7 @@ Per localizzare l&#39;interfaccia utente dell&#39;area di lavoro AEM Forms nella
 * Localizzare categorie, code e processi compressi.
 * Localizza selettore data
 
-Prima di eseguire i passaggi precedenti, accertati di seguire i passaggi elencati in Procedura [generica per la personalizzazione](../../forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro AEM Forms.
+Prima di eseguire i passaggi precedenti, accertati di seguire i passaggi elencati in Procedura [generica per la personalizzazione](../../forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Prima di eseguire i passaggi precedenti, accertati di seguire i passaggi elencat
 Effettuate le seguenti operazioni per aggiungere il supporto per una lingua *Nuovo* e il codice delle impostazioni internazionali del browser *ora*.
 
 1. Accedete a CRXDE Lite.
-L’URL predefinito di CRXDE Lite è `https://[server]:[port]/lc/crx/de/index.jsp`.
+L’URL predefinito di CRXDE Lite è `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Andate alla posizione `apps/ws/locales` e create una nuova cartella `nw.`
 1. Copiate il file `translation.json`dalla posizione `/apps/ws/locales/en-US` alla posizione `/apps/ws/locales/nw` .
 1. Passate a `/apps/ws/locales/nw` e aprite `translation.json` per la modifica. Apportate modifiche specifiche alle impostazioni internazionali al file translate.json.
@@ -54,7 +54,7 @@ Nei passaggi seguenti, si presume che i nuovi file di immagine localizzati siano
 
 >[!NOTE]
 >
->Per trovare il codice della lingua del browser in uso. Apri `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>Per trovare il codice della lingua del browser in uso. Apri `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![comprimere_panel_image](assets/collapsing_panels_image.png)
 
