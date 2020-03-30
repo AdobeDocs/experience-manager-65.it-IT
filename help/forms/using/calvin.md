@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -92,9 +92,9 @@ Prima di utilizzare questo articolo per creare i casi di test, è necessario con
 
 ## Esempio: Creare una suite di test per un modulo adattivo utilizzando Hobbes come framework di test {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
-L&#39;esempio seguente illustra la creazione di una suite di test per il test di più moduli adattivi. È necessario creare un test case separato per ciascun modulo da sottoporre a test. Seguendo i passaggi descritti di seguito e modificando il codice JavaScript al punto 11, è possibile creare una suite di test personalizzata per verificare i moduli adattivi.
+L&#39;esempio seguente illustra la creazione di una suite di test per il test di più moduli adattivi. È necessario creare un test case separato per ciascun modulo da sottoporre a test. Seguendo passaggi simili a quelli indicati di seguito e modificando il codice JavaScript al punto 11, è possibile creare una suite di test personalizzata per verificare i moduli adattivi.
 
-1. Passare a CRXDE Lite nel browser Web: `https://[server]:[port]/crx/de`.
+1. Passare a CRXDE Lite nel browser Web: `https://'[server]:[port]'/crx/de`.
 1. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **Crea** > **Crea nodo**. Immettete un nome (qui afTestRegistration), specificate il tipo di nodo come cq:ClientLibraryFolder e fate clic su **OK.**
 
    La cartella clientlibs contiene l’aspetto di registrazione dell’applicazione (JS e Init). Si consiglia di registrare tutti gli oggetti delle suite di test di Hobbes specifici per un modulo nella cartella clientlibs.
@@ -114,7 +114,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
    <td><p>granite.testing.hobbes.test, granite.testing.calvin.test</p> </td>
   </tr>
   <tr>
-   <td><p> dipendenze</p> </td>
+   <td><p>dipendenze</p> </td>
    <td><p>Stringa[]</p> </td>
    <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td>
   </tr>
@@ -155,7 +155,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
 
    Il codice riportato sopra crea una suite di test denominata Modulo **adattivo - Test** demo. Per creare una suite di test con un nome diverso, modificate di conseguenza il nome.
 
-1. Fare clic su **Crea** > **Crea nodo** per creare un nodo sotto la cartella clientlib per ciascun modulo da verificare. In questo esempio viene utilizzato un nodo denominato **testForm** per verificare un modulo adattivo denominato **testForm**. Specificate le seguenti proprietà e fate clic su **OK**:
+1. Fare clic su **Crea** > **Crea nodo** per creare un nodo sotto la cartella clientlib per ciascun modulo da verificare. In questo esempio viene utilizzato un nodo denominato **testForm** per testare un modulo adattivo denominato **testForm**. Specificate le seguenti proprietà e fate clic su **OK**:
 
    * Nome: testForm (nome del modulo)
    * Tipo: cq:ClientLibraryFolder
@@ -165,7 +165,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
    | **Proprietà** | **Tipo** | **Valore** |
    |---|---|---|
    | categorie | Stringa[] | granite.testing.hobbes.test, granite.testing.hobbes.test.testForm |
-   |  dipendenze | Stringa[] | granite.testing.calvin.test |
+   | dipendenze | Stringa[] | granite.testing.calvin.test |
 
    >[!NOTE]
    >
@@ -269,7 +269,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
     }(window, window.hobs));
    ```
 
-   Viene creato il test case. Per testare i moduli adattivi tramite Hobbes, eseguite il test case. Per i passaggi per l&#39;esecuzione dei test case, consultate [Esecuzione di test nell&#39;interfaccia utente tramite test](/help/sites-developing/hobbes.md)automatici.
+   Viene creato il test case. Per testare i moduli adattivi tramite Hobbes, eseguite il test case. Per i passaggi per l&#39;esecuzione dei test case, consultate [Esecuzione di test nell&#39;interfaccia utente tramite test](/help/sites-developing/hobbes.md)automatizzati.
 
 Potete anche installare il pacchetto nel file allegato SampleTestPackage.zip per ottenere gli stessi risultati dei passaggi descritti in Esempio: Creare una suite di test per un modulo adattivo utilizzando Hobbes come framework di test.
 
@@ -299,11 +299,11 @@ Per eseguire una suite di test:
 
    ![3_pagecontent](assets/3_pagecontent.png)
 
-1. Esaminate i risultati del test case toccando o facendo clic sulla descrizione per aprire il pannello Risultati. Toccando o facendo clic sul nome del test case nel pannello Risultati vengono visualizzati tutti i dettagli.
+1. Esaminare i risultati del test case toccando o facendo clic sulla descrizione per aprire il pannello Risultati. Toccando o facendo clic sul nome del test case nel pannello Risultati vengono visualizzati tutti i dettagli.
 
    ![4_reviewResults](assets/4_reviewresults.png)
 
-La verifica dei moduli adattivi AEM è simile alla verifica dell’interfaccia utente di AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, vedere i seguenti argomenti in [Verifica dell’interfaccia](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+La verifica dei moduli adattivi di AEM è simile alla verifica dell’interfaccia utente di AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, vedere i seguenti argomenti in [Verifica dell’interfaccia](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Visualizzazione delle suite di test
 * Esecuzione di più test
@@ -313,7 +313,7 @@ La verifica dei moduli adattivi AEM è simile alla verifica dell’interfaccia u
 <table>
  <tbody>
   <tr>
-   <td><strong>Term</strong></td>
+   <td><strong>Termine</strong></td>
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
