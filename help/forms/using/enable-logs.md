@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 Per configurare i registri lato server, effettuate le seguenti operazioni:
 
-1. Passa a `https://[server]:[port]/system/console/configMgr`. Individuate e aprite l’opzione di configurazione *Registratore registrazione* Apace Sling. Viene visualizzata una finestra di dialogo:
+1. Passa a `https://'[server]:[port]'/system/console/configMgr`. Individuate e aprite l’opzione di configurazione *Registratore registrazione* Apace Sling. Viene visualizzata una finestra di dialogo:
 
    ![ Apace Sling logging logger, finestra di dialogo di configurazione](assets/logconfig.png)
 
@@ -49,7 +49,7 @@ Per abilitare la registrazione lato client nei moduli HTML5 è possibile utilizz
 
 ### Attivazione della registrazione tramite il parametro di richiesta {#enabling-logging-using-request-parameter}
 
-Con questo metodo potete generare registri per una particolare richiesta. Il nome del parametro di richiesta è `log. L’URL del registro è il seguente:
+Utilizzando questo metodo, potete generare file di registro per una particolare richiesta. Il nome del parametro di richiesta è `log. L’URL del registro è il seguente:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -160,7 +160,7 @@ Esempio:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Destinazione: Livello xfa server<br /> : Livello INFO<br /> xfaView: Livello DEBUG<br /> xfaPerf:TRACE</td>
+   <td>Destinazione: Livello xfa server<br /> : Livello INFO<br /> xfaView: Livello DEBUG<br /> xfaPerf: TRACE</td>
   </tr>
  </tbody>
 </table>
@@ -168,15 +168,15 @@ Esempio:
 >[!NOTE]
 >
 >Il livello di registro predefinito per ciascuna categoria di registro a (xfa), b (xfaView) e c (xfaPerf) è 2 (ERROR). Di conseguenza, per la configurazione del registro: 2-b6, i livelli di registro per le diverse categorie sono:
->a (xfa): 2 (livello predefinito ERROR)
+>a (xfa): 2 (ERRORE di livello predefinito)
 >b (xfaView): 6 (TRACE specificato dall&#39;utente)
->a (xfaPerf): 2 (livello predefinito ERROR)
+>a (xfaPerf): 2 (ERRORE di livello predefinito)
 
 ### Abilitazione dell&#39;accesso tramite Configuration Manager {#enabling-logging-using-configuration-manager}
 
 Se utilizzate Configuration Manager per abilitare la registrazione, vengono generati dei registri per ogni richiesta di rendering finché la registrazione non viene nuovamente disattivata.
 
-1. Accedete a CQ Configuration Manager in `https://[server]:[port]/system/console/configMgr` e accedete con le credenziali di amministratore.
+1. Accedete a CQ Configuration Manager in `https://'[server]:[port]'/system/console/configMgr` e accedete con le credenziali di amministratore.
 1. Cercare e fare clic su Configurazioni **di moduli** mobili.
 1. Nella casella di testo Opzioni di debug, immettete le configurazioni di registro come descritto nella sezione precedente, ad esempio, **2-a4-b5-c6**
 
@@ -192,7 +192,7 @@ Per impostazione predefinita, tutte le informazioni vengono aggiunte al file err
 
 Per modificare il percorso e il nome del file di registro:
 
-1. Accedete a Configuration Manager come amministratore. L&#39;URL predefinito di Configuration Manager è `https://[Server]:[Port]/system/console/configMgr`.
+1. Accedete a Configuration Manager come amministratore. L&#39;URL predefinito di Configuration Manager è `https://'[server]:[port]'/system/console/configMgr`.
 1. Fate clic su Configurazione **registro** Apache Sling. Viene visualizzata una finestra di dialogo.
 
    ![logconfig-1](assets/logconfig-1.png)
@@ -203,7 +203,7 @@ Per modificare il percorso e il nome del file di registro:
 
    >[!NOTE]
    >
-   >Per creare file di registro nella stessa directory in cui sono conservati altri file di registro, specificare ../logs/&lt;nomefile> nella proprietà File di registro.
+   >Per creare file di registro nella stessa directory in cui sono conservati gli altri file di registro, specificare ../logs/&lt;nomefile> nella proprietà File di registro.
 
 1. Modificate il **logger** in **HTMLFormsPerfLogger** e fate clic su **Salva**.
 
