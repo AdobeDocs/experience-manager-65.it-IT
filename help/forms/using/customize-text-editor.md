@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,24 +37,24 @@ A tal fine, è necessario:
 
 Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate le seguenti operazioni:
 
-1. Accedete a `https://[server]:[port]/[ContextPath]/crx/de` e accedete come amministratore.
+1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 1. Nella cartella delle app, create una cartella denominata config con percorso/struttura simile alla cartella di configurazione, che si trova in libs/fd/cm/config, utilizzando i seguenti passaggi:
 
-   1. Fate clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e selezionate **Overlay Node**:
+   1. Fate clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e selezionate Nodo **** sovrapposizione:
 
       `/libs/fd/cm/config`
 
-      ![Overlay, nodo](assets/1-1.png)
+      ![Sovrapposizione, nodo](assets/1-1.png)
 
    1. Verificate che la finestra di dialogo Nodo sovrapposizione contenga i seguenti valori:
 
-      **** Percorso: /libs/fd/cm/config
+      **Percorso:** /libs/fd/cm/config
 
-      **** Posizione: /apps/
+      **Posizione:** /apps/
 
-      **** Corrispondenza tipi di nodo: Selezionato
+      **Corrispondenza tipi di nodo:** Selezionato
 
-      ![Overlay, nodo](assets/2.png)
+      ![Sovrapposizione, nodo](assets/2.png)
 
    1. Fai clic su **OK**. La struttura delle cartelle viene creata nella cartella delle app.
 
@@ -160,7 +160,7 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate l
 
    1. Apportate le modifiche necessarie nel file per modificare quanto segue nelle impostazioni dei font:
 
-      * Aggiungi o rimuovi famiglia e dimensione font
+      * Aggiungere o rimuovere la famiglia e la dimensione dei font
       * Proprietà quali l&#39;altezza e la spaziatura tra le lettere
       * Valori predefiniti di famiglia e dimensione del font, altezza, spaziatura tra le lettere e formato della data
       * Punti elenco
