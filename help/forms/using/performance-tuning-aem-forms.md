@@ -10,21 +10,21 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Ottimizzazione delle prestazioni del server AEM Forms{#performance-tuning-of-aem-forms-server}
 
-Questo articolo illustra le strategie e le procedure ottimali che potete implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni della distribuzione di AEM Forms.
+Questo articolo illustra le strategie e le procedure ottimali che è possibile implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni della distribuzione di AEM Forms.
 
 ## Impostazioni cache {#cache-settings}
 
 Puoi configurare e controllare la strategia di caching per AEM Forms utilizzando il componente Configurazioni **per moduli** mobili nella console di configurazione Web di AEM all’indirizzo:
 
-* (AEM Forms su OSGi) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* (AEM Forms su OSGi) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 Le opzioni disponibili per il caching sono le seguenti:
 
@@ -34,7 +34,7 @@ Le opzioni disponibili per il caching sono le seguenti:
 
 Le impostazioni predefinite della cache per AEM Forms potrebbero non essere sufficienti per ottenere prestazioni ottimali. Pertanto, si consiglia di utilizzare le seguenti impostazioni:
 
-* **Strategia** cache:Aggressivo
+* **Strategia** cache: Aggressivo
 * **Dimensione** cache (in termini di numero di moduli): Come richiesto
 * **Dimensione** massima oggetto: Come richiesto
 
@@ -71,7 +71,7 @@ I passaggi seguenti dimostrano le modifiche necessarie per abilitare la compress
 
 * Windows: scaricate il server Web Apache dal sito Apache HTTP Server Project.
 * Solaris a 64 bit: scaricate il server Web Apache dal sito Web Sunfreeware per Solaris.
-* Linux: il server web Apache è preinstallato in un sistema Linux.
+* Linux: il server Web Apache è preinstallato in un sistema Linux.
 
 Apache può comunicare con CRX utilizzando il protocollo HTTP. Le configurazioni sono per l&#39;ottimizzazione tramite HTTP.
 
@@ -131,7 +131,7 @@ Aggiungi la seguente configurazione nel file di `APACHE_HOME/conf/httpd.conf` co
    </Location>
    ```
 
-   Per accedere al server crx, utilizzate `https://[server]:80`, dove `server` è il nome del server su cui è in esecuzione il server Apache.
+   Per accedere al server crx, utilizzate `https://'server':80`, dove `server` è il nome del server su cui è in esecuzione il server Apache.
 
 ## Utilizzo di un antivirus sul server in cui è in esecuzione AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -153,9 +153,9 @@ Per migliorare le prestazioni, puoi indirizzare il software antivirus per esclud
 
 * **(Solo AEM Forms su JEE)** Directory Global Document Storage (GDS). Il percorso predefinito è:
 
-   * (JBoss) [appserver root]/server/[server]/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver root]/installedApps/adobe/[server]/DocumentStorage
+   * (JBoss) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+   * (WebSphere) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(Solo AEM Forms su JEE)** Registri del server AEM Forms e directory temporanea. Il percorso predefinito è:
 
@@ -164,7 +164,7 @@ Per migliorare le prestazioni, puoi indirizzare il software antivirus per esclud
 
 >[!NOTE]
 >
->* Se state utilizzando una posizione diversa per GDS e directory temporanea, aprite AdminUI in `https://[server]:[port]/adminui`, andate a **Home > Impostazioni > Impostazioni sistema di base > Configurazioni** di base per confermare la posizione in uso.
+>* Se state utilizzando una posizione diversa per GDS e directory temporanea, aprite AdminUI in `https://'[server]:[port]'/adminui`, andate a **Home > Impostazioni > Impostazioni sistema di base > Configurazioni** di base per confermare la posizione in uso.
 
 * Se il server AEM Forms esegue un&#39;operazione lenta anche dopo l&#39;esclusione delle directory consigliate, escludete anche il file eseguibile Java (java.exe).
 
