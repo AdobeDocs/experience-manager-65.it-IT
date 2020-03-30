@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Configurazione di una stampante di rete PDFG (solo Windows) {#setting-up-a-pdfg-network-printer-windows-only}
 
-La stampante di rete PDFG consente agli utenti di generare un documento PDF da qualsiasi applicazione che supporti la stampa. Dopo che un utente installa la stampante di rete PDFG, nella sezione Stampanti del Pannello di controllo di Windows viene visualizzata una nuova stampante denominata *PDF generator* . Se esiste già una stampante con lo stesso nome, all&#39;utente viene richiesto di fornire un altro nome.
+La stampante di rete PDFG consente agli utenti di generare un documento PDF da qualsiasi applicazione che supporti la stampa. Dopo l&#39;installazione della stampante di rete PDFG da parte di un utente, nella sezione Stampanti del Pannello di controllo di Windows viene visualizzata una nuova stampante denominata *PDF generator* . Se esiste già una stampante con lo stesso nome, all&#39;utente viene richiesto di fornire un altro nome.
 
 La stampa su questa stampante da qualsiasi applicazione invia il documento (in formato PostScript) a PDF Generator, che converte il file PostScript in PDF. A seconda della configurazione di PDF Generator, il documento PDF viene inviato all’utente come allegato a un messaggio e-mail, inviato a un determinato servizio o processo di moduli AEM, oppure viene eseguita entrambe le azioni.
 
@@ -56,11 +56,11 @@ Per ripristinare il testo predefinito originale dell’e-mail, fare clic su Ripr
 
 ## Installare la stampante di rete PDFG sul computer di un utente {#install-pdfg-network-printer-on-a-user-s-computer}
 
-Gli utenti che hanno il ruolo Amministratore PDFG o Utente PDFG possono installare una stampante di rete PDFG. Sul computer deve essere installato un JDK a 32 bit.
+Gli utenti che hanno il ruolo di amministratore PDFG o utente PDFG possono installare una stampante di rete PDFG. Sul computer deve essere installato un JDK a 32 bit.
 
 1. (Amministratori PDFG) Nella console di amministrazione, fare clic su Servizi > Generatore PDF > Stampante di rete PDFG.
 
-   (Utenti PDFG) Fare clic sul collegamento `http(s)://[host]:[port]/pdfgui` nella sezione Installazione della stampante di rete PDFG.
+   (Utenti PDFG) Fare clic sul collegamento `http(s)://[host]:'port'/pdfgui` nella sezione Installazione della stampante di rete PDFG.
 
 1. In Installazione stampante di rete PDFG fare clic sul collegamento. Quando viene richiesto di fornire informazioni sull&#39;account utente, specificate il nome utente e la password utilizzati al punto 1 per l&#39;accesso. Viene visualizzato un messaggio che indica che la stampante è stata installata correttamente.
 
