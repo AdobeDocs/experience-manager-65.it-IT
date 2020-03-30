@@ -1,30 +1,30 @@
 ---
 title: Ottimizzazione dei moduli AEM in ambiente JEE
 seo-title: Ottimizzazione dei moduli AEM in ambiente JEE
-description: Scopri le numerose impostazioni di protezione per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
-seo-description: Scopri le numerose impostazioni di protezione per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
+description: Scopri le numerose impostazioni di protezione avanzate per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
+seo-description: Scopri le numerose impostazioni di protezione avanzate per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Ottimizzazione dei moduli AEM in ambiente JEE {#hardening-your-aem-forms-on-jee-environment}
 
-Scopri le numerose impostazioni di protezione per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
+Scopri le numerose impostazioni di protezione avanzate per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
 
 L&#39;articolo descrive raccomandazioni e procedure ottimali per la protezione dei server che eseguono AEM Forms su JEE. Non si tratta di un documento completo per l&#39;applicazione di protezione host per il sistema operativo e i server applicazioni in uso. Questo articolo descrive al contrario una serie di impostazioni di protezione da implementare per migliorare la sicurezza di AEM Forms su JEE in esecuzione all’interno di una Intranet aziendale. Per garantire che AEM Forms su server applicazioni JEE rimanga al sicuro, è tuttavia necessario implementare anche procedure di monitoraggio della sicurezza, rilevamento e risposta.
 
-L&#39;articolo descrive le tecniche di indurimento da applicare nelle seguenti fasi del ciclo di vita dell&#39;installazione e della configurazione:
+L&#39;articolo descrive le tecniche di indurimento che dovrebbero essere applicate nelle seguenti fasi durante il ciclo di vita dell&#39;installazione e della configurazione:
 
-* **** Pre-installazione: Utilizzate queste tecniche prima di installare AEM Forms su JEE.
-* **** Installazione: Utilizzate queste tecniche durante il processo di installazione di AEM Forms su JEE.
-* **** Post-installazione: Utilizzare queste tecniche dopo l&#39;installazione e periodicamente dopo.
+* **Pre-installazione:** Utilizzate queste tecniche prima di installare AEM Forms su JEE.
+* **Installazione:** Utilizzate queste tecniche durante il processo di installazione di AEM Forms su JEE.
+* **Post-installazione:** Utilizzate queste tecniche dopo l&#39;installazione e periodicamente in seguito.
 
 AEM Forms su JEE è altamente personalizzabile e può funzionare in molti ambienti diversi. Alcune delle raccomandazioni potrebbero non essere adatte alle esigenze della vostra organizzazione.
 
@@ -60,13 +60,13 @@ Nella tabella seguente sono descritti i processi comuni che riducono le vulnerab
   </tr> 
   <tr> 
    <td><p>Indirizzi IP privati</p> </td> 
-   <td><p>Utilizzate Network Address Translation (NAT) con indirizzi IP privati RFC 1918 sul server dell'applicazione AEM Forms. Assegnate indirizzi IP privati (10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16) per rendere più difficile per un utente malintenzionato indirizzare il traffico da e verso un host interno del NAT attraverso Internet.</p> </td> 
+   <td><p>Utilizzate Network Address Translation (NAT) con gli indirizzi IP privati RFC 1918 sul server dell'applicazione AEM Forms. Assegnate indirizzi IP privati (10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16) per rendere più difficile per un utente malintenzionato indirizzare il traffico da e verso un host interno del NAT attraverso Internet.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Firewall</p> </td> 
    <td><p>Utilizzate i seguenti criteri per selezionare una soluzione firewall:</p> 
     <ul> 
-     <li><p>Implementate firewall che supportano server proxy e/o <em>ispezione</em> statica invece di semplici soluzioni di filtraggio pacchetti.</p> </li> 
+     <li><p>Implementate firewall che supportano server proxy e/o <em>ispezione</em> statica invece di semplici soluzioni di filtraggio dei pacchetti.</p> </li> 
      <li><p>Utilizzare un firewall che supporta un <em>rifiuto di tutti i servizi, ad eccezione dei paradigmi di protezione consentiti</em> in modo esplicito.</p> </li> 
      <li><p>Implementate una soluzione firewall che sia a doppia casa o con più indirizzi. Questa architettura fornisce il massimo livello di protezione e aiuta a impedire che utenti non autorizzati scavalchino la protezione del firewall.</p> </li> 
     </ul> </td> 
@@ -92,7 +92,7 @@ Nella tabella seguente sono descritti alcuni approcci potenziali per ridurre al 
  <tbody>
   <tr> 
    <td><p>Patch di sicurezza</p></td> 
-   <td><p>Esiste un rischio maggiore che un utente non autorizzato possa accedere al server applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificare le patch di protezione prima di applicarle ai server di produzione.</p><p>Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare.</p></td> 
+   <td><p>Esiste un rischio maggiore che un utente non autorizzato possa accedere al server applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificate le patch di protezione prima di applicarle ai server di produzione.</p><p>Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare.</p></td> 
   </tr> 
   <tr> 
    <td><p>Software antivirus</p></td> 
@@ -100,7 +100,7 @@ Nella tabella seguente sono descritti alcuni approcci potenziali per ridurre al 
   </tr> 
   <tr> 
    <td><p>Network Time Protocol (NTP)</p></td> 
-   <td><p>Per l'analisi forense, tenere accurato il tempo sui server dei moduli. Utilizzare NTP per sincronizzare l'ora su tutti i sistemi che sono connessi direttamente a Internet.</p></td> 
+   <td><p>Per l'analisi forense, tenere accurato il tempo sui server dei moduli. Utilizzate NTP per sincronizzare l'ora su tutti i sistemi che sono connessi direttamente a Internet.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -109,7 +109,7 @@ Per ulteriori informazioni sulla sicurezza del sistema operativo in uso, vedere 
 
 ## Installazione {#installation}
 
-Questa sezione descrive le tecniche utilizzabili durante il processo di installazione di AEM Forms per ridurre le vulnerabilità di sicurezza. In alcuni casi, queste tecniche utilizzano opzioni che fanno parte del processo di installazione. La tabella seguente descrive queste tecniche.
+Questa sezione descrive le tecniche che è possibile utilizzare durante il processo di installazione di AEM Forms per ridurre le vulnerabilità di sicurezza. In alcuni casi, queste tecniche utilizzano opzioni che fanno parte del processo di installazione. Nella tabella seguente sono descritte queste tecniche.
 
 <table> 
  <thead> 
@@ -121,7 +121,7 @@ Questa sezione descrive le tecniche utilizzabili durante il processo di installa
  <tbody>
   <tr> 
    <td><p>Privilegi</p> </td> 
-   <td><p>Utilizzate il numero minimo di privilegi necessari per installare il software. Effettuate l'accesso al computer utilizzando un account non appartenente al gruppo Amministratori. In Windows, potete utilizzare il comando Esegui come per eseguire il programma di installazione AEM Forms su JEE come utente amministrativo. Nei sistemi UNIX e Linux, utilizzare un comando come <code>sudo</code> per installare il software.</p> </td> 
+   <td><p>Utilizzate il numero minimo di privilegi necessari per installare il software. Effettuate l'accesso al computer utilizzando un account non appartenente al gruppo Amministratori. In Windows, potete utilizzare il comando Esegui come per eseguire il programma di installazione AEM Forms su JEE come utente amministrativo. Sui sistemi UNIX e Linux, utilizzare un comando come <code>sudo</code> per installare il software.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Origine software</p> </td> 
@@ -129,7 +129,7 @@ Questa sezione descrive le tecniche utilizzabili durante il processo di installa
   </tr> 
   <tr> 
    <td><p>Partizioni disco</p> </td> 
-   <td><p>Inserite AEM Forms su JEE in una partizione dedicata del disco. La segmentazione del disco è un processo che mantiene dati specifici sul server su dischi fisici separati per una maggiore sicurezza. Disporre i dati in questo modo riduce il rischio di attacchi di tipo traversal. Pianificare la creazione di una partizione separata dalla partizione di sistema in cui è possibile installare AEM Forms nella directory dei contenuti JEE. (In Windows, la partizione di sistema contiene la directory system32, o partizione di avvio.)</p> </td> 
+   <td><p>Inserite AEM Forms su JEE in una partizione dedicata del disco. La segmentazione del disco è un processo che mantiene dati specifici sul server su dischi fisici separati per una maggiore sicurezza. Disporre i dati in questo modo riduce il rischio di attacchi di traversata di directory. Pianificare la creazione di una partizione separata dalla partizione di sistema in cui è possibile installare AEM Forms nella directory dei contenuti JEE. (In Windows, la partizione di sistema contiene la directory system32, o partizione di avvio.)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Componenti</p> </td> 
@@ -152,13 +152,13 @@ Dopo aver installato AEM Forms su JEE, è importante mantenere periodicamente l&
 
 La sezione seguente descrive in dettaglio le diverse attività consigliate per proteggere il server dei moduli distribuito.
 
-### Protezione AEM Forms {#aem-forms-security}
+### Sicurezza di AEM Forms {#aem-forms-security}
 
 Le seguenti impostazioni consigliate si applicano ad AEM Forms sul server JEE al di fuori dell’applicazione Web amministrativa. Per ridurre i rischi per la sicurezza del server, applicate queste impostazioni subito dopo l&#39;installazione di AEM Forms su JEE.
 
 **Patch di sicurezza**
 
-Esiste un rischio maggiore che un utente non autorizzato possa accedere al server applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificate le patch di sicurezza prima di applicarle ai server di produzione per garantire la compatibilità e la disponibilità delle applicazioni. Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare. Gli aggiornamenti di AEM Forms su JEE sono disponibili nel sito di download dei prodotti Enterprise.
+Esiste un rischio maggiore che un utente non autorizzato possa accedere al server dell&#39;applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificate le patch di sicurezza prima di applicarle ai server di produzione per garantire la compatibilità e la disponibilità delle applicazioni. Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare. Gli aggiornamenti di AEM Forms su JEE sono disponibili nel sito di download dei prodotti Enterprise.
 
 **Account di servizio (chiavi in mano JBoss solo in Windows)**
 
@@ -258,16 +258,16 @@ Quando AEM Forms su JEE è installato, viene configurato un unico account utente
 1. Digitate il seguente URL in un browser Web:
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
    Il numero di porta predefinito è uno dei seguenti:
 
-   **** JBoss: 8080
+   **JBoss:** 8080
 
-   **** Server WebLogic: 7001
+   **Server WebLogic:** 7001
 
-   **** WebSphere: 9080.
+   **WebSphere:** 9080.
 
 1. Nel campo Nome **** utente digitare `administrator` e digitare **nel campo** Password `password`.
 1. Fate clic su **Impostazioni** > Gestione **** utente > **Utenti e gruppi**.
@@ -276,9 +276,9 @@ Quando AEM Forms su JEE è installato, viene configurato un unico account utente
 1. Fate clic su **Cambia password** nella pagina Modifica utente.
 1. Specificate la nuova password e fate clic su **Salva**.
 
-Inoltre, si consiglia di cambiare la password predefinita per l&#39;amministratore CRX eseguendo i seguenti passaggi:
+Inoltre, si consiglia di modificare la password predefinita per l&#39;amministratore CRX eseguendo i seguenti passaggi:
 
-1. Effettuate l&#39;accesso `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` utilizzando il nome utente/password predefinito.
+1. Effettuate l&#39;accesso `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` utilizzando il nome utente/password predefinito.
 1. Digitare Amministratore nel campo di ricerca e fare clic su **Vai**.
 1. Selezionate **Amministratore** dal risultato della ricerca e fate clic sull’icona **Modifica** in basso a destra dell’interfaccia utente.
 1. Specificate la nuova password nel campo **Nuova password** e la vecchia password nel campo **Password** .
@@ -291,7 +291,7 @@ La generazione del linguaggio WSDL (Web Service Definition Language) deve essere
 1. Digitate il seguente URL in un browser Web:
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
 1. Fate clic su **Impostazioni > Impostazioni di sistema di base > Configurazioni**.
@@ -311,7 +311,7 @@ Nella tabella seguente sono illustrate alcune tecniche per proteggere il server 
  <tbody>
   <tr> 
    <td><p>console di amministrazione del server applicazioni</p> </td> 
-   <td><p>Dopo aver installato, configurato e implementato AEM Forms su JEE nel server delle applicazioni, devi disattivare l’accesso alle console di amministrazione del server delle applicazioni. Per ulteriori informazioni, consultate la documentazione del server applicazione.</p> </td> 
+   <td><p>Dopo aver installato, configurato e implementato AEM Forms su JEE nel server delle applicazioni, è necessario disattivare l'accesso alle console di amministrazione del server delle applicazioni. Per ulteriori informazioni, consultate la documentazione del server applicazione.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Impostazioni cookie del server applicazioni</p> </td> 
@@ -362,17 +362,17 @@ In Oracle, l&#39;account del database utilizzato richiede solo i privilegi CONNE
 
 In WebSphere è possibile configurare la protezione integrata solo quando si utilizza un driver JDBC SQL Server esterno, non il driver JDBC di SQL Server incorporato con WebSphere.
 
-1. Accedere alla console di amministrazione di WebSphere.
+1. Accedete alla console di amministrazione di WebSphere.
 1. Nella struttura di navigazione, fare clic su **Risorse** > **JDBC** > Origini **** dati e, nel riquadro a destra, fare clic su **IDP_DS**.
 1. Nel riquadro a destra, in Proprietà aggiuntive, fare clic su Proprietà **** personalizzate, quindi su **Nuovo**.
 1. Nella casella **Nome** digitare `integratedSecurity` e digitare **nella casella** Valore `true`.
 1. Nella struttura di navigazione, fare clic su **Risorse** > **JDBC** > Origini **** dati e, nel riquadro a destra, fare clic su **RM_DS**.
 1. Nel riquadro a destra, in Proprietà aggiuntive, fare clic su Proprietà **** personalizzate, quindi su **Nuovo**.
 1. Nella casella **Nome** digitare `integratedSecurity` e digitare **nella casella** Valore `true`.
-1. Nel computer in cui è installato WebSphere, aggiungere il file sqljdbc_auth.dll al percorso dei sistemi Windows (C:\Windows). Il file sqljdbc_auth.dll si trova nello stesso percorso del driver di Microsoft SQL JDBC 1.2 (il valore predefinito è *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
+1. Nel computer in cui è installato WebSphere, aggiungere il file sqljdbc_auth.dll al percorso dei sistemi Windows (C:\Windows). Il file sqljdbc_auth.dll si trova nello stesso percorso dell&#39;installazione del driver Microsoft SQL JDBC 1.2 (il valore predefinito è *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
 1. Selezionare **Start** > Pannello **di** controllo > **Servizi**, fare clic con il pulsante destro del mouse sul servizio Windows per WebSphere (IBM WebSphere Application Server &lt;versione> - &lt;nodo>) e selezionare **Proprietà**.
 1. Nella finestra di dialogo Proprietà, fare clic sulla scheda **Accesso** .
-1. Selezionate **Questo account** e fornite le informazioni necessarie per impostare l’account di accesso da utilizzare.
+1. Selezionate **Questo account** e fornite le informazioni necessarie per impostare l’account di accesso che desiderate utilizzare.
 1. Impostare la protezione su SQL Server dalla modalità **mista** solo **a Autenticazione** Windows.
 
 ### Protezione dell&#39;accesso a contenuti sensibili nel database {#protecting-access-to-sensitive-content-in-the-database}
@@ -406,7 +406,7 @@ Un attacco comune che utilizza LDAP coinvolge un aggressore che intenzionalmente
 
 ### Controllo e registrazione {#auditing-and-logging}
 
-L&#39;uso corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali siano tracciati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il monitoraggio degli accessi riusciti e non riusciti, nonché eventi applicativi chiave come la creazione o l&#39;eliminazione di record chiave.
+L&#39;utilizzo corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali siano tracciati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il monitoraggio degli accessi riusciti e non riusciti, nonché eventi applicativi chiave come la creazione o l&#39;eliminazione di record chiave.
 
 Potete utilizzare il controllo per rilevare molti tipi di attacchi, tra cui:
 
@@ -430,7 +430,7 @@ Nella tabella seguente sono descritte le tecniche di auditing e registrazione ut
   </tr> 
   <tr> 
    <td><p>ridondanza dei file di registro</p> </td> 
-   <td><p>Se le risorse lo consentono, inviate i file di registro a un altro server in tempo reale non accessibile dall’utente malintenzionato (solo in scrittura) utilizzando Syslog, Tivoli, Microsoft Operations Manager (MOM) Server o un altro meccanismo.</p> <p>La protezione dei file di registro in questo modo consente di evitare manomissioni. Inoltre, l'archiviazione dei registri in un archivio centrale facilita la correlazione e il monitoraggio (ad esempio, se sono in uso più server di moduli e si verifica un attacco per l'identificazione della password in più computer, dove ogni computer viene interrogato per una password).</p> </td> 
+   <td><p>Se le risorse lo consentono, inviate i file di registro a un altro server in tempo reale non accessibile dall’utente malintenzionato (solo in scrittura) utilizzando Syslog, Tivoli, Microsoft Operations Manager (MOM) Server o un altro meccanismo.</p> <p>La protezione dei file di registro in questo modo consente di evitare manomissioni. Inoltre, l'archiviazione dei registri in un archivio centrale facilita la correlazione e il monitoraggio (ad esempio, se sono in uso più server di moduli e si verifica un attacco per l'identificazione della password in più computer, dove ogni computer viene interrogato per ottenere una password).</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -445,7 +445,7 @@ Dopo aver installato AEM Forms su JEE, è importante mantenere periodicamente la
 
 **AEM Forms su URL principali JEE da usare con il server proxy inverso**
 
-I seguenti URL principali dell&#39;applicazione per ogni AEM Forms su applicazione Web JEE. Configurate il proxy inverso solo per esporre gli URL per la funzionalità dell&#39;applicazione Web che desiderate fornire agli utenti finali.
+I seguenti URL principali dell&#39;applicazione per ogni AEM Forms presente nell&#39;applicazione Web JEE. Configurate il proxy inverso solo per esporre gli URL per la funzionalità dell&#39;applicazione Web che desiderate fornire agli utenti finali.
 
 Alcuni URL vengono evidenziati come applicazioni Web rivolte all’utente finale. Evitare di esporre altri URL per Configuration Manager per l&#39;accesso agli utenti esterni tramite il proxy inverso.
 
@@ -539,7 +539,7 @@ Alcuni URL vengono evidenziati come applicazioni Web rivolte all’utente finale
   </tr> 
   <tr> 
    <td><p>/OutputIVS/*</p> </td> 
-   <td><p>Applicazione IVS di output per test e debugging del servizio di output</p> </td> 
+   <td><p>Applicazione IVS di output per il test e il debug del servizio di output</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -557,7 +557,7 @@ Alcuni URL vengono evidenziati come applicazioni Web rivolte all’utente finale
   </tr> 
   <tr> 
    <td><p>/FormServer/*</p> </td> 
-   <td><p>File applicazione Web Forms</p> </td> 
+   <td><p>File delle applicazioni Web Forms</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -639,10 +639,10 @@ Le seguenti caratteristiche sono comuni al CSRF:
 
 AEM Forms su JEE utilizza la funzione Filtro referente per bloccare gli attacchi CSRF. In questa sezione vengono utilizzati i termini seguenti per descrivere il meccanismo di filtro dei referenti:
 
-* **** Referente Consentito: Un Referente è l&#39;indirizzo della pagina di origine che invia una richiesta al server. Per le pagine o i moduli JSP, i Referenti sono in genere la pagina precedente della cronologia di navigazione. Per riferimento per le immagini si intendono in genere le pagine sulle quali vengono visualizzate le immagini. È possibile identificare il Referente a cui è consentito l&#39;accesso alle risorse del server aggiungendoli all&#39;elenco Referente autorizzato.
-* **** Eccezioni referente consentite: Potresti voler limitare l&#39;ambito di accesso per un particolare Referente nell&#39;elenco di Referente autorizzato. Per applicare questa limitazione è possibile aggiungere singoli percorsi di tale referente all&#39;elenco Eccezioni referente consentite. Le richieste provenienti dai percorsi nell&#39;elenco Eccezioni referente consentite non possono richiamare risorse sul server dei moduli. È possibile definire le eccezioni consentite per un&#39;applicazione specifica e utilizzare un elenco globale di eccezioni valide per tutte le applicazioni.
-* **** URI consentiti: Si tratta di un elenco di risorse da distribuire senza controllare l&#39;intestazione del referente. È possibile aggiungere a questo elenco risorse, ad esempio, pagine della guida che non comportano modifiche allo stato del server. Le risorse nell&#39;elenco URI consentiti non vengono mai bloccate dal filtro di riferimento, a prescindere da chi sia il referente.
-* **** Referente Null: Una richiesta server che non è associata o non proviene da una pagina Web padre è considerata una richiesta da un Referente Null. Ad esempio, quando si apre una nuova finestra del browser, digitare un indirizzo e premere Invio, il Referente inviato al server è nullo. Un&#39;applicazione desktop (.NET o SWING) che effettua una richiesta HTTP a un server Web, invia anche un Referente Null al server.
+* **Referente Consentito:** Un Referente è l&#39;indirizzo della pagina di origine che invia una richiesta al server. Per le pagine o i moduli JSP, i Referenti sono in genere la pagina precedente della cronologia di navigazione. Per riferimento per le immagini si intendono in genere le pagine sulle quali vengono visualizzate le immagini. È possibile identificare il Referente a cui è consentito l&#39;accesso alle risorse del server aggiungendoli all&#39;elenco Referente autorizzato.
+* **Eccezioni referente consentite:** Potresti voler limitare l&#39;ambito di accesso per un particolare Referente nell&#39;elenco di Referente autorizzato. Per applicare questa limitazione è possibile aggiungere singoli percorsi di tale referente all&#39;elenco Eccezioni referente consentite. Le richieste provenienti dai percorsi nell&#39;elenco Eccezioni referente consentite non possono richiamare alcuna risorsa sul server dei moduli. È possibile definire le eccezioni consentite per un&#39;applicazione specifica e utilizzare un elenco globale di eccezioni valide per tutte le applicazioni.
+* **URI consentiti:** Si tratta di un elenco di risorse da distribuire senza controllare l&#39;intestazione del referente. È possibile aggiungere a questo elenco risorse, ad esempio, pagine della guida che non comportano modifiche allo stato del server. Le risorse nell&#39;elenco URI consentiti non vengono mai bloccate dal filtro di riferimento, a prescindere da chi sia il referente.
+* **Referente Null:** Una richiesta server che non è associata o non proviene da una pagina Web padre è considerata una richiesta da un Referente Null. Ad esempio, quando si apre una nuova finestra del browser, digitare un indirizzo e premere Invio, il Referente inviato al server è nullo. Un&#39;applicazione desktop (.NET o SWING) che effettua una richiesta HTTP a un server Web, invia anche un Referente Null al server.
 
 ### Filtro referente {#referer-filtering}
 
@@ -661,7 +661,7 @@ Il processo di filtro referente può essere descritto come segue:
 1. Se nella richiesta è presente un Referente, il server verifica se si tratta di un Referente Consentito. Se consentita, il server verifica la presenza di un&#39;eccezione di riferimento:
 
    1. Se si tratta di un&#39;eccezione, la richiesta viene bloccata.
-   1. Se non è un&#39;eccezione, la richiesta viene passata.
+   1. Se non si tratta di un&#39;eccezione, la richiesta viene passata.
 
 1. Se nella richiesta non è presente alcun referente, il server verifica se è consentito un Referente Null:
 
@@ -766,7 +766,7 @@ Di seguito è riportato un esempio della voce del filtro nel file *web.xml* per 
 
 Se le richieste server legittime vengono bloccate dal filtro CSRF, provate una delle seguenti operazioni:
 
-* Se la richiesta rifiutata ha un&#39;intestazione Referente, è consigliabile aggiungerla all&#39;elenco Referente consentito. Aggiungi solo referente affidabile.
+* Se la richiesta rifiutata dispone di un&#39;intestazione Referente, è consigliabile aggiungerla all&#39;elenco Referente consentito. Aggiungi solo referente affidabile.
 * Se la richiesta rifiutata non dispone di un&#39;intestazione Referente, modificate l&#39;applicazione client per includere un&#39;intestazione Referente.
 * Se il client può funzionare in un browser, provate a utilizzare tale modello di distribuzione.
 * Come ultima risorsa è possibile aggiungere la risorsa all&#39;elenco URI consentiti. Questa impostazione non è consigliata.
@@ -801,7 +801,7 @@ Quando si configura un&#39;architettura di rete protetta come descritto nella se
     <ul> 
      <li><p>Applicazioni client di servizi Web, ad esempio applicazioni .NET</p> </li> 
      <li><p>Adobe Reader® utilizza SOAP per AEM Forms sui servizi Web del server JEE</p> </li> 
-     <li><p>Le applicazioni Adobe Flash® utilizzano SOAP per i servizi Web del server moduli</p> </li> 
+     <li><p>Le applicazioni Adobe Flash® utilizzano SOAP per i servizi Web del server dei moduli</p> </li> 
      <li><p>Chiamate AEM Forms su JEE SDK quando utilizzate in modalità SOAP</p> </li> 
      <li><p>Ambiente di progettazione di Workbench</p> </li> 
     </ul> </td> 
@@ -840,7 +840,7 @@ Quando si configura un&#39;architettura di rete protetta come descritto nella se
   </tr> 
   <tr> 
    <td><p>WebDAV</p> </td> 
-   <td><p>Consente la navigazione remota di AEM Forms nell'archivio di progettazione JEE (moduli, frammenti e così via) da parte di qualsiasi client WebDAV</p> </td> 
+   <td><p>Consente la navigazione remota di AEM Forms nell'archivio in fase di progettazione JEE (moduli, frammenti e così via) da parte di qualsiasi client WebDAV</p> </td> 
   </tr> 
   <tr> 
    <td><p>AMF</p> </td> 
@@ -848,7 +848,7 @@ Quando si configura un&#39;architettura di rete protetta come descritto nella se
   </tr> 
   <tr> 
    <td><p>JMX</p> </td> 
-   <td><p>AEM Forms su JEE espone MBeans per il monitoraggio utilizzando JMX</p> </td> 
+   <td><p>AEM Forms su JEE espone gli MBeans per il monitoraggio utilizzando JMX</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -873,7 +873,7 @@ Questa sezione descrive le porte predefinite (e gli intervalli di configurazione
  <tbody>
   <tr> 
    <td><p>Accesso alle applicazioni Web</p> </td> 
-   <td><p>[JBOSS_Root]/standalone/configuration/lc_[database].xml</p> <p>Porta connettore HTTP/1.1 8080</p> <p>Porta connettore AJP 1.3 8009</p> <p>Porta connettore SSL/TLS 8443</p> </td> 
+   <td><p>[JBOSS_Root]/standalone/configuration/lc_[database].xml</p> <p>Porta del connettore HTTP/1.1 8080</p> <p>Porta connettore AJP 1.3 8009</p> <p>Porta connettore SSL/TLS 8443</p> </td> 
   </tr> 
   <tr> 
    <td><p>Supporto CORBA</p> </td> 
@@ -982,9 +982,9 @@ AEM Forms su JEE utilizza il file system nei seguenti modi:
 
 * Memorizza i file temporanei utilizzati durante l&#39;elaborazione dell&#39;input e dell&#39;output del documento
 * Memorizza i file nell&#39;archivio globale utilizzati per supportare i componenti della soluzione installati
-* Le cartelle esaminate memorizzano i file rilasciati che vengono utilizzati come input per un servizio da una posizione cartella del file system
+* Le cartelle esaminate archiviano i file rilasciati che vengono utilizzati come input per un servizio da un percorso di cartella del file system
 
-Quando si utilizzano le cartelle esaminate per inviare e ricevere documenti con un servizio server moduli, prendere ulteriori precauzioni con la protezione del file system. Quando un utente rilascia contenuto nella cartella esaminata, tale contenuto viene esposto attraverso la cartella esaminata. In questo caso, il servizio non autentica l&#39;utente finale effettivo. Al contrario, si basa sulla protezione di livello ACL e Condivisione per essere impostata a livello di cartella per determinare chi può richiamare efficacemente il servizio.
+Quando si utilizzano le cartelle esaminate per inviare e ricevere documenti con un servizio server moduli, prendere ulteriori precauzioni con la protezione del file system. Quando un utente rilascia del contenuto nella cartella esaminata, tale contenuto viene esposto attraverso la cartella esaminata. In questo caso, il servizio non autentica l&#39;utente finale effettivo. Al contrario, si basa sulla protezione di livello ACL e Condivisione per essere impostata a livello di cartella per determinare chi può richiamare efficacemente il servizio.
 
 ## Suggerimenti per la protezione specifici per JBoss {#jboss-specific-security-recommendations}
 
@@ -992,7 +992,7 @@ Questa sezione contiene raccomandazioni di configurazione del server applicazion
 
 ### Disabilita console di gestione JBoss e console JMX {#disable-jboss-management-console-and-jmx-console}
 
-L’accesso alla console di gestione JBoss e alla console JMX è già configurato (il monitoraggio JMX è disabilitato) quando si installa AEM Forms su JEE su JBoss utilizzando il metodo di installazione chiavi in mano. Se utilizzate un server applicazioni JBoss personalizzato, accertatevi che l’accesso alla console di gestione JBoss e alla console di monitoraggio JMX sia protetto. L&#39;accesso alla console di monitoraggio JMX è impostato nel file di configurazione JBoss denominato jmx-invoker-service.xml.
+L’accesso alla console di gestione JBoss e alla console JMX è già configurato (il monitoraggio JMX è disattivato) quando si installa AEM Forms su JEE su JBoss utilizzando il metodo di installazione chiavi in mano. Se utilizzate un server applicazioni JBoss personalizzato, accertatevi che l’accesso alla console di gestione JBoss e alla console di monitoraggio JMX sia protetto. L&#39;accesso alla console di monitoraggio JMX è impostato nel file di configurazione JBoss denominato jmx-invoker-service.xml.
 
 ### Disabilita esplorazione directory {#disable-directory-browsing}
 
@@ -1032,7 +1032,7 @@ Impostate la `directoryBrowsingEnabled` proprietà nel file ibm-web-ext.xml su `
 
 ### Abilita protezione amministrativa WebSphere {#enable-websphere-administrative-security}
 
-1. Accedere alla console di amministrazione di WebSphere.
+1. Accedete alla console di amministrazione di WebSphere.
 1. Nella struttura di navigazione, andate a **Security** > **Global Security**
 1. Selezionate **Abilita protezione** amministrativa.
 1. Deselezionate **Abilita protezione** applicazione e **Usa protezione** Java 2.
