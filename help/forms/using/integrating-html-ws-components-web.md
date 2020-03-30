@@ -1,8 +1,8 @@
 ---
 title: Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web
 seo-title: Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni Web
-description: Come riutilizzare i componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
-seo-description: Come riutilizzare i componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
+description: Come riutilizzare i componenti dell'area di lavoro di AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
+seo-description: Come riutilizzare i componenti dell'area di lavoro di AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 È possibile utilizzare [i componenti](/help/forms/using/description-reusable-components.md) dell&#39;area di lavoro AEM Forms in una propria applicazione Web. L&#39;implementazione di esempio seguente utilizza i componenti di un pacchetto di sviluppo dell&#39;area di lavoro AEM Forms installato in un&#39;istanza CRX™ per creare un&#39;applicazione Web. Personalizza la soluzione indicata di seguito in base alle tue esigenze specifiche. L’implementazione di esempio riutilizza `UserInfo``FilterList`e `TaskList`componenti all’interno di un portale Web.
 
-1. Accedere all&#39;ambiente CRXDE Lite all&#39;indirizzo `https://[server]:[port]/lc/crx/de/`. Accertatevi di disporre di un pacchetto di sviluppo del percorso di lavoro AEM Forms installato.
+1. Accedere all&#39;ambiente CRXDE Lite all&#39;indirizzo `https://'[server]:[port]'/lc/crx/de/`. Accertatevi di disporre di un pacchetto di sviluppo del percorso di lavoro AEM Forms installato.
 1. Creare un percorso `/apps/sampleApplication/wscomponents`.
 1. Copiate css, immagini, js/libs, js/runtime e js/registry.js
 
@@ -27,7 +27,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * a `/apps/sampleApplication/wscomponents`.
 
 1. Create un file dominio.js all&#39;interno della cartella /apps/sampleApplication/wscomponents/js. Copiate il codice da /libs/ws/js/main.js a download.js.
-1. In demomain.js, rimuovere il codice per inizializzare Router e aggiungere il codice seguente:
+1. In demomain.js, rimuovi il codice per inizializzare Router e aggiungi il seguente codice:
 
    ```
    require(['initializer','runtime/util/usersession'],
@@ -40,7 +40,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
        });
    ```
 
-1. Create un nodo in /content per nome `sampleApplication` e tipo `nt:unstructured`. Nelle proprietà di questo nodo aggiungere `sling:resourceType` di tipo Stringa e valore `sampleApplication`. Nell&#39;elenco Controllo accesso di questo nodo aggiungere una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read. Inoltre, nell&#39;elenco Controllo accesso di `/apps/sampleApplication` aggiungere una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read.
+1. Create un nodo in /content per nome `sampleApplication` e tipo `nt:unstructured`. Nelle proprietà di questo nodo aggiungere `sling:resourceType` di tipo Stringa e valore `sampleApplication`. Nell&#39;elenco Controllo accesso di questo nodo aggiungere una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read. Inoltre, nell&#39;elenco di controllo degli accessi `/apps/sampleApplication` aggiungete una voce per `PERM_WORKSPACE_USER` consentire i privilegi jcr:read.
 1. In `/apps/sampleApplication/wscomponents/js/registry.js` percorsi di aggiornamento da `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` per i valori dei modelli.
 1. Nel file JSP della home page del portale in `/apps/sampleApplication/GET.jsp`, aggiungi il codice seguente per includere i componenti richiesti all&#39;interno del portale.
 
