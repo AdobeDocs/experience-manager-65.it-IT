@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 ## Architettura {#architecture}
 
-La funzionalità dei moduli HTML5 è implementata come pacchetto all’interno dell’istanza AEM incorporata ed è esposta come punto finale REST su HTTP/S utilizzando RESTful [Apache Sling Architecture](https://sling.apache.org/).
+La funzionalità dei moduli HTML5 è distribuita come pacchetto all’interno dell’istanza AEM incorporata ed è esposta come punto finale REST su HTTP/S utilizzando RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
 `<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` Architettura [ - ![01-aem-forms-](assets/01-aem-forms-architecture.jpg)*Visualizza dimensioni intere *](javascript:void(0).md)
 
@@ -32,7 +32,7 @@ La funzionalità dei moduli HTML5 è implementata come pacchetto all’interno d
 
 Per informazioni dettagliate sull&#39;endpoint REST e sui parametri di richiesta supportati, consultate Modello [per moduli di](/help/forms/using/rendering-form-template.md)rendering.
 
-Quando un utente effettua una richiesta da un dispositivo client come un browser iOS o Android, Sling risolve prima il nodo del profilo in base all&#39;URL della richiesta. Da questo nodo di profilo si legge **sling:resourceSuperType** e **sling:resourceType** per determinare tutti gli script disponibili che possono gestire questa richiesta di rendering del modulo. Quindi utilizza i selettori di richieste Sling insieme al metodo di richiesta per identificare lo script più adatto per gestire questa richiesta. Una volta che la richiesta raggiunge un JSP di rendering del profilo, il JSP chiama il servizio Forms OSGi.
+Quando un utente effettua una richiesta da un dispositivo client come un browser iOS o Android, Sling risolve prima il nodo del profilo in base all&#39;URL della richiesta. Da questo nodo di profilo si legge **sling:resourceSuperType** e **sling:resourceType** per determinare tutti gli script disponibili che possono gestire questa richiesta di rendering del modulo. Quindi utilizza i selettori di richieste Sling insieme al metodo di richiesta per identificare lo script più adatto per gestire questa richiesta. Una volta che la richiesta raggiunge un JSP per il rendering dei profili, il JSP chiama il servizio Forms OSGi.
 
 Per ulteriori dettagli sulla risoluzione degli script Sling, consultate [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) o [Apache Sling Url decomposizione](https://sling.apache.org/site/url-decomposition.html).
 
@@ -110,7 +110,7 @@ I moduli HTML5 eseguono il caching in memoria utilizzando la strategia LRU. Se l
 
 Il servizio di configurazione consente di sintonizzare i parametri di configurazione e le impostazioni della cache per i moduli HTML5.
 
-Per aggiornare queste impostazioni, accedete all&#39;Admin Console di CQ Felix (disponibile all&#39;indirizzo https://&lt;[server]:[port]/system/console/configMgr), cercate e selezionate Configurazione moduli mobili.
+Per aggiornare queste impostazioni, accedete all&#39;Admin Console di CQ Felix (disponibile all&#39;indirizzo https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), cercate e selezionate Configurazione moduli mobili.
 
 È possibile configurare la dimensione della cache o disabilitare la cache utilizzando il servizio di configurazione. Potete inoltre abilitare il debug utilizzando il parametro Opzioni di debug. Per ulteriori informazioni sul debug dei moduli, vedere [Debug di moduli](/help/forms/using/debug.md)HTML5.
 
@@ -136,7 +136,7 @@ Per ulteriori dettagli, vedere l&#39;articolo [Form Bridge](/help/forms/using/fo
 
 Il layout e l’aspetto visivo dei moduli HTML5 si basano sulle funzioni SVG 1.1, jQuery, BackBone e CSS3. L&#39;aspetto iniziale di un modulo viene generato e memorizzato nella cache del server. Il tweaking di tale layout iniziale e di eventuali ulteriori modifiche incrementali al layout del modulo vengono gestiti sul client. A tal fine, il pacchetto Runtime contiene un motore di layout scritto in JavaScript e basato su jQuery/Backbone. Questo motore gestisce tutti i comportamenti dinamici, come Aggiungi/Rimuovi istanze ripetibili, layout oggetto espandibile. Questo modulo di gestione del layout esegue il rendering di un modulo una pagina alla volta. Inizialmente un utente visualizza solo una pagina e la barra di scorrimento orizzontale rappresenta solo la prima pagina. Tuttavia, quando un utente scorre verso il basso, la pagina successiva avvia il rendering. Questa rappresentazione pagina per pagina riduce il tempo necessario per eseguire il rendering della prima pagina in un browser e migliora le prestazioni percepite del modulo. Questo motore/libreria fa parte di CQ Client Lib con il nome della categoria **xfaforms.profile**.
 
-Il motore di layout contiene anche un set di widget utilizzati per acquisire il valore dei campi modulo da un utente. Questi widget sono modellati come Widget [interfaccia utente](https://api.jqueryui.com/jQuery.widget/) jQuery che implementano alcuni contratti aggiuntivi per lavorare senza problemi con il motore di layout.
+Il motore di layout contiene anche un set di widget utilizzati per acquisire il valore dei campi del modulo da un utente. Questi widget sono modellati come Widget [interfaccia utente](https://api.jqueryui.com/jQuery.widget/) jQuery che implementano alcuni contratti aggiuntivi per lavorare senza problemi con il motore di layout.
 
 Per ulteriori dettagli sui widget e i contratti corrispondenti, vedere Widget [personalizzati per i moduli](/help/forms/using/introduction-widgets.md)HTML5.
 
