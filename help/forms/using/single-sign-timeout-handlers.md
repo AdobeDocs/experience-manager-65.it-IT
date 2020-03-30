@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ L&#39;area di lavoro AEM Forms è abilitata per SSO. Se un utente ha eseguito l&
 
 Il timeout sessione per un utente può essere configurato nella console di amministrazione.
 
-Per impostare il timeout, accedete a `https://[server]:[port]/adminui`, selezionate **Impostazioni > Gestione utente > Configurazione > Configura attributi** di sistema avanzati ed effettuate le impostazioni desiderate.
+Per impostare il timeout, accedete a `https://'[server]:[port]'/adminui`, selezionate **Impostazioni > Gestione utente > Configurazione > Configura attributi** di sistema avanzati ed effettuate le impostazioni desiderate.
 
 In AEM Forms il timeout dell&#39;area di lavoro è gestito come segue:
 
