@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -49,7 +49,7 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizz
 
 ## Avvio rapido (modalità SOAP): Creazione di un criterio tramite l&#39;API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio denominato *Consenti copia*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *criteri* globale. Questo set di criteri esiste per impostazione predefinita. Consultate [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).
+Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio denominato *Consenti copia*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Questo set di criteri esiste per impostazione predefinita. Consultate [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).
 
 ```as3
  /*
@@ -116,7 +116,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo crite
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -236,7 +236,7 @@ L&#39;esempio di codice Java seguente modifica un criterio denominato *Consenti 
            {
                  //Set connection properties required to invoke AEM Forms using SOAP mode
                  Properties connectionProps = new Properties();
-                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -342,7 +342,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eliminato un criterio
        {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -371,7 +371,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eliminato un criterio
 
 ## Avvio rapido (modalità SOAP): Applicazione di un criterio a un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento PDF denominato *Loan.pdf*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *criteri* globale. Il documento protetto tramite criterio viene salvato come file PDF denominato *PolicyProtectedLoanDoc.pdf. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento PDF denominato *Loan.pdf*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file PDF denominato *PolicyProtectedLoanDoc.pdf. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
 ```as3
  /*
@@ -431,7 +431,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
       {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -546,7 +546,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento PD
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -584,7 +584,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento PD
 
 ## Avvio rapido (modalità SOAP): Revoca di un documento tramite l&#39;API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-Il seguente esempio di codice Java revoca un documento protetto tramite criterio denominato *PolicyProtectedLoanDoc.pdf*. Un documento PDF rivisto si trova nel seguente percorso URL `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (Vedere [Revoca dell&#39;accesso ai documenti](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+Il seguente esempio di codice Java revoca un documento protetto tramite criterio denominato *PolicyProtectedLoanDoc.pdf*. Un documento PDF rivisto si trova nel seguente percorso URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Vedere [Revoca dell&#39;accesso ai documenti](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
 ```as3
  /*
@@ -656,7 +656,7 @@ Il seguente esempio di codice Java revoca un documento protetto tramite criterio
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -682,7 +682,7 @@ Il seguente esempio di codice Java revoca un documento protetto tramite criterio
          LicenseManager licManager = rightsClient.getLicenseManager();
  
          //Specify the URL to where an updated document is located
-         URL myURL = new URL("https://[server]:[port]/RightsManagement/UpdatedLoan.pdf");
+         URL myURL = new URL("https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf");
  
          //Revoke the policy-protected PDF document
          licManager.revokeLicense(revokeLic, License.DOCUMENT_REVISED, myURL);
@@ -698,7 +698,7 @@ Il seguente esempio di codice Java revoca un documento protetto tramite criterio
 
 ## Avvio rapido (modalità SOAP): Verifica dei documenti PDF protetti tramite criterio tramite l&#39;API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-L&#39;esempio di codice Java riportato di seguito esamina un documento PDF protetto tramite criterio denominato *PolicyProtectedLoanDoc.* pdf. (Vedere [Ispezione dei documenti](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protetti tramite criterio.)
+Nell&#39;esempio di codice Java riportato di seguito viene analizzato un documento PDF protetto tramite criterio denominato *PolicyProtectedLoanDoc.* pdf. (Vedere [Ispezione dei documenti](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protetti tramite criterio.)
 
 ```as3
  /*
@@ -769,7 +769,7 @@ L&#39;esempio di codice Java riportato di seguito esamina un documento PDF prote
            {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -883,7 +883,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ripristinato l&#39;ac
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -990,7 +990,7 @@ public class PDFWatermarksSOAPMode {
             Properties connectionProps = new Properties();
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT,
-                    "https://[server]:[port]/");
+                    "https://'[server]:[port]'/");
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,
                     ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -1055,7 +1055,7 @@ public class PDFWatermarksSOAPMode {
 
 ## Avvio rapido (modalità SOAP): Creazione di una filigrana di testo tramite l&#39;API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana di testo denominata Filigrana di testo *campione*. Questa filigrana contiene un singolo elemento.
+Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana di testo denominata Filigrana di testo *di esempio*. Questa filigrana contiene un singolo elemento.
 
 ```as3
 /*
@@ -1120,7 +1120,7 @@ public class TextWatermarks {
             Properties connectionProps = new Properties();
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT,
-                    "https://[server]:[port]/");
+                    "https://'[server]:[port]'/");
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,
                     ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -1265,7 +1265,7 @@ public class ModifyWatermarks {
             Properties connectionProps = new Properties();
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT,
-                    "https://[server]:[port]");
+                    "https://'[server]:[port]'");
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,
                     ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -1378,7 +1378,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene modificata una filigr
          {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1481,7 +1481,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ricercato l&#39;event
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1527,7 +1527,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ricercato l&#39;event
 
 ## Avvio rapido (SOAP): Applicazione di un criterio a un documento Word tramite l&#39;API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento Word denominato *Loan.doc*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *criteri* globale. Il documento protetto tramite criterio viene salvato come file DOC denominato *PolicyProtectedLoanDoc.doc. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento Word denominato *Loan.doc*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file DOC denominato *PolicyProtectedLoanDoc.doc. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
 ```as3
  /*
@@ -1595,7 +1595,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
       {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1711,7 +1711,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento di
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1750,7 +1750,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento di
 
 ## Avvio rapido (modalità SOAP): Creazione di un criterio astratto tramite l&#39;API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio astratto denominato AllowCopy. Il set al quale viene aggiunto il criterio è denominato Set criteri globale. Questo set di criteri esiste per impostazione predefinita. Consultate Creazione di criteri.
+Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio astratto denominato AllowCopy. Il set di criteri a cui viene aggiunto il criterio è denominato Set di criteri globale. Questo set di criteri esiste per impostazione predefinita. Consultate Creazione di criteri.
 
 ```as3
 /*
@@ -1811,7 +1811,7 @@ public class CreateAbstractPolicySoap {
 
         //Set connection properties required to invoke forms server using SOAP mode
         Properties connectionProps = new Properties();
-        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1927,7 +1927,7 @@ public class ModifyingAbstractPolicySoap {
 
         //Set connection properties required to invoke forms server using SOAP mode
         Properties connectionProps = new Properties();
-        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2025,7 +2025,7 @@ public class DeleteAbstractPolicySoap {
 
         //Set connection properties required to invoke AEM Forms using SOAP mode
         Properties connectionProps = new Properties();
-        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2116,7 +2116,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 
             //Set connection properties required to invoke forms server using SOAP mode
             Properties connectionProps = new Properties();
-            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2159,7 +2159,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Protezione di un PDF nel flusso di lavoro istruzioni per un nuovo utente tramite l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Avvio rapido (modalità SOAP): Proteggere un PDF nel flusso di lavoro istruzioni per un nuovo utente, utilizzando l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 Il seguente esempio di codice Java illustra come proteggere un documento in Flusso di lavoro istruzioni. Si tratta di un processo in due fasi:
 
@@ -2233,7 +2233,7 @@ public class protectStatementWorkFlowSoap {
 
             //Set connection properties required to invoke forms server using SOAP mode
             Properties connectionProps = new Properties();
-            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
