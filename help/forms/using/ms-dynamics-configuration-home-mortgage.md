@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -38,12 +38,12 @@ Prima di iniziare a configurare Dynamics 365, accertati di disporre di:
 
 1. Nell’istanza di creazione, passate alla pagina seguente:
 
-   https://[server]:[porta]/editor.html/content/we-finance/global/en/loan-landing-page.html
+   `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Scorri verso il basso fino al calcolatore ipotecario principale.
 1. Evidenziare il pannello della colonna destra (calcolatore) e toccare per visualizzare il menu a comparsa. Nel menu a comparsa, toccate Configura. Viene visualizzata la finestra di dialogo Modifica contenitore AEM Forms.
 
-   ![calculateConfigurepanel](assets/calculatorconfigurepanel.png)
+   ![calcolatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
 1. Nella finestra di dialogo Modifica contenitore AEM Forms, individuate il percorso della risorsa e selezionate home-mutuo-calculate nel percorso seguente, quindi toccate **Conferma**:
 
@@ -62,15 +62,15 @@ Prima di iniziare a configurare Dynamics 365, accertati di disporre di:
 
    1. Scaricate il pacchetto da:
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importa il pacchetto della soluzione nell&#39;istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, accedete a **Settings** (Impostazioni) > **Solutions** (Soluzioni) e toccate **Import (Importa)**.
+   1. Importa il pacchetto della soluzione nell&#39;istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, accedete a **Settings** (Impostazioni) > **Solutions** (Soluzioni) **e toccate** Import (Importa).
 
 1. Per impostare i dettagli di contatto utente utilizzati nel refsite, importate il pacchetto Sarah Rose Contact.CSV nell&#39;istanza di Microsoft® Dynamics:
 
    1. Scaricate il pacchetto da:
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importa il pacchetto nella tua istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, accedi a **Vendite** > **Contatti** e tocca **Importa dati**.
+   1. Importa il pacchetto nella tua istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, accedete a **Vendite** > **Contatti** e toccate **Importa dati**.
 
