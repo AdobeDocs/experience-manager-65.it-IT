@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ L&#39;area di lavoro Moduli AEM consente di visualizzare una pagina Web di vostr
 1. Configurare il campo URL riepilogo attività. È possibile specificare un valore letterale, un modello, una variabile o un&#39;espressione XPath.
 1. Di seguito è riportato un esempio di visualizzazione delle informazioni nella pagina Riepilogo attività.
 
-   * Accedete all&#39;ambiente CRXDE Lite all&#39;indirizzo `https://[server]:[port]/lc/crx/de`.
+   * Accedete all&#39;ambiente CRXDE Lite all&#39;indirizzo `https://'[server]:[port]'/lc/crx/de`.
    * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
    * `Create a folder`**SampleSummary **in`/apps`. Nell’elenco di controllo degli accessi di`/apps/SampleSummary`, aggiungere una voce per l’`PERM_WORKSPACE_USER`autorizzazione`jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
@@ -48,8 +48,8 @@ L&#39;area di lavoro Moduli AEM consente di visualizzare una pagina Web di vostr
    </html>
    ```
 
-   * Impostare il valore dell&#39;URL di riepilogo attività come `/lc/content/SampleSummary.html` nel passaggio Assegna attività.
-   * Quando l&#39;attività associata a questo passaggio Assegna attività viene aperta nell&#39;area di lavoro AEM Forms, viene eseguito il rendering `html.esp` `/apps/SampleSummary` in nel riquadro di riepilogo delle attività.
+   * Impostate il valore dell&#39;URL di riepilogo attività come `/lc/content/SampleSummary.html` nel passaggio Assegna attività.
+   * Quando l&#39;attività associata a questo passaggio Assegna attività viene aperta nell&#39;area di lavoro Moduli AEM, viene eseguito il rendering `html.esp` in `/apps/SampleSummary` nel riquadro di riepilogo delle attività.
 
 
 [Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
