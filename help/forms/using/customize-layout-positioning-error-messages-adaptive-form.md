@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -50,7 +50,7 @@ Creare un tema utilizzando l&#39;Editor tema per personalizzare il layout di tut
 
 ## Creare un layout di campo personalizzato {#create-a-custom-field-layout}
 
-1. Aprire CRXDE lite. L’URL predefinito è https://[Server]:[Port]/crx/de.
+1. Aprire CRXDE lite. L’URL predefinito è https://&#39;[server]:[port]&#39;/crx/de.
 1. Copiate un layout di campo dal nodo /libs/fd/af/layouts/field (ad esempio, defaultFieldLayout) al nodo /apps (ad esempio, /apps/af-field-layout).
 1. Rinominare il nodo copiato e il file defaultFieldLayout.jsp. Ad esempio, errorOnRight.jsp.
 
