@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,16 +25,16 @@ Dopo aver installato la patch, aprite l&#39;area di lavoro AEM Forms. Se si veri
 
 Durante l&#39;installazione del pacchetto, in caso di errore, `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`eseguite i seguenti passaggi:
 
-1. Accedete a CRX DE lite. L&#39;URL predefinito è `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Accedete a CRX DE lite. L&#39;URL predefinito è `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimina il seguente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Andate a Gestione pacchetti. L’URL predefinito è `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Andate a Gestione pacchetti. L’URL predefinito è `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Cercate e installate il `adobe-lc-workspace-pkg-[version].zip` pacchetto.
 1. Riavviate il server applicazione.
 
-## Registrazione dell&#39;area di lavoro AEM Forms {#aem-forms-workspace-nbsp-logging}
+## Registrazione dell&#39;area di lavoro di AEM Forms {#aem-forms-workspace-nbsp-logging}
 
 Potete generare file di registro a vari livelli per consentire la risoluzione ottimale degli errori. Ad esempio, in un’applicazione complessa, l’accesso a livello di componente facilita il debug e la risoluzione dei problemi relativi a componenti specifici.
 
@@ -155,13 +155,13 @@ Nell’area di lavoro AEM Forms:
 
 * **Debug in IE**: Per eseguire il debug dell&#39;area di lavoro Moduli AEM in IE, vedi: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Debug in Chrome**: Per aprire il debugger in Chrome, utilizzate la scelta rapida: Ctrl+Maiusc+I.Per ulteriori informazioni, vedi: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Debug in Chrome**: Per aprire il debugger in Chrome, utilizzate la scelta rapida: Ctrl+Maiusc+I. Per ulteriori informazioni, vedi: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Debug in Firefox**: Diversi componenti aggiuntivi sono disponibili per il debug di script e stili in Firefox. Ad esempio, Firebug è una di queste utilità di debug ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Domande frequenti {#faqs}
 
-1. Il modulo PDF non viene rappresentato o inviato in Google Chrome.
+1. Il modulo PDF non viene sottoposto a rendering o inviato in Google Chrome.
 
    1. Installate il plug-in Adobe® Reader®.
    1. In Chrome, aprite chrome://plugins per visualizzare i plug-in disponibili.
@@ -191,6 +191,6 @@ Nell’area di lavoro AEM Forms:
 
 1. Nei moduli HTML, che utilizzano le proprietà di processo nella relativa struttura, quando viene eseguito il rendering nell&#39;area di lavoro Moduli AEM, viene visualizzato il pulsante Invia all&#39;interno del modulo.
 
-   Durante la progettazione dei moduli, quando si utilizza Proprietà processo, all&#39;interno del modulo viene aggiunto un pulsante Invia. Durante il rendering come PDF nell’area di lavoro AEM Forms, il pulsante Invia non è visibile all’utente finale. Tuttavia, quando si esegue il rendering come modulo HTML nell&#39;area di lavoro AEM Forms, all&#39;utente finale è visibile il pulsante Invia. Se si fa clic sul pulsante Invia all&#39;interno del modulo, non viene avviata alcuna azione. Fai clic sul pulsante Invia nella parte inferiore dell’area di lavoro Moduli AEM, all’esterno del modulo, per completare l’attività.
+   Durante la progettazione dei moduli, quando si utilizza Proprietà processo, all&#39;interno del modulo viene aggiunto un pulsante Invia. Durante il rendering come PDF nell’area di lavoro Moduli AEM, il pulsante Invia non è visibile all’utente finale. Tuttavia, quando si esegue il rendering come modulo HTML nell&#39;area di lavoro Moduli AEM, all&#39;utente finale è visibile il pulsante Invia. Se si fa clic sul pulsante Invia all&#39;interno del modulo, non viene avviata alcuna azione. Fai clic sul pulsante Invia nella parte inferiore dell’area di lavoro Moduli AEM, all’esterno del modulo, per completare l’attività.
 
 [Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
