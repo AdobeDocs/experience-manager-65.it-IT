@@ -8,20 +8,20 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Utilizzare i metadati in una notifica e-mail {#use-metadata-in-an-email-notification}
 
-È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o gruppo. Quando un&#39;attività viene assegnata a un utente o gruppo, viene inviata una notifica e-mail all&#39;utente definito o a ciascun membro del gruppo definito. Una tipica notifica [](../../forms/using/use-custom-email-template-assign-task-step.md) e-mail contiene il collegamento dell’attività assegnata e le informazioni relative all’attività.
+È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un&#39;attività viene assegnata a un utente o gruppo, viene inviata una notifica e-mail all&#39;utente definito o a ciascun membro del gruppo definito. Una tipica notifica [](../../forms/using/use-custom-email-template-assign-task-step.md) e-mail contiene il collegamento dell’attività assegnata e le informazioni relative all’attività.
 
 Potete utilizzare i metadati in un modello e-mail per compilare dinamicamente le informazioni in una notifica e-mail. Ad esempio, il valore del titolo, della descrizione, della data di scadenza, della priorità, del flusso di lavoro e dell’ultima data nella seguente notifica e-mail viene selezionato dinamicamente in fase di esecuzione (quando viene generata una notifica e-mail).
 
 ![Modello e-mail predefinito](assets/default_email_template_metadata_new.png)
 
-I metadati sono memorizzati in coppie chiave-valore. Potete specificare la chiave nel modello e-mail e sostituire la chiave con un valore in fase di esecuzione (quando viene generata una notifica e-mail). Ad esempio, nell&#39;esempio di codice seguente, &quot;$ {workitem_title} &quot; è una chiave. Viene sostituito con il valore &quot;Loan-Request&quot; in fase di esecuzione.
+I metadati sono memorizzati in coppie chiave-valore. Potete specificare la chiave nel modello e-mail e la chiave viene sostituita con un valore in fase di esecuzione (quando viene generata una notifica e-mail). Ad esempio, nell&#39;esempio di codice seguente, &quot;$ {workitem_title} &quot; è una chiave. Viene sostituito con il valore &quot;Loan-Request&quot; in fase di esecuzione.
 
 ```xml
 subject=Task Assigned - ${workitem_title}
@@ -155,7 +155,7 @@ Potete inoltre utilizzare metadati personalizzati in una notifica e-mail. I meta
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) è un linguaggio di script. Viene utilizzato per applicazioni di script sul lato client e server. Effettuate le seguenti operazioni per utilizzare ECMAScript per aggiungere metadati personalizzati a un modello e-mail:
 
-1. Accedete a CRX DE con un account amministrativo. L’URL è https://[server]:[porta]/crx/de/index.jsp
+1. Accedete a CRX DE con un account amministrativo. L’URL è https://&#39;[server]:[porta]&#39;/crx/de/index.jsp
 
 1. Andate a /apps/fd/dashboard/scripts/metadataScript. Create un file con estensione .ecma. Ad esempio, usermetadata.ecma
 
@@ -184,25 +184,25 @@ Potete inoltre utilizzare metadati personalizzati in una notifica e-mail. I meta
    Se non si specifica il titolo, il campo Metadati personalizzati visualizza il percorso completo del file ECMAScript. Per specificare un titolo significativo per lo script, effettuare le operazioni seguenti:
 
    1. Espandete il nodo script, fate clic con il pulsante destro del mouse sul nodo **[!UICONTROL jcr:content]** e fate clic su **[!UICONTROL Mixins]**.
-   1. Digitare mix:title nella finestra di dialogo Modifica mixin e fare clic su **+**.
-   1. Aggiungete una proprietà con i seguenti valori.
+   1. Type mix:title in Edit Mixins dialog and click **+**.
+   1. Add a property with the following values.
 
       | Nome | jcr:title |
       |---|---|
       | Tipo | Stringa |
-      | Valore | Specificate il titolo dello script. Ad esempio, metadati personalizzati per il titolare della polizza. Il valore specificato viene visualizzato nel passaggio dell&#39;attività di assegnazione. |
+      | Valore | Specify the title of the script. Ad esempio, metadati personalizzati per il titolare della polizza. The specified value is displayed in the assign task step. |
 
-### Utilizzare un bundle OSGi e un&#39;interfaccia Java per aggiungere metadati personalizzati {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Use an OSGi bundle and Java interface to add custom metadata {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Potete usare l’interfaccia Java WorkitemUserMetadataService per aggiungere metadati personalizzati per i modelli e-mail. Potete creare un bundle OSGi che utilizza l’interfaccia Java WorkitemUserMetadataService e distribuirlo nel server AEM Forms. Rende i metadati disponibili per la selezione nel passaggio Assegna attività.
+You can use the WorkitemUserMetadataService Java interface to add custom metadata for email templates. You can create an OSGi bundle that uses the WorkitemUserMetadataService Java interface and deploy it to the AEM Forms server. Rende i metadati disponibili per la selezione nel passaggio Assegna attività.
 
-Per creare un bundle OSGi con l’interfaccia Java, aggiungete i file JAR [Client](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms e Jar [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) granite come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente fornisce i passaggi per utilizzare Eclipse per creare un bundle OSGi:
+Per creare un bundle OSGi con l’interfaccia Java, aggiungete i file JAR [Client](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms e Jar [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) granite come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. The following procedure provides steps to use Eclipse to create an OSGi bundle:
 
-1. Aprite Eclipse IDE. Selezionare File > Nuovo progetto.
+1. Open Eclipse IDE. Navigate to File > New Project.
 
-1. Nella schermata Seleziona una procedura guidata, selezionate Progetto Paradiso e fate clic su Avanti.
+1. On the Select a wizard screen, select Maven Project, and click Next.
 
-1. Nel progetto New Maven, mantenete le impostazioni predefinite e fate clic su Next (Avanti). Selezionate un archetipo e fate clic su Avanti. Ad esempio, maven-archetype-quickstart. Specificate ID gruppo, ID evento, versione e pacchetto per il progetto, quindi fate clic su Fine. Il progetto viene creato.
+1. On the New Maven project, keep defaults, and click Next. Select an archetype and click Next. Ad esempio, maven-archetype-quickstart. Specificate ID gruppo, ID evento, versione e pacchetto per il progetto, quindi fate clic su Fine. Il progetto viene creato.
 
 1. Aprite il file pom.xml per la modifica e sostituite tutto il contenuto del file con quanto segue:
 
