@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 translation-type: tm+mt
-source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,13 +25,13 @@ Questa sezione descrive i passaggi necessari per recuperare i dati dei moduli AE
 
 I moduli AEM devono essere ripristinati in modo affidabile dai seguenti errori:
 
-**** Errore disco: Il supporto di backup più recente è necessario per recuperare il contenuto del database.
+**Errore disco:** Il supporto di backup più recente è necessario per recuperare il contenuto del database.
 
-**** Corruzione dei dati: I file system non registrano le transazioni passate e i sistemi potrebbero sovrascrivere accidentalmente i dati di processo richiesti.
+**Corruzione dei dati:** I file system non registrano le transazioni passate e i sistemi potrebbero sovrascrivere accidentalmente i dati di processo richiesti.
 
-**** Errore utente: Il recupero è limitato ai dati resi disponibili dal database. Se i dati sono stati memorizzati e sono disponibili, il ripristino è semplificato.
+**Errore utente:** Il recupero è limitato ai dati resi disponibili dal database. Se i dati sono stati memorizzati e sono disponibili, il ripristino è semplificato.
 
-**** Uscita di alimentazione, arresto anomalo del sistema: Le API del file system spesso non sono progettate o utilizzate in modo affidabile per evitare errori di sistema imprevisti. Se si verifica un&#39;interruzione di corrente o di sistema, è più probabile che il contenuto del documento memorizzato nel database sia aggiornato rispetto al contenuto memorizzato in un file system.
+**Uscita di alimentazione, arresto anomalo del sistema:** Le API del file system spesso non sono progettate o utilizzate in modo affidabile per evitare errori di sistema imprevisti. Se si verifica un&#39;interruzione di corrente o di sistema, è più probabile che il contenuto del documento memorizzato nel database sia aggiornato rispetto al contenuto memorizzato in un file system.
 
 Se si utilizza la modalità di backup a rotazione, si è ancora in modalità di backup dopo il ripristino. Se si utilizza la modalità di backup snapshot, non si è in modalità di backup dopo il ripristino.
 
@@ -43,11 +43,11 @@ Durante il ripristino da backup a un nuovo sistema, le seguenti configurazioni p
 
 >[!NOTE]
 >
->Il backup della directory principale dell&#39;archivio contenuti deve essere ripristinato nel percorso della directory così come è stato impostato durante la configurazione di Content Services.
+>Il backup della directory principale dell&#39;archivio dei contenuti deve essere ripristinato nel percorso della directory così come è stato impostato durante la configurazione di Content Services.
 
 Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del cluster funzionano correttamente, eseguire la procedura di ripristino a nodo singolo del cluster.
 
-## Recupero dei dati dei moduli AEM {#recover-the-aem-forms-data}
+## Recuperare i dati dei moduli AEM {#recover-the-aem-forms-data}
 
 1. Arrestate i servizi e il server applicazioni AEM se eseguiti.
 1. Se necessario, ricreate il sistema fisico da un&#39;immagine del sistema. Ad esempio, questo passaggio potrebbe non essere necessario se il motivo del ripristino è un server di database difettoso.
@@ -67,17 +67,17 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
    >
    >Se la directory /restore esiste già, eseguitene il backup ed eliminatela prima di rinominare la directory /backup che contiene i dati più recenti.
 
-   * (JBoss) Rinominare `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` in:
+   * (JBoss) Rinominare `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` in:
 
-      `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
+      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) Rinomina `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` in:
+   * (WebLogic) Rinomina `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` in:
 
-      `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
+      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Rinomina `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` in:
+   * (WebSphere) Rinomina `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` in:
 
-      `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
+      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Recuperare la directory principale di Content Storage eliminando innanzitutto il contenuto della directory principale di Content Storage nell&#39;installazione esistente dei moduli AEM e recuperando il contenuto seguendo le operazioni per gli ambienti standalone o cluster:
 
@@ -85,13 +85,13 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
    >
    >Il backup della directory principale di Content Storage deve essere ripristinato nel percorso della directory principale di Content Storage, così come è stato impostato durante la configurazione di Content Services (obsoleto).
 
-   **** Standalone: Durante il processo di ripristino, ripristinare tutte le directory di cui è stato eseguito il backup. Quando queste directory vengono ripristinate, se la directory /backup-lucene-index è presente, rinominatela in /lucene-indexes. In caso contrario, la directory lucene-index dovrebbe già esistere e non è richiesta alcuna azione.
+   **Standalone:** Durante il processo di ripristino, ripristinare tutte le directory di cui è stato eseguito il backup. Quando queste directory vengono ripristinate, se la directory /backup-lucene-index è presente, rinominatela in /lucene-indexes. In caso contrario, la directory lucene-index dovrebbe già esistere e non è richiesta alcuna azione.
 
-   **** Cluster: Durante il processo di ripristino, ripristinare tutte le directory di cui è stato eseguito il backup. Per ripristinare la directory radice indice, eseguire i seguenti passaggi su ciascun nodo del cluster:
+   **Cluster:** Durante il processo di ripristino, ripristinare tutte le directory di cui è stato eseguito il backup. Per ripristinare la directory radice dell&#39;indice, eseguire i seguenti passaggi su ciascun nodo del cluster:
 
-   * Eliminate tutto il contenuto nella directory radice indice.
+   * Eliminate tutto il contenuto nella directory radice dell&#39;indice.
    * Se la directory /backup-lucene-index è presente, copiate il contenuto della directory *radice di* Content Storage/backup-lucene-index nella directory radice dell&#39;indice ed eliminate la directory *radice di* Content Storage/backup-lucene-index.
-   * Se la directory /lucene-indexes è presente, copiate il contenuto della directory *radice di* Content Storage/lucene-index nella directory radice dell&#39;indice.
+   * Se la directory /lucene-indexes è presente, copiate il contenuto della directory *radice di* Content Storage/lucene-indexes nella directory radice dell&#39;indice.
 
 1. Ripristinare/ripristinare l&#39;archivio CRX.
 
