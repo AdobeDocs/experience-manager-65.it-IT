@@ -3,7 +3,7 @@ title: Formati supportati per le risorse
 description: Elenco dei formati di file supportati da AEM Assets e da Dynamic Media e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
+source-git-commit: 593c1e1954a1c8e0355ede9889caed05ff72f3f9
 
 ---
 
@@ -20,7 +20,7 @@ Utilizzate la legenda per comprendere il livello di supporto.
 |:---:|---|
 | ✓ | Supportato |
 | * | Supportato con le funzioni del componente aggiuntivo |
-| - | Non applicabile |
+| − | Non applicabile |
 
 ## Formati di immagini raster supportati in AEM Assets {#supported-raster-image-formats}
 
@@ -35,12 +35,12 @@ Utilizzate la legenda per comprendere il livello di supporto.
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
+† L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
 ## Formati di immagini raster supportati in Contenuti multimediali dinamici (#supported-raster-image-format-dynamic-media)
 
@@ -51,11 +51,11 @@ Utilizzate la legenda per comprendere il livello di supporto.
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **†** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-**¹** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
+**†** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
 Oltre alle informazioni di cui sopra, considerate quanto segue:
 
@@ -130,7 +130,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Formati di documento supportati in Contenuti multimediali dinamici (##supported-document-format-dynamic-media)
+## Formati di documento supportati in Contenuti multimediali dinamici (#supported-document-format-dynamic-media)
 
 | Formato | Carica<br> (formato di input) | Creare<br> un predefinito<br> per immagini<br> (formato di output) | Anteprima<br> rappresentazione dinamica<br> | Distribuzione<br> di rappresentazioni dinamiche<br> | Download<br> della rappresentazione dinamica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -150,16 +150,16 @@ Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 
 |  | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione delle miniature | Transcodifica FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -260,7 +260,7 @@ Consultate anche [Abilitazione del supporto](/help/sites-administering/scene7.md
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
