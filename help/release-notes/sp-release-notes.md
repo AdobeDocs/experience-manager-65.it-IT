@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
+source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
 
 ---
 
@@ -193,6 +193,13 @@ Per un elenco completo delle funzioni, degli elementi di rilievo e delle funzion
 * La configurazione cloud di destinazione non riesce. Errore: richiesta mbox di recupero (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
+
+* Gli utenti di Brand Portal non sono in grado di pubblicare le risorse delle cartelle dei contributi in Risorse AEM al momento dell’aggiornamento ad Adobe I/O su AEM 6.5.4 (CQDOC-15655).
+
+   Questo problema verrà risolto nel service pack successivo AEM 6.5.5.
+
+   Per una correzione immediata su AEM 6.5.4, si consiglia di [scaricare l’hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e installarlo nell’istanza di creazione.
+
 
 * I valori a discesa dello schema di metadati non sono visibili nelle proprietà delle risorse (CQ-4283287).
 
