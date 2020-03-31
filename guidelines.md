@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 352924b29ba145177482c1ceb0ce3b685c10d363
 translation-type: tm+mt
 
 ---
@@ -13,7 +13,7 @@ L’obiettivo della documentazione AEM è di mettere la documentazione nelle man
 
 ## Contributi alla documentazione di AEM
 
-Al fine di migliorare costantemente la documentazione di AEM, l’intera community di utenti AEM può contribuire. Sia attraverso richieste pull o problemi, i miglioramenti alla documentazione possono essere correzioni, chiarimenti, espansioni ed esempi aggiuntivi.
+Al fine di migliorare costantemente la documentazione di AEM, l’intera community di utenti AEM è invitata a contribuire alla documentazione. Sia attraverso richieste pull o problemi, i miglioramenti alla documentazione possono essere correzioni, chiarimenti, espansioni ed esempi aggiuntivi.
 
 ## Standard di documentazione
 
@@ -33,23 +33,23 @@ Le eccezioni a questa regola si applicano alle note sulla versione in cui posson
 
 ### I contributi alla documentazione non sono destinati a rispondere a domande tecniche.
 
-Eventuali idee da approfondire con la documentazione di AEM sono gradite come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo ai *contributi* . Non sono destinati a rispondere alle tue domande su come utilizzare AEM o risolvere problemi tecnici.
+Eventuali idee da approfondire con la documentazione di AEM sono gradite come contributi. Tuttavia, commenti, problemi e richieste pull sono destinati solo ai *contributi* . Non sono destinati a rispondere alle tue domande su come usare AEM, implementare il tuo progetto AEM o risolvere problemi tecnici.
 
 Eventuali domande sull’utilizzo di AEM o eventuali errori tecnici devono essere segnalate tramite il normale processo di assistenza tramite il portale [di supporto di](https://daycare.day.com/home.html) Experience Manager o discusse nella community [di](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)Experience Manager.
 
-***I contributi alla documentazione di AEM non sostituiscono il supporto*** di Adobe e tutti i contributi in tal senso che richiedono risposte a domande correlate al supporto verranno rifiutati.
+***I contributi alla documentazione di AEM non sostituiscono il supporto di Adobe***. Pertanto, verranno rifiutati tutti i contributi che richiedono risposte a domande correlate al supporto.
 
-### I contributi devono fare riferimento chiaramente alle pagine della documentazione interessate.
+### I contributi devono fare riferimento in modo chiaro alle pagine della documentazione interessate.
 
-Se si crea un problema per suggerire miglioramenti alla documentazione, è necessario includere collegamenti alle pagine interessate. Se create un problema utilizzando il collegamento **Modifica pagina** in una pagina della documentazione, il problema verrà creato automaticamente con un collegamento alla pagina.
+Se apri una segnalazione problema per suggerire miglioramenti alla documentazione, devi includere i collegamenti alle pagine interessate. Se apri una segnalazione problema utilizzando il collegamento **Modifica pagina** di una pagina della documentazione, il problema verrà creato automaticamente con un collegamento alla pagina in questione.
 
-Ciò non si applica alle richieste di pull, poiché le richieste di pull includono le pagine interessate per definizione.
+Ciò non si applica alle richieste pull, in quanto le richieste pull per loro natura fanno riferimento alle pagine interessate.
 
 ## Linee guida sulla documentazione
 
 Chiediamo che qualsiasi contributo alla nostra documentazione segua determinate linee guida di stile.
 
-Seguendo queste linee guida è più semplice rivedere il proprio contributo e l&#39;integrazione nella documentazione è quindi più rapida. Tuttavia, il mancato rispetto o il mancato rispetto dei presenti orientamenti non significa che il contributo sarà respinto.
+Seguendo queste linee guida è più semplice rivedere il proprio contributo e l&#39;integrazione nella documentazione è quindi più rapida.
 
 ### Lingua e stile
 
