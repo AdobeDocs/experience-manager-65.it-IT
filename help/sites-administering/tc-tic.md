@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 98dd2d3e7445ceda6d96f0dd11b39d8361f1f402
 
 ---
 
@@ -23,13 +23,14 @@ Il Framework di integrazione delle traduzioni si integra con servizi di traduzio
 * Creare una configurazione di Translation Integration Framework.
 * Associate le configurazioni cloud alle pagine.
 
- Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md)multilingue.
+Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md)multilingue.
 
 ## Connessione a un provider di servizi di traduzione {#connecting-to-a-translation-service-provider}
 
 Crea una configurazione cloud per la connessione di AEM al provider di servizi di traduzione. AEM include la funzionalità di connessione a Microsoft Translator per impostazione predefinita. Per altri provider di traduzione, scaricate il pacchetto di connettore da [Package Share](/help/sites-administering/package-manager.md#package-share).
-I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova API per i progetti di traduzione. Collegamenti per ulteriori informazioni sull&#39;integrazione e come scaricare da Package Share:
+I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova API per i progetti di traduzione. Collegamenti per ulteriori informazioni sull&#39;integrazione e su come scaricare da Package Share:
 
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (non su PackageShare, contattare direttamente il fornitore)
 * [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
 * [Cloudwords](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
@@ -37,7 +38,6 @@ I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova
 * [Lingotek](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
 * Microsoft (Microsoft Translator è preinstallato in AEM)
 * [Smartphone](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [Translations.com](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/globallink-connect-for-adobe-experience-manager.html)
 * [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
 * [SDL TMS](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
 * [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
@@ -56,7 +56,7 @@ I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova
 
 Dopo aver installato un pacchetto di connettore, potete creare una configurazione cloud per il connettore. In genere, è necessario fornire le credenziali per l&#39;autenticazione con il servizio di traduzione. Per informazioni sull&#39;aggiunta di una configurazione cloud per il connettore Microsoft Translator, vedere [Integrazione con Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
-Se necessario, è possibile creare più configurazioni cloud per lo stesso connettore. Ad esempio, creare una configurazione per ciascun account o progetto in uso con lo stesso fornitore.
+Se necessario, è possibile creare più configurazioni cloud per lo stesso connettore. Ad esempio, creare una configurazione per ciascuno degli account o dei progetti che si dispone con lo stesso fornitore.
 
 Dopo aver configurato una connessione, potete creare la configurazione del framework di integrazione di conversione che la utilizza.
 
@@ -68,13 +68,13 @@ Create una configurazione del framework di integrazione della traduzione per spe
 * Se la traduzione umana o automatica deve essere eseguita.
 * Se tradurre altro contenuto associato a una pagina o a una risorsa, ad esempio i tag.
 
-Dopo aver creato una configurazione di framework, potete associare la configurazione cloud alle pagine da tradurre in base alla configurazione. Quando il processo di traduzione viene avviato, il flusso di lavoro di traduzione procede in base alla configurazione framework associata.
+Dopo aver creato una configurazione di framework, potete associare la configurazione cloud alle pagine che desiderate tradurre in base alla configurazione. Quando il processo di traduzione viene avviato, il flusso di lavoro di traduzione procede in base alla configurazione framework associata.
 
-Se diverse sezioni del sito Web presentano requisiti di traduzione diversi, create di conseguenza più configurazioni framework. Ad esempio, un sito Web multilingue include copie in lingua inglese, spagnola e giapponese. Il proprietario del sito utilizza due diversi provider di servizi di traduzione per le traduzioni in spagnolo e giapponese. Pertanto, sono configurate due configurazioni del framework. Ogni configurazione utilizza un provider di servizi di traduzione diverso.
+Se diverse sezioni del sito Web presentano requisiti di traduzione diversi, create di conseguenza più configurazioni del framework. Ad esempio, un sito Web multilingue include copie in lingua inglese, spagnola e giapponese. Il proprietario del sito utilizza due diversi provider di servizi di traduzione per le traduzioni in spagnolo e giapponese. Pertanto, sono configurate due configurazioni del framework. Ogni configurazione utilizza un provider di servizi di traduzione diverso.
 
 Dopo aver configurato un framework di integrazione della traduzione, potete [associarlo alle pagine](/help/sites-administering/tc-prep.md) che lo utilizzano.
 
-**** Nota: Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md)multilingue.
+**Nota:** Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md)multilingue.
 
 Una singola configurazione del framework controlla come tradurre il contenuto delle pagine, il contenuto delle community e le risorse.
 ![chlimage_1-386](assets/chlimage_1-386.png)
@@ -104,11 +104,11 @@ Le proprietà Siti controllano il modo in cui viene eseguita la conversione del 
   </tr>
   <tr>
    <td>Categoria contenuto</td>
-   <td>(Solo traduzione automatica) Una categoria che descrive il contenuto da tradurre. La categoria può influenzare la scelta della terminologia e della formulazione quando si traduce il contenuto.</td>
+   <td>(Solo traduzione automatica) Una categoria che descrive il contenuto che si sta traducendo. La categoria può influenzare la scelta della terminologia e della formulazione quando si traduce il contenuto.</td>
   </tr>
   <tr>
    <td>Traduci tag</td>
-   <td>Consente di convertire i tag associati alla pagina.</td>
+   <td>Consente di tradurre i tag associati alla pagina.</td>
   </tr>
   <tr>
    <td>Traduci risorse di pagina</td>
@@ -134,7 +134,7 @@ Le proprietà Community controllano il modo in cui viene eseguita la conversione
 |---|---|
 | Provider traduzione | Selezionate il provider di traduzione per eseguire la traduzione. Nell&#39;elenco viene visualizzato il provider per il quale vengono create le configurazioni cloud. |
 | Categoria contenuto | Una categoria che descrive il contenuto da tradurre. La categoria può influenzare la scelta della terminologia e della formulazione quando si traduce il contenuto. |
-| Scegliete Un&#39;Impostazione Internazionale Da Utilizzare Come Store Di Condivisione Globale | (Facoltativo) Selezionando una lingua per la memorizzazione UGC, i post di tutte le copie della lingua verranno visualizzati in una conversazione globale. Per convenzione, scegliete le impostazioni internazionali per la lingua [di](/help/communities/sites-console.md#translation) base del sito Web. Se scegliete Nessuno store comune, la traduzione globale verrà disabilitata. Per impostazione predefinita, la traduzione globale è disabilitata. |
+| Scegliete Un&#39;Impostazione Internazionale Da Utilizzare Come Store Di Condivisione Globale | (Facoltativo) Selezionando una lingua per la memorizzazione UGC, i post di tutte le copie della lingua verranno visualizzati in un&#39;unica conversazione globale. Per convenzione, scegliete le impostazioni internazionali per la lingua [di](/help/communities/sites-console.md#translation) base del sito Web. Se scegliete Nessuno store comune, la traduzione globale verrà disabilitata. Per impostazione predefinita, la traduzione globale è disabilitata. |
 
 ### Proprietà configurazione risorse {#assets-configuration-properties}
 
@@ -151,7 +151,7 @@ Le proprietà delle risorse controllano come configurare le risorse. Per ulterio
    <td><p>Selezionate il tipo di traduzione che il framework esegue per le risorse:</p>
     <ul>
      <li>Traduzione automatica: Il provider di traduzione esegue la traduzione immediatamente utilizzando la traduzione automatica.</li>
-     <li>Traduzione umana: Il contenuto viene inviato automaticamente al provider di traduzione per la conversione manuale. </li>
+     <li>Traduzione umana: Il contenuto viene inviato automaticamente al provider di traduzione per essere tradotto manualmente. </li>
      <li>Non tradurre: Le risorse non vengono inviate per la traduzione.</li>
     </ul> </td>
   </tr>
@@ -161,7 +161,7 @@ Le proprietà delle risorse controllano come configurare le risorse. Per ulterio
   </tr>
   <tr>
    <td>Categoria contenuto</td>
-   <td>(Solo traduzione automatica) Una categoria che descrive il contenuto da tradurre. La categoria può influenzare la scelta della terminologia e della formulazione quando si traduce il contenuto.</td>
+   <td>(Solo traduzione automatica) Una categoria che descrive il contenuto che si sta traducendo. La categoria può influenzare la scelta della terminologia e della formulazione quando si traduce il contenuto.</td>
   </tr>
   <tr>
    <td>Traduci risorse</td>
@@ -173,7 +173,7 @@ Le proprietà delle risorse controllano come configurare le risorse. Per ulterio
   </tr>
   <tr>
    <td>Traduci tag</td>
-   <td>Consente di convertire i tag associati alla risorsa.</td>
+   <td>Consente di tradurre i tag associati alla risorsa.</td>
   </tr>
   <tr>
    <td>Esecuzione automatica della conversione</td>
@@ -202,7 +202,7 @@ La configurazione cloud del framework di integrazione della traduzione identific
 
 Quando si associa una pagina a una configurazione cloud, i discendenti della pagina ereditano l&#39;associazione. Ad esempio, se si associa la pagina /content/geometrixx/en/products a un framework di integrazione delle traduzioni, la pagina Prodotti e tutte le pagine sottostanti vengono convertite in base al framework.
 
-Se necessario, potete ignorare l&#39;associazione in una pagina discendente. Ad esempio, il contenuto di un sito Web riguarda principalmente l&#39;abbigliamento. Tuttavia, un ramo di pagine descrive la società. La pagina principale del sito è associata a un framework di integrazione traduzione che specifica la conversione automatica utilizzando la categoria Abbigliamento. Il ramo che descrive la società utilizza un framework che esegue la traduzione automatica utilizzando la categoria Generale.
+Se necessario, è possibile ignorare l&#39;associazione in una pagina discendente. Ad esempio, il contenuto di un sito Web riguarda principalmente l&#39;abbigliamento. Tuttavia, un ramo di pagine descrive la società. La pagina principale del sito è associata a un framework di integrazione traduzione che specifica la conversione automatica utilizzando la categoria Abbigliamento. Il ramo che descrive la società utilizza un framework che esegue la traduzione automatica utilizzando la categoria Generale.
 
 Inoltre, per qualsiasi comunità di componenti [](/help/communities/scf.md) SCF presenti nelle pagine, il contenuto generato dall’utente (UGC) includerà la possibilità per gli utenti di tradurre i contenuti. Per ulteriori informazioni, consultate [Traduzione di contenuti](/help/communities/translate-ugc.md)generati dagli utenti.
 
@@ -213,7 +213,7 @@ Associate una pagina al provider di traduzione che utilizzate per tradurre la pa
 1. Nella console Siti, selezionate la pagina da configurare e toccate o fate clic su Visualizza proprietà.
 1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Servizi cloud.
 1. Tocca o fai clic su Aggiungi configurazione > Integrazione traduzione.
-1. Selezionate il provider di traduzione da utilizzare, quindi fate clic o toccate Fine.
+1. Selezionate il provider di traduzione da utilizzare, quindi toccate o fate clic su Fine.
 
 ### Associazione di pagine a un framework di integrazione della traduzione {#associating-pages-with-a-translation-integration-framework}
 
