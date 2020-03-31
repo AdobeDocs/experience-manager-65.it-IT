@@ -1,14 +1,14 @@
 ---
 title: Formati supportati per le risorse
-description: Elenco dei formati di file supportati da Risorse AEM e delle funzioni supportate per ciascun formato.
+description: Elenco dei formati di file supportati da AEM Assets e da Dynamic Media e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
+source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
 
 ---
 
 
-# Assets supported formats {#assets-supported-formats}
+# Formati di risorse supportati {#assets-supported-formats}
 
 Risorse AEM supporta un&#39;ampia gamma di formati di file e ogni funzionalità supporta vari tipi MIME.
 
@@ -22,9 +22,7 @@ Utilizzate la legenda per comprendere il livello di supporto.
 | * | Supportato con le funzioni del componente aggiuntivo |
 | - | Non applicabile |
 
-## Formati immagine raster supportati {#supported-raster-image-formats}
-
-I formati immagine raster supportati per le funzioni di gestione delle risorse sono i seguenti:
+## Formati di immagini raster supportati in AEM Assets {#supported-raster-image-formats}
 
 | Formato | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione delle miniature | Modifica interattiva | Write-back metadati | Approfondimenti |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -34,7 +32,7 @@ I formati immagine raster supportati per le funzioni di gestione delle risorse s
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PFM | ✓ | ✓ |  |  |  |  | ✓ |
+| PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
 | PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
@@ -44,7 +42,7 @@ I formati immagine raster supportati per le funzioni di gestione delle risorse s
 
 **¹** L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da Adobe Photoshop e inclusa nel file PSD. A seconda delle impostazioni, l’immagine unita potrebbe essere l’immagine effettiva o meno.
 
-I formati immagine raster supportati per le funzioni di Dynamic Media sono i seguenti:
+## Formati di immagini raster supportati in Contenuti multimediali dinamici (#supported-raster-image-format-dynamic-media)
 
 | Formato | Carica<br> (formato di input) | Creare<br> un predefinito<br> per immagini<br> (formato di output) | Anteprima<br> rappresentazione dinamica<br> | Distribuzione<br> di rappresentazioni dinamiche<br> | Download<br> della rappresentazione dinamica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -69,6 +67,22 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 
 * Per i file EPS, la funzione di writeback dei metadati è supportata in PostScript Document Structuring Convention (PS-Adobe) versione 3.0 o successiva.
 
+## Formati immagine raster non supportati in Contenuti multimediali dinamici (#unsupported-image-format-dynamic-media)
+
+Nella tabella seguente sono descritti i sottotipi di formati immagine raster che *non* sono supportati negli elementi multimediali dinamici. La tabella descrive inoltre i metodi consigliati per rilevare tali file.
+
+| Formato | Cosa non è supportato? | Metodo di rilevamento consigliato |
+|---|---|---|
+| JPEG | File in cui i tre byte iniziali non sono corretti. | Per identificare un file JPEF, i primi tre byte devono essere `ff d8 ff`. Se sono altro, non sono classificati come JPEG.<br>・ Non esiste uno strumento software che possa aiutare a risolvere questo problema.<br>・ Un piccolo programma C++/java che legge i tre byte iniziali di un file dovrebbe essere in grado di rilevare questi tipi di file.<br>・ Potrebbe essere meglio tenere traccia della fonte di tali file e guardare lo strumento che genera il file. |
+| PNG | File con dimensioni blocco IDAT superiori a 100 MB. | È possibile rilevare questo problema utilizzando [libpng](http://www.libpng.org/pub/png/libpng.html) in C++. |
+| PSB |  | Utilizzate exiftool se il tipo di file è PSB.<br>Esempio in un registro ExifTool:<br>1. Tipo di file: `PSB` |
+| PSD | I file con uno spazio colore diverso da CMYK, RGB, Scala di grigio o Bitmap non sono supportati.<br>Gli spazi colore DuoTone, Lab e Indexed non sono supportati. | Utilizzate ExifTool se la modalità Colore è due tonalità.<br>Esempio in un registro ExifTool:<br>1. Metodo colore: `Duotone` |
+|  | File con terminazioni brusche. | Adobe non è in grado di rilevare questa condizione. Inoltre, tali file non possono essere aperti con Adobe PhotoShop. Adobe consiglia di esaminare lo strumento utilizzato per creare tale file e di eseguire la risoluzione dei problemi all&#39;origine. |
+|  | File con una profondità di bit maggiore di 16. | Utilizzate ExifTool se la profondità di bit è maggiore di 16.<br>Esempio in un registro ExifTool:<br>1. Profondità bit: `32` |
+|  | File con spazio colore Lab. | Utilizzate exiftool se la modalità colore è Lab.<br>Esempio in un registro ExifTool:<br>1. Metodo colore: `Lab` |
+| TIFF | File con dati a virgola mobile. In altre parole, un file TIFF con profondità a 32 bit non è supportato. | Utilizzate ExifTool se il tipo MIME è `image/tiff` e il valore di SampleFormat è `Float` incluso nel relativo valore. Esempio in un registro ExifTool:<br>1. Tipo MIME: Formato `image/tiff`<br>di esempio: `Float #`<br>2. Tipo MIME: Formato `image/tiff`<br>di esempio: `Float; Float; Float; Float` |
+|  | File con spazio colore Lab. | Utilizzate ExifTool se la modalità colore è Lab.<br>Esempio in un registro ExifTool:<br>1. Metodo colore: `Lab` |
+
 ## Libreria PDF Rasterizer supportata {#supported-pdf-rasterizer-library}
 
 La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file Adobe Illustrator e PDF di grandi dimensioni e ricchi di contenuti. Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
@@ -91,7 +105,7 @@ Consultate Libreria [transcodifica](imaging-transcoding-library.md)Imaging.
 
 La libreria Adobe Camera Raw consente a Risorse AEM di acquisire immagini crude. See [Camera Raw support](camera-raw.md).
 
-## Formati di documento supportati {#supported-document-formats}
+## Formati di documenti di Risorse supportati {#supported-document-formats}
 
 I formati dei documenti supportati per le funzioni di gestione delle risorse sono i seguenti:
 
@@ -116,7 +130,7 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-I formati dei documenti supportati per le funzioni per elementi multimediali dinamici sono i seguenti:
+## Formati di documento supportati in Contenuti multimediali dinamici (##supported-document-format-dynamic-media)
 
 | Formato | Carica<br> (formato di input) | Creare<br> un predefinito<br> per immagini<br> (formato di output) | Anteprima<br> rappresentazione dinamica<br> | Distribuzione<br> di rappresentazioni dinamiche<br> | Download<br> della rappresentazione dinamica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -155,7 +169,7 @@ Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Formati video di input supportati per la transcodifica di contenuti multimediali dinamici {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Formati video di input supportati in Contenuti multimediali dinamici per la transcodifica {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Estensione dei file video | Contenitore | Codec video consigliati | Codec video non supportati |
 |---|---|---|---|
