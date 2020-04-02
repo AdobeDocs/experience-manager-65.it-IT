@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ebb60e79aa7fb45e059e2d2451f6d549cd24b8b0
 
 ---
 
@@ -27,7 +27,7 @@ La precompilazione di un modulo presenta i seguenti vantaggi:
 * Riduce la quantità di testo digitato dall&#39;utente per compilare il modulo.
 * Assicura l&#39;integrità dei dati controllando dove questi vengono inseriti.
 
-Le due origini dati XML seguenti possono precompilare un modulo:
+È possibile precompilare un modulo con le due origini dati XML seguenti:
 
 * Un&#39;origine dati XDP, XML conforme alla sintassi XFA (o dati XFDF per precompilare un modulo creato con Acrobat).
 * Un&#39;origine dati XML arbitraria che contiene coppie nome/valore corrispondenti ai nomi dei campi del modulo (gli esempi in questa sezione utilizzano un&#39;origine dati XML arbitraria).
@@ -36,7 +36,7 @@ Per ogni campo del modulo che si desidera precompilare è necessario che esista 
 
 Quando si precompila un modulo che contiene già dei dati, è necessario specificare i dati già visualizzati nell&#39;origine dati XML. Si supponga che un modulo contenente 10 campi contenga dati in quattro campi. Quindi, si supponga di voler precompilare i sei campi rimanenti. In questa situazione, è necessario specificare 10 elementi XML nell&#39;origine dati XML utilizzata per precompilare il modulo. Se specificate solo sei elementi, i quattro campi originali sono vuoti.
 
-Ad esempio, è possibile precompilare un modulo, ad esempio il modulo di conferma di esempio. (vedere &quot;Modulo di conferma&quot; nel [rendering di moduli]PDF interattivi(/help/forms/developing/rendering-forms-rendering-forms-interactive-pdf-forms-rendering.md#rendering-interactive-pdf-forms).
+Ad esempio, è possibile precompilare un modulo, ad esempio il modulo di conferma di esempio. Vedere &quot;Modulo di conferma&quot; nel [rendering di moduli](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interattivi.
 
 Per precompilare il modulo di conferma di esempio, è necessario creare un&#39;origine dati XML contenente tre elementi XML che corrispondono ai tre campi del modulo. Questo modulo contiene i tre campi seguenti: `FirstName`, `LastName`, e `Amount`. Il primo passaggio consiste nel creare un&#39;origine dati XML contenente elementi XML che corrispondono ai campi situati nella struttura del modulo. Il passaggio successivo consiste nell&#39;assegnare valori di dati agli elementi XML, come illustrato nel seguente codice XML.
 
@@ -184,7 +184,7 @@ Ciascun sottogruppo di dati deve contenere elementi XML che corrispondono ai nom
 
 >[!NOTE]
 >
->Se si tenta di precompilare un modulo con un&#39;origine dati contenente elementi XML ripetuti e si imposta l&#39; `RenderAtClient` opzione su `No`, nel modulo viene unito solo il primo record di dati. Per fare in modo che tutti i record di dati siano uniti nel modulo, impostare `RenderAtClient` su `Yes`. Per informazioni sull&#39; `RenderAtClient` opzione, vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms-client.md).
+>Se si tenta di precompilare un modulo con un&#39;origine dati che contiene elementi XML ripetuti e si imposta l&#39; `RenderAtClient` opzione su `No`, nel modulo viene unito solo il primo record di dati. Per fare in modo che tutti i record di dati siano uniti nel modulo, impostare `RenderAtClient` su `Yes`. Per informazioni sull&#39; `RenderAtClient` opzione, vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazio
 
 **Creazione di un&#39;origine dati XML in memoria**
 
-È possibile utilizzare `org.w3c.dom` le classi per creare un&#39;origine dati XML in memoria per precompilare un modulo con un layout scorrevole. È necessario inserire i dati in un&#39;origine dati XML conforme al modulo. Per informazioni sulla relazione tra un modulo con un layout scorrevole e l&#39;origine dati XML, vedere [Informazioni sui sottogruppi]di dati (/help/forms/developing/rendering-forms-rendering-forms prepopolating-forms-flowable-layouts-prepopolating prepopolating-forms-flowable-layouts-prepopolating.md#understanding-data-subgroup).
+È possibile utilizzare `org.w3c.dom` le classi per creare un&#39;origine dati XML in memoria per precompilare un modulo con un layout scorrevole. È necessario inserire i dati in un&#39;origine dati XML conforme al modulo. Per informazioni sulla relazione tra un modulo con layout scorrevole e l&#39;origine dati XML, vedere [Informazioni sui sottogruppi](#understanding-data-subgroups)di dati.
 
 **Conversione dell&#39;origine dati XML**
 
@@ -294,7 +294,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
    * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
-   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo da scrivere nel browser Web del client.
+   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
    * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati del modulo al browser Web del client.
    * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` metodo ‘s `getOutputContent` .
@@ -374,7 +374,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
    * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. (Questo argomento memorizza il numero di pagine nel modulo).
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali).
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
    * Creare un `FormResult` oggetto ottenendo il valore del membro `com.adobe.idp.services.holders.FormsResultHolder` dati dell&#39; `value` oggetto.
    * Creare un `BLOB` oggetto che contenga dati del modulo richiamando il `FormsResult` metodo dell&#39; `getOutputContent` oggetto.
@@ -385,7 +385,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l&#39;API di For
    * Richiamare il metodo dell&#39; `javax.servlet.http.HttpServletResponse` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
    >[!NOTE]
    >
-   >Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   >Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 **Consulta anche**
 
