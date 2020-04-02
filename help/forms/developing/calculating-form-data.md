@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 4b9e2ceafc301db9337868b78bcae87c0f07e14b
+source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
 
 ---
 
@@ -22,7 +22,7 @@ Il servizio Forms consente di calcolare i valori immessi dall&#39;utente in un m
 
 Durante il processo di progettazione del modulo è possibile utilizzare calcoli e script per migliorare l&#39;esperienza dell&#39;utente. I calcoli e gli script possono essere aggiunti alla maggior parte dei campi e degli oggetti modulo. È necessario creare uno script della struttura del modulo per eseguire operazioni di calcolo sui dati immessi dall&#39;utente in un modulo interattivo.
 
-L&#39;utente immette valori nel modulo e fa clic sul pulsante Calcola per visualizzare i risultati. Il seguente processo descrive un&#39;applicazione di esempio che consente a un utente di calcolare i dati:
+L&#39;utente immette dei valori nel modulo e fa clic sul pulsante Calcola per visualizzare i risultati. Il seguente processo descrive un&#39;applicazione di esempio che consente a un utente di calcolare i dati:
 
 * L&#39;utente accede a una pagina HTML denominata StartLoan.html che funge da pagina iniziale dell&#39;applicazione Web. Questa pagina richiama un servlet Java denominato `GetLoanForm`.
 * Il `GetLoanForm` servlet esegue il rendering di un modulo di prestito. Questo modulo contiene uno script, campi interattivi, un pulsante di calcolo e un pulsante di invio.
@@ -50,7 +50,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Il servlet <code>GetLoanForm</code> Java utilizza l'API client del servizio Forms per eseguire il rendering del modulo di prestito nel browser Web del client. La differenza tra il rendering di un modulo che contiene uno script configurato per l'esecuzione sul server e il rendering di un modulo che non contiene uno script è che è necessario specificare il percorso di destinazione utilizzato per eseguire lo script. Se non viene specificata una posizione di destinazione, non viene eseguito uno script configurato per l'esecuzione sul server. Ad esempio, considerare l'applicazione introdotta in questa sezione. Il Servlet <code>CalculateData</code> Java è il percorso di destinazione in cui viene eseguito lo script.</p></td>
+   <td><p>Il servlet <code>GetLoanForm</code> Java utilizza l'API client del servizio Forms per eseguire il rendering del modulo di prestito nel browser Web del client. La differenza tra il rendering di un modulo che contiene uno script configurato per l'esecuzione sul server e il rendering di un modulo che non contiene uno script sta nel fatto che è necessario specificare il percorso di destinazione utilizzato per eseguire lo script. Se non viene specificata una posizione di destinazione, non viene eseguito uno script configurato per l'esecuzione sul server. Ad esempio, considerare l'applicazione introdotta in questa sezione. Il Servlet <code>CalculateData</code> Java è la posizione di destinazione in cui viene eseguito lo script.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -73,7 +73,7 @@ Per illustrare l&#39;uso di uno script della struttura del modulo, in questa sez
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-******A. Un campo denominato NumericField1** B. Campo denominato NumericField2 **C.** Campo denominato NumericField3
+**A.** Un campo denominato NumericField1 **B.** Campo denominato NumericField2 **C.** Campo denominato NumericField3
 
 La sintassi dello script in questa struttura del modulo è la seguente:
 
@@ -110,7 +110,7 @@ Prima di eseguire un&#39;operazione API client del servizio Forms a livello di p
 
 **Recuperare un modulo contenente uno script di calcolo**
 
-È possibile utilizzare l&#39;API client del servizio Forms per creare una logica applicativa che gestisca un modulo contenente uno script configurato per l&#39;esecuzione sul server. Il processo è simile alla gestione di un modulo inviato. (vedere [Gestione dei moduli]inviati(/help/forms/developing/rendering-forms-handling-submit-forms-handling-handling-sent.md#handling-submit-forms).
+È possibile utilizzare l&#39;API client del servizio Forms per creare una logica applicativa che gestisca un modulo contenente uno script configurato per l&#39;esecuzione sul server. Il processo è simile alla gestione di un modulo inviato. (Vedere [Gestione Dei Moduli](/help/forms/developing/handling-submitted-forms.md)Inviati.)
 
 Verificare che lo stato di elaborazione associato al modulo inviato sia `1``(Calculate)`, ovvero che il servizio Forms stia eseguendo un&#39;operazione di calcolo sui dati del modulo e che i risultati debbano essere riscritti all&#39;utente. In questa situazione, viene eseguito automaticamente uno script configurato per l&#39;esecuzione sul server.
 
@@ -162,7 +162,7 @@ Calcola i dati del modulo utilizzando l&#39;API Forms (Java):
 
 [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms[Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Calcolo dei dati del modulo mediante l&#39;API del servizio Web {#calculate-form-data-using-the-web-service-api}
+## Calcolare i dati del modulo utilizzando l&#39;API del servizio Web {#calculate-form-data-using-the-web-service-api}
 
 Calcola i dati del modulo utilizzando l&#39;API Forms (servizio Web):
 
