@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
 
 ---
 
@@ -32,7 +32,7 @@ Quando una struttura del modulo viene passata per valore, si applicano le seguen
 
 * Nessun contenuto collegato relativo può essere incluso nella struttura del modulo. Tutte le immagini e i frammenti devono essere incorporati nella struttura del modulo o essere denominati in modo assoluto.
 * Non è possibile eseguire calcoli sul lato server dopo il rendering del modulo. Se il modulo viene nuovamente inviato al servizio Forms, i dati vengono estratti e restituiti senza calcoli sul lato server.
-* Poiché HTML può utilizzare solo immagini collegate in fase di esecuzione, non è possibile generare HTML con immagini incorporate. Questo perché il servizio Forms supporta le immagini incorporate con HTML recuperando le immagini da una struttura del modulo di riferimento. Poiché una struttura del modulo passata per valore non dispone di una posizione di riferimento, non è possibile estrarre immagini incorporate quando viene visualizzata la pagina HTML. Di conseguenza, i riferimenti immagine devono essere percorsi assoluti per il rendering in HTML.
+* Poiché HTML può utilizzare solo immagini collegate in fase di esecuzione, non è possibile generare HTML con immagini incorporate. Questo perché il servizio Forms supporta le immagini incorporate con HTML recuperando le immagini da una struttura del modulo di riferimento. Poiché una struttura del modulo passata per valore non dispone di una posizione di riferimento, non è possibile estrarre le immagini incorporate quando viene visualizzata la pagina HTML. Di conseguenza, i riferimenti immagine devono essere percorsi assoluti per il rendering in HTML.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Quando il servizio Forms esegue il rendering di un modulo per valore, restituisc
 
 ## Eseguire il rendering di un modulo per valore utilizzando l&#39;API Java {#render-a-form-by-value-using-the-java-api}
 
-Eseguire il rendering di un modulo per valore tramite l&#39;API Forms (Java):
+Eseguire il rendering di un modulo in base al valore utilizzando l&#39;API Forms (Java):
 
 1. Includi file di progetto
 
@@ -138,7 +138,7 @@ Eseguire il rendering di un modulo per valore tramite l&#39;API Forms (Java):
 
 **Consulta anche**
 
-[Rendering dei moduli in base al valore](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
+[Rendering dei moduli per valore](/help/forms/developing/rendering-forms.md)
 
 [Avvio rapido (modalità SOAP): Rendering per valore tramite l&#39;API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
@@ -180,7 +180,7 @@ Eseguire il rendering di un modulo per valore utilizzando l&#39;API di Forms (se
    * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. Questo argomento memorizza il numero di pagine nel modulo.
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali.)
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
