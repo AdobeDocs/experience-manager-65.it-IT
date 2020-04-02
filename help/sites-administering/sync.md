@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
+source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
 
 ---
 
@@ -50,7 +50,7 @@ Rispetto alla replica tradizionale, i vantaggi della sincronizzazione utente med
 >
 >La sincronizzazione del gruppo di ***amministratori*** non è supportata, anche se è abilitata la sincronizzazione degli utenti. Al contrario, un&#39;operazione di importazione delle diff verrà registrata nel registro degli errori.
 >
->Pertanto, se la distribuzione è una farm di pubblicazione, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
+>Pertanto, se la distribuzione è una pubblicazione farm, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
 
 ## Abilita sincronizzazione utente {#enable-user-sync}
 
@@ -167,7 +167,7 @@ Una volta creato un utente autorizzato, membro del gruppo di utenti **`administr
    * locate `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
    * seleziona la configurazione esistente da aprire per la modifica (icona matita)Verifica `property name`: **`socialpubsync-publishUser`**
 
-   * imposta nome utente e password per l’utente [](#createauthorizeduser) autorizzato creato al momento della pubblicazione nel passaggio 2
+   * imposta nome utente e password per l’utente [](#createauthuser) autorizzato creato al momento della pubblicazione nel passaggio 2
 
       * for example, `usersync-admin`
 
@@ -450,7 +450,7 @@ Questo è ciò che viene visualizzato quando la sincronizzazione utente non è s
 
 Quando la diagnostica viene eseguita dall&#39;ambiente di authoring, i risultati di esito positivo/negativo includeranno una sezione [INFO] che mostra l&#39;elenco delle istanze di pubblicazione configurate per la conferma.
 
-Nell’elenco è incluso un URL per ogni istanza di pubblicazione che eseguirà la diagnostica per tale istanza. Il parametro url `syncUser` viene aggiunto all’URL di diagnostica con il relativo valore impostato sull’utente *di sincronizzazione* autorizzato creato al [passaggio 2](/help/sites-administering/sync.md#2createauthorizeduser).
+Nell’elenco è incluso un URL per ogni istanza di pubblicazione che eseguirà la diagnostica per tale istanza. Il parametro url `syncUser` viene aggiunto all’URL di diagnostica con il relativo valore impostato sull’utente *di sincronizzazione* autorizzato creato al [passaggio 2](#createauthuser).
 
 **Nota**: prima di avviare l’URL, l’utente *di sincronizzazione* autorizzato deve già essere connesso a tale istanza di pubblicazione.
 
@@ -490,7 +490,7 @@ Se nel registro è visibile quanto segue:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Quindi verificate che la sezione [2. Create un utente]autorizzato (/content/docs/en/aem/6-1/administer/security/security/sync.md#2). create authorized user (Crea utente autorizzato) è stato seguito correttamente.
+Quindi verificate che la sezione [2. Crea utente](#createauthuser) autorizzato è stato seguito correttamente.
 
 Questa sezione descrive come creare un utente autorizzato, che esiste su tutte le istanze di pubblicazione e identificarlo nella configurazione OSGi &#39;Provider segreto&#39; dell&#39;autore. By default, the user is `admin`.
 
