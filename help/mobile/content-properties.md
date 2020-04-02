@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
 
 ---
 
@@ -88,7 +88,7 @@ Le tabelle seguenti descrivono le proprietà e i nodi del contenuto.
 ### Nodi comuni {#common-nodes}
 
 | Nome nodo | Tipo | Valori predefiniti o previsti | Descrizione |
---- |--- |--- |--- |
+|--- |--- |--- |--- |
 | immagine | jcr:PrimaryType=nt: <br> sling non strutturato:resourceType=foundation/components/image |  |  |
 
 ### Entità {#entities}
