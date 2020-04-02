@@ -1,9 +1,9 @@
 ---
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+source-git-commit: e3f12a9bbcb111e9a174e6bc3a0ec634df73c60f
 translation-type: tm+mt
 
 ---
-# Documentazione di AEM 6.5
+# Documentazione di Adobe Experience Manager 6.5
 
 Questo è l&#39;archivio della documentazione di Adobe Experience Manager 6.5. Questa documentazione descrive l’installazione, l’amministrazione, l’utilizzo dell’authoring e come personalizzare AEM.
 
