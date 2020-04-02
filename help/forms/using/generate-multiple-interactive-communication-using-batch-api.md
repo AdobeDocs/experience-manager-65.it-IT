@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
+source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
 
 ---
 
@@ -19,7 +19,7 @@ L&#39;API Batch accetta i record (dati) in formato JSON e da un modello dati mod
 
 ## Utilizzo dell&#39;API Batch {#using-the-batch-api}
 
-Potete utilizzare l&#39;API Batch insieme alle cartelle esaminate o come API di riposo autonoma. Potete configurare un modello, un tipo di output (HTML, PRINT o Entrambi), impostazioni internazionali, un servizio di precompilazione e un nome per le comunicazioni interattive generate per l&#39;utilizzo dell&#39;API Batch.
+Potete utilizzare l&#39;API Batch insieme alle cartelle esaminate o come API di riposo standalone. Potete configurare un modello, un tipo di output (HTML, PRINT o Entrambi), impostazioni internazionali, un servizio di precompilazione e un nome per le comunicazioni interattive generate per l&#39;utilizzo dell&#39;API Batch.
 
 È possibile combinare un record con un modello di comunicazione interattiva per produrre una comunicazione interattiva. Le API Batch possono leggere i record (dati per i modelli di comunicazione interattivi) direttamente da un file JSON o da un&#39;origine dati esterna a cui si accede tramite il modello dati del modulo. È possibile conservare ciascun record in un file JSON separato o creare un array JSON per conservare tutti i record in un unico file.
 
@@ -65,7 +65,7 @@ Potete utilizzare l&#39;API Batch insieme alle cartelle esaminate o come API di 
 
 ### Utilizzo dell&#39;API Batch con le cartelle esaminate {#using-the-batch-api-watched-folders}
 
-Per semplificare l&#39;utilizzo dell&#39;API, in AEM Forms è disponibile un servizio per cartelle esaminate configurato per l&#39;utilizzo dell&#39;API Batch. Puoi accedere al servizio tramite l’interfaccia utente di AEM Forms per generare più comunicazioni interattive. Potete anche creare servizi personalizzati in base alle vostre esigenze. Potete utilizzare i metodi elencati di seguito per utilizzare l&#39;API Batch con la cartella esaminata:
+Per semplificare l&#39;utilizzo dell&#39;API, in AEM Forms è disponibile un servizio per cartelle esaminate configurato per l&#39;utilizzo dell&#39;API Batch. È possibile accedere al servizio tramite l&#39;interfaccia utente di AEM Forms per generare più comunicazioni interattive. Potete anche creare servizi personalizzati in base alle vostre esigenze. Potete utilizzare i metodi elencati di seguito per utilizzare l&#39;API Batch con la cartella esaminata:
 
 * Specificare i dati di input (record) in formato JSON per produrre una comunicazione interattiva
 * Utilizzare i dati di input (record) salvati in un&#39;origine dati esterna ed accessibili tramite un modello dati modulo per produrre una comunicazione interattiva
@@ -74,7 +74,7 @@ Per semplificare l&#39;utilizzo dell&#39;API, in AEM Forms è disponibile un ser
 
 È possibile combinare un record con un modello di comunicazione interattiva per produrre una comunicazione interattiva. Potete creare un file JSON separato per ciascun record o creare un array JSON per conservare tutti i record in un unico file:
 
-Per creare comunicazioni interattive dai record salvati in un file JSON:
+Per creare una comunicazione interattiva dai record salvati in un file JSON:
 
 1. Create una cartella [](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) esaminata e configuratela per utilizzare l&#39;API Batch:
    1. Accedete all&#39;istanza di creazione di AEM Forms.
@@ -112,7 +112,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
    1. Aprire il modello dati modulo associato al modello di comunicazione interattiva.
    1. Selezionare l&#39;OGGETTO MODELLO DI LIVELLO SUPERIORE e toccare Modifica proprietà.
    1. Selezionare il recupero o ottenere il servizio dal campo Servizio lettura nel riquadro Modifica proprietà.
-   1. Toccate l&#39;icona matita per l&#39;argomento del servizio di lettura per associare l&#39;argomento a un attributo di richiesta e specificare il valore di binding. Questo vincola l&#39;argomento del servizio all&#39;attributo di binding o al valore letterale specificato, che viene passato al servizio come argomento per recuperare i dettagli associati al valore specificato dall&#39;origine dati.
+   1. Toccate l&#39;icona a forma di matita per l&#39;argomento del servizio di lettura per associare l&#39;argomento a un attributo di richiesta e specificare il valore di binding. Questo vincola l&#39;argomento del servizio all&#39;attributo di binding o al valore letterale specificato, che viene passato al servizio come argomento per recuperare i dettagli associati al valore specificato dall&#39;origine dati.
 
       <br>
         In questo esempio, l'argomento id prende il valore dell'attributo id del profilo utente e lo trasmette come argomento al servizio di lettura. Leggerà e restituirà i valori delle proprietà associate dall'oggetto modello dati dipendente per l'ID specificato. Pertanto, se si specifica 00250 nel campo id del modulo, il servizio di lettura leggerà i dettagli del dipendente con ID dipendente 00250.
@@ -123,7 +123,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
    1. Salvare le proprietà e il modello dati modulo.
 1. Configura valore per attributo richiesta:
    1. Create un file .json sul file system e apritelo per la modifica.
-   1. Create un array JSON e specificate l&#39;attributo principale per recuperare i dati dal modello dati modulo. Ad esempio, il seguente JSON richiede a FDM di inviare dati di record dove id è 27126 o 27127:
+   1. Create un array JSON e specificate l&#39;attributo principale per recuperare i dati dal modello dati del modulo. Ad esempio, il seguente JSON richiede a FDM di inviare i dati dei record dove id è 27126 o 27127:
 
       ```json
           [
@@ -152,7 +152,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
       |--- |--- |--- |
       | templatePath | Stringa | Specificate il percorso del modello di comunicazione interattiva da utilizzare. Ad esempio, /content/dam/formsanddocuments/testsample/mediumic. È una proprietà obbligatoria. |
       | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specificate /dipendente/Id, il valore del campo id diventa nome per la corrispondente comunicazione interattiva. Il valore predefinito è un UUID [casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID())casuale. |  |
-      | usePrefillService | Booleano | Impostare il valore su True. Il valore predefinito è false.  Quando il valore è impostato su true, l&#39;API Batch legge i dati dal modello dati modulo configurato e li riempie alla comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. |
+      | usePrefillService | Booleano | Impostate il valore su True. Il valore predefinito è false.  Quando il valore è impostato su true, l&#39;API Batch legge i dati dal modello dati modulo configurato e li riempie alla comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. |
       | batchType | Stringa | Impostare il valore su STAMPA, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | locale | Stringa | Specificate le impostazioni internazionali della comunicazione interattiva di output. Il servizio out-of-the-box non utilizza l&#39;opzione delle impostazioni internazionali, ma è possibile creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore predefinito è en_US. |
 
@@ -168,7 +168,7 @@ Per creare comunicazioni interattive dai record salvati in un file JSON:
 
 ## Richiama l&#39;API Batch utilizzando le richieste REST
 
-Puoi richiamare [l&#39;API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Batch tramite le richieste REST (Rappresenta State Transfer). Consente di fornire un endpoint REST ad altri utenti per accedere all&#39;API e configurare i propri metodi per l&#39;elaborazione, la memorizzazione e la personalizzazione delle comunicazioni interattive. Potete sviluppare un servlet Java personalizzato per distribuire l&#39;API sull&#39;istanza AEM.
+Puoi richiamare [l&#39;API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Batch tramite le richieste REST (Rappresentational State Transfer). Consente di fornire un endpoint REST ad altri utenti per accedere all&#39;API e configurare i propri metodi per l&#39;elaborazione, la memorizzazione e la personalizzazione delle comunicazioni interattive. Potete sviluppare un servlet Java personalizzato per distribuire l&#39;API sull&#39;istanza AEM.
 
 Prima di distribuire il servlet Java, accertatevi di disporre di una comunicazione interattiva e che i file di dati corrispondenti siano pronti. Per creare e distribuire il servlet Java, effettuate le seguenti operazioni:
 
