@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ab401a8007f6ea85c0e52169091ce7a38b3dbe5c
 
 ---
 
@@ -55,12 +55,12 @@ L’opzione può essere impostata anche per l’esecuzione `SeedPDF` . L&#39; `S
 Designer consente di creare un semplice file PDF dinamico da utilizzare come file PDF di base. Per eseguire questa operazione sono necessari i seguenti passaggi:
 
 1. Determinare se è necessario incorporare font nel file PDF di livello inferiore. Il file PDF di livello inferiore dovrà contenere i font aggiuntivi richiesti dal modulo di cui si sta eseguendo il rendering. Durante l&#39;incorporazione di font nel file PDF di base, assicurarsi di non violare alcun contratto di licenza per i font. In Designer è possibile determinare se è possibile incorporare legalmente i font. In caso di font non incorporati nel modulo, in Designer viene visualizzato un messaggio in cui sono elencati i font che non è possibile incorporare. Questo messaggio non viene visualizzato in Designer per i documenti PDF statici.
-1. Se si sta creando il file PDF di base in Designer, è consigliabile aggiungere almeno un campo di testo contenente un messaggio. Il messaggio deve essere indirizzato agli utenti delle versioni precedenti di Adobe Reader in cui si dichiara che per visualizzare il documento è necessario Acrobat 7.0 o versioni successive o Adobe Reader 7.0 o versioni successive.
+1. Se si sta creando il file PDF di livello inferiore in Designer, è consigliabile aggiungere almeno un campo di testo contenente un messaggio. Il messaggio deve essere indirizzato agli utenti delle versioni precedenti di Adobe Reader in cui si dichiara che per visualizzare il documento è necessario Acrobat 7.0 o versioni successive o Adobe Reader 7.0 o versioni successive.
 1. Salvare il file PDF di livello inferiore come file PDF dinamico con l’estensione del nome del file PDF.
 
 >[!NOTE]
 >
->Per eseguire il rendering di un modulo sul client non è necessario definire l&#39;opzione di esecuzione PDF di livello inferiore. Se non si specifica un PDF di livello inferiore, il servizio Forms crea un pdf contenitore che non conterrà oggetti COS ma conterrà un wrapper PDF con il contenuto XDP effettivo incorporato al suo interno. I passaggi descritti in questa sezione non impostano l&#39;opzione per l&#39;esecuzione dei PDF iniziali. Per informazioni sugli oggetti COS, vedere la guida di riferimento di Adobe PDF.
+>Per eseguire il rendering di un modulo sul client, non è necessario definire l&#39;opzione di esecuzione PDF di livello inferiore. Se non si specifica un PDF di livello inferiore, il servizio Forms crea un pdf contenitore che non conterrà oggetti COS ma conterrà un wrapper PDF con il contenuto XDP effettivo incorporato al suo interno. I passaggi descritti in questa sezione non impostano l&#39;opzione per l&#39;esecuzione dei PDF iniziali. Per informazioni sugli oggetti COS, vedere la guida di riferimento di Adobe PDF.
 
 **Eseguire il rendering di un modulo sul client**
 
@@ -108,12 +108,12 @@ Eseguire il rendering di un modulo sul client utilizzando l&#39;API Forms (Java)
 
    Richiama il metodo dell’ `FormsServiceClient` oggetto `renderPDFForm` e passa i seguenti valori:
 
-   * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo inclusa in un&#39;applicazione AEM Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione AEM Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un `com.adobe.idp.Document` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare un `com.adobe.idp.Document` oggetto vuoto.
    * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione necessarie per eseguire il rendering di un modulo sul client.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms per eseguire il rendering di un modulo.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
-   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo da scrivere nel browser Web del client.
+   Il `renderPDFForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -156,7 +156,7 @@ Eseguire il rendering di un modulo sul client utilizzando l&#39;API di Forms (se
    Richiama il metodo dell’ `FormsService` oggetto `renderPDFForm` e passa i seguenti valori:
 
    * Una stringa che specifica il nome della struttura del modulo, inclusa l&#39;estensione del nome file. Se si fa riferimento a una struttura del modulo che fa parte di un&#39;applicazione Forms, è necessario specificare il percorso completo, ad esempio `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un `BLOB` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`. (vedere [Precompilazione di moduli con layout]scorrevoli(/help/forms/developing/rendering-forms-prepopolating-forms-flowable-layouts-prepopolating.md#prepopolating-forms-with-flowable-layouts).)
+   * Un `BLOB` oggetto che contiene i dati da unire al modulo. Se non si desidera unire i dati, passare `null`. (Vedere [Precompilazione dei moduli con layout](/help/forms/developing/prepopulating-forms-flowable-layouts.md)scorrevoli.)
    * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione necessarie per eseguire il rendering di un modulo sul client.
    * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
@@ -164,7 +164,7 @@ Eseguire il rendering di un modulo sul client utilizzando l&#39;API di Forms (se
    * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. (Questo argomento memorizza il numero di pagine nel modulo).
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. (Questo argomento memorizza il valore delle impostazioni internazionali).
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+   Il `renderPDFForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
