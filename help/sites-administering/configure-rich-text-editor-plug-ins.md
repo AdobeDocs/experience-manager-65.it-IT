@@ -8,7 +8,7 @@ discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 mini-toc-levels: 1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ac4c5ec920ed768002da1b4598590bfd9ca301f6
+source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
 
 ---
 
@@ -69,7 +69,9 @@ Dopo aver attivato un plug-in, attenetevi alle seguenti linee guida per configur
 
 ## Comprendere il plug-in più recente {#findreplace}
 
-Il `findreplace` plug-in non richiede alcuna configurazione. Funziona come previsto, fuori dagli schemi.
+Il `findreplace` plug-in non richiede alcuna configurazione. Funziona fuori dagli schemi.
+
+Quando si utilizza la funzionalità replace, la stringa replace da sostituire deve essere immessa contemporaneamente alla stringa find. È comunque possibile fare clic su find per cercare la stringa prima di sostituirla. Se la stringa di sostituzione viene immessa dopo aver fatto clic su Trova, la ricerca viene reimpostata all’inizio del testo.
 
 La finestra di dialogo Trova e sostituisci diventa trasparente quando si fa clic su Trova e diventa opaca quando si fa clic su Sostituisci. Questo consente all’autore di rivedere il testo che verrà sostituito dall’autore. Se gli utenti fanno clic su replace all (Sostituisci tutto), la finestra di dialogo viene chiusa e viene visualizzato il numero di sostituzioni effettuate.
 
