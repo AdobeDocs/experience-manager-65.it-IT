@@ -3,7 +3,7 @@ title: Schemi metadati
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 5cbaefd5a377db5aa9f8ba35371fe2a9cb638fa1
 
 ---
 
@@ -123,8 +123,6 @@ Per modificare le proprietà di un componente di metadati sul modulo, fate clic 
 
 Di seguito sono riportati i valori validi per questa proprietà:
 
-Di seguito sono riportati i valori validi per questa proprietà:
-
 * `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della risorsa `dc:title`.
 
 * `./jcr:created`: Visualizza la proprietà JCR nel nodo della risorsa. Se configuri queste proprietà come View Properties (Visualizza proprietà), è consigliabile contrassegnarle con l’opzione Disattiva modifica, in quanto sono protette. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
@@ -132,11 +130,21 @@ Di seguito sono riportati i valori validi per questa proprietà:
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema di metadati, il percorso della proprietà non deve includere spazi.
 
 **Segnaposto**: Utilizzare questa proprietà per specificare il testo segnaposto relativo alla proprietà metadata.
+
 **Obbligatorio**: Utilizzare questa proprietà per contrassegnare una proprietà di metadati come obbligatoria nella pagina delle proprietà.
+
 **Disattiva modifica**: Utilizzare questa proprietà per rendere non modificabile una proprietà di metadati nella pagina delle proprietà.
-**Mostra campo vuoto in sola**lettura: Contrassegnate questa proprietà per visualizzare una proprietà di metadati nella pagina delle proprietà anche se non ha alcun valore. Per impostazione predefinita, quando una proprietà di metadati non ha alcun valore, non viene elencata nella pagina delle proprietà.
-**Mostra elenco ordinato**: Utilizzare questa proprietà per visualizzare un elenco ordinato di scelte ****: Utilizzare questa proprietà per specificare le scelte in un elenco **Descrizione** : Utilizzate questa proprietà per aggiungere una breve descrizione per il componente di metadati.
+
+**Mostra campo vuoto in sola** lettura: Contrassegnate questa proprietà per visualizzare una proprietà di metadati nella pagina delle proprietà anche se non ha alcun valore. Per impostazione predefinita, quando una proprietà di metadati non ha alcun valore, non viene elencata nella pagina delle proprietà.
+
+**Mostra elenco ordinato**: Utilizzare questa proprietà per visualizzare un elenco ordinato di scelte
+
+**Scelte**: Utilizzare questa proprietà per specificare le scelte in un elenco
+
+**Descrizione** : Utilizzate questa proprietà per aggiungere una breve descrizione per il componente di metadati.
+
 **Classe**: Classe oggetto a cui è associata la proprietà.
+
 **Elimina**: Fare clic su questa icona per eliminare un componente dal modulo schema.
 
 ![chlimage_1-41](assets/chlimage_1-177.png)
