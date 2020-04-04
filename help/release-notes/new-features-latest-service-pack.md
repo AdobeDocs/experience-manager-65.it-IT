@@ -4,16 +4,18 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
+source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
 
 ---
 
 
 # Novità in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 offre funzioni e miglioramenti continui tramite i Service Pack trimestrali. L&#39;approccio è vantaggioso per voi come le innovazioni diventano più facili da adottare.
+Adobe Experience Manager (6.5) consente di accedere alle nuove funzioni e ai continui miglioramenti attraverso le release trimestrali di Service Pack. Utilizzando questo approccio, si possono adottare facilmente le innovazioni.
 
-AEM Service Pack 4 (6.5.4.0) è rilasciato il 5 **marzo 2020**. In questo articolo vengono evidenziate le caratteristiche chiave offerte dai Service Pack 6.5 per rendere il viaggio AEM più ricco.
+Experience Manager Service Pack 4 (6.5.4.0) è stato rilasciato il 5 marzo 2020. Si tratta di un aggiornamento importante che include nuove funzioni, miglioramenti chiave richiesti dai clienti e prestazioni, stabilità, miglioramenti a livello di sicurezza, rilasciati a partire dalla release 6.5 di aprile 2019. Experience Manager 6.5.4.0 può essere installato sopra Adobe Experience Manager 6.5.
+
+In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Service Pack 6.5, le funzioni [chiave incluse nei Service Pack](#key-features-previous-service-packs)6.5 precedenti e alcune delle release [chiave a partire da Experience Manager 6.5.3.0](#key-features-sice-sp3).
 
 ## AEM Sites {#aem-sites}
 
@@ -94,7 +96,7 @@ Experience Manager Forms include i seguenti miglioramenti a livello di accessibi
 
 * Ogni pagina di un modulo adattivo ora include un titolo e un’etichetta con il punto di riferimento principale.
 
-## Funzioni principali nei precedenti Service Pack di AEM 6.5
+## Funzioni principali nei precedenti Service Pack di AEM 6.5 {#key-features-previous-service-packs}
 
 ### Immagini intelligenti per contenuti multimediali dinamici (6.5.3.0) {#smart-imaging}
 
@@ -117,7 +119,7 @@ Se prevedete di uscire dall&#39;ufficio, potete specificare cosa accade agli ele
 
 Potete utilizzare l&#39;API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L&#39;API Batch combina i dati con un modello per produrre una comunicazione interattiva. L&#39;API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto della carta di credito per più clienti. Consultate [Generare più comunicazioni interattive utilizzando l&#39;API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
-## Versioni principali da AEM 6.5 SP3
+## Versioni principali da AEM 6.5 SP3 {#key-features-sice-sp3}
 
 Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzionalità che non rientrano nel risultato finale di AEM:
 
