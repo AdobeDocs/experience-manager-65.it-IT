@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0e95ac8850a693764b82a29960b472d156dac535
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -92,13 +92,13 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Lo spostamento di massa delle risorse non riesce e viene visualizzato un messaggio di avviso (NPR-30610).
 
-* I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in [!DNL Experience Manager] esecuzione in modalità di esecuzione di [!DNL Dynamic Media] Scene7 (NPR-31630).
+* I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in [!DNL Experience Manager] esecuzione in modalità [!DNL Dynamic Media]Scene7 (NPR-31630).
 
 * Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata come nome della società di Scene 7 (NPR-31340).
 
 * [!DNL Dynamic Media] le risorse contenenti riferimenti non vengono pubblicate (NPR-31180).
 
-* I caricamenti dalla modalità [!DNL Experience Manager Dynamic Media] di esecuzione di Scene7 a Scene7 richiedono troppo tempo per essere completati (NPR-31048).
+* Il caricamento dalla modalità [!DNL Dynamic Media]7-Scene7 [!DNL Dynamic Media Classic] richiede troppo tempo (NPR-31048).
 
 * L’area sensibile aggiunta a una risorsa immagine non è visibile tramite il visualizzatore immagini interattivo nella pagina dei dettagli della risorsa (NPR-30979).
 
@@ -106,9 +106,9 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Si verifica un conflitto durante la creazione della copia in lingua delle risorse e delle risorse non caricate in Scene7 (NPR-30932).
 
-* Le rappresentazioni dinamiche scaricate dall&#39; [!DNL Experience Manager] esecuzione in modalità [!DNL Dynamic Media] ibrida sono interrotte (sono di tipo testo con contenuto &quot;impossibile trovare l&#39;immagine&quot; invece del tipo di contenuto dell&#39;immagine) (NPR-30876).
+* Le rappresentazioni dinamiche scaricate dall&#39; [!DNL Experience Manager] esecuzione in modalità [!DNL Dynamic Media]ibrida sono interrotte (sono di tipo testo con contenuto &quot;impossibile trovare l&#39;immagine&quot; invece del tipo di contenuto dell&#39;immagine) (NPR-30876).
 
-* [!DNL Dynamic Media] Il flusso di lavoro di codifica video non genera la miniatura per il video migrato da Scene7 alla modalità di esecuzione di Scene7 (CQ-4282011). [!DNL Dynamic Media]
+* [!DNL Dynamic Media] Il flusso di lavoro di codifica video non genera le miniature per il video migrato dalla modalità [!DNL Dynamic Media Classic] a [!DNL Dynamic Media]Scene7 in Adobe Experience Manager (CQ-4282011).
 
 * IpsApiException durante la migrazione delle risorse da un’istanza all’altra tramite ID società Scene7 diversi (CQ-4280548).
 
@@ -120,7 +120,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * I video non possono essere riprodotti con SmartCropVideoViewer su Internet Explorer 11 e Safari (CQ-4281422).
 
-* L’utilizzo del pulsante di spostamento per spostare più risorse, da una cartella all’altra, non riesce [!DNL Experience Manager] in esecuzione in modalità [!DNL Dynamic Media] - Scene7 runmode (CQ-4280384).
+* L’utilizzo del pulsante Sposta per spostare più risorse, da una cartella all’altra, non viene [!DNL Experience Manager] eseguito in modalità di esecuzione [!DNL Dynamic Media]-Scene7 (CQ-4280384).
 
 * I video distorti vengono visualizzati sui dettagli delle risorse quando il tipo MIME è diverso da MP4 (CQ-4279704).
 
@@ -211,7 +211,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 **Problemi risolti**
 
-* Quando si crea una nuova cartella Contribution nella funzione Asset Sourcing (CQ-4282825), viene visualizzata un’icona errata.
+* Quando si crea una nuova cartella Contribution in Asset Sourcing feature (CQ-4282825), viene visualizzata un’icona errata.
 * Quando create una nuova cartella Contribution, una o entrambe le sottocartelle (NEW e SHARED) non vengono visualizzate all’interno della cartella Contribution (CQ-4282424).
 * Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da [!DNL Experience Manager] a [!DNL Brand Portal] dopo aver ricevuto nuove risorse dalla [!DNL Brand Portal] fine della cartella Contribution (CQ-4279740).
 * La creazione di una cartella Contribution all’interno di una cartella Contribution (cartella nidificata) non è consentita per evitare la complessità (CQ-4278391).
@@ -336,7 +336,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * Il modulo dello schema dei metadati della cartella non rileva automaticamente il tipo di dati e, di conseguenza, non crea l’elemento TypeHint correlato nell’invio del modulo. NPR-30599: Hotfix per CQ-4275227
 * Le opzioni di modifica di Assets relative a ritaglio e rotazione vengono disabilitate dall’interfaccia utente di authoring di DMS7. NPR-30118: Hotfix per CQ-4273221
 * Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492: Hotfix per CQ-4273651
-* Adding the [!DNL Dynamic Media] Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix per CQ-4275962
+* Adding the [!DNL Dynamic Media]–Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix per CQ-4275962
 * Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490: Hotfix per CQ-4273614
 * [!DNL Dynamic Media]: Aggiunta di filtri predefiniti per escludere le risorse dalla replica nel nodo di Publish. [!DNL Experience Manager] NPR-30538: Hotfix per CQ-4274678
 * Introduzione di un flusso di lavoro Rielabora esterno per supportare più risorse e consentire la creazione della cartella come payload. Il flusso di lavoro prevede due passaggi: rielaborazione delle risorse senza alcun handle tramite la mappatura dei metadati al passaggio successivo e ricaricamento di tutte le risorse senza handle di risorsa a S7 in un singolo processo IPS. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489: Hotfix per CQ-4272903
@@ -351,7 +351,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * Sorting search query by relevance returns [!DNL InDesign] documents along with [!DNL InDesign] templates. Hotfix per CQ-4273864
 * Se l’utente dispone di un ID e-mail in maiuscolo, non potrà eseguire la consegna per le risorse ritirate in precedenza. Hotfix per CQ-4276575
 * L’operazione Elimina si applica solo ai predefiniti selezionati; se la schermata aggiorna automaticamente l’elenco dopo l’operazione, vengono visualizzati altri predefiniti già aggiornati. Hotfix per CQ-4261461
-* Configuring [!DNL Dynamic Media] Cloud Services in DMHybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix per CQ-4249780
+* Configuring [!DNL Dynamic Media] Cloud Services in [!DNL Dynamic Media]–Hybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix per CQ-4249780
 * Rename operation in [!DNL Experience Manager] asset to duplicated name fails to synchronize to Scene7. Hotfix per CQ-4276763
 * I contenuti generati dall’utente non vengono visualizzati correttamente nel pannello del filtro di ricerca. Hotfix per CQ-4273875
 * L’opzione Trova simile non è disponibile per le immagini TIFF. Hotfix per CQ-4278238
@@ -494,7 +494,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Abilitazione dell’inclusione dello stato dell’interfaccia utente dinamica negli eventi di tracciamento come attributi personalizzati.
-* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media] Scene 7.
+* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. For more information, see [Configure Japanese word wrap](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
 ### Assets
