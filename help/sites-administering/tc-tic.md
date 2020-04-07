@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: 98dd2d3e7445ceda6d96f0dd11b39d8361f1f402
+source-git-commit: d01b36770ea1cc7f8d780c49bf8c2af70915c553
 
 ---
 
@@ -77,7 +77,7 @@ Dopo aver configurato un framework di integrazione della traduzione, potete [ass
 **Nota:** Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate [Traduzione del contenuto per siti](/help/sites-administering/translation.md)multilingue.
 
 Una singola configurazione del framework controlla come tradurre il contenuto delle pagine, il contenuto delle community e le risorse.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-65.jpg)
 
 ### Proprietà configurazione siti {#sites-configuration-properties}
 
@@ -222,5 +222,5 @@ Associate una pagina al framework di integrazione della traduzione che definisce
 1. Nella console Siti, selezionate la pagina da configurare e toccate o fate clic su Visualizza proprietà.
 1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Servizi cloud.
 1. Tocca o fai clic su Aggiungi configurazione > Integrazione traduzione.
-1. Selezionate il framework di integrazione della conversione da utilizzare, quindi fate clic o toccate Fine.
+1. Selezionate il framework di integrazione della conversione da utilizzare, quindi toccate o fate clic su Fine.
 
