@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a83def358e026b516add577f968dcc709357e458
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -317,7 +317,7 @@ In order to see what platforms are certified to run with this release, please re
 >AEM 6.5.4.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Se si utilizza una versione precedente del pacchetto di compatibilità AEM Forms e si aggiorna a AEM 6.5.4.0, installare la versione più recente del pacchetto di compatibilità AEM Forms dopo l&#39;installazione del pacchetto di componenti aggiuntivi di Forms.
 
 1. Assicurati di aver installato il Service Pack di AEM.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 ### Install AEM Forms on JEE {#install-aem-forms-jee-installer}
@@ -326,7 +326,7 @@ In order to see what platforms are certified to run with this release, please re
 >
 >Ignora questa sezione se non usi AEM Forms in JEE. Le correzioni in AEM Forms su JEE vengono distribuite tramite un programma di installazione separato.
 
-For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
+For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/it/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
 
 #### Programma di installazione di Workbench
 
@@ -335,6 +335,8 @@ Poiché si tratta di un programma di installazione completo, la dimensione del f
 ### UberJar {#uber-jar}
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
+
+La versione aggiornata di UberJar per la versione 6.5.4.0 che include il pacchetto **com.fasterxml.jackson.core.asincc** è disponibile nell&#39;archivio [pubblico di](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe.
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -391,6 +393,6 @@ Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno
 >
 >* [Note sulla versione di AEM 6.5](/help/release-notes/release-notes.md)
 >* [Pagina del prodotto AEM](https://www.adobe.com/solutions/web-experience-management.html)
->* [Documentazione di AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* [Documentazione di AEM 6.5](https://helpx.adobe.com/it/support/experience-manager/6-5.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
