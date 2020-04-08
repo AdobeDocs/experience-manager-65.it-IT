@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
+source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
 
 ---
 
@@ -81,7 +81,7 @@ Consente di trascinare gli elementi del modello di modulo nel modulo adattivo. G
 
    Consente di modificare le proprietà di un componente. Le proprietà cambiano in base a un componente. Per visualizzare le proprietà del contenitore di moduli adattivi:
 
-   Selezionate un componente, quindi toccate il livello ![del](assets/field-level.png) campo > Contenitore **modulo** adattivo, quindi toccate ![cmppr](assets/cmppr.png).
+   Selezionate un componente, quindi toccate il livello ![del](assets/field-level.png) campo > Contenitore **[!UICONTROL modulo]** adattivo, quindi toccate ![cmppr](assets/cmppr.png).
 
 * **Browser risorse**
 
@@ -288,9 +288,9 @@ Di seguito sono riportati alcuni punti chiave e procedure ottimali da tenere pre
 * Specificare i valori per gli elementi Pulsante di scelta e Casella di controllo nel `{value}={text}` formato nelle proprietà del componente.
 * Per impostazione predefinita, il componente File allegato consente a un utente di allegare un solo file. Tuttavia, è possibile configurare le proprietà del componente per supportare più allegati. Inoltre, se un utente allega più file con lo stesso nome file, gli allegati possono causare alcuni problemi. Si consiglia pertanto di associare un identificatore univoco per ciascun allegato inviato all&#39;invio del modulo. A questo scopo:
 
-   1. Nel server AEM Forms, accedi ad **Adobe Experience Manager > Strumenti > Operazioni > Console** Web.
-   1. Individuare e toccare il servizio **di configurazione dei moduli** adattivi.
-   1. Nella finestra di dialogo Servizio configurazione moduli adattivi, abilitare **Rendi univoci** i nomi dei file. Per impostazione predefinita, è disattivata.
+   1. Nel server AEM Forms, accedi ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+   1. Individuare e toccare il servizio **[!UICONTROL di configurazione dei moduli]** adattivi.
+   1. Nella finestra di dialogo Servizio configurazione moduli adattivi, abilitare **[!UICONTROL Rendi univoci]** i nomi dei file. Per impostazione predefinita, è disattivata.
 
 * Per consentire agli utenti di allegare un PDF utilizzando il browser Safari, assicurarsi che **application/pdf** venga aggiunto alla proprietà Tipi di file supportati del componente Allegato file. I moduli adattivi creati con la precedente versione di AEM Forms possono contenere **.pdf** invece di **application/pdf** nella proprietà Tipi di file supportati.
 
@@ -310,7 +310,7 @@ La barra degli strumenti della pagina nella parte superiore contiene opzioni che
 
 * **Emulatore** ![righello](assets/ruler.png): Consente di emulare l&#39;aspetto del modulo per dimensioni di visualizzazione diverse, ad esempio tablet e telefoni.
 
-* **Modifica**: Consente di selezionare altre modalità, ad esempio: **Modifica, Stile, Sviluppatore e Progettazione**.
+* **Modifica**: Consente di selezionare altre modalità, ad esempio: **[!UICONTROL Modifica]**, **[!UICONTROL Stile]**, **[!UICONTROL Sviluppatore]** e **[!UICONTROL Progettazione]**.
 
    * **Modifica**: Consente di modificare le proprietà del modulo e dei suoi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
    * **Stile**: Consente di formattare l&#39;aspetto dei componenti del modulo. Ad esempio, in modalità stile, potete selezionare un pannello e specificarne il colore di sfondo.
@@ -330,7 +330,7 @@ La barra degli strumenti della pagina nella parte superiore contiene opzioni che
 
 Quando selezionate un componente, compare una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-A.**Configure**: Toccando **Configura**, le proprietà del componente sono visibili nella barra laterale. La configurazione di queste proprietà consente di personalizzare l&#39;esperienza di acquisizione dei dati. Potete modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente mediante il componente. Nelle proprietà del componente, potete specificare il comportamento del componente e gestire l’input dell’utente. Configurare le proprietà nella barra laterale per acquisire i dati utente e utilizzarli per un’ulteriore elaborazione. Le proprietà per il contenitore di moduli adattivi consentono di specificare librerie client, layout, temi, impostazioni del documento di registrazione, impostazioni di salvataggio, impostazioni di invio e impostazioni di metadati.
+A.**Configure**: Toccando **[!UICONTROL Configura]**, le proprietà del componente sono visibili nella barra laterale. La configurazione di queste proprietà consente di personalizzare l&#39;esperienza di acquisizione dei dati. Potete modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente mediante il componente. Nelle proprietà del componente, potete specificare il comportamento del componente e gestire l’input dell’utente. Configurare le proprietà nella barra laterale per acquisire i dati utente e utilizzarli per un’ulteriore elaborazione. Le proprietà per il contenitore di moduli adattivi consentono di specificare librerie client, layout, temi, impostazioni del documento di registrazione, impostazioni di salvataggio, impostazioni di invio e impostazioni di metadati.
 
 B.**Copia**: È possibile utilizzare l&#39;opzione Copia per copiare un componente e incollarlo in altre aree del modulo. Quando incollate un componente, il componente incollato riceve un nuovo nome di elemento ma mantiene le proprietà del componente copiato.
 
@@ -348,7 +348,7 @@ H. **Gruppo**: Consente di selezionare più componenti per tagliare, copiare o i
 
 I. **Elemento padre**: Consente di selezionare l’elemento padre di un componente. Ad esempio, un campo di testo si trova all&#39;interno di una sottosezione, che risiede in una sezione. La sezione si trova nel pannello principale della guida e il contenitore di modulo adattivo è l&#39;elemento principale di un pannello principale della guida. Per un componente, è possibile visualizzare tutte le opzioni con i bordi inferiori ordinati della gerarchia.
 
-Ad esempio, toccando **Elemento padre** per una casella di testo, è possibile visualizzare:
+Ad esempio, toccando **[!UICONTROL Elemento padre]** per una casella di testo, è possibile visualizzare:
 
 * Sottosezione
 * Sezione
@@ -371,7 +371,7 @@ La pagina del modulo adattivo è il modulo effettivo. È come qualsiasi altra pa
 
 La struttura del contenuto contiene in genere i seguenti componenti primari:
 
-* **guideContainer**: Livello principale di un modulo adattivo, contrassegnato come **Inizio del modulo** adattivo nell’interfaccia utente del modulo adattivo. In questo componente potete specificare:
+* **guideContainer**: Livello principale di un modulo adattivo, contrassegnato come **[!UICONTROL Inizio del modulo]** adattivo nell’interfaccia utente del modulo adattivo. In questo componente potete specificare:
 
    * *Layout mobile del modulo* adattivo: Definisce l’aspetto del modulo sui dispositivi mobili.
    * *Pagina* di ringraziamento: Definisce la pagina in cui l&#39;utente viene reindirizzato dopo l&#39;invio del modulo.
@@ -380,7 +380,7 @@ La struttura del contenuto contiene in genere i seguenti componenti primari:
 
 * **rootPanel:** Pannello principale di un modulo adattivo. Può contenere sottopannelli sotto il nodo degli elementi. A ciascun pannello, incluso il pannello principale, può essere associato un layout. Il layout del pannello determina il layout del modulo. Ad esempio, nel layout Accordion, i relativi elementi sono disposti come passi Accordion.
 
-* **barra degli strumenti:** A un contenitore di moduli adattivi è associata una barra degli strumenti globale, globale per il modulo. Questa barra degli strumenti può essere aggiunta utilizzando l’azione **Aggiungi barra degli strumenti** nella barra di modifica, che consente agli autori di aggiungere azioni quali Invia, Salva, Ripristina e così via.
+* **barra degli strumenti:** A un contenitore di moduli adattivi è associata una barra degli strumenti globale, globale per il modulo. Questa barra degli strumenti può essere aggiunta utilizzando l’azione **[!UICONTROL Aggiungi barra degli strumenti]** nella barra di modifica, che consente agli autori di aggiungere azioni quali Invia, Salva, Ripristina e così via.
 
 * **assets:** Questo nodo contiene informazioni aggiuntive utilizzate per la creazione di moduli. Ad esempio, dettagli relativi al modello di modulo, alla localizzazione e così via).
 
