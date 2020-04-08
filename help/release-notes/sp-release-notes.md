@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
+source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
 
 ---
 
@@ -336,8 +336,6 @@ Poiché si tratta di un programma di installazione completo, la dimensione del f
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
 
-La versione aggiornata di UberJar per la versione 6.5.4.0 che include il pacchetto **com.fasterxml.jackson.core.asincc** è disponibile nell&#39;archivio [pubblico di](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe.
-
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
 ```shell
@@ -345,6 +343,20 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
       <version>6.5.4</version>
+      <classifier>apis</classifier>
+      <scope>provided</scope>
+</dependency>
+```
+
+La versione aggiornata di UberJar per la versione 6.5.4.0 che include il pacchetto **com.fasterxml.jackson.core.asincc** è disponibile nell&#39;archivio [pubblico di](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe.
+
+Se utilizzate la versione aggiornata di UberJar, includete la seguente dipendenza nel POM del progetto:
+
+```shell
+<dependency>
+      <groupId>com.adobe.aem</groupId>
+      <artifactId>uber-jar</artifactId>
+      <version> 6.5.4-1.0</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
