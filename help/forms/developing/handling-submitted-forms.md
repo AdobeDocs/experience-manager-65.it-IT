@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -97,7 +97,7 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>Il servizio Forms salva i dati PDF come file PDF. </p></td>
+   <td><p>Il servizio Moduli salva i dati PDF come file PDF. </p></td>
   </tr>
  </tbody>
 </table>
@@ -146,23 +146,23 @@ Per recuperare i dati del modulo inviati, è necessario richiamare il `FormsServ
 
 >[!NOTE]
 >
->Nella sezione Gestione dei moduli inviati sono associati tre avvii rapidi corrispondenti. La gestione dei moduli PDF inviati come PDF tramite l&#39;introduzione rapida API Java illustra come gestire i dati PDF inviati. Il tipo di contenuto specificato in questo avvio rapido è `application/pdf`. La gestione dei moduli PDF inviati come XML tramite l&#39;avvio rapido dell&#39;API Java illustra come gestire i dati XML inviati da un modulo PDF. Il tipo di contenuto specificato in questo avvio rapido è `text/xml`. Analogamente, il rapido avvio della gestione dei moduli HTML inviati come XML tramite l&#39;API Java illustra come gestire i dati XML inviati da un modulo HTML. Il tipo di contenuto specificato in questo avvio rapido è application/x-www-form-urlencoded.
+>Nella sezione Gestione dei moduli inviati sono associati tre avvii rapidi corrispondenti. La gestione dei moduli PDF inviati come PDF tramite l&#39;avvio rapido dell&#39;API Java illustra come gestire i dati PDF inviati. Il tipo di contenuto specificato in questo avvio rapido è `application/pdf`. La gestione dei moduli PDF inviati come XML tramite l&#39;avvio rapido dell&#39;API Java illustra come gestire i dati XML inviati da un modulo PDF. Il tipo di contenuto specificato in questo avvio rapido è `text/xml`. Analogamente, il rapido avvio della gestione dei moduli HTML inviati come XML tramite l&#39;API Java illustra come gestire i dati XML inviati da un modulo HTML. Il tipo di contenuto specificato in questo avvio rapido è application/x-www-form-urlencoded.
 
 È possibile recuperare i dati del modulo inviati al servizio Forms e determinarne lo stato di elaborazione. In altre parole, quando i dati vengono inviati al servizio Forms, non significa necessariamente che il servizio Forms abbia terminato l&#39;elaborazione dei dati e che i dati siano pronti per essere elaborati. Ad esempio, è possibile inviare i dati al servizio Forms per eseguire un calcolo. Una volta completato il calcolo, all&#39;utente viene eseguito il rendering del modulo con i risultati del calcolo visualizzati. Prima di elaborare i dati inviati, si consiglia di determinare se il servizio Forms ha terminato l&#39;elaborazione dei dati.
 
 Il servizio Forms restituisce i seguenti valori per indicare se ha completato l&#39;elaborazione dei dati:
 
-* **** 0 (Invia): I dati inviati sono pronti per essere elaborati.
-* **** 1 (Calcola): Il servizio Forms ha eseguito un&#39;operazione di calcolo sui dati e i risultati devono essere restituiti all&#39;utente.
-* **** 2 (Convalida): I dati del modulo convalidati dal servizio Forms e i risultati devono essere restituiti all&#39;utente.
-* **** 3 (successivo): La pagina corrente è cambiata con risultati che devono essere scritti nell&#39;applicazione client.
+* **0 (Invia):** I dati inviati sono pronti per essere elaborati.
+* **1 (Calcola):** Il servizio Forms ha eseguito un&#39;operazione di calcolo sui dati e i risultati devono essere restituiti all&#39;utente.
+* **2 (Convalida):** I dati del modulo convalidati dal servizio Forms e i risultati devono essere restituiti all&#39;utente.
+* **3 (successivo):** La pagina corrente è cambiata con risultati che devono essere scritti nell&#39;applicazione client.
 * **4 (precedente**): La pagina corrente è cambiata con risultati che devono essere scritti nell&#39;applicazione client.
 
 >[!NOTE]
 >
->I calcoli e le convalide devono essere sottoposti a nuovo rendering per l&#39;utente. (Vedere [Calcolo dei dati]del modulo(/help/forms/developing/rendering-forms-calculate-form-form-data-calculate-form-form-form-form-data-calculate-form.md#calculate-form-data)*.)*
+>I calcoli e le convalide devono essere sottoposti a nuovo rendering per l&#39;utente. (Vedere [Calcolo dei dati](/help/forms/developing/calculating-form-data.md#calculating-form-data)del modulo.
 
-**Determinare se l&#39;invio del modulo contiene allegati**
+**Determinare se l&#39;invio del modulo contiene file allegati**
 
 I moduli inviati al servizio Forms possono contenere file allegati. Ad esempio, utilizzando il riquadro allegato integrato di Acrobat, l&#39;utente può selezionare assieme al modulo i file allegati da inviare. Inoltre, un utente può selezionare gli allegati dei file utilizzando una barra degli strumenti HTML di cui viene eseguito il rendering con un file HTML.
 
@@ -217,11 +217,11 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (Java):
       * Un `RenderOptionsSpec` oggetto che memorizza le opzioni di esecuzione.
       Il `processFormSubmission` metodo restituisce un `FormsResult` oggetto contenente i risultati dell&#39;invio del modulo.
 
-   * Determinare se il servizio Forms ha completato l&#39;elaborazione dei dati del modulo richiamando il `FormsResult` metodo dell&#39; `getAction` oggetto. Se questo metodo restituisce il valore, `0`i dati sono pronti per essere elaborati.
+   * Determinare se il servizio Forms ha completato l&#39;elaborazione dei dati del modulo richiamando il `FormsResult` metodo dell&#39;oggetto `getAction` . Se questo metodo restituisce il valore, `0`i dati sono pronti per essere elaborati.
 
 
 
-1. Determinare se l&#39;invio del modulo contiene allegati
+1. Determinare se l&#39;invio del modulo contiene file allegati
 
    * Richiama il metodo dell’ `FormsResult` oggetto `getAttachments` . Questo metodo restituisce un `java.util.List` oggetto che contiene i file inviati con il modulo.
    * Eseguire un&#39;iterazione sull&#39; `java.util.List` oggetto per determinare se sono presenti allegati di file. In presenza di allegati, ogni elemento è un&#39; `com.adobe.idp.Document` istanza. È possibile salvare gli allegati richiamando il `com.adobe.idp.Document` metodo dell&#39;oggetto `copyToFile` e passando un `java.io.File` oggetto.
@@ -295,10 +295,10 @@ Gestire un modulo inviato utilizzando l&#39;API Forms (servizio Web):
       * Un `FormsResultHolder` oggetto vuoto compilato dal metodo con il modulo inviato.
       Il `processFormSubmission` metodo compila il `FormsResultHolder` parametro con i risultati dell&#39;invio del modulo.
 
-   * Determinare se il servizio Forms ha completato l&#39;elaborazione dei dati del modulo richiamando il `FormsResult` metodo dell&#39; `getAction` oggetto. Se questo metodo restituisce il valore, i dati del modulo sono pronti per essere elaborati. `0` È possibile ottenere un `FormsResult` oggetto ottenendo il valore del membro `FormsResultHolder` dati `value` dell&#39;oggetto.
+   * Determinare se il servizio Forms ha completato l&#39;elaborazione dei dati del modulo richiamando il `FormsResult` metodo dell&#39;oggetto `getAction` . Se questo metodo restituisce il valore, `0`i dati del modulo sono pronti per essere elaborati. È possibile ottenere un `FormsResult` oggetto ottenendo il valore del membro `FormsResultHolder` dati `value` dell&#39;oggetto.
 
 
-1. Determinare se l&#39;invio del modulo contiene allegati
+1. Determinare se l&#39;invio del modulo contiene file allegati
 
    Ottenere il valore del membro `MyArrayOf_xsd_anyTypeHolder` dati dell&#39; `value` oggetto (l&#39; `MyArrayOf_xsd_anyTypeHolder` oggetto è stato passato al `processFormSubmission` metodo). Questo membro di dati restituisce un array di `Objects`. Ogni elemento all&#39;interno dell&#39; `Object` array corrisponde `Object`ai file inviati insieme al modulo. È possibile ottenere ogni elemento all&#39;interno della matrice e inviarlo a un `BLOB` oggetto.
 
