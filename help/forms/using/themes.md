@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -415,7 +415,7 @@ Le opzioni per la personalizzazione degli stili di stato variano per i diversi c
    <td><p>Consente di aggiungere effetti speciali ai componenti come opacità, metodo di fusione e ombre. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzate  </p> </td>
+   <td><p>Avanzate </p> </td>
    <td><p>Consente di aggiungere:</p>
     <ul>
      <li>Proprietà per <code>::before</code> e <code>::after</code> pseudo elementi per aggiungere contenuto dopo o prima del contenuto predefinito nel selettore e formattarlo.<br /> Consultate Elementi Pseudo <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS</a>.</li>
@@ -564,7 +564,7 @@ Per applicare un tema a una comunicazione interattiva:
 
    È possibile modificare le proprietà del modulo nella barra laterale.
 
-1. Nella barra laterale, in** Base**, selezionate il tema dal menu a discesa **Tema** e fate clic sul pulsante **Fine** ![controllo](assets/check-button.png)
+1. Nella barra laterale, in **Base**, selezionate il tema dal menu a discesa **Tema** e fate clic sul pulsante **Fine** ![controllo](assets/check-button.png)
 
 ### Modifica del tema di un modulo in fase di esecuzione {#change-theme-of-a-form-at-runtime}
 
