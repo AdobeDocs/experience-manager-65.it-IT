@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
+source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
 
 ---
 
@@ -151,8 +151,8 @@ Inoltre, la console fornisce informazioni utili sulle versioni:
 
 Nell&#39;esempio seguente:
 
-* Le versioni **Shirts** vengono eliminate perché la loro età è superiore a 2 giorni.
-* Le Moda **Tonga!** le versioni vengono eliminate perché il loro numero è maggiore di 5.
+* Le **[!DNL Shirts]** versioni vengono eliminate perché la loro età è superiore a 2 giorni.
+* Le **[!DNL Tonga Fashions!]** versioni vengono eliminate perché il loro numero è maggiore di 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -1034,7 +1034,7 @@ Se il sistema non dispone di memoria sufficiente, questo può essere visualizzat
 
 In questi casi controllare:
 
-* le impostazioni JVM utilizzate per [avviare AEM](/help/sites-deploying/deploy.md#getting-started)
+* Impostazioni JVM utilizzate per [avviare AEM](/help/sites-deploying/deploy.md#getting-started)
 * La Knowledge Base:
 
    * [Analisi dei problemi di memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
