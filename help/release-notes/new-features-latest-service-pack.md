@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -98,9 +98,13 @@ Experience Manager Forms include i seguenti miglioramenti a livello di accessibi
 
 ## Funzioni principali nei precedenti Service Pack di AEM 6.5 {#key-features-previous-service-packs}
 
-### Immagini intelligenti per contenuti multimediali dinamici (6.5.3.0) {#smart-imaging}
+### Immagini intelligenti per contenuti multimediali dinamici {#smart-imaging}
 
 Le immagini intelligenti utilizzano le caratteristiche di visualizzazione esclusive di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento. La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Consultate [Smart Imaging](../assets/imaging-faq.md).
+
+### Ritaglio avanzato nei profili video per contenuti multimediali dinamici (6.5.3.0) {#smart-crop-video}
+
+La funzione di ritaglio avanzato per i video, una funzione opzionale disponibile nei profili video, è uno strumento che utilizza l&#39;intelligenza artificiale di Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o progressivo caricato, indipendentemente dalle dimensioni. Consultate [Utilizzo del ritaglio avanzato nei profili](../assets/video-profiles.md)video.
 
 ### Ricerca visiva di Risorse AEM (6.5.2.0) {#visual-search}
 
@@ -151,7 +155,7 @@ Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzi
 
 * Risorse AEM: Desktop App 2.0.1.1
 
-   Consultate [Ottenere l’accesso desktop alle risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+   Consultate [Ottenere l’accesso desktop alle risorse](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens: Feature Pack 202001
 
