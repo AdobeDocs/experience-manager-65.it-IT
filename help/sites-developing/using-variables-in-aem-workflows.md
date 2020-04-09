@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc042696506bf1691c2eeffc6ab941be85fa274c
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -23,7 +23,7 @@ Nei modelli di flusso di lavoro AEM è possibile:
 
 * [Creare una variabile](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) di un tipo di dati in base al tipo di informazioni che si desidera memorizzare al suo interno.
 * [Impostate un valore per la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) utilizzando il passaggio del flusso di lavoro Imposta variabile.
-* [Utilizzate la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) nei passaggi del flusso di lavoro di OPPURE Split e Goto AEM per definire un&#39;espressione per prendere decisioni di routing. È inoltre possibile utilizzare le variabili in tutti i passaggi del flusso di lavoro di AEM Forms.
+* [Utilizzate la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) nei passaggi del flusso di lavoro di OPPURE Split e Goto AEM per definire un&#39;espressione per l&#39;adozione di decisioni di routing. È inoltre possibile utilizzare le variabili in tutti i passaggi del flusso di lavoro di AEM Forms.
 
 Il seguente video illustra come creare, impostare e utilizzare le variabili nei modelli di flusso di lavoro AEM:
 
@@ -57,7 +57,7 @@ Per creare una variabile, eseguite i seguenti passaggi:
 
    * Tipo di dati di base - Specificate un valore predefinito facoltativo per la variabile.
    * JSON o XML - Specificate un percorso di schema JSON o XML facoltativo. Il sistema convalida il percorso dello schema durante la mappatura e la memorizzazione delle proprietà disponibili in questo schema a un&#39;altra variabile.
-   * Modello dati modulo - Specifica un percorso del modello dati modulo.
+   * Modello dati modulo - Specifica un percorso del modello dati del modulo.
    * ArrayList - Specifica un sottotipo per la raccolta.
 
 1. Specificate una descrizione facoltativa per la variabile e toccate ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
@@ -76,12 +76,12 @@ Le modifiche ai valori delle variabili interessano solo l’istanza del processo
 
 A seconda del tipo di dati della variabile, è possibile utilizzare le seguenti opzioni per impostare il valore di una variabile:
 
-* **** Letterale: Utilizzate l&#39;opzione quando conoscete il valore esatto da specificare.
-* **** Espressione: Utilizzare l&#39;opzione quando il valore da utilizzare viene calcolato in base a un&#39;espressione. L&#39;espressione viene creata nell&#39;editor di espressioni fornito.
-* **** Notazione punto JSON: Utilizzate l&#39;opzione per recuperare un valore da una variabile di tipo JSON o FDM.
-* **** XPATH: Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo XML.
-* **** Relativo al payload: Utilizzare l&#39;opzione quando il valore da salvare in variabile è disponibile in un percorso relativo al payload.
-* **** Percorso assoluto: Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso assoluto.
+* **Letterale:** Utilizzate l&#39;opzione quando conoscete il valore esatto da specificare.
+* **Espressione:** Utilizzare l&#39;opzione quando il valore da utilizzare viene calcolato in base a un&#39;espressione. L&#39;espressione viene creata nell&#39;editor di espressioni fornito.
+* **Notazione punto JSON:** Utilizzate l&#39;opzione per recuperare un valore da una variabile di tipo JSON o FDM.
+* **XPATH:** Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo XML.
+* **Relativo al payload:** Utilizzare l&#39;opzione quando il valore da salvare in variabile è disponibile in un percorso relativo al payload.
+* **Percorso assoluto:** Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso assoluto.
 
 Potete anche aggiornare elementi specifici di una variabile di tipo JSON o XML utilizzando la notazione JSON DOT o XPATH.
 
@@ -93,7 +93,7 @@ Per aggiungere la mappatura tra le variabili, effettua i seguenti passaggi:
 1. Trascinate il passaggio **Imposta variabile** nell’editor del flusso di lavoro, toccate il passaggio e selezionate ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configura).
 1. Nella finestra di dialogo Imposta variabile, selezionare **[!UICONTROL Mapping]** > **[!UICONTROL Aggiungi mapping]**.
 1. Nella sezione Variabile **** mappa, selezionate la variabile da memorizzare i dati, selezionate la modalità di mappatura e specificate un valore da memorizzare nella variabile. Le modalità di mappatura variano in base al tipo di variabile.
-1. Mappare più variabili per creare un&#39;espressione significativa. Toccate ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) per salvare le modifiche.
+1. Mappare più variabili per creare un&#39;espressione significativa. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes.
 
 ### Esempio 1: Eseguire una query su una variabile XML per impostare il valore di una variabile stringa {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -113,11 +113,11 @@ In questo esempio, utilizzate l&#39;editor di espressioni per definire un&#39;es
 
 ## Usa editor espressioni {#use-expression-editor}
 
-È inoltre possibile utilizzare le espressioni per calcolare il valore di una variabile nel runtime. Le variabili forniscono un editor di espressioni per definire le espressioni.
+È inoltre possibile utilizzare le espressioni per calcolare il valore di una variabile in fase di esecuzione. Le variabili forniscono un editor di espressioni per definire le espressioni.
 
 Utilizzate l&#39;editor di espressioni per:
 
-* Impostare il valore delle variabili utilizzando altre variabili di flusso di lavoro, numeri o espressioni matematiche.
+* Impostate il valore delle variabili utilizzando altre variabili di flusso di lavoro, numeri o espressioni matematiche.
 * Utilizzare variabili di flusso di lavoro, stringa, numero o espressione all&#39;interno di un&#39;espressione matematica
 * Aggiungere condizioni per impostare i valori delle variabili.
 * Aggiungere operatori tra le condizioni.
@@ -154,7 +154,7 @@ La divisione OR crea una divisione nel flusso di lavoro, dopo di che è attivo u
 
 È possibile utilizzare le variabili per definire l&#39;espressione di routing utilizzando l&#39;editor di espressioni. Per ulteriori informazioni sull&#39;uso delle espressioni di routing per il passaggio di divisione OR, vedere Passaggio [di divisione](/help/sites-developing/workflows-step-ref.md#or-split)OR.
 
-In questo esempio, prima di definire l&#39;espressione di routing, utilizzare [l&#39;esempio 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) per impostare il valore per la variabile **totalvalue** . Il ramo 1 è attivo se il valore della variabile **total value** è maggiore di 50000. Allo stesso modo, è possibile definire una regola per rendere attivo il ramo 2 se il valore della variabile **total value** è inferiore a 50000.
+In questo esempio, prima di definire l&#39;espressione di routing, utilizzare [l&#39;esempio 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) per impostare il valore per la variabile **totalvalue** . La diramazione 1 è attiva se il valore della variabile **total value** è maggiore di 50000. Allo stesso modo, è possibile definire una regola per rendere attivo il ramo 2 se il valore della variabile **total value** è inferiore a 50000.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -226,7 +226,7 @@ Potete utilizzare un&#39;API per impostare le variabili e passarle alle istanze 
 
 [workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) utilizza model, wfData e metaData come argomenti. Utilizzate MetaDataMap per impostare il valore della variabile.
 
-In questa API, la variabile **variableName** è impostata su **value **utilizzando metaData.put(variableName, value);
+In questa API, la variabile **variableName** è impostata su **value** utilizzando metaData.put(variableName, value);
 
 ```java
 import com.adobe.granite.workflow.model.WorkflowModel;
