@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 3fe5f243c3e39029c1605a1a1977a48dba595d64
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -64,7 +64,9 @@ Per richiamare un servizio AEM Forms a livello di programmazione utilizzando l&#
 * Il servizio AEM Forms da richiamare. Un&#39;applicazione client può richiamare uno o più servizi.
 * Modalità in cui si desidera richiamare un servizio AEM Forms. È possibile utilizzare la modalità EJB o SOAP. (Vedere [Impostazione delle proprietà](invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
 
->[!NOTE] (Solo chiavi in mano) Avviate il server AEM Forms con il comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` per specificare un IP server per EJB
+>[!NOTE]
+>
+>(Solo chiavi in mano) Avviate il server AEM Forms con il comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` per specificare un IP server per EJB
 
 * Server applicazioni J2EE su cui è distribuito AEM Forms.
 
@@ -137,7 +139,7 @@ Nella tabella seguente sono elencati i file JAR necessari per richiamare i servi
    <td><p>&lt;directory<i>di</i>installazione&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-encry-client.jar</p></td>
+   <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Richiesto per richiamare il servizio di cifratura.</p></td>
    <td><p>&lt;directory<i>di</i>installazione&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -195,7 +197,7 @@ Nella tabella seguente sono elencati i file JAR necessari per richiamare i servi
      <li><p>jaxb-impl.jar</p></li>
      <li><p>jaxb-libs.jar</p></li>
      <li><p>jaxb-xjc.jar</p></li>
-     <li><p>relaxngDataType.jar</p></li>
+     <li><p>relaxngDatatype.jar</p></li>
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>Richiesto per richiamare il servizio Rights Management.</p><p>Se AEM Forms è implementato su JBoss, includi tutti questi file. </p></td>
@@ -207,7 +209,7 @@ Nella tabella seguente sono elencati i file JAR necessari per richiamare i servi
    <td><p>&lt;directory<i>di</i>installazione&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-task manager-client-sdk.jar</p></td>
+   <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>Richiesto per richiamare il servizio Task Manager. </p></td>
    <td><p>&lt;directory<i>di</i>installazione&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -235,7 +237,7 @@ Nella tabella seguente sono elencati i file JAR dipendenti dalla modalità di co
   <tr>
    <td>
     <ul>
-     <li><p>Activ.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
@@ -249,7 +251,7 @@ Nella tabella seguente sono elencati i file JAR dipendenti dalla modalità di co
      <li><p>saaj.jar</p> </li>
      <li><p>wsdl4j.jar</p> </li>
      <li><p>xalan.jar</p> </li>
-     <li><p>xchild.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
     </ul>
     <ul>
      <li>xercesImpl.jar<br /> </li>
@@ -343,7 +345,7 @@ La tabella seguente specifica gli scenari di chiamata ed elenca i file JAR richi
      <li><p>adobe-livecycle-client.jar</p> </li>
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
-     <li><p>Activ.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
@@ -358,7 +360,7 @@ La tabella seguente specifica gli scenari di chiamata ed elenca i file JAR richi
      <li><p>saaj.jar</p> </li>
      <li><p>wsdl4j.jar</p> </li>
      <li><p>xalan.jar</p> </li>
-     <li><p>xchild.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
      <li><p>xercesImpl.jar</p> </li>
      <li><p>adobe-forms-client.jar</p> </li>
     </ul> </td>
@@ -372,7 +374,7 @@ La tabella seguente specifica gli scenari di chiamata ed elenca i file JAR richi
      <li><p>adobe-livecycle-client.jar</p> </li>
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
-     <li><p>Activ.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
@@ -387,7 +389,7 @@ La tabella seguente specifica gli scenari di chiamata ed elenca i file JAR richi
      <li><p>saaj.jar</p> </li>
      <li><p>wsdl4j.jar</p> </li>
      <li><p>xalan.jar</p> </li>
-     <li><p>xchild.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
      <li><p>xercesImpl.jar</p> </li>
      <li><p>adobe-forms-client.jar</p> </li>
      <li><p>adobe-reader-extensions-client.jar</p> </li>
@@ -989,7 +991,7 @@ Anche se ottenere un `ServiceClientFactory` è in genere veloce, alcuni sovracca
 1. Aggiungere il contenuto dell&#39; `com.adobe.idp.Document` oggetto all&#39; `ResourceContent` oggetto richiamando il metodo dell&#39; `ResourceContent` oggetto `setDataDocument` . Passate l&#39; `com.adobe.idp.Document` oggetto.
 1. Impostare il tipo MIME del file XDP da aggiungere all&#39;archivio richiamando il `ResourceContent` metodo dell&#39;oggetto e passando `setMimeType` `application/vnd.adobe.xdp+xml`.
 1. Aggiungete il contenuto dell&#39; `ResourceContent` oggetto all&#39; `Resource` oggetto richiamando il metodo `Resource` ‘s `setContent` dell&#39;oggetto e passando l&#39; `ResourceContent` oggetto.
-1. Aggiungete una descrizione della risorsa richiamando il `Resource` metodo ‘s `setDescription` dell’oggetto e passando un valore di stringa che rappresenta una descrizione della risorsa.
+1. Aggiungete una descrizione della risorsa richiamando il `Resource` metodo ‘s `setDescription` e passando un valore di stringa che rappresenta una descrizione della risorsa.
 1. Aggiungere la struttura del modulo all&#39;archivio richiamando il metodo dell&#39; `ResourceRepositoryClient` oggetto `writeResource` e passando i valori seguenti:
 
    * Valore stringa che specifica il percorso della raccolta di risorse contenente la nuova risorsa
