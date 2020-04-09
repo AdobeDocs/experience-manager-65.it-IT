@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,8 +23,7 @@ Un amministratore può configurare una cartella di rete, nota come Cartella esam
 
 Per creare una cartella esaminata nel file system è possibile utilizzare uno dei seguenti metodi:
 
-* Durante la configurazione delle proprietà di un nodo di configurazione Cartella esaminata, digitare il percorso completo della directory principale nella proprietà folderPath e aggiungere il nome della cartella esaminata da creare, come illustrato nell&#39;esempio seguente: `C:/MyPDFs/MyWatchedFolder`\
-   La `MyWatchedFolder`cartella non esiste, AEM Forms tenta di creare la cartella nel percorso specificato.
+* Durante la configurazione delle proprietà di un nodo di configurazione Cartella esaminata, digitare il percorso completo della directory principale nella proprietà folderPath e aggiungere il nome della cartella esaminata da creare, come illustrato nell&#39;esempio seguente: `C:/MyPDFs/MyWatchedFolder`La `MyWatchedFolder`cartella non esiste, AEM Forms tenta di creare la cartella nel percorso specificato.
 
 * Create una cartella sul file system prima di configurare un endpoint di tipo Cartella esaminata, quindi immettete il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere Proprietà [cartella](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)esaminate.
 
@@ -90,8 +89,8 @@ Per configurare una cartella esaminata, create un nodo di configurazione della c
 * **deleteExpiredStageFileOnlyWhenThrottled (booleano, valore predefinito true):** Indica se il meccanismo di scadenza deve essere attivato solo quando la cartella di controllo è limitata. Il meccanismo è più pertinente per le cartelle di orologi limitate in quanto un numero limitato di file che si trovano in uno stato non elaborato (a causa di errori di processo/flusso di lavoro intermittenti) ha il potenziale di soffocare l&#39;elaborazione per l&#39;intero batch quando la limitazione è abilitata. Se questa proprietà viene mantenuta come true (impostazione predefinita), il meccanismo di scadenza non si attiva per le cartelle di controllo che non sono limitate. Se la proprietà viene mantenuta come false, il meccanismo si attiva sempre che la proprietà stageFileExpirationDuration sia un numero positivo.
 
 * **pollInterval (Long)**: L&#39;intervallo in secondi per la scansione della cartella esaminata per l&#39;input. A meno che l’impostazione Limita non sia abilitata, l’intervallo di sondaggio deve essere più lungo del tempo necessario per elaborare un processo medio; in caso contrario, il sistema potrebbe sovraccaricarsi. Il valore predefinito è 5. Per ulteriori informazioni, consultate la descrizione per Dimensione batch. Il valore dell&#39;intervallo polling deve essere maggiore o uguale a uno.
-* **excludeFilePattern (String)**: Un elenco delimitato da punti e virgola (;) di pattern utilizzati da una cartella esaminata per determinare quali file e cartelle acquisire e acquisire. Qualsiasi file o cartella con questo pattern non viene sottoposto a scansione per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella esaminata. Ciò impedisce alla cartella esaminata di acquisire una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.\
-   È possibile utilizzare i pattern [di](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) file per escludere:
+* **excludeFilePattern (String)**: Un elenco delimitato da punti e virgola (;) di pattern utilizzati da una cartella esaminata per determinare quali file e cartelle acquisire e acquisire. Qualsiasi file o cartella con questo pattern non viene sottoposto a scansione per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella esaminata. Ciò impedisce alla cartella esaminata di acquisire una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
+È possibile utilizzare i pattern [di](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) file per escludere:
 
    * file con specifiche estensioni di file; ad esempio, *.dat, *.xml, .pdf, *.*
    * File con nomi specifici; ad esempio, data* escluderebbe i file e le cartelle denominati data1, data2 e così via.
@@ -216,16 +215,13 @@ Un servizio è un&#39;implementazione personalizzata dell&#39; `com.adobe.aemfd.
 
 #### Implementazione personalizzata dell&#39;interfaccia ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-L&#39;implementazione personalizzata accetta un contesto di elaborazione (un oggetto di tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), legge i documenti di input e i parametri di configurazione dal contesto, elabora gli input e aggiunge l&#39;output al\
-context. ProcessorContext dispone delle seguenti API:
+L&#39;implementazione personalizzata accetta un contesto di elaborazione (un oggetto di tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), legge i documenti di input e i parametri di configurazione dal contesto, elabora gli input e aggiunge l&#39;output al contesto. ProcessorContext dispone delle seguenti API:
 
 * **getWatchFolderId**: Restituisce l’ID della cartella esaminata.
 * **getInputMap**: Restituisce una mappa di tipo Mappa. Le chiavi della mappa sono il nome del file di input e un oggetto documento contenente il contenuto del file. Utilizzate l&#39;API getInputMap per leggere i file di input.
-* **getConfigParameters**: Restituisce una mappa immutabile di tipo Mappa. La mappa contiene\
-   i parametri di configurazione di una cartella esaminata.
+* **getConfigParameters**: Restituisce una mappa immutabile di tipo Mappa. La mappa contiene i parametri di configurazione di una cartella esaminata.
 
-* **setResult**: Implementazione di ContentProcessor\
-   utilizza l&#39;API per scrivere il documento di output nella cartella dei risultati. Potete fornire un nome per il file di output all&#39;API setResult. L&#39;API potrebbe scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output/del pattern di file specificato. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file.
+* **setResult**: L&#39;implementazione di ContentProcessor utilizza l&#39;API per scrivere il documento di output nella cartella dei risultati. Potete fornire un nome per il file di output all&#39;API setResult. L&#39;API potrebbe scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output/del pattern di file specificato. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file.
 
 Ad esempio, il codice seguente è un&#39;implementazione personalizzata dell&#39;interfaccia ContentProcessor con una proprietà foo=bar personalizzata.
 
@@ -276,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -298,8 +294,8 @@ Ora è possibile utilizzare il percorso personalizzato configurato per salvare g
 I flussi di lavoro consentono di automatizzare le attività di Experience Manager. I flussi di lavoro sono composti da una serie di passaggi eseguiti in un ordine specifico. Ogni passaggio esegue un&#39;attività distinta, ad esempio l&#39;attivazione di una pagina o l&#39;invio di un messaggio e-mail. I flussi di lavoro possono interagire con le risorse presenti nell’archivio, negli account utente e nei servizi Experience Manager. Pertanto, i flussi di lavoro possono coordinare in modo complicato.
 
 * Prima di creare un Flusso di lavoro, considera quanto segue:
-* L&#39;output di un passaggio deve essere disponibile per tutti i passaggi successivi.\
-   I passaggi devono essere in grado di aggiornare (o addirittura eliminare) gli output esistenti generati dai passaggi precedenti.
+* L&#39;output di un passaggio deve essere disponibile per tutti i passaggi successivi.
+I passaggi devono essere in grado di aggiornare (o addirittura eliminare) gli output esistenti generati dai passaggi precedenti.
 * Le variabili mutabili vengono utilizzate per far scorrere i dati dinamici personalizzati tra i passaggi.
 
 Per elaborare i file utilizzando i flussi di lavoro, effettuate le seguenti operazioni:
@@ -347,7 +343,7 @@ Considerazione per l&#39;API setResult, se utilizzata nei flussi di lavoro:
 >
 >La chiamata dell&#39;API setResult con contenuto nullo in qualsiasi altro scenario comporterebbe un errore.
 
-L&#39;esempio seguente è implementato come passaggio del flusso di lavoro. Nell&#39;esempio, ECMAscript utilizza una variabile stepCount per tenere traccia del numero di volte in cui un passaggio viene chiamato nell&#39;istanza del flusso di lavoro corrente.\
+L&#39;esempio seguente è implementato come passaggio del flusso di lavoro. Nell&#39;esempio, ECMAscript utilizza una variabile stepCount per tenere traccia del numero di volte in cui un passaggio viene chiamato nell&#39;istanza del flusso di lavoro corrente.
 Il nome della cartella di output è una combinazione di numero del passaggio corrente, nome del file originale e prefisso specificati nel parametro outPrefix.
 
 ECMAScript ottiene un riferimento al servizio di contesto del flusso di lavoro e crea un&#39;implementazione dell&#39;interfaccia WorkflowContextProcessor. L&#39;implementazione WorkflowContextProcessor accetta i file di input, copia il file in una posizione temporanea e restituisce un documento che rappresenta il file copiato. In base al valore della variabile booleana purgePrevious, il passaggio corrente elimina l&#39;output generato l&#39;ultima volta dallo stesso passaggio quando il passaggio è stato avviato nell&#39;istanza del flusso di lavoro corrente. Alla fine, il metodo wfSvc.execute viene richiamato per eseguire l&#39;implementazione WorkflowContextProcessor. Il contenuto del documento di output viene salvato nella cartella dei risultati nel percorso fisico indicato nel nodo di configurazione Cartella esaminata.
@@ -366,8 +362,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +374,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -631,8 +627,8 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
 ### Creazione di un flusso di lavoro {#create-a-workflow}
 
-1. Apri l’interfaccia utente di AEM Workflow in una finestra del browser.\
-   https://[nomeserver]:&#39;porta&#39;/flusso di lavoro
+1. Apri l’interfaccia utente di AEM Workflow in una finestra del browser.
+https://[nomeserver]:&#39;porta&#39;/flusso di lavoro
 
 1. Nella visualizzazione Modelli, fare clic su **Nuovo**. Nella finestra di dialogo Nuovo flusso di lavoro, specificate **Titolo** e fate clic su **OK**.
 
@@ -642,7 +638,7 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
 1. Elimina il passaggio del flusso di lavoro predefinito. Trascinare il Passaggio processo dalla barra laterale al flusso di lavoro.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Fare clic con il pulsante destro del mouse sul passo Processo e selezionare **Modifica**. Viene visualizzata la finestra Proprietà passaggio.
 
@@ -660,8 +656,8 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
 1. Aggiungi le seguenti proprietà al nodo:
 
-   * folderPath (String): Percorso della cartella da analizzare a intervalli di tempo definiti. La cartella deve trovarsi in un percorso condiviso con tutti i server che dispongono dell&#39;accesso completo al server.\
-      inputProcessorType (String): Il tipo di processo da avviare. In questa esercitazione, specificate il flusso di lavoro.
+   * folderPath (String): Percorso della cartella da analizzare a intervalli di tempo definiti. La cartella deve trovarsi in un percorso condiviso con tutti i server che dispongono dell&#39;accesso completo al server.
+inputProcessorType (String): Il tipo di processo da avviare. In questa esercitazione, specificate il flusso di lavoro.
 
    * inputProcessorId (String): Il comportamento della proprietà inputProcessorId si basa sul valore specificato per la proprietà inputProcessorType. In questo esempio, il valore della proprietà inputProcessorType è workflow. Pertanto, per la proprietà inputProcessorId specificare il seguente percorso del flusso di lavoro PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
