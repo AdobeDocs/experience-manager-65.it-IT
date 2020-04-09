@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -241,7 +241,7 @@ Il rendiconto della carta di credito visualizza le offerte promozionali verso la
 
 ### We.Finance analizza le prestazioni dell&#39;applicazione della carta di credito {#we-finance-analyzes-the-performance-of-the-credit-card-application}
 
-We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione con carta di credito per verificare la presenza di eventuali problemi che i clienti potrebbero dover affrontare. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione della carta di credito per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e migliorare così la conversione. Sfruttano l&#39;integrazione di AEM Forms con Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il loro dashboard di analisi.
+We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione con carta di credito per verificare la presenza di eventuali problemi che i clienti potrebbero dover affrontare. Utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione della carta di credito per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli e migliorare così la conversione. Sfruttano l&#39;integrazione di AEM Forms con Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il dashboard di analisi.
 
 Per ulteriori informazioni sull&#39;interpretazione del dashboard di analisi, consultate [Visualizzazione e comprensione dei rapporti](../../forms/using/view-understand-aem-forms-analytics-reports.md)di analisi di AEM Forms.
 
@@ -298,9 +298,9 @@ Effettuare le seguenti operazioni per verificare la creazione di test A/B per il
 1. Passare all&#39;interfaccia utente Moduli e documenti, selezionare il modulo, fare clic su **Altro** e selezionare **Avvia test** A/B.
 1. Ora apri il modulo in browser Chrome diverse volte utilizzando il seguente URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Nota: Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
+   >[!NOTE] Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
 
 1. Selezionate il modulo, fate clic su **Altro** e fate clic su Rapporto **** test A/B. Non troverai molti dati nel rapporto come hai appena iniziato il test. Forniamo ora alcuni dati iniziali per vedere come si presenterà il rapporto Test A/B.
 1. Aprite CRXDE Lite ed effettuate il backup del seguente file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -492,7 +492,7 @@ Potete accedervi nelle istanze di creazione e pubblicazione.
 
 ### We.Finance analizza le prestazioni dell&#39;applicazione ipoteca {#we-finance-analyzes-the-performance-of-the-mortgage-application}
 
-We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione di ipoteca per controllare eventuali problemi che i clienti potrebbero dover affrontare. Essi utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione del mutuo per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli, e quindi migliorare la conversione. Sfruttano l&#39;integrazione di AEM Forms con Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il loro dashboard di analisi.
+We.Finance, di tanto in tanto, esamina le prestazioni della loro applicazione di ipoteca per controllare eventuali problemi che i clienti potrebbero dover affrontare. Essi utilizzano questa analisi per prendere decisioni informate sulle modifiche richieste nell&#39;applicazione del mutuo per migliorare l&#39;esperienza dell&#39;utente, ridurre il tasso di abbandono dei moduli, e quindi migliorare la conversione. Sfruttano l&#39;integrazione di AEM Forms con Adobe Analytics per la loro analisi. L&#39;immagine seguente mostra il dashboard di analisi.
 
 Per ulteriori informazioni sull&#39;interpretazione del dashboard di analisi, consultate [Visualizzazione e comprensione dei rapporti](../../forms/using/view-understand-aem-forms-analytics-reports.md)di analisi di AEM Forms.
 
@@ -546,7 +546,7 @@ Per verificare la creazione di un test A/B per il modulo di richiesta di mutuo W
 1. Modificate il modulo nel modo desiderato per creare un&#39;esperienza diversa dall&#39;esperienza predefinita A.
 1. Passare all&#39;interfaccia utente Moduli e documenti, selezionare il modulo, fare clic su **Altro** e selezionare **Avvia test** A/B.
 1. Ora apri il modulo in browser Chrome diverse volte utilizzando il seguente URL:
-   `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
    > Rimuovere il cookie con il nome **mbox** dalla persistenza del cookie del browser prima di aprire il modulo la prossima volta. Verranno visualizzate le esperienze A e B del modulo a caso.
@@ -806,7 +806,7 @@ Sarah esplora le schede Panoramica, Prezzi e Prestazioni, Gestione dei portafogl
 
 La comunicazione interattiva Blue Chip Growth Fund utilizza i pannelli padre e figlio per separare le informazioni correlate in sezioni diverse. Il pannello principale organizza tutti i pannelli secondari in schede.
 
-Il layout della scheda principale è impostato su Tabulazioni in alto per convertire tutti i pannelli secondari in schede. È possibile esaminare i pannelli della comunicazione interattiva in modalità di modifica in `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
+Il layout della scheda principale è impostato su Tabulazioni in alto per convertire tutti i pannelli secondari in schede. È possibile esaminare i pannelli della comunicazione interattiva in modalità di modifica all&#39;indirizzo `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
 
 #### Vedi te stesso {#see-it-yourself-16}
 
@@ -886,7 +886,7 @@ Ora, accedete al dashboard **di assicurazione automatica** We.Finance come Conra
 
 Sarah riceve una email con un allegato da We.Finance che le ricorda che la sua assicurazione auto sta per scadere. L&#39;allegato è la versione cartacea dei dettagli di rinnovo della polizza di assicurazione auto.
 
-Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa, come Numero polizza, Importo dovuto, e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
+Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa come Numero polizza, Importo dovuto e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
 
 ![auto-assicurazione-rinnovo-email](assets/auto-insurance-renewal-email.png)
 
