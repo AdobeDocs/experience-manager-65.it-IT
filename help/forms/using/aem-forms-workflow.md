@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -107,7 +107,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
    ![Esempio di divisione OR](assets/orsplit_branch1_active_new.png)
 
-   **Espressione di routing per il ramo 1**
+   **Espressione di routing per il ramo 2**
 
    Quando un utente tocca **Rifiuta** in AEM Inbox, viene attivato il ramo 2.
 
@@ -271,4 +271,4 @@ Puoi utilizzare i passaggi Assegna attività e Invia e-mail di flussi di lavoro 
 
 ### Rimozione delle istanze del flusso di lavoro {#purge-workflow-instances}
 
-Riducendo il numero di istanze del flusso di lavoro si ottengono maggiori prestazioni nel motore del flusso di lavoro, è possibile eliminare regolarmente dal repository le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consultate la sezione sullo [scorrimento regolare delle istanze]del flusso di lavoro (/help/sites-administering/workflows-administering.md#normal pulging of workflow instance).
+Riducendo il numero di istanze del flusso di lavoro si ottengono maggiori prestazioni nel motore del flusso di lavoro, è possibile eliminare regolarmente dal repository le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consultate [Pulizia regolare delle istanze](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)del flusso di lavoro.
