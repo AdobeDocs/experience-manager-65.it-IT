@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,7 +23,7 @@ I moduli adattivi forniscono diversi flussi di lavoro per l&#39; [invio di azion
 
 Ad esempio, l’azione **Invia azione** e-mail invia un messaggio e-mail all’invio corretto di un modulo adattivo. È inoltre possibile configurare l&#39;invio tramite e-mail dei dati del modulo e del PDF.
 
-Questo articolo descrive i passaggi per attivare l’azione E-mail su un modulo adattivo e le diverse configurazioni che fornisce.
+Questo articolo descrive in dettaglio i passaggi per attivare l’azione E-mail su un modulo adattivo e le diverse configurazioni che fornisce.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ L’azione E-mail consente all’autore di inviare automaticamente e-mail a uno 
 
 >[!NOTE]
 >
->Per usare l’azione E-mail, dovete configurare il servizio e-mail AEM come descritto in [Configurazione del servizio]e-mail (/help/sites-administering/notification.md#configuring the mail service).
+>Per usare l’azione E-mail, dovete configurare il servizio e-mail AEM come descritto in [Configurazione del servizio](/help/sites-administering/notification.md#configuring-the-mail-service)e-mail.
 
 ### Attivazione dell&#39;azione e-mail in un modulo adattivo {#enabling-email-action-on-an-adaptive-form}
 
