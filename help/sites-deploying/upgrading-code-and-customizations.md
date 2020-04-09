@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -34,7 +34,7 @@ Durante la pianificazione e l&#39;aggiornamento, è necessario esaminare e affro
 1. **Compilare con 6.5 Uber jar **- Aggiornare i POM della base di codice in modo che puntino a 6.5 uber jar e compilare il codice in base a questo.
 1. **Aggiorna personalizzazioni** AEM* - *Eventuali personalizzazioni o estensioni di AEM devono essere aggiornate/convalidate per funzionare in 6.5 e aggiunte alla base di codici 6.5. Include moduli di ricerca per l’interfaccia utente, Personalizzazioni risorse con /mnt/overlay
 
-1. **Implementazione in ambiente** 6.5 - Un&#39;istanza pulita di AEM 6.5 (Autore + Pubblicazione) dovrebbe essere presente in un ambiente Dev/QA. È necessario aggiornare la base di codice e distribuire un campione rappresentativo di contenuto (proveniente dalla produzione corrente).
+1. **Implementazione in ambiente** 6.5 - Un&#39;istanza pulita di AEM 6.5 (Autore + Pubblicazione) dovrebbe essere presente in un ambiente Dev/QA. È necessario aggiornare la base di codice e distribuire un campione rappresentativo di contenuti (provenienti dalla produzione corrente).
 1. **Convalida della qualità e correzione** dei bug - QA deve convalidare l&#39;applicazione sia nelle istanze Author che Publish di 6.5. Eventuali bug rilevati devono essere corretti e impegnati nella base di codici 6.5. Ripetere Dev-Cycle secondo necessità fino a risolvere tutti i bug.
 
 Prima di procedere con l’aggiornamento, è necessario disporre di una base di codice applicazione stabile che sia stata completamente testata rispetto alla versione di destinazione di AEM. Sulla base delle osservazioni fatte durante il test, potrebbero esserci modi per ottimizzare il codice personalizzato. Ciò potrebbe includere il refactoring del codice per evitare l&#39;attraversamento del repository, l&#39;indicizzazione personalizzata per ottimizzare la ricerca o l&#39;uso di nodi non ordinati in JCR, tra gli altri.
@@ -66,7 +66,7 @@ AEM Uber Jar include tutte le API AEM come singola dipendenza nel progetto Maven
 
 ### Eliminazione graduale dell&#39;utilizzo di Administrative Resource Resolver {#phase-out-use-of-administrative-resource-resolver}
 
-Prima di AEM 6.0, l’utilizzo di una sessione amministrativa `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` era piuttosto diffuso nelle basi di codice. Tali metodi sono stati dichiarati obsoleti per motivi di sicurezza, in quanto forniscono un livello di accesso troppo ampio. [Nelle versioni future di Sling questi metodi verranno rimossi](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Si consiglia vivamente di rigenerare il codice in modo da utilizzare gli utenti del servizio. Per ulteriori informazioni sugli utenti dei servizi e su [come eliminare gradualmente le sessioni amministrative, consultate]/help/sites-administering/security-service-users.md#how to phasing out admin session.
+Prima di AEM 6.0, l’utilizzo di una sessione amministrativa `SlingRepository.loginAdministrative()` e `ResourceResolverFactory.getAdministrativeResourceResolver()` era piuttosto diffuso nelle basi di codice. Tali metodi sono stati dichiarati obsoleti per motivi di sicurezza, in quanto forniscono un livello di accesso troppo ampio. [Nelle versioni future di Sling questi metodi verranno rimossi](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Si consiglia vivamente di rigenerare il codice in modo da utilizzare gli utenti del servizio. Maggiori informazioni sugli utenti dei servizi e [come eliminare gradualmente le sessioni amministrative sono disponibili qui](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Query e indici Oak {#queries-and-oak-indexes}
 
@@ -146,7 +146,7 @@ Adobe consiglia di inserire script personalizzati in `/apps/settings/dam/indesig
 
 ### Ripristino delle configurazioni ContextHub {#recovering-contexthub-configurations}
 
-Le configurazioni ContextHub vengono eseguite mediante un aggiornamento. Le istruzioni su come ripristinare le configurazioni ContextHub esistenti sono disponibili [qui](/help/sites-administering/contexthub-config.md#recovery contestexthub configuration after upgrade).
+Le configurazioni ContextHub sono interessate da un aggiornamento. Le istruzioni su come recuperare le configurazioni ContextHub esistenti sono disponibili [qui](/help/sites-administering/contexthub-config.md#recovering-contexthub-configurations-after-upgrading).
 
 ### Personalizzazioni flusso di lavoro {#workflow-customizations}
 
@@ -158,7 +158,7 @@ Le configurazioni ContextHub vengono eseguite mediante un aggiornamento. Le istr
 >
 >Questa procedura è necessaria solo per gli aggiornamenti di Siti che utilizzano Modelli modificabili da AEM 6.2
 
-La struttura dei modelli modificabili è cambiata tra AEM 6.2 e 6.3. Se state effettuando l&#39;aggiornamento dalla versione 6.2 o precedente e se il contenuto del sito è generato utilizzando modelli modificabili, dovrete utilizzare lo strumento [Pulizia nodi](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)reattivi. Lo strumento deve essere eseguito **dopo** un aggiornamento per ripulire il contenuto. Dovrà essere eseguito su livelli Autore e Pubblica.
+La struttura dei modelli modificabili è cambiata tra AEM 6.2 e 6.3. Se state effettuando l’aggiornamento dalla versione 6.2 o precedente e il contenuto del sito è stato creato utilizzando modelli modificabili, dovrete utilizzare lo strumento [Pulizia nodi](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)reattivi. Lo strumento deve essere eseguito **dopo** un aggiornamento per ripulire il contenuto. Dovrà essere eseguito su livelli Autore e Pubblica.
 
 ### Modifiche all’implementazione CUG {#cug-implementation-changes}
 
