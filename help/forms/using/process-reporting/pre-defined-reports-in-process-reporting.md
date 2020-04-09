@@ -1,6 +1,6 @@
 ---
-title: Report predefiniti in Process Reporting
-seo-title: Report predefiniti in Process Reporting
+title: Rapporti predefiniti in Process Reporting
+seo-title: Rapporti predefiniti in Process Reporting
 description: Query per AEM Forms su dati del processo JEE per creare rapporti su processi in esecuzione a lungo termine, durata del processo e volume del flusso di lavoro
 seo-description: Query per AEM Forms su dati del processo JEE per creare rapporti su processi in esecuzione a lungo termine, durata del processo e volume del flusso di lavoro
 uuid: 704a8886-90ea-4793-a3fc-f998f878c928
@@ -10,19 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
 
-# Report predefiniti in Process Reporting {#pre-defined-reports-in-process-reporting}
+# Rapporti predefiniti in Process Reporting {#pre-defined-reports-in-process-reporting}
 
 ## Report predefiniti in Process Reporting {#pre-defined-reports-in-process-reporting-1}
 
 AEM Forms Process Reporting viene fornito con i seguenti rapporti *out-of-the-box* :
 
 * **[Processi](#long-running-processes)**Di Lunga Durata: Report di tutti i processi AEM Forms che richiedono più di un tempo specificato per il completamento
-* **[Grafico](#process-duration-report)**durata processo: Report relativo a un determinato processo di AEM Forms per durata
+* **[Grafico](#process-duration-report)**durata processo: Report relativo a un determinato processo in base alla durata di un modulo AEM Forms
 * **[Volume](#workflow-volume-report)**flusso di lavoro: Report delle istanze in esecuzione e completate del processo specificato per data
 
 ## Processi a lunga esecuzione {#long-running-processes}
@@ -31,7 +31,7 @@ Il rapporto Processi con esecuzione prolungata visualizza i processi AEM Forms c
 
 ### Per eseguire un rapporto Processo di esecuzione prolungata {#to-execute-a-long-running-process-report}
 
-1. Per visualizzare l&#39;elenco dei report predefiniti in Process Reporting (Generazione rapporti sui processi), nella visualizzazione struttura **Process Reporting** fare clic sul nodo **Reports **(Report*).
+1. Per visualizzare l&#39;elenco dei report predefiniti in Process Reporting (Generazione rapporti sui processi), fare clic sul nodo **Rapporti** nella struttura di **Process Reporting** .
 1. Fare clic sul nodo del rapporto Processi **** lunghi in esecuzione.
 
    ![long_run_node](assets/long_running_node.png)
@@ -42,17 +42,17 @@ Il rapporto Processi con esecuzione prolungata visualizza i processi AEM Forms c
 
    Parametri:
 
-   * **Durata**(*obbligatorio*): Specificate una durata e un’unità di tempo. Visualizza tutti i processi AEM Forms eseguiti per più di una durata specificata.
+   * **Durata** (*obbligatorio*): Specificate una durata e un’unità di tempo. Visualizza tutti i processi AEM Forms eseguiti per più di una durata specificata.
    * **Avviato dopo** (*facoltativo*): Selezionare una data. Filtrare il rapporto per visualizzare le istanze del processo iniziate dopo la data specificata.
    * **Avviato prima** (*facoltativo*): Selezionare una data. Filtrare il rapporto per visualizzare le istanze del processo iniziate prima della data specificata.
 
 1. Fate clic su **Vai** per eseguire il rapporto.
 
-   Il rapporto viene visualizzato nel pannello **Report **a destra della finestra **Process Reporting (Generazione rapporti** processo).
+   Il rapporto viene visualizzato nel pannello **Rapporto** a destra della finestra Reporting **** processo.
 
    ![long_run_process](assets/long_running_processes.png)
 
-   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Report **per eseguire le seguenti operazioni sul report.
+   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Rapporto** per eseguire le seguenti operazioni sul rapporto.
 
    * **Aggiorna**: Aggiorna il report con i dati più recenti presenti nello storage
    * **Cambia colore** legenda: Seleziona e modifica il colore della legenda del rapporto
@@ -64,7 +64,7 @@ Il rapporto Durata processo visualizza il numero di istanze di un processo Forms
 
 ### Per eseguire un rapporto Durata processo {#to-execute-a-process-duration-report}
 
-1. Per visualizzare i report predefiniti in Process Reporting (Generazione rapporti processo), nella visualizzazione struttura **Process Reporting** fare clic sul nodo **Reports **(Rapporti*).
+1. Per visualizzare i rapporti predefiniti in Process Reporting, nella visualizzazione struttura **Process Reporting** fare clic sul nodo **Rapporti** .
 1. Fare clic sul nodo del rapporto Durata **** processi.
 
    ![process_durata_node](assets/process_duration_node.png)
@@ -75,15 +75,15 @@ Il rapporto Durata processo visualizza il numero di istanze di un processo Forms
 
    Parametri:
 
-   * **Seleziona processo **(*obbligatorio*): Selezionare un processo AEM Forms.
+   * **Seleziona processo** (*obbligatorio*): Selezionare un processo AEM Forms.
 
-1. Fare clic su **Go **per eseguire il report.
+1. Fate clic su **Vai** per eseguire il rapporto.
 
-   Il rapporto viene visualizzato nel pannello **Report **a destra della finestra Report processo.
+   Il rapporto viene visualizzato nel pannello **Rapporto** a destra della finestra Reporting processo.
 
    ![process_durata_report](assets/process_duration_report.png)
 
-   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Report **per eseguire le seguenti operazioni sul report.
+   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Rapporto** per eseguire le seguenti operazioni sul rapporto.
 
    * **Aggiorna**: Aggiorna il report con i dati più recenti presenti nello storage
    * **Cambia colore** legenda: Seleziona e modifica il colore della legenda del rapporto
@@ -95,7 +95,7 @@ Il rapporto Volume flusso di lavoro visualizza il numero di istanze attualmente 
 
 ### Per eseguire un rapporto sul volume del flusso di lavoro {#to-execute-a-workflow-volume-report}
 
-1. Per visualizzare i report predefiniti in Process Reporting (Generazione rapporti processo), nella vista ad albero **Process Reporting **fare clic sul nodo **Reports **(Rapporti **).
+1. Per visualizzare i rapporti predefiniti in Process Reporting, nella visualizzazione struttura **Process Reporting** fare clic sul nodo **Rapporti** .
 1. Fate clic sul nodo del rapporto Volume **** flusso di lavoro.
 
    ![workflow_volume_node](assets/workflow_volume_node.png)
@@ -106,19 +106,19 @@ Il rapporto Volume flusso di lavoro visualizza il numero di istanze attualmente 
 
    Parametri:
 
-   * **Seleziona processo **(*obbligatorio*): Selezionare un processo AEM Forms.
+   * **Seleziona processo** (*obbligatorio*): Selezionare un processo AEM Forms.
 
    * **Avviato dopo** (*facoltativo*): Selezionare una data. Filtra il rapporto per visualizzare le istanze del processo iniziate dopo la data specificata.
 
-   * **Avviato prima** (*facoltativo*): Selezionare una data. Filtra il rapporto per visualizzare le istanze del processo avviate prima della data specificata.
+   * **Avviato prima** (*facoltativo*): Selezionare una data. Filtra il rapporto per visualizzare le istanze del processo iniziate prima della data specificata.
 
-1. Fare clic su **Go **per eseguire il report.
+1. Fate clic su **Vai** per eseguire il rapporto.
 
-   Il rapporto viene visualizzato nel pannello **Report **a destra della finestra **Process Reporting (Generazione rapporti** processo).
+   Il rapporto viene visualizzato nel pannello **Rapporto** a destra della finestra Reporting **** processo.
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 
-   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Report **per eseguire le seguenti operazioni sul report.
+   Utilizzate le opzioni nell&#39;angolo superiore destro del pannello **Rapporto** per eseguire le seguenti operazioni sul rapporto.
 
    * **Aggiorna**: Aggiorna il report con i dati più recenti presenti nello storage
    * **Cambia colore** legenda: Seleziona e modifica il colore della legenda del rapporto
