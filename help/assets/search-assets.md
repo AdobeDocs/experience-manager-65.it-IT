@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d29c86108fc4d856eefd9530f699d400445f2843
+source-git-commit: 25acffc6a0101be4ea6811b92c40bc76f554f5f0
 
 ---
 
@@ -24,7 +24,7 @@ AEM supporta i seguenti casi di utilizzo e questo articolo descrive l’utilizzo
 | [Classificazione e incremento della ricerca](#searchrank) | [Estrazione del testo](#extracttextupload) | [Raccolte intelligenti](#collections) |
 | [Ricerca avanzata: filtraggio e ambito di ricerca](#scope) | [predicati personalizzati](#custompredicates) | [Comprendere risultati imprevisti e risolvere i problemi](#troubleshoot-unexpected-search-results-and-issues) |
 | [Cerca da altre soluzioni e app](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[App desktop AEM](#desktopapp)</li><li>[Immagini Adobe Stock](#adobestock)</li><li>[Risorse per file multimediali dinamici](#dynamicmedia)</li></ul> |  |  |
-| [Selettore/selettore risorse](#assetselector) |  |  |
+| [Selettore risorse](#assetselector) |  |  |
 | [Limitazioni](#limitations) e [suggerimenti](#tips) |  |  |
 | [Esempi illustrati](#samples) |  |  |
 
@@ -223,30 +223,30 @@ Gli autori possono utilizzare Content Finder per ricercare nell&#39;archivio DAM
 
 La funzionalità di ricerca di AEM supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
 
-## Asset selector {#assetselector}
+## Selettore risorse {#assetselector}
 
-Il selettore delle risorse consente di cercare, filtrare e sfogliare le risorse DAM in modo speciale. Il selettore delle risorse è disponibile in `https://[aem-server]:[port]/aem/assetpicker.html`. Potete recuperare i metadati delle risorse selezionate mediante il selettore delle risorse. Potete avviarlo con i parametri di richiesta supportati, come il tipo di risorsa (immagine, video, testo) e la modalità di selezione (selezione singola o multipla). Questi parametri definiscono il contesto del selettore delle risorse per una particolare istanza di ricerca e rimangono intatti per tutta la selezione.
+Il Selettore risorse consente di cercare, filtrare e sfogliare le risorse DAM in modo speciale. Il selettore delle risorse è disponibile all’indirizzo `https://[aem-server]:[port]/aem/assetpicker.html`. Con questa funzionalità potete recuperare i metadati delle risorse selezionate. Potete avviarlo con i parametri di richiesta supportati, come il tipo di risorsa (immagine, video, testo) e la modalità di selezione (selezione singola o multipla). Questi parametri definiscono il contesto del selettore delle risorse per una particolare istanza di ricerca e rimangono intatti per tutta la selezione.
 
-Il selettore delle risorse utilizza il messaggio HTML5 Window.postMessage per inviare al destinatario i dati per la risorsa selezionata. Il selettore delle risorse si basa sul vocabolario del selettore base di Granite. Per impostazione predefinita, il selettore delle risorse funziona in modalità Sfoglia.
+Il selettore risorse utilizza il messaggio HTML5 `Window.postMessage` per inviare al destinatario i dati per la risorsa selezionata. Il selettore risorse funziona solo in modalità Sfoglia e funziona solo con la pagina dei risultati Omnisearch.
 
-Puoi trasmettere i seguenti parametri di richiesta in un URL per avviare il selettore risorse in un contesto particolare:
+Potete trasmettere i seguenti parametri di richiesta in un URL per avviare il selettore risorse in un contesto particolare:
 
 | Nome | Valori | Esempio | Scopo |
 |---|---|---|---|
 | suffisso risorsa (B) | Percorso della cartella come suffisso della risorsa nell’URL:[https://localhost:4502/aem/assetpicker.html/&lt;percorso_cartella>](https://localhost:4502/aem/assetpicker.html) | Per avviare il selettore risorse con una particolare cartella selezionata, ad esempio con la cartella `/content/dam/we-retail/en/activities` selezionata, l’URL deve essere del modulo: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Se al momento dell’avvio del selettore delle risorse è necessario selezionare una determinata cartella, passatela come suffisso di risorsa. |
 | mode | singolo, multiplo | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In modalità multipla, potete selezionare più risorse contemporaneamente utilizzando il selettore delle risorse. |
-| mimetype | tipo(i) mimetico(`/jcr:content/metadata/dc:format`) di una risorsa (supportato anche dai caratteri jolly) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Utilizzatelo per filtrare le risorse in base ai tipi MIME |
+| mimetype | tipo(i) mimetico(`/jcr:content/metadata/dc:format`) di una risorsa (supportato anche dai caratteri jolly) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | Utilizzatelo per filtrare le risorse in base ai tipi MIME |
 | finestra di dialogo | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Usate questi parametri per aprire il selettore delle risorse come finestra di dialogo Granite. Questa opzione è applicabile solo quando si avvia il selettore delle risorse tramite Granite Path Field e lo si configura come URL pickerSrc. |
 | assettype (S) | immagini, documenti, contenuti multimediali, archivi | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Utilizzate questa opzione per filtrare i tipi di risorse in base al valore passato. |
-| root | &lt;percorso_cartella> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Utilizzate questa opzione per specificare la cartella principale per il selettore di risorse. In questo caso, il selettore delle risorse consente di selezionare solo le risorse secondarie (dirette/indirette) sotto la cartella principale. |
+| root | &lt;percorso_cartella> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Utilizzate questa opzione per specificare la cartella principale per il selettore di risorse. In questo caso, il selettore delle risorse consente di selezionare solo le risorse secondarie (dirette/indirette) sotto la cartella principale. |
 
-Per accedere all’interfaccia del selettore delle risorse, passate a `https://[aem_server]:[port]/aem/assetpicker`. Individuate la cartella desiderata e selezionate una o più risorse. In alternativa, cercate la risorsa desiderata dalla casella di ricerca Omnico, applicate il filtro in base alle vostre esigenze, quindi selezionatela.
+Per accedere all’interfaccia del selettore risorse, passate a `https://[aem_server]:[port]/aem/assetpicker`. Individuate la cartella desiderata e selezionate una o più risorse. In alternativa, cercate la risorsa desiderata dalla casella di ricerca Omnico, applicate il filtro in base alle vostre esigenze, quindi selezionatela.
 
 ![Sfogliare e selezionare la risorsa nel selettore delle risorse](assets/assetpicker.png)
 
 *Figura: Sfogliare e selezionare la risorsa nel selettore delle risorse*
 
-## Limitazioni   {#limitations}
+## Limitazioni  {#limitations}
 
 La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 
