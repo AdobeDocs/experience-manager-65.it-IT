@@ -4,7 +4,7 @@ seo-title: Configurare le impostazioni Fuori sede
 description: Configurazione delle impostazioni Fuori sede
 seo-description: Configurare le impostazioni Fuori sede
 translation-type: tm+mt
-source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -26,7 +26,7 @@ Potete separare la delega degli elementi in base ai modelli di workflow. Ad esem
 > * Quando si attiva l&#39;impostazione Fuori sede, tutti gli elementi disponibili nella casella in entrata, prima di attivare l&#39;impostazione, rimangono nella inbox. Vengono delegati solo gli elementi ricevuti dopo l&#39;attivazione dell&#39;impostazione.
 > * Quando disattivate l&#39;impostazione Fuori sede, gli elementi delegati non vengono automaticamente assegnati. È possibile utilizzare la funzionalità di attestazione per assegnare elementi.
 > * Quando l&#39;utente A delega gli elementi all&#39;utente B e l&#39;utente B delega ulteriormente all&#39;utente C, gli elementi vengono assegnati solo all&#39;utente C e non all&#39;utente B.
-> * In presenza di un ciclo di assegnazione, le attività restano associate all&#39;utente originale. Ad esempio, quando l&#39;utente A delega gli elementi all&#39;utente B l&#39;utente B delega all&#39;utente C, l&#39;utente C delega all&#39;utente D e l&#39;utente D delega all&#39;utente B, viene creato un ciclo. In questa situazione, l’elemento rimane unito all’utente originale. L&#39;utente A è l&#39;utente originale nell&#39;esempio precedente.
+> * In presenza di un ciclo di assegnazione, le attività restano invariate rispetto all&#39;utente originale. Ad esempio, quando l&#39;utente A delega gli elementi all&#39;utente B, l&#39;utente B delega l&#39;utente C, l&#39;utente C delega l&#39;utente D e l&#39;utente D delega l&#39;utente B, viene creato un ciclo. In questa situazione, l’elemento rimane unito all’utente originale. L&#39;utente A è l&#39;utente originale nell&#39;esempio precedente.
 
 
 ## Attiva l’impostazione Fuori sede per l’account {#enable-out-of-office}
@@ -49,17 +49,19 @@ Effettuate le seguenti operazioni per abilitare l&#39;impostazione Fuori sede pe
    Ripetere il passaggio per aggiungere altri assegnatari. <br>
 
    >[!NOTE]
+   >
    >L&#39;ordine degli assegnatari è importante. Quando un elemento viene assegnato a un utente che ha attivato l&#39;impostazione fuori sede, l&#39;elemento viene valutato rispetto all&#39;elenco assegnatari specificato nell&#39;ordine in cui vengono aggiunti gli assegnatari. Quando un elemento soddisfa i criteri, viene assegnato all&#39;assegnatario e l&#39;assegnatario successivo non viene selezionato.
 
 1. Toccate **[!UICONTROL Salva]**. L&#39;impostazione ha effetto alla data e all&#39;ora di inizio specificate. Se accedete mentre siete fuori dall&#39;ufficio, non sarete considerati in ufficio finché non cambiate le impostazioni.
 
-Ora, gli elementi assegnati durante il periodo di tempo Fuori sede vengono automaticamente assegnati al cessionario specificato.\
+Ora, gli elementi assegnati durante il periodo di tempo Fuori sede vengono automaticamente assegnati all&#39;assegnatario specificato.
 ![Fuori sede](assets/out-of-office.png)
 
 >[!NOTE]
+>
 >(Solo per gli elementi del flusso di lavoro incentrati su Forms) Abilitare l&#39;opzione **Consenti all&#39;assegnatario di delegare utilizzando l&#39;opzione** &quot;Fuori sede&quot; del passaggio dell&#39;attività **** Assegna nel flusso di lavoro. Solo gli elementi con la suddetta opzione abilitata sono delegati ad altri utenti.
 
-## Limiti {#limitations}
+## Limitazioni  {#limitations}
 
 * L&#39;assegnazione di elementi a un gruppo non è supportata.
 * Al momento l&#39;abilitazione di Out of Office per le attività di progetto non è supportata.
