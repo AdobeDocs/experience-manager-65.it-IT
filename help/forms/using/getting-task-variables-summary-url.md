@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -58,9 +58,9 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
    1. Creare un processo **creare un riepilogo** PTO e utilizzarlo come sottoprocesso prima dell&#39;operazione **Assegna attività** nell&#39;orchestrazione.
    1. Definisci **dipendenteName**, **dipendenteID**, **ptoReason**, **totalDays** e **nodeName** come variabili di input nel nuovo processo. Queste variabili verranno trasmesse come dati del modulo inviato.
 
-      Definite anche una variabile di output **ptoNodePath **che verrà utilizzata per impostare l&#39;URL di riepilogo.
+      Definite anche una variabile di output **ptoNodePath** che verrà utilizzata per impostare l’URL di riepilogo.
 
-   1. Nel processo di **creazione del riepilogo** PTO, utilizzate il componente **set value** per impostare i dettagli di input in una mappa **nodeProperty **(**nodeProps**).
+   1. Nel processo di **creazione del riepilogo** PTO, utilizzate il componente **set value** per impostare i dettagli di input in una mappa **nodeProperty**(**nodeProps**).
 
       Le chiavi in questa mappa devono corrispondere alle chiavi definite nel renderer HTML nel passaggio precedente.
 
