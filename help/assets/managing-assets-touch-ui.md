@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
 
 ---
 
@@ -138,7 +138,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 
 >[!NOTE]
 >
->Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze di creazione di AEM. Contatta l&#39;Assistenza [clienti di](https://helpx.adobe.com/contact/enterprise-support.ec.html) Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Per ulteriori informazioni, consultate [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
+>Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze di creazione di AEM. Contatta l&#39;Assistenza [clienti di](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Per ulteriori informazioni, consultate [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
 >
 >Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in AEM vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
 
@@ -169,7 +169,7 @@ Per annullare un processo di caricamento in corso, toccate **[!UICONTROL Annulla
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Annulla compressione file ZIP o Tar durante il caricamento |  |  |
 | Opzioni processo |  | Toccate o fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Toccate il pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
@@ -942,30 +942,7 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
 ### Avviare un flusso di lavoro su una risorsa {#starting-a-workflow-on-an-asset}
 
-1. Andate alla posizione della risorsa per la quale desiderate avviare un flusso di lavoro, quindi toccate o fate clic sulla risorsa per aprire la pagina della risorsa.
-1. Toccate l&#39;icona GlobalNav, quindi selezionate **[!UICONTROL Timeline]** dal menu per visualizzare la timeline.
-
-   ![timeline-1](assets/timeline.png)
-
-1. Toccate l’icona **[!UICONTROL Azioni]** (freccia) in basso per aprire l’elenco delle azioni disponibili per la risorsa.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. Toccate **[!UICONTROL Avvia flusso di lavoro]** dall’elenco.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (Facoltativo) Specificate un titolo per il flusso di lavoro, che può essere utilizzato per fare riferimento all’istanza del flusso di lavoro.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Ciascun passaggio del flusso di lavoro viene visualizzato nella timeline come un evento.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+Per applicare un flusso di lavoro per elaborare una risorsa, consultate [Avviare il flusso di lavoro su una risorsa](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Raccolte {#collections}
 
