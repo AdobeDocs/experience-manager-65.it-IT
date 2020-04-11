@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -192,5 +192,3 @@ Nell’area di lavoro AEM Forms:
 1. Nei moduli HTML, che utilizzano le proprietà di processo nella relativa struttura, quando viene eseguito il rendering nell&#39;area di lavoro Moduli AEM, viene visualizzato il pulsante Invia all&#39;interno del modulo.
 
    Durante la progettazione dei moduli, quando si utilizza Proprietà processo, all&#39;interno del modulo viene aggiunto un pulsante Invia. Durante il rendering come PDF nell’area di lavoro Moduli AEM, il pulsante Invia non è visibile all’utente finale. Tuttavia, quando si esegue il rendering come modulo HTML nell&#39;area di lavoro Moduli AEM, all&#39;utente finale è visibile il pulsante Invia. Se si fa clic sul pulsante Invia all&#39;interno del modulo, non viene avviata alcuna azione. Fai clic sul pulsante Invia nella parte inferiore dell’area di lavoro Moduli AEM, all’esterno del modulo, per completare l’attività.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
