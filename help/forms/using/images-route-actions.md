@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -44,7 +44,7 @@ Per personalizzare le immagini utilizzate nelle azioni di route, eseguite i pass
 
 ## Menu a comparsa azioni attività Elenco attività {#task-list-task-action-popup}
 
-1. Crea una finestra a comparsa di azioni elenco attività. Consulta [Creazione del codice](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)dell&#39;area di lavoro Moduli AEM. Deve utilizzare il pacchetto dev.
+1. Crea una finestra a comparsa di azioni elenco attività. Consulta [Creazione del codice](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)dell&#39;area di lavoro Moduli AEM. Richiede l&#39;utilizzo del pacchetto dev.
 
 1. Copia `/libs/ws/js/runtime/templates/task.html` in `/apps/ws/js/runtime/templates/task.html`.
 
@@ -171,5 +171,3 @@ To
 
 1. Sostituite il testo con quanto segue:
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
