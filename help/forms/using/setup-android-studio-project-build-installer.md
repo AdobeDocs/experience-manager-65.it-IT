@@ -1,15 +1,15 @@
 ---
 title: Configurare il progetto Android Studio e creare l'app Android
 seo-title: Configurare il progetto Android Studio e creare l'app Android
-description: Procedura per configurare il progetto Android Studio e creare il programma di installazione per l'app AEM Forms
-seo-description: Procedura per configurare il progetto Android Studio e creare il programma di installazione per l'app AEM Forms
+description: Passaggi per configurare il progetto Android Studio e creare il programma di installazione per l'app AEM Forms
+seo-description: Passaggi per configurare il progetto Android Studio e creare il programma di installazione per l'app AEM Forms
 uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -26,7 +26,7 @@ Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua i seguenti passaggi:
 
    URL: `https://<server>:<port>/crx/packageshare`.
 
-1. Scaricate il pacchetto sorgente. Quando scaricate il pacchetto, questo viene aggiunto nel gestore pacchetti di AEM Forms.
+1. Scaricate il pacchetto di origine. Quando scaricate il pacchetto, questo viene aggiunto nel gestore pacchetti di AEM Forms.
 1. Dopo il download, passa a: `https://<server>:<port>/crx/packmgr/index.jsp`e installare `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 1. Per scaricare l’archivio del codice sorgente, aprite `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.
@@ -82,9 +82,9 @@ L’immagine seguente mostra la struttura di directory della `android`cartella n
 1. In Android™ Studio, selezionate **[!UICONTROL Importa progetto (Eclipse ADT, Gradle, ecc.)]**.
 1. In Project Explorer, selezionate la directory principale del progetto da generare nella casella di testo Directory **** principale:
 
-   **** Per gli utenti Mac: [User_Home]/Projects/MobileWorkspace/src/android
+   **Per gli utenti Mac:** Home [_]utente/Progetti/MobileWorkspace/src/android
 
-   **** Per gli utenti di Windows®: %HOMEPATH%\Projects\MobileWorkspace\src\android
+   **Per gli utenti di Windows®:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
 1. Dopo l&#39;importazione del progetto, viene visualizzato un pop-up con l&#39;opzione per aggiornare il plug-in Gradle per Android™. Fate clic sul pulsante appropriato in base alle vostre esigenze.
 
@@ -107,5 +107,3 @@ Potete installare l&#39;applicazione su un dispositivo Android™ tramite [Andro
 **Per gli utenti** MAC: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Per gli utenti** di Windows®: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
