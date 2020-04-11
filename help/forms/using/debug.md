@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -54,7 +54,7 @@ Controllate i seguenti parametri:
 
 ## Problema: Impossibile eseguire il rendering di un modulo (viene visualizzato un messaggio di errore) {#problem-unable-to-render-a-form-an-error-message-is-displayed}
 
-1. Assicurarsi che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, consultate Parametri di [rendering](/help/forms/using/debug.md#main-pars-table).
+1. Verificate che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, consultate Parametri di [rendering](/help/forms/using/debug.md#main-pars-table).
 1. Accedete a CRX Package Manager (all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/packmgr/index.jsp) e verificate che i pacchetti seguenti siano installati correttamente:
 
    * adobe-lc-forms-content-pkg-&lt;versione>.zip
@@ -101,7 +101,7 @@ Controllate i seguenti parametri:
 ### Problema: Errore imprevisto {#problem-unexpected-error-encountered}
 
 1. Nell&#39;URL del modulo, aggiungere un parametro di query debugClientLibs e impostarne il valore su true (ad esempio: https://&lt;server>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;percorso>&amp;template=&lt;nome del file xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. Nel browser desktop come Chrome, andate a Strumenti per sviluppatori > Console.
+1. Nel browser desktop come Chrome, andate a Strumenti per sviluppatori -> Console.
 1. Aprire i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, vedere [registri per i moduli](/help/forms/using/enable-logs.md)HTML5.
 1. Vai a Strumenti per sviluppatori > Console. Utilizzare la traccia dello stack per individuare il codice che causa l&#39;errore. Eseguire il debug dell&#39;errore per risolvere il problema.
 
@@ -179,5 +179,3 @@ Testo del passaggio
 1. Nel browser desktop, accedete a Strumenti per sviluppatori -> Risorse.
 
    Se l&#39;immagine viene visualizzata, selezionate Cornici a sinistra.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
