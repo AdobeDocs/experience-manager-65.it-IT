@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Informazioni sulla struttura delle cartelle {#understanding-the-folder-structure}
 
-I componenti dell’area di lavoro di AEM Forms sono progettati sull’architettura MVC mediante l’uso di Backbone. Ogni componente ha un file per:
+I componenti dell’area di lavoro di AEM Forms sono progettati sull’architettura MVC mediante l’utilizzo di Backbone. Ogni componente ha un file per:
 
 * Modello, che contiene logica di business.
 * Modello, ovvero un file HTML contenente controlli di interfaccia.
@@ -36,5 +36,3 @@ Le risorse per tutti i componenti si trovano nella struttura di cartelle descrit
 **services** Contiene l’interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull’endpoint REST.
 
 **util** Contiene utility generiche utilizzabili da più componenti.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
