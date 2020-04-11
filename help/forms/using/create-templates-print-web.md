@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3afe5bf8e49202608e4c9369b2ff3d26afa03dc4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -54,7 +54,7 @@ In base al caso di [utilizzo](/help/forms/using/create-your-first-interactive-co
 
 ![create_print_template](assets/create_print_template.gif)
 
-Questi sottomoduli vengono visualizzati come aree di destinazione nel modello Stampa dopo il caricamento del file XDP nel server Forms. Tutte le entità quali frammenti di documento, grafici, frammenti di layout e immagini vengono aggiunte alle aree di destinazione durante la creazione della comunicazione interattiva.
+Questi sottomoduli vengono visualizzati come aree di destinazione nel modello di stampa dopo il caricamento del file XDP nel server Forms. Tutte le entità quali frammenti di documento, grafici, frammenti di layout e immagini vengono aggiunte alle aree di destinazione durante la creazione della comunicazione interattiva.
 
 Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
 
@@ -96,7 +96,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
    Per spostare il sottomodulo **Grafici** a destra del sottomodulo Addebiti, selezionare il sottomodulo **Grafici** dal riquadro a sinistra, selezionare la scheda **Layout** e specificare un valore per il campo **AnchorX** . Il valore deve essere maggiore del valore relativo al campo **Larghezza** del sottomodulo **Addebiti** . Selezionare il sottomodulo **Addebiti** e selezionare la scheda **Layout** per visualizzare il valore del campo **Larghezza** .
 
 1. Trascinare l&#39;oggetto **Testo** dalla Libreria **** oggetto al modulo e immettere il **Dial XXXX per sottoscrivere** il testo nella casella.
-1. Fare clic con il pulsante destro del mouse sull&#39;oggetto testo nel riquadro a sinistra, selezionare **Rinomina oggetto**, quindi immettere il nome dell&#39;oggetto di testo come **Sottoscrivi**.
+1. Fare clic con il pulsante destro del mouse sull&#39;oggetto di testo nel riquadro a sinistra, selezionare **Rinomina oggetto**, quindi immettere il nome dell&#39;oggetto di testo come **Sottoscrivi**.
 
    ![Modello XDP](assets/print_xdp_template_subform_new.png)
 
@@ -173,8 +173,8 @@ Per creare un modello di canale Web, definite una cartella in cui salvare i mode
 
 Per creare una cartella per i modelli modificabili, effettuate le seguenti operazioni:
 
-1. Toccate **Strumenti** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > Browser **** di configurazione.
-1. Nella pagina Browser configurazione, toccate **Crea**.
+1. Toccate **Strumenti** ![](assets/hammer-icon.svg) > Browser **** di configurazione.
+1. Nella pagina del browser di configurazione, toccate **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** , specificate **Create_First_IC_templates** come titolo della cartella, selezionate **Modelli** modificabili e toccate **Crea**.
 
    ![Configurare i modelli Web](assets/create_first_ic_web_template_new.png)
@@ -213,14 +213,14 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
 
 1. Toccate Pannello **** principale e quindi toccate **+** per visualizzare l’elenco dei componenti che potete aggiungere al modello.
 1. Selezionate **Pannello** dall’elenco per aggiungere un pannello sopra il pannello **** principale.
-1. Selezionate la scheda **Contenuto** nel riquadro a sinistra. Il nuovo pannello aggiunto al punto 8 viene visualizzato nel pannello **Principale** della struttura del contenuto.
+1. Selezionate la scheda **Contenuto** nel riquadro a sinistra. Il nuovo pannello aggiunto al punto 8 viene visualizzato sotto il pannello **** Principale nella struttura del contenuto.
 
    ![Struttura contenuto](assets/content_tree_root_panel_new.png)
 
 1. Selezionate il pannello e toccate ![](assets/configure_icon.png) (Configura).
 1. Nel riquadro Proprietà:
 
-   1. Specificare **i dettagli** fatturati nel campo Nome.
+   1. Specificate **i dettagli** fatturati nel campo Nome.
    1. Specificate Dettagli **** fatturazione nel campo Titolo.
    1. Selezionare **1** dall&#39;elenco a discesa **Numero di colonne** .
 
@@ -235,7 +235,7 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
    | billsummary | Riepilogo fatturazione | 1 |
    | riepiloghi | Riepilogo delle spese | 2 |
    | itemisedCalls | Chiamate dettagliate | 1 |
-   | paga | Paga ora | 2 |
+   | paynow | Paga ora | 2 |
    | vas | Servizi a valore aggiunto | 1 |
 
    L&#39;immagine seguente rappresenta la struttura del contenuto dopo l&#39;aggiunta di tutti i pannelli al modello:
@@ -248,7 +248,7 @@ Dopo aver creato il modello Web, è necessario attivarlo per utilizzare il model
 
 Per abilitare il modello Web, eseguite i seguenti passaggi:
 
-1. Toccate **Strumenti** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Modelli**.
+1. Toccate **Strumenti** ![](assets/hammer-icon.svg) > **Modelli**.
 1. Individuate il modello **Create_First_IC_Web_Template** , selezionatelo e toccate **Abilita**.
 1. Scheda **Abilita** di nuovo per confermare.
 
