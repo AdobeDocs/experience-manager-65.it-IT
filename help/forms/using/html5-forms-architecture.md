@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -185,4 +185,3 @@ Come descritto in precedenza, il renderer di profili JSP chiama Forms Service tr
 
 I moduli HTML5 consentono agli sviluppatori di creare il modulo di rendering dei profili e di personalizzarne l&#39;aspetto. Ad esempio, i moduli HTML consentono agli sviluppatori di integrare moduli in un pannello o nella sezione &lt;div> di un portale HTML esistente.
 Per ulteriori dettagli sulla creazione di profili personalizzati, consultate [Creazione di un profilo](/help/forms/using/custom-profile.md)personalizzato.
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
