@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -116,5 +116,3 @@ La verifica del modulo mediante un’origine dati di esempio garantisce la mappa
 ## Anteprima dei moduli che si trovano in un archivio {#html-preview-of-forms-in-forms-manager}
 
 In AEM Forms è possibile visualizzare l&#39;anteprima di moduli e documenti in un archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli così come verranno utilizzati dagli utenti finali.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
