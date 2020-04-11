@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -28,7 +28,7 @@ Il pacchetto del codice sorgente dell’app AEM Forms fa riferimento all’ `ado
 
 Per scaricare il `adobe-aemfd-forms-app-src-pkg-<version>.zip` file, effettuate le seguenti operazioni:
 
-1. Accedete all’istanza di creazione del server [](http://localhost:4502/) AEM come amministratore e aprite la condivisione [del](http://localhost:4502/crx/packageshare)pacchetto. È necessario un Adobe ID per accedere alla condivisione del pacchetto.
+1. Accedete all’istanza di creazione del server [](Http://localhost:4502/) AEM come amministratore e aprite la condivisione [del](http://localhost:4502/crx/packageshare)pacchetto. È necessario un Adobe ID per accedere alla condivisione del pacchetto.
 1. In Condivisione [pacchetti](http://localhost:4502/crx/packageshare/login.html)AEM, eseguite una ricerca `adobe-aemfd-forms-app-src-pkg-<version>.zip`, fate clic sul pacchetto applicabile al sistema operativo in uso e fate clic su **Scarica**. Leggere e accettare il contratto di licenza e fare clic su **OK**. Il download viene avviato. Una volta scaricata, accanto al pacchetto viene visualizzata la parola **Download** .
 1. Al termine del download, fate clic su **Scaricato**. Viene reindirizzato a Gestione pacchetti. In Gestione pacchetti, eseguite una ricerca nel pacchetto scaricato e fate clic su **Installa**.
 1. Per scaricare l’archivio del codice sorgente, aprite **https://&lt;server>:&lt;porta>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;versione>.zip** nel browser. Il file .zip dell&#39;app Android viene scaricato sul dispositivo.
@@ -50,10 +50,10 @@ Impostate le seguenti variabili di ambiente prima di avviare il processo di crea
 
 Dopo aver salvato il file adobe-lc-mobileworkspace-src-&lt;versione>.zip nel file system locale e aver impostato le variabili di ambiente, create l&#39;app standard AEM Forms Android utilizzando una delle seguenti opzioni:
 
-* [Creazione di app AEM Forms tramite Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-1347434739)
+* [Creare un&#39;app AEM Forms utilizzando Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-1347434739)
 * [Genera file .apk con Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-0)
 
-### Creazione di app AEM Forms tramite Android Studio {#using-android-studio}
+### Creare un&#39;app AEM Forms utilizzando Android Studio {#using-android-studio}
 
 Per creare l&#39;app AEM Forms utilizzando Android Studio, effettuate le seguenti operazioni:
 
@@ -93,8 +93,6 @@ Per generare il file .apk utilizzando Android Studio, eseguite i seguenti passag
 
 Una volta generato il file .apk, eseguite il comando seguente per installare l&#39;applicazione su un dispositivo Android tramite [Android Debug Bridge](https://developer.android.com/tools/help/adb.html).
 
-**** Utenti Windows: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
+**Utenti Windows:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**** Utenti MAC: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
+**Utenti MAC:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
