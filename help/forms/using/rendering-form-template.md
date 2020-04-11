@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -70,16 +70,14 @@ I parametri di richiesta supportati durante il rendering del modulo come HTML so
 
 ### Passaggio del parametro di rendering {#passing-the-render-parameter}
 
-I moduli HTML5 supportano tre metodi per passare i parametri di rendering. Puoi trasmettere i parametri tramite URL, coppie chiave-valore e nodo profilo. Nel parametro di rendering, la coppia chiave-valore ha la precedenza più alta seguita dal nodo profilo. Il parametro Richiesta URL ha la precedenza minore.
+I moduli HTML5 supportano tre metodi per passare i parametri di rendering. Puoi trasmettere i parametri tramite URL, coppie chiave-valore e nodo profilo. Nel parametro di rendering, la coppia chiave-valore ha la precedenza più alta seguita dal nodo del profilo. Il parametro Richiesta URL ha la precedenza minore.
 
 * **Parametri** di richiesta URL: Potete specificare i parametri di rendering nell’URL. Nei parametri della richiesta URL, i parametri sono visibili all’utente finale. Ad esempio, il seguente URL di invio contiene il parametro di modello nell’URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
-* **Parametri** della richiesta SetAttribute: Potete specificare i parametri di rendering come coppia chiave-valore. Nei parametri della richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. È possibile inoltrare una richiesta da qualsiasi altro JSP a JSP per il rendering del profilo di modulo HTML5 e utilizzare *setAttribute* su un oggetto richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza maggiore.
+* **Parametri** della richiesta SetAttribute: Potete specificare i parametri di rendering come coppia chiave-valore. Nei parametri della richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. È possibile inoltrare una richiesta da qualsiasi altro JSP a JSP per il rendering del profilo di modulo HTML5 e utilizzare *setAttribute* su un oggetto richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza più alta.
 
-* **** Parametri di richiesta nodo profilo: Potete specificare i parametri di rendering come proprietà del nodo di un nodo di profilo. Nei parametri di richiesta del nodo del profilo, i parametri non sono visibili all&#39;utente finale. Il nodo del profilo è il nodo in cui viene inviata la richiesta. Per specificare i parametri come proprietà del nodo, utilizzare CRXDE lite.
+* **Parametri di richiesta nodo profilo:** Potete specificare i parametri di rendering come proprietà del nodo di un nodo di profilo. Nei parametri di richiesta del nodo del profilo, i parametri non sono visibili all&#39;utente finale. Il nodo del profilo è il nodo in cui viene inviata la richiesta. Per specificare i parametri come proprietà del nodo, utilizzare CRXDE lite.
 
 ### Invia parametri {#submit-parameters}
 
 I moduli HTML5 inviano dati; eseguire script sul lato server e servizi Web sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script sul lato server e servizi Web sui server AEM, consultate Proxy [di servizio moduli](/help/forms/using/service-proxy.md)HTML5.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
