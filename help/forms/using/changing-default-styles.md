@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -33,7 +33,7 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
 
 1. **Creare un foglio di stile CSS per la formattazione dei moduli HTML5**
 
-   Passare alla cartella in cui è stato creato il renderer del profilo e creare un file foglio di stile CSS. I passaggi da seguire sono
+   Passare alla cartella in cui è stato creato il renderer del profilo e creare un file foglio di stile CSS. I passaggi da seguire sono:
 
    1. Fare clic con il pulsante destro del mouse sulla cartella e selezionare **Crea** > **Crea file** dal menu
 
@@ -55,5 +55,3 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
       &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
 
    1. Salvate il file.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
