@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -48,7 +48,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td><p>La <code>newText</code> proprietà non funziona correttamente per i casi seguenti:</p>
     <ul>
      <li>Selezione e sostituzione dei testi</li>
-     <li>Eliminazione, copia e incolla di testo.</li>
+     <li>Eliminando, copiando e incollando i testi.</li>
      <li>Digitando alcuni tasti carattere speciali (ad esempio $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
      <li>Utilizzo di Maiusc+combinazione alfanumerica. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
@@ -63,7 +63,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td><p>La proprietà change non funziona correttamente per i casi seguenti:</p>
     <ul>
      <li>Selezione e sostituzione dei testi</li>
-     <li>Eliminazione, copia e incolla di testo.</li>
+     <li>Eliminando, copiando e incollando i testi.</li>
      <li>Digitando alcune chiavi carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi numerici<br /> </li>
      <li>Utilizzo di Maiusc+combinazione alfanumerica. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
@@ -113,7 +113,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   </tr>
   <tr>
    <td><code>title</code></td>
-   <td> Specifica il titolo del documento. È disponibile solo per le applicazioni client.</td>
+   <td>Specifica il titolo del documento. È disponibile solo per le applicazioni client.</td>
    <td>ma restituisce il titolo del documento HTML anziché il titolo dei metadati del modulo, come nel caso dei moduli PDF.</td>
   </tr>
   <tr>
@@ -158,7 +158,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   </tr>
   <tr>
    <td>currentPage</td>
-   <td><p>Imposta la pagina attiva di un documento in fase di esecuzione.</p> <p>I valori della pagina sono basati su 0, dunque la prima pagina di un documento restituisce un valore pari a 0.</p> <p>La proprietà currentPage è disponibile quando layout:ready viene eseguito su un client. Non è invece disponibile quando layout:ready viene eseguito sul server in quanto la proprietà non viene eseguita fino a quando viene eseguito il layout del modulo.</p> </td>
+   <td><p>Imposta la pagina attualmente attiva di un documento in fase di esecuzione.</p> <p>I valori della pagina sono basati su 0, dunque la prima pagina di un documento restituisce un valore pari a 0.</p> <p>La proprietà currentPage è disponibile quando layout:ready viene eseguito su un client. Non è invece disponibile quando layout:ready viene eseguito sul server in quanto la proprietà non viene eseguita fino a quando viene eseguito il layout del modulo.</p> </td>
    <td>Nessuno</td>
   </tr>
  </tbody>
@@ -574,7 +574,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per gli script, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -595,7 +595,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per gli script, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -616,7 +616,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per gli script, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -634,7 +634,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td>edge</td>
    <td>L'oggetto edge descrive un arco, una linea o un lato di un bordo o rettangolo.<br /> </td>
-   <td>Attributi come colore, cap e altro non sono supportati.<br /> </td>
+   <td>Gli attributi quali colore, cap e altro non sono supportati.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -654,7 +654,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per gli script, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -675,7 +675,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>
     <ul>
      <li>Impossibile recuperare il valore predefinito. </li>
-     <li>Le modifiche si riflettono nel modello e sono disponibili per gli script, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
+     <li>Le modifiche si riflettono nel modello e sono disponibili per lo scripting, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -863,7 +863,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td>edge</td>
    <td>L'oggetto edge descrive un arco, una linea o un lato di un bordo o rettangolo.<br /> </td>
-   <td>Attributi come colore, cap e altro non sono supportati.</td>
+   <td>Gli attributi quali colore, cap e altro non sono supportati.</td>
   </tr>
  </tbody>
 </table>
@@ -1009,7 +1009,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td>edge</td>
    <td>L'oggetto edge descrive un arco, una linea o un lato di un bordo o rettangolo.<br /> </td>
-   <td>Attributi come colore, cap e altro non sono supportati. </td>
+   <td>Gli attributi quali colore, cap e altro non sono supportati. </td>
   </tr>
  </tbody>
 </table>
@@ -1026,7 +1026,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td>edge</td>
    <td>L'oggetto edge descrive un arco, una linea o un lato di un bordo o rettangolo.<br /> </td>
-   <td>Attributi come colore, cap e altro non sono supportati. </td>
+   <td>Gli attributi quali colore, cap e altro non sono supportati. </td>
   </tr>
  </tbody>
 </table>
@@ -1045,7 +1045,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>Determina l'altezza di un dato oggetto struttura del modulo.<br /> </td>
    <td>
     <ul>
-     <li>La proprietà Height (h) non è supportata per l'area della pagina e l'area contenuto. </li>
+     <li>La proprietà Height (h) non è supportata per l'area di pagina e l'area di contenuto. </li>
      <li>Il parametro 'Offset dalla prima area contenuto in cui si trova l'oggetto XFA-Form' non è supportato.</li>
     </ul> </td>
   </tr>
@@ -1213,7 +1213,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. Term()
+   1. Termine()
 
 1. **Funzioni logiche**
 
@@ -1313,7 +1313,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
    <td>Sempre true per i moduli HTML5.</td>
   </tr>
   <tr>
-   <td>app.costanti</td>
+   <td>app.constants</td>
    <td>Un oggetto wrapper che contiene vari valori costanti. Attualmente, questa proprietà restituisce un oggetto con una singola proprietà, align.</td>
    <td>I moduli HTML5 restituiscono un oggetto align vuoto.</td>
   </tr>
@@ -1351,5 +1351,3 @@ Sono supportati i seguenti eventi XFA lato client:
 >[!NOTE]
 >
 >Il rendering dei moduli HTML5 viene eseguito sul lato client (browser). Si consiglia di utilizzare gli script di **convalida** e **calcolo** lato client invece degli script sul lato server.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
