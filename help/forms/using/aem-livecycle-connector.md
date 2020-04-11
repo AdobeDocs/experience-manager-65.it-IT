@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -35,7 +35,7 @@ Anche se le proprietà sono auto-esplicative, quelle importanti sono le seguenti
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
 
-    opzione.
+   opzione.
 
 * **Nome** utente - Specifica il nome utente dell&#39;account utilizzato per stabilire la comunicazione tra AEM e LiveCycle. L&#39;account è un account utente di LiveCycle che dispone delle autorizzazioni necessarie per avviare Document Services.
 * **Password**- Specifica la password.
@@ -43,7 +43,7 @@ Anche se le proprietà sono auto-esplicative, quelle importanti sono le seguenti
 
 ## Avvio di Document Services {#starting-document-services}
 
-Le applicazioni client possono avviare i servizi LiveCycle a livello di programmazione utilizzando un&#39;API Java, servizi Web, eventi remoti e REST. Per i client Java, l&#39;applicazione può utilizzare LiveCycle SDK. LiveCycle SDK fornisce un&#39;API Java per avviare questi servizi in remoto. Ad esempio, per convertire un documento di Microsoft Word in PDF, il client avvia GeneratePDFService. Il flusso di chiamata è costituito dai seguenti passaggi:
+Le applicazioni client possono avviare i servizi LiveCycle a livello di programmazione utilizzando un&#39;API Java, servizi Web, eventi remoti e REST. Per i client Java, l&#39;applicazione può utilizzare LiveCycle SDK. L&#39;SDK di LiveCycle fornisce un&#39;API Java per avviare questi servizi in remoto. Ad esempio, per convertire un documento di Microsoft Word in PDF, il client avvia GeneratePDFService. Il flusso di chiamata è costituito dai seguenti passaggi:
 
 1. Creare un&#39;istanza ServiceClientFactory.
 1. Ogni servizio fornisce una classe client. Per avviare un servizio, create un&#39;istanza client del servizio.
@@ -219,10 +219,10 @@ Sono disponibili i seguenti servizi:
 * com.adobe.idp.um.api.AuthenticationManager
 * com.adobe.idp.um.api.DirectoryManager
 * com.adobe.idp.um.api.AuthorizationManager
-* com.adobe.idp.dsc.register.service.ServiceRegistry
-* com.adobe.idp.dsc.register.component.ComponentRegistry
+* com.adobe.idp.dsc.registry.service.ServiceRegistry
+* com.adobe.idp.dsc.registry.component.ComponentRegistry
 
-#### Dipendenze del cielo {#maven-dependencies}
+#### Dipendenze Paradiso {#maven-dependencies}
 
 ```xml
 <dependency>
@@ -244,7 +244,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.livecycle.dsc.clientsdk.security.RunAsManager
 * com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider
 
-#### Dipendenze del cielo {#maven-dependencies-1}
+#### Dipendenze Paradiso {#maven-dependencies-1}
 
 ```xml
 <dependency>
@@ -258,14 +258,14 @@ Sono disponibili i seguenti servizi:
 
 Sono disponibili i seguenti servizi:
 
-* com.adobe.idp.task manager.dsc.client.task.TaskManager
-* com.adobe.idp.task manager.dsc.client.TaskManagerQueryService
-* com.adobe.idp.task manager.dsc.client.queuemanager.QueueManager
-* com.adobe.idp.task manager.dsc.client.emailsettings.EmailSettingService
-* com.adobe.idp.task manager.dsc.client.endpoint.TaskManagerEndpointClient
-* com.adobe.idp.task manager.dsc.client.userlist.UserlistService
+* com.adobe.idp.taskmanager.dsc.client.task.TaskManager
+* com.adobe.idp.taskmanager.dsc.client.TaskManagerQueryService
+* com.adobe.idp.taskmanager.dsc.client.queuemanager.QueueManager
+* com.adobe.idp.taskmanager.dsc.client.emailsettings.EmailSettingService
+* com.adobe.idp.taskmanager.dsc.client.endpoint.TaskManagerEndpointClient
+* com.adobe.idp.taskmanager.dsc.client.userlist.UserlistService
 
-#### Dipendenze del cielo {#maven-dependencies-2}
+#### Dipendenze Paradiso {#maven-dependencies-2}
 
 ```xml
 <dependency>
@@ -281,7 +281,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.idp.workflow.client.WorkflowServiceClient
 
-#### Dipendenze del cielo {#maven-dependencies-3}
+#### Dipendenze Paradiso {#maven-dependencies-3}
 
 ```xml
 <dependency>
@@ -297,7 +297,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient
 
-#### Dipendenze del cielo {#maven-dependencies-4}
+#### Dipendenze Paradiso {#maven-dependencies-4}
 
 ```xml
 <dependency>
@@ -315,7 +315,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.livecycle.applicationmanager.client.ApplicationManager
 * com.adobe.livecycle.design.service.DesigntimeService
 
-#### Dipendenze del cielo {#maven-dependencies-5}
+#### Dipendenze Paradiso {#maven-dependencies-5}
 
 ```xml
 <dependency>
@@ -331,7 +331,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.assembler.client.AssemblerServiceClient
 
-#### Dipendenze del cielo {#maven-dependencies-6}
+#### Dipendenze Paradiso {#maven-dependencies-6}
 
 ```xml
 <dependency>
@@ -347,7 +347,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
-#### Dipendenze del cielo {#maven-dependencies-7}
+#### Dipendenze Paradiso {#maven-dependencies-7}
 
 ```xml
 <dependency>
@@ -363,7 +363,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.formsservice.client.FormsServiceClient
 
-#### Dipendenze del cielo {#maven-dependencies-8}
+#### Dipendenze Paradiso {#maven-dependencies-8}
 
 ```xml
 <dependency>
@@ -379,7 +379,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.output.client.OutputClient
 
-#### Dipendenze del cielo {#maven-dependencies-9}
+#### Dipendenze Paradiso {#maven-dependencies-9}
 
 ```xml
 <dependency>
@@ -395,7 +395,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
 
-#### Dipendenze del cielo {#maven-dependencies-10}
+#### Dipendenze Paradiso {#maven-dependencies-10}
 
 ```xml
 <dependency>
@@ -417,7 +417,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.livecycle.rightsmanagement.client.PolicyManager
 * com.adobe.livecycle.rightsmanagement.client.AbstractPolicyManager
 
-#### Dipendenze del cielo {#maven-dependencies-11}
+#### Dipendenze Paradiso {#maven-dependencies-11}
 
 ```xml
 <dependency>
@@ -433,7 +433,7 @@ Sono disponibili i seguenti servizi:
 
 * com.adobe.livecycle.signatures.client.SignatureServiceClientInterface
 
-#### Dipendenze del cielo {#maven-dependencies-12}
+#### Dipendenze Paradiso {#maven-dependencies-12}
 
 ```xml
 <dependency>
@@ -448,11 +448,11 @@ Sono disponibili i seguenti servizi:
 Sono disponibili i seguenti servizi:
 
 * com.adobe.truststore.dsc.TrustConfigurationService
-* com.adobe.trust.dsc.CRLService
-* com.adobe.trust.dsc.CredentialService
-* com.adobe.trust.dsc.CertificateService
+* com.adobe.truststore.dsc.CRLService
+* com.adobe.truststore.dsc.CredentialService
+* com.adobe.truststore.dsc.CertificateService
 
-#### Dipendenze del cielo {#maven-dependencies-13}
+#### Dipendenze Paradiso {#maven-dependencies-13}
 
 ```xml
 <dependency>
@@ -469,7 +469,7 @@ Sono disponibili i seguenti servizi:
 * com.adobe.repository.bindings.ResourceRepository
 * com.adobe.repository.bindings.ResourceSynchronizer
 
-#### Dipendenze del cielo {#maven-dependencies-14}
+#### Dipendenze Paradiso {#maven-dependencies-14}
 
 ```xml
 <dependency>
@@ -478,5 +478,3 @@ Sono disponibili i seguenti servizi:
   <version>11.0.0</version>
 </dependency>
 ```
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
