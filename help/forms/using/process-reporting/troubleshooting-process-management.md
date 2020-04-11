@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0a818d19-8804-4c69-b721-31c347c593c0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -31,5 +31,3 @@ Durante l&#39;accesso a Process Reporting:
 
 1. Cancellate la cache del browser.
 1. Aggiorna la schermata del browser.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
