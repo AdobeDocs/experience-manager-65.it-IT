@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -33,9 +33,9 @@ Per acquisire familiarità con il processo end-to-end di creazione di un&#39;app
 
 È possibile utilizzare l&#39;area di lavoro Moduli AEM per eseguire le seguenti operazioni:
 
-**** Avviare un processo aziendale: L’area di lavoro Moduli AEM consente di suddividere i processi in base alla progettazione e alla configurazione dell’organizzazione. Potete preferire le categorie utilizzate di frequente per accedere rapidamente alle categorie. Quando si avvia un processo, in genere si compila un modulo per avviare un processo aziendale che controlla il flusso di lavoro dei moduli. Per ulteriori informazioni, vedere [Avvio dei processi](/help/forms/using/starting-processes.md).
+**Avviare un processo aziendale:** L’area di lavoro Moduli AEM consente di suddividere i processi in base alla progettazione e alla configurazione dell’organizzazione. Potete preferire le categorie utilizzate di frequente per accedere rapidamente alle categorie. Quando si avvia un processo, in genere si compila un modulo per avviare un processo aziendale che controlla il flusso di lavoro dei moduli. Per ulteriori informazioni, vedere [Avvio dei processi](/help/forms/using/starting-processes.md).
 
-**** Visualizzare e intervenire sulle attività: Quando si visualizzano gli elenchi delle operazioni, vengono visualizzate le attività di un processo aziendale assegnato all&#39;utente o a qualsiasi gruppo a cui appartenete o a cui sono associate attività condivise di altri utenti. È possibile aprire, lavorare e completare le attività come necessario. In genere, completare un&#39;attività comporta fornire informazioni, approvare un modulo o rifiutare un modulo. Per ulteriori informazioni, vedere [Uso degli elenchi](/help/forms/using/todo-lists.md)attività.
+**Visualizzare e intervenire sulle attività:** Quando si visualizzano gli elenchi delle operazioni, vengono visualizzate le attività di un processo aziendale assegnato all&#39;utente o a qualsiasi gruppo a cui appartenete o a cui sono associate attività condivise di altri utenti. È possibile aprire, lavorare e completare le attività come necessario. In genere, completare un&#39;attività comporta fornire informazioni, approvare un modulo o rifiutare un modulo. Per ulteriori informazioni, vedere [Uso degli elenchi](/help/forms/using/todo-lists.md)attività.
 
 **Tenere traccia delle attività**: Per tenere traccia delle attività, è possibile utilizzare la scheda Tracciamento dell&#39;area di lavoro Moduli AEM. Potete cercare i processi attivi o completati avviati o ai quali avete partecipato. È possibile visualizzare le attività, le assegnazioni e i moduli che facevano parte del processo. È inoltre possibile avviare nuovi processi utilizzando i dati del modulo provenienti da un processo avviato in precedenza. Per ulteriori informazioni, consulta [Tracciamento dei processi](/help/forms/using/tracking-processes.md).
 
@@ -110,7 +110,7 @@ Alcune delle funzioni di Flex Workspace non disponibili nell&#39;area di lavoro 
 
 ### Architettura {#architecture}
 
-L&#39;area di lavoro AEM Forms è un&#39;applicazione Web basata su HTML e JavaScript™ ospitata su CRX™. Quando l&#39;URL Workspace viene aperto in un browser, si accede a una risorsa CRX™ e l&#39;applicazione viene rappresentata come una pagina HTML nel browser. Le librerie JavaScript e il codice JavaScript personalizzato gestiscono il comportamento interno ed esterno dell&#39;applicazione, ad esempio l&#39;interfaccia utente, l&#39;interazione con l&#39;utente e la comunicazione con il server AEM Forms. Per ulteriori dettagli, consultate [Architettura](/help/forms/using/html-workspace-architecture.md)dell&#39;area di lavoro AEM Forms.
+L&#39;area di lavoro AEM Forms è un&#39;applicazione Web basata su HTML e JavaScript™ ospitata su CRX™. Quando l&#39;URL Workspace viene aperto in un browser, si accede a una risorsa CRX™ e l&#39;applicazione viene rappresentata come una pagina HTML nel browser. Le librerie JavaScript e il codice JavaScript personalizzato gestiscono il comportamento interno ed esterno dell&#39;applicazione, ad esempio l&#39;interfaccia utente, l&#39;interazione con l&#39;utente e la comunicazione con il server AEM Forms. Per ulteriori dettagli, consultate [Architettura](/help/forms/using/html-workspace-architecture.md)dell&#39;area di lavoro di AEM Forms.
 
 ### Personalizzazione dell’area di lavoro AEM Forms {#aem-forms-workspace-customization}
 
@@ -122,7 +122,7 @@ L&#39;area di lavoro di AEM Forms supporta un&#39;ampia gamma di personalizzazio
 
 L&#39;articolo sulla [personalizzazione](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) descrive i tipi di tali personalizzazioni.
 
-### Configurare l&#39;ambiente di sviluppo {#set-up-the-developer-environment}
+### Set up the developer environment {#set-up-the-developer-environment}
 
 I risultati finali dell&#39;area di lavoro AEM Forms includono un pacchetto CRX distribuito su CRX, un archivio SDK contenente il codice sorgente completo, librerie JavaScript di terze parti e script di creazione dell&#39;area di lavoro AEM Forms. Utilizzate queste opzioni per configurare l&#39;ambiente di sviluppo per eseguire le personalizzazioni di cui sopra. Per ulteriori dettagli, consultate [Creazione del codice](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)dell&#39;area di lavoro Moduli AEM.
 
@@ -137,5 +137,3 @@ Per impostazione predefinita, per un nuovo processo, viene eseguito il rendering
 ## App dell’area di lavoro AEM Forms {#aem-forms-workspace-app}
 
 Per lavorare sui processi aziendali mediante un dispositivo mobile, puoi utilizzare l’app dell’area di lavoro AEM Forms con AEM Forms. Per ulteriori informazioni, consultate la panoramica [dell&#39;app dell&#39;area di lavoro](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)AEM Forms.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
