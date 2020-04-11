@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -296,7 +296,7 @@ Il pulsante più (+) nella libreria delle risorse consente di salvare in modo pe
 
 Quando si fornisce un nome personalizzato per uno stile, lo stile è legato a un tema e non è più disponibile per altri temi. Per eliminare uno stile salvato:
 
-1. Nella barra degli strumenti CANVAS, fate clic su Opzioni **** tema ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) > **Gestisci stili**.
+1. Nella barra degli strumenti CANVAS, fate clic su Opzioni **** tema ![](assets/theme-options.png) > **Gestisci stili**.
 1. Nella finestra di dialogo Gestisci stili, selezionate uno stile salvato, fate clic su **Elimina**.
 
    ![Eliminare lo stile salvato](assets/manage-styles.png)
@@ -498,7 +498,7 @@ Per configurare Typekit in AEM, effettuate le seguenti operazioni:
 
 1. Nella finestra di dialogo Edit Component (Modifica componente) visualizzata, inserite l&#39;ID Kit e fate clic su **OK**.
 
-Per configurare un tema in modo che utilizzi la configurazione TypeKit, effettuate le seguenti operazioni:
+Per configurare un tema per l&#39;utilizzo della configurazione TypeKit, effettuate le seguenti operazioni:
 
 1. Nell’istanza di creazione, aprite un tema nell’editor di temi.
 1. Nell&#39;editor di temi, accedi a Opzioni **tema (** Theme Options) ![(Opzioni](assets/theme-options.png) tema) > **Configura (Configure)**.
