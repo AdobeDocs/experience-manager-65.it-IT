@@ -11,18 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Uso degli elenchi A-do{#working-with-to-do-lists}
 
-Quando si visualizzano gli elenchi delle operazioni, è possibile che vengano visualizzate le attività di un processo aziendale assegnato all&#39;utente o a qualsiasi gruppo a cui appartenete o a cui appartenete, o che siano le attività condivise di altri utenti. È possibile aprire, lavorare e completare le attività come necessario, ad esempio approvare o rifiutare una richiesta o aggiungere ulteriori informazioni. Dopo aver completato un&#39;attività, questa viene inviata alla persona successiva nel processo aziendale,
+Quando visualizzate gli elenchi delle operazioni, è possibile che vengano visualizzate attività da un processo aziendale assegnato all&#39;utente o a qualsiasi gruppo a cui appartenete o che sia l&#39;attività condivisa di altri utenti. È possibile aprire, lavorare e completare le attività come necessario, ad esempio approvare o rifiutare una richiesta o aggiungere ulteriori informazioni. Dopo aver completato un&#39;attività, questa viene inviata alla persona successiva nel processo aziendale,
 
 ## Informazioni sugli elenchi Da fare {#about-todo-lists}
 
-L’area di lavoro Moduli AEM include tre tipi di elenchi da fare:
+L’area di lavoro Moduli AEM include i tre tipi seguenti di elenchi Da fare:
 
 * Singoli elenchi, che contengono attività assegnate direttamente all&#39;utente.
 * Elenchi di gruppi, che contengono attività assegnate a un gruppo. Qualsiasi membro del gruppo può aprire e completare le attività. Per aprire un&#39;attività, un membro di un gruppo deve prima reclamare l&#39;attività.
@@ -276,7 +276,7 @@ Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimoss
 
 >[!NOTE]
 >
->Se l’utente non ha eseguito l’accesso all’area di lavoro Moduli AEM nel browser e apre un collegamento a un’attività A, il collegamento diretto A non si apre e visualizza un’eccezione. Accedete all’area di lavoro Moduli AEM prima di fare clic sui collegamenti nelle e-mail.
+>Se l’utente non ha eseguito l’accesso all’area di lavoro Moduli AEM nel browser e apre un collegamento a un’attività A, il collegamento A-do diretto non si apre e visualizza un’eccezione. Accedete all’area di lavoro Moduli AEM prima di fare clic sui collegamenti nelle e-mail.
 
 >[!NOTE]
 >
@@ -288,7 +288,7 @@ Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimoss
 1. Nell’elenco **Notifica eventi attività tramite e-mail** , selezionare **Sì**.
 1. Per includere il modulo e i dati con il messaggio e-mail, selezionare **Sì** dall’elenco **Allega moduli in e-mail**.
 
-## Partecipazione ad attività mediante dispositivi mobili {#participating-in-tasks-through-mobile-devices}
+## Partecipazione alle attività mediante i dispositivi mobili {#participating-in-tasks-through-mobile-devices}
 
 Puoi utilizzare l’app dell’area di lavoro AEM Forms per partecipare alle attività dal dispositivo mobile. Prima di installare l&#39;applicazione, verificate con l&#39;amministratore di sistema che l&#39;organizzazione supporti l&#39;utilizzo dell&#39;app dell&#39;area di lavoro AEM Forms.
 
@@ -298,7 +298,7 @@ Una *scadenza* determina la data e l&#39;ora in cui è necessario completare un&
 
 Un *promemoria* notifica un’attività che richiede l’attenzione dell’utente. I promemoria si verificano a un&#39;ora prestabilita e quindi a intervalli regolari fino al completamento dell&#39;attività associata. Quando ricevete un promemoria, sull&#39;attività viene visualizzata l&#39;icona del promemoria.
 
-Il processo aziendale determina il comportamento e la tempistica di scadenze e promemoria. Non tutti i processi hanno scadenze e promemoria. L’amministratore specifica se le notifiche e-mail vengono inviate per scadenze e promemoria. Potete impostare le preferenze in modo da ricevere le notifiche e-mail.
+Il processo aziendale determina il comportamento e la tempistica di scadenze e promemoria. Non tutti i processi hanno scadenze e promemoria. L’amministratore specifica se le notifiche e-mail vengono inviate per scadenze e promemoria. Potete impostare le preferenze in modo da specificare se ricevere le notifiche e-mail.
 
 ## Operazioni con le attività da code di gruppi e condivise {#working-with-tasks-from-group-and-shared-queues}
 
@@ -306,9 +306,9 @@ Tutte le attività assegnate all&#39;utente vengono visualizzate nell&#39;elenco
 
 Qualsiasi elenco di gruppi e di operazioni condivise a cui avete accesso viene visualizzato anche nel riquadro a sinistra nella pagina Da fare. È possibile completare le attività da qualsiasi elenco A a cui si ha accesso.
 
-Un elenco di attività di gruppo può avere più di un membro. Un amministratore configura elenchi di attività di gruppo in base ai requisiti specifici dell&#39;organizzazione. Gli elenchi di attività raggruppate consentono di distribuire il lavoro a più persone che condividono responsabilità simili.
+Un elenco di attività di gruppo può avere più di un membro. Un amministratore imposta gli elenchi di attività del gruppo in base ai requisiti specifici dell&#39;organizzazione. Gli elenchi di attività raggruppate consentono di distribuire il lavoro a più persone che condividono responsabilità simili.
 
-Ad esempio, ogni membro del team elabora i moduli di richiesta di prestito. Tutte queste attività vengono inviate a un elenco di attività del gruppo a cui ogni membro del gruppo ha accesso. Ciascun membro del gruppo può accedere alle attività contenute in tale elenco.
+Ad esempio, ogni membro del team elabora i moduli per le domande di prestito. Tutte queste attività vengono inviate a un elenco di attività del gruppo a cui ogni membro del gruppo ha accesso. Ciascun membro del gruppo può accedere alle attività contenute in tale elenco.
 
 Quando un altro utente condivide con voi l&#39;elenco A, o condivide esplicitamente con voi un&#39;attività, viene visualizzato un elenco di cose da fare condiviso. Potete quindi visualizzare le attività nell&#39;elenco A e completarle per conto dell&#39;utente. Ad esempio, se state trascorrendo una vacanza, potete scegliere di condividere l&#39;elenco delle attività con un collega che completa le attività mentre siete via.
 
@@ -345,7 +345,7 @@ Potete richiedere l&#39;accesso all&#39;elenco A-do di un altro utente per visua
 
 Quando richiedete l&#39;accesso all&#39;elenco A di un altro utente, l&#39;utente riceve un&#39;attività dall&#39;elenco A per approvare o rifiutare la richiesta. Una volta completata l&#39;attività, l&#39;utente riceve una notifica nell&#39;elenco A-do.
 
-Se si dispone dell&#39;accesso all&#39;elenco A di un altro utente, non è possibile visualizzare alcuna attività presente nell&#39;elenco A prima di ottenere l&#39;accesso. È possibile visualizzare solo le attività che arrivano nell&#39;elenco A-do dell&#39;utente dopo aver ottenuto l&#39;accesso all&#39;elenco A-do.
+Se si dispone dell&#39;accesso all&#39;elenco A di un altro utente, non è possibile visualizzare alcuna attività presente nell&#39;elenco A prima che sia stato concesso l&#39;accesso. È possibile visualizzare solo le attività che arrivano nell&#39;elenco A-do dell&#39;utente dopo che gli è stato concesso l&#39;accesso all&#39;elenco A-do.
 
 **Accedere a un&#39;altra coda**
 
@@ -389,5 +389,3 @@ Se si prevede di uscire dall&#39;ufficio, è possibile specificare cosa accade a
    >Il progettista di processi può specificare che le attività di alcuni processi vengono sempre mantenute private e non inoltrate ad altri utenti. Questa impostazione sostituisce tutte le impostazioni che avete creato.
 
 1. Al termine, fate clic su **Salva**. Se le impostazioni indicano che al momento siete fuori ufficio, le modifiche avranno effetto immediatamente. In caso contrario, hanno effetto alla data e all&#39;ora di inizio specificate. Se accedete mentre siete fuori dall&#39;ufficio, non sarete considerati in ufficio finché non cambiate le impostazioni.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
