@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -39,7 +39,7 @@ Quando un componente viene inizializzato, vengono creati i seguenti oggetti:
 
 * Viene creata una nuova istanza del modello Backbone per il componente. Il servizio è inserito nel modello.
 * Viene creata una nuova istanza della vista Backbone.
-* Nella vista viene iniettata l’istanza del modello, del modello HTML e delle utility corrispondente.
+* Nella vista vengono inserite le istanze del modello, del modello HTML e delle utility corrispondenti.
 
 Nella visualizzazione Backbone è presente una mappa evento che mappa i vari eventi che possono verificarsi a causa delle interazioni dell&#39;interfaccia utente con un gestore corrispondente. Questa mappatura viene avviata una volta inizializzato un componente.
 
@@ -56,6 +56,4 @@ Esempio:
 1. Il callback di riuscita per questa chiamata Ajax è definito nel modello attività.
 1. Il modello di task genera un evento dorsale come notifica del completamento della chiamata di rendering.
 1. Un&#39;altra visualizzazione, la visualizzazione dei dettagli dell&#39;attività, ascolta l&#39;evento dal modello dell&#39;attività.
-1. La visualizzazione Dettagli attività modifica quindi il modello dei dettagli attività per visualizzare all’utente l’attività di cui è stato effettuato il rendering (modulo, dettagli, allegati, note e così via).
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+1. La visualizzazione Dettagli attività modifica quindi il modello dei dettagli dell&#39;attività per visualizzare all&#39;utente l&#39;attività di cui è stato effettuato il rendering (modulo, dettagli, allegati, note e così via).
