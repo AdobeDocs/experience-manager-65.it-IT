@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -39,27 +39,27 @@ Di seguito sono riportati i prerequisiti per la creazione di una comunicazione i
 1. Inserite le seguenti informazioni. :
 
    * **[!UICONTROL Titolo]**: Inserite il titolo della comunicazione interattiva.
-   * **[!UICONTROL Nome]**: Il nome della comunicazione interattiva viene derivato dal titolo immesso. Modificatelo, se necessario.
+   * **[!UICONTROL Nome]**: Il nome della comunicazione interattiva viene ricavato dal titolo immesso. Modificatelo, se necessario.
    * **[!UICONTROL Descrizione]**: Inserite una descrizione della comunicazione interattiva.
    * **[!UICONTROL Modello]** dati modulo: Individuare e selezionare il modello dati del modulo. Per ulteriori informazioni sul modello dati modulo, consulta Integrazione [dati](/help/forms/using/data-integration.md)AEM Forms.
 
    * **[!UICONTROL Servizio]** di precompilazione: Selezionate il servizio di precompilazione per recuperare i dati e precompilare la comunicazione interattiva.
    * **[!UICONTROL Tipo]** post-processo: Potete selezionare il flusso di lavoro AEM o Forms da attivare all&#39;invio della comunicazione interattiva. Selezionare il tipo di flusso di lavoro da attivare.
 
-   * **[!UICONTROL Post-processo]**: Selezionate il nome del flusso di lavoro da attivare. Quando selezionate Flusso di lavoro AEM, specificate Percorso allegato, Percorso layout, Percorso PDF, Percorso dati di stampa e Percorso dati Web.
+   * **[!UICONTROL Post-processo]**: Selezionate il nome del flusso di lavoro da attivare. Quando si seleziona Flusso di lavoro AEM, specificare Percorso allegato, Percorso layout, Percorso PDF, Percorso dati di stampa e Percorso dati Web.
    * **[!UICONTROL Tag]**: Selezionate i tag da applicare alla comunicazione interattiva. Potete anche digitare un nome di tag nuovo/personalizzato e premere Invio per crearlo.
    * **[!UICONTROL Autore]**: il nome dell&#39;autore viene automaticamente prelevato dal nome utente dell&#39;utente connesso.
-   * **** Data pubblicazione: Immettete la data di pubblicazione della comunicazione interattiva.
-   * **[!UICONTROL Data]** annullamento pubblicazione: Immettete la data per annullare la pubblicazione della comunicazione interattiva.
+   * **[!UICONTROL Data pubblicazione:]** Immettete la data di pubblicazione della comunicazione interattiva.
+   * **[!UICONTROL Data]** di annullamento pubblicazione: Immettete la data per annullare la pubblicazione della comunicazione interattiva.
 
 1. Toccate **[!UICONTROL Avanti]**. Viene visualizzata la schermata per specificare i dettagli del canale Web e della stampa.
 1. Digitate il testo seguente:
 
    * **[!UICONTROL Stampa]**: Selezionate questa opzione per generare il canale di stampa della comunicazione interattiva.
-   * **[!UICONTROL Modello]** di stampa: Individuate e selezionate un file XDP come modello di stampa.
+   * **[!UICONTROL Modello]** di stampa: Sfogliate e selezionate un XDP come modello di stampa.
    * **[!UICONTROL Web]**: Selezionate questa opzione per generare il canale Web o l&#39;output reattivo della comunicazione interattiva.
    * **[!UICONTROL Modello]** Web di comunicazione interattiva: Sfogliate e selezionate il modello Web.
-   * **[!UICONTROL Tema]** e **[!UICONTROL Seleziona tema]**: Sfogliate e selezionate il tema per personalizzare il canale Web della comunicazione interattiva. Per ulteriori informazioni, consultate [Temi in AEM Forms](/help/forms/using/themes.md).
+   * **[!UICONTROL Tema]** e **[!UICONTROL Seleziona tema]**: Sfogliate e selezionate il tema per definire lo stile del canale Web della comunicazione interattiva. Per ulteriori informazioni, consultate [Temi in AEM Forms](/help/forms/using/themes.md).
 
    * **[!UICONTROL Usa stampa come principale per il canale]** Web: Selezionate questa opzione per creare il canale Web sincronizzato con il canale di stampa. L&#39;utilizzo del canale di stampa come master per il canale Web garantisce che il contenuto e il binding dei dati del canale Web siano derivati dal canale di stampa e che le modifiche apportate al canale di stampa si riflettano sul canale Web quando si tocca Sincronizza. Gli autori possono tuttavia interrompere l’ereditarietà di componenti specifici nel canale Web, a seconda delle necessità. Per ulteriori informazioni, vedere [Sincronizzare il canale Web con il canale](../../forms/using/create-interactive-communication.md#synchronize)Stampa.
 Se selezionate l’opzione **[!UICONTROL Usa stampa come master per canale]** Web, potete selezionare una delle seguenti modalità per generare il canale Web:
@@ -78,7 +78,7 @@ Per ulteriori informazioni sull’interfaccia di authoring delle comunicazioni i
 
 1. L&#39;interfaccia di creazione delle comunicazioni interattive viene avviata quando toccate Modifica come indicato in [Creazione di comunicazioni](#createic)interattive. In alternativa, puoi accedere a una risorsa di comunicazione interattiva esistente su AEM, selezionarla e toccare **[!UICONTROL Modifica]** per avviare l’interfaccia di creazione della comunicazione interattiva.
 
-   Per impostazione predefinita, viene visualizzato il canale di stampa della comunicazione interattiva, a meno che la comunicazione interattiva non sia solo per canale Web. Il canale di stampa della comunicazione interattiva visualizza le aree di destinazione, come disponibile nel modello di canale XDP/stampa selezionato. In queste aree e campi di destinazione, potete aggiungere componenti o risorse.
+   Per impostazione predefinita, viene visualizzato il canale di stampa della comunicazione interattiva, a meno che la comunicazione interattiva non sia solo per il canale Web. Il canale di stampa della comunicazione interattiva visualizza le aree di destinazione, come disponibile nel modello di canale XDP/stampa selezionato. In queste aree e campi di destinazione, potete aggiungere componenti o risorse.
 
 1. Con il canale di stampa selezionato, selezionare la scheda **[!UICONTROL Componenti]** . I seguenti componenti sono disponibili nel canale di stampa:
 
@@ -98,7 +98,7 @@ Per ulteriori informazioni sull’interfaccia di authoring delle comunicazioni i
 
    Le opzioni Annulla e Ripristina sono visualizzate nella barra degli strumenti dell’interfaccia utente di authoring. L&#39;opzione Annulla viene visualizzata solo dopo l&#39;esecuzione di un&#39;azione. L&#39;opzione Ripristina viene visualizzata sulla barra degli strumenti della pagina solo dopo l&#39;esecuzione di un&#39;operazione di annullamento. Queste azioni vengono reimpostate all’aggiornamento della pagina.
 
-1. Con il canale di stampa selezionato, andate alla scheda **[!UICONTROL Risorse]** e applicate il filtro per visualizzare solo le risorse da visualizzare.
+1. Con il canale di stampa selezionato, andate alla scheda **[!UICONTROL Risorse]** e applicate il filtro per visualizzare solo le risorse che desiderate vedere.
 
    Utilizzando il browser Risorse, puoi anche trascinare e rilasciare risorse direttamente nelle aree di destinazione delle comunicazioni interattive.
 
@@ -127,29 +127,29 @@ Per ulteriori informazioni sull’interfaccia di authoring delle comunicazioni i
  </tbody>
 </table>
 
-È inoltre possibile sostituire il binding tra un&#39;area di destinazione e un frammento di documento rilasciando il nuovo frammento nell&#39;area di destinazione utilizzando la scheda **Risorse** . L&#39;ombreggiatura blu dell&#39;area di destinazione durante il trascinamento indica che è possibile rilasciare il frammento di documento nell&#39;area di destinazione.
+È inoltre possibile sostituire il binding tra un&#39;area di destinazione e un frammento di documento rilasciando il nuovo frammento nell&#39;area di destinazione utilizzando la scheda **Risorse** . L&#39;ombreggiatura blu dell&#39;area di destinazione durante il trascinamento del frammento indica che è possibile rilasciare il frammento di documento nell&#39;area di destinazione.
 
 Per ulteriori informazioni sui frammenti di documento, vedere [Frammenti](/help/forms/using/document-fragments.md)di documento.
 
-L’interfaccia di authoring consente di distinguere tra i campi non associati e associati e le variabili all’interno di una comunicazione interattiva. L&#39;interfaccia evidenzia i campi e le variabili non associati utilizzando un bordo arancione.
+L’interfaccia di authoring consente di distinguere tra i campi non associati e i campi associati e le variabili all’interno di una comunicazione interattiva. L&#39;interfaccia evidenzia i campi e le variabili non associati utilizzando un bordo arancione.
 
 ![unbound_fields_variables_highlight_dc](assets/unbound_fields_variables_highlights_dc.jpg)
 
 Inoltre, quando si passa il mouse su questi elementi, viene visualizzata una descrizione comandi con il messaggio Campo (non associato) o Variabile (non associato).
 
-È possibile che talvolta nell’interfaccia di authoring non venga visualizzata una variabile non associata utilizzata in un frammento di documento. Può verificarsi a causa di una regola di testo in linea all&#39;interno di un frammento di documento o nel caso di un frammento di condizione. In questi casi, una descrizione comandi, evidenziata in blu, viene visualizzata come parte del frammento del documento. La descrizione comandi visualizza il numero di variabili non associate utilizzate in un frammento di documento.
+È possibile che talvolta nell’interfaccia di authoring non venga visualizzata una variabile non associata utilizzata in un frammento di documento. Può verificarsi a causa di una regola di testo in linea all&#39;interno di un frammento di documento o nel caso di un frammento di condizione. In questi casi, una descrizione comandi, evidenziata in blu, viene visualizzata come parte del frammento del documento. La descrizione comandi visualizza il numero di variabili non associate utilizzate all&#39;interno di un frammento di documento.
 
 ![Variabile non associata](assets/df_unbound_variable_new.png)
 
-Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà.
+Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](assets/edit.svg) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà.
 
 1. Per impostare il binding delle variabili, toccare una variabile e selezionare ![configure_icon](assets/configure_icon.png) (Configure), quindi impostare le proprietà di binding nel pannello Proprietà nella barra laterale.
 
    * **Nessuno**: L&#39;agente inserirà il valore della variabile.
    * **Frammento** di testo: Se questa opzione è selezionata, è possibile individuare e selezionare un frammento di documento di testo il cui contenuto è rappresentato nel campo. Solo i frammenti di documento di testo possono essere associati a variabili prive di variabili.
    * **Oggetto** modello dati: Selezionare una proprietà del modello dati del modulo il cui valore è popolato nel campo.
-   * **** Valore predefinito: È possibile definire un valore predefinito per la variabile utilizzando questo campo. Il valore viene visualizzato quando si visualizza l&#39;anteprima della comunicazione interattiva o nell&#39;interfaccia utente dell&#39;agente.
-   * **** Pattern di visualizzazione: È inoltre possibile definire un formato di visualizzazione per una variabile. Selezionare una delle opzioni predefinite dall&#39;elenco a discesa **Tipo** per applicare un formato di visualizzazione a una variabile. Selezionare **Personalizzato** per definire un pattern di visualizzazione non disponibile nell&#39;elenco. Per ulteriori informazioni, vedere [Pattern](../../forms/using/create-interactive-communication.md#datadisplaypatterns)di visualizzazione dei dati.
+   * **Valore predefinito:** È possibile definire un valore predefinito per la variabile utilizzando questo campo. Il valore viene visualizzato quando si visualizza l&#39;anteprima della comunicazione interattiva o nell&#39;interfaccia utente dell&#39;agente.
+   * **Pattern di visualizzazione:** È inoltre possibile definire un formato di visualizzazione per una variabile. Selezionare una delle opzioni predefinite dall&#39;elenco a discesa **Tipo** per applicare un formato di visualizzazione a una variabile. Selezionare **Personalizzato** per definire un pattern di visualizzazione non disponibile nell&#39;elenco. Per ulteriori informazioni, vedere [Pattern](../../forms/using/create-interactive-communication.md#datadisplaypatterns)di visualizzazione dei dati.
    Passare a [Variabili e oggetti](../../forms/using/create-interactive-communication.md#hiddenvariables) modello dati per impostare il binding di variabili nascoste nel frammento di documento.
 
    È inoltre possibile trascinare elementi di origine dati o frammenti di documenti di testo per impostare il binding delle variabili.  Per creare un binding con uno qualsiasi degli elementi dell&#39;origine dati, selezionare la scheda Origini **** dati e trascinare l&#39;elemento sul nome della variabile. L&#39;elemento e la variabile dell&#39;origine dati devono essere dello stesso tipo per impostare correttamente il binding. Se si trascina un elemento origine dati su una variabile già associata, il nuovo elemento sostituisce il precedente per creare un nuovo binding con la variabile. Allo stesso modo, seleziona la scheda **Risorse** e trascina il frammento del documento di testo sul nome della variabile per impostare il binding tra di essi. Il frammento di documento di testo non deve contenere variabili.
@@ -182,7 +182,7 @@ Toccate il frammento di documento, toccate ![configure_icon](assets/configure_ic
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà. Inoltre, per i frammenti di documento generati [](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) automaticamente nel canale Web utilizzando il canale Stampa, utilizzare l&#39;icona ![](assets/cancelinheritance.png) (Annulla ereditarietà) accanto a ciascun oggetto e variabile del modello dati per [annullare l&#39;ereditarietà](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) e modificarli.
+   Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](assets/edit.svg) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà. Inoltre, per i frammenti di documento generati [](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) automaticamente nel canale Web utilizzando il canale Stampa, utilizzare l&#39;icona ![](assets/cancelinheritance.png) (Annulla ereditarietà) accanto a ciascun oggetto e variabile del modello dati per [annullare l&#39;ereditarietà](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) e modificarli.
 
 1. Per aggiungere altri componenti nel canale Web, toccate **[!UICONTROL Componenti]** con il canale Web selezionato. Trascina i componenti sul canale Web della comunicazione interattiva, come necessario, e procedi a configurarli.
 
@@ -234,13 +234,13 @@ Nel canale Stampa, puoi configurare gli allegati e l&#39;accesso alla libreria p
 
 1. Espandere **Allegati** e specificare le proprietà seguenti:
 
-   * **[!UICONTROL Consenti accesso]** libreria: Selezionate questa opzione per abilitare l&#39;accesso alla libreria per l&#39;agente nell&#39;interfaccia utente dell&#39;agente. Se attivato, l&#39;agente può aggiungere file dalla libreria durante la preparazione della comunicazione interattiva.
+   * **[!UICONTROL Consenti accesso]** libreria: Selezionate questa opzione per abilitare l&#39;accesso alla libreria per l&#39;agente nell&#39;interfaccia utente dell&#39;agente. Se attivato, l&#39;agente può aggiungere i file dalla libreria durante la preparazione della comunicazione interattiva.
    * **[!UICONTROL Consenti Riordinamento Degli Allegati]**: Selezionare per abilitare l&#39;agente a riordinare gli allegati con la comunicazione interattiva.
    * **[!UICONTROL Numero Massimo Di Allegati Consentiti]**: Specificate il numero massimo di allegati consentiti con la comunicazione interattiva.
    * **[!UICONTROL File Da Allegare]**: Toccate **[!UICONTROL Aggiungi]** e sfogliate per selezionare i file da allegare e specificate quanto segue:
 
       * **[!UICONTROL Allega Questo File Al Documento Per Impostazione Predefinita]**: È possibile modificare questa opzione se solo l&#39;allegato non è obbligatorio.
-      * **** Obbligatorio: L&#39;agente non sarà in grado di rimuovere l&#39;allegato nell&#39;interfaccia utente dell&#39;agente.
+      * **[!UICONTROL Obbligatorio:]** L&#39;agente non sarà in grado di rimuovere l&#39;allegato nell&#39;interfaccia utente dell&#39;agente.
    ![file allegati](assets/attachfiles.png)
 
 1. Toccate **[!UICONTROL Chiudi]**.
@@ -261,14 +261,14 @@ Nel canale Stampa, puoi configurare gli allegati e l&#39;accesso alla libreria p
 
       * Nessuno: L&#39;agente inserirà il valore della proprietà.
       * Frammento di testo: Se questa opzione è selezionata, è possibile individuare e selezionare un frammento di documento di testo il cui contenuto è rappresentato nel campo. In alternativa, trascinare il frammento del documento di testo sul nome del campo per impostare il binding tra di essi. Il frammento di documento di testo non deve contenere variabili.
-      * Oggetto modello dati: Selezionare una proprietà del modello dati del modulo il cui valore è popolato nel campo. In alternativa, seleziona la scheda **Origini** dati e trascina la proprietà sul campo.
+      * Oggetto del modello dati: Selezionare una proprietà del modello dati del modulo il cui valore è popolato nel campo. In alternativa, seleziona la scheda **Origini** dati e trascina la proprietà sul campo.
    * **[!UICONTROL Valori]** predefiniti: Il valore predefinito assicura che il campo non sia vuoto se non è presente alcun valore fornito dall&#39;oggetto modello dati o dal frammento di testo specificato. Se il tipo di binding dei dati è none, il valore predefinito viene precompilato nel campo.
    * **[!UICONTROL Pattern]** di visualizzazione: È inoltre possibile definire un formato di visualizzazione per un campo. Selezionare una delle opzioni predefinite dall&#39;elenco a discesa **Tipo** per applicare un formato di visualizzazione a un campo. Selezionare **Personalizzato** per definire un pattern di visualizzazione non disponibile nell&#39;elenco. Per ulteriori informazioni, vedere Pattern di visualizzazione [dei dati](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
 
    * **[!UICONTROL Modificabile dall&#39;agente]**: Selezionare questa opzione per consentire all&#39;agente di modificare il valore nel campo nell&#39;interfaccia utente dell&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
-   * **[!UICONTROL Etichetta]**: Specificate una stringa di testo da visualizzare con il campo nell’interfaccia utente dell’agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
+   * **[!UICONTROL Etichetta]**: Specificate una stringa di testo da visualizzare con il campo all&#39;agente nell&#39;interfaccia utente dell&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
    * **[!UICONTROL Descrizione]**: Immettere una stringa di testo che sarà visibile quando si passa il puntatore del mouse sull&#39;agente nell&#39;interfaccia utente dell&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
-   * **[!UICONTROL Obbligatorio]**: Selezionare per rendere il campo obbligatorio per l&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
+   * **[!UICONTROL Obbligatorio]**: Selezionare questa opzione per rendere il campo obbligatorio per l&#39;agente. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
    * **[!UICONTROL Consenti righe]** multiple: Selezionare questo campo per consentire l&#39;immissione di più righe di testo nel campo. Questa impostazione non è applicabile se il tipo di binding è Frammento di testo.
 
 
@@ -280,7 +280,7 @@ L&#39;interfaccia di authoring consente di definire pattern di visualizzazione d
 
 Per configurare il pattern di visualizzazione dei dati, toccate l&#39;elemento, selezionate ![configure_icon](assets/configure_icon.png) (Configure) e impostate il pattern di visualizzazione nel pannello **[!UICONTROL Proprietà]** nella barra laterale. Selezionare un&#39;opzione predefinita dall&#39;elenco a discesa **[!UICONTROL Tipo]** per visualizzare il pattern associato al tipo selezionato. Selezionare **[!UICONTROL Personalizzato]** dall&#39;elenco a discesa **[!UICONTROL Tipo]** per definire un pattern non disponibile nell&#39;elenco. La modifica dei valori nel campo **[!UICONTROL Pattern]** modifica automaticamente il tipo in **[!UICONTROL Personalizzato]**.
 
-Per applicare il pattern di visualizzazione, il numero di caratteri o cifre definito nel campo Pattern deve corrispondere o superare i caratteri o le cifre definiti nel valore per campi, variabili ed elementi del modello dati del modulo. For more information, see [example](../../forms/using/create-interactive-communication.md#greaternumberofdigits).
+Per applicare il pattern di visualizzazione, il numero di caratteri o cifre definito nel campo Pattern deve corrispondere o superare i caratteri o le cifre definiti nel valore per i campi, le variabili e gli elementi del modello dati del modulo. For more information, see [example](../../forms/using/create-interactive-communication.md#greaternumberofdigits).
 
 ![data_display_pattern_example](assets/data_display_patterns_ssn_new.png)
 
@@ -298,7 +298,7 @@ Nella tabella seguente è riportato un esempio dei valori visualizzati come risu
 
 Se non viene specificato un pattern di visualizzazione per una variabile o un elemento del modello dati del modulo, per impostazione predefinita viene utilizzata la configurazione [](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) globale del frammento di documento.
 
-Se non si applica un pattern di visualizzazione a una variabile del tipo di dati numerico, nell&#39;anteprima di stampa viene visualizzato il pattern in base alla configurazione globale del frammento di documento. Se si applicano modifiche alla configurazione di frammento di documento globale predefinita, l&#39;interfaccia utente agente visualizza comunque il pattern in base ai separatori predefiniti definiti per le impostazioni internazionali.
+Se non si applica un pattern di visualizzazione a una variabile del tipo di dati numerico, nell&#39;anteprima di stampa viene visualizzato il pattern in base alla configurazione globale del frammento di documento. Se si applicano modifiche alla configurazione di frammento di documento globale predefinita, l&#39;interfaccia utente dell&#39;agente visualizza comunque il pattern in base ai separatori predefiniti definiti per le impostazioni internazionali.
 
 Analogamente, per i campi, se il pattern di visualizzazione non è specificato, al campo viene applicato il pattern definito durante la creazione del modello di stampa (XDP). Se durante la creazione del modello di stampa non è presente alcun pattern, ai campi vengono applicati i pattern predefiniti basati sulle specifiche XFA.
 
@@ -306,7 +306,7 @@ Inoltre, se il pattern di visualizzazione specificato non è corretto o non può
 
 ## Applicazione di regole ai componenti di comunicazione interattiva {#rules}
 
-Per condizionare componenti o contenuti nella comunicazione interattiva, toccate il componente o il contenuto e selezionate ![createruleicon](assets/createruleicon.png) (Crea regola) per avviare Editor regole.
+Per condizionare i componenti o il contenuto nella comunicazione interattiva, toccate il componente o il contenuto e selezionate ![createruleicon](assets/createruleicon.png) (Crea regola) per avviare Editor regole.
 
 Per ulteriori informazioni, vedere:
 
@@ -343,7 +343,7 @@ Per ulteriori informazioni, vedere:
       * **[!UICONTROL Tipo]** di binding: Selezionare uno dei seguenti tipi di binding per il campo.
 
          * **[!UICONTROL Nessuno]**
-         * **[!UICONTROL Oggetto]** del modello dati: Il valore della proprietà del modello dati del modulo è compilato nel campo. In alternativa, seleziona la scheda **Origini** dati e trascina la proprietà sul campo.
+         * **[!UICONTROL Oggetto]** del modello dati: Il valore della proprietà del modello dati del modulo è popolato nel campo. In alternativa, seleziona la scheda **Origini** dati e trascina la proprietà sul campo.
       * **[!UICONTROL Oggetto]** modello dati: La proprietà del modello dati del modulo il cui valore è popolato nel campo.
       * **[!UICONTROL Valore]** predefinito: Il valore predefinito assicura che il campo non sia vuoto se non è presente alcun valore fornito dall&#39;oggetto modello dati specificato. Il valore predefinito è precompilato nel campo.
 
@@ -374,14 +374,14 @@ Toccate il pannello principale nel modello Web e toccate **+** per aggiungere un
 1. Toccate una delle righe della tabella per visualizzare la barra degli strumenti del componente. Potete anche selezionare la riga di tabella utilizzando il browser Contenuto nella barra laterale della comunicazione interattiva.
 1. Selezionare **Aggiungi riga** o **Elimina riga** per aggiungere o eliminare rispettivamente le righe della tabella. Per ridisporre le righe nella tabella, usate le opzioni **Sposta su** e **Sposta giù** disponibili nella barra degli strumenti.
 
-![Component Toolbar](assets/component_toolbar_table_row_new.png)
+![Barra degli strumenti del componente](assets/component_toolbar_table_row_new.png)
 
-******** A. Aggiungi riga **B. Elimina riga** C.**Sposta in alto** D. Sposta in basso
+**A.** Aggiungi riga **B.** Elimina riga **C.** Sposta in alto **D.** Sposta in basso
 
 #### Aggiungere o modificare il testo nelle celle di una tabella {#addedittexttable}
 
 1. Selezionare la casella di testo predefinita nella cella della tabella e toccare ![](assets/edit.png) (Modifica).
-1. Digitare il testo nella cella della tabella e toccare ![](assets/done_icon.png) per salvarlo.
+1. Digitate il testo nella cella della tabella e toccate ![](assets/done_icon.png) per salvarlo.
 
 #### Creazione di un binding tra le celle della tabella e gli elementi dell&#39;oggetto modello dati {#createbindingtablecells}
 
@@ -393,7 +393,7 @@ Toccate il pannello principale nel modello Web e toccate **+** per aggiungere un
 
 #### Creare un collegamento ipertestuale per il testo nella cella della tabella {#createhyperlinktable}
 
-1. Selezionare la casella di testo predefinita nella cella della tabella e toccare ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Modifica).
+1. Selezionare la casella di testo predefinita nella cella della tabella e toccare ![](assets/edit.svg) (Modifica).
 1. Selezionare il testo nella cella della tabella e toccare l&#39;icona Collegamento ipertestuale.
 1. Specificate l’URL nel campo **Percorso** .
 1. Toccate ![](assets/done_icon.png) per salvare le proprietà del collegamento ipertestuale.
@@ -402,7 +402,7 @@ Toccate il pannello principale nel modello Web e toccate **+** per aggiungere un
 
 #### Creare tabelle dinamiche {#createdynamictables}
 
-È possibile creare una tabella dinamica solo per i canali Web in una comunicazione interattiva utilizzando una proprietà modello dati di raccolta di tipi. Una tabella di questo tipo è una rappresentazione delle proprietà figlio di una raccolta. È possibile modificare solo le proprietà di formattazione delle varie celle della tabella.
+È possibile creare una tabella dinamica solo per i canali Web in una comunicazione interattiva utilizzando una proprietà del modello dati di raccolta di tipi. Una tabella di questo tipo è una rappresentazione delle proprietà figlio di una raccolta. È possibile modificare solo le proprietà di formattazione delle varie celle della tabella.
 
 1. Passate al canale Web e scegliete di visualizzare il browser Origini dati.
 1. Trascinare una proprietà della raccolta in un sottomodulo. Nel sottomodulo viene creata una tabella.
@@ -461,9 +461,9 @@ Per aggiungere il canale Web per una comunicazione interattiva esistente, esegui
 1. Nella pagina **Proprietà** , selezionate la scheda **Canali** .
 1. Selezionate la casella di controllo **Web** e selezionate un modello per il canale Web.
 1. Selezionate **Usa stampa come principale per canale** Web per abilitare la sincronizzazione tra il canale Web e il canale Stampa.
-1. Toccate **Salva e chiudi** per salvare le modifiche.
+1. Tap **Save &amp; Close** to save the changes.
 
-   Analogamente, potete toccare la casella di controllo **Web** nella scheda **Canali** per eliminare il canale Web dalla comunicazione interattiva.
+   Allo stesso modo, potete toccare la casella di controllo **Web** nella scheda **Canali** per eliminare il canale Web dalla comunicazione interattiva.
 
 ## Aggiungi componente Pulsante al canale Web {#add-button-component-to-the-web-channel}
 
@@ -479,7 +479,7 @@ Per aggiungere un pulsante e definire le relative regole:
    1. Selezionare un&#39;azione dall&#39;elenco a discesa. Ad esempio, selezionare **Passa** al tipo di azione.
 
    1. Specificate l&#39;URL della comunicazione interattiva, del modulo adattivo, di una risorsa o di una pagina Web. Ad esempio, specificate l’URL nel formato seguente per passare a un’altra comunicazione interattiva: https://&lt;nome-server>:&lt;porta>/editor.html/content/forms/af/&lt;nome-comunicazione interattiva>/channel/&lt;nome-canale - stampa o Web>.html
-   1. Specificate l&#39;opzione per aprire la risorsa nella stessa scheda, nuova scheda o nuova finestra.
+   1. Specificate l&#39;opzione per aprire la risorsa nella stessa scheda, nuova scheda o in una nuova finestra.
    1. Toccate **Fine** e quindi **Chiudi** per salvare la regola.
    Allo stesso modo, è possibile selezionare altre opzioni disponibili dall&#39;elenco a discesa del tipo di azione, ad esempio Richiama il servizio e Invia modulo. Per ulteriori informazioni, consultate Editor [](../../forms/using/rule-editor.md)regole.
 
@@ -569,21 +569,21 @@ Se si utilizza Stampa come canale principale per il canale Web e si apportano mo
 
 Dopo aver generato automaticamente il contenuto nel canale Web utilizzando l&#39;opzione Sincronizza, potete eseguire più azioni sui componenti senza annullare l&#39;ereditarietà.
 
-![Component Toolbar](assets/component_toolbar_inherited_web_new.png)
+![Barra degli strumenti del componente](assets/component_toolbar_inherited_web_new.png)
 
 Toccate il componente per visualizzare le seguenti opzioni:
 
-* **** Copia: Copiate un componente e incollatelo in altre aree della comunicazione interattiva.
-* **** Taglia: Spostare un componente da un punto all’altro nella comunicazione interattiva.
-* **** Inserisci componente: Inserisci un componente sopra il componente selezionato.
-* **** Incolla: Incollate il componente tagliato o copiato utilizzando le opzioni descritte sopra.
-* **** Gruppo: Selezionate più componenti per tagliare, copiare o incollare insieme più componenti.
-* **** Elemento padre: Selezionate l’elemento padre di un componente.
-* **** Visualizza espressione SOM: Visualizzare l&#39;espressione [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM per il componente.
+* **Copia:** Copiate un componente e incollatelo in altre aree della comunicazione interattiva.
+* **Taglia:** Spostare un componente da un punto all’altro nella comunicazione interattiva.
+* **Inserisci componente:** Inserisci un componente sopra il componente selezionato.
+* **Incolla:** Incollate il componente tagliato o copiato utilizzando le opzioni descritte sopra.
+* **Gruppo:** Selezionate più componenti se desiderate tagliare, copiare o incollare insieme più componenti.
+* **Elemento padre:** Selezionate l’elemento padre di un componente.
+* **Visualizza espressione SOM:** Visualizzare l&#39;espressione [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM per il componente.
 
-* **** Raggruppa oggetti nel pannello: Raggruppare i componenti in un pannello per eseguire contemporaneamente operazioni su tali componenti. Per informazioni dettagliate, consultate **[Raggruppare gli oggetti nel pannello](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **Raggruppa oggetti nel pannello:** Raggruppare i componenti in un pannello per eseguire contemporaneamente operazioni su tali componenti. Per informazioni dettagliate, consultate **[Raggruppare gli oggetti nel pannello](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
 
-* **** Annulla ereditarietà: [Annulla l’ereditarietà](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) dei componenti all’interno dell’area di destinazione per modificarli.
+* **Annulla ereditarietà:** [Annulla l’ereditarietà](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) dei componenti all’interno dell’area di destinazione per modificarli.
 
 ### Group objects in Panel {#groupobjectspanel}
 
