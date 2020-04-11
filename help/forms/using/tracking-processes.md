@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Tracciamento dei processi {#tracking-processes}
 
-Nella pagina Tracciamento potete cercare i processi attivi o completati avviati o ai quali avete partecipato e visualizzare i dettagli del processo. I dettagli del processo mostrano le attività, le assegnazioni e i moduli che facevano parte del processo. È inoltre possibile avviare nuovi processi utilizzando i dati del modulo provenienti da un processo avviato in precedenza.
+Nella pagina Tracciamento, potete cercare i processi attivi o completati avviati o ai quali avete partecipato e visualizzare i dettagli del processo. I dettagli del processo mostrano le attività, le assegnazioni e i moduli che facevano parte del processo. È inoltre possibile avviare nuovi processi utilizzando i dati del modulo provenienti da un processo avviato in precedenza.
 
 ## Ricerca di processi e attività {#search-for-processes-and-tasks}
 
@@ -43,7 +43,7 @@ Nella pagina Tracciamento potete cercare i processi attivi o completati avviati 
 
 Nella pagina Tracciamento, potete selezionare un processo e visualizzarne i dettagli. È possibile eseguire ricerche nei processi in base a vari parametri per visualizzare i dettagli dell&#39;attività. È inoltre possibile visualizzare la scheda Stato per i processi che presentano più utenti che ricevono attività in parallelo, dove sono abilitati gli strumenti per la revisione dei documenti.
 
-**** Stato: Lo stato delle attività in un processo viene visualizzato nella colonna Azione selezionata quando si fa clic su un&#39;attività. Tuttavia, lo stato del processo non è disponibile.
+**Stato:** Lo stato delle attività in un processo viene visualizzato nella colonna Azione selezionata quando si fa clic su un&#39;attività. Tuttavia, lo stato del processo non è disponibile.
 
 1. Selezionare l&#39;istanza di processo dall&#39;elenco dei risultati della ricerca per visualizzare i dettagli delle attività che fanno parte dell&#39;istanza di processo.
 1. Per visualizzare ulteriori informazioni su un’attività, eseguire una o più delle seguenti operazioni:
@@ -51,5 +51,3 @@ Nella pagina Tracciamento, potete selezionare un processo e visualizzarne i dett
    * Per visualizzare le note e gli allegati di un&#39;attività, fare clic sulla scheda Allegati.
    * Per visualizzare i dettagli dell&#39;assegnazione dell&#39;attività, fare clic sulla scheda Assegnazione.
    * Per visualizzare il modulo associato, fare clic sul pulsante del modulo.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
