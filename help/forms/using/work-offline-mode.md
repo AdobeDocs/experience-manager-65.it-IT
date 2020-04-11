@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -28,7 +28,7 @@ Quando sincronizzate l&#39;app con il server AEM Forms, i moduli vengono scarica
 
 Per fare in modo che gli allegati associati siano scaricati con ciascun modulo, impostare Recupera allegati su ON. Per informazioni dettagliate, consultate [Aggiornamento delle impostazioni](/help/forms/using/update-general-settings.md)generali.
 
-Poiché il download dei dati sul dispositivo mobile può influire sulle prestazioni del dispositivo, per impostazione predefinita, l&#39;impostazione Recupera allegati è impostata su OFF. Gli allegati vengono estratti nel dispositivo per qualsiasi attività scaricata dal server dopo che l&#39;impostazione è stata aggiornata a ON. In modalità offline, un utente può quindi lavorare su tutte le attività che vengono scaricate sul dispositivo dopo aver impostato le opzioni **Recupera allegati** su ON.
+Poiché il download dei dati sul dispositivo mobile può influire sulle prestazioni del dispositivo, per impostazione predefinita, l&#39;impostazione Recupera allegati è impostata su OFF. Gli allegati vengono estratti sul dispositivo per qualsiasi attività scaricata dal server dopo che l&#39;impostazione è stata aggiornata a ON. In modalità offline, un utente può quindi lavorare su tutte le attività che vengono scaricate sul dispositivo dopo aver impostato le opzioni **Recupera allegati** su ON.
 
 ## Configurazione del servizio offline per l&#39;app AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
 
@@ -47,6 +47,4 @@ Per configurare il componente offline lato server dell’app AEM Forms:
    * **Validità** cache: Specifica il periodo di validità della cache offline lato server.
    * **Percorsi** di osservazione delle risorse: Specifica i percorsi in cui il servizio offline effettua il monitoraggio delle modifiche delle risorse. Se si verificano modifiche nei percorsi specificati, la cache offline di tutti i moduli dipendenti viene aggiornata. Esempio, `/etc/clientlibs/fd,/content/dam/images`.
 
-1. Nella scheda Cache **risorse** manuale, specificare le dipendenze del modulo non identificabili dal servizio offline. È possibile specificare risorse come le immagini caricate dall&#39;interno di JavaScript. L&#39;app AEM Forms scaricherà anche queste risorse per la modalità offline.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+1. Nella scheda Cache **risorse** manuale, specificare le dipendenze del modulo offline non è in grado di identificare. È possibile specificare risorse come le immagini caricate dall&#39;interno di JavaScript. L&#39;app AEM Forms scaricherà anche queste risorse per la modalità offline.
