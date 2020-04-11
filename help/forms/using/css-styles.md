@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -243,10 +243,8 @@ Quando la convalida di un campo genera un errore, quando il campo è attivo vien
 
 `Styling Inline Warnings`
 
-Quando la convalida di un campo genera un avviso, quando il campo è attivo viene visualizzato un avviso in linea. Per modificare lo stile di questi avvisi in linea, sovrascrivere l&#39;ID CSS **warning-msg**.
+Quando la convalida di un campo genera un avviso, quando il campo è attivo viene visualizzato un avviso in linea. Per modificare lo stile di questi avvisi in linea, sovrascrivere l’ID CSS **warning-msg**.
 
 `Styling Fields with Validation Errors`
 
 Quando la convalida di un campo ha esito negativo, lo stile del widget cambia. Questa modifica di stile viene eseguita applicando un **widgetError** classe CSS sul componente widget. Per modificare lo stile predefinito, ignorate la classe **widgetError** .
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
