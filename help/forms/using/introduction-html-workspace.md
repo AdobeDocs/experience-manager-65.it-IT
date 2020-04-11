@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 4c89d017-0d4b-4fa2-b648-342f3c755350
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -30,5 +30,3 @@ L&#39;area di lavoro Moduli AEM è compatibile con più dispositivi e fattori di
 * Integrare facilmente i componenti dell’area di lavoro con le applicazioni Web. Poiché l’area di lavoro Moduli AEM è un software basato su componenti, può essere facilmente personalizzata e riutilizzata.
 * Estendi i processi aziendali ai lavoratori mobili online e offline con l&#39;app dell&#39;area di lavoro AEM Forms.
 * Visualizzare rapporti per monitorare i backlog, le code di lavoro e gli indicatori prestazioni chiave (KPI). Potete utilizzare le API per estrarre i dati per ulteriori analisi utilizzando strumenti di reporting di terze parti.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
