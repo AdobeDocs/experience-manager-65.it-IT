@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -64,7 +64,7 @@ Per personalizzare l&#39;area di lavoro, è consigliabile acquisire familiarità
   </tr>
   <tr>
    <td><p>.category, .filtri</p> </td>
-   <td><p>Spazio sotto elenco categorie</p> </td>
+   <td><p>Spazio sotto l'elenco delle categorie</p> </td>
   </tr>
   <tr>
    <td><p>.category, .filter</p> </td>
@@ -88,7 +88,7 @@ Per personalizzare l&#39;area di lavoro, è consigliabile acquisire familiarità
   </tr>
   <tr>
    <td><p>.startPointList, .asklist</p> </td>
-   <td><p>Elenco di punti di avvio o elenco di attività</p> </td>
+   <td><p>L'elenco di punti di avvio o l'elenco delle attività</p> </td>
   </tr>
   <tr>
    <td><p>.startPointList .header, .asklist .header</p> </td>
@@ -150,7 +150,7 @@ I passaggi principali per le personalizzazioni al modello HTML sono:
 
 * In una cartella creata dall’utente, effettuate copie dei file predefiniti richiesti.
 * Aggiungere nuovi modelli in una cartella definita dall’utente.
-* Apportate ai file copiati aggiornamenti rilevanti, come il percorso del nuovo modello.
+* Apportate ai file copiati aggiornamenti rilevanti, ad esempio il percorso del nuovo modello.
 
 Per esempi specifici di tali personalizzazioni, consultate gli argomenti della guida forniti alla fine di questo articolo. Scegliete tra il pacchetto [](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) spedizione o il pacchetto [](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)sviluppatore, a seconda del modello da personalizzare.
 
@@ -193,7 +193,7 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
 
 * client-html:
 
-   * assembly - Contiene il file zip.xml utilizzato dallo script per la creazione dell&#39;SDK dell&#39;area di lavoro AEM Forms.
+   * assembly - Contiene il file zip.xml utilizzato dallo script per la creazione dell&#39;SDK dell&#39;area di lavoro di AEM Forms.
    * src/main/webapp -
 
       * css - Contiene fogli di stile per l&#39;area di lavoro Moduli AEM.
@@ -210,7 +210,7 @@ Il pacchetto contiene il codice sorgente dell’area di lavoro AEM Forms. Il pac
             * inizializzatore - Contiene Initializer.js utilizzato per inizializzare le viste e i modelli della colonna vertebrale utilizzati nell&#39;area di lavoro di AEM Forms.
             * modelli - Contiene modelli di base di tutti i componenti presenti nell&#39;area di lavoro di AEM Forms.
             * route - Contiene file JavaScript e file HTML che caricano il processo di avvio, lo strumento, il tracciamento e le preferenze nell&#39;area di lavoro Moduli AEM.
-            * services - Contiene service.js utilizzato nell&#39;area di lavoro di AEM Forms. Tutte le chiamate server vengono effettuate tramite service.js.
+            * services - Contiene service.js utilizzato nell&#39;area di lavoro di AEM Forms. Tutte le chiamate al server vengono effettuate tramite service.js.
             * modelli - Contiene tutti i modelli, ovvero file HTML di tutte le viste nell’area di lavoro Moduli AEM.
             * util - Contiene tutti i file di utilità (javascript) utilizzati nell&#39;area di lavoro di AEM Forms.
             * viste - Contiene le visualizzazioni della colonna vertebrale di tutti i componenti nell’area di lavoro di AEM Forms.
@@ -263,7 +263,7 @@ Questo pacchetto può essere creato utilizzando i tre profili descritti di segui
 
       * modelli - Contiene tutti i modelli, ovvero i file HTML di tutti i componenti nell’area di lavoro Moduli AEM.
    * main.js (combinato, minificato e non specificato).
-   * register.js
+   * registry.js
 
 
 
@@ -308,7 +308,7 @@ Questo pacchetto può essere creato utilizzando i tre profili descritti di segui
 
       * modelli - Contiene tutti i modelli, ovvero i file HTML di tutti i componenti nell’area di lavoro Moduli AEM.
    * main.js (combinato).
-   * register.js
+   * registry.js
 
 
 
@@ -357,7 +357,7 @@ mvn clean -P Dev install su client-pkg
       * util - Contiene tutti i file di utilità (JavaScript) utilizzati nell&#39;area di lavoro di AEM Forms.
       * viste - Contiene le viste di tutti i componenti nell&#39;area di lavoro di AEM Forms.
    * main.js
-   * register.js
+   * registry.js
    * router.js
 
 
@@ -380,5 +380,3 @@ mvn clean -P Dev install su client-pkg
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
