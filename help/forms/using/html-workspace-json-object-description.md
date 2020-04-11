@@ -1,6 +1,6 @@
 ---
-title: Descrizione oggetto JSON dell'area di lavoro AEM Forms
-seo-title: Descrizione oggetto JSON dell'area di lavoro AEM Forms
+title: Descrizione dell'oggetto JSON dell'area di lavoro AEM Forms
+seo-title: Descrizione dell'oggetto JSON dell'area di lavoro AEM Forms
 description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell'area di lavoro di LiveCycle AEM Forms per la personalizzazione, l'estensione, la modifica e il riutilizzo.
 seo-description: Informazioni concettuali sugli oggetti JavaScript JSON utilizzati nell'area di lavoro di LiveCycle AEM Forms per la personalizzazione, l'estensione, la modifica e il riutilizzo.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Descrizione oggetto JSON dell&#39;area di lavoro AEM Forms {#aem-forms-workspace-json-object-description}
+# Descrizione dell&#39;oggetto JSON dell&#39;area di lavoro AEM Forms {#aem-forms-workspace-json-object-description}
 
 Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti di seguito.
 
@@ -80,7 +80,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
    | startpointId | F | Contiene id of startpoint. |
    | isFavorite | T | Indica se il punto di avvio è il preferito o meno. True se startpoint è il preferito altrimenti false. |
    | isDefaultImage | T | Indica se esiste un&#39;immagine specificata per il processo o meno. True se non è associata alcuna immagine a process else false. |
-   | task | T | Contiene attività creata quando viene richiamato il punto di avvio. |
+   | task | T | Contiene l&#39;attività creata quando viene richiamato il punto di avvio. |
    | imageUrl | T | Contiene l’url dell’immagine corrispondente al punto di avvio. |
 
 1. Attività
@@ -222,7 +222,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
   <tr>
    <td>serializedImageTicket<br /> </td>
    <td>F</td>
-   <td>Contiene un ticket immagine corrispondente all'attività. <br /> Questo ticket immagine viene utilizzato nel campo imageUrl dell'attività, per ottenere l'immagine per l'attività dal server. <br /> </td>
+   <td>Contiene un ticket immagine corrispondente all'attività. Questo ticket immagine viene utilizzato nel campo imageUrl dell'attività, per ottenere l'immagine per l'attività dal server.<br /> <br /> </td>
   </tr>
   <tr>
    <td>serviceName<br /> </td>
@@ -325,7 +325,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
    <td>Contiene tutte le azioni di route disponibili per un'attività.<br /> </td>
   </tr>
   <tr>
-   <td>availableCommands.taskACLComains<br /> </td>
+   <td>availableCommands.taskACLCommands<br /> </td>
    <td>T</td>
    <td>Contiene comandi come avanti, condivisione e consulta, se disponibili, per un’attività.<br /> </td>
   </tr>
@@ -460,7 +460,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
    <td>F</td>
-   <td>Contiene un array di oggetti per la destinazione esterna specifica per il processo. In ciascun oggetto designato specifico per il processo, processName contiene il nome del processo, isNotDesignated è true se nessun utente è assegnato per il processo corrispondente, e userDesignated è null se nessun utente ha assegnato altri dettagli dell'utente assegnato per il processo corrispondente.<br type="_moz" /> </td>
+   <td>Contiene un array di oggetti per la definizione fuori sede specifica per il processo. In ciascun oggetto designato specifico per il processo, processName contiene il nome del processo, isNotDesignated è true se nessun utente è assegnato per il processo corrispondente, e userDesignated è null se nessun utente ha assegnato altri dettagli dell'utente assegnato per il processo corrispondente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processes<br type="_moz" /> </td>
@@ -605,7 +605,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
   <tr>
    <td>assignType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Assegnazione<br /> iniziale 1 = Inoltro (l'attività è stata inoltrata al proprietario corrente dell'attività).<br /> 2 = Restituito (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente dell'attività.)<br /> 3 = Richiesto (l'attività è stata reclamata dal proprietario corrente dell'attività).<br /> 4 = Inoltro (l'attività è stata assegnata al proprietario corrente dell'attività dopo l'inoltro.)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività.)<br /> 6 = Consultato (il task è stato consultato al proprietario corrente del task).<br type="_moz" /> </td>
+   <td>0 = Assegnazione<br /> iniziale 1 = Inoltro (l'attività è stata inoltrata al proprietario corrente dell'attività).<br /> 2 = Restituito (l'attività è stata restituita al proprietario corrente dell'attività dal proprietario precedente dell'attività.)<br /> 3 = Richiesto (l'attività è stata reclamata dal proprietario corrente dell'attività).<br /> 4 = Inoltro (l'attività è stata assegnata al proprietario corrente dell'attività dopo l'inoltro.)<br /> 5 = Amministratore assegnato (l'attività è stata assegnata dall'amministratore al proprietario corrente dell'attività.)<br /> 6 = Consultato (l'attività è stata consultata al proprietario corrente dell'attività).<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignUpdateTime<br type="_moz" /> </td>
@@ -659,7 +659,7 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
   <tr>
    <td>canConsult<br type="_moz" /> </td>
    <td>F</td>
-   <td>Se vero, si può consultare il compito.<br type="_moz" /> </td>
+   <td>Se è vero, si può consultare il compito.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td>
@@ -753,12 +753,12 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
   <tr>
    <td>formattedDescription<br type="_moz" /> </td>
    <td>T</td>
-   <td>Descrizione allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nella descrizione degli allegati nell'area di lavoro di AEM Forms.<br type="_moz" /> </td>
+   <td>Descrizione allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nella descrizione dell'allegato nell'area di lavoro di AEM Forms.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td>
    <td>T</td>
-   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell'allegato nell'area di lavoro AEM Forms. Solo per le note.<br type="_moz" /> </td>
+   <td>Nome allegato formattato. Utilizzato per visualizzare i caratteri speciali presenti nel nome dell'allegato nell'area di lavoro Moduli AEM. Questo è solo per le note.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -851,5 +851,3 @@ Gli oggetti JSON utilizzati nell&#39;area di lavoro di AEM Forms sono descritti 
   </tr>
  </tbody>
 </table>
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
