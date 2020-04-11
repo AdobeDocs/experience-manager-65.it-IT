@@ -1,6 +1,6 @@
 ---
-title: Personalizzazione delle azioni
-seo-title: Personalizzazione delle azioni
+title: Personalizzazione delle azioni attività
+seo-title: Personalizzazione delle azioni attività
 description: Potete personalizzare l’aspetto delle azioni dell’attività, utilizzare solo immagini per le azioni e personalizzare le immagini utilizzate nelle azioni di route.
 seo-description: Potete personalizzare l’aspetto delle azioni dell’attività, utilizzare solo immagini per le azioni e personalizzare le immagini utilizzate nelle azioni di route.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Personalizzazione delle azioni {#customizing-task-actions}
+# Personalizzazione delle azioni attività {#customizing-task-actions}
 
 L&#39;area di lavoro Moduli AEM consente agli utenti di personalizzare le azioni dell&#39;attività. Prima di personalizzare le azioni dell&#39;attività, accertatevi di seguire i passaggi elencati in Procedura [generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
 
@@ -359,5 +359,3 @@ Per personalizzare il menu a comparsa Azioni attività Dettagli, effettuate le s
 * Aprite il file /apps/ws/js/registry.js per la modifica.
 * Individuate il testo seguente: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Sostituire il testo posizionato con il testo seguente: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
