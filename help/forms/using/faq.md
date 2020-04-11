@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -46,7 +46,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
       }
       ```
 
-   1. Aprire lo script per aggiungere un&#39;istanza del sottomodulo per la modifica. Aggiungere il codice come illustrato di seguito per aggiungere un&#39;istanza dello script Sottomodulo.
+   1. Aprire lo script per l&#39;aggiunta di un&#39;istanza del sottomodulo per la modifica. Aggiungere il codice come illustrato di seguito per aggiungere un&#39;istanza dello script Sottomodulo.
 
       Il codice seguente controlla l&#39;istanza nascosta del sottomodulo. Se l&#39;istanza nascosta del sottomodulo viene trovata, eliminare l&#39;istanza nascosta del sottomodulo e inserire una nuova istanza del sottomodulo. Se l&#39;istanza nascosta del sottomodulo non viene trovata, è sufficiente inserire una nuova istanza del sottomodulo.
 
@@ -86,7 +86,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
    Risposta: Un sottomodulo nascosto con una gerarchia complessa divisa tra le pagine causa problemi di layout. Una soluzione consiste nel contrassegnare il sottomodulo inizialmente visibile e nasconderlo in uno script di inizializzazione in base ad alcune logiche o dati.
 
-1. Perché il testo viene troncato o visualizzato in modo non corretto in HTML5?
+1. Perché alcuni elementi di testo vengono troncati o visualizzati in modo non corretto in HTML5?
 
    Risposta: Se a un elemento di testo Disegno o Didascalia non è stato assegnato spazio sufficiente per visualizzare il contenuto, il testo appare troncato nella rappresentazione del modulo mobile. Questo troncamento è visibile anche nella vista Progettazione di AEM Forms Designer. Anche se questo troncamento può essere gestito nei PDF, non può essere gestito nei moduli HTML5. Per evitare il problema, lasciare spazio sufficiente a Disegno o Didascalia testo in modo che non venga troncato in modalità di progettazione di AEM Forms Designer.
 
@@ -104,7 +104,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
 1. I moduli HTML5 supportano i caratteri ebraici?
 
-   I moduli HTML5 supportano i caratteri ebraici in tutti i browser eccetto Microsoft Internet Explorer.
+   I moduli HTML5 supportano i caratteri ebraici in tutti i browser, ad eccezione di Microsoft Internet Explorer.
 
 1. I moduli HTML5 presentano limitazioni per i campi numerici?
 
@@ -114,7 +114,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
    Per eseguire il rendering di un XDP in un modulo HTML, sono necessari numerosi oggetti e strutture di dati intermedi, ad esempio il DOM del modulo e il DOM dei dati.
 
-   Per i moduli PDF, Adobe Acrobat dispone di un motore XTG integrato per creare strutture e oggetti di dati intermedi. Acrobat si occupa anche di layout e script.
+   Per i moduli PDF, Adobe Acrobat dispone di un motore XTG integrato per la creazione di strutture e oggetti di dati intermedi. Acrobat si occupa anche di layout e script.
 
    Per i moduli HTML5, i browser non dispongono di un motore XTG integrato per creare strutture di dati intermedie e oggetti da byte XDP non elaborati. Pertanto, per i moduli HTML5, le strutture intermedie vengono generate sul server e inviate al client. Nel client, i motori di script e layout basati su JavaScript utilizzano queste strutture intermedie.
 
@@ -122,7 +122,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
 1. Esistono limitazioni per quanto riguarda l&#39;utilizzo di tabelle nel mio xdp?
 
-   Risposta: Tabelle complesse causano problemi nel rendering.
+   Risposta: Tabelle complesse causano problemi durante il rendering.
 
    * La sezione (SubformSet) all&#39;interno di una tabella non è supportata.
    * Le righe di intestazione o piè di pagina di alcune tabelle sono contrassegnate per la ripetizione. La suddivisione di tali tabelle in più pagine può causare problemi.
@@ -146,7 +146,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
    Per disattivare la descrizione comandi al passaggio del mouse, selezionare Nessuna nel pannello di accessibilità di Designer.
 
-1. In Designer, un utente può configurare proprietà di aspetto personalizzate dei pulsanti di scelta e delle caselle di controllo. Durante il rendering dei moduli, i moduli HTML5 prendono in considerazione tali proprietà di aspetto personalizzate?
+1. In Designer, un utente può configurare le proprietà di aspetto personalizzate dei pulsanti di scelta e delle caselle di controllo. Durante il rendering dei moduli, i moduli HTML5 prendono in considerazione tali proprietà di aspetto personalizzate?
 
    Risposta: I moduli HTML5 ignorano le proprietà di aspetto personalizzate dei pulsanti di scelta e delle caselle di controllo. I pulsanti di scelta e le caselle di controllo vengono visualizzati in base alle specifiche del browser sottostante.
 
@@ -163,7 +163,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
 1. Perché gli assistenti vocali non funzionano correttamente con l&#39;oggetto campo Data/Ora?
 
-   Gli assistenti vocali non supportano i campi data/ora. Tuttavia, è possibile inserire manualmente la data/ora nel campo per consentire all&#39;assistente vocale di leggerlo. Utilizzare il testo descrittivo o dell&#39;assistente vocale per indicare all&#39;utente di selezionare manualmente la data/ora del campo.
+   Gli assistenti vocali non supportano i campi data/ora. Tuttavia, è possibile inserire manualmente la data/ora nel campo per consentire all&#39;assistente vocale di leggerlo. Utilizzare il testo descrittivo o dell&#39;assistente vocale per indicare all&#39;utente di selezionare manualmente la data e l&#39;ora del campo.
 
 ### Scripting {#scripting}
 
@@ -182,7 +182,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 1. Esistono convenzioni di denominazione consigliate e sono presenti parole chiave riservate da evitare?
 
    * In AEM Forms Designer, si consiglia di non iniziare il nome di un oggetto (ad esempio un sottomodulo o un campo di testo) con un carattere di sottolineatura (_). Per utilizzare il carattere di sottolineatura all&#39;inizio del nome, aggiungete un prefisso dopo il carattere di sottolineatura, _&lt;prefisso>&lt;nome oggetto>.
-   *  Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizzare un nome non identico alle API dei moduli [HTML5](/help/forms/using/scripting-support.md).
+   * Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizzare un nome non identico alle API dei moduli [HTML5](/help/forms/using/scripting-support.md).
 
 1. I moduli HTML5 supportano i campi mobili?
 
@@ -209,5 +209,3 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 1. Nei moduli HTML5 sono presenti parole chiave riservate?
 
    Risposta: Tutte le API dei moduli HTML5 sono parole chiave riservate. Per le API/funzioni personalizzate, utilizzare un nome non identico alle API dei moduli [HTML5](/help/forms/using/scripting-support.md). Oltre alle parole chiave riservate, se si utilizzano nomi di oggetti che iniziano con un carattere di sottolineatura (_), è consigliabile aggiungere un prefisso univoco dopo il carattere di sottolineatura. L&#39;aggiunta di un prefisso consente di evitare possibili conflitti con le API interne dei moduli HTML5. Esempio, `_fpField1`
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
