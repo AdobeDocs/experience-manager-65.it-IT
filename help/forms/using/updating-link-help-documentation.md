@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -49,5 +49,3 @@ Per aggiornare l’URL della documentazione online, seguite i passi [generici di
 
    1. Aprite /apps/ws/js/registry.js per la modifica.
    1. Cerca e sostituisci `text!/lc/libs/ws/js/runtime/templates/userinfo.html` con `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
