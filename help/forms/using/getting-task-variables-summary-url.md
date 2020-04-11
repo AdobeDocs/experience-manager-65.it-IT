@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -83,5 +83,3 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
 Nell’area di lavoro AEM Forms, quando si apre un’attività, l’URL di riepilogo accede al nodo CRX e il renderer HTML visualizza il riepilogo.
 
 Il layout di riepilogo può essere modificato senza modificare il processo. Il renderer HTML visualizza il riepilogo in modo appropriato.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
