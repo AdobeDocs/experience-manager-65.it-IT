@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -49,7 +49,7 @@ La tabella seguente specifica la funzione di supporto fornita per i moduli HTML5
   </tr>
   <tr>
    <td>Paginazione<br /> </td>
-   <td><p>Un modulo HTML5 è suddiviso in pannelli e caselle per conferirgli un aspetto simile ai moduli PDF. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta e non viene visualizzato uno spazio vuoto (spazio vuoto) tra le pagine sopra e sotto la pagina vuota.</p> <p>Se l'unione dei dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Al modulo non vengono aggiunte nuove pagine per contenere il contenuto appena aggiunto. </p> <p><strong></strong> Nota: Quando tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre.</p> </td>
+   <td><p>Un modulo HTML5 è suddiviso in pannelli e caselle per conferirgli un aspetto simile ai moduli PDF. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta e non viene visualizzato uno spazio vuoto (spazio vuoto) tra le pagine sopra e sotto la pagina vuota.</p> <p>Se l'unione dei dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Al modulo non vengono aggiunte nuove pagine per contenere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> Quando tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre.</p> </td>
    <td>L'impaginazione in PDF dipende dal contenuto dei dati unito o contenuto utente e il conteggio delle pagine viene aumentato o ridotto in base a tale contenuto.</td>
   </tr>
   <tr>
@@ -81,5 +81,3 @@ La tabella seguente specifica la funzione di supporto fornita per i moduli HTML5
 </table>
 
 <!--Follow the best practices to enable a form template for HTML5 renditions and ensure that the behavior and appearance of HTML5 forms and XFA-based PDF is consistent. For detailed list of best practices, see [Best practices to design an HTML5 form.](/help/forms/using/best-practices-design-html5-forms.md)-->
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
