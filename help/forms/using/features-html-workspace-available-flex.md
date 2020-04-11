@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -40,5 +40,3 @@ La capacità di integrarsi con applicazioni di terze parti può essere utilizzat
 ## Supporto per il rendering attività personalizzato in base al dispositivo dell&#39;utente finale {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
 L&#39;area di lavoro Moduli AEM supporta la rappresentazione HTML dei moduli XDP. Questo supporto, se utilizzato in un processo di rendering che indirizza a diverse rappresentazioni di XDP basate sul dispositivo o sull&#39;agente utente, consente agli utenti di visualizzare un modulo XDP come HTML sui dispositivi mobili e come PDF su un desktop. Questo aiuta a fornire una copertura senza soluzione di continuità di Process Management agli utenti che lavorano in ambienti diversi su dispositivi diversi.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
