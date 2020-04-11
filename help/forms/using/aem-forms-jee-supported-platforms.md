@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b41060207a1fb522905259a0d33df690d606929d
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -714,5 +714,3 @@ In circostanze che esulano dal controllo di Adobe, le patch di terze parti che r
 Adobe si riserva il diritto di modificare le piattaforme di riferimento di terze parti supportate da una versione di AEM Forms su JEE e le relative definizioni di patch supportate in qualsiasi momento.
 
 Per ulteriori informazioni sulle patch di terze parti, consultate anche gli articoli della knowledgebase relativi al prodotto nel sito di supporto Adobe Enterprise.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
