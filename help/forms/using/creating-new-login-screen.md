@@ -10,14 +10,14 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Creazione di una nuova schermata di login{#creating-a-new-login-screen}
 
-Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utilizzano la schermata di accesso di AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
+È possibile modificare la schermata di accesso di tutti i moduli AEM Forms che utilizzano la schermata di accesso di AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
 
 ## Prerequisito {#prerequisite}
 
@@ -52,7 +52,7 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
    1. Modificate il valore della proprietà `jcr:language` in `ar`(per la `ar` cartella).
    >[!NOTE]
    >
-   >Se l&#39;impostazione internazionale è una combinazione di codice paese lingua, ad esempio, `ar-DZ`modificare il nome della cartella e il valore della proprietà in `ar-DZ`.
+   >Se l&#39;impostazione internazionale è una combinazione di codice paese lingua, ad esempio `ar-DZ`, modificare il nome della cartella e il valore della proprietà in `ar-DZ`.
 
 1. Copia `login.jsp`:
 
@@ -296,5 +296,3 @@ Potete modificare la schermata di accesso di tutti i moduli AEM Forms che utiliz
    
    <div class="newLginContainerBkg">
    ```
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
