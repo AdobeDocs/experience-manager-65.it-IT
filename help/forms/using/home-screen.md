@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: ba79479b-4159-4a39-95eb-2285e7ece9d4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -45,5 +45,3 @@ Potete modificare la schermata iniziale predefinita dell&#39;app sia dalle impos
 La modifica apportata alla schermata iniziale dell&#39;app ha effetto sulla schermata iniziale dell&#39;utente attualmente registrato o sul dispositivo mobile corrente.
 
 Tuttavia, la modifica apportata in Area di lavoro HTML ha effetto su tutti gli utenti dell&#39;app AEM Forms che hanno eseguito l&#39;accesso al server AEM Forms.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
