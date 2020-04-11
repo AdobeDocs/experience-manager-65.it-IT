@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -52,7 +52,7 @@ Per visualizzare tutti gli allegati in una posizione, toccate ![attachments-app]
 
    1. Se selezionate **Fotocamera**.
 
-      Fai una foto. Quindi toccate il pulsante **Use** ![use-pic](assets/use-pic.png) .
+      Scatta una fotografia. Quindi toccate il pulsante **Use** ![use-pic](assets/use-pic.png) .
 
       Oppure toccate il pulsante **Riproduci** ![di nuovo](assets/retake.png) per riprendere la foto.
 
@@ -66,7 +66,7 @@ L&#39;opzione **Note** consente di aggiungere script a mano libera e allegati di
 
 1. Toccare il pulsante di collegamento ![fissato](assets/attch.png) nella parte inferiore della finestra.
 1. Toccate **Note** nella finestra a comparsa.
-1. Nell’interfaccia utente Note avviata, acquisite uno script a mano libera.
+1. Nell’interfaccia utente Note che viene avviata, acquisite uno script a mano libera.
 
    ![Interfaccia scarabocchio](assets/scribble-ui.png)
 
@@ -87,6 +87,3 @@ Gli allegati per i moduli mobili sincronizzati con i server AEM Forms OSGi funzi
 Gli allegati a livello di modulo non sono supportati per i moduli adattivi caricati nell&#39;app da un server AEM Forms OSGi. Per allegare immagini o note di testo, è necessario abilitare gli allegati a livello di campo nel modulo al momento della creazione. Trascinare il componente Allegato dal Browser componenti sul campo.
 
 Nel caso di moduli adattivi, è possibile visualizzare i file allegati nel documento record (DoR). Vedere [Genera documento record per i moduli](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adattivi non XFA.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
-
