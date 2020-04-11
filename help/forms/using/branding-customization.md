@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -122,7 +122,7 @@ Per personalizzare l’icona dell’app predefinita e l’immagine di avvio dell
 
 ## Personalizzazione delle immagini nella pagina di login {#customizing-images-on-the-login-page}
 
-La pagina di accesso dell&#39;app AEM Forms contiene immagini di logo e sfondo. Il logo si trova sopra la finestra di dialogo di login e l’immagine di sfondo si trova sotto la finestra di dialogo di login. Per personalizzare l’immagine predefinita nella pagina di login, effettuate le seguenti operazioni:
+La pagina di accesso dell&#39;app AEM Forms include immagini di sfondo e logo. Il logo si trova sopra la finestra di dialogo di login e l’immagine di sfondo si trova sotto la finestra di dialogo di login. Per personalizzare l’immagine predefinita nella pagina di login, effettuate le seguenti operazioni:
 
 **Prima di iniziare**
 
@@ -164,7 +164,7 @@ Assicuratevi di disporre delle immagini seguenti:
 1. Passate alla `assets/www/wsmobile/images`cartella.
 1. Per modificare il logo, sostituite il `LC-logo.png` file predefinito con il `LC-logo.png` file personalizzato.
 1. Per cambiare lo sfondo, sostituite il `Landing_bg.jpeg` file predefinito con il `Landing_bg.jpeg`file personalizzato.
-1. Creare ed eseguire l&#39;app AEM Forms sul dispositivo Android.
+1. Creazione ed esecuzione dell&#39;app AEM Forms su dispositivo Android.
 
 ### Personalizzazione di immagini nelle pagine di login mediante Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
 
@@ -212,7 +212,7 @@ Accertatevi di disporre della seguente immagine:
 
 1. Passate alla `assets/www/wsmobile/images`cartella.
 1. Per modificare il logo, sostituite il `aem_icon.png` file predefinito con il `aem_icon.png` file personalizzato.
-1. Creare ed eseguire l&#39;app AEM Forms sul dispositivo Android.
+1. Creazione ed esecuzione dell&#39;app AEM Forms su dispositivo Android.
 
 ### Personalizzazione di immagini nelle pagine di login mediante Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
@@ -221,5 +221,3 @@ Accertatevi di disporre della seguente immagine:
 1. Passate alla `MWSWindows\www\wsmobile\images`cartella.
 1. Per modificare il logo, sostituite il `aem_icon.png` file predefinito con il `aem_icon.png` file personalizzato.
 1. Creare ed eseguire l&#39;app AEM Forms su un dispositivo Windows.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
