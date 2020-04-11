@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Personalizzazione delle finestre di dialogo degli errori {#customizing-error-dialogs}
 
-L&#39;area di lavoro Moduli AEM consente di personalizzare le finestre di dialogo degli errori. Per personalizzare l’area di lavoro di AEM Forms, effettuate i passaggi [](/help/forms/using/generic-steps-html-workspace-customization.md) Generici, seguiti dai passaggi indicati di seguito.
+L’area di lavoro Moduli AEM consente di personalizzare le finestre di dialogo degli errori. Per personalizzare l’area di lavoro di AEM Forms, effettuate i passaggi [](/help/forms/using/generic-steps-html-workspace-customization.md) Generici, seguiti dai passaggi indicati di seguito.
 
 ## Personalizzazione del testo {#customizing-text}
 
@@ -279,5 +279,3 @@ To
     padding-top: 15px;
 }
 ```
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
