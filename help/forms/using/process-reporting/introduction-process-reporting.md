@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 
 Process Reporting è uno strumento basato su browser che consente di creare e visualizzare rapporti sui processi e sulle attività di AEM Forms.
 
-Process Reporting fornisce una serie di report out-of-the-box che consentono di filtrare, visualizzare informazioni sui processi in esecuzione lunghi, la durata del processo e il volume del flusso di lavoro.
+Process Reporting fornisce una serie di report out-of-the-box che consentono di filtrare, visualizzare informazioni sui processi in esecuzione prolungati, la durata del processo e il volume del flusso di lavoro.
 
 Inoltre Process Reporting fornisce un&#39;interfaccia per eseguire query ad hoc e integrare visualizzazioni di report personalizzate nell&#39;interfaccia utente di Process Reporting.
 
@@ -68,5 +68,3 @@ I server AEM Forms eseguono numerosi processi in parallelo. Questi processi cont
 Process Reporting fornisce l&#39;accesso basato sulle autorizzazioni all&#39;interfaccia utente.
 
 Ciò significa che solo gli utenti con autorizzazioni di reporting hanno accesso all&#39;interfaccia utente di Process Reporting.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
