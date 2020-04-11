@@ -1,8 +1,8 @@
 ---
 title: Descrizione dei componenti riutilizzabili
 seo-title: Descrizione dei componenti riutilizzabili
-description: Un elenco completo di componenti riutilizzabili con nomi file e dipendenze per facilitare l’integrazione del componente dell’area di lavoro AEM Forms nelle applicazioni Web.
-seo-description: Un elenco completo di componenti riutilizzabili con nomi file e dipendenze per facilitare l’integrazione del componente dell’area di lavoro AEM Forms nelle applicazioni Web.
+description: Un elenco completo di componenti riutilizzabili con nomi file e dipendenze per facilitare l’integrazione del componente dell’area di lavoro di AEM Forms nelle applicazioni Web.
+seo-description: Un elenco completo di componenti riutilizzabili con nomi file e dipendenze per facilitare l’integrazione del componente dell’area di lavoro di AEM Forms nelle applicazioni Web.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Descrizione dei componenti riutilizzabili {#description-of-reusable-components}
 
-L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/help/forms/using/integrating-html-ws-components-web.md) organizzati in una specifica struttura [di](/help/forms/using/folder-structure.md) cartelle in CRX™. Ciascun componente dispone di modelli, viste e file di modello nella posizione specificata nella struttura delle cartelle, dipendenze JavaScript™ da altri file di componente, eventi ascoltati dagli oggetti componente e JavaScript che attivano tali eventi nell’area di lavoro AEM Forms. L&#39;elenco completo dei componenti riutilizzabili con nomi file e dipendenze dei componenti è riportato qui.
+L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/help/forms/using/integrating-html-ws-components-web.md) , organizzati in una specifica struttura [di](/help/forms/using/folder-structure.md) cartelle in CRX™. Ciascun componente dispone di modelli, viste e file di modello nella posizione specificata nella struttura delle cartelle, dipendenze JavaScript™ da altri file di componente, eventi ascoltati dagli oggetti componente e JavaScript che attivano tali eventi nell’area di lavoro AEM Forms. L&#39;elenco completo dei componenti riutilizzabili con nomi file e dipendenze dei componenti è riportato qui.
 
 ## ElencoAttività {#tasklist}
 
@@ -25,15 +25,15 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
  <tbody>
   <tr>
    <td><p>Modello</p></td>
-   <td><p>taskList.js</p></td>
+   <td><p>tasklist.js</p></td>
   </tr>
   <tr>
    <td><p>Visualizzazione</p></td>
-   <td><p>taskList.js</p></td>
+   <td><p>tasklist.js</p></td>
   </tr>
   <tr>
    <td><p>Modello</p></td>
-   <td><p>toollist.html</p></td>
+   <td><p>tasklist.html</p></td>
   </tr>
   <tr>
    <td><p>Richiede componenti</p></td>
@@ -56,7 +56,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
    <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
    <td>
     <ul>
-     <li><p>filterSelected - modello elenco task</p></li>
+     <li><p>filterSelected - modello elenco di task</p></li>
      <li><p>remove - modello elenco attività</p></li>
      <li><p>updateQueue - modello elenco di task</p></li>
     </ul></td>
@@ -92,7 +92,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
    <td><p>Dipendenze JS</p></td>
    <td>
     <ul>
-     <li><p> modello elenco attività</p></li>
+     <li><p>modello lista di task</p></li>
      <li><p>utility task</p></li>
     </ul></td>
   </tr>
@@ -117,7 +117,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
  <tbody>
   <tr>
    <td><p>Modello</p></td>
-   <td><p>taskList.js</p></td>
+   <td><p>tasklist.js</p></td>
   </tr>
   <tr>
    <td><p>Visualizzazione</p></td>
@@ -142,8 +142,8 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
      <li><p>fetching - modello elenco attività </p></li>
      <li><p>remove - modello elenco attività </p></li>
      <li><p>updateQueue - modello elenco di task </p></li>
-     <li><p>refreshQueue - modello elenco task </p></li>
-     <li><p>filterSelected - modello elenco task</p></li>
+     <li><p>refreshQueue - modello elenco di task </p></li>
+     <li><p>filterSelected - modello elenco di task</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -170,9 +170,9 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
    <td>
     <ul>
      <li><p>Campo: coda: { name, qid, isDefault, type}</p> </li>
-     <li><p>Campo:query:string</p> </li>
+     <li><p>Campo: query: string</p> </li>
      <li><p>Campo: parentView: visualizzazione elenco filtri</p> </li>
-     <li><p>Campo: parentModel: modello elenco attività</p> </li>
+     <li><p>Campo: parentModel: modello lista di task</p> </li>
      <li><p>Campo: utility</p> </li>
     </ul> </td>
   </tr>
@@ -189,7 +189,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
  <tbody>
   <tr>
    <td><p>Modello</p></td>
-   <td><p>taskList.js</p></td>
+   <td><p>tasklist.js</p></td>
   </tr>
   <tr>
    <td><p>Visualizzazione</p></td>
@@ -246,9 +246,9 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
     <ul>
      <li><p>Estende : visualizzazione filtro</p> </li>
      <li><p>Campo : queue :{ nome, qid, isDefault, type }</p> </li>
-     <li><p>Campo : query:string</p> </li>
+     <li><p>Campo : query: string</p> </li>
      <li><p>Campo : parentView : visualizzazione elenco filtri</p> </li>
-     <li><p>Campo : parentModel : modello elenco attività</p> </li>
+     <li><p>Campo : parentModel : modello lista di task</p> </li>
      <li><p>Campo : utility</p> </li>
     </ul> </td>
   </tr>
@@ -269,7 +269,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
  <tbody>
   <tr>
    <td><p>Modello</p> </td>
-   <td><p>taskList.js</p> </td>
+   <td><p>tasklist.js</p> </td>
   </tr>
   <tr>
    <td><p>Visualizzazione</p> </td>
@@ -277,7 +277,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
   </tr>
   <tr>
    <td><p>Modello</p> </td>
-   <td><p>task details.html</p> </td>
+   <td><p>taskdetails.html</p> </td>
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
@@ -397,7 +397,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
    <td>
     <ul>
      <li><p>changed - category model </p></li>
-     <li><p>childFetched - category model </p></li>
+     <li><p>childFetched - modello di categoria </p></li>
      <li><p>categoria:selezionata - modello elenco categorie </p></li>
     </ul></td>
   </tr>
@@ -436,7 +436,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
      <li><p>startpoint, modello</p></li>
      <li><p>task model</p></li>
      <li><p>task model</p></li>
-     <li><p> modello elenco attività</p></li>
+     <li><p>modello lista di task</p></li>
      <li><p>modello di gruppo</p></li>
     </ul></td>
   </tr>
@@ -528,7 +528,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
    <td>
     <ul>
      <li><p>categoria:selezionata - modello elenco categorie</p> </li>
-     <li><p>change:invogliateTask - modello startpointlist</p> </li>
+     <li><p>change:invogliateTask - startpointlist, modello</p> </li>
      <li><p>change:formUrl - modello di task</p> </li>
      <li><p>startpoint:selected - startpointlist, modello</p> </li>
      <li><p>inoltrato - modello di task</p> </li>
@@ -681,7 +681,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
   </tr>
   <tr>
    <td><p>Dipendenze JS</p></td>
-   <td><p> modello elenco attività</p></td>
+   <td><p>modello lista di task</p></td>
   </tr>
   <tr>
    <td><p>Eventi ascoltati (nome evento - Trigger)</p></td>
@@ -848,7 +848,7 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
    <td>
     <ul>
      <li><p>preferencesFetched - modello di impostazioni </p></li>
-     <li><p>settingUpdated - use model </p></li>
+     <li><p>settingUpdated - uisettings model </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -1036,11 +1036,11 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
  <tbody>
   <tr>
    <td><p>Modello</p> </td>
-   <td><p>search templatelist.js</p> </td>
+   <td><p>searchtemplatelist.js</p> </td>
   </tr>
   <tr>
    <td><p>Visualizzazione</p> </td>
-   <td><p>search templatelist.js</p> </td>
+   <td><p>searchtemplatelist.js</p> </td>
   </tr>
   <tr>
    <td><p>Modello</p> </td>
@@ -1067,15 +1067,15 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
  <tbody>
   <tr>
    <td><p>Modello</p> </td>
-   <td><p>search templatelist.js</p> </td>
+   <td><p>searchtemplatelist.js</p> </td>
   </tr>
   <tr>
    <td><p>Visualizzazione</p> </td>
-   <td><p>search templatedetails.js</p> </td>
+   <td><p>searchtemplatedetails.js</p> </td>
   </tr>
   <tr>
    <td><p>Modello</p> </td>
-   <td><p>search templatedetails.html</p> </td>
+   <td><p>searchtemplatedetails.html</p> </td>
   </tr>
   <tr>
    <td><p>Richiede componenti</p> </td>
@@ -1091,5 +1091,3 @@ L&#39;area di lavoro di AEM Forms è composta da componenti [riutilizzabili](/he
   </tr>
  </tbody>
 </table>
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
