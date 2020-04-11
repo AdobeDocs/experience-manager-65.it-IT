@@ -9,7 +9,7 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
 
 Questa esercitazione è un passaggio della serie [Crea il primo modulo](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) adattivo. Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
 
-Una volta pronto il modulo adattivo, è possibile pubblicarlo per renderlo disponibile agli utenti finali. Gli utenti finali possono aprire il modulo pubblicato su qualsiasi dispositivo e browser Internet. Quando viene pubblicato un modulo adattivo, il modulo e il contenuto correlato vengono copiati da un’istanza di creazione AEM a un’istanza di pubblicazione AEM. Il modulo viene reso disponibile all’utente finale tramite l’istanza di pubblicazione.
+Una volta che il modulo adattivo è pronto, è possibile pubblicare il modulo per renderlo disponibile agli utenti finali. Gli utenti finali possono aprire il modulo pubblicato su qualsiasi dispositivo e browser Internet. Quando viene pubblicato un modulo adattivo, il modulo e il contenuto correlato vengono copiati da un’istanza di creazione AEM a un’istanza di pubblicazione AEM. Il modulo viene reso disponibile all’utente finale tramite l’istanza di pubblicazione.
 
 Esistono i seguenti metodi per pubblicare un modulo adattivo:
 
@@ -30,8 +30,8 @@ Esistono i seguenti metodi per pubblicare un modulo adattivo:
 
 ## Prima di iniziare {#before-you-start}
 
-* **[Configurare un’istanza](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**di pubblicazione di AEM Forms: L’istanza di pubblicazione è un’istanza pubblica di AEM Forms in esecuzione in modalità di pubblicazione. In un ambiente di produzione, l’istanza di pubblicazione si trova all’esterno del firewall dell’organizzazione.
-* **[Configurare replica e replica](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**inversa: La replica copia il contenuto dall’istanza di creazione a un’istanza di pubblicazione e restituisce l’input dell’utente (ad esempio, l’input del modulo) dall’istanza di pubblicazione all’istanza di creazione.
+* **[Configurare un’istanza](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**di pubblicazione di AEM Forms: L’istanza di pubblicazione è un’istanza rivolta al pubblico di AEM Forms in esecuzione in modalità di pubblicazione. In un ambiente di produzione, l’istanza di pubblicazione si trova all’esterno del firewall dell’organizzazione.
+* **[Configurare la replica e la replica](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**inversa: La replica copia il contenuto dall’istanza di creazione a un’istanza di pubblicazione e restituisce l’input dell’utente (ad esempio, l’input del modulo) dall’istanza di pubblicazione all’istanza di creazione.
 
 ## Pubblicare il modulo adattivo come pagina AEM {#publish-the-adaptive-form-as-an-aem-page}
 
@@ -49,17 +49,17 @@ AEM Forms consente agli sviluppatori di moduli di incorporare facilmente moduli 
 
 AEM Forms fornisce un componente, Contenitore di moduli AEM, per incorporare un modulo adattivo in una pagina AEM Sites. Per impostazione predefinita, il componente non è visibile nel contenitore AEM Sites. Per abilitare il componente Contenitore di AEM Forms e incorporare il modulo adattivo in una pagina AEM Sites, effettuate le seguenti operazioni:
 
-1. Creare e aprire una pagina nel sito We.Retail per la modifica. Ad esempio, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Il modulo adattivo è incorporato nella pagina dei siti.
+1. Create e aprite una pagina nel sito We.Retail per la modifica. Ad esempio, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Il modulo adattivo è incorporato nella pagina dei siti.
 
    È inoltre possibile incorporare il modulo adattivo in una pagina esistente del sito Web We.Retail. Ad esempio, la pagina ABOUT US [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Consente di risparmiare tempo per la creazione di una pagina. Nei passaggi seguenti viene utilizzata la pagina appena creata.
 
    Il sito We.Retail viene fornito con AEM. Se il sito We.Retail non è installato, vedere l&#39;implementazione [di riferimento](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) We.Retail installare il sito.
 
 1. Toccate ![le informazioni sulla pagina delle proprietà](assets/properties.png) e selezionate l&#39;opzione **Modifica modello** nella pagina del sito Web We.Retail appena creata. Il modello della pagina si apre in una nuova scheda del browser.
-1. Toccate all&#39;interno della casella Contenitore **di** layout e toccate ![Gestione](assets/feedmanagement.png)feed. Nella scheda Componenti **** consentiti, espandete il **pannello a soffietto Generale** , selezionate l&#39;opzione Modulo **** AEM e toccate ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). Il componente Contenitore di AEM Forms è abilitato per la pagina.
+1. Toccate all&#39;interno della casella Contenitore **di** layout e toccate ![Gestione](assets/feedmanagement.png)feed. Nella scheda Componenti **** consentiti, espandete il **pannello a soffietto Generale** , selezionate l&#39;opzione Modulo **** AEM e toccate ![](assets/save_icon.svg). Il componente Contenitore di AEM Forms è abilitato per la pagina.
 
 1. Aprite la scheda del browser contenente la pagina AEM Sites aperta nel passaggio 1. Toccate la casella **Trascinate qui** i componenti e toccate **+.** Nella casella **Inserisci nuovo componente** , toccate Modulo **AEM.** Il componente Contenitore **di** AEM Forms viene aggiunto alla pagina.
-1. Toccate il componente contenitore **** AEM Forms e toccate ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/cmppr.png). Viene visualizzata una finestra di dialogo con le proprietà del contenitore AEM Forms. Nel campo Percorso **** risorsa, individuate e selezionate il modulo adattivo per l’indirizzo di spedizione, il modulo Add-update-form. Toccare ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). Il modulo adattivo è incorporato nella pagina.
+1. Toccate il componente contenitore **** AEM Forms e toccate ![](assets/configure-icon.svg). Viene visualizzata una finestra di dialogo con le proprietà del contenitore AEM Forms. Nel campo Percorso **** risorsa, individuate e selezionate il modulo adattivo per l’indirizzo di spedizione, il modulo Add-update-form. Toccare ![](assets/save_icon.svg). Il modulo adattivo è incorporato nella pagina.
 1. Pubblicate il modulo adattivo e la pagina dei siti. Di seguito sono riportati alcuni punti da tenere in considerazione:
 
    * Se si pubblica per la prima volta la pagina dei siti AEM e si include un modulo incorporato, pubblicare la pagina dei siti e il modulo incorporato.
@@ -67,7 +67,7 @@ AEM Forms fornisce un componente, Contenitore di moduli AEM, per incorporare un 
    * Se si modificano la pagina del sito e il modulo incorporato, è necessario ripubblicare la pagina del sito e il modulo.
    ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
 
-   Modulo di modifica indirizzo di spedizione e fatturazione aggiunto a una pagina AEM Sites.
+   Modulo di modifica dell’indirizzo di spedizione e fatturazione aggiunto a una pagina AEM Sites.
 
 ## Incorporare il modulo adattivo in una pagina Web esterna {#embed-the-adaptive-form-in-an-external-webpage}
 
