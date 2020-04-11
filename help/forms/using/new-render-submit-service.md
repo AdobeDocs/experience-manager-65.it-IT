@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -160,4 +160,4 @@ Sì, poiché i servizi di rendering e invio precedenti associati al profilo di a
 Se si sono modificati i servizi Render (Rendering) o Submit PDF Form esistenti o se sono stati creati servizi personalizzati (ad esempio, custom1), e si desidera utilizzare la stessa funzionalità per la rappresentazione HTML. È necessario replicare il nuovo servizio di rendering o di invio (come ad esempio custom2) e applicare a tali servizi personalizzazioni simili. A questo punto, modificate il profilo di azione per XDP in modo da iniziare a utilizzare i servizi personalizzati2, invece di custom1 per il rendering o l&#39;invio.
 
 Cosa deve essere fatto dal progettista di processi per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?
-Cosa deve essere fatto dal progettista di processi per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?  [Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+Cosa deve essere fatto dal progettista di processi per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?
