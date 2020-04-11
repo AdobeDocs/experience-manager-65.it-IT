@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14169510083a46fb3ab3ee36ea6abf3b0cc19de1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -42,5 +42,3 @@ La destinazione chiave per i moduli HTML5 sono i dispositivi touch. In AEM Forms
 #### Rich text format {#rich-text-format}
 
 È possibile convertire un campo di testo in un campo RTF. Aggiunge un elenco di opzioni di formattazione al campo di testo. Per convertire, aprire Forms Designer, toccare il campo di testo in visualizzazione **** Struttura. Nella scheda **[!UICONTROL Campo]** , selezionare **[!UICONTROL RTF]** dall&#39;elenco a discesa Formato **** campo. Ora, quando viene eseguito il rendering del modulo XFA come modulo HTML5, il campo viene rappresentato come un campo di testo RTF. Toccate ![Ingrandisci](assets/maximize_icon.svg) per visualizzare ulteriori opzioni di formattazione.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
