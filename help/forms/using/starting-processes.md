@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -31,9 +31,9 @@ Quando si seleziona un processo da avviare, potrebbe essere necessario compilare
 
 Sono supportati i moduli in vari formati di file, inclusi Adobe PDF, HTML e file SWF. Un modulo può avere l&#39;aspetto di un modulo tradizionale stampabile o basato su Web oppure può essere di aiuto tramite una serie di pannelli in stile procedura guidata per raccogliere informazioni.
 
-Se il modulo e la procedura lo consentono, è anche possibile salvare il modulo offline, compilarlo e quindi inviarlo per completare l&#39;attività. Quando il modulo viene inviato, il client di posta elettronica viene avviato con l&#39;indirizzo e-mail del server appropriato, se è configurato l&#39;endpoint e-mail. È quindi possibile inviare il modulo compilato al server tramite e-mail.
+Se il modulo e la procedura lo consentono, è anche possibile salvare il modulo offline, compilarlo e quindi inviarlo per completare l&#39;attività. Quando il modulo viene inviato, il client di posta elettronica viene avviato con l&#39;indirizzo e-mail del server appropriato, se è configurato il punto finale dell&#39;e-mail. È quindi possibile inviare il modulo compilato al server tramite e-mail.
 
-Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagli. Se la procedura consente di aggiungere note o allegati, vengono visualizzate anche le schede Allegati e Note. Se avete anche configurato l’URL di riepilogo con il processo, viene visualizzata anche la scheda Riepilogo. Nella scheda Moduli viene visualizzato il modulo associato, mentre nella scheda Dettagli vengono visualizzate informazioni sull&#39;attività corrente e sul processo di cui fa parte.
+Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagli. Se la procedura consente di aggiungere note o allegati, vengono visualizzate anche le schede Allegati e Note. Se avete anche configurato l’URL di riepilogo con il processo, viene visualizzata anche la scheda Riepilogo. Nella scheda Moduli viene visualizzato il modulo associato, mentre nella scheda Dettagli vengono visualizzate le informazioni relative all&#39;attività corrente e al processo di cui fa parte.
 
 ### Avvio di un processo aziendale {#start-a-business-process}
 
@@ -56,7 +56,7 @@ Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagl
    * Fare clic su Completa sotto il modulo, se il modulo non dispone di un pulsante Invia.
    Process Management avvia il processo e indirizza il modulo agli elenchi A-do delle persone appropriate che devono completare l&#39;attività successiva nel processo.
 
-   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla successivamente, se il processo lo consente. Se il modulo e la procedura lo consentono, è possibile fare clic su **Offline** e inviarlo successivamente da Adobe® Reader®, Adobe® Acrobat® Professional o Acrobat Standard.
+   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla successivamente, se il processo lo consente. Se il modulo e la procedura lo consentono, è anche possibile fare clic su **Offline** e inviarlo successivamente da Adobe® Reader®, Adobe® Acrobat® Professional o Acrobat Standard.
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagl
 
 ## Aggiunta di note e allegati {#adding-notes-and-attachments}
 
-È possibile aggiungere note e file allegati a un processo se il processo lo consente. Potete fornire autorizzazioni ad altri utenti che partecipano al processo per visualizzare, aggiornare ed eliminare le note o gli allegati.
+È possibile aggiungere note e file allegati a un processo, se il processo lo consente. Potete fornire autorizzazioni ad altri utenti che partecipano al processo per visualizzare, aggiornare ed eliminare le note o gli allegati.
 
 ### Aggiungere una nota {#add-a-note}
 
@@ -108,7 +108,7 @@ Inoltre, potete configurare l’area di lavoro in modo da salvare automaticament
 >
 >Il pulsante Salva non è disponibile per alcuni moduli, a seconda del processo a cui è associato.
 
-### Salvare una copia bozza {#save-a-draft-copy}
+### Salvare una bozza di copia {#save-a-draft-copy}
 
 1. Fate clic su **Salva** nell’angolo inferiore sinistro di una scheda. Il modulo viene aggiunto alla categoria Bozze nella pagina Da fare. Tutte le modifiche apportate al modulo vengono salvate.
 
@@ -126,6 +126,4 @@ Inoltre, potete configurare l’area di lavoro in modo da salvare automaticament
 >
 >Se, in genere, si avviano i processi quando si utilizza l&#39;area di lavoro Moduli AEM, è possibile impostare la preferenza Posizione iniziale in modo da visualizzare automaticamente la categoria Preferiti all&#39;avvio dell&#39;area di lavoro Moduli AEM. Per ulteriori dettagli, consultate Gestione delle preferenze nella [Guida introduttiva all&#39;area di lavoro](/help/forms/using/getting-started-livecycle-html-workspace.md)Moduli AEM.
 
-Per contrassegnare un processo come preferito, selezionate l&#39;attività nella relativa categoria e fate clic sulla stella vuota. La stella diventa dorata. Per contrassegnare un processo come preferito, fate di nuovo clic sulla stella dorata.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
+Per contrassegnare un processo come preferito, selezionate l&#39;attività nella relativa categoria e fate clic sulla stella vuota. La stella diventa dorata. Per contrassegnare un processo come preferito, fate di nuovo clic sulla stella d&#39;oro.
