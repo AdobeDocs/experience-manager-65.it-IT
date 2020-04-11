@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -50,12 +50,12 @@ Le suite di test dispongono di una raccolta di casi di test. Potete avere più s
    <td>Abilitato</td>
    <td>
     <ul>
-     <li>granite.testing.hobbes.test<br /> </li>
-     <li>granite.testing.calvin.test</li>
+     <li>granite.testing.hobbes.tests<br /> </li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
   <tr>
-   <td> dipendenze</td>
+   <td>dipendenze</td>
    <td>Stringa</td>
    <td>Abilitato</td>
    <td>
@@ -106,7 +106,7 @@ Accertatevi che ciascuna proprietà sia aggiunta a una casella separata come ill
 
 Un test case è un insieme di azioni per testare una funzionalità specifica. Ad esempio, la precompilazione di tutti i campi di un modulo e la convalida di alcuni campi per garantire l&#39;immissione dei valori corretti.
 
-Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fare clic su un pulsante. Per creare un test case e azioni per convalidare l’input dell’utente per ciascun campo modulo adattivo:
+Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fare clic su un pulsante. Per creare un caso di test e azioni per convalidare l’input dell’utente per ciascun campo modulo adattivo:
 
 1. In CRXDE Lite, individuate la `/content/forms/af/create-first-adaptive-form` cartella. Fare clic con il pulsante destro del mouse sul nodo della cartella **[!UICONTROL create-first-adaptive-form]** e scegliere **[!UICONTROL Crea]**> **[!UICONTROL Crea file]**. Nel campo Nome, digitare `prefill.xml` e fare clic su **[!UICONTROL OK]**. Aggiungi al file il codice seguente:
 
@@ -147,17 +147,17 @@ Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fa
    <td>Abilitato</td>
    <td>
     <ul>
-     <li>granite.testing.hobbes.test<br /> </li>
-     <li>granite.testing.hobbes.test.testForm</li>
+     <li>granite.testing.hobbes.tests<br /> </li>
+     <li>granite.testing.hobbes.tests.testForm</li>
     </ul> </td>
   </tr>
   <tr>
-   <td> dipendenze</td>
+   <td>dipendenze</td>
    <td>Stringa</td>
    <td>Abilitato</td>
    <td>
     <ul>
-     <li>granite.testing.calvin.test</li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -210,11 +210,11 @@ Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fa
 
 Una suite di test può contenere più casi di test. Potete eseguire tutti i casi di test in una suite di test contemporaneamente o singolarmente. Quando eseguite un test, le icone indicano i risultati:
 
-* Un&#39;icona a forma di segno di spunta indica un test superato: ![](https://helpx.adobe.com/content/dam/help/icons/Checkmark.png)
-* Un&#39;icona &quot;X&quot; indica un test non riuscito: ![](https://helpx.adobe.com/content/dam/help/icons/Cross.png)
+* Un&#39;icona a forma di segno di spunta indica un test superato: ![](assets/save_icon.svg)
+* Un&#39;icona &quot;X&quot; indica un test non riuscito: ![](assets/close-icon.svg)
 
 1. Passa all’icona AEM > **[!UICONTROL Strumenti]**> **[!UICONTROL Operazioni]**> **[!UICONTROL Test]**
-1. Per eseguire tutti i test di Test Suite:
+1. Per eseguire tutti i test della suite di test:
 
    1. Nel pannello Test, toccate **[!UICONTROL We retail - Test (1)]**. La suite si espande per visualizzare l&#39;elenco dei test.
    1. Toccate il pulsante **[!UICONTROL Esegui test]** . L&#39;area vuota sul lato destro dello schermo viene sostituita con un modulo adattivo durante l&#39;esecuzione del test.
