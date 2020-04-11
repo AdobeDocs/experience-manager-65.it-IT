@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -27,7 +27,7 @@ L&#39;app AEM Forms integrata non scarica gli allegati associati a ciascun modul
 
 Nella scheda Generale, modificare gli allegati di download, la modalità offline, la schermata di destinazione, il salvataggio automatico e le impostazioni di sincronizzazione. Potete modificare la schermata [](../../forms/using/home-screen.md) Home dell&#39;app.
 
-**Passare alla scheda Generale nella schermata Impostazioni**
+**Passate alla scheda Generale nella schermata Impostazioni**
 
 1. Per passare alla schermata Impostazioni, toccate il pulsante Menu nell’angolo superiore sinistro della schermata Home, quindi toccate **Impostazioni**.
 1. Nella schermata Impostazioni, toccate la scheda Generale.
@@ -64,5 +64,3 @@ Opzioni disponibili:
 >La cancellazione della cache comporta l&#39;immediato disconnessione dall&#39;app.
 >
 >Tuttavia, vi verrà richiesto di confermare l&#39;operazione di cancellazione della cache.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
