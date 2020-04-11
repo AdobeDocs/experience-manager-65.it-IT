@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -20,9 +20,9 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 
 È possibile collegare widget personalizzati a moduli mobili. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetto. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere Framework [Aspetto per i moduli](/help/forms/using/introduction-widgets.md) adattivi e HTML5.
 
-![Esempio di widget predefinito e personalizzato](assets/custom-widgets.jpg)
+![Un esempio di widget predefinito e personalizzato](assets/custom-widgets.jpg)
 
-Esempio di widget predefinito e personalizzato
+Un esempio di widget predefinito e personalizzato
 
 ## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
@@ -54,7 +54,7 @@ I moduli HTML5 forniscono un&#39;implementazione del framework di widget che pu�
   </tr>
   <tr>
    <td>getCommitValue</td>
-   <td>Il framework di widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAModel (ad esempio, all'uscita da un evento textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l'opzione.</td>
+   <td>Il framework Widget carica la funzione ogni volta che il valore del widget viene salvato nel modello XFAM (ad esempio, in corrispondenza dell'evento exit di un oggetto textField). L’implementazione deve restituire il valore salvato nel widget. Al gestore viene fornito il nuovo valore per l'opzione.</td>
   </tr>
   <tr>
    <td>showValue</td>
@@ -91,7 +91,8 @@ La configurazione del widget è fornita come oggetto JSON (una raccolta di coppi
 
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,&quot;identifier2&quot; : &quot;customwidgetname2&quot;,.. }*
+*&quot;identifier1&quot; : &quot;customwidgetname&quot;,&quot;identifier2&quot; : &quot;customwidgetname2&quot;,..
+}*
 
 dove &quot;identifier&quot; è un selettore CSS jQuery che rappresenta un particolare campo, un set di campi di un particolare tipo o tutti i campi. Di seguito è riportato il valore dell’identificatore in diversi casi:
 
@@ -100,5 +101,3 @@ dove &quot;identifier&quot; è un selettore CSS jQuery che rappresenta un partic
 | Campo particolare con nome campo | Identificatore:&quot;div.fieldname&quot; | Viene eseguito il rendering di tutti i campi con il nome &quot;nome campo&quot; utilizzando il widget. |
 | Tutti i campi di tipo &quot;type&quot;(dove type è NumericField, DateField e così via): | Identificatore: &quot;div.type&quot; | Per Timefield e DateTimeField, il tipo è textfield in quanto questi campi non sono supportati. |
 | Tutti i campi | Identificatore: &quot;div.field&quot; |  |
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
