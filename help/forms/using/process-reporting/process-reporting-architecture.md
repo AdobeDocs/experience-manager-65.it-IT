@@ -1,8 +1,8 @@
 ---
 title: Come funziona Reporting dei processi
 seo-title: Come funziona Reporting dei processi
-description: Descrizione dei servizi che compongono AEM Forms su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting
-seo-description: Descrizione dei servizi che compongono AEM Forms su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting
+description: Descrizione dei servizi che compongono AEM Forms su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting.
+seo-description: Descrizione dei servizi che compongono AEM Forms su JEE Process Reporting e introduzione all'interfaccia utente di Process Reporting.
 uuid: 37e31985-088a-4ef6-ba57-10a01597a873
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: a6ff50df-273d-48f7-b0c6-0e69e900b97f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -76,5 +76,3 @@ Il servizio utilizza quindi i servizi OSGi per ottenere i dati di reporting rile
 Potete creare rapporti personalizzati e visualizzarli nella scheda Report personalizzati dell&#39;interfaccia utente di Process Reporting.
 
 Per i passaggi necessari per creare un rapporto personalizzato, vedere Creazione di un rapporto personalizzato nell&#39;articolo Report [personalizzati in Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
