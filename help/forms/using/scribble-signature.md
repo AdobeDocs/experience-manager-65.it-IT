@@ -11,7 +11,7 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -63,9 +63,9 @@ Dopo aver aggiunto il campo Firma scarabocchio al modulo ed eseguito il renderin
 
 ![geolocalizzazione](assets/geolocation.png)
 
-******** A. Pennello **B. Gomma** C.**Geolocalizzazione** D. Informazioni sulla geolocalizzazione
+**A.** Pennello **B.** Gomma **C.** Geolocalizzazione **D.** Informazioni sulla geolocalizzazione
 
-### Geotagging {#geo-tagging}
+### Geo-tagging {#geo-tagging}
 
 Facendo clic sull&#39;icona di geolocalizzazione durante la creazione dello script, le informazioni relative alla posizione geografica e all&#39;ora vengono incorporate nel campo.
 
@@ -85,7 +85,7 @@ Quando si utilizza questa funzione, un utente può fare clic sull&#39;icona **Go
 
 ### Salvataggio di una firma {#saving-a-signature}
 
-Facendo clic sull&#39;icona **OK** lo script viene salvato come immagine nel campo. L’immagine e i valori possono essere inviati al server per un’ulteriore elaborazione. Dopo aver fatto clic su **OK**, il campo dello script viene bloccato. Non è possibile modificare nuovamente la firma utilizzando il widget degli script.
+Facendo clic sull&#39;icona **OK** lo script viene salvato come immagine nel campo. L’immagine e i valori possono essere inviati al server per un’ulteriore elaborazione. Dopo aver fatto clic su **OK**, il campo dello script viene bloccato. La firma non può essere modificata di nuovo utilizzando il widget degli script.
 
 Toccando o facendo clic sul campo scarabocchio si apre la finestra di dialogo in modalità di sola lettura.
 
@@ -101,5 +101,3 @@ Per eliminare le firme dal modulo:
 
 * (Dispositivi mobili) Tenete premuto il campo firma e, nella finestra di dialogo di conferma, toccate **Sì**.
 * (Desktop) Passa il mouse sul campo firma, fai clic sull’icona **Annulla** e, nella finestra di dialogo di conferma, fai clic su **Sì**.
-
-[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)
