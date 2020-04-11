@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,5 +43,3 @@ Per eliminare una bozza, effettuate le seguenti operazioni:
 1. Selezionate **Bozze** dal menu a discesa accanto a Cerca.
 1. Un modulo con l&#39;icona di modifica ![edit-draft-app](assets/edit-draft-app.png) indica una bozza. Toccate i puntini di sospensione orizzontali accanto alla bozza.
 1. Nelle opzioni visualizzate quando toccate i puntini di sospensione orizzontali, toccate **Elimina bozza**.
-
-**[Contattare il supporto](https://www.adobe.com/account/sign-in.supportportal.html)**
