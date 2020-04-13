@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
+source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ---
 
@@ -169,7 +169,7 @@ Per annullare un processo di caricamento in corso, toccate **[!UICONTROL Annulla
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Annulla compressione file ZIP o Tar durante il caricamento |  |  |
 | Opzioni processo |  | Toccate o fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Toccate il pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
@@ -902,9 +902,7 @@ La funzione di controllo delle versioni consente di effettuare le seguenti opera
 
    ![timeline](assets/timeline.png)
 
-1. Toccate/fate clic sull&#39;icona **[!UICONTROL Azioni]** (freccia) in basso per visualizzare le azioni disponibili che potete eseguire sulla risorsa.
-
-   ![chlimage_1-249](assets/chlimage_1-45.png)
+1. Fate clic su **[!UICONTROL Azioni]** in basso per visualizzare le azioni disponibili sulla risorsa.
 
 1. Toccate o fate clic su **[!UICONTROL Salva come versione]** per creare una versione per la risorsa.
 
