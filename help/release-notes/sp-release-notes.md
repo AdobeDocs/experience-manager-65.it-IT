@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
+source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
 
 ---
 
@@ -177,6 +177,8 @@ Per un elenco completo delle funzioni, degli elementi di rilievo e delle funzion
 * La generazione dell&#39;URL della libreria di avvio è basata solo su `path` e `library_name` valori dell&#39;API di Launch e non è basata su `library_path` valori (NPR-31550).
 
 * Viene visualizzato un messaggio di errore durante l&#39;elaborazione degli elementi correlati a LiveFyre (FYR-12420).
+
+* ReportSuitesServlet è vulnerabile all&#39;SSRF (NPR-32156).
 
 ### Editor modelli WCM {#wcm-template-editor-6540}
 
