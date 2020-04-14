@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: e103640784f9d5b00a2a78cead6e904017ad7a53
 
 ---
 
@@ -25,7 +25,9 @@ Per l&#39;API del servizio Converti PDF sono disponibili i seguenti Avvio rapido
 
 Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-***Nota **: La sezione Avvio rapido, che si trova nella programmazione con i moduli AEM, si basa sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)*
+>[!NOTE]
+>
+>La sezione Avvio rapido, che si trova nella programmazione con i moduli AEM, si basa sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Avvio rapido (modalità SOAP): Conversione di un documento PDF in PostScript tramite l&#39;API Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
