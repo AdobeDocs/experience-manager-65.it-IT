@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -26,7 +26,7 @@ I modelli di modulo XFA o XDP sono i modelli per:
 
 Un XDP è progettato in Adobe Forms Designer. Questo articolo fornisce dettagli su come progettare i file XDP per la creazione di corrispondenze/comunicazioni interattive efficaci, ad esempio dove utilizzare i campi del modulo o le aree di destinazione e quando utilizzare i frammenti di layout.
 
-## Creazione di un layout per le lettere o per il canale di stampa di Interactive Communications {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## Creazione di un layout per le lettere o per il canale di stampa delle comunicazioni interattive {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
 Un layout definisce il layout grafico di un canale lettera/stampa di una comunicazione interattiva. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. Crea il layout nella finestra di progettazione del modulo e, al termine, lo specialista dell’applicazione lo carica nel server AEM. Da qui potete selezionare il layout quando create un modello di corrispondenza o un canale di stampa di una comunicazione interattiva.
 
@@ -53,7 +53,7 @@ Dopo aver analizzato il layout richiesto per creare la comunicazione interattiva
 
 >[!NOTE]
 >
->Aggiungere contenuto al canale Stampa della comunicazione interattiva anziché aggiungere contenuto al componente sottomodulo nel modello XDP. Aggiungere contenuti alle aree di destinazione del canale Stampa utilizzando frammenti di [documento, grafici, immagini](../../forms/using/create-interactive-communication.md#main-pars-header-741471925)e frammenti di layout.
+>Aggiungere contenuto al canale Stampa della comunicazione interattiva anziché aggiungere contenuto al componente sottomodulo nel modello XDP. Aggiungere contenuti alle aree di destinazione del canale Stampa utilizzando frammenti di [documento, grafici, immagini](create-interactive-communication.md#step2)e frammenti di layout.
 
 Effettuare le seguenti operazioni per utilizzare il sottomodulo in un modello XDP:
 
@@ -83,7 +83,7 @@ Effettuare le seguenti operazioni per utilizzare il sottomodulo in un modello XD
 
    1. Specificare un nome per il sottomodulo nel campo **Nome** .
    1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
-   Ripetere i passaggi da 2 a 5 per aggiungere altri sottomoduli al modello XDP. Aggiungere [testo, frammenti di documento, immagini e grafici](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) alle aree di destinazione solo durante la creazione della comunicazione interattiva.
+   Ripetere i passaggi da 2 a 5 per aggiungere altri sottomoduli al modello XDP. Aggiungere [testo, frammenti di documento, immagini e grafici](create-interactive-communication.md#step2) alle aree di destinazione solo durante la creazione della comunicazione interattiva.
 
 1. Selezionare **File** > **Salva con nome** per salvare il file nel file system locale:
 
@@ -98,7 +98,7 @@ Utilizzare il componente Campo immagine o Sottomodulo nel modello XDP e aggiunge
 
 >[!NOTE]
 >
->Aggiungere un’immagine al canale di stampa della comunicazione interattiva anziché aggiungere un’immagine al componente Campo immagine o Sottomodulo nel modello XDP. Per ulteriori informazioni, consultate [Aggiunta di contenuti alla comunicazione](../../forms/using/create-interactive-communication.md#step2)interattiva.
+>Aggiungere un’immagine al canale di stampa della comunicazione interattiva invece di aggiungere un’immagine al componente Campo immagine o Sottomodulo nel modello XDP. Per ulteriori informazioni, consultate [Aggiunta di contenuti alla comunicazione](../../forms/using/create-interactive-communication.md#step2)interattiva.
 
 Per usare il componente Campo immagine in un modello XDP, effettuate le seguenti operazioni:
 
@@ -115,7 +115,7 @@ Utilizzare il componente Tabella in Forms Designer per creare frammenti di layou
 
 >[!NOTE]
 >
->Immettere il testo nelle celle della tabella o [creare il binding con gli oggetti](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) del modello dati del modulo solo durante la creazione della comunicazione interattiva.
+>Immettere il testo nelle celle della tabella o [creare il binding con gli oggetti](create-interactive-communication.md#step2) del modello dati del modulo solo durante la creazione della comunicazione interattiva.
 
 Per utilizzare il componente Tabella nel modello XDP utilizzando Forms Designer, effettuare le seguenti operazioni:
 
@@ -134,7 +134,7 @@ Per utilizzare il componente Tabella nel modello XDP utilizzando Forms Designer,
 
 1. Selezionare il nome della riga nel riquadro a sinistra, quindi selezionare **Oggetto** > **Binding** > **Ripeti riga per ogni elemento** dati. Eseguire questo passaggio per garantire che, se viene creato un binding tra le celle della tabella di questa riga e gli oggetti modello dati del modulo di tipo raccolta, la riga della tabella venga ripetuta automaticamente per ogni elemento dati disponibile nel database.
 
-   Immettere il testo nelle celle della tabella o [creare il binding con gli oggetti](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) del modello dati del modulo solo durante la creazione della comunicazione interattiva.
+   Immettere il testo nelle celle della tabella o [creare il binding con gli oggetti](create-interactive-communication.md#step2) del modello dati del modulo solo durante la creazione della comunicazione interattiva.
 
 1. Selezionare **File** > **Salva con nome** per salvare il file nel file system locale:
 
@@ -178,9 +178,9 @@ Un campo relativo non può:
 * con binding impostato su &quot;none&quot;
 * essere figlio di un elemento &lt;exclGroup>
 
-Fintanto che un campo relativo soddisfa i criteri sopra descritti, può trovarsi in qualsiasi posizione e a qualsiasi profondità di nidificazione nel layout. È possibile utilizzare campi correlati all&#39;interno delle pagine master.
+Fintanto che un campo relativo soddisfa i criteri descritti in precedenza, può trovarsi in qualsiasi posizione e a qualsiasi profondità di nidificazione nel layout. È possibile utilizzare campi correlati all&#39;interno delle pagine master.
 
-I campi sono più flessibili nella configurazione del layout rispetto ai sottomoduli dell&#39;area di destinazione; tuttavia sono legati a un singolo tipo di valore. È possibile impostare un campo di grandi dimensioni o su larghezza, altezza e così via. Il risultato risolto del modulo o della regola viene inserito nel campo.
+I campi sono più flessibili nella configurazione del layout rispetto ai sottomoduli dell&#39;area di destinazione; tuttavia sono legati a un singolo tipo di valore. È possibile impostare un campo di grandi dimensioni o su una larghezza, un&#39;altezza e così via. Il risultato risolto del modulo o della regola viene inserito nel campo.
 
 ## Definizione di quando utilizzare sottomoduli e campi di testo {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
@@ -204,7 +204,7 @@ Utilizzare un campo se si desidera acquisire i dati del modulo o dei dati del di
   </tr>
   <tr>
    <td><p>I gruppi di dati ripetuti, facoltativi e condizionali sono associati a sottomoduli, per ridurre il rischio di errori di progettazione che potrebbero verificarsi se gli script vengono utilizzati per ottenere gli stessi risultati</p> </td>
-   <td><p>Elementi quali il logo e l'indirizzo dell'azienda vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva. In questo caso, creare campi modulo per tali elementi e inserirli nella pagina master. Se si imposta il binding dei campi su "Nessuno", i campi no vengono visualizzati come campi correlati nell'Editor di comunicazione interattiva/Lettera. Se si desidera collegare un certo tipo di contenuto a questi campi, è necessario che il binding sia associato.</p> <p>Se l'indirizzo della società contiene più righe di dati, utilizzare il campo di testo con l'opzione "Consenti righe multiple" per rappresentare l'indirizzo nel layout.</p> <p>Se il tipo di dati di un campo di testo è impostato su testo normale, viene utilizzata la versione in testo normale dell'output del modulo invece della versione in formato RTF (tutta la formattazione viene scartata). Per mantenere la formattazione, impostare il tipo di dati del campo di testo su RTF.</p> </td>
+   <td><p>Elementi quali il logo e l'indirizzo dell'azienda vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva. In questo caso, creare campi modulo per tali elementi e inserirli nella pagina master. Se si imposta il binding dei campi su "Nessun binding dei dati", i campi no vengono visualizzati come campi correlati nell'Editor di comunicazione interattiva/Lettera. Se si desidera mettere in relazione un certo tipo di contenuto con questi campi, è necessario che questi dispongano di binding.</p> <p>Se l'indirizzo della società contiene più righe di dati, utilizzare il campo di testo con l'opzione "Consenti righe multiple" per rappresentare l'indirizzo nel layout.</p> <p>Se il tipo di dati di un campo di testo è impostato su testo normale, viene utilizzata la versione in testo normale dell'output del modulo invece della versione in formato RTF (tutta la formattazione viene scartata). Per mantenere la formattazione, impostare il tipo di dati del campo di testo su RTF.</p> </td>
   </tr>
   <tr>
    <td><p>Il testo è scorrevole</p> </td>
@@ -223,7 +223,7 @@ Utilizzare un campo se si desidera acquisire i dati del modulo o dei dati del di
 
 ## Impostazione di elementi ripetitivi {#setting-up-repetitive-elements}
 
-Quando elementi come il logo e l&#39;indirizzo dell&#39;organizzazione vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva, create campi modulo per tali elementi e inseriteli nella pagina master. Usa binding Nome (Nome campo) per questi campi.
+Quando elementi come il logo e l&#39;indirizzo dell&#39;organizzazione vengono visualizzati su tutte le pagine di una lettera o comunicazione interattiva, create campi modulo per tali elementi e inseriteli nella pagina master. Utilizzare il binding Nome (Nome campo) per questi campi.
 
 ## Specificare il formato di rendering del server {#specify-the-server-nbsp-render-format}
 
