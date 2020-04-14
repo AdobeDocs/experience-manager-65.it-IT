@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -34,7 +34,7 @@ FFmpeg deve essere installato sui server in cui sono ospitate le istanze di *cre
 
 1. Installate FFmpeg seguendo le istruzioni per il sistema operativo.
 
-1. Accertatevi che l&#39;eseguibile FFmpeg sia impostato nel percorso di sistema.
+1. Accertatevi che l&#39;eseguibile di FFmpeg sia impostato nel percorso di sistema.
 
    Dovrebbe essere possibile eseguire FFmpeg da qualsiasi directory del sistema.
 
@@ -42,11 +42,11 @@ FFmpeg deve essere installato sui server in cui sono ospitate le istanze di *cre
 
 ## Configurare il servizio di transcodifica FFmpeg {#configure-ffmpeg-transcoding-service}
 
-Per impostazione predefinita, quando è installato FFmpeg, vengono configurate più rappresentazioni (transcodifiche) in base alla definizione del flusso di lavoro di aggiornamento DAM.
+Per impostazione predefinita, quando FFmpeg è installato, vengono configurate più rappresentazioni (transcodifiche) in base alla definizione del flusso di lavoro [!UICONTROL DAM Update Asset] .
 
 Poiché le transcodifiche richiedono molta CPU, si consiglia di modificare l&#39;elenco delle rappresentazioni di destinazione. Nella maggior parte dei casi, la transcodifica non è necessaria.
 
-Per modificare il flusso di lavoro Aggiorna risorsa DAM e, in questo esempio, disattivare la transcodifica:
+Per modificare il flusso di lavoro Aggiorna risorsa  DAM e, in questo esempio, disattivare la transcodifica:
 
 * Accesso all’istanza di creazione con privilegi amministrativi
 * Dalla navigazione globale: **[!UICONTROL Strumenti > Workflow > Modelli]**
@@ -66,5 +66,5 @@ Per modificare il flusso di lavoro Aggiorna risorsa DAM e, in questo esempio, di
 
 * Selezionate **[!UICONTROL Salva]** per salvare il `DAM Update Asset` flusso di lavoro
 
-   (angolo superiore sinistro)
+   (angolo in alto a sinistra)
 
