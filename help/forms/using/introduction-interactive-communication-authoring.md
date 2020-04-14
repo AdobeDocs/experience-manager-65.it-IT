@@ -10,7 +10,7 @@ topic-tags: interactive-communications
 discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -25,19 +25,19 @@ L&#39;interfaccia utente per la creazione di comunicazioni [](/help/forms/using/
 Quando [create una nuova comunicazione interattiva o modificate una comunicazione](../../forms/using/create-interactive-communication.md)interattiva esistente, utilizzate i seguenti elementi dell&#39;interfaccia utente:
 
 * [Barra laterale](#sidebar)
-* [Barra degli strumenti Pagina](#page-toolbar)
+* [Barra degli strumenti della pagina](#page-toolbar)
 * [Barra degli strumenti del componente](#component-toolbar)
 * Area contenuto
 
 ![interfaccia utente per la creazione di comunicazioni interattive](assets/form-editor.png)
 
-******A. Barra laterale** B. Barra degli strumenti Pagina **C.** Area contenuto
+**A.** Barra laterale **B.** Barra degli strumenti Pagina **C.** Area contenuto
 
 ## Barra laterale {#sidebar}
 
 ![Barra laterale](assets/sidebar-comps-2.png)
 
-**************A. Browser canale** B. Browser dei contenuti **C.** Browser delle proprietà **D. Browser risorse** E. Browser componenti **F. Browser Origini dati - Modello dati** G. Browser Origini dati - Contenuto principale
+**A.** Browser canale **B.** Browser dei contenuti **C.** Browser delle proprietà **D.** Browser risorse **E.** Browser componenti **F.** Browser Origini dati - Modello dati **G.** Browser Origini dati - Contenuto principale
 
 <!-- Click to enlarge
 
@@ -58,7 +58,7 @@ Selezionate un componente, quindi toccate il livello ![del](assets/field-level.p
 
 * **Browser** Risorse Consente di segmentare diversi tipi di contenuto, ad esempio frammenti di layout, immagini, documenti, pagine e video. L’autore può trascinare risorse nella comunicazione interattiva.
 
-* **Browser** Componenti Include componenti che è possibile utilizzare per creare canali di stampa e Web di un documento. Puoi trascinare i componenti nella comunicazione interattiva per aggiungere elementi e configurare gli elementi aggiunti in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti per la stampa e i canali Web:
+* **Browser** Componenti Include componenti che è possibile utilizzare per creare i canali di stampa e Web di un documento. Puoi trascinare i componenti nella comunicazione interattiva per aggiungere elementi e configurare gli elementi aggiunti in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti per la stampa e i canali Web:
 
 | **Componente** | **Stampa canale** | **Canale web** | **Funzionalità** |
 |---|---|---|---|
@@ -68,7 +68,7 @@ Selezionate un componente, quindi toccate il livello ![del](assets/field-level.p
 | Pannello | - | ✓ | Il componente Pannello è un segnaposto per raggruppare altri componenti e controlla come un gruppo di componenti viene disposto in una comunicazione interattiva. Un componente pannello consente inoltre di rendere ripetibile un gruppo di componenti per l’utente finale, ad esempio in più voci richieste per compilare le credenziali educative. È inoltre buona norma utilizzare un pannello per ciascuna scheda di una comunicazione interattiva con più schede. |
 | Tabella | * | ✓ | Aggiunge una tabella che consente di organizzare i dati in righe e colonne. |
 | Area di destinazione | ** | ✓ | Inserisce un’area di destinazione in un canale Web per organizzare i componenti specifici del canale Web. |
-| Testo | - | ✓ | Aggiunge testo al canale Web di una comunicazione interattiva. Il testo può utilizzare oggetti del modello dati del modulo per rendere dinamico il contenuto. |
+| Testo | - | ✓ | Aggiunge del testo al canale Web di una comunicazione interattiva. Il testo può utilizzare gli oggetti del modello dati del modulo per rendere dinamico il contenuto. |
 
 * Utilizzare i frammenti di layout nel canale di stampa per aggiungere tabelle.
 
@@ -113,9 +113,9 @@ H. **Gruppo**: Consente di selezionare più componenti per tagliare, copiare o i
 
 I. **Elemento padre**: Consente di selezionare l’elemento padre di un componente.
 
-**J. Espressione** View SOM: Consente di visualizzare l&#39;espressione [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM per il componente.
+J. Espressione **View SOM:** Consente di visualizzare l&#39;espressione [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM per il componente.
 
-**K: Oggetti** gruppo nel pannello: Consente di raggruppare i componenti in un pannello per eseguire contemporaneamente operazioni su tali componenti. Per informazioni dettagliate, consultate [Raggruppare gli oggetti nel pannello](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576).
+K: Oggetti **gruppo nel pannello:** Consente di raggruppare i componenti in un pannello per eseguire contemporaneamente operazioni su tali componenti. Per informazioni dettagliate, consultate [Raggruppare gli oggetti nel pannello](create-interactive-communication.md#groupobjectspanel).
 
 L. **Aggiungi pannello** secondario (solo per i pannelli): Consente di aggiungere al pannello un pannello secondario.
 
@@ -123,7 +123,7 @@ M: Barra degli strumenti **del pannello** Aggiungi (solo per i pannelli):consent
 
 Inoltre, l’opzione **Sostituisci** nella barra degli strumenti consente di sostituire il componente esistente con un componente alternativo. L’opzione non è disponibile per il componente Pannello.
 
-## Page toolbar {#page-toolbar}
+## Barra degli strumenti della pagina {#page-toolbar}
 
 La barra degli strumenti Pagina nella parte superiore contiene opzioni che consentono di visualizzare l’anteprima della comunicazione interattiva e di modificarne le proprietà. Potete visualizzare l’anteprima della comunicazione interattiva al momento della creazione e apportare le modifiche necessarie. Nella barra degli strumenti della pagina sono disponibili:
 
@@ -137,8 +137,8 @@ La barra degli strumenti Pagina nella parte superiore contiene opzioni che conse
    * Sviluppatore: Consente a uno sviluppatore di:
 
       * Scopri di cosa si compone la comunicazione interattiva.
-      * Eseguire il debug di quanto sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
-   * Target:Consente di abilitare o disabilitare componenti personalizzati, o componenti out-of-the-box non elencati nella barra laterale.
+      * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
+   * Target: Consente di abilitare o disabilitare componenti personalizzati, o componenti out-of-the-box non elencati nella barra laterale.
 
 
 * Anteprima: Consente di visualizzare un&#39;anteprima dell&#39;aspetto della comunicazione interattiva al momento della pubblicazione.
