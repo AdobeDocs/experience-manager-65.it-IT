@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -45,16 +45,16 @@ I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse i
 
 Nei moduli adattivi è possibile scrivere espressioni per aggiungere comportamenti quali mostrare/nascondere campi e pannelli dinamici. È inoltre possibile scrivere espressioni per aggiungere campi calcolati, rendere i campi di sola lettura, la logica di convalida e molto altro ancora. I moduli adattivi supportano le seguenti espressioni:
 
-* **[Espressioni](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**di accesso: per attivare/disattivare un campo.
-* **[Calcola espressioni](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: per calcolare automaticamente il valore di un campo.
-* **[Espressione](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**di clic: per gestire le azioni in caso di clic su un pulsante.
-* **[Script](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p)di inizializzazione:**eseguire un&#39;azione all&#39;inizializzazione di un campo.
-* **[Espressione](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**Opzioni: per compilare in modo dinamico un elenco a discesa.
+* **[Espressioni](#access-expression-enablement-expression)**di accesso: per attivare/disattivare un campo.
+* **[Calcola espressioni](#calculate-expression)**: per calcolare automaticamente il valore di un campo.
+* **[Espressione](#click-expression)**di clic: per gestire le azioni in caso di clic su un pulsante.
+* **[Script](#initialization-script)di inizializzazione:**eseguire un&#39;azione all&#39;inizializzazione di un campo.
+* **[Espressione](#options-expression)**Opzioni: per compilare in modo dinamico un elenco a discesa.
 * **[Espressione](#summary)**di riepilogo: per calcolare in modo dinamico il titolo di un pannello a soffietto.
-* **[Convalidare le espressioni](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: per convalidare un campo.
-* **[Script](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)di conferma del valore:**per modificare i componenti di un modulo dopo la modifica del valore di un campo.
-* **[Espressione](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**di visibilità: per controllare la visibilità di un campo e di un pannello.
-* **[Espressione](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**completamento passaggio: per impedire che un utente passi al passaggio successivo di una procedura guidata.
+* **[Convalidare le espressioni](#validate-expression)**: per convalidare un campo.
+* **[Script](#value-commit-script)di conferma del valore:**per modificare i componenti di un modulo dopo la modifica del valore di un campo.
+* **[Espressione](#visibility-expression)**di visibilità: per controllare la visibilità di un campo e di un pannello.
+* **[Espressione](#step-completion-expression)**completamento passaggio: per impedire che un utente passi al passaggio successivo di una procedura guidata.
 
 ### Espressione di accesso (espressione di abilitazione) {#access-expression-enablement-expression}
 
