@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -30,7 +30,7 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 | Annulla l’ultima modifica | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Ripristina l’ultima modifica | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Selezione di più componenti | Maiusc+Clic | Maiusc+Clic |
-| Copia componente selezionato | Ctrl-C | Ctrl&amp;ast; |
+| Copia componente selezionato | Ctrl-C | Ctrl+C&amp;ast; |
 | Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl-X&amp;ast; |
 | Incolla componenti | Ctrl+V | Ctrl+V |
 | Elimina i componenti selezionati | Ctrl+Canc | Ctrl+Canc&amp;ast; |
@@ -85,7 +85,7 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 
 In questa sezione sono elencate le varie tastiere e i collegamenti per l&#39;accesso facilitato che potete utilizzare nell&#39;editor di testo Gestione della corrispondenza. Potete utilizzare i seguenti collegamenti mentre siete:
 
-* Creazione o modifica di una risorsa [Testo](/help/forms/using/document-fragments.md#main-pars-header-0)
+* Creazione o modifica di una risorsa [Testo](texts-interactive-communications.md)
 * Modifica di un modulo di testo dopo aver toccato l’icona Modifica ( ![edittextmodule](assets/edittextmodule.png)) durante la [creazione di una corrispondenza](/help/forms/using/create-correspondence.md).
 
 ### Selezione del testo e spostamento del cursore {#text-selection-and-moving-the-cursor-around}
@@ -98,7 +98,7 @@ In questa sezione sono elencate le varie tastiere e i collegamenti per l&#39;acc
    <th><strong>Scelta rapida in Mac OS</strong><br /> </th> 
   </tr>
   <tr>
-   <td><p>Seleziona parola corrente</p> </td> 
+   <td><p>Seleziona la parola corrente</p> </td> 
    <td><p>Ctrl+Maiusc+Freccia destra</p> </td> 
    <td>Comando+Maiusc+Freccia destra</td> 
   </tr>
@@ -154,8 +154,8 @@ In questa sezione sono elencate le varie tastiere e i collegamenti per l&#39;acc
   </tr>
   <tr>
    <td><p>Selezione del testo uno per uno nella direzione posteriore</p> </td> 
-   <td><p>Maiusc+Freccia su</p> </td> 
-   <td>Maiusc+Freccia su</td> 
+   <td><p>Maiusc+Tasto Su</p> </td> 
+   <td>Maiusc+Tasto Su</td> 
   </tr>
   <tr>
    <td><p>Selezionare il testo uno per uno nella direzione in avanti</p> </td> 
@@ -351,7 +351,7 @@ In questa sezione sono elencate le varie tastiere e i collegamenti per l&#39;acc
    <td>Comando+I</td> 
   </tr>
   <tr>
-   <td><p>Sottolinea lettere </p> </td> 
+   <td><p>Sottolineare le lettere </p> </td> 
    <td><p>Ctrl+Alt+U / Ctrl+U</p> </td> 
    <td>Comando+U</td> 
   </tr>
