@@ -1,8 +1,8 @@
 ---
 title: Post-elaborazione di lettere e comunicazioni interattive
 seo-title: Post-elaborazione delle lettere
-description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, come la stampa e l’e-mail, e di integrarli con le lettere.
-seo-description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, come la stampa e l’e-mail, e di integrarli con le lettere.
+description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, ad esempio per la stampa e l’e-mail, e di integrarli con le lettere.
+seo-description: La post-elaborazione delle lettere in Gestione corrispondenza consente di creare processi di pubblicazione AEM e Forms, ad esempio per la stampa e l’e-mail, e di integrarli con le lettere.
 uuid: 40cb349d-6ba2-4794-9ec6-dcab15c35b8d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -25,9 +25,9 @@ Gli agenti possono associare ed eseguire flussi di lavoro post-elaborazione su l
 
 Per associare i processi post a lettere o comunicazioni interattive, è innanzitutto necessario impostare i processi post. È possibile eseguire due tipi di flussi di lavoro sulle lettere inviate:
 
-1. **** Flusso di lavoro moduli: Si tratta dei flussi di lavoro di gestione dei processi AEM Forms su JEE. Istruzioni per la configurazione del flusso di lavoro [](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3)Forms.
+1. **Flusso di lavoro moduli:** Si tratta dei flussi di lavoro di gestione dei processi AEM Forms su JEE. Istruzioni per la configurazione del flusso di lavoro [](#formsworkflow)Forms.
 
-1. **** Flusso di lavoro AEM: I flussi di lavoro AEM possono essere utilizzati anche come processi di pubblicazione per le lettere inviate. Istruzioni per la configurazione di [AEM Workflow](../../forms/using/aem-forms-workflow.md).
+1. **Flusso di lavoro AEM:** I flussi di lavoro AEM possono essere utilizzati anche come processi di pubblicazione per le lettere inviate. Istruzioni per la configurazione di [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Flusso di lavoro per moduli {#formsworkflow}
 
@@ -57,11 +57,11 @@ Per associare i processi post a lettere o comunicazioni interattive, è innanzit
 
    Andate alla pagina Configurazioni console Web di Adobe Experience Manager > Configurazioni **[!UICONTROL di gestione della corrispondenza]** e configurate i seguenti parametri:
 
-   1. **** inPDFDoc (parametro del documento PDF): Un documento PDF come input. Questo input contiene la lettera rappresentata come input. I nomi dei parametri indicati sono configurabili. Possono essere configurati dalle configurazioni di Correspondence Management dalla configurazione.
-   1. **** inXMLDoc (parametro dati XML): Un documento XML come input. Questo input contiene i dati immessi dall&#39;utente nel formato XML.
-   1. **** inXDPDoc (parametro del documento XDP): Un documento XML come input. Questo input contiene il layout sottostante (XDP).
-   1. **** inAttachmentDocs (parametro Attachment Documents): Un parametro di immissione elenco. Questo input contiene tutti gli allegati come input.
-   1. **** redirectURL (Redirect URL Output): Un tipo di output che indica l&#39;URL a cui reindirizzare.
+   1. **inPDFDoc (parametro del documento PDF):** Un documento PDF come input. Questo input contiene la lettera rappresentata come input. I nomi dei parametri indicati sono configurabili. Possono essere configurati dalle configurazioni di Correspondence Management dalla configurazione.
+   1. **inXMLDoc (parametro dati XML):** Un documento XML come input. Questo input contiene i dati immessi dall&#39;utente nel formato XML.
+   1. **inXDPDoc (parametro del documento XDP):** Un documento XML come input. Questo input contiene il layout sottostante (XDP).
+   1. **inAttachmentDocs (parametro Attachment Documents):** Un parametro di immissione elenco. Questo input contiene tutti gli allegati come input.
+   1. **redirectURL (Redirect URL Output):** Un tipo di output che indica l&#39;URL a cui reindirizzare.
    Il flusso di lavoro dei moduli deve avere parametri di documento PDF o dati XML come input con lo stesso nome specificato in **[!UICONTROL Correspondence Management Configurations]**. Questo è necessario per elencare il processo nel menu a discesa Post Process (Processo post).
 
 ## Impostazioni nell’istanza Pubblica {#settings-on-the-publish-instance}
@@ -72,7 +72,7 @@ Per associare i processi post a lettere o comunicazioni interattive, è innanzit
 
 >[!NOTE]
 >
->Durante l&#39;utilizzo di flussi di lavoro Forms o AEM, prima di effettuare qualsiasi invio dal server di pubblicazione è necessario configurare il servizio delle impostazioni DS. In caso contrario, la presentazione del modulo non può essere effettuata.
+>Durante l&#39;utilizzo di flussi di lavoro Forms o AEM, prima di effettuare qualsiasi invio dal server di pubblicazione, è necessario configurare il servizio delle impostazioni DS. In caso contrario, la presentazione del modulo non può essere effettuata.
 
 ## Recupero Istanze Lettera {#letter-instances-retrieval}
 
