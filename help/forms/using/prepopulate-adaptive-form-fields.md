@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -339,7 +339,7 @@ Potete utilizzare il servizio di precompilazione personalizzato per gli scenari,
 Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo nei bundle AEM Forms. Prima di iniziare a creare il bundle:
 
 * [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
-* [Scarica il pacchetto ricorrenti](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
+* Scarica il pacchetto ricorrenti
 
 * Inserire il file di dati (dati di precompilazione) nell&#39;archivio crx. È possibile posizionare il file in qualsiasi posizione nella cartella \contents di crx-repository.
 
