@@ -3,7 +3,7 @@ title: Scaricare risorse da AEM
 description: Scoprite come scaricare risorse da AEM e abilitare o disabilitare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -72,4 +72,5 @@ Per consentire il download delle risorse da DAM, ad esempio quando si utilizza u
 >
 >* [Scaricare risorse protette DRM](drm.md)
 >* [Scaricare risorse dall’app desktop AEM su Windows o Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [Scaricare risorse tramite il collegamento Adobe Assets dall&#39;interno delle app Adobe Creative Cloud supportate](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Scaricare risorse tramite il collegamento Adobe Assets dall&#39;interno delle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)
+
