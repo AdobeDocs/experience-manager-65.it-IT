@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
 
 ## Introduzione {#introduction}
 
-L’offload distribuisce le attività di elaborazione per l’assegnazione di istanze Experience Manager in una topologia. Con lo scaricamento potete utilizzare istanze Experience Manager specifiche per eseguire tipi specifici di elaborazione. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
+L’offload distribuisce le attività di elaborazione per l’assegnazione di istanze Experience Manager in una topologia. Con lo scaricamento, potete utilizzare istanze Experience Manager specifiche per eseguire tipi specifici di elaborazione. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
 
 L&#39;offload è basato sulle funzionalità [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Per utilizzare lo scaricamento, puoi aggiungere cluster Experience Manager a una topologia e identificare gli argomenti del processo che il cluster elabora. I cluster sono formati da una o più istanze di Experience Manager, in modo che una singola istanza venga considerata un cluster.
 
@@ -85,18 +85,18 @@ Per ogni istanza del cluster, potete vedere diverse proprietà relative alla top
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Fate clic su un cluster per visualizzare un elenco delle istanze presenti nel cluster e il relativo ID, stato corrente e stato iniziale.
+1. Fate clic su un cluster per visualizzare un elenco delle istanze presenti nel cluster e il relativo ID, stato corrente e stato riempimento iniziale.
 1. Fate clic su un ID istanza per visualizzare le proprietà più dettagliate.
 
 È inoltre possibile utilizzare la console Web per visualizzare le informazioni sulla topologia. La console fornisce ulteriori informazioni sui cluster di topologia:
 
 * Quale istanza è l&#39;istanza locale.
 * I servizi del connettore topologia utilizzati da questa istanza per connettersi alla topologia (in uscita) e i servizi che si connettono a questa istanza (in entrata).
-* Modificare la cronologia per le proprietà di topologia e istanza.
+* Modificare la cronologia per le proprietà della topologia e dell&#39;istanza.
 
 Per aprire la pagina Gestione topologia della console Web, effettuate le seguenti operazioni:
 
-1. Apri la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Aprite la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Fate clic su Principale > Gestione topologia.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
@@ -161,14 +161,14 @@ Utilizzate la console Web o un nodo sling:OsgiConfig per configurare le seguenti
 
 Per collegare un’istanza CQ al membro principale di una topologia, attenersi alla procedura descritta di seguito. La procedura punta l&#39;istanza all&#39;URL del connettore topologia del membro della topologia principale. Eseguire questa procedura su tutti i membri della topologia.
 
-1. Apri la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Aprite la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Fate clic su Principale > Gestione topologia.
 1. Fate clic su Configura servizio di individuazione.
 1. Aggiungere un elemento alla proprietà URL del connettore topologia e specificare l&#39;URL del servizio Connettore topologia principale del membro topologia. L’URL si trova nel modulo https://rootservername:4502/libs/sling/topology/connector.
 
 Eseguire la procedura seguente sul membro principale della topologia. La procedura aggiunge i nomi degli altri membri della topologia alla whitelist di Discovery Service.
 
-1. Apri la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Aprite la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Fate clic su Principale > Gestione topologia.
 1. Fate clic su Configura servizio di individuazione.
 1. Per ciascun membro della topologia, aggiungete un elemento alla proprietà Whitelist del connettore topologia e specificate il nome host o l&#39;indirizzo IP del membro della topologia.
@@ -177,17 +177,17 @@ Eseguire la procedura seguente sul membro principale della topologia. La procedu
 
 Utilizzate il browser di offload per configurare il consumo degli argomenti per le istanze Experience Manager nella topologia. Per ogni istanza, potete specificare gli argomenti che essa consuma. Ad esempio, per configurare la topologia in modo che solo un&#39;istanza utilizzi argomenti di un tipo specifico, disattivate l&#39;argomento per tutte le istanze tranne una.
 
-I processi sono istanze di quantità distribuita con l’argomento associato abilitato mediante la logica di arrotondamento.
+I processi sono istanze di quantità distribuita con l’argomento associato abilitato mediante la logica round-robin.
 
 1. Utilizzando l&#39;interfaccia touch, fare clic sulla scheda Strumenti. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Nell&#39;area Granite Operations, fare clic su Offload Browser.
-1. Nel pannello di navigazione, fate clic su Offload Browser.
+1. Nel pannello di navigazione, fate clic su Offload Browser (Offload Browser).
 
    Vengono visualizzati gli argomenti di scaricamento e le istanze del server che possono utilizzare gli argomenti.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. Per disabilitare l&#39;uso di un argomento per un&#39;istanza, sotto il nome del topic fare clic su Disable accanto all&#39;istanza.
+1. Per disabilitare l&#39;uso di un argomento per un&#39;istanza, sotto il nome del topic fare clic su Disable (Disattiva) accanto all&#39;istanza.
 1. Per configurare l’uso di tutti gli argomenti per un’istanza, fai clic sull’identificatore di istanza sotto a qualsiasi argomento.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
@@ -197,7 +197,7 @@ I processi sono istanze di quantità distribuita con l’argomento associato abi
    * Abilitato: Questa istanza utilizza i processi di questo argomento.
    * Disattivato: In questa istanza non vengono utilizzati processi di questo argomento.
    * Esclusivo: Questa istanza utilizza solo i processi di questo argomento.
-   **** Nota: Quando si seleziona Esclusivo per un argomento, tutti gli altri argomenti vengono impostati automaticamente su Disattivato.
+   **Nota:** Quando si seleziona Esclusivo per un argomento, tutti gli altri argomenti vengono impostati automaticamente su Disattivato.
 
 ### Consumatori di lavori installati {#installed-job-consumers}
 
@@ -207,15 +207,15 @@ Con Experience Manager sono installate diverse implementazioni JobConsumer. Gli 
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installato con Apache Sling. Elabora i processi generati dall&#39;amministratore degli eventi OSGi per garantire la compatibilità con le versioni precedenti. |
 | com/day/cq/replica/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente di replica che replica i payload di processi. |
-| com/adobe/granite/workflow/offload | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Elabora i processi generati dal flusso di lavoro DAM Update Asset Offloader. |
+| com/adobe/granite/workflow/offload | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Elabora i processi generati dal flusso di lavoro [!UICONTROL DAM Update Asset Offloader] . |
 
 ### Disattivazione e abilitazione degli argomenti per un&#39;istanza {#disabling-and-enabling-topics-for-an-instance}
 
 Il servizio Apache Sling Job Consumer Manager fornisce le proprietà della whitelist e della blacklist degli argomenti. Configura queste proprietà per abilitare o disabilitare l&#39;elaborazione di argomenti specifici in un&#39;istanza Experience Manager.
 
-**** Nota: Se l&#39;istanza appartiene a una topologia, potete anche utilizzare il browser di scaricamento su qualsiasi computer della topologia per attivare o disattivare gli argomenti.
+**Nota:** Se l&#39;istanza appartiene a una topologia, potete anche utilizzare il browser di scaricamento su qualsiasi computer della topologia per attivare o disattivare gli argomenti.
 
-La logica che crea l&#39;elenco di argomenti abilitati prima consente di tutti gli argomenti presenti nella whitelist, quindi rimuove gli argomenti presenti nella blacklist. Per impostazione predefinita, tutti gli argomenti sono abilitati (il valore della whitelist è `*`) e nessun argomento è disabilitato (la blacklist non ha alcun valore).
+La logica che crea l&#39;elenco di argomenti abilitati prima consente di tutti gli argomenti presenti nella whitelist, quindi rimuove gli argomenti presenti nella blacklist. Per impostazione predefinita, tutti gli argomenti sono attivati (il valore della whitelist è `*`) e nessun argomento è disabilitato (la blacklist non ha alcun valore).
 
 Utilizzare la console Web o un `sling:OsgiConfig` nodo per configurare le seguenti proprietà. Per `sling:OsgiConfig` i nodi, il PID del servizio Job Consumer Manager è org.apache.sling.event.impl.jobs.JobConsumerManager.
 
@@ -224,9 +224,9 @@ Utilizzare la console Web o un `sling:OsgiConfig` nodo per configurare le seguen
 | Whitelist argomento | job.consumermanager.whitelist | Elenco di argomenti elaborati dal servizio JobManager locale. Il valore predefinito di &amp;ast; determina l&#39;invio di tutti gli argomenti al servizio TopicConsumer registrato. |
 | Topic Blacklist | job.consumermanager.blacklist | Un elenco di argomenti che il servizio JobManager locale non elabora. |
 
-## Creazione Di Agenti Di Replica Per Lo Scaricamento {#creating-replication-agents-for-offloading}
+## Creazione Di Agenti Di Replica Per L&#39;Offload {#creating-replication-agents-for-offloading}
 
-Il framework di scarico utilizza la replica per il trasporto delle risorse tra autore e lavoratore. Il framework di scaricamento crea automaticamente agenti di replica quando le istanze entrano nella topologia. Gli agenti vengono creati con valori predefiniti. È necessario modificare manualmente la password utilizzata dagli agenti per l&#39;autenticazione.
+Il framework di scarico utilizza la replica per il trasporto delle risorse tra autore e lavoratore. Il framework di scaricamento crea automaticamente agenti di replica quando le istanze si uniscono alla topologia. Gli agenti vengono creati con valori predefiniti. È necessario modificare manualmente la password utilizzata dagli agenti per l&#39;autenticazione.
 
 >[!CAUTION]
 >
@@ -250,7 +250,7 @@ Lo schema di replica è simile a quello utilizzato tra le istanze di creazione e
 
 ### Denominazione degli agenti di replica per lo scarico {#naming-the-replication-agents-for-offloading}
 
-Utilizzare un formato specifico per la proprietà ***Name*** degli agenti di replica in modo che il framework di scarico utilizzi automaticamente l&#39;agente corretto per istanze di lavoro specifiche.
+Utilizzare un formato specifico per la proprietà ***Name*** degli agenti di replica, in modo che il framework di scarico utilizzi automaticamente l&#39;agente corretto per istanze di lavoro specifiche.
 
 **Denominazione dell’agente in uscita nell’istanza di creazione:**
 
@@ -317,16 +317,16 @@ Ottenete l’ID Sling di un’istanza Experience Manager utilizzando uno dei seg
 
 Configurate le istanze di una topologia in modo che istanze specifiche eseguano l&#39;elaborazione in background delle risorse aggiunte o aggiornate in DAM.
 
-Per impostazione predefinita, Experience Manager esegue il flusso di lavoro DAM Update Asset quando una risorsa DAM cambia o una viene aggiunta a DAM. Modificate il comportamento predefinito in modo che Experience Manager esegua invece il flusso di lavoro DAM Update Asset Offloader. Questo flusso di lavoro genera un processo JobManager con un argomento di `com/adobe/granite/workflow/offloading`. Quindi configurate la topologia in modo che il processo venga scaricato a un lavoratore dedicato.
+Per impostazione predefinita, Experience Manager esegue il flusso di lavoro [!UICONTROL DAM Update Asset] quando una risorsa DAM cambia o una viene aggiunta a DAM. Modificate il comportamento predefinito in modo che Experience Manager esegua invece il flusso di lavoro [!UICONTROL DAM Update Asset Offloader] . Questo flusso di lavoro genera un processo JobManager con un argomento di `com/adobe/granite/workflow/offloading`. Quindi, configurate la topologia in modo che il processo venga scaricato a un lavoratore dedicato.
 
 >[!CAUTION]
 >
->Nessun flusso di lavoro deve essere transitorio se utilizzato con lo scaricamento del flusso di lavoro. Ad esempio, il flusso di lavoro DAM Update Asset (Aggiorna risorsa DAM) non deve essere transitorio se utilizzato per lo scaricamento delle risorse. Per impostare/disimpostare il flag transitorio su un flusso di lavoro, vedere Flussi di lavoro [transitori](/help/assets/performance-tuning-guidelines.md#workflows).
+>Nessun flusso di lavoro deve essere transitorio se utilizzato con lo scaricamento del flusso di lavoro. Ad esempio, il flusso di lavoro [!UICONTROL DAM Update Asset] non deve essere transitorio quando viene utilizzato per lo scaricamento delle risorse. Per impostare/disimpostare il flag transitorio su un flusso di lavoro, vedere Flussi di lavoro [transitori](/help/assets/performance-tuning-guidelines.md#workflows).
 
 La procedura seguente assume le seguenti caratteristiche per la topologia di scarico:
 
 * Una o più istanze di Experience Manager sono istanze di authoring con cui gli utenti interagiscono per aggiungere o aggiornare risorse DAM.
-* Gli utenti non interagiscono direttamente con una o più istanze Experience Manager che elaborano le risorse DAM. Queste istanze sono dedicate all&#39;elaborazione in background delle risorse DAM.
+* Gli utenti non devono interagire direttamente con una o più istanze di Experience Manager che elaborano le risorse DAM. Queste istanze sono dedicate all&#39;elaborazione in background delle risorse DAM.
 
 1. Per ogni istanza di Experience Manager, configura il servizio di individuazione in modo che punti al connettore topografico principale. Consultate [Configurazione dell’appartenenza](#title4)alla topologia.
 1. Configurare il connettore topografico principale in modo che le istanze di connessione siano nella whitelist.
@@ -334,17 +334,17 @@ La procedura seguente assume le seguenti caratteristiche per la topologia di sca
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. Per ogni istanza con cui gli utenti interagiscono per caricare o modificare le risorse DAM, configura gli avviatori di flussi di lavoro per utilizzare il flusso di lavoro di scaricamento delle risorse DAM Update:
+1. Per ogni istanza con cui gli utenti interagiscono per caricare o modificare le risorse DAM, configura gli avviatori di flussi di lavoro per utilizzare il flusso di lavoro [!UICONTROL DAM Update Asset Offload] :
 
    1. Aprite la console Flusso di lavoro.
    1. Fare clic sulla scheda Avvio.
-   1. Individua le due configurazioni di avvio che eseguono il flusso di lavoro di aggiornamento risorse DAM. Un tipo di evento di configurazione del lanciatore è Node Create e l&#39;altro è Node Modified.
-   1. Modificate entrambi i tipi di evento in modo che eseguano il flusso di lavoro DAM Update Asset Offload. Per informazioni sulle configurazioni del modulo di avvio, consultate [Avvio dei flussi di lavoro quando i nodi cambiano](/help/sites-administering/workflows-starting.md).
+   1. Individuate le due configurazioni di avvio che eseguono il flusso di lavoro [!UICONTROL DAM Update Asset] . Un tipo di evento di configurazione del lanciatore è Node Create e l&#39;altro è Node Modified.
+   1. Modificate entrambi i tipi di evento in modo che eseguano il flusso di lavoro [!UICONTROL DAM Update Asset Offload] . Per informazioni sulle configurazioni del modulo di avvio, consultate [Avvio dei flussi di lavoro quando i nodi cambiano](/help/sites-administering/workflows-starting.md).
 
-1. Nelle istanze che eseguono l&#39;elaborazione in background delle risorse DAM, disabilitate gli avviatori del flusso di lavoro che eseguono il flusso di lavoro Aggiorna risorsa DAM.
+1. Nelle istanze che eseguono l&#39;elaborazione in background delle risorse DAM, disabilitate gli avviatori del flusso di lavoro che eseguono il flusso di lavoro Aggiorna risorsa  DAM.
 
 ## Lettura {#further-reading}
 
 Oltre ai dettagli presentati in questa pagina, potete anche leggere quanto segue:
 
-* Per informazioni sull’utilizzo delle API Java per creare posti di lavoro e consumatori di lavoro, consultate [Creazione e utilizzo di processi per lo scarico](/help/sites-developing/dev-offloading.md).
+* Per informazioni sull’utilizzo delle API Java per creare posti di lavoro e consumatori di lavoro, consultate [Creazione e utilizzo di processi per lo scaricamento](/help/sites-developing/dev-offloading.md).
