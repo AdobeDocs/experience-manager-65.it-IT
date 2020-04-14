@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -127,7 +127,7 @@ Per ulteriori informazioni sull’interfaccia di authoring delle comunicazioni i
  </tbody>
 </table>
 
-È inoltre possibile sostituire il binding tra un&#39;area di destinazione e un frammento di documento rilasciando il nuovo frammento nell&#39;area di destinazione utilizzando la scheda **Risorse** . L&#39;ombreggiatura blu dell&#39;area di destinazione durante il trascinamento del frammento indica che è possibile rilasciare il frammento di documento nell&#39;area di destinazione.
+È inoltre possibile sostituire il binding tra un&#39;area di destinazione e un frammento di documento rilasciando il nuovo frammento nell&#39;area di destinazione utilizzando la scheda **[!UICONTROL Risorse]** . L&#39;ombreggiatura blu dell&#39;area di destinazione durante il trascinamento del frammento indica che è possibile rilasciare il frammento di documento nell&#39;area di destinazione.
 
 Per ulteriori informazioni sui frammenti di documento, vedere [Frammenti](/help/forms/using/document-fragments.md)di documento.
 
@@ -178,11 +178,11 @@ Toccate il frammento di documento, toccate ![configure_icon](assets/configure_ic
 
 1. Passate al canale **[!UICONTROL Web]**. Il canale Web viene visualizzato nell&#39;editor di comunicazione interattiva. Quando si passa dal canale Stampa al canale Web per la prima volta, si verifica la sincronizzazione automatica. Per ulteriori informazioni, vedere [Sincronizzazione del canale Web dal canale](../../forms/using/create-interactive-communication.md#synchronize)di stampa.
 
-   Poiché in questo esempio viene utilizzata la funzione Stampa come master per il Web, i segnaposto dei canali di stampa, i contenuti e il binding dei dati vengono sincronizzati sul canale Web. Tuttavia, potete modificare e personalizzare il contenuto specifico del canale Web. [Annulla ereditarietà](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) per le aree di destinazione e le variabili generate tramite il canale di stampa per personalizzare il contenuto.
+   Poiché in questo esempio viene utilizzata la funzione Stampa come master per il Web, i segnaposto dei canali di stampa, i contenuti e il binding dei dati vengono sincronizzati sul canale Web. Tuttavia, potete modificare e personalizzare il contenuto specifico del canale Web. [Annulla ereditarietà](#cancelinheritance) per le aree di destinazione e le variabili generate tramite il canale di stampa per personalizzare il contenuto.
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](assets/edit.svg) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà. Inoltre, per i frammenti di documento generati [](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) automaticamente nel canale Web utilizzando il canale Stampa, utilizzare l&#39;icona ![](assets/cancelinheritance.png) (Annulla ereditarietà) accanto a ciascun oggetto e variabile del modello dati per [annullare l&#39;ereditarietà](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) e modificarli.
+   Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](assets/edit.svg) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà. Inoltre, per i frammenti di documento generati [](#synchronize) automaticamente nel canale Web utilizzando il canale Stampa, utilizzare l&#39;icona ![](assets/cancelinheritance.png) (Annulla ereditarietà) accanto a ciascun oggetto e variabile del modello dati per [annullare l&#39;ereditarietà](#cancelinheritance) e modificarli.
 
 1. Per aggiungere altri componenti nel canale Web, toccate **[!UICONTROL Componenti]** con il canale Web selezionato. Trascina i componenti sul canale Web della comunicazione interattiva, come necessario, e procedi a configurarli.
 
@@ -581,9 +581,9 @@ Toccate il componente per visualizzare le seguenti opzioni:
 * **Elemento padre:** Selezionate l’elemento padre di un componente.
 * **Visualizza espressione SOM:** Visualizzare l&#39;espressione [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM per il componente.
 
-* **Raggruppa oggetti nel pannello:** Raggruppare i componenti in un pannello per eseguire contemporaneamente operazioni su tali componenti. Per informazioni dettagliate, consultate **[Raggruppare gli oggetti nel pannello](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **Raggruppa oggetti nel pannello:** Raggruppare i componenti in un pannello per eseguire contemporaneamente operazioni su tali componenti. Per informazioni dettagliate, consultate [Raggruppare gli oggetti nel pannello](#groupobjectspanel).
 
-* **Annulla ereditarietà:** [Annulla l’ereditarietà](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) dei componenti all’interno dell’area di destinazione per modificarli.
+* **Annulla ereditarietà:** [Annulla l’ereditarietà](#cancelinheritance) dei componenti all’interno dell’area di destinazione per modificarli.
 
 ### Group objects in Panel {#groupobjectspanel}
 
