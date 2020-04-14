@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Per informazioni sulla configurazione e l&#39;utilizzo dei rapporti sulle transa
 
 **Definire i pattern di visualizzazione dei dati**
 
-Gli autori delle comunicazioni interattive ora possono definire pattern [di visualizzazione dei](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) dati per campi, variabili ed elementi del modello dati del modulo. Ad esempio, data, valuta o formato telefono.
+Gli autori delle comunicazioni interattive ora possono definire pattern [di visualizzazione dei](create-interactive-communication.md#datadisplaypatterns) dati per campi, variabili ed elementi del modello di dati del modulo. Ad esempio, i formati data, valuta o telefono.
 
 **Utilizzare nuovi tipi di grafici**
 
@@ -57,7 +57,7 @@ Gli autori delle comunicazioni interattive possono ora utilizzare varie operazio
 * [Esecuzione di azioni Annulla-Ripristina nei canali di stampa e Web](../../forms/using/create-interactive-communication.md#undoredoactions)
 * [Aggiunta di variabili in un frammento di documento tramite il simbolo @](../../forms/using/texts-interactive-communications.md#searchvariables)
 * [Aggiunta di elementi del modello dati in un frammento di documento tramite il simbolo @](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
-* [Eliminare o aggiungere un canale Web a una comunicazione interattiva esistente](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
+* [Eliminazione o aggiunta di un canale Web a una comunicazione interattiva esistente](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
 * [Binding degli elementi dell&#39;origine dati con campi e variabili mediante azioni di trascinamento](../../forms/using/create-interactive-communication.md#binddatasourceelements)
 * [Evidenziazione di campi e variabili non associati durante la creazione di comunicazioni interattive](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
 * [Eseguire azioni aggiuntive, ad esempio copiare, raggruppare o altro su componenti ereditati in un canale Web](../../forms/using/create-interactive-communication.md#componenttoolbar)
@@ -66,7 +66,7 @@ Gli autori delle comunicazioni interattive possono ora utilizzare varie operazio
 
 Sono stati introdotti diversi miglioramenti nel layout del canale Web generato automaticamente tramite il canale di stampa.
 
-![Grafici per comunicazioni interattive](assets/interactive-communication-charts.png)
+![Grafici per le comunicazioni interattive](assets/interactive-communication-charts.png)
 
 ## Moduli adattivi {#adaptive-forms}
 
@@ -108,7 +108,7 @@ Il passaggio Vai a, O Dividi e tutti i passaggi del flusso di lavoro di AEM Form
 
 #### Utilizzare un flusso di lavoro con diversi moduli adattivi {#use-a-workflow-with-different-adaptive-forms}
 
-È possibile [specificare un modulo adattivo per l&#39;attività](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) di assegnazione e il passaggio del documento del record dei flussi di lavoro incentrati sui moduli nel runtime. Consente di utilizzare un flusso di lavoro con diversi moduli adattivi. È possibile scegliere il metodo per selezionare un modulo adattivo durante la progettazione del flusso di lavoro. Il modulo adattivo può trovarsi in un percorso assoluto, essere inviato come payload al flusso di lavoro o essere disponibile in un percorso calcolato utilizzando una variabile.
+È possibile [specificare un modulo adattivo per l&#39;attività](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) di assegnazione e il passaggio del documento del record dei flussi di lavoro incentrati sui moduli in fase di esecuzione. Consente di utilizzare un flusso di lavoro con diversi moduli adattivi. È possibile scegliere il metodo per selezionare un modulo adattivo durante la progettazione del flusso di lavoro. Il modulo adattivo può trovarsi in un percorso assoluto, essere inviato come payload al flusso di lavoro o essere disponibile in un percorso calcolato utilizzando una variabile.
 
 #### Utilizzare funzionalità di registrazione avanzate per i passaggi di flusso di lavoro incentrati sui moduli {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
@@ -204,7 +204,7 @@ I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di si
 
 #### Nuova interfaccia utente basata su HTML5 {#new-html-based-uis}
 
-In linea con l’EOL pianificato di Adobe Flash Player e con la direzione generale della migrazione dei contenuti basati su Flash agli standard aperti, AEM 6.5 Forms ha sostituito l’interfaccia utente basata su Flash di Health Monitor, Process Management, Reader Extension e Category Management UI di AEM Forms con l’interfaccia utente basata su HTML5.
+In linea con l’EOL pianificato di Adobe Flash Player e con la direzione generale della migrazione dei contenuti basati su Flash agli standard aperti, AEM 6.5 Forms ha sostituito l’interfaccia utente basata su Flash di Health Monitor, Process Management, Reader Extension e Category Management UI di AEM Forms nella console di amministrazione JEE con interfaccia utente basata su HTML5.
 
 #### Miglioramenti della sicurezza {#security-improvements}
 
