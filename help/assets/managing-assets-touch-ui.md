@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -19,7 +19,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->* La condivisione di una cartella di risorse di tipo `sling:OrderedFolder`non è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una cartella di risorse di tipo non `sling:OrderedFolder` è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
 >* Experience Manager non consente l&#39;uso di `subassets` parole come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
 
 
@@ -56,13 +56,13 @@ Prima di caricare una risorsa, accertati che sia nel [formato](/help/assets/asse
 
    * Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Crea]** . Quindi, nel menu, toccate **[!UICONTROL File]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia utente di Risorse. La finestra di dialogo per rinominare il file non viene visualizzata.
-   ![create option in aem](assets/create-options.png)
+   ![Opzione Crea per caricare le risorse](assets/create-options.png)
 
    Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
 
    Potete mettere in pausa il caricamento di risorse di grandi dimensioni (superiori a 500 MB) e riprenderlo più tardi dalla stessa pagina. Toccate l’icona **[!UICONTROL Pausa]** accanto alla barra di avanzamento che viene visualizzata all’avvio del caricamento.
 
-   ![chlimage_1-211](assets/chlimage_1-5.png)
+   ![Barra di avanzamento del caricamento delle risorse](assets/chlimage_1-5.png)
 
    È possibile configurare la dimensione sopra la quale una risorsa viene considerata una risorsa grande. Ad esempio, potete configurare il sistema affinché consideri le risorse superiori ai 1000 MB (invece dei 500 MB) come risorse grandi. In questo caso, **[!UICONTROL la pausa]** viene visualizzata sulla barra di avanzamento quando vengono caricate risorse di dimensioni superiori a 1000 MB.
 
@@ -72,7 +72,7 @@ Prima di caricare una risorsa, accertati che sia nel [formato](/help/assets/asse
 
    Quando fate clic sull&#39;icona **[!UICONTROL Pausa]** , viene visualizzata un&#39;icona **[!UICONTROL Riproduci]** . Per riprendere il caricamento, fate clic sull’icona **[!UICONTROL Riproduci]** .
 
-   ![chlimage_1-212](assets/chlimage_1-6.png)
+   ![Riprendere il caricamento della risorsa in pausa utilizzando l&#39;icona Riproduci](assets/chlimage_1-6.png)
 
    Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, Risorse AEM elimina la parte parzialmente caricata della risorsa.
 
@@ -86,7 +86,7 @@ Prima di caricare una risorsa, accertati che sia nel [formato](/help/assets/asse
 
    Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tenerle entrambe rinominando la nuova risorsa caricata. Se sostituite una risorsa esistente, i metadati della risorsa e le eventuali modifiche precedenti (ad esempio, annotazione o ritaglio) apportate alla risorsa esistente vengono eliminati. Se scegliete di mantenere entrambe le risorse, la nuova risorsa viene rinominata con un numero `1` aggiunto al nome.
 
-   ![chlimage_1-213](assets/chlimage_1-7.png)
+   ![Finestra di dialogo Conflitto nome per risolvere il conflitto tra i nomi delle risorse](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Prima di caricare una risorsa, accertati che sia nel [formato](/help/assets/asse
    >
    >La finestra di dialogo [!UICONTROL Duplicati rilevati] viene visualizzata solo quando è attivata la funzione di rilevamento duplicati. Per abilitare la funzione di rilevamento dei duplicati, consultate [Abilitare il rilevamento](/help/assets/duplicate-detection.md)dei duplicati.
 
-   ![chlimage_1-214](assets/chlimage_1-8.png)
+   ![Finestra di dialogo Duplica risorsa rilevata](assets/chlimage_1-8.png)
 
    Per mantenere la risorsa duplicata in Risorse AEM, tocca o fai clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
 
@@ -112,7 +112,7 @@ Prima di caricare una risorsa, accertati che sia nel [formato](/help/assets/asse
 
    * il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
    * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-   ![chlimage_1-215](assets/chlimage_1-10.png)
+   ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/chlimage_1-10.png)
 
    Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta.
 
