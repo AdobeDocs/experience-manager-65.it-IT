@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -404,11 +404,11 @@ Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei
    * **Colonne**: selezionate il numero di colonne per il layout. Il numero di colonne configurato deve essere maggiore o uguale al numero di colonne originale.
    Per ogni colonna sono necessari i seguenti dettagli:
 
-   * **Header**: text to show for the header
-   * **Footer**: text to show for the footer
-   * **Type**: type of additional column. Field or Target Area. Type is enabled for static place holder tables. Type can be defined at column level and not at cell level. All the cells in an extended column would be of the same type. Per una tabella dinamica, tutte le colonne sono di tipo Field. Per le tabelle non segnaposto non è possibile definire il tipo di colonne aggiuntive. In questo caso, il tipo di celle aggiuntive nella colonna estesa è uguale al tipo dell&#39;ultima colonna in quella riga; e il tipo di cella nella riga aggiuntiva è uguale al tipo dell&#39;ultima cella in quella colonna.
+   * **Intestazione**: testo da visualizzare per l’intestazione
+   * **Piè di pagina**: testo da visualizzare per il piè di pagina
+   * **Tipo**: tipo di colonna aggiuntiva. Campo o Area di destinazione. Il tipo è abilitato per le tabelle dei segnaposto statici. Il tipo può essere definito a livello di colonna e non a livello di cella. Tutte le celle di una colonna estesa sarebbero dello stesso tipo. Per una tabella dinamica, tutte le colonne sono di tipo Field. Per le tabelle non segnaposto non è possibile definire il tipo di colonne aggiuntive. In questo caso, il tipo di celle aggiuntive nella colonna estesa è uguale al tipo dell&#39;ultima colonna in quella riga; e il tipo di cella nella riga aggiuntiva è uguale al tipo dell&#39;ultima cella in quella colonna.
    * **Rapporto larghezza:** rapporto tra le larghezze delle colonne della tabella.
-   Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei frammenti di layout, vedere [Esempio con file di esempio: utilizzo di tabelle statiche e dinamiche in una lettera](#main-pars-header-28).
+   Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei frammenti di layout, vedere [Esempio con file di esempio: utilizzo di tabelle statiche e dinamiche in una lettera](#examplewithsamplefiles).
 
 1. Toccate **Salva**.
 
@@ -472,10 +472,10 @@ Quando si inserisce un campo in una pagina master, tenere presente quanto segue:
 
 Molti modelli di lettera contengono tabelle. Le tabelle possono essere statiche, ad esempio una tabella di termini e condizioni, in cui ogni riga rappresenta una condizione e ogni parte viene visualizzata in una colonna separata. Le tabelle possono anche essere dinamiche come le informazioni sul conto, che contengono informazioni quali il nome del cliente, l&#39;ID del conto, il numero della transazione e l&#39;importo della transazione.
 
-* **Tabelle** statiche: Talvolta le tabelle vengono create con righe con un numero diverso di colonne, ad esempio per una tabella di termini e condizioni. Where each row represents one condition and each condition can have different subparts. Each part is shown in a separate column.
-* **Dynamic Tables**: Layout fragments provide capability of binding a dynamic table&#39;s fields to collection DDEs. Al momento della generazione delle lettere, le righe delle tabelle vengono generate in base alle dimensioni dei DDE della raccolta.
+* **Tabelle** statiche: Talvolta le tabelle vengono create con righe con un numero diverso di colonne, ad esempio per una tabella di termini e condizioni. Dove ogni riga rappresenta una condizione e ogni condizione può avere sottoparti diverse. Ogni parte viene visualizzata in una colonna separata.
+* **Tabelle** dinamiche: I frammenti di layout consentono di eseguire il binding dei campi di una tabella dinamica con i DDE della raccolta. Al momento della generazione delle lettere, le righe delle tabelle vengono generate in base alle dimensioni dei DDE della raccolta.
 
-The DD has a collection element Nominee_details which has a composite element with three primitive elements: Nominee_name, Nominee_address, and Nominee_gender.
+Il DD ha un elemento di raccolta Nominee_details con un elemento composito con tre elementi primitivi: Nominee_name, Nominee_address e Nominee_gender.
 Anche l&#39;XDP dinamico ha le stesse intestazioni. È quindi possibile mappare i campi XDP dinamici con i campi DD indicati sopra.
 
 ### Esempio con file di esempio: Uso di tabelle statiche e dinamiche in una lettera {#examplewithsamplefiles}
@@ -484,42 +484,42 @@ Questo esempio mostra come creare una tabella dinamica e statica, eseguire un bi
 
 1. Creare un dizionario dati (DD) che si desidera utilizzare nell&#39;esempio, come rappresentato nell&#39;elemento grafico.
 
-   Quindi selezionate DD ed esportate i dati di esempio. Il file XML ottenuto contiene i dati Dipendente e tre istanze per Nominee_details (per impostazione predefinita vengono scaricate 3 istanze. Potete aggiungere o eliminare i contenuti in base alle vostre esigenze). Update the values and then import test data in DD. The CMP file is the package and it has the DD in it. So, import the DD to Correspondence Management.
+   Quindi selezionate DD ed esportate i dati di esempio. Il file XML ottenuto contiene i dati Dipendente e tre istanze per Nominee_details (per impostazione predefinita vengono scaricate 3 istanze. Potete aggiungere o eliminare i contenuti in base alle vostre esigenze). Aggiornate i valori e importate i dati del test in DD. Il file CMP è il pacchetto e contiene il DD. Quindi, importate il DD in Gestione della corrispondenza.
 
-   For more information on working with Data Dictionary and test data, see [Data Dictionary](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
+   Per ulteriori informazioni sull&#39;utilizzo del dizionario dati e sui dati di prova, vedere [Dizionario](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)dati.
 
    ![Struttura del dizionario dati](assets/dd.jpeg)
 
-   [Get File](assets/exportpackage_1431709897770.cmp.zip)
+   [Ottieni file](assets/exportpackage_1431709897770.cmp.zip)
 
-1. In Designer, create two XDPs (layout fragments): a dynamic table and a static table. Per entrambi i layout:
+1. In Designer, creare due XDP (frammenti di layout): una tabella dinamica e una tabella statica. Per entrambi i layout:
 
-   * Aggiungere un sottomodulo alla colonna della tabella. Ensure that you change the layout of table’s parent subform to flowed and remove the bindings of the subform in table.
-   * Add a subform to the table cell. Ensure that you change the layout of table’s parent subform to flowed and remove the bindings of the subform in table.
+   * Aggiungere un sottomodulo alla colonna della tabella. Assicurarsi di modificare il layout del sottomodulo principale della tabella in modo che sia scorrevole e rimuovere i binding del sottomodulo nella tabella.
+   * Aggiungere un sottomodulo alla cella della tabella. Assicurarsi di modificare il layout del sottomodulo principale della tabella in modo che sia scorrevole e rimuovere i binding del sottomodulo nella tabella.
    In alternativa, utilizzate gli XDP statici e dinamici associati a questo passaggio.
 
-   For more information on working with Layout Fragments, see [Layout Fragments](#layoutfragments).
-For more information on designing layouts, see [Designer Help](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Per ulteriori informazioni sull&#39;uso dei frammenti di layout, vedere Frammenti [di](#layoutfragments)layout.
+Per ulteriori informazioni sulla progettazione dei layout, vedere la Guida [di](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)Designer.
 
-   [Get File](assets/static.xdp.zip)
+   [Ottieni file](assets/static.xdp.zip)
 
-   [Get File](assets/dynamic.xdp.zip)
+   [Ottieni file](assets/dynamic.xdp.zip)
 
-1. Upload the XDPs to AEM Forms.
-1. Create a layout fragment based on the dynamic XDP. The Table tab of the properties displays that the table is dynamic (Configuration For field). The number of rows (1) and columns (3) are derived from the XDP/Layout Fragment.
+1. Caricate gli XDP in AEM Forms.
+1. Creare un frammento di layout basato su XDP dinamico. La scheda Tabella delle proprietà mostra che la tabella è dinamica (campo Configuration For). Il numero di righe (1) e colonne (3) deriva dal frammento XDP/Layout.
 
-   This layout&#39;s fields are later bound to the imported DD and in the letter, the number of rows are dynamically created based on the number of records in the test data file (the XML data file attached with the DD).
+   I campi di questo layout sono successivamente associati al DD importato e, nella lettera, il numero di righe viene creato in modo dinamico in base al numero di record nel file di dati di prova (il file di dati XML allegato al DD).
 
-   ![Create a layout fragment screen](assets/dynamictableproperties.png)
+   ![Creare una schermata frammento di layout](assets/dynamictableproperties.png)
 
-   Click to open full-sized image
+   Fare clic per aprire l&#39;immagine a dimensione intera
 
-1. Create a layout fragment based on the static XDP. The Table tab of the properties displays that the table is static (Configuration For field). The number of rows (1) and columns (3) are derived from the XDP/Layout Fragment.
+1. Creare un frammento di layout basato su XDP statico. La scheda Tabella delle proprietà mostra che la tabella è statica (campo Configuration For). Il numero di righe (1) e colonne (3) deriva dal frammento XDP/Layout.
 
-   You can change the number of columns and rows here. According to what you choose in this screen, the number of rows and columns of a static table remain fixed in the letter that is created with this layout.
+   È possibile modificare il numero di colonne e righe. In base alle opzioni selezionate in questa schermata, il numero di righe e colonne di una tabella statica rimane fisso nella lettera creata con questo layout.
    [ ![Creare una schermata frammento di layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
-1. Creare una lettera utilizzando entrambi i frammenti di layout al suo interno. When you insert the dynamic XDP in the letter, set the binding of its fields to the Data Dictionary&#39;s collection elements.
+1. Creare una lettera utilizzando entrambi i frammenti di layout al suo interno. Quando si inserisce l&#39;XDP dinamico nella lettera, impostare il binding dei relativi campi agli elementi della raccolta del dizionario dati.
 
    Per ulteriori informazioni sulla creazione di modelli per lettere e lettere, vedere [Creazione di lettere](/help/forms/using/create-letter.md).
 
@@ -529,17 +529,17 @@ For more information on designing layouts, see [Designer Help](https://help.adob
 
    ![Tabella statica nella lettera](assets/statictableletter.png)
 
-   Per la tabella dinamica, le tre righe vengono visualizzate in base al numero di record nel file di dati di prova. This happened because while adding the layout to the letter, you created a binding between the dynamic table&#39;s fields and the data dictionary&#39;s collection elements. The Name, Address, and Gender values are populated from the test data file you used.
+   Per la tabella dinamica, le tre righe vengono visualizzate in base al numero di record nel file di dati di prova. Ciò si verificava in quanto durante l&#39;aggiunta del layout alla lettera, era stato creato un binding tra i campi della tabella dinamica e gli elementi della raccolta del dizionario dati. I valori Nome, Indirizzo e Genere vengono compilati dal file di dati di prova utilizzato.
 
-   ![Dynamic table in the letter](assets/dynamictableletter.png)
+   ![Tabella dinamica nella lettera](assets/dynamictableletter.png)
 
-## Create a copy of a document fragment {#create-a-copy-of-a-document-fragment}
+## Creazione di una copia di un frammento di documento {#create-a-copy-of-a-document-fragment}
 
-To quickly create a document fragment with properties and content similar to an existing document fragment, you can copy and paste it.
+Per creare rapidamente un frammento di documento con proprietà e contenuto simili a un frammento di documento esistente, è possibile copiarlo e incollarlo.
 
-1. From the list of document fragments, select one or more document fragments. The UI displays the Copy icon.
-1. Tocca Copia. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Tap Paste. The Paste dialog appears. Se si copia e incolla i frammenti di documento nello stesso punto, il sistema assegna automaticamente nomi e titoli alle nuove copie di lettere, ma è possibile modificare i titoli e i nomi delle lettere.
-1. If required, edit the Title and Name with which you want to save the copy of the document fragment.
-1. Tap Paste. Viene creata la copia del frammento di documento.
+1. Selezionare uno o più frammenti di documento dall&#39;elenco dei frammenti di documento. L’interfaccia utente presenta l’icona Copia.
+1. Tocca Copia. Nell’interfaccia utente viene visualizzata l’icona Incolla. Potete anche scegliere di entrare in una cartella prima di incollare. Cartelle diverse possono contenere risorse con gli stessi nomi. Per ulteriori informazioni sulle cartelle, consultate [Cartelle e organizzazione delle risorse](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Toccate Incolla. Viene visualizzata la finestra di dialogo Incolla. Se si copia e incolla i frammenti di documento nello stesso punto, il sistema assegna automaticamente nomi e titoli alle nuove copie di lettere, ma è possibile modificare i titoli e i nomi delle lettere.
+1. Se necessario, modificare il Titolo e il Nome con cui si desidera salvare la copia del frammento del documento.
+1. Toccate Incolla. Viene creata la copia del frammento di documento.
 
