@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -150,7 +150,7 @@ Le configurazioni ContextHub sono interessate da un aggiornamento. Le istruzioni
 
 ### Personalizzazioni flusso di lavoro {#workflow-customizations}
 
-È pratica comune aggiornare i flussi di lavoro di modifica per aggiungere o rimuovere funzionalità non necessarie. Un flusso di lavoro comune personalizzato è il flusso di lavoro Aggiorna risorsa DAM. Tutti i flussi di lavoro necessari per un&#39;implementazione personalizzata devono essere sottoposti a backup e memorizzati nel controllo delle versioni, in quanto possono essere sovrascritti durante un aggiornamento.
+È pratica comune aggiornare i flussi di lavoro di modifica per aggiungere o rimuovere funzionalità non necessarie. Un flusso di lavoro comune personalizzato è il flusso di lavoro Aggiorna risorsa  DAM. Tutti i flussi di lavoro necessari per un&#39;implementazione personalizzata devono essere sottoposti a backup e memorizzati nel controllo delle versioni, in quanto possono essere sovrascritti durante un aggiornamento.
 
 ### Modelli modificabili {#editable-templates}
 
@@ -158,7 +158,7 @@ Le configurazioni ContextHub sono interessate da un aggiornamento. Le istruzioni
 >
 >Questa procedura è necessaria solo per gli aggiornamenti di Siti che utilizzano Modelli modificabili da AEM 6.2
 
-La struttura dei modelli modificabili è cambiata tra AEM 6.2 e 6.3. Se state effettuando l’aggiornamento dalla versione 6.2 o precedente e il contenuto del sito è stato creato utilizzando modelli modificabili, dovrete utilizzare lo strumento [Pulizia nodi](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)reattivi. Lo strumento deve essere eseguito **dopo** un aggiornamento per ripulire il contenuto. Dovrà essere eseguito su livelli Autore e Pubblica.
+La struttura dei modelli modificabili è cambiata tra AEM 6.2 e 6.3. Se state effettuando l&#39;aggiornamento dalla versione 6.2 o precedente e se il contenuto del sito è generato utilizzando modelli modificabili, dovrete utilizzare lo strumento [Pulizia nodi](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)reattivi. Lo strumento deve essere eseguito **dopo** un aggiornamento per ripulire il contenuto. Dovrà essere eseguito su livelli Autore e Pubblica.
 
 ### Modifiche all’implementazione CUG {#cug-implementation-changes}
 
