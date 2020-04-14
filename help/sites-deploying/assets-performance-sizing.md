@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -24,7 +24,7 @@ La gestione delle risorse digitali è spesso utilizzata nei casi in cui le prest
 
 ## Problemi di prestazioni {#performance-issues}
 
-Le scarse prestazioni nella gestione delle risorse digitali possono avere un impatto sull’esperienza utente in tre modi: prestazioni interattive, elaborazione delle risorse e velocità di download. Per migliorare le prestazioni, è importante misurare correttamente le prestazioni osservate e stabilire metriche target.
+Le scarse prestazioni nella gestione delle risorse digitali possono avere un impatto sull&#39;esperienza dell&#39;utente in tre modi: prestazioni interattive, elaborazione delle risorse e velocità di download. Per migliorare le prestazioni, è importante misurare correttamente le prestazioni osservate e stabilire metriche target.
 
 **1. Ricerca e navigazione** interattive Gli utenti stanno cercando le risorse o sfogliando il Finder di DAM e lamentano tempi di risposta lenti o che i risultati della ricerca non vengono visualizzati immediatamente. Si tratta di un problema di prestazioni interattive.
 
@@ -32,7 +32,7 @@ Le prestazioni interattive sono misurate in termini di tempo di risposta della p
 
 **2. Elaborazione** delle risorse Un problema di elaborazione delle risorse è rappresentato dal momento in cui gli utenti caricano le risorse e restano in pochi minuti finché le risorse non vengono convertite e assimilate rapidamente in AEM DAM.
 
-Le prestazioni di elaborazione delle risorse vengono misurate in termini di tempo medio di completamento del processo del flusso di lavoro. Questo è il tempo necessario per richiamare il processo del flusso di lavoro di aggiornamento delle risorse al suo completamento, che può essere determinato dall’interfaccia utente dei rapporti sul flusso di lavoro. Le prestazioni di destinazione tipiche dipendono dalle dimensioni e dal tipo di risorse elaborate e dal numero di rappresentazioni. Esempi di prestazioni target possono essere:
+Le prestazioni di elaborazione delle risorse vengono misurate in termini di tempo medio di completamento del processo del flusso di lavoro. Questo è il tempo necessario per richiamare il processo del flusso di lavoro di aggiornamento delle risorse al suo completamento, che può essere determinato dall’interfaccia utente dei rapporti sul flusso di lavoro. Le prestazioni di destinazione tipiche dipendono dalle dimensioni e dal tipo di risorse elaborate e dal numero di rappresentazioni. Esempi di prestazioni target possono essere i seguenti:
 
 * meno di dieci secondi per le immagini di dimensioni inferiori a 1280x1280 pixel con rappresentazioni standard
 * inferiore a un minuto per le immagini di dimensioni inferiori a 100 MB che utilizzano rappresentazioni standard
@@ -46,7 +46,7 @@ Le prestazioni della potenza vengono misurate in termini di velocità di downloa
 
 Per poter stimare l’hardware necessario per elaborare le risorse, è necessario tenere conto dei seguenti aspetti:
 
-* Risoluzione delle immagini in pixel
+* La risoluzione delle immagini in pixel
 * L&#39;heap assegnato al processo di AEM
 
 La quantità di pixel contenuti nell’immagine determina il tempo di elaborazione. Più pixel significa che l’elaborazione richiede più tempo.
@@ -58,9 +58,9 @@ I processi DAM sono ben adatti per essere eseguiti in paralell per grandi quanti
 
 **5. Stima dei requisiti hardware per l&#39;esecuzione dell&#39;elaborazione delle risorse**
 
-L&#39;ampia elaborazione delle risorse digitali richiede risorse hardware ottimizzate, i fattori più importanti sono le dimensioni delle immagini e il volume di elaborazione delle immagini.
+L&#39;ampia elaborazione delle risorse digitali richiede risorse hardware ottimizzate, i fattori più importanti sono la dimensione delle immagini e il volume di elaborazione delle immagini.
 
-Allocate almeno 16 GB di heap e configurate il flusso di lavoro DAM Update Asset per utilizzare il pacchetto [](/help/assets/camera-raw.md) Camera Raw per l’assimilazione delle immagini in formato non elaborato.
+Allocate almeno 16 GB di heap e configurate il flusso di lavoro [!UICONTROL DAM Update Asset] per utilizzare il pacchetto [](/help/assets/camera-raw.md) Camera Raw per l&#39;assimilazione di immagini non elaborate.
 
 ## Informazioni sul sistema {#understanding-the-system}
 
@@ -72,13 +72,13 @@ La legenda seguente descrive le possibili aree di limite delle prestazioni con a
 
 **File system** temporaneo Un file system locale lento può causare problemi di prestazioni interattivi, soprattutto quando si tratta di ricerca, perché gli indici di ricerca sono memorizzati sul disco locale. Inoltre, se si utilizza il processo della riga di comando, può causare problemi di elaborazione delle risorse.
 
-**AEM DAM Finder** Problemi di prestazioni interattivi, spesso riscontrati nelle ricerche, sono causati da un elevato utilizzo della CPU dovuto a molti utenti simultanei o altri processi che utilizzano la CPU nella stessa istanza. Passare dalle macchine virtuali alle macchine dedicate e assicurarsi che nessun altro servizio venga eseguito sulla macchina può aiutare a migliorare le prestazioni. Se l’elevato carico della CPU è dovuto all’elaborazione delle risorse e a molti utenti simultanei, Day consiglia di aggiungere altri nodi del cluster.
+**AEM DAM Finder** Problemi di prestazioni interattivi, spesso riscontrati nelle ricerche, sono causati da un elevato utilizzo della CPU dovuto a molti utenti simultanei o ad altri processi che utilizzano la CPU nella stessa istanza. Passare dalle macchine virtuali alle macchine dedicate e assicurarsi che nessun altro servizio venga eseguito sulla macchina può aiutare a migliorare le prestazioni. Se l’elevato carico della CPU è dovuto all’elaborazione delle risorse e a molti utenti simultanei, Day consiglia di aggiungere altri nodi del cluster.
 
-**Flusso di lavoro** AEM DAM I processi del flusso di lavoro con esecuzione prolungata durante l’assimilazione delle risorse causano problemi di prestazioni nell’elaborazione delle risorse. A seconda del tipo di risorse elaborate, questo può indicare un utilizzo eccessivo della CPU. Day consiglia di ridurre il numero di altri processi in esecuzione sul sistema e di aumentare il numero di CPU disponibili aggiungendo nodi cluster.
+**Flusso di lavoro** AEM DAM I processi del flusso di lavoro con esecuzione prolungata durante l’assimilazione delle risorse causano problemi di prestazioni nell’elaborazione delle risorse. A seconda del tipo di risorse elaborate, questo può indicare un utilizzo eccessivo della CPU. Day consiglia di ridurre il numero di altri processi in esecuzione sul sistema e di aumentare il numero di CPU disponibili aggiungendo i nodi del cluster.
 
 **Connettività** NAS Una scarsa connettività di rete al NAS causa problemi di prestazioni interattive, perché l&#39;accesso ai nuovi nodi durante l&#39;elaborazione delle risorse è rallentato a causa della latenza della rete. Inoltre, la lentezza del throughput di rete influisce negativamente sul throughput, ma anche sulle prestazioni di elaborazione delle risorse, poiché il caricamento e il salvataggio delle rappresentazioni sono rallentati.
 
-I motivi per una latenza e un throughput errati in un NAS sono generalmente topologia di rete o sovrautilizzo del NAS da parte di altri servizi.
+I motivi per una latenza e un throughput errati in un NAS sono in genere topologia di rete o sovrautilizzo del NAS da parte di altri servizi.
 
 **I sistemi di storage collegati alla rete** I sistemi di storage collegati alla rete utilizzati in eccesso possono causare una serie di problemi:
 
@@ -103,7 +103,7 @@ Per ogni progetto DAM, accertatevi di stabilire un regime di test delle prestazi
 Finora nei progetti sono state utilizzate le seguenti modifiche delle prestazioni:
 
 * Generazione di rappresentazioni selettive: genera solo le rappresentazioni necessarie aggiungendo condizioni al flusso di lavoro di elaborazione delle risorse, in modo che vengano generate rappresentazioni più costose solo per determinate risorse.
-* Archivio dati condiviso tra le istanze: quando si utilizza poco spazio su disco, questo può ridurre notevolmente la quantità di spazio su disco necessaria a costi maggiori per la configurazione e perdere la pulizia automatica del datastore.
+* Memorizzazione dei dati condivisi tra le istanze: quando si utilizza poco spazio su disco, questo può ridurre notevolmente la quantità di spazio su disco necessaria a costi maggiori per la configurazione e perdere la pulizia automatica del datastore.
 
 ## Lettura {#further-reading}
 
