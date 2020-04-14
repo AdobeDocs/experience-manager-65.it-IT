@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -42,7 +42,7 @@ In questo flusso di lavoro:
 
 1. L&#39;autore visualizza l&#39;anteprima della lettera e la invia per la post-elaborazione. Ulteriori informazioni sulla [post-elaborazione](/help/forms/using/submit-letter-topostprocess.md).
 
-#### Utilizzo di modelli di lettera forniti con Gestione corrispondenza {#using-letter-templates-provided-with-correspondence-management}
+#### Utilizzo di modelli Lettera forniti con Gestione Corrispondenza {#using-letter-templates-provided-with-correspondence-management}
 
 Invece di creare un modello di layout da zero, potete scegliere di modificare e riutilizzare i modelli forniti da Gestione corrispondenza. È possibile utilizzare Designer per modificare rapidamente il branding e i campi dati e contenuto dei modelli in base alle esigenze aziendali. Per ulteriori informazioni sui modelli di gestione della corrispondenza, consultate Modelli [di lettere di](/help/forms/using/reference-cm-layout-templates.md)riferimento.
 
@@ -54,7 +54,7 @@ I frammenti di documento sono dei tipi seguenti:
 
 #### Testo {#text}
 
-Una risorsa di testo è una parte di contenuto costituita da uno o più paragrafi di testo. Un paragrafo può essere statico o dinamico. Un paragrafo dinamico contiene riferimenti a elementi di dati i cui valori vengono forniti in fase di esecuzione.
+Una risorsa di testo è una parte di contenuto costituita da uno o più paragrafi di testo. Un paragrafo può essere statico o dinamico. Un paragrafo dinamico contiene riferimenti a elementi di dati, i cui valori vengono forniti in fase di esecuzione.
 
 #### Elenco {#list}
 
@@ -62,11 +62,11 @@ Elenco è una serie di frammenti di documento, tra cui testo, elenchi (lo stesso
 
 #### Condizione {#condition}
 
- Le condizioni consentono di definire il contenuto da includere al momento della creazione della corrispondenza, in base ai dati forniti. La condizione è descritta in termini di variabili di controllo. Le variabili possono essere un elemento dizionario dati o un segnaposto. Quando aggiungete una condizione, potete scegliere di includere una risorsa in base al valore della variabile di controllo. Le condizioni hanno un singolo output basato su un&#39;espressione. La prima espressione è vera, in base alla variabile di condizione corrente. Il suo valore diventa l&#39;output della condizione.
+Le condizioni consentono di definire il contenuto da includere al momento della creazione della corrispondenza, in base ai dati forniti. La condizione è descritta in termini di variabili di controllo. Le variabili possono essere un elemento dizionario dati o un segnaposto. Quando aggiungete una condizione, potete scegliere di includere una risorsa in base al valore della variabile di controllo. Le condizioni hanno un singolo output basato su un&#39;espressione. La prima espressione è vera, in base alla variabile di condizione corrente. Il suo valore diventa l&#39;output della condizione.
 
 #### Layout fragment {#layout-fragment}
 
- Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi [caricati in Forms e Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi [caricati in Forms e Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Creazione di lettere {#letter-creation}
 
@@ -76,7 +76,7 @@ Esistono due modi per generare la corrispondenza inviata ai clienti: guidati dal
 
 I dipendenti orientati al cliente, ad esempio gli esperti di revisione dei sinistri o i collaboratori del caso, possono creare corrispondenza personalizzata. Utilizzando un&#39;interfaccia semplice e intuitiva per il riempimento delle lettere, gli utenti aziendali possono aggiungere testo facoltativo alla corrispondenza, personalizzare contenuti modificabili e visualizzare in anteprima la corrispondenza in tempo reale. Possono quindi inviare la corrispondenza personalizzata a un processo back-end.
 
-![Corrispondenza personalizzata basata sull&#39;utente](assets/02.png)
+![Corrispondenza personalizzata e guidata dall&#39;utente](assets/02.png)
 
 #### Sistema {#system-driven}
 
@@ -227,7 +227,7 @@ Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
 
 * [Pacchetto](compatibility-package.md)di compatibilità. Installate il pacchetto di compatibilità per visualizzare l&#39;opzione **Lettere** nella pagina **Moduli** .
 * La lettera XDP ([layout](/help/forms/using/document-fragments.md)).
-* Altri XDP (frammenti[di](/help/forms/using/document-fragments.md#main-pars-header-13)layout) che formano parti della lettera. I file XDP\Layout vengono creati in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* Altri XDP (frammenti[di](document-fragments.md#document-fragments)layout) che formano parti della lettera. I file XDP\Layout vengono creati in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
 * Il dizionario [](/help/forms/using/data-dictionary.md) dati pertinente (facoltativo).
 * I moduli [di](/help/forms/using/document-fragments.md) dati da utilizzare per la corrispondenza.
 * [Dati](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) di prova è il file XML contenente i dati di prova. I dati di test sono richiesti se si utilizza un dizionario dati.
@@ -248,15 +248,15 @@ Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
 
 1. Immettete le proprietà per Corrispondenza e toccate **Salva:**
 
-   * **** Titolo (facoltativo): Inserire il titolo della lettera. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi.
-   * **** Nome: Nome univoco della lettera. Non possono esistere due lettere con lo stesso nome. Nel campo Nome è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
-   * **** Descrizione (facoltativo): Descrivete la lettera per il vostro riferimento.
+   * **Titolo (facoltativo):** Inserire il titolo della lettera. Il titolo non deve essere univoco e può contenere caratteri speciali e caratteri non inglesi.
+   * **Nome:** Nome univoco della lettera. Non possono esistere due lettere con lo stesso nome. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
+   * **Descrizione (facoltativo):** Descrivete la lettera per il vostro riferimento.
    * **Dizionario dati (facoltativo)**: Il dizionario dati può essere associato alla corrispondenza. Le risorse inserite successivamente in questa corrispondenza devono avere lo stesso dizionario dati scelto per la corrispondenza oppure nessun dizionario dati.
-   * **** Tag (facoltativo): Selezionare i tag da applicare alla corrispondenza. Potete anche digitare un nome di tag nuovo/personalizzato e premere Invio per crearlo.
-   * **** Post-processo (facoltativo): Selezionare il processo di pubblicazione da applicare al modello di lettera. Esistono processi di pubblicazione out-of-box e quelli creati con AEM, ad esempio e-mail e stampa.
+   * **Tag (facoltativo):** Selezionare i tag da applicare alla corrispondenza. Potete anche digitare un nome di tag nuovo/personalizzato e premere Invio per crearlo.
+   * **Post-processo (facoltativo):** Selezionare il processo di pubblicazione da applicare al modello di lettera. Esistono processi di pubblicazione out-of-box e quelli creati con AEM, ad esempio e-mail e stampa.
    ![Proprietà corrispondenza](assets/createcorrespondenceproperties.png)
 
-1. Il sistema visualizza un messaggio: &quot;La lettera è stata creata correttamente.&quot; (nel messaggio di avviso) Toccate **Apri** per configurare i moduli dati e i frammenti di layout al loro interno. Oppure toccate **Fine** per tornare alla pagina precedente.
+1. Il sistema visualizza un messaggio: &quot;La lettera è stata creata con successo.&quot; (nel messaggio di avviso) Toccate **Apri** per configurare i moduli dati e i frammenti di layout al loro interno. Oppure toccate **Fine** per tornare alla pagina precedente.
 
    ![Messaggio di avviso: Lettera creata correttamente](assets/createcorrespondencecreated.png)
 
@@ -284,7 +284,7 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
    1. **Modificabile**: Quando questa opzione è selezionata, il contenuto può essere modificato nell’interfaccia utente Crea corrispondenza. Contrassegnare il contenuto come modificabile solo se l&#39;utente aziendale (ad esempio, un regolatore di richieste di indennizzo) lo richiede per modificarlo.
    1. **Obbligatorio**: Quando questa opzione è selezionata, il contenuto è richiesto nell&#39;interfaccia utente Crea corrispondenza.
    1. **Selezionato**: Quando questa opzione è selezionata, il contenuto viene selezionato per impostazione predefinita nell&#39;interfaccia utente Crea corrispondenza.
-   1. **Rientro**: Aumentare o diminuire il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa rientrare 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, vedere **[!UICONTROL Configurazioni]** di gestione della corrispondenza nel flusso di lavoro [](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3)Forms.
+   1. **Rientro**: Aumentare o diminuire il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa rientrare 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, vedere **[!UICONTROL Configurazioni]** di gestione della corrispondenza nel flusso di lavoro [di](submit-letter-topostprocess.md#formsworkflow)Forms.
    1. **Interruzione di pagina prima** di: Se si imposta l&#39;opzione Interrompi pagina prima su attivata, il contenuto di QUESTO modulo viene sempre visualizzato su una nuova pagina.
    1. **Interruzione di pagina dopo**: Se per un modulo specifico si imposta l&#39;opzione Interruzione pagina dopo, il contenuto del modulo NEXT viene sempre visualizzato su una nuova pagina.
    ![Moduli dati e frammenti di layout inseriti](assets/insertdmandlf2.png)
@@ -334,7 +334,7 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
 ### Impostazione degli allegati {#set-up-the-attachments}
 
 1. Selezionate **Aggiungi risorsa**.
-1. Nella schermata Seleziona risorsa, toccate le risorse da allegare con la lettera e toccate **Fine**. È necessario che le risorse vengano caricate prima in Risorse. È consigliabile allegare solo documenti PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, consultate [Caricamento di risorse](/help/assets/managing-assets-touch-ui.md).
+1. Nella schermata Seleziona risorsa, toccate le risorse da allegare con la lettera e toccate **Fine**. È necessario che le risorse vengano caricate per la prima volta in Risorse. È consigliabile allegare solo documenti PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, consultate [Caricamento di risorse](/help/assets/managing-assets-touch-ui.md).
 1. Per bloccare l&#39;ordine delle risorse nell&#39;elenco in modo che l&#39;Aggiustatore crediti non possa modificare l&#39;ordine, toccate **Blocca ordine**. Se non si seleziona questa opzione, l&#39;Aggiustatore crediti può modificare l&#39;ordine delle voci dell&#39;elenco.
 1. Per cambiare l’ordine delle risorse, trascinate una risorsa contenente l’icona di riordinamento per una risorsa ( ![libretto](assets/dragndrop.png)).
 1. Toccate **Modifica** davanti a un allegato e specificate un allegato come obbligatorio se non desiderate che l&#39;autore possa eliminarlo. Specificate un allegato come selezionato se lo desiderate preselezionare nell&#39;interfaccia CCR.
@@ -462,10 +462,10 @@ I seguenti valori nella tabella
 
 ## Creare una copia di un modello di lettera {#createcopylettertemplate}
 
-Potete utilizzare un modello di lettera esistente per creare rapidamente un modello di lettera con proprietà, contenuto e risorse ereditate simili, ad esempio frammenti di documento e dizionario dati. A tale scopo, copiare e incollare una lettera.
+Potete utilizzare un modello di lettera esistente per creare rapidamente un modello di lettera con proprietà, contenuto e risorse ereditate simili, ad esempio frammenti di documento e dizionario dati. A tal fine, copiate e incollate una lettera.
 
 1. Nella pagina Lettere, selezionare una o più lettere. L’interfaccia utente presenta l’icona Copia.
-1. Toccate Copia. Nell’interfaccia utente viene visualizzata l’icona Incolla. Potete anche scegliere di entrare in una cartella prima di incollare. Cartelle diverse possono contenere risorse con gli stessi nomi. Per ulteriori informazioni sulle cartelle, consultate [Cartelle e organizzazione delle risorse](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Tocca Copia. Nell’interfaccia utente viene visualizzata l’icona Incolla. Potete anche scegliere di entrare in una cartella prima di incollare. Cartelle diverse possono contenere risorse con gli stessi nomi. Per ulteriori informazioni sulle cartelle, consultate [Cartelle e organizzazione delle risorse](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Toccate Incolla. Viene visualizzata la finestra di dialogo Incolla. Se si copia e incolla le lettere nello stesso punto, il sistema assegna automaticamente nomi e titoli alle nuove copie di lettere, ma è possibile modificare i titoli e i nomi delle lettere.
 1. Se necessario, modificate il Titolo e il Nome con cui desiderate salvare la copia della lettera.
 1. Toccate Incolla. Viene creata la copia della lettera. Ora è possibile apportare le modifiche necessarie nella nuova lettera creata.
