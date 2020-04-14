@@ -3,7 +3,7 @@ title: Imaging Transcoding Library
 description: Scoprite come configurare e utilizzare la libreria Adobe Imaging Transcoding Library, una soluzione di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -16,7 +16,7 @@ La libreria Adobe Imaging Transcoding è una soluzione proprietaria di elaborazi
 * Transcodifica (conversione di formati supportati)
 * Ricampionamento delle immagini, utilizzando gli algoritmi PS e Intel IPP
 * Profondità di bit e conservazione del profilo colore
-* Compressione qualità JPEG
+* Compressione della qualità JPEG
 * Ridimensionamento delle immagini
 
 La libreria di transcodifica delle immagini fornisce supporto CMYK e supporto alfa completo, ad eccezione di CMYK -Alpha.
@@ -24,9 +24,9 @@ La libreria di transcodifica delle immagini fornisce supporto CMYK e supporto al
 Oltre a supportare un&#39;ampia gamma di formati di file e profili, la libreria Imaging Transcoding offre notevoli vantaggi rispetto ad altre soluzioni di terze parti in termini di prestazioni, scalabilità e qualità. Di seguito sono riportati alcuni dei vantaggi principali dell’utilizzo della libreria di transcodifica delle immagini:
 
 * **Scala con dimensioni file o risoluzione** crescenti: Il ridimensionamento viene ottenuto principalmente dalla capacità brevettata della libreria Imaging Transcoding Library di ridimensionare i file durante la decodifica. Questa capacità assicura che l&#39;utilizzo della memoria di runtime sia sempre ottimale e non sia una funzione quadratica di dimensioni file crescenti o megapixel di risoluzione. La libreria di transcodifica immagini può elaborare file di dimensioni maggiori e ad alta risoluzione (contenenti file megapixel superiori). Strumenti di terze parti, come ImageMagick, non sono in grado di gestire file di grandi dimensioni e arresti anomali durante l’elaborazione di tali file.
-* **algoritmi** di compressione e ridimensionamento della qualità di Photoshop: Coerenza con gli standard di settore in termini di qualità del campionamento al ribasso (uniforme, nitido e automatico bicubico) e qualità della compressione. Imaging Transcoding Library (Libreria transcodifica immagini) valuta ulteriormente il fattore di qualità dell&#39;immagine di input e utilizza in modo intelligente tabelle ottimali e impostazioni di qualità per l&#39;immagine di output. Questa capacità produce file di dimensioni ottimali senza compromettere la qualità visiva.
-* **** Alta velocità: Il tempo di risposta è inferiore e il throughput è sempre superiore a ImageMagick. Pertanto, la libreria di transcodifica immagini dovrebbe ridurre il tempo di attesa per gli utenti e il costo di hosting.
-* **** Scalabilità migliore con carico simultaneo: La libreria di transcodifica delle immagini funziona in modo ottimale in condizioni di carico simultaneo. Offre un throughput elevato con prestazioni CPU ottimali, utilizzo della memoria e tempi di risposta ridotti, riducendo i costi di hosting.
+* **algoritmi** di compressione e ridimensionamento della qualità di Photoshop: Coerenza con gli standard di settore in termini di qualità del campionamento in discesa (uniforme, nitido e automatico bicubico) e di qualità della compressione. Imaging Transcoding Library (Libreria transcodifica immagini) valuta ulteriormente il fattore di qualità dell&#39;immagine di input e utilizza in modo intelligente tabelle ottimali e impostazioni di qualità per l&#39;immagine di output. Questa capacità produce file di dimensioni ottimali senza compromettere la qualità visiva.
+* **Alta velocità:** Il tempo di risposta è inferiore e il throughput è sempre superiore a ImageMagick. Pertanto, la libreria di transcodifica immagini dovrebbe ridurre il tempo di attesa per gli utenti e il costo di hosting.
+* **Scalabilità migliore con carico simultaneo:** La libreria di transcodifica delle immagini funziona in modo ottimale in condizioni di carico simultaneo. Offre un throughput elevato con prestazioni CPU ottimali, utilizzo della memoria e tempi di risposta ridotti, riducendo così i costi di hosting.
 
 ## Supported platforms {#supported-platforms}
 
@@ -38,7 +38,7 @@ La libreria di transcodifica immagini è disponibile solo per le distribuzioni R
 
 ## Utilizzo {#usage}
 
-Gli argomenti della riga di comando per Imaging Transcoding Library possono includere:
+Gli argomenti della riga di comando per Imaging Transcoding Library possono includere quanto segue:
 
 ```shell
  -destMime PNG/JPEG: Mime type of output rendition
@@ -67,11 +67,11 @@ Potete configurare le seguenti opzioni per il `-resize` parametro:
 
 Per configurare l’elaborazione ITL, create un file di configurazione e aggiornate il flusso di lavoro per eseguirlo.
 
-### Crea file di configurazione per il bundle estratto {#create-conf-file}
+### Creare un file di configurazione per il bundle estratto {#create-conf-file}
 
 Per configurare la libreria, create un file .conf per indicare le librerie utilizzando la procedura seguente. Sono necessarie autorizzazioni di livello amministratore o principale.
 
-1. Scaricate il pacchetto [Libreria di transcodifica](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) immagini e installatelo utilizzando Gestione pacchetti. Il pacchetto è compatibile con AEM 6.5.
+1. Scaricate il pacchetto [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library (Libreria transcodifica immagini) e installatelo utilizzando Package Manager (Gestione pacchetti). Il pacchetto è compatibile con AEM 6.5.
 
 1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedete alla console Web e toccate **[!UICONTROL OSGi > Bundle]**. In alternativa, per aprire la console dei bundle, accedete all’ `https://[aem_server:[port]/system/console/bundles/` URL. Individua `com.day.cq.dam.cq-dam-switchengine` il bundle e il relativo ID.
 
@@ -98,20 +98,20 @@ Per configurare la libreria, create un file .conf per indicare le librerie utili
 
 1. Per assicurarsi che il valore del percorso sia impostato su `.`, utilizzare `echo $LD_LIBRARY_PATH` command. L&#39;output dovrebbe essere solo `.`. Se il valore non è impostato su `.`, riavviare la sessione.
 
-### Configurare il flusso di lavoro Aggiorna risorsa DAM {#configure-dam-asset-update-workflow}
+### Configurare il flusso di lavoro Aggiorna risorsa  DAM {#configure-dam-asset-update-workflow}
 
 Aggiornate il flusso di lavoro [!UICONTROL DAM Update Asset] per utilizzare la libreria per elaborare le immagini.
 
-1. Toccate o fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 
 1. Dalla pagina Modelli **[!UICONTROL di]** flusso di lavoro, aprite il modello di flusso di lavoro Aggiorna risorsa **** DAM in modalità di modifica.
 
 1. Aprite il passaggio del flusso di lavoro Miniature **** processo. Nella scheda **[!UICONTROL Miniature]** , aggiungere i tipi MIME per i quali si desidera saltare il processo di generazione delle miniature predefinito nell&#39;elenco **[!UICONTROL Skip Mime Types]** .
-Ad esempio, se desiderate creare miniature per un’immagine TIFF utilizzando la libreria di transcodifica delle immagini, specificate `image/tiff` nel campo **[!UICONTROL Skip Mime Types]** .
+Ad esempio, se desiderate creare le miniature per un’immagine TIFF utilizzando la libreria di transcodifica delle immagini, specificate `image/tiff` nel campo **[!UICONTROL Skip Mime Types]** .
 
 1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, aggiungere i tipi MIME per i quali si desidera ignorare il processo di generazione della rappresentazione Web predefinito in **[!UICONTROL Elenco]** disalta. Ad esempio, se hai saltato il tipo MIME `image/tiff` nel passaggio precedente, aggiungi `image/tiff` all&#39;elenco di salto.
 
-1. Aprite il passaggio Miniature **[!UICONTROL EPS (con ImageMagick)]** , quindi passate alla scheda **[!UICONTROL Argomenti]** . Nell&#39;elenco Tipi **** mime, aggiungete i tipi MIME che desiderate elaborare nella libreria Transcodifica immagini. Ad esempio, se hai saltato il tipo MIME `image/tiff` nel passaggio precedente, aggiungi `image/jpeg` all&#39;elenco **[!UICONTROL Tipi]** MIME.
+1. Aprite il passaggio Miniature **[!UICONTROL EPS (con ImageMagick)]** , quindi passate alla scheda **[!UICONTROL Argomenti]** . Nell&#39;elenco Tipi **** mime, aggiungete i tipi MIME che desiderate elaborare nella libreria Transcodifica immagini. Ad esempio, se hai saltato il tipo MIME `image/tiff` nel passaggio precedente, aggiungi `image/jpeg` all&#39;elenco **[!UICONTROL Tipi]** mime.
 
 1. Rimuovete gli eventuali comandi predefiniti.
 
