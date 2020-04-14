@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 25acffc6a0101be4ea6811b92c40bc76f554f5f0
+source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
 
 ---
 
@@ -147,7 +147,7 @@ Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle r
 
 ### Risorse per file multimediali dinamici {#dmassets}
 
-Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri seleziona Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
+Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
 
 ### Ricerca utilizzando valori specifici nei campi di metadati {#gqlsearch}
 
