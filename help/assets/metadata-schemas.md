@@ -3,7 +3,7 @@ title: Schemi metadati
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cbaefd5a377db5aa9f8ba35371fe2a9cb638fa1
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -16,24 +16,23 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
 1. Per visualizzare la pagina delle proprietà di una risorsa, toccate o fate clic sull’icona **[!UICONTROL Visualizza proprietà]** da Azioni rapide nella sezione della risorsa nella vista a schede.
 
-   ![chlimage_1-34](assets/chlimage_1-170.png)
+   ![Azioni rapide nella sezione delle risorse](assets/chlimage_1-170.png)
 
    In alternativa, seleziona la risorsa nell’interfaccia utente, quindi tocca o fai clic sull’icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
 
-   ![chlimage_1-35](assets/chlimage_1-171.png)
+   ![Icona Proprietà nella barra degli strumenti superiore](assets/chlimage_1-171.png)
 
 1. Modificate le varie proprietà di metadati nelle varie schede. Tuttavia, non potete modificare il tipo di risorsa nella pagina delle proprietà.
 
-   ![non potete modificare il tipo di risorsa nella scheda di base Proprietà risorsa](assets/asset-properties-basic-tab.png)
+   ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
 
    *Figura: Scheda di base sulle proprietà della risorsa*
-
 
    Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modificare i moduli](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) dello schema metadati. Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
 1. Per visualizzare un elenco di moduli/modelli, fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**.
 
-   ![chlimage_1-37](assets/chlimage_1-173.png)
+   ![Pagina che mostra l’elenco dei moduli dello schema metadati](assets/chlimage_1-173.png)
 
    AEM offre i seguenti modelli:
    * **predefinito**: Modulo schema metadati di base per le risorse.
@@ -66,7 +65,7 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
 1. Nella finestra di dialogo, immettere il titolo del modulo Schema, quindi fare clic su **[!UICONTROL Crea]** per completare il processo di creazione del modulo.
 
-   ![chlimage_1-38](assets/chlimage_1-174.png)
+   ![Specificare il titolo e creare il modulo Schema metadati](assets/chlimage_1-174.png)
 
 ## Modificare i moduli dello schema di metadati {#edit-metadata-schema-forms}
 
@@ -81,12 +80,11 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
 1. Nella pagina Moduli schema, seleziona la casella di controllo che precede il modulo, quindi fai clic sull’icona Modifica nella barra degli strumenti.
 
-   ![chlimage_1-39](assets/chlimage_1-175.png)
+   ![Icona Modifica sulla barra degli strumenti Moduli schema metadati](assets/chlimage_1-175.png)
 
 1. Nella pagina **[!UICONTROL Editor schema metadati]**, personalizza la pagina delle proprietà della risorsa trascinando uno o più componenti dall’elenco dei tipi di componenti della scheda **[!UICONTROL Genera modulo]** alla scheda **[!UICONTROL Base]**.
 
-   ![aggiunta di componenti da Crea modulo all&#39;editor dello schema di metadati per personalizzare le proprietà della risorsa](assets/metadata-schema-editor.png)
-
+   ![Editor schema metadati per personalizzare la pagina Proprietà risorsa](assets/metadata-schema-editor.png)
 
    *Figura: Scheda di base dell&#39;editor dello schema di metadati*
 
@@ -147,7 +145,7 @@ Per garantire che il componente venga visualizzato correttamente nel modulo dell
 
 **Elimina**: Fare clic su questa icona per eliminare un componente dal modulo schema.
 
-![chlimage_1-41](assets/chlimage_1-177.png)
+![Icona Elimina nel modulo Schema metadati](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
@@ -155,15 +153,15 @@ Per garantire che il componente venga visualizzato correttamente nel modulo dell
 
 Se selezioni l’opzione **[!UICONTROL Obbligatorio]**, puoi cercare le risorse per le quali mancano i metadati obbligatori. Dal pannello **[!UICONTROL Filtri]**, espandi il predicato **[!UICONTROL Convalida metadati]** e seleziona l’opzione **[!UICONTROL Non valido]**. Nei risultati della ricerca vengono visualizzate le risorse per le quali mancano i metadati obbligatori, che sono stati configurati dal modulo schema.
 
-![chlimage_1-42](assets/chlimage_1-178.png)
+![Opzione non valida selezionata nel predicato convalida metadati del pannello Filtri ](assets/chlimage_1-178.png)
 
 Se aggiungete il componente Metadati contestuali a qualsiasi scheda di un modulo dello schema, il componente viene visualizzato come un elenco nella pagina delle proprietà delle risorse a cui è applicato lo schema specifico. L’elenco include tutte le altre schede eccetto la scheda a cui è stato applicato il componente Metadati contestuali. Attualmente, questa funzione fornisce funzionalità di base per controllare la visualizzazione dei metadati in base al contesto.
 
-![chlimage_1-43](assets/chlimage_1-179.png)
+![Menu contestuali del componente Metadati che elenca le schede delle proprietà della risorsa](assets/chlimage_1-179.png)
 
 Per visualizzare una scheda qualsiasi nella pagina delle proprietà, oltre alla scheda in cui è applicato il componente Metadati contestuali, selezionare la scheda dall&#39;elenco. La scheda viene aggiunta alla pagina delle proprietà.
 
-![selezionare una scheda dall&#39;elenco di metadati contestuali da visualizzare sulla pagina delle proprietà](assets/contextual-metadata-asset-properties.png)
+![La scheda selezionata nell&#39;elenco Metadati contestuali viene visualizzata nella pagina delle proprietà della risorsa](assets/contextual-metadata-asset-properties.png)
 
 *Figura: Metadati contestuali nella pagina delle proprietà delle risorse*
 
@@ -173,15 +171,15 @@ Invece di specificare le proprietà delle opzioni nella scheda **[!UICONTROL Imp
 
 #### Aggiunta o eliminazione di una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
 
-L’editor dello schema consente di aggiungere o eliminare una scheda. Per impostazione predefinita, il modulo schema predefinito include le schede **[!UICONTROL Base]**, **[!UICONTROL Avanzate]**, **[!UICONTROL IPTC]** ed **[!UICONTROL Estensione IPTC]**.
+L’editor dello schema consente di aggiungere o eliminare una scheda. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
 
-![chlimage_1-45](assets/chlimage_1-181.png)
+![Schede predefinite nel modulo Schema metadati](assets/chlimage_1-181.png)
 
 Fare clic `+` per aggiungere una nuova scheda a un modulo schema. Per impostazione predefinita, la nuova scheda ha il nome `Unnamed-1`. Potete modificare il nome dalla scheda **[!UICONTROL Impostazioni]** .
 
 Fare clic `X` per eliminare una scheda.
 
-![chlimage_1-46](assets/chlimage_1-182.png)
+![Aggiunta o eliminazione di una scheda mediante l’Editor schema metadati](assets/chlimage_1-182.png)
 
 ## Eliminazione di moduli schema metadati {#delete-metadata-schema-forms}
 
@@ -189,7 +187,8 @@ AEM consente di eliminare solo i moduli schema personalizzati. Non consente di e
 
 Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona di eliminazione.
 
-![chlimage_1-47](assets/chlimage_1-183.png)
+![Icona Elimina per eliminare il modulo schema metadati personalizzato](assets/chlimage_1-183.png)
+
 <!--![chlimage_1-47](assets/chlimage_1-177.png) -->
 >[!NOTE]
 >
@@ -254,26 +253,26 @@ Se la cartella dispone di una sottocartella, le risorse all’interno della sott
 
 1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Selezionare la casella di controllo prima di un modulo, ad esempio il modulo di metadati predefinito, quindi fare clic o toccare l&#39;icona di copia e salvarlo come modulo personalizzato. Specificare un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
-   ![chlimage_1-184](assets/chlimage_1-184.png)
+   ![Icona Copia per copiare un modulo predefinito e salvarlo come modulo personalizzato nella pagina Moduli schema metadati](assets/chlimage_1-184.png)
 
 1. Nella pagina Moduli **[!UICONTROL schema]** metadati selezionare il `my_default` modulo, quindi fare clic sull&#39;icona **[!UICONTROL Modifica]** .
 
-   ![chlimage_1-49](assets/chlimage_1-185.png)
+   ![Icona Modifica per aprire l&#39;Editor schema metadati e modificare un modulo schema](assets/chlimage_1-185.png)
 
 1. Nella pagina Editor **[!UICONTROL schema]** metadati, aggiungere un campo di testo al modulo schema. Ad esempio, aggiungere un campo con l&#39;etichetta **[!UICONTROL Categoria]**.
 
-   ![aggiunta di un campo di testo all&#39;editor di moduli dello schema di metadati](assets/text-field-metadata-schema-editor.png)
+   ![Campo di testo aggiunto all&#39;Editor moduli schema metadati](assets/text-field-metadata-schema-editor.png)
 
    *Figura: Campo di testo aggiunto all&#39;editor dello schema di metadati*
 
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** .
 1. Toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
-   ![chlimage_1-51](assets/chlimage_1-187.png)
+   ![Icona Applica alle cartelle per applicare metadati personalizzati alle cartelle](assets/chlimage_1-187.png)
 
 1. Selezionare la cartella in cui applicare lo schema modificato, quindi fare clic o toccare **[!UICONTROL Applica]**.
 
-   ![chlimage_1-52](assets/chlimage_1-188.png)
+   ![Selezionare la cartella in cui applicare lo schema metadati](assets/chlimage_1-188.png)
 
 1. Se alla cartella è applicato un altro schema di metadati, viene visualizzato un messaggio di avviso che informa che lo schema di metadati esistente sta per essere sovrascritto. Fate clic su **Sovrascrivi**.
 1. Fate clic su **OK** per chiudere il messaggio di riuscita.
@@ -290,21 +289,21 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 1. Fai clic sul logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salvare il modulo di metadati predefinito come modulo personalizzato. Ad esempio, salvatelo con nome `my_default`.
 
-   ![chlimage_1-53](assets/chlimage_1-189.png)
+   ![Modulo di metadati predefinito salvato come modulo personalizzato](assets/chlimage_1-189.png)
 
 1. Modificare il modulo personalizzato. Aggiungere un campo obbligatorio. Ad esempio, aggiungere un campo **[!UICONTROL Categoria]** e rendere il campo obbligatorio.
 
-   ![aggiungere un campo al modulo di metadati e selezionare Obbligatorio nella scheda Regole per renderlo obbligatorio](assets/mandatory-field-metadata-schema-editor.png)
+   ![Aggiungere un campo obbligatorio al modulo di metadati selezionando Obbligatorio nella scheda Regole dell&#39;Editor moduli schema metadati](assets/mandatory-field-metadata-schema-editor.png)
 
    *Figura: Campo obbligatorio nell&#39;editor di moduli dello schema di metadati*
 
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** . Selezionate il modulo, quindi toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
-   ![chlimage_1-55](assets/chlimage_1-191.png)
+   ![Icona Applica alle cartelle per applicare i metadati personalizzati alla cartella](assets/chlimage_1-191.png)
 
 1. Individuate la cartella e caricate alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista Scheda della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 
-   ![chlimage_1-56](assets/chlimage_1-192.png)
+   ![Messaggio per metadati obbligatori mancanti nella vista scheda delle risorse durante il caricamento delle risorse nella cartella](assets/chlimage_1-192.png)
 
 1. (Facoltativo) Accesso `https://[server]:[port]/system/console/components/`. Configura e abilita `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` il componente disabilitato per impostazione predefinita. Impostate la frequenza con cui AEM verifica la validità dei metadati sulle risorse.
 
