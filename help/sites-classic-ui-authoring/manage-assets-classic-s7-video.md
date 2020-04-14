@@ -1,5 +1,5 @@
 ---
-title: 'Il video '
+title: Video
 seo-title: Video
 description: Assets permette di gestire in modo centralizzato le risorse video. Consente di caricare i video direttamente in Assets per la codifica automatica in Scene7 e di accedere ai video di Scene7 direttamente da Assets per la creazione e modifica delle pagine.
 seo-description: Assets permette di gestire in modo centralizzato le risorse video. Consente di caricare i video direttamente in Assets per la codifica automatica in Scene7 e di accedere ai video di Scene7 direttamente da Assets per la creazione e modifica delle pagine.
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,14 +26,14 @@ L’integrazione video Dynamic Media Classic estende la portata dei video ottimi
 
 ## Informazioni su FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Il processo di codifica video predefinito si basa sull’utilizzo dell’integrazione con i profili video basata su FFMPEG. Pertanto, il flusso di lavoro Aggiorna risorsa DAM preconfigurato contiene i due passaggi seguenti, basato su FFMPEG:
+Il processo di codifica video predefinito si basa sull’utilizzo dell’integrazione con i profili video basata su FFMPEG. Therefore, the out-of-the-box [!UICONTROL DAM Update Asset] workflow contains the following two ffmpeg-based workflow steps:
 
 * Miniature FFMPEG
 * Codifica FFMPEG
 
-Attenzione: l’attivazione e la configurazione dell’integrazione di Dynamic Media Classic non rimuove o disattiva automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro integrato di caricamento di DAM Update Asset. Se utilizzi già la codifica video basata su FFMPEG in AEM, è probabile che FFMPEG sia già installato negli ambienti di authoring. In questo caso, un nuovo video caricato con Risorse viene codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione Dynamic Media Classic.
+Be aware that enabling and configuring the Dynamic Media Classic integration does not automatically remove or deactivate these two workflow steps from the out-of-the-box [!UICONTROL DAM Update Asset] ingestion workflow. Se utilizzi già la codifica video basata su FFMPEG in AEM, è probabile che FFMPEG sia già installato negli ambienti di authoring. In questo caso, un nuovo video caricato con Risorse viene codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione Dynamic Media Classic.
 
-Se la codifica video basata su FFMPEG in AEM è configurata e FFMPEG è installato, Adobe consiglia di rimuovere i due flussi di lavoro FFMPEG dai flussi di lavoro Aggiorna risorsa DAM.
+If you have the FFMPEG-based video encoding in AEM configured and FFMPEG installed, Adobe recommends that you remove the two FFMPEG workflows from your [!UICONTROL DAM Update Asset] workflows.
 
 ### Formati supportati {#supported-formats}
 
@@ -92,7 +92,7 @@ Se non avete bisogno di un flusso di lavoro o di un controllo delle versioni per
 
 If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Dynamic Media Classic, navigate to the Dynamic Media Classic configuration in the cloud configuration and click **Update the viewer and encoding presets**.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 ### Caricare il video principale {#uploading-your-master-video}
 
@@ -149,7 +149,7 @@ Le diverse codifiche video vengono create in base ai predefiniti di codifica Dyn
 >Per la pubblicazione, i nuovi profili video e le relative modifiche devono essere attivati.
 
 1. In AEM, passa a **[!UICONTROL Strumenti]** e seleziona **[!UICONTROL Console di configurazione]**. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Create un nuovo profilo video Dynamic Media Classic. **[!UICONTROL Nel]** Nuovo... selezionate **[!UICONTROL Crea pagina]** , quindi selezionate il modello Profilo video dinamico classico. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
+1. Create un nuovo profilo video Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
