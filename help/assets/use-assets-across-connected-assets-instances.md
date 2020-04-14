@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per la condivisione di risorse DAM nel fl
 description: Utilizzare le risorse disponibili in un’implementazione remota di Adobe Experience Manager Assets durante la creazione di pagine web in un’altra implementazione di Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
 
 ---
 
@@ -95,7 +95,7 @@ Per configurare le risorse collegate e la connettività alla versione locale di 
 
    >[!NOTE]
    >
-   >Quando gli autori recuperano una risorsa, vengono recuperati tutti i rendering disponibili nell’implementazione AEM remota. Se desideri creare più rendering per una risorsa recuperata, ignora questo passaggio di configurazione. Viene attivato il flusso di lavoro Aggiorna risorsa DAM e vengono creati ulteriori rendering. I rendering sono disponibili solo nell’implementazione Sites locale e non nell’implementazione remota di DAM.
+   >Quando gli autori recuperano una risorsa, vengono recuperati tutti i rendering disponibili nell’implementazione AEM remota. Se desideri creare più rendering per una risorsa recuperata, ignora questo passaggio di configurazione. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Aggiungi l’istanza AEM Sites come una delle **[!UICONTROL origini consentite]** nella configurazione CORS di AEM Assets remota.
 
@@ -111,7 +111,7 @@ Gli autori del sito web utilizzano Content Finder per connettersi all’istanza 
 
 Gli autori possono utilizzare le risorse disponibili in una singola pagina web, sia nelle istanze DAM locali che in quelle DAM remote. Utilizza Content Finder per passare dalla ricerca nel DAM locale alla ricerca nel DAM remoto.
 
-Vengono recuperati solo i tag delle risorse remote con un tag corrispondente esatto, con la stessa gerarchia di tassonomia, disponibile nell’istanza Sites locale. Tutti gli altri tag vengono eliminati. Gli autori possono cercare risorse remote utilizzando tutti i tag presenti nell’implementazione AEM remota, poiché AEM offre funzionalità di ricerca testuale.
+Vengono recuperati solo i tag delle risorse remote con un tag corrispondente esatto insieme alla stessa gerarchia tassonomia, disponibile nell’istanza Siti locali. Tutti gli altri tag vengono eliminati. Gli autori possono cercare risorse remote utilizzando tutti i tag presenti nell’implementazione AEM remota, poiché AEM offre funzionalità di ricerca testuale.
 
 ### Procedura dettagliata per l’utilizzo {#walk-through-of-usage}
 
