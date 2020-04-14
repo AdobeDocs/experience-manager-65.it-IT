@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
+source-git-commit: 28354bd9785fa83939f9e3b051aac195d7706633
 
 ---
 
@@ -73,7 +73,7 @@ Dopo aver scaricato AEM, per istruzioni su come impostare un’istanza di creazi
 
 Per istruzioni dettagliate, vedete
 
-* [Note sulla versione di AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)
+* [Note sulla versione di AEM 6.5 Service Pack](https://helpx.adobe.com/it/experience-manager/6-5/release-notes/sp-release-notes.html)
 
 **Se non riesci a trovare il pacchetto AEM o il Service Pack più recente, contatta il supporto** .
 
@@ -204,7 +204,7 @@ Assicurarsi di aver eseguito i seguenti passaggi:
 
 >[!CAUTION]
 >
->Create una sola configurazione IMS valida. Non creare più configurazioni IMS.
+>Create una sola configurazione IMS valida.
 >
 > Verificate che la configurazione sia sana. Nel caso in cui la configurazione non sia sana, eliminarla e creare una nuova configurazione sana.
 
@@ -290,7 +290,7 @@ Brand Portal è stato configurato correttamente con l’istanza di creazione di 
 * [Pubblicare risorse da Risorse AEM a Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Pubblicare cartelle da Risorse AEM a Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Pubblicare raccolte da Risorse AEM a Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configurare l’origine](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) delle risorse per consentire agli utenti del Brand Portal di contribuire e pubblicare le risorse in Risorse AEM.
+* [Configurare l’origine](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) delle risorse per consentire agli utenti del Brand Portal di contribuire e pubblicare le risorse in Risorse AEM.
 
 ## Aggiornamento della configurazione {#upgrade-integration-65}
 
