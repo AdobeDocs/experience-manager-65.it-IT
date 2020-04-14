@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -306,7 +306,7 @@ Per definire una regola basata su una funzione personalizzata, selezionare Outpu
 
 ![Funzioni personalizzate](assets/custom_functions_set_options_new.png)
 
-Per creare una funzione personalizzata, vedere Funzioni [personalizzate nell&#39;editor](../../forms/using/rule-editor.md#main-pars-header-296220653)delle regole.
+Per creare una funzione personalizzata, vedere Funzioni [personalizzate nell&#39;editor](#custom-functions)delle regole.
 
 Per definire una regola basata su un modello dati del modulo:
 
@@ -349,7 +349,7 @@ La scheda Oggetti modulo mostra una visualizzazione gerarchica di tutti gli ogge
 
 Gli oggetti modulo a cui sono applicate una o più regole valide sono contrassegnati con un punto verde. Se una delle regole applicate a un oggetto modulo non è valida, l&#39;oggetto modulo è contrassegnato da un punto giallo.
 
-La scheda Funzioni include un set di funzioni integrate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarle nelle istruzioni di azione e condizione durante la scrittura delle regole. È tuttavia possibile creare anche funzioni [](../../forms/using/rule-editor.md#custom-functions) personalizzate.
+La scheda Funzioni include un set di funzioni integrate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarle nelle istruzioni di azione e condizione durante la scrittura delle regole. È tuttavia possibile creare anche funzioni [](#custom-functions) personalizzate.
 
 ![Scheda Funzioni](assets/functions.png)
 
@@ -752,7 +752,7 @@ Se l&#39;utente indica che ha soggiornato presso il suo attuale indirizzo di res
 
 Nelle versioni di AEM Forms precedenti al feature pack 1 di AEM 6.1 Forms, gli autori e gli sviluppatori di moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamenti dinamici ai moduli adattivi. La scheda Script viene ora sostituita dall&#39;editor di regole.
 
-Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell&#39;editor delle regole. Anche se non è possibile visualizzarli o modificarli nell&#39;editor visivo, se si fa parte del gruppo di utenti che si occupano di moduli è possibile modificare gli script nell&#39;editor di codice.
+Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell&#39;editor delle regole. Anche se non è possibile visualizzarli o modificarli nell&#39;editor visivo, se si fa parte del gruppo di utenti di moduli è possibile modificare gli script nell&#39;editor di codice.
 
 ## Regole di esempio {#example}
 
