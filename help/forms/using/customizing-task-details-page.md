@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -84,4 +84,4 @@ Per personalizzare la pagina dei dettagli dell’attività:
 >
 >Per personalizzare la pagina dei dettagli dell&#39;attività con le attività create nella scheda **Avvia processo** dell&#39;area di lavoro Moduli AEM, aggiungere le nuove informazioni a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Per aggiungere nuovi stili per le informazioni aggiunte nella pagina dei dettagli, modificate il file CSS utilizzando la sezione delle modifiche *all&#39;interfaccia* Utente in [Workspace Customization](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3).
+>Per aggiungere nuovi stili per le informazioni aggiunte nella pagina dei dettagli, modificate il file CSS utilizzando la sezione delle modifiche *all&#39;interfaccia* Utente in [Workspace Customization](changing-locale-user-interface.md).
