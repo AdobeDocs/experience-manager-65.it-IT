@@ -1,5 +1,5 @@
 ---
-title: 'Il video '
+title: Video
 description: Scopri le risorse AEM per la gestione centralizzata delle risorse video, dove puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Risorse AEM. L’integrazione video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
@@ -8,12 +8,12 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
 
-# Il video {#video}
+# Video {#video}
 
 Risorse offre una gestione centralizzata delle risorse video in cui è possibile caricare i video direttamente su Risorse per la codifica automatica in Dynamic Media Classic (Scene7) e accedere ai video Dynamic Media Classic direttamente da Risorse per l’authoring delle pagine.
 
@@ -97,7 +97,7 @@ Se devi aggiornare il visualizzatore e i predefiniti di codifica video in AEM, p
 ## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
 1. Individua la cartella di destinazione CQ DAM in cui hai impostato la configurazione cloud con i profili di codifica di Scene7.
-1. Fai su **[!UICONTROL Carica]** per caricare il video principale. Video uploading and encoding is complete after the DAM Update Asset workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Fai su **[!UICONTROL Carica]** per caricare il video principale. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ Le varie codifiche video vengono create in base ai predefiniti di codifica S7 se
 
 1. In AEM, toccate **[!UICONTROL Tools > Configuration Console**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Crea un nuovo profilo video S7. **[!UICONTROL Nel]** Nuovo... scegliete **[!UICONTROL Crea pagina]** , quindi selezionate il modello Profilo video di Scene7. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
+1. Crea un nuovo profilo video S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
