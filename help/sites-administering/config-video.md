@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -45,7 +45,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 * **In Mac OS X:**
 
    1. Installare Xcode ([https://developer.apple.com/technologies/tools/xcode.html](https://developer.apple.com/technologies/tools/xcode.html))
-   1. Installare XQuartz/X11.
+   1. Installate XQuartz/X11.
    1. Installare MacPorts ([https://www.macports.org/](https://www.macports.org/))
    1. Nella console eseguire il comando seguente e seguire le istruzioni:
 
@@ -88,5 +88,5 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->I modelli di flusso di lavoro OOTB non vengono conservati quando si aggiorna l’istanza AEM. Adobe consiglia di copiare i modelli di flussi di lavoro OOTB prima di modificarli. Ad esempio, copiate il modello OOTB DAM Update Asset prima di modificare il passaggio di transcodifica FFmpeg nel modello DAM Update Asset per scegliere i nomi dei profili video esistenti prima dell’aggiornamento. Quindi, potete sovrapporre il `/apps` nodo per consentire ad AEM di recuperare le modifiche personalizzate al modello OOTB.
+>I modelli di flusso di lavoro OOTB non vengono conservati quando si aggiorna l’istanza di AEM. Adobe consiglia di copiare i modelli di flussi di lavoro OOTB prima di modificarli. Ad esempio, copiate il modello OOTB [!UICONTROL DAM Update Asset] prima di modificare il passaggio di transcodifica FFmpeg nel modello [!UICONTROL DAM Update Asset] per scegliere i nomi dei profili video esistenti prima dell’aggiornamento. Quindi, potete sovrapporre il `/apps` nodo per consentire ad AEM di recuperare le modifiche personalizzate al modello OOTB.
 
