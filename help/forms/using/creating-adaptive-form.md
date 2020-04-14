@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -145,7 +145,7 @@ Inoltre, potete usare l’editor modelli per creare modelli personalizzati. Per 
 
 >[!NOTE]
 >
->Quando si apre un modulo adattivo creato utilizzando il modello avanzato per la modifica, viene visualizzato un messaggio di errore. Nel modello avanzato è presente un componente Passaggio firma e per impostazione predefinita è abilitato Adobe Sign. Crea e seleziona una configurazione [cloud](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configura un firmatario](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) per la risoluzione dell’errore.
+>Quando si apre un modulo adattivo creato utilizzando il modello avanzato per la modifica, viene visualizzato un messaggio di errore. Nel modello avanzato è presente un componente Passaggio firma e per impostazione predefinita è abilitato Adobe Sign. Crea e seleziona una configurazione [cloud](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configura un firmatario](working-with-adobe-sign.md#addsignerstoanadaptiveform) per la risoluzione dell’errore.
 
 ## Modifica delle proprietà del modello di modulo di un modulo adattivo {#edit-form-model}
 
