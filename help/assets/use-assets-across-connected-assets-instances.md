@@ -3,7 +3,7 @@ title: Utilizzare le risorse collegate per la condivisione di risorse DAM nel fl
 description: Utilizzare le risorse disponibili in un’implementazione remota di Adobe Experience Manager Assets durante la creazione di pagine web in un’altra implementazione di Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -37,7 +37,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 Gli autori possono cercare in Content Finder le immagini e i tipi di documenti indicati di seguito, quindi utilizzare nell’Editor pagina le risorse che hanno cercato. È possibile aggiungere i documenti al componente `Download`, e le immagini al componente `Image`. Gli autori possono inoltre aggiungere le risorse remote a qualsiasi componente AEM personalizzato che estenda i componenti predefiniti `Download` o `Image`. L&#39;elenco dei formati supportati è:
 
-* **Formati** immagine: I formati immagine supportati dal componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Immagine sono supportati da Risorse collegate. Le immagini Dynamic Media non sono supportate.
+* **Formati** immagine: I formati immagine supportati dal componente [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html) Immagine sono supportati da Risorse collegate. Le immagini Dynamic Media non sono supportate.
 * **Formati di documenti**: vedi [Formati di documenti supportati da Risorse collegate](assets-formats.md#supported-document-formats).
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
@@ -45,7 +45,7 @@ Gli autori possono cercare in Content Finder le immagini e i tipi di documenti i
 Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell’utilizzo della funzionalità e i relativi gruppi di utenti. L’ambito locale viene utilizzato per il caso d’uso in cui una pagina web viene creata da un autore. L’ambito remoto viene utilizzato per l’implementazione DAM in cui sono ospitate le risorse necessarie. Le risorse remote vengono recuperate dall’autore di Sites.
 
 | Ruolo | Ambito | Gruppo di utenti | Nome utente nella procedura dettagliata | Requisito |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|
 | Amministratore AEM Sites | Locale | Amministratore AEM | `admin` | Configurare AEM, configurare l’integrazione con l’implementazione remota di Assets. |
 | Utente DAM | Locale | Autore | `ksaner` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
 | Autore di AEM Sites | Locale | Autore (con accesso di sola lettura in DAM remoto e accesso di authoring in Sites locale) | `ksaner` | Gli utenti finali sono autori di Sites che utilizzano questa integrazione per velocizzare i contenuti. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando Content Finder e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
@@ -73,11 +73,9 @@ Per configurare le risorse collegate e la connettività alla versione locale di 
    1. Posizione di AEM Assets: `https://[assets_servername_ams]:[port]`.
    1. Credenziali di un distributore DAM (utente tecnico).
    1. Nel campo **[!UICONTROL Punto di montaggio]** immetti il percorso AEM locale da cui AEM recupera le risorse. Ad esempio, la cartella `remoteassets`.
-
    1. Regola i valori di **[!UICONTROL Soglia ottimizzazione trasferimento binario originale]** in base alla rete. Il rendering di una risorsa con dimensioni superiori alla soglia viene trasferito in modo asincrono.
    1. Seleziona **[!UICONTROL Archivio dati condiviso con risorse collegate]** se per memorizzare le risorse utilizzi un archivio dati in comune tra le due implementazioni di AEM. In questo caso, il limite di soglia non ha importanza in quanto i dati binari effettivi delle risorse risiedono nell’archivio dati e non vengono trasferiti.
-   ![Configurazione tipica per Risorse collegate](assets/connected-assets-typical-config.png)
-
+      ![Configurazione tipica per Risorse collegate](assets/connected-assets-typical-config.png)
    *Figura: una configurazione tipica per Risorse collegate*
 
 1. Poiché le risorse sono già state elaborate e i rendering vengono recuperati, disattiva i moduli di avvio dei flussi di lavoro. Regola le configurazioni del modulo di avvio nell’implementazione locale (AEM Sites) per escludere la cartella `connectedassets` da cui vengono recuperate le risorse remote.
@@ -153,7 +151,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
 Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa locale, ad eccezione del fatto che i metadati associati non possono essere modificati.
 
-## Limitazioni   {#limitations}
+## Limitazioni  {#limitations}
 
 **Autorizzazioni e gestione delle risorse**
 
