@@ -4,7 +4,7 @@ description: Suggerimenti e indicazioni sulla configurazione di AEM, modifiche a
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -15,11 +15,11 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 Una configurazione di Risorse Adobe Experience Manager (AEM) contiene diversi componenti hardware, software e di rete. A seconda dello scenario di distribuzione, potrebbe essere necessario apportare modifiche specifiche alla configurazione di hardware, software e componenti di rete per rimuovere i colli di bottiglia delle prestazioni.
 
-Inoltre, l’identificazione e il rispetto di alcune linee guida per l’ottimizzazione hardware e software consente di creare solide basi per l’implementazione di Risorse AEM al fine di soddisfare le aspettative in termini di prestazioni, scalabilità e affidabilità.
+Inoltre, l’identificazione e il rispetto di alcune linee guida per l’ottimizzazione hardware e software consente di creare solide basi per l’implementazione di Risorse AEM, al fine di soddisfare le aspettative in termini di prestazioni, scalabilità e affidabilità.
 
 Le scarse prestazioni in Risorse AEM possono influire sull’esperienza degli utenti in relazione alle prestazioni interattive, all’elaborazione delle risorse, alla velocità di download e ad altre aree.
 
-In realtà, l&#39;ottimizzazione delle prestazioni è un&#39;attività fondamentale che esegui prima di stabilire metriche di destinazione per qualsiasi progetto.
+In realtà, l&#39;ottimizzazione delle prestazioni è un&#39;attività fondamentale che esegui prima di stabilire le metriche di destinazione per qualsiasi progetto.
 
 Di seguito sono riportate alcune aree di interesse principali intorno alle quali è possibile individuare e risolvere problemi di prestazioni prima che abbiano un impatto sugli utenti.
 
@@ -115,8 +115,8 @@ Adobe consiglia di abilitare HTTPS perché molte aziende dispongono di firewall 
 
 In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantità di larghezza di banda disponibile e dal carico sull’istanza di AEM. Le comuni opzioni di configurazione, inclusi firewall o proxy, possono migliorare le prestazioni della rete. Ecco alcuni punti chiave da tenere a mente:
 
-* A seconda del tipo di istanza (piccolo, moderato, grande), assicurati di disporre di una larghezza di banda di rete sufficiente per l’istanza di AEM. Un’adeguata allocazione della larghezza di banda è particolarmente importante se AEM è ospitato su AWS.
-* Se l’istanza di AEM è ospitata su AWS, è possibile trarre vantaggio da un criterio di ridimensionamento versatile. Aggiornate l&#39;istanza se gli utenti prevedono un carico elevato. Sgrandisci per un carico medio/basso.
+* A seconda del tipo di istanza (piccolo, moderato, grande), accertati di disporre di una larghezza di banda di rete sufficiente per l’istanza di AEM. Un’adeguata allocazione della larghezza di banda è particolarmente importante se AEM è ospitato su AWS.
+* Se l’istanza di AEM è ospitata su AWS, è possibile trarre vantaggio da un criterio di ridimensionamento versatile. Aggiornate l&#39;istanza se gli utenti prevedono un carico elevato. Sgrandisci per un carico moderato o basso.
 * HTTPS: La maggior parte degli utenti dispone di firewall che troncano il traffico HTTP, il che può avere un impatto negativo sul caricamento di file o persino di file danneggiati durante l’operazione di caricamento.
 * Caricamenti di file di grandi dimensioni: Verificate che gli utenti dispongano di connessioni cablate alla rete (le connessioni WiFi si saturano rapidamente).
 
@@ -124,22 +124,22 @@ In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantit�
 
 ### Flussi di lavoro transitori {#transient-workflows}
 
-Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa DAM su Temporaneo. L&#39;impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro perché, in questo caso, i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
+Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa  DAM su Temporaneo. Questa impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro, perché in questo caso i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
 
 >[!NOTE]
 >
->Per impostazione predefinita, il flusso di lavoro Aggiorna risorsa DAM è impostato su Temporaneo in AEM 6.3. In questo caso, potete saltare la seguente procedura.
+>Per impostazione predefinita, in AEM 6.3 il flusso di lavoro Aggiorna risorsa  DAM è impostato su Temporaneo. In questo caso, potete saltare la seguente procedura.
 
 1. Passa a `/miscadmin` nell’istanza di AEM in `https://[aem_server]:[port]/miscadmin`.
 1. Espandete **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Modelli]** > **[!UICONTROL DAM]**.
 1. Apri risorsa **[!UICONTROL di aggiornamento]** DAM. Dal pannello degli strumenti mobile, passate alla scheda **[!UICONTROL Pagina]** e fate clic su Proprietà **** pagina.
-1. Selezionate Flusso di lavoro **** transitorio e fate clic su **[!UICONTROL OK]**.
+1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >Alcune funzioni non supportano flussi di lavoro transitori. Se la distribuzione di AEM Assets richiede queste funzioni, non configurare flussi di lavoro transitori.
 
-Nei casi in cui non è possibile utilizzare flussi di lavoro transitori, esegui regolarmente la rimozione del flusso di lavoro per eliminare i flussi di lavoro archiviati di DAM Update Asset per garantire che le prestazioni del sistema non si compromettano.
+Nei casi in cui non è possibile utilizzare flussi di lavoro transitori, esegui regolarmente la rimozione del flusso di lavoro per eliminare i flussi di lavoro archiviati di Risorse [!UICONTROL aggiornate] DAM per garantire che le prestazioni del sistema non subiscano rallentamenti.
 
 In genere, i flussi di lavoro di eliminazione vengono eseguiti settimanalmente. Tuttavia, negli scenari che richiedono risorse, ad esempio durante l’assimilazione di risorse su larga scala, potete eseguirle con maggiore frequenza.
 
@@ -151,25 +151,25 @@ Ad esempio, dopo aver eseguito numerosi flussi di lavoro non transitori (che cre
 
 ### Numero massimo di processi paralleli {#maximum-parallel-jobs}
 
-Per impostazione predefinita, AEM esegue un numero massimo di processi paralleli pari al numero di processori presenti sul server. Il problema di questa impostazione è che durante i periodi di carico eccessivo, tutti i processori sono occupati da flussi di lavoro Risorse aggiornamento DAM, rallentando la reattività dell’interfaccia utente e impedendo ad AEM di eseguire altri processi che salvaguardano le prestazioni e la stabilità del server. Come procedura corretta, impostare questo valore su metà dei processori disponibili sul server eseguendo la procedura seguente:
+Per impostazione predefinita, AEM esegue un numero massimo di processi paralleli pari al numero di processori presenti sul server. Il problema di questa impostazione è che durante i periodi di carico eccessivo, tutti i processori sono occupati da flussi di lavoro Risorse [!UICONTROL aggiornamento] DAM, rallentando la reattività dell&#39;interfaccia utente e impedendo ad AEM di eseguire altri processi che salvaguardano le prestazioni e la stabilità del server. Come procedura corretta, impostare questo valore su metà dei processori disponibili sul server eseguendo la procedura seguente:
 
 1. In AEM Author, andate a `https://[aem_server]:[port]/system/console/slingevent`.
 1. Fate clic su **[!UICONTROL Modifica]** in ogni coda di workflow rilevante per l’implementazione, ad esempio **[!UICONTROL Granite Transient Workflow Queue]**.
-1. Aggiornate il valore **[!UICONTROL Massimo processi]** paralleli e fate clic su **[!UICONTROL Salva]**.
+1. Aggiornate il valore di **[!UICONTROL Massimo processi]** paralleli e fate clic su **[!UICONTROL Salva]**.
 
 L&#39;impostazione di una coda a metà dei processori disponibili è una soluzione praticabile con cui iniziare. Tuttavia, potrebbe essere necessario aumentare o diminuire questo numero per ottenere il massimo throughput e ottimizzarlo in base all&#39;ambiente. Sono presenti code separate per flussi di lavoro transitori e non transitori, nonché per altri processi, come i flussi di lavoro esterni. Se diverse code impostate al 50% dei processori sono attivi contemporaneamente, il sistema può sovraccaricare rapidamente. Le code che vengono utilizzate in modo molto diffuso variano notevolmente tra le implementazioni degli utenti. Di conseguenza, potrebbe essere necessario configurarli con attenzione per la massima efficienza senza compromettere la stabilità del server.
 
 ### Configurazione risorsa aggiornamento DAM {#dam-update-asset-configuration}
 
-Il flusso di lavoro Aggiorna risorsa DAM contiene una suite completa di passaggi configurati per attività quali generazione PTIFF di Scene7 e integrazione con InDesign Server. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro Aggiorna risorsa DAM e di rimuovere eventuali passaggi superflui. In questo caso, aggiornate gli avviatori per DAM Update Asset in modo che puntino al nuovo modello.
+Il flusso di lavoro [!UICONTROL DAM Update Asset] contiene una suite completa di passaggi configurati per attività quali generazione PTIFF di Scene7 e integrazione con InDesign Server. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro [!UICONTROL DAM Update Asset] e di rimuovere eventuali passaggi superflui. In questo caso, aggiornate gli avviatori per [!UICONTROL DAM Update Asset] in modo che puntino al nuovo modello.
 
-L&#39;esecuzione intensiva del flusso di lavoro DAM Update Asset (Aggiorna risorsa DAM) può aumentare notevolmente la dimensione del datatastore del file. I risultati di un esperimento eseguito da Adobe hanno dimostrato che la dimensione del datastore può aumentare di circa 400 GB se vengono eseguiti circa 5500 flussi di lavoro entro 8 ore.
+L&#39;esecuzione intensiva del flusso di lavoro [!UICONTROL DAM Update Asset] (Aggiorna risorsa) può aumentare notevolmente le dimensioni del datatastore dei file. I risultati di un esperimento eseguito da Adobe hanno dimostrato che la dimensione del datastore può aumentare di circa 400 GB se vengono eseguiti circa 5500 flussi di lavoro entro 8 ore.
 
 Si tratta di un aumento temporaneo e il datastore viene ripristinato alle dimensioni originali dopo l&#39;esecuzione dell&#39;attività di raccolta dei rifiuti del datastore.
 
 In genere, l&#39;attività di raccolta rifiuti del datastore viene eseguita settimanalmente insieme ad altre attività di manutenzione pianificate.
 
-Se disponete di uno spazio su disco limitato ed eseguite i flussi di lavoro DAM Update Asset in modo intensivo, prendete in considerazione la pianificazione dell&#39;attività di raccolta dei rifiuti con maggiore frequenza.
+Se disponete di uno spazio su disco limitato ed eseguite i flussi di lavoro [!UICONTROL DAM Update Asset] in modo intensivo, prendete in considerazione la pianificazione dell&#39;attività di raccolta dei rifiuti con maggiore frequenza.
 
 #### Generazione di rappresentazioni in fase di esecuzione {#runtime-rendition-generation}
 
@@ -181,7 +181,7 @@ Un approccio alternativo consiste nell’usare la tecnologia Scene7 per distribu
 
 #### ImageMagick {#imagemagick}
 
-Se personalizzate il flusso di lavoro DAM Update Asset per generare rappresentazioni utilizzando ImageMagick, Adobe consiglia di modificare il `policy.xml` file in corrispondenza di `/etc/ImageMagick/`. Per impostazione predefinita, ImageMagick utilizza l’intero spazio disponibile sul volume del sistema operativo e la memoria disponibile. Apportate le seguenti modifiche alla configurazione all&#39;interno della `policymap` sezione `policy.xml` di per limitare tali risorse.
+Se personalizzate il flusso di lavoro Aggiorna risorsa  DAM per generare rappresentazioni utilizzando ImageMagick, Adobe consiglia di modificare il `policy.xml` file in `/etc/ImageMagick/`. Per impostazione predefinita, ImageMagick utilizza l’intero spazio disponibile sul volume del sistema operativo e la memoria disponibile. Apportate le seguenti modifiche alla configurazione all&#39;interno della `policymap` sezione `policy.xml` di per limitare tali risorse.
 
 ```xml
 <policymap>
@@ -220,7 +220,7 @@ La funzione di writeback XMP aggiorna la risorsa originale ogni volta che i meta
 
 * La risorsa stessa viene modificata
 * Viene creata una versione della risorsa
-* Risorsa aggiornamento DAM viene eseguita sulla risorsa
+* [!UICONTROL Risorsa] aggiornamento DAM eseguita sulla risorsa
 
 I risultati elencati richiedono notevoli risorse. Adobe consiglia pertanto di [disattivare la funzione di Write](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se non è necessaria.
 
@@ -305,7 +305,7 @@ Quando create query che generano set di risultati di grandi dimensioni, utilizza
 
 Esistono due importanti problemi noti relativi ai file di grandi dimensioni in AEM. Quando i file raggiungono dimensioni superiori a 2 GB, la sincronizzazione in standby a freddo può trovarsi in una situazione di memoria insufficiente. In alcuni casi, impedisce l&#39;esecuzione della sincronizzazione in standby. In altri casi, causa l&#39;arresto anomalo dell&#39;istanza principale. Questo scenario si applica a qualsiasi file in AEM maggiore di 2 GB, inclusi i pacchetti di contenuto.
 
-Allo stesso modo, quando i file raggiungono le dimensioni di 2 GB durante l&#39;utilizzo di un datastore S3 condiviso, potrebbe essere necessario del tempo perché il file venga mantenuto completamente dalla cache al file system. Di conseguenza, quando si utilizza la replica senza binario, è possibile che i dati binari non siano stati persistenti prima del completamento della replica. Questa situazione può causare problemi, soprattutto se la disponibilità dei dati è importante.
+Allo stesso modo, quando i file raggiungono le dimensioni di 2 GB durante l&#39;utilizzo di un datastore S3 condiviso, potrebbe essere necessario del tempo per mantenere il file completamente persistente dalla cache al file system. Di conseguenza, quando si utilizza la replica senza binario, è possibile che i dati binari non siano stati persistenti prima del completamento della replica. Questa situazione può causare problemi, soprattutto se la disponibilità dei dati è importante.
 
 ## Test delle prestazioni {#performance-testing}
 
@@ -323,7 +323,7 @@ Per tutti i problemi di prestazioni della rete da parte del cliente, eseguire le
 
 ### Test delle istanze di AEM {#aem-instance-testing}
 
-Per ridurre al minimo la latenza e ottenere un throughput elevato grazie a un utilizzo efficiente della CPU e alla condivisione del carico, controlla regolarmente le prestazioni dell’istanza AEM. In particolare:
+Per ridurre al minimo la latenza e ottenere un throughput elevato grazie all’utilizzo efficiente della CPU e alla condivisione del carico, controlla regolarmente le prestazioni dell’istanza AEM. In particolare:
 
 * Eseguire test di carico sull’istanza AEM
 * Monitoraggio delle prestazioni di caricamento e risposta dell’interfaccia utente
@@ -338,8 +338,8 @@ Per ridurre al minimo la latenza e ottenere un throughput elevato grazie a un ut
 * Attiva flussi di lavoro transitori
 * Regola le code del flusso di lavoro Granite per limitare i processi simultanei
 * Configurare ImageMagick per limitare l&#39;utilizzo delle risorse
-* Rimozione di passaggi superflui dal flusso di lavoro DAM Update Asset
+* Rimozione di passaggi superflui dal flusso di lavoro [!UICONTROL DAM Update Asset] (Aggiorna risorsa)
 * Configurare l&#39;eliminazione di flussi di lavoro e versioni
 * Ottimizzate gli indici con i service pack e gli hotfix più recenti. Consultate il supporto Adobe per eventuali ottimizzazioni di indice aggiuntive disponibili.
 * Utilizzare EstimateTotal per ottimizzare le prestazioni della query.
-* Se configurate AEM per rilevare i tipi di file dal contenuto dei file (abilitando il servizio **[!UICONTROL Day CQ DAM Mime Type Service]** nella console **[!UICONTROL Web di]** AEM), potete caricare in massa molti file nelle ore non di punta, poiché richiede molte risorse.
+* Se configuri AEM per rilevare i tipi di file dal contenuto, grazie all’abilitazione di **[!UICONTROL Day CQ DAM Mime Type Service]** nella **[!UICONTROL Console web]** di AEM, puoi caricare in blocco numerosi file nelle ore non di punta, poiché la procedura è intensiva a livello di risorse.
