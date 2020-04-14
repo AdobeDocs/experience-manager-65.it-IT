@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 43fe9540a3a29ae86f48756c77001c0a4b8ea3e4
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -28,4 +28,4 @@ Per aggiornare i moduli AEM 6.3 su moduli JEE o AEM 6.4 su JEE a moduli AEM 6.5 
    * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
    * [Aggiornamento da AEM 6.3 o AEM 6.4 Forms a AEM 6.5 Forms for JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
-L&#39;aggiornamento diretto da LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms a AEM 6.5 Forms non è disponibile. È possibile eseguire un aggiornamento intermedio a una o più versioni di LiveCycle o AEM Forms, quindi effettuare l&#39;aggiornamento da AEM 6.5 Forms. Per l&#39;elenco delle versioni intermedie e le istruzioni di aggiornamento corrispondenti, consultate [Scegliere un percorso](../../forms/using/upgrade.md#main-pars-header)di aggiornamento.
+L&#39;aggiornamento diretto da LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms a AEM 6.5 Forms non è disponibile. È possibile eseguire un aggiornamento intermedio a una o più versioni di LiveCycle o AEM Forms, quindi effettuare l&#39;aggiornamento da AEM 6.5 Forms. Per l&#39;elenco delle versioni intermedie e le istruzioni di aggiornamento corrispondenti, consultate [Scegliere un percorso](upgrade.md)di aggiornamento.
