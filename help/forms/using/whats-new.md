@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -84,7 +84,7 @@ AEM Forms consente di incorporare [facilmente un modulo](../../forms/using/embed
 
 #### Limitare la disponibilità di modelli di moduli adattivi per percorsi specifici {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-I moduli adattivi hanno aggiunto il supporto per la proprietà cq:allowPaths. La proprietà [limita la disponibilità dei modelli di moduli adattivi a percorsi](../../forms/using/creating-adaptive-form.md#main-pars-text)specifici.
+I moduli adattivi hanno aggiunto il supporto per la proprietà cq:allowPaths. La proprietà [limita la disponibilità dei modelli di moduli adattivi a percorsi](creating-adaptive-form.md#adaptive-form-templates)specifici.
 
 #### Aggiunta dinamica delle caselle di controllo al modulo adattivo {#add-check-boxes-to-the-adaptive-form-dynamically}
 
