@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -135,7 +135,7 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
 
 ### Menu a comparsa delle azioni elenco attività {#task-list-task-action-nbsp-pop-up-menu}
 
-1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa delle azioni dell&#39;elenco delle attività dell&#39;area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa delle azioni dell&#39;elenco delle attività dell&#39;area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copiate /libs/ws/js/runtime/templates/task.html per `/apps/ws/js/runtime/templates/task.html`sostituire il frammento di codice seguente:
 
