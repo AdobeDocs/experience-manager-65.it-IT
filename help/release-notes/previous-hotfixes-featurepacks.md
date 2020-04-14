@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -326,7 +326,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * Possibilità di attacchi che sfruttano la vulnerabilità cross-site scripting (XSS) tramite la finestra di avviso File con limitazioni, in quanto l’immagine inserita può risultare visibile. NPR-30617: Hotfix per CQ-4270133
 * MultiTenant: I tenant che salvano le proprietà della cartella osservano sia il messaggio di riuscita che il messaggio di errore che descrive l&#39;azione non è riuscito, &quot;Impossibile modificare le proprietà. Autorizzazioni insufficienti.” e questo genera confusione. NPR-30545: Hotfix per CQ-4275333
 * La finestra di dialogo di Selettore risorse non consente la selezione della risorsa, pertanto non è possibile aggiornare l’origine utilizzando la funzionalità di sostituzione dell’origine correlata. NPR-30502: Hotfix per CQ-4275029
-* Flusso di lavoro Aggiorna risorsa DAM - Stato obsoleto durante il caricamento di file MP4 di grandi dimensioni. NPR-30480: Hotfix per CQ-4271352
+* [!UICONTROL Flusso di lavoro di aggiornamento risorse] DAM: stato precedente per il caricamento di file mp4 di grandi dimensioni. NPR-30480: Hotfix per CQ-4271352
 * La funzionalità Crea attività di revisione non funziona a causa di un payload nullo che impedisce il completamento di tutte le azioni successive correlate all’attività di revisione. NPR-30468: Hotfix per CQ-4274263
 * Problema di connettività di Tag avanzati di Adobe tramite DataPower. NPR-30026: Hotfix per CQ-4269457
 * Nella vista a colonne dell’interfaccia utente di Assets viene generato un errore quando si prova ad aprire i filtri nella barra a sinistra. NPR-30501: Hotfix per CQ-4273862
