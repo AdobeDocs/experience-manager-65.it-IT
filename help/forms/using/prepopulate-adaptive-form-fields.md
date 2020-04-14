@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -27,10 +27,10 @@ Un modulo adattivo può contenere diversi campi associati o non associati. I cam
 È possibile precompilare i campi associati e non associati di un modulo adattivo. I dati di precompilazione contengono le sezioni afBoundData e afUnBoundData per precompilare i campi associati e non associati di un modulo adattivo. La `afBoundData` sezione contiene i dati di precompilazione per i campi e i pannelli associati. Questi dati devono essere conformi allo schema del modello di modulo associato:
 
 * Per i moduli adattivi che utilizzano il modello [di modulo](../../forms/using/prepopulate-adaptive-form-fields.md)XFA, utilizzare il file XML di precompilazione conforme allo schema dati del modello XFA.
-* Per i moduli adattivi che utilizzano lo schema [](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-header-3)XML, utilizzare il file XML di precompilazione conforme alla struttura dello schema XML.
-* Per i moduli adattivi che utilizzano lo schema [](../../forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)JSON, utilizzare il JSON di precompilazione conforme allo schema JSON.
+* Per i moduli adattivi che utilizzano lo schema [](#xml-schema-af)XML, utilizzare il file XML di precompilazione conforme alla struttura dello schema XML.
+* Per i moduli adattivi che utilizzano lo schema [](#json-schema-based-adaptive-forms)JSON, utilizzare il JSON di precompilazione conforme allo schema JSON.
 * Per i moduli adattivi che utilizzano lo schema FDM, utilizzare il JSON di precompilazione conforme allo schema FDM.
-* Per i moduli adattivi [senza modello](../../forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p)di modulo, non sono presenti dati associati. Ogni campo è un campo non associato ed è precompilato utilizzando l&#39;XML non associato.
+* Per i moduli adattivi [senza modello](#adaptive-form-with-no-form-model)di modulo, non sono presenti dati associati. Ogni campo è un campo non associato ed è precompilato utilizzando l&#39;XML non associato.
 
 ### Esempio di struttura XML di precompilazione {#sample-prefill-xml-structure}
 
@@ -84,7 +84,7 @@ La struttura dell&#39;XML di precompilazione e dell&#39;XML inviato per i moduli
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[Get File](assets/prefill-submit-data-contentpackage.zip)Sample contenente dati di precompilazione e dati inviati
+[Ottieni file](assets/prefill-submit-data-contentpackage.zip)esempio contenente dati precompilati e dati inviati
 
 ### Moduli adattivi basati sullo schema XML {#xml-schema-af}
 
@@ -279,7 +279,7 @@ Il nodo specificato deve avere una proprietà denominata `jcr:data` e contenere 
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 ```
 
-Il file di riferimento deve trovarsi sullo stesso server.
+Il file di cui si fa riferimento deve trovarsi sullo stesso server.
 
 ### Il protocollo https:// {#the-http-protocol}
 
@@ -338,7 +338,7 @@ Potete utilizzare il servizio di precompilazione personalizzato per gli scenari,
 
 Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo nei bundle AEM Forms. Prima di iniziare a creare il bundle:
 
-* [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 * [Scarica il pacchetto ricorrenti](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
 
 * Inserire il file di dati (dati di precompilazione) nell&#39;archivio crx. È possibile posizionare il file in qualsiasi posizione nella cartella \contents di crx-repository.
