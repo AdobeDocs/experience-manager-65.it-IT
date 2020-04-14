@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -101,7 +101,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
    Utilizzare l&#39;editor di espressioni per creare espressioni di routing per ramo 1 e ramo 2. Queste espressioni di routing consentono di scegliere un ramo in base all&#39;azione dell&#39;utente nella Casella in entrata AEM.
 
-   **Espressione di routing per il ramo 1**
+   **Espressione di routing per il ramo 2**
 
    Quando un utente tocca **Approva** in AEM Inbox, viene attivato il ramo 1.
 
@@ -121,7 +121,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
    Per l&#39;insieme completo di valori di tutti i campi dei passaggi dell&#39;attività di assegnazione, del passaggio del documento del record e del passaggio del documento di firma configurati ad esempio per l&#39;applicazione del mutuo, importare il pacchetto di esempio, disponibile per il download all&#39;inizio di questa sezione.
 
-   Il modello di workflow è pronto. Potete avviare il flusso di lavoro tramite vari metodi. Per informazioni dettagliate, vedere [Avviare un flusso di lavoro incentrato sui moduli in OSGi](../../forms/using/aem-forms-workflow.md#main-pars-header).
+   Il modello di workflow è pronto. Potete avviare il flusso di lavoro tramite vari metodi. Per informazioni dettagliate, vedere [Avviare un flusso di lavoro incentrato sui moduli in OSGi](#launch).
 
    ![workflow-editor-mutuo](assets/workflow-editor-mortgage.png)
 
