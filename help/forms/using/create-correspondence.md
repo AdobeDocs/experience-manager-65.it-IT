@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -83,7 +83,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati ( ![highlightmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra dell&#39;anteprima della lettera HTML, è possibile disabilitare o abilitare la funzionalità per passare al modulo di contenuto/dati quando il testo, il paragrafo o il campo di dati pertinenti sono selezionati nell&#39;anteprima della lettera.
 
-   Per ulteriori informazioni sulle azioni disponibili per i vari moduli nell’interfaccia utente Crea corrispondenza, consultate [Azioni e informazioni disponibili nell’interfaccia](../../forms/using/create-letter.md#main-pars-header-9)utente Crea corrispondenza.
+   Per ulteriori informazioni sulle azioni disponibili per i vari moduli nell’interfaccia utente Crea corrispondenza, consultate [Azioni e informazioni disponibili nell’interfaccia](#actions-and-info-available-in-the-create-correspondence-content-tab)utente Crea corrispondenza.
 
 1. Per individuare i moduli di contenuto, utilizzare il campo Trova. Immettete il nome o il titolo completo o parziale del modulo di contenuto per la ricerca nella corrispondenza.
 1. Toccate l&#39;icona Visualizza ( ![visualizzazione](assets/display.png)) davanti a un elenco, un testo, una condizione o un&#39;area di destinazione per visualizzarla o nasconderla nella lettera.
@@ -230,7 +230,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    Toccando Evidenzia moduli selezionati nel contenuto ( ![evidenziati, modulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), potete disattivare o abilitare la funzionalità per evidenziare il modulo contenuto nella scheda Contenuto quando il testo, il paragrafo o il campo dati pertinenti vengono toccati nell&#39;anteprima della lettera.
 
-   Per ulteriori informazioni sulle azioni disponibili per i vari moduli nell’interfaccia utente Crea corrispondenza, consultate [Azioni e informazioni disponibili nell’interfaccia](../../forms/using/create-letter.md#main-pars-header-9)utente Crea corrispondenza.
+   Per ulteriori informazioni sulle azioni disponibili per i vari moduli nell’interfaccia utente Crea corrispondenza, consultate [Azioni e informazioni disponibili nell’interfaccia](#actions-and-info-available-in-the-create-correspondence-content-tab)utente Crea corrispondenza.
 
 1. Per aggiungere un&#39;interruzione di pagina alla lettera, toccare il punto in cui si desidera inserire un&#39;interruzione di pagina e selezionare Interruzione di pagina prima o Interruzione di pagina dopo ( ![interruzione di pagina prima](assets/pagebreakbeforeafter.png)).
 
@@ -246,7 +246,7 @@ Nella scheda del contenuto, gestire il contenuto, ad esempio frammenti di docume
 
    ![saveasarola](assets/saveasdraft.png)
 
-   Viene visualizzata la finestra di dialogo Nome lettera bozza con l&#39;ID dell&#39;istanza della lettera. Facoltativamente, puoi modificare questo ID. Prendete nota della lettera Id e toccate **Fine**. In seguito, potrete utilizzare questo ID per [ricaricare la lettera](../../forms/using/submit-letter-topostprocess.md#main-pars-header-1)bozza.
+   Viene visualizzata la finestra di dialogo Nome lettera bozza con l&#39;ID dell&#39;istanza della lettera. Facoltativamente, puoi modificare questo ID. Prendete nota della lettera Id e toccate **Fine**. In seguito, potrete utilizzare questo ID per [ricaricare la lettera](submit-letter-topostprocess.md#reloaddraft)bozza.
 
 1. Per visualizzare in anteprima la lettera come PDF appiattito con il layout preciso e le interruzioni di pagina che verranno inviate, toccate ( ![anteprima](assets/preview.png)) Anteprima.
 
