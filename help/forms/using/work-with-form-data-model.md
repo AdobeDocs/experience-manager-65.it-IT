@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 L&#39;editor dei modelli di dati per i moduli offre un&#39;interfaccia utente intuitiva e strumenti per la modifica e la configurazione di un modello di dati per i moduli. Utilizzando l&#39;editor, è possibile aggiungere e configurare oggetti, proprietà e servizi del modello dati da origini dati associate nel modello dati del modulo. Inoltre, consente di creare oggetti e proprietà del modello dati senza origini dati e di eseguire successivamente un binding con i rispettivi oggetti e proprietà del modello dati. È inoltre possibile generare e modificare dati di esempio per le proprietà degli oggetti del modello dati che è possibile utilizzare per precompilare moduli adattivi e comunicazioni interattive durante la visualizzazione dell&#39;anteprima. È possibile sottoporre a test gli oggetti e i servizi del modello dati configurati in un modello dati del modulo per assicurarsi che sia correttamente integrato con le origini dati.
 
-Se non si è esperti nell&#39;integrazione dei dati di Forms e non si è configurata un&#39;origine dati o non è stato creato un modello dati del modulo, consultare i seguenti argomenti:
+Se non si è esperti nell&#39;integrazione dei dati di Forms e non si è configurata un&#39;origine dati o non è stato creato un modello di dati del modulo, consultare i seguenti argomenti:
 
 * [Integrazione dei dati AEM Forms](/help/forms/using/data-integration.md)
 * [Configurare le origini dati](/help/forms/using/configure-data-sources.md)
@@ -147,15 +147,15 @@ Per leggere e scrivere i dati per un oggetto modello dati, effettuare le seguent
 
 1. Attiva/disattiva l&#39;oggetto **[!UICONTROL di livello]** superiore per specificare se l&#39;oggetto del modello dati è un oggetto modello di livello principale.
 
-   Gli oggetti del modello dati configurati in un modello dati del modulo sono disponibili per l&#39;uso nella scheda Oggetti modello dati del browser Contenuto di un modulo adattivo basato sul modello dati del modulo. Quando si aggiunge un&#39;associazione tra due oggetti modello dati, l&#39;oggetto modello dati a cui si sta associando è nidificato sotto l&#39;oggetto modello dati da cui si sta associando nella scheda Oggetti modello dati. Se il modello dati nidificato è un oggetto di primo livello, verrà visualizzato anche separatamente nella scheda Oggetti modello dati. Di conseguenza, verranno visualizzate due voci di esso, una all&#39;interno e l&#39;altra all&#39;esterno della gerarchia nidificata, che potrebbero confondere gli autori dei moduli. Affinché l&#39;oggetto del modello dati associato venga visualizzato solo nella gerarchia nidificata, disabilitare la proprietà Oggetto di primo livello.
+   Gli oggetti del modello dati configurati in un modello dati del modulo sono disponibili per l&#39;uso nella scheda Oggetti modello dati del browser Contenuto di un modulo adattivo basato sul modello dati del modulo. Quando si aggiunge un&#39;associazione tra due oggetti modello dati, l&#39;oggetto modello dati a cui si sta associando è nidificato sotto l&#39;oggetto modello dati da cui si sta associando nella scheda Oggetti modello dati. Se il modello dati nidificato è un oggetto di primo livello, verrà visualizzato anche separatamente nella scheda Oggetti modello dati. Di conseguenza, verranno visualizzate due voci di esso, una all&#39;interno e l&#39;altra all&#39;esterno della gerarchia nidificata, che potrebbero confondere gli autori dei moduli. Per fare in modo che l&#39;oggetto del modello dati associato venga visualizzato solo nella gerarchia nidificata, disabilitare la proprietà Oggetto di primo livello.
 
-1. Selezionare Servizi di lettura e scrittura per gli oggetti del modello dati selezionati. Vengono visualizzati gli argomenti per i servizi.
+1. Selezionare Servizi di lettura e scrittura per gli oggetti del modello dati selezionati. Vengono visualizzati gli argomenti relativi ai servizi.
 
    ![servizi di lettura/scrittura](assets/read-write-services.png)
 
    Servizi di lettura e scrittura configurati per l&#39;origine dati dipendente
 
-1. Toccate ![aem_6_3_edit](assets/aem_6_3_edit.png) per l&#39;argomento del servizio di lettura per [associare l&#39;argomento a un attributo di profilo utente, un attributo di richiesta o un valore](../../forms/using/work-with-form-data-model.md#main-pars-header-2140694395) letterale e specificate il valore di binding.
+1. Toccate ![aem_6_3_edit](assets/aem_6_3_edit.png) per l&#39;argomento del servizio di lettura per [associare l&#39;argomento a un attributo di profilo utente, un attributo di richiesta o un valore](#bindargument) letterale e specificate il valore di binding.
 1. Toccare **[!UICONTROL Fine]** per salvare l&#39;argomento, **[!UICONTROL Fine]** per salvare le proprietà, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 
 ### Binding degli argomenti del servizio di lettura {#bindargument}
@@ -236,7 +236,7 @@ Per aggiungere un&#39;associazione:
 1. Nel riquadro Aggiungi associazione:
 
    * Specificate un titolo per l&#39;associazione.
-   * Selezionare il tipo di associazione — Uno a Uno o Uno a Molti.
+   * Selezionare il tipo di associazione — Da uno a uno o da uno a molti.
    * Selezionare l&#39;oggetto del modello dati a cui associarsi.
    * Selezionare il servizio di lettura per leggere i dati dall&#39;oggetto modello selezionato. Viene visualizzato l&#39;argomento del servizio di lettura. Modificare l&#39;argomento, se necessario, e associarlo alla proprietà dell&#39;oggetto modello dati da associare.
    Nell&#39;esempio seguente, l&#39;argomento predefinito per il servizio di lettura dell&#39;oggetto modello dati Dependents è `dependentid`.
@@ -245,7 +245,7 @@ Per aggiungere un&#39;associazione:
 
    L&#39;argomento predefinito per il servizio di lettura Dipendenti è Dependentid
 
-   Tuttavia, l&#39;argomento deve essere una proprietà comune tra l&#39;oggetto del modello dati associato, che in questo esempio è `Employeeid`. Pertanto, l&#39; `Employeeid` argomento deve essere associato alla `id` proprietà dell&#39;oggetto del modello dati Dipendente per recuperare i dettagli associati dipendenti dall&#39;oggetto del modello dati Dipendenti.
+   Tuttavia, l&#39;argomento deve essere una proprietà comune tra l&#39;oggetto del modello dati associato, che in questo esempio è `Employeeid`. Pertanto, l&#39; `Employeeid` argomento deve essere associato alla `id` proprietà dell&#39;oggetto del modello dati Dipendente per recuperare i dettagli relativi ai dipendenti associati dall&#39;oggetto del modello dati Dipendenti.
 
    ![add-Association-example-2](assets/add-association-example-2.png)
 
@@ -270,7 +270,7 @@ Per aggiungere un&#39;associazione:
 
 Per modificare le proprietà:
 
-1. Selezionare la casella di controllo accanto a un oggetto modello dati, una proprietà o un servizio nel modello dati del modulo.
+1. Selezionare la casella di controllo accanto a un oggetto del modello dati, a una proprietà o a un servizio nel modello dati del modulo.
 1. Toccate **[!UICONTROL Modifica proprietà]**. Viene visualizzato il riquadro **[!UICONTROL Modifica proprietà]** per l&#39;oggetto modello, la proprietà o il servizio selezionato.
 
    * **Oggetto** del modello dati: Specificare i servizi di lettura e scrittura e gli argomenti di modifica.
@@ -289,7 +289,7 @@ Una proprietà calcolata è quella il cui valore viene calcolato in base a una r
 Ad esempio, è possibile creare una proprietà calcolata **FullName** il cui valore è il risultato della concatenazione delle proprietà esistenti **FirstName** e **LastName** . A questo scopo:
 
 1. Creare una nuova proprietà con il nome `FullName` il cui tipo di dati è String.
-1. Selezionate **[!UICONTROL Calcolato]** e toccate **[!UICONTROL Fine]** per creare la proprietà.
+1. Attivate **[!UICONTROL Calcolato]** e toccate **[!UICONTROL Fine]** per creare la proprietà.
 
    ![calcolato](assets/computed.png)
 
@@ -370,7 +370,7 @@ L&#39;editor dei modelli di dati modulo consente di generare dati di esempio per
 
 Per generare e modificare dati di esempio, effettuate le seguenti operazioni:
 
-1. Aprire un modello dati del modulo e toccare **[!UICONTROL Modifica dati]** di esempio. Genera e visualizza i dati di esempio nella finestra Modifica dati campione.
+1. Aprire un modello dati del modulo e toccare **[!UICONTROL Modifica dati]** di esempio. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
 
    ![Genera dati di esempio](assets/form_data_model_generate_sample_data_new.png)
 
@@ -380,7 +380,7 @@ Per generare e modificare dati di esempio, effettuate le seguenti operazioni:
 
 ## Test di oggetti e servizi del modello dati {#test-data-model-objects-and-services}
 
-Il modello dati del modulo è configurato, ma prima di utilizzarlo è possibile verificare se gli oggetti e i servizi del modello dati configurati funzionano come previsto. Per verificare gli oggetti e i servizi del modello dati:
+Il modello dati del modulo è configurato, ma prima di utilizzarlo, potrebbe essere necessario verificare se gli oggetti e i servizi del modello dati configurati funzionano come previsto. Per verificare gli oggetti e i servizi del modello dati:
 
 1. Selezionare un oggetto modello dati o un servizio nel modello dati del modulo e toccare, rispettivamente, Oggetto **[!UICONTROL modello di]** prova o Servizio **[!UICONTROL di]** prova.
 
@@ -408,7 +408,7 @@ Il flag può essere impostato su uno dei seguenti valori:
 
 Se non viene impostato alcun valore per il `ValidationOptions`flag, ai dati di input viene eseguita la convalida **BASIC** .
 
-Esempio di impostazione del flag di convalida su **FULL**:
+Di seguito è riportato un esempio di impostazione del flag di convalida su **FULL**:
 
 ```java
 operationOptions.setValidationOptions(ValidationOptions.FULL);
