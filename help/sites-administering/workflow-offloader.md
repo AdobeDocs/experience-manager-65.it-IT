@@ -10,18 +10,18 @@ topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
 
 # Offloader flusso di lavoro risorse{#assets-workflow-offloader}
 
-Lo scaricatore del flusso di lavoro Assets consente di abilitare più istanze di Risorse Adobe Experience Manager (AEM) per ridurre il carico di elaborazione sull’istanza principale (intestazione). Il carico di elaborazione viene distribuito tra l&#39;istanza di riempimento iniziale e le varie istanze offload (Worker) ad essa aggiunte. La distribuzione del carico di elaborazione delle risorse aumenta l’efficienza e la velocità con cui AEM Assets elabora le risorse. Inoltre, consente di allocare risorse dedicate per elaborare risorse di un particolare tipo MIME. Ad esempio, potete allocare un nodo specifico nella topologia per elaborare solo risorse InDesign.
+Lo scaricatore del flusso di lavoro Assets consente di abilitare più istanze di Risorse Adobe Experience Manager (AEM) per ridurre il carico di elaborazione sull’istanza principale (intestazione). Il carico di elaborazione viene distribuito tra l&#39;istanza di riempimento iniziale e le varie istanze offload (Worker) ad essa aggiunte. La distribuzione del carico di elaborazione delle risorse aumenta l’efficienza e la velocità con cui AEM Assets elabora le risorse. Inoltre, consente di allocare risorse dedicate per elaborare risorse di un particolare tipo MIME. Ad esempio, potete allocare un nodo specifico nella topologia per elaborare solo le risorse InDesign.
 
 ## Configurare la topologia offloader {#configure-offloader-topology}
 
-Utilizzare Configuration Manager per aggiungere l&#39;URL per l&#39;istanza leader e i nomi host delle istanze offloader per le richieste di connessione nell&#39;istanza leader.
+Utilizzate Configuration Manager per aggiungere l&#39;URL per l&#39;istanza leader e i nomi host delle istanze offloader per le richieste di connessione nell&#39;istanza leader.
 
 1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Operazioni** > Console **** Web per aprire Gestione configurazione.
 1. Dalla console Web, selezionate **Sling** (Sling) > **Topology Management (Gestione** topologia).
@@ -54,7 +54,7 @@ Utilizzare Configuration Manager per aggiungere l&#39;URL per l&#39;istanza lead
 
 ## Configurare gli avviatori del flusso di lavoro sull&#39;istanza leader {#configure-workflow-launchers-on-the-leader-instance}
 
-Configurate gli avviatori dei flussi di lavoro per utilizzare il flusso di lavoro **DAM Update Asset Offload** (Aggiorna risorsa) sull&#39;istanza principale invece del flusso di lavoro **Dam Update Asset** (Aggiorna risorsa Dam).
+Configurate gli avviatori dei flussi di lavoro per utilizzare il flusso di lavoro [!UICONTROL DAM Update Asset Offload] (Aggiorna risorsa) sull&#39;istanza principale invece del flusso di lavoro **Dam Update Asset** (Aggiorna risorsa Dam).
 
 1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Avviatori** per aprire la console **Workflow Launcher** .
 
@@ -65,12 +65,12 @@ Configurate gli avviatori dei flussi di lavoro per utilizzare il flusso di lavor
 
    ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-1. Dall’elenco **Flusso** di lavoro, scegliete **DAM Update Asset Offload** (Aggiorna offload risorsa) e toccate o fate clic su **Salva**.
+1. Dall’elenco **Flusso** di lavoro, scegliete [!UICONTROL DAM Update Asset Offload] (Aggiorna offload risorsa) e toccate o fate clic su **Salva**.
 
    ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 1. Toccate o fate clic sul logo AEM, quindi scegliete **Strumenti** > **Flusso** di lavoro > **Modelli** per aprire la pagina Modelli **di** workflow.
-1. Selezionate il flusso di lavoro **DAM Update Asset Offload** , quindi toccate o fate clic su **Modifica** nella barra degli strumenti per visualizzarne i dettagli.
+1. Selezionate il flusso di lavoro [!UICONTROL DAM Update Asset Offload] , quindi toccate o fate clic su **Modifica** nella barra degli strumenti per visualizzarne i dettagli.
 
    ![chlimage_1-53](assets/chlimage_1-53a.png)
 
