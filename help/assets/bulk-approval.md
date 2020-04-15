@@ -3,7 +3,7 @@ title: Esaminare raccolte e risorse delle cartelle
 description: Configurate i flussi di lavoro di revisione per le risorse all'interno di una cartella o di una raccolta e condividetela con revisori o partner creativi per ottenere feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -23,7 +23,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 ## Creazione di un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
 
 1. Dall’interfaccia utente di Risorse, selezionate la cartella per la quale desiderate creare un’attività di revisione.
-1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, tap/click **[!UICONTROL More]** and then select the option.
+1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -47,17 +47,17 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 
    ![review_name](assets/review_name.png)
 
-1. Tocca o fai clic su **[!UICONTROL Invia]**, quindi tocca o fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a Risorse AEM come approver e passa all’interfaccia utente Risorse. Per approvare le risorse, toccate **[!UICONTROL Notifiche]** e selezionate l’attività di revisione dall’elenco.
+1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Una notifica per la nuova attività viene inviata al responsabile approvazione.
+1. Accedi a Risorse AEM come approver e passa all’interfaccia utente Risorse. Per approvare le risorse, fate clic su **[!UICONTROL Notifiche]** , quindi selezionate l’attività di revisione dall’elenco.
 
    ![Notifica risorse](assets/aemAssetsNotification.png)
 
-1. Nella pagina **[!UICONTROL Rivedi attività]**, esamina i dettagli dell’attività di revisione, quindi tocca o fai clic su **[!UICONTROL Review (Verifica)]**.
-1. In the **[!UICONTROL Review Task]** page, select assets, and tap **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
+1. In the **[!UICONTROL Review Task]** page, select assets, and click **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
 
    ![review_task](assets/review_task.png)
 
-1. Tap **[!UICONTROL Complete]** from the toolbar. Nella finestra di dialogo, inserite un commento e toccate o fate clic su **[!UICONTROL Completa]** per confermare.
+1. Click **[!UICONTROL Complete]** from the toolbar. Nella finestra di dialogo, inserite un commento e fate clic su **[!UICONTROL Completa]** per confermare.
 1. Passate all’interfaccia utente Risorse e aprite la cartella. Le icone dello stato di approvazione per le risorse vengono visualizzate nelle viste a schede e a elenco.
 
    **Vista a schede**
@@ -71,7 +71,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 ## Creazione di un&#39;attività di revisione per le raccolte {#creating-a-review-task-for-collections}
 
 1. Nella pagina Raccolte, selezionate la raccolta per la quale desiderate creare un&#39;attività di revisione.
-1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, tap **[!UICONTROL More]** and then select the option.
+1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -91,14 +91,14 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Tocca o fai clic su **[!UICONTROL Invia]**, quindi tocca o fai clic su **[!UICONTROL Fine]** per chiudere il messaggio di conferma. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a Risorse AEM come approver e passa alla console Risorse. Per approvare le risorse, toccate **[!UICONTROL Notifiche]** e selezionate l’attività di revisione dall’elenco.
-1. Nella pagina **[!UICONTROL Rivedi attività]**, esamina i dettagli dell’attività di revisione, quindi tocca o fai clic su **[!UICONTROL Review (Verifica)]**.
-1. Tutte le risorse della raccolta sono visibili nella pagina di revisione. Selezionate le risorse e toccate **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare le risorse, a seconda delle necessità.
+1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Una notifica per la nuova attività viene inviata al responsabile approvazione.
+1. Accedi a Risorse AEM come approver e passa alla console Risorse. Per approvare le risorse, fate clic su **[!UICONTROL Notifiche]** , quindi selezionate l’attività di revisione dall’elenco.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
+1. Tutte le risorse della raccolta sono visibili nella pagina di revisione. Selezionate le risorse e fate clic su **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare le risorse, a seconda delle necessità.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Tap **[!UICONTROL Complete]** from the toolbar. Nella finestra di dialogo, inserite un commento e toccate o fate clic su **[!UICONTROL Completa]** per confermare.
+1. Click **[!UICONTROL Complete]** from the toolbar. Nella finestra di dialogo, inserite un commento e fate clic su **[!UICONTROL Completa]** per confermare.
 1. Passate alla console Raccolte e aprite la raccolta. Le icone dello stato di approvazione per le risorse vengono visualizzate nelle viste a schede e a elenco.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
