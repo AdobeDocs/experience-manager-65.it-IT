@@ -3,7 +3,7 @@ title: Operazioni asincrone
 description: Risorse AEM ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -33,7 +33,8 @@ Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai u
 
 Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla pagina Stato **[!UICONTROL processo]** asincrono.
 
-1. Toccate/fate clic sul logo AEM, quindi andate **[!UICONTROL Operazioni]** > **[!UICONTROL Processi]**.
+1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Operazioni]** > **[!UICONTROL Processi]**.
+
 1. Nella pagina Stato **[!UICONTROL processo]** asincrono, controllate i dettagli delle operazioni.
 
    ![Stato e dettagli delle operazioni asincrone](assets/AsyncOperation-status.png)
@@ -44,15 +45,15 @@ Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla 
 
    * **[!UICONTROL Successo]**: Operazione completata
 
-   * **[!UICONTROL Errore]** o **[!UICONTROL errore]**: Impossibile elaborare l&#39;operazione
+   * **[!UICONTROL Fail]** or **[!UICONTROL Error]** (Non riuscito o errore): impossibile elaborare l’operazione
 
    * **[!UICONTROL Pianificato]**: L&#39;elaborazione dell&#39;operazione è pianificata per un momento successivo
 
-1. Per interrompere un&#39;operazione attiva, selezionatela dall&#39;elenco e toccate **[!UICONTROL Interrompi]** dalla barra degli strumenti.
+1. Per interrompere un&#39;operazione attiva, selezionatela dall&#39;elenco e fate clic su **[!UICONTROL Interrompi]** nella barra degli strumenti.
 
    ![stop_icon](assets/stop_icon.png)
 
-1. Per visualizzare ulteriori dettagli, ad esempio descrizione e registri, selezionate l&#39;operazione e toccate **[!UICONTROL Apri]** dalla barra degli strumenti.
+1. Per visualizzare ulteriori dettagli, ad esempio la descrizione e i registri, selezionate l’operazione e fate clic su **[!UICONTROL Apri]** nella barra degli strumenti.
 
    ![open_icon](assets/open_icon.png)
 
@@ -60,7 +61,7 @@ Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla 
 
    ![job_details](assets/job_details.png)
 
-1. Per eliminare l&#39;operazione dall&#39;elenco, selezionare **[!UICONTROL Elimina]** dalla barra degli strumenti. Per scaricare i dettagli in un file CSV, toccate **[!UICONTROL Scarica]**.
+1. Per eliminare l&#39;operazione dall&#39;elenco, selezionare **[!UICONTROL Elimina]** dalla barra degli strumenti. Per scaricare i dettagli in un file CSV, fate clic su **[!UICONTROL Scarica]**.
 
    >[!NOTE]
    >
@@ -72,7 +73,7 @@ Risorse AEM esegue ogni giorno un processo di eliminazione alle 1:00 per elimina
 
 È possibile modificare la pianificazione per il processo di eliminazione e la durata per la quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Potete inoltre configurare il numero massimo di processi completati per i quali i dettagli vengono conservati in qualsiasi momento.
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
 1. Aprite il processo **[!UICONTROL Adobe CQ DAM Async Jobs Purge Pianificato]** .
 1. Specificate la soglia per il numero di giorni dopo i quali i processi completati vengono eliminati e il numero massimo di processi per i quali i dettagli vengono conservati nella cronologia.
 
@@ -88,7 +89,7 @@ Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM pe
 
 Se il numero di risorse o cartelle da eliminare supera la soglia, l’operazione di eliminazione viene eseguita in modo asincrono.
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
 1. Dalla console Web, aprite la configurazione **[!UICONTROL Async Delete Operation Processing]** .
 1. Nella casella **[!UICONTROL Soglia numero di risorse]** , specificate il numero di soglia di risorse/cartelle per l’elaborazione asincrona delle operazioni di eliminazione.
 
@@ -100,7 +101,7 @@ Se il numero di risorse o cartelle da eliminare supera la soglia, l’operazione
 
 Se il numero di risorse/cartelle o riferimenti da spostare supera il numero di soglia, l&#39;operazione di spostamento viene eseguita in modo asincrono.
 
-1. Toccate/fate clic sul logo AEM, quindi andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
 1. Dalla console Web, aprite la configurazione **[!UICONTROL Async Move Operation Process]** .
 1. Nella casella **[!UICONTROL Soglia numero di risorse/riferimenti]** , specificate il numero di soglia di risorse/cartelle o riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
 
