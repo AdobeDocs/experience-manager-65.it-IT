@@ -4,12 +4,12 @@ description: Suggerimenti e indicazioni sulla configurazione di AEM, modifiche a
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-<!-- TBD: Formatting using backticks. Add UICONTROL tag. Redundant info as reviewed by engineering. -->
+<!-- TBD: Get reviewed by engineering. -->
 
 # Guida all&#39;ottimizzazione delle prestazioni di Assets {#assets-performance-tuning-guide}
 
@@ -29,11 +29,11 @@ AEM è supportato su diverse piattaforme, ma Adobe ha trovato il maggiore suppor
 
 ### Cartella temporanea {#temp-folder}
 
-Per migliorare i tempi di caricamento delle risorse, utilizzate lo storage ad alte prestazioni per la directory temporanea Java. In Linux e Windows, è possibile utilizzare un&#39;unità RAM o SSD. In ambienti basati su cloud, è possibile utilizzare un tipo di storage ad alta velocità equivalente. Ad esempio in Amazon EC2, un&#39;unità [&#39;effimera&#39;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) può essere utilizzata per la cartella temporanea.
+Per migliorare i tempi di caricamento delle risorse, utilizzate lo storage ad alte prestazioni per la directory temporanea Java. In Linux e Windows, è possibile utilizzare un&#39;unità RAM o SSD. In ambienti basati su cloud, è possibile utilizzare un tipo di storage ad alta velocità equivalente. Ad esempio in Amazon EC2, un&#39;unità [effimera](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) può essere utilizzata per la cartella temporanea.
 
 Presupponendo che il server disponga di memoria sufficiente, configurare un’unità RAM. In Linux, eseguite questi comandi per creare un&#39;unità RAM da 8 GB:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -58,7 +58,7 @@ Adobe consiglia di distribuire AEM Assets su Java 8 per ottenere prestazioni ott
 
 ### Parametri JVM {#jvm-parameters}
 
-Impostare i seguenti parametri JVM:
+Impostate i seguenti parametri JVM:
 
 * `-XX:+UseConcMarkSweepGC`
 * `-Doak.queryLimitInMemory`=500000
@@ -88,7 +88,7 @@ L&#39;implementazione di un archivio dati file S3 o condiviso può contribuire a
 
 La seguente configurazione dell&#39;archivio dati S3 ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ha aiutato Adobe a estrarre 12,8 TB di oggetti BLOB (Binary Large Object) da un archivio dati di file esistente in un archivio dati S3 presso un sito cliente:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -126,18 +126,17 @@ In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantit�
 
 Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa  DAM su Temporaneo. Questa impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro, perché in questo caso i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
 
->[!NOTE]
->
->Per impostazione predefinita, in AEM 6.3 il flusso di lavoro Aggiorna risorsa  DAM è impostato su Temporaneo. In questo caso, potete saltare la seguente procedura.
-
 1. Passa a `/miscadmin` nell’istanza di AEM in `https://[aem_server]:[port]/miscadmin`.
+
 1. Espandete **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Modelli]** > **[!UICONTROL DAM]**.
+
 1. Apri risorsa **[!UICONTROL di aggiornamento]** DAM. Dal pannello degli strumenti mobile, passate alla scheda **[!UICONTROL Pagina]** e fate clic su Proprietà **** pagina.
+
 1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Alcune funzioni non supportano flussi di lavoro transitori. Se la distribuzione di AEM Assets richiede queste funzioni, non configurare flussi di lavoro transitori.
+   >Alcune funzioni non supportano flussi di lavoro transitori. Se la vostra [!DNL Assets] distribuzione richiede queste funzionalità, non configurate flussi di lavoro transitori.
 
 Nei casi in cui non è possibile utilizzare flussi di lavoro transitori, esegui regolarmente la rimozione del flusso di lavoro per eliminare i flussi di lavoro archiviati di Risorse [!UICONTROL aggiornate] DAM per garantire che le prestazioni del sistema non subiscano rallentamenti.
 
@@ -153,8 +152,10 @@ Ad esempio, dopo aver eseguito numerosi flussi di lavoro non transitori (che cre
 
 Per impostazione predefinita, AEM esegue un numero massimo di processi paralleli pari al numero di processori presenti sul server. Il problema di questa impostazione è che durante i periodi di carico eccessivo, tutti i processori sono occupati da flussi di lavoro Risorse [!UICONTROL aggiornamento] DAM, rallentando la reattività dell&#39;interfaccia utente e impedendo ad AEM di eseguire altri processi che salvaguardano le prestazioni e la stabilità del server. Come procedura corretta, impostare questo valore su metà dei processori disponibili sul server eseguendo la procedura seguente:
 
-1. In AEM Author, andate a `https://[aem_server]:[port]/system/console/slingevent`.
+1. In Experience Manager Author, andate a `https://[aem_server]:[port]/system/console/slingevent`.
+
 1. Fate clic su **[!UICONTROL Modifica]** in ogni coda di workflow rilevante per l’implementazione, ad esempio **[!UICONTROL Granite Transient Workflow Queue]**.
+
 1. Aggiornate il valore di **[!UICONTROL Massimo processi]** paralleli e fate clic su **[!UICONTROL Salva]**.
 
 L&#39;impostazione di una coda a metà dei processori disponibili è una soluzione praticabile con cui iniziare. Tuttavia, potrebbe essere necessario aumentare o diminuire questo numero per ottenere il massimo throughput e ottimizzarlo in base all&#39;ambiente. Sono presenti code separate per flussi di lavoro transitori e non transitori, nonché per altri processi, come i flussi di lavoro esterni. Se diverse code impostate al 50% dei processori sono attivi contemporaneamente, il sistema può sovraccaricare rapidamente. Le code che vengono utilizzate in modo molto diffuso variano notevolmente tra le implementazioni degli utenti. Di conseguenza, potrebbe essere necessario configurarli con attenzione per la massima efficienza senza compromettere la stabilità del server.
@@ -256,11 +257,15 @@ Alcune ottimizzazioni possono essere effettuate sulle configurazioni dell&#39;in
 1. Passa a `/oak:index/damAssetLucene`. Aggiungere una `String[]` proprietà `includedPaths` con valore `/content/dam`.
 1. Salva.
 
-(solo AEM 6.1 e 6.2) Aggiornate l’indice ntBaseLucene per migliorare le prestazioni di eliminazione e spostamento delle risorse:
+<!-- TBD: Review by engineering if required in 6.5 docs or not.
 
-1. Passa a `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Aggiungere due nodi non strutturati `slingResource` e `damResolvedPath` sotto `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Impostare le proprietà seguenti sui nodi (dove `ordered` e `propertyIndex` le proprietà sono di tipo `Boolean`:
+(AEM6.1 and 6.2 only) Update the `ntBaseLucene` index to improve asset delete and move performance:
+
+1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
    ```
    slingResource
@@ -275,25 +280,24 @@ Alcune ottimizzazioni possono essere effettuate sulle configurazioni dell&#39;in
    type="String"
    ```
 
-1. Sul `/oak:index/ntBaseLucene` nodo, impostare la proprietà `reindex=true`. Fate clic su **[!UICONTROL Salva tutto]**.
-1. Monitorate il file error.log per vedere quando l&#39;indicizzazione è completata:
-Reindicizzazione completata per gli indici: [/quercia:index/ntBaseLucene]
-1. È inoltre possibile verificare che l&#39;indicizzazione viene completata aggiornando il nodo /oak:index/ntBaseLucene in CRXDe, poiché la proprietà reindex torna a false
-1. Una volta completata l&#39;indicizzazione, tornare a CRXDe e impostare la proprietà &quot;type&quot; su disabled su questi due indici
+1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Click **[!UICONTROL Save All]**.
+1. Monitor the error.log to see when indexing is completed:
+   Reindexing completed for indexes: [/oak:index/ntBaseLucene]
+1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
+1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes
 
-   * */oak:index/slingResource*
-   * */oak:index/damResolvedPath*
+    * */oak:index/slingResource*
+    * */oak:index/damResolvedPath*
 
-1. Fare clic su &quot;Salva tutto&quot;
+1. Click "Save All"
+-->
 
 Disattiva estrazione testo Lucene:
 
-Se non è necessario che gli utenti siano in grado di eseguire ricerche nel contenuto delle risorse, ad esempio, cercando il testo contenuto nei documenti PDF, potete migliorare le prestazioni dell’indice disattivando questa funzione.
+Se gli utenti non devono effettuare la ricerca full-text delle risorse, ad esempio, cercando testo nei documenti PDF, disattivatela. È possibile migliorare le prestazioni dell&#39;indice disattivando l&#39;indicizzazione full-text.
 
-1. Andate al gestore pacchetti AEM /crx/packmgr/index.jsp
-1. Caricate e installate il pacchetto di seguito
-
-[Ottieni file](assets/disable_indexingbinarytextextraction-10.zip)
+1. Andate al gestore pacchetti AEM `/crx/packmgr/index.jsp`.
+1. Caricate e installate il pacchetto disponibile in [disable_indexingbinarytextestrazione-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Totale {#guess-total}
 
