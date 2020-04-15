@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 710958ceecc8bbbbdae5e836ec0571a9eeaf6a9a
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Questo può essere confrontato con i meccanismi [Mobile Web](/help/sites-developing/mobile-web.md) , che utilizzano la progettazione Web adattiva (principalmente per l&#39;interfaccia classica).
 
-AEM consente di realizzare il layout reattivo per le pagine utilizzando una combinazione di meccanismi:
+AEM consente di realizzare il layout dinamico per le pagine utilizzando una combinazione di meccanismi:
 
-* [**Componente Contenitore **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)layout
+* Componente [**Contenitore di layout **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
    Questo componente fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare componenti all’interno di una griglia reattiva. Può essere usato come parsys predefinito per la pagina e/o reso disponibile agli autori nel browser dei componenti.
 
@@ -75,7 +75,7 @@ Per specificare i gruppi di dispositivi che vengono visualizzati nell&#39;elenco
 
 ### Collegare il sito ai gruppi di dispositivi specificati {#link-your-site-to-the-specified-device-groups}
 
-Per includere il simulatore è necessario collegare il sito ai gruppi di dispositivi. Consultate [Aggiunta dell’elenco](/help/sites-developing/responsive.md#adding-the-devices-list) dei dispositivi (per entrambe le interfacce, classica e touch).
+Per includere l&#39;emulatore è necessario collegare il sito ai gruppi di dispositivi. Consultate [Aggiunta dell’elenco](/help/sites-developing/responsive.md#adding-the-devices-list) dei dispositivi (per entrambe le interfacce, classica e touch).
 
 ## Attiva la modalità Layout per il sito {#activate-layout-mode-for-your-site}
 
@@ -130,7 +130,7 @@ Se state eseguendo la migrazione di un progetto esistente (con contenuto esisten
    * Nome: `cq:responsive`
    * Tipo: `nt:unstructured`
 
-1. In questa sezione create il nodo:
+1. In questa sezione creare il nodo:
 
    * Nome: `breakpoints`
    * Tipo: `nt:unstructured`
@@ -163,7 +163,7 @@ Definizione di esempio:
 >
 >Questo è necessario solo se il componente pagina non è basato sul componente pagina di base.
 
-Copiate la seguente struttura di nodi nel componente della pagina padre: `cq:infoProviders`
+Copiate la seguente struttura di `cq:infoProviders` nodi nel componente della pagina padre:
 
 `/libs/foundation/components/page/cq:infoProviders/responsive`
 
@@ -258,7 +258,7 @@ Qualsiasi ridimensionamento di un componente all&#39;interno della griglia attiv
 
 * `afterchildedit`
 
-Per ridimensionare e aggiornare correttamente il contenuto di un’immagine adattiva inclusa in una griglia reattiva, è necessario aggiungere un `afterEdit` set a un `REFRESH_PAGE` listener nel file `EditConfig` di ogni componente contenuto.
+Per ridimensionare e aggiornare correttamente il contenuto di un’immagine adattiva inclusa in una griglia reattiva, è necessario aggiungere un `afterEdit` set di `REFRESH_PAGE` listener nel file di ogni `EditConfig` componente contenuto.
 
 Esempio:
 
