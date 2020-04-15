@@ -3,7 +3,7 @@ title: Supporto per i metadati IPTC
 description: Scopri in che modo Risorse Adobe Experience Manager (AEM) supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,23 +19,23 @@ Lo schema di metadati predefinito per le risorse ora include gli schemi di metad
 La pagina Proprietà delle risorse ora include schede separate per visualizzare i metadati IPTC Core e IPTC Extension nei campi modificabili.
 
 1. Dall’interfaccia utente Risorse, seleziona un’immagine.
-1. Tap **[!UICONTROL Properties]** from the toolbar.
-1. Toccate la scheda **[!UICONTROL IPTC]** per visualizzare i metadati IPTC per la risorsa.
+1. Click **[!UICONTROL Properties]** from the toolbar.
+1. Fate clic sulla scheda **[!UICONTROL IPTC]** per visualizzare i metadati IPTC per la risorsa.
 1. Modificate le proprietà dei metadati IPTC, a seconda delle necessità.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Tocca o fai clic sulla scheda Estensione **** IPTC per visualizzare i metadati dell’estensione IPTC per la risorsa.
+1. Click the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
 1. Modificate le proprietà dei metadati dell’estensione IPTC, a seconda delle necessità.
-1. Tap/click **[!UICONTROL Save &amp; Close]** to save the changes.
+1. Click **[!UICONTROL Save &amp; Close]** to save the changes.
 
 ## Supporto per valutazione creativa {#creative-rating-support}
 
-Oltre a visualizzare le valutazioni dei singoli utenti e quelle aggregate, nella pagina Proprietà vengono ora visualizzate le valutazioni assegnate alle risorse tramite Adobe Bridge e altre app Creative
+Oltre a visualizzare le valutazioni dei singoli utenti e le valutazioni aggregate, nella pagina Proprietà vengono ora visualizzate le valutazioni assegnate alle risorse tramite Adobe Bridge e altre app Creative
 
-Queste valutazioni sono disponibili nella sezione Valutazione **** creativa della scheda **[!UICONTROL Avanzate]** .
+Queste valutazioni sono disponibili nella sezione **[!UICONTROL Valutazione creativa]** della scheda **[!UICONTROL Avanzate]**.
 
-Questa valutazione è una proprietà di sola lettura e varia da 1 a 5. Potete cercare le risorse in base alla loro valutazione creativa dal pannello di ricerca.
+Questa valutazione è una proprietà di sola lettura e ha un intervallo compreso tra 1 e 5. Potete cercare le risorse in base alla loro valutazione creativa dal pannello di ricerca.
 
 Tuttavia, questa proprietà non è attualmente indicizzata per evitare conflitti con le modifiche personalizzate apportate dagli utenti.
 
