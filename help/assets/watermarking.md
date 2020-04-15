@@ -3,7 +3,7 @@ title: Aggiungi una filigrana alle risorse digitali.
 description: Scoprite come usare la funzione Filigrana per aggiungere una filigrana digitale alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,7 +19,8 @@ Per applicare una filigrana alle risorse, aggiungi la filigrana nel flusso di la
 
 1. Dal pannello laterale, trascinate il passaggio **[!UICONTROL Aggiungi filigrana]** nel flusso di lavoro Aggiorna risorsa  DAM.
 
-   ![Trascina il passaggio Aggiungi filigrana e aggiungi al flusso di lavoro della risorsa di aggiornamento DAM](assets/add_watermark_step_aem_assets.png)
+   ![Trascinate il passaggio [!UICONTROL Aggiungi filigrana] e aggiungete al flusso di lavoro [!UICONTROL della risorsa] di aggiornamento](assets/add_watermark_step_aem_assets.png)DAM2
+   *Figura: Trascinate il passaggio[!UICONTROL Aggiungi filigrana]e aggiungete al flusso di lavoro della risorsa[!UICONTROL di aggiornamento]DAM*
 
    >[!NOTE]
    >
@@ -30,5 +31,7 @@ Per applicare una filigrana alle risorse, aggiungi la filigrana nel flusso di la
 
    ![Fornire gli argomenti nel passaggio Aggiungi filigrana in Risorse](assets/arguments_add_watermark_aem_assets.png)
 
-1. Salva il flusso di lavoro Aggiorna risorsa **** DAM con il passaggio della filigrana.
+   *Figura: Fornire gli argomenti nel passaggio Aggiungi filigrana in Risorse*
+
+1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. Dall’interfaccia utente Risorse, caricate una risorsa di esempio. La filigrana viene visualizzata con la dimensione del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
