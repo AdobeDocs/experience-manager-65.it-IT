@@ -3,7 +3,7 @@ title: Installazione e configurazione di ImageMagick per l’utilizzo con Risors
 description: Scopri il software ImageMagick, come installarlo, impostare il passaggio della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -27,14 +27,14 @@ Sono disponibili diverse versioni dei file di installazione ImageMagic per vari 
 1. Scaricate i file [di installazione](https://www.imagemagick.org/script/download.php) ImageMagick appropriati per il sistema operativo in uso.
 1. Per installare ImageMagick sul disco che ospita il server AEM, avviate il file di installazione.
 
-1. Impostate la variabile del percorso Ambiente sulla directory di installazione ImageMagic.
+1. Impostate la variabile del percorso Ambiente sulla directory di installazione di ImageMagic.
 1. Per verificare se l&#39;installazione è riuscita, eseguite il `identify -version` comando.
 
 ## Impostazione del passaggio della riga di comando {#set-up-the-command-line-process-step}
 
 È possibile impostare il passaggio della riga di comando per il caso di utilizzo specifico. Per generare un’immagine e miniature capovolta (140x100, 48x48, 319x319 e 1280x1280) ogni volta che aggiungete un file immagine JPEG `/content/dam` sul server AEM:
 
-1. Nel server AEM, accedete alla console Flusso di lavoro ( `https://[*AEM server*]:[*Port*]/workflow`) e aprite il modello di flusso di lavoro Aggiorna risorsa **** DAM.
+1. Nel server AEM, accedete alla console Flusso di lavoro (`https://[aem_server]:[port]/workflow`) e aprite il modello di flusso di lavoro Aggiorna risorsa **** DAM.
 1. Dal modello di flusso di lavoro **[!UICONTROL DAM Update Asset]** (Aggiorna risorsa **[!UICONTROL DAM), aprite il passaggio delle miniature]** EPS (basato su ImageMagick).
 1. Nella scheda **[!UICONTROL Argomenti]**, aggiungete `image/jpeg` all&#39;elenco **[!UICONTROL Tipi]** mime.
 
@@ -48,11 +48,11 @@ Sono disponibili diverse versioni dei file di installazione ImageMagic per vari 
 
    ![select_flags](assets/select_flags.png)
 
-1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, specificate i dettagli per la rappresentazione con dimensioni 1280x1280 pixel. Inoltre, specificate *image/jpeg* nella casella **[!UICONTROL Mimetype]** .
+1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, specificate i dettagli per la rappresentazione con dimensioni 1280x1280 pixel. Inoltre, specificate `image/jpeg` nella casella **[!UICONTROL Mimetype]** .
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tap/click **[!UICONTROL OK]** to save the changes.
+1. Fate clic su **[!UICONTROL OK]** per salvare le modifiche.
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Sono disponibili diverse versioni dei file di installazione ImageMagic per vari 
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, aggiungere il tipo MIME `image/jpeg` sotto l&#39;elenco **** Salta. Tap/click **[!UICONTROL OK]** to save the changes.
+1. Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, aggiungere il tipo MIME `image/jpeg` sotto l&#39;elenco **** Salta. Fate clic su **[!UICONTROL OK]** per salvare le modifiche.
 
    ![web_enabled](assets/web_enabled.png)
 
