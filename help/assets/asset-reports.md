@@ -3,7 +3,7 @@ title: Report sulle risorse digitali
 description: Comprendi i rapporti sulle tue risorse in Risorse AEM che ti aiutano a capire l’utilizzo, l’attività e la condivisione delle tue risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a839ec71e02ee5d92f054a686b7bb52142058ae9
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -36,12 +36,12 @@ Risorse AEM genera i seguenti rapporti standard:
 
 Gli amministratori di AEM possono generare e personalizzare facilmente questi rapporti per la vostra implementazione. Per generare un rapporto, un amministratore può effettuare le seguenti operazioni:
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
+1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
 
 ![Pagina degli strumenti per navigare nel rapporto delle risorse](assets/AssetsReportNavigation.png)
 
-1. Nella pagina Rapporti risorse, toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
-1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto che desiderate creare e toccate o fate clic su **[!UICONTROL Avanti]**.
+1. Nella pagina Rapporti  risorse, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto da creare e fate clic su **[!UICONTROL Avanti]**.
 
    ![Selezionare il tipo di rapporto](assets/choose_report.png)
 
@@ -53,7 +53,7 @@ Gli amministratori di AEM possono generare e personalizzare facilmente questi ra
    >
    >Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto Risorse scaricate. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
 
-1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è */content/dam*. Potete specificare un percorso diverso.
+1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Potete specificare un percorso diverso.
 
    ![Pagina per aggiungere i dettagli del rapporto](assets/report_configuration.png)
 
@@ -83,7 +83,7 @@ Gli amministratori di AEM possono generare e personalizzare facilmente questi ra
 
    ![Pagina dei dettagli del rapporto Condivisione collegamenti](assets/link_share.png)
 
-1. Toccate o fate clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
+1. Fare clic su **[!UICONTROL Avanti]** dalla barra degli strumenti.
 
 1. Nella pagina **[!UICONTROL Configura colonne]** , per impostazione predefinita nel rapporto vengono selezionate alcune colonne. È possibile selezionare più colonne. Deselezionate una colonna selezionata per escluderla nel rapporto.
 
@@ -91,14 +91,14 @@ Gli amministratori di AEM possono generare e personalizzare facilmente questi ra
 
    Per visualizzare un nome di colonna personalizzato o un percorso di proprietà, configurate le proprietà per il binario della risorsa sotto il nodo jcr:content in CRX. In alternativa, aggiungetelo tramite il selettore del percorso della proprietà.
 
-   ![Creare colonne personalizzate per il rapporto](assets/custom_columns.png)
+   ![Seleziona o deseleziona le colonne del rapporto](assets/custom_columns.png)
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. Un messaggio notifica che è stata avviata la generazione del report.
-1. Nella pagina Rapporti risorse, lo stato di generazione del rapporto si basa sullo stato corrente del processo del rapporto, ad esempio Successo, Non riuscito, In coda o Pianificato. Lo stesso stato viene visualizzato nella inbox delle notifiche. Per visualizzare la pagina del rapporto, toccate o fate clic sul collegamento del rapporto. In alternativa, seleziona il rapporto e tocca **[!UICONTROL Visualizza]** dalla barra degli strumenti.
+1. Fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
+1. Nella pagina Rapporti risorse, lo stato di generazione del rapporto si basa sullo stato corrente del processo del rapporto, ad esempio Successo, Non riuscito, In coda o Pianificato. Lo stesso stato viene visualizzato nella inbox delle notifiche.Per visualizzare la pagina del rapporto, fai clic sul collegamento del rapporto. In alternativa, selezionate il rapporto e fate clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 
    ![Report generato](assets/report_page.png)
 
-   Toccate **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
+   Fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
 
 ## Aggiungere colonne personalizzate {#add-custom-columns}
 
@@ -112,10 +112,10 @@ Puoi aggiungere colonne personalizzate ai report seguenti per visualizzare più 
 * Pubblicazione Brand Portal
 * File
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
-1. Nella pagina Rapporti risorse, toccate o fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
+1. Nella pagina Rapporti  risorse, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 
-1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto che desiderate creare e toccate o fate clic su **[!UICONTROL Avanti]**.
+1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto da creare e fate clic su **[!UICONTROL Avanti]**.
 1. Configura i dettagli del rapporto come titolo, descrizione, miniatura, percorso della cartella e intervallo di date, a seconda delle necessità.
 
 1. Per visualizzare una colonna personalizzata, specificane il nome in **[!UICONTROL Colonne personalizzate]**.
@@ -126,9 +126,9 @@ Puoi aggiungere colonne personalizzate ai report seguenti per visualizzare più 
 
    ![Mappare il percorso della proprietà dai percorsi in jcr:content](assets/property_picker.png)
 
-   Per aggiungere altre colonne personalizzate, toccate/fate clic su **[!UICONTROL Aggiungi]** e ripetete i passaggi 5 e 6.
+   Per aggiungere altre colonne personalizzate, fare clic su **[!UICONTROL Aggiungi]** e ripetere i passaggi 5 e 6.
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. Un messaggio notifica che è stata avviata la generazione del report.
+1. Fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
 
 ## Configurare il servizio di eliminazione {#configure-purging-service}
 
