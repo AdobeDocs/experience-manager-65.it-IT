@@ -3,7 +3,7 @@ title: Esperienza della home page di AEM Assets
 description: Personalizza la home page di Risorse AEM per un’esperienza sulla schermata di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -14,7 +14,7 @@ Personalizza la home page di Risorse Adobe Experience Manager (AEM) per un’esp
 
 La home page di Risorse AEM offre una schermata di benvenuto ricca e personalizzata, che include un&#39;istantanea delle attività recenti, come le risorse che sono state visualizzate o caricate di recente.
 
-La home page delle risorse è disabilitata per impostazione predefinita. Per attivarla, effettuare le seguenti operazioni:
+Per impostazione predefinita, la home page delle risorse è disattivata. Per attivarla, effettuare le seguenti operazioni:
 
 1. Aprite AEM Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite il servizio **[!UICONTROL Day CQ DAM Event Recorder]** .
@@ -41,7 +41,7 @@ Dopo aver attivato la home page delle risorse, passa all’interfaccia utente de
 
 ![configura collegamento esperienza nell’interfaccia utente di Risorse](assets/config-experience-link.png)
 
-Toccate o fate clic su **[!UICONTROL Fate clic qui per configurare il collegamento]** dell&#39;esperienza per aggiungere il vostro nome utente, l&#39;immagine di sfondo e l&#39;immagine del profilo.
+Fate clic su **[!UICONTROL Clicca qui per configurare il collegamento]** dell&#39;esperienza per aggiungere il vostro nome utente, l&#39;immagine di sfondo e l&#39;immagine del profilo.
 
 La home page delle risorse include le seguenti sezioni:
 
