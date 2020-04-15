@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -63,7 +63,7 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Tocca o fai clic sull’opzione **[!UICONTROL Stato scadenza]** per espanderla.
+1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -105,7 +105,7 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Toccate **[!UICONTROL Pubblica]** dalla barra degli strumenti. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , toccate **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **[!UICONTROL Pubblica]** .
+1. Fate clic su **[!UICONTROL Pubblica]** nella barra degli strumenti. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **[!UICONTROL Pubblica]** .
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -114,7 +114,7 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Nell’interfaccia utente Risorse, seleziona una risorsa e tocca **[!UICONTROL Proprietà]** per visualizzare la pagina dei dettagli della risorsa.
+1. Nell’interfaccia Risorse, seleziona una risorsa e fai clic su **[!UICONTROL Proprietà]** per visualizzarne la pagina dei dettagli.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -136,16 +136,16 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Per cercare le risorse in base al loro stato, toccate **[!UICONTROL Cerca]** per visualizzare la barra di ricerca Omnico.
+1. Per cercare le risorse in base al loro stato, fate clic su **[!UICONTROL Cerca]** per visualizzare la barra di ricerca Omnico.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Premere Invio, quindi toccare **[!UICONTROL GlobalNav]** per visualizzare il pannello di ricerca.
-1. Nel pannello Ricerca, tocca o fai clic su **[!UICONTROL Stato pubblicazione]** e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in AEM Assets.
+1. Premere Invio, quindi fare clic su **[!UICONTROL GlobalNav]** per visualizzare il pannello di ricerca.
+1. In the Search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Per cercare le risorse approvate o rifiutate, tocca/fai clic su **[!UICONTROL Stato approvazione]** e seleziona l’opzione appropriata.
+1. Click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -159,15 +159,15 @@ La console Risorse di Adobe Experience Manager (AEM) Assets può visualizzare va
 
 ## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
 
-Questa funzione applica l’accettazione del contratto di licenza prima che possiate scaricare una risorsa con licenza da Risorse Adobe Experience Manager (AEM).
+Questa funzione applica l’accettazione del contratto di licenza prima che possiate scaricare una risorsa con licenza da Risorse Adobe Experience Manager.
 
-Se selezionate una risorsa protetta e toccate **[!UICONTROL Scarica]**, verrete reindirizzati a una pagina di licenza in cui accettate il contratto di licenza. Se non accettate il contratto di licenza, il pulsante **[!UICONTROL Scarica]** è disattivato.
+Se selezionate una risorsa protetta e fate clic su **[!UICONTROL Scarica]**, verrete reindirizzati a una pagina di licenza in cui accettate il contratto di licenza. Se non accettate il contratto di licenza, il pulsante **[!UICONTROL Scarica]** è disattivato.
 
 Se la selezione contiene più risorse protette, selezionate una risorsa alla volta, accettate il contratto di licenza e continuate a scaricare la risorsa.
 
 Una risorsa è considerata protetta se una delle seguenti condizioni è soddisfatta:
 
-* La proprietà dei metadati della risorsa `xmpRights:WebStatement` indica il percorso della pagina CQ che contiene il contratto di licenza per la risorsa.
+* La proprietà dei metadati della risorsa `xmpRights:WebStatement` indica il percorso della pagina che contiene il contratto di licenza per la risorsa.
 * Il valore della proprietà di metadati della risorsa `adobe_dam:restrictions` è un codice HTML non elaborato che specifica il contratto di licenza.
 
 >[!NOTE]
@@ -180,7 +180,7 @@ Una risorsa è considerata protetta se una delle seguenti condizioni è soddisfa
 
 1. Nella vista Scheda, selezionate le risorse da scaricare e fate clic su **[!UICONTROL Scarica]**.
 1. Nella pagina **[!UICONTROL Gestione copyright]**, seleziona dall’elenco la risorsa da scaricare.
-1. Nel riquadro Licenza, scegliere **[!UICONTROL Accetto]**. Accanto alla risorsa per la quale accettate il contratto di licenza viene visualizzato un segno di spunta. Toccate o fate clic sul pulsante **[!UICONTROL Scarica]** .
+1. Nel riquadro Licenza, scegliere **[!UICONTROL Accetto]**. Accanto alla risorsa per la quale accettate il contratto di licenza viene visualizzato un segno di spunta. Fate clic sul pulsante **[!UICONTROL Scarica]** .
 
    >[!NOTE]
    >
@@ -188,4 +188,4 @@ Una risorsa è considerata protetta se una delle seguenti condizioni è soddisfa
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Scarica]** per scaricare la risorsa o le relative rappresentazioni.
+1. Nella finestra di dialogo, fate clic su **[!UICONTROL Scarica]** per scaricare la risorsa o le relative rappresentazioni.
