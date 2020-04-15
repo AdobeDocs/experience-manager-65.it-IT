@@ -3,7 +3,7 @@ title: Organizzazione delle risorse digitali
 description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -21,15 +21,15 @@ Il modo più semplice per organizzare le risorse è salvarle in cartelle. È ana
 * Nella maggior parte dei casi, l’archivio delle risorse digitali è in continua crescita. Pertanto, è importante formalizzare l’utilizzo dei metadati, la struttura delle cartelle e la denominazione dei file all’inizio del ciclo di creazione dei contenuti.
 * Utilizzate le cartelle solo per imporre una struttura di memorizzazione coerente alle risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono essere utili per utilizzare [i profili appropriati per l’elaborazione](processing-profiles.md)delle risorse:
 
-   * **Cartelle** di sviluppo - contiene le risorse digitali su cui state lavorando.
-   * **Cartelle** client: contiene risorse digitali basate sui nomi dei client o dei progetti.
-   * **Cartelle** master - contiene risorse digitali originali.
-   * **Cartelle** di rappresentazione - contiene rappresentazioni e copie delle risorse digitali originali.
+   * **Cartelle** di sviluppo: contiene le risorse digitali su cui state lavorando.
+   * **Cartelle** client: contiene risorse digitali basate su client o nomi di progetti.
+   * **Cartelle** principali: contiene risorse digitali originali.
+   * **Cartelle** di rendering: contiene rappresentazioni e copie delle risorse digitali originali.
    * **Cartelle** Dimensione file: contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
-   * **Cartelle** di gestione temporanea: contiene risorse digitali pronte per la pubblicazione sul sito Web.
+   * **Gestione delle cartelle**: contiene risorse digitali pronte per la pubblicazione live sul sito Web.
    * **Cartelle** di tipo MIME: contiene risorse digitali specifiche per tipi MIME quali immagini, documenti e contenuti multimediali.
-   * **Archivia cartelle** - contiene le risorse digitali ritirate.
-   * **Cartelle** basate su data: contiene risorse digitali basate su una data di creazione o un’ultima modifica.
+   * **Archivia cartelle**: contiene risorse digitali ritirate.
+   * **Cartelle** basate su data: contiene risorse digitali in base a una data di creazione o all’ultima data di modifica.
 
 * Create una directory di cartelle che probabilmente non verrà modificata in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
 * Se una risorsa è già pubblicata, utilizzate AEM per spostare la risorsa in un’altra cartella e ripubblicatela dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, viene *persa* in AEM e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
@@ -63,7 +63,7 @@ Un profilo di elaborazione contiene i comandi di elaborazione delle risorse appl
 
 La standardizzazione dell’utilizzo dei metadati, della denominazione dei file e della struttura delle cartelle garantisce che, con la crescita del pool di risorse digitali, i profili di elaborazione possano essere applicati alle cartelle con maggiore precisione e coerenza.
 
-Per ulteriori informazioni sui vari profili che puoi creare e gestire per elaborare le risorse, vedi
+Per ulteriori informazioni sui diversi profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
 
 * [Profili per elaborare metadati, immagini e video](processing-profiles.md)
 * [Profili metadati](metadata-profiles.md)
