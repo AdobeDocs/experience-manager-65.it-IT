@@ -3,7 +3,7 @@ title: Gestione di smart tag e ricerche
 description: Aggiornare o rimuovere gli smart tag non accurati per migliorare la pertinenza dei tag
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -20,12 +20,12 @@ La moderazione degli smart tag consente inoltre di perfezionare le ricerche basa
 
 Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza rispetto a un’immagine. La promozione di un tag per un’immagine aumenta le probabilità che l’immagine venga visualizzata nei risultati di ricerca quando viene eseguita una ricerca in base al tag specifico.
 
-1. Nella casella di ricerca Omni, cercate le risorse in base a un tag.
-1. Controllate i risultati della ricerca per identificare un’immagine che non vi interessa.
-1. Selezionate l’immagine, quindi toccate **[!UICONTROL Gestisci tag]** dalla barra degli strumenti.
-1. Dalla pagina **[!UICONTROL Gestisci tag]** , ispezionate i tag. Se non desiderate che l’immagine venga cercata in base a un tag specifico, selezionate il tag e toccate **[!UICONTROL Elimina]** dalla barra degli strumenti. In alternativa, toccate o fate clic `X` sul simbolo visualizzato accanto all’etichetta.
-1. Per assegnare un rango più alto a un tag, selezionatelo e toccate **[!UICONTROL Promuovi]** dalla barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
-1. Tocca o fai clic su **[!UICONTROL Salva]**, quindi su **[!UICONTROL OK]** per chiudere la finestra di dialogo Successo.
+1. Nella casella di ricerca Omnico, cercate le risorse in base a un tag.
+1. Controllate i risultati della ricerca per identificare un’immagine che non trovate rilevante per la ricerca.
+1. Selezionate l’immagine e fate clic su **[!UICONTROL Gestisci tag]** nella barra degli strumenti.
+1. Dalla pagina **[!UICONTROL Gestisci tag]** , ispezionate i tag. Se non desiderate che l’immagine venga cercata in base a un tag specifico, selezionate il tag e fate clic su **[!UICONTROL Elimina]** nella barra degli strumenti. In alternativa, fare clic sul `X` simbolo visualizzato accanto all&#39;etichetta.
+1. Per assegnare un rango più alto a un tag, selezionatelo e fate clic su **[!UICONTROL Promuovi]** nella barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
+1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Passate alla pagina delle proprietà dell’immagine. Osservate che al tag promosso è stata assegnata un’elevata rilevanza e, di conseguenza, appare più alta nei risultati della ricerca.
 
 ## Comprendere i risultati della ricerca AEM con gli smart tag {#understandsearch}
@@ -36,7 +36,7 @@ Per impostazione predefinita, la ricerca AEM combina i termini di ricerca con un
 
 * assets smart tag con una delle parole chiave.
 
-I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Nell&#39;esempio precedente, l&#39;ordine approssimativo di visualizzazione dei risultati della ricerca è:
+I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a uno qualsiasi dei termini di ricerca negli smart tag. Nell&#39;esempio precedente, l&#39;ordine approssimativo di visualizzazione dei risultati della ricerca è:
 
 1. corrispondenze di `woman running` nei vari campi di metadati.
 1. corrispondenze di `woman running` in smart tag.
