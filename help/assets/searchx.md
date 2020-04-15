@@ -1,24 +1,24 @@
 ---
-title: Estendi la funzionalità di ricerca di AEM Assets
-description: Estendi le funzionalità di ricerca di Risorse AEM oltre i valori predefiniti.
+title: Estendere la funzionalità di ricerca di Risorse Adobe Experience Manager
+description: Estendi le funzionalità di ricerca di Risorse Adobe Experience Manager oltre i valori predefiniti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
 # Estendi ricerca risorse {#extending-assets-search}
 
-Puoi estendere le funzionalità di ricerca di Risorse Adobe Experience Manager (AEM). Risorse AEM cerca automaticamente le risorse in base alle stringhe.
+Potete estendere le funzionalità di [!DNL Adobe Experience Manager Assets] ricerca. Consente di [!DNL Experience Manager Assets] cercare le risorse in base alle stringhe.
 
 La ricerca viene eseguita tramite l&#39;interfaccia QueryBuilder, in modo da personalizzare la ricerca con diversi predicati. Potete sovrapporre il set predefinito di predicati nella seguente directory: `/apps/dam/content/search/searchpanel/facets`.
 
-Puoi anche aggiungere altre schede al pannello di amministrazione di Risorse AEM.
+Potete anche aggiungere ulteriori schede al pannello [!DNL Assets] Amministrazione.
 
 >[!CAUTION]
 >
->A partire da AEM 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consultate [Funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsolete e rimosse. È consigliabile utilizzare l’interfaccia touch. Per la personalizzazione, consultate Facet di [ricerca](/help/assets/search-facets.md).
+>A partire dalla versione [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consultate [Funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsolete e rimosse. Adobe consiglia di utilizzare l&#39;interfaccia touch. Per la personalizzazione, consultate Facet di [ricerca](/help/assets/search-facets.md).
 
 ## Sovrapposizione {#overlaying}
 
@@ -29,7 +29,6 @@ Per sovrapporre i predicati preconfigurati, copiate il `facets` nodo da `/libs/d
 >[!NOTE]
 >
 >Per impostazione predefinita, la struttura di directory in / `apps` non esiste e deve essere creata. Assicurarsi che i tipi di nodo corrispondano a quelli in / `libs`.
-
 
 ## Aggiungi schede {#adding-tabs}
 
@@ -44,7 +43,7 @@ Puoi aggiungere ulteriori schede di ricerca configurandole nell’amministratore
 
 ## Creare predicati personalizzati {#creating-custom-predicates}
 
-Risorse AEM include un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
+[!DNL Assets] viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è inclusa nella sezione relativa alla [creazione e alla configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)Condivisione di risorse.
 
 Oltre a utilizzare i predicati preesistenti, gli sviluppatori AEM possono anche creare i propri predicati utilizzando l&#39;API [](/help/sites-developing/querybuilder-api.md)Query Builder.
 
@@ -136,7 +135,7 @@ Per creare un predicato di proprietà:
    </script>
    ```
 
-1. Per rendere disponibile il componente, è necessario essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungete un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungete una proprietà con più valori **cq:actions** con un singolo valore **CANC**.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
 1. Passate al browser e nella pagina di esempio (ad esempio, **press.html**) passate alla modalità di progettazione e attivate il nuovo componente per il sistema di paragrafi del predicato (ad esempio, **a sinistra**).
 
 1. In modalità **Modifica** , il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca** ). Inserite il componente nella colonna **Predicati** e digitate una parola di ricerca, ad esempio **Romboidale** , quindi fate clic sulla lente di ingrandimento per avviare la ricerca.
@@ -240,7 +239,7 @@ Per creare un predicato di gruppo:
        });
    ```
 
-1. Per rendere disponibile il componente, è necessario essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungete un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungete una proprietà con più valori **cq:actions** con un singolo valore **CANC**.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
 1. Passate al browser e nella pagina di esempio (ad esempio, **press.html**) passate alla modalità di progettazione e attivate il nuovo componente per il sistema di paragrafi del predicato (ad esempio, **a sinistra**).
 1. In modalità **Modifica** , il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca** ). Inserite il componente nella colonna **Predicati** .
 
