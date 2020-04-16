@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -51,9 +51,11 @@ Per il servizio Forms sono disponibili i seguenti Avvio rapido:
 
 La logica dell&#39;applicazione che utilizza l&#39;API del servizio Forms è implementata come servlet Java. Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
-* **Nota**: Gli avvii rapidi disponibili in Programmazione con v si basano sul server dei moduli in uso in un altro sistema operativo, ad esempio Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
+>[!NOTE]
+>
+>Gli avvii rapidi disponibili in Programmazione con v si basano sul server dei moduli in uso in un altro sistema operativo, ad esempio Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
-   **Suggerimento**: Il sito Web di Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che esegue il richiamo del servizio Forms ed esegue il rendering dei moduli. Vedere [Creazione di applicazioni](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET per il rendering dei moduli.
+**Suggerimento**: Il sito Web di Adobe Developer contiene l&#39;articolo seguente che illustra come creare un&#39;applicazione ASP.NET che esegue il richiamo del servizio Forms ed esegue il rendering dei moduli. Vedere [Creazione di applicazioni](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET per il rendering dei moduli.
 
 ## Avvio rapido (modalità SOAP): Rendering di un modulo PDF interattivo mediante l&#39;API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
