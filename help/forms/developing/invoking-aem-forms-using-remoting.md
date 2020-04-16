@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -37,7 +37,7 @@ Il seguente processo di breve durata di AEM Forms, denominato `MyApplication/Enc
 
 Quando viene richiamato, questo processo esegue le azioni seguenti:
 
-1. Ottiene il documento PDF non protetto che viene passato come valore di input. Questa azione è basata sull&#39; `SetValue` operazione. Il nome del parametro di input è `inDoc` e il tipo di dati è `document`. (Il tipo di `document` dati è un tipo di dati disponibile in Workbench).
+1. Ottiene il documento PDF non protetto che viene passato come valore di input. Questa azione è basata sull&#39; `SetValue` operazione. Il nome del parametro di input è `inDoc` e il relativo tipo di dati è `document`. (Il tipo di `document` dati è un tipo di dati disponibile in Workbench).
 1. Cifra il documento PDF con una password. Questa azione è basata sull&#39; `PasswordEncryptPDF` operazione. Il nome del valore di output per questo processo è `outDoc` e rappresenta il documento PDF crittografato con password. Il tipo di dati di outDoc è `document`.
 1. Salva il documento PDF crittografato con password come file PDF nel file system locale. Questa azione è basata sull&#39; `WriteDocument` operazione.
 
@@ -125,12 +125,12 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* Se il documento non è sul server, usate il servlet di caricamento remoto per caricare un documento in AEM Forms. La novità in AEM Forms è la possibilità di caricare documenti protetti. Quando caricate un documento protetto, dovete utilizzare un utente con il ruolo utente *dell&#39;applicazione* Document Upload (Caricamento documento). Senza questo ruolo, l&#39;utente non può caricare un documento protetto. È consigliabile utilizzare il single sign-on per caricare un documento protetto. (vedere [Trasmissione di documenti protetti per richiamare i processi tramite Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+* Se il documento non è sul server, usate il servlet di caricamento Remoto per caricare un documento in AEM Forms. La novità in AEM Forms è la possibilità di caricare documenti protetti. Quando caricate un documento protetto, dovete utilizzare un utente con il ruolo utente *dell&#39;applicazione* Document Upload (Caricamento documento). Senza questo ruolo, l&#39;utente non può caricare un documento protetto. È consigliabile utilizzare il single sign-on per caricare un documento protetto. (vedere [Trasmissione di documenti protetti per richiamare i processi tramite Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-   **Nota**: se AEM Forms è configurato per consentire il caricamento di documenti non protetti, potete utilizzare un utente che non dispone del ruolo Utente applicazione di caricamento documenti per caricare un documento. Un utente può anche disporre dell’autorizzazione Carica documento. Tuttavia, se AEM Forms è configurato per consentire solo documenti protetti, accertatevi che l&#39;utente disponga del ruolo Utente applicazione di caricamento del documento o dell&#39;autorizzazione Carica documento. (consultate [Configurazione di AEM Forms per accettare documenti](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)sicuri e non protetti.)
+>[!NOTE]
+se AEM Forms è configurato per consentire il caricamento di documenti non protetti, potete utilizzare un utente che non dispone del ruolo Utente applicazione di caricamento documenti per caricare un documento. Un utente può anche disporre dell’autorizzazione Carica documento. Tuttavia, se AEM Forms è configurato per consentire solo documenti protetti, accertatevi che l&#39;utente disponga del ruolo Utente applicazione di caricamento del documento o dell&#39;autorizzazione Carica documento. (consultate [Configurazione di AEM Forms per accettare documenti](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)sicuri e non.
 
-   Per l’URL di caricamento designato potete usare le funzionalità di caricamento Flash standard: `https://SERVER:PORT/remoting/lcfileupload`. È quindi possibile utilizzare l&#39; `DocumentReference` oggetto ovunque sia previsto un parametro di input di tipo `Document`
-   ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`La Avvio rapido remoto utilizza il servlet di caricamento remoto per passare un file PDF al `MyApplication/EncryptDocument`processo. (Consultate [Richiamo di un processo di breve durata mediante il passaggio di un documento non sicuro tramite la funzione di rimozione](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)di AEM Forms (obsoleto per i moduli AEM).)
+Per l’URL di caricamento designato potete usare le funzionalità di caricamento Flash standard: `https://SERVER:PORT/remoting/lcfileupload`. È quindi possibile utilizzare l&#39; `DocumentReference` oggetto ovunque sia previsto `Document` un parametro di input di tipo` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`La Guida rapida remota utilizza il servlet di caricamento remoto per passare un file PDF al `MyApplication/EncryptDocument`processo. (Consultate [Richiamo di un processo di breve durata mediante il passaggio di un documento non sicuro tramite la funzione di rimozione](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)di AEM Forms (obsoleto per i moduli AEM).)
 
 ```java
  
@@ -167,7 +167,7 @@ La Avvio rapido remoto utilizza il servlet di caricamento remoto per passare un 
 
 ### Ripristino di un documento a un&#39;applicazione client {#passing-a-document-back-to-a-client-application}
 
-Un&#39;applicazione client riceve un oggetto di tipo `mx.rpc.livecycle.DocumentReference` per un&#39;operazione di servizio che restituisce un&#39; `com.adobe.idp.Document` istanza come parametro di output. Poiché un&#39;applicazione client si occupa di oggetti ActionScript e non di Java, non è possibile restituire un oggetto Document basato su Java a un client Flex. Il server genera invece un URL per il documento e ritorna l&#39;URL al client. La proprietà `DocumentReference` dell&#39; `referenceType` oggetto specifica se il contenuto si trova nell&#39; `DocumentReference` oggetto o se è necessario recuperarlo da un URL nella `DocumentReference.url` proprietà. La `DocumentReference.contentType` proprietà specifica il tipo di documento.
+Un&#39;applicazione client riceve un oggetto di tipo `mx.rpc.livecycle.DocumentReference` per un&#39;operazione di servizio che restituisce un&#39; `com.adobe.idp.Document` istanza come parametro di output. Poiché un&#39;applicazione client si occupa di oggetti ActionScript e non di Java, non è possibile restituire un oggetto Document basato su Java a un client Flex. Il server genera invece un URL per il documento e ritorna l&#39;URL al client. La proprietà `DocumentReference` dell&#39; `referenceType` oggetto specifica se il contenuto si trova nell&#39; `DocumentReference` &#39;oggetto o se è necessario recuperarlo da un URL nella `DocumentReference.url` proprietà. La `DocumentReference.contentType` proprietà specifica il tipo di documento.
 
 **Consulta anche**
 
@@ -191,15 +191,15 @@ Per richiamare un processo AEM Forms da un’applicazione integrata con Flex, ef
 1. Gestire i valori restituiti.
 
 >[!NOTE]
-In questa sezione viene illustrato come richiamare un processo AEM Forms e caricare un documento quando AEM Forms è configurato per caricare documenti non protetti. Per informazioni su come richiamare i processi AEM Forms e caricare i documenti protetti, nonché su come configurare AEM Forms per accettare documenti protetti e non protetti, consultate [Passaggio di documenti protetti per richiamare i processi tramite Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+In questa sezione viene illustrato come richiamare un processo AEM Forms e caricare un documento quando AEM Forms è configurato per caricare documenti non protetti. Per informazioni su come richiamare i processi AEM Forms e caricare i documenti protetti, nonché su come configurare AEM Forms per accettare documenti protetti e non protetti, consultate [Trasmissione di documenti protetti per richiamare i processi tramite Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **Creazione di un&#39;istanza mx:RemoteObject**
 
 È possibile creare un&#39; `mx:RemoteObject` istanza per richiamare un processo AEM Forms creato in Workbench. Per creare un’ `mx:RemoteObject` istanza, specificate i seguenti valori:
 
-* **** id: Il nome dell&#39; `mx:RemoteObject` istanza che rappresenta il processo da richiamare.
-* **** destinazione: Nome del processo AEM Forms da richiamare. Ad esempio, per richiamare il `MyApplication/EncryptDocument` processo, specificare `MyApplication/EncryptDocument`.
-* **** risultato: Nome del metodo Flex che gestisce il risultato.
+* **id:** Il nome dell&#39; `mx:RemoteObject` istanza che rappresenta il processo da richiamare.
+* **destinazione:** Nome del processo AEM Forms da richiamare. Ad esempio, per richiamare il `MyApplication/EncryptDocument` processo, specificare `MyApplication/EncryptDocument`.
+* **risultato:** Nome del metodo Flex che gestisce il risultato.
 
 All&#39;interno del `mx:RemoteObject` tag , specificate un `<mx:method>` tag che specifica il nome del metodo di chiamata del processo. In genere, il nome di un metodo di chiamata Forms è `invoke`.
 
@@ -248,7 +248,7 @@ L&#39;esempio di codice seguente passa un documento PDF al `MyApplication/Encryp
      ...
 ```
 
-In questo esempio di codice `pdfDocument` è un&#39; `DocumentReference` istanza contenente un documento PDF non protetto. Per informazioni su un `DocumentReference`, consultate [Gestione dei documenti con (obsoleto per i moduli AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
+In questo esempio di codice `pdfDocument` è un&#39; `DocumentReference` istanza che contiene un documento PDF non protetto. Per informazioni su un `DocumentReference`, consultate [Gestione dei documenti con (obsoleto per i moduli AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
 
 **Richiamo di una versione specifica di un servizio**
 
@@ -265,7 +265,7 @@ Il `version` parametro deve essere una stringa contenente un singolo punto. I va
 
 **Gestione dei valori restituiti**
 
-I parametri di output del processo AEM Forms sono deserializzati in oggetti ActionScript dai quali l&#39;applicazione client estrae parametri specifici per nome, come illustrato nell&#39;esempio seguente. Il valore di output del `MyApplication/EncryptDocument` processo è denominato `outDoc`.
+I parametri di output del processo di AEM Forms sono deserializzati in oggetti ActionScript dai quali l&#39;applicazione client estrae parametri specifici per nome, come illustrato nell&#39;esempio seguente. Il valore di output del `MyApplication/EncryptDocument` processo è denominato `outDoc`.
 
 ```as3
      ...
@@ -285,7 +285,7 @@ I parametri di output del processo AEM Forms sono deserializzati in oggetti Acti
 1. Crittografare il documento PDF chiamando il `mx:RemoteObject` metodo dell&#39; `invoke` istanza. Passa il parametro `Object` che contiene il parametro di input (ovvero il documento PDF non protetto). Vedere Trasmissione dei valori di input.
 1. Recuperare il documento PDF crittografato con password restituito dal processo. Consultate Gestione dei valori restituiti.
 
-[Avvio rapido:Richiamo di un processo di breve durata passando un documento non sicuro utilizzando (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
+[Avvio rapido: Richiamo di un processo di breve durata passando un documento non sicuro utilizzando (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
 
 ## Autenticazione di applicazioni client integrate con Flex {#authenticating-client-applications-built-with-flex}
 
@@ -296,14 +296,14 @@ L&#39;autenticazione di base si basa sull&#39;autenticazione di base J2EE standa
 Per l&#39;autenticazione personalizzata, il server invia un errore al client per indicare che l&#39;autenticazione è necessaria.
 
 >[!NOTE]
-Per informazioni sull&#39;esecuzione dell&#39;autenticazione mediante i token HTTP, consultate [Creazione di applicazioni Flash Builder che eseguono l&#39;autenticazione SSO tramite token](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)HTTP.
+Per informazioni sull&#39;esecuzione dell&#39;autenticazione mediante i token HTTP, consultate [Creazione di applicazioni Flash Builder che eseguono l&#39;autenticazione SSO utilizzando i token](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)HTTP.
 
 ### Utilizzo dell&#39;autenticazione personalizzata {#using-custom-authentication}
 
 Per abilitare l&#39;autenticazione personalizzata nella console di amministrazione, cambi il metodo di autenticazione da Base a Personalizzato sull&#39;endpoint remoto. Se utilizzate l&#39;autenticazione personalizzata, l&#39;applicazione client chiama il `ChannelSet.login` metodo di accesso e il `ChannelSet.logout` metodo di disconnessione.
 
 >[!NOTE]
-Nella precedente versione di AEM Forms, hai inviato le credenziali a una destinazione chiamando il `RemoteObject.setCredentials` metodo. Il `setCredentials` metodo non ha passato le credenziali al server fino al primo tentativo del componente di connettersi al server. Pertanto, se il componente ha emesso un evento di errore, non è possibile stabilire se l&#39;errore è dovuto a un errore di autenticazione o per un altro motivo. Il `ChannelSet.login` metodo si connette al server quando lo si chiama in modo da poter gestire immediatamente un problema di autenticazione. Anche se potete continuare a utilizzare il `setCredentials` metodo, si consiglia di utilizzare il `ChannelSet.login` metodo.
+Nella precedente versione di AEM Forms, hai inviato le credenziali a una destinazione chiamando il `RemoteObject.setCredentials` metodo. Il `setCredentials` metodo non ha passato le credenziali al server fino al primo tentativo del componente di connettersi al server. Pertanto, se il componente ha emesso un evento di errore, non è possibile stabilire se l&#39;errore è dovuto a un errore di autenticazione o per un altro motivo. Il `ChannelSet.login` metodo si connette al server quando lo si chiama, in modo da poter gestire immediatamente un problema di autenticazione. Anche se potete continuare a utilizzare il `setCredentials` metodo, si consiglia di utilizzare il `ChannelSet.login` metodo.
 
 Poiché più destinazioni possono utilizzare gli stessi canali e l&#39;oggetto ChannelSet corrispondente, l&#39;accesso a una destinazione consente all&#39;utente di accedere a qualsiasi altra destinazione che utilizza lo stesso canale o gli stessi canali. Se due componenti applicano credenziali diverse allo stesso oggetto ChannelSet, vengono utilizzate le ultime credenziali applicate. Se più componenti utilizzano lo stesso oggetto ChannelSet autenticato, la chiamata del `logout` metodo comporta la disconnessione di tutti i componenti dalle destinazioni.
 
@@ -509,7 +509,7 @@ Un&#39;applicazione client accede ad AEM Forms tramite un endpoint remoto utiliz
 
 Un&#39;applicazione integrata con Flex include il cookie di autenticazione con ogni richiesta a un servizio AEM Forms. Per motivi di prestazioni, AEM Forms non convalida il cookie per ogni richiesta. Tuttavia, in AEM Forms viene rilevato se un cookie di autenticazione viene sostituito con un altro cookie di autenticazione.
 
-Ad esempio, si avvia un&#39;applicazione client e mentre l&#39;applicazione è attiva, per disconnettersi si utilizza il servizio di accesso centralizzato. Potete quindi effettuare l’accesso come un altro utente. L&#39;accesso come utente diverso sostituisce il cookie di autenticazione esistente con un cookie di autenticazione per il nuovo utente.
+Ad esempio, si avvia un&#39;applicazione client e mentre l&#39;applicazione è attiva, per disconnettersi si utilizza il servizio di accesso centralizzato. Dopodiché, potete effettuare l’accesso come un altro utente. L&#39;accesso come utente diverso sostituisce il cookie di autenticazione esistente con un cookie di autenticazione per il nuovo utente.
 
 Nella richiesta successiva dell&#39;applicazione client, AEM Forms rileva che il cookie è stato modificato ed effettua l&#39;accesso all&#39;utente. Pertanto, la prima richiesta dopo la modifica di un cookie non riesce. Tutte le richieste successive vengono effettuate nel contesto del nuovo cookie e hanno esito positivo.
 
@@ -537,7 +537,7 @@ Potete avviare un&#39;applicazione client integrata con Flex e utilizzare il ser
 
 ## Trasmissione di documenti protetti per richiamare i processi tramite Remoting {#passing-secure-documents-to-invoke-processes-using-remoting}
 
-È possibile trasmettere documenti protetti ad AEM Forms quando si richiama un processo che richiede uno o più documenti. Trasmettendo un documento protetto, l&#39;utente protegge le informazioni commerciali e i documenti riservati. In questa situazione, un documento può fare riferimento a un documento PDF, XML, Word e così via. Quando AEM Forms è configurato per consentire documenti protetti, è necessario trasmettere un documento protetto ad AEM Forms da un&#39;applicazione client scritta in Flex. (consultate [Configurazione di AEM Forms per accettare documenti](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)sicuri e non protetti.)
+È possibile trasmettere documenti protetti ad AEM Forms quando si richiama un processo che richiede uno o più documenti. Trasmettendo un documento protetto, l&#39;utente protegge le informazioni commerciali e i documenti riservati. In questa situazione, un documento può fare riferimento a un documento PDF, a un documento XML, a un documento Word e così via. Quando AEM Forms è configurato per consentire documenti protetti, è necessario trasmettere un documento protetto ad AEM Forms da un&#39;applicazione client scritta in Flex. (consultate [Configurazione di AEM Forms per accettare documenti](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)sicuri e non protetti.)
 
 Quando si passa un documento protetto, utilizzare il single sign-on e specificare un utente di moduli AEM con il ruolo utente *dell&#39;applicazione* Document Upload. Senza questo ruolo, l&#39;utente non può caricare un documento protetto. È possibile assegnare un ruolo a un utente a livello di programmazione. Consultate [Gestione di ruoli e autorizzazioni](/help/forms/developing/users.md#managing-roles-and-permissions).
 
@@ -603,7 +603,7 @@ AEM Forms supporta un’operazione denominata `getFileUploadToken` che restituis
 
 È possibile utilizzare la console di amministrazione per specificare se i documenti sono protetti quando si passa un documento da un&#39;applicazione client Flex a un processo AEM Forms. Per impostazione predefinita, AEM Forms è configurato per accettare documenti protetti. Puoi configurare AEM Forms per accettare documenti protetti eseguendo i passaggi seguenti:
 
-1. Accedere alla console di amministrazione.
+1. Accedete alla console di amministrazione.
 1. Fate clic su **Impostazioni**.
 1. Fate clic su Impostazioni **di sistema di base.**
 1. Fate clic su Configurazioni.
@@ -614,7 +614,7 @@ Per configurare AEM Forms per l&#39;accettazione di documenti non protetti, sele
 
 ### Avvio rapido: Richiamo di un processo di breve durata passando un documento protetto tramite Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
-Nell&#39;esempio di codice riportato di seguito viene richiamato `MyApplication/EncryptDocument.`Un utente che deve effettuare l&#39;accesso per fare clic sul pulsante Seleziona file utilizzato per caricare un file PDF e avviare il processo. Una volta autenticato l&#39;utente, viene attivato il pulsante Seleziona file. L&#39;illustrazione seguente mostra l&#39;applicazione client Flex dopo l&#39;autenticazione di un utente. Tenere presente che la casella di controllo autenticata è abilitata.
+Nell&#39;esempio di codice riportato di seguito viene richiamato `MyApplication/EncryptDocument.`Un utente che deve effettuare l&#39;accesso per fare clic sul pulsante Seleziona file utilizzato per caricare un file PDF e avviare il processo. Una volta autenticato l&#39;utente, viene attivato il pulsante Seleziona file. L&#39;illustrazione seguente mostra l&#39;applicazione client Flex dopo che un utente è stato autenticato. Tenere presente che la casella di controllo autenticata è abilitata.
 
 ![iu_iu_security_emoelogin](assets/iu_iu_secureremotelogin.png)
 
