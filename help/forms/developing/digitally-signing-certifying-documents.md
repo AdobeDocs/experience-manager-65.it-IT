@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -27,9 +27,9 @@ Il servizio Firma consente alla tua organizzazione di proteggere la sicurezza e 
 
 **Nomi dei campi firma**
 
-Per alcune operazioni del servizio Firma è necessario specificare il nome del campo firma in cui viene eseguita l&#39;operazione. Ad esempio, durante la firma di un documento PDF è possibile specificare il nome del campo firma da firmare. Si supponga che il nome completo del campo firma sia `form1[0].Form1[0].SignatureField1[0]`. Potete specificare `SignatureField1[0]` invece di `form1[0].Form1[0].SignatureField1[0]`.
+Per alcune operazioni del servizio Firma è necessario specificare il nome del campo firma in cui viene eseguita l&#39;operazione. Ad esempio, durante la firma di un documento PDF è possibile specificare il nome del campo firma da firmare. Si supponga che il nome completo di un campo firma sia `form1[0].Form1[0].SignatureField1[0]`. Potete specificare `SignatureField1[0]` invece di `form1[0].Form1[0].SignatureField1[0]`.
 
-A volte un conflitto causa la firma del campo errato da parte del servizio Firma (o un&#39;altra operazione che richiede il nome del campo firma). Questo conflitto è il risultato della `SignatureField1[0]` visualizzazione del nome in due o più punti dello stesso documento PDF. Ad esempio, si consideri un documento PDF contenente due campi firma denominati `form1[0].Form1[0].SignatureField1[0]` e `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` si specifica `SignatureField1[0]`. In questa situazione, il servizio Firma firma firma firma il primo campo da trovare durante l&#39;iterazione su tutti i campi firma del documento.
+A volte un conflitto causa la firma del campo errato da parte del servizio Firma (o un&#39;altra operazione che richiede il nome del campo firma). Questo conflitto è il risultato della `SignatureField1[0]` visualizzazione del nome in due o più punti dello stesso documento PDF. Ad esempio, si consideri un documento PDF che contiene due campi firma denominati `form1[0].Form1[0].SignatureField1[0]` e `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` che è possibile specificare `SignatureField1[0]`. In questa situazione, il servizio Firma firma firma firma il primo campo da trovare durante l&#39;iterazione su tutti i campi firma del documento.
 
 Se all&#39;interno di un documento PDF sono presenti più campi firma, è consigliabile specificare i nomi completi dei campi firma. Ovvero, specificate `form1[0].Form1[0].SignatureField1[0]`invece di `SignatureField1[0]`.
 
@@ -38,13 +38,15 @@ Se all&#39;interno di un documento PDF sono presenti più campi firma, è consig
 * Aggiungere ed eliminare campi firma digitale a un documento PDF. (Vedere [Aggiunta di campi](digitally-signing-certifying-documents.md#adding-signature-fields)firma.)
 * Recuperare i nomi dei campi firma presenti in un documento PDF. (Vedere [Recupero Dei Nomi](digitally-signing-certifying-documents.md#retrieving-signature-field-names)Dei Campi Firma.)
 * Modificare i campi firma. (Vedere [Modifica dei campi](digitally-signing-certifying-documents.md#modifying-signature-fields)firma.)
-* Firma digitale dei documenti PDF. (Vedere Firma [digitale di documenti](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF.)
+* Firmare digitalmente i documenti PDF. (Vedere Firma [digitale di documenti](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)PDF.)
 * Certificare documenti PDF. (Vedere [Certificazione di documenti](digitally-signing-certifying-documents.md#certifying-pdf-documents)PDF.)
 * Convalidare le firme digitali presenti in un documento PDF. (Vedere [Verifica delle firme](digitally-signing-certifying-documents.md#verifying-digital-signatures)digitali.)
 * Convalidare tutte le firme digitali presenti in un documento PDF. (Vedere [Verifica di più firme](digitally-signing-certifying-documents.md#verifying-digital-signatures)digitali.)
 * Rimuovere una firma digitale da un campo firma. (Vedere [Rimozione delle firme](digitally-signing-certifying-documents.md#removing-digital-signatures)digitali.)
 
-   ***Nota **: Per ulteriori informazioni sul servizio Firma, consultate Riferimento[servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+> Per ulteriori informazioni sul servizio Firma, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Aggiunta di campi firma {#adding-signature-fields}
 
@@ -140,7 +142,7 @@ Aggiungere un campo firma utilizzando l&#39;API Signature (Java):
 
 1. Salvare il documento PDF come file PDF
 
-   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione sia .pdf.
+   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione del file sia .pdf.
    * Richiama il `com.adobe.idp`. `Document` metodo dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `Document` oggetto nel file. Accertatevi di utilizzare il `com.adobe.idp`. `Document` oggetto restituito dal `addSignatureField` metodo.
 
 **Consulta anche**
@@ -281,7 +283,7 @@ Recupera i nomi dei campi firma utilizzando l&#39;API Signature (Java):
 1. Recuperare i nomi dei campi firma
 
    * Recuperare i nomi dei campi firma richiamando il metodo dell&#39; `SignatureServiceClient` oggetto `getSignatureFieldList` e passando l&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF contenente i campi firma. Questo metodo restituisce un `java.util.List` oggetto, in cui ogni elemento contiene un `PDFSignatureField` oggetto. Utilizzando questo oggetto, è possibile ottenere informazioni aggiuntive su un campo firma, ad esempio se è visibile o meno.
-   * Eseguire un&#39;iterazione sull&#39; `java.util.List` oggetto per determinare se sono presenti nomi di campo firma. Per ciascun campo firma del documento PDF è possibile ottenere un `PDFSignatureField` oggetto separato. Per ottenere il nome del campo firma, richiamare il metodo `PDFSignatureField` dell&#39;oggetto `getName` . Questo metodo restituisce un valore di stringa che specifica il nome del campo firma.
+   * Eseguire un&#39;iterazione sull&#39; `java.util.List` oggetto per determinare se sono presenti nomi di campo firma. Per ciascun campo firma del documento PDF è possibile ottenere un `PDFSignatureField` oggetto a parte. Per ottenere il nome del campo firma, richiamare il metodo `PDFSignatureField` dell&#39;oggetto `getName` . Questo metodo restituisce un valore di stringa che specifica il nome del campo firma.
 
 **Consulta anche**
 
@@ -295,7 +297,7 @@ Recupera i nomi dei campi firma utilizzando l&#39;API Signature (Java):
 
 ### Recupero del campo firma tramite l&#39;API del servizio Web {#retrieve-signature-field-using-the-web-service-api}
 
-Recupera i nomi dei campi firma utilizzando l&#39;API Signature (servizio Web):
+Recuperare i nomi dei campi firma utilizzando l&#39;API Signature (servizio Web):
 
 1. Includi file di progetto
 
@@ -343,11 +345,11 @@ Recupera i nomi dei campi firma utilizzando l&#39;API Signature (servizio Web):
 
 È possibile modificare i campi firma che si trovano in un documento PDF utilizzando l&#39;API Java e l&#39;API del servizio Web. La modifica di un campo firma comporta la manipolazione dei valori del dizionario del blocco del campo firma o dei valori del dizionario dei valori iniziali.
 
-Un dizionario *per il blocco dei* campi specifica un elenco di campi bloccati al momento della firma del campo firma. Un campo bloccato impedisce agli utenti di apportare modifiche al campo. Un dizionario *dei valori* iniziali contiene informazioni restrittive utilizzate al momento dell&#39;applicazione della firma. Ad esempio, è possibile modificare le autorizzazioni che controllano le azioni che possono verificarsi senza invalidare una firma.
+Un dizionario *per il blocco dei* campi specifica un elenco di campi che vengono bloccati al momento della firma del campo firma. Un campo bloccato impedisce agli utenti di apportare modifiche al campo. Un dizionario *dei valori* iniziali contiene informazioni restrittive utilizzate al momento dell&#39;applicazione della firma. Ad esempio, è possibile modificare le autorizzazioni che controllano le azioni che possono verificarsi senza invalidare una firma.
 
 Modificando un campo firma esistente, è possibile apportare modifiche al documento PDF per riflettere i diversi requisiti aziendali. Ad esempio, un nuovo requisito aziendale potrebbe richiedere il blocco di tutti i campi del documento dopo la firma del documento.
 
-In questa sezione viene illustrato come modificare un campo firma modificando sia i valori del dizionario dei valori di blocco dei campi che i valori del dizionario dei valori iniziali. Le modifiche apportate al dizionario dei blocchi del campo firma causano il blocco di tutti i campi del documento PDF al momento della firma di un campo firma. Le modifiche apportate al dizionario dei valori iniziali non consentono di apportare al documento specifici tipi di modifiche.
+In questa sezione viene illustrato come modificare un campo firma modificando sia i valori del dizionario dei valori di blocco dei campi che i valori del dizionario dei valori dei valori iniziali. Le modifiche apportate al dizionario dei blocchi del campo firma causano il blocco di tutti i campi del documento PDF al momento della firma di un campo firma. Le modifiche apportate al dizionario dei valori iniziali non consentono l&#39;utilizzo di tipi specifici di modifiche al documento.
 
 >[!NOTE]
 >
@@ -398,11 +400,11 @@ Per modificare un campo firma, assegnare valori al relativo dizionario di blocco
 * **Filtro**: Specifica il filtro utilizzato con il campo firma. Ad esempio, potete utilizzare il filtro Adobe.PPKLite. (Vedere Riferimento [](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)PDF.)
 * **Opzioni** contrassegno: Specifica i valori dei flag associati al campo firma. Il valore 1 indica che il firmatario deve utilizzare solo i valori specificati per la voce. Il valore 0 indica che sono consentiti altri valori. Ecco le posizioni Bit:
 
-   * **** 1(Filtro): Gestore di firme da utilizzare per firmare il campo firma
-   * **** 2 (SubFilter): Un array di nomi che indica codifiche accettabili da utilizzare per la firma
+   * **1(Filtro):** Gestore di firme da utilizzare per firmare il campo firma
+   * **2 (SubFilter):** Un array di nomi che indica codifiche accettabili da utilizzare per la firma
    * **3 (V)**: Numero di versione minimo richiesto del gestore di firme da utilizzare per firmare il campo firma
-   * **** 4 (Motivi): Un array di stringhe che specifica i possibili motivi della firma di un documento
-   * **** 5 (PDFLegalWarnings): Un array di stringhe che specifica possibili attestazioni legali
+   * **4 (Motivi):** Un array di stringhe che specifica i possibili motivi per la firma di un documento
+   * **5 (PDFLegalWarnings):** Un array di stringhe che specifica possibili attestazioni legali
 
 * **Attestati** legali: Quando un documento è certificato, viene automaticamente analizzato per specifici tipi di contenuto che possono rendere il contenuto visibile di un documento ambiguo o fuorviante. Ad esempio, un’annotazione può oscurare il testo importante per comprendere ciò che viene certificato. Il processo di scansione genera avvisi che indicano la presenza di questo tipo di contenuto. Fornisce inoltre una spiegazione aggiuntiva del contenuto che potrebbe aver generato avvisi.
 * **Autorizzazioni**: Specifica le autorizzazioni che possono essere utilizzate in un documento PDF senza invalidare la firma.
@@ -416,7 +418,7 @@ Dopo aver creato un client del servizio Firma, recuperare il documento PDF conte
 
 **Salvare il documento PDF come file PDF**
 
-Salvare come file PDF il documento PDF contenente il campo firma modificato per consentirne l&#39;apertura in Acrobat o Adobe Reader.
+Salvare come file PDF il documento PDF contenente il campo firma modificato in modo che gli utenti possano aprirlo in Acrobat o Adobe Reader.
 
 **Consulta anche**
 
@@ -543,9 +545,9 @@ Modificare un campo firma utilizzando l&#39;API Signature (servizio Web):
 
 ## Firma digitale di documenti PDF {#digitally-signing-pdf-documents}
 
-Le firme digitali possono essere applicate ai documenti PDF per garantire un livello di protezione elevato. Le firme digitali, come le firme autografe, forniscono un mezzo mediante il quale i firmatari si identificano e pronunciano dichiarazioni su un documento. La tecnologia utilizzata per firmare digitalmente i documenti garantisce che sia il firmatario che i destinatari siano consapevoli di ciò che è stato firmato e che il documento non sia stato alterato dopo la firma.
+Le firme digitali possono essere applicate ai documenti PDF per garantire un livello di protezione elevato. Le firme digitali, come le firme autografe, forniscono un mezzo mediante il quale i firmatari si identificano e pronunciano dichiarazioni su un documento. La tecnologia utilizzata per firmare digitalmente i documenti garantisce che sia il firmatario che i destinatari siano consapevoli di ciò che è stato firmato e che il documento non sia stato alterato dall&#39;apposizione della firma.
 
-I documenti PDF sono firmati mediante la tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una privata. La chiave privata è memorizzata nella credenziale di un utente che deve essere disponibile al momento della firma. La chiave pubblica è memorizzata nel certificato dell&#39;utente e deve essere disponibile ai destinatari per convalidare la firma. Le informazioni sui certificati revocati si trovano negli elenchi di revoche di certificati (CRL) e nelle risposte del protocollo di stato del certificato online (OCSP) distribuite dalle autorità di certificazione (CA). L&#39;ora della firma può essere ottenuta da un&#39;origine affidabile nota come Autorità di marca temporale.
+I documenti PDF sono firmati mediante la tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una chiave privata. La chiave privata è memorizzata nella credenziale di un utente che deve essere disponibile al momento della firma. La chiave pubblica è memorizzata nel certificato dell&#39;utente e deve essere disponibile ai destinatari per convalidare la firma. Le informazioni sui certificati revocati si trovano negli elenchi di revoche di certificati (CRL) e nelle risposte del protocollo di stato del certificato online (OCSP) distribuite dalle autorità di certificazione (CA). L&#39;ora della firma può essere ottenuta da un&#39;origine affidabile nota come Autorità di marca temporale.
 
 >[!NOTE]
 >
@@ -553,10 +555,10 @@ I documenti PDF sono firmati mediante la tecnologia a chiave pubblica. Un firmat
 
 È possibile firmare i documenti PDF a livello di programmazione. Durante la firma digitale di un documento PDF, è necessario fare riferimento a una credenziale di protezione esistente in AEM Forms. La credenziale è la chiave privata utilizzata per la firma.
 
-Durante la firma di un documento PDF, il servizio Firma esegue i seguenti passaggi:
+Durante la firma di un documento PDF, il servizio Signature esegue i seguenti passaggi:
 
 1. Il servizio Signature recupera la credenziale dal TrustStore passando l&#39;alias specificato nella richiesta.
-1. Il TrustStore cerca le credenziali specificate.
+1. Il TrustStore cerca la credenziale specificata.
 1. Le credenziali vengono restituite al servizio Firma e utilizzate per firmare il documento. La credenziale viene inoltre memorizzata nella cache rispetto all&#39;alias per richieste future.
 
 Per informazioni sulla gestione delle credenziali di protezione, consultate la guida *Installazione e distribuzione di AEM Forms* per il server delle applicazioni.
@@ -640,7 +642,7 @@ Durante la firma di un documento PDF, è possibile impostare le opzioni di esecu
 
 * **NoCheck**: Non eseguire il controllo della revoca.
 * **BestEffort**: Tentate sempre di verificare la revoca di tutti i certificati nella catena. Se si verifica un problema nella verifica, si presume che la revoca sia valida. Se si verifica un errore, si supponga che il certificato non venga revocato.
-* **** CheckIfAvailable: Verificare la revoca di tutti i certificati nella catena se sono disponibili informazioni sulla revoca. Se si verifica un problema nella verifica, si presume che la revoca non sia valida. Se si verifica un errore, si presuppone che il certificato sia revocato e non sia valido. Questo è il valore predefinito.
+* **CheckIfAvailable:** Verificare la revoca di tutti i certificati nella catena se sono disponibili informazioni sulla revoca. Se si verifica un problema nella verifica, si presume che la revoca non sia valida. Se si verifica un errore, si presuppone che il certificato sia revocato e non sia valido. Questo è il valore predefinito.
 * **AlwaysCheck**: Verificare la revoca di tutti i certificati nella catena. Se le informazioni sulla revoca non sono presenti in alcun certificato, si presume che la revoca non sia valida.
 
 Per eseguire il controllo della revoca su un certificato, è possibile specificare un URL di un server dell&#39;elenco di revoche di certificati (CRL) utilizzando un `CRLOptionSpec` oggetto. Tuttavia, se si desidera eseguire il controllo delle revoche e non si specifica un URL per un server CRL, il servizio Signature ottiene l&#39;URL dal certificato.
@@ -649,17 +651,17 @@ Invece di utilizzare un server CRL, è possibile utilizzare un server OCSP (Cert
 
 È possibile impostare l&#39;ordine del server CRL e OCSP utilizzato dal servizio Signature utilizzando Adobe Applications and Services. Ad esempio, se il server OCSP è impostato per primo in Adobe Applications and Services, il server OCSP è selezionato, seguito dal server CRL. (vedere &quot;Gestione di certificati e credenziali tramite Trust Store&quot; nell&#39;Aiuto di AAC).
 
-Se si specifica di non eseguire il controllo di revoca, il servizio Firma non controlla se il certificato utilizzato per firmare o certificare un documento è stato revocato. In altre parole, le informazioni sui server CRL e OCSP vengono ignorate.
+Se si specifica di non eseguire il controllo di revoca, il servizio Firma non controlla se il certificato utilizzato per firmare o certificare un documento è stato revocato. In altre parole, le informazioni relative al server CRL e OCSP vengono ignorate.
 
 >[!NOTE]
 >
->Sebbene sia possibile specificare un CRL o un server OCSP nel certificato, è possibile sostituire l&#39;URL specificato nel certificato utilizzando un `CRLOptionSpec` oggetto e un `OCSPOptionSpec` oggetto. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo dell&#39; `CRLOptionSpec` oggetto `setLocalURI` .
+>Sebbene nel certificato sia possibile specificare un CRL o un server OCSP, è possibile sostituire l&#39;URL specificato nel certificato utilizzando un `CRLOptionSpec` oggetto e un `OCSPOptionSpec` oggetto. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo dell&#39; `CRLOptionSpec` oggetto `setLocalURI` .
 
 La marca temporale indica il processo di tracciamento dell&#39;ora in cui un documento firmato o certificato è stato modificato. Una volta firmato, il documento non deve essere modificato, neanche dal proprietario del documento. La marca temporale consente di applicare la validità di un documento firmato o certificato. È possibile impostare le opzioni di marca temporale utilizzando un `TSPOptionSpec` oggetto. Ad esempio, potete specificare l&#39;URL di un server provider di marca temporale (TSP).
 
 >[!NOTE]
 >
->In Java e nel servizio Web passano attraverso le sezioni e il relativo avvio rapido, viene utilizzato il controllo di revoca. Poiché non sono specificate informazioni sul server CRL o OCSP, le informazioni sul server vengono ottenute dal certificato utilizzato per firmare digitalmente il documento PDF.
+>In Java e nel servizio Web passano attraverso le sezioni e il relativo avvio rapido, viene utilizzato il controllo delle revoche. Poiché non sono specificate informazioni sul server CRL o OCSP, le informazioni sul server vengono ottenute dal certificato utilizzato per firmare digitalmente il documento PDF.
 
 Per firmare correttamente un documento PDF, è possibile specificare il nome completo del campo firma che conterrà la firma digitale, ad esempio `form1[0].#subform[1].SignatureField3[3]`. Quando si utilizza un campo modulo XFA, è possibile utilizzare anche il nome parziale del campo firma: `SignatureField3[3]`.
 
@@ -714,13 +716,13 @@ Firmare digitalmente un documento PDF utilizzando l&#39;API Signature (Java):
    * Un `PDFSignatureAppearanceOptions` oggetto che controlla l&#39;aspetto della firma digitale. Ad esempio, è possibile utilizzare questo oggetto per aggiungere un logo personalizzato a una firma digitale.
    * Un `java.lang.Boolean` oggetto che specifica se eseguire il controllo di revoca sul certificato del firmatario.
    * Un `OCSPOptionSpec` oggetto che memorizza le preferenze per il supporto del protocollo OCSP (Online Certificate Status Protocol). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
-   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
+   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoca dei certificati (CRL, Certificate Revocation List). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
    * Un `TSPPreferences` oggetto che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Questo parametro è facoltativo e può essere `null`. Per ulteriori informazioni, consulta [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API per AEM Forms.
    Il `sign` metodo restituisce un `com.adobe.idp.Document` oggetto che rappresenta il documento PDF firmato.
 
 1. Salvare il documento PDF firmato
 
-   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione sia .pdf.
+   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione del file sia .pdf.
    * Richiamare il `com.adobe.idp.Document` metodo dell&#39; `copyToFile` oggetto e passare `java.io.File`al file il contenuto dell&#39; `Document` oggetto. Assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `sign` metodo.
 
 **Consulta anche**
@@ -776,12 +778,12 @@ Per firmare digitalmente un documento PDF utilizzando l&#39;API Signature (servi
    * Un `HashAlgorithm` oggetto che specifica un membro di dati statici che rappresenta l&#39;algoritmo hash da utilizzare per rigenerare il documento PDF. Ad esempio, potete specificare `HashAlgorithm.SHA1` l&#39;utilizzo dell&#39;algoritmo SHA1.
    * Un valore booleano che specifica se utilizzare l&#39;algoritmo hash.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato firmato digitalmente.
-   * Una stringa che rappresenta la posizione del firmatario.
+   * Un valore di stringa che rappresenta la posizione del firmatario.
    * Una stringa che rappresenta le informazioni di contatto del firmatario.
    * Un `PDFSignatureAppearanceOptions` oggetto che controlla l&#39;aspetto della firma digitale. Ad esempio, è possibile utilizzare questo oggetto per aggiungere un logo personalizzato a una firma digitale.
    * Un `System.Boolean` oggetto che specifica se eseguire il controllo di revoca sul certificato del firmatario. Se il controllo di revoca viene eseguito, viene incorporato nella firma. Il valore predefinito è `false`.
    * Un `OCSPOptionSpec` oggetto che memorizza le preferenze per il supporto del protocollo OCSP (Online Certificate Status Protocol). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`. Per informazioni su questo oggetto, consultate Guida di riferimento [delle API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
-   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
+   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoca dei certificati (CRL, Certificate Revocation List). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
    * Un `TSPPreferences` oggetto che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Questo parametro è facoltativo e può essere `null`.
    Il `sign` metodo restituisce un `BLOB` oggetto che rappresenta il documento PDF firmato.
 
@@ -850,7 +852,7 @@ Poiché in questo flusso di lavoro vengono richiamati sia i servizi Forms che i 
 
 **Ottenere il modulo interattivo utilizzando il servizio Forms**
 
-È possibile utilizzare il servizio Moduli per ottenere il modulo PDF interattivo da firmare. Con AEM Forms è possibile trasmettere un `com.adobe.idp.Document` oggetto al servizio Forms che contiene il modulo da eseguire. Il nome di questo metodo è `renderPDFForm2`. Questo metodo restituisce un `com.adobe.idp.Document` oggetto contenente il modulo da firmare. È possibile trasmettere questa `com.adobe.idp.Document` istanza al servizio Signature.
+È possibile utilizzare il servizio Moduli per ottenere il modulo PDF interattivo da firmare. Con AEM Forms è possibile trasmettere un `com.adobe.idp.Document` oggetto al servizio Forms che contiene il modulo da eseguire. Il nome di questo metodo è `renderPDFForm2`. Questo metodo restituisce un `com.adobe.idp.Document` oggetto che contiene il modulo da firmare. È possibile trasmettere questa `com.adobe.idp.Document` istanza al servizio Signature.
 
 Analogamente, se si utilizzano i servizi Web, è possibile trasmettere l&#39; `BLOB` istanza restituita dal servizio Forms al servizio Signature.
 
@@ -858,7 +860,7 @@ Analogamente, se si utilizzano i servizi Web, è possibile trasmettere l&#39; `B
 >
 >L&#39;avvio rapido associato alla sezione Moduli interattivi per la firma digitale richiama il `renderPDFForm2` metodo.
 
-**Firma del modulo interattivo**
+**Firmare il modulo interattivo**
 
 Durante la firma di un documento PDF, è possibile impostare le opzioni di esecuzione utilizzate dal servizio Firma. Potete impostare le seguenti opzioni:
 
@@ -874,7 +876,7 @@ Dopo che il servizio Firma ha apposto la firma digitale al documento PDF, è pos
 
 **Consulta anche**
 
-[Firma digitale di un modulo interattivo mediante l&#39;API Java](digitally-signing-certifying-documents.md#digitally-sign-an-interactive-form-using-the-java-api)
+[Firmare digitalmente un modulo interattivo utilizzando l&#39;API Java](digitally-signing-certifying-documents.md#digitally-sign-an-interactive-form-using-the-java-api)
 
 [Firma digitale di un modulo interattivo tramite l&#39;API del servizio Web](digitally-signing-certifying-documents.md#digitally-sign-an-interactive-form-using-the-web-service-api)
 
@@ -886,7 +888,7 @@ Dopo che il servizio Firma ha apposto la firma digitale al documento PDF, è pos
 
 [Rendering di moduli PDF interattivi](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
 
-### Firma digitale di un modulo interattivo mediante l&#39;API Java {#digitally-sign-an-interactive-form-using-the-java-api}
+### Firmare digitalmente un modulo interattivo utilizzando l&#39;API Java {#digitally-sign-an-interactive-form-using-the-java-api}
 
 Firmare digitalmente un modulo interattivo utilizzando l&#39;API Forms e Signature (Java):
 
@@ -919,7 +921,7 @@ Firmare digitalmente un modulo interattivo utilizzando l&#39;API Forms e Signatu
    * Recuperare il modulo PDF richiamando il `FormsResult` metodo dell&#39; `getOutputContent` . Questo metodo restituisce un `com.adobe.idp.Document` oggetto che rappresenta il modulo interattivo.
 
 
-1. Firma del modulo interattivo
+1. Firmare il modulo interattivo
 
    Firmare il documento PDF richiamando il metodo dell&#39; `SignatureServiceClient` oggetto `sign` e passando i seguenti valori:
 
@@ -932,7 +934,7 @@ Firmare digitalmente un modulo interattivo utilizzando l&#39;API Forms e Signatu
    * Un `PDFSignatureAppearanceOptions` oggetto che controlla l&#39;aspetto della firma digitale. Ad esempio, è possibile utilizzare questo oggetto per aggiungere un logo personalizzato a una firma digitale.
    * Un `java.lang.Boolean` oggetto che specifica se eseguire il controllo di revoca sul certificato del firmatario.
    * Un `OCSPPreferences` oggetto che memorizza le preferenze per il supporto del protocollo OCSP (Online Certificate Status Protocol). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
-   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
+   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoca dei certificati (CRL, Certificate Revocation List). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
    * Un `TSPPreferences` oggetto che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Questo parametro è facoltativo e può essere `null`.
    Il `sign` metodo restituisce un `com.adobe.idp.Document` oggetto che rappresenta il documento PDF firmato.
 
@@ -1003,13 +1005,13 @@ Firmare digitalmente un modulo interattivo utilizzando l&#39;API Forms e Signatu
       * Un `PDFFormRenderSpec` oggetto che memorizza le opzioni di esecuzione.
       * Un `URLSpec` oggetto che contiene valori URI richiesti dal servizio Forms. Potete specificare `null` il valore di questo parametro.
       * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
-      * Parametro di output lungo utilizzato per memorizzare il numero di pagine nel modulo.
+      * Un parametro di output lungo utilizzato per memorizzare il numero di pagine nel modulo.
       * Un parametro di output della stringa utilizzato per il valore delle impostazioni internazionali.
       * Un `FormResult` valore che è un parametro di output utilizzato per memorizzare il modulo interattivo.
    * Mantenere il modulo PDF richiamando il campo `FormsResult` dell&#39; `outputContent` oggetto. Questo campo memorizza un `BLOB` oggetto che rappresenta il modulo interattivo.
 
 
-1. Firma del modulo interattivo
+1. Firmare il modulo interattivo
 
    Firmare il documento PDF richiamando il metodo dell&#39; `SignatureServiceClient` oggetto `sign` e passando i seguenti valori:
 
@@ -1019,12 +1021,12 @@ Firmare digitalmente un modulo interattivo utilizzando l&#39;API Forms e Signatu
    * Un `HashAlgorithm` oggetto che specifica un membro di dati statici che rappresenta l&#39;algoritmo hash da utilizzare per rigenerare il documento PDF. Ad esempio, potete specificare `HashAlgorithm.SHA1` l&#39;utilizzo dell&#39;algoritmo SHA1.
    * Un valore booleano che specifica se utilizzare l&#39;algoritmo hash.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato firmato digitalmente.
-   * Una stringa che rappresenta la posizione del firmatario.
+   * Un valore di stringa che rappresenta la posizione del firmatario.
    * Una stringa che rappresenta le informazioni di contatto del firmatario.
    * Un `PDFSignatureAppearanceOptions` oggetto che controlla l&#39;aspetto della firma digitale. Ad esempio, è possibile utilizzare questo oggetto per aggiungere un logo personalizzato a una firma digitale.
    * Un `System.Boolean` oggetto che specifica se eseguire il controllo di revoca sul certificato del firmatario. Se il controllo di revoca viene eseguito, viene incorporato nella firma. Il valore predefinito è `false`.
    * Un `OCSPPreferences` oggetto che memorizza le preferenze per il supporto del protocollo OCSP (Online Certificate Status Protocol). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`. Per informazioni su questo oggetto, consultate Guida di riferimento [delle API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
-   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
+   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoca dei certificati (CRL, Certificate Revocation List). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
    * Un `TSPPreferences` oggetto che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Questo parametro è facoltativo e può essere `null`.
    Il `sign` metodo restituisce un `BLOB` oggetto che rappresenta il documento PDF firmato.
 
@@ -1046,10 +1048,10 @@ Firmare digitalmente un modulo interattivo utilizzando l&#39;API Forms e Signatu
 È possibile proteggere un documento PDF certificandolo con un particolare tipo di firma denominato firma certificata. Una firma certificata si distingue da una firma digitale nei seguenti modi:
 
 * Deve essere la prima firma applicata al documento PDF; ovvero, al momento dell&#39;applicazione della firma certificata, tutti gli altri campi firma nel documento devono essere defirmati. In un documento PDF è consentita una sola firma certificata. Se si desidera firmare e certificare un documento PDF, è necessario certificarlo prima di firmarlo. Dopo aver certificato un documento PDF, è possibile apporre una firma digitale ad altri campi firma.
-* L&#39;autore o l&#39;autore del documento può specificare che il documento può essere modificato in alcuni modi senza invalidare la firma certificata. Ad esempio, il documento può consentire la compilazione di moduli o commenti. Se l&#39;autore specifica che non è consentita una determinata modifica, Acrobat impedisce agli utenti di modificare il documento in questo modo. Se tali modifiche vengono apportate, ad esempio utilizzando un&#39;altra applicazione, la firma certificata non è valida e Acrobat visualizza un avviso quando un utente apre il documento. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
+* L&#39;autore o l&#39;autore del documento può specificare che il documento può essere modificato in alcuni modi senza invalidare la firma certificata. Ad esempio, il documento può consentire la compilazione di moduli o commenti. Se l&#39;autore specifica che non è consentita una determinata modifica, Acrobat impedisce agli utenti di modificare il documento in questo modo. Se tali modifiche vengono apportate, ad esempio utilizzando un&#39;altra applicazione, la firma certificata non è valida e Acrobat visualizza un avviso all&#39;apertura del documento da parte dell&#39;utente. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
 * Al momento della firma, il documento viene analizzato per individuare specifici tipi di contenuto che potrebbero rendere il contenuto di un documento ambiguo o fuorviante. Ad esempio, un’annotazione potrebbe oscurare del testo in una pagina importante per comprendere cosa viene certificato. Una spiegazione (attestato legale) può essere fornita su tale contenuto.
 
-È possibile certificare i documenti PDF a livello di programmazione utilizzando l&#39;API Java del servizio firma o l&#39;API del servizio Web per la firma. Durante la certificazione di un documento PDF, è necessario fare riferimento a una credenziale di protezione esistente nel servizio Credenziali. Per informazioni sulle credenziali di protezione, consultate la guida *Installazione e distribuzione di AEM Forms* per il server delle applicazioni.
+È possibile certificare i documenti PDF a livello di programmazione utilizzando l&#39;API Java del servizio di firma o l&#39;API del servizio Web per la firma. Durante la certificazione di un documento PDF, è necessario fare riferimento a una credenziale di protezione esistente nel servizio Credenziali. Per informazioni sulle credenziali di protezione, consultate la guida *Installazione e distribuzione di AEM Forms* per il server delle applicazioni.
 
 >[!NOTE]
 >
@@ -1172,13 +1174,13 @@ Certificare un documento PDF utilizzando l&#39;API Signature (Java):
    * Un `java.lang.Boolean` oggetto che specifica se eseguire il controllo di revoca sul certificato del firmatario. Se il controllo di revoca viene eseguito, viene incorporato nella firma. Il valore predefinito è `false`.
    * Un `java.lang.Boolean` oggetto che specifica se il campo firma certificato è bloccato. Se il campo è bloccato, il campo firma è contrassegnato come di sola lettura, le relative proprietà non possono essere modificate e non può essere cancellato da chiunque non disponga delle autorizzazioni necessarie. Il valore predefinito è `false`.
    * Un `OCSPPreferences` oggetto che memorizza le preferenze per il supporto del protocollo OCSP (Online Certificate Status Protocol). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`. Per informazioni su questo oggetto, consultate Guida di riferimento [alle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
-   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
+   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoca dei certificati (CRL, Certificate Revocation List). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
    * Un `TSPPreferences` oggetto che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Ad esempio, dopo aver creato un `TSPPreferences` oggetto, è possibile impostare l&#39;URL del server TSP richiamando il `TSPPreferences` metodo dell&#39;oggetto `setTspServerURL` . Questo parametro è facoltativo e può essere `null`. Per ulteriori informazioni, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
    Il `certify` metodo restituisce un `com.adobe.idp.Document` oggetto che rappresenta il documento PDF certificato.
 
 1. Salvare il documento PDF certificato come file PDF
 
-   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione sia .pdf.
+   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione del file sia .pdf.
    * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file.
 
 **Consulta anche**
@@ -1234,7 +1236,7 @@ Certificare un documento PDF utilizzando l&#39;API Signature (servizio Web):
    * Un `HashAlgorithm` oggetto che specifica un membro di dati statici che rappresenta l&#39;algoritmo hash utilizzato per digest del documento PDF. Ad esempio, potete specificare `HashAlgorithm.SHA1` l&#39;utilizzo dell&#39;algoritmo SHA1.
    * Un valore booleano che specifica se utilizzare l&#39;algoritmo hash.
    * Valore stringa che rappresenta il motivo per cui il documento PDF è stato certificato.
-   * Una stringa che rappresenta la posizione del firmatario.
+   * Un valore di stringa che rappresenta la posizione del firmatario.
    * Una stringa che rappresenta le informazioni di contatto del firmatario.
    * Membro di dati statici di un `MDPPermissions` oggetto che specifica le azioni che è possibile eseguire sul documento PDF per annullare la validità della firma.
    * Un valore booleano che specifica se utilizzare l&#39; `MDPPermissions` oggetto passato come valore del parametro precedente.
@@ -1244,7 +1246,7 @@ Certificare un documento PDF utilizzando l&#39;API Signature (servizio Web):
    * Un `System.Boolean` oggetto che specifica se il campo firma certificato è bloccato. Se il campo è bloccato, il campo firma è contrassegnato come di sola lettura, le relative proprietà non possono essere modificate e non può essere cancellato da chiunque non disponga delle autorizzazioni necessarie. Il valore predefinito è `false`.
    * Un `System.Boolean` oggetto che specifica se il campo firma è bloccato. Ovvero, se passate `true` al parametro precedente, passate `true` a questo parametro.
    * Un `OCSPPreferences` oggetto che memorizza le preferenze per il supporto del protocollo OCSP (Online Certificate Status Protocol), che fornisce informazioni sullo stato delle credenziali utilizzate per certificare il documento PDF. Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
-   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoche di certificati (CRL). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
+   * Un `CRLPreferences` oggetto che memorizza le preferenze dell&#39;elenco di revoca dei certificati (CRL, Certificate Revocation List). Se il controllo della revoca non viene eseguito, questo parametro non viene utilizzato e potete specificare `null`.
    * Un `TSPPreferences` oggetto che memorizza le preferenze per il supporto del provider di marca temporale (TSP). Ad esempio, dopo aver creato un `TSPPreferences` oggetto, è possibile impostare l&#39;URL del TSP impostando il membro `TSPPreferences` dati dell&#39; `tspServerURL` oggetto. Questo parametro è facoltativo e può essere `null`.
    Il `certify` metodo restituisce un `BLOB` oggetto che rappresenta il documento PDF certificato.
 
@@ -1283,7 +1285,7 @@ Per verificare una firma digitale, effettuare le seguenti operazioni:
 
 1. Includere i file di progetto.
 1. Creare un client per le firme.
-1. Verificare il documento PDF contenente la firma.
+1. Ottenere il documento PDF contenente la firma da verificare.
 1. Impostare le opzioni di esecuzione PKI.
 1. Verificare la firma digitale.
 1. Determinare lo stato della firma.
@@ -1319,7 +1321,7 @@ Impostare le seguenti opzioni di esecuzione PKI che il servizio Firma utilizza p
 * Controllo revoca
 * Valori di marca temporale
 
-Come parte dell&#39;impostazione di queste opzioni, potete specificare il tempo di verifica. Ad esempio, è possibile selezionare l&#39;ora corrente (l&#39;ora nel computer della convalida), che indica l&#39;utilizzo dell&#39;ora corrente. Per informazioni sui diversi valori temporali, consultate il valore di `VerificationTime` enumerazione nella Guida di riferimento [alle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Come parte dell&#39;impostazione di queste opzioni, potete specificare il tempo di verifica. Ad esempio, è possibile selezionare l&#39;ora corrente (l&#39;ora nel computer del validatore), che indica l&#39;utilizzo dell&#39;ora corrente. Per informazioni sui diversi valori temporali, consultate il valore di `VerificationTime` enumerazione nella Guida di riferimento [alle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 È inoltre possibile specificare se eseguire il controllo delle revoche nell&#39;ambito del processo di verifica. Ad esempio, è possibile eseguire un controllo di revoca per determinare se il certificato è revocato. Per informazioni sulle opzioni di controllo della revoca, consultate il valore di `RevocationCheckStyle` enumerazione nella Guida di riferimento [delle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
@@ -1329,7 +1331,7 @@ Invece di utilizzare un server CRL, è possibile utilizzare un server OCSP (Cert
 
 È possibile impostare l&#39;ordine del server CRL e OCSP utilizzato dal servizio Signature utilizzando Adobe Applications and Services. Ad esempio, se il server OCSP è impostato per primo in Adobe Applications and Services, il server OCSP è selezionato, seguito dal server CRL.
 
-Se non si esegue il controllo di revoca, il servizio Firma non verifica la revoca del certificato. In altre parole, le informazioni sui server CRL e OCSP vengono ignorate.
+Se non si esegue il controllo di revoca, il servizio Firma non verifica la revoca del certificato. In altre parole, le informazioni relative al server CRL e OCSP vengono ignorate.
 
 >[!NOTE]
 >
@@ -1494,7 +1496,7 @@ Verificare una firma digitale utilizzando l&#39;API Signature Service (servizio 
 
 ## Verifica di più firme digitali {#verifying-multiple-digital-signatures}
 
-AEM Forms consente di verificare tutte le firme digitali presenti in un documento PDF. Si supponga che un documento PDF contenga più firme digitali come risultato di un processo aziendale che richiede la firma di più firmatari. Ad esempio, considerare una transazione finanziaria che richiede sia la firma di un funzionario prestiti che quella di un manager. È possibile utilizzare l&#39;API Java del servizio firma o l&#39;API del servizio Web per verificare tutte le firme presenti nel documento PDF. Quando si verificano più firme digitali, è possibile verificare lo stato e le proprietà di ciascuna firma. Prima di rendere affidabile una firma digitale, è consigliabile verificarla. Si consiglia di avere familiarità con la verifica di una firma digitale singola.
+AEM Forms consente di verificare tutte le firme digitali presenti in un documento PDF. Si supponga che un documento PDF contenga più firme digitali come risultato di un processo aziendale che richiede la firma di più firmatari. Ad esempio, considerare una transazione finanziaria che richiede sia la firma di un funzionario prestiti che quella di un manager. È possibile utilizzare l&#39;API Java del servizio firma o l&#39;API del servizio Web per verificare tutte le firme presenti nel documento PDF. Durante la verifica di più firme digitali, è possibile verificare lo stato e le proprietà di ciascuna firma. Prima di rendere affidabile una firma digitale, è consigliabile verificarla. Si consiglia di avere familiarità con la verifica di una firma digitale singola.
 
 >[!NOTE]
 >
@@ -1541,7 +1543,7 @@ Impostare le seguenti opzioni di esecuzione PKI che il servizio Firma utilizza p
 * Controllo revoca
 * Valori di marca temporale
 
-Come parte dell&#39;impostazione di queste opzioni, potete specificare il tempo di verifica. Ad esempio, è possibile selezionare l&#39;ora corrente (l&#39;ora nel computer della convalida), che indica l&#39;utilizzo dell&#39;ora corrente. Per informazioni sui diversi valori temporali, consultate il valore di `VerificationTime` enumerazione nella Guida di riferimento [alle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Come parte dell&#39;impostazione di queste opzioni, potete specificare il tempo di verifica. Ad esempio, è possibile selezionare l&#39;ora corrente (l&#39;ora nel computer del validatore), che indica l&#39;utilizzo dell&#39;ora corrente. Per informazioni sui diversi valori temporali, consultate il valore di `VerificationTime` enumerazione nella Guida di riferimento [alle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 È inoltre possibile specificare se eseguire il controllo delle revoche nell&#39;ambito del processo di verifica. Ad esempio, è possibile eseguire un controllo di revoca per determinare se il certificato è revocato. Per informazioni sulle opzioni di controllo della revoca, consultate il valore di `RevocationCheckStyle` enumerazione nella Guida di riferimento [delle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
@@ -1551,7 +1553,7 @@ Invece di utilizzare un server CRL, è possibile utilizzare un server OCSP (Cert
 
 È possibile impostare l&#39;ordine del server CRL e OCSP utilizzato dal servizio Signature utilizzando Adobe Applications and Services. Ad esempio, se il server OCSP è impostato per primo in Adobe Applications and Services, il server OCSP è selezionato, seguito dal server CRL.
 
-Se non si esegue il controllo di revoca, il servizio Firma non verifica la revoca del certificato. In altre parole, le informazioni sui server CRL e OCSP vengono ignorate.
+Se non si esegue il controllo di revoca, il servizio Firma non verifica la revoca del certificato. In altre parole, le informazioni relative al server CRL e OCSP vengono ignorate.
 
 >[!NOTE]
 >
@@ -1624,8 +1626,8 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (Java):
 
 1. Itera attraverso tutte le firme
 
-   * Eseguire un&#39;iterazione attraverso tutte le firme richiamando il `PDFDocumentVerificationInfo` metodo dell&#39; `getVerificationInfos` oggetto. Questo metodo restituisce un `java.util.List` oggetto in cui ogni elemento è un `PDFSignatureVerificationInfo` oggetto. Utilizzare un `java.util.Iterator` oggetto per iterare l&#39;elenco di firme.
-   * Utilizzando l&#39; `PDFSignatureVerificationInfo` oggetto è possibile eseguire attività quali determinare lo stato della firma richiamando il metodo dell&#39; `PDFSignatureVerificationInfo` oggetto `getStatus` . Questo metodo restituisce un oggetto il cui membro dati statico `SignatureStatus` informa l&#39;utente sullo stato della firma. Ad esempio, se la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
+   * Eseguire un&#39;iterazione attraverso tutte le firme richiamando il `PDFDocumentVerificationInfo` metodo dell&#39; `getVerificationInfos` oggetto. Questo metodo restituisce un `java.util.List` oggetto in cui ogni elemento è un `PDFSignatureVerificationInfo` oggetto. Utilizzare un `java.util.Iterator` oggetto per eseguire un&#39;iterazione nell&#39;elenco di firme.
+   * Utilizzando l&#39; `PDFSignatureVerificationInfo` oggetto, è possibile eseguire attività quali determinare lo stato della firma richiamando il metodo dell&#39; `PDFSignatureVerificationInfo` oggetto `getStatus` . Questo metodo restituisce un oggetto il cui membro dati statico `SignatureStatus` informa l&#39;utente sullo stato della firma. Ad esempio, se la firma è sconosciuta, questo metodo restituisce `SignatureStatus.DocumentSignatureUnknown`.
 
 **Consulta anche**
 
@@ -1702,11 +1704,11 @@ Verificare più firme digitali utilizzando l&#39;API Signature Service (servizio
 
 ## Rimozione di firme digitali {#removing-digital-signatures}
 
-Per poter applicare una firma digitale più recente, è necessario rimuovere le firme digitali da un campo firma. Impossibile sovrascrivere una firma digitale. Se si tenta di applicare una firma digitale a un campo firma contenente una firma, si verifica un&#39;eccezione.
+Per poter applicare una firma digitale più recente, è necessario rimuovere le firme digitali da un campo firma. Non è possibile sovrascrivere una firma digitale. Se si tenta di applicare una firma digitale a un campo firma contenente una firma, si verifica un&#39;eccezione.
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Firma, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Firma, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-8}
 
@@ -1788,7 +1790,7 @@ Rimuovere una firma digitale utilizzando l&#39;API Signature (Java):
 
 1. Salvare il documento PDF come file PDF
 
-   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione sia .pdf.
+   * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione del file sia .pdf.
    * Richiama il metodo dell’ `com.adobe.idp.Document` oggetto `copyToFile` . Passate l&#39; `java.io.File` oggetto per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file. Assicurarsi di utilizzare l&#39; `Document` oggetto restituito dal `clearSignatureField` metodo.
 
 **Consulta anche**
