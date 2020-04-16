@@ -11,7 +11,7 @@ topic-tags: interactive-communications
 discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -22,7 +22,7 @@ Le comunicazioni interattive includono proprietà configurate automaticamente do
 
 Aprite la pagina Configurazione **console Web di** Adobe Experience Manager utilizzando il seguente URL:
 
-`https://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr`
+`https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
 Le proprietà di configurazione includono:
 
@@ -118,7 +118,7 @@ Toccate Configurazione **canale Web per moduli** adattivi e comunicazioni intera
 |---|---|---|---|
 | Mostra segnaposto | Selezionate la casella di controllo per attivare la visualizzazione dei segnaposto per i campi inclusi nei moduli adattivi e nelle comunicazioni interattive. | Selezionato | Non applicabile |
 | Numero massimo di voci della cache | Impostare il numero massimo di moduli adattivi e comunicazioni interattive che è possibile recuperare utilizzando la memoria cache. | 100 | Numero |
-| Imposta nome file univoco | Selezionate la casella di controllo per avere nomi univoci per i file inclusi come allegati nei moduli adattivi e nelle comunicazioni interattive. | Non selezionato | Non applicabile |
+| Rendi univoco il nome del file | Selezionate la casella di controllo per avere nomi univoci per i file inclusi come allegati nei moduli adattivi e nelle comunicazioni interattive. | Non selezionato | Non applicabile |
 
 ## Configurazione del tema del canale del canale Web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
