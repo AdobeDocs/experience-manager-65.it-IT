@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
 
 Esistono due tipi di client HTML. Il primo client HTML è un client AJAX scritto in JavaScript. Il secondo client è un modulo HTML che contiene un pulsante di invio. Un&#39;applicazione client basata su HTML non è l&#39;unico client REST possibile. Ogni applicazione client che supporta le richieste HTTP può richiamare un servizio utilizzando una chiamata REST. Ad esempio, è possibile richiamare un servizio utilizzando una chiamata REST da un modulo PDF. (vedere [Attivazione del processo MyApplication/EncryptDocument da Acrobat](#rest-invocation-examples).)
 
-Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiamare invece i processi creati in Workbench. Quando create un processo destinato alla chiamata REST, utilizzate un punto iniziale programmatico. In questa situazione, l&#39;endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedere [Uso di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Quando si utilizzano le richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiamare invece i processi creati in Workbench. Quando create un processo destinato alla chiamata REST, utilizzate un punto iniziale programmatico. In questa situazione, l&#39;endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedere [Uso di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Quando si richiama un servizio utilizzando REST, viene richiesto un nome utente e una password per i moduli AEM. Tuttavia, se non si desidera specificare un nome utente e una password, è possibile disattivare la protezione del servizio.
 
@@ -33,7 +33,7 @@ Dopo aver configurato un endpoint REST, è possibile richiamare un servizio Form
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
-Il `ServiceName` valore obbligatorio è il nome del servizio Forms da richiamare. Il `OperationName` valore opzionale è il nome dell&#39;operazione del servizio. Se questo valore non viene specificato, per impostazione predefinita questo nome è `invoke`, ovvero il nome dell&#39;operazione che avvia il processo. Il `ServiceVersion` valore opzionale è la versione codificata in formato X.Y. Se questo valore non viene specificato, viene utilizzata la versione più recente. Il `enctype` valore può anche essere `application/x-www-form-urlencoded`.
+Il `ServiceName` valore obbligatorio è il nome del servizio Forms da richiamare. Il `OperationName` valore opzionale è il nome dell&#39;operazione del servizio. Se questo valore non viene specificato, per impostazione predefinita questo nome è `invoke`, ovvero il nome dell&#39;operazione che avvia il processo. Il `ServiceVersion` valore facoltativo è rappresentato dalla versione codificata in formato X.Y. Se questo valore non viene specificato, viene utilizzata la versione più recente. Il `enctype` valore può anche essere `application/x-www-form-urlencoded`.
 
 ## Tipi di dati supportati {#supported-data-types}
 
@@ -49,7 +49,11 @@ I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms
    Se un servizio Forms viene richiamato con il metodo HTTP POST, gli argomenti vengono passati all’interno del corpo della richiesta HTTP. Se la firma del servizio AEM Forms include un parametro di immissione della stringa, il corpo della richiesta può contenere il valore di testo del parametro di input. Se la firma del servizio definisce più parametri di stringa, la richiesta può seguire la `application/x-www-form-urlencoded` notazione HTTP con i nomi dei parametri utilizzati come nomi dei campi del modulo.
 
    Se un servizio Forms restituisce un parametro stringa, il risultato è una rappresentazione testuale del parametro di output. Se un servizio restituisce più parametri stringa, il risultato è un documento XML che codifica i parametri di output nel formato seguente:
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`**Nota **: Il`output-paramater1`valore rappresenta il nome del parametro di output.
+   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+
+   >[!NOTE]
+   >
+   >Il `output-paramater1` valore rappresenta il nome del parametro di output.
 
    Se un servizio Forms richiede un `com.adobe.idp.Document` parametro, il servizio può essere invocato solo utilizzando il metodo HTTP POST. Se il servizio richiede un `com.adobe.idp.Document` parametro, il corpo della richiesta HTTP diventa il contenuto dell&#39;oggetto Document di input.
 
@@ -61,7 +65,7 @@ I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms
 
    Se un parametro di input è una mappa ed è l&#39;unico parametro di input dei servizi, ogni parte/campo del messaggio di input diventa un record chiave/valore nella mappa. Il nome di ogni parte o campo diventa la chiave del record. Il contenuto di ogni parte o campo diventa il valore del record.
 
-   Se una mappa di input non è l&#39;unico parametro di input dei servizi, ogni record chiave/valore appartenente alla mappa può essere inviato utilizzando un parametro denominato come concatenazione del nome del parametro e della chiave del record. Ad esempio, una mappa di input chiamata `attributes` può essere inviata con un elenco delle seguenti coppie chiave/valori:
+   Se una mappa di input non è l&#39;unico parametro di input dei servizi, ogni record chiave/valore che appartiene alla mappa può essere inviato utilizzando un parametro denominato come concatenazione del nome del parametro e della chiave del record. Ad esempio, una mappa di input chiamata `attributes` può essere inviata con un elenco delle seguenti coppie chiave/valori:
 
    `attributesColor=red`
 
@@ -73,7 +77,7 @@ I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms
 
    I parametri di output dei tipi di elenco e mappa diventano parte del messaggio XML risultante. L&#39;elenco di output è rappresentato in XML come una serie di elementi XML con un elemento per ciascuna voce dell&#39;elenco. A ogni elemento viene assegnato lo stesso nome del parametro dell&#39;elenco di output. Il valore di ciascun elemento XML è uno dei due elementi seguenti:
 
-* Una rappresentazione testuale della voce nell&#39;elenco (se l&#39;elenco è costituito da tipi di stringa)
+* Una rappresentazione testuale dell&#39;elemento nell&#39;elenco (se l&#39;elenco è costituito da tipi di stringa)
 * Un URL che punta al contenuto del documento (se l&#39;elenco è costituito da `com.adobe.idp.Document` oggetti)
 
    L&#39;esempio seguente è un messaggio XML restituito da un servizio con un singolo parametro di output denominato *list*, che è un elenco di interi.
@@ -82,7 +86,7 @@ I seguenti tipi di dati sono supportati quando si richiamano i servizi AEM Forms
 
 ## Chiamate asincrone {#asynchronous-invocations}
 
-Alcuni servizi AEM Forms, come i processi longevi incentrati sull’uomo, richiedono molto tempo per essere completati. Questi servizi possono essere richiamati in modo asincrono senza blocco. (Vedete [Richiamo Di Processi](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)Lunghi Orientati All’Umano.)
+Alcuni servizi AEM Forms, come i processi longevi incentrati sull’uomo, richiedono molto tempo per essere completati. Questi servizi possono essere richiamati in modo asincrono in modo non bloccante. (Vedete [Richiamo Di Processi](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)Lunghi Orientati All’Umano.)
 
 Un servizio AEM Forms può essere invocato in modo asincrono sostituendolo `services` con `async_invoke` l’URL della chiamata, come illustrato nell’esempio seguente.
 
@@ -90,9 +94,9 @@ Un servizio AEM Forms può essere invocato in modo asincrono sostituendolo `serv
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
-Questo URL restituisce il valore identificatore (in formato &quot;text/plain&quot;) del processo responsabile per questa chiamata.
+Questo URL restituisce il valore dell’identificatore (in formato &quot;text/plain&quot;) del processo responsabile per questa chiamata.
 
-Lo stato della chiamata asincrona può essere recuperato utilizzando un URL di chiamata con cui `services` è stato sostituito `async_status`. L’URL deve contenere un `job_id` parametro che specifica il valore dell’identificatore del processo associato a questa chiamata. Esempio:
+Lo stato della chiamata asincrona può essere recuperato utilizzando un URL di chiamata con cui `services` è stato sostituito `async_status`. L’URL deve contenere un `job_id` parametro che specifica il valore dell’identificatore del processo associato a questa chiamata. Ad esempio:
 
 ```as3
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
@@ -102,7 +106,7 @@ Questo URL restituisce un valore intero (in formato &quot;testo/normale&quot;) c
 
 Se il processo è completato, l’URL restituisce lo stesso risultato di quando il servizio è stato richiamato in modo sincrono.
 
-Una volta completato il processo e recuperato il risultato, il processo può essere eliminato utilizzando un URL di chiamata con `services` viene sostituito con `async_dispose`. L’URL deve contenere anche un `job_id` parametro che specifica il valore dell’identificatore del processo. Esempio:
+Una volta completato il processo e recuperato il risultato, il processo può essere eliminato utilizzando un URL di chiamata con `services` viene sostituito con `async_dispose`. L’URL deve contenere anche un `job_id` parametro che specifica il valore dell’identificatore del processo. Ad esempio:
 
 ```as3
  http://localhost:8080/rest/async_dispose/SomeService.SomeOperation?job_id=2345353443366564
@@ -112,7 +116,7 @@ Se il processo viene eliminato correttamente, questo URL restituisce un messaggi
 
 ## Segnalazione errori {#error-reporting}
 
-Se non è possibile completare una richiesta di chiamata sincrona o asincrona a causa di un&#39;eccezione generata sul server, l&#39;eccezione viene segnalata come parte del messaggio di risposta HTTP. Se l’URL di chiamata (o l’ `async_result` URL nel caso di una chiamata asincrona) non ha un suffisso .xml, il provider REST restituisce il codice HTTP `500 Internal Server Error` seguito da un messaggio di eccezione.
+Se non è possibile completare una richiesta di chiamata sincrona o asincrona a causa di un&#39;eccezione generata sul server, l&#39;eccezione viene segnalata come parte del messaggio di risposta HTTP. Se l’URL di chiamata (o l’ `async_result` URL nel caso di una chiamata asincrona) non dispone di un suffisso .xml, il provider REST restituisce il codice HTTP `500 Internal Server Error` seguito da un messaggio di eccezione.
 
 Se l’URL di chiamata (o l’ `async_result` URL nel caso di una chiamata asincrona) ha un suffisso .xml, il provider REST restituisce il codice HTTP `200 OK`seguito da un documento XML che descrive l’eccezione nel seguente formato.
 
@@ -146,7 +150,7 @@ Per fornire chiamate REST con un trasporto protetto, un amministratore di moduli
 
 ## Servizi AEM Forms che supportano la chiamata REST {#aem-forms-services-that-support-rest-invocation}
 
-Sebbene sia consigliabile richiamare direttamente i processi creati utilizzando Workbench anziché i servizi, alcuni servizi AEM Forms supportano l&#39;invocazione REST. Il motivo per cui si consiglia di richiamare direttamente un processo anziché un servizio è perché è più efficiente richiamare un processo. Considerate il seguente scenario. Si supponga di voler creare un criterio da un client REST. In altre parole, desiderate che il client REST definisca valori quali il nome del criterio e il periodo di tempo consentito per l&#39;utilizzo offline.
+Sebbene sia consigliabile richiamare direttamente i processi creati utilizzando Workbench anziché i servizi, alcuni servizi AEM Forms supportano l&#39;invocazione REST. Il motivo per cui si consiglia di invocare direttamente un processo anziché un servizio è perché è più efficiente richiamare un processo. Considerate il seguente scenario. Si supponga di voler creare un criterio da un client REST. In altre parole, desiderate che il client REST definisca valori quali il nome del criterio e il periodo di tempo consentito per l&#39;utilizzo offline.
 
 Per creare un criterio, è necessario definire tipi di dati complessi, ad esempio un `PolicyEntry` oggetto. Un `PolicyEntry` oggetto definisce attributi quali le autorizzazioni associate al criterio. Consultate [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).
 
@@ -154,7 +158,7 @@ Anziché inviare una richiesta REST per creare un criterio (che includa la defin
 
 In questo modo, non è necessario creare una richiesta di chiamata REST che includa tipi di dati complessi richiesti dall&#39;operazione. Il processo definisce i tipi di dati complessi e tutto ciò che si fa dal client REST è richiamare il processo e passare i tipi di dati primitivi. Per informazioni su come richiamare un processo utilizzando REST, vedere [Richiamo del processo MyApplication/EncryptDocument tramite REST](#rest-invocation-examples).
 
-Gli elenchi seguenti specificano i servizi AEM Forms che supportano la chiamata REST diretta.
+Nei seguenti elenchi sono specificati i servizi AEM Forms che supportano la chiamata REST diretta.
 
 * Servizio Distiller
 * Servizio Rights Management
@@ -178,7 +182,7 @@ Vengono forniti i seguenti esempi di chiamata REST:
 
 **Trasmissione di valori booleani a un processo**
 
-Nell’esempio HTML seguente vengono passati due `Boolean` valori a un processo AEM Forms denominato `RestTest2`. Il nome del metodo di chiamata è `invoke` e la versione è 1.0.Si noti che viene utilizzato il metodo HTML Post.
+Nell’esempio HTML seguente vengono passati due `Boolean` valori a un processo AEM Forms denominato `RestTest2`. Il nome del metodo di chiamata è `invoke` e la versione è 1.0. Si noti che viene utilizzato il metodo HTML Post.
 
 ```as3
  <html>
@@ -196,7 +200,7 @@ Nell’esempio HTML seguente vengono passati due `Boolean` valori a un processo 
  </html>
 ```
 
-**Trasmissione dei valori data a un processo**
+**Trasmissione dei valori di data a un processo**
 
 Nell’esempio HTML seguente viene passato un valore data a un processo AEM Forms denominato `SOAPEchoService`. Il nome del metodo di chiamata è `echoCalendar`. Si noti che viene utilizzato il `Post` metodo HTML.
 
