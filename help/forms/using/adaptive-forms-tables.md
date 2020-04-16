@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
 
 L&#39;utilizzo delle tabelle rappresenta un modo efficace, semplificato e organizzato di presentare dati complessi. Consente agli utenti di identificare facilmente le informazioni e fornire gli input in una disposizione ordinata di righe e colonne. La maggior parte dei moduli provenienti da servizi finanziari e organizzazioni governative richiede tabelle di dati di grandi dimensioni per inserire numeri ed eseguire calcoli.
 
-AEM Forms offre un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle in moduli adattivi. Alcune delle funzionalità chiave che fornisce sono:
+In AEM Forms è disponibile un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle nei moduli adattivi. Alcune delle funzionalità chiave che fornisce sono:
 
 * Layout reattivo su dispositivi mobili
 * Righe e colonne configurabili
@@ -118,7 +118,7 @@ Potete visualizzare le proprietà di stile nella barra laterale.
 
 >[!NOTE]
 >
->Potete modificare il tema colore per le righe di intestazione e le righe corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, consultate [Temi in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>È possibile modificare il tema colore per le righe di intestazione e le righe corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, consultate [Temi in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ## Aggiunta o eliminazione dinamica di una riga {#add-or-delete-a-row-dynamically}
 
@@ -142,8 +142,8 @@ Le tabelle nei moduli adattivi consentono di scrivere espressioni in JavaScript 
 
 Mentre tabelle e righe supportano solo le espressioni di visibilità per controllarne la visibilità in base al valore restituito da un&#39;espressione, le celle supportano le seguenti espressioni:
 
-* **** Script di inizializzazione: per eseguire un&#39;azione all&#39;inizializzazione di un campo.
-* **** Script di conferma del valore: per modificare i componenti di un modulo dopo la modifica del valore di un campo.
+* **Script di inizializzazione:** per eseguire un&#39;azione all&#39;inizializzazione di un campo.
+* **Script di conferma del valore:** per modificare i componenti di un modulo dopo la modifica del valore di un campo.
 
 >[!NOTE]
 >
@@ -180,7 +180,9 @@ Vista mobile di una tabella con il layout Intestazione a sinistra
 
 Nel layout della colonna Comprimibile, le colonne della tabella vengono ridotte per mostrare una o due colonne, a seconda della dimensione del dispositivo, mentre le altre colonne vengono ridotte. È possibile fare clic sull&#39;icona di compressione/espansione per visualizzare altre colonne nella tabella.
 
-**Nota**: Anche se il layout di colonna Comprimibile è ottimizzato per i dispositivi mobili, funzionerà anche su desktop, se la larghezza disponibile non è sufficiente per mostrare tutte le colonne di una tabella.
+>[!NOTE]
+>
+>Anche se il layout di colonna Comprimibile è ottimizzato per i dispositivi mobili, funzionerà anche su desktop, se la larghezza disponibile non è sufficiente per mostrare tutte le colonne di una tabella.
 
 Le immagini seguenti confrontano l&#39;aspetto di una tabella su un dispositivo con colonne compresse ed espanse.
 
@@ -297,7 +299,7 @@ L’elemento tabella XFA è mappato sul componente Tabella e funziona out-of-the
 ## Considerazioni chiave {#key-considerations}
 
 * Se si spostano le righe verso l&#39;alto o il basso durante la creazione di una tabella basata su XSD, alcuni dati persi dalle righe della tabella vengono visualizzati nell&#39;XML di dati generato all&#39;invio del modulo.
-* A ogni cella corpo di una tabella predefinita è associato un nome di elemento predefinito. Se si aggiunge un&#39;altra tabella nel modulo adattivo, le celle corpo predefinite della nuova tabella avranno lo stesso nome di elemento della prima tabella. In questo caso, i dati generati all&#39;invio del modulo includeranno i dati nelle celle corpo predefinite di una sola tabella. Pertanto, è necessario rinominare i nomi degli elementi per le celle corpo predefinite in modo da mantenerle univoche tra le tabelle ed evitare la perdita di dati.
+* A ogni cella corpo di una tabella predefinita è associato un nome di elemento predefinito. Se si aggiunge un&#39;altra tabella nel modulo adattivo, le celle corpo predefinite della nuova tabella avranno lo stesso nome di elemento della prima tabella. In questo caso, i dati generati al momento dell&#39;invio del modulo includeranno i dati nelle celle corpo predefinite di una sola tabella. Pertanto, è necessario rinominare i nomi degli elementi per le celle corpo predefinite in modo da mantenerle univoche tra le tabelle ed evitare la perdita di dati.
 
    Questo è applicabile solo alle celle corpo predefinite. Se si aggiungono più righe o colonne a una tabella, verranno generati automaticamente nomi di elementi univoci per le celle corpo non predefinite.
 
