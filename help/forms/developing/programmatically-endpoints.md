@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,15 +28,17 @@ Il servizio del Registro di sistema degli endpoint consente di gestire gli endpo
 * (obsoleto per i moduli AEM) Remoting
 * Task Manager
 
-   ***Nota **: I punti finali SOAP, EJB e (obsoleti per i moduli AEM su JEE) Remoting vengono creati automaticamente per ciascun servizio attivato. Gli endpoint SOAP ed EJB consentono SOAP ed EJB per tutte le operazioni di servizio.*
+>[!NOTE]
+>
+>I punti finali SOAP, EJB e (obsoleti per i moduli AEM su JEE) Remoting vengono creati automaticamente per ciascun servizio attivato. Gli endpoint SOAP ed EJB consentono SOAP ed EJB per tutte le operazioni di servizio.
 
-   Un endpoint remoto consente ai client Flex di richiamare le operazioni sul servizio AEM Forms a cui viene aggiunto l&#39;endpoint. Viene creata una destinazione Flex con lo stesso nome dell&#39;endpoint e i client Flex possono creare RemoteObjects che puntano a questa destinazione per richiamare le operazioni sul servizio pertinente.
+Un endpoint remoto consente ai client Flex di richiamare le operazioni sul servizio AEM Forms a cui viene aggiunto l&#39;endpoint. Viene creata una destinazione Flex con lo stesso nome dell&#39;endpoint e i client Flex possono creare RemoteObjects che puntano a questa destinazione per richiamare le operazioni sul servizio pertinente.
 
-   Gli endpoint E-mail, Task Manager e Cartella esaminata mostrano solo un&#39;operazione specifica del servizio. L&#39;aggiunta di questi endpoint richiede un secondo passaggio di configurazione per selezionare un metodo da richiamare, impostare i parametri di configurazione e specificare le mappature dei parametri di input e output.
+Gli endpoint E-mail, Task Manager e Cartella esaminata mostrano solo un&#39;operazione specifica del servizio. L&#39;aggiunta di questi endpoint richiede un secondo passaggio di configurazione per selezionare un metodo da richiamare, impostare i parametri di configurazione e specificare le mappature dei parametri di input e output.
 
-   È possibile organizzare gli endpoint di TaskManager in gruppi denominati *categorie*. Queste categorie vengono quindi esposte a Workspace tramite TaskManager, con gli utenti finali che visualizzano gli endpoint di TaskManager man mano che vengono classificati. In Workspace, gli utenti finali visualizzano queste categorie nel riquadro di navigazione. Gli endpoint all&#39;interno di ciascuna categoria vengono visualizzati come schede di processo nella pagina Processi iniziali di Workspace.
+È possibile organizzare gli endpoint di TaskManager in gruppi denominati *categorie*. Queste categorie vengono quindi esposte a Workspace tramite TaskManager, con gli utenti finali che visualizzano gli endpoint di TaskManager man mano che vengono classificati. In Workspace, gli utenti finali visualizzano queste categorie nel riquadro di navigazione. Gli endpoint all&#39;interno di ciascuna categoria vengono visualizzati come schede di processo nella pagina Processi iniziali di Workspace.
 
-   È possibile eseguire le seguenti attività utilizzando il servizio del Registro di sistema di Endpoint:
+È possibile eseguire le seguenti attività utilizzando il servizio del Registro di sistema di Endpoint:
 
 * Aggiungete gli endpoint EJB. (Vedere [Aggiunta di endpoint](programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
 * Aggiungere endpoint SOAP. (Vedere [Aggiunta di endpoint](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
