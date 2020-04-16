@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -71,7 +71,9 @@ Inoltre, se si è selezionato uno schema XML o un modello di modulo XDP come mod
 1. Nella finestra di dialogo Creazione frammenti, specificare le informazioni seguenti:
 
    * **Nome**: Nome del frammento. Il valore predefinito è il nome dell’elemento del pannello. È un campo obbligatorio.
-      ***Nota **: Assicurarsi di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, la creazione del frammento non riesce.*
+      >[!NOTE]
+      >
+      >Assicurarsi di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, la creazione del frammento non riesce.
 
    * **Titolo**: Titolo del frammento. Il valore predefinito corrisponde al titolo del pannello.
 
