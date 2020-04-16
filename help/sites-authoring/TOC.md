@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Authoring User Guide
+user-guide-title: Guida utente per l’authoring in AEM 6.5
 translation-type: tm+mt
-source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
+source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
 
 ---
 
@@ -85,7 +85,7 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [Gestione dei tipi di pubblico](managing-audiences.md)
    + [Creazione e gestione delle offerte](offerlib.md)
    + [Segmentazione](segmentation-overview.md)
-+ AEM e Adobe Campaign {aem-adobe-campaign}
++ AEM e Adobe Campaign {#aem-adobe-campaign}
    + [Utilizzo di Adobe Campaign](adobe-campaign.md)
    + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
    + [Targeting con Adobe Campaign](target-adobe-campaign.md)
