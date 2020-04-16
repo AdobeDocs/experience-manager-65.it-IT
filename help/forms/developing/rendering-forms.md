@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: 687cdacc2868de16a4df968dddedd330ce3317bb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -30,8 +30,9 @@ A seconda del tipo di applicazione client, è possibile scrivere il modulo in un
 * Gli esempi di servizi Web (Java Base64) sono un servlet Java.
 * Gli esempi di servizi Web (MTOM) sono un&#39;applicazione console (non tutti gli avvii rapidi hanno un esempio MTOM).
 
-***Nota **: Per informazioni sulla creazione di un&#39;applicazione Web che utilizza servlet Java per richiamare il servizio Forms, vedere[Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md).*
-
+>[!NOTE]
+>
+> Per informazioni sulla creazione di un&#39;applicazione Web che utilizza servlet Java per richiamare il servizio Forms, vedere [Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 È possibile trasmettere al servizio Forms una struttura del modulo (un file XDP) o un documento PDF tramite uno dei due modi seguenti:
 
