@@ -1,15 +1,15 @@
 ---
 title: Creazione di tabelle complesse con accesso facilitato nei moduli HTML5
 seo-title: Creazione di tabelle complesse con accesso facilitato nei moduli HTML5
-description: Informazioni sulla creazione di tabelle con accesso facilitato nei moduli HTML5.
-seo-description: Informazioni sulla creazione di tabelle con accesso facilitato nei moduli HTML5.
+description: Scoprite come creare tabelle con accesso facilitato nei moduli HTML5.
+seo-description: Scoprite come creare tabelle con accesso facilitato nei moduli HTML5.
 uuid: e52562d2-4dc3-4359-9dbb-c18614921808
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -33,7 +33,9 @@ Per utilizzare il nuovo formato in HTML5 Forms, contrassegnare la tabella come c
 
 Le tabelle contrassegnate come *complesseTable* seguono la rappresentazione HTML nativa e forniscono un supporto di accessibilità migliore per alcuni assistenti vocali.  Per creare un intervallo di righe, selezionare celle consecutive di una tabella nella stessa colonna, fare clic con il pulsante destro del mouse sulla selezione, quindi fare clic su **[!UICONTROL Unisci celle]**.
 
-*****Nota: La creazione di un intervallo di righe funziona solo per le celle più a sinistra.*
+>[!NOTE]
+>
+>La creazione di un intervallo di righe funziona solo per le celle più a sinistra.
 
 Per contrassegnare una riga come intestazione di riga, selezionare tutte le celle della riga, fare clic con il pulsante destro del mouse sulla selezione, quindi fare clic su **[!UICONTROL Contrassegna intestazione]**.
 
