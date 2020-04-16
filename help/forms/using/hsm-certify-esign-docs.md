@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager Forms consente di utilizzare le credenziali memorizzate
 
 ## Prima di configurare i dispositivi HSM o etoken con AEM Forms {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
+* Install [AEM Forms add-on](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) package.
 * Installate e configurate il software client HSM o etoken sullo stesso computer del server AEM. Il software client è richiesto per comunicare con i dispositivi HSM e etoken.
 * (Solo Microsoft Windows) Impostate la variabile di ambiente JAVA_HOME_32 in modo che punti alla directory in cui è installata la versione a 32 bit di Java 8 Development Kit (JDK 8). Il percorso predefinito della directory è C:\Program Files(x86)\Java\jdk&lt;versione>
 * (Solo AEM Forms su OSGi) Installate il certificato principale nell&#39;archivio certificati attendibili. È necessario verificare il PDF firmato
@@ -59,7 +59,7 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
    ```
 
 1. Salvate e chiudete il file sling.properties.
-1. Riavviate l’istanza AEM.
+1. Riavviate l’istanza di AEM.
 
 ## Configurare i certificati per le estensioni Reader {#set-up-certificates-for-reader-extensions}
 
@@ -104,9 +104,11 @@ L&#39;alias contiene tutti i parametri richiesti da un HSM o etoken. Per creare 
    * **Percorso** DLL: Specificate il percorso completo della libreria HSM o client di etoken sul server. Ad esempio, C:\Program Files\LunaSA\cryptoki.dll. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
    * **Fissa** HSM: Specificate la password necessaria per accedere al codice del dispositivo.
    * **ID** slot HSM: Specificare un identificatore di slot di tipo integer. L&#39;ID slot è impostato client per client. Se si registra un secondo computer in una partizione diversa (ad esempio, HSMPART2 sullo stesso dispositivo HSM), lo slot 1 è associato alla partizione HSMPART2 per il client.
-   **** Nota: Durante *la configurazione di Etoken, specificate un valore numerico per il campo ID slot HSM. Per il funzionamento delle operazioni Firme è necessario un valore numerico.*
+   >[!NOTE]
+   >
+   >Durante la configurazione di Etoken, specificate un valore numerico per il campo ID slot HSM. Per il funzionamento delle operazioni Firme è necessario un valore numerico.
 
-   * **Certificato SHA1**: Specificate il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per la credenziale in uso. Verificare che non siano presenti spazi utilizzati nel valore SHA1. Se utilizzi un certificato fisico, non è richiesto.
+   * **Certificato SHA1**: Specificate il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per la credenziale in uso. Verificare che non siano presenti spazi utilizzati nel valore SHA1. Se si utilizza un certificato fisico, non è richiesto.
    * **Tipo** di dispositivo HSM: Selezionate il produttore del dispositivo HSM (Luna o altro) o eToken.
    Fai clic su **Salva**. Il modulo di protezione hardware è configurato per AEM Forms. Ora puoi usare il modulo di protezione hardware con AEM Forms per firmare o certificare i documenti.
 
