@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -32,7 +32,7 @@ Esistono due modi in cui è possibile trasmettere una struttura del modulo (un f
 
 >[!NOTE]
 >
->Il servizio Output non supporta i documenti Acrobat PDF contenenti script specifici dell&#39;oggetto applicativo. Non viene eseguito il rendering dei documenti PDF di Acrobat contenenti script specifici dell&#39;oggetto applicativo.
+>Il servizio Output non supporta i documenti Acrobat PDF contenenti script specifici dell&#39;oggetto applicativo. Non viene eseguito il rendering dei documenti PDF in formato Acrobat contenenti script specifici per oggetti dell&#39;applicazione.
 
 Nelle sezioni seguenti viene illustrato come trasmettere una struttura del modulo al servizio Output utilizzando un valore URI:
 
@@ -41,7 +41,7 @@ Nelle sezioni seguenti viene illustrato come trasmettere una struttura del modul
 
 Nelle sezioni seguenti viene illustrato come trasmettere una struttura del modulo all&#39;interno di un&#39; `com.adobe.idp.Document` istanza:
 
-* [Invio di documenti in Content Services (obsoleto) al servizio di output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [Trasmissione di documenti in Content Services (obsoleto) al servizio di output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Creazione di documenti PDF tramite frammenti](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
 Quando si decide quale tecnica utilizzare, occorre considerare se la struttura del modulo viene ottenuta da un altro servizio AEM Forms e quindi trasmetterla in un’ `com.adobe.idp.Document` istanza. Le sezioni *Trasmissione di documenti al servizio* di output e *Creazione di documenti PDF tramite frammenti* mostrano come ottenere una struttura del modulo da un altro servizio AEM Forms. La prima sezione recupera la struttura del modulo da Content Services (obsoleto). La seconda sezione recupera la struttura del modulo dal servizio Assembler.
@@ -56,7 +56,7 @@ Quando si invia un flusso di output a una stampante di rete, è possibile utiliz
 
 * [Creazione di documenti PDF](creating-document-output-streams.md#creating-pdf-documents)
 * [Creazione di documenti PDF/A](creating-document-output-streams.md#creating-pdf-a-documents)
-* [Invio di documenti in Content Services (obsoleto) al servizio di output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [Trasmissione di documenti in Content Services (obsoleto) al servizio di output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Creazione di documenti PDF tramite frammenti](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 * [Stampa su file](creating-document-output-streams.md#printing-to-files)
 * [Invio di flussi di stampa alle stampanti](creating-document-output-streams.md#sending-print-streams-to-printers)
@@ -64,7 +64,9 @@ Quando si invia un flusso di output a una stampante di rete, è possibile utiliz
 * [Creazione di regole di ricerca](creating-document-output-streams.md#creating-search-rules)
 * [Conversione dei documenti PDF](creating-document-output-streams.md#flattening-pdf-documents)
 
-   ***Nota **: Per ulteriori informazioni sul servizio Output, consultate Riferimento[servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Creazione di documenti PDF {#creating-pdf-documents}
 
@@ -76,7 +78,7 @@ Per creare un modulo PDF interattivo che consenta all&#39;utente di immettere i 
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -92,7 +94,7 @@ Per creare un documento PDF, effettuare le seguenti operazioni:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -102,7 +104,7 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
 * jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
 
-se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE su cui è distribuito AEM Forms.
+se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE su cui è distribuito AEM Forms.
 
 **Creare un oggetto Client di output**
 
@@ -110,7 +112,7 @@ Prima di eseguire un&#39;operazione del servizio Output a livello di programmazi
 
 **Riferimento a un&#39;origine dati XML**
 
-Per unire i dati alla struttura del modulo, è necessario fare riferimento a un&#39;origine dati XML che contiene i dati. Per ogni campo del modulo che si intende compilare con i dati deve esistere un elemento XML. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine di visualizzazione degli elementi XML.
+Per unire i dati alla struttura del modulo, è necessario fare riferimento a un&#39;origine dati XML che contiene i dati. Per ogni campo del modulo che si intende compilare con i dati deve esistere un elemento XML. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine in cui vengono visualizzati gli elementi XML.
 
 Considerare il seguente modulo di richiesta di prestito.
 
@@ -159,7 +161,7 @@ Impostare l&#39;opzione URI del file al momento della creazione di un documento 
 
 **Impostazione delle opzioni di esecuzione del rendering**
 
-È possibile impostare le opzioni di esecuzione del rendering al momento della creazione di un documento PDF. Sebbene queste opzioni non siano richieste (a differenza delle opzioni PDF in fase di esecuzione richieste), è possibile eseguire attività quali migliorare le prestazioni del servizio Output. Ad esempio, è possibile memorizzare nella cache la struttura del modulo utilizzata dal servizio Output per migliorarne le prestazioni.
+È possibile impostare le opzioni di esecuzione del rendering al momento della creazione di un documento PDF. Anche se queste opzioni non sono richieste (a differenza delle opzioni PDF in fase di esecuzione richieste), è possibile eseguire attività quali migliorare le prestazioni del servizio Output. Ad esempio, è possibile memorizzare nella cache la struttura del modulo utilizzata dal servizio Output per migliorarne le prestazioni.
 
 Se si utilizza un modulo Acrobat con tag come input, non è possibile utilizzare Java del servizio Output o API del servizio Web per disattivare l&#39;impostazione dei tag. Se si tenta di impostare questa opzione a livello di programmazione, al documento PDF risultante viene ancora applicato un tag. `false`
 
@@ -171,7 +173,7 @@ Se si utilizza un modulo Acrobat con tag come input, non è possibile utilizzare
 
 Dopo aver fatto riferimento a un&#39;origine dati XML valida che contiene i dati del modulo e aver impostato le opzioni di esecuzione, è possibile richiamare il servizio Output, generando così un documento PDF.
 
-Durante la generazione di un documento PDF, è possibile specificare i valori URI richiesti dal servizio Output per creare un documento PDF. Una struttura del modulo può essere memorizzata in percorsi quali il file system del server o come parte di un&#39;applicazione AEM Forms. Per fare riferimento a una struttura del modulo (o ad altre risorse, come un file di immagine) esistente all&#39;interno di un&#39;applicazione Forms, utilizzare il valore URI radice del contenuto `repository:///`. Ad esempio, tenere in considerazione la seguente struttura del modulo denominata *Loan.xdp* , disponibile all&#39;interno di un&#39;applicazione Forms denominata *Applications/FormsApplication*:
+Durante la generazione di un documento PDF, è possibile specificare i valori URI richiesti dal servizio Output per creare un documento PDF. Una struttura del modulo può essere memorizzata in percorsi quali il file system del server o come parte di un&#39;applicazione AEM Forms. Per fare riferimento a una struttura del modulo (o ad altre risorse, come un file di immagine) esistente all&#39;interno di un&#39;applicazione Forms, utilizzare il valore URI radice del contenuto `repository:///`. Ad esempio, tenere in considerazione la seguente struttura del modulo denominata *Loan.xdp* , che si trova all&#39;interno di un&#39;applicazione Forms denominata *Applications/FormsApplication*:
 
 ![cp_cp_formrepository](assets/cp_cp_formrepository.png)
 
@@ -246,7 +248,7 @@ Creare un documento PDF utilizzando l&#39;API di output (Java):
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica il livello principale del contenuto in cui si trova la struttura del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `com.adobe.idp.Document` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    Il `generatePDFOutput` metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
@@ -266,7 +268,7 @@ Creare un documento PDF utilizzando l&#39;API di output (Java):
 
    * Recuperare un `com.adobe.idp.Document` oggetto che rappresenti lo stato dell&#39; `generatePDFOutput` operazione richiamando il metodo dell&#39; `OutputResult` oggetto `getStatusDoc` . Questo metodo restituisce dati XML di stato che specificano se l&#39;operazione ha avuto esito positivo.
    * Creare un `java.io.File` oggetto che contenga i risultati dell&#39;operazione. Accertatevi che l’estensione del nome del file sia .xml.
-   * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
+   * Richiamare il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
    Sebbene il servizio Output scriva il documento PDF nella posizione specificata dall&#39;argomento passato al `PDFOutputOptionsSpec` metodo dell&#39; `setFileURI` oggetto, è possibile recuperare il documento PDF/A a livello di programmazione richiamando il metodo dell&#39; `OutputResult` oggetto `getGeneratedDoc` .
 
 **Consulta anche**
@@ -339,7 +341,7 @@ Creare un documento PDF utilizzando l&#39;API di Output (servizio Web):
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica il livello principale del contenuto in cui si trova la struttura del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i dati dei risultati. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
@@ -374,9 +376,9 @@ Creare un documento PDF utilizzando l&#39;API di Output (servizio Web):
 
 È possibile utilizzare il servizio Output per creare un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font vengono incorporati e il file non viene compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuto audio e video. Come per altre attività del servizio Output, è possibile creare un documento PDF/A mediante la creazione di una struttura del modulo e di dati da unire a una struttura del modulo.
 
-La specifica PDF/A-1 è costituita da due livelli di conformità, ovvero a e b. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità b. Indipendentemente dal livello di conformità, PDF/A-1 specifica che tutti i font sono incorporati nel documento PDF/A generato.
+La specifica PDF/A-1 è costituita da due livelli di conformità, vale a dire a e b. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità b. Indipendentemente dal livello di conformità, PDF/A-1 specifica che tutti i font sono incorporati nel documento PDF/A generato.
 
-Sebbene PDF/A sia lo standard per l&#39;archiviazione di documenti PDF, non è obbligatorio utilizzare i PDF/A per l&#39;archiviazione se un documento PDF standard soddisfa le esigenze aziendali. Lo scopo dello standard PDF/A è quello di stabilire un file PDF che possa essere memorizzato per un lungo periodo di tempo e soddisfare i requisiti di conservazione dei documenti. Ad esempio, un URL non può essere incorporato in un PDF/A perché nel tempo l’URL potrebbe diventare non valido.
+Sebbene PDF/A sia lo standard per l&#39;archiviazione di documenti PDF, non è obbligatorio utilizzare i PDF/A per l&#39;archiviazione se un documento PDF standard soddisfa le esigenze aziendali. Lo scopo dello standard PDF/A è quello di stabilire un file PDF che possa essere memorizzato per un lungo periodo di tempo, oltre a soddisfare i requisiti di conservazione dei documenti. Ad esempio, un URL non può essere incorporato in un PDF/A perché nel tempo l’URL potrebbe diventare non valido.
 
 L&#39;organizzazione deve valutare le proprie esigenze, il tempo di conservazione del documento, le dimensioni del file e determinare la propria strategia di archiviazione. È possibile determinare a livello di programmazione se un documento PDF è conforme allo standard PDF/A utilizzando il servizio DocConverter. (Vedere Determinazione [programmatica della conformità](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)PDF/A.)
 
@@ -392,7 +394,7 @@ Quando un documento PDF/A viene aperto in Acrobat, viene visualizzato un messagg
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -408,7 +410,7 @@ Per creare un documento PDF/A, effettuare le seguenti operazioni:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione personalizzata utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione personalizzata utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -418,7 +420,7 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
 * jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
 
-se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE su cui è distribuito AEM Forms.
+se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE su cui è distribuito AEM Forms.
 
 **Creare un oggetto Client di output**
 
@@ -426,7 +428,7 @@ Prima di eseguire un&#39;operazione del servizio Output a livello di programmazi
 
 **Riferimento a un&#39;origine dati XML**
 
-Per unire i dati alla struttura del modulo, è necessario fare riferimento a un&#39;origine dati XML che contiene i dati. Per ogni campo del modulo che si desidera compilare con i dati deve esistere un elemento XML. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine di visualizzazione degli elementi XML.
+Per unire i dati alla struttura del modulo, è necessario fare riferimento a un&#39;origine dati XML che contiene i dati. Per ogni campo del modulo che si desidera compilare con i dati deve esistere un elemento XML. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine in cui vengono visualizzati gli elementi XML.
 
 **Impostazione delle opzioni di esecuzione PDF/A**
 
@@ -448,7 +450,7 @@ Dopo aver fatto riferimento a un&#39;origine dati XML valida che contiene i dati
 
 **Recuperare i risultati dell&#39;operazione**
 
-Dopo che il servizio Output ha eseguito un&#39;operazione, restituisce vari elementi di dati, ad esempio dati XML, che specificano se l&#39;operazione ha avuto esito positivo.
+Dopo l&#39;esecuzione di un&#39;operazione, il servizio Output restituisce vari elementi di dati, ad esempio dati XML, che specificano se l&#39;operazione ha avuto esito positivo.
 
 **Consulta anche**
 
@@ -502,7 +504,7 @@ Creare un documento PDF/A utilizzando l&#39;API di output (Java):
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica il livello principale del contenuto in cui si trova la struttura del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `com.adobe.idp.Document` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    Il `generatePDFOutput` metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
@@ -518,7 +520,7 @@ Creare un documento PDF/A utilizzando l&#39;API di output (Java):
 
    * Creare un `com.adobe.idp.Document` oggetto che rappresenti lo stato del `generatePDFOutput` metodo richiamando il metodo dell&#39; `OutputResult` oggetto `getStatusDoc` .
    * Creare un `java.io.File` oggetto che conterrà i risultati dell&#39;operazione. Accertatevi che l’estensione del nome del file sia .xml.
-   * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
+   * Richiamare il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
    >[!NOTE]
    >
    >Sebbene il servizio Output scriva il documento PDF/A nella posizione specificata dall&#39;argomento passato al `PDFOutputOptionsSpec` metodo dell&#39; `setFileURI` oggetto, è possibile recuperare il documento PDF/A a livello di programmazione richiamando il metodo dell&#39; `OutputResult` oggetto `getGeneratedDoc` .
@@ -588,7 +590,7 @@ Creare un documento PDF/A utilizzando l&#39;API di Output (servizio Web):
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica il livello principale del contenuto in cui si trova la struttura del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i dati dei risultati. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
@@ -612,7 +614,7 @@ Creare un documento PDF/A utilizzando l&#39;API di Output (servizio Web):
 
 [Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Invio di documenti in Content Services (obsoleto) al servizio di output {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
+## Trasmissione di documenti in Content Services (obsoleto) al servizio di output {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
 Il servizio Output esegue il rendering di un modulo PDF non interattivo basato su una struttura del modulo generalmente salvata come file XDP e creata in Designer. È possibile trasmettere al servizio Output un oggetto `com.adobe.idp.Document` che contiene la struttura del modulo. Il servizio Output esegue quindi il rendering della struttura del modulo situata nell&#39; `com.adobe.idp.Document` oggetto.
 
@@ -652,7 +654,7 @@ Per eseguire il rendering di un modulo non interattivo, passare l&#39; `com.adob
 
 >[!NOTE]
 >
->Due nuovi metodi denominati `generatePDFOutput2`e g `eneratePrintedOutput2`accettano un `com.adobe.idp.Document` oggetto contenente una struttura del modulo. È inoltre possibile trasmettere al servizio Output una struttura del modulo `com.adobe.idp.Document`contenente la struttura del modulo durante l&#39;invio di un flusso di stampa a una stampante di rete.
+>Due nuovi metodi denominati `generatePDFOutput2`e g `eneratePrintedOutput2`accettano un `com.adobe.idp.Document` oggetto che contiene una struttura del modulo. È inoltre possibile trasmettere al servizio Output una struttura del modulo `com.adobe.idp.Document`contenente la struttura del modulo durante l&#39;invio di un flusso di stampa a una stampante di rete.
 
 **Eseguire un&#39;azione con il flusso di dati del modulo**
 
@@ -703,7 +705,7 @@ Trasferite un documento recuperato da Content Services (obsoleto) utilizzando il
    * Una stringa che specifica la radice del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
    * Un `com.adobe.idp.Document` oggetto che rappresenta la struttura del modulo (utilizzare l&#39;istanza restituita dal `CRCResult` metodo dell&#39;oggetto `getDocument` ).
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `com.adobe.idp.Document` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    Il `generatePDFOutput2` metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
@@ -711,7 +713,7 @@ Trasferite un documento recuperato da Content Services (obsoleto) utilizzando il
 
    * Recuperare un `com.adobe.idp.Document` oggetto che rappresenta il modulo non interattivo richiamando il `OutputResult` metodo dell&#39;oggetto `getGeneratedDoc` .
    * Creare un `java.io.File` oggetto che contenga i risultati dell&#39;operazione. Accertatevi che l’estensione del nome file sia .pdf.
-   * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getGeneratedDoc` metodo).
+   * Richiamare il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getGeneratedDoc` metodo).
 
 **Consulta anche**
 
@@ -774,10 +776,10 @@ Trasferite un documento recuperato da Content Services (obsoleto) utilizzando il
    Richiama il metodo dell’ `OutputServiceClient` oggetto `generatePDFOutput2` e passa i seguenti valori:
 
    * Un valore `TransformationFormat` di enumerazione. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
-   * Una stringa che specifica la radice del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
+   * Una stringa che specifica la directory principale del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
    * Un oggetto `BLOB` che rappresenta la struttura del modulo (utilizzare l&#39; `BLOB` istanza restituita da Content Services (obsoleto)).
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    * Un oggetto di output `BLOB` compilato dal `generatePDFOutput2` metodo. Il `generatePDFOutput2` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
    * Un `OutputResult` oggetto di output che contiene i risultati dell&#39;operazione. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
@@ -814,7 +816,7 @@ La cartella *FormsFolder* è un percorso definito dall&#39;utente nell&#39;archi
 
 [Avvio rapido (modalità EJB): La creazione di un documento PDF basato su un file XDP dell&#39;applicazione mediante l&#39;API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) Java (mostra come passare la posizione del file XDP per riferimento).
 
-[Avvio rapido (modalità EJB): Trasmissione di un documento che si trova nell&#39;archivio AEM Forms al servizio Output tramite l&#39;API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (mostra come recuperare il file XDP dall&#39;archivio dei moduli AEM a livello di programmazione e trasmetterlo al servizio Output all&#39;interno di un&#39; `com.adobe.idp.Document` istanza). (Questa sezione descrive come eseguire questa attività)
+[Avvio rapido (modalità EJB): Trasmissione di un documento che si trova nell&#39;archivio AEM Forms al servizio Output tramite l&#39;API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (mostra come recuperare il file XDP dall&#39;archivio dei moduli AEM a livello di programmazione e trasmetterlo al servizio Output all&#39;interno di un&#39; `com.adobe.idp.Document` istanza). (In questa sezione viene illustrato come eseguire questa attività)
 
 >[!NOTE]
 >
@@ -891,10 +893,10 @@ Trasmettere un documento recuperato dall&#39;archivio utilizzando il servizio Ou
    Richiama il metodo dell’ `OutputClient` oggetto `generatePDFOutput2` e passa i seguenti valori:
 
    * Un valore `TransformationFormat` di enumerazione. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
-   * Una stringa che specifica la radice del contenuto in cui si trovano le risorse aggiuntive, come le immagini. Esempio, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
+   * Una stringa che specifica la directory principale del contenuto in cui si trovano le risorse aggiuntive, come le immagini. Esempio, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
    * Un `com.adobe.idp.Document` oggetto che rappresenta la struttura del modulo (utilizzare l&#39;istanza restituita dal `ResourceRepositoryClient` metodo dell&#39;oggetto `readResourceContent` ).
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `com.adobe.idp.Document` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    Il `generatePDFOutput2` metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
@@ -902,7 +904,7 @@ Trasmettere un documento recuperato dall&#39;archivio utilizzando il servizio Ou
 
    * Recuperare un `com.adobe.idp.Document` oggetto che rappresenta il modulo non interattivo richiamando il `OutputResult` metodo dell&#39;oggetto `getGeneratedDoc` .
    * Creare un `java.io.File` oggetto che contenga i risultati dell&#39;operazione. Accertatevi che l’estensione del nome file sia .pdf.
-   * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getGeneratedDoc` metodo).
+   * Richiamare il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getGeneratedDoc` metodo).
 
 **Consulta anche**
 
@@ -930,7 +932,7 @@ Prima di leggere *Creazione di documenti PDF utilizzando i frammenti*, è consig
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-4}
 
@@ -944,7 +946,7 @@ Per creare un documento PDF basato sui frammenti, effettuare le seguenti operazi
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 **Creare un oggetto Client di Output e Assembler**
 
@@ -1002,7 +1004,7 @@ Creare un documento PDF basato sui frammenti utilizzando l&#39;API di Output Ser
    Il `invokeDDX` metodo restituisce un `com.adobe.livecycle.assembler.client.AssemblerResult` oggetto che contiene il documento XDP assemblato. Per recuperare il documento XDP assemblato, eseguire le operazioni seguenti:
 
    * Richiama il metodo dell’ `AssemblerResult` oggetto `getDocuments` . Questo metodo restituisce un `java.util.Map` oggetto.
-   * Iterare l&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante.
+   * Eseguire un&#39;iterazione sull&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante.
    * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per estrarre il documento XDP assemblato.
 
 
@@ -1094,10 +1096,10 @@ Creare un documento PDF basato sui frammenti utilizzando l&#39;API di Output Ser
    Richiama il metodo dell’ `OutputServiceClient` oggetto `generatePDFOutput2` e passa i seguenti valori:
 
    * Un valore `TransformationFormat` di enumerazione. Per generare un documento PDF, specificare `TransformationFormat.PDF`.
-   * Una stringa che specifica la radice del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
+   * Una stringa che specifica la directory principale del contenuto in cui si trovano le risorse aggiuntive, come le immagini.
    * Un `BLOB` oggetto che rappresenta la struttura del modulo (utilizzare l&#39; `BLOB` istanza restituita dal servizio Assembler).
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    * Un `BLOB` oggetto di output compilato dal `generatePDFOutput2` metodo. Il `generatePDFOutput2` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
    * Un `OutputResult` oggetto di output che contiene i risultati dell&#39;operazione. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
@@ -1133,11 +1135,11 @@ Il servizio Output consente di unire i dati XML a una struttura del modulo e di 
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-5}
 
-Per stampare un file, effettuare le seguenti operazioni:
+Per stampare su un file, effettuare le seguenti operazioni:
 
 1. Includere i file di progetto.
 1. Creare un oggetto Client di output.
@@ -1148,7 +1150,7 @@ Per stampare un file, effettuare le seguenti operazioni:
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -1158,7 +1160,7 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
 * jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
 
-se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE su cui è distribuito AEM Forms. (consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms).
+se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE su cui è distribuito AEM Forms. (consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms).
 
 **Creare un oggetto Client di output**
 
@@ -1166,7 +1168,7 @@ Prima di eseguire un&#39;operazione del servizio Output a livello di programmazi
 
 **Riferimento a un&#39;origine dati XML**
 
-Per stampare un documento contenente dati, è necessario fare riferimento a un&#39;origine dati XML che contiene elementi XML per ogni campo del modulo che si desidera compilare con i dati. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine di visualizzazione degli elementi XML.
+Per stampare un documento contenente dati, è necessario fare riferimento a un&#39;origine dati XML che contiene elementi XML per ogni campo del modulo che si desidera compilare con i dati. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine in cui vengono visualizzati gli elementi XML.
 
 **Impostazione delle opzioni di esecuzione della stampa necessarie per stampare su un file**
 
@@ -1227,9 +1229,9 @@ Stampa su un file tramite l&#39;API di Output (Java):
    * Un valore di `PrintFormat` enumerazione che specifica il formato del flusso di stampa da creare. Ad esempio, per creare un flusso di stampa PostScript, passare `PrintFormat.PostScript`.
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica la posizione dei relativi file collaterali, ad esempio i file immagine.
-   * Una stringa che specifica la posizione del file XDC da utilizzare (è possibile passare `null` se si specifica il file XDC da utilizzare utilizzando l&#39; `PrintedOutputOptionsSpec` oggetto).
+   * Un valore di stringa che specifica la posizione del file XDC da utilizzare (è possibile passare `null` se si specifica il file XDC da utilizzare utilizzando l&#39; `PrintedOutputOptionsSpec` oggetto).
    * L&#39; `PrintedOutputOptionsSpec` oggetto che contiene le opzioni di esecuzione necessarie per la stampa su un file.
-   * L&#39; `com.adobe.idp.Document` oggetto che contiene l&#39;origine dati XML contenente i dati del modulo.
+   * L&#39; `com.adobe.idp.Document` oggetto che contiene l&#39;origine dati XML che contiene i dati del modulo.
    Il `generatePrintedOutput` metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
    >[!NOTE]
@@ -1240,7 +1242,7 @@ Stampa su un file tramite l&#39;API di Output (Java):
 
    * Creare un oggetto `com.adobe.idp.Document` che rappresenti lo stato del `generatePrintedOutput` metodo richiamando il metodo dell&#39; `OutputResult` oggetto `getStatusDoc` (l&#39; `OutputResult` oggetto è stato restituito dal `generatePrintedOutput` metodo).
    * Creare un `java.io.File` oggetto che conterrà i risultati dell&#39;operazione. Assicurarsi che l&#39;estensione del file sia XML.
-   * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
+   * Richiamare il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
 
 **Consulta anche**
 
@@ -1298,9 +1300,9 @@ Stampa su un file tramite l&#39;API di Output (servizio Web):
    * Un valore di `PrintFormat` enumerazione che specifica il formato del flusso di stampa da creare. Ad esempio, per creare un flusso di stampa PostScript, passare `PrintFormat.PostScript`.
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica la posizione dei relativi file collaterali, ad esempio i file immagine.
-   * Una stringa che specifica la posizione del file XDC da utilizzare (è possibile passare `null` se si specifica il file XDC da utilizzare utilizzando l&#39; `PrintedOutputOptionsSpec` oggetto).
+   * Un valore di stringa che specifica la posizione del file XDC da utilizzare (è possibile passare `null` se si specifica il file XDC da utilizzare utilizzando l&#39; `PrintedOutputOptionsSpec` oggetto).
    * L&#39; `PrintedOutputOptionsSpec` oggetto che contiene le opzioni di esecuzione della stampa necessarie per stampare su un file.
-   * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati del modulo.
+   * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML che contiene i dati del modulo.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i dati dei risultati. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
    * Un `OutputResult` oggetto che contiene i risultati dell&#39;operazione. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
@@ -1337,7 +1339,7 @@ Utilizzando il servizio Output, è possibile unire i dati XML a una struttura de
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-6}
 
@@ -1352,7 +1354,7 @@ Per inviare un flusso di stampa a una stampante di rete, effettuare le seguenti 
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -1362,7 +1364,7 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
 * jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
 
-se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE su cui è distribuito AEM Forms.
+se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE su cui è distribuito AEM Forms.
 
 **Creare un oggetto Client di output**
 
@@ -1370,7 +1372,7 @@ Prima di eseguire un&#39;operazione del servizio Output a livello di programmazi
 
 **Riferimento a un&#39;origine dati XML**
 
-Per stampare un documento contenente dati, è necessario fare riferimento a un&#39;origine dati XML che contiene elementi XML per ogni campo del modulo che si desidera compilare con i dati. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine di visualizzazione degli elementi XML.
+Per stampare un documento contenente dati, è necessario fare riferimento a un&#39;origine dati XML che contiene elementi XML per ogni campo del modulo che si desidera compilare con i dati. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine in cui vengono visualizzati gli elementi XML.
 
 **Impostazione delle opzioni di esecuzione della stampa**
 
@@ -1385,7 +1387,7 @@ Per stampare un documento contenente dati, è necessario fare riferimento a un&#
 >
 >Per informazioni su tutte le opzioni di esecuzione che è possibile impostare, vedere il riferimento alla `PrintedOutputOptionsSpec` classe.
 
-**Recupero di un documento da stampare**
+**Recuperare un documento da stampare**
 
 Recuperare un flusso di stampa da inviare a una stampante. Ad esempio, è possibile recuperare un file PostScript e inviarlo a una stampante.
 
@@ -1408,15 +1410,15 @@ Per recuperare un documento da stampare, utilizzare il `generatePrintedOutput` m
    <td><p>Crea un flusso di output xdpl203.xdc predefinito o personalizzato per impostazione predefinita.</p></td>
   </tr>
   <tr>
-   <td><p>DPL300DPI </p></td>
+   <td><p>DPL 300 DPI </p></td>
    <td><p>Crea un flusso di output DPL 300 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL406DPI </p></td>
+   <td><p>DPL 406 DPI </p></td>
    <td><p>Crea un flusso di output DPL 400 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL600DPI </p></td>
+   <td><p>DPL 600 DPI </p></td>
    <td><p>Crea un flusso di output DPL 600 DPI.</p></td>
   </tr>
   <tr>
@@ -1432,11 +1434,11 @@ Per recuperare un documento da stampare, utilizzare il `generatePrintedOutput` m
    <td><p>Crea un flusso di output IPL personalizzato.</p></td>
   </tr>
   <tr>
-   <td><p>IPL300DPI </p></td>
+   <td><p>IPL 300 DPI </p></td>
    <td><p>Crea un flusso di output IPL 300 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>IPL400DPI </p></td>
+   <td><p>IPL 400 DPI </p></td>
    <td><p>Crea un flusso di output IPL 400 DPI.</p></td>
   </tr>
   <tr>
@@ -1452,11 +1454,11 @@ Per recuperare un documento da stampare, utilizzare il `generatePrintedOutput` m
    <td><p>Crea un flusso di output TPCL personalizzato.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL305DPI </p></td>
+   <td><p>TPCL 305 DPI </p></td>
    <td><p>Crea un flusso di output TPCL 305 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL600DPI </p></td>
+   <td><p>TPCL 600 DPI </p></td>
    <td><p>Crea un flusso di output TPCL 600 DPI.</p></td>
   </tr>
   <tr>
@@ -1464,7 +1466,7 @@ Per recuperare un documento da stampare, utilizzare il `generatePrintedOutput` m
    <td><p>Crea un flusso di output ZPL 203 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>ZPL300DPI </p></td>
+   <td><p>ZPL 300 DPI </p></td>
    <td><p>Crea un flusso di output ZPL 300 DPI.</p></td>
   </tr>
  </tbody>
@@ -1476,11 +1478,11 @@ Per recuperare un documento da stampare, utilizzare il `generatePrintedOutput` m
 
 **Inviare il flusso di stampa a una stampante di rete**
 
-Dopo aver recuperato un documento da stampare, è possibile richiamare il servizio Output, che causa l&#39;invio di un flusso di stampa a una stampante di rete. Per individuare correttamente la stampante, è necessario specificare sia il server di stampa che il nome della stampante. È inoltre necessario specificare il protocollo di stampa.
+Dopo aver recuperato un documento da stampare, è possibile richiamare il servizio Output, che causa l&#39;invio di un flusso di stampa a una stampante di rete. Affinché il servizio Output riesca a individuare la stampante, è necessario specificare sia il server di stampa che il nome della stampante. Inoltre, è necessario specificare anche il protocollo di stampa.
 
 >[!NOTE]
 >
->Se sul server dei moduli è installato PDFG e il server viene eseguito su Windows Server 2008, non è possibile utilizzare la proprietà SharedPrinter. In questa situazione, utilizzare un protocollo di stampa diverso.
+>Se sul server dei moduli è installato PDFG e il server è in esecuzione in Windows Server 2008, non è possibile utilizzare la proprietà SharedPrinter. In questo caso, utilizzare un protocollo di stampa diverso.
 
 >[!NOTE]
 >
@@ -1510,7 +1512,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
    >
    >Non è possibile impostare il valore dell&#39;impaginazione utilizzando il metodo dell&#39; `PrintedOutputOptionsSpec` oggetto `setPagination` se si sta generando un flusso di stampa ZPL. Analogamente, non è possibile impostare le seguenti opzioni per un flusso di stampa ZPL: OutputJog, PageOffset e Staple. Il `setPagination` metodo non è valido per la generazione PostScript. È valido solo per la generazione PCL.
 
-1. Recupero di un documento da stampare
+1. Recuperare un documento da stampare
 
    * Recuperare un documento da stampare richiamando il metodo dell&#39; `OutputClient` oggetto `generatePrintedOutput` e passando i seguenti valori:
 
@@ -1532,7 +1534,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
    * Un `com.adobe.idp.Document` oggetto che rappresenta il flusso di stampa da inviare alla stampante.
    * Un valore di `PrinterProtocol` enumerazione che specifica il protocollo della stampante da utilizzare. Ad esempio, per specificare il protocollo SharedPrinter, passare `PrinterProtocol.SharedPrinter`.
    * Una stringa che specifica il nome del server di stampa. Ad esempio, se il nome del server di stampa è PrintServer1, passare `\\\PrintSever1`.
-   * Valore stringa che specifica il nome della stampante. Ad esempio, se il nome della stampante è Printer1, passare `\\\PrintSever1\Printer1`.
+   * Un valore di stringa che specifica il nome della stampante. Ad esempio, se il nome della stampante è Printer1, passare `\\\PrintSever1\Printer1`.
    >[!NOTE]
    >
    >Il `sendToPrinter` metodo è stato aggiunto all’API di AEM Forms nella versione 8.2.1.
@@ -1565,7 +1567,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
 1. Fare riferimento a un&#39;origine dati XML.
 
    * Creare un `BLOB` oggetto utilizzando il relativo costruttore. L&#39; `BLOB` oggetto viene utilizzato per memorizzare i dati del modulo.
-   * Creare un `System.IO.FileStream` oggetto richiamandone il costruttore. Passa un valore di stringa che specifica la posizione del file XML contenente i dati del modulo.
+   * Creare un `System.IO.FileStream` oggetto richiamandone il costruttore. Passa un valore di stringa che specifica la posizione del file XML che contiene i dati del modulo.
    * Creare un array di byte che memorizza il contenuto dell&#39; `System.IO.FileStream` oggetto. Determinare la lunghezza dell&#39;array di byte ottenendo la `System.IO.FileStream` proprietà dell&#39; `Length` oggetto.
    * Compilare l&#39;array di byte con i dati del flusso richiamando il `System.IO.FileStream` `Read` metodo dell&#39;oggetto e passando l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39; `BLOB` oggetto assegnandone `MTOM` il campo con il contenuto dell&#39;array di byte.
@@ -1587,7 +1589,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
       * Una stringa che specifica la posizione dei relativi file collaterali, ad esempio i file immagine.
       * Una stringa che specifica la posizione del file XDC da utilizzare.
       * L&#39; `PrintedOutputOptionsSpec` oggetto che contiene le opzioni di esecuzione della stampa utilizzate per inviare un flusso di stampa a una stampante di rete.
-      * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati del modulo.
+      * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML che contiene i dati del modulo.
       * Un `BLOB` oggetto popolato dal `generatePrintedOutput` metodo. Il `generatePrintedOutput` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
       * Un `BLOB` oggetto popolato dal `generatePrintedOutput` metodo. Il `generatePrintedOutput` metodo popola l&#39;oggetto con i dati dei risultati. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
       * Un `OutputResult` oggetto che contiene i risultati dell&#39;operazione. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
@@ -1602,7 +1604,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
    * Un valore di `PrinterProtocol` enumerazione che specifica il protocollo della stampante da utilizzare. Ad esempio, per specificare il protocollo SharedPrinter, passare `PrinterProtocol.SharedPrinter`.
    * Un `bool` valore che specifica se utilizzare il valore del parametro precedente. Passa il valore `true`. Questo valore di parametro è richiesto solo per la chiamata al servizio Web.
    * Una stringa che specifica il nome del server di stampa. Ad esempio, se il nome del server di stampa è PrintServer1, passare `\\\PrintSever1`.
-   * Valore stringa che specifica il nome della stampante. Ad esempio, se il nome della stampante è Printer1, passare `\\\PrintSever1\Printer1`.
+   * Un valore di stringa che specifica il nome della stampante. Ad esempio, se il nome della stampante è Printer1, passare `\\\PrintSever1\Printer1`.
    >[!NOTE]
    >
    >Il `sendToPrinter` metodo è stato aggiunto all’API di AEM Forms nella versione 8.2.1.
@@ -1611,7 +1613,7 @@ Inviare un flusso di stampa a una stampante di rete utilizzando l&#39;API Output
 
 Il servizio Output può creare documenti separati per ciascun record all&#39;interno di un&#39;origine dati XML o di un singolo file contenente tutti i record (questa funzionalità è l&#39;impostazione predefinita). Ad esempio, si supponga che dieci record si trovino all&#39;interno di un&#39;origine dati XML e si informi il servizio Output di creare documenti PDF separati (o altri tipi di output) per ciascun record utilizzando l&#39;API Output Service. Di conseguenza, il servizio Output genera dieci documenti PDF. Anziché creare documenti, è possibile inviare più flussi di stampa a una stampante.
 
-Nell&#39;illustrazione seguente è illustrato anche il servizio Output che elabora un file di dati XML contenente più record. Si supponga tuttavia di richiedere al servizio Output di creare un singolo documento PDF contenente tutti i record di dati. In questa situazione, il servizio Output genera un documento che contiene tutti i record.
+Nell&#39;illustrazione seguente è illustrato anche il servizio Output che elabora un file di dati XML contenente più record. Si supponga, tuttavia, di richiedere al servizio Output di creare un singolo documento PDF contenente tutti i record di dati. In questa situazione, il servizio Output genera un documento che contiene tutti i record.
 
 Nell&#39;illustrazione seguente è illustrato il servizio Output che elabora un file di dati XML contenente più record. Si supponga di indicare al servizio Output di creare un documento PDF separato per ciascun record di dati. In questa situazione, il servizio Output genera un documento PDF separato per ciascun record di dati.
 
@@ -1674,7 +1676,7 @@ Tenere presente che l&#39;elemento XML che avvia e termina ogni record di dati �
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-7}
 
@@ -1690,7 +1692,7 @@ Per creare più file PDF basati su un&#39;origine dati XML, procedere come segue
 
 **Includi file di progetto**
 
-Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate servizi Web, accertatevi di includere i file proxy.
+Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
 I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
@@ -1700,7 +1702,7 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
 * jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
 
-se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE su cui è distribuito AEM Forms.
+se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE su cui è distribuito AEM Forms.
 
 **Creare un oggetto Client di output**
 
@@ -1710,15 +1712,15 @@ Prima di eseguire un&#39;operazione del servizio Output a livello di programmazi
 
 Fare riferimento a un&#39;origine dati XML che contiene più record. Per separare i record di dati è necessario utilizzare un elemento XML. Ad esempio, nell&#39;origine dati XML di esempio visualizzata in precedenza in questa sezione, l&#39;elemento XML che separa i record di dati è denominato `LoanRecord`.
 
-Per ogni campo del modulo che si desidera compilare con i dati deve esistere un elemento XML. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine di visualizzazione degli elementi XML.
+Per ogni campo del modulo che si desidera compilare con i dati deve esistere un elemento XML. Il nome dell&#39;elemento XML deve corrispondere al nome del campo. Un elemento XML viene ignorato se non corrisponde a un campo modulo o se il nome dell&#39;elemento XML non corrisponde al nome del campo. Se vengono specificati tutti gli elementi XML, non è necessario stabilire una corrispondenza con l&#39;ordine in cui vengono visualizzati gli elementi XML.
 
 **Impostazione delle opzioni di esecuzione PDF**
 
 Per creare correttamente più file basati su un&#39;origine dati XML, è necessario impostare le seguenti opzioni di esecuzione per il servizio Output:
 
 * **Molti file**: Specifica se il servizio Output crea uno o più documenti. Potete specificare true o false. Per creare un documento separato per ciascun record di dati nell&#39;origine dati XML, specificare true.
-* **URI** file: Specifica la posizione dei file generati dal servizio Output. Ad esempio, si supponga di specificare C:\\Adobe\forms\Loan.pdf. In questa situazione, il servizio Output crea un file denominato Loan.pdf e inserisce il file nella cartella C:\\Adobe\forms folder. In presenza di più file, i nomi dei file sono Loan0001.pdf, Loan0002.pdf, Loan0003.pdf e così via. Se specificate un percorso di file, i file vengono inseriti sul server, non sul computer client.
-* **Nome** record: Specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati. Ad esempio, nell&#39;origine dati XML di esempio visualizzata in precedenza in questa sezione, viene chiamato l&#39;elemento XML che separa i record di dati `LoanRecord`. Anziché impostare l&#39;opzione di runtime Nome record, potete impostare il livello di record assegnandogli un valore numerico che indica il livello di elemento che contiene i record di dati. Tuttavia, potete impostare solo il Nome record o il Livello record. Non è possibile impostare entrambi i valori.
+* **URI** file: Specifica la posizione dei file generati dal servizio Output. Ad esempio, si supponga di specificare C:\\Adobe\forms\Loan.pdf. In questa situazione, il servizio Output crea un file denominato Loan.pdf e inserisce il file nella cartella C:\\Adobe\forms folder. In presenza di più file, i nomi dei file sono Loan0001.pdf, Loan0002.pdf, Loan0003.pdf e così via. Se si specifica un percorso di file, i file vengono inseriti sul server, non sul computer client.
+* **Nome** record: Specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati. Ad esempio, nell&#39;origine dati XML di esempio visualizzata in precedenza in questa sezione, viene chiamato l&#39;elemento XML che separa i record di dati `LoanRecord`. Anziché impostare l&#39;opzione di runtime Nome record, potete impostare il livello di record assegnandogli un valore numerico che indica il livello dell&#39;elemento che contiene i record di dati. Tuttavia, potete impostare solo il Nome record o il Livello record. Non è possibile impostare entrambi i valori.
 
 **Impostazione delle opzioni di esecuzione del rendering**
 
@@ -1773,7 +1775,7 @@ Dopo che il servizio Output ha eseguito un&#39;operazione, restituisce dati XML 
 
 [Avvio rapido API di Output Service](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Creare più file PDF utilizzando l&#39;API Java {#create-multiple-pdf-files-using-the-java-api}
+### Creazione di più file PDF tramite l&#39;API Java {#create-multiple-pdf-files-using-the-java-api}
 
 Creare più file PDF utilizzando l&#39;API di output (Java):
 
@@ -1794,9 +1796,9 @@ Creare più file PDF utilizzando l&#39;API di output (Java):
 1. Impostazione delle opzioni di esecuzione PDF
 
    * Creare un `PDFOutputOptionsSpec` oggetto utilizzando il relativo costruttore.
-   * Impostare l&#39;opzione Molti file richiamando il `PDFOutputOptionsSpec` metodo dell&#39; `setGenerateManyFiles` oggetto. Ad esempio, passare il valore `true` per indicare al servizio Output di creare un file PDF separato per ciascun record nell&#39;origine dati XML. (Se si passa `false`il servizio Output genera un singolo documento PDF contenente tutti i record).
+   * Impostate l&#39;opzione Molti file richiamando il `PDFOutputOptionsSpec` metodo dell&#39; `setGenerateManyFiles` oggetto. Ad esempio, passare il valore `true` per indicare al servizio Output di creare un file PDF separato per ciascun record nell&#39;origine dati XML. (Se si passa `false`il servizio Output genera un singolo documento PDF contenente tutti i record).
    * Impostare l&#39;opzione URI del file richiamando il metodo dell&#39; `PDFOutputOptionsSpec` oggetto `setFileUri` e passando un valore di stringa che specifica la posizione dei file generati dal servizio Output. L&#39;opzione URI file è relativa al server applicazione J2EE in cui è installato AEM Forms, non al computer client.
-   * Impostare l&#39;opzione Nome record richiamando il metodo dell&#39; `OutputOptionsSpec` oggetto `setRecordName` e passando un valore di stringa che specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati. Ad esempio, si consideri l&#39;origine dati XML visualizzata in precedenza in questa sezione. Il nome dell&#39;elemento XML che separa i record di dati è LoanRecord).
+   * Impostare l&#39;opzione Nome record richiamando il metodo dell&#39; `OutputOptionsSpec` oggetto `setRecordName` e passando un valore di stringa che specifica il nome dell&#39;elemento XML nell&#39;origine dati che separa i record di dati. Ad esempio, si consideri l&#39;origine dati XML mostrata in precedenza in questa sezione. Il nome dell&#39;elemento XML che separa i record di dati è LoanRecord).
 
 1. Impostazione delle opzioni di esecuzione del rendering
 
@@ -1811,14 +1813,14 @@ Creare più file PDF utilizzando l&#39;API di output (Java):
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica il livello principale del contenuto in cui si trova la struttura del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `com.adobe.idp.Document` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    Il `generatePDFOutput` metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
 1. Recuperare i risultati dell&#39;operazione
 
    * Creare un `java.io.File` oggetto che rappresenta un file XML che conterrà i risultati del `generatePDFOutput` metodo. Accertatevi che l’estensione del nome del file sia .xml.
-   * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `applyUsageRights` metodo).
+   * Richiamare il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `applyUsageRights` metodo).
 
 **Consulta anche**
 
@@ -1884,7 +1886,7 @@ Creare più file PDF utilizzando l&#39;API di Output (servizio Web):
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica il livello principale del contenuto in cui si trova la struttura del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i dati dei risultati.
@@ -1909,13 +1911,13 @@ Creare più file PDF utilizzando l&#39;API di Output (servizio Web):
 
 È possibile creare regole di ricerca che determinano l&#39;esame dei dati di input da parte del servizio Output e l&#39;utilizzo di strutture del modulo diverse in base al contenuto dei dati per generare l&#39;output. Ad esempio, se il *mutuo* di testo si trova all&#39;interno dei dati di input, il servizio Output può utilizzare una struttura del modulo denominata Mortgage.xdp. Allo stesso modo, se l&#39; *automobile* di testo si trova nei dati di input, il servizio Output può utilizzare una struttura del modulo salvata come AutomobileLoan.xdp. Anche se il servizio Output può generare tipi di output diversi, questa sezione presuppone che il servizio Output generi un file PDF. Nel diagramma seguente è illustrato il servizio Output che genera un file PDF elaborando un file di dati XML e utilizzando una delle numerose strutture del modulo.
 
-Inoltre, il servizio Output è in grado di generare pacchetti di documenti, in cui nel set di dati vengono forniti più record, ogni record viene associato a una struttura del modulo e un singolo documento viene generato con più strutture del modulo.
+Inoltre, il servizio Output è in grado di generare pacchetti di documenti, in cui nel set di dati vengono forniti più record, ogni record viene associato a una struttura del modulo e un singolo documento viene generato composto da più strutture del modulo.
 
 ![cs_outputbatchmanyformdesigns2](assets/cs_outputbatchmanyformdesigns2.png)
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-8}
 
@@ -2039,7 +2041,7 @@ Create le regole di ricerca utilizzando l&#39;API di output (Java):
    * Una stringa che specifica il nome della struttura del modulo predefinita. ovvero la struttura del modulo utilizzata se non si trova un pattern di testo.
    * Una stringa che specifica il livello principale del contenuto in cui si trovano le strutture del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `com.adobe.idp.Document` oggetto che contiene i dati del modulo ricercati dal servizio Output per individuare i pattern di testo definiti.
    Il `generatePDFOutput` metodo restituisce un `OutputResult` oggetto che contiene i risultati dell&#39;operazione.
 
@@ -2047,7 +2049,7 @@ Create le regole di ricerca utilizzando l&#39;API di output (Java):
 
    * Creare un `com.adobe.idp.Document` oggetto che rappresenti lo stato del `generatePDFOutput` metodo richiamando il metodo dell&#39; `OutputResult` oggetto `getStatusDoc` .
    * Creare un `java.io.File` oggetto che conterrà i risultati dell&#39;operazione. Accertatevi che l’estensione del file sia .xml.
-   * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
+   * Richiamare il metodo `com.adobe.idp.Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `com.adobe.idp.Document` oggetto nel file (assicurarsi di utilizzare l&#39; `com.adobe.idp.Document` oggetto restituito dal `getStatusDoc` metodo).
 
 **Consulta anche**
 
@@ -2135,7 +2137,7 @@ Create le regole di ricerca utilizzando l&#39;API di Output (servizio Web):
    * Una stringa che specifica il nome della struttura del modulo.
    * Una stringa che specifica il livello principale del contenuto in cui si trova la struttura del modulo.
    * Un `PDFOutputOptionsSpec` oggetto che contiene opzioni di esecuzione PDF.
-   * Un `RenderOptionsSpec` oggetto che contiene opzioni di esecuzione del rendering.
+   * Un `RenderOptionsSpec` oggetto che contiene le opzioni di esecuzione del rendering.
    * L&#39; `BLOB` oggetto che contiene l&#39;origine dati XML contenente i dati da unire alla struttura del modulo.
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i metadati generati che descrivono il documento. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
    * Un `BLOB` oggetto popolato dal `generatePDFOutput` metodo. Il `generatePDFOutput` metodo popola l&#39;oggetto con i dati dei risultati. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
@@ -2172,7 +2174,7 @@ Se si tenta di appiattire un PDF che è un documento PDF non interattivo, si ver
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Output, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-9}
 
@@ -2196,7 +2198,7 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
 * jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
 
-se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE su cui è distribuito AEM Forms. Per informazioni sulla posizione di tutti i file AEM Forms JAR, consultate [Inclusione dei file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms.
+se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, dovrete sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE su cui è distribuito AEM Forms. Per informazioni sulla posizione di tutti i file AEM Forms JAR, consultate [Inclusione dei file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms.
 
 **Creare un oggetto Client di output**
 
@@ -2250,15 +2252,15 @@ Appiattisci un documento PDF interattivo su un documento PDF non interattivo uti
 
    * L&#39; `com.adobe.idp.Document` oggetto che contiene il documento PDF interattivo.
    * Un valore `TransformationFormat` enum. Per generare un documento PDF non interattivo, specificare `TransformationFormat.PDF`.
-   * Un valore `PDFARevisionNumber` enum che specifica il numero di revisione. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificare `null`.
-   * Valore stringa che rappresenta il numero e l&#39;anno della modifica, separati da due punti. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificare `null`.
-   * Un valore `PDFAConformance` enum che rappresenta il livello di conformità PDF/A. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificare `null`.
+   * Un valore `PDFARevisionNumber` enum che specifica il numero di revisione. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificarlo `null`.
+   * Valore stringa che rappresenta il numero e l&#39;anno della modifica, separati da due punti. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificarlo `null`.
+   * Un valore `PDFAConformance` enum che rappresenta il livello di conformità PDF/A. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificarlo `null`.
    Il `transformPDF` metodo restituisce un `com.adobe.idp.Document` oggetto che contiene un documento PDF non interattivo.
 
 1. Salvare il documento PDF non interattivo come file PDF.
 
    * Create un `java.io.File` oggetto e accertatevi che l&#39;estensione del nome del file sia .pdf.
-   * Richiamare il metodo dell&#39; `Document` oggetto `copyToFile` per copiare il contenuto dell&#39; `Document` oggetto nel file (assicurarsi di utilizzare l&#39; `Document` oggetto restituito dal `transformPDF` metodo).
+   * Richiamare il metodo `Document` dell&#39;oggetto `copyToFile` per copiare il contenuto dell&#39; `Document` oggetto nel file (assicurarsi di utilizzare l&#39; `Document` oggetto restituito dal `transformPDF` metodo).
 
 **Consulta anche**
 
@@ -2272,7 +2274,7 @@ Appiattisci un documento PDF interattivo su un documento PDF non interattivo uti
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Appiattisci un documento PDF utilizzando l&#39;API del servizio Web {#flatten-a-pdf-document-using-the-web-service-api}
+### Appiattire un documento PDF utilizzando l&#39;API del servizio Web {#flatten-a-pdf-document-using-the-web-service-api}
 
 Appiattisci un documento PDF interattivo su un documento PDF non interattivo utilizzando l&#39;API di Output (servizio Web):
 
@@ -2312,10 +2314,10 @@ Appiattisci un documento PDF interattivo su un documento PDF non interattivo uti
    * Un `BLOB` oggetto che contiene il documento PDF interattivo.
    * Un valore `TransformationFormat` di enumerazione. Per generare un documento PDF non interattivo, specificare `TransformationFormat.PDF`.
    * Un valore `PDFARevisionNumber` enum che specifica il numero di revisione.
-   * Un valore booleano che specifica se viene utilizzato il valore `PDFARevisionNumber` enum. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificare `false`.
-   * Valore stringa che rappresenta il numero e l&#39;anno della modifica, separati da due punti. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificare `null`.
+   * Un valore booleano che specifica se viene utilizzato il valore `PDFARevisionNumber` enum. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificarlo `false`.
+   * Valore stringa che rappresenta il numero e l&#39;anno della modifica, separati da due punti. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificarlo `null`.
    * Un valore `PDFAConformance` enum che rappresenta il livello di conformità PDF/A.
-   * Valore booleano che specifica se viene utilizzato il valore `PDFAConformance` enum. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificare `false`.
+   * Valore booleano che specifica se viene utilizzato il valore `PDFAConformance` enum. Poiché questo parametro è destinato a un documento PDF/A, è possibile specificarlo `false`.
    Il `transformPDF` metodo restituisce un `BLOB` oggetto che contiene un documento PDF non interattivo.
 
 1. Salvare il documento PDF non interattivo come file PDF.
