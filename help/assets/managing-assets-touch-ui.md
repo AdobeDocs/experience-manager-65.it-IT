@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
 
 ---
 
@@ -169,7 +169,7 @@ Per annullare un processo di caricamento in corso, toccate **[!UICONTROL Annulla
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Annulla compressione file ZIP o Tar durante il caricamento |  |  |
 | Opzioni processo |  | Toccate o fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Toccate il pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
@@ -306,7 +306,7 @@ Selezionate un archivio ZIP alla volta, fate clic su **[!UICONTROL Estrai archiv
 
 Al termine dell’estrazione, AEM invia una notifica all’utente nell’area di notifica. Mentre AEM estrae il file ZIP, potete tornare al lavoro senza interrompere l’estrazione.
 
-![Notifica di estrazione ZIP](assets/Zip-extraction-notification.png)
+![Notifica dell&#39;estrazione di file ZIP](assets/Zip-extraction-notification.png)
 
 Alcune limitazioni della funzione sono:
 
@@ -326,11 +326,9 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
 
    Per ingrandire una risorsa, toccate o fate clic `+` (oppure toccate o fate clic sulla lente di ingrandimento della risorsa). Per ridurre la visualizzazione, toccate o fate clic `-`. Quando ingrandite, potete osservare da vicino qualsiasi area dell’immagine eseguendo il panning. La freccia di reimpostazione dello zoom consente di tornare alla visualizzazione originale.
 
-   ![uploadicon](assets/uploadicon.png)
-
    Toccate **[!UICONTROL Ripristina]** per ripristinare le dimensioni originali della visualizzazione.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Icona Reimposta per riportare l’utente alla visualizzazione originale](assets/chlimage_1-11.png)
 
 **Visualizzare in anteprima le risorse utilizzando solo i tasti di scelta rapida**
 
@@ -353,11 +351,11 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/
 
 ## Modificare le proprietà e i metadati {#editing-properties}
 
-1. Andate alla posizione della risorsa di cui desiderate modificare i metadati.
+1. Andate alla posizione della risorsa per modificarne i metadati.
 
 1. Selezionate la risorsa, quindi toccate o fate clic su **[!UICONTROL Proprietà]** nella barra degli strumenti per visualizzare le proprietà della risorsa. In alternativa, scegliete l’azione rapida **[!UICONTROL Proprietà]** sulla scheda delle risorse.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Proprietà azione rapida nella vista scheda della risorsa](assets/properties_quickaction.png)
 
 1. Nella pagina [!UICONTROL Proprietà] , modificate le proprietà dei metadati in varie schede. Ad esempio, nella scheda **[!UICONTROL Base]** , modificare il titolo, la descrizione e così via.
 
@@ -367,13 +365,13 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/
 
 1. Per pianificare una data/ora specifica per l’attivazione della risorsa, utilizza il selettore data posto accanto al campo **[!UICONTROL On Time (All’ora)]**.
 
-   ![utilizzare il selettore data/ora o i tasti della tastiera nel campo Ora di attivazione per aggiungere data e ora per l’attivazione delle risorse](assets/schedule-activation.png)
+   ![Selezione data e ora oppure uso dei tasti di scelta rapida nel campo Ora di attivazione per aggiungere data e ora per l’attivazione delle risorse](assets/schedule-activation.png)
 
    *Figura: Pianificazione dell&#39;attivazione delle risorse*
 
 1. Per disattivare la risorsa dopo una determinata durata, scegliete la data/ora di disattivazione dal selettore data accanto al campo **[!UICONTROL Ora]** disattivazione. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni non sono disponibili né tramite l’interfaccia Web di Assets né tramite l’API HTTP.
 
-   ![utilizzare il selettore data/ora o i tasti della tastiera nel campo Ora di disattivazione per aggiungere data e ora alla disattivazione delle risorse](assets/schedule-deactivation.png)
+   ![Selettore data/ora o uso dei tasti di scelta rapida nel campo Ora disattivazione per aggiungere data e ora per la disattivazione delle risorse](assets/schedule-deactivation.png)
 
    *Figura: Pianificazione disattivazione risorsa*
 
@@ -385,7 +383,7 @@ Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/
 
 1. Per assegnare una valutazione alla risorsa, tocca o fai clic sulla scheda **[!UICONTROL Avanzate]**, quindi tocca o fai clic sulla stella appropriata per assegnare la valutazione desiderata.
 
-   ![valutazioni](assets/ratings.png)
+   ![Scheda Avanzate in Proprietà risorsa per assegnare la valutazione](assets/ratings.png)
 
    Il punteggio assegnato alla risorsa viene visualizzato in **[!UICONTROL Valutazioni]** personali. La valutazione media che la risorsa ricevuta dagli utenti che hanno valutato la risorsa viene visualizzata in **[!UICONTROL Valutazione]**. Inoltre, la suddivisione dei punteggi di rating che contribuiscono al punteggio medio è visualizzata in Disaggregazione **[!UICONTROL valutazione]**. Potete cercare le risorse in base alla media dei punteggi di valutazione.
 
@@ -414,7 +412,7 @@ Alcuni attributi univoci per una particolare copia di una risorsa non vengono ri
 Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la copia di una risorsa non viene creata una copia parziale.
 
 1. Nell’interfaccia utente Risorse, seleziona una o più risorse, quindi tocca o fai clic sull’icona **[!UICONTROL Copia]** dalla barra degli strumenti. In alternativa, selezionate l’azione rapida **[!UICONTROL Copia]** dalla scheda delle risorse.
-   ![copy_icon](assets/copy_icon.png)
+   ![Icona Copia nella barra degli strumenti dell’interfaccia utente delle risorse](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -428,7 +426,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
 1. Tocca o fai clic sull’icona della risorsa **[!UICONTROL Incolla]** dalla barra degli strumenti.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)Le risorse vengono quindi copiate in questa posizione.
+   ![Icona Incolla nella barra degli strumenti](assets/chlimage_1-14.png)dell’interfaccia utente delle risorse Le risorse vengono quindi copiate in questa posizione.
 
    >[!NOTE]
    >
@@ -439,7 +437,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 1. Andate alla posizione della risorsa da spostare.
 
 1. Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Sposta]** dalla barra degli strumenti.
-   ![move_icon](assets/move_icon.png)
+   ![Icona Sposta nella barra degli strumenti dell&#39;interfaccia utente della risorsa](assets/move_icon.png)
 
 1. Nella procedura guidata Sposta risorse, effettuate una delle seguenti operazioni:
 
