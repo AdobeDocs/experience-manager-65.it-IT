@@ -7,21 +7,21 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
 
 ---
 
 
 # Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
-Adobe valuta costantemente le capacità dei prodotti, per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne per migliorare il valore complessivo dei clienti, sempre in considerazione della compatibilità con le versioni precedenti.
+Adobe valuta costantemente le funzionalità dei prodotti, per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne al fine di migliorare il valore complessivo per il cliente, tenendo comunque in considerazione la compatibilità con le versioni precedenti.
 
 Per comunicare l’imminente rimozione/sostituzione delle funzionalità AEM, si applicano le seguenti regole:
 
 1. Innanzitutto viene annunciato che una data funzione diventa obsoleta. Anche se è obsoleta, le funzionalità sono ancora disponibili, ma non saranno ulteriormente migliorate.
 1. La rimozione delle funzionalità obsolete verrà attuata a partire dalla versione principale successiva. La data di riferimento effettiva per la rimozione verrà annunciata.
 
-Questo processo offre ai clienti almeno un processo di pubblicazione per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
+Questo processo offre ai clienti almeno un ciclo di rilascio per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
 
 ## Funzioni obsolete {#deprecated-features}
 
@@ -42,7 +42,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
    <td>Ai clienti viene consigliato di passare alle nuove funzionalità di integrazione di Creative Cloud, tra cui Adobe Asset Link o l'app desktop AEM. Per ulteriori informazioni, consulta le <a href="/help/assets/aem-cc-integration-best-practices.md">best practice per l’integrazione di AEM e Creative Cloud</a>.</td>
   </tr>
   <tr>
-   <td>Risorse</td>
+   <td>Assets</td>
    <td>
     <ol>
      <li>Per la pubblicazione di istanze, AssetDownloadServlet è disattivato per impostazione predefinita. Per ulteriori informazioni, vedi <a href="/help/sites-administering/security-checklist.md">Elenco di controllo per la sicurezza AEM</a>.</li>
@@ -76,7 +76,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
   </tr>
   <tr>
    <td>Commerce</td>
-   <td><p><a href="https://github.com/adobe/commerce-cif-api" target="_blank">CIF REST</a> è stato fornito nel 2018 come set di microservizi per consentire l’integrazione tra AEM e i motori di commercio.</p> <p>Dopo l'acquisizione di Magento da parte di Adobe a metà del 2018, Adobe ha deciso di cambiare approccio per due motivi: </p> <p><strong>1.</strong> Magento ha un proprio set di API Commerce (REST e GraphQL) e non è buona norma mantenere due set di API </p> <p><strong>2.</strong> Le tendenze del mercato hanno indicato che i clienti si stavano spostando verso GraphQL, perché è un modo più efficiente di interrogare i dati. Nel 2019, Adobe ha rilasciato il nuovo Commerce Integration Framework utilizzando le API GraphQL di Magento come fonte di verità.</p> <p>Adobe non intende effettuare ulteriori investimenti in CIF REST. Ai clienti viene consigliato di utilizzare la soluzione sostitutiva.</p> </td>
+   <td><p><a href="https://github.com/adobe/commerce-cif-api" target="_blank">CIF REST</a> è stato fornito nel 2018 come set di microservizi per consentire l’integrazione tra AEM e i motori di commercio.</p> <p>Dopo l'acquisizione di Magento da parte di Adobe a metà del 2018, Adobe ha deciso di cambiare approccio per due motivi: </p> <p><strong>1.</strong> Magento dispone di un proprio set di API Commerce (REST e GraphQL) e non è buona norma mantenere due set di API </p> <p><strong>2.</strong> Le tendenze del mercato hanno indicato che i clienti si stavano spostando verso GraphQL, perché è un modo più efficiente di interrogare i dati. Nel 2019, Adobe ha rilasciato il nuovo Commerce Integration Framework utilizzando le API GraphQL di Magento come fonte di verità.</p> <p>Adobe non intende effettuare ulteriori investimenti in CIF REST. Ai clienti viene consigliato di utilizzare la soluzione sostitutiva.</p> </td>
    <td><p>Per le integrazioni AEM-Magento, passa ai componenti core <a href="https://github.com/adobe/aem-cif-project-archetype" target="_blank">AEM CIF Archetype</a>e <a href="https://github.com/adobe/aem-core-cif-components" target="_blank">AEM CIF</a></p> <p>Per ulteriori informazioni, consulta <a href="https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md" target="_blank">AEM e Integrazione Magento con Commerce Integration Framework</a> .</p> <p>Il sostegno alle integrazioni di terze parti (diverse da Magento) con il nuovo approccio è nella nostra tabella di marcia.</p> </td>
   </tr>
   <tr>
@@ -151,6 +151,11 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
    <td><p>Editor finestra di dialogo dell’interfaccia utente classica in CRXDE lite</p> <p>Adobe non prevede di migliorare ulteriormente l’Editor finestra di dialogo dell’interfaccia utente classica fornito come parte della distribuzione (Quickstart)</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>L'integrazione di AEM Forms con AEM Mobile&lt; è obsoleta </p> </td>
+   <td>Nessuna sostituzione </td>
+  </tr>
  </tbody>
 </table>
 
@@ -160,15 +165,16 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Le versioni
 
 | Area | Funzione | Sostituzione |
 |--- |--- |--- |
-| Activity Map di Analytics | Versione della Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizzate il plug-in [ActivityMap fornito da Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Activity Map di Analytics | Versione della Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizzate il plug-in [ActivityMap fornito da Adobe Analytics](https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrazioni | L&#39;integrazione ExactTarget è stata rimossa dalla distribuzione predefinita (Quickstart) e non è più disponibile. | Nessuna sostituzione |
 | Integrazioni | L’integrazione delle API Force di Salesforce è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da installare da PackageShare. | La funzione è ancora disponibile. |
 | Forms | Il supporto per il servizio Adobe Central Migration Bridge è stato rimosso in quanto il prodotto Adobe Central non è più supportato. | Nessuna sostituzione |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessuna sostituzione |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |
+| Forms | L&#39;aggiornamento single-hop da LiveCycle ES4 SP1 a AEM 6.5 Forms su JEE non è disponibile | Consulta i percorsi [di aggiornamento](../forms/using/upgrade.md) disponibili nella documentazione di aggiornamento di AEM Forms. |
 | Sviluppatori | Firebug Lite è stato rimosso dalla distribuzione predefinita (Quickstart) | Utilizza le console di sviluppo integrate nel browser |
 | Sviluppatori | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Nessuna sostituzione |
-| Risorse | La funzione di scaricamento delle risorse è stata rimossa in AEM 6.5 | Nessuna sostituzione |
+| Assets | La funzione di scaricamento delle risorse è stata rimossa in AEM 6.5 | Nessuna sostituzione |
 | Cache | `system/console/slingjsp` is remove non è più disponibile in AEM 6.5. | Le classi e la cache di Luminosità vengono memorizzate nel pacchetto Apache Sling Commons FileSystem ClassLoader. Potete controllare il numero del bundle nella console Web di AEM e rimuovere la cartella della cache direttamente dal file system (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
 ## Pre-annuncio per rilascio successivo {#pre-announcement-for-next-release}
