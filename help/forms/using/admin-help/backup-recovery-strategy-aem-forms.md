@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
 
 # Strategia di backup e ripristino per i moduli AEM{#backup-and-recovery-strategy-for-aem-forms}
 
-Se l&#39;implementazione dei moduli AEM memorizza dati personalizzati aggiuntivi in un database diverso, devi implementare una strategia di backup di tali dati e accertarti che rimangano sincronizzati con i dati dei moduli AEM. Inoltre, l&#39;applicazione deve essere progettata in modo da essere sufficientemente robusta per gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. È vivamente consigliato che qualsiasi operazione del database eseguita sia eseguita nel contesto di una transazione per mantenere uno stato coerente.
+Se l&#39;implementazione dei moduli AEM memorizza dati personalizzati aggiuntivi in un database diverso, devi implementare una strategia di backup di tali dati e accertarti che rimangano sincronizzati con i dati dei moduli AEM. Inoltre, l&#39;applicazione deve essere progettata in modo da essere sufficientemente robusta per gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. È vivamente consigliato che qualsiasi operazione del database eseguita sia eseguita nel contesto di una transazione per aiutare a mantenere uno stato coerente.
 
 Dopo aver identificato l&#39;utilizzo dei moduli AEM, determinare quali file devono essere sottoposti a backup, la frequenza e la finestra di backup da rendere disponibili.
 
@@ -31,11 +31,13 @@ Adobe Experience Manager (AEM) è una parte integrante dei moduli AEM. Pertanto,
 
 La strategia di backup dei moduli AEM prevede due tipi di backup:
 
-**** Immagine del sistema: Backup di sistema completo che è possibile utilizzare per ripristinare il contenuto del computer se il disco rigido o l&#39;intero computer smette di funzionare. Il backup delle immagini di sistema è necessario solo prima della distribuzione di produzione di moduli AEM. I criteri aziendali interni stabiliscono quindi la frequenza con cui i backup delle immagini del sistema sono richiesti.
+**Immagine del sistema:** Un backup completo del sistema che è possibile utilizzare per ripristinare il contenuto del computer se il disco rigido o l&#39;intero computer smette di funzionare. Il backup delle immagini di sistema è necessario solo prima della distribuzione di produzione di moduli AEM. I criteri aziendali interni stabiliscono quindi la frequenza con cui i backup delle immagini del sistema sono richiesti.
 
-**** Dati specifici dei moduli AEM: I dati dell&#39;applicazione esistono nel database, nell&#39;archivio GDS (Global Document Storage) e nell&#39;archivio AEM e devono essere sottoposti a backup in tempo reale. GDS è una directory utilizzata per memorizzare file longevi utilizzati all’interno di un processo. Tali file possono includere PDF, criteri o modelli di modulo.
+**Dati specifici dei moduli AEM:** I dati dell&#39;applicazione esistono nel database, nell&#39;archivio GDS (Global Document Storage) e nell&#39;archivio AEM e devono essere sottoposti a backup in tempo reale. GDS è una directory utilizzata per memorizzare file longevi utilizzati all’interno di un processo. Tali file possono includere PDF, criteri o modelli di modulo.
 
-***Nota **: Se è installato Content Services (obsoleto), eseguire il backup della directory principale di Content Storage. (vedere directory principale[Content Storage (solo Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).)*
+>[!NOTE]
+>
+>Se è installato Content Services (obsoleto), eseguire il backup della directory principale di Content Storage. Consultate Directory principale di [Content Storage (solo Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 Il database viene utilizzato per memorizzare gli artefatti del modulo, le configurazioni del servizio, lo stato del processo e i riferimenti al database nei file GDS. Se nel database è stata abilitata la memorizzazione dei documenti, anche i dati e i documenti persistenti presenti nel GDS vengono memorizzati nel database. È possibile eseguire il backup e il ripristino del database utilizzando i seguenti metodi:
 
@@ -47,7 +49,9 @@ Il database viene utilizzato per memorizzare gli artefatti del modulo, le config
 
 * **La modalità Rolling Backup** indica che il sistema è sempre in modalità di backup e che una nuova sessione in modalità di backup viene avviata non appena viene rilasciata la sessione precedente. Nessun timeout è associato alla modalità di backup continuo. Quando lo script o le API LCBackupMode vengono chiamate per uscire dalla modalità di backup continuo, viene avviata una nuova sessione di backup continuo. Questa modalità è utile per supportare backup continui, ma consente comunque di eliminare documenti vecchi e inutili dalla directory GDS. La modalità di backup cumulativo non è supportata dalla pagina Backup e ripristino. Dopo uno scenario di ripristino, la modalità di backup continuo è ancora abilitata. È possibile uscire dalla modalità di backup continuo (modalità di backup continuo) utilizzando lo script LCBackupMode con l&#39; `leaveContinuousCoverage` opzione.
 
-***Nota**: Se si esce dalla modalità di backup a rotazione, viene immediatamente avviata una nuova sessione in modalità di backup. Per disattivare completamente la modalità di backup a scorrimento, utilizzate l&#39; `leaveContinuousCoverage` opzione nello script, che sovrascrive la sessione di backup a rotazione esistente. In modalità backup snapshot, è possibile lasciare la modalità di backup come di solito. *
+>[!NOTE]
+>
+>Se si esce dalla modalità di backup a rotazione, viene immediatamente avviata una nuova sessione in modalità di backup. Per disattivare completamente la modalità di backup a scorrimento, utilizzate l&#39; `leaveContinuousCoverage` opzione nello script, che sovrascrive la sessione di backup a rotazione esistente. In modalità backup snapshot, è possibile lasciare la modalità di backup come di solito.
 
 Per evitare la perdita di dati, il backup dei dati specifici dei moduli AEM deve essere effettuato in modo da garantire la correlazione tra i documenti della directory principale di GDS e di Content Storage e i riferimenti al database.
 
@@ -73,7 +77,7 @@ Anche se è possibile modificare il server di database e molti altri parametri, 
 
 Prima di riavviare il server dei moduli dopo un ripristino, effettuare le seguenti operazioni:
 
-1. Avviare il sistema in modalità manutenzione.
+1. Avviate il sistema in modalità manutenzione.
 1. Per assicurarsi che Form Manager sia sincronizzato con i moduli AEM in modalità di manutenzione, effettuate le seguenti operazioni:
 
    1. Andate a https://&lt;*server*>:&lt;*porta*>/lc/fm ed effettuate l&#39;accesso utilizzando le credenziali di amministratore/password.
@@ -84,11 +88,11 @@ Prima di riavviare il server dei moduli dopo un ripristino, effettuare le seguen
 1. In un ambiente cluster, il nodo master (rispetto ad AEM) deve trovarsi prima dei nodi slave.
 1. Assicurarsi che non vengano avviati processi da origini interne o esterne, quali Web, SOAP o gli iniziatori di processi EJB, fino alla convalida del normale funzionamento del sistema.
 
-Se il database principale dei moduli AEM viene spostato o modificato, consultare le Guide all’installazione relative al server applicazione per informazioni sull’aggiornamento delle informazioni sulla connessione al database per le origini dati dei moduli AEM IDP_DS ed EDC_DS.
+Se il database principale dei moduli AEM viene spostato o modificato, consultare le Guide all’installazione relative al server delle applicazioni per informazioni sull’aggiornamento delle informazioni sulla connessione al database per le origini dati dei moduli AEM IDP_DS ed EDC_DS.
 
 ### Modifica del nome host o dell’indirizzo IP dei moduli AEM {#changing-the-aem-forms-hostname-or-ip-address}
 
-In un cluster, se si utilizza il caching TCP invece di UDP, è necessario aggiornare la configurazione del locatore della cache. Consultate &quot;Configuring the caching locators (caching using TCP only)&quot; (Configurazione delle localizzatori nella cache (caching utilizzando solo TCP) nella guida alla configurazione relativa al server delle applicazioni.
+In un cluster, se si utilizza il caching TCP invece di UDP, è necessario aggiornare la configurazione del locatore della cache. Consultate &quot;Configuring the caching locators (caching using TCP only)&quot; (Configurazione delle localizzatori nella cache (caching utilizzando solo TCP) nella guida alla configurazione relativa al server dell&#39;applicazione in uso.
 
 ### Modifica dei percorsi del file system dei nodi dei moduli AEM {#changing-the-aem-forms-node-file-system-paths}
 
