@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -34,7 +34,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 * Richiama un flusso di lavoro moduli
 * Invia usando il modello dati modulo
 * Azione di invio del portale Forms
-* Richiama un flusso di lavoro AEM
+* Richiamo di un flusso di lavoro AEM
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Per trasmettere i campi come parametri in un URL REST, tutti i campi devono aver
 
 Utilizzare l&#39;azione **Invia a endpoint** REST per inviare i dati inviati a un URL rimanente. L&#39;URL può essere di un server interno (il server su cui viene eseguito il rendering del modulo) o di un server esterno.
 
-Per inviare dati a un server interno, fornire il percorso della risorsa. I dati vengono inviati nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste post, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+Per inviare i dati a un server interno, fornire il percorso della risorsa. I dati vengono inviati nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste di post, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
 Per inviare dati a un server esterno, immetti un URL. Il formato dell’URL è https://host:port/path_to_rest_end_point. Accertatevi di configurare il percorso per gestire la richiesta POST in modo anonimo.
 
@@ -102,7 +102,8 @@ Tutti i campi modulo devono avere nomi di elementi diversi, anche se si trovano 
 
 L&#39;azione **Invia PDF tramite e-mail** invia un messaggio e-mail contenente i dati del modulo a uno o più destinatari dopo l&#39;invio corretto del modulo.
 
-**** Nota: Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD con modello Documento di record.
+>[!NOTE]
+Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per i moduli di adattamento basati su XSD con modello Documento di record.
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
@@ -112,7 +113,7 @@ Per informazioni su come configurare l&#39;azione di invio del flusso di lavoro 
 
 ## Invia usando il modello dati modulo {#submit-using-form-data-model}
 
-L&#39;azione di invio **Invia utilizzando il modello** dati del modulo scrive i dati del modulo adattivo inviati per l&#39;oggetto modello dati specificato in un modello dati modulo alla propria origine dati. Durante la configurazione dell&#39;azione di invio, è possibile scegliere un oggetto modello dati di cui si desidera riscrivere i dati inviati nell&#39;origine dati.
+L&#39;azione di invio **Invia utilizzando il modello** dati del modulo scrive i dati del modulo adattivo inviati per l&#39;oggetto modello dati specificato in un modello dati del modulo alla relativa origine dati. Durante la configurazione dell&#39;azione di invio, è possibile scegliere un oggetto modello dati di cui si desidera riscrivere i dati inviati nell&#39;origine dati.
 
 È inoltre possibile inviare all&#39;origine dati un allegato del modulo utilizzando un modello dati del modulo e un documento record (DoR).
 
@@ -128,7 +129,7 @@ Per ulteriori informazioni sul portale dei moduli e sull&#39;azione di invio, ve
 
 L’azione **Richiama un flusso di lavoro** AEM consente di associare un modulo adattivo a un flusso di lavoro AEM. Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente sul nodo di elaborazione. Inoltre, posiziona il file di dati, gli allegati e il documento di registrazione, se applicabile, nel percorso di payload del flusso di lavoro.
 
-Prima di usare l’azione **Richiama un flusso di lavoro** AEM, [configura le impostazioni](../../forms/using/configuring-the-processing-server-url-.md)di AEM DS. Per informazioni sulla creazione di un flusso di lavoro AEM, consultate Flussi di lavoro incentrati sui [moduli in OSGi](../../forms/using/aem-forms-workflow.md).
+Prima di usare l’azione di invio **Richiama un flusso di lavoro** AEM, [configura le impostazioni](../../forms/using/configuring-the-processing-server-url-.md)di AEM DS. Per informazioni sulla creazione di un flusso di lavoro AEM, consultate Flussi di lavoro incentrati sui [moduli in OSGi](../../forms/using/aem-forms-workflow.md).
 
 ## Ripristino lato server nel modulo adattivo {#server-side-revalidation-in-adaptive-form}
 
@@ -141,7 +142,7 @@ La funzione di ripristino lato server consente inoltre di eseguire le convalide 
 Tutte le convalide dei campi (OOTB) di un modulo adattivo eseguite nuovamente sul server sono:
 
 * Obbligatorio
-* Convalida immagine
+* Convalida dell&#39;immagine
 * Espressione di convalida
 
 ### Abilitazione della convalida lato server {#enabling-server-side-validation-br}
@@ -152,7 +153,7 @@ Per attivare o disattivare la convalida lato server per il modulo corrente, util
 
 Abilitazione della convalida lato server
 
-Se l&#39;utente finale bypassa tali convalide e invia i moduli, il server esegue nuovamente la convalida. Se la convalida ha esito negativo alla fine del server, la transazione di invio viene arrestata. All&#39;utente finale viene nuovamente presentato il modulo originale. I dati acquisiti e inviati vengono presentati all&#39;utente come un errore.
+Se l&#39;utente finale bypassa tali convalide e invia i moduli, il server esegue di nuovo la convalida. Se la convalida ha esito negativo alla fine del server, la transazione di invio viene arrestata. All&#39;utente finale viene nuovamente presentato il modulo originale. I dati acquisiti e inviati vengono presentati all&#39;utente come un errore.
 
 ### Supporto delle funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}
 
