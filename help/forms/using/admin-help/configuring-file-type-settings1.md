@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ Le seguenti opzioni determinano la modalità di conversione dei file immagine in
 
 **Try Fallback Converter:** PDF Generator può usare Java™ o Acrobat per convertire i file immagine in PDF. Quando questa opzione è selezionata e una conversione non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando il metodo alternativo. Se il metodo alternativo non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
 
-***Nota **: I file JPEG 2000 possono essere convertiti solo utilizzando Acrobat.*
+>[!NOTE]
+>
+>I file JPEG 2000 possono essere convertiti solo utilizzando Acrobat.
 
 **Usa OCR:** Specifica se applicare l&#39;OCR (riconoscimento ottico dei caratteri) al PDF. Il software OCR consente di cercare, correggere e copiare il testo nel PDF.
 
@@ -252,7 +254,7 @@ Per istruzioni su come accedere a questa impostazione, consultate [Creare o modi
    * Se si desidera rimuovere alcuni font che non esistono nel server moduli, immettere i nomi di tali font nella casella **Aggiungi font a cui annullare l&#39;incorporazione** . Fate clic su **Aggiungi**.
    >[!NOTE]
    >
-   >*Se si desidera rimuovere alcuni font i cui sottoinsiemi sono incorporati nel documento, aggiungere al nome del font il prefisso +. Ad esempio, &quot;+Helvetica&quot;.*
+   >*Se si desidera rimuovere alcuni font i cui sottoinsiemi sono incorporati nel documento, aggiungere il prefisso al nome del font con il segno +. Ad esempio, &quot;+Helvetica&quot;.*
 
 1. Se si desidera incorporare solo i sottoinsiemi in uso dei font incorporati, selezionare **Sottoinsieme tutti i font** incorporati.
 
