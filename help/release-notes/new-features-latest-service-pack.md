@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -123,7 +123,7 @@ Se prevedete di uscire dall&#39;ufficio, potete specificare cosa accade agli ele
 
 Potete utilizzare l&#39;API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L&#39;API Batch combina i dati con un modello per produrre una comunicazione interattiva. L&#39;API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto della carta di credito per più clienti. Consultate [Generare più comunicazioni interattive utilizzando l&#39;API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
-## Versioni principali da AEM 6.5 SP3 {#key-features-sice-sp3}
+## Versioni principali da AEM 6.5 SP3 {#key-features-since-sp3}
 
 Tra il 12 dicembre 2019 e il 5 marzo 2020, Adobe ha rilasciato le seguenti funzionalità che non rientrano nel risultato finale di AEM:
 
