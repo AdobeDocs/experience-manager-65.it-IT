@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -25,7 +25,7 @@ L’esempio, discusso in questo documento, è un’implementazione di riferiment
 >[!NOTE]
 >
 >* Gli esempi e le configurazioni illustrati in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Accertatevi di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo delle release [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+>* Accertatevi di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo delle release [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 >
 
 
@@ -52,12 +52,12 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
 
    | **Proprietà** | **Descrizione** | **Valore** |
    |---|---|---|
-   | Servizio dati bozza di Forms Portal | Identificatore per il servizio dati bozza | formsPortal.sampledataservice |
-   | Servizio metadati bozza del portale Forms | Identificatore per il servizio di metadati bozza | formsPortal.samplemetadataservice |
-   | Servizio di invio dati Forms Portal | Identificatore per il servizio dati di invio | formsPortal.sampledataservice |
-   | Servizio di invio metadati del portale Forms | Identificatore per il servizio di invio metadati | formsPortal.samplemetadataservice |
-   | Servizio di firma dati in sospeso di Forms Portal | Identificatore per il servizio dati Firma in sospeso | formsPortal.sampledataservice |
-   | Servizio metadati firma in sospeso di Forms Portal | Identificatore per il servizio metadati Firma in sospeso | formsPortal.samplemetadataservice |
+   | Servizio dati bozza di Forms Portal | Identificatore per il servizio dati bozza | formsportal.sampledataservice |
+   | Servizio metadati bozza del portale Forms | Identificatore per il servizio di metadati bozza | formsportal.samplemetadataservice |
+   | Servizio di invio dati Forms Portal | Identificatore per il servizio dati di invio | formsportal.sampledataservice |
+   | Servizio di invio metadati del portale Forms | Identificatore per il servizio di invio metadati | formsportal.samplemetadataservice |
+   | Servizio di firma dati in sospeso di Forms Portal | Identificatore per il servizio dati Firma in sospeso | formsportal.sampledataservice |
+   | Servizio metadati firma in sospeso di Forms Portal | Identificatore per il servizio metadati Firma in sospeso | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -78,7 +78,9 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
    Per specificare un nome diverso per la tabella di dati:
 
    * In Configurazione console Web, individuare e fare clic su Implementazione di esempio del servizio dati di Forms Portal. È possibile modificare i valori dell&#39;origine dati e il nome della tabella dati.
-   **Nota**: Se si modificano i nomi delle tabelle, fornirli nella configurazione di Form Portal.
+   >[!NOTE]
+   >
+   >Se si modificano i nomi delle tabelle, fornirli nella configurazione di Form Portal.
 
 1. Lasciate invariate le altre configurazioni e fate clic su **[!UICONTROL Salva]**.
 
