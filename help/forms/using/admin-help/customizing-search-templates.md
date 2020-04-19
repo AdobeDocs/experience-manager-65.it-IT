@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -32,7 +32,7 @@ Potete creare tutti i modelli di ricerca richiesti.
 1. Nella console di amministrazione, fai clic su Servizi > Area di lavoro > Cerca modelli.
 1. Nella scheda Identificazione, nella casella Descrizione modello di ricerca, specificare lo scopo del modello.
 1. (Facoltativo) Fate clic sulla scheda Criteri e specificate i criteri di ricerca per il modello.
-1. Fate clic sulla scheda Salva, inserite un nome univoco per il modello, quindi fate clic su Salva.
+1. Fate clic sulla scheda Salva, immettete un nome univoco per il modello, quindi fate clic su Salva.
 
 ## Creare o modificare un modello di ricerca {#create-or-edit-a-search-template}
 
@@ -55,7 +55,7 @@ Potete creare tutti i modelli di ricerca richiesti.
       * Selezionare un operatore relazionale (ad esempio &quot;essere uguale a&quot;) dall&#39;elenco fornito e specificare il valore dell&#39;operando nella casella accanto ad esso.
       * (Facoltativo) Per consentire agli utenti di modificare il valore dell&#39;operando in Workspace, selezionare Consenti all&#39;utente di modificare l&#39;operando.
       * (Facoltativo) Per consentire agli utenti di modificare l&#39;operatore relazionale, selezionare Consenti all&#39;utente di selezionare un altro operatore relazionale. Nell&#39;elenco visualizzato, selezionate gli operatori che saranno disponibili per l&#39;utente.
-      **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
+      **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo dell&#39;operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
 
       **Suggerimento**: Per *eliminare un elemento dal modello di ricerca, fate clic sull&#39;icona Elimina accanto ai criteri di ricerca dell&#39;elemento.*
 
@@ -65,13 +65,14 @@ Potete creare tutti i modelli di ricerca richiesti.
    * Selezionate un processo o un elemento attività e fate clic sulla freccia destra per spostarlo nell’elenco Colonne in cui visualizzare il rapporto.
    * Nell&#39;elenco Colonne su rapporto, selezionare il processo o l&#39;elemento attività e fare clic sulla freccia su o sulla freccia giù per portarlo nella posizione desiderata nell&#39;ordine delle colonne. Le intestazioni di colonna nei risultati della ricerca vengono visualizzate nell’ordine in cui sono elencate qui.
    * (Facoltativo) Per modificare il nome dell&#39;elemento per l&#39;intestazione della colonna, selezionate l&#39;elemento dall&#39;elenco Colonne in rapporto e fornite il nuovo nome.
-
-      **Nota**: *Il layout specificato nel modello di ricerca ha la priorità sulle preferenze dell&#39;utente specificate per le intestazioni di colonna in Workspace.*
+   >[!NOTE]
+   >
+   >Il layout specificato nel modello di ricerca ha la priorità sulle preferenze dell&#39;utente specificate per le intestazioni di colonna in Workspace.
 
 1. (Facoltativo) Per ogni colonna da ordinare nei risultati della ricerca, fate clic sulla scheda Ordina ed eseguite i seguenti passaggi:
 
    * Selezionare un processo o un elemento attività e fare clic sulla freccia destra per spostarlo nell&#39;elenco Ordinamento.
-   * Nell&#39;elenco Ordina, selezionare il processo o l&#39;elemento attività e fare clic sulla freccia su o giù per portarlo nella posizione desiderata nell&#39;ordinamento. Le colonne nei risultati della ricerca verranno ordinate in base all&#39;ordine in cui sono elencate.
+   * Nell&#39;elenco Ordina, selezionare il processo o l&#39;elemento attività e fare clic sulla freccia su o giù per portarlo nella posizione desiderata nell&#39;ordine di ordinamento. Le colonne nei risultati della ricerca verranno ordinate in base all&#39;ordine in cui sono elencate.
    * (Facoltativo) Per ordinare una colonna in ordine decrescente, selezionate la casella di controllo accanto al nome dell&#39;elemento. Se la casella di controllo non è selezionata, la colonna viene ordinata in ordine crescente.
 
 1. Fate clic sulla scheda Salva.
