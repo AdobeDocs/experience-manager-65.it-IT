@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -77,15 +77,18 @@ Per configurare una cartella esaminata, create un nodo di configurazione della c
 
    * publish, author
 
-**Nota**: *Se il server che ospita la cartella esaminata non dispone della modalità di esecuzione specificata, la cartella esaminata viene sempre attivata indipendentemente dalle modalità di esecuzione sul server.*
+>[!NOTE]
+>
+>Se il server che ospita la cartella esaminata non dispone della modalità di esecuzione specificata, la cartella esaminata viene sempre attivata indipendentemente dalle modalità di esecuzione sul server.
 
 * **outputFilePattern (String)**: Pattern del file di output. È possibile specificare una cartella o un pattern di file. Se viene specificato un pattern di cartelle, i file di output hanno nomi come descritto nei flussi di lavoro. Se viene specificato un pattern di file, i file di output hanno nomi come descritto nel pattern di file. [Il pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) di file e cartelle può anche specificare una struttura di directory per i file di output. È una proprietà obbligatoria.
 
 * **stageFileExpirationDuration (Long, default -1)**: Il numero di secondi di attesa prima che un file o una cartella di input già prelevato per l’elaborazione venga considerato come se fosse scaduto e contrassegnato come un errore. Questo meccanismo di scadenza si attiva solo quando il valore di questa proprietà è un numero positivo.
 
-   **Nota:** *Anche quando un input è contrassegnato come timeout utilizzando questo meccanismo, potrebbe essere ancora in fase di elaborazione in background ma richiede solo più tempo del previsto. Se il contenuto di input è stato utilizzato prima dell&#39;avvio del meccanismo di timeout, l&#39;elaborazione potrebbe persino procedere al completamento in un secondo momento e l&#39;output potrebbe essere scaricato nella cartella dei risultati. Se il contenuto non è stato consumato prima del timeout, è molto probabile che l&#39;elaborazione si errori più tardi quando si tenta di consumare il contenuto, e questo errore verrà anche registrato nella cartella degli errori per lo stesso input. D&#39;altro canto, se l&#39;elaborazione per l&#39;input non si è mai attivata a causa di un errore di processo/flusso di lavoro intermittente (ovvero lo scenario a cui punta il meccanismo di scadenza), non si verificherà nessuna di queste due eventualità. Di conseguenza, per tutte le voci nella cartella degli errori contrassegnate come errori a causa di un timeout (cercate i messaggi del modulo &quot;File non elaborato dopo un periodo di tempo significativo, contrassegnando come errore!&quot; nel registro degli errori, è consigliabile analizzare la cartella dei risultati (e anche la cartella degli errori stessa per un&#39;altra voce per lo stesso input) per verificare se si sono verificati alcuni degli eventi precedentemente descritti.*
+>[!NOTE]
+>
+>Anche quando un input è contrassegnato come timeout utilizzando questo meccanismo, potrebbe essere ancora in fase di elaborazione in background ma richiede solo più tempo del previsto. Se il contenuto di input è stato utilizzato prima dell&#39;avvio del meccanismo di timeout, l&#39;elaborazione potrebbe persino procedere al completamento in un secondo momento e l&#39;output potrebbe essere scaricato nella cartella dei risultati. Se il contenuto non è stato consumato prima del timeout, è molto probabile che l&#39;elaborazione si errori più tardi quando si tenta di consumare il contenuto, e questo errore verrà anche registrato nella cartella degli errori per lo stesso input. D&#39;altro canto, se l&#39;elaborazione per l&#39;input non si è mai attivata a causa di un errore di processo/flusso di lavoro intermittente (ovvero lo scenario a cui punta il meccanismo di scadenza), non si verificherà nessuna di queste due eventualità. Di conseguenza, per tutte le voci nella cartella degli errori contrassegnate come errori a causa di un timeout (cercate i messaggi del modulo &quot;File non elaborato dopo un periodo di tempo significativo, contrassegnando come errore!&quot; nel registro degli errori, è consigliabile analizzare la cartella dei risultati (e anche la cartella degli errori stessa per un&#39;altra voce per lo stesso input) per verificare se si sono verificati alcuni degli eventi precedentemente descritti.
 
-* 
 * **deleteExpiredStageFileOnlyWhenThrottled (booleano, valore predefinito true):** Indica se il meccanismo di scadenza deve essere attivato solo quando la cartella di controllo è limitata. Il meccanismo è più pertinente per le cartelle di orologi limitate in quanto un numero limitato di file che si trovano in uno stato non elaborato (a causa di errori di processo/flusso di lavoro intermittenti) ha il potenziale di soffocare l&#39;elaborazione per l&#39;intero batch quando la limitazione è abilitata. Se questa proprietà viene mantenuta come true (impostazione predefinita), il meccanismo di scadenza non si attiva per le cartelle di controllo che non sono limitate. Se la proprietà viene mantenuta come false, il meccanismo si attiva sempre che la proprietà stageFileExpirationDuration sia un numero positivo.
 
 * **pollInterval (Long)**: L&#39;intervallo in secondi per la scansione della cartella esaminata per l&#39;input. A meno che l’impostazione Limita non sia abilitata, l’intervallo di sondaggio deve essere più lungo del tempo necessario per elaborare un processo medio; in caso contrario, il sistema potrebbe sovraccaricarsi. Il valore predefinito è 5. Per ulteriori informazioni, consultate la descrizione per Dimensione batch. Il valore dell&#39;intervallo polling deve essere maggiore o uguale a uno.
@@ -177,7 +180,9 @@ Insieme alle proprietà di configurazione delle cartelle esaminate elencate sopr
 1. Accedete a CRXDE-Lite e andate al nodo di configurazione della cartella esaminata.
 1. Aggiungete un parametro di proprietà.&lt;nome_proprietà> al nodo di configurazione della cartella esaminata. Il tipo della proprietà può essere solo booleano, data, decimale, Double, Long e String. È possibile specificare proprietà singole e multivalore.
 
-**Nota:** Se il tipo di dati della proprietà è Double, specificare un punto decimale nel valore di tali proprietà. Per tutte le proprietà, in cui il tipo di dati è Double e nel valore non è specificato alcun separatore decimale, il tipo è convertito in Long.
+>[!NOTE]
+>
+>Se il tipo di dati della proprietà è Double, specificare un punto decimale nel valore di tali proprietà. Per tutte le proprietà, in cui il tipo di dati è Double e nel valore non è specificato alcun separatore decimale, il tipo è convertito in Long.
 
 Tali proprietà vengono trasmesse come una mappa immutabile di tipo Map&lt;String, Object> al codice di elaborazione. Il codice di elaborazione può essere uno script ECMAS, un flusso di lavoro o un servizio. I valori forniti per le proprietà sono disponibili come coppie chiave-valore nella mappa. Key è il nome della proprietà e value è il valore della proprietà. Per ulteriori informazioni sui parametri di configurazione personalizzati, consultate la seguente immagine:
 
@@ -392,7 +397,7 @@ Se la struttura di un payload è diversa dalla struttura della cartella esaminat
 
 1. Scarica [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
 1. Imposta l’SDK del client nel percorso di creazione del progetto basato su server. Per iniziare, puoi scaricare e aprire il seguente progetto basato sul cielo nell’IDE di tua scelta.
-1. Modificate il codice del filtro di mappatura payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
+1. Modificate il codice del filtro di mappatura del payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
 1. Utilizzate maven per creare un bundle del filtro Payload Mapper personalizzato.
 1. Utilizzate la console [dei bundle](https://localhost:4502/system/console/bundles) AEM per installare il bundle.
 
