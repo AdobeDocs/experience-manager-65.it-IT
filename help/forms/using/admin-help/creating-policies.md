@@ -10,12 +10,12 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
 
-# Creazione e gestione dei criteri {#creating-and-managing-policies}
+# Creating and managing policies {#creating-and-managing-policies}
 
 Un *criterio* definisce un insieme di impostazioni di riservatezza e di utenti che possono accedere a un documento a cui viene applicato il criterio. Un set *di* criteri viene utilizzato per raggruppare un insieme di criteri con uno scopo aziendale comune. Questi set di criteri vengono quindi resi disponibili a un sottoinsieme di utenti nel sistema. Per informazioni dettagliate sui criteri, consultate [Criteri e documenti](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents)protetti tramite criterio.
 
@@ -47,17 +47,17 @@ Con Acrobat è possibile applicare criteri ai documenti inviati come allegati e-
 
 Il modo in cui interagisci con criteri e set di criteri dipende dal tuo ruolo all&#39;interno dell&#39;organizzazione:
 
-**** Utenti: Gli utenti possono creare, modificare ed eliminare i propri criteri personali. Gli utenti invitati possono anche creare criteri personali se l’amministratore lo abilita.
+**Utenti:** Gli utenti possono creare, modificare ed eliminare i propri criteri personali. Gli utenti invitati possono anche creare criteri personali se l’amministratore lo consente.
 
-**** Coordinatori set di criteri: I coordinatori di set di criteri possono creare e gestire politiche condivise all&#39;interno dei set di criteri in cui sono designati come coordinatori. Un coordinatore del set di criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un particolare set di criteri.
+**Coordinatori set di criteri:** I coordinatori di set di criteri possono creare e gestire politiche condivise all&#39;interno dei set di criteri in cui sono designati come coordinatori. Un coordinatore del set di criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un particolare set di criteri.
 
-**** Amministratori: Gli amministratori possono modificare i criteri personali di qualsiasi utente. Possono creare criteri condivisi. Possono inoltre creare, modificare ed eliminare set di criteri e designare coordinatori di set di criteri.
+**Amministratori:** Gli amministratori possono modificare i criteri personali di qualsiasi utente. Possono creare criteri condivisi. Possono inoltre creare, modificare ed eliminare set di criteri e designare coordinatori di set di criteri.
 
 Per informazioni dettagliate sui vari ruoli di protezione dei documenti, vedere [Informazioni sugli utenti](/help/forms/using/admin-help/document-security.md#about-document-security-users)della protezione dei documenti.
 
 ## Creazione e modifica dei criteri {#creating-and-editing-policies}
 
-Gli utenti possono creare o modificare criteri personali per il proprio uso. Gli amministratori e i coordinatori di set di criteri possono creare o modificare i criteri condivisi per la propria organizzazione.
+Gli utenti possono creare o modificare criteri personali per il proprio uso. Gli amministratori e i coordinatori di set di criteri possono creare o modificare i criteri condivisi per l&#39;organizzazione.
 
 ### Considerazioni per la modifica dei criteri {#considerations-for-editing-policies}
 
@@ -127,7 +127,7 @@ Nell&#39;area Utenti e gruppi, specificate gli utenti che hanno accesso ai docum
 >
 >L&#39;autore del documento è l&#39;utente che protegge il documento con il criterio. Questo utente è sempre incluso per impostazione predefinita in un criterio, con diritti di accesso completi, incluse le funzionalità di revoca e di commutazione dei criteri. Tuttavia, gli amministratori possono modificare i diritti di accesso dell&#39;editore del documento per i criteri condivisi. Ad esempio, l&#39;amministratore può impedire all&#39;autore del documento di revocare l&#39;accesso al documento o di cambiare criterio.
 
-**** Aggiungi utente o gruppo: Per aggiungere un utente o un gruppo di utenti, fate clic su Aggiungi utente o gruppo, quindi fate clic su Ricerca avanzata per trovare utenti o gruppi. Gli utenti includono gli utenti interni della tua organizzazione e gli utenti invitati che si sono registrati con Document Security. Quando selezionate questa opzione, viene visualizzata la pagina Aggiungi utente o Gruppo:
+**Aggiungi utente o gruppo:** Per aggiungere un utente o un gruppo di utenti, fate clic su Aggiungi utente o gruppo, quindi fate clic su Ricerca avanzata per trovare utenti o gruppi. Gli utenti includono gli utenti interni della tua organizzazione e gli utenti invitati che si sono registrati con Document Security. Quando selezionate questa opzione, viene visualizzata la pagina Aggiungi utente o Gruppo:
 
 * Nella casella Trova, digitate il nome utente o del gruppo o l’indirizzo e-mail.
 * Nell&#39;elenco Uso, selezionare Nome o E-mail.
@@ -135,15 +135,19 @@ Nell&#39;area Utenti e gruppi, specificate gli utenti che hanno accesso ai docum
 * Selezionare il dominio di cui si desidera eseguire la ricerca dall&#39;elenco In e fare clic su Trova.
 * Quando i risultati vengono restituiti, selezionate l’utente o il gruppo da aggiungere e fate clic su Aggiungi.
 
-**Nota**: *Se immettete un nome utente o un indirizzo e-mail invitato corretto e non viene restituito alcun risultato, l&#39;utente potrebbe non essersi ancora registrato oppure l&#39;account potrebbe essere eliminato. Potete provare ad aggiungere l’utente come tipo di utente invitato o contattare l’amministratore.*
+>[!NOTE]
+>
+>Se immettete un nome utente o un indirizzo e-mail invitato corretto e non viene restituito alcun risultato, l’utente potrebbe non essersi ancora registrato oppure l’account potrebbe essere eliminato. Potete provare ad aggiungere l’utente come tipo di utente invitato o contattare l’amministratore.
 
-**** Invito nuovo utente: Per aggiungere un utente invitato, fate clic su Invita nuovo utente, digitate l’indirizzo e-mail dell’utente nella casella visualizzata e fate clic su Invita. Questa opzione è disponibile solo se è stata abilitata dall&#39;amministratore. Quando aggiungete nuovi utenti invitati a un criterio, Document Security invia un messaggio e-mail di invito alla registrazione se gli utenti non sono già invitati a registrarsi. Gli utenti devono utilizzare il collegamento presente nell&#39;e-mail per creare un account, quindi devono attivare l&#39;account.
+**Invito nuovo utente:** Per aggiungere un utente invitato, fate clic su Invita nuovo utente, digitate l’indirizzo e-mail dell’utente nella casella visualizzata e fate clic su Invita. Questa opzione è disponibile solo se è stata abilitata dall&#39;amministratore. Quando aggiungete nuovi utenti invitati a un criterio, Document Security invia un messaggio e-mail di invito per la registrazione se gli utenti non sono già invitati a registrarsi. Gli utenti devono utilizzare il collegamento presente nell&#39;e-mail per creare un account, quindi devono attivare l&#39;account.
 
 Dopo la registrazione, gli utenti invitati possono utilizzare i documenti protetti tramite criterio per i quali dispongono dell&#39;autorizzazione. A seconda delle funzionalità abilitate dall&#39;amministratore, gli utenti esterni possono disporre dell&#39;autorizzazione per applicare criteri ai documenti, creare, modificare ed eliminare criteri e aggiungere altri utenti esterni ai criteri.
 
-**** Aggiungi utente anonimo: Per consentire l’accesso anonimo agli utenti, fai clic su Aggiungi utente anonimo. Questa opzione è disponibile solo se l&#39;amministratore ha attivato l&#39;accesso anonimo per la protezione dei documenti. (vedere Configurare il server di protezione dei documenti.) Questa opzione consente a tutti di accedere ai documenti protetti da questo criterio, indipendentemente dal fatto che possiedano un account di protezione documento. Se selezionate questa opzione, non potete aggiungere altri tipi di utenti al criterio.
+**Aggiungi utente anonimo:** Per consentire l’accesso anonimo agli utenti, fai clic su Aggiungi utente anonimo. Questa opzione è disponibile solo se l&#39;amministratore ha attivato l&#39;accesso anonimo per la protezione dei documenti. (vedere Configurare il server di protezione dei documenti.) Questa opzione consente a tutti di accedere ai documenti protetti da questo criterio, indipendentemente dal fatto che possiedano un account di protezione documento. Se selezionate questa opzione, non potete aggiungere altri tipi di utenti al criterio.
 
-***Nota **: Per consentire l&#39;accesso anonimo a un documento protetto tramite criterio che al momento non lo contiene, rimuovere il criterio esistente e applicare un criterio che consenta l&#39;accesso anonimo. Se cambiate o modificate il criterio esistente, gli utenti dovranno comunque accedere al documento.*
+>[!NOTE]
+>
+>Per consentire l&#39;accesso anonimo a un documento protetto tramite criterio che al momento non lo contiene, rimuovere il criterio esistente e applicare un criterio che consenta l&#39;accesso anonimo. Se cambiate o modificate il criterio esistente, gli utenti dovranno comunque accedere al documento.
 
 #### Specificare le autorizzazioni del documento per utenti e gruppi {#specify-the-document-permissions-for-users-and-groups}
 
@@ -155,65 +159,69 @@ La scheda Autorizzazioni e opzioni viene visualizzata nella protezione del docum
 
 Queste autorizzazioni del documento sono disponibili nella scheda Autorizzazioni. Potete applicare queste autorizzazioni ai file PDF, PTC Pro/E e Microsoft Office.
 
-**** Stampa: Consente all&#39;utente di stampare un documento protetto tramite questo criterio. Per i file di Office e Pro/E, potete selezionare la casella di controllo Stampa per consentire la stampa oppure deselezionare la casella per impedire la stampa. Se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF, potete selezionare una delle seguenti opzioni:
+**Stampa:** Consente all&#39;utente di stampare un documento protetto tramite questo criterio. Per i file di Office e Pro/E, potete selezionare la casella di controllo Stampa per consentire la stampa oppure deselezionare la casella per impedire la stampa. Se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF, potete selezionare una delle seguenti opzioni:
 
-**** Non consentita: All&#39;utente non è consentito stampare il PDF.
+**Non consentita:** All&#39;utente non è consentito stampare il PDF.
 
-**** Consentita: L’utente può stampare il PDF.
+**Consentita:** L’utente può stampare il PDF.
 
-**A bassa risoluzione.** only: L’utente può stampare il PDF a bassa risoluzione.
+**A bassa risoluzione. only:** L’utente può stampare il PDF a bassa risoluzione.
 
-**** Modifica: Consente all&#39;utente di modificare un documento protetto tramite questo criterio. Per i file di Office e Pro/E, potete selezionare la casella di controllo Modifica per consentire le modifiche, oppure cancellarla per impedire le modifiche. Se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF, potete selezionare una delle seguenti opzioni:
+**Modifica:** Consente all&#39;utente di modificare un documento protetto tramite questo criterio. Per i file di Office e Pro/E, potete selezionare la casella di controllo Modifica per consentire le modifiche, oppure cancellarla per impedire le modifiche. Se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF, potete selezionare una delle seguenti opzioni:
 
-**** Non consentita: All&#39;utente non è consentito modificare il PDF.
+**Non consentita:** All&#39;utente non è consentito modificare il PDF.
 
-**** Qualsiasi: L’utente può modificare il PDF.
+**Qualsiasi:** L’utente può modificare il PDF.
 
-**** Collaborazione: L’utente può collaborare con altri utenti, utilizzando le opzioni Collaborazione in Adobe Acrobat. Questa autorizzazione consente all&#39;utente di copiare i dati del modulo anche se l&#39;autorizzazione Copia non è specificata esplicitamente nel criterio.
+**Collaborazione:** L’utente può collaborare con altri utenti, utilizzando le opzioni Collabora in Adobe Acrobat. Questa autorizzazione consente all&#39;utente di copiare i dati del modulo anche se l&#39;autorizzazione Copia non è specificata esplicitamente nel criterio.
 
-**** Modifica pagine: L’utente può aggiungere e rimuovere pagine e modificare contenuti nel PDF.
+**Modifica pagine:** L’utente può aggiungere e rimuovere pagine e modificare contenuti nel PDF.
 
-**** Compila e firma: L&#39;utente può compilare i campi del modulo sul PDF e firmarlo.
+**Compila e firma:** L&#39;utente può compilare i campi del modulo sul PDF e firmarlo.
 
-**** Copia: Consente all&#39;utente di copiare il testo da un documento protetto tramite questo criterio.
+**Copia:** Consente all&#39;utente di copiare il testo da un documento protetto tramite questo criterio.
 
-**** Lettore dello schermo: Questa autorizzazione viene visualizzata se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF. Quando questa opzione è selezionata, Adobe Acrobat dispone dell&#39;autorizzazione per aggiungere tag temporanei al PDF per migliorarne la leggibilità con un assistente vocale.
+**Lettore dello schermo:** Questa autorizzazione viene visualizzata se selezionate la casella di controllo Mostra autorizzazioni personalizzate per PDF. Quando questa opzione è selezionata, Adobe Acrobat dispone dell&#39;autorizzazione per aggiungere tag temporanei al PDF per migliorarne la leggibilità con un assistente vocale.
 
 Tali autorizzazioni del documento sono disponibili nella scheda Opzioni. Potete applicare queste autorizzazioni ai file PDF, PTC Pro/E e Microsoft Office:
 
-**** Offline: Consente all&#39;utente di visualizzare offline un documento protetto tramite questo criterio.
+**Offline:** Consente all&#39;utente di visualizzare offline un documento protetto tramite questo criterio.
 
-**** Validità autorizzazione: Selezionare Autorizzazioni sempre valide o impostare un periodo di validità delle autorizzazioni del documento. Se si seleziona un periodo di validità, fare clic sulle icone del calendario per selezionare una data e utilizzare le frecce per specificare l&#39;ora in formato 24 ore.
+**Validità autorizzazione:** Selezionare Autorizzazioni sempre valide o impostare un periodo di validità delle autorizzazioni del documento. Se si seleziona un periodo di validità, fare clic sulle icone del calendario per selezionare una data e utilizzare le frecce per specificare l&#39;ora in formato 24 ore.
 
 Per i criteri condivisi, gli amministratori possono disattivare i seguenti privilegi per l&#39;autore del documento (l&#39;utente che applica il criterio a un documento):
 
-**** Revoca: Consente all&#39;autore del documento di revocare i privilegi di accesso al documento.
+**Revoca:** Consente all&#39;autore del documento di revocare i privilegi di accesso al documento.
 
-**** Interruttore: Consente all&#39;autore del documento di cambiare i privilegi dei criteri.
+**Interruttore:** Consente all&#39;autore del documento di cambiare i privilegi dei criteri.
 
 ### Impostazioni generali {#general-settings}
 
 L&#39;area Impostazioni generali contiene le seguenti impostazioni:
 
-**** Periodo di validità: Periodo di tempo durante il quale il documento protetto tramite criterio è accessibile ai destinatari autorizzati. È possibile scegliere tra le seguenti opzioni per il periodo di validità:
+**Periodo di validità:** Periodo di tempo durante il quale il documento protetto tramite criterio è accessibile ai destinatari autorizzati. È possibile scegliere tra le seguenti opzioni per il periodo di validità:
 
-**** Il documento non sarà valido dopo: Il documento è accessibile per il numero specificato di giorni a partire dal momento in cui è stato protetto il documento.
+**Il documento non sarà valido dopo:** Il documento è accessibile per il numero specificato di giorni a partire dal momento in cui è stato protetto il documento.
 
-**** Il documento non sarà valido dopo questa data: Il documento è valido dalla data in cui il criterio viene applicato al documento fino alla data di fine specificata.
+**Il documento non sarà valido dopo questa data:** Il documento è valido dalla data in cui il criterio viene applicato al documento fino alla data di fine specificata.
 
-**** Valido da, a: Il documento è valido durante le date specificate. Potete utilizzare il calendario per selezionare una data, se applicabile, facendo clic sull&#39;icona del calendario.
+**Valido da, a:** Il documento è valido durante le date specificate. Potete utilizzare il calendario per selezionare una data, se applicabile, facendo clic sull&#39;icona del calendario.
 
-**** Il documento è sempre valido: Il periodo di validità del documento non scade.
+**Il documento è sempre valido:** Il periodo di validità del documento non scade.
 
-***Nota **: Le date di validità si basano sul fuso orario del sistema di protezione dei documenti, non sul fuso orario del computer locale.*
+>[!NOTE]
+>
+>Le date di validità si basano sul fuso orario del sistema di protezione dei documenti, non sul fuso orario del computer locale.
 
-**** Verifica: Abilitare o disabilitare il controllo degli eventi associati a un documento protetto tramite criterio. Ad esempio, Document Security può registrare eventi quali tentativi di aprire un documento. Gli eventi controllati vengono visualizzati nell’elenco nella pagina Eventi. Se non si seleziona questa opzione, Document Security non registra eventi per i documenti associati al criterio.
+**Verifica:** Abilitare o disabilitare il controllo degli eventi associati a un documento protetto tramite criterio. Ad esempio, Document Security può registrare eventi quali tentativi di apertura di un documento. Gli eventi controllati vengono visualizzati nell’elenco nella pagina Eventi. Se non si seleziona questa opzione, Document Security non registra eventi per i documenti associati al criterio.
 
-***Nota **: Affinché la funzione di controllo funzioni correttamente, l’amministratore deve inoltre abilitare il controllo del server nella pagina di configurazione Auditing e Privacy Settings.*
+>[!NOTE]
+>
+>Affinché la funzione di controllo funzioni correttamente, l’amministratore deve inoltre abilitare il controllo del server nella pagina di configurazione Auditing e Privacy Settings.
 
-**** Tracciamento utilizzo esteso: Abilita o disabilita il tracciamento dell&#39;uso esteso. document security supporta il tracciamento degli eventi utente associati a varie operazioni eseguite su un file PDF. È possibile accedere all&#39;oggetto document security utilizzando uno script Java. Un clic su un pulsante, un file multimediale riprodotto o il salvataggio di un file sono alcuni esempi di eventi che possono essere attivati da un PDF protetto tramite criterio. Utilizzando l&#39;oggetto Document Security è inoltre possibile recuperare informazioni utente. Il tracciamento degli eventi può essere abilitato dal server di protezione dei documenti a livello globale o a livello di criterio.
+**Tracciamento utilizzo esteso:** Abilita o disabilita il tracciamento dell&#39;uso esteso. document security supporta il tracciamento degli eventi utente associati a varie operazioni eseguite su un file PDF. È possibile accedere all&#39;oggetto document security utilizzando uno script Java. Un clic su un pulsante, un file multimediale riprodotto o il salvataggio di un file sono alcuni esempi di eventi che possono essere attivati da un PDF protetto tramite criterio. Utilizzando l&#39;oggetto Document Security è inoltre possibile recuperare le informazioni utente. Il tracciamento degli eventi può essere abilitato dal server di protezione dei documenti a livello globale o a livello di criterio.
 
-**** Periodo di rilascio automatico offline: Il numero massimo di giorni entro cui il destinatario può utilizzare offline il documento protetto tramite criterio (senza una connessione di rete o Internet attiva). Alla scadenza del periodo consentito, il destinatario deve sincronizzare di nuovo il documento per continuare a utilizzarlo.
+**Periodo di rilascio automatico offline:** Il numero massimo di giorni entro cui il destinatario può utilizzare offline il documento protetto tramite criterio (senza una connessione di rete o Internet attiva). Alla scadenza del periodo consentito, il destinatario deve sincronizzare di nuovo il documento per continuare a utilizzarlo.
 
 ### Provider di autorizzazioni esterni {#external-authorization-providers}
 
@@ -223,33 +231,35 @@ Se ne avete già configurato uno, selezionate i provider di autenticazione ester
 
 È possibile ignorare le impostazioni di autenticazione configurate sul server e specificare le opzioni di autenticazione pertinenti per questo criterio. Selezionate Ignora impostazioni autenticazione globale, quindi selezionate le opzioni di autenticazione pertinenti per questo criterio. Sono disponibili le seguenti opzioni di autenticazione:
 
-**** Consenti autenticazione password nome utente: Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione tramite nome utente/password durante la connessione al server.
+**Consenti autenticazione password nome utente:** Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione tramite nome utente/password durante la connessione al server.
 
-**** Consenti autenticazione Kerberos: Selezionare questa opzione per abilitare l&#39;autenticazione Kerberos per le applicazioni client durante la connessione al server.
+**Consenti autenticazione Kerberos:** Selezionare questa opzione per abilitare l&#39;autenticazione Kerberos per le applicazioni client durante la connessione al server.
 
-**** Consenti autenticazione certificato client: Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione tramite certificato durante la connessione al server.
+**Consenti autenticazione certificato client:** Selezionate questa opzione per consentire alle applicazioni client di utilizzare l&#39;autenticazione basata sui certificati durante la connessione al server.
 
-**Consenti autenticazione** estesa Selezionate questa opzione per abilitare l&#39;autenticazione estesa. Selezionando questa opzione le applicazioni client possono utilizzare l&#39;autenticazione estesa. L&#39;autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server di Document Security
+**Consenti autenticazione** estesa Selezionate questa opzione per abilitare l&#39;autenticazione estesa. Selezionando questa opzione, le applicazioni client possono utilizzare l&#39;autenticazione estesa. L&#39;autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server di Document Security
 
 Se sovrascrivete le impostazioni di autenticazione globali, potete scegliere le opzioni di autenticazione pertinenti per questo criterio. Ad esempio, se sul server erano state abilitate tre opzioni di autenticazione (nome utente e password, certificato client e autenticazione estesa), potete ignorare tale impostazione globale e selezionare solo l&#39;autenticazione estesa per questo criterio. È necessario assicurarsi che l&#39;opzione di autenticazione selezionata qui sia già configurata sul server. In questo esempio, non è possibile selezionare Kerberos come opzione di autenticazione perché non è configurato sul server.
 
 >[!NOTE]
 >
-> L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
+>L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
 
 ### Impostazioni avanzate {#advanced-settings}
 
 L’area Impostazioni avanzate contiene le seguenti impostazioni:
 
-**** Filigrana dinamica: Selezionare una filigrana da visualizzare dinamicamente sulle pagine di un documento (ad esempio, quando il destinatario stampa il documento). Le filigrane dinamiche identificano in modo univoco un documento, contribuendo in tal modo a garantire la riservatezza del documento e a prevenire la violazione del copyright. Ad esempio, l&#39;amministratore può configurare una filigrana dinamica che visualizzi la data corrente, il nome utente o l&#39;identificatore della persona che utilizza il documento o il nome del criterio utilizzato per proteggere il documento. Una filigrana può anche visualizzare testo o elementi grafici personalizzati, se configurati. Gli amministratori configurano le opzioni relative alle filigrane e gli amministratori e gli utenti possono applicarle ai criteri.
+**Filigrana dinamica:** Selezionare una filigrana da visualizzare dinamicamente sulle pagine di un documento (ad esempio, quando il destinatario stampa il documento). Le filigrane dinamiche identificano in modo univoco un documento, contribuendo in tal modo a garantire la riservatezza del documento e a prevenire la violazione del copyright. Ad esempio, l&#39;amministratore può configurare una filigrana dinamica che visualizzi la data corrente, il nome utente o l&#39;identificatore della persona che utilizza il documento o il nome del criterio utilizzato per proteggere il documento. Una filigrana può anche visualizzare testo o elementi grafici personalizzati, se configurati. Gli amministratori configurano le opzioni relative alle filigrane e gli amministratori e gli utenti possono applicarle ai criteri.
 
 Consultate [Configurare le filigrane](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks)dinamiche.
 
 Se modificate un criterio e l&#39;amministratore ha eliminato una filigrana configurata precedentemente selezionata per il criterio, nella pagina Modifica criterio viene visualizzata una nota. In questo caso, se state salvando il documento modificato, selezionate una nuova filigrana se desiderate che venga visualizzata sul documento.
 
-***Nota **: Per i criteri che forniscono l&#39;accesso anonimo agli utenti, il nome utente e l&#39;identificatore di un utente anonimo non vengono visualizzati come filigrane anche se si seleziona questo tipo di filigrana.*
+>[!NOTE]
+>
+>Per i criteri che forniscono l&#39;accesso anonimo agli utenti, il nome utente e l&#39;identificatore di un utente anonimo non vengono visualizzati come filigrane anche se si seleziona questo tipo di filigrana.
 
-**** Usa solo plug-in certificati di Acrobat per PDF: Quando è selezionata per un criterio, questa opzione specifica che Acrobat 8.0 e versioni successive deve essere eseguito in modalità certificata all&#39;apertura di documenti protetti tramite criterio. Se Acrobat viene eseguito in modalità certificata, non verrà caricato alcun plug-in di terze parti.
+**Usa solo plug-in certificati di Acrobat per PDF:** Quando è selezionata per un criterio, questa opzione specifica che Acrobat 8.0 e versioni successive deve essere eseguito in modalità certificata all&#39;apertura di documenti protetti tramite criterio. Se Acrobat viene eseguito in modalità certificata, non verrà caricato alcun plug-in di terze parti.
 
 Selezionare questa opzione se si desidera che un destinatario del documento scriva un plug-in che possa aggirare le protezioni del documento in Acrobat 8.0 e versioni successive. Non selezionate questa opzione se i destinatari del documento devono utilizzare plug-in di terze parti in Acrobat per interagire con i documenti.
 
@@ -259,19 +269,19 @@ Questa opzione attiva solo la modalità certificata in Acrobat 8.0 o versioni su
 
 Questa opzione non si applica ad Adobe Reader.
 
-**** Messaggio di errore accesso negato: Messaggio che viene visualizzato a chiunque tenti di aprire un documento protetto tramite criterio senza autorizzazione. Questo messaggio viene visualizzato in Acrobat. I client che non possono visualizzare questo messaggio visualizzano un messaggio predefinito per indicare che l&#39;accesso è negato.
+**Messaggio di errore accesso negato:** Messaggio che viene visualizzato a chiunque tenti di aprire un documento protetto tramite criterio senza autorizzazione. Questo messaggio viene visualizzato in Acrobat. I client che non possono visualizzare questo messaggio visualizzano un messaggio predefinito per indicare che l&#39;accesso è negato.
 
 ### Impostazioni avanzate immutabili {#unchangeable-advanced-settings}
 
 L&#39;area Impostazioni avanzate non modificabili contiene le seguenti impostazioni. Non potete modificare queste impostazioni dopo aver salvato il criterio.
 
-**** Algoritmo di cifratura e lunghezza chiave: Utilizzato per proteggere i documenti. Potete scegliere tra le seguenti opzioni:
+**Algoritmo di cifratura e lunghezza chiave:** Utilizzato per proteggere i documenti. Potete scegliere tra le seguenti opzioni:
 
 * AES a 128 bit
 * AES a 256 bit. Questa opzione è supportata solo in Acrobat 9.0 e versioni successive. Per utilizzare la cifratura AES 256 per i file PDF, è necessario ottenere e installare i file JCE (Java Cryptography Extension) Unlimited Strense Jurisdizione Policy. Questi file sostituiscono i file local_policy.jar e US_export_policy.jar nella cartella [JAVE_HOME]/lib/security. Ad esempio, se utilizzate Sun JDK 1.6, copiate i file scaricati nella cartella [root]/Java/jdk1.6.0_26/lib/security. Potete scaricare questi file dai download [di](https://java.sun.com/javase/downloads/index.jsp)Java SE.
 * Nessuna crittografia. Questa opzione è attualmente supportata da Acrobat 9.0 e versioni successive. Se si seleziona questa opzione, le opzioni Limitazioni documento sono disattivate. Questa opzione può essere utile se si desidera utilizzare la protezione dei documenti per il controllo dei documenti o per il controllo delle versioni, ma non per cifrare il documento.
 
-**** Limitazioni documento: Selezionare i componenti del documento PDF da cifrare. Altre applicazioni client crittografano l&#39;intero documento ma non i file collegati o incorporati. Potete scegliere tra le seguenti opzioni:
+**Limitazioni documento:** Selezionare i componenti del documento PDF da cifrare. Altre applicazioni client crittografano l&#39;intero documento ma non i file collegati o incorporati. Potete scegliere tra le seguenti opzioni:
 
 * L’intero documento, inclusi gli allegati e i metadati. *I metadati* sono informazioni sul documento e sul relativo contenuto che è possibile visualizzare tramite la finestra di dialogo Proprietà documento o il menu Avanzate di Acrobat. In Acrobat è possibile allegare file di tipi diversi (ad esempio, file di testo, audio e video) ai documenti PDF.
 * Il documento e i relativi allegati, ma non i metadati.
@@ -287,7 +297,7 @@ Accanto a un criterio disabilitato viene visualizzata una X rossa.
 >
 >Gli amministratori non possono disattivare i criteri personali e gli utenti non possono attivare e disattivare i propri criteri.
 
-1. Nella pagina Protezione documento, fare clic su Criteri, quindi fare clic sulla scheda Set criteri.
+1. Nella pagina Protezione documento, fare clic su Criteri, quindi fare clic sulla scheda Set di criteri.
 1. Fate clic sul nome del set di criteri appropriato e fate clic sulla scheda Criteri.
 1. Selezionate la casella di controllo accanto al criterio appropriato, fate clic su Attiva o Disattiva, quindi su OK.
 
@@ -297,13 +307,13 @@ La scheda Criteri personali consente di effettuare ricerche nei criteri personal
 
 I set di criteri creati dagli amministratori sono elencati nella scheda Set di criteri della pagina Criteri con informazioni sul set di criteri, incluso il nome, la data di creazione e modifica e una descrizione. Fate clic sul nome di un set di criteri per visualizzarne i dettagli. I coordinatori di set di criteri che dispongono dell&#39;autorizzazione per gestire i criteri possono creare criteri condivisi all&#39;interno di un set di criteri specifico.
 
-Quando create o modificate un criterio, viene visualizzata una pagina in cui potete configurare dettagli quali il nome del criterio, i livelli di autorizzazione, le impostazioni di riservatezza e i destinatari da includere nel criterio.
+Quando create o modificate un criterio, viene visualizzata una pagina in cui potete configurare dettagli quali il nome del criterio, i livelli di autorizzazione, le impostazioni per la salvaguardia della riservatezza e i destinatari da includere nel criterio.
 
 L&#39;amministratore può configurare le seguenti impostazioni di riservatezza per un criterio:
 
 * Opzioni generali per la riservatezza dei documenti, ad esempio il periodo di validità del documento e il periodo di tempo consentito per la pubblicazione offline
-* Gli utenti autorizzati e le restrizioni e i privilegi del documento per ciascuno di questi utenti
-* Opzioni avanzate per la salvaguardia della riservatezza dei documenti, comprese filigrane dinamiche e crittografia dei documenti
+* Gli utenti autorizzati, nonché le restrizioni e i privilegi del documento per ciascuno di questi utenti
+* Opzioni avanzate per la salvaguardia della riservatezza dei documenti, comprese filigrane dinamiche e cifratura dei documenti
 
 Gli utenti possono visualizzare i criteri creati e tutti i criteri condivisi a cui hanno accesso. Gli amministratori possono visualizzare tutti i criteri personali e condivisi presenti nella protezione dei documenti.
 
@@ -318,7 +328,7 @@ Potete visualizzare informazioni più dettagliate su un criterio visualizzato ne
 1. Selezionare il criterio appropriato dall&#39;elenco.
 1. Nella pagina Dettagli criterio potete visualizzare i dettagli relativi al criterio, modificare il criterio o visualizzare gli eventi relativi al criterio.
 
-## Cerca criteri {#search-for-policies}
+## Ricerca di criteri {#search-for-policies}
 
 Gli amministratori possono cercare criteri condivisi e criteri personali creati da altri utenti.
 
@@ -328,9 +338,9 @@ Gli amministratori possono cercare criteri condivisi e criteri personali creati 
 
 1. Nell&#39;elenco Trova, selezionare una delle seguenti opzioni:
 
-   **** ID criterio: Il numero di identificazione del criterio generato al momento della creazione del criterio da parte dell&#39;utente. È necessario digitare l&#39;ID esatto del criterio.
+   **ID criterio:** Il numero di identificazione del criterio generato al momento della creazione del criterio da parte dell&#39;utente. È necessario digitare l&#39;ID esatto del criterio.
 
-   **** Nome criterio: Nome del criterio. Potete cercare parte o tutto il nome del criterio.
+   **Nome criterio:** Nome del criterio. Potete cercare parte o tutto il nome del criterio.
 
 1. Nella casella di testo, digitare il valore corrispondente. Ad esempio, se hai selezionato Nome criterio, digita il nome del criterio che stai cercando.
 1. Nell&#39;elenco Visualizza, selezionare il numero di risultati da visualizzare, quindi fare clic su Trova. Vengono visualizzati i risultati della ricerca.
@@ -340,7 +350,7 @@ Gli amministratori possono cercare criteri condivisi e criteri personali creati 
 
 Potete copiare un criterio esistente e salvarlo con un nuovo nome e una nuova descrizione. Copiare i criteri è un modo efficiente per creare nuovi criteri utilizzando le impostazioni esistenti.
 
-Gli utenti esterni possono copiare i criteri solo se l&#39;amministratore lo abilita. Se non potete creare criteri, l&#39;opzione Copia non sarà disponibile.
+Gli utenti esterni possono copiare i criteri solo se l&#39;amministratore ne abilita la funzionalità. Se non potete creare criteri, l&#39;opzione Copia non sarà disponibile.
 
 1. Nella pagina Protezione documento, fare clic su Criteri e quindi sulla scheda Criteri personali.
 1. Selezionare il criterio appropriato dall&#39;elenco.
@@ -379,7 +389,7 @@ Gli utenti invitati possono eliminare i criteri solo se l&#39;amministratore lo 
 
 >[!NOTE]
 >
->È necessario utilizzare l&#39;applicazione client per rimuovere i criteri dai documenti. (Vedere la Guida di Acrobat o la Guida alle estensioni Acrobat Reader DC appropriata.)
+>È necessario utilizzare l&#39;applicazione client per rimuovere i criteri dai documenti. (Vedere la Guida di Acrobat o la Guida alle estensioni di Acrobat Reader DC appropriata.)
 
 ## Ordinare l&#39;elenco dei criteri {#sort-the-policy-list}
 
