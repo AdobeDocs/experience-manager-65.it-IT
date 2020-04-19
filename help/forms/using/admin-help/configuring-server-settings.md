@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -21,7 +21,7 @@ La pagina Impostazioni server consente di accedere alle varie impostazioni del f
 
 * **Impostazioni** e-mail che abilitano i messaggi e-mail in uscita, insieme alle impostazioni del server e-mail utilizzate per tali messaggi. (See [Configuring email settings](configuring-server-settings.md#configuring-email-settings).)
 * **Impostazioni** di notifica delle attività che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail agli utenti finali e ai gruppi in merito alle loro attività. Consultate [Configurazione delle notifiche per utenti e gruppi](configuring-server-settings.md#configuring-notifications-for-users-and-groups).
-* **Impostazioni** di notifica dell&#39;amministratore che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. Consultate [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).
+* **Impostazioni** di notifica dell&#39;amministratore che abilitano, disattivano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. Consultate [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).
 
 ## Configurazione delle impostazioni e-mail {#configuring-email-settings}
 
@@ -49,7 +49,7 @@ Se i vostri processi sono progettati e implementati senza richiedere e-mail, non
 
 >[!NOTE]
 >
->Se immettete informazioni non corrette, potete fare clic su Annulla per tornare alla pagina visualizzata in precedenza.
+>Se si immettono informazioni errate, è possibile fare clic su Annulla per tornare alla pagina visualizzata in precedenza.
 
 ### Configurazione dei modelli e-mail per l&#39;utilizzo di AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
 
@@ -111,7 +111,7 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 1. Nell’elenco Codifica e-mail, selezionate il formato di codifica da usare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fate clic su Salva.
 
-### Configurare le notifiche di scadenza per utenti o gruppi {#configure-deadline-notifications-for-users-or-groups}
+### Configurare le notifiche di scadenza per gli utenti o i gruppi {#configure-deadline-notifications-for-users-or-groups}
 
 È possibile inviare notifiche di scadenza a utenti e gruppi al termine della scadenza per l&#39;azione in base a un&#39;attività assegnata. Una notifica di scadenza è in genere informativa perché l&#39;utente non può più agire in base all&#39;attività assegnata.
 
@@ -156,7 +156,7 @@ Se un ramo si arresta (interrompe deliberatamente o a causa di un errore), puoi 
 Se un&#39;operazione si arresta (interrompe deliberatamente o a causa di un errore), potete ricevere una notifica e-mail a un amministratore o a un altro utente, che può indagare sul problema.
 
 1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche per l’amministratore.
-1. In Tipo di notifica fare clic su Operazione bloccata.
+1. In Tipo di notifica, fare clic su Operazione bloccata.
 1. Selezionate Abilita operazione bloccata.
 1. Nella casella Indirizzi e-mail, digitate gli indirizzi degli utenti a cui inviare la notifica quando un&#39;operazione si arresta. Utilizzate il formato user@domain.com e separate ogni indirizzo con una virgola. In genere, questo indirizzo e-mail è destinato a un amministratore.
 1. Nella casella Oggetto, digitare il testo per l&#39;oggetto del messaggio e-mail. Questo campo è precompilato con testo predefinito. Per informazioni dettagliate sulla personalizzazione di questo campo, consultate [Personalizzazione del contenuto delle notifiche](configuring-server-settings.md#customizing-the-content-of-notifications)
@@ -177,13 +177,13 @@ L’area Modello notifica è un editor Rich Text che consente di generare HTML p
 
 ### Generazione URL {#url-generation}
 
-Solo per le notifiche attività, il flusso di lavoro Forms include due configurazioni URL predefinite che è possibile trascinare dall&#39;elenco Generazione URL nella casella Modello notifica e quindi personalizzare:
+Solo per le notifiche delle attività, il flusso di lavoro Forms include due configurazioni URL predefinite che è possibile trascinare dall&#39;elenco Generazione URL nella casella Modello di notifica e quindi personalizzare:
 
 * OpenTask è disponibile per i tipi di notifica Promemoria e Assegnazione task. Questo URL fornisce un collegamento all’attività in Workspace, consentendo all’utente di accedere rapidamente all’attività dalla notifica e-mail. Quando trascinate l’URL OpenTask nella casella Modello di notifica, l’URL si presenta nel seguente formato:
 
    `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
-* ClaimTask è disponibile per i tipi di notifica Gruppo - Promemoria e Gruppo - Assegnazione task. Questo URL fornisce un collegamento alla pagina dei dettagli dell’attività in Workspace, in cui l’utente può richiedere o richiedere e aprire l’elemento di lavoro. Quando si trascina l&#39;URL ClaimTask nella casella Modello di notifica, l&#39;URL è nel seguente formato:
+* ClaimTask è disponibile per i tipi di notifica Gruppo - Promemoria e Gruppo - Assegnazione task. Questo URL fornisce un collegamento alla pagina dei dettagli dell’attività in Workspace, in cui l’utente può reclamare o reclamare e aprire l’elemento di lavoro. Quando si trascina l&#39;URL ClaimTask nella casella Modello di notifica, l&#39;URL è nel seguente formato:
 
    `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
@@ -195,15 +195,17 @@ Se la soluzione viene distribuita in un ambiente cluster, sostituitela `@@notifi
 
 `<`*PORT *`>`è il numero di porta del listener HTTP per il server applicazione. La porta listener HTTP predefinita per i server applicazione supportati è la seguente:
 
-**** JBoss: 8080
+**JBoss:** 8080
 
-**** Oracle WebLogic Server: 7001
+**Oracle WebLogic Server:** 7001
 
-**** IBM WebSphere: 9080
+**IBM WebSphere:** 9080
 
 Affinché questi URL funzionino correttamente, sostituite `<`*PORT *`>`con il numero di porta appropriato per l&#39;ambiente.
 
-***Nota **: Se si utilizza un&#39;applicazione Web personalizzata diversa da Forms per fornire agli utenti l&#39;accesso alle attività, è necessario utilizzare un formato URL appropriato per l&#39;applicazione personalizzata.*
+>[!NOTE]
+>
+>Se si utilizza un&#39;applicazione Web personalizzata diversa da Forms per fornire agli utenti l&#39;accesso alle attività, è necessario utilizzare un formato URL appropriato per l&#39;applicazione personalizzata.
 
 ### Selettore variabile {#variable-picker}
 
@@ -229,7 +231,9 @@ Inoltre, per i promemoria di gruppo, le assegnazioni di task di gruppo e le scad
 
 **group-name** Il nome del gruppo a cui è assegnato l’elemento di lavoro.
 
-**Nota**: *Se una variabile non ha valore, non viene restituito nulla.*
+>[!NOTE]
+>
+>Se una variabile non ha valore, non viene restituito nulla.
 
 Per i rami in stallo, nelle caselle Oggetto e Modello di notifica è possibile utilizzare le seguenti variabili:
 
@@ -239,7 +243,7 @@ Per i rami in stallo, nelle caselle Oggetto e Modello di notifica è possibile u
 
 **notification-host** Il nome host del server applicazione dei moduli AEM.
 
-Per le operazioni in stallo, nelle caselle Oggetto e Modello notifica è possibile utilizzare le seguenti variabili:
+Per le operazioni in stallo, nelle caselle Oggetto e Modello di notifica è possibile utilizzare le seguenti variabili:
 
 **action-id** L’identificatore dell’operazione.
 
@@ -271,7 +275,7 @@ Se il numero del ramo è 4868 e il nome del server è `ServerXYZ`:
 
 ## Configurazione delle connessioni di monitoraggio delle attività aziendali {#configuring-business-activity-monitoring-connections}
 
-Business Activity Monitoring, un modulo opzionale, offre una serie di dashboard operativi che offrono visibilità in tempo reale sulle operazioni e indicatori di prestazioni chiave.
+Business Activity Monitoring, un modulo opzionale, offre una serie di dashboard operativi che offrono visibilità in tempo reale sulle operazioni e sugli indicatori di prestazioni chiave.
 
 Nella pagina Impostazioni di configurazione BAM, impostare le connessioni al server che esegue BAM in modo che gli eventi relativi al processo possano essere tracciati e trasmessi a tale server.
 
