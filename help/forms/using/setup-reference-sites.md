@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -43,7 +43,7 @@ I siti di riferimento forniscono risorse riutilizzabili che potete usare come mo
 
 Prima di configurare il sito di riferimento, accertatevi di disporre dei seguenti elementi:
 
-* **AEM Essentials** AEM QuickStart, pacchetto del componente aggiuntivo AEM Forms e pacchetti del sito di riferimento. Consultate Release [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms per i dettagli dei pacchetti di componenti aggiuntivi e di siti di riferimento.
+* **AEM Essentials** AEM QuickStart, pacchetto del componente aggiuntivo AEM Forms e pacchetti del sito di riferimento. Consultate Release [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms per i dettagli dei pacchetti di componenti aggiuntivi e di siti di riferimento.
 
 * **Un servizio** SMTP È possibile utilizzare qualsiasi servizio SMTP.
 
@@ -263,7 +263,7 @@ Configurate il servizio cloud OAuth in AEM Forms per abilitare la comunicazione 
 1. Nell’istanza di creazione di AEM, andate a **Strumenti** > Servizi **** Cloud > Origini **** dati > **globale**. Tocca l&#39;icona **Refsite Dynamics Integration** e tocca Proprietà.
 1. Accedere all&#39;account Microsoft Azure Active Directory. Aggiungete l&#39;URL di configurazione del servizio cloud copiato nell&#39;impostazione **Rispondi URL** per l&#39;applicazione registrata. Salva la configurazione.
 1. Nella scheda Impostazioni autenticazione, specificate **Origine** servizio, ID **** client, Segreto **** cliente e URL **** risorsa per l&#39;istanza di Microsoft Dynamics. Fate clic su **Connetti a OAuth** per reindirizzare alla pagina di accesso di Microsoft Dynamics.
-1. Immettete le credenziali di accesso. Una volta effettuato l&#39;accesso, si viene reindirizzati alla pagina di configurazione del servizio cloud AEM Forms. Fate clic su **Salva e chiudi**. La configurazione del servizio cloud viene salvata.
+1. Immettete le credenziali di accesso. Una volta effettuato l&#39;accesso, si viene reindirizzati alla pagina di configurazione del servizio cloud AEM Forms. Click **Save &amp; Close**. La configurazione del servizio cloud viene salvata.
 1. Vai a **Forms** > Integrazioni **** dati > **We.Finance**. Selezionare Auto Insurance (Dynamics) e fare clic su Edit (Modifica). Le entità di Microsoft Dynamics sono elencate nella scheda Origini dati. Attendere che tutte le entità siano recuperate da Microsoft Dynamics ed elencate nella scheda origini dati.
 1. Selezionare l&#39;entità **** AutoInsuranceRenewal e fare clic su **Test Model Object**. Nella sezione della richiesta di input, specificate il valore per l&#39;ID cliente come &quot;900001&quot; e fate clic su **Test**. Nella sezione Output vengono visualizzati i record recuperati da Microsoft Dynamics per ID cliente 900001.
 1. Nella sezione della richiesta di input, specificate il valore per l&#39;ID cliente come &quot;900001&quot; e fate clic su **Test**. Nella sezione Output vengono visualizzati i record recuperati da Microsoft Dynamics per ID cliente 900001.
@@ -355,7 +355,10 @@ Il sito di riferimento mostra l&#39;integrazione di AEM Forms con Adobe Target, 
 Per provare l&#39;integrazione nel sito di riferimento, effettuate le seguenti operazioni per configurare Target in AEM:
 
 1. Avviate l&#39;argomento jvm dell&#39;autore `-Dabtesting.enabled=true` per abilitare i test A/B sul server.
-   **Nota**: Se l’istanza AEM è in esecuzione su JBoss, avviata come servizio dall’installazione chiavi in mano, aggiungete il `-Dabtesting.enabled=true` parametro nella seguente voce del `jboss\bin\standalone.conf.bat` file:
+
+   >[!NOTE]
+   >
+   >Se l’istanza AEM è in esecuzione su JBoss, avviata come servizio dall’installazione chiavi in mano, aggiungete il `-Dabtesting.enabled=true` parametro nella seguente voce del `jboss\bin\standalone.conf.bat` file:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Accesso `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
