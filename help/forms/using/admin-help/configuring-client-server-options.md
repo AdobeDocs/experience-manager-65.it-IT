@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -26,7 +26,9 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Se si utilizza IPv6, immettere l&#39;URL di base come nome del computer o nome DNS. Se si utilizza un indirizzo IP numerico, Acrobat non riuscirà ad aprire i file protetti tramite criterio. Inoltre, utilizzate l&#39;URL HTTP sicuro (HTTPS) per il vostro server.
 
-***Nota **: L&#39;URL di base è incorporato nei file protetti tramite criterio. Le applicazioni client utilizzano l&#39;URL di base per la connessione al server. I file protetti continueranno a contenere l&#39;URL di base, anche se successivamente verranno modificati. Se modificate l&#39;URL di base, le informazioni di configurazione dovranno essere aggiornate per tutti i client che si connettono.*
+>[!NOTE]
+>
+>L&#39;URL di base è incorporato nei file protetti tramite criterio. Le applicazioni client utilizzano l&#39;URL di base per la connessione al server. I file protetti continueranno a contenere l&#39;URL di base, anche se successivamente verranno modificati. Se modificate l&#39;URL di base, le informazioni di configurazione dovranno essere aggiornate per tutti i client che si connettono.
 
 **Periodo di leasing offline predefinito:** Il tempo predefinito entro il quale un utente può utilizzare un documento protetto offline. Questa impostazione determina il valore iniziale dell&#39;impostazione del periodo di tempo consentito per l&#39;utilizzo non in linea automatico quando si crea un criterio. Consultate Creazione e modifica dei criteri. Alla scadenza del periodo consentito, il destinatario deve sincronizzare di nuovo il documento per continuare a utilizzarlo.
 
@@ -142,7 +144,7 @@ I destinatari dei documenti protetti tramite criterio possono portare i document
 
 ### Gestire i rollover delle chiavi {#manage-key-rollovers}
 
-Document Security utilizza algoritmi di cifratura e licenze per proteggere i documenti. Quando esegue la cifratura di un documento, Document Security genera e gestisce una chiave di decrittazione denominata *DocKey* che trasmette all&#39;applicazione client. Se il criterio di protezione di un documento consente l&#39;accesso offline, viene generata una chiave offline denominata chiave ** principale anche per ogni utente che ha accesso offline al documento.
+Document Security utilizza algoritmi di cifratura e licenze per proteggere i documenti. Quando esegue la cifratura di un documento, la protezione del documento genera e gestisce una chiave di decrittazione denominata *DocKey* che trasmette all&#39;applicazione client. Se il criterio di protezione di un documento consente l&#39;accesso offline, viene generata una chiave offline denominata chiave ** principale anche per ogni utente che ha accesso offline al documento.
 
 >[!NOTE]
 >
@@ -419,7 +421,7 @@ Queste impostazioni controllano il testo visualizzato nella finestra di dialogo 
 
 ## Configurare le filigrane dinamiche {#configure-dynamic-watermarks}
 
-La protezione dei documenti consente di configurare le impostazioni predefinite per l&#39;opzione filigrana dinamica che è possibile applicare al momento della creazione dei criteri. Una *filigrana* è un’immagine sovrapposta al testo del documento. È utile per tenere traccia del contenuto di un documento e può aiutare a identificare l’uso illegale del contenuto.
+La protezione dei documenti consente di configurare le impostazioni predefinite per l&#39;opzione filigrana dinamica che è possibile applicare al momento della creazione dei criteri. Per *filigrana* si intende un’immagine sovrapposta al testo del documento. È utile per tenere traccia del contenuto di un documento e può aiutare a identificare l’uso illegale del contenuto.
 
 Una filigrana dinamica può essere costituita da testo composto da variabili definite come ID utente e data e testo personalizzato oppure da contenuto RTF all’interno di un PDF. È possibile configurare filigrane con diversi elementi ciascuno con il proprio posizionamento e formattazione.
 
