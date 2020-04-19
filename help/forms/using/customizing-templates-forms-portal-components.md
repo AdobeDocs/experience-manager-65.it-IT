@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -27,7 +27,7 @@ Conoscenza di base di HTML e CSS
 
 L&#39;interfaccia utente di AEM Forms consente di aggiungere metadati a qualsiasi modulo. I metadati personalizzati possono migliorare l&#39;esperienza utente durante l&#39;elencazione e la ricerca di moduli all&#39;interno dell&#39;organizzazione.
 
-Forms Portal consente di utilizzare i metadati personalizzati negli elenchi dei moduli. Durante la creazione di modelli personalizzati per le risorse, potete modificarne il layout e usare metadati personalizzati con il set di stili CSS.
+Forms Portal consente di utilizzare i metadati personalizzati negli elenchi dei moduli. Durante la creazione di modelli personalizzati per le risorse, potete modificarne il layout e utilizzare i metadati personalizzati con il set di stili CSS.
 
 Per creare un modello personalizzato per vari componenti di Forms Portal, effettuare le operazioni seguenti.
 
@@ -45,8 +45,12 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
    * Collegamento componente: /libs/fd/fp/linkTemplate
    Aggiungete un titolo da visualizzare durante la selezione dei modelli di layout.
 
-   *Nota: Il titolo può essere diverso dal nome del nodo sling:Folder creato.*
-   *Nell’immagine seguente è illustrata la configurazione del componente Ricerca e filtro.* ![Creazione di una sling:Folder](assets/1.png)
+   >[!NOTE]
+   >
+   >Il titolo può essere diverso dal nome del nodo sling:Folder creato.
+
+   Nell’immagine seguente è illustrata la configurazione del componente Ricerca e filtro.
+   ![Creazione di una sling:Folder](assets/1.png)
 
 1. Create un modello di file.html in questa cartella da usare come modello personalizzato.
 1. Scrivete il modello personalizzato e utilizzate i metadati personalizzati come descritto di seguito.
@@ -85,7 +89,7 @@ Per includere una voce ripetibile, configurate il valore dell&#39;attributo **ri
 
 Ogni segnaposto dispone di un set di metadati OOTB esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere la proprietà **** ${metadata_prop} in tale posizione.
 
-*Nell&#39;esempio, la proprietà metadata viene utilizzata in più istanze. Ad esempio, viene utilizzato in **descrizione**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**********, pdfStyle, e nel modo prescritto, in modo analogo.*
+*Nell&#39;esempio, la proprietà metadata viene utilizzata in più istanze. Ad esempio, viene utilizzato in **descrizione**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**********, pdfStyle, percorso, come prescritto.*
 
 ## Metadati forniti {#out-of-the-box-metadata}
 
@@ -93,7 +97,7 @@ Diversi componenti di Forms Portal forniscono set esclusivi di metadati OOTB uti
 
 ### Ricerca e filtro, componente {#search-amp-lister-component}
 
-* **** Titolo: Titolo del modulo
+* **Titolo:** Titolo del modulo
 * **name**: Nome del modulo (in genere corrisponde al titolo)
 * **descrizione**: Descrizione del modulo
 * **formUrl**: URL per il rendering del modulo come HTML
@@ -102,7 +106,9 @@ Diversi componenti di Forms Portal forniscono set esclusivi di metadati OOTB uti
 
 * **htmlStyle**&amp; **pdfStyle**: Stile di visualizzazione per le icone HTML e PDF utilizzate rispettivamente per il rendering. I valori validi sono &quot;**__FP_display_none**&quot; o blank.
 
-   **** Nota: Ricordare di utilizzare la classe __FP_display_none nel foglio di stile personalizzato
+>[!NOTE]
+>
+>Ricordare di utilizzare la classe __FP_display_none nel foglio di stile personalizzato.
 
 * **downloadUrl**: URL per scaricare una risorsa.
 
@@ -118,12 +124,12 @@ Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valo
 
 ### Collegamento, componente {#link-component}
 
-* **** Titolo: Titolo del modulo
+* **Titolo:** Titolo del modulo
 * **formUrl**: URL per il rendering del modulo come HTML
 * **target**: Attributo di destinazione del collegamento. I valori validi sono &quot;_blank&quot; e &quot;_self.&quot;
 * **linkText**: Didascalia collegamento
 
-### Componente Bozze e invii {#drafts-amp-submissions-component}
+### Bozze e invii, componente {#drafts-amp-submissions-component}
 
 * **Percorso**: Percorso del nodo di metadati bozza/invio. Utilizzatelo con l&#39;estensione .HTML come URL per aprire una bozza o per inviarla.
 * **contextPath**: Percorso contestuale dell’istanza AEM
@@ -133,7 +139,7 @@ Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valo
 * **submitID**: ID per l&#39;invio elencato (Usa solo nel modello per la sezione Invio).
 * **status**: Stato del modulo inviato. Utilizzate solo nel modello per la sezione Invio.
 * **descrizione**: Descrizione del modulo adattivo associato alla bozza o all&#39;invio.
-* **diffTime**: Differenza tra l&#39;ora corrente e l&#39;ultima azione di salvataggio per la bozza. In alternativa, differenza tra l&#39;ora corrente e l&#39;ultima azione di invio per l&#39;invio.
+* **diffTime**: Differenza tra l&#39;ora corrente e l&#39;ultima azione di salvataggio per la bozza. In alternativa, la differenza tra l&#39;ora corrente e l&#39;ultima azione di invio per l&#39;invio.
 * **iconClass**: Classe CSS utilizzata per visualizzare la prima lettera della bozza/invio. Forms Portal include le classi seguenti, che forniscono sfondi colorati diversi.
 * **proprietario**: Utente che ha creato la bozza/invio.
 * **Oggi**: Data di creazione della bozza o di invio in formato GG:MM:AAAA.
@@ -141,7 +147,7 @@ Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valo
 
 *Nota:*
 
-1. Per l&#39;opzione di eliminazione nella sezione Bozze del componente Bozze e invii, denominate la classe CSS &quot;_FP_deleteDraft&quot;. Inoltre, includete l&#39;attributo &quot;draftID&quot; con il valore **${draftID}**, che è l&#39;ID bozza della bozza corrispondente.
+1. Per l&#39;opzione di eliminazione nella sezione Bozze del componente Bozze e invii, assegnate alla classe CSS il nome &quot;_FP_deleteDraft&quot;. Inoltre, includete l&#39;attributo &quot;draftID&quot; con il valore **${draftID}**, che è l&#39;ID bozza della bozza corrispondente.
 
 1. Durante la creazione di collegamenti per l&#39;apertura di bozze e invii, potete specificare **${path}.html** come valore dell&#39;attributo **href** per il tag di ancoraggio.
 
@@ -149,15 +155,15 @@ Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valo
 
 **A**. Elemento contenitore
 
-**** B. metadati &quot;percorso&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
+**B.** metadati &quot;percorso&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
 
 **C.** Attributo ripetibile ai dati utilizzato per la sezione del modello per ciascun modulo
 
-**** D. Per localizzare la stringa &quot;Applica&quot;
+**D.** Per localizzare la stringa &quot;Applica&quot;
 
-**** E. Utilizzo della proprietà di configurazione pdfLinkText
+**E.** Utilizzo della proprietà di configurazione pdfLinkText
 
-**** F. Utilizzo dei metadati &quot;pdfUrl&quot;
+**F.** Utilizzo dei metadati &quot;pdfUrl&quot;
 
 ## Suggerimenti, trucchi e problemi noti {#tips-tricks-and-known-issues}
 
