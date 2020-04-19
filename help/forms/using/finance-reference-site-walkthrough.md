@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -306,7 +306,9 @@ Effettuare le seguenti operazioni per verificare la creazione di test A/B per il
 1. Aprite CRXDE Lite ed effettuate il backup del seguente file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Sostituire la definizione di funzione `onReportLoadSuccess` nel file di cui sopra con la definizione di funzione nel file seguente: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Nota: Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
+   >[!NOTE]
+   >
+   >Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
 
 1. Aggiorna il rapporto generato e vedrai qualcosa di simile al seguente. Esaminate il dashboard di reporting.
 
@@ -555,7 +557,9 @@ Per verificare la creazione di un test A/B per il modulo di richiesta di mutuo W
 1. Aprite CRXDE Lite ed effettuate il backup del seguente file: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Sostituire la definizione della `onReportLoadSuccess` funzione nel file di cui sopra con la definizione della funzione nel file seguente: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Nota: Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
+   >[!NOTE]
+   >
+   >Queste modifiche sono solo a scopo dimostrativo. Dopo aver completato questa procedura, accertatevi di ripristinare il contenuto del file.
 
 1. Aggiorna il rapporto generato e vedrai qualcosa di simile al seguente. Esaminate il dashboard di reporting.
 
@@ -886,7 +890,7 @@ Ora, accedete al dashboard **di assicurazione automatica** We.Finance come Conra
 
 Sarah riceve una email con un allegato da We.Finance che le ricorda che la sua assicurazione auto sta per scadere. L&#39;allegato è la versione cartacea dei dettagli di rinnovo della polizza di assicurazione auto.
 
-Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa come Numero polizza, Importo dovuto e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
+Sarah fa clic su **Rinnova ora** ed è diretta alla versione web della sua lettera di assicurazione auto. In cima a questa lettera, Sarah trova qualche giorno rimasto per la scadenza della sua politica. La pagina fornisce a Sarah una panoramica dei suoi dettagli sulla polizza assicurativa, come Numero polizza, Importo dovuto, e altre informazioni come offerte di sconto e premi fedeltà. Sarah fa di nuovo clic su **Rinnova ora** in fondo alla politica.
 
 ![auto-assicurazione-rinnovo-email](assets/auto-insurance-renewal-email.png)
 
