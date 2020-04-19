@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in AEM utilizzando il pan
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -38,11 +38,11 @@ La funzionalità di ricerca di AEM supporta la ricerca di raccolte e la ricerca 
 
 Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
-![Informazioni sulle parti dell’interfaccia dei risultati di ricerca di Risorse](assets/aem_search_results.png)
+![Interfaccia dei risultati di ricerca di Experience Manager Assets](assets/aem_search_results.png)
 
-*Figura: Informazioni sulle parti dell’interfaccia dei risultati di ricerca di Risorse*
+*Figura: Interfaccia dei risultati di ricerca di Experience Manager Assets*
 
-**A.** Salva la ricerca come Raccolta avanzata. **B.** Filtri (predicati) per limitare i risultati della ricerca. **C.** Visualizza file, cartelle o entrambi nei risultati della ricerca. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. **F.** Campo di ricerca Omnisearch con parola chiave di ricerca fornita dall’utente. **G.** Casella di controllo per selezionare tutti i risultati della ricerca. **H.** Numero di risultati della ricerca visualizzati rispetto al totale dei risultati della ricerca. **Io.** Chiudere la ricerca **J.** Passa dalla vista a scheda a quella a elenco.
+**A.** Salvate la ricerca come raccolta avanzata. **B.** Filtri o predicati per limitare i risultati della ricerca. **C.** Visualizzare file, cartelle o entrambi. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. **F.** Campo di ricerca Omnisearch con parola chiave di ricerca fornita dall’utente. **G.** Selezionare i risultati di ricerca caricati. **H.** Numero di risultati della ricerca visualizzati rispetto al totale dei risultati della ricerca. **I.** Chiudi la ricerca **J.** Passa dalla vista a scheda a quella a elenco.
 
 ### Facet di ricerca dinamici {#dynamicfacets}
 
@@ -246,7 +246,7 @@ Per accedere all’interfaccia del selettore risorse, passate a `https://[aem_se
 
 *Figura: Sfogliare e selezionare la risorsa nel selettore delle risorse*
 
-## Limitazioni  {#limitations}
+## Limitazioni    {#limitations}
 
 La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 
@@ -254,7 +254,7 @@ La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
 * AEM potrebbe continuare a visualizzare il termine di ricerca dopo che avrete selezionato le proprietà di una risorsa dai risultati della ricerca e quindi annullato la ricerca. <!-- (CQ-4273540) -->
 * Durante la ricerca di cartelle, file e cartelle, i risultati della ricerca non possono essere ordinati in base ad alcun parametro.
 * Se premete Invio senza digitare nulla nella barra di ricerca Omnico, AEM restituisce un elenco di soli file e non di cartelle. Se cercate specificamente delle cartelle senza utilizzare una parola chiave, AEM non restituisce alcun risultato.
-* Utilizzando la casella di controllo [!UICONTROL Seleziona tutto] , potete selezionare solo le prime 100 risorse ricercate nella vista a schede e le prime 200 risorse ricercate nella vista a elenco. Se scorrete e caricate più risorse nell’interfaccia utente, potete selezionarne altre utilizzando l’opzione [!UICONTROL Seleziona tutto] .
+* Per selezionare le risorse ricercate, usate l’opzione **[!UICONTROL Seleziona tutto]** nell’angolo superiore destro della pagina di ricerca. Experience Manager visualizza inizialmente 100 risorse nella vista a schede e 200 risorse nella vista a elenco. Quando scorrete i risultati della ricerca, vengono caricate più risorse. Potete selezionare più risorse rispetto alle risorse caricate. Il conteggio delle risorse selezionate viene visualizzato nell’angolo superiore destro della pagina dei risultati della ricerca. Potete gestire la selezione, ad esempio scaricare le risorse selezionate, aggiornare le proprietà dei metadati in blocco per le risorse selezionate o aggiungere le risorse selezionate a una raccolta. Quando più risorse sono selezionate rispetto a quelle visualizzate, un’azione viene applicata a tutte le risorse selezionate oppure viene visualizzata una finestra di dialogo con il numero di risorse a cui sono applicate. Per applicare un’azione alle risorse non caricate, accertatevi che tutte le risorse siano selezionate in modo esplicito.
 
 La ricerca visiva o la ricerca per similarità presenta le seguenti limitazioni:
 
@@ -269,7 +269,7 @@ La funzionalità di ricerca può presentare limiti di prestazioni nei seguenti s
 
 * Durante il monitoraggio dello stato di revisione delle risorse, utilizzate l&#39;opzione appropriata per individuare le risorse approvate o in attesa di approvazione.
 * Utilizzate il predicato Insights per cercare le risorse supportate in base alle statistiche di utilizzo ottenute da diverse app Creative. I dati di utilizzo sono raggruppati in Valutazione utilizzo, Impressioni, Clic e Canali multimediali in cui le risorse appaiono categorie.
-* Per selezionare le risorse ricercate, usate la casella di controllo **[!UICONTROL Seleziona tutto]** . Seleziona le prime 100 risorse nella vista a schede e le prime 200 risorse nella vista a elenco. Potete gestire la selezione, ad esempio scaricare le risorse selezionate, aggiornare le proprietà dei metadati in blocco per le risorse selezionate o aggiungere le risorse selezionate a una raccolta.
+* Per selezionare le risorse ricercate, usate la casella di controllo **[!UICONTROL Seleziona tutto]** . Experience Manager visualizza inizialmente 100 risorse nella vista a schede e 200 risorse nella vista a elenco. Quando scorrete i risultati della ricerca, vengono caricate più risorse. Potete selezionare più risorse rispetto alle risorse caricate. Il conteggio delle risorse selezionate viene visualizzato nell’angolo superiore destro della pagina dei risultati della ricerca. Potete gestire la selezione, ad esempio scaricare le risorse selezionate, aggiornare le proprietà dei metadati in blocco per le risorse selezionate o aggiungere le risorse selezionate a una raccolta. Quando più risorse sono selezionate rispetto a quelle visualizzate, un’azione viene applicata a tutte le risorse selezionate oppure viene visualizzata una finestra di dialogo con il numero di risorse a cui sono applicate. Per applicare un’azione alle risorse non caricate, accertatevi che tutte le risorse siano selezionate in modo esplicito.
 * Per cercare risorse che non contengono metadati obbligatori, consultate Metadati [](#mandatorymetadata)obbligatori.
 * La ricerca utilizza tutti i campi di metadati. Una ricerca generica, come la ricerca di 12, in genere restituisce molti risultati. Per risultati ottimali, utilizzate virgolette doppie (non singole) o assicuratevi che il numero sia contiguo a una parola senza un carattere speciale (ad esempio *shoe12*).
 * La ricerca full text supporta operatori quali -, ^ e così via. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette. Ad esempio, utilizzare &quot;Notebook - Bellezza&quot; invece di Notebook - Bellezza.
@@ -287,7 +287,7 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 *Figura: Comportamento di ricerca con e senza virgolette*
 
-**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Esempio,
+**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Ad esempio,
 
 * `run` restituisce le risorse con la parola chiave run esatta
 * `run*` restituisce le risorse in esecuzione, in esecuzione, in esecuzione e così via.
