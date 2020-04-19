@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -45,9 +45,9 @@ Tramite la protezione dei documenti è possibile monitorare i documenti protetti
 
 Document Security è costituito da un&#39;interfaccia server e utente:
 
-**** Server: Il componente centrale attraverso il quale la protezione dei documenti esegue transazioni quali l&#39;autenticazione degli utenti, la gestione in tempo reale dei criteri e l&#39;applicazione della riservatezza. Il server fornisce inoltre un archivio centrale per criteri, record di controllo e altre informazioni correlate.
+**Server:** Il componente centrale attraverso il quale la protezione dei documenti esegue transazioni quali l&#39;autenticazione degli utenti, la gestione in tempo reale dei criteri e l&#39;applicazione della riservatezza. Il server fornisce inoltre un archivio centrale per criteri, record di controllo e altre informazioni correlate.
 
-**** Pagine Web: Interfaccia in cui vengono creati criteri, gestiti i documenti protetti tramite criterio e monitorati gli eventi associati ai documenti protetti tramite criterio. Gli amministratori possono inoltre configurare opzioni globali quali l&#39;autenticazione degli utenti, il controllo e la messaggistica per gli utenti invitati e gestire gli account utente invitati.
+**Pagine Web:** Interfaccia in cui vengono creati criteri, gestiti i documenti protetti tramite criterio e monitorati gli eventi associati ai documenti protetti tramite criterio. Gli amministratori possono inoltre configurare opzioni globali quali l&#39;autenticazione degli utenti, il controllo e la messaggistica per gli utenti invitati e gestire gli account utente invitati.
 
 ![rm_psworkflow](assets/rm_psworkflow.png)
 
@@ -64,7 +64,7 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire diver
 
 * L&#39;amministratore di sistema o altri sistemi informativi (IS) persona installa e configura la protezione dei documenti. Questa persona può anche essere responsabile della configurazione delle impostazioni globali per il server, le pagine Web, i criteri e i documenti.
 
-   Queste impostazioni possono includere, ad esempio, un URL di protezione del documento di base, notifiche di controllo e privacy, avvisi di registrazione degli utenti invitati e periodi di tempo di leasing offline predefiniti.
+   Queste impostazioni possono includere, ad esempio, un URL di protezione del documento di base, notifiche di controllo e privacy, avvisi di registrazione degli utenti invitati e periodi di tempo di tempo consentito per l&#39;utilizzo offline predefinito.
 
 * Gli amministratori di Document Security creano criteri e set di criteri e gestiscono i documenti protetti tramite criterio per gli utenti, a seconda delle necessità. Possono inoltre creare account utente invitati e monitorare il sistema, il documento, l&#39;utente, il criterio, il set di criteri e gli eventi personalizzati. Possono inoltre essere responsabili della configurazione del server globale, delle pagine Web e delle impostazioni dei criteri insieme a un amministratore di sistema.
 
@@ -85,13 +85,15 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire diver
    * Invita utenti esterni
    **Amministratore di Document Security**
 
-   Gli utenti con questo ruolo possono configurare il server di protezione del documento utilizzando la pagina Configurazione nella sezione Protezione documento della console di amministrazione. Questa autorizzazione è associata al ruolo Gestisci configurazione.
+   Gli utenti con questo ruolo possono configurare il server di protezione del documento, utilizzando la pagina Configurazione nella sezione Protezione documento della console di amministrazione. Questa autorizzazione è associata al ruolo Gestisci configurazione.
 
-   ***Nota **: Gli utenti con questo ruolo devono anche avere il ruolo utente della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.*
+   >[!NOTE]
+   >
+   >Gli utenti con questo ruolo devono anche avere il ruolo utente della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
 
    **Amministratore set di criteri di protezione documenti**
 
-   Gli utenti con questo ruolo possono utilizzare la sezione relativa alla protezione dei documenti della console di amministrazione per modificare i criteri degli altri utenti e per creare, modificare ed eliminare i set di criteri. Quando un amministratore di set di criteri crea un set di criteri, può assegnare un coordinatore a tale set di criteri. Tali autorizzazioni sono associate al ruolo:
+   Gli utenti con questo ruolo possono utilizzare la sezione relativa alla protezione dei documenti della console di amministrazione per modificare i criteri degli altri utenti e per creare, modificare ed eliminare i set di criteri. Quando un amministratore di set di criteri crea un set di criteri, può assegnare a tale set di criteri un coordinatore di set di criteri. Tali autorizzazioni sono associate al ruolo:
 
    * Gestisci criterio
    * Gestire i set di criteri
@@ -99,7 +101,9 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire diver
    * Gestire gli editori di documenti
    * Visualizzare gli eventi
    * Delega
-   ***Nota **: Gli utenti con questo ruolo devono anche avere il ruolo utente della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.*
+   >[!NOTE]
+   >
+   >Gli utenti con questo ruolo devono anche avere il ruolo utente della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
 
    **Document Security gestisce gli utenti invitati e locali**
 
@@ -108,7 +112,9 @@ Diversi tipi di utenti utilizzano la protezione dei documenti per eseguire diver
    * Gestione degli utenti invitati e locali
    * Invita utenti esterni
    * Accesso alle pagine Web dell&#39;utente finale
-   ***Nota **: Gli utenti con questo ruolo devono anche avere il ruolo utente della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.*
+   >[!NOTE]
+   >
+   >Gli utenti con questo ruolo devono anche avere il ruolo utente della console di amministrazione per poter accedere alla console di amministrazione e modificare le impostazioni relative alla configurazione.
 
    **Utente invitato alla protezione dei documenti**
 
@@ -131,7 +137,7 @@ Gli amministratori di Document Security possono creare ruoli personalizzati util
 * Document security Gestisci utenti invitati e locali
 * Set di criteri di gestione per la protezione dei documenti
 * Set di criteri di gestione per la protezione dei documenti
-* Eventi server di visualizzazione della protezione dei documenti
+* Eventi del server di visualizzazione della protezione dei documenti
 * Proprietario criterio modifica protezione documento
 
 ## Criteri e documenti protetti tramite criterio {#policies-and-policy-protected-documents}
@@ -142,7 +148,7 @@ La protezione tramite criterio può essere applicata a un documento PDF utilizza
 
 ### Funzionamento dei criteri {#how-policies-work}
 
-I criteri contengono informazioni sugli utenti autorizzati e le impostazioni di riservatezza da applicare ai documenti. Gli utenti possono essere qualsiasi nell&#39;organizzazione, nonché persone esterne all&#39;organizzazione che dispongono di un account. Se l&#39;amministratore abilita la funzione di invito dell&#39;utente, è anche possibile aggiungere nuovi utenti ai criteri, avviando quindi una procedura e-mail di invito alla registrazione.
+I criteri contengono informazioni sugli utenti autorizzati e le impostazioni per la salvaguardia della riservatezza da applicare ai documenti. Gli utenti possono essere qualsiasi nell&#39;organizzazione, nonché persone esterne all&#39;organizzazione che dispongono di un account. Se l&#39;amministratore abilita la funzione di invito dell&#39;utente, è anche possibile aggiungere nuovi utenti ai criteri, avviando quindi una procedura e-mail di invito alla registrazione.
 
 Le impostazioni relative alla riservatezza specificate in un criterio determinano in che modo i destinatari possono utilizzare il documento. Ad esempio, è possibile specificare se i destinatari possono stampare o copiare il testo, apportare modifiche o aggiungere firme e commenti ai documenti protetti. Lo stesso criterio può anche specificare impostazioni di riservatezza diverse per utenti specifici.
 
@@ -165,7 +171,7 @@ I passaggi nel diagramma sono i seguenti:
 1. Document Security crea una licenza del documento e le chiavi del documento e cifra il criterio. La licenza del documento, i criteri crittografati e la chiave del documento vengono restituiti all&#39;applicazione client.
 1. Il documento è crittografato con la chiave del documento e la chiave del documento viene scartata. Il documento ora incorpora la licenza e il criterio. Tali attività vengono eseguite nell&#39;applicazione client supportata.
 
-Quando applicate un criterio a un documento, le informazioni contenute nel documento, compresi eventuali file contenuti (testo, audio o video) nei documenti PDF, sono protette dalle impostazioni di riservatezza specificate nel criterio. Document Security genera una licenza e informazioni di cifratura che vengono quindi incorporate nel documento. Quando si distribuisce il documento, Document Security può autenticare i destinatari che cercano di aprire il documento e autorizzare l&#39;accesso in base ai privilegi specificati nel criterio.
+Quando applicate un criterio a un documento, le informazioni contenute nel documento, compresi eventuali file contenuti (testo, audio o video) nei documenti PDF, sono protette dalle impostazioni per la salvaguardia della riservatezza specificate nel criterio. Document Security genera una licenza e informazioni di cifratura che vengono quindi incorporate nel documento. Quando si distribuisce il documento, Document Security può autenticare i destinatari che cercano di aprire il documento e autorizzare l&#39;accesso in base ai privilegi specificati nel criterio.
 
 Se l&#39;utilizzo offline è abilitato, i destinatari possono anche utilizzare i documenti protetti tramite criterio offline (senza una connessione Internet o di rete attiva) per il periodo di tempo specificato nel criterio.
 
@@ -181,7 +187,7 @@ I passaggi nel diagramma sono i seguenti:
 
 1. L&#39;utente del documento apre il documento in un&#39;applicazione client supportata e si autentica con il server. L&#39;identificatore del documento viene inviato al server di protezione del documento.
 1. Document Security autentica gli utenti, verifica il criterio di autorizzazione e crea un voucher. Il voucher (che contiene la chiave del documento e le autorizzazioni) viene restituito all&#39;applicazione client.
-1. Il documento viene decrittografato con la chiave del documento e la chiave del documento viene eliminata. Il documento può essere utilizzato in base alle impostazioni di riservatezza del criterio. Tali attività vengono eseguite nell&#39;applicazione client supportata.
+1. Il documento viene decrittografato con la chiave del documento e la chiave del documento viene eliminata. Il documento può quindi essere utilizzato in base alle impostazioni di riservatezza del criterio. Tali attività vengono eseguite nell&#39;applicazione client supportata.
 
 È possibile continuare a utilizzare un documento alle seguenti condizioni:
 
@@ -198,7 +204,7 @@ Se si salva una copia di un documento protetto tramite criterio utilizzando il c
 
 *I set* di criteri vengono utilizzati per raggruppare un insieme di criteri con uno scopo aziendale comune. Questi set di criteri vengono quindi resi disponibili a un sottoinsieme di utenti nel sistema.
 
-A ciascun set di criteri possono essere associati uno o più coordinatori di set di criteri. Il coordinatore del set di criteri è un amministratore o un utente con autorizzazioni aggiuntive. Il coordinatore *del set di* criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un particolare set di criteri.
+A ciascun set di criteri possono essere associati uno o più coordinatori di set di criteri. Il coordinatore del set di criteri è un amministratore o un utente che dispone di autorizzazioni aggiuntive. Il coordinatore *del set di* criteri è in genere uno specialista dell&#39;organizzazione che può creare al meglio i criteri in un particolare set di criteri.
 
 I coordinatori dei set di criteri possono eseguire le seguenti attività:
 
