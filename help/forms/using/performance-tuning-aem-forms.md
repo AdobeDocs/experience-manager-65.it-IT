@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -55,7 +55,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Nota**: Le impostazioni consigliate sono per Windows 2008 R2 8 Core e per Oracle HotSpot 1.7 (64 bit) JDK e devono essere ridimensionate in base alla configurazione del sistema.
+>[!NOTE]
+>
+>Le impostazioni consigliate sono per Windows 2008 R2 8 Core e per Oracle HotSpot 1.7 (64 bit) JDK e devono essere ridimensionate in base alla configurazione del sistema.
 
 ## Utilizzo di un server Web {#using-a-web-server}
 
@@ -63,7 +65,9 @@ Il rendering dei moduli adattivi e dei moduli HTML5 è in formato HTML5. L&#39;o
 
 Ad esempio, per abilitare la compressione su Apache Web Server 2.0 a 32 bit con JBoss, eseguire le operazioni seguenti:
 
-***Nota **: Le seguenti istruzioni non si applicano ad alcun server diverso da Apache Web Server 2.0 a 32 bit. Per i passaggi specifici per qualsiasi altro server, consulta la documentazione di prodotto corrispondente.*
+>[!NOTE]
+>
+>Le seguenti istruzioni non si applicano ad alcun server diverso da Apache Web Server 2.0 a 32 bit. Per i passaggi specifici per qualsiasi altro server, consulta la documentazione di prodotto corrispondente.
 
 I passaggi seguenti dimostrano le modifiche necessarie per abilitare la compressione con Apache Web Server
 
