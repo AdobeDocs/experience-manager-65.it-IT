@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -21,14 +21,14 @@ Il connettore per IBM FileNet consente la comunicazione tra i moduli AEM e IBM F
 
 >[!NOTE]
 >
->Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. In questa versione, le risorse vengono memorizzate nell&#39;archivio nativo dei moduli di AEM e i servizi dei fornitori di repository non sono più disponibili. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene effettuata quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, consultate la guida all&#39;aggiornamento moduli AEM per il server delle applicazioni.
+>Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. In questa versione, le risorse vengono memorizzate nell&#39;archivio nativo dei moduli di AEM e i servizi dei fornitori di repository non sono più disponibili. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene effettuata quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, consulta la guida all’aggiornamento moduli AEM per il server delle applicazioni.
 
 ## Configurare la connessione al motore di contenuto {#configure-the-connection-to-the-content-engine}
 
 IBM FileNet P8 Content Engine offre servizi software per la gestione dei contenuti aziendali e degli oggetti aziendali definiti dal cliente nei repository dei contenuti FileNet.
 
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per IBM FileNet.
-1. Nella casella URL motore di contenuto, immettete l’URL di connessione completo. Esempio:
+1. Nella casella URL motore di contenuto, immettete l’URL di connessione completo. Ad esempio:
 
    Se si utilizza FileNet Content Engine 4.x con trasporto CEWS, immettere:
 
@@ -40,8 +40,8 @@ IBM FileNet P8 Content Engine offre servizi software per la gestione dei contenu
 
 1. Nell&#39;elenco Schema protezione credenziali, selezionare uno dei seguenti livelli di protezione:
 
-   * **** Cancella: Invia le credenziali in rete in una modalità non protetta
-   * **** Simmetrico: Invia credenziali crittografate in rete
+   * **Cancella:** Invia le credenziali in tutta la rete in una modalità non protetta
+   * **Simmetrico:** Invia credenziali crittografate in rete
 
 1. Nella casella Posizione file di cifratura, immettere il percorso del file di cifratura:
 
@@ -58,7 +58,7 @@ Il connettore per IBM FileNet contiene il connettore Process Engine per il servi
 
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per IBM FileNet.
 1. Per abilitare l&#39;uso del connettore del motore di processo per il servizio FileNet IBM, selezionare Usa il servizio del connettore del motore di processo.
-1. Nella casella Router processo/Punto di connessione, immettere il nome host o l&#39;indirizzo IP e il numero di porta seguiti dal nome del router di processo. Esempio:
+1. Nella casella Router processo/Punto di connessione, immettere il nome host o l&#39;indirizzo IP e il numero di porta seguiti dal nome del router di processo. Ad esempio:
 
    `rmi://ProcessEngineHostNameorIP:port/Name`
 
@@ -67,7 +67,7 @@ Il connettore per IBM FileNet contiene il connettore Process Engine per il servi
 
 ## Convalida delle impostazioni del servizio {#validation-of-service-settings}
 
-Se immettete un nome utente o una password non corretti durante la configurazione della connessione a Content Engine o alle impostazioni del motore di elaborazione, otterrete i seguenti risultati, a seconda che i servizi siano attualmente in esecuzione:
+Se immettete un nome utente o una password non corretti durante la configurazione della connessione a Content Engine o alle impostazioni del motore di elaborazione, otterrete i seguenti risultati, a seconda che i servizi siano in esecuzione o meno:
 
 * Se il servizio Repository Provider per IBM FileNet e il connettore Content Repository per il servizio IBM FileNet sono entrambi interrotti, al momento del salvataggio delle informazioni sulla configurazione del servizio non viene visualizzato alcun errore. Tuttavia, al successivo avvio del servizio, verrà generata un&#39;eccezione e il servizio non verrà avviato.
 * Se si avvia il servizio Repository Provider per IBM FileNet o Content Repository Connector per il servizio IBM FileNet, quando si salvano le informazioni sulla configurazione del servizio, il servizio tenta di convalidare immediatamente le informazioni delle credenziali. In questo caso, si verifica un errore e le informazioni di configurazione non vengono salvate.
@@ -78,14 +78,15 @@ Se immettete un nome utente o una password non corretti durante la configurazion
 
 Sono disponibili le seguenti opzioni:
 
-**** Nome provider repository corrente: Nome del provider di servizi repository corrente
+**Nome provider repository corrente:** Nome del provider di servizi repository corrente
 
-**** Provider repository IBM FileNet: Rende il provider del repository FileNet il provider del repository.  Questa opzione è stata rimossa.
+**Provider repository IBM FileNet:** Rende il provider del repository FileNet il provider del repository. Questa opzione è stata rimossa.
 
-**** provider repository: Imposta il provider del repository nativo come fornitore del repository
+**provider repository:** Imposta il provider del repository nativo come fornitore del repository
 
-***Nota **: Per selezionare un provider di servizi repository diverso da quelli elencati, configurare RepositoryService in Applicazioni e servizi.<!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>Per selezionare un provider di servizi di repository diverso da quelli elencati, configurare RepositoryService in Applicazioni e servizi. <!-- Fix broken link(See Managing Services) -->
 
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per IBM FileNet.
 1. Nell&#39;area Informazioni su Repository Service Provider, selezionare il provider di servizi repository alternativo, quindi fare clic su Salva.
-
