@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -110,19 +110,19 @@ La tabella seguente descrive la manipolazione dei file di cinque file di esempio
 
 Il testo seguente descrive la manipolazione dei file per ogni volta:
 
-**** T1: I quattro file di esempio vengono inseriti nella cartella di input.
+**T1:** I quattro file di esempio vengono inseriti nella cartella di input.
 
-**** T2: L’operazione del servizio sposta file1 nella cartella dell’area di visualizzazione per la manipolazione.
+**T2:** L’operazione del servizio sposta file1 nella cartella dell’area di visualizzazione per la manipolazione.
 
-**** T3: L’operazione del servizio sposta file2 nella cartella dell’area di visualizzazione per la manipolazione. Posiziona i risultati di file1 nella cartella di output e sposta file1 nella cartella preserve.
+**T3:** L&#39;operazione del servizio sposta file2 nella cartella dell&#39;area di visualizzazione per la manipolazione. Posiziona i risultati di file1 nella cartella di output e sposta file1 nella cartella preserve.
 
-**** T4: L’operazione del servizio colloca file3 nella cartella dell’area di visualizzazione per la manipolazione. Posiziona i risultati di file2 nella cartella di output e inserisce file2 nella cartella preserve.
+**T4:** L’operazione del servizio colloca file3 nella cartella dell’area di visualizzazione per la manipolazione. Posiziona i risultati di file2 nella cartella di output e inserisce file2 nella cartella preserve.
 
-**** T5: L’operazione del servizio colloca il file4 nella cartella dell’area di visualizzazione per la manipolazione. La manipolazione di file3 non riesce e l&#39;operazione del servizio lo inserisce nella cartella degli errori.
+**T5:** L’operazione del servizio colloca il file4 nella cartella dell’area di visualizzazione per la manipolazione. La manipolazione di file3 non riesce e l&#39;operazione del servizio lo inserisce nella cartella degli errori.
 
-**** T6: L&#39;operazione del servizio colloca file5 nella cartella di input. Posiziona i risultati di file4 nella cartella di output, inserisce file4 nella cartella preserve.
+**T6:** L&#39;operazione del servizio colloca file5 nella cartella di input. Posiziona i risultati di file4 nella cartella di output, inserisce file4 nella cartella preserve.
 
-**** T7: L’operazione del servizio colloca il file5 nella cartella dell’area di visualizzazione per la manipolazione.
+**T7:** L’operazione del servizio colloca il file5 nella cartella dell’area di visualizzazione per la manipolazione.
 
 ## Backup delle cartelle esaminate {#backing-up-watched-folders}
 
@@ -136,15 +136,15 @@ Ad esempio, se un backup viene eseguito al momento T1 e il server non riesce a T
 
 Se è stato eseguito un backup più recente, è possibile ripristinare i file. Durante il ripristino dei file, individuare la cartella gerarchica delle cartelle esaminate in cui si trova il file corrente:
 
-**** Fase: I file in questa cartella vengono elaborati nuovamente dopo il ripristino della cartella controllata.
+**Fase:** I file in questa cartella vengono elaborati nuovamente dopo il ripristino della cartella controllata.
 
-**** Ingresso: I file in questa cartella vengono elaborati nuovamente dopo il ripristino della cartella controllata.
+**Ingresso:** I file in questa cartella vengono elaborati nuovamente dopo il ripristino della cartella controllata.
 
-**** Risultato: I file in questa cartella non vengono elaborati.
+**Risultato:** I file in questa cartella non vengono elaborati.
 
-**** Output: I file in questa cartella non vengono elaborati.
+**Output:** I file in questa cartella non vengono elaborati.
 
-**** Mantieni: I file in questa cartella non vengono elaborati.
+**Mantieni:** I file in questa cartella non vengono elaborati.
 
 ## Strategie per ridurre al minimo la perdita di dati {#strategies-to-minimize-data-loss}
 
@@ -158,14 +158,16 @@ Le seguenti strategie possono ridurre al minimo la perdita di dati delle cartell
 * Se il backup delle cartelle controllato disponibile è precedente al tempo necessario per l’elaborazione del processo, è necessario consentire al sistema di creare una nuova cartella esaminata e di inserire automaticamente i file nella cartella di input.
 * Se l&#39;ultimo backup disponibile non è abbastanza recente, il tempo di backup è inferiore al tempo necessario per l&#39;elaborazione dei file e la cartella controllata viene ripristinata, il file è stato manipolato in uno dei seguenti passaggi:
 
-   * **** Fase 1: Nella cartella di input
-   * **** Fase 2: Copiato nella cartella dell’area di visualizzazione ma il processo non viene ancora richiamato
-   * **** Fase 3: Copiato nella cartella dell’area di visualizzazione e il processo viene richiamato
-   * **** Fase 4: Manipolazione in corso
-   * **** Fase 5: Risultati restituiti
+   * **Fase 1:** Nella cartella di input
+   * **Fase 2:** Copiato nella cartella dell’area di visualizzazione ma il processo non viene ancora richiamato
+   * **Fase 3:** Copiato nella cartella dell’area di visualizzazione e il processo viene richiamato
+   * **Fase 4:** Manipolazione in corso
+   * **Fase 5:** Risultati restituiti
    Se i file si trovano nella fase 1, verranno modificati. Se i file si trovano nella fase 2 o 3, inseriteli nuovamente nella cartella di input per la manipolazione.
 
-   **Nota**: Se la manipolazione di un file si verifica più volte, la perdita di dati sarà evitata ma i risultati potrebbero essere duplicati. *
+   >[!NOTE]
+   >
+   >Se la manipolazione di un file si verifica più volte, la perdita di dati sarà evitata ma i risultati potrebbero essere duplicati.
 
 ## Conclusione {#conclusion}
 
