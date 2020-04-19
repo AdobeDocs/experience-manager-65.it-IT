@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -76,7 +76,7 @@ Il modulo Cartella esaminata contiene i seguenti servizi:
 
 * Servizio cartelle esaminate
 * provider.file_scan_service
-* provider.file_write_result_service
+* provider.file_write_results_service
 
 Oltre ai servizi elencati in precedenza, Cartella esaminata dipende anche da altri servizi, incluso il servizio Pianificazione per la pianificazione dei processi e il servizio Gestione processi per supportare la chiamata asincrona dei servizi di destinazione.
 
@@ -95,7 +95,7 @@ Il processo di richiamo di un servizio utilizzando le cartelle esaminate è il s
 1. Provider.file_scan_service esegue le seguenti attività:
 
 
-   * Esegue l&#39;analisi della cartella di input per i file o le cartelle che corrispondono al pattern di file include ed esclude i file o le cartelle per il pattern di file escluso specificato. I file o le cartelle meno recenti vengono estratti per primi. Vengono inoltre raccolti i file e le cartelle meno recenti del tempo di attesa. In una sola scansione, il numero di file o cartelle elaborati dipende dalla dimensione del batch. Per informazioni sui pattern di file, vedere [Informazioni sui pattern](configuring-watched-folder-endpoints.md#about-file-patterns)di file. Per informazioni sull&#39;impostazione della dimensione batch, vedere Impostazioni del servizio [Cartella esaminata](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+   * Esegue l&#39;analisi della cartella di input per i file o le cartelle che corrispondono al pattern di file include ed esclude i file o le cartelle per il pattern di file escluso specificato. I file o le cartelle meno recenti vengono estratti per primi. Vengono inoltre raccolti i file e le cartelle meno recenti del tempo di attesa. In una sola scansione, il numero di file o cartelle elaborati dipende dalla dimensione del batch. Per informazioni sui pattern di file, vedere [Informazioni sui pattern](configuring-watched-folder-endpoints.md#about-file-patterns)di file. Per informazioni sull’impostazione della dimensione batch, vedere Impostazioni del servizio [Cartella esaminata](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
    * Raccoglie i file o le cartelle per l’elaborazione. Se i file o le cartelle non sono completamente scaricati, vengono raccolti nella scansione successiva. Per essere certi che le cartelle siano completamente scaricate, gli amministratori devono creare una cartella con un nome utilizzando il pattern di file di esclusione. Dopo che la cartella ha tutti i file, deve essere rinominata nel pattern specificato nel pattern di file include. Questo passaggio garantisce che la cartella contenga tutti i file necessari per richiamare il servizio. Per ulteriori informazioni su come garantire il download completo delle cartelle, consultate [Suggerimenti e trucchi per le cartelle](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders)esaminate.
    * Sposta i file o le cartelle nella cartella dell’area di visualizzazione dopo averli selezionati per l’elaborazione.
    * Converte i file o le cartelle nella cartella dell’area di visualizzazione in un input appropriato in base alle mappature dei parametri di input dell’endpoint. Per esempi di mappature dei parametri di input, consultate [Suggerimenti e trucchi per le cartelle](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders)esaminate.
@@ -201,7 +201,9 @@ Ad esempio, se il numero è alle 20 del 17 luglio 2009 e specificate `C:/Test/WF
 
 Se il percorso non è assoluto ma relativo, la cartella verrà creata all’interno della cartella esaminata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella esaminata. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern](configuring-watched-folder-endpoints.md#about-file-patterns)di file.
 
-***Nota **: Più piccole sono le dimensioni delle cartelle dei risultati, migliori saranno le prestazioni delle cartelle esaminate. Ad esempio, se il carico stimato per la cartella esaminata è di 1000 file all’ora, provate a creare un pattern come`result/%Y%M%D%H`in modo da creare una nuova sottocartella ogni ora. Se il carico è minore (ad esempio, 1000 file al giorno), potete utilizzare un pattern come`result/%Y%M%D`.*
+>[!NOTE]
+>
+>Più piccole sono le dimensioni delle cartelle dei risultati, migliori saranno le prestazioni delle cartelle esaminate. Ad esempio, se il carico stimato per la cartella esaminata è di 1000 file all’ora, provate a creare un pattern come `result/%Y%M%D%H` in modo da creare una nuova sottocartella ogni ora. Se il carico è minore (ad esempio, 1000 file al giorno), potete utilizzare un pattern come `result/%Y%M%D`.
 
 **Mantieni cartella:** Posizione in cui vengono memorizzati i file dopo l&#39;esito positivo della scansione e della registrazione. Il percorso può essere assoluto, relativo o nullo. È possibile utilizzare i pattern di file, come descritto per Cartella risultati. Il valore predefinito è preserve/%Y/%M/%D/.
 
@@ -231,7 +233,9 @@ Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati
 
 L’output delle cartelle esaminate può essere un singolo documento, un elenco di documenti o una mappa di documenti. Questi documenti di output vengono quindi salvati nella cartella dei risultati, utilizzando il pattern specificato in Mapping parametri di output.
 
-**Nota**: La *specifica di nomi che generano nomi di file di output univoci migliora le prestazioni. Ad esempio, si consideri il caso in cui il servizio restituisca un documento di output e la mappatura dei parametri di output lo mappa a`%F.%E`(il nome del file e l&#39;estensione del file di input). In questo caso, se gli utenti rilasciano file con lo stesso nome ogni minuto e la cartella dei risultati è configurata per`result/%Y/%M/%D`e l’impostazione Sovrascrivi nome file duplicato è disattivata, Cartella esaminata tenterà di risolvere i nomi di file duplicati. Il processo di risoluzione dei nomi di file duplicati può influire sulle prestazioni. In questa situazione, modificando il mapping dei parametri di output in modo`%F_%h_%m_%s_%l`da aggiungere ore, minuti, secondi e millisecondi al nome, oppure assicurando che i file rilasciati abbiano nomi univoci possano migliorare le prestazioni.*
+>[!NOTE]
+>
+>La specifica di nomi che generano nomi di file di output univoci migliora le prestazioni. Ad esempio, si consideri il caso in cui il servizio restituisca un documento di output e la mappatura dei parametri di output lo mappa a `%F.%E` (il nome del file e l&#39;estensione del file di input). In questo caso, se gli utenti rilasciano file con lo stesso nome ogni minuto e la cartella dei risultati è configurata per `result/%Y/%M/%D`e l’impostazione Sovrascrivi nome file duplicato è disattivata, Cartella esaminata tenterà di risolvere i nomi di file duplicati. Il processo di risoluzione dei nomi di file duplicati può influire sulle prestazioni. In questa situazione, modificando il mapping dei parametri di output in modo `%F_%h_%m_%s_%l` da aggiungere ore, minuti, secondi e millisecondi al nome, oppure assicurando che i file rilasciati abbiano nomi univoci possano migliorare le prestazioni.
 
 ## Informazioni sui pattern di file {#about-file-patterns}
 
