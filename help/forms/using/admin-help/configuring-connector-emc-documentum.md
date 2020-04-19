@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -23,7 +23,7 @@ La configurazione del connettore per EMC Documentum comporta la configurazione d
 
 >[!NOTE]
 >
->Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. Nella versione corrente, le risorse sono memorizzate nell&#39;archivio nativo dei moduli AEM e i servizi Repository Provider sono stati ritirati. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene effettuata quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, consultate la guida all&#39;aggiornamento moduli AEM per il server delle applicazioni.
+>Nelle versioni precedenti, le risorse potevano essere memorizzate in un repository ECM. Nella versione corrente, le risorse sono memorizzate nell&#39;archivio nativo dei moduli AEM e i servizi dei fornitori di repository non sono più disponibili. La migrazione delle risorse da un archivio ECM all&#39;archivio dei moduli AEM viene effettuata quando si esegue un aggiornamento ai moduli AEM. Per ulteriori informazioni, consulta la guida all’aggiornamento moduli AEM per il server delle applicazioni.
 
 ## Configurazione della connessione del server {#configuring-the-server-connection}
 
@@ -43,7 +43,7 @@ In questo argomento vengono descritte le attività relative al connettore per EM
 
 ### Configurare le credenziali dell&#39;entità {#configure-principal-credentials}
 
-Quando configurate le credenziali dell&#39;entità, il nome del repository fornito dipende dal fatto che durante l&#39;accesso sia stato fornito un nome di repository esplicito.
+Quando si configurano le credenziali dell&#39;entità, il nome dell&#39;archivio fornito dipende dal fatto che durante l&#39;accesso sia stato fornito un nome di repository esplicito.
 
 Se immettete un nome utente o una password non corretta, otterrete i seguenti risultati, a seconda che il servizio sia attualmente in esecuzione:
 
@@ -59,13 +59,15 @@ Se immettete un nome utente o una password non corretta, otterrete i seguenti ri
 
 È possibile configurare il provider del servizio repository da utilizzare con Documentum. Le chiamate al servizio repository sono delegate al provider configurato. Sono disponibili le seguenti opzioni:
 
-**** Nome provider servizio repository corrente: Nome del provider di servizi repository corrente
+**Nome provider servizio repository corrente:** Nome del provider di servizi repository corrente
 
-**** Provider repository ECM Documentum: Rende il provider del repository Documentum il fornitore del repository. Questa opzione è stata rimossa
+**Provider repository ECM Documentum:** Rende il provider del repository Documentum il fornitore del repository. Questa opzione è stata rimossa
 
-**** provider repository: Imposta il provider del repository nativo come fornitore del repository
+**provider repository:** Imposta il provider del repository nativo come fornitore del repository
 
-***Nota **: Per selezionare un provider di servizi di repository diverso da quelli elencati, configurare RepositoryService in Applicazioni e servizi > Gestione dei servizi.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>Per selezionare un provider di servizi di repository diverso da quelli elencati, configurare RepositoryService in Applicazioni e servizi > Gestione dei servizi. <!-- Fix broken link (See Managing Services) -->.
 
 1. Nella console di amministrazione, fare clic su Servizi > Connettore per EMC Documentum > Impostazioni di configurazione.
 1. Nell&#39;area Informazioni su Repository Service Provider, selezionare il provider di servizi repository alternativo.
@@ -73,7 +75,7 @@ Se immettete un nome utente o una password non corretta, otterrete i seguenti ri
 
 ## Configurazione delle credenziali dell&#39;archivio {#configuring-repository-credentials}
 
-Le informazioni sulle credenziali Documentum vengono utilizzate nel contesto del sistema dei moduli AEM. Le credenziali del repository sono specifiche per i repository specifici in Documentum. È possibile fornire le credenziali per qualsiasi numero di repository; tuttavia, potete specificare un solo set di credenziali per repository.
+Le informazioni sulle credenziali Documentum vengono utilizzate nel contesto del sistema dei moduli AEM. Le credenziali del repository sono specifiche per i repository specifici di Documentum. È possibile fornire le credenziali per qualsiasi numero di repository; tuttavia, potete specificare un solo set di credenziali per repository.
 
 ### Aggiungere una credenziale archivio {#add-a-repository-credential}
 
