@@ -3,7 +3,7 @@ title: Gestione delle risorse Adobe Stock in Risorse AEM
 description: Cercare, recuperare, ottenere licenze e gestire risorse Adobe Stock da AEM. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62e82b6da2a5f961acf8cbc30ad29b3c25b1ecef
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -26,11 +26,11 @@ Per consentire la comunicazione tra AEM e Adobe Stock, crea una configurazione I
 >
 >L’integrazione può essere eseguita solo dagli amministratori di AEM e di Admin Console per un’organizzazione, in quanto richiede privilegi di amministratore.
 
-### Creare una configurazione IMS {#create-an-ims-configuration}
+### Create an IMS configuration {#create-an-ims-configuration}
 
 1. Fai clic sul logo AEM. Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Configurazioni Adobe IMS]**. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Soluzione cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Riutilizzate un certificato esistente o selezionate **[!UICONTROL Crea nuovo certificato]**.
-1. Fate clic su **[!UICONTROL Crea certificato]**. Una volta creata, scaricate la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**.
+1. Fai clic su **[!UICONTROL Crea certificato]**. Una volta creata, scaricate la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**.
 1. Inserisci i valori appropriati nei campi **[!UICONTROL Titolo]**, **[!UICONTROL Server autorizzazioni]**, **[!UICONTROL Chiave API]**, **[!UICONTROL Segreto client]** e **[!UICONTROL Payload]**. Per informazioni dettagliate su come recuperare questi valori dall’I/O di Adobe, consulta la sezione [JWT authentication quick start (Avvio rapido di authentication JWT)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 1. Aggiungi la chiave pubblica scaricata al tuo account del servizio Adobe I/O.
 
@@ -39,7 +39,7 @@ Per consentire la comunicazione tra AEM e Adobe Stock, crea una configurazione I
 1. Nell’interfaccia utente di AEM, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Fate clic su **[!UICONTROL Crea]** per creare una configurazione e associarla alla configurazione IMS esistente. Selezionate `PROD` come parametro di ambiente.
 1. Nel campo Percorso **[!UICONTROL risorse]** concesso in licenza, lasciare invariata la posizione. Non cambiare la posizione in cui memorizzare le risorse Adobe Stock.
-1. Completate la creazione aggiungendo tutte le proprietà richieste. Fate clic su **[!UICONTROL Salva e chiudi]**.
+1. Completate la creazione aggiungendo tutte le proprietà richieste. Click **[!UICONTROL Save &amp; Close]**.
 1. Aggiungete utenti o gruppi AEM che possono ottenere la licenza per le risorse.
 
 >[!NOTE]
@@ -62,7 +62,7 @@ Una volta ottenuta la licenza di una risorsa Adobe Stock in AEM, questa può ess
 
 Gli utenti AEM possono cercare risorse sia in AEM che in Adobe Stock. Quando il percorso di ricerca non è limitato ad Adobe Stock, vengono visualizzati i risultati di ricerca di AEM e Adobe Stock.
 
-* Per cercare risorse Adobe Stock, fai clic su **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cerca in Adobe Stock]**.
+* Per cercare le risorse Adobe Stock, fai clic su **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cerca in Adobe Stock]**.
 
 * Per cercare risorse in Adobe Stock e AEM Assets, fai clic sull’icona di ricerca ![search_icon](assets/search_icon.png).
 
@@ -98,7 +98,7 @@ Gli utenti possono concedere in licenza le risorse Adobe Stock utilizzando la qu
 
 Gli utenti possono accedere ai metadati e visualizzarne l’anteprima, comprese le proprietà dei metadati Adobe Stock per le risorse salvate in AEM, e aggiungere riferimenti **[!UICONTROL di]** licenza per una risorsa. Tuttavia, gli aggiornamenti al riferimento della licenza non vengono sincronizzati tra il sito Web AEM e Adobe Stock.
 
-Gli utenti possono visualizzare le proprietà per risorse con licenza e senza licenza.
+Gli utenti possono visualizzare le proprietà delle risorse con licenza e senza licenza.
 
 ![Visualizzare e accedere ai metadati e ai riferimenti di licenza delle risorse salvate](assets/metadata_properties.jpg)
 
@@ -114,14 +114,13 @@ Quando si concede la licenza a un’immagine, gli utenti non possono verificare 
 
 È possibile che in AEM venga visualizzato un tipo di licenza non corretto per una risorsa. Gli utenti possono accedere al sito Web di Adobe Stock per vedere il tipo di licenza.
 
-### Campi e metadati di riferimento non sincronizzati
+### I campi e i metadati di riferimento non sono sincronizzati
 
 Quando un utente aggiorna un campo di riferimento della licenza, le informazioni di riferimento della licenza vengono aggiornate in AEM ma non nel sito Web di Adobe Stock. Analogamente, se l’utente aggiorna i campi di riferimento nel sito Web di Adobe Stock, gli aggiornamenti non vengono sincronizzati in AEM.
 
-## Related resources {#related-resources}
+>[!MORELIKETHIS]
+>
+>* [Esercitazione video sull’utilizzo delle risorse Adobe Stock con Risorse AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Guida al piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Domande frequenti su Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
-[Esercitazione video sull’utilizzo delle risorse Adobe Stock con Risorse AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
-
-[Guida al piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
-
-[Domande frequenti su Adobe Stock](https://helpx.adobe.com/stock/faq.html)
