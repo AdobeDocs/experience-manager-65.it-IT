@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -84,7 +84,8 @@ Puoi configurare il profilo utente AEM tramite la configurazione del connettore 
 
 ## Configurare la cartella per le configurazioni del servizio cloud {#cloud-folder}
 
-**Nota**: La configurazione della cartella dei servizi cloud è necessaria per configurare i servizi cloud per i servizi RESTful, SOAP e OData.
+>[!NOTE]
+La configurazione della cartella dei servizi cloud è necessaria per configurare i servizi cloud per i servizi RESTful, SOAP e OData.
 
 Tutte le configurazioni del servizio cloud in AEM sono consolidate nella `/conf` cartella dell’archivio AEM. Per impostazione predefinita, la `conf` cartella contiene la `global` cartella in cui è possibile creare configurazioni del servizio cloud. Tuttavia, è necessario abilitarlo manualmente per le configurazioni cloud. Potete anche creare ulteriori cartelle in `conf` per creare e organizzare le configurazioni del servizio cloud.
 
