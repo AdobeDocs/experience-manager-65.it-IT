@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -78,7 +78,9 @@ Per impostazione predefinita, la modalità [](../../forms/using/get-xdp-pdf-docu
 
       * `/aem/forms` (AEM Forms su OSGi)
       * `/lc/forms` (AEM Forms su JEE)
-   **Nota:** Verifica che il server AEM Forms sia attivato ed in esecuzione. The HTML preview connects to the CRX server to *generate* a preview.
+   >[!NOTE]
+   >
+   >Verifica che il server AEM Forms sia attivato ed in esecuzione. The HTML preview connects to the CRX server to *generate* a preview.
 
    ![Opzioni di AEM Forms Designer ](assets/server_options.png)
 
