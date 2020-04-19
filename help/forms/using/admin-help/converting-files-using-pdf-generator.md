@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -32,13 +32,13 @@ Per convertire i file è possibile utilizzare le pagine Web di PDF Generator.
 
    * Se si utilizzano impostazioni personalizzate, selezionare un&#39;impostazione Adobe PDF, un&#39;impostazione di protezione e un&#39;impostazione del tipo di file e specificare un timeout.
 
-      Le impostazioni Adobe PDF sono applicabili solo alle conversioni da PS a PDF, da EPS a PDF, da PRN a PDF, da immagine a PDF con OCR attivato e da nativa a PDF. L’impostazione di timeout specifica il tempo massimo di completamento della conversione. Il valore predefinito è 270 secondi. Queste impostazioni non vengono utilizzate durante le conversioni da immagine a PDF e da OpenOffice a PDF.
+      Le impostazioni Adobe PDF sono applicabili solo alle conversioni da PS a PDF, da EPS a PDF, da PRN a PDF, da immagine a PDF con OCR attivato e da nativo a PDF. L’impostazione di timeout specifica il tempo massimo di completamento della conversione. Il valore predefinito è 270 secondi. Queste impostazioni non vengono utilizzate durante le conversioni da immagine a PDF e da OpenOffice a PDF.
 
    * Se caricate un file di impostazioni, digitatene il percorso e il nome nella casella oppure fate clic su Sfoglia per trovare e selezionare il file.
 
 1. (Facoltativo) In File metadati XMP, digitate il percorso e il nome del file XMP oppure fate clic su Sfoglia per trovare e selezionare il file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. Consultate [I file](converting-files-using-pdf-generator.md#about-xmp-files)XMP.
-1. Fate clic su Crea. Quando il file viene creato, viene visualizzato un collegamento. Se si verifica un errore durante la conversione, viene visualizzato un avviso. Se si sta creando un file Postscript, l&#39;avviso contiene anche un collegamento al file di registro.
-1. Fare clic sul collegamento per il file PDF. Il file si apre in Acrobat.
+1. Fai clic su Crea. Quando il file viene creato, viene visualizzato un collegamento. Se si verifica un errore durante la conversione, viene visualizzato un avviso. Se si sta creando un file Postscript, l&#39;avviso contiene anche un collegamento al file di registro.
+1. Fare clic sul collegamento per il file PDF. Il file viene aperto in Acrobat.
 
 ### Informazioni sui file XMP {#about-xmp-files}
 
@@ -72,19 +72,22 @@ Se il file ZIP contiene più di un file HTML al livello più basso della gerarch
 
    * In Carica file, digitate il percorso e il nome del file HTML o ZIP oppure fate clic su Sfoglia per individuarlo e selezionarlo.
    * Nella casella Specifica URL, digitate l’URL della pagina o del sito Web da convertire.
-
-      ***Nota **: Il file che si sta convertendo deve avere un’estensione di file .html, .htm o .zip.*
+   >[!NOTE]
+   >
+   >Il file che si sta convertendo deve avere un’estensione di file .html, .htm o .zip.
 
 1. Specificate le impostazioni di configurazione:
 
    * Per utilizzare le impostazioni personalizzate, selezionate Usa impostazioni personalizzate, specificate le impostazioni di protezione e tipo di file e specificate un valore di timeout. Il valore predefinito è 270 secondi.
-
-      **Nota**: Se il servizio Genera PDF è stato configurato per l&#39;utilizzo di Acrobat WebCapture, le impostazioni relative al tipo di file selezionate in questa pagina non influiscono sul PDF prodotto. Apportate le modifiche necessarie alla versione di Acrobat installata sul server.
+   >[!NOTE]
+   >
+   >Se il servizio Genera PDF è stato configurato per l&#39;utilizzo di Acrobat WebCapture, le impostazioni relative al tipo di file selezionate in questa pagina non influiscono sul PDF prodotto. Apportate le modifiche necessarie alla versione di Acrobat installata sul server.
 
    * Per usare un file di impostazioni esistente, selezionate Carica file impostazioni e fate clic su Sfoglia per passare al percorso del file.
 
+
 1. Per caricare un file XMP, fate clic su Sfoglia e passate al percorso del file. Un file XMP può essere utilizzato per includere informazioni di metadati standard. Consultate [I file](converting-files-using-pdf-generator.md#about-xmp-files)XMP.
-1. Fate clic su Crea. Quando il file viene creato, viene visualizzato un collegamento al file PDF.
+1. Fai clic su Crea. Quando il file viene creato, viene visualizzato un collegamento al file PDF.
 1. Fare clic sul collegamento per visualizzare il documento PDF in Acrobat.
 
 ## Esportare un file PDF in un altro formato (solo Windows) {#export-a-pdf-file-to-another-file-format-windows-only}
@@ -117,5 +120,5 @@ PDF Generator supporta la riduzione delle dimensioni dei file PDF.
    * Per utilizzare le impostazioni personalizzate, selezionate Usa impostazioni personalizzate, specificate le impostazioni del tipo di file e specificate un valore di timeout. Il valore predefinito è 270 secondi.
    * Per usare un file di impostazioni esistente, selezionate Carica file impostazioni e fate clic su Sfoglia per passare al percorso del file.
 
-1. Fate clic su Crea.
+1. Fai clic su Crea.
 
