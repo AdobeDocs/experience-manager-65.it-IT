@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86649ccfd494435038da06e72fbfed544a7aaf12
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -44,8 +44,11 @@ Il passaggio dell&#39;attività di assegnazione crea un&#39;attività e la asseg
 * **Usa modulo adattivo:** Specificare il metodo per individuare il modulo adattivo di input. Questa opzione è disponibile se si seleziona Modulo adattivo o Modulo adattivo di sola lettura dall&#39;elenco a discesa Tipo. È possibile utilizzare il modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto, oppure disponibile nel percorso di una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso.\
    È possibile associare più moduli adattivi a un flusso di lavoro. Di conseguenza, è possibile specificare un modulo adattivo in fase di esecuzione utilizzando i metodi di input disponibili.
 
-* **Usa comunicazione interattiva:** Specificare il metodo per individuare la comunicazione interattiva di input. È possibile utilizzare la comunicazione interattiva inviata al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso. Questa opzione è disponibile se si seleziona Interattivo comunicazione agente interfaccia utente o Documento canale Web comunicazione interattiva dall&#39;elenco a discesa Tipo.\
-   **Nota:** Per accedere all’interfaccia utente di Interactive Communications Agent nella inbox di AEM è necessario disporre di un’assegnazione per i gruppi agente-utenti e utenti del flusso di lavoro.
+* **Usa comunicazione interattiva:** Specificare il metodo per individuare la comunicazione interattiva di input. È possibile utilizzare la comunicazione interattiva inviata al flusso di lavoro, disponibile in un percorso assoluto o disponibile in un percorso in una variabile. È possibile utilizzare una variabile di tipo String per specificare il percorso. Questa opzione è disponibile se si seleziona Interattivo comunicazione agente interfaccia utente o Documento canale Web comunicazione interattiva dall&#39;elenco a discesa Tipo.
+
+>[!NOTE]
+>
+>Per accedere all’interfaccia utente di Interactive Communications Agent nella inbox di AEM è necessario disporre di un’assegnazione per i gruppi agente-utenti e utenti del flusso di lavoro.
 
 * **Modulo adattivo o percorso** di comunicazione interattiva: Specificate il percorso del modulo adattivo o della comunicazione interattiva. È possibile utilizzare il modulo adattivo o la comunicazione interattiva inviata al flusso di lavoro, disponibile in un percorso assoluto, oppure recuperare il modulo adattivo da un percorso memorizzato in una variabile di tipo dati stringa.
 * **Seleziona PDF di input utilizzando:** Specificare il percorso di un documento PDF non interattivo. Il campo è disponibile quando si sceglie un documento PDF non interattivo nel campo Tipo. È possibile selezionare il PDF di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto o utilizzando una variabile del tipo di dati Documento. Ad esempio, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Il percorso non esiste nell&#39;archivio crx. Un amministratore crea il percorso prima di utilizzarlo. Per utilizzare l&#39;opzione Percorso PDF è necessario abilitare l&#39;opzione Documento di registrazione o utilizzare moduli adattivi basati su modelli di modulo.
