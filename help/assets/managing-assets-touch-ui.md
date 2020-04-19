@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -169,7 +169,7 @@ Per annullare un processo di caricamento in corso, toccate **[!UICONTROL Annulla
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Annulla compressione file ZIP o Tar durante il caricamento |  |  |
 | Opzioni processo |  | Toccate o fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Toccate il pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
@@ -646,7 +646,7 @@ Nella vista a schede, l&#39;opzione **[!UICONTROL Seleziona]** viene visualizzat
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Quando sfogliate una cartella o una raccolta nell&#39;interfaccia utente Risorse in un browser, potete selezionare tutte le risorse visualizzate o caricate utilizzando l&#39;opzione [!UICONTROL Seleziona tutto] nell&#39;angolo superiore destro. Se non scorrete sotto, nella vista a schede vengono caricate solo 100 risorse e nella vista a elenco ne vengono caricate 200. Selezionate All (Tutte) per selezionare solo queste risorse.
+Quando sfogliate una cartella o una raccolta nell&#39;interfaccia utente Risorse in un browser, potete selezionare tutte le risorse visualizzate o caricate utilizzando l&#39;opzione [!UICONTROL Seleziona tutto] nell&#39;angolo superiore destro. Inizialmente, solo 100 risorse vengono caricate nella vista a schede e 200 vengono caricate nella vista a elenco. Durante lo scorrimento della pagina dei risultati di ricerca vengono caricate più risorse. L’opzione [!UICONTROL Seleziona tutto] seleziona solo le risorse caricate.
 
 Per ulteriori informazioni, consultate [Visualizzare e selezionare le risorse](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
