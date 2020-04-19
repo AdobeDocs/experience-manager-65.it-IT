@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -134,8 +134,9 @@ Consulta [Strategie di](https://articles.techrepublic.com.com/5100-1035_61-10436
 
 Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il database MySQL da eseguire in modalità di registro binario. Consultate Registrazione [binaria](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)MySQL. Uno strumento di backup a caldo per MySQL è disponibile anche dal software InnoBase. (Vedete Backup [a caldo](https://www.innodb.com/hot-backup/features.md)Innobase.)
 
-**Nota**: *La modalità di registrazione binaria predefinita per MySQL è &quot;Istruzione&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). L&#39;utilizzo della registrazione binaria in questa modalità predefinita causa la mancata riuscita di Content Services (obsoleto). Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;mista&quot;. Per abilitare la registrazione &quot;mista&quot;, aggiungete il seguente argomento al file my.ini:*
-`binlog_format=mixed log-bin=logname`
+>[!NOTE]
+>
+>La modalità di registrazione binaria predefinita per MySQL è &quot;Istruzione&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). L&#39;utilizzo della registrazione binaria in questa modalità predefinita causa la mancata riuscita di Content Services (obsoleto). Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;mista&quot;. Per abilitare la registrazione &quot;mista&quot;, aggiungete il seguente argomento al file my.ini file:*`binlog_format=mixed log-bin=logname`
 
 È possibile utilizzare l&#39;utility mysqldump per ottenere il backup completo del database. I backup completi sono necessari, ma non sempre sono convenienti. Producono file di backup di grandi dimensioni e richiedono tempo per la generazione. Per eseguire un backup incrementale, assicurarsi di avviare il server con l&#39;opzione - `log-bin` come descritto nella sezione precedente. Ogni volta che il server MySQL si riavvia, interrompe la scrittura nel registro binario corrente, ne crea uno nuovo e, da quel momento in poi, quello nuovo diventa quello corrente. È possibile forzare un interruttore manualmente con il `FLUSH LOGS SQL` comando. Dopo il primo backup completo, i successivi backup incrementali vengono eseguiti utilizzando l&#39;utility mysqladmin con il `flush-logs` comando, che crea il file di registro successivo.
 
