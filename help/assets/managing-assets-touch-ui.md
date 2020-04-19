@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -347,7 +347,11 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 1. Utilizzate i tasti freccia per spostarsi intorno all&#39;immagine ingrandita.
 
-Consultate anche [Anteprima delle risorse multimediali dinamiche.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Visualizzare in anteprima le risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
+>* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets)secondarie.
+
 
 ## Modificare le proprietà e i metadati {#editing-properties}
 
