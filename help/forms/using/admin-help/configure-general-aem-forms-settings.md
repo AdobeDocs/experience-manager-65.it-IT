@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -35,14 +35,18 @@ Per informazioni sull&#39;abilitazione della modalità di backup sicuro, consult
 
 **Posizione della directory** temporanea Il percorso della directory in cui i moduli AEM creeranno i file temporanei dei prodotti. Se il valore di questa impostazione è vuoto, per impostazione predefinita la posizione corrisponde alla directory temporanea del sistema. Verificate che la directory temporanea sia una cartella scrivibile.
 
-***nota **: Assicurarsi che la directory temporanea si trovi nel file system locale. I moduli AEM non supportano una directory temporanea in una posizione remota.*
+>[!NOTE]
+>
+>Assicurarsi che la directory temporanea si trovi nel file system locale. I moduli AEM non supportano una directory temporanea in una posizione remota.
 
 **Directory** radice dell&#39;archivio documenti globale La directory radice dell&#39;archivio documenti globale (GDS) è utilizzata per i seguenti scopi:
 
 * Memorizzazione di documenti di lunga durata. I documenti di lunga durata non hanno un tempo di scadenza e rimangono inalterati finché non vengono rimossi (ad esempio, i file PDF utilizzati in un processo di workflow). I documenti di lunga durata sono una parte fondamentale dello stato generale del sistema. Se alcuni o tutti questi documenti sono persi o danneggiati, il server dei moduli potrebbe diventare instabile. Pertanto, è importante che questa directory sia memorizzata su un dispositivo RAID.
 * Memorizzazione dei documenti temporanei necessari durante l&#39;elaborazione.
 
-   ***Nota **: È inoltre possibile abilitare l&#39;archiviazione documenti nel database moduli di AEM. Tuttavia, le prestazioni del sistema sono migliori quando si utilizza il GDS.*
+>[!NOTE]
+>
+>È inoltre possibile abilitare l&#39;archiviazione documenti nel database moduli di AEM. Tuttavia, le prestazioni del sistema sono migliori quando si utilizza il GDS.
 
 * Trasferimento di documenti tra nodi di un cluster. Se si esegue AEM Forms in un ambiente cluster, questa directory deve essere accessibile da tutti i nodi del cluster.
 * Ricezione dei parametri in arrivo dalle chiamate API remote.
@@ -53,9 +57,13 @@ Se non si specifica una directory radice GDS, per impostazione predefinita la di
 * `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
 * `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
-***Nota **: La modifica del valore dell&#39;impostazione della directory principale GDS deve essere effettuata con particolare attenzione. La directory GDS viene utilizzata per memorizzare sia i file longevi utilizzati in un processo che i componenti critici dei moduli AEM. La modifica della posizione della directory GDS è una modifica importante del sistema. La configurazione non corretta della posizione della directory GDS renderà i moduli AEM inattivi e potrebbe richiedere una reinstallazione completa dei moduli AEM. Se si specifica una nuova posizione per la directory GDS, è necessario arrestare il server applicazione e migrare i dati prima di riavviare il server. L&#39;amministratore di sistema deve spostare tutti i file dalla posizione precedente alla nuova posizione, ma mantenere la struttura di directory interna.*
+>[!NOTE]
+>
+>La modifica del valore dell&#39;impostazione della directory principale GDS deve essere effettuata con particolare attenzione. La directory GDS viene utilizzata per memorizzare sia i file longevi utilizzati in un processo che i componenti critici dei moduli AEM. La modifica della posizione della directory GDS è una modifica importante del sistema. La configurazione non corretta della posizione della directory GDS renderà i moduli AEM inattivi e potrebbe richiedere una reinstallazione completa dei moduli AEM. Se si specifica una nuova posizione per la directory GDS, è necessario arrestare il server applicazione e migrare i dati prima di riavviare il server. L&#39;amministratore di sistema deve spostare tutti i file dalla posizione precedente alla nuova posizione, ma mantenere la struttura di directory interna.
 
-***Nota **: Non specificare la stessa directory per la directory temp e la directory GDS.*
+>[!NOTE]
+>
+>Non specificare la stessa directory per la directory temp e la directory GDS.
 
 Per ulteriori informazioni sulla directory GDS, consultate [Preparazione all&#39;installazione di moduli AEM (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
@@ -73,29 +81,31 @@ Il file di configurazione di Data Services consente la personalizzazione delle i
 
 Questa impostazione è vuota per impostazione predefinita.
 
-**Dimensioni massime predefinite del documento in linea (byte)** Il numero massimo di byte conservati in memoria durante il passaggio di documenti tra vari componenti di moduli AEM. Utilizzare questa impostazione per ottimizzare le prestazioni. I documenti di dimensioni inferiori a questo numero vengono memorizzati e memorizzati nel database. I documenti che superano questo limite massimo vengono memorizzati sul disco rigido.
+**Dimensioni massime predefinite del documento in linea (byte)** Il numero massimo di byte conservati in memoria durante il passaggio di documenti tra vari componenti di moduli AEM. Use this setting for performance tuning. I documenti di dimensioni inferiori a questo numero vengono memorizzati e memorizzati nel database. Documents that exceed this maximum are stored on the hard drive.
 
 Questa impostazione è obbligatoria. Il valore predefinito è 65536 byte.
 
-**Timeout predefinito per lo smaltimento dei documenti (secondi)** Il tempo massimo, in secondi, durante il quale un documento passato tra i vari componenti di AEM viene considerato attivo. Una volta trascorso tale periodo, i file utilizzati per memorizzare il documento sono soggetti a rimozione. Utilizzare questa impostazione per controllare l&#39;utilizzo dello spazio su disco.
+**Default document disposal timeout (seconds)** The maximum amount of time, in seconds, during which a document being passed between various AEM forms components is considered active. Una volta trascorso tale periodo, i file utilizzati per memorizzare il documento sono soggetti a rimozione. Use this setting to control the usage of disk space.
 
 Questa impostazione è obbligatoria. Il valore predefinito è 600 secondi.
 
-**Intervallo di sweep documento (secondi)** Il tempo, in secondi, tra i tentativi di eliminazione di file non più necessari e utilizzati per trasmettere i dati del documento tra i servizi.
+**Document sweep interval (seconds)** The amount of time, in seconds, between attempts to delete files that are no longer needed and were used to pass document data between services.
 
 Questa impostazione è obbligatoria. Il valore predefinito è 30 secondi.
 
-**Abilita FIPS** Selezionare questa opzione per abilitare la modalità FIPS. Il Federal Information Processing Standard (FIPS) 140-2 è uno standard di crittografia definito dal governo degli Stati Uniti. In modalità FIPS, i moduli AEM limitano la protezione dei dati agli algoritmi approvati da FIPS 140-2 utilizzando il modulo di crittografia RSA BSAFE Crypto-C 2.1.
+**Enable FIPS** Select this option to enable FIPS mode. Federal Information Processing Standard (FIPS) 140-2 is a U.S. government-defined cryptology standard. When running in FIPS mode, AEM forms restricts data protection to FIPS 140-2 approved algorithms by using the RSA BSAFE Crypto-C 2.1 encryption module.
 
-La modalità FIPS non supporta gli algoritmi di cifratura utilizzati nelle versioni di Adobe Acrobat® precedenti alla 7.0. Se la modalità FIPS è abilitata e si utilizza il servizio di cifratura per cifrare il PDF utilizzando una password con un livello di compatibilità impostato su Acrobat 5, il tentativo di cifratura non riuscirà con un errore.
+FIPS mode does not support encryption algorithms that are used in Adobe Acrobat® versions earlier than 7.0. If FIPS mode is enabled and you use the Encryption service to encrypt the PDF by using a password with a compatibility level set to Acrobat 5, the encryption attempt will fail with an error.
 
-In generale, quando FIPS è abilitato, il servizio Assembler non applicherà la crittografia della password ad alcun documento. Se si tenta di eseguire questa operazione, viene generata un&#39;eccezione FIPSModeException che indica che la crittografia della password non è consentita in modalità FIPS. Inoltre, l&#39;elemento PDFsFromBookmarks della descrizione documento XML (DDX) non è supportato in modalità FIPS se il documento di base è crittografato con password.
+In general, when FIPS is enabled, the Assembler service will not apply password encryption to any document. If this is attempted, a FIPSModeException is thrown indicating that &quot;Password encryption is not permitted in FIPS mode.&quot; Inoltre, l&#39;elemento PDFsFromBookmarks della descrizione documento XML (DDX) non è supportato in modalità FIPS se il documento di base è crittografato con password.
 
-***Nota **: Il software per moduli AEM non convalida il codice per garantire la compatibilità FIPS. Fornisce una modalità di funzionamento FIPS in modo che gli algoritmi approvati FIPS siano utilizzati per i servizi di crittografia dalle librerie approvate FIPS (RSA).*
+>[!NOTE]
+>
+>Il software per moduli AEM non convalida il codice per garantire la compatibilità FIPS. Fornisce una modalità di funzionamento FIPS in modo che gli algoritmi approvati FIPS siano utilizzati per i servizi di crittografia dalle librerie approvate FIPS (RSA).
 
 **Abilita WSDL** Selezionate questa opzione per abilitare la generazione del linguaggio WSDL (Web Service Definition Language) per tutti i servizi che fanno parte di moduli AEM.
 
-Abilitate questa opzione negli ambienti di sviluppo, dove gli sviluppatori utilizzano la generazione WSDL per creare le applicazioni client. Potete scegliere di disabilitare la generazione WSDL in un ambiente di produzione per evitare di esporre i dettagli interni di un servizio.
+Enable this option in development environments, where developers use WSDL generation to build their client applications. Potete scegliere di disabilitare la generazione WSDL in un ambiente di produzione per evitare di esporre i dettagli interni di un servizio.
 
 **Abilita archiviazione documenti nel database** Selezionate questa opzione per memorizzare documenti di lunga durata nel database dei moduli AEM. L&#39;attivazione di questa opzione non elimina la necessità di una directory GDS. Tuttavia, scegliendo questa opzione è possibile semplificare i backup dei moduli AEM. Se si utilizza solo il GDS, un backup comporta l’implementazione del sistema di moduli AEM in modalità di backup e il completamento dei backup del database e del GDS. Se si seleziona l&#39;opzione del database, il backup prevede il completamento del backup del database per una nuova installazione o il completamento del backup del database e il backup una tantum del GDS per un aggiornamento. Potrebbe essere necessaria una gestione aggiuntiva del database per eliminare processi e dati rispetto a una configurazione solo GDS. (Vedere Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti.)
 
