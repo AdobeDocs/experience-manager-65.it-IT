@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -20,7 +20,9 @@ I moduli HTML5 eseguono il rendering dei moduli in formato HTML5. L&#39;output r
 
 Questo articolo descrive i passaggi necessari per abilitare la compressione per Apache Web Server 2.0 a 32 bit, con JBoss.
 
-*Nota: Le seguenti istruzioni non si applicano a server diversi da Apache Web Server 2.0 a 32 bit.*
+>[!NOTE]
+>
+>Le seguenti istruzioni non si applicano a server diversi da Apache Web Server 2.0 a 32 bit.
 
 Ottenete il software del server Web Apache applicabile al vostro sistema operativo:
 
