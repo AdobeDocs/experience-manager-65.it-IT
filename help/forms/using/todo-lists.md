@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -212,7 +212,12 @@ Potete completare un’attività in vari modi:
 
 * Utilizzo delle azioni disponibili in una qualsiasi delle schede
 * Uso delle azioni integrate nel modulo stesso
-* Dall&#39;elenco A, senza aprire la nota attività: Questa opzione è disponibile se `isMustOpenToComplete` il campo non è selezionato nel `Assign Task` passaggio di Workbench durante la progettazione di un processo.
+* Dall&#39;elenco A, senza aprire l&#39;attività
+
+>[!NOTE]
+>
+>Questa opzione è disponibile se `isMustOpenToComplete` il campo non è selezionato nel `Assign Task` passaggio di Workbench durante la progettazione di un processo.
+
 * Per e-mail, se ricevete notifiche e-mail
 
 Quando si completa un&#39;attività, a seconda dell&#39;attività potrebbe comparire una finestra di dialogo di conferma che riafferma l&#39;azione. Ad esempio, potrebbe essere visualizzata una finestra di dialogo che richiede di attestare la validità delle informazioni fornite.
@@ -270,7 +275,9 @@ Innanzitutto, impostate le preferenze dell&#39;area di lavoro Moduli AEM per ric
 
 I messaggi e-mail possono contenere un collegamento che apre l’attività nell’area di lavoro di AEM Forms, un allegato del modulo utilizzato per l’attività o azioni per completare l’attività tramite e-mail. Se un modulo è incluso nel messaggio e-mail, è possibile aprire il modulo e completare l&#39;attività se nel modulo sono incorporati i pulsanti per completare l&#39;attività. Se nel messaggio e-mail sono incluse delle azioni per completare l’attività, potete completare l’attività facendo clic sulle azioni contenute nel messaggio e-mail o rispondendo all’e-mail con l’azione digitata come prima riga nel corpo del messaggio e-mail.
 
-**Nota**: Per configurare l’area di lavoro in modo da utilizzare i modelli e-mail appropriati, consultate la guida per l’amministratore [AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>[!NOTE]
+>
+>Per configurare l’area di lavoro in modo da utilizzare i modelli e-mail appropriati, consultate la guida per l’amministratore [AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 Quando si completa un&#39;attività tramite e-mail, l&#39;attività viene rimossa dall&#39;elenco A nell&#39;area di lavoro Moduli AEM.
 
