@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -106,7 +106,7 @@ Sono inclusi anche i seguenti gruppi:
 
 ![Utente fittizio](/help/forms/using/assets/aya_tan_new-1.png)
 
-**Questa sezione**: Aya è un cittadino. Ha sentito da un&#39;amica che potrebbe essere idonea a ricevere un Servizio da un&#39;agenzia governativa. Aya naviga sul sito Web We.Gov dal suo cellulare per saperne di più sui servizi a cui è idonea.
+**Questa sezione**: Aya è un cittadino. Da un&#39;amica ha sentito che potrebbe essere idonea a ricevere un Servizio da un&#39;agenzia governativa. Aya naviga sul sito Web We.Gov dal suo cellulare per saperne di più sui servizi a cui è idonea.
 
 ### Aya User Story (Pre-screener di We.Gov) {#aya-user-story-we-gov-pre-screener}
 
@@ -116,7 +116,9 @@ Aya risponde ad alcune domande per confermare la sua idoneità compilando un bre
 
 1. Effettuare una selezione in ciascun campo a discesa.
 
-   1. Nota: Se l’utente guadagna più di $200.000/anno, non è idoneo.
+   >[!NOTE]
+   >
+   >Se l’utente guadagna più di $200.000/anno, non è idoneo.
 
 1. Fare clic su &quot;**Sono idoneo?**” pulsante.
 1. Fare clic sul pulsante &quot;**Applica ora**&quot; per proseguire.
