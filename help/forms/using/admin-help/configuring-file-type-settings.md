@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -115,7 +115,9 @@ Le seguenti opzioni determinano la modalità di conversione dei file immagine in
 
 **Try Fallback Converter:** PDF Generator può usare Java™ o Acrobat per convertire i file immagine in PDF. Quando questa opzione è selezionata e una conversione non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando il metodo alternativo. Se il metodo alternativo non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
 
-***Nota **: I file JPEG 2000 possono essere convertiti solo utilizzando Acrobat.*
+>[!NOTE]
+>
+>I file JPEG 2000 possono essere convertiti solo utilizzando Acrobat.
 
 **Usa OCR:** Specifica se applicare l&#39;OCR (riconoscimento ottico dei caratteri) al PDF. Il software OCR consente di cercare, correggere e copiare il testo nel PDF.
 
