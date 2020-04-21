@@ -1,13 +1,9 @@
 ---
-title: 'Configurare l’editor Rich Text per creare contenuto in AEM '
-description: Scoprite come configurare AEM Rich Text Editor per la creazione di contenuti in AEM.
-uuid: 4f87745e-586a-4cba-887b-391e37520ffc
+title: Configura l’editor Rich Text per creare contenuto in Adobe Experience Manager.
+description: Scopri come configurare l’editor Rich Text di Adobe Experience Manager per la creazione di contenuti in Adobe Experience Manager.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
-docset: aem65
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -16,19 +12,17 @@ source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 L’editor Rich Text (RTE) offre agli autori un’ampia gamma di funzionalità per la modifica del contenuto testuale. Le icone, le caselle di selezione, la barra degli strumenti e i menu sono disponibili per un’esperienza di modifica del testo WYSIWYG.
 
-L’editor Rich Text può essere configurato per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Per sapere come utilizzare le funzioni RTE per la creazione, consulta [Utilizzare l’editor Rich Text per la creazione](/help/sites-authoring/rich-text-editor.md).
+Per sapere come utilizzare le funzioni RTE per la creazione, consulta [Utilizzare l’editor Rich Text per la creazione](/help/sites-authoring/rich-text-editor.md). L’editor Rich Text può essere configurato per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Il flusso di lavoro seguente illustra un ordine consigliato per completare le attività di configurazione dell’editor Rich Text in Experience Manager.
 
-Il seguente flusso di lavoro illustra un ordine consigliato per completare le attività di configurazione dell’editor Rich Text.
-
-![Sequenza di passaggi per apprendere come configurare la metrica](assets/rte_workflow_v1.png)
+![Sequenza di passaggi per apprendere come configurare l’editor Rich Text](assets/rte_workflow_v1.png)
 
 *Figura: Sequenza di passaggi per apprendere come configurare l’editor Rich Text*
 
 ## Comprendere l’interfaccia touch e l’interfaccia classica {#understand-touch-enabled-ui-and-classic-ui}
 
-L’interfaccia touch è l’interfaccia utente standard di AEM. Adobe ha introdotto l&#39;interfaccia utente touch con [design](/help/sites-authoring/responsive-layout.md) reattivo per l&#39;ambiente di authoring. L’interfaccia utente touch è progettata per i dispositivi touch e desktop. L’interfaccia utente è molto diversa dall’interfaccia classica originale.
+L’interfaccia touch è l’interfaccia utente standard di Experience Manager. Adobe ha introdotto l’interfaccia touch con [design](/help/sites-authoring/responsive-layout.md) reattivo per l’ambiente di authoring. L’interfaccia touch è stata progettata per i dispositivi touch e desktop. L’interfaccia è molto diversa dall’interfaccia classica originale.
 
-![Barra degli strumenti Editor Rich Text nell’interfaccia touch](assets/chlimage_1-35.png)
+![Barra degli strumenti Editor Rich Text nell’interfaccia utente touch](assets/chlimage_1-35.png)
 
 *Figura: Barra degli strumenti Editor Rich Text nell’interfaccia touch*
 
@@ -39,14 +33,14 @@ L’interfaccia touch è l’interfaccia utente standard di AEM. Adobe ha introd
 >[!MORELIKETHIS]
 >
 >* [Consigli interfaccia utente](/help/sites-deploying/ui-recommendations.md)
->* Informazioni sulla rimozione dell’interfaccia classica, consultate Note sulla versione di [AEM 6.5](/help/release-notes/deprecated-removed-features.md)
+>* Informazioni sulla rimozione dell&#39;interfaccia classica, consulta Note sulla versione di [Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Per differenze tra le interfacce, consulta Interfaccia [touch e Interfaccia classica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Per informazioni dettagliate sull&#39;interfaccia touch, consultate [Concetti dell&#39;interfaccia utente di AEM Touch](/help/sites-developing/touch-ui-concepts.md)
+>* Per informazioni dettagliate sull&#39;interfaccia touch, consulta [Concetti dell&#39;interfaccia utente touch di Experience Manager](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Varie modalità di modifica {#editingmodes}
 
-Gli autori possono creare e modificare contenuti testuali in AEM utilizzando le diverse modalità di componenti. Le opzioni della barra degli strumenti per la creazione e formattazione di contenuti e l’esperienza utente dei componenti abilitati all’editor Rich Text in modalità di modifica diversa variano in base alle configurazioni dell’editor Rich Text.
+Gli autori possono creare e modificare il contenuto testuale in Experience Manager utilizzando le diverse modalità di componenti. Le opzioni della barra degli strumenti per la creazione e formattazione di contenuti e l’esperienza utente dei componenti abilitati all’editor Rich Text in modalità di modifica diversa variano in base alle configurazioni dell’editor Rich Text.
 
 | Modalità di modifica | Area di modifica | Funzioni consigliate da abilitare | Interfaccia touch | Interfaccia classica |
 |--- |--- |--- |--- |--- |
@@ -71,7 +65,7 @@ Nell’interfaccia classica, un doppio clic lento sul componente consente la mod
 
 ### Full screen editing {#full-screen-editing}
 
-I componenti AEM possono essere aperti a schermo intero, in modo da nascondere il contenuto della pagina e occupare lo schermo disponibile. Considerate la possibilità di modificare a schermo intero una versione dettagliata dell&#39;editing in linea in quanto offre il maggior numero di opzioni di modifica. È possibile aprirlo facendo clic su ![rte_fullscreen](assets/rte_fullscreen.png), dalla barra degli strumenti compatta, quando si utilizza la modalità di modifica in linea.
+I componenti di Experience Manager possono essere aperti a schermo intero per nascondere il contenuto della pagina e occupare la schermata disponibile. Considerate la possibilità di modificare a schermo intero una versione dettagliata dell&#39;editing in linea in quanto offre il maggior numero di opzioni di modifica. È possibile aprirlo facendo clic su ![rte_fullscreen](assets/rte_fullscreen.png), dalla barra degli strumenti compatta, quando si utilizza la modalità di modifica in linea.
 
 Nella finestra di dialogo a schermo intero, insieme a una barra degli strumenti dettagliata dell’editor Rich Text, sono disponibili anche le opzioni e i componenti disponibili in una finestra di dialogo. È applicabile solo per una finestra di dialogo che contiene l’editor Rich Text insieme ad altri componenti.
 
@@ -109,7 +103,6 @@ Nella tabella seguente sono elencati i plug-in correnti, che mostrano:
 * ID plug-in con un collegamento alla documentazione API. L&#39;ID viene utilizzato come nome del nodo quando si [attiva un plug-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Valori consentiti per la `features` proprietà.
 * Una descrizione delle funzionalità fornite dal plug-in.
-
 
 | ID plug-in | funzionalità | Descrizione |
 |--- |--- |--- |
