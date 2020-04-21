@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
 
 ---
 
@@ -26,8 +26,7 @@ L’esempio, discusso in questo documento, è un’implementazione di riferiment
 >
 >* Gli esempi e le configurazioni illustrati in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
 >* Accertatevi di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo delle release [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
->
-
+> * Il pacchetto di esempio funziona solo con le azioni di invio Moduli adattivi.
 
 
 ## Configurare e configurare l’esempio {#set-up-and-configure-the-sample}
