@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7aba1f3b492a07fe502f95535a94c8054a044eb5
+source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
 
 ---
 
@@ -23,7 +23,7 @@ Ulteriori differenze chiave tra Dynamic Media-Hybrid e Dynamic Media-Scene7 sono
 * Creazione e memorizzazione di rappresentazioni di immagini.
 * Configurazione e credenziali cloud (provisioning).
 
-Quando si passa da Dynamic Media-Hybrid a Dynamic Media-Scene7 sono disponibili due opzioni. La prima opzione consiste nel fornire semplicemente una nuova istanza di Dynamic Media-Scene7 su AEM. La seconda opzione consiste nel migrare l’istanza esistente di elemento multimediale dinamico ibrido in elemento multimediale dinamico-Scene7. Questa opzione mostra il modulo di tabella riportato di seguito, sotto i passaggi e le considerazioni da effettuare durante lo spostamento.
+Quando passate da Dynamic Media-Hybrid a Dynamic Media-Scene7, sono disponibili due opzioni. La prima opzione consiste nel fornire semplicemente una nuova istanza di Dynamic Media-Scene7 su AEM. La seconda opzione consiste nel migrare l’istanza esistente di elemento multimediale dinamico ibrido in elemento multimediale dinamico-Scene7. Questa opzione mostra il modulo di tabella riportato di seguito, sotto i passaggi e le considerazioni da effettuare durante lo spostamento.
 
 >[!IMPORTANT]
 >
