@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di AEM 6.5 Assets
 translation-type: tm+mt
-source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
+source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
 
 ---
 
@@ -34,6 +34,7 @@ source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
    + [Configurazione di contenuti multimediali dinamici - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
    + [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
+   + [Migrazione da Dynamic Media - Modalità ibrida a Dynamic Media - Modalità S7](migrate-from-hybrid-to-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestione dei predefiniti per i visualizzatori Dynamic Media](managing-viewer-presets.md)
@@ -123,8 +124,8 @@ source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
 + Brand Portal {#brandportal}
    + [Configurare AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Pubblicare risorse su Brand Portal](brand-portal-publish-assets.md)
-   + [Pubblicare le cartelle su Brand Portal](brand-portal-publish-folder.md)
-   + [Pubblicare raccolte in Brand Portal](brand-portal-publish-collection.md)
+   + [Pubblicare cartelle su Brand Portal](brand-portal-publish-folder.md)
+   + [Pubblicare raccolte su Brand Portal](brand-portal-publish-collection.md)
 + Frammenti di contenuto {#fragments}
    + [Utilizzo di frammenti di contenuto](content-fragments.md)
    + [Gestione dei frammenti di contenuto](content-fragments-managing.md)
