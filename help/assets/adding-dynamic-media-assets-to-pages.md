@@ -9,20 +9,20 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 202e4d5d0e3fa285b9973e4709a02ca77ccb6e71
 
 ---
 
 
 # Aggiunta di risorse Dynamic Media alle pagine{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. A tale scopo, entrate in modalità Layout e attivate i componenti per contenuti multimediali dinamici. Una volta fatto ciò, potrai aggiungere questi componenti alla pagina e aggiungere risorse al componente. I componenti per contenuti multimediali dinamici sono intelligenti: sanno se si sta aggiungendo un’immagine o un video e le opzioni di configurazione disponibili cambiano di conseguenza.
+Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate sui siti web, puoi inserire direttamente nella pagina il componente **Dynamic Media**, **File multimediali interattivi**, **Elemento multimediale panoramico** o **File multimediali video 360**. A tale scopo, entra in modalità Layout e attiva i componenti Dynamic Media. Quindi, potrai aggiungere questi componenti alla pagina e fornire così risorse al componente. I componenti Dynamic Media sono intelligenti: rilevano l’aggiunta di un’immagine o di un video, dunque le opzioni di configurazione disponibili cambiano di conseguenza.
 
-Se utilizzi AEM come WCM, puoi aggiungere risorse per contenuti multimediali dinamici direttamente alla pagina. Se utilizzate una terza parte per WCM, [collegate](/help/assets/linking-urls-to-yourwebapplication.md) o [incorporate](/help/assets/embed-code.md) le risorse. Per un sito Web di terze parti reattivo, consultate [Distribuzione di immagini ottimizzate a un sito](/help/assets/responsive-site.md)reattivo.
+Se utilizzi AEM come WCM, puoi aggiungere direttamente alla pagina le risorse Dynamic Media. Se ti avvali di una terza parte per WCM, puoi [collegare](/help/assets/linking-urls-to-yourwebapplication.md) o [incorporare](/help/assets/embed-code.md) le risorse. Per un sito web dinamico di terze parti, consulta la sezione [Distribuzione di immagini ottimizzate in un sito dinamico](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->Devi pubblicare le risorse prima di aggiungerle alle pagine in AEM. Consultate [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md)multimediali dinamiche.
+>È necessario pubblicare le risorse prima di aggiungerle alle pagine in AEM. See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -37,7 +37,7 @@ L’aggiunta di un componente per contenuti multimediali dinamici, contenuti mul
 
 1. Trascinate un componente **[!UICONTROL Contenuti multimediali]** dinamici e rilasciatelo nella posizione desiderata sulla pagina.
 
-   Nell’esempio seguente, viene utilizzato il componente **[!UICONTROL Video 360 Media]** .
+   Nell’esempio di seguito, viene utilizzato il componente **[!UICONTROL Video 360 Media]** .
 
    ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
@@ -59,11 +59,11 @@ L’aggiunta di un componente per contenuti multimediali dinamici, contenuti mul
 
 Potete localizzare i componenti per contenuti multimediali dinamici in uno dei due modi seguenti:
 
-* In una pagina Web in Siti, aprite **[!UICONTROL Proprietà]** e selezionate la scheda **[!UICONTROL Avanzate]** . Selezionate la lingua desiderata per la localizzazione.
+* In una pagina web di Sites, apri **[!UICONTROL Proprietà]** e seleziona la scheda **[!UICONTROL Avanzate]**. Scegli la lingua desiderata per la localizzazione.
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
-* Dal selettore del sito, selezionate la pagina o il gruppo di pagine desiderato. Toccate **[!UICONTROL Proprietà]** e selezionate la scheda **[!UICONTROL Avanzate]** . Selezionate la lingua desiderata per la localizzazione.
+* Dal selettore del sito, selezionate la pagina o il gruppo di pagine desiderato. Toccate **[!UICONTROL Proprietà]** e selezionate la scheda **[!UICONTROL Avanzate]** . Scegli la lingua desiderata per la localizzazione.
 
    >[!NOTE]
    >
@@ -75,7 +75,7 @@ I componenti per contenuti multimediali dinamici sono disponibili quando toccate
 
 I componenti per contenuti multimediali dinamici disponibili sono i seguenti:
 
-* **[!UICONTROL Contenuti multimediali]** dinamici - Utilizzate per risorse quali immagini, video, eCatalog e set 360 gradi.
+* **[!UICONTROL Dynamic Media]**: da utilizzare per risorse quali immagini, video, eCatalog e set 360 gradi.
 * **[!UICONTROL Contenuti multimediali]** interattivi - Utilizzate per qualsiasi risorsa interattiva, ad esempio video interattivi, immagini interattive o set di caroselli.
 * **[!UICONTROL Supporti]** panoramici - Utilizzati per immagini panoramiche o risorse di immagini VR panoramiche.
 * **[!UICONTROL Video 360 Media]** - Utilizzate per risorse video 360 e 360 VR.
@@ -113,13 +113,13 @@ Il componente elementi multimediali dinamici consente di aggiungere immagini din
 
 È possibile anche configurare il predefinito visualizzatore, il predefinito immagine o il formato immagine direttamente nel componente. Per rendere un&#39;immagine reattiva è possibile impostare i punti di interruzione o applicare un predefinito immagine reattiva.
 
-You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Per impostazione predefinita, il componente immagine elementi multimediali dinamici è adattivo. Se desideri ottenere una dimensione fissa, impostala nel componente nella scheda **[!UICONTROL Avanzate]** con i parametri **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
+>Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
 * **[!UICONTROL Predefinito]** visualizzatore - Selezionate un predefinito esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
 
@@ -151,9 +151,9 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 
 #### Quando esegui operazioni con i Video {#when-working-with-video}
@@ -162,7 +162,7 @@ Usate il componente Contenuti multimediali dinamici per aggiungere video dinamic
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -180,9 +180,9 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
 * **[!UICONTROL Title**- Modifica il titolo del video.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 #### Quando si lavora con Smart Crop {#when-working-with-smart-crop}
 
@@ -192,11 +192,11 @@ Consultate anche Profili [immagine](/help/assets/image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
->Per impostazione predefinita, il componente immagine elementi multimediali dinamici è adattivo. Se desideri ottenere una dimensione fissa, impostala nel componente nella scheda **[!UICONTROL Avanzate]** con i parametri **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
+>Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. Se vuoi impostarne una dimensione fissa, lo puoi fare nella scheda **[!UICONTROL Avanzate]** del componente, alle voci **[!UICONTROL Larghezza]** e **[!UICONTROL Altezza]**.
 
 * **[!UICONTROL Modificatori]** immagini - Potete applicare effetti immagine fornendo ulteriori comandi immagine. Questi sono descritti nei predefiniti per immagini e nel riferimento al comando Image Server.
 
@@ -214,15 +214,15 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    Questa è l&#39;unica opzione disponibile se stai visualizzando set di immagini, set di rotazione o set di file multimediali diversi.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
 ### Componente File multimediali interattivi {#interactive-media-component}
 
 Il Componente File multimediali interattivi è adatto per le risorse che dispongono di interattività, come punti attivi o mappe immagine. Se disponi di un&#39;immagine, un video interattivo o un banner carosello, utilizza il componente **[!UICONTROL File multimediali interattivi]**.
 
-Il componente Interactive Media è avanzato. A seconda se aggiungete un’immagine o un video, avete a disposizione diverse opzioni. Inoltre, il visualizzatore è reattivo: le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori HTML5.
+Il componente Contenuti multimediali interattivi è avanzato. A seconda se aggiungete un’immagine o un video, avete a disposizione diverse opzioni. Inoltre, il visualizzatore è reattivo: le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori HTML5.
 
 >[!NOTE]
 >
@@ -234,7 +234,7 @@ Il componente Interactive Media è avanzato. A seconda se aggiungete un’immagi
 >
 Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente per contenuti multimediali interattivi in quella pagina non è supportata.
 >
->Potete tuttavia utilizzare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
+>Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
 ![chlimage_1-174](assets/chlimage_1-541.png)
 
@@ -244,9 +244,9 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 * **[!UICONTROL Titolo]**(Title) - Consente di modificare il titolo del video.
 
-* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Larghezza]**(Width) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
-* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Lasciando vuoto questo valore, la risorsa diventa adattiva.
+* **[!UICONTROL Altezza]**(Height) - Immettete il valore in pixel se desiderate che l&#39;immagine sia di dimensione fissa. Se questo valore viene lasciato vuoto, la risorsa diventa adattiva.
 
    È possibile modificare le seguenti impostazioni **[!UICONTROL Aggiungi al carrello]**, facendo clic su **[!UICONTROL Modifica]** nel componente.
 
@@ -263,17 +263,17 @@ Il componente Contenuti multimediali panoramici è destinato alle risorse che so
 * Proporzioni di 2:1.
 * Tag con le parole chiave `equirectangular` o (`spherical` + `panorama`) o (`spherical` + `panoramic`). Consultate [Utilizzo dei tag](/help/sites-authoring/tags.md).
 
-Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche per la pagina dei dettagli delle risorse che per il componente **[!UICONTROL WCM per elementi multimediali]** panoramici.
+Sia le proporzioni che i criteri delle parole chiave si applicano alle risorse panoramiche della pagina dettagli risorsa e al componente WCM per **[!UICONTROL elementi multimediali panoramici]**.
 
 >[!NOTE]
 >
 >Se la pagina Web ha i seguenti elementi:
 >
->* Nella stessa pagina vengono utilizzate più istanze del componente **[!UICONTROL Panoramico]** .
+>* Nella stessa pagina vengono utilizzate più istanze del componente **[!UICONTROL Panoramic Media]** .
 >* Ogni istanza utilizza lo stesso tipo di risorsa.
 >
 >
-Tenete presente che l’assegnazione di un predefinito per visualizzatori diverso a ciascun componente **[!UICONTROL Panoramic Media]** nella pagina non è supportata.
+Non è supportata l’assegnazione di un predefinito visualizzatore diverso a ciascun componente **[!UICONTROL Elemento multimediale panoramico]** di quella pagina.
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per file multimediali panoramici che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
