@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
 
 ---
 
@@ -478,15 +478,15 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
 1. Toccate o fate clic sulla risorsa per aprirne la pagina.
 
-   ![chlimage_1-220](assets/chlimage_1-15.png)
+   ![Pagina Dettagli risorse per gestire le rappresentazioni](assets/chlimage_1-15.png)
 
 1. Toccate o fate clic sull&#39;icona GlobalNav, quindi selezionate **[!UICONTROL Rendering]** dall&#39;elenco.
 
-   ![renditions_menu](assets/renditions_menu.png)
+   ![Barra a sinistra per aprire il menu e selezionare l&#39;opzione Rendering](assets/renditions_menu.png)
 
 1. Nel pannello **[!UICONTROL Rappresentazioni]** , visualizzate l’elenco delle rappresentazioni generate per la risorsa.
 
-   ![renditions_panel](assets/renditions_panel.png)
+   ![Pannello Rappresentazioni nella pagina Dettagli risorse](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    Vai alla pagina dei dettagli della risorsa, quindi tocca o fai clic sull’icona **[!UICONTROL Aggiungi rappresentazione]** della barra degli strumenti per caricare una nuova rappresentazione della risorsa.
 
-   ![chlimage_1-221](assets/chlimage_1-16.png)
+   ![Icona Aggiungi rappresentazione per caricare la nuova rappresentazione](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    Allo stesso modo, potete personalizzare l&#39;immagine della pagina Annotazione sovrapponendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-17.png)
+   ![Sovrapposizione del nodo del selettore delle rappresentazioni in CRXDE per personalizzare l&#39;immagine della pagina Annotazione](assets/chlimage_1-17.png)
 
    Per configurare le dimensioni di rappresentazione per una risorsa video, andate al `videopicker` nodo nell’archivio CRX nella posizione `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sovrapponete il nodo, quindi modificate la proprietà appropriata.
 
@@ -536,7 +536,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
 1. Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Elimina]** dalla barra degli strumenti.
 
-   ![delete_icon](assets/delete_icon.png)
+   ![Icona Elimina](assets/delete_icon.png)
 
 1. Nella finestra di dialogo di conferma, fate clic su:
 
@@ -584,11 +584,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Selezionate la risorsa o la cartella da annullare la pubblicazione, quindi toccate o fate clic sull’icona **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti.
 
-   ![manage_publication](assets/manage_publication.png)
+   ![Icona Gestisci pubblicazione](assets/manage_publication.png)
 
 1. Selezionate l’azione **[!UICONTROL Annulla pubblicazione]** dall’elenco.
 
-   ![unpublish_action](assets/unpublish_action.png)
+   ![Annulla pubblicazione, azione](assets/unpublish_action.png)
 
 1. Per annullare la pubblicazione della risorsa in un secondo momento, selezionate **[!UICONTROL Annulla pubblicazione più tardi]**, quindi selezionate una data per annullare la pubblicazione della risorsa.
 1. Pianificate una data in cui la risorsa non sarà disponibile dall’ambiente di pubblicazione.
@@ -610,11 +610,11 @@ I COG consentono di limitare l’accesso alle risorse. Potete anche configurare 
 1. Selezionate una cartella dall’interfaccia utente Risorse, quindi toccate o fate clic sull’icona Proprietà dalla barra degli strumenti per visualizzare la pagina delle proprietà.
 1. Dalla scheda **[!UICONTROL Autorizzazioni]** , aggiungete membri o gruppi in Gruppo **[!UICONTROL utenti]** chiuso.
 
-   ![add_user](assets/add_user.png)
+   ![Aggiunta di un utente a un gruppo di utenti chiuso](assets/add_user.png)
 
 1. Per visualizzare una schermata di login quando gli utenti accedono alla cartella, selezionate l’opzione **[!UICONTROL Abilita]** . Quindi, selezionate il percorso di una pagina di accesso in AEM e salvate le modifiche.
 
-   ![login_page](assets/login_page.png)
+   ![Abilita e seleziona la pagina di login da visualizzare quando l’utente accede alla cartella](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -642,13 +642,13 @@ Potete visualizzare, navigare e selezionare le risorse con una qualsiasi delle v
 
 Nelle viste a elenco e a colonne, quando passate il puntatore sulla miniatura della risorsa viene visualizzata l’opzione **[!UICONTROL Seleziona]** .
 
-![select_quick_in_listview](assets/select_quick_in_listview.png)
+![Selezionare le risorse nella vista a elenco](assets/select_quick_in_listview.png)
 
-![select_quick_in_columnview](assets/select_quick_in_columnview.png)
+![Selezionare le risorse nella vista a colonne](assets/select_quick_in_columnview.png)
 
 Nella vista a schede, l&#39;opzione **[!UICONTROL Seleziona]** viene visualizzata come azione rapida.
 
-![select_quick_action](assets/select_quick_action.png)
+![Seleziona azione rapida nella vista a schede](assets/select_quick_action.png)
 
 Quando sfogliate una cartella o una raccolta nell&#39;interfaccia utente Risorse in un browser, potete selezionare tutte le risorse visualizzate o caricate utilizzando l&#39;opzione [!UICONTROL Seleziona tutto] nell&#39;angolo superiore destro. Inizialmente, solo 100 risorse vengono caricate nella vista a schede e 200 vengono caricate nella vista a elenco. Durante lo scorrimento della pagina dei risultati di ricerca vengono caricate più risorse. L’opzione [!UICONTROL Seleziona tutto] seleziona solo le risorse caricate.
 
@@ -667,36 +667,36 @@ Gli strumenti di modifica nell’interfaccia di Risorse AEM consentono di effett
    * Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Toccate/fate clic sull&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista a schede.
    * Nella pagina della risorsa, toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
-   ![edit_icon](assets/edit_icon.png)
+   ![Icona Modifica nella barra degli strumenti](assets/edit_icon.png)
 
 1. Per ritagliare l’immagine, toccate o fate clic sull’icona **Ritaglia** .
 
-   ![chlimage_1-226](assets/chlimage_1-22.png)
+   ![Icona Ritaglio](assets/chlimage_1-22.png)
 
 1. Seleziona l’opzione desiderata dall’elenco. L’area di ritaglio viene visualizzata sull’immagine in base all’opzione scelta. L’opzione **Mano libera** consente di ritagliare l’immagine senza limitazioni di proporzioni.
 
-   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
+   ![Opzioni di ritaglio](/help/assets/assets/chlimage_1-23.png)
 
 1. Selezionate l’area da ritagliare e ridimensionatela o riposizionatela sull’immagine.
 1. Utilizzate l’icona **Fine** (angolo in alto a destra) per ritagliare l’immagine. Facendo clic sull&#39;icona **Fine** si attiva anche la rigenerazione delle rappresentazioni.
 
-   ![chlimage_1-228](assets/chlimage_1-24.png)
+   ![Icona Fine](assets/chlimage_1-24.png)
 
 1. Utilizza le icone **Annulla** e **Ripeti** in alto a destra rispettivamente per ripristinare l’immagine non ritagliata o mantenere l’immagine ritagliata.
 
-   ![chlimage_1-229](assets/chlimage_1-25.png)
+   ![Icone Annulla e Ripristina](assets/chlimage_1-25.png)
 
 1. Toccate/fate clic sull’icona Ruota appropriata per ruotare l’immagine in senso orario o antiorario.
 
-   ![chlimage_1-230](assets/chlimage_1-26.png)
+   ![Icone di rotazione in senso orario e antiorario](assets/chlimage_1-26.png)
 
 1. Toccate/fate clic sull’icona Rifletti per riflettere l’immagine in orizzontale o verticale.
 
-   ![chlimage_1-231](assets/chlimage_1-27.png)
+   ![Icone per riflettere l’immagine in orizzontale o in verticale](assets/chlimage_1-27.png)
 
 1. Toccate/fate clic sull’icona **Fine** per salvare le modifiche.
 
-   ![chlimage_1-232](assets/chlimage_1-28.png)
+   ![Icona Fine](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -739,11 +739,11 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    * [Azioni rapide](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
-   ![chlimage_1-233](assets/chlimage_1-29.png)
+   ![Icona Annota](assets/chlimage_1-29.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
 
-   ![chlimage_1-234](assets/chlimage_1-30.png)
+   ![Commento nella finestra di dialogo Aggiungi annotazione](assets/chlimage_1-30.png)
 
 1. Per notificare all’utente un’annotazione, specificate l’indirizzo e-mail dell’utente e aggiungete il commento. Ad esempio, per notificare ad Aaron MacDonald un&#39;annotazione, immettete @aa. I suggerimenti per tutti gli utenti corrispondenti vengono visualizzati in un elenco. Selezionare l&#39;indirizzo e-mail di Aaron dall&#39;elenco per contrassegnare il commento con il relativo tag. Analogamente, potete assegnare tag a più utenti in qualsiasi punto dell’annotazione, prima o dopo.
 
@@ -751,11 +751,11 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    >
    >Per un utente non amministratore, i suggerimenti vengono visualizzati solo se l&#39;utente dispone delle autorizzazioni di lettura in */home* in Crx-de.
 
-   ![chlimage_1-235](assets/chlimage_1-31.png)
+   ![Specificate l&#39;indirizzo e-mail dell&#39;utente e aggiungete un commento per inviare una notifica all&#39;utente](assets/chlimage_1-31.png)
 
 1. Dopo aver aggiunto l’annotazione, fate clic su **[!UICONTROL Aggiungi]** per salvarla. Una notifica per l’annotazione viene inviata ad Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-32.png)
+   ![Pulsante Aggiungi per salvare un’annotazione](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -770,7 +770,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 1. Per scegliere un colore diverso in modo da poter differenziare gli utenti, toccate o fate clic sull’icona Profilo e fate clic o toccate **[!UICONTROL Preferenze]** personali.
 
-   ![Selezionate l&#39;icona del profilo utente e quindi Preferenze personali per aprire Preferenze utente](assets/User-profile-preferences.png)
+   ![Selezionate l’icona del profilo utente e quindi Preferenze personali per aprire Preferenze utente](assets/User-profile-preferences.png)
 
    Nella casella **[!UICONTROL Colore annotazione]**, specifica il colore desiderato, infine tocca o fai clic su **[!UICONTROL Accetta]**.
 
@@ -786,15 +786,15 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 1. Toccate o fate clic sull&#39;icona GlobalNav, quindi scegliete **[!UICONTROL Timeline]** dall&#39;elenco.
 
-   ![chlimage_1-239](assets/chlimage_1-35.png)
+   ![Opzioni disponibili sull&#39;icona GlobalNav](assets/chlimage_1-35.png)
 
 1. Dall’elenco **[!UICONTROL Mostra tutti]** nella timeline, seleziona **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
 
-   ![chlimage_1-240](assets/chlimage_1-36.png)
+   ![Mostra tutti gli elenchi nella timeline](assets/chlimage_1-36.png)
 
    Toccate o fate clic su un commento nel pannello **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
 
-   ![chlimage_1-241](assets/chlimage_1-37.png)
+   ![Pannello Timeline per visualizzare le annotazioni sull’immagine](assets/chlimage_1-37.png)
 
    Toccate o fate clic su **[!UICONTROL Elimina]** per eliminare un particolare commento.
 
@@ -814,15 +814,15 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
 1. Per stampare annotazioni specifiche, selezionate le annotazioni dalla timeline.
 
-   ![chlimage_1-242](assets/chlimage_1-38.png)
+   ![Selezionare un&#39;annotazione dalla timeline per stamparla](assets/chlimage_1-38.png)
 
    Per stampare solo lo stato della revisione, selezionatelo dalla timeline.
 
-   ![chlimage_1-243](assets/chlimage_1-39.png)
+   ![Per stampare solo lo stato di revisione di Annotation selezionarlo dalla timeline](assets/chlimage_1-39.png)
 
 1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
-   ![chlimage_1-244](assets/chlimage_1-40.png)
+   ![Icona Stampa nella barra degli strumenti](assets/chlimage_1-40.png)
 
 1. Nella finestra di dialogo Stampa, scegliete la posizione in cui visualizzare le annotazioni o lo stato della revisione sul PDF. Ad esempio, se desiderate che le annotazioni o lo stato vengano stampati in alto a destra della pagina che contiene l’immagine stampata, utilizzate l’impostazione **In alto a sinistra** . È selezionato per impostazione predefinita.
 
@@ -836,11 +836,11 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
 1. Tocca o fai clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
-   ![chlimage_1-246](assets/chlimage_1-42.png)
+   ![Stato di annotazione e revisione su PDF generato](assets/chlimage_1-42.png)
 
 1. Scaricate o stampate il PDF utilizzando le opzioni in alto a destra.
 
-   ![chlimage_1-247](assets/chlimage_1-43.png)
+   ![Opzioni di download e stampa in PDF](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -848,7 +848,7 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
    Per modificare l&#39;aspetto del file PDF di cui è stato effettuato il rendering, ad esempio il colore, la dimensione e lo stile del font, il colore dello sfondo dei commenti e degli stati, aprire la configurazione **[!UICONTROL PDF]** Annotation da Configuration Manager e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modificate il codice colore nel campo corrispondente. Per informazioni sulla modifica del colore font delle annotazioni, vedere [Annotazione](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-44.png)
+   ![Configurazione per la stampa dell&#39;annotazione della risorsa su un documento PDF](assets/chlimage_1-44.png)
 
    Tornare al file PDF di cui è stato effettuato il rendering e aggiornarlo. Il PDF aggiornato riflette le modifiche apportate.
 
@@ -905,7 +905,7 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
    * Fate clic su **[!UICONTROL Salva come versione]** per creare una versione per la risorsa. Se necessario, aggiungete un’etichetta e un commento.
    * Fate clic su **[!UICONTROL Crea]** per creare una versione.
 
-      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+      ![Creare la versione della risorsa dalla barra laterale](assets/create-new-version-from-timeline.png)
 
       *Figura: Create una versione di una risorsa dalla barra laterale sinistra[!UICONTROL Timeline].*
 
@@ -914,7 +914,7 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
    * Fate clic su **[!UICONTROL Mostra tutto]** nella [!UICONTROL timeline].
    * Fate clic su **[!UICONTROL Versioni]**. Tutte le versioni create per una risorsa sono elencate nella barra laterale sinistra.
 
-      ![version_option](assets/versions_option.png)
+      ![ Opzione Selezione versioni dalla timeline](assets/versions_option.png)
 
    * Selezionate una versione specifica della risorsa e fate clic su **[!UICONTROL Anteprima versione]**.
 
@@ -923,13 +923,13 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
    * Fate clic su una versione della risorsa. Se necessario, aggiungete un’etichetta e un commento.
    * Click **[!UICONTROL Revert to this Version]**.
 
-      ![select_version](assets/select_version.png)
+      ![Selezionate una versione per ripristinarla](assets/select_version.png)
 
       *Figura: Selezionate una versione e ripristinatela. Diventa la versione corrente e sarà quindi disponibile per gli utenti DAM.*
 
 1. Per confrontare due versioni di un’immagine, effettuate le seguenti operazioni:
    * Fare clic sulla versione da confrontare con la versione corrente.
-   * Trascinate il cursore verso sinistra per sovrapporre la versione corrente alla versione corrente e confrontare.
+   * Drag the slider to the left to superimpose this version over the current version and compare.
    ![Utilizza il cursore per confrontare le versioni selezionate di una risorsa con la versione corrente](assets/version-slider.gif)
 
    *Figura: Usate il cursore per confrontare facilmente le versioni selezionate di una risorsa con la versione corrente.*
