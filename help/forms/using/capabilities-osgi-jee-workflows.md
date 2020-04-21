@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
 
 ## Casella in entrata AEM e area di lavoro HTML {#aem-inbox-and-html-workspace}
 
-AEM Inbox viene utilizzato per eseguire e monitorare i flussi di lavoro AEM incentrati sui moduli in OSGi. HTML Workspace consente di eseguire e monitorare i flussi di lavoro AEM Forms JEE. Nella tabella seguente sono elencate le azioni importanti disponibili in AEM Inbox per i flussi di lavoro AEM incentrati sui moduli in OSGi e in HTML Workspace per i flussi di lavoro AEM Forms JEE.
+È possibile utilizzare AEM Inbox per eseguire e monitorare i flussi di lavoro AEM incentrati sui moduli in OSGi. HTML Workspace consente invece di eseguire e monitorare i flussi di lavoro AEM Forms JEE. La tabella seguente illustra le varie azioni importanti disponibili in AEM Inbox per i flussi di lavoro AEM incentrati sui moduli su OSGi e in HTML Workspace per i flussi di lavoro AEM Forms JEE.
 
 <table>
  <tbody>
@@ -97,7 +97,7 @@ AEM Inbox viene utilizzato per eseguire e monitorare i flussi di lavoro AEM ince
 
 ## Flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-I flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM Forms JEE (AEM Forms on JEE Process Management) presentano un set di funzionalità diverso. Nella tabella seguente sono elencate le funzionalità e il supporto importanti disponibili per le funzionalità dei flussi di lavoro AEM incentrati sui moduli in OSGi e nei moduli AEM su flussi di lavoro JEE:
+I flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM Forms JEE (AEM Forms on JEE Process Management) presentano un set di funzionalità diverso. La tabella seguente illustra le importanti funzionalità disponibili nei flussi di lavoro AEM incentrati sui moduli su OSGi e AEM Forms su flussi di lavoro JEE:
 
 <table>
  <tbody>
@@ -153,18 +153,18 @@ I flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM For
   </tr>
   <tr>
    <td>Firma elettronica (Adobe Sign)</td>
-   <td>Supportato <sup>[1]</sup></td>
-   <td>Supportato <sup>[5]</sup></td>
+   <td>Supported <sup>[1]</sup></td>
+   <td>Supported <sup>[5]</sup></td>
   </tr>
   <tr>
    <td>Gestione di applicazioni di modulo e attività</td>
-   <td>Supportato <sup>[2]</sup><br /> </td>
-   <td>Supportato <sup>[2]</sup></td>
+   <td>Supported <sup>[2]</sup><br /> </td>
+   <td>Supported <sup>[2]</sup></td>
   </tr>
   <tr>
    <td>Servizi basati su documenti</td>
-   <td>Supportato <sup>[3]</sup></td>
-   <td>Supportato <sup>[3]</sup></td>
+   <td>Supported <sup>[3]</sup></td>
+   <td>Supported <sup>[3]</sup></td>
   </tr>
   <tr>
    <td>Rendering dell'attività completata come modulo adattivo o documento PDF</td>
@@ -203,12 +203,12 @@ I flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM For
   </tr>
   <tr>
    <td>Moduli HTML5, moduli PDF interattivi, set di moduli<br /> </td>
-   <td>Not Supported<br /> </td>
+   <td>Non supportato<br /> </td>
    <td>Supportato</td>
   </tr>
   <tr>
    <td>Reporting processi</td>
-   <td>Not Supported<br /> </td>
+   <td>Non supportato<br /> </td>
    <td>Supportato<br /> </td>
   </tr>
   <tr>
@@ -283,7 +283,7 @@ I flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM For
   </tr>
   <tr>
    <td>Invia un messaggio e-mail alla fine del flusso di lavoro</td>
-   <td>Supportato <sup>[7]</sup></td>
+   <td>Supported <sup>[7]</sup></td>
    <td>Supportato</td>
   </tr>
   <tr>
@@ -319,9 +319,9 @@ I flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM For
  </tbody>
 </table>
 
-1. In OSGi potete utilizzare flussi di lavoro AEM incentrati sui moduli per firmare un modulo adattivo già compilato. Flussi di lavoro AEM incentrati sui moduli in OSGi supportati dalla firma dei moduli. L&#39;esperienza di firma [](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) in-form non è supportata.
+1. In OSGi potete utilizzare flussi di lavoro AEM incentrati sui moduli per firmare un modulo adattivo compilato. Flussi di lavoro AEM incentrati sui moduli in OSGi supportati dalla firma dei moduli. L&#39;esperienza di firma [](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) in-form non è supportata.
 
-1. Per eseguire e monitorare i flussi di lavoro AEM Forms OSGi AEM Workflows e l’area di lavoro HTML è necessario accedere alla Casella in entrata AEM.
+1. Per eseguire e monitorare i flussi di lavoro AEM Forms JEE, è necessario accedere alla Casella in entrata AEM.
 1. AEM Forms Document Services nativo è disponibile per i flussi di lavoro AEM incentrati sui moduli su OSGi e AEM Forms su flussi di lavoro JEE. AEM Workflow utilizza servizi di documenti nativi per i flussi di lavoro AEM incentrati sui moduli su OSGi e AEM Forms JEE (Process Management).
 1. I flussi di lavoro AEM Forms JEE possono eseguire solo il rendering di un modulo adattivo. Non supporta il rendering di un modulo adattivo come documento PDF.
 1. I flussi di lavoro JEE dei moduli AEM non dispongono di un passaggio separato per Adobe Sign. È necessario un modulo adattivo abilitato per Adobe Sign per i flussi di lavoro JEE dei moduli AEM. Per ulteriori dettagli, consultare la documentazione [di](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)Adobe Sign.
