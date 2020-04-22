@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -31,10 +31,10 @@ Una volta che il contenuto è contrassegnato come disponibile, verrà elencato a
 
 La possibilità di visualizzare il contenuto può essere consentita o disabilitata per ciascun componente.
 
-Questa sezione della documentazione descrive
+Questa sezione della documentazione descrive quanto segue:
 
 * Aggiunta di contenuti contenuti a un sito community
-* Impostazioni di configurazione per il `Featured Content`componente
+* Impostazioni di configurazione per il `Featured Content` componente
 
 ## Aggiunta di contenuti contenuti a una pagina {#adding-featured-content-to-a-page}
 
@@ -44,13 +44,13 @@ Per aggiungere un `Featured Content` componente a una pagina in modalità di cre
 
 trascinatelo nella posizione desiderata su una pagina in cui deve comparire il contenuto in primo piano.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
-Quando sono incluse le librerie [lato client](essentials-featured.md#essentials-for-client-side) richieste, viene visualizzato il `Featured Content`componente:
+Quando sono incluse le librerie [lato client](essentials-featured.md#essentials-for-client-side) richieste, verrà visualizzato il `Featured Content` componente:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-## Configurazione del contenuto {#configuring-featured-content}
+## Configurazione di contenuti contenuti {#configuring-featured-content}
 
 Selezionate il `Featured Content` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
@@ -60,7 +60,7 @@ Selezionate il `Featured Content` componente inserito a cui accedere e seleziona
 
 Nella scheda **[!UICONTROL Impostazioni]** , identificate il contenuto da includere:
 
-* **[!UICONTROL Nome]** visualizzato Titolo per l&#39;elenco del contenuto disponibile. Ad esempio `Featured Questions` o `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
+* **[!UICONTROL Nome]** visualizzato Titolo per l&#39;elenco del contenuto disponibile. For example `Featured Questions` or `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
 
 * **[!UICONTROL Posizione del contenuto in primo piano]**
    *(Obbligatorio)* Passate alla pagina contenente il contenuto che potrebbe essere una funzione (i componenti di tale pagina devono essere configurati per Consenti contenuto disponibile). Esempio, `/content/sites/engage/en/forum`
