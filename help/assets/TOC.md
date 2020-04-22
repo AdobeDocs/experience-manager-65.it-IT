@@ -4,14 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di AEM 6.5 Assets
 translation-type: tm+mt
-source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
 
 # AEM 6.5 Assets User Guide {#assets}
 
-+ [Guida utente di Risorse](home.md)
++ [Guida utente di [!DNL Assets]](home.md)
 + [Note sulla versione di AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Informazioni su DAM](assets.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
@@ -19,7 +19,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Esperienza della home page di AEM Assets](assets-home-page.md)
    + [Ricerca di risorse in AEM](search-assets.md)
    + [Risorse in più lingue](multilingual-assets.md)
-   + [Utilizzo di risorse Adobe Stock in Risorse AEM](aem-assets-adobe-stock.md)
+   + [Utilizzare [!DNL Adobe Stock] in Risorse AEM](aem-assets-adobe-stock.md)
    + [Anteprima delle risorse 3D](previewing-3d-assets.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Flusso di attività nella timeline](activity-stream.md)
@@ -74,7 +74,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Personalizzare ed estendere AEM Assets](extending-assets.md)
    + [Elaborazione delle risorse tramite gestori e flussi di lavoro di contenuti multimediali](media-handlers.md)
    + [Estendi funzionalità di ricerca](searchx.md)
-   + [Installazione e configurazione di ImageMagick per l’utilizzo con Risorse AEM](best-practices-for-imagemagick.md)
+   + [Installazione e configurazione di [!DNL ImageMagick] per l&#39;utilizzo con AEM Assets](best-practices-for-imagemagick.md)
    + [Integrare le risorse con il flusso di attività](extending-activity-stream.md)
    + [Estendi editor risorse](asseteditorx.md)
    + [API HTTP di Assets](mac-api-assets.md)
