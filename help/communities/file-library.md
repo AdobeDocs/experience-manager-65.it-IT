@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -22,10 +22,10 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 La funzione di libreria dei file consente ai visitatori del sito che hanno effettuato l&#39;accesso (membri della community) di caricare, gestire e scaricare i file all&#39;interno del sito della community.
 
-Questa sezione della documentazione descrive
+Questa sezione della documentazione descrive quanto segue:
 
-* aggiunta della funzione di libreria file a un sito AEM
-* impostazioni di configurazione per il `File Library` componente
+* Aggiunta della funzione di libreria file a un sito AEM.
+* Impostazioni di configurazione per il `File Library` componente.
 
 ### Aggiunta di una libreria di file a una pagina {#adding-a-file-library-to-a-page}
 
@@ -35,7 +35,7 @@ Per aggiungere un `File Library` componente a una pagina in modalità di creazio
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
 Quando sono incluse le librerie [lato client](/help/communities/essentials-file-library.md#essentials-for-client-side) richieste, verrà visualizzato il `File Library` componente:
 
@@ -49,61 +49,111 @@ Selezionate il `File Library` componente inserito a cui accedere e selezionate l
 
 #### Scheda Commenti {#comments-tab}
 
-Nella scheda **Commenti **specificare se e come vengono visualizzati i commenti per i file caricati:
+Nella scheda **Commenti** , specificate se e come vengono visualizzati i commenti per i file caricati:
 
-* **Consenti commenti sui file** Se questa opzione è selezionata, consenti commenti sui file caricati. Il valore predefinito è deselezionato.
+* **Consenti commenti sui file**
 
-* **Commenti per pagina** Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Default is **10**.
+   Se questa opzione è selezionata, consentite commenti sui file caricati. Il valore predefinito è deselezionato.
 
-* **Dimensione** massima file Questo valore limita le dimensioni del file caricato. Il limite predefinito è 104857600 (10 Mb).
+* **Commenti per pagina**
 
-* **Lunghezza** massima messaggio Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
+   Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Default is **10**.
 
-* **Tipi** di file consentiti Elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato in modo che** **tutti i tipi di file siano consentiti.
+* **Dimensione file massima**
 
-* **Editor** Rich Text Se questa opzione è selezionata, è possibile inserire commenti con tag. Il valore predefinito è deselezionato.
+   Questo valore limita le dimensioni del file caricato. Il limite predefinito è 104857600 (10 Mb).
 
-* **Elimina commenti** Se questa opzione è selezionata, gli utenti possono eliminare i propri commenti. Il valore predefinito è selezionato.
+* **Lunghezza massima messaggio**
 
-* **Consenti tag** Se questa opzione è selezionata, verrà abilitata la possibilità di aggiungere al file un tag. Il valore predefinito è deselezionato.
+   Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
 
-* **Spazi dei nomi consentiti** Se l’opzione Consenti tag è selezionata, i tag disponibili saranno limitati agli spazi dei nomi selezionati. Se non ne è selezionata alcuna, sono tutti consentiti. Il valore predefinito è tutti gli spazi dei nomi.
+* **Tipi di file consentiti**
 
-* **Limite** suggerimenti Se l’opzione Consenti tag è selezionata, questa impostazione limita il numero di tag suggeriti da visualizzare. Se è impostato su -1, non è previsto alcun limite. Il valore predefinito è -1.
+   Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato in modo che tutti i tipi di file siano consentiti.
 
-* **Consenti votazione** Se questa opzione è selezionata, la possibilità di votare per un file verrà abilitata. Il valore predefinito è deselezionato.
+* **Editor Rich Text**
 
-* **Consenti** se questa opzione è selezionata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](/help/communities/notifications.md) per i nuovi post. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, è possibile inserire commenti con tag. Il valore predefinito è deselezionato.
 
-* **Abilita menzioni** Se abilitata, consente agli utenti della community registrati di identificare altri membri registrati (utilizzando nome, cognome, nome utente) e di assegnare loro un tag utilizzando la sintassi comune @user-name. Gli utenti con tag ricevono notifiche sulle proprie menzioni.
+* **Elimina commenti**
 
-* **N. max menzioni** Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
+   Se questa opzione è selezionata, gli utenti possono eliminare i propri commenti. Il valore predefinito è selezionato.
 
-* **Pattern** di menzione dell&#39;interfaccia utente Specificate la stringa di pattern consentita per assegnare un tag (@reference) all&#39;utente registrato in un post. Ad esempio ~{{familyName}}{{givenName}}.
+* **Consenti assegnazione tag**
 
-* **Consenti risposte** filettate se questa opzione è selezionata, consenti risposte ai commenti inviati. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, verrà abilitata la possibilità di aggiungere un tag al file. Il valore predefinito è deselezionato.
+
+* **Namespace consentiti**
+
+   Se l’opzione Consenti tag è selezionata, i tag disponibili saranno limitati agli spazi dei nomi selezionati. Se non ne è selezionata alcuna, sono tutti consentiti. Il valore predefinito è tutti gli spazi dei nomi.
+
+* **Limite di suggerimenti**
+
+   Se l’opzione Consenti tag è selezionata, questa impostazione limita il numero di tag suggeriti da visualizzare. Se è impostato su -1, non è previsto alcun limite. Il valore predefinito è -1.
+
+* **Consenti votazione**
+
+   Se questa opzione è selezionata, verrà abilitata la possibilità di votare un file. Il valore predefinito è deselezionato.
+
+* **Consenti Segui**
+
+   Se questa opzione è attivata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](/help/communities/notifications.md) sui nuovi post. Il valore predefinito è deselezionato.
+
+* **Abilita menzione**
+
+   Se abilitata, consente agli utenti della community registrati di identificare altri membri registrati (utilizzando nome, cognome, nome utente) e di assegnare loro un tag utilizzando la sintassi comune @user-name. Gli utenti con tag ricevono notifiche sulle proprie menzioni.
+
+* **Max menzioni**
+
+   Limita il numero massimo di menzioni consentite in un post. Il valore predefinito è 10.
+
+* **Pattern menzioni interfaccia**
+
+   Specificare la stringa di pattern consentita per assegnare un tag (@reference) all&#39;utente registrato in un post. Ad esempio ~{{familyName}}{{givenName}}.
+
+* **Consenti risposte concatenate**
+
+   Se questa opzione è selezionata, consentire le risposte ai commenti inviati. Il valore predefinito è deselezionato.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda Moderazione **** utente configurate la moderazione dei commenti, se i commenti sono consentiti:
+Nella scheda Moderazione **** utente, configurare la moderazione dei commenti, se i commenti sono consentiti:
 
-* **Pre-moderazione** Se questa opzione è selezionata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
+* **Premoderazione**
 
-* **Elimina commenti** Se questa opzione è selezionata, il visitatore che ha pubblicato il commento può eliminarlo. Il valore predefinito è selezionato.
+   Se questa opzione è attivata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
-* **Rifiuta commenti** Se questa opzione è selezionata, consente ai moderatori membri attendibili di negare i commenti. Il valore predefinito è deselezionato.
+* **Elimina commenti**
 
-* **Chiudi/Riapri commenti** Se questa opzione è selezionata, consente ai moderatori membri attendibili di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, al visitatore che ha pubblicato il commento viene fornita la possibilità di eliminarlo. Il valore predefinito è selezionato.
 
-* **Contrassegna commenti** Se questa opzione è selezionata, i visitatori possono contrassegnare i commenti come non appropriati. Il valore predefinito è deselezionato.
+* **Rifiuta commenti**
 
-* **Elenco** motivi contrassegno Se questa opzione è selezionata, i visitatori possono scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai moderatori membri attendibili di negare i commenti. Il valore predefinito è deselezionato.
 
-* **Motivo** contrassegno personalizzato Se questa opzione è selezionata, i visitatori possono immettere il proprio motivo per cui un commento viene contrassegnato come inappropriato. Il valore predefinito è deselezionato.
+* **Chiudi/Riapri commenti**
 
-* **Soglia** moderazione Consente di specificare quante volte un commento deve essere contrassegnato dai visitatori prima che i moderatori ricevano una notifica. Il valore predefinito è una tantum (**1**).
+   Se questa opzione è selezionata, consentire ai moderatori membri attendibili di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
 
-* **Limite** contrassegno Consente di specificare quante volte deve essere segnalato un commento prima di essere nascosto nella visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **moderazione**. Il valore predefinito è 5.
+* **Segnala commenti**
+
+   Se questa opzione è selezionata, consentire ai visitatori di contrassegnare i commenti come non appropriati. Il valore predefinito è deselezionato.
+
+* **Elenco di motivi per segnalazione**
+
+   Se questa opzione è selezionata, consentire ai visitatori di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
+
+* **Motivo per segnalazione personalizzato**
+
+   Se questa opzione è selezionata, consentite ai visitatori di inserire il proprio motivo per cui un commento viene contrassegnato come inappropriato. Il valore predefinito è deselezionato.
+
+* **Soglia moderazione**
+
+   Immettete il numero di volte in cui un commento deve essere contrassegnato dai visitatori prima che i moderatori ricevano una notifica. Il valore predefinito è una tantum (**1**).
+
+* **Limite segnalazione**
+
+   Specificate quante volte un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **moderazione**. Il valore predefinito è 5.
 
 ### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
