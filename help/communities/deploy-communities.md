@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 
 
-## Ultime versioni {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA con il pacchetto Communities. Per informazioni sugli aggiornamenti di AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), consulta le Note [sulla versione di](/help/release-notes/release-notes.md#communities-release-notes.html)AEM 6.5.
 
@@ -92,7 +92,7 @@ AEM 6.5 Communities GA con il pacchetto Communities. Per informazioni sugli aggi
 
 A partire da AEM 6.4, gli aggiornamenti alle community vengono forniti come parte dei Service Pack e dei pacchetti AEM Cumulative Fix.
 
-Per gli ultimi aggiornamenti di AEM 6.5, consulta Pacchetti di correzioni cumulativi e Service Pack [di](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)Adobe Experience Manager 6.4.
+Per gli ultimi aggiornamenti di AEM 6.5, consulta Pacchetti di correzioni cumulativi e Service Pack [di](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html)Adobe Experience Manager 6.4.
 
 ### Cronologia versioni {#version-history}
 
@@ -245,7 +245,7 @@ Nell’ambiente di authoring sono disponibili due agenti di replica che richiedo
 
 * Accedere alla console Replica durante l’authoring
 
-   * Dalla navigazione globale, andate a **[UIControl Tools > Distribuzione > Replica > Agenti sull’autore]**
+   * Dalla navigazione globale, passare a **[!UICONTROL Strumenti > Distribuzione > Replica > Agenti sull’autore]**
 
 * Seguire la stessa procedura per entrambi gli agenti:
 
@@ -324,7 +324,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
 >[!CAUTION]
 >
->Se è già stata configurata un&#39;altra funzione di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contattate l&#39;assistenza](https://helpx.adobe.com/marketing-cloud/contact-support.html)clienti.
+>Se è già stata configurata un&#39;altra funzione di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contattate l&#39;assistenza](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)clienti.
 
 #### Replica archivio {#repository-replication}
 
@@ -363,7 +363,7 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Dopo un momento, dovrebbe comparire una finestra di dialogo **Successo** :
    `Operation completed successfully.`
 
-### Server Apache HTTP {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Se utilizzate il server Apache HTTP, accertatevi di utilizzare il nome server corretto per tutte le voci pertinenti.
 
