@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0cb6abe024bc4ff77c9932c99b816c832377f5
+source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: bd0cb6abe024bc4ff77c9932c99b816c832377f5
 >
 >I componenti e-mail di AEM non sono più disponibili. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti out-of-the-box da AEM diventano un utilizzo limitato per i clienti, a causa della necessità di implementare stili personalizzati in qualsiasi componente sia necessario per i progetti.
 >
->I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ottenere questo risultato. Tuttavia, questi componenti obsoleti non devono essere utilizzati nei progetti.
+>I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ottenere questo risultato. Tuttavia, questi componenti obsoleti non devono essere utilizzati per i progetti.
 
 Questo documento descrive alcune delle procedure ottimali per la progettazione delle e-mail e fornisce un modello di campagna e-mail ben sviluppato.
 
@@ -44,7 +44,7 @@ Utilizzate queste best practice per la creazione di newsletter.
 
 >[!NOTE]
 >
->Quando crei un modello di posta elettronica per Adobe Campaign, devi includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello, oppure non sarai in grado di selezionare il modello Adobe Campaign in Proprietà **** pagina di AEM (campo disabilitato).
+>Quando crei un modello di posta elettronica per Adobe Campaign, devi includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello, oppure non sarai in grado di selezionare il modello Adobe Campaign in Proprietà **** pagina di AEM (il campo è disabilitato).
 
 ## Modello/componente pagina {#template-page-component}
 
@@ -65,7 +65,7 @@ Utilizzate queste best practice per la creazione di newsletter.
    <td><p>È impostato su UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Codificate tutta la struttura utilizzando l'elemento &lt;table&gt;. Per i layout più complessi, è necessario nidificare le tabelle per creare strutture complesse.</p> <p>Le e-mail dovrebbero avere un buon aspetto anche senza css.</p> </td>
+   <td><p>Codificate tutta la struttura utilizzando l'elemento &lt;table&gt;. Per i layout più complessi, è necessario nidificare le tabelle per creare strutture complesse.</p> <p>L'e-mail dovrebbe avere un buon aspetto anche senza css.</p> </td>
    <td><p>Le tabelle vengono utilizzate in tutto il modello per strutturare il contenuto. Attualmente è possibile utilizzare un massimo di quattro tabelle nidificate (1 tabella di base + max. 3 livelli di nidificazione)</p> <p>I tag &lt;div&gt; vengono utilizzati solo in modalità di creazione per garantire la corretta modifica dei componenti.</p> </td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ Utilizzate queste best practice per la creazione di newsletter.
 |---|---|
 | Aggiungere attributi *alt* alle immagini | L’attributo *alt* è stato definito come obbligatorio per il componente immagine. |
 | Per le immagini, usate *jpg* invece del formato *png* | Le immagini saranno sempre servite come JPG dal componente immagine. |
-| Utilizzate <img> elementi invece delle immagini di sfondo in una tabella. | Nei modelli non vengono utilizzati dati immagine di sfondo. |
+| Utilizzate `<img>` un elemento invece delle immagini di sfondo in una tabella. | Nei modelli non vengono utilizzati dati immagine di sfondo. |
 | Aggiungi attribute style=&quot;display block&quot; sulle immagini. Consente di visualizzare bene su Gmail. | Tutte le immagini contengono per impostazione predefinita l’attributo *style=&quot;display block&quot;* . |
 
 ### Testo e collegamenti {#text-and-links}
