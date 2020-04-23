@@ -1,6 +1,6 @@
 ---
-title: Esporta in CSV
-seo-title: Esportazione in formato CSV
+title: 'Esportazione in formato CSV  '
+seo-title: 'Esportazione in formato CSV  '
 description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
 seo-description: Esporta informazioni sulle pagine in un file CSV sul sistema locale
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
@@ -11,22 +11,22 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
 
 ---
 
 
-# Esportazione in formato CSV{#export-to-csv}
+# Esportazione in formato CSV  {#export-to-csv}
 
 **Crea rapporto CSV** consente di esportare le informazioni contenute nelle pagine in un file CSV nel sistema locale.
 
 * Il nome del file scaricato è `export.csv`
-* Il contenuto dipende dalle proprietà che erano state selezionate.
+* Il contenuto dipende dalle proprietà selezionate.
 * Puoi definire il percorso e il livello di profondità dell’esportazione.
 
 >[!NOTE]
 >
->Viene usata la funzione di download e la destinazione predefinita del browser in uso.
+>Vengono utilizzate la funzione di download e la destinazione predefinita del browser in uso.
 
 La procedura guidata **Crea esportazione CSV** permette di selezionare:
 
@@ -51,7 +51,7 @@ La procedura guidata **Crea esportazione CSV** permette di selezionare:
 
 Il file `export.csv` risultante può essere aperto in Excel o in un’altra applicazione compatibile.
 
-![]() ![etc-01](assets/etc-01.png)
+![etc-01](assets/etc-01.png)
 
 The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
 
@@ -60,7 +60,7 @@ The create **CSV Report** option is available when browsing the **Sites** consol
 Per creare un’esportazione CSV:
 
 1. Apri la console **Sites** e passa alla posizione desiderata, se necessario.
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. Dalla barra degli strumenti, seleziona **Crea**, quindi **Rapporto CSV** per aprire la procedura guidata:
 
    ![etc-03](assets/etc-03.png)
 
