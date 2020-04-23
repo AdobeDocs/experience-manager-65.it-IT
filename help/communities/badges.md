@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -34,7 +34,7 @@ Attualmente, i simboli assegnati a un membro della community o assegnati vengono
 
 Nell’ambiente di authoring, per accedere alla console Badges
 
-* Dalla navigazione globale, andate a **[UIControl Tools > Communities > Badge]**
+* Dalla navigazione globale, passa a **[!UICONTROL Strumenti > Community > Badge]**
 
 In questa console vengono visualizzati i simboli attualmente disponibili e dai quali è possibile aggiungere nuovi simboli.
 
