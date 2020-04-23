@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 In questa sezione vengono create le seguenti pagine che utilizzano tutte il modello [di](initial-app.md#createthepagetemplate)pagina:
 
-* Sito sandbox SCF, che reindirizzerà alla versione inglese della pagina principale
+* Sito sandbox SCF, che verrà reindirizzato alla versione inglese della pagina principale.
 
-   * SCF Sandbox - La pagina principale per la versione inglese del sito
+   * SCF Sandbox - La pagina principale per la versione inglese del sito.
 
-      * Riproduzione SCF - Elemento secondario della pagina principale su cui riprodurre
+      * Riproduzione SCF - Elemento secondario della pagina principale in cui verrà riprodotta.
 
 Sebbene questa esercitazione non contenga copie [della](../../help/sites-administering/tc-prep.md)lingua, è progettata in modo che la pagina principale possa implementare il rilevamento della lingua preferita per l’utente tramite l’intestazione HTML e reindirizzare alla pagina principale appropriata per la lingua. La convenzione prevede l’uso del codice del paese di due lettere per il nome del nodo della pagina, ad esempio &quot;en&quot; per l’inglese, &quot;fr&quot; per il francese e così via.
 
@@ -45,7 +45,7 @@ Ora che è presente un modello [di](initial-app.md#createthepagetemplate)pagina,
 
    In alternativa, potete accedere direttamente all’interfaccia classica per i siti Web accedendo direttamente a [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. Nel riquadro Esplora risorse, selezionate **[!UICONTROL Siti]** Web, quindi nella barra degli strumenti selezionate **[!UICONTROL Nuovo > Nuova pagina]**.
+1. Nel riquadro Esplora risorse, selezionate **[!UICONTROL Siti]** Web, quindi nella barra degli strumenti selezionate **[!UICONTROL Nuovo]** > **[!UICONTROL Nuova pagina]**.
 
    Nella finestra di dialogo **[!UICONTROL Crea pagina]** , immettete quanto segue:
 
@@ -55,14 +55,14 @@ Ora che è presente un modello [di](initial-app.md#createthepagetemplate)pagina,
    * Fai clic su **[!UICONTROL Crea]**
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site`e fate clic su **[!UICONTROL Nuova > Nuova pagina]**:
+1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site`e fate clic su **[!UICONTROL Nuova]** > **[!UICONTROL Nuova pagina]**:
 
    * Titolo: `SCF Sandbox`
    * Nome: `en`
    * Selezionare **un modello di riproduzione sandbox SCF **
    * Fai clic su **Crea **
 
-1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site/SCF Sandbox`e fate clic su **[!UICONTROL Nuova > Nuova pagina]**
+1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site/SCF Sandbox`e fate clic su **[!UICONTROL Nuova]** > **[!UICONTROL Nuova pagina]**
 
    * Titolo: `SCF Play`
    * Nome: `play`
@@ -83,7 +83,7 @@ Quando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-è stato definito, che fornisce la possibilità facoltativa di fare riferimento alle risorse di progettazione in uno script utilizzando `currentDesign.getPath()`. Esempio
+è stato definito, che fornisce la possibilità facoltativa di fare riferimento alle risorse di progettazione in uno script utilizzando `currentDesign.getPath()`. Ad esempio
 
 * &lt;% String favoriteIcon = currentDesign.getPath() + &quot;/favicon.ico&quot;; %>
 
@@ -105,4 +105,5 @@ Il repository deve essere visualizzato come segue:
 >[!NOTE]
 >
 >L’utilizzo di cq:designPath è facoltativo e non è correlato all’ [utilizzo di clientlibs](develop-app.md#includeclientlibsintemplate), che sono essenzialmente necessari in quanto i componenti SCF utilizzano [clientlibs](client-customize.md#clientlibs-for-scf) per gestire i rispettivi JS e CSS.
+
 
