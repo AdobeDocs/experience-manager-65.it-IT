@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -160,15 +160,15 @@ Se non è attivato, il codice heartbeat video non viene mai istanziato e solo l&
 
 Per creare una nuova integrazione di Analytics, che integra Adobe Analytics con il sito della community AEM, utilizzate l’interfaccia utente standard nell’istanza di creazione:
 
-* Dalla navigazione globale: Strumenti **[di controllo UIC > Distribuzione > Servizi cloud]**
-* Scorri verso il basso fino a **[UIControl Adobe Analytics]**
-* Seleziona configurazioni **[UIControl Configure Now]** o **[UIControl Show]**
+* Dalla navigazione globale: **[!UICONTROL Strumenti > Distribuzione > Servizi cloud]**
+* Scorri verso il basso fino ad **[!UICONTROL Adobe Analytics]**
+* Seleziona **[!UICONTROL Configura ora]** o **[!UICONTROL Mostra configurazioni]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Finestra di dialogo Crea configurazione {#create-configuration-dialog}
 
-* Seleziona `[+]` l&#39;icona accanto a **[UIControl Available Configurations]** per creare una nuova configurazione
+* Seleziona `[+]` l&#39;icona accanto a **[!UICONTROL Configurazioni]** disponibili per creare una nuova configurazione
 
 Nella finestra di dialogo Crea configurazione, i valori da immettere identificano la configurazione.
 
@@ -246,7 +246,7 @@ Per salvare le impostazioni:
 
 Dopo la configurazione corretta della connessione di base ad Adobe Analytics, è necessario creare o modificare un framework per il sito della community. Lo scopo del framework è mappare le variabili delle funzioni Community (AEM) alle variabili Analytics (suite di rapporti).
 
-* Selezionate `[+]` l&#39;icona accanto a **[UIControl Available Framework]** per creare un nuovo framework
+* Selezionate `[+]` l&#39;icona accanto a **[!UICONTROL Framework]** disponibili per creare un nuovo framework
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -653,7 +653,7 @@ Esempio, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 ## Gestione dei dati utente in Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics fornisce API che consentono di accedere, esportare ed eliminare dati utente. Per ulteriori informazioni, vedere [Sottomettere richieste](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)di accesso ed eliminazione.
+Adobe Analytics fornisce API che consentono di accedere, esportare ed eliminare i dati utente. Per ulteriori informazioni, vedere [Sottomettere richieste](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)di accesso ed eliminazione.
 
 ## Riferimenti {#resources}
 
