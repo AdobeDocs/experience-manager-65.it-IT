@@ -1,6 +1,6 @@
 ---
-title: Limiti di contributo
-seo-title: Limiti di contributo
+title: Limiti Di Contributo
+seo-title: Limiti Di Contributo
 description: La funzione Limiti contributi consente di limitare i contributi per la protezione contro lo spam
 seo-description: La funzione Limiti contributi consente di limitare i contributi per la protezione contro lo spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
@@ -10,12 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
-# Limiti di contributo {#member-contribution-limits}
+# Limiti Di Contributo {#member-contribution-limits}
 
 ## Panoramica {#overview}
 
@@ -29,22 +29,22 @@ Utilizzando la console Membri, i limiti dei contributi possono essere rimossi in
 
 ## Configurazione dei limiti di contributo generato dagli utenti di AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-Questa configurazione OSGi
+Questa configurazione OSGi:
 
-* Definisce le caratteristiche dei limiti di contributo (numero di posti entro un periodo di tempo)
-* Identifica chi il membro sarà in grado di inviare un messaggio quando viene raggiunto il limite
-* Identifica i domini che non devono mai essere vincolati
+* Definisce le caratteristiche dei limiti di contributo (numero di posti entro un periodo di tempo).
+* Identifica chi il membro sarà in grado di inviare un messaggio quando il limite sarà stato raggiunto.
+* Identifica i domini che non devono mai essere vincolati.
 
 Per raggiungere questa configurazione OSGi:
 
-* Nell&#39;editore principale
-* Accesso con privilegi di amministratore
-* Accesso alla console [Web](../../help/sites-deploying/configuring-osgi.md)
+* Nell&#39;editore principale:
+* Effettuate l&#39;accesso con privilegi di amministratore.
+* Accedere alla console [](../../help/sites-deploying/configuring-osgi.md)Web.
 
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Individua `AEM Communities User Generated Content Contribution Limits Configuration`
-* Selezionate l’icona di modifica
+* Individua `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Selezionate l’icona di modifica.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
