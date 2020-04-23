@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -111,7 +111,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
 
 Dopo aver creato un modello XDP utilizzando Designer moduli, è necessario caricarlo nel server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
 
-1. Selezionare **Moduli** > **Moduli e documenti**.
+1. Selezionare **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** > Caricamento **** file.
 
    Individuate e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms.
