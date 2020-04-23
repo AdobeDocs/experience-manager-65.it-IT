@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -45,7 +45,7 @@ La console [Configurazione](/help/communities/srp-config.md) storage consente di
 
 **Nell&#39;istanza di AEM Author:**
 
-* Dalla navigazione globale, andate a **[UIControl Tools > Communities > Storage Configuration]** (Strumenti di controllo UIControl) e selezionate **[UIControl Adobe Storage Resource Provider (ASRP)]**.
+* Dalla navigazione globale, accedete a **[!UICONTROL Strumenti > Community > Configurazione]** archiviazione e selezionate **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -94,7 +94,7 @@ Per rendere disponibile la stessa configurazione nell’ambiente di pubblicazion
 
 Nell&#39;istanza di AEM Author:
 
-* Dal menu principale, **[UIControl Tools > Operations > Replication]**.
+* Dal menu principale, passare a **[!UICONTROL Strumenti > Operazioni > Replica]**.
 * Seleziona **Attiva albero**
 * **Percorso** iniziale: individuare `/etc/socialconfig/srpc/`
 * Deseleziona **solo modifica**
@@ -125,7 +125,7 @@ Se esegui l’aggiornamento da un sito della community social network AEM 6.0 es
 
 ### Errori di autenticazione {#authentication-errors}
 
-Se ricevete errori di autenticazione rispetto all’URL del datacenter e il file di registro dell’errore AEM contiene messaggi sulle marche temporali non aggiornate, verificate che la sincronizzazione dell’ora avvenga.
+Se ricevete errori di autenticazione rispetto all’URL del datacenter e il file di registro degli errori AEM contiene messaggi sulle marche temporali non aggiornate, verificate che la sincronizzazione dell’ora sia in corso.
 
 Utilizzate uno strumento come il protocollo NTP ( [Network Time Protocol)](https://www.ntp.org/) per sincronizzare ora tutti i server di creazione e pubblicazione AEM.
 
