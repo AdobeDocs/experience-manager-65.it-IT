@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
 
-# Guida introduttiva di AEM Communities{#getting-started-with-aem-communities}
+# Guida introduttiva di AEM Communities {#getting-started-with-aem-communities}
 
 AEM Communities consente alle aziende di creare esperienze community personalizzate da una libreria di modelli di sito. Forum, gruppi, blog, condivisione di file, calendari, feed di attività e profili utente estesi possono essere integrati nel sito Web per promuovere le interazioni tra progetti, clienti e aziende.
 
