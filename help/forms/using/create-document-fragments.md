@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -28,7 +28,7 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 
 Questa esercitazione illustra i passaggi necessari per creare più frammenti di documento di testo in base all&#39;anatomia fornita nella sezione [Pianificare la comunicazione](/help/forms/using/planning-interactive-communications.md) interattiva. Al termine di questa esercitazione, potrete:
 
-*  Creazione di frammenti di documento
+* Creazione di frammenti di documento
 * Creare variabili
 * Creazione e applicazione di regole
 
@@ -60,7 +60,7 @@ Il frammento di documento Dettagli fatturazione include i campi seguenti:
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **Moduli** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
 
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
@@ -69,7 +69,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
    1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
 
-   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
 
    1. Toccate **Avanti**.
 
@@ -122,7 +122,7 @@ Il frammento di documento Dettagli cliente include i campi seguenti:
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **Moduli** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
@@ -130,7 +130,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
    1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
 
-   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
 
    1. Toccate **Avanti**.
 
@@ -184,7 +184,7 @@ Il frammento di documento Riepilogo fatturazione include i campi seguenti:
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **Moduli** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
@@ -192,7 +192,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
 
    1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
 
-   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
 
    1. Toccate **Avanti**.
 
@@ -250,7 +250,7 @@ Il frammento di documento Riepilogo spese include i campi seguenti:
 
 Per creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **Moduli** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
@@ -258,7 +258,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
 
    1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
 
-   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
 
    1. Toccate **Avanti**.
 
@@ -277,7 +277,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
 
 1. Selezionare la scheda Oggetti **modello** dati.
 1. Posizionare il cursore accanto al campo **Addebiti** per chiamate e fare doppio clic sulla proprietà **fatture** > **canoni** .
-1. Posizionare il cursore accanto al campo **Spese** chiamate conferenza e fare doppio clic sulla proprietà **fatture** > **spese** di chiamata.
+1. Posizionate il cursore accanto al campo **Spese** chiamate conferenza e fate doppio clic sulla proprietà **fatture** > **spese** di chiamata.
 1. Posizionare il cursore accanto al campo **Spese** SMS e fare doppio clic sulla proprietà **fatture** > **schemi** .
 1. Posizionare il cursore accanto al campo Tariffe **Internet** mobile e fare doppio clic sulla proprietà **fatture** > **internetcharge** .
 1. Posizionare il cursore accanto al campo **Tariffe** di roaming nazionali e fare doppio clic sulle **fatture** > Proprietà **nazionale** di roaming.
@@ -295,7 +295,7 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
 
    1. Select **è minore** dell&#39;operatore.
    1. Selezionate **Numero** e immettete il valore come **60**.
-   In base a questa condizione, la riga Added Services Added Cost viene visualizzata solo se il valore del campo Call Addebiti è inferiore a 60.
+   In base a questa condizione, la riga Oneri servizi aggiunti valore viene visualizzata solo se il valore per il campo Addebiti chiamate è inferiore a 60.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
