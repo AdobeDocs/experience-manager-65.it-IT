@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
+source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
 
 ---
 
@@ -79,12 +79,17 @@ source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
   </tr>
   <tr>
    <td>Code (coda personale condivisa, attività di richiesta di rimborso dalla coda)</td>
-   <td>Non supportato</td>
+   <td>Supportato</td>
    <td>Supportato</td>
   </tr>
   <tr>
    <td>Notifica fuori ufficio</td>
-   <td>Non supportato</td>
+   <td>Supportato</td>
+   <td>Supportato</td>
+  </tr>
+    <tr>
+   <td>Personalizzazione degli elementi dell'interfaccia</td>
+   <td>Supportato</td>
    <td>Supportato</td>
   </tr>
   <tr>
@@ -303,6 +308,11 @@ I flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM For
   </tr>
   <tr>
    <td>Gateway , NO WAIT </td>
+   <td>Supportato</td>
+   <td>Supportato</td>
+  </tr>
+   <tr>
+   <td>Variabili per memorizzare i dati </td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
