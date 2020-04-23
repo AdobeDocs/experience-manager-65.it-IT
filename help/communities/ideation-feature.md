@@ -11,26 +11,26 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Ideazione{#ideation-feature}
+# Ideazione {#ideation-feature}
 
 ## Introduzione {#introduction}
 
 La funzione di ideazione fornisce un’area per i visitatori del sito che hanno effettuato l’accesso (membri della community) nell’ambiente di pubblicazione per:
 
-* creare idee da condividere con la community
-* visualizzare e commentare le idee
-* seguire un&#39;idea
-* votazione su un&#39;idea
+* Create idee da condividere con la community.
+* Visualizza e commenta le idee.
+* Seguite un&#39;idea.
+* Votate su un&#39;idea.
 
-Questa sezione della documentazione descrive
+Questa sezione della documentazione descrive quanto segue:
 
-* aggiunta della funzionalità ideazione a un sito AEM
-* impostazioni di configurazione per il componente Ideazione
+* Aggiunta della funzione di ideazione a un sito AEM.
+* Impostazioni di configurazione per il componente Ideazione.
 
 ### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
 
@@ -40,9 +40,9 @@ Per aggiungere un `Ideation` componente a una pagina in modalità di creazione, 
 
 e trascinatela nella posizione desiderata su una pagina in cui deve comparire l’idea.
 
-Per le informazioni necessarie, visita [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/ideation.md#essentials-for-client-side) richieste, viene visualizzato il `Ideation`componente:
+Quando sono incluse le librerie [lato client](/help/communities/ideation.md#essentials-for-client-side) richieste, verrà visualizzato il `Ideation` componente:
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -54,7 +54,7 @@ Selezionate il `Ideation` componente inserito a cui accedere e selezionate l’ 
 
 #### scheda Impostazioni {#settings-tab}
 
-Nella scheda **Settings **, specificare le impostazioni per idee e commenti :
+Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per idee e commenti:
 
 * **Consenti miniatura allegato**
 * **Dimensione max miniatura allegato**
@@ -100,11 +100,11 @@ Nella scheda **Settings **, specificare le impostazioni per idee e commenti :
 
 * **Tipi di file consentiti**
 
-   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricarli. Il valore predefinito non è specificato in modo che** **tutti i tipi di file siano consentiti.
+   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima per file immagine allegato**
 
-   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Numero massimo di byte di cui può disporre un file immagine caricato. Il valore predefinito è 2097152****(2 Mb).
+   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Numero massimo di byte di cui può disporre un file immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
 * **Consenti risposte**
 
@@ -124,7 +124,7 @@ Nella scheda **Settings **, specificare le impostazioni per idee e commenti :
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è attivata, consentite ai membri di ricevere notifiche relative ai nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, consentite ai membri di ricevere notifiche relative ai nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **Consenti votazione**
 
@@ -146,7 +146,7 @@ Nella scheda **Settings **, specificare le impostazioni per idee e commenti :
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda **User Moderation **specificare le modalità di gestione delle idee e dei commenti pubblicati (contenuto generato dall&#39;utente). Per ulteriori informazioni, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Nella scheda Moderazione **** utente, specificate le modalità di gestione delle idee e dei commenti pubblicati (contenuto generato dall’utente). Per ulteriori informazioni, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
 
 * **Rifiuta post**
 
@@ -178,19 +178,19 @@ Nella scheda **User Moderation **specificare le modalità di gestione delle idee
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **Settings **, sono limitati in base agli spazi dei nomi scelti.
+Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **[!UICONTROL Impostazioni]** , sono limitati in base agli spazi dei nomi selezionati.
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è selezionato nella scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, ovvero tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato sotto la scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
-   Immettete il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore di **-**1 non indica alcun limite. Il valore predefinito è 0.
+   Immettete il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore pari a **-1** non indica alcun limite. Il valore predefinito è 0.
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
-Nella scheda **Sort Settings **(Impostazioni ordinamento), specificare l&#39;ordine dei commenti inviati quando vengono visualizzati.
+Nella scheda **[!UICONTROL Impostazioni]** ordinamento, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
 
 * **Ordina per**
 
@@ -208,7 +208,7 @@ Nella scheda **Sort Settings **(Impostazioni ordinamento), specificare l&#39;ord
 
 ### Creazione di Idea {#creating-idea}
 
-Come per tutte le funzioni di Community, se non è stato effettuato l’accesso, un visitatore del sito può solo leggere idee e visualizzare altre opinioni (tramite commenti e voti).
+Come per tutte le funzioni Community, se non è stato effettuato l’accesso, un visitatore del sito può solo leggere idee e visualizzare altre opinioni (tramite commenti e voti/clic).
 
 Una volta effettuato l’accesso, un membro può creare una nuova idea.
 
