@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: a6b4a32b320d53c41ebf9615895dbf17ab722f19
 
 ---
 
@@ -151,7 +151,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
   </tr> 
    <tr>
    <td>Oracle Database 19c </td>
-   <td>Archivio</td>
+   <td>Repository Microkeral </td>
    <td>Supportato</td>
   </tr>
   <tr>
