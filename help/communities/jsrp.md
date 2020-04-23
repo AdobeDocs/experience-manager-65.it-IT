@@ -1,6 +1,6 @@
 ---
-title: JSRP - Provider risorse di storage JCR
-seo-title: JSRP - Provider risorse di storage JCR
+title: JSRP - Provider di risorse di storage JCR
+seo-title: JSRP - Provider di risorse di storage JCR
 description: JSRP è generalmente ideale per gli ambienti di dimostrazione o sviluppo di un’istanza di pubblicazione e di un’istanza di authoring
 seo-description: JSRP è generalmente ideale per gli ambienti di dimostrazione o sviluppo di un’istanza di pubblicazione e di un’istanza di authoring
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
@@ -10,12 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: aa2c75e061e00ba74d54843a5f35bb7d82d12a92
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
-# JSRP - Provider risorse di storage JCR {#jsrp-jcr-storage-resource-provider}
+# JSRP - Provider di risorse di storage JCR {#jsrp-jcr-storage-resource-provider}
 
 ## Informazioni su JSRP {#about-jsrp}
 
@@ -31,11 +31,11 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
 
 Per impostazione predefinita, JSRP è l’opzione di memorizzazione per UGC.
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica quale implementazione di SRP utilizzare.
+La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
 
 Nell’ambiente di authoring, per accedere alla console Configurazione archiviazione
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Configurazione dello storage]**
+* Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Configurazione **[!UICONTROL storage]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -48,9 +48,8 @@ JSRP è la configurazione predefinita, ma per assicurarsi che la configurazione 
 
 * Per autore:
 
-   * Dalla navigazione globale: **[!UICONTROL Strumenti > Implementazione > Replica]**
-   * Seleziona **[!UICONTROL Attiva albero]**
-   * **[!UICONTROL Percorso iniziale]**:
+   * Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]**
+   * Selezionare **[!UICONTROL Attiva albero]** > Percorso **** iniziale:
 
       * Passa a `/conf/global/settings/community/srpc/`
    * Seleziona **[!UICONTROL attiva]**
@@ -58,7 +57,7 @@ JSRP è la configurazione predefinita, ma per assicurarsi che la configurazione 
 
 ## Gestione dei dati utente {#managing-user-data}
 
-Per informazioni sugli *utenti*, i profili ** utente e i gruppi *di* utenti, spesso inseriti nell’ambiente di pubblicazione, visita
+Per informazioni sugli *utenti*, i profili ** utente e i gruppi *di* utenti, spesso inseriti nell’ambiente di pubblicazione, visitate:
 
 * [Sincronizzazione utente](sync.md)
 * [Gestione di utenti e gruppi di utenti](users.md)
@@ -71,10 +70,10 @@ Verificate che JSRP sia stato configurato come fornitore predefinito, verificand
 
 Per creare e pubblicare tutte le istanze di AEM, rivisitate la console Configurazione archiviazione o verificate l’archivio AEM:
 
-* in JCR, se [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* In JCR, se [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) , significa che il provider di archiviazione è JSRP
-   * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire JSRP come provider predefinito
+   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) , significa che il provider di archiviazione è JSRP.
+   * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire JSRP come provider predefinito.
 
 ### UGC non visibile nell&#39;istanza Author {#ugc-not-visible-on-author-instance}
 
