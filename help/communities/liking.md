@@ -10,24 +10,24 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
 # Utilizzo del collegamento {#using-liking}
 
-Il `Liking`componente è uno strumento utile che consente agli utenti di esprimere un’opinione su un particolare contenuto, ad esempio un commento all’interno di un forum. Con il `Liking`componente, i membri selezionano l&#39;icona del cuore per indicare un parere positivo.
+Il `Liking` componente è uno strumento utile che consente agli utenti di esprimere un’opinione su un particolare contenuto, ad esempio un commento all’interno di un forum. Con il `Liking` componente, i membri selezionano l&#39;icona del cuore per indicare un&#39;opinione positiva.
 
 ## Aggiunta di collegamenti a una pagina {#adding-liking-to-a-page}
 
-Per aggiungere un `Liking` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un `Liking` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare:
 
 * `Communities / Liking`
 
 e trascinarlo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione che gli utenti possano apprezzare.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](essentials-liking.md#essentials-for-client-side) richieste, viene visualizzato così il `Liking` componente.
 
@@ -43,11 +43,17 @@ Nella scheda **[!UICONTROL Testo ed etichette]** , specificare le proprietà uti
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Etichetta]** risposta positiva (*richiesta*) Nome della proprietà per una risposta positiva.
+* **[!UICONTROL Etichetta risposta positiva]**
 
-* **[!UICONTROL Etichetta]** risposta negativa (*richiesta*) Nome della proprietà per una risposta negativa.
+   (*Obbligatorio*) Nome della proprietà per una risposta positiva.
 
-* **[!UICONTROL Tally Name]**(*Obbligatorio*) Il nome della proprietà interno e identificabile per questa istanza di un componente di voto.
+* **[!UICONTROL Etichetta risposta negativa]**
+
+   (*Obbligatorio*) Il nome della proprietà per una risposta negativa.
+
+* **[!UICONTROL Nome conteggio]**
+
+   (*Obbligatorio*) Il nome della proprietà interna e identificabile per questa istanza di un componente con diritto di voto.
 
 ## Esperienza dei visitatori del sito {#site-visitor-experience}
 
