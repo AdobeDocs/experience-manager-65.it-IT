@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -29,11 +29,11 @@ Per una descrizione delle azioni di [moderazione, visita la panoramica sulla mod
 
 L’interfaccia utente presentata al moderatore nell’istanza di pubblicazione è contenuta nella finestra di dialogo per la pubblicazione e la gestione del contenuto generato dall’utente (UGC). Gli elementi dell’interfaccia utente sono determinati dallo stato del visitatore del sito, a prescindere dal fatto che si tratti...
 
-1. Il membro che ha pubblicato il contenuto
-1. Un moderatore membro affidabile
-1. Un amministratore
-1. Accesso, ma non amministratore, moderatore o autore del contenuto
-1. Accesso non effettuato
+1. Il membro che ha pubblicato il contenuto.
+1. Un moderatore membro affidabile.
+1. Un amministratore.
+1. Accesso, ma non amministratore, moderatore o autore del contenuto.
+1. Accesso non effettuato.
 
 ## Esempio {#example}
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
 ### Creare i post del forum {#create-the-forum-posts}
 
-* Accedete come Rebekah Larsen (rebekah.larsen@trashymail.com)
+* Effettuate l&#39;accesso come Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Seleziona forum
    * Seleziona nuovo post
@@ -55,7 +55,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
       Quando cambiare il nettare in Humming Bird Feeder
 
-   * Immettere il testo del corpo
+   * Immettete il testo del corpo
 
       Non ho avuto molto successo quando appendo un mangime per colibrì ogni anno. Sembra che arrivino un giorno o due allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
    * Seleziona post
@@ -78,7 +78,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
    * Per l&#39;argomento Hummingbird, selezionate Leggi tutto
    * Inserite il commento per Rispondi al post
 
-      Vendo nettare e alimentatori - visita https://my.viral.url/
+      Vendo nettare e alimentatori - visitare il sito https://my.viral.url/
 
    * Seleziona risposta
    * Seleziona uscita
@@ -87,7 +87,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
 Di seguito è riportata una visualizzazione del forum visualizzato da un visitatore del sito che non ha effettuato l’accesso (5).
 
-Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubblicare contenuti né eseguire azioni di moderazione.
+Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubblicare alcun contenuto né eseguire azioni di moderazione.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -97,11 +97,11 @@ All’autore, accedete come amministratore e aggiungete Boyd Larsen (boyd.larsen
 
 Al momento della pubblicazione, accedete come Boyd Larsen e accedete al thread selezionando `Forum`, quindi `Read more` per il post di colibrì.
 
-Avviso
+Avviso:
 
-* Boyd non ha partecipato al forum
-* Boyd non può eliminare nulla
-* Boyd è connesso e può rispondere o contrassegnare il contenuto
+* Boyd non ha partecipato al forum.
+* Boyd non può eliminare nulla.
+* Boyd è connesso e può rispondere o contrassegnare il contenuto.
 
 Fate clic su Contrassegno corpo per contrassegnare il contenuto pubblicato da Andrew.
 
@@ -111,12 +111,12 @@ Disconnetti
 
 ### Administrator (#3) {#administrator}
 
-Accedi come amministratore (amministratore) e accedi al thread selezionando Forum, quindi leggi tutto per un post.
+Accedete come amministratore (amministratore) e accedete al thread selezionando Forum, quindi Ulteriori informazioni su un post.
 
-Avviso
+Avviso:
 
-* L’Amministratore può contrassegnare, eliminare, modificare, rifiutare, tagliare, chiudere, fissare, feature
-* L&#39;amministratore può selezionare Amministrazione per accedere alla console di moderazione
+* L’Amministratore può contrassegnare, eliminare, modificare, rifiutare, tagliare, chiudere, fissare, feature.
+* L&#39;amministratore può selezionare Amministrazione per accedere alla console di moderazione.
 
 ![community-admin-forum](assets/communityadmin-forum.png)
 
@@ -134,12 +134,12 @@ Disconnetti.
 
 Accedi come Aaron McDonald (aaron.mcdonal@mailinator.com), un moderatore della comunità, e accedere al thread selezionando Forum, quindi Leggi tutto per il post di colibrì.
 
-Avviso
+Avviso:
 
-* Aaron può rispondere, eliminare, modificare o rifiutare il proprio post
-* Aaron può anche contrassegnare/autorizzare, rispondere, eliminare, modificare, rifiutare altro contenuto
-* Aaron può tagliare l&#39;argomento del forum per spostarlo in un altro forum per il quale modera
-* Aaron può selezionare Amministrazione per accedere alla console di moderazione
+* Aaron può rispondere, eliminare, modificare o rifiutare il proprio post.
+* Aaron può anche contrassegnare/autorizzare, rispondere, eliminare, modificare, rifiutare altro contenuto.
+* Aaron può tagliare l&#39;argomento del forum per spostarlo in un altro forum per il quale modera.
+* Aaron può selezionare Amministrazione per accedere alla console di moderazione.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -157,11 +157,11 @@ Disconnetti.
 
 Accedete come Rebekah Larsen (rebekah.larsen@mailinator.com), membro della community che ha avviato il thread, e accedete al thread selezionando Forum, quindi Ulteriori informazioni sul post relativo al colibrì.
 
-Avviso
+Avviso:
 
-* Rebekah può eliminare o modificare il proprio post
-* Rebekah può anche rispondere o contrassegnare altri contenuti
-* Rebekah non può accedere alla console di moderazione
+* Rebekah può eliminare o modificare il proprio post.
+* Rebekah può anche rispondere o contrassegnare altri contenuti.
+* Rebekah non può accedere alla console di moderazione.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
