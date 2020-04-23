@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -27,7 +27,7 @@ Per iniziare a creare un nuovo sito community:
 Utilizzo dell’istanza di [creazione](https://localhost:4502/)
 
 * Accesso con privilegi di amministratore
-* Vai a **[UIControl Communities > Sites]**
+* Vai a **[!UICONTROL Community > Siti]**
 
 * Seleziona **Crea**
 
@@ -98,7 +98,7 @@ I tag che possono essere applicati al contenuto della community sono controllati
 
 Inoltre, selezionando Tag namespace per il sito della community, la selezione presentata nella definizione di cataloghi e risorse di abilitazione viene limitata. Per informazioni importanti, consulta [Assegnazione di tag alle risorse](/help/communities/tag-resources.md) di abilitazione.
 
-La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio,
+La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio,
 
 * Tipo `tut`
 * Seleziona `Tutorial`
@@ -111,7 +111,7 @@ La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio
 
 Per consentire a un membro della comunità (o a un gruppo di membri) di utilizzare il sito come manager della comunità, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
 
-Esempio,
+Ad esempio,
 
 * Tipo `q`
 * Seleziona [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
