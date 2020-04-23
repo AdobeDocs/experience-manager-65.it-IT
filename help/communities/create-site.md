@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -98,7 +98,7 @@ Seleziona tutte le caselle di controllo per Gestione [utente](/help/communities/
 
 I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM precedentemente definiti tramite la console [](/help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](/help/communities/setup.md#create-tutorial-tags)esercitazioni).
 
-La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio,
+La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio,
 
 * Tipo `tut`
 * Seleziona `Tutorial`
@@ -111,7 +111,7 @@ La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio
 
 Per consentire a un membro della comunità (o a un gruppo di membri) di utilizzare il sito come manager della comunità, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
 
-Esempio,
+Ad esempio,
 
 * Tipo `q`
 * Seleziona [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
@@ -200,7 +200,7 @@ UGC non è incluso nel pacchetto del sito.
 
 * **Elimina sito**
 
-   Selezionate l&#39;icona Elimina per eliminare il sito community dalla console **[di]** UIControl Communities > Sites. Questa azione rimuove tutti gli elementi associati al sito, come UGC, gruppi di utenti, risorse e record del database.
+   Selezionate l&#39;icona Elimina per eliminare il sito community dalla console **** Community > Siti. Questa azione rimuove tutti gli elementi associati al sito, come UGC, gruppi di utenti, risorse e record del database.
 
 ![siteazioni](assets/siteactions.png)
 
@@ -210,17 +210,17 @@ UGC non è incluso nel pacchetto del sito.
 >
 >Nell’istanza di creazione, dal menu principale:
 >
->1. Passare al menu Strumenti **[di controllo UIC > Operazioni > Replica]** .
->1. Selezionate Agenti **[di controllo UIControl sull’autore]**.
->1. Selezionate **[UIControl Default Agent (pubblica)]**.
->1. Accanto a Impostazioni **[]** UIControl, selezionate Modifica **[]** UIControl.
->1. Nella finestra di dialogo a comparsa per Impostazioni agente, selezionate la scheda Trasporto **[]** UIControl.
+>1. Selezionare **[!UICONTROL Strumenti > Operazioni > Replica]** .
+>1. Selezionate **[!UICONTROL Agenti sull’autore]**.
+>1. Selezionate Agente **[!UICONTROL predefinito (pubblicazione)]**.
+>1. Accanto a **[!UICONTROL Impostazioni]**, selezionare **[!UICONTROL Modifica]**.
+>1. Nella finestra di dialogo a comparsa per Impostazioni agente, selezionate la scheda **[!UICONTROL Trasporto]** .
 >1. In URI, modificate il numero di porta, 4503, in numero di porta desiderato >
    >    * Ad esempio, per utilizzare la porta 6103:
       >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
-1. Selezionate **[UIControl OK]**.
-1. (Facoltativo) Selezionare **[UIControl Clear]** o **[UIControl Force Retry]** per ripristinare la coda di replica.
+1. Selezionare **[!UICONTROL OK]**.
+1. (Facoltativo) Selezionare **[!UICONTROL Cancella]** o **[!UICONTROL Forza tentativo]** per ripristinare la coda di replica.
 
 
 
