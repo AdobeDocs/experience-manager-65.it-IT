@@ -1,8 +1,8 @@
 ---
 title: Crea nodi
 seo-title: Crea nodi
-description: Sovrapporre il sistema commenti
-seo-description: Sovrapporre il sistema commenti
+description: Sovrapporre il sistema dei commenti
+seo-description: Sovrapporre il sistema dei commenti
 uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,22 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
 
 # Crea nodi {#create-nodes}
 
-Sovrapponete il sistema dei commenti a una versione personalizzata copiando il numero minimo di file necessari da /libs in /apps e modificandoli in /apps.
+Sovrapponete il sistema dei commenti a una versione personalizzata copiando il numero minimo di file `/libs` in `/apps` e modificandoli in `/apps`.
 
 >[!CAUTION]
 >
 >Il contenuto della cartella /libs non viene mai modificato perché qualsiasi reinstallazione o aggiornamento potrebbe eliminare o sostituire la cartella /libs mentre il contenuto della cartella /apps non viene toccato.
 
+
 Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) su un’istanza di creazione, iniziate creando un percorso nella cartella /apps che è identico al percorso dei componenti sovrapposti nella cartella /libs.
 
-Il percorso da duplicare è
+Il percorso da duplicare è:
 
 * `/libs/social/commons/components/hbs/comments/comment`
 
@@ -37,7 +38,7 @@ Alcuni nodi del percorso sono cartelle e alcuni sono componenti.
    * **[!UICONTROL Crea > Cartella...]**
       * Inserisci il nome: `social`
 1. Seleziona `social` nodo
-   * **[!UICONTROL Crea > Cartella...]**
+   * **[!UICONTROL Crea]** > **[!UICONTROL Cartella...]**
       * Inserisci il nome: `commons`
 1. Seleziona `commons` nodo
    * **[!UICONTROL Crea > Cartella...]**
@@ -46,7 +47,7 @@ Alcuni nodi del percorso sono cartelle e alcuni sono componenti.
    * **[!UICONTROL Crea > Cartella..]**.
       * Inserisci il nome: `hbs`
 1. Seleziona `hbs` nodo
-   * **[!UICONTROL Crea > Crea componente...]**
+   * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente...]**
       * Inserisci etichetta: `comments`
       * Enter Title: `Comments`
       * Enter Description: `List of comments without showing avatars`
@@ -74,7 +75,7 @@ Alcuni nodi del percorso sono cartelle e alcuni sono componenti.
 
 >[!NOTE]
 >
->Per mantenere la catena di ereditarietà, in questo caso la `Super Type` (proprietà `sling:resourceSuperType`) dei componenti della sovrapposizione è impostata sullo stesso valore `Super Type` dei componenti sovrapposti
+>Per mantenere la catena di ereditarietà, la `Super Type` (proprietà `sling:resourceSuperType`) dei componenti della sovrapposizione è impostata sullo stesso valore `Super Type` dei componenti sovrapposti, in questo caso:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
