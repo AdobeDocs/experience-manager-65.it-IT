@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -39,7 +39,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
    * Nessun servizio necessario
    * Scelta delle modalità di esecuzione:
       * Modalità indipendente
-      * [Modalità](solr.md#solrcloud-mode) SolrCloud (consigliato per ambienti di produzione)
+      * [Modalità](solr.md#solrcloud-mode) SolrCloud (consigliato per gli ambienti di produzione)
    * Scelta della ricerca multilingue (MLS)
       * [Installazione di MLS standard](solr.md#installing-standard-mls)
       * [Installazione di MLS avanzate](solr.md#installing-advanced-mls)
@@ -48,11 +48,11 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
 
 ### Select MSRP {#select-msrp}
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica quale implementazione di SRP utilizzare.
+La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
 
 Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Configurazione dello storage]**
+* Dalla navigazione globale, selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Configurazione **** archiviazione.
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -69,7 +69,7 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
    * **[!UICONTROL Raccolta UGC di mongoDB]**
 
-      *predefinito*:content
+      *predefinito*: content
 
    * **[!UICONTROL Raccolta allegati mongoDB]**
 
@@ -79,18 +79,26 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host **
 
-      Se eseguite in modalità [SolrCloud](solr.md#solrcloud-mode) con uno ZooKeeper esterno, impostate questo valore `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181* Per un Ensemble ZooKeeper, immettete valori separati da virgola, come `HOST:PORT` host1:2181,host2:2181 **Lasciate vuoto se eseguite Solr in modalità standalone utilizzando ZooKeeper interno.
+      In modalità [SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper esterno, imposta questo valore su `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181*
+
+      Per un ensemble ZooKeeper, inserite `HOST:PORT` valori separati da virgole, ad esempio *host1:2181,host2:2181*
+
+      Lasciate vuoto se eseguite Solr in modalità standalone utilizzando ZooKeeper interno.
       *Predefinito*: *&lt;blank>*
-   * **[!UICONTROL URL]**solare L’URL utilizzato per comunicare con Solr in modalità standalone.
+
+      * **[!UICONTROL URL]**solare L’URL utilizzato per comunicare con Solr in modalità standalone.
 Lasciate vuoto se eseguite in modalità SolrCloud.
-      *Predefinito*: https://127.0.0.1:8983/solr/
-   * **[!UICONTROL Raccolta]**Solr Il nome della raccolta Solr.
-      *Predefinito*: collection1
+         *Predefinito*: https://127.0.0.1:8983/solr/
+
+      * **[!UICONTROL Raccolta]**Solr Il nome della raccolta Solr.
+         *Predefinito*: collection1
+
 * Seleziona **[!UICONTROL Invia]**
 
 >[!NOTE]
 >
->Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di [nodi o gli archivi](../../help/sites-deploying/data-store-config.md)di dati (binari). Consultate anche Elementi [di archiviazione in AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di [nodi o gli archivi](../../help/sites-deploying/data-store-config.md)di dati (binari). Consultate anche Elementi [di archiviazione in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+
 
 ### Set di replica MongoDB {#mongodb-replica-set}
 
@@ -104,8 +112,8 @@ Per utilizzare i set di repliche e definire le connessioni tra le applicazioni e
 
 ```shell
 # Example url for:
-#     servers "mongoserver1", "mongoserver2", "mongoserver3"
-#     replica set 'rs0'
+# servers "mongoserver1", "mongoserver2", "mongoserver3"
+# replica set 'rs0'
 # port numbers only necessary if not default port 27017
 mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mongoport3>/?replicaSet=rs0&maxPoolSize=100&waitQueueMultiple=50&readPreference=secondaryPreferred
 ```
@@ -122,7 +130,7 @@ Per informazioni dettagliate sulla configurazione, consultate Configurazione [So
 
 ### Aggiornamento {#upgrading}
 
-Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP, è necessario
+Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP, sarà necessario:
 
 1. Eseguire l&#39; [aggiornamento ad AEM Communities](upgrade.md)
 1. Installare nuovi file di configurazione Solr
@@ -134,14 +142,13 @@ Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP
 
 MSRP deve essere identificato come store comune in tutte le istanze di creazione e pubblicazione.
 
-Per rendere disponibile la stessa configurazione nell’ambiente di pubblicazione:
+Per rendere disponibile la stessa configurazione nell’ambiente di pubblicazione, effettuate l’accesso all’istanza di creazione e seguite i passaggi seguenti:
 
-* Per autore:
-   * Passare dal menu principale a **[!UICONTROL Strumenti > Operazioni > Replica]**
-   * Seleziona **[!UICONTROL Attiva albero]**
-   * **[!UICONTROL Percorso iniziale]**:
-      * Passa a `/etc/socialconfig/srpc/`
-   * Seleziona **[!UICONTROL attiva]**
+* Passare dal menu principale a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
+* Seleziona **[!UICONTROL Attiva albero]**
+* **[!UICONTROL Percorso iniziale]**:
+   * Passa a `/etc/socialconfig/srpc/`
+* Seleziona **[!UICONTROL attiva]**
 
 ## Gestione dei dati utente {#managing-user-data}
 
@@ -164,7 +171,7 @@ Durante la reindicizzazione, esiste un compromesso tra memoria e prestazioni con
 
 Un valore predefinito ragionevole è 5000:
 
-* Se la memoria è un problema, specificate un numero inferiore
+* Se la memoria è un problema, specificate un numero più piccolo
 * Se la velocità è un problema, specificate un numero maggiore per aumentare la velocità
 
 ### Esecuzione dello strumento di reindicizzazione MSRP tramite il comando cURL {#running-msrp-reindex-tool-using-curl-command}
@@ -193,6 +200,7 @@ cURL -u *signin* -d *data* *reindex-url*
 >
 >Se state [reindicizzando DSRP Solr](dsrp.md), l’URL è **/services/social/datastore/rdb/reindex**
 
+
 ### Esempio di reindicizzazione MSRP {#msrp-reindex-example}
 
 ```shell
@@ -213,8 +221,8 @@ Per creare e pubblicare tutte le istanze di AEM, rivisitate la console [Configur
 
 * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa che il provider di archiviazione è JSRP
-   * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito
+   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa che il provider di archiviazione è JSRP.
+   * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito.
 
 ### UGC scompare dopo l&#39;aggiornamento {#ugc-disappears-after-upgrade}
 
@@ -240,20 +248,20 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-Per risolvere l&#39;errore, quando si seguono le istruzioni per l&#39; [installazione di MLS](solr.md#installing-standard-mls)standard, assicurarsi
+Per risolvere l&#39;errore, quando si seguono le istruzioni per l&#39; [installazione di MLS](solr.md#installing-standard-mls)standard, verificare quanto segue:
 
-* I file di configurazione XML sono stati copiati nella posizione Solr corretta
-* Solr è stato riavviato dopo che i nuovi file di configurazione hanno sostituito quelli esistenti
+* I file di configurazione XML sono stati copiati nel percorso Solr corretto.
+* Solr è stato riavviato dopo che i nuovi file di configurazione hanno sostituito quelli esistenti.
 
 ### Connessione sicura a MongoDB non riuscita {#secure-connection-to-mongodb-fails}
 
 Se un tentativo di connessione protetta al server MongoDB non riesce a causa di una definizione di classe mancante, è necessario aggiornare il bundle del driver MongoDB, `mongo-java-driver`, disponibile dall&#39;archivio pubblico del server.
 
-1. Scaricate il driver da [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versione 2.13.2 o successiva)
-1. Copiare il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza di AEM
-1. Riavvia l’istanza AEM
+1. Scaricate il driver da [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versione 2.13.2 o successiva).
+1. Copiate il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza di AEM.
+1. Riavviate l’istanza di AEM.
 
-## Risorse {#resources}
+## Riferimenti {#resources}
 
 * [AEM con MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [Documentazione MongoDB](https://docs.mongodb.org/)
