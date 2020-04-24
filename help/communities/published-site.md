@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 Ora che il sito community appena creato è stato pubblicato, individuate l’URL visualizzato al momento della creazione del sito, ma sul server di pubblicazione, ad esempio
 
-* URL autore = https://localhost:4502/content/sites/engage/en.html
+* Un\uthor URL = https://localhost:4502/content/sites/engage/en.html
 * URL pubblicazione = https://localhost:4503/content/sites/engage/en.html
 
 Per ridurre la confusione relativa al membro che ha effettuato l’accesso in fase di creazione e pubblicazione, si consiglia di utilizzare browser diversi per ogni istanza.
@@ -69,7 +69,7 @@ Per proteggere i contenuti del sito della community dall&#39;accesso di utenti a
    ![page-properties](assets/page-properties.png)
 
 1. Enable **Authentication Requirement**.
-1. Aggiungete il percorso della pagina di login. Ad esempio,**/content/...... ./GetStarted**.
+1. Aggiungete il percorso della pagina di login. Ad esempio,**/content/......./GetStarted**.
 1. Pubblicate la pagina.
 
 ## Membro della comunità di fiducia {#trusted-community-member}
@@ -89,7 +89,7 @@ Una volta effettuato l&#39;accesso come membro della community registrato, potet
 1. Comporre nuovi messaggi diretti da inviare a singoli e gruppi.
 
 * [L&#39;opzione Notifiche](/help/communities/notifications.md) consente di accedere alla sezione delle notifiche, in cui è possibile visualizzare gli eventi di interesse e modificare le impostazioni delle notifiche.
-* [Se disponi di privilegi di moderazione, Amministrazione](/help/communities/published-site.md#moderationlink) ti indirizza alla pagina Moderazione di AEM Communities.
+* [Se disponete dei privilegi di moderazione, l&#39;amministrazione](/help/communities/published-site.md#moderationlink) vi indirizza alla pagina Moderazione di AEM Communities.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -165,7 +165,7 @@ Ad esempio, aggiungere due n `ew groups.`
 
 **Avviso **:
 
-* prima di visualizzare entrambi i gruppi potrebbe essere necessario aggiornare la pagina
+* prima della visualizzazione di entrambi i gruppi potrebbe essere necessario aggiornare la pagina
 * questo modello *non *include la funzione dei gruppi, per cui non sarà possibile effettuare un&#39;ulteriore nidificazione dei gruppi
 * all’autore, la console [](/help/communities/groups.md) Gruppi offre una terza scelta, un’iscrizione `Public Group` (facoltativa)
 
@@ -179,7 +179,7 @@ I collegamenti del gruppo sono visualizzati sotto i collegamenti del sito princi
 
 Per l’autore, con privilegi amministrativi, andate alla console [Gruppi di](/help/communities/members.md) Communities e aggiungete Weston McCall al `Community Engage Gymnastics <uid> Members` gruppo.
 
-Continuando a pubblicare, disconnettetevi come Aaron McDonald e visualizzate i gruppi nel Gruppo Sport come visitatore anonimo del sito :
+Continuando a pubblicare, disconnettetevi come Aaron McDonald e visualizzate i gruppi nel Gruppo sportivo come visitatore anonimo del sito :
 
 * dalla home page
 * select `Groups`link
