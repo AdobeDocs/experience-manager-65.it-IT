@@ -1,19 +1,19 @@
 ---
-title: Cercare risorse digitali e immagini in AEM
-description: Scopri come trovare le risorse necessarie in AEM utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
+title: Cercare risorse digitali e immagini in Adobe Experience Manager
+description: Scopri come trovare le risorse necessarie in Adobe Experience Manager utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Ricerca di risorse in AEM {#search-assets-in-aem}
+# Cercare risorse in Adobe Experience Manager {#search-assets-in-aem}
 
-Risorse Adobe Experience Manager (AEM) offre metodi di individuazione delle risorse affidabili che consentono di ottenere una maggiore velocità dei contenuti. I team di lavoro riducono i tempi necessari per realizzare ricerche intelligenti e senza soluzione di continuità grazie alla funzionalità e ai metodi personalizzati forniti con il prodotto. La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM. Ricerche semplici, avanzate e personalizzate che puoi eseguire tramite l’interfaccia utente di AEM Assets o altre app e superfici consentono di soddisfare questi casi di utilizzo.
+Risorse Adobe Experience Manager offre metodi di individuazione delle risorse affidabili che consentono di ottenere una maggiore velocità dei contenuti. I team di lavoro riducono i tempi necessari per realizzare ricerche intelligenti e senza soluzione di continuità grazie alla funzionalità e ai metodi personalizzati forniti con il prodotto. La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM. Ricerche semplici, avanzate e personalizzate che puoi eseguire tramite l’interfaccia utente di Experience Manager Assets o altre app e superfici consentono di soddisfare questi casi di utilizzo.
 
-AEM supporta i seguenti casi di utilizzo e questo articolo descrive l’utilizzo, i concetti, le configurazioni, i limiti e la risoluzione di problemi per questi casi di utilizzo.
+Experience Manager Assets supporta i seguenti casi di utilizzo e questo articolo descrive l’utilizzo, i concetti, le configurazioni, i limiti e la risoluzione dei problemi per questi casi di utilizzo.
 
 | Cercare risorse | Configurazione e amministrazione | Utilizzo dei risultati di ricerca |
 |---|---|---|
@@ -23,16 +23,16 @@ AEM supporta i seguenti casi di utilizzo e questo articolo descrive l’utilizzo
 | [Comprendere i risultati della ricerca e il comportamento](#searchbehavior) | [Modificare i facet di ricerca](#searchfacets) | [Aggiornamenti di massa dei metadati](#metadataupdates) |
 | [Classificazione e incremento della ricerca](#searchrank) | [Estrazione del testo](#extracttextupload) | [Raccolte intelligenti](#collections) |
 | [Ricerca avanzata: filtraggio e ambito di ricerca](#scope) | [predicati personalizzati](#custompredicates) | [Comprendere risultati imprevisti e risolvere i problemi](#troubleshoot-unexpected-search-results-and-issues) |
-| [Cerca da altre soluzioni e app](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[App desktop AEM](#desktopapp)</li><li>[Immagini Adobe Stock](#adobestock)</li><li>[Risorse per file multimediali dinamici](#dynamicmedia)</li></ul> |  |  |
+| [Cerca da altre soluzioni e app](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[App desktop Experience Manager](#desktopapp)</li><li>[Immagini Adobe Stock](#adobestock)</li><li>[Risorse per file multimediali dinamici](#dynamicmedia)</li></ul> |  |  |
 | [Selettore risorse](#assetselector) |  |  |
 | [Limitazioni](#limitations) e [suggerimenti](#tips) |  |  |
 | [Esempi illustrati](#samples) |  |  |
 
-Cercate le risorse utilizzando il campo Omnisearch nella parte superiore dell’interfaccia Web di AEM. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in AEM, fai clic sull’icona di ricerca nella barra superiore, immetti la parola chiave di ricerca e premi Invio. In alternativa, usate la scelta rapida per parole chiave / (barra) per aprire il campo di ricerca Omnisearch. Posizione: le risorse sono già selezionate per limitare le ricerche alle risorse DAM. AEM offre suggerimenti durante la digitazione iniziale di una parola chiave di ricerca.
+Cercate le risorse utilizzando il campo di ricerca Omnico nella parte superiore dell’interfaccia Web di Experience Manager. Vai a **[!UICONTROL Risorse]** > **[!UICONTROL File]** in Experience Manager , fai clic sull’icona di ricerca nella barra superiore, immetti la parola chiave di ricerca e premi Invio. In alternativa, usate la scelta rapida per parole chiave / (barra) per aprire il campo di ricerca Omnisearch. Posizione: le risorse sono già selezionate per limitare le ricerche alle risorse DAM. Experience Manager offre suggerimenti per iniziare a digitare una parola chiave di ricerca.
 
 Usate il pannello **[!UICONTROL Filtri]** per limitare la ricerca filtrando i risultati della ricerca in base alle varie opzioni (predicati), come il tipo di file, la dimensione del file, la data dell’ultima modifica, lo stato della risorsa, i dati di approfondimento e le licenze Adobe Stock. Gli amministratori possono personalizzare il pannello Filtri e aggiungere o rimuovere i predicati di ricerca utilizzando i facet di ricerca. Il filtro Tipo [!UICONTROL di] file nel pannello [!UICONTROL Filtri] dispone di caselle di controllo con più stati. Pertanto, a meno che non si selezionino tutti i predicati (o i formati) nidificati, le caselle di controllo di primo livello sono selezionate parzialmente.
 
-La funzionalità di ricerca di AEM supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
+La funzionalità di ricerca di Experience Manager supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
 
 ## Comprendere l’interfaccia di ricerca {#searchui}
 
@@ -46,7 +46,7 @@ Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
 ### Facet di ricerca dinamici {#dynamicfacets}
 
-Dalla pagina dei risultati della ricerca potete individuare più rapidamente le risorse desiderate utilizzando il numero dinamico di risultati di ricerca previsti nei facet di ricerca. Il numero previsto di risorse viene aggiornato anche prima dell’applicazione del filtro di ricerca. La visualizzazione del conteggio previsto rispetto al filtro consente di navigare nei risultati di ricerca in modo rapido ed efficiente. Per ulteriori informazioni, consultate [Cercare risorse in AEM](search-assets.md).
+Dalla pagina dei risultati della ricerca potete individuare più rapidamente le risorse desiderate utilizzando il numero dinamico di risultati di ricerca previsti nei facet di ricerca. Il numero previsto di risorse viene aggiornato anche prima dell’applicazione del filtro di ricerca. La visualizzazione del conteggio previsto rispetto al filtro consente di navigare nei risultati di ricerca in modo rapido ed efficiente. Per ulteriori informazioni, consulta [Cercare risorse in Experience Manager](search-assets.md).
 
 ![Visualizzate il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.](assets/asset_search_results_in_facets_filters.png)
 
@@ -58,21 +58,21 @@ Dalla pagina dei risultati della ricerca potete individuare più rapidamente le 
 
 Potete eseguire ricerche per parole chiave dal campo OmniSearch. La ricerca per parola chiave non fa distinzione tra maiuscole e minuscole ed è una ricerca full-text (nei più comuni campi di metadati). Se viene cercata più di una parola chiave, l’operatore predefinito tra le parole chiave è `AND` per la ricerca predefinita ed è `OR` quando le risorse sono dotate di tag avanzati.
 
-I risultati sono ordinati in base alla rilevanza, a partire da corrispondenze più simili. Per più parole chiave, i risultati più rilevanti sono le risorse che contengono entrambi i termini nei metadati. All’interno dei metadati, le parole chiave che appaiono come smart tag hanno una classificazione più alta rispetto alle parole chiave che vengono visualizzate in altri campi di metadati. AEM consente di assegnare un particolare termine di ricerca con maggiore rilevanza. Inoltre, è possibile [aumentare il rango](#searchrank) di alcune risorse con targeting per termini di ricerca specifici.
+I risultati sono ordinati in base alla rilevanza, a partire da corrispondenze più simili. Per più parole chiave, i risultati più rilevanti sono le risorse che contengono entrambi i termini nei metadati. All’interno dei metadati, le parole chiave che appaiono come smart tag hanno una classificazione più alta rispetto alle parole chiave che vengono visualizzate in altri campi di metadati. Experience Manager consente di attribuire un particolare termine di ricerca maggiore peso. Inoltre, è possibile [aumentare il rango](#searchrank) di alcune risorse con targeting per termini di ricerca specifici.
 
 Per trovare rapidamente le risorse rilevanti, l’interfaccia avanzata offre meccanismi di filtraggio, ordinamento e selezione. Potete filtrare i risultati in base a più criteri e visualizzare il numero di risorse ricercate per vari filtri. In alternativa, potete eseguire nuovamente la ricerca modificando la query nel campo Omnisearch. Quando modificate i termini di ricerca o i filtri, gli altri filtri rimangono applicati per mantenere il contesto della ricerca.
 
-Quando i risultati sono molte risorse, AEM visualizza le prime 100 nella vista a schede e 200 nella vista a elenco. Quando gli utenti scorrono, vengono caricate più risorse. Questo per migliorare le prestazioni.
+Quando i risultati sono molte risorse, Experience Manager visualizza le prime 100 nella vista a schede e 200 nella vista a elenco. Quando gli utenti scorrono, vengono caricate più risorse. Questo per migliorare le prestazioni.
 
 >[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
 
 In alcuni casi, nei risultati della ricerca potrebbero essere presenti risorse impreviste. Per ulteriori informazioni, consultate [risultati](#troubleshoot-unexpected-search-results-and-issues)imprevisti.
 
-AEM può cercare in molti formati di file e i filtri di ricerca possono essere personalizzati in base alle tue esigenze aziendali. Per conoscere le opzioni di ricerca disponibili per l&#39;archivio DAM e le limitazioni applicate all&#39;account, contattare l&#39;amministratore.
+Experience Manager è in grado di eseguire ricerche in molti formati di file e i filtri di ricerca possono essere personalizzati in base alle tue esigenze aziendali. Per conoscere le opzioni di ricerca disponibili per l&#39;archivio DAM e le limitazioni applicate all&#39;account, contattare l&#39;amministratore.
 
 ### Risultati con e senza tag avanzati avanzati {#withsmarttags}
 
-Per impostazione predefinita, la ricerca AEM combina i termini di ricerca con una clausola AND. Ad esempio, è consigliabile cercare le parole chiave che una donna esegue. Per impostazione predefinita nei risultati di ricerca vengono visualizzate solo le risorse con sia donna che parole chiave in esecuzione nei metadati. Lo stesso comportamento viene mantenuto quando con le parole chiave vengono usati caratteri speciali (punti, trattini o trattini). Le seguenti query di ricerca restituiscono gli stessi risultati:
+Per impostazione predefinita, la ricerca di Experience Manager combina i termini di ricerca con una clausola AND. Ad esempio, è consigliabile cercare le parole chiave che una donna esegue. Per impostazione predefinita nei risultati di ricerca vengono visualizzate solo le risorse con sia donna che parole chiave in esecuzione nei metadati. Lo stesso comportamento viene mantenuto quando con le parole chiave vengono usati caratteri speciali (punti, trattini o trattini). Le seguenti query di ricerca restituiscono gli stessi risultati:
 
 * `woman running`
 * `woman.running`
@@ -87,7 +87,7 @@ L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuar
 
 ### Search suggestions as you type {#searchsuggestions}
 
-Quando iniziate a digitare le parole chiave, in AEM vengono suggerite le parole chiave o le frasi di ricerca possibili. I suggerimenti si basano sui metadati delle risorse esistenti. AEM indicizza tutti i campi di metadati per facilitare la ricerca. Per fornire suggerimenti per la ricerca, il sistema utilizza i valori dei seguenti campi di metadati. Per fornire suggerimenti per la ricerca, è consigliabile compilare i campi seguenti con le parole chiave appropriate:
+Quando iniziate a digitare le parole chiave, Experience Manager suggerisce le parole chiave o frasi possibili da cercare. I suggerimenti si basano sui metadati delle risorse esistenti. Experience Manager indicizza tutti i campi di metadati per facilitare la ricerca. Per fornire suggerimenti per la ricerca, il sistema utilizza i valori dei seguenti campi di metadati. Per fornire suggerimenti per la ricerca, è consigliabile compilare i campi seguenti con le parole chiave appropriate:
 
 * Tag risorsa. (mappe a `jcr:content/metadata/cq:tags`)
 * Titolo risorsa. (mappe a `jcr:content/metadata/dc:title`)
@@ -115,7 +115,7 @@ Potete migliorare la rilevanza delle parole chiave per risorse particolari per m
 1. Nella casella **[!UICONTROL Search Promote (Promuovi]** ricerca), specificate una parola chiave per la quale desiderate incrementare la ricerca dell&#39;immagine e quindi fate clic o toccate **[!UICONTROL Aggiungi]**. Potete specificare più parole chiave nello stesso modo.
 1. Tocca o fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i primi risultati della ricerca.
 
-Potete usarlo a proprio vantaggio aumentando il livello di alcune risorse nei risultati della ricerca per la parola chiave di destinazione. Guardate il video di esempio riportato di seguito. Per informazioni dettagliate, consultate [Cercare in AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+Potete usarlo a proprio vantaggio aumentando il livello di alcune risorse nei risultati della ricerca per la parola chiave di destinazione. Guardate il video di esempio riportato di seguito. Per informazioni dettagliate, consultate [cercare in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -123,7 +123,7 @@ Potete usarlo a proprio vantaggio aumentando il livello di alcune risorse nei ri
 
 ## Advanced search {#scope}
 
-In AEM sono disponibili vari metodi, come i filtri, che consentono di individuare più rapidamente le risorse ricercate. Di seguito sono descritti alcuni metodi di uso comune. Di seguito sono riportati alcuni esempi [](#samples) illustrati.
+Experience Manager offre diversi metodi, come i filtri, applicabili alle risorse ricercate, per individuare più rapidamente le risorse desiderate. Di seguito sono descritti alcuni metodi di uso comune. Di seguito sono riportati alcuni esempi [](#samples) illustrati.
 
 **Cercare file o cartelle**: Nei risultati della ricerca, consultate file, cartelle o entrambi. Dal pannello **[!UICONTROL Filtri]** , potete selezionare l’opzione appropriata. Consultate Interfaccia [di](#searchui)ricerca.
 
@@ -135,7 +135,7 @@ In AEM sono disponibili vari metodi, come i filtri, che consentono di individuar
 
 ### Trovare immagini simili {#visualsearch}
 
-Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai clic su **[!UICONTROL Trova simili]** nella vista a schede di un’immagine o nella barra degli strumenti. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. Scopri [come configurare la ricerca per similarità](#configvisualsearch).
+Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai clic su **[!UICONTROL Trova simili]** nella vista a schede di un’immagine o nella barra degli strumenti. Experience Manager visualizza dall&#39;archivio DAM le immagini con tag avanzati simili a quelle selezionate dall&#39;utente. Scopri [come configurare la ricerca per similarità](#configvisualsearch).
 
 ![Trovare immagini simili utilizzando l&#39;opzione nella vista a schede](assets/search_find_similar.png)
 
@@ -143,7 +143,7 @@ Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai 
 
 ### Immagini Adobe Stock {#adobestock}
 
-Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle risorse [](/help/assets/aem-assets-adobe-stock.md) Adobe Stock e ottenere la licenza per le risorse richieste. Aggiungete `Location: Adobe Stock` nella barra di ricerca Omnisearch. Puoi anche usare il pannello Filtri per trovare tutte le risorse con o senza licenza o per cercare una risorsa specifica utilizzando il numero di file Adobe Stock.
+Dall’interfaccia utente di Experience Manager, gli utenti possono effettuare ricerche nelle risorse [](/help/assets/aem-assets-adobe-stock.md) Adobe Stock e ottenere la licenza per le risorse necessarie. Aggiungete `Location: Adobe Stock` nella barra di ricerca Omnisearch. Puoi anche usare il pannello Filtri per trovare tutte le risorse con o senza licenza o per cercare una risorsa specifica utilizzando il numero di file Adobe Stock.
 
 ### Risorse per file multimediali dinamici {#dmassets}
 
@@ -191,17 +191,17 @@ Di seguito sono riportati alcuni esempi di formati di ricerca per query compless
 * Per visualizzare le risorse con un valore di proprietà contenente una stringa specifica (ad esempio: title = Sala riunioni di Basilea): `title:*Meeting*`
 * Per visualizzare le risorse che contengono una stringa particolare e hanno un valore di proprietà specifico (ad esempio: cercare la stringa Adobe nelle risorse con title=John Doe): `*Adobe* title:"John Doe"`
 
-## Cercare risorse da altre offerte o interfacce AEM {#beyondomnisearch}
+## Cercare risorse da altre offerte o interfacce Experience Manager {#beyondomnisearch}
 
-Adobe Experience Manager (AEM) collega l&#39;archivio DAM a diverse altre soluzioni AEM per fornire un accesso più rapido alle risorse digitali e semplificare i flussi di lavoro creativi. Qualsiasi individuazione di risorse inizia con ricerca o ricerca. Il comportamento di ricerca rimane in gran parte lo stesso per le diverse superfici e soluzioni. Alcuni metodi di ricerca cambiano man mano che l’audience di destinazione, i casi di utilizzo e l’interfaccia utente variano tra le soluzioni AEM. I metodi specifici sono documentati per le singole soluzioni ai link seguenti. I suggerimenti e i comportamenti universalmente applicabili sono documentati in questo articolo.
+Adobe Experience Manager collega l&#39;archivio DAM a diverse altre soluzioni Experience Manager per fornire un accesso più rapido alle risorse digitali e semplificare i flussi di lavoro creativi. Qualsiasi individuazione di risorse inizia con ricerca o ricerca. Il comportamento di ricerca rimane in gran parte lo stesso per le diverse superfici e soluzioni. Alcuni metodi di ricerca cambiano man mano che l&#39;audience di destinazione, i casi di utilizzo e l&#39;interfaccia utente variano tra le soluzioni Experience Manager. I metodi specifici sono documentati per le singole soluzioni ai link seguenti. I suggerimenti e i comportamenti universalmente applicabili sono documentati in questo articolo.
 
 ### Cercare risorse dal pannello Collegamento risorse di Adobe {#aal}
 
-Con Adobe Asset Link, i creativi professionisti possono ora accedere al contenuto memorizzato in AEM Assets, senza uscire dalle app Adobe Creative Cloud supportate. I creativi possono sfogliare, cercare, estrarre e archiviare facilmente le risorse utilizzando il pannello in-app nelle app Creative Cloud: Photoshop, Illustrator e InDesign. Collegamento risorsa consente anche agli utenti di effettuare ricerche con risultati visivamente simili. I risultati della visualizzazione della ricerca visiva sono basati sugli algoritmi di machine learning di Adobe Sensei e consentono agli utenti di trovare immagini esteticamente simili. Consultate [Cercare e sfogliare le risorse](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) tramite Adobe Asset Link.
+Con Adobe Asset Link, i creativi professionisti possono ora accedere al contenuto memorizzato in Experience Manager Assets, senza uscire dalle app Adobe Creative Cloud supportate. I creativi possono sfogliare, cercare, estrarre e archiviare facilmente le risorse utilizzando il pannello in-app nelle app Creative Cloud: Photoshop, Illustrator e InDesign. Collegamento risorsa consente anche agli utenti di effettuare ricerche con risultati visivamente simili. I risultati della visualizzazione della ricerca visiva sono basati sugli algoritmi di machine learning di Adobe Sensei e consentono agli utenti di trovare immagini esteticamente simili. Consultate [Cercare e sfogliare le risorse](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) tramite Adobe Asset Link.
 
-### Cercare risorse nell’app desktop AEM {#desktopapp}
+### Cercare risorse nell’app desktop Experience Manager {#desktopapp}
 
-I professionisti creativi utilizzano l’app desktop per rendere le risorse AEM facilmente ricercabili e disponibili sul desktop locale (Win o Mac). Con i creativi è possibile visualizzare facilmente le risorse desiderate in Mac Finder o Esplora risorse, aperte nelle applicazioni desktop e modificate localmente; le modifiche vengono salvate in AEM con una nuova versione creata nell’archivio. L&#39;applicazione supporta le ricerche di base utilizzando una o più parole chiave, * e ? caratteri jolly e operatore AND. Consultate [Cercare, cercare e visualizzare in anteprima le risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell’app desktop.
+I professionisti creativi utilizzano l’app desktop per rendere le risorse Experience Manager facilmente ricercabili e disponibili sul desktop locale (Win o Mac). Con Creative è possibile visualizzare facilmente le risorse desiderate in Mac Finder o Windows Explorer, aperte nelle applicazioni desktop e modificate localmente. Le modifiche vengono salvate in Experience Manager con una nuova versione creata nell&#39;archivio. L&#39;applicazione supporta le ricerche di base utilizzando una o più parole chiave, * e ? caratteri jolly e operatore AND. Consultate [Cercare, cercare e visualizzare in anteprima le risorse](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell’app desktop.
 
 ### Search assets in Brand Portal {#brandportal}
 
@@ -209,7 +209,7 @@ Gli utenti e i professionisti del settore della linea di business utilizzano Bra
 
 ### Cercare immagini Adobe Stock {#adobestock-1}
 
-Dall’interfaccia utente di AEM, gli utenti possono effettuare ricerche nelle risorse Adobe Stock e ottenere la licenza per le risorse richieste. Aggiungi `Location: Adobe Stock` nel campo Omnisearch. Puoi anche usare il pannello **[!UICONTROL Filtri]** per trovare tutte le risorse con o senza licenza oppure per cercare una risorsa specifica utilizzando il numero di file Adobe Stock. Consultate [Gestione delle immagini Adobe Stock in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Dall’interfaccia utente di Experience Manager, gli utenti possono effettuare ricerche nelle risorse Adobe Stock e ottenere la licenza per le risorse necessarie. Aggiungi `Location: Adobe Stock` nel campo Omnisearch. Puoi anche usare il pannello **[!UICONTROL Filtri]** per trovare tutte le risorse con o senza licenza oppure per cercare una risorsa specifica utilizzando il numero di file Adobe Stock. Consulta [Gestione delle immagini di Adobe Stock in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Ricerca di risorse per file multimediali dinamici {#dynamicmedia}
 
@@ -217,11 +217,11 @@ Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Fil
 
 ### Cercare risorse in Content Finder durante la creazione di pagine Web {#contentfinder}
 
-Gli autori possono utilizzare Content Finder per ricercare nell&#39;archivio DAM le risorse pertinenti e utilizzare le risorse nelle pagine Web che creano. Gli autori possono inoltre utilizzare la funzionalità Risorse collegate per cercare le risorse disponibili in una distribuzione AEM remota. Gli autori possono quindi utilizzare queste risorse nelle pagine Web in una distribuzione AEM locale. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+Gli autori possono utilizzare Content Finder per ricercare nell&#39;archivio DAM le risorse pertinenti e utilizzare le risorse nelle pagine Web che creano. Gli autori possono inoltre utilizzare la funzionalità Risorse collegate per cercare le risorse disponibili in una distribuzione remota di Experience Manager. Gli autori possono quindi utilizzare queste risorse nelle pagine Web in una distribuzione Experience Manager locale. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
 ### Cerca raccolte {#collections}
 
-La funzionalità di ricerca di AEM supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
+La funzionalità di ricerca di Experience Manager supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
 
 ## Selettore risorse {#assetselector}
 
@@ -248,18 +248,18 @@ Per accedere all’interfaccia del selettore risorse, passate a `https://[aem_se
 
 ## Limitazioni    {#limitations}
 
-La funzionalità di ricerca in AEM Assets presenta i seguenti limiti:
+La funzionalità di ricerca in Experience Manager Assets presenta i seguenti limiti:
 
 * Non inserite uno spazio iniziale nella query di ricerca, altrimenti la ricerca non funziona.
-* AEM potrebbe continuare a visualizzare il termine di ricerca dopo che avrete selezionato le proprietà di una risorsa dai risultati della ricerca e quindi annullato la ricerca. <!-- (CQ-4273540) -->
+* Experience Manager potrebbe continuare a visualizzare il termine di ricerca dopo che hai selezionato le proprietà di una risorsa dai risultati della ricerca e quindi annullato la ricerca. <!-- (CQ-4273540) -->
 * Durante la ricerca di cartelle, file e cartelle, i risultati della ricerca non possono essere ordinati in base ad alcun parametro.
-* Se premete Invio senza digitare nulla nella barra di ricerca Omnico, AEM restituisce un elenco di soli file e non di cartelle. Se cercate specificamente delle cartelle senza utilizzare una parola chiave, AEM non restituisce alcun risultato.
+* Se premete Invio senza digitare nulla nella barra di ricerca Omnico, Experience Manager restituisce un elenco di soli file e non di cartelle. Se cercate specificamente delle cartelle senza utilizzare una parola chiave, Experience Manager non restituisce alcun risultato.
 * Per selezionare le risorse ricercate, usate l’opzione **[!UICONTROL Seleziona tutto]** nell’angolo superiore destro della pagina di ricerca. Experience Manager visualizza inizialmente 100 risorse nella vista a schede e 200 risorse nella vista a elenco. Quando scorrete i risultati della ricerca, vengono caricate più risorse. Potete selezionare più risorse rispetto alle risorse caricate. Il conteggio delle risorse selezionate viene visualizzato nell’angolo superiore destro della pagina dei risultati della ricerca. Potete gestire la selezione, ad esempio scaricare le risorse selezionate, aggiornare le proprietà dei metadati in blocco per le risorse selezionate o aggiungere le risorse selezionate a una raccolta. Quando più risorse sono selezionate rispetto a quelle visualizzate, un’azione viene applicata a tutte le risorse selezionate oppure viene visualizzata una finestra di dialogo con il numero di risorse a cui sono applicate. Per applicare un’azione alle risorse non caricate, accertatevi che tutte le risorse siano selezionate in modo esplicito.
 
 La ricerca visiva o la ricerca per similarità presenta le seguenti limitazioni:
 
 * La ricerca visiva funziona meglio con archivi più grandi. Anche se non è richiesto un numero minimo di immagini per ottenere buoni risultati, la qualità delle corrispondenze con alcune immagini potrebbe non essere altrettanto buona di quella delle corrispondenze di un archivio di grandi dimensioni.
-* Non potete modificare il modello o addestrare AEM per trovare immagini simili. Ad esempio, l&#39;aggiunta o la rimozione di smart tag ad alcune risorse non modifica il modello. Le risorse vengono effettivamente escluse dai risultati di ricerca visivamente simili.
+* Non potete modificare il modello o addestrare Experience Manager per trovare immagini simili. Ad esempio, l&#39;aggiunta o la rimozione di smart tag ad alcune risorse non modifica il modello. Le risorse vengono effettivamente escluse dai risultati di ricerca visivamente simili.
 
 La funzionalità di ricerca può presentare limiti di prestazioni nei seguenti scenari:
 
@@ -275,7 +275,7 @@ La funzionalità di ricerca può presentare limiti di prestazioni nei seguenti s
 * La ricerca full text supporta operatori quali -, ^ e così via. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette. Ad esempio, utilizzare &quot;Notebook - Bellezza&quot; invece di Notebook - Bellezza.
 * Se i risultati della ricerca sono troppi, limita l’ [ambito della ricerca](#scope) a zero per le risorse desiderate. Questa funzione è particolarmente utile se avete qualche idea su come cercare meglio le risorse desiderate, ad esempio un tipo di file specifico, una posizione specifica, metadati specifici e così via.
 
-* **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro. AEM offre metodi per assegnare automaticamente i tag alle risorse utilizzando i servizi intelligenti di Adobe Sensei, che consentono di ottenere risultati ottimali con l’aggiunta di tag alle risorse mediante l’uso e la formazione. Quando ricercate le risorse, gli smart tag vengono inseriti se la funzione è attivata nel vostro account. Funziona insieme alla funzionalità di ricerca integrata di AEM. Consultate Comportamento [di](#searchbehavior)ricerca. Per ottimizzare l’ordine in cui vengono visualizzati i risultati della ricerca, potete [aumentare la classifica](#searchrank) di ricerca di alcune risorse selezionate.
+* **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro. Experience Manager offre metodi per assegnare automaticamente tag alle risorse utilizzando i servizi intelligenti di Adobe Sensei, che consentono di ottenere sempre di più tag con l’utilizzo e la formazione. Quando ricercate le risorse, gli smart tag vengono inseriti se la funzione è attivata nel vostro account. Funziona insieme alla funzionalità di ricerca integrata. Consultate Comportamento [di](#searchbehavior)ricerca. Per ottimizzare l’ordine in cui vengono visualizzati i risultati della ricerca, potete [aumentare la classifica](#searchrank) di ricerca di alcune risorse selezionate.
 
 * **Indicizzazione**: Nei risultati della ricerca vengono restituiti solo i metadati e le risorse indicizzati. Per una migliore copertura e migliori prestazioni, accertatevi che l&#39;indicizzazione sia corretta e seguite le best practice. Vedere [indicizzazione](#searchindex).
 
@@ -324,9 +324,9 @@ L&#39;individuazione delle risorse si basa sull&#39;indicizzazione dei contenuti
 
 ### Ricerca visiva o per similarità {#configvisualsearch}
 
-La ricerca visiva utilizza i tag avanzati e richiede AEM 6.5.2.0 o versione successiva. Dopo aver configurato la funzionalità di smart tag, effettuate le seguenti operazioni.
+La ricerca visiva utilizza i tag avanzati e richiede Experience Manager 6.5.2.0 o versione successiva. Dopo aver configurato la funzionalità di smart tag, effettuate le seguenti operazioni.
 
-1. In AEM CRXDE, nel `/oak:index/lucene` nodo, aggiungi le proprietà e i valori seguenti e salva le modifiche.
+1. In Experience Manager CRXDE, nel `/oak:index/lucene` nodo, aggiungi le proprietà e i valori seguenti e salva le modifiche.
 
    * `costPerEntry` proprietà di tipo `Double` con il valore `10`.
 
@@ -347,11 +347,11 @@ La ricerca visiva utilizza i tag avanzati e richiede AEM 6.5.2.0 o versione succ
    Salva le modifiche.
 
 1. Accedere `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` e aggiungere `similarityTags` proprietà di tipo `Boolean` con il valore di `true`.
-1. Applica tag avanzati alle risorse nell’archivio AEM. Scoprite [come configurare gli smart tag](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
+1. Applica tag avanzati alle risorse nell’archivio di Experience Manager. Scoprite [come configurare gli smart tag](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
 1. In CRXDE, nel `/oak-index/damAssetLucene` nodo, impostare la `reindex` proprietà su `true`. Salva le modifiche.
 1. (Facoltativo) Se si dispone di un modulo di ricerca personalizzato, copiare il `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salvate tutte le modifiche.
 
-Per informazioni correlate, consultate [Informazioni sugli smart tag in AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) e [come gestire gli smart tag](/help/assets/managing-smart-tags.md).
+Per informazioni correlate, consultate [Informazioni sugli smart tag in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) e [come gestire gli smart tag](/help/assets/managing-smart-tags.md).
 
 ### Metadati obbligatori {#mandatorymetadata}
 
@@ -359,11 +359,11 @@ Gli utenti aziendali, gli amministratori o i bibliotecari DAM possono definire a
 
 ### Modificare i facet di ricerca {#searchfacets}
 
-Per migliorare la velocità di individuazione, AEM Assets offre facet di ricerca con cui puoi filtrare i risultati di ricerca. Per impostazione predefinita, il pannello Filtri include alcuni facet standard. Gli amministratori possono personalizzare il pannello Filtri per modificare i facet predefiniti utilizzando i predicati incorporati. AEM offre una raccolta di predicati integrati e un editor per la personalizzazione dei facet. Consultate Facet di [ricerca](/help/assets/search-facets.md).
+Per migliorare la velocità di individuazione, Experience Manager Assets offre facet di ricerca con cui puoi filtrare i risultati di ricerca. Per impostazione predefinita, il pannello Filtri include alcuni facet standard. Gli amministratori possono personalizzare il pannello Filtri per modificare i facet predefiniti utilizzando i predicati incorporati. Experience Manager fornisce una buona raccolta di predicati integrati e un editor per personalizzare i facet. Consultate Facet di [ricerca](/help/assets/search-facets.md).
 
 ### Estrarre il testo durante il caricamento delle risorse {#extracttextupload}
 
-Potete configurare AEM per l’estrazione del testo dalle risorse quando gli utenti caricano delle risorse, ad esempio file PSD o PDF. AEM indicizza il testo estratto e consente agli utenti di effettuare ricerche in base al testo estratto. Consultate [Caricare le risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Potete configurare Experience Manager per estrarre il testo dalle risorse quando gli utenti caricano risorse, come file PSD o PDF. Experience Manager indicizza il testo estratto e aiuta gli utenti a effettuare ricerche in base al testo estratto. Consultate [Caricare le risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
 ### Predici personalizzati per filtrare i risultati della ricerca {#custompredicates}
 
@@ -399,7 +399,7 @@ Una volta visualizzate le risorse ricercate che corrispondono ai criteri specifi
 
 ### Ordinare i risultati della ricerca {#sort}
 
-L’ordinamento dei risultati di ricerca consente di individuare più rapidamente le risorse necessarie. L’ordinamento dei risultati della ricerca funziona nella vista a elenco e solo quando si seleziona **[!UICONTROL [File](#searchui)]**dal pannello**[!UICONTROL  Filtri ]**. AEM Assets utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse all’interno di una cartella o nei risultati di una query di ricerca, indipendentemente dal numero. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
+L’ordinamento dei risultati di ricerca consente di individuare più rapidamente le risorse necessarie. L’ordinamento dei risultati della ricerca funziona nella vista a elenco e solo quando si seleziona **[!UICONTROL [File](#searchui)]**dal pannello**[!UICONTROL  Filtri ]**. Experience Manager Assets utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse (indipendentemente dal numero di risorse) all’interno di una cartella o dai risultati di una query di ricerca. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
 
 Nella vista a elenco, potete ordinare i risultati della ricerca esattamente come potete ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimensioni, Dimensioni, Valutazione, Utilizzo, Data creazione, Data modifica, Data pubblicazione, Flusso di lavoro e Estratto.
 
@@ -440,19 +440,19 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 
 | Errore, problemi, sintomi | Possibile motivo | Possibile correzione o comprensione del problema |
 |---|---|---|
-| Risultati errati durante la ricerca di risorse con metadati mancanti | Quando si ricercano risorse per le quali mancano i metadati obbligatori, in AEM potrebbero essere visualizzate risorse con metadati validi. I risultati si basano sulle proprietà dei metadati indicizzati. | Una volta aggiornati i metadati, è necessario reindicizzare lo stato corretto dei metadati delle risorse. Consultate Metadati [](metadata-schemas.md#define-mandatory-metadata)obbligatori. |
+| Risultati errati durante la ricerca di risorse con metadati mancanti | Durante la ricerca di risorse per le quali mancano i metadati obbligatori, Experience Manager potrebbe visualizzare alcune risorse con metadati validi. I risultati si basano sulle proprietà dei metadati indicizzati. | Una volta aggiornati i metadati, è necessario reindicizzare lo stato corretto dei metadati delle risorse. Consultate Metadati [](metadata-schemas.md#define-mandatory-metadata)obbligatori. |
 | Troppi risultati di ricerca | Parametro di ricerca ampio. | Considerate la limitazione dell&#39; [ambito di ricerca](#scope). Gli smart tag consentono di ottenere più risultati di quanto previsto. Consultate Comportamento [di ricerca con gli smart tag](#withsmarttags). |
 | Risultati di ricerca non correlati o correlati in parte | Il comportamento di ricerca cambia con l’assegnazione di smart tag. | Scoprite [come cambia la ricerca dopo l’assegnazione di tag](#withsmarttags)avanzati. |
-| Nessun suggerimento di completamento automatico per le risorse | Le risorse appena caricate non sono ancora indicizzate. I metadati non sono immediatamente disponibili come suggerimenti quando iniziate a digitare una parola chiave di ricerca nella barra di ricerca Omnyser. | Risorse AEM attende la scadenza di un periodo di timeout (per impostazione predefinita, un’ora) prima di eseguire un processo in background per indicizzare i metadati per tutte le risorse caricate o aggiornate di recente e quindi aggiungere i metadati all’elenco dei suggerimenti. |
+| Nessun suggerimento di completamento automatico per le risorse | Le risorse appena caricate non sono ancora indicizzate. I metadati non sono immediatamente disponibili come suggerimenti quando iniziate a digitare una parola chiave di ricerca nella barra di ricerca Omnyser. | Experience Manager Assets attende la scadenza di un periodo di timeout (per impostazione predefinita, un’ora) prima di eseguire un processo in background per indicizzare i metadati per tutte le risorse caricate o aggiornate di recente e quindi aggiungere i metadati all’elenco dei suggerimenti. |
 | Nessun risultato di ricerca | <ul><li>Nessuna risorsa corrispondente alla query.</li><li>È stato aggiunto uno spazio vuoto prima della query di ricerca.</li><li>Un campo di metadati non supportato contiene la parola chiave cercata.</li><li>L’ora di attivazione e disattivazione è configurata per la risorsa e la ricerca è stata eseguita durante il tempo di disattivazione della risorsa.</li></ul> | <ul><li>Effettuate ricerche utilizzando un&#39;altra parola chiave. In alternativa, utilizzate i tag (avanzati) per migliorare i risultati della ricerca.</li><li>È una limitazione [](#limitations)nota.</li><li>Non tutti i campi di metadati sono considerati per le ricerche. Vedere [ambito](#scope).</li><li>Cercate più tardi o modificate gli orari di attivazione e disattivazione delle risorse richieste.</li></ul> |
-| Filtro/predicato di ricerca non disponibile | <ul><li>Il filtro di ricerca non è configurato.</li><li>Non è disponibile per l&#39;accesso.</li><li>(Meno probabile) Le opzioni di ricerca non vengono personalizzate sulla distribuzione in uso.</li></ul> | <ul><li>Contattate l’amministratore per verificare se le personalizzazioni della ricerca sono disponibili o meno.</li><li>Contattate l’amministratore per verificare se l’account dispone dei privilegi o delle autorizzazioni necessari per utilizzare la personalizzazione.</li><li>Contatta l’amministratore e verifica le personalizzazioni disponibili per la distribuzione di Risorse AEM in uso.</li></ul> |
-| Quando si ricercano immagini visivamente simili, manca un&#39;immagine prevista | <ul><li>L’immagine non è disponibile in AEM.</li><li>L&#39;immagine non è indicizzata. In genere, quando viene caricato di recente.</li><li>L&#39;immagine non è dotata di smart tag.</li></ul> | <ul><li>Aggiungi l’immagine a Risorse AEM.</li><li>Contattate l’amministratore per reindirizzare la directory archivio. Inoltre, accertatevi di utilizzare l&#39;indice appropriato.</li><li>Contattate l’amministratore per assegnare tag avanzati alle risorse pertinenti.</li></ul> |
-| Quando si ricercano immagini visivamente simili, viene visualizzata un’immagine irrilevante | Comportamento di ricerca visiva. | AEM visualizza il maggior numero possibile di risorse potenzialmente rilevanti. Eventuali immagini meno rilevanti vengono aggiunte ai risultati, ma con una classificazione di ricerca più bassa. La qualità delle corrispondenze e la rilevanza delle risorse ricercate diminuiscono mano a mano che scorrete i risultati della ricerca. |
+| Filtro/predicato di ricerca non disponibile | <ul><li>Il filtro di ricerca non è configurato.</li><li>Non è disponibile per l&#39;accesso.</li><li>(Meno probabile) Le opzioni di ricerca non vengono personalizzate sulla distribuzione in uso.</li></ul> | <ul><li>Contattate l’amministratore per verificare se le personalizzazioni della ricerca sono disponibili o meno.</li><li>Contattate l’amministratore per verificare se l’account dispone dei privilegi o delle autorizzazioni necessari per utilizzare la personalizzazione.</li><li>Contatta l’amministratore e verifica le personalizzazioni disponibili per la distribuzione Experience Manager Assets in uso.</li></ul> |
+| Quando si ricercano immagini visivamente simili, manca un&#39;immagine prevista | <ul><li>L&#39;immagine non è disponibile in Experience Manager.</li><li>L&#39;immagine non è indicizzata. In genere, quando viene caricato di recente.</li><li>L&#39;immagine non è dotata di smart tag.</li></ul> | <ul><li>Aggiungi l’immagine a Experience Manager Assets.</li><li>Contattate l’amministratore per reindirizzare la directory archivio. Inoltre, accertatevi di utilizzare l&#39;indice appropriato.</li><li>Contattate l’amministratore per assegnare tag avanzati alle risorse pertinenti.</li></ul> |
+| Quando si ricercano immagini visivamente simili, viene visualizzata un’immagine irrilevante | Comportamento di ricerca visiva. | Experience Manager visualizza il maggior numero possibile di risorse potenzialmente rilevanti. Eventuali immagini meno rilevanti vengono aggiunte ai risultati, ma con una classificazione di ricerca più bassa. La qualità delle corrispondenze e la rilevanza delle risorse ricercate diminuiscono mano a mano che scorrete i risultati della ricerca. |
 | Quando si selezionano e si utilizzano i risultati della ricerca, tutte le risorse ricercate non vengono utilizzate | L&#39;opzione [!UICONTROL Seleziona tutto] seleziona solo i primi 100 risultati di ricerca nella vista a schede e i primi 200 risultati di ricerca nella vista a elenco. |  |
 
 >[!MORELIKETHIS]
 >
->* [Guida all’implementazione della ricerca AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Guida all&#39;implementazione della ricerca Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configurazione avanzata dei predicati per la ricerca di più valori e tag](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
 >* [Configurare la ricerca per la traduzione intelligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
