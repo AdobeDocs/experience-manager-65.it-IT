@@ -3,7 +3,7 @@ title: Configurare i tag delle risorse tramite Smart Content Service
 description: Scoprite come configurare i tag avanzati e i tag avanzati in AEM, utilizzando Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 Puoi integrare Adobe Experience Manager (AEM) con Smart Content Service tramite Adobe I/O. Utilizzate questa configurazione per accedere a Smart Content Service da AEM.
 
-L&#39;articolo descrive le seguenti attività chiave necessarie per configurare Smart Content Service. Sul lato posteriore, il server AEM autentica le credenziali del servizio con il gateway Adobe IO prima di inoltrare la richiesta a Smart Content Service.
+L&#39;articolo descrive le seguenti attività chiave necessarie per configurare Smart Content Service. Sul lato posteriore, il server AEM autentica le credenziali del servizio con il gateway Adobe I/O prima di inoltrare la richiesta a Smart Content Service.
 
 * Create una configurazione di Smart Content Service in AEM per generare una chiave pubblica. Ottenete un certificato pubblico per l&#39;integrazione OAuth.
 * Create un&#39;integrazione in Adobe I/O e caricate la chiave pubblica generata.
