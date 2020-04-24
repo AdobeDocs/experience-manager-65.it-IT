@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ---
 
@@ -23,7 +23,7 @@ Quando create un percorso per una classe Java, tenete presente che il nome del p
 
 Anche se l&#39;uso dei trattini nei nomi degli elementi del repository è una pratica consigliata nello sviluppo di AEM, i trattini non sono consentiti nei nomi dei pacchetti Java.
 
-La piattaforma CRX sottostante deve essere in grado di distinguere tra un carattere di sottolineatura effettivo &#39;_&#39; e un trattino &#39;-&#39;. Pertanto, in JCR, il trattino deve essere sostituito con il suo valore unicode (u002d) ed eseguito con escape con un carattere di sottolineatura &#39;_&#39;.
+La piattaforma CRX sottostante deve essere in grado di distinguere tra un carattere di sottolineatura effettivo `_ `e un trattino `-`. Pertanto, in JCR, il trattino deve essere sostituito con il suo valore unicode (u002d) ed eseguito con escape con un carattere di sottolineatura `_`.
 
 Ad esempio, se il percorso del repository è **/apps/my-example/component/info/Info.java**, il nome del pacchetto deve essere `java package apps.my_002dexample.component.info;`
 
