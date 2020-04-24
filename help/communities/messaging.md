@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# Configurare i messaggi{#configure-messaging}
+# Configurare i messaggi {#configure-messaging}
 
 ## Panoramica {#overview}
 
@@ -44,47 +44,87 @@ Come mostrato di seguito, esiste una configurazione del servizio per i siti crea
 
 Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+** accanto al nome del servizio:
 
-* **Whitelist** Campi messaggio Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
+* **Whitelist Campi Messaggio**
 
-* **Limite** dimensione casella messaggio Il numero massimo di byte nella finestra di messaggio di ogni utente. Il valore predefinito è *1073741824 *(1 GB).
+   Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
 
-* **Limite** conteggio messaggi Il numero totale di messaggi consentiti per utente. Un valore pari a -1 indica che è consentito un numero illimitato di messaggi, in base al limite delle dimensioni delle finestre di messaggio. Il valore predefinito è *10000* (10 k).
+* **Limite dimensione casella messaggio**
 
-* **Notifica un errore** di consegna Se questa opzione è selezionata, avvisa il mittente se la consegna del messaggio non riesce ad alcuni destinatari. Il valore predefinito è *selezionato*.
+   Il numero massimo di byte nella finestra di messaggio di ogni utente. Il valore predefinito è *1073741824* (1 GB).
 
-* **ID** mittente di recapito non riuscito che viene visualizzato nel messaggio di consegna non riuscita. Il valore predefinito è *failureNotifier*.
+* **Limite conteggio messaggi**
 
-* **Percorso** del modello di messaggio di errore Percorso assoluto del modello di messaggio di consegna non riuscita radice. Il valore predefinito è */etc/notification/messaging/default*.
+   Numero totale di messaggi consentiti per utente. Un valore pari a -1 indica che è consentito un numero illimitato di messaggi, in base al limite delle dimensioni delle finestre di messaggio. Il valore predefinito è *10000* (10 k).
 
-* **Numero di tentativi** Numero di tentativi di reinvio del messaggio che non è stato recapitato. Default is *3*.
+* **Notifica errore di consegna**
 
-* **Attesa tra i tentativi** Numero di secondi di attesa tra i tentativi di reinvio del messaggio in caso di mancata invio. Il valore predefinito è *100 *(secondi).
+   Se questa opzione è selezionata, avvisa il mittente se la consegna del messaggio non riesce ad alcuni destinatari. Il valore predefinito è *selezionato*.
 
-* **Dimensione** pool di aggiornamento conteggio Numero di thread simultanei utilizzati per l&#39;aggiornamento del conteggio. Default is *10*.
+* **ID mittente consegna non riuscita**
 
-* **Percorso** Casella in entrata (*obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (home/users/*username*), da utilizzare per la **`inbox`** cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/inbox.*
+   Nome del mittente visualizzato nel messaggio di consegna non riuscita. Il valore predefinito è *failureNotifier*.
 
-* **Percorso** degli elementi inviati (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (home/users/*username*), da utilizzare per la **`send items`** cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/sentitems* .
+* **Percorso modello messaggio di errore**
 
-* **Supporto di allegati** Se questa opzione è selezionata, gli utenti possono aggiungere allegati ai messaggi. Il valore predefinito è *selezionato*.
+   Percorso assoluto della directory principale del modello di messaggio di consegna non riuscita. Il valore predefinito è */etc/notification/messaging/default*.
 
-* **Abilita messaggi** di gruppo Se questa opzione è selezionata, gli utenti registrati possono inviare messaggi in blocco a un gruppo di membri. Il valore predefinito è *deselezionato*.
+* **Numero di tentativi**
 
-* **N. massimo dei destinatari** totali Se la messaggistica del gruppo è abilitata, specifica il numero massimo di destinatari ai quali il messaggio del gruppo può essere inviato contemporaneamente. Default is *100*.
+   Numero di volte per cui provare a inviare nuovamente il messaggio che non viene recapitato. Default is *3*.
 
-* **Dimensione** batch Numero di messaggi da raggruppare in batch per un&#39;invio quando si invia a un gruppo di destinatari di grandi dimensioni. Default is *100*.
+* **Attendi tra i tentativi**
 
-* **Dimensione** totale allegato Se supportAttachments è selezionato, questo valore specifica la dimensione totale massima consentita (in byte) di tutti gli allegati. Il valore predefinito è *104857600* (100 MB).
+   Numero di secondi di attesa tra i tentativi di reinvio del messaggio in caso di mancata invio. Il valore predefinito è *100* (secondi).
 
-* **Tipo di allegato lista** nera Una lista nera di estensioni di nomi file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in blacklist, l’estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
+* **Conteggio dimensioni pool di aggiornamento**
+
+   Numero di thread simultanei utilizzati per l&#39;aggiornamento del conteggio. Default is *10*.
+
+* **Percorso Inbox**
+
+   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la **`inbox`** cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/inbox*.
+
+* **Percorso elementi inviati**
+
+   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la **`send items`** cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/sentitems* .
+
+* **Allegati di supporto**
+
+   Se questa opzione è selezionata, gli utenti possono aggiungere allegati ai messaggi. Il valore predefinito è *selezionato*.
+
+* **Abilitare i messaggi di gruppo**
+
+   Se selezionato, gli utenti registrati possono inviare un messaggio in blocco a un gruppo di membri. Il valore predefinito è *deselezionato*.
+
+* **N. massimo dei destinatari totali**
+
+   Se la messaggistica del gruppo è abilitata, specifica il numero massimo di destinatari ai quali è possibile inviare il messaggio del gruppo alla volta. Default is *100*.
+
+* **Dimensione batch**
+
+   Numero di messaggi da raggruppare in batch per un&#39;invio a un gruppo esteso di destinatari. Default is *100*.
+
+* **Dimensione totale attacco**
+
+   Se supportAttachments è selezionato, questo valore specifica la dimensione totale massima consentita (in byte) di tutti gli allegati. Il valore predefinito è *104857600* (100 MB).
+
+* **Tipo di allegato lista nera**
+
+   Una blacklist di estensioni di nomi file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in blacklist, l’estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
 
 * **Tipi di allegati consentiti**
+
    **(*Action Required*)** Una whitelist di estensioni di nomi file, in corrispondenza dell&#39;opposto della blacklist. Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blacklist, utilizzate l&#39;icona **-** per rimuovere la singola voce vuota.
 
-* **Selettore** di servizio (*obbligatorio*) Un percorso assoluto (endpoint) attraverso il quale viene chiamato il servizio (una risorsa virtuale). La radice del percorso scelto deve essere inclusa nell&#39;impostazione di configurazione *Percorsi* di esecuzione della configurazione OSGi [ , `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)ad esempio `/bin/`, `/apps/`e `/services/`. Per selezionare questa configurazione per la funzione di messaggistica di un sito, questo endpoint viene fornito come **`Service selector`** valore per la funzione `Message List and Compose Message components` (vedere Funzione [](/help/communities/configure-messaging.md)Messaggio).
-Il valore predefinito è */bin/messaging* .
+* **Selezione servizio**
 
-* **Whitelist** Use **Message Fields (Usa whitelist** campi messaggio).
+   (*Obbligatorio*) Un percorso assoluto (endpoint) attraverso il quale il servizio viene chiamato (una risorsa virtuale). La radice del percorso scelto deve essere inclusa nell&#39;impostazione di configurazione *Percorsi* di esecuzione della configurazione OSGi [ , `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)ad esempio `/bin/`, `/apps/`e `/services/`. Per selezionare questa configurazione per la funzione di messaggistica di un sito, questo endpoint viene fornito come **`Service selector`** valore per la funzione `Message List and Compose Message components` (vedere Funzione [](/help/communities/configure-messaging.md)Messaggio).
+
+   Il valore predefinito è */bin/messaging* .
+
+* **Whitelist del campo**
+
+   Utilizza l’elenco bianceolico dei campi **messaggio**.
 
 >[!CAUTION]
 >
@@ -92,12 +132,13 @@ Il valore predefinito è */bin/messaging* .
 >
 >Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blacklist, utilizzate l&#39;icona **-** per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
 
+
 ## Group Messaging {#group-messaging}
 
-Per consentire agli utenti registrati di inviare messaggi diretti in massa a gruppi di utenti, assicurarsi di **Enable group messaging **nelle due seguenti istanze della configurazione **Messaging Operation Services** :
+Per consentire agli utenti registrati di inviare messaggi diretti in massa a gruppi di utenti, accertatevi di **abilitare i messaggi** di gruppo nelle due seguenti istanze della configurazione **Messaging Operation Services** :
 
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~messaggi social
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
 
 **Servizio Operazioni di messaggistica: console sociale**
 
