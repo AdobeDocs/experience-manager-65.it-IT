@@ -3,7 +3,7 @@ title: Sviluppo proxy delle risorse
 description: Un proxy è un’istanza di AEM che utilizza i proxy worker per elaborare i processi. Scopri come configurare un proxy AEM, le operazioni supportate, i componenti proxy e come sviluppare un lavoratore proxy personalizzato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -100,7 +100,7 @@ Esempio di utilizzo delle API:
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurazioni servizi cloud {#cloud-service-configurations}
+### Configurazioni Cloud Service {#cloud-service-configurations}
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ Per impostare un lavoratore proxy personalizzato è necessario:
 
 * Configurare e implementare (utilizzando Sling eventing):
 
-   * argomento personalizzato
+   * un argomento del processo personalizzato
    * un gestore eventi di processo personalizzato
 
 * Quindi utilizzate l&#39;API JobService per:
@@ -169,7 +169,7 @@ Nel diagramma seguente e nei passaggi viene descritto come procedere:
 
    Ad esempio, vedere `IDSJobProcessor.java` per il proxy worker IDS.
 
-1. Fate uso di `ProxyUtil.java` in dam-commons. Questo consente di inviare i processi ai lavoratori utilizzando il proxy dam.
+1. Fate uso di `ProxyUtil.java` in dam-commons. Questo consente di inviare i processi ai lavoratori utilizzando il proxy DAM.
 
 >[!NOTE]
 >
