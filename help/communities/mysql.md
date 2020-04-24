@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -25,12 +25,12 @@ Queste istruzioni descrivono come connettersi a MySQL Server, stabilire il datab
 
 Prima di configurare la funzione di abilitazione di MySQL for Communities, assicurarsi di
 
-* Installare [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server versione 5.6
-   * La versione 5.7 non è supportata per SCORM
-   * Può essere lo stesso server dell’istanza AEM di creazione
-* In tutte le istanze di AEM, installate il driver [JDBC ufficiale per MySQL](deploy-communities.md#jdbc-driver-for-mysql)
-* Installazione di Workbench [MySQL](https://dev.mysql.com/downloads/tools/workbench/)
-* Per tutte le istanze di AEM, installate il pacchetto [SCORM](enablement.md#scorm)
+* Installare [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server versione 5.6:
+   * La versione 5.7 non è supportata per SCORM.
+   * Può essere lo stesso server dell’istanza AEM di creazione.
+* In tutte le istanze di AEM, installate il driver [JDBC ufficiale per MySQL](deploy-communities.md#jdbc-driver-for-mysql).
+* Installare [MySQL workbench](https://dev.mysql.com/downloads/tools/workbench/).
+* Su tutte le istanze di AEM, installate il pacchetto [SCORM](enablement.md#scorm).
 
 ## Installazione di MySQL {#installing-mysql}
 
@@ -43,22 +43,19 @@ Poiché SQL non fa distinzione tra maiuscole e minuscole, per i sistemi operativ
 Ad esempio, per specificare tutti i nomi di tabella in lettere minuscole in un sistema operativo Linux:
 
 * Modifica file `/etc/my.cnf`
-* Nella `[mysqld]` sezione, aggiungi la seguente riga:
-   `lower_case_table_names = 1`
+* Nella `[mysqld]` sezione, aggiungi la seguente riga: `lower_case_table_names = 1`
 
 ### UTF8 set di caratteri {#utf-character-set}
 
 Per fornire un supporto multilingue migliore, è necessario utilizzare il set di caratteri UTF8.
 
 Modificate MySQL in modo che abbia UTF8 come set di caratteri:
-* mysql> SET NAMES &#39;utf8&#39;;
+* mysql > SET NAMES &#39;utf8&#39;;
 
 Modificate il database MySQL impostando il valore predefinito su UTF8:
 * Modifica file `/etc/my.cnf`
-* Nella `[client]` sezione, aggiungi la seguente riga:
-   `default-character-set=utf8`
-* Nella `[mysqld]` sezione, aggiungi la seguente riga:
-   `character-set-server=utf8`
+* Nella `[client]` sezione, aggiungi: `default-character-set=utf8`
+* Nella `[mysqld]` sezione, aggiungi: `character-set-server=utf8`
 
 ## Installazione di MySQL Workbench {#installing-mysql-workbench}
 
@@ -82,12 +79,11 @@ Al primo avvio di MySQL Workbench, a meno che non sia già in uso per altri scop
    * Nome utente: `root`
    * Password: `no password by default`
    * Schema predefinito: `leave blank`
-1. Selezionare `Test Connection` per verificare la connessione al servizio MySQL in esecuzione
+1. Selezionare `Test Connection` per verificare la connessione al servizio MySQL in esecuzione.
 
 **Note**:
-
-* La porta predefinita è `3306`
-* Il `Connection Name` nome scelto viene immesso come `datasource` nome nella configurazione [JDBC OSGi](#configure-jdbc-connections)
+* La porta predefinita è `3306`.
+* Il `Connection Name` nome scelto viene immesso come `datasource` nome nella configurazione [OSGi](#configure-jdbc-connections)JDBC.
 
 #### Connessione completata {#successful-connection}
 
@@ -107,7 +103,7 @@ All&#39;apertura della nuova connessione di abilitazione, è presente uno schema
 
 Gli script SQL vengono ottenuti utilizzando CRXDE Lite nell&#39;istanza di creazione. Il pacchetto [](deploy-communities.md#scorm) SCORM deve essere installato:
 
-1. Passa a CRXDE Lite
+1. Passa a CRXDE Lite:
    * Ad esempio, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Espandi la `/libs/social/config/scorm/` cartella
 1. Scarica `database_scormengine.sql`
@@ -117,13 +113,13 @@ Gli script SQL vengono ottenuti utilizzando CRXDE Lite nell&#39;istanza di creaz
 
 Un metodo per scaricare lo schema è:
 
-* Selezionare il `jcr:content`nodo del file sql
-* Il valore della `jcr:data`proprietà è un collegamento di visualizzazione
-* Selezionare il collegamento di visualizzazione per salvare i dati in un file locale
+* Selezionare il `jcr:content`nodo del file sql.
+* Il valore della `jcr:data`proprietà è un collegamento di visualizzazione.
+* Selezionare il collegamento di visualizzazione per salvare i dati in un file locale.
 
 ### Crea database SCORM {#create-scorm-database}
 
-Il database SCORM di attivazione da creare è:
+Il database SCORM di attivazione da creare è il seguente:
 
 * nome: `ScormEngineDB`
 * create da script:
@@ -134,7 +130,7 @@ Prima di installare i dati, assicurarsi di installare lo schema.
 
 >[!CAUTION]
 >
->Se il nome del database viene modificato, accertatevi di specificarlo correttamente in
+>Se il nome del database viene modificato, accertatevi di specificarlo correttamente in:
 >
 >* [Configurazione JDBC](#configure-jdbc-connections)
 >* [Configurazione SCORM](#configure-scorm)
@@ -164,13 +160,13 @@ L&#39;esecuzione dello `database_scormengine.sql` script per creare il database 
 
 #### Aggiorna {#refresh}
 
-Una volta eseguiti gli script, è necessario aggiornare la `SCHEMAS`sezione del `Navigator` database per visualizzare il nuovo database. Utilizzate l&#39;icona di aggiornamento a destra di &#39;SCHEMAS&#39;:
+Una volta eseguiti gli script, è necessario aggiornare la `SCHEMAS` sezione del `Navigator` database per visualizzare il nuovo database. Utilizzate l&#39;icona di aggiornamento a destra di &#39;SCHEMAS&#39;:
 
 ![chlimage_1-334](assets/chlimage_1-334.png)
 
 #### Risultato: scormenginedb {#result-scormenginedb}
 
-Dopo l&#39;installazione e l&#39;aggiornamento degli SCHEMI, il **`scormenginedb`**sarà visibile.
+Dopo l&#39;installazione e l&#39;aggiornamento degli SCHEMI, `scormenginedb` sarà visibile.
 
 ![chlimage_1-335](assets/chlimage_1-335.png)
 
@@ -186,18 +182,18 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
 * Accesso con privilegi di amministratore
 * Accedere alla console [Web](../../help/sites-deploying/configuring-osgi.md)
    * Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-* Individua il `Day Commons JDBC Connections Pool`
+* Individua la variabile `Day Commons JDBC Connections Pool`
 * Selezionate l&#39; `+` icona per creare una nuova configurazione
 
 ![chlimage_1-336](assets/chlimage_1-336.png)
 
 * Immettete i seguenti valori:
    * **[!UICONTROL Classe]** driver JDBC: `com.mysql.jdbc.Driver`
-   * **Connessione DBC URIJ **: se MySQL Server non è lo stesso di AEM Server,`jdbc:mysql://localhost:3306/aem63reporting`specificate il server al posto di localhost
-   * **[!UICONTROL Nome utente]**: Root o immettere il nome utente configurato per MySQL Server, se non &#39;root&#39;
-   * **[!UICONTROL Password]**: Cancella questo campo se non è impostata alcuna password per MySQL, altrimenti immetti la password configurata per MySQL Nome utente
-   * **[!UICONTROL Nome]** origine dati: Nome immesso per la connessione [](#new-connection-settings)MySQL, ad esempio &quot;enablement&quot;
-* Seleziona **[!UICONTROL Salva]**
+   * **Connessione DBC URIJ **: se MySQL Server non è lo stesso di AEM Server,`jdbc:mysql://localhost:3306/aem63reporting`specificate il server al posto di localhost.
+   * **[!UICONTROL Nome utente]**: Radice o immettere il nome utente configurato per MySQL Server, se non &#39;root&#39;.
+   * **[!UICONTROL Password]**: Deselezionare questo campo se non è impostata alcuna password per MySQL, altrimenti immettere la password configurata per il nome utente MySQL.
+   * **[!UICONTROL Nome]** origine dati: Nome immesso per la connessione [](#new-connection-settings)MySQL, ad esempio &quot;enablement&quot;.
+* Seleziona **[!UICONTROL Salva]**.
 
 ## Configura punteggio {#configure-scorm}
 
@@ -209,13 +205,13 @@ Questa configurazione è presente quando viene installato il pacchetto [](deploy
 
 Tutte le istanze di pubblicazione e creazione puntano allo stesso server MySQL.
 
-Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server deve essere specificato al posto di &quot;localhost&quot; nel servizio ScormEngine, che in genere viene popolato dalla configurazione [JDBC Connection](#configure-jdbc-connections) .
+Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server deve essere specificato al posto di &quot;localhost&quot; nel servizio ScormEngine, che in genere viene popolato dalla configurazione della connessione [](#configure-jdbc-connections) JDBC.
 
 * Per ogni istanza di creazione e pubblicazione di AEM
 * Accesso con privilegi di amministratore
 * Accedere alla console [Web](../../help/sites-deploying/configuring-osgi.md)
    * Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-* Individua il `AEM Communities ScormEngine Service`
+* Individua la variabile `AEM Communities ScormEngine Service`
 * Selezionate l’icona di modifica
    ![chlimage_1-337](assets/chlimage_1-337.png)
 * Verificate che i seguenti valori di parametro siano coerenti con la configurazione [JDBC Connection](#configurejdbcconnectionspool) :
@@ -225,21 +221,22 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
 * Per quanto riguarda il seguente parametro:
    * **[!UICONTROL Password]** utente scorm: NON MODIFICARE
 
-      Solo per uso interno. È destinato a un utente di servizi speciale utilizzato da AEM Communities per comunicare con il motore di valutazione.
+      Solo per uso interno: È destinato a un utente di servizi speciale utilizzato da AEM Communities per comunicare con il motore di valutazione.
 * Seleziona **[!UICONTROL Salva]**
 
 ### Filtro Adobe Granite CSRF {#adobe-granite-csrf-filter}
 
 Per garantire il corretto funzionamento dei corsi di abilitazione in tutti i browser, è necessario aggiungere Mozilla come agente utente che non è controllato dal filtro CSRF.
 
-* Su ogni istanza AEM pubblicata
-* Accesso con privilegi di amministratore
+* Accedete all’istanza di pubblicazione AEM con privilegi di amministratore.
 * Accedere alla console [Web](../../help/sites-deploying/configuring-osgi.md)
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
-* Individua `Adobe Granite CSRF Filter`
-* Selezionate l’icona di modifica
+* Individua `Adobe Granite CSRF Filter`.
+* Selezionate l’icona di modifica.
+
    ![chlimage_1-337](assets/chlimage_1-338.png)
-* Selezionate l&#39; `[+]` icona per aggiungere un agente utente sicuro
-* Enter `Mozilla/*`
-* Seleziona **[!UICONTROL Salva]**
+
+* Selezionate l&#39; `[+]` icona per aggiungere un agente utente sicuro.
+* Enter `Mozilla/*`.
+* Seleziona **[!UICONTROL Salva]**.
 
