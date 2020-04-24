@@ -11,40 +11,40 @@ content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ---
 
 
-# Notifiche community{#communities-notifications}
+# Notifiche community {#communities-notifications}
 
 ## Panoramica {#overview}
 
 In AEM Communities è disponibile una sezione che mostra gli eventi di interesse per i membri della community sottoscritti.
 
-Le notifiche sono simili alle [attività](/help/communities/essentials-activities.md) e alle [sottoscrizioni](/help/communities/subscriptions.md) derivanti da
+Le notifiche sono simili alle [attività](/help/communities/essentials-activities.md) e alle [sottoscrizioni](/help/communities/subscriptions.md) derivanti da:
 
-* il contenuto di pubblicazione del membro
-* il membro che sceglie di seguire un altro membro
-* il membro che sceglie di seguire argomenti, articoli e altri thread specifici di contenuto
-* il tag del membro (@reference) un altro membro della community in un contenuto generato dall&#39;utente
+* Il contenuto di pubblicazione del membro.
+* Il membro che sceglie di seguire un altro membro.
+* Il membro che sceglie di seguire argomenti, articoli e altri thread specifici di contenuto.
+* Il membro con tag (@reference) un altro membro della community in un contenuto generato dall&#39;utente.
 
-Ciò che distingue le notifiche dalle attività e dalle sottoscrizioni è
+Ciò che distingue le notifiche dalle attività e dalle sottoscrizioni è:
 
-* un collegamento alla sezione delle notifiche è sempre presente nell&#39;intestazione di un sito community
+* Un collegamento alla sezione delle notifiche è sempre presente nell&#39;intestazione di un sito community:
 
-   * le attività richiedono che la funzione [del flusso di](/help/communities/functions.md#activity-stream-function) attività sia inclusa nella struttura del sito comunitario
-   * le sottoscrizioni richiedono [la configurazione dell&#39;e-mail](/help/communities/email.md)
+   * Le attività richiedono che la funzione [del flusso di](/help/communities/functions.md#activity-stream-function) attività sia inclusa nella struttura del sito della comunità.
+   * Le iscrizioni richiedono [la configurazione dell&#39;e-mail](/help/communities/email.md).
 
-* l&#39;implementazione delle notifiche avviene tramite canali scalabili e collegabili
+* L&#39;implementazione delle notifiche avviene tramite canali scalabili e collegabili:
 
-   * le attività sono disponibili solo sul Web
-   * le iscrizioni sono disponibili solo tramite e-mail
+   * Le attività sono disponibili solo sul Web.
+   * Le iscrizioni sono disponibili solo tramite e-mail.
 
-A livello di Community [FP1](/help/communities/deploy-communities.md#latestfeaturepack), i canali di notifica disponibili sono
+A partire dal [FP1](/help/communities/deploy-communities.md#latestfeaturepack)di Communities, i canali di notifica disponibili sono:
 
-* il canale Web a cui si accede tramite il `Notifications` collegamento
-* il canale e-mail, disponibile quando l&#39;e-mail è configurato correttamente
+* Canale Web a cui si accede tramite il `Notifications` collegamento.
+* Il canale e-mail, disponibile quando l’e-mail è configurata correttamente.
 
 I canali futuri sono mobile e desktop.
 
@@ -60,30 +60,30 @@ Per istruzioni sulla configurazione dell’e-mail, consultate [Configurazione de
 
 I componenti devono essere configurati per abilitare quanto segue. Le funzioni che consentono di seguire sono [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filibreria](/help/communities/file-library.md)[](/help/communities/comments.md), commenti.
 
-Tieni presente che
+**Nota**:
 
-* i componenti utilizzati all&#39;interno di modelli [di](/help/communities/sites.md) sito community e modelli [di](/help/communities/tools-groups.md) gruppo possono già essere configurati per consentire:
+* I componenti utilizzati all&#39;interno dei modelli [di](/help/communities/sites.md) sito community e dei modelli [di](/help/communities/tools-groups.md) gruppo possono già essere configurati per essere seguiti.
 
-* i profili membri sono già configurati per consentire agli altri membri di seguire
+* I profili dei membri sono già configurati per consentire agli altri membri di seguirli.
 
 ## Notifiche dai seguenti {#notifications-from-following}
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
-Il tasto **Follow **fornisce un mezzo per seguire le voci come attività, iscrizioni e/o notifiche. Ogni volta che il tasto **Follow **è selezionato, è possibile attivare o disattivare una selezione. La `Email Subscriptions` selezione è presente solo se configurata.
+Il pulsante **[!UICONTROL Segui]** consente di seguire le voci come attività, iscrizioni e/o notifiche. Ogni volta che si seleziona il pulsante **[!UICONTROL Segui]** , è possibile attivare o disattivare una selezione. La `Email Subscriptions` selezione è presente solo se configurata.
 
-Se è selezionato un metodo di seguito, il testo del pulsante diventa **Seguente**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
+Se è selezionato un metodo di seguito, il testo del pulsante diventa **[!UICONTROL Seguente]**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
 
-Verrà visualizzato il pulsante **Follow **I
+Verrà visualizzato il pulsante **[!UICONTROL Segui]** :
 
-* quando si visualizza il profilo di un altro membro
-* in una pagina delle funzioni principali, ad esempio forum, QnA e blog
+* Quando si visualizza il profilo di un altro membro.
+* In una pagina delle funzioni principali, ad esempio forum, QnA e blog:
 
-   * segue tutte le attività per quella caratteristica generale
+   * Segue tutta l&#39;attività per quella funzione generale.
 
-* per un post specifico, ad esempio un argomento forum, una domanda QnA o un articolo blog
+* Per un post specifico, ad esempio un argomento del forum, una domanda QnA o un articolo di blog:
 
-   * segue tutte le attività per quella specifica voce
+   * Segue tutta l&#39;attività per quella voce specifica.
 
 ## Gestione delle impostazioni di notifica {#managing-notification-settings}
 
@@ -123,7 +123,7 @@ Quando il canale e-mail è abilitato, il membro riceve un messaggio e-mail conte
 
 Le organizzazioni possono personalizzare le notifiche e-mail [sovrapponendo](/help/communities/client-customize.md#overlays) i modelli in **/libs/settings/community/templates/email/html**.
 
-Ad esempio, per modificare le menzioni notifiche e-mail (per un componente community) aggiungere una condizione** if **per la **menzione verbo** nei modelli dei componenti per i quali hai attivato il **supporto @menzioni** .
+Ad esempio, per modificare i riferimenti alle notifiche e-mail (per un componente community), aggiungete una condizione **if** per il **riferimento** al verbo nei modelli dei componenti per i quali avete attivato il supporto **@menzioni** .
 
 Per modificare il modello di notifiche e-mail per @Menzioni nei commenti del blog, posizionate fuori dalla casella in: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/it**
 
