@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -36,7 +36,7 @@ Per sovrapporre i commenti è necessario:
 
 Se desiderate personalizzare il messaggio delle notifiche e-mail, potete farlo [sovrapponendo](/help/communities/client-customize.md#overlays) i modelli in **/libs/settings/community/templates/email/html**.
 
-Ad esempio, per modificare le notifiche e-mail di menzioni (per un componente community specifico in cui viene creato ugc) aggiungete una condizione** if **per la **menzione verbo** nei modelli dei componenti per i quali avete attivato il **supporto @menzioni** .
+Ad esempio, per modificare le notifiche e-mail di menzioni (per un componente community specifico in cui viene creato ugc) aggiungete una condizione **if** per il **riferimento** al verbo nei modelli dei componenti per i quali avete attivato il supporto **@menzioni** .
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -44,4 +44,4 @@ Ad esempio, per modificare le notifiche e-mail di menzioni (per un componente co
 {{/equals}}\
 ```
 
-Per modificare il modello di notifiche e-mail per @Menzioni nei commenti del blog, posizionate fuori dalla casella in: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/it**
+Per modificare il modello di notifiche e-mail per @Menzioni nei commenti del blog, posizionate fuori dalla casella in: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
