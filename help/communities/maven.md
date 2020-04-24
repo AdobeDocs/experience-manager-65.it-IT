@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Questa sezione della documentazione di AEM Communities è oltre a:
 
-* [Come creare progetti AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md)
+* [Creazione di progetti AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Esistono ora due artefatti &quot;uber&quot; che sostituiscono singoli artefatti:
 
@@ -44,18 +44,19 @@ Di seguito è riportato un esempio di GAV per il Jar API di AEM Communities:
 Verificate che la versione specificata corrisponda alla versione del pacchetto Community installata per AEM Communities. Per verificare il numero di versione installato:
 
 1. Effettua l’accesso con privilegi amministrativi.
-2. Passa a Gestione [](../../help/sites-administering/package-manager.md)pacchetti. Ad esempio, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Passa a Gestione [](../../help/sites-administering/package-manager.md)pacchetti. Ad esempio, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-3. individuare il pacchetto *cq-socialcommunity-pkg-1.x.xxx*
-4. estraete la versione dal nome del pacchetto
-   * la prima versione di AEM 6.3 è 1.11.170
-   * i pacchetti di funzionalità saranno versioni 1.12.xxx
+1. Individuate il pacchetto *cq-socialcommunity-pkg-1.x.xxx*
+1. Estraete la versione dal nome del pacchetto:
+   * La prima versione di AEM 6.3 è 1.11.170.
+   * I Feature Pack saranno versioni 1.12.xxx.
 
 >[!NOTE]
 >
 >Si consiglia di essere aggiornati con la versione più recente di Communities.
 >
 >Visitate la sezione [Ultime release](deploy-communities.md#latest-releases) per identificare la versione più recente.
+
 
 ## Esempio di dipendenza del cielo {#maven-dependency-example}
 
