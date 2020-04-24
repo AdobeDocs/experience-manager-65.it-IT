@@ -3,7 +3,7 @@ title: Elaborazione delle risorse tramite gestori e flussi di lavoro di contenut
 description: Scopri i gestori di contenuti multimediali e come utilizzare i flussi di lavoro per eseguire attività sulle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -496,7 +496,7 @@ Quindi, aggiungi il passaggio della riga di comando al flusso di lavoro **[!UICO
 
 Per testare il flusso di lavoro modificato, aggiungete una risorsa a `/content/dam`.
 
-1. Nel file system, ottenere un&#39;immagine .tiff di vostra scelta. Rinominarlo in `myImage.tiff` e copiarlo in `/content/dam`, ad esempio utilizzando WebDAV.
+1. Nel file system, ottenere un&#39;immagine TIFF di vostra scelta. Rinominarlo in `myImage.tiff` e copiarlo in `/content/dam`, ad esempio utilizzando WebDAV.
 1. Passate alla console **[!UICONTROL CQ5 DAM]** , ad esempio `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Aprite la risorsa **[!UICONTROL myImage.tiff]** e verificate che l’immagine capovolta e le tre miniature siano state create.
 
@@ -516,7 +516,7 @@ Ad esempio, se ImageMagick è installato sul disco che ospita il server AEM e se
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-quindi, quando il flusso di lavoro viene eseguito, il passaggio viene applicato solo alle risorse con immagini/gif o mime:image/tiff come tipi mime, crea un’immagine capovolta dell’originale, la converte in .jpg e crea tre miniature con le dimensioni: 140x100, 48x48 e 10x250.
+quindi, quando il flusso di lavoro viene eseguito, il passaggio viene applicato solo alle risorse che hanno `image/gif` o `mime:image/tiff` come `mime-types`, crea un’immagine capovolta dell’originale, la converte in JPG e crea tre miniature con le dimensioni seguenti: 140x100, 48x48 e 10x250.
 
 Per creare le tre miniature standard utilizzando ImageMagick, usate i seguenti argomenti di [!UICONTROL processo] :
 
