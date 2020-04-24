@@ -3,7 +3,7 @@ title: Organizzazione delle risorse digitali
 description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -36,7 +36,7 @@ Il modo più semplice per organizzare le risorse è salvarle in cartelle. È ana
 
 ## Organizzare le risorse tramite i tag {#use-tags-to-organize-assets}
 
-Utilizzando i tag come metadati potete facilmente cercare le risorse, creare raccolte utilizzando i risultati di ricerca, migliorare la classificazione di alcune risorse e sfruttare gli algoritmi AI di Adobe Sensei per l&#39;individuazione delle risorse.
+Utilizzando i tag, come metadati, potete facilmente cercare le risorse, creare raccolte utilizzando i risultati di ricerca, migliorare la classifica di ricerca per alcune risorse e sfruttare gli algoritmi AI di Adobe Sensei per l&#39;individuazione delle risorse.
 
 Risorse Adobe Experience Manager utilizza un algoritmo di autoapprendimento per creare tag altamente descrittivi che consentono di trovare la risorsa giusta in pochi clic. I tag avanzati utilizzano Adobe Sensei, il nostro framework di machine learning e intelligenza artificiale, che può essere addestrato a riconoscere e applicare sia tag standard che tag aziendali specifici alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse
 
@@ -63,7 +63,7 @@ Un profilo di elaborazione contiene i comandi di elaborazione delle risorse appl
 
 La standardizzazione dell’utilizzo dei metadati, della denominazione dei file e della struttura delle cartelle garantisce che, con la crescita del pool di risorse digitali, i profili di elaborazione possano essere applicati alle cartelle con maggiore precisione e coerenza.
 
-Per ulteriori informazioni sui diversi profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
+Per ulteriori informazioni sui vari profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
 
 * [Profili per elaborare metadati, immagini e video](processing-profiles.md)
 * [Profili metadati](metadata-profiles.md)
