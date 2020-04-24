@@ -1,14 +1,14 @@
 ---
-title: API HTTP Assets
+title: API HTTP di Assets
 description: Scopri l’implementazione, il modello dati e le funzionalità dell’API HTTP Assets. Utilizzate l'API HTTP Assets per eseguire varie attività sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# API HTTP Assets {#assets-http-api}
+# API HTTP di Assets {#assets-http-api}
 
 ## Panoramica {#overview}
 
@@ -72,7 +72,7 @@ In AEM una cartella contiene i seguenti componenti:
 
 L&#39;API HTTP Assets include le seguenti funzionalità:
 
-* Recupero di un elenco di cartelle
+* Recuperare un elenco di cartelle
 * Creare una cartella
 * Creare una risorsa
 * Aggiorna binario risorsa
@@ -86,15 +86,15 @@ L&#39;API HTTP Assets include le seguenti funzionalità:
 
 >[!NOTE]
 >
->Per semplificare la lettura, gli esempi seguenti omettono la notazione cURL completa. In realtà la notazione è correlata con [Resty](https://github.com/micha/resty) che è un wrapper di script per `cURL`.
+>Per semplificare la leggibilità, gli esempi seguenti omettono la notazione cURL completa. In realtà la notazione è correlata con [Resty](https://github.com/micha/resty) che è un wrapper di script per `cURL`.
 
 **Prerequisiti**
 
 * Passa a `https://[aem_server]:[port]/system/console/configMgr`.
-* Andate a Filtro **CSRF** Adobe Granite.
+* Passate al filtro **CSRF** Adobe Granite.
 * Accertatevi che la proprietà **Filter Methods** includa: POST, PUT, DELETE.
 
-## Recupero di un elenco di cartelle {#retrieve-a-folder-listing}
+## Recuperare un elenco di cartelle {#retrieve-a-folder-listing}
 
 Recupera una rappresentazione Siren di una cartella esistente e delle relative entità figlie (sottocartelle o risorse).
 
@@ -118,9 +118,9 @@ La classe dell&#39;entità restituita è assets/folder.
 
 Le proprietà delle entità contenute sono un sottoinsieme dell&#39;intero insieme di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell&#39;entità, i clienti devono recuperare il contenuto dell&#39;URL indicato dal collegamento con un `rel` di `self`.
 
-## Creare una cartella {#create-a-folder}
+## Create a Folder {#create-a-folder}
 
-Crea un nuovo `sling`: `OrderedFolder` nel percorso indicato. Se viene fornito un * invece del nome di un nodo, il servlet utilizzerà il nome del parametro come nome del nodo. Accettato come dati della richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utile per creare una cartella direttamente da un modulo HTML. Inoltre, le proprietà della cartella possono essere specificate come parametri di query URL.
+Crea un nuovo `sling`: `OrderedFolder` nel percorso indicato. Se viene fornito un * invece del nome di un nodo, il servlet utilizza il nome del parametro come nome del nodo. Accettato come dati della richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utile per creare una cartella direttamente da un modulo HTML. Inoltre, le proprietà della cartella possono essere specificate come parametri di query URL.
 
 L&#39;operazione avrà esito negativo con un codice di `500` risposta se il nodo padre del percorso specificato non esiste. Se la cartella esiste già, viene restituito un codice di `409` risposta.
 
