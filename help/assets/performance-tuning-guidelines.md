@@ -4,7 +4,7 @@ description: Suggerimenti e indicazioni sulla configurazione di AEM, modifiche a
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -124,7 +124,7 @@ In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantit�
 
 ### Flussi di lavoro transitori {#transient-workflows}
 
-Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa  DAM su Temporaneo. Questa impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro, perché in questo caso i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
+Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa  DAM su Temporaneo. L&#39;impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro perché, in questo caso, i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
 
 1. Passa a `/miscadmin` nell’istanza di AEM in `https://[aem_server]:[port]/miscadmin`.
 
@@ -267,7 +267,7 @@ Alcune ottimizzazioni possono essere effettuate sulle configurazioni dell&#39;in
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false
