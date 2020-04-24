@@ -3,7 +3,7 @@ title: Smart tag migliorati
 description: Smart tag migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -44,7 +44,7 @@ Prima di poter utilizzare Smart Content Service, accertatevi quanto segue per cr
 
 ## Onboarding {#onboarding}
 
-Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo per Experience Manager. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento ad Adobe IO.
+Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo per Experience Manager. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento ad Adobe I/O.
 
 L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con Experience Manager. Per integrare il servizio con Experience Manager Assets, consulta [Configurare i tag](config-smart-tagging.md)avanzati.
 
