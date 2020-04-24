@@ -11,50 +11,61 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# Moderazione del contenuto della community{#moderating-community-content}
+# Moderazione del contenuto della community {#moderating-community-content}
 
 ## Panoramica {#overview}
 
 Il contenuto della community, noto anche come contenuto generato dall’utente (UGC, user generated content), viene creato quando un membro (registrato nel visitatore del sito) pubblica contenuto da un sito della community pubblicato tramite l’interazione con uno dei seguenti componenti della community:
 
-* [blog](/help/communities/blog-feature.md) : i membri pubblicano un articolo o un commento di blog
-* [calendario](/help/communities/calendar.md) : i membri pubblicano un evento o un commento del calendario
-* [commenti](/help/communities/comments.md) : i membri pubblicano un commento o una risposta a un commento
+* [Blog](/help/communities/blog-feature.md): i membri pubblicano un articolo o un commento del blog.
+* [Calendario](/help/communities/calendar.md): i membri pubblicano un evento o un commento del calendario.
+* [Commenti](/help/communities/comments.md): i membri pubblicano un commento o una risposta a un commento.
 
-* [forum](/help/communities/forum.md) : i membri pubblicano un nuovo argomento o rispondono a un argomento
-* [ideazione](/help/communities/ideation-feature.md) : i membri pubblicano un&#39;idea o un commento
-* [QnA](/help/communities/working-with-qna.md) : i membri creano una domanda o rispondono a una domanda
-* [recensioni](/help/communities/reviews.md) : i membri pubblicano un commento durante la valutazione di un elemento
+* [Forum](/help/communities/forum.md): i membri pubblicano un nuovo argomento o rispondono a un argomento.
+* [Ideazione](/help/communities/ideation-feature.md): i membri pubblicano un&#39;idea o un commento.
+* [QnA](/help/communities/working-with-qna.md): i membri creano una domanda o rispondono a una domanda.
+* [Recensioni](/help/communities/reviews.md): i membri pubblicano un commento durante la valutazione di un elemento.
 
-La moderazione di UGC è utile per riconoscere contributi positivi e limitare quelli negativi (come spam e linguaggio offensivo). UGC può essere moderato da diversi ambienti: [](/help/communities/working-with-srp.md)
+La moderazione di UGC è utile per riconoscere contributi positivi e limitare quelli negativi (come spam e linguaggio offensivo). UGC può essere moderato da diversi ambienti:
 
-* [console](/help/communities/moderation.md)di moderazione in bloccoLa console Moderazione è accessibile sia dagli amministratori che dai moderatori delle [community](/help/communities/users.md) nell’ambiente pubblico, sia dagli amministratori nell’ambiente di authoring. Questo è possibile quando il contenuto della community viene memorizzato in uno store [](/help/communities/working-with-srp.md)comune.
+* [Archivio di contenuti community](working-with-srp.md)
 
-* [moderazione contestuale](/help/communities/in-context.md)Moderazione nell’ambiente di pubblicazione può essere eseguita da amministratori e moderatori della community direttamente sulla pagina in cui è stato pubblicato il contenuto.
+* [console di moderazione in blocco](moderation.md)
+
+   La console Moderazione è accessibile sia dagli amministratori che dai moderatori [della](/help/communities/users.md) community nell’ambiente pubblico, sia dagli amministratori nell’ambiente di authoring. Questo è possibile quando il contenuto della community viene memorizzato in uno store [](/help/communities/working-with-srp.md)comune.
+
+* [Moderazione contestuale](in-context.md)
+
+   La moderazione nell’ambiente di pubblicazione può essere eseguita da amministratori e moderatori della community direttamente sulla pagina in cui è stato pubblicato il contenuto.
 
 ## Azioni di moderazione {#moderation-actions}
 
 Le azioni che possono essere eseguite sul contenuto pubblicato (UGC) variano a seconda dell&#39;identità dell&#39;utente e dell&#39;ambiente. La tabella seguente utilizza la seguente terminologia per descrivere i vari ruoli in base all&#39;identità dell&#39;utente:
 
 * `Admin`
-un utente membro del gruppo [community-amministratori](/help/communities/users.md)
+
+   Utente membro del gruppo [community-amministratori](users.md) .
 
 * `Moderator`
-membro di un gruppo di moderatori [](/help/communities/users.md#publishenvironmentusersandgroups) community (con autorizzazioni [](/help/communities/in-context.md#moderatorpermissions)moderatore)
+
+   Un membro di un gruppo di moderatori [](users.md#publishenvironmentusersandgroups) community (con autorizzazioni [](in-context.md#moderatorpermissions)moderatore).
 
 * `Creator`
-l’utente che ha pubblicato il contenuto
+
+   Utente che ha pubblicato il contenuto.
 
 * `Member`
-un utente con accesso senza autorizzazioni speciali
+
+   Un utente con accesso senza autorizzazioni speciali.
 
 * `Visitor`
-un utente anonimo
+
+   Un utente anonimo.
 
 <table>
  <tbody>
@@ -167,9 +178,9 @@ L’azione Chiudi/Riapri può essere eseguita da amministratori o moderatori del
 
 Contrassegno è un mezzo per qualsiasi membro che ha effettuato l’accesso, ad eccezione del creatore del contenuto, per indicare che si è verificato un problema con il contenuto di un post. Una volta contrassegnata, viene visualizzata un&#39;icona di annullamento del contrassegno che consente allo stesso membro di annullare l&#39;flag del contenuto.
 
-La moderazione contestuale può essere configurata per consentire ai membri di selezionare un motivo durante la segnalazione di un post. L&#39;elenco dei motivi di flag selezionabili è configurabile, specificando se è possibile immettere o meno un motivo personalizzato. Il motivo del flag viene salvato con l&#39;UGC, ma il motivo non attiva alcuna azione particolare. Solo il numero di flag attiva una notifica. Il contenuto contrassegnato viene annotato come tale, in modo che i moderatori possano agirvi.
+La moderazione contestuale può essere configurata per consentire ai membri di selezionare un motivo durante la segnalazione di un post. L&#39;elenco dei motivi di flag selezionabili è configurabile, specificando se è possibile immettere o meno un motivo personalizzato. Il motivo del flag viene salvato con l&#39;UGC, ma il motivo non attiva alcuna azione particolare. Solo il numero di flag attiva una notifica. Il contenuto contrassegnato viene annotato come tale, in modo che i moderatori possano agire su di esso.
 
-Il sistema tiene traccia di tutti i flag, che sono stati contrassegnati e del motivo del flag e invia un evento quando la soglia è stata raggiunta. Se l&#39;UGC è consentito da un moderatore della comunità, queste bandiere sono archiviate. Dopo l&#39;autorizzazione e l&#39;archiviazione, in caso di flaggings successivi, essi sarebbero archiviati come se non ci fossero stati flaggings precedenti.
+Il sistema tiene traccia di tutti i flag, che sono stati contrassegnati, e del motivo del flag e invia un evento quando la soglia è stata raggiunta. Se l&#39;UGC è consentito da un moderatore della comunità, queste bandiere sono archiviate. Dopo l&#39;autorizzazione e l&#39;archiviazione, in caso di flaggings successivi, essi sarebbero archiviati come se non ci fossero stati flaggings precedenti.
 
 ### Consenti {#allow}
 
@@ -179,10 +190,11 @@ L&#39;azione Consenti è un&#39;opzione per UGC che è stata contrassegnata, Rif
 
 ### Premoderazione {#premoderation}
 
-Quando UGC è premoderato, il post non apparirà sul sito pubblicato fino all&#39;approvazione da parte di un&#39;azione di moderazione. Durante la creazione di un sito [](/help/communities/sites-console.md)community, selezionando la casella di controllo `[Content is Premoderated](/help/communities/sites-console.md#moderation)` sarà possibile eseguire la premoderazione per l&#39;intero sito. Una volta inseriti i componenti in una pagina, i componenti che supportano la moderazione possono essere configurati per la moderazione utilizzando un’impostazione nella relativa finestra di modifica:
+Quando UGC è premoderato, il post non apparirà sul sito pubblicato fino all&#39;approvazione da parte di un&#39;azione di moderazione. Durante la creazione di un sito [](/help/communities/sites-console.md)community, selezionando la casella [Contenuto è premoderato](sites-console.md#moderation) la moderazione verrà abilitata per l&#39;intero sito. Una volta inseriti i componenti in una pagina, i componenti che supportano la moderazione possono essere configurati per la moderazione utilizzando un’impostazione nella relativa finestra di dialogo di modifica:
 
-* [commenti](/help/communities/comments.md) e [revisioni](/help/communities/reviews.md)nella scheda Moderazione **** utente, selezionare **Pre-moderazione**
-* [forum](/help/communities/forum.md), [ideazione](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md)e [calendario](/help/communities/calendar.md)nella scheda **Impostazioni** , selezionare **Moderato**
+* [Commenti](comments.md) e [revisioni](reviews.md)in Moderazione **** utente > **[!UICONTROL Pre-moderazione]**.
+
+* [Forum](/help/communities/forum.md), [ideazione](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md)e [calendario](/help/communities/calendar.md)in **[!UICONTROL Impostazioni]** > **** Moderato.
 
 ### Spam Detection {#spam-detection}
 
@@ -200,10 +212,10 @@ Il moderatore può visualizzare un post di questo tipo e contrassegnare lo stess
 
 Per attivare il motore di rilevamento dello spam, effettuate le seguenti operazioni:
 
-1. Aprite la console [](https://localhost:4502/system/console/configMgr)Web, accedendo a /system/console/configMgr.
+1. Aprite la console [](https://localhost:4502/system/console/configMgr)Web accedendo a `/system/console/configMgr`.
 
 1. Individua la configurazione di Moderazione **automatica di** AEM Communities e modificala.
-1. Aggiungete la voce &quot;SpamProcess&quot;.
+1. Aggiungere la voce **[!UICONTROL SpamProcess]** .
 
 ![spam](assets/spamprocess.png)
 
@@ -211,20 +223,21 @@ Per attivare il motore di rilevamento dello spam, effettuate le seguenti operazi
 >
 >Il rilevamento dello spam è implementato solo per le impostazioni internazionali in lingua inglese.
 
+
 ### Sentimento {#sentiment}
 
 Il sentimento è calcolato in base al numero di parole chiave positive e negative ([parole chiave](#configuringwatchwords)) presenti in un post (UGC).
 
-L&#39;analisi dei sentimenti utilizza una serie di regole preconfigurate e calcola il sentimento dell&#39;UGC. Le regole predefinite si trovano in `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+L&#39;analisi dei sentimenti utilizza una serie di regole preconfigurate e calcola il sentimento dell&#39;UGC. Le regole predefinite si trovano in: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 Il valore generato dalle regole è compreso tra 1 (tutte le parole negative, nessuna parola positiva) e 10 (tutte positive, nessuna parola negativa). Un valore di sentimento pari a 5 è un sentimento neutro ed è il valore predefinito.
 
 Le regole definite nel componente /libs sono:
 
-* Regola 1: imposta il valore su 1 se non ci sono parole positive e almeno una parola negativa
-* Regola 2: imposta il valore su 10 se non ci sono parole negative e almeno una parola positiva
-* Regola 3: imposta il valore su 3 se sono presenti più parole negative che parole positive
-* Regola 4: imposta il valore su 8 se sono presenti più parole positive che negative
+* Articolo 1: imposta il valore su 1 se non ci sono parole positive e almeno una parola negativa.
+* Articolo 2: imposta il valore su 10 se non sono presenti parole negative e almeno una parola positiva.
+* Articolo 3: imposta il valore su 3 se sono presenti più parole negative che parole positive.
+* Articolo 4: imposta il valore su 8 se sono presenti più parole positive che parole negative.
 
 Per sovrascrivere o aggiungere regole, create un set di regole nella directory /apps seguendo la struttura delle regole predefinite. Modificate la configurazione dei sentimenti per identificare la posizione delle regole.
 
@@ -234,33 +247,40 @@ Dalla console [di moderazione in](/help/communities/moderation.md)massa, è poss
 
 #### Watchwords {#watchwords}
 
-Le comunità AEM forniscono un *analizzatore di parole d&#39;ordine *come passo nel processo di valutazione del [sentimento](#sentiment). Il contributo al valore sentimentale fornito dalle parole d&#39;ordine è dovuto al confronto tra le parole d&#39;ordine negative e positive utilizzate nei contenuti pubblicati, nonché alle parole proibite.
+Le community di AEM forniscono un analizzatore *di* parole chiave come passo nel processo di valutazione del [sentimento](#sentiment). Il contributo al valore sentimentale fornito dalle parole d&#39;ordine è dovuto al confronto tra le parole d&#39;ordine negative e positive utilizzate nei contenuti pubblicati, nonché alle parole proibite.
 
 #### Configurare sentimento e parole di controllo {#configure-sentiment-and-watchwords}
 
 L&#39;elenco delle parole d&#39;ordine positive e negative può essere personalizzato come possono essere le regole del sentimento.
 
-L&#39;elenco predefinito di parole da guardare può essere immesso come proprietà di un nodo nel repository, simile al valore predefinito o ignorando il valore predefinito configurando il servizio OSGi `sentimentprocess.name`con l&#39;elenco di parole.
+L&#39;elenco predefinito di parole da guardare può essere immesso come proprietà di un nodo nel repository, simile al valore predefinito o ignorando il valore predefinito configurando il servizio OSGi `sentimentprocess.name` con l&#39;elenco di parole.
 
 È inoltre possibile modificare **sentimentprocess.name** per fare riferimento alla posizione di un set personalizzato di regole di sentimenti.
 
-Per configurare sentimento e parole d&#39;ordine:
+Per configurare sentimento e parole di controllo:
 
-* su un’istanza di creazione
-* accesso come amministratore
-* apri console [Web](https://localhost:4502/system/console/configMgr)
-* locate `sentimentprocess.name`
-* selezionare la configurazione da aprire in modalità di modifica
+* Accedete all’istanza di creazione come amministratore.
+* Apri console [](https://localhost:4502/system/console/configMgr)Web.
+* Individua `sentimentprocess.name`.
+* Selezionate la configurazione da aprire in modalità di modifica.
 
 ![sentimental](assets/sentimentprocess.png)
 
-* **Parole di controllo** positive Un elenco separato da virgole di parole che contribuiscono a un sentimento positivo che ignora le impostazioni predefinite. Il valore predefinito è un elenco vuoto.
+* **Parole di controllo positive**
 
-* **Parole di controllo** negative Un elenco separato da virgole di parole che contribuiscono a un sentimento negativo che ignora le impostazioni predefinite. Il valore predefinito è un elenco vuoto.
+   Elenco separato da virgole di parole che contribuiscono a un sentimento positivo che ignora le impostazioni predefinite. Il valore predefinito è un elenco vuoto.
 
-* **Percorso esplicito del nodo** Watchwords La posizione dell&#39;archivio di un nodo contenente le proprietà `positive` e `negative` predefinite che specificano le parole di controllo predefinite. Default is `/libs/settings/community/watchwords/default`.
+* **Parole di controllo negative**
 
-* **Regole** sentimento La posizione dell&#39;archivio delle regole per il calcolo del sentimento in base alle parole di controllo positive e negative. Il valore predefinito è `/libs/cq/workflow/components/workflow/social/sentiments/rules` (ma non è più presente alcun flusso di lavoro).
+   Elenco separato da virgole di parole che contribuiscono a un sentimento negativo che ignora le impostazioni predefinite. Il valore predefinito è un elenco vuoto.
+
+* **Percorso esplicito del nodo delle parole di controllo**
+
+   La posizione dell&#39;archivio di un nodo contenente proprietà `positive` e proprietà predefinite che `negative` specificano le parole di controllo predefinite. Default is `/libs/settings/community/watchwords/default`.
+
+* **Regole sentimento**
+
+   Posizione dell&#39;archivio delle regole per il calcolo del sentimento basato su parole d&#39;ordine positive e negative. Il valore predefinito è `/libs/cq/workflow/components/workflow/social/sentiments/rules` (ma non è più presente alcun flusso di lavoro).
 
 Esempio di una voce personalizzata per le parole d&#39;ordine predefinite, se `Explicit Path to Watchwords Node` è impostata su `/libs/settings/community/watchwords/default`.
 
@@ -268,10 +288,10 @@ Esempio di una voce personalizzata per le parole d&#39;ordine predefinite, se `E
 
 ### Autorizzazioni moderatore {#moderator-permissions}
 
-Le seguenti autorizzazioni, se assegnate alla stessa risorsa, sono denominate collettivamente **`moderator permissions`** :
+Le seguenti autorizzazioni, se assegnate alla stessa risorsa, sono denominate collettivamente `moderator permissions`:
 
 * `Read`
-* **`Modify`**
+* `Modify`
 * `Create`
 * `Delete`
 * `Replicate`
