@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
+source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
 
 ---
 
@@ -31,6 +31,8 @@ I seguenti caratteri (elenco separato da spazi) non sono supportati:
 
 * Il nome di un file di risorsa non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? &`
 * Il nome di una cartella di risorse non può contenere i seguenti caratteri: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
 
 ## Upload assets {#uploading-assets}
 
@@ -112,6 +114,8 @@ Prima di caricare una risorsa, accertati che sia nel [formato](/help/assets/asse
 
    * il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
    * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+   Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
+
    ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/chlimage_1-10.png)
 
    Inoltre, l’interfaccia utente di Risorse mostra la risorsa più recente caricata o la cartella creata per la prima volta.
@@ -929,7 +933,7 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
 
 1. Per confrontare due versioni di un’immagine, effettuate le seguenti operazioni:
    * Fare clic sulla versione da confrontare con la versione corrente.
-   * Drag the slider to the left to superimpose this version over the current version and compare.
+   * Trascinate il cursore verso sinistra per sovrapporre la versione corrente alla versione corrente e confrontare.
    ![Utilizza il cursore per confrontare le versioni selezionate di una risorsa con la versione corrente](assets/version-slider.gif)
 
    *Figura: Usate il cursore per confrontare facilmente le versioni selezionate di una risorsa con la versione corrente.*
