@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
+source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
 
 ---
 
@@ -39,7 +39,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
   <tr>
    <td>Integrazione  Creative Cloud</td>
    <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">AEM to Creative Cloud Folder Sharing</a> è stato introdotto in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM, in modo che possano aprirle nelle applicazioni CC e caricare nuovi file o salvare le modifiche in AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator.</p> <p>Adobe non prevede di apportare ulteriori miglioramenti all’integrazione mediante condivisione delle cartelle Creative Cloud. Sebbene la funzione sia inclusa in AEM, consigliamo ai clienti di utilizzare soluzioni sostitutive.</p> </td>
-   <td>Ai clienti viene consigliato di passare alle nuove funzionalità di integrazione di Creative Cloud, tra cui Adobe Asset Link o l'app desktop AEM. Per ulteriori informazioni, consulta le <a href="/help/assets/aem-cc-integration-best-practices.md">best practice per l’integrazione di AEM e Creative Cloud</a>.</td>
+   <td>Ai clienti viene consigliato di passare alle nuove funzionalità di integrazione di Creative Cloud, tra cui Adobe Asset Link o l'app desktop AEM. Review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -102,7 +102,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
      <li>Se hai effettuato l’aggiornamento da una versione precedente a AEM 6.5 Forms:<br />
       <ul>
        <li>Continua a utilizzare l'esperienza di firma basata su firma di Scribble Step con i moduli che già utilizzano la funzione.<br /> </li>
-       <li>Durante la creazione di un nuovo modulo, è possibile utilizzare un componente Firma scarabocchio autonomo o un'esperienza di firma basata su Adobe Sign all'interno di un passaggio Firma. </li>
+       <li>Durante la creazione di un modulo è possibile utilizzare il componente Firma scarabocchio indipendente o l'esperienza di firma basata su Adobe Sign all'interno di un passaggio Firma. </li>
       </ul> </li>
     </ul> <p> </p> <p> </p> </td>
   </tr>
@@ -165,13 +165,14 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Le versioni
 
 | Area | Funzione | Sostituzione |
 |--- |--- |--- |
-| Activity Map di Analytics | Versione della Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizzate il plug-in [ActivityMap fornito da Adobe Analytics](https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Activity Map di Analytics | Versione della Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizzate il plug-in [ActivityMap fornito da Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrazioni | L&#39;integrazione ExactTarget è stata rimossa dalla distribuzione predefinita (Quickstart) e non è più disponibile. | Nessuna sostituzione |
 | Integrazioni | L’integrazione delle API Force di Salesforce è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da installare da PackageShare. | La funzione è ancora disponibile. |
 | Forms | Il supporto per il servizio Adobe Central Migration Bridge è stato rimosso in quanto il prodotto Adobe Central non è più supportato. | Nessuna sostituzione |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessuna sostituzione |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |
 | Forms | L&#39;aggiornamento single-hop da LiveCycle ES4 SP1 a AEM 6.5 Forms su JEE non è disponibile | Consulta i percorsi [di aggiornamento](../forms/using/upgrade.md) disponibili nella documentazione di aggiornamento di AEM Forms. |
+| Forms | È stato rimosso il supporto del clustering basato su UPD da AEM Forms su JEE | In AEM Forms su JEE è possibile utilizzare solo il clustering basato su TCP. Se si aggiorna un server multicast UDP da una versione precedente a AEM 5.5 Forms su JEE, vengono eseguite configurazioni manuali per passare al clustering gemFire basato su TCP. Per istruzioni dettagliate, consultate [Aggiornamento ai moduli AEM 6.5 su JEE](../forms/using/upgrade-forms-jee.md) |
 | Sviluppatori | Firebug Lite è stato rimosso dalla distribuzione predefinita (Quickstart) | Utilizza le console di sviluppo integrate nel browser |
 | Sviluppatori | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Nessuna sostituzione |
 | Assets | La funzione di scaricamento delle risorse è stata rimossa in AEM 6.5 | Nessuna sostituzione |
