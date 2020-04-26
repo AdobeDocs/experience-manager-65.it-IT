@@ -3,7 +3,7 @@ title: Formati supportati per le risorse
 description: Elenco dei formati di file supportati da AEM Assets e da Dynamic Media e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6ac091d413690bd44b171ed11415c154aa8f437c
+source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
 
 ---
 
@@ -24,7 +24,7 @@ Utilizzate la legenda per comprendere il livello di supporto.
 
 ## Formati di immagini raster supportati in AEM Assets {#supported-raster-image-formats}
 
-| Formato | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione delle miniature | Modifica interattiva | Write-back metadati | Approfondimenti |
+| Formato | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione delle miniature | Modifica | Write-back metadati | Approfondimenti |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -32,7 +32,7 @@ Utilizzate la legenda per comprendere il livello di supporto.
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PFM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
 | PSD | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
@@ -283,7 +283,7 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite all&#39;indirizz
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
