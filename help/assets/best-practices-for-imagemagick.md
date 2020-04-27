@@ -3,7 +3,7 @@ title: Installazione e configurazione di ImageMagick per l’utilizzo con Risors
 description: Scopri il software ImageMagick, come installarlo, impostare il passaggio della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -14,11 +14,11 @@ ImageMagick è un plug-in software per creare, modificare, comporre o convertire
 
 Utilizzate il gestore di file multimediali Adobe Experience Manager (AEM) dalla riga di comando per elaborare le immagini tramite ImageMagick. Per utilizzare vari formati di file con ImageMagick, consulta Best practice [per i formati di file](/help/assets/assets-file-format-best-practices.md)Assets. Per informazioni su tutti i formati di file supportati, consulta Formati [supportati per le](/help/assets/assets-formats.md)risorse.
 
-Per elaborare file di grandi dimensioni con ImageMagick, considerate requisiti di memoria superiori a quelli usuali, modifiche potenziali richieste ai criteri IM e l&#39;impatto complessivo sulle prestazioni. I requisiti di memoria dipendono da vari fattori come risoluzione, profondità di bit, profilo colore e formato file. Se intendete elaborare file di grandi dimensioni con ImageMagick, eseguite correttamente il benchmark del server AEM. Alla fine vengono fornite alcune risorse utili.
+Per elaborare file di grandi dimensioni con ImageMagick, considerate requisiti di memoria superiori a quelli usuali, modifiche potenziali richieste ai criteri IM e l&#39;impatto complessivo sulle prestazioni. I requisiti di memoria dipendono da diversi fattori come risoluzione, profondità di bit, profilo colore e formato file. Se intendete elaborare file di grandi dimensioni con ImageMagick, eseguite correttamente il benchmark del server AEM. Alla fine vengono fornite alcune risorse utili.
 
 >[!NOTE]
 >
->Se utilizzi AEM su Adobe Managed Services (AMS), contatta il supporto Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni.
+>Se utilizzi AEM su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB ad alta risoluzione. Experience Manager potrebbe non essere in grado di elaborare file PSB ad alta risoluzione con risoluzione superiore a 30000 x 23000 pixel.
 
 ## Installazione di ImageMagick {#installing-imagemagick}
 
