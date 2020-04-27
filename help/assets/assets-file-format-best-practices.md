@@ -3,7 +3,7 @@ title: Procedure ottimali per l'elaborazione dei vari formati di file supportati
 description: Procedure ottimali per l'elaborazione dei vari tipi di file supportati tramite Risorse AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -16,7 +16,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->Se utilizzi Experience Manager su Adobe Managed Services (AMS), contatta il supporto Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Consultate il rappresentante dell&#39;Assistenza clienti Adobe per implementare queste best practice per l&#39;implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe.
+>Se utilizzi Experience Manager su Adobe Managed Services (AMS), contatta il supporto Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Consultate il rappresentante dell&#39;Assistenza clienti Adobe per implementare queste best practice per l&#39;implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. Experience Manager potrebbe non essere in grado di elaborare file PSB ad alta risoluzione con risoluzione superiore a 30000 x 23000 pixel.
 
 ## Libreria Adobe Camera Raw {#adobe-camera-raw-library}
 
