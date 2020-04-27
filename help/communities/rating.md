@@ -10,20 +10,20 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # Utilizzo delle valutazioni {#using-ratings}
 
-Il `Rating`componente viene utilizzato autonomamente o in combinazione con altre funzioni di Communities. Questo componente permette ai membri della community che hanno effettuato l’accesso di esprimere le proprie opinioni in base al punteggio contenuto.
+Il `Rating` componente viene utilizzato autonomamente o in combinazione con altre funzioni di Communities. Questo componente permette ai membri della community che hanno effettuato l’accesso di esprimere le proprie opinioni in base al punteggio contenuto.
 
 ## Adding a Rating to a Page {#adding-a-rating-to-a-page}
 
-Per aggiungere un `Rating`componente a una pagina in modalità di creazione, individuate il componente `Communities / Rating` e trascinatelo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione per la quale i membri possono assegnare una valutazione.
+Per aggiungere un `Rating` componente a una pagina in modalità di creazione, individuate il componente `Communities / Rating` e trascinatelo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione per la quale i membri possono assegnare una valutazione.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](rating-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Rating` componente.
 
