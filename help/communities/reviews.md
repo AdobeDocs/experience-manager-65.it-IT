@@ -1,6 +1,6 @@
 ---
-title: Utilizzo del riepilogo di recensioni (visualizzazione)
-seo-title: Utilizzo del riepilogo di recensioni (visualizzazione)
+title: Utilizzo del riepilogo di recensioni e recensioni (visualizzazione)
+seo-title: Utilizzo del riepilogo di recensioni e recensioni (visualizzazione)
 description: Aggiunta di componenti Riepilogo recensioni e revisioni a una pagina
 seo-description: Aggiunta di componenti Riepilogo recensioni e revisioni a una pagina
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
@@ -10,14 +10,14 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
-# Utilizzo del riepilogo di recensioni (visualizzazione) {#using-reviews-and-reviews-summary-display}
+# Utilizzo del riepilogo di recensioni e recensioni (visualizzazione) {#using-reviews-and-reviews-summary-display}
 
-Il `Reviews`componente è composto da [ componenti `Comments`](comments.md) e [ `Rating`](rating.md) componenti pronti all’uso.
+Il `Reviews` componente è composto da componenti [Commenti](comments.md) e [Valutazione](rating.md) pronti per l’uso.
 
 Il `Reviews Summary (Display)` componente fornisce un riepilogo di un’istanza attiva o chiusa di un `Reviews` componente da visualizzare altrove sul sito.
 
@@ -25,11 +25,12 @@ Il `Reviews Summary (Display)` componente fornisce un riepilogo di un’istanza 
 >
 >L&#39;invio anonimo di una revisione non è supportato. I visitatori del sito devono registrarsi (diventare membri) ed effettuare l’accesso per partecipare. Il visitatore che ha effettuato l’accesso può aggiornare la propria revisione in qualsiasi momento.
 
+
 ## Adding a Review to a Page {#adding-a-review-to-a-page}
 
 Per aggiungere un `Reviews` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / Reviews` e trascinarlo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione che gli utenti potranno vedere.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Reviews`componente.
 
@@ -41,7 +42,7 @@ Selezionate il `Reviews` componente inserito a cui accedere e selezionate l’ `
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
-Nella scheda Valutazioni **[!UICONTROL consentite]** , specificate l&#39;elenco completo delle valutazioni da visualizzare ai membri. Il primo rating dovrebbe essere un rating generale, in quanto è il rating che fornisce il rating medio per il `Review Summary (Display)` componente. Alle due valutazioni successive nella configurazione predefinita dovrebbe essere assegnato un titolo diverso, diverso da &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
+Nella scheda Valutazioni **** consentite, specificate l&#39;elenco completo delle valutazioni da visualizzare ai membri. Il primo rating dovrebbe essere un rating generale, in quanto è il rating che fornisce il rating medio per il `Review Summary (Display)` componente. Alle due valutazioni successive nella configurazione predefinita dovrebbe essere assegnato un titolo diverso, diverso da &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
 
 ![chlimage_1-342](assets/chlimage_1-342.png)
 
@@ -55,7 +56,7 @@ Nella scheda Valutazioni **[!UICONTROL consentite]** , specificate l&#39;elenco 
 
 Nella scheda Valutazioni **** richieste, immettere nuovamente gli elementi dall&#39;elenco Valutazioni **** consentite che devono essere valutati. Se un elemento è specificato solo nella scheda Valutazioni consentite, può essere lasciato senza contrassegno quando viene inviato dal membro.
 
-Nel sito Web le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e lasciato senza contrassegno, viene visualizzato un messaggio al membro e l&#39;invio viene negato finché non vengono contrassegnate tutte le valutazioni richieste.
+Nel sito Web, le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e lasciato senza contrassegno, viene visualizzato un messaggio al membro e l&#39;invio viene negato finché non vengono contrassegnate tutte le valutazioni richieste.
 
 ![chlimage_1-343](assets/chlimage_1-343.png)
 
@@ -71,47 +72,82 @@ Nel sito Web le valutazioni richieste sono contrassegnate da un asterisco. Se un
 >
 >Se un elemento viene immesso nella scheda Valutazioni **** richieste non specificata nella scheda Valutazioni **** consentite, non viene incluso negli elementi da valutare.
 
+
 Nella scheda **[!UICONTROL Recensioni]** , specificare le modalità di gestione delle revisioni.
 
-![chlimage_1-340](assets/chlimage_1-344.png)
+![chlimage_1-344](assets/chlimage_1-344.png)
 
-* **[!UICONTROL Consenti risposte]** Se questa opzione è selezionata, consenti risposte alle revisioni. Il valore predefinito è deselezionato.
+* **[!UICONTROL Consenti risposte]**
 
-* **[!UICONTROL Chiuso]** Se selezionato, la revisione è chiusa a nuove recensioni e risposte. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire le risposte alle revisioni. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Consenti caricamenti]** file Se questa opzione è selezionata, consenti il caricamento degli allegati per la revisione. Il valore predefinito è deselezionato.
+* **[!UICONTROL Chiuso]**
 
-* **Dimensione **massima file pertinente solo se è selezionata l&#39;opzione**[!UICONTROL Consenti caricamenti ]**file. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 10 MB.
+   Se questa opzione è attivata, la revisione è chiusa a nuove revisioni e risposte. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Lunghezza]** massima messaggio Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
+* **[!UICONTROL Consenti caricamenti file]**
 
-* **[!UICONTROL Tipi]** di file consentiti Pertinenti solo se l&#39;opzione **[!UICONTROL Consenti caricamenti]** file è selezionata. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+   Se questa opzione è selezionata, consentire il caricamento degli allegati per la revisione. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Editor]** Rich Text Se questa opzione è selezionata, è possibile immettere i post con la marcatura. Il valore predefinito è deselezionato.
+* **Dimensione file massima **
 
-* **[!UICONTROL Consenti votazione]** Se questa opzione è selezionata, includi la funzione di votazione per un argomento. Il valore predefinito è deselezionato.
+   Pertinente solo se **[!UICONTROL Consenti caricamenti]** file è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 10 MB.
+
+* **[!UICONTROL Lunghezza massima messaggio]**
+
+   Numero massimo di caratteri che possono essere immessi nella casella di testo. Il valore predefinito è 4096 caratteri.
+
+* **[!UICONTROL Tipi di file consentiti]**
+
+   Pertinente solo se **[!UICONTROL Consenti caricamenti]** file è selezionato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+
+* **[!UICONTROL Editor Rich Text]**
+
+   Se questa opzione è selezionata, è possibile inserire dei post con delle marcature. Il valore predefinito è deselezionato.
+
+* **[!UICONTROL Consenti votazione]**
+
+   Se questa opzione è selezionata, includete la funzione di votazione per un argomento. Il valore predefinito è deselezionato.
 
 Nella scheda Moderazione **** utente, specificate le modalità di gestione delle revisioni pubblicate. Per ulteriori informazioni, consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
 ![chlimage_1-345](assets/chlimage_1-345.png)
 
-* **[!UICONTROL Pre-moderazione]** Se questa opzione è selezionata, le revisioni devono essere approvate prima che vengano visualizzate su un sito di pubblicazione. Il valore predefinito è deselezionato.
+* **[!UICONTROL Premoderazione]**
 
-* **[!UICONTROL Elimina revisioni]** Se questa opzione è selezionata, al membro che ha pubblicato la revisione viene fornita la possibilità di eliminarla. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, le revisioni devono essere approvate prima che vengano visualizzate su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Rifiuta recensioni]** Se questa opzione è selezionata, consente ai moderatori di rifiutare le revisioni. Il valore predefinito è deselezionato.
+* **[!UICONTROL Elimina recensioni]**
 
-* **[!UICONTROL Chiudi/Riapri le revisioni]** Se questa opzione è selezionata, consente ai moderatori di chiudere e riaprire le revisioni. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, al membro che ha pubblicato la revisione viene fornita la possibilità di eliminarla. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Contrassegna revisioni]** Se questa opzione è selezionata, consente ai membri di contrassegnare le revisioni come non appropriate. Il valore predefinito è deselezionato.
+* **[!UICONTROL Rifiuta recensioni]**
 
-* **[!UICONTROL Elenco]** motivi contrassegno Se questa opzione è selezionata, consente ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnano una revisione come non appropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai moderatori di rifiutare le revisioni. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Motivo]** contrassegno personalizzato Se questa opzione è selezionata, consentire ai membri di inserire il proprio motivo per cui la revisione viene contrassegnata come non appropriata. Il valore predefinito è deselezionato.
+* **[!UICONTROL Chiudi/Riapri recensioni]**
 
-* **[!UICONTROL Soglia moderazione]** Immettere il numero di volte in cui i membri devono contrassegnare una revisione prima che i moderatori ne ricevano una notifica. Il valore predefinito è una tantum (1).
+   Se questa opzione è selezionata, consentire ai moderatori di chiudere e riaprire le revisioni. Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Limite]** contrassegno Consente di specificare quante volte deve essere segnalata una revisione prima di essere nascosta dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **[!UICONTROL moderazione]**. Il valore predefinito è 5.
+* **[!UICONTROL Segnala recensioni]**
+
+   Se questa opzione è selezionata, consentire ai membri di contrassegnare le revisioni come non appropriate. Il valore predefinito è deselezionato.
+
+* **[!UICONTROL Elenco di motivi per segnalazione]**
+
+   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnano una revisione come non appropriato. Il valore predefinito è deselezionato.
+
+* **[!UICONTROL Motivo per segnalazione personalizzato]**
+
+   Se questa opzione è selezionata, consentire ai membri di inserire il proprio motivo per cui la revisione viene contrassegnata come non appropriata. Il valore predefinito è deselezionato.
+
+* **[!UICONTROL Soglia moderazione]**
+
+   Inserire il numero di volte in cui i membri devono contrassegnare una revisione prima che i moderatori ne vengano informati. Il valore predefinito è una tantum (1).
+
+* **[!UICONTROL Limite segnalazione]**
+
+   Specificate quante volte deve essere segnalata una revisione prima che questa venga nascosta dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **[!UICONTROL moderazione]**. Il valore predefinito è 5.
 
 ### Aggiunta di un riepilogo della revisione (visualizzazione) a una pagina {#adding-a-review-summary-display-to-a-page}
 
@@ -121,7 +157,7 @@ Per aggiungere un `Reviews Summary (Display)` componente a una pagina in modalit
 
 trascinarlo nella posizione desiderata su una pagina in cui deve essere visualizzato il riepilogo di una revisione attiva o chiusa.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Reviews Summary (Display)`componente.
 
@@ -130,6 +166,7 @@ Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-fo
 >[!NOTE]
 >
 >La &quot;media&quot; riflette i voti per il primo elemento elencato nelle schede Valutazioni consentite della revisione che viene riepilogata.
+
 
 ### Configurazione del riepilogo delle revisioni (visualizzazione) {#configuring-reviews-summary-display}
 
@@ -145,7 +182,7 @@ Nella scheda Riepilogo **** revisione
 
    immettere o individuare l&#39;istanza inserita del `reviews`componente per riepilogare, ad esempio, se aggiunta alla pagina Web del sito [Geometrixx Engage,](getting-started.md) il percorso sarebbe:
 
-   /content/sites/interazione/it/page/jcr:content/content/Primary/review
+   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
@@ -165,19 +202,19 @@ Nella scheda Tipi **[!UICONTROL di]** risorse, specificare il resourceType perso
 
 * **[!UICONTROL Tipo risorsa commento]**
 
-   Passa a resourceType di un `comment`componente esteso (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
+   Passa a resourceType di un `comment`componente esteso (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`.
 
    Questa risorsa identificherà resourceType dell&#39;UGC creato quando un visitatore inserisce un commento.
 
 * **[!UICONTROL Tipo di risorsa per votazione]**
 
-   Passa a resourceType di un `voting`componente esteso in /apps. Esempio, `/apps/social/components/hbs/voting`
+   Passa a resourceType di un `voting`componente esteso in /apps. Esempio, `/apps/social/components/hbs/voting`.
 
    Questa risorsa identificherà il tipo di risorsa dell&#39;UGC creato quando un visitatore pubblica un voto.
 
 * **[!UICONTROL Tipo risorsa sistema commenti]**
 
-   Passa a resourceType di un `comments`componente esteso (sistema di commenti) in /apps. Lasciate vuoto, a meno che il modello di pagina includa [](scf.md#add-or-include-a-communities-component) dinamicamente il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Ulteriori informazioni leggendo l&#39;helper [{{include}}](handlebars-helpers.md#include)
+   Passa a resourceType di un `comments`componente esteso (sistema di commenti) in /apps. Lasciate vuoto, a meno che il modello di pagina includa [](scf.md#add-or-include-a-communities-component) dinamicamente il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Ulteriori informazioni leggendo l&#39;helper [](handlebars-helpers.md#include){{include}}.
 
 ## Esperienza dei visitatori del sito {#site-visitor-experience}
 
@@ -189,10 +226,10 @@ Quando l’utente che ha effettuato l’accesso dispone di privilegi di moderato
 
 Quando il visitatore del sito ha effettuato l&#39;accesso, a seconda della configurazione, può
 
-* Pubblicare una nuova revisione
-* Modifica la propria revisione
-* Elimina la propria revisione
-* Contrassegnare i commenti di revisione di altri utenti
+* Pubblica una nuova revisione.
+* Modificate la propria revisione.
+* Eliminate la loro revisione.
+* Contrassegnare i commenti di revisione di altri utenti.
 
 È consentita una sola valutazione per membro. Il membro può cambiare la propria valutazione in qualsiasi momento.
 
