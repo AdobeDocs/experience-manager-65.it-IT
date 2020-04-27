@@ -4,7 +4,7 @@ description: Suggerimenti e indicazioni sulla configurazione di AEM, modifiche a
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -203,17 +203,13 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel `con
 
 >[!CAUTION]
 >
->Una configurazione errata può rendere instabile il server se ImageMagick utilizza tutto lo spazio disponibile su disco.
->
->Le modifiche dei criteri necessarie per elaborare file di grandi dimensioni con ImageMagick possono influire sulle prestazioni di AEM. Per ulteriori informazioni, consultate [installare e configurare ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Una configurazione errata può rendere instabile il server se ImageMagick utilizza tutto lo spazio disponibile su disco. Le modifiche dei criteri necessarie per elaborare file di grandi dimensioni con ImageMagick possono influire sulle prestazioni di AEM. Per ulteriori informazioni, consultate [installare e configurare ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
 >I `policy.xml` file ImageMagick `configure.xml` e ImageMagick sono disponibili `/usr/lib64/ImageMagick-&#42;/config/` invece di `/etc/ImageMagick/`.Consultate la documentazione [](https://www.imagemagick.org/script/resources.php) ImageMagick per informazioni sulla posizione dei file di configurazione.
 
->[!TIP]
->
->Se utilizzi Experience Manager su Adobe Managed Services (AMS), contatta il supporto Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Consultate il rappresentante dell&#39;Assistenza clienti Adobe per implementare queste best practice per l&#39;implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe.
+Se utilizzi Experience Manager su Adobe Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Consultate il rappresentante dell&#39;Assistenza clienti Adobe per implementare queste best practice per l&#39;implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. Experience Manager potrebbe non essere in grado di elaborare file PSB ad alta risoluzione con risoluzione superiore a 30000 x 23000 pixel.
 
 ### XMP writeback {#xmp-writeback}
 
