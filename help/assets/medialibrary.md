@@ -3,7 +3,7 @@ title: Confronto tra AEM Assets e la libreria di contenuti multimediali AEM
 description: Confronta le offerte AEM Assets e AEM Media Library e conosce le differenze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 569c552686e6312ecae0d500147a8b65354c303d
+source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
 
 ---
 
@@ -12,11 +12,11 @@ source-git-commit: 569c552686e6312ecae0d500147a8b65354c303d
 
 Risorse Adobe Experience Manager (AEM) è parte integrante della piattaforma AEM. Questa integrazione fluida è vista come un importante vantaggio di AEM e assicura coerenza nella gestione dei contenuti e un&#39;elevata produttività per gli autori dei contenuti.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Domande frequenti {#frequently-asked-questions}
 
 ### Cos’è AEM Assets? {#what-is-aem-assets}
 
-AEM Assets è un’applicazione della piattaforma AEM che consente ai clienti di gestire le risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. Risorse AEM include il supporto per metadati, rappresentazioni, il Finder di gestione delle risorse digitali e l’interfaccia utente di amministrazione di AEM Assets.
+Risorse AEM è un’applicazione della piattaforma AEM che consente ai clienti di gestire le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. Risorse AEM include il supporto per metadati, rappresentazioni, il Finder di gestione delle risorse digitali e l’interfaccia utente di amministrazione di AEM Assets.
 
 ### Cos’è la libreria AEM Media? {#what-is-the-aem-media-library}
 
@@ -26,7 +26,7 @@ AEM Media Library è una parte designata dell&#39;archivio dei contenuti di AEM 
 
 Le funzioni esclusive disponibili solo per i clienti di Risorse AEM sono:
 
-* possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
+* la possibilità di estrarre e modificare metadati diversi da titolo, tag e descrizione.
 * l’amministratore di Risorse AEM, disponibile dalla schermata di benvenuto facendo clic sul secondo pulsante accanto all’amministratore del sito.
 * tutti i passaggi del flusso di lavoro relativi alla gestione delle risorse digitali, ad esempio l’inserimento di risorse AEM, l’eliminazione di risorse AEM, la gestione delle risorse secondarie di AEM, l’estrazione dei metadati di Risorse AEM.
 * librerie che includono &quot;dam&quot; im package space.
@@ -55,7 +55,7 @@ Il componente immagine fa parte di AEM WCM. La libreria grafica utilizzata dal c
 
 ### Come posso impedire ai miei utenti di utilizzare Risorse AEM se non dispongo della licenza per Risorse AEM? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Puoi rimuovere da AEM tutti i flussi di lavoro, i componenti, le tassonomie, le opzioni e l’amministratore di Risorse AEM. In questo modo si evita che gli utenti utilizzino accidentalmente le funzioni di Risorse AEM che non sono state autorizzate.
+Puoi rimuovere da AEM tutti i flussi di lavoro, i componenti, le tassonomie, le opzioni e l’amministratore di Risorse AEM. In questo modo si evita che gli utenti utilizzino accidentalmente le funzioni di Risorse AEM per le quali non è stata concessa la licenza.
 
 ### Desidero aggiungere delle immagini a una pagina e ritagliarle e ridimensionarle. Sono necessarie Risorse AEM? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -84,7 +84,7 @@ Per questo caso d’uso non è necessario acquistare AEM Assets, anche l’utili
 * Risorse collegate
 * Brand Portal
 * Accesso self-service
-* Sfoglia, Cerca e Scarica
+* Sfogliare, cercare e scaricare
 * Raccolte e condivisione cartelle
 * Strumenti di amministrazione
 * Tag avanzati
