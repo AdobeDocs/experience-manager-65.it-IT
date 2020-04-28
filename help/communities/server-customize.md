@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >[!NOTE]
 >
 >La posizione del pacchetto delle API Community è soggetta a modifiche quando si esegue l&#39;aggiornamento da una versione principale a quella successiva.
+
 
 ### Interfaccia SocialComponent {#socialcomponent-interface}
 
@@ -43,7 +44,7 @@ Tutte le classi SocialCollectionComponent devono implementare l&#39;interfaccia 
 
 ### Interfaccia SocialComponentFactory {#socialcomponentfactory-interface}
 
-Un SocialComponentFactory (factory) registra un SocialComponent con il framework. La fabbrica fornisce un mezzo per far sapere al framework quali SocialComponents sono disponibili per un dato resourceType e la loro priorità graduazione&amp;ast; quando vengono identificati più componenti social.
+Un SocialComponentFactory (factory) registra un SocialComponent con il framework. La fabbrica fornisce un mezzo per far sapere al framework quali SocialComponents sono disponibili per un dato resourceType e la loro classificazione di priorità quando vengono identificati più SocialComponents.
 
 SocialComponentFactory è responsabile della creazione di un&#39;istanza del SocialComponent selezionato che consente di inserire tutte le dipendenze necessarie dal SocialComponent dalla fabbrica utilizzando le procedure DI.
 
@@ -65,29 +66,29 @@ Un handle per il servizio OSGi viene ottenuto richiamando `com.adobe.cq.social.s
 
 #### Classe PostOperation {#postoperation-class}
 
-Gli endpoint POST API HTTP sono classi PostOperation definite implementando l&#39; `SlingPostOperation`interfaccia (pacchetto `org.apache.sling.servlets.post`).
+Gli endpoint POST API HTTP sono classi PostOperation definite implementando l&#39; `SlingPostOperation` interfaccia (pacchetto `org.apache.sling.servlets.post`).
 
-L&#39;implementazione dell&#39; `PostOperation`endpoint viene impostata `sling.post.operation`su un valore a cui l&#39;operazione risponderà. Tutte le richieste POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
+L&#39;implementazione dell&#39; `PostOperation` endpoint viene impostata `sling.post.operation` su un valore a cui l&#39;operazione risponderà. Tutte le richieste POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
 
-Viene `PostOperation`richiamata la `SocialOperation`quale esegue le azioni necessarie per l&#39;operazione.
+Viene `PostOperation` richiamata la `SocialOperation` quale esegue le azioni necessarie per l&#39;operazione.
 
-Il `PostOperation`destinatario riceve il risultato dal client `SocialOperation`e restituisce la risposta appropriata al client.
+Il `PostOperation` destinatario riceve il risultato dal `SocialOperation` e restituisce la risposta appropriata al client.
 
 #### Classe SocialOperation {#socialoperation-class}
 
-Ogni `SocialOperation`endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation().`Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un errore `SocialOperationResult`o generare un `OperationException`, nel qual caso viene restituito uno stato di errore HTTP con un messaggio, se disponibile, al posto del normale codice di stato HTTP di risposta JSON o di successo.
+Ogni `SocialOperation` endpoint estende la classe AbstractSocialOperation e sostituisce il metodo `performOperation()`. Questo metodo esegue tutte le azioni necessarie per completare l&#39;operazione e restituire un errore `SocialOperationResult` o generare un errore `OperationException`, nel qual caso viene restituito uno stato di errore HTTP con un messaggio, se disponibile, al posto del normale codice di risposta JSON o di stato HTTP riuscito.
 
-L’estensione `AbstractSocialOperation`consente il riutilizzo dell’invio `SocialComponents`di risposte JSON.
+L’estensione `AbstractSocialOperation` consente il riutilizzo dell’invio di risposte `SocialComponents` JSON.
 
 #### Classe SocialOperationResult {#socialoperationresult-class}
 
-La `SocialOperationResult`classe viene restituita come risultato dell&#39;evento `SocialOperation`ed è composta da un codice di stato `SocialComponent`HTTP e da un messaggio di stato HTTP.
+La `SocialOperationResult` classe viene restituita come risultato dell&#39;evento `SocialOperation` ed è composta da un codice di stato `SocialComponent`, HTTP e messaggio di stato HTTP.
 
-La risorsa `SocialComponent`rappresenta la risorsa interessata dall&#39;operazione.
+Rappresenta `SocialComponent` la risorsa interessata dall&#39;operazione.
 
-Per un&#39;operazione Create, la risorsa `SocialComponent`inclusa nella `SocialOperationResult`rappresenta la risorsa appena creata e per un&#39;operazione Update rappresenta la risorsa modificata dall&#39;operazione. Non `SocialComponent`viene restituito alcun valore per un&#39;operazione Delete.
+Per un&#39;operazione di creazione, l&#39; `SocialComponent` elemento incluso nel `SocialOperationResult` rappresenta la risorsa appena creata e, per un&#39;operazione di aggiornamento, rappresenta la risorsa modificata dall&#39;operazione. Non `SocialComponent` viene restituito alcun valore per un&#39;operazione Delete.
 
-I codici di stato HTTP utilizzati per il successo sono:
+I codici di stato HTTP di successo utilizzati sono:
 
 * 201 per le operazioni di creazione
 * 200 per le operazioni di aggiornamento
@@ -95,28 +96,30 @@ I codici di stato HTTP utilizzati per il successo sono:
 
 #### Classe OperationException {#operationexception-class}
 
-Se la richiesta non è valida o si verifica un altro errore, ad esempio errori interni, valori errati dei parametri, autorizzazioni non corrette e così via, `OperationExcepton`è possibile generare un messaggio di errore durante l&#39;esecuzione di un&#39;operazione. Un messaggio `OperationException`è composto da un codice di stato HTTP e un messaggio di errore, che vengono restituiti al client come risposta al `PostOperatoin`.
+Se la richiesta non è valida o si verifica un altro errore, `OperationExcepton` è possibile generare un messaggio di errore durante l&#39;esecuzione di un&#39;operazione, ad esempio errori interni, valori errati dei parametri, autorizzazioni non corrette e così via. Un messaggio `OperationException` è composto da un codice di stato HTTP e un messaggio di errore, che vengono restituiti al client come risposta al `PostOperatoin`.
 
 #### Classe OperationService {#operationservice-class}
 
-Il framework dei componenti sociali raccomanda che la logica aziendale responsabile dell&#39;esecuzione dell&#39;operazione non sia implementata all&#39;interno della `SocialOperation`classe, ma delegata a un servizio OSGi. L&#39;utilizzo di un servizio OSGi per la business logic consente a un `SocialComponent``SocialOperation`endpoint di essere integrato con un altro codice e applicare una logica aziendale diversa.
+Il framework dei componenti sociali raccomanda che la logica aziendale responsabile dell&#39;esecuzione dell&#39;operazione non sia implementata all&#39;interno della `SocialOperation` classe, ma delegata a un servizio OSGi. L&#39;utilizzo di un servizio OSGi per la business logic consente a un `SocialComponent`, agendo in base a un `SocialOperation` endpoint, di essere integrato con altro codice e di applicare diverse logiche aziendali.
 
-Tutte `OperationService`le classi si estendono `AbstractOperationService`, consentendo ulteriori estensioni che possono collegarsi all&#39;operazione in corso. Ogni operazione nel servizio è rappresentata da una `SocialOperation`classe. È possibile richiamare la `OperationExtensions`classe durante l&#39;esecuzione dell&#39;operazione chiamando i metodi
+Tutte `OperationService` le classi si estendono `AbstractOperationService`, consentendo ulteriori estensioni che possono collegarsi all&#39;operazione in corso. Ogni operazione nel servizio è rappresentata da una `SocialOperation` classe. La `OperationExtensions` classe può essere invocata durante l&#39;esecuzione dell&#39;operazione chiamando i metodi
 
 * `performBeforeActions()`
-Consente pre-verifiche/pre-elaborazione e convalide
+
+   Consente pre-verifiche/pre-elaborazione e convalide
 * `performAfterActions()`
-Consente di modificare ulteriormente le risorse o richiamare eventi personalizzati, flussi di lavoro ecc.
+
+   Consente di modificare ulteriormente le risorse o richiamare eventi personalizzati, flussi di lavoro ecc.
 
 #### Classe OperationExtension {#operationextension-class}
 
-`OperationExtension`le classi sono pezzi di codice personalizzati che possono essere inseriti in un&#39;operazione che consente la personalizzazione delle operazioni per soddisfare le esigenze aziendali. Gli utenti del componente possono aggiungere al componente in modo dinamico e incrementale funzionalità. Il pattern di estensione/gancio consente agli sviluppatori di concentrarsi esclusivamente sulle estensioni stesse e elimina la necessità di copiare e sovrascrivere intere operazioni e componenti.
+`OperationExtension` le classi sono pezzi di codice personalizzati che possono essere inseriti in un&#39;operazione che consente la personalizzazione delle operazioni per soddisfare le esigenze aziendali. Gli utenti del componente possono aggiungere al componente in modo dinamico e incrementale funzionalità. Il pattern di estensione/gancio consente agli sviluppatori di concentrarsi esclusivamente sulle estensioni stesse e elimina la necessità di copiare e sovrascrivere intere operazioni e componenti.
 
 ## Codice di esempio {#sample-code}
 
 Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.com/Adobe-Marketing-Cloud) Adobe Marketing Cloud. Cercare progetti con un prefisso `aem-communities` o `aem-scf`.
 
-## Best practice {#best-practices}
+## Best practice   {#best-practices}
 
 Consultate la sezione Linee guida [per la](code-guide.md) codifica per diverse linee guida e best practice per gli sviluppatori di AEM Communities.
 
