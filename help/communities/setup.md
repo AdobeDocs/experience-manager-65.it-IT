@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -21,26 +21,27 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 A scopo di sviluppo e dimostrazione, sarà necessario eseguire un’istanza di creazione e pubblicazione.
 
-A tal fine, segui le istruzioni di base della [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) di AEM e ottieni
+A questo scopo, segui le istruzioni [guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) di AEM, che si traducono in:
 
-* Ambiente di authoring su [localhost:4502](http://localhost:4502/)
-* Ambiente di pubblicazione su [localhost:4503](http://localhost:4503/)
+* Ambiente di authoring su [localhost:4502](Http://localhost:4502/)
+* Ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
 
 Per AEM Communities,
 
-* L’ambiente di authoring è impostato su
+* L’ambiente di authoring è destinato a:
 
-   * Sviluppo di siti, modelli e componenti
-   * Attività amministrative e di configurazione
+   * Sviluppo di siti, modelli e componenti.
+   * Attività amministrative e di configurazione.
 
-* L’ambiente di pubblicazione è
+* L’ambiente di pubblicazione è destinato a:
 
-   * L&#39;esperienza della comunità nel pubblicare e moderare contenuti
-   * Creazione di gruppi di community, membri e gruppi di membri
+   * L&#39;esperienza della community di pubblicazione e moderazione dei contenuti.
+   * Creazione di gruppi di community, membri e gruppi di membri.
 
 >[!NOTE]
 >
 >Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](../../help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](../../help/sites-authoring/qg-page-authoring.md)di authoring.
+
 
 ## Installa ultima versione di Communities {#install-latest-communities-release}
 
@@ -84,23 +85,23 @@ Create un utente all’ *autore*, al quale verrà assegnato il ruolo di Amminist
 
 * Nell’istanza di creazione
 
-   * Ad esempio, [http://localhost:4502/](http://localhost:4503/)
+   * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
 
 * Accesso con privilegi di amministratore
 
    * Ad esempio, nome utente &#39;admin&#39; / password &#39;admin&#39;
 
-* Dalla console principale, accedi a **[!UICONTROL Strumenti > Operazioni > Protezione > Utenti]**
+* Dalla console principale, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
 * Dal menu **Modifica **, selezionate**[!UICONTROL Aggiungi utente ]**
 
-* Nella `Create New User` finestra di dialogo
+* Nella `Create New User` finestra di dialogo immetti:
 
-   * **[!UICONTROL ID&amp;ast;]**: sirius
+   * **[!UICONTROL ID]**: sirius
    * **[!UICONTROL Indirizzo]** e-mail: sirius.nilson@mailinator.com
-   * **[!UICONTROL Password&amp;ast;]**:password
-   * **[!UICONTROL Conferma password&amp;ast;]**:password
+   * **[!UICONTROL Password]**: password
+   * **[!UICONTROL Conferma password&amp;ast;]**: password
    * **[!UICONTROL Nome]**: Sirio
-   * **[!UICONTROL Cognome&amp;ast;]**: Nilson
+   * **[!UICONTROL Cognome]**: Nilson
 
 ### Assegna Sirius al gruppo Amministratori community {#assign-sirius-to-community-administrators-group}
 
@@ -111,7 +112,7 @@ Scorri verso il basso fino a `Add User to Groups`:
    * Seleziona `Community Administrators`
    * Seleziona `Community Enablement Managers`
 
-* Seleziona **[!UICONTROL Salva]**
+* Seleziona **[!UICONTROL Salva]**.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -119,8 +120,8 @@ Scorri verso il basso fino a `Add User to Groups`:
 
 Prima che possano essere utilizzate le versioni dimostrative di accesso social con Facebook e Twitter, è necessario
 
-1. Installate un fix pack o l&#39; [ultimo feature pack](deploy-communities.md#latestfeaturepack) (per le modifiche dell&#39;API Facebook di marzo 2017)
-1. [Abilitare il provider](social-login.md#adobe-granite-oauth-authentication-handler) OAuth nell&#39;ambiente di pubblicazione
+1. Installate un fix pack o l&#39; [ultimo feature pack](deploy-communities.md#latestfeaturepack) (per le modifiche dell&#39;API Facebook di marzo 2017).
+1. [Abilitate il provider](social-login.md#adobe-granite-oauth-authentication-handler) OAuth nell&#39;ambiente di pubblicazione.
 
 Per i server di produzione, è necessario creare i servizi cloud necessari per fornire il login mediante profilo sociale.
 
@@ -141,10 +142,10 @@ Utilizzate la console [](../../help/sites-administering/tags.md#tagging-console)
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
-Quindi segui le istruzioni riportate in
+Seguite quindi le istruzioni per:
 
-1. [Impostare le autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions)
-1. [Pubblicare i tag](../../help/sites-administering/tags.md#publishing-tags)
+1. [Impostate le autorizzazioni](../../help/sites-administering/tags.md#setting-tag-permissions)del tag.
+1. [Pubblicate i tag](../../help/sites-administering/tags.md#publishing-tags).
 
 Esempio di pacchetto di tag creati per le esercitazioni introduttive di AEM Communities
 
