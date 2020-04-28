@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 La funzione di ricerca funziona con altre funzioni, come i forum, per consentire la ricerca di contenuti.
 
-Quando si aggiunge la possibilità di cercare post inseriti dai membri della community, denominati contenuti generati dall&#39;utente (UGC), sono disponibili due componenti: [ `Search`](#search) e [ `Search Results`](#search-results).
+Quando si aggiunge la possibilità di cercare post inseriti dai membri della community, denominati contenuti generati dall&#39;utente (UGC), sono disponibili due componenti: Risultati [di ricerca](#search) e [ricerca](#search-results).
 
 La pagina che include il `Search Results` componente supporta sia la ricerca che la visualizzazione dei risultati.
 
-La pagina che include il `Search`componente consente di avviare una ricerca con i risultati visualizzati sulla `Search Results` pagina.
+La pagina che include il `Search` componente consente di avviare una ricerca con i risultati visualizzati sulla `Search Results` pagina.
 
 La funzione di ricerca può essere utilizzata con qualsiasi altra funzione che consente ai visitatori e ai membri del sito di visualizzare il contenuto.
 
@@ -33,9 +33,9 @@ La funzione di ricerca può essere utilizzata con qualsiasi altra funzione che c
 
 Per aggiungere un `Search` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / Search` e trascinarlo nella posizione desiderata sulla pagina. L&#39;utilizzo di `Search` richiede una seconda pagina per `Search Results.`
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
-Quando la libreria lato client richiesta `cq.social.hbs.search`è inclusa, viene visualizzata così il `Search` componente.
+Quando la libreria lato client richiesta `cq.social.hbs.search`è inclusa, viene visualizzato in questo modo il `Search` componente.
 
 ![chlimage_1-373](assets/chlimage_1-373.png)
 
@@ -45,7 +45,7 @@ Selezionate il `Search` componente inserito a cui accedere e selezionate l’ `C
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
-Nella scheda Impostazioni **[!UICONTROL di]** ricerca, specificate i percorsi di ricerca quando un visitatore inserisce una query.
+Nella scheda Impostazioni **[!UICONTROL di]** ricerca, specificate i percorsi di ricerca quando una query viene inserita da un visitatore.
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -57,7 +57,7 @@ Nella scheda Impostazioni **[!UICONTROL di]** ricerca, specificate i percorsi di
 
 ## Risultati di ricerca {#search-results}
 
-### Aggiungere risultati di ricerca a una pagina {#add-search-results-to-a-page}
+### Aggiunta di risultati di ricerca a una pagina {#add-search-results-to-a-page}
 
 Per aggiungere un `Search Results` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
 
@@ -67,7 +67,7 @@ e trascinarlo nella posizione desiderata su una pagina. A differenza del compone
 
 Se si utilizza la funzione di ricerca altrove nel sito Web, `Search Results` è possibile configurare questa pagina in modo che sia la `Result Page` sola o tutte le istanze di `Search`.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando la libreria lato client richiesta `cq.social.hbs.search`è inclusa, viene visualizzato così il `Search Result` componente:
 
@@ -83,9 +83,13 @@ Nella scheda Impostazioni **[!UICONTROL risultati di]** ricerca è possibile spe
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Risultati ricerca per pagina]** Definite il numero di argomenti/post mostrati per pagina. Il valore predefinito è 10.
+* **[!UICONTROL Risultati di ricerca per pagina]**
 
-* **[!UICONTROL Percorsi]** di ricerca Per aggiungere percorsi di ricerca mediante il pulsante Aggiungi elemento, la ricerca nel contenuto è limitata.
+   Definite il numero di topic/post mostrati per pagina. Il valore predefinito è 10.
+
+* **[!UICONTROL Percorsi di ricerca]**
+
+   Aggiungendo percorsi di ricerca mediante il pulsante Aggiungi elemento, la ricerca del contenuto è limitata.
 
 ## Informazioni aggiuntive {#additional-information}
 
