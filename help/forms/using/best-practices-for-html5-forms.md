@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
+source-git-commit: b6c013a31b70166cba80fea53dffc3794ffee5b8
 
 ---
 
@@ -26,11 +26,11 @@ La maggior parte dei dispositivi mobili dispone di una potenza di elaborazione l
 
 Sebbene le raccomandazioni di cui a questo articolo siano destinate ai moduli HTML5, esse sono ugualmente applicabili ai moduli PDF basati su XFA. Queste best practice contribuiscono collettivamente alle prestazioni complessive dei moduli HTML5. È necessaria un&#39;attenta pianificazione per sviluppare forme efficienti e produttive. Cominciamo:
 
-## I nodi sono una valuta dei moduli HTML5 e li utilizzano in modo appropriato {#nodes-are-currency-of-html-forms-spend-them-wisely}
+## I nodi sono una valuta dei moduli HTML5 e li utilizzano con cognizione di causa {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
 In genere, un modulo XFA ha più elementi. Ad esempio, tabella, campo di testo e immagini. Ogni elemento ha una serie di proprietà per controllare il comportamento e l&#39;aspetto dell&#39;elemento. Quando viene eseguito il rendering di un modulo XFA in formato HTML5, tutti gli elementi XFA e le proprietà corrispondenti vengono convertiti in nodi DOM modello o HTML. Questi nodi si aggiungono alle dimensioni e alla complessità di un DOM. Rendering lento del modulo HTML5.
 
-È più semplice per i browser eseguire il rendering di un DOM più snello. È quindi possibile eseguire le seguenti ottimizzazioni su un modulo XFA per ridurre il numero di nodi. Di conseguenza, generate una struttura DOM snella:
+È più semplice per i browser eseguire il rendering di un DOM più snello. Pertanto, è possibile eseguire le seguenti ottimizzazioni su un modulo XFA per ridurre il numero di nodi. Di conseguenza, generate una struttura DOM snella:
 
 * Utilizzare la proprietà caption per aggiungere un&#39;etichetta a un campo. Non utilizzate un elemento Testo separato per aggiungere un&#39;etichetta. Aiuta a perdere peso aggiuntivo, portando a guadagni di prestazioni. Consente inoltre di evitare problemi di layout.
 * Ridurre al minimo il numero di elementi di testo Disegno di un modulo. Gli elementi di disegno sono utili per migliorare la leggibilità e l’aspetto, ma non dispongono di funzionalità di memorizzazione delle informazioni. È consigliabile unire più elementi di testo Disegno in un singolo elemento di testo Disegno. Non lasciate nulla di pietra rovesciata per rendere un modulo più snello.
@@ -41,23 +41,23 @@ Un modulo HTML5 può contenere più risorse esterne, ad esempio file immagine, J
 
 Pertanto, ridurre le dimensioni delle risorse esterne e utilizzare solo risorse assolutamente necessarie è il metodo migliore per migliorare le prestazioni dei moduli. In un modulo XFA è possibile eseguire le seguenti ottimizzazioni per ridurre le dimensioni delle risorse esterne di un modulo:
 
-* Usate immagini [](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)compresse. Riduce l&#39;attività di rete e la quantità di memoria necessaria per eseguire il rendering di un modulo. Pertanto, il tempo di caricamento del modulo diminuisce notevolmente.
+* Usate immagini [](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)compresse. Riduce l&#39;attività di rete e la quantità di memoria necessaria per eseguire il rendering di un modulo. Di conseguenza, il tempo di caricamento del modulo diminuisce notevolmente.
 * Utilizzate l&#39;opzione Riduci in AEM Configuration Manager (Day CQ HTML Library Manager) per comprimere i file JavaScript e CSS. Per informazioni dettagliate, consultate Impostazioni [di configurazione](/help/sites-deploying/osgi-configuration-settings.md)OSGi.
-* Abilita compressione Web. Riduce la dimensione delle richieste e delle risposte originate da un modulo. Per informazioni dettagliate, consultate Ottimizzazione [delle prestazioni del server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)moduli AEM.
+* Abilita compressione Web. Riduce la dimensione delle richieste e delle risposte originate da un modulo. Per informazioni dettagliate, consultate Ottimizzazione [delle prestazioni del server](https://helpx.adobe.com/it/aem-forms/6-3/performance-tuning-aem-forms.html)moduli AEM.
 
 ## Mantenere vivo l&#39;interesse, mostrare solo i campi obbligatori {#keep-the-interest-alive-show-only-required-fields}
 
 Un modulo HTML5 può essere eseguito su centinaia di pagine. Il caricamento di un modulo con un numero elevato di campi risulta lento nel browser. In un modulo XFA è possibile eseguire le seguenti ottimizzazioni per ottimizzare i moduli con un gran numero di campi e pagine:
 
-* Valutare la suddivisione dei moduli di grandi dimensioni in più moduli. È inoltre possibile utilizzare un set di moduli per raggruppare tutti i moduli più piccoli e presentarli come una singola unità. Un set di moduli carica solo i moduli richiesti. Inoltre, in un set di moduli è possibile configurare campi comuni in diversi moduli per condividere i binding dei dati. I binding dei dati consentono agli utenti di compilare le informazioni comuni una sola volta; le informazioni vengono compilate automaticamente nei moduli successivi, migliorando notevolmente le prestazioni. Per ulteriori dettagli sui set di moduli, consultate Set di [moduli nei moduli](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)AEM.
+* Valutare la suddivisione dei moduli di grandi dimensioni in più moduli. È inoltre possibile utilizzare un set di moduli per raggruppare tutti i moduli più piccoli e presentarli come un&#39;unica unità. Un set di moduli carica solo i moduli richiesti. Inoltre, in un set di moduli è possibile configurare campi comuni in diversi moduli per condividere i binding dei dati. I binding dei dati consentono agli utenti di compilare le informazioni comuni una sola volta; le informazioni vengono compilate automaticamente nei moduli successivi, migliorando notevolmente le prestazioni. Per ulteriori dettagli sui set di moduli, consultate Set di [moduli nei moduli](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)AEM.
 * È consigliabile suddividere le sezioni e spostare ciascuna sezione in un&#39;altra pagina. I moduli HTML5 caricano in modo dinamico ciascuna pagina nella richiesta di scorrimento della pagina. Solo la pagina scorrevole (la pagina visualizzata e le pagine che la precedono) sono memorizzate; le altre pagine vengono caricate su richiesta. La divisione e lo spostamento di una sezione in una pagina consente quindi di ridurre il tempo necessario per caricare un modulo. È inoltre possibile utilizzare la prima pagina del modulo come pagina di destinazione. È simile al sommario di un libro. Una pagina di destinazione del modulo contiene solo collegamenti alle altre sezioni del modulo. Migliora notevolmente il tempo di caricamento della prima pagina del modulo e migliora l&#39;esperienza dell&#39;utente.
-* Per impostazione predefinita, le sezioni condizionali vengono nascoste. Rendere queste sezioni visibili solo quando viene soddisfatta una determinata condizione. Consente di mantenere al minimo le dimensioni del DOM. Potete anche utilizzare la navigazione con schede per visualizzare una sola sezione alla volta.
+* Per impostazione predefinita, le sezioni condizionali devono essere nascoste. Rendere queste sezioni visibili solo quando viene soddisfatta una determinata condizione. Consente di mantenere al minimo le dimensioni del DOM. Potete anche utilizzare la navigazione con schede per visualizzare una sola sezione alla volta.
 
 ## Minore è maggiore, riducete il numero di pagine {#less-is-more-reduce-the-number-of-pages}
 
-I moduli HTML5 possono contenere campi basati sui dati (tabelle e sottomoduli). Questi campi aumentano le dimensioni del modulo in fase di esecuzione. Ad esempio, una tabella basata sui dati in un modulo HTML5 può estendersi su migliaia di righe. Tali tabelle possono causare un peggioramento del layout e delle prestazioni. Le ottimizzazioni suggerite di seguito consentono di ridurre i tempi di caricamento dei moduli HTML5 con campi basati sui dati:
+I moduli HTML5 possono contenere campi basati sui dati (tabelle e sottomoduli). Questi campi consentono di espandere le dimensioni del modulo in fase di esecuzione. Ad esempio, una tabella basata sui dati in un modulo HTML5 può estendersi su migliaia di righe. Tali tabelle possono causare un peggioramento del layout e delle prestazioni. Le ottimizzazioni suggerite di seguito consentono di ridurre i tempi di caricamento dei moduli HTML5 con campi basati sui dati:
 
-* Utilizzare gli script XFA per eseguire la navigazione tra le pagine per visualizzare i campi basati sui dati (tabelle e sottomoduli). Nella navigazione tra pagine, su una pagina vengono visualizzati solo dati specifici. Limita l&#39;operazione di colorazione del browser ai campi visualizzati alla volta e semplifica la navigazione all&#39;interno del modulo. Inoltre, gli utenti dei dispositivi mobili sono interessati solo a un sottoinsieme di dati. Consente di offrire un&#39;ottima esperienza utente e di ridurre il tempo necessario per caricare i dati richiesti. Ci sono due soluzioni per il prezzo di una.  Inoltre, la navigazione tra pagine non è disponibile. È possibile utilizzare gli script XFA per sviluppare la navigazione tra le pagine.
+* Utilizzare gli script XFA per eseguire la navigazione tra le pagine per visualizzare i campi basati sui dati (tabelle e sottomoduli). Nella navigazione tra pagine, su una pagina vengono visualizzati solo dati specifici. Limita l&#39;operazione di colorazione del browser ai campi visualizzati alla volta e semplifica la navigazione all&#39;interno del modulo. Inoltre, gli utenti dei dispositivi mobili sono interessati solo a un sottoinsieme di dati. Consente di offrire un&#39;ottima esperienza utente e di ridurre il tempo necessario per caricare i dati richiesti. Ci sono due soluzioni per il prezzo di una.  Inoltre, la navigazione tra le pagine non è disponibile. È possibile utilizzare gli script XFA per sviluppare la navigazione tra le pagine.
 
 * Valutare l&#39;unione di più colonne di sola lettura in un&#39;unica colonna. Riduce la memoria necessaria per visualizzare il modulo. Inoltre, evitate di visualizzare le colonne che non richiedono input da parte degli utenti.
 * Valutare la suddivisione del modulo basato sui dati in un set [di](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)moduli, se i suggerimenti di cui sopra non apportano molti miglioramenti. Ad esempio, se una tabella ha più di 1000 righe, spostare ogni 100 righe in un modulo diverso. In questo modo si migliorerebbero i tempi di caricamento e le prestazioni dei moduli.  Tenere presente che un set di moduli genera un XML di invio consolidato per tutti i moduli. Per distinguere i dati di ogni modulo, utilizzare origini dati diverse. Per ulteriori informazioni, consultate Set di [moduli in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
@@ -75,6 +75,7 @@ I moduli di Adobe Experience Manager (AEM) possono aiutarti a trasformare transa
 * [Best practice per l’amministrazione di AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practice per lo sviluppo di soluzioni](/help/sites-developing/best-practices.md)
 * [Procedure consigliate per l&#39;utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md) 
+* [Il server AEM Forms non incorpora i font in un modulo PDF dinamico](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Scheda di riferimento rapido {#quick-reference-card}
 
