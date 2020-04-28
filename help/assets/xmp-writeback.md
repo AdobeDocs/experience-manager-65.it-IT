@@ -3,7 +3,7 @@ title: Write-back XMP per le rappresentazioni
 description: Scoprite in che modo la funzione di writeback XMP propaga le modifiche dei metadati per una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 33ab9845f7800c80a6beb5db06f3fadf582122d0
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 Questa funzione di Write-back XMP in Risorse Adobe Experience Manager (AEM) replica le modifiche apportate ai metadati delle risorse alle rappresentazioni della risorsa.
 
-Quando modificate i metadati di una risorsa da Risorse AEM o durante il caricamento di tale risorsa, le modifiche vengono inizialmente memorizzate nel nodo della risorsa in Crx-De.
+Quando modificate i metadati di una risorsa da Risorse AEM o durante il caricamento di tale risorsa, le modifiche vengono inizialmente memorizzate all’interno del nodo della risorsa in Crx-De.
 
 La funzione Write-back XMP propaga le modifiche ai metadati a tutte le rappresentazioni o a specifiche della risorsa.
 
@@ -44,16 +44,16 @@ Per consentire alla funzione di WriteBack XMP di estendere le modifiche ai metad
 
 Per estendere i metadati alle miniature delle rappresentazioni 140.100.png e 319.319.png, effettuate le seguenti operazioni.
 
-1. Toccate/fate clic sul logo AEM, quindi accedete a **Strumenti** > **Flusso** di lavoro > **Modelli**.
+1. Tocca/fai clic sul logo AEM, quindi vai a **Strumenti** > **Flusso di lavoro** > **Modelli**.
 1. Dalla pagina Modelli, aprite il modello di flusso di lavoro **DAM Metadata Writeback** .
-1. Nella pagina delle proprietà Write **dei metadati** DAM, aprite il passaggio **XMP Writeback Process** .
-1. Nella finestra di dialogo Proprietà passaggio, toccate o fate clic sulla scheda **Processo** .
+1. Nella pagina delle proprietà **Writeback di metadati DAM**, apri il passaggio **Processo write-back XMPs**.
+1. Nella finestra di dialogo Proprietà passaggio, tocca/fai clic sulla scheda **Processo**.
 1. Nella casella **Argomenti** , aggiungete `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, quindi toccate o fate clic su **OK**.
 
    ![step_properties](assets/step_properties.png)
 
 1. Salva le modifiche.
-1. Per rigenerare le rappresentazioni TIF piramidali per le immagini Dynamic Media con i nuovi attributi, aggiungi il passaggio **Dynamic Media Process Image Assets** al flusso di lavoro di Write-back dei metadati DAM.
+1. To regenerate the pyramid TIF renditions for Dynamic Media images with the new attributes, add the **Dynamic Media Process Image Assets** step to the DAM Metadata Writeback workflow.
 
    Le rappresentazioni PTIFF vengono create e memorizzate solo localmente in un’implementazione Dynamic Media Hybrid.
 
@@ -77,15 +77,15 @@ Il filtro whitelist dei metadati XMP risolve questo problema consentendo di defi
 
 >[!NOTE]
 >
->Il filtro funziona solo per le proprietà derivate da origini XMP nei file binari delle risorse. Per le proprietà derivate da origini non XMP, come i formati EXIF e IPTC, il filtro non funziona. Ad esempio, la data di creazione delle risorse è memorizzata nella proprietà denominata `CreateDate` in EXIF TIFF. AEM rileva questo valore nel campo di metadati denominato `exif:DateTimeOriginal`. Poiché l&#39;origine è un&#39;origine non XMP, il filtraggio non funziona su questa proprietà.
+>Il filtro funziona solo per le proprietà derivate da origini XMP nei file binari delle risorse. Per le proprietà derivate da origini non XMP, come i formati EXIF e IPTC, il filtro non funziona. Ad esempio, la data di creazione delle risorse è memorizzata nella proprietà denominata `CreateDate` in EXIF TIFF. Questo valore viene memorizzato in un campo di metadati denominato `exif:DateTimeOriginal`. Poiché l&#39;origine è un&#39;origine non XMP, il filtraggio non funziona su questa proprietà.
 
 1. Per aprire Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite la configurazione **Adobe CQ DAM XmpFilter** .
-1. Per applicare il filtro della whitelist, selezionate **Applica whitelist alle proprietà** XMP e specificate le proprietà da importare nella casella Nomi XML **Whitelist per il filtro** XMP.
+1. Per applicare il filtro della whitelist, seleziona **Apply Whitelist to XMP Properties (Applica whitelist alle proprietà XMP)** e specifica le proprietà da importare nella casella **Whitelisted XML Names for XMP filtering (Nomi XML in whitelist per il filtro XMP)**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Per filtrare le proprietà XMP in blacklist dopo aver applicato il filtro della whitelist, specificatele nella casella Nomi XML **in blacklist per il filtro** XMP.
+1. Per rimuovere le proprietà XMP in blacklist dopo aver applicato il filtro della whitelist, specificale nella casella **Blacklisted XML Names for XMP filtering (Nomi XML in blacklist per il filtro XMP)**.
 
    >[!NOTE]
    >
