@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -25,11 +25,11 @@ Per Community, le due operazioni generalmente ricercate sono:
 
 * Contenuto pubblicato dai membri della community
 
-   * Utilizza l&#39;API di ricerca UGC di AEM Communities
+   * Utilizza l&#39;API di ricerca UGC di AEM Communities.
 
 * Utenti e gruppi di utenti (dati utente)
 
-   * Utilizza le funzionalità di ricerca della piattaforma AEM
+   * Utilizza le funzionalità di ricerca della piattaforma AEM.
 
 Questa sezione della documentazione interessa gli sviluppatori che creano componenti personalizzati per la creazione o la gestione di UGC.
 
@@ -59,10 +59,10 @@ Per [MSRP](msrp.md), UGC è memorizzato in MongoDB configurato per utilizzare So
 
 Per quanto riguarda MSRP e Solr:
 
-* Il Solr incorporato per la piattaforma AEM non viene utilizzato per MSRP
-* Se utilizzate un Solr remoto per la piattaforma AEM, potrebbe essere condiviso con MSRP, ma dovrebbero utilizzare raccolte diverse
-* Solr può essere configurato per la ricerca standard o per la ricerca multilingue (MLS)
-* Per informazioni dettagliate sulla configurazione, consultate Configurazione [](msrp.md#solr-configuration) solr per MSRP
+* Il Solr incorporato per la piattaforma AEM non viene utilizzato per MSRP.
+* Se utilizzate un Solr remoto per la piattaforma AEM, potrebbe essere condiviso con MSRP, ma dovrebbero utilizzare raccolte diverse.
+* Solr può essere configurato per la ricerca standard o per la ricerca multilingue (MLS).
+* Per informazioni dettagliate sulla configurazione, consultate Configurazione [](msrp.md#solr-configuration) solr per MSRP.
 
 Le funzioni di ricerca personalizzate devono utilizzare l&#39;API [di ricerca](#ugc-search-api)UGC.
 
@@ -84,12 +84,12 @@ Sebbene gli indici Oak non vengano creati automaticamente per la ricerca della p
 
 Se le proprietà personalizzate sono in uso e le ricerche sono lente, è necessario creare indici aggiuntivi per le proprietà personalizzate per renderle più performanti. Per mantenere la portabilità, attenetevi ai requisiti [di](#naming-of-custom-properties) denominazione quando create proprietà personalizzate ricercabili.
 
-Per modificare gli indici esistenti o creare indici personalizzati, fare riferimento a Query [Oak e indicizzazione](../../help/sites-deploying/queries-and-indexing.md).
+Per modificare gli indici esistenti o creare indici personalizzati, fare riferimento a Query [quercia e indicizzazione](../../help/sites-deploying/queries-and-indexing.md).
 
 La [gestione](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) dell&#39;indice Oak è disponibile da ACS AEM Commons. Fornisce:
 
-* Vista degli indici esistenti
-* Possibilità di avviare un reindicizzazione
+* Una visualizzazione degli indici esistenti.
+* Possibilità di avviare un reindicizzazione.
 
 Per visualizzare gli indici Oak esistenti in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), la posizione è:
 
@@ -109,7 +109,7 @@ Di seguito sono riportate alcune delle proprietà ricercabili utilizzate per le 
 | isSpam | *Booleano* |
 | read | *Booleano* |
 | influenza | *Booleano* |
-|  allegati | *Booleano* |
+| allegati | *Booleano* |
 | sentimento | *Lungo* |
 | contrassegnato | *Booleano* |
 | aggiunto | *Data* |
@@ -125,7 +125,7 @@ Di seguito sono riportate alcune delle proprietà ricercabili utilizzate per le 
 | publishDate | *Data* |
 | publishJobId | *Stringa* |
 | ha risposto | *Booleano* |
-| cortese | *Booleano* |
+| discordante | *Booleano* |
 | tag | *Stringa* |
 | cq:Tag | *Stringa* |
 | author_display_name | *Stringa* |
@@ -135,12 +135,12 @@ Di seguito sono riportate alcune delle proprietà ricercabili utilizzate per le 
 
 ### Denominazione delle proprietà personalizzate {#naming-of-custom-properties}
 
-Quando si aggiungono proprietà personalizzate, affinché tali proprietà siano visibili per l&#39;ordinamento e le ricerche create con l&#39;API [di ricerca](#ugc-search-api)UGC, è *obbligatorio *aggiungere un suffisso al nome della proprietà.
+Quando si aggiungono proprietà personalizzate, affinché tali proprietà siano visibili per gli ordinamento e le ricerche creati con l&#39;API [di ricerca](#ugc-search-api)UGC, è *necessario* aggiungere un suffisso al nome della proprietà.
 
 Il suffisso è per i linguaggi di query che utilizzano uno schema:
 
-* Identifica la proprietà come ricercabile
-* Identifica il tipo di dati
+* Identifica la proprietà come ricercabile.
+* Identifica il tipo di dati.
 
 Solr è un esempio di linguaggio di query che utilizza uno schema.
 
@@ -228,9 +228,9 @@ Il valore del `q` parametro è la query. Una volta decodificata la codifica URL,
 
 ## Risorse correlate {#related-resources}
 
-* [Archiviazione](working-with-srp.md) dei contenuti della community - Vengono illustrate le opzioni SRP disponibili per uno store comune UGC
-* [Panoramica](srp.md) del provider di risorse di storage - Introduzione e panoramica sull&#39;utilizzo del repository
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica
-* [SocialUtils Refactoring](socialutils.md) - Metodi di utilità per SRP che sostituiscono SocialUtils
-* [Componenti](search.md) dei risultati di ricerca - Aggiunta di funzionalità di ricerca UGC a un modello
+* [Archiviazione](working-with-srp.md) dei contenuti della community - Vengono illustrate le opzioni SRP disponibili per uno store comune UGC.
+* [Panoramica](srp.md) del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
+* [SocialUtils Refactoring](socialutils.md) - Metodi di utilità per SRP che sostituiscono SocialUtils.
+* [Componenti](search.md) Risultati ricerca e risultati di ricerca - Aggiunta di funzionalità di ricerca UGC a un modello.
 
