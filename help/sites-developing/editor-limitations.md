@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 844d42ed50da153077423190684aa85265bce12f
 
 ---
 
@@ -28,6 +28,10 @@ Un autore può incontrare le seguenti limitazioni funzionali quando utilizza l�
 Durante la [modifica di una pagina](/help/sites-authoring/editing-content.md), i collegamenti non sono attivi.
 
 * [Passate alla modalità **Anteprima** per](/help/sites-authoring/editing-content.md#preview-mode) spostarsi utilizzando i collegamenti presenti nel contenuto.
+
+### Pagine struttura {#structure-pages}
+
+Le pagine non possono essere denominate `structure`. Le pagine denominate `structure` non saranno modificabili nell’editor pagina.
 
 ## Limitazioni CSS {#css-limitations}
 
@@ -69,7 +73,7 @@ body {
 
 I problemi di riduzione del margine possono essere visti se il primo elemento figlio dell&#39;elemento body ha un margine.
 
-* La soluzione consiste nell&#39;aggiungere una correzione a livello di elemento body, come segue:
+* La soluzione consiste nell&#39;aggiungere una correzione a livello dell&#39;elemento body, come segue:
 
 ```xml
 body:before, body:after{
