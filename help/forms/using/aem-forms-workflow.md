@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
 
 ---
 
@@ -65,7 +65,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
 [Ottieni file](assets/example-mortgage-loan-application.zip)
 
-1. Aprite la console Modelli di workflow. L’URL predefinito è https://&#39;[server]:[porta]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Aprite la console Modelli di workflow. L’URL predefinito è `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Select **Create**, then **Create Model**. Viene visualizzata la finestra di dialogo Aggiungi modello flusso di lavoro.
 1. Immettete **Titolo** e **Nome** (facoltativo). Ad esempio, un&#39;applicazione di ipoteca. Toccate **Chiudi**.
 1. Selezionate il modello di flusso di lavoro appena creato e toccate **Modifica**. Ora puoi aggiungere passaggi al flusso di lavoro per creare logica di business. La prima volta che create un modello di workflow, questo contiene:
@@ -75,7 +75,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
 1. Abilitare le notifiche e-mail. È possibile configurare il flusso di lavoro incentrato su Forms in OSGi per inviare notifiche e-mail agli utenti o assegnatari. Per abilitare le notifiche e-mail, eseguite le seguenti configurazioni:
 
-   1. Andate a Gestione configurazione AEM all&#39;indirizzo https://&#39;[server]:[port]&#39;/system/console/configMgr.
+   1. Andate a Gestione configurazione AEM all&#39;indirizzo `https://[server]:[port]/system/console/configMgr`.
    1. Aprire la configurazione **[!UICONTROL Day CQ Mail Service]** . Specificare un valore per il nome **[!UICONTROL host del server]** SMTP, **[!UICONTROL la porta del server]** SMTP e i campi dell&#39;indirizzo **** &quot;Da&quot;. Fai clic su **[!UICONTROL Salva]**.
    1. Aprite la configurazione **[!UICONTROL Day CQ Link Externalizer]** . Nel campo **[!UICONTROL Domini]** , specificate il nome host/indirizzo IP effettivo e il numero di porta per le istanze locali, di autori e di pubblicazione. Fai clic su **[!UICONTROL Salva]**.
 
@@ -101,13 +101,13 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
    Utilizzare l&#39;editor di espressioni per creare espressioni di routing per ramo 1 e ramo 2. Queste espressioni di routing consentono di scegliere un ramo in base all&#39;azione dell&#39;utente nella Casella in entrata AEM.
 
-   **Espressione di routing per il ramo 2**
+   **Espressione di routing per il ramo 1**
 
    Quando un utente tocca **Approva** in AEM Inbox, viene attivato il ramo 1.
 
    ![Esempio di divisione OR](assets/orsplit_branch1_active_new.png)
 
-   **Espressione di routing per il ramo 2**
+   **Espressione di routing per il ramo 1**
 
    Quando un utente tocca **Rifiuta** in AEM Inbox, viene attivato il ramo 2.
 
@@ -265,10 +265,10 @@ Un amministratore (membro del gruppo di amministratori di fd) può configurare u
 
 Puoi utilizzare i passaggi Assegna attività e Invia e-mail di flussi di lavoro AEM per inviare un messaggio e-mail. Per specificare i server e-mail e le altre configurazioni necessarie per l’invio di e-mail, effettuate le seguenti operazioni:
 
-1. Andate a Gestione configurazione AEM all&#39;indirizzo https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Andate a Gestione configurazione AEM all&#39;indirizzo `https://[server]:[port]/system/console/configMgr`.
 1. Aprire la configurazione **[!UICONTROL Day CQ Mail Service]** . Specificare un valore per il nome **[!UICONTROL host del server]** SMTP, **[!UICONTROL la porta del server]** SMTP e i campi dell&#39;indirizzo **** &quot;Da&quot;. Fai clic su **[!UICONTROL Salva]**.
 1. Aprite la configurazione **[!UICONTROL Day CQ Link Externalizer]** . Nel campo **[!UICONTROL Domini]** , specificate il nome host/indirizzo IP effettivo e il numero di porta per le istanze locali, di autori e di pubblicazione. Fai clic su **[!UICONTROL Salva]**.
 
 ### Rimozione delle istanze del flusso di lavoro {#purge-workflow-instances}
 
-Riducendo il numero di istanze del flusso di lavoro si ottengono maggiori prestazioni nel motore del flusso di lavoro, è possibile eliminare regolarmente dal repository le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consultate [Pulizia regolare delle istanze](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)del flusso di lavoro.
+Riducendo il numero di istanze del flusso di lavoro si ottengono maggiori prestazioni nel motore del flusso di lavoro, è possibile eliminare regolarmente dal repository le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, consultate Soppressione [regolare delle istanze](/help/sites-administering/workflows-administering.md#regular) del flusso di lavoro eliminazione delle istanze del flusso di lavoro
