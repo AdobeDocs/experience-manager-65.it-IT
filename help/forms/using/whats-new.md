@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: a417094c1d7b28ec54a6e84303d7a9747bb0c510
 
 ---
 
@@ -116,7 +116,7 @@ Le funzionalità di registrazione dei passaggi di flusso di lavoro incentrati su
 
 ## Integrazione dei dati {#data-integration}
 
-È ora possibile:
+Ora puoi:
 
 * [Convalida dei dati](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) di input in base a un elenco di vincoli. In questo modo si garantisce che solo i dati validi vengano inviati all&#39;origine dati.
 * [Ignora endpoint](../../forms/using/configure-data-sources.md#configure-soap-web-services) predefinito definito in un file WSDL (Web Services Description Language).
@@ -148,7 +148,8 @@ I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di si
    <td>Server applicazioni<br /> </td>
    <td>
     <ul>
-     <li>Oracle Weblogic</li>
+    <li>Profilo WebSphere Liberty</li>
+    <li>Oracle WebLogic</li>
     </ul> </td>
   </tr>
   <tr>
