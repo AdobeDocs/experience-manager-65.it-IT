@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -21,36 +21,42 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Un modello di sito personalizzato può essere specificato separatamente per ogni copia in lingua di un sito community.
 
-A tal fine,
+A questo scopo:
 
-* Creare un modello personalizzato
-* Sovrapponi il percorso predefinito del modello di sito
-* Aggiungere il modello personalizzato al percorso della sovrapposizione
-* Specificare il modello personalizzato aggiungendo una `page-template` proprietà al `configuration` nodo
+* Creare un modello personalizzato.
+* Sovrapponete il percorso predefinito del modello di sito.
+* Aggiungete il modello personalizzato al percorso della sovrapposizione.
+* Specificare il modello personalizzato aggiungendo una `page-template` proprietà al `configuration` nodo.
 
 **Modello** predefinito:
 
-/**libs**/social/console/components/hbs/sitepage/**sitepage**.hbs
+`/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
 **Modello personalizzato nel percorso** della sovrapposizione:
 
-/**apps**/social/console/components/hbs/sitepage/**&lt;nome *modello*>**.hbs
+`/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Proprietà**: page-template **Type**: Valore **stringa**: &lt;*template-name*> (nessuna estensione)
+**Proprietà**: page-template
+
+**Tipo**: Stringa
+
+**Valore**: `template-name` (nessuna estensione)
 
 **Nodo** di configurazione:
 
-/content/&lt;percorso *del sito* community>/&lt;*lang*>/configuration
+`/content/community site path/lang/configuration`
 
-Ad esempio: /content/sites/interazione/it/configurazione
+Esempio: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
 >Tutti i nodi del percorso sovrapposto devono essere solo di tipo `Folder`.
 
+
 >[!CAUTION]
 >
->Se al modello personalizzato viene assegnato il nome *sitepage.hbs,* tutti i siti della community verranno personalizzati.
+>Se al modello personalizzato viene assegnato il nome *sitepage.hbs*, tutti i siti della community verranno personalizzati.
+
 
 ### Esempio di modello di sito personalizzato {#custom-site-template-example}
 
@@ -58,11 +64,11 @@ Ad esempio, `vertical-sitepage.hbs` è un modello di sito che consente di posizi
 
 [Ottieni file](assets/vertical-sitepage.hbs)Inserite il modello di sito personalizzato nella cartella delle sovrapposizioni:
 
-/**apps**/social/console/components/hbs/sitepage/**vertical-sitepage**.hbs
+`/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
 Identificare il modello personalizzato aggiungendo una `page-template` proprietà al nodo di configurazione:
 
-/content/sites/sample/en/configuration
+`/content/sites/sample/en/configuration`
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -78,11 +84,11 @@ Una volta creato un sito community, è possibile esportare il sito come pacchett
 
 Si noti che UGC e codice personalizzato non sono inclusi nel pacchetto del sito community.
 
-Per esportare UGC, utilizzate lo strumento [di migrazione UGC di](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, uno strumento di migrazione open source disponibile su GitHub.
+Per esportare UGC, utilizza lo strumento [di migrazione UGC di](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, uno strumento di migrazione open source disponibile su GitHub.
 
 ## Eliminazione di un sito community {#deleting-a-community-site}
 
-A partire da AEM Communities 6.3 Service Pack 1, l&#39;icona Elimina sito viene visualizzata quando si passa il puntatore del mouse sul sito della community dalla console Community > Siti. Durante lo sviluppo, se si desidera eliminare un sito community e iniziare a utilizzarne uno nuovo, è possibile utilizzare questa funzionalità. Eliminando un sito community, vengono rimossi i seguenti elementi associati a tale sito:
+A partire da AEM Communities 6.3 Service Pack 1, l&#39;icona Elimina sito viene visualizzata quando si passa il puntatore del mouse sul sito della community dalla console **[!UICONTROL Community]** > **[!UICONTROL Siti]** . Durante lo sviluppo, se si desidera eliminare un sito community e iniziare a utilizzarne uno nuovo, è possibile utilizzare questa funzionalità. Eliminando un sito community, vengono rimossi i seguenti elementi associati a tale sito:
 
 * [UGC](#user-generated-content)
 * [Gruppi di utenti](#community-user-groups)
@@ -93,11 +99,13 @@ A partire da AEM Communities 6.3 Service Pack 1, l&#39;icona Elimina sito viene 
 
 Per identificare l&#39;ID univoco del sito associato al sito community, utilizzando CRXDE:
 
-* Andate alla directory principale della lingua del sito, come `/content/sites/*<site name>*/en/rep:policy`
+* Andate alla directory principale della lingua del sito, ad esempio `/content/sites/*<site name>*/en/rep:policy`.
 
-* Trova il `allow<#>` nodo con un `rep:principalName` in questo formato `rep:principalName = *community-enable-nrh9h-members*`
+* Trova il `allow<#>` nodo con un `rep:principalName` in questo formato `rep:principalName = *community-enable-nrh9h-members*`.
 
-* L&#39;ID sito è il terzo componente di `rep:principalName`Ad esempio, se `rep:principalName = community-enable-nrh9h-members`
+* L’ID sito è il terzo componente di `rep:principalName`
+
+   Ad esempio, se `rep:principalName = community-enable-nrh9h-members`
 
    * **nome** sito = *enable*
    * **ID** sito = *nrh9h*
@@ -113,7 +121,7 @@ Contiene un servlet per eliminare tutti gli UGC da qualsiasi SRP.
 
 Tutti gli UGC possono essere rimossi o per un sito specifico, ad esempio:
 
-* path=/content/usergenerated/asi/mongo/content/sites/interazione
+* `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
 Questo rimuove solo il contenuto generato dall’utente (immesso al momento della pubblicazione) e non il contenuto generato (immesso all’autore). Pertanto, i nodi [](srp.md#shadownodes) ombra non vengono modificati.
 
@@ -122,7 +130,7 @@ Questo rimuove solo il contenuto generato dall’utente (immesso al momento dell
 Per tutte le istanze di creazione e pubblicazione, dalla console [di](../../help/sites-administering/security.md)sicurezza individuate e rimuovete i gruppi [di](users.md) utenti che sono:
 
 * Prefisso con `community`
-* Seguito da ID sito [univoco](#community-unique-site-id)
+* Seguito da un ID sito [univoco](#community-unique-site-id)
 
 Esempio, `community-engage-x0e11-members`.
 
@@ -130,12 +138,12 @@ Esempio, `community-engage-x0e11-members`.
 
 Dalla console principale:
 
-* Select **[!UICONTROL Assets]**
-* Attiva modalità **[!UICONTROL Seleziona]**
-* Seleziona la cartella con l&#39;ID sito [univoco](#community-unique-site-id)
-* Seleziona **[!UICONTROL Elimina]** (potrebbe essere necessario selezionare **[!UICONTROL Altro...]**)
+* Select **[!UICONTROL Assets]**.
+* Accedete alla modalità **[!UICONTROL Seleziona]** .
+* Selezionate una cartella denominata con l&#39;ID [sito](#community-unique-site-id)univoco.
+* Selezionate **[!UICONTROL Elimina]** (potrebbe essere necessario selezionare **[!UICONTROL Altro...]**).
 
-### Record database {#database-records}
+### Record del database {#database-records}
 
 Non esiste uno strumento per eliminare selettivamente le voci del database per un sito community di abilitazione specifico.
 
