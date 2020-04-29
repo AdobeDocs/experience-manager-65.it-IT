@@ -1,6 +1,6 @@
 ---
-title: Best practice
-seo-title: Best practice
+title: 'Best practice  '
+seo-title: 'Best practice  '
 description: I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM
 seo-description: I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM
 uuid: f962c31f-8140-482f-b189-16376e23bfed
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
 
 ---
 
 
-# Best practice{#best-practices}
+# Best practice  {#best-practices}
 
 ## Best practice per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
@@ -30,6 +30,7 @@ Prima di avviare il progetto di sviluppo AEM, controlla innanzitutto le best pra
 * [Code Pitfall](/help/sites-developing/code-pitfalls.md)
 * [Interazione JCR](/help/sites-developing/jcr-integration.md)
 * [Bundle OSGi](/help/sites-developing/osgi-bundles.md)
+* [Best practice per le API Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informazioni aggiuntive sulle best practice {#additional-best-practices-information}
 
@@ -55,7 +56,7 @@ Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le b
  <tbody>
   <tr>
    <td>Alcune delle teorie dietro l’interfaccia touch standard.</td>
-   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Interfaccia touch:Concetti</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Interfaccia touch:Struttura</a></p> </td>
+   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Interfaccia touch: Concetti</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Interfaccia touch: Struttura</a></p> </td>
    <td>Questi documenti forniscono una panoramica dei concetti e della struttura dell’interfaccia touch.</td>
   </tr>
   <tr>
@@ -93,11 +94,11 @@ HTML Template Language (HTL) è un nuovo sistema di modelli HTML introdotto con 
 
 |  |  |  |
 |---|---|---|
-| Panoramica di HTL | [Panoramica e sintassi HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) | Questo documento descrive il concetto di HTL, come passare a HTL, un progetto di esempio, sintassi, espressioni e istruzioni |
+| Panoramica di HTL | [Panoramica e sintassi HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) | Questo documento descrive il concetto di HTL, come passare a HTL, un progetto, una sintassi, espressioni e istruzioni di esempio |
 | Utilizzo dell&#39;API in Java | [API di utilizzo Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | L&#39;API Use-API Java HTL consente a un file HTL di accedere ai metodi helper in una classe Java personalizzata. |
 
 >[!NOTE]
 >
->Per la procedura ottimale, l’esercitazione con più parti potrebbe interessare impostare un nuovo progetto AEM, con informazioni dettagliate su componenti core, modelli modificabili, librerie client e sviluppo di componenti:
->[Guida introduttiva ad AEM Sites - Esercitazione WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>Per la procedura ottimale, l’esercitazione con più parti potrebbe interessare impostare un nuovo progetto AEM, con informazioni dettagliate sui componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti:
+>[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
