@@ -3,7 +3,7 @@ title: Configura l’editor Rich Text per creare contenuto in Adobe Experience M
 description: Scopri come configurare l’editor Rich Text di Adobe Experience Manager per la creazione di contenuti in Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
+source-git-commit: 430994c8e9951500378e0a4d56c8004e7e81c24f
 
 ---
 
@@ -160,6 +160,15 @@ Configura le seguenti proprietà che si applicano in modalità di modifica fines
 * `rte-start`: Attiva questo evento sull’ `contenteditable-div` editor Rich Text, quando avviare la modifica dell’editor Rich Text. Questo funziona solo se `customStart` è stato impostato su true.
 
 Quando l’editor Rich Text viene utilizzato nella finestra di dialogo con attivazione touch, l’impostazione della proprietà `useFixedInlineToolbar` su true è obbligatoria per evitare problemi.
+
+## Personalizzazione della modifica locale {#customizing-in-place-editing}
+
+Potete definire il selettore HTML che verrà avviato dall&#39;editor di testo configurando le seguenti proprietà:
+
+* **`editElementQuery`** - Definita in `cq:InplaceEditingConfig`, questa proprietà viene utilizzata per specificare un selettore dell&#39;elemento HTML sul quale verrà avviata la modifica in linea per il componente Testo. Se non viene specificato, la modifica in linea viene avviata direttamente sul componente di testo HTML.
+* **`textPropertyName`** - Definita in `cq:InplaceEditingConfig`, questa proprietà viene utilizzata per specificare il nome della proprietà che verrà salvata nel nodo di contenuto in cui il valore HTML del componente di testo verrà mantenuto dopo la modifica in linea.
+
+La proprietà corrispondente per la modalità finestra di dialogo è `name`.
 
 ## Abilitare le funzionalità RTE attivando i plug-in {#enable-rte-functionalities-by-activating-plug-ins}
 
