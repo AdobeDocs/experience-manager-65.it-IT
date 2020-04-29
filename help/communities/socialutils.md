@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Pacchetto SocialUtils obsoleto {#socialutils-package-deprecated}
 
-Il pacchetto **com.adobe.cq.social.ugcbase.SocialUtils** è stato dichiarato obsoleto in AEM 6.1.
+Il pacchetto `com.adobe.cq.social.ugcbase.SocialUtils` è stato dichiarato obsoleto in AEM 6.1.
 
 Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi SocialUtils.
 
@@ -73,7 +73,7 @@ Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi 
 | isResourceOwner(Risorsa risorsa risorsa) booleana |
 | String mapUGCPath(Risorsa risorsa) |
 | String mapUGCPath(String ugcPath, ResourceResolver) |
-| canPost(ResourceResolver, Resource Resource) booleano |
+| canPostBooleano(ResourceResolver, Resource Resource) |
 | String PrepareUserGeneratedContent(ResourceResolver, percorso stringa) |
 
 ## Metodi non più disponibili {#methods-no-longer-available}
