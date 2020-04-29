@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -33,15 +33,15 @@ Tutti i componenti SCF sono implementati utilizzando l&#39;API SRP, consentendo 
 
 Consulta anche:
 
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica
-* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
+* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
 ## Informazioni sull&#39;archivio {#about-the-repository}
 
 Per comprendere meglio SRP, è utile comprendere il ruolo dell&#39;archivio AEM (OAK) in un sito della community AEM.
 
-**Java Content Repository (JCR)** Questo standard definisce un modello dati e un&#39;interfaccia di programmazione applicazione (API[](https://jackrabbit.apache.org/jcr/jcr-api.html)JCR) per i repository dei contenuti. Unisce le caratteristiche dei file system convenzionali a quelle dei database relazionali e aggiunge una serie di funzioni aggiuntive spesso necessarie alle applicazioni di contenuto.
+**Java Content Repository (JCR)** Questo standard definisce un modello dati e un&#39;interfaccia di programmazione applicazione (API[](https://jackrabbit.apache.org/jcr/jcr-api.html)JCR) per i repository dei contenuti. Unisce le caratteristiche dei file system convenzionali a quelle dei database relazionali e aggiunge una serie di funzioni aggiuntive spesso necessarie per le applicazioni di contenuto.
 
 Un&#39;implementazione di JCR è l&#39;archivio AEM, OAK.
 
@@ -49,7 +49,7 @@ Un&#39;implementazione di JCR è l&#39;archivio AEM, OAK.
 
 Sia JCR che OAK sono generalmente utilizzati per fare riferimento all’archivio di AEM.
 
-Dopo aver sviluppato il contenuto del sito nell’ambiente di authoring privato, deve essere copiato nell’ambiente di pubblicazione pubblica. Questa operazione viene spesso eseguita tramite un&#39;operazione denominata *[replica](deploy-communities.md#replication-agents-on-author)*. Ciò avviene sotto il controllo dell&#39;autore/sviluppatore/amministratore.
+Dopo aver sviluppato il contenuto del sito nell’ambiente di authoring privato, questo deve essere copiato nell’ambiente di pubblicazione pubblica. Questa operazione viene spesso eseguita tramite un&#39;operazione denominata *[replica](deploy-communities.md#replication-agents-on-author)*. Ciò avviene sotto il controllo dell&#39;autore/sviluppatore/amministratore.
 
 Per UGC, il contenuto è immesso dai visitatori registrati del sito (membri della community) nell&#39;ambiente di pubblicazione pubblica. Questo succede in modo casuale.
 
@@ -65,6 +65,7 @@ Quando UGC viene salvato nello storage condiviso, esiste un&#39;unica istanza di
 >
 >Consultate [Accesso a UGC con SRP](accessing-ugc-with-srp.md) per le best practice di codifica.
 
+
 ### ASRP {#asrp}
 
 Nel caso di ASRP, UGC non è memorizzato in JCR, ma in un servizio cloud ospitato e gestito da Adobe. L&#39;UGC memorizzato in ASRP non può essere visualizzato con CRXDE Lite né utilizzato tramite l&#39;API JCR.
@@ -79,7 +80,7 @@ ASRP utilizza Adobe Cloud per le query.
 
 Nel caso di MSRP, UGC non è memorizzato in JCR, è memorizzato in MongoDB. Gli UGC memorizzati in MSRP non possono essere visualizzati con CRXDE Lite né utilizzati tramite l&#39;API JCR.
 
-Consultate [MSRP - Provider](msrp.md)di risorse di storage MongoDB.
+Consultate [MSRP - Fornitore](msrp.md)di risorse di storage MongoDB.
 
 Sebbene MSRP sia paragonabile ad ASRP, poiché tutte le istanze del server AEM accedono allo stesso UGC, è possibile utilizzare strumenti comuni per accedere direttamente all’UGC memorizzato in MongoDB.
 
@@ -101,7 +102,7 @@ JSRP utilizza gli indici Oak per le query.
 
 I nodi shadow, che imitano il percorso dell&#39;UGC, esistono nell&#39;archivio locale per due scopi:
 
-1. [Controllo degli accessi (ACL](#for-access-control-acls))
+1. [Controllo degli accessi (ACL)](#for-access-control-acls)
 1. [Risorse non esistenti (NER)](#for-non-existing-resources-ners)
 
 Indipendentemente dall&#39;implementazione SRP, l&#39;UGC effettivo *non sarà visibile nella stessa posizione del nodo ombra.
@@ -110,7 +111,7 @@ Indipendentemente dall&#39;implementazione SRP, l&#39;UGC effettivo *non sarà v
 
 Alcune implementazioni SRP, come ASRP e MSRP, memorizzano il contenuto della community in database che non forniscono alcuna verifica ACL. I nodi shadow forniscono una posizione nell&#39;archivio locale in cui è possibile applicare gli ACL.
 
-Utilizzando l&#39;API SRP, tutte le opzioni SRP eseguono lo stesso controllo della posizione ombra prima di tutte le operazioni CRUD.
+Utilizzando l&#39;API SRP, tutte le opzioni SRP eseguono lo stesso controllo della posizione dell&#39;ombra prima di tutte le operazioni CRUD.
 
 Il controllo ACL utilizza un metodo di utilità che restituisce un percorso adatto per verificare le autorizzazioni applicate all&#39;UGC della risorsa.
 
@@ -126,17 +127,18 @@ I nodi shadow forniscono una posizione indirizzabile Sling nella directory archi
 >
 >Poiché il nodo ombra ha più usi, la presenza di un nodo ombra *non* implica che il componente sia un NER.
 
+
 ### Posizione di archiviazione {#storage-location}
 
 Di seguito è riportato un esempio di un nodo shadow, utilizzando il componente [](http://localhost:4502/content/community-components/en/comments.html) Commenti nella Guida [ai componenti](components-guide.md)community:
 
 * Il componente esiste nell’archivio locale in:
 
-   /content/community-components/it/comments/jcr:content/content/incluso/comments
+   `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * Il nodo shadow corrispondente esiste nel repository locale in:
 
-   /content/usergenerated/content/community-components/it/comments/jcr:content/content/incluso/comments
+   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 Non verrà trovato alcun UGC sotto il nodo shadow.
 
