@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -25,9 +25,9 @@ Le iscrizioni sono simili alle [notifiche](notifications.md) , in quanto i membr
 
 Ciò che distingue le sottoscrizioni dalle notifiche è:
 
-* I membri non possono iscriversi quando seguono altri membri
-* L&#39;unica azione che i membri devono intraprendere è selezionare `Email Subscriptions` quando
-* Quando è configurata la risposta e-mail, i membri possono pubblicare contenuti semplicemente rispondendo all&#39;e-mail ricevuta
+* I membri non possono iscriversi quando seguono altri membri.
+* L&#39;unica azione che i membri devono intraprendere è selezionare `Email Subscriptions` quando si segue.
+* Quando è configurata la risposta e-mail, i membri possono pubblicare contenuti semplicemente rispondendo all&#39;e-mail ricevuta.
 
 ### Requisiti {#requirements}
 
@@ -49,15 +49,11 @@ Il pulsante **Segui** consente di seguire le voci come attività, iscrizioni e/o
 
 Se è selezionato un metodo di seguito, il testo del pulsante diventa **Seguente**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
 
-Il pulsante **Segui** includerà l&#39; `Email Subscriptions` opzione solo quando un forum, QnA o un blog è configurato per abilitare le iscrizioni alle e-mail. Questo pulsante verrà visualizzato
+Il pulsante **Segui** includerà l&#39; `Email Subscriptions` opzione solo quando un forum, QnA o un blog è configurato per abilitare le iscrizioni alle e-mail. Verrà visualizzato il pulsante:
 
-* Nella pagina delle funzioni principali per il forum abilitato, QnA o il blog
+* Nella pagina delle funzioni principali per il forum abilitato, QnA o il blog verrà inviato un messaggio e-mail per tutte le attività in tale funzione.
 
-   * Invierà un&#39;e-mail per tutte le attività in quella funzionalità
-
-* Per un post specifico, ad esempio un argomento forum, una domanda QnA o un articolo blog
-
-   * Invia un messaggio e-mail quando esiste attività per la voce specifica
+* Per un post specifico, come un argomento del forum, una domanda QnA o un articolo del blog, verrà inviato un messaggio e-mail quando esiste attività per quel post specifico.
 
 ## Rispondi per e-mail {#reply-by-email}
 
