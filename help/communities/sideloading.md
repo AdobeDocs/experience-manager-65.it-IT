@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -42,6 +42,7 @@ I passaggi per aggiungere dinamicamente i componenti SCF sono i seguenti:
 >
 >Il sideloading delle risorse [](scf.md#add-or-include-a-communities-component) non esistenti non è supportato.
 
+
 ## Aggiunta dinamica di un componente a DOM {#dynamically-add-component-to-dom}
 
 Sia che il componente sia incluso in modo dinamico o caricato in modo dinamico, deve prima essere aggiunto al DOM.
@@ -50,9 +51,13 @@ Quando aggiungete il componente SCF, il tag più comune da usare è il tag DIV, 
 
 Qualsiasi tag viene utilizzato, come minimo, l&#39;elemento deve essere conforme al normale pattern dell&#39;elemento principale SCF, contenente i due attributi seguenti:
 
-* **data-component-id** Il percorso effettivo del componente aggiunto
+* **data-component-id**
 
-* **data-scf-component** Il resourceType del componente
+   Percorso effettivo del componente aggiunto.
+
+* **data-scf-component**
+
+   Il resourceType del componente.
 
 Esempio di un componente per commenti aggiunto:
 
@@ -73,7 +78,7 @@ L’inclusione dinamica utilizza una richiesta boostrap che consente a SCF di es
 
 Per inizializzare i componenti SCF in qualsiasi momento dopo il caricamento della pagina, è sufficiente attivare un evento JQuery come indicato di seguito:
 
-$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);
+`$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);`
 
 ### Caricamento dinamico {#dynamic-loading}
 
@@ -81,6 +86,6 @@ Il caricamento dinamico consente di controllare il caricamento dei componenti SC
 
 Invece di avviare tutti i componenti SCF presenti nel DOM, è possibile specificare un componente SCF specifico da caricare utilizzando questo metodo JavaScript:
 
-SCF.addComponent(document.getElementById(*someId*));
+`SCF.addComponent(document.getElementById(*someId*));`
 
-Dove *someId* è il valore dell’attributo **data-component-id** .
+Dove `someId` è il valore dell&#39; `data-component-id` attributo.
