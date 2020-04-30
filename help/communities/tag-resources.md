@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -81,7 +81,7 @@ L’amministratore che applica i tag alle risorse di abilitazione deve essere a 
 
 Ad esempio, se uno `ski-catalog` spazio nomi è stato creato e impostato su un catalogo denominato `Ski Catalog`, potrebbe avere due tag secondari: `lesson-1` e `lesson-2`.
 
-Di conseguenza, qualsiasi risorsa di abilitazione con tag
+Di conseguenza, qualsiasi risorsa di abilitazione con un tag tra:
 
 * ski-catalog:session-1
 * ski-catalog:session-2
