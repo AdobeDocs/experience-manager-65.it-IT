@@ -11,12 +11,12 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
 
-# Aggiornamento ad AEM 6.5 Communities{#upgrading-to-aem-communities}
+# Aggiornamento ad AEM 6.5 Communities {#upgrading-to-aem-communities}
 
 A seconda della topologia e delle funzioni di ciascun sito, potrebbero essere necessarie le seguenti azioni quando si esegue l&#39;aggiornamento ad AEM Communities 6.5 o si installa l&#39;ultimo pacchetto di funzioni.
 
@@ -26,17 +26,17 @@ Questa sezione è specifica per Communities e integra le informazioni fornite in
 
 ### Reindicizza Solr {#reindex-solr}
 
-Durante l&#39;installazione di un nuovo pacchetto di funzionalità Community su una distribuzione configurata con MSRP, sarà necessario
+Durante l&#39;installazione di un nuovo pacchetto di funzionalità Community su una distribuzione configurata con MSRP, sarà necessario:
 
-1. installare il pacchetto di funzioni [più recente](/help/communities/deploy-communities.md#latestfeaturepack)
-1. installare i file di configurazione Solr [più recenti](/help/communities/msrp.md#upgrading)
-1. reindicizzare MSRPsee sezione [MSRP Reindex Tool](/help/communities/msrp.md#msrp-reindex-tool)
+1. Installate il pacchetto [di funzioni](/help/communities/deploy-communities.md#latestfeaturepack)più recente.
+1. Installate i file [di configurazione Solr](/help/communities/msrp.md#upgrading)più recenti.
+1. Reindicizzare MSRPsee sezione [MSRP Reindex Tool](/help/communities/msrp.md#msrp-reindex-tool).
 
 ### Enablement 2.0 {#enablement}
 
 A partire da AEM 6.3, le funzioni di abilitazione non memorizzano più le informazioni di reporting in MySQL. La dipendenza MySQL è presente solo per il tracciamento del contenuto SCORM.
 
-Per assistenza nella migrazione dei contenuti da Enablement 1.0, contattate l&#39; [assistenza](https://helpx.adobe.com/marketing-cloud/contact-support.html) clienti.
+Per assistenza nella migrazione dei contenuti da Enablement 1.0, contattate l&#39; [assistenza](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) clienti.
 
 ## Aggiornamento da AEM 6.0 {#upgrading-from-aem}
 
@@ -48,24 +48,24 @@ Se il sito aggiornato è stato configurato per l’utilizzo dell’archiviazione
 
 Pertanto, esiste la capacità di istruire l&#39;ASRP a utilizzare `AEM 6.0 compatability-mode` per accedere a UGC.
 
-Per tutte le istanze di creazione e pubblicazione di AEM 6.3
+Per tutte le istanze di creazione e pubblicazione di AEM 6.3:
 
-* accesso con privilegi di amministratore
-* configurare [ASRP](/help/communities/asrp.md)
-* per rendere visibile l’UGC preesistente, effettuate le seguenti operazioni:
+* Effettuate l&#39;accesso con privilegi di amministratore.
+* Configurare [ASRP](/help/communities/asrp.md).
+* Per rendere visibile l’UGC preesistente, effettuate le seguenti operazioni:
 
-   * passare alla console Web
+   * Passate alla console Web:
 
-      * ad esempio, [https://&lt;host>:&lt;porta>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * individuare la configurazione di **AEM Communities Utilities**
-   * selezionare per espandere il pannello di configurazione
+      * Ad esempio, [https://&lt;host>:&lt;porta>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-      * *scheck***`Cloud Storage`**
+      * Individua la configurazione **AEM Communities Utilities** .
+      * Selezionare per espandere il pannello di configurazione:
 
-      * select **Save**
+         * *Deseleziona*`Cloud Storage`
 
+         * Seleziona **Salva**
+      ![chlimage_1-176](assets/chlimage_1-176.png)
 
-![chlimage_1-176](assets/chlimage_1-176.png)
 
 ### Storage locale {#on-premise-storage}
 
@@ -100,8 +100,8 @@ Oltre a spostare UGC dalle versioni precedenti, è anche possibile utilizzare lo
 
 Concettualmente, esistono tre generazioni di componenti per comunità:
 
-**Gen 1** : circa CQ 5.4 fino a AEM 5.6.0: si tratta dei componenti **collab** che hanno memorizzato UGC nell&#39;archivio locale utilizzando la replica come mezzo per sincronizzare UGC tra piattaforme. Altre differenze riguardano l’implementazione tramite Java Server Pages (JSP), nonché la funzione blog che consiste nell’authoring solo nell’ambiente di authoring.
+**Gen 1**: Da CQ 5.4 a AEM 5.6.0 circa, questi sono i componenti **collab** che hanno memorizzato UGC nell&#39;archivio locale utilizzando la replica come mezzo per sincronizzare UGC tra piattaforme. Altre differenze riguardano l’implementazione tramite Java Server Pages (JSP), nonché la funzione blog che consiste nell’authoring solo nell’ambiente di authoring.
 
-**Gen 2** : da AEM 5.6.1 a AEM 6.1 - si tratta di una combinazione di componenti **collab** e **social** . AEM 6.0 ha introdotto il nuovo framework [di componenti](/help/communities/scf.md) sociali (SCF) e AEM 6.2 ha introdotto un archivio [UGC](/help/communities/working-with-srp.md) comune a cui è possibile accedere tramite un provider [di risorse di](/help/communities/srp.md) storage (SRP).
+**Gen 2**: Da AEM 5.6.1 a AEM 6.1, si tratta di una combinazione di componenti **collab** e **social** . AEM 6.0 ha introdotto il nuovo framework [di componenti](/help/communities/scf.md) sociali (SCF) e AEM 6.2 ha introdotto un archivio [UGC](/help/communities/working-with-srp.md) comune a cui è possibile accedere tramite un provider [di risorse di](/help/communities/srp.md) storage (SRP).
 
-**Gen 3** : da AEM 6.2 in avanti, esistono solo componenti **social** , implementati in SCF come Handlebars (HBS) e che richiedono una scelta di SRP per UGC.
+**Gen 3**: Da AEM 6.2 in avanti, esistono solo componenti **social** implementati in SCF come Handlebars (HBS) e che richiedono una scelta di SRP per UGC.
