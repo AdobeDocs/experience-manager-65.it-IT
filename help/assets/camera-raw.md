@@ -1,22 +1,22 @@
 ---
-title: Supporto di Camera Raw
-description: Scopri come abilitare il supporto per Camera Raw in Risorse di Adobe Experience Manager.
+title: '[!DNL Supporto di Adobe Camera Raw].'
+description: Scoprite come abilitare il supporto per [!DNL Adobe Camera Raw] in [!DNL Risorse Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Supporto per l&#39;elaborazione delle immagini con Camera Raw {#camera-raw-support}
+# Elaborazione di immagini tramite Camera Raw {#camera-raw-support}
 
-Potete abilitare il supporto per Camera Raw per elaborare formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. Questa funzionalità è supportata in Risorse Adobe Experience Manager mediante il pacchetto [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponibile tramite Package Share.
+Potete abilitare il [!DNL Adobe Camera Raw] supporto per l’elaborazione di formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata nell&#39; [!DNL Adobe Experience Manager Assets] utilizzo del pacchetto [Camera Raw](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponibile tramite Package Share.
 
 >[!NOTE]
 >
 >La funzionalità supporta solo le rappresentazioni JPEG. È supportato su Windows a 64 bit, Mac OS e RHEL 7.x.
 
-Per abilitare il supporto per Camera Raw in Risorse Adobe Experience Manager, procedi come segue:
+Per abilitare [!DNL Camera Raw] il supporto in [!DNL Experience Manager Assets], effettuate le seguenti operazioni:
 
 1. Scaricate il pacchetto [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw da Package Share.
 1. Accesso `https://[aem_server]:[port]/workflow`. Aprite il flusso di lavoro Aggiorna risorsa **** DAM.
@@ -51,15 +51,15 @@ Per abilitare il supporto per Camera Raw in Risorse Adobe Experience Manager, pr
 
 È ora possibile importare file da fotocamera in formato raw in Risorse AEM. Dopo aver installato il pacchetto Camera RAW e configurato il flusso di lavoro richiesto, nell’elenco dei riquadri laterali viene visualizzata l’opzione Regola **** immagine.
 
-![chlimage_1-131](assets/chlimage_1-337.png)
+![chlimage_1-135](assets/chlimage_1-337.png)
 
-*Figura: Opzioni nel riquadro laterale*
+*Figura: Opzioni nel riquadro laterale.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*Figura: Opzione per apportare modifiche leggere alle immagini*
+*Figura: Utilizzate questa opzione per apportare modifiche leggere alle immagini.*
 
-Dopo aver salvato le modifiche in un’immagine Camera Raw, `AdjustedPreview.jpg` viene generata una nuova rappresentazione per l’immagine. Per altri tipi di immagini eccetto Camera Raw, le modifiche si riflettono in tutte le rappresentazioni.
+Dopo aver salvato le modifiche a un’ [!DNL Camera Raw] immagine, `AdjustedPreview.jpg` viene generata una nuova rappresentazione per l’immagine. Per altri tipi di immagine, ad eccezione [!DNL Camera Raw]di quelli elencati, le modifiche vengono applicate a tutte le rappresentazioni.
 
 ## Best practice, problemi noti e limitazioni {#best-practices}
 
@@ -67,4 +67,4 @@ La funzionalità presenta le seguenti limitazioni:
 
 * La funzionalità supporta solo le rappresentazioni JPEG. È supportato su Windows a 64 bit, Mac OS e RHEL 7.x.
 * Il writeback dei metadati non è supportato per i formati RAW e DNG.
-* La libreria Camera Raw presenta dei limiti rispetto ai pixel totali che può elaborare alla volta. Al momento, può elaborare un massimo di 65000 pixel sul lato lungo di un file o 512 MP, indipendentemente dai criteri rilevati per primi.
+* La [!DNL Camera Raw] libreria presenta dei limiti rispetto ai pixel totali che può elaborare alla volta. Al momento, può elaborare un massimo di 65000 pixel sul lato lungo di un file o 512 MP, indipendentemente dai criteri rilevati per primi.
