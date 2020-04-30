@@ -1,16 +1,16 @@
 ---
 title: Creazione di progetti di traduzione
-description: Scoprite come creare progetti di traduzione in AEM.
+description: Scopri come creare progetti di traduzione in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Creazione di progetti di traduzione {#creating-translation-projects}
 
-Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro di copia per lingua disponibili nella barra laterale Riferimenti nell’interfaccia utente di AEM.
+Per creare una copia per lingua, attivare uno dei seguenti flussi di lavoro di copia per lingua disponibili nella barra laterale Riferimenti nell’interfaccia [!DNL Experience Manager] utente.
 
 * **Crea e traduci**: In questo flusso di lavoro, le risorse da tradurre vengono copiate nella directory principale della lingua in cui desiderate tradurre. Inoltre, a seconda delle opzioni selezionate, viene creato un progetto di traduzione per le risorse nella console Progetti. A seconda delle impostazioni, il progetto di traduzione può essere avviato manualmente o può essere eseguito automaticamente non appena viene creato il progetto di traduzione.
 
@@ -28,15 +28,15 @@ Per creare una copia per lingua, attiva uno dei seguenti flussi di lavoro di cop
 
 È possibile utilizzare il flusso di lavoro di creazione e traduzione per generare per la prima volta copie della lingua per una lingua particolare. Il flusso di lavoro offre le seguenti opzioni:
 
-* Crea solo struttura
-* Crea un nuovo progetto di traduzione
-* Aggiungi a progetto di traduzione esistente
+* Crea solo struttura.
+* Crea un nuovo progetto di traduzione.
+* Aggiungi a progetto di traduzione esistente.
 
 ### Crea solo struttura {#create-structure-only}
 
 Utilizza l’opzione **[!UICONTROL Crea solo struttura]** per creare una gerarchia di cartelle di destinazione all’interno della directory principale lingua di destinazione, in modo che corrisponda alla gerarchia della cartella di origine all’interno della directory principale lingua di origine. In questo caso, le risorse di origine vengono copiate nella cartella di destinazione. Tuttavia, non viene generato alcun progetto di traduzione.
 
-1. Nell’interfaccia utente Risorse, seleziona la cartella di origine per la quale vuoi creare una struttura nella directory principale della lingua di destinazione.
+1. Nell&#39; [!DNL Assets] interfaccia, selezionate la cartella di origine per la quale desiderate creare una struttura nella directory principale della lingua di destinazione.
 1. Apri il riquadro **[!UICONTROL Riferimenti]** e tocca o fai clic su **[!UICONTROL Copie per lingua]** sotto **[!UICONTROL Copie]**.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -116,7 +116,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    ![visualizzare i metadati convertiti nella pagina Proprietà della risorsa](assets/translated-metadata-asset-properties.png)
 
-   *Figura: Metadati tradotti nella pagina delle proprietà delle risorse*
+   *Figura: Metadati tradotti nella pagina delle proprietà della risorsa.*
 
 
    >[!NOTE]
@@ -277,13 +277,13 @@ Se utilizzate questa opzione, il set di risorse viene aggiunto a un progetto di 
 
 ## Creare copie in lingua temporanea {#creating-temporary-language-copies}
 
-Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per lingua con versioni modificate di risorse originali, la copia per lingua esistente viene mantenuta fino all’approvazione delle risorse tradotte. Risorse AEM memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia della lingua esistente dopo che l’utente ha esplicitamente approvato le risorse. Se rifiutate le risorse, la copia nella lingua rimane invariata.
+Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per lingua con versioni modificate di risorse originali, la copia per lingua esistente viene mantenuta fino all’approvazione delle risorse tradotte. [!DNL Adobe Experience Manager Assets] memorizza le risorse appena tradotte in una posizione temporanea e aggiorna la copia della lingua esistente dopo l’approvazione esplicita delle risorse. Se rifiutate le risorse, la copia nella lingua rimane invariata.
 
-1. Tocca o fai clic sulla cartella principale di origine di **[!UICONTROL Copie per lingua]** per la quale hai già creato una copia per lingua, quindi tocca o fai clic su **[!UICONTROL Mostra in Assets]** per aprire la cartella in AEM Assets.
+1. Tocca o fai clic sulla cartella principale di origine di **[!UICONTROL Copie per lingua]** per la quale hai già creato una copia per lingua, quindi tocca o fai clic su **[!UICONTROL Mostra in Assets]** per aprire la cartella in [!DNL Experience Manager Assets].
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Nell’interfaccia utente delle risorse, seleziona una risorsa già tradotta e tocca o fai clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti per aprire la risorsa in modalità di modifica.
+1. Dall’ [!DNL Assets] interfaccia, selezionate una risorsa già tradotta e toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti per aprire la risorsa in modalità di modifica.
 1. Modificate la risorsa e salvate le modifiche.
 1. Per aggiornare la copia della lingua, eseguite i passaggi da 2 a 14 della procedura [Aggiungi al progetto](#add-to-existing-translation-project) di traduzione esistente.
 1. Toccate o fate clic sui puntini di sospensione nella parte inferiore della sezione Processo **[!UICONTROL di]** traduzione. Dall’elenco delle risorse nella pagina Processo **[!UICONTROL di]** traduzione, potete visualizzare chiaramente la posizione temporanea in cui è memorizzata la versione convertita della risorsa.
@@ -303,6 +303,9 @@ Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per l
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Passate alla console Risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
+1. Per visualizzare i metadati convertiti, andate alla [!DNL Assets] console e aprite la pagina [!UICONTROL Proprietà] per ciascuna risorsa convertita.
 
-Per suggerimenti sulla traduzione efficiente dei metadati per le risorse, consultate [5 Passaggi per una traduzione efficiente dei metadati](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+>[!MORELIKETHIS]
+>
+>* [Suggerimenti per tradurre in modo efficiente i metadati](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+
