@@ -3,7 +3,7 @@ title: Schemi metadati
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -26,7 +26,7 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
    ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
 
-   *Figura: Scheda di base sulle proprietà della risorsa*
+   *Figura: Scheda Base in Proprietà risorsa.*
 
    Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modificare i moduli](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) dello schema metadati. Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
@@ -86,9 +86,9 @@ In Risorse Adobe Experience Manager (AEM), uno schema di metadati definisce il l
 
    ![Editor schema metadati per personalizzare la pagina Proprietà risorsa](assets/metadata-schema-editor.png)
 
-   *Figura: Scheda di base dell&#39;editor dello schema di metadati*
+   *Figura: Scheda[!UICONTROL Base]dell’editor Schemametadati.*
 
-1. Per configurare un componente, selezionatelo e modificatene le proprietà nella scheda **Impostazioni** .
+1. Per configurare un componente, selezionatelo e modificatene le proprietà nella scheda **[!UICONTROL Impostazioni]** .
 
 ### Componenti nella scheda Genera modulo {#components-within-the-build-form-tab}
 
@@ -127,29 +127,21 @@ Di seguito sono riportati i valori validi per questa proprietà:
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema di metadati, il percorso della proprietà non deve includere spazi.
 
-**Segnaposto**: Utilizzare questa proprietà per specificare il testo segnaposto relativo alla proprietà metadata.
-
-**Obbligatorio**: Utilizzare questa proprietà per contrassegnare una proprietà di metadati come obbligatoria nella pagina delle proprietà.
-
-**Disattiva modifica**: Utilizzare questa proprietà per rendere non modificabile una proprietà di metadati nella pagina delle proprietà.
-
-**Mostra campo vuoto in sola** lettura: Contrassegnate questa proprietà per visualizzare una proprietà di metadati nella pagina delle proprietà anche se non ha alcun valore. Per impostazione predefinita, quando una proprietà di metadati non ha alcun valore, non viene elencata nella pagina delle proprietà.
-
-**Mostra elenco ordinato**: Utilizzare questa proprietà per visualizzare un elenco ordinato di scelte
-
-**Scelte**: Utilizzare questa proprietà per specificare le scelte in un elenco
-
-**Descrizione** : Utilizzate questa proprietà per aggiungere una breve descrizione per il componente di metadati.
-
-**Classe**: Classe oggetto a cui è associata la proprietà.
-
-**Elimina**: Fare clic su questa icona per eliminare un componente dal modulo schema.
+* **Segnaposto**: Utilizzare questa proprietà per specificare il testo segnaposto relativo alla proprietà metadata.
+* **Obbligatorio**: Utilizzare questa proprietà per contrassegnare una proprietà di metadati come obbligatoria nella pagina delle proprietà.
+* **Disattiva modifica**: Utilizzare questa proprietà per rendere non modificabile una proprietà di metadati nella pagina delle proprietà.
+* **Mostra campo vuoto in sola** lettura: Contrassegnate questa proprietà per visualizzare una proprietà di metadati nella pagina delle proprietà anche se non ha alcun valore. Per impostazione predefinita, quando una proprietà di metadati non ha alcun valore, non viene elencata nella pagina delle proprietà.
+* **Mostra elenco ordinato**: Utilizzare questa proprietà per visualizzare un elenco ordinato di scelte
+* **Scelte**: Utilizzare questa proprietà per specificare le scelte in un elenco
+* **Descrizione** : Utilizzate questa proprietà per aggiungere una breve descrizione per il componente di metadati.
+* **Classe**: Classe oggetto a cui è associata la proprietà.
+* **Elimina**: Fare clic su questa icona per eliminare un componente dal modulo schema.
 
 ![Icona Elimina nel modulo Schema metadati](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
->Il componente Campo nascosto non include questi attributi. ma include proprietà quali Nome, Valore, Etichetta campo e Descrizione. I valori per il componente Campo nascosto vengono inviati come parametro POST ogni volta che la risorsa viene salvata. Non viene salvato come metadati per la risorsa.
+>Il componente Campo  nascosto non include questi attributi. ma include proprietà quali Nome, Valore, Etichetta campo e Descrizione. I valori per il componente Campo nascosto vengono inviati come parametro POST ogni volta che la risorsa viene salvata. Non viene salvato come metadati per la risorsa.
 
 Se selezioni l’opzione **[!UICONTROL Obbligatorio]**, puoi cercare le risorse per le quali mancano i metadati obbligatori. Dal pannello **[!UICONTROL Filtri]**, espandi il predicato **[!UICONTROL Convalida metadati]** e seleziona l’opzione **[!UICONTROL Non valido]**. Nei risultati della ricerca vengono visualizzate le risorse per le quali mancano i metadati obbligatori, che sono stati configurati dal modulo schema.
 
@@ -163,7 +155,7 @@ Per visualizzare una scheda qualsiasi nella pagina delle proprietà, oltre alla 
 
 ![La scheda selezionata nell&#39;elenco Metadati contestuali viene visualizzata nella pagina delle proprietà della risorsa](assets/contextual-metadata-asset-properties.png)
 
-*Figura: Metadati contestuali nella pagina delle proprietà delle risorse*
+*Figura: Metadati contestuali nella pagina delle proprietà della risorsa.*
 
 ### Specificare le proprietà nel file JSON {#specify-properties-in-json-file}
 
@@ -263,7 +255,7 @@ Se la cartella dispone di una sottocartella, le risorse all’interno della sott
 
    ![Campo di testo aggiunto all&#39;Editor moduli schema metadati](assets/text-field-metadata-schema-editor.png)
 
-   *Figura: Campo di testo aggiunto all&#39;editor dello schema di metadati*
+   *Figura: Campo di testo aggiunto all&#39;editor di moduli dello schema di metadati.*
 
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** .
 1. Toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
@@ -295,7 +287,7 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 
    ![Aggiungere un campo obbligatorio al modulo di metadati selezionando Obbligatorio nella scheda Regole dell&#39;Editor moduli schema metadati](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figura: Campo obbligatorio nell&#39;editor di moduli dello schema di metadati*
+   *Figura: Campo obbligatorio nell&#39;editor di moduli dello schema di metadati.*
 
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Moduli schema **[!UICONTROL metadati]** . Selezionate il modulo, quindi toccate o fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
