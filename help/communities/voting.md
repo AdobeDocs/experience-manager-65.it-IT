@@ -10,20 +10,20 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
 
 # Utilizzo della votazione {#using-voting}
 
-Il `Voting` componente è uno strumento utile che consente ai membri della community di assegnare un punteggio a un particolare contenuto, ad esempio una risposta all&#39;interno di un componente QnA. Con il `Voting` componente, i membri selezionano frecce verso l’alto o il basso per indicare la propria opinione.
+Il `Voting` componente è uno strumento utile che consente ai membri della community di assegnare un punteggio a una particolare parte del contenuto, ad esempio una risposta all&#39;interno di un componente QnA. Con il `Voting` componente, i membri selezionano frecce verso l’alto o il basso per indicare la propria opinione.
 
 ## Aggiunta della votazione a una pagina {#adding-voting-to-a-page}
 
 Per aggiungere un `Voting` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / Voting` e trascinarlo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione su cui gli utenti possono votare.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando vengono incluse le librerie [lato client](essentials-voting.md#essentials-for-client-side) richieste, viene visualizzato così il `Voting` componente.
 
@@ -39,11 +39,17 @@ Nella scheda **[!UICONTROL Testo ed etichette]** , specificare le proprietà uti
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Etichetta]** risposta positiva (*richiesta*) Il nome della proprietà interna per una risposta positiva.
+* **[!UICONTROL Etichetta risposta positiva]**
 
-* **[!UICONTROL Etichetta]** risposta negativa (*richiesta*) Nome della proprietà interna per una risposta negativa.
+   (*Obbligatorio*) Nome della proprietà interna per una risposta positiva.
 
-* **[!UICONTROL Tally Name]**(*Obbligatorio*) Il nome della proprietà interno e identificabile per questa istanza di un componente di voto.
+* **[!UICONTROL Etichetta risposta negativa]**
+
+   (*Obbligatorio*) Il nome della proprietà interna per una risposta negativa.
+
+* **[!UICONTROL Nome conteggio]**
+
+   (*Obbligatorio*) Il nome della proprietà interna e identificabile per questa istanza di un componente con diritto di voto.
 
 ## Esperienza dei visitatori del sito {#site-visitor-experience}
 
