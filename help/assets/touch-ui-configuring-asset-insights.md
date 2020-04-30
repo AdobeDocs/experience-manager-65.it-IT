@@ -1,41 +1,41 @@
 ---
-title: Configurare approfondimenti risorse
-description: Configurare approfondimenti risorse in AEM Assets.
+title: Configura approfondimenti risorse per ottenere l’analisi dell’utilizzo delle risorse digitali.
+description: Configura approfondimenti risorse in [!DNL Risorse Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Configurare approfondimenti risorse {#configure-asset-insights}
 
-Risorse Adobe Experience Manager (AEM) recupera i dati di utilizzo relativi alle risorse AEM utilizzate da siti Web di terze parti da Adobe Analytics. Per abilitare Asset Insights per recuperare questi dati e generare approfondimenti, configura prima la funzione da integrare con Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] recupera i dati di utilizzo relativi alle risorse digitali utilizzate da siti Web di terze parti da [!DNL Adobe Analytics]. Per abilitare Asset Insights per recuperare questi dati e generare approfondimenti, configura prima la funzione da integrare con Adobe Analytics.
 
 >[!NOTE]
 >
 >Le informazioni approfondite sono supportate e fornite solo per le immagini.
 
-1. In AEM, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
+1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
 1. Fai clic sulla scheda **[!UICONTROL Configurazione approfondimenti]**.
 1. Nella procedura guidata, selezionate un centro dati e fornite le credenziali, incluso il nome dell&#39;organizzazione, il nome utente e il segreto condiviso.
 
-   ![Configurare Adobe Analytics per Assets Insights in AEM](assets/insights_config2.png)
+   ![Configurare Adobe Analytics per Assets Insights in Experience Manager](assets/insights_config2.png)
 
-   *Figura:Configurare Adobe Analytics per Assets Insights in AEM*
+   *Figura: Configura[!DNL Adobe Analytics]per informazioni approfondite sulle risorse in[!DNL Experience Manager].*
 
-1. Tocca o fai clic su **[!UICONTROL Autentica]**.
-1. Dopo l’autenticazione delle credenziali da parte di AEM, dall’elenco Suite **[!UICONTROL di]** rapporti, scegliete una suite di rapporti di Adobe Analytics da cui recuperare i dati da Asset Insights. Fate clic su **[!UICONTROL Aggiungi]**.
-1. Dopo aver impostato la suite di rapporti in AEM, tocca o fai clic su **[!UICONTROL Fine]**.
+1. Fate clic su **[!UICONTROL Autenticazione]**.
+1. Dopo aver [!DNL Experience Manager] autenticato le credenziali, dall’elenco Suite **[!UICONTROL di]** rapporti, scegliete una suite di [!DNL Adobe Analytics] rapporti da cui recuperare i dati mediante approfondimenti delle risorse. Fate clic su **[!UICONTROL Aggiungi]**.
+1. Dopo aver [!DNL Experience Manager] impostato la suite di rapporti, fate clic su **[!UICONTROL Fine]**.
 
 ## Tracciatore pagina {#page-tracker}
 
-Dopo aver configurato l’account Adobe Analytics, viene generato il codice Page Tracker. Per abilitare Assets Insights per tenere traccia delle risorse AEM utilizzate in siti Web di terze parti, includi il codice di tracciamento delle pagine nel codice del sito Web. Utilizzate l&#39;utilità Tracker pagina in Risorse AEM per generare il codice tracciatore pagina. Per ulteriori informazioni su come includere il codice Tracciatore pagina nelle pagine Web di terze parti, consultate [Utilizzare il tracciatore di pagina e il codice da incorporare nelle pagine](/help/assets/touch-ui-using-page-tracker.md)Web.
+Dopo aver configurato l’ [!DNL Adobe Analytics] account, viene generato il codice Tracciatore pagina. Per abilitare Assets Insights per tenere traccia delle [!DNL Experience Manager] risorse utilizzate in siti Web di terze parti, includi il codice di tracciamento delle pagine nel codice del sito Web. Utilizzate l&#39;utility [!UICONTROL Page Tracker] in [!DNL Experience Manager Assets] per generare il codice di tracciamento pagina. Per ulteriori informazioni su come includere il codice Tracciatore pagina nelle pagine Web di terze parti, consultate [Utilizzare il tracciatore di pagina e il codice da incorporare nelle pagine](/help/assets/touch-ui-using-page-tracker.md)Web.
 
-1. In AEM, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
+1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-214.png)
 
