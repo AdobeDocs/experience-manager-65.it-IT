@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -375,13 +375,13 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
    ![Selezione data e ora oppure uso dei tasti di scelta rapida nel campo Ora di attivazione per aggiungere data e ora per l’attivazione delle risorse](assets/schedule-activation.png)
 
-   *Figura: Pianificazione dell&#39;attivazione delle risorse*
+   *Figura: Pianificazione dell’attivazione delle risorse.*
 
 1. Per disattivare la risorsa dopo una determinata durata, scegliete la data/ora di disattivazione dal selettore data accanto al campo **[!UICONTROL Ora]** disattivazione. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni non sono disponibili né tramite l’interfaccia Web di Assets né tramite l’API HTTP.
 
    ![Selettore data/ora o uso dei tasti di scelta rapida nel campo Ora disattivazione per aggiungere data e ora per la disattivazione delle risorse](assets/schedule-deactivation.png)
 
-   *Figura: Pianificazione disattivazione risorsa*
+   *Figura: Pianificazione della disattivazione delle risorse.*
 
 1. Nel campo **[!UICONTROL Tag]** , selezionare uno o più tag. Per aggiungere un tag personalizzato, digitate il nome del tag nella casella e premete Invio. Il nuovo tag viene salvato in AEM. YouTube richiede tag per la pubblicazione. Consultate [pubblicare i video su YouTube](video.md#publishing-videos-to-youtube).
 
@@ -718,7 +718,7 @@ La timeline consente di visualizzare vari eventi per un elemento selezionato, ad
 
 ![Ordinare le voci della cronologia per una risorsa](assets/sort_timeline.gif)
 
-*Figura: Ordinare le voci della cronologia per una risorsa*
+*Figura: Ordinare le voci della cronologia per una risorsa.*
 
 >[!NOTE]
 >
