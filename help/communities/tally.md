@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
 # Tally Essentials {#tally-essentials}
 
-Tally è una classe astratta che fornisce un metodo standard per raccogliere i commenti dei membri sul valore di prodotti e servizi specifici. I commenti anonimi non sono supportati. Il visitatore del sito deve registrarsi ed effettuare l&#39;accesso per partecipare e accedere per cambiare il proprio feedback. Il requisito di accesso facilita la moderazione e migliora il valore del feedback impedendo più post.
+Tally è una classe astratta che fornisce un metodo standard per raccogliere i commenti dei membri sul valore di prodotti e servizi specifici. I commenti anonimi non sono supportati. Il visitatore del sito deve registrarsi ed effettuare l&#39;accesso per partecipare ed effettuare l&#39;accesso per cambiare il proprio feedback. Il requisito di accesso facilita la moderazione e migliora il valore del feedback impedendo più post.
 
 È possibile creare un componente personalizzato per il test estendendo la classe astratta tally.
 
@@ -48,14 +48,14 @@ A partire da AEM 6.1, il componente Sondaggio non è più disponibile.
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi:
+Consulta:
 
-* [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Panoramica](srp.md) del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
+* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
