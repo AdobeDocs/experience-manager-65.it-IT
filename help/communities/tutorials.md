@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -21,7 +21,9 @@ Questi sono esempi per aiutarvi a imparare e lavorare con il framework delle com
 
 ## Personalizzazione lato client {#client-side-customization}
 
-Consultate anche personalizzazione [lato client](client-customize.md)SCF.
+Consulta anche:
+
+* [Personalizzazione lato client SCF](client-customize.md)
 
 * [Guida ai componenti community](components-guide.md)
 
@@ -45,7 +47,7 @@ Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.c
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   ToDo MVC Mostra come sviluppare un componente SCF+SRP da zero
+   ToDo MVC Mostra come sviluppare un componente SCF+SRP da zero.
 
 * [Guida introduttiva di AEM Communities](getting-started.md)
 
@@ -59,11 +61,11 @@ Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.c
 
 Il pacchetto di esempi Geometrixx include utenti dimostrativi. Spesso esiste una differenza di esperienza tra essere un visitatore (non connesso) o un membro (connesso) e, finché i pacchetti di esempi Geometrixx rimangono installati, potete utilizzare questi utenti per simulare lo stato di accesso quando esplorate con la guida [Componenti](components-guide.md)community.
 
-Per un elenco completo degli utenti demo, passa alla Barra degli **[!UICONTROL strumenti > Operazioni > Protezione > Utenti]**. Oppure utilizzate la console [di](http://localhost:4502/useradmin) sicurezza dell’interfaccia classica per la gestione di utenti e gruppi.
+Per un elenco completo degli utenti demo, passa alla Barra degli **[!UICONTROL strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Protezione > Utenti]**. Oppure utilizzate la console [di](http://localhost:4502/useradmin) sicurezza dell’interfaccia classica per la gestione di utenti e gruppi.
 
 Se è stato creato [un sito](getting-started.md)community, è possibile assegnare utenti demo ai gruppi [di utenti della](users.md)community.
 
-***id *utente /*password:***
+***id *utente /*password***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password
