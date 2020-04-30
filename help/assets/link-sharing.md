@@ -3,7 +3,7 @@ title: Generare un URL per le risorse condivise
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte in Risorse AEM come URL per parti esterne.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -31,7 +31,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    ![Finestra di dialogo con la condivisione dei collegamenti](assets/Link-sharing-dialog-box.png)
 
-   *Figura:Finestra di dialogo con la condivisione dei collegamenti*
+   *Figura: Finestra di dialogo per condividere le risorse come collegamento.*
 
    In alternativa, esegui i passaggi 3-7 di questa procedura per aggiungere i destinatari e-mail, configurare l’ora di scadenza del collegamento e inviarlo dalla finestra di dialogo.
 
@@ -45,14 +45,11 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
 
    >[!NOTE]
-   Se una risorsa condivisa viene spostata in un percorso diverso, il collegamento non funziona più. Create nuovamente il collegamento e condividete nuovamente con gli utenti.
+   Se una risorsa condivisa viene spostata in un percorso diverso, il collegamento non funziona più. Crea di nuovo il collegamento e condividi nuovamente con gli utenti.
 
-1. Dalla console web, apri la configurazione **[!UICONTROL Day CQ Link Externalizer]** e modifica le seguenti proprietà nel campo **[!UICONTROL Domini]**, indicando i valori:
+1. In AEM interface, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   * locale
-   * author
-   * pubblicazione
-   Per le proprietà locale e di authoring, fornite l’URL rispettivamente per l’istanza locale e per l’istanza di creazione. Le proprietà locali e di authoring hanno lo stesso valore se si esegue una singola istanza di creazione AEM. Per la pubblicazione, fornite l’URL per l’istanza di pubblicazione.
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Per le proprietà `local` e `author` , fornite l’URL rispettivamente per l’istanza locale e per l’istanza di creazione. Sia `local` che `author` le proprietà hanno lo stesso valore se eseguite una singola istanza Experience Manager Author. Ad `publish`esempio, fornite l&#39;URL per l&#39;istanza di pubblicazione di Experience Manager.
 
 1. Nella casella dell’indirizzo e-mail della finestra di dialogo **[!UICONTROL Condivisione collegamenti]**, digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi anche condividere il collegamento con più utenti.
 
@@ -62,13 +59,15 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    ![Condivisione di collegamenti alle risorse direttamente dalla finestra di dialogo Condivisione collegamenti](assets/Asset-Sharing-LinkShareDialog.png)
 
-   Condivisione di collegamenti alle risorse direttamente dalla finestra di dialogo Condivisione collegamenti
+   *Figura: Condividi i collegamenti alle risorse direttamente dalla finestra di dialogo[!UICONTROL Condivisione]collegamenti.*
 
    >[!NOTE]
-   Se immettete un ID e-mail di un utente che non è membro dell’organizzazione, le parole &quot;Utente esterno&quot; hanno il prefisso &quot;ID e-mail dell’utente.
+   Se immettete un ID e-mail di un utente che non è membro dell’organizzazione, le parole Utente  esterno hanno il prefisso con l’ID e-mail dell’utente.
 
-1. Nella casella **[!UICONTROL Oggetto]** , inserite l’oggetto della risorsa da condividere.
-1. Nella casella **[!UICONTROL Messaggio]** , immettere un messaggio facoltativo.
+1. Nel campo **[!UICONTROL Oggetto]** , inserite un oggetto per la risorsa da condividere.
+
+1. Nel campo **[!UICONTROL Messaggio]** , inserite un messaggio facoltativo.
+
 1. Nel campo **[!UICONTROL Scadenza]** , specifica una data e un&#39;ora di scadenza per il collegamento utilizzando il selettore data. Per impostazione predefinita, la data di scadenza è impostata per una settimana dalla data di condivisione del collegamento.
 
    ![Imposta data di scadenza del collegamento condiviso](assets/Set-shared-link-expiration.png)
@@ -96,7 +95,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Per visualizzare le risorse condivise come collegamenti, accedi all’interfaccia utente delle risorse e tocca il logo Experience Manager. Scegliere **[!UICONTROL Navigazione]** dall&#39;elenco per visualizzare il riquadro di navigazione.
+1. Per visualizzare le risorse condivise come collegamenti, accedete all’interfaccia utente delle risorse e toccate il logo Experience Manager. Scegliere **[!UICONTROL Navigazione]** dall&#39;elenco per visualizzare il riquadro di navigazione.
 1. Per visualizzare un elenco delle risorse condivise, scegli **[!UICONTROL Collegamenti condivisi]** nel riquadro di navigazione.
 1. Per annullare la condivisione di una risorsa, selezionatela e toccate o fate clic su **[!UICONTROL Annulla condivisione]** nella barra degli strumenti. Segue un messaggio di conferma. La voce relativa alla risorsa viene rimossa dall’elenco.
 
@@ -116,7 +115,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
 ## Configurare la dimensione massima dei dati {#maxdatasize}
 
-Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti, AEM comprime la gerarchia delle risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione del servizio a causa di questa situazione, configurate la dimensione massima utilizzando il parametro **[!UICONTROL Max Content Size (non compresso)]** per il servlet [!UICONTROL proxy di condivisione risorse Adhoc] Day CQ DAM in Configuration Manager. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
+Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti, AEM comprime la gerarchia delle risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione di servizio a causa di questa situazione, configurate la dimensione massima utilizzando il parametro **[!UICONTROL Max Content Size (non compresso)]** per il servlet [!UICONTROL proxy di condivisione di risorse Adhoc] Day CQ DAM in Configuration Manager. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
 
 1. Tocca o fai clic sul logo AEM, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]**.
 1. Dalla console Web, individua la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** .
