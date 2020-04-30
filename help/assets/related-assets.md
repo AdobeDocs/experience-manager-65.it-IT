@@ -1,16 +1,16 @@
 ---
 title: Risorse correlate
-description: Scoprite come collegare risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse.
+description: Scoprite come collegare risorse digitali che condividono attributi comuni. Create anche relazioni derivate dal codice sorgente tra le risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Risorse correlate {#related-assets}
 
-Risorse Adobe Experience Manager (AEM) consente di correlare manualmente le risorse in base alle esigenze dell’organizzazione mediante la funzione delle risorse correlate. Ad esempio, potete collegare un file di licenza a una risorsa o un&#39;immagine/video su un argomento simile. Potete correlare le risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
+[!DNL Adobe Experience Manager Assets] consente di collegare manualmente le risorse in base alle esigenze dell’organizzazione mediante la funzione delle risorse correlate. Ad esempio, potete collegare un file di licenza a una risorsa o un&#39;immagine/video su un argomento simile. Potete correlare le risorse che condividono alcuni attributi comuni. Potete anche usare la funzione per creare relazioni sorgente/derivate tra le risorse. Ad esempio, se si dispone di un file PDF generato da un file INDD, è possibile collegare il file PDF al relativo file INDD di origine.
 
 Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzione con fornitori o agenzie e rendere il file INDD ad alta risoluzione disponibile solo su richiesta.
 
@@ -19,11 +19,11 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
 ## Relate assets {#relating-assets}
 
-1. Dall’interfaccia di AEM, aprite la pagina **[!UICONTROL Proprietà]** di una risorsa da correlare.
+1. Dall’interfaccia di Experience Manager, aprite la pagina **[!UICONTROL Proprietà]** di una risorsa da correlare.
 
    ![aprire la pagina Proprietà di una risorsa per correlare la risorsa](assets/asset-properties-relate-assets.png)
 
-   *Figura: Pagina delle proprietà della risorsa per correlare le risorse*
+   *Figura: Pagina[!DNL Assets]Proprietàper correlare le risorse.*
 
    In alternativa, selezionate la risorsa dalla vista a elenco.
 
@@ -65,15 +65,15 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
 ## Conversione di risorse correlate {#translating-related-assets}
 
-La creazione di relazioni sorgente/derivate tra risorse mediante la funzione Risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando eseguite un flusso di lavoro di traduzione su una risorsa derivata, Risorse AEM recupera automaticamente tutte le risorse a cui fa riferimento il file sorgente e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene convertita insieme alle risorse sorgente e derivate. Ad esempio, in uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
+La creazione di relazioni sorgente/derivate tra risorse mediante la funzione Risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando eseguite un flusso di lavoro di traduzione su una risorsa derivata, recupera [!DNL Experience Manager Assets] automaticamente tutte le risorse a cui fa riferimento il file sorgente e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene convertita insieme alle risorse sorgente e derivate. Ad esempio, in uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se il file di origine è correlato a un’altra risorsa, Experience Manager Assets recupera la risorsa di riferimento e la include per la traduzione.
+Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manager Assets] recupera la risorsa di riferimento e la include per la conversione.
 
 ![la pagina Proprietà risorsa mostra il file di origine della risorsa correlata da includere per la traduzione](assets/asset-properties-source-asset.png)
 
-*Figura: Risorsa di origine delle risorse correlate da includere per la traduzione*
+*Figura: Risorsa di origine delle risorse correlate da includere per la conversione.*
 
 1. Traducete le risorse presenti nella cartella di origine in una lingua di destinazione seguendo la procedura descritta in [Creazione di un nuovo progetto](translation-projects.md#create-a-new-translation-project)di traduzione. Ad esempio, in questo caso, potete tradurre le risorse in francese.
 
