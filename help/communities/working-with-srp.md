@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
 
-# SRP - Memorizzazione dei contenuti nella community{#srp-community-content-storage}
+# SRP - Memorizzazione dei contenuti nella community {#srp-community-content-storage}
 
 ## Introduzione {#introduction}
 
@@ -32,15 +32,19 @@ Per informazioni dettagliate sull&#39;utilizzo di SRP per UGC, vedere Panoramica
 >
 >SRP si applica solo ai contenuti della community. Non influenza la posizione di memorizzazione del contenuto del sito (archivio[](/help/sites-deploying/data-store-config.md)nodi) e non influisce sulla gestione protetta della registrazione utente, dei profili utente e dei gruppi di utenti tra le istanze di AEM (consultate anche [Gestione dei dati](#managing-user-data)utente).
 
+
 >[!CAUTION]
 >
 >A partire da AEM 6.1, [UGC non viene mai replicato](#ugc-never-replicated).
 >
 >Se la distribuzione non include uno store comune, come la topologia [JSRP](/help/communities/topologies.md#jsrp) predefinita, UGC sarà visibile solo nell’istanza di pubblicazione AEM o di creazione in cui è stato immesso. Solo se la topologia include un cluster di pubblicazione, l’UGC sarà visibile su qualsiasi istanza di pubblicazione.
 
+
 ## Caratteristiche delle opzioni SRP {#characteristics-of-srp-options}
 
-[ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)Con questa opzione, l&#39;UGC è persistente in remoto in un servizio cloud ospitato e gestito da Adobe. Richiede una licenza aggiuntiva e lavora con un rappresentante commerciale per fornire il conto per tale licenza specifica. ASRP richiede:
+[ASRP - Fornitore di risorse di storage Adobe](/help/communities/asrp.md)
+
+Con questa opzione, l&#39;UGC viene mantenuto in remoto in un servizio cloud ospitato e gestito da Adobe. Richiede una licenza aggiuntiva e lavora con un rappresentante commerciale per fornire il conto per tale licenza specifica. ASRP richiede:
 
 * Un servizio cloud associato fornito e supportato da Adobe per memorizzare il contenuto della community.
 * Scelta di un centro dati in una specifica area geografica (Stati Uniti, EMEA, APAC).
@@ -49,14 +53,17 @@ Per informazioni dettagliate sull&#39;utilizzo di SRP per UGC, vedere Panoramica
 
 ASRP è adatto:
 
-* per la farm di pubblicazione TarMK.
-* quando non si intende investire nello storage locale.
+* Per la farm di pubblicazione TarMK.
+* Quando non si intende investire nello storage locale.
 
 >[!NOTE]
 >
 >Esiste un limite per il caricamento di allegati a post (o commenti) in ASRP, pari a 50 MB.
 
-[MSRP - Fornitore](/help/communities/msrp.md)di risorse di storage MongoDB Con questa opzione, l&#39;UGC viene mantenuto direttamente in un&#39;istanza MongoDB locale.
+
+[MSRP - Provider di risorse di storage MongoDB](/help/communities/msrp.md)
+
+Con questa opzione, l&#39;UGC viene mantenuto direttamente in un&#39;istanza MongoDB locale.
 
 MSRP richiede:
 
@@ -70,7 +77,9 @@ ASRP è adatto:
 * Per un cluster MongoMK o RdbMK.
 * Quando si prevedono grandi quantità di contenuti per community.
 
-[DSRP - Provider](/help/communities/dsrp.md)risorse di archiviazione del database relazionale Con questa opzione, l&#39;UGC viene mantenuto direttamente in un&#39;istanza di database MySQL locale.
+[DSRP - Provider di risorse di archiviazione del database relazionale](/help/communities/dsrp.md)
+
+Con questa opzione, l&#39;UGC viene mantenuto direttamente in un&#39;istanza di database MySQL locale.
 
 DSRP richiede:
 
@@ -84,7 +93,9 @@ DSRP è adatto:
 * Per un cluster MongoMK o RdbMK.
 * Quando si prevedono grandi quantità di contenuti per community.
 
-[JSRP - JCR Storage Resource Provider](/help/communities/jsrp.md)Con l&#39;opzione predefinita, non è disponibile uno store comune. L’UGC è persistente solo nello stesso repository JCR dell’istanza AEM in cui è stato immesso.
+[JSRP - Provider di risorse di storage JCR](/help/communities/jsrp.md)
+
+Con l&#39;opzione predefinita, non è disponibile uno store comune. L’UGC è persistente solo nello stesso repository JCR dell’istanza AEM in cui è stato immesso.
 
 JSRP:
 
@@ -103,7 +114,7 @@ Per i dettagli di configurazione di ciascuna opzione, vedete:
 * [ASRP - Fornitore di risorse di storage Adobe](/help/communities/asrp.md)
 * [MSRP - Provider di risorse di storage MongoDB](/help/communities/msrp.md)
 * [DSRP - Provider di risorse di archiviazione del database relazionale](/help/communities/dsrp.md)
-* [JSRP - Provider risorse di storage JCR](/help/communities/jsrp.md)
+* [JSRP - Provider di risorse di storage JCR](/help/communities/jsrp.md)
 
 Se non è selezionata alcuna opzione di archiviazione attiva, per impostazione predefinita viene attivato JSRP.
 
@@ -111,7 +122,7 @@ Se non è selezionata alcuna opzione di archiviazione attiva, per impostazione p
 
 ### UGC non replicato {#ugc-never-replicated}
 
-Nell’ambiente di authoring, un autore crea il contenuto della pagina e lo replica nell’ambiente di pubblicazione. Quando una pagina include una funzione AEM Communities interattiva, come commenti, revisioni, forum, blog o QnA, l&#39;interazione dei membri (con accesso ai visitatori del sito) in un&#39;istanza di pubblicazione genera contenuto generato dall&#39;utente (UGC) immesso nell&#39;ambiente di pubblicazione.
+Nell’ambiente di authoring, un autore crea il contenuto della pagina e lo replica nell’ambiente di pubblicazione. Quando una pagina include una funzione AEM Communities interattiva, come commenti, revisioni, forum, blog o QnA, l&#39;interazione dei membri (con accesso ai visitatori del sito) in un&#39;istanza di pubblicazione dà luogo al contenuto generato dall&#39;utente (UGC) immesso nell&#39;ambiente di pubblicazione.
 
 Precedentemente, questo contenuto della community veniva replicato in modo inverso nelle istanze dell&#39;autore e dagli autori replicati alle istanze di pubblicazione. È stato problematico mantenere la coerenza tra le istanze di AEM con la replica inversa e successiva.
 
