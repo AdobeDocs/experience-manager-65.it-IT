@@ -1,24 +1,24 @@
 ---
-title: Supporto per i metadati IPTC
-description: Scopri in che modo Risorse Adobe Experience Manager (AEM) supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
+title: Utilizzate i metadati IPTC in [!DNL Risorse Adobe Experience Manager].
+description: Scoprite come [!DNL Adobe Experience Manager Assets] supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Supporto per i metadati IPTC {#support-for-iptc-metadata}
+# Utilizzo dei metadati IPTC {#support-for-iptc-metadata}
 
-Scopri in che modo Risorse Adobe Experience Manager (AEM) supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite Adobe Bridge e altre app Creative.
+Scoprite come [!DNL Adobe Experience Manager Assets] supporta i metadati IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite [!DNL Adobe Bridge] e altre [!DNL Adobe Creative Cloud] app.
 
-Risorse Adobe Experience Manager (AEM) supporta lo standard di metadati IPTC ampiamente utilizzato per descrivere le risorse. In questo modo, AEM Assets migliora l&#39;accettazione delle immagini tra vari partecipanti, inclusi fotografi, agenzie creative, biblioteche, musei e così via.
+[!DNL Adobe Experience Manager Assets] supporta lo standard di metadati IPTC, ampiamente utilizzato per descrivere le risorse. In questo modo, [!DNL Assets] migliora l&#39;accettazione delle immagini tra vari partiti, tra cui fotografi, agenzie creative, biblioteche, musei e così via.
 
 Lo schema di metadati predefinito per le risorse ora include gli schemi di metadati IPTC Core e IPTC Extension per definire proprietà complete di metadati che consentono agli utenti di aggiungere dati precisi e affidabili sulle persone, le posizioni e i prodotti visualizzati in un&#39;immagine. Supporta inoltre date, nomi e identificatori relativi alla creazione dell&#39;immagine e un modo flessibile per esprimere le informazioni sui diritti.
 
 La pagina Proprietà delle risorse ora include schede separate per visualizzare i metadati IPTC Core e IPTC Extension nei campi modificabili.
 
-1. Dall’interfaccia utente Risorse, seleziona un’immagine.
+1. Dall’interfaccia [!DNL Assets] utente, selezionate un’immagine.
 1. Click **[!UICONTROL Properties]** from the toolbar.
 1. Fate clic sulla scheda **[!UICONTROL IPTC]** per visualizzare i metadati IPTC per la risorsa.
 1. Modificate le proprietà dei metadati IPTC, a seconda delle necessità.
