@@ -1,9 +1,9 @@
 ---
-title: Metadati A Cascata
+title: Cascading metadata in [!DNL Adobe Experience Manager Assets].
 description: In questo articolo viene descritto come definire metadati a cascata per le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -23,7 +23,7 @@ Di seguito sono riportati alcuni casi d’uso per i quali potete definire metada
 * Modifica le opzioni visualizzate per un particolare campo in base al valore specificato in un altro campo.
 * Impostate il valore di metadati predefinito in un particolare campo in base al valore specificato in un altro campo.
 
-## Configurare i metadati in cascata in AEM {#configure-cascading-metadata-in-aem}
+## Configurare i metadati CSS in [!DNL Experience Manager]{#configure-cascading-metadata-in-aem}
 
 Considerate uno scenario in cui visualizzare i metadati a cascata in base al tipo di risorsa selezionata. Alcuni esempi
 
@@ -32,7 +32,7 @@ Considerate uno scenario in cui visualizzare i metadati a cascata in base al tip
 
 Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul copyright come campo obbligatorio.
 
-1. Nell’interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**.
+1. Nell’ [!DNL Experience Manager] interfaccia, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
@@ -51,7 +51,7 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    * Per specificare manualmente i valori, selezionate **[!UICONTROL Aggiungi manualmente]**, quindi fate clic su **[!UICONTROL Aggiungi scelta]** e specificate il testo e il valore dell’opzione. Ad esempio, specificate i tipi di risorse Video, PDF, Word e Immagine.
 
-   * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso]** JSON e fornite il percorso del file JSON. AEM recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all’utente.
+   * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso]** JSON e fornite il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all&#39;utente.
    Entrambe le opzioni si escludono a vicenda. Non potete importare le opzioni da un file JSON e modificarle manualmente.
 
    ![add_choice](assets/add_choice.png)
@@ -105,8 +105,8 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    ![Cascading metadata for Video asset](assets/video_asset.png)
 
-   *Figura: Cascading metadata for a video*
+   *Figura: Cascading metadata for a video.*
 
    ![Creazione di metadati in cascata per la risorsa del documento](assets/doc_type_fields.png)
 
-   *Figura: Cascading metadata per un documento*
+   *Figura: Cascading metadata for a document.*
