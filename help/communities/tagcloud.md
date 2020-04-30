@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -33,7 +33,7 @@ See [Administering Tags](../../help/sites-administering/tags.md) for information
 
 Per aggiungere un `Social Tag Cloud` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / Social Tag Cloud` e trascinarlo nella posizione desiderata su una pagina in cui dovrebbe comparire il tag cloud.
 
-Per le informazioni necessarie, visita [Community Components Basics](basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
 Quando sono incluse le librerie [lato client](tag.md#essentials-for-client-side) richieste, verrà visualizzato il `Social Tag Cloud` componente:
 
@@ -45,21 +45,27 @@ Selezionate il `Social Tag Cloud` componente inserito a cui accedere e seleziona
 
 ![chlimage_1-304](assets/chlimage_1-304.png)
 
-Nella scheda **[!UICONTROL Social Tag Cloud]** , specificate i tag da visualizzare e, se i tag sono collegamenti attivi, la posizione della pagina per i risultati della ricerca.:
+Nella scheda **[!UICONTROL Social Tag Cloud]** , specificate i tag da visualizzare e, se i tag sono collegamenti attivi, la posizione della pagina per i risultati della ricerca:
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
-* **[!UICONTROL Tag per social network per visualizzare]** Identificare i tag UGC da visualizzare. Le opzioni a discesa sono
+* **[!UICONTROL Tag per social network da visualizzare]** Identificare i tag UGC da visualizzare. Le opzioni a discesa sono:
 
    * `From page and child pages`
    * `All tags`
    Il valore predefinito è `From page and child pages`, dove &quot;page&quot; fa riferimento all’impostazione **Pagina** riportata di seguito.
 
-* **[!UICONTROL Page]**(obbligatorio se non `All tags)` il percorso dell&#39;UGC per una pagina. Il valore predefinito è la pagina corrente se lasciato vuoto.
+* **[!UICONTROL Pagina]**
 
-* **[!UICONTROL Nessun collegamento sui tag]** Se questa opzione è selezionata, i tag vengono visualizzati nel tag cloud come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi per la ricerca di tutto il contenuto a cui è applicato il tag. Il valore predefinito è deselezionato e richiede l&#39;impostazione del percorso **[!UICONTROL dei risultati di]** ricerca.
+   (Obbligatorio se non `All tags)` il percorso dell&#39;UGC per una pagina. Il valore predefinito è la pagina corrente, se lasciata vuota.
 
-* **[!UICONTROL Percorso]** risultato ricerca Il percorso di una pagina in cui è stato inserito un `Search Result` componente, configurato per fare riferimento a UGC che include il percorso UGC specificato dall’impostazione **Pagina** .
+* **[!UICONTROL Nessun collegamento sui tag]**
+
+   Se questa opzione è selezionata, i tag vengono visualizzati nel tag cloud come testo normale. Se questa opzione è deselezionata, i tag vengono visualizzati come collegamenti attivi per la ricerca di tutto il contenuto a cui è applicato il tag. Il valore predefinito è deselezionato e richiede l&#39;impostazione del percorso **[!UICONTROL dei risultati di]** ricerca.
+
+* **[!UICONTROL Percorso risultati ricerca]**
+
+   Percorso di una pagina in cui è stato inserito un `Search Result` componente, configurato per fare riferimento a UGC che include il percorso UGC specificato dall’impostazione **Pagina** .
 
 ## Modifica visualizzazione di Social Tag Cloud {#change-display-of-social-tag-cloud}
 
@@ -69,9 +75,11 @@ Utilizzando la scheda **[!UICONTROL Social Tag Cloud (Progettazione)]** , specif
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
-* **[!UICONTROL Mostra percorsi]** del titolo completi Se questa opzione è selezionata, vengono visualizzati i titoli dei tag principali e lo spazio dei nomi per ciascun tag applicato.
+* **[!UICONTROL Mostra percorsi titolo completi]**
 
-   Esempio:
+   Se questa opzione è selezionata, mostra i titoli per i tag principali e lo spazio dei nomi per ciascun tag applicato.
+
+   Ad esempio:
 
    * Selezionato: `Geometrixx Media: Gadgets / Cars`
    * Deselezionato: `Cars`
@@ -79,23 +87,31 @@ Utilizzando la scheda **[!UICONTROL Social Tag Cloud (Progettazione)]** , specif
 
    Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Mostra solo tag]** foglia Se questa opzione è selezionata, vengono visualizzati solo i tag applicati che non contengono altri tag.
+* **[!UICONTROL Mostra solo tag foglia]**
 
-   Ad esempio, dato il tagID di
+   Se questa opzione è selezionata, vengono visualizzati solo i tag applicati che non contengono altri tag.
+
+   Ad esempio, dato il TagID di:
 
    `Geometrixx Media: Gadgets / Cars`
 
-   È possibile applicare 3 tag: `Geometrixx Media (the namespace)`, `Gadgets`e `Cars`
+   È possibile applicare 3 tag:
 
-   * Selezionato: viene `Cars` visualizzato solo se applicato
-   * Non selezionato: `Geometrixx Media` e `Gadgets`così come `Cars` verrà visualizzata, se applicata
+   `Geometrixx Media (the namespace)`, `Gadgets`e `Cars`
+
+   * Selezionato: Viene `Cars` visualizzato solo se applicato.
+   * Non selezionato: `Geometrixx Media` e `Gadgets`così come `Cars` verrà visualizzato, se applicato.
    Un tag semplice è un tag foglia.
 
    Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Modello]** collegamento Un modello, diverso da un modello predefinito, utilizzato per visualizzare i collegamenti in un tag cloud quando i collegamenti sono attivati tramite la finestra di dialogo di modifica del componente.
+* **[!UICONTROL Modello collegamento]**
 
-* **[!UICONTROL Stessa dimensione per tutti i tag]** Se questa opzione è selezionata, tutte le parole nel tag cloud sono formattate allo stesso modo. Se questa opzione è deselezionata, le parole hanno uno stile diverso a seconda del loro utilizzo. Il valore predefinito è deselezionato.
+   Modello, diverso da quello predefinito, utilizzato per visualizzare i collegamenti in un tag cloud quando i collegamenti sono attivati tramite la finestra di dialogo di modifica del componente.
+
+* **[!UICONTROL Stessa dimensione per tutti i tag]**
+
+   Se questa opzione è selezionata, tutte le parole nel tag cloud sono formattate allo stesso modo. Se questa opzione è deselezionata, le parole hanno uno stile diverso a seconda del loro utilizzo. Il valore predefinito è deselezionato.
 
 ## Informazioni aggiuntive {#additional-information}
 
