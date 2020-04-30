@@ -1,22 +1,22 @@
 ---
-title: Configurare i tag delle risorse tramite Smart Content Service
-description: Scoprite come configurare i tag avanzati e i tag avanzati in AEM, utilizzando Smart Content Service.
+title: Configurate i tag delle risorse mediante Smart Content Service.
+description: Scoprite come configurare i tag avanzati e i tag avanzati in Adobe Experience Manager, utilizzando Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Configurare i tag delle risorse tramite Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
-Puoi integrare Adobe Experience Manager (AEM) con Smart Content Service tramite Adobe I/O. Utilizzate questa configurazione per accedere a Smart Content Service da AEM.
+È possibile effettuare l&#39;integrazione [!DNL Adobe Experience Manager] con Smart Content Service tramite Adobe I/O. Utilizzate questa configurazione per accedere a Smart Content Service dall&#39;interno [!DNL Experience Manager].
 
-L&#39;articolo descrive le seguenti attività chiave necessarie per configurare Smart Content Service. Sul lato posteriore, il server AEM autentica le credenziali del servizio con il gateway Adobe I/O prima di inoltrare la richiesta a Smart Content Service.
+L&#39;articolo descrive le seguenti attività chiave necessarie per configurare Smart Content Service. Sul lato posteriore, il [!DNL Experience Manager] server autentica le credenziali del servizio con il gateway di I/O Adobe prima di inoltrare la richiesta a Smart Content Service.
 
-* Create una configurazione di Smart Content Service in AEM per generare una chiave pubblica. Ottenete un certificato pubblico per l&#39;integrazione OAuth.
+* Create una configurazione di Smart Content Service in [!DNL Experience Manager] modo da generare una chiave pubblica. Ottenete un certificato pubblico per l&#39;integrazione OAuth.
 * Create un&#39;integrazione in Adobe I/O e caricate la chiave pubblica generata.
-* Configurate l&#39;istanza AEM utilizzando la chiave API e altre credenziali dall&#39;I/O di Adobe.
+* Configurate l&#39; [!DNL Experience Manager] istanza utilizzando la chiave API e altre credenziali dall&#39;I/O di Adobe.
 * Se necessario, abilitate l’assegnazione automatica di tag al caricamento delle risorse.
 
 ## Prerequisiti {#prerequisites}
@@ -30,7 +30,7 @@ Prima di poter utilizzare Smart Content Service, accertatevi quanto segue per cr
 
 Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe.
 
-1. From the AEM user interface, click the AEM logo, and go to **[!UICONTROL Tools > Cloud Services]**> **[!UICONTROL Legacy Cloud Services]**.
+1. Nell&#39;interfaccia [!DNL Experience Manager] utente, accedi a **[!UICONTROL Strumenti > Servizi]** cloud > Servizi **[!UICONTROL cloud]** legacy.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]** , specificate un titolo e un nome per la configurazione Smart Tags. Fai clic su **[!UICONTROL Crea]**.
@@ -42,7 +42,7 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
    Lasciate vuoti gli altri campi per ora (da fornire successivamente). Fai clic su **[!UICONTROL OK]**. 
 
-   ![Finestra di dialogo di AEM Smart Content Service per fornire l&#39;URL del servizio di contenuto](assets/aem_scs.png)
+   ![Finestra di dialogo Experience Manager Smart Content Service per fornire l&#39;URL del servizio di contenuto](assets/aem_scs.png)
 
 1. Fate clic su **[!UICONTROL Scarica certificato pubblico per l&#39;integrazione]** OAuth e scaricate il file del certificato pubblico `AEM-SmartTags.crt`.
 
@@ -52,7 +52,7 @@ Un certificato pubblico consente di autenticare il profilo sull&#39;I/O di Adobe
 
 Alla scadenza del certificato non è più attendibile. Per aggiungere un nuovo certificato, attenetevi alla procedura seguente. Non è possibile rinnovare un certificato scaduto.
 
-1. Accedi alla tua distribuzione AEM come amministratore. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
+1. Log in your [!DNL Experience Manager] deployment as an administrator. Fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
 
 1. Individuate e fate clic su **[!UICONTROL dam-update-service]** user. Fate clic sulla scheda **[!UICONTROL Keystore]** .
 1. Eliminate l&#39;archivio di chiavi di ricerca **[!UICONTROL per]** similarità esistente con il certificato scaduto. Click **[!UICONTROL Save &amp; Close]**.
@@ -88,9 +88,9 @@ Per utilizzare le API Smart Content Service, create un&#39;integrazione in Adobe
 
 ## Configurare Smart Content Service {#configure-smart-content-service}
 
-Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tecnico, ID organizzazione, Segreto cliente, Server autorizzazioni e chiave API dall&#39;integrazione I/O di Adobe. La creazione di una configurazione cloud di Smart Tags consente l’autenticazione delle richieste API dall’istanza AEM.
+Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tecnico, ID organizzazione, Segreto cliente, Server autorizzazioni e chiave API dall&#39;integrazione I/O di Adobe. La creazione di una configurazione cloud Smart Tags consente l&#39;autenticazione delle richieste API dall&#39; [!DNL Experience Manager] istanza.
 
-1. In Experience Manager, passa a **[!UICONTROL Strumenti > Servizio Cloud > Servizi]** cloud legacy per aprire la console Servizi  Cloud.
+1. In [!DNL Experience Manager]Strumenti > **[!UICONTROL Servizi cloud > Servizi]** cloud legacy per aprire la console Servizi  Cloud.
 1. In Tag **[!UICONTROL avanzati]** risorse, apri la configurazione creata sopra. Nella pagina delle impostazioni del servizio, fate clic su **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo **[!UICONTROL Servizio di contenuti avanzati AEM]**, utilizza i valori precompilati per i campi **[!UICONTROL URL servizio]** e **[!UICONTROL Server autorizzazioni]**.
 1. Per i campi **[!UICONTROL Chiave API]**, **[!UICONTROL ID account tecnico]**, **[!UICONTROL ID organizzazione]** e **[!UICONTROL Segreto client]**, utilizza i valori generati sopra.
@@ -99,7 +99,7 @@ Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tec
 
 Dopo aver completato la configurazione, puoi usare un MBean JMX per convalidare la configurazione. Per eseguire la convalida, effettuare le seguenti operazioni.
 
-1. Accedi al server AEM all&#39;indirizzo `https://[server]:[port]`.
+1. Accedete al [!DNL Experience Manager] server all&#39;indirizzo `https://[aem_server]:[port]`.
 
 1. Passate a **[!UICONTROL Strumenti > Operazioni > Console]** Web per aprire la console OSGi. Fate clic su **[!UICONTROL Principale > JMX]**.
 1. Fate clic su **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Si apre **[!UICONTROL SimilaritySearch Attività varie.]**
@@ -109,14 +109,14 @@ Dopo aver completato la configurazione, puoi usare un MBean JMX per convalidare 
 
 ## Abilitare i tag avanzati nel flusso di lavoro Aggiorna risorsa (facoltativo) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. In Experience Manager, accedi a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. In [!DNL Experience Manager], passare a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Nella pagina **[!UICONTROL Modelli flusso di lavoro]**, seleziona il modello del flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Fare clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
 1. Per visualizzare i passaggi, espandi il pannello laterale. Trascina il passaggio **[!UICONTROL Risorsa di tag avanzati]** della sezione Flusso di lavoro DAM e inseriscilo dopo il passaggio **[!UICONTROL Elabora miniature]**.
 
    ![Aggiungere un passaggio di risorsa smart tag dopo la miniatura del processo nel flusso di lavoro [!UICONTROL DAM Update Asset]](assets/chlimage_1-105.png)
 
-   *Figura: Aggiungere un passaggio di risorsa smart tag dopo la miniatura del processo nel flusso di lavoro[!UICONTROL DAM Update Asset]*
+   *Figura: Aggiungi il passaggio di una risorsa smart tag dopo il passaggio della miniatura di processo nel flusso di lavoro[!UICONTROL DAM Update Asset].*
 
 1. Apri il passaggio in modalità di modifica. In **[!UICONTROL Impostazioni avanzate]**, accertati che sia selezionata l’opzione **[!UICONTROL Avanzamento gestore]**.
 
