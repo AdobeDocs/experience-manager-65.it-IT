@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
 
 ---
 
@@ -19,14 +19,17 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Panoramica {#overview}
 
-In AEM Communities, nell&#39;ambiente di pubblicazione, gli utenti possono registrarsi e modificare i propri profili. Date le autorizzazioni appropriate, possono anche
+In AEM Communities, nell&#39;ambiente di pubblicazione, gli utenti possono registrarsi e modificare i propri profili. Considerate le autorizzazioni appropriate, possono anche:
 
-* Creazione di sub-community all&#39;interno del sito della community (vedete Gruppi [](creating-groups.md)della community)
-* [Contenuto moderato](moderation.md) generato dall’utente (UGC)
-* Come [abilitare i contatti delle risorse](resources.md)
-* Sii [privilegiato](#privileged-members-group) per creare post per blog, calendari, QnA e forum
+* Create sub-community all&#39;interno del sito della community (vedete Gruppi [](creating-groups.md)della community).
 
-Gli utenti registrati nell&#39;ambiente di pubblicazione sono generalmente denominati membri della *community (membri)* per distinguerli dagli utenti *nell&#39;ambiente di authoring.
+* [Contenuto generato dall](moderation.md) ’utente moderato (UGC).
+
+* Abilita [contatti risorse](resources.md) .
+
+* Sii [privilegiato](#privileged-members-group) per creare post per blog, calendari, QnA e forum.
+
+Gli utenti registrati nell’ambiente di pubblicazione sono generalmente denominati membri della *community (membri)* per distinguerli dagli *utenti* nell’ambiente di authoring.
 
 Le autorizzazioni vengono concesse assegnando i membri a uno dei gruppi [](#publish-group-roles) membri (utenti) creati dinamicamente quando il sito community viene [creato](sites-console.md) o [modificato](sites-console.md#modifying-site-properties) dall&#39;ambiente di authoring. Quando si lavora dall’ambiente di authoring, i membri sono visibili dall’ambiente di pubblicazione tramite il servizio [](#tunnel-service)tunnel.
 
@@ -34,7 +37,7 @@ Per impostazione predefinita, i membri e i gruppi di membri creati nell’ambien
 
 Quando gli utenti autori e i membri al momento della pubblicazione provengono dallo stesso elenco di utenti, ad esempio sincronizzati dalla stessa directory LDAP, non vengono considerati lo stesso utente con le stesse autorizzazioni e appartenenza al gruppo sia nell’ambiente di creazione che nell’ambiente di pubblicazione. I ruoli dei membri e degli utenti devono essere stabiliti separatamente al momento della pubblicazione e dell’autore, a seconda dei casi.
 
-Per una farm [di](topologies.md)pubblicazione, per poter accedere agli stessi dati utente, è necessario sincronizzare la registrazione e le modifiche effettuate su un’istanza di pubblicazione con altre istanze di pubblicazione. [Per informazioni dettagliate, consultate Sincronizzazione ](sync.md)[utente, che include una sezione che descrive ](sync.md#what-happens-when)cosa accade quando... .
+Per una farm [di](topologies.md)pubblicazione, la registrazione e le modifiche apportate a un’istanza di pubblicazione devono essere sincronizzate con altre istanze di pubblicazione per consentire loro di accedere agli stessi dati utente. Per informazioni dettagliate, consultate Sincronizzazione [](sync.md)utente, che include una sezione che descrive [cosa accade quando...](sync.md#what-happens-when).
 
 ### Limiti per contributi {#contribution-limits}
 
@@ -60,7 +63,7 @@ Quando si utilizza l’ambiente di authoring per [creare siti](sites-console.md)
 
 Il servizio tunnel fornisce questo accesso tramite l&#39;agente di replica in fase di creazione.
 
-* Per informazioni dettagliate, consultate [Istruzioni](deploy-communities.md#tunnel-service-on-author) di configurazione nella pagina di distribuzione
+* Per informazioni dettagliate, consultate [le istruzioni](deploy-communities.md#tunnel-service-on-author) di configurazione nella pagina di distribuzione.
 
 Le console Membri [community e Gruppi](members.md) sono riservate esclusivamente alla gestione di utenti (membri) e gruppi di utenti (gruppi di membri) registrati solo nell’ambiente di pubblicazione.
 
@@ -74,7 +77,7 @@ Per gestire utenti e gruppi di utenti registrati nell’ambiente di authoring, u
 | Amministratori community | Il gruppo Amministratori community diventa automaticamente membro di tutti i siti community e di tutti i gruppi di community creati sul sito. Un membro iniziale del gruppo Amministratori community è il gruppo Amministratori. Nell’ambiente di authoring, gli amministratori della community possono creare siti per la community, gestire i siti, gestire i membri (possono vietare i membri della community) e moderare i contenuti. |
 | Community &lt;nome ** sito> Sitecontentmanager | Community Site Content Manager è in grado di eseguire operazioni di authoring, creazione di contenuti e modifica tradizionali di AEM per un sito community. |
 | Manager abilitazione community | Il gruppo Manager abilitazione comunità è costituito da utenti disponibili per l&#39;assegnazione per gestire il gruppo Manager abilitazione di un sito community. |
-| Community &lt;*site name* > SiteEnablementmanager | Il gruppo Community Site Enablement Manager (Manager abilitazione sito community) è costituito da utenti assegnati per la gestione delle [risorse](resources.md)di abilitazione di un sito community. |
+| Community &lt;*site name* > Siteenablementmanager | Il gruppo Community Site Enablement Manager (Manager abilitazione sito community) è costituito da utenti assegnati per la gestione delle [risorse](resources.md)di abilitazione di un sito community. |
 | Nessuno | Un visitatore anonimo del sito non può accedere all’ambiente di authoring. |
 
 ### Amministratori di sistema {#system-administrators}
@@ -91,7 +94,7 @@ Accertatevi di seguire la [lista](../../help/sites-administering/security-checkl
 
 ### Diventare membro {#becoming-a-member}
 
-Nell&#39;ambiente di pubblicazione, a seconda delle [impostazioni](sites-console.md#user-management) del sito community, un visitatore del sito può diventare membro della community
+Nell’ambiente di pubblicazione, a seconda delle [impostazioni](sites-console.md#user-management) del sito community, un visitatore del sito può diventare membro della community:
 
 * Quando il sito della comunità è privato (chiuso):
    * Per invito
@@ -105,13 +108,14 @@ Nell&#39;ambiente di pubblicazione, a seconda delle [impostazioni](sites-console
 >
 >Se un visitatore del sito si registra come membro di un sito community aperto, diventa automaticamente membro di altri siti community aperti nello stesso ambiente di pubblicazione.
 
+
 ### Pubblica ruoli gruppo {#publish-group-roles}
 
 | Se membro del gruppo... | Ruolo principale |
 |---|---|
 | Membri della community &lt;*site name*> | Un membro della community è un utente registrato. Possono accedere, modificare il loro profilo, partecipare a un gruppo di community aperto, pubblicare contenuti per la community, inviare messaggi ad altri membri e seguire le attività del sito. |
 | Moderatori di community &lt;*site name*> | Un moderatore del sito community è un membro fidato della comunità che è in grado di moderare l&#39;UGC sia in massa, utilizzando la console di moderazione, sia contestualmente, sulla pagina in cui viene pubblicato il contenuto. |
-| Membri della community &lt;*site name*> &lt;*group name*> | Un membro del gruppo è un membro della comunità che ha aderito a un gruppo comunitario aperto o che è stato invitato in un gruppo comunitario chiuso. Hanno le capacità di un membro per quel gruppo community all&#39;interno del sito. |
+| Membri della community &lt;*site name*> &lt;*group name*> | Un membro del gruppo è un membro della comunità che ha aderito a un gruppo comunitario aperto o che è stato invitato in un gruppo comunitario chiuso. Hanno le capacità di un membro per quel gruppo di community all&#39;interno del sito. |
 | Amministratori di gruppi &lt;*site name*> community | L&#39;amministratore di un gruppo di siti community è un membro affidabile della community, assegnato per creare e gestire sottocomunità (gruppi) all&#39;interno di un sito community. Inclusa è la capacità di fornire moderazione contestuale. |
 | *Gruppo di sicurezza dei membri privilegiati* | Un gruppo di utenti creato e mantenuto manualmente allo scopo di limitare la creazione di contenuti. Consultate Gruppo [Membri](#privileged-members-group)privilegiati. |
 | Nessuno | Un visitatore anonimo del sito, che scopre il sito, può visualizzare ed effettuare ricerche nei siti della community che consentono l&#39;accesso anonimo. Per partecipare e pubblicare contenuti, l&#39;utente deve registrarsi autonomamente (se consentito) e diventare membro della community. |
@@ -134,16 +138,17 @@ Dopo la creazione di un gruppo di membri privilegiati e l&#39;abilitazione [del 
 
 Le funzioni comunitarie che consentono di specificare uno o più gruppi di membri privilegiati sono:
 
-* [Funzione](functions.md#blog-function) Blog - per limitare la creazione di nuovi articoli
-* [Funzione](functions.md#calendar-function) Calendario - per limitare la creazione di nuovi eventi
-* [Funzione](functions.md#forum-function) forum - per limitare la creazione di nuovi argomenti
-* [Funzione](functions.md#qna-function) QnA per limitare la creazione di nuove domande
+* [Funzione](functions.md#blog-function) Blog - Per limitare la creazione di nuovi articoli.
+* [Funzione](functions.md#calendar-function) Calendario - Per limitare la creazione di nuovi eventi.
+* [Funzione](functions.md#forum-function) forum - Per limitare la creazione di nuovi argomenti.
+* [Funzione](functions.md#qna-function) QnA - Per limitare la creazione di nuove domande.
 
 Quando una funzione community non è protetta (non è assegnato alcun gruppo di membri privilegiati), tutti i membri del sito community possono creare contenuti di funzioni (articoli, eventi, argomenti, domande).
 
 >[!NOTE]
 >
 >L&#39;aggiunta di un utente a un gruppo di membri privilegiati per un sito community concederà loro privilegi di creazione solo se sono anche membri dello stesso sito community.
+
 
 ## Creazione di membri della community {#creating-community-members}
 
@@ -201,25 +206,26 @@ Per creare un utente al quale può essere assegnato il ruolo di `Community Site 
 In un’istanza di creazione:
 
 1. Effettuato l’accesso con privilegi di amministratore, passa alla classica console di sicurezza dell’interfaccia utente.
-Ad esempio, [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
+
+   Ad esempio, [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 
 2. Dal menu Modifica, selezionate **[!UICONTROL Crea utente]**.
 3. Compilate la `Create User` finestra di dialogo.
-   * Il percorso deve essere `/home/users/community`
-4. Seleziona **[!UICONTROL Crea]**
+   * Il percorso deve essere `/home/users/community`.
+4. Seleziona **[!UICONTROL Crea]**.
 
-![chlimage_1-130](assets/chlimage_1-130.png)
+   ![chlimage_1-130](assets/chlimage_1-130.png)
 
 * Nel riquadro a sinistra, cercare l’utente appena creato e selezionare per visualizzarlo nel riquadro a destra.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+   ![chlimage_1-135](assets/chlimage_1-131.png)
 
 Nel riquadro a sinistra:
 
-1. Deselezionate la casella di ricerca e selezionate **[!UICONTROL Nascondi utenti]**
-2. Individua e trascina `community-enablementmanagers` nella scheda **[!UICONTROL Gruppi]** del nuovo utente visualizzata nel riquadro a destra
+1. Deselezionate la casella di ricerca e selezionate **[!UICONTROL Nascondi utenti]**.
+2. Individuate e trascinate `community-enablementmanagers` nella scheda **[!UICONTROL Gruppi]** del nuovo utente visualizzata nel riquadro a destra.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+   ![chlimage_1-132](assets/chlimage_1-132.png)
 
 ### Ruolo Amministratori community {#community-administrators-role}
 
@@ -233,12 +239,12 @@ AEM supporta l’utilizzo di LDAP per l’autenticazione degli utenti e per la c
 
 Di seguito sono riportati alcuni dettagli di configurazione specifici per i membri della community e i gruppi di membri.
 
-1. Configurare LDAP per ogni istanza di pubblicazione AEM
+1. Configurare LDAP per ogni istanza di pubblicazione AEM.
 2. [Provider di identità LDAP](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * Nessuna istruzione speciale
 
-3. [Gestore sincronizzazione](../../help/sites-administering/ldap-config.md#configuring-the-synchronization-handler)
+3. [Gestore di sincronizzazione](../../help/sites-administering/ldap-config.md#configuring-the-synchronization-handler)
 
    * Impostate le seguenti proprietà:
 
@@ -260,12 +266,16 @@ Quando utilizzate una farm [di](topologies.md)pubblicazione, accertatevi che gli
 
 Se importate dei gruppi di utenti, per garantire che i gruppi di utenti abbiano lo stesso percorso in ciascuna istanza di pubblicazione, importate in un’istanza, quindi [create un pacchetto](../../help/sites-administering/package-manager.md#creating-a-new-package) per l’esportazione e installate il pacchetto su tutte le altre istanze di pubblicazione.
 
-Anche se la sincronizzazione dei gruppi di utenti tramite la sincronizzazione degli utenti verrà inclusa in una versione futura, al momento solo la *appartenenza *di un gruppo di utenti verrà sincronizzata quando viene eseguita la sincronizzazione degli utenti.
+Anche se la sincronizzazione di gruppi di utenti tramite la sincronizzazione degli utenti verrà inclusa in una versione futura, al momento solo l&#39; *appartenenza* di un gruppo di utenti verrà sincronizzata al momento della sincronizzazione degli utenti.
 
 ## Informazioni sui gruppi community {#about-community-groups}
 
 Quando si discute di gruppi, ci sono due argomenti distinti:
 
-* **[I gruppi](overview.md#communitygroups)**comunitari sono le sottocomunità che possono essere create nell&#39;ambiente di pubblicazione per un sito comunitario che supporta la creazione di gruppi comunitari. La creazione di un gruppo community genera un numero maggiore di pagine aggiunte al sito Web e gestite in modo simile al sito della community principale. Per maggiori informazioni, visita[Community Group Essentials](essentials-groups.md)for developers and[Community Group](creating-groups.md)for authors.
+* **[Gruppi community](overview.md#communitygroups)**
 
-* **[Gruppi](../../help/sites-administering/security.md)**membri I gruppi membri sono i gruppi a cui i membri possono appartenere e che sono gestiti tramite la console Gruppi. Gran parte della discussione su questa pagina è stata dedicata ai gruppi membri. I gruppi membri creati automaticamente per un sito comunitario, con il prefisso *`Community`*, possono essere definiti come gruppo comunitario, pertanto il contesto della discussione deve essere considerato.
+   I gruppi comunitari sono le sub-comunità che possono essere create nell&#39;ambiente di pubblicazione per un sito comunitario che supporta la creazione di gruppi di comunità. La creazione di un gruppo community genera un numero maggiore di pagine aggiunte al sito Web e gestite in modo simile al sito della community principale. Per maggiori informazioni, visita [Community Group Essentials](essentials-groups.md) for developers and [Community Group](creating-groups.md) for authors.
+
+* **[Gruppi di membri](../../help/sites-administering/security.md)**
+
+   I gruppi di membri sono i gruppi a cui i membri possono appartenere e che sono gestiti tramite la console Gruppi. Gran parte della discussione su questa pagina è stata dedicata ai gruppi membri. I gruppi membri creati automaticamente per un sito comunitario, con il prefisso *`Community`*, possono essere definiti come gruppo comunitario, pertanto il contesto della discussione deve essere considerato.
