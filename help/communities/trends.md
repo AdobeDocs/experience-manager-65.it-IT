@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# Tendenze attività{#activity-trends}
+# Tendenze attività {#activity-trends}
 
 ## Introduzione {#introduction}
 
@@ -24,9 +24,9 @@ Il `Community Activity List` componente consente di aggiungere informazioni di t
 
 Il documento descrive:
 
-* aggiunta del `Community Activity List` componente a un sito [community](/help/communities/overview.md#community-sites)
+* Aggiunta del `Community Activity List` componente a un sito [](/help/communities/overview.md#community-sites)community.
 
-* impostazioni di configurazione per il `Community Activity List` componente
+* Impostazioni di configurazione per il `Community Activity List` componente.
 
 ### Requisito {#requirement}
 
@@ -42,7 +42,7 @@ Per aggiungere un `Community Activity List` componente a una pagina in modalità
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visita [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
@@ -54,7 +54,7 @@ Selezionate il `Community Activity List` componente inserito a cui accedere e se
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-Nella scheda **Commenti **specificare se e come vengono visualizzati i commenti per i file caricati:
+Nella scheda **Commenti** , specificate se e come vengono visualizzati i commenti per i file caricati:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -62,7 +62,7 @@ Nella scheda **Commenti **specificare se e come vengono visualizzati i commenti 
 
    Specificate se visualizzare i dati relativi ai membri della community o al contenuto generato dall&#39;utente (UGC).
 
-   Seleziona da
+   Seleziona da:
 
    * `Members`
    * `Content`
@@ -80,7 +80,7 @@ Il valore predefinito è 10.
 
 * **Tipo di attività**
 
-   Seleziona uno dei
+   Selezionate una delle seguenti opzioni:
 
    * `Views`(visite alle pagine)
    * `Posts`(creazione di UGC)
@@ -90,7 +90,7 @@ Il valore predefinito è 10.
 
 * **Periodo di tempo**
 
-   Seleziona uno dei
+   Selezionate una delle seguenti opzioni:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -102,12 +102,12 @@ Il valore predefinito è 10.
 
 * **Percorso contesto**
 
-   Fornisce la possibilità di estendere l&#39;attività a un sottoinsieme del sito, ad esempio un blog specifico.
+   Fornisce la possibilità di estendere l&#39;attività a un sottoinsieme del sito, ad esempio un Blog specifico.
 Default è l&#39;intero sito della community.
 
 * **Aggregazione conteggio dei membri**
 
-   Quando è deselezionato (disattivato), vengono contati solo i post di primo livello. Ad esempio, se il contesto è la pagina principale (impostazione predefinita), una `Activity Type`di non `Posts`mostrerà mai alcuna attività in quanto non è possibile pubblicare contenuto nella pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi di tutte le pagine discendenti.
+   Quando è deselezionato (disattivato), vengono contati solo i post di primo livello. Ad esempio, se il contesto è la pagina principale (il valore predefinito), un `Activity Type` valore pari a `Posts` non mostrerà mai alcuna attività in quanto non è possibile pubblicare contenuto nella pagina principale. Se questa opzione è selezionata, vengono inclusi i conteggi di tutte le pagine discendenti.
 Il valore predefinito è selezionato.
 
 ### Pagina di esempio con 4 componenti {#example-page-with-components}
