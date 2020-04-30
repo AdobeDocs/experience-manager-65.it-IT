@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -27,7 +27,7 @@ Gli spazi dei nomi e le tassonomie dei tag sono gli stessi per entrambe le appli
 
 ## Funzioni di Communities {#communities-features}
 
-Le funzioni di AEM Communities che possono essere configurate per consentire l&#39;assegnazione di tag sono
+Le funzioni di AEM Communities che possono essere configurate per consentire l’assegnazione di tag sono:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -37,7 +37,7 @@ Le funzioni di AEM Communities che possono essere configurate per consentire l&#
 
 ## Amministrazione dei tag {#administering-tags}
 
-Consultate [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console) per creare e gestire namespace tag e tassonomie.
+Consultate [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console) per la creazione e la gestione di spazi dei nomi e tassonomie dei tag.
 
 Per informazioni sugli sviluppatori, consulta [Tag Essentials](tag.md) .
 
@@ -51,7 +51,7 @@ Poiché i tag vengono applicati a UGC nell’ambiente di pubblicazione, è neces
 
 Consultate [Impostazione delle autorizzazioni](../../help/sites-administering/tags.md#setting-tag-permissions)per i tag.
 
-Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura `/etc/tag/discussions` per il gruppo `*Community Engage Members*`.
+Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura `/etc/tag/discussions` per il gruppo `Community Engage Members`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
