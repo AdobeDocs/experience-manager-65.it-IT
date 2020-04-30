@@ -3,7 +3,7 @@ title: Confronto tra AEM Assets e la libreria di contenuti multimediali AEM
 description: Confronta le offerte AEM Assets e AEM Media Library e conosce le differenze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -70,35 +70,34 @@ Per questo caso d’uso non è necessario acquistare AEM Assets, anche l’utili
 * Adobe Asset Link (collegamento a Creative Cloud for enterprise)
 * App desktop AEM
 * Profili di elaborazione
-* Integrazione con il server InDesign
+* Integrazione con InDesign Server
 * Modelli di risorse e framework di produttori di cataloghi
-* Risorse collegate di Adobe Photoshop, Illustrator e InDesign
+* Integrazione con Adobe Photoshop, Adobe Illustrator e Adobe InDesign
 * Gestione multilingue delle risorse
 * Integrazione PIM
-* Rights Management
+* Gestione dei diritti
 * Supporto per Camera RAW
 * Gestione e configurazione dei facet di ricerca
 * Flussi di lavoro DAM pregenerati (ad esempio, photoshot)
-* Reporting delle risorse e analisi: Informazioni sulle risorse
-* Gestione risorse 3D
+* Reporting e analisi delle risorse denominate Insights
+* Gestione delle risorse 3D
 * Risorse collegate
 * Brand Portal
 * Accesso self-service
 * Sfogliare, cercare e scaricare
-* Raccolte e condivisione cartelle
-* Strumenti di amministrazione
+* Raccolte e condivisione di cartelle
+* Strumenti di amministrazione e interfaccia
 * Tag avanzati
-* Visual Search
-* Interfaccia utente Amministratore risorse
+* Ricerca visiva
 
 **Libreria multimediale**
 
-* Proprietà metadati di base
-* Gestione tag
-* Controllo della versione
+* Proprietà di base dei metadati
+* Gestione dei tag
+* Controllo versione
 * Rappresentazioni statiche
-* Progetti, Attività, Authoring dei flussi di lavoro
-* Flusso attività (timeline)
+* Progetti, attività, creazione di flussi di lavoro
+* Flusso di attività (timeline)
 * Query Builder (API)
 * Integrazione di Marketing Cloud
 * Personalizzazione ed estensione dell&#39;interfaccia utente
