@@ -3,7 +3,7 @@ title: Elabora risorse per eseguire processi aziendali, eseguire audit, ottenere
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -18,17 +18,17 @@ Per l’elaborazione delle risorse, [!DNL Experience Manager] utilizza i flussi 
 
 ## Flussi di lavoro predefiniti disponibili in [!DNL Experience Manager]{#default-workflows}
 
-Per impostazione predefinita, tutte le risorse caricate vengono elaborate utilizzando il flusso di lavoro Aggiorna risorsa  DAM. Il flusso di lavoro viene eseguito per ciascuna risorsa caricata ed esegue attività di base per la gestione delle risorse, come generazione di rappresentazioni, remix di metadati, estrazione di pagina, estrazione di contenuti multimediali e transcodifica.
+Per impostazione predefinita, tutte le risorse caricate vengono elaborate utilizzando il flusso di lavoro Aggiorna risorsa  DAM. Il flusso di lavoro viene eseguito per ciascuna risorsa caricata ed esegue attività di base per la gestione delle risorse come generazione di rappresentazioni, remix di metadati, estrazione di pagina, estrazione di contenuti multimediali e transcodifica.
 
 Per visualizzare i vari modelli di workflow disponibili per impostazione predefinita, vedi **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]** in [!DNL Experience Manager].
 
 ![Alcuni dei flussi di lavoro predefiniti](assets/aem-default-workflows.png)
 
-*Figura: Alcuni dei flussi di lavoro predefiniti disponibili in[!DNL Experience Manager]*
+*Figura: Alcuni dei flussi di lavoro predefiniti disponibili in[!DNL Experience Manager].*
 
 ## Applicazione di flussi di lavoro per elaborare le risorse {#applying-workflows-to-assets}
 
-L’applicazione dei flussi di lavoro alle risorse digitali è la stessa utilizzata per le pagine di siti Web. Per una guida completa su come creare e utilizzare i flussi di lavoro, consulta Flussi di lavoro [](/help/sites-authoring/workflows-participating.md)iniziali.
+L’applicazione dei flussi di lavoro alle risorse digitali è la stessa utilizzata per le pagine di siti Web. Per una guida completa su come creare e utilizzare i flussi di lavoro, consulta Flussi di lavoro [iniziali](/help/sites-authoring/workflows-participating.md).
 
 Usate i flussi di lavoro nelle risorse digitali per attivare la risorsa o creare filigrane. Molti dei flussi di lavoro per le risorse vengono automaticamente attivati. Ad esempio, il flusso di lavoro che crea automaticamente una rappresentazione dopo la modifica di un’immagine viene automaticamente attivato.
 
