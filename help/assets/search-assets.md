@@ -4,7 +4,7 @@ description: Scopri come trovare le risorse necessarie in Adobe Experience Manag
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -40,7 +40,7 @@ Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
 ![Interfaccia dei risultati di ricerca di Experience Manager Assets](assets/aem_search_results.png)
 
-*Figura: Interfaccia dei risultati di ricerca di Experience Manager Assets*
+*Figura: Scopri l’interfaccia dei risultati di ricerca di Experience Manager Assets.*
 
 **A.** Salvate la ricerca come raccolta avanzata. **B.** Filtri o predicati per limitare i risultati della ricerca. **C.** Visualizzare file, cartelle o entrambi. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. **F.** Campo di ricerca Omnisearch con parola chiave di ricerca fornita dall’utente. **G.** Selezionare i risultati di ricerca caricati. **H.** Numero di risultati della ricerca visualizzati rispetto al totale dei risultati della ricerca. **I.** Chiudi la ricerca **J.** Passa dalla vista a scheda a quella a elenco.
 
@@ -50,7 +50,7 @@ Dalla pagina dei risultati della ricerca potete individuare più rapidamente le 
 
 ![Visualizzate il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura: Visualizzare il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca*
+*Figura: Visualizzate il numero approssimativo di risorse senza filtrare i risultati di ricerca nei facet di ricerca.*
 
 ## Comprendere i risultati della ricerca e il comportamento {#searchbehavior}
 
@@ -99,7 +99,7 @@ Per ricevere suggerimenti per più parole chiave di ricerca, continuate a digita
 
 ![Digitate più parole chiave per visualizzare i suggerimenti che vi rientrano](assets/search_suggestionsmanykeywords.gif)
 
-*Figura: Digitate più parole chiave per visualizzare i suggerimenti che vi rientrano*
+*Figura: Digitate più parole chiave per visualizzare i suggerimenti adatti a tutti.*
 
 ### Classificazione e incremento della ricerca {#searchrank}
 
@@ -131,7 +131,7 @@ Experience Manager offre diversi metodi, come i filtri, applicabili alle risorse
 
 ![Limitare i risultati di ricerca in una cartella aggiungendo un percorso di cartella nel pannello Filtri](assets/search_folder_select.gif)
 
-*Figura: Limitare i risultati di ricerca in una cartella aggiungendo un percorso di cartella nel pannello Filtri*
+*Figura: Per limitare i risultati della ricerca a una cartella, aggiungete il percorso di una cartella nel pannello Filtri.*
 
 ### Trovare immagini simili {#visualsearch}
 
@@ -139,7 +139,7 @@ Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai 
 
 ![Trovare immagini simili utilizzando l&#39;opzione nella vista a schede](assets/search_find_similar.png)
 
-*Figura: Trovare immagini simili utilizzando l&#39;opzione nella vista a schede*
+*Figura: Trovate immagini simili utilizzando l&#39;opzione nella vista a schede.*
 
 ### Immagini Adobe Stock {#adobestock}
 
@@ -197,7 +197,7 @@ Adobe Experience Manager collega l&#39;archivio DAM a diverse altre soluzioni Ex
 
 ### Cercare risorse dal pannello Collegamento risorse di Adobe {#aal}
 
-Con Adobe Asset Link, i creativi professionisti possono ora accedere al contenuto memorizzato in Experience Manager Assets, senza uscire dalle app Adobe Creative Cloud supportate. I creativi possono sfogliare, cercare, estrarre e archiviare facilmente le risorse utilizzando il pannello in-app nelle app Creative Cloud: Photoshop, Illustrator e InDesign. Collegamento risorsa consente anche agli utenti di effettuare ricerche con risultati visivamente simili. I risultati della visualizzazione della ricerca visiva sono basati sugli algoritmi di machine learning di Adobe Sensei e consentono agli utenti di trovare immagini esteticamente simili. Consultate [Cercare e sfogliare le risorse](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) tramite Adobe Asset Link.
+Con Adobe Asset Link, i creativi professionisti possono ora accedere al contenuto memorizzato in Experience Manager Assets, senza uscire dalle app Adobe Creative Cloud supportate. I creativi possono sfogliare, cercare, estrarre e archiviare facilmente le risorse utilizzando il pannello in-app nelle app Creative Cloud: Photoshop, Illustrator e InDesign. Collegamento risorsa consente anche agli utenti di effettuare ricerche con risultati visivamente simili. I risultati della visualizzazione della ricerca visiva sono basati sugli algoritmi di machine learning di Adobe Sensei e consentono agli utenti di trovare immagini esteticamente simili. Consultate [Cercare e sfogliare le risorse](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) tramite Adobe Asset Link.
 
 ### Cercare risorse nell’app desktop Experience Manager {#desktopapp}
 
@@ -244,9 +244,9 @@ Per accedere all’interfaccia del selettore risorse, passate a `https://[aem_se
 
 ![Sfogliare e selezionare la risorsa nel selettore delle risorse](assets/assetpicker.png)
 
-*Figura: Sfogliare e selezionare la risorsa nel selettore delle risorse*
+*Figura: Sfoglia e seleziona la risorsa nel selettore delle risorse.*
 
-## Limitazioni    {#limitations}
+## Limitazioni  {#limitations}
 
 La funzionalità di ricerca in Experience Manager Assets presenta i seguenti limiti:
 
@@ -285,7 +285,7 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 ![Comportamento di ricerca con e senza virgolette](assets/search_with_quotes.gif)
 
-*Figura: Comportamento di ricerca con e senza virgolette*
+*Figura: Funzionamento della ricerca con e senza virgolette.*
 
 **Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Ad esempio,
 
@@ -296,7 +296,7 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 ![Illustrazione dell’utilizzo di un carattere jolly asterisco nella ricerca di risorse tramite un esempio](assets/search_with_asterisk_run.gif)
 
-*Figura: Illustrazione dell’utilizzo di un carattere jolly asterisco nella ricerca di risorse tramite un esempio*
+*Figura: Illustrazione dell’utilizzo del carattere jolly asterisco nella ricerca delle risorse tramite un esempio.*
 
 **Cerca con il carattere jolly** punto interrogativo: Per ampliare la ricerca, utilizzare uno o più caratteri &#39;?&#39; caratteri per corrispondere al numero esatto di caratteri. Ad esempio, nell&#39;illustrazione seguente,
 
@@ -308,13 +308,13 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 ![Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio](assets/search_with_questionmark_run.gif)
 
-*Figura: Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio*
+*Figura: Illustrazione dell’uso del carattere jolly punto interrogativo nella ricerca di risorse tramite un esempio.*
 
 **Escludere una parola chiave**: Usate il trattino per cercare risorse che non contengono una parola chiave. Ad esempio, `running -shoe` la query restituisce risorse che contengono `running`, ma non `shoe`. Analogamente, `camp -night` query restituisce risorse che contengono `camp` ma non `night`. La `camp-night` query restituisce risorse contenenti sia `camp` che `night`.
 
 ![Utilizzo del trattino per cercare risorse non contenenti una parola chiave esclusa](assets/search_dash_exclude_keyword.gif)
 
-*Figura: Utilizzo del trattino per cercare risorse non contenenti una parola chiave esclusa*
+*Figura: Utilizzo del trattino per cercare risorse non contenenti una parola chiave esclusa.*
 
 ## Attività di configurazione e amministrazione relative alla funzionalità di ricerca {#configadmin}
 
@@ -415,7 +415,7 @@ Per controllare i commenti relativi a una risorsa o alla sua cronologia della ve
 
 ![Ordinare le voci della cronologia per una risorsa di ricerca](assets/sort_timeline_search_results.gif)
 
-*Figura: Ordinare le voci della cronologia per una risorsa di ricerca*
+*Figura: Ordinare le voci della cronologia per una risorsa di ricerca.*
 
 ### Scaricare le risorse ricercate {#download}
 
