@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -39,9 +39,11 @@ La richiesta di uno store comune genera le seguenti topologie consigliate.
 >
 >Se la distribuzione non include uno store [](working-with-srp.md)comune, UGC sarà visibile solo nell’istanza di pubblicazione AEM o di creazione su cui è stato immesso.
 
+
 >[!NOTE]
 >
 >Per ulteriori informazioni sulla piattaforma AEM, consultate Implementazioni [](../../help/sites-deploying/recommended-deploys.md) consigliate e [Introduzione alla piattaforma](../../help/sites-deploying/data-store-config.md)AEM.
+
 
 ## Per la produzione {#for-production}
 
@@ -49,9 +51,9 @@ La creazione di uno store comune per UGC è essenziale, e quindi l&#39;implement
 
 Due esempi:
 
-1) Se il volume previsto di UGC è elevato e un&#39;istanza MongoDB locale è possibile, la scelta sarebbe [MSRP](msrp.md).
+1. Se il volume previsto di UGC è elevato e un&#39;istanza MongoDB locale è possibile, la scelta sarebbe [MSRP](msrp.md).
 
-2) Per ottenere prestazioni ottimali per il contenuto della pagina, la scelta di una [pubblicazione farm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e di un [ASRP](asrp.md) fornirebbe un ridimensionamento ottimale di UGC con operazioni relativamente semplici.
+1. Per ottenere prestazioni ottimali per il contenuto della pagina, la scelta di una [pubblicazione farm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e di un [ASRP](asrp.md) fornirebbe un ridimensionamento ottimale di UGC con operazioni relativamente semplici.
 
 Per entrambi, la distribuzione può essere basata su qualsiasi microkernel OAK.
 
@@ -61,7 +63,7 @@ Per ulteriori dettagli sui microkernel Oak, visitare [le installazioni consiglia
 
 ### TarMK Publish Farm {#tarmk-publish-farm}
 
-Quando la topologia è una fattoria di pubblicazione, gli argomenti rilevanti sono
+Quando la topologia è un’azienda di pubblicazione, gli argomenti rilevanti sono:
 
 * [Sincronizzazione utente](sync.md)
 * [Gestione di utenti e gruppi di utenti](users.md)
@@ -77,14 +79,14 @@ Quando la topologia è una fattoria di pubblicazione, gli argomenti rilevanti so
 ### JSRP {#jsrp}
 
 
-| Distribuzione | CONTENTREPOSITIVO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | STORE COMUNE |
+| Implementazione | CONTENTREPOSITIVO DEL SITO | CONTENUTO GENERATO DALL&#39;UTENTE | FORNITORE DI RISORSE DI STORAGE | STORE COMUNE |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | Agriturismo TarMK (predefinito) | JCR | JCR | JSRP | No |
 | Cluster Oak | JCR | JCR | JSRP | Sì solo per ambiente di pubblicazione |
 
 ## Per lo sviluppo {#for-development}
 
-Per gli ambienti non di produzione, [JSRP](jsrp.md) offre semplicità nella configurazione di un ambiente di sviluppo con un’istanza di creazione e un’istanza di pubblicazione.
+Per gli ambienti non di produzione, [JSRP](jsrp.md) offre semplicità nella configurazione di un ambiente di sviluppo con un’istanza di authoring e un’istanza di pubblicazione.
 
 Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzione, è anche possibile configurare un ambiente di sviluppo simile utilizzando lo storage su richiesta Adobe o MongoDB. Per un esempio, vedere [Come impostare MongoDB per Demo](demo-mongo.md).
 
@@ -96,15 +98,15 @@ Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzio
 
 * [Gestione di utenti e gruppi di utenti](users.md)
 
-   Descrive i ruoli di utenti e gruppi di utenti negli ambienti di creazione e pubblicazione.
+   Illustra i ruoli degli utenti e dei gruppi di utenti negli ambienti di creazione e pubblicazione.
 
 * Archivio [comune UGC](working-with-srp.md)
 
-   Descrive l&#39;archiviazione di contenuto community separato dal contenuto del sito
+   Descrive l&#39;archiviazione di contenuto community separato dal contenuto del sito.
 
 * [Archivi di nodi e archivi di dati](../../help/sites-deploying/data-store-config.md)
 
-   In sostanza, il contenuto del sito viene memorizzato in un archivio nodi. Per Risorse, un archivio dati può essere configurato per memorizzare dati binari. Per Communities, è necessario configurare uno store comune per selezionare l&#39;SRP.
+   In sostanza, il contenuto del sito viene memorizzato in un archivio nodi. Per le risorse, un archivio dati può essere configurato per memorizzare dati binari. Per Communities, è necessario configurare uno store comune per selezionare l&#39;SRP.
 
 * [Elementi di archiviazione in AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
