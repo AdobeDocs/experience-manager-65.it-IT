@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -32,14 +32,14 @@ La funzione di forum QnA (domande e risposte) offre ai membri della comunità l&
 
 La documentazione descrive:
 
-* aggiunta della funzione forum QnA a un sito AEM.
-* impostazioni di configurazione per il `QnA`componente.
+* Aggiunta della funzione forum QnA a un sito AEM.
+* Impostazioni di configurazione per il `QnA`componente.
 
 ## Aggiunta di un forum D e R a una pagina {#adding-a-q-a-forum-to-a-page}
 
 Per aggiungere un `QnA` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / QnA`e trascinarlo nella posizione desiderata su una pagina in cui dovrebbe comparire il forum QnA.
 
-Per le informazioni necessarie, visita [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
 Quando sono incluse le librerie [lato client](/help/communities/qna-essentials.md#essentials-for-client-side) richieste, viene visualizzato il `QnA`componente:
 
@@ -69,7 +69,7 @@ Nella scheda **Impostazioni** , specificate le impostazioni per gli argomenti (d
 
 * **Dimensione massima miniatura**
 
-   Dimensione massima (in pixel) dell’immagine in miniatura per l’immagine in linea. Il valore predefinito è 800 x 800.
+   Dimensione massima (in pixel) dell’immagine in miniatura per l’immagine agganciata. Il valore predefinito è 800 x 800.
 
 * **Topic per pagina**
 
@@ -105,7 +105,7 @@ Nella scheda **Impostazioni** , specificate le impostazioni per gli argomenti (d
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è attivata, consentite ai membri di ricevere notifiche relative ai nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede che l’opzione Consenti seguito sia selezionata e che sia configurata [l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, consentite ai membri di ricevere notifiche sui nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede che l’opzione Consenti seguito sia selezionata e che sia configurata [l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **Dimensione file massima**
 
@@ -117,18 +117,19 @@ Nella scheda **Impostazioni** , specificate le impostazioni per gli argomenti (d
 
 * **Dimensione massima per file immagine allegato**
 
-   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Il numero massimo di byte che può contenere un file immagine caricato. Il valore predefinito è 2097152****(2 Mb).
+   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Il numero massimo di byte che può contenere un file immagine caricato. Il valore predefinito è 2097152 (2 Mb).
 
 * **Consenti risposte**
 
    Se questa opzione è selezionata, consentire le risposte ai commenti inviati alla domanda. Il valore predefinito è deselezionato.
+
 * **Consenti votazione**
 
    Se questa opzione è selezionata, includete la funzione di votazione con una domanda. Il valore predefinito è deselezionato.
 
 * **Consenti agli utenti di eliminare commenti e argomenti**
 
-   Se questa opzione è selezionata, consentire ai membri di eliminare i commenti e le domande che hanno pubblicato. Il valore predefinito è** **deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di eliminare i commenti e le domande che hanno pubblicato. Il valore predefinito è deselezionato.
 
 * **Consenti membri privilegiati**
 
@@ -138,7 +139,9 @@ Nella scheda **Impostazioni** , specificate le impostazioni per gli argomenti (d
 
    Se attivato, blocca il contenuto generato dall&#39;utente durante la modifica in modalità Autore.
 
-* **Sposta la risposta selezionata in alto**Se questa opzione è selezionata, la prima risposta visualizzata è una risposta selezionata. Il valore predefinito è deselezionato.
+* **Porta in alto la risposta selezionata**
+
+   Se questa opzione è attivata, la prima risposta visualizzata è una risposta selezionata. Il valore predefinito è deselezionato.
 * **Visualizza badge**
 
    Se questa opzione è attivata, vengono visualizzati [i simboli](/help/communities/implementing-scoring.md) guadagnati e assegnati con il post di blog di un membro. Il valore predefinito è deselezionato.
@@ -149,7 +152,7 @@ Nella scheda **Impostazioni** , specificate le impostazioni per gli argomenti (d
 
 * **Abilita menzione**
 
-   Se abilitata, consente agli utenti della community registrati di identificare altri membri registrati (utilizzando nome, cognome, nome utente) e di assegnare loro tag utilizzando la sintassi comune @user-name. Gli utenti con tag ricevono notifiche relative alle loro menzioni.
+   Se abilitata, consente agli utenti della community registrati di identificare altri membri registrati (utilizzando nome, cognome, nome utente) e di assegnare loro un tag utilizzando la sintassi comune @user-name. Gli utenti con tag ricevono notifiche relative alle loro menzioni.
 
 * **Max menzioni**
 
@@ -157,7 +160,7 @@ Nella scheda **Impostazioni** , specificate le impostazioni per gli argomenti (d
 
 * **Pattern menzioni interfaccia**
 
-   Specificare la stringa di pattern consentita per assegnare un tag (@reference) all&#39;utente registrato in un post. Ad esempio, ~{{familyName}}{{givenName}}.
+   Specificare la stringa di pattern consentita per assegnare un tag (@reference) all&#39;utente registrato in un post. Esempio, `~{{familyName}}{{givenName}}`.
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
@@ -195,11 +198,15 @@ Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gl
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **Settings **, sono limitati in base agli spazi dei nomi selezionati.
+Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **Impostazioni** , sono limitati in base agli spazi dei nomi selezionati.
 
-* **Spazi dei nomi consentiti** Pertinenti se `Allow Tagging` è selezionato nella scheda **Settings **(Impostazioni). I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, ovvero tutti gli spazi dei nomi sono consentiti.
+* **Namespace consentiti**
 
-* **Limite** suggerimenti Consente di specificare il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore di **-**1 non indica limiti. Il valore predefinito è 0.
+   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
+
+* **Limite di suggerimenti**
+
+   Immettete il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore di **-**1 non indica limiti. Il valore predefinito è 0.
 
 #### Scheda Impostazioni ordinamento {#sort-settings-tab}
 
@@ -221,11 +228,11 @@ Nella scheda **Impostazioni** ordinamento, specificare in che modo i commenti in
 
 ### Identificazione delle risposte {#identifying-answers}
 
-Una risposta può essere contrassegnata come una risposta corretta o utile utilizzando il `Select Answer` pulsante. Una volta che una domanda è contrassegnata come Risposta, non è possibile selezionare un&#39;altra risposta finché la prima non è stata deselezionata utilizzando il `Unmark Chosen Answer`pulsante.
+Una risposta può essere contrassegnata come una risposta corretta o utile utilizzando il `Select Answer` pulsante. Una volta che una domanda è contrassegnata come Risposta, non è possibile selezionare un&#39;altra risposta fino a quando la prima non è stata deselezionata utilizzando il `Unmark Chosen Answer` pulsante.
 
 Una volta selezionata come risposta valida, è possibile deselezionarla utilizzando il `Unmark Chosen Answer` pulsante.
 
-Una volta che una risposta è selezionata come risposta valida, l&#39;indicazione che la domanda è stata `Answered`visualizzata accanto all&#39;argomento della domanda nella pagina QnA principale.
+Una volta selezionata una risposta come risposta valida, l&#39;indicazione che la domanda è stata `Answered` visualizzata accanto all&#39;argomento della domanda nella pagina QnA principale.
 
 #### Moderatori e amministratori {#moderators-and-administrators}
 
@@ -237,10 +244,10 @@ Possono anche identificare le risposte.
 
 Quando i visitatori del sito hanno effettuato l’accesso, a seconda della configurazione, possono:
 
-* pone una nuova domanda.
-* modificate o eliminate le domande che hanno creato.
-* contrassegnare domande o risposte di altri membri.
-* identificare le risposte alle domande che hanno creato.
+* Invia una nuova domanda.
+* Modificate o eliminate le domande che hanno creato.
+* Segnala domande o risposte di altri membri.
+* Identificare le risposte alle domande che hanno creato.
 
 #### Anonimo {#anonymous}
 
