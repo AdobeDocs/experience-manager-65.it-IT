@@ -1,18 +1,18 @@
 ---
-title: Gestione di risorse composte con riferimenti e risorse con più pagine in Adobe Experience Manager.
-description: Scoprite come creare riferimenti a risorse digitali da Adobe InDesign, Adobe Illustrator e Adobe Photoshop. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
+title: Gestisci risorse composte con riferimenti e risorse con più pagine in [!DNL Adobe Experience Manager].
+description: Scoprite come creare riferimenti a risorse digitali dall'interno di [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Gestione di risorse composte e multipagina {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] può identificare se un file caricato contiene riferimenti a risorse già presenti nella directory archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti alle risorse Experience Manager, viene creato un collegamento bidirezionale tra le risorse caricate e a cui viene fatto riferimento.
+[!DNL Adobe Experience Manager Assets] può identificare se un file caricato contiene riferimenti a risorse già presenti nella directory archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a [!DNL Experience Manager] risorse, viene creato un collegamento bidirezionale tra le risorse caricate e quelle a cui viene fatto riferimento.
 
-Oltre ad eliminare la ridondanza, il riferimento alle risorse nelle applicazioni Adobe Creative Cloud migliora la collaborazione e aumenta l&#39;efficienza e la produttività degli utenti.
+Oltre ad eliminare la ridondanza, il riferimento alle risorse nelle [!DNL Adobe Creative Cloud] applicazioni migliora la collaborazione e aumenta l&#39;efficienza e la produttività degli utenti.
 
 [!DNL Experience Manager Assets] supporta il riferimento bidirezionale. Potete trovare le risorse di riferimento nella pagina dei dettagli delle risorse del file caricato. Inoltre, potete visualizzare i file che fanno riferimento alla risorsa nella pagina dei dettagli della risorsa di riferimento.
 
@@ -25,7 +25,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 1. Utilizzando l’app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager, recuperate le risorse digitali nel file system locale. Andate alla posizione del file system della risorsa a cui desiderate fare riferimento.
 1. Trascinate la risorsa dalla cartella locale al [!DNL Illustrator] file.
 
-1. Salvate il [!DNL Illustrator] file nell&#39;unità montata o [caricatelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) nell&#39;archivio di Experience Manager.
+1. Salvate il [!DNL Illustrator] file nell&#39;unità montata o [caricatelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) nell&#39; [!DNL Experience Manager] archivio.
 
 1. Al termine del flusso di lavoro, passate alla pagina dei dettagli della risorsa. I riferimenti alle risorse digitali esistenti sono elencati in **[!UICONTROL Dipendenze]** nella colonna **[!UICONTROL Riferimenti]** .
 
@@ -39,7 +39,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 
    ![visualizzare i riferimenti di Experience Manager Assets nella colonna Riferimenti nei dettagli delle risorse](assets/asset-references.png)
 
-   *Figura: Riferimenti alle risorse nei dettagli delle risorse*
+   *Figura: Riferimenti alle risorse nei dettagli delle risorse.*
 
 ## Aggiungere risorse digitali come riferimenti in [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -86,7 +86,7 @@ Per le risorse supportate con formati con più pagine — File PDF, file AI [!DN
 
 La generazione di risorse secondarie è disabilitata per impostazione predefinita. Per attivare la generazione di risorse secondarie, effettuate le seguenti operazioni:
 
-1. Accedi a Experience Manager come amministratore. Accedere **[!UICONTROL a Strumenti > Flusso di lavoro > Modelli]**.
+1. Accedete come [!DNL Experience Manager] amministratore. Accedere **[!UICONTROL a Strumenti > Flusso di lavoro > Modelli]**.
 1. Selezionate il flusso di lavoro Aggiorna risorsa **** DAM e fate clic su **[!UICONTROL Modifica]**.
 1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungete il passaggio al flusso di lavoro. Fate clic su **[!UICONTROL Sincronizza]**.
 
