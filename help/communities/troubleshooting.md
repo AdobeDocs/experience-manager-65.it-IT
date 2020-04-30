@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -31,9 +31,7 @@ L&#39;utilizzo del dispatcher 4.1.6 o versione successiva risolverà il problema
 
 Se un forum è stato creato su CQ 5.4 e gli argomenti pubblicati e successivamente il sito è stato aggiornato ad AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore sulla pagina:
 
-carattere di pattern non valido &#39;a&#39; Impossibile inviare la richiesta a /content/demoforums/forum-test.html in questo server
-
-I registri contengono le seguenti informazioni:
+Carattere pattern non valido &#39;a&#39;: impossibile distribuire la richiesta a `/content/demoforums/forum-test.html` questo server e i file di registro contengono quanto segue:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -44,7 +42,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 Il problema è che la stringa di formato per com.day.cq.commons.date.RelativeTimeFormat è stata modificata tra 5.4 e 5.5 in modo che la stringa &quot;a&quot; per &quot;ago&quot; non venga più accettata.
 
-Pertanto, qualsiasi codice che utilizza l&#39;API RelativeTimeFormat() dovrebbe essere modificato
+Pertanto, qualsiasi codice che utilizza l&#39;API RelativeTimeFormat() deve essere modificato:
 
 * Da: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
@@ -59,9 +57,9 @@ Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.Relati
 
 Durante l&#39;avvio (non il primo, ma ogni altro dopo) nei registri potrebbe essere visualizzato il seguente avviso:
 
-* 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &quot;com.adobe.cq.social.handlebars.I18nHelper@15bac645&quot;
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` è stato sostituito da `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Questo avviso può essere ignorato in modo sicuro come jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All’avvio, viene sostituito da un helper [](handlebars-helpers.md#i-n)i18n specifico di AEM. Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
+Questo avviso può essere ignorato in modo sicuro in quanto `jknack.handlebars.Handlebars`, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All’avvio, viene sostituito da un helper [](handlebars-helpers.md#i-n)i18n specifico di AEM. Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
 
 ### Avvertenza nei registri: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
