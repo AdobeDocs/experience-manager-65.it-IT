@@ -1,18 +1,16 @@
 ---
-title: Modelli di risorse
+title: Modelli di risorse in [!DNL Risorse Adobe Experience Manager].
 description: Scopri i modelli di risorse in [!DNL Risorse Adobe Experience Manager] e come utilizzare i modelli di risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
 
 ---
 
 
 # Asset templates {#asset-templates}
 
-I modelli di risorse sono una classe speciale di risorse che semplificano la ridefinizione rapida dei contenuti visivamente avanzati per i supporti digitali e di stampa. Un modello di risorsa include due parti: la sezione relativa ai messaggi fissi e la sezione modificabile.
-
-La sezione relativa ai messaggi fissi può contenere contenuti proprietari, ad esempio il logo del marchio e le informazioni sul copyright, che sono disattivati per la modifica. La sezione modificabile può contenere contenuti visivi e testuali in campi che possono essere modificati per personalizzare i messaggi.
+I modelli di risorse sono una classe speciale di risorse che semplificano la ridefinizione rapida dei contenuti visivamente avanzati per i supporti digitali e di stampa. Un modello di risorsa include due parti: la sezione relativa ai messaggi fissi e la sezione modificabile. La sezione relativa ai messaggi fissi può contenere contenuti proprietari, ad esempio il logo del marchio e le informazioni sul copyright, che sono disattivati per la modifica. La sezione modificabile può contenere contenuti visivi e testuali in campi che possono essere modificati per personalizzare i messaggi.
 
 La flessibilità di apportare modifiche limitate e la protezione del digital signage rende i modelli di risorse ideali per l’adattamento e la distribuzione rapida dei contenuti come artefatti di contenuto per varie funzioni. La ridefinizione dei contenuti consente di ridurre i costi per la gestione dei canali digitali e per la stampa e di offrire esperienze complete e coerenti su questi canali.
 
@@ -20,25 +18,19 @@ Gli esperti di marketing possono archiviare e gestire i modelli all&#39;interno 
 
 Anche se i modelli di risorse sono principalmente [!DNL Adobe InDesign] file, l’esperienza acquisita non [!DNL Adobe InDesign] rappresenta una barriera alla creazione di artefatti stellari. Non è necessario mappare i campi del [!DNL Adobe InDesign] modello con i campi del prodotto che altrimenti sarebbero necessari per la creazione di cataloghi. Potete modificare i modelli in modalità WYSIWYG direttamente sull&#39;interfaccia Web. Tuttavia, per [!DNL Adobe InDesign] elaborare le modifiche dovete prima configurare [!DNL Experience Manager Assets] per l’integrazione con [!DNL Adobe InDesign Server].
 
-La possibilità di modificare [!DNL Adobe InDesign] i modelli dall&#39;interfaccia Web favorisce una maggiore collaborazione tra il personale Creative e Marketing, riducendo al contempo il tempo necessario per immettere sul mercato le iniziative di promozione locali.
+La possibilità di modificare [!DNL Adobe InDesign] i modelli dall&#39;interfaccia Web favorisce una maggiore collaborazione tra il personale creativo e di marketing. L&#39;aumento della velocità dei contenuti riduce il time-to-market per le garanzie di marketing.
 
-Con i modelli di risorse potete effettuare le seguenti operazioni:
+Con i modelli di risorse potete ottenere quanto segue:
 
-* Modificare i campi dei modelli modificabili dall&#39;interfaccia Web
-* Controllare lo stile di base del testo, ad esempio dimensione del font, stile e tipo a livello di tag
-* Modificare le immagini all’interno del modello utilizzando il selettore dei contenuti
-* Anteprima delle modifiche apportate al modello
-* Unire più file modello per creare un artefatto con più pagine
+* Modificare i campi dei modelli modificabili dall&#39;interfaccia Web.
+* Controllare lo stile di base del testo, ad esempio dimensione del font, stile e tipo a livello di tag.
+* Modificare le immagini all’interno del modello utilizzando il selettore dei contenuti.
+* Anteprima delle modifiche apportate al modello.
+* Unisci più file modello per creare un artefatto con più pagine.
 
 Quando scegli un modello per la tua offerta, [!DNL Experience Manager Assets] crea una copia del modello che puoi modificare. Il modello originale viene mantenuto, in modo da garantire che il digital signage rimanga intatto e possa essere riutilizzato per garantire la coerenza del marchio.
 
-Potete esportare il file aggiornato all’interno della cartella principale nei seguenti formati:
-
-* INDD
-* PDF
-* JPG
-
-È inoltre possibile scaricare l&#39;output in questi formati nel sistema locale.
+Potete esportare il file aggiornato all’interno della cartella principale nei formati INDD, PDF o JPG. È inoltre possibile scaricare l&#39;output in questi formati nel file system locale.
 
 ## Creare una garanzia {#creating-a-collateral}
 
@@ -70,13 +62,13 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   In alternativa, chiudete la finestra di dialogo e individuate la cartella nella pagina Modelli con cui avete iniziato a visualizzare la brochure creata. Il tipo di materiale collaterale viene visualizzato sulla relativa miniatura nella vista a schede. Ad esempio, in questo caso, la brochure viene visualizzata sulla miniatura.
+   In alternativa, chiudete la finestra di dialogo e individuate la cartella nella pagina Modelli con cui avete iniziato a visualizzare la brochure creata. Il tipo di materiale collaterale viene visualizzato sulla relativa miniatura nella vista a schede. Ad esempio, in questo caso, la parola [!UICONTROL Brochure] viene visualizzata sulla miniatura.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Modificare un materiale collaterale {#editing-a-collateral}
 
-È possibile modificare un materiale collaterale immediatamente dopo averlo creato. In alternativa, potete aprirlo dalla pagina Modelli o dalla pagina della risorsa.
+È possibile modificare un materiale collaterale immediatamente dopo averlo creato. In alternativa, potete aprirlo dalla pagina [!UICONTROL Modelli] o dalla pagina della risorsa.
 
 1. Per aprire il materiale collaterale per la modifica, effettuate una delle seguenti operazioni:
 
@@ -100,13 +92,13 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    >[!NOTE]
    >
-   >Accertatevi che l’ [!DNL Experience Manager] istanza sia integrata con un [!DNL InDesign Server] dispositivo che consenta [!DNL Experience Manager Assets] di estrarre i dati dal modello InDesign e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [Integrazione di Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
+   >Accertatevi che l’ [!DNL Experience Manager] istanza sia integrata con un [!DNL InDesign Server] dispositivo che consenta [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [Integrazione di Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
 
 1. Per modificare il testo in un campo modificabile, fare clic sul campo di testo nell&#39;elenco dei campi modificabili e modificare il testo nel campo.
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   È possibile modificare le proprietà del testo, ad esempio lo stile del font, il colore e le dimensioni utilizzando le opzioni disponibili.
+   È possibile modificare le proprietà del testo, ad esempio stile del font, colore e dimensione utilizzando le opzioni disponibili.
 
 1. Fate clic su **[!UICONTROL Anteprima]** per visualizzare l’anteprima delle modifiche di testo.
 
@@ -201,3 +193,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
    >[!NOTE]
    >
    >Non è possibile modificare un materiale collaterale unito in un secondo momento o utilizzarlo per creare altre risorse.
+
+## Best practice e limitazioni {#best-practices-limitations-tips}
+
+* L&#39;editor AEM InDesign funziona a livello di tag e tutto il testo all&#39;interno di un singolo tag viene considerato una singola entità. Per mantenere la formattazione del testo e gli stili durante la modifica, assegnate separatamente i tag a ciascun paragrafo (o testo con stili diversi).
