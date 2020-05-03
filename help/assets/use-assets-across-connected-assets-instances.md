@@ -3,7 +3,7 @@ title: Utilizza le risorse collegate per condividere le risorse DAM nel flusso d
 description: Utilizzate le risorse disponibili in una distribuzione remota di [!DNL Risorse Adobe Experience Manager] quando create le pagine Web in un'altra distribuzione del sito Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 2cdcea028814b40fb178e63f583939df27a46cad
 
 ---
 
@@ -46,12 +46,12 @@ Di seguito sono descritti i diversi ruoli coinvolti nella configurazione e nell�
 
 | Ruolo | Ambito | Gruppo di utenti | Nome utente nella procedura dettagliata | Requisito |
 |---|---|---|---|---|
-| [!DNL Sites] administrator | Locale | Amministratore Experience Manager | `admin` | Set up Experience Manager, configure integration with the remote [!DNL Assets] deployment. |
-| Utente DAM | Locale | Autore | `ksaner` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Locale | Author (with read access on the remote DAM and author access on local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando Content Finder e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
-| [!DNL Assets] administrator | Remoto | Amministratore Experience Manager | `admin` su Remote Experience Manager | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
-| Utente DAM | Remoto | Autore | `ksaner` su Remote Experience Manager | Ruolo di authoring nella distribuzione remota di Experience Manager. Cercare e sfogliare le risorse in Risorse collegate mediante Content Finder. |
-| Distributore DAM (utente tecnico) | Remoto | Creatori di pacchetti e autori di siti | `ksaner` su Remote Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Questo ruolo non è lo stesso dei due ruoli `ksaner` precedenti e appartiene a un gruppo di utenti diverso. |
+| [!DNL Sites] administrator | Locale | Experience Manager `administrators` | `admin` | Set up Experience Manager, configure integration with the remote [!DNL Assets] deployment. |
+| Utente DAM | Locale | `Authors` | `ksaner` | Utilizzato per visualizzare e duplicare le risorse recuperate in `/content/DAM/connectedassets/`. |
+| [!DNL Sites] author | Locale | `Authors` (con accesso in lettura sul DAM remoto e accesso dell&#39;autore sul locale [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Gli autori ricercano e sfogliano le risorse in DAM remoto utilizzando Content Finder e utilizzando le immagini richieste nelle pagine web locali. Vengono utilizzate le credenziali dell’utente `ksaner` di DAM. |
+| [!DNL Assets] administrator | Remoto | Experience Manager `administrators` | `admin` su Remote Experience Manager | Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing). |
+| Utente DAM | Remoto | `Authors` | `ksaner` su Remote Experience Manager | Ruolo di authoring nella distribuzione remota di Experience Manager. Cercare e sfogliare le risorse in Risorse collegate mediante Content Finder. |
+| Distributore DAM (utente tecnico) | Remoto | `Authors` | `ksaner` su Remote Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Questo ruolo non è lo stesso dei due ruoli `ksaner` precedenti e appartiene a un gruppo di utenti diverso. |
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -151,7 +151,7 @@ Utilizza la configurazione precedente per provare l’esperienza di authoring e 
 
 Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa locale, ad eccezione del fatto che i metadati associati non possono essere modificati.
 
-## Limitazioni    {#limitations}
+## Limitazioni  {#limitations}
 
 **Autorizzazioni e gestione delle risorse**
 
