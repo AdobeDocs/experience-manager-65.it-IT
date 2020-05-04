@@ -3,7 +3,7 @@ title: Profili di metadati per personalizzare i requisiti di metadati delle riso
 description: Informazioni sui profili di metadati per le risorse. Scoprite come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ---
 
@@ -54,7 +54,6 @@ Un profilo di metadati consente di applicare i metadati predefiniti alle risorse
 
 1. Toccate o fate clic su **[!UICONTROL Fine]**. Il profilo metadati viene aggiunto all’elenco dei profili nella pagina **[!UICONTROL Profili]** metadati.<br>
 
-
    ![Profilo metadati aggiunto nella pagina Profili metadati](assets/MetadataProfiles-page.png)
 
 ## Copiare un profilo di metadati {#copying-a-metadata-profile}
@@ -73,7 +72,7 @@ Un profilo di metadati consente di applicare i metadati predefiniti alle risorse
 
 1. Nella pagina **[!UICONTROL Profili]** metadati, selezionate un profilo da eliminare.
 
-   ![chlimage_1-206](assets/chlimage_1-488.png)
+   ![chlimage_1-205](assets/chlimage_1-488.png)
 
 1. Toccate[] **[!UICONTROL Elimina profili]** metadati nella barra degli strumenti.
 1. Nella finestra di dialogo, fare clic su **[!UICONTROL Elimina]** per confermare l’operazione di eliminazione. Il profilo di metadati viene eliminato dall’elenco.
@@ -128,13 +127,13 @@ Oltre ad applicare un profilo a una cartella, puoi applicarne uno a livello glob
 
 Potete rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
-**Per applicare un profilo di metadati a livello globale, effettuate una delle seguenti operazioni**
+Per applicare un profilo di metadati a livello globale, effettuate le seguenti operazioni:
 
 * Individuate `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applicate il profilo appropriato e toccate **[!UICONTROL Salva]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungete la proprietà `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` e toccate **Salva tutto**.
+* In CRXDE Lite, passare al seguente nodo: `/content/dam/jcr:content`. Aggiungete la proprietà `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` e fate clic su **[!UICONTROL Salva tutto]**.
 
    ![chlimage_1-210](assets/chlimage_1-493.png)
 
@@ -157,6 +156,10 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 1. Toccate il logo AEM, individuate **[!UICONTROL Risorse]** e quindi la cartella da cui desiderate rimuovere un profilo di metadati.
 1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+
+## Limitazioni e best practice {#limitations-best-practices-tips}
+
+* È possibile che siano già presenti profili di metadati preesistenti prima dell’aggiornamento alla versione [!DNL Experience Manager] 6.5. Dopo l’aggiornamento, se applicate un profilo simile in [!UICONTROL Proprietà] cartella nella scheda Profili  metadati, i campi dei moduli di metadati non vengono visualizzati. Tuttavia, se applicate un profilo di metadati appena creato, i campi del modulo vengono visualizzati ma non sono disponibili come previsto. Non si verificano perdite di funzionalità, ma se si desidera visualizzare i campi modulo (non disponibili), è necessario modificare e salvare i profili di metadati esistenti.
 
 >[!MORELIKETHIS]
 >
