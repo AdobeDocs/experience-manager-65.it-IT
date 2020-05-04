@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -33,7 +33,7 @@ Lo sviluppo di applicazioni a pagina singola in AEM presuppone che lo sviluppato
 * **[Portabilità](/help/sites-developing/spa-architecture.md#portability)- Come per tutti i componenti,**i componenti devono essere costruiti per essere il più possibile portatili. La SPA deve essere realizzata con componenti portabili e riutilizzabili.
 * **[AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**- Lo sviluppatore front-end crea componenti e ne possiede la struttura interna, ma si basa su AEM per definire la struttura del contenuto del sito.
 * **[Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)**dinamico - Il rendering deve essere dinamico.
-* **[Routing](#dynamic-routing)**dinamico - L&#39;SPA è responsabile del routing e AEM lo ascolta e recupera in base ad esso. Anche l&#39;indirizzamento deve essere dinamico.
+* **[Routing](#dynamic-routing)dinamico -**L&#39;SPA è responsabile del routing e AEM lo ascolta e recupera in base ad esso. Anche l&#39;indirizzamento deve essere dinamico.
 
 Se tenete presenti questi principi nello sviluppo dell’app, sarà quanto più flessibile e affidabile possibile, consentendo al contempo tutte le funzionalità di authoring AEM supportate.
 
@@ -41,7 +41,7 @@ Se non è necessario supportare le funzioni di authoring di AEM, potrebbe essere
 
 ### Portabilità {#portability}
 
-Come per lo sviluppo di qualsiasi componente, i componenti devono essere progettati in modo da massimizzarne la portabilità. Eventuali schemi che contrastino con la portabilità o riutilizzabilità dei componenti dovrebbero essere evitati per garantire compatibilità, flessibilità e manutenibilità in futuro.
+Come per lo sviluppo di qualsiasi componente, i componenti devono essere progettati in modo da massimizzarne la portabilità. Eventuali schemi che si oppongono alla portabilità o alla riutilizzabilità dei componenti dovrebbero essere evitati per garantire compatibilità, flessibilità e manutenibilità in futuro.
 
 La SPA risultante deve essere realizzata con componenti altamente portatili e riutilizzabili.
 
@@ -63,9 +63,9 @@ Come per il rendering, anche tutti i routing devono essere dinamici. In AEM, [l�
 
 Qualsiasi routing statico funziona in base al [principio di portabilità](/help/sites-developing/spa-architecture.md#portability) e limita l’autore in quanto non è compatibile con le funzioni di authoring dei contenuti di AEM. Ad esempio, con l&#39;indirizzamento statico, se l&#39;autore del contenuto desidera modificare una route o una pagina, deve chiedere allo sviluppatore front-end di farlo.
 
-## Archetype Maven per SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+## AEM Project Archetype {#aem-project-archetype}
 
-Adobe consiglia di sfruttare il [Maven Archetype per SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) per avviare un progetto SPA personalizzato per AEM.
+Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
 ## Modelli di progettazione SPA {#spa-design-models}
 
@@ -92,7 +92,7 @@ Ci possono essere tuttavia dei casi in cui ciò non è del tutto necessario. La 
   </tr>
   <tr>
    <td>Il progetto sfrutta appieno l’SDK dell’editor SPA e i componenti frontend sono sviluppati come libreria e la struttura del contenuto dell’app è delegata ad AEM.</td>
-   <td><p>L'app è riutilizzabile e portatile.</p> <p>L'autore del contenuto può modificare l'app utilizzando l'esperienza di creazione del contenuto di AEM.<br /> </p> <p>L'SPA è compatibile con l'editor modelli.</p> </td>
+   <td><p>L'app è riutilizzabile e portatile.</p> <p>L'autore del contenuto può modificare l'app utilizzando l'esperienza di authoring dei contenuti di AEM.<br /> </p> <p>L'SPA è compatibile con l'editor modelli.</p> </td>
    <td><p>Lo sviluppatore non ha il controllo della struttura dell'app e della parte di contenuto delegata ad AEM.</p> <p>Lo sviluppatore può comunque riservare aree dell’app per il contenuto che non deve essere creato tramite AEM.</p> </td>
   </tr>
  </tbody>
@@ -147,7 +147,7 @@ Di seguito è riportato un profilo dei passi che uno sviluppatore front-end deve
 
    Gli esempi `Page` e `ResponsiveGrid` sono buoni di classi che estendono la base `Container`.
 
-1. **Definire il componente`EditConfig`come parametro`MapTo()`**
+1. **Definite il componente come`EditConfig`parametro in`MapTo()`**
 
    Questo parametro è necessario per indicare all’editor in che modo il componente deve essere nominato fino a quando non viene ancora eseguito il rendering o non ha contenuto da riprodurre.
 
@@ -174,8 +174,8 @@ Questi blocchi di codice illustrano come i componenti React e Angular non necess
 
 L&#39; `MapTo` aiutante è la &quot;colla&quot; che permette di combinare i componenti back-end e front-end:
 
-* Indica al contenitore JS (o sistema di paragrafi JS) quale componente JS è responsabile per il rendering di ciascuno dei componenti presenti nel JSON.
-* Aggiunge all’HTML un attributo di dati HTML di cui il componente JS esegue il rendering, in modo che l’editor SPA sappia quale finestra di dialogo visualizzare all’autore quando modifica il componente.
+* Indica al contenitore JS (o al sistema di paragrafi JS) quale componente JS è responsabile per il rendering di ciascuno dei componenti presenti nel JSON.
+* Aggiunge un attributo di dati HTML al codice HTML rappresentato dal componente JS, in modo che l’editor SPA sappia quale finestra di dialogo visualizzare all’autore quando modifica il componente.
 
 Per ulteriori informazioni sull’utilizzo `MapTo` e la creazione di app SPA per AEM in generale, consulta la Guida introduttiva per il framework scelto.
 
@@ -215,7 +215,7 @@ L’architettura generale di AEM, compresi gli ambienti di sviluppo, authoring e
 
    Il dispatcher funge da livello di caching di AEM per i visitatori del sito.
 
-   * Le richieste vengono elaborate in modo simile a come si trovano in AEM Author, ma non vi sono richieste di informazioni sulla pagina, perché sono necessarie solo per l&#39;editor.
+   * Le richieste vengono elaborate in modo simile a come si trovano in AEM Author, ma non vi sono richieste di informazioni sulla pagina, poiché ciò è necessario solo per l&#39;editor.
    * Javascript, CSS, JSON e HTML sono memorizzati nella cache, ottimizzando la pagina per una distribuzione rapida.
 
 >[!NOTE]
