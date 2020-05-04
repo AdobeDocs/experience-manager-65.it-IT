@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
 
 ---
 
@@ -36,13 +36,9 @@ che aiutano uno sviluppatore a:
 >
 >* È disponibile solo nell’interfaccia touch (durante la modifica delle pagine).
 >* Non è disponibile sui dispositivi mobili o su piccole finestre sul desktop (a causa di limitazioni di spazio).
->
->    * Questo si verifica quando la larghezza è inferiore a 1024 px.
->
->* Richiede autorizzazioni/privilegi appropriati:
->
->    * L&#39;accesso alla modalità Sviluppatore è concesso agli utenti che dispongono dell&#39;accesso in scrittura su `/apps`.
->
+   >   * Questo si verifica quando la larghezza è inferiore a 1024 px.
+>* È disponibile solo per gli utenti membri del `administrators` gruppo.
+
 
 >[!CAUTION]
 >
