@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -118,11 +118,11 @@ In realtà, la creazione dell&#39;app si basa su [Webpack](https://webpack.js.or
 
 Una volta creato, il pacchetto può essere caricato in un’istanza AEM.
 
-### Archetype Maven per SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+### AEM Project Archetype {#aem-project-archetype}
 
-Adobe consiglia di sfruttare il [Maven Archetype per SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) per avviare un progetto SPA personalizzato per AEM.
+Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
-## Struttura applicazione {#application-structure}
+## Struttura dell&#39;applicazione {#application-structure}
 
 L’inclusione delle dipendenze e la creazione dell’app come descritto in precedenza vi lasceranno con un pacchetto SPA funzionante che potete caricare nell’istanza di AEM.
 
@@ -159,7 +159,7 @@ Quando un’istanza del componente viene creata in modo statico utilizzando il m
 
 ### App.js {#app-js}
 
-Rendendo l&#39;app, `index.js` le chiamate `App.js`, che vengono visualizzate in una versione semplificata per concentrarvi sul contenuto importante.
+Eseguendo il rendering dell&#39;app, `index.js` le chiamate `App.js`, che vengono visualizzate in una versione semplificata per concentrarvi sul contenuto importante.
 
 ```
 import {Page, withModel } from '@adobe/cq-react-editable-components';
@@ -271,9 +271,9 @@ Per ulteriori informazioni, consultate il documento [](/help/sites-developing/sp
 
 È necessario che i componenti all’interno di un’applicazione a pagina singola condividano informazioni. Ci sono diversi modi consigliati di fare questo, elencati come segue in ordine crescente di complessità.
 
-* **** Opzione 1: Centralizzare la logica e trasmettere ai componenti necessari, ad esempio utilizzando React Context.
-* **** Opzione 2: Condividere gli stati dei componenti utilizzando una libreria di stati come Redux.
-* **** Opzione 3: Sfruttare la gerarchia di oggetti personalizzando ed estendendo il componente contenitore.
+* **Opzione 1:** Centralizzate la logica e la trasmissione ai componenti necessari, ad esempio utilizzando React Context.
+* **Opzione 2:** Condividere gli stati dei componenti utilizzando una libreria di stati come Redux.
+* **Opzione 3:** Sfruttare la gerarchia di oggetti personalizzando ed estendendo il componente contenitore.
 
 ## Passaggi successivi {#next-steps}
 
