@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -33,6 +33,11 @@ Grazie al contratto semplice e leggero richiesto da AEM e stabilito tra SPA e SP
 Questo articolo illustra l’esempio del componente meteo presente nell’esempio di SPA di We.Retail Journal.
 
 Prima di leggere questo articolo, è necessario avere familiarità con la [struttura di un&#39;applicazione SPA per AEM](/help/sites-developing/spa-getting-started-react.md) .
+
+>[!CAUTION]
+>Questo documento utilizza l&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
+>
+>Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
 ## Componente Meteo {#the-weather-component}
 
@@ -56,7 +61,7 @@ Il cambiamento è persistente e il componente si aggiorna automaticamente con i 
 
 ### Implementazione dei componenti del tempo {#weather-component-implementation}
 
-La componente meteo è in realtà basata su un componente React disponibile al pubblico, denominato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal
+La componente meteo è in realtà basata su un componente React disponibile al pubblico, chiamato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal
 
 Di seguito sono riportati alcuni esempi della documentazione NPM relativa all’utilizzo del componente React Open Weather.
 
