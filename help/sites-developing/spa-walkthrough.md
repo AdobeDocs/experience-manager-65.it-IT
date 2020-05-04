@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -39,6 +39,12 @@ La procedura dettagliata si basa sulle funzionalità standard di AEM e sull’ap
 * [AEM versione 6.4 con service pack 2 o successiva
    ](/help/release-notes/sp-release-notes.md)
 * [Installa l&#39;app di esempio We.Retail Journal disponibile su GitHub qui.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
+>[!CAUTION]
+>
+>Questo documento utilizza l&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
+>
+>Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
 
 ### Che cos&#39;è un SPA? {#what-is-a-spa}
 
@@ -280,4 +286,4 @@ Ora che hai compreso l&#39;esperienza di editing SPA in AEM e come l&#39;SPA si 
 
 * [La Guida introduttiva alle app SPA in AEM](/help/sites-developing/spa-getting-started-react.md) illustra come è possibile creare un&#39;app SPA di base per l&#39;utilizzo con l&#39;editor SPA in AEM
 * [Panoramica](/help/sites-developing/spa-overview.md) dell&#39;editor SPA approfondisce il modello di comunicazione tra AEM e l&#39;SPA.
-* [Lo sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md) descrive come coinvolgere gli sviluppatori front-end nello sviluppo di un&#39;SPA per AEM e come gli SPA interagiscono con l&#39;architettura di AEM.
+* [Lo sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md) descrive come coinvolgere gli sviluppatori front-end nello sviluppo di una SPA per AEM e come le SPA interagiscono con l’architettura di AEM.
