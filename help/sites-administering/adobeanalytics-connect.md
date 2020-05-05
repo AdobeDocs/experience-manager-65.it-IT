@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -20,8 +20,8 @@ source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
 
 Per tenere traccia dei dati Web dalle pagine AEM in Adobe Analytics, crea una configurazione Adobe Analytics Cloud Services e un framework Adobe Analytics:
 
-* **** Configurazione Adobe Analytics: Informazioni sull&#39;account Adobe Analytics. La configurazione di Adobe Analytics consente ad AEM di connettersi ad Adobe Analytics. Create una configurazione Adobe Analytics per ciascun account che utilizzate.
-* **** Adobe Analytics Framework: Un set di mappature tra le proprietà della suite di rapporti di Adobe Analytics e le variabili CQ. Utilizzate un framework per configurare il modo in cui i dati del sito Web compaiano nei rapporti di Adobe Analytics. I framework sono associati a una configurazione di Adobe Analytics. Potete creare più framework per ciascuna configurazione.
+* **Configurazione Adobe Analytics:** Informazioni sull&#39;account Adobe Analytics. La configurazione di Adobe Analytics consente ad AEM di connettersi ad Adobe Analytics. Create una configurazione di Adobe Analytics per ciascun account che utilizzate.
+* **Adobe Analytics Framework:** Un set di mappature tra le proprietà della suite di rapporti di Adobe Analytics e le variabili CQ. Utilizzate un framework per configurare il modo in cui i dati del sito Web compaiano nei rapporti di Adobe Analytics. I framework sono associati a una configurazione di Adobe Analytics. Potete creare più framework per ciascuna configurazione.
 
 Quando associate una pagina Web a un framework, il framework esegue il tracciamento di tale pagina e dei relativi discendenti. Le visualizzazioni di pagina possono quindi essere recuperate da Adobe Analytics e visualizzate nella console Siti.
 
@@ -29,12 +29,12 @@ Quando associate una pagina Web a un framework, il framework esegue il tracciame
 
 ### Adobe Analytics Account {#adobe-analytics-account}
 
-Per tenere traccia dei dati AEM in Adobe Analytics, devi disporre di un account Adobe Marketing Cloud Adobe Analytics valido.
+Per tenere traccia dei dati AEM in Adobe Analytics, è necessario disporre di un account Adobe Analytics valido per Adobe Marketing Cloud.
 
 L&#39;account Adobe Analytics deve:
 
 * Disporre di privilegi di **amministratore**
-* Da assegnare al gruppo di utenti **Web Service Access** .
+* Da assegnare al gruppo di utenti Accesso **ai servizi** Web.
 
 >[!CAUTION]
 >
@@ -85,7 +85,7 @@ Utilizzate la console [Web per configurare il bundle](/help/sites-deploying/conf
 >
 >In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
 
 ## Configuring for the Activity Map {#configuring-for-the-activity-map}
 
@@ -93,13 +93,13 @@ Utilizzate la console [Web per configurare il bundle](/help/sites-deploying/conf
 >
 >In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/it/IT/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
 
 ## Creazione di un framework Adobe Analytics {#creating-a-adobe-analytics-framework}
 
 Per l’ID Suite di rapporti (RSID) in uso, potete controllare quali istanze del server (autore, pubblicazione o entrambe) contribuiscono ai dati della suite di rapporti:
 
-* **Tutti**: Le informazioni dell’istanza di creazione e pubblicazione popolano la suite di rapporti.
+* **Tutti**: Le informazioni provenienti sia dall’istanza di creazione che dall’istanza di pubblicazione popolano la Suite di rapporti.
 * **Autore**: Solo le informazioni dell&#39;istanza di creazione popolano la suite di rapporti.
 * **Pubblica**: Solo le informazioni dell&#39;istanza di pubblicazione popolano la suite di rapporti.
 
@@ -110,7 +110,7 @@ Per l’ID Suite di rapporti (RSID) in uso, potete controllare quali istanze del
 >Ad esempio, un framework è configurato per utilizzare la suite di rapporti *remota* e l&#39;autore è l&#39;istanza server selezionata. Quando le pagine vengono pubblicate insieme al framework, le chiamate ad Adobe Analytics continuano, ma queste chiamate non contengono il RSID. Solo le chiamate dall’istanza di creazione includono l’RSID.
 
 1. Utilizzando **Navigazione**, seleziona **Strumenti**, Servizi **** cloud, quindi Servizi **cloud** legacy.
-1. Scorri fino ad **Adobe Analytics** e fai clic su **[+]** accanto a Configurazioni **** disponibili.
+1. Scorri fino ad **Adobe Analytics** e seleziona **Mostra configurazioni**.
 1. Fai clic sul collegamento **[+]** accanto alla configurazione di Adobe Analytics.
 
 1. Nella finestra di dialogo **Crea framework** :
@@ -166,19 +166,19 @@ Per iniziare, aprite il pannello. Premere la freccia rivolta verso il basso acca
 
 ## Associazione di una pagina a un framework Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Quando una pagina è associata a un framework Adobe Analytics, invia dati ad Adobe Analytics al caricamento della pagina. Le variabili compilate dalla pagina vengono mappate e recuperate dalle variabili di Adobe Analytics nel framework. Ad esempio, le visualizzazioni di pagina vengono recuperate da Adobe Analytics.
+Quando una pagina è associata a un framework Adobe Analytics, invia i dati ad Adobe Analytics al caricamento della pagina. Le variabili compilate dalla pagina vengono mappate e recuperate dalle variabili di Adobe Analytics nel framework. Ad esempio, le visualizzazioni di pagina vengono recuperate da Adobe Analytics.
 
 I discendenti della pagina ereditano l&#39;associazione con il framework. Ad esempio, quando associate la pagina principale del sito a una struttura, tutte le pagine del sito sono associate alla struttura.
 
 1. Dalla console **Siti** , selezionate la pagina da impostare con il tracciamento.
-1. Aprite le Proprietà **[](/help/sites-authoring/editing-page-properties.md)**pagina direttamente dalla console o dall’editor pagina.
+1. Aprite le Proprietà **[](/help/sites-authoring/editing-page-properties.md)**pagina, direttamente dalla console o dall’editor pagina.
 1. Aprite la scheda** Cloud Services*.
 
 1. Utilizzate il menu a discesa **Aggiungi configurazione** per selezionare **Adobe Analytics** dalle opzioni disponibili. Se l&#39;ereditarietà è collocata, è necessario disattivarla prima che il selettore diventi disponibile.
 
 1. Il selettore a discesa per **Adobe Analytics** verrà aggiunto alle opzioni disponibili. Utilizzate questa opzione per selezionare la configurazione del framework richiesta.
 
-1. Selezionate **Salva e chiudi**.
+1. Select **Save &amp; Close**.
 1. **[Pubblicate](/help/sites-authoring/publishing-pages.md)**la pagina per attivare la pagina ed eventuali configurazioni/file connessi.
 1. Il passo finale consiste nel visitare la pagina nell’istanza di pubblicazione e cercare una parola chiave (ad esempio melanzana) utilizzando il componente **Ricerca** .
 1. Puoi quindi controllare le chiamate effettuate ad Adobe Analytics utilizzando uno strumento appropriato; ad esempio, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
