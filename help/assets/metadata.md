@@ -1,9 +1,12 @@
 ---
-title: Gestisci i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
-description: Scopri i tipi di metadati e come [!DNL Risorse Adobe Experience Manager] consente di gestire i metadati per le risorse per facilitarne la categorizzazione e l’organizzazione. [!DNL Experience Manager] consente di organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
+title: Consente di gestire i metadati delle risorse digitali in [!DNL Adobe Experience Manager].
+description: Scoprite i tipi di metadati e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] come organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c32e64d4921d7239d07f57ab9e12c744758faa0a
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ I metadati sono la raccolta di tutti i dati disponibili per una risorsa, ma non 
 * Nome della cartella in cui è contenuta.
 * Risorse correlate o tag applicati.
 
-Queste proprietà sono le proprietà di metadati di base che Experience Manager può gestire per le risorse, consentendo agli utenti di visualizzare tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte di recente.
+Le proprietà di metadati di base che [!DNL Experience Manager] possono essere gestite per le risorse, permettono agli utenti di visualizzare tutte le risorse. Ad esempio, ordinare le risorse per data dell’ultima modifica è utile quando si tenta di individuare le risorse aggiunte di recente.
 
 Puoi aggiungere più dati di alto livello alle risorse digitali, ad esempio:
 
@@ -90,7 +93,7 @@ I tag ID3 sono progettati per il formato di file MP3. Ulteriori informazioni sui
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) è il formato di metadati più diffuso utilizzato nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e di un valore di metadati. Le coppie nome-valore dei metadati sono anche denominate tag, da non confondere con i tag in [!DNL Experience Manager].  Le moderne fotocamere digitali creano i metadata Exif e il software di grafica moderna lo supportano. Il formato Exif è il denominatore più basso per la gestione dei metadati, in particolare per le immagini.
+Exchangeable image file format (Exif) è il formato di metadati più diffuso utilizzato nella fotografia digitale. Fornisce un modo per incorporare un vocabolario fisso di proprietà di metadati in molti formati di file, come JPEG, TIFF, RIFF e WAV. Exif memorizza i metadati come coppie di un nome di metadati e di un valore di metadati. Le coppie nome-valore dei metadati sono anche denominate tag, da non confondere con i tag in [!DNL Experience Manager]. Le moderne fotocamere digitali creano i metadata Exif e il software di grafica moderna lo supportano. Il formato Exif è il denominatore più basso per la gestione dei metadati, in particolare per le immagini.
 
 Un importante limite di Exif è dato dal fatto che alcuni formati di file immagine popolari come BMP, GIF o PNG non lo supportano.
 
@@ -98,7 +101,7 @@ I campi di metadati definiti da Exif sono generalmente di natura tecnica e sono 
 
 ### Altri metadati {#other-metadata}
 
-Altri metadati che possono essere incorporati dai file sono Microsoft Word, PowerPoint, Excel e così via.
+Altri metadati che possono essere incorporati dai file sono [!DNL Microsoft Word], [!DNL PowerPoint][!DNL Excel], e così via.
 
 ## Schemi metadati {#metadata-schemata}
 
