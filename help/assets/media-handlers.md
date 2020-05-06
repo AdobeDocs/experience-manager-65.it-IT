@@ -3,7 +3,10 @@ title: Elaborazione delle risorse tramite gestori e flussi di lavoro di contenut
 description: Scopri i gestori di contenuti multimediali e come utilizzare i flussi di lavoro per eseguire attività sulle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 4%
 
 ---
 
@@ -448,7 +451,7 @@ Le seguenti conversioni possono essere eseguite e memorizzate automaticamente in
 
 >[!NOTE]
 >
->Sui sistemi non Windows, lo strumento FFMpeg restituisce un errore durante la generazione di rappresentazioni per una risorsa video con un&#39;unica citazione (&#39;) nel nome del file. Se il nome del file video include un’unica citazione, rimuoverla prima di caricare in AEM.
+>Sui sistemi non Windows, lo strumento FFmpeg restituisce un errore durante la generazione di rappresentazioni per una risorsa video con un&#39;unica citazione (&#39;) nel nome del file. Se il nome del file video include un’unica citazione, rimuoverla prima di caricare in AEM.
 
 Il `CommandLineProcess` processo esegue le seguenti operazioni nell&#39;ordine in cui sono elencate:
 
