@@ -1,9 +1,12 @@
 ---
-title: Modelli di risorse in [!DNL Risorse Adobe Experience Manager].
-description: Scopri i modelli di risorse in [!DNL Risorse Adobe Experience Manager] e come utilizzare i modelli di risorse per creare materiale collaterale di marketing.
+title: Modelli di risorse in [!DNL Adobe Experience Manager Assets].
+description: Scopri i modelli delle risorse [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli delle risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1553'
+ht-degree: 0%
 
 ---
 
@@ -196,4 +199,4 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
 ## Best practice e limitazioni {#best-practices-limitations-tips}
 
-* L&#39;editor AEM InDesign funziona a livello di tag e tutto il testo all&#39;interno di un singolo tag viene considerato una singola entità. Per mantenere la formattazione del testo e gli stili durante la modifica, assegnate separatamente i tag a ciascun paragrafo (o testo con stili diversi).
+* L’ [!DNL InDesign] editor in [!DNL Experience Manager] funziona a livello di tag e tutto il testo all’interno di un singolo tag viene considerato come una singola entità. Per mantenere la formattazione del testo e gli stili durante la modifica, assegnate separatamente i tag a ciascun paragrafo (o testo con stili diversi).
