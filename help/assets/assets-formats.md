@@ -3,7 +3,10 @@ title: Formati supportati per le risorse
 description: Elenco dei formati di file supportati da AEM Assets e da Dynamic Media e delle funzioni supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1770'
+ht-degree: 9%
 
 ---
 
@@ -186,7 +189,7 @@ Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 
 ## Formati multimediali supportati {#supported-multimedia-formats}
 
-|  | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione delle miniature | Transcodifica FFMPEG |
+|  | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione delle miniature | Transcodifica FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | ✓ | ✓ |  | − | * |
 | MIDI | ✓ | ✓ |  | − | * |
