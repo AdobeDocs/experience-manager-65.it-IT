@@ -1,9 +1,12 @@
 ---
-title: Best practice per monitorare la distribuzione di [!DNL Adobe Experience Manager Assets].
-description: Procedure ottimali per monitorare l'ambiente e le prestazioni della distribuzione [!DNL Adobe Experience Manager] dopo la distribuzione.
+title: Best practice per [!DNL Adobe Experience Manager Assets] monitorare l'implementazione.
+description: Procedure ottimali per monitorare l'ambiente e le prestazioni dell' [!DNL Adobe Experience Manager] implementazione dopo l'implementazione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1673'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +149,7 @@ Di seguito sono riportati alcuni controlli di stato out-of-the-box utili per mon
 
 * Coda di replica
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Istanze: Un autore, tutti i server di pubblicazione
    * Soglia allarme: Quando lo stato non è OK
@@ -184,7 +187,7 @@ Di seguito sono riportati alcuni controlli di stato out-of-the-box utili per mon
    * Soglia allarme: Quando lo stato non è OK
    * Definizione allarme: I file di registro presentano degli errori. Per ulteriori informazioni sulla causa del problema, consultate l’attributo di registro.
 
-## Problemi comuni e risoluzioni {#common-issues-and-resolutions}
+## Problemi comuni e risoluzioni  {#common-issues-and-resolutions}
 
 Nel processo di monitoraggio, in caso di problemi, sono disponibili alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere i problemi più comuni relativi [!DNL Experience Manager] alle distribuzioni:
 
