@@ -3,7 +3,10 @@ title: Riferimento schemi metadati
 description: 'Scoprite le convenzioni standard per la descrizione dei metadati delle risorse, inclusi Dublin Core, IPTC e altri schemi di metadati. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 2%
 
 ---
 
@@ -18,16 +21,16 @@ I metadati Dublin Core forniscono un set standardizzato di convenzioni per la de
 
 Il semplice set di metadati Dublin Core Metadata Element Set (DCMES) contiene 15 elementi di metadati, come elencato nella tabella seguente. Ciascun elemento Dublin Core è facoltativo e può essere ripetuto. Potete aggiungere o eliminare i metadati Dublin Core come fareste per i metadati specifici per i tipi di supporti.
 
-Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa Dublin Core. Per ulteriori informazioni, consulta la [Dublin Core Initiative](https://dublincore.org/) .
+Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa Dublin Core. Per ulteriori informazioni, consulta [Dublin Core Initiative](https://dublincore.org/) .
 
 | Proprietà | Descrizione |
-|---|---|
+| ----------- | ------------------------------------------------------------------------------------------------------------------------ |
 | collaboratore | La persona o la società responsabile del contributo al contenuto. |
 | cover | La posizione geografica o il periodo di tempo coperto dall&#39;attività. |
-| creatore | Persona o società responsabile della creazione del contenuto. |
+| creatore | La persona o la società responsabile della creazione del contenuto. |
 | data | Data o periodo di tempo associato alla risorsa. |
 | descrizione | Ulteriori informazioni sulla risorsa. |
-| format | Formato file, supporto fisico o dimensioni della risorsa. AEM utilizza dc:format per indicare il tipo mime della risorsa. |
+| format | Il formato file, il supporto fisico o le dimensioni della risorsa. AEM utilizza `dc:format` per indicare il tipo MIME della risorsa. |
 | identifier | Un riferimento univoco alla risorsa. |
 | language | La lingua della risorsa (ad esempio, en per l’inglese). |
 | publisher | La persona o la società responsabile della messa a disposizione della risorsa. |
