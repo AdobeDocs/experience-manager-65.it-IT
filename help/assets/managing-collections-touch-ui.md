@@ -4,7 +4,10 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2229'
+ht-degree: 13%
 
 ---
 
@@ -202,8 +205,6 @@ Potete modificare le impostazioni della raccolta, ad esempio titolo e descrizion
 ## Eliminare una raccolta {#deleting-a-collection}
 
 1. Dalla console Raccolte, selezionate una o più raccolte e fate clic sull&#39;icona Elimina nella barra degli strumenti.
-
-   ![chlimage_1-11](assets/chlimage_1-177.png)
 
 1. Nella finestra di dialogo, fare clic su **[!UICONTROL Elimina]** per confermare l’operazione di eliminazione.
 
