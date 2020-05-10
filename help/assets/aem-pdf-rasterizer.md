@@ -1,34 +1,35 @@
 ---
-title: Usare il rasterizzatore PDF per generare le rappresentazioni
-description: Questo articolo descrive come generare miniature e rappresentazioni di alta qualità mediante la libreria Adobe PDF Rasterizer.
+title: Usate il rasterizzatore PDF per generare rappresentazioni di file PDF.
+description: Generate miniature e rappresentazioni di alta qualità utilizzando la libreria Rasterizer Adobe PDF in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
 
 # Usa PDF Rasterizer {#using-pdf-rasterizer}
 
-A volte, quando carichi file PDF o AI di grandi dimensioni e che richiedono molto contenuto su Risorse Adobe Experience Manager (AEM), la libreria predefinita potrebbe non generare un output accurato. In tali casi, la libreria Rasterizer PDF di Adobe può generare un output più affidabile e preciso rispetto all&#39;output di una libreria predefinita.
+Quando caricate file PDF o AI di grandi dimensioni e che richiedono molto contenuto, la conversione predefinita potrebbe non generare un output accurato. [!DNL Adobe Experience Manager Assets] La libreria Rasterizer PDF di Adobe può generare un output più affidabile e preciso rispetto all&#39;output di una libreria predefinita. Adobe consiglia di utilizzare la libreria PDF Rasterizer per i seguenti scenari:
 
-Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
-
-* File AI/PDF pesanti e ricchi di contenuti.
-* File AI e PDF con miniature non generate al di fuori della casella.
+* File AI o PDF pesanti e ricchi di contenuti.
+* File AI e file PDF con miniature non generate per impostazione predefinita.
 * File AI con colori Pantone Matching System (PMS).
 
 Le miniature e le anteprime generate con PDF Rasterizer sono di qualità migliore rispetto all’output out-of-the-box e, pertanto, offrono un’esperienza di visualizzazione coerente su tutti i dispositivi. La libreria Adobe PDF Rasterizer non supporta la conversione dello spazio colore. Trasmette sempre in RGB indipendentemente dallo spazio colore del file sorgente.
 
-1. Installate il pacchetto PDF Rasterizer nella distribuzione AEM da [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installate il pacchetto PDF Rasterizer nella [!DNL Experience Manager] distribuzione da [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >La libreria PDF Rasterizer è disponibile solo per Windows e Linux.
 
-1. Accedi alla console del flusso di lavoro di Risorse AEM in `https://[server]:[port]/workflow`. Aprite la pagina del flusso di lavoro Aggiorna risorsa  DAM.
+1. Accedete alla console del [!DNL Assets] flusso di lavoro in `https://[aem_server]:[port]/workflow`. Apri flusso di lavoro Aggiorna risorsa  DAM.
 
-1. Per impedire la generazione di miniature e rappresentazioni Web per i file PDF e AI utilizzando i metodi predefiniti, attenetevi alla seguente procedura:
+1. Per impedire la generazione di miniature e rappresentazioni Web per i file PDF e i file AI utilizzando i metodi predefiniti, procedere come segue:
 
    * Aprite il passaggio Miniature **[!UICONTROL di]** processo e aggiungete `application/pdf` o `application/postscript` nel campo **[!UICONTROL Skip Mime Types]** nella scheda **[!UICONTROL Miniature]** , a seconda delle necessità.
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
@@ -44,14 +45,13 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
 1. Configurare gli argomenti seguenti per il passaggio del gestore **[!UICONTROL Rasterizer]** PDF:
 
    * Tipi MIME: `application/pdf` o `application/postscript`
-
    * Comandi: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Aggiungere le dimensioni delle miniature: 319:319, 140:100, 48:48. Se necessario, aggiungete una configurazione personalizzata per le miniature.
    Gli argomenti della riga di comando per il `PDFRasterizer` comando possono includere quanto segue:
 
    * `-d`: Contrassegno per consentire il rendering uniforme di testo, immagini vettoriali e immagini. Consente di creare immagini di qualità migliore. Tuttavia, se si inserisce questo parametro, il comando viene eseguito lentamente e le dimensioni delle immagini aumentano.
 
-   * `-p`: Numero pagina. Il valore predefinito è tutte le pagine. &#39;*&#39; indica tutte le pagine.
+   * `-p`: Numero pagina. Il valore predefinito è tutte le pagine. Per indicare tutte le pagine, utilizzate `*`.
 
    * `-s`: Dimensione massima dell’immagine (altezza o larghezza). Questo viene convertito in DPI per ogni pagina. Se le pagine hanno dimensioni diverse, ogni pagina può essere ridimensionata in base a quantità diverse. Il valore predefinito è la dimensione effettiva della pagina.
 
@@ -63,7 +63,7 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
 
 
 1. Per eliminare le rappresentazioni intermedie, selezionare **[!UICONTROL Elimina rappresentazione]** generata.
-1. Per consentire a Rasterizza PDF di generare rappresentazioni Web, selezionare **[!UICONTROL Genera rappresentazione]** Web.
+1. Per consentire a PDF Rasterizer di generare rappresentazioni Web, selezionare **[!UICONTROL Genera rappresentazione]** Web.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
@@ -79,8 +79,8 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
    * Tipi MIME: `application/pdf` o `application/postscript`
 
    * Comandi: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * Aggiungere le dimensioni delle miniature: 319:319, 140:100, 48:48. Se necessario, aggiungete una configurazione personalizzata per le miniature.
-   Gli argomenti della riga di comando per il comando PDFRasterizer possono includere quanto segue:
+   * Aggiungete le dimensioni delle miniature: `319:319`, `140:100`, `48:48`. Aggiungi la configurazione personalizzata delle miniature, a seconda delle necessità.
+   Gli argomenti della riga di comando per il `PDFRasterizer` comando possono includere quanto segue:
 
    * `-d`: Contrassegno per consentire il rendering uniforme di testo, immagini vettoriali e immagini. Consente di creare immagini di qualità migliore. Tuttavia, se si inserisce questo parametro, il comando viene eseguito lentamente e le dimensioni delle immagini aumentano.
 
@@ -96,7 +96,7 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
 
 
 1. Per eliminare le rappresentazioni intermedie, selezionare **[!UICONTROL Elimina rappresentazione]** generata.
-1. Per consentire a Rasterizza PDF di generare rappresentazioni Web, selezionare **[!UICONTROL Genera rappresentazione]** Web.
+1. Per consentire a PDF Rasterizer di generare rappresentazioni Web, selezionare **[!UICONTROL Genera rappresentazione]** Web.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
@@ -105,4 +105,4 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Salvare il flusso di lavoro.
-1. Caricate un PDF o un file AI in Risorse AEM. PDF Rasterizer genera le miniature e le rappresentazioni Web per il file.
+1. Caricate un PDF o un file AI in [!DNL Experience Manager Assets]. PDF Rasterizer genera le miniature e le rappresentazioni Web per il file.
