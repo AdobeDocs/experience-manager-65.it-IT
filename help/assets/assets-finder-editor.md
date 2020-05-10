@@ -3,7 +3,10 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2147'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ Il presente documento descrive quanto segue:
 * Come creare e personalizzare le pagine Editor risorse, ovvero pagine WCM che consentono di visualizzare e modificare i metadati ed eseguire azioni sulla risorsa.
 * Come modificare più risorse contemporaneamente.
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 OOTB samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
 
 >[!NOTE]
 >
@@ -26,165 +29,165 @@ Il presente documento descrive quanto segue:
 
 Gestione delle risorse digitali viene utilizzata in sempre più scenari. Per passare da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager (AEM) Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che sono rilevanti per loro.
 
-Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet dove i dipendenti possono caricare foto da visite a fiere o da un centro stampa in un sito Web rivolto al pubblico, ad esempio l’esempio fornito con Geometrixx. Le applicazioni incentrate sulle risorse possono anche estendersi alle soluzioni complete, inclusi carrelli commerciali, checkout e processi di verifica.
+Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet dove i dipendenti possono caricare le foto dalle visite alle fiere o da un centro stampa in un sito Web rivolto al pubblico. Le applicazioni incentrate sulle risorse possono anche estendersi alle soluzioni complete, inclusi carrelli commerciali, checkout e processi di verifica.
 
 La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con AEM Assets sono estensibili: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
 
 Un’applicazione incentrata sulle risorse in AEM consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
-## Creare e configurare una pagina Condivisione risorse {#creating-and-configuring-an-asset-share-page}
+<!--
+## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
 
-Potete personalizzare la funzionalità del Finder di DAM e creare pagine con tutte le funzionalità necessarie, denominate pagine di condivisione risorse. Per creare una nuova pagina Condivisione risorse, aggiungete la pagina utilizzando il modello Condivisione risorse di Geometrixx, quindi personalizzate le azioni che gli utenti possono eseguire su tale pagina, stabilite in che modo gli utenti vedranno le risorse e decideranno in che modo gli utenti possono creare le loro query.
+You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create a new Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
 
-Di seguito sono riportati alcuni esempi di utilizzo per la creazione di una pagina Condivisione risorse personalizzata:
+Here are some use cases for creating a customized Asset Share page:
 
-* Centro Stampa per i Giornalisti
-* Motore di ricerca immagini per utenti interni
-* Database immagini per gli utenti del sito Web
-* Interfaccia per tag multimediali per editor di metadati
+* Press Center for Journalists.
+* Image Search Engine for internal business users.
+* Image Database for website users.
+* Media Tagging Interface for metadata editors.
 
-### Creare una pagina Condivisione risorse {#creating-an-asset-share-page}
+### Create an Asset Share page {#creating-an-asset-share-page}
 
-Per creare una nuova pagina Condivisione risorse, potete crearla quando lavorate su siti Web o da Gestione risorse digitali.
+To create a new Asset Share page, you can either create it when you are working on web sites or from the digital asset manager.
 
 >[!NOTE]
 >
->Per impostazione predefinita, quando create una pagina Condivisione risorse da **Nuovo** in Gestione risorse digitali, vengono automaticamente creati un visualizzatore di risorse e un editor risorse.
+>By default, when you create an Asset Share page from **New** in the digital asset manager, an Asset viewer and Asset editor are automatically created for you.
 
-Per creare una nuova pagina Condivisione risorse nella console Siti **Web** :
+To create an new Asset Share page in the **Websites** console:
 
-1. Nella scheda **Siti** Web individuate il punto in cui desiderate creare una pagina di condivisione delle risorse e fate clic su **Nuovo**.
+1. In the **Websites** tab, navigate to the place where you want to create an asset share page and click **New**.
 
-1. Selezionate la pagina Condivisione **** risorse e fate clic su **Crea**. La nuova pagina viene creata e la pagina di condivisione delle risorse è elencata nella scheda **Siti** Web.
+1. Select the **Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
 
 ![dam8](assets/dam8.png)
 
-La pagina di base creata con il modello Geometrixx DAM Asset Share si presenta come segue:
+The basic page created using the Geometrixx DAM Asset Share template looks as follows:
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-Per personalizzare la pagina Condivisione risorse, potete usare elementi dalla barra laterale e modificare le proprietà del generatore di query. La pagina **Geometrixx Press Center** è una versione personalizzata di una pagina basata su questo modello:
+To customize your Asset Share page, you use elements from the sidekick and you also edit query builder properties. The page **Geometrixx Press Center** is a customized version of a page based on this template:
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
-Per creare una nuova pagina di condivisione delle risorse tramite Gestione risorse digitali:
+To create a new asset share page via the digital asset manager:
 
-1. In Gestione risorse digitali, in **Nuovo**, selezionate **Nuova condivisione** risorse.
-1. Nel **Titolo**, immettete il nome della pagina di condivisione delle risorse. Se necessario, inserite un nome per l’URL.
+1. In the digital asset manager, in **New**, select **New Asset Share**.
+1. In the **Title**, enter the name of the asset share page. If desired, enter a name for the URL.
 
    ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
 
-1. Fate doppio clic sulla pagina di condivisione delle risorse per aprirla e configurarla.
+1. Double-click the asset share page to open it and configure the page.
 
    ![screen_shot_2012-04-19at24114pm](assets/screen_shot_2012-04-19at24114pm.png)
 
-   Per impostazione predefinita, quando create una pagina Condivisione risorse da **Nuovo**, vengono automaticamente creati un visualizzatore e un editor risorse.
+   By default, when you create an Asset Share page from **New**, an Asset viewer and Asset editor are automatically created for you.
 
-#### Personalizzare le azioni {#customizing-actions}
+#### Customize actions {#customizing-actions}
 
-Potete determinare quali azioni possono essere eseguite dagli utenti sulle risorse digitali selezionate in base a una selezione di azioni predefinite.
+You can determine what actions users can perform on selected digital assets from a selection of predefined actions.
 
-Per aggiungere azioni alla pagina Condivisione risorse:
+To add actions to the Asset Share page:
 
-1. Nella pagina Condivisione risorse che desiderate personalizzare, fate clic su **Azioni** nella barra laterale.
+1. In the Asset Share page that you want to customize, click **Actions** in the sidekick.
 
-Sono disponibili le azioni seguenti:
+The following actions are available:
 
-![assetshare2](assets/assetshare2.bmp)
+ | Action | Description |
+ |---|---|
+ | [!UICONTROL Delete Action] | Users can delete the selected assets. |
+ | [!UICONTROL Download Action] | Lets users download selected assets to their computers. |
+ | [!UICONTROL Lightbox Action] | Saves assets to a "lightbox"   where you can perform other actions on them. This comes in handy when working   with assets across multiple pages. The lightbox can also be used as a   shopping cart for assets. |
+ | [!UICONTROL Move Action] | Users can move the asset to another   location |
+ | [!UICONTROL Tags Action] | Lets users add tags to selected assets |
+ | [!UICONTROL View Asset Action] | Opens the asset in the Asset editor for   user manipulation. |
 
-| Azione | Descrizione |
-|---|---|
-| [!UICONTROL Azione Elimina] | Gli utenti possono eliminare le risorse selezionate. |
-| [!UICONTROL Azione di download] | Consente agli utenti di scaricare le risorse selezionate sul computer. |
-| [!UICONTROL Azione Lightbox] | Salva le risorse in una &quot;scatola luminosa&quot; in cui è possibile eseguire altre azioni. Questa funzione è utile quando si lavora con risorse su più pagine. La lightbox può essere utilizzata anche come carrello per le risorse. |
-| [!UICONTROL Azione spostamento] | Gli utenti possono spostare la risorsa in un&#39;altra posizione |
-| [!UICONTROL Azione tag] | Consente agli utenti di aggiungere tag alle risorse selezionate |
-| [!UICONTROL Azione visualizza risorsa] | Consente di aprire la risorsa nell’editor delle risorse per la manipolazione degli utenti. |
-
-1. Trascinare l’azione appropriata nell’area **Azioni** della pagina. In questo modo viene creato un pulsante utilizzato per eseguire l&#39;azione.
+1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
 ![chlimage_1-159](assets/chlimage_1-387.png)
 
-#### Determinare come vengono presentati i risultati della ricerca {#determining-how-search-results-are-presented}
+#### Determine how search results are presented {#determining-how-search-results-are-presented}
 
-È possibile determinare in che modo i risultati vengono visualizzati da un elenco predefinito di obiettivi.
+You determine how results are displayed from a predefined list of lenses.
 
-Per modificare la modalità di visualizzazione dei risultati della ricerca:
+To change how search results are viewed:
 
-1. Nella pagina Condivisione risorse che desiderate personalizzare, fate clic su Cerca.
+1. In the Asset Share page that you want to customize, click Search.
 
 ![chlimage_1](assets/assetshare3.png)
 
-1. Trascinare l’obiettivo appropriato al centro superiore della pagina. Nel Centro Stampa, le ottiche sono già disponibili. Gli utenti premono l&#39;icona dell&#39;obiettivo appropriata per visualizzare i risultati della ricerca come desiderato.
+1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
-Sono disponibili le seguenti ottiche:
+The following lenses are available:
 
-| Obiettivo | Descrizione |
+| Lens | Description |
 |---|---|
-| **[!UICONTROL Vista elenco]** | Presenta le risorse in un elenco con i relativi dettagli. |
-| **[!UICONTROL Vista mosaico]** | Presenta le risorse in modo mosaico. |
+| **[!UICONTROL List Lens]** |Presents the assets in a list fashion with details. |
+| **[!UICONTROL Mosaic Lens]** |Presents assets in a mosaic fashion. |
 
-#### Vista mosaico {#mosaic-lens}
+#### Mosaic Lens {#mosaic-lens}
 
 ![chlimage_1-160](assets/chlimage_1-388.png)
 
-#### Vista elenco {#list-lens}
+#### List Lens {#list-lens}
 
 ![chlimage_1-161](assets/chlimage_1-389.png)
 
-#### Personalizzazione di Query Builder {#customizing-the-query-builder}
+#### Customize the Query Builder {#customizing-the-query-builder}
 
-Il generatore di query consente di inserire i termini di ricerca e creare il contenuto per la pagina Condivisione risorse. Quando modificate il generatore di query, potete anche determinare quanti risultati di ricerca vengono visualizzati per pagina, quale editor di risorse si apre quando fate doppio clic su una risorsa, il percorso di ricerca e personalizzate i tipi di nodi.
+The query builder lets you enter search terms and create content for the Asset Share page. When you edit the query builder, you also get to determine how many search results are displayed per page, which asset editor opens when you double-click an asset, the path the query searches, and customizes nodetypes.
 
-Per personalizzare il generatore di query:
+To customize the query builder:
 
-1. Nella pagina Condivisione risorse da personalizzare, fate clic su **Modifica** in Query Builder. Per impostazione predefinita, viene visualizzata la scheda **Generale** .
-1. Selezionate il numero di risultati per pagina, il percorso dell’editor risorse (se disponete di un editor risorse personalizzato) e il titolo Azioni.
+1. In the Asset Share page that you want to customize, click **Edit** in the Query Builder. By default, the **General** tab opens.
+1. Select the number of results per page, the path of the asset editor (if you have a customized asset editor) and the Actions title.
 
 ![screen_shot_2012-04-23at15055pm](assets/screen_shot_2012-04-23at15055pm.png)
 
-1. Click the **Paths** tab. Inserite uno o più percorsi che verranno eseguiti dalla ricerca. Questi percorsi vengono sovrascritti se l&#39;utente utilizza il predicato Percorsi.
+1. Click the **Paths** tab. Enter a path or multiple paths that the search will run. These paths are overwritten if the user uses the Paths predicate.
 
 ![screen_shot_2012-04-23at15150pm](assets/screen_shot_2012-04-23at15150pm.png)
 
-1. Se necessario, inserire un altro tipo di nodo.
+1. Enter another node type, if desired.
 
-1. Nel campo URL **di** Query Builder, potete ignorare o mandare a capo il generatore di query e immettere i nuovi URL servlet con il componente esistente di Query Builder. Nel campo URL **** feed potete anche ignorare l&#39;URL feed.
+1. In the **Query Builder URL** field, you can override or wrap the query builder and enter the new servlet URLs with the existing query builder component. In the **Feed URL** field, you can override the Feed URL as well.
 
 ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
-1. Nel campo **Testo** , inserite il testo da visualizzare per i risultati e i numeri di pagina dei risultati. Al termine, fate clic su **OK** .
+1. In the **Text** field, enter the text you want to appear for results and page numbers of results. Click **OK** when finished making changes.
 
 ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
-#### Aggiunta di predicati {#adding-predicates}
+#### Add predicates {#adding-predicates}
 
-Risorse AEM include diversi predicati che puoi aggiungere alla pagina Condivisione risorse. che consentono agli utenti di limitare ulteriormente le ricerche. In alcuni casi, possono ignorare un parametro del generatore di query (ad esempio, il parametro Path).
+AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
-Per aggiungere i predicati:
+To add predicates:
 
-1. Nella pagina Condivisione risorse da personalizzare, fate clic su **Cerca**.
+1. In the Asset Share page that you want to customize, click **Search**.
 
 ![assetshare3](assets/assetshare3.png)
 
-1. Trascinate i predicati appropriati nella pagina Condivisione risorse sotto il generatore di query. In questo modo vengono creati i campi appropriati.
+1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
 ![assetshare4](assets/assetshare4.bmp)
 
-Sono disponibili i seguenti predicati:
+The following predicates are available:
 
-| Predicato | Descrizione |
+| Predicate | Description |
 |---|---|
-| **[!UICONTROL Predicato data]** | Consente agli utenti di cercare le risorse modificate prima e dopo determinate date. |
-| **[!UICONTROL Predicato opzioni]** | Il proprietario del sito può specificare una proprietà da cercare (come nel predicato delle proprietà, ad esempio cq:tags) e una struttura del contenuto per popolare le opzioni da (ad esempio la struttura ad albero tag). In questo modo si genera un elenco di opzioni in cui gli utenti possono selezionare i valori (tag) che la proprietà selezionata (proprietà tag) deve avere. Questo predicato consente di creare controlli elenco come l&#39;elenco di tag, tipi di file, orientamenti immagine e così via. È ideale per un set fisso di opzioni. |
-| **[!UICONTROL Predicato percorso]** | Consente agli utenti di definire il percorso e le sottocartelle, se necessario. |
-| **[!UICONTROL Predicato proprietà]** | Il proprietario del sito specifica una proprietà da cercare, ad esempio tiff:ImageLength e l’utente può quindi immettere un valore, ad esempio 800. Questo restituisce tutte le immagini con un&#39;altezza di 800 pixel. Predefinito utile se la proprietà può avere valori arbitrari. |
+| **[!UICONTROL Date Predicate]** |Lets users search for assets that were modified before and after certain dates. |
+| **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
+| **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
+| **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
-Per ulteriori informazioni, consultate il [predicate Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+For more information, see the [predicate Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
-1. Per configurare ulteriormente il predicato, fate doppio clic su di esso. Ad esempio, quando si apre il predicato percorso, è necessario assegnare il percorso principale.
+1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
+-->
 
 ## Creare e configurare una pagina Editor risorse {#creating-and-configuring-an-asset-editor-page}
 
@@ -192,7 +195,7 @@ Potete personalizzare l’editor delle risorse per determinare in che modo gli u
 
 >[!NOTE]
 >
->Per aggiungere campi personalizzati all’editor delle risorse DAM, aggiungi nuovi nodi cq:Widget a `/apps/dam/content/asseteditors.`
+>Per aggiungere campi personalizzati all&#39;editor di risorse DAM, aggiungi nuovi `cq:Widget` nodi a `/apps/dam/content/asseteditors.`
 
 ### Creare una pagina Editor risorse {#creating-the-asset-editor-page}
 
@@ -327,9 +330,9 @@ Di seguito è riportato un componente Tag popolato:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura {#thumbnail}
+#### Miniatura  {#thumbnail}
 
-Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [le azioni che è possibile modificare](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
+Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti dei formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [le azioni che è possibile modificare](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
@@ -416,7 +419,7 @@ Per modificare più risorse con la pagina Editor risorse:
 
    * Un tag che non si applica a tutte le risorse, ma solo ad alcune ha uno sfondo grigio.
    * Un tag applicato a tutte le risorse ha uno sfondo bianco.
-   Tieni presente quanto segue:
+   Operazioni disponibili:
 
    * Fate clic sull’icona **x** per rimuovere il tag per tutte le risorse.
    * Fate clic sull’icona **+** per aggiungere il tag a tutte le risorse.
@@ -427,7 +430,7 @@ Per modificare più risorse con la pagina Editor risorse:
 
    `This is a common description`
 
-   Quando un campo viene modificato, il relativo valore sovrascrive i valori esistenti delle risorse selezionate quando il modulo viene inviato.
+   Quando un campo viene modificato, il relativo valore sovrascrive i valori esistenti delle risorse selezionate al momento dell&#39;invio del modulo.
 
    Nota: la casella accanto al campo viene selezionata automaticamente quando il campo viene modificato.
 
