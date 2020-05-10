@@ -1,14 +1,17 @@
 ---
-title: Integrare [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server]
-description: Scoprite come integrare [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
+title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesign Server]'
+description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 4%
 
 ---
 
 
-# Integrazione [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server]{#integrating-aem-assets-with-indesign-server}
+# Integrazione [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] use:
 
@@ -64,7 +67,7 @@ Per integrare l&#39; [!DNL InDesign Server] utilizzo con [!DNL Experience Manage
 Ciò è necessario solo se i valori predefiniti non sono appropriati per l’istanza in uso.
 1. Configurate un lavoratore [proxy per InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installa [!DNL InDesign Server]{#installing-the-indesign-server}
+### Installa [!DNL InDesign Server] {#installing-the-indesign-server}
 
 Per installare e avviare l’ [!DNL InDesign Server] utilizzo con [!DNL Experience Manager]:
 
@@ -116,7 +119,7 @@ Per informazioni sugli script Indesign, consultate la documentazione per gli svi
 
 Lo `ThumbnailExport.jsx` script eseguito dal passaggio del flusso di lavoro Estrazione file multimediali genera una rappresentazione in miniatura in formato JPG. Questa rappresentazione viene utilizzata dal passaggio del flusso di lavoro Miniature di processo per generare le rappresentazioni statiche richieste da [!DNL Experience Manager].
 
-Potete configurare il passaggio del flusso di lavoro Miniature di processo per generare rappresentazioni statiche di dimensioni diverse. Assicuratevi di non rimuovere le impostazioni predefinite, perché sono richieste dall&#39; [!DNL Experience Manager Assets] interfaccia. Infine, il passaggio del flusso di lavoro Elimina rappresentazione anteprima immagine rimuove la rappresentazione in miniatura .jpg, in quanto non è più necessaria.
+Potete configurare il passaggio del flusso di lavoro Miniature di processo per generare rappresentazioni statiche di dimensioni diverse. Assicuratevi di non rimuovere le impostazioni predefinite, perché sono richieste dall&#39; [!DNL Experience Manager Assets] interfaccia. Infine, il passaggio del flusso di lavoro Elimina anteprima immagine rimuove la rappresentazione in miniatura JPG, in quanto non è più necessaria.
 
 #### Page extraction {#page-extraction}
 
@@ -139,7 +142,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 * **Progettazione** pagina: Struttura della pagina da utilizzare per la generazione della pagina risultante.
 
-### Configurare il lavoratore proxy per [!DNL InDesign Server]{#configuring-the-proxy-worker-for-indesign-server}
+### Configurare il lavoratore proxy per [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -167,7 +170,7 @@ Se l&#39;applicazione [!DNL InDesign Server] e l&#39; [!DNL Experience Manager] 
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
-### Abilita elaborazione processi paralleli per [!DNL InDesign Server]{#enabling-parallel-job-processing-for-indesign-server-s}
+### Abilita elaborazione processi paralleli per [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
 
 È ora possibile abilitare l&#39;elaborazione processi paralleli per gli ID. Determinare il numero massimo di processi paralleli (`x`) che è [!DNL InDesign Server] possibile elaborare:
 
@@ -202,7 +205,7 @@ Per configurare il numero di processi IDS paralleli:
    >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
    >
    >
-   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera.
+   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene nuovamente convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera.
 
 ## Abilita il supporto per la versione [!DNL InDesign Server] 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
 
