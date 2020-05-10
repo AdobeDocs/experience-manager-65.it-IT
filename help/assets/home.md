@@ -4,7 +4,10 @@ seo-title: Guida utente di AEM 6.5 Assets
 description: Questa guida descrive tutte le attività di Risorse AEM, come ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 seo-description: Include tutte le attività di Risorse AEM, come la creazione, la gestione, la distribuzione e l’ottimizzazione delle risorse digitali.
 translation-type: tm+mt
-source-git-commit: e6c0ee967d1b01da18b538960520c206937599f6
+source-git-commit: db5996bd25c6c35854f8b7164558b41a477b4cd6
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 14%
 
 ---
 
@@ -25,7 +28,7 @@ Questa guida descrive tutte le attività di Risorse AEM, come ad esempio come cr
 | Guida utente | Descrizione |
 |--- |---|
 | [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sull’ultima versione di AEM, comprese le nuove piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti |
-| [Guida utente di[Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
+| [Guida utente di Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
 | [Guida utente di Communities](/help/communities/home.md) | Create esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni per social network. |
 | [Guida all&#39;amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida descrive i concetti della creazione in AEM. |
