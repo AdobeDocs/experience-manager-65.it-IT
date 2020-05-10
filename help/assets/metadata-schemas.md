@@ -3,9 +3,9 @@ title: 'Schemi di metadati per definire il layout della pagina delle proprietà 
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 6151c1afe3006e8d4b93648fc9eb779c73df4181
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2741'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,9 @@ Le organizzazioni dispongono di un modello di metadati che migliora l’individu
 
 Gli schemi [!DNL Adobe Experience Manager Assets]contengono campi specifici per informazioni specifiche da compilare. Contiene inoltre informazioni sul layout per visualizzare i campi di metadati in modo semplice e intuitivo. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e altro. È possibile utilizzare l&#39;editor Moduli [!UICONTROL schema] metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
 
-1. Per visualizzare la pagina [!UICONTROL Proprietà] di una risorsa, fate clic su **[!UICONTROL Visualizza proprietà]** dalle azioni rapide nella sezione della risorsa nella vista a schede. In alternativa, seleziona la risorsa nell’interfaccia e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
+Per visualizzare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
+
+1. Tocca o fai clic sull’icona **[!UICONTROL Visualizza proprietà]** da Azioni rapide nella sezione delle risorse nella vista a schede.
 
    ![Azioni rapide nella sezione delle risorse](assets/chlimage_1-170.png)
 
@@ -25,28 +27,44 @@ Gli schemi [!DNL Adobe Experience Manager Assets]contengono campi specifici per 
 
    ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
 
-   *Figura: Scheda Base in[!UICONTROL Proprietà]risorsa.*
+1. Potete modificare diverse proprietà dei metadati nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
 
-   Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modificare i moduli](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) dello schema metadati. Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
+   ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
+
+*Figura: Scheda Base in[!UICONTROL Proprietà]risorsa.*
+
+Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modificare i moduli](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) dello schema metadati. Se modificate lo schema di metadati per un determinato tipo MIME, il layout della pagina delle proprietà per le risorse con il tipo MIME corrente e tutti i sottotipi di risorse vengono modificati. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
 1. Per visualizzare un elenco di moduli/modelli, nell&#39; [!DNL Experience Manager] interfaccia passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**.
 
-   [!DNL Experience Manager] offre i seguenti modelli:
-   * **predefinito**: Modulo schema metadati di base per le risorse.
+## Moduli schema metadati disponibili per impostazione predefinita {#available-metadata-schema-templates}
 
-      I seguenti moduli secondari ereditano le proprietà del modulo predefinito:
+[!DNL Experience Manager] fornisce i seguenti modelli:
 
-      1. **immagine**: Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio `image/jpeg`, `image/png`e così via.
+### impostazione predefinita {#default-template}
 
-         Il modulo &quot;immagine&quot; include i seguenti modelli di modulo figlio:
-         * **jpeg**: Modulo schema per risorse con sottotipo `jpeg`.
-         * **tiff**: Modulo schema per le risorse con sottotipo `tiff`.
-      1. **applicazione**: Modulo schema per risorse con tipo MIME `application`, ad esempio `application/pdf`, `application/zip`e così via.
-         * **pdf**: Modulo schema per risorse con sottotipo `pdf`.
-      1. **video**: Modulo schema per risorse con tipo MIME `video`, ad esempio `video/avi`, `video/mp4`e così via.
-   * **insieme**: Modulo schema per le raccolte.
-   * **content fragment:** Modulo schema per frammenti di contenuto.
-   * **moduli**: Questo modulo schema si riferisce ad [Adobe Experience Manager Forms](/help/forms/home.md).
+L’ [!UICONTROL impostazione predefinita] è il modulo dello schema di metadati di base per le risorse. I seguenti moduli secondari ereditano le proprietà del modulo predefinito:
+
+**image** è il modulo dello schema per le risorse con il tipo MIME &quot;image&quot;. Ad esempio `image/jpeg`, `image/png`e così via. Il modulo &quot;immagine&quot; include i seguenti modelli di modulo figlio:
+* **jpeg** è il modulo dello schema per le risorse con sottotipo `jpeg`.
+
+* **tiff** è il modulo dello schema per le risorse con sottotipo `tiff`.
+
+**application** è il modulo dello schema per le risorse con tipo MIME `application`. Ad esempio `application/pdf`, `application/zip`e così via. **pdf** è il modulo dello schema per le risorse con sottotipo `pdf`.
+
+**video** è il modulo dello schema per le risorse con tipo MIME `video`, ad esempio `video/avi`, `video/mp4`e così via.
+
+### collection {#collection-template}
+
+La [!UICONTROL raccolta] è il modulo dello schema per le raccolte.
+
+### contentfragment {#contentfragment-template}
+
+Il frammento di [!UICONTROL contenuto] è il modulo dello schema per i frammenti di contenuto.
+
+### forms {#forms-template}
+
+Il modulo schema [!UICONTROL moduli] fa riferimento ad [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
