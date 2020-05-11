@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 64fe2634bae6289aa313dd1e5a135d1bdd654dbe
+source-git-commit: 1eb8a0335d3e4697c3cfd5a1e7048dda06bbdaf8
+workflow-type: tm+mt
+source-wordcount: '5750'
+ht-degree: 7%
 
 ---
 
@@ -136,6 +139,7 @@ Per personalizzare ulteriormente la configurazione e l’impostazione di Dynamic
 * [(Facoltativo) Configurazione e configurazione di Contenuti multimediali dinamici - Impostazioni modalità Scene7](#optionalsetupandconfigurationofdynamicmediascene7modesettings)
 
 * [(Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media - Modalità Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+
 * [(Facoltativo) Filtrare le risorse per la replica](#optional-filtering-assets-for-replication)
 
 ### (Facoltativo) Configurazione e configurazione di Contenuti multimediali dinamici - Impostazioni modalità Scene7</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
@@ -163,7 +167,7 @@ La schermata Server immagini stabilisce le impostazioni predefinite per la distr
 
 * **[!UICONTROL Attributi]** richiesta - Queste impostazioni impongono limiti alle immagini che possono essere distribuite dal server.
 * **[!UICONTROL Attributi]** richiesta predefiniti - Queste impostazioni interessano l&#39;aspetto predefinito delle immagini.
-* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle immagini in miniatura.
+* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle miniature.
 * **[!UICONTROL Valori predefiniti per i campi]** catalogo: queste impostazioni interessano la risoluzione e il tipo predefinito di miniatura delle immagini.
 * **[!UICONTROL Attributi]** di gestione del colore: queste impostazioni determinano quali profili colore ICC vengono utilizzati.
 * **[!UICONTROL Attributi]** di compatibilità - Questa impostazione consente ai paragrafi iniziali e finali nei livelli di testo di essere trattati come nella versione 3.6 per garantire la compatibilità con le versioni precedenti.
@@ -181,7 +185,7 @@ Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazi
 
 >[!NOTE]
 >
->Per mantenere la coerenza con AEM, scegli sempre questa impostazione: Sovrascrivi **nella cartella corrente, nome/estensione come base**
+>Per mantenere la coerenza con AEM, scegli sempre questa impostazione: **Sovrascrivi in cartella corrente, nome/estensione come base**
 
 * **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome/estensione]** della risorsa base - Richiede che l’immagine sostitutiva abbia la stessa estensione del nome file dell’immagine originale (ad esempio, sedia.jpg deve sostituire sedia.jpg, non sedia.tif). Tuttavia, potete caricare l’immagine sostitutiva in una cartella diversa da quella dell’originale. L’immagine aggiornata si trova nella nuova cartella; il file non può più essere trovato nella posizione originale
 * **[!UICONTROL Sovrascrivi in qualsiasi cartella, nome della stessa risorsa base indipendentemente dall’estensione]** . Questa opzione è la regola di sostituzione più inclusiva. Potete caricare un’immagine sostitutiva in una cartella diversa da quella dell’originale, caricare un file con un’estensione diversa e sostituire il file originale. Se il file originale si trova in un’altra cartella, l’immagine sostitutiva si trova nella nuova cartella in cui è stata caricata.
@@ -476,7 +480,19 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
 ### (Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media - Modalità Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Per mantenere l&#39;esecuzione fluida di Dynamic Media (con modalità `dynamicmedia_scene7` di esecuzione), Adobe consiglia i seguenti suggerimenti per l&#39;ottimizzazione delle prestazioni di sincronizzazione/scalabilità:
+Potete ottimizzare i parametri di processo per velocizzare l’elaborazione quando caricate i file. Ad esempio, se caricate file PSD ma non desiderate elaborarli come modelli, potete impostare l’estrazione dei livelli su false (disattivato). Il parametro del processo sintonizzato viene visualizzato come `process=none&createTemplate=false`.
+
+Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzati&quot; per i file PSD, PDF e Postscript:
+
+| Tipo di file | Parametri di processo consigliati |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| PostScript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+Per aggiornare uno di questi parametri, segui i passaggi descritti in [Abilitazione del supporto](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento per i processi di caricamento di risorse/file multimediali dinamici basati su tipo MIME.
+
+Inoltre, per mantenere la modalità Dynamic Media - Scene7 in esecuzione senza problemi, Adobe consiglia i seguenti suggerimenti per l’ottimizzazione delle prestazioni di sincronizzazione/scalabilità:
 
 * Aggiorna i thread di lavoro predefiniti del flusso di lavoro Granite (risorse video).
 * Aggiorna i thread di lavoro transitori Granite (immagini e risorse non video) predefiniti per il flusso di lavoro transitorio.
