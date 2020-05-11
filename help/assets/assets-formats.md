@@ -3,9 +3,9 @@ title: Formati di file supportati per l'elaborazione in [!DNL Adobe Experience M
 description: Formati di file e tipi MIME supportati [!DNL Assets] and [!DNL Dynamic Media] da e funzionalità supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
+source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1779'
 ht-degree: 9%
 
 ---
@@ -73,6 +73,8 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 ## Formati immagine raster non supportati in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 Nell&#39;elenco seguente sono descritti i sottotipi di formati di file immagine raster *non* supportati in Contenuti multimediali dinamici.
+
+Consultate anche [Rilevamento di formati di file non supportati per gli elementi multimediali](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dinamici.
 
 * File PNG con dimensioni blocco IDAT superiori a 100 MB.
 * File PSB.
