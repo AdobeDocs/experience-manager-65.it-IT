@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 18862ca1ce80682a28293ca4ba6741dbdd6b12f2
+source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1428'
 ht-degree: 6%
 
 ---
@@ -40,7 +40,7 @@ Potete visualizzare lo stato di scadenza di una risorsa nella [!UICONTROL timeli
 Potete inoltre visualizzare lo stato di scadenza delle risorse nella barra **[!UICONTROL Riferimenti]** . Gestisce gli stati di scadenza delle risorse e le relazioni tra le risorse composte e le risorse secondarie, le raccolte e i progetti a cui viene fatto riferimento.
 
 1. Andate alla risorsa per la quale desiderate visualizzare il riferimento a pagine Web e risorse composte.
-1. Selezionate la risorsa e il [!DNL Experience Manager] logo.
+1. Selezionate la risorsa e fate clic sul [!DNL Experience Manager] logo.
 
 1. Scegliete **[!UICONTROL Riferimenti]** dal menu.
 
@@ -60,7 +60,7 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
 1. Nella [!DNL Assets] console, fate clic su **[!UICONTROL Cerca]** nella barra degli strumenti per visualizzare la casella di ricerca Omnico.
 
-1. Con il cursore nella casella di ricerca Omnice, premi il tasto Invio per visualizzare la pagina Risultati ricerca.
+1. Con il cursore nella casella di ricerca Omnice, premere il tasto Invio per visualizzare la pagina dei risultati della ricerca.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -72,17 +72,17 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Selezionare **[!UICONTROL Scaduto]**. Le risorse scadute vengono visualizzate nei risultati della ricerca.
+1. Scegliete **[!UICONTROL Scaduto]**. Le risorse scadute vengono visualizzate nei risultati della ricerca.
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
-Quando selezionate l’opzione **[!UICONTROL Scaduto]** , nella [!DNL Assets] console vengono visualizzate solo le risorse e le risorse secondarie scadute a cui fanno riferimento le risorse composte. Le risorse composte che fanno riferimento a risorse secondarie scadute non vengono visualizzate subito dopo la scadenza delle risorse secondarie. Al contrario, vengono visualizzati dopo che [!DNL Experience Manager] rileva che fanno riferimento a risorse secondarie scadute al successivo esecuzione del programma.
+Quando scegliete l’opzione **[!UICONTROL Scaduto]** , nella [!DNL Assets] console vengono visualizzate solo le risorse e le risorse secondarie scadute a cui fanno riferimento le risorse composte. Le risorse composte che fanno riferimento a risorse secondarie scadute non vengono visualizzate subito dopo la scadenza delle risorse secondarie. Al contrario, vengono visualizzati dopo che [!DNL Experience Manager] rileva che fanno riferimento a risorse secondarie scadute al successivo esecuzione del programma.
 
 Se modificate la data di scadenza di una risorsa pubblicata in una data precedente al ciclo di pianificazione corrente, la pianificazione rileva comunque la risorsa come una risorsa scaduta al successivo esecuzione e ne riflette lo stato di conseguenza.
 
 Inoltre, se un problema o un errore impedisce al pianificatore di rilevare le risorse scadute nel ciclo corrente, il pianificatore riesamina tali risorse nel ciclo successivo e ne rileva lo stato scaduto.
 
-To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in [!DNL Experience Manager] Configuration Manager.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Aprite [!DNL Experience Manager] Configuration Manager.
 1. Scegliete **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
@@ -94,7 +94,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
    >[!NOTE]
    >
-   >Alla scadenza della risorsa viene inviato un messaggio e-mail solo al creatore della risorsa (la persona a cui viene caricata [!DNL Assets]). Consultate [Configurazione delle notifiche](/help/sites-administering/notification.md) e-mail per ulteriori dettagli sulla configurazione delle notifiche e-mail a [!DNL Experience Manager] livello generale.
+   >Alla scadenza della risorsa viene inviato un messaggio e-mail solo al creatore della risorsa (la persona a cui viene caricata [!DNL Assets]). Consultate [come configurare la notifica](/help/sites-administering/notification.md) e-mail per ulteriori dettagli sulla configurazione delle notifiche e-mail a [!DNL Experience Manager] livello generale.
 
 1. Nel campo Notifica **[!UICONTROL precedente in secondi]** , specificate l’ora in secondi prima della scadenza di una risorsa quando desiderate ricevere una notifica relativa alla scadenza. Se siete un amministratore o creatore di risorse, riceverete un messaggio prima della scadenza della risorsa per informarvi che la risorsa sta per scadere dopo l’ora specificata.
 
@@ -119,7 +119,7 @@ La [!DNL Assets] console può visualizzare vari stati per le risorse. A seconda 
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Nell’ [!DNL Assets] interfaccia, selezionate una risorsa e fate clic su **[!UICONTROL Proprietà]** per visualizzare la pagina dei dettagli della risorsa.
+1. Per visualizzare la pagina dei dettagli della risorsa, nell’ [!DNL Assets] interfaccia selezionate una risorsa e fate clic su **[!UICONTROL Proprietà]**.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -144,7 +144,7 @@ La [!DNL Assets] console può visualizzare vari stati per le risorse. A seconda 
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Premere Invio e fare clic su **[!UICONTROL GlobalNav]** per visualizzare il pannello di ricerca.
+1. Premere Invio e fare clic [!DNL Experience Manager] per visualizzare il pannello di ricerca.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
