@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 6b4bc58efd72900c54cb245878239e345d72ae3e
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ I moduli adattivi sono modellati come Pagina AEM, rappresentata come struttura d
 
 È possibile utilizzare un modello di oggetto script (SOM) per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare DOM (Document Object Model). Un DOM organizza gli oggetti di memoria e le proprietà in una gerarchia ad albero. Un&#39;espressione SOM fa riferimento a Campi/Disegno di elementi e pannelli.
 
-Nell&#39;immagine seguente è illustrata una struttura di nodi cui un modulo adattivo si traduce quando si aggiungono componenti a un modulo. Ad esempio, potete aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L&#39;espressione SOM per il campo del pulsante di scelta nel modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
+Nell&#39;immagine seguente è illustrata una struttura di nodi a cui un modulo adattivo si traduce quando si aggiungono componenti a un modulo. Ad esempio, potete aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L&#39;espressione SOM per il campo del pulsante di scelta in un modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
 ![Struttura DOM](assets/hierarchy.png)
 
@@ -44,5 +47,5 @@ All’interno dei pannelli, potete accedere alla funzione dalla barra degli stru
 
 Estrazione di espressioni SOM tramite la barra degli strumenti del pannello
 
-Alcune API elencate in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.md) utilizzano l&#39;espressione SOM di un elemento. Ad esempio, per rendere attivo un particolare campo in un modulo adattivo, passare l&#39;espressione SOM corrispondente all&#39; `getFocus`API in `guideBridge`.
+Alcune API elencate in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) utilizzano l&#39;espressione SOM di un elemento. Ad esempio, per rendere attivo un particolare campo in un modulo adattivo, passare l&#39;espressione SOM corrispondente all&#39; `getFocus`API in `guideBridge`.
 
