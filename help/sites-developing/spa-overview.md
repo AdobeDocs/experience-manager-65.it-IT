@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '1686'
+ht-degree: 0%
 
 ---
 
@@ -126,7 +129,7 @@ Questa è una panoramica più dettagliata dell&#39;interazione client-server dur
 1. Le risorse che compongono la pagina vengono richieste dalla directory archivio.
 1. Le risorse che compongono la pagina vengono fornite dalla directory archivio di Sling Model Exporter.
 1. Il modello di pagina aggiornato viene restituito all’editor.
-1. L’editor pagina aggiorna il riferimento del modello di pagina dell’API.
+1. L’editor pagina aggiorna il riferimento del modello di pagina dell’area di protezione.
 1. L’area SPA aggiorna i suoi componenti in base al nuovo riferimento al modello di pagina.
 1. Le configurazioni dei componenti degli editor di pagina vengono aggiornate.
 
@@ -172,6 +175,10 @@ Le versioni precedenti di questi framework potrebbero funzionare con l’SDK AEM
 ### Framework aggiuntivi {#additional-frameworks}
 
 Possono essere implementati altri framework SPA per l’utilizzo con l’SDK AEM SPA Editor. Consultate il documento [SPA Blueprint](/help/sites-developing/spa-blueprint.md) per i requisiti che un framework deve soddisfare per creare un livello specifico per il framework composto da moduli, componenti e servizi da utilizzare con AEM SPA Editor.
+
+### Utilizzo di più selettori {#multiple-selectors}
+
+Altri selettori personalizzati possono essere definiti e utilizzati come parte di un&#39;app SPA sviluppata per AEM SPA SDK. Tuttavia, questo supporto richiede che il `model` selettore sia il primo e che l&#39;estensione sia `.json` come [richiesto da JSON Exporter.](json-exporter-components.md#multiple-selectors)
 
 ### Requisiti dell&#39;editor di testo {#text-editor-requirements}
 
