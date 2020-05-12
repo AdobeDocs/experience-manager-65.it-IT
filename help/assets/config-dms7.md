@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
 workflow-type: tm+mt
-source-wordcount: '5753'
+source-wordcount: '5759'
 ht-degree: 7%
 
 ---
@@ -480,7 +480,9 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
 ### (Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media - Modalità Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Potete ottimizzare i parametri di processo per velocizzare l’elaborazione quando caricate i file. Ad esempio, se caricate file PSD ma non desiderate elaborarli come modelli, potete impostare l’estrazione dei livelli su false (disattivato). In tal caso, il parametro di processo sintonizzato apparirebbe come `process=none&createTemplate=false`.
+**Ottimizzazione dei parametri di processo**
+
+Potete ottimizzare i parametri di processo per velocizzare l’elaborazione quando caricate i file. Ad esempio, se caricate file PSD ma non desiderate elaborarli come modelli, potete impostare l’estrazione dei livelli su false (disattivato). In tal caso, il parametro di processo sintonizzato apparirebbe come `process=None&createTemplate=false`.
 
 Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzati&quot; per i file PSD, PDF e Postscript:
 
@@ -492,7 +494,9 @@ Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzat
 
 Per aggiornare uno di questi parametri, segui i passaggi descritti in [Abilitazione del supporto](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento per i processi di caricamento di risorse/file multimediali dinamici basati su tipo MIME.
 
-Inoltre, per mantenere la modalità Dynamic Media - Scene7 in esecuzione senza problemi, Adobe consiglia i seguenti suggerimenti per l’ottimizzazione delle prestazioni di sincronizzazione/scalabilità:
+**Prestazioni sincronizzazione/Scalabilità Suggerimenti per la regolazione**
+
+Per mantenere la modalità Dynamic Media - Scene7 in esecuzione senza problemi, Adobe consiglia i seguenti suggerimenti per l’ottimizzazione delle prestazioni di sincronizzazione/scalabilità:
 
 * Aggiorna i thread di lavoro predefiniti del flusso di lavoro Granite (risorse video).
 * Aggiorna i thread di lavoro transitori Granite (immagini e risorse non video) predefiniti per il flusso di lavoro transitorio.
