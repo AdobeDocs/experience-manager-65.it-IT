@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd667ae10b930f6e3b97fb22b4a99b0841fac171
+source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+workflow-type: tm+mt
+source-wordcount: '5487'
+ht-degree: 2%
 
 ---
 
@@ -52,7 +55,7 @@ Le tabelle seguenti elencano ciascuna voce con:
 * una breve descrizione
 * eventuali raccomandazioni sulle modifiche necessarie
 
-*Cambiare tutte le password* predefinite (se non si elimina l&#39;account in alcune circostanze).
+*Cambiare tutte le password* predefinite (se non si elimina l&#39;account stesso in determinate circostanze).
 
 <table>
  <tbody>
@@ -72,10 +75,10 @@ Le tabelle seguenti elencano ciascuna voce con:
    <td><p>anonimo</p> <p> </p> </td>
    <td>User</td>
    <td><p>Contiene i diritti predefiniti per l'accesso non autenticato a un'istanza. Per impostazione predefinita, questo contiene i diritti di accesso minimi.</p> <p>Se eliminate accidentalmente questo account, verrà ricreato all’avvio. Non può essere eliminato in modo permanente, ma può essere disabilitato.</p> </td>
-   <td>Evitate di eliminare o disattivare questo account, poiché influirà negativamente sul funzionamento delle istanze dell'autore. Se vi sono dei requisiti di sicurezza che vi impongono di eliminarli, accertatevi di verificare correttamente gli effetti che ha sui vostri sistemi prima.</td>
+   <td>Evitate di eliminare o disattivare questo account, in quanto influirà negativamente sul funzionamento delle istanze dell'autore. Se vi sono dei requisiti di sicurezza che vi impongono di eliminarli, accertatevi di verificare correttamente gli effetti che ha sui vostri sistemi prima.</td>
   </tr>
   <tr>
-   <td><p>author</p> <p>Password predefinita:author</p> </td>
+   <td><p>author</p> <p>Password predefinita: author</p> </td>
    <td>User</td>
    <td><p>Un account autore autorizzato a scrivere in /content. Include i privilegi di collaboratore e di surfer.</p> <p>Può essere utilizzato come webmaster in quanto ha accesso all'intera struttura /content.</p> <p>Questo non è un utente incorporato, ma un altro utente dimostrativo geometrixx</p> </td>
    <td><p>Adobe consiglia di eliminare completamente l’account o di cambiare la password rispetto all’impostazione predefinita.</p> <p>Preferibilmente all'installazione, anche se può essere fatto dopo.</p> </td>
@@ -131,7 +134,7 @@ Le tabelle seguenti elencano ciascuna voce con:
   <tr>
    <td>workflow-users</td>
    <td>Gruppo</td>
-   <td><p>Un utente che partecipa a un flusso di lavoro deve essere membro del gruppo utenti del flusso di lavoro. Questo gli dà pieno accesso: /etc/workflow/istanze in modo che possa aggiornare l’istanza del flusso di lavoro.</p> <p>Il gruppo è incluso nell’installazione standard, ma dovete aggiungere manualmente gli utenti al gruppo.</p> </td>
+   <td><p>Un utente che partecipa a un flusso di lavoro deve essere membro del gruppo utenti del flusso di lavoro. Questo gli dà pieno accesso a: /etc/workflow/istanze in modo che possa aggiornare l’istanza del flusso di lavoro.</p> <p>Il gruppo è incluso nell’installazione standard, ma dovete aggiungere manualmente gli utenti al gruppo.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -150,7 +153,7 @@ La posizione del segno di spunta nella griglia indica anche le autorizzazioni di
 
 ### Azioni {#actions}
 
-È possibile eseguire azioni su una pagina (risorsa). Per ogni pagina nella gerarchia, potete specificare quale azione l&#39;utente può intraprendere sulla pagina. [Le autorizzazioni](#permissions-and-acls) consentono di consentire o negare un’azione.
+Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina nella gerarchia, potete specificare quale azione l&#39;utente può intraprendere sulla pagina. [Le autorizzazioni](#permissions-and-acls) consentono di consentire o negare un’azione.
 
 <table>
  <tbody>
@@ -208,7 +211,7 @@ La posizione del segno di spunta nella griglia indica anche le autorizzazioni di
 
 AEM WCM utilizza gli elenchi di controllo degli accessi per organizzare le autorizzazioni applicate alle varie pagine.
 
-Gli elenchi di controllo degli accessi sono composti di singole autorizzazioni e vengono utilizzati per determinare l’ordine in cui tali autorizzazioni vengono effettivamente applicate. L&#39;elenco è formato in base alla gerarchia delle pagine in esame. Questo elenco viene quindi analizzato dal basso fino a ottenere la prima autorizzazione appropriata per l’applicazione a una pagina.
+Gli elenchi di controllo degli accessi sono composti di singole autorizzazioni e vengono utilizzati per determinare l’ordine in cui tali autorizzazioni vengono effettivamente applicate. L&#39;elenco è formato in base alla gerarchia delle pagine in esame. L’elenco viene quindi analizzato dal basso fino a ottenere la prima autorizzazione appropriata per l’applicazione a una pagina.
 
 >[!NOTE]
 >
@@ -217,7 +220,7 @@ Gli elenchi di controllo degli accessi sono composti di singole autorizzazioni e
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Consente a tutti l&#39;accesso in lettura.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Consente a tutti l&#39;accesso in lettura.
 >`/home/users/geometrixx-outdoors`: Consente a tutti di accedere in lettura a `*/profile*` e
->`*/social/relationships/following/*` &quot;merge_preserve&quot;.
+>`*/social/relationships/following/*`.
 >
 >L&#39;applicazione personalizzata può impostare l&#39;accesso per altre relazioni, ad esempio `*/social/relationships/friend/*` o `*/social/relationships/pending-following/*`.
 >
@@ -248,7 +251,7 @@ Per un&#39;azione in un determinato percorso:
  <tbody>
   <tr>
    <td>* (asterisco)</td>
-   <td>Esiste almeno una voce locale (efficace o inefficace). Questi ACL con caratteri jolly sono definiti in CRX.</td>
+   <td>Vi è almeno una voce locale (efficace o inefficace). Questi ACL con caratteri jolly sono definiti in CRX.</td>
   </tr>
   <tr>
    <td>! (punto esclamativo)</td>
@@ -285,7 +288,7 @@ Di seguito sono riportate alcune raccomandazioni sulla gestione degli elenchi di
    Questo semplificherà la manutenzione, poiché il numero di gruppi è molto inferiore al numero di utenti, e anche meno volatile.
 
 * Se desiderate che un gruppo/utente possa solo modificare le pagine, non consentite loro di creare o negare i diritti. Concedi loro solo diritti di modifica e lettura.
-* Utilizzate Nega con attenzione. Per quanto possibile utilizzare solo Consenti.
+* Utilizzate Nega con cautela. Per quanto possibile utilizzare solo Consenti.
 
    L’utilizzo di Rifiuta può causare effetti imprevisti se le autorizzazioni vengono applicate in un ordine diverso da quello previsto. Se un utente è membro di più di un gruppo, le istruzioni Deny di un gruppo possono annullare l&#39;istruzione Allow di un altro gruppo o viceversa. È difficile mantenere una panoramica quando questo accade e può facilmente portare a risultati imprevisti, mentre Consenti assegnazioni non causano tali conflitti.
 
@@ -293,9 +296,9 @@ Di seguito sono riportate alcune raccomandazioni sulla gestione degli elenchi di
 
 Prima di modificare entrambe le autorizzazioni, accertatevi di comprenderne il funzionamento e interrelazionarvi. Consultate la documentazione CRX per illustrare in che modo AEM WCM [valuta i diritti](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) di accesso ed esempi sulla configurazione degli elenchi di controllo di accesso.
 
-### Autorizzazioni {#permissions}
+### Autorizzazioni  {#permissions}
 
-Le autorizzazioni consentono a utenti e gruppi di accedere alle funzionalità AEM sulle pagine AEM.
+Le autorizzazioni consentono a utenti e gruppi di accedere alle funzionalità di AEM sulle pagine AEM.
 
 Le autorizzazioni vengono cercate per percorso espandendo/comprimendo i nodi e l&#39;ereditarietà delle autorizzazioni può essere tracciata fino al nodo principale.
 
@@ -353,7 +356,7 @@ Questo consente agli account del soggetto di completare le attività come se uti
 
 >[!CAUTION]
 >
->Se un account ne rappresenta un altro è molto difficile da vedere. Una voce viene inserita nel registro di controllo quando la rappresentazione inizia e termina, ma gli altri file di registro (come il registro di accesso) non contengono informazioni sul fatto che la rappresentazione si è verificata sugli eventi. Quindi se l&#39;utente-B rappresenta l&#39;utente-A, tutti gli eventi avranno l&#39;aspetto di essere eseguiti personalmente dall&#39;utente-A.
+>Se un account ne rappresenta un altro è molto difficile da vedere. Una voce viene inserita nel registro di controllo quando la rappresentazione inizia e termina, ma gli altri file di registro (come il registro di accesso) non contengono informazioni sul fatto che la rappresentazione si è verificata sugli eventi. Pertanto, se l&#39;utente-B rappresenta l&#39;utente-A, tutti gli eventi avranno l&#39;aspetto di essere eseguiti personalmente dall&#39;utente-A.
 
 >[!CAUTION]
 >
@@ -361,15 +364,15 @@ Questo consente agli account del soggetto di completare le attività come se uti
 >
 >Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 
-### Best practice {#best-practices}
+### Best practice   {#best-practices}
 
 Di seguito vengono descritte le procedure ottimali per l&#39;utilizzo di autorizzazioni e privilegi:
 
 | Regola | Motivo |
 |--- |--- |
 | *Usa gruppi* | Evitate di assegnare i diritti di accesso in base agli utenti. I motivi sono molteplici:<ul><li>Gli utenti sono molti più numerosi dei gruppi, quindi i gruppi semplificano la struttura.</li><li>I gruppi forniscono una panoramica su tutti gli account.</li> <li>L&#39;ereditarietà è più semplice con i gruppi.</li><li>Gli utenti vanno e vengono. I gruppi sono a lungo termine.</li></ul> |
-| *Sii positivo* | Utilizzate sempre le istruzioni Allow (Consenti) per specificare i diritti del gruppo (ove possibile). Evitare di utilizzare un&#39;istruzione Rifiuta. I gruppi vengono valutati in ordine e l&#39;ordine può essere definito in modo diverso per utente. In altre parole: È possibile che l&#39;ordine in cui le istruzioni vengono implementate e valutate sia limitato. Se si utilizzano solo le istruzioni Consenti, l&#39;ordine non ha importanza. |
-| *Mantieni semplice* | Investire un po&#39; di tempo e pensare quando si configura una nuova installazione sarà ben ripagato. L&#39;applicazione di una struttura chiara semplificherà la manutenzione e l&#39;amministrazione in corso, garantendo che sia i colleghi attuali che i futuri successori possano capire facilmente cosa viene implementato. |
+| *Sii positivo* | Utilizzate sempre le istruzioni Allow (Consenti) per specificare i diritti del gruppo (ove possibile). Evitare di utilizzare un&#39;istruzione Rifiuta. I gruppi vengono valutati in ordine e l&#39;ordine può essere definito in modo diverso per utente. In altre parole: È possibile che l&#39;ordine in cui le istruzioni vengono implementate e valutate sia limitato. Se si utilizzano solo le istruzioni Allow (Consenti), l&#39;ordine non ha importanza. |
+| *Mantieni semplice* | Investire un po&#39; di tempo e pensare quando si configura una nuova installazione sarà ben ripagato. L&#39;applicazione di una struttura chiara semplificherà la manutenzione e l&#39;amministrazione in corso, garantendo che sia i colleghi attuali che i futuri successori possano comprendere facilmente ciò che viene implementato. |
 | *Prova* | Utilizzate un&#39;installazione di test per esercitarvi e assicurarvi di comprendere le relazioni tra i vari utenti e gruppi. |
 | *Utenti/gruppi predefiniti* | Aggiornate sempre gli utenti e i gruppi predefiniti subito dopo l’installazione per evitare problemi di sicurezza. |
 
@@ -381,7 +384,7 @@ Un gruppo è un set di utenti.
 
 Entrambi possono essere configurati utilizzando la funzionalità Amministrazione utente nella console di sicurezza.
 
-### Accesso all&#39;amministrazione utenti con la console di sicurezza {#accessing-user-administration-with-the-security-console}
+### Accesso all&#39;amministrazione degli utenti con la console di sicurezza {#accessing-user-administration-with-the-security-console}
 
 Potete accedere a tutti gli utenti, i gruppi e le autorizzazioni associate utilizzando la console Protezione. Tutte le procedure descritte in questa sezione vengono eseguite in questa finestra.
 
@@ -407,14 +410,14 @@ Le schede forniscono l&#39;accesso a varie configurazioni:
 
 | Scheda | Descrizione |
 |--- |--- |
-| Filtro | Un meccanismo per filtrare gli utenti e/o i gruppi elencati. Consultate [Filtrare utenti e gruppi](#filtering-users-and-groups). |
+| Filtro, casella | Un meccanismo per filtrare gli utenti e/o i gruppi elencati. Consultate [Filtrare utenti e gruppi](#filtering-users-and-groups). |
 | Nascondi utenti | Un interruttore di attivazione/disattivazione che nasconderà tutti gli utenti elencati, lasciando solo i gruppi. Consultate [Nascondere utenti e gruppi](#hiding-users-and-groups). |
 | Nascondi gruppi | Un interruttore di attivazione/disattivazione che nasconderà tutti i gruppi elencati, lasciando solo gli utenti. Consultate [Nascondere utenti e gruppi](#hiding-users-and-groups). |
 | Modifica | Un menu che consente di creare ed eliminare nonché attivare e disattivare utenti o gruppi. Consultate [Creazione di utenti e gruppi](#creating-users-and-groups) ed [Eliminazione di utenti e gruppi](#deleting-users-and-groups). |
 | Proprietà | Elenca le informazioni sull’utente o sul gruppo che possono includere informazioni e-mail, una descrizione e un nome. Consente inoltre di modificare la password di un utente. Consultate [Creazione di utenti e gruppi](#creating-users-and-groups), [Modifica delle proprietà](#modifying-user-and-group-properties) utente e gruppo e [Modifica della password](#changing-a-user-password)utente. |
 | Gruppi | Elenca tutti i gruppi a cui appartiene l&#39;utente o il gruppo selezionato. Potete assegnare l’utente o i gruppi selezionati ad altri gruppi o rimuoverli dai gruppi. Consultate [Gruppi](#adding-users-or-groups-to-a-group). |
 | Membri | Disponibile solo per i gruppi. Elenca i membri di un particolare gruppo. Vedere [Membri](#members-adding-users-or-groups-to-a-group). |
-| Autorizzazioni | Potete assegnare le autorizzazioni a un utente o a un gruppo. Consente di controllare quanto segue:<ul><li>Autorizzazioni relative a pagine/nodi specifici. Consultate [Impostazione delle autorizzazioni](#setting-permissions). </li><li>Autorizzazioni relative alla creazione ed eliminazione di pagine e modifiche gerarchiche. ??? consente di [assegnare privilegi](#settingprivileges), ad esempio la modifica della gerarchia, che consente di creare ed eliminare pagine,</li><li>Autorizzazioni correlate ai privilegi [di](#setting-replication-privileges) replica (in genere dall’autore alla pubblicazione) in base a un percorso.</li></ul> |
+| Autorizzazioni  | Potete assegnare le autorizzazioni a un utente o a un gruppo. Consente di controllare quanto segue:<ul><li>Autorizzazioni relative a pagine/nodi specifici. Consultate [Impostazione delle autorizzazioni](#setting-permissions). </li><li>Autorizzazioni relative alla creazione ed eliminazione di pagine e modifiche gerarchiche. ??? consente di [allocare privilegi](#settingprivileges), ad esempio la modifica della gerarchia, che consente di creare ed eliminare pagine,</li><li>Autorizzazioni correlate ai privilegi [di](#setting-replication-privileges) replica (in genere dall’autore alla pubblicazione) in base a un percorso.</li></ul> |
 | Impersonatori | Consente a un altro utente di rappresentare l’account. Utile quando un utente deve agire per conto di un altro utente. Consultate [Impersonazione di utenti](#impersonating-another-user). |
 | Preferenze | Imposta [le preferenze per il gruppo o l’utente](#setting-user-and-group-preferences). Ad esempio, preferenze per la lingua. |
 
@@ -437,7 +440,7 @@ Nascondere utenti o gruppi è un altro modo per filtrare l’elenco di tutti gli
 
 Per nascondere utenti e gruppi:
 
-1. Nella console **Protezione** , fate clic su **Nascondi utenti** o **Nascondi gruppi**. Il pulsante selezionato viene evidenziato.
+1. Nella console **Protezione** , fate clic su **Nascondi utenti** o su **Nascondi gruppi**. Il pulsante selezionato viene evidenziato.
 
    ![cqcartolaryhideusers](assets/cqsecurityhideusers.png)
 
@@ -490,7 +493,7 @@ Per modificare la password di un utente, effettuate le seguenti operazioni.
 >[!NOTE]
 >
 >Non potete usare la console Protezione per cambiare la password dell&#39;amministratore. Per modificare la password dell&#39;account amministratore, utilizzate la console [](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) Utenti fornita da Granite Operations.
-
+> Se si utilizza AEM Forms su JEE, non utilizzare le istruzioni riportate di seguito per modificare la password, ma utilizzare AEM Forms sulla console di amministrazione JEE (/adminui) per modificare la password.
 
 1. Nella console **Protezione** , fate doppio clic sul nome utente per il quale desiderate cambiare la password.
 1. Fare clic sulla scheda **Proprietà** (se non è già attiva).
@@ -546,7 +549,7 @@ Per aggiungere membri a un gruppo in un determinato percorso:
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. Selezionate la casella di controllo nella colonna **Membro** per i membri per i quali desiderate disporre delle autorizzazioni per tale percorso. Deselezionate la casella di controllo relativa al membro per il quale desiderate rimuovere le autorizzazioni. Nella cella a cui sono state apportate modifiche viene visualizzato un triangolo rosso.
+1. Selezionate la casella di controllo nella colonna **Membro** per i membri per i quali desiderate disporre delle autorizzazioni per tale percorso. Deselezionare la casella di controllo relativa al membro per il quale si desidera rimuovere le autorizzazioni. Nella cella a cui sono state apportate modifiche viene visualizzato un triangolo rosso.
 1. Fate clic su **OK** per salvare le modifiche.
 
 ### Rimozione di utenti o gruppi da gruppi {#removing-users-or-groups-from-groups}
@@ -593,7 +596,7 @@ Per rimuovere membri da un gruppo a un determinato percorso:
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. Selezionate la casella di controllo nella colonna **Membro** per i membri per i quali desiderate disporre delle autorizzazioni per tale percorso. Deselezionate la casella di controllo relativa al membro per il quale desiderate rimuovere le autorizzazioni. Nella cella a cui sono state apportate modifiche viene visualizzato un triangolo rosso.
+1. Selezionate la casella di controllo nella colonna **Membro** per i membri per i quali desiderate disporre delle autorizzazioni per tale percorso. Deselezionare la casella di controllo relativa al membro per il quale si desidera rimuovere le autorizzazioni. Nella cella a cui sono state apportate modifiche viene visualizzato un triangolo rosso.
 1. Fate clic su **OK** per salvare le modifiche.
 
 ### Sincronizzazione utente {#user-synchronization}
@@ -686,7 +689,7 @@ Utilizzare questa funzione con cautela, in quanto può consentire agli utenti di
 
 Esistono diversi scenari in cui potrebbe essere utile utilizzare questa funzionalità, tra cui:
 
-* Se sei fuori ufficio, puoi permettere ad un&#39;altra persona di impersonarti mentre sei via. Utilizzando questa funzione, potete assicurarvi che qualcuno disponga dei diritti di accesso e non dovete modificare un profilo utente o immettere la password.
+* Se sei fuori ufficio, puoi permettere ad un&#39;altra persona di impersonarti mentre sei via. Utilizzando questa funzione, potete assicurarvi che qualcuno disponga dei diritti di accesso e non sia necessario modificare un profilo utente o fornire la password.
 * Può essere utilizzato a scopo di debug. Ad esempio, per vedere come il sito Web cerca un utente con diritti di accesso limitati. Inoltre, se un utente si lamenta di problemi tecnici, puoi impersonare tale utente per diagnosticare e risolvere il problema.
 
 Per rappresentare un utente esistente:
@@ -726,7 +729,7 @@ Per impostare utenti o amministratori in modo che dispongano dei privilegi per e
 
 ### Estensione dei privilegi a livello di progetto {#extending-privileges-on-a-project-level}
 
-Se intendete implementare i privilegi specifici dell’applicazione, le informazioni seguenti descrivono ciò che dovete sapere per implementare un privilegio personalizzato e come applicarlo in CQ:
+Se intendete implementare i privilegi specifici dell’applicazione, le seguenti informazioni descrivono cosa dovete sapere per implementare un privilegio personalizzato e come applicarlo in CQ:
 
 Il privilegio di modifica gerarchica è coperto da una combinazione di privilegi jcr. Il privilegio di replica è denominato **crx:repliche** memorizzato/valutato insieme ad altri privilegi nell&#39;archivio jcr. Essa non è tuttavia applicata a livello di CCR.
 
