@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +39,7 @@ Per il componente deve essere definito innanzitutto un modello Sling.
 >
 >Per un esempio di utilizzo di Sling Models, consultate l’articolo [Sviluppo di Sling Model Exporter in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
 
-La classe di implementazione del modello Sling deve essere annotata con quanto segue:
+La classe di implementazione del modello Sling deve essere annotata con le seguenti annotazioni:
 
 ```java
 @Model(... adapters = {..., ComponentExporter.class})
@@ -56,6 +59,16 @@ Inoltre, questo specifica che la classe Sling Model può essere adattata all&#39
 >
 >Le `ExporterConstants` e `ComponentExporter` le classi provengono dal `com.adobe.cq.export.json` bundle.
 
+### Utilizzo di più selettori {#multiple-selectors}
+
+Sebbene non sia un caso d’uso standard, è possibile configurare più selettori oltre al `model` selettore.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+In tal caso, tuttavia, il `model` selettore deve essere il primo e l&#39;estensione deve essere `.json`.
+
 ## Annotazione dell&#39;interfaccia del modello Sling {#annotate-the-sling-model-interface}
 
 Per essere presa in considerazione dal framework JSON Exporter, l&#39;interfaccia Model dovrebbe implementare l&#39; `ComponentExporter` interfaccia (o `ContainerExporter`, nel caso di un componente contenitore).
@@ -66,7 +79,7 @@ L&#39;interfaccia Model deve essere annotata correttamente per definire i metodi
 
 ## Esempio {#example}
 
-I componenti core hanno supportato l’esportazione JSON dalla release [1.1.0 dei componenti](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) core e possono essere utilizzati come riferimento.
+I componenti core hanno supportato l’esportazione JSON dalla release [1.1.0 dei componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core e possono essere utilizzati come riferimento.
 
 Per un esempio, consultate Implementazione del modello Sling del componente Image Core e la relativa interfaccia annotata.
 
@@ -86,5 +99,5 @@ Per maggiori dettagli, consulta:
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Esportatore JSON per Content Services](/help/sites-developing/json-exporter.md)
-* [Componenti](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) di base e componente Frammento di [contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) di base e componente Frammento di [contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
