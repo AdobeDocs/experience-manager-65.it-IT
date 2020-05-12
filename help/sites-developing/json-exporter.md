@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ AEM Content Services è progettato per rendere più generalizzata la descrizione
 
 Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
 
-* Applicazioni a pagina singola
+* [Applicazioni a pagina singola](spa-walkthrough.md)
 * Applicazioni mobili native
 * altri canali e punti di contatto esterni ad AEM
 
@@ -35,7 +38,7 @@ Con frammenti di contenuto che utilizzano contenuto strutturato, potete fornire 
 
 Utilizzando AEM JSON Export è possibile distribuire il contenuto di una pagina AEM (y) nel formato del modello di dati JSON. Questo può essere utilizzato dalle vostre applicazioni.
 
-In AEM la consegna viene ottenuta utilizzando il suffisso
+In AEM la distribuzione viene ottenuta utilizzando il selettore `model` e l’ `.json` estensione.
 
 `.model.json`
 
@@ -55,7 +58,7 @@ Questo avviene utilizzando l&#39;intero percorso del frammento (tramite il `jcr:
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
-La pagina può contenere un singolo frammento di contenuto o più componenti di vari tipi. È inoltre possibile utilizzare meccanismi come i componenti elenco per cercare automaticamente contenuti rilevanti.
+La pagina può contenere un singolo frammento di contenuto o più componenti di vari tipi. È inoltre possibile utilizzare meccanismi come i componenti elenco per cercare automaticamente i contenuti rilevanti.
 
 * Ad esempio, un URL come:
 
@@ -71,13 +74,17 @@ La pagina può contenere un singolo frammento di contenuto o più componenti di 
    >
    >È possibile [adattare i propri componenti](/help/sites-developing/json-exporter-components.md) per accedere e utilizzare questi dati.
 
+   >[!NOTE]
+   >
+   >Sebbene non sia un&#39;implementazione standard, [più selettori sono supportati,](json-exporter-components.md#multiple-selectors) ma `model` devono essere i primi.
+
 ### Ulteriori informazioni {#further-information}
 
 Consulta anche:
 
-* API HTTP Assets
+* API HTTP di Assets
 
-   * [API HTTP Assets](/help/assets/mac-api-assets.md)
+   * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
 * Modelli Sling:
 
@@ -85,7 +92,7 @@ Consulta anche:
 
 * AEM con JSON:
 
-   * [Come ottenere informazioni sulla pagina in formato JSON](/help/sites-developing/pageinfo.md)
+   * [Ottenimento di informazioni sulla pagina in formato JSON](/help/sites-developing/pageinfo.md)
 
 ## Related Documentation {#related-documentation}
 
@@ -97,5 +104,5 @@ Per maggiori dettagli, consulta:
 * [Authoring con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 * [Abilitazione dell&#39;esportazione JSON per un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componenti](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) di base e componente Frammento di [contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) di base e componente Frammento di [contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
