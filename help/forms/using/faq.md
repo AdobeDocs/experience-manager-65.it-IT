@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+workflow-type: tm+mt
+source-wordcount: '1970'
+ht-degree: 0%
 
 ---
 
@@ -88,7 +91,7 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 
 1. Perché alcuni elementi di testo vengono troncati o visualizzati in modo non corretto in HTML5?
 
-   Risposta: Se a un elemento di testo Disegno o Didascalia non è stato assegnato spazio sufficiente per visualizzare il contenuto, il testo appare troncato nella rappresentazione del modulo mobile. Questo troncamento è visibile anche nella vista Progettazione di AEM Forms Designer. Anche se questo troncamento può essere gestito nei PDF, non può essere gestito nei moduli HTML5. Per evitare il problema, lasciare spazio sufficiente a Disegno o Didascalia testo in modo che non venga troncato in modalità di progettazione di AEM Forms Designer.
+   Risposta: Se a un elemento di testo Disegno o Didascalia non è stato assegnato spazio sufficiente per visualizzare il contenuto, il testo appare troncato nella rappresentazione del modulo per dispositivi mobili. Questo troncamento è visibile anche nella vista Progettazione di AEM Forms Designer. Anche se questo troncamento può essere gestito nei PDF, non può essere gestito nei moduli HTML5. Per evitare il problema, lasciare spazio sufficiente a Disegno o Didascalia testo in modo che non venga troncato in modalità di progettazione di AEM Forms Designer.
 
 1. Osservo problemi di layout relativi a contenuti mancanti o sovrapposti. Qual è la ragione?
 
@@ -164,6 +167,10 @@ Sono presenti alcune domande frequenti sul layout, il supporto degli script e l&
 1. Perché gli assistenti vocali non funzionano correttamente con l&#39;oggetto campo Data/Ora?
 
    Gli assistenti vocali non supportano i campi data/ora. Tuttavia, è possibile inserire manualmente la data/ora nel campo per consentire all&#39;assistente vocale di leggerlo. Utilizzare il testo descrittivo o dell&#39;assistente vocale per indicare all&#39;utente di selezionare manualmente la data e l&#39;ora del campo.
+
+1. I moduli HTML5 supportano pattern di visualizzazione per i campi mobili?
+
+   Risposta: I moduli HTML5 non supportano i pattern di visualizzazione per i campi mobili.
 
 ### Scripting {#scripting}
 
