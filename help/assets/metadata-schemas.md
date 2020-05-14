@@ -3,9 +3,9 @@ title: 'Schemi di metadati per definire il layout della pagina delle proprietà 
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39066500057d364ccee57f01f045c11d634b2d0e
+source-git-commit: 2366abc3be015fa637621f235edb8e8d79e51372
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2725'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettu
 
    In alternativa, seleziona una risorsa e tocca o fai clic sull’icona [!UICONTROL Proprietà] nella barra degli strumenti.
 
-1. Potete modificare diverse proprietà dei metadati nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
+1. Potete modificare le varie proprietà di metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
 
    ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
 
