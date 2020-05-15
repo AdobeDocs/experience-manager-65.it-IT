@@ -1,10 +1,13 @@
 ---
-title: Gestisci le tue risorse digitali in [!DNL Risorse Adobe Experience Manager].
+title: Gestione delle risorse digitali in [!DNL Adobe Experience Manager Assets].
 description: Scopri le attività di gestione delle risorse come caricare, scaricare, modificare, cercare, eliminare, annotare e aggiornare le risorse digitali.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1321aa3421455d78fd4562d6cb524aa232ee2ce1
+source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+workflow-type: tm+mt
+source-wordcount: '9347'
+ht-degree: 5%
 
 ---
 
@@ -503,7 +506,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    **Eliminare una rappresentazione**
 
-   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi toccate o fate clic sull&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti.
+   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi toccate o fate clic sull&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti. Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare Experience Manager per eliminare rappresentazioni specifiche o per eliminare le risorse e caricare nuovamente le risorse eliminate.
 
    ![Opzione per eliminare una rappresentazione](assets/delete_renditionicon.png)
 
