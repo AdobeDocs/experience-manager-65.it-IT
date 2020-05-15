@@ -3,7 +3,10 @@ title: Report sulle risorse digitali
 description: Comprendi i rapporti sulle tue risorse in Risorse AEM che ti aiutano a capire l’utilizzo, l’attività e la condivisione delle tue risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 15%
 
 ---
 
@@ -37,8 +40,7 @@ Risorse AEM genera i seguenti rapporti standard:
 Gli amministratori di AEM possono generare e personalizzare facilmente questi rapporti per la vostra implementazione. Per generare un rapporto, un amministratore può effettuare le seguenti operazioni:
 
 1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
-
-![](assets/AssetsReportNavigation.png)
+   ![](assets/AssetsReportNavigation.png)
 
 1. Nella pagina Rapporti  risorse, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto da creare e fate clic su **[!UICONTROL Avanti]**.
@@ -111,6 +113,8 @@ Puoi aggiungere colonne personalizzate ai report seguenti per visualizzare più 
 * Pubblicazione
 * Pubblicazione Brand Portal
 * File
+
+Per aggiungere colonne personalizzate a questi rapporti, procedere come segue:
 
 1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
 1. Nella pagina Rapporti  risorse, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
