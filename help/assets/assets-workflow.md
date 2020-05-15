@@ -3,7 +3,10 @@ title: Elabora risorse per eseguire processi aziendali, eseguire audit, ottenere
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Per l’elaborazione delle risorse, [!DNL Experience Manager] utilizza i flussi di lavoro. I flussi di lavoro consentono di automatizzare la logica o le attività aziendali. Per impostazione predefinita vengono forniti passaggi granulari per eseguire attività specifiche e gli sviluppatori possono creare i propri passi personalizzati. Questi passaggi possono essere combinati in un ordine logico per creare flussi di lavoro. Ad esempio, un flusso di lavoro può applicare una filigrana alle immagini caricate in base a criteri specifici, ad esempio la cartella in cui viene caricata, la risoluzione dell’immagine e così via. Un altro esempio è rappresentato da un flusso di lavoro configurato per inserire filigrane e aggiungere contemporaneamente metadati, creare rappresentazioni, aggiungere tag avanzati e pubblicare contenuti in un archivio dati.
 
-## Flussi di lavoro predefiniti disponibili in [!DNL Experience Manager]{#default-workflows}
+## Flussi di lavoro predefiniti disponibili in [!DNL Experience Manager] {#default-workflows}
 
 Per impostazione predefinita, tutte le risorse caricate vengono elaborate utilizzando il flusso di lavoro Aggiorna risorsa  DAM. Il flusso di lavoro viene eseguito per ciascuna risorsa caricata ed esegue attività di base per la gestione delle risorse come generazione di rappresentazioni, remix di metadati, estrazione di pagina, estrazione di contenuti multimediali e transcodifica.
 
@@ -28,13 +31,13 @@ Per visualizzare i vari modelli di workflow disponibili per impostazione predefi
 
 ## Applicazione di flussi di lavoro per elaborare le risorse {#applying-workflows-to-assets}
 
-L’applicazione dei flussi di lavoro alle risorse digitali è la stessa utilizzata per le pagine di siti Web. Per una guida completa su come creare e utilizzare i flussi di lavoro, consulta Flussi di lavoro [iniziali](/help/sites-authoring/workflows-participating.md).
+L’applicazione dei flussi di lavoro alle risorse digitali è la stessa utilizzata per le pagine di siti Web. Per una guida completa su come creare e utilizzare i flussi di lavoro, consulta Flussi di lavoro [](/help/sites-authoring/workflows-participating.md)iniziali.
 
 Usate i flussi di lavoro nelle risorse digitali per attivare la risorsa o creare filigrane. Molti dei flussi di lavoro per le risorse vengono automaticamente attivati. Ad esempio, il flusso di lavoro che crea automaticamente una rappresentazione dopo la modifica di un’immagine viene automaticamente attivato.
 
 >[!NOTE]
 >
->Se un flusso di lavoro disponibile nell’interfaccia classica non è disponibile nell’interfaccia touch, come [!UICONTROL Richiesta di attivazione] e [!UICONTROL Richiesta di disattivazione], consultate [Realizzare modelli](/help/sites-developing/workflows-models.md#classic2touchui)di flusso di lavoro.
+>Se un flusso di lavoro disponibile nell’interfaccia classica non è disponibile nell’interfaccia touch, ad esempio [!UICONTROL Richiesta di attivazione] e [!UICONTROL Richiesta di disattivazione], consultate [Realizzare modelli](/help/sites-developing/workflows-models.md#classic2touchui)di flusso di lavoro.
 
 ## Applicazione di un flusso di lavoro a una risorsa {#apply-a-workflow-to-an-asset}
 
@@ -96,6 +99,10 @@ Per un modello di workflow, gli utenti possono creare un modulo di avvio che lo 
 
 * Effettuate una copia del flusso di lavoro Aggiorna risorsa  DAM e modificatelo per l&#39;esecuzione in una gerarchia di cartelle specifica. Questo approccio è utile per alcune cartelle.
 * I passaggi di elaborazione aggiuntivi possono essere aggiunti utilizzando un [OR diviso](/help/sites-developing/workflows-step-ref.md#or-split) in base alle condizioni applicabili a tutte le cartelle richieste.
+
+## Best practice e limitazioni {#best-practices-limitations-tips}
+
+* Considerate le vostre esigenze per tutti i tipi di rappresentazioni durante la progettazione di flussi di lavoro. Se non prevedete la necessità di una rappresentazione in futuro, rimuovete il passaggio di creazione dal flusso di lavoro. Le rappresentazioni non possono essere eliminate in blocco in seguito. Le rappresentazioni indesiderate possono occupare molto spazio di archiviazione dopo un uso prolungato di [!DNL Experience Manager]. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare [!DNL Experience Manager] per eliminare rappresentazioni specifiche oppure eliminare le risorse e caricarle di nuovo.
 
 >[!MORELIKETHIS]
 >
