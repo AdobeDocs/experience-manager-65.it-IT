@@ -1,9 +1,12 @@
 ---
-title: Gestisci risorse composte con riferimenti e risorse con più pagine in [!DNL Adobe Experience Manager].
-description: Scoprite come creare riferimenti a risorse digitali dall'interno di [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
+title: Gestire le risorse composte con riferimenti e risorse di più pagine in [!DNL Adobe Experience Manager].
+description: Scopri come creare riferimenti a risorse digitali dall’interno [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+workflow-type: tm+mt
+source-wordcount: '1359'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Oltre ad eliminare la ridondanza, il riferimento alle risorse nelle [!DNL Adobe 
 
 I riferimenti vengono risolti in base a percorso, ID documento e ID istanza delle risorse a cui viene fatto riferimento.
 
-## Aggiungere risorse digitali come riferimenti in [!DNL Adobe Illustrator]{#refai}
+## Aggiungi risorse digitali come riferimenti in [!DNL Adobe Illustrator] {#refai}
 
 È possibile fare riferimento a risorse digitali esistenti direttamente da un [!DNL Adobe Illustrator] file.
 
@@ -41,7 +44,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 
    *Figura: Riferimenti alle risorse nei dettagli delle risorse.*
 
-## Aggiungere risorse digitali come riferimenti in [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
+## Aggiungi risorse digitali come riferimenti in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
 Per fare riferimento a risorse digitali da un [!DNL InDesign] file, trascinate le risorse sul [!DNL InDesign] file o esportate il [!DNL InDesign] file come archivio ZIP.
 
@@ -63,7 +66,7 @@ Questa procedura è simile all’ [aggiunta di risorse digitali come riferimenti
 1. Avviate il `Unarchiver` flusso di lavoro.
 1. Al termine del flusso di lavoro, i riferimenti nella cartella Links vengono automaticamente indicati come risorse secondarie. Per visualizzare un elenco delle risorse di riferimento, andate alla pagina dei dettagli delle risorse della [!DNL InDesign] risorsa e chiudete la [Barra](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Aggiungere risorse digitali come riferimenti in [!DNL Adobe Photoshop]{#refps}
+## Aggiungi risorse digitali come riferimenti in [!DNL Adobe Photoshop] {#refps}
 
 1. Utilizzate [!DNL Experience Manager] l&#39;app desktop per accedere [!DNL Experience Manager Assets]. Scaricate e visualizzate le risorse nel file system locale. Utilizzate la funzionalità [!UICONTROL Inserisci collegato] in [!DNL Adobe Photoshop]. Consultate [Inserire risorse nell’app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)desktop.
 
@@ -82,7 +85,7 @@ Questa procedura è simile all’ [aggiunta di risorse digitali come riferimenti
 
 ## Creare risorse secondarie {#generate-subassets}
 
-Per le risorse supportate con formati con più pagine — File PDF, file AI [!DNL Microsoft PowerPoint] e [!DNL Apple Keynote] file e [!DNL Adobe InDesign] file — Potete [!DNL Experience Manager] generare risorse secondarie corrispondenti a ogni singola pagina della risorsa originale. Tali risorse secondarie sono collegate alla risorsa *principale* e facilitano la visualizzazione di più pagine. Per tutti gli altri scopi, le attività secondarie sono trattate come attività normali in [!DNL Experience Manager].
+Per le risorse supportate con formati con più pagine — File PDF, file AI [!DNL Microsoft PowerPoint] e [!DNL Apple Keynote] file e [!DNL Adobe InDesign] file — [!DNL Experience Manager] potete generare risorse secondarie corrispondenti a ogni singola pagina della risorsa originale. Tali risorse secondarie sono collegate alla risorsa *principale* e facilitano la visualizzazione di più pagine. Per tutti gli altri scopi, le attività secondarie sono trattate come attività normali in [!DNL Experience Manager].
 
 La generazione di risorse secondarie è disabilitata per impostazione predefinita. Per attivare la generazione di risorse secondarie, effettuate le seguenti operazioni:
 
@@ -125,6 +128,10 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 * **[!UICONTROL L’opzione Panoramica]** pagina consente di visualizzare tutte le risorse secondarie contemporaneamente.
 
 * **[!UICONTROL L&#39;opzione Timeline]** dalla barra a sinistra dopo aver fatto clic sull&#39;icona ![della barra a](assets/do-not-localize/aem_leftrail_contentonly.png) sinistra mostra il flusso di attività per il file.
+
+## Best practice e limitazioni {#best-practice-limitation-tips}
+
+* La generazione di risorse secondarie può richiedere molte risorse per qualsiasi implementazione di Experience Manager. Se generate risorse secondarie quando vengono caricate risorse complesse, aggiungete il passaggio nel flusso di lavoro Aggiorna risorsa DAM. Se generate risorse secondarie su richiesta, create un flusso di lavoro separato per generare le risorse secondarie. Un flusso di lavoro dedicato consente di saltare gli altri passaggi del flusso di lavoro DAM Update Asset e di salvare le risorse di calcolo.
 
 >[!MORELIKETHIS]
 >
