@@ -3,9 +3,9 @@ title: 'Schemi di metadati per definire il layout della pagina delle proprietà 
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2366abc3be015fa637621f235edb8e8d79e51372
+source-git-commit: 69506287c1c8e45d99c3229d701604387bd57ca9
 workflow-type: tm+mt
-source-wordcount: '2725'
+source-wordcount: '2713'
 ht-degree: 10%
 
 ---
@@ -43,9 +43,9 @@ Per visualizzare un elenco di moduli/modelli, nell&#39; [!DNL Experience Manager
 |---|---|---|
 | [!UICONTROL impostazione predefinita] |  | Modulo schema metadati di base per le risorse. |
 |  | I seguenti moduli secondari ereditano le proprietà del modulo [!UICONTROL predefinito] : |  |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio immagine/jpeg, immagine/png e così via. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con sottotipo [!UICONTROL tiff].</li></ul> |
-|  | <ul><li> [!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME &quot;application&quot;, ad esempio application/ pdf, application/ zip e così via. <br>[!UICONTROL pdf]: Modulo schema per risorse con sottotipo pdf. |
-|  | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse con tipo MIME &quot;video&quot;, ad esempio video/avi, video/mp4 e così via. |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Modulo schema per risorse con tipo MIME &quot;image&quot;, ad esempio `image/jpeg`, `image/png`e così via. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con sottotipo [!UICONTROL tiff].</li></ul> |
+|  | <ul><li> [!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME &quot;application&quot;, ad esempio `application/pdf`, `application/zip`e così via. <br>[!UICONTROL pdf]: Modulo schema per risorse con sottotipo pdf. |
+|  | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse con tipo MIME &quot;video&quot;, ad esempio `video/avi``video/mp4` e così via. |
 | [!UICONTROL collection] |  | Modulo schema per le raccolte. |
 | [!UICONTROL contentFragment] |  | Modulo schema per frammenti di contenuto. |
 | [!UICONTROL forms] |  | Questo modulo schema si riferisce ad [Adobe Experience Manager Forms](/help/forms/home.md). |
