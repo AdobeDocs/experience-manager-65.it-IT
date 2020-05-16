@@ -3,14 +3,22 @@ title: Creazione e condivisione di una cartella privata in AEM
 description: Scopri come creare una cartella privata in Risorse Adobe Experience Manager (AEM) e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 979d5074fcf94ca999fd941c77038ab6305cc67d
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 5%
 
 ---
 
 
 # Condivisione di cartelle private {#private-folder-sharing}
 
-Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Experience Manager (AEM) disponibile esclusivamente per l’utente. Potete condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.
+Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Experience Manager (AEM), disponibile esclusivamente per l’utente. Potete condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.
+
+>[!NOTE]
+>
+> La cartella privata ha sempre almeno un membro con il ruolo Proprietario.
+
 
 1. Nella console Risorse, toccate o fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
 
@@ -24,7 +32,7 @@ Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Expe
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. Per condividere la cartella con altri utenti e assegnare loro i privilegi, selezionate la cartella e toccate o fate clic sull’icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
+1. Per condividere la cartella con altri utenti e assegnare loro i privilegi, seleziona la cartella e tocca o fai clic sull’icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -32,13 +40,17 @@ Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Expe
    >
    >La cartella non è visibile ad altri utenti finché non la condividete.
 
-1. Nella pagina Proprietà **** cartella, selezionate un utente dall’elenco **[!UICONTROL Aggiungi utente]** , assegnate un ruolo all’utente nella cartella privata e fate clic su **[!UICONTROL Aggiungi]**.
+1. In the **[!UICONTROL Folder Properties]** page, select a user from the **[!UICONTROL Add User]** list, assign a role to the user on your private folder, and click **[!UICONTROL Add]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
    >[!NOTE]
    >
-   >Potete assegnare diversi ruoli, ad esempio Editor, Proprietario o Visualizzatore all’utente con il quale condividete la cartella. Se assegnate un ruolo Proprietario all’utente, quest’ultimo dispone dei privilegi di Modifica sulla cartella. Inoltre, l’utente può condividere la cartella con altri utenti. Se assegnate un ruolo Editor, l’utente può modificare le risorse presenti nella cartella privata. Se assegnate un ruolo Visualizzatore, l’utente può visualizzare solo le risorse presenti nella cartella privata.
+   >Potete assegnare diversi ruoli, ad esempio Editor, Proprietario o Visualizzatore all’utente con il quale condividete la cartella. Se assegnate un ruolo Proprietario all’utente, quest’ultimo dispone dei privilegi di Modifica sulla cartella. Inoltre, l’utente può condividere la cartella con altri utenti. Se assegnate un ruolo Editor, l’utente può modificare le risorse presenti nella cartella privata. Se assegnate un ruolo Visualizzatore, l’utente può visualizzare solo le risorse presenti nella propria cartella privata.
+
+   >[!NOTE]
+   >
+   > La cartella privata ha sempre almeno un membro con il ruolo Proprietario. Pertanto, l’amministratore non può rimuovere tutti i membri del proprietario da una cartella privata. Tuttavia, per rimuovere i proprietari esistenti dall&#39;amministratore delle cartelle private, è necessario aggiungere altri utenti come proprietari.
 
 1. Fai clic su **[!UICONTROL Salva]**. A seconda del ruolo assegnato, all’utente viene assegnato un set di privilegi nella cartella privata quando accede a Risorse AEM.
 1. Fate clic su **[!UICONTROL OK]** per chiudere il messaggio di conferma.
