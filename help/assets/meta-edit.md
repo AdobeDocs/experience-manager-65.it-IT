@@ -3,9 +3,9 @@ title: Come modificare o aggiungere i metadati
 description: Scoprite i metadati delle risorse [!DNL Adobe Experience Manager Assets] in vari modi per modificarli.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 I metadati sono informazioni aggiuntive sulla risorsa ricercabile. Viene estratto automaticamente quando caricate un’immagine. Potete modificare i metadati esistenti o aggiungere nuove proprietà di metadati ai campi esistenti (ad esempio, quando un campo di metadati è vuoto).
 
-Poiché le organizzazioni necessitano di vocabolari di metadati controllati e affidabili, [!DNL Experience Manager Assets] non consentono l&#39;aggiunta ad hoc di nuove proprietà di metadati. Sebbene gli autori non possano aggiungere nuovi campi di metadati per le risorse, gli sviluppatori possono farlo. Consultate [Creare nuove proprietà di metadati per le risorse](meta-edit.md#editing-metadata-schema).
+Poiché le organizzazioni necessitano di vocabolari di metadati controllati e affidabili, [!DNL Experience Manager Assets] non consentono l&#39;aggiunta su richiesta di nuove proprietà di metadati. Sebbene gli autori non possano aggiungere nuovi campi di metadati per le risorse, gli sviluppatori possono farlo. Consultate [Creare le proprietà dei metadati per le risorse](meta-edit.md#editing-metadata-schema).
 
 ## Modificare i metadati di una risorsa {#editing-metadata-for-an-asset}
 
-Per modificare i metadati:
+Per modificare i metadati, effettuate le seguenti operazioni:
 
 1. Effettua una delle operazioni seguenti:
 
@@ -32,13 +32,13 @@ Per modificare i metadati:
 
    *Figura: Modificate o aggiungete i metadati nella pagina[!UICONTROL Proprietà]risorsa.*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the Assets web interface.
+1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
    >[!NOTE]
    >
    >Se un campo di testo è vuoto, non esiste alcun set di metadati. Potete immettere un valore nel campo e salvarlo per aggiungere la proprietà dei metadati.
 
-Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario originale come parte dei dati XMP. Questa operazione viene eseguita tramite il flusso di lavoro di riscrittura dei [!DNL Experience Manager] metadati. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le proprietà create di recente (comprese le proprietà personalizzate come `cq:tags`) vengono aggiunte insieme allo schema.
+Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario originale come parte dei dati XMP. Il flusso di lavoro per la riscrittura dei metadati aggiunge i metadati al binario originale. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le nuove proprietà (incluse quelle personalizzate come `cq:tags`) vengono aggiunte allo schema.
 
 La funzione di riscrittura XMP è supportata e abilitata per le piattaforme e i formati di file descritti nei requisiti [tecnici.](/help/sites-deploying/technical-requirements.md)
 
