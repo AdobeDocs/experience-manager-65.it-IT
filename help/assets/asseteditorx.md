@@ -3,12 +3,15 @@ title: Estendi editor risorse
 description: Scoprite come estendere le funzionalità di Editor risorse utilizzando componenti personalizzati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '701'
+ht-degree: 13%
 
 ---
 
 
-# Estendi editor risorse {#extending-asset-editor}
+# Extend Asset Editor {#extending-asset-editor}
 
 Editor risorse è la pagina che si apre quando si fa clic su una risorsa reperibile tramite Condivisione risorse per consentire all’utente di modificare tali aspetti della risorsa come metadati, miniature, titoli e tag.
 
@@ -32,7 +35,7 @@ Rispetto al caricamento clientlib predefinito (nei core `init.jsp`), un modello 
 
 * Il modello deve includere la `cq.dam.edit` clientlib (invece di `cq.wcm.edit`).
 
-* clientlib deve essere incluso anche in modalità WCM disabilitata (ad esempio, caricata al momento della **pubblicazione**) per poter eseguire il rendering di predicati, azioni e obiettivi.
+* Per poter eseguire il rendering di predicati, azioni e obiettivi, clientlib deve essere incluso anche in modalità WCM disabilitata (ad esempio, caricata **al momento della pubblicazione**).
 
 Nella maggior parte dei casi, la copia del campione esistente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) deve soddisfare tali esigenze.
 
@@ -40,7 +43,7 @@ Nella maggior parte dei casi, la copia del campione esistente `init.jsp` (`/apps
 
 Alcuni dei componenti di AEM Assets richiedono funzioni JS definite in `component.js`. Copiate questo file nella directory dei componenti e collegatelo.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,7 +53,7 @@ L&#39;esempio carica questa origine javascript in `head.jsp`(`/apps/geometrixx/c
 
 Alcuni dei componenti di Risorse AEM utilizzano la libreria widget di AEM. Per poter eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente azione tag richiede un altro componente.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
@@ -62,7 +65,7 @@ I componenti della pagina di esempio richiedono che tutti i selettori inizino co
 
 L’Editor risorse utilizza il Selettore moduli, che consente di modificare le risorse, in questo caso le risorse, nella stessa pagina del modulo semplicemente aggiungendo all’URL della risorsa un selettore di modulo e il percorso del modulo.
 
-Esempio:
+Ad esempio:
 
 * Pagina modulo semplice: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * Risorsa caricata nella pagina del modulo: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
@@ -73,7 +76,7 @@ Le maniglie del campione in `head.jsp` (`/apps/geometrixx/components/asseteditor
 * Se una risorsa viene caricata, questa disattiva la modalità WCM come parsys e può essere modificata solo in una pagina di modulo normale.
 * Se una risorsa viene caricata, utilizza il titolo invece di quello nella pagina del modulo.
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -113,7 +116,7 @@ Le maniglie del campione in `head.jsp` (`/apps/geometrixx/components/asseteditor
 
 Nella parte HTML, utilizzate il set di titoli precedente (risorsa o titolo della pagina):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -136,7 +139,7 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
 
 1. Aggiungi `samplemeta.jsp` con il seguente snippet:
 
-   ```xml
+   ```javascript
    <%--
    
      Sample metadata field component
@@ -192,11 +195,11 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
    </div>
    ```
 
-1. Per rendere disponibile il componente, è necessario essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE Lite aggiungere un nodo `cq:editConfig` di tipo primario `cq:EditConfig`. Per rimuovere i paragrafi, aggiungete una proprietà con più valori `cq:actions` con un singolo valore di `DELETE`.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore `DELETE`.
 
 1. Passate al browser e sulla pagina di esempio (ad esempio, `asseteditor.html`) passate alla modalità di progettazione e attivate il nuovo componente per il sistema di paragrafi.
 
-1. In modalità **Modifica** , il nuovo componente (ad esempio, Metadati **** campione) è ora disponibile nella barra laterale (nel gruppo Editor **** risorse). Inserite il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo di metadati.
+1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo relativo.
 
 ## Modificare le opzioni di metadati {#modifying-metadata-options}
 
