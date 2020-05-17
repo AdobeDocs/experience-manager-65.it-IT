@@ -3,7 +3,10 @@ title: Guida al ridimensionamento delle risorse
 description: Procedure ottimali per determinare metriche efficienti per stimare l’infrastruttura e le risorse necessarie per distribuire AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 0%
 
 ---
 
@@ -28,21 +31,21 @@ Considerati questi fattori, è necessaria una metodologia per calcolare uno spaz
 1. Ottenete un esempio rappresentativo delle risorse da caricare in AEM. Ad esempio, se intendete caricare nel sistema file PSD, JPG, AI e PDF, è necessario disporre di più immagini di esempio per ciascun formato di file. Inoltre, questi esempi devono essere rappresentativi delle diverse dimensioni di file e complessità delle immagini.
 1. Definire le rappresentazioni da utilizzare.
 1. Create le rappresentazioni in AEM utilizzando ImageMagick o le applicazioni Creative Cloud di Adobe. Oltre alle rappresentazioni specificate dagli utenti, create rappresentazioni pronte all&#39;uso. Per gli utenti che implementano Scene7, potete usare il binario IC per generare le rappresentazioni PTIFF da memorizzare in AEM.
-1. Se prevedete di utilizzare le risorse secondarie, generatele per i tipi di file appropriati. Consultate la documentazione online su come generare pagine di risorse secondarie da file InDesign o file PNG/PDF da livelli Illustrator.
+1. Se prevedete di utilizzare le risorse secondarie, generatele per i tipi di file appropriati.
 1. Confrontate le dimensioni delle immagini di output, delle rappresentazioni e delle risorse secondarie con le immagini originali. Consente di generare un fattore di crescita previsto quando il sistema viene caricato. Ad esempio, se generate rappresentazioni e risorse secondarie con una dimensione combinata di 3 GB dopo aver elaborato 1 GB di risorse, il fattore di crescita della rappresentazione è 3.
 1. Determinate il tempo massimo per il quale le versioni delle risorse devono essere mantenute nel sistema.
 1. Determinate con quale frequenza vengono modificate le risorse esistenti nel sistema. Se AEM viene utilizzato come hub di collaborazione nei flussi di lavoro creativi, la quantità di modifiche è elevata. Se nel sistema vengono caricate solo le risorse finite, questo numero è molto inferiore.
 1. Determinate quante risorse vengono caricate nel sistema ogni mese. Se non si è certi, verificare il numero di risorse attualmente disponibili e dividere il numero per l&#39;età della risorsa più vecchia per calcolare un numero approssimativo.
 
-I passaggi da 1 a 9 consentono di determinare quanto segue:
+Le operazioni descritte sopra consentono di determinare quanto segue:
 
-* Dimensione non elaborata delle risorse da caricare
-* Numero di risorse da caricare
-* Fattore di crescita della rappresentazione
-* Numero di modifiche apportate alle risorse al mese
-* Numero di mesi per mantenere le versioni delle risorse
-* Numero di nuove risorse caricate ogni mese
-* Anni di crescita per allocare spazio per
+* Dimensione non elaborata delle risorse da caricare.
+* Numero di risorse da caricare.
+* Fattore di crescita della rappresentazione.
+* Numero di modifiche apportate alle risorse al mese.
+* Numero di mesi per mantenere le versioni delle risorse.
+* Numero di nuove risorse caricate ogni mese.
+* Anni di crescita per l&#39;allocazione dello spazio di storage.
 
 Potete specificare questi numeri nel foglio di calcolo Ridimensionamento rete per determinare lo spazio totale richiesto per il datastore. È anche uno strumento utile per determinare l’impatto della manutenzione delle versioni delle risorse o della modifica delle risorse in AEM sulla crescita del disco.
 
@@ -52,7 +55,7 @@ I dati di esempio inseriti nello strumento dimostrano l&#39;importanza di esegui
 
 ### Database condivisi {#shared-datastores}
 
-Per i grandi archivi dati, puoi implementare un archivio dati condiviso tramite un archivio dati condiviso su un&#39;unità collegata di rete o tramite un archivio dati S3. In questo caso, non è necessario mantenere una copia dei file binari. Inoltre, un datastore condiviso facilita la replica senza binario e consente di ridurre la larghezza di banda utilizzata per replicare le risorse in ambienti di pubblicazione.
+Per i grandi archivi dati, puoi implementare un archivio dati condiviso tramite un archivio dati condiviso su un&#39;unità collegata di rete o tramite un archivio dati Amazon S3. In questo caso, non è necessario mantenere una copia dei file binari. Inoltre, un datastore condiviso facilita la replica senza binario e consente di ridurre la larghezza di banda utilizzata per replicare le risorse in ambienti di pubblicazione.
 
 #### Casi di utilizzo {#use-cases}
 
@@ -72,7 +75,7 @@ Avere un datastore condiviso, introduce un singolo punto di fallimento in un&#39
 
 I datastores condivisi aumentano anche la complessità delle operazioni, come il processo di raccolta dei rifiuti. Normalmente, è possibile avviare la raccolta dei rifiuti per un archivio dati standalone con un solo clic. Tuttavia, gli archivi di dati condivisi richiedono operazioni di sweep con contrassegno per ogni membro che utilizza l&#39;archivio dati, oltre a eseguire la raccolta effettiva su un singolo nodo.
 
-Per le operazioni AWS, l&#39;implementazione di un&#39;unica posizione centrale (tramite S3), invece di creare un array RAID di volumi EBS, può compensare in modo significativo la complessità e i rischi operativi del sistema.
+Per le operazioni AWS, l&#39;implementazione di una singola posizione centrale (tramite Amazon S3), invece di creare un array RAID di volumi EBS, può compensare in modo significativo la complessità e i rischi operativi del sistema.
 
 #### Problemi di prestazioni {#performance-concerns}
 
