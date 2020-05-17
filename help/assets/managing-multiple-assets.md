@@ -1,23 +1,26 @@
 ---
-title: Gestione di più risorse e raccolte
-description: Scoprite come modificare i metadati di più risorse e raccolte contemporaneamente per diffondere rapidamente le comuni modifiche ai metadati.
+title: Gestire i metadati di molte risorse e raccolte in Adobe Enterprise Manager.
+description: Modificate simultaneamente i metadati di molte risorse e raccolte per diffondere rapidamente le comuni modifiche ai metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 12%
 
 ---
 
 
 # Gestione di risorse e raccolte {#managing-multiple-assets-and-collections}
 
-Risorse Adobe Enterprise Manager (AEM) consente di modificare simultaneamente i metadati di più risorse, in modo da poter rapidamente estendere le comuni modifiche ai metadati alle risorse in blocco. Potete anche modificare i metadati per più raccolte in blocco.
+Risorse Adobe Enterprise Manager consente di modificare simultaneamente i metadati di più risorse, in modo da poter rapidamente estendere le comuni modifiche ai metadati alle risorse in gruppo. Potete anche modificare i metadati per più raccolte in blocco.
 
 Utilizzate la pagina delle proprietà per eseguire modifiche ai metadati su più risorse o raccolte:
 
 * Cambiare le proprietà dei metadati impostando un valore comune
 * Aggiunta o modifica di tag
 
-Per personalizzare la pagina delle proprietà dei metadati, ad esempio aggiungere, modificare, eliminare proprietà dei metadati, utilizzate l&#39;editor dello schema.
+Per personalizzare la pagina delle proprietà dei metadati, incluse l’aggiunta, la modifica, l’eliminazione delle proprietà dei metadati, utilizzate l’editor dello schema.
 
 >[!NOTE]
 >
@@ -52,13 +55,13 @@ Per personalizzare la pagina delle proprietà dei metadati, ad esempio aggiunger
 
 ## Configurare il limite per l&#39;aggiornamento in massa dei metadati {#configlimit}
 
-Per evitare situazioni simili a DOS, AEM limita il numero di parametri supportati in una richiesta Sling. Quando aggiornate i metadati di molte risorse in una sola volta, potete raggiungere il limite massimo e i metadati non vengono aggiornati per altre risorse. AEM genera il seguente avviso nei registri:
+Per evitare situazioni simili a DOS, Enterprise Manager limita il numero di parametri supportati in una richiesta Sling. Quando aggiornate i metadati di molte risorse in una sola volta, potete raggiungere il limite massimo e i metadati non vengono aggiornati per altre risorse. Enterprise Manager genera il seguente avviso nei registri:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Per modificare il limite, accedi alla Console web da **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console web]** e modifica il valore di **[!UICONTROL Maximum POST Parameters (Parametri massimi POST)]** nella configurazione OSGi **[!UICONTROL Apache Sling Request Parameter Handling]**.
+To change the limit, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
 
 >[!MORELIKETHIS]
 >
->* [Modificare le proprietà dei metadati di più raccolte](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Modifica delle proprietà dei metadati di più raccolte](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
 
