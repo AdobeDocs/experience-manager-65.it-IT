@@ -3,7 +3,10 @@ title: Estendere la funzionalità di ricerca di Risorse Adobe Experience Manager
 description: Estendi le funzionalità di ricerca di Risorse Adobe Experience Manager oltre i valori predefiniti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 19%
 
 ---
 
@@ -70,7 +73,7 @@ Per creare un predicato di proprietà:
 
 1. Aggiungi `titlepredicate.jsp`.
 
-   ```xml
+   ```java
    <%--
    
      Sample title predicate component
@@ -163,7 +166,7 @@ Per creare un predicato di gruppo:
 
 1. Aggiungi **titlepredicate.jsp**:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
