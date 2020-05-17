@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,8 @@ Le cartelle sono come directory nei file system tradizionali. Sono contenitori p
 
 **Proprietà**:
 
-* `name`  — Nome della cartella. Equivale all’ultimo segmento nel percorso dell’URL senza estensione
-* `title` — Titolo facoltativo della cartella che può essere visualizzato al posto del nome
+* `name` è il nome della cartella. Equivale all’ultimo segmento nel percorso dell’URL senza estensione.
+* `title` è un titolo facoltativo della cartella che può essere visualizzato al posto del nome.
 
 >[!NOTE]
 >
@@ -55,39 +55,39 @@ Le cartelle sono come directory nei file system tradizionali. Sono contenitori p
 
 **Le cartelle dei collegamenti** presentano tre collegamenti:
 
-* `self`: Collega a se stesso
-* `parent`: Collega alla cartella principale
-* `thumbnail`: (Facoltativo) collegamento alla miniatura di una cartella
+* `self`: Collegarsi a se stesso.
+* `parent`: Collegare la cartella principale.
+* `thumbnail`: (Facoltativo) collegamento alla miniatura di una cartella.
 
 ### Assets {#assets}
 
 In Experience Manager una risorsa contiene i seguenti elementi:
 
-* Proprietà e metadati della risorsa
-* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da PDF o InDesign.
-* Commenti facoltativi
+* Proprietà e metadati della risorsa.
+* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o Adobe InDesign.
+* Commenti facoltativi.
 
 Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto dei frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP Experience Manager Assets.
 
 In Experience Manager una cartella contiene i seguenti componenti:
 
 * Entità: Gli elementi secondari delle risorse sono le relative rappresentazioni.
-* Proprietà
-* Collegamenti
+* Proprietà.
+* Collegamenti.
 
 L&#39;API HTTP Assets include le seguenti funzionalità:
 
-* Recuperare un elenco di cartelle
-* Creare una cartella
-* Creare una risorsa
-* Aggiorna binario risorsa
-* Aggiornare i metadati delle risorse
-* Creare una rappresentazione di una risorsa
-* Aggiornare una rappresentazione di una risorsa
-* Creare un commento sulla risorsa
-* Copiare una cartella o una risorsa
-* Spostare una cartella o una risorsa
-* Eliminare una cartella, una risorsa o una rappresentazione
+* Recuperate un elenco di cartelle.
+* Creare una cartella.
+* Creare una risorsa.
+* Aggiorna binario risorsa.
+* Aggiornare i metadati delle risorse.
+* Creare una rappresentazione di una risorsa.
+* Aggiornare una rappresentazione di una risorsa.
+* Create un commento sulla risorsa.
+* Copiate una cartella o una risorsa.
+* Spostate una cartella o una risorsa.
+* Eliminate una cartella, una risorsa o una rappresentazione.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Crea un nuovo `sling`: `OrderedFolder` nel percorso specificato. Se `*` viene fo
 
 Una chiamata API non riesce con un codice di `500` risposta se il nodo padre del percorso fornito non esiste. Una chiamata restituisce un codice di risposta `409` se la cartella esiste già.
 
-**Parametri**: `name` - Nome cartella
+**Parametri**: `name` è il nome della cartella.
 
 **Richiesta**
 
