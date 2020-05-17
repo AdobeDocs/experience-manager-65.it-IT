@@ -3,7 +3,10 @@ title: Sviluppo proxy delle risorse
 description: Un proxy è un’istanza di AEM che utilizza i proxy worker per elaborare i processi. Scopri come configurare un proxy AEM, le operazioni supportate, i componenti proxy e come sviluppare un lavoratore proxy personalizzato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +83,7 @@ Un lavoratore proxy è un processore responsabile della gestione di un processo 
 
 Esempio di utilizzo delle API:
 
-```xml
+```java
 @Reference
  JobService proxyJobService;
 
@@ -114,7 +117,7 @@ Sia le configurazioni di proxy che quelle di proxy worker sono disponibili trami
 
 Esempio di utilizzo delle API:
 
-```xml
+```java
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
 
