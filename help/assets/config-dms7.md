@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
+source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
 workflow-type: tm+mt
-source-wordcount: '5763'
+source-wordcount: '5782'
 ht-degree: 7%
 
 ---
@@ -167,7 +167,7 @@ La schermata Server immagini stabilisce le impostazioni predefinite per la distr
 
 * **[!UICONTROL Attributi]** richiesta - Queste impostazioni impongono limiti alle immagini che possono essere distribuite dal server.
 * **[!UICONTROL Attributi]** richiesta predefiniti - Queste impostazioni interessano l&#39;aspetto predefinito delle immagini.
-* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle immagini in miniatura.
+* **[!UICONTROL Attributi]** comuni delle miniature: queste impostazioni interessano l’aspetto predefinito delle miniature.
 * **[!UICONTROL Valori predefiniti per i campi]** catalogo: queste impostazioni interessano la risoluzione e il tipo predefinito di miniatura delle immagini.
 * **[!UICONTROL Attributi]** di gestione del colore: queste impostazioni determinano quali profili colore ICC vengono utilizzati.
 * **[!UICONTROL Attributi]** di compatibilità - Questa impostazione consente ai paragrafi iniziali e finali nei livelli di testo di essere trattati come nella versione 3.6 per garantire la compatibilità con le versioni precedenti.
@@ -480,11 +480,20 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
 ### (Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media - Modalità Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**Ottimizzazione dei parametri di processo**
+**Prestazioni sincronizzazione/Scalabilità Suggerimenti per la regolazione**
+
+Per mantenere la modalità Dynamic Media - Scene7 in esecuzione senza problemi, Adobe consiglia i seguenti suggerimenti per l’ottimizzazione delle prestazioni di sincronizzazione/scalabilità:
+
+* Aggiornamento dei parametri di processo predefiniti per l’elaborazione di diversi formati di file.
+* Aggiornamento dei thread di lavoro predefiniti per il flusso di lavoro Granite (risorse video) in coda.
+* Aggiornamento dei thread di lavoro transitori Granite (immagini e risorse non video) predefiniti per il flusso di lavoro in coda.
+* Aggiornamento delle connessioni di caricamento massime nel server Dynamic Media Classic.
+
+#### Aggiornamento dei parametri di processo predefiniti per l’elaborazione di diversi formati di file
 
 Potete ottimizzare i parametri di processo per velocizzare l’elaborazione quando caricate i file. Ad esempio, se caricate file PSD ma non desiderate elaborarli come modelli, potete impostare l’estrazione dei livelli su false (disattivato). In tal caso, il parametro di processo sintonizzato apparirebbe come `process=None&createTemplate=false`.
 
-Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzati&quot; per i file PSD, PDF e Postscript:
+Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzati&quot; per i file PDF, PostScript e PSD:
 
 | Tipo di file | Parametri di processo consigliati |
 | ---| ---|
@@ -493,14 +502,6 @@ Adobe consiglia di utilizzare i seguenti parametri di processo &quot;sintonizzat
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 Per aggiornare uno di questi parametri, segui i passaggi descritti in [Abilitazione del supporto](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)dei parametri di caricamento per i processi di caricamento di risorse/file multimediali dinamici basati su tipo MIME.
-
-**Prestazioni sincronizzazione/Scalabilità Suggerimenti per la regolazione**
-
-Per mantenere la modalità Dynamic Media - Scene7 in esecuzione senza problemi, Adobe consiglia i seguenti suggerimenti per l’ottimizzazione delle prestazioni di sincronizzazione/scalabilità:
-
-* Aggiorna i thread di lavoro predefiniti del flusso di lavoro Granite (risorse video).
-* Aggiorna i thread di lavoro transitori Granite (immagini e risorse non video) predefiniti per il flusso di lavoro transitorio.
-* Aggiornate il numero massimo di connessioni di caricamento al server Dynamic Media Classic.
 
 #### Aggiornamento della coda del flusso di lavoro transitorio Granite {#updating-the-granite-transient-workflow-queue}
 
