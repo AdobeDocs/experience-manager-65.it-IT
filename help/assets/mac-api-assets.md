@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ In Experience Manager una risorsa contiene i seguenti elementi:
 
 Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto dei frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP Experience Manager Assets.
 
-In Experience Manager una cartella contiene i seguenti componenti:
+In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
 
 * Entità: Gli elementi secondari delle risorse sono le relative rappresentazioni.
 * Proprietà.
@@ -95,9 +95,9 @@ L&#39;API HTTP Assets include le seguenti funzionalità:
 
 **Prerequisiti**
 
-1. Passa a `https://[aem_server]:[port]/system/console/configMgr`.
-1. Passate al filtro **CSRF** Adobe Granite.
-1. Accertatevi che la proprietà **Filter Methods** includa: POST, PUT, DELETE.
+* Accesso `https://[aem_server]:[port]/system/console/configMgr`.
+* Passate al filtro **[!UICONTROL CSRF]** Adobe Granite.
+* Accertatevi che la proprietà **[!UICONTROL Filter Methods]** includa: `POST`, `PUT`, `DELETE`.
 
 ## Recuperare un elenco di cartelle {#retrieve-a-folder-listing}
 
@@ -181,14 +181,14 @@ Aggiorna le proprietà dei metadati della risorsa. Se aggiornate una qualsiasi p
 
 Create una nuova rappresentazione di risorsa per una risorsa. Se il nome del parametro della richiesta non viene fornito, il nome del file viene utilizzato come nome di rappresentazione.
 
-**Parametri** I parametri sono `name` per il nome della rappresentazione e `file` come riferimento del file.
+**Parametri**: I parametri sono `name` per il nome della rappresentazione e `file` come riferimento del file.
 
 **Richiesta**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Codici di risposta**
+**Codici** di risposta: I codici di risposta sono:
 
 * 201 - CREATO - se la rappresentazione è stata creata correttamente.
 * 404 - NON TROVATO - se la risorsa non è stata trovata o a cui non è stato possibile accedere all&#39;URI fornito.
@@ -201,7 +201,7 @@ Gli aggiornamenti sostituiscono rispettivamente una rappresentazione di risorsa 
 
 **Richiesta**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Codici** di risposta I codici di risposta sono:
+**Codici** di risposta: I codici di risposta sono:
 
 * 200 - OK - se la rappresentazione è stata aggiornata correttamente.
 * 404 - NON TROVATO - se la risorsa non è stata trovata o a cui non è stato possibile accedere all&#39;URI fornito.
