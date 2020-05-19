@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
+source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
 workflow-type: tm+mt
-source-wordcount: '5782'
+source-wordcount: '5777'
 ht-degree: 7%
 
 ---
@@ -479,8 +479,6 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
    Quando attivate il predefinito, al momento di caricare le risorse su Contenuti multimediali dinamici viene applicato il predefinito per set di batch.
 
 ### (Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media - Modalità Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
-
-**Prestazioni sincronizzazione/Scalabilità Suggerimenti per la regolazione**
 
 Per mantenere la modalità Dynamic Media - Scene7 in esecuzione senza problemi, Adobe consiglia i seguenti suggerimenti per l’ottimizzazione delle prestazioni di sincronizzazione/scalabilità:
 
