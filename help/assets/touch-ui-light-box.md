@@ -3,7 +3,10 @@ title: Lightbox come galleria di immagini personali in Risorse AEM
 description: Leggi Lightbox come galleria di immagini personali in Risorse AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ Se utilizzi Risorse Adobe Experience Manager (AEM), la prima volta che accedi al
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Aggiungi]**, quindi chiudetela per completare il processo. Le risorse selezionate vengono aggiunte a Lightbox.
+1. Nella finestra di dialogo, fate clic su **[!UICONTROL Aggiungi]**, quindi chiudetela per completare il processo. Le risorse selezionate vengono aggiunte a Lightbox.
 1. Per visualizzare Lightbox, passate alla console Raccolte.
-1. Toccate/fate clic su **[!UICONTROL Lightbox]** per visualizzare le risorse al suo interno.
+1. Fate clic su **[!UICONTROL Lightbox]** per visualizzare le risorse al suo interno.
 
    >[!NOTE]
    >
@@ -31,7 +34,7 @@ Se utilizzi Risorse Adobe Experience Manager (AEM), la prima volta che accedi al
 
 ## Rimuovere risorse da Lightbox {#removing-assets-from-lightbox}
 
-1. Passate alla console Raccolte, toccate o fate clic su Lightbox per visualizzarne le risorse.
+1. Passate alla console Raccolte e fate clic su Lightbox per visualizzarne le risorse.
 1. Selezionate le risorse da rimuovere.
-1. Dalla barra degli strumenti, toccate o fate clic su **[!UICONTROL Rimuovi]**.
-1. Nella finestra di dialogo, toccate o fate clic su **[!UICONTROL Rimuovi]** per confermare l’eliminazione. Le risorse vengono eliminate da Lightbox.
+1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Rimuovi]**.
+1. Nella finestra di dialogo, fare clic su **[!UICONTROL Rimuovi]** per confermare l’eliminazione. Le risorse vengono eliminate da Lightbox.
