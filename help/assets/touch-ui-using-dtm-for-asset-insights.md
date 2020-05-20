@@ -3,7 +3,10 @@ title: Abilita approfondimenti risorse tramite DTM
 description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Sebbene sia possibile personalizzare il codice di tracciamento per consentire a 
 
 Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come indicato di seguito.
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Configurare l&#39;istanza di AEM con il servizio cloud DTM](/help/sites-administering/dtm.md)
 
    Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare Impostazioni **** account dall&#39;icona Profilo. Questo passaggio non è richiesto dal punto di vista di Asset Insights, perché l’integrazione di AEM Sites con Asset Insights è ancora in corso.
@@ -28,21 +31,21 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come ind
 1. Accedete a [https://dtm.adobe.com](https://dtm.adobe.com/)e selezionate una Società, a seconda delle necessità.
 1. Creare/aprire una proprietà Web esistente
 
-   * Selezionate la scheda Proprietà **** Web, quindi toccate o fate clic su **[!UICONTROL Aggiungi proprietà]**.
+   * Selezionate la scheda Proprietà **** Web, quindi fate clic su **[!UICONTROL Aggiungi proprietà]**.
 
-   * Aggiornate i campi come appropriato, quindi toccate o fate clic su **[!UICONTROL Crea proprietà]**. Consulta [la documentazione](https://helpx.adobe.com/experience-manager/using/dtm.html).
+   * Aggiornate i campi come appropriato e fate clic su **[!UICONTROL Crea proprietà]**. Consulta [la documentazione](https://helpx.adobe.com/experience-manager/using/dtm.html).
    ![Creare una proprietà Web di modifica](assets/Create-edit-web-property.png)
 
-1. Nella scheda **[!UICONTROL Regole]** , selezionare Regole di caricamento **[!UICONTROL pagina]** dal riquadro di navigazione e toccare o fare clic su **[!UICONTROL Crea nuova regola]**.
+1. Nella scheda **[!UICONTROL Regole]** , selezionare Regole di caricamento **[!UICONTROL pagina]** dal riquadro di navigazione e fare clic su **[!UICONTROL Crea nuova regola]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Espandete **[!UICONTROL Tag]** Javascript/Di Terze Parti. Quindi toccate o fate clic su **[!UICONTROL Aggiungi nuovo script]** nella scheda HTML **** sequenziale per aprire la finestra di dialogo Script.
+1. Espandete **[!UICONTROL Tag]** Javascript/Di Terze Parti. Fate clic su **[!UICONTROL Aggiungi nuovo script]** nella scheda HTML **** sequenziale per aprire la finestra di dialogo Script.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
-1. Toccate/fate clic su **[!UICONTROL Insights Page Tracker]**(Tracciatore pagina approfondimenti), copiate il codice di tracciamento e incollatelo nella finestra di dialogo Script aperta al punto 6. Salva le modifiche.
+1. Click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Fate clic su **[!UICONTROL Insights Page Tracker]**(Tracciatore pagina informazioni approfondite), copiate il codice di tracciamento e incollatelo nella finestra di dialogo Script aperta al punto 6. Salva le modifiche.
 
    >[!NOTE]
    >
@@ -62,7 +65,7 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come ind
 
    ![chlimage_1-61](assets/chlimage_1-197.png)
 
-1. Espandete **[!UICONTROL Personalizza codice]** pagina e toccate o fate clic su **[!UICONTROL Apri editor]**.
+1. Espandete **[!UICONTROL Personalizza codice]** pagina e fate clic su **[!UICONTROL Apri editor]**.
 
    ![chlimage_1-62](assets/chlimage_1-198.png)
 
