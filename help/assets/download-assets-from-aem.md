@@ -3,7 +3,7 @@ title: Scarica le risorse digitali da [!DNL Adobe Experience Manager].
 description: Scoprite come scaricare le risorse [!DNL Adobe Experience Manager] da e attivare o disattivare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Potete scaricare le risorse incluse le rappresentazioni statiche e dinamiche. In
 >
 >I destinatari delle e-mail devono essere membri del `dam-users` gruppo per accedere al collegamento di download ZIP nel messaggio e-mail. Per poter scaricare le risorse, i membri devono disporre delle autorizzazioni necessarie per avviare flussi di lavoro che attivano il download delle risorse.
 
-Per scaricare le risorse, individuate una risorsa, selezionatela e toccate **[!UICONTROL Scarica]** dalla barra degli strumenti. Nella finestra di dialogo risultante, specificate le opzioni di download.
+Per scaricare le risorse, individuate una risorsa, selezionatela e fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Nella finestra di dialogo risultante, specificate le opzioni di download.
 
 Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file multimediali diversi e Set caroselli.
 
