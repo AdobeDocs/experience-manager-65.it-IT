@@ -3,7 +3,10 @@ title: Preparare le risorse per la traduzione
 description: Create le cartelle principali della lingua per preparare le risorse da tradurre e supportare le risorse multilingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -34,16 +37,16 @@ Per preparare le risorse alla conversione, effettuate le seguenti operazioni:
 
 1. Creare la radice della lingua del master della lingua. Ad esempio, la radice della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Verificare che la radice della lingua sia configurata correttamente in base alle informazioni contenute in [Creare una radice](preparing-assets-for-translation.md#creating-a-language-root)della lingua.
 
-1. Aggiungete le risorse al vostro master lingua.
+1. Aggiungete le risorse al modulo master della lingua.
 1. Create la radice della lingua di ciascuna lingua di destinazione per la quale è necessaria una copia della lingua.
 
 ## Creare una radice della lingua {#creating-a-language-root}
 
-Per creare la lingua principale, create una cartella e utilizzate un codice della lingua ISO come valore per la proprietà Name. Dopo aver creato la lingua principale, è possibile creare una copia della lingua a qualsiasi livello all&#39;interno della lingua principale.
+Per creare la directory principale della lingua, create una cartella e utilizzate un codice della lingua ISO come valore per la proprietà Name. Dopo aver creato la lingua principale, è possibile creare una copia della lingua a qualsiasi livello all&#39;interno della lingua principale.
 
 Ad esempio, la pagina principale della copia in lingua italiana della gerarchia di esempi ha `it` come proprietà Name. La proprietà Name viene utilizzata come nome del nodo della risorsa nella directory archivio e pertanto determina il percorso delle risorse. (`https://[aem_server]:[port]/assets.html/content/dam/it/`)
 
-1. Dalla console Risorse, tocca o fai clic su **[!UICONTROL Crea]** e scegli **[!UICONTROL Cartella]** dal menu.
+1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Crea cartella](assets/Create-folder.png)
 
@@ -51,17 +54,17 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
    ![Aggiungi il codice della lingua nella cartella](assets/Add-language-code-in-folder.png)
 
-1. Tocca o fai clic su **[!UICONTROL Crea]**. La radice della lingua viene creata nella console Risorse.
+1. Fai clic su **[!UICONTROL Crea]**. L’elemento principale della lingua viene creato nella console Risorse.
 
 ## Visualizzare le origini della lingua {#viewing-language-roots}
 
 L’interfaccia di AEM fornisce un pannello **[!UICONTROL Riferimenti]** che presenta un elenco delle origini delle lingue create in AEM Assets.
 
 1. Nella console Risorse, selezionate lo schema della lingua per il quale desiderate creare delle copie della lingua.
-1. Tocca o fai clic sull’icona GlobalNav, quindi scegli **[!UICONTROL Riferimenti]** per aprire il riquadro [!UICONTROL Riferimento] .
+1. Fare clic sull&#39;icona GlobalNav e scegliere **[!UICONTROL Riferimenti]** per aprire il riquadro [!UICONTROL Riferimento] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-1. Nel riquadro Riferimenti, fare clic o toccare Copie **[!UICONTROL lingua]**. Il pannello Copie  lingua mostra le copie in lingua delle risorse.
+1. Nel riquadro Riferimenti, fare clic su Copie **[!UICONTROL lingua]**. Il pannello Copie  lingua mostra le copie in lingua delle risorse.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
