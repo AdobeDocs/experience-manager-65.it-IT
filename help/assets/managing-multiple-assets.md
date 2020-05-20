@@ -3,9 +3,9 @@ title: Gestire i metadati di molte risorse e raccolte in Adobe Enterprise Manage
 description: Modificate simultaneamente i metadati di molte risorse e raccolte per diffondere rapidamente le comuni modifiche ai metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,7 @@ Per personalizzare la pagina delle proprietà dei metadati, incluse l’aggiunta
 
 1. Nell’interfaccia utente Risorse, passa alla posizione delle risorse che desideri modificare.
 1. Selezionate le risorse per le quali desiderate modificare le proprietà comuni.
-1. Dalla barra degli strumenti, toccate o fate clic sull’icona **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà relativa alle risorse selezionate.
+1. Dalla barra degli strumenti, fate clic sull’icona **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà relativa alle risorse selezionate.
 
    >[!NOTE]
    >
@@ -45,9 +45,9 @@ Per personalizzare la pagina delle proprietà dei metadati, incluse l’aggiunta
    >* Nella parte superiore dell’elenco delle risorse, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per alternare tra la selezione delle risorse e la cancellazione dell’elenco.
 
 
-1. Per selezionare uno schema di metadati diverso per le risorse, toccate o fate clic sull’icona **[!UICONTROL Impostazioni]** nella barra degli strumenti, quindi selezionate lo schema desiderato.
+1. Per selezionare uno schema di metadati diverso per le risorse, fate clic sull&#39;icona **[!UICONTROL Impostazioni]** nella barra degli strumenti, quindi selezionate lo schema desiderato.
 1. Salva le modifiche.
-1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Tocca o fai clic su **[!UICONTROL Invia]**.
+1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Fate clic su **[!UICONTROL Invia]**.
 
    >[!CAUTION]
    >
