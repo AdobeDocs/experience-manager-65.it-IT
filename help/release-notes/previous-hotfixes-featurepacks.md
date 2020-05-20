@@ -1,20 +1,18 @@
 ---
 title: Note sulla versione di AEM 6.5 Service Pack precedente
 description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+workflow-type: tm+mt
+source-wordcount: '6277'
+ht-degree: 47%
 
 ---
 
 
 # Hotfix e Feature Pack inclusi nei Service Pack precedenti {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0
+## Adobe Experience Manager 6.5.3.0 {#aem-6530}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 è una versione importante che include correzioni e miglioramenti a livello di prestazioni, stabilità e sicurezza introdotti dai clienti a partire dalla release 6.5 di **aprile 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
@@ -24,9 +22,9 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * [!DNL Experience Manager Assets] ora supporta gli archivi ZIP creati utilizzando l&#39;algoritmo Deflate64.
 
-* La nuova colonna relativa alla data di creazione, ordinabile, è stata aggiunta nella visualizzazione a elenco DAM e nei risultati della ricerca di risorse nella visualizzazione a elenco.
+* Una nuova colonna che mostra la data di creazione delle risorse è disponibile quando si visualizzano le risorse in DAM e nei risultati della ricerca nella visualizzazione a elenco. Ordinate la colonna per disporre le risorse in ordine cronologico o inverso di creazione.
 
-* L’ordinamento delle risorse basato sulla colonna Nome è stato attivato nella visualizzazione Elenco.
+* È ora possibile ordinare le risorse in base alla `Name` colonna nella vista a elenco.
 
 * [!DNL Dynamic Media] ora supporta la funzione di ritaglio avanzato delle risorse video. Smart Crop è una funzione guidata di apprendimento automatico che ritaglia un video mentre si sposta il fotogramma per seguire il punto focale della scena.
 
@@ -46,9 +44,9 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * [!DNL Experience Manager Assets] ora supporta gli archivi ZIP creati utilizzando l&#39;algoritmo Deflate64 (NPR-27573).
 
-* La nuova colonna relativa alla data di creazione, ordinabile, è stata aggiunta nella visualizzazione a elenco DAM e nei risultati della ricerca di risorse nella visualizzazione a elenco (NPR-31312).
+* Una nuova colonna che mostra la data di creazione delle risorse è disponibile quando si visualizzano le risorse in DAM e nei risultati della ricerca nella visualizzazione a elenco. Ordinare la colonna per disporre le risorse in ordine cronologico o inverso di creazione (NPR-31312).
 
-* L&#39;ordinamento delle risorse in base alla colonna Nome è stato consentito nella vista Elenco (NPR-31299).
+* È ora possibile ordinare le risorse in base alla `Name` colonna nella vista a elenco (NPR-31299).
 
 * I file di risorse GLB, GLTF, OBJ e STL supportano l’anteprima delle risorse nella pagina Dettagli risorsa in DAM (CQ-4282277).
 
@@ -61,6 +59,8 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * La visualizzazione di ricerca/ricerca è stata impostata come visualizzazione predefinita nel selettore Foundation se i parametri di query vengono passati nella richiesta (NPR-31601).
 
 **Problemi risolti**
+
+* Il provider OAuth IMS non può connettersi tramite un server proxy quando si utilizza Adobe Asset Link (NPR-30949).
 
 * I metadati di alcuni documenti PDF non vengono aggiornati e salvati nel PDF quando si modifica il titolo (NPR-31629).
 
@@ -82,19 +82,19 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Impossibile eliminare le risorse con il simbolo più &quot;+&quot; nel nome del file (NPR-31162).
 
-* Il menu a discesa Crea, visibile nel menu principale quando si seleziona una cartella, non mostra l&#39;opzione &quot;Cartella&quot; come opzione di creazione (NPR-30877).
+* Un’opzione per creare nuove risorse o cartelle è disponibile come menu a comparsa nell’interfaccia utente Risorse. Quando una cartella è selezionata, Experience Manager non visualizza [!UICONTROL Cartella] come una delle opzioni nel menu a comparsa (NPR-30877).
 
-* Selezione cartella L&#39;elemento dell&#39;azione Crea > Caricamento file non è presente quando ACL per Rifiuta jcr:removeChildNodes e jcr:removeNode sul percorso vengono applicati a un utente (NPR-30840).
+* Selezione cartella L&#39;elemento azione Crea > Caricamento file non è presente quando ACL per Rifiuta `jcr:removeChildNodes` e `jcr:removeNode` sul percorso vengono applicati a un utente (NPR-30840).
 
-* I flussi di lavoro DAM diventano obsoleti quando vengono caricate determinate risorse mp4, causando il blocco di tutti i flussi di lavoro rimanenti (NPR-30662).
+* I flussi di lavoro DAM diventano obsoleti quando vengono caricate determinate risorse MP4, causando il blocco di tutti i flussi di lavoro rimanenti (NPR-30662).
 
-* Errore di memoria insufficiente quando un file PDF di grandi dimensioni (di diversi Gigabyte) viene caricato in DAM e le relative risorse secondarie vengono elaborate (NPR-30614).
+* Errore di memoria insufficiente quando un file PDF di grandi dimensioni di diversi Gigabyte viene caricato in DAM e le relative risorse secondarie vengono elaborate (NPR-30614).
 
-* Lo spostamento di massa delle risorse non riesce e viene visualizzato un messaggio di avviso (NPR-30610).
+* Lo spostamento di massa delle risorse non riesce e visualizza un messaggio di avviso (NPR-30610).
 
-* I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in [!DNL Experience Manager] esecuzione in modalità [!DNL Dynamic Media]Scene7 (NPR-31630).
+* I nomi delle risorse vengono modificati in lettere maiuscole quando si spostano le risorse da una cartella all’altra in modalità [!DNL Dynamic Media]Scene7 (NPR-31630).
 
-* Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata come nome della società di Scene 7 (NPR-31340).
+* Durante la modifica di un set di immagini remoto, si verifica un errore per l’immagine che risiede nella cartella denominata same come nome della società di Scene7 (NPR-31340).
 
 * [!DNL Dynamic Media] le risorse contenenti riferimenti non vengono pubblicate (NPR-31180).
 
