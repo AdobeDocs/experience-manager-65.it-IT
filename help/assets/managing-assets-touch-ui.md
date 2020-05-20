@@ -4,10 +4,10 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '9347'
-ht-degree: 5%
+source-wordcount: '9298'
+ht-degree: 4%
 
 ---
 
@@ -61,13 +61,13 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 1. Nell’interfaccia [!DNL Assets] utente, individuate il percorso in cui desiderate aggiungere le risorse digitali.
 1. Per caricare le risorse, effettuate una delle seguenti operazioni:
 
-   * Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Crea]** . Quindi, nel menu, toccate **[!UICONTROL File]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
+   * Sulla barra degli strumenti, fate clic sull’icona **[!UICONTROL Crea]** . Scegliere **[!UICONTROL File dal menu]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia [!DNL Assets] utente. La finestra di dialogo per rinominare il file non viene visualizzata.
    ![Opzione Crea per caricare le risorse](assets/create-options.png)
 
    Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
 
-   Potete mettere in pausa il caricamento di risorse di grandi dimensioni (superiori a 500 MB) e riprenderlo più tardi dalla stessa pagina. Toccate l’icona **[!UICONTROL Pausa]** accanto alla barra di avanzamento che viene visualizzata all’avvio del caricamento.
+   Potete mettere in pausa il caricamento di risorse di grandi dimensioni (superiori a 500 MB) e riprenderlo più tardi dalla stessa pagina. Fate clic sull’icona **[!UICONTROL Pausa]** accanto alla barra di avanzamento che viene visualizzata all’avvio del caricamento.
 
    ![Barra di avanzamento del caricamento delle risorse](assets/chlimage_1-5.png)
 
@@ -109,7 +109,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    ![Finestra di dialogo Duplica risorsa rilevata](assets/chlimage_1-8.png)
 
-   Per mantenere la risorsa duplicata in [!DNL Assets], toccate o fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, toccate o fate clic su **[!UICONTROL Elimina]**.
+   Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, fate clic su **[!UICONTROL Elimina]**.
 
    [!DNL Experience Manager Assets] impedisce il caricamento di risorse con i caratteri proibiti nel nome del file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito.
 
@@ -154,9 +154,9 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 **Per caricare le risorse tramite FTP**
 
 1. Utilizzando il client FTP desiderato, effettuate l&#39;accesso al server FTP utilizzando il nome utente e la password FTP ricevuti dall&#39;e-mail di provisioning. Nel client FTP, caricate i file o le cartelle sul server FTP.
-1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, toccate **[!UICONTROL Carica]**.
+1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, fate clic su **[!UICONTROL Carica]**.
 
-1. Nella pagina Carica, nell’angolo in alto a sinistra, toccate la scheda **[!UICONTROL Mediante FTP]** .
+1. Nella pagina Carica, accanto all’angolo in alto a sinistra, fate clic sulla scheda **[!UICONTROL Mediante FTP]** .
 1. Sul lato sinistro della pagina, scegliete una cartella FTP da cui caricare i file; sul lato destro della pagina, scegliete una cartella di destinazione.
 1. Nell’angolo inferiore destro della pagina, fate clic su Opzioni **** processo e impostate le opzioni desiderate in base alle risorse nella cartella selezionata.
 
@@ -166,11 +166,11 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
    >
    >Quando caricate le risorse tramite FTP, le opzioni di caricamento impostate in Dynamic Media Classic (S7) hanno la precedenza rispetto ai parametri di elaborazione delle risorse impostati in [!DNL Experience Manager].
 
-1. Nell’angolo inferiore destro della finestra di dialogo Opzioni processo di caricamento, toccate **[!UICONTROL Salva]**.
-1. Nell’angolo inferiore destro della pagina Carica, toccate **[!UICONTROL Invia caricamento]**.
+1. Nell’angolo inferiore destro della finestra di dialogo Opzioni processo di caricamento, fate clic su **[!UICONTROL Salva]**.
+1. Nell’angolo inferiore destro della pagina Carica, fate clic su **[!UICONTROL Invia caricamento]**.
 
-   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale toccate **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. Potete continuare a lavorare [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per controllare un processo in corso.
-Per annullare un processo di caricamento in corso, toccate **[!UICONTROL Annulla]** accanto alla durata.
+   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale fate clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. Potete continuare a lavorare [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per controllare un processo in corso.
+Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL Annulla]** accanto alla durata.
 
 #### Opzioni processo di caricamento {#upload-job-options}
 
@@ -180,7 +180,7 @@ Per annullare un processo di caricamento in corso, toccate **[!UICONTROL Annulla
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
 | Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Annulla compressione file ZIP o Tar durante il caricamento |  |  |
-| Opzioni processo |  | Toccate o fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Toccate il pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
+| Opzioni processo |  | Fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Fate clic sul pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
 |  | Includi sottocartelle | Caricate tutte le sottocartelle all’interno della cartella che desiderate caricare. I nomi della cartella e delle relative sottocartelle caricate vengono inseriti automaticamente in [!DNL Experience Manager Assets]. |
 |  | Opzioni di ritaglio | Per ritagliare manualmente dai lati di un’immagine, selezionate il menu Ritaglio e scegliete Manuale. Immettete quindi il numero di pixel da ritagliare da ogni lato o da uno dei lati dell’immagine. La quantità di immagine che viene ritagliata dipende dall’impostazione ppi (pixel per pollice) nel file immagine. Ad esempio, se l’immagine viene visualizzata a 150 ppi e immettete 75 nelle caselle di testo, viene ritagliato mezzo pollice da ogni lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un’immagine, aprite il menu Ritaglio, scegliete Manuale e immettete i valori in pixel nei campi In alto, A destra, In basso e A sinistra per ritagliare dai lati. Potete anche scegliere Rifila dal menu Ritaglio e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliete l’opzione Colore. Dal menu Angolo scegliete quindi l’angolo dell’immagine con il colore che rappresenta meglio quello dello spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliete l’opzione Trasparenza.<br> **Tolleranza** - Trascinate il cursore per specificare una tolleranza da 0 a 1. Per rifilare in base al colore, specificate 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell’angolo dell’immagine. Con valori più vicini a 1 viene invece tollerata una maggiore differenza di colore.<br>Per rifilare in base alla trasparenza, l’impostazione 0 ritaglia i pixel solo se sono trasparenti. Con valori più vicini a 1 viene invece tollerata una minore trasparenza.</li></ul><br>Tenete presente che queste opzioni di ritaglio non sono distruttive. |
@@ -329,13 +329,13 @@ Alcune limitazioni della funzione sono:
 Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni.
 
 1. Dall’interfaccia [!DNL Assets] utente, individuate la posizione della risorsa da visualizzare in anteprima.
-1. Toccate la risorsa desiderata per aprirla.
+1. Fate clic sulla risorsa desiderata per aprirla.
 
 1. Nella modalità di anteprima, le opzioni di zoom sono disponibili per i tipi [di immagini](/help/assets/assets-formats.md#supported-raster-image-formats) supportati (con modifica interattiva).
 
-   Per ingrandire una risorsa, toccate o fate clic `+` (oppure toccate o fate clic sulla lente di ingrandimento della risorsa). Per ridurre la visualizzazione, toccate o fate clic `-`. Quando ingrandite, potete osservare da vicino qualsiasi area dell’immagine eseguendo il panning. La freccia di reimpostazione dello zoom consente di tornare alla visualizzazione originale.
+   Per ingrandire una risorsa, fate clic `+` (o fate clic sulla lente di ingrandimento della risorsa). Per ridurre lo zoom, fate clic `-`. Quando ingrandite, potete osservare da vicino qualsiasi area dell’immagine eseguendo il panning. La freccia di reimpostazione dello zoom consente di tornare alla visualizzazione originale.
 
-   Toccate **[!UICONTROL Ripristina]** per ripristinare le dimensioni originali della visualizzazione.
+   Fate clic su **[!UICONTROL Ripristina]** per ripristinare la visualizzazione alle dimensioni originali.
 
    ![Icona Reimposta per riportare l’utente alla visualizzazione originale](assets/chlimage_1-11.png)
 
@@ -366,7 +366,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 1. Andate alla posizione della risorsa per modificarne i metadati.
 
-1. Selezionate la risorsa, quindi toccate o fate clic su **[!UICONTROL Proprietà]** nella barra degli strumenti per visualizzare le proprietà della risorsa. In alternativa, scegliete l’azione rapida **[!UICONTROL Proprietà]** sulla scheda delle risorse.
+1. Selezionate la risorsa, quindi fate clic su **[!UICONTROL Proprietà]** dalla barra degli strumenti per visualizzare le proprietà della risorsa. In alternativa, scegliete l’azione rapida **[!UICONTROL Proprietà]** sulla scheda delle risorse.
 
    ![Proprietà azione rapida nella vista scheda della risorsa](assets/properties_quickaction.png)
 
@@ -394,13 +394,13 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
    >
    >Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura `/content/cq:tags/default` nell&#39;archivio CRX.
 
-1. Per assegnare una valutazione alla risorsa, tocca o fai clic sulla scheda **[!UICONTROL Avanzate]**, quindi tocca o fai clic sulla stella appropriata per assegnare la valutazione desiderata.
+1. To provide a rating to the asset, click the **[!UICONTROL Advanced]** tab and then click the star at the appropriate position to assign the desired rating.
 
    ![Scheda Avanzate in Proprietà risorsa per assegnare la valutazione](assets/ratings.png)
 
    Il punteggio assegnato alla risorsa viene visualizzato in **[!UICONTROL Valutazioni]** personali. La valutazione media che la risorsa ricevuta dagli utenti che hanno valutato la risorsa viene visualizzata in **[!UICONTROL Valutazione]**. Inoltre, la suddivisione dei punteggi di rating che contribuiscono al punteggio medio è visualizzata in Disaggregazione **[!UICONTROL valutazione]**. Potete cercare le risorse in base alla media dei punteggi di valutazione.
 
-1. Per visualizzare le statistiche di utilizzo della risorsa, tocca o fai clic sulla scheda **[!UICONTROL Approfondimenti]** .
+1. Per visualizzare le statistiche di utilizzo della risorsa, fai clic sulla scheda **[!UICONTROL Insights]** (Approfondimenti).
 
    Le statistiche di utilizzo includono quanto segue:
 
@@ -424,7 +424,7 @@ Alcuni attributi univoci per una particolare copia di una risorsa non vengono ri
 
 Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la copia di una risorsa non viene creata una copia parziale.
 
-1. Nell’ [!DNL Assets] interfaccia, selezionate una o più risorse e toccate o fate clic sull’icona **[!UICONTROL Copia]** dalla barra degli strumenti. In alternativa, selezionate l’azione rapida **[!UICONTROL Copia]** dalla scheda delle risorse.
+1. Nell’ [!DNL Assets] interfaccia, selezionate una o più risorse e fate clic sull’icona **[!UICONTROL Copia]** nella barra degli strumenti. In alternativa, selezionate l’azione rapida **[!UICONTROL Copia]** dalla scheda delle risorse.
    ![Icona Copia nella barra degli strumenti dell’interfaccia utente delle risorse](assets/copy_icon.png)
 
    >[!NOTE]
@@ -437,7 +437,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    >
    >Se copiate una risorsa nella stessa posizione, [!DNL Experience Manager] viene generata automaticamente una variante del nome. Ad esempio, se copiate una risorsa con titolo `Square`, [!DNL Experience Manager] viene automaticamente generato il titolo della relativa copia come `Square1`.
 
-1. Tocca o fai clic sull’icona della risorsa **[!UICONTROL Incolla]** dalla barra degli strumenti.
+1. Fate clic sull&#39;icona della risorsa **[!UICONTROL Incolla]** dalla barra degli strumenti.
 
    ![Icona Incolla nella barra degli strumenti dell’interfaccia utente delle risorse](assets/chlimage_1-14.png)
    [!DNL Assets] vengono quindi copiate in questa posizione.
@@ -450,14 +450,14 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
 1. Andate alla posizione della risorsa da spostare.
 
-1. Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Sposta]** dalla barra degli strumenti.
+1. Selezionate la risorsa e fate clic sull’icona **[!UICONTROL Sposta]** nella barra degli strumenti.
    ![Icona Sposta nella barra degli strumenti dell&#39;interfaccia utente della risorsa](assets/move_icon.png)
 
 1. Nella procedura guidata [!UICONTROL Sposta risorse] , effettuate una delle seguenti operazioni:
 
-   * Dopo averlo spostato, specificate il nome della risorsa. Quindi toccate o fate clic su **[!UICONTROL Avanti]** per continuare.
+   * Dopo averlo spostato, specificate il nome della risorsa. Quindi fate clic su **[!UICONTROL Avanti]** per proseguire.
 
-   * Toccate/fate clic su **[!UICONTROL Annulla]** per interrompere il processo.
+   * Fate clic su **[!UICONTROL Annulla]** per interrompere il processo.
    >[!NOTE]
    >
    >* Potete specificare lo stesso nome per la risorsa se nella nuova posizione non è presente alcuna risorsa con lo stesso nome. Tuttavia, se spostate la risorsa in una posizione in cui esiste una risorsa con lo stesso nome, usate un nome diverso. Se usate lo stesso nome, il sistema genera automaticamente una variante del nome. Ad esempio, se la risorsa ha il nome Square, il sistema genera il nome Square1 per la relativa copia.
@@ -466,31 +466,31 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
 1. Nella finestra di dialogo **[!UICONTROL Seleziona destinazione]** , effettuate una delle seguenti operazioni:
 
-   * Andate alla nuova posizione delle risorse, quindi toccate o fate clic su **[!UICONTROL Avanti]** per proseguire.
+   * Andate alla nuova posizione delle risorse, quindi fate clic su **[!UICONTROL Avanti]** per proseguire.
 
-   * Toccate/fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Rinomina]** .
+   * Fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Rinomina]** .
 
 1. Se le risorse che state spostando dispongono di pagine, risorse o raccolte di riferimento, accanto alla scheda **[!UICONTROL Seleziona destinazione]** viene visualizzata la scheda **[!UICONTROL Regola riferimenti]** .
 
    Effettuate una delle seguenti operazioni nella schermata **[!UICONTROL Regola riferimenti]** :
 
-   * Specificate i riferimenti da modificare in base ai nuovi dettagli, quindi toccate o fate clic su **[!UICONTROL Sposta]** per proseguire.
+   * Specificate i riferimenti da modificare in base ai nuovi dettagli, quindi fate clic su **[!UICONTROL Sposta]** per proseguire.
 
    * Nella colonna **[!UICONTROL Regola]** , selezionate o deselezionate i riferimenti alle risorse.
-   * Toccate/fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
+   * Fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
 
-   * Toccate/fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
+   * Fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ## Gestire le rappresentazioni {#managing-renditions}
 
 1. Potete aggiungere o rimuovere rappresentazioni per una risorsa, tranne l’originale. Andate alla posizione della risorsa per la quale desiderate aggiungere o rimuovere le rappresentazioni.
 
-1. Toccate o fate clic sulla risorsa per aprirne la pagina.
+1. Fate clic sulla risorsa per aprirne la pagina.
 
    ![Pagina Dettagli risorse per gestire le rappresentazioni](assets/chlimage_1-15.png)
 
-1. Toccate o fate clic sull&#39;icona GlobalNav, quindi selezionate **[!UICONTROL Rendering]** dall&#39;elenco.
+1. Fare clic sull&#39;icona GlobalNav, quindi selezionare **[!UICONTROL Rendering]** dall&#39;elenco.
 
    ![Barra a sinistra per aprire il menu e selezionare l&#39;opzione Rendering](assets/renditions_menu.png)
 
@@ -506,13 +506,13 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    **Eliminare una rappresentazione**
 
-   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi toccate o fate clic sull&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti. Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare Experience Manager per eliminare rappresentazioni specifiche o per eliminare le risorse e caricare nuovamente le risorse eliminate.
+   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi fate clic sull&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti. Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare Experience Manager per eliminare rappresentazioni specifiche o per eliminare le risorse e caricare nuovamente le risorse eliminate.
 
    ![Opzione per eliminare una rappresentazione](assets/delete_renditionicon.png)
 
    **Caricare una nuova rappresentazione**
 
-   Vai alla pagina dei dettagli della risorsa, quindi tocca o fai clic sull’icona **[!UICONTROL Aggiungi rappresentazione]** della barra degli strumenti per caricare una nuova rappresentazione della risorsa.
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![Icona Aggiungi rappresentazione per caricare la nuova rappresentazione](assets/chlimage_1-16.png)
 
@@ -544,7 +544,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
 1. Andate alla posizione delle risorse che desiderate eliminare.
 
-1. Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Elimina]** dalla barra degli strumenti.
+1. Selezionate la risorsa e fate clic sull’icona **[!UICONTROL Elimina]** dalla barra degli strumenti.
 
    ![Icona Elimina](assets/delete_icon.png)
 
@@ -575,14 +575,14 @@ Consultate [Scaricare risorse da Experience Manager](/help/assets/download-asset
 
 1. Andate alla posizione delle risorse o delle cartelle da pubblicare.
 
-1. Seleziona l’azione rapida **[!UICONTROL Pubblica]** dalla scheda delle risorse oppure fai clic sulla risorsa e tocca o fai clic sull’icona **[!UICONTROL Pubblicazione rapida]** dalla barra degli strumenti.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Se la risorsa fa riferimento ad altre risorse, i relativi riferimenti sono elencati nella procedura guidata. Vengono visualizzati solo i riferimenti non pubblicati o modificati dopo l’ultima pubblicazione o l’annullamento della pubblicazione. Scegliete i riferimenti da pubblicare.
 
    >[!NOTE]
    >
    >Le cartelle vuote, che fanno parte di una cartella pubblicata, non vengono pubblicate.
 
-1. Toccate o fate clic su **[!UICONTROL Pubblica]** per confermare l’attivazione delle risorse.
+1. Fate clic su **[!UICONTROL Pubblica]** per confermare l’attivazione delle risorse.
 
 >[!CAUTION]
 >
@@ -592,7 +592,7 @@ Consultate [Scaricare risorse da Experience Manager](/help/assets/download-asset
 
 1. Andate alla posizione della cartella di risorse o risorse che desiderate rimuovere dall’ambiente di pubblicazione (Annulla pubblicazione).
 
-1. Selezionate la risorsa o la cartella da annullare la pubblicazione, quindi toccate o fate clic sull’icona **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti.
+1. Selezionate la risorsa o la cartella da annullare la pubblicazione, quindi fate clic sull’icona **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti.
 
    ![Icona Gestisci pubblicazione](assets/manage_publication.png)
 
@@ -602,8 +602,8 @@ Consultate [Scaricare risorse da Experience Manager](/help/assets/download-asset
 
 1. Per annullare la pubblicazione della risorsa in un secondo momento, selezionate **[!UICONTROL Annulla pubblicazione più tardi]**, quindi selezionate una data per annullare la pubblicazione della risorsa.
 1. Pianificate una data in cui la risorsa non sarà disponibile dall’ambiente di pubblicazione.
-1. Se la risorsa fa riferimento ad altre risorse, scegliete i riferimenti da annullare la pubblicazione. Toccate o fate clic su **[!UICONTROL Annulla pubblicazione]**.
-1. Nella finestra di dialogo di conferma, toccate o fate clic su:
+1. Se la risorsa fa riferimento ad altre risorse, scegliete i riferimenti da annullare la pubblicazione. Fate clic su **[!UICONTROL Annulla pubblicazione]**.
+1. Nella finestra di dialogo di conferma, fate clic su:
 
    * **[!UICONTROL Annulla]** per interrompere l’azione
    * **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
@@ -617,7 +617,7 @@ Per limitare l’accesso a specifiche cartelle di risorse pubblicate, viene util
 
 I COG consentono di limitare l’accesso alle risorse. Potete anche configurare una pagina di login per la cartella.
 
-1. Selezionate una cartella dall’ [!DNL Assets] interfaccia, quindi toccate o fate clic sull’icona [!UICONTROL Proprietà] nella barra degli strumenti per visualizzare la pagina delle proprietà.
+1. Selezionate una cartella dall’ [!DNL Assets] interfaccia, quindi fate clic sull’icona [!UICONTROL Proprietà] nella barra degli strumenti per visualizzare la pagina delle proprietà.
 1. Dalla scheda **[!UICONTROL Autorizzazioni]** , aggiungete membri o gruppi in Gruppo **[!UICONTROL utenti]** chiuso.
 
    ![Aggiunta di un utente a un gruppo di utenti chiuso](assets/add_user.png)
@@ -674,12 +674,12 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
 
 1. Per aprire una risorsa in modalità di modifica, effettuate una delle seguenti operazioni:
 
-   * Selezionate la risorsa, quindi toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
-   * Toccate/fate clic sull&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista a schede.
-   * Nella pagina della risorsa, toccate o fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
+   * Selezionate la risorsa e fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
+   * Fate clic sull&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista a schede.
+   * Nella pagina della risorsa, fai clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    ![Icona Modifica nella barra degli strumenti](assets/edit_icon.png)
 
-1. Per ritagliare l’immagine, toccate o fate clic sull’icona **Ritaglia** .
+1. Per ritagliare l’immagine, fate clic sull’icona **Ritaglia** .
 
    ![Icona Ritaglio](assets/chlimage_1-22.png)
 
@@ -696,15 +696,15 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
 
    ![Icone Annulla e Ripristina](assets/chlimage_1-25.png)
 
-1. Toccate/fate clic sull’icona Ruota appropriata per ruotare l’immagine in senso orario o antiorario.
+1. Fate clic sull’icona Ruota appropriata per ruotare l’immagine in senso orario o antiorario.
 
    ![Icone di rotazione in senso orario e antiorario](assets/chlimage_1-26.png)
 
-1. Toccate/fate clic sull’icona Rifletti per riflettere l’immagine in orizzontale o verticale.
+1. Fate clic sull’icona Rifletti per riflettere l’immagine in orizzontale o verticale.
 
    ![Icone per riflettere l’immagine in orizzontale o in verticale](assets/chlimage_1-27.png)
 
-1. Toccate/fate clic sull’icona **Fine** per salvare le modifiche.
+1. Click the **Finish** icon to save the changes.
 
    ![Icona Fine](assets/chlimage_1-28.png)
 
@@ -745,7 +745,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 >Per i frammenti di contenuto, [le annotazioni vengono create nell’editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)frammento.
 
 1. Andate alla posizione della risorsa alla quale desiderate aggiungere delle annotazioni.
-1. Toccate/fate clic sull’icona **[!UICONTROL Annota]** da una delle seguenti opzioni:
+1. Fate clic sull’icona **[!UICONTROL Annota]** da una delle seguenti opzioni:
 
    * [Azioni rapide](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
@@ -771,18 +771,18 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    >
    >Potete aggiungere più annotazioni prima di salvarle.
 
-1. Toccate/fate clic su **[!UICONTROL Chiudi]** per uscire dalla modalità Annotazione.
+1. Fate clic su **[!UICONTROL Chiudi]** per uscire dalla modalità Annotazione.
 1. Per visualizzare la notifica, accedete a [!DNL Assets] con le credenziali di Aaron MacDonald e fate clic sull&#39;icona **[!UICONTROL Notifiche]** per visualizzare la notifica.
 
    >[!NOTE]
    >
    >Potete anche aggiungere delle annotazioni alle risorse video. Durante l&#39;annotazione dei video, il lettore si mette in pausa per consentire di inserire delle annotazioni in un fotogramma. Per informazioni dettagliate, consultate [Gestione delle risorse](/help/assets/managing-video-assets.md)video.
 
-1. Per scegliere un colore diverso in modo da poter differenziare gli utenti, toccate o fate clic sull’icona Profilo e fate clic o toccate **[!UICONTROL Preferenze]** personali.
+1. Per scegliere un colore diverso in modo da poter differenziare gli utenti, fate clic sull&#39;icona Profilo e fate clic su **[!UICONTROL Preferenze]** personali.
 
    ![Selezionate l’icona del profilo utente e quindi Preferenze personali per aprire Preferenze utente](assets/User-profile-preferences.png)
 
-   Nella casella **[!UICONTROL Colore annotazione]**, specifica il colore desiderato, infine tocca o fai clic su **[!UICONTROL Accetta]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
    ![Selezionate il colore dell’annotazione nelle Preferenze utente per impostare il colore Persona utente](assets/Annotation-color.png)
 
@@ -794,7 +794,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 1. Per visualizzare le annotazioni salvate per una risorsa, andate alla posizione della risorsa e aprite la pagina della risorsa.
 
-1. Toccate o fate clic sull&#39;icona GlobalNav, quindi scegliete **[!UICONTROL Timeline]** dall&#39;elenco.
+1. Fate clic sull&#39;icona GlobalNav e scegliete **[!UICONTROL Timeline]** dall&#39;elenco.
 
    ![Opzioni disponibili sull&#39;icona GlobalNav](assets/chlimage_1-35.png)
 
@@ -802,11 +802,11 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    ![Mostra tutti gli elenchi nella timeline](assets/chlimage_1-36.png)
 
-   Toccate o fate clic su un commento nel pannello **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
+   Fate clic su un commento nel pannello **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
 
    ![Pannello Timeline per visualizzare le annotazioni sull’immagine](assets/chlimage_1-37.png)
 
-   Toccate o fate clic su **[!UICONTROL Elimina]** per eliminare un particolare commento.
+   Fate clic su **[!UICONTROL Elimina]** per eliminare un particolare commento.
 
 ### Stampa annotazioni {#printing-annotations}
 
@@ -814,7 +814,7 @@ Se una risorsa dispone di annotazioni o è stata sottoposta a un flusso di lavor
 
 Potete anche scegliere di stampare solo le annotazioni o lo stato della revisione.
 
-Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;icona **[!UICONTROL Stampa]** e seguite le istruzioni della procedura guidata. L’icona **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo se alla risorsa è stata assegnata almeno un’annotazione o uno stato di revisione.
+Per stampare le annotazioni e verificare lo stato, fare clic sull&#39;icona **[!UICONTROL Stampa]** e seguire le istruzioni della procedura guidata. L’icona **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo se alla risorsa è stata assegnata almeno un’annotazione o uno stato di revisione.
 
 1. Dall’ [!DNL Assets] interfaccia, aprite la pagina di anteprima di una risorsa.
 1. Effettua una delle operazioni seguenti:
@@ -830,7 +830,7 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
 
    ![Per stampare solo lo stato di revisione di Annotation selezionarlo dalla timeline](assets/chlimage_1-39.png)
 
-1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
+1. Click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![Icona Stampa nella barra degli strumenti](assets/chlimage_1-40.png)
 
@@ -844,7 +844,7 @@ Per stampare le annotazioni e verificare lo stato, toccate o fate clic sull&#39;
    >
    >Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale, Adobe consiglia di limitare le annotazioni a 50 parole.
 
-1. Tocca o fai clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
+1. Fate clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
    ![Stato di annotazione e revisione su PDF generato](assets/chlimage_1-42.png)
 
