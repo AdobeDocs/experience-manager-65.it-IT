@@ -3,7 +3,10 @@ title: Write-back XMP per le rappresentazioni
 description: Scoprite in che modo la funzione di writeback XMP propaga le modifiche dei metadati per una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 11%
 
 ---
 
@@ -32,7 +35,7 @@ Per abilitare la propagazione delle modifiche ai metadati alle rappresentazioni 
 1. Aprite la configurazione di **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
 1. Selezionare l&#39;opzione **[!UICONTROL Propaga XMP[!UICONTROL **, quindi salvare le modifiche.
 
-   ![chlimage_1-131](assets/chlimage_1-346.png)
+   ![chlimage_1-135](assets/chlimage_1-346.png)
 
 ## Abilitazione della funzione di writeback XMP per rappresentazioni specifiche {#enabling-xmp-writeback-for-specific-renditions}
 
@@ -44,7 +47,7 @@ Per estendere i metadati alle miniature delle rappresentazioni 140.100.png e 319
 1. Dalla pagina Modelli, aprite il modello di flusso di lavoro **[!UICONTROL DAM Metadata Writeback]** .
 1. Nella pagina delle proprietà **[!UICONTROL Writeback di metadati DAM]**, apri il passaggio **[!UICONTROL Processo write-back XMPs]**.
 1. In the [!UICONTROL Step Properties] dialog box, click the **[!UICONTROL Process]** tab.
-1. Nella casella **Argomenti** , aggiungete `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, quindi toccate o fate clic su **OK**.
+1. Nella casella **Argomenti** , aggiungere `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, quindi fare clic su **OK**.
 
    ![step_properties](assets/step_properties.png)
 
@@ -65,7 +68,7 @@ Le modifiche ai metadati vengono propagate alle miniature delle rappresentazioni
 
 ## Applicazione di filtri ai metadati XMP {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] supporta sia il filtraggio della blacklist che della whitelist di proprietà/nodi per i metadati XMP che vengono letti dai binari delle risorse e memorizzati in JCR quando vengono assimilate le risorse.
+[!DNL Experience Manager Assets] supporta sia il filtraggio della blacklist che della whitelist di proprietà/nodi per i metadati XMP che vengono letti dai file binari delle risorse e memorizzati in JCR quando vengono assimilate le risorse.
 
 Il filtro Blacklist consente di importare tutte le proprietà dei metadati XMP, ad eccezione delle proprietà specificate per l&#39;esclusione. Tuttavia, per i tipi di risorse come i file INDD con enormi quantità di metadati XMP (ad esempio, 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se il filtro della blacklist consente di importare un gran numero di risorse con numerosi metadati XMP, la distribuzione Experience Manager può rilevare problemi di stabilità, ad esempio code di osservazione bloccate.
 
