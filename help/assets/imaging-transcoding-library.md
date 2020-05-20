@@ -3,7 +3,10 @@ title: Imaging Transcoding Library
 description: Scoprite come configurare e utilizzare la libreria Adobe Imaging Transcoding Library, una soluzione di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +76,7 @@ Per configurare la libreria, create un file .conf per indicare le librerie utili
 
 1. Scaricate il pacchetto [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library (Libreria transcodifica immagini) e installatelo utilizzando Package Manager (Gestione pacchetti). Il pacchetto è compatibile con AEM 6.5.
 
-1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedete alla console Web e toccate **[!UICONTROL OSGi > Bundle]**. In alternativa, per aprire la console dei bundle, accedete all’ `https://[aem_server:[port]/system/console/bundles/` URL. Individua `com.day.cq.dam.cq-dam-switchengine` il bundle e il relativo ID.
+1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedete alla console Web e fate clic su **[!UICONTROL OSGi > Bundle]**. In alternativa, per aprire la console dei bundle, accedete all’ `https://[aem_server:[port]/system/console/bundles/` URL. Individua `com.day.cq.dam.cq-dam-switchengine` il bundle e il relativo ID.
 
 1. Verificate che tutte le librerie necessarie siano estratte, controllando la cartella utilizzando il comando `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, dove il nome della cartella è costruito utilizzando il bundle ID. Ad esempio, il comando è `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` se il bundle id è `588`.
 
@@ -102,7 +105,7 @@ Per configurare la libreria, create un file .conf per indicare le librerie utili
 
 Aggiornate il flusso di lavoro [!UICONTROL DAM Update Asset] per utilizzare la libreria per elaborare le immagini.
 
-1. Tocca o fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Nell’interfaccia utente di Experience Manager, seleziona **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 
 1. Dalla pagina Modelli **[!UICONTROL di]** flusso di lavoro, aprite il modello di flusso di lavoro Aggiorna risorsa **** DAM in modalità di modifica.
 
