@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesi
 description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 4%
@@ -165,7 +165,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 Se l&#39;applicazione [!DNL InDesign Server] e l&#39; [!DNL Experience Manager] esecuzione su host diversi o una o entrambe le applicazioni non vengono eseguite sulle porte predefinite, configurate [!UICONTROL Day CQ Link Externalizer] per impostare il nome host, la porta e il percorso del contenuto per l&#39;host [!DNL InDesign Server].
 
 1. Accedi alla console Web all&#39;indirizzo `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
+1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
 1. Specificate il nome host e il percorso contestuale per il file [!DNL Indesign Server] e fate clic su **Salva**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
@@ -205,7 +205,7 @@ Per configurare il numero di processi IDS paralleli:
    >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
    >
    >
-   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene nuovamente convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera.
+   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera.
 
 ## Abilita il supporto per la versione [!DNL InDesign Server] 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
 
