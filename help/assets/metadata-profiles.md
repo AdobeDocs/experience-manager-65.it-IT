@@ -3,7 +3,10 @@ title: Profili di metadati per personalizzare i requisiti di metadati delle riso
 description: Informazioni sui profili di metadati per le risorse. Scoprite come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 20%
 
 ---
 
@@ -14,8 +17,8 @@ Un profilo di metadati consente di applicare i metadati predefiniti alle risorse
 
 ## Aggiunta di un profilo di metadati {#adding-a-metadata-profile}
 
-1. Passa a **[!UICONTROL Strumenti > Risorse > Profili]** metadati e tocca **[!UICONTROL Crea]**.
-1. Immettete un titolo per il profilo di metadati, ad esempio Metadati di esempio, e toccate **[!UICONTROL Crea]**. Viene visualizzato [!UICONTROL Modifica modulo] per il profilo di metadati.
+1. Accedete a **[!UICONTROL Strumenti > Risorse > Profili]** metadati e fate clic su **[!UICONTROL Crea]**.
+1. Immettete un titolo per il profilo di metadati, ad esempio Metadati di esempio, e fate clic su **[!UICONTROL Crea]**. Viene visualizzato [!UICONTROL Modifica modulo] per il profilo di metadati.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
 
@@ -42,7 +45,7 @@ Un profilo di metadati consente di applicare i metadati predefiniti alle risorse
 1. (Facoltativo) Aggiungi altri componenti alla scheda Modifica modulo dalla scheda **[!UICONTROL Genera modulo]** e configurane le proprietà nella scheda **[!UICONTROL Impostazioni]**. Le seguenti proprietà sono disponibili dalla scheda **[!UICONTROL Genera modulo]**:
 
 | Componente | Proprietà |
-|---|---|
+| ----------------------------- | ----------------------------------------------------------------------- |
 | [!UICONTROL Intestazione sezione] | Etichetta campo, <br> Descrizione |
 | [!UICONTROL Testo su riga singola] | Etichetta campo, <br> Mappa su proprietà, Valore <br> predefinito |
 | [!UICONTROL Testo con più valori] | Etichetta campo, <br> Mappa su proprietà, Valore <br> predefinito |
@@ -52,7 +55,7 @@ Un profilo di metadati consente di applicare i metadati predefiniti alle risorse
 
 ![chlimage_1-201](assets/chlimage_1-484.png)
 
-1. Toccate o fate clic su **[!UICONTROL Fine]**. Il profilo metadati viene aggiunto all’elenco dei profili nella pagina **[!UICONTROL Profili]** metadati.<br>
+1. Fate clic su **[!UICONTROL Fine]**. Il profilo metadati viene aggiunto all’elenco dei profili nella pagina **[!UICONTROL Profili]** metadati.<br>
 
    ![Profilo metadati aggiunto nella pagina Profili metadati](assets/MetadataProfiles-page.png)
 
@@ -62,9 +65,9 @@ Un profilo di metadati consente di applicare i metadati predefiniti alle risorse
 
    ![chlimage_1-203](assets/chlimage_1-486.png)
 
-1. Toccate **[!UICONTROL Copia]** dalla barra degli strumenti.
+1. Fare clic su **[!UICONTROL Copia]** dalla barra degli strumenti.
 1. Nella finestra di dialogo **[!UICONTROL Copia profilo]** metadati, inserite un titolo per la nuova copia del profilo metadati.
-1. Tocca **[!UICONTROL Copia]**. La copia del profilo metadati viene visualizzata nell’elenco apposito della pagina **[!UICONTROL Profili metadati]**.
+1. Fate clic su **[!UICONTROL Copia]**. La copia del profilo metadati viene visualizzata nell’elenco apposito della pagina **[!UICONTROL Profili metadati]**.
 
    ![Una copia del profilo di metadati aggiunto nella pagina Profili metadati](assets/copy-metadata-profile.png)
 
@@ -103,19 +106,19 @@ Potete rielaborare le risorse in una cartella che dispone già di un profilo vid
 
 Seguite i passaggi per applicare il profilo di metadati:
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Selezionate il profilo di metadati da applicare a una o più cartelle.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
 
-1. Tap **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Done]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 #### Applicazione dei profili di metadati alle cartelle da Proprietà {#applying-metadata-profiles-to-folders-from-properties}
 
-1. Nella barra a sinistra, toccate **[!UICONTROL Risorse]** , quindi individuate la cartella a cui desiderate applicare un profilo di metadati.
-1. Sulla cartella, toccate o fate clic sul segno di spunta per selezionarlo, quindi toccate o fate clic su **[!UICONTROL Proprietà]**.
+1. Nella barra a sinistra, fate clic su **[!UICONTROL Risorse]** , quindi individuate la cartella a cui desiderate applicare un profilo di metadati.
+1. Nella cartella, fare clic sul segno di spunta per selezionarlo, quindi fare clic su **[!UICONTROL Proprietà]**.
 
-1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic sul profilo dal menu a discesa e infine tocca **[!UICONTROL Salva]**.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save]**.
 
    ![chlimage_1-208](assets/chlimage_1-491.png)
 
@@ -129,7 +132,7 @@ Potete rielaborare le risorse in una cartella che dispone già di un profilo di 
 
 Per applicare un profilo di metadati a livello globale, effettuate le seguenti operazioni:
 
-* Individuate `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applicate il profilo appropriato e toccate **[!UICONTROL Salva]**.
+* Individuate `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applicate il profilo appropriato e fate clic su **[!UICONTROL Salva]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
@@ -145,16 +148,16 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 
 ### Rimozione di profili di metadati dalle cartelle tramite l&#39;interfaccia utente Profili {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Toccate o fate clic sul logo AEM e andate a **[!UICONTROL Strumenti > Risorse > Profili]** metadati.
+1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Selezionate il profilo di metadati da rimuovere da una o più cartelle.
-1. Tocca **[!UICONTROL Rimuovi profilo metadati da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere il profilo, infine tocca **[!UICONTROL Fine]**.
+1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
    Potete confermare che il profilo di metadati non viene più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
 ### Rimozione di profili di metadati dalle cartelle tramite Proprietà {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Toccate il logo AEM, individuate **[!UICONTROL Risorse]** e quindi la cartella da cui desiderate rimuovere un profilo di metadati.
-1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
+1. Fate clic sul logo AEM, individuate **[!UICONTROL Risorse]** e quindi la cartella da cui desiderate rimuovere un profilo di metadati.
+1. Nella cartella, fare clic sul segno di spunta per selezionarlo, quindi fare clic su **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 ## Limitazioni e best practice {#limitations-best-practices-tips}
