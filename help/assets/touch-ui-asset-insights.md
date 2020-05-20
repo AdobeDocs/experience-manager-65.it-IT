@@ -3,7 +3,10 @@ title: Informazioni sulla risorsa
 description: Scopri come la funzione Asset Insights consente di tenere traccia delle valutazioni degli utenti e delle statistiche di utilizzo delle immagini utilizzate nei siti Web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
@@ -26,9 +29,9 @@ Per consentire a Informazioni sulle risorse di visualizzare le statistiche di ut
 
 Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
 
-1. Nell’interfaccia utente di Risorse, seleziona l’immagine e tocca o fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
-1. Dalla pagina Proprietà, tocca o fai clic sulla scheda **[!UICONTROL Insights]** (Approfondimenti).
-1. Consultate i dettagli di utilizzo della risorsa nella scheda **[!UICONTROL Insights]** (Approfondimenti). La sezione **[!UICONTROL Punteggio]** descrive le risorse totali utilizzate e le risorse disponibili per le prestazioni di una risorsa.
+1. Nell’interfaccia utente di Risorse, seleziona l’immagine e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
+1. Nella pagina Proprietà, fai clic sulla scheda **[!UICONTROL Insights]** (Approfondimenti).
+1. Consultate i dettagli di utilizzo della risorsa nella scheda **[!UICONTROL Insights]** (Approfondimenti). Nella sezione **[!UICONTROL Punteggio]** sono descritte le risorse totali utilizzate e le risorse disponibili per le prestazioni di una risorsa.
 
    La valutazione dell&#39;utilizzo descrive il numero di volte in cui la risorsa viene utilizzata in varie soluzioni.
 
@@ -46,7 +49,7 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
    >
    >Poiché la funzione Asset Insights in genere raccoglie i dati delle soluzioni da Adobe Analytics in modo periodico, la sezione Soluzioni potrebbe non visualizzare i dati più recenti. Il periodo di tempo per il quale i dati vengono visualizzati dipende dalla pianificazione dell&#39;operazione di recupero eseguita da Asset Insights per recuperare i dati Analytics.
 
-1. Per visualizzare graficamente le statistiche sulle prestazioni della risorsa in un periodo di tempo, selezionare il periodo nella sezione Statistiche **** prestazioni. I dettagli, compresi clic e impression, vengono visualizzati come linee di tendenza di un grafico.
+1. Per visualizzare graficamente le statistiche sulle prestazioni della risorsa in un arco di tempo, seleziona il periodo nella sezione **[!UICONTROL Statistiche di prestazioni]**. I dettagli, compresi clic e impression, vengono visualizzati come linee di tendenza di un grafico.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -54,24 +57,24 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
    >
    >A differenza dei dati nella sezione Soluzioni, nella sezione Statistiche prestazioni vengono visualizzati i dati più recenti.
 
-1. Per ottenere il codice da incorporare per la risorsa che includete nei siti Web per ottenere i dati sulle prestazioni, toccate o fate clic su **[!UICONTROL Ottieni codice]** da incorporare sotto la miniatura della risorsa. Per ulteriori informazioni su come includere il codice da incorporare nelle pagine Web di terze parti, consultate [Utilizzo del tracciatore di pagina e codice da incorporare nelle pagine](/help/assets/touch-ui-using-page-tracker.md)Web.
+1. Per ottenere il codice da incorporare per la risorsa che includete nei siti Web per ottenere i dati sulle prestazioni, fate clic su **[!UICONTROL Ottieni codice]** da incorporare sotto la miniatura della risorsa. Per ulteriori informazioni su come includere il codice da incorporare nelle pagine Web di terze parti, consultate [Utilizzo del tracciatore di pagina e codice da incorporare nelle pagine](/help/assets/touch-ui-using-page-tracker.md)Web.
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
 ## Visualizzare le statistiche aggregate per le immagini {#viewing-aggregate-statistics-for-images}
 
-Puoi visualizzare simultaneamente un punteggio di tutte le risorse all’interno di una cartella utilizzando la Visualizzazione **** approfondimenti.
+Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simultaneamente un punteggio di tutte le risorse presenti all’interno di una cartella.
 
 1. Nell’interfaccia utente Risorse, passa alla cartella contenente le risorse per le quali vuoi visualizzare le informazioni.
-1. Toccate o fate clic sull&#39;icona Layout dalla barra degli strumenti, quindi scegliete Visualizzazione **[!UICONTROL approfondimenti]**.
+1. Fate clic sull’icona Layout dalla barra degli strumenti, quindi scegliete Visualizzazione **[!UICONTROL approfondimenti]**.
 1. Nella pagina vengono visualizzati i punteggi di utilizzo delle risorse. Confronta le valutazioni delle varie risorse e trai informazioni approfondite.
 
 ## Pianificazione processo in background {#scheduling-background-job}
 
 Asset Insights recupera periodicamente i dati di utilizzo delle risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, potete modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** Service dalla console Web.
 
-1. Toccate il logo AEM e passate a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
-1. Apri la configurazione del servizio di sincronizzazione dei processi **[!UICONTROL di]** Adobe CQ DAM Asset Performance Report.
+1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Aprite la configurazione del servizio di sincronizzazione dei processi **[!UICONTROL di]** Adobe CQ DAM Asset Performance Report.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 
