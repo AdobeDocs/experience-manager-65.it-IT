@@ -3,10 +3,10 @@ title: Creazione e condivisione di una cartella privata in AEM
 description: Scopri come creare una cartella privata in Risorse Adobe Experience Manager (AEM) e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 5%
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Expe
 > La cartella privata ha almeno un membro con il ruolo Proprietario.
 
 
-1. Nella console Risorse, toccate o fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
+1. Nella console Risorse, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
 
    ![Crea cartella risorse](assets/Create-folder.png)
 
@@ -28,11 +28,11 @@ Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Expe
 
    ![Selezionate la casella di controllo Privato per rendere privata la cartella](assets/private-folder.png)
 
-1. Tocca o fai clic su **[!UICONTROL Crea]**. Nell’interfaccia utente viene creata una cartella privata.
+1. Fai clic su **[!UICONTROL Crea]**. Nell’interfaccia utente viene creata una cartella privata.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. Per condividere la cartella con altri utenti e assegnare loro i privilegi, seleziona la cartella e tocca o fai clic sull’icona **[!UICONTROL Proprietà]** nella barra degli strumenti.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,11 +58,11 @@ Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Expe
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Toccate o fate clic sull&#39;icona Notifica per aprire l&#39;elenco delle notifiche.
+1. Fate clic sull&#39;icona Notifica per aprire l&#39;elenco delle notifiche.
 
    ![Elenco delle notifiche](assets/Assets-Notification.png)
 
-1. Toccate o fate clic sulla voce relativa alla cartella privata condivisa dall’amministratore per aprire la cartella.
+1. Fate clic sulla voce relativa alla cartella privata condivisa dall’amministratore per aprire la cartella.
 
 >[!NOTE]
 >
