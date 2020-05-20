@@ -3,7 +3,10 @@ title: Risorse correlate
 description: Scoprite come collegare risorse digitali che condividono attributi comuni. Create anche relazioni derivate dal codice sorgente tra le risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '640'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
    ![aprire la pagina Proprietà di una risorsa per correlare la risorsa](assets/asset-properties-relate-assets.png)
 
-   *Figura: Pagina[!DNL Assets]Proprietàper correlare le risorse.*
+   *Figura:[!DNL Assets][!UICONTROL Pagina delle proprietà]per correlare le risorse.*
 
    In alternativa, selezionate la risorsa dalla vista a elenco.
 
@@ -33,7 +36,7 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Per mettere in relazione un’altra risorsa con la risorsa selezionata, toccate o fate clic sull’icona **[!UICONTROL Relate]** nella barra degli strumenti.
+1. Per mettere in relazione un’altra risorsa con la risorsa selezionata, fate clic sull’icona **[!UICONTROL Relate]** nella barra degli strumenti.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -48,20 +51,20 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Tocca o fai clic sull’icona **[!UICONTROL Conferma]** .
-1. Tocca o fai clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. A seconda della relazione scelta nel passaggio 3, la risorsa correlata è elencata in una categoria appropriata nella sezione **[!UICONTROL correlata]** . Ad esempio, se la risorsa correlata è il file di origine della risorsa corrente, viene elencata in **[!UICONTROL Origine]**.
+1. Click the **[!UICONTROL Confirm]** icon.
+1. Click **[!UICONTROL OK]** to close the dialog. A seconda della relazione scelta nel passaggio 3, la risorsa correlata è elencata in una categoria appropriata nella sezione **[!UICONTROL correlata]** . Ad esempio, se la risorsa correlata è il file di origine della risorsa corrente, viene elencata in **[!UICONTROL Origine]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Per non correlare una risorsa, toccate o fate clic su **[!UICONTROL Annulla correlazione]** nella barra degli strumenti.
+1. Per non correlare una risorsa, fate clic su **[!UICONTROL Annulla relazione]** nella barra degli strumenti.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Selezionate le risorse da rimuovere dalla finestra di dialogo **[!UICONTROL Rimuovi relazioni]** e toccate o fate clic su **[!UICONTROL Annulla relazione]**.
+1. Selezionate le risorse da rimuovere dalla finestra di dialogo **[!UICONTROL Rimuovi relazioni]** e fate clic su **[!UICONTROL Annulla relazione]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Toccate o fate clic su **[!UICONTROL OK]** per chiudere la finestra di dialogo. Le risorse per le quali avete rimosso le relazioni vengono eliminate dall’elenco delle risorse correlate nella sezione **[!UICONTROL Correlati]** .
+1. Click **[!UICONTROL OK]** to close the dialog. Le risorse per le quali avete rimosso le relazioni vengono eliminate dall’elenco delle risorse correlate nella sezione **[!UICONTROL Correlati]** .
 
 ## Conversione di risorse correlate {#translating-related-assets}
 
@@ -81,22 +84,22 @@ Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manage
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Toccate o fate clic sulla sezione del progetto per aprire la pagina dei dettagli.
+1. Fate clic sulla sezione del progetto per aprire la pagina dei dettagli.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Toccate o fate clic sulle ellissi sotto la scheda Processo di traduzione per visualizzare lo stato della traduzione.
+1. Fate clic sulle ellissi sotto la scheda Processo di traduzione per visualizzare lo stato della traduzione.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Selezionate la risorsa, quindi toccate o fate clic su **[!UICONTROL Mostra in risorse]** nella barra degli strumenti per visualizzare lo stato di conversione della risorsa.
+1. Selezionate la risorsa, quindi fate clic su **[!UICONTROL Mostra in risorse]** nella barra degli strumenti per visualizzare lo stato di conversione della risorsa.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. Per verificare se le risorse correlate all’origine sono state tradotte, toccate o fate clic sulla risorsa sorgente.
+1. Per verificare se le risorse correlate all’origine sono state tradotte, fate clic sulla risorsa sorgente.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Selezionate la risorsa correlata all’origine, quindi toccate o fate clic su **[!UICONTROL Rivela in risorse]**. Viene visualizzata la risorsa correlata convertita.
+1. Selezionate la risorsa correlata all’origine, quindi fate clic su **[!UICONTROL Mostra in risorse]**. Viene visualizzata la risorsa correlata convertita.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
