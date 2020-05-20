@@ -3,9 +3,9 @@ title: Importate ed esportate i metadati delle risorse in blocco.
 description: Importazione ed esportazione in massa di metadati di risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '785'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del s
    | [!UICONTROL Avvia flussi di lavoro] | False per impostazione predefinita. Quando è impostata su `true` e le impostazioni predefinite di Launcher sono attive per il flusso di lavoro WriteBack [!UICONTROL metadati] DAM (che scrive i metadati nei dati XMP binari). L&#39;attivazione dei flussi di lavoro di avvio rallenta il sistema. |
    | [!UICONTROL Nome colonna percorso risorsa] | Definisce il nome della colonna per il file CSV con le risorse. |
 
-1. Toccate o fate clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, nella inbox delle [!UICONTROL notifiche] viene visualizzata una notifica.
+1. Fate clic su **[!UICONTROL Importa]** dalla barra degli strumenti. Una volta importati i metadati, nella inbox delle [!UICONTROL notifiche] viene visualizzata una notifica.
 
 1. Per verificare la corretta importazione, andate alla pagina [!UICONTROL Proprietà] di una risorsa e verificate i valori nei campi.
 
