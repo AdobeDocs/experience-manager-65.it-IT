@@ -3,7 +3,10 @@ title: Rilevamento del tipo MIME di risorse tramite Apache Tika
 description: Abilita Apache Tika per aiutare AEM Assets a rilevare il tipo MIME di risorse dal flusso di contenuto durante l’operazione di caricamento invece che l’estensione del file.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +21,14 @@ Questa funzione è disattivata per impostazione predefinita. Per abilitare quest
 
 >[!NOTE]
 >
->Il rilevamento del tipo MIME tramite la libreria Apache Tika richiede molte risorse.
+>Il rilevamento del tipo MIME con la libreria Apache Tika richiede molte risorse.
 
 1. Per aprire la console Web di Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
-1. Dall’elenco dei servizi, individua il servizio **[!UICONTROL Day CQ DAM Mime Type Service]** e tocca **[!UICONTROL Modifica]** accanto a esso per aprirlo in modalità di modifica.
+
+1. Dall&#39;elenco dei servizi, individua il servizio **[!UICONTROL Day CQ DAM Mime Type Service]** e fai clic su **[!UICONTROL Modifica]**.
 
 1. Selezionate l’opzione **[!UICONTROL Rileva MIME dal contenuto]** per abilitare l’analisi delle risorse caricate per determinarne il tipo MIME mentre ignorate le estensioni dei file. Per impostazione predefinita, questa opzione è deselezionata.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
-1. Tocca o fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
+1. Click **[!UICONTROL Save]** to save the changes.
