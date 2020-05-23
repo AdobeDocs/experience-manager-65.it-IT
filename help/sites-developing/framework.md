@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cef5251d6bd72a6fd352f18e31d3f9d787e4320e
+source-git-commit: 4c4a0b1a76f44dcf1084a4651194e60735bc5aea
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -259,6 +259,10 @@ Questo passaggio viene ripetuto purché il tag seguito abbia una `cq:movedTo` pr
 * Per pubblicare la modifica quando un tag è stato spostato o unito, è necessario replicare il `cq:Tag` nodo e tutti i relativi backlink: questa operazione viene eseguita automaticamente quando il tag viene attivato nella console di amministrazione dei tag.
 
 * Gli aggiornamenti successivi alla `cq:tags` proprietà della pagina puliscono automaticamente i riferimenti &quot;vecchi&quot;. Questo viene attivato perché la risoluzione di un tag spostato attraverso l&#39;API restituisce il tag di destinazione, fornendo così l&#39;ID del tag di destinazione.
+
+> [!NOTE]
+>
+> Il movimento dei tag è diverso dalla migrazione dei tag.
 
 ## Migrazione dei tag {#tags-migration}
 
