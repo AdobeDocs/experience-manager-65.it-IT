@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 1493b301ecf4c25f785495e11ead352de600ddb7
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Nel tipico contesto Sling è anche possibile adattarsi a un `TagManager` da `Res
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 ```
 
-### Recupero di un oggetto Tag {#retrieving-a-tag-object}
+### Ottenimento di un oggetto Tag {#retrieving-a-tag-object}
 
 Un `Tag` può essere recuperato tramite `TagManager`, risolvendo un tag esistente o creandone uno nuovo:
 
@@ -65,7 +68,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Per l&#39;implementazione basata su JCR, che viene mappata `Tags` su JCR `Nodes`, potete utilizzare direttamente il `adaptTo` meccanismo di Sling se disponete della risorsa (ad esempio, `/etc/tags/default/my/tag`):
+Per l&#39;implementazione basata su JCR, che viene mappata `Tags` su JCR `Nodes`, potete utilizzare direttamente il `adaptTo` meccanismo di Sling se disponete della risorsa (ad esempio, `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -131,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Il Garbage Collector tag è un servizio di sfondo che pulisce i tag nascosti e inutilizzati. I tag nascosti e inutilizzati sono tag sottostanti `/etc/tags` che hanno una `cq:movedTo` proprietà e non vengono utilizzati su un nodo di contenuto; il conteggio è pari a zero. Utilizzando questo processo di eliminazione pigra, il nodo di contenuto (ovvero la `cq:tags` proprietà) non deve essere aggiornato come parte dell&#39;operazione di spostamento o unione. I riferimenti nella `cq:tags` proprietà vengono aggiornati automaticamente quando la `cq:tags` proprietà viene aggiornata, ad esempio tramite la finestra di dialogo delle proprietà della pagina.
+Il Garbage Collector tag è un servizio di sfondo che pulisce i tag nascosti e inutilizzati. I tag nascosti e inutilizzati sono tag sottostanti `/content/cq:tags` che hanno una `cq:movedTo` proprietà e non vengono utilizzati su un nodo di contenuto; il conteggio è pari a zero. Utilizzando questo processo di eliminazione pigra, il nodo di contenuto (ovvero la `cq:tags` proprietà) non deve essere aggiornato come parte dell&#39;operazione di spostamento o unione. I riferimenti nella `cq:tags` proprietà vengono aggiornati automaticamente quando la `cq:tags` proprietà viene aggiornata, ad esempio tramite la finestra di dialogo delle proprietà della pagina.
 
 Per impostazione predefinita, il Garbage Collector tag viene eseguito una volta al giorno. È possibile configurare in:
 
@@ -166,7 +169,7 @@ L&#39;API lato server presenta metodi `title`correlati localizzati:
 * [com.day.cq.tagging.TagManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
    * canCreateTagByTitle(String tagTitlePath, Locale)
-   * createTagByTitle(String tagTitlePath, locale)
+   * createTagByTitle(String tagTitlePath, Locale)
    * resolveByTitle(String tagTitlePath, locale)
 
 In AEM, la lingua può essere ottenuta dalla lingua della pagina o dalla lingua dell’utente:
@@ -187,7 +190,7 @@ Per i tag, la localizzazione dipende dal contesto in cui i tag `titles`possono e
 
 La procedura seguente descrive come aggiungere una nuova lingua (finlandese) alla finestra di dialogo Modifica **** tag:
 
-1. In **CRXDE**, modificare la proprietà multivalore `languages` del nodo `/etc/tags`.
+1. In **CRXDE**, modificare la proprietà multivalore `languages` del nodo `/content/cq:tags`.
 
 1. Aggiungete `fi_fi` - che rappresenta l&#39;impostazione internazionale finlandese - e salvate le modifiche.
 
