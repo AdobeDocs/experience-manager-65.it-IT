@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: da233b2d58e13bf86c88115a78f2fecf1be12ba9
+workflow-type: tm+mt
+source-wordcount: '2889'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Per risolvere questo problema, AEM offre cartelle **libreria lato** client che c
 
 ## Funzionamento delle librerie lato client in AEM {#how-client-side-libraries-work-in-aem}
 
-Il modo standard per includere una libreria lato client (ovvero un file JS o CSS) nell’HTML di una pagina consiste semplicemente nell’includere un `<script>` tag o `<link>` nel JSP per tale pagina, contenente il percorso del file in questione. Esempio,
+Il modo standard per includere una libreria lato client (ovvero un file JS o CSS) nell’HTML di una pagina consiste semplicemente nell’includere un `<script>` tag o `<link>` nel JSP per tale pagina, contenente il percorso del file in questione. Ad esempio,
 
 ```xml
 ...
@@ -56,8 +59,8 @@ Ogni file `cq:ClientLibraryFolder` viene compilato con un set di file JS e/o CSS
 
 * `dependencies`: Si tratta di un elenco di altre categorie di libreria client da cui dipende la cartella libreria. Ad esempio, due `cq:ClientLibraryFolder` nodi specificati `F` e `G`, se un file in `F` richiede un altro file `G` per funzionare correttamente, almeno uno dei `categories` nodi di `G` deve essere compreso tra i `dependencies` di `F`.
 
-* `embed`: Utilizzato per incorporare codice da altre librerie. Se il nodo F incorpora i nodi G e H, l&#39;HTML risultante sarà una concentrazione di contenuto dai nodi G e H.
-* `allowProxy`: Se una libreria client si trova in `/apps`, questa proprietà consente l&#39;accesso tramite servlet proxy. Consultate [Individuazione di una cartella libreria client e Utilizzo del servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) delle librerie client proxy di seguito.
+* `embed`: Utilizzato per incorporare il codice da altre librerie. Se il nodo F incorpora i nodi G e H, l&#39;HTML risultante sarà una concentrazione di contenuto dai nodi G e H.
+* `allowProxy`: Se una libreria client si trova in `/apps`, questa proprietà consente l&#39;accesso tramite servlet proxy. Consultate [Individuazione di una cartella della libreria client e Utilizzo del servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) delle librerie client proxy di seguito.
 
 ## Riferimento a librerie lato client {#referencing-client-side-libraries}
 
@@ -96,11 +99,11 @@ La pagina HTML generata contiene il seguente codice:
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Per informazioni complete, inclusi gli attributi per filtrare librerie JS, CSS o di temi, consultate [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Per informazioni complete, inclusi gli attributi per filtrare le librerie JS, CSS o di temi, consultate [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, che in passato era comunemente usato per includere librerie client, è stato dichiarato obsoleto a partire da AEM 5.6. [ Utilizzare `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) invece come descritto sopra.
+>`<cq:includeClientLib>`, che in passato era comunemente usato per includere le librerie client, è stato dichiarato obsoleto a partire da AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) devono essere utilizzati come descritto sopra.
 
 ## Creazione di cartelle libreria client {#creating-client-library-folders}
 
@@ -113,7 +116,7 @@ Le cartelle della libreria client contengono i seguenti elementi:
 * I file sorgente JS e/o CSS da unire.
 * Risorse che supportano gli stili CSS, ad esempio i file di immagine.
 
-   **** Nota: Potete usare le sottocartelle per organizzare i file sorgente.
+   **Nota:** Potete usare le sottocartelle per organizzare i file sorgente.
 * Un `js.txt` file e/o un `css.txt` file che identifica i file sorgente da unire nei file JS e/o CSS generati.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -132,20 +135,20 @@ Nelle versioni precedenti, le cartelle della libreria client si trovavano sotto 
 
 >[!NOTE]
 >
->Le risorse statiche sotto la cartella della libreria client devono trovarsi in una cartella denominata *risorse*. Se non disponete delle risorse statiche, come le immagini, nelle *risorse* della cartella, non è possibile fare riferimento a tali risorse in un’istanza pubblicata. Esempio: https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Le risorse statiche sotto la cartella della libreria client devono trovarsi in una cartella denominata *risorse*. Se non disponete delle risorse statiche, come le immagini, nelle *risorse* della cartella, non è possibile fare riferimento a tali risorse in un’istanza di pubblicazione. Esempio: https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
 
 >[!NOTE]
 >
 >Per isolare meglio il codice dal contenuto e dalla configurazione, si consiglia di individuare le librerie client al di sotto `/apps` e di esporle tramite `/etc.clientlibs` l&#39;uso della `allowProxy` proprietà.
 
-Per rendere accessibili le librerie client in uso, viene utilizzato un servlet proxy. `/apps` Gli ACL sono ancora applicati alla cartella della libreria client, ma il servlet consente la lettura del contenuto tramite `/etc.clientlibs/` se la `allowProxy` proprietà è impostata su `true`.
+Per rendere accessibili le librerie client `/apps` in uso, viene utilizzato un servlet proxy. Gli ACL sono ancora applicati alla cartella della libreria client, ma il servlet consente la lettura del contenuto tramite `/etc.clientlibs/` se la `allowProxy` proprietà è impostata su `true`.
 
 Per accedere a una risorsa statica è possibile utilizzare il proxy solo se si trova sotto una risorsa sotto la cartella della libreria client.
 
 Ad esempio:
 
 * Hai una clientlib in `/apps/myproject/clientlibs/foo`
-* L’immagine in `/apps/myprojects/clientlibs/foo/resources/icon.png`
+* L’immagine è statica in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 Quindi si imposta la `allowProxy` proprietà `foo` su true.
 
@@ -168,19 +171,19 @@ Quindi si imposta la `allowProxy` proprietà `foo` su true.
 1. Per specificare la categoria o le categorie a cui appartiene la libreria, selezionate il `cq:ClientLibraryFolder` nodo, aggiungete la seguente proprietà, quindi fate clic su **Salva tutto**:
 
    * Nome: category
-   * Tipo:Stringa
+   * Tipo: Stringa
    * Valore: Nome categoria
    * Multi: Select
 
 1. Aggiungete i file sorgente alla cartella della libreria in qualsiasi modo. Ad esempio, utilizzate un client WebDav per copiare i file oppure create un file e create manualmente il contenuto.
 
-   **** Nota: Se necessario, potete organizzare i file sorgente in sottocartelle.
+   **Nota:** Se necessario, potete organizzare i file sorgente in sottocartelle.
 
 1. Selezionate la cartella della libreria client e fate clic su **Crea > Crea file**.
 1. Nella casella Nome file digitare uno dei seguenti nomi di file e fare clic su OK:
 
-   * **`js.txt`**: Utilizzate questo nome file per generare un file JavaScript.
-   * **`css.txt`**: Utilizzare questo nome file per generare un foglio di stile CSS.
+   * **`js.txt`:**Utilizzate questo nome file per generare un file JavaScript.
+   * **`css.txt`:**Utilizzare questo nome file per generare un foglio di stile CSS.
 
 1. Aprite il file e digitate il testo seguente per identificare la radice del percorso dei file sorgente:
 
@@ -203,9 +206,9 @@ Quando il codice nella cartella della libreria client fa riferimento ad altre li
 
 Le dipendenze devono essere un&#39;altra `cq:ClientLibraryFolder`. Per identificare le dipendenze, aggiungi una proprietà al `cq:ClientLibraryFolder` nodo con i seguenti attributi:
 
-* **** Nome: dipendenze
-* **** Tipo:Stringa[]
-* **** Valori: Il valore della proprietà category del nodo cq:ClientLibraryFolder da cui dipende la cartella libreria corrente.
+* **Nome:** dipendenze
+* **Tipo:** Stringa[]
+* **Valori:** Il valore della proprietà category del nodo cq:ClientLibraryFolder da cui dipende la cartella libreria corrente.
 
 Ad esempio, / `etc/clientlibs/myclientlibs/publicmain` ha una dipendenza dalla `cq.jquery` libreria. L&#39;JSP che fa riferimento alla libreria client principale genera HTML che include il seguente codice:
 
@@ -222,13 +225,13 @@ L&#39;incorporazione del codice è utile per fornire l&#39;accesso alle librerie
 
 #### Cartelle libreria client specifiche per l&#39;app {#app-specific-client-library-folders}
 
-È consigliabile mantenere tutti i file relativi alle applicazioni nella cartella dell&#39;applicazione sottostante `/app`. È inoltre consigliabile negare l’accesso alla `/app` cartella ai visitatori del sito Web. Per soddisfare entrambe le procedure ottimali, create una cartella libreria client sotto la `/etc` cartella che incorpora la libreria client riportata di seguito `/app`.
+È consigliabile mantenere tutti i file relativi all’applicazione nella cartella dell’applicazione sottostante `/app`. È inoltre consigliabile negare l’accesso alla `/app` cartella ai visitatori del sito Web. Per soddisfare entrambe le procedure ottimali, create una cartella della libreria client sotto la `/etc` cartella che incorpora la libreria client riportata di seguito `/app`.
 
 Utilizzare la proprietà category per identificare la cartella della libreria client da incorporare. Per incorporare la libreria, aggiungere una proprietà al `cq:ClientLibraryFolder` nodo di incorporamento, utilizzando i seguenti attributi di proprietà:
 
-* **** Nome: embed
-* **** Tipo:Stringa[]
-* **** Valore: Il valore della proprietà category del `cq:ClientLibraryFolder` nodo da incorporare.
+* **Nome:** embed
+* **Tipo:** Stringa[]
+* **Valore:** Il valore della proprietà category del `cq:ClientLibraryFolder` nodo da incorporare.
 
 #### Utilizzo dell&#39;incorporazione per ridurre al minimo le richieste {#using-embedding-to-minimize-requests}
 
@@ -301,9 +304,9 @@ Utilizzate la `channels` proprietà di una cartella libreria client per identifi
 
 Per associare una cartella libreria client a un gruppo di dispositivi, aggiungete una proprietà al `cq:ClientLibraryFolder` nodo con i seguenti attributi:
 
-* **** Nome: canali
-* **** Tipo:Stringa[]
-* **** Valori: Nome del gruppo di dispositivi mobili. Per escludere la cartella libreria da un gruppo, aggiungete il prefisso al nome con un punto esclamativo (&quot;!&quot;).
+* **Nome:** canali
+* **Tipo:** Stringa[]
+* **Valori:** Nome del gruppo di dispositivi mobili. Per escludere la cartella libreria da un gruppo, aggiungete il prefisso al nome con un punto esclamativo (&quot;!&quot;).
 
 Nella tabella seguente, ad esempio, è riportato il valore della `channels` proprietà per ogni cartella libreria client della `cq.widgets` categoria:
 
@@ -344,7 +347,7 @@ Potete scegliere di configurare la configurazione dei preprocessori per clientli
 
 * Aggiungere le proprietà multivalore `cssProcessor` e `jsProcessor` sul nodo clientlibrary
 
-* Oppure definire la configurazione predefinita del sistema tramite la configurazione OSGi di **HTML Library Manager**
+* Oppure definite la configurazione predefinita del sistema tramite la configurazione OSGi di **HTML Library Manager** .
 
 Una configurazione preprocessore sul nodo clientlib ha la precedenza rispetto alla configurazione OSGI.
 
@@ -415,7 +418,7 @@ Nell&#39;esempio della sezione precedente [Incorporamento del codice da altre li
 <link rel="stylesheet" href="/etc/clientlibs/mycientlibs/publicmain.css">
 ```
 
-L&#39;apertura del `publicmain.css` file mostra il seguente codice:
+Quando si apre il `publicmain.css` file viene visualizzato il seguente codice:
 
 ```xml
 @import url("/apps/myapp/clientlib/styles/main.css");
@@ -429,9 +432,9 @@ L&#39;apertura del `publicmain.css` file mostra il seguente codice:
 
 ### Scopri librerie client {#discover-client-libraries}
 
-Il `/libs/cq/ui/components/dumplibs/dumplibs` componente genera una pagina di informazioni su tutte le cartelle della libreria client nel sistema. Il `/libs/cq/ui/content/dumplibs` nodo ha il componente come tipo di risorsa. Per aprire la pagina, utilizzate il seguente URL (utilizzate un host e una porta diversi come richiesto):
+Il `/libs/cq/granite/components/dumplibs/dumplibs` componente genera una pagina di informazioni su tutte le cartelle della libreria client nel sistema. Il `/libs/granite/ui/content/dumplibs` nodo ha il componente come tipo di risorsa. Per aprire la pagina, usate il seguente URL (modificando l’host e la porta come richiesto):
 
-[https://localhost:4502/libs/cq/ui/content/dumplibs.test.html](https://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+`https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
 Le informazioni includono il percorso e il tipo della libreria (CSS o JS) e i valori degli attributi della libreria, come categorie e dipendenze. Le tabelle successive della pagina mostrano le librerie in ogni categoria e canale.
 
@@ -445,7 +448,7 @@ Il `dumplibs` componente include un selettore di test che visualizza il codice s
 
    * Aprite il seguente URL nel browser Web (utilizzate un host e una porta diversi come richiesto):
 
-      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
    La pagina predefinita mostra l&#39;output per i tag senza valore per l&#39;attributo category.
 
 1. Per visualizzare l&#39;output di una categoria, digitare il valore della `categories` proprietà della libreria client e fare clic su **Invia query**.
