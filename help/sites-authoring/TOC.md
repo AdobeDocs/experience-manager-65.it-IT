@@ -4,7 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente per l’authoring in AEM 6.5
 translation-type: tm+mt
-source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
+source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [Frammenti esperienza](experience-fragments.md)
    + [Esportazione in formato CSV](csv-export.md)
    + [Componenti](default-components.md)
-   + [Authoring di una pagina per dispositivi mobili  ](mobile.md)
+   + [Authoring di una pagina per dispositivi mobili ](mobile.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring ](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
    + [Best practice  ](best-practices.md)
@@ -48,7 +51,7 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [Console Componenti](default-components-console.md)
    + [Layout reattivo](responsive-layout.md)
    + [Approfondimenti contenuto](content-insights.md)
-   + [Creazione di contenuto accessibile (conformità WCAG 2.0)](creating-accessible-content.md)
+   + [Creazione di contenuto accessibile (conformità WCAG 2.1)](creating-accessible-content.md)
    + [Scaffolding](scaffolding.md)
    + [Configurazione dei componenti in modalità Progettazione](default-components-designmode.md)
    + [Componenti di base](default-components-foundation.md)
