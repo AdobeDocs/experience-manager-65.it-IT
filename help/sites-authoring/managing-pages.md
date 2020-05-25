@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2350'
 ht-degree: 93%
 
 ---
@@ -283,7 +283,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    * Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
    * Selezionare la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
    >[!NOTE]
-   L’opzione **Incolla senza elementi figlio** è disponibile in [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
+   L’opzione **Incolla senza elementi figlio** è disponibile a partire da [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
    >[!NOTE]
    Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
