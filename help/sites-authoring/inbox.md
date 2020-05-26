@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 83%
 
 ---
 
@@ -153,6 +156,11 @@ L’opzione Controllo amministratore è visibile solo ai membri del gruppo Ammin
 * **Salva:** Toccate/fate clic su questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
+
+>[!NOTE]
+>
+>Sebbene sia possibile selezionare più elementi, è possibile eseguire azioni su un solo elemento alla volta.
+
 
 1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
 
