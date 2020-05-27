@@ -1,9 +1,12 @@
 ---
 title: '[!DNL Supporto di Adobe Camera Raw].'
-description: Scoprite come abilitare il supporto per [!DNL Adobe Camera Raw] in [!DNL Risorse Adobe Experience Manager].
+description: Scopri come [!DNL Adobe Camera Raw] abilitare il supporto in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 1%
 
 ---
 
@@ -49,9 +52,9 @@ Per abilitare [!DNL Camera Raw] il supporto in [!DNL Experience Manager Assets],
 >
 >Assicurarsi che la configurazione di cui sopra sia la stessa del **[!UICONTROL campione DAM Update Asset With Camera RAW e della configurazione DNG Handling Step]** .
 
-È ora possibile importare file da fotocamera in formato raw in Risorse AEM. Dopo aver installato il pacchetto Camera RAW e configurato il flusso di lavoro richiesto, nell’elenco dei riquadri laterali viene visualizzata l’opzione Regola **** immagine.
+È ora possibile importare i file da fotocamera in formato raw in Risorse. Dopo aver installato il pacchetto Camera RAW e configurato il flusso di lavoro richiesto, nell’elenco dei riquadri laterali viene visualizzata l’opzione Regola **** immagine.
 
-![chlimage_1-135](assets/chlimage_1-337.png)
+![chlimage_1-131](assets/chlimage_1-337.png)
 
 *Figura: Opzioni nel riquadro laterale.*
 
