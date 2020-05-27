@@ -3,7 +3,10 @@ title: Organizzazione delle risorse digitali
 description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 1%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 Tutte le risorse digitali, i metadati e il contenuto di documenti Microsoft Office e PDF vengono estratti e resi ricercabili. La ricerca consente un filtraggio sofisticato delle risorse e rispetta pienamente le autorizzazioni corrette. I metadati sono descritti dettagliatamente nei metadati in Digital Asset Management.
 
-Risorse AEM supporta diversi modi di organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag . Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
+Experience Manager Assets supporta diversi modi di organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag . Gli utenti possono modificare i tag nell’Editor risorse DAM in cui vengono visualizzate le risorse secondarie, le rappresentazioni e i metadati.
 
 ## Organizzare le risorse nelle cartelle {#organize-using-folders}
 
@@ -32,7 +35,7 @@ Il modo più semplice per organizzare le risorse è salvarle in cartelle. È ana
    * **Cartelle** basate su data: contiene risorse digitali in base a una data di creazione o all’ultima data di modifica.
 
 * Create una directory di cartelle che probabilmente non verrà modificata in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
-* Se una risorsa è già pubblicata, utilizzate AEM per spostare la risorsa in un’altra cartella e ripubblicatela dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, viene *persa* in AEM e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
+* Se una risorsa è già pubblicata, utilizzate Experience Manager per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, viene *persa* in Experience Manager e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
 
 ## Organizzare le risorse tramite i tag {#use-tags-to-organize-assets}
 
@@ -42,7 +45,7 @@ Risorse Adobe Experience Manager utilizza un algoritmo di autoapprendimento per 
 
 Per ulteriori informazioni, consultate i seguenti articoli:
 
-* [Informazioni sui tag in AEM](/help/sites-authoring/tags.md)
+* [Informazioni sui tag in Experience Manager](/help/sites-authoring/tags.md)
 * [Modificare i metadati delle risorse](meta-edit.md)
 * [Tag avanzati migliorati nelle risorse](enhanced-smart-tags.md)
 
@@ -63,7 +66,7 @@ Un profilo di elaborazione contiene i comandi di elaborazione delle risorse appl
 
 La standardizzazione dell’utilizzo dei metadati, della denominazione dei file e della struttura delle cartelle garantisce che, con la crescita del pool di risorse digitali, i profili di elaborazione possano essere applicati alle cartelle con maggiore precisione e coerenza.
 
-Per ulteriori informazioni sui vari profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
+Per ulteriori informazioni sui diversi profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
 
 * [Profili per elaborare metadati, immagini e video](processing-profiles.md)
 * [Profili metadati](metadata-profiles.md)
