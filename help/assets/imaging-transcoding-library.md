@@ -3,9 +3,9 @@ title: Imaging Transcoding Library
 description: Scoprite come configurare e utilizzare la libreria Adobe Imaging Transcoding Library, una soluzione di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ Gli argomenti della riga di comando per Imaging Transcoding Library possono incl
 
 Potete configurare le seguenti opzioni per il `-resize` parametro:
 
-* `X`: `Works similar to AEM. For example -resize 319.`
-* `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-* `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-* `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
+* `X`: Funzionamento simile a Experience Manager. Ad esempio -resize 319.
+* `WxH`: Le proporzioni non vengono mantenute, ad esempio `-resize 319x319`.
+* `Wx`: Corregge la larghezza e calcola l’altezza mantenendo le proporzioni. Esempio `-resize 319x`.
+* `xH`: Corregge l’altezza e calcola la larghezza mantenendo le proporzioni. Esempio `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -74,7 +74,7 @@ Per configurare l’elaborazione ITL, create un file di configurazione e aggiorn
 
 Per configurare la libreria, create un file .conf per indicare le librerie utilizzando la procedura seguente. Sono necessarie autorizzazioni di livello amministratore o principale.
 
-1. Scaricate il pacchetto [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library (Libreria transcodifica immagini) e installatelo utilizzando Package Manager (Gestione pacchetti). Il pacchetto è compatibile con AEM 6.5.
+1. Scaricate il pacchetto [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library (Libreria transcodifica immagini) e installatelo utilizzando Package Manager (Gestione pacchetti). Il pacchetto è compatibile con Experience Manager 6.5.
 
 1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedete alla console Web e fate clic su **[!UICONTROL OSGi > Bundle]**. In alternativa, per aprire la console dei bundle, accedete all’ `https://[aem_server:[port]/system/console/bundles/` URL. Individua `com.day.cq.dam.cq-dam-switchengine` il bundle e il relativo ID.
 
@@ -92,7 +92,7 @@ Per configurare la libreria, create un file .conf per indicare le librerie utili
 
 1. Esegui `ldconfig` comando per creare i collegamenti e la cache necessari.
 
-1. Nell&#39;account utilizzato per avviare AEM, modifica il `.bash_profile` file. Aggiungete `LD_LIBRARY_PATH` i seguenti elementi.
+1. Nell&#39;account utilizzato per avviare Experience Manager, modifica il `.bash_profile` file. Aggiungete `LD_LIBRARY_PATH` i seguenti elementi.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -136,8 +136,9 @@ Ad esempio, se desiderate creare le miniature per un’immagine TIFF utilizzando
 
 1. Sincronizza il modello di flusso di lavoro aggiornato di [!UICONTROL DAM Update Asset] . Salvare il flusso di lavoro.
 
-Verificare la configurazione, caricare un&#39;immagine TIFF e monitorare il file error.log. Noterete `INFO` messaggi con menzioni di `SwitchEngineHandlingProcess execute: executing command line`. Nei registri vengono indicati i rendering generati. Al termine del flusso di lavoro, potete visualizzare le nuove rappresentazioni in AEM.
+Verificare la configurazione, caricare un&#39;immagine TIFF e monitorare il file error.log. Noterete `INFO` messaggi con menzioni di `SwitchEngineHandlingProcess execute: executing command line`. Nei registri vengono indicati i rendering generati. Al termine del flusso di lavoro, puoi visualizzare le nuove rappresentazioni in Experience Manager.
 
 >[!MORELIKETHIS]
 >
 >* [Articolo sui tipi MIME supportati](assets-formats.md#supported-image-transcoding-library)
+
