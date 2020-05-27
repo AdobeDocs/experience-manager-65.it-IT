@@ -3,7 +3,10 @@ title: Usa pacchetto dimostrativo per informazioni approfondite sulle risorse
 description: Utilizza il pacchetto dimostrativo per abilitare Adobe Asset Insights per acquisire dati da una pagina Web e generare approfondimenti per essa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 0%
 
 ---
 
@@ -12,10 +15,10 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 Utilizzando il pacchetto demo, puoi abilitare Adobe Asset Insights per acquisire dati da una pagina Web di esempio e generare informazioni per essa.
 
-## Utilizzare approfondimenti di Risorse AEM con una pagina Web di esempio {#using-aem-assets-insights-with-sample-web-page}
+## Utilizzare approfondimenti di Experience Manager Assets con una pagina Web di esempio  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configura approfondimenti risorse utilizzando le istruzioni in [Configurazione di approfondimenti](touch-ui-configuring-asset-insights.md)risorse.
-1. Scaricate il pacchetto AEM Assets di esempio dal basso e installate il pacchetto da CRXDE package manager.
+1. Scaricate il pacchetto di risorse di esempio dal basso e installate il pacchetto da CRXDE package manager.
 
    [Ottieni file](assets/insightsdemo.zip)
 
@@ -27,8 +30,8 @@ Utilizzando il pacchetto demo, puoi abilitare Adobe Asset Insights per acquisire
 
    >[!CAUTION]
    >
-   >Pagina Web è configurata per caricare la risorsa dal server localhost. Nel caso in cui il server sia in esecuzione in un&#39;altra posizione, cambiare l&#39;indirizzo del server da localhost a server nel contenuto HTML della pagina Web.
+   >Pagina Web è configurata per caricare la risorsa dal server localhost. Nel caso in cui il server sia in esecuzione in un&#39;altra posizione, cambiare l&#39;indirizzo del server da localhost all&#39;indirizzo del server nel contenuto HTML della pagina Web.
 
    >[!NOTE]
    >
-   >La pagina Web esterna può trovarsi direttamente in AEM.
+   >La pagina Web esterna può trovarsi in Experience Manager stesso.
