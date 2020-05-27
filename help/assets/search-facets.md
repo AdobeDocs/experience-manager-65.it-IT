@@ -1,21 +1,19 @@
 ---
 title: Facet di ricerca
-description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in AEM.
+description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 21%
+source-wordcount: '2517'
+ht-degree: 19%
 
 ---
 
 
 # Facet di ricerca {#search-facets}
 
-Scoprite come creare, modificare e utilizzare i facet di ricerca in AEM.
-
-L’implementazione a livello aziendale di Risorse Adobe Experience Manager (AEM) consente di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se utilizzate solo le funzionalità di ricerca generiche di AEM.
+L’implementazione a livello aziendale di Risorse Adobe Experience Manager consente di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se si utilizzano solo le funzionalità di ricerca generiche di Experience Manager.
 
 Usate i facet di ricerca nel pannello Filtri per aggiungere maggiore granularità all’esperienza di ricerca e rendere più efficiente e versatile la funzionalità di ricerca. I facet di ricerca aggiungono più dimensioni (predicati) che consentono di eseguire ricerche più complesse. Il pannello Filtri include alcuni facet standard. Potete inoltre aggiungere facet di ricerca personalizzati.
 
@@ -29,7 +27,7 @@ I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di 
 
 Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizzate il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata. Utilizzate il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create entro un intervallo di date specificato.
 
-1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Dalla pagina Moduli di ricerca, seleziona Barra di ricerca **[!UICONTROL Amministratore]** risorse, quindi fai clic su **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Individua e seleziona la Barra di ricerca Amministratore risorse](assets/assets_admin_searchrail.png)
@@ -38,7 +36,7 @@ Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizza
 
    >[!NOTE]
    >
-   >Per utilizzare la funzionalità di ricerca delle cartelle dalla barra **di ricerca per l’amministratore delle** risorse preconfigurata di una versione precedente di AEM, effettua le seguenti operazioni:
+   >Per utilizzare la funzionalità di ricerca delle cartelle dalla barra **di ricerca per l’amministratore delle** risorse preconfigurata, effettua le seguenti operazioni:
    >
    >1. Andate a */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRXDE.
    >1. Eliminare il nodo **del tipo** .
@@ -116,7 +114,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 >
 >Il predicato Options è un wrapper personalizzato che include i predicati delle proprietà per illustrare il comportamento descritto. Al momento non è disponibile alcun endpoint REST per supportare la funzionalità in modo nativo.
 
-1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti > Generale > Moduli di ricerca]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio **[!UICONTROL Tipo file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio `jcr:content/metadata/dc:format.`
@@ -136,9 +134,9 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 
 ## Aggiunta di un predicato di proprietà con più valori {#adding-a-multi-value-property-predicate}
 
-Il predicato Proprietà multivalore consente di cercare risorse per più valori. Considerate uno scenario in cui sono presenti immagini di più prodotti in Risorse AEM e i metadati di ciascuna immagine includono un numero SKU associato al prodotto. Potete usare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
+Il predicato Proprietà multivalore consente di cercare risorse per più valori. Considerate uno scenario in cui sono presenti immagini di più prodotti in Risorse e i metadati di ciascuna immagine includono un numero SKU associato al prodotto. Potete usare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
 
-1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Nella pagina Moduli di ricerca, seleziona Barra **[!UICONTROL di ricerca Amministratore]** risorse e fai clic su **[!UICONTROL Modifica]** ![aemassets_edit](assets/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina il predicato **[!UICONTROL Proprietà con più valori]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
@@ -149,9 +147,9 @@ Il predicato Proprietà multivalore consente di cercare risorse per più valori.
 
 ## Aggiunta di un predicato Tag {#adding-a-tags-predicate}
 
-Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, Risorse AEM cerca nelle risorse una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, potete usare l’opzione corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
+Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, Risorse cerca nelle risorse una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, potete usare l’opzione corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
-1. Fai clic sul logo AEM, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Moduli di ricerca]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Nella pagina Moduli di ricerca, seleziona Barra di ricerca **[!UICONTROL Amministratore]** risorse e fai clic su **[!UICONTROL Modifica]** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Nella scheda Impostazioni, inserite un testo segnaposto per il predicato. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. In alternativa, è possibile selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
@@ -166,9 +164,9 @@ Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per
 1. Andate al pannello Ricerca. Il **[!UICONTROL predicato Tag]** viene aggiunto al pannello Ricerca.
 1. Specificate i tag in base ai quali desiderate effettuare ricerche nelle risorse o selezionarli dall’elenco dei suggerimenti.
 
-   ![Suggerimento fornito da AEM durante la digitazione del nome del tag](assets/chlimage_1-419.png)
+   ![Suggerimenti forniti da Experience Manager quando si digita il nome del tag](assets/chlimage_1-419.png)
 
-   Suggerimento fornito da AEM durante la digitazione del nome del tag
+   *Figura: Suggerimenti forniti da Experience Manager quando si digita il nome del tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
