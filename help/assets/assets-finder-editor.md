@@ -3,9 +3,9 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2146'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ Il presente documento descrive quanto segue:
 
 ## Perché creare e configurare le pagine Editor risorse? {#why-create-and-configure-asset-editor-pages}
 
-Gestione delle risorse digitali viene utilizzata in sempre più scenari. Per passare da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager (AEM) Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che sono rilevanti per loro.
+Gestione delle risorse digitali viene utilizzata in sempre più scenari. Per passare da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che li interessano.
 
 Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet dove i dipendenti possono caricare le foto dalle visite alle fiere o da un centro stampa in un sito Web rivolto al pubblico. Le applicazioni incentrate sulle risorse possono anche estendersi alle soluzioni complete, inclusi carrelli commerciali, checkout e processi di verifica.
 
-La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con AEM Assets sono estensibili: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
+La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con Risorse possono essere estese: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
 
-Un’applicazione incentrata sulle risorse in AEM consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
+Un’applicazione incentrata sulle risorse in Experience Manager consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -161,7 +161,7 @@ To customize the query builder:
 
 #### Add predicates {#adding-predicates}
 
-AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
+Experience Manager Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
 To add predicates:
 
@@ -278,7 +278,7 @@ Il Modulo metadati è un modulo che include un’azione iniziale e finale. Tra q
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-Consulta [Personalizzazione ed estensione di Risorse](/help/assets/extending-assets.md) AEM per informazioni sulla modifica degli spazi dei nomi disponibili nel modulo di metadati.
+Per informazioni sulla modifica degli spazi dei nomi disponibili nei moduli di metadati, consultate [Personalizzazione ed estensione delle risorse](/help/assets/extending-assets.md) .
 
 1. Click the **Constraints** tab. Qui è possibile selezionare se un campo è obbligatorio e, se necessario, aggiungere eventuali vincoli.
 
@@ -391,7 +391,7 @@ Sono disponibili le azioni seguenti:
 
 ## Risorse con più modifiche nella pagina Editor risorse {#multi-editing-assets-with-the-asset-editor-page}
 
-Risorse AEM consente di apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
+Con Experience Manager Assets puoi apportare modifiche a diverse risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
 
 * Tag
 * Metadati
