@@ -1,22 +1,25 @@
 ---
-title: Esperienza della home page di AEM Assets
-description: Personalizza la home page di Risorse AEM per un’esperienza sulla schermata di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
+title: Home page di Adobe Experience Manager Assets
+description: Personalizza la home page di Experience Manager Assets per un’esperienza sulla schermata di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
 
-# Esperienza della home page di AEM Assets {#aem-assets-home-page-experience}
+# Home page di Adobe Experience Manager Assets {#aem-assets-home-page-experience}
 
-Personalizza la home page di Risorse Adobe Experience Manager (AEM) per un’esperienza di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
+Personalizza la home page di Risorse Adobe Experience Manager per un’esperienza sullo schermo di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
 
-La home page di Risorse AEM offre una schermata di benvenuto ricca e personalizzata, che include un&#39;istantanea delle attività recenti, come le risorse che sono state visualizzate o caricate di recente.
+La pagina principale Risorse offre un’esperienza sulla schermata di benvenuto ricca e personalizzata, che include un’istantanea delle attività recenti, come le risorse che sono state visualizzate o caricate di recente.
 
 Per impostazione predefinita, la home page delle risorse è disattivata. Per attivarla, effettuare le seguenti operazioni:
 
-1. Aprite AEM Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Apri Experience Manager Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite il servizio **[!UICONTROL Day CQ DAM Event Recorder]** .
 1. Selezionate **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione dell&#39;attività.
 
@@ -66,7 +69,7 @@ Questa sezione viene visualizzata sotto la sezione Benvenuti e presenta i widget
 
 **Recente**: Il widget **[!UICONTROL Visualizzato]** di recente in questa sezione visualizza le entità a cui l&#39;utente ha effettuato l&#39;accesso di recente, comprese cartelle, raccolte e progetti.
 
-**Scopri**: Il **[!UICONTROL nuovo]** widget in questa sezione presenta le risorse e le rappresentazioni caricate di recente nell’istanza di AEM Assets.
+**Scopri**: Il **[!UICONTROL nuovo]** widget in questa sezione presenta le risorse e le rappresentazioni caricate di recente nell’istanza Risorse.
 
 Per abilitare la rimozione dei dati dell&#39;attività utente, abilita il servizio **[!UICONTROL di rimozione eventi]** DAM da Configuration Manager. Dopo aver attivato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
 
@@ -74,7 +77,7 @@ La schermata introduttiva fornisce strumenti di navigazione semplici, ad esempio
 
 >[!NOTE]
 >
->Se si abilitano i servizi [!UICONTROL Day CQ DAM Event Recorder] e [!UICONTROL DAM Event Purge] , le operazioni di scrittura su JCR e l&#39;indicizzazione delle ricerche aumentano notevolmente il carico sul server AEM. Il carico aggiuntivo sul server AEM può influire sulle prestazioni.
+>Se si abilitano i servizi [!UICONTROL Day CQ DAM Event Recorder] e [!UICONTROL DAM Event Purge] , le operazioni di scrittura su JCR e l&#39;indicizzazione delle ricerche aumentano notevolmente il carico sul server Experience Manager. Il carico aggiuntivo sul server Experience Manager può influire sulle prestazioni.
 
 >[!CAUTION]
 >
