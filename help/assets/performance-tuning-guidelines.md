@@ -1,10 +1,13 @@
 ---
-title: Ottimizzazione delle prestazioni per [!DNL Risorse Adobe Experience Manager].
-description: Suggerimenti e indicazioni sulla configurazione di [!DNL Experience Manager], modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di [!DNL Experience Manager Assets].
+title: Ottimizzazione delle [!DNL Adobe Experience Manager Assets]prestazioni.
+description: Suggerimenti e indicazioni [!DNL Experience Manager] sulla configurazione, modifiche a hardware, software e componenti di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '2723'
+ht-degree: 0%
 
 ---
 
@@ -162,7 +165,7 @@ L&#39;impostazione di una coda a metà dei processori disponibili è una soluzio
 
 ### Configurazione risorsa aggiornamento DAM {#dam-update-asset-configuration}
 
-Il flusso di lavoro [!UICONTROL DAM Update Asset] contiene una suite completa di passaggi configurati per attività quali generazione PTIFF di Scene7 e integrazione con InDesign Server. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro [!UICONTROL DAM Update Asset] e di rimuovere eventuali passaggi superflui. In questo caso, aggiornate gli avviatori per [!UICONTROL DAM Update Asset] in modo che puntino al nuovo modello.
+Il flusso di lavoro Aggiorna risorsa  DAM contiene una suite completa di passaggi configurati per attività quali generazione e [!DNL Adobe InDesign Server] integrazione di Scene7 PTIFF. Tuttavia, la maggior parte degli utenti potrebbe non richiedere diversi di questi passaggi. Adobe consiglia di creare una copia personalizzata del modello di flusso di lavoro [!UICONTROL DAM Update Asset] e di rimuovere eventuali passaggi superflui. In questo caso, aggiornate gli avviatori per [!UICONTROL DAM Update Asset] in modo che puntino al nuovo modello.
 
 L&#39;esecuzione intensiva del flusso di lavoro [!UICONTROL DAM Update Asset] (Aggiorna risorsa) può aumentare notevolmente le dimensioni del datatastore dei file. I risultati di un esperimento eseguito da Adobe hanno dimostrato che la dimensione del datastore può aumentare di circa 400 GB se vengono eseguiti circa 5500 flussi di lavoro entro 8 ore.
 
@@ -221,7 +224,7 @@ La funzione di riserva XMP aggiorna la risorsa originale ogni volta che i metada
 
 I risultati elencati richiedono notevoli risorse. Adobe consiglia pertanto di [disattivare la funzione di Write](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se non è necessaria.
 
-Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
+Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
 
 ## Replica {#replication}
 
