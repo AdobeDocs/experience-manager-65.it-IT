@@ -3,9 +3,9 @@ title: Creazione di progetti di traduzione
 description: Scopri come creare progetti di traduzione in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1897'
 ht-degree: 16%
 
 ---
@@ -25,7 +25,7 @@ Per creare una copia per lingua, attivare uno dei seguenti flussi di lavoro di c
 
 >[!NOTE]
 >
->Se avviate un flusso di lavoro di traduzione per risorse complesse, come file PDF e InDesign, le relative risorse secondarie o rappresentazioni (se presenti) non vengono inviate per la traduzione.
+>Se avviate un flusso di lavoro di traduzione per risorse complesse, come file PDF e [!DNL Adobe InDesign] file, le relative risorse secondarie o rappresentazioni (se presenti) non vengono inviate per la traduzione.
 
 ## Crea e traduci flusso di lavoro {#create-and-translate-workflow}
 
