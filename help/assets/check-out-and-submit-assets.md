@@ -3,14 +3,17 @@ title: Archiviare e archiviare le risorse digitali per la modifica
 description: Scoprite come estrarre le risorse per la modifica e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
 
-# Archiviazione e estrazione di file in AEM DAM {#check-in-and-check-out-files-in-assets}
+# Archiviazione e estrazione di file in Experience Manager DAM {#check-in-and-check-out-files-in-assets}
 
-Risorse Adobe Experience Manager (AEM) consente di estrarre le risorse per la modifica e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non riaccedi a Risorse AEM. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
+Risorse Adobe Experience Manager consente di estrarre le risorse per la modifica e archiviarle nuovamente dopo aver completato le modifiche. Dopo aver estratto una risorsa, potete solo modificare, annotare, pubblicare, spostare o eliminare la risorsa. Il check-out di una risorsa blocca la risorsa. Altri utenti non possono eseguire nessuna di queste operazioni sulla risorsa finché non riaccedete a Risorse. Tuttavia, possono comunque modificare i metadati della risorsa bloccata.
 
 Per poter estrarre/archiviare le risorse, è necessario disporre dell&#39;accesso in scrittura.
 
@@ -41,13 +44,13 @@ Per verificare se altri utenti possono modificare la risorsa estratta, effettuat
 
    Potete anche scegliere di inserire delle annotazioni o pubblicare la risorsa.
 
-1. Selezionate la risorsa modificata dall’ [!DNL Assets] interfaccia, quindi fate clic su **[!UICONTROL Controllo]** nella barra degli strumenti. La risorsa modificata viene archiviata in Risorse AEM ed è disponibile per la modifica da parte di altri utenti.
+1. Selezionate la risorsa modificata dall’ [!DNL Assets] interfaccia, quindi fate clic su **[!UICONTROL Controllo]** nella barra degli strumenti. La risorsa modificata viene archiviata in Risorse ed è disponibile per la modifica da parte di altri utenti.
 
 ## Check-in forzato {#forced-check-in}
 
 Gli amministratori possono archiviare le risorse sottoposte a Check-Out da altri utenti.
 
-1. Accedi a Risorse AEM come amministratore.
+1. Accedi a Risorse come amministratore.
 1. Nell’interfaccia utente delle risorse, seleziona una o più risorse che sono state sottoposte a check-out da parte di altri utenti.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
@@ -56,6 +59,6 @@ Gli amministratori possono archiviare le risorse sottoposte a Check-Out da altri
 
 >[!MORELIKETHIS]
 >
->* [Informazioni sull’archiviazione e il check-out nell’app desktop AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Esercitazione video per comprendere l’archiviazione e il check-in di Risorse AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Informazioni sull’archiviazione e il check-out nell’app desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Esercitazione video per comprendere il check-in e il check-out delle risorse](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 
