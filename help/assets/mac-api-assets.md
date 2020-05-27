@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Le cartelle sono come directory nei file system tradizionali. Sono contenitori p
 In Experience Manager una risorsa contiene i seguenti elementi:
 
 * Proprietà e metadati della risorsa.
-* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da file PDF o Adobe InDesign.
+* Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da PDF o [!DNL Adobe InDesign] file.
 * Commenti facoltativi.
 
 Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto dei frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP Experience Manager Assets.
