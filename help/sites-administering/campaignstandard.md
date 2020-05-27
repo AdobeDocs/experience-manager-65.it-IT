@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+source-git-commit: f951c195c581f770dcc87fdf4a89d40ee6dd9ec0
+workflow-type: tm+mt
+source-wordcount: '1322'
+ht-degree: 0%
 
 ---
 
@@ -121,7 +124,7 @@ Per creare un modello di consegna e-mail specifico per AEM:
 
    Per salvare le modifiche, fai clic su **Conferma** e fai clic su **Salva.**
 
-   Le consegne e-mail create da questo modello avranno la funzione di contenuto di AEM abilitata.
+   Per le consegne e-mail create da questo modello verrà attivata la funzione di contenuto di AEM.
 
    ![chlimage_1-125](assets/chlimage_1-125a.png)
 
@@ -140,13 +143,13 @@ Il contenuto creato dall’istanza di creazione di AEM viene inviato per la prim
 >[!NOTE]
 >
 >Se non desiderate utilizzare l’URL di replica ma utilizzate invece l’URL rivolto al pubblico, potete impostare l’URL **** pubblico nella seguente impostazione di configurazione in OSGi (**Strumenti** > Console **** Web > Configurazione **OSGi > Integrazione campagna AEM - Configurazione**):
-**** URL pubblico: com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+**URL pubblico:** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
 
 Questo passaggio è inoltre necessario per replicare alcune configurazioni dell’istanza di creazione nell’istanza di pubblicazione.
 
 Per configurare la replica tra le istanze di AEM:
 
-1. Dall’istanza di creazione, selezionate il logo **** AEM > **Strumenti **icona > **Distribuzione** > **Replica** > **Agenti sull’autore**, quindi fate clic su **Agente** predefinito.
+1. Dall’istanza di creazione, selezionate il logo **** AEM > **Strumenti** > **Distribuzione** > **Replica** > **Agenti in fase di creazione******, quindi fate clic suAgente predefinito.
 
    ![chlimage_1-126](assets/chlimage_1-126a.png)
 
@@ -176,7 +179,7 @@ Prima di poter utilizzare AEM e Adobe Campaign insieme, è necessario stabilire 
 
 1. Selezionate **Connetti ad Adobe Campaign** e fate clic su **OK**.
 
-   ![chlimage_1-129](assets/chlimage_1-129a.png)
+   ![chlimage_1-127](assets/chlimage_1-129a.png)
 
    >[!NOTE]
    Dopo aver [creato il messaggio e-mail e averlo](/help/sites-authoring/campaign.md)pubblicato, è necessario ripubblicare la configurazione nell’istanza di pubblicazione.
@@ -198,5 +201,5 @@ Consultate [Configurare l&#39;esternalizzatore](/help/sites-developing/externali
 
 Se indica `localhost:4503` o un altro server a cui Adobe Campaign non è in grado di accedere, le immagini non verranno visualizzate nella console di Adobe Campaign.
 
-![chlimage_1-135](assets/chlimage_1-131a.png)
+![chlimage_1-131](assets/chlimage_1-131a.png)
 
