@@ -1,23 +1,26 @@
 ---
 title: Operazioni asincrone
-description: Risorse AEM ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.
+description: Experience Manager Assets ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 2%
 
 ---
 
 
 # Operazioni asincrone {#asynchronous-operations}
 
-Per ridurre l’impatto negativo sulle prestazioni, Risorse Adobe Experience Manager (AEM) elabora in modo asincrono alcune operazioni sulle risorse a lungo termine e che richiedono molte risorse.
+Per ridurre l’impatto negativo sulle prestazioni, Risorse Adobe Experience Manager elabora in modo asincrono alcune operazioni sulle risorse a lungo termine e che richiedono molte risorse.
 
 Tali operazioni comprendono:
 
 * Eliminazione di molte risorse
 * Spostamento di più risorse o risorse con più riferimenti
 * Esportazione/importazione in massa dei metadati delle risorse.
-* Recupero di risorse oltre il limite impostato, da una distribuzione AEM remota.
+* Recupero di risorse oltre il limite impostato, da una distribuzione remota di Experience Manager.
 
 L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità di risorse di sistema.
 
@@ -25,11 +28,11 @@ Potete visualizzare lo stato dei processi asincroni dalla pagina Stato **[!UICON
 
 >[!NOTE]
 >
->Per impostazione predefinita, i processi in Risorse AEM vengono eseguiti in parallelo. Se N è il numero di core CPU, per impostazione predefinita i processi N/2 possono essere eseguiti in parallelo. Per utilizzare le impostazioni personalizzate per la coda di processi, modificate la configurazione della coda **[!UICONTROL predefinita dell’operazione]** Async dalla console Web. Per ulteriori informazioni, consultate [Configurazione](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)della coda.
+>Per impostazione predefinita, i processi in Risorse vengono eseguiti in parallelo. Se N è il numero di core CPU, per impostazione predefinita i processi N/2 possono essere eseguiti in parallelo. Per utilizzare le impostazioni personalizzate per la coda di processi, modificate la configurazione della coda **[!UICONTROL predefinita dell’operazione]** Async dalla console Web. Per ulteriori informazioni, consultate [Configurazione](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)della coda.
 
 ## Monitorare lo stato delle operazioni asincrone {#monitoring-the-status-of-asynchronous-operations}
 
-Ogni volta che AEM Assets elabora un’operazione in modo asincrono, riceverai una notifica nella tua inbox ed e-mail.
+Ogni volta che Assets elabora un’operazione in modo asincrono, riceverai una notifica nella tua inbox e tramite e-mail.
 
 Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla pagina Stato **[!UICONTROL processo]** asincrono.
 
@@ -69,7 +72,7 @@ Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla 
 
 ## Rimozione dei processi completati {#purging-completed-jobs}
 
-Risorse AEM esegue ogni giorno un processo di eliminazione alle 1:00 per eliminare i processi asincroni completati con più di un giorno.
+Experience Manager Assets esegue ogni giorno un processo di eliminazione alle 1:00 per eliminare i processi asincroni completati con più di un giorno.
 
 È possibile modificare la pianificazione per il processo di eliminazione e la durata per la quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Potete inoltre configurare il numero massimo di processi completati per i quali i dettagli vengono conservati in qualsiasi momento.
 
@@ -83,7 +86,7 @@ Risorse AEM esegue ogni giorno un processo di eliminazione alle 1:00 per elimina
 
 ## Configurare le soglie per l&#39;elaborazione asincrona {#configuring-thresholds-for-asynchronous-processing}
 
-Puoi configurare il numero di soglia di risorse o riferimenti per Risorse AEM per elaborare una determinata operazione in modo asincrono.
+Puoi configurare il numero di soglia di risorse o riferimenti per Risorse per l’elaborazione asincrona di una determinata operazione.
 
 ### Configurare le soglie per le operazioni di eliminazione asincrone {#configuring-thresholds-for-asynchronous-delete-operations}
 
