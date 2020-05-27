@@ -3,7 +3,7 @@ title: Formati di file supportati per l'elaborazione in [!DNL Adobe Experience M
 description: Formati di file e tipi MIME supportati [!DNL Assets] and [!DNL Dynamic Media] da e funzionalità supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 9%
@@ -103,7 +103,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## Libreria PDF Rasterizer supportata {#supported-pdf-rasterizer-library}
 
-La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file Adobe Illustrator e PDF di grandi dimensioni e ricchi di contenuti. Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
+La libreria Adobe PDF Rasterizer genera miniature e anteprime di alta qualità per file PDF [!DNL Adobe Illustrator] e di grandi dimensioni che richiedono molto contenuto. Adobe consiglia di utilizzare la libreria PDF Rasterizer per le seguenti operazioni:
 
 * I file AI/PDF ad alta intensità di contenuto che richiedono molte risorse per l&#39;elaborazione.
 * File AI/PDF, per i quali le miniature non vengono generate per impostazione predefinita.
@@ -121,7 +121,7 @@ Consultate Libreria [transcodifica](imaging-transcoding-library.md)Imaging.
 
 ## Camera Raw supportata {#supported-camera-raw}
 
-La libreria Adobe Camera Raw consente a Risorse AEM di acquisire immagini crude. See [Camera Raw support](camera-raw.md).
+La libreria Adobe Camera Raw consente alle risorse di assimilare le immagini crude. See [Camera Raw support](camera-raw.md).
 
 ## Formati di documenti di Risorse supportati {#supported-document-formats}
 
@@ -234,7 +234,7 @@ L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di 
 
 ## Supported MIME types {#supported-mime-types}
 
-Per impostazione predefinita, AEM rileva il tipo di file utilizzando l’estensione file. AEM è in grado di rilevarlo dal contenuto dei file. In quest’ultimo caso, selezionate l’opzione [!UICONTROL Rileva MIME dal contenuto] in Servizio  Day CQ DAM Mime Type nella console Web di AEM.
+Per impostazione predefinita, Experience Manager rileva il tipo di file utilizzando l&#39;estensione del file. Experience Manager è in grado di rilevarlo dai contenuti dei file. In quest’ultimo caso, selezionate l’opzione [!UICONTROL Rileva MIME dal contenuto] in Servizio  Day CQ DAM Mime Type nella console Web di Experience Manager.
 
 Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite all&#39;indirizzo `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
