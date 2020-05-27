@@ -3,9 +3,9 @@ title: Profili di metadati per personalizzare i requisiti di metadati delle riso
 description: Informazioni sui profili di metadati per le risorse. Scoprite come creare un profilo di metadati e applicarlo alle risorse delle cartelle.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1413'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Un profilo di metadati consente di applicare i metadati predefiniti alle risorse
    * **[!UICONTROL Mappa su proprietà]**: Il valore di questa proprietà fornisce il percorso/nome relativo al nodo della risorsa in cui viene salvata nella directory archivio. Il valore deve sempre iniziare con `./` perché indica che il percorso si trova sotto il nodo della risorsa.
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
-   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Ad esempio, se specifichi: `/jcr:content/metadata/dc:desc` come nome della proprietà **** Mappa, Risorse AEM memorizza il valore `dc:desc` nel nodo di metadati della risorsa.
+   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Ad esempio, se specifichi: `/jcr:content/metadata/dc:desc` come nome della proprietà **** Mappa, Assets memorizza il valore `dc:desc` nel nodo di metadati della risorsa.
 
    * **[!UICONTROL Valore]** predefinito: Utilizzare questa proprietà per aggiungere un valore predefinito per il componente metadati. Ad esempio, se specificate &quot;Descrizione personale&quot;, questo valore viene assegnato alla proprietà `dc:desc` nel nodo di metadati della risorsa.
    ![chlimage_1-200](assets/chlimage_1-483.png)
@@ -106,7 +106,7 @@ Potete rielaborare le risorse in una cartella che dispone già di un profilo vid
 
 Seguite i passaggi per applicare il profilo di metadati:
 
-1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Fai clic sul logo Experience Manager e passa a **[!UICONTROL Strumenti > Risorse > Profili]** metadati.
 1. Selezionate il profilo di metadati da applicare a una o più cartelle.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +126,7 @@ Seguite i passaggi per applicare il profilo di metadati:
 
 ### Applicare un profilo di metadati a livello globale {#applying-a-metadata-profile-globally}
 
-Oltre ad applicare un profilo a una cartella, puoi applicarne uno a livello globale in modo che a qualsiasi contenuto caricato in risorse AEM in qualsiasi cartella sia applicato il profilo selezionato.
+Oltre ad applicare un profilo a una cartella, puoi applicarne uno a livello globale in modo che a qualsiasi contenuto caricato nelle risorse Experience Manager in qualsiasi cartella sia applicato il profilo selezionato.
 
 Potete rielaborare le risorse in una cartella che dispone già di un profilo di metadati esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
@@ -148,7 +148,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 
 ### Rimozione di profili di metadati dalle cartelle tramite l&#39;interfaccia utente Profili {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Fai clic sul logo Experience Manager e passa a **[!UICONTROL Strumenti > Risorse > Profili]** metadati.
 1. Selezionate il profilo di metadati da rimuovere da una o più cartelle.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -156,7 +156,7 @@ Puoi rimuovere un profilo di metadati da una cartella direttamente dal menu **[!
 
 ### Rimozione di profili di metadati dalle cartelle tramite Proprietà {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Fate clic sul logo AEM, individuate **[!UICONTROL Risorse]** e quindi la cartella da cui desiderate rimuovere un profilo di metadati.
+1. Fate clic sul logo Experience Manager, individuate **[!UICONTROL le risorse]** e quindi la cartella da cui desiderate rimuovere un profilo di metadati.
 1. Nella cartella, fare clic sul segno di spunta per selezionarlo, quindi fare clic su **[!UICONTROL Proprietà]**.
 1. Seleziona la scheda **[!UICONTROL Profili metadati]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
