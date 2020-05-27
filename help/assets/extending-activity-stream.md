@@ -1,20 +1,23 @@
 ---
 title: Integrare le risorse con il flusso di attività
-description: Descrive le funzionalità di registrazione di AEM e come configurare AEM per la registrazione di eventi specifici.
+description: Descrive le funzionalità di registrazione di Experience Manager e come configurarle per registrare eventi specifici.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
 
 # Integrare le risorse con il flusso di attività {#integrating-assets-with-activity-stream}
 
-Gli utenti di Risorse Adobe Experience Manager (AEM) eseguono numerose azioni come creare, caricare ed eliminare risorse. Queste azioni possono essere registrate in modo da fornire una cronologia delle operazioni eseguite da un utente. Questa sezione descrive le capacità di registrazione di AEM e come configurare AEM per registrare eventi specifici.
+Gli utenti di Risorse Adobe Experience Manager eseguono numerose azioni come creazione, caricamento ed eliminazione di risorse. Queste azioni possono essere registrate in modo da fornire una cronologia delle operazioni eseguite da un utente. Questa sezione descrive le funzionalità di registrazione di Experience Manager e come configurare Experience Manager per registrare eventi specifici.
 
 ## Considerazioni sulle prestazioni e comportamento predefinito {#performance-considerations-and-default-behavior}
 
-Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l&#39;integrazione di AEM Assets con il Flusso attività è disabilitata per impostazione predefinita.
+Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l&#39;integrazione delle risorse con il Flusso attività è disabilitata per impostazione predefinita.
 
 ## Eventi azione supportati {#supported-action-events}
 
@@ -36,9 +39,9 @@ Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durant
 * Risorsa secondaria aggiornata (SUBASSET_UPDATED)
 * Risorsa secondaria rimossa (SUBASSET_REMOVED)
 
-## Configurare la registrazione degli eventi di Risorse AEM {#configuring-aem-assets-events-recording}
+## Configurazione della registrazione degli eventi delle risorse {#configuring-aem-assets-events-recording}
 
-La console [](/help/sites-deploying/configuring-osgi.md) Web consente di accedere al tuning del registratore di eventi di Risorse AEM. Per configurare il registratore eventi di AEM Assets, procedi come segue:
+La console [](/help/sites-deploying/configuring-osgi.md) Web consente di accedere al tuning del registratore eventi delle risorse. Per configurare il Registratore eventi risorse, effettuate le seguenti operazioni:
 
 1. Passare alla console **[!UICONTROL Web]**
 
