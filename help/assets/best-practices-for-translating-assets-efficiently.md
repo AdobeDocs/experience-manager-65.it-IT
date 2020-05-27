@@ -3,16 +3,19 @@ title: Procedure ottimali per la conversione delle risorse
 description: Procedure ottimali per una gestione efficiente delle risorse, per sincronizzare le diverse versioni tradotte e semplificare i flussi di lavoro di traduzione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
 
 
 # Procedure ottimali per la conversione delle risorse {#best-practices-for-translating-assets-efficiently}
 
-Risorse Adobe Experience Manager (AEM) supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag per risorse digitali in più lingue e gestire le risorse tradotte. Per informazioni dettagliate, consultate Risorse [](multilingual-assets.md)multilingue.
+Risorse Adobe Experience Manager supporta flussi di lavoro multilingue per tradurre file binari, metadati e tag per risorse digitali in più lingue e gestire le risorse tradotte. Per informazioni dettagliate, consultate Risorse [](multilingual-assets.md)multilingue.
 
-Per una gestione efficiente delle risorse, al fine di garantire che le diverse versioni tradotte rimangano sincronizzate, create copie [in](preparing-assets-for-translation.md) lingua delle risorse prima di eseguire flussi di lavoro di traduzione.
+Per una gestione efficiente delle risorse, al fine di garantire che le diverse versioni tradotte rimangano sincronizzate, create copie [in](preparing-assets-for-translation.md) lingua delle risorse prima di eseguire i flussi di lavoro di traduzione.
 
 Una copia in lingua di una risorsa o di un gruppo di risorse è un linguaggio di pari livello (o una versione delle risorse in un linguaggio cognato) con una gerarchia di contenuti simile.
 
@@ -39,7 +42,7 @@ Potete inoltre apportare alcune modifiche alla configurazione di un paio di flus
 
 1. Attiva il flusso di lavoro [!UICONTROL Imposta data] ultima modifica.
 
-   Il flusso di lavoro [!UICONTROL DAM MetaData Writeback] configura l’ultima data modificata per una risorsa. Poiché questo flusso di lavoro viene disattivato al passaggio 2, Risorse AEM non è più in grado di aggiornare l’ultima data di modifica delle risorse. Pertanto, abilitate il flusso di lavoro *Imposta data* ultima modifica per fare in modo che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
+   Il flusso di lavoro [!UICONTROL DAM MetaData Writeback] configura l’ultima data modificata per una risorsa. Poiché questo flusso di lavoro viene disattivato al passaggio 2, Risorse non è più in grado di aggiornare l’ultima data di modifica delle risorse. Pertanto, abilitate il flusso di lavoro *Imposta data* ultima modifica per fare in modo che le ultime date di modifica delle risorse siano aggiornate. Le risorse con date dell’ultima modifica non aggiornate possono causare errori.
 
 1. [Configurate il framework](/help/sites-administering/tc-tic.md) di integrazione della conversione per interrompere la traduzione dei file binari delle risorse. Deselezionate l’opzione **[!UICONTROL Traduci risorse]** nella scheda Risorse per interrompere la conversione dei file binari delle risorse.
 1. Traducete i metadati/i tag delle risorse utilizzando flussi di lavoro [di risorse](multilingual-assets.md)multilingue.
