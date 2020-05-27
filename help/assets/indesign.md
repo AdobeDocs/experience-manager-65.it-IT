@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesi
 description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 4%
@@ -58,7 +58,7 @@ Questo script di comando:
    * Il testo e i file estratti vengono memorizzati in [!DNL Experience Manager Assets].
    * Tutte le rappresentazioni sono memorizzate nella [!DNL Experience Manager Assets], nella risorsa stessa.
 
-## Integrazione di [!DNL InDesign Server] AEM {#integrating-the-indesign-server-with-aem}
+## Integrare l&#39; [!DNL InDesign Server] interfaccia con Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Per integrare l&#39; [!DNL InDesign Server] utilizzo con [!DNL Experience Manager Assets] e dopo la configurazione del proxy, è necessario:
 
@@ -111,7 +111,7 @@ Argomenti di estrazione dei supporti e percorsi di script
 
 * **Estendi script**: Qui è possibile specificare diverse combinazioni di script. Se si desidera che gli script personalizzati siano eseguiti sul [!DNL InDesign Server]computer, salvare gli script in `/apps/settings/dam/indesign/scripts`.
 
-Per informazioni sugli script Indesign, consultate la documentazione per gli sviluppatori di [InDesign.](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Per informazioni sugli [!DNL Adobe InDesign] script, consultate la documentazione per gli sviluppatori di [InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -166,7 +166,7 @@ Se l&#39;applicazione [!DNL InDesign Server] e l&#39; [!DNL Experience Manager] 
 
 1. Accedi alla console Web all&#39;indirizzo `https://[aem_server]:[port]/system/console/configMgr`.
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
-1. Specificate il nome host e il percorso contestuale per il file [!DNL Indesign Server] e fate clic su **Salva**.
+1. Specificate il nome host e il percorso contestuale per il file [!DNL Adobe InDesign Server] e fate clic su **Salva**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
@@ -205,7 +205,7 @@ Per configurare il numero di processi IDS paralleli:
    >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
    >
    >
-   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera.
+   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene nuovamente convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera.
 
 ## Abilita il supporto per la versione [!DNL InDesign Server] 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
 
@@ -217,7 +217,7 @@ Per [!DNL InDesign Server] 10.0 o versione successiva, eseguite i seguenti passa
 
 >[!NOTE]
 >
->Per [!DNL InDesign Server] l&#39;integrazione con [!DNL Experience Manager Assets], utilizzate un processore multi-core perché la funzione di supporto della sessione necessaria per l&#39;integrazione non è supportata nei sistemi single core.
+>Per [!DNL InDesign Server] l&#39;integrazione con [!DNL Experience Manager Assets], utilizzate un processore multi-core perché la funzione di supporto delle sessioni necessaria per l&#39;integrazione non è supportata nei sistemi single core.
 
 ## Configurare [!DNL Experience Manager] le credenziali {#configure-aem-credentials}
 
