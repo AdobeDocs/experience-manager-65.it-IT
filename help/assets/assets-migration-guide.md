@@ -1,9 +1,12 @@
 ---
-title: Migra le risorse in massa a [!DNL Adobe Experience Manager Assets].
-description: Descrive come inserire risorse in [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
+title: Migra le risorse [!DNL Adobe Experience Manager Assets] in massa.
+description: Illustra come inserire risorse [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '1800'
+ht-degree: 8%
 
 ---
 
@@ -29,7 +32,7 @@ Prima di eseguire effettivamente uno dei passaggi descritti in questa metodologi
 >
 Questo software è open source ed è coperto dalla [Licenza Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Per porre una domanda o segnalare un problema, visita rispettivamente [GitHub Issues for ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migra a [!DNL Experience Manager]{#migrating-to-aem}
+## Migra in [!DNL Experience Manager] {#migrating-to-aem}
 
 La migrazione delle risorse a [!DNL Experience Manager] richiede diversi passaggi e deve essere vista come un processo graduale. Le fasi della migrazione sono le seguenti:
 
@@ -69,7 +72,7 @@ L’altro approccio per l’assimilazione delle risorse consiste nel estrarre le
 
 #### Recupero dal file system locale {#pulling-from-the-local-filesystem}
 
-Importazione risorse CSV degli strumenti [ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) estrae le risorse dal file system e dai metadati delle risorse da un file CSV per l’importazione delle risorse. L’API AEM Asset Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà dei metadati configurate. Idealmente, le risorse sono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
+Importazione risorse CSV degli strumenti [ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) estrae le risorse dal file system e dai metadati delle risorse da un file CSV per l’importazione delle risorse. L&#39;API Experience Manager Asset Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà dei metadati configurate. Idealmente, le risorse sono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
 
 Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessive migliorano notevolmente e questo metodo è generalmente considerato il modo più efficiente per caricare le risorse nell’archivio. Inoltre, poiché lo strumento supporta l’assimilazione dei metadati, potete importare tutte le risorse e i metadati in un singolo passaggio, anziché creare un secondo passaggio per applicare i metadati tramite uno strumento separato.
 
