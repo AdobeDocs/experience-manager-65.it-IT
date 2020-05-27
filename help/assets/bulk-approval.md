@@ -3,7 +3,10 @@ title: Esaminare raccolte e risorse delle cartelle
 description: Configurate i flussi di lavoro di revisione per le risorse all'interno di una cartella o di una raccolta e condividetela con revisori o partner creativi per ottenere feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 4%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Configurate i flussi di lavoro di revisione per le risorse all&#39;interno di una cartella o di una raccolta e condividetela con revisori o partner creativi per ottenere feedback.
 
-Risorse Adobe Experience Manager (AEM) consente di impostare un flusso di lavoro di revisione ad hoc per le risorse all&#39;interno di una cartella o una raccolta e di condividerlo con revisori o partner creativi per ottenere feedback.
+Risorse Adobe Experience Manager consente di impostare un flusso di lavoro di revisione ad hoc per le risorse all&#39;interno di una cartella o raccolta e di condividerlo con revisori o partner creativi per ottenere feedback.
 
 Potete associare il flusso di lavoro di revisione a un progetto o creare un&#39;attività di revisione indipendente.
 
@@ -48,7 +51,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    ![review_name](assets/review_name.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a Risorse AEM come approver e passa all’interfaccia utente Risorse. Per approvare le risorse, fate clic su **[!UICONTROL Notifiche]** , quindi selezionate l’attività di revisione dall’elenco.
+1. Accedi a Risorse come approver e passa all’interfaccia utente Risorse. Per approvare le risorse, fate clic su **[!UICONTROL Notifiche]** , quindi selezionate l’attività di revisione dall’elenco.
 
    ![Notifica risorse](assets/aemAssetsNotification.png)
 
@@ -92,7 +95,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Una notifica per la nuova attività viene inviata al responsabile approvazione.
-1. Accedi a Risorse AEM come approver e passa alla console Risorse. Per approvare le risorse, fate clic su **[!UICONTROL Notifiche]** , quindi selezionate l’attività di revisione dall’elenco.
+1. Accedi a Risorse come approver e passa alla console Risorse. Per approvare le risorse, fate clic su **[!UICONTROL Notifiche]** , quindi selezionate l’attività di revisione dall’elenco.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. Tutte le risorse della raccolta sono visibili nella pagina di revisione. Selezionate le risorse e fate clic su **[!UICONTROL Approva/Rifiuta]** per approvare o rifiutare le risorse, a seconda delle necessità.
 
