@@ -3,9 +3,9 @@ title: Informazioni sulla risorsa
 description: Scopri come la funzione Asset Insights consente di tenere traccia delle valutazioni degli utenti e delle statistiche di utilizzo delle immagini utilizzate nei siti Web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '737'
 ht-degree: 7%
 
 ---
@@ -73,7 +73,7 @@ Dalla **[!UICONTROL Visualizzazione approfondimenti]** puoi visualizzare simulta
 
 Asset Insights recupera periodicamente i dati di utilizzo delle risorse dalle suite di rapporti di Adobe Analytics. Per impostazione predefinita, Asset Insights esegue un processo in background ogni 24 ore alle 2 del mattino fino ai dati di recupero. Tuttavia, potete modificare sia la frequenza che l’ora configurando il servizio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** Service dalla console Web.
 
-1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Aprite la configurazione del servizio di sincronizzazione dei processi **[!UICONTROL di]** Adobe CQ DAM Asset Performance Report.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
