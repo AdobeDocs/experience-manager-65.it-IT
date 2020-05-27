@@ -1,11 +1,11 @@
 ---
 title: Report sulle risorse digitali
-description: Comprendi i rapporti sulle tue risorse in Risorse AEM che ti aiutano a capire l’utilizzo, l’attività e la condivisione delle tue risorse digitali.
+description: Informazioni sui rapporti sulle risorse in Adobe Experience Manager Assets per comprendere meglio l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '976'
 ht-degree: 15%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 15%
 
 # Rapporti su risorse {#asset-reports}
 
-Il reporting delle risorse è uno strumento chiave per valutare l’utilità della distribuzione di Risorse Adobe Experience Manager (AEM). Risorse AEM consente di generare vari rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, su come gli utenti interagiscono con le risorse e quali risorse vengono scaricate e condivise.
+Il reporting delle risorse è uno strumento chiave per valutare l’utilità della distribuzione di Risorse Adobe Experience Manager. Risorse consente di generare diversi rapporti per le risorse digitali. I rapporti forniscono informazioni utili sull’utilizzo del sistema, su come gli utenti interagiscono con le risorse e quali risorse vengono scaricate e condivise.
 
-Utilizzate le informazioni contenute nei rapporti per derivare le metriche di successo chiave per misurare l&#39;adozione di AEM Assets all&#39;interno dell&#39;azienda e da parte dei clienti.
+Utilizzate le informazioni contenute nei rapporti per derivare le metriche di successo chiave per misurare l&#39;adozione di Risorse all&#39;interno dell&#39;azienda e da parte dei clienti.
 
-Il framework di reporting di AEM Assets utilizza i processi Sling per elaborare in modo asincrono le richieste di rapporti in modo ordinato. È scalabile per archivi di grandi dimensioni. L&#39;elaborazione asincrona dei report aumenta l&#39;efficienza e la velocità con cui vengono generati i report.
+Il framework di reporting delle risorse utilizza i processi Sling per elaborare in modo asincrono le richieste di report in modo ordinato. È scalabile per archivi di grandi dimensioni. L&#39;elaborazione asincrona dei report aumenta l&#39;efficienza e la velocità con cui vengono generati i report.
 
 L&#39;interfaccia di gestione dei report è intuitiva e include opzioni e controlli di granulometria per accedere ai report archiviati e visualizzare gli stati di esecuzione dei report (operazione riuscita, non riuscita e in coda).
 
@@ -25,7 +25,7 @@ Quando viene generato un rapporto, riceverete una notifica via e-mail (facoltati
 
 ## Generazione di rapporti {#generate-reports}
 
-Risorse AEM genera i seguenti rapporti standard:
+Experience Manager Assets genera i seguenti rapporti standard:
 
 * Carica
 * Scarica
@@ -37,7 +37,7 @@ Risorse AEM genera i seguenti rapporti standard:
 * File
 * Condivisione collegamenti
 
-Gli amministratori di AEM possono generare e personalizzare facilmente questi rapporti per la vostra implementazione. Per generare un rapporto, un amministratore può effettuare le seguenti operazioni:
+Gli amministratori di Experience Manager possono generare e personalizzare facilmente questi rapporti per la tua implementazione. Per generare un rapporto, un amministratore può effettuare le seguenti operazioni:
 
 1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
    ![](assets/AssetsReportNavigation.png)
@@ -79,7 +79,7 @@ Gli amministratori di AEM possono generare e personalizzare facilmente questi ra
 
    ![](assets/files_report.png)
 
-   Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da AEM Assets. Include gli ID e-mail dell’utente che ha condiviso le risorse, gli ID e-mail degli utenti con cui le risorse sono condivise, la data di condivisione e la data di scadenza del collegamento. Le colonne non sono personalizzabili.
+   Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da Assets. Include gli ID e-mail dell’utente che ha condiviso le risorse, gli ID e-mail degli utenti con cui le risorse sono condivise, la data di condivisione e la data di scadenza del collegamento. Le colonne non sono personalizzabili.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
