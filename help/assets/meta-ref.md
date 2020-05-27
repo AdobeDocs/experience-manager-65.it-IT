@@ -3,7 +3,7 @@ title: Riferimento schemi metadati
 description: 'Scoprite le convenzioni standard per la descrizione dei metadati delle risorse, inclusi Dublin Core, IPTC e altri schemi di metadati. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Il riferimento seguente contiene informazioni su uno specifico schema di metadat
 
 ## Dublin Core {#dublin-core}
 
-I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse, al fine di facilitarne la ricerca. In Risorse AEM, Dublin Core descrive le risorse digitali come video, audio, immagini e documenti.
+I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse, al fine di facilitarne la ricerca. In Risorse, Dublin Core descrive le risorse digitali come video, audio, immagini e documenti.
 
 Il semplice set di metadati Dublin Core Metadata Element Set (DCMES) contiene 15 elementi di metadati, come elencato nella tabella seguente. Ciascun elemento Dublin Core è facoltativo e può essere ripetuto. Potete aggiungere o eliminare i metadati Dublin Core come fareste per i metadati specifici per i tipi di supporti.
 
@@ -30,7 +30,7 @@ Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa D
 | creatore | La persona o la società responsabile della creazione del contenuto. |
 | data | Data o periodo di tempo associato alla risorsa. |
 | descrizione | Ulteriori informazioni sulla risorsa. |
-| format | Il formato file, il supporto fisico o le dimensioni della risorsa. AEM utilizza `dc:format` per indicare il tipo MIME della risorsa. |
+| format | Il formato file, il supporto fisico o le dimensioni della risorsa. Experience Manager utilizza `dc:format` per indicare il tipo MIME della risorsa. |
 | identifier | Un riferimento univoco alla risorsa. |
 | language | La lingua della risorsa (ad esempio, en per l’inglese). |
 | publisher | La persona o la società responsabile della messa a disposizione della risorsa. |
