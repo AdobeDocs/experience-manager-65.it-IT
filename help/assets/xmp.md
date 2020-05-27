@@ -1,26 +1,29 @@
 ---
-title: Supporto per i metadati XMP in AEM Assets
-description: Scopri lo standard di metadati XMP (Extensible Metadata Platform) utilizzato da Risorse AEM per la gestione dei metadati. XMP fornisce un formato standard per la creazione, l'elaborazione e lo scambio di metadati per un'ampia gamma di applicazioni.
+title: Supporto per i metadati XMP in Risorse Adobe Experience Manager.
+description: Scoprite lo standard di metadati XMP (Extensible Metadata Platform) utilizzato da Experience Manager Assets per la gestione dei metadati. XMP fornisce un formato standard per la creazione, l'elaborazione e lo scambio di metadati per un'ampia gamma di applicazioni.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 19%
 
 ---
 
 
 # Metadati XMP {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da AEM Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia gamma di applicazioni.
+XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da Adobe Experience Manager Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia gamma di applicazioni.
 
-Oltre a offrire una codifica di metadati universale che può essere incorporata in tutti i formati di file, XMP offre un modello [di](xmp.md#xmp-core-concepts) contenuto avanzato ed è [supportato da Adobe](xmp.md#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP, in combinazione con Risorse AEM, possano sfruttare una piattaforma potente.
+Oltre a offrire una codifica di metadati universale che può essere incorporata in tutti i formati di file, XMP fornisce un modello [di](xmp.md#xmp-core-concepts) contenuto avanzato ed è [supportato da Adobe](xmp.md#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP in combinazione con Assets dispongano di una piattaforma potente su cui basarsi.
 
 La specifica [](https://www.adobe.com/devnet/xmp.html) XMP è disponibile da Adobe.
 
 ## Cos&#39;è XMP? {#what-is-xmp}
 
-Risorse AEM supporta in modo nativo XMP, la piattaforma per metadati estensibile guidata da Adobe. XMP è uno standard per l&#39;elaborazione e la memorizzazione di metadati standard e proprietari nelle risorse digitali. XMP è stato progettato per essere lo standard comune che consente a più applicazioni di lavorare in modo efficace con i metadati.
+Assets supporta in modo nativo XMP, la piattaforma per metadati estensibili guidata da Adobe. XMP è uno standard per l&#39;elaborazione e la memorizzazione di metadati standard e proprietari nelle risorse digitali. XMP è stato progettato per essere lo standard comune che consente a più applicazioni di lavorare in modo efficace con i metadati.
 
-I professionisti della produzione, ad esempio, utilizzano il supporto XMP integrato nelle applicazioni Adobe per trasmettere informazioni in più formati di file. L’archivio di Risorse AEM estrae i metadati XMP e li utilizza per gestire il ciclo di vita del contenuto e offre la possibilità di creare flussi di lavoro di automazione.
+I professionisti della produzione, ad esempio, utilizzano il supporto XMP integrato nelle applicazioni Adobe per trasmettere informazioni in più formati di file. L’archivio delle risorse estrae i metadati XMP e li utilizza per gestire il ciclo di vita del contenuto e offre la possibilità di creare flussi di lavoro di automazione.
 
 XMP standardizza la modalità di definizione, creazione ed elaborazione dei metadati fornendo un modello dati, un modello di memorizzazione e schemi. Tutti questi concetti sono trattati in questa sezione.
 
@@ -34,9 +37,9 @@ Adobe ha introdotto lo standard XMP come parte del prodotto software Adobe Acrob
 
 ### ecosistema XMP {#xmp-ecosystem}
 
-XMP definisce un modello di [metadati](https://en.wikipedia.org/wiki/Metadata) che può essere utilizzato con qualsiasi insieme definito di elementi di metadati. XMP definisce anche [schemi](https://en.wikipedia.org/wiki/XML_schema) specifici per le proprietà di base utili per registrare la cronologia di una risorsa, passando attraverso più fasi di elaborazione, dalla fotografia, dalla [scansione](https://en.wikipedia.org/wiki/Image_scanner)o creazione come testo, ai passaggi di modifica delle foto (come [ritaglio](https://en.wikipedia.org/wiki/Cropping_%28image%29) o regolazione del colore), all&#39;assemblaggio in un&#39;immagine finale. XMP consente a ogni programma software o dispositivo di aggiungere le proprie informazioni a una risorsa digitale, che può quindi essere mantenuta nel file digitale finale.
+XMP definisce un modello di [metadati](https://it.wikipedia.org/wiki/Metadato) che può essere usato con qualsiasi insieme definito di elementi di metadati. XMP definisce anche [schemi](https://en.wikipedia.org/wiki/XML_schema) specifici per le proprietà di base, utili per registrare la cronologia di una risorsa, in quanto passano attraverso più fasi di elaborazione: dalla fotografia, dalla [scansione](https://it.wikipedia.org/wiki/Scanner_(informatica)) o creazione come testo, fino ai passaggi di modifica delle foto (come [ritaglio](https://en.wikipedia.org/wiki/Cropping_%28image%29) o regolazione colore), fino all’assemblaggio in un’immagine definitiva. XMP consente a ogni programma software o dispositivo di aggiungere le proprie informazioni a una risorsa digitale, che possono quindi essere poi mantenute nel file digitale finale.
 
-XMP è più comunemente serializzato e memorizzato utilizzando un sottoinsieme del [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF), che a sua volta è espresso in [XML](https://en.wikipedia.org/wiki/XML).
+XMP è spesso serializzato e memorizzato utilizzando un sottoinsieme del [W3C](https://it.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://it.wikipedia.org/wiki/Resource_Description_Framework) (RDF), che a sua volta è espresso in [XML](https://it.wikipedia.org/wiki/XML).
 
 ## Vantaggi di XMP {#advantages-of-xmp}
 
@@ -53,7 +56,7 @@ Lo standard XMP è progettato per essere estensibile, consentendo di aggiungere 
 
 >[!NOTE]
 >
->XMP generalmente non consente l&#39;incorporamento di tipi di dati binari. Per poter includere dati binari in XMP, ad esempio immagini in miniatura, questi devono essere codificati in un formato XML adatto, ad esempio `Base64`.
+>XMP generalmente non consente l&#39;incorporamento di tipi di dati binari. Per poter includere dati binari in XMP, ad esempio immagini in miniatura, questi devono essere codificati in un formato adatto a XML, ad esempio `Base64`.
 
 ## Concetti di base XMP {#xmp-core-concepts}
 
