@@ -3,9 +3,9 @@ title: Preparare le risorse per la traduzione
 description: Create le cartelle principali della lingua per preparare le risorse da tradurre e supportare le risorse multilingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Per risorse in più lingue si intendono risorse con file binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue.
 
-In Risorse Adobe Experience Manager (AEM), le risorse in più lingue sono incluse nelle cartelle, dove ciascuna cartella contiene le risorse in un’altra lingua.
+In Risorse Adobe Experience Manager, le risorse in più lingue sono incluse nelle cartelle, dove ciascuna cartella contiene le risorse in un’altra lingua.
 
 Ogni cartella lingua è denominata copia per lingua. La cartella principale di una copia della lingua, nota come radice della lingua, identifica la lingua del contenuto nella copia della lingua. Ad esempio, */content/dam/it* è la radice della lingua italiana per la copia in lingua italiana. Le copie della lingua devono utilizzare una radice [della lingua configurata](preparing-assets-for-translation.md#creating-a-language-root) correttamente, in modo che venga utilizzata la lingua corretta quando vengono eseguite le traduzioni delle risorse di origine.
 
@@ -58,7 +58,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 ## Visualizzare le origini della lingua {#viewing-language-roots}
 
-L’interfaccia di AEM fornisce un pannello **[!UICONTROL Riferimenti]** che presenta un elenco delle origini delle lingue create in AEM Assets.
+L&#39;interfaccia di Experience Manager fornisce un pannello **[!UICONTROL Riferimenti]** che visualizza un elenco delle radici della lingua create all&#39;interno di Assets.
 
 1. Nella console Risorse, selezionate lo schema della lingua per il quale desiderate creare delle copie della lingua.
 1. Fare clic sull&#39;icona GlobalNav e scegliere **[!UICONTROL Riferimenti]** per aprire il riquadro [!UICONTROL Riferimento] .
