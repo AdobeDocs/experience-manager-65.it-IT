@@ -3,9 +3,9 @@ title: Best practice per l'integrazione [!DNL Adobe Experience Manager] e Adobe 
 description: Procedure ottimali per l’ [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrazione, per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere un’elevata velocità dei contenuti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3247'
 ht-degree: 17%
 
 ---
@@ -35,7 +35,7 @@ Continua a leggere per scoprire quali integrazioni scegliere tra desktop e DAM d
 
 | Proposta di valore per le persone coinvolte | Offerta Adobe | Superfici interessate |
 |---|---|---|
-| Gli utenti creativi scoprono le risorse da [!DNL Experience Manager], le aprono e le utilizzano, le modifiche e il caricamento di [!DNL Experience Manager]modifiche, nonché il caricamento di nuovi file in [!DNL Experience Manager], senza uscire dalle [!DNL Creative Cloud] app. | [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
+| Gli utenti creativi scoprono le risorse da [!DNL Experience Manager], le aprono e le utilizzano, le modifiche e il caricamento di [!DNL Experience Manager]modifiche, nonché il caricamento di nuovi file in [!DNL Experience Manager], senza uscire dalle [!DNL Creative Cloud] app. | [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign]. |
 | Gli utenti aziendali semplificano l’apertura e l’utilizzo delle risorse, la modifica e il caricamento delle modifiche [!DNL Experience Manager]e il caricamento di nuovi file [!DNL Experience Manager] dall’ambiente desktop. Utilizzano un&#39;integrazione generica per aprire qualsiasi tipo di risorsa nell&#39;applicazione desktop nativa, inclusi quelli non Adobe. | [App desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] app desktop su Windows e Mac desktop |
 | Gli esperti di marketing e gli utenti aziendali possono scoprire, visualizzare in anteprima, concedere in licenza e salvare le [!DNL Adobe Stock] risorse e gestirle dall&#39;interno [!DNL Experience Manager]. Le risorse concesse in licenza e salvate forniscono [!DNL Adobe Stock] metadati specifici per una migliore governance. | [Integrazione con Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaccia web |
 
@@ -45,7 +45,7 @@ Questo articolo si concentra principalmente sui primi due aspetti delle esigenze
 
 ### Mappatura dei casi di utilizzo e delle soluzioni Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
-| Caso d’uso   | [!DNL Adobe Asset Link] | [!DNL Experience Manager] app desktop | Note / Altre soluzioni |
+| Caso d’uso     | [!DNL Adobe Asset Link] | [!DNL Experience Manager] app desktop | Note / Altre soluzioni |
 |---|---|---|---|
 | Scopri - sfogliare le cartelle DAM | Sì | [!DNL Experience Manager] Azioni interfaccia Web e desktop |  |
 | Scopri - Accesso alle raccolte DAM | Sì | [!DNL Experience Manager] Azioni interfaccia Web e desktop |  |
@@ -181,7 +181,7 @@ Come discusso in questo documento, si consiglia di eseguire importanti aggiornam
 
 Adobe Asset Link offre un buon supporto per questo caso di utilizzo:
 
-* Quando gli utenti in Photoshop, InDesign o Illustrator intendono modificare un file, eseguono un’operazione di estrazione sulla risorsa specificata
+* Quando gli utenti accedono [!DNL Photoshop]o [!DNL InDesign]intendono [!DNL Illustrator] modificare un file, eseguono un’operazione di estrazione sulla risorsa specificata
 * La risorsa viene scaricata in background, inserita nell’account Creative Cloud sincronizzato su disco dall’app desktop Creative Cloud e il flag di estrazione viene attivato [!DNL Experience Manager] sulla risorsa per ridurre al minimo i conflitti di modifica
 * Da qui in poi, l&#39;utente lavora in un file memorizzato localmente nella posizione sincronizzata, e può continuare a lavorare e salvare le modifiche necessarie a qualsiasi frequenza richiesta
 * Inoltre, poiché la risorsa si trova nell’account Creative Cloud, è disponibile anche su altri dispositivi che l’utente potrebbe avere (ad esempio, può essere aperta o modificata in un’app mobile Creative Cloud dedicata) e può essere condivisa con altri utenti Creative Cloud a scopo di collaborazione.
