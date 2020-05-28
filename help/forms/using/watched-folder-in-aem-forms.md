@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '7153'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,8 @@ Un amministratore può configurare una cartella di rete, nota come Cartella esam
 
 Per creare una cartella esaminata nel file system è possibile utilizzare uno dei seguenti metodi:
 
-* Durante la configurazione delle proprietà di un nodo di configurazione Cartella esaminata, digitare il percorso completo della directory principale nella proprietà folderPath e aggiungere il nome della cartella esaminata da creare, come illustrato nell&#39;esempio seguente: `C:/MyPDFs/MyWatchedFolder`La `MyWatchedFolder`cartella non esiste, AEM Forms tenta di creare la cartella nel percorso specificato.
+* Durante la configurazione delle proprietà di un nodo di configurazione Cartella esaminata, digitare il percorso completo della directory principale nella proprietà folderPath e aggiungere il nome della cartella esaminata da creare, come illustrato nell&#39;esempio seguente: `C:/MyPDFs/MyWatchedFolder`
+La `MyWatchedFolder`cartella non esiste, AEM Forms tenta di creare la cartella nel percorso specificato.
 
 * Create una cartella sul file system prima di configurare un endpoint di tipo Cartella esaminata, quindi immettete il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere Proprietà [cartella](#watchedfolderproperties)esaminate.
 
@@ -214,7 +218,7 @@ Potete creare variabili mutevoli per i metodi di elaborazione dei file basati su
 
 È possibile avviare un flusso di lavoro, un servizio o uno script per elaborare i documenti posizionati in una cartella di controllo.
 
-### Utilizzo di un servizio per elaborare i file di una cartella esaminata {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Utilizzo di un servizio per elaborare i file di una cartella esaminata   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Un servizio è un&#39;implementazione personalizzata dell&#39; `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interfaccia. È registrato con OSGi insieme ad alcune proprietà personalizzate. Le proprietà personalizzate dell&#39;implementazione lo rendono unico e aiutano a identificare l&#39;implementazione.
 
@@ -397,7 +401,7 @@ Se la struttura di un payload è diversa dalla struttura della cartella esaminat
 
 1. Scarica [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
 1. Imposta l’SDK del client nel percorso di creazione del progetto basato su server. Per iniziare, puoi scaricare e aprire il seguente progetto basato sul cielo nell’IDE di tua scelta.
-1. Modificate il codice del filtro di mappatura del payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
+1. Modificate il codice del filtro di mappatura payload disponibile nel pacchetto di esempio in base alle vostre esigenze.
 1. Utilizzate maven per creare un bundle del filtro Payload Mapper personalizzato.
 1. Utilizzate la console [dei bundle](https://localhost:4502/system/console/bundles) AEM per installare il bundle.
 
