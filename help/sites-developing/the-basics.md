@@ -1,5 +1,5 @@
 ---
-title: Concetti di base AEM
+title: Concetti di base di AEM
 seo-title: Nozioni di base
 description: Una panoramica dei concetti chiave di come AEM è strutturato e come svilupparsi al di sopra di esso, tra cui la comprensione di JCR, Sling, OSGi, il dispatcher, i flussi di lavoro e MSM
 seo-description: Una panoramica dei concetti chiave di come AEM è strutturato e come svilupparsi al di sopra di esso, tra cui la comprensione di JCR, Sling, OSGi, il dispatcher, i flussi di lavoro e MSM
@@ -10,12 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: 2d0e0325d1fce2587e4766bf2f60fc5d4accf45b
+source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+workflow-type: tm+mt
+source-wordcount: '3365'
+ht-degree: 0%
 
 ---
 
 
-# Concetti di base AEM {#aem-core-concepts}
+# Concetti di base di AEM {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -23,7 +26,7 @@ source-git-commit: 2d0e0325d1fce2587e4766bf2f60fc5d4accf45b
 
 ## Prerequisiti per lo sviluppo su AEM {#prerequisites-for-developing-on-aem}
 
-Per sviluppare su AEM le seguenti competenze:
+Per poter sviluppare su AEM, avrai bisogno delle seguenti competenze:
 
 * Conoscenza di base delle tecniche di applicazione Web, tra cui:
 
@@ -43,7 +46,7 @@ Lo standard Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/cont
 
 Il lead della specifica è detenuto da Adobe Research (Svizzera) AG.
 
-Il pacchetto [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr. &amp;ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto del repository.
+Il pacchetto [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr.&amp;ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto del repository.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -63,7 +66,7 @@ I vantaggi di questa flessibilità sono evidenti nelle applicazioni con un&#39;a
 
 Consulta [Scoprire Sling in 15 minuti](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) per i primi passi di sviluppo con Sling.
 
-Nel diagramma seguente viene illustrata la risoluzione dello script Sling: mostra come passare dalla richiesta HTTP al nodo contenuto, dal nodo di contenuto al tipo di risorsa, dal tipo di risorsa allo script e quali variabili di script sono disponibili.
+Nel diagramma seguente viene illustrata la risoluzione dello script Sling: mostra come passare da una richiesta HTTP al nodo del contenuto, dal nodo del contenuto al tipo di risorsa, dal tipo di risorsa allo script e quali variabili di script sono disponibili.
 
 ![chlimage_1-84](assets/chlimage_1-97.png)
 
@@ -135,8 +138,8 @@ Con Sling, si specifica quale script esegue il rendering di una determinata enti
 
 La richiesta è ripartita e vengono estratte le informazioni necessarie. Nella directory archivio viene ricercata la risorsa richiesta (nodo contenuto):
 
-* first Sling controlla se un nodo esiste nella posizione specificata nella richiesta;ad esempio `../content/corporate/jobs/developer.html`
-* se non viene trovato alcun nodo, l&#39;estensione viene eliminata e la ricerca viene ripetuta;ad esempio `../content/corporate/jobs/developer`
+* first Sling controlla se un nodo esiste nella posizione specificata nella richiesta; ad esempio `../content/corporate/jobs/developer.html`
+* se non viene trovato alcun nodo, l&#39;estensione viene eliminata e la ricerca viene ripetuta; ad esempio `../content/corporate/jobs/developer`
 * se non viene trovato alcun nodo, Sling restituirà il codice http 404 (Non trovato).
 
 Sling permette anche cose diverse dai nodi JCR di essere risorse, ma questa è una funzione avanzata.
@@ -168,7 +171,7 @@ L’elenco dei motori di script supportati dalla data istanza di AEM è elencato
 
 Inoltre, Apache Sling supporta l&#39;integrazione con altri popolari motori di script (ad esempio, Groovy, JRuby, Freemarker) e fornisce un modo per integrare nuovi motori di script.
 
-Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` quindi per:
+Utilizzando l&#39;esempio precedente, se il campo `sling:resourceType` è `hr/jobs` quindi for:
 
 * Richieste GET/HEAD e URL che terminano con .html (tipi di richiesta predefiniti, formato predefinito)
 
@@ -212,7 +215,8 @@ Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` quind
 
 Se per una determinata richiesta sono richiesti più script, viene selezionato lo script con la corrispondenza migliore. Più specifica è una partita, meglio è. in altre parole, più il selettore corrisponde meglio, indipendentemente da eventuali estensioni di richiesta o dalla corrispondenza del nome del metodo.
 
-Ad esempio, prendere in considerazione una richiesta per accedere alla risorsa`/content/corporate/jobs/developer.print.a4.html`di tipo`sling:resourceType="hr/jobs"`
+Ad esempio, prendere in considerazione una richiesta per accedere alla risorsa`/content/corporate/jobs/developer.print.a4.html`di tipo
+`sling:resourceType="hr/jobs"`
 
 Presupponendo che sia presente il seguente elenco di script nella posizione corretta:
 
@@ -234,7 +238,7 @@ Il super tipo di risorsa può essere definito in due modi:
 * dalla `sling:resourceSuperType` proprietà della risorsa.
 * dalla `sling:resourceSuperType` proprietà del nodo a cui `sling:resourceType` punta.
 
-Esempio:
+Ad esempio:
 
 * /
 
@@ -256,7 +260,14 @@ Esempio:
 
 
 
-La gerarchia di tipo /x è [ c, b, a, &lt;default>] mentre per /y la gerarchia è [ c, a,
+La gerarchia dei tipi di:
+
+* `/x`
+   * è `[ c, b, a, <default>]`
+* while for `/y`
+   * la gerarchia è `[ c, a, <default>]`
+
+Questo perché `/y` ha la `sling:resourceSuperType` proprietà mentre `/x` non è e quindi il suo supertipo viene preso dal relativo tipo di risorsa.
 
 #### Gli script Sling non possono essere chiamati direttamente {#sling-scripts-cannot-be-called-directly}
 
@@ -264,9 +275,9 @@ All&#39;interno di Sling, gli script non possono essere richiamati direttamente 
 
 Se si chiama la rappresentazione (lo script) direttamente, si nasconde la risorsa all&#39;interno dello script, in modo che il framework (Sling) non ne sia più a conoscenza. Così si perdono alcune caratteristiche:
 
-* gestione automatica di metodi http diversi da GET, inclusi:
+* gestione automatica di metodi http diversi da GET, tra cui:
 
-   * POST, PUT, DELETE che vengono gestiti con un&#39;implementazione standard
+   * POST, PUT, DELETE che vengono gestiti con un&#39;implementazione standard sling
    * lo `POST.jsp` script nel percorso sling:resourceType
 
 * l&#39;architettura del codice non è più pulita né strutturata come dovrebbe; di importanza primaria per lo sviluppo su larga scala
@@ -306,7 +317,7 @@ Un framework OSGi offre quindi il caricamento/scaricamento dinamico, la configur
 
 Questa architettura consente di estendere Sling con moduli specifici dell&#39;applicazione. Sling, e quindi CQ5, utilizza l’implementazione [Apache Felix](https://felix.apache.org/) di OSGI (iniziativa Open Services Gateway) e si basa sulle specifiche OSGi Service Platform Release 4 versione 4.2. Sono entrambe raccolte di bundle OSGi in esecuzione in un framework OSGi.
 
-Questo consente di eseguire le azioni seguenti su uno dei pacchetti all&#39;interno dell&#39;installazione:
+Questo consente di eseguire le azioni seguenti su uno qualsiasi dei pacchetti all&#39;interno dell&#39;installazione:
 
 * install
 * start
@@ -360,7 +371,7 @@ In AEM un componente viene spesso utilizzato per rappresentare il contenuto di u
 
 La definizione di un componente include:,
 
-* il codice utilizzato per il rendering del contenuto
+* il codice utilizzato per eseguire il rendering del contenuto
 * una finestra di dialogo per l&#39;input dell&#39;utente e la configurazione del contenuto risultante.
 
 **Modello** Un modello è la base per un tipo specifico di pagina. Quando create una pagina nella scheda Siti Web, l’utente deve selezionare un modello. La nuova pagina viene quindi creata copiando questo modello.
@@ -387,11 +398,11 @@ Ad esempio, per ottenere la pagina contenente una risorsa, è possibile utilizza
 
 Page myPage = pageManager.getContainPage(myResource);
 
-PageManager è l&#39;oggetto di gestione delle pagine e myResource un oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore delle pagine, vedere [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+PageManager è l&#39;oggetto di gestione delle pagine e myResource un oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore delle pagine, fare riferimento a [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struttura all&#39;interno del repository {#structure-within-the-repository}
 
-L&#39;elenco seguente fornisce una panoramica della struttura che verrà visualizzata nella directory archivio.
+L&#39;elenco seguente fornisce una panoramica della struttura che verrà visualizzata all&#39;interno della directory archivio.
 
 >[!CAUTION]
 >
@@ -405,7 +416,7 @@ L&#39;elenco seguente fornisce una panoramica della struttura che verrà visuali
 
 * `/apps`
 
-   Applicazione correlata; include definizioni di componenti specifiche per il sito Web. I componenti che si sviluppano possono essere basati sui componenti forniti in `/libs/foundation/components`.
+   Applicazione correlata; include definizioni di componenti specifiche per il sito Web. I componenti che si sviluppano possono essere basati sui componenti preconfigurati disponibili in `/libs/foundation/components`.
 
 * `/content`
 
@@ -427,7 +438,7 @@ L&#39;elenco seguente fornisce una panoramica della struttura che verrà visuali
 
 * `/var`
 
-   file che cambiano e vengono aggiornati dal sistema; come registri di controllo, statistiche, gestione degli eventi. La sottocartella `/var/classes` contiene i servlet Java nei moduli di origine e compilati generati dagli script dei componenti.
+   i file che cambiano e vengono aggiornati dal sistema; come registri di controllo, statistiche, gestione degli eventi. La sottocartella `/var/classes` contiene i servlet Java nei moduli di origine e compilati generati dagli script dei componenti.
 
 ## Ambienti {#environments}
 
