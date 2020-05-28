@@ -1,6 +1,6 @@
 ---
-title: Applicazione di firme elettroniche a un modulo utilizzando firme a script (obsolete)
-seo-title: Applicazione di firme elettroniche a un modulo utilizzando firme a script (obsolete)
+title: Applicazione di firme elettroniche a un modulo tramite firme a script
+seo-title: Applicazione di firme elettroniche a un modulo tramite firme a script
 description: Firma di moduli tramite script
 seo-description: Firma di moduli tramite script
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
@@ -9,16 +9,19 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 0%
 
 ---
 
 
-# Applicazione di firme elettroniche a un modulo utilizzando firme a script (obsolete){#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Applicazione di firme elettroniche a un modulo tramite firme a script{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-È possibile utilizzare il componente **Firma** scarabocchio (obsoleto) e il componente Passaggio **** firma per disegnare (scarabocchio) una firma su un modulo adattivo. Il componente Fase firma visualizza una versione PDF del modulo adattivo. Per utilizzare il componente Fase firma è necessario abilitare l&#39;opzione Documento di registrazione o i moduli adattivi basati su modelli di modulo.
+È possibile utilizzare il componente **Firma** scarabocchio e il componente Passaggio **** firma per disegnare una firma (scarabocchio) in un modulo adattivo. Il componente Fase firma visualizza una versione PDF del modulo adattivo. Per utilizzare il componente Fase firma è necessario abilitare l&#39;opzione Documento di registrazione o i moduli adattivi basati su modelli di modulo.
 
-Entrambi i componenti dispongono di una finestra, visualizzata di seguito, per firmare un modulo. È inoltre possibile fare clic sull&#39;icona di geolocalizzazione ![aem_6_3_geolocalizzazione](assets/aem_6_3_geolocation.png) per aggiungere una geolocalizzazione alla firma.
+Entrambi i componenti dispongono di una finestra, come illustrato di seguito, per firmare un modulo. È inoltre possibile fare clic sull&#39;icona di geolocalizzazione ![aem_6_3_geolocalizzazione](assets/aem_6_3_geolocation.png) per aggiungere una geolocalizzazione alla firma.
 
 ![Finestra di dialogo Firma scarabocchio](assets/scribble-signature.png)
 
@@ -43,9 +46,9 @@ Entrambi i componenti dispongono di una finestra, visualizzata di seguito, per f
 
    * **Nome** elemento: Specificate il nome del componente.
 
-   * **** Titolo: Specificate un titolo univoco del componente.
-   * **** Messaggio modello: Specificare il messaggio da visualizzare durante il caricamento del PDF della firma. I servizi Adobe Sign richiedono del tempo per preparare e caricare il PDF della firma.
-   * **** Servizio di firma: Selezionare l&#39;opzione **Firma** scarabocchio.
+   * **Titolo:** Specificate un titolo univoco del componente.
+   * **Messaggio modello:** Specificare il messaggio da visualizzare durante il caricamento del PDF della firma. I servizi Adobe Sign richiedono del tempo per preparare e caricare il PDF della firma.
+   * **Servizio di firma:** Selezionare l&#39;opzione **Firma** scarabocchio.
 
    * **Classe** CSS: Specificate la classe CSS della libreria client, se presente. Si consiglia di utilizzare [temi](../../forms/using/themes.md) e stili [](../../forms/using/inline-style-adaptive-forms.md) in linea al posto di CSS Class.
    Toccate l&#39;icona Fine ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche. La firma è configurata correttamente.
