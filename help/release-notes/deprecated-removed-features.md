@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
+source-git-commit: 49209cb64c829fde396e87ca4b2e326ecf1dd941
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 58%
 
 ---
 
@@ -27,13 +30,13 @@ Questo processo offre ai clienti almeno un ciclo di rilascio per adattare la lor
 
 In questa sezione sono elencate le funzioni e le funzionalità contrassegnate come obsolete per AEM 6.5. In genere, le funzioni che si prevede di rimuovere in una versione futura vengono inizialmente rese obsolete e viene fornita un’alternativa.
 
-Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
+Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
 
 <table>
  <tbody>
   <tr>
    <td><b>Area</b></td>
-   <td><b>Funzione</b></td>
+   <td><b>Funzione obsoleta</b></td>
    <td><b>Sostituzione</b></td>
   </tr>
   <tr>
@@ -88,23 +91,6 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
    <td>Componenti (AEM Sites)</td>
    <td>I componenti Importazione progettazione /libs/wcm/designimporter/components sono stati contrassegnati come obsoleti a partire dalla versione 6.5. Adobe non intende apportare ulteriori miglioramenti a tale implementazione di Importazione progettazione.</td>
    <td>Adobe intende introdurre in versioni future un’implementazione alternativa per questo caso d’uso.</td>
-  </tr>
-  <tr>
-   <td>Componenti (AEM Forms)</td>
-   <td><p>La fase firma consente agli utenti di verificare e firmare un modulo adattivo. Nelle versioni precedenti, il passaggio di firma poteva utilizzare i componenti Adobe Sign e Scribble Signature come campi firma. In AEM 6.5 Forms, l’esperienza di firma basata sulle firme basata su script del Passaggio firma è obsoleta.</p> </td>
-   <td>
-    <ul>
-     <li>Se avete eseguito una nuova installazione:
-      <ul>
-       <li>Utilizzare l'esperienza di firma basata su Adobe Sign all'interno di un passaggio Firma in un modulo adattivo.</li>
-       <li>Utilizzare il componente Firma script indipendente in un modulo adattivo, in una comunicazione interattiva e in HTML5 Forms.</li>
-      </ul> </li>
-     <li>Se hai effettuato l’aggiornamento da una versione precedente a AEM 6.5 Forms:<br />
-      <ul>
-       <li>Continua a utilizzare l'esperienza di firma basata su firma di Scribble Step con i moduli che già utilizzano la funzione.<br /> </li>
-       <li>Durante la creazione di un modulo è possibile utilizzare il componente Firma scarabocchio indipendente o l'esperienza di firma basata su Adobe Sign all'interno di un passaggio Firma. </li>
-      </ul> </li>
-    </ul> <p> </p> <p> </p> </td>
   </tr>
   <tr>
    <td>Foundation</td>
@@ -163,11 +149,11 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 
 In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Le versioni precedenti presentavano queste funzionalità contrassegnate come obsolete.
 
-| Area | Funzione | Sostituzione |
+| Area | Funzione obsoleta | Sostituzione |
 |--- |--- |--- |
-| Activity Map di Analytics | Versione della Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizzate il plug-in [ActivityMap fornito da Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
-| Integrazioni | L&#39;integrazione ExactTarget è stata rimossa dalla distribuzione predefinita (Quickstart) e non è più disponibile. | Nessuna sostituzione |
-| Integrazioni | L’integrazione delle API Force di Salesforce è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da installare da PackageShare. | La funzione è ancora disponibile. |
+| Activity Map di Analytics | Versione di Activity Map inclusa in AEM. | In seguito a modifiche di sicurezza in Adobe Analytics API, non è più possibile utilizzare la versione di Activity Map inclusa in AEM. Utilizzate il plug-in [ActivityMap fornito da Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Integrations (Integrazioni) | L&#39;integrazione ExactTarget è stata rimossa dalla distribuzione predefinita (Quickstart) e non è più disponibile. | Nessuna sostituzione |
+| Integrations (Integrazioni) | L’integrazione delle API Force di Salesforce è stata rimossa dalla distribuzione predefinita (Quickstart) ed è ora un pacchetto aggiuntivo da installare da PackageShare. | La funzione è ancora disponibile. |
 | Forms | Il supporto per il servizio Adobe Central Migration Bridge è stato rimosso in quanto il prodotto Adobe Central non è più supportato. | Nessuna sostituzione |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessuna sostituzione |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |
@@ -182,6 +168,6 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5. Le versioni
 
 In questa sezione vengono pre-annunciate le modifiche future che non riguardano funzioni dichiarate obsolete, ma che hanno un impatto sui clienti. Queste informazioni vengono fornite a scopo di pianificazione.
 
-| Area | Funzione | Annuncio |
+| Area | Funzione obsoleta | Annuncio |
 |--- |--- |--- |
 | Foundation | Framework interfaccia utente | Adobe prevede di rendere obsoleti i componenti Coral UI 2 nel 2019. L’interfaccia Coral UI 3 è stata introdotta con AEM 6.2 e AEM 6.5 è completamente basato su Coral 3. Adobe consiglia ai clienti e ai partner che hanno creato delle interfacce utente personalizzate con Coral 2 di eseguire il refactoring per Coral 3. Adobe fornisce uno strumento per convertire le finestre di dialogo Coral 2 in Coral 3. [Ulteriori informazioni](/help/sites-developing/dialog-conversion.md). |
