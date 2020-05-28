@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '3587'
+ht-degree: 1%
 
 ---
 
@@ -33,11 +36,11 @@ Un componente passo del flusso di lavoro definisce l’aspetto e il comportament
 * La categoria e il nome del passaggio nella barra laterale del flusso di lavoro.
 * Aspetto del passaggio nei modelli di workflow.
 * Finestra di dialogo di modifica per la configurazione delle proprietà del componente.
-* Il servizio o lo script eseguito in fase di esecuzione.
+* Il servizio o lo script che viene eseguito in fase di esecuzione.
 
 Come per [tutti i componenti](/help/sites-developing/components.md), i componenti dei passaggi del flusso di lavoro ereditano dal componente specificato per la `sling:resourceSuperType` proprietà. Il diagramma seguente mostra la gerarchia di `cq:component` nodi che costituiscono la base di tutti i componenti dei passaggi del flusso di lavoro. Il diagramma include anche i componenti Passo **** processo, Passaggio **** partecipante e Passaggio **partecipante** dinamico, in quanto questi sono i punti di partenza più comuni (e di base) per lo sviluppo di componenti passo personalizzati.
 
-![aem_wf_componentsinherit](assets/aem_wf_componentinherit.png)
+![aem_wf_component_inherit](assets/aem_wf_componentinherit.png)
 
 >[!CAUTION]
 >
@@ -47,7 +50,7 @@ Come per [tutti i componenti](/help/sites-developing/components.md), i component
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
->1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs``/apps`
+>1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs` sotto `/apps`
 >2. Apportare modifiche all&#39;interno `/apps`
 
 
@@ -200,7 +203,7 @@ Per attivare il componente per l’utilizzo in uno scenario di flusso di lavoro 
 
 1. Per rimuovere la capacità degli sviluppatori di modelli di modificare i valori delle proprietà, ignorare la finestra di dialogo del super type del componente.
 
-### Aggiunta di moduli e finestre di dialogo ai passi dei partecipanti {#adding-forms-and-dialogs-to-participant-steps}
+### Aggiunta di moduli e finestre di dialogo ai passaggi per i partecipanti {#adding-forms-and-dialogs-to-participant-steps}
 
 Personalizzate il componente passo partecipante per fornire le funzioni disponibili nei componenti Passo [partecipante](/help/sites-developing/workflows-step-ref.md#form-participant-step) modulo e Passaggio [partecipante](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) finestra di dialogo:
 
@@ -234,14 +237,14 @@ Per informazioni sul nuovo componente, effettuate le seguenti operazioni (consul
 
 ### Configurazione del comportamento di Workflow Step Runtime {#configuring-the-workflow-step-runtime-behavior}
 
-Sotto il `cq:Component` nodo, aggiungere un `cq:EditConfig` nodo. Sotto a cui si aggiunge un `nt:unstructured` `cq:formParameters`nodo (da assegnare al nodo) e a tale nodo si aggiungono le seguenti proprietà:
+Sotto il `cq:Component` nodo, aggiungere un `cq:EditConfig` nodo. Sotto a cui si aggiunge un `nt:unstructured` nodo (il nome deve essere assegnato `cq:formParameters`) e a tale nodo si aggiungono le seguenti proprietà:
 
 * Nome: `PROCESS_AUTO_ADVANCE`
 
    * Tipo: `Boolean`
    * Valore:
 
-      * se impostato sul flusso di lavoro, `true` il passaggio viene eseguito e continua. Questa operazione è predefinita e consigliata
+      * se impostato sul flusso di lavoro, `true` il passaggio viene eseguito e continua. Questo è il valore predefinito e consigliato
       * quando `false`il flusso di lavoro viene eseguito e interrotto; questo richiede una maggiore manutenzione, quindi `true` è consigliato
 
 * Nome: `DO_NOTIFY`
@@ -388,7 +391,7 @@ Per definire un processo come componente di servizio OSGI (bundle Java):
    >
    >Il nome del pacchetto deve essere aggiunto alla `<*Private-Package*>` sezione della `maven-bundle-plugin` configurazione.
 
-1. Aggiungere la proprietà SCR `process.label` e impostare il valore come desiderato. Questo sarà il nome con cui il passaggio del processo viene elencato quando si utilizza il componente **Processo** generico. Vedere l&#39;esempio seguente.
+1. Aggiungete la proprietà SCR `process.label` e impostate il valore come desiderato. Questo sarà il nome con cui il passaggio del processo viene elencato quando si utilizza il componente **Processo** generico. Vedere l&#39;esempio seguente.
 1. Nell’editor **Modelli** , aggiungete il passaggio del processo al flusso di lavoro utilizzando il componente Passo **** processo generico.
 1. Nella finestra di dialogo di modifica (del passaggio **** Processo), andate alla scheda **Processo** e selezionate l&#39;implementazione del processo.
 1. Se utilizzate gli argomenti nel codice, impostate gli argomenti relativi al **processo**. Ad esempio: false.
@@ -535,7 +538,7 @@ Per utilizzare lo script:
 
 1. Modificare l&#39;istanza **Passo** processo e specificare lo script da utilizzare.
 
-## Sviluppo dei partecipanti {#developing-participant-choosers}
+## Sviluppo dei selettori dei partecipanti {#developing-participant-choosers}
 
 Potete sviluppare i selettori dei partecipanti per i componenti Passo **partecipante** dinamico.
 
@@ -618,7 +621,7 @@ Per definire un passaggio partecipante come componente di servizio OSGI (classe 
 
 Gli script si trovano nell&#39;archivio JCR ed vengono eseguiti da tale archivio.
 
-Nella tabella seguente sono elencate le variabili che forniscono accesso immediato agli oggetti Java del flusso di lavoro negli script.
+Nella tabella seguente sono elencate le variabili che forniscono l&#39;accesso immediato agli oggetti Java del flusso di lavoro negli script.
 
 | Classe Java | Nome variabile script |
 |---|---|
@@ -846,7 +849,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato è quello di 
       * Flusso di lavoro
    ![wf-35](assets/wf-35.png)
 
-1. Ora potete aprire un modello di workflow per la modifica. Nel browser dei passaggi è possibile filtrare per visualizzare il **mio passo** personalizzato:
+1. È ora possibile aprire un modello di workflow per la modifica. Nel browser dei passaggi è possibile filtrare per visualizzare il **mio passo** personalizzato:
 
    ![wf-36](assets/wf-36.png)
 
@@ -854,7 +857,7 @@ Un modo semplice per iniziare a creare un passaggio personalizzato è quello di 
 
    ![wf-37](assets/wf-37.png)
 
-   Se non `cq:icon` è stato definito alcun passaggio, viene visualizzata un&#39;icona predefinita utilizzando le prime due lettere del titolo. Esempio:
+   Se non `cq:icon` è stato definito alcun passaggio, viene visualizzata un&#39;icona predefinita utilizzando le prime due lettere del titolo. Ad esempio:
 
    ![wf-38](assets/wf-38.png)
 
@@ -1029,7 +1032,7 @@ L&#39; `_cq_dialog/.content.xml` esempio utilizzato in questo esempio:
 >
 >Anche se AEM dispone di uno strumento di conversione [della](/help/sites-developing/dialog-conversion.md) finestra di dialogo se desideri aggiornare le finestre di dialogo classiche dei passaggi dell’interfaccia utente alle finestre di dialogo standard dell’interfaccia utente. Dopo la conversione, per alcuni casi potrebbero essere apportati miglioramenti manuali al dialogo.
 >
->* Nei casi in cui una finestra di dialogo aggiornata è vuota, è possibile esaminare le finestre di dialogo con funzionalità simili, come esempi di come fornire una soluzione. `/libs` Esempio:
+>* Nei casi in cui una finestra di dialogo aggiornata è vuota, è possibile esaminare le finestre di dialogo con funzionalità simili come esempi `/libs` di come fornire una soluzione. Ad esempio:
    >
    >
 * `/libs/cq/workflow/components/model`
