@@ -10,7 +10,10 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '3075'
+ht-degree: 2%
 
 ---
 
@@ -202,7 +205,7 @@ Consente di trascinare gli elementi del modello di modulo nel modulo adattivo. G
    <td>Aggiunge un pulsante per salvare i dati del modulo.</td>
   </tr>
   <tr>
-   <td>(Obsoleto) Firma scarabocchio</td>
+   <td>Firma scarabocchio</td>
    <td>Aggiunge un campo per l'acquisizione delle firme a script.</td>
   </tr>
   <tr>
