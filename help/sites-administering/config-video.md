@@ -10,80 +10,63 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: 44dbabeeea4e4e8d17cc69a2d8ea791c98be2bd2
+source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 6%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
 
 # Configurare il componente Video {#configure-the-video-component}
 
-Il componente [](/help/sites-authoring/default-components-foundation.md#video) Video consente di inserire un elemento video predefinito OOTB (out-of-the-box) nella pagina.
+Il componente [](/help/sites-authoring/default-components-foundation.md#video) Video consente di inserire una risorsa video predefinita (OOTB) nella pagina.
 
-Per eseguire la transcodifica corretta, l’amministratore deve [installare FFmpeg e configurare AEM](#install-ffmpeg) separatamente. Possono anche [configurare i profili video](#configure-video-profiles) per l&#39;utilizzo con elementi di HTML5.
+Affinché venga eseguita la transcodifica corretta, l&#39;amministratore installa separatamente FFmpeg. Consultate [Installare FFmpeg e configurare AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
 
 ## Configurare i profili video {#configure-video-profiles}
 
-Potete definire i profili video da usare per gli elementi HTML5. Quelli scelti qui sono utilizzati in ordine. Per accedere, utilizzate la modalità [](/help/sites-authoring/default-components-designmode.md) Progettazione (solo interfaccia classica) e selezionate la scheda **[!UICONTROL Profili]** :
+Per l’utilizzo di elementi HTML5, definite i profili video. Quelli scelti qui sono utilizzati in ordine. Per accedere, utilizzate la modalità [](/help/sites-authoring/default-components-designmode.md) Progettazione (solo interfaccia classica) e selezionate la scheda **[!UICONTROL Profili]** :
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-Potete anche configurare la progettazione dei componenti video e dei parametri per [!UICONTROL Riproduzione], [!UICONTROL Flash]e [!UICONTROL Avanzato].
+Da questa finestra di dialogo potete anche configurare la progettazione del componente Video e i parametri per [!UICONTROL Riproduzione], [!UICONTROL Flash]e [!UICONTROL Avanzato].
 
 ## Installare FFmpeg e configurare AEM {#install-ffmpeg}
 
-The Video Component relies on the third-party open-source product FFmpeg for proper transcoding of videos that can be downloaded from [https://ffmpeg.org/](https://ffmpeg.org/). Dopo aver installato FFmpeg, dovete configurare AEM in modo che utilizzi un codec audio specifico e specifiche opzioni di runtime.
+Il componente Video si basa sul prodotto open-source FFmpeg di terze parti per la transcodifica di video. Scaricato da [https://ffmpeg.org/](https://ffmpeg.org/). Dopo l’installazione di FFmpeg, configurate AEM per l’utilizzo di un codec audio specifico e di opzioni di runtime specifiche.
 
-**Per installare FFmpeg per la piattaforma**:
+Per installare FFmpeg in **Windows**, procedere come segue:
 
-* **In Windows:**
+1. Scarica il binario compilato come `ffmpeg.zip`.
+1. Annulla l’archiviazione in una cartella.
+1. Impostate la variabile di ambiente del sistema `PATH` su &lt;*your-ffmpeg-location*>`\bin`.
+1. Riavviate AEM.
 
-   1. Scarica il binario compilato come `ffmpeg.zip`
-   1. Decomprimete il file in una cartella.
-   1. Impostate la variabile di ambiente del sistema `PATH` su `<*your-ffmpeg-locatio*n>\bin`
-   1. Riavviate AEM.
+Per installare FFmpeg in **Mac OS X**, effettuate le seguenti operazioni:
 
-* **In Mac OS X:**
+1. Installate Xcode disponibile all&#39;indirizzo [developer.apple.com/xcode](hhttps://developer.apple.com/xcode/).
+1. Installazione disponibile in [XQuartz](https://www.xquartz.org) per ottenere [X11](https://support.apple.com/en-us/HT201341).
+1. Installate MacPorts disponibile all&#39;indirizzo [www.macports.org](https://www.macports.org/).
+1. Nella console eseguire `sudo port install ffmpeg` il comando e seguire le istruzioni visualizzate. Assicurarsi che il percorso dell&#39; `FFmpeg` eseguibile sia aggiunto alla variabile di `PATH` sistema.
 
-   1. Installare Xcode ([https://developer.apple.com/technologies/tools/xcode.html](https://developer.apple.com/technologies/tools/xcode.html))
-   1. Installate XQuartz/X11.
-   1. Installare MacPorts ([https://www.macports.org/](https://www.macports.org/))
-   1. Nella console eseguire il comando seguente e seguire le istruzioni:
+Per installare FFmpeg in **Mac OS X 10.6**, utilizzando la versione precompilata, effettuate le seguenti operazioni:
 
-      `sudo port install ffmpeg`
+1. Scaricate la versione precompilata.
+1. Disarchiviarlo nella `/usr/local` directory.
+1. Nella console, eseguire `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Modificate i percorsi come appropriato.
 
-      `FFmpeg` deve essere in `PATH` modo che AEM possa recuperarlo tramite la riga di comando.
-
-* **Utilizzo della versione precompilata per OS X 10.6:**
-
-   1. Scaricate la versione precompilata.
-   1. Extract it to the `/usr/local` directory.
-   1. Dal terminale, eseguire:
-
-      `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`
-
-**Per configurare AEM**:
+Per **configurare AEM**, effettuate le seguenti operazioni:
 
 >[!NOTE]
 >
 >Questi passaggi sono necessari solo se è necessaria un&#39;ulteriore personalizzazione dei codec.
 
-1. Open [!UICONTROL CRXDE Lite] in your web browser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Open [!UICONTROL CRXDE Lite] in your web browser. Accedete a [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 2. Selezionare il `/libs/settings/dam/video/format_aac/jcr:content` nodo e assicurarsi che le proprietà del nodo siano le seguenti:
 
-   * audioCodec:
-
-      ```
-       aac
-      ```
-
-   * customArgs:
-
-      ```
-       -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
-      ```
+   * `audioCodec` è `aac`.
+   * `customArgs` è `-flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8`.
 
 3. Per personalizzare la configurazione, create una sovrapposizione nel `/apps/settings/` nodo e spostate la stessa struttura sotto il `/conf/global/settings/` nodo. Non può essere modificato nel `/libs` nodo. Ad esempio, per sovrapporre il percorso, `/libs/settings/dam/video/fullhd-bp`createlo in `/conf/global/settings/dam/video/fullhd-bp`.
 
@@ -95,5 +78,4 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->I modelli di flusso di lavoro OOTB non vengono conservati quando si aggiorna l’istanza di AEM. Adobe consiglia di copiare i modelli di flussi di lavoro OOTB prima di modificarli. Ad esempio, copiate il modello OOTB [!UICONTROL DAM Update Asset] prima di modificare il passaggio di transcodifica FFmpeg nel modello [!UICONTROL DAM Update Asset] per scegliere i nomi dei profili video esistenti prima dell’aggiornamento. Quindi, potete sovrapporre il `/apps` nodo per consentire ad AEM di recuperare le modifiche personalizzate al modello OOTB.
-
+>Le modifiche apportate ai modelli di flusso di lavoro predefiniti (OOTB) non vengono mantenute quando aggiornate l’istanza di AEM. Adobe consiglia di copiare i modelli di flusso di lavoro modificati prima di modificarli. Ad esempio, copiate il modello OOTB [!UICONTROL DAM Update Asset] prima di modificare il passaggio di transcodifica FFmpeg nel modello [!UICONTROL DAM Update Asset] per scegliere i nomi dei profili video esistenti prima dell’aggiornamento. Quindi, potete sovrapporre il `/apps` nodo per consentire ad AEM di recuperare le modifiche personalizzate al modello OOTB.
