@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 7%
 
 ---
 
@@ -58,7 +61,7 @@ Quando si crea un modulo adattivo utilizzando un file XDP, è possibile trascina
   </tr>
   <tr>
    <td><p>Firma scarabocchio</p> </td>
-   <td><p>(Obsoleto) Firma scarabocchio</p> </td>
+   <td><p>Firma a mano</p> </td>
   </tr>
   <tr>
    <td><p>Campo numerico </p> </td>
@@ -155,7 +158,7 @@ Nella tabella seguente è illustrato il funzionamento dei vari script XFA defini
   </tr>
   <tr>
    <td><p>maxChar<em> (campo di testo)</em></p> </td>
-   <td><p>Mappata alla proprietà Numero massimo di caratteri consentiti nel modulo adattivo.</p> </td>
+   <td><p>Mappata alla proprietà Numero massimo di caratteri consentiti in un modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>multiline<em> (campo di testo)</em></p> </td>
@@ -163,7 +166,7 @@ Nella tabella seguente è illustrato il funzionamento dei vari script XFA defini
   </tr>
   <tr>
    <td><p>fracDigit<em> (campo numerico, campo decimale)</em></p> </td>
-   <td><p>Mappata alla proprietà Frac figures in forma adattiva.</p> </td>
+   <td><p>Mappata alla proprietà Frac Cifre in modulo adattivo.</p> </td>
   </tr>
   <tr>
    <td><p>leadDigit<em> (campo numerico, campo decimale)</em></p> </td>
