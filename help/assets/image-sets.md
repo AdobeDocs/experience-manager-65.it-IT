@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
+source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+workflow-type: tm+mt
+source-wordcount: '2078'
+ht-degree: 19%
 
 ---
 
@@ -48,7 +51,7 @@ Per iniziare subito a lavorare:
 
    Per creare un set di immagini nelle risorse, toccate o fate clic su **[!UICONTROL Crea > Set]** immagini. Quindi, aggiungete le immagini e fate clic su **[!UICONTROL Salva]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
    >I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
@@ -70,7 +73,7 @@ Per iniziare subito a lavorare:
 
 1. [Pubblicare i set di immagini.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   Quando si pubblica un set di immagini, vengono attivate le stringhe URL e Incorpora. Inoltre, dovete [pubblicare qualsiasi predefinito](/help/assets/managing-viewer-presets.md) per visualizzatori personalizzato creato. I predefiniti per visualizzatori forniti sono già stati pubblicati.
+   Quando si pubblica un set di immagini, vengono attivati l’URL e il codice da incorporare. Inoltre, dovete [pubblicare qualsiasi predefinito](/help/assets/managing-viewer-presets.md) per visualizzatori personalizzato creato. I predefiniti per visualizzatori forniti sono già stati pubblicati.
 
 1. [Collegare gli URL all’applicazione](/help/assets/linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](/help/assets/embed-code.md)video o immagini.
 
