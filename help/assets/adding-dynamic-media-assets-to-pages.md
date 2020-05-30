@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 876589d26f17dc088531c3f34deea0fab4c7726a
+source-git-commit: b6a7648699bc8e8e041749fb03998f86a27292ce
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3129'
 ht-degree: 32%
 
 ---
@@ -29,7 +29,7 @@ Se utilizzi AEM come WCM, puoi aggiungere direttamente alla pagina le risorse Dy
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-L’aggiunta di un componente per contenuti multimediali dinamici, contenuti multimediali interattivi, file multimediali panoramici o video 360 a una pagina equivale all’aggiunta di un componente a una pagina. I componenti per contenuti multimediali dinamici sono descritti nelle sezioni seguenti.
+L’aggiunta di un componente File multimediali 3D, Contenuti multimediali dinamici, Contenuti multimediali interattivi, Contenuti multimediali panoramici, Video SmartCrop o Video 360 a una pagina equivale all’aggiunta di un componente a qualsiasi pagina. I componenti per contenuti multimediali dinamici sono descritti nelle sezioni seguenti.
 
 1. In AEM, apri la pagina in cui desideri aggiungere il Componente elementi multimediali dinamici.
 1. Nel pannello a sinistra della pagina (potrebbe essere necessario attivare o disattivare la visualizzazione del pannello laterale), fate clic sull’icona **[!UICONTROL Componenti]** .
@@ -40,10 +40,6 @@ L’aggiunta di un componente per contenuti multimediali dinamici, contenuti mul
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Trascinate un componente **[!UICONTROL Contenuti multimediali]** dinamici da usare e rilasciatelo nella posizione desiderata sulla pagina.
-
-   Nell’esempio di seguito, viene utilizzato il componente **[!UICONTROL Video 360 Media]** .
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Passate il puntatore del mouse direttamente sul componente. Quando il componente è circondato da una casella blu, toccate una volta per visualizzare la barra degli strumenti del componente. Toccate l&#39;icona **[!UICONTROL Configurazione (chiave inglese)]** .
 
@@ -267,7 +263,7 @@ Tenete presente che l’assegnazione di un predefinito per visualizzatori divers
 >
 >Tuttavia, potete usare lo stesso predefinito per visualizzatori per tutti i componenti per contenuti multimediali interattivi che utilizzano risorse dello stesso tipo, all’interno della pagina.
 
-![chlimage_1-175](assets/chlimage_1-541.png)
+![chlimage_1-174](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
