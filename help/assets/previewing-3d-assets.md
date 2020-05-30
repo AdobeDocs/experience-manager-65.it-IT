@@ -4,18 +4,23 @@ description: Scopri come visualizzare in anteprima le risorse 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 15%
 
 ---
 
 
-# Anteprima delle risorse 3D{#previewing-3d-assets}
+# Anteprima delle risorse 3D in AEM{#previewing-3d-assets-aem}
 
-Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
+Adobe Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
 
 Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle risorse in AEM. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
 
-## Formati supportati per l&#39;anteprima 3D{#supported-3d-previewing-assets}
+Consultate anche [Utilizzo di risorse 3D in elementi multimediali](/help/assets/assets-3d.md)dinamici.
+
+## Formati supportati per l’anteprima 3D in AEM {#supported-3d-previewing-assets}
 
 L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 
@@ -37,13 +42,13 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
     Material_0_baseColor.
     jpegMaterial_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni per l’anteprima di risorse 3D in AEM{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori quali larghezza di banda, complessità dell’immagine e latenze verso il server.
 
 Inoltre, le funzionalità del computer client, come una workstation, un notebook o un dispositivo touch mobile, sono importanti anche quando si modifica la telecamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l’esperienza di visualizzazione 3D interattiva più fluida e favorevole.
 
-**Per visualizzare in anteprima le risorse 3D**
+**Per visualizzare in anteprima le risorse 3D in AEM**
 
 1. Assicurati di aver caricato le risorse 3D in AEM.
 Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-assets) 3D e per il [caricamento delle risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
@@ -51,7 +56,7 @@ Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-asset
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 
-1. Nell’angolo superiore destro della pagina, dall’elenco a discesa Visualizza, toccate Visualizzazione **** a schede, quindi individuate la risorsa 3D da visualizzare in anteprima.
+1. Dall’elenco a discesa Visualizza posto nell’angolo in alto a destra della pagina, tocca **[!UICONTROL Vista a schede]**, quindi individua la risorsa 3D da visualizzare in anteprima.
 
    ![Selezione scheda 3D](/help/assets/assets-dm/3d-card-select.png)
    _Nella vista a schede, toccate la scheda della risorsa 3D da visualizzare in anteprima._
@@ -62,18 +67,18 @@ Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-asset
    _Anteprima interattiva di una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa._
 1. Nella pagina di visualizzazione dei dettagli della risorsa 3D, effettuate una delle seguenti operazioni:
    * **Ruotare la fotocamera**: orbita la vista intorno alla scena e agli oggetti 3D.
-      * _Mouse_: Clic a sinistra + trascinamento.
+      * _Mouse_: Fare clic con il pulsante sinistro del mouse e trascinare.
       * _Touch screen_: Premere un dito singolo e trascinare.
    * **Scorrimento della videocamera**: consente di scorrere la vista verso sinistra, destra, verso l’alto o verso il basso.
       * _Mouse_: Fare clic con il pulsante destro del mouse e trascinare.
       * _Touch screen_: Premere due dita e trascinare.
    * **Zoom della fotocamera**- Zoom della fotocamera per spostarsi all&#39;interno e all&#39;esterno delle aree della scena 3D.
       * _Mouse_: Ruota di scorrimento.
-      * _Touch screen_: Pizzico a due dita.
+      * _Touch screen_: Pizzicotto a due dita.
    * **Rientra la fotocamera**: consente di rientrare la fotocamera in un punto della scena 3D.
       * _Mouse_: Fate doppio clic.
       * _Touch screen_: Doppio tocco.
-   * **Ripristina**(Reset) - Nell’angolo inferiore destro della pagina, toccate l’icona Ripristina per ripristinare il punto di destinazione della vista al centro della risorsa 3D. La funzione Reset (Reimposta) consente di spostare la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a dimensioni di visualizzazione ragionevoli.
+   * **Ripristina**(Reset) - Nell’angolo inferiore destro della pagina, toccate l’icona Ripristina per ripristinare il punto di destinazione della vista al centro della risorsa 3D. La funzione Reset (Reimposta) consente di spostare la telecamera più vicino o più lontano per mostrare la risorsa nella sua interezza e a una dimensione di visualizzazione ragionevole.
    * **Modalità** Schermo intero: per passare alla modalità Schermo intero, nell&#39;angolo inferiore destro della pagina toccate l&#39;icona Schermo intero.
 
-1. Al termine, toccate **[!UICONTROL Chiudi]** vicino all’angolo superiore destro della pagina.
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
