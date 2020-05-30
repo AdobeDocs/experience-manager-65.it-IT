@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
 workflow-type: tm+mt
-source-wordcount: '9298'
+source-wordcount: '9304'
 ht-degree: 4%
 
 ---
@@ -301,11 +301,11 @@ Consultate [Configurazione dei predefiniti per set di batch per la generazione a
 
 ### Caricamenti in streaming {#streamed-uploads}
 
-Se caricate molte risorse su [!DNL Experience Manager], le richieste di I/O al server aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche il timeout di alcune attività di caricamento. [!DNL Experience Manager Assets] supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell’archivio. Al contrario, i dati vengono trasferiti direttamente nella directory archivio. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in [!DNL Assets].
+Se caricate molte risorse in Adobe Experience Manager, le richieste di I/O al server aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche il timeout di alcune attività di caricamento. [!DNL Experience Manager Assets] supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell’archivio. Al contrario, i dati vengono trasferiti direttamente nella directory archivio. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in [!DNL Assets].
 
 >[!NOTE]
 >
->Il caricamento dello streaming è disattivato per l&#39; [!DNL Experience Manager] esecuzione su un server JEE con una versione servlet-api inferiore a 3.1.
+>Il caricamento dello streaming è disattivato per Adobe Experience Manager in esecuzione su un server JEE con una versione servlet-api inferiore a 3.1.
 
 ### Estrai archivio ZIP contenente le risorse {#extractzip}
 
