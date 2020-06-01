@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d77ee4377934a2ea3291a9beac7c1a8d1c5aeca6
+source-git-commit: 9e6aba1f511754080305c0a97ce9bc85511f29a7
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 4%
@@ -49,96 +49,96 @@ Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia u
       <td><strong>Tipo di risorsa su cui hai fatto clic</strong><br /> </td>
       <td><strong>È possibile visualizzare in anteprima la risorsa in una rappresentazione particolare?</strong></td>
       <td><strong>È possibile visualizzare in anteprima la risorsa in un visualizzatore?</strong></td>
+      <td> </td>
       </tr>
       <tr>
       <td><p>3D</p> </td>
       <td>No</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa 3D nel visualizzatore dimensionale</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate il visualizzatore dimensionale.
-        <li>Toccate <strong>Ripristina</strong> per ripristinare lo zoom originale dell’immagine.</li>
-        <li>Toccate <strong>Schermo intero</strong> per ingrandire il visualizzatore sul dispositivo di visualizzazione.
-        </ul>
-        <p><strong>Navigazione nella scena 3D</strong></p>
-        <ul>
-        <li><p><strong>Girare la fotocamera</strong> 3D - Orbire la vista intorno alla scena e agli oggetti 3D.</p> Mouse: Fare clic con il pulsante sinistro del mouse + trascinare. </p> Touch-screen: Premere + trascinamento.</p>
-        <li><p><strong>Scorrimento della telecamera</strong> - Scorrimento della vista verso sinistra, destra, verso l'alto e verso il basso.</p> Mouse: Fare clic con il pulsante destro del mouse e trascinare. </p> Touch-screen: Premere due dita e trascinare.</p>
-        <li><p><strong>Zoom della fotocamera</strong> - Zoom della fotocamera per spostarsi all'interno e all'esterno delle aree della scena 3D.</p> Mouse: Ruota di scorrimento. </p> Touch-screen: Pizzicotto con dito.</p>
-        <li><p><strong>Ricentra la fotocamera</strong> - Orbita la vista intorno alla scena e agli oggetti 3D.</p> Mouse: Fate doppio clic. </p> Touch-screen: Doppio tocco.</li></p></td>
-
-   </tr>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate il visualizzatore dimensionale.</li>
+      <li>Toccate <strong>Ripristina</strong> per ripristinare lo zoom originale dell’immagine.</li>
+      <li>Toccate <strong>Schermo intero</strong> per ingrandire il visualizzatore sul dispositivo di visualizzazione.</li>
+      </ul>
+      <p><strong>Navigazione nella scena 3D</strong></p>
+      <ul>
+      <li><p><strong>Girare la fotocamera</strong> 3D - Orbire la vista intorno alla scena e agli oggetti 3D.</p> Mouse: Fare clic con il pulsante sinistro del mouse + trascinare. </p> Touch-screen: Premere + trascinamento.</p></li>
+      <li><p><strong>Scorrimento della telecamera</strong> - Scorrimento della vista verso sinistra, destra, verso l'alto e verso il basso.</p> Mouse: Fare clic con il pulsante destro del mouse e trascinare. </p> Touch-screen: Premere due dita e trascinare.</p></li>
+      <li><p><strong>Zoom della fotocamera</strong> - Zoom della fotocamera per spostarsi all'interno e all'esterno delle aree della scena 3D.</p> Mouse: Ruota di scorrimento. </p> Touch-screen: Pizzicotto con dito.</p></li>
+      <li><p><strong>Ricentra la fotocamera</strong> - Orbita la vista intorno alla scena e agli oggetti 3D.</p> Mouse: Fate doppio clic. </p> Touch-screen: Doppio tocco.</li></ul></td>
+      </tr>
       <tr>
       <td><p>Immagine</p> </td>
       <td>Sì</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima la risorsa in una rappresentazione particolare</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Rappresentazioni </strong>dall'elenco, quindi selezionate una rappresentazione specifica da visualizzare in anteprima.</li>
-        </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
-        </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Rappresentazioni </strong>dall'elenco, quindi selezionate una rappresentazione specifica da visualizzare in anteprima.</li>
+      </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
       </tr>
       <tr>
       <td>File multimediali</td>
       <td>Sì</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima la risorsa in una rappresentazione particolare</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Rappresentazioni </strong>dall'elenco, quindi selezionate una rappresentazione specifica da visualizzare in anteprima.</li>
-        </ul> <p>Selezionando una rappresentazione video ad alta risoluzione per l'anteprima del video, il video potrebbe risultare troncato. Questo perché l’anteprima della rappresentazione mostra la risoluzione esatta che i clienti vedranno, il tutto nel contesto del visualizzatore incorporato utilizzato per l’anteprima.</p> <p>Quando visualizzate l’anteprima di un set video adattivo a livello di risorsa, le rappresentazioni vengono raggruppate in un’unica esperienza di riproduzione. In altre parole, il video adattivo viene ridimensionato correttamente per la visualizzazione e la riproduzione utilizzando la risoluzione migliore nel contesto del dispositivo di visualizzazione e della velocità di connessione.<br /> </p> <p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
-        </ul> </td>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Rappresentazioni </strong>dall'elenco, quindi selezionate una rappresentazione specifica da visualizzare in anteprima.</li>
+      </ul> <p>Selezionando una rappresentazione video ad alta risoluzione per l'anteprima del video, il video potrebbe risultare troncato. Questo perché l’anteprima della rappresentazione mostra la risoluzione esatta che i clienti vedranno, il tutto nel contesto del visualizzatore incorporato utilizzato per l’anteprima.</p> <p>Quando visualizzate l’anteprima di un set video adattivo a livello di risorsa, le rappresentazioni vengono raggruppate in un’unica esperienza di riproduzione. In altre parole, il video adattivo viene ridimensionato correttamente per la visualizzazione e la riproduzione utilizzando la risoluzione migliore nel contesto del dispositivo di visualizzazione e della velocità di connessione.<br /> </p> <p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
+      </ul> </td>
       </tr>
       <tr>
       <td>Set di immagini</td>
       <td>No</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
-        </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
       </tr>
       <tr>
       <td>Set 360 gradi</td>
       <td>No</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
-        </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
       </tr>
       <tr>
       <td>Set di file multimediali diversi</td>
       <td>No</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
-        </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Fate clic su <strong>Visualizzatori</strong> dall’elenco, quindi selezionate un visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
       </tr>
       <tr>
       <td>Set carosello</td>
       <td>No</td>
       <td>Sì</td>
       <td><strong>Per visualizzare in anteprima una risorsa in un particolare visualizzatore</strong>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Selezionate un visualizzatore da applicare alla risorsa.</li>
-        </ul> </td>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, fare clic sull’icona in modo che venga visualizzato l’elenco a discesa. Selezionate un visualizzatore da applicare alla risorsa.</li>
+      </ul> </td>
       </tr>
       <tr>
       <td>360 Video<br /> </td>
       <td>Sì</td>
       <td>Sì</td>
       <td><p><strong>Per visualizzare in anteprima la risorsa in una rappresentazione particolare</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, toccate l’icona in modo da visualizzare l’elenco a discesa. Selezionate <strong>Rappresentazioni</strong>, quindi selezionate la rappresentazione da visualizzare in anteprima.</li>
-        </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
-        <ul>
-        <li>Nell’angolo superiore sinistro della pagina, toccate l’icona in modo da visualizzare l’elenco a discesa. Selezionate <strong>Visualizzatori</strong>, quindi selezionate il visualizzatore da applicare alla risorsa.</li>
-        </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, toccate l’icona in modo da visualizzare l’elenco a discesa. Selezionate <strong>Rappresentazioni</strong>, quindi selezionate la rappresentazione da visualizzare in anteprima.</li>
+      </ul> <p><strong>Per visualizzare in anteprima la risorsa in un particolare visualizzatore</strong></p>
+      <ul>
+      <li>Nell’angolo superiore sinistro della pagina, toccate l’icona in modo da visualizzare l’elenco a discesa. Selezionate <strong>Visualizzatori</strong>, quindi selezionate il visualizzatore da applicare alla risorsa.</li>
+      </ul> <p>Usate le icone <strong>+</strong> e <strong>+</strong> rispettivamente per aumentare o diminuire lo zoom dell’immagine selezionata. Fate clic su <strong>Ripristina</strong> per ripristinare l’immagine sullo zoom originale.<br /> Se siete su uno schermo tattile, toccate due volte l’immagine per ingrandire la visualizzazione per passaggi. Quando raggiungete lo zoom massimo, toccate nuovamente l’immagine per ripristinare lo stato di zoom. Trascinate sull’immagine per scorrere.</p> </td>
       </tr>
     </tbody>
     </table>
@@ -152,7 +152,11 @@ Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia u
 1. Premere `<Enter>` per aprire la risorsa selezionata in modalità di anteprima.
 
 1. Effettua una delle operazioni seguenti:
+
    * Per ingrandire, premere `<Tab>` per spostare la messa a fuoco sull&#39;icona di zoom in (+), quindi premere `<Enter>` una o più volte per ingrandire in modo incrementale.
+
    * Per ridurre, premere `<Tab>` per spostare lo stato attivo sull&#39;icona di zoom out (-), quindi premere `<Enter>` una o più volte per ridurre lo zoom in modo incrementale.
+
    * Per spostare la visualizzazione di una risorsa *ingrandita* orizzontalmente o verticalmente, premete i rispettivi tasti freccia.
+
    * Premete `<Shift>` + `<Tab>` per ripristinare la visualizzazione e mettere a fuoco nuovamente la risorsa.
