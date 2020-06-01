@@ -4,9 +4,9 @@ description: Scopri come visualizzare in anteprima le risorse 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '564'
 ht-degree: 15%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager supporta il caricamento, la distribuzione e l’antepri
 
 Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle risorse in AEM. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
 
-Consultate anche [Utilizzo di risorse 3D in elementi multimediali](/help/assets/assets-3d.md)dinamici.
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
 ## Formati supportati per l’anteprima 3D in AEM {#supported-3d-previewing-assets}
 
