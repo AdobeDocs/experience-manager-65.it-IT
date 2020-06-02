@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cdcea49a25807e125ea15e7132ac9f188d3525bc
+source-git-commit: 9a27aabef07d5b5104c08c414138fbb22e284a68
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 15%
@@ -24,7 +24,7 @@ Risorse Adobe Experience Manager (AEM) è configurato con Brand Portal tramite A
 
 >[!NOTE]
 >
->La configurazione di AEM Assets con Brand Portal tramite Adobe I/O è supportata in AEM 6.5.4.0 e versioni successive.
+>La configurazione di Risorse AEM con il portale del marchio tramite Adobe Developer Console è supportata in AEM 6.5.4.0 e versioni successive.
 >
 >Precedentemente, Brand Portal era stato configurato nell’interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l’autorizzazione.
 >
@@ -35,13 +35,13 @@ Risorse Adobe Experience Manager (AEM) è configurato con Brand Portal tramite A
 >
 >***Solo per i clienti esistenti***
 >
->Si consiglia di continuare a utilizzare la configurazione gateway OAuth esistente. Se si verificano problemi con la configurazione del gateway OAuth precedente, eliminate la configurazione esistente e create una nuova configurazione tramite Adobe I/O.
+>Si consiglia di continuare a utilizzare la configurazione gateway OAuth esistente. Se si verificano problemi con la configurazione del gateway OAuth precedente, eliminate la configurazione esistente e create una nuova configurazione tramite Adobe Developer Console.
 
 
 
 Questa guida descrive i due casi d’uso seguenti:
-* [Nuova configurazione](#configure-new-integration-65): Se sei un nuovo utente del Brand Portal e vuoi configurare l’istanza di creazione di Risorse AEM con Brand Portal, puoi creare una nuova configurazione in Adobe I/O.
-* [Configurazione](#upgrade-integration-65)aggiornamento: Se sei un utente esistente di Brand Portal con l’istanza di creazione di Risorse AEM configurata con Brand Portal su gateway OAuth, è consigliabile eliminare le configurazioni esistenti e creare una nuova configurazione su Adobe I/O.
+* [Nuova configurazione](#configure-new-integration-65): Se sei un nuovo utente del Brand Portal e vuoi configurare l’istanza di creazione di Risorse AEM con Brand Portal, puoi creare una nuova configurazione in Adobe Developer Console.
+* [Configurazione](#upgrade-integration-65)aggiornamento: Se sei un utente esistente di Brand Portal con l’istanza di creazione di Risorse AEM configurata con Brand Portal su OAuth Gateway legacy, si consiglia di eliminare le configurazioni esistenti e creare una nuova configurazione in Adobe Developer Console.
 
 Le informazioni fornite si basano sul presupposto che chiunque legga la presente Guida abbia familiarità con le seguenti tecnologie:
 
