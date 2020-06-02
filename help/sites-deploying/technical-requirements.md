@@ -11,7 +11,7 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+source-git-commit: a299e26668b1f1f08cca8d4a8085da185522ec96
 workflow-type: tm+mt
 source-wordcount: '3118'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Adobe Experience Manager funziona con le seguenti versioni delle macchine virtua
  <tbody>
   <tr>
    <td>Platform</td>
-   <td>Livello di supporto<br /> </td>
+   <td>Livello di supporto</td>
   </tr>
   <tr>
    <td>Oracle Java SE 12 JDK [1]</td>
@@ -144,15 +144,15 @@ Esistono diverse opzioni per distribuire l&#39;archivio di Adobe Experience Mana
 
 | **Platform** | **Descrizione** | **Livello di supporto** |
 |---|---|---|
-| **File system con file TAR[1 ]** | Archivio | A: Supportato |
-| **File system con Datastore[1 ]** | Binari | A: Supportato |
-| Archiviare i file binari nei file TAR sul file system [1] | Binari | Z: Non supportato per la produzione |
+| **File system con file TAR** `[1]` | Archivio | A: Supportato |
+| **File system with Datastore** `[1]` | Binari | A: Supportato |
+| Archiviare i file binari nei file TAR sul file system `[1]` | Binari | Z: Non supportato per la produzione |
 | Amazon S3 | Binari | A: Supportato |
 | Archiviazione BLOB di Microsoft Azure | Binari | A: Supportato |
-| MongoDB Enterprise 4.0 | Archivio | A: Supportato [2, 3] |
+| MongoDB Enterprise 4.0 | Archivio | A: Supportato `[2, 3]` |
 | MongoDB Enterprise 3.6 | Archivio | Z: Non supportato |
 | MongoDB Enterprise 3.4 | Archivio | Z: Non supportato |
-| IBM DB2 10.5 | Database repository e moduli | R: Supporto limitato [4] |
+| IBM DB2 10.5 | Database repository e moduli | R: Supporto limitato `[4]` |
 | Oracle Database 12c (12.1.x) | Database repository e moduli | R: Supporto limitato |
 | Microsoft SQL Server 2016 | Database Forms | A: Supportato |
 | **Apache Lucene (Introduzione rapida)** | Servizio di ricerca | A: Supportato |
@@ -199,11 +199,11 @@ Versione minima dell&#39;API Servlet richiesta è Servlet 3.1
 |---|---|
 | **Motore Servlet integrato Quickstart (Jetty 9.4)** | A: Supportato |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Non supportato |
-| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) con profilo Web 7.0 e IBM JRE 1.8 | R: Sostegno limitato per i nuovi contratti [2] |
-| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Sostegno limitato per i nuovi contratti [1] [2] |
-| Apache Tomcat 8.5.x | R: Sostegno limitato per i nuovi contratti [2] |
+| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) con profilo Web 7.0 e IBM JRE 1.8 | R: Sostegno limitato per i nuovi contratti `[2]` |
+| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Sostegno limitato per i nuovi contratti `[1]` `[2]` |
+| Apache Tomcat 8.5.x | R: Sostegno limitato per i nuovi contratti `[2]` |
 | JBoss EAP 7.2.x con Application Server JBoss | Z: Non supportato |
-| JBoss EAP 7.1.4 con Application Server JBoss | R: Sostegno limitato per i nuovi contratti [1] [2] |
+| JBoss EAP 7.1.4 con Application Server JBoss | R: Sostegno limitato per i nuovi contratti `[1]` `[2]` |
 | JBoss EAP 7.0.x con Application Server JBoss | Z: Non supportato |
 
 1. Consigliato per le distribuzioni con AEM Forms.
@@ -215,11 +215,11 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 
 | **Platform** | **Livello di supporto** |
 |---|---|
-| **Linux, basato sulla distribuzione Red Hat** | A: Supportato [1] [3] |
-| Linux, basato sulla distribuzione Debian incl. Ubuntu | A: Supportato [2] |
+| **Linux, basato sulla distribuzione Red Hat** | A: Supportato `[1]` `[3]` |
+| Linux, basato sulla distribuzione Debian incl. Ubuntu | A: Supportato `[2]` |
 | Linux, basato sulla distribuzione SUSE | A: Supportato |
-| Microsoft Windows Server 2019 [4] | R: Sostegno limitato per i nuovi contratti |
-| Microsoft Windows Server 2016 [4] | R: Sostegno limitato per i nuovi contratti [5] |
+| Microsoft Windows Server 2019 `[4]` | R: Sostegno limitato per i nuovi contratti |
+| Microsoft Windows Server 2016 `[4]` | R: Sostegno limitato per i nuovi contratti `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: Non supportato |
 | Oracle Solaris 11 | Z: Non supportato |
 | IBM AIX 7.2 | Z: Non supportato |
@@ -248,7 +248,7 @@ I seguenti server Web sono supportati per l’utilizzo con Dispatcher versione 4
 
 | Platform | Livello di supporto |
 |---|---|
-| **Apache httpd 2.4.x** [1,2] | A: Supportato |
+| **Apache httpd 2.4.x** `[1,2]` | A: Supportato |
 | Microsoft IIS 10 (Internet Information Server) | A: Supportato |
 | Microsoft IIS 8.5 (Internet Information Server) | Z: Non supportato |
 
