@@ -3,10 +3,10 @@ title: Report sulle risorse digitali
 description: Informazioni sui rapporti sulle risorse in Adobe Experience Manager Assets per comprendere meglio l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
+source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 15%
+source-wordcount: '1034'
+ht-degree: 14%
 
 ---
 
@@ -41,12 +41,12 @@ Experience Manager Assets genera i seguenti rapporti standard:
 
 1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
 
-![](assets/AssetsReportNavigation.png)
+![Pagina degli strumenti per navigare nel rapporto delle risorse](assets/AssetsReportNavigation.png)
 
 1. Nella pagina Rapporti  risorse, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto da creare e fate clic su **[!UICONTROL Avanti]**.
 
-   ![](assets/choose_report.png)
+   ![Selezionare il tipo di rapporto](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ Experience Manager Assets genera i seguenti rapporti standard:
 
 1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Potete specificare un percorso diverso.
 
-   ![](assets/report_configuration.png)
+   ![Pagina per aggiungere i dettagli del rapporto](assets/report_configuration.png)
 
    Scegli l&#39;intervallo di date per il rapporto.
 
@@ -74,32 +74,32 @@ Experience Manager Assets genera i seguenti rapporti standard:
    >
    >Il rapporto **[!UICONTROL Utilizzo spazio su disco]** non include campi intervallo di date, poiché indica solo l’utilizzo attuale dello spazio.
 
-   ![](assets/disk_usage_configuration.png)
+   ![Pagina dei dettagli del rapporto Uso del disco](assets/disk_usage_configuration.png)
 
    Quando create il rapporto **[!UICONTROL File]** , potete includere o escludere sottocartelle. Tuttavia, non potete includere rappresentazioni delle risorse per questo rapporto.
 
-   ![](assets/files_report.png)
+   ![Pagina dei dettagli del rapporto sui file](assets/files_report.png)
 
    Il rapporto **[!UICONTROL Condivisione collegamenti]** visualizza gli URL delle risorse condivise con utenti esterni da Assets. Include gli ID e-mail dell’utente che ha condiviso le risorse, gli ID e-mail degli utenti con cui le risorse sono condivise, la data di condivisione e la data di scadenza del collegamento. Le colonne non sono personalizzabili.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![](assets/link_share.png)
+   ![Pagina dei dettagli del rapporto Condivisione collegamenti](assets/link_share.png)
 
 1. Fare clic su **[!UICONTROL Avanti]** dalla barra degli strumenti.
 
 1. Nella pagina **[!UICONTROL Configura colonne]** , per impostazione predefinita nel rapporto vengono selezionate alcune colonne. È possibile selezionare più colonne. Deselezionate una colonna selezionata per escluderla nel rapporto.
 
-   ![](assets/configure_columns.png)
+   ![Seleziona o deseleziona le colonne del rapporto](assets/configure_columns.png)
 
    Per visualizzare un nome di colonna personalizzato o un percorso di proprietà, configurate le proprietà per il binario della risorsa sotto il nodo jcr:content in CRX. In alternativa, aggiungetelo tramite il selettore del percorso della proprietà.
 
-   ![](assets/custom_columns.png)
+   ![Seleziona o deseleziona le colonne del rapporto](assets/custom_columns.png)
 
 1. Fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti. Un messaggio notifica che è stata avviata la generazione del report.
 1. Nella pagina Rapporti risorse, lo stato di generazione del rapporto si basa sullo stato corrente del processo del rapporto, ad esempio Successo, Non riuscito, In coda o Pianificato. Lo stesso stato viene visualizzato nella inbox delle notifiche.Per visualizzare la pagina del rapporto, fai clic sul collegamento del rapporto. In alternativa, selezionate il rapporto e fate clic su **[!UICONTROL Visualizza]** nella barra degli strumenti.
 
-   ![](assets/report_page.png)
+   ![Report generato](assets/report_page.png)
 
    Fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti per scaricare il rapporto in formato CSV.
 
@@ -125,11 +125,11 @@ Per aggiungere colonne personalizzate a questi rapporti, procedere come segue:
 
 1. Per visualizzare una colonna personalizzata, specificane il nome in **[!UICONTROL Colonne personalizzate]**.
 
-   ![](assets/custom_columns-1.png)
+   ![Specificare il nome per la colonna personalizzata del rapporto](assets/custom_columns-1.png)
 
 1. Aggiungete il percorso della proprietà sotto il `jcr:content` nodo in CRXDE utilizzando il selettore del percorso della proprietà. In alternativa, digitare il percorso nel campo percorso della proprietà.
 
-   ![](assets/property_picker.png)
+   ![Mappare il percorso della proprietà dai percorsi in jcr:content](assets/property_picker.png)
 
    Per aggiungere altre colonne personalizzate, fare clic su **[!UICONTROL Aggiungi]** e ripetere i passaggi 5 e 6.
 
