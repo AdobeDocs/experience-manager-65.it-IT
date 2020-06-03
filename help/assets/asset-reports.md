@@ -3,9 +3,9 @@ title: Report sulle risorse digitali
 description: Informazioni sui rapporti sulle risorse in Adobe Experience Manager Assets per comprendere meglio l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '974'
 ht-degree: 15%
 
 ---
@@ -37,10 +37,11 @@ Experience Manager Assets genera i seguenti rapporti standard:
 * File
 * Condivisione collegamenti
 
-Gli amministratori di Experience Manager possono generare e personalizzare facilmente questi rapporti per la tua implementazione. Per generare un rapporto, un amministratore può effettuare le seguenti operazioni:
+[!DNL Adobe Experience Manager] gli amministratori possono generare e personalizzare facilmente questi rapporti per la vostra implementazione. Per generare un rapporto, un amministratore può effettuare le seguenti operazioni:
 
 1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
-   ![](assets/AssetsReportNavigation.png)
+
+![](assets/AssetsReportNavigation.png)
 
 1. Nella pagina Rapporti  risorse, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto da creare e fate clic su **[!UICONTROL Avanti]**.
