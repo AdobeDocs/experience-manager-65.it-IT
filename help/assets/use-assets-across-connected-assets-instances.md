@@ -3,7 +3,7 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
 source-wordcount: '2081'
 ht-degree: 51%
@@ -78,7 +78,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. Nel campo **[!UICONTROL Punto di montaggio]** immetti il percorso locale da cui recupera le risorse. [!DNL Experience Manager][!DNL Experience Manager] Ad esempio, la cartella `remoteassets`.
    1. Regola i valori di **[!UICONTROL Soglia ottimizzazione trasferimento binario originale]** in base alla rete. Il rendering di una risorsa con dimensioni superiori alla soglia viene trasferito in modo asincrono.
    1. Seleziona **[!UICONTROL Archivio dati condiviso con risorse collegate]** se per memorizzare le risorse utilizzi un archivio dati in comune tra le due implementazioni di In questo caso, il limite di soglia non ha importanza in quanto i dati binari effettivi delle risorse risiedono nell’archivio dati e non vengono trasferiti.
-      ![Configurazione tipica per Risorse collegate](assets/connected-assets-typical-config.png)
+   ![Configurazione tipica per Risorse collegate](assets/connected-assets-typical-config.png)
+
    *Figura: una configurazione tipica per Risorse collegate.*
 
 1. Poiché le risorse sono già state elaborate e i rendering vengono recuperati, disattiva i moduli di avvio dei flussi di lavoro. Adjust the launcher configurations on the local ([!DNL Sites]) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.
