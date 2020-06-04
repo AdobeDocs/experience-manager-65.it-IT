@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
+source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1420'
 ht-degree: 6%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 6%
 
 # Digital Rights Management for assets {#digital-rights-management-in-assets}
 
-Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata dell&#39;utilizzo. Poiché [!DNL Adobe Experience Manager Assets] è completamente integrato con la [!DNL Experience Manager] piattaforma, potete gestire in modo efficiente le informazioni di scadenza delle risorse e gli stati delle risorse. Potete anche associare le informazioni sulla licenza alle risorse.
+Digital assets are often associated with a license that specifies the terms and duration of use. Because [!DNL Adobe Experience Manager Assets] is fully integrated with the [!DNL Experience Manager] platform, you can efficiently manage asset expiration information and asset states. Potete anche associare le informazioni sulla licenza alle risorse.
 
-## Scadenza risorsa {#asset-expiration}
+## Asset expiration {#asset-expiration}
 
 La scadenza delle risorse è un modo efficace per applicare i requisiti di licenza per le risorse. Garantisce che la risorsa pubblicata non venga pubblicata alla scadenza, evitando così la possibilità di eventuali violazioni della licenza. Un utente senza autorizzazioni di livello amministratore non può modificare, copiare, spostare, pubblicare e scaricare una risorsa scaduta.
 
-Potete visualizzare lo stato di scadenza di una risorsa nella [!DNL Assets] console sia nelle viste scheda che in quelle elenco.
+You can view the expiration status of an asset in the [!DNL Assets] console in both the card and list views.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
@@ -96,9 +96,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
    >
    >Alla scadenza della risorsa viene inviato un messaggio e-mail solo al creatore della risorsa (la persona a cui viene caricata [!DNL Assets]). Consultate [come configurare la notifica](/help/sites-administering/notification.md) e-mail per ulteriori dettagli sulla configurazione delle notifiche e-mail a [!DNL Experience Manager] livello generale.
 
-1. Nel campo Notifica **[!UICONTROL precedente in secondi]** , specificate l’ora in secondi prima della scadenza di una risorsa quando desiderate ricevere una notifica relativa alla scadenza. Se siete un amministratore o creatore di risorse, riceverete un messaggio prima della scadenza della risorsa per informarvi che la risorsa sta per scadere dopo l’ora specificata.
-
-   Dopo la scadenza della risorsa, riceverete un’altra notifica che conferma la scadenza. Inoltre, le risorse scadute sono disattivate.
+1. Nel campo Notifica **[!UICONTROL precedente in secondi]** , specificate l’ora in secondi prima della scadenza di una risorsa quando desiderate ricevere una notifica relativa alla scadenza. I creatori delle risorse ricevono un messaggio prima della scadenza della risorsa, in cui viene indicato che la risorsa sta per scadere dopo il tempo specificato. Dopo la scadenza della risorsa, riceverete un’altra notifica che conferma la scadenza. Inoltre, le risorse scadute sono disattivate.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
