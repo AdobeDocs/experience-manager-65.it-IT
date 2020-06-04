@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 86257dd8a54a0f25ed4365990a678bb794f18744
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
 
 # Utilizzo di AEM Document Services a livello di programmazione {#using-aem-document-services-programmatically}
 
-Le classi client necessarie per creare progetti più profondi con AEM Document Services sono disponibili nel Jar SDK [client](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms. Per informazioni sui progetti relativi al cielo, consulta [come creare il progetto AEM con Maven](/help/sites-developing/ht-projects-maven.md).
+Le classi client necessarie per creare progetti più profondi con AEM Document Services sono disponibili nel Jar SDK [client](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms. Per informazioni sui progetti relativi al cielo, consulta [come creare il progetto AEM con Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -234,7 +234,7 @@ sigAppearence.setSigningFormat(signingFormat);
 signOptions.setSigAppearence(sigAppearence);
 ```
 
-### Aggiunta di un campo firma {#adding-a-signature-field-nbsp}
+### Aggiunta di un campo firma  {#adding-a-signature-field-nbsp}
 
 È possibile aggiungere un campo firma a livello di programmazione utilizzando l&#39;API Java del servizio firma o l&#39;API del servizio Web Firma. È possibile aggiungere più campi firma a un documento PDF. Tuttavia, ogni nome di campo firma deve essere univoco.
 
@@ -271,7 +271,7 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td>Una <code>PositionRectangle object</code> che specifica la posizione del campo firma. Questo parametro è obbligatorio e non può accettare un valore null. Se il rettangolo specificato non si trova almeno parzialmente nella casella di ritaglio della pagina specificata, <code>InvalidArgumentException</code> viene generato un errore. Inoltre, né l’altezza né la larghezza del rettangolo specificato possono essere pari a 0 o negativi. Le coordinate X in basso a sinistra o Y in basso a sinistra possono essere 0 o maggiori ma non negative e sono relative al riquadro di ritaglio della pagina.</td>
+   <td>Un valore <code>PositionRectangle object</code> che specifica la posizione del campo firma. Questo parametro è obbligatorio e non può accettare un valore null. Se il rettangolo specificato non si trova almeno parzialmente nella casella di ritaglio della pagina specificata, <code>InvalidArgumentException</code> viene generato un errore. Inoltre, né l’altezza né la larghezza del rettangolo specificato possono essere pari a 0 o negativi. Le coordinate X in basso a sinistra o Y in basso a sinistra possono essere 0 o maggiori ma non negative e sono relative al riquadro di ritaglio della pagina.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
@@ -745,7 +745,7 @@ public class GetSignature {
 }
 ```
 
-### Ottenimento dell&#39;elenco dei campi firma {#getting-signature-field-list-nbsp}
+### Ottenimento dell&#39;elenco dei campi firma  {#getting-signature-field-list-nbsp}
 
 È possibile recuperare i nomi di tutti i campi firma presenti in un documento PDF che si desidera firmare o certificare. Se non si è certi dei nomi dei campi firma di un documento PDF, è possibile recuperarli e verificarli a livello di programmazione. Il servizio Firma restituisce il nome completo del campo firma, ad esempio `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
@@ -860,7 +860,7 @@ public class GetSignatureFields {
 }
 ```
 
-### Modifica dei campi firma {#modifying-signature-fields-nbsp}
+### Modifica dei campi firma  {#modifying-signature-fields-nbsp}
 
 È possibile modificare i campi firma che si trovano in un documento PDF. La modifica di un campo firma comporta la manipolazione dei valori del dizionario del blocco del campo firma o dei valori del dizionario dei valori iniziali.
 
@@ -1027,7 +1027,7 @@ public class ModifySignatureField {
 }
 ```
 
-### Certificazione di documenti PDF {#certifying-pdf-documents-nbsp}
+### Certificazione di documenti PDF  {#certifying-pdf-documents-nbsp}
 
 È possibile proteggere un documento PDF certificandolo con un particolare tipo di firma denominato firma certificata. Una firma certificata si distingue da una firma digitale nei seguenti modi:
 
@@ -1353,31 +1353,37 @@ Un algoritmo viene utilizzato per generare due numeri grandi, noti come chiavi c
 * Una delle chiavi funge da chiave privata dell&#39;utente. È importante che solo l&#39;utente abbia accesso a questa chiave.
 * L&#39;altra chiave è la chiave pubblica dell&#39;utente, che può essere condivisa con altri utenti.
 
-Un certificato a chiave pubblica contiene la chiave pubblica di un utente e le informazioni di identificazione. Il formato X.509 viene utilizzato per memorizzare i certificati. I certificati sono generalmente rilasciati e firmati digitalmente da un&#39;autorità di certificazione (CA), che è un&#39;entità riconosciuta che fornisce una misura di affidabilità nella validità del certificato. I certificati hanno una data di scadenza, dopo la quale non sono più validi.
+Un certificato a chiave pubblica contiene la chiave pubblica di un utente e le informazioni di identificazione. Il formato X.509 viene utilizzato per la memorizzazione dei certificati. I certificati sono generalmente rilasciati e firmati digitalmente da un&#39;autorità di certificazione (CA), che è un&#39;entità riconosciuta che fornisce una misura di confidenza nella validità del certificato. I certificati hanno una data di scadenza, dopo la quale non sono più validi.
 
 Inoltre, gli elenchi di revoche di certificati (CRL) forniscono informazioni sui certificati revocati prima della data di scadenza. I CRL vengono pubblicati periodicamente dalle autorità di certificazione. Lo stato di revoca di un certificato può essere recuperato anche tramite il protocollo di stato del certificato online (OCSP) sulla rete.
 
-*****Nota *: Per*poter cifrare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio *attendibilità di AEM.
+>[!NOTE]
+>
+>Prima di poter cifrare un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio certificati attendibili di AEM.
 
 **Applicazione dei diritti di utilizzo ai documenti PDF**
 
 È possibile applicare diritti di utilizzo ai documenti PDF utilizzando l&#39;API Java Client e il servizio Web di Reader Extensions. I diritti di utilizzo si riferiscono a funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I documenti PDF a cui sono stati applicati diritti di utilizzo sono denominati documenti abilitati per i diritti. L&#39;utente che apre un documento con diritti in Adobe Reader può eseguire operazioni abilitate per tale documento specifico.
 
-Per poter estendere un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio chiavi di AEM.
+Prima di poter utilizzare Reader per estendere un documento PDF con un certificato, è necessario assicurarsi di aggiungere il certificato all&#39;archivio chiavi di AEM.
 
 **Firma digitale di documenti PDF**
 
 Le firme digitali possono essere applicate ai documenti PDF per garantire un livello di protezione elevato. Le firme digitali, come le firme autografe, forniscono un mezzo mediante il quale i firmatari si identificano e pronunciano dichiarazioni su un documento.
 
-La tecnologia utilizzata per firmare digitalmente i documenti garantisce che sia il firmatario che i destinatari siano consapevoli di ciò che è stato firmato e che il documento non sia stato alterato dopo la firma.
+La tecnologia utilizzata per firmare digitalmente i documenti garantisce che sia il firmatario che i destinatari siano consapevoli di ciò che è stato firmato e che il documento non sia stato alterato dall&#39;apposizione della firma.
 
-I documenti PDF sono firmati mediante la tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una privata. La chiave privata è memorizzata nella credenziale di un utente che deve essere disponibile al momento della firma.
+I documenti PDF sono firmati mediante la tecnologia a chiave pubblica. Un firmatario ha due chiavi: una chiave pubblica e una chiave privata. La chiave privata è memorizzata nella credenziale di un utente che deve essere disponibile al momento della firma.
 
 La chiave pubblica è memorizzata nel certificato dell&#39;utente e deve essere disponibile ai destinatari per convalidare la firma. Le informazioni sui certificati revocati si trovano negli elenchi di revoche di certificati (CRL) e nelle risposte del protocollo di stato del certificato online (OCSP) distribuite dalle autorità di certificazione (CA). L&#39;ora della firma può essere ottenuta da un&#39;origine affidabile nota come Autorità di marca temporale.
 
-*****Nota *: Per*poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali in AEM Keystore. La credenziale è la chiave privata utilizzata per la firma *.
+>[!NOTE]
+>
+>Prima di poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali in AEM Keystore. La credenziale è la chiave privata utilizzata per la firma.
 
-****** Nota: AEM Forms supporta inoltre le specifiche *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*per la firma digitale dei documenti PDF.
+>[!NOTE]
+>
+>AEM Forms supporta inoltre le specifiche *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*per la firma digitale dei documenti PDF.
 
 **Certificazione di documenti PDF**
 
@@ -1393,13 +1399,15 @@ L&#39;autore o l&#39;autore del documento può specificare che il documento può
 
 Ad esempio, il documento può consentire la compilazione di moduli o commenti. Se l&#39;autore specifica che non è consentita una determinata modifica,
 
-Acrobat impedisce agli utenti di modificare il documento in questo modo. Se tali modifiche vengono apportate, ad esempio utilizzando un&#39;altra applicazione, la firma certificata non è valida e Acrobat visualizza un avviso quando un utente apre il documento. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
+Acrobat impedisce agli utenti di modificare il documento in questo modo. Se tali modifiche vengono apportate, ad esempio utilizzando un&#39;altra applicazione, la firma certificata non è valida e Acrobat visualizza un avviso all&#39;apertura del documento da parte dell&#39;utente. Se le firme non certificate, le modifiche non vengono impedite e le normali operazioni di modifica non invalidano la firma originale.
 
 Al momento della firma, il documento viene analizzato per individuare specifici tipi di contenuto che potrebbero rendere il contenuto di un documento ambiguo o fuorviante.
 
 Ad esempio, un’annotazione potrebbe oscurare del testo in una pagina importante per comprendere cosa viene certificato. Una spiegazione (attestato legale) può essere fornita su tale contenuto.
 
-***Nota **: Prima di poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali in AEM Keystore. La credenziale è la chiave privata utilizzata per la firma *.
+>[!NOTE]
+>
+>Prima di poter firmare digitalmente un documento PDF, è necessario assicurarsi di aggiungere le credenziali in AEM Keystore. La credenziale è la chiave privata utilizzata per la firma.
 
 **Sintassi**:
 
@@ -2318,7 +2326,7 @@ Potete rimuovere i diritti di utilizzo per un documento chiamando l&#39; `remove
  </tbody>
 </table>
 
-L&#39;esempio seguente rimuove i diritti di utilizzo per un dato documento.
+Nell&#39;esempio seguente vengono rimossi i diritti di utilizzo per un dato documento.
 
 ```java
 /*************************************************************************
@@ -2740,7 +2748,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Verifica di più firme digitali {#verifying-multiple-digital-signatures}
 
-AEM consente di verificare le firme digitali nei documenti PDF. Un documento PDF può contenere più firme digitali se è sottoposto a un processo aziendale che richiede la firma di più firmatari. Ad esempio, una transazione finanziaria richiede la firma sia del funzionario che del manager. È possibile utilizzare l&#39;API del servizio Firma per verificare tutte le firme presenti nel documento PDF. Quando si verificano più firme digitali, è possibile verificare lo stato e le proprietà di ciascuna firma. Prima di rendere affidabile una firma digitale, Adobe consiglia di verificarla.
+AEM consente di verificare le firme digitali nei documenti PDF. Un documento PDF può contenere più firme digitali se è sottoposto a un processo aziendale che richiede la firma di più firmatari. Ad esempio, una transazione finanziaria richiede la firma sia del funzionario che del manager. È possibile utilizzare l&#39;API del servizio Firma per verificare tutte le firme presenti nel documento PDF. Durante la verifica di più firme digitali, è possibile verificare lo stato e le proprietà di ciascuna firma. Prima di rendere affidabile una firma digitale, Adobe consiglia di verificarla.
 
 **Sintassi**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -3511,7 +3519,7 @@ public class RemovePasswordEncryption {
   </tr>
   <tr>
    <td><code>alias</code> </td>
-   <td>Alias corrispondente alla chiave in Granite Trust Store utilizzata per rimuovere la cifratura basata sui certificati dal documento PDF.<br /> </td>
+   <td>L'alias corrispondente alla chiave in Granite Trust Store utilizzata per rimuovere la cifratura basata sui certificati dal documento PDF.<br /> </td>
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
@@ -3617,19 +3625,19 @@ public class RemovePKIEncryption {
 
 Il servizio Output fornisce API per il rendering di un file XDP nei formati .pdf, .pcl, .zpl e .ps. Il servizio supporta le seguenti API:
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)generatePDFOutput **: Genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)generatePDFOutput **: Genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un&#39;applicazione.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p)generatePDFOutputBatch **: Unisce una struttura del modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)generatePrintedOutput **: Genera un output PCL, PostScript o ZPL da una struttura del modulo e da un file di dati memorizzato in una posizione di rete, in un file system locale o in una posizione HTTP come valori letterali.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Genera un documento PDF unendo una struttura del modulo con i dati memorizzati in un&#39;applicazione.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):**Unisce una struttura del modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Genera un output PCL, PostScript o ZPL da una struttura del modulo e da un file di dati memorizzato in una posizione di rete, in un file system locale o in una posizione HTTP come valori letterali.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)generatePrintedOutput **: Genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file di dati memorizzati in un&#39;applicazione.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file di dati memorizzati in un&#39;applicazione.
 
 ### generatePDFOutput {#generatepdfoutput}
 
 L&#39;API generatePDFOutput genera un documento PDF unendo una struttura del modulo ai dati. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF. Utilizzare l&#39;API generatePDFOutput per le strutture del modulo o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali. Se la struttura del modulo e i dati XML sono memorizzati in un&#39;applicazione, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
 
-**** Sintassi: `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
+**Sintassi:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
 #### Parametri di input {#input-parameters}
 
@@ -3736,7 +3744,7 @@ try {
 
 L&#39;API generatePDFOutput genera un documento PDF unendo una struttura del modulo ai dati. Facoltativamente, potete generare un file di metadati per ciascun record o salvare l’output in un file PDF. Utilizzare l&#39;API generatePrintedOutput per le strutture del modulo o i dati memorizzati in un&#39;applicazione. Se la struttura del modulo e i dati XML sono memorizzati in un percorso di rete, localmente o in un percorso HTTP come valori letterali, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
 
-**** Sintassi: `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
+**Sintassi:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
 #### Parametro di input {#input-parameter}
 
@@ -3844,9 +3852,9 @@ Document doc=null;
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
 
- Unisce una struttura del modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF. Utilizzare l&#39;API generatePDFOutputBatch per le strutture del modulo o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
+Unisce una struttura del modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ciascun record o salva l’output in un file PDF. Utilizzare l&#39;API generatePDFOutputBatch per le strutture del modulo o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
 
-**** Sintassi: `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
+**Sintassi:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
 #### Parametri di input {#input-parameters-1}
 
@@ -3963,7 +3971,7 @@ String outputFolder="C:/Output";
 
 Genera un output PCL, PostScript e ZPL da una struttura del modulo e da un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. È possibile inviare l&#39;output direttamente a una stampante o salvarlo come file. Utilizzare l&#39;API generatePrintedOutput per le strutture del modulo o i dati memorizzati in un&#39;applicazione.
 
-**** Sintassi: `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
+**Sintassi:** `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
 
 #### Parametri di input {#input-parameters-2}
 
@@ -4054,7 +4062,7 @@ Document doc=null;
 
 Genera un output PCL, PostScript e ZPL in base a una struttura del modulo e a un file di dati. Il file di dati viene unito alla struttura del modulo e formattato per la stampa. L&#39;output può essere inviato direttamente a una stampante o salvato come file. Utilizzare l&#39;API generatePrintedOutput per le strutture del modulo o i dati memorizzati in un&#39;applicazione.
 
-**** Sintassi: `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
+**Sintassi:** `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
 
 #### Parametri di input {#input-parameters-3}
 
@@ -4276,14 +4284,14 @@ String outputFolder="C:/Output";
 
 Il servizio Forms fornisce alle API la possibilità di importare ed esportare dati da e verso un modulo PDF interattivo. Un modulo PDF interattivo è un documento PDF contenente uno o più campi utilizzati per visualizzare e raccogliere informazioni dagli utenti. Il servizio supporta le seguenti API:
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p)exportData **: esporta i dati da un modulo PDF.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p)importData **: importa i dati in un modulo PDF interattivo.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):**esporta i dati da un modulo PDF.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):**importa i dati in un modulo PDF interattivo.
 
 ### exportData {#exportdata}
 
 Esporta i dati del modulo da un modulo PDF interattivo in formato XML e XDP.
 
-**** Sintassi: `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
+**Sintassi:** `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
 
 #### Parametri di input {#input-parameters-5}
 
@@ -4367,7 +4375,7 @@ try {
 
 Importa i dati del modulo in un modulo PDF interattivo.
 
-**** Sintassi: `Document importData(Document PDF, Document data)`
+**Sintassi:** `Document importData(Document PDF, Document data)`
 
 #### Parametri di input {#input-parameters-6}
 
@@ -4509,7 +4517,7 @@ Il servizio createPDF genera le seguenti eccezioni:
 * InvalidParameterException
 * FileFormatNotSupportedException
 
-**** Sintassi: `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
+**Sintassi:** `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
 
 #### Parametri di input {#input-parameters-7}
 
@@ -4629,7 +4637,7 @@ File createPDF(File inputFile, String inputFilename, String fileTypeSettings, St
 
 #### exportPDF {#exportpdf}
 
- Converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato.
+Converte un documento PDF in un tipo di file supportato. Il metodo accetta un PDF come input ed esporta il contenuto del PDF nel formato di file specificato.
 
 Il servizio createPDF restituisce una java.util.Map con i risultati. Le chiavi della mappa sono:
 
@@ -4814,7 +4822,7 @@ File optimizePDF(File inputFile, String fileTypeSettings, File settingsFile) thr
 
 #### htmlToPdf2 {#htmltopdf}
 
- Converte una pagina HTML in un documento PDF. Accetta l’URL della pagina HTML come input.
+Converte una pagina HTML in un documento PDF. Accetta l’URL della pagina HTML come input.
 
 Il servizio htmlToPdf2 restituisce un oggetto HtmlToPdfResult. È possibile ottenere il PDF convertito tramite result.getConvertedDocument().
 
