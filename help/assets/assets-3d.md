@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 2f0e626aa16a62203755e29800a5935b350ffe79
+source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2144'
 ht-degree: 4%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 4%
 
 Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 3D come esperienze coinvolgenti.
 
-* Pubblicazione con un solo clic (tramite Pubblicazione **** rapida sulla barra degli strumenti) di immagini 3D per generare il relativo URL.
-* Supporto ottimizzato per la visualizzazione di risorse 3D con il predefinito per visualizzatori dimensionali interattivi di alta qualità basato su Adobe Dimension. Il predefinito per visualizzatori include, tra l’altro, una serie di controlli per le videocamere interattive che consentono di effettuare operazioni di orbita, zoom e scorrimento.
+* Pubblicazione con un solo clic (tramite Pubblicazione **** rapida sulla barra degli strumenti) di risorse 3D per generare un URL.
+* Supporto ottimizzato per la visualizzazione di risorse 3D con il predefinito per visualizzatori dimensionali interattivi di alta qualità basato su Adobe Dimension.
 * Il componente 3D Media WCM consente di aggiungere facilmente risorse 3D alle pagine AEM Sites.
 
-Non è disponibile alcuna installazione o configurazione per l’utilizzo di risorse 3D in Contenuti multimediali dinamici.
+Non è richiesta alcuna configurazione aggiuntiva per utilizzare risorse 3D in Contenuti multimediali dinamici.
 
 ![scarpa in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -36,10 +36,10 @@ Dynamic Media supporta i seguenti formati di file 3D:
 
 | Estensione dei file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
-| GLB | Trasmissione GL binario | model/gltf-binary | Include le texture con la risorsa invece di farvi riferimento come immagini esterne. |
+| GLB | Trasmissione GL binario | model/gltf-binary | Include i materiali e le texture come un’unica risorsa. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | *Sostegno solo all&#39;ingestione; non è disponibile alcuna visualizzazione o interazione.* USDZ è il formato 3D proprietario di Apple che può essere visualizzato solo da Safari o iOS. |
+| USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | *Sostegno solo all&#39;ingestione; non è disponibile alcuna visualizzazione o interazione.* USDZ is a proprietary 3D format that can be viewed natively by Safari and iOS devices. |
 
 ## Avvio rapido: Risorse 3D per contenuti multimediali dinamici {#quick-start-three-d}
 
@@ -149,7 +149,8 @@ Consultate anche [Anteprima delle risorse tramite l’interfaccia](/help/assets/
 
    * Nella parte superiore destra della pagina, fate clic su **[!UICONTROL Anteprima]** per passare alla modalità **[!UICONTROL Anteprima]** .
    * Elimina `/editor.html` dall’URL della pagina nel browser.
-   ![Risorsa 3D visualizzata all’interno del componente](/help/assets/assets-dm/3d-asset-in-3d-media.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
+
+Una risorsa 3D completamente interattiva come visualizzata in    ![Risorsa 3D visualizzata all’interno del componente](/help/assets/assets-dm/3d-asset-in-3d-media.png)File multimediali 3D Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]** .
 
 1. In modalità **[!UICONTROL Anteprima]** , effettuate una delle seguenti operazioni:
 
@@ -280,6 +281,7 @@ Consultate anche [Pubblicazione di pagine](/help/sites-authoring/publishing-page
    * La risorsa 3D è un formato supportato (GLB, OBJ, STL e USDZ).
    * La risorsa 3D è stata assimilata in Dynamic Media Image Production System (IPS).
    * La risorsa 3D viene pubblicata.
+
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
 1. Toccate **[!UICONTROL URL]** per visualizzare l&#39;URL di produzione della risorsa 3D.
