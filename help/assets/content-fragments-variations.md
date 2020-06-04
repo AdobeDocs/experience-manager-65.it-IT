@@ -1,6 +1,6 @@
 ---
-title: Variazioni - Creazione di contenuto frammento
-seo-title: Variazioni - Creazione di contenuto frammento
+title: Varianti - Authoring dei contenuti di frammenti
+seo-title: Varianti - Authoring dei contenuti di frammenti
 description: Le varianti consentono di creare il contenuto per il frammento e quindi di crearne le varianti in base allo scopo (se necessario).
 seo-description: Le varianti consentono di creare il contenuto per il frammento e quindi di crearne le varianti in base allo scopo (se necessario).
 uuid: 0844f271-79bc-4f76-8031-d388b81d6feb
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d5fa8b85f6724097e34edd66745e0daf95d66cc
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 18%
 
 ---
 
 
-# Variazioni - Creazione di contenuto frammento{#variations-authoring-fragment-content}
+# Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
 [Le varianti](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica importante dei frammenti di contenuto, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici.
 
@@ -43,7 +46,7 @@ Eseguire una serie di altre azioni in base al tipo di dati in corso di modifica;
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando si apre il frammento di contenuto per la modifica, per impostazione predefinita viene aperta la scheda **Variazioni** . Qui potete creare il contenuto, per Master o qualsiasi altra variante disponibile. Tieni presente quanto segue:
+Quando si apre il frammento di contenuto per la modifica, per impostazione predefinita viene aperta la scheda **Variazioni** . Qui potete creare il contenuto, per Master o qualsiasi altra variante disponibile. Operazioni disponibili:
 
 * apportare modifiche direttamente nella scheda **Variazioni**
 * aprire l’editor [a schermo](#full-screen-editor) intero su:
@@ -53,7 +56,7 @@ Quando si apre il frammento di contenuto per la modifica, per impostazione prede
 
    * accedere a una serie di [azioni](#actions)
 
-Esempio:
+Ad esempio:
 
 * Modifica di un frammento semplice
 
@@ -101,7 +104,7 @@ Le opzioni per la modifica del testo su più righe dipendono dal formato selezio
 * [Testo normale](#plain-text)
 * [Markdown](#markdown)
 
-Il formato può essere selezionato con l&#39;editor a schermo intero.
+Il formato può essere selezionato quando si utilizza l&#39;editor a schermo intero.
 
 ### Formato RTF {#rich-text}
 
@@ -119,7 +122,7 @@ La modifica RTF consente di formattare:
 
    * Incolla testo/da Word
    * Inserire una tabella
-   * Stile paragrafo: Paragrafo, Rubrica 1/2/3
+   * Stile paragrafo: Paragrafo, Intestazione 1/2/3
    * [Inserire risorse visive](#inserting-assets-into-your-fragment)
    * Ricerca
    * Trova/Sostituisci
@@ -134,7 +137,7 @@ Testo semplice consente di inserire rapidamente il contenuto senza informazioni 
 
 >[!CAUTION]
 >
->Se selezionate Testo **** normale, potreste perdere formattazione, marcature e/o risorse inserite in **RTF** o **Marcatura**.
+>Se selezioni **Testo normale**, potresti perdere la formattazione, le marcature e/o le risorse inserite in **Rich Text** o **Markdown**.
 
 ### Markdown {#markdown}
 
@@ -158,11 +161,11 @@ Potete anche aprire l’editor a schermo intero per ulteriori [azioni](#actions)
 
 >[!CAUTION]
 >
->Se si passa da **Rich Text** a **Markdown** , si potrebbero verificare effetti imprevisti con le quotazioni dei blocchi e i blocchi di codice, in quanto questi due formati possono avere differenze nelle modalità di gestione.
+>Se passi da **Rich Text** a **Markdown**, potresti riscontrare effetti imprevisti con Block Quotes (Citazioni) e Code Blocks (Blocchi di codice), in quanto questi due formati possono presentare differenze nelle modalità di gestione.
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 
-Quando l&#39;editor a schermo intero è aperto, l&#39;azione Statistiche **** testo visualizzerà una serie di informazioni sul testo. Esempio:
+Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo. Ad esempio:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
@@ -190,12 +193,12 @@ Il testo di riepilogo è progettato per consentire agli utenti di ridurre la lun
 >
 >L&#39;inglese è disponibile out-of-the-box.
 >
->Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Share:
+>Altre lingue sono disponibili come pacchetti di modelli di lingua da Package Share o Software Distribution:
 >
->* [Francese (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Tedesco (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spagnolo (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francese (fr) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) o [francese (fr) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Tedesco (de) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) o [tedesco (de) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) o [Italiano (IT) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spagnolo (es) da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) o [Spagnolo (es) da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -265,8 +268,8 @@ Saranno aggiunti alla sequenza di paragrafi del frammento senza formattazione; �
 >
 >There are various methods of adding [images](/help/assets/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
-1. Posizionate il cursore nella posizione in cui desiderate aggiungere l’immagine.
-1. Utilizzate l&#39;icona **Inserisci risorsa** per aprire la finestra di dialogo di ricerca.
+1. Posiziona il cursore nel punto in cui vuoi aggiungere l’immagine.
+1. Per aprire la finestra di dialogo di ricerca, utilizza l’icona **Inserisci risorsa**.
 
    ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
 
@@ -276,29 +279,29 @@ Saranno aggiunti alla sequenza di paragrafi del frammento senza formattazione; �
    * cercare la risorsa in DAM
    Una volta individuata la risorsa desiderata, selezionatela facendo clic sulla miniatura.
 
-1. Utilizzate **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
+1. Utilizza **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
 
    >[!CAUTION]
    >
-   >Se, dopo aver aggiunto una risorsa, cambiate il formato in:
+   >Se, dopo aver aggiunto una risorsa, ne cambi il formato in:
    >
-   >* **Testo** normale: la risorsa verrà persa completamente dal frammento.
-   >* **Marcatura**: la risorsa non sarà visibile, ma resterà visibile quando tornerete a **RTF**.
+   >* **Testo normale**: la risorsa verrà persa completamente dal frammento.
+   >* **Markdown**: la risorsa non sarà visibile, ma lo tornerà a essere quando tornerai a **Rich Text**.
 
 
 ## Gestione delle varianti {#managing-variations}
 
 ### Creazione di una variante {#creating-a-variation}
 
-Le varianti consentono di prendere il contenuto **principale** e modificarlo in base allo scopo (se necessario).
+Le varianti consentono di utilizzare il contenuto **principale** e di modificarlo in base allo scopo (se necessario).
 
 Per creare una nuova variante:
 
 1. Aprire il frammento e assicurarsi che il pannello laterale sia visibile.
 1. Selezionate **Variazioni** dalla barra delle icone nel pannello laterale.
 1. Selezionate **Crea variante**.
-1. Viene visualizzata una finestra di dialogo in cui vengono specificati **Titolo** e **Descrizione** per la nuova variante.
-1. Selezionate **Aggiungi**; il frammento **Master** verrà copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
+1. Viene aperta una finestra di dialogo in cui vengono specificati **Titolo** e **Descrizione** per la nuova variante.
+1. Seleziona **Aggiungi**, il frammento **Master** verrà copiato nella nuova variante, che è ora aperta per la [modifica](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -317,11 +320,11 @@ Puoi apportare modifiche al contenuto della variante dopo:
 
 Per rinominare una variante esistente:
 
-1. Aprire il frammento e selezionare **Variazioni** dal pannello laterale.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selezionate la variante desiderata.
 1. Selezionate **Rinomina** dal menu a discesa **Azioni** .
 
-1. Immettete il nuovo **Titolo** e/o **Descrizione** nella finestra di dialogo risultante.
+1. Immetti il nuovo **Titolo** e/o **Descrizione** nella finestra di dialogo in questione.
 
 1. Confermate l’azione **Rinomina** .
 
@@ -333,7 +336,7 @@ Per rinominare una variante esistente:
 
 Per eliminare una variante esistente:
 
-1. Aprire il frammento e selezionare **Variazioni** dal pannello laterale.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selezionate la variante desiderata.
 1. Selezionate **Elimina** dal menu a discesa **Azioni** .
 
@@ -355,7 +358,7 @@ Quando si modifica una variante, è possibile accedere all&#39;azione per sincro
 >
 >Viene sincronizzato solo l’elemento corrente della variante.
 >
->La sincronizzazione funziona solo sul tipo di dati di testo **** su più righe.
+>La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
 >
 >Il trasferimento delle modifiche *da una variante a **Master ***non è disponibile come opzione.
 
