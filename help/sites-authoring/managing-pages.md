@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 93%
+source-wordcount: '2334'
+ht-degree: 94%
 
 ---
 
@@ -200,6 +200,7 @@ A meno che non siano state precedentemente create tutte le pagine necessarie, pr
    * Seleziona il modello da utilizzare per creare la prima pagina, quindi tocca o fai clic su **Avanti** per proseguire.
 
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![caop-04](assets/caop-04.png)
 
 1. Nell’ultimo passaggio della creazione guidata puoi effettuare le seguenti operazioni:
@@ -207,6 +208,7 @@ A meno che non siano state precedentemente create tutte le pagine necessarie, pr
    * Usa le tre schede per specificare le [proprietà di pagina](/help/sites-authoring/editing-page-properties.md) da assegnare alla nuova pagina, quindi tocca o fai clic su **Crea** per creare la pagina.
 
    * Utilizza **Indietro** per tornare alla selezione del modello.
+
    I campi chiave sono:
 
    * **Titolo**:
@@ -249,6 +251,7 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e barra degli strumenti
+
    Quindi seleziona l’icona **Modifica**:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -267,6 +270,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e barra degli strumenti
+
    E quindi l’icona **Copia pagina**:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -282,8 +286,6 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
    Puoi effettuare le seguenti operazioni:
    * Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
    * Selezionare la freccia a discesa per visualizzare l’opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
-   >[!NOTE]
-   L’opzione **Incolla senza elementi figlio** è disponibile a partire da [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
    >[!NOTE]
    Se copi la pagina in un percorso in cui esiste già una pagina con lo stesso nome dell’originale, viene automaticamente generata una variante del nome aggiungendo un numero. Ad esempio, se `winter` esiste già, `winter` diventerà `winter1`.
@@ -309,6 +311,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e barra degli strumenti
+
    Quindi seleziona l’icona **Sposta pagina**:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -320,6 +323,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
    * Specifica il nome da assegnare alla pagina spostata, quindi tocca o fai clic su **Avanti**.
 
    * Seleziona **Annulla** per interrompere la procedura.
+
    ![caop-07](assets/caop-07.png)
 
    Il nome pagina può restare lo stesso se si sta solamente spostando la pagina.
@@ -334,6 +338,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare i collegament
       * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
       * Fai clic su **Avanti** per continuare.
    * Utilizza **Indietro** per specificare di nuovo il nome della pagina.
+
    >[!NOTE]
    Per impostazione predefinita, l’elemento principale della pagina che stai spostando/rinominando verrà selezionato come destinazione.
 
