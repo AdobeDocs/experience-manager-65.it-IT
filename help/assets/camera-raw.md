@@ -3,9 +3,9 @@ title: '[!DNL Supporto di Adobe Camera Raw].'
 description: Scopri come [!DNL Adobe Camera Raw] abilitare il supporto in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: bf840b0e13e58f961c32b0231e4b691cb47b947a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Elaborazione di immagini tramite Camera Raw {#camera-raw-support}
 
-Potete abilitare il [!DNL Adobe Camera Raw] supporto per l’elaborazione di formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata nell&#39; [!DNL Adobe Experience Manager Assets] utilizzo del pacchetto [Camera Raw](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponibile tramite Package Share.
+Potete abilitare il [!DNL Adobe Camera Raw] supporto per l’elaborazione di formati di file non elaborati, come CR2, NEF e RAF, ed eseguire il rendering delle immagini in formato JPEG. La funzionalità è supportata nell&#39; [!DNL Adobe Experience Manager Assets] utilizzo del pacchetto [Camera Raw](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponibile tramite Package Share o da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Potete abilitare il [!DNL Adobe Camera Raw] supporto per l’elaborazione di for
 
 Per abilitare [!DNL Camera Raw] il supporto in [!DNL Experience Manager Assets], effettuate le seguenti operazioni:
 
-1. Scaricate il pacchetto [Camera Raw da Package Share o da](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg).
+1. Scaricate il pacchetto [Camera Raw da Package Share o da](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 1. Accesso `https://[aem_server]:[port]/workflow`. Aprite il flusso di lavoro Aggiorna risorsa **** DAM.
 1. Aprite il passaggio Miniature **[!UICONTROL di]** processo.
 1. Specificate la seguente configurazione nella scheda **[!UICONTROL Miniature]** :
