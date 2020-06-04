@@ -3,9 +3,9 @@ title: 'Schemi di metadati per definire il layout della pagina delle proprietà 
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2709'
 ht-degree: 7%
 
 ---
@@ -119,7 +119,7 @@ Di seguito sono riportati i valori validi per questa proprietà:
 
 * `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della risorsa `dc:title`.
 
-* `./jcr:created`: Visualizza la proprietà JCR nel nodo della risorsa. Se configurate queste proprietà, Adobe consiglia di contrassegnarle come Disattiva modifica. Le proprietà sono protette. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`: Visualizza la proprietà JCR nel nodo della risorsa. Se configurate queste proprietà, Adobe consiglia di contrassegnarle come Disattiva modifica e di non eseguire il binding di alcun campo data con `./jcr:created`. È una proprietà protetta. Quando gli utenti DAM tentano di aggiornare le risorse, si verifica un errore di modifica delle [!UICONTROL risorse]. Se si decide di mappare un campo data a questa proprietà JCR, utilizzare lo schema predefinito. Copiate e modificate lo schema di metadati predefinito fornito da Adobe, in quanto il campo data nello schema predefinito è mappato su `./jcr:created`.
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema di metadati, il percorso della proprietà non deve includere spazi.
 
