@@ -3,9 +3,9 @@ title: '[!DNL Supporto di Adobe Camera Raw].'
 description: Scopri come [!DNL Adobe Camera Raw] abilitare il supporto in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Potete abilitare il [!DNL Adobe Camera Raw] supporto per l’elaborazione di for
 
 Per abilitare [!DNL Camera Raw] il supporto in [!DNL Experience Manager Assets], effettuate le seguenti operazioni:
 
-1. Scaricate il pacchetto [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw da Package Share.
+1. Scaricate il pacchetto [Camera Raw da Package Share o da](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg).
 1. Accesso `https://[aem_server]:[port]/workflow`. Aprite il flusso di lavoro Aggiorna risorsa **** DAM.
 1. Aprite il passaggio Miniature **[!UICONTROL di]** processo.
 1. Specificate la seguente configurazione nella scheda **[!UICONTROL Miniature]** :
