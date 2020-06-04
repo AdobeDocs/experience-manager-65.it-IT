@@ -10,17 +10,21 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 2%
 
 ---
 
 
 # Ristrutturazione del repository comune in AEM 6.5 {#common-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l’aggiornamento ad AEM 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che possono avere un impatto su tutte le soluzioni. Alcune modifiche richiedono sforzi durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere posticipate fino a un aggiornamento futuro.
+Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l’aggiornamento ad AEM 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che possono avere un impatto su tutte le soluzioni. Alcune modifiche richiedono sforzi durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere posticipate fino a un aggiornamento futuro.
 
 **Con aggiornamento 6.5**
 
+* [Configurazioni ContextHub](#contexthub-6.5)
 * [Istanze flusso di lavoro](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
 * [Modelli flusso di lavoro](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [Moduli di avvio per flusso di lavoro](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
@@ -34,11 +38,11 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
 * [Progettazione report classici](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
 * [Strutture predefinite](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
 * [Endpoint JavaScript di Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-javascript-endpoint)
-* [Endpoint web-snap Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-web-hook-endpoint)
+* [Endpoint Web-Hook di Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-web-hook-endpoint)
 * [Attività Inbox](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#inbox-tasks)
 * [Configurazioni Blueprint Manager multisito](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
 * [Configurazioni del gadget per il dashboard di AEM Projects](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
-* [Modello e-mail notifica replica](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#replication-notification-e-mail-template)
+* [Modello e-mail di notifica della replica](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#replication-notification-e-mail-template)
 * [Tag](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)
 * [Servizi cloud di traduzione](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
 * [Lingue di traduzione](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-languages)
@@ -49,6 +53,21 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
 * [Modelli e-mail notifica flusso di lavoro](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## Con aggiornamento 6.5 {#with-upgrade}
+
+### Configurazioni ContextHub {#contexthub-6.5}
+
+A partire da AEM 6.4, non esiste una configurazione ContextHub predefinita. Pertanto, a livello principale del sito `cq:contextHubPathproperty` dovrebbe essere impostata una configurazione per indicare quale deve essere utilizzata.
+
+1. Andate alla directory principale del sito.
+1. Aprite le proprietà della pagina principale e selezionate la scheda Personalizzazione.
+1. Nel campo Percorso contestexthub immettere il proprio percorso di configurazione ContextHub.
+
+Inoltre, nella configurazione ContextHub, è `sling:resourceType` necessario aggiornare il file per renderlo relativo e non assoluto.
+
+1. Aprire le proprietà del nodo di configurazione ContextHub in CRX DE Lite, ad esempio `/apps/settings/cloudsettings/legacy/contexthub`
+1. Cambia `sling:resourceType` da `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` a `granite/contexthub/cloudsettings/components/baseconfiguration`
+
+Ad esempio, la configurazione `sling:resourceType` di ContextHub deve essere relativa anziché assoluta.
 
 ### Modelli flusso di lavoro {#workflow-models}
 
@@ -234,7 +253,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Per qualsiasi progettazione gestita in SCM e non scritta in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
+   <td><p>Per tutte le progettazioni gestite in SCM e non scritte in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ol>
      <li>Copiate le progettazioni dalla posizione precedente alla nuova posizione (<code>/apps</code>).</li>
      <li>Convertite eventuali risorse CSS, JavaScript e statiche nella struttura in una libreria <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"></a> client con <code>allowProxy = true</code>.</li>
@@ -243,10 +262,10 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
        </code>:
        <code>
         designPath
-       </code></span> property.</li>
+       </code></span> proprietà.</li>
      <li>Aggiorna tutte le pagine che fanno riferimento al percorso precedente per utilizzare la nuova categoria Libreria client (per questo è necessario aggiornare il codice di implementazione Pagina).</li>
      <li>Aggiorna le regole del dispatcher AEM per consentire la trasmissione delle librerie client tramite /etc.clientlibs/. servlet proxy.</li>
-    </ol> <p>Per tutte le progettazioni NON gestite in SCM e modificate runtime tramite le finestre di dialogo Progettazione.</p>
+    </ol> <p>Per qualsiasi progettazione NON gestita in SCM e modificata in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ul>
      <li>Non spostate Designer dall' <code>/etc</code>esterno.</li>
     </ul> </td>
@@ -272,19 +291,19 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Per qualsiasi progettazione gestita in SCM e non scritta in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
+   <td><p>Per tutte le progettazioni gestite in SCM e non scritte in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ol>
      <li>Copiate le progettazioni dalla posizione precedente alla nuova posizione (/app).</li>
      <li>Convertite eventuali risorse CSS, JavaScript e statiche nella struttura in una libreria <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"></a> client con <code>allowProxy = true</code>.</li>
      <li>Aggiorna i riferimenti alla posizione precedente in <code>
        cq
       </code>:
-       <code>
+      <code>
        designPath
-      </code> property.</li>
+      </code> proprietà.</li>
      <li>Aggiorna tutte le pagine che fanno riferimento al percorso precedente per utilizzare la nuova categoria Libreria client (per questo è necessario aggiornare il codice di implementazione Pagina).</li>
      <li>Aggiorna le regole del dispatcher AEM per consentire la trasmissione delle librerie client tramite /etc.clientlibs/. servlet proxy.</li>
-    </ol> <p>Per tutte le progettazioni NON gestite in SCM e modificate runtime tramite le finestre di dialogo Progettazione.</p>
+    </ol> <p>Per qualsiasi progettazione NON gestita in SCM e modificata in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ul>
      <li>Non spostate Designer dall' <code>/etc</code>esterno.</li>
     </ul> </td>
@@ -310,19 +329,19 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Per qualsiasi progettazione gestita in SCM e non scritta in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
+   <td><p>Per tutte le progettazioni gestite in SCM e non scritte in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ol>
      <li>Copiate le progettazioni dalla posizione precedente alla nuova posizione (/app).</li>
      <li>Convertite eventuali risorse CSS, JavaScript e statiche nella struttura in una libreria <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"></a> client con <code>allowProxy = true</code>.</li>
      <li>Aggiorna i riferimenti alla posizione precedente in <code>
        cq
       </code>:
-       <code>
+      <code>
        designPath
-      </code> property.</li>
+      </code> proprietà.</li>
      <li>Aggiorna tutte le pagine che fanno riferimento al percorso precedente per utilizzare la nuova categoria Libreria client (per questo è necessario aggiornare il codice di implementazione Pagina).</li>
      <li>Aggiorna le regole del dispatcher AEM per consentire la trasmissione delle librerie client tramite /etc.clientlibs/. servlet proxy.</li>
-    </ol> <p>Per tutte le progettazioni NON gestite in SCM e modificate runtime tramite le finestre di dialogo Progettazione.</p>
+    </ol> <p>Per qualsiasi progettazione NON gestita in SCM e modificata in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ul>
      <li>Non spostate Designer dall' <code>/etc</code>esterno.</li>
     </ul> </td>
@@ -348,19 +367,19 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Per qualsiasi progettazione gestita in SCM e non scritta in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
+   <td><p>Per tutte le progettazioni gestite in SCM e non scritte in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ol>
      <li>Copiate le progettazioni dalla posizione precedente alla nuova posizione (/app).</li>
      <li>Convertite eventuali risorse CSS, JavaScript e statiche nella struttura in una libreria <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"></a> client con <code>allowProxy = true</code>.</li>
      <li>Aggiorna i riferimenti alla posizione precedente in <code>
        cq
       </code>:
-       <code>
+      <code>
        designPath
-      </code> property.</li>
+      </code> proprietà.</li>
      <li>Aggiorna tutte le pagine che fanno riferimento al percorso precedente per utilizzare la nuova categoria Libreria client (per questo è necessario aggiornare il codice di implementazione Pagina).</li>
      <li>Aggiorna le regole del dispatcher AEM per consentire la trasmissione delle librerie client tramite /etc.clientlibs/. servlet proxy.</li>
-    </ol> <p>Per tutte le progettazioni NON gestite in SCM e modificate runtime tramite le finestre di dialogo Progettazione.</p>
+    </ol> <p>Per qualsiasi progettazione NON gestita in SCM e modificata in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ul>
      <li>Non spostate Designer dall' <code>/etc</code>esterno.</li>
     </ul> </td>
@@ -395,7 +414,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
  </tbody>
 </table>
 
-### Endpoint web-snap Adobe DTM {#adobe-dtm-web-hook-endpoint}
+### Endpoint Web-Hook di Adobe DTM {#adobe-dtm-web-hook-endpoint}
 
 <table>
  <tbody>
@@ -502,7 +521,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
  </tbody>
 </table>
 
-### Modello e-mail notifica replica {#replication-notification-e-mail-template}
+### Modello e-mail di notifica della replica {#replication-notification-e-mail-template}
 
 <table>
  <tbody>
@@ -552,13 +571,13 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
    <td><p>Tutti i tag devono essere migrati in <code>/content/cq:tags</code>.</p>
     <ol>
      <li>Copiate tutti i tag dalla posizione precedente alla nuova posizione.</li>
-     <li>Rimuovere tutti i tag dalla posizione precedente.</li>
-     <li>Tramite la console Web AEM, riavviate il bundle Day Communique 5 Tagging OSGi all’indirizzo <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> for AEM per riconoscere che la nuova posizione contiene contenuto e deve essere utilizzata.</li>
+     <li>Rimuovete tutti i tag dalla posizione precedente.</li>
+     <li>Tramite la console Web di AEM, riavviate il bundle Day Communique 5 Tagging OSGi all’indirizzo <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> for AEM per riconoscere che la nuova posizione contiene contenuto e deve essere utilizzata.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>Riavviare il bundle Day Communique Tagging OSGi registrerà la nuova posizione come radice del tag solo se la posizione precedente è vuota.</p> <p>I riferimenti alla posizione precedente continueranno a funzionare dopo la migrazione alla nuova posizione per tutte le funzionalità che sfruttano l’API TagManager di AEM per la risoluzione dei tag.</p> <p>Eventuali codici personalizzati che fanno riferimento in modo esplicito al percorso <code>/etc/tags</code> devono essere aggiornati a <span class="code">/content/ <code>
+   <td><p>Se si riavvia il bundle Day Communique Tagging OSGi, la nuova posizione verrà registrata come radice del tag solo se la posizione precedente è vuota.</p> <p>I riferimenti alla posizione precedente continueranno a funzionare dopo la migrazione alla nuova posizione per tutte le funzionalità che sfruttano l’API TagManager di AEM per la risoluzione dei tag.</p> <p>Eventuali codici personalizzati che fanno riferimento in modo esplicito al percorso <code>/etc/tags</code> devono essere aggiornati a <span class="code">/content/ <code>
        cq
       </code><code>
        :tags
@@ -585,7 +604,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
     <ol>
      <li>Migra le configurazioni esistenti nella posizione precedente alla nuova posizione.
       <ul>
-       <li>Create manualmente nuove configurazioni di Servizi cloud di traduzione tramite l’interfaccia utente di authoring di AEM in <strong>Strumenti &gt; Servizi cloud &gt; Servizi</strong>cloud di traduzione.<br /> OPPURE </li>
+       <li>Puoi ricreare manualmente nuove configurazioni di Servizi cloud di traduzione tramite l’interfaccia utente di authoring di AEM in <strong>Strumenti &gt; Servizi cloud &gt; Servizi</strong>cloud di traduzione.<br /> OPPURE </li>
        <li>Copiate le nuove configurazioni di Servizi cloud di traduzione dalla posizione precedente alla nuova posizione (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Associate le configurazioni AEM applicabili alle gerarchie di contenuti di AEM.
@@ -601,7 +620,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>La risoluzione dei servizi di traduzione cloud viene eseguita nel seguente ordine:</p>
+   <td><p>La risoluzione dei servizi di traduzione cloud viene eseguita nell'ordine seguente:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li>
@@ -661,7 +680,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>La risoluzione XML delle regole di conversione replica si verifica nell'ordine seguente:</p>
+   <td><p>La risoluzione XML delle regole di conversione della replica si verifica nell'ordine seguente:</p>
     <ol>
      <li><code>/conf/global/settings/translation/rules/translation_rules.xml</code></li>
      <li><code class="code">/apps/settings/translation/rules/translation_rules.xml
@@ -688,19 +707,19 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Per qualsiasi progettazione gestita in SCM e non scritta in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
+   <td><p>Per tutte le progettazioni gestite in SCM e non scritte in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ol>
      <li>Copiate le progettazioni dalla posizione precedente alla nuova posizione (/app).</li>
      <li>Convertite eventuali risorse CSS, JavaScript e statiche nella struttura in una libreria <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank"></a> client con <code>allowProxy = true</code>.</li>
      <li>Aggiorna i riferimenti alla posizione precedente in <code>
        cq
       </code>:
-       <code>
+      <code>
        designPath
-      </code> property.</li>
+      </code> proprietà.</li>
      <li>Aggiorna tutte le pagine che fanno riferimento al percorso precedente per utilizzare la nuova categoria Libreria client (per questo è necessario aggiornare il codice di implementazione Pagina).</li>
      <li>Aggiorna le regole del dispatcher AEM per consentire la trasmissione delle librerie client tramite /etc.clientlibs/. servlet proxy.</li>
-    </ol> <p>Per tutte le progettazioni NON gestite in SCM e modificate runtime tramite le finestre di dialogo Progettazione.</p>
+    </ol> <p>Per qualsiasi progettazione NON gestita in SCM e modificata in fase di esecuzione tramite le finestre di dialogo Progettazione.</p>
     <ul>
      <li>Non spostate Designer dall' <code>/etc</code>esterno.</li>
     </ul> </td>
@@ -756,7 +775,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>La risoluzione dei servizi di traduzione cloud viene eseguita nel seguente ordine:</p>
+   <td><p>La risoluzione dei servizi di traduzione cloud viene eseguita nell'ordine seguente:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
@@ -822,7 +841,7 @@ Come descritto nella pagina Ristrutturazione [repository padre in AEM 6.5](/help
   </tr>
   <tr>
    <td><strong>Note</strong></td>
-   <td><p>I pacchetti di flussi di lavoro creati tramite la console Miscadmin dell’interfaccia classica vengono memorizzati nella posizione precedente, mentre tutti gli altri vengono memorizzati nella nuova posizione.</p> <p>I pacchetti di workflow memorizzati nelle posizioni precedenti o iniziali possono essere gestiti tramite la console di amministrazione dell’interfaccia classica.</p> </td>
+   <td><p>I pacchetti di flussi di lavoro creati tramite la console Miscadmin dell’interfaccia classica vengono memorizzati nella posizione precedente, mentre tutti gli altri vengono memorizzati nella nuova posizione.</p> <p>I pacchetti di flussi di lavoro memorizzati nelle posizioni precedenti o iniziali possono essere gestiti tramite la console di amministrazione dell’interfaccia classica.</p> </td>
   </tr>
  </tbody>
 </table>
