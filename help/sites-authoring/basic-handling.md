@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '3010'
-ht-degree: 92%
+source-wordcount: '2979'
+ht-degree: 95%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 92%
    >
 * Alcune funzionalità non sono disponibili su tutte le console e in alcune console potrebbero essere disponibili funzionalità aggiuntive. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
 >* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-authoring/keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -52,7 +53,7 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 >
 >Tocca o fai clic su **Sites** per iniziare.
 
-### Navigazione nel prodotto   {#product-navigation}
+### Navigazione nel prodotto  {#product-navigation}
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviata un’esercitazione relativa alla navigazione nel prodotto. Dedica alcuni minuti all’esercitazione per ottenere una buona panoramica dell’utilizzo di base di AEM.
 
@@ -81,17 +82,13 @@ La navigazione globale presenta due pannelli, rappresentati da icone sul lato si
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
-### Pannello di navigazione   {#navigation-panel}
+### Pannello di navigazione  {#navigation-panel}
 
 Il pannello di navigazione consente di accedere alle console AEM:
 
 ![bh-01](assets/bh-01.png)
 
-Il titolo della scheda del browser si aggiorna per riflettere la posizione in cui ci si sposta attraverso le console e il contenuto.
-
->[!NOTE]
->
->Il titolo della scheda riflette la posizione a partire da [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
+Il titolo della scheda del browser si aggiorna per riflettere la posizione in cui ci si sposta nelle console e nel contenuto.
 
 Nel pannello di navigazione sono disponibili le console seguenti:
 
@@ -118,7 +115,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
    <td>Un frammento di esperienza<a href="/help/sites-authoring/experience-fragments.md"> è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse.</a></td>
   </tr>
   <tr>
-   <td>Moduli</td>
+   <td>Forms</td>
    <td>Questa console permette di creare, gestire ed elaborare <a href="/help/forms/home.md">moduli e documenti</a>.</td>
   </tr>
   <tr>
@@ -228,15 +225,11 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * Navigazione tramite tastiera
 
-   Potete navigare in un sito Web utilizzando solo la tastiera. Questo utilizza la funzionalità standard del browser del tasto **TAB** (o **OPT+TAB**) per spostarvi tra gli elementi della pagina *attivabili*.
+   Potete navigare in un sito web utilizzando solo la tastiera. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*.
 
-   Nella console **Siti** è stata aggiunta l’opzione per **passare al contenuto** principale. Questo diventa visibile quando si *posizionano le schede* nelle opzioni di intestazione, e velocizza la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
+   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
 
    ![bh-30](assets/bh-30.png)
-
-   >[!NOTE]
-   >
-   >Il **passaggio al contenuto** principale è disponibile a partire da [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 ## Accedere all’Aiuto {#accessing-help}
 
@@ -279,7 +272,7 @@ Sono disponibili diverse risorse di Aiuto:
    >    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barra delle azioni   {#actions-toolbar}
+## Barra delle azioni  {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -299,7 +292,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide   {#quick-actions}
+## Azioni rapide  {#quick-actions}
 
 Nella [Vista a schede](#cardviewquickactions) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -316,13 +309,13 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco  ](#list-view)
+* [Vista a elenco](#list-view)
 
 >[!NOTE]
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse   {#selecting-resources}
+### Selezionare le risorse  {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -360,7 +353,7 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
     </ul> </td>
   </tr>
   <tr>
-   <td>Vista a elenco  </td>
+   <td>Vista a elenco </td>
    <td>
     <ul>
      <li>Desktop: <br /> Fate clic sulla miniatura</li>
@@ -420,6 +413,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 * Per spostarti in alto e in basso nella struttura ad albero, tocca o fai clic sul nome di una risorsa o sulla freccia a destra del nome.
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocchi o fai clic su tali elementi.
+
    ![bh-17](assets/bh-17.png)
 
    * Gli elementi figlio della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
@@ -431,6 +425,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * Quando una risorsa è selezionata, compare un segno di spunta sulla miniatura e il nome della risorsa viene evidenziato.
    * I dettagli della risorsa selezionata sono visualizzati nella colonna finale.
    * La barra delle azioni diventerà disponibile.
+
    ![bh-18](assets/bh-18.png)
 
    Quando una pagina viene selezionata nella vista a colonne, viene visualizzata nella colonna finale con i seguenti dettagli:
@@ -463,7 +458,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco   {#list-view}
+### Vista a elenco  {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -494,6 +489,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
    * **Dati analitici pagina**
    * **Visitatori univoci**
    * **Tempo sulla pagina**
+
    ![bh-21](assets/bh-21.png)
 
    Per impostazione predefinita, la colonna **Nome** è visualizzata e costituisce una porzione dell’URL della pagina. In alcuni casi, l’autore potrebbe dover accedere a pagine in una lingua diversa; poiché il nome della pagina di solito non cambia, può essere di grande aiuto se si tratta di una lingua che l’autore non conosce.
@@ -544,7 +540,7 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 >
 >Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Timeline   {#timeline}
+### Timeline  {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
