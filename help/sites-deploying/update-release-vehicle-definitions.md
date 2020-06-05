@@ -10,12 +10,15 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
+source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 3%
 
 ---
 
 
-# AEM - Definizioni dei veicoli di rilascio degli aggiornamenti{#update-release-vehicle-definitions}
+# AEM - Definizioni dei veicoli rilasci di aggiornamento{#update-release-vehicle-definitions}
 
 Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Experience Manager (AEM), inclusi rilasci completi, pacchetti di funzioni e Service Pack che Adobe distribuisce ai propri clienti.
 
@@ -137,7 +140,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td>
     <ul>
      <li>Tutte le correzioni QA convalidate</li>
-     <li>Integrità complessiva del pacchetto con esecuzioni di automazione</li>
+     <li>Integrità complessiva del pacchetto con le esecuzioni di automazione</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -186,93 +189,6 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
   <tr>
    <td><strong>Livello di test</strong></td>
    <td>QA convalidato a livello di integrazione e test di regressione</td>
-  </tr>
- </tbody>
-</table>
-
-## Oak Cumulative Fix Pack {#oak-cumulative-fix-pack}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definizione</strong></td>
-   <td>
-    <ul>
-     <li>Simile a un CFP standard, ma contiene solo correzioni relative al Oak</li>
-     <li>Il COFP è autonomo (senza dipendenze). I clienti non devono preoccuparsi di trovare/risolvere dipendenze. [1]</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Denominazione</strong></td>
-   <td>quercia &lt;versione&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusioni</strong></td>
-   <td>COFP è un fix pack cumulativo contenente correzioni di tutti i componenti Oak per una versione 1.x specifica. Ad esempio, se il cliente applica COHF 1.x.3, COHF 1.x.3. = COHF 1.x.1 + COHF 1.x.2.</td>
-  </tr>
-  <tr>
-   <td><strong>Documentazione</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Cadenza</strong></td>
-   <td><p>Se necessario</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Disponibilità e installazione</strong></td>
-   <td>
-    <ul>
-     <li>Il processo di installazione COFP è stato semplificato per migliorare l'esperienza del cliente. (I clienti possono semplicemente installare un singolo pacchetto per tutti i componenti).</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Livello di test</strong></td>
-   <td><p>QA convalidato</p> </td>
-  </tr>
- </tbody>
-</table>
-
-## Correzione {#hot-fix}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definizione</strong></td>
-   <td><p>Pacchetto che include uno o più file creati per risolvere un difetto del prodotto che riduce in modo significativo i servizi essenziali o influisce in modo significativo sulle operazioni aziendali. </p> </td>
-  </tr>
-  <tr>
-   <td><strong>Denominazione</strong></td>
-   <td>cq-&lt;Versione Rilascio&gt;-hotfix-&lt;ID hotfix&gt;-&lt;versione hotfix&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusioni</strong></td>
-   <td>Include correzioni per un problema specifico</td>
-  </tr>
-  <tr>
-   <td><strong>Documentazione</strong></td>
-   <td>Le note sulla versione degli hotfix pubblici sono disponibili solo su richiesta del cliente tramite il portale di assistenza AEM.</td>
-  </tr>
-  <tr>
-   <td><strong>Cadenza</strong></td>
-   <td>Se necessario</td>
-  </tr>
-  <tr>
-   <td><strong>Disponibilità e installazione</strong></td>
-   <td>
-    <ul>
-     <li>Consegnato come pacchetto</li>
-     <li>Disponibile su Package Share</li>
-     <li>A seconda dell'ultimo service pack rilasciato</li>
-     <li>La maggior parte delle correzioni rapide è autonoma, a meno che non sia specificato. Può essere installato in qualsiasi ordine. Può essere verificato tramite la scheda Dettagli condivisione pacchetto dell'elemento Dependencies (Dipendenze).</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Livello di test</strong></td>
-   <td>
-    <ul>
-     <li>Convalidato dall'Assistenza clienti</li>
-     <li>Le correzioni rapide di AEM non beneficiano dello stesso livello di garanzia qualità dei service pack o delle release del prodotto. Pertanto, devono essere convalidati in un ambiente di pre-produzione come parte dei processi di distribuzione di qualità.</li>
-    </ul> </td>
   </tr>
  </tbody>
 </table>
@@ -345,7 +261,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
   </tr>
   <tr>
    <td><strong>Documentazione</strong></td>
-   <td>La documentazione è disponibile su helpx.adobe.com.</td>
+   <td>La documentazione è disponibile sul sito helpx.adobe.com.</td>
   </tr>
   <tr>
    <td><strong>Cadenza</strong></td>
