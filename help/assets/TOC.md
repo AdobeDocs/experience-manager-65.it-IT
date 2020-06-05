@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di Experience Manager 6.5 Assets
 translation-type: tm+mt
-source-git-commit: 4f1aea28b94e037da5cefedd46228026299a3ddc
+source-git-commit: db60a7297defa2ed8e7f30f148d0f74a73a49893
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 41%
@@ -52,7 +52,7 @@ ht-degree: 41%
    + [Distribuzione di contenuti HTTP2](http2.md)
    + [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
    + [Attivazione della protezione hotlinking in Dynamic Media](hotlink-protection.md)
-   + [Immagini 3D](/help/assets/assets-3d.md)
+   + [Supporto 3D](/help/assets/assets-3d.md)
    + [Set di immagini](image-sets.md)
    + [Immagini panoramiche](panoramic-images.md)
    + [Set di file multimediali diversi](mixed-media-sets.md)
