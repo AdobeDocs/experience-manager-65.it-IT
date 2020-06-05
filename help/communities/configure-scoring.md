@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 0%
 
 ---
 
@@ -119,7 +122,7 @@ Per visualizzare le voci di registro:
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui provider di risorse di archiviazione e archiviazione).
+È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui fornitori di risorse di archiviazione e archiviazione).
 
 Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
@@ -185,13 +188,13 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
    * Aggiunta di proprietà di punteggio e contrassegno
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
    /etc/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-badging,
+   /libs/settings/community/badging/rules/forums-badging]
    ```
 
    * Individuare il nodo del componente forum
@@ -227,6 +230,7 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
    >
    >
 * Creazione di immagini di contrassegno univoche per diversi siti AEM
+
 >
 
 
