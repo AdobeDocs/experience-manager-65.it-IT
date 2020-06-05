@@ -11,7 +11,10 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 1%
 
 ---
 
@@ -66,14 +69,6 @@ Dopo aver installato il pacchetto [aggiuntivo](../../forms/using/installing-conf
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-power-user</td> 
-   <td>
-    <ul> 
-     <li>Creazione e anteprima di moduli adattivi o modelli di comunicazione interattiva</li> 
-     <li>Creazione di script per moduli adattivi o modelli di comunicazione interattiva tramite l'editor di codice</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
    <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
@@ -99,7 +94,7 @@ Dopo aver installato il pacchetto [aggiuntivo](../../forms/using/installing-conf
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utilizzare le applicazioni<br /> inbox AEM <strong>Nota: Per accedere all’interfaccia utente di Interactive Communications Agent nella inbox di AEM, </strong>dovete disporre di un’assegnazione per i gruppi agente-utenti e utenti del flusso di lavoro.</li> 
+     <li>Utilizzare le applicazioni<br /> inbox AEM <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella inbox di AEM è necessario disporre di un’assegnazione per i gruppi agente-utenti e utenti del flusso di lavoro.</li> 
      <li>Gestione delle istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
