@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -157,13 +157,13 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
    * Aggiunta di proprietà di punteggio e contrassegno
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-scoring,
+   /libs/settings/community/badging/rules/forums-scoring]
    ```
 
    * Individuare il nodo del componente forum
@@ -189,7 +189,7 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
@@ -212,7 +212,7 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 1. A un utente viene assegnato un contrassegno moderatore utilizzando cURL:
 
    ```shell
-   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
    Poiché un utente ha guadagnato due simboli di bronzo ed è stato assegnato un badge moderatore, questo è il modo in cui l&#39;utente appare con la sua voce forum.
@@ -225,12 +225,11 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 >
 >* I nomi delle regole di punteggio devono essere univoci a livello globale; non devono terminare con lo stesso nome.
    >  Un esempio di cosa *non* fare:
-   >  /etc/community/scoring/rules/site1/forums-scoring
-   >  /etc/community/scoring/rules/site2/forums-scoring
+   >  /libs/settings/community/scoring/rules/site1/forums-scoring
+   >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
 * Creazione di immagini di contrassegno univoche per diversi siti AEM
-
 >
 
 
