@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +45,7 @@ In questa console vengono visualizzati i simboli attualmente disponibili e dai q
 
 ## Crea badge {#create-badge}
 
-Un contrassegno viene creato caricando un’immagine di dimensioni appropriate (72 dpi con un’altezza compresa tra 26 e 32 pixel) e fornendo un nome. L’immagine del contrassegno viene memorizzata nella directory archivio `/etc/community/badging/images` e replicata automaticamente nell’ambiente di pubblicazione.
+Un contrassegno viene creato caricando un’immagine di dimensioni appropriate (72 dpi con un’altezza compresa tra 26 e 32 pixel) e fornendo un nome. L’immagine del contrassegno viene memorizzata nella directory archivio `/libs/settings/community/badging/images` e replicata automaticamente nell’ambiente di pubblicazione.
 
 Se l’ambiente di pubblicazione è una farm di editori, è necessario configurare la sincronizzazione [](/help/communities/sync.md)utente.
 
