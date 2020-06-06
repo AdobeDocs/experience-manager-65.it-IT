@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +66,7 @@ Il motore di punteggio avanzato fornisce una configurazione OSGi con parametri c
 * **Pesi punteggio**
 
    Per un argomento, specificate il verbo a cui assegnare la priorità più alta per il calcolo del punteggio. È possibile inserire uno o più argomenti, ma solo **un verbo per argomento**. Consulta [Argomenti e verbi](/help/communities/implementing-scoring.md#topics-and-verbs).
-Inserito come `topic,verb` con la virgola con carattere di escape. Esempio:
+Inserito come `topic,verb` con la virgola con carattere di escape. Ad esempio:
    `/social/forum/hbs/social/forum\,ADD`
 L’impostazione predefinita è impostata sul verbo ADD per i componenti QnA e forum.
 
@@ -105,7 +108,7 @@ Consulta [Regole](/help/communities/implementing-scoring.md#scoring-sub-rules)se
 
 Il pacchetto di punteggio avanzato installa una cartella di configurazione che contiene un file di parole di arresto:
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
 L&#39;algoritmo avanzato di valutazione utilizza l&#39;elenco di parole contenute nel file delle parole chiave per identificare le parole inglesi comuni che vengono ignorate durante l&#39;elaborazione del contenuto.
 
@@ -131,7 +134,7 @@ Invece di associare i punti a un’immagine badge, è necessario solo identifica
   <tr>
    <td>badgingPath</td>
    <td>Stringa[]</td>
-   <td><em>(Obbligatorio)</em> Una stringa di più valori di immagini contrassegno fino al numero di badgingLevels. I percorsi immagine del contrassegno devono essere ordinati in modo che il primo venga assegnato all’esperto più alto. Se sono presenti meno simboli di quelli indicati da badgingLevels, l'ultimo contrassegno nell'array riempie il resto dell'array. Voce di esempio:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Obbligatorio)</em> Una stringa di più valori di immagini contrassegno fino al numero di badgingLevels. I percorsi immagine del contrassegno devono essere ordinati in modo che il primo venga assegnato all’esperto più alto. Se sono presenti meno simboli di quelli indicati da badgingLevels, l'ultimo contrassegno nell'array riempie il resto dell'array. Voce di esempio:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -146,7 +149,7 @@ Invece di associare i punti a un’immagine badge, è necessario solo identifica
   <tr>
    <td>scoringRules</td>
    <td>Stringa[]</td>
-   <td><em>(Facoltativo)</em> Stringa con più valori per limitare la regola di contrassegno agli eventi di punteggio identificati dalle regole di punteggio elencate.<br /> Voce di esempio:<br /> Il valore <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> predefinito non prevede restrizioni.</td>
+   <td><em>(Facoltativo)</em> Stringa con più valori per limitare la regola di contrassegno agli eventi di punteggio identificati dalle regole di punteggio elencate.<br /> Voce di esempio:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> L'impostazione predefinita non prevede restrizioni.</td>
   </tr>
  </tbody>
 </table>
@@ -159,7 +162,7 @@ In questa versione beta è incluso un badge di esperti basato sui premi:
 
 * `expert`
 
-   `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -178,19 +181,19 @@ Consultate le informazioni di base per:
 
 Nella versione beta sono incluse due regole di punteggio avanzate per la funzione [](/help/communities/functions.md#forum-function) forum (una per ciascuna delle componenti forum e commenti della funzione forum):
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/etc/community/scoring/rules/sub-rules/adv-voting-rule`
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-forums-rule
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
 **Note:**
 
@@ -208,8 +211,8 @@ Nella versione beta sono incluse due regole di punteggio avanzate per la funzion
 
 Nella release sono incluse due regole di contrassegno avanzate che corrispondono ai forum [avanzati e alle regole](#included-scoring-rules-and-sub-rules)di valutazione dei commenti.
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
 **Note:**
 
