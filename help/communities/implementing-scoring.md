@@ -12,7 +12,10 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2896'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +46,7 @@ I distintivi sono posti sotto il nome di un membro per indicare il suo ruolo o l
 
 Per impostazione predefinita, i simboli si trovano nella directory archivio in
 
-* `/etc/community/badging/images`
+* `/libs/settings/community/badging/images`
 
 Se memorizzati in un percorso diverso, tutti dovrebbero essere accessibili in lettura.
 
@@ -62,13 +65,16 @@ I simboli assegnati (e assegnati) sono memorizzati nell&#39; [SRP](/help/communi
 Nella release sono inclusi tre simboli basati sui ruoli:
 
 * **moderatore**
-   `/etc/community/badging/images/moderator/jcr:content/moderator.png`
+
+   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **manager del gruppo**
-   `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
+
+   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **membro privilegiato**
-   `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
+
+   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -84,13 +90,16 @@ Affinché i simboli possano essere visualizzati come una ricompensa per l&#39;at
 Nel rilascio sono inclusi tre simboli basati sulla ricompensa:
 
 * **oro**
-   `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+
+   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **argento**
-   `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+
+   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **bronzo**
-   `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+
+   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -182,8 +191,8 @@ I punteggi sono memorizzati in SRP.
 >I nomi delle regole di punteggio devono essere univoci a livello globale; non devono terminare con lo stesso nome.
 >
 >Un esempio di cosa *non* fare:
->/etc/community/scoring/rules/site1/forums-scoring
->/etc/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 
 ### Regole secondarie punteggio {#scoring-sub-rules}
@@ -219,7 +228,7 @@ Le regole secondarie sono nodi di tipo `cq:Page` con proprietà sul relativo `jc
    <td>Lungo</td>
    <td>
     <ul>
-     <li>obbligatorio; il verbo corrisponde a un'azione evento</li>
+     <li>obbligatorio; il verbo corrisponde a un'azione di evento</li>
      <li>deve essere presente almeno una proprietà verbo</li>
      <li>il verbo deve essere inserito in tutto MAIUSCOLO</li>
      <li>possono essere presenti più proprietà verbo, ma non sono presenti duplicati</li>
@@ -274,13 +283,13 @@ Le regole secondarie sono nodi di tipo `cq:Page` con proprietà sul relativo `jc
 
 Nella release sono incluse due regole di punteggio per la funzione [](/help/communities/functions.md#forum-function) Forum (una per ciascuna delle componenti Forum e Commenti della funzione Forum):
 
-1. /etc/community/scoring/rules/comments-scoring
+1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRegole[] =/etc/community/scoring/rules/sub-rules/membro-comment-create/etc/community/scoring/rules/sub-rules/membro-receive-vote/etc/community/scoring/rules/sub-rules/membro-dare-voto/etc/community/scoring/rules/sub-rules/membro-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/membro-comment-create/libs/settings/community/scoring/rules/sub-rules/membro-receive-vote/libs/settings/community/scoring/rules/sub-rules/Member-dare-voti/libs/settings/community/scoring/rules/sub-rules/membro-is moderated
 
-1. /etc/community/scoring/rules/forums-scoring
+1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRegole[] =/etc/community/scoring/rules/sub-rules/membro-forum-create/etc/community/scoring/rules/sub-rules/membro-receive-vote/etc/community/scoring/rules/sub-rules/membro-dare-voto/etc/community/scoring/rules/sub-rules/membro-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/membro-forum-create/libs/settings/community/scoring/rules/sub-rules/membro-receive-Vote/libs/settings/community/scoring/rules/sub-rules/Member-dare-voti/libs/settings/community/scoring/rules/sub-rules/membro è moderato
 
 **Note:**
 
@@ -308,15 +317,15 @@ Le regole di Badging sono nodi di tipo `cq:Page` con proprietà sul `jcr:content
 
 Le regole per il contrassegno consistono in una `thresholds` proprietà obbligatoria che è un elenco ordinato di punteggi mappati a simboli. I punteggi devono essere ordinati in valore crescente. Ad esempio:
 
-* `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+* `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
    * Un distintivo di bronzo è stato avvertito per guadagnare 1 punto.
 
-* `60|/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+* `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
    * Un distintivo d&#39;argento è assegnato quando 60 punti sono stati accumulati.
 
-* `80|/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+* `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
    * Un distintivo d&#39;oro è stato avvertito quando sono stati accumulati 80 punti.
 
@@ -346,7 +355,7 @@ La `scoringRules` proprietà di una regola di contrassegno limita semplicemente 
      <li>number = score</li>
      <li>| = il carattere della linea verticale (U+007C)</li>
      <li>percorso = percorso completo della risorsa immagine del contrassegno</li>
-    </ul> Le stringhe devono essere ordinate in modo che i numeri aumentino in valore e che tra il numero e il percorso non vengano visualizzati spazi bianchi.<br /> Voce di esempio:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> Le stringhe devono essere ordinate in modo che i numeri aumentino in valore e che tra il numero e il percorso non vengano visualizzati spazi bianchi.<br /> Voce di esempio:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -365,8 +374,9 @@ La `scoringRules` proprietà di una regola di contrassegno limita semplicemente 
 
 Nella release sono incluse due regole di badging corrispondenti alle regole di punteggio dei [forum e dei commenti](#includedscoringrules).
 
-* /etc/community/badging/rules/comments-badging
-* /etc/community/badging/rules/forums-badging
+* /libs/settings/community/badging/rules/comments-badging
+
+* /libs/settings/community/badging/rules/forums-badging
 
 **Note:**
 
@@ -395,7 +405,7 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *membro-profil
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = la posizione del file di immagine del contrassegno nel repository, ad esempio: /etc/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = la posizione del file di immagine del contrassegno nel repository, ad esempio: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *Member-profile-url* = l&#39;endpoint per il profilo del membro alla pubblicazione, ad esempio: https://&lt;server>:&lt;porta>/home/users/community/riley/profile.social.json
 
@@ -405,6 +415,7 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *membro-profil
 >
 >* Può fare riferimento a un&#39;istanza di autore se il servizio [](/help/communities/users.md#tunnel-service) Tunnel è abilitato.
 >* Può trattarsi di un nome oscuro e casuale. Consulta Elenco [di controllo](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) sicurezza per gli ID autorizzabili.
+
 >
 
 
@@ -414,13 +425,13 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *membro-profil
 #### Assegnazione di un contrassegno moderatore {#assign-a-moderator-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 #### Revoca di un distintivo d&#39;argento assegnato {#revoke-an-assigned-silver-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 >[!NOTE]
@@ -574,9 +585,9 @@ Se la funzione non funziona come previsto, verificare che i dati siano stati imm
    * **Tipo**: `String`
    * Seleziona **multipla**
    * Seleziona **Aggiungi**
-   * Enter `/etc/community/badging/rules/forums-badging`
+   * Enter `/libs/settings/community/badging/rules/forums-badging`
    * Seleziona **+**
-   * Enter `/etc/community/badging/rules/comments-badging`
+   * Enter `/libs/settings/community/badging/rules/comments-badging`
    * Selezionare **OK**
 
 * Aggiungere la proprietà scoringRules:
@@ -585,9 +596,9 @@ Se la funzione non funziona come previsto, verificare che i dati siano stati imm
    * **Tipo**: `String`
    * Seleziona **multipla**
    * Seleziona **Aggiungi**
-   * Enter `/etc/community/scoring/rules/forums-scoring`
+   * Enter `/libs/settings/community/scoring/rules/forums-scoring`
    * Seleziona **+**
-   * Enter `/etc/community/scoring/rules/comments-scoring`
+   * Enter `/libs/settings/community/scoring/rules/comments-scoring`
    * Selezionare **OK**
 
 * Selezionate **Salva tutto**.
