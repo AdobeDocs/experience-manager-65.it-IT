@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
+source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+workflow-type: tm+mt
+source-wordcount: '2424'
+ht-degree: 0%
 
 ---
 
@@ -30,14 +33,14 @@ La creazione del progetto AEM basato su Maven offre diversi vantaggi:
 * Utilizzo di archetipi e artefatti del cielo forniti da Adobe
 * Utilizzo dei set di strumenti Apache Sling e Apache Felix per le impostazioni di sviluppo basate su Maven
 * Facilità di importazione in un IDE; ad esempio, Eclipse e/o IntelliJ
-* Integrazione semplice con sistemi di integrazione continua
+* Integrazione semplice con i sistemi di integrazione continua
 
 ### Archetipi di progetto Maven {#maven-project-archetypes}
 
-Adobe fornisce due tipi di archetipo che possono fungere da base per i progetti AEM. Per maggiori informazioni, consulta i link seguenti:
+Adobe fornisce due tipi di archetipo utilizzabili come base per i progetti AEM. Per maggiori informazioni, consulta i link seguenti:
 
 * [archetipo progetto AEM](https://github.com/adobe/aem-project-archetype)
-* [archetype Maven per il kit di avvio applicazioni per pagina singola](https://github.com/adobe/aem-spa-project-archetype)
+* [archetype Maven per il kit di avvio per applicazioni a pagina singola](https://github.com/adobe/aem-spa-project-archetype)
 
 ## Dipendenze API Experience Manager {#experience-manager-api-dependencies}
 
@@ -47,7 +50,7 @@ Adobe fornisce due tipi di archetipo che possono fungere da base per i progetti 
 
 ### Perché Adobe ha creato gli UberJars? {#why-did-adobe-create-the-uberjars}
 
-In passato, gli sviluppatori dovevano gestire un numero relativamente elevato di dipendenze individuali per diverse librerie AEM e quando veniva utilizzata ogni nuova API, era necessario aggiungere al progetto una o più dipendenze singole. Su un progetto, l&#39;introduzione di UberJar causava la rimozione di 30 dipendenze separate dal progetto.
+In passato, gli sviluppatori dovevano gestire un numero relativamente elevato di dipendenze individuali per diverse librerie AEM e, quando veniva utilizzata ogni nuova API, era necessario aggiungere al progetto una o più dipendenze singole. Su un progetto, l&#39;introduzione di UberJar causava la rimozione di 30 dipendenze separate dal progetto.
 
 A partire da AEM 6.5, Adobe fornisce due UberJars: che include interfacce obsolete e una che rimuove quelle obsolete. Facendo riferimento esplicito a uno di essi al momento della creazione, i clienti sono certi di comprendere se hanno una dipendenza da codice obsoleto.
 
@@ -60,7 +63,7 @@ AEM 6.5 presenta due tipi di Uber Jar:
 1. Uber Jar - Include solo le interfacce pubbliche non contrassegnate per la rimozione. Questo è l&#39;UberJar **consigliato** da utilizzare in quanto aiuta la base di codice a garantire il futuro facendo affidamento su API obsolete.
 1. Uber Jar con API obsolete - Include tutte le interfacce pubbliche, incluse quelle contrassegnate per essere obsolete in una versione futura di AEM.
 
-### Come si utilizzano gli UberJars? {#how-to-i-use-the-uberjars}
+### Come si utilizzano gli UberJars? {#how-do-i-use-the-uberjars}
 
 Se utilizzi Apache Maven come sistema di compilazione (come avviene per la maggior parte dei progetti AEM Java), dovrai aggiungere uno o due elementi al file *pom.xml* . Il primo è un elemento di *dipendenza* che aggiunge la dipendenza effettiva al progetto:
 
@@ -125,7 +128,7 @@ Con UberJar, puoi compilare il codice del progetto che dipende dalle API di AEM 
 
 Poiché UberJar contiene **solo** API, non è eseguibile e non può essere utilizzato per **eseguire** Adobe Experience Manager. Per eseguire AEM, è necessario disporre del modulo AEM Quickstart, Standalone o Archivio applicazioni Web (WAR).
 
-### Hai menzionato i limiti dei unit test. Per favore, spieghi meglio. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
+### Hai menzionato i limiti dei unit test. Per favore, spieghi di più. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
 I test di unità interagiscono generalmente con le API del prodotto in tre modi diversi, ciascuno dei quali ha un impatto leggermente diverso da UberJar.
 
@@ -474,7 +477,7 @@ Le dipendenze sotto devono essere aggiunte al POM del `content` modulo.
 
 >[!NOTE]
 >
->A meno che non importate le dipendenze di prodotto come descritto in [Importazione di dipendenze](#importingaemproductdependencies) di prodotti AEM, queste devono essere aggiunte al POM principale insieme alla versione corrispondente alla configurazione di AEM, come descritto in [Aggiunta di dipendenze](#addingdependencies) sopra. I commenti in ciascuna voce di seguito mostrano il pacchetto da cercare in Dependency Finder.
+>A meno che non importate le dipendenze di prodotto come descritto in [Importazione di dipendenze](#importingaemproductdependencies) di prodotti AEM, queste devono essere aggiunte al POM principale insieme alla versione che corrisponde alla configurazione di AEM, come descritto in [Aggiunta di dipendenze](#addingdependencies) sopra. I commenti in ciascuna voce di seguito mostrano il pacchetto da cercare in Dependency Finder.
 
 >[!NOTE]
 >
@@ -576,7 +579,8 @@ Per ottenere l&#39;eliminazione delle classi compilate dai JSP, abbiamo impostat
 >
 >Ad esempio, se includete `/libs/foundation/global.jsp`, potete utilizzare la seguente configurazione per il `maven-resources-plugin` posto della configurazione sopra la quale saltare completamente `/libs`.
 >
->```
+>
+```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -585,9 +589,8 @@ Per ottenere l&#39;eliminazione delle classi compilate dai JSP, abbiamo impostat
 >       </includes>  
 >   </resource>  
 >```
->
 
-### Come utilizzare i sistemi SCM {#how-to-work-with-scm-systems}
+### Come lavorare con i sistemi SCM {#how-to-work-with-scm-systems}
 
 Quando lavorate con Gestione configurazione origine (SCM), accertatevi che
 
@@ -634,7 +637,7 @@ maven-eclipse.xml
 
 In alcuni casi, è possibile che nella struttura dell&#39;origine di contenuto siano presenti file di controllo SCM che non si desidera archiviare nella directory archivio.
 
-Si pensi alla situazione seguente:
+Si consideri la situazione seguente:
 
 archetype ha già creato un file .vltignore per impedire che il file Jar del bundle installato venga nuovamente sincronizzato nel file system:
 
@@ -644,7 +647,7 @@ archetype ha già creato un file .vltignore per impedire che il file Jar del bun
 *.jar
 ```
 
-Ovviamente, non si desidera questo file nel SCM, quindi se ad esempio si utilizza git, si aggiungerà un corrispondente . `gitignore` file:
+Ovviamente, non si desidera questo file neanche nel vostro SCM, quindi se ad esempio si sta utilizzando git, si aggiungerà un corrispondente . `gitignore` file:
 
 #### src/main/content/jcr_root/apps/myproject/install/.gitignore {#src-main-content-jcr-root-apps-myproject-install-gitignore}
 
@@ -661,7 +664,7 @@ Come il . `gitignore` il file non deve entrare nella directory archivio, il . `v
 .gitignore
 ```
 
-### Come utilizzare i profili di distribuzione {#how-to-work-with-deployment-profiles}
+### Procedura per l&#39;utilizzo dei profili di distribuzione {#how-to-work-with-deployment-profiles}
 
 Se il processo di creazione fa parte di una configurazione di gestione del ciclo di vita per lo sviluppo più ampia, ad esempio un processo di integrazione continua, spesso è necessario eseguire l&#39;implementazione su altri computer, non solo sull&#39;istanza locale dello sviluppatore.
 
