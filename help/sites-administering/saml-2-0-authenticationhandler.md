@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 translation-type: tm+mt
-source-git-commit: a44d655871308dac34671f0af2c4a0017eba5793
+source-git-commit: d559a15e3c1c65c39e38935691835146f54a356e
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Questo gestore memorizza il messaggio di risposta SAML crittografato nel nodo ut
 
 >[!NOTE]
 >
->Vedi [una dimostrazione dell’integrazione](https://helpx.adobe.com/cq/kb/saml-demo.html)AEM e SAML.
+>Vedi [una dimostrazione dell’integrazione](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)AEM e SAML.
 >
 >Per leggere un articolo della community end to end, fate clic su: [Integrazione di SAML con Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
@@ -42,8 +45,9 @@ La console [](/help/sites-deploying/configuring-osgi.md) Web consente di acceder
 >
 >Per impostazione predefinita, il gestore di autenticazione SAML 2.0 è disabilitato. Per attivare il gestore, è necessario impostare almeno una delle seguenti proprietà:
 >
->* URL POST provider di identità.
+>* L’URL POST del provider di identità.
 >* L&#39;ID entità provider di servizi.
+
 >
 
 
@@ -54,7 +58,7 @@ La console [](/help/sites-deploying/configuring-osgi.md) Web consente di acceder
 
 **Percorso** del repository per il quale Sling deve utilizzare il gestore di autenticazione. Se questo campo è vuoto, il gestore di autenticazione verrà disabilitato.
 
-**Classificazione** del servizio OSGi Valore di classificazione del servizio Framework per indicare l&#39;ordine in cui chiamare questo servizio. Si tratta di un valore intero per il quale i valori superiori indicano una precedenza superiore.
+**Classificazione** del servizio OSGi Framework Service Ranking valore per indicare l&#39;ordine in cui chiamare questo servizio. Si tratta di un valore intero per il quale i valori superiori indicano una precedenza superiore.
 
 **Alias** certificato IDP L&#39;alias del certificato dell&#39;IdP nell&#39;archivio di attendibilità globale. Se questa proprietà è vuota, il gestore di autenticazione è disabilitato. Consultate il capitolo &quot;Add the IdP Certificate to AEM TrustStore&quot; (Aggiungi certificato IdP a AEM TrustStore) per informazioni sulla configurazione.
 
@@ -71,7 +75,7 @@ La console [](/help/sites-deploying/configuring-osgi.md) Web consente di acceder
 >[!NOTE]
 >
 >Questa posizione viene utilizzata solo se il `request-path` cookie non è impostato. Se richiedete una pagina sotto il percorso configurato senza un token di login valido, il percorso richiesto viene memorizzato in un cookie
->e il browser verrà reindirizzato nuovamente a questa posizione dopo l&#39;autenticazione.
+>e il browser verrà reindirizzato di nuovo a questa posizione dopo l&#39;autenticazione.
 
 **Attributo** ID utente Il nome dell&#39;attributo contenente l&#39;ID utente utilizzato per autenticare e creare l&#39;utente nell&#39;archivio CRX.
 
@@ -93,7 +97,7 @@ La console [](/help/sites-deploying/configuring-osgi.md) Web consente di acceder
 
 ## Aggiungi il certificato IdP a AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
-Le asserzioni SAML sono firmate e facoltativamente possono essere crittografate. Affinché questo funzioni, è necessario fornire almeno il certificato pubblico dell&#39;IdP nella directory archivio. A tal fine è necessario:
+Le asserzioni SAML sono firmate e facoltativamente possono essere crittografate. Affinché questo funzioni, è necessario fornire almeno il certificato pubblico dell&#39;IdP nella directory archivio. A tal fine, è necessario:
 
 1. Vai a *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Premere il collegamento **[!UICONTROL Create TrustStore]**
@@ -108,7 +112,7 @@ Le asserzioni SAML sono firmate e facoltativamente possono essere crittografate.
 
 >[!NOTE]
 >
->I passaggi indicati di seguito sono obbligatori, altrimenti verrà generata la seguente eccezione: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
+>I passaggi indicati di seguito sono obbligatori, in caso contrario verrà generata l&#39;eccezione seguente: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
 1. Vai a: [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Modificate l’ `authentication-service` utente.
@@ -132,7 +136,7 @@ Le asserzioni SAML sono firmate e facoltativamente possono essere crittografate.
 1. Cercare e fare clic sulla voce chiamata Configurazione registro **Apache Sling Logging**
 1. Create un logger con la configurazione seguente:
 
-   * **** Livello registro: Debug
-   * **** File di registro: logs/saml.log
-   * **** Logger: com.adobe.granite.auth.saml
+   * **Livello registro:** Debug
+   * **File di registro:** logs/saml.log
+   * **Logger:** com.adobe.granite.auth.saml
 
