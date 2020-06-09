@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
+source-git-commit: f671e00ad94555346190ecb98c905441ad111e18
 workflow-type: tm+mt
 source-wordcount: '5777'
 ht-degree: 7%
@@ -110,6 +110,7 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con gli elem
          * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito sulla cartella; invece, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.
          * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto ciò che si trova in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
          * **[!UICONTROL Disattivato per le sottocartelle]** - Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici.
+
    >[!NOTE]
    >
    >Non è supportato il controllo delle versioni in DMS7. Inoltre, l’attivazione ritardata si applica solo se l’opzione **[!UICONTROL Pubblica risorse]** della pagina Modifica configurazione Dynamic Media è impostata su **[!UICONTROL All’attivazione]** e soltanto fino alla prima attivazione della risorsa.
@@ -118,7 +119,7 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con gli elem
    >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in diretta su S7 Delivery.
 
 1. Toccate **[!UICONTROL Salva]**.
-1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima di pubblicarlo, è necessario &quot;inserire in una whitelist&quot; l’istanza di creazione di AEM per collegarsi a Contenuti multimediali dinamici:
+1. Per visualizzare in modo sicuro l’anteprima del contenuto multimediale dinamico prima della pubblicazione, dovrete &quot;consentire l’elenco&quot; dell’istanza di creazione di AEM per collegarvi a Contenuti multimediali dinamici:
 
    * Accedete al vostro account Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Le credenziali e l&#39;accesso sono stati forniti da Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
    * Nella barra di navigazione in alto a destra della pagina, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server]** immagini.
@@ -328,7 +329,7 @@ Sebbene l’impostazione di una convenzione di denominazione predefinita non sia
 
 In alternativa, è possibile utilizzare **[!UICONTROL Visualizza codice]** senza campi modulo. In questa visualizzazione potete creare definizioni complete delle convenzioni di denominazione utilizzando espressioni regolari.
 
-Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una convenzione di denominazione individuale di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
+Sono disponibili due elementi per la definizione, Corrispondenza e Nome base. Questi campi consentono di definire tutti gli elementi di una convenzione di denominazione e identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. Una singola convenzione di denominazione di una società può utilizzare una o più righe di definizione per ciascuno di questi elementi. Potete usare tutte le righe necessarie per creare una definizione univoca e raggrupparle in elementi distinti, ad esempio per l’immagine principale, l’elemento colore, l’elemento visualizzazione alternativa e l’elemento campione.
 
 **Per configurare la denominazione predefinita**
 
