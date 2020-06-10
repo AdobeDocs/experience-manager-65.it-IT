@@ -243,7 +243,7 @@ Per salvare le impostazioni:
 
 * Selezionare **OK**
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 ### Crea framework {#create-framework}
 
@@ -308,7 +308,7 @@ La barra laterale non è necessaria e può essere ridotta a icona in modo da non
 
 1. Selezionate **Pubblica**
 
-![chlimage_1-186](assets/chlimage_1-185.png)
+![chlimage_1-185](assets/chlimage_1-185.png)
 
 Il servizio e il framework di Analytics Cloud ora sono completi. Le mappature verranno definite dopo la creazione di un sito community con il servizio Analytics abilitato.
 
@@ -376,7 +376,7 @@ Se vengono creati nuovi componenti personalizzati dotati di strumenti per Analyt
 
 ### Configurazione componente {#component-configuration}
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-185](assets/chlimage_1-186.png)
 
 >[!NOTE]
 >
