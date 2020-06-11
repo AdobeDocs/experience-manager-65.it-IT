@@ -4,99 +4,97 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc423a199e860429e85895690f6c1a81c20d1a19
+source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 4%
+source-wordcount: '1849'
+ht-degree: 2%
 
 ---
 
 
-# Novità in AEM 6.5 Service Pack 5 {#aem-whats-new-service-pack-5}
+# Novità in Adobe Experience Manager 6.5 Service Pack 5 {#aem-whats-new-service-pack-5}
 
-I service pack di Adobe Experience Manager 6.5 offrono nuove funzioni, miglioramenti richiesti dai clienti, prestazioni e miglioramenti relativi alla stabilità a intervalli trimestrali. Il modello di consegna trimestrale semplifica l&#39;accesso e l&#39;adozione di nuove caratteristiche e innovazioni.
+I service pack di Adobe Experience Manager 6.5 offrono nuove funzioni, miglioramenti richiesti dai clienti e miglioramenti a prestazioni, stabilità e sicurezza a intervalli trimestrali. La disponibilità trimestrale semplifica l&#39;accesso e l&#39;adozione di nuove caratteristiche e innovazioni.
 
-In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Service Pack 6.5, le funzioni [chiave incluse nei Service Pack](#key-features-previous-service-packs)6.5 precedenti e alcune delle release [chiave dalla release di Experience Manager 6.5.4.0](#key-features-sice-sp3) .
+In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Service Pack 6.5, le funzioni [chiave incluse nei Service Pack](#key-features-previous-service-packs)6.5 precedenti e alcune delle release [chiave dalla release di Experience Manager 6.5.4.0](#key-releases-since-last-sp) .
 
-## AEM Sites {#aem-sites}
+## Adobe Experience Manager Sites {#aem-sites}
 
 ### Miglioramenti all&#39;accessibilità {#accessibility-sites}
 
-* È stata migliorata la generazione di rapporti sugli errori mediante l’aggiunta di informazioni sul testo
+* È stata migliorata la generazione di rapporti sugli errori mediante l’aggiunta di informazioni di testo.
 
-* È stata migliorata l&#39;interfaccia utente attiva durante la navigazione da tastiera
+* È stato migliorato lo stato attivo dell&#39;interfaccia utente durante la navigazione tramite tastiera.
 
-* Contrasto del testo migliorato (rapporto di luminosità)
+* Rapporto di contrasto migliorato per vari elementi dell&#39;interfaccia utente.
 
-* Miglioramento della coerenza degli attributi alt per le immagini di pagina
+* Miglioramento della coerenza degli attributi alt per le immagini della pagina.
 
-* Miglioramento della coerenza delle etichette delle applicazioni Rich Internet (ARIA) accessibili
+* Miglioramento della coerenza delle etichette delle applicazioni Rich Internet (ARIA) accessibili.
 
-* Funzionalità non visive Desktop Access (NVDA) migliorate
+* Funzionalità non visive Desktop Access (NVDA) migliorate.
 
-* Supporto migliorato per gli assistenti vocali
+* Supporto migliorato per gli assistenti vocali.
 
 ### Altri miglioramenti chiave {#other-enhancements-sites}
 
 * Quando si copia o incolla una struttura ad albero di pagina, è ora possibile incollare la pagina principale o incollare la pagina principale con le relative sottopagine.
 
-* AEM Experience Fragments exported to Adobe Target workspaces now appear as unique offer types and offer sources in [!DNL Target].
+* [!DNL Adobe Experience Manager Experience Fragments] esportati in [!DNL Adobe Target] aree di lavoro ora vengono visualizzati come tipi di offerta univoci e origini di offerta in [!DNL Target].
 
-* Multi Site Manager - L&#39;attivazione della pubblicazione ora elimina correttamente un componente dalla pagina pubblicata se un componente viene eliminato dalla pagina di origine.
+* Multi Site Manager - L&#39;attivazione della pubblicazione ora elimina un componente dalla pagina pubblicata se un componente viene eliminato dalla pagina di origine.
 
-* Multi Site Manager - Se il nome di un componente locale in LiveCopy è identico al nome di un componente nel blueprint e il componente viene implementato dal blueprint, il termine _msm_move viene ora aggiunto correttamente al nome del componente locale.
+* Multi Site Manager - Se il nome di un componente locale in una [!UICONTROL Live Copy] è identico al nome di un componente nel blueprint e il componente viene implementato dal blueprint, il termine `_msm_moved` viene ora aggiunto al nome del componente locale.
 
-## AEM Assets {#aem-assets}
+## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-### Miglioramenti dell’accessibilità in Risorse {#assets-accessibility}
+### Miglioramenti dell&#39;accessibilità in [!DNL Assets] {#assets-accessibility}
 
-[!DNL Adobe Experience Manager] Le funzionalità delle risorse ora sono più accessibili in conformità alle linee guida WCAG (Web Content Accessibility Guidelines). L&#39;accessibilità è stata migliorata nelle seguenti aree:
+[!DNL Experience Manager Assets] è ora più accessibile in conformità con le linee guida WCAG (Web Content Accessibility Guidelines). L&#39;accessibilità è migliorata grazie ai seguenti miglioramenti:
 
-* Gli elementi dell&#39;interfaccia utente, i controlli, le pagine e le finestre di dialogo sono intuitivi per gli assistenti vocali.
+* Molti elementi dell&#39;interfaccia utente, controlli, pagine e finestre di dialogo sono intuitivi per gli assistenti vocali.
 
-* Gli elementi dell&#39;interfaccia utente, i controlli e i campi dei moduli di input sono accessibili tramite tastiera.
+* Molti elementi, controlli e campi modulo di input dell&#39;interfaccia utente sono accessibili tramite tastiera.
 
-* Modifica del colore e del contrasto di alcuni elementi grafici per essere distinguibili dagli utenti con visione limitata e senza percezione del colore. Ad esempio, il colore delle icone di valutazione a stella (ad esempio nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] in [!UICONTROL Proprietà] risorsa o nella vista a schede) viene modificato per il contrasto appropriato.
+* Il rapporto colore e contrasto di alcuni elementi dell&#39;interfaccia utente viene aggiornato in modo che gli utenti con visione limitata o senza percezione del colore possano distinguere questi elementi dell&#39;interfaccia utente. Ad esempio, il colore delle icone di valutazione a stella (ad esempio nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] in [!UICONTROL Proprietà] risorsa o nella vista a schede) viene modificato per il contrasto appropriato.
 
-![colore delle icone di valutazione a stella modificate per migliorare il contrasto](assets/star-rating-icons.png)
+   ![Icone di valutazione con rapporto di contrasto migliorato](assets/star-rating-icons.png)
 
 ### Gestione delle eccezioni migliorata {#exception-handling}
 
-Il flusso dell’interfaccia utente Assets offre una migliore gestione delle eccezioni. Precedentemente, se una risorsa non aveva il tipo appropriato per la sua dimensione, veniva rilevata un’eccezione catturata in modo invisibile, senza traccia nei registri. Questo comportamento è cambiato e tutte le eccezioni sono rilevate nei registri.
+[!DNL Assets] il flusso dell&#39;interfaccia utente offre una migliore gestione delle eccezioni. Se una risorsa non ha un tipo per la sua dimensione, l&#39;eccezione osservata viene registrata nei file di registro.
 
-## [!DNL Dynamic Media] {#dynamic-media}
+### Supporto per risorse 3D in [!DNL Dynamic Media] {#support-for-3d}
 
-### Supporto 3D in [!DNL Dynamic Media] {#support-for-3d}
+Il supporto per le immagini 3D in [!DNL Dynamic Media] consente ai clienti di pubblicare e aggiungere contenuti 3D a pagine Web e applicazioni. Il supporto include:
 
-Il supporto 3D in [!DNL Dynamic Media] ora consente ai clienti di pubblicare e aggiungere contenuto 3D a pagine Web e applicazioni. Include:
+* Pubblicate i formati di risorse 3D più comuni e generate un URL di risorse che può essere utilizzato nelle pagine Web e in altre applicazioni.
 
-* Pubblicazione di formati di risorse 3D comuni per generare un URL di risorsa.
+* Visualizzatore Web 3D, basato su [!DNL Adobe Dimension], per visualizzare in modo interattivo le risorse 3D pubblicate.
 
-* Visualizzazione interattiva delle risorse 3D pubblicate tramite un nuovo visualizzatore Web 3D disponibile nella libreria del [!DNL Dynamic Media] visualizzatore, basato su Adobe Dimension.
+* Pubblicate e visualizzate le risorse 3D comuni sulle [!DNL Experience Manager Sites] pagine mediante il componente [!DNL Sites] WCM.
 
-* Pubblicazione e visualizzazione in 3D sulla [!DNL Experience Manager Sites] pagina mediante il componente [!DNL Sites] WCM.
+## Adobe Experience Manager Forms {#aem-forms}
 
-## AEM Forms {#aem-forms}
+### Personalizzare le colonne Inbox di Adobe Experience Manager {#customize-aem-inbox-columns}
 
-### Personalizzare le colonne Inbox di AEM {#customize-aem-inbox-columns}
+È possibile personalizzare una [!DNL Experience Manager] casella in entrata per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro. I membri `administrators` o i `workflow-administrators` gruppi possono personalizzare le colonne.
 
-Potete personalizzare una Casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare ulteriori colonne in base ai dati di un flusso di lavoro. È membro `administrators` o `workflow-administrators` gruppo per personalizzare le colonne.
-
-![Personalizzare le colonne Inbox di AEM](assets/customize-columns.gif)
+![Personalizzare le colonne Inbox di Experience Manager](assets/customize-columns.gif)
 
 ### Salva le comunicazioni interattive come bozza {#save-as-draft}
 
-È possibile utilizzare l&#39;interfaccia utente agente per salvare una o più bozze per ogni comunicazione interattiva e recuperare la bozza in un secondo momento per continuare a lavorarci. È possibile specificare un nome diverso per ciascuna bozza per facilitarne l&#39;identificazione.
+È possibile utilizzare l&#39;interfaccia utente agente per salvare una o più bozze per ogni comunicazione interattiva e recuperare la bozza in un secondo momento per continuare a lavorarci. È possibile specificare un nome diverso per ciascuna bozza per identificarla.
 
 ![Salva come bozza](assets/save-as-draft.gif)
 
 ### [!DNL Oracle WebLogic] supporto del server applicazioni {#weblogic-support}
 
-AEM Forms ha aggiunto il supporto per AEM Forms su JEE. [!DNL Oracle WebLogic 12] È possibile effettuare l’aggiornamento da una versione precedente o impostare un nuovo AEM 6.5 Forms sul server JEE sulla versione [!DNL Oracle WebLogic] 12.2.1.4 e versioni successive. Successivamente corrisponde alle modifiche minori, dove x in 12.2.1.x viene sostituito con un numero di versione.
+Adobe Experience Manager Forms ha aggiunto il supporto per Adobe Experience Manager Forms su JEE. [!DNL Oracle WebLogic 12] È possibile effettuare l&#39;aggiornamento da una versione precedente o impostare un nuovo modulo Experience Manager 6.5 sul server JEE sulla versione [!DNL Oracle WebLogic] 12.2.1.4 e versioni successive. Successivamente corrisponde alle modifiche minori, dove x in 12.2.1.x viene sostituito con un numero di versione.
 
 ### Miglioramenti all&#39;accessibilità {#accessibility-improvements}
 
-AEM Forms include i seguenti miglioramenti a livello di accessibilità:
+Adobe Experience Manager Forms include i seguenti miglioramenti a livello di accessibilità:
 
 * Quando un utente visualizza l&#39;anteprima di un modulo adattivo come modulo HTML, il campo Firma  scarabocchio mantiene lo stato attivo.
 
@@ -110,13 +108,13 @@ Il modello di dati del modulo ora supporta l&#39;autenticazione basata sui certi
 
 ### Altri miglioramenti chiave {#other-improvements}
 
-* AEM 6.5 Forms su JEE Document Security ora è basato su [!DNL Apache Struts 2].
+* Experience Manager 6.5 Forms su JEE Document Security ora è basato su [!DNL Apache Struts 2].
 
 * È stato aggiunto il supporto per [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
-## Funzioni principali nei precedenti Service Pack di AEM 6.5 {#key-features-previous-service-packs}
+## Funzioni principali dei Service Pack precedenti di Experience Manager 6.5 {#key-features-previous-service-packs}
 
-### AEM Sites {#aem-sites-previous-service-packs}
+### Experience Manager - Sites {#aem-sites-previous-service-packs}
 
 #### Miglioramenti di Style System (6.5.4.0) {#style-system-enhancements}
 
@@ -124,39 +122,37 @@ Il modello di dati del modulo ora supporta l&#39;autenticazione basata sui certi
 
 #### Miglioramenti delle prestazioni in varie aree (6.5.4.0) {#performance-improvements}
 
-* È stato ridotto il tempo necessario per caricare e inizializzare ContextHub in un sito (`contexthub.kernel.js`). Ne risulta un caricamento più rapido delle pagine durante una visita del sito.
+* Riduzione del tempo necessario per caricare e inizializzare ContextHub all&#39;interno di un sito (`contexthub.kernel.js`). Ne risulta un caricamento più rapido delle pagine durante una visita del sito.
 
-* È stato ridotto il tempo necessario per aggiornare una pagina dopo aver trascinato i frammenti esperienza nell’Editor pagina Siti.
+* È stato ridotto il tempo necessario per aggiornare una pagina dopo il trascinamento [!DNL Experience Fragments] nell’Editor [!DNL Sites] pagina.
 
-* È stato ridotto il tempo di caricamento delle voci in una pagina Siti con più di 200 copie dal vivo in Panoramica **** Live Copy.
+* È stato ridotto il tempo di caricamento per le voci in una [!DNL Sites] pagina con più di 200 copie in diretta nella panoramica **** Live Copy.
 
-* Gestione migliorata degli URL incompleti o non validi. Tali URL possono rallentare l’Editor modelli.
+* Gestione migliorata degli URL incompleti o non validi. Tali URL possono rallentare l&#39;Editor modelli.
 
-### AEM Assets {#aem-assets-previous-service-packs}
+### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
 
-#### Configure AEM Assets with Brand Portal (6.5.4.0) {#configure-assets-bp}
+#### Configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Il canale di autorizzazione tra Risorse AEM e Portale marchio viene modificato. Precedentemente, Brand Portal era stato configurato nell’interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l’autorizzazione. AEM Assets è ora configurato con Brand Portal tramite Adobe I/O, che fornisce un token IMS per l&#39;autorizzazione del tenant del Brand Portal.
+Il canale di autorizzazione tra [!DNL Experience Manager Assets] e [!DNL Brand Portal] viene modificato. Precedentemente, [!DNL Brand Portal] era stato configurato nell&#39;interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l&#39;autorizzazione. [!DNL Experience Manager Assets] è ora configurato con [!DNL Brand Portal] tramite Adobe I/O, che fornisce un token IMS per l&#39;autorizzazione del [!DNL Brand Portal] tenant.
 
-I passaggi per configurare Risorse AEM con Portale marchio variano a seconda della versione di AEM in uso e se si sta configurando per la prima volta o si stanno aggiornando le configurazioni esistenti. Per informazioni dettagliate, consultate [Configurare AEM Assets con il Portale](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) marchio.
+I passaggi da configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] sono diversi a seconda della [!DNL Experience Manager] versione in uso e se si sta configurando per la prima volta, oppure se si desidera aggiornare le configurazioni esistenti. Per informazioni dettagliate, consultate [Configurare le risorse Experience Manager con il Brand Portal](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) .
 
 #### Accessibility enhancements (6.5.4.0) {#accessibility-enhancements}
 
-Experience Manager Assets include i seguenti miglioramenti a livello di accessibilità:
+[!DNL Experience Manager Assets] include i seguenti miglioramenti dell&#39;accessibilità:
 
 * I tasti freccia sulla tastiera possono essere utilizzati per spostare e scorrere le aree all&#39;interno delle immagini ingrandite. Per ulteriori informazioni, consultate [Anteprima delle risorse solo](../assets/managing-assets-touch-ui.md#previewing-assets)con i tasti di scelta rapida.
 
 * Le caselle di controllo dello stato misto (in cui, a meno che non si selezionino tutti i predicati nidificati, le caselle di controllo di primo livello non vengono selezionate e vengono evidenziate) nel pannello Filtri sono leggibili dagli assistenti vocali.
 
-* Le limitazioni relative al formato di data e ora sono fornite nelle etichette dei campi data, per consentire agli utenti di immettere la data nel formato corretto utilizzando la tastiera.
+* Le limitazioni relative al formato di data e ora sono fornite nelle etichette dei campi data, per consentire agli utenti di immettere la data nel formato corretto utilizzando la tastiera. Esempio, `On Time (MM-DD-YYYY HH:mm)`. Qui MM è mese in formato a due cifre, AAAA è anno, GG è giorno in formato a due cifre, HH è ora in formato militare a 24 ore e mm è minuto.
 
-   Esempio, `On Time (MM-DD-YYYY HH:mm)`. Qui MM è mese in formato a due cifre, AAAA è anno, GG è giorno in formato a due cifre, HH è ora in formato militare a 24 ore e mm è minuto.
+* Gli assistenti vocali annunciano il `X` simbolo per rimuovere i tag selezionati e il numero dei tag selezionati.
 
-* Il `X` simbolo sul pulsante per rimuovere i tag attualmente selezionati viene ora annunciato dagli assistenti vocali insieme al numero di tag selezionati.
+#### Ricerca visiva per [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
-#### Ricerca visiva di Risorse AEM (6.5.2.0) {#visual-search}
-
-Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di Assets. Dall’archivio DAM, AEM visualizza le immagini con tag avanzati che risultano simili a quelle selezionate dall’utente. See [Visual search](../assets/search-assets.md).
+[!DNL Assets]Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di Experience Manager visualizza dall&#39;archivio DAM le immagini con tag avanzati simili a quelle selezionate dall&#39;utente. See [Visual search](../assets/search-assets.md).
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
@@ -168,29 +164,29 @@ Le immagini intelligenti utilizzano le caratteristiche di visualizzazione esclus
 
 La funzione di ritaglio avanzato per i video, una funzione opzionale disponibile nei profili video, è uno strumento che utilizza l&#39;intelligenza artificiale di Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o progressivo caricato, indipendentemente dalle dimensioni. Consultate [Utilizzo del ritaglio avanzato nei profili](../assets/video-profiles.md)video.
 
-### AEM Forms {#aem-forms-previous-service-packs}
+### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Genera output stampabile nei flussi di lavoro AEM Forms (6.5.4.0) {#generate-printable-output}
+#### Genera output stampabile nei flussi di lavoro Experience Manager Forms (6.5.4.0) {#generate-printable-output}
 
 Il passaggio del flusso di lavoro Genera output stampabile consente di integrare un file modello sorgente con un file di dati. Questa integrazione consente di stampare o salvare copie diverse del file modello. Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL. Per ulteriori informazioni su questa funzione, vedere [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
 
 ![Genera output stampabile](assets/generate-print-output-step.gif)
 
-#### Supporto di più colonne per moduli adattivi e comunicazioni interattive in modalità Layout (6.5.4.0) {#multi-column-adaptive-forms}
+#### Supporto a più colonne per moduli adattivi e comunicazioni interattive in modalità Layout (6.5.4.0) {#multi-column-adaptive-forms}
 
 È ora possibile definire il numero di colonne per un pannello nei moduli adattivi e nelle comunicazioni interattive. Passate alla modalità di layout per utilizzare la nuova opzione a più colonne. Per ulteriori informazioni, vedere [Uso della modalità Layout per ridimensionare i componenti](../forms/using/resize-using-layout-mode.md).
 
 ![Layout a più colonne](assets/multi-column-layout.gif)
 
-#### Personalizzazioni della inbox AEM (6.5.4.0) {#aem-inbox}
+#### Personalizzazioni di Experience Manager Inbox (6.5.4.0) {#aem-inbox}
 
 La nuova opzione Controllo amministratore consente agli amministratori di:
 
-* Personalizzare il testo dell’intestazione e il logo
+* Personalizzare il testo dell’intestazione e il logo.
 
-* Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
+* Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L’opzione Controllo amministratore è visibile solo ai membri del gruppo Amministratori o Amministratori di workflow. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
@@ -204,7 +200,7 @@ Experience Manager Forms include i seguenti miglioramenti a livello di accessibi
 
 * Ogni pagina di un modulo adattivo ora include un titolo e un’etichetta con il punto di riferimento principale.
 
-#### Condivisione e richiesta dell&#39;accesso agli elementi in entrata di un utente AEM Forms (6.5.3.0) {#share-request-access}
+#### Condivisione e richiesta dell’accesso agli elementi in entrata di un utente Experience Manager Forms (6.5.3.0) {#share-request-access}
 
 È possibile condividere gli elementi Inbox con un altro utente. Quando un altro utente accede agli elementi della Casella in entrata, può richiedere e intervenire sugli elementi condivisi. Allo stesso modo, potete richiedere l’accesso agli elementi della casella in entrata ad altri utenti. Consultate [Condividere e richiedere l’accesso agli elementi in entrata di un utente](../forms/using/configure-shared-queues-osgi.md).
 
@@ -217,20 +213,21 @@ Se prevedete di uscire dall&#39;ufficio, potete specificare cosa accade agli ele
 
 Potete utilizzare l&#39;API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L&#39;API Batch combina i dati con un modello per produrre una comunicazione interattiva. L&#39;API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto della carta di credito per più clienti. Consultate [Generare più comunicazioni interattive utilizzando l&#39;API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
-## Versioni principali da AEM 6.5 SP4 {#key-releases-since-last-sp}
+## Versioni principali da Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
 
-Tra il 5 marzo 2020 e il 4 giugno 2020, Adobe ha rilasciato le seguenti funzionalità che non rientrano nel risultato finale di AEM:
+Tra il 5 marzo 2020 e il 4 giugno 2020, Adobe ha rilasciato quanto segue, oltre ai Service Pack e ai fix pack cumulativi:
 
-* AEM Cloud Manager [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)e [2020.5.0](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+* [Il portale](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) di distribuzione software è disponibile per scaricare i Service Pack di Experience Manager, i fix pack cumulativi, le hotfix e i pacchetti di funzionalità.
 
-* [Risorse AEM: Desktop App 2.0.2.0](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/release-notes.html)
+* [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)e [2020.5.0](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
 
-* [AEM Screens: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html)
+* [App desktop Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/release-notes.html).
 
-## Risorse utili
+* [Schermi Experience Manager: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
-* [Guide utente di AEM 6.5](../user-guide/home.md)
+>[!MORELIKETHIS]
+>
+>* [Documentazione di Adobe Experience Manager 6.5](../user-guide/home.md)
+>* [Note generali sulla versione di Adobe Experience Manager 6.5](release-notes.md)
+>* [Note sulla versione del Service Pack per Adobe Experience Manager 6.5](sp-release-notes.md)
 
-* [Note generali sulla versione per Adobe Experience Manager 6.5](release-notes.md)
-
-* [Note sulla versione di Service Pack per Adobe Experience Manager 6.5](sp-release-notes.md)
