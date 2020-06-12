@@ -3,9 +3,9 @@ title: Considerazioni e requisiti di rete delle risorse
 description: Considerazioni sulla rete durante la progettazione di una distribuzione di Risorse Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ I firewall e i proxy Enterprise possono inoltre modellare la larghezza di banda 
 
 In questo esempio, l&#39;azienda dispone di un collegamento di 10 Gbps. Dovrebbe essere sufficientemente grande per diversi clienti. Inoltre, il firewall impone un limite di velocità host di 10 Mbps. Questa limitazione può limitare il traffico a un singolo host a 10 Mbps, anche se il collegamento a Internet è a 10 Gbps.
 
-Questo è il più piccolo punto di strozzatura orientato al cliente. Tuttavia, è possibile valutare la possibilità di apportare modifiche o inserire in una whitelist il gruppo di operazioni di rete responsabile di questo firewall.
+Questo è il più piccolo punto di strozzatura orientato al cliente. Tuttavia, è possibile valutare la presenza di una modifica o configurare un elenco consentito con il gruppo di operazioni di rete responsabile di questo firewall.
 
 Dai diagrammi di esempio, potete concludere che sei dispositivi condividono un canale concettuale a 10 Mbps. A seconda delle dimensioni delle risorse utilizzate, ciò potrebbe risultare inadeguato per soddisfare le aspettative degli utenti.
 
 ## Topologia dell&#39;ambiente Experience Manager {#topology-of-the-aem-environment}
 
-![chlimage_1-354](assets/chlimage_1-356.png)
+![chlimage_1-356](assets/chlimage_1-356.png)
 
 La progettazione della topologia dell&#39;ambiente Experience Manager richiede una conoscenza dettagliata della configurazione del sistema e della modalità di connessione della rete all&#39;interno dell&#39;ambiente dell&#39;utente.
 
-Lo scenario di esempio include una farm di pubblicazione con cinque server, uno store binario S3 e un file multimediale dinamico configurato.
+Lo scenario di esempio include una farm di pubblicazione con cinque server, uno store binario S3 e un elemento multimediale dinamico configurato.
 
 Il dispatcher condivide una connessione di 100 Mbps con due entità, il mondo esterno e l’istanza Experience Manager. Per le operazioni di caricamento e scaricamento simultanee, dividete questo numero per due. L&#39;archivio esterno collegato utilizza una connessione separata.
 
@@ -78,7 +78,7 @@ Se si esamina la rete dal dispositivo client all’istanza Experience Manager, i
 
 ## Flussi di lavoro definiti per l’istanza Experience Manager {#defined-workflows-of-the-aem-instance}
 
-Quando si considerano le prestazioni della rete, potrebbe essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, l&#39;archiviazione S3 o altra rete collegata utilizzata e le richieste di I/O richiedono una larghezza di banda di rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
+Quando si considerano le prestazioni della rete, potrebbe essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, lo storage collegato in rete S3 o di altro tipo utilizzato e le richieste di I/O utilizzano la larghezza di banda della rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
 
 Per semplificare i processi relativi all’assimilazione delle risorse (in particolare durante il caricamento di un gran numero di risorse), esplora i flussi di lavoro delle risorse e scopri di più sulla loro configurazione.
 
