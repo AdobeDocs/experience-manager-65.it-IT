@@ -3,7 +3,7 @@ title: Organizzazione delle risorse digitali
 description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Un profilo di elaborazione contiene i comandi di elaborazione delle risorse appl
 
 La standardizzazione dell’utilizzo dei metadati, della denominazione dei file e della struttura delle cartelle garantisce che, con la crescita del pool di risorse digitali, i profili di elaborazione possano essere applicati alle cartelle con maggiore precisione e coerenza.
 
-Per ulteriori informazioni sui diversi profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
+Per ulteriori informazioni sui vari profili che puoi creare e gestire per l’elaborazione delle risorse, vedi
 
 * [Profili per elaborare metadati, immagini e video](processing-profiles.md)
 * [Profili metadati](metadata-profiles.md)
