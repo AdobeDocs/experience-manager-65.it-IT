@@ -3,9 +3,9 @@ title: Best practice per l'integrazione [!DNL Adobe Experience Manager] e Adobe 
 description: Procedure ottimali per l’ [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrazione, per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere un’elevata velocità dei contenuti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3249'
 ht-degree: 17%
 
 ---
@@ -107,7 +107,7 @@ Alcuni punti importanti su questa integrazione:
 * La risorsa salvata in [!DNL Experience Manager] è una copia, non un collegamento in [!DNL Adobe Stock].
 
 **Utilizzo delle risorse salvate da[!DNL Adobe Stock]in[!DNL Experience Manager]in[!DNL Creative Cloud]**. Questa integrazione è indipendente da[!DNL Adobe Asset Link], ma[!DNL Adobe Asset Link]riconosce le risorse salvate in[!DNL Stock]quel modo e visualizza metadati e icone aggiuntivi su tali risorse nell’interfaccia utente delle[!DNL Stock]estensioni in[!DNL Adobe Asset Link],[!DNL Photoshop]o[!DNL Illustrator][!DNL InDesign]. I file sono disponibili per la navigazione, l’apertura e così via, poiché sono risorse normali al momento del salvataggio in[!DNL Experience Manager].
-Gli utenti creativi che lavorano nelle[!DNL Creative Cloud]app con[!DNL Adobe Asset Link]estensione presente, oltre ad avere accesso alle risorse già concesse in licenza da[!DNL Adobe Stock]a[!DNL Experience Manager], possono anche utilizzare il pannello[!DNL Creative Cloud]Librerie per cercare, visualizzare in anteprima e concedere in licenza[!DNL Adobe Stock]le risorse.[!DNL Assets]da[!DNL Adobe Stock]concesso in licenza e salvato in[!DNL Experience Manager]diventano disponibili per i team più grandi che accedono alla[!DNL Experience Manager Assets]distribuzione, mentre i creativi che dispongono di licenze per le risorse[!DNL Adobe Stock]tramite il pannello[!DNL Creative Cloud]Librerie le rendono disponibili a se stessi solo per impostazione predefinita nel loro[!DNL Creative Cloud]account.
+Gli utenti creativi che lavorano nelle[!DNL Creative Cloud]app con[!DNL Adobe Asset Link]estensione presente, oltre ad avere accesso alle risorse già concesse in licenza da[!DNL Adobe Stock]a[!DNL Experience Manager], possono anche utilizzare il pannello[!DNL Creative Cloud]Librerie per cercare, visualizzare in anteprima e concedere in licenza[!DNL Adobe Stock]le risorse.[!DNL Assets]da[!DNL Adobe Stock]licenza e salvato in[!DNL Experience Manager]diventano disponibili per i team più grandi che accedono alla[!DNL Experience Manager Assets]distribuzione, mentre i creativi che dispongono di licenze per le risorse[!DNL Adobe Stock]tramite il pannello[!DNL Creative Cloud]Librerie le rendono disponibili a se stessi solo per impostazione predefinita nel loro[!DNL Creative Cloud]account.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM article.
@@ -160,7 +160,7 @@ Di seguito sono riportati alcuni esempi di aggiornamenti generalmente non rileva
 
 #### Utenti creativi con accesso diretto a DAM {#creative-users-with-direct-access-to-dam}
 
-In genere, i team creativi interni o le agenzie/i professionisti creativi caricati sulla rete interna hanno accesso all&#39;istanza DAM, incluso il [!DNL Experience Manager] login. [!DNL Experience Manager] e l&#39;infrastruttura di rete può essere impostata per consentire l&#39;accesso diretto a parti esterne, in genere organizzazioni affidabili come agenzie che lavorano per un cliente, di avere accesso a [!DNL Experience Manager] una rete, ad esempio tramite VPN o whitelist IP.
+In genere, i team creativi interni o le agenzie/i professionisti creativi caricati sulla rete interna hanno accesso all&#39;istanza DAM, incluso il [!DNL Experience Manager] login. [!DNL Experience Manager] e l&#39;infrastruttura di rete può essere impostata per consentire l&#39;accesso diretto alle parti esterne, in genere organizzazioni affidabili come le agenzie che lavorano per un cliente, per avere accesso a [!DNL Experience Manager] una rete, ad esempio tramite VPN o elenco di indirizzi IP consentiti.
 
 In tali casi, Adobe Asset Link o l’app [!DNL Experience Manager] desktop consente di accedere facilmente alle risorse finali/approvate e consente di salvare le risorse pronte per la creazione in DAM.
 
@@ -173,7 +173,7 @@ Utilizzate le seguenti strategie per fornire l&#39;accesso alle risorse finali/a
 * Utilizzate l’app desktop se il collegamento risorsa non funziona.
 * Utilizzare [Experience Manager Assets Brand Portal](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html) per distribuire le risorse in modo sicuro ai partner esterni
 * Utilizzare un&#39;implementazione personalizzata di un portale di distribuzione e determinazione origine basato su [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilizza il controllo degli accessi impostato nell&#39;infrastruttura di rete [!DNL Experience Manager] e nelle infrastrutture necessarie (ad esempio, whitelist VPN e IP) per consentire alle parti esterne di accedere a un&#39;area dedicata di contenuto nel tuo DAM. Possono utilizzare l&#39;interfaccia [!DNL Experience Manager] Web per ottenere risorse e caricare nuovi contenuti in DAM.
+* Utilizza il controllo degli accessi impostato nell&#39;infrastruttura di rete [!DNL Experience Manager] e nell&#39;elenco delle infrastrutture di rete necessarie (ad esempio, VPN e IP consentite) per consentire alle parti esterne di accedere a un&#39;area dedicata di contenuto nel tuo DAM. Possono utilizzare l&#39;interfaccia [!DNL Experience Manager] Web per ottenere risorse e caricare nuovi contenuti in DAM.
 
 #### Lavoro in corso sulle risorse da [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
