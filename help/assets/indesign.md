@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesi
 description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,7 @@ Questo script di comando:
       * Vengono generate rappresentazioni PDF e JPG.
       * Vengono generate rappresentazioni HTML e IDML.
    * Ripubblica i file risultanti in [!DNL Experience Manager Assets].
+
    >[!NOTE]
    >
    >IDML è un formato basato su XML che esegue il rendering di tutti i contenuti del [!DNL InDesign] file. Viene memorizzato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip) . Per ulteriori informazioni, consultate [InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)(Formati di interscambio InDesign INX e IDML).
@@ -194,18 +195,19 @@ Per configurare il numero di processi IDS paralleli:
 
    Se sono in esecuzione più computer [!DNL InDesign Server], aggiungere endpoint SOAP (numero di processori per computer -1) per ogni computer.
 
-   >[!NOTE]
-   >
-   >È possibile scegliere di abilitare l&#39;inserimento in blacklist dei lavoratori IDS quando si lavora con un pool di lavoratori.
-   >
-   >
-   >A tal fine, abilitare la casella di controllo **[!UICONTROL enable.try.name]** , nella `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione, che consente di recuperare i processi IDS.
-   >
-   >
-   >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
-   >
-   >
-   >Per impostazione predefinita, dopo l’ora configurabile (retry.interval.to.whitelist.name) in minuti, il lavoro IDS viene nuovamente convalidato. Se il lavoratore viene trovato online, viene rimosso dalla lista nera.
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
+>[!NOTE]
+>
+>Quando si lavora con un pool di lavoratori, è possibile abilitare l&#39;elenco bloccato di lavoratori IDS.
+>
+>A tal fine, abilitare la casella di controllo **[!UICONTROL enable.try.name]** , nella `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione, che consente di recuperare i processi IDS.
+>
+>Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
+>
+>Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoratore IDS viene riconvalidato. Se il lavoratore viene trovato in linea, viene rimosso dall&#39;elenco bloccato.
 
 ## Abilita il supporto per la versione [!DNL InDesign Server] 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
 
