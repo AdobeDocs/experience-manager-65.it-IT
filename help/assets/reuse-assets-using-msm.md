@@ -1,31 +1,34 @@
 ---
-title: Riutilizzate le risorse utilizzando MSM per [!DNL Risorse Adobe Experience Manager].
+title: Riutilizzate le risorse utilizzando MSM per [!DNL Adobe Experience Manager Assets].
 description: Utilizzate le risorse tra più pagine/cartelle derivate e collegate alle risorse principali. Le risorse restano sincronizzate con una copia principale e, con pochi clic, ricevono gli aggiornamenti dalle risorse principali.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+workflow-type: tm+mt
+source-wordcount: '3367'
+ht-degree: 11%
 
 ---
 
 
-# Riutilizzare le risorse con MSM per [!DNL Assets]{#reuse-assets-using-msm-for-assets}
+# Riutilizzare le risorse con MSM per [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 La funzionalità Multi Site Manager (MSM) [!DNL Adobe Experience Manager] consente agli utenti di riutilizzare il contenuto creato una volta e riutilizzato in più posizioni Web. Lo stesso è disponibile per le risorse digitali come MSM per [!DNL Assets] le funzionalità. Utilizzando MSM per [!DNL Assets]:
 
 * Create una volta e quindi copiate le risorse da riutilizzare in altre aree del sito.
-* Mantenete più copie in sincronizzazione e aggiornate la copia master originale una volta per inviare le modifiche alle copie figlio.
+* Mantenete più copie in sincronizzazione e aggiornate la copia principale originale una volta per inviare le modifiche alle copie figlio.
 * Apportate modifiche locali sospendendo temporaneamente o permanentemente il collegamento tra risorse padre e risorse figlio.
 
 ## Prerequisiti {#configprereq}
 
-Per utilizzare MSM per [!DNL Assets], installate almeno Service Pack 1. Per ulteriori informazioni, consulta [le note](/help/release-notes/sp-release-notes.md)sulla versione.
+Per utilizzare MSM per [!DNL Assets], installare almeno Service Pack 1. Per ulteriori informazioni, consulta [le note](/help/release-notes/sp-release-notes.md)sulla versione.
 
 ## Comprendere i vantaggi e i concetti {#concepts}
 
 ### Come funziona e vantaggi {#how-it-works-and-the-benefits}
 
-Per comprendere gli scenari di utilizzo per riutilizzare lo stesso contenuto (testo e risorse) in più posizioni Web, consultate [possibili scenari](/help/sites-administering/msm.md)MSM. [!DNL Experience Manager] mantiene un collegamento tra la risorsa originale e le relative copie collegate, denominate Live Copy (LC). Il collegamento mantenuto consente di trasferire le modifiche centralizzate a molte copie dal vivo. Questo consente di velocizzare gli aggiornamenti eliminando i limiti di gestione delle copie duplicate. La propagazione delle modifiche è senza errori e centralizzata. Questa funzione consente di aggiornare le copie in diretta selezionate. Gli utenti possono scollegare il collegamento, ossia interrompere l’ereditarietà, e apportare modifiche locali che non verranno sovrascritte al successivo aggiornamento della copia master e al rollout delle modifiche. Lo scollegamento può essere eseguito per alcuni campi di metadati selezionati o per un’intera risorsa. Consente di aggiornare localmente le risorse che sono state originariamente ereditate da una copia master.
+Per comprendere gli scenari di utilizzo per riutilizzare lo stesso contenuto (testo e risorse) in più posizioni Web, consultate [possibili scenari](/help/sites-administering/msm.md)MSM. [!DNL Experience Manager] mantiene un collegamento tra la risorsa originale e le relative copie collegate, denominate Live Copy (LC). Il collegamento mantenuto consente di trasferire le modifiche centralizzate a molte copie dal vivo. Questo consente di velocizzare gli aggiornamenti eliminando i limiti di gestione delle copie duplicate. La propagazione delle modifiche è senza errori e centralizzata. Questa funzione consente di aggiornare le copie in diretta selezionate. Gli utenti possono scollegare il collegamento, ossia interrompere l’ereditarietà, e apportare modifiche locali che non verranno sovrascritte al successivo aggiornamento della copia principale e al rollout delle modifiche. Lo scollegamento può essere eseguito per alcuni campi di metadati selezionati o per un’intera risorsa. Consente la flessibilità di aggiornare localmente le risorse che sono state originariamente ereditate da una copia principale.
 
 MSM mantiene una relazione live tra la risorsa di origine e le sue copie in tempo reale in modo che:
 
@@ -61,7 +64,7 @@ Per creare una Live Copy da una o più risorse o cartelle sorgente, effettuate l
 * Metodo 1: Selezionate le risorse sorgente e fate clic su **[!UICONTROL Crea > Live Copy]** dalla barra degli strumenti nella parte superiore.
 * Metodo 2: Nell&#39;interfaccia [!DNL Experience Manager] utente, fate clic su **[!UICONTROL Crea > Live Copy]** nell&#39;angolo superiore destro dell&#39;interfaccia.
 
-Potete creare copie live di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati come accade senza alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+Potete creare copie live di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
 
 Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
@@ -277,7 +280,7 @@ Se in una cartella di Live Copy sono presenti più risorse, l’avvio di azioni 
 
    *Figura: Aggiornate facilmente molte risorse nelle cartelle Live Copy dalla console PanoramicaLive Copy.*
 
-## Estendi MSM per [!DNL Assets]{#extendapi}
+## Estendi MSM per [!DNL Assets] {#extendapi}
 
 [!DNL Experience Manager] consente di estendere la funzionalità tramite le API Java MSM. Ad [!DNL Assets]esempio, l&#39;estensione funziona esattamente come funziona con MSM per [!DNL Sites]. Per informazioni dettagliate, consultate [Estensione dell&#39;MSM](/help/sites-developing/extending-msm.md) e i seguenti argomenti per informazioni su attività specifiche:
 
@@ -304,7 +307,7 @@ Le copie e le origini dal vivo sono risorse o cartelle che possono essere gestit
 * Per la cartella di origine, è disponibile l&#39;opzione per creare le attività di revisione.
 * Quando visualizzate l’elenco delle risorse nelle viste a elenco e a colonne, viene visualizzata una risorsa o una cartella Live Copy con il comando Live Copy. Questo consente di identificare facilmente le copie dal vivo in una cartella.
 
-## Confronta MSM per [!DNL Assets] e [!DNL Sites]{#comparison}
+## Confronta MSM per [!DNL Assets] e [!DNL Sites] {#comparison}
 
 In altri scenari, MSM per [!DNL Assets] corrisponde al comportamento di MSM per la funzionalità Sites. Alcune delle principali differenze da sottolineare sono:
 
@@ -322,7 +325,7 @@ Alcune best practice per MSM sono:
 
 * Pianificate le relazioni padre-figlio dei flussi di risorse e contenuti prima di avviare l&#39;implementazione.
 
-## Limitazioni e problemi noti di MSM per [!DNL Assets]{#limitations}
+## Limitazioni e problemi noti di MSM per [!DNL Assets] {#limitations}
 
 Di seguito è riportata una limitazione di MSM per [!DNL Assets].
 
