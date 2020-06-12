@@ -3,7 +3,7 @@ title: Preparare le risorse per la traduzione
 description: Create le cartelle principali della lingua per preparare le risorse da tradurre e supportare le risorse multilingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -19,7 +19,7 @@ In Risorse Adobe Experience Manager, le risorse in più lingue sono incluse nell
 
 Ogni cartella lingua è denominata copia per lingua. La cartella principale di una copia della lingua, nota come radice della lingua, identifica la lingua del contenuto nella copia della lingua. Ad esempio, */content/dam/it* è la radice della lingua italiana per la copia in lingua italiana. Le copie della lingua devono utilizzare una radice [della lingua configurata](preparing-assets-for-translation.md#creating-a-language-root) correttamente, in modo che venga utilizzata la lingua corretta quando vengono eseguite le traduzioni delle risorse di origine.
 
-La copia per la lingua per la quale avete aggiunto originariamente delle risorse è la lingua principale. Il master lingua è l&#39;origine tradotta in altre lingue. Una gerarchia di cartelle di esempio include diverse origini di lingua:
+La copia per la lingua per la quale avete aggiunto originariamente le risorse è la lingua principale. La lingua primaria è l&#39;origine tradotta in altre lingue. Una gerarchia di cartelle di esempio include diverse origini di lingua:
 
 ```
  /content
@@ -35,9 +35,9 @@ La copia per la lingua per la quale avete aggiunto originariamente delle risorse
 
 Per preparare le risorse alla conversione, effettuate le seguenti operazioni:
 
-1. Creare la radice della lingua del master della lingua. Ad esempio, la radice della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Verificare che la radice della lingua sia configurata correttamente in base alle informazioni contenute in [Creare una radice](preparing-assets-for-translation.md#creating-a-language-root)della lingua.
+1. Creare la radice della lingua della lingua principale. Ad esempio, la radice della lingua della copia in lingua inglese nella gerarchia delle cartelle di esempio è `/content/dam/en`. Verificare che la radice della lingua sia configurata correttamente in base alle informazioni contenute in [Creare una radice](preparing-assets-for-translation.md#creating-a-language-root)della lingua.
 
-1. Aggiungete le risorse al modulo master della lingua.
+1. Aggiungere risorse alla lingua principale.
 1. Create la radice della lingua di ciascuna lingua di destinazione per la quale è necessaria una copia della lingua.
 
 ## Creare una radice della lingua {#creating-a-language-root}
@@ -60,7 +60,7 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 L&#39;interfaccia di Experience Manager fornisce un pannello **[!UICONTROL Riferimenti]** che visualizza un elenco delle radici della lingua create all&#39;interno di Assets.
 
-1. Nella console Risorse, selezionate lo schema della lingua per il quale desiderate creare delle copie della lingua.
+1. Nella console Risorse, selezionate la lingua principale per la quale desiderate creare delle copie in lingua.
 1. Fare clic sull&#39;icona GlobalNav e scegliere **[!UICONTROL Riferimenti]** per aprire il riquadro [!UICONTROL Riferimento] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
