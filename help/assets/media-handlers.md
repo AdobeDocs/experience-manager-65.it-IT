@@ -3,7 +3,7 @@ title: Elabora le risorse utilizzando gestori di contenuti multimediali e flussi
 description: Scopri i gestori di contenuti multimediali e come utilizzare i flussi di lavoro per eseguire attività sulle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '2119'
 ht-degree: 4%
@@ -410,8 +410,8 @@ Dopo aver eseguito la procedura seguente, quando caricate un file TXT in [!DNL E
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count
-     // The starting of the document is always a whitespace
+     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;
      char c; long numwords = 0;
@@ -424,7 +424,7 @@ Dopo aver eseguito la procedura seguente, quando caricate un file TXT in [!DNL E
       if (currentWhiteSpace && !prevWhiteSpace) { numwords++; }
       prevWhiteSpace = currentWhiteSpace;
      }
-     // If we do not end with a white space then we need to add one extra word
+     // If we do not end with a whitespace then we need to add one extra word.
      if (!currentWhiteSpace) { numwords++; }
      return numwords;
     }
