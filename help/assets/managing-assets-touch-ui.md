@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '9304'
+source-wordcount: '9303'
 ht-degree: 4%
 
 ---
@@ -63,6 +63,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    * Sulla barra degli strumenti, fate clic sull’icona **[!UICONTROL Crea]** . Scegliere **[!UICONTROL File dal menu]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia [!DNL Assets] utente. La finestra di dialogo per rinominare il file non viene visualizzata.
+
    ![Opzione Crea per caricare le risorse](assets/create-options.png)
 
    Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
@@ -119,6 +120,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    * il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
    * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
 
    ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/chlimage_1-10.png)
@@ -197,7 +199,7 @@ Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL An
 
 Quando caricate dei file immagine, inclusi i file AI, EPS e PSD, potete effettuare le seguenti operazioni di modifica nella finestra di dialogo Opzioni [!UICONTROL processo di] caricamento:
 
-* Ritagliare lo spazio bianco dal bordo delle immagini (vedere la descrizione nella tabella precedente).
+* Ritagliare gli spazi bianchi dal bordo delle immagini (vedere la descrizione nella tabella precedente).
 * Ritagliare manualmente dai lati delle immagini (vedere la descrizione nella tabella precedente).
 * Scegliete un profilo colore (consultate la descrizione dell’opzione nella tabella precedente).
 * Create una maschera da un tracciato di ritaglio.
@@ -350,6 +352,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 1. Per ingrandire la risorsa:
    1. Utilizzate `Tab` il tasto per spostare lo stato attivo sull&#39;icona di zoom in.
    1. Utilizzate `Enter` il tasto per ingrandire l&#39;immagine.
+
    Per ridurre la visualizzazione, usate `Tab` il tasto per spostare la messa a fuoco sull’icona dello zoom out e premete `Enter`.
 
 1. Utilizzare `Shift` + `Tab` per spostare la messa a fuoco sull&#39;immagine.
@@ -407,6 +410,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata
    * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa
    * Soluzioni creative in cui la risorsa è stata utilizzata di recente
+
    Per ulteriori dettagli, consulta [Informazioni approfondite](/help/assets/touch-ui-asset-insights.md)sulle risorse.
 
 1. Click **[!UICONTROL Save &amp; Close]**.
@@ -480,6 +484,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
 
    * Fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
+
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ## Gestire le rappresentazioni {#managing-renditions}
@@ -555,6 +560,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
       * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+
    >[!NOTE]
    >
    >Per eliminare le risorse, un utente deve disporre di autorizzazioni di eliminazione per `dam/asset`. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
@@ -607,6 +613,7 @@ Consultate [Scaricare risorse da Experience Manager](/help/assets/download-asset
 
    * **[!UICONTROL Annulla]** per interrompere l’azione
    * **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
+
    >[!NOTE]
    >
    >Per annullare la pubblicazione di una risorsa complessa, annullate la pubblicazione solo della risorsa. Evitate di annullare la pubblicazione dei riferimenti, in quanto ad essi potrebbero fare riferimento altre risorse pubblicate.
@@ -677,6 +684,7 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
    * Selezionate la risorsa e fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Fate clic sull&#39;icona **[!UICONTROL Modifica]** visualizzata su una risorsa nella vista a schede.
    * Nella pagina della risorsa, fai clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti.
+
    ![Icona Modifica nella barra degli strumenti](assets/edit_icon.png)
 
 1. Per ritagliare l’immagine, fate clic sull’icona **Ritaglia** .
@@ -718,7 +726,7 @@ Potete anche aggiungere mappe immagine utilizzando l’editor immagini. Per info
 >
 >Per modificare un file TXT, impostare **Day CQ Link Externalizer** da Configuration Manager.
 
-## Timeline   {#timeline}
+## Timeline  {#timeline}
 
 La timeline consente di visualizzare vari eventi per un elemento selezionato, ad esempio flussi di lavoro attivi per una risorsa, commenti/annotazioni, registri attività e versioni.
 
@@ -749,6 +757,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    * [Azioni rapide](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
+
    ![Icona Annota](assets/chlimage_1-29.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
@@ -940,6 +949,7 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
 1. Per confrontare due versioni di un’immagine, effettuate le seguenti operazioni:
    * Fare clic sulla versione da confrontare con la versione corrente.
    * Trascinate il cursore verso sinistra per sovrapporre la versione corrente alla versione corrente e confrontare.
+
    ![Utilizza il cursore per confrontare le versioni selezionate di una risorsa con la versione corrente](assets/version-slider.gif)
 
    *Figura: Usate il cursore per confrontare facilmente le versioni selezionate di una risorsa con la versione corrente.*
