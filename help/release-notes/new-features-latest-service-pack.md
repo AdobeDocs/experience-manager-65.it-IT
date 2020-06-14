@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 2%
@@ -56,9 +56,9 @@ In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Servi
 
 * Molti elementi, controlli e campi modulo di input dell&#39;interfaccia utente sono accessibili tramite tastiera.
 
-* Il rapporto colore e contrasto di alcuni elementi dell&#39;interfaccia utente viene aggiornato in modo che gli utenti con visione limitata o senza percezione del colore possano distinguere questi elementi dell&#39;interfaccia utente. Ad esempio, il colore delle icone di valutazione a stella (ad esempio nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] in [!UICONTROL Proprietà] risorsa o nella vista a schede) viene modificato per il contrasto appropriato.
+* Il colore e il contrasto di alcuni elementi dell&#39;interfaccia utente vengono aggiornati in modo che gli utenti con visione limitata o senza percezione del colore possano distinguere questi elementi dell&#39;interfaccia utente. Ad esempio, il colore delle icone di valutazione a stella (ad esempio nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] in [!UICONTROL Proprietà] risorsa o nella vista a schede) viene modificato per il contrasto appropriato.
 
-   ![Icone di valutazione con rapporto di contrasto migliorato](assets/star-rating-icons.png)
+   ![Icone di valutazione con contrasto migliorato](assets/star-rating-icons.png)
 
 ### Gestione delle eccezioni migliorata {#exception-handling}
 
@@ -146,9 +146,10 @@ I passaggi da configurare [!DNL Experience Manager Assets] con [!DNL Brand Porta
 
 * Le caselle di controllo dello stato misto (in cui, a meno che non si selezionino tutti i predicati nidificati, le caselle di controllo di primo livello non vengono selezionate e vengono evidenziate) nel pannello Filtri sono leggibili dagli assistenti vocali.
 
-* Le limitazioni relative al formato di data e ora sono fornite nelle etichette dei campi data, per consentire agli utenti di immettere la data nel formato corretto utilizzando la tastiera. Esempio, `On Time (MM-DD-YYYY HH:mm)`. Qui MM è mese in formato a due cifre, AAAA è anno, GG è giorno in formato a due cifre, HH è ora in formato militare a 24 ore e mm è minuto.
+* Le limitazioni relative al formato di data e ora sono fornite nelle etichette dei campi data, per consentire agli utenti di immettere la data nel formato corretto utilizzando la tastiera.
+Esempio, `On Time (MM-DD-YYYY HH:mm)`. Qui MM è mese in formato a due cifre, AAAA è anno, GG è giorno in formato a due cifre, HH è ora in formato militare a 24 ore e mm è minuto.
 
-* Gli assistenti vocali annunciano il `X` simbolo per rimuovere i tag selezionati e il numero dei tag selezionati.
+* Gli assistenti vocali annunciano ora il `X` simbolo per rimuovere i tag selezionati insieme al numero di tag selezionati.
 
 #### Ricerca visiva per [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
@@ -186,7 +187,7 @@ La nuova opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
