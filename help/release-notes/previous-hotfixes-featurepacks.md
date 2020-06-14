@@ -3,9 +3,9 @@ title: Note sulla versione di Adobe Experience Manager 6.5 Previous Service Pack
 description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '8094'
+source-wordcount: '8093'
 ht-degree: 36%
 
 ---
@@ -295,10 +295,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * La condivisione delle risorse non funziona per una risorsa con il carattere più (`+`) nel nome file (NPR-31547).
 
-* Le modifiche nel modulo di ricerca predefinito Assets Admin * Search Rail non funzionano come previsto (NPR-31502).
-
-<!-- Review: Check if this seemingly stray asterisk is needed there or not.
--->
+* Le modifiche nel modulo di ricerca predefinito Risorse Admin Search Rail non funzionano come previsto (NPR-31502).
 
 * I suggerimenti non vengono visualizzati quando si utilizza Omnisearch nella visualizzazione delle risorse per la ricerca delle risorse (NPR-31496).
 
@@ -312,7 +309,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Tutti i membri (utenti/gruppi) non possono essere rimossi dalla sezione Membri di una cartella; quando si tenta di rimuovere tutti gli utenti, l&#39;utente connesso viene aggiunto all&#39;elenco (NPR-31171).
 
-* Le risorse con un simbolo più (`+`) nel nome del file non possono essere eliminate (NPR-31162).
+* Le risorse con il simbolo più (`+`) nel nome del file non possono essere eliminate (NPR-31162).
 
 * Il menu a discesa Crea, visibile nel menu principale quando si seleziona una cartella, non mostra l&#39;opzione &quot;Cartella&quot; come opzione di creazione (NPR-30877).
 
