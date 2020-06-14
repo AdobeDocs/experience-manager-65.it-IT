@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Serv
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb48bba01b78a0724f3a07875f601367520b2a8e
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4510'
 ht-degree: 7%
 
 ---
@@ -173,7 +173,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * [!UICONTROL La pagina Editor] schema metadati e i relativi elementi sono ora accessibili mediante la tastiera e sono compatibili con gli assistenti vocali (CQ-4290962, CQ-4272953).
 
-* Il `X` simbolo per rimuovere i tag selezionati viene ora annunciato dagli assistenti vocali insieme al numero di tag selezionati (CQ-4273017).
+* Lo scopo del `X` simbolo di rimuovere i tag selezionati viene ora annunciato dagli assistenti vocali insieme al numero di tag selezionati (CQ-4273017).
 
 * Per evitare confusione negli utenti non vedenti che utilizzano l&#39;assistente vocale, le icone decorative e le immagini vengono ora ignorate dagli assistenti vocali (CQ-4272944).
 
@@ -181,7 +181,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 [!DNL Adobe Experience Manager] 6.5.5.0 Assets risolve i seguenti problemi:
 
-* [!UICONTROL L&#39;opzione Avvia] nella finestra di dialogo [!UICONTROL Crea flusso di lavoro] per le risorse di una raccolta è disabilitata, impedendo l&#39;attivazione del flusso di lavoro (NPR-32471).
+* [!UICONTROL L&#39;opzione Avvia] nella finestra di dialogo [!UICONTROL Crea flusso di lavoro] per le risorse di una raccolta è disabilitata, impedendo così l&#39;attivazione del flusso di lavoro (NPR-32471).
 
 * Quando si utilizza la finestra a comparsa a cascata negli schemi di metadati, quando si seleziona e si salva un&#39;opzione a discesa contenente un apostrofo (dall&#39;elenco a discesa figlio) l&#39;opzione dell&#39;apostrofo selezionato scompare dopo la riapertura delle [!UICONTROL proprietà] della risorsa (NPR-32649).
 
