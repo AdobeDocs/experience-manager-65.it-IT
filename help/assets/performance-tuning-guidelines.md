@@ -4,9 +4,9 @@ description: Suggerimenti e indicazioni [!DNL Experience Manager] sulla configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: da2e435f33e8527793e009700c30e60868d196be
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2776'
 ht-degree: 0%
 
 ---
@@ -300,6 +300,7 @@ Per ridurre al minimo la latenza e ottenere un throughput elevato grazie a un ut
 * Implementare in Java 8.
 * Impostare parametri JVM ottimali.
 * Configurare un archivio dati del file system o un archivio dati S3.
+* Disattiva la generazione delle risorse secondarie. Se è attivato, il flusso di lavoro di AEM crea una risorsa separata per ogni pagina di una risorsa con più pagine. Ciascuna di queste pagine è una singola risorsa che consuma ulteriore spazio su disco, richiede il controllo delle versioni e un&#39;ulteriore elaborazione del flusso di lavoro. Se non sono necessarie pagine separate, disattivate la generazione di risorse secondarie e le attività di estrazione della pagina.
 * Abilita flussi di lavoro transitori.
 * Regola le code del flusso di lavoro Granite per limitare i processi simultanei.
 * Configurare [!DNL ImageMagick] per limitare il consumo di risorse.
