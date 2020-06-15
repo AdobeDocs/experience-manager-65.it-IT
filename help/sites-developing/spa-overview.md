@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: fe81a72a6269060a7ec1283f817920618ba715ef
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,7 @@ Tenendo presente gli elementi chiave dell’editor SPA, il flusso di lavoro di a
 >* L&#39;SPA è sempre responsabile del suo display.
 >* L&#39;Editor SPA è isolato dall&#39;SPA stessa.
 >* In produzione (pubblicazione), l&#39;editor SPA non viene mai caricato.
+
 >
 
 
@@ -129,7 +130,7 @@ Questa è una panoramica più dettagliata dell&#39;interazione client-server dur
 1. Le risorse che compongono la pagina vengono richieste dalla directory archivio.
 1. Le risorse che compongono la pagina vengono fornite dalla directory archivio di Sling Model Exporter.
 1. Il modello di pagina aggiornato viene restituito all’editor.
-1. L’editor pagina aggiorna il riferimento del modello di pagina dell’area di protezione.
+1. L’editor pagina aggiorna il riferimento del modello di pagina dell’API.
 1. L’area SPA aggiorna i suoi componenti in base al nuovo riferimento al modello di pagina.
 1. Le configurazioni dei componenti degli editor di pagina vengono aggiornate.
 
@@ -167,8 +168,8 @@ Per consentire all’autore di utilizzare l’editor pagina per modificare il co
 
 L’SDK per l’editor SPA supporta le seguenti versioni minime:
 
-* Reazione 16.3
-* Angular 6.x
+* 16.x e versioni successive
+* Angular 6.x e superiore
 
 Le versioni precedenti di questi framework potrebbero funzionare con l’SDK AEM SPA Editor, ma non sono supportate.
 
