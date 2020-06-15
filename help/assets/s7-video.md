@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Scopri le risorse AEM per la gestione centralizzata delle risorse video, dove puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Risorse AEM. L’integrazione video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi.
+description: Scopri i AEM Assets di gestione centralizzata delle risorse video in cui puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente dai AEM Assets. L'integrazione con video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,7 +8,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 54%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 Risorse offre una gestione centralizzata delle risorse video in cui è possibile caricare i video direttamente su Risorse per la codifica automatica in Dynamic Media Classic (Scene7) e accedere ai video Dynamic Media Classic direttamente da Risorse per l’authoring delle pagine.
 
-L’integrazione video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi (rilevamento automatico della periferica e della larghezza di banda).
+L&#39;integrazione video di Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi (rilevamento automatico della periferica e della larghezza di banda).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
 * Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set di video adattivo è un contenitore di tutte le rappresentazioni video necessarie a consentirne la riproduzione su diversi tipi di schermi. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Utilizza un set video adattivo, insieme al componente video S7, per lo streaming video adattivo per schermi diversi, come computer desktop e dispositivi mobili iOS, Android, Blackberry e Windows. Per ulteriori informazioni, vedi [la documentazione di Scene7 sui set di video adattivi](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
@@ -29,7 +32,7 @@ Il processo di codifica video predefinito si basa sull’utilizzo dell’integra
 * Miniature FFMPEG
 * Codifica FFMPEG
 
-Attenzione: l&#39;abilitazione e la configurazione dell&#39;integrazione di Dynamic Media Classic non rimuove o disattiva automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di caricamento out-of-the-box DAM. Se utilizzi già la codifica video basata su FFMPEG in AEM, è probabile che FFMPEG sia già installato negli ambienti di authoring. In questo caso, un nuovo video caricato con DAM verrebbe codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione Dynamic Media Classic.
+Tenete presente che l&#39;abilitazione e la configurazione dell&#39;integrazione di Dynamic Media Classic non rimuove o disattiva automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di assimilazione di DAM predefinito. Se utilizzi già la codifica video basata su FFMPEG in AEM, è probabile che FFMPEG sia già installato negli ambienti di authoring. In questo caso, un nuovo video caricato con DAM verrebbe codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione con Dynamic Media Classic.
 
 Se in AEM è configurata la codifica video basata su FFMPEG e viene installato FFMPEG, Adobe consiglia di rimuovere i due flussi di lavoro FFMPEG dai flussi di lavoro di assimilazione DAM.
 
@@ -94,16 +97,16 @@ Se devi aggiornare il visualizzatore e i predefiniti di codifica video in AEM, p
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
+## Caricamento del video sorgente principale in Scene7 da Adobe DAM {#uploading-your-master-video}
 
 1. Individua la cartella di destinazione CQ DAM in cui hai impostato la configurazione cloud con i profili di codifica di Scene7.
-1. Fai su **[!UICONTROL Carica]** per caricare il video principale. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Fate clic su **[!UICONTROL Carica]** per caricare il video sorgente principale. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
    >La generazione delle miniature video potrebbe richiedere del tempo.
 
-   Quando si trascina il video principale DAM sul componente video, si accede a *tutte* le rappresentazioni proxy codificate in Scene7 per la consegna.
+   Dragging the DAM primary source video on to the video component accesses *all* of the Scene7 encoded proxy renditions for delivery.
 
 ## Componente video di base e componente video di Scene7 {#foundation-video-component-versus-scene-video-component}
 
