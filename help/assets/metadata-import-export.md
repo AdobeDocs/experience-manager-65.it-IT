@@ -3,9 +3,9 @@ title: Importate ed esportate i metadati delle risorse in blocco.
 description: Importazione ed esportazione in massa di metadati di risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 9d6f9b8f8d49ae3322a6f5f677292afbd48beeda
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '808'
 ht-degree: 5%
 
 ---
@@ -80,6 +80,7 @@ Alcuni esempi di utilizzo per l’esportazione di metadati in massa sono:
 * Il file CSV per l’importazione dei metadati delle risorse è in un formato molto specifico. Per risparmiare tempo e sforzi ed evitare errori non intenzionali, potete iniziare a creare il CSV utilizzando il formato di un file CSV esportato.
 * Quando importate dei metadati utilizzando un file CSV, il formato di data richiesto è `YYYY-MM-DDThh:mm:ss.fff-00:00`. Se viene utilizzato un altro formato, i valori data non vengono impostati. I formati data del file CSV dei metadati esportati sono nel formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desiderate importarlo, convertitelo nel formato accettabile aggiungendo il valore nanosecondi indicato da `fff`.
 * Per importare i metadati negli spazi dei nomi personalizzati, registrate prima gli spazi dei nomi.
+* Il selettore proprietà visualizza le proprietà utilizzate negli editor di schemi e nei moduli di ricerca. Il selettore proprietà non seleziona le proprietà dei metadati da una risorsa.
 
 >[!MORELIKETHIS]
 >
