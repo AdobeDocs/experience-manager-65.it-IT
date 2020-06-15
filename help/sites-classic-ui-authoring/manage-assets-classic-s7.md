@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 71%
 
 ---
 
@@ -147,7 +150,7 @@ Dopo che sono stati resi disponibili in modalità Progettazione, è possibile ag
 >
 >If you are creating and developing custom S7 viewers and using the Content Finder, you need to explicity add the **allowfullscreen** parameter.
 
-### Avviso di terminazione dei visualizzatori Flash {#flash-viewers-end-of-life-notice}
+### Avviso sulla fine del ciclo di vita dei visualizzatori Flash {#flash-viewers-end-of-life-notice}
 
 A partire dal 31 gennaio 2017, in Adobe Scene7 verrà ufficialmente terminato il supporto per la piattaforma di visualizzazione Flash.
 
@@ -315,7 +318,7 @@ Per ulteriori informazioni sul funzionamento dei video con l’integrazione Scen
 
 ### Limitazioni note per il componente video {#known-limitations-for-the-video-component}
 
-Adobe DAM e WCM mostrano se è stato caricato un video principale. Non mostrano queste risorse proxy:
+Adobe DAM e WCM mostrano se un video sorgente principale viene caricato. Non mostrano queste risorse proxy:
 
 * Rappresentazioni codificate di Scene7
 * Set di video adattivo di Scene7
@@ -390,11 +393,11 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configurazione** Se hai più di una configurazione Scene7 definita in Servizi cloud, puoi selezionarla qui. Di conseguenza, la cartella cambierà in base alla configurazione scelta.
+**Configurazione** Se avete definito più di una configurazione Scene7 in Servizi cloud, selezionatela qui. Di conseguenza, la cartella cambierà in base alla configurazione scelta.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Tipo** di risorsa Nel browser Scene7, potete filtrare i risultati in modo da includere i seguenti elementi: immagini, modelli, video e set video adattivi. Se non si seleziona alcun tipo di risorsa, per impostazione predefinita AEM ricerca tutti i tipi di risorsa.
+**Tipo** di risorsa Nel browser di Scene7, potete filtrare i risultati in modo da includere i seguenti elementi: immagini, modelli, video e set video adattivi. Se non si seleziona alcun tipo di risorsa, per impostazione predefinita AEM ricerca tutti i tipi di risorsa.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
