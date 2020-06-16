@@ -11,10 +11,10 @@ mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-65.it-IT
 index: y
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: f483581a80faf0e6160d3b9cbc3fcdb8e8171dec
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 9%
+source-wordcount: '155'
+ht-degree: 12%
 
 ---
 
@@ -26,16 +26,16 @@ Il file metadata.md include metadati a livello di repo che passano ai file TOC.m
 | metadata | cosa |
 |--- |--- |
 | solution-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
-| solution-hub-url | Apre la pagina hub helpx. |
+| solution-hub-url | Apre la pagina Hub Informazioni e supporto. |
 | solution-icon | Visualizza l&#39;icona della soluzione accanto al titolo della soluzione. Non ancora implementato. |
-| getting-started | Collegamento alla pagina di guida introduttiva. |
-| tutorials-url | È possibile collegarsi alle esercitazioni video, ossia alle esercitazioni di aiuto o alle esercitazioni KT. |
-| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. il valore predefinito è 2. |
+| getting-started | Link alla pagina iniziale. |
+| tutorials-url | Fate clic sul collegamento alle esercitazioni video. |
+| mini-livelli | Determina il numero di livelli di intestazione visualizzati nella barra a destra. Il valore predefinito è 2. |
 | git-repo | Specifica la posizione del repo principale per uso interno. |
 
 In un file TOC.md
 
 | metadata | cosa |
 |--- |--- |
-| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento |
-| user-guide-url | Apre la pagina centrale helpx |
+| user-guide-title | Utilizzato nell&#39;intestazione dell&#39;articolo come collegamento. |
+| user-guide-url | Apre la pagina Hub Informazioni e supporto. |
