@@ -1,8 +1,8 @@
 ---
 title: Implementazione di Communities
 seo-title: Implementazione di Communities
-description: Come implementare AEM Communities
-seo-description: Come implementare AEM Communities
+description: Come distribuire i AEM Communities
+seo-description: Come distribuire i AEM Communities
 uuid: 18d9b424-004d-43b2-968a-318e27a93759
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1893'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ## Prerequisiti {#prerequisites}
 
-* [Piattaforma AEM 6.5](/help/sites-deploying/deploy.md)
+* [AEM 6.5 Platform](/help/sites-deploying/deploy.md)
 
-* Licenza di AEM Communities
+* AEM Communities, licenza
 
 * Licenze facoltative per :
 
-   * [Funzioni di Adobe Analytics for Communities](/help/communities/analytics.md)
+   * [Funzioni di Adobe  Analytics per Communities](/help/communities/analytics.md)
    * [MongoDB per MSRP](/help/communities/msrp.md)
    * [Adobe Cloud for ASRP](/help/communities/asrp.md)
 
@@ -46,7 +49,7 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 * [abilitare il servizio tunnel](#tunnel-service-on-author)
 * [abilita login mediante profilo sociale](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
-* [configurare Adobe Analytics](/help/communities/analytics.md)
+* [configurare Adobe  Analytics](/help/communities/analytics.md)
 * impostare un servizio e-mail [predefinito](/help/communities/email.md)
 * identificare la scelta per lo storage [UGC](/help/communities/working-with-srp.md) condiviso (**SRP**)
 
@@ -72,11 +75,12 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
          * UGC non è mai replicato
          * UGC visibile solo nell’istanza o nel cluster AEM in cui è stato immesso
       * il valore predefinito è JSRP
+
    Per la funzione di **[abilitazione](/help/communities/overview.md#enablement-community)**
 
    * [installazione e configurazione di FFmpeg](/help/communities/ffmpeg.md)
    * [installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
-   * [installare AEM Communities SCORM Engine](#scorm-package)
+   * [installare AEM Communities SCORM-Engine](#scorm-package)
    * [installazione e configurazione di MySQL per l&#39;abilitazione](/help/communities/mysql.md)
 
 
@@ -84,7 +88,7 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 
 
-## Ultime versioni {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA con il pacchetto Communities. Per informazioni sugli aggiornamenti di AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), consulta le Note [sulla versione di](/help/release-notes/release-notes.md#communities-release-notes.html)AEM 6.5.
 
@@ -92,11 +96,11 @@ AEM 6.5 Communities GA con il pacchetto Communities. Per informazioni sugli aggi
 
 A partire da AEM 6.4, gli aggiornamenti alle community vengono forniti come parte dei Service Pack e dei pacchetti AEM Cumulative Fix.
 
-Per gli ultimi aggiornamenti di AEM 6.5, consulta Pacchetti di correzioni cumulativi e Service Pack [di](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)Adobe Experience Manager 6.4.
+Per gli ultimi aggiornamenti ad AEM 6.5, consulta [Adobe Experience Manager 6.4 Cumulative Fix Pack e Service Pack](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html).
 
 ### Cronologia versioni {#version-history}
 
-Con AEM 6.4 e versioni successive, le funzioni e gli hotfix di AEM Communities fanno parte dei pacchetti di correzioni e dei Service Pack cumulativi di AEM Communities. Non esistono pertanto pacchetti di caratteristiche distinti.
+Come in AEM 6.4 e versioni successive, le funzioni AEM Communities e gli hotfix fanno parte di pacchetti di correzioni e Service Pack cumulativi di AEM Communities. Non esistono pertanto pacchetti di caratteristiche distinti.
 
 ### Driver JDBC per MySQL {#jdbc-driver-for-mysql}
 
@@ -140,7 +144,7 @@ Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella 
 
 SCORM (Shareable Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere incluso in un file ZIP trasferibile.
 
-Il motore SCORM di AEM Communities è richiesto per la funzione di [abilitazione](/help/communities/overview.md#enablement-community) . Pacchetti Scorm supportati da AEM 6.5 Communities:
+Il motore SCORM AEM Communities è richiesto per la funzione di [abilitazione](/help/communities/overview.md#enablement-community) . Pacchetti Scorm supportati da AEM 6.5 Communities:
 
 * [cq-social-scorm-package, versione 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) che include il motore [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
 
@@ -194,7 +198,7 @@ Per ulteriori informazioni, vedere [Come utilizzare i pacchetti](/help/sites-adm
 
 ## Implementazioni consigliate {#recommended-deployments}
 
-In AEM Communities, uno store comune viene utilizzato per memorizzare il contenuto generato dall&#39;utente (UGC) ed è spesso denominato fornitore di risorse di [storage (SRP)](/help/communities/working-with-srp.md). La distribuzione consigliata si basa sulla scelta di un&#39;opzione SRP per lo store comune.
+In AEM Communities, uno store comune viene utilizzato per memorizzare il contenuto generato dall&#39;utente (UGC, user generated content) ed è spesso denominato provider di risorse di [storage (SRP)](/help/communities/working-with-srp.md). La distribuzione consigliata si basa sulla scelta di un&#39;opzione SRP per lo store comune.
 
 Lo store comune supporta la moderazione e l&#39;analisi di UGC nell&#39;ambiente di pubblicazione, eliminando al contempo la necessità di [replicare](/help/communities/sync.md) UGC.
 
@@ -206,13 +210,13 @@ Lo store comune supporta la moderazione e l&#39;analisi di UGC nell&#39;ambiente
 
 Quando effettuate l’aggiornamento alla piattaforma AEM 6.5 dalle versioni precedenti di AEM, è importante leggere [Aggiornamento ad AEM 6.5](/help/sites-deploying/upgrade.md).
 
-Oltre ad aggiornare la piattaforma, leggi [Aggiornamento ad AEM Communities 6.5](/help/communities/upgrade.md) per informazioni sulle modifiche apportate a Communities.
+Oltre ad aggiornare la piattaforma, leggi [Aggiornamento agli AEM Communities 6.5](/help/communities/upgrade.md) per informazioni sulle modifiche apportate a Communities.
 
 ## Configurazioni {#configurations}
 
 ### Editore principale {#primary-publisher}
 
-Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano su **notifications **o su **Adobe Analytics**.
+Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come **`primary publisher`** per le attività che non devono verificarsi in tutte le istanze, ad esempio per le funzioni che si basano su **notifications **o su **Adobe  Analytics**.
 
 Per impostazione predefinita, la configurazione `AEM Communities Publisher Configuration` OSGi è configurata con la **`Primary Publisher`** casella di controllo selezionata, in modo che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino automaticamente come principali.
 
@@ -244,7 +248,7 @@ Nell’ambiente di authoring sono disponibili due agenti di replica che richiedo
 
 * accedere alla console Replica all’istanza di creazione
 
-   * dalla navigazione globale : **Strumenti, distribuzione, replica, agenti sull&#39;autore**
+   * dalla navigazione globale : **Strumenti, distribuzione, replica, agenti in fase di creazione**
 
 * seguire la stessa procedura per entrambi gli agenti:
 
@@ -293,7 +297,7 @@ Per abilitare il servizio tunnel:
 
 ### Replicare la chiave Crypto {#replicate-the-crypto-key}
 
-Esistono due funzioni di AEM Communities che richiedono che tutte le istanze del server AEM utilizzino le stesse chiavi di crittografia. Si tratta di [Analytics](/help/communities/analytics.md) e [ASRP](/help/communities/asrp.md).
+Esistono due funzioni dei AEM Communities che richiedono che tutte le istanze del server AEM utilizzino le stesse chiavi di crittografia. Questi sono [Analytics](/help/communities/analytics.md) e [ASRP](/help/communities/asrp.md).
 
 A partire da AEM 6.3, il materiale chiave viene memorizzato nel file system e non più nell’archivio.
 
@@ -308,7 +312,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
    * ad esempio, passare alla cartella di dati,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * copiare i file hmac e master
+   * copiare i file hmac e i file dei nodi principali
 
 
 
@@ -323,7 +327,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
 >[!CAUTION]
 >
->Se è già stata configurata un&#39;altra funzione di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contattate l&#39;assistenza](https://helpx.adobe.com/marketing-cloud/contact-support.html)clienti.
+>Se è già stata configurata un&#39;altra funzione di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contattate l&#39;assistenza](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)clienti.
 
 #### Replica archivio {#repository-replication}
 
@@ -362,7 +366,7 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * dopo un momento, dovrebbe comparire una finestra di dialogo **Success **Success :
    `Operation completed successfully.`
 
-### Server Apache HTTP {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Se utilizzate il server Apache HTTP, accertatevi di utilizzare il nome server corretto per tutte le voci pertinenti.
 
@@ -387,11 +391,11 @@ In particolare, fate attenzione a utilizzare il nome corretto del server, non `l
 
 ### Dispatcher {#dispatcher}
 
-Se utilizzi un dispatcher, vedi:
+Se si utilizza un Dispatcher, vedere:
 
-* Documentazione di AEM [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+* Documentazione di AEM su [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 * [Installazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
-* [Configurazione del dispatcher per Communities](/help/communities/dispatcher.md)
+* [Configurazione di Dispatcher per Communities](/help/communities/dispatcher.md)
 * [Problemi noti](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
 ## Documentazione di Community correlate {#related-communities-documentation}
