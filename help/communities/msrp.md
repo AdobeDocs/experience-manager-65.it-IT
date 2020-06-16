@@ -1,8 +1,8 @@
 ---
 title: MSRP - Provider di risorse di storage MongoDB
 seo-title: MSRP - Provider di risorse di storage MongoDB
-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
-seo-description: Configurare AEM Communities per utilizzare un database relazionale come store comune
+description: Imposta AEM Communities per utilizzare un database relazionale come store comune
+seo-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Informazioni su MSRP {#about-msrp}
 
-Quando AEM Communities è configurato per utilizzare MSRP come store comune, il contenuto generato dall&#39;utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione o la replica.
+Quando i AEM Communities sono configurati per utilizzare MSRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
 
 Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
 
@@ -88,9 +91,11 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
       * **[!UICONTROL URL]**solare L’URL utilizzato per comunicare con Solr in modalità standalone.
 Lasciate vuoto se eseguite in modalità SolrCloud.
+
          *Predefinito*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Raccolta]**Solr Il nome della raccolta Solr.
+
          *Predefinito*: collection1
 
 * Seleziona **[!UICONTROL Invia]**
@@ -102,13 +107,13 @@ Lasciate vuoto se eseguite in modalità SolrCloud.
 
 ### Set di replica MongoDB {#mongodb-replica-set}
 
-Per l&#39;ambiente di produzione, si consiglia vivamente di impostare un set di repliche, un cluster di server MongoDB che implementa la replica master-slave e il failover automatizzato.
+Per l&#39;ambiente di produzione, si consiglia vivamente di impostare un set di repliche, un cluster di server MongoDB che implementa la replica primaria secondaria e il failover automatizzato.
 
 Per ulteriori informazioni sui set di repliche, consultare la documentazione [Replica](https://docs.mongodb.org/manual/replication/) di MongoDB.
 
 Per utilizzare i set di repliche e definire le connessioni tra le applicazioni e le istanze MongoDB, consultare la documentazione relativa al formato [URI della stringa di](https://docs.mongodb.org/manual/reference/connection-string/) connessione di MongoDB.
 
-#### Url di esempio per la connessione a un set di replica {#example-url-for-connecting-to-a-replica-set}
+#### Url di esempio per la connessione a un set di replica  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -132,7 +137,7 @@ Per informazioni dettagliate sulla configurazione, consultate Configurazione [So
 
 Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP, sarà necessario:
 
-1. Eseguire l&#39; [aggiornamento ad AEM Communities](upgrade.md)
+1. Eseguire l&#39; [aggiornamento ai AEM Communities](upgrade.md)
 1. Installare nuovi file di configurazione Solr
    * Per MLS [standard](solr.md#installing-standard-mls)
    * Per MLS [avanzati](solr.md#installing-advanced-mls)
@@ -186,7 +191,8 @@ cURL -u *signin* -d *data* *reindex-url*
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
-*size* = quante voci UGC reindicizzare per operazione`/content/usergenerated/asi/mongo/`
+*size* = quante voci UGC reindicizzare per operazione
+`/content/usergenerated/asi/mongo/`
 
 *path* = posizione radice della struttura ad albero di UGC da reindicizzare
 
@@ -194,7 +200,8 @@ cURL -u *signin* -d *data* *reindex-url*
    `/etc/socialconfig/srpc/defaultconfiguration`
 * Per limitare l’indice ad alcuni UGC, specificate una sottostruttura di `asipath`
 
-*reindex-url* = l&#39;endpoint per la reindicizzazione di SRP`http://localhost:4503/services/social/datastore/mongo/reindex`
+*reindex-url* = l&#39;endpoint per la reindicizzazione di SRP
+`http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
@@ -226,13 +233,13 @@ Per creare e pubblicare tutte le istanze di AEM, rivisitate la console [Configur
 
 ### UGC scompare dopo l&#39;aggiornamento {#ugc-disappears-after-upgrade}
 
-Se esegui l’aggiornamento da un sito AEM Communities 6.0 esistente, qualsiasi UGC preesistente deve essere convertito in conformità alla struttura richiesta per l’API [SRP](srp.md) dopo l’aggiornamento ad AEM Communities 6.3.
+Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0 esistente, qualsiasi UGC preesistente deve essere convertito in conformità alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a AEM Communities 6.3.
 
 È disponibile uno strumento open source su GitHub per questo scopo:
 
-* [Strumento di migrazione UGC di AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Strumento di migrazione UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti delle community social AEM da importare in AEM Communities 6.1 o versioni successive.
+Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti delle community social AEM da importare nei AEM Communities 6.1 o versioni successive.
 
 ### Errore - provider_id campo non definito {#error-undefined-field-provider-id}
 
