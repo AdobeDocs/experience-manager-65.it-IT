@@ -1,27 +1,16 @@
 ---
 title: Tag Decoration
-seo-title: Tag Decoration
 description: Quando viene eseguito il rendering di un componente in una pagina Web, è possibile generare un elemento HTML che racchiude il componente renderizzato all’interno di se stesso. Per gli sviluppatori, AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti inclusi.
-seo-description: Quando viene eseguito il rendering di un componente in una pagina Web, è possibile generare un elemento HTML che racchiude il componente renderizzato all’interno di se stesso. Per gli sviluppatori, AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti inclusi.
-uuid: db796a22-b053-48dd-a50c-354dead7e8ec
-contentOwner: user
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 8cb9fd6e-5e1f-43cd-8121-b490dee8c2be
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
 
 # Tag Decoration{#decoration-tag}
-
->[!NOTE]
->
->Il comportamento e le opzioni del tag decorazione descritti in questo articolo sono basati su CFP1 [di](https://helpx.adobe.com/experience-manager/release-notes--aem-6-3-cumulative-fix-pack.html)AEM 6.3.
->
->Il comportamento del tag decorazione in 6.3 prima di CFP1 è simile a quello di AEM 6.2.
 
 Quando viene eseguito il rendering di un componente in una pagina Web, è possibile generare un elemento HTML che racchiude il componente renderizzato all’interno di se stesso. Ciò ha principalmente due finalità:
 
@@ -31,29 +20,29 @@ Quando viene eseguito il rendering di un componente in una pagina Web, è possib
    * informazioni sul layout
    * informazioni sullo stile
 
-Per gli sviluppatori, AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti inclusi. Se e come viene rappresentato il tag decorazione è definito dalla combinazione di due fattori, che questa pagina illustrerà:
+Per gli sviluppatori, AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti inclusi. Se e come viene rappresentato il tag di decorazione è definito dalla combinazione di due fattori, che questa pagina illustrerà:
 
-* Il componente stesso può configurare il tag di decorazione con un set di proprietà.
+* Il componente stesso può configurare il tag decorazione con un set di proprietà.
 * Gli script che includono componenti (HTL, JSP, dispatcher, ecc.) possono definire gli aspetti del tag di decorazione con parametri di inclusione.
 
 ## Consigli {#recommendations}
 
 Di seguito sono riportate alcune raccomandazioni generali su quando includere l&#39;elemento wrapper che dovrebbe aiutare a evitare di correre in problemi imprevisti:
 
-* La presenza dell’elemento wrapper non deve essere diversa tra WCMModes (modalità di modifica o anteprima), istanze (autore o pubblicazione) o ambiente (fase di pubblicazione o produzione), in modo che i CSS e JavaScript della pagina funzionino sempre allo stesso modo.
+* La presenza dell’elemento wrapper non deve essere diversa tra WCMModes (modalità di modifica o anteprima), istanze (autore o pubblicazione) o ambiente (fase di pubblicazione o produzione), in modo che i CSS e JavaScript della pagina funzionino in modo identico in tutti i casi.
 * L’elemento wrapper deve essere aggiunto a tutti i componenti modificabili, in modo che l’editor pagina possa inizializzarli e aggiornarli correttamente.
 * Per i componenti non modificabili, l&#39;elemento wrapper può essere evitato se non svolge alcuna funzione particolare, in modo che il markup risultante non sia necessariamente gonfiato.
 
 ## Controlli per componenti {#component-controls}
 
-Le proprietà e i nodi seguenti possono essere applicati ai componenti per controllare il comportamento del relativo tag decorazione:
+Le proprietà e i nodi seguenti possono essere applicati ai componenti per controllare il comportamento del relativo tag di decorazione:
 
-* **`cq:noDecoration {boolean}`**: Questa proprietà può essere aggiunta a un componente e un valore vero forza AEM a non generare elementi wrapper sul componente.
+* **`cq:noDecoration {boolean}`:**Questa proprietà può essere aggiunta a un componente e un valore vero forza AEM a non generare alcun elemento wrapper sul componente.
 
-* **`cq:htmlTag`**node: Questo nodo può essere aggiunto sotto un componente e può avere le seguenti proprietà:
+* **`cq:htmlTag`node:**Questo nodo può essere aggiunto sotto un componente e può avere le seguenti proprietà:
 
-   * **`cq:tagName {String}`**: Questo può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per racchiudere i componenti invece dell&#39;elemento DIV predefinito.
-   * **`class {String}`**: Può essere utilizzato per specificare i nomi delle classi css da aggiungere al wrapper.
+   * **`cq:tagName {String}`:**Questo può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per racchiudere i componenti al posto dell&#39;elemento DIV predefinito.
+   * **`class {String}`:**Può essere utilizzato per specificare i nomi delle classi css da aggiungere al wrapper.
    * Altri nomi di proprietà saranno aggiunti come attributi HTML con lo stesso valore String fornito.
 
 ## Controlli script {#script-controls}
@@ -74,7 +63,7 @@ Il comportamento del wrapper può anche essere controllato completamente.
 
 È possibile controllare completamente il comportamento dei tag wrapper dagli script HTL e la relativa logica.
 
-Per ulteriori informazioni sullo sviluppo in HTL consultate la documentazione [](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)HTL.
+Per ulteriori informazioni sullo sviluppo in HTL consultate la documentazione [](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)HTL.
 
 #### Albero decisionale {#decision-tree}
 
@@ -151,14 +140,14 @@ Output risultante `/content/test.html`:
 
 ## JSP {#jsp}
 
-Quando includete un componente con `cq:includ`e o `sling:include`, il comportamento predefinito in AEM consiste nell’utilizzare un DIV per racchiudere l’elemento. Tuttavia, questo wrapper può essere personalizzato in due modi:
+Quando includete un componente che utilizza `cq:includ`e o `sling:include`, il comportamento predefinito in AEM consiste nell’utilizzare un DIV per racchiudere l’elemento. Tuttavia, questo wrapper può essere personalizzato in due modi:
 
 * Comunicate esplicitamente ad AEM di non mandare a capo il componente utilizzando `cq:noDecoration`.
 * Usate un tag HTML personalizzato per racchiudere il componente con `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
 
 ### Albero decisionale {#decision-tree-1}
 
-La struttura di decisione seguente illustra come `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`e `decorationTagName` influenzare il comportamento del wrapper.
+Nella struttura di decisione seguente è illustrato come `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`e `decorationTagName` influenzare il comportamento del wrapper.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)
 
