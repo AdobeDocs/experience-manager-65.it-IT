@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 3%
 
 ---
 
@@ -26,15 +29,15 @@ Utilizzate questa funzione per assicurarvi che le pagine siano conformi al conse
 
 ## Configurazione dei cookie consentiti {#configuring-allowed-cookies}
 
-Configurate il servizio di rinuncia Adobe Granite per specificare in che modo i cookie vengono utilizzati nelle pagine Web. La tabella seguente descrive le proprietà che puoi configurare.
+Configurate il servizio di rinuncia di Adobe Granite per specificare in che modo i cookie vengono utilizzati nelle pagine Web. La tabella seguente descrive le proprietà che puoi configurare.
 
 Per configurare il servizio, potete utilizzare la console [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web o [aggiungere una configurazione OSGi alla directory archivio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi. Per una configurazione OSGi, il servizio PID è `com.adobe.granite.optout`.
 
 | Nome proprietà (console Web) | Nome proprietà OSGi | Descrizione |
 |---|---|---|
 | Cookie di rifiuto | optout.cookies | I nomi dei cookie che indicano, se presenti sul dispositivo dell&#39;utente, che l&#39;utente non ha acconsentito all&#39;uso dei cookie. |
-| Intestazioni HTTP di rifiuto | optout.header | I nomi delle intestazioni HTTP che indicano, se presenti, che l&#39;utente non ha acconsentito all&#39;uso dei cookie. |
-| Cookie elenco bianco | optout.whitelist.cookies | Un elenco di cookie essenziali per il funzionamento del sito Web e utilizzabili senza il consenso dell&#39;utente. |
+| Intestazioni HTTP di rifiuto | optout.headers | I nomi delle intestazioni HTTP che indicano, se presenti, che l&#39;utente non ha acconsentito all&#39;uso dei cookie. |
+| Cookie elenco bianco | optout.whitelist.cookies | Un elenco di cookie che sono essenziali per il funzionamento del sito Web e che possono essere utilizzati senza il consenso dell&#39;utente. |
 
 ## Convalida dell&#39;utilizzo del cookie {#validating-cookie-usage}
 
@@ -68,7 +71,7 @@ Granite.OptOutUtil consente di determinare se l&#39;utilizzo dei cookie è conse
 
 ### getCookieNames(), funzione {#getcookienames-function}
 
-Restituisce i nomi dei cookie che, se presenti, indicano che l&#39;utente non ha acconsentito all&#39;uso dei cookie.
+Restituisce i nomi dei cookie che, se presenti, indicano che l&#39;utente non ha dato il consenso all&#39;uso dei cookie.
 
 **Parametri**
 
@@ -100,11 +103,11 @@ Nessuno.
 
 **Valore restituito**
 
-Un valore booleano di `true` se viene trovato un cookie che non indica il consenso, e un valore di `false` se nessun cookie indica il mancato consenso.
+Un valore booleano di `true` se viene trovato un cookie che indica l&#39;assenza di consenso e un valore di `false` se nessun cookie indica l&#39;assenza di consenso.
 
 ### maySetCookie(cookieName), funzione {#maysetcookie-cookiename-function}
 
-Determina se un cookie specifico può essere utilizzato nel browser dell&#39;utente. Questa funzione equivale a utilizzare la `isOptedOut` funzione insieme a determinare se il cookie specificato è incluso nell&#39;elenco restituito dalla `getWhitelsitCookieNames` funzione.
+Determina se un cookie specifico può essere utilizzato nel browser dell&#39;utente. Questa funzione equivale a utilizzare la `isOptedOut` funzione insieme a determinare se il cookie specificato è incluso nell&#39;elenco restituito dalla `getWhitelistCookieNames` funzione.
 
 **Parametri**
 
