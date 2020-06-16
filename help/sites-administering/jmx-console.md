@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '4989'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +45,7 @@ Operazioni per l’amministrazione di istanze di flussi di lavoro in esecuzione,
 * Argomenti: none
 * Valore restituito: Dati tabulari contenenti le colonne Count e ModelId.
 
-**listCompletedWorkflowsPerModel** Elenca il numero di istanze del flusso di lavoro completate per ciascun modello di workflow.
+**listCompletedWorkflowsPerModel** Elenca il numero di istanze del flusso di lavoro completate per ciascun modello di flusso di lavoro.
 
 * Argomenti: none
 * Valore restituito: Dati tabulari contenenti le colonne Count e ModelId.
@@ -128,7 +131,7 @@ Operazioni per l’amministrazione di istanze di flussi di lavoro in esecuzione,
    * StartComment
    * WorkflowTitle
 
-**PurgeActive** Rimuove le istanze attive del flusso di lavoro di una pagina specifica. Potete eliminare le istanze attive per tutti i modelli o solo per le istanze di un modello specifico. Facoltativamente, è possibile testare l&#39;operazione per visualizzare i risultati senza eseguire l&#39;operazione.
+**PurgeActive** Rimuove le istanze attive del flusso di lavoro di una pagina specifica. È possibile eliminare le istanze attive per tutti i modelli o solo per le istanze di un modello specifico. Facoltativamente, è possibile testare l&#39;operazione per visualizzare i risultati senza eseguire l&#39;operazione.
 
 * Argomenti:
 
@@ -161,19 +164,19 @@ Operazioni per l’amministrazione di istanze di flussi di lavoro in esecuzione,
 
 * Argomenti:
 
-   * Modello: (Facoltativo) L&#39;ID del modello a cui viene applicata l&#39;operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze di tutti i modelli di workflow non aggiornati. L&#39;ID è il percorso del nodo del modello, ad esempio:
+   * Modello: (Facoltativo) L&#39;ID del modello a cui viene applicata l&#39;operazione. Non specificare alcun modello per applicare l&#39;operazione alle istanze di tutti i modelli di workflow non aggiornati. L&#39;ID è il percorso del nodo del modello, ad esempio:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Prova a secco: (Facoltativo) Specificate un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire l&#39;operazione. Il valore predefinito di `false` determina l&#39;esecuzione dell&#39;operazione.
 
-* Valore restituito: Elenco di istanze del flusso di lavoro che vengono riavviate.
+* Valore restituito: Un elenco di istanze del flusso di lavoro che vengono riavviate.
 
 **fetchModelList** Elenca tutti i modelli di workflow.
 
 * Argomenti: none
-* Valore restituito: Dati della tabella che identificano i modelli di workflow, incluse le colonne ModelId e ModelName.
+* Valore restituito: Dati della tabella che identificano i modelli di flusso di lavoro, incluse le colonne ModelId e ModelName.
 
-**countRunningWorkflows** Restituisce il numero di istanze del flusso di lavoro in esecuzione. Potete recuperare il numero di istanze in esecuzione per tutti i modelli di workflow o per un modello specifico.
+**countRunningWorkflows** Restituisce il numero di istanze del flusso di lavoro in esecuzione. È possibile recuperare il numero di istanze in esecuzione per tutti i modelli di workflow o per un modello specifico.
 
 * Argomenti:
 
@@ -214,7 +217,7 @@ Operazioni per l’amministrazione di istanze di flussi di lavoro in esecuzione,
 
 ## Archivio {#repository}
 
-Informazioni sul repository CRX
+Informazioni sull&#39;archivio CRX
 
 * Dominio: com.adobe.granite
 * Tipo: Repository
@@ -229,7 +232,7 @@ Informazioni sul repository CRX
 
 **NomeCliente** Il nome del cliente a cui viene rilasciata la licenza software. Sola lettura.
 
-**LicenseKey** Il codice di licenza univoco per l&#39;installazione dell&#39;archivio. Sola lettura.
+**LicenseKey** La chiave di licenza univoca per l&#39;installazione dell&#39;archivio. Sola lettura.
 
 **AvailableDiskSpace** Lo spazio su disco disponibile per questa istanza dell&#39;archivio, in Mbyte. Sola lettura.
 
@@ -276,7 +279,7 @@ Informazioni sul repository CRX
    <td>Versione dell’implementazione del repository.</td>
   </tr>
   <tr>
-   <td>option.update.Primary.node.type.supported</td>
+   <td>option.update.primary.node.type.supported</td>
    <td>Indica se il tipo di nodo primario di un nodo può essere modificato. true indica che è possibile modificare il tipo di nodo principale, false indica che la modifica non è supportata.</td>
   </tr>
   <tr>
@@ -288,7 +291,7 @@ Informazioni sul repository CRX
    <td>Indica se è possibile ignorare la definizione di un nodo figlio o di proprietà ereditata di un tipo di nodo. true indica che sono supportate le sostituzioni e false indica che non sono supportate.</td>
   </tr>
   <tr>
-   <td>option.Observ.supported</td>
+   <td>option.observation.supported</td>
    <td>true indica che è supportata l'osservazione asincrona delle modifiche apportate al repository. Il supporto dell'osservazione asincrona consente alle applicazioni di ricevere e rispondere alle notifiche su ogni modifica man mano che si verificano.</td>
   </tr>
   <tr>
@@ -308,7 +311,7 @@ Informazioni sul repository CRX
    <td>true indica che l'archivio supporta l'aggiunta e la rimozione di tipi di nodi mixin di un nodo esistente.</td>
   </tr>
   <tr>
-   <td>node.type.management.main.item.name.supported</td>
+   <td>node.type.management.primary.item.name.supported</td>
    <td>true indica che l'archivio consente alle definizioni dei nodi di contenere un elemento primario come figlio. Un elemento primario è accessibile tramite l'API senza conoscere il nome dell'elemento.</td>
   </tr>
   <tr>
@@ -324,15 +327,15 @@ Informazioni sul repository CRX
    <td>true indica che è possibile modificare le definizioni dei nodi in uso nei nodi esistenti.</td>
   </tr>
   <tr>
-   <td>jcr.Specification.version</td>
-   <td>Versione della specifica JCR implementata dalla directory archivio.</td>
+   <td>jcr.specification.version</td>
+   <td>La versione della specifica JCR implementata dalla directory archivio.</td>
   </tr>
   <tr>
-   <td>option.journaling.Observ.supported</td>
+   <td>option.journaled.observation.supported</td>
    <td>true indica che le applicazioni possono eseguire l'osservazione registrata del repository. con l'osservazione registrata, è possibile ottenere una serie di notifiche di modifica per un periodo di tempo specifico. </td>
   </tr>
   <tr>
-   <td>query.language</td>
+   <td>query.languages</td>
    <td>I linguaggi di query supportati dalla directory archivio. Nessun valore indica il supporto della query.</td>
   </tr>
   <tr>
@@ -348,7 +351,7 @@ Informazioni sul repository CRX
    <td>true indica che l'archivio supporta il controllo di accesso, per l'impostazione e la determinazione dei privilegi utente per l'accesso ai nodi.</td>
   </tr>
   <tr>
-   <td>option.baseline.supported</td>
+   <td>option.baselines.supported</td>
    <td>true indica che il repository supporta sia le configurazioni che le linee di base.</td>
   </tr>
   <tr>
@@ -360,7 +363,7 @@ Informazioni sul repository CRX
    <td>Identificatore del cluster di repository.</td>
   </tr>
   <tr>
-   <td>query.stored.query.supported</td>
+   <td>query.stored.queries.supported</td>
    <td>true indica che il repository supporta le query memorizzate.</td>
   </tr>
   <tr>
@@ -369,22 +372,22 @@ Informazioni sul repository CRX
   </tr>
   <tr>
    <td>node.type.management.inheritance</td>
-   <td><p>Indica il livello di supporto del repository per l'ereditarietà dei tipi di nodo. I seguenti valori sono possibili:</p> <p>node.type.management.inheritance.Minimum: La registrazione dei tipi di nodo primario è limitata a quelli che hanno solo nt:base come supertipo. La registrazione dei tipi di nodo del mixin è limitata a quelli senza supertipo.</p> <p>node.type.management.inheritance.single: La registrazione dei tipi di nodi primari è limitata a quelli con un solo tipo di superentità. La registrazione dei tipi di nodo del mixin è limitata a quelli con al massimo un supertipo.</p> <p><br /> node.type.management.inheritance.multiple: I tipi di nodo principale possono essere registrati con uno o più supertipi. I tipi di nodi misti possono essere registrati con zero o più supertipi.</p> </td>
+   <td><p>Indica il livello di supporto del repository per l'ereditarietà dei tipi di nodo. I seguenti valori sono possibili:</p> <p>node.type.management.inheritance.Minimum: La registrazione dei tipi di nodo primario è limitata a quelli che hanno solo nt:base come supertipo. La registrazione dei tipi di nodo del mixin è limitata a quelli privi di supertipo.</p> <p>node.type.management.inheritance.single: La registrazione dei tipi di nodi primari è limitata a quelli con un solo tipo di superentità. La registrazione dei tipi di nodo del mixin è limitata a quelli con al massimo un supertipo.</p> <p><br /> node.type.management.inheritance.multiple: I tipi di nodo principale possono essere registrati con uno o più supertipi. I tipi di nodi misti possono essere registrati con zero o più supertipi.</p> </td>
   </tr>
   <tr>
-   <td>crx.cluster.favoriteMaster</td>
+   <td>crx.cluster.preferredMaster</td>
    <td>true indica che questo nodo del cluster è il master preferito del cluster.</td>
   </tr>
   <tr>
-   <td>option.transaction.supported</td>
-   <td>true indica che il repository supporta le transazioni.</td>
+   <td>option.transactions.supported</td>
+   <td>true indica che l'archivio supporta le transazioni.</td>
   </tr>
   <tr>
    <td>jcr.repository.vendor.url</td>
    <td>URL del fornitore del repository.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.limits.supported</td>
+   <td>node.type.management.value.constraints.supported</td>
    <td>true indica che l'archivio supporta i vincoli di valore per le proprietà dei nodi.</td>
   </tr>
   <tr>
@@ -429,11 +432,11 @@ Informazioni sul repository CRX
    <td>true indica che l'archivio supporta nodi di pari livello (nodi con lo stesso elemento padre) con gli stessi nomi.</td>
   </tr>
   <tr>
-   <td>node.type.management.residue.definition.supported</td>
+   <td>node.type.management.residual.definitions.supported</td>
    <td>true indica che l'archivio supporta le proprietà del nome con definizioni residue. Se supportato, l'attributo name di una definizione di elemento può essere un asterisco ("*").</td>
   </tr>
   <tr>
-   <td>node.type.management.autocreated.definition.supported</td>
+   <td>node.type.management.autocreated.definitions.supported</td>
    <td>true indica che l'archivio supporta la creazione automatica di elementi secondari (nodi o proprietà) di un nodo al momento della creazione del nodo.</td>
   </tr>
   <tr>
@@ -445,11 +448,11 @@ Informazioni sul repository CRX
    <td>true indica che option.xml.export.support è true e che query.language ha una lunghezza diversa da zero.</td>
   </tr>
   <tr>
-   <td>option.unfield.content.supported</td>
+   <td>option.unfiled.content.supported</td>
    <td>true indica che l'archivio supporta il contenuto non archiviato. I nodi non archiviati non fanno parte della gerarchia del repository.</td>
   </tr>
   <tr>
-   <td>jcr.Specification.name</td>
+   <td>jcr.specification.name</td>
    <td>Nome della specifica JCR implementata dalla directory archivio.</td>
   </tr>
   <tr>
@@ -469,7 +472,7 @@ Informazioni sul repository CRX
    <td> </td>
   </tr>
   <tr>
-   <td>option.activity.supported</td>
+   <td>option.activities.supported</td>
    <td>true indica che il repository supporta le attività. Le attività sono un insieme di modifiche che vengono eseguite in un’area di lavoro unita a un’altra area di lavoro.</td>
   </tr>
   <tr>
@@ -503,7 +506,7 @@ Informazioni sul repository CRX
 
 **BackupResult** Lo stato del backup corrente. I seguenti valori sono possibili:
 
-* Backup in corso: È in esecuzione un backup.
+* Backup in corso: È in corso l&#39;esecuzione di un backup.
 * Backup annullato: Il backup è stato annullato.
 * Backup completato con errore: Errore durante il backup. Il messaggio di errore fornisce informazioni sulla causa.
 * Backup completato: Backup riuscito.
@@ -539,11 +542,11 @@ Sola lettura.
 
 * Argomenti:
 
-   * delete: Un valore booleano che indica se eliminare gli elementi del repository non utilizzati. Un valore true causa l&#39;eliminazione di nodi e proprietà inutilizzati. Se si imposta il valore false, tutti i nodi vengono sottoposti a scansione ma non vengono eliminati.
+   * delete: Un valore booleano che indica se eliminare gli elementi del repository non utilizzati. Un valore true causa l&#39;eliminazione di nodi e proprietà inutilizzati. Se si imposta il valore false, tutti i nodi vengono sottoposti a scansione, ma non vengono eliminati.
 
 * Valore restituito: none
 
-**stopDataStoreGarbageCollection** Arresta una raccolta di oggetti inattivi nell&#39;archivio dati in esecuzione.
+**stopDataStoreGarbageCollection** Interrompe una raccolta di oggetti inattivi nell&#39;archivio dati in esecuzione.
 
 * Argomenti: none
 * Valore restituito: rappresentazione in formato stringa dello stato corrente
@@ -587,7 +590,7 @@ Sola lettura.
 * Argomenti: none
 * Valore restituito: none
 
-**tarIndexMerge** Unisce i file di indice principali di tutti i set TAR. I file indice principali sono file con diverse versioni principali. Ad esempio, i file seguenti vengono uniti nel file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. I file che sono stati uniti vengono eliminati (nell’esempio precedente, index_1_1.tar, index_2_0.tar e index_3_0.tar vengono eliminati).
+**tarIndexMerge** Unisce i file di indice principali di tutti i set TAR. I file di indice principali sono file con diverse versioni principali. Ad esempio, i file seguenti vengono uniti nel file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. I file che sono stati uniti vengono eliminati (nell’esempio precedente, index_1_1.tar, index_2_0.tar e index_3_0.tar vengono eliminati).
 
 * Argomenti:
 
@@ -595,12 +598,12 @@ Sola lettura.
 
 * Valore restituito: none
 
-**diventaClusterMaster** Imposta il nodo del repository come nodo master del cluster. Se non è già master, questo comando arresta il listener dell&#39;istanza master corrente e avvia un listener master sul nodo corrente. Questo nodo viene quindi impostato come nodo master e si riavvia, causando la connessione di tutti i nodi slave a questa istanza.
+**diventaClusterMaster** Imposta il nodo del repository come nodo master del cluster. Se non è già master, questo comando arresta il listener dell&#39;istanza master corrente e avvia un listener master sul nodo corrente. Questo nodo viene quindi impostato come nodo master e si riavvia, causando la connessione a questa istanza di tutti gli altri nodi del cluster (ossia quelli controllati dal master).
 
 * Argomenti: none
 * Valore restituito: none
 
-**joinCluster** Aggiunge l&#39;archivio a un cluster come nodo slave. È necessario fornire un nome utente e una password a scopo di autenticazione. La connessione utilizza l&#39;autenticazione di base. Le credenziali di protezione sono codificate in base 64 prima di essere inviate al server.
+**joinCluster** Aggiunge l&#39;archivio a un cluster come nodo controllato dal master del cluster. È necessario fornire un nome utente e una password a scopo di autenticazione. La connessione utilizza l&#39;autenticazione di base. Le credenziali di protezione sono codificate in base 64 prima di essere inviate al server.
 
 * Argomenti:
 
@@ -651,7 +654,7 @@ Per ogni tipo di statistica segnalato sono forniti i seguenti attributi:
 
 * ValorePerSecondo: Il valore misurato al secondo nell’ultimo minuto. Sola lettura.
 * ValuePerMinute: Il valore misurato al minuto nell’ultima ora. Sola lettura.
-* ValorePerOra: Il valore misurato per ora nell&#39;ultima settimana. Sola lettura.
+* ValuePerHour: Il valore misurato per ora nell&#39;ultima settimana. Sola lettura.
 * ValuePerWeek: Valore misurato per settimana negli ultimi tre anni. Sola lettura.
 
 ## Statistiche query repository {#repository-query-stats}
@@ -687,10 +690,10 @@ Informazioni statistiche sulle query del repository.
 
 Monitorare i servizi per ogni agente di replica. Quando create un agente di replica, il servizio viene visualizzato automaticamente nella console JMX.
 
-* **** Dominio: com.adobe.granite.replica
-* **** Tipo: agent
-* **** Nome: nessun valore
-* **** Proprietà: {id=&quot;*Name*&quot;}, dove *Name* è il valore della proprietà Nome agente.
+* **Dominio:** com.adobe.granite.replica
+* **Tipo:** agent
+* **Nome:** nessun valore
+* **Proprietà:** {id=&quot;*Name*&quot;}, dove *Name* è il valore della proprietà Nome agente.
 
 ### Attributi {#attributes-3}
 
@@ -749,7 +752,7 @@ Lettura/scrittura.
 Fornisce statistiche sulle richieste HTTP in modo da poter monitorare le prestazioni del servizio SlingRequestProcessor.
 
 * Dominio: org.apache.sling
-* Tipo: Engine
+* Tipo: Motore
 * Proprietà: {service=RequestProcessor}
 
 ### Attributi {#attributes-4}
@@ -914,7 +917,7 @@ Viene avviata la console JConsole e viene visualizzata la finestra JConsole.
 
 ### Collegamento a un processo CRX locale {#connecting-to-a-local-crx-process}
 
-JConsole visualizzerà un elenco dei processi Java Virtual Machine locali. L&#39;elenco conterrà due processi di avvio rapido. Selezionare il processo &quot;FIGLIO&quot; dall&#39;elenco dei processi locali (in genere quello con il PID più alto).
+JConsole visualizzerà un elenco dei processi Java Virtual Machine locali. L&#39;elenco conterrà due processi di avvio rapido. Selezionare il processo &quot;FIGLIO&quot; di avvio rapido dall&#39;elenco dei processi locali (in genere quello con il PID più alto).
 
 ![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 
