@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Panoramica {#overview}
 
-La funzione di messaggistica di AEM Communities consente ai visitatori del sito che hanno effettuato l&#39;accesso (membri) di inviare messaggi a un altro utente che sono accessibili dopo l&#39;accesso al sito.
+La funzione di messaggistica per i AEM Communities consente ai visitatori del sito (membri) che hanno effettuato l’accesso di inviare messaggi a un altro utente accessibili una volta effettuato l’accesso al sito.
 
 La messaggistica è abilitata per un sito community selezionando una casella durante la creazione [del sito](/help/communities/sites-console.md)community.
 
@@ -30,7 +33,7 @@ Per ulteriori informazioni per gli sviluppatori, consulta [Messaging Essentials]
 
 ## Servizio Operazioni di messaggistica {#messaging-operations-service}
 
-Il servizio [Operazioni messaggistica](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities di configurazione identifica l&#39;endpoint che gestisce le richieste correlate ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
+Il servizio [Operazioni messaggistica](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities di configurazione identifica l&#39;endpoint che gestisce le richieste relative ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
 
 Per i siti della community creati utilizzando l&#39; `Communities Sites console`, esiste già un&#39;istanza del servizio, con la casella in entrata impostata su `/mail/inbox`.
 
@@ -44,7 +47,7 @@ Come mostrato di seguito, esiste una configurazione del servizio per i siti crea
 
 Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+** accanto al nome del servizio:
 
-* **Whitelist Campi Messaggio**
+* **Campi messaggio consentiti**
 
    Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
 
@@ -108,13 +111,13 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
    Se supportAttachments è selezionato, questo valore specifica la dimensione totale massima consentita (in byte) di tutti gli allegati. Il valore predefinito è *104857600* (100 MB).
 
-* **Tipo di allegato lista nera**
+* **Elenco blocchi tipo di allegato**
 
-   Una blacklist di estensioni di nomi file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in blacklist, l’estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
+   Un blocco di estensioni di nomi file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in elenco, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
 
 * **Tipi di allegati consentiti**
 
-   **(*Action Required*)** Una whitelist di estensioni di nomi file, in corrispondenza dell&#39;opposto della blacklist. Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blacklist, utilizzate l&#39;icona **-** per rimuovere la singola voce vuota.
+   **(*Action Required*)** Un elenco di estensioni di nomi file consentite, nell&#39;opposto dell&#39;elenco di blocco. Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blocco, utilizzate l&#39;icona **-** per rimuovere la singola voce vuota.
 
 * **Selezione servizio**
 
@@ -122,15 +125,15 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
    Il valore predefinito è */bin/messaging* .
 
-* **Whitelist del campo**
+* **Elenco campi consentiti**
 
-   Utilizza l’elenco bianceolico dei campi **messaggio**.
+   Usa elenco campi **messaggio**.
 
 >[!CAUTION]
 >
 >Ogni volta che una `Messaging Operations Service` configurazione viene aperta per la modifica, se `allowedAttachmentTypes.name` è stata rimossa, viene aggiunta una voce vuota per rendere la proprietà configurabile. Una singola voce vuota disattiva efficacemente gli allegati.
 >
->Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blacklist, utilizzate l&#39;icona **-** per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
+>Per consentire tutte le estensioni di file, ad eccezione di quelle elencate, utilizzate l&#39;icona **-** per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
 
 
 ## Group Messaging {#group-messaging}
