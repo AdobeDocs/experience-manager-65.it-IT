@@ -1,9 +1,12 @@
 ---
 title: Configurare i plug-in Editor Rich Text
-description: Scopri come configurare i plug-in Editor di testo RTF di Adobe Experience Manager per abilitare singole funzionalità.
+description: Scoprite come configurare i plug-in Editor di testo RTF  Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '4400'
+ht-degree: 3%
 
 ---
 
@@ -36,12 +39,12 @@ Per impostazione predefinita, `format`, `link`, `list`, `justify`e `control` i p
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * un nodo di configurazione alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * Sono di tipo: **jcr:directType**`cq:Widget`
+   * Sono di tipo: **jcr:PrimaryType** `cq:Widget`
    * Entrambe hanno la seguente proprietà:
 
       * **Nome** `name`
       * **Tipo** `String`
-      * **Valore**`./text`
+      * **Valore** `./text`
 
 
 1. A seconda dell’interfaccia per la quale state configurando, create un nodo `<rtePlugins-node>`, se non esiste:
@@ -80,7 +83,7 @@ Quando si utilizza l’editor Rich Text, gli autori possono incollare il contenu
 
 * **Modalità** MS Word: Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e viene mantenuta solo la formattazione parziale.
 
-### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’editor Rich Text {#configure-paste-options-available-on-the-rte-toolbar}
+### Configurare le opzioni Incolla disponibili nella barra degli strumenti dell’editor Rich Text  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Nella barra degli strumenti dell’editor Rich Text è possibile fornire agli autori alcune o nessuna di queste tre icone:
 
@@ -146,6 +149,7 @@ Per configurare quali formati sono consentiti quando si incolla del testo in AEM
    * **Nome** `underline`
    * **Nome** `anchor` (per collegamenti e ancoraggi denominati)
    * **Nome** `image`
+
    Tutte le proprietà sono di **tipo** `Boolean`, quindi in **Valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
 
    >[!NOTE]
@@ -267,6 +271,7 @@ Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare rifer
    * **Nome** `externalStyleSheets`
    * **Type** `String[]` (multi-stringa; fate clic su **Multi** in CRXDE)
    * **Valore(i)** Percorso e nome del file di ogni foglio di stile da includere. Utilizzare i percorsi dell&#39;archivio.
+
    >[!NOTE]
    >
    >È possibile aggiungere riferimenti a fogli di stile aggiuntivi in qualsiasi momento successivo.
@@ -342,7 +347,9 @@ Per creare lo stile che gli autori possono applicare al testo giapponese, effett
    * Valore: `jpn-word-wrap` (senza un precedente `.`)
 
 1. Aggiungere il testo della proprietà allo stesso nodo. Il valore è il nome dello stile che gli autori vedono quando selezionano lo stile.
-   * Nome: `text`*Tipo: `String`
+   * Nome: `text`
+*Tipo: 
+`String`
    * Valore: `Japanese word-wrap`
 
 1. Creare un foglio di stile e specificarne il percorso. Vedere [specificare la posizione del foglio di stile](#locationofstylesheet). Aggiungere il contenuto seguente al foglio di stile. Modificate il colore di sfondo come desiderato.
@@ -452,7 +459,7 @@ Se si aggiungono caratteri speciali, la selezione predefinita viene ignorata. Se
 
    * **Nome** `features`
    * **Tipo** `String[]`
-   * **Valore**`specialchars`
+   * **Valore** `specialchars`
 
           (o `String / *` se si applicano tutte le funzioni per questo plug-in)
 
@@ -485,7 +492,7 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 
 ### Definire un intervallo di caratteri {#definerangechar}
 
-1. Utilizzate i passaggi da 1 a 3 della sezione [Definizione di un singolo carattere](#definingasinglecharacter).
+1. Utilizzate i passaggi da 1 a 3 della sezione [Definizione di un singolo carattere](#definesinglechar).
 1. In `chars` Aggiungi un nuovo nodo per contenere la definizione dell&#39;intervallo di caratteri:
 
    * **Il nome** può essere specificato, ma deve riflettere l’intervallo di caratteri; ad esempio, matite.
@@ -494,10 +501,12 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 1. Sotto questo nodo (denominato in base all&#39;intervallo di caratteri speciale) aggiungere le due seguenti proprietà:
 
    * **Nome** `rangeStart`
+
       **Tipo** `Long`
       **Valore** della rappresentazione [Unicode](https://unicode.org/) (decimale) del primo carattere dell&#39;intervallo
 
    * **Nome** `rangeEnd`
+
       **Tipo** `Long`
       **Valore** della rappresentazione [Unicode](https://unicode.org/) (decimale) dell&#39;ultimo carattere dell&#39;intervallo
 
@@ -526,7 +535,8 @@ Copiare e incollare tabelle in o dal componente RTE dipende dal browser. Non è 
 
    * **Nome** `features`
    * **Tipo** `String`
-   * **Valore**`*`
+   * **Valore** `*`
+
    >[!NOTE]
    Se non si desidera abilitare tutte le funzionalità della tabella, è possibile creare la `features` proprietà come:
    * **Tipo** `String[]`
@@ -672,6 +682,7 @@ Questo è applicabile solo quando si utilizza l’editor Rich Text in una finest
    * **Nome** `height`
    * **Tipo** `Long`
    * **Specificate** l’altezza del quadro di modifica in pixel.
+
    >[!NOTE]
    L&#39;altezza della finestra di dialogo non viene modificata.
 
@@ -691,11 +702,13 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
 
    * **Nome** `htmlRules`
    * **Tipo** `nt:unstructured`
+
    >[!NOTE]
    Il `../items/text` nodo ha la proprietà:
    * **Nome** `xtype`
    * **Tipo** `String`
-   * **Valore**`richtext`
+   * **Valore** `richtext`
+
    La posizione del `../items/text` nodo può variare, a seconda della struttura del dialogo; due esempi:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
@@ -732,6 +745,7 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
 
       * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
+
       Sul nodo `targetConfig`: definire le proprietà richieste:
 
       * Specificate la modalità di destinazione:
