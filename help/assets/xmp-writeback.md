@@ -3,7 +3,7 @@ title: Write-back XMP per le rappresentazioni
 description: Scoprite in che modo la funzione di writeback XMP propaga le modifiche dei metadati per una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 711cd438cc8962d310bb2bfbb14f079161aacce0
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 5%
@@ -43,7 +43,7 @@ Per consentire alla funzione di WriteBack XMP di estendere le modifiche ai metad
 
 Per estendere i metadati alle miniature delle rappresentazioni 140.100.png e 319.319.png, effettuate le seguenti operazioni.
 
-1. Nell’interfaccia di Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
+1. Nell&#39;interfaccia Experience Manager , accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 1. Dalla pagina Modelli, aprite il modello di flusso di lavoro **[!UICONTROL DAM Metadata Writeback]** .
 1. Nella pagina delle proprietà **[!UICONTROL Writeback di metadati DAM]**, apri il passaggio **[!UICONTROL Processo write-back XMPs]**.
 1. In the [!UICONTROL Step Properties] dialog box, click the **[!UICONTROL Process]** tab.
@@ -76,7 +76,7 @@ Il filtro dei metadati XMP tramite l&#39;elenco consentito risolve il problema c
 
 >[!NOTE]
 >
->Il filtro funziona solo per le proprietà derivate da origini XMP nei file binari delle risorse. Per le proprietà derivate da origini non XMP, come i formati EXIF e IPTC, il filtro non funziona. Ad esempio, la data di creazione delle risorse è memorizzata nella proprietà denominata `CreateDate` in EXIF TIFF. Questo valore viene memorizzato in un campo di metadati denominato `exif:DateTimeOriginal`. Poiché l&#39;origine è un&#39;origine non XMP, il filtraggio non funziona su questa proprietà.
+>Il filtro funziona solo per le proprietà derivate da origini XMP nei file binari delle risorse. Per le proprietà derivate da origini non XMP, come i formati EXIF e IPTC, il filtro non funziona. Ad esempio, la data di creazione delle risorse è memorizzata nella proprietà denominata `CreateDate` in EXIF TIFF.  Experience Manager memorizza questo valore in un campo di metadati denominato `exif:DateTimeOriginal`. Poiché l&#39;origine è un&#39;origine non XMP, il filtraggio non funziona su questa proprietà.
 
 <!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
 in Config Manager. And the settings are,
@@ -90,14 +90,14 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. Per aprire Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]** .
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
+1. Per filtrare le proprietà XMP bloccate dopo l&#39;applicazione del filtro tramite l&#39;elenco consentito, specificate quelle nella casella Nomi XML **[!UICONTROL bloccati per il filtro]** XMP.
 
    >[!NOTE]
    >
-   >L&#39;opzione **[!UICONTROL Applica lista nera alle proprietà]** XMP è selezionata per impostazione predefinita. In altre parole, il filtraggio utilizzando un elenco bloccato è attivato per impostazione predefinita. Per disattivare tale filtro, deselezionate l&#39;opzione **[!UICONTROL Applica lista nera alle proprietà]** XMP.
+   >L&#39;opzione **[!UICONTROL Applica blocco alle proprietà]** XMP è selezionata per impostazione predefinita. In altre parole, il filtraggio utilizzando un elenco bloccato è attivato per impostazione predefinita. Per disattivare questo filtro, deselezionate l&#39;opzione **[!UICONTROL Applica blocco alle proprietà]** XMP.
 
 1. Salva le modifiche.
