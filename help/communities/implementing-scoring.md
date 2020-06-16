@@ -1,8 +1,8 @@
 ---
 title: Punteggio e distintivi delle community
 seo-title: Punteggio e distintivi delle community
-description: Il punteggio e i badge di AEM Communities consentono di identificare e premiare i membri della community
-seo-description: Il punteggio e i badge di AEM Communities consentono di identificare e premiare i membri della community
+description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
+seo-description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2897'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-La funzione punteggio e badge di AEM Communities consente di identificare e premiare i membri della community.
+La funzione AEM Communities punteggio e simboli consente di identificare e premiare i membri della community.
 
 I principali aspetti del punteggio e dei simboli sono:
 
@@ -228,7 +228,7 @@ Le regole secondarie sono nodi di tipo `cq:Page` con proprietà sul relativo `jc
    <td>Lungo</td>
    <td>
     <ul>
-     <li>obbligatorio; il verbo corrisponde a un'azione di evento</li>
+     <li>obbligatorio; il verbo corrisponde a un'azione evento</li>
      <li>deve essere presente almeno una proprietà verbo</li>
      <li>il verbo deve essere inserito in tutto MAIUSCOLO</li>
      <li>possono essere presenti più proprietà verbo, ma non sono presenti duplicati</li>
@@ -355,7 +355,7 @@ La `scoringRules` proprietà di una regola di contrassegno limita semplicemente 
      <li>number = score</li>
      <li>| = il carattere della linea verticale (U+007C)</li>
      <li>percorso = percorso completo della risorsa immagine del contrassegno</li>
-    </ul> Le stringhe devono essere ordinate in modo che i numeri aumentino in valore e che tra il numero e il percorso non vengano visualizzati spazi bianchi.<br /> Voce di esempio:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> Le stringhe devono essere ordinate in modo che i numeri aumentino in valore e che non venga visualizzato spazio vuoto tra il numero e il percorso.<br /> Voce di esempio:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
