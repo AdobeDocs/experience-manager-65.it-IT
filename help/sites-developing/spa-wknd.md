@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: b67693829e1fa16e29b8fb6293e4212ac866130d
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,10 @@ Impara a sviluppare SPA con questa esercitazione multi-parte che ti guida attrav
 
 ## Esercitazioni {#tutorials}
 
-Per un esempio completo della creazione di un’applicazione a pagina singola modificabile con AEM che inizia con la configurazione del progetto tramite il routing dell’applicazione, consultate la [Guida introduttiva all’Editor AEM SPA - Esercitazione](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)sugli eventi WKND. Sono disponibili versioni dell&#39;esercitazione per i framework React e Angular.
+Per un esempio end-to-end della creazione di un’applicazione a pagina singola modificabile con AEM a partire dalla configurazione del progetto tramite il routing dell’applicazione, consultate le Esercitazioni SPA WKND:
+
+* [Guida introduttiva ad AEM SPA Editor e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Guida introduttiva ad AEM SPA Editor e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
 Prima di iniziare il progetto SPA per AEM, assicurati di consultare anche il documento [Sviluppo di app per AEM](/help/sites-developing/spa-architecture.md) .
 
