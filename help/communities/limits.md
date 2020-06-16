@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ I limiti dei contributi possono essere attivati singolarmente dalla console [](m
 
 Utilizzando la console Membri, i limiti dei contributi possono essere rimossi in modo proattivo per un membro da un manager della community in qualsiasi momento, o rimossi in modo reattivo quando un membro invia un messaggio a un manager della community che effettua tale richiesta.
 
-## Configurazione dei limiti di contributo generato dagli utenti di AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configurazione Limiti Di Contributo Generati Dall’Utente AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Questa configurazione OSGi:
 
@@ -50,7 +53,7 @@ Per raggiungere questa configurazione OSGi:
 
 * **[!UICONTROL Applica automaticamente limiti contributi UGC]**
 
-   Se questa opzione è attivata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Ciò si riflette nel profilo del membro della community e può essere attivato/disabilitato dalla console [](members.md)dei membri. I nuovi membri con un indirizzo e-mail da un dominio elencato in bianco non sono mai vincolati.
+   Se questa opzione è attivata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Ciò si riflette nel profilo del membro della community e può essere attivato/disabilitato dalla console [](members.md)dei membri. I nuovi membri con un indirizzo e-mail da un elenco consentito di domini non sono mai vincolati.
 
    Il valore predefinito è deselezionato.
 
@@ -68,11 +71,11 @@ Per raggiungere questa configurazione OSGi:
 
 * **[!UICONTROL Domini]**
 
-   Un elenco bianco di uno o più domini e-mail. Selezionate l’icona + per aggiungere altre voci.
+   Elenco dei domini e-mail consentiti. Selezionate l’icona + per aggiungere altre voci.
 
-   Gli utenti con indirizzi e-mail nei domini elencati in bianco non vengono interessati dall’applicazione automatica dei limiti dei contributi UGC. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail non `me@mycompany.com` viene mai imposto il divieto di pubblicazione.
+   Gli utenti con indirizzi e-mail nell’elenco di domini consentito non vengono interessati dall’applicazione automatica dei limiti dei contributi UGC. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail non `me@mycompany.com` viene mai imposto il divieto di pubblicazione.
 
-   Il valore predefinito è un elenco bianco vuoto.
+   Il valore predefinito è un elenco di permessi vuoto.
 
 * **[!UICONTROL Destinatari messaggistica]**
 
