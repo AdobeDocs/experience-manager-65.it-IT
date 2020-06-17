@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3cbbad3ce9d93a353f48fc3206df989a8bf1991a
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +26,11 @@ Il team AEM di Adobe ha lavorato a stretto contatto con il progetto open source 
 
 L&#39;agente Jar incluso in questo pacchetto è la distribuzione modificata di NotSoSerial da parte di Adobe.
 
-NotSoSerial è una soluzione a livello Java per un problema a livello Java e non è specifica per AEM. Aggiunge un controllo di verifica preliminare a un tentativo di deserializzazione di un oggetto. Questo controllo verifica il nome di una classe rispetto a una whitelist e/o blacklist in stile firewall. A causa del numero limitato di classi nella blacklist predefinita, è improbabile che ciò abbia un impatto sui sistemi o sul codice.
+NotSoSerial è una soluzione a livello Java per un problema a livello Java e non è specifica per AEM. Aggiunge un controllo di verifica preliminare a un tentativo di deserializzazione di un oggetto. Questo controllo verifica il nome di una classe rispetto a un elenco di autorizzazioni e/o blocchi in stile firewall. A causa del numero limitato di classi nell&#39;elenco dei blocchi predefiniti, è improbabile che ciò abbia un impatto sui sistemi o sul codice.
 
-Per impostazione predefinita, l&#39;agente eseguirà un controllo della blacklist rispetto alle classi vulnerabili attualmente note. Questa blacklist ha lo scopo di proteggerti dall&#39;elenco corrente di sfruttatori che utilizzano questo tipo di vulnerabilità.
+Per impostazione predefinita, l&#39;agente eseguirà un controllo elenco blocchi rispetto alle classi vulnerabili attualmente note. Questo elenco di blocchi è inteso a proteggere l&#39;utente dall&#39;elenco corrente di sfruttatori che utilizzano questo tipo di vulnerabilità.
 
-La blacklist e la whitelist possono essere configurate seguendo le istruzioni fornite nella sezione [Configurazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
+L&#39;elenco dei blocchi e l&#39;elenco di autorizzazioni possono essere configurati seguendo le istruzioni fornite nella sezione [Configurazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
 
 L&#39;agente ha lo scopo di attenuare le ultime classi vulnerabili conosciute. Se il progetto sta deserializzando dati non attendibili, potrebbe comunque essere vulnerabile agli attacchi di negazione del servizio, agli attacchi di memoria esauriti e agli attacchi di deserializzazione futuri sconosciuti.
 
@@ -41,7 +44,7 @@ Adobe supporta ufficialmente Java 6, 7 e 8, ma la nostra comprensione è che Not
 
 1. Installate il bundle **com.adobe.cq.cq-serialization-tester** .
 
-1. Andate alla console Web del pacchetto all&#39;indirizzo `https://server:port/system/console/bundles`
+1. Passate alla console Web del pacchetto all&#39;indirizzo `https://server:port/system/console/bundles`
 1. Cercate il bundle di serializzazione e avviatelo. Questo dovrebbe caricare dinamicamente l&#39;agente NotSoSerial.
 
 ## Installazione dell&#39;agente sui server applicazioni {#installing-the-agent-on-application-servers}
@@ -54,7 +57,7 @@ L’agente NotSoSerial non è incluso nella distribuzione standard di AEM per i 
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Andate alla posizione del nuovo avvio rapido AEM decompresso e copiate la `crx-quickstart/opt/notsoserial/` cartella nella `crx-quickstart` cartella di installazione del server applicazione AEM.
+1. Andate alla posizione del nuovo avvio rapido di AEM decompresso e copiate la `crx-quickstart/opt/notsoserial/` cartella nella `crx-quickstart` cartella di installazione del server applicazione AEM.
 
 1. Modificate la proprietà dell&#39;utente `/opt` che esegue il server:
 
@@ -66,7 +69,7 @@ L’agente NotSoSerial non è incluso nella distribuzione standard di AEM per i 
 
 ## Configurazione dell&#39;agente {#configuring-the-agent}
 
-La configurazione predefinita è adeguata per la maggior parte delle installazioni. Ciò include una blacklist delle classi vulnerabili di esecuzione remota note e una whitelist di pacchetti in cui la deserializzazione di dati attendibili dovrebbe essere relativamente sicura.
+La configurazione predefinita è adeguata per la maggior parte delle installazioni. Questo include un elenco di blocchi delle classi vulnerabili di esecuzione remota conosciute e un elenco di indirizzi consentiti di pacchetti in cui la deserializzazione di dati attendibili dovrebbe essere relativamente sicura.
 
 La configurazione del firewall è dinamica e può essere modificata in qualsiasi momento:
 
@@ -80,21 +83,21 @@ La configurazione del firewall è dinamica e può essere modificata in qualsiasi
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Questa configurazione contiene la whitelist, la blacklist e la registrazione della deserializzazione.
+Questa configurazione contiene l&#39;elenco di autorizzazioni, l&#39;elenco di blocchi e la registrazione della deserializzazione.
 
-**Whitelist**
+**Consenti elenco**
 
-Nella sezione whitelist, si tratta di classi o prefissi di pacchetti che saranno consentiti per la deserializzazione. È importante tenere presente che se si deserializzano le classi, sarà necessario aggiungere le classi o i pacchetti a questa whitelist.
+Nella sezione Consenti elenco, si tratta di classi o prefissi di pacchetti che saranno consentiti per la deserializzazione. È importante tenere presente che se si deserializzano le classi, sarà necessario aggiungere le classi o i pacchetti all&#39;elenco Consenti.
 
-**Blacklist**
+**Elenco blocchi**
 
-Nella sezione della blacklist sono incluse le classi che non possono essere deserializzate. La serie iniziale di queste classi è limitata alle classi che sono state trovate vulnerabili agli attacchi di esecuzione remota. La blacklist viene applicata prima di qualsiasi voce presente nella white list.
+Nella sezione elenco blocchi sono incluse le classi che non possono essere deserializzate. La serie iniziale di queste classi è limitata alle classi che sono state trovate vulnerabili agli attacchi di esecuzione remota. L&#39;elenco dei blocchi viene applicato prima di qualsiasi voce di elenco Consenti.
 
 **Registrazione diagnostica**
 
-Nella sezione per la registrazione diagnostica, potete scegliere diverse opzioni di registro in fase di deserializzazione. Questi vengono registrati solo per il primo utilizzo e non vengono registrati di nuovo per gli usi successivi.
+Nella sezione per la registrazione diagnostica, potete scegliere diverse opzioni di registrazione quando viene eseguita la deserializzazione. Questi vengono registrati solo per il primo utilizzo e non vengono registrati di nuovo per gli usi successivi.
 
-Per impostazione predefinita, solo **nome** classe contiene le classi che vengono deserializzate.
+Per impostazione predefinita, solo **nome** classe vi informa delle classi che vengono deserializzate.
 
 Potete anche impostare l’opzione **full-stack** che registrerà uno stack Java del primo tentativo di deserializzazione per informarvi su dove si svolge la deserializzazione. Questo può essere utile per trovare e rimuovere la deserializzazione dall’utilizzo.
 
@@ -110,15 +113,15 @@ Per ulteriori informazioni sulla risoluzione dei problemi con l&#39;agente, vedi
 
 >[!NOTE]
 >
->Se aggiungete `org.apache.commons.collections.functors` alla whitelist, il controllo dello stato non riuscirà mai.
+>Se si aggiunge `org.apache.commons.collections.functors` all&#39;elenco Consenti, la verifica dello stato non riuscirà mai.
 
 ## Gestione degli errori con caricamento agente dinamico {#handling-errors-with-dynamic-agent-loading}
 
-Se nel registro sono riportati errori o i passaggi di verifica rilevano un problema durante il caricamento dell&#39;agente, potrebbe essere necessario caricare l&#39;agente manualmente. Questo è consigliato anche nel caso in cui si utilizzi un JRE (Java Runtime Environment) invece di un JDK (Java Development Toolkit), poiché gli strumenti per il caricamento dinamico non sono disponibili.
+Se nel registro sono riportati degli errori o i passaggi di verifica rilevano un problema durante il caricamento dell&#39;agente, potrebbe essere necessario caricare l&#39;agente manualmente. Questo è consigliato anche nel caso in cui si utilizzi un JRE (Java Runtime Environment) invece di un JDK (Java Development Toolkit), poiché gli strumenti per il caricamento dinamico non sono disponibili.
 
 Per caricare l&#39;agente manualmente, seguire le istruzioni riportate di seguito:
 
-1. Modificare i parametri di avvio JVM del Jar CQ, aggiungendo la seguente opzione:
+1. Modificate i parametri di avvio JVM del Jar CQ, aggiungendo la seguente opzione:
 
    ```shell
    -javaagent:<aem-installation-folder>/crx-quickstart/opt/notsoserial/notsoserial.jar
@@ -139,4 +142,3 @@ Per caricare l&#39;agente manualmente, seguire le istruzioni riportate di seguit
 ## Altre considerazioni {#other-considerations}
 
 Se utilizzi una JVM IBM, consulta la documentazione relativa al supporto per l&#39;API Java Attach in [questa posizione](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
-
