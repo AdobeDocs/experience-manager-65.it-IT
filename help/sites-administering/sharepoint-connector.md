@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+workflow-type: tm+mt
+source-wordcount: '1599'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ Tutte le funzionalità sono implementate utilizzando i servizi Web di SharePoint
 
 >[!NOTE]
 >
->Il connettore SharePoint è supportato anche con AEM 6.1 service pack 2. Il connettore non supporta più il montaggio dell&#39;archivio virtuale e, pertanto, non può essere montato. Se desiderate accedere all&#39;archivio di SharePoint utilizzando le API Java, utilizzate l&#39;implementazione dell&#39;archivio JCR del connettore di Sharepoint nel progetto.
+>Il connettore SharePoint è supportato anche con il service pack 2 di AEM 6.1. Il connettore non supporta più il montaggio dell&#39;archivio virtuale e, pertanto, non può essere montato. Se desiderate accedere all&#39;archivio di SharePoint utilizzando le API Java, utilizzate l&#39;implementazione dell&#39;archivio JCR del connettore di Sharepoint nel progetto.
 >
 >L&#39;installazione, la configurazione, la gestione e le operazioni IT del server SharePoint e dell&#39;infrastruttura IT correlata non rientrano nell&#39;ambito del presente documento. Per informazioni su questi argomenti, consulta la documentazione del fornitore in [SharePoint](https://www.microsoft.com/sharepoint) . Il connettore richiede che queste parti dell&#39;infrastruttura siano installate, configurate e gestite correttamente.
 
@@ -51,7 +54,7 @@ Per iniziare a utilizzare il connettore, effettuare le seguenti operazioni:
 
 ## Installazione del connettore SharePoint {#installing-sharepoint-connector}
 
-Il connettore è un pacchetto di contenuti che semplifica l&#39;installazione. Installate il pacchetto utilizzando Package Manager, quindi impostate l&#39;URL del server SharePoint e altre opzioni di configurazione. Il contenuto di SharePoint è disponibile nell&#39;archivio AEM.
+Il connettore è un pacchetto di contenuti che semplifica l&#39;installazione. Installate il pacchetto utilizzando Package Manager, quindi impostate l&#39;URL del server di SharePoint e altre opzioni di configurazione. Il contenuto di SharePoint è disponibile nell&#39;archivio AEM.
 
 ### Requisiti di installazione {#installation-requirements}
 
@@ -60,10 +63,10 @@ Il connettore richiede quanto segue:
 * Java Runtime Environment 1.7 o versione successiva
 * SharePoint Web Services disponibile nella rete
 * URL server SharePoint
-* Credenziali utente e autorizzazioni per repository CRX e SharePoint
+* Credenziali utente e autorizzazioni per i repository CRX e SharePoint
 * [Piattaforme supportate](#supported-platforms)
 
-Il connettore SharePoint è disponibile per il download da [packagesshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+Il connettore di SharePoint è disponibile per il download da [packagesshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Piattaforme supportate {#supported-platforms}
 
@@ -88,7 +91,7 @@ Il connettore supporta le seguenti funzionalità:
 
 AEM Package Share viene utilizzato per distribuire funzionalità, esempi e correzioni di prodotti. Per informazioni dettagliate, consultate la documentazione [di](/help/sites-administering/package-manager.md#package-share)Package Share.
 
-Per accedere a Condivisione pacchetti nella pagina di benvenuto di AEM, tocca o fai clic su **Strumenti** , quindi seleziona Condivisione **** pacchetti. È necessario un ID Adobe valido che includa l&#39;indirizzo e-mail della società. Inoltre, dopo aver effettuato l&#39;accesso al vostro account, fate domanda per l&#39;accesso a Package Share.
+Per accedere a Condivisione pacchetti nella pagina di benvenuto di AEM, tocca o fai clic su **Strumenti** , quindi seleziona Condivisione **** pacchetti. È necessario un Adobe ID  valido che includa l&#39;indirizzo e-mail della società. Inoltre, dopo aver effettuato l&#39;accesso al vostro account, richiedete l&#39;accesso a Package Share.
 
 #### Integrazione con AEM {#integrating-with-aem}
 
@@ -123,19 +126,19 @@ Per impostare l&#39;URL del server SharePoint e le opzioni avanzate, procedere c
 
 Parametri &#39;Workspaces&#39; e &#39;Default Workspace Name&#39;:
 
-Per impostazione predefinita, il connettore espone una singola area di lavoro JCR. Il server SharePoint esposto da questa area di lavoro viene impostato tramite il parametro di configurazione &#39;URL server SharePoint&#39;.
+Per impostazione predefinita, il connettore espone un&#39;unica area di lavoro JCR. Il server SharePoint esposto da questa area di lavoro viene impostato tramite il parametro di configurazione &#39;URL server SharePoint&#39;.
 
 Il connettore può essere configurato anche per più aree di lavoro. In questo caso, ogni area di lavoro è associata all&#39;URL del rispettivo server SharePoint esposto attraverso l&#39;area di lavoro. Per aggiungere un’area di lavoro, aggiungete una definizione dell’area di lavoro al parametro Workspaces. Una definizione di area di lavoro ha il formato seguente:
-`<name>`= `<url>` dove`<name>``<url>` è il nome dell’area di lavoro JCR ed è l’URL del server SharePoint per tale area di lavoro.
+`<name>`= `<url>` dove`<name>``<url>` è il nome dell&#39;area di lavoro JCR ed è l&#39;URL del server di SharePoint per tale area di lavoro.
 
-In AEM, eseguite un altro passaggio oltre ai passaggi di configurazione indicati sopra. Inserite nella whitelist il bundle &#39;**com.day.cq.dam.cq-dam-jcr-Connectors**&#39;.
+In AEM, eseguite un altro passaggio oltre ai passaggi di configurazione indicati sopra. Consente di elencare il bundle &#39;**com.day.cq.dam.cq-dam-jcr-conneccr**&#39;.
 
-Per inserire nella whitelist i bundle in AEM, effettuate le seguenti operazioni:
+Per consentire la creazione di pacchetti di elenchi in AEM, effettuate le seguenti operazioni:
 
 1. Andate alla console di gestione OSGi: http://localhost:4502/system/console/configMgr.
 1. Cercate il servizio &quot;Apache Sling Login Admin Whitelist&quot;.
-1. Selezionate Ignora la whitelist.
-1. Aggiungi i &#39;**com.day.cq.dam.cq-dam-jcr-connector**&#39; nei bundle della whitelist predefiniti
+1. Selezionate **Ignora la whitelist**.
+1. Aggiungi `com.day.cq.dam.cq-dam-jcr-connectors` in bundle di whitelist predefiniti
 1. Fate clic su Salva.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
@@ -156,7 +159,7 @@ Dopo aver configurato il connettore, verificare quanto segue:
 
 ### Configurazione della sincronizzazione DAM con il server SharePoint {#configuring-dam-sync-with-the-sharepoint-server}
 
-Per sincronizzare le risorse SharePoint con AEM, effettua le seguenti operazioni:
+Per sincronizzare le risorse di SharePoint con AEM, effettua le seguenti operazioni:
 
 1. Andate alla console di gestione OSGi: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Cercate il servizio &quot;Default DAMAssetSynchronization&quot;.
@@ -203,7 +206,7 @@ Vai a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 
 1. Fare clic su OSGI -> Configurazione
 1. Cerca &quot;Connettore JCR Day per Microsoft SharePoint&quot;
-1. Fate clic su &quot;Edit the configuration values&quot; (Modifica valori di configurazione)
+1. Fate clic su &quot;Edit the configuration values&quot; (Modifica i valori di configurazione)
 1. Impostate il valore di ‘Sharepoint Connection Factory’ come ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’
 1. Fai clic su **Salva**.
 
@@ -219,7 +222,7 @@ Vai a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 
 Solo un utente autenticato su AEM e SharePoint può accedere al contenuto SharePoint tramite il connettore.
 
-Potete inoltre utilizzare l&#39;estensione del connettore per l&#39;autenticazione per creare un modulo di autenticazione personalizzato, che, ad esempio, associa l&#39;accesso degli utenti AEM a utenti SharePoint specifici. Crea utenti AEM corrispondenti agli utenti di SharePoint (il nome utente e la password devono corrispondere) per poter visualizzare il contenuto di SharePoint mappato all&#39;istanza del connettore.
+Potete inoltre utilizzare l&#39;estensione del connettore per l&#39;autenticazione per creare un modulo di autenticazione personalizzato, che, ad esempio, associa l&#39;accesso degli utenti AEM a utenti di SharePoint specifici. Crea utenti AEM corrispondenti agli utenti di SharePoint (il nome utente e la password devono corrispondere) per poter visualizzare il contenuto di SharePoint mappato all&#39;istanza del connettore.
 
 Per creare un utente in AEM:
 
