@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '2841'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ L&#39;abilitazione del livello di trasporto HTTPS sia sulle istanze di creazione
 
 ### Installazione degli hotfix di sicurezza {#install-security-hotfixes}
 
-Accertatevi di aver installato gli hotfix di [sicurezza più recenti forniti da Adobe](https://helpx.adobe.com/experience-manager/kb/aem63-available-hotfixes.html).
+Accertatevi di aver installato gli hotfix di [sicurezza più recenti forniti da Adobe](https://helpx.adobe.com/it/experience-manager/kb/aem63-available-hotfixes.html).
 
 ### Modificare le password predefinite per gli account di amministrazione di AEM e OSGi Console {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -76,7 +79,7 @@ Qui puoi modificare l&#39; `admin` account e [cambiare la password](/help/sites-
 
 A parte l’account AEM `admin` , la mancata modifica della password predefinita per la console Web OSGi può comportare:
 
-* esposizione del server con una password predefinita durante l&#39;avvio e lo spegnimento (che può richiedere minuti per i server di grandi dimensioni);
+* Esposizione del server con una password predefinita durante l&#39;avvio e lo spegnimento (che può richiedere minuti per i server di grandi dimensioni);
 * Esposizione del server quando il repository è inattivo/riavviato e OSGI è in esecuzione.
 
 Per ulteriori informazioni sulla modifica della password della console Web, consultate [Modifica della password](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) amministratore della console Web OSGi.
@@ -105,13 +108,13 @@ Adobe consiglia di definire pagine del gestore di errori personalizzate, in part
 >
 >Per ulteriori informazioni, vedere [Creazione di script personalizzati o articolo della knowledge base per i gestori](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) di errori.
 
-### Elenco di controllo completo per la protezione del dispatcher {#complete-dispatcher-security-checklist}
+### Elenco di controllo completo per la sicurezza Dispatcher {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher è una componente fondamentale dell&#39;infrastruttura. Adobe consiglia vivamente di completare l&#39;elenco di controllo della sicurezza del [dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html).
 
 >[!CAUTION]
 >
->Utilizzando il dispatcher è necessario disabilitare il selettore &quot;.form&quot;.
+>Utilizzando Dispatcher è necessario disabilitare il selettore &quot;.form&quot;.
 
 ## Passaggi di verifica {#verification-steps}
 
@@ -119,7 +122,7 @@ AEM Dispatcher è una componente fondamentale dell&#39;infrastruttura. Adobe con
 
 Un&#39;installazione standard di AEM specifica `admin` come utente per le credenziali di trasporto all&#39;interno degli agenti [di](/help/sites-deploying/replication.md)replica predefiniti. Inoltre, l&#39;utente amministratore viene utilizzato per eseguire la replica nel sistema di creazione.
 
-Per motivi di sicurezza, è opportuno modificare entrambe le opzioni in modo da riflettere il caso di utilizzo specifico in questione, tenendo presenti i due aspetti seguenti:
+Per motivi di sicurezza, è opportuno modificare entrambe le opzioni in modo da riflettere il caso d’uso specifico in questione, tenendo presenti i due aspetti seguenti:
 
 * L&#39;utente **di** trasporto non deve essere l&#39;utente amministratore. Configurate invece un utente nel sistema di pubblicazione che disponga solo dei diritti di accesso alle porzioni pertinenti del sistema di pubblicazione e utilizzate le credenziali dell&#39;utente per il trasporto.
 
@@ -169,9 +172,9 @@ Il servizio filtro di riferimento è un servizio OSGi che consente di configurar
 
 * quali metodi http devono essere filtrati
 * se è consentita un&#39;intestazione di referente vuota
-* e una white list di server da consentire oltre all&#39;host del server.
+* e un elenco di server da consentire oltre all&#39;host del server.
 
-Per impostazione predefinita, tutte le varianti di localhost e i nomi host correnti a cui è associato il server si trovano nella white list.
+   Per impostazione predefinita, tutte le varianti di localhost e i nomi host correnti che il server è associato sono nell&#39;elenco.
 
 Per configurare il servizio filtro di riferimento:
 
@@ -188,7 +191,7 @@ Per configurare il servizio filtro di riferimento:
 
    &lt;protocollo>://&lt;server>:&lt;porta>
 
-   Esempio:
+   Ad esempio:
 
    * `https://allowed.server:80` consente tutte le richieste da questo server con la porta specificata.
    * Se desiderate anche consentire le richieste https, dovete immettere una seconda riga.
@@ -260,6 +263,7 @@ Un attacco Denial of Service (DoS) è un tentativo di rendere una risorsa comput
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
+
    Tutte le varianti valide (ad esempio, restituire una `200` risposta e configurate per essere memorizzate nella cache) verranno memorizzate nella cache dal dispatcher, con conseguente file system completo e nessun servizio per ulteriori richieste.
 
 Ci sono molti punti di configurazione per prevenire tali attacchi, qui discutiamo solo di quelli direttamente correlati ad AEM.
@@ -315,9 +319,9 @@ Per evitare l&#39;uso improprio dei DoS è possibile:
 >
 >Questa limitazione deve essere eseguita solo sugli ambienti AEM che non utilizzano Forms.
 
-Poiché AEM non fornisce indici out-of-box per i `FormChooserServlet`, l’utilizzo di selettori di moduli nelle query attiverà un lungo attraversamento del repository, in genere bloccando l’istanza di AEM. I selettori dei moduli possono essere rilevati dalla presenza di **&amp;ast;.form.** &amp;ast; stringa nelle query.
+Poiché AEM non fornisce indici out-of-box per i `FormChooserServlet`, l’utilizzo di selettori di moduli nelle query attiverà un lungo attraversamento del repository, in genere bloccando l’istanza di AEM. I selettori dei moduli possono essere rilevati dalla presenza di **&amp;ast;.form.&amp;ast;** stringa nelle query.
 
-Per attenuare la situazione, attenersi alla procedura seguente:
+Per attenuare questo problema, attenetevi alla procedura seguente:
 
 1. Andate alla console Web puntando il browser su *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 
@@ -328,7 +332,7 @@ Per attenuare la situazione, attenersi alla procedura seguente:
 
 **Mitigare contro i DoS causati dal servlet di download delle risorse**
 
-Il Servlet di download delle risorse predefinito in AEM consente agli utenti autenticati di inviare richieste di download simultanei di dimensioni arbitrarie per creare file ZIP di risorse visibili agli utenti che possono sovraccaricare il server e/o la rete.
+Il Servlet di download delle risorse predefinito in AEM consente agli utenti autenticati di inviare richieste di download simultanei di dimensioni arbitrarie per la creazione di file ZIP di risorse visibili agli utenti che possono sovraccaricare il server e/o la rete.
 
 Per attenuare i potenziali rischi DoS causati da questa funzione, il componente `AssetDownloadServlet` OSGi è disabilitato per impostazione predefinita per le istanze di pubblicazione nelle versioni AEM più recenti.
 
@@ -350,7 +354,7 @@ WebDAV deve essere disattivato sia negli ambienti di creazione che di pubblicazi
 
 1. Fate clic sul pulsante Interrompi (nella colonna Azioni) per arrestare il bundle.
 
-1. Anche in questo elenco, trovate il bundle denominato:
+1. Di nuovo nell&#39;elenco dei bundle, trovate il bundle denominato:
 
    `Apache Sling DavEx Access to repositories (org.apache.sling.jcr.davex)`
 
@@ -388,9 +392,9 @@ Per evitare il clickjacking, si consiglia di configurare il server Web in modo c
 
 Per ulteriori [informazioni sul clickjacking, vedere il sito](https://www.owasp.org/index.php/Clickjacking)OWASP.
 
-### Verificare Di Replicare Correttamente Le Chiavi Di Cifratura Quando Necessario {#make-sure-you-properly-replicate-encryption-keys-when-needed}
+### Se Necessario, Assicuratevi Di Replicare Correttamente Le Chiavi Di Cifratura {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
-Alcune funzioni AEM e alcuni schemi di autenticazione richiedono la replica delle chiavi di crittografia in tutte le istanze AEM.
+Alcune funzioni di AEM e alcuni schemi di autenticazione richiedono la replica delle chiavi di crittografia in tutte le istanze di AEM.
 
 Prima di eseguire questa operazione, tenere presente che la replica chiave viene eseguita in modo diverso tra le versioni, perché il modo in cui le chiavi vengono memorizzate è diverso tra la versione 6.3 e le versioni precedenti.
 
@@ -408,14 +412,15 @@ Più specificamente, è necessario:
 1. Individuate il bundle com.adobe.granite.crypto.file nel file system locale. Ad esempio, in questo percorso:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+
    Il `bundle.info` file all’interno di ciascuna cartella identificherà il nome del bundle.
 
-1. Passa alla cartella dei dati. Esempio:
+1. Passa alla cartella dei dati. Ad esempio:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Copiate i file HMAC e master.
-1. Quindi, passate all&#39;istanza di destinazione alla quale desiderate duplicare la chiave HMAC e individuate la cartella di dati. Esempio:
+1. Quindi, passate all&#39;istanza di destinazione alla quale desiderate duplicare la chiave HMAC e individuate la cartella di dati. Ad esempio:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
@@ -433,7 +438,7 @@ Più specificamente, è necessario:
 
 In AEM 6.2 e nelle versioni precedenti, le chiavi sono memorizzate nella directory archivio sotto il `/etc/key` nodo.
 
-Il modo consigliato per replicare in modo sicuro le chiavi nelle istanze consiste solo nel replicare questo nodo. È possibile replicare selettivamente i nodi tramite CRXDE Lite:
+Il modo consigliato per replicare in modo sicuro le chiavi nelle istanze consiste solo nel replicare questo nodo. È possibile replicare i nodi in modo selettivo tramite CRXDE Lite:
 
 1. Aprite CRXDE Lite andando a *https://&lt;serveraddress>:4502/crx/de/index.jsp*
 1. Select the `/etc/key` node.
