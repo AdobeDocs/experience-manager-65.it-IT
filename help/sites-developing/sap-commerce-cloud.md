@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '2331'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +35,9 @@ Il framework di integrazione include un livello di integrazione con un&#39;API. 
 >
 >[È disponibile anche la documentazione](/help/sites-developing/ecommerce.md#api-documentation) API.
 
-Per usare il livello di integrazione, sono disponibili diversi componenti AEM forniti con il prodotto. Attualmente questi sono:
+Per usare il livello di integrazione, sono disponibili diversi componenti AEM forniti con il prodotto. Attualmente si tratta di:
 
-* un componente di visualizzazione del prodotto
+* un componente per la visualizzazione di un prodotto
 * un carrello
 * check-out
 
@@ -109,8 +112,7 @@ Per sviluppare per Hybris 4 è necessario quanto segue:
 
    `-P hybris4`
 
-   
-Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel pacchetto:
+   Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel pacchetto:
 
    ```
    cq-commerce-hybris-server
@@ -118,7 +120,7 @@ Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel pacchetto
 
 * In Gestione configurazione OSGi:
 
-   * Disattivate il supporto di Hybris 5 per il servizio Parser risposte predefinito.
+   * Disattivate il supporto di Hybris 5 per il servizio Parser di risposte predefinito.
    * Verificate che il servizio Gestore autenticazione di base Hybris abbia una classificazione di servizio inferiore a quella del servizio Gestore OAuth di Hybris.
 
 ### Gestione sessione {#session-handling}
@@ -126,7 +128,7 @@ Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel pacchetto
 hybris utilizza una sessione utente per memorizzare informazioni come il carrello acquisti del cliente. L&#39;ID sessione viene restituito da hybris in un `JSESSIONID` cookie che deve essere inviato in seguito a richieste successive ad hybris. Per evitare di memorizzare l’ID sessione nell’archivio, questo viene codificato in un altro cookie memorizzato nel browser dell’acquirente. Vengono eseguiti i seguenti passaggi:
 
 * Alla prima richiesta non viene impostato alcun cookie sulla richiesta dell&#39;acquirente; viene quindi inviata una richiesta all’istanza hybris per creare una sessione.
-* I cookie di sessione vengono estratti dalla risposta, codificati in un nuovo cookie (ad esempio `hybris-session-rest`) e impostati sulla risposta dell&#39;acquirente. La codifica in un nuovo cookie è necessaria, perché il cookie originale è valido solo per un determinato percorso e in caso contrario non viene inviato dal browser nelle richieste successive. Le informazioni sul percorso devono essere aggiunte al valore del cookie.
+* I cookie di sessione vengono estratti dalla risposta, codificati in un nuovo cookie (ad esempio, `hybris-session-rest`) e impostati sulla risposta dell&#39;acquirente. La codifica in un nuovo cookie è necessaria, perché il cookie originale è valido solo per un determinato percorso e in caso contrario non viene inviato dal browser nelle richieste successive. Le informazioni sul percorso devono essere aggiunte anche al valore del cookie.
 * Su richieste successive, i cookie vengono decodificati dai `hybris-session-<*xxx*>` cookie e impostati sul client HTTP utilizzato per richiedere i dati da hybris.
 
 >[!NOTE]
@@ -155,7 +157,7 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
 
 * Un carico iniziale di ID è fornito da hybris come feed. Possono essere presenti aggiornamenti a questo feed.
 * hybris fornirà informazioni di aggiornamento tramite un feed (che verrà controllato da AEM).
-* Quando AEM utilizza i dati di prodotto, invia le richieste ai hybris per i dati correnti (richiesta di ottenimento condizionale con data dell’ultima modifica).
+* Quando AEM utilizza i dati di prodotto, invia le richieste agli ibridi per i dati correnti (richiesta di ottenimento condizionale con data dell’ultima modifica).
 * In hybris è possibile specificare il contenuto di feed in modo dichiarativo.
 * La mappatura della struttura del feed al modello di contenuto AEM avviene nella scheda del feed sul lato AEM.
 
@@ -170,6 +172,7 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
 * L’estensione hybris fornisce un importatore polling (&quot;schema hybris&quot;), che può essere configurato per importare le modifiche in AEM a un intervallo specificato (ad esempio, ogni 24 ore in cui l’intervallo è specificato in secondi):
 
    * 
+
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -225,6 +228,7 @@ Mentre i prodotti (in generale) possono avere molti assi di variante, il compone
    >
 1. più uno
    >   Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
+
 >
 
 
@@ -264,7 +268,7 @@ Infine, non è previsto l&#39;uso di dati di prodotto. È possibile inserire tut
 
 **API**
 
-#### com.adobe.cq.comCommerce.api.Interfaccia prodotto {#com-adobe-cq-commerce-api-product-interface}
+#### com.adobe.cq.com di prodotto.api.Interfaccia di prodotto {#com-adobe-cq-commerce-api-product-interface}
 
 ```java
 public interface Product extends Adaptable {
@@ -286,7 +290,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -409,7 +413,7 @@ public class AxisFilter implements VariantFilter {
    * Consente di `CommerceSession` eseguire operazioni di aggiunta, rimozione e così via.
    * Vengono `CommerceSession` inoltre eseguiti i vari calcoli sul carrello. &quot;
 
-* Anche se non direttamente correlati al carrello, il `CommerceSession` cliente deve anche fornire informazioni sui prezzi del catalogo (dal momento che possiede i prezzi)
+* Anche se non direttamente correlati al carrello, l&#39; `CommerceSession` operatore deve anche fornire informazioni sui prezzi del catalogo (dal momento che possiede i prezzi)
 
    * La determinazione prezzi può avere diversi modificatori:
 
@@ -540,13 +544,11 @@ Il progetto principale offre diverse classi generiche / helper:
 
 1. `CommerceQuery`
 
-   
-Viene utilizzato per descrivere una query di ricerca (contiene informazioni sul testo della query, la pagina corrente, la dimensione della pagina, l’ordinamento e i facet selezionati). Tutti i servizi eCommerce che implementano l&#39;API di ricerca riceveranno le istanze di questa classe per eseguire la ricerca. È `CommerceQuery` possibile creare un&#39;istanza di un oggetto di richiesta ( `HttpServletRequest`).
+   Viene utilizzato per descrivere una query di ricerca (contiene informazioni sul testo della query, la pagina corrente, la dimensione della pagina, l’ordinamento e i facet selezionati). Tutti i servizi eCommerce che implementano l&#39;API di ricerca riceveranno le istanze di questa classe per eseguire la ricerca. È `CommerceQuery` possibile creare un&#39;istanza di un oggetto di richiesta ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   
-È una classe di utilità che fornisce un metodo statico, `toParams` , utilizzato per generare stringhe di `GET` parametri da un elenco di facet e un valore attivato. Questa funzione è utile nell’interfaccia utente, dove è necessario visualizzare un collegamento ipertestuale per ciascun valore di ciascun facet, in modo che quando l’utente fa clic sul collegamento ipertestuale il relativo valore venga attivato (ovvero se è stato selezionato, viene rimosso dalla query, altrimenti aggiunto). Questo si occupa di tutte le logiche di gestione di facet multivalore/monomalore, valori prevalenti, ecc.
+   È una classe di utilità che fornisce un metodo statico, `toParams` , utilizzato per generare stringhe di `GET` parametri da un elenco di facet e un valore attivato. Questa funzione è utile nell’interfaccia utente, dove è necessario visualizzare un collegamento ipertestuale per ciascun valore di ciascun facet, in modo che quando l’utente fa clic sul collegamento ipertestuale il relativo valore venga attivato (ovvero se è stato selezionato, viene rimosso dalla query, altrimenti aggiunto). Questo si occupa di tutte le logiche di gestione di facet multivalore/monomalore, valori prevalenti, ecc.
 
 Il punto di ingresso per l&#39;API di ricerca è il `CommerceService#search` metodo che restituisce un `CommerceResult` oggetto. Per ulteriori informazioni su questo argomento, consulta la Documentazione [sulle](/help/sites-developing/ecommerce.md#api-documentation) API.
 
@@ -558,9 +560,9 @@ L&#39;integrazione è fornita tra AEM e vari sistemi di eCommerce. Ciò richiede
 
    Si presume che AEM sia l’ *unico* front-end Web e pertanto esegue *tutta* l’autenticazione.
 
-* Account slave
+* Account in Hybris
 
-   AEM crea un account slave in hybris per ogni acquirente. Il nome utente dell’account slave è uguale al nome utente di AEM. Una password crittografata casuale viene generata automaticamente e memorizzata (cifrata) in AEM.
+   AEM crea un account corrispondente (subordinato) in hybris per ogni acquirente. Il nome utente di questo account è lo stesso del nome utente di AEM. Una password crittografata casuale viene generata automaticamente e memorizzata (cifrata) in AEM.
 
 #### Utenti preesistenti {#pre-existing-users}
 
@@ -572,7 +574,7 @@ Un front-end AEM può essere posizionato davanti a un’implementazione ibrida e
 
       * creare un nuovo utente hybris con una password crittografata casuale
       * memorizzare il nome utente hybris nella directory utente dell’utente AEM
-   * Vedi: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
+   * Consulta: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 
 * hybris -> AEM
@@ -583,7 +585,7 @@ Un front-end AEM può essere posizionato davanti a un’implementazione ibrida e
       * in caso di esito positivo, create il nuovo utente in AEM con la stessa password (il valore aggiunto specifico di AEM darà luogo all’hash specifico di AEM)
    * L&#39;algoritmo di cui sopra è implementato in una Sling `AuthenticationInfoPostProcessor`
 
-      * Vedi: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
+      * Consulta: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
 
 
 ### Personalizzazione del processo di importazione {#customizing-the-import-process}
