@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: cd7331f5f57ec90ea72d41d467891dc832347a3c
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Questi sono elencati di seguito, insieme a una spiegazione di come CRX si occupa
 
 ## 1. Iniezione {#injection}
 
-* SQL - Prevenzione della progettazione: La configurazione predefinita del repository non include né richiede un database tradizionale, tutti i dati vengono memorizzati nell&#39;archivio dei contenuti. L&#39;accesso è limitato agli utenti autenticati e può essere eseguito solo tramite l&#39;API JCR. SQL è supportato solo per le query di ricerca (SELECT). Inoltre, SQL offre supporto per il binding dei valori.
+* SQL - Prevenzione della progettazione: La configurazione predefinita del repository non include né richiede un database tradizionale, tutti i dati vengono memorizzati nell&#39;archivio dei contenuti. L&#39;accesso è limitato agli utenti autenticati e può essere eseguito solo tramite l&#39;API JCR. SQL è supportato solo per le query di ricerca (SELECT). Inoltre, SQL offre il supporto per il binding dei valori.
 * LDAP - L’inserimento LDAP non è possibile, poiché il modulo di autenticazione filtra l’input ed esegue l’importazione dell’utente tramite il metodo bind.
 * Sistema operativo: nessuna esecuzione shell eseguita dall&#39;interno dell&#39;applicazione.
 
@@ -31,7 +34,7 @@ Questi sono elencati di seguito, insieme a una spiegazione di come CRX si occupa
 
 La pratica generale di mitigazione consiste nel codificare tutti gli output di contenuto generato dall&#39;utente utilizzando una libreria di protezione XSS lato server basata su [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
-XSS è una priorità assoluta sia durante il test che durante lo sviluppo e tutti i problemi rilevati vengono (generalmente) risolti immediatamente.
+XSS è una priorità assoluta sia durante il test che durante lo sviluppo, e tutti i problemi rilevati vengono (generalmente) risolti immediatamente.
 
 ## 3. Autenticazione e gestione delle sessioni interrotte {#broken-authentication-and-session-management}
 
@@ -45,7 +48,7 @@ L&#39;accesso agli oggetti dati è gestito dall&#39;archivio e pertanto limitato
 
 Il CSRF (Cross-Site Request Forgery) è attenuato dall&#39;inserimento automatico di un token di crittografia in tutti i moduli e le richieste AJAX e dalla verifica del token sul server per ogni POST.
 
-Inoltre, AEM viene fornito con un filtro basato sull’intestazione del referente, che può essere configurato per consentire solo le richieste POST da host elencati in bianco.
+Inoltre, AEM viene fornito con un filtro basato sull’intestazione del referente, che può essere configurato per consentire *solo* richieste POST da host specifici (definito in un elenco).
 
 ## 6. Protezione non configurata {#security-misconfiguration}
 
@@ -57,7 +60,7 @@ Per ulteriori informazioni, consulta l&#39;elenco [di controllo](/help/sites-adm
 
 Le password sono memorizzate come hash crittografici nel nodo utente; per impostazione predefinita tali nodi sono leggibili solo dall&#39;amministratore e dall&#39;utente stesso.
 
-I dati sensibili, come le credenziali di terzi, vengono memorizzati in un modulo crittografato utilizzando una libreria di crittografia certificata FIPS 140-2.
+I dati sensibili, come le credenziali di terze parti, vengono memorizzati in un modulo crittografato utilizzando una libreria di crittografia certificata FIPS 140-2.
 
 ## 8. Errore di limitazione dell&#39;accesso all&#39;URL {#failure-to-restrict-url-access}
 
