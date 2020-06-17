@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: b01f6d3726fd6aa06ffedaf10dfde9526479a2a3
+workflow-type: tm+mt
+source-wordcount: '2880'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +48,7 @@ Il motore di query Oak supporta le seguenti lingue:
 
 Il backend basato su Apache Oak consente di collegare diversi indicizzatori al repository.
 
-Un indicizzatore è l&#39;Indice **** proprietà, per il quale la definizione dell&#39;indice è memorizzata nell&#39;archivio stesso.
+Un indicizzatore è l&#39;indice **delle** proprietà, per il quale la definizione dell&#39;indice è memorizzata nell&#39;archivio stesso.
 
 Per impostazione predefinita sono disponibili anche le implementazioni per **Apache Lucene** e **Solr** , che supportano entrambe l&#39;indicizzazione full-text.
 
@@ -77,13 +80,14 @@ Il tipo del nodo di indice deve essere **oak:QueryIndexDefinition.** Sono dispon
 
 L&#39;indice delle proprietà è generalmente utile per le query con vincoli di proprietà ma non con testo completo. Può essere configurato seguendo la procedura seguente:
 
-1. Aprire CRXDE andando `http://localhost:4502/crx/de/index.jsp`
+1. Aprite CRXDE andando `http://localhost:4502/crx/de/index.jsp`
 1. Crea un nuovo nodo sotto **quercia:indice**
 1. Denominate il nodo **PropertyIndex** e impostate il tipo di nodo su **oak:QueryIndexDefinition**
 1. Imposta le seguenti proprietà per il nuovo nodo:
 
-   * **** type:  `property` (di tipo String)
-   * **** propertyNames:  `jcr:uuid` (di tipo Nome)
+   * **type:**  `property` (di tipo String)
+   * **propertyNames:**  `jcr:uuid` (di tipo Nome)
+
    In questo esempio viene indicizzata la `jcr:uuid` proprietà, il cui lavoro consiste nell&#39;esporre l&#39;identificatore universale univoco (UUID) del nodo a cui è associata.
 
 1. Salva le modifiche.
@@ -119,8 +123,8 @@ Puoi configurare un indice full-text di Lucene seguendo la procedura seguente:
 1. Denominate il nodo **LuceneIndex** e impostate il tipo di nodo su **oak:QueryIndexDefinition**
 1. Aggiungi le seguenti proprietà al nodo:
 
-   * **** type:  `lucene` (di tipo String)
-   * **** asincrono:  `async` (di tipo String)
+   * **type:**  `lucene` (di tipo String)
+   * **asincrono:**  `async` (di tipo String)
 
 1. Salva le modifiche.
 
@@ -129,7 +133,7 @@ L&#39;indice Lucene presenta le seguenti opzioni di configurazione:
 * La proprietà **type** che specifica il tipo di indice deve essere impostata su **lucene**
 * La proprietà **asincrona** che deve essere impostata su **asincrona**. Questo invierà il processo di aggiornamento dell&#39;indice a un thread in background.
 * La proprietà **includePropertyTypes** , che definirà quale sottoinsieme di tipi di proprietà verrà incluso nell&#39;indice.
-* La proprietà **excludePropertyNames** che definirà una blacklist di nomi di proprietà, proprietà da escludere dall&#39;indice.
+* La proprietà **excludePropertyNames** che definirà un elenco di nomi di proprietà - proprietà da escludere dall&#39;indice.
 * Il flag **reindex** che, se impostato su **true**, attiva un reindicizzatore contenuto completo.
 
 ### Indice delle proprietà di Lucene {#the-lucene-property-index}
@@ -169,7 +173,7 @@ Una volta creato il nodo, aggiungere le seguenti proprietà:
    false (of type Boolean)
    ```
 
-* **** includePropertyNames: `["alias"] (of type String)`
+* **includePropertyNames:** `["alias"] (of type String)`
 
 >[!NOTE]
 >
@@ -197,7 +201,7 @@ L&#39;analizzatore predefinito per un indice è configurato nell&#39; `default` 
 
 #### Specifica diretta della classe Analyzer {#specifying-the-analyzer-class-directly}
 
-Se desiderate utilizzare un analizzatore out-of-box, potete configurarlo seguendo la procedura seguente:
+Se desiderate utilizzare un analizzatore out-of-the-box, potete configurarlo seguendo la procedura seguente:
 
 1. Individuare l&#39;indice con cui si desidera utilizzare l&#39;analizzatore sotto il `oak:index` nodo.
 
@@ -207,14 +211,16 @@ Se desiderate utilizzare un analizzatore out-of-box, potete configurarlo seguend
 
    * **Nome:** `class`
    * **Tipo:** `String`
-   * **** Valore: `org.apache.lucene.analysis.standard.StandardAnalyzer`
+   * **Valore:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+
    Il valore è il nome della classe analizzatore che si desidera utilizzare.
 
    È inoltre possibile impostare l&#39;analizzatore da utilizzare con una versione lucene specifica utilizzando la proprietà `luceneMatchVersion` stringa opzionale. Un sintax valido per utilizzarlo con Lucene 4.7 sarebbe:
 
    * **Nome:** `luceneMatchVersion`
    * **Tipo:** `String`
-   * **** Valore: `LUCENE_47`
+   * **Valore:** `LUCENE_47`
+
    Se non `luceneMatchVersion` viene fornito, Oak utilizzerà la versione di Lucene con cui viene spedito.
 
 1. Se si desidera aggiungere un file di stop words alle configurazioni dell&#39;analizzatore, è possibile creare un nuovo nodo sotto `default` quello con le seguenti proprietà:
@@ -242,7 +248,7 @@ Considerate questa struttura di nodi come esempio:
          * **Nome proprietà:** `name`
 
             * **Tipo:** `String`
-            * **** Valore: `Standard`
+            * **Valore:** `Standard`
       * **Nome:** `filters`
       * **Tipo:** `nt:unstructured`
 
@@ -252,7 +258,7 @@ Considerate questa struttura di nodi come esempio:
             * **Nome proprietà:** `words`
 
                * **Tipo:** `String`
-               * **** Valore: `stop1.txt, stop2.txt`
+               * **Valore:** `stop1.txt, stop2.txt`
             * **Nome:** `stop1.txt`
 
                * **Tipo:** `nt:file`
@@ -307,9 +313,9 @@ AEM può essere utilizzato con un server Solr incorporato che può essere config
 1. Apri CRXDE e accedi come amministratore.
 1. Aggiungete un nodo denominato **solrlndex** di tipo **oak:QueryIndexDefinition** in **oak:index** con le seguenti proprietà:
 
-   * **** type: `solr`(di tipo String)
-   * **** asincrono: `async`(di tipo String)
-   * **** reindex: `true`(di tipo Boolean)
+   * **type:** `solr`(di tipo String)
+   * **asincrono:** `async`(di tipo String)
+   * **reindex:** `true`(di tipo Boolean)
 
 1. Salva le modifiche.
 
@@ -321,9 +327,11 @@ AEM può anche essere configurato per l’utilizzo con un’istanza del server S
 1. Ora, create due truffe Solr. A tale scopo, potete creare delle cartelle per ogni condivisione nella cartella in cui è stato eseguito il upacked del file Solr:
 
    * Per la prima condivisione, create la cartella:
+
    `<solrunpackdirectory>\aemsolr1\node1`
 
    * Per la seconda condivisione, create la cartella:
+
    `<solrunpackdirectory>\aemsolr2\node2`
 
 1. Individuate l&#39;istanza di esempio nel pacchetto Solr. In genere si trova in una cartella denominata &quot; `example`&quot; nella directory principale del pacchetto.
@@ -368,9 +376,9 @@ AEM può anche essere configurato per l’utilizzo con un’istanza del server S
 1. Vai a CRXDE e accedi come amministratore.
 1. Create un nuovo nodo denominato **solrIndex** in **oak:index** e impostate le seguenti proprietà:
 
-   * **** type: solr (di tipo String)
-   * **** asincrono: asincrono (di tipo String)
-   * **** reindex: true (di tipo Boolean)
+   * **type:** solr (di tipo String)
+   * **asincrono:** asincrono (di tipo String)
+   * **reindex:** true (di tipo Boolean)
 
 1. Salva le modifiche.
 
@@ -411,7 +419,7 @@ Questa sezione presenta una serie di raccomandazioni sulle azioni da intraprende
 
 #### Preparazione delle informazioni di debug per l&#39;analisi {#preparing-debugging-info-for-analysis}
 
-Il modo più semplice per ottenere le informazioni necessarie per la query da eseguire è tramite lo strumento [](/help/sites-administering/operations-dashboard.md#explain-query)Spiega query. Questo consente di raccogliere le informazioni precise necessarie per eseguire il debug di una query lenta senza dover consultare le informazioni relative al livello di registro. Questa operazione è consigliabile se si conosce la query di debug.
+Il modo più semplice per ottenere le informazioni necessarie per la query da eseguire è tramite lo strumento [](/help/sites-administering/operations-dashboard.md#explain-query)Spiega query. Questo consente di raccogliere le informazioni precise necessarie per eseguire il debug di una query lenta senza dover consultare le informazioni relative al livello di registro. Questa operazione è consigliabile se si conosce la query di cui si sta eseguendo il debug.
 
 Se questo non è possibile per qualsiasi motivo, è possibile raccogliere i registri di indicizzazione in un unico file e utilizzarli per risolvere il problema specifico.
 
@@ -447,7 +455,7 @@ Poiché nella maggior parte dei casi, la configurazione di indicizzazione è mem
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
-Se l&#39;indice è configurato in una posizione diversa, modificare di conseguenza il percorso.
+Se l&#39;indice è configurato in una posizione diversa, modificare il percorso di conseguenza.
 
 #### Uscita MBean {#mbean-output}
 
@@ -479,5 +487,5 @@ Puoi anche ottenere la variante JSON di queste statistiche ai seguenti URL:
 Potete raccogliere ulteriori dettagli per facilitare la risoluzione del problema, ad esempio:
 
 1. La versione Oak su cui l&#39;istanza è in esecuzione. Per visualizzarlo, aprite CRXDE e osservate la versione nell’angolo inferiore destro della pagina di benvenuto, oppure verificate la versione del `org.apache.jackrabbit.oak-core` bundle.
-1. L&#39;output del debugger di QueryBuilder della query del problema. È possibile accedere al debugger in: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
+1. L&#39;output del debugger di QueryBuilder della query del problema. È possibile accedere al debugger all&#39;indirizzo: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
 
