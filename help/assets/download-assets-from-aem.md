@@ -3,7 +3,7 @@ title: Scarica le risorse digitali da [!DNL Adobe Experience Manager].
 description: Scoprite come scaricare le risorse [!DNL Adobe Experience Manager] da e attivare o disattivare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 527b2f50efac606a0a696c8f56b0d725f79cd692
+source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -29,7 +29,7 @@ Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file mu
 1. Selezionate la cartella o selezionate una o più risorse all’interno della cartella.
 1. Nella barra degli strumenti, toccate **[!UICONTROL Scarica]**.
 
-   ![Opzioni disponibili durante il download delle risorse da  Experience Manager Assets](/help/assets/assets/asset-download.png)
+   ![Opzioni disponibili durante il download delle risorse da  Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
    *Opzioni della finestra di dialogo Download.*
 
