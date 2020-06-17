@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 9%
 
 ---
 
@@ -164,7 +167,7 @@ Definisce il nodo predefinito per il contenuto della pagina, con le proprietà m
 * `@prop cq:template` - Percorso del modello utilizzato per creare la pagina.
 * `@prop cq:allowedTemplates` - Elenco di espressioni regolari utilizzate per determinare il percorso o i percorsi per il modello consentito.
 * `@prop pageTitle` - Titolo generalmente visualizzato nel `<title>` tag.
-* `@prop navTitle` - Titolo generalmente utilizzato nella navigazione.
+* `@prop navTitle` - Titolo generalmente utilizzato per la navigazione.
 * `@prop hideInNav` - Specifica se la pagina deve essere nascosta nella navigazione.
 * `@prop onTime` - Ora di validità della pagina.
 * `@prop offTime` - Ora in cui la pagina diventa non valida.
@@ -318,7 +321,7 @@ Definisce la configurazione per &quot;editbar&quot;.
 
 Configura una destinazione di rilascio di un componente. Il nome del nodo this verrà utilizzato come ID per il trascinamento.
 
-* `@prop accept` - elenco dei tipi di mime accettati da questo target di rilascio;ad esempio `["image/*"]`
+* `@prop accept` - elenco dei tipi di mime accettati da questo target di rilascio; ad esempio `["image/*"]`
 * `@prop groups` - Elenco di gruppi di trascinamento che accettano una sorgente.
 * `@prop propertyName` - Nome della proprietà utilizzata per memorizzare il riferimento.
 
@@ -471,7 +474,7 @@ Gli elementi in un `cq:Cq4ContentPage` file sono:
 
 * `@prop cq:csd` - ContentBus CSD della pagina.
 * `@node cq:content` - Il contenuto della pagina. Questo nodo figlio non esiste se il nodo pagina è nello stato &quot;Esistente senza contenuto&quot; o &quot;Eliminato&quot;.
-* `@node cq:attributes` - Elenco degli attributi della pagina, precedentemente noti come tag di versione. Questo nodo è obbligatorio per il tipo cq:contentPage. Al nodo degli attributi viene assegnata una versione, quando la pagina è un nodo con una versione.
+* `@node cq:attributes` - L&#39;elenco degli attributi della pagina, precedentemente noti come tag di versione. Questo nodo è obbligatorio per il tipo cq:contentPage. Al nodo degli attributi viene assegnata una versione, quando la pagina è un nodo con una versione.
 
 **Definizione**
 
@@ -488,9 +491,9 @@ Gli elementi in un `cq:Cq4ContentPage` file sono:
 Configurazione del sondaggio.
 
 * `@prop source (String) mandatory` - URI origine dati, obbligatorio e non vuoto
-* `@prop target (String)` - La posizione di destinazione in cui vengono memorizzati i dati recuperati dall&#39;origine dati. Questo è facoltativo e predefinito al nodo cq:PollConfig.
+* `@prop target (String)` - La posizione di destinazione in cui vengono memorizzati i dati recuperati dall&#39;origine dati. Questo è facoltativo e predefinito per il nodo cq:PollConfig.
 * `@prop interval (Long)` - L&#39;intervallo in secondi a cui effettuare il polling per dati nuovi o aggiornati dall&#39;origine dati. Questo è facoltativo e il valore predefinito è 30 minuti (1800 secondi).
-* [Creazione di servizi di importazione dati personalizzati per Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Creazione di servizi di importazione dati personalizzati per  Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definizione**
 
@@ -550,7 +553,7 @@ Nodetype di MailerService. Il mailer utilizza i nodi con questo mixin come nodi 
 
 **Descrizione**
 
-Definisce un mixin LiveRelationship. Un nodo master e un nodo slave possono essere virtualmente collegati tramite LiveRelationship.
+Definisce un mixin LiveRelationship. Un nodo di origine principale (con controllo) e un nodo Live Copy (controllato) possono essere virtualmente collegati tramite LiveRelationship.
 
 **Definizione**
 
@@ -563,9 +566,9 @@ Definisce un mixin LiveRelationship. Un nodo master e un nodo slave possono esse
 
 **Descrizione**
 
-Definisce un mixin LiveSync. Se un nodo è coinvolto in una LiveRelationship con un nodo master come slave, viene contrassegnato come LiveSync.
+Definisce un mixin LiveSync. Se un nodo è coinvolto in una LiveRelationship con un nodo di origine principale (che controlla) e un nodo Live Copy (controllato), viene contrassegnato come LiveSync.
 
-* `@prop cq:master` - Percorso del nodo master di LiveRelationship.
+* `@prop cq:master` - Percorso dell&#39;origine principale (controllo) di LiveRelationship.
 * `@prop cq:isDeep` - Definisce se la relazione è disponibile per gli elementi figlio.
 * `@prop cq:syncTrigger` - Definisce quando viene attivata la sincronizzazione.
 * `@node * LiveSyncAction` - Azioni da eseguire sulla sincronizzazione
@@ -580,7 +583,7 @@ Definisce un mixin LiveSync. Se un nodo è coinvolto in una LiveRelationship con
 
 **Descrizione**
 
-Definisce un mixin LiveSyncCanceled. Annulla il comportamento LiveSync di un nodo slave che potrebbe essere coinvolto in una LiveRelationship a causa di uno dei suoi elementi principali.
+Definisce un mixin LiveSyncCanceled. Annulla il comportamento LiveSync di un nodo Live Copy (controllato) che potrebbe essere coinvolto in una LiveRelationship a causa di uno dei suoi elementi principali.
 
 * `@prop cq:isCancelledForChildren` - Definisce se LiveSync è annullato; anche per i bambini.
 
@@ -762,7 +765,7 @@ Definisce un tipo di mixin che contrassegna i file che possono essere aperti con
 
 `[cq:ComponentExtractorSource] mixin`
 
-## Assegnazione di tag {#tagging}
+## Assegnazione tag {#tagging}
 
 ### cq:Tag {#cq-tag}
 
@@ -990,7 +993,7 @@ Proprietà Wiki
 
 **Descrizione**
 
-Rappresenta un&#39;istanza di workflow.
+Rappresenta un&#39;istanza del flusso di lavoro.
 
 **Definizione**
 
@@ -1109,7 +1112,7 @@ Nodo flusso di lavoro
 
 **Descrizione**
 
-Transizione flusso di lavoro
+Transizione del flusso di lavoro
 
 **Definizione**
 
