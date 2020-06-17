@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0849cfdd0e4f9a614c455214e6520ead07ae6da0
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '3805'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +109,7 @@ Non devi disabilitare JSON.
 
 Alcune impostazioni possono influire sulle prestazioni, che dovrebbero essere disattivate ove possibile, in particolare per un&#39;istanza di produzione.
 
-* VM **di** origine e VM **di** destinazione, definire la versione JDK come utilizzata come JVM di runtime
+* VM **** di origine e VM **** Target, definire la versione JDK come utilizzata come JVM di runtime
 
 * per le istanze di produzione:
 
@@ -187,7 +190,7 @@ Il servizio filtro di riferimento è un servizio OSGi che consente di configurar
 
 * quali metodi http devono essere filtrati
 * se è consentita un&#39;intestazione di referente vuota
-* e una white list di server da consentire oltre all&#39;host del server.
+* e un elenco di server da consentire oltre all&#39;host del server.
 
 Per ulteriori informazioni, consultate l&#39;elenco di controllo [della sicurezza - Problemi con la falsificazione](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) delle richieste intersito.
 
@@ -312,7 +315,7 @@ Quando utilizzate gruppi [di utenti](/help/sites-administering/cug.md) chiusi po
 
 **Configurazione della mappatura** radice di CQ Day:
 
-* **Percorso** di destinazione per definire la destinazione di reindirizzamento di una richiesta a &quot; `/`&quot;.
+* **Target Path** per definire la destinazione di reindirizzamento di una richiesta a &quot; `/`&quot;.
 
 In AEM sono disponibili due interfacce:
 
@@ -321,13 +324,13 @@ In AEM sono disponibili due interfacce:
 
 Con la mappatura della directory principale di AEM è possibile configurare l’interfaccia utente predefinita per l’istanza:
 
-* Affinché l’interfaccia touch sia l’interfaccia predefinita, **Target Path** deve puntare a:
+* Per utilizzare l’interfaccia touch come interfaccia predefinita, **Target Path** deve puntare a:
 
    ```
       /projects.html
    ```
 
-* Affinché l’interfaccia classica sia l’interfaccia predefinita, il percorso **di** Target deve puntare a:
+* Per avere l’interfaccia classica come interfaccia predefinita, **Target Path** deve puntare a:
 
    ```
       /welcome.html
@@ -343,154 +346,154 @@ Sono disponibili diverse proprietà di configurazione:
 
 * **Percorso** Percorso per il quale il gestore di autenticazione è attivo. Se questo parametro viene lasciato vuoto, il gestore di autenticazione viene disabilitato. Ad esempio, il percorso / causa l&#39;utilizzo del gestore di autenticazione per l&#39;intero repository.
 
-* **Il valore di classificazione del servizio** OSGi Framework Service Ranking viene utilizzato per indicare l&#39;ordine utilizzato per chiamare questo servizio. Si tratta di un `int` valore in cui valori più alti indicano una precedenza maggiore.
+* **Il valore di classificazione del servizio** OSGi Framework Service Ranking viene utilizzato per indicare l&#39;ordine utilizzato per chiamare questo servizio. Questa è una `int``0`
+
+* `int` dove i valori più alti indicano una precedenza maggiore.
 Il valore predefinito è `0`.
 
 * **Nomi** intestazione I nomi delle intestazioni che possono contenere un ID utente.
 
 * **Nomi** dei cookie I nomi dei cookie che possono contenere un ID utente.
 
-* **Nomi** dei parametri I nomi dei parametri di richiesta che potrebbero fornire l&#39;ID utente.
+* **Nomi** dei parametri I nomi dei parametri di richiesta che potrebbero fornire l&#39;ID utente.`admin`
 
-* **Mappa** utente Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell&#39;oggetto credenziali. La mappatura è definita qui. Se il nome utente `admin` viene visualizzato su entrambi i lati della mappa, la mappatura verrà ignorata. Tenere presente che il carattere &quot;=&quot; deve essere preceduto da un carattere &quot;\&quot; iniziale.
+* **Mappa** utente Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell&#39;oggetto credenziali. La mappatura è definita qui. Se il nome utente 
 
-* **Formato** Indica il formato in cui viene fornito l&#39;ID utente. Utilizzo:
+   * `admin` viene visualizzata su entrambi i lati della mappa. La mappatura verrà ignorata. Tenere presente che il carattere &quot;=&quot; deve essere preceduto da un carattere &quot;\&quot; iniziale.
+   * **Formato** Indica il formato in cui viene fornito l&#39;ID utente. Utilizzo:
 
-   * `Basic` se l&#39;ID utente è codificato nel formato di autenticazione di base HTTP
-   * `AsIs` se l&#39;ID utente è fornito in testo normale o se qualsiasi espressione regolare applicata deve essere utilizzata come tale o qualsiasi espressione regolare
+`Basic` se l&#39;ID utente è codificato nel formato di autenticazione di base HTTP**
+
+* `AsIs` se l&#39;ID utente è fornito in testo normale o se qualsiasi espressione regolare applicata deve essere utilizzata come tale o qualsiasi espressione regolare
 
 **Day CQ WCM Debug Filter** Questo è utile quando si sviluppa in quanto consente l&#39;utilizzo di suffissi come ?debug=layout quando si accede a una pagina. Ad esempio, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornirà informazioni sul layout che potrebbero interessare allo sviluppatore.
 
 * Disattivate questa opzione nelle istanze di produzione per garantire prestazioni e protezione.
+* **Configurazione filtro** CQ WCM Day:`analytics``?wcmmode=disabled`
 
-**Configurazione filtro** CQ WCM Day:
+* **Modalità WCM **per definire il modo predefinito.`disabled`
 
-* **Modalità WCM **per definire il modo predefinito.
-* In un’istanza di authoring questo potrebbe essere `edit`, `disable,preview` o `analytics`.
+>In un’istanza di authoring questo potrebbe essere `edit`, `disable,preview` o `analytics`.
 È possibile accedere alle altre modalità dalla barra laterale, oppure il suffisso `?wcmmode=disabled` può essere utilizzato per emulare un ambiente di produzione.
-
-* In un’istanza di pubblicazione questo deve essere impostato in modo `disabled` da assicurare che nessun’altra modalità sia accessibile.
-
->[!NOTE]
 >
->Questa impostazione viene configurata automaticamente per le istanze di produzione se si esegue AEM in modalità [pronta per la](/help/sites-administering/production-ready.md)produzione.
+>In un’istanza di pubblicazione questo deve essere impostato in modo `disabled` da assicurare che nessun’altra modalità sia accessibile.](/help/sites-administering/production-ready.md)
+
+[!NOTE]**
+
+* Questa impostazione viene configurata automaticamente per le istanze di produzione se si esegue AEM in modalità [pronta per la](/help/sites-administering/production-ready.md)produzione.
 
 **Configurazione** controllo collegamenti CQ WCM Day:
 
-* **Elenco delle configurazioni** di riscrittura per specificare un elenco di posizioni per le configurazioni del controllo dei collegamenti basate su contenuto. Le configurazioni possono essere basate sulla modalità di esecuzione; è importante distinguere tra ambienti di creazione e pubblicazione, in quanto le impostazioni del controllo dei collegamenti possono essere diverse.
+* **Elenco delle configurazioni** di riscrittura per specificare un elenco di posizioni per le configurazioni del controllo dei collegamenti basate su contenuto. Le configurazioni possono essere basate sulla modalità di esecuzione; è importante distinguere tra ambienti di creazione e pubblicazione, in quanto le impostazioni del controllo dei collegamenti possono essere diverse.`jcr:Event`
 
 **Configurazione del processore** di pagina CQ WCM Day:
 
 * **Percorsi**, un elenco di posizioni in cui il sistema ascolta le modifiche apportate alla pagina prima di attivare un `jcr:Event`.
 
-**Adobe Page Impression Tracker** Per un’istanza di creazione configurate:
-
-* **sling.auth.requirements**: imposta il valore di questa proprietà su `-/libs/wcm/stats/tracker`
+>**Adobe Page Impression Tracker** Per un’istanza di creazione configurate:
+>
+>**sling.auth.requirements**: imposta il valore di questa proprietà su `-/libs/wcm/stats/tracker`
 
 >[!CAUTION]
 >
->Questa configurazione consente richieste anonime al servizio di tracciamento.
+>Questa configurazione consente richieste anonime al servizio di tracciamento.[](/help/sites-deploying/configuring.md#enabling-page-impressions)
 
->[!NOTE]
+[!NOTE]**
+
+* Per ulteriori informazioni, consulta [Impressioni](/help/sites-deploying/configuring.md#enabling-page-impressions) pagina.`https://localhost:4502/libs/wcm/stats/tracker`
+
+* **Statistiche** pagina CQ WCM giorno Per un’istanza di pubblicazione configurare:`true``false``false`
+
+>**URL per l’invio di dati** per configurare l’URL utilizzato per il tracciamento delle statistiche delle pagine (è fondamentale se una richiesta di tracciamento passa attraverso il dispatcher); ad esempio, il valore predefinito è `https://localhost:4502/libs/wcm/stats/tracker`.
 >
->Per ulteriori informazioni, consulta [Impressioni](/help/sites-deploying/configuring.md#enabling-page-impressions) pagina.
+>**Script di tracciamento abilitato** per abilitare ( `true`) o disabilitare ( `false`) l&#39;inclusione dello script di tracciamento nelle pagine. Il valore predefinito è `false`.
 
-**Statistiche** pagina CQ WCM giorno Per un’istanza di pubblicazione configurare:
+[!NOTE]**
 
-* **URL per l’invio di dati** per configurare l’URL utilizzato per il tracciamento delle statistiche delle pagine (è fondamentale se una richiesta di tracciamento passa attraverso il dispatcher); ad esempio, il valore predefinito è `https://localhost:4502/libs/wcm/stats/tracker`.
-
-* **Script di tracciamento abilitato** per abilitare ( `true`) o disabilitare ( `false`) l&#39;inclusione dello script di tracciamento nelle pagine. Il valore predefinito è `false`.
-
->[!NOTE]
->
->Per ulteriori informazioni, consulta [Impressioni](/help/sites-deploying/configuring.md#enabling-page-impressions) pagina.
-
-**Day CQ WCM Version Manager** Control se e come vengono gestite le versioni nel sistema:
+* Per ulteriori informazioni, consulta [Impressioni](/help/sites-deploying/configuring.md#enabling-page-impressions) pagina.
+* **Day CQ WCM Version Manager** Control se e come vengono gestite le versioni nel sistema:
 
 * **Crea versione all&#39;attivazione**, abilitata in un&#39;installazione standard
 * **Abilita rimozione forzata**
 
 * **Elimina percorsi**, percorsi che verranno cercati in un’azione di ricerca
+
 * **Percorsi** di controllo delle versioni impliciti, i percorsi in cui è attivo il controllo delle versioni implicite.
 
-* **Massima età** versione, età massima (in giorni) di una versione
+**Massima età** versione, età massima (in giorni) di una versione
 
-* **Numero massimo di versioni**, il numero massimo di versioni da mantenere
+**Numero massimo di versioni**, il numero massimo di versioni da mantenere
 
 Per ulteriori informazioni, consulta [Scorrimento](/help/sites-deploying/version-purging.md) delle versioni.
 
-**Servizio** di notifica e-mail flusso di lavoro Day CQ Configura le impostazioni e-mail per le notifiche inviate da un flusso di lavoro.
+* **Servizio** di notifica e-mail flusso di lavoro Day CQ Configura le impostazioni e-mail per le notifiche inviate da un flusso di lavoro.
+* **Day CQSE HTTP Service** Control the CQ Servlet Engine:
 
-**Day CQSE HTTP Service** Control the CQ Servlet Engine:
-
-* **NIO per HTTP, **Se utilizzare o meno NIO per HTTP. Valori predefiniti per true. Utilizzata solo se HTTP è abilitato.
-* **Timeout connessione, **Timeout connessione in millisecondi. Questa proprietà si applica sia alle connessioni HTTP che a quelle HTTPS. Il valore predefinito è 60 secondi.
-
+* ****NIO per HTTP, **Se utilizzare o meno NIO per HTTP. Valori predefiniti per true. Utilizzata solo se HTTP è abilitato.**
+* ****Timeout connessione, **Timeout connessione in millisecondi. Questa proprietà si applica sia alle connessioni HTTP che a quelle HTTPS. Il valore predefinito è 60 secondi.**
 * **Abilita HTTPS,** se HTTPS è abilitato o meno. Il valore predefinito è false.
 * **Timeout** sessione, durata predefinita di una sessione HTTP specificata in minuti. Se il timeout è pari a 0 o inferiore, le sessioni non avranno mai un timeout. Il valore predefinito è 10 minuti.
 * **Debug Logging**, se scrivere o meno messaggi di livello DEBUG. Il valore predefinito è false.
-* **Dimensioni** buffer richieste, Dimensione del buffer per le richieste in byte. Il valore predefinito è 8 KB.
+
+**Dimensioni** buffer richieste, Dimensione del buffer per le richieste in byte. Il valore predefinito è 8 KB.
+
 * **Numero massimo di thread**, numero massimo di thread da utilizzare per gestire le richieste. Il valore predefinito è 200.
-
-Le seguenti proprietà sono valide solo se HTTPS è abilitato.
-
+* **Le seguenti proprietà sono valide solo se HTTPS è abilitato.**
 * **Porta** HTTPS, porta da ascoltare per la richiesta HTTPS. Valore predefinito 433.
 * **NIO per HTTPS**, se utilizzare o meno NIO per HTTP. Il valore predefinito è il valore della proprietà NIO per HTTP.
 * **Keystore**, percorso assoluto dell&#39;archivio chiavi da utilizzare per HTTPS. Obbligatorio se HTTPS è abilitato.
 * **Password** archivio chiavi, Password per accedere al Keystore.
 * **Alias** chiave, alias della chiave segreta in Keystore.
-* **Password** chiave, Password per sbloccare la chiave segreta in Keystore.
-* **Certificato** client, requisito per la fornitura di un certificato valido da parte del client. Il valore predefinito è none.
+
+**Password** chiave, Password per sbloccare la chiave segreta in Keystore.
+
+**Certificato** client, requisito per la fornitura di un certificato valido da parte del client. Il valore predefinito è none.
 
 Consultate anche [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md) per informazioni dettagliate sulle opzioni relative a SSL e una descrizione completa su come abilitare HTTPS per CQSE.
 
-**CQ Rewriter HTML Parser Factory**
+* **CQ Rewriter HTML Parser Factory**
+* **Controlla il parser HTML per la riscrittura CQ.**
 
-Controlla il parser HTML per la riscrittura CQ.
+**Tag aggiuntivi da elaborare** - È possibile aggiungere o rimuovere tag HTML da elaborare dal parser. Per impostazione predefinita, vengono elaborati i seguenti tag: A,IMG,AREA,MODULO,BASE,COLLEGAMENTO,SCRIPT,CORPO,TESTA.
 
-* **Tag aggiuntivi da elaborare** - È possibile aggiungere o rimuovere tag HTML da elaborare dal parser. Per impostazione predefinita, vengono elaborati i seguenti tag: A,IMG,AREA,MODULO,BASE,COLLEGAMENTO,SCRIPT,CORPO,TESTA.
-* **Mantieni cassa** del cammello - Per impostazione predefinita, il parser HTML converte gli attributi in caso di cammello (ad es. eBay) in lettere maiuscole (ad es. ebay). È possibile disattivare questa opzione per mantenere gli attributi della cassa del cammello. Questa funzione è utile quando si utilizzano strutture frontali come Angular 2.
+**Mantieni cassa** del cammello - Per impostazione predefinita, il parser HTML converte gli attributi in caso di cammello (ad es. eBay) in lettere maiuscole (ad es. ebay). È possibile disattivare questa opzione per mantenere gli attributi della cassa del cammello. Questa funzione è utile quando si utilizzano strutture frontali come Angular 2.
 
 **Day Commons JDBC Connection Pool** Configura l&#39;accesso a un database esterno utilizzato come origine per il contenuto.
 
-Questa è una configurazione di fabbrica, in modo che possano essere configurate più istanze.
+Questa è una configurazione di fabbrica, in modo che possano essere configurate più istanze.`dps.session.service.url.name`[-ERR:REF-NOT-FOUND-
 
-**Adobe CQ Media DPS Sessions Service** Consente di gestire le sessioni DPS da utilizzare con le pubblicazioni.
 
-In particolare, potete definire `dps.session.service.url.name`: il valore predefinito è [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**La comunicazione CDN** Rewriter tra AEM e CDN deve essere garantita in modo che le risorse/i file binari vengano consegnati all’utente finale in modo sicuro. Sono necessarie due attività:
+* 
+* **La comunicazione CDN** Rewriter tra AEM e CDN deve essere garantita in modo che le risorse/i file binari vengano consegnati all’utente finale in modo sicuro. Sono necessarie due attività:
 
-* Accesso alla risorsa da AEM tramite CDN la prima volta (o dopo la scadenza nella cache).
-* Accedere alla risorsa nella cache CDN in modo sicuro, poiché una volta che la risorsa è memorizzata nella cache CDN, la richiesta non verrà inviata ad AEM e tutti gli utenti che hanno accesso a tale risorsa dovranno essere serviti dalla rete CDN.
+Accesso alla risorsa da AEM tramite CDN la prima volta (o dopo la scadenza nella cache).
 
-AEM consente di riscrivere gli URL delle risorse interne in URL CDN esterni. Riscrive i collegamenti da trasmettere alla CDN, inclusa una firma JWS, e il tempo di scadenza per consentire l’accesso sicuro alla risorsa. Questa funzione deve essere utilizzata per le istanze di authoring.
+Accedere alla risorsa nella cache CDN in modo sicuro, poiché una volta che la risorsa è memorizzata nella cache CDN, la richiesta non verrà inviata ad AEM e tutti gli utenti che hanno accesso a tale risorsa dovranno essere serviti dalla rete CDN.
 
-Il flusso complessivo è il seguente:
+1. AEM consente di riscrivere gli URL delle risorse interne in URL CDN esterni. Riscrive i collegamenti da trasmettere alla CDN, inclusa una firma JWS, e il tempo di scadenza per consentire l’accesso sicuro alla risorsa. Questa funzione deve essere utilizzata per le istanze di authoring.
+1. Il flusso complessivo è il seguente:`/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
+1. L’utente si autentica con AEM e richiede una pagina con le risorse.   La pagina richiesta contiene una risorsa simile a `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
 
-1. L’utente si autentica con AEM e richiede una pagina con le risorse.
-1. La pagina richiesta contiene una risorsa simile a `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
 1. Rewriter trasforma il collegamento a un URL CDN contenente una firma JWS:
-   `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
-1. Il browser dell’utente inoltra la richiesta di risorse al server CDN
-1. La rete CDN deve essere configurata per inoltrare la richiesta ad AEM insieme al `cdn_sign` parametro.
-1. Un gestore di autenticazione convalida il `cdn_sign` parametro e restituisce la risorsa alla rete CDN che viene quindi consegnata all’utente
+1. `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
+1. Il browser dell’utente inoltra la richiesta di risorse al server CDN`cdn_sign`
 
-Il flusso tra il browser dell’utente, la CDN e AEM può essere visualizzato come segue.
+La rete CDN deve essere configurata per inoltrare la richiesta ad AEM insieme al `cdn_sign` parametro.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+Un gestore di autenticazione convalida il `cdn_sign` parametro e restituisce la risorsa alla rete CDN che viene quindi consegnata all’utente](assets/chlimage_1-8.png)
 
->[!NOTE]
+>[!NOTE]Il flusso tra il browser dell’utente, la CDN e AEM può essere visualizzato come segue.
 >
->Al momento questa funzione è abilitata solo per le istanze di creazione di AEM.
+>![chlimage_1-8](assets/chlimage_1-8.png)
+
+[!NOTE]**
+
+Al momento questa funzione è abilitata solo per le istanze di creazione di AEM.****
 
 **CDNConfigServiceImpl** Fornisce le configurazioni CDN
 
 La funzione di riscrittura CDN può essere attivata fornendo il nome **del dominio di distribuzione** CDN nella configurazione per com.adobe.cq.cdn.rewriter.impl.CDNConfigServiceImpl.
 
-Il servizio contiene anche altre opzioni di configurazione come abilitare/disabilitare la riscrittura CDN, i prefissi di percorso per i quali viene eseguita la riscrittura CDN, i valori TTL e il protocollo (HTTP o HTTPS).
-
-**CDNRewriter** Una riscrittura per la riscrittura degli URL immagine interni agli URL CDN
-
-È possibile definire il valore **Tag Attributes** in com.adobe.cq.cdn.rewriter.impl.CDNRewriter in modo che vengano riscritti solo i collegamenti immagine selettivi.
+Il servizio contiene anche altre opzioni di configurazione come abilitare/disabilitare la riscrittura CDN, i prefissi di percorso per i quali viene eseguita la riscrittura CDN, i valori TTL e il protocollo (HTTP o HTTPS).****
