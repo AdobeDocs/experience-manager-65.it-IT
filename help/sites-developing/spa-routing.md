@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 4ea1bad1fb76142be7f6d564ecf30ed85a6da694
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 0%
 
 ---
 
@@ -33,9 +36,9 @@ Per una descrizione dettagliata, fare riferimento alla sezione [PageModelManager
 
 ## ModelRouter {#modelrouter}
 
-L&#39;API `ModelRouter` - se attivata - racchiude le funzioni API HTML5 History `pushState` e `replaceState` garantisce che un dato frammento di modello sia preacquisito e accessibile. Quindi, notifica al componente front-end registrato che il modello è stato modificato.
+L&#39;API `ModelRouter` - se attivata - racchiude le funzioni API HTML5 History `pushState` e `replaceState` per garantire che un dato frammento di modello sia preacquisito e accessibile. Quindi, notifica al componente front-end registrato che il modello è stato modificato.
 
-## Routing manuale e automatico modelli {#manual-vs-automatic-model-routing}
+## Routing manuale e automatico del modello {#manual-vs-automatic-model-routing}
 
 Il modello `ModelRouter` automatizza il recupero dei frammenti del modello. Ma come ogni attrezzo automatizzato è dotato di limitazioni. Se necessario, `ModelRouter` è possibile disabilitare o configurare in modo da ignorare i percorsi utilizzando le proprietà meta (vedere la sezione Meta Properties del documento componente [della pagina](/help/sites-developing/spa-page-component.md) SPA). Gli sviluppatori front-end possono quindi implementare un proprio livello di routing del modello richiedendo `PageModelManager` di caricare qualsiasi frammento del modello utilizzando la `getData()` funzione.
 
@@ -61,7 +64,7 @@ Per impostazione predefinita, questo comportamento è attivato automaticamente. 
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Tenere presente che ogni route dell&#39;SPA deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`), dal momento che `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente una volta che la route è selezionata. Anche se, se necessario, l&#39;SPA può anche definire una &quot;lista nera&quot; di rotte che devono essere ignorate da `PageModelManager`:
+Tenere presente che ogni route dell&#39;SPA deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`), dal momento che `PageModelManager` cercherà automaticamente di caricare il modello di pagina corrispondente una volta che la route è selezionata. Anche se, se necessario, l&#39;SPA può anche definire un &quot;elenco di blocchi&quot; di rotte che devono essere ignorate da `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
