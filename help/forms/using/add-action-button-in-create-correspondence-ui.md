@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +62,7 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia lettera per l
 
       ![Sovrapposizione, nodo](assets/2_defaultappoverlaynode.png)
 
-   1. Fai clic su **OK**. 
+   1. Fai clic su **OK**.
    1. Fate clic su **Salva tutto**.
 
 1. Eseguite una copia del file acmExtensionsConfig.xml (esiste nel ramo /libs) sotto il ramo /apps.
@@ -137,7 +140,7 @@ Il file ACMExtensionMessages.properties include etichette e messaggi di descrizi
 
    **Corrispondenza tipi di nodo:** Selezionato
 
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 1. Fate clic su **Salva tutto**.
 1. Fare clic con il pulsante destro del mouse sul file seguente e selezionare **Copia**:
 
@@ -209,7 +212,7 @@ La gestione dell&#39;azione o del pulsante quando si fa clic su action/button in
 
       **Corrispondenza tipi di nodo:** Selezionato
 
-   1. Fai clic su **OK**. 
+   1. Fai clic su **OK**.
    1. Fate clic su **Salva tutto**.
 
 1. Nella cartella js, create un file denominato ccrcustomization.js con il codice per la gestione dell&#39;azione del pulsante utilizzando la procedura seguente:
@@ -346,6 +349,7 @@ Il processo LCA viene eseguito sul server LiveCycle e richiede l&#39;indirizzo d
    * **Url** server: URL del server LC il cui servizio Send For Review viene utilizzato dal codice del gestore di azioni.
    * **Nome utente**: Nome utente amministratore del server LC
    * **Password**: Password del nome utente amministratore
+
    ![Configurazione Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
 
 #### Installare LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
@@ -360,7 +364,7 @@ Processo di LiveCycle richiesto per abilitare il processo del servizio e-mail.
 
 1. Vai a **Home > Servizi > Applicazioni e servizi > Gestione** applicazione.
 
-1. Se l’applicazione SendLetterForReview è già presente, ignora i passaggi rimanenti di questa procedura, altrimenti continua con i passaggi successivi.
+1. Se l&#39;applicazione SendLetterForReview è già presente, ignora i passaggi rimanenti di questa procedura, altrimenti continua con i passaggi successivi.
 
    ![Applicazione SendLetterForReview nell&#39;interfaccia utente](assets/12_applicationmanagementlc.png)
 
@@ -376,7 +380,7 @@ Processo di LiveCycle richiesto per abilitare il processo del servizio e-mail.
 
 1. Fai clic su **Importa**.
 
-#### Aggiunta di ServiceName all&#39;elenco WhiteListed Service {#adding-servicename-to-the-whitelisted-service-list}
+#### Aggiunta di ServiceName all&#39;elenco dei servizi Allowlist {#adding-servicename-to-the-allowlist-service-list}
 
 Ricorda nel server AEM i servizi LiveCycle a cui vuoi accedere.
 
@@ -405,7 +409,7 @@ In questo scenario, affinché Gestione corrispondenza possa inviare un messaggio
 
 Per utilizzare l&#39;API di gestione della corrispondenza, scaricate il file DSCSample.jar (allegato in questo documento come parte di components.zip) e caricatelo nel server di LiveCycle. Dopo il caricamento del file DSCSample.jar nel server LiveCycle, il server AEM utilizza il file DSCSample.jar per accedere all&#39;API renderingLetter.
 
-Per ulteriori informazioni, consultate [Connessione di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Per ulteriori informazioni, vedere [Collegamento di AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Aggiorna l’URL del server AEM in cmsa.properties in DSCSample.jar, che si trova nel seguente percorso:
 
@@ -417,6 +421,7 @@ Per ulteriori informazioni, consultate [Connessione di AEM Forms con Adobe LiveC
    * **crx.username**= nome utente AEM
    * **crx.password**= password AEM
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >Ogni volta che si apportano modifiche sul lato server, riavviare il server LiveCycle. Per informazioni sulla creazione di un componente LiveCycle personalizzato, vedere [Estensione del software LiveCycle ES tramite lo sviluppo](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)DSC personalizzato.
