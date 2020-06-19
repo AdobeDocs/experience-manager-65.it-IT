@@ -1,6 +1,6 @@
 ---
-title: Connessione di AEM Forms con Adobe LiveCycle
-seo-title: Connessione di AEM Forms con Adobe LiveCycle
+title: Collegamento di AEM Forms con Adobe LiveCycle
+seo-title: Collegamento di AEM Forms con Adobe LiveCycle
 description: Il connettore AEM LiveCycle consente di avviare LiveCycle ES4 Document Services dall'interno delle app e dei flussi di lavoro AEM.
 seo-description: Il connettore AEM LiveCycle consente di avviare LiveCycle ES4 Document Services dall'interno delle app e dei flussi di lavoro AEM.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1029'
+ht-degree: 0%
 
 ---
 
 
-# Connessione di AEM Forms con Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
+# Collegamento di AEM Forms con Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
-Il connettore Adobe Experience Manager (AEM) LiveCycle consente di invocare Adobe LiveCycle ES4 Document Services senza soluzione di continuità dalle app Web e dai flussi di lavoro AEM. LiveCycle fornisce un SDK client avanzato che consente alle applicazioni client di avviare i servizi LiveCycle utilizzando le API Java. AEM LiveCycle Connector semplifica l&#39;utilizzo di queste API nell&#39;ambiente OSGi.
+ connettore LiveCycle (AEM) di Adobe Experience Manager consente di invocare senza soluzione di continuità Adobe LiveCycle ES4 Document Services dalle app Web e dai flussi di lavoro AEM. LiveCycle fornisce un SDK client avanzato che consente alle applicazioni client di avviare i servizi LiveCycle utilizzando le API Java. AEM LiveCycle Connector semplifica l&#39;utilizzo di queste API nell&#39;ambiente OSGi.
 
 ## Connessione del server AEM ad Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
@@ -153,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 In LiveCycle, quasi tutti i Document Service richiedono l&#39;autenticazione. Potete utilizzare una delle seguenti opzioni per avviare questi servizi senza fornire credenziali esplicite nel codice:
 
-### Configurazione whitelist {#whitelist-configuration}
+### Allowlist, configurazione {#allowlist-configuration}
 
 La configurazione dell&#39;SDK del client LiveCycle contiene un&#39;impostazione relativa ai nomi dei servizi. Questa configurazione è un elenco di servizi per i quali la logica di chiamata utilizza le credenziali dell&#39;amministratore. Ad esempio, se si aggiungono servizi DirectoryManager (parte dell&#39;API di gestione utente) a questo elenco, qualsiasi codice client può utilizzare direttamente il servizio e il livello di chiamata trasmette automaticamente le credenziali configurate come parte della richiesta inviata al server LiveCycle
 
