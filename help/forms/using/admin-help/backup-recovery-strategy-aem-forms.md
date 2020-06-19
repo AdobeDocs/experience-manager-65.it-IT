@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1520'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Dopo aver identificato l&#39;utilizzo dei moduli AEM, determinare quali file dev
 >
 >Come per qualsiasi altro aspetto dell’implementazione dei moduli AEM, la strategia di backup e ripristino deve essere sviluppata e testata in un ambiente di sviluppo o di pre-produzione prima di essere utilizzata in produzione per garantire che l’intera soluzione funzioni come previsto senza perdita di dati.
 
-Adobe Experience Manager (AEM) è una parte integrante dei moduli AEM. Pertanto, è necessario eseguire il backup di AEM e dei moduli di AEM, in quanto la soluzione e i servizi di gestione della corrispondenza, come Forms Manager, si basano su dati memorizzati in AEM parte dei moduli AEM. Per evitare eventuali perdite di dati, il backup dei dati specifici dei moduli AEM deve essere effettuato in modo da garantire la correlazione di GDS e AEM (repository) con i riferimenti ai database.Il database, GDS, AEM e le directory principali di memorizzazione dei contenuti devono essere ripristinati in un computer con lo stesso nome DNS dell&#39;originale.
+ Adobe Experience Manager (AEM) è parte integrante dei moduli AEM. Pertanto, è necessario eseguire il backup di AEM e dei moduli di AEM, in quanto la soluzione e i servizi di gestione della corrispondenza, come Forms Manager, si basano su dati memorizzati in AEM parte dei moduli AEM. Per evitare eventuali perdite di dati, il backup dei dati specifici dei moduli AEM deve essere effettuato in modo da garantire la correlazione di GDS e AEM (repository) con i riferimenti ai database.Il database, GDS, AEM e le directory principali di memorizzazione dei contenuti devono essere ripristinati in un computer con lo stesso nome DNS dell&#39;originale.
 
 ## Tipi di backup {#types-of-backups}
 
@@ -85,7 +88,7 @@ Prima di riavviare il server dei moduli dopo un ripristino, effettuare le seguen
    1. Fate clic su Opzioni **** amministratore.
    1. Fate clic su **Avvia** per sincronizzare le risorse dalla directory archivio.
 
-1. In un ambiente cluster, il nodo master (rispetto ad AEM) deve trovarsi prima dei nodi slave.
+1. In un ambiente cluster, il nodo principale (rispetto ad AEM) deve essere superiore rispetto ai nodi secondari.
 1. Assicurarsi che non vengano avviati processi da origini interne o esterne, quali Web, SOAP o gli iniziatori di processi EJB, fino alla convalida del normale funzionamento del sistema.
 
 Se il database principale dei moduli AEM viene spostato o modificato, consultare le Guide all’installazione relative al server delle applicazioni per informazioni sull’aggiornamento delle informazioni sulla connessione al database per le origini dati dei moduli AEM IDP_DS ed EDC_DS.
