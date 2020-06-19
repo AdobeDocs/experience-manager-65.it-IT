@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
@@ -25,43 +28,44 @@ Gli agenti possono associare ed eseguire flussi di lavoro post-elaborazione su l
 
 Per associare i processi post a lettere o comunicazioni interattive, è innanzitutto necessario impostare i processi post. È possibile eseguire due tipi di flussi di lavoro sulle lettere inviate:
 
-1. **Flusso di lavoro moduli:** Si tratta dei flussi di lavoro di gestione dei processi AEM Forms su JEE. Istruzioni per la configurazione del flusso di lavoro [](#formsworkflow)Forms.
+1. **Flusso di lavoro moduli:** Questi sono i AEM Forms dei flussi di lavoro JEE per la gestione dei processi. Istruzioni per la configurazione del flusso di lavoro [](#formsworkflow)Forms.
 
 1. **Flusso di lavoro AEM:** I flussi di lavoro AEM possono essere utilizzati anche come processi di pubblicazione per le lettere inviate. Istruzioni per la configurazione di [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Flusso di lavoro per moduli {#formsworkflow}
 
-1. In AEM, apri la configurazione della console Web di Adobe Experience Manager per il tuo server utilizzando il seguente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, apri  Configurazione console Web Adobe Experience Manager per il server utilizzando il seguente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Gestione configurazione](assets/2configmanager-1.png)
 
-1. In questa pagina, individua la configurazione SDK per client AEM Forms ed espandila facendo clic su di essa.
-1. In URL server, immetti il nome dei moduli AEM sul server JEE, i dettagli di accesso e fai clic su **Salva**.
+1. In questa pagina, individua la configurazione AEM Forms Client SDK e espandila facendo clic su di essa.
+1. In URL server, immettete il nome dei AEM Forms sul server JEE, i dettagli di accesso e fate clic su **Salva**.
 
    ![Immettere il nome del server LiveCycle](assets/1cofigmanager.png)
 
 1. Specificate il nome utente e la password.
 1. Assicurarsi che sun.util.calendar sia aggiunto alla configurazione del firewall di deserializzazione.
 
-   Andate a Configurazione firewall di deserializzazione e in Classi Whitelist di prefissi di pacchetti, aggiungete sun.util.Calendar.
+   Passate alla configurazione del firewall di deserializzazione e, in Classi consentite di prefissi di pacchetti, aggiungete sun.util.Calendar.
 
 1. Ora i server sono mappati e i processi di pubblicazione in AEM Forms su JEE sono disponibili nell’interfaccia utente di AEM durante la creazione di lettere.
 
    ![Crea schermata lettera con i processi post elencati](assets/0configmanager.png)
 
-1. Per autenticare un processo/servizio, copiate il nome di un processo e tornate alla pagina Configurazioni console Web di Adobe Experience Manager > Configurazione SDK client AEM Forms e aggiungete il processo come nuovo servizio.
+1. Per autenticare un processo/servizio, copiate il nome di un processo e tornate alla pagina Configurazioni console Web  Adobe Experience Manager > Configurazione SDK client AEM Forms e aggiungete il processo come nuovo servizio.
 
    Ad esempio, se il menu a discesa nella pagina Proprietà della lettera mostra il nome del processo come Flusso di lavoro moduli > ValidoCCPostProcess/SaveXML, aggiungere un Nome servizio come `ValidCCPostProcess/SaveXML`.
 
-1. Per utilizzare AEM Forms nei flussi di lavoro JEE per la post-elaborazione, imposta i parametri e gli output necessari. I valori predefiniti dei parametri sono indicati di seguito.
+1. Per utilizzare AEM Forms sui flussi di lavoro JEE per la post-elaborazione, impostare i parametri e gli output necessari. I valori predefiniti dei parametri sono indicati di seguito.
 
-   Andate alla pagina Configurazioni console Web di Adobe Experience Manager > Configurazioni **[!UICONTROL di gestione della corrispondenza]** e configurate i seguenti parametri:
+   Andate alla pagina Configurazioni console Web del Adobe Experience Manager  > Configurazioni **[!UICONTROL di gestione della corrispondenza]** e configurate i seguenti parametri:
 
    1. **inPDFDoc (parametro del documento PDF):** Un documento PDF come input. Questo input contiene la lettera rappresentata come input. I nomi dei parametri indicati sono configurabili. Possono essere configurati dalle configurazioni di Correspondence Management dalla configurazione.
    1. **inXMLDoc (parametro dati XML):** Un documento XML come input. Questo input contiene i dati immessi dall&#39;utente nel formato XML.
    1. **inXDPDoc (parametro del documento XDP):** Un documento XML come input. Questo input contiene il layout sottostante (XDP).
    1. **inAttachmentDocs (parametro Attachment Documents):** Un parametro di immissione elenco. Questo input contiene tutti gli allegati come input.
    1. **redirectURL (Redirect URL Output):** Un tipo di output che indica l&#39;URL a cui reindirizzare.
+
    Il flusso di lavoro dei moduli deve avere parametri di documento PDF o dati XML come input con lo stesso nome specificato in **[!UICONTROL Correspondence Management Configurations]**. Questo è necessario per elencare il processo nel menu a discesa Post Process (Processo post).
 
 ## Impostazioni nell’istanza Pubblica {#settings-on-the-publish-instance}
@@ -118,7 +122,7 @@ Nell&#39;interfaccia utente CCR, completa i seguenti passaggi per associare un p
 1. Toccate **Salva**.
 1. Dopo aver configurato la lettera con il processo di pubblicazione, pubblicate la lettera ed eventualmente sull’istanza di pubblicazione, specificate l’URL di elaborazione nel servizio Impostazioni di AEM DS. In questo modo il processo post viene eseguito sull&#39;istanza di elaborazione.
 
-## Ricaricare un&#39;istanza di lettera bozza {#reloaddraft}
+## Ricaricare un&#39;istanza di lettera bozza  {#reloaddraft}
 
 Un&#39;istanza di lettera bozza può essere ricaricata nell&#39;interfaccia utente utilizzando il seguente URL:
 
