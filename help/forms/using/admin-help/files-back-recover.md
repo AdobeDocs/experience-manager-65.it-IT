@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '2190'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ I file di applicazione e di dati da sottoporre a backup sono descritti più dett
 Considerare i seguenti punti relativi a backup e ripristino:
 
 * Il backup del database deve essere eseguito prima di GDS e dell’archivio AEM.
-* Se è necessario arrestare i nodi in un ambiente cluster cluster per il backup, assicurarsi che i nodi slave vengano chiusi prima del nodo master. In caso contrario, potrebbe causare incoerenza nel cluster o nel server. Inoltre, il nodo master deve essere reso attivo prima di qualsiasi nodo slave.
+* Se è necessario disattivare i nodi in un ambiente cluster cluster per il backup, assicurarsi che i nodi secondari vengano chiusi prima del nodo principale. In caso contrario, potrebbe causare incoerenza nel cluster o nel server. Inoltre, il nodo primario deve essere reso attivo prima di qualsiasi nodo secondario.
 * Per l&#39;operazione di ripristino di un cluster, il server applicazione deve essere arrestato per ogni nodo del cluster.
 
 ## Directory Global Document Storage {#global-document-storage-directory}
@@ -70,7 +73,7 @@ Una semplice configurazione della soluzione di gestione della corrispondenza inc
 
 gestione moduli semplifica il processo di aggiornamento, gestione e ritiro dei moduli.
 
-### AEM Forms Workspace {#html-workspace}
+### Area di lavoro AEM Forms {#html-workspace}
 
 AEM Forms Workspace combina le funzionalità di Flex Workspace (obsoleto per i moduli AEM su JEE) e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
 
@@ -78,7 +81,7 @@ AEM Forms Workspace combina le funzionalità di Flex Workspace (obsoleto per i m
 >
 >Flex Worksapce è obsoleto per la versione dei moduli AEM.
 
-Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Consente la rappresentazione di moduli HTML, oltre ai moduli PDF e ai moduli Flex.
+Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Consente la rappresentazione di moduli HTML, oltre a PDF forms e moduli Flex.
 
 ## Database moduli AEM {#aem-forms-database}
 
@@ -136,7 +139,8 @@ Utilizzare MySQLAdmin o modificare i file INI in Windows per configurare il data
 
 >[!NOTE]
 >
->La modalità di registrazione binaria predefinita per MySQL è &quot;Istruzione&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). L&#39;utilizzo della registrazione binaria in questa modalità predefinita causa la mancata riuscita di Content Services (obsoleto). Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;mista&quot;. Per abilitare la registrazione &quot;mista&quot;, aggiungete il seguente argomento al file my.ini file:*`binlog_format=mixed log-bin=logname`
+>La modalità di registrazione binaria predefinita per MySQL è &quot;Istruzione&quot;, incompatibile con le tabelle utilizzate da Content Services (obsoleto). L&#39;utilizzo della registrazione binaria in questa modalità predefinita causa la mancata riuscita di Content Services (obsoleto). Se il sistema include Content Services (obsoleto), utilizza la modalità di registrazione &quot;mista&quot;. Per abilitare la registrazione &quot;mista&quot;, aggiungete il seguente argomento al file my.ini file:*
+`binlog_format=mixed log-bin=logname`
 
 È possibile utilizzare l&#39;utility mysqldump per ottenere il backup completo del database. I backup completi sono necessari, ma non sempre sono convenienti. Producono file di backup di grandi dimensioni e richiedono tempo per la generazione. Per eseguire un backup incrementale, assicurarsi di avviare il server con l&#39;opzione - `log-bin` come descritto nella sezione precedente. Ogni volta che il server MySQL si riavvia, interrompe la scrittura nel registro binario corrente, ne crea uno nuovo e, da quel momento in poi, quello nuovo diventa quello corrente. È possibile forzare un interruttore manualmente con il `FLUSH LOGS SQL` comando. Dopo il primo backup completo, i successivi backup incrementali vengono eseguiti utilizzando l&#39;utility mysqladmin con il `flush-logs` comando, che crea il file di registro successivo.
 
