@@ -1,36 +1,39 @@
 ---
-title: Ottimizzazione dei moduli AEM in ambiente JEE
-seo-title: Ottimizzazione dei moduli AEM in ambiente JEE
-description: Scopri le numerose impostazioni di protezione avanzate per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
-seo-description: Scopri le numerose impostazioni di protezione avanzate per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
+title: Indurimento dei AEM Forms in ambiente JEE
+seo-title: Indurimento dei AEM Forms in ambiente JEE
+description: Scopri una serie di impostazioni di protezione per migliorare la sicurezza degli AEM Forms su JEE in esecuzione in una Intranet aziendale.
+seo-description: Scopri una serie di impostazioni di protezione per migliorare la sicurezza degli AEM Forms su JEE in esecuzione in una Intranet aziendale.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: dee9f9c9d3dfb916d1feaa0d258c883686e1a1dc
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '7445'
+ht-degree: 1%
 
 ---
 
 
-# Ottimizzazione dei moduli AEM in ambiente JEE {#hardening-your-aem-forms-on-jee-environment}
+# Indurimento dei AEM Forms in ambiente JEE {#hardening-your-aem-forms-on-jee-environment}
 
-Scopri le numerose impostazioni di protezione avanzate per migliorare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
+Scopri una serie di impostazioni di protezione per migliorare la sicurezza degli AEM Forms su JEE in esecuzione in una Intranet aziendale.
 
-L&#39;articolo descrive raccomandazioni e procedure ottimali per la protezione dei server che eseguono AEM Forms su JEE. Non si tratta di un documento completo per l&#39;applicazione di protezione host per il sistema operativo e i server applicazioni in uso. Questo articolo descrive al contrario una serie di impostazioni di protezione da implementare per migliorare la sicurezza di AEM Forms su JEE in esecuzione all’interno di una Intranet aziendale. Per garantire che AEM Forms su server applicazioni JEE rimanga al sicuro, è tuttavia necessario implementare anche procedure di monitoraggio della sicurezza, rilevamento e risposta.
+L&#39;articolo descrive raccomandazioni e procedure ottimali per la protezione dei server che eseguono AEM Forms su JEE. Non si tratta di un documento completo per l&#39;applicazione di protezione host per il sistema operativo e i server applicazioni in uso. Questo articolo descrive invece una serie di impostazioni di protezione che è necessario implementare per migliorare la sicurezza dei AEM Forms su JEE in esecuzione all&#39;interno di una Intranet aziendale. Per garantire che i AEM Forms sui server delle applicazioni JEE restino protetti, è tuttavia necessario implementare anche le procedure di monitoraggio, rilevamento e risposta di sicurezza.
 
 L&#39;articolo descrive le tecniche di indurimento che dovrebbero essere applicate nelle seguenti fasi durante il ciclo di vita dell&#39;installazione e della configurazione:
 
 * **Pre-installazione:** Utilizzate queste tecniche prima di installare AEM Forms su JEE.
-* **Installazione:** Utilizzate queste tecniche durante il processo di installazione di AEM Forms su JEE.
+* **Installazione:** Utilizzate queste tecniche durante il processo di installazione dei AEM Forms su JEE.
 * **Post-installazione:** Utilizzate queste tecniche dopo l&#39;installazione e periodicamente in seguito.
 
-AEM Forms su JEE è altamente personalizzabile e può funzionare in molti ambienti diversi. Alcune delle raccomandazioni potrebbero non essere adatte alle esigenze della vostra organizzazione.
+I AEM Forms su JEE sono altamente personalizzabili e possono funzionare in molti ambienti diversi. Alcune delle raccomandazioni potrebbero non essere adatte alle esigenze della vostra organizzazione.
 
 ## Preinstallazione {#preinstallation}
 
-Prima di installare AEM Forms su JEE, potete applicare soluzioni di protezione al livello di rete e al sistema operativo. Questa sezione descrive alcuni problemi e formula raccomandazioni per ridurre le vulnerabilità di sicurezza in queste aree.
+Prima di installare AEM Forms su JEE, potete applicare soluzioni di sicurezza al livello di rete e al sistema operativo. Questa sezione descrive alcuni problemi e formula raccomandazioni per ridurre le vulnerabilità di sicurezza in queste aree.
 
 **Installazione e configurazione su UNIX e Linux**
 
@@ -38,7 +41,7 @@ Non installare o configurare AEM Forms su JEE utilizzando una shell principale. 
 
 **Installazione e configurazione in Windows**
 
-Se stai installando AEM Forms su JEE su JBoss utilizzando il metodo chiavi in mano o se stai installando PDF Generator, devi eseguire l’installazione in Windows come amministratore. Inoltre, quando si installa PDF Generator in Windows con supporto dell&#39;applicazione nativa, è necessario eseguire l&#39;installazione come lo stesso utente Windows che ha installato Microsoft Office. Per ulteriori informazioni sui privilegi di installazione, consultate il documento sull&#39;installazione e distribuzione di AEM Forms su JEE* per il server delle applicazioni.
+È necessario eseguire l&#39;installazione in Windows come amministratore se si installano AEM Forms in JEE su JBoss utilizzando il metodo chiavi in mano o se si sta installando PDF Generator. Inoltre, quando si installa PDF Generator in Windows con supporto dell&#39;applicazione nativa, è necessario eseguire l&#39;installazione come lo stesso utente Windows che ha installato Microsoft Office. Per ulteriori informazioni sui privilegi di installazione, consultare il documento* Installazione e distribuzione di AEM Forms su JEE* per il server delle applicazioni.
 
 ### Protezione dei livelli di rete {#network-layer-security}
 
@@ -60,7 +63,7 @@ Nella tabella seguente sono descritti i processi comuni che riducono le vulnerab
   </tr> 
   <tr> 
    <td><p>Indirizzi IP privati</p> </td> 
-   <td><p>Utilizzate Network Address Translation (NAT) con gli indirizzi IP privati RFC 1918 sul server dell'applicazione AEM Forms. Assegnate indirizzi IP privati (10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16) per rendere più difficile per un utente malintenzionato indirizzare il traffico da e verso un host interno del NAT attraverso Internet.</p> </td> 
+   <td><p>Utilizzate Network Address Translation (NAT) con indirizzi IP privati RFC 1918 sul server dell'applicazione AEM Forms. Assegnate indirizzi IP privati (10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16) per rendere più difficile per un utente malintenzionato indirizzare il traffico da e verso un host interno del NAT attraverso Internet.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Firewall</p> </td> 
@@ -73,7 +76,7 @@ Nella tabella seguente sono descritti i processi comuni che riducono le vulnerab
   </tr> 
   <tr> 
    <td><p>Porte database</p> </td> 
-   <td><p>Non utilizzare porte di ascolto predefinite per i database (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Per informazioni sulla modifica delle porte del database, consultate la documentazione del database.</p> <p>L'utilizzo di una porta di database diversa influisce sulla configurazione complessiva di AEM Forms su JEE. Se si modificano le porte predefinite, è necessario apportare le modifiche corrispondenti in altre aree di configurazione, ad esempio le origini dati per AEM Forms su JEE.</p> <p>Per informazioni sulla configurazione delle origini dati in AEM Forms su JEE, consulta Installare e aggiornare AEM Forms su JEE o Aggiornamento ad AEM Forms su JEE per il server delle applicazioni nella guida <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">utente di</a>AEM Forms.</p> </td> 
+   <td><p>Non utilizzare porte di ascolto predefinite per i database (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Per informazioni sulla modifica delle porte del database, consultate la documentazione del database.</p> <p>L'utilizzo di una porta di database diversa influisce sui AEM Forms complessivi nella configurazione JEE. Se si modificano le porte predefinite, è necessario apportare le modifiche corrispondenti in altre aree di configurazione, ad esempio le origini dati per i AEM Forms su JEE.</p> <p>Per informazioni sulla configurazione delle origini dati in AEM Forms su JEE, consultate Installare e aggiornare AEM Forms su JEE o Aggiornare a AEM Forms su JEE per il server applicazione in uso nella guida <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">utente</a>AEM Forms.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -109,7 +112,7 @@ Per ulteriori informazioni sulla sicurezza del sistema operativo in uso, vedere 
 
 ## Installazione {#installation}
 
-Questa sezione descrive le tecniche che è possibile utilizzare durante il processo di installazione di AEM Forms per ridurre le vulnerabilità di sicurezza. In alcuni casi, queste tecniche utilizzano opzioni che fanno parte del processo di installazione. Nella tabella seguente sono descritte queste tecniche.
+Questa sezione descrive le tecniche che potete utilizzare durante il processo di installazione dei AEM Forms per ridurre le vulnerabilità di sicurezza. In alcuni casi, queste tecniche utilizzano opzioni che fanno parte del processo di installazione. Nella tabella seguente sono descritte queste tecniche.
 
 <table> 
  <thead> 
@@ -121,15 +124,15 @@ Questa sezione descrive le tecniche che è possibile utilizzare durante il proce
  <tbody>
   <tr> 
    <td><p>Privilegi</p> </td> 
-   <td><p>Utilizzate il numero minimo di privilegi necessari per installare il software. Effettuate l'accesso al computer utilizzando un account non appartenente al gruppo Amministratori. In Windows, potete utilizzare il comando Esegui come per eseguire il programma di installazione AEM Forms su JEE come utente amministrativo. Sui sistemi UNIX e Linux, utilizzare un comando come <code>sudo</code> per installare il software.</p> </td> 
+   <td><p>Utilizzate il numero minimo di privilegi necessari per installare il software. Effettuate l'accesso al computer utilizzando un account non appartenente al gruppo Amministratori. In Windows, potete utilizzare il comando Esegui come per eseguire gli AEM Forms nel programma di installazione JEE come utente amministrativo. Sui sistemi UNIX e Linux, utilizzare un comando come <code>sudo</code> per installare il software.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Origine software</p> </td> 
-   <td><p>Non scaricare o eseguire AEM Forms su JEE da fonti non attendibili.</p> <p>I programmi dannosi possono contenere codice per violare la sicurezza in diversi modi, tra cui furto, modifica ed eliminazione di dati e negazione del servizio. Installate AEM Forms su JEE dal DVD Adobe o solo da un'origine affidabile.</p> </td> 
+   <td><p>Non scaricare o eseguire AEM Forms su JEE da fonti non attendibili.</p> <p>I programmi dannosi possono contenere codice per violare la sicurezza in diversi modi, tra cui furto, modifica ed eliminazione di dati e negazione del servizio. Installate AEM Forms su JEE dal DVD Adobe o solo da una fonte affidabile.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Partizioni disco</p> </td> 
-   <td><p>Inserite AEM Forms su JEE in una partizione dedicata del disco. La segmentazione del disco è un processo che mantiene dati specifici sul server su dischi fisici separati per una maggiore sicurezza. Disporre i dati in questo modo riduce il rischio di attacchi di traversata di directory. Pianificare la creazione di una partizione separata dalla partizione di sistema in cui è possibile installare AEM Forms nella directory dei contenuti JEE. (In Windows, la partizione di sistema contiene la directory system32, o partizione di avvio.)</p> </td> 
+   <td><p>Inserire AEM Forms su JEE su una partizione dedicata del disco. La segmentazione del disco è un processo che mantiene dati specifici sul server su dischi fisici separati per una maggiore sicurezza. Disporre i dati in questo modo riduce il rischio di attacchi di traversata di directory. Pianificare la creazione di una partizione separata dalla partizione di sistema in cui installare i AEM Forms nella directory di contenuto JEE. (In Windows, la partizione di sistema contiene la directory system32, o partizione di avvio.)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Componenti</p> </td> 
@@ -148,34 +151,35 @@ Questa sezione descrive le tecniche che è possibile utilizzare durante il proce
 
 ## Passaggi successivi all’installazione {#post-installation-steps}
 
-Dopo aver installato AEM Forms su JEE, è importante mantenere periodicamente l&#39;ambiente dal punto di vista della sicurezza.
+Dopo aver installato correttamente i AEM Forms su JEE, è importante mantenere periodicamente l&#39;ambiente dal punto di vista della sicurezza.
 
 La sezione seguente descrive in dettaglio le diverse attività consigliate per proteggere il server dei moduli distribuito.
 
-### Sicurezza di AEM Forms {#aem-forms-security}
+### Protezione AEM Forms {#aem-forms-security}
 
-Le seguenti impostazioni consigliate si applicano ad AEM Forms sul server JEE al di fuori dell’applicazione Web amministrativa. Per ridurre i rischi per la sicurezza del server, applicate queste impostazioni subito dopo l&#39;installazione di AEM Forms su JEE.
+Le seguenti impostazioni consigliate si applicano ai AEM Forms sul server JEE al di fuori dell&#39;applicazione Web amministrativa. Per ridurre i rischi di protezione per il server, applicate queste impostazioni subito dopo l&#39;installazione dei AEM Forms su JEE.
 
 **Patch di sicurezza**
 
-Esiste un rischio maggiore che un utente non autorizzato possa accedere al server dell&#39;applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificate le patch di sicurezza prima di applicarle ai server di produzione per garantire la compatibilità e la disponibilità delle applicazioni. Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare. Gli aggiornamenti di AEM Forms su JEE sono disponibili nel sito di download dei prodotti Enterprise.
+Esiste un rischio maggiore che un utente non autorizzato possa accedere al server dell&#39;applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificate le patch di sicurezza prima di applicarle ai server di produzione per garantire la compatibilità e la disponibilità delle applicazioni. Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare. Gli AEM Forms sugli aggiornamenti JEE si trovano nel sito di download dei prodotti Enterprise.
 
 **Account di servizio (chiavi in mano JBoss solo in Windows)**
 
-AEM Forms su JEE installa un servizio, per impostazione predefinita, utilizzando l&#39;account LocalSystem. L&#39;account utente LocalSystem integrato ha un livello elevato di accessibilità; fa parte del gruppo Amministratori. Se l&#39;identità di processo di lavoro viene eseguita come account utente LocalSystem, il processo di lavoro dispone dell&#39;accesso completo all&#39;intero sistema.
+Per impostazione predefinita, i AEM Forms in JEE installano un servizio utilizzando l&#39;account LocalSystem. L&#39;account utente LocalSystem integrato ha un livello elevato di accessibilità; fa parte del gruppo Amministratori. Se l&#39;identità di processo di lavoro viene eseguita come account utente LocalSystem, il processo di lavoro dispone dell&#39;accesso completo all&#39;intero sistema.
 
-Per eseguire il server applicazioni in cui AEM Forms su JEE viene distribuito, utilizzando un account non amministrativo specifico, attenetevi alle istruzioni seguenti:
+Per eseguire il server applicazione in cui sono distribuiti AEM Forms su JEE, utilizzando un account non amministrativo specifico, attenersi alle istruzioni riportate di seguito:
 
 1. In Microsoft Management Console (MMC), creare un utente locale che consenta al servizio server moduli di accedere come segue:
 
    * Seleziona **Utente non può cambiare la password**.
    * Nella scheda **Membro di** , assicurarsi che sia elencato il gruppo **Utenti** .
+
    >[!NOTE]
    >
    >Non è possibile modificare questa impostazione per PDF Generator.
 
 1. Selezionate **Start** > **Impostazioni** > Strumenti **di** amministrazione > **Servizi**.
-1. Fate doppio clic su JBoss per AEM Forms su JEE e interrompete il servizio.
+1. Fate doppio clic sul JBoss per i AEM Forms su JEE e arrestate il servizio.
 1. Nella scheda **Accesso** , selezionate **Account**, individuate l&#39;account utente che avete creato e immettete la password per l&#39;account.
 1. In MMC, aprite Impostazioni **protezione** locale e selezionate Criteri **** locali > Assegnazione **diritti** utente.
 1. Assegnare i seguenti diritti all&#39;account utente in cui è in esecuzione il server moduli:
@@ -184,12 +188,12 @@ Per eseguire il server applicazioni in cui AEM Forms su JEE viene distribuito, u
    * Rifiuta accesso localmente
    * Accedi come servizio (dovrebbe essere già impostato)
 
-1. Assegna al nuovo account utente le autorizzazioni di lettura ed esecuzione, scrittura, modifica, elenco dei contenuti delle cartelle e lettura per completare AEM Forms nella directory di installazione JEE e nella directory Global Document Storage (GDS). La posizione della directory GDS è configurata manualmente durante il processo di installazione di AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server applicazione nella directory principale [/server/]tipo[/svcnative/DocumentStorage]JBoss.
+1. Assegnare al nuovo account utente le autorizzazioni di lettura ed esecuzione, scrittura, modifica, elenco dei contenuti delle cartelle e lettura per completare i AEM Forms nella directory di installazione JEE e nella directory Global Document Storage (GDS). La posizione della directory GDS viene configurata manualmente durante il processo di installazione dei AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server applicazione nella directory principale [/server/]tipo[/svcnative/DocumentStorage]JBoss.
 1. Avviate il server applicazione.
 
 **Disattivazione del servlet di avvio di Configuration Manager**
 
-Configuration Manager ha utilizzato un servlet distribuito sul server applicazione per eseguire l&#39;avvio di AEM Forms sul database JEE. Poiché Configuration Manager accede a questo servlet prima del completamento della configurazione, l&#39;accesso a esso non è stato protetto per gli utenti autorizzati e deve essere disattivato dopo che Configuration Manager ha configurato AEM Forms su JEE.
+Configuration Manager ha utilizzato un servlet distribuito sul server applicazione per eseguire l&#39;avvio degli AEM Forms nel database JEE. Poiché Configuration Manager accede a questo servlet prima del completamento della configurazione, l&#39;accesso a esso non è stato protetto per gli utenti autorizzati e deve essere disabilitato dopo che Configuration Manager ha utilizzato con successo per configurare AEM Forms su JEE.
 
 1. Decomprimete il file adobe-livecycle-[appserver].ear.
 1. Aprite il file META-INF/application.xml.
@@ -243,7 +247,7 @@ Configuration Manager ha utilizzato un servlet distribuito sul server applicazio
 
 **Blocco dell&#39;accesso remoto all&#39;archivio attendibili**
 
-Configuration Manager consente di caricare una credenziale di estensione Acrobat Reader DC nell&#39;archivio delle estensioni AEM Forms su JEE. Ciò significa che l&#39;accesso al servizio Credenziali archivio attendibili tramite protocolli remoti (SOAP ed EJB) è stato abilitato per impostazione predefinita. Questo accesso non è più necessario dopo aver caricato le credenziali dei diritti tramite Configuration Manager o se decidete di utilizzare la console di amministrazione in un secondo momento per gestire le credenziali.
+Configuration Manager consente di caricare le credenziali di estensione di Acrobat Reader DC nei AEM Forms dell&#39;archivio delle estensioni JEE. Ciò significa che l&#39;accesso al servizio Credenziali archivio attendibili tramite protocolli remoti (SOAP ed EJB) è stato abilitato per impostazione predefinita. Questo accesso non è più necessario dopo aver caricato le credenziali dei diritti tramite Configuration Manager o se decidete di utilizzare la console di amministrazione in un secondo momento per gestire le credenziali.
 
 È possibile disattivare l&#39;accesso remoto a tutti i servizi dell&#39;archivio attendibili seguendo i passaggi descritti nella sezione [Disattivazione dell&#39;accesso remoto non essenziale ai servizi](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
@@ -253,7 +257,7 @@ Alcuni servizi server dei moduli dispongono di operazioni che possono essere ric
 
 #### Modificare la password amministratore predefinita {#change-the-default-administrator-password}
 
-Quando AEM Forms su JEE è installato, viene configurato un unico account utente predefinito per l&#39;utente Amministratore avanzato/Amministratore con ID login-id con una password *predefinita*. È necessario modificare immediatamente la password utilizzando Gestione configurazione.
+Quando si installano AEM Forms su JEE, viene configurato un unico account utente predefinito per l&#39;utente Amministratore/Amministratore di login-id con una password predefinita di *password*. È necessario modificare immediatamente la password utilizzando Gestione configurazione.
 
 1. Digitate il seguente URL in un browser Web:
 
@@ -299,7 +303,7 @@ La generazione del linguaggio WSDL (Web Service Definition Language) deve essere
 
 ### Protezione del server applicazioni {#application-server-security}
 
-Nella tabella seguente sono illustrate alcune tecniche per proteggere il server applicazione dopo l’installazione dell’applicazione AEM Forms su JEE.
+Nella tabella seguente sono illustrate alcune tecniche per proteggere il server applicazione dopo l&#39;installazione degli AEM Forms nell&#39;applicazione JEE.
 
 <table> 
  <thead> 
@@ -311,7 +315,7 @@ Nella tabella seguente sono illustrate alcune tecniche per proteggere il server 
  <tbody>
   <tr> 
    <td><p>console di amministrazione del server applicazioni</p> </td> 
-   <td><p>Dopo aver installato, configurato e implementato AEM Forms su JEE nel server delle applicazioni, è necessario disattivare l'accesso alle console di amministrazione del server delle applicazioni. Per ulteriori informazioni, consultate la documentazione del server applicazione.</p> </td> 
+   <td><p>Dopo aver installato, configurato e distribuito AEM Forms su JEE nel server dell’applicazione, è necessario disattivare l’accesso alle console di amministrazione del server dell’applicazione. Per ulteriori informazioni, consultate la documentazione del server applicazione.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Impostazioni cookie del server applicazioni</p> </td> 
@@ -326,9 +330,9 @@ Nella tabella seguente sono illustrate alcune tecniche per proteggere il server 
 
 ### Protezione del database {#database-security}
 
-Durante la protezione del database, è necessario implementare le misure descritte dal fornitore del database. È necessario allocare un utente del database con le autorizzazioni minime richieste per il database concesse per l&#39;uso da parte di AEM Forms su JEE. Ad esempio, non utilizzate un account con privilegi di amministratore del database.
+Durante la protezione del database, è necessario implementare le misure descritte dal fornitore del database. È necessario allocare un utente di database con le autorizzazioni minime richieste per il database concesse per l&#39;utilizzo da parte di AEM Forms in JEE. Ad esempio, non utilizzate un account con privilegi di amministratore del database.
 
-In Oracle, l&#39;account del database utilizzato richiede solo i privilegi CONNECT, RESOURCE e CREATE VIEW. Per requisiti simili su altri database, consultate [Preparazione all&#39;installazione di AEM Forms su JEE (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
+In Oracle, l&#39;account del database utilizzato richiede solo i privilegi CONNECT, RESOURCE e CREATE VIEW. Per requisiti simili su altri database, vedere [Preparazione all&#39;installazione di AEM Forms su JEE (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### Configurazione della protezione integrata per SQL Server in Windows per JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -339,7 +343,7 @@ In Oracle, l&#39;account del database utilizzato richiede solo i privilegi CONNE
    ```
 
 1. Aggiungete il file sqljdbc_auth.dll al percorso del sistema Windows sul computer su cui è in esecuzione il server dell&#39;applicazione. Il file sqljdbc_auth.dll si trova con l&#39;installazione del driver Microsoft SQL JDBC 6.2.1.0.
-1. Modificare la proprietà del servizio Windows JBoss (JBoss for AEM Forms on JEE) per Accesso come dal sistema locale in un account di accesso con database AEM Forms e un insieme minimo di privilegi. Se si esegue JBoss dalla riga di comando invece che come servizio Windows, non è necessario eseguire questo passaggio.
+1. Modificate la proprietà del servizio Windows JBoss (JBoss per AEM Forms su JEE) per Accesso come da sistema locale a un account di accesso con database AEM Forms e un insieme minimo di privilegi. Se si esegue JBoss dalla riga di comando invece che come servizio Windows, non è necessario eseguire questo passaggio.
 1. Impostare la protezione per SQL Server dalla modalità **mista** solo **a Autenticazione** Windows.
 
 #### Configurazione della protezione integrata per SQL Server in Windows per WebLogic {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
@@ -377,7 +381,7 @@ In WebSphere è possibile configurare la protezione integrata solo quando si uti
 
 ### Protezione dell&#39;accesso a contenuti sensibili nel database {#protecting-access-to-sensitive-content-in-the-database}
 
-Lo schema del database AEM Forms contiene informazioni riservate sulla configurazione del sistema e sui processi aziendali e deve essere nascosto dietro il firewall. Il database deve essere considerato all&#39;interno dello stesso limite di attendibilità del server dei moduli. Per evitare la divulgazione di informazioni e il furto di dati aziendali, il database deve essere configurato dall&#39;amministratore del database (DBA) per consentire l&#39;accesso solo agli amministratori autorizzati.
+Lo schema del database dei AEM Forms contiene informazioni riservate sulla configurazione del sistema e sui processi aziendali e deve essere nascosto dietro il firewall. Il database deve essere considerato all&#39;interno dello stesso limite di attendibilità del server dei moduli. Per evitare la divulgazione di informazioni e il furto di dati aziendali, il database deve essere configurato dall&#39;amministratore del database (DBA) per consentire l&#39;accesso solo agli amministratori autorizzati.
 
 Come precauzione aggiuntiva, è consigliabile utilizzare gli strumenti specifici del fornitore del database per cifrare le colonne nelle tabelle contenenti i dati seguenti:
 
@@ -389,13 +393,13 @@ Per informazioni sugli strumenti specifici del fornitore, vedere [&quot;Informaz
 
 ### Protezione LDAP {#ldap-security}
 
-Una directory LDAP (Lightweight Directory Access Protocol) viene in genere utilizzata da AEM Forms su JEE come origine per informazioni di utenti e gruppi aziendali e come mezzo per eseguire l&#39;autenticazione tramite password. Accertatevi che la directory LDAP sia configurata per l’utilizzo di SSL (Secure Socket Layer) e che AEM Forms su JEE sia configurato per l’accesso alla directory LDAP utilizzando la porta SSL corrispondente.
+Una directory LDAP (Lightweight Directory Access Protocol) viene in genere utilizzata dai AEM Forms in JEE come origine per le informazioni utente e gruppo aziendali e come mezzo per eseguire l&#39;autenticazione tramite password. Accertatevi che la directory LDAP sia configurata per l’utilizzo di Secure Socket Layer (SSL) e che i AEM Forms JEE siano configurati per accedere alla directory LDAP utilizzando la porta SSL corrispondente.
 
 #### Negazione del servizio LDAP {#ldap-denial-of-service}
 
 Un attacco comune che utilizza LDAP coinvolge un aggressore che intenzionalmente non riesce ad autenticarsi più volte. In questo modo il server di directory LDAP blocca un utente da tutti i servizi basati su LDAP.
 
-È possibile impostare il numero di tentativi non riusciti e il successivo tempo di blocco che AEM Forms implementa quando un utente ripetutamente non riesce ad autenticarsi in AEM Forms. In Admin Console, scegli valori bassi. Quando si seleziona il numero di tentativi di errore, è importante comprendere che dopo tutti i tentativi, AEM Forms esegue il blocco dell&#39;utente prima che venga eseguito il server di directory LDAP.
+È possibile impostare il numero di tentativi di errore e il successivo tempo di blocco che i AEM Forms implementano quando un utente non riesce ripetutamente ad autenticarsi ai AEM Forms. In Admin Console, scegli valori bassi. Quando si seleziona il numero di tentativi di errore, è importante comprendere che dopo tutti i tentativi, gli AEM Forms bloccano l’utente prima che il server di directory LDAP lo faccia.
 
 #### Impostazione del blocco automatico dell&#39;account {#set-automatic-account-locking}
 
@@ -426,7 +430,7 @@ Nella tabella seguente sono descritte le tecniche di auditing e registrazione ut
  <tbody>
   <tr> 
    <td><p>ACL del file di registro</p> </td> 
-   <td><p>Imposta moduli AEM appropriati sugli elenchi di controllo di accesso ai file di registro JEE.</p> <p>L'impostazione delle credenziali appropriate consente di impedire agli aggressori di eliminare i file.</p> <p>Le autorizzazioni di protezione nella directory del file di registro devono essere Controllo completo per gli amministratori e i gruppi SYSTEM. L'account utente di AEM Forms deve avere autorizzazioni di sola lettura e scrittura.</p> </td> 
+   <td><p>Impostare AEM Forms appropriati sugli elenchi di controllo di accesso ai file di registro JEE (ACL).</p> <p>L'impostazione delle credenziali appropriate consente di impedire agli aggressori di eliminare i file.</p> <p>Le autorizzazioni di protezione nella directory del file di registro devono essere Controllo completo per gli amministratori e i gruppi SYSTEM. L'account utente AEM Forms deve avere autorizzazioni di sola lettura e scrittura.</p> </td> 
   </tr> 
   <tr> 
    <td><p>ridondanza dei file di registro</p> </td> 
@@ -437,15 +441,15 @@ Nella tabella seguente sono descritte le tecniche di auditing e registrazione ut
 
 ## Configurazione di AEM Forms su JEE per l&#39;accesso oltre l&#39;azienda {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
-Dopo aver installato AEM Forms su JEE, è importante mantenere periodicamente la sicurezza dell&#39;ambiente. Questa sezione descrive le attività consigliate per mantenere la sicurezza di AEM Forms sul server di produzione JEE.
+Dopo aver installato correttamente i AEM Forms su JEE, è importante mantenere periodicamente la sicurezza dell&#39;ambiente. In questa sezione vengono descritte le attività consigliate per mantenere la sicurezza degli AEM Forms sul server di produzione JEE.
 
 ### Configurazione di un proxy inverso per l&#39;accesso Web {#setting-up-a-reverse-proxy-for-web-access}
 
-È possibile utilizzare un proxy ** inverso per garantire che un set di URL per AEM Forms su applicazioni Web JEE sia disponibile per gli utenti interni che esterni. Questa configurazione è più sicura che consentire agli utenti di connettersi direttamente al server applicazione su cui AEM Forms su JEE è in esecuzione. Il proxy inverso esegue tutte le richieste HTTP per il server applicazione che esegue AEM Forms su JEE. Gli utenti dispongono solo dell&#39;accesso di rete al proxy inverso e possono tentare solo connessioni URL supportate dal proxy inverso.
+È possibile utilizzare un proxy ** inverso per garantire che un set di URL per i AEM Forms nelle applicazioni Web JEE sia disponibile per gli utenti interni ed esterni. Questa configurazione è più sicura che consentire agli utenti di connettersi direttamente al server applicazione su cui sono in esecuzione AEM Forms su JEE. Il proxy inverso esegue tutte le richieste HTTP per il server applicazione che esegue AEM Forms su JEE. Gli utenti dispongono solo dell&#39;accesso di rete al proxy inverso e possono tentare solo connessioni URL supportate dal proxy inverso.
 
-**AEM Forms su URL principali JEE da usare con il server proxy inverso**
+**AEM Forms sugli URL radice JEE da utilizzare con il server proxy inverso**
 
-I seguenti URL principali dell&#39;applicazione per ogni AEM Forms presente nell&#39;applicazione Web JEE. Configurate il proxy inverso solo per esporre gli URL per la funzionalità dell&#39;applicazione Web che desiderate fornire agli utenti finali.
+I seguenti URL radice dell&#39;applicazione per ogni AEM Forms nell&#39;applicazione Web JEE. Configurate il proxy inverso solo per esporre gli URL per la funzionalità dell&#39;applicazione Web che desiderate fornire agli utenti finali.
 
 Alcuni URL vengono evidenziati come applicazioni Web rivolte all’utente finale. Evitare di esporre altri URL per Configuration Manager per l&#39;accesso agli utenti esterni tramite il proxy inverso.
 
@@ -497,7 +501,7 @@ Alcuni URL vengono evidenziati come applicazioni Web rivolte all’utente finale
   </tr> 
   <tr> 
    <td><p>/adobe-bootstrapper/*</p> </td> 
-   <td><p>Servlet per avviare AEM Forms sull'archivio JEE</p> </td> 
+   <td><p>Servlet per avviare i AEM Forms nell'archivio JEE</p> </td> 
    <td><p>No</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -599,7 +603,7 @@ Alcuni URL vengono evidenziati come applicazioni Web rivolte all’utente finale
   </tr> 
   <tr> 
    <td><p>/CoreSystemConfig/*</p> </td> 
-   <td><p>Pagina delle impostazioni di configurazione di AEM Forms su JEE Core</p> </td> 
+   <td><p>AEM Forms nella pagina delle impostazioni di configurazione JEE Core</p> </td> 
    <td><p>Sì</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -653,10 +657,10 @@ Il processo di filtro referente può essere descritto come segue:
    1. Se è POST, il server dei moduli esegue il controllo dell&#39;intestazione del referente.
    1. Se si tratta di GET, il server dei moduli bypassa il controllo Referrer, a meno che *CSRF_CHECK_GETS* non sia impostato su true, nel qual caso esegue il controllo dell&#39;intestazione Referrer. *CSRF_CHECK_GETS* è specificato nel file *web.xml* dell’applicazione.
 
-1. Il server dei moduli verifica se l&#39;URI richiesto è inserito nella lista bianca:
+1. Il server dei moduli verifica se l&#39;URI richiesto esiste nell&#39;elenco dei moduli:
 
-   1. Se l’URI è inserito nella white list, il server accetta la richiesta.
-   1. Se l’URI richiesto non è inserito nella white list, il server recupera il Referente della richiesta.
+   1. Se l’URI è consentito, il server accetta la richiesta.
+   1. Se l’URI richiesto non è elencato, il server recupera il Referente della richiesta.
 
 1. Se nella richiesta è presente un Referente, il server verifica se si tratta di un Referente Consentito. Se consentita, il server verifica la presenza di un&#39;eccezione di riferimento:
 
@@ -670,9 +674,9 @@ Il processo di filtro referente può essere descritto come segue:
 
 ### Gestione del filtro del referente {#managing-referer-filtering}
 
-In AEM Forms su JEE è disponibile un filtro di riferimento per specificare il referente a cui è consentito accedere alle risorse del server. Per impostazione predefinita, il filtro Referente non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio GET, a meno che *CSRF_CHECK_GETS* non sia impostato su true. Se il numero di porta per una voce Referente autorizzato è impostato su 0, AEM Forms su JEE consentirà tutte le richieste con Referente da tale host, indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo le richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Il filtro del referente è disabilitato se tutte le voci nell&#39;elenco Referente consentito vengono eliminate.
+I AEM Forms in JEE forniscono un filtro referente per specificare il referente che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referente non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio GET, a meno che *CSRF_CHECK_GETS* non sia impostato su true. Se il numero di porta per una voce Referente consentito è impostato su 0, i AEM Forms su JEE consentiranno tutte le richieste con Referente da tale host, indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo le richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Il filtro del referente è disabilitato se tutte le voci nell&#39;elenco Referente consentito vengono eliminate.
 
-La prima volta che si installa Document Services, l&#39;elenco Referente consentito viene aggiornato con l&#39;indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referente consentito vengono restituiti dal sistema operativo host. Ad esempio, un server con indirizzo IP pari a 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), l&#39;elenco bianco non viene aggiornato. Modificare l&#39;elenco Referente consentito in base all&#39;ambiente aziendale. Non distribuire il server moduli nell&#39;ambiente di produzione con l&#39;elenco Referente consentito predefinito. Dopo aver modificato uno qualsiasi degli URI, delle eccezioni di riferimento o di riferimento consentiti, assicurarsi di riavviare il server affinché le modifiche abbiano effetto.
+La prima volta che si installa Document Services, l&#39;elenco Referente consentito viene aggiornato con l&#39;indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referente consentito vengono restituiti dal sistema operativo host. Ad esempio, un server con indirizzo IP pari a 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), l&#39;elenco di nomi consentiti non viene aggiornato. Modificare l&#39;elenco Referente consentito in base all&#39;ambiente aziendale. Non distribuire il server moduli nell&#39;ambiente di produzione con l&#39;elenco Referente consentito predefinito. Dopo aver modificato uno qualsiasi degli URI, delle eccezioni di riferimento o di riferimento consentiti, assicurarsi di riavviare il server affinché le modifiche abbiano effetto.
 
 **Gestione dell&#39;elenco di riferimenti consentiti**
 
@@ -680,7 +684,7 @@ Puoi gestire l’elenco Referente consentito dall’interfaccia di gestione uten
 
 **Gestione delle eccezioni di riferimento consentite e degli elenchi URI consentiti**
 
-AEM Forms su JEE fornisce API per gestire l&#39;elenco Eccezione referente consentita e l&#39;elenco URI consentito. Potete utilizzare queste API per recuperare, creare, modificare o eliminare l&#39;elenco. Segue un elenco di API disponibili:
+I AEM Forms su JEE forniscono le API per gestire l&#39;elenco Eccezione referente consentita e l&#39;elenco URI consentito. Potete utilizzare queste API per recuperare, creare, modificare o eliminare l&#39;elenco. Segue un elenco di API disponibili:
 
 * createAllowedURIsList
 * getAllowedURIsList
@@ -691,11 +695,11 @@ AEM Forms su JEE fornisce API per gestire l&#39;elenco Eccezione referente conse
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Per ulteriori informazioni sulle API, consultate* AEM Forms on JEE API Reference*.
+Per ulteriori informazioni sulle API, consultate gli AEM Forms* in JEE API Reference*.
 
 Utilizzare l&#39;elenco ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** per Eccezioni referente consentite a livello globale, ad esempio per definire le eccezioni applicabili a tutte le applicazioni. Questo elenco contiene solo URI con percorso assoluto (ad es. `/index.html`) o un percorso relativo (ad esempio `/sample/`). Potete anche aggiungere un&#39;espressione regolare alla fine di un URI relativo, ad esempio `/sample/(.)*`.
 
-L&#39;ID elenco ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** è definito come una costante nella `UMConstants` classe dello `com.adobe.idp.um.api` spazio dei nomi, trovata in `adobe-usermanager-client.jar`. Potete utilizzare le API di AEM Forms per creare, modificare o modificare questo elenco. Ad esempio, per creare l&#39;elenco Eccezioni referente Global Allowed utilizzare:
+L&#39;ID elenco ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** è definito come una costante nella `UMConstants` classe dello `com.adobe.idp.um.api` spazio dei nomi, trovata in `adobe-usermanager-client.jar`. Potete utilizzare le API AEM Forms per creare, modificare o modificare questo elenco. Ad esempio, per creare l&#39;elenco Eccezioni referente Global Allowed utilizzare:
 
 ```as3
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
@@ -711,7 +715,7 @@ Includete l&#39;argomento `-Dlc.um.csrffilter.disabled=true` JAVA nello script d
 
 **Applicazione di filtri per file WAR personalizzati**
 
-È possibile che siano stati creati file WAR personalizzati da utilizzare con AEM Forms su JEE per soddisfare i requisiti aziendali. Per abilitare il filtro referente per i file WAR personalizzati, includi ***adobe-usermanager-client.jar*** nel percorso di classe per WAR e includi una voce di filtro nel file* web.xml* con i seguenti parametri:
+Potreste aver creato file WAR personalizzati da utilizzare con AEM Forms su JEE per soddisfare i vostri requisiti aziendali. Per abilitare il filtro referente per i file WAR personalizzati, includi ***adobe-usermanager-client.jar*** nel percorso di classe per WAR e includi una voce di filtro nel file* web.xml* con i seguenti parametri:
 
 **CSRF_CHECK_GETS** controlla il controllo Referente sulle richieste GET. Se questo parametro non è definito, il valore predefinito è false. Includete questo parametro solo se desiderate filtrare le richieste GET.
 
@@ -773,11 +777,11 @@ Se le richieste server legittime vengono bloccate dal filtro CSRF, provate una d
 
 ## Proteggere la configurazione di rete {#secure-network-configuration}
 
-Questa sezione descrive i protocolli e le porte richiesti da AEM Forms su JEE e fornisce suggerimenti per la distribuzione di AEM Forms su JEE in una configurazione di rete protetta.
+Questa sezione descrive i protocolli e le porte richiesti dai AEM Forms su JEE e fornisce raccomandazioni per la distribuzione di AEM Forms su JEE in una configurazione di rete protetta.
 
-### Protocolli di rete utilizzati da AEM Forms su JEE {#network-protocols-used-by-aem-forms-on-jee}
+### Protocolli di rete utilizzati dai AEM Forms su JEE {#network-protocols-used-by-aem-forms-on-jee}
 
-Quando si configura un&#39;architettura di rete protetta come descritto nella sezione precedente, per l&#39;interazione tra AEM Forms su JEE e altri sistemi della rete aziendale sono necessari i seguenti protocolli di rete.
+Quando si configura un&#39;architettura di rete protetta come descritto nella sezione precedente, i seguenti protocolli di rete sono necessari per l&#39;interazione tra AEM Forms su JEE e altri sistemi nella rete aziendale.
 
 <table> 
  <thead> 
@@ -800,15 +804,15 @@ Quando si configura un&#39;architettura di rete protetta come descritto nella se
    <td> 
     <ul> 
      <li><p>Applicazioni client di servizi Web, ad esempio applicazioni .NET</p> </li> 
-     <li><p>Adobe Reader® utilizza SOAP per AEM Forms sui servizi Web del server JEE</p> </li> 
+     <li><p>Adobe Reader® utilizza SOAP per i AEM Forms sui servizi Web del server JEE</p> </li> 
      <li><p>Le applicazioni Adobe Flash® utilizzano SOAP per i servizi Web del server dei moduli</p> </li> 
-     <li><p>Chiamate AEM Forms su JEE SDK quando utilizzate in modalità SOAP</p> </li> 
+     <li><p>AEM Forms sulle chiamate SDK JEE quando utilizzate in modalità SOAP</p> </li> 
      <li><p>Ambiente di progettazione di Workbench</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>RMI</p> </td> 
-   <td><p>Chiamate AEM Forms su JEE SDK quando utilizzate in modalità Enterprise JavaBeans (EJB)</p> </td> 
+   <td><p>AEM Forms sulle chiamate SDK JEE quando utilizzate in modalità Enterprise JavaBeans (EJB)</p> </td> 
   </tr> 
   <tr> 
    <td><p>IMAP/POP3</p> </td> 
@@ -820,7 +824,7 @@ Quando si configura un&#39;architettura di rete protetta come descritto nella se
   </tr> 
   <tr> 
    <td><p>IO file UNC</p> </td> 
-   <td><p>AEM Forms on JEE monitoraggio di cartelle esaminate per l'input a un servizio (endpoint cartelle esaminate)</p> </td> 
+   <td><p>AEM Forms sul monitoraggio JEE delle cartelle esaminate per l'input a un servizio (endpoint cartella controllato)</p> </td> 
   </tr> 
   <tr> 
    <td><p>LDAP</p> </td> 
@@ -835,20 +839,20 @@ Quando si configura un&#39;architettura di rete protetta come descritto nella se
    <td> 
     <ul> 
      <li><p>Richieste di query e procedure effettuate a un database esterno durante l'esecuzione di un processo utilizzando il servizio JDBC</p> </li> 
-     <li><p>Accesso interno AEM Forms su archivio JEE</p> </li> 
+     <li><p>AEM Forms di accesso interno nell'archivio JEE</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>WebDAV</p> </td> 
-   <td><p>Consente la navigazione remota di AEM Forms nell'archivio in fase di progettazione JEE (moduli, frammenti e così via) da parte di qualsiasi client WebDAV</p> </td> 
+   <td><p>Consente la navigazione remota dei AEM Forms nell'archivio di progettazione JEE (moduli, frammenti e così via) da parte di qualsiasi client WebDAV</p> </td> 
   </tr> 
   <tr> 
    <td><p>AMF</p> </td> 
-   <td><p>Applicazioni Adobe Flash, in cui AEM Forms su servizi server JEE è configurato con un endpoint remoto</p> </td> 
+   <td><p>Applicazioni Adobe Flash, dove i AEM Forms sui servizi server JEE sono configurati con un endpoint remoto</p> </td> 
   </tr> 
   <tr> 
    <td><p>JMX</p> </td> 
-   <td><p>AEM Forms su JEE espone gli MBeans per il monitoraggio utilizzando JMX</p> </td> 
+   <td><p>AEM Forms su JEE espone MBeans per il monitoraggio utilizzando JMX</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -902,7 +906,7 @@ Questa sezione descrive le porte predefinite (e gli intervalli di configurazione
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>Porte di amministrazione WebLogic non necessarie per l'accesso ad AEM Forms su JEE</p> </td> 
+   <td><p>Porte di amministrazione WebLogic non necessarie per l'accesso ai AEM Forms in JEE</p> </td> 
    <td> 
     <ul> 
      <li><p>Porta di ascolto del server gestito: Configurabile da 1 a 65534</p> </li> 
@@ -915,11 +919,11 @@ Questa sezione descrive le porte predefinite (e gli intervalli di configurazione
 
 **Porte WebSphere**
 
-Per informazioni sulle porte WebSphere richieste da AEM Forms su JEE, andate all&#39;impostazione del numero di porta nell&#39;interfaccia utente del server applicazioni WebSphere.
+Per informazioni sulle porte WebSphere richieste dai AEM Forms in JEE, passare all&#39;impostazione Numero porta nell&#39;interfaccia utente del server applicazioni WebSphere.
 
 ### Configurazione di SSL {#configuring-ssl}
 
-Facendo riferimento all&#39;architettura fisica descritta nella sezione Moduli [AEM sull&#39;architettura](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)fisica JEE, devi configurare SSL per tutte le connessioni che intendi utilizzare. Nello specifico, tutte le connessioni SOAP devono essere eseguite su SSL per impedire l&#39;esposizione delle credenziali utente in una rete.
+Facendo riferimento all&#39;architettura fisica descritta nei [AEM Forms di sezione sull&#39;architettura](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)fisica JEE, è necessario configurare SSL per tutte le connessioni che si intende utilizzare. Nello specifico, tutte le connessioni SOAP devono essere eseguite su SSL per impedire l&#39;esposizione delle credenziali utente in una rete.
 
 Per istruzioni su come configurare SSL su JBoss, WebLogic e WebSphere, consultate &quot;Configuring SSL&quot; (Configurazione di SSL) nella guida [di](https://www.adobe.com/go/learn_aemforms_admin_64)amministrazione.
 
@@ -951,11 +955,11 @@ Per configurare il reindirizzamento SSL per WebSphere o WebLogic, consulta la do
 
 ## Raccomandazioni di protezione specifiche per Windows {#windows-specific-security-recommendations}
 
-Questa sezione contiene raccomandazioni di protezione specifiche per Windows, se utilizzate per eseguire AEM Forms su JEE.
+Questa sezione contiene raccomandazioni di protezione specifiche per Windows quando utilizzate per eseguire AEM Forms su JEE.
 
 ### Account di servizio JBoss {#jboss-service-accounts}
 
-Per impostazione predefinita, l&#39;installazione di AEM Forms su JEE consente di impostare un account di servizio utilizzando l&#39;account di sistema locale. L&#39;account utente del sistema locale integrato dispone di un elevato livello di accessibilità; fa parte del gruppo Amministratori. Se l&#39;identità di un processo di lavoro viene eseguita come account utente del sistema locale, tale processo di lavoro dispone dell&#39;accesso completo all&#39;intero sistema.
+Per impostazione predefinita, i AEM Forms sull&#39;installazione chiavi in mano JEE configurano un account di servizio utilizzando l&#39;account Sistema locale. L&#39;account utente del sistema locale integrato dispone di un elevato livello di accessibilità; fa parte del gruppo Amministratori. Se l&#39;identità di un processo di lavoro viene eseguita come account utente del sistema locale, tale processo di lavoro dispone dell&#39;accesso completo all&#39;intero sistema.
 
 #### Eseguire il server applicazione utilizzando un account non amministrativo {#run-the-application-server-using-a-non-administrative-account}
 
@@ -973,13 +977,13 @@ Per impostazione predefinita, l&#39;installazione di AEM Forms su JEE consente d
    * Rifiuta accesso in locale
    * Accedi come servizio (dovrebbe essere già impostato)
 
-1. Assegna al nuovo account utente le autorizzazioni di lettura ed esecuzione, scrittura, modifica, elenco dei contenuti delle cartelle e lettura per completare AEM Forms nella directory di installazione JEE e nella directory Global Document Storage (GDS). La posizione della directory GDS è configurata manualmente durante il processo di installazione di AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server applicazione nella directory principale [/server/]tipo[/svcnative/DocumentStorage]JBoss.
+1. Assegnare al nuovo account utente le autorizzazioni di lettura ed esecuzione, scrittura, modifica, elenco dei contenuti delle cartelle e lettura per completare i AEM Forms nella directory di installazione JEE e nella directory Global Document Storage (GDS). La posizione della directory GDS viene configurata manualmente durante il processo di installazione dei AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server applicazione nella directory principale [/server/]tipo[/svcnative/DocumentStorage]JBoss.
 
 1. Avviate il servizio server applicazione.
 
 ### Protezione del file system {#file-system-security}
 
-AEM Forms su JEE utilizza il file system nei seguenti modi:
+I AEM Forms su JEE utilizzano il file system nei seguenti modi:
 
 * Memorizza i file temporanei utilizzati durante l&#39;elaborazione dell&#39;input e dell&#39;output del documento
 * Memorizza i file nell&#39;archivio globale utilizzati per supportare i componenti della soluzione installati
@@ -993,7 +997,7 @@ Questa sezione contiene raccomandazioni di configurazione del server applicazion
 
 ### Disabilita console di gestione JBoss e console JMX {#disable-jboss-management-console-and-jmx-console}
 
-L’accesso alla console di gestione JBoss e alla console JMX è già configurato (il monitoraggio JMX è disattivato) quando si installa AEM Forms su JEE su JBoss utilizzando il metodo di installazione chiavi in mano. Se utilizzate un server applicazioni JBoss personalizzato, accertatevi che l’accesso alla console di gestione JBoss e alla console di monitoraggio JMX sia protetto. L&#39;accesso alla console di monitoraggio JMX è impostato nel file di configurazione JBoss denominato jmx-invoker-service.xml.
+L’accesso alla console di gestione JBoss e alla console JMX è già configurato (il monitoraggio JMX è disabilitato) quando si installano AEM Forms su JEE su JBoss utilizzando il metodo di installazione chiavi in mano. Se utilizzate un server applicazioni JBoss personalizzato, accertatevi che l’accesso alla console di gestione JBoss e alla console di monitoraggio JMX sia protetto. L&#39;accesso alla console di monitoraggio JMX è impostato nel file di configurazione JBoss denominato jmx-invoker-service.xml.
 
 ### Disabilita esplorazione directory {#disable-directory-browsing}
 
@@ -1006,7 +1010,7 @@ https://<servername>:8080/um/
 
 ## Raccomandazioni specifiche per la protezione WebLogic {#weblogic-specific-security-recommendations}
 
-Questa sezione contiene raccomandazioni sulla configurazione del server applicazione per proteggere WebLogic 9.1 durante l&#39;esecuzione di AEM Forms su JEE.
+Questa sezione contiene le raccomandazioni di configurazione del server applicazione per proteggere WebLogic 9.1 quando si eseguono AEM Forms su JEE.
 
 ### Disabilita esplorazione directory {#disable_directory_browsing-1}
 
@@ -1025,7 +1029,7 @@ Per impostazione predefinita, WebLogic non abilita la porta di ascolto SSL prede
 
 ## Raccomandazioni di protezione specifiche per WebSphere {#websphere-specific-security-recommendations}
 
-Questa sezione contiene le raccomandazioni di configurazione del server applicazione per proteggere WebSphere che esegue AEM Forms su JEE.
+Questa sezione contiene le raccomandazioni di configurazione del server applicazione per proteggere i AEM Forms in esecuzione WebSphere su JEE.
 
 ### Disabilita esplorazione directory {#disable_directory_browsing-2}
 
