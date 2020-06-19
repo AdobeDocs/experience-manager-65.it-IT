@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
 workflow-type: tm+mt
 source-wordcount: '7153'
 ht-degree: 0%
@@ -27,7 +27,8 @@ Un amministratore può configurare una cartella di rete, nota come Cartella esam
 Per creare una cartella esaminata nel file system è possibile utilizzare uno dei seguenti metodi:
 
 * Durante la configurazione delle proprietà di un nodo di configurazione Cartella esaminata, digitare il percorso completo della directory principale nella proprietà folderPath e aggiungere il nome della cartella esaminata da creare, come illustrato nell&#39;esempio seguente: `C:/MyPDFs/MyWatchedFolder`
-La `MyWatchedFolder`cartella non esiste, AEM Forms tenta di creare la cartella nel percorso specificato.
+Il 
+`MyWatchedFolder`la cartella non esiste. AEM Forms tenta di creare la cartella nel percorso specificato.
 
 * Create una cartella sul file system prima di configurare un endpoint di tipo Cartella esaminata, quindi immettete il percorso completo nella proprietà folderPath. Per informazioni dettagliate sulla proprietà folderPath, vedere Proprietà [cartella](#watchedfolderproperties)esaminate.
 
@@ -53,6 +54,7 @@ Per configurare una cartella esaminata, create un nodo di configurazione della c
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
+
    Per un elenco completo delle proprietà supportate, consultate Proprietà delle cartelle [esaminate](#watchedfolderproperties).
 
 1. Fate clic su **Salva tutto**. Dopo la creazione del nodo e il salvataggio delle proprietà. Le `input`, `result`, `failure``preserve`e `stage`le cartelle vengono create nel percorso specificato nella `folderPath` proprietà.
@@ -141,6 +143,7 @@ Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern
    * %l = millisecondi
    * %R = numero casuale (tra 0 e 9)
    * %P = ID processo o processo
+
    Ad esempio, se il numero è alle 20 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati è C:/Test/WF0/failure/2009/07/17/20
 
    Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella esaminata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella esaminata. Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)di file.
@@ -159,11 +162,11 @@ Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern
 
    Quando i file vengono rilasciati nella cartella esaminata, elenca i file in input, il che può ridurre le prestazioni se la scansione avviene ogni secondo. Aumentare l&#39;intervallo di scansione può migliorare le prestazioni. Se il volume dei file che si desidera eliminare è limitato, regolare di conseguenza le dimensioni del batch e l’intervallo di sondaggio. Ad esempio, se 10 file vengono eliminati ogni secondo, provare a impostare pollInterval su 1 secondo e la dimensione batch su 10
 
-* **throttleOn (Boolean)**: Quando questa opzione è selezionata, limita il numero di processi delle cartelle esaminate elaborati da AEM Forms in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Il valore predefinito è true. (Vedere [Informazioni sulla limitazione](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Boolean)**: Quando questa opzione è selezionata, limita il numero di processi di cartelle esaminate elaborati dai AEM Forms in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Il valore predefinito è true. (Vedere [Informazioni sulla limitazione](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Boolean)**: Se è impostata su True, i file nella cartella dei risultati e nella cartella preserve vengono sovrascritti. Se è impostata su False, per il nome vengono utilizzati file e cartelle con un suffisso indice numerico. Il valore predefinito è False.
 * **preserveOnFailed (Boolean)**: Mantieni i file di input in caso di mancata esecuzione dell&#39;operazione su un servizio. Il valore predefinito è true.
-* **inputFilePattern (String)**: Specifica il pattern dei file di input per una cartella esaminata. Crea una whitelist dei file.
+* **inputFilePattern (String)**: Specifica il pattern dei file di input per una cartella esaminata. Crea un elenco dei file consentiti.
 * **asincrono (booleano)**: Identifica il tipo di chiamata come asincrono o sincrono. Il valore predefinito è true (asincrono). L&#39;elaborazione del file è un&#39;attività che richiede risorse. Mantenere il valore del flag asincrono su true per evitare di soffocare il thread principale del processo di scansione. In un ambiente cluster, è fondamentale mantenere il flag true per abilitare il bilanciamento del carico per i file elaborati nei server disponibili. Se il flag è false, il processo di scansione tenta di eseguire l&#39;elaborazione di ciascun file/cartella di livello principale in sequenza all&#39;interno del proprio thread. Non impostare il flag su false senza un motivo specifico, ad esempio l&#39;elaborazione basata su flusso di lavoro in una configurazione a server singolo.
 
 >[!NOTE]
@@ -300,7 +303,7 @@ Ora è possibile utilizzare il percorso personalizzato configurato per salvare g
 
 ### Utilizzo di un flusso di lavoro per elaborare i file di una cartella esaminata {#using-a-workflow-to-process-files-of-a-watched-folder}
 
-I flussi di lavoro consentono di automatizzare le attività di Experience Manager. I flussi di lavoro sono composti da una serie di passaggi eseguiti in un ordine specifico. Ogni passaggio esegue un&#39;attività distinta, ad esempio l&#39;attivazione di una pagina o l&#39;invio di un messaggio e-mail. I flussi di lavoro possono interagire con le risorse presenti nell’archivio, negli account utente e nei servizi Experience Manager. Pertanto, i flussi di lavoro possono coordinare in modo complicato.
+I flussi di lavoro consentono di automatizzare  attività Experience Manager. I flussi di lavoro sono composti da una serie di passaggi eseguiti in un ordine specifico. Ogni passaggio esegue un&#39;attività distinta, ad esempio l&#39;attivazione di una pagina o l&#39;invio di un messaggio e-mail. I flussi di lavoro possono interagire con le risorse presenti nell’archivio, negli account utente e  servizi Experience Manager. Pertanto, i flussi di lavoro possono coordinare in modo complicato.
 
 * Prima di creare un Flusso di lavoro, considera quanto segue:
 * L&#39;output di un passaggio deve essere disponibile per tutti i passaggi successivi.
@@ -395,7 +398,7 @@ log.info("Exiting workflow script!")
 
 Quando create una cartella esaminata, viene creata una struttura di cartelle all’interno della cartella esaminata. La struttura delle cartelle contiene le cartelle stage, result, preserve, input e failure. La struttura delle cartelle può fungere da payload di input per il flusso di lavoro e accettare l’output da un flusso di lavoro. Può anche elencare i punti di errore, se presenti.
 
-Se la struttura di un payload è diversa dalla struttura della cartella esaminata, è possibile creare script personalizzati per mappare la struttura della cartella esaminata al payload. Tale script è denominato filtro di mappatura payload. In AEM Forms è disponibile un filtro di mappatura payload per mappare la struttura della cartella esaminata su un payload.
+Se la struttura di un payload è diversa dalla struttura della cartella esaminata, è possibile creare script personalizzati per mappare la struttura della cartella esaminata al payload. Tale script è denominato filtro di mappatura payload. I AEM Forms forniscono un filtro di mappatura payload per mappare la struttura della cartella esaminata su un payload.
 
 #### Creazione di un filtro mappatore payload personalizzato {#creating-a-custom-payload-mapper-filter}
 
@@ -493,7 +496,7 @@ Se il processo contiene più di un file di input, l’utente deve creare una car
 
 >[!NOTE]
 >
->Verificate che il server applicazioni abbia eliminato l&#39;accesso ai file nella cartella esaminata. Se AEM Forms non è in grado di eliminare i file dalla cartella di input dopo la scansione, il processo associato verrà avviato a tempo indeterminato.
+>Verificate che il server applicazioni abbia eliminato l&#39;accesso ai file nella cartella esaminata. Se i AEM Forms non possono eliminare i file dalla cartella di input dopo la scansione, il processo associato verrà avviato indefinitamente.
 
 ## Ulteriori informazioni sulle cartelle esaminate {#additional-information-about-the-watched-folders}
 
@@ -512,8 +515,8 @@ Cartella esaminata analizza la cartella di input in ogni intervallo poll, rileva
 La limitazione impedisce alla cartella esaminata di richiamare nuovi processi quando i processi precedenti non sono completati. La cartella esaminata rileva i processi in corso ed elabora i nuovi processi in base alle dimensioni del batch meno i processi in corso. Ad esempio, nella seconda chiamata, se il numero di processi completati è di soli tre e un processo è ancora in corso, Cartella esaminata richiama solo altri tre processi.
 
 * La cartella esaminata si basa sul numero di file presenti nella cartella dell’area di visualizzazione per verificare quanti processi sono in corso. Se i file non vengono elaborati nella cartella dell’area di visualizzazione, la cartella esaminata non esegue altri processi. Ad esempio, se la dimensione del batch è pari a quattro e tre processi sono in stallo, Cartella osservata richiama un solo processo nelle chiamate successive. Esistono diversi scenari in cui i file possono rimanere non elaborati nella cartella dell’area di visualizzazione. Quando i processi vengono bloccati, l’amministratore può terminare il processo nella pagina di amministrazione di Process Management in modo che la cartella esaminata sposta i file fuori dalla cartella dell’area di visualizzazione.
-* Se il server AEM Forms si spegne prima che la cartella esaminata invoca i processi, l’amministratore può spostare i file dalla cartella dell’area di visualizzazione. Per informazioni, vedere Punti [di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Se il server AEM Forms è in esecuzione ma la cartella esaminata non è in esecuzione quando il servizio Job Manager effettua una nuova chiamata, il che si verifica quando i servizi non iniziano nella sequenza ordinata, l&#39;amministratore può spostare i file fuori dalla cartella dell&#39;area di visualizzazione. Per informazioni, vedere Punti [di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se il server AEM Forms va giù prima che la cartella esaminata invoca i processi, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, vedere Punti [di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se il server AEM Forms è in esecuzione ma la cartella esaminata non è in esecuzione quando il servizio Job Manager effettua una nuova chiamata, che si verifica quando i servizi non vengono avviati nella sequenza ordinata, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, vedere Punti [di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### Punti di errore e ripristino di punti di errore e ripristino {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -538,7 +541,8 @@ Se la cartella esaminata non è in grado di elaborare i file sorgente nella cart
 
    * Modificate la proprietà includeFilePattern per la cartella esaminata in modo che non corrisponda ad alcun nuovo file di input (ad esempio, immettete NOMATCH).
    * Sospendere il processo di creazione di nuovi file di input.
-   Attendete che AEM Forms recuperi ed elabori tutti i file. La maggior parte dei file dovrebbe essere recuperato e tutti i nuovi file di input elaborati correttamente. Il tempo di attesa per la cartella esaminata per recuperare ed elaborare i file dipenderà dalla lunghezza dell&#39;operazione da richiamare e il numero di file da recuperare.
+
+   Attendere che i AEM Forms recuperino ed elaborino tutti i file. La maggior parte dei file dovrebbe essere recuperato e tutti i nuovi file di input elaborati correttamente. Il tempo di attesa per la cartella esaminata per recuperare ed elaborare i file dipenderà dalla lunghezza dell&#39;operazione da richiamare e il numero di file da recuperare.
 
 1. Determinare quali file non possono essere elaborati. Se avete atteso un periodo di tempo adeguato e avete completato il passaggio precedente e se nella cartella dell’area di visualizzazione sono ancora presenti file non elaborati, passate al passaggio successivo.
 
