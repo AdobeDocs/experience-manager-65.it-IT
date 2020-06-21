@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: d01b36770ea1cc7f8d780c49bf8c2af70915c553
+source-git-commit: 49b18b780c87501dcb2d9a00930da8eb5e51cff2
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 2%
 
 ---
 
@@ -27,21 +30,21 @@ Per una panoramica delle funzioni di traduzione del contenuto in AEM, consultate
 
 ## Connessione a un provider di servizi di traduzione {#connecting-to-a-translation-service-provider}
 
-Crea una configurazione cloud per la connessione di AEM al provider di servizi di traduzione. AEM include la funzionalità di connessione a Microsoft Translator per impostazione predefinita. Per altri provider di traduzione, scaricate il pacchetto di connettore da [Package Share](/help/sites-administering/package-manager.md#package-share).
-I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova API per i progetti di traduzione. Collegamenti per ulteriori informazioni sull&#39;integrazione e su come scaricare da Package Share:
+Crea una configurazione cloud per la connessione di AEM al provider di servizi di traduzione. AEM include la funzionalità di connessione a Microsoft Translator per impostazione predefinita.
+I seguenti fornitori di traduzione forniscono un&#39;implementazione della nuova API per i progetti di traduzione. Collegamenti per ulteriori informazioni sull&#39;integrazione:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
-* [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (non su PackageShare, contattare direttamente il fornitore)
-* [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
-* [Cloudwords](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
-* [CrossLang NV](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/crosslang-xtm-for-adobe-experience-manager.html)
-* [Lingotek](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
+* [Tecnologie per tablet argilla](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
+* [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
+* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
+* [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
+* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [Smartphone](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
+* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
+* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (Microsoft Translator è preinstallato in AEM)
-* [Smartphone](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
-* [SDL TMS](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
-* [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
-* [Altlang](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/Altlang.html)
 
 >[!NOTE]
 >
@@ -222,5 +225,5 @@ Associate una pagina al framework di integrazione della traduzione che definisce
 1. Nella console Siti, selezionate la pagina da configurare e toccate o fate clic su Visualizza proprietà.
 1. Tocca o fai clic su Modifica, quindi tocca o fai clic sulla scheda Servizi cloud.
 1. Tocca o fai clic su Aggiungi configurazione > Integrazione traduzione.
-1. Selezionate il framework di integrazione della conversione da utilizzare, quindi toccate o fate clic su Fine.
+1. Selezionate il framework di integrazione della conversione da utilizzare, quindi fate clic o toccate Fine.
 
