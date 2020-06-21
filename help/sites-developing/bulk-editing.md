@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 [La modifica collettiva delle proprietà](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) di pagina consente di modificare le proprietà di più pagine alla volta.
 
-A causa della possibilità di valori diversi, per impostazione predefinita le proprietà della pagina non sono abilitate per la modifica collettiva. Devono essere esplicitamente inseriti nella white list (attivato). Per definire le proprietà della pagina in modo che siano disponibili per la modifica collettiva, è necessario considerare alcune implicazioni, come:
+A causa della possibilità di valori diversi, per impostazione predefinita le proprietà della pagina non sono abilitate per la modifica collettiva. Devono essere esplicitamente consentiti (abilitati). Per definire le proprietà della pagina in modo che siano disponibili per la modifica collettiva, è necessario considerare alcune implicazioni, ad esempio:
 
 * Alcuni campi sono in genere univoci; ad esempio un titolo di pagina. È necessario stabilire se è utile abilitare tali campi per la modifica collettiva, quando verrà applicato un valore.
 * Alcuni campi possono avere più valori; questo richiede una rappresentazione significativa durante il rendering.
@@ -57,7 +60,7 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 
 
 
-I campi sono abilitati sul componente pagina (*non* sul modello):
+I campi sono attivati sul componente pagina (*non* sul modello):
 
 1. Utilizzando CRXDE Lite (o un metodo equivalente), aprite il componente di pagina.
 
@@ -65,7 +68,7 @@ I campi sono abilitati sul componente pagina (*non* sul modello):
 
    >[!NOTE]
    >
-   >Nell&#39;esempio si presuppone che nell&#39;istanza siano stati installati i componenti core, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) for more information.
+   >Nell&#39;esempio si presuppone che nell&#39;istanza siano stati installati i componenti core, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) for more information.
 
 1. Andate al campo obbligatorio nella `cq:dialog` definizione.
 1. Definire la seguente proprietà sul nodo campo:
