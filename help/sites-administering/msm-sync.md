@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 79%
 
 ---
 
@@ -136,7 +139,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione che vengono i
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Elimina i nodi della Live Copy che non esistono nell'origine. <a href="#excluding-properties-and-node-types-from-synchronization">Configurate il servizio</a> CQ MSM Content Delete Action per specificare i tipi di nodo, gli elementi paragrafo e le proprietà pagina da escludere. </p> </td>
+   <td><p>Elimina i nodi della Live Copy che non esistono nell'origine. <a href="#excluding-properties-and-node-types-from-synchronization">Configurate il servizio</a> CQ MSM Content Delete Action per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà della pagina da escludere. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -165,7 +168,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione che vengono i
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Nella Live Copy, questa azione di sincronizzazione aggiorna i riferimenti, ad esempio i link.<br /> Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Quando viene trovato un percorso, lo aggiorna per indicare il punto in cui si trova la risorsa correlata all’interno della Live Copy (anziché della blueprint). I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurate il servizio</a> Azione aggiornamento riferimenti CQ MSM per specificare i tipi di nodo, gli elementi paragrafo e le proprietà pagina da escludere. </p> </td>
+   <td><p>Nella Live Copy, questa azione di sincronizzazione aggiorna i riferimenti, ad esempio i link.<br /> Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Quando viene trovato un percorso, lo aggiorna per indicare il punto in cui si trova la risorsa correlata all’interno della Live Copy (anziché della blueprint). I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurate il servizio</a> Azione aggiornamento riferimenti CQ MSM per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà della pagina da escludere. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -287,15 +290,15 @@ La tabella seguente descrive le proprietà che puoi configurare:
    <td>Un'espressione regolare che corrisponde ai tipi di nodo da escludere dall'azione di sincronizzazione.</td>
   </tr>
   <tr>
-   <td><p>Elementi paragrafo esclusi</p> <p>cq.wcm.msm.action.excludedParagraphItems</p> </td>
+   <td><p>Elementi paragrafo esclusi</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
    <td>Un'espressione regolare che corrisponde agli elementi paragrafo da escludere dall'azione di sincronizzazione.</td>
   </tr>
   <tr>
-   <td><p>Proprietà pagina escluse</p> <p>cq.wcm.msm.action.Excludedprops</p> </td>
+   <td><p>Proprietà pagina escluse</p> <p>cq.wcm.msm.action.excludedprops</p> </td>
    <td>Un'espressione regolare che corrisponde alle proprietà della pagina da escludere dall'azione di sincronizzazione.</td>
   </tr>
   <tr>
-   <td><p>Tipi di nodo misti ignorati</p> <p>cq.wcm.msm.action.IgnoreMixin</p> </td>
+   <td><p>Tipi di nodo Mixin ignorati</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
    <td>Disponibile solo per CQ MSM Content Update Action. Un’espressione regolare che corrisponde ai nomi del nodo Mixin che devono essere esclusi dall’azione di sincronizzazione.</td>
   </tr>
  </tbody>
@@ -322,12 +325,6 @@ Puoi modificare le espressioni che definiscono l’elenco di esclusione secondo 
 Ad esempio, se desideri includere il **Titolo** della pagina nelle modifiche considerate per il rollout, rimuovi `jcr:title` dalle esclusioni. Ad esempio, con il codice regex:
 
 `jcr:(?!(title)$).*`
-
->[!CAUTION]
->
->Prima della versione 5.5 SP2, le proprietà pagina escluse venivano configurate nella console di sistema in **Day CQ WCM Rollout Manager**. A partire dalla versione 5.5 SP2, le impostazioni delle proprietà delle pagine escluse all’interno di tale pannello vengono ignorate. Property exclusion on rollout is configured as described above, in **CQ MSM Content Update Action**.
->
->Pertanto, se hai modificato manualmente questa impostazione in un’installazione precedente alla versione 5.5 SP2 e stai effettuando l’aggiornamento alla versione 5.5 SP2 o successiva, *devi trasferire manualmente queste impostazioni dal vecchio pannello di configurazione a quello nuovo*.
 
 ### Configurazione della sincronizzazione per l’aggiornamento dei riferimenti {#configuring-synchronization-for-updating-references}
 
@@ -362,8 +359,8 @@ Il seguente elenco di posizioni, in cui puoi specificare le configurazioni di ro
 
 * **[Proprietà di pagina della Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):**quando una pagina Live Copy è configurata per l’utilizzo di una o più configurazioni di rollout, MSM utilizza tali configurazioni di rollout.
 * **[Proprietà di pagina blueprint](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):**quando una Live Copy è basata su una blueprint e la pagina Live Copy non è configurata con una configurazione di rollout, viene utilizzata la configurazione di rollout associata alla pagina blueprint sorgente.
-* **** Proprietà pagina padre Live Copy: Quando né la pagina Live Copy né la pagina origine blueprint sono configurate con una configurazione di rollout, viene utilizzata la configurazione di rollout applicata alla pagina padre della pagina Live Copy.
-* **[](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)Valore predefinito **del sistema: Quando non è possibile determinare la configurazione di rollout della pagina padre della Live Copy, viene utilizzata la configurazione di rollout predefinita del sistema.
+* **Proprietà pagina padre Live Copy:** Quando né la pagina Live Copy né la pagina origine blueprint sono configurate con una configurazione di rollout, viene utilizzata la configurazione di rollout applicata alla pagina padre della pagina Live Copy.
+* **[Valore predefinito](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)del sistema:**Quando non è possibile determinare la configurazione di rollout della pagina padre della Live Copy, viene utilizzata la configurazione di rollout predefinita del sistema.
 
 Ad esempio, una blueprint utilizza il sito di riferimento We.Retail come contenuto sorgente. Un sito viene creato dalla blueprint. Ogni voce dell’elenco seguente descrive uno scenario diverso rispetto all’uso delle configurazioni di rollout:
 
@@ -411,7 +408,8 @@ Considera che le pagine secondarie della pagina blueprint ereditano la configura
 
 Specifica una configurazione di rollout da usare come predefinita del sistema. Per specificare il valore predefinito, configura il servizio OSGi:
 
-* **Day CQ WCM Live Relationship Manager**:  il PID del servizio è `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager**:  il PID del servizio è 
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configura il servizio utilizzando la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo di archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
