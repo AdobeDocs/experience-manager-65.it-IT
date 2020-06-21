@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8b6801a4efd45fa49e009e1d6876d21c4cded957
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 3%
 
 ---
 
@@ -31,16 +34,16 @@ Dopo aver creato la configurazione, è necessario [attivarla](/help/sites-admini
 La procedura seguente utilizza l’interfaccia touch per creare una configurazione Microsoft Translator.
 
 1. Nella barra laterale, fate clic o toccate Strumenti > Servizi cloud.
-1. Nell&#39;area Microsoft Translator, fare clic o toccare Mostra configurazioni.
+1. Nell&#39;area Microsoft Translator, quindi fare clic o toccare Mostra configurazioni.
 1. Fate clic sul collegamento + accanto a Configurazioni disponibili.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
 1. Digitare un titolo per la configurazione. Il titolo identifica la configurazione sia nella console Servizi cloud che negli elenchi a discesa delle proprietà della pagina. Il nome predefinito si basa sul titolo. Facoltativamente, digitare un nome da utilizzare per il nodo del repository che memorizza la configurazione. È consigliabile utilizzare il valore predefinito per la proprietà Configurazione padre che rappresenta il percorso del nodo del repository.
-1. Fate clic su Crea.
+1. Fai clic su Crea.
 1. Nella finestra di dialogo visualizzata, digitate i valori per le proprietà e fate clic su OK.
 
-## Configurazioni di servizio Microsoft Translator Cloud di esempio {#sample-microsoft-translator-cloud-service-configurations}
+## Configurazioni Cloud Service di Microsoft Translator di esempio {#sample-microsoft-translator-cloud-service-configurations}
 
 Con gli esempi Geometrixx sono installate le seguenti configurazioni del servizio cloud Microsoft Translator. Alcune configurazioni di esempio utilizzano un account di prova Microsoft Translation che consente di tradurre al massimo 2 000 000 caratteri al mese.
 
@@ -69,16 +72,16 @@ Le pagine di configurazione di Microsoft Translation forniscono un comodo colleg
 
 ### Personalizzazione del motore di traduzione Microsoft {#customizing-your-microsoft-translator-engine}
 
-Le pagine di configurazione di Microsoft Translation forniscono un comodo collegamento al sito Web Microsoft per la personalizzazione del motore Microsoft Translator. ([https://hub.microsofttranslator.com](https://hub.microsofttranslator.com/))
+Le pagine di configurazione di Microsoft Translation forniscono un comodo collegamento al sito Web Microsoft per la personalizzazione del motore di Microsoft Translator. ([https://hub.microsofttranslator.com](https://hub.microsofttranslator.com/))
 
 1. Nella barra laterale, fai clic su Strumenti > Operazioni > Cloud > Servizi cloud.
 1. Nell&#39;area Microsoft Translator, fare clic o toccare Mostra configurazioni, quindi fare clic o toccare la configurazione da personalizzare.
-1. Nella pagina di configurazione, fai clic su Personalizza traduttore. Utilizzare la pagina Web Microsoft che si apre per personalizzare il servizio.
+1. Nella pagina di configurazione, fai clic su Personalizza traduttore. Utilizzate la pagina Web Microsoft che si apre per personalizzare il servizio.
 
 ## Attivazione delle configurazioni del servizio di traduzione {#activating-the-translator-service-configurations}
 
 È necessario attivare le configurazioni del servizio cloud per supportare il contenuto convertito replicato nell’istanza di pubblicazione. Utilizzare il metodo di [attivazione di una sezione completa (struttura ad albero)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) per attivare i nodi del repository in cui sono memorizzate le configurazioni del servizio cloud Microsoft Translator o di terze parti. I nodi si trovano sotto i seguenti nodi padre:
 
-* Servizio di traduzione Microsoft: /etc/cloudservices/msft-Translation
+* Servizio di traduzione Microsoft: /libs/settings/cloudconfigs/translate/msft-Translation
 * Traduzione di terze parti: /etc/cloudservices/traduzione automatica
 
