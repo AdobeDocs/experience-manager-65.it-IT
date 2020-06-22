@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
 workflow-type: tm+mt
 source-wordcount: '965'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Punteggio e Badge Essentials {#scoring-and-badges-essentials}
 
-La funzione punteggio e badge di AEM Communities consente di identificare e premiare i membri della community.
+La funzione AEM Communities punteggio e simboli consente di identificare e premiare i membri della community.
 
 I dettagli relativi alla configurazione della funzione sono descritti in
 
@@ -83,7 +83,7 @@ Per istruzioni dettagliate, vedere [Creazione di un file](/help/sites-deploying/
 
 Per impostare rapidamente un file slinglog:
 
-1. Accedere al supporto **dei registri della console Web di** Adobe Experience Manager, ad esempio
+1. Accedere al **Adobe Experience Manager Supporto** Registro console Web, ad esempio
 
    * https://localhost:4502/system/console/slinglog
 
@@ -102,7 +102,7 @@ Per impostare rapidamente un file slinglog:
 
 
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 Per visualizzare le voci di registro:
 
@@ -118,7 +118,7 @@ Per visualizzare le voci di registro:
 
    * Esempio, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
@@ -217,7 +217,7 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 
    Poiché un utente ha guadagnato due simboli di bronzo ed è stato assegnato un badge moderatore, questo è il modo in cui l&#39;utente appare con la sua voce forum.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Per il sito della guida per i componenti della community, l’utente e il relati
 
 Il punteggio è memorizzato nella proprietà `scoreValue_tl` che può contenere solo un valore o fare riferimento indirettamente a un atomicCounter.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### Accesso UGC {#access-badging-ugc}
 
@@ -270,11 +270,11 @@ Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella de
 
 #### Badge aggiudicato {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### Badge assegnato {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Informazioni aggiuntive {#additional-information}
 
