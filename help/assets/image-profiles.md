@@ -8,10 +8,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: a71507e3c6030ebc3f4abbd7064318d653d326bd
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '2755'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ Quando caricate le immagini, potete ritagliare automaticamente l’immagine al m
 
 >[!NOTE]
 >
->Smart Crop è disponibile solo in modalità Contenuti multimediali dinamici - Scene7.
+>Smart Crop è disponibile solo in modalità Dynamic Media - Scene7.
 
 >[!IMPORTANT]
 >
@@ -113,9 +113,9 @@ Consultate [Profili per elaborazione di metadati, immagini e video](processing-p
 
 Consultate anche [Best practice per l’organizzazione delle risorse digitali per l’utilizzo dei profili](/help/assets/organize-assets.md)di elaborazione.
 
-**Per creare profili immagine per file multimediali dinamici**
+**Per creare profili immagine Dynamic Media**
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles.]**
 1. Toccate **[!UICONTROL Crea]** per aggiungere un nuovo profilo immagine.
 1. Immettete un nome di profilo e valori per maschera di contrasto, ritaglio o campione oppure per entrambi.
 
@@ -125,18 +125,18 @@ Consultate anche [Best practice per l’organizzazione delle risorse digitali pe
 
    ![ritaglio](assets/crop.png)
 
-1. Toccate **[!UICONTROL Salva]**. Il nuovo profilo creato viene visualizzato nell’elenco dei profili disponibili.
+1. Toccate **[!UICONTROL Salva.]** Il nuovo profilo creato viene visualizzato nell’elenco dei profili disponibili.
 
-## Modifica o eliminazione di profili immagine per file multimediali dinamici {#editing-or-deleting-image-profiles}
+## Modifica o eliminazione di profili immagine Dynamic Media {#editing-or-deleting-image-profiles}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. Selezionate il profilo immagine da modificare o rimuovere. Per modificarlo, selezionare **[!UICONTROL Modifica profilo]** elaborazione immagine. Per rimuoverlo, selezionate **[!UICONTROL Elimina profilo]** elaborazione immagine.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles.]**
+1. Selezionate il profilo immagine da modificare o rimuovere. Per modificarlo, selezionate **[!UICONTROL Modifica profilo elaborazione immagine.]** Per rimuoverlo, selezionate **[!UICONTROL Elimina profilo elaborazione immagine.]**
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. In caso di modifica, salvate le modifiche. Se eliminate, confermate che desiderate rimuovere il profilo.
 
-## Applicazione di un profilo immagine per file multimediali dinamici alle cartelle {#applying-an-image-profile-to-folders}
+## Applicazione di un profilo immagine Dynamic Media alle cartelle {#applying-an-image-profile-to-folders}
 
 Quando assegnate un profilo immagine a una cartella, tutte le sottocartelle ereditano automaticamente il profilo dalla cartella principale. Potete quindi assegnare un solo profilo immagine a una cartella. Considerate quindi attentamente la struttura delle cartelle in cui caricare, memorizzare, usare e archiviare le risorse.
 
@@ -150,48 +150,48 @@ Potete applicare i profili immagine a cartelle specifiche o globalmente a tutte 
 
 Potete rielaborare le risorse in una cartella che dispone già di un profilo immagine esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
-### Applicazione dei profili immagine per elementi multimediali dinamici a cartelle specifiche {#applying-image-profiles-to-specific-folders}
+### Applicazione dei profili immagine Dynamic Media a cartelle specifiche {#applying-image-profiles-to-specific-folders}
 
-Puoi applicare un profilo immagine a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come applicare i profili immagine alle cartelle con entrambe le soluzioni.
+Puoi applicare un profilo immagine a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà.]** Questa sezione descrive come applicare i profili immagine alle cartelle con entrambe le soluzioni.
 
 Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
 Potete rielaborare le risorse in una cartella che dispone già di un profilo video esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
-#### Applicazione dei profili immagine per elementi multimediali dinamici alle cartelle dall’interfaccia utente Profili {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Applicazione dei profili immagine Dynamic Media alle cartelle dall&#39;interfaccia utente Profili {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles.]**
 1. Selezionate il profilo immagine da applicare a una o più cartelle.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
-#### Applicazione dei profili immagine per elementi multimediali dinamici alle cartelle da Proprietà {#applying-image-profiles-to-folders-from-properties}
+#### Applicazione dei profili immagine Dynamic Media alle cartelle da Proprietà {#applying-image-profiles-to-folders-from-properties}
 
 1. Toccate il logo AEM e andate a **[!UICONTROL Risorse]** , quindi alla cartella a cui desiderate applicare un profilo immagine.
-1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
-1. Tocca la scheda **[!UICONTROL Profili immagine]**. Seleziona il profilo dall’elenco a discesa **[!UICONTROL Nome profilo]**, quindi tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà.]**
+1. Tocca la scheda **[!UICONTROL Profili immagine]**. Seleziona il profilo dall’elenco a discesa **[!UICONTROL Nome profilo]**, quindi tocca **[!UICONTROL Salva e chiudi.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Applicazione di un profilo immagine per elementi multimediali dinamici a livello globale {#applying-an-image-profile-globally}
+### Applicazione di un profilo immagine Dynamic Media a livello globale {#applying-an-image-profile-globally}
 
 Oltre ad applicare un profilo a una cartella, puoi applicarne uno a livello globale in modo che a qualsiasi contenuto caricato in risorse AEM in qualsiasi cartella sia applicato il profilo selezionato.
 
 Potete rielaborare le risorse in una cartella che dispone già di un profilo video esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
-**Per applicare a livello globale** un profilo immagine per elementi multimediali dinamici:
+**Per applicare un profilo immagine Dynamic Media a livello globale**:
 
 1. Effettua una delle operazioni seguenti:
 
-   * Individuate `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applicate il profilo appropriato e toccate **[!UICONTROL Salva]**.
+   * Individuate `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e applicate il profilo appropriato e toccate **[!UICONTROL Salva.]**
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`.
 
-      Aggiungete la proprietà `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e toccate **[!UICONTROL Salva tutto]**.
+      Aggiungete la proprietà `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` e toccate **[!UICONTROL Salva tutto.]**
 
       ![configure_image_profile](assets/configure_image_profiles.png)
 
@@ -199,7 +199,7 @@ Potete rielaborare le risorse in una cartella che dispone già di un profilo vid
 
 >[!NOTE]
 >
->Smart Crop è disponibile solo in modalità Contenuti multimediali dinamici - Scene7.
+>Smart Crop è disponibile solo in modalità Dynamic Media - Scene7.
 
 Potete riallineare o ridimensionare manualmente la finestra di ritaglio avanzato di un’immagine per perfezionarne ulteriormente il punto focale.
 
@@ -215,7 +215,7 @@ Consultate anche [Modifica del campione avanzato o avanzato di più immagini](#e
 
 1. Toccate la cartella per aprirne il contenuto.
 1. Toccate l’immagine di cui desiderate regolare il ritaglio avanzato o il campione avanzato.
-1. Nella barra degli strumenti, toccate **[!UICONTROL Smart Crop]**.
+1. Nella barra degli strumenti, toccate Ritaglio **[!UICONTROL avanzato.]**
 
 1. Effettua una delle operazioni seguenti:
 
@@ -237,7 +237,7 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
 **Per modificare il ritaglio avanzato o il campione avanzato di più immagini**:
 
 1. Toccate il logo AEM e andate a **[!UICONTROL Risorse]**, quindi a una cartella a cui è applicato un profilo immagine di ritaglio avanzato o campione avanzato.
-1. Nella cartella, toccate l&#39;icona **[!UICONTROL Altre azioni]** (...), quindi toccate **[!UICONTROL Smart Crop]**.
+1. Nella cartella, toccate l&#39;icona **[!UICONTROL Altre azioni]** (...), quindi toccate **[!UICONTROL Smart Crop.]**
 
 1. Nella pagina **[!UICONTROL Modifica ritaglio]** avanzato, effettuate una delle seguenti operazioni:
 
@@ -257,12 +257,14 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
 
       * Se l’immagine dispone solo di un ritaglio avanzato o di un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del ritaglio.
       * Se l’immagine dispone sia di un ritaglio avanzato che di un campione avanzato, trascinate sull’immagine la maniglia d’angolo della casella di ritaglio per regolare le dimensioni dell’area visibile del ritaglio. Oppure, toccate o fate clic sul campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascinate la maniglia d’angolo della casella di ritaglio per regolare la dimensione dell’area visibile del campione.
+
       ![Ridimensionamento del ritaglio avanzato di un’immagine.](assets/edit_smart_crops-resize.png)
 
    * Spostate la casella di ritaglio avanzato. Effettuate una delle seguenti operazioni:
 
       * Se l’immagine dispone solo di un ritaglio avanzato o di un campione avanzato, trascinate la casella di ritaglio in una nuova posizione.
       * Se l’immagine dispone sia di un ritaglio avanzato che di un campione avanzato, trascinate la casella di ritaglio avanzato in una nuova posizione. Oppure, toccate o fate clic sul campione avanzato sotto l’immagine (i campioni colore sono statici), quindi trascinate la casella di ritaglio campione avanzato in una nuova posizione.
+
       ![edit_smart_ritagriturismo](assets/edit_smart_crops-move.png)
 
    * Annullate tutte le modifiche e ripristinate il ritaglio avanzato o il campione avanzato originale (applicabile solo alla sessione di modifica corrente).
@@ -273,27 +275,27 @@ Se necessario, potete eseguire nuovamente il ritaglio avanzato per generare di n
 
 
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**. quindi toccate **[!UICONTROL Chiudi]** per tornare alla cartella delle risorse.
+1. Near the upper-right corner of the page, tap **[!UICONTROL Save.]** quindi toccate **[!UICONTROL Chiudi]** per tornare alla cartella delle risorse.
 
 ## Rimozione di un profilo immagine dalle cartelle {#removing-an-image-profile-from-folders}
 
 Quando rimuovete un profilo immagine da una cartella, tutte le sottocartelle ereditano automaticamente la rimozione del profilo dalla cartella principale. Tuttavia, l&#39;elaborazione dei file che si è verificata all&#39;interno delle cartelle rimane intatta.
 
-Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come rimuovere i profili immagine dalle cartelle con entrambe le soluzioni.
+Puoi rimuovere un profilo immagine da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà.]** Questa sezione descrive come rimuovere i profili immagine dalle cartelle con entrambe le soluzioni.
 
-### Rimozione dei profili immagine per elementi multimediali dinamici dalle cartelle tramite l’interfaccia utente Profili {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Rimozione dei profili immagine Dynamic Media dalle cartelle tramite l’interfaccia utente Profili {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles.]**
 1. Selezionate il profilo immagine da rimuovere da una o più cartelle.
-1. Tocca **[!UICONTROL Rimuovi profilo elaborazione da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere il profilo, infine tocca **[!UICONTROL Rimuovi]**.
+1. Tocca **[!UICONTROL Rimuovi profilo elaborazione da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere il profilo, infine tocca **[!UICONTROL Rimuovi.]**
 
    Potete confermare che il profilo immagine non viene più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
-### Rimozione dei profili immagine per elementi multimediali dinamici dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
+### Rimozione di profili immagine Dynamic Media dalle cartelle tramite Proprietà {#removing-image-profiles-from-folders-via-properties}
 
 1. Toccate il logo AEM, individuate le **[!UICONTROL risorse]** e quindi la cartella da cui desiderate rimuovere un profilo immagine.
-1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
+1. Toccate il segno di spunta sulla cartella per selezionarla, quindi toccate **[!UICONTROL Proprietà.]**
 1. Select the **[!UICONTROL Image Profiles]** tab.
-1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close.]**
 
    Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
