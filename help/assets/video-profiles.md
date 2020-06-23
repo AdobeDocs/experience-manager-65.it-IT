@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 20%
@@ -157,11 +157,11 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 
 **Per creare un profilo video per lo streaming** adattivo,
 
-1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video.]**
 1. Tocca o fai clic su **[!UICONTROL Crea]** per aggiungere un nuovo profilo video.
 
 1. Immettete un nome e una descrizione per il profilo.
-1. Nella pagina Crea/Modifica predefiniti di codifica video, toccate **[!UICONTROL Aggiungi predefinito]** di codifica video.
+1. Nella pagina Crea/Modifica predefiniti di codifica video, toccate **[!UICONTROL Aggiungi predefinito di codifica video.]**
 1. Nella scheda **[!UICONTROL Base]** , impostate le opzioni video e audio.
 Toccate l’icona delle informazioni accanto a ciascuna opzione per ottenere descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
 1. Nella sezione Dimensione video, accertatevi che le proporzioni **[!UICONTROL Mantieni siano selezionate]** .
@@ -169,7 +169,7 @@ Toccate l’icona delle informazioni accanto a ciascuna opzione per ottenere des
 
 1. Effettua una delle operazioni seguenti:
 
-   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**. In the **[!UICONTROL Height]** field, enter a value in pixels.
+   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto.]** Nel campo **[!UICONTROL Altezza]** , inserite un valore in pixel.
 
    * Per visualizzare le dimensioni del video, toccate l’icona Informazioni (i) a destra di **[!UICONTROL Altezza]** per aprire la pagina Calcolatore dimensioni. Utilizzate **[!UICONTROL Calcolatore]** dimensioni per impostare le dimensioni video (rappresentate dalla casella blu) desiderate. Toccate **[!UICONTROL X]** nell&#39;angolo superiore destro al termine.
 
@@ -180,7 +180,7 @@ Toccate l’icona delle informazioni accanto a ciascuna opzione per ottenere des
    * Passate al passaggio successivo.
 
 1. (Facoltativo) Per aggiungere video smart crop ai video a cui verrà applicato questo profilo, effettuate le seguenti operazioni:
-   * Nella pagina Modifica profilo video, a destra dell’intestazione Rapporto di ritaglio avanzato, toccate **[!UICONTROL Aggiungi nuovo]**.
+   * Nella pagina Modifica profilo video, toccate **[!UICONTROL Aggiungi nuovo a destra dell’intestazione Rapporto di ritaglio avanzato.]**
    * Nel campo Nome, digitate un nome per il rapporto di ritaglio che vi consentirà di identificarlo facilmente.
    * Dall’elenco a discesa **[!UICONTROL Rapporto]** di ritaglio, selezionate il rapporto da usare.
 
@@ -210,17 +210,17 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 
 **Per creare un profilo video per lo streaming progressivo:**
 
-1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video.]**
 1. Toccate **[!UICONTROL Crea]** per aggiungere un nuovo profilo video.
 1. Immettete un nome e una descrizione per il profilo.
-1. Nella pagina Crea/Modifica predefiniti di codifica video, toccate **[!UICONTROL Aggiungi predefinito]** di codifica video.
+1. Nella pagina Crea/Modifica predefiniti di codifica video, toccate **[!UICONTROL Aggiungi predefinito di codifica video.]**
 1. Nella scheda **[!UICONTROL Base]** , impostate le opzioni video e audio.
 Toccate l’icona delle informazioni accanto a ciascuna opzione per ottenere descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
-1. (Facoltativo) In Dimensione video, deselezionate **[!UICONTROL Mantieni proporzioni]**.
+1. (Facoltativo) Sotto l’intestazione Dimensione video, deselezionate **[!UICONTROL Mantieni proporzioni.]**
 1. Effettua le seguenti operazioni:
-   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**.
+   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto.]**
    * In the **[!UICONTROL Height]** field, enter a value in pixels.
-To help you visualize the size of the video, tap the Height&#39;s information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
+To help you visualize the size of the video, tap the Height&#39;s information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X.]**
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
    * Toccate la scheda **[!UICONTROL Avanzate]** e verificate che la casella di controllo **[!UICONTROL Usa valori]** predefiniti sia selezionata (opzione consigliata).
@@ -236,7 +236,7 @@ Toccate l’icona delle informazioni accanto a ciascuna opzione per ottenere des
 
 1. (Facoltativo) Per aggiungere video smart crop ai video a cui verrà applicato questo profilo, effettuate le seguenti operazioni:
 
-   * Nella pagina Modifica profilo video, a destra dell’intestazione Rapporto di ritaglio avanzato, toccate **[!UICONTROL Aggiungi nuovo]**.
+   * Nella pagina Modifica profilo video, toccate **[!UICONTROL Aggiungi nuovo a destra dell’intestazione Rapporto di ritaglio avanzato.]**
    * Nel campo Nome, digitate un nome per il rapporto di ritaglio che vi consentirà di identificarlo facilmente.
    * Dall’elenco a discesa **[!UICONTROL Rapporto]** di ritaglio, selezionate il rapporto da usare.
 
@@ -255,7 +255,7 @@ Potete modificare un profilo di codifica video esistente per sfruttare i paramet
 
 **Per utilizzare parametri** di codifica video personalizzati:
 
-1. Tocca il logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
+1. Tocca il logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite.]**
 1. Dalla pagina CRXDE Lite, nel pannello Esplora risorse a sinistra, andate a:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -307,11 +307,11 @@ Potete modificare un profilo di codifica video esistente per sfruttare i paramet
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Nell’angolo inferiore destro della pagina, toccate **[!UICONTROL Aggiungi]**.
+1. Nell’angolo inferiore destro della pagina, toccate **[!UICONTROL Aggiungi.]**
 1. Effettua una delle operazioni seguenti:
 
    * Ripetete i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.
-   * Nell’angolo in alto a sinistra della pagina, toccate **[!UICONTROL Salva tutto]**.
+   * Nell’angolo in alto a sinistra della pagina, toccate **[!UICONTROL Salva tutto.]**
 
 1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, toccate l’icona **[!UICONTROL Indietro Home]** per tornare ad AEM.
 
@@ -327,9 +327,9 @@ Per definire parametri di elaborazione avanzati per altri tipi di risorse, consu
 
 **Per modificare un profilo** video:
 
-1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video.]**
 1. Nella pagina Profili video, verificate il nome di un profilo video.
-1. Sulla barra degli strumenti, toccate **[!UICONTROL Modifica]**.
+1. Sulla barra degli strumenti, toccate **[!UICONTROL Modifica.]**
 1. Nella pagina Profilo codifica video, modificate il nome e la descrizione come desiderate.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata.
 Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni. (Se state modificando un profilo video progressivo, non selezionate questa casella di controllo.)
@@ -337,13 +337,13 @@ Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni
 
    Per ottenere descrizioni aggiuntive o impostazioni consigliate per il codec del formato video selezionato, tocca l’icona delle informazioni posta accanto a ciascuna opzione nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**.
 
-1. Nell&#39;angolo superiore destro della pagina, toccate **[!UICONTROL Salva]**.
+1. Nell&#39;angolo superiore destro della pagina, toccate **[!UICONTROL Salva.]**
 
 ### Copia di un profilo video {#copying-a-video-encoding-profile}
 
-1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video.]**
 1. Nella pagina Profili video, verificate il nome di un profilo video.
-1. Sulla barra degli strumenti, toccate **[!UICONTROL Copia]**.
+1. Sulla barra degli strumenti, toccate **[!UICONTROL Copia.]**
 1. Nella pagina Profilo codifica video, immettete un nuovo nome per il profilo.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata. Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni. Se copi un profilo video progressivo, non selezionare la casella di controllo.
 
@@ -352,14 +352,14 @@ Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni
 
    Toccate l&#39;icona delle informazioni accanto a ciascuna opzione nelle schede Base e Avanzate per le impostazioni e le descrizioni consigliate.
 
-1. Nell&#39;angolo superiore destro della pagina, toccate **[!UICONTROL Salva]**.
+1. Nell&#39;angolo superiore destro della pagina, toccate **[!UICONTROL Salva.]**
 
 ### Eliminazione di un profilo video {#deleting-a-video-encoding-profile}
 
-1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video.]**
 1. Nella pagina Profili video, verificate i nomi di uno o più profili video.
-1. Sulla barra degli strumenti, toccate **[!UICONTROL Elimina]**.
-1. Toccate **[!UICONTROL OK]**.
+1. Sulla barra degli strumenti, toccate **[!UICONTROL Elimina.]**
+1. Toccate **[!UICONTROL OK.]**
 
 ## Applicazione di un profilo video alle cartelle {#applying-a-video-profile-to-folders}
 
@@ -377,7 +377,7 @@ Potete rielaborare le risorse in una cartella che dispone già di un profilo vid
 
 ### Applicazione di un profilo video a cartelle specifiche {#applying-video-profiles-to-specific-folders}
 
-Puoi applicare un profilo video a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà]**. Questa sezione descrive come applicare i profili video alle cartelle con entrambe le soluzioni.
+Puoi applicare un profilo video a una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Proprietà.]** Questa sezione descrive come applicare i profili video alle cartelle con entrambe le soluzioni.
 
 Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
@@ -385,16 +385,16 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 #### Applicazione di un profilo video alle cartelle tramite l’interfaccia utente Profili {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video.]**
 1. Selezionate il profilo video da applicare a una o più cartelle.
-1. Tocca **[!UICONTROL Applica profilo a cartelle]** e seleziona una o più cartelle da usare per ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Applica]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella in **[!UICONTROL Vista a schede]**.
+1. Tocca **[!UICONTROL Applica profilo a cartelle]** e seleziona una o più cartelle da usare per ricevere le risorse appena caricate, quindi fai clic su **[!UICONTROL Applica.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella in **[!UICONTROL Vista a schede.]**
 Potete [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-an-encoding-job)di elaborazione del profilo video.
 
 #### Applicazione di un profilo video alle cartelle da Proprietà {#applying-video-profiles-to-folders-from-properties}
 
 1. Toccate o fate clic sul logo AEM, accedete a **[!UICONTROL Risorse]** e quindi alla cartella a cui desiderate applicare un profilo video.
-1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà]**.
-1. Seleziona la scheda **[!UICONTROL Profili video]** e fai clic sul profilo dal menu a discesa, infine tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Sulla cartella, toccate il segno di spunta per selezionarlo, quindi toccate **[!UICONTROL Proprietà.]**
+1. Seleziona la scheda **[!UICONTROL Profili video]** e fai clic sul profilo dal menu a discesa, infine tocca **[!UICONTROL Salva e chiudi.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)È possibile [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-an-encoding-job)di elaborazione del profilo video.
 
@@ -406,7 +406,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 **Per applicare un profilo video a livello globale**,
 
-* Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungete la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toccate **[!UICONTROL Salva tutto]**.
+* Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungete la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toccate **[!UICONTROL Salva tutto.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Potete [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-an-encoding-job)di elaborazione del profilo video.
@@ -421,19 +421,19 @@ Potete inoltre visualizzare il `error.log` file per monitorare l’avanzamento d
 
 Quando rimuovete un profilo video da una cartella, tutte le sottocartelle ereditano automaticamente la rimozione del profilo dalla cartella principale. Tuttavia, l&#39;elaborazione dei file che si è verificata all&#39;interno delle cartelle rimane intatta.
 
-Puoi rimuovere un profilo video da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Impostazioni cartella]**. Questa sezione descrive come rimuovere i profili video dalle cartelle con entrambe le soluzioni.
+Puoi rimuovere un profilo video da una cartella direttamente dal menu **[!UICONTROL Strumenti]** oppure, se ti trovi nella cartella, da **[!UICONTROL Impostazioni cartella.]** Questa sezione descrive come rimuovere i profili video dalle cartelle con entrambe le soluzioni.
 
 ### Rimozione di un profilo video dalle cartelle tramite l’interfaccia utente Profili {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video]**.
+1. Tocca il logo AEM e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Profili video.]**
 1. Selezionate il profilo video da rimuovere da una o più cartelle.
-1. Tocca **[!UICONTROL Rimuovi profilo da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere il profilo, infine tocca **[!UICONTROL Rimuovi]**.
+1. Tocca **[!UICONTROL Rimuovi profilo da cartelle]** e seleziona una o più cartelle da cui vuoi rimuovere il profilo, infine tocca **[!UICONTROL Rimuovi.]**
 
    Potete confermare che il profilo video non viene più applicato a una cartella perché il nome non viene più visualizzato sotto il nome della cartella.
 
 ### Rimozione di un profilo video dalle cartelle tramite Proprietà {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toccate o fate clic sul logo AEM, accedete a **[!UICONTROL Risorse]** e quindi alla cartella da cui desiderate rimuovere un profilo video.
-1. Sulla cartella, toccate o fate clic sul segno di spunta per selezionarlo, quindi toccate o fate clic su **Proprietà]**.
-1. Seleziona la scheda **[!UICONTROL Profili video]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva e chiudi]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
+1. Sulla cartella, toccate o fate clic sul segno di spunta per selezionarlo, quindi toccate o fate clic su **Proprietà.]**
+1. Seleziona la scheda **[!UICONTROL Profili video]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva e chiudi.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
