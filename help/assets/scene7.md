@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '2873'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -87,7 +87,7 @@ L’aggiunta di un componente Dynamic Media Classic (Scene7) a una pagina equiva
 
 1. In AEM, aprite la pagina in cui desiderate aggiungere il componente Dynamic Media Classic (Scene7).
 
-1. Se non sono disponibili componenti Dynamic Media Classic, fate clic su **[!UICONTROL Modalità progettazione]** , toccate un componente con bordo blu, toccate l&#39;icona **[!UICONTROL Elemento padre]** e quindi l&#39;icona **[!UICONTROL Configurazione]** . In **[!UICONTROL Parsys (Design)]**, selezionate tutti i componenti Dynamic Media Classic per renderli disponibili e fate clic su **[!UICONTROL OK]**.
+1. Se non sono disponibili componenti Dynamic Media Classic, fate clic su **[!UICONTROL Modalità progettazione]** , toccate un componente con bordo blu, toccate l&#39;icona **[!UICONTROL Elemento padre]** e quindi l&#39;icona **[!UICONTROL Configurazione]** . In **[!UICONTROL Parsys (Design)]**, selezionate tutti i componenti Dynamic Media Classic per renderli disponibili e fate clic su **[!UICONTROL OK.]**
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
@@ -210,7 +210,7 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 #### Modifica dinamica del testo {#changing-text-dynamically}
 
-Per modificare il testo in modo dinamico, immetti un nuovo testo nei campi e fai clic su **[!UICONTROL OK]**. In questo esempio, il **[!UICONTROL Prezzo]** è ora di $50 e la spedizione è di 99 centesimi.
+Per modificare il testo in modo dinamico, immetti un nuovo testo nei campi e fai clic su **[!UICONTROL OK.]** In questo esempio, il **[!UICONTROL Prezzo]** è ora di $50 e la spedizione è di 99 centesimi.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -220,7 +220,7 @@ Il testo nell’immagine cambia. You can reset the text back to the original val
 
 #### Modifica del testo in base a un valore personalizzato ClientContext {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK]**. In questo esempio, il nome cambia perché è collegato al nome formattato nel profilo.
+To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK.]** In questo esempio, il nome cambia perché è collegato al nome formattato nel profilo.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -230,12 +230,12 @@ Il testo si aggiorna con il nome dell’utente attualmente connesso. Per riprist
 
 #### Come rendere il modello di immagine Dynamic Media Classic un collegamento {#making-the-scene-image-template-a-link}
 
-1. Sulla pagina con il componente Modello **** immagine di Dynamic Media Classic toccate **[!UICONTROL Modifica]**.
+1. Sulla pagina con il componente Dynamic Media Classic **[!UICONTROL Image Template]** , toccate **[!UICONTROL Modifica.]**
 1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Toccate **[!UICONTROL OK]**.
+1. Toccate **[!UICONTROL OK.]**
 
 ### Componente video {#video-component}
 
@@ -285,6 +285,7 @@ Sfogliate le risorse di Dynamic Media Classic selezionando **[!UICONTROL Dynamic
 >
 >* Il browser dei contenuti di Dynamic Media Classic carica circa 100 risorse e le ordina per nome.
 >* Se è impostato un server di anteprima protetto, il browser utilizzerà tale server di anteprima per eseguire il rendering delle miniature e delle risorse.
+
 >
 
 
@@ -337,11 +338,12 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
    >
 * Durante la ricerca di video, si cerca una singola rappresentazione. I risultati restituiscono la rappresentazione originale (solo &amp;ast;.mp4) e la rappresentazione codificata.
 >* Quando eseguite una ricerca in un set video adattivo, dovete cercare nella cartella e in tutte le sottocartelle, ma solo se avete aggiunto una parola chiave alla ricerca. Se non hai aggiunto una parola chiave, AEM non cerca nelle sottocartelle.
+
 >
 
 
 
-**[!UICONTROL Stato]** pubblicazione: potete filtrare le risorse in base allo stato di pubblicazione: **[!UICONTROL Non pubblicato]** o **[!UICONTROL Pubblicato]**. If you do not select any **[!UICONTROL Publish Status]**, AEM by default searches all publish statuses.
+**[!UICONTROL Stato]** pubblicazione: potete filtrare le risorse in base allo stato di pubblicazione: **[!UICONTROL Non pubblicato]** o **[!UICONTROL Pubblicato.]** Se non selezionate Stato **** pubblicazione, AEM esegue per impostazione predefinita la ricerca in tutti gli stati di pubblicazione.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
