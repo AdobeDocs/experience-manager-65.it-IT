@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Tali regole possono includere l’aggiunta di metadati, il ritaglio avanzato del
 
 Dopo aver creato i metadati, l’immagine o il profilo video, potete assegnarli a una o più cartelle da usare come destinazione per le nuove risorse caricate.
 
-Un concetto importante per l’utilizzo dei profili in Risorse AEM è che vengono assegnati alle cartelle. All’interno di un profilo sono disponibili impostazioni sotto forma di profili di metadati, nonché profili video o profili immagine. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Di conseguenza, il modo in cui denominate file e cartelle, le modalità di disposizione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo.
+Un concetto importante per l’utilizzo dei profili in AEM Assets è che vengono assegnati alle cartelle. All’interno di un profilo sono disponibili impostazioni sotto forma di profili di metadati, nonché profili video o profili immagine. Queste impostazioni elaborano il contenuto di una cartella insieme a una delle relative sottocartelle. Di conseguenza, il modo in cui denominate file e cartelle, le modalità di disposizione delle sottocartelle e la gestione dei file all’interno di tali cartelle hanno un impatto significativo sul modo in cui tali risorse vengono elaborate da un profilo.
 Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio la raccolta di risorse digitali e assicurarvi che i file corretti vengano elaborati dal profilo corretto.
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate
 
 >[!NOTE]
 >
->Applicabile a Contenuti multimediali *dinamici - Modalità* Scene7 solo in AEM 6.4.6.0 o versioni successive.
+>Applicabile ad *Dynamic Media - Modalità* Scene7 solo in AEM 6.4.6.0 o versione successiva.
 
 Potete rielaborare le risorse in una cartella che dispone già di un profilo di elaborazione esistente modificato in seguito.
 
@@ -52,14 +52,14 @@ Ad esempio, se avete creato un profilo Immagine e lo avete assegnato a una carte
 
 Potete eseguire il flusso di lavoro di rielaborazione su una risorsa per la quale l&#39;elaborazione non è riuscita per la prima volta. Anche se non avete modificato un profilo di elaborazione o non avete applicato un profilo di elaborazione, potete comunque eseguire il flusso di lavoro di rielaborazione in una cartella di risorse in qualsiasi momento.
 
-Facoltativamente potete regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando eseguite _Scene7: Elaborate nuovamente il flusso di lavoro delle risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa dell’intero set di batch vengono aggiornati in AEM. Se le dimensioni del batch sono molto grandi, potrebbe verificarsi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
+Facoltativamente potete regolare la dimensione batch del flusso di lavoro di rielaborazione da un valore predefinito di 50 risorse fino a 1000 risorse. Quando eseguite _Scene7: Elaborate nuovamente il flusso di lavoro delle risorse_ in una cartella, le risorse vengono raggruppate in batch e quindi inviate al server Dynamic Media per l’elaborazione. Dopo l’elaborazione, i metadati di ciascuna risorsa dell’intero set di batch vengono aggiornati in AEM. Se le dimensioni del batch sono molto grandi, potrebbe verificarsi un ritardo nell&#39;elaborazione. Oppure, se la dimensione del batch è troppo piccola, può causare troppi viaggi di andata e ritorno al server Dynamic Media.
 
 Consultate [Regolazione delle dimensioni batch del flusso di lavoro](#adjusting-load)di rielaborazione.
 
 >[!NOTE]
 >
 >Se state eseguendo una migrazione di massa di risorse da Dynamic Media Classic ad AEM, dovete attivare l’agente di replica della migrazione sul server Dynamic Media. Al termine della migrazione, accertatevi di disabilitare l’agente.
-L’agente di pubblicazione della migrazione deve essere disabilitato sul server di contenuti multimediali dinamici, in modo che il flusso di lavoro di rielaborazione funzioni come previsto.
+L’agente di pubblicazione della migrazione deve essere disabilitato sul server Dynamic Media, in modo che il flusso di lavoro di rielaborazione funzioni come previsto.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
@@ -74,20 +74,20 @@ L’agente di pubblicazione della migrazione deve essere disabilitato sul server
    * Se sono presenti una o più sottocartelle con le risorse nella cartella principale selezionata, il flusso di lavoro rielaborerà tutte le risorse nella gerarchia delle cartelle.
    * Come procedura ottimale, evitate di eseguire questo flusso di lavoro in una gerarchia di cartelle con più di 1000 risorse.
 
-1. Fai clic su **[!UICONTROL Timeline]** dall’elenco a discesa nell’angolo in alto a sinistra della pagina.
+1. Near the upper-left corner of the page, from the drop-down list, click **[!UICONTROL Timeline.]**
 1. Nell&#39;angolo inferiore sinistro della pagina, a destra del campo Commento, fate clic sull&#39;icona del carrello ( **^** ) .
 
    ![Rielabora flusso di lavoro risorse 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Fate clic su **[!UICONTROL Avvia flusso di lavoro]**.
-1. Dall’elenco a discesa **[!UICONTROL Avvia flusso di lavoro]** , scegliete **[!UICONTROL Scene7: Rielabora risorse]**.
+1. Fate clic su **[!UICONTROL Avvia flusso di lavoro.]**
+1. Dall’elenco a discesa **[!UICONTROL Avvia flusso di lavoro]** , scegliete **[!UICONTROL Scene7: Rielabora risorse.]**
 1. (Facoltativo) Nel campo di testo **Immettere il titolo del flusso di lavoro** , immettere un nome per il flusso di lavoro. Se necessario, potete usare il nome per fare riferimento all’istanza del flusso di lavoro.
 
    ![Rielaborare le risorse 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Fate clic su **[!UICONTROL Avvia]**, quindi su **[!UICONTROL Conferma]**.
+1. Fate clic su **[!UICONTROL Avvia]**, quindi su **[!UICONTROL Conferma.]**
 
-   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale di AEM fate clic su **[!UICONTROL Strumenti > Flusso di lavoro]**. Nella pagina Istanze flusso di lavoro, selezionate un flusso di lavoro. Nella barra dei menu, fate clic su **[!UICONTROL Apri cronologia]**. È inoltre possibile terminare, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
+   Per monitorare il flusso di lavoro o controllarne l’avanzamento, dalla pagina della console principale di AEM fate clic su **[!UICONTROL Strumenti > Flusso di lavoro.]** Nella pagina Istanze flusso di lavoro, selezionate un flusso di lavoro. Nella barra dei menu, fate clic su **[!UICONTROL Apri cronologia.]** È inoltre possibile terminare, sospendere o rinominare un flusso di lavoro selezionato dalla stessa pagina Istanze flusso di lavoro.
 
 ### Regolazione delle dimensioni batch del flusso di lavoro di rielaborazione {#adjusting-load}
 
@@ -95,12 +95,12 @@ L’agente di pubblicazione della migrazione deve essere disabilitato sul server
 
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro di rielaborazione**
 
-1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
-1. Nella pagina Modelli flusso di lavoro, nella vista a schede o a elenco, selezionate **[!UICONTROL Scene7: Rielabora risorse]**.
+1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
+1. Nella pagina Modelli flusso di lavoro, nella vista a schede o a elenco, selezionate **[!UICONTROL Scene7: Rielabora risorse.]**
 
    ![Pagina Modelli di workflow con Scene7: Rielabora flusso di lavoro risorse selezionato nella vista a schede](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Nella barra degli strumenti, fate clic su **[!UICONTROL Modifica]**. Viene aperta una nuova scheda del browser che consente di aprire Scene7: Rielabora la pagina del modello del flusso di lavoro Risorse.
+1. Nella barra degli strumenti, fate clic su **[!UICONTROL Modifica.]** Viene aperta una nuova scheda del browser che consente di aprire Scene7: Rielabora la pagina del modello del flusso di lavoro Risorse.
 1. In Scene7: Rielabora la pagina del flusso di lavoro delle risorse, nell’angolo in alto a destra, fai clic su **[!UICONTROL Modifica]** per &quot;sbloccare&quot; il flusso di lavoro.
 1. Nel flusso di lavoro, selezionate il componente Caricamento batch di Scene7 per aprire la barra degli strumenti, quindi fate clic su **[!UICONTROL Configura]** nella barra degli strumenti.
 
@@ -113,18 +113,19 @@ L’agente di pubblicazione della migrazione deve essere disabilitato sul server
    * Nel campo **[!UICONTROL Periodo]** , immettete un intervallo di polling (secondi) per verificare il completamento del processo esterno.
    * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
    * Selezionate **[!UICONTROL Anticipo su timeout]** se desiderate avanzare quando viene raggiunto il timeout. Deselezionate questa opzione se desiderate passare alla inbox quando viene raggiunto il timeout.
+
    ![Proprietà, finestra di dialogo](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Nell’angolo in alto a destra della finestra di dialogo Caricamento **[!UICONTROL batch in Scene7 - Proprietà]** passaggio, fate clic su **[!UICONTROL Fine]**.
+1. Nell’angolo in alto a destra della finestra di dialogo Caricamento **[!UICONTROL batch in Scene7 - Proprietà]** passaggio, fate clic su **[!UICONTROL Fine.]**
 
-1. Nell’angolo in alto a destra di Scene7: Rielabora la pagina del modello di flusso di lavoro Risorse, fai clic su **[!UICONTROL Sincronizza]**. Quando viene visualizzato **[!UICONTROL Sincronizzato]**, il modello runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
+1. Nell’angolo in alto a destra di Scene7: Rielabora la pagina del modello di flusso di lavoro Risorse, fai clic su **[!UICONTROL Sincronizza.]** Quando viene visualizzato **[!UICONTROL Sincronizzato]**, il modello runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
 
    ![Sincronizzazione del modello di workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Chiudete la scheda del browser che mostra Scene7: Rielabora il modello di flusso di lavoro Risorse.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -135,10 +136,10 @@ L’agente di pubblicazione della migrazione deve essere disabilitato sul server
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add.]** The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
