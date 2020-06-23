@@ -1,6 +1,6 @@
 ---
-title: Aggiunta di risorse per elementi multimediali dinamici alle pagine
-seo-title: Aggiunta di risorse per elementi multimediali dinamici alle pagine
+title: Aggiunta di risorse Dynamic Media alle pagine
+seo-title: Aggiunta di risorse Dynamic Media alle pagine
 description: Per aggiungere la funzionalità multimediale dinamica alle risorse utilizzate sui siti web, è possibile aggiungere il Componente Elemento multimediale dinamico o File multimediali interattivi direttamente sulla pagina.
 seo-description: Per aggiungere la funzionalità multimediale dinamica alle risorse utilizzate sui siti web, è possibile aggiungere il Componente Elemento multimediale dinamico o File multimediali interattivi direttamente sulla pagina.
 uuid: 650d0867-a079-4936-a466-55b7a30803a2
@@ -10,14 +10,17 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 57%
 
 ---
 
 
-# Adding Dynamic Media assets to pages{#adding-dynamic-media-assets-to-pages}
+# Aggiunta di risorse Dynamic Media alle pagine{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Una volta fatto ciò, potrai aggiungere questi componenti alla pagina e aggiungere risorse al componente. I componenti Elemento multimediale dinamico e File multimediali interattivi sono intelligenti: sanno se aggiungi un&#39;immagine o un video e le opzioni disponibili cambiano di conseguenza.
+To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Quindi, potrai aggiungere questi componenti alla pagina e fornire così risorse al componente. I componenti Elemento multimediale dinamico e File multimediali interattivi sono intelligenti: sanno se aggiungi un&#39;immagine o un video e le opzioni disponibili cambiano di conseguenza.
 
 Se utilizzi AEM come WCM, puoi aggiungere risorse multimediali dinamiche direttamente alla pagina.
 
@@ -45,7 +48,7 @@ Per aggiungere un componente/visualizzatore elementi multimediali dinamici a una
 
 ## Componente elementi multimediali dinamici {#dynamic-media-components}
 
-[!UICONTROL Contenuti multimediali] dinamici e file multimediali  interattivi sono disponibili nella barra [!UICONTROL laterale] in Contenuti multimediali **** dinamici. Puoi utilizzare un componente **[!UICONTROL File multimediali interattivi]** per tutte le risorse interattive, come per esempio video, immagini interattive o inserzioni carosello. Per tutti gli altri componenti dinamici, si consiglia di utilizzare il componente **[!UICONTROL elementi multimediali dinamici]**.
+[!UICONTROL Dynamic Media] e [!UICONTROL Interactive Media] sono disponibili nella barra [!UICONTROL laterale] in **[!UICONTROL Dynamic Media.]** Puoi utilizzare un componente **[!UICONTROL File multimediali interattivi]** per tutte le risorse interattive, come per esempio video, immagini interattive o inserzioni carosello. Per tutti gli altri componenti dinamici, si consiglia di utilizzare il componente **[!UICONTROL elementi multimediali dinamici]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -55,7 +58,7 @@ Per aggiungere un componente/visualizzatore elementi multimediali dinamici a una
 
 ### Componente elementi multimediali dinamici {#dynamic-media-component}
 
-Il componente Contenuti multimediali dinamici è un elemento avanzato, a seconda se aggiungete un’immagine o un video e se disponete di diverse opzioni. Il componente supporta i predefiniti per immagini e i visualizzatori basati su immagini, come set di immagini, set di rotazione, set di file multimediali diversi e video. Inoltre, il visualizzatore è reattivo. In altre parole, le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori basati su HTML5.
+Il componente Dynamic Media è avanzato: a seconda se aggiungete un’immagine o un video, sono disponibili diverse opzioni. Il componente supporta i predefiniti per immagini e i visualizzatori basati su immagini, come set di immagini, set di rotazione, set di file multimediali diversi e video. Inoltre, il visualizzatore è reattivo. In altre parole, le dimensioni dello schermo cambiano automaticamente in base alle dimensioni dello schermo. Tutti i visualizzatori sono visualizzatori basati su HTML5.
 
 >[!NOTE]
 >
@@ -63,6 +66,7 @@ Il componente Contenuti multimediali dinamici è un elemento avanzato, a seconda
 >
 >* È stato [abilitato Elemento multimediale dinamico](/help/assets/config-dynamic.md). Dynamic Media è disattivato per impostazione predefinita.
 >* L&#39;immagine è in formato TIFF piramidale. Le immagini importate prima dell&#39;attivazione dell’elemento multimediale dinamico non hanno un file TIFF piramidale.
+
 >
 
 
@@ -81,7 +85,7 @@ You can edit the following Dynamic Media settings by clicking **[!UICONTROL Edit
 
 >[!NOTE]
 >
->Per impostazione predefinita, il componente immagine elementi multimediali dinamici è adattivo. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]** properties.
+>Per impostazione predefinita, il componente immagine Dynamic Media è adattivo. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]** properties.
 
 **[!UICONTROL Predefinito]** visualizzatore - Selezionate un predefinito esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta [Gestione dei predefiniti per visualizzatori](/help/assets/managing-viewer-presets.md). Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
 
