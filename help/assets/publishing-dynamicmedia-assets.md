@@ -1,5 +1,5 @@
 ---
-title: Pubblicazione di risorse multimediali dinamiche
+title: Pubblicazione delle risorse Dynamic Media
 description: Come pubblicare le risorse multimediali dinamiche
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: b8fe3267a808f1a64b78620156826e0b6e3a5676
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 3%
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-Per pubblicare le risorse per contenuti multimediali dinamici, seleziona le risorse già caricate e tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione]** rapida. Dopo la pubblicazione, le risorse Dynamic Media sono disponibili per l’inclusione in una pagina Web mediante un URL o incorporando il codice nella pagina.
+Per pubblicare le risorse Dynamic Media, selezionate le risorse già caricate e toccate **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblicazione rapida.]** Dopo la pubblicazione, le risorse Dynamic Media possono essere incluse in una pagina Web mediante un URL o incorporando il codice nella pagina.
 
-Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. Consultate [Configurazione di contenuti multimediali dinamici - Modalità](config-dms7.md)Scene7.
+Potete anche pubblicare istantaneamente le risorse caricate, senza alcun intervento da parte dell’utente. Consultate [Configurazione della modalità](config-dms7.md)Dynamic Media - Scene7.
 
 Nella vista **[!UICONTROL a]** schede, una piccola icona a forma di globo appare direttamente sotto il nome di una risorsa e a sinistra della data e dell’ora per indicare che è stata pubblicata. Nella **[!UICONTROL Vista a elenco]**, la colonna **[!UICONTROL Pubblicato]** indica lo stato di pubblicazione delle risorse.
 
@@ -38,6 +38,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 >
 >* Per usare l’URL, le risorse devono essere pubblicate. Se le risorse non vengono pubblicate, non sarà possibile copiare e incollare l’URL in un browser Web.
 >* I predefiniti per immagini e per visualizzatori devono essere attivati e pubblicati per la distribuzione live.
+
 >
 
 
@@ -46,6 +47,6 @@ Per informazioni dettagliate sulla pubblicazione di un set o di una risorsa, con
 
 ## Distribuzione HTTP/2 di risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ora supporta la distribuzione di tutti i contenuti multimediali dinamici (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
+AEM ora supporta la distribuzione di tutto il contenuto Dynamic Media (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
 Per ulteriori informazioni, consultate la distribuzione [HTTP/2 di contenuti con domande](/help/sites-administering/scene7-http2faq.md) frequenti.
