@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1741'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -74,7 +74,7 @@ Se non avete bisogno di un flusso di lavoro o di un controllo delle versioni per
 
 **Per configurare i predefiniti universali**:
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit.]**
 1. Seleziona la scheda **[!UICONTROL Video]**.
 
    >[!NOTE]
@@ -151,8 +151,8 @@ Le diverse codifiche video vengono create in base ai predefiniti di codifica Dyn
 >
 >Per la pubblicazione, i nuovi profili video e le relative modifiche devono essere attivati.
 
-1. In AEM, passa a **[!UICONTROL Strumenti]** e seleziona **[!UICONTROL Console di configurazione]**. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Create un nuovo profilo video Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea]**.
+1. In AEM, passa a **[!UICONTROL Strumenti]** e seleziona **[!UICONTROL Console di configurazione.]** Nella console di configurazione, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Profili **[!UICONTROL video]** nella struttura di navigazione.
+1. Create un nuovo profilo video Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea.]**
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
