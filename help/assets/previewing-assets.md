@@ -1,6 +1,6 @@
 ---
 title: Anteprima delle risorse
-description: Scopri come visualizzare in anteprima le risorse in Contenuti multimediali dinamici
+description: Scoprite come visualizzare in anteprima le risorse in Dynamic Media
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e6aba1f511754080305c0a97ce9bc85511f29a7
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia u
 **Per visualizzare in anteprima le risorse mediante l&#39;interfaccia software**
 
 1. Da **[!UICONTROL Adobe Experience Manager**, vai alla pagina di **navigazione [!UICONTROL**, tocca **[!UICONTROL Risorse]**, quindi seleziona **[!UICONTROL File]** per accedere alle risorse.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Facoltativo) Usate la colonna **[!UICONTROL Tipo]** per ordinare le risorse in base al tipo di cui desiderate visualizzare l’anteprima.
 1. Nella colonna **[!UICONTROL Titolo]** , fate clic sul nome del titolo (non sulla miniatura) della risorsa da visualizzare in anteprima.
 1. A seconda del tipo di risorsa su cui avete fatto clic, effettuate una delle seguenti operazioni:
