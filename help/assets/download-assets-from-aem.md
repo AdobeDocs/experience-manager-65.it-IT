@@ -3,7 +3,7 @@ title: Scarica le risorse digitali da [!DNL Adobe Experience Manager].
 description: Scoprite come scaricare le risorse [!DNL Adobe Experience Manager] da e attivare o disattivare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -24,10 +24,10 @@ Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file mu
 **Per scaricare le risorse,**
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. Nella pagina di navigazione, tocca **[!UICONTROL Risorse > File]**.
+1. Nella pagina di navigazione, tocca **[!UICONTROL Risorse > File.]**
 1. Individuate una cartella contenente le risorse da scaricare.
 1. Selezionate la cartella o selezionate una o più risorse all’interno della cartella.
-1. Nella barra degli strumenti, toccate **[!UICONTROL Scarica]**.
+1. Nella barra degli strumenti, toccate **[!UICONTROL Scarica.]**
 
    ![Opzioni disponibili durante il download delle risorse da  Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file mu
    | **[!UICONTROL Ritagli avanzati]** | Selezionate questa opzione per scaricare da AEM tutte le rappresentazioni di ritaglio avanzato della risorsa selezionata. Viene creato e scaricato nel computer locale un file zip con le rappresentazioni SmartCrop. |
    | **[!UICONTROL Rappresentazioni dinamiche]** | Selezionate questa opzione per generare una serie di rappresentazioni alternative in tempo reale. Quando selezionate questa opzione, potete anche selezionare i rendering che desiderate creare in modo dinamico selezionando dall’elenco Predefiniti [](image-presets.md) immagine. <br>Potete inoltre selezionare le dimensioni e l’unità di misura, il formato, lo spazio colore, la risoluzione e qualsiasi modificatore di immagine opzionale, ad esempio l’inversione dell’immagine. L’opzione è disponibile solo se è stata [!DNL Dynamic Media] attivata. |
 
-1. Nella finestra di dialogo, toccate **[!UICONTROL Scarica]**.
+1. Nella finestra di dialogo, toccate **[!UICONTROL Scarica.]**.
 
 ## Abilita servlet download risorse {#enable-asset-download-servlet}
 
