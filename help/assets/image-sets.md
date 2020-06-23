@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 19%
@@ -49,7 +49,7 @@ Per iniziare subito a lavorare:
 
    In Set immagini, gli utenti fanno clic sulle miniature nel visualizzatore di set di immagini.
 
-   Per creare un set di immagini nelle risorse, toccate o fate clic su **[!UICONTROL Crea > Set]** immagini. Quindi, aggiungete le immagini e fate clic su **[!UICONTROL Salva]**.
+   Per creare un set di immagini nelle risorse, toccate o fate clic su **[!UICONTROL Crea > Set immagini.]** Quindi, aggiungete le immagini e fate clic su **[!UICONTROL Salva.]**
 
    You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md).
    >[!IMPORTANT]
@@ -62,7 +62,7 @@ Per iniziare subito a lavorare:
 
 1. Aggiungete i predefiniti [per visualizzatori di set di](/help/assets/managing-viewer-presets.md)immagini in base alle vostre esigenze.
 
-   Gli amministratori possono creare o modificare i predefiniti per visualizzatori di set di immagini. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Gli amministratori possono creare o modificare i predefiniti per visualizzatori di set di immagini. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers.]**
 
    Consultate **[!UICONTROL Strumenti > Risorse > Predefiniti]** visualizzatore per creare o modificare i predefiniti per visualizzatori.
 
@@ -79,7 +79,7 @@ Per iniziare subito a lavorare:
 
    I AEM Assets creano richieste URL per i set di immagini e le attivano dopo la pubblicazione dei set di immagini. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
 
-   Seleziona il set di immagini, quindi fai clic su **[!UICONTROL Visualizzatori]** dal menu a discesa della barra a sinistra.
+   Select the Image Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers.]**
 
    Consulta le sezioni [Collegamento di un set di immagini a una pagina web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](/help/assets/embed-code.md).
 
@@ -128,7 +128,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
 **Per creare un set di immagini**
 
-1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Navigazione > Risorse]**. Vai nel punto in cui vuoi creare un set di immagini, quindi tocca **[!UICONTROL Crea > Set di immagini]** per aprire la pagina Editor set di immagini.
+1. In AEM, tocca il logo AEM per accedere alla console di navigazione globale, quindi tocca **[!UICONTROL Navigazione > Risorse.]** Vai nel punto in cui vuoi creare un set di immagini, quindi tocca **[!UICONTROL Crea > Set di immagini]** per aprire la pagina Editor set di immagini.
 
    Puoi anche creare il set dall’interno di una cartella contenente le risorse.
 
@@ -140,12 +140,12 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
 1. Effettuate una delle seguenti operazioni:
 
-   * Nell’angolo in alto a sinistra della pagina Editor set di immagini, toccate **[!UICONTROL Aggiungi risorsa]**.
+   * Nell’angolo in alto a sinistra della pagina Editor set di immagini, toccate **[!UICONTROL Aggiungi risorsa.]**
 
-   * Nella parte centrale della pagina Editor set di immagini, toccate **[!UICONTROL Toccate per aprire il selettore]** risorse.
-   Toccate per selezionare le risorse da includere nel set di immagini. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   * Nella parte centrale della pagina Editor set di immagini, toccate **[!UICONTROL Toccate per aprire il selettore delle risorse.]**
+   Toccate per selezionare le risorse da includere nel set di immagini. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select.]**
 
-   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio]**. Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco]**.
+   Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio.]** Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco.]**
 
    See [Working with Selectors.](/help/assets/working-with-selectors.md)
 
@@ -157,18 +157,18 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
-   Per modificare una miniatura o un campione, fai clic sull’icona **+** **miniatura** accanto all’immagine e individua la miniatura o il campione desiderato. Dopo aver selezionato tutte le immagini, fai clic su **[!UICONTROL Salva]**.
+   Per modificare una miniatura o un campione, fai clic sull’icona **+** **miniatura** accanto all’immagine e individua la miniatura o il campione desiderato. Dopo aver selezionato tutte le immagini, fai clic su **[!UICONTROL Salva.]**
 
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Per eliminare un’immagine, selezionatela e toccate **[!UICONTROL Elimina risorsa]**.
+   * Per eliminare un’immagine, selezionatela e toccate **[!UICONTROL Elimina risorsa.]**
 
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
    >[!NOTE]
    >
-   >Quando crei il set di immagini, puoi modificare la miniatura del set o consentire ad AEM di selezionarla automaticamente in base alle risorse del set di immagini. Per selezionare una miniatura, tocca l’opzione **[!UICONTROL Cambia miniatura]** posta sopra il campo Titolo nella pagina Editor set di immagini, quindi seleziona un’immagine a piacere. Per trovare le immagini, puoi esplorare anche altre cartelle. Se hai selezionato una miniatura e vuoi che AEM ne generi una dal set di immagini, fai clic su **[!UICONTROL Passa alla]** **[!UICONTROL Miniatura automatica]**.
+   >Quando crei il set di immagini, puoi modificare la miniatura del set o consentire ad AEM di selezionarla automaticamente in base alle risorse del set di immagini. Per selezionare una miniatura, tocca l’opzione **[!UICONTROL Cambia miniatura]** posta sopra il campo Titolo nella pagina Editor set di immagini, quindi seleziona un’immagine a piacere. Per trovare le immagini, puoi esplorare anche altre cartelle. Se hai selezionato una miniatura e vuoi che AEM ne generi una dal set di immagini, fai clic su **[!UICONTROL Passa alla]** **[!UICONTROL Miniatura automatica.]**
 
-1. Fai clic su **[!UICONTROL Salva]**. Il set di immagini appena creato viene visualizzato nella cartella in cui è stato creato.
+1. Fai clic su **[!UICONTROL Salva.]** Il set di immagini appena creato viene visualizzato nella cartella in cui è stato creato.
 
 ## Visualizzazione di set di immagini {#viewing-image-sets}
 
@@ -188,7 +188,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono 
 
    ![6_5_imageset-setspullmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Dalla ricerca, puoi selezionare **[!UICONTROL Filtri**, quindi espandere **[!UICONTROL Dynamic Media** e selezionare **[!UICONTROL Set]**.
+* Dalla ricerca, puoi selezionare **[!UICONTROL Filtri**, quindi espandere **[!UICONTROL Dynamic Media** e selezionare **[!UICONTROL Set.]**
 
    La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca &quot;Inizia con&quot;, diversi dalla ricerca AEM basata sull&#39;utilizzo dei criteri di ricerca &quot;Contiene&quot;. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire la ricerca nei set automatizzati.
 
@@ -220,15 +220,15 @@ Potete eseguire diverse attività di modifica sui set di immagini, ad esempio:
 
    * Per riordinare le risorse, trascinate un’immagine in una nuova posizione (selezionate l’icona di riordinamento per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, fate clic sull’intestazione della colonna.
-   * Per aggiungere una risorsa o aggiornare una risorsa esistente, fate clic su **[!UICONTROL Aggiungi risorsa]**. Passate a una risorsa, selezionatela, quindi toccate **[!UICONTROL Seleziona]** vicino all’angolo superiore destro della pagina.
+   * Per aggiungere una risorsa o aggiornare una risorsa esistente, fate clic su **[!UICONTROL Aggiungi risorsa.]** Passate a una risorsa, selezionatela, quindi toccate **[!UICONTROL Seleziona]** vicino all’angolo superiore destro della pagina.
 
       >[!NOTE]
       >
       >Se eliminate l’immagine utilizzata da AEM per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
-   * Per eliminare una risorsa, selezionatela e toccate o fate clic su **[!UICONTROL Elimina risorsa]**.
+   * Per eliminare una risorsa, selezionatela e toccate o fate clic su **[!UICONTROL Elimina risorsa.]**
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
-   * Per aggiungere o modificare una miniatura, selezionate l’icona della miniatura accanto alla parte destra della risorsa. Passate alla nuova miniatura o alla nuova risorsa campione, selezionatela, quindi toccate **[!UICONTROL Seleziona]**.
-   * Per eliminare un intero set di immagini, selezionatelo e toccate **[!UICONTROL Elimina]**.
+   * Per aggiungere o modificare una miniatura, selezionate l’icona della miniatura accanto alla parte destra della risorsa. Passate alla nuova miniatura o alla nuova risorsa campione, selezionatela, quindi toccate **[!UICONTROL Seleziona.]**
+   * Per eliminare un intero set di immagini, selezionatelo e toccate **[!UICONTROL Elimina.]**
 
    >[!NOTE]
    >
