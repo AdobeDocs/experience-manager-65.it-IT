@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '9303'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 In [!DNL Adobe Experience Manager Assets] questo documento potete fare di più che semplicemente archiviare e governare le risorse. [!DNL Experience Manager] offre funzionalità di gestione delle risorse di livello aziendale. Potete modificare e condividere le risorse, eseguire ricerche avanzate, creare più rappresentazioni di dozzine di formati di file supportati, gestire versioni e diritti digitali, automatizzare l’elaborazione delle risorse, gestire e governare i metadati, collaborare utilizzando le annotazioni e molto altro ancora.
 
-Questo articolo descrive le attività di base per la gestione delle risorse, come ad esempio creare o caricare; aggiornamenti dei metadati; copiare, spostare ed eliminare; pubblicare, annullare la pubblicazione ed eseguire ricerche nelle risorse. Per comprendere l’interfaccia utente, consulta [Introduzione all’interfaccia](/help/sites-authoring/basic-handling.md)utente delle risorse. Per gestire i frammenti di contenuto, consulta [Gestione delle risorse Frammenti](content-fragments-managing.md) di contenuto.
+Questo articolo descrive le attività di base per la gestione delle risorse, come ad esempio creare o caricare; aggiornamenti dei metadati; copiare, spostare ed eliminare; pubblicare, annullare la pubblicazione ed eseguire ricerche nelle risorse. Per comprendere l’interfaccia utente, consulta [Introduzione all’interfaccia](/help/sites-authoring/basic-handling.md)utente delle risorse. Per gestire i frammenti di contenuto, consulta [Gestione delle risorse Frammenti](/help/assets/content-fragments/content-fragments-managing.md) di contenuto.
 
 ## Creare le cartelle {#creating-folders}
 
@@ -50,7 +50,7 @@ Potete caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) 
 
 >[!NOTE]
 >
->In modalità Contenuti multimediali dinamici - Scene7, potete caricare solo risorse le cui dimensioni file sono pari o inferiori a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file non superiori a 2 GB.
 
 Potete scegliere di caricare le risorse nelle cartelle a cui è stato assegnato o meno un profilo di elaborazione.
 
@@ -100,7 +100,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
    >
    >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
    >
-   >Se Asset Insights è abilitato per tenere traccia di impression/clic con Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Analytics.
+   >Se Asset Insights è abilitato per tenere traccia di impression/clic con Adobe  Analytics, l’ID risorsa rigenerata invalida i dati acquisiti per la risorsa su  Analytics.
 
    Se la risorsa caricata esiste in [!DNL Assets], la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che state tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore `SHA 1` checksum del binario della risorsa esistente corrisponde al valore checksum della risorsa caricata. In questo caso, i nomi delle risorse non contano.
 
@@ -141,22 +141,22 @@ Per impostazione predefinita, il caricamento seriale delle risorse è attivato. 
 
 ### Caricare le risorse mediante FTP {#uploading-assets-using-ftp}
 
-Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (> 1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
+Dynamic Media consente il caricamento in batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (> 1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
 
 >[!NOTE]
 >
->In modalità Contenuti multimediali dinamici - Scene7, potete caricare solo risorse le cui dimensioni file sono pari o inferiori a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file non superiori a 2 GB.
 
 >[!NOTE]
 >
->Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze dell’ [!DNL Experience Manager] autore. Contatta l&#39;Assistenza [clienti di](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Per ulteriori informazioni, consultate [Installare feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
+>Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze di [!DNL Experience Manager] creazione. Contatta l&#39;Assistenza [clienti di](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Per ulteriori informazioni, consultate [Installare feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
 >
 >Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in [!DNL Experience Manager] vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
 
 **Per caricare le risorse tramite FTP**
 
 1. Utilizzando il client FTP desiderato, effettuate l&#39;accesso al server FTP utilizzando il nome utente e la password FTP ricevuti dall&#39;e-mail di provisioning. Nel client FTP, caricate i file o le cartelle sul server FTP.
-1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, fate clic su **[!UICONTROL Carica]**.
+1. [Effettuate l&#39;accesso ad Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, fate clic su **[!UICONTROL Carica]**.
 
 1. Nella pagina Carica, accanto all’angolo in alto a sinistra, fate clic sulla scheda **[!UICONTROL Mediante FTP]** .
 1. Sul lato sinistro della pagina, scegliete una cartella FTP da cui caricare i file; sul lato destro della pagina, scegliete una cartella di destinazione.
@@ -171,7 +171,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 1. Nell’angolo inferiore destro della finestra di dialogo Opzioni processo di caricamento, fate clic su **[!UICONTROL Salva]**.
 1. Nell’angolo inferiore destro della pagina Carica, fate clic su **[!UICONTROL Invia caricamento]**.
 
-   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale fate clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. Potete continuare a lavorare [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per controllare un processo in corso.
+   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale fate clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. In Dynamic Media Classic potete continuare a lavorare [!DNL Experience Manager] e tornare alla pagina Processi in qualsiasi momento per controllare un processo in corso di elaborazione.
 Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL Annulla]** accanto alla durata.
 
 #### Opzioni processo di caricamento {#upload-job-options}
@@ -240,7 +240,7 @@ Quando caricate i file immagine PostScript (EPS) o Illustrator (AI), potete form
 
 I file documento (PSD) di Photoshop vengono usati più spesso per creare modelli di immagine. Quando caricate un file PSD, potete creare automaticamente dal file un modello di immagine (selezionate l’opzione [!UICONTROL Crea modello] nella schermata Carica).
 
-Dynamic Media crea più immagini da un file PSD con livelli, se usate il file per creare un modello; crea un’immagine per ciascun livello.
+Dynamic Media crea più immagini da un file PSD con livelli, se utilizzate il file per creare un modello; crea un’immagine per ciascun livello.
 
 Usate le opzioni  Ritaglio e le opzioni [!UICONTROL Profilo]colore descritte sopra, con le opzioni di caricamento di Photoshop.
 
@@ -303,11 +303,11 @@ Consultate [Configurazione dei predefiniti per set di batch per la generazione a
 
 ### Caricamenti in streaming {#streamed-uploads}
 
-Se caricate molte risorse in Adobe Experience Manager, le richieste di I/O al server aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche il timeout di alcune attività di caricamento. [!DNL Experience Manager Assets] supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell’archivio. Al contrario, i dati vengono trasferiti direttamente nella directory archivio. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in [!DNL Assets].
+Se caricate molte risorse  Adobe Experience Manager, le richieste di I/O al server aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche il timeout di alcune attività di caricamento. [!DNL Experience Manager Assets] supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell’archivio. Al contrario, i dati vengono trasferiti direttamente nella directory archivio. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in [!DNL Assets].
 
 >[!NOTE]
 >
->Il caricamento dello streaming è disattivato per Adobe Experience Manager in esecuzione su un server JEE con una versione servlet-api inferiore a 3.1.
+>Il caricamento dello streaming è disattivato per  Adobe Experience Manager in esecuzione sul server JEE con la versione servlet-api inferiore a 3.1.
 
 ### Estrai archivio ZIP contenente le risorse {#extractzip}
 
@@ -361,7 +361,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 >[!MORELIKETHIS]
 >
->* [Visualizzare in anteprima le risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
+>* [Anteprima delle risorse](/help/assets/previewing-assets.md)Dynamic Media.
 >* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets)secondarie.
 
 
@@ -413,7 +413,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
    Per ulteriori dettagli, consulta [Informazioni approfondite](/help/assets/touch-ui-asset-insights.md)sulle risorse.
 
-1. Click **[!UICONTROL Save &amp; Close]**.
+1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 1. Passate all&#39;interfaccia [!DNL Assets] utente. Le proprietà dei metadati modificate, inclusi titolo, descrizione, valutazioni e così via, vengono visualizzate sulla scheda delle risorse nella vista a schede e nelle relative colonne nella vista Elenco.
 
 ## Copiare le risorse {#copying-assets}
@@ -511,7 +511,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    **Eliminare una rappresentazione**
 
-   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi fate clic sull&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti. Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare Experience Manager per eliminare rappresentazioni specifiche o per eliminare le risorse e caricare nuovamente le risorse eliminate.
+   Selezionate una rappresentazione dal pannello **[!UICONTROL Rappresentazioni]** , quindi fate clic sull&#39;icona **[!UICONTROL Elimina rappresentazione]** dalla barra degli strumenti. Le rappresentazioni non possono essere eliminate in blocco al termine dell’elaborazione delle risorse. Per le singole risorse, potete rimuovere manualmente i rendering dall’interfaccia utente. Per più risorse, potete personalizzare  Experience Manager per eliminare rappresentazioni specifiche o per eliminare le risorse e caricare nuovamente le risorse eliminate.
 
    ![Opzione per eliminare una rappresentazione](assets/delete_renditionicon.png)
 
@@ -571,13 +571,13 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
 ## Scaricare le risorse {#downloading-assets}
 
-Consultate [Scaricare risorse da Experience Manager](/help/assets/download-assets-from-aem.md).
+Consultate [Scaricare risorse da  Experience Manager](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
 >[!NOTE]
 >
->Per ulteriori informazioni specifiche per gli elementi multimediali dinamici, consultate [Pubblicazione di risorse per file multimediali dinamici.](/help/assets/publishing-dynamicmedia-assets.md)
+>Per ulteriori informazioni specifiche per Dynamic Media, consultate [Pubblicazione di risorse Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Andate alla posizione delle risorse o delle cartelle da pubblicare.
 
@@ -644,7 +644,7 @@ I COG consentono di limitare l’accesso alle risorse. Potete anche configurare 
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM.
 
-Per ricerche semplici, avanzate e personalizzate per scoprire e utilizzare le risorse più appropriate, consulta [Cercare risorse in Experience Manager](search-assets.md).
+Per ricerche semplici, avanzate e personalizzate per scoprire e utilizzare le risorse più appropriate, consultate [Cercare risorse in  Experience Manager](search-assets.md).
 
 ## Azioni rapide {#quick-actions}
 
@@ -740,7 +740,7 @@ La timeline consente di visualizzare vari eventi per un elemento selezionato, ad
 
 >[!NOTE]
 >
->La timeline contiene diverse [opzioni specifiche per i frammenti](/help/assets/content-fragments-managing.md#timeline-for-content-fragments)di contenuto.
+>La timeline contiene diverse [opzioni specifiche per i frammenti](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)di contenuto.
 
 ## Annotazione delle risorse {#annotating}
 
@@ -750,7 +750,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 >[!NOTE]
 >
->Per i frammenti di contenuto, [le annotazioni vengono create nell’editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)frammento.
+>Per i frammenti di contenuto, [le annotazioni vengono create nell’editor](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)frammento.
 
 1. Andate alla posizione della risorsa alla quale desiderate aggiungere delle annotazioni.
 1. Fate clic sull’icona **[!UICONTROL Annota]** da una delle seguenti opzioni:
