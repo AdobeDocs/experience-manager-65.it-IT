@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '5474'
+source-wordcount: '5473'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 [Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) è una soluzione in hosting per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse multimediali per schermi e stampe Web, mobili, e-mail e connessi a Internet.
 
-Per utilizzare Dynamic Media Classic, è necessario configurare la configurazione cloud in modo che Dynamic Media Classic e AEM Assets possano interagire tra loro. Questo documento descrive come configurare AEM e Dynamic Media Classic.
+Per utilizzare Dynamic Media Classic, è necessario configurare la configurazione cloud in modo che i Dynamic Media Classic e AEM Assets possano interagire tra loro. Questo documento descrive come configurare AEM e Dynamic Media Classic.
 
 Per informazioni sull’uso di tutti i componenti Dynamic Media Classic su una pagina e sull’utilizzo dei video, consultate [Utilizzo di Dynamic Media Classic](../assets/scene7.md).
 
@@ -571,7 +571,7 @@ Nello specifico, puoi configurare il formato di file accettato per tipo MIME nel
 
    Esempio, `psprocess="rasterize"&psresolution=120` .
 
-   Per ulteriori parametri di processo di caricamento, consultate [Adobe Dynamic Media Classic Image Production System API](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/) .
+   Per ulteriori parametri di processo di caricamento, consultate [Adobe Dynamic Media Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) .
 
    >[!NOTE]
    >
