@@ -4,7 +4,10 @@ seo-title: Guida utente per l’authoring con l’interfaccia classica di AEM 6.
 description: 'Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. '
 seo-description: 'Include i concetti di authoring in AEM nell’interfaccia classica. '
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 22%
 
 ---
 
@@ -25,7 +28,7 @@ Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente c
 | Guida utente | Descrizione |
 |--- |---|
 | [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sull’ultima versione di AEM, comprese le nuove piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti. |
-| [Guida utente di Risorse](/help/assets/home.md) | Scopri come creare, gestire, distribuire e ottimizzare le risorse digitali. |
+| [Guida utente di Assets](/help/assets/home.md) | Scopri come creare, gestire, distribuire e ottimizzare le risorse digitali. |
 | [Guida utente di Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
 | [Guida utente di Communities](/help/communities/home.md) | Create esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni per social network. |
 | [Guida all&#39;amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
@@ -36,15 +39,15 @@ Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente c
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scopri come creare l’istanza di AEM. |
 | [Gestione della Guida utente](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente per dispositivi mobili](/help/mobile/home.md) | Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Questa guida illustra come condividere con Livefyre i contenuti generati dagli utenti. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Questa guida illustra come condividere con Livefyre i contenuti generati dagli utenti. |
 
 ## Risorse AEM chiave
 
 * [Esercitazioni AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guida utente del dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [Guida utente HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Guida utente ai componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparazione GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Guida utente Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
+* [Guida utente HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+* [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum della community AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
