@@ -1,8 +1,8 @@
 ---
 title: Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets
 seo-title: Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets
-description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di AEM Assets.
-seo-description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di AEM Assets.
+description: Informazioni sul supporto dei frammenti di contenuto nell'API HTTP AEM Assets.
+seo-description: Informazioni sul supporto dei frammenti di contenuto nell'API HTTP AEM Assets.
 uuid: c500d71e-ceee-493a-9e4d-7016745c544c
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -32,9 +32,9 @@ ht-degree: 3%
 
 >
 >
-L’implementazione corrente dell’API HTTP AEM Assets è REST.
+L&#39;implementazione corrente dell&#39;API HTTP AEM Assets è REST.
 
-L’API [REST di Adobe Experience Manager (AEM)](/help/assets/mac-api-assets.md) Assets consente agli sviluppatori di accedere al contenuto (memorizzato in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
+L’API [REST](/help/assets/mac-api-assets.md) Assets di Adobe Experience Manager  (AEM) consente agli sviluppatori di accedere al contenuto (memorizzato in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
 
 L&#39;API consente di utilizzare AEM come un CMS headless (Content Management System) fornendo Content Services a un&#39;applicazione front-end JavaScript. Oppure qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire le risposte JSON.
 
@@ -63,7 +63,7 @@ Il metodo HTTP determina l’operazione da eseguire:
 * **GET** - per recuperare una rappresentazione JSON di una risorsa o di una cartella
 * **POST** - per creare nuove risorse o cartelle
 * **PUT** - per aggiornare le proprietà di una risorsa o di una cartella
-* **ELIMINA** : per eliminare una risorsa o una cartella
+* **DELETE** - per eliminare una risorsa o una cartella
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Negli ambienti con requisiti di autenticazione specifici, è consigliabile OAuth
 
 ## Funzioni disponibili {#available-features}
 
-I frammenti di contenuto sono un tipo specifico di risorsa. Consultate [Utilizzo dei frammenti](/help/assets/content-fragments.md)di contenuto.
+I frammenti di contenuto sono un tipo specifico di risorsa. Consultate [Utilizzo dei frammenti](/help/assets/content-fragments/content-fragments.md)di contenuto.
 
 Per ulteriori informazioni sulle funzioni disponibili tramite l&#39;API, vedete:
 
@@ -199,7 +199,7 @@ Le risorse possono avere più rappresentazioni. In genere sono esposte come enti
 
 ### Frammenti di contenuto {#content-fragments}
 
-Un frammento [di](/help/assets/content-fragments.md) contenuto è un tipo speciale di risorsa. Possono essere utilizzati per accedere a dati strutturati, come testi, numeri, date, ecc.
+Un frammento [di](/help/assets/content-fragments/content-fragments.md) contenuto è un tipo speciale di risorsa. Possono essere utilizzati per accedere a dati strutturati, come testi, numeri, date, ecc.
 
 Poiché le risorse *standard* sono diverse (ad esempio immagini o audio), per gestirle è necessario applicare alcune regole aggiuntive.
 
@@ -238,7 +238,7 @@ L’utilizzo può variare a seconda che si utilizzi un ambiente di creazione o p
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consultate [API Reference](/help/assets/assets-api-content-fragments.md#api-reference)(Riferimento API). In particolare, [Adobe Experience Manager Assets API - Frammenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)di contenuto.
+>Per ulteriori dettagli, consultate [API Reference](/help/assets/assets-api-content-fragments.md#api-reference)(Riferimento API). In particolare, [API Risorse Adobe Experience Manager - Frammenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)di contenuto.
 
 ### Lettura/Consegna {#read-delivery}
 
@@ -367,7 +367,7 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
 
 Consultate qui per riferimenti API dettagliati:
 
-* [API delle risorse di Adobe Experience Manager - Frammenti di contenuto](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [API  Adobe Experience Manager Assets - Frammenti di contenuto](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
    * [Funzioni disponibili](/help/assets/mac-api-assets.md#available-features)
