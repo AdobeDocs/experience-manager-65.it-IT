@@ -1,6 +1,6 @@
 ---
-title: Configurazione del tracciamento dei collegamenti per Adobe Analytics
-seo-title: Configurazione del tracciamento dei collegamenti per Adobe Analytics
+title: Configurazione del tracciamento dei collegamenti per Adobe  Analytics
+seo-title: Configurazione del tracciamento dei collegamenti per Adobe  Analytics
 description: Scoprite come configurare il tracciamento dei collegamenti per SiteCatalyst.
 seo-description: Scoprite come configurare il tracciamento dei collegamenti per SiteCatalyst.
 uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
@@ -10,27 +10,30 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 translation-type: tm+mt
-source-git-commit: 6f49e01aa3e9841c7b2917870593452b778667d2
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 0%
 
 ---
 
 
-# Configurazione del tracciamento dei collegamenti per Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+# Configurazione del tracciamento dei collegamenti per Adobe  Analytics{#configuring-link-tracking-for-adobe-analytics}
 
-Quando gli utenti fanno clic sui collegamenti presenti sulle pagine del sito Web, puoi acquisire informazioni correlate in Adobe Analytics. Ad esempio, puoi usare il tracciamento dei collegamenti per capire in che modo gli utenti interagiscono con il tuo sito, tenere traccia dei download dei file e dei collegamenti di uscita.
+Quando gli utenti fanno clic sui collegamenti presenti sulle pagine del sito Web, è possibile acquisire informazioni correlate in Adobe  Analytics. Ad esempio, puoi usare il tracciamento dei collegamenti per capire in che modo gli utenti interagiscono con il tuo sito, tenere traccia dei download dei file e dei collegamenti di uscita.
 
-## Configurazione del tracciamento dei collegamenti per un framework Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## Configurazione del tracciamento dei collegamenti per un Adobe  Analytics Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Utilizzando **Navigazione**, andate tramite **Distribuzione**, Servizi **** Cloud alla sezione **Adobe Analytics** .
+1. Utilizzando **Navigazione**, andate tramite **Distribuzione**, Servizi **** Cloud alla sezione Analytics **di** Adobe .
 
-1. Utilizzando **Mostra configurazioni**, aprite il framework Adobe Analytics richiesto.
+1. Utilizzando **Mostra configurazioni**, aprite il framework Analytics  necessario.
 1. Espandete la sezione Configurazione **tracciamento** collegamenti e configurate le impostazioni necessarie (questa pagina fornisce ulteriori dettagli):
 
    ![a-08](assets/aa-08.png)
 
 ## Tracciamento dei download dei file {#tracking-file-downloads}
 
-Configurate il framework Adobe Analytics in modo che i file scaricati dalle pagine associate vengano tracciati automaticamente come download in Adobe Analytics. Quando abilitate il tracciamento dei download, vengono tracciati solo i tipi di file specificati.
+Configurate il framework Adobe  Analytics in modo che i file scaricati dalle pagine associate vengano tracciati automaticamente come download in Adobe  Analytics. Quando abilitate il tracciamento dei download, vengono tracciati solo i tipi di file specificati.
 
 I download dei seguenti tipi di file vengono tracciati per impostazione predefinita:
 
@@ -55,9 +58,9 @@ s.trackDownloadLinks= true;
 s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 ```
 
-Per abilitare il tracciamento dei download per il framework Adobe Analytics:
+Per abilitare il tracciamento dei download per il framework Analytics di Adobe :
 
-1. [Aprite il framework Adobe Analytics ed espandete la sezione](#configuring-link-tracking-for-an-adobe-analytics-framework)Configurazione tracciamento collegamenti.
+1. [Aprite il framework Adobe  Analytics ed espandete la sezione](#configuring-link-tracking-for-an-adobe-analytics-framework)Configurazione tracciamento collegamenti.
 1. Abilita **traccia dei download**.
 1. Nella casella **Scarica tipi** di file digitare le estensioni per i tipi di file da monitorare.
 
@@ -65,9 +68,9 @@ Per abilitare il tracciamento dei download per il framework Adobe Analytics:
 
 Potete tenere traccia dei collegamenti esterni (collegamenti di uscita) presenti sulle pagine.
 
-Per tenere traccia dei collegamenti esterni per il framework Adobe Analytics:
+Per tenere traccia dei collegamenti esterni per il framework Adobe  Analytics:
 
-1. [Aprite il framework Adobe Analytics ed espandete la sezione Configurazione **tracciamento** collegamenti](#configuring-link-tracking-for-an-adobe-analytics-framework).
+1. [Aprite il framework Adobe  Analytics ed espandete la sezione Configurazione **tracciamento** collegamenti](#configuring-link-tracking-for-an-adobe-analytics-framework).
 1. Configurate le seguenti proprietà in base alle vostre esigenze.
 
 Proprietà per il tracciamento quando si fa clic sui collegamenti esterni:
@@ -90,7 +93,7 @@ Proprietà per il tracciamento quando si fa clic sui collegamenti esterni:
 
 Le proprietà di tracciamento dei collegamenti esterni sono implementate come codice nel `analytics.sitecatalyst.js` file generato per una pagina. Il seguente codice di esempio viene generato per una pagina associata a un framework che ha attivato il tracciamento dei collegamenti esterni con la seguente configurazione:
 
-* Filtro esterno `'google.com'`
+* Il filtro esterno è `'google.com'`
 * Il filtro interno è il valore predefinito di `'javascript:,'+window.location.hostname`
 * Le stringhe di query non sono incluse nella valutazione della destinazione del collegamento rispetto ai filtri.
 
@@ -103,24 +106,24 @@ s.linkLeaveQueryString= false;
 
 ## Invio di dati variabili con clic sui collegamenti {#sending-variable-data-with-link-clicks}
 
-Puoi configurare AEM per l&#39;invio di dati di eventi e variabili ad Adobe Analytics quando un utente fa clic su un collegamento. Le proprietà Configurazione **tracciamento** collegamenti consentono di specificare gli eventi e le variabili di Adobe Analytics da monitorare quando si verificano i clic sul collegamento.
+Potete configurare AEM per l&#39;invio di dati relativi a eventi e variabili ad Adobe  Analytics quando un utente fa clic su un collegamento. Le proprietà Configurazione **tracciamento** collegamento consentono di specificare gli eventi e le variabili Adobe  Analytics da monitorare quando si verificano i clic del collegamento.
 
-Le mappature framework determinano i valori di evento e variabile. Puoi mappare le variabili di Adobe Analytics alle variabili dei tuoi componenti di contenuto in cui sono memorizzati i dati da tenere traccia quando si fa clic sui collegamenti.
+Le mappature framework determinano i valori di evento e variabile. Potete mappare le variabili Adobe  Analytics alle variabili dei componenti di contenuto che contengono i dati da tenere traccia quando si fa clic sui collegamenti.
 
 Per inviare dati variabili con clic sul collegamento:
 
-1. [Aprite il framework Adobe Analytics ed espandete la sezione](#configuring-link-tracking-for-an-adobe-analytics-framework)Configurazione tracciamento collegamenti.
+1. [Aprite il framework Adobe  Analytics ed espandete la sezione](#configuring-link-tracking-for-an-adobe-analytics-framework)Configurazione tracciamento collegamenti.
 1. Configurate le seguenti proprietà in base alle vostre esigenze.
 
 Proprietà per l’invio di dati variabili con clic del collegamento:
 
-* **Collega eventi** di tracciamento Immettere le variabili di evento Adobe Analytics da utilizzare per il conteggio dei clic sui collegamenti.
+* **Collega eventi** di tracciamento Immettere le variabili di evento Adobe  Analytics da utilizzare per il conteggio dei clic sui collegamenti.
 
    Separate i nomi di più variabili con una virgola.
 
    Il valore predefinito di `None` non causa il tracciamento degli eventi.
 
-* **Collega variabili** traccia Immettere le variabili Adobe Analytics da inviare ad Adobe Analytics quando si fa clic sui collegamenti. Separate i nomi di più variabili con una virgola.
+* **Collega variabili** traccia Immettere le variabili Adobe  Analytics che si desidera inviare ad Adobe  Analytics quando si fa clic sui collegamenti. Separate i nomi di più variabili con una virgola.
 
    Il valore predefinito di non `None` causa l&#39;invio di dati variabili.
 
@@ -133,7 +136,7 @@ s.linkTrackVars= 'prop4';
 
 ## Esempio di configurazione del tracciamento dei collegamenti {#example-link-tracking-configuration}
 
-Seguite le procedure riportate di seguito per esplorare il comportamento del tracciamento dei collegamenti nell&#39;integrazione di Adobe Analytics. Le procedure mostrano i risultati di [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+Seguite le procedure riportate di seguito per esplorare il comportamento del tracciamento dei collegamenti nell&#39;integrazione di Adobe  Analytics. Le procedure mostrano i risultati di [Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)Adobe Marketing Cloud.
 
 ### General configuration {#general-configuration}
 
@@ -148,14 +151,14 @@ Questo esempio illustra come funziona la mappatura nel contesto del tracciamento
    >
    >In caso contrario, il componente deve essere esposto al suo interno (definendo un nodo secondario di analisi nel componente della pagina).
 
-   Configurate la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst) dal pannello a sinistra:
+   Configurate la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst)  dal pannello laterale sinistro:
 
 <table>
  <tbody>
   <tr>
    <th>CQ Variable<br /> </th>
    <th>Voce nel browser delle variabili<br /> </th>
-   <th>Variabile Adobe Analytics</th>
+   <th>Adobe  Analytics Variable</th>
   </tr>
   <tr>
    <td>pagedata.title</td>
@@ -170,14 +173,14 @@ Questo esempio illustra come funziona la mappatura nel contesto del tracciamento
  </tbody>
 </table>
 
-1. Trascinate il componente Ricerca nell’area delle mappature del framework. Il componente Ricerca appartiene al gruppo di componenti Generale nella barra laterale. Configurate la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst) dal pannello a sinistra:
+1. Trascinate il componente Ricerca nell’area delle mappature del framework. Il componente Ricerca appartiene al gruppo di componenti Generale nella barra laterale. Configurate la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst)  dal pannello laterale sinistro:
 
 <table>
  <tbody>
   <tr>
    <th>CQ Variable<br /> </th>
    <th>Voce nel browser delle variabili</th>
-   <th>Variabile Adobe Analytics</th>
+   <th>Adobe  Analytics Variable</th>
   </tr>
   <tr>
    <td>eventdata.keyword</td>
@@ -185,7 +188,7 @@ Questo esempio illustra come funziona la mappatura nel contesto del tracciamento
    <td>eVar2</td>
   </tr>
   <tr>
-   <td>eventdata.result</td>
+   <td>eventdata.results</td>
    <td>eVar personalizzato 3 (eVar3)</td>
    <td>eVar3</td>
   </tr>
@@ -226,7 +229,7 @@ Questo esempio illustra come funziona la mappatura nel contesto del tracciamento
 
 1. Passate alla modalità **Anteprima** e fate clic sul collegamento.
 
-La chiamata effettuata sarà simile a quella visualizzata con Adobe Marketing Cloud Debugger:
+La chiamata effettuata sarà simile a quella visualizzata con il Debugger Adobe Marketing Cloud :
 
 ![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
 
@@ -240,7 +243,7 @@ La chiamata effettuata sarà simile a quella visualizzata con Adobe Marketing Cl
 1. Abilita **Lascia Stringa** query.
 1. Ricaricate l’anteprima della pagina e fate clic sul collegamento.
 
-I dettagli delle chiamate visualizzati in Adobe Marketing Cloud Debugger sono simili al seguente esempio:
+I dettagli della chiamata visualizzati in  Debugger Adobe Marketing Cloud sono simili al seguente esempio:
 
 ![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
 
@@ -252,21 +255,21 @@ I dettagli delle chiamate visualizzati in Adobe Marketing Cloud Debugger sono si
 
 Il tracciamento dei collegamenti ad hoc consente agli autori di contenuti di configurare il tracciamento dei collegamenti per un componente. La configurazione del componente sostituisce la configurazione **di tracciamento dei** collegamenti del framework. Pertanto, nelle pagine associate al framework, i componenti **Testo** possono essere configurati per il tracciamento dei collegamenti degli URL.
 
-Il tracciamento dei collegamenti ad hoc consente di tenere traccia dei collegamenti di download, dei collegamenti esterni e dei dati relativi a eventi e variabili.
+Il tracciamento dei collegamenti ad hoc consente di tenere traccia dei collegamenti per il download, dei collegamenti esterni e dei dati relativi a eventi e variabili.
 
 Per abilitare il tracciamento dei collegamenti ad hoc è necessario:
 
 * [Associate la pagina che contiene il componente **Testo** al framework](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
-* [Configurate il framework Adobe Analytics per abilitare il tracciamento](#enabling-ad-hoc-link-tracking)dei collegamenti ad hoc.
+* [Configurate il framework Adobe  Analytics per abilitare il tracciamento](#enabling-ad-hoc-link-tracking)dei collegamenti ad hoc.
 * [Configurare il tracciamento dei collegamenti per un componente](#configuring-link-tracking-for-a-text-component)Testo.
 
 ### Abilitazione del tracciamento dei collegamenti ad hoc {#enabling-ad-hoc-link-tracking}
 
-Configura il framework Adobe Analytics per abilitare il tracciamento dei collegamenti ad hoc.
+Configurate il framework Adobe  Analytics per abilitare il tracciamento dei collegamenti ad hoc.
 
-1. Aprite il framework Adobe Analytics ed espandete la sezione Configurazione **tracciamento** collegamenti.
+1. Aprite il framework Adobe  Analytics ed espandete la sezione Configurazione **tracciamento** collegamenti.
 
-1. Abilita tracciamento **collegamenti** ad hoc.
+1. Abilita tracciamento **dei collegamenti** ad hoc.
 
    >[!NOTE]
    >
@@ -306,7 +309,7 @@ Configura il framework Adobe Analytics per abilitare il tracciamento dei collega
 
 Prima di poter configurare il tracciamento dei collegamenti ad hoc per i componenti **Testo** , è necessario che siano già state implementate le seguenti configurazioni:
 
-* Il framework [Adobe Analytics è configurato per abilitare il tracciamento](#enabling-ad-hoc-link-tracking)dei collegamenti ad hoc.
+* Il framework [Adobe  Analytics è configurato per abilitare il tracciamento](#enabling-ad-hoc-link-tracking)dei collegamenti ad hoc.
 * La [pagina che contiene il componente **Testo** è associata al framework](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
 
 Per configurare il tracciamento dei collegamenti per un componente **Testo** , effettuate le seguenti operazioni:
@@ -321,26 +324,28 @@ Per configurare il tracciamento dei collegamenti per un componente **Testo** , e
 
    >[!NOTE]
    >
-   >Il tracciamento personalizzato dei collegamenti è visibile come azione separata, accanto all’azione Collegamento/Scollega (icona di Analytics).
+   >Il tracciamento personalizzato dei collegamenti è visibile come azione separata, accanto all’azione Collegamento/Scollega ( Icona Analytics).
    >
    >Sarà attivato solo se hai selezionato un collegamento valido nell’editor Rich Text.
 
    ![a-17](assets/aa-17.png)
 
-1. Abilita tracciamento **collegamento** personalizzato per ignorare la configurazione del tracciamento dei collegamenti del framework Adobe Analytics e abilitare il tracciamento dei collegamenti per il collegamento corrente.
+1. Abilita tracciamento **collegamento** personalizzato per ignorare la configurazione del tracciamento dei collegamenti del framework Adobe  Analytics e abilitare il tracciamento dei collegamenti per il collegamento corrente.
 
-1. (Facoltativo) Per tenere traccia degli eventi con il clic del collegamento, aggiungi i nomi degli eventi Adobe Analytics nel campo **Includi variabili** Adobe Analytics. Separare il nome di più eventi con virgole, ad esempio
+1. (Facoltativo) Per tenere traccia degli eventi con il collegamento, fate clic su Aggiungi nomi evento Adobe  Analytics nel campo **Includi variabili** Adobe  Analytics. Separare il nome di più eventi con virgole, ad esempio
 
    `event1, event22`.
 
-1. (Facoltativo) Per tenere traccia dei dati variabili con il clic del collegamento, aggiungi le variabili Adobe Analytics nel campo **Includi variabili** Adobe Analytics. Utilizzate uno dei seguenti formati:
+1. (Facoltativo) Per tenere traccia dei dati variabili con il clic del collegamento, aggiungi le variabili Adobe  Analytics nel campo **Includi variabili** Adobe  Analytics. Utilizzate uno dei seguenti formati:
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
    * *`<Variable-name>`*: *`‘CONSTANT'`*
+
    Gli esempi seguenti illustrano ciascun formato:
 
    * `eVar10:pagedata.title`
    * `prop1: ‘Aubergine'`
+
    Separate più valori con una virgola.
 
 1. Selezionare **OK**.
