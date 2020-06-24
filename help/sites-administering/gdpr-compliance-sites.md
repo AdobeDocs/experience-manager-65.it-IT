@@ -1,8 +1,8 @@
 ---
-title: Siti AEM - GDPR - Disponibilità
-seo-title: Siti AEM - GDPR - Disponibilità
-description: 'Scopri i dettagli di GDPR: Preparazione per AEM Sites.'
-seo-description: 'Scopri i dettagli di GDPR: Preparazione per AEM Sites.'
+title: AEM Sites - Preparazione GDPR
+seo-title: AEM Sites - Preparazione GDPR
+description: Scopri i dettagli di GDPR Readiness for AEM Sites.
+seo-description: Scopri i dettagli di GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,15 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 translation-type: tm+mt
-source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '850'
+ht-degree: 0%
 
 ---
 
 
-# Siti AEM - GDPR - Disponibilità{#aem-sites-gdpr-readiness}
+# AEM Sites - Preparazione GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -23,7 +26,7 @@ source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
 
 Il regolamento generale dell&#39;Unione europea sulla protezione dei dati in materia di diritti sulla privacy ha effetto a maggio 2018.
 
-AEM Sites è pronto per aiutare i clienti a rispettare gli obblighi di conformità ai requisiti GDPR. Questa pagina illustra ai clienti le procedure per gestire le richieste GDPR in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.
+I AEM Sites sono pronti ad aiutare i clienti a rispettare gli obblighi di conformità ai requisiti GDPR. Questa pagina illustra ai clienti le procedure per gestire le richieste GDPR in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.
 
 Per ulteriori informazioni, consulta la pagina [GDPR all’Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
@@ -33,29 +36,29 @@ Per ulteriori informazioni, consulta la pagina [GDPR all’Adobe Privacy Center]
 
 ## Author Server {#author-server}
 
-Gli account utente e il contenuto UGC sul server di creazione sono trattati nella documentazione [GDPR della](/help/managing/data-protection-and-privacy.md)piattaforma.
+Gli account utente e i contenuti UGC sul server di creazione sono descritti nella documentazione [GDPR di](/help/managing/data-protection-and-privacy.md)Platform.
 
-## Publish Server {#publish-server}
+## Server di pubblicazione {#publish-server}
 
-Gli account utente utilizzati per autenticare i visitatori del sito e i contenuti UGC sul server di pubblicazione sono descritti nella documentazione [GDPR della](/help/managing/data-protection-and-privacy.md)piattaforma.
+Gli account utente utilizzati per autenticare i visitatori del sito e i contenuti UGC sul server di pubblicazione sono descritti nella documentazione [GDPR di](/help/managing/data-protection-and-privacy.md)Platform.
 
-Per impostazione predefinita, i componenti di AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o ad Adobe Campaign per un&#39;ulteriore elaborazione.
+Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati del modulo immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o a un Adobe Campaign  per un&#39;ulteriore elaborazione.
 
 ## Opt-In/Opt-Out {#opt-in-opt-out}
 
 In AEM è disponibile un servizio [di rinuncia ai](/help/sites-developing/cookie-optout.md) cookie che può essere utilizzato per gestire il consenso o il rifiuto per gli utenti.
 
-## Approfondimenti migliorati di Analytics {#enhanced-insights-by-analytics}
+## Approfondimenti migliorati di  Analytics {#enhanced-insights-by-analytics}
 
-AEM Sites include un&#39;integrazione opzionale con Enhanced Insights di Analytics, che utilizza funzionalità all&#39;interno del servizio on-demand di Adobe Analytics.
+I AEM Sites includono un&#39;integrazione opzionale con Enhanced Insights di  Analytics che utilizza funzionalità all&#39;interno di Adobe  Analytics On-demand Service.
 
-Per ulteriori informazioni sulla gestione delle richieste di dati GDPR correlate ad Adobe Analytics, consulta [Adobe Analytics e GDPR](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/).
+Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative ad Adobe  Analytics, consulta [Adobe  Analytics e GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalizzazione avanzata per Target {#enhanced-personalization-by-target}
+## Personalizzazione avanzata di Target {#enhanced-personalization-by-target}
 
-AEM Sites include un&#39;integrazione opzionale con Enhanced Personalization by Target, che utilizza funzionalità all&#39;interno di Adobe Target On-demand Service.
+I AEM Sites includono un&#39;integrazione opzionale con Enhanced Personalization by Target, che utilizza funzionalità all&#39;interno Adobe Target servizio on-demand del .
 
-Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)generale sulla protezione dei dati.
+Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative a  Adobe Target, consulta [Adobe Target - Privacy e Regolamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)generale sulla protezione dei dati.
 
 ## ContextHub {#contexthub}
 
@@ -145,9 +148,10 @@ Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente pu
    * ContextHub fornisce i seguenti livelli di persistenza dei dati:
 
       * ContextHub.Utils.Persistenza.Modes.LOCAL (predefinito)
-      * ContextHub.Utils.Persistenza.Modes.SESSION
-      * ContextHub.Utils.Persistenza.Modes.COOKIE
-      * ContextHub.Utils.Persistenza.Modes.WINDOW
+      * ContextHub.Utils.Persistence.Modes.SESSION
+      * ContextHub.Utils.Persistence.Modes.COOKIE
+      * ContextHub.Utils.Persistence.Modes.WINDOW
+
       L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
 
 
@@ -174,9 +178,10 @@ Per visualizzare in anteprima la persistenza utilizzata ContextHub, un utente pu
    * ContextHub fornisce i seguenti livelli di persistenza dei dati:
 
       * ContextHub.Utils.Persistenza.Modes.LOCAL (predefinito)
-      * ContextHub.Utils.Persistenza.Modes.SESSION
-      * ContextHub.Utils.Persistenza.Modes.COOKIE
-      * ContextHub.Utils.Persistenza.Modes.WINDOW
+      * ContextHub.Utils.Persistence.Modes.SESSION
+      * ContextHub.Utils.Persistence.Modes.COOKIE
+      * ContextHub.Utils.Persistence.Modes.WINDOW
+
       L&#39;archivio ContextHub definisce il livello di persistenza da utilizzare, pertanto per visualizzare lo stato corrente della persistenza tutti i livelli devono essere controllati.
 
 
@@ -218,7 +223,7 @@ Per cancellare la persistenza ContextHub:
 * Per cancellare tutti i livelli di persistenza ContextHub, è necessario chiamare il codice appropriato per tutti i livelli:
 
    * ContextHub.Utils.Persistenza.Modes.LOCAL (predefinito)
-   * ContextHub.Utils.Persistenza.Modes.SESSION
-   * ContextHub.Utils.Persistenza.Modes.COOKIE
-   * ContextHub.Utils.Persistenza.Modes.WINDOW
+   * ContextHub.Utils.Persistence.Modes.SESSION
+   * ContextHub.Utils.Persistence.Modes.COOKIE
+   * ContextHub.Utils.Persistence.Modes.WINDOW
 
