@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Developing User Guide
+user-guide-title: Guida utente per lo sviluppo di AEM 6.5
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 10%
 
 ---
 
@@ -13,8 +16,8 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 + [Panoramica sullo sviluppo della Guida utente](home.md)
 + Introduzione per gli sviluppatori{#introduction}
-   + [Guida introduttiva allo sviluppo di siti AEM - Esercitazione WKND](getting-started.md)
-   + [Concetti di base AEM](the-basics.md)
+   + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](getting-started.md)
+   + [Concetti di base di AEM](the-basics.md)
    + [Struttura dell&#39;interfaccia utente di AEM Touch](touch-ui-structure.md)
    + [Concetti dell’interfaccia utente di AEM Touch](touch-ui-concepts.md)
    + [Sviluppo AEM - Linee guida e best practice](dev-guidelines-bestpractices.md)
@@ -22,7 +25,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Sviluppo e Page Diff](pagediff.md)
    + [Limitazioni per l’editor](editor-limitations.md)
    + [Quadro di protezione CSRF](csrf-protection.md)
-   + [Data Modeling - Modello di David Nuescheler](model-data.md)
+   + [Modellazione dei dati - Modello di David Nuescheler](model-data.md)
    + [Contributo ad AEM](contributing-to-cq.md)
    + [Sicurezza](security.md)
    + [Materiali di riferimento](reference-materials.md)
@@ -47,7 +50,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Implementazione di un valutatore predefinito personalizzato per il Generatore di query](implementing-custom-predicate-evaluator.md)
       + [Riferimento predicato Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
-   + Assegnazione di tag{#tagging}
+   + Assegnazione tag{#tagging}
       + [Assegnazione tag](tags.md)
       + [AEM Tagging Framework](framework.md)
       + [Creazione di tag in un’applicazione AEM](building.md)
@@ -67,7 +70,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Sviluppo (generico)](generic.md)
       + [Sviluppo con SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componenti{#components}
-   + [Componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
    + [Sistema di stili](/help/sites-authoring/style-system.md)
    + [Panoramica sui componenti](components.md)
    + [Componenti AEM - Nozioni di base](components-basics.md)
@@ -82,7 +85,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Modalità Sviluppatore](developer-mode.md)
    + [Verifica dell’interfaccia](hobbes.md)
    + [Componenti per frammenti di contenuto](components-content-fragments.md)
-   + [Come ottenere informazioni sulla pagina in formato JSON](pageinfo.md)
+   + [Ottenimento di informazioni sulla pagina in formato JSON](pageinfo.md)
    + Internazionalizzazione{#internationalization}
       + [Internazionalizzazione dei componenti](i18n.md)
       + [Internazionalizzazione delle stringhe di interfaccia](i18n-dev.md)
@@ -109,11 +112,11 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Componente pagina SPA](spa-page-component.md)
       + [Mappatura da modello dinamico a componente per SPA](spa-dynamic-model-to-component-mapping.md)
       + [Routing modello SPA](spa-routing.md)
-      + [Integrazione di SPA e Adobe Experience Platform Launch](spa-launch.md)
+      + [Integrazione di SPA e lancio di  Adobe Experience Platform](spa-launch.md)
       + [Rendering SPA e lato server](spa-ssr.md)
       + [Riferimenti API SPA Javascript](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
-   + [Frammenti di contenuto](/help/assets/content-fragments.md)
+   + [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
    + [Frammenti esperienza](/help/sites-authoring/experience-fragments.md)
    + [Informazioni sui frammenti di contenuto e i servizi sui contenuti in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Strumenti di sviluppo{#devtools}
@@ -136,7 +139,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Riferimento API ContextHub Javascript](contexthub-api.md)
    + [Estensione di ContextHub](ch-extend.md)
    + [Aggiunta di ContextHub alle pagine e accesso agli store](ch-adding.md)
-   + [Candidati per l&#39;archivio ContextHub di esempio](ch-samplestores.md)
+   + [Candidati per lo store ContextHub di esempio](ch-samplestores.md)
    + [Tipi di moduli interfaccia utente ContextHub di esempio](ch-samplemodules.md)
    + [Diagnostica ContextHub](ch-diagnostics.md)
    + [Sviluppo per contenuti mirati](target.md)
@@ -149,7 +152,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Personalizzazione delle visualizzazioni delle proprietà pagina](page-properties-views.md)
    + [Configurazione della pagina per la modifica collettiva delle proprietà pagina](bulk-editing.md)
    + [Personalizzazione ed estensione dei frammenti di contenuto](customizing-content-fragments.md)
-   + [Frammenti di contenuto Configurazione dei componenti per il rendering](content-fragments-config-components-rendering.md)
+   + [Componenti di configurazione dei frammenti di contenuto per il rendering](content-fragments-config-components-rendering.md)
    + [Frammenti esperienza](experience-fragments.md)
    + Estensione dei flussi di lavoro{#extending-workflows}
       + [Sviluppo ed estensione dei flussi di lavoro](workflows.md)
@@ -158,21 +161,21 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Interazione con flussi di lavoro a livello di programmazione](workflows-program-interaction.md)
       + [Riferimento passo flusso di lavoro](workflows-step-ref.md)
       + [Best practice per i flussi di lavoro](workflows-best-practices.md)
-      + [Riferimento processo di workflow](workflows-process-ref.md)
+      + [Riferimento per il processo di workflow](workflows-process-ref.md)
       + [Variabili nei flussi di lavoro AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Estensione di Multi Site Manager](extending-msm.md)
-   + Tracciamento e analisi{#extending-analytics}
+   + Tracciamento e  Analytics{#extending-analytics}
       + [Estensione del tracciamento degli eventi](extending-analytics.md)
-      + [Aggiunta di Adobe Analytics Tracking ai componenti](extending-analytics-components.md)
-      + [Personalizzazione di Adobe Analytics Framework](extending-analytics-framework.md)
-      + [Implementazione della denominazione delle pagine lato server per Analytics](extending-analytics-pa-naming.md)
-   + Servizi cloud{#extending-cloud-services}
-      + [Configurazioni servizi cloud](extending-cloud-config.md)
-      + [Creazione di un servizio Cloud personalizzato](extending-cloud-config-custom-cloud.md)
+      + [Aggiunta di Adobe  Analytics Tracking ai componenti](extending-analytics-components.md)
+      + [Personalizzazione di Adobe  Analytics Framework](extending-analytics-framework.md)
+      + [Implementazione della denominazione delle pagine lato server per  Analytics](extending-analytics-pa-naming.md)
+   + Cloud Services{#extending-cloud-services}
+      + [Configurazioni Cloud Service](extending-cloud-config.md)
+      + [Creazione di un Cloud Service personalizzato](extending-cloud-config-custom-cloud.md)
    + [Creazione di estensioni personalizzate](extending-campaign-extensions.md)
    + Forms{#extending-forms}
       + [Creazione di mappature di moduli personalizzate](extending-campaign-form-mapping.md)
-      + [Creazione di un modello personalizzato di pagina AEM con i componenti modulo di Adobe Campaign](extending-campaign-custom-template.md)
+      + [Creazione di un modello personalizzato di pagina AEM con componenti modulo  Adobe Campaign](extending-campaign-custom-template.md)
       + [Richiedi script di analisi](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](jmx-integration.md)
    + [Sviluppo dell’editor di massa](dev-bulk-editor.md)
@@ -193,7 +196,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Elenchi di controllo](checklists.md)
    + [Giorno Duro](tough-day.md)
    + [Verifica dell’interfaccia](hobbes.md)
-+ Best practice{#bestpractices}
++ Best practice {#bestpractices}
    + [Panoramica sulle best practice](best-practices.md)
    + [Linee guida per lo sviluppo AEM e best practice](dev-guidelines-bestpractices.md)
    + [Tecniche consigliate per lo sviluppo](development-practices.md)
