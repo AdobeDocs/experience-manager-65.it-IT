@@ -3,23 +3,26 @@ title: Elenco delle funzioni Esperienze fluide AEM
 description: Elenco Delle Funzioni Per Esperienze Fluide
 index: n
 translation-type: tm+mt
-source-git-commit: 378cdba999365083a2f585ad4f4ccd1c7ad7d4ce
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 8%
 
 ---
 
 
 # Elenco delle funzioni Esperienze fluide AEM{#aem-fluid-experiences-feature-list}
 
-Le esperienze fluide di Adobe Experience Manager si basano sui potenti set di funzioni di AEM Sites, AEM Dynamic Media e AEM Assets per fornire una soluzione affidabile per la distribuzione di contenuti headless.
+ Adobe Experience Manager Fluid Experiences si avvale di potenti set di AEM Sites, Dynamic Media AEM e AEM Assets per offrire una soluzione affidabile per la distribuzione di contenuti headless.
 
-Le esperienze fluide di AEM si differenziano da quelle classiche di AEM, in quanto vengono affrontati solo i casi di utilizzo headless. Le soluzioni AEM Sites, Assets e Dynamic Media [offrono funzionalità di creazione e distribuzione dei contenuti di prima qualità e supporto per i casi di utilizzo ibridi fornito da AEM.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+Le esperienze fluide di AEM si differenziano da quelle classiche di AEM, in quanto vengono affrontati solo i casi di utilizzo headless. L&#39;authoring e la distribuzione dei contenuti di alta qualità e il forte supporto di AEM per i casi di utilizzo ibridi sono disponibili con le soluzioni Dynamic Media, Assets e AEM Sites [complete.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 Le tabelle seguenti definiscono le caratteristiche delle esperienze fluide AEM e collegano alla documentazione di supporto pertinente.
 
 * [Archivio](#repository-features)
 * [Accesso, API e distribuzione](#access-api-and-delivery-features)
 * [Amministrazione e integrazioni](#admin-and-integration-features)
-* [Analisi e personalizzazione](#analytics-and-personalization)
+* [Analytics e personalizzazione](#analytics-and-personalization)
 
 >[!NOTE]
 >
@@ -45,12 +48,12 @@ Le tabelle seguenti definiscono le caratteristiche delle esperienze fluide AEM e
 |  |
 |---|
 | [API HTTP](/help/assets/mac-api-assets.md) |
-| [Modelli di contenuto strutturati](/help/assets/content-fragments.md) |
+| [Modelli di contenuto strutturati](/help/assets/content-fragments/content-fragments.md) |
 | [Servizi contenuto](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
 | [Frammenti esperienza](/help/sites-authoring/experience-fragments.md) |
 | API HTTP per il contenuto strutturato (lettura) |
 | API HTTP per contenuto strutturato (CRUD) |
-| [Componenti core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) |
+| [Componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) |
 | [Contenuti multimediali dinamici](/help/assets/dynamic-media.md) |
 
 ## Funzioni di amministrazione e integrazione {#admin-and-integration-features}
@@ -63,19 +66,19 @@ Le tabelle seguenti definiscono le caratteristiche delle esperienze fluide AEM e
 | [Traduzione del contenuto](/help/sites-administering/translation.md) |
 | [Monitoraggio](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Backup](/help/sites-administering/backup-and-restore.md) |
-| [Cloud manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Cloud manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
 | [Integrazione PIM](/help/sites-authoring/managing-product-information.md) |
 | [Progetti e attività](/help/sites-authoring/projects.md) |
 | [Flussi di lavoro](/help/sites-administering/workflows-starting.md) |
 | Connettività (servizi cloud) |
 
-## Analisi e personalizzazione {#analytics-and-personalization}
+##  Analytics e personalizzazione {#analytics-and-personalization}
 
 |  |
 |---|
 | [Report delle risorse](/help/assets/asset-reports.md) |
-| Approfondimenti avanzati basati su Adobe Analytics |
-| Approfondimenti avanzati basati su Adobe Target |
+| Approfondimenti avanzati basati su Adobe  Analytics |
+| Approfondimenti avanzati basati su  Adobe Target |
 
 ## Ulteriori informazioni {#learn-more}
 
