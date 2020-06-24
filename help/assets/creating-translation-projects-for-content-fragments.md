@@ -10,16 +10,19 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 translation-type: tm+mt
-source-git-commit: 48fd5ddb386d69795291e560fa7b21da6edf5979
+source-git-commit: 8f1a1beb9aa64b1d2ea5eda0bec3ca6e99c2ddcc
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 2%
 
 ---
 
 
 # Creazione di progetti di traduzione per i frammenti di contenuto {#creating-translation-projects-for-content-fragments}
 
-Oltre alle risorse, Risorse Adobe Experience Manager (AEM) supporta flussi di lavoro di copia lingua per i frammenti [di](content-fragments.md) contenuto (comprese le varianti). Per eseguire flussi di lavoro di copia della lingua sui frammenti di contenuto non è richiesta alcuna ottimizzazione aggiuntiva. In ciascun flusso di lavoro, l’intero frammento di contenuto viene inviato per la traduzione.
+Oltre alle risorse,  risorse di Adobe Experience Manager (AEM) supporta flussi di lavoro di copia lingua per i frammenti [di](/help/assets/content-fragments/content-fragments.md) contenuto (comprese le varianti). Per eseguire flussi di lavoro di copia della lingua sui frammenti di contenuto non è richiesta alcuna ottimizzazione aggiuntiva. In ciascun flusso di lavoro, l’intero frammento di contenuto viene inviato per la traduzione.
 
-I tipi di flussi di lavoro che è possibile eseguire sui frammenti di contenuto sono esattamente simili ai tipi di flusso di lavoro eseguiti per le risorse. Inoltre, le opzioni disponibili in ciascun tipo di flusso di lavoro corrispondono alle opzioni disponibili nei tipi di flussi di lavoro corrispondenti per le risorse.
+I tipi di flussi di lavoro che è possibile eseguire sui frammenti di contenuto sono esattamente simili ai tipi di flusso di lavoro eseguiti per le risorse. Inoltre, le opzioni disponibili all’interno di ciascun tipo di flusso di lavoro corrispondono alle opzioni disponibili nei tipi di flussi di lavoro corrispondenti per le risorse.
 
 Nei frammenti di contenuto è possibile eseguire i seguenti tipi di flussi di lavoro di copia lingua:
 
@@ -31,7 +34,7 @@ In questo flusso di lavoro, i frammenti di contenuto da tradurre vengono copiati
 
 Quando il frammento di contenuto di origine viene aggiornato o modificato, è necessario tradurre nuovamente il frammento di contenuto specifico per lingua o lingua corrispondente. Il flusso di lavoro di copia della lingua di aggiornamento traduce un gruppo aggiuntivo di frammenti di contenuto e lo include in una copia della lingua per una lingua specifica. In questo caso, i frammenti di contenuto convertiti vengono aggiunti alla cartella di destinazione che contiene già frammenti di contenuto tradotti in precedenza.
 
-## Creazione e conversione di flussi di lavoro {#create-and-translate-workflow}
+## Crea e traduci flusso di lavoro {#create-and-translate-workflow}
 
 Il flusso di lavoro Crea e traduci include le seguenti opzioni. Le fasi procedurali associate a ciascuna opzione sono simili a quelle associate all’opzione corrispondente per le attività.
 
@@ -50,9 +53,9 @@ Il flusso di lavoro Copia lingua aggiornamento include le seguenti opzioni. Le f
 
 ## Conversione di frammenti di supporti misti {#translating-mixed-media-fragments}
 
-AEM consente di tradurre frammenti di contenuto che includono vari tipi di risorse e raccolte multimediali. Se traducete un frammento di contenuto che include risorse in linea, le copie tradotte di tali risorse vengono memorizzate nella directory principale della lingua di destinazione.
+AEM consente di tradurre frammenti di contenuto che includono vari tipi di risorse multimediali e raccolte. Se traducete un frammento di contenuto che include risorse in linea, le copie tradotte di tali risorse vengono memorizzate nella directory principale della lingua di destinazione.
 
-Se il frammento di contenuto include una raccolta, le risorse all&#39;interno della raccolta vengono convertite insieme al frammento di contenuto. Le copie convertite delle risorse vengono memorizzate nella radice della lingua di destinazione appropriata in una posizione che corrisponde alla posizione fisica delle risorse di origine nella directory principale della lingua di origine.
+Se il frammento di contenuto include una raccolta, le risorse all&#39;interno della raccolta vengono convertite insieme al frammento di contenuto. Le copie tradotte delle risorse vengono memorizzate nella radice della lingua di destinazione appropriata in una posizione che corrisponde alla posizione fisica delle risorse di origine nella directory principale della lingua di origine.
 
 Per poter tradurre frammenti di contenuto che includono supporti misti, modificate innanzitutto il framework di traduzione predefinito in modo da consentire la conversione di risorse in linea e raccolte associate a frammenti di contenuto.
 
@@ -110,7 +113,7 @@ Per poter tradurre frammenti di contenuto che includono supporti misti, modifica
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
-1. Selezionate la lingua di destinazione dall&#39;elenco Lingue di **[!UICONTROL destinazione]** .
+1. Selezionate la lingua di destinazione dall’elenco Lingue **** Target.
 
    ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -122,13 +125,13 @@ Per poter tradurre frammenti di contenuto che includono supporti misti, modifica
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
-1. Andate alla console **[!UICONTROL Progetti]** e aprite la cartella del progetto per il progetto di traduzione creato.
+1. Passate alla console **[!UICONTROL Progetti]** e aprite la cartella del progetto per il progetto di traduzione creato.
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
 1. Tocca o fai clic sulla sezione del progetto per aprire la pagina dei dettagli del progetto.
 
-   ![chlimage_1-462](assets/chlimage_1-461.png)
+   ![chlimage_1-461](assets/chlimage_1-461.png)
 
 1. Dalla sezione Processo di traduzione, verificate il numero di risorse da convertire.
 1. Dalla sezione **[!UICONTROL Processo]** di traduzione, avviate il processo di traduzione.
@@ -155,7 +158,7 @@ Per poter tradurre frammenti di contenuto che includono supporti misti, modifica
 
 1. Andate alle risorse all&#39;interno della raccolta che vengono convertite insieme al frammento di contenuto. Osservate che le copie tradotte delle risorse sono memorizzate nella radice della lingua di destinazione appropriata.
 
-   ![chlimage_1-468](assets/chlimage_1-467.png)
+   ![chlimage_1-467](assets/chlimage_1-467.png)
 
    >[!NOTE]
    >
