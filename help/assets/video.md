@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '11877'
+source-wordcount: '11829'
 ht-degree: 8%
 
 ---
@@ -33,7 +33,6 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
    >
    >
 * Consulta [Configurazione dei servizi](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) Dynamic Media Cloud in Configurazione di Dynamic Media - Modalità ibrida.
-
 >
 
 
@@ -145,7 +144,7 @@ Per gestire video singoli e set video adattivi, sono supportati i seguenti eleme
 * Organizzate, sfogliate e cercate i video con il supporto completo dei metadati per una gestione efficiente delle risorse video.
 * Distribuite set video adattivi sia sul Web che su computer desktop e dispositivi mobili, inclusi iPhone, iPad, Android, Blackberry e Windows Phone.
 
-Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate Guida [di riferimento visualizzatori di](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html)Scene7.
+Lo streaming video adattivo è supportato su diverse piattaforme iOS. Consultate Guida [di riferimento visualizzatori di](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)Scene7.
 
 Dynamic Media supporta la riproduzione di video mobile per video MP4 H.264. Per un elenco dei dispositivi BlackBerry che supportano questo formato video, consultate: [Formati video supportati su Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -161,7 +160,7 @@ Per un elenco dei dispositivi Windows che supportano questo formato video, consu
 
 Consultate Esempio di riproduzione [video](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) dinamica.
 
-Consultate anche [Visualizzatori per le risorse AEM e Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) e [Visualizzatori per le risorse AEM solo](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) nella guida di riferimento dei visualizzatori Adobe Scene7.
+Consultate anche [Visualizzatori per AEM Assets e Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizzatori per risorse AEM solo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) nella guida di riferimento dei visualizzatori Adobe Scene7.
 
 ## Procedura consigliata: Utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -173,7 +172,7 @@ Dal lato della riproduzione del visualizzatore, viene rilevata automaticamente l
 
 Combinando in un singolo lettore la possibilità di progettare i componenti di riproduzione in HTML5 e CSS, di usufruire di riproduzione incorporata e di utilizzare lo streaming adattativo e progressivo a seconda delle funzionalità del browser, i contenuti multimediali potranno essere visti dagli utenti desktop e mobili e potranno così godere di un’esperienza video ottimizzata.
 
-Consultate anche [I visualizzatori](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) HTML5 nella guida di riferimento dei visualizzatori Adobe Scene7.
+Consultate anche [I visualizzatori](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 nella guida di riferimento dei visualizzatori Adobe Scene7.
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -473,7 +472,6 @@ Per configurare le impostazioni di Google Cloud:
 
    * Nel dashboard del progetto, nella scheda Guida introduttiva, toccate **[!UICONTROL Esplora e abilitate le API.]**
    * Nel dashboard del progetto, nella scheda API, toccate **[!UICONTROL Vai alla panoramica delle API.]**
-
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Nella parte superiore della pagina API e servizi, toccate **[!UICONTROL Abilita API e servizi.]**
@@ -493,7 +491,6 @@ Per configurare le impostazioni di Google Cloud:
    * Da **[!UICONTROL dove chiamerete l&#39;API?]** elenco a discesa, selezionate Server **[!UICONTROL Web (ad esempio, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** dall&#39;elenco a discesa, toccate Dati **[!UICONTROL utente.]**
-
    ![6_5_googleaccount-apis-create-ecredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Toccare **[!UICONTROL Quali credenziali sono necessarie?]**
@@ -642,7 +639,7 @@ Lasciate aperta la pagina Crea configurazione YouTube; ritornerete su di esso tr
 1. Toccate **[!UICONTROL Crea.]**
 1. Nella finestra di dialogo Impostazioni account di YouTube, immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
 
-   L&#39;ID progetto è stato specificato al momento della [configurazione iniziale delle impostazioni](/help/assets/video.md#configuring-google-cloud-settings) Google Cloud.
+   Hai specificato l&#39;ID progetto al momento della [configurazione iniziale delle impostazioni](/help/assets/video.md#configuring-google-cloud-settings) Google Cloud.
 Lasciate aperta la finestra di dialogo Impostazioni account di YouTube; ritornerete su di esso tra un momento.
 
 1. Utilizzando un editor di testo normale, aprite il file JSON scaricato e salvato in precedenza nell&#39;attività Configurazione delle impostazioni di Google Cloud.
@@ -839,11 +836,9 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Visualizzate l’avanzamento della codifica video nella cartella delle risorse:
 
    * Nella vista a schede, l&#39;avanzamento della codifica video viene visualizzato per percentuale sulla risorsa. In caso di errore, queste informazioni vengono visualizzate anche sulla risorsa.
-
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. In caso di errore, il messaggio viene visualizzato nella stessa colonna.
-
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Questa colonna non viene visualizzata per impostazione predefinita. Per abilitare la colonna, dal menu a discesa delle viste seleziona **[!UICONTROL Visualizza impostazioni]**, quindi aggiungi la colonna **[!UICONTROL Stato elaborazione]** e tocca o fai clic su **[!UICONTROL Aggiorna.]**
@@ -863,7 +858,6 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >    * Configurazione coda di lavoro Apache Sling
    >    * Gestore processo esterno flusso di lavoro Adobe Granite
    >    * Coda timeout flusso di lavoro Granite
-
    >
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
 
@@ -898,7 +892,6 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >    * Configurazione coda di lavoro Apache Sling
    >    * Gestore processo esterno flusso di lavoro Adobe Granite
    >    * Coda timeout flusso di lavoro Granite
-
    >
    >
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
@@ -945,7 +938,6 @@ La modalità di configurazione delle notifiche dipende dal tipo di notifiche per
    * Inizio pubblicazione
    * Errore di pubblicazione
    * Completamento pubblicazione - include informazioni su canali e URL
-
    Deselezionando una casella di controllo non si riceverà la notifica e-mail specificata dal flusso di lavoro di pubblicazione di YouTube.
 
    >[!NOTE]
@@ -995,7 +987,6 @@ Per visualizzare i rapporti video:
 
    * Vicino all&#39;angolo superiore destro, toccare l&#39;icona **Date Picker **.
 Specificate l&#39;intervallo di date iniziale e finale per il quale desiderate i dati video, quindi toccate **[!UICONTROL Esegui rapporto.]**
-
    La casella del gruppo Metriche principali identifica diverse misurazioni aggregate per tutti i *video pubblicati *in tutto il sito.
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
@@ -1006,11 +997,11 @@ Se utilizzate un visualizzatore video fornito da Dynamic Media o se avete creato
 
 Per creare visualizzatori video personalizzati, usate Scene7 HTML5 Viewers Reference e Scene7 HTML5 Viewers SDK.
 
-Consultate Guida [di riferimento visualizzatori di](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html)Scene7.
+Consultate Guida [di riferimento visualizzatori di](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)Scene7.
 
-Scaricate l’SDK per visualizzatori HTML di Scene7 da Adobe Developer Connection.
+<!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
-Consultate [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Per visualizzare i rapporti sui video basati su un visualizzatore video creato con l’SDK per visualizzatori HTML5 di Scene7:
 
@@ -1021,7 +1012,7 @@ Per visualizzare i rapporti sui video basati su un visualizzatore video creato c
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per i clienti.
+   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per il cliente.
 
    Il valore corretto per il parametro config2 si trova sia nella funzione **Embed Code **che nella funzione copy **URL **. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
@@ -1073,7 +1064,7 @@ I sottotitoli consentono inoltre una maggiore accessibilità mediante l’uso di
 
 Dynamic Media è in grado di convertire i file di sottotitoli in formato JSON (JavaScript Object Notation). Questa conversione consente di incorporare il testo JSON in una pagina Web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi individuare e indicizzare i contenuti per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents (Distribuzione di contenuti](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) statici (non immagini)) nella guida *API di* Scene7 Image Serving.
+Per ulteriori informazioni sull’utilizzo della funzione JSON in un URL, consultate [Serving static (non-image) contents (Distribuzione di contenuti](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) statici (non immagini)) nella guida *API di* Scene7 Image Serving.
 
 Per aggiungere sottotitoli o sottotitoli al video:
 
