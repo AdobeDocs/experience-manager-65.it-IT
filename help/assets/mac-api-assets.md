@@ -3,7 +3,7 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -28,9 +28,9 @@ Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni 
 
 ## Frammenti di contenuto {#content-fragments}
 
-Un frammento [di](/help/assets/content-fragments.md) contenuto è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, come testi, numeri, date, ecc. Poiché le `standard` risorse presentano diverse differenze (ad esempio immagini o documenti), per la gestione dei frammenti di contenuto si applicano alcune regole aggiuntive.
+Un frammento [di](/help/assets/content-fragments/content-fragments.md) contenuto è un tipo speciale di risorsa. Può essere utilizzato per accedere a dati strutturati, come testi, numeri, date, ecc. Poiché le `standard` risorse presentano diverse differenze (ad esempio immagini o documenti), per la gestione dei frammenti di contenuto si applicano alcune regole aggiuntive.
 
-Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md)HTTP Experience Manager Assets.
+Per ulteriori informazioni, consulta Supporto per i frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md)HTTP  Experience Manager Assets.
 
 ## Dati, modello {#data-model}
 
@@ -61,13 +61,13 @@ Le cartelle sono come directory nei file system tradizionali. Sono contenitori p
 
 ### Assets {#assets}
 
-In Experience Manager una risorsa contiene i seguenti elementi:
+In  Experience Manager una risorsa contiene i seguenti elementi:
 
 * Proprietà e metadati della risorsa.
 * Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da PDF o [!DNL Adobe InDesign] file.
 * Commenti facoltativi.
 
-Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto dei frammenti di [contenuto nell’API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP Experience Manager Assets.
+Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto  API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP di Experience Manager Assets.
 
 In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
 
