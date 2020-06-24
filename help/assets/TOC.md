@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente di Experience Manager 6.5 Assets
+user-guide-title: Guida utente di  Experience Manager 6.5 Assets
 translation-type: tm+mt
-source-git-commit: db60a7297defa2ed8e7f30f148d0f74a73a49893
+source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 41%
@@ -12,32 +12,32 @@ ht-degree: 41%
 ---
 
 
-# Guida utente di Experience Manager 6.5 Assets {#assets}
+# Guida utente di  Experience Manager 6.5 Assets {#assets}
 
 + [[!DNL Assets] guida utente](home.md)
 + [Note sulla versione di AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Informazioni su DAM](assets.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
-+ Utilizzare Risorse AEM {#using}
-   + [Esperienza della home page di AEM Assets](assets-home-page.md)
++ Usa AEM Assets {#using}
+   + [AEM Assets esperienza pagina principale](assets-home-page.md)
    + [Ricerca di risorse in AEM](search-assets.md)
    + [Risorse in più lingue](multilingual-assets.md)
-   + [Risorse [!DNL Adobe Stock] utili in AEM Assets](aem-assets-adobe-stock.md)
+   + [Risorse [!DNL Adobe Stock] utilizzate nei AEM Assets](aem-assets-adobe-stock.md)
    + [Anteprima delle risorse 3D](previewing-3d-assets.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Flusso di attività nella timeline](activity-stream.md)
    + [Elabora risorse](assets-workflow.md)
    + [Aggiungere mappe immagine](image-maps.md)
    + [Riutilizzare le risorse con MSM](reuse-assets-using-msm.md)
-   + [Risorse collegate con AEM Sites](use-assets-across-connected-assets-instances.md)
+   + [Risorse connesse con AEM Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Newsletter di Dynamic Media curata da Experience League](dynamic-media-newsletter.md)
    + [Impostazione di Dynamic Media](administering-dynamic-media.md)
    + [Utilizzo di Dynamic Media](dynamic-media.md)
-   + [Configurazione di contenuti multimediali dinamici - Modalità Scene7](config-dms7.md)
+   + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
-   + [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
-   + [Migrazione da Dynamic Media - Modalità ibrida a Dynamic Media - Modalità S7](migrate-from-hybrid-to-dms7.md)
+   + [Risoluzione dei problemi relativi alla modalità Dynamic Media - Scene7](troubleshoot-dms7.md)
+   + [Migrazione da Dynamic Media - Modalità ibrida alla modalità Dynamic Media - S7](migrate-from-hybrid-to-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestione dei predefiniti per i visualizzatori Dynamic Media](managing-viewer-presets.md)
@@ -75,14 +75,14 @@ ht-degree: 41%
    + [Installazione di Feature Pack 18912 per la migrazione di massa delle risorse](bulk-ingest-migrate.md)
    + [Utilizzo dei selettori](working-with-selectors.md)
 + Estendi risorse {#extending}
-   + [Personalizzare ed estendere AEM Assets](extending-assets.md)
+   + [Personalizzare ed estendere i AEM Assets](extending-assets.md)
    + [Elaborazione delle risorse tramite gestori e flussi di lavoro di contenuti multimediali](media-handlers.md)
    + [Estendi funzionalità di ricerca](searchx.md)
-   + [Installazione e [!DNL ImageMagick] configurazione per l’utilizzo con Risorse AEM](best-practices-for-imagemagick.md)
+   + [Installazione e [!DNL ImageMagick] configurazione per lavorare con i AEM Assets](best-practices-for-imagemagick.md)
    + [Integrare le risorse con il flusso di attività](extending-activity-stream.md)
    + [Estendi editor risorse](asseteditorx.md)
    + [API HTTP di Assets](mac-api-assets.md)
-   + [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](assets-api-content-fragments.md)
+   + [Supporto dei frammenti di contenuto nell&#39;API HTTP AEM Assets](assets-api-content-fragments.md)
    + [Sviluppo proxy delle risorse](proxy.md)
 + Amministrazione delle risorse {#administer}
    + [Formati di file supportati](assets-formats.md)
@@ -91,7 +91,7 @@ ht-degree: 41%
    + [Write-back XMP per le rappresentazioni](xmp-writeback.md)
    + [Condivisione dei collegamenti delle risorse](link-sharing.md)
    + [Rapporti sulle risorse](asset-reports.md)
-   + [Smart tag migliorati](enhanced-smart-tags.md)
+   + [Tag avanzati migliorati](enhanced-smart-tags.md)
    + [Profili per elaborare metadati, immagini e video](processing-profiles.md)
    + [Metadati a cascata](cascading-metadata.md)
    + [Creare e configurare le pagine Editor risorse](assets-finder-editor.md)
@@ -131,14 +131,14 @@ ht-degree: 41%
    + [Pubblicare cartelle su Brand Portal](brand-portal-publish-folder.md)
    + [Pubblicare raccolte su Brand Portal](brand-portal-publish-collection.md)
 + Frammenti di contenuto {#fragments}
-   + [Utilizzo di frammenti di contenuto](content-fragments.md)
-   + [Gestione dei frammenti di contenuto](content-fragments-managing.md)
-   + [Modelli per frammenti di contenuto](content-fragments-models.md)
-   + [Varianti - Authoring dei contenuti di frammenti](content-fragments-variations.md)
-   + [Contenuti associati a frammenti di contenuto](content-fragments-assoc-content.md)
-   + [Metadati - Proprietà dei frammenti](content-fragments-metadata.md)
-   + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments-delete.md)
-   + [Frammenti di contenuto - Markdown](content-fragments-markdown.md)
+   + [Utilizzo di frammenti di contenuto](content-fragments/content-fragments.md)
+   + [Gestione dei frammenti di contenuto](content-fragments/content-fragments-managing.md)
+   + [Modelli per frammenti di contenuto](content-fragments/content-fragments-models.md)
+   + [Varianti - Authoring dei contenuti di frammenti](content-fragments/content-fragments-variations.md)
+   + [Contenuti associati a frammenti di contenuto](content-fragments/content-fragments-assoc-content.md)
+   + [Metadati - Proprietà dei frammenti](content-fragments/content-fragments-metadata.md)
+   + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments/content-fragments-delete.md)
+   + [Frammenti di contenuto - Markdown](content-fragments/content-fragments-markdown.md)
    + [Creazione di progetti di traduzione per i frammenti di contenuto](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
    + [Consente di gestire i contenuti digitali](managing-assets-touch-ui.md)
