@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3845'
 ht-degree: 10%
 
 ---
@@ -412,7 +412,7 @@ Quando create o modificate i predefiniti per immagini, avete a disposizione le o
   </tr>
   <tr>
    <td><strong>Modificatore immagine</strong></td>
-   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell’interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori</strong> immagini. Questi parametri sono definiti nel riferimento <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">al comando</a>Image Server Protocol.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
+   <td><p>Oltre alle comuni impostazioni delle immagini disponibili nell’interfaccia utente, Dynamic Media supporta numerose modifiche avanzate alle immagini che potete specificare nel campo <strong>Modificatori</strong> immagini. Questi parametri sono definiti nel riferimento <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">al comando</a>Image Server Protocol.</p> <p>Importante: Le seguenti funzionalità elencate nell'API non sono supportate:</p>
     <ul>
      <li>Comandi di base per la modellazione e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li>
