@@ -10,7 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1706'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
 
 Scoprite come integrare le funzionalità di cura leader di settore di Livefyre con l&#39;istanza AEM 6.5, consentendo di pubblicare in pochi minuti contenuti generati dagli utenti (UGC) dai social network al sito.
 
-## Introduzione {#getting-started}
+## Guida introduttiva {#getting-started}
 
 ### Installare il pacchetto Livefyre per AEM {#install-livefyre-package-for-aem}
 
-AEM 6.5 viene fornito con il pacchetto delle funzioni Livefyre 1.2.6 preinstallato. Questo pacchetto include solo un&#39;integrazione Livefyre limitata con AEM Sites e deve essere disinstallato prima di installare un pacchetto aggiornato. Con il pacchetto più recente, puoi provare l’integrazione completa di Livefyre con AEM, compresi Siti, Risorse e Commercio.
+AEM 6.5 viene fornito con il pacchetto delle funzioni Livefyre 1.2.6 preinstallato. Questo pacchetto include solo un&#39;integrazione Livefyre limitata con i AEM Sites e deve essere disinstallato prima di installare un pacchetto aggiornato. Con il pacchetto più recente, puoi provare l’integrazione completa di Livefyre con AEM, compresi Siti, Risorse e Commercio.
 
 >[!NOTE]
 >
@@ -69,14 +72,14 @@ AEM 6.5 viene fornito con il pacchetto delle funzioni Livefyre 1.2.6 preinstalla
 
 Configurate AEM per l&#39;utilizzo delle credenziali di licenza Livefyre dell&#39;organizzazione, consentendo la comunicazione tra Livefyre e AEM.
 
-1. Dalla home page di AEM, fate clic sull&#39;icona **Strumenti** nella parte sinistra, quindi selezionate **Distribuzione > Configurazione** Livefyre.
+1. Dalla home page di AEM, fate clic sull&#39;icona **Strumenti** nella barra a sinistra, quindi selezionate **Distribuzione > Configurazione** Livefyre.
 1. Selezionate la cartella di configurazione in cui desiderate creare una nuova configurazione Livefyre, quindi fate clic su **Crea**.
 
    ![create-livefyre-configuration1](assets/create-livefyre-configuration1.png)
 
    >[!NOTE]
    >
-   >Prima di poter aggiungere le configurazioni di Livefyre, nelle cartelle deve essere abilitata l&#39;opzione Configurazioni cloud. Le cartelle di configurazione vengono create e gestite nel browser di configurazione.
+   >Per poter aggiungere le configurazioni di Livefyre, nelle cartelle deve essere abilitata l&#39;opzione Configurazioni cloud nelle relative proprietà. Le cartelle di configurazione vengono create e gestite nel browser di configurazione.
    >
    >Non è possibile creare un nome per una configurazione, a cui fa riferimento il percorso della cartella in cui si trova. Potete avere una sola configurazione per cartella.
 
@@ -109,7 +112,7 @@ L&#39;integrazione di autenticazione predefinita potrebbe non essere perfetta pe
 
 ## Utilizzo di Livefyre con AEM Sites {#use-livefyre-with-aem-sites}
 
-### Aggiungere componenti Livefyre a una pagina {#add-livefyre-components-to-a-page}
+### Aggiunta di componenti Livefyre a una pagina {#add-livefyre-components-to-a-page}
 
 Prima di aggiungere componenti Livefyre a una pagina all’interno di Sites, è necessario abilitare Livefyre per la pagina ereditando una configurazione cloud Livefyre da una pagina padre o aggiungendo la configurazione direttamente alla pagina. Per informazioni su come includere i servizi cloud nel sito, consultate la vostra implementazione.
 
@@ -141,13 +144,13 @@ In Livefyre Studio è possibile configurare e modificare solo un componente Live
 
 ## Utilizzo di Livefyre con AEM Assets {#use-livefyre-with-aem-assets}
 
-### Richiesta di diritti e importazione di UGC in AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
+### Richiesta di diritti e importazione di UGC negli AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
 
-Puoi importare contenuti generati dagli utenti di Twitter e Instagram (UGC) da Livefyre Studio a Risorse AEM tramite UGC Importer. Dopo aver selezionato il contenuto da importare, è necessario richiedere i diritti al contenuto prima di completare l&#39;importazione.
+Potete importare contenuti generati dagli utenti di Twitter e Instagram (UGC) da Livefyre Studio ai AEM Assets mediante l’Importazione UGC. Dopo aver selezionato il contenuto da importare, è necessario richiedere i diritti al contenuto prima di completare l&#39;importazione.
 
 >[!NOTE]
 >
->Prima di utilizzare le risorse per importare UGC, è necessario configurare gli account Social Account e Rights Request in Livefyre Studio. Consultate [Impostazione: Rights Request](https://marketing.adobe.com/resources/help/en_US/livefyre/c_how_requesting_rights_works.html) for more information.
+>Prima di utilizzare le risorse per importare UGC, è necessario configurare gli account Social Account e Rights Request in Livefyre Studio. Consultate [Impostazione: Rights Request](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
 Per importare UGC in AEM Assets:
 
@@ -173,15 +176,16 @@ Per importare UGC in AEM Assets:
 
    * **Richiedete manualmente i diritti** per ricevere un messaggio che possa essere copiato e incollato e inviato manualmente ai proprietari dei contenuti tramite Instagram.
    * **Attribuire manualmente i diritti** di contenuto per ignorare i diritti per singole risorse.
+
    >[!NOTE]
    >
-   >A causa di aggiornamenti che influiscono sull&#39;aggregazione di contenuto da account utente non business, non è più possibile pubblicare commenti per conto dell&#39;utente o controllare automaticamente la presenza di risposte dall&#39;autore. [Fai clic qui per saperne di più](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
+   >A causa di aggiornamenti che influiscono sull&#39;aggregazione di contenuto da account utente non business, non è più possibile pubblicare commenti per conto dell&#39;utente o controllare automaticamente la presenza di risposte da parte dell&#39;autore. [Fai clic qui per saperne di più](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
    ![livefyre-aem-import-ugc3-6-4](assets/livefyre-aem-import-ugc3-6-4.png)
 
    Per Twitter:
 
-   * **Message Author** per inviare un messaggio al proprietario del contenuto in cui chiede i diritti alla risorsa.
+   * **Message Author** per inviare un messaggio al proprietario del contenuto in cui chiede i diritti per la risorsa.
    * **Attribuire manualmente i diritti** di contenuto per ignorare i diritti per singole risorse.
 
 
@@ -197,7 +201,7 @@ Per importare UGC in AEM Assets:
 
 1. Fate clic su **Fine** nell’angolo in alto a destra per completare il flusso di lavoro Richiesta diritti.
 
-   Potete visualizzare lo stato di una richiesta di diritti in sospeso per una risorsa in Livefyre Studio. Se il contenuto è in attesa di una richiesta di diritti, la risorsa non verrà visualizzata in Risorse AEM finché non verranno concessi i diritti. Quando viene concessa una richiesta di diritti, la risorsa viene visualizzata automaticamente in Risorse AEM.
+   Potete visualizzare lo stato di una richiesta di diritti in sospeso per una risorsa in Livefyre Studio. Se il contenuto è in attesa di una richiesta di diritti, la risorsa non verrà visualizzata in AEM Assets finché non verranno concessi i diritti. La risorsa viene visualizzata automaticamente nei AEM Assets quando viene concessa una richiesta di diritti.
 
    Per Instagram, dovete tenere traccia della risposta del proprietario del contenuto e concedere manualmente i diritti se gli sono stati concessi i diritti per il contenuto.
 
@@ -207,7 +211,7 @@ Per importare UGC in AEM Assets:
 
 Gli utenti di AEM Commerce possono integrare facilmente il catalogo di prodotti esistente in Livefyre per attirare l&#39;utente nelle app di visualizzazione di Livefyre.
 
-Dopo aver importato il catalogo prodotti, i prodotti vengono visualizzati in tempo reale nell’istanza Livefyre. Se modificate o eliminate elementi nel catalogo prodotti di AEM Commerce, le modifiche vengono aggiornate automaticamente in LiveCycle.
+Dopo l&#39;importazione del catalogo prodotti, i prodotti vengono visualizzati in tempo reale nell&#39;istanza Livefyre. Se modificate o eliminate elementi nel catalogo prodotti di AEM Commerce, le modifiche vengono aggiornate automaticamente in LiveCycle.
 
 1. Accertati che nell’istanza di AEM sia installato il pacchetto Livefyre più recente.
 1. Dalla home page di AEM, andate ad **AEM Commerce**.
@@ -220,7 +224,7 @@ Dopo aver importato il catalogo prodotti, i prodotti vengono visualizzati in tem
 
 ## Matrice di supporto di AEM per le app Livefyre {#aem-support-matrix-for-livefyre-apps}
 
-| App Livefyre | AEM 6.1 | AEM 6.2 | AEM 6.3 | AEM 6.4 |
+| App Livefyre | AEM 6.1 | AEM 6.2 | AEM 6.3 | AEM 6.4   |
 |---|---|---|---|---|
 | Carosello | X | X | X | X |
 | Chat | X | X | X | X |
