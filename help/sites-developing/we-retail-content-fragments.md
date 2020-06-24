@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
+source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
 
 I frammenti di contenuto consentono di creare contenuti versatili per i canali e varianti (eventualmente specifiche per i canali). **We.Retail** (come disponibile in un’istanza out-of-the-box di AEM) fornisce come esempio di base il frammento Surf **Artico in Lofoten** . Questo dimostra che:
 
-* I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici.
+* I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici.
 
    * Consultate [Dove trovare le risorse di frammenti di contenuto in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -37,6 +40,7 @@ Per la documentazione completa sulla creazione, la gestione, l’utilizzo e lo s
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
+
 >
 >
 I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -57,13 +61,13 @@ tra cui Surf **artico in Lofoten**, un frammento con le relative risorse visive:
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Qui è possibile [modificare e gestire](/help/assets/content-fragments.md) il frammento utilizzando le schede (pannello a sinistra):
+Qui è possibile [modificare e gestire](/help/assets/content-fragments/content-fragments.md) il frammento utilizzando le schede (pannello a sinistra):
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variazioni](/help/assets/content-fragments-variations.md)**tra cui[Markdown](/help/assets/content-fragments-markdown.md)
-* **[Contenuto associato](/help/assets/content-fragments-assoc-content.md)**
-* **[Metadati](/help/assets/content-fragments-metadata.md)**
+* **[Variazioni](/help/assets/content-fragments/content-fragments-variations.md)**tra cui[Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Metadati](/help/assets/content-fragments/content-fragments-metadata.md)**
 
 ![cf-46](assets/cf-46.png)
 
@@ -85,7 +89,7 @@ Ad esempio, il **Surf artico nel frammento di contenuto Lofoten** è indicato ne
 
 Per ulteriori dettagli, consulta:
 
-* [Utilizzo dei frammenti di contenuto](/help/assets/content-fragments.md)
+* [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 
    * Scopri come creare, modificare e gestire le risorse Frammento di contenuto.
 
