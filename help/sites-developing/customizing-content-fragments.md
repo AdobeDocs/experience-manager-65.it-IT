@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+workflow-type: tm+mt
+source-wordcount: '2749'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 Un frammento di contenuto estende una risorsa standard; vedere:
 
-* [Creazione e gestione di frammenti](/help/assets/content-fragments.md) di contenuto e creazione di [pagine con frammenti](/help/sites-authoring/content-fragments.md) di contenuto per ulteriori informazioni sui frammenti di contenuto.
+* [Creazione e gestione di frammenti](/help/assets/content-fragments/content-fragments.md) di contenuto e creazione di [pagine con frammenti](/help/sites-authoring/content-fragments.md) di contenuto per ulteriori informazioni sui frammenti di contenuto.
 
 * [Gestione delle risorse](/help/assets/managing-assets-touch-ui.md) e [personalizzazione ed estensione delle risorse](/help/assets/extending-assets.md) per ulteriori informazioni sulle risorse standard.
 
 ## Architettura {#architecture}
 
-Le [parti](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) costitutive di base di un frammento di contenuto sono:
+Le [parti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) costitutive di base di un frammento di contenuto sono:
 
 * Un Frammento *Di Contenuto,*
 * costituito da uno o più *elementi* di contenuto,
@@ -36,7 +39,7 @@ A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
 
 >[!CAUTION]
 >
->[Per la creazione di tutti i frammenti è ora consigliabile utilizzare modelli](/help/assets/content-fragments-models.md) di frammenti di contenuto.
+>[Per la creazione di tutti i frammenti è ora consigliabile utilizzare modelli](/help/assets/content-fragments/content-fragments-models.md) di frammenti di contenuto.
 >
 >I modelli di frammento di contenuto vengono utilizzati per tutti gli esempi in We.Retail.
 
@@ -58,11 +61,11 @@ A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
    * Il modello viene copiato nel frammento al momento della creazione; pertanto, ulteriori modifiche al modello non si rifletteranno sui frammenti esistenti.
    * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
    * [I modelli](/help/sites-developing/content-fragment-templates.md) di frammento di contenuto funzionano in modo diverso rispetto ad altri meccanismi di modellazione all’interno dell’ecosistema AEM (ad esempio, modelli di pagina, ecc.). Devono pertanto essere considerati separatamente.
-   * Se basato su un modello, il tipo MIME del contenuto è gestito sul contenuto effettivo; ciò significa che ogni elemento e ogni variante possono avere un tipo MIME diverso.
+   * Quando si basa su un modello, il tipo MIME del contenuto è gestito sul contenuto effettivo; ciò significa che ogni elemento e ogni variante possono avere un tipo MIME diverso.
 
 ### Integrazione con le risorse {#integration-with-assets}
 
-Content Fragment Management (CFM) fa parte di AEM Assets come segue:
+Content Fragment Management (CFM) fa parte dei AEM Assets come:
 
 * I frammenti di contenuto sono risorse.
 * Utilizzano la funzionalità Risorse esistente.
@@ -79,7 +82,8 @@ I frammenti di contenuto con contenuto strutturato (ovvero basato su un modello 
    * I dati dell&#39;elemento vengono memorizzati sotto il nodo secondario principale:
       `jcr:content/data/master`
 
-   * Le varianti sono memorizzate in un nodo secondario che contiene il nome della variante:ad esempio `jcr:content/data/myvariation`
+   * Le varianti sono memorizzate in un nodo secondario che contiene il nome della variante:
+ad esempio `jcr:content/data/myvariation`
 
    * I dati di ciascun elemento vengono memorizzati nel rispettivo nodo secondario come proprietà con il nome dell&#39;elemento:
 Ad esempio, il contenuto dell&#39;elemento `text` viene memorizzato come proprietà `text` in `jcr:content/data/master`
@@ -110,7 +114,7 @@ Come per le risorse standard, un frammento di contenuto è memorizzato in:
 
 #### Autorizzazioni risorsa {#asset-permissions}
 
-Per ulteriori dettagli, vedere Frammento di [contenuto - Considerazioni](/help/assets/content-fragments-delete.md)sull&#39;eliminazione.
+Per ulteriori dettagli, vedere Frammento di [contenuto - Considerazioni](/help/assets/content-fragments/content-fragments-delete.md)sull&#39;eliminazione.
 
 #### Integrazione delle funzionalità {#feature-integration}
 
@@ -135,7 +139,7 @@ Per ulteriori dettagli, vedere Frammento di [contenuto - Considerazioni](/help/a
    * Qui il componente permette di inserire altre risorse (immagini, ecc.) tra i paragrafi del frammento a cui viene fatto riferimento.
    * Per il contenuto intermedio è necessario:
 
-      * essere consapevole della possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non ha alcuna relazione fissa con il paragrafo a cui è posizionato accanto, inserendo un nuovo paragrafo (nell’editor dei frammenti di contenuto) prima che la posizione del contenuto intermedio possa perdere la posizione relativa
+      * essere a conoscenza della possibilità di riferimenti instabili; il contenuto intermedio (aggiunto durante l’authoring di una pagina) non ha alcuna relazione fissa con il paragrafo a cui è posizionato accanto, inserendo un nuovo paragrafo (nell’editor dei frammenti di contenuto) prima che la posizione del contenuto intermedio possa perdere la posizione relativa
       * prendete in considerazione i parametri aggiuntivi (come i filtri di variazione e paragrafo) per evitare falsi positivi nei risultati di ricerca
 
 >[!NOTE]
@@ -160,7 +164,7 @@ I parametri per questo possono essere configurati nella console [](/help/sites-d
 
 >[!NOTE]
 >
->Nessuna mappatura diretta tra proprietà e tipo di componente.
+>Non esiste una mappatura diretta tra proprietà e tipo di componente.
 >
 >AEM acquisisce semplicemente la prima proprietà che si trova su un paragrafo. Quindi dovreste scegliere le proprietà con attenzione.
 
@@ -179,7 +183,7 @@ Esistono ancora alcune linee guida da seguire per garantire che il componente si
 
 * Se viene eseguito il rendering del frammento per `displayMode` == `singleText` (implicitamente o esplicitamente), vengono visualizzate le seguenti proprietà aggiuntive:
 
-   * `paragraphScope` Definisce se deve essere eseguito il rendering di tutti i paragrafi o solo di un intervallo di paragrafi (valori: `all` rispetto a `range`)
+   * `paragraphScope` Definisce se deve essere eseguito il rendering di tutti i paragrafi, o solo di un intervallo di paragrafi (valori: `all` vs `range`)
 
    * if `paragraphScope` == `range` la proprietà `paragraphRange` definisce l&#39;intervallo di paragrafi da sottoporre a rendering
 
@@ -208,7 +212,7 @@ I frammenti di contenuto possono essere integrati con:
          vs
 
          `/content/dam/<path>/de/<to>/<fragment>`
-   * Oltre ai percorsi basati su regole, non esiste un&#39;ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; sono gestiti come due frammenti separati, anche se l&#39;interfaccia utente fornisce i mezzi per spostarsi tra le varianti di lingua.
+   * Oltre ai percorsi basati su regole, non esiste un&#39;ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; sono gestiti come due frammenti separati, anche se l’interfaccia utente fornisce i mezzi per spostarsi tra le varianti di lingua.
    >[!NOTE]
    >
    >Il flusso di lavoro di traduzione di AEM funziona con `/content`:
@@ -226,7 +230,7 @@ I frammenti di contenuto possono essere integrati con:
 
       `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      può essere esteso se necessario.
+      può essere esteso, se necessario.
 
    * Il modulo schema corrispondente è integrato con l&#39;editor frammento.
 
@@ -256,7 +260,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    Questa interfaccia rappresenta:
 
-   * modello di frammento di contenuto o modello di frammento di contenuto da cui creare un frammento di contenuto,
+   * un modello di frammento di contenuto o un modello di frammento di contenuto da cui creare un frammento di contenuto,
    * e (dopo la creazione) le informazioni strutturali di tale frammento
    Queste informazioni possono includere:
 
@@ -308,7 +312,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Dati degli elementi di accesso (vedere `ContentElement`)
    * Elenca le varianti definite per il frammento
    * Creare nuove varianti a livello globale
-   * Gestisci contenuto associato:
+   * Gestire il contenuto associato:
 
       * Elenca raccolte
       * Aggiungere raccolte
@@ -347,7 +351,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
 ### Adattamento - Utilizzo di adaptTo() {#adapting-using-adaptto}
 
-È possibile modificare:
+È possibile adattare quanto segue:
 
 * `ContentFragment` può essere adattato a:
 
@@ -462,7 +466,7 @@ Le azioni possibili sono:
 
 * Uscire da una pagina
 
-   * Se è presente una sessione di modifica e le modifiche non sono state mantenute, viene visualizzata una finestra di dialogo di conferma modale per informare l’utente del contenuto potenzialmente perso e consentire loro di restare sulla pagina.
+   * Se è presente una sessione di modifica e le modifiche non sono state persistenti, viene visualizzata una finestra di dialogo di conferma modale per informare l’utente del contenuto potenzialmente perso e consentire loro di restare sulla pagina.
 
 ## Esempi {#examples}
 
@@ -472,7 +476,7 @@ A tal fine, potete adattare la risorsa che rappresenta l&#39;API a:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Esempio:
+Ad esempio:
 
 ```java
 // first, get the resource
@@ -490,7 +494,7 @@ Per creare un nuovo frammento di contenuto a livello di programmazione, è neces
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 
-Esempio:
+Ad esempio:
 
 ```java
 Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -500,7 +504,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Esempio: Specifica dell&#39;intervallo di salvataggio automatico {#example-specifying-the-auto-save-interval}
 
-L&#39;intervallo di salvataggio automatico (in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
+L’intervallo di salvataggio automatico (in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
 
 * Nodo: `<*conf-root*>/settings/dam/cfm/jcr:content`
 * Nome proprietà: `autoSaveInterval`
