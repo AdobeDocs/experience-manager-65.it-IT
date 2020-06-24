@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 65%
 
 ---
 
@@ -73,10 +76,10 @@ Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferim
 
 ## Editor e frammenti di contenuto {#content-fragments-amp-editor}
 
-* Nuova barra [Annotazioni](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) nell’Editor frammento di contenuto per lasciare commenti generali e visualizzare i commenti all’interno del testo (anche nella barra Timeline)
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
-* Aggiunta di [commenti/annotazioni](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) selezionando il testo nell’editor di testo avanzato (visualizzazione a schermo intero)
-* [Confronto tra le versioni](/help/assets/content-fragments-managing.md#comparing-fragment-versions) di un frammento di contenuto affiancate mediante la barra Riferimento
+* Nuova barra [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) nell’Editor frammento di contenuto per lasciare commenti generali e visualizzare i commenti all’interno del testo (anche nella barra Timeline)
+* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* Aggiunta di [commenti/annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) selezionando il testo nell’editor di testo avanzato (visualizzazione a schermo intero)
+* [Confronto tra le versioni](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) di un frammento di contenuto affiancate mediante la barra Riferimento
 * Il rapporto di download delle risorse ora mostra i relativi frammenti di contenuto
 * Aggiunta del [supporto per i frammenti di contenuto all’API HTTP delle risorse](/help/assets/assets-api-content-fragments.md) tramite /api.json. Sono disponibili API per creare, aggiornare, leggere ed eliminare frammenti di contenuto.
 
@@ -108,17 +111,17 @@ Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferim
 
 * Il codice JavaScript del livello dati ContextHub e del motore delle regole lato client è stato aggiornato per utilizzare jQuery 3 per impostazione predefinita.
 
-## AEM e Adobe Target {#aem-amp-adobe-target}
+## AEM e  Adobe Target {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
 >at.js 2.x non è supportato da AEM al momento della release AEM 6.5. Utilizzare la versione più recente di at.js 1.x
 
-* L’integrazione di Adobe Target consente ora di utilizzare l’API standard di Target. Le versioni precedenti di AEM utilizzano l’API HTTP di Target Classic, che ora è obsoleta.
+* L’integrazione di Adobe Target consente ora di utilizzare l’API standard di Target. Le versioni precedenti di AEM utilizzano l’API HTTP Target Classic, che ora è obsoleta.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
 * `at.js` è ora inclusa la versione 1.5.0. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
-## AEM e Adobe Analytics {#aem-amp-adobe-analytics}
+## AEM e Adobe  Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 è incluso. Adobe consiglia di passare all&#39;implementazione `AppMeasurement.js`
 * `AppMeasurement.js` La versione 1.8.0 è inclusa. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
