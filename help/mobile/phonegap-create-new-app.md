@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 1%
 
 ---
 
@@ -23,25 +26,25 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Le app AEM Mobile si basano su un modello che definisce una struttura e proprietà di pagina. Potete configurare le seguenti proprietà dell’applicazione:
 
-* **** Titolo: Titolo dell’applicazione.
-* **** Percorso di destinazione: Posizione nella directory archivio in cui è memorizzata l’applicazione. Lasciate l&#39;impostazione predefinita per creare un percorso basato sul nome dell&#39;app.
+* **Titolo:** Titolo dell’applicazione.
+* **Percorso di destinazione:** Posizione nella directory archivio in cui è memorizzata l’applicazione. Lasciate l&#39;impostazione predefinita per creare un percorso basato sul nome dell&#39;app.
 
-* **** Nome: Il valore predefinito è il valore della proprietà Title con la rimozione di spazi. Il nome viene utilizzato in AEM per fare riferimento all’applicazione, ad esempio per il nodo del repository che rappresenta l’applicazione.
-* **** Descrizione: Descrizione dell&#39;applicazione.
-* **** URL server: L&#39;URL che fornisce contenuto Over-the-Air (OTA) si aggiorna all&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (proveniente dal servizio esternalizzatore). Nota: questa deve essere un&#39;istanza del server di pubblicazione anziché un autore, che richiede l&#39;autenticazione.
+* **Nome:** Il valore predefinito è il valore della proprietà Title con la rimozione di spazi. Il nome viene utilizzato in AEM per fare riferimento all’applicazione, ad esempio per il nodo del repository che rappresenta l’applicazione.
+* **Descrizione:** Una descrizione dell&#39;applicazione.
+* **URL server:** L&#39;URL che fornisce contenuto Over-the-Air (OTA) si aggiorna all&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (proveniente dal servizio esternalizzatore). Nota: questa deve essere un&#39;istanza del server di pubblicazione anziché un autore, che richiede l&#39;autenticazione.
 
-Potete anche fornire un file immagine da usare come miniatura dell&#39;applicazione, selezionare la configurazione PhoneGap Build da utilizzare e selezionare la configurazione di analisi per app mobili da utilizzare. Questa immagine viene utilizzata solo come miniatura per rappresentare l’applicazione mobile nella console delle app mobili in Experience Manager.
+Potete anche fornire un file immagine da usare come miniatura dell&#39;applicazione, selezionare la configurazione PhoneGap Build da utilizzare e selezionare la configurazione di analisi per app mobili da utilizzare. Questa immagine viene utilizzata solo come miniatura per rappresentare l’applicazione mobile nella console delle app mobili  Experience Manager.
 
 Sono presenti schede aggiuntive (e facoltative) per creare il servizio cloud e integrare il plug-in SDK di Adobe Mobile Services nell&#39;app.
 
 * Build: Fai clic su Gestione configurazioni e configura il servizio build build build build build build build build.phonegap.com qui. Dal menu a discesa potrete selezionare il nuovo servizio cloud PhoneGap build.
-* Analisi: Fai clic su Gestione configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) . Dal menu a discesa potrete selezionare il nuovo Mobile Service da integrare nell&#39;app mobile.
+*  Analytics: Fai clic su Gestione configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) . Dal menu a discesa potrete selezionare il nuovo Mobile Service da integrare nell&#39;app mobile.
 
 ## Utilizzo dei modelli di app {#using-app-templates}
 
-I modelli di app forniscono un modo semplice per sfruttare i progetti esistenti creati dagli sviluppatori, utilizzati per creare nuove app in AEM.
+I modelli di app forniscono un modo semplice per sfruttare i progetti esistenti creati dagli sviluppatori, utilizzati per la creazione di nuove app in AEM.
 
-Che cos&#39;è un modello di app? Può essere considerata una raccolta di modelli di pagina e componenti che rappresentano una linea di base o una base di un&#39;app.
+Che cos&#39;è un modello di app? Può essere considerato come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o una base di un&#39;app.
 Quando crei una nuova app basata sul modello di un&#39;altra app, riceverai un&#39;app con un punto di partenza rappresentativo dell&#39;app da cui è stata creata.
 
 Per utilizzare questa funzione, è necessario disporre di un modello di app mobile esistente (o di un&#39;app installata con un modello di app).
@@ -73,7 +76,7 @@ Per ulteriori informazioni su altri ruoli di authoring, consulta le seguenti ris
 * [Importare un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
-## Additional Resources {#additional-resources}
+## Risorse aggiuntive {#additional-resources}
 
 Per informazioni su ruoli e responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
 
