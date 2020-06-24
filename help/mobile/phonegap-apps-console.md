@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '2638'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Il processo di sviluppo delle applicazioni AEM Mobile riconosce che gli utenti c
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
-In questa pagina vengono visualizzate informazioni su come eseguire le attività di marketing. Per informazioni sulle attività degli sviluppatori, vedere Creazione di applicazioni PhoneGap.
+In questa pagina vengono visualizzate informazioni su come eseguire le attività di marketing. Per informazioni sulle attività per gli sviluppatori, vedere Creazione di applicazioni PhoneGap.
 
 ## La struttura delle applicazioni mobili {#the-structure-of-mobile-applications}
 
@@ -47,14 +50,14 @@ La pagina principale è memorizzata sotto la proprietà Percorso di destinazione
 
 Le prime pagine figlie della pagina principale sono le varianti di lingua dell&#39;applicazione. Il nome di ogni pagina è la lingua per la quale viene creata l’applicazione. Ad esempio, Inglese è il nome della variante inglese dell&#39;applicazione.
 
-**** Nota: Il modello predefinito di PhoneGap crea solo un&#39;applicazione inglese. Lo sviluppatore può modificare il progetto in modo da creare più varianti di lingua.
+**Nota:** Il modello predefinito di PhoneGap crea solo un&#39;applicazione inglese. Lo sviluppatore può modificare il progetto in modo da creare più varianti di lingua.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
 La pagina relativa alla lingua ha due scopi:
 
 * Il contenuto della pagina è la pagina spash per la variante della lingua dell&#39;applicazione.
-* Le proprietà della pagina controllano diversi aspetti di progettazione dell&#39;applicazione, ad esempio l&#39;URL da utilizzare per richiedere aggiornamenti di contenuto, e informazioni sulla connessione alla build cloud e l&#39;integrazione con Adobe Analytics Services.
+* Le proprietà della pagina controllano diversi aspetti di progettazione dell&#39;applicazione, ad esempio l&#39;URL da utilizzare per richiedere aggiornamenti di contenuto, e informazioni sulla connessione alla build cloud e l&#39;integrazione con Adobe  Analytics Services.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -66,19 +69,19 @@ Quando l&#39;applicazione viene aperta, viene visualizzata la pagina principale,
 
 Le applicazioni mobili si basano su un modello che definisce una struttura e proprietà di pagina. Potete configurare le seguenti proprietà dell’applicazione:
 
-* **** Titolo: Titolo dell’applicazione.
-* **** Percorso di destinazione: Posizione nella directory archivio in cui è memorizzata l’applicazione. Lasciate l&#39;impostazione predefinita per creare un percorso basato sul nome dell&#39;app.
+* **Titolo:** Titolo dell’applicazione.
+* **Percorso di destinazione:** Posizione nella directory archivio in cui è memorizzata l’applicazione. Lasciate l&#39;impostazione predefinita per creare un percorso basato sul nome dell&#39;app.
 
-* **** Nome: Il valore predefinito è il valore della proprietà Title con la rimozione di spazi. Il nome viene utilizzato in CQ per fare riferimento all’applicazione, ad esempio per il nodo del repository che rappresenta l’applicazione.
-* **** Descrizione: Descrizione dell&#39;applicazione.
-* **** URL server: L&#39;URL che fornisce contenuto Over-the-Air (OTA) si aggiorna all&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (proveniente dal servizio esternalizzatore). Nota: questa deve essere un&#39;istanza del server di pubblicazione anziché un autore, che richiede l&#39;autenticazione.
+* **Nome:** Il valore predefinito è il valore della proprietà Title con la rimozione di spazi. Il nome viene utilizzato in CQ per fare riferimento all’applicazione, ad esempio per il nodo del repository che rappresenta l’applicazione.
+* **Descrizione:** Una descrizione dell&#39;applicazione.
+* **URL server:** L&#39;URL che fornisce contenuto Over-the-Air (OTA) si aggiorna all&#39;applicazione. Il valore predefinito è l’URL del server di pubblicazione dell’istanza utilizzata per creare un’applicazione (proveniente dal servizio esternalizzatore). Nota: questa deve essere un&#39;istanza del server di pubblicazione anziché un autore, che richiede l&#39;autenticazione.
 
-Potete anche fornire un file immagine da usare come miniatura dell&#39;applicazione, selezionare la configurazione PhoneGap Build da utilizzare e selezionare la configurazione di analisi per app mobili da utilizzare. Questa immagine viene utilizzata solo come miniatura per rappresentare l’applicazione mobile nella console delle app mobili in Experience Manager.
+Potete anche fornire un file immagine da usare come miniatura dell&#39;applicazione, selezionare la configurazione PhoneGap Build da utilizzare e selezionare la configurazione di analisi per app mobili da utilizzare. Questa immagine viene utilizzata solo come miniatura per rappresentare l’applicazione mobile nella console delle app mobili  Experience Manager.
 
 Sono presenti schede aggiuntive (e facoltative) per creare il servizio cloud e integrare il plug-in SDK di Adobe Mobile Services nell&#39;app.
 
 * Build: Fai clic su Gestione configurazioni e configura il servizio build build build build build build build build.phonegap.com qui. Dal menu a discesa potrete selezionare il nuovo servizio cloud PhoneGap build.
-* Analisi: Fai clic su Gestione configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) . Dal menu a discesa potrete selezionare il nuovo Mobile Service da integrare nell&#39;app mobile.
+*  Analytics: Fai clic su Gestione configurazioni e configura il servizio cloud [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) . Dal menu a discesa potrete selezionare il nuovo Mobile Service da integrare nell&#39;app mobile.
 
 >[!NOTE]
 >
@@ -96,12 +99,12 @@ La procedura seguente utilizza l’interfaccia utente touch per creare un’appl
 
    Per creare una configurazione di build PhoneGap, fate clic su Gestisci configurazioni.
 
-1. (Facoltativo) Se utilizzate SiteCatalyst per monitorare l&#39;attività dell&#39;applicazione, nella scheda Analytics selezionate la configurazione da utilizzare.
+1. (Facoltativo) Se utilizzate SiteCatalyst per monitorare l&#39;attività dell&#39;applicazione, nella scheda Analytics  selezionate la configurazione da utilizzare.
 
    Per creare una configurazione per app mobile, fai clic su Gestisci configurazioni.
 
 1. (Facoltativo) Per fornire un&#39;icona dell&#39;applicazione, fare clic sul pulsante Sfoglia, selezionare il file immagine dal file system in uso e fare clic su Apri.
-1. Fate clic su Crea.
+1. Fai clic su Crea.
 
 ### Modifica delle proprietà di un&#39;applicazione mobile {#changing-the-properties-of-a-mobile-application}
 
@@ -114,7 +117,7 @@ Dopo aver creato un’applicazione mobile, potete modificare le proprietà.
 
    ![](do-not-localize/chlimage_1-8.png)
 
-1. Per modificare i valori delle proprietà, fare clic o toccare l&#39;icona Modifica.
+1. Per modificare i valori delle proprietà, fate clic o toccate l&#39;icona Modifica.
 
    ![](do-not-localize/chlimage_1-9.png)
 
@@ -129,17 +132,17 @@ Dopo aver creato un’applicazione mobile, potete modificare le proprietà.
 
    ![](do-not-localize/chlimage_1-11.png)
 
-1. Per modificare i valori delle proprietà, fare clic o toccare l&#39;icona Modifica.
+1. Per modificare i valori delle proprietà, fate clic o toccate l&#39;icona Modifica.
 
    ![](do-not-localize/chlimage_1-12.png)
 
-1. Configura le proprietà nelle schede Base, Avanzate, Genera e Analytics, quindi tocca o fai clic sull&#39;icona Fine.
+1. Configurate le proprietà nelle schede Base, Avanzate, Genera e  Analytics, quindi toccate o fate clic sull&#39;icona Fine.
 
    ![](do-not-localize/chlimage_1-13.png)
 
 ### Creazione e modifica del contenuto di un’applicazione mobile {#authoring-the-content-of-a-mobile-application}
 
-Dopo aver creato l’applicazione mobile, aggiungete il contenuto utilizzato come interfaccia utente dell’applicazione.
+Dopo aver creato l’applicazione per dispositivi mobili, aggiungete il contenuto utilizzato come interfaccia utente dell’applicazione.
 
 1. Nella barra laterale, fate clic o toccate App.
 1. Tocca o fai clic sull’applicazione, quindi tocca o fai clic su Inglese.
@@ -150,7 +153,7 @@ Dopo aver creato l’applicazione mobile, aggiungete il contenuto utilizzato com
 La cache di sincronizzazione dei contenuti nell’istanza di pubblicazione di AEM viene utilizzata come archivio del contenuto per le applicazioni mobili:
 
 * Il contenuto nella cache Content Sync è incluso nell&#39;applicazione quando gli sviluppatori compilano l&#39;applicazione.
-* Il contenuto della cache è disponibile per le applicazioni mobili installate per aggiornare il contenuto dell&#39;applicazione.
+* Il contenuto presente nella cache è disponibile per le applicazioni mobili installate per aggiornare il contenuto dell&#39;applicazione.
 
 Le applicazioni mobili includono un comando Aggiornamenti che scarica e installa il contenuto aggiornato dell&#39;applicazione. Quando un&#39;istanza di applicazione invia una richiesta di aggiornamento, Content Sync determina quale contenuto è cambiato dall&#39;ultima volta che l&#39;applicazione è stata aggiornata o installata e fornisce il nuovo contenuto.
 
@@ -171,7 +174,7 @@ Effettuate la seguente procedura nell’istanza in cui desiderate aggiornare la 
 
 Questa funzione è disponibile con App 6.1 Feature Pack 2 e fornisce un modo semplice per sfruttare i modelli di app esistenti per la creazione di nuove app in AEM.
 
-Che cos&#39;è un modello di app? Può essere considerata una raccolta di modelli di pagina e componenti che rappresentano una linea di base o una base di un&#39;app.
+Che cos&#39;è un modello di app? Può essere considerato come una raccolta di modelli di pagina e componenti che rappresentano una linea di base o una base di un&#39;app.
 Quando crei una nuova app basata sul modello di un&#39;altra app, riceverai un&#39;app con un punto di partenza rappresentativo dell&#39;app da cui è stata creata.
 
 Per utilizzare questa funzione, è necessario disporre di un modello di app mobile esistente (o di un&#39;app installata con un modello di app).
@@ -265,7 +268,7 @@ Contiene un pulsante Indietro. Il sistema paragrafo consente di aggiungere compo
 
 Quando si utilizza l&#39;applicazione, la pagina News è disponibile dal carosello sulla pagina inglese.
 
-### La pagina Informazioni su noi - App mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### La pagina Informazioni sugli Stati Uniti - App mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
 La pagina Informazioni su di noi contiene diversi componenti Riga a due colonne. Ogni colonna contiene un componente Immagine o Testo. I componenti sono modificabili e il sistema di paragrafi consente di aggiungere componenti.
 
@@ -273,7 +276,7 @@ Quando si utilizza l’applicazione, la pagina Informazioni su di noi è disponi
 
 ### Pagina Locations - Geometrixx Mobile App {#the-locations-page-geometrixx-mobile-app}
 
-La pagina Posizioni contiene un componente Posizioni.
+La pagina Locations (Posizioni) contiene un componente Locations (Posizioni).
 
 Quando si utilizza l&#39;applicazione, la pagina Locations (Posizioni) è disponibile dall&#39;elenco dei menu nella pagina in lingua inglese.
 
@@ -293,9 +296,9 @@ Le immagini vengono visualizzate nel carosello per le pagine associate a un’im
 
 Configurare il comportamento del carosello:
 
-* Velocità di riproduzione: Tempo in millisecondi impiegato per visualizzare ciascuna immagine prima di visualizzare l’immagine successiva.
+* Velocità di riproduzione: Tempo, in millisecondi, entro il quale ogni immagine viene visualizzata prima della visualizzazione dell’immagine successiva.
 * Tempo di transizione: La durata in millisecondi dell&#39;animazione per le transizioni di immagine.
-* Stile comandi: Tipo di controlli per lo spostamento tra immagini.
+* Stile comandi: Tipo di controlli per lo spostamento tra le immagini.
 
 **scheda Proprietà elenco**
 
