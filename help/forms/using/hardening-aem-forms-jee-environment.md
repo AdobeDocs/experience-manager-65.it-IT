@@ -9,10 +9,10 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
 workflow-type: tm+mt
-source-wordcount: '7445'
-ht-degree: 1%
+source-wordcount: '7603'
+ht-degree: 0%
 
 ---
 
@@ -188,7 +188,26 @@ Per eseguire il server applicazione in cui sono distribuiti AEM Forms su JEE, ut
    * Rifiuta accesso localmente
    * Accedi come servizio (dovrebbe essere già impostato)
 
-1. Assegnare al nuovo account utente le autorizzazioni di lettura ed esecuzione, scrittura, modifica, elenco dei contenuti delle cartelle e lettura per completare i AEM Forms nella directory di installazione JEE e nella directory Global Document Storage (GDS). La posizione della directory GDS viene configurata manualmente durante il processo di installazione dei AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server applicazione nella directory principale [/server/]tipo[/svcnative/DocumentStorage]JBoss.
+1. Assegnate al nuovo account utente autorizzazioni di modifica nelle seguenti directory:
+   * **Directory** Global Document Storage (GDS): La posizione della directory GDS viene configurata manualmente durante il processo di installazione dei AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server dell&#39;applicazione in `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Directory** CRX-Repository: Il percorso predefinito è `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms directory** temporanee:
+      * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
+      * (AIX, Linux o Solaris) Directory principale dell&#39;utente registratoNei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
+      * (Linux) /var/tmp o /usr/tmp
+      * (AIX) /tmp o /usr/tmp
+      * (Solaris) /var/tmp o /usr/tmp
+1. Assegnate al nuovo account utente autorizzazioni di scrittura sulle seguenti directory:
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+
+   >[!NOTE]
+   >
+   > Il percorso di installazione predefinito di JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/
+
 1. Avviate il server applicazione.
 
 **Disattivazione del servlet di avvio di Configuration Manager**
@@ -357,7 +376,7 @@ In Oracle, l&#39;account del database utilizzato richiede solo i privilegi CONNE
 1. In Centro modifiche, fate clic su **Blocca e modifica**.
 1. In Struttura dominio, fare clic su *[base_domain]* > **Servizi** > **JDBC** > **Origini** dati e, nel riquadro a destra, fare clic su **IDP_DS**.
 1. Nella schermata successiva, nella scheda **Configurazione** , fare clic sulla scheda Pool **di** connessioni e, nella casella **Proprietà** , digitare `integratedSecurity=true`.
-1. In Struttura dominio, fare clic su **[base_dominio]** > **Servizi** > **JDBC** > **Origini** dati e, nel riquadro a destra, fare clic su **RM_DS**.
+1. In Struttura dominio, fare clic su **[base_domain]** > **Servizi** > **JDBC** > **Origini** dati e, nel riquadro a destra, fare clic su **RM_DS**.
 1. Nella schermata successiva, nella scheda **Configurazione** , fare clic sulla scheda Pool **di** connessioni e, nella casella **Proprietà** , digitare `integratedSecurity=true`.
 1. Aggiungete il file sqljdbc_auth.dll al percorso del sistema Windows sul computer su cui è in esecuzione il server dell&#39;applicazione. Il file sqljdbc_auth.dll si trova con l&#39;installazione del driver Microsoft SQL JDBC 6.2.1.0.
 1. Impostare la protezione per SQL Server dalla modalità **mista** solo **a Autenticazione** Windows.
@@ -977,7 +996,26 @@ Per impostazione predefinita, i AEM Forms sull&#39;installazione chiavi in mano 
    * Rifiuta accesso in locale
    * Accedi come servizio (dovrebbe essere già impostato)
 
-1. Assegnare al nuovo account utente le autorizzazioni di lettura ed esecuzione, scrittura, modifica, elenco dei contenuti delle cartelle e lettura per completare i AEM Forms nella directory di installazione JEE e nella directory Global Document Storage (GDS). La posizione della directory GDS viene configurata manualmente durante il processo di installazione dei AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server applicazione nella directory principale [/server/]tipo[/svcnative/DocumentStorage]JBoss.
+1. Assegnate al nuovo account utente autorizzazioni di modifica nelle seguenti directory:
+   * **Directory** Global Document Storage (GDS): La posizione della directory GDS viene configurata manualmente durante il processo di installazione dei AEM Forms. Se l&#39;impostazione della posizione rimane vuota durante l&#39;installazione, per impostazione predefinita la posizione corrisponde a una directory nell&#39;installazione del server dell&#39;applicazione in `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Directory** CRX-Repository: Il percorso predefinito è `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms directory** temporanee:
+      * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
+      * (AIX, Linux o Solaris) Directory principale dell&#39;utente registratoNei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
+      * (Linux) /var/tmp o /usr/tmp
+      * (AIX) /tmp o /usr/tmp
+      * (Solaris) /var/tmp o /usr/tmp
+1. Assegnate al nuovo account utente autorizzazioni di scrittura sulle seguenti directory:
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+
+   >[!NOTE]
+   >
+   > Il percorso di installazione predefinito di JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/.
+
 
 1. Avviate il servizio server applicazione.
 
