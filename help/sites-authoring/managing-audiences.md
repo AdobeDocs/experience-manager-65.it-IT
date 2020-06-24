@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 68%
 
 ---
 
@@ -50,7 +53,7 @@ Per creare un segmento ContextHub nella console Pubblico:
 
    >[!NOTE]
    >
-   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
+   >Per ordinare l’elenco modificato in base all’ordine decrescente, tocca o fai clic su **Modificato**, così da visualizzare i tipi di audiences appena creati.
 
 Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consulta la documentazione [Configurazione della segmentazione con ContextHub](/help/sites-administering/segmentation.md).
 
@@ -64,7 +67,7 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 >[!NOTE]
 >
->If you do not see **Create Target Audience **in the **Create** menu, you do not have the necessary permissions to create an audience. You need write permissions under **/etc/segmentation** to be able to create audiences. Per impostazione predefinita, gli autori dei contenuti del gruppo dispongono di autorizzazioni di scrittura.
+>If you do not see **Create Target Audience **in the **Create** menu, you do not have the necessary permissions to create an audience. You need write permissions under **/etc/segmentation** to be able to create audiences. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
 
 Per creare un pubblico di Adobe Target:
 
@@ -78,7 +81,7 @@ Per creare un pubblico di Adobe Target:
 
 1. Nella finestra di dialogo **Configurazione Adobe Target**, seleziona la configurazione di destinazione, quindi tocca o fai clic su **OK**.
 1. Nell&#39;area della prima regola, tocca o fai clic sul tipo di attributo e inserisci tutte le informazioni sull&#39;attributo nei campi disponibili. Una volta terminato, fai clic sul segno di spunta a destra dell&#39;attributo per salvarlo. Consulta [Attributi e relative opzioni](#attributes-and-their-options) per informazioni su tutti gli attributi.
-1. Fai clic su **Aggiungi regola** per aggiungere un&#39;altra regola. Immetti tutte le regole in base alle esigenze. Le regole vengono combinate con l&#39;operatore booleano E, il che significa che il pubblico deve soddisfare tutti i requisiti di ogni regola per essere idoneo per un&#39;attività.
+1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore booleano AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Tocca o fai clic su **Avanti**.
 1. Inserisci un nome per il pubblico e poi tocca o fai clic su **Salva**.
 1. Tap or click **Save**. La nuovo pubblico viene inserito nell’elenco dei tipi di pubblico.
@@ -89,13 +92,13 @@ Per creare un pubblico di Adobe Target:
 
 | **Attributo** | **Descrizione** | **Per ulteriori informazioni** |
 |---|---|---|
-| **Mobile** | Consente di eseguire il targeting dei dispositivi mobili in base a parametri quali dispositivo mobile, tipo di dispositivo, fornitore del dispositivo, dimensioni dello schermo (in pixel) e altro ancora. | Consulta la documentazione [di](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) Mobile in Adobe Target. |
-| **Personalizzata** | I parametri personalizzati sono parametri mbox. Se passi dei parametri mbox alle mbox o se utilizzi la funzione targetPageParams, tali parametri vengono visualizzati qui per poter essere utilizzati nei tipi di pubblico. | Consultate la documentazione [sui parametri](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) personalizzati in Adobe Target. |
+| **Mobile** | Dispositivi mobili Target basati su parametri quali dispositivo mobile, tipo di dispositivo, fornitore del dispositivo, dimensioni dello schermo (in pixel) e altro ancora. | Consulta la documentazione [](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile in  Adobe Target. |
+| **Personalizzata** | I parametri personalizzati sono parametri mbox. Se passi dei parametri mbox alle mbox o se utilizzi la funzione targetPageParams, tali parametri vengono visualizzati qui per poter essere utilizzati nei tipi di pubblico. | Consultate la documentazione [Parametri](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) personalizzati in  Adobe Target. |
 | **Sistema operativo** | Potete eseguire il targeting dei visitatori che utilizzano un determinato sistema operativo. | Individua utenti che usano Linux, Macintosh, o Windows. |
-| **Pagine del sito** | Esegue il targeting dei visitatori che si trovano su una pagina specifica o che dispongono di un parametro mbox specifico. | Consulta la documentazione [Pagine](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) del sito in Adobe Target. |
-| **Browser** | Potete eseguire il targeting degli utenti che utilizzano un browser specifico o opzioni specifiche del browser quando visitano la pagina. | Consultate [Documentazione sulle opzioni](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)del browser in Adobe Target. |
-| **Profilo visitatore** | Esegue il targeting dei visitatori che soddisfano parametri di profilo specifici. | Consulta la documentazione [sul profilo del](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) visitatore in Adobe Target. |
-| **Sorgenti di traffico** | Esegue il targeting dei visitatori in base al motore di ricerca o alla pagina di destinazione che li rimanda al sito. | Consulta la documentazione [Origini di](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) traffico in Adobe Target. |
+| **Pagine del sito** | Visitatori Target che si trovano su una pagina specifica o che dispongono di un parametro mbox specifico. | Consultate la documentazione [Pagine](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) del sito  Adobe Target. |
+| **Browser** | Potete eseguire il targeting degli utenti che utilizzano un browser specifico o opzioni specifiche del browser quando visitano la pagina. | Consultate [Documentazione sulle opzioni](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)del browser in  Adobe Target. |
+| **Profilo visitatore** | Visitatori Target che soddisfano parametri di profilo specifici. | Consulta la documentazione [sul profilo del](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) visitatore  Adobe Target. |
+| **Sorgenti di traffico** | Visitatori Target basati sul motore di ricerca o sulla pagina di destinazione che li rimanda al sito. | Consulta la documentazione [Origini](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) traffico in  Adobe Target. |
 
 ## Modifica di un pubblico nella console Pubblico {#modifying-an-audience-in-the-audiences-console}
 
