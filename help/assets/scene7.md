@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2862'
 ht-degree: 26%
 
 ---
@@ -180,13 +180,13 @@ Il componente **[!UICONTROL Immagine]** classica di Dynamic Media consente di ag
 
 **[!UICONTROL Nitidezza]** - Selezionate la modalità di nitidezza dell’immagine. La regolazione della nitidezza è descritta in dettaglio in [Best practice sui predefiniti per immagini](/help/assets/managing-image-presets.md#image-preset-options) e [Best practice sulla nitidezza](/help/assets/assets/s7_sharpening_images.pdf).
 
-**[!UICONTROL Modificatori]** URL - Potete modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. Tali situazioni vengono descritte in [Predefiniti per immagini](/help/assets/managing-image-presets.md) e nella [Guida ai comandi](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL Modificatori]** URL - Potete modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. Tali situazioni vengono descritte in [Predefiniti per immagini](/help/assets/managing-image-presets.md) e nella [Guida ai comandi](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Punti di interruzione]** - Se il sito Web è reattivo, è necessario regolare i punti di interruzione. I punti di interruzione devono essere separati da virgole ( , ).
 
 ### Modello immagini {#image-template}
 
-[I modelli](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) immagine classici di Dynamic Media sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, dove il contenuto e le proprietà erano parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagini]** consente di importare immagini e modificare il testo in modo dinamico in AEM. Inoltre, è possibile configurare il componente **[!UICONTROL Modello immagini]** in modo che utilizzi valori contestuali ClientContext, affinché ogni utente possa avere un’esperienza personalizzata dell’immagine.
+[I modelli](https://docs.adobe.com/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) immagine classici di Dynamic Media sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, dove il contenuto e le proprietà erano parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagini]** consente di importare immagini e modificare il testo in modo dinamico in AEM. Inoltre, è possibile configurare il componente **[!UICONTROL Modello immagini]** in modo che utilizzi valori contestuali ClientContext, affinché ogni utente possa avere un’esperienza personalizzata dell’immagine.
 
 Tap **[!UICONTROL Edit]** to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) as well as other settings described in this section.
 
@@ -285,7 +285,6 @@ Sfogliate le risorse di Dynamic Media Classic selezionando **[!UICONTROL Dynamic
 >
 >* Il browser dei contenuti di Dynamic Media Classic carica circa 100 risorse e le ordina per nome.
 >* Se è impostato un server di anteprima protetto, il browser utilizzerà tale server di anteprima per eseguire il rendering delle miniature e delle risorse.
-
 >
 
 
@@ -338,7 +337,6 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
    >
 * Durante la ricerca di video, si cerca una singola rappresentazione. I risultati restituiscono la rappresentazione originale (solo &amp;ast;.mp4) e la rappresentazione codificata.
 >* Quando eseguite una ricerca in un set video adattivo, dovete cercare nella cartella e in tutte le sottocartelle, ma solo se avete aggiunto una parola chiave alla ricerca. Se non hai aggiunto una parola chiave, AEM non cerca nelle sottocartelle.
-
 >
 
 
