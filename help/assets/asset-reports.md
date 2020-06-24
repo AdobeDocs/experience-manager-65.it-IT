@@ -3,9 +3,9 @@ title: Rapporti sull’utilizzo e la condivisione delle risorse digitali.
 description: Rapporti sulle risorse [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c41666353a8ee8d39285c99327680ab12377d61
+source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1049'
 ht-degree: 10%
 
 ---
@@ -63,7 +63,7 @@ Per generare i rapporti, accertati che:
 
    >[!NOTE]
    >
-   >Il rapporto [!UICONTROL Scarica] mostra i dettagli solo delle risorse selezionate singolarmente e scaricate. Tuttavia, non include i dettagli delle risorse che si trovavano all’interno di una cartella scaricata.
+   >Il rapporto [!UICONTROL Scarica] mostra i dettagli solo delle risorse che vengono selezionate singolarmente e scaricate o scaricate mediante la funzione Azione rapida. Tuttavia, non include i dettagli delle risorse che si trovavano all’interno di una cartella scaricata.
 1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Potete specificare un percorso diverso.
 
    ![Pagina per aggiungere i dettagli del rapporto](assets/report_configuration.png)
