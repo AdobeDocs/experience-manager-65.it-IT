@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
 source-wordcount: '4345'
 ht-degree: 2%
@@ -56,9 +56,10 @@ Consultate [(Facoltativo) Creazione di un predefinito](/help/assets/managing-vie
 Consultate [Caricamento di un banner](#uploading-an-image-banner)immagine.
 
 1. **Aggiunta di punti attivi a un banner** di immagini - Aggiungete uno o più punti attivi a un banner di immagini e associateli a un’azione come un collegamento ipertestuale, una visualizzazione rapida o un frammento esperienza. Dopo aver aggiunto i punti di attivazione, questa attività verrà completata pubblicando l&#39;immagine interattiva.
-Consultate [Aggiunta di punti attivi a un banner](#adding-hotspots-to-an-image-banner)immagine.
-Consultate [Anteprima delle immagini](#optional-previewing-interactive-images) interattive - Facoltativo. Se necessario, potete visualizzare una rappresentazione del banner acquistabile e verificarne l’interattività.
-Consultate [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md) per informazioni dettagliate sulla pubblicazione di risorse di immagini interattive.
+
+   * Consultate [Aggiunta di punti attivi a un banner](#adding-hotspots-to-an-image-banner)immagine.
+   * Consultate [Anteprima delle immagini](#optional-previewing-interactive-images) interattive - Facoltativo. Se necessario, potete visualizzare una rappresentazione del banner acquistabile e verificarne l’interattività.
+   * Consultate [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md) per informazioni dettagliate sulla pubblicazione di risorse di immagini interattive.
 
 1. **Aggiunta di un’immagine interattiva al sito Web o al sito Web in AEM** Se utilizzate AEM Sites, eCommerce AEM o entrambi, potete aggiungere l’immagine interattiva direttamente a una pagina Web in AEM trascinando il componente Supporto interattivo sulla pagina. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Se utilizzate AEM Assets e Dynamic Media standalone, dovete copiare il codice da incorporare sul vostro sito Web e quindi integrarlo con la visualizzazione Quickview esistente. Consultate [Integrazione di un’immagine interattiva con il sito Web](#integrating-an-interactive-image-with-your-website).
