@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+workflow-type: tm+mt
+source-wordcount: '2458'
+ht-degree: 7%
 
 ---
 
@@ -29,11 +32,11 @@ Una volta creato un sito community, il contenuto può essere aggiunto alle pagin
 
 ## Console Funzioni community {#community-functions-console}
 
-Nell’ambiente di authoring, per accedere alla console delle funzioni della community:
+Per accedere alla console delle funzioni per la community nell’ambiente di authoring:
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Funzioni **** community.
+* Passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Funzioni **** community.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Funzioni pre-costruite {#pre-built-functions}
 
@@ -43,13 +46,13 @@ Un modello di sito community fornisce la struttura di un sito community, inclusi
 
 ### Impostazioni titolo e URL {#title-and-url-settings}
 
-**Title **e **URL **sono proprietà comuni a tutte le funzioni della community.
+**Titolo** e **URL** sono proprietà comuni a tutte le funzioni della community.
 
 Quando una funzione community viene aggiunta a un modello di sito community o quando si [modifica](/help/communities/sites-console.md#modifying-site-properties) la struttura di un sito community, si apre la finestra di dialogo della funzione in modo che sia possibile configurare il Titolo e l&#39;URL.
 
 #### Dettagli funzione di configurazione {#configuration-function-details}
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![chlimage_1-380](assets/chlimage_1-380.png)
 
 * **Titolo**
 
@@ -68,7 +71,7 @@ Quindi, l’URL della pagina è https://localhost:4503/content/sites/engage/en/p
 
 e il collegamento del menu per la pagina viene visualizzato come segue:
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![chlimage_1-381](assets/chlimage_1-381.png)
 
 ### Funzione Flusso attività {#activity-stream-function}
 
@@ -78,7 +81,7 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
 #### Dettagli funzione di configurazione {#configuration-function-details-1}
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-382](assets/chlimage_1-382.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -108,7 +111,7 @@ La funzione blog è una pagina con un componente [](/help/communities/blog-featu
 
 Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![chlimage_1-383](assets/chlimage_1-383.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -134,7 +137,7 @@ La funzione Calendario è una pagina con un componente [](/help/communities/cale
 
 Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -199,7 +202,7 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
 #### Dettagli funzione di configurazione {#configuration-function-details-2}
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -227,7 +230,7 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
 >[!CAUTION]
 >
->La funzione dei gruppi non deve *essere la *prima e l&#39;unica* funzione nella struttura del sito o in un modello di sito community.
+>La funzione dei gruppi *non* deve essere né la *prima né l&#39;unica* funzione nella struttura di un sito o in un modello di sito community.
 >
 >Qualsiasi altra funzione, come la funzione [](#page-function)page, deve essere inclusa ed elencata per prima.
 
@@ -242,7 +245,7 @@ Dal [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack)d
 
 Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![chlimage_1-386](assets/chlimage_1-386.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -265,7 +268,7 @@ La funzione ideazione è una pagina con un componente [Ideazione](/help/communit
 
 Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti di Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-387](assets/chlimage_1-387.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -293,7 +296,7 @@ La funzione della classifica è una pagina con un componente [](/help/communitie
 
 Quando viene aggiunta a un modello, si apre la finestra di dialogo seguente, che specifica i nomi predefiniti di Titolo e URL, nonché le impostazioni di visualizzazione predefinite per il modello:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-388](assets/chlimage_1-388.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -324,7 +327,7 @@ La funzione QnA è una pagina con un componente [](/help/communities/working-wit
 
 Quando viene aggiunta a un modello, la configurazione consente restrizioni ai membri privilegiati:
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Impostazioni titolo e URL](#title-and-url-settings)
 
@@ -352,11 +355,11 @@ Quando viene aggiunta a un modello, la configurazione consente restrizioni ai me
 
 Per creare una funzione community, selezionate l&#39; `Create Community Function` icona nella parte superiore della console Funzioni community. Possono essere create più funzioni basate sulla stessa Blueprint AEM e successivamente personalizzate in modo univoco aprendo la modalità di modifica dell’autore.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![chlimage_1-390](assets/chlimage_1-390.png)
 
 ### Nome funzione community {#community-function-name}
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![chlimage_1-391](assets/chlimage_1-391.png)
 
 Nel pannello Nome funzione community, sono configurati un nome, una descrizione e se la funzione è abilitata o disabilitata:
 
@@ -374,7 +377,7 @@ Nel pannello Nome funzione community, sono configurati un nome, una descrizione 
 
 ### Blueprint AEM {#aem-blueprint}
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![chlimage_1-392](assets/chlimage_1-392.png)
 
 Sul `AEM Blueprint` pannello è possibile selezionare il modello che è l&#39;implementazione sottostante della funzione comunitaria.
 
@@ -384,15 +387,15 @@ Poiché la funzione community è implementata come [live copy](/help/sites-admin
 
 Vedere anche [Multi Site Manager](/help/sites-administering/msm.md).
 
-### Miniatura    {#thumbnail}
+### Miniatura  {#thumbnail}
 
-![chlimage_1-120](assets/chlimage_1-120.png)
+![chlimage_1-393](assets/chlimage_1-393.png)
 
 Nel pannello Miniature, è possibile caricare un’immagine da visualizzare nella console [Funzioni](#community-functions-console)community.
 
 ## Apri funzione community {#open-community-function}
 
-![chlimage_1-121](assets/chlimage_1-121.png)
+![chlimage_1-394](assets/chlimage_1-394.png)
 
 Selezionate l’ `Open Community Function` icona per passare alla modalità di modifica dell’autore per creare il contenuto della pagina e modificare la configurazione dei componenti della funzione.
 
@@ -408,6 +411,6 @@ Per i dettagli di configurazione, visitate [Community Components](/help/communit
 
 ## Funzione modifica per community {#edit-community-function}
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![chlimage_1-395](assets/chlimage_1-395.png)
 
 Selezionare l&#39; `Edit Community Function` icona per modificare le proprietà della funzione utilizzando gli stessi pannelli utilizzati per [creare una funzione](#create-community-function)community, compresa l&#39;attivazione o disattivazione della funzione.
