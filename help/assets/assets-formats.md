@@ -3,9 +3,9 @@ title: Formati di file supportati per l'elaborazione in [!DNL Adobe Experience M
 description: Formati di file e tipi MIME supportati [!DNL Assets] and [!DNL Dynamic Media] da e funzionalità supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f47f5e45c64e3cbbe0b68d449a5ef8d4b7dd7f38
+source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1647'
 ht-degree: 10%
 
 ---
@@ -74,7 +74,7 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 
 È supportato il seguente elenco di formati 3D.
 
-Consultate [Utilizzo delle risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
+Consultate anche [Utilizzo delle risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
 
 | Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
