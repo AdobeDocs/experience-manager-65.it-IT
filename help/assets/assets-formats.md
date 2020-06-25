@@ -3,9 +3,9 @@ title: Formati di file supportati per l'elaborazione in [!DNL Adobe Experience M
 description: Formati di file e tipi MIME supportati [!DNL Assets] and [!DNL Dynamic Media] da e funzionalità supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: f47f5e45c64e3cbbe0b68d449a5ef8d4b7dd7f38
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1646'
 ht-degree: 10%
 
 ---
@@ -69,6 +69,21 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 * Per visualizzare [!DNL Dynamic Media] l’anteprima e generare rappresentazioni dinamiche per i file EPS, consultate Formati di file [Adobe Illustrator (AI), Postscript (EPS) e PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Per i file EPS, la funzione di writeback dei metadati è supportata in PostScript Document Structuring Convention (PS-Adobe) versione 3.0 o successiva.
+
+## Formati 3D supportati {#support-3d-formats}
+
+È supportato il seguente elenco di formati 3D.
+
+Consultate [Utilizzo delle risorse 3D in Dynamic Media.](/help/assets/assets-3d.md)
+
+| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione Dynamic Media |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## Formati immagine raster non supportati in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
