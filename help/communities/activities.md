@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 5%
 
 ---
 
@@ -41,17 +44,17 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando sono incluse le librerie [lato client](/help/communities/essentials-activities.md#essentials-for-client-side) richieste, verrà visualizzato il `Activity Streams` componente:
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### Configurazione dei flussi di attività {#configuring-activity-streams}
 
 Selezionate il `Activity Streams` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![chlimage_1-494](assets/chlimage_1-494.png)
 
 Nella scheda Attività **** utente, specificate le attività da visualizzare:
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![attività degli utenti](assets/user-activities.png)
 
 * **Numero massimo di attività**
 
@@ -77,22 +80,22 @@ Nella scheda Attività **** utente, specificate le attività da visualizzare:
 
 I componenti devono essere configurati per abilitare quanto segue. Le funzioni che consentono di seguire sono [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filibreria](/help/communities/file-library.md)[](/help/communities/comments.md), commenti.
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![chlimage_1-5](assets/chlimage_1-5.png)
 
 Il pulsante **Segui** consente di seguire le voci come attività, [notifiche](/help/communities/notifications.md)o [iscrizioni](/help/communities/subscriptions.md). Ogni volta che si seleziona il pulsante **Segui** , è possibile attivare o disattivare una selezione. La `Email Subscriptions` selezione è presente solo se configurata.
 
 Se è selezionato un metodo di seguito, il testo del pulsante diventa **Seguente**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
 
-Verrà visualizzato il pulsante **Segui**
+Verrà visualizzato il pulsante **Segui** :
 
-* quando si visualizza il profilo di un altro membro
-* in una pagina delle funzioni principali, ad esempio forum, QnA e blog
+* Visualizzando il profilo di un altro membro.
+* In una pagina delle funzioni principali, ad esempio forum, QnA e blog.
 
-   * segue tutte le attività per quella caratteristica generale
+   * Segue tutta l&#39;attività per quella funzione generale.
 
-* per un post specifico, ad esempio un argomento forum, una domanda QnA o un articolo blog
+* Per un post specifico, ad esempio un argomento del forum, una domanda QnA o un articolo di blog.
 
-   * segue tutte le attività per quella specifica voce
+   * Segue tutta l&#39;attività per quella voce specifica.
 
 ### Informazioni aggiuntive {#additional-information}
 
