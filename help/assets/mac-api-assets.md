@@ -3,7 +3,7 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -77,17 +77,17 @@ In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
 
 L&#39;API HTTP Assets include le seguenti funzionalità:
 
-* Recuperate un elenco di cartelle.
-* Creare una cartella.
-* Creare una risorsa.
-* Aggiorna binario risorsa.
-* Aggiornare i metadati delle risorse.
-* Creare una rappresentazione di una risorsa.
-* Aggiornare una rappresentazione di una risorsa.
-* Create un commento sulla risorsa.
-* Copiate una cartella o una risorsa.
-* Spostate una cartella o una risorsa.
-* Eliminate una cartella, una risorsa o una rappresentazione.
+* [Recuperate un elenco](#retrieve-a-folder-listing)di cartelle.
+* [Creare una cartella](#create-a-folder).
+* [Creare una risorsa](#create-an-asset).
+* [Aggiorna binario](#update-asset-binary)risorse.
+* [Aggiornare i metadati](#update-asset-metadata)delle risorse.
+* [Creare una rappresentazione](#create-an-asset-rendition)di una risorsa.
+* [Aggiornare una rappresentazione](#update-an-asset-rendition)di una risorsa.
+* [Create un commento](#create-an-asset-comment)sulla risorsa.
+* [Copiate una cartella o una risorsa](#copy-a-folder-or-asset).
+* [Spostate una cartella o una risorsa](#move-a-folder-or-asset).
+* [Eliminate una cartella, una risorsa o una rappresentazione](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
