@@ -10,15 +10,15 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '7951'
+source-wordcount: '7912'
 ht-degree: 1%
 
 ---
 
 
-# Configurazione di Dynamic Media - Modalità ibrida{#configuring-dynamic-media-hybrid-mode}
+# Configurazione di Dynamic Media - Modalità ibrida {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media-Hybrid deve essere abilitato e configurato per l&#39;uso. A seconda del caso d’uso, Dynamic Media dispone di diverse configurazioni [](#supported-dynamic-media-configurations)supportate.
 
@@ -40,7 +40,6 @@ Ulteriori informazioni sull’utilizzo dei [video](/help/assets/video.md) in Dyn
 >
 >* `s7access.log`
 >* `ImageServing.log`
-
 >
 >
 Sono documentati in [Monitoraggio e manutenzione dell’istanza](/help/sites-deploying/monitoring-and-maintaining.md)AEM.
@@ -177,10 +176,8 @@ Per abilitare il supporto dinamico, è necessario abilitare la modalità di esec
    >Per risolvere i problemi con Dynamic Media, consulta i seguenti file di registro nella `crx-quickstart/logs/` directory:
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - Il registro ImageServer fornisce informazioni statistiche e analitiche utilizzate per analizzare il comportamento del processo ImageServer interno.
-
    Esempio di nome file di registro di Image Server: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - Il registro di accesso s7access registra ogni richiesta inoltrata ad Dynamic Media attraverso `/is/image` e `/is/content`.
-
    Questi registri vengono utilizzati solo quando Dynamic Media è abilitato. non sono inclusi nel pacchetto **Scarica completo** generato dalla `system/console/status-Bundlelist` pagina; quando chiamate l&#39;Assistenza clienti in caso di problemi con Dynamic Media, aggiungete entrambi i registri al problema.
 
 ### Se AEM è stato installato su una porta o un percorso contestuale diverso... {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -286,7 +283,6 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
    * Nel campo Password **[!UICONTROL file]** KeyStore, immettere la password del file KeyStore. Questa **non** è la password KeyStore creata al passaggio 5, ma è la password del file KeyStore fornita da Adobe nel messaggio e-mail di benvenuto inviato al momento del provisioning. Se non hai ricevuto una password per il file KeyStore, contatta l’Assistenza clienti Adobe.
    * Nel campo Password **[!UICONTROL chiave]** privata, immettete la password della chiave privata (potrebbe essere la stessa password della chiave privata fornita nel passaggio precedente). Adobe fornisce la password della chiave privata nel messaggio e-mail di benvenuto che vi è stato inviato durante il provisioning. Se non hai ricevuto una password per la chiave privata, contatta l’Assistenza clienti Adobe.
    * Nel campo Alias **[!UICONTROL chiave]** privata, immettere l&#39;alias della chiave privata. Esempio, `*companyname*-alias`. Adobe fornisce l’alias della chiave privata nel messaggio e-mail di benvenuto che vi è stato inviato durante il provisioning. Se non hai ricevuto un alias di chiave privata, contatta l’Assistenza clienti Adobe.
-
    ![edit_settings_fordynamic-media-replica2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. Toccate **[!UICONTROL Salva e chiudi]** per salvare le modifiche a questo utente.
@@ -305,7 +301,6 @@ Per replicare le immagini nel servizio di distribuzione delle immagini Dynamic M
    * **[!UICONTROL ID]** tenant: questo valore è il nome della società/tenant che viene pubblicato nel servizio di replica. Questo valore è l&#39;ID tenant fornito da Adobe nel messaggio e-mail di benvenuto che vi è stato inviato durante il provisioning. Se non hai ricevuto questa notifica, contatta l’Assistenza clienti Adobe.
    * **[!UICONTROL Alias]** archivio chiavi - Questo valore è uguale al valore** Nuovo alias** impostato durante la generazione della chiave in [Impostazione autenticazione](#setting-up-authentication); ad esempio, `replication`. (vedere il passaggio 7 in [Impostazione dell&#39;autenticazione](#setting-up-authentication).)
    * **[!UICONTROL Password]** archivio chiavi - Si tratta della password KeyStore creata quando hai toccato **[!UICONTROL Create KeyStore.]** Adobe non fornisce questa password. Vedere il passaggio 5 della [configurazione dell&#39;autenticazione](#setting-up-authentication).
-
    L&#39;immagine seguente mostra l&#39;agente di replica con dati di esempio:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
@@ -970,7 +965,7 @@ Casi di utilizzo avanzati possono utilizzare un modificatore di configurazione m
 * `iccEmbed` - [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-Il set standard di profili colore di Adobe è disponibile solo se avete installato [Feature Pack 12445 da Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) o [Feature Pack 12445 da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) . Tutti i pacchetti di funzionalità e i service pack sono disponibili tramite [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) e [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il Feature Pack 12445 fornisce i profili colore di Adobe.
+Il set standard di profili colore Adobe è disponibile solo se è stato installato Feature Pack 12445 [da Distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) software. Tutti i pacchetti di funzioni e i service pack sono disponibili in Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software. Il Feature Pack 12445 fornisce i profili colore di Adobe.
 
 ### Installazione di Feature Pack 12445 {#installing-feature-pack}
 
@@ -978,9 +973,9 @@ Per utilizzare le funzioni di gestione del colore per i supporti dinamici, è ne
 
 **Per installare feature pack 12445**
 
-1. Andate a Condivisione [](https://www.adobeaemcloud.com/content/packageshare.html) pacchetti o Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software e scaricate `cq-6.3.0-featurepack-12445`.
+1. Andate a Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software e scaricate `cq-6.3.0-featurepack-12445`.
 
-   Consultate [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md) per ulteriori informazioni sull&#39;utilizzo di Package Share e Packages in AEM.
+   Per ulteriori informazioni sull&#39;utilizzo dei pacchetti, vedere [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md) in [!DNL Adobe Experience Manager].
 
 1. Installare il feature pack.
 
