@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 3%
 
 ---
 
@@ -33,11 +36,11 @@ Il valore della `categories`proprietà dato a questa libreria client è l&#39;id
 
 1. Fai clic su **OK**
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![chlimage_1-220](assets/chlimage_1-220.png)
 
 Nella scheda **Proprietà** del nuovo `clientlibs` nodo, immettere la proprietà **category** :
 
-* Nome : **categorie**
+* Nome : **category**
 * Tipo: **Stringa**
 * Valore: **apps.an-scf-sandbox**
 * Fate clic su **Aggiungi**
@@ -52,7 +55,7 @@ Nota: visualizzazione in anteprima del valore delle categorie con &#39;app&#39;.
 1. Enter **Name:** `js.txt`
 1. Fate clic su **Salva tutto**
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![chlimage_1-221](assets/chlimage_1-221.png)
 
 La prima riga di css.txt e js.txt identifica la posizione di base dalla quale si trovano i seguenti elenchi di file.
 
@@ -96,15 +99,15 @@ In questo caso, includendo tutti e così i clienti SCF più basilari che sono gl
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * click **OK**
+      * Fai clic su **OK**
 
 * Fate clic su **Salva tutto**
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 Questo è il modo in cui `/etc/designs/an-scf-sandbox/clientlibs` dovrebbe essere visualizzato nella directory archivio:
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ### Includi Clientlibs nel modello PlayPage {#include-clientlibs-in-playpage-template}
 
@@ -112,11 +115,11 @@ Senza includere la categoria `apps.an-scf-sandbox` ClientLibraryFolder nella pag
 
 Ad esempio, senza includere clientlibs, il componente commenti SCF non ha lo stile :
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![chlimage_1-224](assets/chlimage_1-224.png)
 
 Una volta inclusi i clientlibs apps.an-scf-sandbox, il componente dei commenti SCF appare formattato :
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 L&#39;istruzione include appartiene alla `head` sezione dello `html` script. L&#39;impostazione predefinita **`foundation head.jsp`** include uno script che può essere sovrapposto : **`headlibs.jsp`**.
 
@@ -147,7 +150,7 @@ Caricate il sito Web nel browser e verificate se lo sfondo non è blu.
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-53](assets/chlimage_1-53.png)
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### Salvataggio del lavoro fino ad ora {#saving-your-work-so-far}
 
