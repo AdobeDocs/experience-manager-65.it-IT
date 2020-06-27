@@ -1,19 +1,19 @@
 ---
 title: Facet di ricerca
-description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in Adobe Experience Manager.
+description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in  Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2517'
-ht-degree: 19%
+source-wordcount: '2523'
+ht-degree: 18%
 
 ---
 
 
 # Facet di ricerca {#search-facets}
 
-L’implementazione a livello aziendale di Risorse Adobe Experience Manager consente di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se si utilizzano solo le funzionalità di ricerca generiche di Experience Manager.
+L’implementazione a livello aziendale di  risorse di Adobe Experience Manager consente di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se utilizzate solo le funzionalità di ricerca generiche di  Experience Manager.
 
 Usate i facet di ricerca nel pannello Filtri per aggiungere maggiore granularità all’esperienza di ricerca e rendere più efficiente e versatile la funzionalità di ricerca. I facet di ricerca aggiungono più dimensioni (predicati) che consentono di eseguire ricerche più complesse. Il pannello Filtri include alcuni facet standard. Potete inoltre aggiungere facet di ricerca personalizzati.
 
@@ -80,7 +80,7 @@ Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizza
 
 ## Aggiunta di un predicato Opzioni {#adding-an-options-predicate}
 
-Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri. Potete selezionare una o più di queste opzioni nel pannello Filtri per cercare le risorse. Ad esempio, per cercare risorse in base al tipo di file, configurare le opzioni, quali Immagini, Multimedia, Documenti e Archivi, nel modulo di ricerca. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezionate l’opzione Immagini nel pannello Filtri.
+Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri. Potete selezionare una o più di queste opzioni nel pannello Filtri per cercare le risorse. Ad esempio, per cercare le risorse in base al tipo di file, configurare le opzioni, quali Immagini, Multimedia, Documenti e Archivi, nel modulo di ricerca. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezionate l’opzione Immagini nel pannello Filtri.
 
 Per mappare le opzioni sulla rispettiva proprietà, create una struttura di nodi per le opzioni e fornite il percorso del nodo principale nella proprietà Nome proprietà del predicato Opzioni. Il nodo padre deve essere di tipo `sling`: `OrderedFolder`. Le opzioni devono essere di tipo `nt:unstructured`. I nodi di opzione devono avere le proprietà `jcr:title` e `value` configurate.
 
@@ -115,7 +115,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 >Il predicato Options è un wrapper personalizzato che include i predicati delle proprietà per illustrare il comportamento descritto. Al momento non è disponibile alcun endpoint REST per supportare la funzionalità in modo nativo.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
+1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio **[!UICONTROL Tipo file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio `jcr:content/metadata/dc:format.`
 1. Effettua una delle operazioni seguenti:
@@ -164,9 +164,9 @@ Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per
 1. Andate al pannello Ricerca. Il **[!UICONTROL predicato Tag]** viene aggiunto al pannello Ricerca.
 1. Specificate i tag in base ai quali desiderate effettuare ricerche nelle risorse o selezionarli dall’elenco dei suggerimenti.
 
-   ![Suggerimenti forniti da Experience Manager quando si digita il nome del tag](assets/chlimage_1-419.png)
+   ![suggerimento fornito da Experience Manager durante la digitazione del nome del tag](assets/chlimage_1-419.png)
 
-   *Figura: Suggerimenti forniti da Experience Manager quando si digita il nome del tag.*
+   *Figura:  suggerimento fornito da Experience Manager durante la digitazione del nome del tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
@@ -193,20 +193,17 @@ Analogamente al modo in cui aggiungete un predicato Proprietà o un predicato Op
 
 ## Ripristina facet di ricerca {#restoring-default-search-facets}
 
-Per impostazione predefinita, l’icona Blocca viene visualizzata prima della Barra **[!UICONTROL di ricerca Amministratore]** risorse nella pagina **[!UICONTROL Moduli]** di ricerca. Se al modulo si aggiungono facet di ricerca per indicare che il modulo predefinito è stato modificato, l&#39;icona Blocca scompare.
+Per impostazione predefinita, prima della Barra di ricerca Amministratore ![risorse, nella pagina Moduli](assets/do-not-localize/lock_closed_icon.svg) di **[!UICONTROL ricerca viene visualizzata un’icona]** a forma di lucchetto **** chiusa. L’icona Blocca rispetto a un’opzione nella pagina Moduli di ricerca indica che le impostazioni predefinite sono intatte e non sono personalizzate. Se al modulo si aggiungono facet di ricerca per indicare che il modulo predefinito è stato modificato, l&#39;icona ![Blocca](assets/do-not-localize/lock_closed_icon.svg) chiuso scompare.
 
 ![L’icona Blocca rispetto a un’opzione nella pagina Moduli di ricerca indica che le impostazioni predefinite sono intatte e non sono personalizzate.](assets/locked_admin_rail.png)
-
-L’icona Blocca rispetto a un’opzione nella pagina Moduli di ricerca indica che le impostazioni predefinite sono intatte e non sono personalizzate.
 
 Per ripristinare il facet di ricerca predefinito, effettuare le seguenti operazioni:
 
 1. Seleziona Barra di ricerca Amministratore **[!UICONTROL risorse]** nella pagina **[!UICONTROL Moduli]** di ricerca.
-1. Fare clic su **[!UICONTROL Elimina]** nella barra degli strumenti.
-   ![deleteOutline](assets/deleteoutline.png)
+1. Fare clic su **[!UICONTROL Elimina]** ![elimina il contorno](assets/deleteoutline.png) nella barra degli strumenti.
 1. Nella finestra di dialogo di conferma, fate clic su **[!UICONTROL Elimina]** per rimuovere le modifiche personalizzate.
 
-   Dopo aver eliminato le modifiche personalizzate ai facet di ricerca, l’icona Blocca viene visualizzata nuovamente prima della **[!UICONTROL Barra di ricerca amministrazione risorse]** nella pagina **[!UICONTROL Moduli di ricerca]**.
+   After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
 ## User permissions {#user-permissions}
 
