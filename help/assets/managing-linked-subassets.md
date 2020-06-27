@@ -3,9 +3,9 @@ title: Gestire le risorse composte con riferimenti e risorse di più pagine in [
 description: Scopri come creare riferimenti a risorse digitali dall’interno [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1363'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 
 È possibile fare riferimento a risorse digitali esistenti direttamente da un [!DNL Adobe Illustrator] file.
 
-1. Utilizzando l’app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager, recuperate le risorse digitali nel file system locale. Andate alla posizione del file system della risorsa a cui desiderate fare riferimento.
+1. Utilizzando [app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)desktop Experience Manager, recuperate le risorse digitali nel file system locale. Andate alla posizione del file system della risorsa a cui desiderate fare riferimento.
 1. Trascinate la risorsa dalla cartella locale al [!DNL Illustrator] file.
 
 1. Salvate il [!DNL Illustrator] file nell&#39;unità montata o [caricatelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) nell&#39; [!DNL Experience Manager] archivio.
@@ -40,7 +40,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 
 1. Fare clic su **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti. Nella pagina [!UICONTROL Proprietà] , l’elenco dei file che fanno riferimento alla risorsa corrente viene visualizzato nella colonna **[!UICONTROL Riferimenti]** della scheda **[!UICONTROL Base]** .
 
-   ![visualizzare i riferimenti di Experience Manager Assets nella colonna Riferimenti nei dettagli delle risorse](assets/asset-references.png)
+   ![visualizzare i riferimenti di  risorse Experience Manager nella colonna Riferimenti nei dettagli della risorsa](assets/asset-references.png)
 
    *Figura: Riferimenti alle risorse nei dettagli delle risorse.*
 
@@ -91,7 +91,7 @@ La generazione di risorse secondarie è disabilitata per impostazione predefinit
 
 1. Accedete come [!DNL Experience Manager] amministratore. Accedere **[!UICONTROL a Strumenti > Flusso di lavoro > Modelli]**.
 1. Selezionate il flusso di lavoro Aggiorna risorsa **** DAM e fate clic su **[!UICONTROL Modifica]**.
-1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungete il passaggio al flusso di lavoro. Fate clic su **[!UICONTROL Sincronizza]**.
+1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungete il passaggio al flusso di lavoro. Fai clic su **[!UICONTROL Sincronizza]**.
 
 Per generare le risorse secondarie, effettuate una delle seguenti operazioni:
 
@@ -105,7 +105,7 @@ In modo specifico per i documenti di Microsoft Word, eseguite il flusso di lavor
 
 ## View subassets {#viewing-subassets}
 
-Le risorse secondarie vengono visualizzate solo se sono state generate delle risorse secondarie e sono disponibili per la risorsa multipagina selezionata. Per visualizzare le risorse secondarie generate, aprite la risorsa con più pagine. Nell’area in alto a sinistra della pagina, fate clic sull’icona ![della barra a](assets/do-not-localize/aem_leftrail_contentonly.png) sinistra e fate clic su Risorse **** secondarie dall’elenco. Quando selezionate **[!UICONTROL Risorse]** secondarie dall’elenco. In alternativa, utilizzare la scelta rapida da tastiera `alt + 5`.
+Le risorse secondarie vengono visualizzate solo se sono state generate delle risorse secondarie e sono disponibili per la risorsa multipagina selezionata. Per visualizzare le risorse secondarie generate, aprite la risorsa con più pagine. Nell’area in alto a sinistra della pagina, fate clic su ![Opzione per aprire la barra](assets/do-not-localize/aem_leftrail_contentonly.png) a sinistra, quindi fate clic su **[!UICONTROL Risorse]** secondarie dall’elenco. Quando selezionate **[!UICONTROL Risorse]** secondarie dall’elenco. In alternativa, utilizzare la scelta rapida da tastiera `alt + 5`.
 
 ![Visualizzare le risorse secondarie per una risorsa con più pagine](assets/view_subassets_simulation.gif)
 
@@ -127,15 +127,16 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 * **[!UICONTROL L’opzione Panoramica]** pagina consente di visualizzare tutte le risorse secondarie contemporaneamente.
 
-* **[!UICONTROL L&#39;opzione Timeline]** dalla barra a sinistra dopo aver fatto clic sull&#39;icona ![della barra a](assets/do-not-localize/aem_leftrail_contentonly.png) sinistra mostra il flusso di attività per il file.
+* **[!UICONTROL L&#39;opzione Timeline]** dalla barra a sinistra dopo aver fatto clic su ![Opzione per aprire la barra](assets/do-not-localize/aem_leftrail_contentonly.png) a sinistra mostra il flusso di attività per il file.
 
 ## Best practice e limitazioni {#best-practice-limitation-tips}
 
-* La generazione di risorse secondarie può richiedere molte risorse per qualsiasi implementazione di Experience Manager. Se generate risorse secondarie quando vengono caricate risorse complesse, aggiungete il passaggio nel flusso di lavoro Aggiorna risorsa DAM. Se generate risorse secondarie su richiesta, create un flusso di lavoro separato per generare le risorse secondarie. Un flusso di lavoro dedicato consente di saltare gli altri passaggi del flusso di lavoro DAM Update Asset e di salvare le risorse di calcolo.
+* La generazione di risorse secondarie può richiedere molte risorse per qualsiasi implementazione Experience Manager . Se generate risorse secondarie quando vengono caricate risorse complesse, aggiungete il passaggio nel flusso di lavoro Aggiorna risorsa DAM. Se generate risorse secondarie su richiesta, create un flusso di lavoro separato per generare le risorse secondarie. Un flusso di lavoro dedicato consente di saltare gli altri passaggi del flusso di lavoro DAM Update Asset e di salvare le risorse di calcolo.
 
 >[!MORELIKETHIS]
 >
->* [Utilizzo dell’app desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Configurare le azioni desktop in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Usa app desktop  Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Configurare le azioni desktop in  Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Creare Smart Object collegati in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Inserire elementi grafici in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+
