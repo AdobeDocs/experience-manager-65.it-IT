@@ -3,10 +3,10 @@ title: Risorse correlate
 description: Scoprite come collegare risorse digitali che condividono attributi comuni. Create anche relazioni derivate dal codice sorgente tra le risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 0%
+source-wordcount: '636'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
 ## Relate assets {#relating-assets}
 
-1. Dall’interfaccia di Experience Manager, aprite la pagina **[!UICONTROL Proprietà]** di una risorsa da correlare.
+1. Dall’interfaccia Experience Manager , aprite la pagina **[!UICONTROL Proprietà]** di una risorsa da correlare.
 
    ![aprire la pagina Proprietà di una risorsa per correlare la risorsa](assets/asset-properties-relate-assets.png)
 
@@ -36,7 +36,7 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Per mettere in relazione un’altra risorsa con la risorsa selezionata, fate clic sull’icona **[!UICONTROL Relate]** nella barra degli strumenti.
+1. Per mettere in relazione un’altra risorsa con la risorsa selezionata, fate clic su **[!UICONTROL Relate (Relazione)]** nella barra degli strumenti.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -45,13 +45,14 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
    * Per correlare il file di origine della risorsa, selezionate **[!UICONTROL Origine]** dall’elenco.
    * Per correlare un file derivato, selezionare **[!UICONTROL Derivato]** dall&#39;elenco.
    * Per creare una relazione bidirezionale tra le risorse, selezionate **[!UICONTROL Altre]** dall’elenco.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Dalla schermata **[!UICONTROL Seleziona risorsa]** , individuate la posizione della risorsa da correlare e selezionatela.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Click the **[!UICONTROL Confirm]** icon.
+1. Fate clic su **[!UICONTROL Conferma]**.
 1. Click **[!UICONTROL OK]** to close the dialog. A seconda della relazione scelta nel passaggio 3, la risorsa correlata è elencata in una categoria appropriata nella sezione **[!UICONTROL correlata]** . Ad esempio, se la risorsa correlata è il file di origine della risorsa corrente, viene elencata in **[!UICONTROL Origine]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
