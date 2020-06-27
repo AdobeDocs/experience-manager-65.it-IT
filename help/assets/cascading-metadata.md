@@ -3,7 +3,10 @@ title: Cascading metadata in [!DNL Adobe Experience Manager Assets].
 description: In questo articolo viene descritto come definire metadati a cascata per le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ Di seguito sono riportati alcuni casi d’uso per i quali potete definire metada
 * Modifica le opzioni visualizzate per un particolare campo in base al valore specificato in un altro campo.
 * Impostate il valore di metadati predefinito in un particolare campo in base al valore specificato in un altro campo.
 
-## Configurare i metadati CSS in [!DNL Experience Manager]{#configure-cascading-metadata-in-aem}
+## Configurare i metadati CSS in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Considerate uno scenario in cui visualizzare i metadati a cascata in base al tipo di risorsa selezionata. Alcuni esempi
 
@@ -52,6 +55,7 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
    * Per specificare manualmente i valori, selezionate **[!UICONTROL Aggiungi manualmente]**, quindi fate clic su **[!UICONTROL Aggiungi scelta]** e specificate il testo e il valore dell’opzione. Ad esempio, specificate i tipi di risorse Video, PDF, Word e Immagine.
 
    * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso]** JSON e fornite il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all&#39;utente.
+
    Entrambe le opzioni si escludono a vicenda. Non potete importare le opzioni da un file JSON e modificarle manualmente.
 
    ![add_choice](assets/add_choice.png)
@@ -62,7 +66,7 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    >[!NOTE]
    >
-   >Quando si aggiungono delle scelte, se si fa clic sul campo a discesa, l&#39;interfaccia risulta distorta e l&#39;icona di eliminazione delle scelte non funziona più. Non fate clic sul menu a discesa finché non salvate le modifiche. Se si verifica questo problema, salvare lo schema e aprirlo di nuovo per continuare a modificarlo.
+   >Quando si aggiungono delle scelte, se si fa clic sul campo a discesa, l&#39;interfaccia risulta distorta e l&#39;opzione di eliminazione non funziona più. Non fate clic sul menu a discesa finché non salvate le modifiche. Se si verifica questo problema, salvare lo schema e aprirlo di nuovo per continuare a modificarlo.
 
 1. (Facoltativo) Aggiungete gli altri campi richiesti. Ad esempio, formato, codec e durata per il tipo di risorsa video.
 
