@@ -3,9 +3,9 @@ title: Consente di gestire le risorse video in [!DNL Adobe Experience Manager].
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46568322e75669532734dddda91a781f45a398d4
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Ma
 
    Potete mettere in pausa o riprodurre il video solo nella vista a schede. I pulsanti [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
 
-1. Per visualizzare l&#39;anteprima del video nella pagina dei dettagli della risorsa, fate clic sull&#39;icona **[!UICONTROL Modifica]** sulla scheda.
+1. Per visualizzare l&#39;anteprima del video nella pagina dei dettagli della risorsa, fate clic su **[!UICONTROL Modifica]** nella scheda.
 
    Il video viene riprodotto nel lettore video nativo del browser. Potete riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
 
