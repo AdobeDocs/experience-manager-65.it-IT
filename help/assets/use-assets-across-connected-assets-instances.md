@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2081'
+source-wordcount: '2082'
 ht-degree: 51%
 
 ---
@@ -21,18 +21,18 @@ Gli utenti possono creare pagine Web in [!DNL Experience Manager Sites]. [!DNL E
 
 When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. Gli amministratori creano un&#39;integrazione una tantum di una distribuzione [!DNL Sites] con una distribuzione diversa (remota) di [!DNL Assets].
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulta la guida [alla migrazione delle risorse di](/help/assets/assets-migration-guide.md)Experience Manager.
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulta [guida](/help/assets/assets-migration-guide.md)alla migrazione di Experience Manager Assets.
 
 ### Prerequisiti e implementazioni supportate {#prerequisites}
 
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna implementazione.
-* Per i tipi di distribuzione di Adobe Experience Manager, uno dei criteri supportati è soddisfatto. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona con [!DNL Experience Manager] un servizio cloud. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [connesse in Experience Manager come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)cloud.
+* Per  tipi di distribuzione di Adobe Experience Manager, uno dei criteri supportati è soddisfatto. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona con [!DNL Experience Manager] un Cloud Service. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [connesse in  Experience Manager come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] come servizio Cloud | [!DNL Experience Manager] 6.5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] locale |
+   |  | [!DNL Sites] come Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] locale |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]come servizio Cloud ** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager Assets]come Cloud Service ** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6.5[!DNL Assets]su AMS ** | Supportato | Supportato | Supportato |
    | **[!DNL Experience Manager]6.5[!DNL Assets]locale ** | Non supportato | Non supportato | Non supportato |
 
@@ -105,7 +105,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. Effettuate l&#39;accesso utilizzando le credenziali dell&#39;amministratore. Cerca `Cross-Origin`. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console Web ****.
 
-   1. To create a CORS configuration for [!DNL Sites] instance, click ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] instance, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Salva la configurazione.
 
