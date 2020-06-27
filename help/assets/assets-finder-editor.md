@@ -3,9 +3,9 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2135'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ Il presente documento descrive quanto segue:
 
 ## Perché creare e configurare le pagine Editor risorse? {#why-create-and-configure-asset-editor-pages}
 
-Gestione delle risorse digitali viene utilizzata in sempre più scenari. Per passare da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di Adobe Experience Manager Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che li interessano.
+Gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di  Adobe Experience Manager Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali rilevanti per loro.
 
 Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet dove i dipendenti possono caricare le foto dalle visite alle fiere o da un centro stampa in un sito Web rivolto al pubblico. Le applicazioni incentrate sulle risorse possono anche estendersi alle soluzioni complete, inclusi carrelli commerciali, checkout e processi di verifica.
 
 La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con Risorse possono essere estese: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
 
-Un’applicazione incentrata sulle risorse in Experience Manager consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
+Un’applicazione incentrata sulle risorse in  Experience Manager consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -203,7 +203,7 @@ Quando create la pagina Editor risorse, è buona norma creare la pagina direttam
 
 Per creare una pagina Editor risorse:
 
-1. Nella scheda **Siti** Web individuate il punto in cui desiderate creare la pagina dell’editor risorse e fate clic su **Nuovo**.
+1. Nella scheda **[!UICONTROL Siti]** Web individuate il punto in cui desiderate creare la pagina dell’editor risorse e fate clic su **Nuovo**.
 1. Selezionate Editor **risorse** Geometrixx e fate clic su **Crea**. La nuova pagina viene creata e la pagina viene elencata nella scheda **Siti Web** .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -356,7 +356,7 @@ Per impostazione predefinita, è in modalità di sola lettura e gli utenti non p
 
 Se il Titolo può essere modificato, potete aggiungere un titolo e una descrizione facendo clic sulla matita per aprire la finestra Proprietà **** risorsa. Inoltre, potete attivare e disattivare la risorsa selezionando la data e l’ora.
 
-Quando gli utenti modificano il Titolo facendo clic sull’icona Matita, possono modificare il **Titolo**, la **Descrizione** e immettere **Attivato** e **Disattiva tempo** per attivare e disattivare la risorsa.
+Quando modificate il [!UICONTROL Titolo], gli utenti possono modificare il **Titolo**, la **Descrizione** e immettere **Attivato** e **Disattivato** per attivare e disattivare la risorsa.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -391,7 +391,7 @@ Sono disponibili le azioni seguenti:
 
 ## Risorse con più modifiche nella pagina Editor risorse {#multi-editing-assets-with-the-asset-editor-page}
 
-Con Experience Manager Assets puoi apportare modifiche a diverse risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
+Con  Risorse Experience Manager puoi apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
 
 * Tag
 * Metadati
@@ -405,6 +405,7 @@ Per modificare più risorse con la pagina Editor risorse:
 
    * in Windows: `Ctrl + click` ciascuna risorsa.
    * in Mac: `Cmd + click` ciascuna risorsa.
+
    Per selezionare un intervallo di risorse: fate clic sulla prima risorsa e quindi `Shift + click` sull’ultima.
 
 1. Fate clic su **Modifica metadati** nel campo **Azioni** (parte sinistra della pagina).
@@ -414,16 +415,18 @@ Per modificare più risorse con la pagina Editor risorse:
    * Un tag applicato a tutte le risorse viene visualizzato con un font normale.
    * Metadati diversi dai tag: il valore del campo viene visualizzato solo se è lo stesso per tutte le risorse selezionate.
 
-1. Fate clic su **Scarica** per scaricare un file zip contenente le risorse rappresentate originali.
-1. Fate clic sull’icona matita accanto al campo **Tag** per modificare i tag:
+1. Fate clic su **Scarica** per scaricare un file ZIP contenente le risorse rappresentazioni originali.
+1. Fate clic per modificare l’opzione tag accanto al campo **Tag** .
 
    * Un tag che non si applica a tutte le risorse, ma solo ad alcune ha uno sfondo grigio.
    * Un tag applicato a tutte le risorse ha uno sfondo bianco.
+
    Operazioni disponibili:
 
-   * Fate clic sull’icona **x** per rimuovere il tag per tutte le risorse.
-   * Fate clic sull’icona **+** per aggiungere il tag a tutte le risorse.
+   * Fate clic `x` per rimuovere il tag per tutte le risorse.
+   * Fate clic `+` per aggiungere il tag a tutte le risorse.
    * Fate clic sulla **freccia** e selezionate un tag per aggiungere un nuovo tag a tutte le risorse.
+
    Fare clic su **OK** per scrivere le modifiche al modulo. La casella accanto al campo **Tag** viene selezionata automaticamente.
 
 1. Modificare il campo Descrizione. Ad esempio, impostatelo su:
