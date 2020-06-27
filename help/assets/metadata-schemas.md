@@ -3,9 +3,9 @@ title: 'Schemi di metadati per definire il layout della pagina delle proprietà 
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2644'
 ht-degree: 7%
 
 ---
@@ -19,11 +19,11 @@ Gli schemi [!DNL Adobe Experience Manager Assets]contengono campi specifici per 
 
 Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
 
-1. Fate clic sull&#39;icona **[!UICONTROL Visualizza proprietà]** da Azioni rapide nella sezione delle risorse nella vista a schede.
+1. Fate clic sull’opzione **[!UICONTROL Visualizza proprietà]** dalle azioni rapide nella sezione delle risorse nella vista a schede.
 
    ![Azioni rapide nella sezione delle risorse](assets/chlimage_1-170.png)
 
-   In alternativa, seleziona una risorsa e fai clic sull’icona [!UICONTROL Proprietà] nella barra degli strumenti.
+   In alternativa, seleziona una risorsa e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
 
 1. Potete modificare le varie proprietà di metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
 
@@ -43,12 +43,12 @@ Per visualizzare un elenco di moduli o modelli, nell&#39; [!DNL Experience Manag
 |---|---|---|
 | [!UICONTROL impostazione predefinita] |  | Modulo schema metadati di base per le risorse. |
 |  | I seguenti moduli secondari ereditano le proprietà del modulo [!UICONTROL predefinito] : |  |
-|  | [!UICONTROL image] | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con il sottotipo TIFF.</li></ul> |
+|  | [!UICONTROL immagine] | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con il sottotipo TIFF.</li></ul> |
 |  | [!UICONTROL applicazione] | Modulo schema per risorse con tipo MIME, ad esempio `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Modulo schema per risorse con PDF di tipo secondario. |
 |  | [!UICONTROL video] | Modulo schema per risorse video con tipo MIME, ad esempio `video/avi` e `video/mp4`. |
 | [!UICONTROL collection] |  | Modulo schema per le raccolte. |
 | [!UICONTROL contentFragment] |  | [Modulo schema per frammenti](/help/sites-developing/customizing-content-fragments.md)di contenuto. |
-| [!UICONTROL forms] |  | Questo modulo schema si riferisce ad [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] |  | Questo modulo schema si riferisce a [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 <!-- 
 TBD: Add dm_video child for the default form OOTB.
@@ -68,7 +68,7 @@ Per aggiungere uno schema di metadati, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Viene visualizzata un’icona a forma di lucchetto con i modelli non modificati. Se personalizzate un modello, l’icona Blocca non viene visualizzata.
+   >Un simbolo di blocco viene visualizzato con i modelli non modificati. Se personalizzate un modello, esso non è bloccato ![blocco chiuso](assets/do-not-localize/lock_closed_icon.svg).
 
 1. Nella finestra di dialogo, specificare il titolo del modulo schema e fare clic su **[!UICONTROL Crea]** per completare il processo di creazione del modulo.
 
@@ -175,7 +175,7 @@ Per eliminare un modulo, selezionarlo e fare clic su Elimina.
 
 >[!NOTE]
 >
->* Dopo aver eliminato le modifiche personalizzate a un modulo predefinito, l&#39;icona a forma di lucchetto viene visualizzata nuovamente prima di esso nell&#39;interfaccia Schema metadati. Indica che il modulo viene ripristinato allo stato predefinito.
+>* Dopo aver eliminato le modifiche personalizzate a un modulo predefinito, il ![blocco chiuso](assets/do-not-localize/lock_closed_icon.svg) viene nuovamente visualizzato prima del modulo. Indica che il modulo viene ripristinato allo stato predefinito.
 >* Non è possibile eliminare i moduli di schema di metadati predefiniti in [!DNL Assets].
 
 
