@@ -4,9 +4,9 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2177'
 ht-degree: 13%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 # Gestire le raccolte {#managing-collections}
 
-Una raccolta è un set di risorse all&#39;interno di Risorse Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
+Una raccolta è un insieme di risorse all&#39;interno  risorse di Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
@@ -28,7 +28,7 @@ Le raccolte sono dei tipi seguenti, in base al modo in cui vengono raccolte le r
 
 ## Accedere alla console delle raccolte {#navigating-the-collections-console}
 
-Per aprire le **[!UICONTROL raccolte]**, nell&#39;interfaccia di Experience Manager passate a **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**.
+Per aprire le **[!UICONTROL raccolte]**, nell&#39;interfaccia Experience Manager , passate a **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**.
 
 ## Creare una raccolta {#creating-a-collection}
 
@@ -52,7 +52,7 @@ Potete creare una raccolta con riferimenti statici, ad esempio una raccolta con 
 
    >[!NOTE]
    >
-   >Experience Manager Assets consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
+   > Risorse Experience Manager consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
 
    Per aggiungere risorse alla raccolta, passate all&#39;interfaccia utente Risorse. Per informazioni dettagliate, consultate [Aggiungere risorse a una raccolta](#adding-assets-to-a-collection).
 
@@ -61,11 +61,11 @@ Potete creare una raccolta con riferimenti statici, ad esempio una raccolta con 
 Potete trascinare le risorse dall&#39;interfaccia utente delle risorse a una raccolta. Potete anche creare una copia di una raccolta e trascinarvi le risorse.
 
 1. Dall&#39;interfaccia utente Risorse, selezionate le risorse che desiderate aggiungere a una raccolta.
-1. Trascinate le risorse nell&#39;area **[!UICONTROL Rilascia nella raccolta]** . In alternativa, fate clic sull&#39;icona **[!UICONTROL Alla raccolta]** nella barra degli strumenti.
+1. Trascinate le risorse nell&#39;area **[!UICONTROL Rilascia nella raccolta]** . In alternativa, fare clic su **[!UICONTROL Alla raccolta]** dalla barra degli strumenti.
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-1. In the **[!UICONTROL Add To Collection]** page, click the **[!UICONTROL Create Collection]** icon from the toolbar.
+1. In the **[!UICONTROL Add To Collection]** page, click **[!UICONTROL Create Collection]** from the toolbar.
 
    If you want to add the assets to an existing collection, select it from the page, and click **[!UICONTROL Add]**. Per impostazione predefinita, è selezionata la raccolta aggiornata più di recente.
 
@@ -110,7 +110,7 @@ Per creare una raccolta dinamica, effettuate le seguenti operazioni:
 
 Potete aggiungere risorse a una raccolta contenente un elenco di risorse o cartelle a cui viene fatto riferimento. Le raccolte dinamiche utilizzano una query di ricerca per compilare le risorse. Pertanto, non è possibile applicare riferimenti statici a risorse e cartelle.
 
-1. Nell’interfaccia utente Risorse, seleziona la risorsa e fai clic sull’icona **[!UICONTROL A raccolta]** nella barra degli strumenti.
+1. Nell’interfaccia utente Risorse, seleziona la risorsa e fai clic su **[!UICONTROL Alla raccolta]** nella barra degli strumenti.
 
    ![chlimage_1-8](assets/chlimage_1-113.png)
 
@@ -124,12 +124,12 @@ Potete aggiungere risorse a una raccolta contenente un elenco di risorse o carte
 
 Le raccolte intelligenti vengono create salvando una ricerca in modo da modificarne il contenuto modificando i parametri di ricerca della ricerca [](#saved-searches)salvata.
 
-1. Nell’interfaccia utente Risorse, fai clic sull’icona di ricerca nella barra degli strumenti.
+1. Nell’interfaccia utente Risorse, fai clic sull’opzione di ricerca nella barra degli strumenti.
 
    ![chlimage_1-9](assets/chlimage_1-110.png)
 
 1. Con il cursore nella casella Omnisearch, premere il tasto Invio.
-1. Fate clic sull’icona GlobalNav per visualizzare il pannello Filtri.
+1. Nell’interfaccia  Experience Manager, aprite il pannello Filtri.
 1. Dall’elenco **[!UICONTROL Ricerche salvate]**, seleziona la raccolta avanzata da modificare. Nel pannello Ricerca sono visualizzati i filtri configurati per la ricerca salvata.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -158,13 +158,13 @@ I metadati della raccolta includono i dati sulla raccolta, compresi eventuali ta
 Potete modificare i metadati di più raccolte contemporaneamente. Questa funzionalità consente di replicare rapidamente i metadati comuni in più raccolte.
 
 1. Nella console Raccolte, selezionate due o più raccolte.
-1. Dalla barra degli strumenti, fare clic sull’icona **[!UICONTROL Proprietà]** .
+1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Proprietà]**.
 1. Nella pagina **[!UICONTROL Metadati raccolta]**, modifica i metadati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, secondo necessità.
 1. Per visualizzare le proprietà dei metadati per una raccolta specifica, deselezionate le raccolte rimanenti nell&#39;elenco delle raccolte. I campi dell&#39;editor di metadati vengono compilati con i metadati per la raccolta specifica.
 
    >[!NOTE]
    >
-   >* Nella pagina [!UICONTROL Proprietà] , potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita. Experience Manager non aggiorna i metadati delle raccolte che rimuovi.
+   >* Nella pagina [!UICONTROL Proprietà] , potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita.  Experience Manager non aggiorna i metadati delle raccolte che rimuovete.
    >* Nella parte superiore dell&#39;elenco, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per alternare tra la selezione delle raccolte e la cancellazione dell&#39;elenco.
 
 
@@ -191,20 +191,20 @@ Se cercate raccolte dal livello principale, nei risultati della ricerca vengono 
 
 Nella console Raccolte, fate clic su una raccolta per aprirla.
 
-All&#39;interno di una raccolta, la ricerca in Experience Manager è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
+All&#39;interno di una raccolta,  ricerca Experience Manager è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
 
 ## Modifica delle impostazioni della raccolta {#editing-collection-settings}
 
 Potete modificare le impostazioni della raccolta, ad esempio titolo e descrizione, o aggiungere membri a una raccolta.
 
-1. Selezionate una raccolta e fate clic sull&#39;icona **[!UICONTROL Impostazioni]** nella barra degli strumenti. In alternativa, utilizzate l&#39;azione rapida **[!UICONTROL Impostazioni]** dalla miniatura della raccolta.
+1. Selezionate una raccolta e fate clic su **[!UICONTROL Impostazioni]** nella barra degli strumenti. In alternativa, utilizzate l&#39;azione rapida **[!UICONTROL Impostazioni]** dalla miniatura della raccolta.
 1. Nella pagina **[!UICONTROL Impostazioni raccolta]**, puoi modificare le impostazioni della raccolta. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
 
 1. Per salvare le modifiche, fate clic su **[!UICONTROL Salva]**.
 
 ## Eliminare una raccolta {#deleting-a-collection}
 
-1. Dalla console Raccolte, selezionate una o più raccolte e fate clic sull&#39;icona Elimina nella barra degli strumenti.
+1. Dalla console Raccolte, selezionate una o più raccolte e fate clic su Elimina dalla barra degli strumenti.
 
 1. Nella finestra di dialogo, fare clic su **[!UICONTROL Elimina]** per confermare l’operazione di eliminazione.
 
@@ -217,7 +217,7 @@ Potete modificare le impostazioni della raccolta, ad esempio titolo e descrizion
 Quando scaricate una raccolta, viene scaricata l&#39;intera gerarchia di risorse all&#39;interno della raccolta, comprese le cartelle e le raccolte figlie.
 
 1. Dalla console Raccolte, selezionate una o più raccolte da scaricare.
-1. Dalla barra degli strumenti, fate clic sull&#39;icona di download.
+1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Scarica]**.
 1. Nella finestra di dialogo **[!UICONTROL Scarica]** , fate clic su **[!UICONTROL Scarica]**. Se desiderate scaricare i rendering delle risorse all&#39;interno della raccolta, selezionate **[!UICONTROL Rendering]**. Selezionate l&#39;opzione **[!UICONTROL E-mail]** per inviare una notifica e-mail al proprietario della raccolta.
 
    Quando selezionate una raccolta da scaricare, viene scaricata l&#39;intera gerarchia di cartelle sotto la raccolta. Per includere ciascuna raccolta scaricata (comprese le risorse nelle raccolte figlie nidificate sotto la raccolta principale) in una singola cartella, selezionate **[!UICONTROL Crea cartella separata per ciascuna risorsa]**.
@@ -256,13 +256,11 @@ La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzat
 
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
-1. Nell’interfaccia utente Risorse, fai clic sull’icona di ricerca nella barra degli strumenti.
-
-   ![chlimage_1-13](assets/chlimage_1-114.png)
+1. Nell’interfaccia utente di Assets, fai clic su Cerca ![in Chlimage_1-13](assets/chlimage_1-114.png).
 
 1. Con il cursore nel campo Omnisearch, premere il tasto Invio.
 
-1. Fate clic sull’icona GlobalNav per visualizzare il pannello Filtri.
+1. Nell’interfaccia  Experience Manager, aprite il pannello Filtri.
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
@@ -274,18 +272,14 @@ Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
 Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccolta. Se la raccolta contiene raccolte nidificate, il flusso di lavoro viene eseguito anche sulle risorse all&#39;interno delle raccolte nidificate. Tuttavia, se la raccolta e la raccolta nidificata contengono risorse duplicate, il flusso di lavoro viene eseguito una sola volta per tali risorse.
 
-1. Dalla console Raccolte, selezionate una raccolta in cui desiderate eseguire un flusso di lavoro.
-1. Fate clic sull&#39;icona GlobalNav e scegliete **[!UICONTROL Timeline]** dall&#39;elenco.
-1. From the timeline, click the Caret icon at the bottom, and then click **[!UICONTROL Start Workflow]**.
-
-   ![chlimage_1-14](assets/chlimage_1-137.png)
-
+1. Aprite **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**. Per eseguire un flusso di lavoro su una raccolta specifica, selezionatelo.
+1. Open **[!UICONTROL Timeline]** rail. Fate clic su ![chlimage_1-14](assets/chlimage_1-137.png) e fate clic su **[!UICONTROL Avvia flusso di lavoro]**.
 1. Nella sezione **[!UICONTROL Avvia flusso di lavoro]**, seleziona un modello di flusso di lavoro dall’elenco. Ad esempio, scegli il modello **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Inserite un titolo per il flusso di lavoro e fate clic su **[!UICONTROL Avvia]**.
-1. In the dialog, click **[!UICONTROL Proceed]**. Il flusso di lavoro viene eseguito su tutte le risorse della raccolta.
+1. In the dialog, click **[!UICONTROL Proceed]**. Il flusso di lavoro elabora tutte le risorse nella raccolta selezionata.
 
 >[!MORELIKETHIS]
 >
->* [Configurare le notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configurare  notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Creazione di un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
