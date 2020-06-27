@@ -3,10 +3,10 @@ title: Creazione di progetti di traduzione
 description: Scopri come creare progetti di traduzione in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 16%
+source-wordcount: '1895'
+ht-degree: 19%
 
 ---
 
@@ -151,7 +151,7 @@ Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito p
 
 1. Dall’elenco Progetto **[!UICONTROL di traduzione]** esistente, selezionate un progetto per aggiungere la risorsa per la traduzione.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Fai clic su **[!UICONTROL Crea]**. Le risorse da tradurre vengono aggiunte alla cartella di destinazione. La cartella aggiornata è elencata nella sezione **[!UICONTROL Copie per lingua]**.
 
@@ -286,7 +286,7 @@ Quando eseguite un flusso di lavoro di traduzione per aggiornare una copia per l
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Dall’ [!DNL Assets] interfaccia, selezionate una risorsa già tradotta e fate clic sull’icona **[!UICONTROL Modifica]** nella barra degli strumenti per aprire la risorsa in modalità di modifica.
+1. Dall’ [!DNL Assets] interfaccia, selezionate una risorsa già tradotta e fate clic su **[!UICONTROL Modifica]** nella barra degli strumenti per aprire la risorsa in modalità di modifica.
 1. Modificate la risorsa e salvate le modifiche.
 1. Per aggiornare la copia della lingua, eseguite i passaggi da 2 a 14 della procedura [Aggiungi al progetto](#add-to-existing-translation-project) di traduzione esistente.
 1. Fate clic sui puntini di sospensione nella parte inferiore della sezione Processo **[!UICONTROL di]** traduzione. Dall’elenco delle risorse nella pagina Processo **[!UICONTROL di]** traduzione, potete visualizzare chiaramente la posizione temporanea in cui è memorizzata la versione convertita della risorsa.
