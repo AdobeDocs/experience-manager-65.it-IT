@@ -3,17 +3,17 @@ title: Applicazione dei servizi di traduzione cloud alle cartelle
 description: Applicazione dei servizi di traduzione cloud alle cartelle
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 43%
+source-wordcount: '391'
+ht-degree: 44%
 
 ---
 
 
 # Applicazione dei servizi di traduzione cloud alle cartelle {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager consente di usufruire di servizi di traduzione basati sul cloud dal provider di traduzione preferito per garantire che le risorse vengano tradotte in base alle tue esigenze.
+ Adobe Experience Manager consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione di vostra scelta per garantire che le risorse vengano tradotte in base alle vostre esigenze.
 
 Potete applicare il servizio di traduzione cloud direttamente alla cartella delle risorse in modo che possa essere utilizzato durante i flussi di lavoro di traduzione.
 
@@ -22,12 +22,12 @@ Potete applicare il servizio di traduzione cloud direttamente alla cartella dell
 L’applicazione dei servizi di traduzione cloud direttamente nella cartella delle risorse elimina la necessità di configurare i servizi di traduzione al momento della creazione o dell’aggiornamento dei flussi di lavoro di traduzione.
 
 1. Dall’interfaccia utente di Risorse, selezionate la cartella a cui desiderate applicare i servizi di traduzione.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon to display the **[!UICONTROL Folder Properties]** page.
+1. From the toolbar, click **[!UICONTROL Properties]** to display the **[!UICONTROL Folder Properties]** page.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Vai alla scheda **[!UICONTROL Cloud Services]**.
-1. Dall’elenco Configurazioni servizio cloud, scegliete il provider di traduzione desiderato. Ad esempio, se desiderate utilizzare i servizi di traduzione di Microsoft, scegliete **[!UICONTROL Microsoft Translator]**.
+1. Dall’elenco Configurazioni Cloud Service, scegliete il provider di traduzione desiderato. Ad esempio, se desiderate utilizzare i servizi di traduzione di Microsoft, scegliete **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -42,7 +42,7 @@ L’applicazione dei servizi di traduzione cloud direttamente nella cartella del
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, procedi prima con l’installazione del connettore da Gestione pacchetti. Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](transition-cloud-services.md#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
 1. Installare il connettore da Package Manager.
-1. Fai clic sul logo Experience Manager, quindi passa a **[!UICONTROL Strumenti > Distribuzione > Servizi]** cloud.
+1. Fate clic sul logo Experience Manager  e selezionate **[!UICONTROL Strumenti > Distribuzione > Servizi]** cloud.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
