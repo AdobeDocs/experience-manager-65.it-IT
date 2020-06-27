@@ -1,25 +1,25 @@
 ---
-title: Informazioni su Risorse Adobe Experience Manager
-description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e l’offerta di risorse Adobe Experience Manager
+title: Informazioni  risorse Adobe Experience Manager
+description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e l’offerta Adobe  Experience Manager Asset
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 49%
+source-wordcount: '879'
+ht-degree: 50%
 
 ---
 
 
 # Gestione delle risorse {#administering-assets}
 
-Assets è uno strumento Digital Asset Management (DAM) completamente integrato con la piattaforma Experience Manager e consente alla tua azienda di condividere e distribuire risorse digitali. Gli utenti di un’organizzazione possono gestire e archiviare immagini, video, documenti, clip audio e contenuti multimediali come file Flash, per poi accedervi e utilizzarli sul Web, in documenti stampati e per la distribuzione digitale.
+Assets è uno strumento Digital Asset Management (DAM) completamente integrato con la piattaforma Experience Manager  e consente alla tua azienda di condividere e distribuire risorse digitali. Gli utenti di un’organizzazione possono gestire e archiviare immagini, video, documenti, clip audio e contenuti multimediali come file Flash, per poi accedervi e utilizzarli sul Web, in documenti stampati e per la distribuzione digitale.
 
 ## Che cos’è Digital Asset Management? {#what-is-digital-asset-management}
 
 Assets consente di condividere e distribuire le risorse digitali chiave di un’organizzazione in tutta l’azienda. Gli utenti di un’organizzazione possono archiviare, gestire e accedere a risorse digitali come immagini, elementi grafici, audio, video e documenti tramite un’interfaccia Web (o una cartella CIFS o WebDAV).
 
-Integrata in Experience Manager, la funzionalità Risorse consente di effettuare le seguenti operazioni:
+Integrata in  Experience Manager, la funzionalità Assets consente di effettuare le seguenti operazioni:
 
 * Aggiungere e condividere immagini, documenti, file audio e video in diversi formati.
 * Gestire le risorse raggruppandole in base a tag, lightbox o stelle (preferiti). Aggiungere note alle risorse.
@@ -28,9 +28,9 @@ Integrata in Experience Manager, la funzionalità Risorse consente di effettuare
 * Utilizzare funzioni di modifica delle immagini come il ridimensionamento e l’aggiunta di filtri. È possibile importare ed esportare contemporaneamente più risorse digitali utilizzando una cartella WebDAV o CIFS.
 * Utilizzare flussi di lavoro e notifiche per consentire l’elaborazione e il download simultanei di qualsiasi insieme di risorse e gestire i diritti di accesso alle risorse.
 
-### Experience Manager Assets è integrato con Experience Manager Sites {#aem-assets-fully-integrated-in-cq-wcm}
+###  Experience Manager Assets è integrato con  Experience Manager Sites {#aem-assets-fully-integrated-in-cq-wcm}
 
-Le risorse sono completamente integrate con Siti e la funzionalità è disponibile tramite l’icona DAM. Le risorse digitali gestite all’interno dell’archivio delle risorse possono quindi essere accessibili tramite Content Finder durante la creazione di pagine Web.
+Le risorse sono completamente integrate con Siti e tutte le funzioni sono perfettamente disponibili. Le risorse digitali gestite all’interno dell’archivio delle risorse possono quindi essere accessibili tramite Content Finder durante la creazione di pagine Web.
 
 L&#39;interfaccia utente di base è la stessa di Sites. Per informazioni dettagliate, consulta [Panoramica dei siti](/help/sites-authoring/page-authoring.md) .
 
@@ -49,11 +49,11 @@ Una risorsa, in pratica, è composta da un file binario, da metadati, da rappres
 
 >[!CAUTION]
 >
->Il caricamento e/o la modifica di un grande volume di risorse (in particolare immagini) può influire sulle prestazioni dell’istanza Experience Manager.
+>Il caricamento e/o la modifica di un grande volume di risorse (in particolare di immagini) può influire sulle prestazioni dell’istanza di Experience Manager .
 
-### Terminologia di Experience Manager Assets {#aem-assets-terminology}
+### Terminologia  Experience Manager Assets {#aem-assets-terminology}
 
-Quando lavori con risorse digitali in Experience Manager, devi comprendere la seguente terminologia:
+Quando lavorate con risorse digitali in  Experience Manager, è necessario comprendere la seguente terminologia:
 
 * **Raccolta** Una raccolta di risorse, basata sulla posizione fisica (cartella), sulle proprietà comuni (cartella di ricerca salvata) o sulla selezione dell&#39;utente (cartelle lightbox).
 
@@ -84,6 +84,6 @@ Le attività che puoi eseguire con questi flussi di lavoro preconfigurati:
 
 Ovviamente, puoi applicare i flussi di lavoro anche manualmente. Per un elenco dei flussi di lavoro predefiniti, consulta [Gestori di contenuti multimediali di Assets ](/help/assets/media-handlers.md).
 
-## Experience Manager Assets e MediaLibrary {#cq-dam-vs-cq-medialibrary}
+##  Experience Manager Assets e MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
 Consulta [Risorse e MediaLibrary](/help/assets/medialibrary.md) per informazioni sulle differenze.
