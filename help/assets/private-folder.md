@@ -1,24 +1,23 @@
 ---
-title: Crea e condividi una cartella privata in Adobe Experience Manager.
-description: Scopri come creare una cartella privata in Risorse Adobe Experience Manager e condividerla con altri utenti e assegnare loro vari privilegi.
+title: Create e condividete una cartella privata in  Adobe Experience Manager.
+description: Scoprite come creare una cartella privata in Risorse  Adobe Experience Manager e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '503'
+ht-degree: 1%
 
 ---
 
 
 # Condivisione di cartelle private {#private-folder-sharing}
 
-Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Experience Manager disponibile esclusivamente per l’utente. Potete condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.
+Potete creare una cartella privata nell’interfaccia utente di Risorse Adobe Experience Manager  disponibile esclusivamente per voi. Potete condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.
 
 >[!NOTE]
 >
 > La cartella privata ha almeno un membro con il ruolo Proprietario.
-
 
 1. Nella console Risorse, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
 
@@ -32,7 +31,7 @@ Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Expe
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,7 +57,7 @@ Puoi creare una cartella privata nell’interfaccia utente di Risorse Adobe Expe
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Fate clic sull&#39;icona Notifica per aprire l&#39;elenco delle notifiche.
+1. Fate clic su Notifiche per aprire l’elenco delle notifiche.
 
    ![Elenco delle notifiche](assets/Assets-Notification.png)
 
