@@ -3,17 +3,17 @@ title: Abilita approfondimenti risorse tramite DTM
 description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Abilita approfondimenti risorse tramite DTM {#enable-asset-insights-through-dtm}
 
-Adobe Dynamic Tag Management è uno strumento che attiva i tuoi strumenti di marketing digitale. Viene fornito gratuitamente ai clienti di Adobe Analytics.
+Adobe Dynamic Tag Management è uno strumento che attiva i tuoi strumenti di marketing digitale. È disponibile gratuitamente per i clienti Adobe  Analytics.
 
 Sebbene sia possibile personalizzare il codice di tracciamento per consentire a soluzioni CMS di terze parti di utilizzare Asset Insights, Adobe consiglia di utilizzare DTM per inserire i tag Asset Insights.
 
@@ -23,41 +23,42 @@ Sebbene sia possibile personalizzare il codice di tracciamento per consentire a 
 
 Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come indicato di seguito.
 
-1. Fai clic sul logo Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Approfondimenti]**.
-1. [Configurare l&#39;istanza Experience Manager con DTM Cloud Service](/help/sites-administering/dtm.md)
+1. Fai clic sul logo  Experience Manager e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Approfondimenti]**.
+1. [Configurare ’istanza Experience Manager con DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare Impostazioni **** account dall&#39;icona Profilo. Questo passaggio non è richiesto dal punto di vista di Asset Insights, perché l&#39;integrazione di Experience Manager Sites con Asset Insights è ancora in corso.
+   Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare Impostazioni **** account nel profilo utente. Questo passaggio non è richiesto dal punto di vista di Asset Insights, perché l&#39;integrazione di  siti Experience Manager con Asset Insights è ancora in corso.
 
-1. Accedete a [https://dtm.adobe.com](https://dtm.adobe.com/)e selezionate una Società, a seconda delle necessità.
-1. Creare/aprire una proprietà Web esistente
+1. Accedete a [https://dtm.adobe.com](https://dtm.adobe.com/)e selezionate una società, a seconda delle necessità.
+1. Creare o aprire una proprietà Web esistente
 
    * Selezionate la scheda Proprietà **** Web, quindi fate clic su **[!UICONTROL Aggiungi proprietà]**.
 
    * Aggiornate i campi come appropriato e fate clic su **[!UICONTROL Crea proprietà]**. Consulta [la documentazione](https://helpx.adobe.com/experience-manager/using/dtm.html).
+
    ![Creare una proprietà Web di modifica](assets/Create-edit-web-property.png)
 
 1. Nella scheda **[!UICONTROL Regole]** , selezionare Regole di caricamento **[!UICONTROL pagina]** dal riquadro di navigazione e fare clic su **[!UICONTROL Crea nuova regola]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Espandete **[!UICONTROL Tag]** Javascript/Di Terze Parti. Fate clic su **[!UICONTROL Aggiungi nuovo script]** nella scheda HTML **** sequenziale per aprire la finestra di dialogo Script.
+1. Espandere **[!UICONTROL JavaScript/Tag]** di terze parti. Fate clic su **[!UICONTROL Aggiungi nuovo script]** nella scheda HTML **** sequenziale per aprire la finestra di dialogo Script.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Fai clic sul logo Experience Manager, quindi vai a **[!UICONTROL Strumenti > Risorse]**.
+1. Fate clic sul logo  Experience Manager e passate a **[!UICONTROL Strumenti > Risorse]**.
 1. Fate clic su **[!UICONTROL Insights Page Tracker]**(Tracciatore pagina informazioni approfondite), copiate il codice di tracciamento e incollatelo nella finestra di dialogo Script aperta al punto 6. Salva le modifiche.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` viene rimosso. È previsto che sia disponibile tramite lo strumento Adobe Analytics di DTM.
-   > * La chiamata a `assetAnalytics.dispatcher.init`() viene rimossa. La funzione verrà chiamata al termine del caricamento dello strumento Adobe Analytics di DTM.
-   > * A seconda di dove è ospitato Asset Insights Page Tracker (ad esempio Experience Manager, CDN e così via), l&#39;origine dell&#39;origine dello script potrebbe richiedere delle modifiche.
-   > * Per il Tracciatore di pagina ospitato in Experience Manager, l&#39;origine deve puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza del dispatcher.
+   > * `AppMeasurement.js` viene rimosso. È previsto che sia disponibile tramite lo strumento Adobe  Analytics di Gestione dinamica dei tag.
+   > * La chiamata a `assetAnalytics.dispatcher.init`() viene rimossa. La funzione verrà chiamata al termine del caricamento dello strumento Adobe  Analytics di Gestione dinamica dei tag.
+   > * A seconda di dove è ospitato Asset Insights Page Tracker (ad esempio  Experience Manager, CDN e così via), l&#39;origine della sorgente dello script potrebbe richiedere delle modifiche.
+   > * Per  Page Tracker ospitato da Experience Manager, l&#39;origine deve puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza dispatcher.
 
 
-1. Accesso `https://dtm.adobe.com`. Fate clic su **[!UICONTROL Panoramica]** nella proprietà Web e fate clic su **[!UICONTROL Aggiungi strumento]** oppure aprite uno strumento Adobe Analytics esistente. Durante la creazione dello strumento, è possibile impostare Metodo **[!UICONTROL di]** configurazione su **[!UICONTROL Automatico]**.
+1. Accesso `https://dtm.adobe.com`. Fate clic su **[!UICONTROL Panoramica]** nella proprietà Web e fate clic su **[!UICONTROL Aggiungi strumento]** oppure aprite uno strumento Adobe  Analytics Tool esistente. Durante la creazione dello strumento, è possibile impostare Metodo **[!UICONTROL di]** configurazione su **[!UICONTROL Automatico]**.
 
-   ![Strumento Aggiungi Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
+   ![Aggiungi strumento Adobe  Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
    Selezionate le suite di rapporti Staging/Produzione, a seconda delle necessità.
 
