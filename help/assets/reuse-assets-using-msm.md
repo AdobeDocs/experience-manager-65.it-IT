@@ -4,10 +4,10 @@ description: Utilizzate le risorse tra più pagine/cartelle derivate e collegate
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 11%
+source-wordcount: '3368'
+ht-degree: 10%
 
 ---
 
@@ -22,7 +22,7 @@ La funzionalità Multi Site Manager (MSM) [!DNL Adobe Experience Manager] consen
 
 ## Prerequisiti {#configprereq}
 
-Per utilizzare MSM per [!DNL Assets], installare almeno Service Pack 1. Per ulteriori informazioni, consulta [le note](/help/release-notes/sp-release-notes.md)sulla versione.
+Per utilizzare MSM per [!DNL Assets], installate almeno Service Pack 1. Per ulteriori informazioni, consulta [le note](/help/release-notes/sp-release-notes.md)sulla versione.
 
 ## Comprendere i vantaggi e i concetti {#concepts}
 
@@ -64,13 +64,13 @@ Per creare una Live Copy da una o più risorse o cartelle sorgente, effettuate l
 * Metodo 1: Selezionate le risorse sorgente e fate clic su **[!UICONTROL Crea > Live Copy]** dalla barra degli strumenti nella parte superiore.
 * Metodo 2: Nell&#39;interfaccia [!DNL Experience Manager] utente, fate clic su **[!UICONTROL Crea > Live Copy]** nell&#39;angolo superiore destro dell&#39;interfaccia.
 
-Potete creare copie live di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+Potete creare copie dal vivo di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
 
 Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
 1. Selezionate le risorse o le cartelle sorgente. Dalla barra degli strumenti, fate clic su **[!UICONTROL Crea > Live Copy]**.
 
-   ![Creare una copia dal vivo dall’interfaccia di Experience Manager](assets/create_lc1.png)
+   ![Creare una Live Copy dall&#39;interfaccia  Experience Manager](assets/create_lc1.png)
 
    *Figura: Crea live copy dall&#39;[!DNL Experience Manager]interfaccia.*
 
@@ -82,7 +82,7 @@ Per creare copie live con il secondo metodo, attenetevi alla seguente procedura:
 
 1. Nell&#39; [!DNL Experience Manager] interfaccia, dall&#39;angolo superiore destro, fate clic su **[!UICONTROL Crea > Live Copy]**.
 
-   ![Creare una copia dal vivo dall’interfaccia di Experience Manager](assets/create_lc2.png)
+   ![Creare una Live Copy dall&#39;interfaccia  Experience Manager](assets/create_lc2.png)
 
    *Figura: Crea live copy dall&#39;[!DNL Experience Manager]interfaccia.*
 
@@ -242,7 +242,7 @@ In alternativa, puoi sospendere o riprendere rapidamente le relazioni tra più r
 
 Una Live Copy è una replica dell&#39;origine originale al momento della creazione. I valori dei metadati di una Live Copy vengono ereditati dall&#39;origine. I campi di metadati mantengono l’ereditarietà singolarmente con i rispettivi campi della risorsa sorgente.
 
-Tuttavia, puoi apportare modifiche locali a una Live Copy per cambiare alcune proprietà selezionate. Per eseguire modifiche locali, annulla l’ereditarietà della proprietà desiderata. Quando l’ereditarietà di uno o più campi di metadati viene annullata, si mantiene la relazione live della risorsa e l’ereditarietà degli altri campi di metadati. Qualsiasi sincronizzazione o rollout non sovrascrive le modifiche locali. Per farlo, apri la pagina **[!UICONTROL Proprietà]** di una risorsa Live Copy e fai clic sull’icona **[!UICONTROL Annulla ereditarietà]** posta accanto a un campo di metadati.
+Tuttavia, puoi apportare modifiche locali a una Live Copy per cambiare alcune proprietà selezionate. Per eseguire modifiche locali, annulla l’ereditarietà della proprietà desiderata. Quando l’ereditarietà di uno o più campi di metadati viene annullata, si mantiene la relazione live della risorsa e l’ereditarietà degli altri campi di metadati. Qualsiasi sincronizzazione o rollout non sovrascrive le modifiche locali. To do so, open **[!UICONTROL Properties]** page of a live copy asset, click the **[!UICONTROL cancel inheritance]** option next to a metadata field.
 
 Potete annullare tutte le modifiche locali e ripristinare lo stato della risorsa all’origine. L’azione Reimposta sostituisce in modo irrevocabile e immediato tutte le modifiche locali e ripristina l’ereditarietà in tutti i campi di metadati. Per ripristinare, dalla pagina **[!UICONTROL Proprietà]** di una risorsa Live Copy, fate clic su **[!UICONTROL Ripristina]** nella barra degli strumenti.
 
@@ -329,4 +329,4 @@ Alcune best practice per MSM sono:
 
 Di seguito è riportata una limitazione di MSM per [!DNL Assets].
 
-* I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati come accade senza alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+* I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
