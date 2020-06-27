@@ -1,22 +1,25 @@
 ---
 title: Schema metadati per cartelle
-description: Scopri come creare uno schema di metadati per le cartelle di risorse in Risorse Adobe Experience Manager
+description: Scopri come creare uno schema di metadati per le cartelle di risorse in  Adobe Experience Manager Risorse
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 4%
 
 ---
 
 
 # Schema metadati per cartelle {#folder-metadata-schema}
 
-Risorse Adobe Experience Manager consente di creare schemi di metadati per le cartelle di risorse, che definiscono il layout e i metadati visualizzati nelle pagine delle proprietà della cartella.
+ Adobe Experience Manager Risorse consente di creare schemi di metadati per le cartelle di risorse, che definiscono il layout e i metadati visualizzati nelle pagine delle proprietà della cartella.
 
 ## Aggiunta di uno schema di metadati di una cartella {#add-a-folder-metadata-schema-form}
 
 Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare gli schemi di metadati per le cartelle.
 
-1. Nell’interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati delle **[!UICONTROL cartelle]**.
+1. &#39;interfaccia Experience Manager, accedete a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati **[!UICONTROL della cartella]**.
 1. Nella pagina Moduli [!UICONTROL schema metadati] cartella fare clic su **[!UICONTROL Crea]**.
 1. Specify a name for the form, and click **[!UICONTROL Create]**. Il nuovo modulo schema è elencato nella pagina Moduli  schema.
 
@@ -29,7 +32,7 @@ Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare 
 
 È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi del modulo al modulo schema di metadati.
 
-1. Nella pagina Moduli schema, selezionare il modulo creato, quindi fare clic sull&#39;icona **[!UICONTROL Modifica]** dalla barra degli strumenti.
+1. Nella pagina Moduli schema, selezionare il modulo creato, quindi selezionare l&#39;opzione **[!UICONTROL Modifica]** dalla barra degli strumenti.
 1. Nella pagina Editor schema metadati cartella, fare clic su `+` per aggiungere una scheda al modulo. Per rinominare la scheda, fare clic sul nome predefinito e specificare il nuovo nome in **[!UICONTROL Impostazioni]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -93,7 +96,7 @@ Per garantire che il componente venga visualizzato correttamente nel modulo dell
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-È possibile eliminare i moduli dello schema di metadati della cartella dalla pagina Moduli schema metadati cartella. Per eliminare un modulo, selezionarlo e fare clic sull&#39;icona Elimina dalla barra degli strumenti.
+È possibile eliminare i moduli dello schema di metadati della cartella dalla pagina Moduli schema metadati cartella. Per eliminare un modulo, selezionarlo e fare clic sull&#39;opzione Elimina dalla barra degli strumenti.
 
 ![delete_form](assets/delete_form.png)
 
@@ -105,7 +108,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 
 ### Assegnazione a uno schema dalla pagina Schema metadati cartella {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Nell’interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> Schemi metadati **[!UICONTROL cartella]**.
+1. &#39;interfaccia Experience Manager, accedete a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> Schemi di metadati **[!UICONTROL della cartella]**.
 1. Dalla pagina Moduli schema metadati cartella, selezionare il modulo schema che si desidera applicare a una cartella.
 1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Applica alle cartelle]**.
 
