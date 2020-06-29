@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 44%
 
 ---
 
@@ -22,15 +25,16 @@ source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 Con una licenza di AEM Communities, oltre a creare siti di community, è possibile aggiungere funzionalità di community a qualsiasi sito AEM con gli strumenti standard di authoring AEM.
 
-Per saperne di più sulla creazione di un sito community visita:
+Per ulteriori informazioni sulla creazione di un sito community, visitate:
 
-* [Panoramica di AEM Communities](/help/communities/overview.md)
+* [Panoramica sui AEM Communities](/help/communities/overview.md)
 * [Guida introduttiva di AEM Communities](/help/communities/getting-started.md)
-* [Guida introduttiva ad AEM Communities per l&#39;abilitazione](/help/communities/getting-started-enablement.md)
+* [Guida introduttiva ai AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
 >Se non avete familiarità con l’ambiente di authoring, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida all’authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
+
 
 ## Componenti community disponibili {#available-communities-components}
 
@@ -42,7 +46,7 @@ Vedere anche la guida [interattiva sui componenti](/help/communities/components-
 >
 >Leggi [Community Components Basics (Nozioni di base sui](/help/communities/basics.md) componenti di Community) in quanto contiene le informazioni necessarie per la creazione con i componenti Community.
 
-| **Titolo componente** | **Funzione** |
+| **Titolo componente** | **Funzione rimossa** |
 |---|---|
 | Flussi attività | [Flussi attività](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
@@ -70,14 +74,15 @@ Vedere anche la guida [interattiva sui componenti](/help/communities/components-
 | Domande correlate | [Domande e risposte](/help/communities/working-with-qna.md) |
 | Recensioni | [Recensioni](/help/communities/reviews.md) |
 | Riepilogo recensioni (visualizzazione) | [Recensioni](/help/communities/reviews.md) |
-| Ricerca   | [Ricerca](/help/communities/search.md) |
+| Ricerca | [Ricerca](/help/communities/search.md) |
 | Risultato di ricerca | [Ricerca](/help/communities/search.md) |
 | Tag cloud per social network | [Tag cloud per social network](/help/communities/tagcloud.md) |
 | Votazione | [Votazione](/help/communities/voting.md) |
 
 >[!NOTE]
 >
->Il componente sondaggio non è più disponibile e supportato in Experience Manager Communities.
+>Il componente del sondaggio non è più disponibile e supportato in  Experience Manager Communities.
+
 
 ## Documentazione di Community correlate {#related-communities-documentation}
 
