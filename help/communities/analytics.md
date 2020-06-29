@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 4%
@@ -156,7 +156,7 @@ Per attivare il reporting Video Heartbeat dopo la [configurazione della suite di
 
 L&#39; `Marketing Cloud Org Id` indicazione può essere effettuata al momento della creazione [del sito](/help/communities/sites-console.md#enablement) comunitario o successivamente, [modificando](/help/communities/sites-console.md#modifying-site-properties) le proprietà del sito comunitario. [](#aem-analytics-cloud-service-configuration)
 
-![chlimage_1-177](assets/chlimage_1-177.png)
+![chlimage_1-264](assets/chlimage_1-264.png)
 
 Quando Video Heartbeat  Analytics è abilitato, il codice JavaScript (JS) per il lettore video crea un&#39;istanza del codice della libreria heartbeat video (anche in JS) che gestisce tutte le logiche per l&#39;invio di aggiornamenti dello stato video ai server di tracciamento video  Analytics ogni 10 secondi (non configurabili) e alla fine invia un rapporto cumulativo della sessione video ai server Analytics  principali.
 
@@ -170,7 +170,7 @@ Per creare una nuova integrazione Analytics , che integra Adobe  Analytics con i
 * Scorri verso il basso fino ad **[!UICONTROL Adobe  Analytics]**
 * Seleziona **[!UICONTROL Configura ora]** o **[!UICONTROL Mostra configurazioni]**
 
-![chlimage_1-178](assets/chlimage_1-178.png)
+![chlimage_1-265](assets/chlimage_1-265.png)
 
 ### Finestra di dialogo Crea configurazione {#create-configuration-dialog}
 
@@ -178,7 +178,7 @@ Per creare una nuova integrazione Analytics , che integra Adobe  Analytics con i
 
 Nella finestra di dialogo Crea configurazione, i valori da immettere identificano la configurazione.
 
-![chlimage_1-179](assets/chlimage_1-179.png)
+![chlimage_1-266](assets/chlimage_1-266.png)
 
 * **Titolo**
 
@@ -202,37 +202,39 @@ For example, enter *communities*
 
 La creazione iniziale di una nuova configurazione  Analytics comporta la visualizzazione della configurazione e una nuova finestra di dialogo per l&#39;immissione delle  impostazioni Analytics. Questa finestra di dialogo richiede le informazioni [account](#prerequisites) preliminari ottenute dal rappresentante commerciale di riferimento.
 
-![chlimage_1-180](assets/chlimage_1-180.png)
+![chlimage_1-267](assets/chlimage_1-267.png)
 
 * **Azienda**
 
-   Società associata all&#39;account Adobe  Analytics
+   Società associata all&#39;account Adobe  Analytics.
 
 * **Nome utente**
 
-   Nome utente di accesso per l&#39;utente autorizzato a gestire l&#39;account Analytics 
+   Il nome utente di accesso per l&#39;utente autorizzato a gestire l&#39;account Analytics .
 
 * **Password**
 
-   La password di accesso per l&#39;utente autorizzato
+   La password di accesso per l’utente autorizzato.
 
 * **Datacenter**
 
-   Selezionare il centro dati Analytics  che ospita la suite di rapporti
+   Selezionate il centro dati Analytics  che ospita la suite di rapporti.
 
 * **Non aggiungere tag di tracciamento alla pagina**
 
-   Mantieni come predefinito (deselezionato)
+   Mantieni come predefinito (deselezionato).
 
 * **Usa AppMeasurement**
 
-   Mantieni come predefinito (deselezionato)
+   Mantieni come predefinito (deselezionato).
 
 * **Non importare di notte le impression della pagina (creazione)**
 
-   Mantieni come predefinito (deselezionato)
+   Mantieni come predefinito (deselezionato).
 
-* **Non importare le impression pagina ogni notte (pubblicazione)** lasciare come predefinite (deselezionato)
+* **Non importare di notte le impression della pagina (pubblicazione)**
+
+   Mantieni come predefinito (deselezionato).
 
 Per salvare le impostazioni:
 
@@ -240,13 +242,13 @@ Per salvare le impostazioni:
 
    * In caso contrario,
 
-      * Verificare che le voci non contengano spazi iniziali
-      * Provare un datacenter diverso
-      * Contatta il rappresentante commerciale di riferimento
+      * Verificare che le voci non contengano spazi iniziali.
+      * Prova a utilizzare un datacenter diverso.
+      * Contattate il rappresentante commerciale di riferimento.
 
-* Selezionare **OK**
+* Selezionare **OK**.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-268](assets/chlimage_1-268.png)
 
 ### Crea framework {#create-framework}
 
@@ -254,22 +256,22 @@ Dopo la configurazione corretta della connessione di base ad Adobe  Analytics, �
 
 * Selezionate `[+]` l&#39;icona accanto a **[!UICONTROL Framework]** disponibili per creare un nuovo framework
 
-![chlimage_1-182](assets/chlimage_1-182.png)
+   ![chlimage_1-269](assets/chlimage_1-269.png)
 
 * **Titolo**
 
-   (Obbligatorio) Titolo visualizzato per frameworkAd esempio, immettere *Enablement Community Framework*
+   (Obbligatorio) Titolo visualizzato per frameworkAd esempio, immettere *Enablement Community Framework*.
 
 * **Nome**
 
    (Facoltativo) Se non viene specificato, per impostazione predefinita il nome verrà impostato su un nome di nodo valido derivato dal titolo.
-For example, enter *communities*
+For example, enter *communities*.
 
 * *Modello*
 
-   Seleziona `Adobe Analytics Framework`
+   Seleziona `Adobe Analytics Framework`.
 
-* Seleziona **Crea**
+* Seleziona **Crea**.
 
 La creazione di  Analytics Framework apre il framework per la configurazione.
 
@@ -277,7 +279,7 @@ La creazione di  Analytics Framework apre il framework per la configurazione.
 
 Lo scopo del framework è mappare le variabili AEM su  variabili Analytics (eVar ed eventi). Le variabili Analytics  disponibili per la mappatura sono [definite nella suite](#adobe-analytics-report-suite-for-video-reporting)di rapporti.
 
-![chlimage_1-183](assets/chlimage_1-183.png)
+![chlimage_1-270](assets/chlimage_1-270.png)
 
 ### Seleziona suite di rapporti {#select-report-suite}
 
@@ -290,9 +292,9 @@ La barra laterale non è necessaria e può essere ridotta a icona in modo da non
 
 #### Finestra di dialogo Suite di rapporti prima e dopo la selezione di &#39;Aggiungi elemento&#39; {#report-suites-dialog-before-and-after-selecting-add-item}
 
-![chlimage_1-184](assets/chlimage_1-184.png)
+![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Seleziona **Aggiungi elemento +**
+1. Selezionare **Aggiungi elemento +**.
 
    Vengono visualizzate due caselle a discesa.
 
@@ -307,11 +309,11 @@ La barra laterale non è necessaria e può essere ridotta a icona in modo da non
     Do you want to load the default server settings and overwrite current values in the Server section?
    ```
 
-1. Choose a `Run Mode`
+1. Choose a `Run Mode`.
 
-1. Selezionate **Pubblica**
+1. Selezionate **Pubblica**.
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-272](assets/chlimage_1-272.png)
 
 Il servizio e il framework di Analytics Cloud ora sono completi. Le mappature verranno definite dopo la creazione di un sito community con questo servizio Analytics  abilitato.
 
@@ -356,7 +358,7 @@ Affinché il tracciamento  Analytics e l&#39;importazione funzionino correttamen
 </div>
 ```
 
-Per un sito **community** personalizzato che sovrappone lo `sitepage.hbs` script, accertatevi che l&#39;elemento sia presente. La `siteUrl`variabile viene impostata quando viene eseguito il rendering sul server prima di essere trasmessa al client.
+Per un sito **community** personalizzato che sovrappone lo `sitepage.hbs` script, accertatevi che l&#39;elemento sia presente. La `siteUrl` variabile viene impostata quando viene eseguito il rendering sul server prima di distribuirla al client.
 
 Per un sito **AEM** generico che include componenti Community, ma non viene creato con la procedura guidata [di creazione del](/help/communities/sites-console.md)sito, è necessario aggiungere l’elemento. Il valore di href deve essere il percorso del sito. Ad esempio, se il percorso del sito è `/content/my/company/en`, utilizzate:
 
@@ -379,11 +381,12 @@ Se vengono creati nuovi componenti personalizzati dotati di strumenti per  Analy
 
 ### Configurazione componente {#component-configuration}
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-273](assets/chlimage_1-273.png)
 
 >[!NOTE]
 >
 >I componenti del giornale di registrazione vengono utilizzati per implementare la funzione blog.
+
 
 ### Mappata  Analytics alle variabili AEM {#mapped-analytics-to-aem-variables}
 
@@ -393,7 +396,7 @@ Se utilizzate una suite di rapporti esistente che ha mappato una qualsiasi delle
 
 Di seguito è riportato un esempio di mappature predefinite dopo aver seguito l&#39;esercitazione [introduttiva](/help/communities/getting-started-enablement.md):
 
-![chlimage_1-187](assets/chlimage_1-187.png)
+![chlimage_1-274](assets/chlimage_1-274.png)
 
 #### Mappa delle eVar inviate con ogni evento {#map-of-evars-sent-with-each-event}
 
@@ -530,14 +533,12 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito l&
 * *Titolo* del componente UGC: Argomenti relativi all&#39;escursione
 * *login (authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *Percorso SRP per UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-o 
-*percorso del componente da seguire*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+o *percorso del componente da seguire*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+*percorso del contenuto* del sito community: `/content/sites/<site name>/en`
 
-* *percorso del contenuto* del sito community: `/content/sites/<site name>/en`
+* Modifica  mappatura variabile Analytics {#modifying-analytics-variable-mapping}*`/content/sites/<site name>/en`
 
-### Modifica  mappatura variabile Analytics {#modifying-analytics-variable-mapping}
-
-La mappatura di  eVar ed eventi Analytics alle variabili AEM è visibile dalla configurazione del framework dopo che  Analytics è abilitato per un sito community.
+### La mappatura di  eVar ed eventi Analytics alle variabili AEM è visibile dalla configurazione del framework dopo che  Analytics è abilitato per un sito community.{#modifying-analytics-variable-mapping}
 
 Dopo aver attivato  Analytics e prima della pubblicazione del sito community, la mappatura può essere modificata nel framework trascinando l&#39;evento o l&#39;evar Analytics desiderato  dalla barra a sinistra e rilasciandolo nella riga corrispondente nella tabella di mappatura.
 
@@ -545,126 +546,127 @@ Per evitare mappature duplicate, assicurarsi di rimuovere dalla riga l&#39;event
 
 Se eVar ed eventi Community sovrascrivono mappature pre-esistenti nella suite di rapporti, quindi per evitare la perdita di dati, assegna le variabili AEM per le funzionalità Community ad altre eVar o eventi Analytics  e ripristina le mappature originali.
 
->[!CAUTION]
->
+[!CAUTION]
+
 >È importante rimappare prima che il sito della community venga [pubblicato](#publishing-the-community-site) con  Analytics abilitato, altrimenti si rischia la perdita di dati.
+>
+>Esempio 1: Trascinamento  Analytics evar14 nella tabella di mappatura {#example-step-dragging-analytics-evar-into-mapping-table}](#publishing-the-community-site)
 
-#### Esempio 1: Trascinamento  Analytics evar14 nella tabella di mappatura {#example-step-dragging-analytics-evar-into-mapping-table}
+#### ![chlimage_1-275](assets/chlimage_1-275.png)
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+Esempio 2: Selezione di &#39;x&#39; per rimuovere evar11 sostituito {#example-step-selecting-x-to-remove-replaced-evar}](assets/chlimage_1-275.png)
 
-#### Esempio 2: Selezione di &#39;x&#39; per rimuovere evar11 sostituito {#example-step-selecting-x-to-remove-replaced-evar}
+#### ![chlimage_1-276](assets/chlimage_1-276.png)
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+Esempio 3: AEM var eventdata.siteId riassociato a  Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}](assets/chlimage_1-276.png)
 
-#### Esempio 3: AEM var eventdata.siteId riassociato a  Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### ![chlimage_1-277](assets/chlimage_1-277.png)
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+Pubblicazione del sito della community {#publishing-the-community-site}](assets/chlimage_1-277.png)
 
-## Pubblicazione del sito della community {#publishing-the-community-site}
+## Verifica  mappatura variabile Analytics-AEM {#verify-analytics-to-aem-variable-mapping}
 
-### Verifica  mappatura variabile Analytics-AEM {#verify-analytics-to-aem-variable-mapping}
-
-È consigliabile verificare la mappatura delle variabili prima di pubblicare il sito community, che pubblica anche il servizio e il framework cloud Analytics .
+### È consigliabile verificare la mappatura delle variabili prima di pubblicare il sito community, che pubblica anche il servizio e il framework cloud Analytics .{#verify-analytics-to-aem-variable-mapping}
 
 Vedere sezioni:
 
-* [Mappata  Analytics alle variabili AEM](#mapped-analytics-to-aem-variables)
-* [Modifica  mappatura variabile Analytics](#modifying-analytics-variable-mapping)
+[Mappata  Analytics alle variabili AEM](#mapped-analytics-to-aem-variables)
 
->[!CAUTION]
->
+* [Modifica  mappatura variabile Analytics](#modifying-analytics-variable-mapping)
+* [!CAUTION]](#modifying-analytics-variable-mapping)
+
 >**Se si utilizza una suite di rapporti esistente che utilizza già variabili all&#39;interno di**
 >
->* Da **`evar1`** a **`evar11`**
+>Da **`evar1`** a **`evar11`****
+>
+>* Da **`event1`** a **`event7`**
    >
    >
-* Da **`event1`** a **`event7`**
+* **Prima della pubblicazione del sito della community,** è importante ripristinare la mappatura preesistente e spostare le variabili AEM di Communities che venivano mappate automaticamente (quando  Analytics era abilitato per il sito della community) su altre variabili Analytics . La nuova mappatura deve essere coerente tra tutti i componenti Community.**`event7`**
 >
 >
-**Prima della pubblicazione del sito della community,** è importante ripristinare la mappatura preesistente e spostare le variabili AEM di Communities che venivano mappate automaticamente (quando  Analytics era abilitato per il sito della community) su altre variabili Analytics . La nuova mappatura deve essere coerente tra tutti i componenti Community.
+**In caso contrario si potrebbe determinare una perdita di dati non recuperabile.**
 >
->In caso contrario si potrebbe determinare una perdita di dati non recuperabile.
+>Editore principale {#primary-publisher}
 
-### Editore principale {#primary-publisher}
+### Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come editore principale per il polling di Adobe  Analytics affinché i dati del rapporto scrivano all&#39; [SRP](/help/communities/working-with-srp.md).
 
-Se la distribuzione scelta è una farm [di](/help/communities/topologies.md#tarmk-publish-farm)pubblicazione, un&#39;istanza di pubblicazione AEM deve essere identificata come editore principale per il polling di Adobe  Analytics affinché i dati del rapporto scrivano all&#39; [SRP](/help/communities/working-with-srp.md).
-
-Per impostazione predefinita, la configurazione `AEM Communities Publisher Configuration` OSGi identifica l’istanza di pubblicazione come editore principale, in modo che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino automaticamente come principale.
+Per impostazione predefinita, la configurazione `AEM Communities Publisher Configuration` OSGi identifica l’istanza di pubblicazione come editore principale, in modo che tutte le istanze di pubblicazione in una farm di pubblicazione si identifichino automaticamente come principale.](/help/communities/topologies.md#tarmk-publish-farm)[](/help/communities/working-with-srp.md)
 
 Pertanto, è necessario modificare la configurazione in tutte le istanze di pubblicazione secondarie per deselezionare la casella di controllo Editore **** principale.
 
 Per istruzioni specifiche, consultate la sezione relativa all&#39;editore principale di [Distribuzione di Communities](/help/communities/deploy-communities.md#primary-publisher).
 
->[!CAUTION]
+[!CAUTION]](/help/communities/deploy-communities.md#primary-publisher)
+
+>[!CAUTION]È importante che l’editore principale sia configurato per impedire il polling da più istanze di pubblicazione.
 >
->È importante che l’editore principale sia configurato per impedire il polling da più istanze di pubblicazione.
+>Replicare la chiave Crypto {#replicate-the-crypto-key}
 
-### Replicare la chiave Crypto {#replicate-the-crypto-key}
-
-Le credenziali Adobe  Analytics sono crittografate. Per facilitare la replica o la trasmissione di credenziali di analisi crittografate tra autori ed editori, tutte le istanze AEM devono condividere la stessa chiave di crittografia primaria.
+### Le credenziali Adobe  Analytics sono crittografate. Per facilitare la replica o la trasmissione di credenziali di analisi crittografate tra autori ed editori, tutte le istanze AEM devono condividere la stessa chiave di crittografia primaria.{#replicate-the-crypto-key}
 
 A tale scopo, seguire le istruzioni in [Replica della chiave](/help/communities/deploy-communities.md#replicate-the-crypto-key)di crittografia.
 
-### Pubblica sito community e  Analytics Cloud Service {#publish-community-site-and-analytics-cloud-service}
+Pubblica sito community e  Analytics Cloud Service {#publish-community-site-and-analytics-cloud-service}](/help/communities/deploy-communities.md#replicate-the-crypto-key)
 
-Una volta che il servizio cloud  Analytics è stato abilitato per un sito community e, se necessario, è stata modificata [la](#mapped-analytics-to-aem-variables)mappatura di  variabili Analytics su AEM, è necessario replicare la configurazione nell&#39;ambiente di pubblicazione [(ri)pubblicando nuovamente il sito](/help/communities/sites-console.md#publishing-the-site)community.
+### Una volta che il servizio cloud  Analytics è stato abilitato per un sito community e, se necessario, è stata modificata [la](#mapped-analytics-to-aem-variables)mappatura di  variabili Analytics su AEM, è necessario replicare la configurazione nell&#39;ambiente di pubblicazione [(ri)pubblicando nuovamente il sito](/help/communities/sites-console.md#publishing-the-site)community.
 
-## Come ottenere rapporti da  Analytics {#obtaining-reports-from-analytics}
+Come ottenere rapporti da  Analytics {#obtaining-reports-from-analytics}](#mapped-analytics-to-aem-variables)[](/help/communities/sites-console.md#publishing-the-site)
 
-### Gestione report {#report-management}
+## Gestione report {#report-management}
 
-La configurazione [](/help/sites-deploying/configuring-osgi.md)OSGi dell’autore e dell’editore principale, `AEM Communities Analytics Report Management`, viene utilizzata per eseguire query  Analytics.
+### La configurazione [](/help/sites-deploying/configuring-osgi.md)OSGi dell’autore e dell’editore principale, `AEM Communities Analytics Report Management`, viene utilizzata per eseguire query  Analytics.
 
-In fase di creazione, le query sono per report in tempo reale.
+In fase di creazione, le query sono per report in tempo reale.[](/help/sites-deploying/configuring-osgi.md)`AEM Communities Analytics Report Management`
 
 Nell&#39;editore principale, le query vengono utilizzate per fornire informazioni in preparazione all&#39;importazione di dati Analytics da parte dell&#39;importatore di report.
 
 L&#39;intervallo di query predefinito è 10 secondi.
 
-### Importatore report {#report-importer}
+Importatore report {#report-importer}
 
-Una volta pubblicato  sito community abilitato per Analytics, la configurazione [](/help/sites-deploying/configuring-osgi.md)OSGi dell&#39;editore principale può essere configurata `AEM Communities Analytics Report Importer`per impostare l&#39;intervallo di polling predefinito per le configurazioni che non sono configurate singolarmente in CRXDE.
+### Una volta pubblicato  sito community abilitato per Analytics, la configurazione [](/help/sites-deploying/configuring-osgi.md)OSGi dell&#39;editore principale può essere configurata `AEM Communities Analytics Report Importer`per impostare l&#39;intervallo di polling predefinito per le configurazioni che non sono configurate singolarmente in CRXDE.
 
-L’intervallo di polling controlla la frequenza delle richieste ad Adobe  Analytics per il pulling e il salvataggio dei dati nell’ [SRP](/help/communities/working-with-srp.md).
+L’intervallo di polling controlla la frequenza delle richieste ad Adobe  Analytics per il pulling e il salvataggio dei dati nell’ [SRP](/help/communities/working-with-srp.md).`AEM Communities Analytics Report Importer`
 
-Quando i dati possono essere classificati come &quot;grandi dati&quot;, sondaggi più frequenti potrebbero mettere un carico elevato sul sito della comunità.
+Quando i dati possono essere classificati come &quot;grandi dati&quot;, sondaggi più frequenti potrebbero mettere un carico elevato sul sito della comunità.[](/help/communities/working-with-srp.md)
 
 L’intervallo **predefinito di** importazione polling è impostato su 12 ore.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-278](assets/chlimage_1-278.png)
 
-### Personalizzazione report componente {#component-report-customization}
+Personalizzazione report componente {#component-report-customization}](assets/chlimage_1-278.png)
 
-Al momento, per personalizzare le metriche da monitorare, nell&#39;archivio vengono creati nodi che definiscono i periodi di tempo per i quali generare un rapporto su tale metrica.
+### Al momento, per personalizzare le metriche da monitorare, nell&#39;archivio vengono creati nodi che definiscono i periodi di tempo per i quali generare un rapporto su tale metrica.{#component-report-customization}
 
 L&#39;argomento forum è attualmente l&#39;unico esempio di questa personalizzazione:
 
-* Nell&#39;editore principale, effettuate l&#39;accesso con privilegi amministrativi.
-* Passare a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
+Nell&#39;editore principale, effettuate l&#39;accesso con privilegi amministrativi.
 
-* Sotto il nodo jcr:content della directory principale della lingua (ad esempio, `/content/sites/engage/en/jcr:content),`andate al componente configurato per  report Analytics).
-Esempio, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+* Passare a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, [https://localhost:4503/crx/de[#$tu263].
+* 
 
-* Osservate i periodi di tempo creati:
+* Osservate i periodi di tempo creati:`/content/sites/engage/en/jcr:content),`**`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
-   * `last30Days`
+* `last30Days`
+
    * `last90Days`
    * `thisYear`
+   * Osservate il `total`nodo.
 
-* Osservate il `total`nodo.
+* Modificando la **`interval`** proprietà si sostituisce l&#39;intervallo Importazione report.
 
-   * Modificando la **`interval`** proprietà si sostituisce l&#39;intervallo Importazione report.
-   * Il valore è espresso in secondi ed è impostato su 4 ore (14400 secondi).
+   * Il valore è espresso in secondi ed è impostato su 4 ore (14400 secondi).**`interval`**
+   * ![chlimage_1-279](assets/chlimage_1-279.png)
 
-![chlimage_1-192](assets/chlimage_1-192.png)
+Gestione dei dati utente in  Analytics {#manage-user-data-in-analytics}](assets/chlimage_1-279.png)
 
-## Gestione dei dati utente in  Analytics {#manage-user-data-in-analytics}
+## Adobe  Analytics fornisce API che consentono di accedere, esportare ed eliminare dati utente. Per ulteriori informazioni, vedere [Sottomettere richieste[#$tu275]di accesso ed eliminazione.
 
-Adobe  Analytics fornisce API che consentono di accedere, esportare ed eliminare dati utente. Per ulteriori informazioni, vedere [Sottomettere richieste](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)di accesso ed eliminazione.
 
-## Riferimenti {#resources}
 
-* Adobe Experience Cloud: [Guida di  Analytics e riferimento](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
-* AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
+## Adobe Experience Cloud: [Guida di  Analytics e riferimento[#$tu278]
+
+* 
 * AEM: [Analytics con fornitori esterni](/help/sites-administering/external-providers.md)
+* AEM: [Analytics with External Providers](/help/sites-administering/external-providers.md)
