@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Pertanto, il motore di valutazione avanzato richiede dati sufficienti per render
 
 L’impostazione del punteggio avanzato è praticamente uguale al punteggio di base:
 
-* Regole di punteggio e contrassegno di base e avanzate vengono [applicate al contenuto](/help/communities/implementing-scoring.md#apply-rules-to-content) allo stesso modo
+* Le regole di punteggio e contrassegno di base e avanzate vengono [applicate al contenuto](/help/communities/implementing-scoring.md#apply-rules-to-content) allo stesso modo.
 
-   * Regole di punteggio e contrassegno di base e avanzate possono essere applicate allo stesso contenuto
+   * Le regole di punteggio e contrassegno di base e avanzate possono essere applicate allo stesso contenuto.
 
-* [Abilitare i simboli per i componenti](/help/communities/implementing-scoring.md#enable-badges-for-component) è generico
+* [L&#39;abilitazione dei simboli per i componenti](/help/communities/implementing-scoring.md#enable-badges-for-component) è generica.
 
 Le differenze nella configurazione delle regole di punteggio e contrassegno sono:
 
@@ -45,23 +45,24 @@ Le differenze nella configurazione delle regole di punteggio e contrassegno sono
 * Regole di punteggio avanzate:
 
    * `scoringType` impostato su `advanced`
-   * requires `stopwords`
+   * Richiede `stopwords`
 
 * Regole di contrassegno avanzate:
 
    * `badgingType` impostato su `advanced`
    * `badgingLevels` impostare il **numero di livelli di esperti da assegnare**
-   * richiede `badgingPaths` un array di simboli invece dei punti di mappatura della matrice delle soglie ai simboli
+   * Richiede un `badgingPaths` array di simboli invece dei punti di mappatura della matrice delle soglie ai simboli.
 
 >[!NOTE]
 >
 >Per utilizzare funzionalità avanzate di valutazione e contrassegno, installate il pacchetto [Expert Identification (Identificazione Esperti)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
 
+
 ## Motore di valutazione configurabile {#configurable-scoring-engine}
 
 Il motore di punteggio avanzato fornisce una configurazione OSGi con parametri che influiscono sull’algoritmo di punteggio avanzato.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **Pesi punteggio**
 
@@ -102,7 +103,7 @@ Per richiamare il motore di punteggio avanzato, `scoringType`impostare `advanced
 
 Consulta [Regole](/help/communities/implementing-scoring.md#scoring-sub-rules)secondarie punteggio.
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### Stopwords {#stopwords}
 
@@ -122,7 +123,7 @@ Le proprietà avanzate della regola di contrassegno sono diverse dalle propriet�
 
 Invece di associare i punti a un’immagine badge, è necessario solo identificare il numero di esperti consentiti e l’immagine del contrassegno da assegnare.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -164,7 +165,7 @@ In questa versione beta è incluso un badge di esperti basato sui premi:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 Affinché il contrassegno dell&#39;esperto venga visualizzato come ricompensa per l&#39;attività, accertatevi che:
 
@@ -197,15 +198,15 @@ Nella versione beta sono incluse due regole di punteggio avanzate per la funzion
 
 **Note:**
 
-* Entrambi `rules`e `sub-rules` i nodi sono di tipo `cq:Page`
+* Entrambi `rules` e `sub-rules` i nodi sono di tipo `cq:Page`.
 
-* `subRules`è un attributo di tipo String[] sul nodo della `jcr:content` regola
+* `subRules` è un attributo di tipo String[] sul nodo della `jcr:content` regola.
 
-* `sub-rules` può essere condiviso tra diverse regole di punteggio
+* `sub-rules` può essere condiviso tra diverse regole di punteggio.
 
-* `rules`devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti
+* `rules` devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti.
 
-   * I nomi delle regole devono essere univoci, indipendentemente dalla posizione
+* I nomi delle regole devono essere univoci indipendentemente dalla posizione.
 
 ### Regole di Badging incluse {#included-badging-rules}
 
@@ -216,8 +217,7 @@ Nella release sono incluse due regole di contrassegno avanzate che corrispondono
 
 **Note:**
 
-* `rules` i nodi sono di tipo cq:Page
-* `rules` devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti
-
-   * I nomi delle regole devono essere univoci, indipendentemente dalla posizione
+* `rules` i nodi sono di tipo cq:Page.
+* `rules` devono trovarsi in una posizione di repository con l&#39;autorizzazione di lettura per tutti.
+* I nomi delle regole devono essere univoci indipendentemente dalla posizione.
 
