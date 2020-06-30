@@ -1,12 +1,12 @@
 ---
 title: Configurate i tag delle risorse mediante Smart Content Service.
-description: Scoprite come configurare l’assegnazione di tag avanzati e l’aggiunta di tag avanzati in  Adobe Experience Manager mediante Smart Content Service.
+description: Scoprite come configurare i tag avanzati e i tag avanzati in [!DNL Adobe Experience Manager]mediante Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3d699f35c7b1ef832a0857fa2fa41aed1fe5a4e
+source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 71%
+source-wordcount: '1118'
+ht-degree: 64%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 71%
 
 L’articolo descrive le seguenti attività chiave necessarie per configurare il Servizio di contenuti avanzati. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
-* Crea una configurazione del Servizio di contenuti avanzati in [!DNL Experience Manager] per generare una chiave pubblica. Ottieni un certificato pubblico per l’integrazione di OAuth.
-* Crea un’integrazione in Adobe Developer Console e carica la chiave pubblica generata.
-* Configura l’istanza [!DNL Experience Manager] utilizzando la chiave API e altre credenziali di Adobe Developer Console.
-* Se necessario, abilita l’assegnazione tag automatica al caricamento delle risorse.
+1. Crea una configurazione del Servizio di contenuti avanzati in [!DNL Experience Manager] per generare una chiave pubblica. [Ottieni un certificato pubblico per l’integrazione di OAuth.](#obtain-public-certificate)
+1. [Crea un’integrazione in Adobe Developer Console e carica la chiave pubblica generata.](#create-adobe-i-o-integration)
+1. [Configurate la distribuzione](#configure-smart-content-service) utilizzando la chiave API e altre credenziali da Adobe Developer Console.
+1. [Verificare la configurazione](#validate-the-configuration).
+1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
 ## Prerequisiti {#prerequisites}
 
@@ -29,11 +30,13 @@ Prima di poter utilizzare Smart Content Service, accertatevi quanto segue per cr
 * Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
 
+Per abilitare i tag avanzati avanzati avanzati, oltre a quanto indicato sopra, installa anche il service pack [](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html)AEM più recente.
+
 ## Recuperare il certificato pubblico {#obtain-public-certificate}
 
 Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer Console.
 
-1. Nell’interfaccia di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti > Cloud Services]** > **[!UICONTROL Servizi cloud precedenti]**.
+1. Nell’interfaccia di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servizi cloud precedenti]**.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo e un nome per la configurazione di tag avanzati. Fai clic su **[!UICONTROL Crea]**.
@@ -46,6 +49,10 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
    Lascia vuoti gli altri campi per il momento (dovranno essere riempiti successivamente). Fai clic su **[!UICONTROL OK]**.
 
    ![Finestra di dialogo Servizio di contenuti avanzati di Experience Manager per fornire l’URL del servizio di contenuti](assets/aem_scs.png)
+
+   >[!NOTE]
+   >
+   >L&#39;URL fornito come URL  del servizio non è accessibile tramite browser e genera un errore 404. La configurazione funziona correttamente con lo stesso valore del parametro URL  servizio. Per informazioni sullo stato generale del servizio e sulla pianificazione della manutenzione, vedete [https://status.adobe.com](https://status.adobe.com).
 
 1. Fai clic su **[!UICONTROL Scarica certificato pubblico per integrazione OAuth]** e scarica il file del certificato pubblico `AEM-SmartTags.crt`.
 
@@ -84,7 +91,7 @@ Per utilizzare le API Smart Content Service, create un&#39;integrazione in Adobe
 
 ## Configurare il Servizio di contenuti avanzati {#configure-smart-content-service}
 
-Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tecnico, ID organizzazione, Segreto cliente, Server di autorizzazione e chiave API dall&#39;integrazione di Adobe Developer Console. La creazione di una configurazione cloud di tag avanzati consente l’autenticazione delle richieste API dall’istanza [!DNL Experience Manager].
+Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tecnico, ID organizzazione, Segreto cliente, Server di autorizzazione e chiave API dall&#39;integrazione di Adobe Developer Console. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
 
 1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti > Cloud Service > Servizi cloud precedenti]** per aprire la console [!UICONTROL Cloud Services].
 1. In **[!UICONTROL Tag avanzati risorse]**, apri la configurazione creata in precedenza. Nella pagina delle impostazioni del servizio, fai clic su **[!UICONTROL Modifica]**.
@@ -96,7 +103,6 @@ Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tec
 Dopo aver completato la configurazione, puoi usare un MBean JMX per convalidare la configurazione. Per eseguire la convalida, effettua le seguenti operazioni.
 
 1. Accedi al server di [!DNL Experience Manager] all’indirizzo `https://[aem_server]:[port]`.
-
 1. Passa a **[!UICONTROL Strumenti > Operazioni > Console Web]** per aprire la console OSGi. Fai clic su **[!UICONTROL Principale > JMX]**.
 1. Fai clic su **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
 1. Fai clic su **[!UICONTROL validateConfigs()]**. Nella finestra di dialogo **[!UICONTROL Validate Configurations]** (Convalida configurazioni), fai clic su **[!UICONTROL Invoke]** (Richiama).
