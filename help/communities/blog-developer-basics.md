@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -27,6 +30,7 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
 >[!NOTE]
 >
 >L&#39;infrastruttura sottostante della funzione blog è la funzione journal.
+
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -98,10 +102,10 @@ A partire da AEM 6.1 Communities, l’utilizzo di uno store [](/help/communities
 
 Consulta :
 
-* [Panoramica](/help/communities/srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](/help/communities/srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](/help/communities/accessing-ugc-with-srp.md) - linee guida di codifica
-* [Refactoring](/help/communities/socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Panoramica](/help/communities/srp.md) del provider delle risorse di storage - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](/help/communities/srp-and-ugc.md) - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con SRP](/help/communities/accessing-ugc-with-srp.md) - linee guida di codifica.
+* [Refactoring](/help/communities/socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
 ## Editore principale {#primary-publisher}
 
@@ -119,5 +123,5 @@ A partire da AEM 6.2, le modifiche precedentemente richieste per essere effettua
 
 Per incorporare contenuti multimediali in un articolo di blog, selezionate l&#39; `Embed Media from External Sites` icona :
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![chlimage_1-471](assets/chlimage_1-471.png)
 
