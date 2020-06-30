@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 3%
 
 ---
 
@@ -77,15 +80,14 @@ Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di
 
    * Esempio, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Aggiungere un nodo di filtri figlio
+* Aggiunta di un nodo di filtri figlio
 
    * Selezionare il `catalog`nodo
    * Seleziona **[!UICONTROL Crea nodo]**
 
       * Nome: `filters`
       * Tipo: `nt:unstructured`
-   * Seleziona **[!UICONTROL Salva tutto]**
-
+      * Seleziona **[!UICONTROL Salva tutto]**
 
 * Aggiungi `se_resource-tags` proprietà al `filters` nodo
 
@@ -93,12 +95,12 @@ Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di
    * Aggiungere una proprietà Multi
 
       * Nome: `se_resource-tags`
-      * Tipo:Stringa
-      * Valore: *&lt;immettere un[TagID](#pre-filter-tagids)>*
-      * Seleziona **[!UICONTROL multipla]**
-      * Seleziona **[!UICONTROL Aggiungi]**
+      * Tipo: Stringa
+      * Valore: *&lt;immettere un[ID](#pre-filter-tagids)tag>*
+         * Seleziona **[!UICONTROL multipla]**
+         * Seleziona **[!UICONTROL Aggiungi]**
 
-         * Nella finestra di dialogo a comparsa, selezionate `+` per aggiungere altri ID tag pre-filtro
+            * Nella finestra di dialogo a comparsa, selezionate `+` per aggiungere altri ID tag pre-filtro
 
 * Ripubblica il sito della community
 
@@ -116,5 +118,5 @@ Gli [IDtag](../../help/sites-developing/framework.md#tagid) pre-filtro devono co
 
 * [API di reporting](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API di Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [Reporting  API Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
