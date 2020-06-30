@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione lato client
 seo-title: Personalizzazione lato client
-description: Personalizzazione del comportamento o dell'aspetto lato client in AEM Communities
-seo-description: Personalizzazione del comportamento o dell'aspetto lato client in AEM Communities
+description: Personalizzazione del comportamento o dell'aspetto lato client negli AEM Communities
+seo-description: Personalizzazione del comportamento o dell'aspetto lato client negli AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
 
-# Personalizzazione lato client {#client-side-customization}
+# Personalizzazione lato client  {#client-side-customization}
 
 | **[⇐ Funzioni Essenziali](essentials.md)** | **[Personalizzazione lato server ⇒](server-customize.md)** |
 |---|---|
@@ -106,17 +109,18 @@ Gli stili personalizzati sostituiranno gli stili framework predefiniti e il comp
 >
 >Anche se le `scf-js` classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati in fogli di stile con l&#39;avvertenza che, mentre controllano gli stati degli elementi, ci possono essere effetti collaterali.
 
+
 ## Estensione di Javascript {#extending-javascript}
 
-Per estendere un’implementazione Javascript dei componenti, è necessario solo
+Per estendere un’implementazione Javascript per componenti, è necessario:
 
-1. Create un componente per l’app con un jcr:resourceSuperType impostato sul valore del jcr:resourceType del componente esteso, ad esempio social/forum/components/hbs/forum
-1. Esaminate il codice JavaScript predefinito del componente SCF per determinare quali metodi registrare con SCF.registerComponent()
-1. Copiare il codice JavaScript del componente esteso o iniziare da zero
-1. Estendi il metodo
+1. Create un componente per l’app con un jcr:resourceSuperType impostato sul valore del jcr:resourceType del componente esteso, ad esempio social/forum/components/hbs/forum.
+1. Esaminate il codice JavaScript predefinito del componente SCF per determinare quali metodi devono essere registrati utilizzando SCF.registerComponent().
+1. Copiate il codice JavaScript del componente esteso o iniziate da zero.
+1. Estende il metodo.
 1. Utilizzate SCF.registerComponent() per registrare tutti i metodi con le impostazioni predefinite o con gli oggetti e le viste personalizzati.
 
-### forum.js: Esempio di estensione del forum - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Esempio di estensione del forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -166,7 +170,7 @@ Queste versioni sono disponibili in:
 
 * `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
-Esempio:
+Ad esempio:
 
 * Nodo cartella client: `/etc/clientlibs/social/hbs/forum`
 * Proprietà Categories: `cq.social.hbs.forum`
@@ -185,7 +189,7 @@ Queste versioni si trovano nella cartella delle librerie SCF:
 
 * `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
-Esempio:
+Ad esempio:
 
 * Nodo cartella client: `/libs/social/forum/hbs/forum/clientlibs`
 * Proprietà Categories: `cq.social.author.hbs.forum`
