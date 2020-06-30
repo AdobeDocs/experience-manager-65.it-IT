@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 2%
 
 ---
 
@@ -35,6 +38,7 @@ I componenti Community disponibili sono elencati [qui](author-communities.md#ava
 >
 >Se non hai familiarità con AEM, consulta la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
 
+
 ### Accesso alla modalità Progettazione {#entering-design-mode}
 
 Se un componente **Community** non viene trovato nel browser Componenti (barra laterale), sarà necessario inserire `Design Mode` per aggiungere altri componenti Community. [Potrebbe essere necessario aggiungere anche librerie](#required-clientlibs) client (clientlibs) obbligatorie.
@@ -49,7 +53,7 @@ I componenti selezionati sono ora disponibili nel browser Componenti:
 
 ![chlimage_1-425](assets/chlimage_1-425.png)
 
-## ClientLibs richiesti {#required-clientlibs}
+## Clientlibs richiesti {#required-clientlibs}
 
 [Le librerie](../../help/sites-developing/clientlibs.md) lato client (clientlibs) sono necessarie per il corretto funzionamento (JavaScript) e lo stile (CSS) di un componente.
 
@@ -63,13 +67,13 @@ Quando si aggiunge un componente Community a una pagina, se il risultato è un e
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## Assegnazione di tag {#tagging}
+## Assegnazione tag {#tagging}
 
-Molte funzioni Community possono essere configurate per consentire ai membri di assegnare tag ai contenuti immessi (pubblicati) nell&#39;ambiente di pubblicazione.
+Molte funzioni di Communities possono essere configurate per consentire ai membri di assegnare tag ai contenuti immessi (pubblicati) nell&#39;ambiente di pubblicazione.
 
 Se l&#39;assegnazione di tag è consentita, la configurazione del sito community può essere impostata in modo da limitare gli spazi dei nomi presentati ai membri nell&#39;ambiente di pubblicazione. Consultate la console [Siti](sites-console.md#tagging)community.
 
-Funzioni che consentono l’aggiunta di tag: [blog](blog-feature.md), [calendario](calendar.md), libreria [](file-library.md)file, [forum](forum.md)
+Funzioni che consentono l’aggiunta di tag: [blog](blog-feature.md), [calendario](calendar.md), libreria [di](file-library.md)file, [forum](forum.md)
 
 Funzioni che utilizzano i tag: [catalogo](catalog.md), [ricerca](search.md), tag cloud [social](tagcloud.md)
 
@@ -79,7 +83,7 @@ Per informazioni sull’authoring:
 
 Per informazioni amministrative:
 
-* Creazione di spazi dei nomi dei tag (tassonomia): Amministrazione [dei tag](../../help/sites-administering/tags.md)
+* Creazione di spazi dei nomi dei tag (tassonomia): [Amministrazione dei tag](../../help/sites-administering/tags.md)
 * Configurazione sito community: vedere [TAG](sites-console.md#tagging)
 * [Assegnazione di tag ai contenuti generati dall&#39;utente](../../help/sites-authoring/tags.md)
 * [Assegnazione tag alle risorse di abilitazione](tag-resources.md)
