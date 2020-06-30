@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +36,7 @@ Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione ca
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.calendario</td>
+   <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -63,15 +66,15 @@ Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione ca
 
 ### Funzione Calendario {#calendar-function}
 
-Una struttura del sito community che include la funzione [](functions.md#calendar-function) Calendario avrà un `alendar`componente c configurato. La funzione Calendar (Calendario) supporta l&#39;identificazione di un gruppo [di utenti membro](users.md#privileged-members-group)privilegiato.
+Una struttura del sito community che include la funzione [](functions.md#calendar-function) Calendario avrà un `calendar` componente configurato. La funzione Calendar (Calendario) supporta l&#39;identificazione di un gruppo [di utenti membro](users.md#privileged-members-group)privilegiato.
 
 ### Accesso ai post del calendario (UGC) {#accessing-calendar-posts-ugc}
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi:
+Consulta:
 
 * [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
 * [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
