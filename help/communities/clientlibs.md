@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 1%
 
 ---
 
@@ -38,11 +41,11 @@ Se i clientlibs richiesti non sono disponibili, l’ [aggiunta di un componente 
 
 ### Esempio: Recensioni inserite senza Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![chlimage_1-426](assets/chlimage_1-426.png)
 
 ### Esempio: Recensioni inserite con Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-427](assets/chlimage_1-427.png)
 
 ## Identificazione delle librerie di client necessarie {#identifying-required-clientlibs}
 
@@ -53,9 +56,9 @@ Inoltre, da un’istanza di AEM, l’accesso alla Guida [ai componenti](/help/co
 Ad esempio, nella parte superiore della pagina [](https://localhost:4502/content/community-components/en/reviews.html) Recensioni i clientlibs richiesti sono elencati
 
 * cq.ckeditor
-* cq.social.hbs.recensioni
+* cq.social.hbs.reviews
 
-![chlimage_1-134](assets/chlimage_1-134.png)
+![chlimage_1-246](assets/chlimage_1-246.png)
 
 ## Aggiunta Di Clientlibs Richiesti {#adding-required-clientlibs}
 
@@ -63,32 +66,33 @@ Se si desidera aggiungere un componente Community a una pagina, sarà necessario
 
 Utilizzare [CRXDE|Lite](#using-crxde-lite) per modificare un elenco di clientlibslist esistente per una pagina di sito community.
 
-Per aggiungere una clientlib per un sito community utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Per aggiungere una clientlib per un sito community utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Passa a [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
-* Individuare il `clientlibslist` nodo della pagina in cui si desidera aggiungere il componente
+* Individuate [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de).
+* Individuare il `clientlibslist` nodo della pagina in cui si desidera aggiungere il componente:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Con `clientlibslist` nodo selezionato
+* Con `clientlibslist` il nodo selezionato:
 
-   * Individuare la proprietà String[]`scg:requiredClientLibs`
-   * Selezionare la stringa `Value` per accedere alla finestra di dialogo dell&#39;array String
+   * Individuare la proprietà String[] `scg:requiredClientLibs`.
+   * Selezionare la stringa `Value` per accedere alla finestra di dialogo dell&#39;array String.
 
-      * Scorri verso il basso se necessario
-      * Seleziona + per inserire una nuova libreria client
+      * Se necessario, scorrete verso il basso.
+      * Selezionate + per immettere una nuova libreria client.
 
-         * Ripeti per aggiungere altre librerie client
-      * Selezionare **OK**
-   * Seleziona **Salva tutto**
+         * Ripetete questa procedura per aggiungere altre librerie client.
 
+         * Selezionare **OK**.
+   * Selezionate **Salva tutto**.
 
 
 >[!NOTE]
 >
 >Se il sito non è un sito community, è necessario individuare l&#39;esistenza o la posizione delle librerie client in uso per il sito.
 
-Utilizzando l’esempio [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md) , in cui `site-name` è *attiva*, l’elenco dei clienti verrà visualizzato così se si aggiunge il componente recensioni:
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+Utilizzando l’esempio [Primi passi con i AEM Communities](/help/communities/getting-started.md) , dove `site-name` è *attivo*, questo è il modo in cui apparirebbe l’elenco clientliblist se si aggiungesse il componente recensioni:
+
+![chlimage_1-247](assets/chlimage_1-247.png)
 
