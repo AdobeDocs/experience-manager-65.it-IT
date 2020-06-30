@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
@@ -41,7 +41,7 @@ Nell’ambiente di authoring, passate alla console Badge:
 
 In questa console vengono visualizzati i simboli attualmente disponibili e dai quali è possibile aggiungere nuovi simboli.
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![badges-homepage](assets/badges-homepage.png)
 
 ## Crea badge {#create-badge}
 
@@ -49,7 +49,7 @@ Un contrassegno viene creato caricando un’immagine di dimensioni appropriate (
 
 Se l’ambiente di pubblicazione è una farm di editori, è necessario configurare la sincronizzazione [](/help/communities/sync.md)utente.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![badges-1](assets/badges-1.png)
 
 * **Carica immagine**
 
