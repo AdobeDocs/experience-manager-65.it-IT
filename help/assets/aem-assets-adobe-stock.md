@@ -3,10 +3,10 @@ title: Gestire [!DNL Adobe Stock] le risorse in [!DNL Adobe Experience Manager A
 description: Cercare, recuperare, ottenere licenze e [!DNL Adobe Stock] gestire risorse dall'interno [!DNL Adobe Experience Manager]. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 15%
+source-wordcount: '1113'
+ht-degree: 13%
 
 ---
 
@@ -34,8 +34,10 @@ Per consentire la comunicazione tra [!DNL Experience Manager] e [!DNL Adobe Stoc
 1. Click on [!DNL Experience Manager] logo. Seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Protezione]** > **[!UICONTROL Configurazioni Adobe IMS]**. Fai clic su **[!UICONTROL Crea]** e seleziona **[!UICONTROL Soluzione cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Riutilizzate un certificato esistente o selezionate **[!UICONTROL Crea nuovo certificato]**.
 1. Fai clic su **[!UICONTROL Crea certificato]**. Una volta creata, scaricate la chiave pubblica. Fai clic su **[!UICONTROL Avanti]**.
-1. Inserisci i valori appropriati nei campi **[!UICONTROL Titolo]**, **[!UICONTROL Server autorizzazioni]**, **[!UICONTROL Chiave API]**, **[!UICONTROL Segreto client]** e **[!UICONTROL Payload]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from [!DNL Adobe I/O].
-1. Aggiungete la chiave pubblica scaricata al vostro account di [!DNL Adobe I/O] servizio.
+1. Aggiungete la chiave pubblica scaricata al vostro account di [!DNL Adobe Developer Console] servizio. Fai clic su **[!UICONTROL Avanti]**. Lasciate aperta la schermata Configurazione [!UICONTROL account tecnico] Adobe IMS per fornire i valori a breve.
+1. Accedi ad [Adobe Developer Console](https://console.adobe.io). Assicuratevi che l&#39;account disponga delle autorizzazioni di amministratore per l&#39;organizzazione per la quale è richiesta l&#39;integrazione.
+1. Fate clic su **[!UICONTROL Crea nuovo progetto]** e fate clic su **[!UICONTROL Aggiungi API]**. Seleziona **[!UICONTROL Adobe Stock]** dall’elenco delle API [!UICONTROL disponibili]. Selezionare [!UICONTROL OAUTH 2.0 Web]. Configurare e copiare i vari valori presentati.
+1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Per informazioni dettagliate su questi valori, consultate Avvio [rapido dell&#39;autenticazione](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)JWT.
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -50,7 +52,7 @@ Per consentire la comunicazione tra [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 >[!NOTE]
 >
->Se sono presenti più [!DNL Adobe Stock] configurazioni, selezionate la configurazione desiderata nel pannello Preferenze  utente facendo clic sul logo *Utente* nell&#39;angolo superiore destro dell&#39;interfaccia [!DNL Experience Manager] utente.
+>Se sono presenti più [!DNL Adobe Stock] configurazioni, selezionate la configurazione desiderata nel pannello Preferenze  utente. Fate clic sul logo *Utente* nell’angolo superiore destro dell’interfaccia [!DNL Experience Manager] utente.
 
 ## Utilizzare e gestire [!DNL Adobe Stock] le risorse in [!DNL Experience Manager] {#usemanage}
 
@@ -86,7 +88,7 @@ In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricer
 
 Selezionate una risorsa da salvare in [!DNL Experience Manager]. Fate clic su [!UICONTROL Salva] nella barra degli strumenti nella parte superiore e fornite il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
 
-La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno, per indicare che sono disponibili in [!DNL Experience Manager Assets].
+La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno per indicare che sono disponibili in [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
