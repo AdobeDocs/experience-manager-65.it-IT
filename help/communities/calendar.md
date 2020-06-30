@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +28,7 @@ La funzione di calendario supporta la fornitura di informazioni sull&#39;evento 
 Questa sezione della documentazione descrive
 
 * Aggiunta della funzione calendario a un sito AEM
-* Impostazioni di configurazione per `Calendar`i componenti
+* Impostazioni di configurazione per `Calendar` i componenti
 
 ## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
 
@@ -39,13 +42,13 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando vengono incluse le librerie [lato client](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) richieste, viene visualizzato così il `Calendar` componente.
 
-![chlimage_1-147](assets/chlimage_1-147.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Configurazione del calendario {#configuring-calendar}
 
-Selezionate il `Calendar`componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionate il `Calendar` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-148](assets/chlimage_1-148.png) ![chlimage_1-149](assets/chlimage_1-149.png)
+![chlimage_1-113](assets/chlimage_1-113.png)![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### scheda Impostazioni {#settings-tab}
 
@@ -133,7 +136,7 @@ Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gl
 
 * **Segnala post**
 
-   Se questa opzione è selezionata, consentire ai membri di contrassegnare eventi o commenti di altri utenti come inappropriati. Il valore predefinito è selezionato**.**
+   Se questa opzione è selezionata, consentire ai membri di contrassegnare eventi o commenti di altri utenti come inappropriati. Il valore predefinito è selezionato.
 
 * **Elenco di motivi per segnalazione**
 
@@ -141,7 +144,7 @@ Nella scheda Moderazione **** utente, specificate in che modo vengono gestiti gl
 
 * **Motivo per segnalazione personalizzato**
 
-   Se questa opzione è selezionata, consentite ai membri di inserire il proprio motivo per cui un evento o un commento è contrassegnato come inappropriato. Il valore predefinito è deselezionato**.**
+   Se questa opzione è selezionata, consentite ai membri di inserire il proprio motivo per cui un evento o un commento è contrassegnato come inappropriato. Il valore predefinito è deselezionato.
 
 * **Soglia moderazione**
 
@@ -167,6 +170,7 @@ Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti n
 >
 >Per informazioni su come aggiungere un nuovo spazio nomi tag (tassonomia), visitate [Amministrazione tag](/help/sites-administering/tags.md) .
 
+
 #### Scheda Traduzione {#translation-tab}
 
 Nella scheda **Traduzione** , se la traduzione è abilitata per il sito della comunità, la traduzione può essere impostata per tradurre l&#39;intero thread (evento e commenti) invece di post specifici.
@@ -187,7 +191,7 @@ Altre capacità dipendono dal fatto che il visitatore del sito sia un moderatore
 
 Quando l’utente che ha effettuato l’accesso dispone di privilegi di moderatore o amministratore, può eseguire attività [di](/help/communities/moderate-ugc.md) moderazione (come consentito dalla configurazione del componente) su tutti gli eventi del calendario e i commenti inviati a un evento.
 
-![chlimage_1-150](assets/chlimage_1-150.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### Membri {#members}
 
@@ -201,13 +205,15 @@ In particolare, essi possono:
 * Elimina un proprio evento o commento calendario
 * Contrassegnare eventi o commenti di calendario di altri utenti
 
-![chlimage_1-151](assets/chlimage_1-151.png) ![chlimage_1-152](assets/chlimage_1-152.png)
+![chlimage_1-116](assets/chlimage_1-116.png)
+
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 #### Anonimo {#anonymous}
 
 I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere gli eventi del calendario postati, tradurli se supportati, ma non possono aggiungere un evento o un commento né contrassegnare eventi o commenti di altri utenti.
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Informazioni aggiuntive {#additional-information}
 
