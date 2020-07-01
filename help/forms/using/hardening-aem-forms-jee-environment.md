@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
+source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7665'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,6 @@ Per eseguire il server applicazione in cui sono distribuiti AEM Forms su JEE, ut
 
    * Seleziona **Utente non può cambiare la password**.
    * Nella scheda **Membro di** , assicurarsi che sia elencato il gruppo **Utenti** .
-
    >[!NOTE]
    >
    >Non è possibile modificare questa impostazione per PDF Generator.
@@ -201,7 +200,6 @@ Per eseguire il server applicazione in cui sono distribuiti AEM Forms su JEE, ut
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
-
    >[!NOTE]
    >
    > Il percorso di installazione predefinito di JBoss Application Server:
@@ -376,7 +374,7 @@ In Oracle, l&#39;account del database utilizzato richiede solo i privilegi CONNE
 1. In Centro modifiche, fate clic su **Blocca e modifica**.
 1. In Struttura dominio, fare clic su *[base_domain]* > **Servizi** > **JDBC** > **Origini** dati e, nel riquadro a destra, fare clic su **IDP_DS**.
 1. Nella schermata successiva, nella scheda **Configurazione** , fare clic sulla scheda Pool **di** connessioni e, nella casella **Proprietà** , digitare `integratedSecurity=true`.
-1. In Struttura dominio, fare clic su **[base_domain]** > **Servizi** > **JDBC** > **Origini** dati e, nel riquadro a destra, fare clic su **RM_DS**.
+1. In Struttura dominio, fare clic su **[base_dominio]** > **Servizi** > **JDBC** > **Origini** dati e, nel riquadro a destra, fare clic su **RM_DS**.
 1. Nella schermata successiva, nella scheda **Configurazione** , fare clic sulla scheda Pool **di** connessioni e, nella casella **Proprietà** , digitare `integratedSecurity=true`.
 1. Aggiungete il file sqljdbc_auth.dll al percorso del sistema Windows sul computer su cui è in esecuzione il server dell&#39;applicazione. Il file sqljdbc_auth.dll si trova con l&#39;installazione del driver Microsoft SQL JDBC 6.2.1.0.
 1. Impostare la protezione per SQL Server dalla modalità **mista** solo **a Autenticazione** Windows.
@@ -457,6 +455,16 @@ Nella tabella seguente sono descritte le tecniche di auditing e registrazione ut
   </tr> 
  </tbody> 
 </table>
+
+### Consentire a un utente non amministratore di eseguire PDF Generator
+
+È possibile consentire a un utente non amministratore di utilizzare PDF Generator. Normalmente, solo gli utenti con privilegi amministrativi possono utilizzare PDF Generator. Per consentire a un utente non amministratore di eseguire PDF Generator, effettuare le operazioni seguenti:
+
+1. Create un nome di variabile di ambiente PDFG_NON_ADMIN_ENABLED.
+
+1. Impostate il valore della variabile su TRUE.
+
+1. Riavviate l&#39;istanza dei moduli AEM.
 
 ## Configurazione di AEM Forms su JEE per l&#39;accesso oltre l&#39;azienda {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -676,10 +684,10 @@ Il processo di filtro referente può essere descritto come segue:
    1. Se è POST, il server dei moduli esegue il controllo dell&#39;intestazione del referente.
    1. Se si tratta di GET, il server dei moduli bypassa il controllo Referrer, a meno che *CSRF_CHECK_GETS* non sia impostato su true, nel qual caso esegue il controllo dell&#39;intestazione Referrer. *CSRF_CHECK_GETS* è specificato nel file *web.xml* dell’applicazione.
 
-1. Il server dei moduli verifica se l&#39;URI richiesto esiste nell&#39;elenco dei moduli:
+1. Il server dei moduli controlla se l&#39;URI richiesto esiste  :
 
-   1. Se l’URI è consentito, il server accetta la richiesta.
-   1. Se l’URI richiesto non è elencato, il server recupera il Referente della richiesta.
+   1. Se l’URI viene inserito nell&#39;elenco Consentiti, il server accetta la richiesta.
+   1. Se l’URI richiesto non viene inserito nell&#39;elenco Consentiti, il server recupera il Referente della richiesta.
 
 1. Se nella richiesta è presente un Referente, il server verifica se si tratta di un Referente Consentito. Se consentita, il server verifica la presenza di un&#39;eccezione di riferimento:
 
@@ -695,7 +703,7 @@ Il processo di filtro referente può essere descritto come segue:
 
 I AEM Forms in JEE forniscono un filtro referente per specificare il referente che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referente non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio GET, a meno che *CSRF_CHECK_GETS* non sia impostato su true. Se il numero di porta per una voce Referente consentito è impostato su 0, i AEM Forms su JEE consentiranno tutte le richieste con Referente da tale host, indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo le richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Il filtro del referente è disabilitato se tutte le voci nell&#39;elenco Referente consentito vengono eliminate.
 
-La prima volta che si installa Document Services, l&#39;elenco Referente consentito viene aggiornato con l&#39;indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referente consentito vengono restituiti dal sistema operativo host. Ad esempio, un server con indirizzo IP pari a 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), l&#39;elenco di nomi consentiti non viene aggiornato. Modificare l&#39;elenco Referente consentito in base all&#39;ambiente aziendale. Non distribuire il server moduli nell&#39;ambiente di produzione con l&#39;elenco Referente consentito predefinito. Dopo aver modificato uno qualsiasi degli URI, delle eccezioni di riferimento o di riferimento consentiti, assicurarsi di riavviare il server affinché le modifiche abbiano effetto.
+La prima volta che si installa Document Services, l&#39;elenco Referente consentito viene aggiornato con l&#39;indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referente consentito vengono restituiti dal sistema operativo host. Ad esempio, un server con indirizzo IP pari a 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato)  inserì nell&#39;elenco Consentiti non viene aggiornato. Modificare l&#39;elenco Referente consentito in base all&#39;ambiente aziendale. Non distribuire il server moduli nell&#39;ambiente di produzione con l&#39;elenco Referente consentito predefinito. Dopo aver modificato uno qualsiasi degli URI, delle eccezioni di riferimento o di riferimento consentiti, assicurarsi di riavviare il server affinché le modifiche abbiano effetto.
 
 **Gestione dell&#39;elenco di riferimenti consentiti**
 
@@ -1009,7 +1017,6 @@ Per impostazione predefinita, i AEM Forms sull&#39;installazione chiavi in mano 
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
-
    >[!NOTE]
    >
    > Il percorso di installazione predefinito di JBoss Application Server:
