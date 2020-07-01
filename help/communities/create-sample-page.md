@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +28,7 @@ Un&#39;altra opzione per l&#39;esplorazione con componenti campione consiste nel
 
 ## Creazione di un sito community {#create-a-community-site}
 
-È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva ad AEM Communities](getting-started.md).
+È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva agli AEM Communities](getting-started.md).
 
 La differenza principale è che questa esercitazione creerà un nuovo modello di sito community che contiene solo la funzione [](functions.md#page-function) Pagina per creare un sito community semplice privo di altre funzioni (diverse dalle funzioni precablate di base per tutti i siti community).
 
@@ -33,7 +36,7 @@ La differenza principale è che questa esercitazione creerà un nuovo modello di
 
 Per iniziare, create un semplice modello [di sito per](sites.md)community.
 
-Nella navigazione globale in un’istanza di creazione, selezionate **[!UICONTROL Strumenti > Community > Modelli]** sito.
+Per la navigazione globale in un’istanza di creazione, selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Modelli **** sito.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -78,10 +81,10 @@ Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!U
    * `Name`: esempio
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`: scegli `Single Page Template`
 
+      * `Template`: scegli `Single Page Template`
+      ![chlimage_1-86](assets/chlimage_1-86.png)
 
-![chlimage_1-86](assets/chlimage_1-86.png)
 
 * Seleziona `Next`
 * Incremento `2 - Design`
@@ -95,7 +98,7 @@ Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!U
 
 * Seleziona `Create`
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+   ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ## Pubblicare il sito {#publish-the-site}
 
