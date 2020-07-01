@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 6%
 
 ---
 
@@ -24,16 +27,17 @@ La funzione commenti consente ai visitatori del sito che hanno effettuato l’ac
 
 Il documento descrive:
 
-* Aggiunta `Comments`a una pagina.
-* Impostazioni di configurazione per il `Comments`componente.
+* Aggiunta `Comments` a una pagina.
+* Impostazioni di configurazione per il `Comments` componente.
 
 >[!NOTE]
 >
 >L&#39;invio anonimo di un commento non è supportato. I visitatori del sito devono registrarsi (diventare membri) ed effettuare l’accesso per partecipare.
 
+
 ### Aggiunta di commenti a una pagina {#adding-comments-to-a-page}
 
-Per aggiungere un `Comments`componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
+Per aggiungere un `Comments` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
 
 * `Communities / Comments`
 
@@ -41,19 +45,22 @@ trascinatelo nella posizione desiderata su una pagina, ad esempio una posizione 
 
 Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/essentials-comments.md#essentials-for-client-side) richieste, viene visualizzato così il `Comments`componente.
+Quando sono incluse le librerie [lato client](/help/communities/essentials-comments.md#essentials-for-client-side) richieste, viene visualizzato così il `Comments` componente.
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Su una pagina può esistere un solo `Comments`componente. Alcune funzioni di Communities includono già commenti, ad esempio blog, calendario, forum, QnA e recensioni.
+>Su una pagina può esistere un solo `Comments` componente. Alcune funzioni di Communities includono già commenti, ad esempio blog, calendario, forum, QnA e recensioni.
+
 
 ### Configurazione dei commenti {#configuring-comments}
 
 Selezionate il `Comments` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![configurare le impostazioni delle icone](assets/configure.png) dei ![commenti](assets/commentssettings.png)
+![icona di configurazione](assets/configure.png)
+
+![commenti, impostazioni](assets/commentssettings.png)
 
 #### Scheda Commenti {#comments-tab}
 
@@ -157,19 +164,19 @@ Modificando il Tipo risorsa commento, il sistema di commenti non genera più un&
 
 Una volta noti i tipi di risorse personalizzati, immettete la modalità [](/help/sites-authoring/default-components-designmode.md) Progettazione e fate doppio clic sul `Comments` componente inserito per aprire una finestra di dialogo con una scheda aggiuntiva.
 
-Nella scheda Tipi **di** risorse, specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting`componenti:
+Nella scheda Tipi **di** risorse, specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting` componenti:
 
-![chlimage_1-144](assets/chlimage_1-144.png)
+![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **Tipo risorsa commento**
 
-   Passa a resourceType di un `comment`componente esteso (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
+   Passa a resourceType di un `comment` componente esteso (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
 
    Questa risorsa identifica il resourceType dell&#39;UGC creato quando un visitatore inserisce un commento.
 
 * **Tipo di risorsa per votazione**
 
-   Passa a resourceType di un `voting`componente esteso in /apps. Esempio, `/apps/social/components/hbs/voting`
+   Passa a resourceType di un `voting` componente esteso in /apps. Esempio, `/apps/social/components/hbs/voting`
 
    Questa risorsa identifica il tipo di risorsa dell&#39;UGC creato quando un visitatore pubblica un voto.
 
