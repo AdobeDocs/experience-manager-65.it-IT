@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -122,7 +122,7 @@ Per visualizzare le voci di registro:
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui fornitori di risorse di archiviazione e archiviazione).
+È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui provider di risorse di archiviazione e archiviazione).
 
 Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
@@ -264,7 +264,7 @@ A scopo investigativo, utilizzando JSRP per esempio, la cartella di base contene
 
 * `/content/usergenerated/asi/jcr`
 
-Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella dei simboli, ad esempio
+Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella dei simboli, ad esempio:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
