@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 7%
@@ -160,7 +160,7 @@ Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti n
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Settings **. I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
