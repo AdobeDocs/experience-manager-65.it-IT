@@ -11,20 +11,35 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 4%
 
 ---
 
 
 # Funzionalità di messaggistica {#messaging-feature}
 
-Oltre alle interazioni visibili al pubblico che si verificano nei forum e nei commenti, la funzione di messaggistica di AEM Communities consente ai membri della community di interagire più privatamente tra di loro.
+Oltre alle interazioni visibili al pubblico che si verificano nei forum e nei commenti, la funzione di messaggistica degli AEM Communities consente ai membri della community di interagire più privatamente tra di loro.
 
 Questa funzione può essere inclusa quando si crea un sito [](/help/communities/overview.md#communitiessites) community.
 
 La funzione di messaggistica consente di:
 
-**A** - inviare un messaggio a uno o più membri **B** della community - inviare messaggi diretti in [massa a gruppi](/help/communities/messaging.md#group-messaging)**C** di membri della community - inviare un messaggio con allegati **D** - inoltrare un messaggio ************ E - rispondere a un messaggioF - eliminare un messaggioG - ripristinare un messaggio eliminato
+**A** - invia un messaggio a uno o più membri della community
+
+**B** - inviare [in massa messaggi diretti ai gruppi di membri della comunità](/help/communities/messaging.md#group-messaging)
+
+**C** - Invia un messaggio con allegati
+
+**D** - Inoltra un messaggio
+
+**E** - risposta a un messaggio
+
+**F** - eliminazione di un messaggio
+
+**G** - ripristino di un messaggio eliminato
 
 ![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
 
@@ -37,6 +52,7 @@ Per attivare e modificare la funzione di messaggistica, vedi:
 >
 >Non è supportato l’aggiunta di `Compose Message, Message, or Message List` componenti (nel gruppo di `Communities`componenti) a una pagina in modalità di modifica dell’autore.
 
+
 ## Configurare i componenti per la messaggistica {#configure-messaging-components}
 
 Quando la messaggistica è abilitata per un sito community, viene configurata senza bisogno di ulteriori configurazioni. Le informazioni vengono fornite se è necessario modificare la configurazione predefinita.
@@ -45,10 +61,10 @@ Quando la messaggistica è abilitata per un sito community, viene configurata se
 
 Per modificare la configurazione dell’elenco di messaggi per le pagine **Posta in arrivo**, **Inviati** e **Cestino** della funzione di messaggistica, aprite il sito in modalità [di modifica](/help/communities/sites-console.md#authoring-site-content)dell’autore.
 
-1. In `Preview`modalità, selezionate il collegamento **Messaggi** per aprire la pagina di messaggi principale. Selezionate quindi **Inbox**, **Inviati elementi** o **Cestino** per configurare il componente per l’elenco dei messaggi.
+1. In `Preview` modalità, selezionate il collegamento **Messaggi** per aprire la pagina di messaggi principale. Selezionate quindi **Inbox**, **Inviati elementi** o **Cestino** per configurare il componente per l’elenco dei messaggi.
 
 1. In `Edit` modalità, selezionate il componente sulla pagina.
-1. Per accedere alla finestra di dialogo di configurazione, annullare l’ereditarietà selezionando l’ `link`icona .
+1. Per accedere alla finestra di dialogo di configurazione, annullare l’ereditarietà selezionando l’ `link` icona .
 Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di configurazione per aprire la finestra di dialogo di configurazione.
 
 1. Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39; `broken link` icona.
@@ -97,7 +113,7 @@ Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di
 
 * **Pulsante Elimina**
 
-   Se questa opzione è selezionata, visualizza un `Delete`pulsante che consente di contrassegnare il messaggio come letto. Duplica la funzionalità di eliminazione se **`Message Options`** è selezionata.
+   Se questa opzione è selezionata, visualizza un `Delete` pulsante che consente di contrassegnare il messaggio come letto. Duplica la funzionalità di eliminazione se **`Message Options`** è selezionata.
 
 * **Opzioni messaggio**
 
