@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 2%
 
 ---
 
 
 # Console community {#communities-consoles}
 
-Le console di AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere a attività amministrative quali:
+Le console AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere alle attività amministrative come:
 
 * [Creazione di un sito community](sites-console.md)
 * Aggiunta di [gruppi](groups.md) nidificati nel sito
@@ -34,6 +37,7 @@ Nell’ambiente di authoring, dopo aver effettuato l’accesso con i privilegi d
 >[!NOTE]
 >
 >Nell&#39;ambiente di pubblicazione, un sito [](sites-console.md) community visualizzerà una voce di `Administration` menu quando il membro che ha effettuato l&#39;accesso dispone dei privilegi appropriati.
+
 
 ## Pannello di navigazione globale {#global-navigation-panel}
 
@@ -64,7 +68,7 @@ Per accedere alle varie console Community, dalla navigazione globale selezionate
 
 * [Rapporti](reports.md)
 
-   La console Rapporti consente di generare rapporti su assegnazioni, visualizzazioni di pagina e contenuto pubblicato (UGC) quando un sito community ha [attivato Adobe Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
+   La console Rapporti consente di generare rapporti su assegnazioni, visualizzazioni di pagina e contenuto pubblicato (UGC) quando un sito community ha [attivato Adobe  Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
 
 * [Riferimenti](resources.md)
 
@@ -72,4 +76,4 @@ Per accedere alle varie console Community, dalla navigazione globale selezionate
 
 ## Console Strumenti {#tools-console}
 
-Per accedere a Strumenti [](tools.md) Community (precedentemente la console di amministrazione), dalla navigazione globale: **[!UICONTROL Strumenti > Community]**
+Per accedere a Strumenti [](tools.md) Community (precedentemente la console di amministrazione), dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Community]**
