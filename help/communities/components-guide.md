@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 2%
 
 ---
 
@@ -33,10 +36,10 @@ Per accedere al sito Community Components, consulta
 
 Le interazioni con i componenti Community variano a seconda:
 
-* Server (autore o pubblicazione)
-* Se il visitatore del sito ha effettuato o meno l&#39;accesso
-* Se avete effettuato l’accesso, i privilegi assegnati al membro
-* Utilizzato o meno l&#39;SRP predefinito, [JSRP](jsrp.md),
+* Server (autore o pubblicazione).
+* Indica se il visitatore del sito ha effettuato o meno l&#39;accesso.
+* Se avete effettuato l’accesso, i privilegi assegnati al membro.
+* Indica se l&#39;SRP predefinito, [JSRP](jsrp.md), è in uso o meno.
 
 Per attivare la modalità di modifica, al momento dell&#39;authoring, inserire `editor.html` o `cf#` come primo segmento di percorso dopo il nome del server:
 
@@ -59,6 +62,7 @@ Per attivare la modalità di modifica, al momento dell&#39;authoring, inserire `
 >Per informazioni generali sull’authoring, consulta la guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
 >Se non hai familiarità con AEM, consulta la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
+
 
 ### Home page {#home-page}
 
@@ -107,9 +111,11 @@ Nella scheda **Modelli** :
    Se questa opzione è deselezionata, la Guida ai componenti utilizzerà la risorsa esistente nell&#39;archivio (un nodo jcr secondario di un nodo par).
 
    * il testo visualizzato è: &quot;Questo componente è incluso tramite il relativo nodo par.&quot;
+
    Se questa opzione è selezionata, la Guida ai componenti utilizzerà la funzione sling per includere dinamicamente un componente del resourceType del nodo secondario (risorsa non esistente).
 
    * il testo visualizzato è: &quot;Questo componente è incluso dinamicamente.&quot;
+
    Il valore predefinito è deselezionato.
 
 ### Pubblicare le interazioni {#publish-interactions}
@@ -158,7 +164,7 @@ Utilizzando il componente commenti come esempio, nell’istanza di creazione o d
 
    * **Nome** `scg:showIde`
    * **Tipo** `String`
-   * **Valore**`true`
+   * **Valore** `true`
 
 1. Seleziona **[!UICONTROL Salva tutto]**
 1. Ricaricare la pagina Commenti nella guida
