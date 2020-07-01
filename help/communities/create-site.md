@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ## Creazione di un sito community {#create-a-community-site}
 
-Utilizzate l&#39;istanza di creazione per creare un sito community. Nell&#39;istanza di AEM Author:
+Utilizzate l&#39;istanza di creazione per creare un sito community. Nell&#39;istanza AEM Author:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
 1. Dalla navigazione globale, andate a **Navigazione, Community, Siti.**
@@ -29,7 +32,7 @@ La console Siti community offre una procedura guidata che guida l’utente attra
 
 Per iniziare a creare un nuovo sito community:
 
-* Selezionare il `Create`pulsante.
+* Selezionare il `Create` pulsante.
 
 ![createcommunitysite](assets/createcommunitysite.png)
 
@@ -54,7 +57,7 @@ Nel passaggio [Modello](/help/communities/sites-console.md#step2013asitetemplate
 
 * **Modello**: premuto per scegliere `Reference Site`
 
-Seleziona **Avanti**
+* Seleziona **Avanti**.
 
 ### Passaggio 2: Progettazione {#step-design}
 
@@ -68,7 +71,9 @@ Selezionate lo stile da applicare al modello. Quando viene selezionato, al tema 
 
 (Facoltativo) Caricate un&#39;immagine banner da visualizzare nelle pagine del sito. Il banner è fissato al bordo sinistro del browser, tra l&#39;intestazione del sito community e i collegamenti di navigazione. L’altezza del banner viene ritagliata a 120 pixel. Il banner non può essere ridimensionato in modo da adattarlo alla larghezza del browser e all&#39;altezza di 120 pixel.
 
-![chlimage_1-58](assets/chlimage_1-58.png) ![chlimage_1-59](assets/chlimage_1-59.png)
+![chlimage_1-284](assets/chlimage_1-284.png)
+
+![upload-image-site](assets/upload-image-site.png)
 
 Seleziona **Avanti**.
 
@@ -76,7 +81,7 @@ Seleziona **Avanti**.
 
 Nella fase Settings (Impostazioni), prima di selezionare `Next`, tenete presente che sono presenti sette sezioni che forniscono l&#39;accesso alle configurazioni che includono gestione utente, tag, moderazione, gestione dei gruppi, analisi, traduzione e abilitazione.
 
-Per provare a utilizzare le funzioni di abilitazione, consulta l’esercitazione [Guida introduttiva ad AEM Communities for Enablement](/help/communities/getting-started-enablement.md) .
+Per provare a utilizzare le funzioni di abilitazione, visita l’esercitazione [Guida introduttiva agli AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md) .
 
 #### User Management {#user-management}
 
@@ -92,6 +97,7 @@ Seleziona tutte le caselle di controllo per Gestione [utente](/help/communities/
 >
 >Per un ambiente di produzione, è necessario creare applicazioni Facebook e Twitter personalizzate. Consultate Accesso [social network con Facebook e Twitter](/help/communities/social-login.md).
 
+
 ![impostazioni del sito community](assets/site-settings.png)
 
 #### TAGGING {#tagging}
@@ -103,7 +109,7 @@ La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esem
 * Tipo `tut`
 * Seleziona `Tutorial`
 
-![chlimage_1-60](assets/chlimage_1-60.png)
+![chlimage_1-286](assets/chlimage_1-286.png)
 
 #### ROLES {#roles}
 
@@ -120,21 +126,22 @@ Ad esempio,
 >
 >[Il servizio](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Tunnel consente la selezione di membri e gruppi esistenti solo nell’ambiente di pubblicazione.
 
+
 ![ruoli utente nel nuovo sito](assets/site-admin-1.png)
 
 #### MODERATION {#moderation}
 
 Accettate le impostazioni globali predefinite per la [moderazione](/help/communities/sites-console.md#moderation) del contenuto generato dall’utente (UGC).
 
-![chlimage_1-61](assets/chlimage_1-61.png)
+![chlimage_1-287](assets/chlimage_1-287.png)
 
 #### ANALYTICS {#analytics}
 
-Se Adobe Analytics dispone di una licenza e sono stati configurati un servizio e un framework cloud di Analytics, è possibile abilitare Analytics e selezionare il framework.
+Se Adobe  Analytics è dotato di licenza e  è stato configurato un servizio cloud e un framework Analytics, è possibile abilitare  Analytics e selezionare il framework.
 
-Consultate Configurazione [di Analytics per le funzioni](/help/communities/analytics.md)Community.
+Consultate [Configurazione Analytics per le funzioni](/help/communities/analytics.md)Community.
 
-![chlimage_1-62](assets/chlimage_1-62.png)
+![chlimage_1-288](assets/chlimage_1-288.png)
 
 #### TRANSLATION {#translation}
 
@@ -147,21 +154,23 @@ Le impostazioni [di](/help/communities/sites-console.md#translation) traduzione 
 * Seleziona **Traduci tutta la pagina**
 * Opzione Mantieni persistenza predefinita
 
-![chlimage_1-63](assets/chlimage_1-63.png)
+![chlimage_1-289](assets/chlimage_1-289.png)
 
 #### ENABLEMENT {#enablement}
 
 Lasciate vuoto quando create una community di coinvolgimento.
 
-Per un’esercitazione simile per creare rapidamente una community di [abilitazione](/help/communities/overview.md#enablement-community), consultate [Guida introduttiva ad AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md).
+Per un’esercitazione simile per creare rapidamente una community di [abilitazione](/help/communities/overview.md#enablement-community), consultate [Guida introduttiva ai AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md).
 
 Seleziona **Avanti**.
+
+![chlimage_1-290](assets/chlimage_1-290.png)
 
 ### Passaggio 4: Crea sito community {#step-create-communities-site}
 
 Seleziona **Crea.**
 
-![chlimage_1-64](assets/chlimage_1-64.png)
+![chlimage_1-291](assets/chlimage_1-291.png)
 
 Al termine del processo, la cartella del nuovo sito viene visualizzata nella console Community - Siti.
 
@@ -210,18 +219,16 @@ UGC non è incluso nel pacchetto del sito.
 >
 >Nell’istanza di creazione, dal menu principale:
 >
->1. Selezionare **[!UICONTROL Strumenti > Operazioni > Replica]** .
+>1. Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]** .
 >1. Selezionate **[!UICONTROL Agenti sull’autore]**.
 >1. Selezionate Agente **[!UICONTROL predefinito (pubblicazione)]**.
 >1. Accanto a **[!UICONTROL Impostazioni]**, selezionare **[!UICONTROL Modifica]**.
 >1. Nella finestra di dialogo a comparsa per Impostazioni agente, selezionate la scheda **[!UICONTROL Trasporto]** .
->1. In URI, modificate il numero di porta, 4503, in numero di porta desiderato >
-   >    * Ad esempio, per utilizzare la porta 6103:
-      >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
->
-1. Selezionare **[!UICONTROL OK]**.
-1. (Facoltativo) Selezionare **[!UICONTROL Cancella]** o **[!UICONTROL Forza tentativo]** per ripristinare la coda di replica.
+>1. In URI, modificate il numero di porta 4503 in base al numero di porta desiderato. Ad esempio, per utilizzare la porta 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>1. Selezionare **[!UICONTROL OK]**.
+>1. (Facoltativo) Selezionare **[!UICONTROL Cancella]** o **[!UICONTROL Forza tentativo]** per ripristinare la coda di replica.
 
+>
 
 
 
@@ -229,11 +236,11 @@ UGC non è incluso nel pacchetto del sito.
 
 Dopo aver verificato che il server di pubblicazione sia in esecuzione, selezionate l&#39;icona del mondo per pubblicare il sito della community.
 
-![chlimage_1-65](assets/chlimage_1-65.png)
+![chlimage_1-292](assets/chlimage_1-292.png)
 
 Quando il sito della community è stato pubblicato correttamente, viene visualizzato un breve messaggio:
 
-![chlimage_1-66](assets/chlimage_1-66.png)
+![chlimage_1-293](assets/chlimage_1-293.png)
 
 ### Nuovi gruppi di utenti della community {#new-community-user-groups}
 
@@ -254,11 +261,11 @@ Ricorda che [Aaron McDonald](/help/communities/tutorials.md#demo-users) è membr
 * Moderatori di coinvolgimento community
 * Partecipazione community (indirettamente come membro del gruppo Moderatori)
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![chlimage_1-294](assets/chlimage_1-294.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 ## Configura per errore di autenticazione {#configure-for-authentication-error}
 
@@ -293,7 +300,7 @@ Per iniziare:
 
    * Aggiungi proprietà:
 
-      * **Nome** sling:match
+   * **Nome** sling:match
       * **Stringa tipo**
       * **Valore** localhost.4503/$(deve terminare con il carattere &#39;$&#39;)
    * Aggiungi proprietà:
@@ -313,13 +320,14 @@ Per iniziare:
 >
 >Per disattivare, è sufficiente preimpostare il valore della `sling:match` proprietà con &#39;x&#39; - `xlocalhost.4503/$` - e **Salva tutto**.
 
-![chlimage_1-69](assets/chlimage_1-69.png)
+
+![chlimage_1-297](assets/chlimage_1-297.png)
 
 #### Risoluzione dei problemi: Errore durante il salvataggio della mappa {#troubleshooting-error-saving-map}
 
 Se non è possibile salvare le modifiche, assicurarsi che il nome del nodo sia `localhost.4503`, con un separatore &#39;punto&#39; e non `localhost:4503` con un separatore &#39;due punti&#39;, in quanto non `localhost`è un prefisso valido per lo spazio nomi.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![chlimage_1-298](assets/chlimage_1-298.png)
 
 #### Risoluzione dei problemi: Impossibile eseguire il reindirizzamento {#troubleshooting-fail-to-redirect}
 
@@ -336,4 +344,5 @@ Dopo ogni modifica, ricordate di **salvare** e **pubblicare** nuovamente il sito
 >[!NOTE]
 >
 >Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](/help/sites-authoring/qg-page-authoring.md)di authoring.
+
 
