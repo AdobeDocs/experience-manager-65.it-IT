@@ -8,7 +8,10 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 4c4a5a15e9cbb5cc22bc5999fb40f1d6db3bb091
+workflow-type: tm+mt
+source-wordcount: '1641'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Dopo aver creato una comunicazione interattiva, l&#39;agente può aprire la comu
 
 Durante la preparazione della comunicazione interattiva tramite l&#39;interfaccia utente dell&#39;agente, l&#39;agente gestisce i seguenti aspetti della comunicazione interattiva nell&#39;interfaccia utente dell&#39;agente prima di inviarla a un processo di post:
 
-* **Dati**: Nella scheda Dati dell&#39;interfaccia utente dell&#39;agente vengono visualizzate tutte le variabili modificabili dall&#39;agente e le proprietà del modello dati del modulo sbloccato nella comunicazione interattiva. Queste variabili/proprietà vengono create durante la modifica o la creazione di frammenti di documento inclusi nella comunicazione interattiva. La scheda Dati include anche tutti i campi creati nel modello XDP/canale di stampa. La scheda Dati viene visualizzata solo quando sono presenti variabili, proprietà del modello dati del modulo o campi nella comunicazione interattiva modificabili dall&#39;agente.
+* **Dati**: Nella scheda Dati dell&#39;interfaccia utente dell&#39;agente vengono visualizzate tutte le variabili modificabili dall&#39;agente e le proprietà del modello di dati del modulo sbloccato nella comunicazione interattiva. Queste variabili/proprietà vengono create durante la modifica o la creazione di frammenti di documento inclusi nella comunicazione interattiva. La scheda Dati include anche tutti i campi creati nel modello XDP/canale di stampa. La scheda Dati viene visualizzata solo quando sono presenti variabili, proprietà del modello dati del modulo o campi nella comunicazione interattiva modificabili dall&#39;agente.
 * **Contenuto**: Nella scheda Contenuto, l&#39;agente gestisce il contenuto, ad esempio frammenti di documento e variabili di contenuto, nella comunicazione interattiva. Durante la creazione della comunicazione interattiva nelle proprietà di tali frammenti di documento, l&#39;agente può apportare le modifiche desiderate nel frammento di documento. L&#39;agente può inoltre riordinare, aggiungere o rimuovere un frammento di documento e aggiungere interruzioni di pagina, se consentito.
 * **Allegati**: La scheda Allegati viene visualizzata nell’interfaccia utente dell’agente solo se la comunicazione interattiva contiene degli allegati o se l’agente dispone dell’accesso alla libreria. L&#39;agente può o non può essere autorizzato a modificare gli allegati.
 
@@ -34,7 +37,7 @@ Durante la preparazione della comunicazione interattiva tramite l&#39;interfacci
 
    >[!NOTE]
    >
-   >L&#39;interfaccia utente dell&#39;agente funziona solo se la comunicazione interattiva selezionata ha un canale di stampa.
+   >L’interfaccia utente dell’agente funziona solo se la comunicazione interattiva selezionata dispone di un canale di stampa.
 
    ![openagentiui](assets/openagentiui.png)
 
@@ -64,7 +67,7 @@ Nella scheda Contenuto, gestite il contenuto, ad esempio frammenti di documento 
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![evidenziato modulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra dell’anteprima, è possibile disattivare o abilitare la funzionalità per passare al frammento di documento quando testo, paragrafo o campo di dati pertinenti vengono toccati o selezionati nell’anteprima.
+   Nella scheda Contenuto o Dati, toccando Evidenzia moduli selezionati nel contenuto ( ![evidenziato modulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) in alto a sinistra dell&#39;anteprima, è possibile disattivare o abilitare la funzionalità per passare al frammento di documento quando testo, paragrafo o campo di dati pertinenti vengono toccati o selezionati nell&#39;anteprima.
 
    I frammenti che possono essere modificati dall’agente durante la creazione della comunicazione interattiva sono contrassegnati dall’icona Modifica contenuto selezionato ( ![iconeditedselect content](assets/iconeditselectedcontent.png)). Toccate l’icona Modifica contenuto selezionato per avviare il frammento in modalità di modifica e apportare le modifiche necessarie. Utilizzate le seguenti opzioni per formattare e gestire il testo:
 
@@ -74,6 +77,7 @@ Nella scheda Contenuto, gestite il contenuto, ad esempio frammenti di documento 
       * [Evidenziare parti di testo](#highlightemphasize)
    * [Caratteri speciali](#specialcharacters)
    * [Scelte rapide da tastiera](/help/forms/using/keyboard-shortcuts.md)
+
    Per ulteriori informazioni sulle azioni disponibili per vari frammenti di documento nell&#39;interfaccia utente di Agent, vedere [Azioni e informazioni disponibili nell&#39;interfaccia](#actionsagentui)utente di Agent.
 
 1. Per aggiungere un&#39;interruzione di pagina all&#39;output di stampa della comunicazione interattiva, posizionare il cursore nel punto in cui si desidera inserire un&#39;interruzione di pagina e selezionare Interruzione di pagina prima o Interruzione di pagina dopo ( ![interruzione di pagina prima](assets/pagebreakbeforeafter.png)).
@@ -167,3 +171,41 @@ L&#39;interfaccia utente dell&#39;agente supporta 210 caratteri speciali. L&#39;
 * Ignora elenchi puntati/numerati: Consente di saltare elenchi puntati/numerati nel frammento di documento elenco.
 * Valori non compilati (info): Indica il numero di variabili non compilate nel frammento di documento.
 
+## Salva le comunicazioni interattive come bozza {#save-as-draft}
+
+È possibile utilizzare l&#39;interfaccia utente agente per salvare una o più bozze per ogni comunicazione interattiva e recuperare la bozza in un secondo momento per continuare a lavorarci. È possibile specificare un nome diverso per ciascuna bozza per identificarla.
+
+Adobe consiglia di eseguire queste istruzioni in sequenza per salvare correttamente una comunicazione interattiva come bozza.
+
+### Abilitare la funzione Salva come bozza {#before-save-as-draft}
+
+Per impostazione predefinita, la funzione Salva come bozza non è abilitata. Per attivare la funzione, effettuate le seguenti operazioni:
+
+1. Implementare l&#39;interfaccia [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). L&#39;SPI consente di salvare la versione bozza della comunicazione interattiva nel database con un ID bozza come identificatore univoco.
+1. Passa a `https://'[server]:[port]'/system/console/configMgr`.
+1. Toccate **[!UICONTROL Crea configurazione]** corrispondenza.
+1. Selezionate **[!UICONTROL Abilita salvataggio con CCRDocumentInstanceService]** e toccate **[!UICONTROL Salva]**.
+
+### Salvataggio di una comunicazione interattiva come bozza {#save-as-draft-agent-ui}
+
+Per salvare una comunicazione interattiva come bozza, effettuate le seguenti operazioni:
+
+1. Selezionare una comunicazione interattiva in Forms Manager e toccare **[!UICONTROL Apri interfaccia utente]** agente.
+
+1. Apportate le modifiche necessarie nell&#39;interfaccia utente dell&#39;agente e toccate **[!UICONTROL Salva come bozza]**.
+
+1. Specificate il nome della bozza nel campo **[!UICONTROL Nome]** e toccate **[!UICONTROL Fine]**.
+
+Dopo aver salvato la comunicazione interattiva come bozza, toccate **[!UICONTROL Salva modifiche]** per salvare eventuali ulteriori modifiche alla bozza.
+
+### Recuperare la bozza di una comunicazione interattiva {#retrieve-draft}
+
+Dopo aver salvato una comunicazione interattiva come bozza, potete recuperarla per continuare a lavorarci. Recuperate la comunicazione interattiva utilizzando:
+
+`https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
+
+[draft] si riferisce all&#39;identificatore univoco per la versione bozza che viene generata dopo il salvataggio di una comunicazione interattiva come bozza.
+
+>[!NOTE]
+>
+>Se dopo il salvataggio come bozza apportate delle modifiche alla comunicazione interattiva, la versione bozza non viene aperta.
