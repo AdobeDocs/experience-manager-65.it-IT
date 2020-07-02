@@ -1,6 +1,6 @@
 ---
 title: 'Casella in entrata  '
-seo-title: 'Casella in entrata  '
+seo-title: Casella in entrata
 description: Gestione delle attività con la casella in entrata
 seo-description: Gestione delle attività con la casella in entrata
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 83%
+source-wordcount: '1148'
+ht-degree: 76%
 
 ---
 
@@ -48,7 +48,7 @@ Queste notifiche arrivano nella casella in entrata, dove puoi visualizzarle e in
 >* [Progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md) 
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
->* [Moduli](/help/forms/home.md)
+>* [Forms](/help/forms/home.md)
 >
 
 
@@ -72,7 +72,7 @@ AEM pronto all&#39;uso è precaricato con quattro attività assegnate al gruppo 
 * Abilita raccolta di statistiche di utilizzo aggregati
 * [Configura HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Apertura della casella in entrata   {#opening-the-inbox}
+## Apertura della casella in entrata  {#opening-the-inbox}
 
 Per aprire la casella in entrata delle notifiche AEM:
 
@@ -137,29 +137,36 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 L&#39;opzione Controllo amministratore consente agli amministratori di:
 
+* Personalizzare le colonne Inbox di AEM
+
 * Personalizzare il testo dell’intestazione e il logo
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
 
-L’opzione Controllo amministratore è visibile solo ai membri del gruppo Amministratori o Amministratori di workflow.
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo.
 
-![admin-control](assets/admin-control.png)
+* **Personalizzazione** colonna: Personalizzate una Casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
+   * **Aggiungi colonna**: Selezionate una colonna da aggiungere in AEM Inbox.
+   * **Modifica colonna**: Passate il mouse sul titolo della colonna e toccate l&#39;icona di ![modifica](assets/edit.svg) per immettere un nome visualizzato per la colonna.
+   * **Elimina colonna**: Toccate l&#39;icona ![Elimina](assets/delete_updated.svg) per eliminare la colonna dalla Casella in entrata AEM.
+   * **Sposta colonna**: Trascinate l’icona di ![spostamento](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella Casella in entrata AEM.
+   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalizzazione branding**
 
-   * **Personalizzare il testo dell’intestazione:** Specificate il testo da visualizzare nell’intestazione per sostituire il testo predefinito di **Adobe Experience Manager** .
+   * **Personalizzare il testo dell’intestazione:** Specificate il testo da visualizzare nell’intestazione per sostituire il testo predefinito dell’Adobe Experience Manager **** .
 
    * **Personalizza logo:** Specificate l&#39;immagine da visualizzare nell&#39;intestazione come logo. Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine nel campo.
 
 * **Navigazione utente**
-   * **Nascondi opzioni di navigazione:** Selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili quando si tocca il logo Adobe Experience Manager o si tocca un testo.
+   * **Nascondi opzioni di navigazione:** Selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili quando si tocca  logo Adobe Experience Manager o testo.
 * **Salva:** Toccate/fate clic su questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
 >[!NOTE]
 >
->Sebbene sia possibile selezionare più elementi, è possibile eseguire azioni su un solo elemento alla volta.
+>Sebbene sia possibile selezionare più elementi, le azioni possono essere eseguite solo su un elemento alla volta.
 
 
 1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
@@ -222,12 +229,12 @@ Dalla casella in entrata è possibile creare le attività:
 
    * **Avanzate**
 
-      * **Nome**: viene utilizzato per formare l’URL; se questo campo viene lasciato vuoto, verrà basato sul **Titolo**.
+      * **Nome**: this will be used to form the URL; if blank it will be based on the **Title**.
    ![wf-87](assets/wf-87.png)
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto   {#creating-a-project}
+## Creazione di un progetto  {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/projects.md) basato su tale attività:
 
