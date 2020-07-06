@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+workflow-type: tm+mt
+source-wordcount: '608'
+ht-degree: 4%
 
 ---
 
 
-# Sviluppo di applicazioni sandbox {#develop-sandbox-application}
+# Sviluppo di applicazioni sandbox  {#develop-sandbox-application}
 
 In questa sezione, ora che il modello è stato impostato nella sezione [iniziale dell&#39;applicazione](initial-app.md) e nelle pagine iniziali stabilite nella sezione del contenuto [](initial-content.md) iniziale, l&#39;applicazione può essere sviluppata utilizzando script di base, inclusa la possibilità di abilitare l&#39;authoring con i componenti Community. Alla fine di questa sezione, il sito Web sarà funzionale.
 
@@ -37,50 +40,50 @@ Utilizzo di CRXDE Lite:
 1. Fate clic su verde **[!UICONTROL [+]Aggiungi]**
 1. Fate clic su **[!UICONTROL Salva tutto]**
 
-![chlimage_1-231](assets/chlimage_1-231.png)
+   ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Script head e body {#head-and-body-scripts}
 
 1. Nel riquadro **CRXDE Lite** Explorer, individuate `/apps/an-scf-sandbox/components/playpage` e fate doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
-```xml
-<%--
-
-  An SCF Sandbox Play Component component.
-
-  This is the component which renders content for An SCF Sandbox page.
-
---%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" %><%
-%><%
- // TODO add your code here
-%>
-```
+   ```xml
+   <%--
+   
+     An SCF Sandbox Play Component component.
+   
+     This is the component which renders content for An SCF Sandbox page.
+   
+   --%><%
+   %><%@include file="/libs/foundation/global.jsp"%><%
+   %><%@page session="false" %><%
+   %><%
+    // TODO add your code here
+   %>
+   ```
 
 1. Essendo a conoscenza dei tag script aperti/chiusi, sostituire &quot; // TODO ...&quot; con include gli script per le parti head e body di &lt;html>.
 
    Con un super tipo di `foundation/components/page`, qualsiasi script non definito nella stessa cartella verrà risolto in uno script nella `/apps/foundation/components/page` cartella (se presente), in un altro script nella `/libs/foundation/components/page` cartella.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp-1}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
-```xml
-<%--
-
-    An SCF Sandbox Play Component component: playpage.jsp
-
-  This is the component which renders content for An SCF Sandbox page.
-
---%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" %>
-<html>
-  <cq:include script="head.jsp"/>
-  <cq:include script="body.jsp"/>
-</html>
-```
+   ```xml
+   <%--
+   
+       An SCF Sandbox Play Component component: playpage.jsp
+   
+     This is the component which renders content for An SCF Sandbox page.
+   
+   --%><%
+   %><%@include file="/libs/foundation/global.jsp"%><%
+   %><%@page session="false" %>
+   <html>
+     <cq:include script="head.jsp"/>
+     <cq:include script="body.jsp"/>
+   </html>
+   ```
 
 1. Lo script foundation non `head.jsp` deve essere sovrapposto, ma lo script foundation `body.jsp` è vuoto.
 
@@ -92,6 +95,7 @@ Utilizzo di CRXDE Lite:
 
       * Nome: **body.jsp**
    1. Fate clic su **[!UICONTROL Salva tutto]**
+
    Aprite `/apps/an-scf-sandbox/components/playpage/body.jsp` e incollate il testo seguente:
 
    ```xml
@@ -155,6 +159,7 @@ Inoltre, scegliete i componenti **[!UICONTROL Generali]** , ad esempio
 >I componenti abilitati per la pagina par vengono memorizzati nell’archivio come valore della `components` proprietà della proprietà
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
+
 ## Pagina di destinazione {#landing-page}
 
 In un ambiente multilingue, la pagina principale includerebbe uno script che analizzerebbe la richiesta del client per determinare la lingua preferita.
@@ -167,7 +172,7 @@ Modificate l’URL del browser nella pagina principale: [http://localhost:4502/e
 * Seleziona proprietà **[!UICONTROL di apertura]**
 * Nella scheda AVANZATE
 
-   * Per la voce Reindirizza, accedete a Siti **[!UICONTROL Web > Siti sandbox SCF > Sandbox SCF]**
+   * Per la voce Reindirizza, accedete a Siti **[!UICONTROL Web]** > Sito sandbox **[!UICONTROL SCF]** > Sandbox **[!UICONTROL SCF]**
    * Fai clic su **[!UICONTROL OK]**
 
 * Fai clic su **[!UICONTROL OK]**
