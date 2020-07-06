@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '616'
 ht-degree: 4%
 
 ---
@@ -32,13 +32,17 @@ Il primo passaggio consiste nell&#39;aggiungere al `/apps/an-scf-sandbox/compone
 
 Utilizzo di CRXDE Lite:
 
-<!--Resolve steps below-->
-    Nome: `sling:resourceSuperType`
-    Type: `String`
-    Value: &quot;foundation/components/page&quot;
+1. Selezionare il nodo `/apps/an-scf-sandbox/components/playpage`.
+1. Nella scheda Proprietà, immettere una nuova proprietà con i seguenti valori:
 
-1. Fate clic su verde **[!UICONTROL [+]Aggiungi]**
-1. Fate clic su **[!UICONTROL Salva tutto]**
+   Nome: `sling:resourceSuperType`
+
+   Tipo: `String`
+
+   Valore: `foundation/components/page`
+
+1. Fate clic sul pulsante verde **[!UICONTROL +Aggiungi]** .
+1. Fate clic su **[!UICONTROL Salva tutto]**.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -89,13 +93,12 @@ Utilizzo di CRXDE Lite:
 
    Per impostare l’authoring, sovrapponete `body.jsp` con uno script locale e includete nel corpo un sistema paragrafo (parsys):
 
-   1. Accedi a `/apps/an-scf-sandbox/components`
-   1. Selezionare il `playpage`nodo
+   1. Accedi a `/apps/an-scf-sandbox/components`.
+   1. Select the `playpage` node.
    1. Fare clic con il pulsante destro del mouse e selezionare `Create > Create File...`
 
       * Nome: **body.jsp**
-   1. Fate clic su **[!UICONTROL Salva tutto]**
-
+   1. Fate clic su **[!UICONTROL Salva tutto]**.
    Aprite `/apps/an-scf-sandbox/components/playpage/body.jsp` e incollate il testo seguente:
 
    ```xml
@@ -114,7 +117,7 @@ Utilizzo di CRXDE Lite:
    </body>
    ```
 
-1. Fate clic su **[!UICONTROL Salva tutto]**
+1. Fate clic su **[!UICONTROL Salva tutto]**.
 
 **Visualizzare la pagina in un browser in modalità di modifica:**
 
