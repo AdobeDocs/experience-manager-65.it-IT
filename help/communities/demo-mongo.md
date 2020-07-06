@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 1%
@@ -165,7 +165,7 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
 
    Nota: mentre sull’autore sono presenti nodi JCR sotto il *percorso* asiatico, questi sono per il framework SCF. L&#39;UGC effettivo non è in JCR, è in MongoDB.
 
-1. Visualizzare l&#39;UGC in **[!UICONTROL Community mongodb > Raccolte > Contenuto]**
+1. Visualizzare l&#39;UGC in **[!UICONTROL Mongodb Communities]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
