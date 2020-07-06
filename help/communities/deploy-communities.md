@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 85d4cdf0e2cfcb8b5e70387ce2dc556df9033257
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1899'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 * AEM Communities, licenza
 
-* Licenze facoltative per :
+* Licenze facoltative per:
 
    * [Funzioni di Adobe  Analytics per Communities](/help/communities/analytics.md)
    * [MongoDB per MSRP](/help/communities/msrp.md)
@@ -74,15 +74,14 @@ ht-degree: 2%
 
          * UGC non è mai replicato
          * UGC visibile solo nell’istanza o nel cluster AEM in cui è stato immesso
-      * Il valore predefinito è JSRP
 
+         * Il valore predefinito è JSRP
    Per la funzione di **[abilitazione](/help/communities/overview.md#enablement-community)**
 
    * [Installare e configurare FFmpeg](/help/communities/ffmpeg.md)
    * [Installare il driver JDBC per MySQL](#jdbc-driver-for-mysql)
    * [Installare AEM Communities SCORM-Engine](#scorm-package)
    * [Installazione e configurazione di MySQL per l&#39;abilitazione](/help/communities/mysql.md)
-
 
 
 
@@ -106,8 +105,8 @@ Come in AEM 6.4 e versioni successive, le funzioni AEM Communities e gli hotfix 
 
 Due funzionalità Community utilizzano un database MySQL:
 
-* Per l&#39; [abilitazione](/help/communities/enablement.md) : registrazione delle attività SCORM e degli studenti
-* Per [DSRP](/help/communities/dsrp.md) : memorizzazione di contenuto generato dall&#39;utente (UGC)
+* Per l&#39; [abilitazione](/help/communities/enablement.md): registrazione delle attività SCORM e degli studenti
+* Per [DSRP](/help/communities/dsrp.md): memorizzazione di contenuto generato dall&#39;utente (UGC)
 
 Il connettore MySQL deve essere ottenuto e installato separatamente.
 
@@ -126,7 +125,6 @@ Le misure necessarie sono:
    * Verificare che il driver JDBC di *Oracle Corporation per MySQLcom.mysql.jdbc* sia attivo e avviarlo in caso contrario (o controllare i registri)
 
 1. Se l&#39;installazione avviene su una distribuzione esistente dopo la configurazione di JDBC, eseguire nuovamente il backup di JDBC sul nuovo connettore salvando nuovamente la configurazione JDBC dalla console Web:
-
    * Ad esempio, https://localhost:4502/system/console/configMgr
    * Individua `Day Commons JDBC Connections Pool` configurazione
    * Seleziona per aprire
@@ -138,7 +136,7 @@ Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella 
 
 #### Esempio: Bundle del connettore MySQL installato {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![pacchi di limaggio](assets/chlimage-bundles.png)
 
 ### Pacchetto SCORM {#scorm-package}
 
@@ -223,7 +221,7 @@ Per impostazione predefinita, la configurazione `AEM Communities Publisher Confi
 
 Pertanto, è necessario **modificare la configurazione su tutte le istanze** di pubblicazione secondarie per deselezionare la **`Primary Publisher`** casella di controllo.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![chlimage_1-411](assets/chlimage_1-411.png)
 
 Per tutte le altre istanze di pubblicazione (secondarie) in una farm di pubblicazione:
 
@@ -249,7 +247,7 @@ Nell’ambiente di authoring sono disponibili due agenti di replica che richiedo
 
 * Accedere alla console Replica durante l’authoring
 
-   * Dalla navigazione globale, passare a **[!UICONTROL Strumenti > Distribuzione > Replica > Agenti sull’autore]**
+   * Dalla navigazione globale, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** > **[!UICONTROL Agenti sull’autore]**
 
 * Seguire la stessa procedura per entrambi gli agenti:
 
@@ -267,11 +265,11 @@ Le immagini seguenti mostrano i risultati della modifica della porta da 4503 a 6
 
 #### Agente predefinito (pubblicazione) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![chlimage_1-412](assets/chlimage_1-412.png)
 
 #### Agente replica inversa (pubblicazione invertita) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### Servizio Tunnel sull&#39;autore {#tunnel-service-on-author}
 
@@ -281,8 +279,7 @@ Il servizio tunnel fornisce questo accesso tramite l&#39;agente di replica in fa
 
 Per abilitare il servizio tunnel:
 
-* All’ **autore**
-* Accesso con privilegi amministrativi
+* Effettuate l’accesso con privilegi amministrativi nell’istanza di authoring.
 * Se l&#39;editore non è localhost:4503 o l&#39;utente del trasporto non lo è, `admin`[configurare l&#39;agente di replica](#replication-agents-on-author)
 
 * Accesso alla console [Web](/help/sites-deploying/configuring-osgi.md)
@@ -294,7 +291,7 @@ Per abilitare il servizio tunnel:
 * Selezionare la casella di **attivazione**
 * Seleziona **Salva**
 
-![](/help/communities/assets/chlimage_1-129.png)
+   ![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### Replicare la chiave Crypto {#replicate-the-crypto-key}
 
@@ -310,16 +307,16 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Il `bundle.info` file identificherà il bundle
-   * Navigare nella cartella dati, ad esempio
+   * Individuare la cartella di dati, ad esempio
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Copiare i file hmac e i file dei nodi principali
 
+      * Copiare i file hmac e i file dei nodi principali
 
 
 * Per ogni istanza AEM di destinazione
 
-   * Navigare nella cartella dati, ad esempio
+   * Individuare la cartella di dati, ad esempio
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Incolla i 2 file precedentemente copiati
@@ -329,6 +326,7 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 >[!CAUTION]
 >
 >Se è già stata configurata un&#39;altra funzione di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contattate l&#39;assistenza](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)clienti.
+
 
 #### Replica archivio {#repository-replication}
 
@@ -340,9 +338,10 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 >
 >È importante verificare che l&#39;agente di [replica nell&#39;istanza di creazione](#replication-agents-on-author) sia configurato correttamente.
 
+
 Con il materiale chiave memorizzato nella directory archivio, la procedura per replicare la chiave di crittografia dall’autore ad altre istanze è la seguente:
 
-Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Passa a [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
 * Seleziona `/etc/key`
@@ -351,7 +350,7 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Aggiornare il bundle Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+   ![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### Aggiornare il pacchetto Granite Crypto {#refresh-the-granite-crypto-bundle}
 
@@ -362,7 +361,7 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Individua `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Seleziona **aggiornamento**
 
-![](/help/communities/assets/chlimage_1-131.png)
+   ![chlimage_1-416](assets/chlimage_1-416.png)
 
 * Dopo un momento, dovrebbe comparire una finestra di dialogo **Successo** :
    `Operation completed successfully.`
@@ -392,7 +391,7 @@ In particolare, fate attenzione a utilizzare il nome corretto del server, non `l
 
 ### Dispatcher {#dispatcher}
 
-Se si utilizza un Dispatcher, vedere:
+Se utilizzi un Dispatcher, vedi:
 
 * Documentazione di AEM su [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 * [Installazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
