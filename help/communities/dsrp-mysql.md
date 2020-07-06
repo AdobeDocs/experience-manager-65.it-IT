@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ Queste istruzioni descrivono come connettersi a MySQL Server e stabilire il data
 
 ## Requisiti {#requirements}
 
-* [Pacchetto di funzioni per le community più recenti](deploy-communities.md#latestfeaturepack)
+* [Pacchetto di funzioni per le ultime community](deploy-communities.md#latestfeaturepack)
 * [Driver JDBC per MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Un database relazionale:
 
@@ -54,7 +57,7 @@ Per fornire un supporto multilingue migliore, è necessario utilizzare il set di
 
 Modificate MySQL in modo che abbia UTF8 come set di caratteri:
 
-* mysql> SET NAMES &#39;utf8&#39;;
+* mysql > SET NAMES &#39;utf8&#39;;
 
 Modificate il database MySQL impostando il valore predefinito su UTF8:
 
@@ -121,7 +124,7 @@ Lo script SQL viene ottenuto dall&#39;archivio AEM:
 1. Selezionare la cartella /libs/social/config/datastore/dsrp/schema
 1. Scarica `init-schema.sql`
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+   ![chlimage_1-107](assets/chlimage_1-107.png)
 
 Un metodo per scaricare lo schema è:
 
@@ -167,36 +170,35 @@ Tutte le istanze AEM di pubblicazione e creazione devono puntare allo stesso ser
 
 Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server deve essere specificato al posto di &#39;localhost&#39; nel connettore JDBC.
 
-* Per ogni istanza di creazione e pubblicazione di AEM
-* Accesso con privilegi di amministratore
-* Accedere alla console [Web](../../help/sites-deploying/configuring-osgi.md)
+* Per ogni istanza di creazione e pubblicazione di AEM.
+* Accesso con privilegi di amministratore.
+* Accedere alla console [](../../help/sites-deploying/configuring-osgi.md)Web.
 
    * Ad esempio, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Individua la variabile `Day Commons JDBC Connections Pool`
-* Selezionate l&#39; `+` icona per creare una nuova configurazione di connessione
+* Selezionate l&#39; `+` icona per creare una nuova configurazione di connessione.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 * Immettete i seguenti valori:
 
    * **[!UICONTROL Classe]** driver JDBC: `com.mysql.jdbc.Driver`
    * **[!UICONTROL URI]** connessione JDBC: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Specificare il server al posto di localhost se MySQL Server non è uguale a &#39;this&#39; AEM Server
-
-      *community* è il nome predefinito del database (schema)
+      Specificate il server al posto di localhost se MySQL Server non è uguale a &#39;this&#39; le *comunità* di server AEM è il nome predefinito del database (schema).
 
    * **[!UICONTROL Nome utente]**: `root`
 
-      In alternativa, immettere il nome utente configurato per MySQL Server, se non è &#39;root&#39;
+      In alternativa, immettere il nome utente configurato per MySQL Server, se non &#39;root&#39;.
 
    * **[!UICONTROL Password]**:
 
       Cancella questo campo se non è impostata alcuna password per MySQL,
 
-      altrimenti immettere la password configurata per il nome utente MySQL
-   * **[!UICONTROL Nome]** origine dati: nome immesso per la connessione [](#new-connection-settings)MySQL, ad esempio &#39;community&#39;
+      altrimenti immettere la password configurata per il nome utente MySQL.
+
+   * **[!UICONTROL Nome]** origine dati: nome immesso per la connessione [](#new-connection-settings)MySQL, ad esempio &#39;community&#39;.
 
 * Seleziona **[!UICONTROL Salva]**
 
