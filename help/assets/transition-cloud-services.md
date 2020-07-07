@@ -3,7 +3,7 @@ title: Applicazione dei servizi di traduzione cloud alle cartelle
 description: Applicazione dei servizi di traduzione cloud alle cartelle
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 44%
@@ -42,7 +42,7 @@ L’applicazione dei servizi di traduzione cloud direttamente nella cartella del
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, procedi prima con l’installazione del connettore da Gestione pacchetti. Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](transition-cloud-services.md#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
 1. Installare il connettore da Package Manager.
-1. Fate clic sul logo Experience Manager  e selezionate **[!UICONTROL Strumenti > Distribuzione > Servizi]** cloud.
+1. Fate clic sul logo  Experience Manager e selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > Servizi **** cloud.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
