@@ -3,7 +3,7 @@ title: Risorse correlate
 description: Scoprite come collegare risorse digitali che condividono attributi comuni. Create anche relazioni derivate dal codice sorgente tra le risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 3%
@@ -17,8 +17,9 @@ ht-degree: 3%
 
 Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzione con fornitori o agenzie e rendere il file INDD ad alta risoluzione disponibile solo su richiesta.
 
->[!NOTE] Solo gli utenti con autorizzazioni di modifica per le risorse possono collegare e scollegare le risorse.
+>[!NOTE]
 >
+>Solo gli utenti con autorizzazioni di modifica per le risorse possono collegare e scollegare le risorse.
 
 ## Relate assets {#relating-assets}
 
@@ -45,7 +46,6 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
    * Per correlare il file di origine della risorsa, selezionate **[!UICONTROL Origine]** dall’elenco.
    * Per correlare un file derivato, selezionare **[!UICONTROL Derivato]** dall&#39;elenco.
    * Per creare una relazione bidirezionale tra le risorse, selezionate **[!UICONTROL Altre]** dall’elenco.
-
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Dalla schermata **[!UICONTROL Seleziona risorsa]** , individuate la posizione della risorsa da correlare e selezionatela.
