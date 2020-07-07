@@ -1,16 +1,19 @@
 ---
 title: Configura approfondimenti risorse per ottenere l’analisi dell’utilizzo delle risorse digitali.
-description: Configura approfondimenti risorse in [!DNL Risorse Adobe Experience Manager].
+description: Configura approfondimenti risorse in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 8%
 
 ---
 
 
 # Configurare approfondimenti risorse {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] recupera i dati di utilizzo relativi alle risorse digitali utilizzate da siti Web di terze parti da [!DNL Adobe Analytics]. Per abilitare Asset Insights per recuperare questi dati e generare approfondimenti, configura prima la funzione da integrare con Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] recupera i dati di utilizzo relativi alle risorse digitali utilizzate da siti Web di terze parti da [!DNL Adobe Analytics]. Per abilitare Asset Insights per recuperare questi dati e generare approfondimenti, configura innanzitutto la funzione da integrare con Adobe  Analytics.
 
 >[!NOTE]
 >
@@ -23,7 +26,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 1. Fai clic sulla scheda **[!UICONTROL Configurazione approfondimenti]**.
 1. Nella procedura guidata, selezionate un centro dati e fornite le credenziali, incluso il nome dell&#39;organizzazione, il nome utente e il segreto condiviso.
 
-   ![Configurare Adobe Analytics per Assets Insights in Experience Manager](assets/insights_config2.png)
+   ![Configurare Adobe  Analytics per Assets Insights in  Experience Manager](assets/insights_config2.png)
 
    *Figura: Configura[!DNL Adobe Analytics]per informazioni approfondite sulle risorse in[!DNL Experience Manager].*
 
