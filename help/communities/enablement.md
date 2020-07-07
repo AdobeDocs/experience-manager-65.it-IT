@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +52,7 @@ Configurazione opzionale di:
 
 * **Adobe Analytics**
 
-   L&#39;integrazione con Adobe Analytics aggiunge funzionalità di reporting complete e supporta l&#39;aggiunta di heartbeat video ad Analytics.
+   L&#39;integrazione con Adobe  Analytics aggiunge funzionalità di reporting complete e supporta l&#39;aggiunta di heartbeat video a  Analytics.
 
 * **Dispatcher**
 
@@ -63,9 +66,14 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
 1. **[Installare il driver JDBC per MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
 
-   Usa console Web (bundle): *http://localhost:4502/system/console/bundles* Installare *prima* di installare il pacchetto SCORM
+   Usa console Web (bundle): *http://localhost:4502/system/console/bundles*
 
-1. **[Installare il pacchetto](deploy-communities.md#scorm-package)**SCORM Utilizzare Package Manager:*http://localhost:4502/crx/packmgr/*
+   Installare *prima* di installare il pacchetto SCORM
+
+1. **[Installare il pacchetto SCORM](deploy-communities.md#scorm-package)**
+
+
+   Usa Gestione pacchetti: *http://localhost:4502/crx/packmgr/*
 
 **Su qualsiasi server:**
 
@@ -73,7 +81,9 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
 1. **[Installare i database MySQL](mysql.md#database-setup)**
 
-   Esecuzione di script SQL scaricati dall&#39;istanza di creazioneUtilizzare MySQL Workbench
+   Esecuzione di script SQL scaricati dall&#39;istanza di creazione
+
+   Utilizzare Workbench MySQL
 
 **Sulla stessa istanza di creazione del server host:**
 
@@ -95,7 +105,7 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
 **Nell’istanza di creazione:**
 
-1. (*Facoltativo*) **[Configurare il servizio Analytics](analytics.md)**
+1. (*Facoltativo*) **[Configurare  servizio Analytics](analytics.md)**
 
    Usa console Strumenti, Implementazione, Servizi cloud: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
@@ -109,7 +119,9 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
 1. **[Creazione di amministratori community](users.md#creating-community-members)**
 
-   Per l’ambiente di authoring utilizzate la console di sicurezza dell’interfaccia classica: *http://localhost:4502/useradmin* creare utenti con percorso = /home/users/community
+   Per l’ambiente di authoring utilizzate la console di sicurezza dell’interfaccia classica: *http://localhost:4502/useradmin*
+
+   Creare utenti con percorso = /home/users/community
 
    * Aggiungi membri ai seguenti gruppi:
 
@@ -118,4 +130,4 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
 ## Dispatcher {#dispatcher}
 
-Quando la distribuzione include il dispatcher di [AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), affinché le funzioni di abilitazione funzionino correttamente, le `clientheader` sezioni e `filter` le sezioni devono essere modificate. Consultate [Configurazione del dispatcher per Communities](dispatcher.md#enablement).
+Quando la distribuzione include l&#39;Dispatcher [di](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM `clientheader` , affinché le funzioni di abilitazione funzionino correttamente, le `filter` sezioni ele sezioni devono essere modificate. Consultate [Configurazione di Dispatcher per Communities](dispatcher.md#enablement).
