@@ -1,11 +1,11 @@
 ---
-title: Estendere la funzionalità di ricerca di Risorse Adobe Experience Manager
-description: Estendi le funzionalità di ricerca di Risorse Adobe Experience Manager oltre i valori predefiniti.
+title: Estendi la funzionalità di ricerca di risorse  Adobe Experience Manager
+description: Estendi le funzionalità di ricerca di  risorse Adobe Experience Manager oltre i valori predefiniti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ Per sovrapporre i predicati preconfigurati, copiate il `facets` nodo da `/libs/d
 
 >[!NOTE]
 >
->Per impostazione predefinita, la struttura di directory in / `apps` non esiste e deve essere creata. Assicurarsi che i tipi di nodo corrispondano a quelli in / `libs`.
+>Per impostazione predefinita, la struttura di directory in `/apps` non esiste e quindi crearla. Assicurarsi che i tipi di nodo corrispondano a quelli in `/libs`.
 
 ## Aggiungi schede {#adding-tabs}
 
@@ -48,7 +48,7 @@ Puoi aggiungere ulteriori schede di ricerca configurandole nell’interfaccia di
 
 [!DNL Assets] viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è inclusa nella sezione relativa alla [creazione e alla configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)Condivisione di risorse.
 
-Oltre a utilizzare i predicati preesistenti, gli sviluppatori Experience Manager possono anche creare i propri predicati utilizzando l&#39;API [](/help/sites-developing/querybuilder-api.md)Query Builder.
+Oltre a utilizzare i predicati preesistenti,  sviluppatori Experience Manager possono anche creare i propri predicati utilizzando l&#39;API [](/help/sites-developing/querybuilder-api.md)Query Builder.
 
 La creazione di predicati personalizzati richiede conoscenze di base sul framework [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)Widget.
 
@@ -296,6 +296,6 @@ I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 
 ## Personalizzare i risultati della ricerca {#customizing-search-results}
 
-La presentazione dei risultati della ricerca in una pagina Condivisione risorse è regolata dall’obiettivo selezionato. Experience Manager Assets include una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina di Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
+La presentazione dei risultati della ricerca in una pagina Condivisione risorse è regolata dall’obiettivo selezionato.  Risorse Experience Manager include una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
 
-Oltre a utilizzare ottiche preesistenti, gli sviluppatori di Experience Manager possono anche creare ottiche personalizzate.
+Oltre a utilizzare ottiche preesistenti,  sviluppatori Experience Manager possono anche creare ottiche proprie.
