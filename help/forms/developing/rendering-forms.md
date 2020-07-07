@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ A seconda del tipo di applicazione client, è possibile scrivere il modulo in un
 
 >[!NOTE]
 >
-> Per informazioni sulla creazione di un&#39;applicazione Web che utilizza servlet Java per richiamare il servizio Forms, vedere [Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Per informazioni sulla creazione di un&#39;applicazione Web che utilizza servlet Java per richiamare il servizio Forms, vedere [Creazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 È possibile trasmettere al servizio Forms una struttura del modulo (un file XDP) o un documento PDF tramite uno dei due modi seguenti:
 
@@ -41,7 +44,7 @@ A seconda del tipo di applicazione client, è possibile scrivere il modulo in un
 
 È possibile eseguire le operazioni seguenti utilizzando il servizio Forms:
 
-* Rendering di moduli PDF interattivi. (Vedere [Rendering di moduli](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interattivi.)
+* Rendering di PDF forms interattivi. Consultate [Rendering di PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interattivi.
 * Eseguire il rendering dei moduli sul client. (Vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms-client.md).)
 * Eseguire il rendering dei moduli in base ai frammenti. (Vedere [Rendering dei moduli basati su frammenti](/help/forms/developing/rendering-forms-based-fragments.md).)
 * Eseguire il rendering dei moduli abilitati per i diritti. (Vedere [Rendering di moduli](/help/forms/developing/rendering-rights-enabled-forms.md)con diritti di utilizzo.)
