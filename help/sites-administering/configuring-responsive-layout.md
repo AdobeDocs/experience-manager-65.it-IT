@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: 710958ceecc8bbbbdae5e836ec0571a9eeaf6a9a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 8%
 
 ---
 
@@ -113,10 +116,9 @@ Se state eseguendo la migrazione di un progetto esistente (con contenuto esisten
 >
 >* aggiungere punti di interruzione ai modelli
 >* aggiungere gli stessi punti di interruzione alle pagine esistenti
-   >  Poiché l’ereditarietà è attiva, potete limitare questa opzione alla pagina principale del contenuto.
 >
-
-
+>  
+Poiché l’ereditarietà è attiva, potete limitare questa opzione alla pagina principale del contenuto.
 
 #### Configurazione dei punti di interruzione con CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
@@ -238,7 +240,7 @@ La definizione della griglia di base si trova in:
 
 I componenti contenuti in un contenitore reattivo verranno ridimensionati (insieme ai rispettivi elementi DOM HTML) in base alle dimensioni della griglia reattiva. Pertanto, in queste circostanze, si consiglia di evitare (o aggiornare) le definizioni di elementi DOM a larghezza fissa (contenuti).
 
-Esempio:
+Ad esempio:
 
 * Prima:
 
@@ -260,7 +262,7 @@ Qualsiasi ridimensionamento di un componente all&#39;interno della griglia attiv
 
 Per ridimensionare e aggiornare correttamente il contenuto di un’immagine adattiva inclusa in una griglia reattiva, è necessario aggiungere un `afterEdit` set di `REFRESH_PAGE` listener nel file di ogni `EditConfig` componente contenuto.
 
-Esempio:
+Ad esempio:
 
 `<cq:listeners jcr:primaryType="cq:EditListenersConfig" afteredit="REFRESH_PAGE" />`
 
