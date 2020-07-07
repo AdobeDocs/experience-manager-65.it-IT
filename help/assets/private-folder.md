@@ -3,7 +3,7 @@ title: Create e condividete una cartella privata in  Adobe Experience Manager.
 description: Scoprite come creare una cartella privata in Risorse  Adobe Experience Manager e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Potete creare una cartella privata nell’interfaccia utente di Risorse Adobe Ex
 
 >[!NOTE]
 >
-> La cartella privata ha almeno un membro con il ruolo Proprietario.
+>La cartella privata ha almeno un membro con il ruolo Proprietario.
 
 1. Nella console Risorse, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
 
