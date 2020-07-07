@@ -1,15 +1,18 @@
 ---
 title: Creazione di moduli adattivi con accesso facilitato
 seo-title: Creazione di moduli adattivi con accesso facilitato
-description: AEM Forms fornisce strumenti per creare moduli adattivi con accesso facilitato e contribuisce a soddisfare gli standard di accessibilità.
-seo-description: AEM Forms fornisce strumenti per creare moduli adattivi con accesso facilitato e contribuisce a soddisfare gli standard di accessibilità.
+description: I AEM Forms forniscono gli strumenti necessari per creare moduli adattivi con accesso facilitato e soddisfano gli standard di accessibilità.
+seo-description: I AEM Forms forniscono gli strumenti necessari per creare moduli adattivi con accesso facilitato e soddisfano gli standard di accessibilità.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1792'
+ht-degree: 0%
 
 ---
 
@@ -18,28 +21,28 @@ source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
 
 ## Introduzione {#introduction}
 
-Un modulo con accesso facilitato è un modulo utilizzabile da tutti, compresi gli utenti con esigenze particolari. I moduli adattivi includono una serie di funzioni e funzionalità che migliorano l&#39;usabilità per gli utenti con capacità diverse. La creazione dell&#39;accessibilità nei moduli adattivi non solo consente al pubblico di accedere al contenuto nel modo più ampio possibile, ma anche quando si forniscono documenti in aree geografiche in cui è richiesta la conformità agli standard di accessibilità. AEM Forms supporta gli sviluppatori di moduli nel rispetto degli standard di accessibilità.
+Un modulo con accesso facilitato è un modulo utilizzabile da tutti, compresi gli utenti con esigenze particolari. I moduli adattivi includono una serie di funzioni e funzionalità che migliorano l&#39;usabilità per gli utenti con capacità diverse. La creazione dell&#39;accessibilità nei moduli adattivi non solo consente al pubblico di accedere al contenuto nel modo più ampio possibile, ma anche quando si forniscono documenti in aree geografiche in cui è richiesta la conformità agli standard di accessibilità. I AEM Forms aiutano gli sviluppatori di moduli a rispettare gli standard di accessibilità.
 
-Durante la creazione di un modulo adattivo, per creare un modulo adattivo con accesso facilitato l’autore deve tenere conto dei seguenti punti:
+While authoring an adaptive form, author should consider the following points to create accessible adaptive form:
 
-* Verificare il modulo con lo strumento di verifica dell&#39;accessibilità di Ispettore nome e descrizione accessibile (ANDI)
+* Check the form with Accessible Name and Description Inspector (ANDI) accessibility testing tool
 * Fornire etichette corrette per i controlli modulo
 * Specifica equivalenti di testo per le immagini
-* Fornire un contrasto di colore sufficiente
+* Provide sufficient color contrast
 * Verificare che i controlli modulo siano accessibili tramite tastiera
 
 ## Prerequisito
 
 Per creare un modulo adattivo con accesso facilitato è necessario disporre di uno strumento di accesso facilitato, ad esempio **AnDI (Accessible Name and Description Inspector)** , nonché di un tema Modulo **adattivo sviluppato per risolvere problemi** di accessibilità.
 
-### Download e installazione dello strumento di test dell&#39;accessibilità
+### Download and install accessibility testing tool
 
 Lo strumento Andi (Accessible Name and Description Inspector) consente di identificare e risolvere i problemi di conformità relativi all’accessibilità nel contenuto Web. È lo strumento consigliato in Trusted Tester v5 linee guida del Dipartimento della Sicurezza Interna. È stato sviluppato dal Dipartimento di Sicurezza Sociale &#x200B; Stati Uniti per verificare la conformità Sezione 508 dei contenuti web. Lo strumento:
 
 * Consente di rilevare &#x200B; problemi di accessibilità in una pagina Web
 * Fornisce suggerimenti per migliorare l&#39;accessibilità &#x200B;
 * Rileva problemi di accessibilità e contrasto dei colori della tastiera
-* Identifica chiaramente il contenuto dell&#39;assistente vocale in conformità agli standard
+* Identifica chiaramente il contenuto dell&#39;assistente vocale in conformità con gli standard
 
 ANDI funziona con tutti i principali browser Internet. Consulta la documentazione [di](https://www.ssa.gov/accessibility/andi/help/install.html) ANDI per istruzioni dettagliate su come configurare e utilizzare lo strumento.
 
@@ -76,7 +79,7 @@ Dopo aver applicato un tema accessibile, eseguite le seguenti correzioni aggiunt
 
    ![Come applicare uno stile di intestazione](assets/apply-style.gif)
 
-1. Modificare il colore di sfondo del piè di pagina per utilizzare il contrasto appropriato in conformità agli standard di accessibilità per migliorare la visibilità e la leggibilità del testo. È possibile utilizzare ANDI per individuare problemi di contrasto dei colori nel modulo. Inoltre, non utilizzate caratteri molto piccoli. I font piccoli sono difficili da leggere.
+1. Modificare il colore di sfondo del piè di pagina per utilizzare il contrasto appropriato in conformità agli standard di accessibilità per migliorare la visibilità e la leggibilità del testo. È possibile utilizzare ANDI per individuare problemi di contrasto dei colori nel modulo. Inoltre, non utilizzate caratteri molto piccoli. I font di piccole dimensioni sono difficili da leggere.
 
 1. Sostituite i componenti switch e immagine selezionati nel modulo adattivo esistente con il componente selezionato (radio).
 
@@ -90,7 +93,7 @@ Dopo aver applicato un tema accessibile, eseguite le seguenti correzioni aggiunt
 
 1. Per i componenti per moduli adattivi, utilizzate una descrizione breve invece di una descrizione lunga. Una lunga descrizione aggiunge il pulsante della guida. Verificare che nel modulo adattivo non sia presente alcun pulsante di Aiuto.
 
-1. Aggiungere testo di accessibilità personalizzato a tutte le celle di sola lettura delle tabelle. Inoltre, disabilitare tutte le celle di sola lettura delle tabelle.
+1. Aggiungere testo di accesso facilitato personalizzato a tutte le celle di sola lettura delle tabelle. Inoltre, disabilitare tutte le celle di sola lettura delle tabelle.
 
 1. Rimuovere eventuali campi firma script nel modulo adattivo. Configura il modulo adattivo per utilizzare Adobe Sign per un&#39;esperienza di firma digitale senza soluzione di continuità.
 
@@ -109,11 +112,11 @@ Per utilizzare l&#39;opzione Accessibilità, procedere come segue:
 
 ![Opzioni di accessibilità nei componenti modulo](assets/accessibility-options.png)
 
-**Gli autori di moduli di testo** personalizzati forniscono il contenuto dell&#39;opzione di accesso facilitato Campo di testo personalizzato. La tecnologia di supporto, come gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valutare la possibilità di creare testo personalizzato dell&#39;assistente vocale solo quando si utilizza il Titolo o se non è possibile utilizzare una breve descrizione.
+**Gli autori di moduli di testo** personalizzati forniscono il contenuto dell&#39;opzione di accesso facilitato Campo di testo personalizzato. La tecnologia di supporto, ad esempio gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valutare la possibilità di creare testo personalizzato dell&#39;assistente vocale solo quando si utilizza il Titolo o se non è possibile utilizzare una breve descrizione.
 
 **Breve descrizione** Per la maggior parte dei componenti, la breve descrizione viene visualizzata in fase di esecuzione quando l&#39;utente passa il puntatore sul componente. Potete impostare questa opzione nel campo della descrizione breve, sotto l&#39;opzione di contenuto della guida.
 
-**Titolo** Utilizzate questa opzione per consentire ad AEM Forms di utilizzare l&#39;etichetta visiva associata al campo modulo come testo dell&#39;assistente vocale.
+**Titolo** Utilizzare questa opzione per consentire agli AEM Forms di utilizzare l&#39;etichetta visiva associata al campo modulo come testo dell&#39;assistente vocale.
 
 **Nome** È possibile specificare un valore nel campo Nome della scheda Binding. Il nome non può contenere spazi.
 
@@ -121,7 +124,7 @@ Per utilizzare l&#39;opzione Accessibilità, procedere come segue:
 
 >[!NOTE]
 >
-> * I pulsanti di scelta e le caselle di controllo possono avere solo due opzioni per l&#39;accessibilità, ovvero Testo personalizzato e Titolo.
+>* I pulsanti di scelta e le caselle di controllo possono avere solo due opzioni per l&#39;accessibilità, ovvero Testo personalizzato e Titolo.
 >* Per i moduli adattivi basati su XFA, l&#39;opzione di accessibilità è ereditata dalle opzioni di accessibilità impostate in XDP. Le descrizioni comandi di XDP sono mappate sulla descrizione breve e la didascalia sono mappate su Titolo. Le altre opzioni funzionano allo stesso modo.
 
 
@@ -141,7 +144,7 @@ La progettazione dell&#39;accessibilità prevede la considerazione di ulteriori 
 
 Gli utenti con problemi di vista si affidano a un contrasto elevato tra il testo e lo sfondo per la lettura di contenuti digitali. Senza un contrasto sufficiente, un modulo può diventare difficile, se non impossibile, da leggere per alcuni utenti.
 
-Si consiglia di utilizzare i colori predefiniti di font e sfondo, ossia il contenuto in nero su sfondo bianco. Se modificate i colori predefiniti, scegliete un colore di primo piano scuro su un colore di sfondo chiaro o viceversa.
+Si consiglia di utilizzare i colori di font e sfondo predefiniti, ossia il contenuto in nero su uno sfondo bianco. Se modificate i colori predefiniti, scegliete un colore di primo piano scuro su un colore di sfondo chiaro o viceversa.
 
 Per ulteriori informazioni sulla modifica del contrasto dei colori e del tema per i moduli [adattivi, vedere](/help/forms/using/creating-custom-adaptive-form-themes.md)Creazione di temi personalizzati per i moduli adattivi.
 
@@ -149,11 +152,11 @@ Per ulteriori informazioni sulla modifica del contrasto dei colori e del tema pe
 
 Un modulo con accesso facilitato può essere compilato completamente utilizzando solo la tastiera o un dispositivo di input equivalente. Gli utenti con mobilità ridotta o problemi di vista possono non avere altra scelta se non utilizzare la tastiera e molti utenti che possono utilizzare il mouse preferiscono l&#39;input della tastiera. Consentendo l&#39;uso dei vari metodi di immissione, non solo si creano moduli con accesso facilitato, ma si creano anche moduli più adatti alle preferenze di tutti gli utenti.
 
-In AEM Forms sono disponibili le seguenti scelte rapide da tastiera.
+Le seguenti scelte rapide da tastiera sono disponibili in AEM Forms.
 
 | Azione | Scelte rapide da tastiera |
 |---|---|
-| Spostare il cursore in avanti in un modulo | Scheda |
+| Spostare il cursore in avanti all&#39;interno di un modulo | Scheda |
 | Spostare il cursore all&#39;indietro all&#39;interno di un modulo | Maiusc+Tab |
 | Passa al pannello successivo | Alt+Freccia destra |
 | Passa al pannello precedente | Alt+Freccia sinistra |
@@ -162,8 +165,8 @@ In AEM Forms sono disponibili le seguenti scelte rapide da tastiera.
 
 ## Utilizzate lo strumento di accessibilità per individuare i problemi di accessibilità rimanenti
 
-Ispettore nome e descrizione accessibile (ANDI) consente di identificare e risolvere i problemi di conformità all’accessibilità in un modulo adattivo. Per utilizzare lo strumento ANDI per individuare i problemi di accessibilità in un modulo adattivo:
+Ispettore nome e descrizione accessibile (ANDI) consente di identificare e risolvere i problemi di conformità relativi all’accessibilità in un modulo adattivo. Per utilizzare lo strumento ANDI per individuare i problemi di accessibilità in un modulo adattivo:
 
-1. Aprire il modulo adattivo in modalità di anteprima.
+1. Aprite il modulo adattivo in modalità di anteprima.
 1. Fare clic sull&#39;icona dello strumento ANDI con segnalibro. Lo strumento ANDI analizza il modulo adattivo e visualizza i problemi di accessibilità. Per informazioni dettagliate sull&#39;utilizzo dello strumento, consulta la documentazione [di](https://www.ssa.gov/accessibility/andi/help/howtouse.html)ANDI.
 1. Esaminare e risolvere i problemi segnalati da ANDI.
