@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -157,7 +157,7 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
 
 * Un carico iniziale di ID è fornito da hybris come feed. Possono essere presenti aggiornamenti a questo feed.
 * hybris fornirà informazioni di aggiornamento tramite un feed (che verrà controllato da AEM).
-* Quando AEM utilizza i dati di prodotto, invia le richieste agli ibridi per i dati correnti (richiesta di ottenimento condizionale con data dell’ultima modifica).
+* Quando AEM utilizza i dati di prodotto, invia le richieste ai hybris per i dati correnti (richiesta di ottenimento condizionale con data dell’ultima modifica).
 * In hybris è possibile specificare il contenuto di feed in modo dichiarativo.
 * La mappatura della struttura del feed al modello di contenuto AEM avviene nella scheda del feed sul lato AEM.
 
@@ -172,7 +172,6 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
 * L’estensione hybris fornisce un importatore polling (&quot;schema hybris&quot;), che può essere configurato per importare le modifiche in AEM a un intervallo specificato (ad esempio, ogni 24 ore in cui l’intervallo è specificato in secondi):
 
    * 
-
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -227,11 +226,9 @@ Mentre i prodotti (in generale) possono avere molti assi di variante, il compone
    >
    >
 1. più uno
-   >   Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
-
 >
-
-
+>   
+Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
 
 #### Riferimenti prodotto e dati prodotto {#product-references-and-product-data}
 
