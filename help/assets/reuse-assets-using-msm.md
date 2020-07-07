@@ -4,7 +4,7 @@ description: Utilizzate le risorse tra più pagine/cartelle derivate e collegate
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '3368'
 ht-degree: 10%
@@ -61,14 +61,14 @@ MSM mantiene una relazione live tra la risorsa di origine e le sue copie in temp
 
 Per creare una Live Copy da una o più risorse o cartelle sorgente, effettuate le seguenti operazioni:
 
-* Metodo 1: Selezionate le risorse sorgente e fate clic su **[!UICONTROL Crea > Live Copy]** dalla barra degli strumenti nella parte superiore.
-* Metodo 2: Nell&#39;interfaccia [!DNL Experience Manager] utente, fate clic su **[!UICONTROL Crea > Live Copy]** nell&#39;angolo superiore destro dell&#39;interfaccia.
+* Metodo 1: Selezionate le risorse sorgente e fate clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]** dalla barra degli strumenti nella parte superiore.
+* Metodo 2: Nell&#39;interfaccia [!DNL Experience Manager] utente, fate clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]** nell&#39;angolo superiore destro dell&#39;interfaccia.
 
-Potete creare copie dal vivo di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+Potete creare copie live di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
 
 Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
-1. Selezionate le risorse o le cartelle sorgente. Dalla barra degli strumenti, fate clic su **[!UICONTROL Crea > Live Copy]**.
+1. Selezionate le risorse o le cartelle sorgente. Dalla barra degli strumenti, fate clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]**.
 
    ![Creare una Live Copy dall&#39;interfaccia  Experience Manager](assets/create_lc1.png)
 
@@ -80,7 +80,7 @@ Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
 Per creare copie live con il secondo metodo, attenetevi alla seguente procedura:
 
-1. Nell&#39; [!DNL Experience Manager] interfaccia, dall&#39;angolo superiore destro, fate clic su **[!UICONTROL Crea > Live Copy]**.
+1. Nell&#39; [!DNL Experience Manager] interfaccia, dall&#39;angolo superiore destro, fate clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]**.
 
    ![Creare una Live Copy dall&#39;interfaccia  Experience Manager](assets/create_lc2.png)
 
