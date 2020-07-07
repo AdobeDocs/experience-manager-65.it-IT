@@ -3,7 +3,7 @@ title: Abilita approfondimenti risorse tramite DTM
 description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 1%
@@ -34,7 +34,6 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come ind
    * Selezionate la scheda Proprietà **** Web, quindi fate clic su **[!UICONTROL Aggiungi proprietà]**.
 
    * Aggiornate i campi come appropriato e fate clic su **[!UICONTROL Crea proprietà]**. Consulta [la documentazione](https://helpx.adobe.com/experience-manager/using/dtm.html).
-
    ![Creare una proprietà Web di modifica](assets/Create-edit-web-property.png)
 
 1. Nella scheda **[!UICONTROL Regole]** , selezionare Regole di caricamento **[!UICONTROL pagina]** dal riquadro di navigazione e fare clic su **[!UICONTROL Crea nuova regola]**.
@@ -45,15 +44,15 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come ind
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Fate clic sul logo  Experience Manager e passate a **[!UICONTROL Strumenti > Risorse]**.
+1. Fate clic sul logo  Experience Manager e passate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
 1. Fate clic su **[!UICONTROL Insights Page Tracker]**(Tracciatore pagina informazioni approfondite), copiate il codice di tracciamento e incollatelo nella finestra di dialogo Script aperta al punto 6. Salva le modifiche.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` viene rimosso. È previsto che sia disponibile tramite lo strumento Adobe  Analytics di Gestione dinamica dei tag.
-   > * La chiamata a `assetAnalytics.dispatcher.init`() viene rimossa. La funzione verrà chiamata al termine del caricamento dello strumento Adobe  Analytics di Gestione dinamica dei tag.
-   > * A seconda di dove è ospitato Asset Insights Page Tracker (ad esempio  Experience Manager, CDN e così via), l&#39;origine della sorgente dello script potrebbe richiedere delle modifiche.
-   > * Per  Page Tracker ospitato da Experience Manager, l&#39;origine deve puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza dispatcher.
+   >* `AppMeasurement.js` viene rimosso. È previsto che sia disponibile tramite lo strumento Adobe  Analytics di Gestione dinamica dei tag.
+   >* La chiamata a `assetAnalytics.dispatcher.init()` viene rimossa. La funzione verrà chiamata al termine del caricamento dello strumento Adobe  Analytics di Gestione dinamica dei tag.
+   >* A seconda di dove è ospitato Asset Insights Page Tracker (ad esempio  Experience Manager, CDN e così via), l&#39;origine della sorgente dello script potrebbe richiedere delle modifiche.
+   >* Per  Page Tracker ospitato da Experience Manager, l&#39;origine deve puntare a un&#39;istanza di pubblicazione utilizzando il nome host dell&#39;istanza dispatcher.
 
 
 1. Accesso `https://dtm.adobe.com`. Fate clic su **[!UICONTROL Panoramica]** nella proprietà Web e fate clic su **[!UICONTROL Aggiungi strumento]** oppure aprite uno strumento Adobe  Analytics Tool esistente. Durante la creazione dello strumento, è possibile impostare Metodo **[!UICONTROL di]** configurazione su **[!UICONTROL Automatico]**.
