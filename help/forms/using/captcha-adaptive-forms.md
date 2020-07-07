@@ -10,7 +10,10 @@ topic-tags: author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 translation-type: tm+mt
-source-git-commit: abfb6dced1ffd8d0dd11eaab1e66c78704df543f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: abfb6dced1ffd8d0dd11eaab1e66c78704df543f
 
 CAPTCHA (Test di Turing Pubblico Completamente Automatizzato per dire Computer e Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra gli umani e i programmi o robot automatizzati. Rappresenta una sfida e valuta la risposta degli utenti per determinare se si tratta di un essere umano o un bot che interagisce con il sito. Impedisce all&#39;utente di procedere in caso di esito negativo del test e contribuisce a rendere sicure le transazioni online, impedendo ai bot di inviare spam o scopi dannosi.
 
-AEM Forms supporta il CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
+AEM Forms supporta CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
->* AEM Forms supporta solo reCaptcha v2. Qualsiasi altra versione non è supportata.
+>* I AEM Forms supportano solo reCaptcha v2. Qualsiasi altra versione non è supportata.
 >* CAPTCHA nei moduli adattivi non è supportato in modalità offline nell&#39;app AEM Forms.
 >
 
