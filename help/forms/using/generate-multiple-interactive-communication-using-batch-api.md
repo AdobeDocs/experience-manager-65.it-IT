@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Potete utilizzare l&#39;API Batch insieme alle cartelle esaminate o come API di 
 
 ### Utilizzo dell&#39;API Batch con le cartelle esaminate {#using-the-batch-api-watched-folders}
 
-Per semplificare l&#39;utilizzo dell&#39;API, in AEM Forms è disponibile un servizio per cartelle esaminate configurato per l&#39;utilizzo dell&#39;API Batch. È possibile accedere al servizio tramite l&#39;interfaccia utente di AEM Forms per generare più comunicazioni interattive. Potete anche creare servizi personalizzati in base alle vostre esigenze. Potete utilizzare i metodi elencati di seguito per utilizzare l&#39;API Batch con la cartella esaminata:
+Per semplificare l&#39;utilizzo dell&#39;API, gli AEM Forms forniscono un servizio Cartella esaminata configurato per l&#39;utilizzo dell&#39;API Batch, out-of-box. Potete accedere al servizio tramite l’interfaccia utente AEM Forms per generare più comunicazioni interattive. Potete anche creare servizi personalizzati in base alle vostre esigenze. Potete utilizzare i metodi elencati di seguito per utilizzare l&#39;API Batch con la cartella esaminata:
 
 * Specificare i dati di input (record) in formato JSON per produrre una comunicazione interattiva
 * Utilizzare i dati di input (record) salvati in un&#39;origine dati esterna ed accessibili tramite un modello dati modulo per produrre una comunicazione interattiva
@@ -80,7 +80,7 @@ Per semplificare l&#39;utilizzo dell&#39;API, in AEM Forms è disponibile un ser
 Per creare una comunicazione interattiva dai record salvati in un file JSON:
 
 1. Create una cartella [](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) esaminata e configuratela per utilizzare l&#39;API Batch:
-   1. Accedete all&#39;istanza di creazione di AEM Forms.
+   1. Accedete all’istanza di creazione AEM Forms.
    1. Passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Moduli]** > **[!UICONTROL Configura cartella]** esaminata. Toccate **[!UICONTROL Nuovo]**.
    1. Specificate il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisico della cartella. Esempio, `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file con]** .
@@ -142,7 +142,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
    1. Salvate e chiudete il file.
 
 1. Create una cartella [](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) esaminata e configuratela per utilizzare il servizio API Batch:
-   1. Accedete all&#39;istanza di creazione di AEM Forms.
+   1. Accedete all’istanza di creazione AEM Forms.
    1. Passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Moduli]** > **[!UICONTROL Configura cartella]** esaminata. Toccate **[!UICONTROL Nuovo]**.
    1. Specificate il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisico della cartella. Esempio, `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file con]** .
@@ -155,7 +155,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
       |--- |--- |--- |
       | templatePath | Stringa | Specificate il percorso del modello di comunicazione interattiva da utilizzare. Ad esempio, /content/dam/formsanddocuments/testsample/mediumic. È una proprietà obbligatoria. |
       | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specificate /dipendente/Id, il valore del campo id diventa nome per la corrispondente comunicazione interattiva. Il valore predefinito è un UUID [casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID())casuale. |  |
-      | usePrefillService | Booleano | Impostate il valore su True. Il valore predefinito è false.  Quando il valore è impostato su true, l&#39;API Batch legge i dati dal modello dati modulo configurato e li riempie alla comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. |
+      | usePrefillService | Booleano | Impostate il valore su True. The default value is false.  Quando il valore è impostato su true, l&#39;API Batch legge i dati dal modello dati modulo configurato e li riempie alla comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. |
       | batchType | Stringa | Impostare il valore su STAMPA, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | locale | Stringa | Specificate le impostazioni internazionali della comunicazione interattiva di output. Il servizio out-of-the-box non utilizza l&#39;opzione delle impostazioni internazionali, ma è possibile creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore predefinito è en_US. |
 
@@ -361,4 +361,5 @@ Oltre a salvare i dati sul file system, si memorizzano i file JSON nel repositor
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> Solo il protocollo CRX è abilitato per impostazione predefinita. Per abilitare altri protocolli supportati, consultate [Configurazione del servizio di precompilazione tramite Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>Solo il protocollo CRX è abilitato per impostazione predefinita. Per abilitare altri protocolli supportati, consultate [Configurazione del servizio di precompilazione tramite Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
