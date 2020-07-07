@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4d47310ebf9d450de52c925642978ba92ef9c1d4
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 4d47310ebf9d450de52c925642978ba92ef9c1d4
 
 La console Amministrazione siti Web può essere estesa per visualizzare colonne personalizzate. La console è basata su un oggetto JSON che può essere esteso creando un servizio OSGI che implementa l&#39; `ListInfoProvider` interfaccia. Tale servizio modifica l&#39;oggetto JSON inviato al client per creare la console.
 
-Questa esercitazione passo-passo spiega come visualizzare una nuova colonna nella console Amministrazione siti Web implementando l’ `ListInfoProvider` interfaccia. È costituito dai seguenti passaggi:
+Questa esercitazione passo-passo spiega come visualizzare una nuova colonna nella console Amministrazione siti Web implementando l’ `ListInfoProvider` interfaccia. Si compone dei seguenti passaggi:
 
 1. [Creazione del servizio](#creating-the-osgi-service) OSGI e implementazione del bundle che lo contiene nel server AEM.
 1. (facoltativo) [Verifica del nuovo servizio](#testing-the-new-service) mediante una chiamata JSON per richiedere l’oggetto JSON utilizzato per creare la console.
@@ -60,7 +63,7 @@ Esempio di implementazione:
 Per creare il servizio OSGI:
 
 1. In CRXDE Lite, [create un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
-1. Aggiungete il codice di esempio seguente.
+1. Aggiungete il codice di esempio riportato di seguito.
 1. Create il bundle.
 
 Il nuovo servizio è attivo e funzionante.
@@ -109,21 +112,20 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >
 >* In base alla richiesta e/o alla risorsa fornita, l&#39;implementazione deve decidere se aggiungere o meno le informazioni all&#39;oggetto JSON.
 >* Se l&#39; `ListInfoProvider` implementazione definisce una proprietà già esistente nell&#39;oggetto response, il relativo valore verrà sovrascritto da quello fornito.
-   >  Potete utilizzare la classificazione [del](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) servizio per gestire l&#39;ordine di esecuzione di più `ListInfoProvider` implementazioni.
 >
-
-
+>  
+Potete utilizzare la classificazione [del](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) servizio per gestire l&#39;ordine di esecuzione di più `ListInfoProvider` implementazioni.
 
 ### Verifica del nuovo servizio {#testing-the-new-service}
 
 Quando aprite la console di amministrazione dei siti Web e sfogliate il sito, il browser esegue una chiamata ajax per ottenere l’oggetto JSON utilizzato per creare la console. Ad esempio, quando individuate la `/content/geometrixx` cartella, la seguente richiesta viene inviata al server AEM per creare la console:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Per essere certi che il nuovo servizio sia in esecuzione dopo aver distribuito il pacchetto che lo contiene:
 
 1. Impostate il browser sul seguente URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. La risposta deve visualizzare le nuove proprietà come segue:
 
