@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
 
@@ -33,15 +36,15 @@ Java API Quick Start (SOAP) è disponibile per l&#39;API User Manager.
 
 [Avvio rapido (modalità SOAP): Gestione programmatica dei nodi delle preferenze mediante l&#39;API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
-> La sezione Avvio rapido nella programmazione con moduli AEM si basa sul documento se si utilizza un altro sistema operativo, come Unix, e sostituisce i percorsi specifici di Windows con quelli supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>La sezione Avvio rapido nella programmazione con moduli AEM si basa sul documento se si utilizza un altro sistema operativo, come Unix, e sostituisce i percorsi specifici di Windows con quelli supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Aggiunta di utenti tramite l&#39;API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Blue ai moduli AEM. Consultate [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).
+Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente denominato Wendy Blue ai AEM Forms. Consultate [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).
 
 ```as3
  /*
@@ -159,7 +162,7 @@ Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Bl
 
 ## Avvio rapido (modalità SOAP): Eliminazione di utenti tramite l&#39;API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-L’esempio di codice seguente elimina da AEM Forms un utente denominato Wendy Blue. Consultate [Eliminazione di utenti](/help/forms/developing/users.md#deleting-users).
+Nell&#39;esempio di codice seguente viene eliminato un utente denominato Wendy Blue dai AEM Forms. Consultate [Eliminazione di utenti](/help/forms/developing/users.md#deleting-users).
 
 ```as3
  /*
@@ -631,7 +634,7 @@ Il seguente esempio di codice Java sincronizza gli utenti utilizzando le API di 
 
 ## Avvio rapido (modalità SOAP): Aggiunta di utenti tramite l&#39;API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Blue ai moduli AEM. Consultate [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).
+Nell&#39;esempio di codice riportato di seguito viene aggiunto un utente denominato Wendy Blue ai AEM Forms. Consultate [Aggiunta di utenti](/help/forms/developing/users.md#adding-users).
 
 ```as3
  /*
@@ -749,7 +752,7 @@ Nell&#39;esempio di codice seguente viene aggiunto un utente denominato Wendy Bl
 
 ## Avvio rapido (modalità SOAP): Creazione di gruppi tramite l&#39;API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene creato un gruppo denominato AdobeGroup in AEM Forms. Consultate [Creazione di gruppi](/help/forms/developing/users.md#creating-groups).
+Nell&#39;esempio di codice riportato di seguito viene creato un gruppo denominato AdobeGroup to AEM Forms. Consultate [Creazione di gruppi](/help/forms/developing/users.md#creating-groups).
 
 ```as3
  /*
