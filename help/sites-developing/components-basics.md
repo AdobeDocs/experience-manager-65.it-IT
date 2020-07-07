@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 00c98c4c1178f88844f6bec8a214d096205c58cd
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4719'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +50,7 @@ Prima di iniziare a configurare o codificare il componente, è necessario chiede
 Prima di iniziare qualsiasi discussione seria sullo sviluppo di componenti, è necessario conoscere l’interfaccia utente che gli autori utilizzeranno:
 
 * **Interfaccia utente touch**
-   [L&#39;interfaccia](/help/sites-developing/touch-ui-concepts.md) utente standard si basa sull&#39;esperienza utente unificata di Adobe Marketing Cloud, utilizzando le tecnologie sottostanti dell&#39;interfaccia utente [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e dell&#39;interfaccia utente [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [L&#39;interfaccia](/help/sites-developing/touch-ui-concepts.md) utente standard si basa sull&#39;esperienza utente unificata relativa al Adobe Marketing Cloud , utilizzando le tecnologie sottostanti dell&#39;interfaccia utente [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e dell&#39;interfaccia utente [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Interfaccia utente** classica basata sulla tecnologia ExtJS che è stata rimossa da AEM 6.4.
 
 Per ulteriori informazioni, consulta Raccomandazioni sull’interfaccia [dell’interfaccia utente per i clienti](/help/sites-deploying/ui-recommendations.md) .
@@ -57,19 +60,20 @@ I componenti possono essere implementati per supportare l’interfaccia touch, l
 Per questo motivo descriveremo le basi di entrambi, e come riconoscerli, in questa pagina.
 
 >[!NOTE]
-> Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Modernination Tools&amp;(moderniatzion-tools.md) può facilitare la migrazione.
+>
+>Adobe consiglia di sfruttare l’interfaccia touch per trarre vantaggio dalle tecnologie più recenti. [AEM Modernination Tools&amp;(moderniatzion-tools.md) può facilitare la migrazione.
 
-### Logica dei contenuti e marcatura del rendering {#content-logic-and-rendering-markup}
+### Logica dei contenuti e marcatura del rendering  {#content-logic-and-rendering-markup}
 
 È consigliabile mantenere il codice responsabile per la marcatura e il rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
-Questa filosofia è supportata da [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), un linguaggio modulante che è appositamente limitato per garantire che un linguaggio di programmazione reale venga utilizzato per definire la logica di business sottostante. Questa logica (facoltativa) viene richiamata da HTL con un comando specifico. Questo meccanismo evidenzia il codice richiesto per una vista specifica e, se necessario, consente logiche specifiche per diverse viste dello stesso componente.
+Questa filosofia è supportata da [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html), un linguaggio modulante che è appositamente limitato per garantire che un linguaggio di programmazione reale venga utilizzato per definire la logica di business sottostante. Questa logica (facoltativa) viene richiamata da HTL con un comando specifico. Questo meccanismo evidenzia il codice richiesto per una vista specifica e, se necessario, consente logiche specifiche per diverse viste dello stesso componente.
 
 ### HTL/JSP {#htl-vs-jsp}
 
 HTL è un linguaggio HTML basato su modelli introdotto con AEM 6.0.
 
-La discussione sull’utilizzo di [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) o JSP (Java Server Pages) durante lo sviluppo di componenti deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per AEM.
+La discussione sull’utilizzo di [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) o JSP (Java Server Pages) durante lo sviluppo di componenti deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per AEM.
 
 HTL e JSP possono essere utilizzati per lo sviluppo di componenti sia per l’interfaccia classica che per quella touch. Anche se può esserci la tendenza a supporre che HTL sia solo per l’interfaccia touch e che sia JSP per l’interfaccia classica, si tratta di un’erronea concezione e più a causa dei tempi. L’interfaccia touch e l’HTL sono stati incorporati in AEM nello stesso periodo. Poiché HTL è ora la lingua consigliata, viene utilizzato per i nuovi componenti, che di solito sono per l’interfaccia touch.
 
@@ -550,7 +554,7 @@ La configurazione è comune sia all’interfaccia touch che all’interfaccia cl
 
 Il comportamento di modifica di un componente è configurato aggiungendo un `cq:editConfig` nodo di tipo `cq:EditConfig` sotto il nodo del componente (di tipo `cq:Component`) e aggiungendo proprietà specifiche e nodi secondari. Sono disponibili le seguenti proprietà e nodi secondari:
 
-* [ proprietà `cq:editConfig` del](#configuring-with-cq-editconfig-properties)nodo:
+* [ `cq:editConfig` proprietà](#configuring-with-cq-editconfig-properties)nodo:
 
    * `cq:actions` ( `String array`): definisce le azioni che possono essere eseguite sul componente.
    * `cq:layout` ( `String`): : definisce la modalità di modifica del componente nell’interfaccia classica.
@@ -562,7 +566,7 @@ Il comportamento di modifica di un componente è configurato aggiungendo un `cq:
    * `dialogLayout` (String): Definisce la modalità di apertura della finestra di dialogo.
 
 
-* [ nodi `cq:editConfig`](#configuring-with-cq-editconfig-child-nodes)secondari:
+* [ `cq:editConfig` nodi](#configuring-with-cq-editconfig-child-nodes)secondari:
 
    * `cq:dropTargets` (tipo di nodo `nt:unstructured`): Definisce un elenco di destinazioni di rilascio che possono accettare un rilascio da una risorsa di Content Finder
 
@@ -592,7 +596,7 @@ Il comportamento di modifica di un componente è configurato aggiungendo un `cq:
 
 Nella directory archivio sono presenti diverse configurazioni. È possibile cercare facilmente proprietà specifiche o nodi secondari:
 
-* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio È `cq:actions`possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa di query XPath:
+* Per cercare una proprietà del `cq:editConfig` nodo, ad esempio `cq:actions`, è possibile utilizzare lo strumento Query in **CRXDE Lite** ed effettuare ricerche con la seguente stringa query XPath:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
@@ -988,10 +992,10 @@ Il `cq:listeners` nodo (tipo di nodo `cq:EditListenersConfig`) definisce cosa ac
 >[!NOTE]
 >
 >Nel caso di componenti nidificati, esistono alcune limitazioni alle azioni definite come proprietà del `cq:listeners` nodo:
-
+>
 >* Per i componenti nidificati, i valori delle seguenti proprietà *devono* essere `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>  * `aftermove`
+>  * `aftercopy`
 
 
 Il gestore eventi può essere implementato con un&#39;implementazione personalizzata. Ad esempio (dove `project.customerAction` è un metodo statico):
@@ -1003,7 +1007,8 @@ L&#39;esempio seguente è equivalente alla `REFRESH_INSERTED` configurazione:
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Per l’interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, consultare la sezione `before<action>` ed `after<action>` eventi della documentazione [`CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ dei `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget.
+>
+>Per l’interfaccia classica, per vedere quali parametri possono essere utilizzati nei gestori, consultare la sezione `before<action>` ed `after<action>` eventi della documentazione [`CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ dei `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget.
 
 Con la seguente configurazione, la pagina viene aggiornata dopo che il componente è stato eliminato, modificato, inserito o spostato:
 
