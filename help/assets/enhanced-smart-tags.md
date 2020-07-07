@@ -1,14 +1,17 @@
 ---
-title: Smart tag migliorati
-description: Smart tag migliorati
+title: Tag avanzati migliorati
+description: Tag avanzati migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 10%
 
 ---
 
 
-# Smart tag migliorati {#enhanced-smart-tags}
+# Tag avanzati migliorati {#enhanced-smart-tags}
 
 ## Panoramica dei tag avanzati avanzati {#overview-of-enhanced-smart-tags}
 
@@ -24,7 +27,7 @@ Una volta che un tag è stato preparato e pronto, il servizio ora può applicare
 
 In background, Smart Content Service utilizza il framework Adobe Sensei AI per formare il proprio algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su Adobe I/O. Per utilizzarlo in Adobe Experience Manager, l&#39;amministratore di sistema deve integrare l&#39;istanza Experience Manager con Adobe I/O.
+Smart Content Service è un servizio cloud ospitato su Adobe I/O. Per utilizzarlo in  Adobe Experience Manager, l&#39;amministratore di sistema deve integrare l&#39;istanza  Experience Manager con Adobe I/O.
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
@@ -37,22 +40,22 @@ Di seguito sono riportati i passaggi principali per utilizzare Smart Content Ser
 
 ## Prerequisiti {#prerequisites}
 
-Prima di poter utilizzare Smart Content Service, accertatevi quanto segue per creare un&#39;integrazione su Adobe I/O:
+Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su Adobe I/O:
 
-* Un account Adobe ID con privilegi di amministratore per l’organizzazione.
-* Il servizio Smart Content Service è abilitato per la vostra azienda.
+* Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
+* Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
 
 ## Onboarding {#onboarding}
 
-Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo per Experience Manager. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento ad Adobe I/O.
+Smart Content Service è disponibile per l&#39;acquisto come componente aggiuntivo per  Experience Manager. Dopo l&#39;acquisto, viene inviata un&#39;e-mail all&#39;amministratore dell&#39;organizzazione con un collegamento ad Adobe I/O.
 
-L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con Experience Manager. Per integrare il servizio con Experience Manager Assets, consulta [Configurare i tag](config-smart-tagging.md)avanzati.
+L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con  Experience Manager. Per integrare il servizio con  Experience Manager Assets, consulta [Configurare i tag](config-smart-tagging.md)avanzati.
 
-La procedura di registrazione è completa quando l&#39;amministratore configura il servizio e aggiunge utenti in Experience Manager.
+La procedura di registrazione è completa quando l’amministratore configura il servizio e aggiunge utenti  Experience Manager.
 
 >[!NOTE]
 >
->Se utilizzate Experience Manager 6.3 o versione precedente e necessitate di un servizio di tag per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità AI più recenti e sono quindi meno precisi del servizio avanzato di smart tag.
+>Se utilizzate  versione di Experience Manager 6.3 o precedente e richiedete il servizio di tag per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità AI più recenti e sono quindi meno precisi del servizio avanzato di smart tag.
 
 ## Rivedere risorse e tag {#reviewing-assets-and-tags}
 
@@ -87,13 +90,13 @@ Potete abilitare Smart Content Service per l&#39;addestramento periodico delle r
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Quando questa opzione è selezionata per una cartella, Experience Manager esegue automaticamente un flusso di lavoro di formazione per formare Smart Content Service sulle risorse delle cartelle e i relativi tag. Per impostazione predefinita, il flusso di lavoro della formazione viene eseguito settimanalmente alle 12:30 del sabato.
+Quando questa opzione è selezionata per una cartella,  Experience Manager esegue automaticamente un flusso di lavoro di formazione per formare Smart Content Service sulle risorse delle cartelle e i relativi tag. Per impostazione predefinita, il flusso di lavoro della formazione viene eseguito settimanalmente alle 12:30 del sabato.
 
 ### Formazione su richiesta {#on-demand-training}
 
 Potete addestrare Smart Content Service quando necessario dalla console Flusso di lavoro.
 
-1. Nell’interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. &#39;interfaccia Experience Manager, passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]** , individuate la cartella payload che include le risorse con tag per la formazione del servizio.
 1. Specificate un titolo per il flusso di lavoro e un commento. Quindi fate clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
@@ -108,7 +111,7 @@ Potete addestrare Smart Content Service quando necessario dalla console Flusso d
 
 Per verificare se Smart Content Service è addestrato sui tag presenti nel set di risorse di formazione, controllate il rapporto sul flusso di lavoro di formazione dalla console Rapporti.
 
-1. Nell’interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti > Risorse > Rapporti]**.
+1. &#39;interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Then, click **[!UICONTROL Create]** from the toolbar.
@@ -142,7 +145,7 @@ Quando questa opzione è selezionata per una cartella, Smart Content Service ass
 Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro dei tag:
 
 * Console Flusso di lavoro
-* Timeline  
+* Timeline 
 
 >[!NOTE]
 >
@@ -150,7 +153,7 @@ Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro d
 
 #### Assegnare tag alle risorse dalla console del flusso di lavoro {#tagging-assets-from-the-workflow-console}
 
-1. Nell’interfaccia di Experience Manager, andate a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. &#39;interfaccia Experience Manager, passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
