@@ -3,10 +3,10 @@ title: Modelli di risorse in [!DNL Adobe Experience Manager Assets].
 description: Scopri i modelli delle risorse [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli delle risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1553'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -79,6 +79,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
    * Dalla pagina Modelli, individuate la cartella in cui avete creato la garanzia collaterale e fate clic sull&#39;azione rapida [!UICONTROL Modifica] sulla miniatura di una garanzia reale.
    * Nella pagina della risorsa per il materiale collaterale, fate clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    A sinistra della pagina vengono visualizzati il cercatore di risorse e l’editor di testo. L&#39;editor di testo è aperto per impostazione predefinita.
@@ -95,7 +96,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    >[!NOTE]
    >
-   >Accertatevi che l’ [!DNL Experience Manager] istanza sia integrata con un [!DNL InDesign Server] dispositivo che consenta [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [Integrazione di Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
+   >Accertatevi che l’ [!DNL Experience Manager] istanza sia integrata con un [!DNL InDesign Server] dispositivo che consenta [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [integrare  risorse Experience Manager con InDesign Server](/help/assets/indesign.md).
 
 1. Per modificare il testo in un campo modificabile, fare clic sul campo di testo nell&#39;elenco dei campi modificabili e modificare il testo nel campo.
 
@@ -131,17 +132,19 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    >[!NOTE]
    >
-   >Le icone Anteprima e Fine sono abilitate solo quando i campi immagine modificabili all’interno della risorsa collaterale non presentano icone mancanti. Se vi sono icone mancanti nella risorsa collaterale, è perché non [!DNL Experience Manager] è possibile risolvere le immagini nel [!DNL InDesign] modello. In genere [!DNL Experience Manager] non è in grado di risolvere le immagini nei seguenti casi:
+   >Le opzioni Anteprima e Fine sono abilitate solo quando i campi immagine modificabili all’interno della risorsa collaterale non presentano icone mancanti. Se vi sono icone mancanti nella risorsa collaterale, è perché non [!DNL Experience Manager] è possibile risolvere le immagini nel [!DNL InDesign] modello. In genere [!DNL Experience Manager] non è in grado di risolvere le immagini nei seguenti casi:
    >
-   >    * Le immagini non sono incorporate nel [!DNL InDesign] modello sottostante.
-   >    * Le immagini sono collegate dal file system locale.
+   >* Le immagini non sono incorporate nel [!DNL InDesign] modello sottostante.
+   >* Le immagini sono collegate dal file system locale.
+
    >
    >Per consentire [!DNL Experience Manager] di risolvere le immagini, effettuate le seguenti operazioni:
    >
-   >    * Incorporare le immagini durante la creazione di [!DNL InDesign] modelli (consultate [I collegamenti e gli elementi grafici](https://helpx.adobe.com/indesign/using/graphics-links.html)incorporati).
-   >    * Passate [!DNL Experience Manager] al file system locale e mappate le icone mancanti con le risorse esistenti in [!DNL Experience Manager].
+   >* Incorporare le immagini durante la creazione di [!DNL InDesign] modelli (consultate [I collegamenti e gli elementi grafici](https://helpx.adobe.com/indesign/using/graphics-links.html)incorporati).
+   >* Passate [!DNL Experience Manager] al file system locale e mappate le icone mancanti con le risorse esistenti in [!DNL Experience Manager].
+
    >
-   >Per ulteriori informazioni sull&#39;utilizzo dei [!DNL InDesign] documenti, consultate [Best Practices for Working with InDesign Documents in Experience Manager (Tecniche consigliate per l&#39;utilizzo dei documenti InDesign in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)).
+   >Per ulteriori informazioni sull&#39;uso dei [!DNL InDesign] documenti, consultate [Best practice per l&#39;utilizzo di documenti InDesign in  Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Per generare una rappresentazione PDF per la brochure, selezionate l’opzione Acrobat nella finestra di dialogo, quindi fate clic su **[!UICONTROL Continua]**.
 1. Il materiale collaterale viene creato nella cartella con cui avete iniziato. Per visualizzare i rendering, aprite il materiale collaterale e scegliete **[!UICONTROL Rendering]** dall’elenco di navigazione globale.
@@ -182,7 +185,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. Fare clic su **[!UICONTROL Avanti]** dalla barra degli strumenti.
+1. Click **[!UICONTROL Next]** from the toolbar.
 1. Nella schermata **[!UICONTROL Anteprima e riordina]** , se necessario ridisponete i modelli e visualizzate l’anteprima della selezione di modelli da unire. Quindi fate clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
