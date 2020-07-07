@@ -3,9 +3,9 @@ title: Elabora le risorse utilizzando gestori di contenuti multimediali e flussi
 description: Scopri i gestori di contenuti multimediali e come utilizzare i flussi di lavoro per eseguire attività sulle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2109'
 ht-degree: 4%
 
 ---
@@ -21,15 +21,13 @@ I gestori di file multimediali sono servizi [!DNL Assets] che eseguono azioni sp
 
 >[!NOTE]
 >
->Per una descrizione di tutti i formati supportati da [e delle funzioni supportate per ciascun formato, fai riferimento alla pagina Formati](assets-formats.md) supportati da [!DNL Assets] Risorse.
+>Consulta la pagina Formati [supportati da](assets-formats.md) Risorse per una descrizione di tutti i formati supportati [!DNL Assets] e delle funzioni supportate per ciascun formato.
 
 ## Gestori multimediali predefiniti {#default-media-handlers}
 
 I seguenti gestori di supporti sono disponibili all&#39;interno [!DNL Assets] e gestiscono i tipi MIME più comuni:
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | Nome gestore | Nome servizio (nella console del sistema) | Tipi MIME supportati |
@@ -140,7 +138,7 @@ Dopo aver eseguito la procedura seguente, quando caricate un file TXT in [!DNL E
 
 1. In Eclipse, crea `myBundle`[!DNL Maven] progetto:
 
-   1. Nella barra dei menu, fate clic su **[!UICONTROL File > Nuovo > Altro]**.
+   1. Nella barra dei menu, fate clic su **[!UICONTROL File]** > **[!UICONTROL Nuovo]** > **[!UICONTROL Altro]**.
    1. Nella finestra di dialogo, espandete la [!DNL Maven] cartella, selezionate [!DNL Maven] il progetto e fate clic su **[!UICONTROL Avanti]**.
    1. Selezionare la casella Crea un progetto semplice e la casella Usa posizioni Workspace predefinite, quindi fare clic su **[!UICONTROL Avanti]**.
    1. Definire un [!DNL Maven] progetto:
@@ -505,7 +503,7 @@ Separate i valori degli argomenti di [!UICONTROL processo] utilizzando la virgol
 |---|---|
 | mime:&lt;mime-type> | Argomento facoltativo. Il processo viene applicato se la risorsa ha lo stesso tipo MIME dell’argomento. <br>È possibile definire diversi tipi MIME. |
 | tn:&lt;larghezza>:&lt;altezza> | Argomento facoltativo. Viene creata una miniatura con le dimensioni definite nell’argomento. <br>È possibile definire diverse miniature. |
-| cmd: &lt;comando> | Definisce il comando che verrà eseguito. La sintassi dipende dallo strumento della riga di comando. È possibile definire un solo comando. <br>Per creare il comando è possibile utilizzare le seguenti variabili:<br>`${filename}`: nome del file di input, ad esempio Original.jpg <br> `${file}`: nome percorso completo del file di input, ad esempio /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory del file di input, ad esempio /tmp/cqdam0816.tmp <br>`${basename}`: nome del file di input senza estensione, ad esempio originale <br>`${extension}`: estensione del file di input, ad esempio JPG. |
+| cmd: &lt;comando> | Definisce il comando che viene eseguito. La sintassi dipende dallo strumento della riga di comando. È possibile definire un solo comando. <br>Per creare il comando è possibile utilizzare le seguenti variabili:<br>`${filename}`: nome del file di input, ad esempio Original.jpg <br> `${file}`: nome percorso completo del file di input, ad esempio `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directory del file di input, ad esempio `/tmp/cqdam0816.tmp`<br>`${basename}`: nome del file di input senza estensione, ad esempio originale <br>`${extension}`: estensione del file di input, ad esempio JPG. |
 
 Ad esempio, se [!DNL ImageMagick] è installato sul disco che ospita il [!DNL Experience Manager] server e si crea un passaggio di processo utilizzando [!UICONTROL CommandLineProcess] come implementazione e i seguenti valori come argomenti [!UICONTROL di]processo:
 
