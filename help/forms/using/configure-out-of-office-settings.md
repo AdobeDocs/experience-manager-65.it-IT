@@ -4,7 +4,10 @@ seo-title: Configurare le impostazioni Fuori sede
 description: Configurazione delle impostazioni Fuori sede
 seo-description: Configurare le impostazioni Fuori sede
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 0%
 
 ---
 
@@ -23,10 +26,10 @@ Potete separare la delega degli elementi in base ai modelli di workflow. Ad esem
 
 >[!NOTE]
 >
-> * Quando si attiva l&#39;impostazione Fuori sede, tutti gli elementi disponibili nella casella in entrata, prima di attivare l&#39;impostazione, rimangono nella inbox. Vengono delegati solo gli elementi ricevuti dopo l&#39;attivazione dell&#39;impostazione.
-> * Quando disattivate l&#39;impostazione Fuori sede, gli elementi delegati non vengono automaticamente assegnati. È possibile utilizzare la funzionalità di attestazione per assegnare elementi.
-> * Quando l&#39;utente A delega gli elementi all&#39;utente B e l&#39;utente B delega ulteriormente all&#39;utente C, gli elementi vengono assegnati solo all&#39;utente C e non all&#39;utente B.
-> * In presenza di un ciclo di assegnazione, le attività restano invariate rispetto all&#39;utente originale. Ad esempio, quando l&#39;utente A delega gli elementi all&#39;utente B, l&#39;utente B delega l&#39;utente C, l&#39;utente C delega l&#39;utente D e l&#39;utente D delega l&#39;utente B, viene creato un ciclo. In questa situazione, l’elemento rimane unito all’utente originale. L&#39;utente A è l&#39;utente originale nell&#39;esempio precedente.
+>* Quando si attiva l&#39;impostazione Fuori sede, tutti gli elementi disponibili nella casella in entrata, prima di attivare l&#39;impostazione, rimangono nella inbox. Vengono delegati solo gli elementi ricevuti dopo l&#39;attivazione dell&#39;impostazione.
+>* Quando disattivate l&#39;impostazione Fuori sede, gli elementi delegati non vengono automaticamente assegnati. È possibile utilizzare la funzionalità di attestazione per assegnare elementi.
+>* Quando l&#39;utente A delega gli elementi all&#39;utente B e l&#39;utente B delega ulteriormente all&#39;utente C, gli elementi vengono assegnati solo all&#39;utente C e non all&#39;utente B.
+>* In presenza di un ciclo di assegnazione, le attività restano invariate rispetto all&#39;utente originale. Ad esempio, quando l&#39;utente A delega gli elementi all&#39;utente B, l&#39;utente B delega l&#39;utente C, l&#39;utente C delega l&#39;utente D e l&#39;utente D delega l&#39;utente B, viene creato un ciclo. In questa situazione, l’elemento rimane unito all’utente originale. L&#39;utente A è l&#39;utente originale nell&#39;esempio precedente.
 
 
 ## Attiva l’impostazione Fuori sede per l’account {#enable-out-of-office}
