@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4102'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ Per aggiungere oggetti e servizi del modello dati:
 
    Scheda Modello visualizza oggetti modello dati aggiunti
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >È possibile tenere premuti e trascinare i riquadri oggetti del modello dati per organizzarli nell&#39;area contenuto. Tutti gli oggetti del modello dati aggiunti nel modello dati del modulo sono disabilitati nel riquadro Origini dati.
 
@@ -70,7 +73,7 @@ Per aggiungere oggetti e servizi del modello dati:
 
 1. Toccare **[!UICONTROL Salva]** per salvare l&#39;oggetto modello di modulo.
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >È possibile richiamare i servizi configurati nella scheda Servizi di un modello dati modulo utilizzando le regole del modulo adattivo. I servizi configurati sono disponibili nell&#39;azione di attivazione dei servizi dell&#39;editor delle regole. Per ulteriori informazioni sull&#39;utilizzo di questi servizi nelle regole dei moduli adattivi, vedere Invocare servizi e Impostare il valore delle regole nell&#39;editor [delle](/help/forms/using/rule-editor.md)regole.
 
@@ -213,7 +216,7 @@ In genere, esistono associazioni create tra gli oggetti del modello dati in un&#
 
 Quando si aggiungono oggetti del modello dati associati in un&#39;origine dati a un modello dati del modulo, le relative associazioni vengono mantenute e visualizzate come collegate dalle linee freccia. È possibile aggiungere associazioni tra gli oggetti del modello dati attraverso origini dati diverse in un modello dati del modulo.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Le associazioni predefinite in un&#39;origine dati JDBC non vengono mantenute nel modello dati del modulo. È necessario crearli manualmente.
 
@@ -256,7 +259,7 @@ Per aggiungere un&#39;associazione:
 1. Toccate **[!UICONTROL Fine]** per salvare l&#39;associazione, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
 1. Ripetere i passaggi per creare ulteriori associazioni come necessario.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >L&#39;associazione aggiunta viene visualizzata nella casella dell&#39;oggetto modello dati con il titolo specificato e una linea che collega gli oggetti del modello dati associati.
 >
@@ -264,7 +267,7 @@ Per aggiungere un&#39;associazione:
 
 ![associazione](assets/added-association.png)
 
-## Modifica proprietà {#properties}
+## Modifica delle proprietà {#properties}
 
 È possibile modificare le proprietà degli oggetti del modello dati, le relative proprietà e i servizi aggiunti nel modello dati del modulo.
 
@@ -491,12 +494,12 @@ Nella tabella seguente sono elencati i vincoli per i dati di input basati sull&#
    <td>Swagger</td> 
   </tr> 
   <tr> 
-   <td>enum (stringa)<br /><br /> </td> 
+   <td>enum (stringa)<br /> <br /> </td> 
    <td>Limita il valore di un parametro nei dati di input a un insieme fisso di valori stringa. Deve essere un array con almeno un elemento, dove ogni elemento è univoco.</td> 
    <td>Swagger, WSDL e Odata</td> 
   </tr> 
   <tr> 
-   <td>enum (numero)<br /><br /> </td> 
+   <td>enum (numero)<br /> <br /> </td> 
    <td>Limita il valore di un parametro nei dati di input a un insieme fisso di valori numerici. Deve essere un array con almeno un elemento, dove ogni elemento è univoco.</td> 
    <td>WSDL</td> 
   </tr> 
@@ -520,7 +523,7 @@ format: "int64"
 ]
 ```
 
-Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log** . Esempio,
+Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log** . Ad esempio,
 
 ```java
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
