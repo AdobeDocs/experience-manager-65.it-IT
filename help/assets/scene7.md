@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2862'
 ht-degree: 26%
@@ -268,7 +268,10 @@ Se si dispone di più configurazioni, per impostazione predefinita AEM visualizz
 >* Quando Anteprima [protetta è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), le risorse pubblicate e non pubblicate in Dynamic Media Classic vengono visualizzate nel browser dei contenuti di Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Per i video, il browser del contenuto Dynamic Media Classic supporta:
-   >   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
+
+   >
+   >   
+   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
    >   * Video MP4 singolo
    >   * Video F4V singolo
 
@@ -285,6 +288,7 @@ Sfogliate le risorse di Dynamic Media Classic selezionando **[!UICONTROL Dynamic
 >
 >* Il browser dei contenuti di Dynamic Media Classic carica circa 100 risorse e le ordina per nome.
 >* Se è impostato un server di anteprima protetto, il browser utilizzerà tale server di anteprima per eseguire il rendering delle miniature e delle risorse.
+
 >
 
 
@@ -337,6 +341,7 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
    >
 * Durante la ricerca di video, si cerca una singola rappresentazione. I risultati restituiscono la rappresentazione originale (solo &amp;ast;.mp4) e la rappresentazione codificata.
 >* Quando eseguite una ricerca in un set video adattivo, dovete cercare nella cartella e in tutte le sottocartelle, ma solo se avete aggiunto una parola chiave alla ricerca. Se non hai aggiunto una parola chiave, AEM non cerca nelle sottocartelle.
+
 >
 
 
