@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ L&#39;interfaccia utente Inbox fornisce le viste elenco e calendario per visuali
 
 In sintesi, Inbox consente di creare una nuova applicazione e di gestire le attività assegnate.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Per poter utilizzare AEM Inbox, dovete far parte del gruppo di utenti del flusso di lavoro.
 
