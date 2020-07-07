@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 translation-type: tm+mt
-source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 0%
 
 ---
 
@@ -23,12 +26,12 @@ source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
 
 Il framework di integrazione include un livello di integrazione con un&#39;API. Questo consente di creare componenti AEM per funzionalità eCommerce (indipendentemente dal motore eCommerce specifico). Consente inoltre di utilizzare il database CRX interno o di collegare un sistema eCommerce ed estrarre i dati del prodotto in AEM.
 
-Per usare il livello di integrazione, sono disponibili diversi componenti AEM forniti con il prodotto. Attualmente questi sono:
+Per usare il livello di integrazione, sono disponibili diversi componenti AEM forniti con il prodotto. Attualmente si tratta di:
 
 * Un componente per la visualizzazione di un prodotto
 * Un carrello
 * Promozioni e voucher
-* Progetti di catalogo e sezioni
+* Blueprint di cataloghi e sezioni
 * Check-out
 * Ricerca
 
@@ -81,7 +84,7 @@ In un’installazione standard di AEM è necessaria un’implementazione specifi
 
 >[!NOTE]
 >
->Con CRXDE Lite potete vedere come questo viene gestito nel componente prodotto per l’implementazione generica di AEM:
+>Con CRXDE Lite potete vedere come questo viene gestito nel componente di prodotto per l’implementazione generica di AEM:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -128,13 +131,11 @@ Qualsiasi risorsa prodotto può essere rappresentata da un `Product API`. La mag
 Mentre i prodotti (in generale) possono avere molti assi di variante, il componente prodotto out-of-the-box gestisce solo due:
 >
 >1. `size`
-   >
-   >
-1. più uno
-   >   Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
+>1. più uno
+
 >
-
-
+>   
+Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
 
 #### Riferimenti prodotto e dati PIM {#product-references-and-pim-data}
 
@@ -171,7 +172,7 @@ Infine, non è previsto l&#39;uso di dati di prodotto. È possibile inserire tut
 
 **API**
 
-#### com.adobe.cq.comCommerce.api.Interfaccia prodotto {#com-adobe-cq-commerce-api-product-interface}
+#### com.adobe.cq.com di prodotto.api.Interfaccia di prodotto {#com-adobe-cq-commerce-api-product-interface}
 
 ```java
 public interface Product extends Adaptable {
@@ -193,7 +194,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -313,11 +314,11 @@ public class AxisFilter implements VariantFilter {
 
 * Il carrello è di proprietà del `CommerceSession:`
 
-   * Consente di `CommerceSession` eseguire operazioni di aggiunta, rimozione ecc.
+   * Consente di `CommerceSession` eseguire operazioni di aggiunta, rimozione, ecc.
    * Vengono `CommerceSession` inoltre eseguiti i vari calcoli sul carrello.
    * Vengono `CommerceSession` inoltre applicati voucher e promozioni che sono stati licenziati al carrello.
 
-* Anche se non direttamente correlati al carrello, il `CommerceSession` cliente deve anche fornire informazioni sui prezzi del catalogo (dal momento che possiede i prezzi)
+* Anche se non direttamente correlati al carrello, l&#39; `CommerceSession` operatore deve anche fornire informazioni sui prezzi del catalogo (dal momento che possiede i prezzi)
 
    * La determinazione prezzi può avere diversi modificatori:
 
@@ -421,13 +422,11 @@ Il progetto principale offre diverse classi generiche / helper:
 
 1. `CommerceQuery`
 
-   
-Viene utilizzato per descrivere una query di ricerca (contiene informazioni sul testo della query, la pagina corrente, la dimensione della pagina, l’ordinamento e i facet selezionati). Tutti i servizi eCommerce che implementano l&#39;API di ricerca riceveranno le istanze di questa classe per eseguire la ricerca. È `CommerceQuery` possibile creare un&#39;istanza di un oggetto di richiesta ( `HttpServletRequest`).
+   Viene utilizzato per descrivere una query di ricerca (contiene informazioni sul testo della query, la pagina corrente, la dimensione della pagina, l’ordinamento e i facet selezionati). Tutti i servizi eCommerce che implementano l&#39;API di ricerca riceveranno le istanze di questa classe per eseguire la ricerca. È `CommerceQuery` possibile creare un&#39;istanza di un oggetto di richiesta ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   
-È una classe di utilità che fornisce un metodo statico, `toParams` , utilizzato per generare stringhe di `GET` parametri da un elenco di facet e un valore attivato. Questa funzione è utile nell’interfaccia utente, dove è necessario visualizzare un collegamento ipertestuale per ciascun valore di ciascun facet, in modo che quando l’utente fa clic sul collegamento ipertestuale il relativo valore venga attivato (ovvero se è stato selezionato, viene rimosso dalla query, altrimenti aggiunto). Questo si occupa di tutte le logiche di gestione di facet multivalore/monomalore, valori prevalenti, ecc.
+   È una classe di utilità che fornisce un metodo statico, `toParams` , utilizzato per generare stringhe di `GET` parametri da un elenco di facet e un valore attivato. Questa funzione è utile nell’interfaccia utente, dove è necessario visualizzare un collegamento ipertestuale per ciascun valore di ciascun facet, in modo che quando l’utente fa clic sul collegamento ipertestuale il relativo valore venga attivato (ovvero se è stato selezionato, viene rimosso dalla query, altrimenti aggiunto). Questo si occupa di tutte le logiche di gestione di facet multivalore/monomalore, valori prevalenti, ecc.
 
 Il punto di ingresso per l&#39;API di ricerca è il `CommerceService#search` metodo che restituisce un `CommerceResult` oggetto. Per ulteriori informazioni su questo argomento, consultate la Documentazione API.
 
@@ -466,7 +465,7 @@ Il punto di ingresso per l&#39;API di ricerca è il `CommerceService#search` met
    * Offerta promozionale:
 
       * Priorità
-      * Percorso gestore di promozione
+      * Un percorso gestore di promozione
    * Potete collegare le promozioni a una campagna per definirne la data/ora di attivazione/disattivazione.
    * Puoi collegare le promozioni a un&#39;esperienza per definirne i segmenti.
    * Le promozioni non collegate a un&#39;esperienza non si attivano autonomamente, ma possono essere comunque attivate da un Voucher.
@@ -527,7 +526,7 @@ I voucher `AbstractJcrCommerceSession` forniti possono essere applicati. I vouch
 
 * `jcr:title` (Stringa) - per la descrizione del voucher
 * `code` (Stringa) - il codice che l&#39;utente deve immettere per applicare questo voucher
-* `promotion` (String) - la promozione da applicare;ad esempio `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) - la promozione da applicare; ad esempio `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 I gestori di promozione sono servizi OSGi che modificano il carrello. Il carrello supporterà diversi ganci che saranno definiti nell&#39; `PromotionHandler` interfaccia.
 
