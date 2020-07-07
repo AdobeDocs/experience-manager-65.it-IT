@@ -1,28 +1,31 @@
 ---
 title: Configurare le code condivise
 seo-title: Configurare le code condivise
-description: Scopri come utilizzare le code condivise per flussi di lavoro incentrati sui moduli in AEM Forms su OSGi.
-seo-description: Scopri come utilizzare le code condivise per flussi di lavoro incentrati sui moduli in AEM Forms su OSGi.
+description: Scoprite come utilizzare le code condivise per flussi di lavoro incentrati sui moduli sui AEM Forms in OSGi.
+seo-description: Scoprite come utilizzare le code condivise per flussi di lavoro incentrati sui moduli sui AEM Forms in OSGi.
 uuid: null
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: null
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a250e739adcf094856f1eafa75de2649d6d3d5f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 1%
 
 ---
 
 
 # Condividere e richiedere l&#39;accesso agli elementi Inbox di un utente {#share-and-request-access}
 
-Una coda è un elenco di elementi nella Casella in entrata AEM di un utente. Possono essere elementi assegnati a un utente o elementi condivisi con il gruppo di cui un utente è membro. È possibile accedere alla Casella in entrata per visualizzare e intervenire sull&#39;elemento Inbox. Ad esempio, condividere un elemento con un altro utente.
+Una coda è un elenco di elementi nella Casella in entrata AEM di un utente. Possono essere elementi assegnati a un utente o elementi condivisi con il gruppo di cui un utente è membro. È possibile accedere alla Casella in entrata per visualizzare e intervenire sull&#39;elemento Posta in arrivo. Ad esempio, condividere un elemento con un altro utente.
 
 È inoltre possibile condividere gli elementi Inbox con un altro utente. Quando un altro utente ha accesso agli elementi della Casella in entrata, può richiedere e intervenire sugli elementi condivisi. Allo stesso modo, potete richiedere l’accesso agli elementi della casella in entrata ad altri utenti.
 
 ## Prerequisiti {#pre-requisites}
 
-L&#39;utente che ha eseguito l&#39;accesso deve essere membro del `workflow-users` gruppo. L&#39;utente può condividere elementi o richiedere l&#39;accesso agli elementi solo agli utenti a cui è stato effettuato l&#39;accesso, oppure solo agli utenti che hanno attivato il profilo pubblico.
+L&#39;utente che ha eseguito l&#39;accesso deve essere un membro del `workflow-users` gruppo. L&#39;utente può condividere elementi o richiedere l&#39;accesso agli elementi solo agli utenti a cui è stato effettuato l&#39;accesso, oppure solo agli utenti che hanno attivato il profilo pubblico.
 
 ## Condivisione di uno o tutti gli elementi della inbox con un altro utente
 
@@ -40,7 +43,7 @@ Per condividere tutti gli elementi di una inbox con un altro utente, effettuate 
 
 >[!NOTE]
 >
-> (Solo per gli elementi del flusso di lavoro incentrati sui moduli) Abilitare l&#39;opzione **[Consenti al cessionario di condividere](aem-forms-workflow-step-reference.md)**tramite Inbox del passaggio **Assegna attività**nel flusso di lavoro. Solo gli elementi con l&#39;opzione sopra abilitata vengono visualizzati agli altri utenti.
+>(Solo per gli elementi del flusso di lavoro incentrati sui moduli) Abilitare l&#39;opzione **[Consenti al cessionario di condividere](aem-forms-workflow-step-reference.md)**tramite Inbox del passaggio **Assegna attività**nel flusso di lavoro. Solo gli elementi con l&#39;opzione sopra abilitata vengono visualizzati agli altri utenti.
 
 ### Condivisione di singoli elementi
 
@@ -54,7 +57,7 @@ Per condividere un elemento in entrata con un altro utente, effettuate le seguen
 
 >[!NOTE]
 >
-> (Solo per gli elementi del flusso di lavoro incentrati sui moduli) Abilitare l&#39;opzione **[Consenti all&#39;assegnatario di condividere in modo esplicito in Posta in arrivo](aem-forms-workflow-step-reference.md)**del passaggio **Assegna attività**nel flusso di lavoro. Solo gli elementi con l&#39;opzione sopra abilitata vengono visualizzati agli altri utenti.
+>(Solo per gli elementi del flusso di lavoro incentrati sui moduli) Abilitare l&#39;opzione **[Consenti al cessionario di condividere in modo esplicito in Posta in arrivo](aem-forms-workflow-step-reference.md)**del passaggio **Assegna attività**nel flusso di lavoro. Solo gli elementi con l&#39;opzione sopra abilitata vengono visualizzati agli altri utenti.
 
 ## Richiedi accesso a elementi della casella in entrata {#request-access}
 
@@ -77,14 +80,14 @@ Potete iniziare a lavorare su un elemento condiviso solo dopo averlo reclamato. 
 
 ## Rilascia elementi richiesti {#release-items}
 
-Potete lavorare su un elemento condiviso solo dopo averlo reclamato. Altri utenti non possono visualizzare o lavorare su elementi che avete richiesto. Se non potete continuare a lavorare su un elemento, potete rilasciarlo nuovamente nel pool.   Dopo aver rilasciato l’elemento, altri possono reclamare e lavorare sull’elemento:
+Potete lavorare su un elemento condiviso solo dopo averlo reclamato. Altri utenti non possono visualizzare o utilizzare gli elementi richiesti. Se non potete continuare a lavorare su un elemento, potete rilasciarlo nuovamente nel pool.   Dopo aver rilasciato l’elemento, altri possono reclamare e lavorare sull’elemento:
 
 Per rilasciare un elemento, effettuate le seguenti operazioni:
 
 1. Accedi alla tua istanza di AEM. Toccate l’icona ![Inbox](assets/bell.svg) e toccate **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della inbox.
 1. Selezionare l&#39;elemento da rilasciare e toccare **[!UICONTROL AnnullaClaim]**. L&#39;elemento viene aggiunto nuovamente al pool. Altri possono ora reclamare l’elemento.
 
-## Limiti {#limitations}
+## Limitazioni  {#limitations}
 
 * La condivisione di elementi con un gruppo non è supportata.
 * La condivisione di attività di progetto non è supportata.
