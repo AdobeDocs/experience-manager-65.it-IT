@@ -3,7 +3,7 @@ title: Gestire le risorse composte con riferimenti e risorse di più pagine in [
 description: Scopri come creare riferimenti a risorse digitali dall’interno [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Per le risorse supportate con formati con più pagine — File PDF, file AI [!DN
 
 La generazione di risorse secondarie è disabilitata per impostazione predefinita. Per attivare la generazione di risorse secondarie, effettuate le seguenti operazioni:
 
-1. Accedete come [!DNL Experience Manager] amministratore. Accedere **[!UICONTROL a Strumenti > Flusso di lavoro > Modelli]**.
+1. Accedete come [!DNL Experience Manager] amministratore. Accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Modelli]**.
 1. Selezionate il flusso di lavoro Aggiorna risorsa **** DAM e fate clic su **[!UICONTROL Modifica]**.
 1. Fate clic su **[!UICONTROL Attiva pannello]** laterale e individuate il passaggio **[!UICONTROL Crea risorsa]** secondaria. Aggiungete il passaggio al flusso di lavoro. Fai clic su **[!UICONTROL Sincronizza]**.
 
@@ -99,7 +99,7 @@ Per generare le risorse secondarie, effettuate una delle seguenti operazioni:
 * Risorse multipagina esistenti: Esegui manualmente il flusso di lavoro [!UICONTROL DAM Update Assets] seguendo una delle seguenti procedure:
 
    * Selezionate una risorsa e fate clic su [!UICONTROL Timeline] per aprire il pannello a sinistra. In alternativa, utilizzare la scelta rapida da tastiera `alt + 3`. Fate clic su [!UICONTROL Avvia flusso di lavoro], selezionate [!UICONTROL DAM Update Asset](Aggiorna risorsa [!UICONTROL DAM), fate clic su]Avvia [!UICONTROL e fate clic su]Procedi.
-   * Selezionate una risorsa e fate clic su [!UICONTROL Crea > Flusso di lavoro] nella barra degli strumenti. Dalla finestra di dialogo a comparsa, selezionate Flusso di lavoro di aggiornamento risorse  DAM, fate clic su [!UICONTROL Avvia]e quindi su [!UICONTROL Procedi].
+   * Selezionate una risorsa e fate clic su [!UICONTROL Crea] > [!UICONTROL Flusso di lavoro] dalla barra degli strumenti. Dalla finestra di dialogo a comparsa, selezionate Flusso di lavoro di aggiornamento risorse  DAM, fate clic su [!UICONTROL Avvia]e quindi su [!UICONTROL Procedi].
 
 In modo specifico per i documenti di Microsoft Word, eseguite il flusso di lavoro **[!UICONTROL di analisi dei documenti]** di Word DAM. Viene generato un `cq:Page` componente dal contenuto del documento di Microsoft Word. Il `cq:Page` componente fa riferimento alle immagini estratte dal documento. Queste immagini vengono estratte anche se la generazione di risorse secondarie è disabilitata.
 
