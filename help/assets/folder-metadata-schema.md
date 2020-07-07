@@ -3,7 +3,7 @@ title: Schema metadati per cartelle
 description: Scopri come creare uno schema di metadati per le cartelle di risorse in  Adobe Experience Manager Risorse
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 4%
@@ -108,7 +108,7 @@ Se si configura uno schema di metadati per una cartella, il percorso del modulo 
 
 ### Assegnazione a uno schema dalla pagina Schema metadati cartella {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. &#39;interfaccia Experience Manager, accedete a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**> Schemi di metadati **[!UICONTROL della cartella]**.
+1. &#39;interfaccia Experience Manager, accedete a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati **[!UICONTROL della cartella]**.
 1. Dalla pagina Moduli schema metadati cartella, selezionare il modulo schema che si desidera applicare a una cartella.
 1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Applica alle cartelle]**.
 
