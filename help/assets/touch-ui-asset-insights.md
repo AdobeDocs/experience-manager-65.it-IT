@@ -3,7 +3,7 @@ title: Informazioni sulla risorsa
 description: Scopri come la funzione Asset Insights consente di tenere traccia delle valutazioni degli utenti e delle statistiche di utilizzo delle immagini utilizzate nei siti Web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 7%
@@ -43,7 +43,6 @@ Potete visualizzare i punteggi di Asset Insights dalla pagina dei metadati.
    * **Web e dispositivi mobili**: Il numero di volte in cui la risorsa faceva parte di siti Web e app
    * **Social**: Il numero di volte in cui la risorsa è stata utilizzata nelle soluzioni, come Adobe Social e  Adobe Campaign
    * **E-mail**: Numero di volte in cui la risorsa è stata utilizzata nelle campagne e-mail
-
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
