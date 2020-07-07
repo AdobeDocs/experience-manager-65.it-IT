@@ -3,9 +3,9 @@ title: Scarica le risorse digitali da [!DNL Adobe Experience Manager].
 description: Scoprite come scaricare le risorse [!DNL Adobe Experience Manager] da e attivare o disattivare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '795'
 ht-degree: 3%
 
 ---
@@ -24,14 +24,14 @@ Impossibile scaricare i tipi di risorse Set immagini, Set 360 gradi, Set file mu
 **Per scaricare le risorse,**
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
-1. Nella pagina di navigazione, tocca **[!UICONTROL Risorse > File.]**
+1. Nella pagina di navigazione, tocca **[!UICONTROL Risorse]** > **[!UICONTROL File.]**
 1. Individuate una cartella contenente le risorse da scaricare.
 1. Selezionate la cartella o selezionate una o più risorse all’interno della cartella.
 1. Nella barra degli strumenti, toccate **[!UICONTROL Scarica.]**
 
    ![Opzioni disponibili durante il download delle risorse da  Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
-   *Opzioni della finestra di dialogo Download.*
+   *Figura: Opzioni della finestra di dialogo Download.*
 
 1. Nella finestra di dialogo Download, selezionate le opzioni di download desiderate.
 
