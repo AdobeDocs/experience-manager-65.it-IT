@@ -3,7 +3,7 @@ title: Facet di ricerca
 description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in  Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 18%
@@ -114,7 +114,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 >
 >Il predicato Options è un wrapper personalizzato che include i predicati delle proprietà per illustrare il comportamento descritto. Al momento non è disponibile alcun endpoint REST per supportare la funzionalità in modo nativo.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio **[!UICONTROL Tipo file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio `jcr:content/metadata/dc:format.`
