@@ -3,10 +3,10 @@ title: Configurate i tag delle risorse mediante Smart Content Service.
 description: Scoprite come configurare i tag avanzati e i tag avanzati in [!DNL Adobe Experience Manager]mediante Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 64%
+source-wordcount: '1116'
+ht-degree: 60%
 
 ---
 
@@ -93,7 +93,7 @@ Per utilizzare le API Smart Content Service, create un&#39;integrazione in Adobe
 
 Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tecnico, ID organizzazione, Segreto cliente, Server di autorizzazione e chiave API dall&#39;integrazione di Adobe Developer Console. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
 
-1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti > Cloud Service > Servizi cloud precedenti]** per aprire la console [!UICONTROL Cloud Services].
+1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
 1. In **[!UICONTROL Tag avanzati risorse]**, apri la configurazione creata in precedenza. Nella pagina delle impostazioni del servizio, fai clic su **[!UICONTROL Modifica]**.
 1. Nella finestra di dialogo **[!UICONTROL Servizio di contenuti avanzati AEM]**, utilizza i valori precompilati per i campi **[!UICONTROL URL servizio]** e **[!UICONTROL Server autorizzazioni]**.
 1. Per i campi **[!UICONTROL Chiave API]**, **[!UICONTROL ID account tecnico]**, **[!UICONTROL ID organizzazione]** e **[!UICONTROL Segreto client]**, utilizza i valori generati sopra.
@@ -103,15 +103,13 @@ Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tec
 Dopo aver completato la configurazione, puoi usare un MBean JMX per convalidare la configurazione. Per eseguire la convalida, effettua le seguenti operazioni.
 
 1. Accedi al server di [!DNL Experience Manager] all’indirizzo `https://[aem_server]:[port]`.
-1. Passa a **[!UICONTROL Strumenti > Operazioni > Console Web]** per aprire la console OSGi. Fai clic su **[!UICONTROL Principale > JMX]**.
-1. Fai clic su **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
-1. Fai clic su **[!UICONTROL validateConfigs()]**. Nella finestra di dialogo **[!UICONTROL Validate Configurations]** (Convalida configurazioni), fai clic su **[!UICONTROL Invoke]** (Richiama).
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** to open the OSGi console. Click **[!UICONTROL Main]>[!UICONTROL JMX]**.
+1. Clic `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+1. Clic `validateConfigs()`. Nella finestra di dialogo **[!UICONTROL Validate Configurations]** (Convalida configurazioni), fai clic su **[!UICONTROL Invoke]** (Richiama). I risultati della convalida vengono visualizzati nella stessa finestra di dialogo.
 
-   Il risultato della convalida viene visualizzato nella stessa finestra di dialogo.
+## Abilitare i tag avanzati nel flusso di lavoro [!UICONTROL DAM Update Asset] (facoltativo) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-## Abilitare i tag avanzati nel flusso di lavoro Risorse aggiornamento DAM (facoltativo) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
-
-1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Nella pagina **[!UICONTROL Modelli flusso di lavoro]**, seleziona il modello del flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
 1. Per visualizzare i passaggi, espandi il pannello laterale. Trascina il passaggio **[!UICONTROL Risorsa di tag avanzati]** della sezione Flusso di lavoro DAM e inseriscilo dopo il passaggio **[!UICONTROL Elabora miniature]**.
