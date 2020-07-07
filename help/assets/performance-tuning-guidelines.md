@@ -4,9 +4,9 @@ description: Suggerimenti e indicazioni [!DNL Experience Manager] sulla configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da2e435f33e8527793e009700c30e60868d196be
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Di seguito sono riportate alcune aree di interesse principali intorno alle quali
 
 ## Platform {#platform}
 
-Sebbene Experience Manager sia supportato su diverse piattaforme, Adobe ha trovato il maggiore supporto per gli strumenti nativi su Linux e Windows, il che contribuisce a ottimizzare le prestazioni e a semplificare l&#39;implementazione. È consigliabile implementare un sistema operativo a 64 bit in grado di soddisfare i requisiti di memoria elevati di una [!DNL Experience Manager Assets] distribuzione. Come per qualsiasi implementazione di Experience Manager, devi implementare TarMK laddove possibile. Mentre TarMK non può essere ridimensionato oltre una singola istanza di creazione, si è scoperto che funziona meglio di MongoMK. Potete aggiungere istanze di offload TarMK per aumentare la potenza di elaborazione del flusso di lavoro della [!DNL Experience Manager Assets] distribuzione.
+Sebbene  Experience Manager sia supportato su diverse piattaforme, Adobe ha trovato il supporto più grande per gli strumenti nativi su Linux e Windows, il che contribuisce a migliorare le prestazioni e la facilità di implementazione. È consigliabile implementare un sistema operativo a 64 bit in grado di soddisfare i requisiti di memoria elevati di una [!DNL Experience Manager Assets] distribuzione. Come per ogni  implementazione Experience Manager, è necessario implementare TarMK laddove possibile. Mentre TarMK non può essere ridimensionato oltre una singola istanza di creazione, si è scoperto che funziona meglio di MongoMK. Potete aggiungere istanze di offload TarMK per aumentare la potenza di elaborazione del flusso di lavoro della [!DNL Experience Manager Assets] distribuzione.
 
 ### Cartella temporanea {#temp-folder}
 
@@ -55,9 +55,8 @@ Una volta pronto il volume temporaneo ad alte prestazioni, impostare il parametr
 
 Adobe consiglia di distribuire [!DNL Experience Manager Assets] su Java 8 per ottenere prestazioni ottimali.
 
->[!NOTE]
->
->A partire da aprile 2015, Oracle ha interrotto il rilascio degli aggiornamenti per Java 7.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### Parametri JVM {#jvm-parameters}
 
@@ -77,11 +76,11 @@ Impostate i seguenti parametri JVM:
 
 ### Configurare la dimensione massima della cache delle immagini nel buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Quando si caricano grandi quantità di risorse in [!DNLAAdobe Experience Manager], per consentire picchi imprevisti nel consumo di memoria e per evitare errori JVM con OutOfMemoryErrors, ridurre la dimensione massima configurata della cache delle immagini nel buffer. Si consideri un esempio di sistema con un heap massimo (- `Xmx`param) di 5 GB, un Oak BlobCache impostato a 1 GB e una cache del documento impostata a 2 GB. In questo caso, la cache nel buffer richiederebbe al massimo 1,25 GB di memoria, lasciando solo 0,75 GB di memoria per picchi imprevisti.
+Quando si caricano grandi quantità di risorse su [!DNLAAdobe  Experience Manager], per consentire picchi imprevisti nel consumo di memoria e per evitare errori JVM con OutOfMemoryErrors, ridurre la dimensione massima configurata della cache delle immagini nel buffer. Si consideri un esempio di sistema con un heap massimo (- `Xmx`param) di 5 GB, un Oak BlobCache impostato a 1 GB e una cache del documento impostata a 2 GB. In questo caso, la cache nel buffer richiederebbe al massimo 1,25 GB di memoria, lasciando solo 0,75 GB di memoria per picchi imprevisti.
 
 Configurare la dimensione della cache nel buffer nella console Web OSGi. In `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, impostare la proprietà `cq.dam.image.cache.max.memory` in byte. Ad esempio, 1073741824 è 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Da Experience Manager 6.1 SP1, se utilizzate un `sling:osgiConfig` nodo per configurare questa proprietà, accertatevi di impostare il tipo di dati su Long. Per ulteriori dettagli, consultate [CQBufferedImageCache consuma un heap durante il caricamento](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)delle risorse.
+Da  Experience Manager 6.1 SP1, se si utilizza un `sling:osgiConfig` nodo per configurare questa proprietà, assicurarsi di impostare il tipo di dati su Long. Per ulteriori dettagli, consultate [CQBufferedImageCache consuma un heap durante il caricamento](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)delle risorse.
 
 ### Archivio dati condivisi {#shared-data-stores}
 
@@ -118,7 +117,7 @@ Adobe consiglia di abilitare HTTPS perché molte aziende dispongono di firewall 
 
 In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantità di larghezza di banda disponibile e dal carico dell’istanza [!DNLEExperience Manager] . Le comuni opzioni di configurazione, inclusi firewall o proxy, possono migliorare le prestazioni della rete. Ecco alcuni punti chiave da tenere a mente:
 
-* A seconda del tipo di istanza (piccolo, moderato, grande), assicurati di disporre di una larghezza di banda di rete sufficiente per l’istanza Experience Manager. Un&#39;adeguata allocazione della larghezza di banda è particolarmente importante se [!DNLEExperience Manager] è ospitato su AWS.
+* A seconda del tipo di istanza (piccolo, moderato, grande), accertatevi di disporre di una larghezza di banda di rete sufficiente per l’istanza di Experience Manager . Un&#39;adeguata allocazione della larghezza di banda è particolarmente importante se [!DNLEExperience Manager] è ospitato su AWS.
 * Se l&#39;istanza di [!DNLEExperience Manager] è ospitata su AWS, puoi trarre vantaggio da un criterio di ridimensionamento versatile. Aggiornate l&#39;istanza se gli utenti prevedono un carico elevato. Sgrandisci per un carico moderato o basso.
 * HTTPS: La maggior parte degli utenti dispone di firewall che troncano il traffico HTTP, il che può avere un impatto negativo sul caricamento di file o persino di file danneggiati durante l’operazione di caricamento.
 * Caricamenti di file di grandi dimensioni: Verificate che gli utenti dispongano di connessioni cablate alla rete (le connessioni WiFi si saturano rapidamente).
@@ -212,7 +211,7 @@ Inoltre, impostare il percorso della cartella temporanea di ImageMagick nel `con
 >
 >I `policy.xml` file ImageMagick `configure.xml` e ImageMagick sono disponibili `/usr/lib64/ImageMagick-&#42;/config/` invece di `/etc/ImageMagick/`.Consultate la documentazione [](https://www.imagemagick.org/script/resources.php) ImageMagick per informazioni sulla posizione dei file di configurazione.
 
-Se utilizzi [!DNL Experience Manager] servizi gestiti Adobe (AMS), rivolgiti all&#39;Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Consultate il rappresentante dell&#39;Assistenza clienti Adobe per implementare queste best practice per l&#39;implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con oltre 30000 x 23000 pixel.
+Se utilizzi [!DNL Experience Manager] su  Adobi Managed Services (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB di grandi dimensioni. Consultate il rappresentante dell&#39;Assistenza clienti Adobe per implementare queste best practice per l&#39;implementazione di AMS e scegliere i migliori strumenti e modelli possibili per i formati proprietari di Adobe. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con oltre 30000 x 23000 pixel.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -224,7 +223,7 @@ La funzione di riserva XMP aggiorna la risorsa originale ogni volta che i metada
 
 I risultati elencati richiedono notevoli risorse. Adobe consiglia pertanto di [disattivare la funzione di Write](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se non è necessaria.
 
-Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
+Se è selezionato il flag di flusso di lavoro di esecuzione, l&#39;importazione di una grande quantità di metadati può comportare attività di reinserimento XMP che richiedono risorse. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
 
 ## Replica {#replication}
 
