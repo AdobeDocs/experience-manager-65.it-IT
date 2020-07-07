@@ -3,7 +3,7 @@ title: Imaging Transcoding Library
 description: Scoprite come configurare e utilizzare la libreria Adobe Imaging Transcoding Library, una soluzione di elaborazione delle immagini in grado di eseguire le funzioni di base per la gestione delle immagini, tra cui codifica, transcodifica, ricampionamento delle immagini e ridimensionamento delle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Per configurare la libreria, create un file .conf per indicare le librerie utili
 
 1. Scaricate il pacchetto [Imaging Transcoding Library (Libreria transcodifica immagini) da Software Distribution (Distribuzione](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) software) e installatelo utilizzando Package Manager (Gestione pacchetti). Il pacchetto è compatibile con  Experience Manager 6.5.
 
-1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedete alla console Web e fate clic su **[!UICONTROL OSGi > Bundle]**. In alternativa, per aprire la console dei bundle, accedete all’ `https://[aem_server:[port]/system/console/bundles/` URL. Individua `com.day.cq.dam.cq-dam-switchengine` il bundle e il relativo ID.
+1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedete alla console Web e fate clic su **[!UICONTROL OSGi]** > **[!UICONTROL Bundle]**. In alternativa, per aprire la console dei bundle, accedete all’ `https://[aem_server:[port]/system/console/bundles/` URL. Individua `com.day.cq.dam.cq-dam-switchengine` il bundle e il relativo ID.
 
 1. Verificate che tutte le librerie necessarie siano estratte, controllando la cartella utilizzando il comando `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, dove il nome della cartella è costruito utilizzando il bundle ID. Ad esempio, il comando è `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` se il bundle id è `588`.
 
@@ -105,7 +105,7 @@ Per configurare la libreria, create un file .conf per indicare le librerie utili
 
 Aggiornate il flusso di lavoro [!UICONTROL DAM Update Asset] per utilizzare la libreria per elaborare le immagini.
 
-1. Nell&#39;interfaccia utente  Experience Manager, selezionare **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Nell&#39;interfaccia utente  Experience Manager, selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso di lavoro]** > **[!UICONTROL Modelli]**.
 
 1. Dalla pagina Modelli **[!UICONTROL di]** flusso di lavoro, aprite il modello di flusso di lavoro Aggiorna risorsa **** DAM in modalità di modifica.
 
@@ -126,6 +126,7 @@ Ad esempio, se desiderate creare le miniature per un’immagine TIFF utilizzando
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![calce](assets/chlimage_1-199.png)
 
 1. (Facoltativo) Generare miniature da una rappresentazione intermedia utilizzando un singolo comando. La rappresentazione intermedia funge da origine per generare rappresentazioni statiche e Web. Questo metodo è più veloce rispetto al metodo precedente. Tuttavia, questo metodo non consente di applicare parametri personalizzati alle miniature.
