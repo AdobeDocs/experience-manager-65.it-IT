@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 2%
@@ -104,7 +104,7 @@ Le tabelle seguenti elencano ciascuna voce con:
   <tr>
    <td>dam-users</td>
    <td>Gruppo</td>
-   <td>Gruppo di riferimento predefinito per un utente tipico di Risorse AEM. I membri di questo gruppo dispongono dei privilegi appropriati per abilitare il caricamento/condivisione di risorse e raccolte.</td>
+   <td>Gruppo di riferimento predefinito per un utente AEM Assets tipico. I membri di questo gruppo dispongono dei privilegi appropriati per abilitare il caricamento/condivisione di risorse e raccolte.</td>
    <td> </td>
   </tr>
   <tr>
@@ -364,7 +364,7 @@ Questo consente agli account del soggetto di completare le attività come se uti
 >
 >Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 
-### Best practice   {#best-practices}
+### Best practice  {#best-practices}
 
 Di seguito vengono descritte le procedure ottimali per l&#39;utilizzo di autorizzazioni e privilegi:
 
@@ -457,9 +457,11 @@ Per creare un nuovo utente o gruppo:
 1. Inserite i dettagli richiesti, a seconda che stiate creando un utente o un gruppo.
 
    * Se selezionate **Crea utente,** immettete l’ID di accesso, il nome e il cognome, l’indirizzo e-mail e una password. Per impostazione predefinita, AEM crea un percorso basato sulla prima lettera del cognome, ma potete selezionare un altro percorso.
+
    ![createuserdialog](assets/createuserdialog.png)
 
    * Se selezionate **Crea gruppo**, immettete un ID gruppo e una descrizione facoltativa.
+
    ![creategroupdialog](assets/creategroupdialog.png)
 
 1. Fai clic su **Crea**. L’utente o il gruppo creato viene visualizzato nell’elenco ad albero.
@@ -493,11 +495,11 @@ Per modificare la password di un utente, effettuate le seguenti operazioni.
 >[!NOTE]
 >
 >Non potete usare la console Protezione per cambiare la password dell&#39;amministratore. Per modificare la password dell&#39;account amministratore, utilizzate la console [](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) Utenti fornita da Granite Operations.
-> Se si utilizza AEM Forms su JEE, non utilizzare le istruzioni riportate di seguito per modificare la password, ma utilizzare AEM Forms sulla console di amministrazione JEE (/adminui) per modificare la password.
+>
+>Se utilizzate AEM Forms su JEE, non utilizzate le istruzioni riportate di seguito per modificare la password, ma utilizzate AEM Forms nella console di amministrazione JEE (/adminui) per modificare la password.
 
 1. Nella console **Protezione** , fate doppio clic sul nome utente per il quale desiderate cambiare la password.
 1. Fare clic sulla scheda **Proprietà** (se non è già attiva).
-
 1. Fate clic su **Imposta password**. Viene visualizzata la finestra Imposta password, in cui potete modificare la password.
 
    ![cqcartolaryuserpassword](assets/cqsecurityuserpassword.png)
@@ -638,6 +640,7 @@ Il privilegio di replica è il diritto di pubblicare contenuto e può essere imp
 >* Tutti i diritti di replica applicati a un gruppo si applicano a tutti gli utenti del gruppo.
 >* I privilegi di replica di un utente sostituiscono i privilegi di replica di un gruppo.
 >* I diritti di replica Consenti hanno una precedenza superiore rispetto ai diritti di replica Rifiuta. Per ulteriori informazioni, consultate [Autorizzazioni in AEM](#permissions-in-aem) .
+
 >
 
 
