@@ -1,8 +1,8 @@
 ---
 title: Dashboard operazioni
 seo-title: Dashboard operazioni
-description: Scoprite come utilizzare il Pannello operazioni.
-seo-description: Scoprite come utilizzare il Pannello operazioni.
+description: Learn how to use the Operations Dashboard.
+seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '6229'
 ht-degree: 2%
@@ -23,65 +23,65 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Il Pannello operazioni di AEM 6 consente agli operatori di sistema di monitorare rapidamente lo stato del sistema AEM. Fornisce inoltre informazioni diagnostiche generate automaticamente su aspetti rilevanti di AEM e consente di configurare ed eseguire l&#39;automazione di manutenzione indipendente per ridurre notevolmente le operazioni di progetto e i casi di supporto. Il Pannello operazioni può essere esteso con controlli dello stato e attività di manutenzione personalizzati. Inoltre, è possibile accedere ai dati del dashboard operativo da strumenti di monitoraggio esterni tramite JMX.
+The Operations Dashboard in AEM 6 helps system operators to monitor AEM system health at a glance. Fornisce inoltre informazioni diagnostiche generate automaticamente su aspetti rilevanti di AEM e consente di configurare ed eseguire l&#39;automazione di manutenzione indipendente per ridurre notevolmente le operazioni di progetto e i casi di supporto. The Operations Dashboard can be extended with custom health checks and maintenance tasks. Further, Operations Dashboard data can be accessed from external monitoring tools via JMX.
 
-**Pannello delle operazioni:**
+**The Operations Dashboard:**
 
-* È uno stato di sistema con un solo clic per aiutare i reparti operativi a ottenere efficienza?
-* Fornisce una panoramica dello stato di salute del sistema in un&#39;unica posizione centralizzata
-* Riduzione del tempo necessario per individuare, analizzare e risolvere i problemi
-* Offre automazione di manutenzione indipendente che consente di ridurre notevolmente i costi operativi dei progetti
+* Is a one-click system status to help operations departments gain efficiency
+* Provides system health overview in a single, centralized place
+* Reduces time to find, analyze and fix issues
+* Provides self-contained maintenance automation that helps reduce project operations costs significantly
 
-Per accedervi, andate a **Strumenti** - **Operazioni** dalla schermata introduttiva di AEM.
+It can be accessed by going to **Tools** - **Operations** from the AEM Welcome screen.
 
 >[!NOTE]
 >
->Per poter accedere al Pannello operazioni, l&#39;utente connesso deve far parte del gruppo di utenti &quot;Operatori&quot;. Per ulteriori informazioni, consulta la documentazione su [Utente, Gruppo e Accesso all’amministrazione](/help/sites-administering/user-group-ac-admin.md)dei diritti.
+>In order to be able to access the Operations Dashboard, the logged in user must be part of the &quot;Operators&quot; user group. For more info, see documentation on [User, Group and Access Right Administration](/help/sites-administering/user-group-ac-admin.md).
 
 ## Rapporti stato {#health-reports}
 
-Il sistema di rapporti sullo stato fornisce informazioni sullo stato di un’istanza di AEM tramite Sling Health Checks. Questa operazione può essere eseguita tramite OSGI, JMX, richieste HTTP (tramite JSON) o tramite l&#39;interfaccia utente touch. Offre misurazioni e soglie di alcuni contatori configurabili e, in alcuni casi, fornirà informazioni su come risolvere il problema.
+The Health Report system provides information on the health of an AEM instance through Sling Health Checks. This can be done via either OSGI, JMX, HTTP requests (via JSON) or through the Touch UI. It offers measurements and threshold of certain configurable counters and in some cases, will offer information on how to resolve the issue.
 
-Presenta diverse funzioni, descritte di seguito.
+It has several features, described below.
 
 ## Verifiche stato {#health-checks}
 
-Le relazioni **sulla** salute sono un sistema di carte che indicano una buona o cattiva salute per una specifica area di prodotto. Queste schede sono visualizzazioni dei Sling Health Checks, che aggregano i dati da JMX e da altre fonti ed espongono di nuovo le informazioni elaborate come MBeans. Questi MBeans possono essere ispezionati anche nella console [Web](/help/sites-administering/jmx-console.md)JMX, nel dominio **org.apache.sling.HealthCheck** .
+The **Health Reports** are a system of cards indicating good or bad health with regard to a specific product area. These cards are visualizations of the Sling Health Checks, which aggregate data from JMX and other sources and expose processed information again as MBeans. These MBeans can also be inspected in the [JMX web console](/help/sites-administering/jmx-console.md), under the **org.apache.sling.healthcheck** domain.
 
-È possibile accedere all’interfaccia Rapporti stato mediante il menu **Strumenti** - **Operazioni** - Rapporti **** stato nella schermata introduttiva di AEM oppure direttamente tramite il seguente URL:
+The Health Reports interface can be accessed through the **Tools** - **Operations** - **Health Reports** menu on the AEM Welcome screen, or directly through the following URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-Il sistema di schede espone tre possibili stati: **OK**, **ATTENZIONE** e **CRITICA**. Gli stati sono il risultato di regole e soglie, che possono essere configurate posizionando il mouse sulla scheda e facendo clic sull&#39;icona a forma di ingranaggio nella barra delle azioni:
+The card system exposes three possible states: **OK**, **WARN** and **CRITICAL**. The states are a result of rules and thresholds, which can be configured by hovering the mouse over the card and then clicking the gear icon in the action bar:
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
-### Tipi di controllo integrità {#health-check-types}
+### Health Check Types {#health-check-types}
 
-In AEM 6 sono disponibili due tipi di controlli dello stato:
+There are two types of health checks in AEM 6:
 
-1. Controlli di integrità individuali
-1. Controlli di integrità compositi
+1. Individual Health Checks
+1. Composite Health Checks
 
-Un **singolo controllo** dello stato è un singolo controllo dello stato che corrisponde a una carta di stato. I controlli di integrità individuali possono essere configurati con regole o soglie e possono fornire uno o più suggerimenti e collegamenti per risolvere problemi di salute identificati. Prendiamo ad esempio il controllo &quot;Log Errors&quot;: se nei registri delle istanze sono presenti voci di ERRORE, queste verranno trovate nella pagina dei dettagli della verifica dello stato. Nella parte superiore della pagina viene visualizzato un collegamento all’analizzatore &quot;Messaggio registro&quot; nella sezione Strumenti di diagnostica, che consente di analizzare questi errori in modo più dettagliato e riconfigurare i logger.
+An **Individual Health Check** is a single health check that corresponds to a status card. Individual Health Checks can be configured with rules or thresholds and they can provide one or more hints and links to solve identified health issues. Let&#39;s take the &quot;Log Errors&quot; check as an example: if there are ERROR entries in the instance logs, you will find them on the details page of the health check. At the top of the page you will see a link to the &quot;Log Message&quot; analyzer in the Diagnosis Tools section, which will enable you to analyze these errors in more detail and reconfigure the loggers.
 
-Un controllo dello stato **composito** è un controllo che aggrega le informazioni provenienti da più controlli individuali.
+A **Composite Health Check** is a check that aggregates information from several individual checks.
 
-I controlli dello stato composito sono configurati tramite tag **** filtro. In sostanza, tutti i controlli singoli con lo stesso tag del filtro verranno raggruppati come un controllo dello stato composito. Un controllo dello stato composito avrà uno stato OK solo se tutti i controlli singoli che aggrega hanno anche stati OK.
+Composite health checks are configured with the aid of **filter tags**. In essence, all single checks that have the same filter tag will be grouped as a composite health check. A Composite Health Check will have an OK status only if all the single checks it aggregates have OK statuses as well.
 
-### Come creare controlli di integrità {#how-to-create-health-checks}
+### How to create Health Checks {#how-to-create-health-checks}
 
-Nel Pannello operazioni è possibile visualizzare il risultato dei controlli di integrità individuali e compositi.
+In the Operations Dashboard you can visualize the result of both individual and composite Health Checks.
 
 ### Creazione di un singolo controllo dello stato {#creating-an-individual-health-check}
 
 La creazione di un singolo controllo dello stato comporta due passaggi: implementazione di un Sling Health Check e aggiunta di una voce per il controllo dello stato nei nodi di configurazione del dashboard.
 
-1. Per creare un Sling Health Check, è necessario creare un componente OSGI che implementa l’interfaccia Sling HealthCheck. Questo componente verrà aggiunto all’interno di un bundle. Le proprietà del componente identificheranno completamente il controllo dello stato. Una volta installato il componente, viene automaticamente creato un MBean JMX per il controllo dello stato. Per ulteriori informazioni, consulta la Documentazione [](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) Sling Health Check.
+1. Per creare un Sling Health Check, è necessario creare un componente OSGI che implementa l’interfaccia Sling HealthCheck. Questo componente verrà aggiunto all’interno di un bundle. Le proprietà del componente identificheranno completamente il controllo dello stato. Once the component is installed, a JMX MBean will automatically be created for the Health Check. Per ulteriori informazioni, consulta la Documentazione [](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) Sling Health Check.
 
-   Esempio di un componente Sling Health Check, scritto con le annotazioni dei componenti del servizio OSGI:
+   Example of a Sling Health Check component, written with OSGI service component annotations:
 
    ```java
    @Component(service = HealthCheck.class,
@@ -103,7 +103,7 @@ La creazione di un singolo controllo dello stato comporta due passaggi: implemen
    >
    >La `MBEAN_NAME` proprietà definisce il nome del fagiolo che verrà generato per il controllo dello stato.
 
-1. Dopo aver creato un controllo dello stato, è necessario creare un nuovo nodo di configurazione, per renderlo accessibile nell&#39;interfaccia del dashboard delle operazioni. Per questo passo, è necessario conoscere il nome del Mfu JMX del controllo dello stato (la `MBEAN_NAME` proprietà). Per creare una configurazione per il controllo dello stato, aprite CRXDE e aggiungete un nuovo nodo (di tipo **nt:unstructure**) nel percorso seguente: `/apps/settings/granite/operations/hc`
+1. Dopo aver creato un controllo dello stato, è necessario creare un nuovo nodo di configurazione, per renderlo accessibile nell&#39;interfaccia del dashboard delle operazioni. Per questo passo, è necessario conoscere il nome del Mfu JMX del controllo dello stato (la `MBEAN_NAME` proprietà). To create a configuration for the Health Check, open CRXDE and add a new node (of type **nt:unstructured**) under the following path: `/apps/settings/granite/operations/hc`
 
    Le seguenti proprietà devono essere impostate sul nuovo nodo:
 
@@ -126,7 +126,7 @@ La creazione di un singolo controllo dello stato comporta due passaggi: implemen
 
    >[!NOTE]
    >
-   >Verificate che le proprietà del `/apps/settings/granite/operations/hc` percorso siano impostate su true:
+   >Make sure that the `/apps/settings/granite/operations/hc` path has the following properties set to true:
    >
    >
    >`sling:configCollectionInherit`
@@ -134,15 +134,15 @@ La creazione di un singolo controllo dello stato comporta due passaggi: implemen
    >`sling:configPropertyInherit`
    >
    >
-   >Questo indicherà al gestore di configurazione di unire le nuove configurazioni con quelle esistenti da `/libs`.
+   >This will tell the configuration manager to merge the new configurations with the existing ones from `/libs`.
 
-### Creazione di un controllo dello stato composito {#creating-a-composite-health-check}
+### Creating a Composite Health Check {#creating-a-composite-health-check}
 
-Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di controlli di integrità individuali che condividono una serie di funzioni comuni. Ad esempio, il Security Composite Health Check raggruppa tutti i singoli controlli dello stato di salute che eseguono verifiche relative alla sicurezza. Il primo passo per creare un controllo composito è aggiungere una nuova configurazione OSGI. Affinché possa essere visualizzato nel dashboard delle operazioni, è necessario aggiungere un nuovo nodo di configurazione, come abbiamo fatto per un semplice controllo.
+A Composite Health Check&#39;s role is to aggregate a number of individual Health Checks sharing a set of common features. For instance, the Security Composite Health Check groups together all the individual health checks performing security-related verifications. The first step in order to create a composite check is to add a new OSGI configuration. For it to be displayed in the Operations Dashboard, a new configuration node needs to be added, the same way we did for a simple check.
 
-1. Andate a Web Configuration Manager nella console OSGI. A tal fine, potete accedere a `https://serveraddress:port/system/console/configMgr`
-1. Cercate la voce denominata **Apache Sling Composite Health Check**. Dopo averlo trovato, potete notare che sono già disponibili due configurazioni: uno per i controlli di sistema e uno per i controlli di sicurezza.
-1. Per creare una nuova configurazione, premere il pulsante &quot;+&quot; a destra della configurazione. Verrà visualizzata una nuova finestra, come illustrato di seguito:
+1. Go to the Web Configuration Manager in the OSGI Console. You can do this by accessing `https://serveraddress:port/system/console/configMgr`
+1. Search for the entry called **Apache Sling Composite Health Check**. Dopo averlo trovato, potete notare che sono già disponibili due configurazioni: uno per i controlli di sistema e uno per i controlli di sicurezza.
+1. Create a new configuration by pressing the &quot;+&quot; button on the right hand side of the configuration. Verrà visualizzata una nuova finestra, come illustrato di seguito:
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
@@ -153,7 +153,7 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
    * **Nome (hc.name):** Nome del controllo dello stato composito. È consigliabile assegnare un nome significativo.
    * **Tag (hc.tags):** Tag per il controllo dello stato. Se questo controllo di integrità composito è destinato a essere parte di un altro controllo di integrità composito (ad esempio in una gerarchia di controlli di integrità), aggiungere i tag a cui è correlato questo composito.
    * **Nome MBean (hc.mava.name):** Il nome del Mava che verrà dato al JMX MBean di questo controllo di stato composito.
-   * **Tag filtro (filter.tags):** Si tratta di una proprietà specifica per i controlli di integrità compositi. Questi sono i tag che il composito deve aggregare. La verifica dello stato composito verrà aggregata sotto il suo gruppo tutti i controlli di integrità che presentano tag corrispondenti a qualsiasi tag del filtro di questa composizione. Ad esempio, un controllo dello stato composito con i tag filtro **test** e **check** , aggrega tutti i controlli di integrità individuali e composite che dispongono di uno dei tag **test** e **check** nella proprietà tags ( `hc.tags`).
+   * **Tag filtro (filter.tags):** Si tratta di una proprietà specifica per i controlli di integrità compositi. These are the tags which the composite should aggregate. La verifica dello stato composito verrà aggregata sotto il suo gruppo tutti i controlli di integrità che presentano tag corrispondenti a qualsiasi tag del filtro di questa composizione. Ad esempio, un controllo dello stato composito con i tag filtro **test** e **check** , aggrega tutti i controlli di integrità individuali e composite che dispongono di uno dei tag **test** e **check** nella proprietà tags ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -161,13 +161,13 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
 
 1. Infine, la voce del controllo dello stato composito appena creato deve essere aggiunta nei nodi di configurazione del dashboard operativo. La procedura è la stessa dei singoli controlli sanitari: è necessario creare un nodo di tipo **nt:unstructure** in `/apps/settings/granite/operations/hc`. La proprietà resource del nodo sarà definita dal valore di **hc.medium.name** nella configurazione OSGI.
 
-   Se, ad esempio, avete creato una configurazione e impostato il valore **hc.mava.name** su **diskusage**, i nodi di configurazione saranno come segue:
+   If, for example, you created a configuration and set the **hc.mbean.name** value to **diskusage**, the configuration nodes will look like this:
 
    * **Nome:** `Composite Health Check`
 
       * **Tipo:** `nt:unstructured`
 
-   Con le seguenti proprietà:
+   With the following properties:
 
    * **Nome:** `sling:resourceType`
 
@@ -180,11 +180,11 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
 
    >[!NOTE]
    >
-   >Se create dei singoli controlli di integrità che logicamente appartengono a un controllo composito già presente nel dashboard per impostazione predefinita, questi verranno catturati automaticamente e raggruppati sotto il rispettivo controllo composito. Di conseguenza, non è necessario creare un nuovo nodo di configurazione per questi controlli.
+   >Se create dei singoli controlli di integrità che logicamente appartengono a un controllo composito già presente nel dashboard per impostazione predefinita, questi verranno catturati automaticamente e raggruppati sotto il rispettivo controllo composito. Because of this, there is no need to create a new configuration node for these checks.
    >
-   >Ad esempio, se create un singolo controllo dello stato di sicurezza, tutto ciò che dovete fare è assegnargli il tag &quot;**sicurezza**&quot;, e viene installato, verrà visualizzato automaticamente sotto il controllo composito Controlli di sicurezza nel Pannello operazioni.
+   >For example, if you create an individual security health check, all you need to do is assign it the &quot;**security**&quot; tag, and it is installed, it will automatically appear under the Security Checks composite check in the Operations Dashboard.
 
-### Controlli di integrità forniti con AEM {#health-checks-provided-with-aem}
+### Health Checks Provided with AEM {#health-checks-provided-with-aem}
 
 <table>
  <tbody>
@@ -194,19 +194,19 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
   </tr>
   <tr>
    <td>Prestazioni delle query</td>
-   <td><p>Questo controllo dello stato è stato semplificato <strong>in AEM 6.4</strong>e ora verifica il <code>Oak QueryStats</code> MBean modificato di recente, più precisamente l’ <code>SlowQueries </code>attributo. Se le statistiche contengono delle query lente, il controllo dello stato restituisce un avviso. In caso contrario, restituisce lo stato OK.<br /> </p> <p>L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=queryStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>This health check was simplified <strong>in AEM 6.4</strong>, and now checks the recently-refactored <code>Oak QueryStats</code> MBean, more specifically the <code>SlowQueries </code>attribute. If the statistics contain any slow queries, then the health check returns a warning. Otherwise, it returns the OK status.<br /> </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Lunghezza coda di osservazione</td>
-   <td><p>La lunghezza della coda di osservazione viene ripetuta su tutti i listener di eventi e gli osservatori in background, confronta i relativi <code>queueSize </code>elementi con <code>maxQueueSize</code> e:</p>
+   <td><p>Observation Queue Length iterates over all Event Listeners and Background Observers, compares their <code>queueSize </code>to their <code>maxQueueSize</code> and:</p>
     <ul>
-     <li>restituisce lo stato Critico se il <code>queueSize</code> valore supera il <code>maxQueueSize</code> valore (ovvero quando gli eventi vengono ignorati)</li>
+     <li>returns Critical status if the <code>queueSize</code> value exceeds the <code>maxQueueSize</code> value (that is when events would be dropped)</li>
      <li>restituisce Avvisa se il <code>queueSize</code> valore è superiore al valore <code>maxQueueSize * WARN_THRESHOLD</code> (il valore predefinito è 0,75) </li>
-    </ul> <p>La lunghezza massima di ciascuna coda proviene da configurazioni separate (Oak e AEM) e non è configurabile da questo controllo di stato. L'MBean per questo controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>La lunghezza massima di ciascuna coda proviene da configurazioni separate (Oak e AEM) e non è configurabile da questo controllo di stato. The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Limiti di attraversamento per query</td>
-   <td><p>Limiti di attraversamento query controlla il valore <code>QueryEngineSettings</code> MBean, più specificatamente gli <code>LimitInMemory</code> attributi e <code>LimitReads</code> , e restituisce il seguente stato:</p>
+   <td><p>Query Traversal Limits checks the <code>QueryEngineSettings</code> MBean, more specifically the <code>LimitInMemory</code> and <code>LimitReads</code> attributes, and returns the following status:</p>
     <ul>
      <li>restituisce lo stato Avvisa se uno dei limiti è uguale o superiore al valore <code>Integer.MAX_VALUE</code></li>
      <li>restituisce lo stato Avvisa se uno dei limiti è inferiore a 10000 (l'impostazione consigliata da Oak)</li>
@@ -219,27 +219,27 @@ Il ruolo di Composite Health Check consiste nell&#39;aggregare una serie di cont
     <ul>
      <li>restituisce lo stato Avvisa quando gli orologi dell’istanza non vengono sincronizzati e superano una soglia minima predefinita</li>
      <li>restituisce lo stato Critico quando gli orologi dell’istanza non vengono sincronizzati e superano una soglia elevata predefinita</li>
-    </ul> <p>Il fagiolo per questa verifica dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=slingDiscoveryOakSynchronizedClock,type=HealthCheck</a>.</p> </td>
+    </ul> <p>The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=slingDiscoveryOakSynchronizedClocks,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Indici asincroni</td>
    <td><p>Controllo Indici asincroni:</p>
     <ul>
-     <li>restituisce lo stato Critico se almeno una corsia di indicizzazione non riesce</li>
-     <li>verifica la presenza <code>lastIndexedTime</code> di tutte le corsie di indicizzazione e:
+     <li>returns Critical status if at least one indexing lane is failing</li>
+     <li>checks the <code>lastIndexedTime</code> for all indexing lanes and:
       <ul>
-       <li>restituisce lo stato Critico se è più di 2 ore fa </li>
-       <li>restituisce lo stato di avviso se è compreso tra 2 ore e 45 minuti fa </li>
+       <li>returns Critical status if it's more than 2 hours ago </li>
+       <li>returns Warning status if it's between 2 hours and 45 minutes ago </li>
        <li>restituisce OK status se è inferiore a 45 minuti fa </li>
       </ul> </li>
      <li>se nessuna di queste condizioni è soddisfatta, restituisce lo stato OK</li>
-    </ul> <p>Sono configurabili sia le soglie di stato Critico che Avvisi. Il tag per questa verifica dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=asinccIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Nota: </strong>Questo controllo dello stato è disponibile con AEM 6.4 ed è stato riportato in AEM 6.3.0.1.</p> </td>
+    </ul> <p>Both the Critical and Warn status thresholds are configurable. Il tag per questa verifica dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=asinccIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Note: </strong>This health check is available with AEM 6.4 and has been backported to AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Indici Lucene di grandi dimensioni</td>
    <td><p>Questo controllo utilizza i dati esposti da <code>Lucene Index Statistics</code> MBean per identificare indici e rendimenti di grandi dimensioni:</p>
     <ul>
-     <li>uno stato di avviso se è presente un indice con più di 1 miliardo di documenti</li>
+     <li>a Warning status if there is an index with more than 1 billion documents</li>
      <li>uno stato critico se esiste un indice con più di 1,5 miliardi di documenti</li>
     </ul> <p>Le soglie sono configurabili e l'MBean per il controllo dello stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.HealthCheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>Questo controllo è disponibile con AEM 6.4 ed è stato riportato in AEM 6.3.2.0.</p> </td>
   </tr>
@@ -589,7 +589,7 @@ I flussi di lavoro possono essere eliminati anche dal dashboard di manutenzione.
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sulla manutenzione dei flussi di lavoro, consulta [questa pagina](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Per ulteriori informazioni sulla manutenzione dei flussi di lavoro, consulta [questa pagina](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Gestione log di controllo {#audit-log-maintenance}
 
