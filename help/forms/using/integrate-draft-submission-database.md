@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
 
@@ -18,15 +21,15 @@ source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
 
 ## Panoramica di esempio {#sample-overview}
 
-Il componente bozze del portale AEM Forms e invii consente agli utenti di salvare i moduli come bozze e di inviarli successivamente da qualsiasi dispositivo. Inoltre, gli utenti possono visualizzare i moduli inviati sul portale. Per abilitare questa funzionalità, in AEM Forms sono disponibili servizi per dati e metadati che consentono di archiviare i dati compilati dall&#39;utente nel modulo, nonché i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati sono memorizzati nell&#39;archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l&#39;istanza di pubblicazione AEM, che in genere si trova all&#39;esterno del firewall aziendale, le organizzazioni possono voler personalizzare l&#39;archiviazione dei dati per renderla più sicura e affidabile.
+Le bozze del portale AEM Forms e il componente di invio consentono agli utenti di salvare i moduli come bozze e di inviarli successivamente da qualsiasi dispositivo. Inoltre, gli utenti possono visualizzare i moduli inviati sul portale. Per abilitare questa funzionalità, i AEM Forms forniscono servizi per dati e metadati che consentono di memorizzare i dati compilati dall&#39;utente nel modulo, nonché i metadati del modulo associati alle bozze e ai moduli inviati. Per impostazione predefinita, questi dati sono memorizzati nell&#39;archivio CRX. Tuttavia, poiché gli utenti interagiscono con i moduli tramite l&#39;istanza di pubblicazione AEM, che in genere si trova all&#39;esterno del firewall aziendale, le organizzazioni possono voler personalizzare l&#39;archiviazione dei dati per renderla più sicura e affidabile.
 
 L’esempio, discusso in questo documento, è un’implementazione di riferimento di servizi di dati e metadati personalizzati per integrare le bozze e i componenti inviati in un database. Il database utilizzato nell&#39;implementazione di esempio è **MySQL 5.6.24**. Tuttavia, potete integrare il componente bozze e invii con qualsiasi database di vostra scelta.
 
 >[!NOTE]
 >
 >* Gli esempi e le configurazioni illustrati in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Accertatevi di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo delle release [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-> * Il pacchetto di esempio funziona solo con le azioni di invio Moduli adattivi.
+>* Verificate di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per l&#39;elenco dei pacchetti disponibili, consultate l&#39;articolo sui rilasci di [AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) .
+>* Il pacchetto di esempio funziona solo con le azioni di invio Moduli adattivi.
 
 
 ## Configurare e configurare l’esempio {#set-up-and-configure-the-sample}
@@ -74,6 +77,7 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
    Per assegnare un nome diverso alla tabella di metadati:
 
    * Nella console Web Configuration (Configurazione console Web), individuare e fare clic su Forms Portal Metadata Service Sample Implementation. Potete modificare i valori dell’origine dati, i metadati o il nome della tabella di metadati aggiuntivi.
+
    Per specificare un nome diverso per la tabella di dati:
 
    * In Configurazione console Web, individuare e fare clic su Implementazione di esempio del servizio dati di Forms Portal. È possibile modificare i valori dell&#39;origine dati e il nome della tabella dati.
@@ -159,6 +163,7 @@ Per installare e configurare l’esempio, eseguite i seguenti passaggi, su tutte
 >
 > * Il driver JDBC per MySQL non è fornito con l&#39;esempio. Assicurarsi di aver effettuato il provisioning e fornire le informazioni necessarie per configurare il pool di connessioni JDBC.
 > * Indicate le istanze di creazione e pubblicazione per utilizzare lo stesso database. Il valore del campo URI della connessione JDBC deve essere lo stesso per tutte le istanze di creazione e pubblicazione.
+
 >
 
 
@@ -319,7 +324,7 @@ Il file ZIP seguente contiene `FormsPortalSampleDataServiceImpl` e `FormsPortalS
 
 [Ottieni file](assets/sample_package.zip)
 
-## Verificare la lunghezza del nome del file {#verify-length-of-the-file-name}
+## Verificare la lunghezza del nome del file  {#verify-length-of-the-file-name}
 
 L&#39;implementazione del database di Forms Portal utilizza una tabella di metadati aggiuntiva. La tabella presenta una chiave primaria composita basata sulle colonne Key e id della tabella. MySQL consente chiavi primarie fino a un massimo di 255 caratteri. È possibile utilizzare il seguente script di convalida sul lato client per verificare la lunghezza del nome file associato al widget del file. La convalida viene eseguita quando un file viene allegato. Lo script fornito nella procedura seguente visualizza un messaggio, quando il nome del file è maggiore di 150 (inclusa l&#39;estensione). È possibile modificare lo script per verificarne la presenza di un numero diverso di caratteri.
 
