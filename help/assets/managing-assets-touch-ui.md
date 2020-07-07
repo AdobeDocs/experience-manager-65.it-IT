@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '9250'
 ht-degree: 4%
@@ -141,7 +141,7 @@ Per impostazione predefinita, il caricamento seriale delle risorse è attivato. 
 
 ### Caricare le risorse mediante FTP {#uploading-assets-using-ftp}
 
-Dynamic Media consente il caricamento in batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (> 1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
+Dynamic Media consente il caricamento in batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (>1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
 
 >[!NOTE]
 >
