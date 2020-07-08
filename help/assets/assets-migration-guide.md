@@ -3,7 +3,7 @@ title: Migra le risorse [!DNL Adobe Experience Manager Assets] in massa.
 description: Illustra come inserire risorse [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 8%
@@ -61,7 +61,7 @@ Esistono due approcci per caricare le risorse nel sistema: un approccio basato s
 
 #### Invia tramite HTTP {#pushing-through-http}
 
-Il team dei servizi gestiti di Adobe utilizza uno strumento denominato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory a un&#39;altra in un&#39; [!DNL Experience Manager] istanza. Al posto di Glutton, potete anche utilizzare strumenti come gli script Perl per inserire le risorse nella directory archivio.
+Il team dei servizi gestiti di Adobe utilizza uno strumento denominato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory a un&#39;altra in una [!DNL Experience Manager] distribuzione. Al posto di Glutton, potete anche utilizzare strumenti come gli script Perl per inserire le risorse nella directory archivio.
 
 Esistono due aspetti negativi principali dell&#39;utilizzo dell&#39;approccio di spingere attraverso https:
 
@@ -72,7 +72,7 @@ L’altro approccio per l’assimilazione delle risorse consiste nel estrarre le
 
 #### Recupero dal file system locale {#pulling-from-the-local-filesystem}
 
-Importazione risorse CSV degli strumenti [ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) estrae le risorse dal file system e dai metadati delle risorse da un file CSV per l’importazione delle risorse. L&#39;API Experience Manager Asset Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà dei metadati configurate. Idealmente, le risorse sono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
+Importazione risorse CSV degli strumenti [ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) estrae le risorse dal file system e dai metadati delle risorse da un file CSV per l’importazione delle risorse. L’API Experience Manager Asset Manager  viene utilizzata per importare le risorse nel sistema e applicare le proprietà di metadati configurate. Idealmente, le risorse sono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
 
 Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessive migliorano notevolmente e questo metodo è generalmente considerato il modo più efficiente per caricare le risorse nell’archivio. Inoltre, poiché lo strumento supporta l’assimilazione dei metadati, potete importare tutte le risorse e i metadati in un singolo passaggio, anziché creare un secondo passaggio per applicare i metadati tramite uno strumento separato.
 
@@ -117,15 +117,15 @@ Una volta completata la migrazione, i lanciatori per i flussi di lavoro [!UICONT
 
 ## Migrazione tra [!DNL Experience Manager] distribuzioni {#migrating-between-aem-instances}
 
-Anche se non molto comuni, talvolta è necessario migrare grandi quantità di dati da un&#39; [!DNL Experience Manager] istanza all&#39;altra; ad esempio, quando esegui un [!DNL Experience Manager] aggiornamento, aggiorna l&#39;hardware o effettua la migrazione a un nuovo centro dati, ad esempio con una migrazione AMS.
+Anche se non è molto comune, a volte è necessario migrare grandi quantità di dati da una [!DNL Experience Manager] distribuzione all&#39;altra; ad esempio, quando esegui un [!DNL Experience Manager] aggiornamento, aggiorna l&#39;hardware o effettua la migrazione a un nuovo centro dati, ad esempio con una migrazione AMS.
 
-In questo caso, le risorse sono già popolate con metadati e le rappresentazioni sono già generate. Potete semplicemente concentrarvi sullo spostamento delle risorse da un’istanza all’altra. Durante la migrazione tra [!DNL Experience Manager] le istanze, è possibile effettuare le seguenti operazioni:
+In questo caso, le risorse sono già popolate con metadati e le rappresentazioni sono già generate. Potete semplicemente concentrarvi sullo spostamento delle risorse da un’istanza all’altra. Durante la migrazione tra [!DNL Experience Manager] la distribuzione, esegui i seguenti passaggi:
 
 1. Disattiva flussi di lavoro: Poiché state eseguendo la migrazione delle rappresentazioni insieme alle risorse, desiderate disattivare il flusso di lavoro di avvio dei flussi di lavoro per [!UICONTROL DAM Update Asset] .
 
-1. Migra tag: Poiché i tag sono già stati caricati nell&#39;istanza di origine, potete crearli in un pacchetto di contenuto e installare il pacchetto sull&#39;istanza di destinazione. [!DNL Experience Manager]
+1. Migra tag: Poiché avete già caricato dei tag nella distribuzione [!DNL Experience Manager] di origine, potete crearli in un pacchetto di contenuto e installare il pacchetto nell’istanza di destinazione.
 
-1. Migra risorse: Per spostare le risorse da un’ [!DNL Experience Manager] istanza all’altra sono consigliati due strumenti:
+1. Migra risorse: Per spostare le risorse da una [!DNL Experience Manager] distribuzione all’altra è consigliabile utilizzare due strumenti:
 
    * **Vault Remote Copy** o vlt rcp, consente di utilizzare vlt in una rete. È possibile specificare una directory di origine e di destinazione e vlt scarica tutti i dati del repository da un&#39;istanza e li carica nell&#39;altra. Vlt rcp è documentato all&#39;indirizzo [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** è uno strumento di sincronizzazione dei contenuti open-source sviluppato da Time Warner Cable per la loro [!DNL Experience Manager] implementazione. Poiché utilizza flussi di dati continui, rispetto a vLt rcp, ha una latenza inferiore e dichiara un miglioramento della velocità da due a dieci volte più veloce di vlt rcp. Grabbit supporta anche la sincronizzazione solo del contenuto delta, che consente di sincronizzare le modifiche dopo il completamento di un passaggio di migrazione iniziale.
