@@ -4,7 +4,7 @@ seo-title: Guida utente  Adobe Experience Manager 6.5 Assets
 description: Questa guida descrive tutte  attività di Risorse Experience Manager, come ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 seo-description: Vengono  tutte le attività di Experience Manager Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 12%
@@ -35,7 +35,7 @@ Questa guida descrive tutte  attività di Risorse Experience Manager, come ad es
 | [Guida all’authoring con l’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti di authoring in  Experience Manager nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
 | [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di  Experience Manager. |
-| [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scoprite come creare la vostra istanza  Experience Manager. |
+| [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scoprite come creare la distribuzione Experience Manager . |
 | [Gestione della Guida utente](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto Experience Manager . |
 | [Guida utente per dispositivi mobili](/help/mobile/home.md) | Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili. |
 | [Experience Manager - Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In questa guida viene illustrato come condividere con [!DNL Livefyre]gli utenti i contenuti generati dagli utenti. |
