@@ -1,18 +1,18 @@
 ---
-title: Operazioni asincrone
+title: Processi asincroni
 description: ' Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.'
 translation-type: tm+mt
-source-git-commit: 69b90432ac6028a64f36300819e1bead1ae8d671
+source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 3%
 
 ---
 
 
 # Operazioni asincrone {#asynchronous-operations}
 
-Per ridurre l&#39;impatto negativo sulle prestazioni, Adobe Experience Manager elabora in modo asincrono alcune operazioni a lungo termine e che richiedono risorse.
+Per ridurre l&#39;impatto negativo sulle prestazioni, Adobe Experience Manager elabora in modo asincrono alcune operazioni a lungo termine e che richiedono risorse. L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità di risorse di sistema.
 
 Tali operazioni comprendono:
 
@@ -22,8 +22,6 @@ Tali operazioni comprendono:
 * Recupero delle risorse, che superano il limite di soglia impostato, da una distribuzione Experience Manager  remota
 * Spostamento delle pagine
 * Rollout Live Copy
-
-L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità di risorse di sistema.
 
 Potete visualizzare lo stato dei processi asincroni dal dashboard Stato **[!UICONTROL processo]** Async in Navigazione **** globale > **Strumenti** > **Operazioni** > **Processi**.
 
@@ -35,7 +33,7 @@ Potete visualizzare lo stato dei processi asincroni dal dashboard Stato **[!UICO
 
 ## Monitorare lo stato delle operazioni asincrone {#monitor-the-status-of-asynchronous-operations}
 
-Ogni volta che AEM elabora un’operazione in modo asincrono, riceverete una notifica nella inbox e tramite e-mail (se abilitata).
+Ogni volta che AEM elabora un’operazione in modo asincrono, riceverete una notifica nella [inbox](/help/sites-authoring/inbox.md) e tramite e-mail (se abilitata).
 
 Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla pagina Stato **[!UICONTROL processo]** asincrono.
 
@@ -142,3 +140,12 @@ Se il numero di riferimenti alle pagine da spostare supera il numero di soglia, 
    ![Configurazione MSM](assets/async-msm.png)
 
 1. Salva le modifiche.
+
+>[!MORELIKETHIS]
+>
+>* [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md)
+>* [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
+>* [Configurare l’e-mail in  Experience Manager](/help/sites-administering/notification.md).
+>* [Importare ed esportare i metadati delle risorse in blocco](/help/assets/metadata-import-export.md).
+>* [Utilizza le risorse collegate per condividere le risorse DAM da distribuzioni](/help/assets/use-assets-across-connected-assets-instances.md)remote.
+
