@@ -3,10 +3,10 @@ title: Best practice per l'integrazione [!DNL Adobe Experience Manager] e Adobe 
 description: Procedure ottimali per l’ [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrazione, per semplificare i flussi di lavoro di trasferimento delle risorse e ottenere un’elevata velocità dei contenuti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '3250'
-ht-degree: 17%
+source-wordcount: '3251'
+ht-degree: 16%
 
 ---
 
@@ -45,6 +45,9 @@ Questo articolo si concentra principalmente sui primi due aspetti delle esigenze
 
 ### Mappatura dei casi di utilizzo e delle soluzioni Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
+<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+-->
+
 | Caso d’uso     | [!DNL Adobe Asset Link] | [!DNL Experience Manager] app desktop | Note / Altre soluzioni |
 |---|---|---|---|
 | Scopri - sfogliare le cartelle DAM | Sì | [!DNL Experience Manager] Azioni interfaccia Web e desktop |  |
@@ -73,7 +76,7 @@ Per supportare i casi di utilizzo della distribuzione delle risorse, è necessar
 ### Glossario dei termini comuni {#glossary-of-common-terms}
 
 * **Work-in-progress o creative work-in-progress (WIP):** una fase del ciclo di vita delle risorse in cui una risorsa subisce più modifiche e, in genere, non è ancora pronta per essere condivisa con team più grandi.
-* **Creative-ready  (Risorse pronte per i creativi):**[!DNL Assets] risorse pronte per essere condivise con un team più ampio oppure che sono state selezionate o approvate dal team creativo per la condivisione con i team di marketing o LOB.
+* **Risorse pronte per la creazione:** [!DNL Assets] pronti per essere condivisi con un team più ampio, oppure selezionati o approvati dal team creativo per la condivisione con i team di marketing o LOB.
 * **Asset approvals (Approvazioni risorse):** il processo di approvazione che viene eseguito per le risorse già caricate in DAM, che, in genere, include approvazioni del marchio, approvazioni legali e così via.
 * **Final asset (Risorsa finale):** una risorsa che ha superato tutte le approvazioni/assegnazione tag dei metadati ed è pronta per essere utilizzata dal team più ampio. Tale risorsa viene memorizzata in DAM, per poi essere resa disponibile a tutti gli utenti (o a tutti gli interessati). Può essere utilizzata nei canali di marketing o dai team creativi per la creazione di design.
 * **Minor asset update/change (Aggiornamento/modifica risorsa secondaria):** una modifica rapida e piccola a una risorsa digitale. Spesso viene effettuata in risposta a una richiesta di ritocco o di modifica minore, a una revisione delle risorse o all’approvazione (ad esempio: riposizionamento, modifica dimensioni del testo, regolazione di saturazione/luminosità, colore e così via).
@@ -99,7 +102,7 @@ Questo è un breve riepilogo delle best practice per [!DNL Experience Manager] e
 
 ### Accesso alle [!DNL Adobe Stock] risorse da [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
-[&#39;integrazione](/help/assets/aem-assets-adobe-stock.md) Experience Manager e Adobe Stock offre [!DNL Experience Manager] agli utenti la possibilità di cercare, visualizzare in anteprima, concedere in licenza e salvare le risorse [!DNL Adobe Stock] in [!DNL Experience Manager]. Le [!DNL Stock] risorse concesse in licenza e salvate hanno selezionato [!DNL Stock] i metadati, che possono essere utilizzati per la ricerca con altri filtri.
+[&#39;integrazione](/help/assets/aem-assets-adobe-stock.md) con Experience Manager e Adobe Stock offre [!DNL Experience Manager] agli utenti la possibilità di cercare, visualizzare in anteprima, concedere in licenza e salvare le risorse [!DNL Adobe Stock] in [!DNL Experience Manager]. Le [!DNL Stock] risorse concesse in licenza e salvate hanno selezionato [!DNL Stock] i metadati, che possono essere utilizzati per la ricerca con altri filtri.
 
 Alcuni punti importanti su questa integrazione:
 
@@ -107,7 +110,7 @@ Alcuni punti importanti su questa integrazione:
 * La risorsa salvata in [!DNL Experience Manager] è una copia, non un collegamento in [!DNL Adobe Stock].
 
 **Utilizzo delle risorse salvate da[!DNL Adobe Stock]in[!DNL Experience Manager]in[!DNL Creative Cloud]**. Questa integrazione è indipendente da[!DNL Adobe Asset Link], ma[!DNL Adobe Asset Link]riconosce le risorse salvate in[!DNL Stock]quel modo e visualizza metadati aggiuntivi e un[!DNL Adobe Stock]logo su tali risorse nell’interfaccia utente delle[!DNL Adobe Asset Link]estensioni in[!DNL Photoshop],[!DNL Illustrator]o[!DNL InDesign]. I file sono disponibili per la navigazione, l’apertura e così via, poiché sono risorse normali al momento del salvataggio in[!DNL Experience Manager].
-Gli utenti creativi che lavorano nelle[!DNL Creative Cloud]app con[!DNL Adobe Asset Link]estensione presente, oltre ad avere accesso alle risorse già concesse in licenza da[!DNL Adobe Stock]a[!DNL Experience Manager], possono anche utilizzare il pannello[!DNL Creative Cloud]Librerie per cercare, visualizzare in anteprima e concedere in licenza[!DNL Adobe Stock]le risorse.[!DNL Assets]da[!DNL Adobe Stock]concesso in licenza e salvato in[!DNL Experience Manager]diventano disponibili per i team più grandi che accedono alla[!DNL Experience Manager Assets]distribuzione, mentre i creativi che dispongono di licenze per le risorse[!DNL Adobe Stock]tramite il pannello[!DNL Creative Cloud]Librerie le rendono disponibili a se stessi solo per impostazione predefinita nel loro[!DNL Creative Cloud]account.
+Gli utenti creativi che lavorano nelle[!DNL Creative Cloud]app con[!DNL Adobe Asset Link]estensione presente, oltre ad avere accesso alle risorse già concesse in licenza da[!DNL Adobe Stock]a[!DNL Experience Manager], possono anche utilizzare il pannello[!DNL Creative Cloud]Librerie per cercare, visualizzare in anteprima e concedere in licenza[!DNL Adobe Stock]le risorse.[!DNL Assets]da[!DNL Adobe Stock]licenza e salvato in[!DNL Experience Manager]diventano disponibili per i team più grandi che accedono alla[!DNL Experience Manager Assets]distribuzione, mentre i creativi che dispongono di licenze per le risorse[!DNL Adobe Stock]tramite il pannello[!DNL Creative Cloud]Librerie le rendono disponibili a se stessi solo per impostazione predefinita nel loro[!DNL Creative Cloud]account.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
@@ -160,20 +163,20 @@ Di seguito sono riportati alcuni esempi di aggiornamenti generalmente non rileva
 
 #### Utenti creativi con accesso diretto a DAM {#creative-users-with-direct-access-to-dam}
 
-In genere, i team creativi interni o le agenzie/i professionisti creativi caricati sulla rete interna hanno accesso all&#39;istanza DAM, incluso il [!DNL Experience Manager] login. [!DNL Experience Manager] e l&#39;infrastruttura di rete può essere impostata per consentire l&#39;accesso diretto alle parti esterne, in genere organizzazioni affidabili come le agenzie che lavorano per un cliente, per avere accesso a [!DNL Experience Manager] una rete, ad esempio tramite VPN o elenco di indirizzi IP consentiti.
+In genere, i team creativi interni o le agenzie/i professionisti creativi caricati sulla rete interna hanno accesso alla distribuzione DAM, incluso il [!DNL Experience Manager] login. [!DNL Experience Manager] e l&#39;infrastruttura di rete può essere impostata per consentire l&#39;accesso diretto alle parti esterne - solitamente organizzazioni affidabili come le agenzie che lavorano per un cliente - per avere accesso a [!DNL Experience Manager] una rete, ad esempio tramite VPN o elenco Consentiti di  IP.
 
 In tali casi, Adobe Asset Link o l’app [!DNL Experience Manager] desktop consente di accedere facilmente alle risorse finali/approvate e consente di salvare le risorse pronte per la creazione in DAM.
 
 #### Utenti creativi senza accesso a DAM {#creative-users-without-access-to-dam}
 
-Le agenzie esterne e i freelance senza accesso diretto all’istanza DAM possono richiedere l’accesso alle risorse approvate o desiderano aggiungere nuove progettazioni al DAM.
+Agenzie esterne e freelance senza accesso diretto alla distribuzione DAM possono richiedere l&#39;accesso alle risorse approvate o desiderano aggiungere le loro nuove progettazioni al DAM.
 
 Utilizzate le seguenti strategie per fornire l&#39;accesso alle risorse finali/approvate:
 
 * Utilizzate l’app desktop se il collegamento risorsa non funziona.
 * Utilizza [Portale](https://helpx.adobe.com/it/experience-manager/brand-portal/user-guide.html) marchio di Experience Manager Assets per distribuire le risorse in modo sicuro ai partner esterni
 * Utilizzare un&#39;implementazione personalizzata di un portale di distribuzione e determinazione origine basato su [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilizza il controllo degli accessi impostato nell&#39;infrastruttura di rete [!DNL Experience Manager] e nell&#39;elenco delle infrastrutture di rete necessarie (ad esempio, VPN e IP consentite) per consentire alle parti esterne di accedere a un&#39;area dedicata di contenuto nel tuo DAM. Possono utilizzare l&#39;interfaccia [!DNL Experience Manager] Web per ottenere risorse e caricare nuovi contenuti in DAM.
+* Utilizza il controllo degli accessi impostato nell&#39;infrastruttura di rete [!DNL Experience Manager] e nell&#39;infrastruttura necessaria (ad esempio, VPN e elenco Consentiti di  IP) per consentire alle parti esterne di accedere a un&#39;area dedicata di contenuto nel tuo DAM. Possono utilizzare l&#39;interfaccia [!DNL Experience Manager] Web per ottenere risorse e caricare nuovi contenuti in DAM.
 
 #### Lavoro in corso sulle risorse da [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
