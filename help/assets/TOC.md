@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di  Experience Manager 6.5 Assets
 translation-type: tm+mt
-source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 41%
@@ -151,7 +151,7 @@ ht-degree: 41%
    + [Creazione di progetti di traduzione](translation-projects.md)
    + [Preparare le risorse per la traduzione](preparing-assets-for-translation.md)
    + [Scaricare risorse da AEM](download-assets-from-aem.md)
-   + [Operazioni asincrone](asynchronous-jobs.md)
+   + [Operazioni asincrone](/help/sites-administering/asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informazioni sulle risorse](touch-ui-asset-insights.md)
    + [Abilitare le informazioni approfondite sulle risorse tramite Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
