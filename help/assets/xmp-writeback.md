@@ -3,9 +3,9 @@ title: Write-back XMP per le rappresentazioni
 description: Scoprite in che modo la funzione di writeback XMP propaga le modifiche dei metadati per una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '792'
 ht-degree: 5%
 
 ---
@@ -70,7 +70,7 @@ Le modifiche ai metadati vengono propagate alle miniature delle rappresentazioni
 
 [!DNL Experience Manager Assets] supporta sia  filtro elenco Bloccati che  elenco Consentiti di proprietà/nodi per i metadati XMP che vengono letti dai file binari delle risorse e memorizzati in JCR quando vengono assimilate le risorse.
 
-Il filtraggio mediante un elenco Bloccati  consente di importare tutte le proprietà dei metadati XMP eccetto quelle specificate per l&#39;esclusione. Tuttavia, per i tipi di risorse come i file INDD con enormi quantità di metadati XMP (ad esempio, 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se il filtro applicato a un elenco Bloccati  consente l’importazione di un numero elevato di risorse con numerosi metadati XMP, l’istanza o il cluster AEM può incontrare problemi di stabilità, ad esempio code di osservazione bloccate.
+Il filtraggio mediante un elenco Bloccati  consente di importare tutte le proprietà dei metadati XMP eccetto quelle specificate per l&#39;esclusione. Tuttavia, per i tipi di risorse come i file INDD con enormi quantità di metadati XMP (ad esempio, 1000 nodi con 10.000 proprietà), i nomi dei nodi da filtrare non sono sempre noti in anticipo. Se il filtro applicato a un elenco Bloccati  consente l’importazione di un numero elevato di risorse con numerosi metadati XMP, l’implementazione di AEM può incontrare problemi di stabilità, ad esempio code di osservazione bloccate.
 
 Il filtraggio dei metadati XMP tramite  elenco Consentiti risolve il problema consentendo di definire le proprietà XMP da importare. In questo modo, qualsiasi altra proprietà XMP o sconosciuta viene ignorata. Per compatibilità con versioni precedenti, potete aggiungere alcune di queste proprietà al filtro che utilizza un elenco Bloccati .
 
