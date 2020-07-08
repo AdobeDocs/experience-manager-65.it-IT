@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesi
 description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1559'
 ht-degree: 4%
 
 ---
@@ -59,12 +59,12 @@ Questo script di comando:
    * Il testo e i file estratti vengono memorizzati in [!DNL Experience Manager Assets].
    * Tutte le rappresentazioni sono memorizzate nella [!DNL Experience Manager Assets], nella risorsa stessa.
 
-## Integrare l&#39; [!DNL InDesign Server] interfaccia con Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integrare l&#39; [!DNL InDesign Server] con  Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Per integrare l&#39; [!DNL InDesign Server] utilizzo con [!DNL Experience Manager Assets] e dopo la configurazione del proxy, è necessario:
 
 1. [Installate InDesign Server](#installing-the-indesign-server).
-1. Se necessario, [configura il flusso di lavoro](#configuring-the-aem-assets-workflow)Experience Manager Assets.
+1. Se necessario, [configura il  Experience Manager Assets Workflow](#configuring-the-aem-assets-workflow).
 Ciò è necessario solo se i valori predefiniti non sono appropriati per l’istanza in uso.
 1. Configurate un lavoratore [proxy per InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
@@ -201,13 +201,13 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->Quando si lavora con un pool di lavoratori, è possibile abilitare l&#39;elenco bloccato di lavoratori IDS.
+>Quando si lavora con un pool di lavoratori, è possibile abilitare  elenco Bloccati di lavoratori IDS.
 >
 >A tal fine, abilitare la casella di controllo **[!UICONTROL enable.try.name]** , nella `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione, che consente di recuperare i processi IDS.
 >
 >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
 >
->Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoratore IDS viene riconvalidato. Se il lavoratore viene trovato in linea, viene rimosso dall&#39;elenco bloccato.
+>Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoratore IDS viene riconvalidato. Se il lavoratore viene trovato online, viene rimosso dal elenco Bloccati .
 
 ## Abilita il supporto per la versione [!DNL InDesign Server] 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
 
@@ -223,7 +223,7 @@ Per [!DNL InDesign Server] 10.0 o versione successiva, eseguite i seguenti passa
 
 ## Configurare [!DNL Experience Manager] le credenziali {#configure-aem-credentials}
 
-Potete modificare le credenziali di amministratore predefinite (nome utente e password) per accedere al [!DNL InDesign Server] contenuto dall’ [!DNL Experience Manager] istanza senza interrompere l’integrazione con il [!DNL InDesign Server].
+Potete modificare le credenziali di amministratore predefinite (nome utente e password) per accedere al [!DNL InDesign Server] contenuto dalla [!DNL Experience Manager] distribuzione senza interrompere l&#39;integrazione con il [!DNL InDesign Server].
 
 1. Passa a `/etc/cloudservices/proxy.html`.
 1. Nella finestra di dialogo, specificate il nuovo nome utente e la nuova password.
