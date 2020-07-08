@@ -3,7 +3,7 @@ title: Abilita approfondimenti risorse tramite DTM
 description: Scopri come utilizzare Adobe Dynamic Tag Management (DTM) per abilitare Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Sebbene sia possibile personalizzare il codice di tracciamento per consentire a 
 Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come indicato di seguito.
 
 1. Fai clic sul logo  Experience Manager e vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Approfondimenti]**.
-1. [Configurare ’istanza Experience Manager con DTM Cloud Service](/help/sites-administering/dtm.md)
+1. [Configurare  distribuzione Experience Manager con DTM Cloud Service](/help/sites-administering/dtm.md)
 
    Il token API dovrebbe essere disponibile dopo l&#39;accesso a [https://dtm.adobe.com](https://dtm.adobe.com/) e visitare Impostazioni **** account nel profilo utente. Questo passaggio non è richiesto dal punto di vista di Asset Insights, perché l&#39;integrazione di  siti Experience Manager con Asset Insights è ancora in corso.
 
@@ -34,6 +34,7 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come ind
    * Selezionate la scheda Proprietà **** Web, quindi fate clic su **[!UICONTROL Aggiungi proprietà]**.
 
    * Aggiornate i campi come appropriato e fate clic su **[!UICONTROL Crea proprietà]**. Consulta [la documentazione](https://helpx.adobe.com/experience-manager/using/dtm.html).
+
    ![Creare una proprietà Web di modifica](assets/Create-edit-web-property.png)
 
 1. Nella scheda **[!UICONTROL Regole]** , selezionare Regole di caricamento **[!UICONTROL pagina]** dal riquadro di navigazione e fare clic su **[!UICONTROL Crea nuova regola]**.
