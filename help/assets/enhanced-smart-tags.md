@@ -3,7 +3,7 @@ title: Tag avanzati migliorati
 description: Tag avanzati migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 10%
@@ -27,7 +27,7 @@ Una volta che un tag è stato preparato e pronto, il servizio ora può applicare
 
 In background, Smart Content Service utilizza il framework Adobe Sensei AI per formare il proprio algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su Adobe I/O. Per utilizzarlo in  Adobe Experience Manager, l&#39;amministratore di sistema deve integrare l&#39;istanza  Experience Manager con Adobe I/O.
+Smart Content Service è un servizio cloud ospitato su Adobe I/O. Per utilizzarlo in  Adobe Experience Manager, l&#39;amministratore di sistema deve integrare la distribuzione Experience Manager  con Adobe I/O.
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
