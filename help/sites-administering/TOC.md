@@ -4,9 +4,9 @@ product: adobe experience manager
 audience: admin-user
 user-guide-title: Guida utente per l'amministrazione di AEM 6.5
 translation-type: tm+mt
-source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+source-git-commit: 8d000088f4fd0ff1f85f11818d4e72337da5a280
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '624'
 ht-degree: 14%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 14%
 + [Panoramica sulla Guida utente di amministrazione](home.md)
 + Caratteristiche dei siti {#introduction}
    + [Amministrazione di siti Web](msm-and-translation.md)
+   + [Processi asincroni](asynchronous-jobs.md)
    + [Riutilizzo del contenuto: Multi Site Manager e Live Copy](msm.md)
    + [Console Panoramica Live Copy](msm-livecopy-overview.md)
    + [Configurazione della sincronizzazione di una Live Copy](msm-sync.md)
