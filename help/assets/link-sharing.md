@@ -3,7 +3,7 @@ title: Generare un URL per le risorse condivise
 description: Questo articolo descrive come condividere risorse, cartelle e raccolte all’interno  Experience Manager Assets come URL per parti esterne.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 7%
@@ -40,7 +40,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    >[!NOTE]
    >
-   >Se desiderate condividere i collegamenti dall&#39;istanza di Experience Manager Author  a entità esterne, accertatevi di esporre solo i seguenti URL (utilizzati solo per la condivisione dei collegamenti) per `GET` le richieste. Bloccate altri URL per garantire la sicurezza di  Experience Manager Author.
+   >Se desiderate condividere i collegamenti dalla distribuzione di Experience Manager Author  a entità esterne, accertatevi di esporre solo i seguenti URL (utilizzati solo per la condivisione dei collegamenti) per `GET` le richieste. Bloccate altri URL per garantire la sicurezza di  Experience Manager Author.
    >
    >* http://[aem_server]:[porta]/linkshare.html
    >* http://[aem_server]:[porta]/linksharepreview.html
