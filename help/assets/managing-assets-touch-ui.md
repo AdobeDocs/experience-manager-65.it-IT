@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '9250'
 ht-degree: 4%
@@ -63,7 +63,6 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    * Sulla barra degli strumenti, fate clic su **[!UICONTROL Crea]**. Scegliere **[!UICONTROL File dal menu]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia [!DNL Assets] utente. La finestra di dialogo per rinominare il file non viene visualizzata.
-
    ![Opzione Crea per caricare le risorse](assets/create-options.png)
 
    Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
@@ -120,7 +119,6 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    * il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
    * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-
    Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
 
    ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/chlimage_1-10.png)
@@ -133,7 +131,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
 ### Caricamenti seriali {#serialuploads}
 
-Il caricamento di numerose risorse in massa richiede notevoli risorse di I/O, il che potrebbe avere un impatto negativo sulle prestazioni dell’ [!DNL Assets] istanza. In particolare, se si dispone di una connessione Internet lenta, il tempo di caricamento aumenta drasticamente a causa di un picco di I/O del disco. Inoltre, il browser Web potrebbe introdurre ulteriori restrizioni al numero di richieste POST [!DNL Assets] in grado di gestire per caricamenti simultanei di risorse. Di conseguenza, l’operazione di caricamento non riesce o si interrompe prematuramente. In altre parole, [!DNL Experience Manager Assets] potrebbe mancare alcuni file durante l&#39;acquisizione di un gruppo di file o non riuscire completamente a caricare alcun file.
+Il caricamento di numerose risorse in massa richiede notevoli risorse di I/O, il che potrebbe avere un impatto negativo sulle prestazioni della [!DNL Assets] distribuzione. In particolare, se si dispone di una connessione Internet lenta, il tempo di caricamento aumenta drasticamente a causa di un picco di I/O del disco. Inoltre, il browser Web potrebbe introdurre ulteriori restrizioni al numero di richieste POST [!DNL Assets] in grado di gestire per caricamenti simultanei di risorse. Di conseguenza, l’operazione di caricamento non riesce o si interrompe prematuramente. In altre parole, [!DNL Experience Manager Assets] potrebbe mancare alcuni file durante l&#39;acquisizione di un gruppo di file o non riuscire completamente a caricare alcun file.
 
 Per ovviare a questa situazione, [!DNL Assets] durante un’operazione di caricamento in blocco viene inserita una risorsa alla volta (caricamento seriale), anziché tutte le risorse.
 
@@ -352,7 +350,6 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 1. Per ingrandire la risorsa:
    1. Utilizzate `Tab` il tasto per spostare lo stato attivo nell&#39;opzione di zoom in.
    1. Utilizzate `Enter` il tasto per ingrandire l&#39;immagine.
-
    Per ridurre la visualizzazione, usate `Tab` il tasto per spostare la messa a fuoco sull’opzione di zoom out e premete `Enter`.
 
 1. Utilizzare `Shift` + `Tab` per spostare la messa a fuoco sull&#39;immagine.
@@ -410,7 +407,6 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata
    * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa
    * Soluzioni creative in cui la risorsa è stata utilizzata di recente
-
    Per ulteriori dettagli, consulta [Informazioni approfondite](/help/assets/touch-ui-asset-insights.md)sulle risorse.
 
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
@@ -484,7 +480,6 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
 
    * Fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
-
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ## Gestire le rappresentazioni {#managing-renditions}
@@ -560,7 +555,6 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
       * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
-
    >[!NOTE]
    >
    >Per eliminare le risorse, un utente deve disporre di autorizzazioni di eliminazione per `dam/asset`. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
@@ -613,7 +607,6 @@ Consultate [Scaricare risorse da  Experience Manager](/help/assets/download-asse
 
    * **[!UICONTROL Annulla]** per interrompere l’azione
    * **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
-
    >[!NOTE]
    >
    >Per annullare la pubblicazione di una risorsa complessa, annullate la pubblicazione solo della risorsa. Evitate di annullare la pubblicazione dei riferimenti, in quanto ad essi potrebbero fare riferimento altre risorse pubblicate.
@@ -684,7 +677,6 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
    * Selezionate la risorsa e fate clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Fate clic sull&#39;opzione **[!UICONTROL Modifica]** che viene visualizzata su una risorsa nella vista a schede.
    * Fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
-
    ![Opzione Modifica nella barra degli strumenti](assets/edit_icon.png)
 
 1. Per ritagliare l’immagine, fate clic su **[!UICONTROL Ritaglia]** ![opzione per ritagliare un’immagine](assets/chlimage_1-22.png).
@@ -750,7 +742,6 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    * [Azioni rapide](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
-
    ![Opzione Annota](assets/chlimage_1-29.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
@@ -879,7 +870,7 @@ Se una risorsa include annotazioni in lingue straniere (in particolare lingue no
 
    * Includere la stringa `<font_family_name_of_custom_font, sans-serif>` nell&#39;opzione font-family. Ad esempio, se desiderate stampare le annotazioni in CJK (cinese, giapponese e coreano), includete la stringa `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` nell&#39;opzione font-family. Se desiderate stampare le annotazioni in hindi, scaricate il font appropriato e configurate la famiglia di font come Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Riavviate l’ [!DNL Experience Manager] istanza.
+1. Riavviate la [!DNL Experience Manager] distribuzione.
 
 Di seguito è riportato un esempio di come è possibile configurare [!DNL Experience Manager] per la stampa di annotazioni in CJK (cinese, giapponese e coreano):
 
@@ -942,7 +933,6 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
 1. Per confrontare due versioni di un’immagine, effettuate le seguenti operazioni:
    * Fare clic sulla versione da confrontare con la versione corrente.
    * Trascinate il cursore verso sinistra per sovrapporre la versione corrente alla versione corrente e confrontare.
-
    ![Utilizza il cursore per confrontare le versioni selezionate di una risorsa con la versione corrente](assets/version-slider.gif)
 
    *Figura: Usate il cursore per confrontare facilmente le versioni selezionate di una risorsa con la versione corrente.*
