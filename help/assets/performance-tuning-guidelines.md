@@ -4,7 +4,7 @@ description: Suggerimenti e indicazioni [!DNL Experience Manager] sulla configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2767'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Da  Experience Manager 6.1 SP1, se si utilizza un `sling:osgiConfig` nodo per co
 
 ### Archivio dati condivisi {#shared-data-stores}
 
-L&#39;implementazione di un archivio dati file S3 o condiviso può contribuire a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell’utilizzo di un datastore condiviso, consulta la guida [al ridimensionamento delle](/help/assets/assets-sizing-guide.md)risorse.
+L&#39;implementazione di un archivio dati file condiviso o S3 può contribuire a risparmiare spazio su disco e ad aumentare il throughput di rete nelle implementazioni su larga scala. Per ulteriori informazioni sui pro e i contro dell’utilizzo di un datastore condiviso, consulta la guida [al ridimensionamento delle](/help/assets/assets-sizing-guide.md)risorse.
 
 ### S3 data store {#s-data-store}
 
@@ -128,7 +128,7 @@ In primo luogo, la strategia di ottimizzazione della rete dipende dalla quantit�
 
 Laddove possibile, impostate il flusso di lavoro Aggiorna risorsa  DAM su Temporaneo. Questa impostazione riduce notevolmente i costi generali necessari per l&#39;elaborazione dei flussi di lavoro, perché in questo caso i flussi di lavoro non devono passare attraverso i normali processi di monitoraggio e archiviazione.
 
-1. Passa a `/miscadmin` nell&#39;istanza di [!DNLEExperience Manager] in `https://[aem_server]:[port]/miscadmin`.
+1. Passa `/miscadmin` alla distribuzione di [!DNLEExperience Manager] in `https://[aem_server]:[port]/miscadmin`.
 
 1. Espandete **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Modelli]** > **[!UICONTROL DAM]**.
 
@@ -285,11 +285,11 @@ Per tutti i problemi di prestazioni della rete da parte del cliente, eseguire le
 * Utilizzando uno strumento di benchmark di rete
 * Prova contro lo speditore
 
-### [!DNL Experience Manager] test di istanza {#aem-instance-testing}
+### [!DNL Experience Manager] test di distribuzione {#aem-deployment-testing}
 
-Per ridurre al minimo la latenza e ottenere un throughput elevato grazie a un utilizzo efficiente della CPU e alla condivisione del carico, controllate regolarmente le prestazioni dell&#39; [!DNL Experience Manager] istanza. In particolare:
+Per ridurre al minimo la latenza e ottenere un throughput elevato grazie a un utilizzo efficiente della CPU e alla condivisione del carico, controllate regolarmente le prestazioni dell&#39; [!DNL Experience Manager] implementazione. In particolare:
 
-* Eseguire test di carico sull&#39; [!DNL Experience Manager] istanza.
+* Eseguire test di caricamento rispetto alla [!DNL Experience Manager] distribuzione.
 * Monitorare le prestazioni di caricamento e la capacità di risposta dell’interfaccia utente.
 
 ## [!DNL Experience Manager Assets] elenco di controllo delle prestazioni e impatto delle attività di gestione delle risorse {#checklist}
