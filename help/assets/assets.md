@@ -3,7 +3,7 @@ title: Introduzione a [!DNL Adobe Experience Manager Assets].
 description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e [!DNL Adobe Experience Manager Asset] il offerta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5b3a442756e95c15cb01c4117a83b761dc8367
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 35%
@@ -49,7 +49,7 @@ Una risorsa, in pratica, è composta da un file binario, da metadati, da rappres
 
 >[!CAUTION]
 >
->Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] instance.
+>Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] deployment.
 
 ### [!DNL Experience Manager Assets] terminologia {#aem-assets-terminology}
 
