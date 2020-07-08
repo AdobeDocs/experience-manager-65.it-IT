@@ -3,7 +3,7 @@ title: ' Adobe Experience Manager alle cartelle di Adobe Creative Cloud che cond
 description: Configura  Adobe Experience Manager per consentire agli utenti di  Experience Manager Assets di scambiare cartelle con utenti Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >La funzione di condivisione delle cartelle  da Experience Manager a Creative Cloud è obsoleta. Adobe consiglia vivamente di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o l’app [desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Scopri di più nelle procedure ottimali per l&#39;integrazione [Experience Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
- Adobe Experience Manager può essere configurato per consentire agli utenti di Risorse di condividere cartelle con gli utenti delle app Adobe Creative Cloud, in modo che siano disponibili come cartelle condivise nel servizio Risorse Adobe Creative Cloud. La funzione può essere utilizzata per scambiare file tra team creativi e utenti di Risorse, soprattutto quando gli utenti creativi non hanno accesso all’istanza Risorse (non sono sulla rete aziendale).
+ Adobe Experience Manager può essere configurato per consentire agli utenti di Risorse di condividere cartelle con gli utenti delle app Adobe Creative Cloud, in modo che siano disponibili come cartelle condivise nel servizio Risorse Adobe Creative Cloud. La funzione può essere utilizzata per scambiare file tra team creativi e utenti di Risorse, soprattutto quando gli utenti creativi non hanno accesso alla distribuzione di Risorse (non sono sulla rete aziendale).
 
 Questo tipo di integrazione può essere utilizzato nei seguenti casi di utilizzo, soprattutto quando si lavora con utenti che non hanno accesso diretto alle risorse:
 
@@ -39,7 +39,7 @@ Il diagramma seguente fornisce una panoramica dell&#39;integrazione.
 L&#39;integrazione include i seguenti elementi:
 
 * **server** Experience Manager Assets implementato nella rete aziendale (servizi gestiti o locali): La condivisione delle cartelle viene avviata qui.
-* **servizio** di base Risorse Adobe Marketing Cloud: funge da intermediario tra  servizi di archiviazione Experience Manager e Creative Cloud. L&#39;amministratore della società che utilizza l&#39;integrazione deve stabilire una relazione di trust tra l&#39;organizzazione Marketing Cloud e l&#39;istanza Assets. Inoltre, [definiscono un elenco di collaboratori](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)di Creative Cloud approvati, che gli utenti di Assets possono condividere anche cartelle per ulteriore sicurezza.
+* **servizio** di base Risorse Adobe Marketing Cloud: funge da intermediario tra  servizi di archiviazione Experience Manager e Creative Cloud. L&#39;amministratore della società che utilizza l&#39;integrazione deve stabilire una relazione di affidabilità tra l&#39;organizzazione Marketing Cloud e la distribuzione Assets. Inoltre, [definiscono un elenco di collaboratori](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)di Creative Cloud approvati, che gli utenti di Assets possono condividere anche cartelle per ulteriore sicurezza.
 
 * **Servizi** Web Creative Cloud Assets (interfaccia utente Web per l&#39;archiviazione e Creative Cloud Files): Questo è il punto in cui gli utenti specifici dell&#39;app Creative Cloud, con cui è stata condivisa una cartella Assets, possono accettare l&#39;invito e visualizzare la cartella nell&#39;archivio del loro account Creative Cloud.
 * **App** desktop Creative Cloud: (Facoltativo) Consente l&#39;accesso diretto a cartelle/file condivisi dal desktop dell&#39;utente creativo tramite sincronizzazione con l&#39;archiviazione Creative Cloud Assets.
