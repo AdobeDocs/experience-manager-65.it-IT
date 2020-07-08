@@ -3,7 +3,7 @@ title: Modelli di risorse in [!DNL Adobe Experience Manager Assets].
 description: Scopri i modelli delle risorse [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli delle risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Con i modelli di risorse potete ottenere quanto segue:
 
 * Modificare i campi dei modelli modificabili dall&#39;interfaccia Web.
 * Controllare lo stile di base del testo, ad esempio dimensione del font, stile e tipo a livello di tag.
-* Modificare le immagini all’interno del modello utilizzando il selettore dei contenuti.
+* Cambiate le immagini all’interno del modello utilizzando il selettore dei contenuti.
 * Anteprima delle modifiche apportate al modello.
 * Unisci più file modello per creare un artefatto con più pagine.
 
@@ -96,7 +96,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    >[!NOTE]
    >
-   >Accertatevi che l’ [!DNL Experience Manager] istanza sia integrata con un [!DNL InDesign Server] dispositivo che consenta [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [integrare  risorse Experience Manager con InDesign Server](/help/assets/indesign.md).
+   >Assicuratevi che la [!DNL Experience Manager] distribuzione sia integrata con un [!DNL InDesign Server] sistema per consentire [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [integrare  risorse Experience Manager con InDesign Server](/help/assets/indesign.md).
 
 1. Per modificare il testo in un campo modificabile, fare clic sul campo di testo nell&#39;elenco dei campi modificabili e modificare il testo nel campo.
 
