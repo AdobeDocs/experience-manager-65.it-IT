@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +33,7 @@ Per iniziare, andate all’URL visualizzato al momento della creazione del sito,
 * URL autore = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL pubblicazione = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Se è stata impostata [la home page](enablement-create-site.md#changethedefaulthomepage)predefinita, è sufficiente accedere a [http://localhost:4503/](http://localhost:4503/) per avviare il sito.
+Se è stata impostata [la home page](enablement-create-site.md#changethedefaulthomepage)predefinita, è sufficiente accedere a [http://localhost:4503/](Http://localhost:4503/) per avviare il sito.
 
 Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebbe già effettuato l’accesso e sarebbe anonimo.
 
@@ -49,13 +52,14 @@ Questa home page include quattro voci di menu: `Assignments, Ski Catalog, What's
 >È possibile concedere l&#39;accesso anonimo a un sito di abilitazione senza consentire ai visitatori del sito di registrarsi autonomamente.
 >Se una risorsa di abilitazione è impostata su `show in catalog` e `allow anonymous access`, i visitatori anonimi del sito potranno visualizzare le risorse nel catalogo.
 
+
 ### Impedire l&#39;accesso anonimo su JCR {#prevent-anonymous-access-on-jcr}
 
 Un limite noto espone il contenuto del sito della community ai visitatori anonimi attraverso contenuti jcr e json, anche se **[!UICONTROL consente l&#39;accesso]** anonimo è disabilitato per il contenuto del sito. Tuttavia, questo comportamento può essere controllato utilizzando Limitazioni Sling come soluzione alternativa.
 
 Per proteggere i contenuti del sito della community dall&#39;accesso di utenti anonimi tramite contenuti jcr e json, procedi come segue:
 
-1. Nell&#39;istanza di AEM Author, andate a https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;nome sito>.html.
+1. Nell’istanza AEM Author, andate a https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;nome sito>.html.
 
    >[!NOTE]
    >
@@ -63,7 +67,7 @@ Per proteggere i contenuti del sito della community dall&#39;accesso di utenti a
 
 1. Vai a Proprietà **** pagina.
 
-   ![page-properties-1](assets/page-properties-1.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Vai alla scheda **[!UICONTROL Avanzate]** .
 1. Enable **[!UICONTROL Authentication Requirement]**.
@@ -92,7 +96,7 @@ Al successivo accesso del membro, viene visualizzata la pagina principale, ident
 
 Nella pagina Assegnazioni viene visualizzato il membro di tutti i percorsi di apprendimento e le risorse di abilitazione assegnate specificatamente a tale utente.
 
-Ogni assegnazione fornisce informazioni di base su
+Ogni assegnazione fornisce informazioni di base su:
 
 * Tipo di assegnazione
 * Indica se si tratta di una nuova assegnazione
@@ -157,7 +161,7 @@ Una volta effettuato l&#39;accesso, viene visualizzata una nuova voce di menu `A
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
-La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Quinn è il contatto con le risorse di moderatore e abilitazione e non è stato registrato in alcuna risorsa di abilitazione o percorsi di apprendimento, pertanto non c&#39;è nulla da visualizzare.
+La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Quinn è il contatto moderatore e di abilitazione delle risorse e non è stato registrato in alcuna risorsa di abilitazione o percorsi di apprendimento, pertanto non c&#39;è nulla da visualizzare.
 
 ### Amministrazione {#administration}
 
@@ -206,7 +210,7 @@ Con una piccola attività e un’interazione con le risorse durante la pubblicaz
 * Selezionare l&#39; `Report` icona per un riepilogo di tutte le risorse
 * Selezionare una risorsa, quindi l&#39; `Report` icona relativa a un rapporto sulla risorsa
 
-È probabile che la visualizzazione dei dati di Adobe Analytics sia troppo presto, e che la visualizzazione potrebbe richiedere da 1 a 12 ore. Tuttavia, il reporting SCORM di base è già disponibile.
+È probabile che la visualizzazione dei dati di Adobe  Analytics sia troppo presto, e che la visualizzazione potrebbe richiedere da 1 a 12 ore. Tuttavia, il reporting SCORM di base è già disponibile.
 
 #### Rapporto sulle risorse sulle lezioni di sci {#ski-lessons-resource-report}
 
@@ -234,7 +238,7 @@ Per i rapporti sulle assegnazioni:
 
 * Sull’autore
 * Accesso con privilegi amministrativi
-* Vai a **[!UICONTROL Community > Rapporti > Rapporto assegnazioni]**
+* Passa a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > Rapporto **[!UICONTROL assegnazioni]**
 * Selezionate un **[!UICONTROL sito]** dal menu a discesa (selezionate `Enablement Tutorial`)
 
 * Seleziona **[!UICONTROL gruppo]** (selezionare `Community Ski Class`)
@@ -247,9 +251,8 @@ Per i rapporti sulle assegnazioni:
 
 Per i rapporti sulle visualizzazioni:
 
-* Sull’autore
-* Accesso con privilegi amministrativi
-* Vai a **[!UICONTROL Community > Rapporti > Rapporto visualizzazioni]**
+* Per l&#39;autore, effettuate l&#39;accesso con privilegi amministrativi
+* Passa a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > Rapporto **[!UICONTROL visualizzazioni]**
 * Selezionate un **sito **dal menu a discesa (selezionate`Enablement Tutorial`)
 
 * Seleziona tipo **[!UICONTROL di]** contenuto (seleziona `all`)
