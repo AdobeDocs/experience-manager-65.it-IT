@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
+source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -173,6 +173,7 @@ Per eseguire il server applicazione in cui sono distribuiti AEM Forms su JEE, ut
 
    * Seleziona **Utente non può cambiare la password**.
    * Nella scheda **Membro di** , assicurarsi che sia elencato il gruppo **Utenti** .
+
    >[!NOTE]
    >
    >Non è possibile modificare questa impostazione per PDF Generator.
@@ -200,6 +201,7 @@ Per eseguire il server applicazione in cui sono distribuiti AEM Forms su JEE, ut
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
+
    >[!NOTE]
    >
    > Il percorso di installazione predefinito di JBoss Application Server:
@@ -464,7 +466,7 @@ Nella tabella seguente sono descritte le tecniche di auditing e registrazione ut
 
 1. Impostate il valore della variabile su TRUE.
 
-1. Riavviate l&#39;istanza dei moduli AEM.
+1. Riavviate l&#39;istanza AEM Forms.
 
 ## Configurazione di AEM Forms su JEE per l&#39;accesso oltre l&#39;azienda {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -1017,6 +1019,7 @@ Per impostazione predefinita, i AEM Forms sull&#39;installazione chiavi in mano 
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
+
    >[!NOTE]
    >
    > Il percorso di installazione predefinito di JBoss Application Server:
