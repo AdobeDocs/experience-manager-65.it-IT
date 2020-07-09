@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
 workflow-type: tm+mt
 source-wordcount: '1700'
 ht-degree: 2%
@@ -26,11 +26,11 @@ Le aziende raccolgono ed elaborano dati da più moduli, sistemi back-end e altre
 
 Una volta configurati, questi flussi di lavoro possono essere attivati manualmente per completare un processo definito o eseguiti a livello di programmazione quando gli utenti inviano un modulo o una comunicazione interattiva. La funzionalità è inclusa nel pacchetto del componente aggiuntivo AEM Forms.
 
-AEM Forms è una potente piattaforma di classe enterprise. Il flusso di lavoro basato su moduli in OSGi è solo una delle funzionalità dei AEM Forms. Per l&#39;elenco completo delle funzionalità, consultate [Introduzione ai AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms è una potente piattaforma di classe enterprise. Il flusso di lavoro basato su moduli in OSGi è solo una delle funzionalità dei AEM Forms. Per l&#39;elenco completo delle funzionalità, consultate [Introduzione ai AEM Forms](introduction-aem-forms.md).
 
 >[!NOTE]
 >
->Con il flusso di lavoro basato su Forms su OSGi, potete creare e implementare rapidamente flussi di lavoro per varie attività nello stack OSGi, senza dover installare la funzionalità di Process Management completa nello stack JEE. Per informazioni sulle differenze e le similarità tra le funzionalità, vedi un [confronto](../../forms/using/capabilities-osgi-jee-workflows.md) dei flussi di lavoro AEM incentrati sui moduli in OSGi e Gestione dei processi in JEE.
+>Con il flusso di lavoro basato su Forms su OSGi, potete creare e implementare rapidamente flussi di lavoro per varie attività nello stack OSGi, senza dover installare la funzionalità di Process Management completa nello stack JEE. Per informazioni sulle differenze e le similarità tra le funzionalità, vedi un [confronto](capabilities-osgi-jee-workflows.md) dei flussi di lavoro AEM incentrati sui moduli in OSGi e Gestione dei processi in JEE.
 >
 >Dopo il confronto, se scegliete di installare la funzionalità Process Management sullo stack JEE, consultate [Installare o aggiornare AEM Forms in JEE](/help/forms/home.md) per informazioni dettagliate sull&#39;installazione e la configurazione dello stack JEE e delle funzionalità di Process Management.
 
@@ -141,11 +141,11 @@ Per avviare la delega delle librerie, eseguite i seguenti passaggi su tutte le i
 
 #### Configurare l’agente di serializzazione {#configure-the-serialization-agent}
 
-Per aggiungere il pacchetto all’elenco di autorizzazioni, eseguite i seguenti passaggi su tutte le istanze Author e Publish:
+Per aggiungere il pacchetto al inserire nell&#39;elenco Consentiti di , eseguite i seguenti passaggi su tutte le istanze Author e Publish:
 
 1. Aprite AEM Configuration Manager in una finestra del browser. L’URL predefinito è https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Cerca e apri la configurazione **del firewall di** deserializzazione.
-1. Aggiungete il pacchetto **sun.util.calendar** al campo **Allowlist** . Fate clic su Salva.
+1. Aggiungete il pacchetto **sun.util.Calendar** al campo di **inserire nell&#39;elenco Consentiti** . Fate clic su Salva.
 1. Ripetete i passaggi da 1 a 3 su tutte le istanze Author e Publish.
 
 ### Configurazioni di post-installazione facoltative {#optional-post-installation-configurations}
@@ -164,7 +164,7 @@ Dispatcher è uno strumento per il caching e il bilanciamento del carico per AEM
 
 1. Configurare il servizio filtro di riferimento:
 
-   Accedete al gestore di configurazione Apache Felix come amministratore. L’URL predefinito del gestore di configurazione è https://&#39;server&#39;:[port_number]/system/console/configMgr. Nel menu **Configurazioni** , selezionate l&#39;opzione Filtro **di riferimento** Apache Sling. Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **Salva**. Il formato della voce è `https://'[server]:[port]'`.
+   Accedete al gestore di configurazione Apache Felix come amministratore. L’URL predefinito del gestore di configurazione è https://&#39;server&#39;:[port_number]/system/console/configMgr. Nel menu **Configurazioni** , selezionate l&#39;opzione Filtro **di riferimento** Apache Sling. Nel campo Consenti ospitanti, immettete il nome host del dispatcher per consentirlo come referente e fate clic su **Salva**. The format of the entry is `https://'[server]:[port]'`.
 
 #### Configura cache {#configure-cache}
 
