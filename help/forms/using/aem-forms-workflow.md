@@ -1,15 +1,18 @@
 ---
 title: Flusso di lavoro incentrato sui moduli in OSGi
 seo-title: Creazione rapida di processi adattivi basati su moduli, automazione delle operazioni di document services e utilizzo di Adobe Sign con i flussi di lavoro AEM
-description: Utilizzare AEM Forms Workflow per automatizzare e creare rapidamente revisioni e approvazioni, per avviare Document Services
-seo-description: AEM Forms Workflow consente di automatizzare e creare rapidamente revisioni e approvazioni, di avviare Document Services (ad esempio, per convertire un documento PDF in un altro formato), di integrare il flusso di lavoro con la firma Adobe Sign e altro ancora.
+description: AEM Forms Workflow per automatizzare e creare rapidamente revisioni e approvazioni, per avviare Document Services
+seo-description: Utilizza Flusso di lavoro AEM Forms per automatizzare e creare rapidamente revisioni e approvazioni, per avviare Document Services (ad esempio, per convertire un documento PDF in un altro formato), per integrare il flusso di lavoro con la firma di Adobe Sign e altro ancora.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+workflow-type: tm+mt
+source-wordcount: '3065'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +31,11 @@ Puoi utilizzare AEM Workflows per creare rapidamente flussi di lavoro basati su 
 
 Con il flusso di lavoro basato su Forms su OSGi, potete creare e implementare rapidamente flussi di lavoro per varie attività nello stack OSGi, senza dover installare la funzionalità di Process Management completa nello stack JEE. Lo sviluppo e la gestione dei flussi di lavoro utilizzano le familiari funzionalità AEM Workflow e AEM Inbox. I flussi di lavoro sono la base per automatizzare i processi aziendali reali che si estendono su più sistemi software, reti, reparti e persino organizzazioni.
 
-Una volta configurati, questi flussi di lavoro possono essere attivati manualmente per completare un processo definito o eseguiti a livello di programmazione quando gli utenti inviano una lettera di gestione [del modulo o della](/help/forms/using/cm-overview.md) corrispondenza. Grazie a queste funzionalità avanzate per il flusso di lavoro AEM, AEM Forms offre due funzionalità distinte ma simili. Come parte della strategia di distribuzione, è necessario decidere quale funziona. Consultate il [confronto](../../forms/using/capabilities-osgi-jee-workflows.md) tra i flussi di lavoro AEM incentrati sui moduli in OSGi e la gestione dei processi in JEE. Inoltre, per la topologia di distribuzione, consultate Topologie di [architettura e distribuzione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Una volta configurati, questi flussi di lavoro possono essere attivati manualmente per completare un processo definito o eseguiti a livello di programmazione quando gli utenti inviano una lettera di gestione [del modulo o della](/help/forms/using/cm-overview.md) corrispondenza. Grazie a queste funzionalità avanzate del flusso di lavoro AEM, gli AEM Forms offrono due funzionalità distinte ma simili. Come parte della strategia di distribuzione, è necessario decidere quale funziona. Consultate il [confronto](capabilities-osgi-jee-workflows.md) tra i flussi di lavoro AEM incentrati sui moduli in OSGi e la gestione dei processi in JEE. Inoltre, per la topologia di implementazione, consulta, topologie di [architettura e implementazione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-Flusso di lavoro incentrato sui moduli in OSGi estende [AEM Inbox](/help/sites-authoring/inbox.md) e fornisce componenti aggiuntivi (passaggi) per l’editor flussi di lavoro AEM per aggiungere il supporto per i flussi di lavoro incentrati sui moduli AEM. La Casella in entrata AEM estesa dispone di funzionalità simili a quelle di [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md). Oltre a gestire flussi di lavoro incentrati sulle persone (approvazione, revisione e così via), puoi utilizzare i flussi di lavoro AEM per automatizzare le operazioni relative ai servizi [](/help/sites-developing/workflows-step-ref.md)documenti (ad esempio, Genera PDF) e i documenti per la firma elettronica (Adobe Sign).
+Flusso di lavoro basato su moduli su OSGi estende la Casella in entrata [](/help/sites-authoring/inbox.md) AEM e fornisce componenti aggiuntivi (passaggi) per l’editor flussi di lavoro AEM per aggiungere il supporto per flussi di lavoro incentrati sui AEM Forms. La Casella in entrata AEM estesa presenta funzionalità simili a [AEM Forms Workspace](introduction-html-workspace.md). Oltre a gestire flussi di lavoro incentrati sulle persone (approvazione, revisione e così via), puoi utilizzare i flussi di lavoro AEM per automatizzare le operazioni relative ai servizi [](/help/sites-developing/workflows-step-ref.md)documenti (ad esempio, Genera PDF) e i documenti per la firma elettronica (Adobe Sign).
 
-Tutti i passaggi del flusso di lavoro di AEM Forms supportano l&#39;uso delle variabili. Le variabili consentono ai passaggi del flusso di lavoro di contenere e trasmettere i metadati attraverso i passaggi in fase di esecuzione. È possibile creare diversi tipi di variabili per memorizzare diversi tipi di dati. È inoltre possibile creare raccolte di variabili (array) per memorizzare più istanze di dati correlati con lo stesso tipo. In genere, si utilizza una variabile o una raccolta di variabili quando è necessario prendere una decisione in base al valore che contiene o per memorizzare le informazioni necessarie in un secondo momento in un processo. Per ulteriori informazioni sull’uso delle variabili nei seguenti componenti del flusso di lavoro incentrati sui moduli (passaggi), vedere Flusso di lavoro incentrato sui [moduli in OSGi - Riferimento](../../forms/using/aem-forms-workflow-step-reference.md)passo. Per informazioni sulla creazione e gestione di variabili, consultate [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM.
+Tutti i passaggi del flusso di lavoro AEM Forms supportano l’uso delle variabili. Le variabili consentono ai passaggi del flusso di lavoro di contenere e trasmettere i metadati attraverso i passaggi in fase di esecuzione. È possibile creare diversi tipi di variabili per memorizzare diversi tipi di dati. È inoltre possibile creare raccolte di variabili (array) per memorizzare più istanze di dati correlati con lo stesso tipo. In genere, si utilizza una variabile o una raccolta di variabili quando è necessario prendere una decisione in base al valore che contiene o per memorizzare le informazioni necessarie in un secondo momento in un processo. Per ulteriori informazioni sull’uso delle variabili nei seguenti componenti del flusso di lavoro incentrati sui moduli (passaggi), vedere Flusso di lavoro incentrato sui [moduli in OSGi - Riferimento](../../forms/using/aem-forms-workflow-step-reference.md)passo. Per informazioni sulla creazione e gestione di variabili, consultate [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 Nel diagramma seguente è illustrata la procedura end-to-end per creare, eseguire e monitorare un flusso di lavoro incentrato su Forms in OSGi.
 
@@ -43,11 +46,11 @@ Nel diagramma seguente è illustrata la procedura end-to-end per creare, eseguir
 * Un flusso di lavoro è una rappresentazione di un processo aziendale reale. Tenete a portata di mano il processo aziendale e l&#39;elenco dei partecipanti al processo aziendale. Inoltre, tenete le risorse (moduli adattivi, documenti PDF e altro ancora) pronte prima di iniziare a creare un flusso di lavoro.
 * Un flusso di lavoro può avere più fasi. Queste fasi vengono visualizzate nella Casella in entrata AEM e consentono di segnalare l’avanzamento del flusso di lavoro. Dividi il processo aziendale in fasi logiche.
 * Puoi configurare la fase di assegnazione dei flussi di lavoro AEM per l’invio di notifiche e-mail a utenti o assegnatari. Pertanto, [abilitate le notifiche](#configure-email-service)e-mail.
-* Un flusso di lavoro può anche utilizzare Adobe Sign per le firme digitali. Se si intende utilizzare Adobe Sign in un flusso di lavoro, è necessario [configurare Adobe Sign per AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) prima di utilizzarlo in un flusso di lavoro.
+* Un flusso di lavoro può anche utilizzare Adobe Sign per le firme digitali. Se si intende utilizzare Adobe Sign in un flusso di lavoro, [configurare Adobe Sign per i AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) prima di utilizzarlo in un flusso di lavoro.
 
 ## Create a workflow model {#create-a-workflow-model}
 
-Un modello di workflow è costituito dalla logica e dal flusso di lavoro di un processo aziendale. È costituito da una serie di passi. Questi passaggi sono componenti AEM. È possibile estendere i passaggi del flusso di lavoro con parametri e script per fornire funzionalità e controllo maggiori, a seconda delle necessità. In AEM Forms sono disponibili alcuni passaggi oltre ai passaggi di AEM. Per un elenco dettagliato dei passaggi relativi a AEM e AEM Forms, consulta [AEM Workflow Step Reference](/help/sites-developing/workflows-step-ref.md) e Flusso di lavoro incentrato sui [moduli in OSGi - Step Reference](../../forms/using/aem-forms-workflow.md)(Guida di riferimento ai passaggi per AEM e AEM Forms).
+Un modello di workflow è costituito dalla logica e dal flusso di lavoro di un processo aziendale. È costituito da una serie di passi. Questi passaggi sono componenti AEM. È possibile estendere i passaggi del flusso di lavoro con parametri e script per fornire funzionalità e controllo maggiori, a seconda delle necessità. Oltre ai passaggi di AEM, i AEM Forms forniscono alcuni passaggi utili. Per un elenco dettagliato dei passaggi AEM e AEM Forms, consulta Riferimento [ai passaggi del flusso di lavoro di](/help/sites-developing/workflows-step-ref.md) AEM e Flusso di lavoro incentrato sui [moduli in OSGi - Riferimento](../../forms/using/aem-forms-workflow.md)passo.
 
 AEM offre un’interfaccia utente intuitiva per creare un modello di workflow con i passaggi del flusso di lavoro forniti. Per istruzioni dettagliate sulla creazione di un modello di workflow, consultate [Creazione di modelli](/help/sites-developing/workflows-models.md)di workflow. L&#39;esempio seguente fornisce istruzioni dettagliate per creare un modello di workflow per un flusso di lavoro di approvazione e revisione:
 
@@ -107,13 +110,13 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
    ![Esempio di divisione OR](assets/orsplit_branch1_active_new.png)
 
-   **Espressione di routing per il ramo 1**
+   **Espressione di routing per il ramo 2**
 
    Quando un utente tocca **Rifiuta** in AEM Inbox, viene attivato il ramo 2.
 
    ![Esempio di divisione OR](assets/orsplit_branch2_active_new.png)
 
-   Per informazioni sulla creazione di espressioni di routing utilizzando le variabili, consultate [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM Forms.
+   Per informazioni sulla creazione di espressioni di routing utilizzando le variabili, vedere [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM Forms.
 
 1. Aggiungi altri passaggi del flusso di lavoro per creare la logica di business.
 
@@ -127,7 +130,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro per un&#39;applicaz
 
 ## Creazione di un&#39;applicazione per flussi di lavoro incentrata sui moduli {#create-a-forms-centric-workflow-application}
 
-L’applicazione è il modulo adattivo associato al flusso di lavoro. Quando un&#39;applicazione viene inviata tramite Inbox, avvia il flusso di lavoro associato. Per rendere disponibile un flusso di lavoro Forms come applicazione in AEM Inbox e nell’app AEM Forms, effettuate le seguenti operazioni per creare un’applicazione di flusso di lavoro:
+L’applicazione è il modulo adattivo associato al flusso di lavoro. Quando un&#39;applicazione viene inviata tramite Inbox, avvia il flusso di lavoro associato. Per rendere disponibile un flusso di lavoro Forms come applicazione nell’app AEM Inbox e AEM Forms, effettuate le seguenti operazioni per creare un’applicazione per il flusso di lavoro:
 
 >[!NOTE]
 >
@@ -203,11 +206,11 @@ L’applicazione del flusso di lavoro creata è disponibile come applicazione in
 
 ### Invio di un’applicazione dall’app AEM Forms {#afa}
 
-L’app AEM Forms si sincronizza con un server AEM Forms e consente di apportare modifiche ai dati del modulo, alle attività, alle applicazioni del flusso di lavoro e alle informazioni salvate (bozze/modelli) nel vostro account. Per ulteriori informazioni, consultate App [](/help/forms/using/aem-forms-app.md) AEM Forms e articoli correlati.
+L&#39;app AEM Forms si sincronizza con un server di AEM Forms e consente di apportare modifiche ai dati del modulo, alle attività, alle applicazioni del flusso di lavoro e alle informazioni salvate (bozze/modelli) nell&#39;account. Per ulteriori informazioni, consultate [AEM Forms app](/help/forms/using/aem-forms-app.md) e articoli correlati.
 
 ### Invio di un modulo adattivo {#af}
 
-È possibile configurare le azioni di invio di un modulo adattivo per avviare un flusso di lavoro dopo l’invio del modulo adattivo. I moduli adattivi forniscono l’azione di invio **Richiama un flusso di lavoro** AEM per avviare un flusso di lavoro dopo l’invio di un modulo adattivo. Per informazioni dettagliate sull&#39;azione di invio, vedere [Configurazione dell&#39;azione](../../forms/using/configuring-submit-actions.md)di invio. Per inviare un modulo adattivo tramite l’app AEM Forms, abilita Sincronizza con l’app AEM Forms nelle proprietà del modulo adattivo.
+È possibile configurare le azioni di invio di un modulo adattivo per avviare un flusso di lavoro dopo l’invio del modulo adattivo. I moduli adattivi forniscono l’azione di invio **Richiama un flusso di lavoro** AEM per avviare un flusso di lavoro dopo l’invio di un modulo adattivo. Per informazioni dettagliate sull&#39;azione di invio, vedere [Configurazione dell&#39;azione](../../forms/using/configuring-submit-actions.md)di invio. Per inviare un modulo adattivo tramite l&#39;app AEM Forms, abilitare l&#39;opzione Sincronizza con app AEM Forms nelle proprietà del modulo adattivo.
 
 È possibile configurare un modulo adattivo per la sincronizzazione, l&#39;invio e l&#39;attivazione di un flusso di lavoro dall&#39;app AEM Forms. Per informazioni dettagliate, vedere [Uso di un modulo](/help/forms/using/working-with-form.md).
 
