@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+source-git-commit: 0a55ed44cb7fe3320b2196df38fe8492ee03912d
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 60%
+source-wordcount: '586'
+ht-degree: 57%
 
 ---
 
@@ -69,6 +69,8 @@ Per risolvere questo errore:
 * (Solo per JBoss 7) Quando si esegue l’aggiornamento da una versione precedente ad AEM 6.5 Forms e la versione precedente conteneva processi (.lca) che creavano e utilizzavano una copia del processo di rendering predefinito per l’invio o per il rendering, HTML5 Forms con tali processi (.lca) non riusciva a eseguire le azioni richieste. (CQ-4243928)
 * In un modulo adattivo, quando un servizio di modello di dati modulo viene richiamato dall’editor di regole per l’aggiornamento dinamico dei valori del componente di scelta dell’immagine, i valori del componente di scelta dell’immagine non vengono aggiornati. (CQ-4254754)
 * AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/it-it/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/it-it/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assicurati che tali Redistributable Runtime Package siano installati prima di avviare l’installazione. (CQ-4265668)
+
+* PDF Generator non supporta l&#39;autenticazione basata su smart card.  Quando un amministratore abilita i Criteri di gruppo `Interactive Logon: Require Smart card` su un server Windows, tutti gli utenti PDF Generator esistenti vengono invalidati.
 
 * Quando un modulo adattivo è configurato per aggiornare dinamicamente i valori di un componente e l’istanza di pubblicazione che ospita il modulo è accessibile attraverso il dispatcher, la funzionalità di aggiornamento dinamico dei valori di un campo smette di funzionare. Per risolvere il problema, nell’istanza di pubblicazione apri CRXDE, pass a /libs/fd/af/runtime/clientlibs/guideChartReducer e crea la proprietà elencata di seguito.
 
