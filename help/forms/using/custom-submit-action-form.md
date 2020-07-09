@@ -10,14 +10,17 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: a399b2cb2e0ae4f045f7e0fddf378fdcd80bb848
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 0%
 
 ---
 
 
 # Scrittura di un&#39;azione di invio personalizzata per i moduli adattivi{#writing-custom-submit-action-for-adaptive-forms}
 
-I moduli adattivi richiedono azioni di invio per elaborare i dati specificati dall&#39;utente. Un&#39;azione Invia determina l&#39;attività eseguita sui dati inviati utilizzando un modulo adattivo. Adobe Experience Manager (AEM) include azioni [di invio](../../forms/using/configuring-submit-actions.md) OOTB che dimostrano le attività personalizzate che è possibile eseguire utilizzando i dati inviati dall&#39;utente. Ad esempio, è possibile eseguire attività quali inviare e-mail o memorizzare i dati.
+I moduli adattivi richiedono azioni di invio per elaborare i dati specificati dall&#39;utente. Un&#39;azione Invia determina l&#39;attività eseguita sui dati inviati utilizzando un modulo adattivo.  Adobe Experience Manager (AEM) include azioni [di invio](../../forms/using/configuring-submit-actions.md) OOTB che dimostrano le attività personalizzate che è possibile eseguire utilizzando i dati inviati dall’utente. Ad esempio, è possibile eseguire attività quali inviare e-mail o memorizzare i dati.
 
 ## Flusso di lavoro per un’azione di invio {#workflow-for-a-submit-action}
 
@@ -114,7 +117,7 @@ Effettuare le seguenti operazioni per creare un&#39;azione Invia personalizzata 
 
 1. **Immettete i campi di configurazione per richiedere all’autore la configurazione dell’e-mail.**
 
-   Il modulo adattivo fornisce inoltre un&#39;azione E-mail che invia e-mail agli utenti. Personalizza questa azione in base alle tue esigenze. Andate a /libs/fd/af/components/guidesubmittype/email/dialog. Copiare i nodi all&#39;interno del nodo cq:dialog nel nodo cq:dialog dell&#39;azione di invio (/apps/custom_submit_action/store_and_email/dialog).
+   Il modulo adattivo fornisce inoltre un&#39;azione E-mail che invia messaggi e-mail agli utenti. Personalizza questa azione in base alle tue esigenze. Andate a /libs/fd/af/components/guidesubmittype/email/dialog. Copiare i nodi all&#39;interno del nodo cq:dialog nel nodo cq:dialog dell&#39;azione di invio (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personalizzazione dell’azione e-mail](assets/step3.png)
 
@@ -140,13 +143,13 @@ Effettuare le seguenti operazioni per creare un&#39;azione Invia personalizzata 
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   Per inviare l&#39;e-mail, il codice legge l&#39;indirizzo e-mail del destinatario dalla configurazione. Per recuperare il valore di configurazione nello script dell&#39;azione, leggere le proprietà della risorsa corrente utilizzando il codice seguente. Allo stesso modo potete leggere gli altri file di configurazione.
+   Per inviare l&#39;e-mail, il codice legge l&#39;indirizzo e-mail del destinatario dalla configurazione. Per recuperare il valore di configurazione nello script dell&#39;azione, leggere le proprietà della risorsa corrente utilizzando il codice seguente. Allo stesso modo, potete leggere gli altri file di configurazione.
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 
    `String mailTo = properties.get("mailTo");`
 
-   Infine, utilizzate l&#39;API CQ Mail per inviare l&#39;e-mail. Utilizzate la classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) per creare l&#39;oggetto Email come illustrato di seguito:
+   Infine, utilizzate l&#39;API di CQ Mail per inviare l&#39;e-mail. Utilizzate la classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) per creare l&#39;oggetto Email come illustrato di seguito:
 
    >[!NOTE]
    >
