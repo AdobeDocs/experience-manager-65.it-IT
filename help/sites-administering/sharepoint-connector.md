@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
 source-wordcount: '1599'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -74,7 +74,7 @@ Il connettore supporta le seguenti funzionalità:
 
 * Versioni AEM:
 
-   * AEM 6.5, 6.4, 6.3
+   * AEM 6.4, 6.3
 
 * Versioni di Microsoft SharePoint:
 
@@ -131,9 +131,9 @@ Per impostazione predefinita, il connettore espone un&#39;unica area di lavoro J
 Il connettore può essere configurato anche per più aree di lavoro. In questo caso, ogni area di lavoro è associata all&#39;URL del rispettivo server SharePoint esposto attraverso l&#39;area di lavoro. Per aggiungere un’area di lavoro, aggiungete una definizione dell’area di lavoro al parametro Workspaces. Una definizione di area di lavoro ha il formato seguente:
 `<name>`= `<url>` dove`<name>``<url>` è il nome dell&#39;area di lavoro JCR ed è l&#39;URL del server di SharePoint per tale area di lavoro.
 
-In AEM, eseguite un altro passaggio oltre ai passaggi di configurazione indicati sopra. Consente di elencare il bundle &#39;**com.day.cq.dam.cq-dam-jcr-conneccr**&#39;.
+In AEM, eseguite un altro passaggio oltre ai passaggi di configurazione indicati sopra.  Elenco consentiti il bundle &#39;**com.day.cq.dam.cq-dam-jcr-Connectors**&#39;.
 
-Per consentire la creazione di pacchetti di elenchi in AEM, effettuate le seguenti operazioni:
+Per  pacchetti di elenchi consentiti in AEM, effettuate le seguenti operazioni:
 
 1. Andate alla console di gestione OSGi: http://localhost:4502/system/console/configMgr.
 1. Cercate il servizio &quot;Apache Sling Login Admin Whitelist&quot;.
