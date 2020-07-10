@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -115,34 +115,6 @@ Questi consentono di tenere traccia degli stati e delle azioni, ad esempio dove 
 Per riferimento, potete dare un&#39;occhiata al codice nell&#39;app Geometrixx Outdoors. Nell’app Geometrixx Outdoors tutte le operazioni di navigazione delle pagine vengono tracciate mediante il metodo ADB.trackState(). Per ulteriori dettagli, consultate il codice sorgente /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 Tramite la strumentazione del codice sorgente con queste chiamate di metodo è possibile raccogliere metriche complete rispetto all’applicazione.
-
-### Test  tracciamento Analytics con Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-<!--NOTE TO WRITER: Bloodhound is no longer available.-->
-
-Facoltativamente, prima di distribuire in produzione potete utilizzare lo strumento Adobe [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) per verificare la configurazione dell&#39;analisi. Per testare la configurazione di analisi dovrete modificare il file ADBMobileConfig.json in modo che punti al server in cui è in esecuzione Bloodhound invece che al server Analytics . Per apportare questa modifica, dal file ADBMobileConfig.json modificate la voce seguente.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Cambia per corrispondere a questa voce:
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-Questo reindirizzerà tutti i dati raccolti dal plugin AMS a Bloodhound in modo da poter visualizzare i risultati.
 
 #### Proprietà per la connessione ad AMS {#properties-for-connecting-to-ams}
 
