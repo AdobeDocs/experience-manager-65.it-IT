@@ -1,19 +1,22 @@
 ---
 title: Procedura dettagliata sul sito di riferimento We.Gov
 seo-title: Procedura dettagliata sul sito di riferimento We.Gov
-description: Utilizza utenti e gruppi fittizi per eseguire attività AEM Forms tramite il pacchetto dimostrativo We.Gov.
-seo-description: Utilizza utenti e gruppi fittizi per eseguire attività AEM Forms tramite il pacchetto dimostrativo We.Gov.
+description: Utilizzate utenti e gruppi fittizi per eseguire attività AEM Forms mediante il pacchetto dimostrativo We.Gov.
+seo-description: Utilizzate utenti e gruppi fittizi per eseguire attività AEM Forms mediante il pacchetto dimostrativo We.Gov.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 29b1a151a6c284fcb0bf01de425dfba79f5943c2
+workflow-type: tm+mt
+source-wordcount: '2422'
+ht-degree: 1%
 
 ---
 
 
-# Procedura dettagliata sul sito di riferimento We.Gov{#we-gov-reference-site-walkthrough}
+# Procedura dettagliata sul sito di riferimento We.Gov {#we-gov-reference-site-walkthrough}
 
 ## Prerequisiti {#pre-requisites}
 
@@ -23,17 +26,25 @@ Configurate il sito di riferimento come descritto in [Impostazione e configurazi
 
 * AEM Forms
 
+   * Conversione moduli automatica
+   * Authoring  
+   * Modelli dati modulo/Origini dati
+
+* AEM Forms
+
    * Acquisizione dati
-   * Integrazione dei dati (MS Dynamics)
-   * Adobe Sign
+   * (Facoltativo) Integrazione dei dati (MS Dynamics)
+   * (Facoltativo) Adobe Sign
 
 * Flusso di lavoro
-* Comunicazione con i clienti
+* Notifiche e-mail
+* (Facoltativo) Comunicazione con i clienti
 
    * Stampa canale
    * Canale web
 
 * Adobe Analytics
+* Integrazioni origini dati
 
 ### Fictitious users and groups {#fictitious-users-and-groups}
 
@@ -87,8 +98,73 @@ Sono inclusi anche i seguenti gruppi:
 1. **Client** e-mail: Metodo preferito per visualizzare le e-mail (Gmail, Outlook)
 1. **CTA**: Invito all&#39;azione
 1. **Naviga**: Per individuare un punto di riferimento specifico nella pagina del browser.
+1. **AFC**: Conversione automatizzata dei moduli
 
-## Demo della vista mobile {#mobile-view-demo}
+## Conversione automatizzata dei moduli (Camila) {#automated-forms-conversion}
+
+**Questa sezione**: Camila, il lead CX, dispone di un vecchio modulo basato su PDF, che è stato utilizzato come parte di un processo basato su carta. Nell&#39;ambito di un&#39;attività di modernizzazione, l&#39;utente desidera utilizzare il modulo PDF per creare automaticamente nuovi moduli adattivi moderni.
+
+### Conversione automatizzata dei moduli - We.Gov (Camila) {#automated-forms-conversion-wegov}
+
+1. Andate a *https://&lt;aemserver>:&lt;porta>/aem/start.html*
+
+1. Effettua l’accesso con:
+   * **Utente**: camila.santos
+   * **Password**: password
+1. Dalla pagina principale selezionare Moduli > Moduli e documenti > AEM Forms We.gov Forms > AFC.
+1. Camila carica il PDF in AEM Forms.
+
+   ![Carica modulo](assets/aftia-upload-form.jpg)
+
+1. Camilla seleziona quindi un&#39;attività di conversione moduli automatizzati
+
+   >[!NOTE]
+   >
+   >Le impostazioni in AFC sono preconfigurate per l&#39;utente finale, il che significa che non devono essere modificate.
+
+   * **Facoltativo**: Se si desidera utilizzare il tema Accessible Ultramarine, fare clic sul tema Specificare un modulo adattivo e selezionare il tema Accessible-Ultramarine che viene visualizzato nell&#39;elenco delle opzioni.
+
+   ![Tema ultramarino](assets/aftia-upload-conversion-settings.jpg)
+
+   ![Avvia conversione](assets/aftia-start-conversion.jpg)
+
+1. Camilla quindi esamina il modulo e verifica che tutti i campi siano presenti
+
+   ![Verifica conversione](assets/aftia-review-conversion.jpg)
+
+1. Camilla inizia quindi a modificare il modulo selezionato Pannello principale > Modifica (chiave inglese) > Seleziona schede in alto dal menu a discesa Layout pannello > Seleziona la casella di controllo.
+
+   ![Proprietà revisione](assets/aftia-review-properties.jpg)
+
+1. Camilla aggiunge quindi tutte le modifiche necessarie CSS e sul campo per produrre il prodotto finale.
+
+   ![Aggiungi CSS](assets/aftia-add-css.jpg)
+
+### Modello dati modulo e origini dati (Camila) {#data-sources}
+
+**Questa sezione**: Una volta convertito il documento e prodotto un modulo adattivo, Camila deve collegare il modulo adattivo a un&#39;origine dati.
+
+1. Camila apre le Proprietà sul modulo convertito in Conversione [automatizzata di moduli - We.Gov](#automated-forms-conversion-wegov).
+
+1. Camila seleziona quindi Modello modulo > Seleziona modello dati modulo dal menu a discesa Seleziona da > Seleziona FDM iscrizione We.gov dall&#39;elenco di opzioni.
+
+1. Fate clic sul pulsante Salva e chiudi.
+
+   ![Selezione FDM](assets/aftia-select-fdm.jpg)
+
+### Test di accessibilità del modulo (Camila) {#form-accessibility-testing}
+
+Camila inoltre verifica che i contenuti creati siano creati correttamente e completamente accessibili in base agli standard aziendali.
+
+1. Camila apre il modulo We.Gov compilato.
+
+1. Apre la scheda Audit in Chrome Developer Tool.
+
+1. Esegue un controllo di accessibilità per convalidare il modulo adattivo.
+
+   ![Controllo accesso facilitato](assets/aftia-accessibility.jpg)
+
+## Demo Di Visualizzazione Mobile Modulo Adattivo (Aya) {#mobile-view-demo}
 
 **Questa sezione deve essere eseguita prima della dimostrazione.**
 
@@ -102,13 +178,13 @@ Sono inclusi anche i seguenti gruppi:
 
 1. Ridimensionate nuovamente la finestra del browser o utilizzate l&#39;emulatore del browser per replicare le dimensioni di un dispositivo mobile.
 
-### Aya User Story (sito web We.Gov) {#aya-user-story-we-gov-website}
+### Sito Web We.Gov (Aya) {#aya-user-story-we-gov-website}
 
 ![Utente fittizio](/help/forms/using/assets/aya_tan_new-1.png)
 
 **Questa sezione**: Aya è un cittadino. Da un&#39;amica ha sentito che potrebbe essere idonea a ricevere un Servizio da un&#39;agenzia governativa. Aya naviga sul sito Web We.Gov dal suo cellulare per saperne di più sui servizi a cui è idonea.
 
-### Aya User Story (Pre-screener di We.Gov) {#aya-user-story-we-gov-pre-screener}
+### Pre-Screener We.Gov (Aya) {#aya-user-story-we-gov-pre-screener}
 
 Aya risponde ad alcune domande per confermare la sua idoneità compilando un breve modulo adattivo sul suo cellulare.
 
@@ -125,11 +201,11 @@ Aya risponde ad alcune domande per confermare la sua idoneità compilando un bre
 
    ![Collegamento Applica ora](/help/forms/using/assets/apply_now_link.png)
 
-### Storia utente Aya (modulo adattivo We.Gov) {#aya-user-story-we-gov-adaptive-form}
+### Modulo Adattivo We.Gov (Aya) {#aya-user-story-we-gov-adaptive-form}
 
 Aya scopre di essere idonea e inizia a compilare la sua applicazione per richiedere il servizio sul suo dispositivo mobile.
 
-È necessario rivedere alcuni documenti a casa prima di poter completare l&#39;applicazione di richiesta del servizio. Salva ed esce dall&#39;applicazione.
+È necessario rivedere alcuni documenti a casa prima di poter completare l&#39;applicazione di richiesta del servizio. Salva ed esce dall’applicazione dal suo dispositivo mobile.
 
 **Istruzioni utente:**
 
@@ -176,7 +252,7 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
 **Questa sezione:** Tornando a casa, Aya ha trovato le informazioni di cui aveva bisogno e riprende l&#39;applicazione dal suo desktop. Aya passa al portale dei moduli online per riprendere l&#39;applicazione. Con una semplice personalizzazione, le agenzie possono anche generare automaticamente e inviare via e-mail un collegamento per riprendere l&#39;applicazione.
 
-### Storia utente Aya (modulo adattivo continuo) {#aya-user-story-continued-adaptive-form}
+### Modulo Adattivo Continuato (Aya) {#aya-user-story-continued-adaptive-form}
 
 **Istruzioni utente:**
 
@@ -198,11 +274,16 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
    ![Invio del modulo adattivo](/help/forms/using/assets/submit_adaptive_form.png)
 
-   Dopo l&#39;invio, Aya riceve un&#39;e-mail che apre ed è pronta a firmare elettronicamente con Adobe Sign.
+   >[!NOTE]
+   >
+   >Quando Aya riempie il campo del numero di telefono deve riempirlo come numero continuo di 11 cifre senza trattini, spazi o trattini.
+
+   Dopo l&#39;invio di Aya riceve una pagina di ringraziamento. Facoltativamente, riceverà anche un messaggio e-mail che potrà aprire per firmare elettronicamente il documento del record con Adobe Sign.
+
+### Facoltativo: Adobe Sign (Aya) {#adobe-sign}
 
 **Istruzioni utente:**
 
-1. Dopo l’invio viene visualizzata una pagina di ringraziamento.
 1. Accedi al client e-mail e trova il messaggio e-mail di Adobe Sign.
 1. Fare clic sul collegamento ad Adobe Sign.
 
@@ -223,7 +304,7 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
 **Questa sezione:** George è un analista d&#39;affari dell&#39;agenzia governativa Aya, che chiede un servizio. George dispone di un&#39;unica dashboard in cui può vedere tutte le applicazioni di richiesta di servizio che gli sono state assegnate per la revisione.
 
-### George User Story (inbox AEM) {#george-user-story-aem-inbox}
+### Casella in entrata AEM (George) {#george-user-story-aem-inbox}
 
 **Istruzioni utente:**
 
@@ -247,7 +328,7 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
 
    ![Revisione dell&#39;applicazione dei vantaggi per la salute](/help/forms/using/assets/health_benefits.png)
 
-### George User Story (inbox AEM e MS Dynamics) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Facoltativo: AEM Inbox &amp; MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Grazie alle integrazioni di dati e ai flussi di lavoro automatizzati, viene visualizzata l&#39;applicazione di Aya, insieme a un record CRM che è stato generato automaticamente al momento dell&#39;invio dei dati.
 
@@ -263,7 +344,7 @@ Grazie alle integrazioni di dati e ai flussi di lavoro automatizzati, viene visu
 
    ![Record MS Dynamics](/help/forms/using/assets/ms_dynamics.png)
 
-### George User Story (torna alla inbox di AEM) {#george-user-story-back-to-aem-inbox}
+### Torna alla inbox AEM (George) {#george-user-story-back-to-aem-inbox}
 
 George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizzato esistente, ad Aya viene inviato anche un messaggio e-mail di conferma.
 
@@ -282,7 +363,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
 **Questa sezione:** Camila il lead CX ha organizzato una telefonata di benvenuto con Aya per spiegare come utilizzare i servizi governativi per i quali è stata approvata.
 
-### Storia utente di Camila (inbox AEM e MS Dynamics) {#camila-user-story-aem-inbox-ms-dynamics}
+### (Facoltativo) Inbox AEM e MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Istruzioni utente:**
 
@@ -304,9 +385,9 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 1. Fare clic su &quot;**Visualizza tutto**&quot; per passare alla casella in entrata.
 1. Dalla casella in entrata, aprire l&#39;ultima operazione &quot;**Nuova approvazione** contatto&quot;.
 
-   ![Nuova approvazione contatto](/help/forms/using/assets/new_contact_approval.png)
+![Nuova approvazione contatto](/help/forms/using/assets/new_contact_approval.png)
 
-   **Istruzioni utente:**
+**(Facoltativo) Istruzioni utente:**
 
 1. Aprire ed esaminare il modulo adattivo di sola lettura.
 1. Fare clic sul pulsante &quot;**Open MS Dynamics**&quot; per aprire il record MS Dynamics in una nuova finestra.
@@ -324,18 +405,18 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
    ![Scheda](/help/forms/using/assets/activities_tab.png) Attività ![Conferma nuovo contatto](/help/forms/using/assets/confirm_new_contact.png)
 
-## Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
+## (Facoltativo) Kit Di Benvenuto Cittadino (Aya) {#welcome-kit-citizen-aya}
 
 **Questa sezione:** Aya riceve un messaggio e-mail contenente un collegamento a una comunicazione interattiva che riepiloga i vantaggi e include anche campi modulo da compilare. Con l&#39;indicazione dei vantaggi PDF allegata e il collegamento alla lettera di comunicazione interattiva nella posta (con lo stesso tema/marchio della comunicazione interattiva).
 
-### Aya User Story (client e-mail) {#aya-user-story-email-client}
+### Notifica Client E-Mail (Aya) {#aya-user-story-email-client}
 
 **Istruzioni utente:**
 
 1. Individuate e aprite il messaggio e-mail del kit di benvenuto.
 1. Scorrete fino all’allegato PDF nella parte inferiore della pagina.
 1. Fare clic per aprire l&#39;allegato PDF.
-1. Scorri verso l&#39;alto nel client di posta elettronica e fai clic su &quot;**Visualizza kit di benvenuto online**&quot;.
+1. Scorri verso l&#39;alto nel tuo client di posta elettronica e clicca su &quot;**Visualizza kit di benvenuto online**&quot;.
 
    1. Viene aperta la versione per il canale Web dello stesso documento.
 
@@ -353,7 +434,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
 **Questa sezione:** Camila pianifica anche un promemoria di comunicazione così un anno dopo. (Procedura del flusso di lavoro che automatizza/esegue e invia per e-mail).
 
-### Aya User Story (client e-mail) {#aya-user-story-email-client-1}
+### Notifica Client E-Mail (Aya) {#aya-user-story-email-client-updated}
 
 **Istruzioni utente:**
 
@@ -362,30 +443,75 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 1. Fare clic sul pulsante &quot;**Invia una nuova applicazione**&quot; per aprire il modulo adattivo.
 
    1. Questa sezione viene lasciata intenzionalmente vuota per supportare la precompilazione dei dati nella fase 2.
+
    ![E-mail promemoria rinnovamento](/help/forms/using/assets/renewal_reminder_email.png)
 
-## Lead CX di Analytics (Camila) {#analytics-cx-lead-camila}
+## (Facoltativo) Modello dati modulo (Camila) {#form-data-model}
+
+**Questa sezione**: Camila passa alle integrazioni dei dati AEM Forms in cui può eseguire un rapido test per verificare che le informazioni inviate all&#39;origine dati esterna tramite l&#39;integrazione dei modelli di dati modulo siano effettivamente presenti.
+
+### Modello dati modulo (Camila) {#form-data-model-camila}
+
+**Questa sezione**: Camila passa alla pagina Origini dati per convalidare i dati replicati dal server all&#39;interno del database Derby.
+
+1. Una volta completata l&#39;esperienza utente e l&#39;invio dell&#39;utente, Camila passa alla scheda Origini dati all&#39;interno dei AEM Forms (**Forms** > Integrazioni **** dati)
+
+1. Camila seleziona quindi AEM Forms **We.gov FDM** e modifica il FDM **di iscrizione** We.gov.
+
+1. Camila seleziona quindi **Contatto** > Servizio **di** lettura da testare.
+
+   ![Servizio lettura contatti](assets/aftia-contact-read-service.jpg)
+
+1. Camila fornisce quindi al servizio di prova un ID contatto e fa clic sul pulsante Test.
+
+   ![Servizio lettura contatti](assets/aftia-test-service.jpg)
+
+1. Camila può quindi verificare che i dati siano stati inseriti correttamente nell&#39;origine dati.
+
+   * I dati all&#39;interno di Derby DS sono simili al seguente formato:
+
+   ```xml
+      [
+         {
+         "ADDRESS_COUNTRY": "USA",
+         "LAST_NAME": "Tan",
+         "ADDRESS_CITY": "New York",
+         "FIRST_NAME": "Aya",
+         "ADDRESS_STATE": "AL",
+         "ADDRESS_LINE1": "123 Street crescent",
+         "GENDER_CODE": "2",
+         "ADDRESS_LINE2": "123 Street crescent",
+         "ADDRESS_POSTAL_CODE": "90210",
+         "BIRTH_DATE": "1991-12-12",
+         "CONTACT_ID": 1,
+         "MIDDLE_NAME": "M",
+         "HAS_CHILDREN_CODE": "0"
+         }
+   ]
+   ```
+
+## (Facoltativo)  Analytics (Camila) {#analytics-cx-lead-camila}
 
 **Questa sezione:** Camila passa a un dashboard in cui può vedere i KPI dell&#39;agenzia, come la percentuale di cittadini che iniziano a compilare un modulo di richiesta di servizio e abbandonano, la durata media del tempo che trascorre tra la richiesta di invio e la risposta di approvazione/rifiuto e le statistiche di coinvolgimento per i manuali sui benefici che ha inviato ai cittadini.
 
-### Recensioni di Camila Sites reporting (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
+### Rapporti su siti Adobe  Analytics (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Andate a *https://&lt;aemserver>:&lt;porta>/sites.html/content*
-1. Selezionate il sito Web &quot;**AEM Forms We.Gov Site**&quot; per visualizzare le pagine del sito.
-1. Selezionate una delle pagine del sito (ad esempio Home) e scegliete &quot;**Analytics &amp; Recommendations**&quot;.
+1. Selezionate &quot;**AEM Forms We.Gov Site**&quot; per visualizzare le pagine del sito.
+1. Selezionate una delle pagine del sito (ad esempio Home) e scegliete &quot;**Analytics e Recommendations**&quot;.
 
-   ![Analisi e raccomandazione](/help/forms/using/assets/analytics_recommendation.jpg)
+   ![Analytics e Recommendations](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. In questa pagina, vedrai le informazioni recuperate da Adobe Analytics relative alla pagina Siti AEM (NOTA: in base alla progettazione, queste informazioni vengono aggiornate periodicamente da Adobe Analytics e non vengono visualizzate in tempo reale).
+1. In questa pagina verranno visualizzate le informazioni recuperate da Adobe  Analytics relative alla pagina dei AEM Sites (NOTA: in base alla progettazione, queste informazioni vengono aggiornate periodicamente da Adobe  Analytics e non vengono visualizzate in tempo reale).
 
-   ![Metriche chiave di Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
+   ![Metriche chiave di Adobe  Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
 1. Tornando alla pagina di visualizzazione della pagina (a cui si accede al punto 3.3), è possibile visualizzare anche le informazioni di visualizzazione della pagina modificando l&#39;impostazione di visualizzazione per visualizzare gli elementi nella &quot;Vista **** a elenco&quot;.
 1. Individuate il menu a discesa &quot;**Visualizza**&quot; e selezionate &quot;Visualizzazione **** elenco&quot;.
 
    ![Visualizzazione a elenco nel menu a discesa Visualizza](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Nello stesso menu, selezionate &quot;**Visualizza impostazione**&quot; e selezionate le colonne da visualizzare nella sezione &quot;**Analytics**&quot;.
+1. Nello stesso menu, selezionare &quot;**Visualizza impostazione**&quot; e selezionare le colonne da visualizzare nella sezione &quot;**Analytics**&quot;.
 
    ![Configurare la visualizzazione delle colonne](/help/forms/using/assets/view_setting_analytics.jpg)
 
@@ -393,17 +519,17 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 
    ![Nuove colonne disponibili](/help/forms/using/assets/new_columns_available.jpg)
 
-### Camila esamina i rapporti sui moduli (We.Gov Adobe Analytics) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
+### Rapporti su Adobe  Analytics Forms (Camila) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
 1. Accedi a
 
    *https://&lt;aemserver>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Selezionate il modulo adattivo &quot;**Iscrizione applicazione per benefici** sanitari&quot; e selezionate l&#39;opzione &quot;Rapporto **** analisi&quot;.
+1. Selezionate il modulo adattivo &quot;**Iscrizione applicazione per benefici** sanitari&quot; e selezionate l&#39;opzione &quot;**rapporto** Analytics&quot;.
 
    ![Domanda di iscrizione per i benefici per la salute](/help/forms/using/assets/analytics_report_benefits.jpg)
 
-1. Attendete che la pagina venga caricata e visualizzate i dati del rapporto di Analytics.
+1. Attendete che la pagina venga caricata e visualizzate i dati del report Analytics .
 
-   ![Dati report di Analytics](/help/forms/using/assets/analytics_report_data_updated.jpg)
+   ![dati report Analytics](/help/forms/using/assets/analytics_report_data_updated.jpg)
 
