@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Serv
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
-source-wordcount: '4512'
+source-wordcount: '4529'
 ht-degree: 7%
 
 ---
@@ -95,7 +95,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Funzionalità (o scopo dell&#39;azione) delle icone delle informazioni (per uso, impression e clic) nella vista  Insights ora vengono annunciate correttamente dagli assistenti vocali (NPR-33513).
 
-* I campi modulo di sola lettura (ad esempio i campi disabilitati nella scheda  Base delle [!UICONTROL proprietà]della risorsa) sono ora attivabili mediante la tastiera (NPR-33493, CQ-4273031).
+* Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard (NPR-33493, CQ-4273031).
 
 * Le etichette in vari campi di input sono ora etichette permanenti (quindi accessibili) e non solo etichette segnaposto, scomparse al momento dell&#39;immissione del testo (NPR-33475).
 
@@ -111,7 +111,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Gli stati espansi e compressi della finestra di dialogo [!UICONTROL Tag] in [!UICONTROL Proprietà] risorsa e nella barra di navigazione a sinistra (nell’interfaccia utente delle risorse) ora vengono annunciati correttamente dagli assistenti vocali (NPR-33396).
 
-* I titoli di tutte le pagine visualizzate su [!DNL Adobe Experience Manager] Risorse sono ora univoci (NPR-33343).
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique (NPR-33343).
 
 * Quando si naviga nella struttura ad albero, diversi elementi del controllo della visualizzazione ad albero vengono ora correttamente annunciati dagli assistenti vocali (NPR-33304).
 
@@ -127,7 +127,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Le informazioni che le righe nella tabella di visualizzazione a elenco sono selezionabili vengono ora comunicate agli utenti dell&#39;assistente vocale quando sono attivate dalla tastiera. Quando un puntatore passa sulle righe, gli assistenti vocali annunciano le informazioni (NPR-33234).
 
-* Le opzioni (con [!UICONTROL x]) per rimuovere ciascuno dei tag selezionati sotto il campo [!UICONTROL Tag] nella scheda [!UICONTROL Base] di [!UICONTROL Proprietà] sono ora accessibili agli assistenti vocali (NPR-33206).
+* Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers (NPR-33206).
 
 * Il selettore della data del calendario è ora attivabile e utilizzabile tramite la tastiera da parte degli utenti di utilità di lettura dello schermo e degli utenti di tastiera con vista (NPR-33200).
 
@@ -348,7 +348,7 @@ Per installare Service Pack in un&#39;istanza  Adobe Experience Manager 6.5 esis
 
 >[!NOTE]
 >
->Durante l&#39;installazione del service pack talvolta si esce dalla finestra di dialogo dell&#39;interfaccia utente di Package Manager. Adobe consiglia di attendere la stabilizzazione dei registri di errore prima di accedere alla distribuzione. Attendete i registri specifici relativi alla disinstallazione del pacchetto di aggiornamento prima di essere certi che le installazioni abbiano esito positivo. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
+>La finestra di dialogo nell&#39;interfaccia utente di Package Manager talvolta si chiude durante l&#39;installazione del service pack. Adobe consiglia di attendere la stabilizzazione dei registri di errore prima di accedere alla distribuzione. Attendete i registri specifici relativi alla disinstallazione del pacchetto di aggiornamento prima di essere certi che le installazioni abbiano esito positivo. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Installazione automatica**
 
@@ -415,6 +415,7 @@ Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzio
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
 | Integrations (Integrazioni) | La schermata **[!UICONTROL AEM cloud services consenso]** è obsoleta. Con l’integrazione AEM e Target aggiornata in AEM 6.5 per supportare l’API Target Standard, che utilizza l’autenticazione tramite Adobe IMS e I/O, e con il ruolo crescente di Adobe Launch nella strumentazione delle pagine AEM per l’analisi e la personalizzazione, la procedura guidata di consenso è diventata funzionalmente irrilevante. | Configurate le connessioni di sistema, l&#39;autenticazione Adobe IMS e le integrazioni Adobe I/O tramite i rispettivi AEM cloud services. |
+| Connettori | Il connettore Adobe JCR per Microsoft SharePoint 2010 e Microsoft SharePoint 2013 è obsoleto per AEM 6.5. | N/D |
 
 ## Problemi noti {#known-issues}
 
