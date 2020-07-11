@@ -9,29 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 0%
 
 ---
 
 
 # Configurare il progetto Android Studio e creare l&#39;app Android {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Questo articolo è destinato alla creazione di AEM Forms App 6.3.1.1 e versioni successive. Per creare un&#39;app dal codice sorgente del codice sorgente dell&#39;app AEM Forms 6.3, consultate [Configurare il progetto Eclipse e creare l&#39;app](/help/forms/using/setup-eclipse-project-build-installer.md)Android™.
+Questo articolo è destinato alla creazione di AEM Forms App 6.3.1.1 e versioni successive. Per creare un&#39;app dal codice sorgente del codice sorgente dell&#39;app AEM Forms 6.3, vedi [Configurare il progetto Eclipse e creare l&#39;app](/help/forms/using/setup-eclipse-project-build-installer.md)Android™.
 
-AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` è parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla condivisione del pacchetto.
+AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` è una parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione del software.
 
-Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua i seguenti passaggi:
+Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua le seguenti operazioni:
 
-1. Passa alla condivisione del pacchetto
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Scaricate il pacchetto di origine. Quando scaricate il pacchetto, questo viene aggiunto nel gestore pacchetti di AEM Forms.
-1. Dopo il download, passa a: `https://<server>:<port>/crx/packmgr/index.jsp`e installare `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Per scaricare l’archivio del codice sorgente, aprite `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.
-
-   Il pacchetto di origine viene scaricato sul dispositivo.
+1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Nella sezione **[!UICONTROL Filtri]** :
+   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
+1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
+1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Select the package and click **[!UICONTROL Install]**.
 
 Nell’immagine seguente sono visualizzati i contenuti estratti dell’ `adobe-lc-mobileworkspace-src-<version>.zip`.
 
@@ -82,7 +83,7 @@ L’immagine seguente mostra la struttura di directory della `android`cartella n
 1. In Android™ Studio, selezionate **[!UICONTROL Importa progetto (Eclipse ADT, Gradle, ecc.)]**.
 1. In Project Explorer, selezionate la directory principale del progetto da generare nella casella di testo Directory **** principale:
 
-   **Per gli utenti Mac:** Home [_]utente/Progetti/MobileWorkspace/src/android
+   **Per gli utenti Mac:** [User_Home]/Projects/MobileWorkspace/src/android
 
    **Per gli utenti di Windows®:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
