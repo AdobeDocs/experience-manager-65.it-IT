@@ -1,15 +1,18 @@
 ---
 title: Temi di riferimento
 seo-title: Temi di riferimento
-description: In AEM Forms sono disponibili temi per i moduli adattivi che è possibile ottenere dalla condivisione di pacchetti e che è possibile utilizzare per formattare un modulo.
-seo-description: In AEM Forms sono disponibili temi per i moduli adattivi che è possibile ottenere dalla condivisione di pacchetti e che è possibile utilizzare per formattare un modulo.
+description: I AEM Forms forniscono i temi dei moduli adattivi che è possibile ottenere dalla distribuzione software e che è possibile utilizzare per formattare un modulo.
+seo-description: I AEM Forms forniscono i temi dei moduli adattivi che è possibile ottenere dalla distribuzione software e che è possibile utilizzare per formattare un modulo.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
@@ -24,10 +27,10 @@ source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
 * Libertà
 * Ultramarina
 * Urbane
-* Standard di progettazione Web statunitensi
+* Standard di web design degli Stati Uniti
 * Tranquillo
 
-Ciascun tema contiene uno stile esclusivo ed elegante che consente di creare deliziosi moduli adattivi per gli utenti. Contiene uno stile univoco per selettori quali pannello, casella di testo, casella numerica, pulsante di scelta, tabella e switch. Gli stili in questi temi sono basati sui requisiti. Ad esempio, in uno scenario particolare è necessario un tema minimalista con font puliti. Il tema Liberty consente di ottenere questo look.
+Ciascun tema contiene uno stile esclusivo ed elegante che consente di creare deliziosi moduli adattivi per gli utenti. Contiene uno stile univoco per i selettori quali pannello, casella di testo, casella numerica, pulsante di scelta, tabella e switch. Gli stili in questi temi sono basati sui requisiti. Ad esempio, in uno scenario particolare è necessario un tema minimalista con font puliti. Il tema Liberty consente di ottenere questo look.
 
 ![Temi di riferimento](assets/ref-themes.png)
 
@@ -37,7 +40,7 @@ Per ulteriori informazioni sull&#39;installazione del pacchetto, consultate [Com
 
 ## Berile {#beryl}
 
-Il tema Beryl è utilizzato dal modulo adattivo We.Gov, e enfatizza l&#39;uso di immagine di sfondo, trasparenza e icone grandi e piatte. Nella schermata seguente, è possibile vedere l&#39;aspetto del tema Beryl e come può migliorare lo stile del modulo.
+Il tema Beryl è utilizzato dalla forma adattiva We.Gov, e enfatizza l&#39;uso di immagine di sfondo, trasparenza e icone grandi e piatte. Nella schermata seguente, è possibile vedere l&#39;aspetto del tema Beryl e come può migliorare lo stile del modulo.
 
 ![Tema di Beryl](assets/beryl.png)
 
@@ -49,7 +52,7 @@ Il tema Beryl è utilizzato dal modulo adattivo We.Gov, e enfatizza l&#39;uso di
 
 Il tema Exec evita riempimenti di sfondo pieni per enfatizzare i componenti del modulo. Selezionando e facendo clic sui componenti, i colori dei font vengono modificati. Rispetto al tema canvas predefinito, il colore del font del testo nella scheda selezionata diventa blu scuro. I pulsanti di navigazione e di invio sono diversi dal tema Beryl.
 
-![Titolo Exec](assets/exec.png)
+![Exec, tema](assets/exec.png)
 
 <!--[Click to enlarge
 
@@ -103,7 +106,7 @@ Il tema Urbane enfatizza un aspetto minimalista e funzionale per il modulo. Quan
 
 ](assets/urbane-1.png)-->
 
-## Standard di progettazione Web statunitensi {#u-s-web-design-standards}
+## Standard di web design degli Stati Uniti {#u-s-web-design-standards}
 
 Il tema Standard di Progettazione Web degli Stati Uniti, come suggerisce il nome, utilizza i tipi di carattere e gli stili descritti nel sito Web Microsoft Design Standards. Lo standard web è utilizzato dalle organizzazioni federali per creare esperienze Web coerenti tra i siti web delle amministrazioni federali.
 
