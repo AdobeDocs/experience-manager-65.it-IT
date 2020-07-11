@@ -10,7 +10,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
 
 1. Aggiorna l’istanza AEM esistente a AEM 6.5. I passaggi sono elencati di seguito:
 
-   1. Installa il service pack e le patch più recenti per AEM 6.3 Forms o AEM 6.4 Forms. Per informazioni dettagliate, consultate [AEM SustMaintenance Hub](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+   1. Installa il service pack e le patch più recenti per AEM 6.3 Forms o AEM 6.4 Forms. Per informazioni dettagliate, consultate [AEM SustMaintenance Hub](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html).
    1. Preparare l’istanza di origine per l’aggiornamento. Per i passaggi dettagliati, consultate [Aggiornamento ad AEM 6.5](/help/sites-deploying/upgrade.md).
    1. Scaricate la Guida rapida [di](/help/sites-deploying/deploy.md#getting%20the%20software)AEM 6.5.
    1. **(Solo installazioni basate su Unix/Linux)** Se utilizzate UNIX o Linux come sistema operativo sottostante, aprite la finestra del terminale, individuate la cartella contenente crx-quickstart ed eseguite il comando seguente:
@@ -42,26 +45,28 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
 
 1. Installare il pacchetto del componente aggiuntivo AEM Forms. I passaggi sono elencati di seguito:
 
-   1. Accedete al server AEM come amministratore e aprite la condivisione del pacchetto. L&#39;URL predefinito per la condivisione del pacchetto è `https://'[server]:[port]'/crx/packageshare`.
-   1. Nella condivisione dei pacchetti, cercate i pacchetti **aggiuntivi** AEM 6.5 Forms, fate clic sul pacchetto applicabile al sistema operativo in uso e fate clic su **Scarica**. Leggere e accettare il contratto di licenza e fare clic su **OK**. Il download viene avviato. Una volta scaricata, accanto al pacchetto viene visualizzata la parola **Download** .
+   1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
+   1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+   1. Nella sezione **[!UICONTROL Filtri]** :
+      1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+      1. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
+   1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
+   1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+   1. Select the package and click **[!UICONTROL Install]**.
 
-      In alternativa, potete anche utilizzare i collegamenti ipertestuali elencati nelle release [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms per scaricare manualmente un pacchetto.
-
-   1. Al termine del download, fate clic su **Scaricato**. Viene reindirizzato a Gestione pacchetti. In Gestione pacchetti, eseguite una ricerca nel pacchetto scaricato e fate clic su **Installa**.
-
-      Se scaricate manualmente il pacchetto utilizzando il collegamento diretto elencato nelle release [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)AEM Forms, quindi aprite AEM Package Manager, fate clic su **Carica pacchetto**, selezionate il pacchetto scaricato e fate clic su Carica. Dopo aver caricato il pacchetto, fate clic sul nome del pacchetto e fate clic su **Installa.**
+      Potete anche scaricare il pacchetto utilizzando il collegamento diretto elencato nell&#39;articolo delle release [](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 
       >[!NOTE]
       >
-      >Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare il server AEM Forms, attendete che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file &lt;crx-repository>/error.log e che il registro sia stabile. Inoltre, alcuni pacchetti possono rimanere nello stato di installazione. Potete ignorare lo stato di questi pacchetti in tutta sicurezza.
+      >Dopo l&#39;installazione del pacchetto, viene richiesto di riavviare l&#39;istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file &lt;crx-repository>/error.log e il registro sia stabile. Inoltre, alcuni pacchetti possono rimanere nello stato di installazione. Potete ignorare lo stato di questi pacchetti in tutta sicurezza.
 
-   1. Riavviate l’istanza di AEM.
+1. Riavviate l’istanza di AEM.
 
 1. Eseguire attività post-installazione.
 
    * **Esegui utility di migrazione**
 
-      L’utility di migrazione rende compatibili i moduli adattivi e le risorse per la gestione della corrispondenza delle versioni precedenti con i moduli AEM 6.5. Potete scaricare l&#39;utility dalla condivisione di pacchetti AEM. Per informazioni dettagliate su come configurare e utilizzare l’utility di migrazione, consultate Utility [di](../../forms/using/migration-utility.md)migrazione.
+      L’utility di migrazione rende compatibili i moduli adattivi e le risorse per la gestione della corrispondenza delle versioni precedenti con i moduli AEM 6.5. Potete scaricare l&#39;utility da Distribuzione software AEM. Per informazioni dettagliate su come configurare e utilizzare l’utility di migrazione, consultate Utility [di](../../forms/using/migration-utility.md)migrazione.
 
       Se si utilizza [Sample per integrare il componente](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) bozze e invii con il database e per eseguire l&#39;aggiornamento da una versione precedente, eseguire le query SQL seguenti dopo l&#39;esecuzione dell&#39;aggiornamento:
 
@@ -79,7 +84,7 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
 
    * **(solo se si esegue l&#39;aggiornamento da AEM 6.2 Forms o versioni precedenti) Riconfigurare Adobe Sign**
 
-      Se Adobe Sign è stato configurato nella versione precedente di AEM Forms, riconfigurare Adobe Sign dai servizi AEM Cloud. Per ulteriori dettagli, vedere [Integrazione di Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+      Se Adobe Sign è stato configurato nella versione precedente dei AEM Forms, riconfigurare Adobe Sign dai AEM cloud services. Per ulteriori dettagli, vedere [Integrazione di Adobe Sign con i AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **Supporto per jQuery**
 
@@ -89,7 +94,7 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
       * Rimuovere le API non supportate dai componenti personalizzati. Consulta la guida [all&#39;](https://jquery.com/upgrade-guide/3.0/) aggiornamento per l&#39;elenco delle API rimosse. Ad esempio, il supporto per le API load(), .unload() e .error() viene rimosso. Utilizzate il metodo .on() al posto delle API citate sopra. Ad esempio, modificate $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
    * **(solo se si esegue l&#39;aggiornamento da AEM 6.2 Forms o versioni precedenti) Riconfigurare analisi e report**
 
-      In AEM 6.4 Forms, la variabile di traffico per l’origine e l’evento di successo per l’impressione non sono disponibili. Pertanto, quando si esegue l&#39;aggiornamento da AEM 6.2 Forms o versioni precedenti, AEM Forms interrompe l&#39;invio di dati al server Adobe Analytics e i report di analisi per i moduli adattivi non sono disponibili. Inoltre, AEM 6.4 Forms introduce la variabile del traffico per la versione dell&#39;analisi dei moduli e l&#39;evento di successo per il tempo trascorso su un campo. Quindi, riconfigurare analisi e rapporti per l&#39;ambiente AEM Forms. Per informazioni dettagliate, consultate [Configurazione di analisi e rapporti](../../forms/using/configure-analytics-forms-documents.md).
+      In AEM 6.4 Forms, la variabile di traffico per l’origine e l’evento di successo per l’impressione non sono disponibili. Pertanto, quando si esegue l&#39;aggiornamento da AEM 6.2 Forms o versioni precedenti, i AEM Forms smettono di inviare dati al server Adobe  Analytics e i report di analisi per i moduli adattivi non sono disponibili. Inoltre, AEM 6.4 Forms introduce la variabile del traffico per la versione dell&#39;analisi dei moduli e l&#39;evento di successo per il tempo trascorso su un campo. Quindi, riconfigurate analisi e report per l&#39;ambiente AEM Forms. Per informazioni dettagliate, consultate [Configurazione di analisi e rapporti](../../forms/using/configure-analytics-forms-documents.md).
 
 
 1. Verificare che il server sia aggiornato correttamente, che tutti i dati siano migrati correttamente e che possa funzionare normalmente.
@@ -101,6 +106,7 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
       * `https://'[server]:[port]'/crx/packmgr`
       * `https://'[server]:[port]'/crx/de`
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+
    >[!NOTE]
    In AEM 6.4 Forms, la struttura del repository crx è cambiata. Se esegui l’aggiornamento da 6.3 Forms a AEM 6.5 Forms, usa i percorsi modificati per la personalizzazione creati di nuovo. Per l&#39;elenco completo dei percorsi modificati, consultate Ristrutturazione archivio [moduli in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 
