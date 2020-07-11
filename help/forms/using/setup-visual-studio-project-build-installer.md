@@ -1,29 +1,35 @@
 ---
 title: Configurare il progetto Visual Studio e creare l'app Windows
 seo-title: Configurare il progetto Visual Studio e creare l'app Windows
-description: Scoprite come impostare un progetto di Visual Studio per creare l'app dispositivo mobile AEM Forms Windows.
-seo-description: Scoprite come impostare un progetto di Visual Studio per creare l'app dispositivo mobile AEM Forms Windows.
+description: Come impostare un progetto di Visual Studio per creare l'app per dispositivi mobili Windows AEM Forms.
+seo-description: Come impostare un progetto di Visual Studio per creare l'app per dispositivi mobili Windows AEM Forms.
 uuid: 9559e584-2a40-4740-a29a-d7ad66220224
 topic-tags: forms-app
 discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 0%
 
 ---
 
 
 # Configurare il progetto Visual Studio e creare l&#39;app Windows{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;applicazione area di lavoro personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip`fa parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla condivisione del pacchetto.
+AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;applicazione area di lavoro personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip`è una parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione del software.
 
-Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua i seguenti passaggi:
+Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua le seguenti operazioni:
 
-1. Passa alla condivisione del pacchetto\
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Scaricate il pacchetto sorgente. Quando scaricate il pacchetto, questo viene aggiunto nel gestore pacchetti di AEM Forms.
-1. Dopo il download, passa a: `https://<server>:<port>/crx/packmgr/index.jsp`e installare `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Nella sezione **[!UICONTROL Filtri]** :
+   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
+1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
+1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Select the package and click **[!UICONTROL Install]**.
 
 1. Per scaricare l&#39;archivio del codice sorgente, aprite `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.\
    Il pacchetto di origine viene scaricato sul dispositivo.
@@ -44,22 +50,22 @@ Per i dispositivi Windows, è necessario:
 * Microsoft Visual Studio 2015
 * Microsoft Visual Studio Tools per Apache Cordova
 
-## Impostazione dell&#39;app Visual Studio Project per AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
+## Configurazione di Visual Studio Project per l&#39;app AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
 
-Per impostare il progetto dell&#39;app AEM Forms in Visual Studio, effettua i seguenti passaggi.
+Effettuare le seguenti operazioni per configurare il progetto dell&#39;app AEM Forms in Visual Studio.
 
 1. Copiare l&#39; `adobe-lc-mobileworkspace-src-<version>.zip` archivio nella `%HOMEPATH%\Projects` cartella del dispositivo Windows 8.1 o Windows 10 con Visual Studio 2015 installato e configurato.
 1. Estrarre l&#39;archivio nella `%HOMEPATH%\Projects\MobileWorkspace` directory.
 1. Andate alla `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` directory.
-1. Aprite il `CordovaApp.sln` file utilizzando Visual Studio 2015 e procedete alla creazione dell&#39;app AEM Forms.
+1. Aprire il `CordovaApp.sln` file utilizzando Visual Studio 2015 e procedere alla creazione dell&#39;app AEM Forms.
 
-## Creare app AEM Forms {#build-aem-forms-app}
+## Crea app AEM Forms {#build-aem-forms-app}
 
-Per creare e distribuire l&#39;app AEM Forms, effettuate i seguenti passaggi.
+Effettuate le seguenti operazioni per creare e distribuire l&#39;app AEM Forms.
 
 >[!NOTE]
 >
->I dati memorizzati nel file system Windows per l&#39;app AEM Forms non sono crittografati. È consigliabile utilizzare uno strumento di terze parti come Crittografia unità BitLocker di Windows per crittografare i dati del disco.
+>I dati memorizzati nel file system Windows per l&#39;app AEM Forms non sono crittografati. Si consiglia di utilizzare uno strumento di terze parti come Crittografia unità BitLocker di Windows per crittografare i dati del disco.
 
 1. Nella barra degli strumenti di Visual Studio Standard, selezionare **Rilascia** dall&#39;elenco a discesa per la modalità di creazione.
 
@@ -88,11 +94,13 @@ Per creare e distribuire l&#39;app AEM Forms, effettuate i seguenti passaggi.
 
    * Windows PowerShell
    * Visual Studio
+
    Il `.appx` pacchetto richiede la corretta installazione dei seguenti elementi:
 
    1. Libreria WinJS
    1. Verificate che il pacchetto sia dotato di un certificato autofirmato o di un&#39;autorità affidabile firmata come VeriSign.
    1. Licenza sviluppatore
+
    La directory Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contiene i quattro componenti principali:
 
    1. `.appx` file
@@ -134,13 +142,13 @@ Per distribuire l&#39;app:
 1. Fate clic con il pulsante destro del mouse su **Consenti l&#39;installazione** di tutte le app attendibili.
 1. Fate clic su **Modifica** e selezionate **Abilitato**.
 
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 
 Modificare lo script PowerShell generato da Visual Studio per impedirne l&#39;acquisizione da parte dello sviluppatore.
 
 Nello script PowerShell, impostare la variabile: `$NeedDeveloperLicense = $false`.
 
-Per i dispositivi che non fanno parte del dominio, è necessario caricare il codice di attivazione del prodotto. È possibile acquistarlo da un rivenditore Windows.
+Per i dispositivi che non fanno parte del dominio, è necessario il codice di attivazione del prodotto per il caricamento laterale. È possibile acquistarlo da un rivenditore Windows.
 
 Per Windows 8.1 Home Edition non è disponibile alcun criterio di gruppo, il caricamento laterale dell&#39;organizzazione non è consentito e non è possibile unirsi a esso con il dominio Enterprise. Distribuite l&#39;app su un dispositivo Windows 8.1 Home Edition utilizzando la licenza per sviluppatori.
 
