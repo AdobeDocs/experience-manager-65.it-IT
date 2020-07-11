@@ -1,8 +1,8 @@
 ---
 title: Configurare il progetto Xcode e creare l'app iOS
 seo-title: Configurare il progetto Xcode e creare l'app iOS
-description: Spiega come creare un’app AEM Forms standard per iOS.
-seo-description: Spiega come creare un’app AEM Forms standard per iOS.
+description: Spiega come creare app AEM Forms standard per iOS.
+seo-description: Spiega come creare app AEM Forms standard per iOS.
 uuid: 29779bbb-06b4-4ece-9f29-786afab59eaf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,21 +10,28 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 0%
 
 ---
 
 
 # Configurare il progetto Xcode e creare l&#39;app iOS{#set-up-the-xcode-project-and-build-the-ios-app}
 
-AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` è parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla condivisione del pacchetto.
+AEM Forms fornisce il codice sorgente completo dell&#39;app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` è una parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione del software.
 
-Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua i seguenti passaggi:
+Per ottenere l&#39;origine dell&#39;app AEM Forms, effettua le seguenti operazioni:
 
-1. Andate al pacchetto shareURL: `https://<server>:<port>/crx/packageshare`.
-
-1. Scaricate il pacchetto di origine. Quando scaricate il pacchetto, questo viene aggiunto nel gestore pacchetti di AEM Forms.
-1. Dopo il download, passa a: `https://<server>:<port>/crx/packmgr/index.jsp`e installare `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Nella sezione **[!UICONTROL Filtri]** :
+   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
+1. Toccate il nome del pacchetto applicabile al sistema operativo in uso, selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
+1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Select the package and click **[!UICONTROL Install]**.
 
 1. Per scaricare l&#39;archivio del codice sorgente, aprite `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` nel browser.
 Il pacchetto di origine viene scaricato sul dispositivo.
@@ -75,7 +82,7 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
 1. Fate clic su **AEM Forms**, in **TARGET**, selezionate **AEM Forms**. Selezionate la scheda Impostazioni **** build, individuate la sezione Adesione firma **** codice, quindi nei campi Debug e Rilascio effettuate una delle seguenti operazioni:
 
    * Non specificare i campi per creare un&#39;app Mobile Workspace standard
-   * Specificate i campi in base alle informazioni fornite in [Creazione di un&#39;app AEM Forms protetta per iOS](/help/forms/using/building-secure-mobile-workspace-app.md) per creare un&#39;app AEM Forms protetta.
+   * Specificate i campi in base a quanto spiegato in [Creazione di un&#39;app per AEM Forms protetti per iOS](/help/forms/using/building-secure-mobile-workspace-app.md) per creare un&#39;app per AEM Forms protetti.
 
 1. Nella scheda **Impostazioni** build, fai clic su **Tutto** , quindi su **Combinato**.
 1. Dall&#39;elenco **Impostazioni** , espandere Firma **codice**.
@@ -121,9 +128,9 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
    >
    >Questo passaggio è richiesto solo se l&#39;app AEM Forms deve connettersi a un server che non soddisfa i requisiti di sicurezza di Trasporto app.
 
-1. In **PROJECT**, seleziona **AEM Forms** e accertati che sia selezionata la firma appropriata per Identità **di firma del** codice, **Debug**, **Rilascio** **** e Qualsiasi SDK iOS.
+1. In **PROJECT**, selezionare **AEM Forms** e assicurarsi che la firma appropriata sia selezionata per Identità **firma** codice, **Debug**, **Rilascio** **** e Qualsiasi SDK iOS.
 1. Collegate un iPad in provisioning a un computer Mac.
-1. Seleziona il dispositivo di provisioning per il progetto **AEM Forms** .
+1. Selezionate il dispositivo di provisioning per il progetto **AEM Forms** .
 
    ![ipad](assets/ipad.png)
 
@@ -137,7 +144,7 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
 È necessario archiviare il progetto Xcode per creare il programma di installazione (un file .ipa) e un file elenco di proprietà (un file .plist). Il file dell&#39;elenco delle proprietà contiene le informazioni di configurazione dell&#39;app in hosting, ad esempio il nome e il percorso di hosting dell&#39;app. Per ulteriori informazioni sul file dell&#39;elenco delle proprietà, vedere [Informazioni sui file](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)dell&#39;elenco delle proprietà.
 
 1. Collegate un iPad in provisioning a un computer Mac. Per informazioni dettagliate sul provisioning di un iPad, consultate [Creazione e scaricamento di profili di provisioning di sviluppo](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
-1. Seleziona il dispositivo di provisioning per il progetto **AEM Forms** .
+1. Selezionate il dispositivo di provisioning per il progetto **AEM Forms** .
 
    ![ipad-1](assets/ipad-1.png)
 
@@ -151,8 +158,8 @@ Per informazioni dettagliate sulla firma del codice e l&#39;aggiunta di disposit
 1. Selezionare l&#39;identità **di firma del** codice appropriata e fare clic su **Avanti**. Fare clic su **Consenti** di applicare la firma.
 1. Immettete il nome dell&#39;app e selezionate **Salva per distribuzione** Enterprise.
 1. Fornite l&#39;URL **** applicazione per l&#39;app. Ad esempio, per ospitare l&#39;app su un server CRX, immetti l&#39;URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
-1. Nel campo **Titolo** , specificate Moduli AEM.
-1. Fate clic su **Salva** e chiudete Xcode.
+1. Nel campo **Titolo** , specificate i AEM Forms.
+1. Click **Save** and close Xcode.
 
    Nel percorso specificato vengono creati un file del programma di installazione `AEM Forms.ipa`e un file dell&#39;elenco delle proprietà `AEM Forms-info.plist`.
 
