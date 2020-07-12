@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione di Adobe Experience Manager 6.5 Previous Service Pack
-description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
+title: ' Adobe Experience Manager 6.5 Note sulla versione del Service Pack precedente'
+description: Note sulla versione specifiche per  Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
 workflow-type: tm+mt
-source-wordcount: '8093'
+source-wordcount: '8102'
 ht-degree: 36%
 
 ---
@@ -15,35 +15,35 @@ ht-degree: 36%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0 è un aggiornamento importante che include nuove funzioni, miglioramenti e prestazioni richiesti dai clienti chiave, stabilità, miglioramenti a livello di sicurezza, rilasciati a partire dalla release 6.5 di **aprile 2019**. Può essere installato sopra Adobe Experience Manager 6.5.
+ Adobe Experience Manager 6.5.4.0 è un aggiornamento importante che include nuove funzioni, miglioramenti e prestazioni richiesti dai clienti chiave, stabilità, miglioramenti a livello di sicurezza, rilasciati a partire dalla release 6.5 di **aprile 2019**. Può essere installato sopra  Adobe Experience Manager 6.5.
 
-Alcune funzioni chiave e miglioramenti introdotti in Adobe Experience Manager 6.5.4.0 includono:
+Alcune funzioni chiave e miglioramenti introdotti  Adobe Experience Manager 6.5.4.0 includono:
 
-* Risorse Adobe Experience Manager ora è configurato con Portale marchio tramite la console Adobe I/O.
+*  Risorse Adobe Experience Manager è ora configurato con Portale marchio tramite la console di I/O di Adobe.
 
-* È ora disponibile un nuovo passaggio [Genera output](../forms/using/aem-forms-workflow-step-reference.md) stampabile per i flussi di lavoro Adobe Experience Manager Forms.
+* È ora disponibile un nuovo passaggio [Genera output](../forms/using/aem-forms-workflow-step-reference.md) stampabile per  flussi di lavoro Moduli di Adobe Experience Manager.
 
 * [Supporto](../forms/using/resize-using-layout-mode.md) a più colonne per la modalità di layout per moduli adattivi e comunicazioni interattive.
 
 * Supporto per [Rich Text](../forms/using/designing-form-template.md) nei moduli HTML5.
 
-* [Miglioramenti](new-features-latest-service-pack.md#accessibility-enhancements) dell&#39;accessibilità in Experience Manager Assets.
+* [Miglioramenti](new-features-latest-service-pack.md#accessibility-enhancements) all’accessibilità in  Experience Manager Assets.
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.10.8.
 
-* Ora potete sincronizzare le sottostrutture per contenuti selettivi su Contenuti multimediali *dinamici - Modalità* Scene7 invece di tutti i contenuti disponibili in `content/dam`.
+* Ora potete sincronizzare le sottostrutture per contenuti selettivi nella modalità *Dynamic Media - Scene7 invece di tutte le sottostrutture disponibili in* `content/dam`.
 
 * L&#39;integrazione del modello dati del modulo con il servizio Web SOAP ora supporta i gruppi di scelta o gli attributi sugli elementi.
 
 * Le strutture di input o output SOAP e i dati complessi ora supportano la sostituzione di gruppi dinamici.
 
-Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei Service Pack più recenti, consulta [Novità dei service pack](new-features-latest-service-pack.md)Adobe Experience Manager 6.5.
+Per un elenco completo delle funzioni e delle caratteristiche principali introdotte nei Service Pack più recenti, consulta [Novità  Adobe Experience Manager 6.5 Service Pack](new-features-latest-service-pack.md).
 
 ### Sites {#sites-fixes}
 
-* Quando un URL di una pagina di siti Adobe Experience Manager contiene due punti (`:`) o simboli di percentuale (`%`), il browser smette di rispondere e i picchi di utilizzo della CPU (NPR-32369, NPR-31918).
+* Quando un URL di pagine di siti di Adobe Experience Manager  contiene due punti (`:`) o simboli di percentuale (`%`), il browser smette di rispondere e i picchi di utilizzo della CPU (NPR-32369, NPR-31918).
 
-* Quando una pagina di Experience Manager Sites viene aperta per la modifica e un componente viene copiato, l&#39;azione Incolla non è disponibile per alcuni segnaposto (NPR-32317).
+* Quando si apre una pagina  siti Experience Manager per la modifica e si copia un componente, l&#39;azione Incolla non è disponibile per alcuni segnaposto (NPR-32317).
 
 * Quando si apre la procedura guidata Gestisci pubblicazione, un frammento esperienza collegato a un componente core non viene visualizzato negli elenchi dei riferimenti pubblicati (NPR-32233).
 
@@ -51,7 +51,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Quando il server-time e il computer-time si trovano in fusi orari diversi, l&#39;ora di pubblicazione pianificata mostra l&#39;ora del server nell&#39;interfaccia utente touch, mentre nell&#39;interfaccia classica l&#39;ora del computer viene visualizzata (NPR-32077).
 
-* Experience Manager Sites non riesce ad aprire una pagina con un suffisso nell&#39;URL (NPR-32072).
+*  Experience Manager Sites non riesce ad aprire una pagina con un suffisso nell&#39;URL (NPR-32072).
 
 * Quando un utente modifica un frammento di contenuto, viene ripristinata una variante eliminata del frammento di contenuto (NPR-32062).
 
@@ -87,7 +87,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Il pulsante per attivare il flusso di lavoro nella pagina di raccolta delle risorse è disattivato (NPR-32471).
 
-* In SPS (Scene7 Publishing System) viene creata una cartella senza nome quando si sposta una risorsa da una cartella all’altra in Experience Manager con configurazione Dynamic Media Scene7 (NPR-32440).
+* In SPS (Scene7 Publishing System) viene creata una cartella senza nome quando si sposta una risorsa da una cartella all’altra in  Experience Manager con configurazione Dynamic Media Scene7 (NPR-32440).
 
 * L’azione per spostare tutte le risorse (tramite Seleziona tutto e quindi Sposta) in una cartella contenente le risorse pubblicate non riesce e ha esito negativo (NPR-32366).
 
@@ -105,7 +105,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Quando si selezionano più tag dal filtro di ricerca (NPR-32143), vengono attivate più query di ricerca.
 
-* L’interfaccia utente di Experience Manager Assets visualizza i nomi dei file troncati quando vengono caricate risorse con più di 50 caratteri nel nome del file (NPR-32054).
+* ’interfaccia utente di Experience Manager Assets visualizza i nomi dei file troncati quando vengono caricate risorse con più di 50 caratteri nel nome del file (NPR-32054).
 
 * Tutte le caselle di controllo nel pannello Filtro vengono deselezionate quando la prima e la seconda casella di controllo sono deselezionate, quando sono state selezionate le caselle di controllo di livello due della struttura delle caselle di controllo in Adobe Stock (NPR-31919).
 
@@ -119,31 +119,31 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * La pagina dei risultati della ricerca nell&#39;interfaccia touch (realizzata tramite Omnisearch) scorre automaticamente verso l&#39;alto e perde la posizione di scorrimento dell&#39;utente (NPR-31307).
 
-* La pagina di dettaglio delle risorse PDF non mostra i pulsanti delle azioni eccetto A raccolta e Aggiungi rappresentazione in Experience Manager in esecuzione in modalità di esecuzione di Dynamic Media Scene7 (CQ-4286705).
+* La pagina dei dettagli delle risorse PDF non mostra i pulsanti delle azioni eccetto A raccolta e Aggiungi rappresentazione in  Experience Manager in esecuzione in modalità di esecuzione Dynamic Media Scene7 (CQ-4286705).
 
 * L’elaborazione delle risorse richiede troppo tempo durante il processo di caricamento batch di Scene7 (CQ-4286445).
 
-* Il pulsante Salva non importa il set remoto quando l&#39;utente non ha apportato modifiche nell&#39;Editor set nel client per contenuti multimediali dinamici (CQ-4285690).
+* Il pulsante Salva non importa il set remoto se l&#39;utente non ha apportato modifiche nell&#39;Editor set nel client Dynamic Media (CQ-4285690).
 
-* La miniatura della risorsa 3D non è informativa, quando un modello 3D supportato viene assimilato in Experience Manager (CQ-4283701).
+* La miniatura della risorsa 3D non è informativa, quando un modello 3D supportato viene assimilato  Experience Manager (CQ-4283701).
 
 * Lo stato non elaborato del predefinito per visualizzatori video per ritaglio avanzato viene visualizzato due volte sul testo del banner e sul nome del predefinito (CQ-4283517).
 
 * L’altezza contenitore errata di un modello 3D caricato visualizzato in anteprima nel visualizzatore 3D viene visualizzata nella pagina dei dettagli della risorsa (CQ-4283309).
 
-* Carosello Editor non si apre in IE 11 in modalità ibrida di Experience Manager (CQ-4255590).
+* Carosello Editor non si apre in IE 11 in  modalità ibrida Experience Manager Dynamic Media (CQ-4255590).
 
 * Lo stato attivo si blocca nel menu a discesa E-mail nella finestra di dialogo Download, nei browser Chrome e Safari (NPR-32067).
 
-* La casella di controllo Sincronizza tutto il contenuto non è abilitata per impostazione predefinita quando si tenta di aggiungere la configurazione cloud DM in Experience Manager (CQ-4288533).
+* La casella di controllo Sincronizza tutto il contenuto non è abilitata per impostazione predefinita quando si tenta di aggiungere la configurazione cloud DM su  Experience Manager (CQ-4288533).
 
 ### Interfaccia di base {#foundation-ui-6540}
 
 * Il controllo del mouse passa al campo filtro precedente invece di rimanere nel campo filtro esistente durante la ricerca delle risorse mediante il pannello Filtro (NPR-32538).
 
-* Assegnazione tag piattaforma: La ricerca di tag digitando nei campi tag mostra i tag al di fuori dei limiti principali e non rispetta la `rootPath` proprietà dei campi tag (NPR-31895).
+* Assegnazione tag Platform: La ricerca di tag digitando nei campi tag mostra i tag al di fuori dei limiti principali e non rispetta la `rootPath` proprietà dei campi tag (NPR-31895).
 
-* Interfaccia utente della piattaforma: Se nel campo di testo viene aggiunto un percorso non valido (NPR-31884), il browser del percorso si interrompe.
+* Interfaccia utente Platform: Se nel campo di testo viene aggiunto un percorso non valido (NPR-31884), il browser del percorso si interrompe.
 
 * La notifica viene nascosta dietro un menu fisso nella selezione delle pagine (NPR-31628).
 
@@ -179,11 +179,11 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 ### Campaign Targeting {#campaign-targeting-6540}
 
-* La configurazione cloud di destinazione non riesce. Errore: richiesta mbox di recupero (CQ-4279880).
+* La configurazione cloud di Target non riesce e la richiesta di mbox di ricezione dell&#39;errore non è riuscita (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Gli utenti di Brand Portal non sono in grado di pubblicare le risorse delle cartelle dei contributi [!DNL Assets] in caso di aggiornamento ad Adobe I/O in Experience Manager 6.5.4 (CQDOC-15655). Per una correzione immediata in Experience Manager 6.5.4, si consiglia di [scaricare l&#39;hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e installarlo nell&#39;istanza di creazione.
+* Gli utenti di Brand Portal non sono in grado di pubblicare le risorse delle cartelle dei contributi [!DNL Assets] in caso di aggiornamento ad Adobe I/O su  Experience Manager 6.5.4 (CQDOC-15655). Per una correzione immediata su  Experience Manager 6.5.4, si consiglia di [scaricare l’hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e installarlo nell’istanza di creazione.
 
 * I valori popup dello schema di metadati non sono visibili nelle proprietà delle risorse (CQ-4283287).
 
@@ -203,7 +203,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Il modulo Crea membro viene visualizzato come una pagina vuota (NPR-31997).
 
-* L&#39;utente non è in grado di visualizzare il rapporto di Analytics sull&#39;istanza di creazione (NPR-30913).
+* L&#39;utente non è in grado di visualizzare il  rapporto Analytics sull&#39;istanza di creazione (NPR-30913).
 
 ### Quercia - Indicizzazione e query {#oak-indexing-6540}
 
@@ -213,7 +213,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 >[!NOTE]
 >
->Experience Manager Service Pack non include correzioni per Experience Manager Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per Adobe Experience Manager Forms su JEE. Per ulteriori informazioni, consultate [Installare il componente aggiuntivo](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms e [Installare i moduli Experience Manager su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+> Experience Manager Service Pack non include correzioni per  Experience Manager Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per  moduli di Adobe Experience Manager su JEE. Per ulteriori informazioni, vedere [Installare  componente aggiuntivo](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms e [Installare  Experience Manager Forms su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Gestione corrispondenza: Le lettere contengono caratteri aggiuntivi dopo l&#39;invio ai flussi di lavoro di post-elaborazione (NPR-32626).
 
@@ -231,7 +231,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Moduli adattivi: Lo strumento di accessibilità del browser Chrome segnala un errore best practice (NPR-32310).
 
-* Moduli adattivi: Problemi di traduzione durante la configurazione di un modulo adattivo incorporato in una pagina di Experience Manager Sites (NPR-32168).
+* Moduli adattivi: Problemi di traduzione durante la configurazione di un modulo adattivo incorporato in una pagina di Experience Manager Sites  (NPR-32168).
 
 * Workbench: Viene visualizzato un messaggio di errore durante l&#39;utilizzo dell&#39;operazione Ottieni proprietà PDF per il servizio Utilità PDF (NPR-32150).
 
@@ -241,7 +241,7 @@ Per un elenco completo delle funzioni e degli elementi di rilievo introdotti nei
 
 * Designer: Se in una tabella sono presenti celle unite, il test di accessibilità non riesce per il file PDF di output convertito da un modulo XDP utilizzando il servizio di output (CQ-4285372).
 
-* Foundation JEE: Se un server Experience Manager Forms è disconnesso da un cluster, i problemi di memorizzazione nella cache ne impediscono la riconnessione al server (NPR-32412).
+* Foundation JEE: Se un server Experience Manager Forms  è disconnesso da un cluster, i problemi di cache ne impediscono la riconnessione al server (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -337,7 +337,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Le rappresentazioni dinamiche scaricate dall&#39; [!DNL Experience Manager] esecuzione in modalità [!DNL Dynamic Media]ibrida sono interrotte (sono di tipo testo con contenuto &quot;impossibile trovare l&#39;immagine&quot; invece del tipo di contenuto dell&#39;immagine) (NPR-30876).
 
-* [!DNL Dynamic Media] Il flusso di lavoro di codifica video non genera le miniature per il video migrato dalla modalità [!DNL Dynamic Media Classic] a [!DNL Dynamic Media]Scene7 in Adobe Experience Manager (CQ-4282011).
+* [!DNL Dynamic Media] Il flusso di lavoro Codifica video non genera le miniature per il video migrato dalla modalità [!DNL Dynamic Media Classic] a [!DNL Dynamic Media]Scene7 in  Adobe Experience Manager (CQ-4282011).
 
 * IpsApiException durante la migrazione delle risorse da un’istanza all’altra tramite ID società Scene7 diversi (CQ-4280548).
 
@@ -401,7 +401,7 @@ Remove one mention of this fix.
 
 ### Ricerca e interfaccia utente {#search-ui-interface}
 
-* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima dello scorrimento della pagina (NPR-31286).
+* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima che la pagina possa essere scorrevole (NPR-31286).
 
 * La casella di controllo [!UICONTROL Seleziona tutto] è nascosta nella vista a elenco dell&#39;interfaccia [!DNL Sites] utente (NPR-31614).
 
@@ -445,7 +445,7 @@ Remove one mention of this fix.
 
 **Problemi risolti**
 
-* Quando si crea una nuova cartella Contribution in Asset Sourcing feature (CQ-4282825), viene visualizzata un’icona errata.
+* Quando si crea una nuova cartella Contribution nella funzione Asset Sourcing (CQ-4282825), viene visualizzata un’icona errata.
 * Quando create una nuova cartella Contribution, una o entrambe le sottocartelle (NEW e SHARED) non vengono visualizzate all’interno della cartella Contribution (CQ-4282424).
 * Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da [!DNL Experience Manager] a [!DNL Brand Portal] dopo aver ricevuto nuove risorse dalla [!DNL Brand Portal] fine della cartella Contribution (CQ-4279740).
 * La creazione di una cartella Contribution all’interno di una cartella Contribution (cartella nidificata) non è consentita per evitare la complessità (CQ-4278391).
@@ -472,7 +472,7 @@ Remove one mention of this fix.
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack non include correzioni per [!DNL Experience Manager Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. Per ulteriori informazioni, consultate [Installare il componente aggiuntivo](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms e [Installare i moduli Experience Manager su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack non include correzioni per [!DNL Experience Manager Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. Per ulteriori informazioni, vedere [Installare  componente aggiuntivo](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms e [Installare  Experience Manager Forms su JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 #### Pacchetto di componenti aggiuntivi per Forms {#forms-add-on-package-6530}
 
@@ -505,6 +505,8 @@ Remove one mention of this fix.
 **Forms - Servizi basati su documenti**
 
 * Il servizio Web SOAP che utilizza MTOM in un progetto .NET visualizza le eccezioni per i metodi AssemblerServiceClient invoke e HtmlToPDF2 (NPR-4281771).
+
+* Le versioni 1.4 e 1.4.1 dell&#39;Axis Jar includono una vulnerabilità di sicurezza (NPR-31015).
 
 **JEE per Foundation**
 
