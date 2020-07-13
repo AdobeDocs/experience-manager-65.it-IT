@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Un limite noto espone il contenuto del sito della community ai visitatori anonim
 
 Per proteggere i contenuti del sito della community dall&#39;accesso di utenti anonimi tramite contenuti jcr e json, procedi come segue:
 
-1. Nell’istanza AEM Author, andate a https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;nome sito>.html.
+1. Nell’istanza di creazione di AEM, andate a https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;nome sito>.html.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ All&#39;autore, andate alla console **[Community,](resources.md)**Risorse, in cu
 * Tutte le risorse di abilitazione e i percorsi di apprendimento
 * Una risorsa di abilitazione o un percorso di apprendimento specifico
 
-Andate alla console **[Community,](reports.md)**Rapporti e generate i rapporti in base a
+Andate alla console **[Community,](reports.md)**Rapporti e generate i rapporti in base a:
 
 * Assegnazioni per abilitare risorse e percorsi di apprendimento
 * Post a un sito community su un periodo specifico
@@ -203,12 +203,11 @@ Andate alla console **[Community,](reports.md)**Rapporti e generate i rapporti i
 
 Con una piccola attività e un’interazione con le risorse durante la pubblicazione, la visualizzazione dei rapporti sull’autore merita un’occhiata.
 
-* Sull’autore
-* Accesso con privilegi amministrativi
-* Navigare dal menu principale a **[!UICONTROL Community > Risorse]**
-* Seleziona il `Enablement Tutorial` sito
-* Selezionare l&#39; `Report` icona per un riepilogo di tutte le risorse
-* Selezionare una risorsa, quindi l&#39; `Report` icona relativa a un rapporto sulla risorsa
+* Per l’autore, effettuate l’accesso con privilegi amministrativi.
+* Dal menu principale, accedi a **[!UICONTROL Community]** > **[!UICONTROL Risorse]**.
+* Selezionate il `Enablement Tutorial` sito.
+* Selezionate l’ `Report` icona per un riepilogo di tutte le risorse.
+* Selezionare una risorsa, quindi l&#39; `Report` icona relativa a un rapporto sulla risorsa.
 
 È probabile che la visualizzazione dei dati di Adobe  Analytics sia troppo presto, e che la visualizzazione potrebbe richiedere da 1 a 12 ore. Tuttavia, il reporting SCORM di base è già disponibile.
 
@@ -236,10 +235,9 @@ La console Rapporti consente la generazione di rapporti su
 
 Per i rapporti sulle assegnazioni:
 
-* Sull’autore
-* Accesso con privilegi amministrativi
-* Passa a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > Rapporto **[!UICONTROL assegnazioni]**
-* Selezionate un **[!UICONTROL sito]** dal menu a discesa (selezionate `Enablement Tutorial`)
+* Per l’autore, effettuate l’accesso con privilegi amministrativi.
+* Vai a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > Rapporto **** assegnazioni.
+* Selezionate un **[!UICONTROL sito]** dal menu a discesa (selezionate `Enablement Tutorial`).
 
 * Seleziona **[!UICONTROL gruppo]** (selezionare `Community Ski Class`)
 
@@ -251,15 +249,15 @@ Per i rapporti sulle assegnazioni:
 
 Per i rapporti sulle visualizzazioni:
 
-* Per l&#39;autore, effettuate l&#39;accesso con privilegi amministrativi
-* Passa a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > Rapporto **[!UICONTROL visualizzazioni]**
-* Selezionate un **sito **dal menu a discesa (selezionate`Enablement Tutorial`)
+* Per l’autore, effettuate l’accesso con privilegi amministrativi.
+* Vai a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > Rapporto **** visualizzazioni.
+* Selezionate un **sito **dal menu a discesa (selezionate`Enablement Tutorial`).
 
-* Seleziona tipo **[!UICONTROL di]** contenuto (seleziona `all`)
+* Selezionate Tipo **[!UICONTROL di]** contenuto (selezionate `all`).
 
-* Seleziona un intervallo **[!UICONTROL di]** date (seleziona `Last 7 days`)
+* Selezionare un intervallo **[!UICONTROL di]** date (selezionare `Last 7 days`).
 
-* Seleziona **[!UICONTROL Genera]**
+* Selezionate **[!UICONTROL Genera]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
