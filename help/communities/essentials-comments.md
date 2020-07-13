@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +61,7 @@ Il componente Commenti stabilisce un sistema di commenti in modo che ogni singol
 
 L’impaginazione e l’uso di URL per il caching e il collegamento richiedono che l’URL sia univoco per sistema di commenti. Pertanto, è consentita solo un&#39;istanza di un sistema di commenti per pagina.
 
-Altre funzionalità includono già il sistema dei commenti. Si tratta di:
+Altre funzionalità includono già il sistema dei commenti. Secondo questi principi, il contenuto deve essere:
 
 * [Blog](blog-developer-basics.md)
 * [Calendario](calendar-basics-for-developers.md)
@@ -94,8 +97,8 @@ A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider di risorse di storage - Introduzione e panoramica sull&#39;utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica
-* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Panoramica](srp.md) del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
+* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
