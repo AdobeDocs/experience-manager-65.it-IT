@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1653'
 ht-degree: 4%
 
 ---
@@ -39,22 +39,13 @@ AEM 6.5 viene fornito con il pacchetto delle funzioni Livefyre 1.2.6 preinstalla
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Tornate alla home page di AEM, fate clic su Strumenti, quindi selezionate **Distribuzione > Condivisione** pacchetti.
+1. Scaricate il pacchetto Livefyre da Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software.
 
-   Viene visualizzato un elenco di pacchetti di funzioni e hotfix disponibili per il download.
-
-1. Nella ricerca per parole chiave, cercate &quot;Livefyre&quot;, quindi selezionate il pacchetto di funzioni Livefyre corrispondente alla versione di AEM.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. Nella pagina delle informazioni sul pacchetto di funzioni, fate clic su **Scarica**, quindi leggete il contratto di licenza per il pacchetto e fate clic su **Accetto**.
-1. Tornate a Gestione pacchetti, individuate il pacchetto appena scaricato e fate clic su **Installa**.
+1. Da Gestione pacchetti, installate il pacchetto scaricato. Consultate [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md) per ulteriori informazioni sull&#39;utilizzo di distribuzione software e pacchetti in AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Il pacchetto Livefyre-AEM è ora installato. Prima di iniziare a utilizzare le funzioni di integrazione, è necessario configurare AEM per l&#39;utilizzo di Livefyre.
-
-   Per ulteriori informazioni sui pacchetti, vedere [Come utilizzare i pacchetti](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    Per ulteriori informazioni e note sulla versione dei pacchetti di funzioni, consulta [Feature Pack](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
