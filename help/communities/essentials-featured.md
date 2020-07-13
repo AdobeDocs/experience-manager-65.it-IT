@@ -10,16 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 6%
 
 ---
 
 
-# Contenuto essenziale {#featured-content-essentials}
+# Contenuto essenziale  {#featured-content-essentials}
 
 Questa pagina contiene le informazioni essenziali per l’utilizzo dei contenuti contenuti contenuti.
 
 A differenza del blocco di un post nella parte superiore di un forum, questa funzione consente di evidenziare i contenuti ovunque all&#39;interno del sito della community.
+
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
