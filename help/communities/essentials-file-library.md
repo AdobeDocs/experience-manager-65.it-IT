@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +36,7 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.voice<br /> cq.social.hbs.filelibrio</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.Voting<br /> cq.social.hbs.filelibrio</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -69,14 +72,14 @@ Una struttura del sito community che include la funzione [Libreria](functions.md
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
 Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
-Vedi:
+Consulta:
 
-* [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Panoramica](srp.md) del provider delle risorse di storage - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica.
+* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
