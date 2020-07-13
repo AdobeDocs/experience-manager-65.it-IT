@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -27,10 +27,10 @@ Il `Leaderboard` componente fornisce la capacità di ottenere un&#39;idea di com
 
 Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](/help/communities/implementing-scoring.md).
 
-Questa sezione della documentazione descrive
+Questa sezione della documentazione descrive quanto segue:
 
-* Aggiunta del `Leaderboard` componente a un sito [community](/help/communities/overview.md#community-sites)
-* Impostazioni di configurazione per il `Leaderboard` componente
+* Aggiunta del `Leaderboard` componente a un sito [](/help/communities/overview.md#community-sites)community.
+* Impostazioni di configurazione per il `Leaderboard` componente.
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -44,17 +44,19 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Configurazione della classifica {#configuring-leaderboard}
 
 Selezionate il `Leaderboard` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-20](assets/chlimage_1-20.png) ![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### scheda Impostazioni {#settings-tab}
 
-Nella scheda **Impostazioni** , specificate le informazioni relative al membro da visualizzare:
+Nella scheda **[!UICONTROL Impostazioni]** , specificate le informazioni relative al membro da visualizzare:
 
 * **Nome visualizzato**
 
@@ -118,7 +120,7 @@ Configurazione del componente della classifica:
    * Regola assegnazione badge = `/libs/settings/community/badging/rules//reference-badging`
    * Limite di visualizzazione = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Esempio: Leaderboard di esperti {#example-experts-leaderboard}
 
@@ -141,7 +143,7 @@ Configurazione del componente della classifica:
    * Regola assegnazione badge = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite di visualizzazione = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Informazioni aggiuntive {#additional-information}
 
