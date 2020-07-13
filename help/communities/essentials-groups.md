@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 1%
 
 ---
 
 
-# Community Group Essentials {#community-group-essentials}
+# Community Group Essentials  {#community-group-essentials}
 
 La funzione per i gruppi della community è la possibilità per una sottocomunità di essere creata in modo dinamico all&#39;interno di un sito della community da utenti autorizzati dagli ambienti di pubblicazione e authoring.
 
@@ -33,7 +36,7 @@ A partire dal [](deploy-communities.md#latestfeaturepack)feature pack 1 di Commu
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.community.group</td>
+   <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -60,7 +63,7 @@ A partire dal [](deploy-communities.md#latestfeaturepack)feature pack 1 di Commu
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.community.group</td>
+   <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -95,10 +98,11 @@ L&#39;inclusione di più modelli di gruppi di community comporta la presentazion
 
 Nel [FP1](deploy-communities.md#latestfeaturepack)di Communities è possibile includere una funzione Gruppi all&#39;interno di un modello di gruppo, consentendo così l&#39;inclusione di gruppi nidificati (sub-community).
 
-Quando un sito o un modello di gruppo community include la funzione Groups, è possibile
+Quando un sito o un modello di gruppo community include la funzione Groups, è possibile:
 
-* Creare una sub-community nell’ambiente di authoring
-* Creare un gruppo nell’ambiente di pubblicazione, se configurato per consentirne l’utilizzo
+* Create una sub-community nell’ambiente di authoring.
+
+* Create un gruppo nell’ambiente di pubblicazione, se configurato per consentirlo.
 
 Quando create un gruppo nell’ambiente di authoring, è necessario prima pubblicare il sito della community, quindi pubblicare il gruppo. La pubblicazione del sito della community consente di pubblicare le pagine del gruppo, senza creare i gruppi membri della sottocomunità ai quali sono impostati gli ACL. Pertanto, un gruppo con restrizioni (segreto) può essere visibile finché il gruppo non viene pubblicato in modo esplicito.
 
