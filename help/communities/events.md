@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 4%
 
 ---
 
 
-# Componenti OSGi Events for Community {#osgi-events-for-communities-components}
+# Componenti OSGi Events for Community  {#osgi-events-for-communities-components}
 
 ## Panoramica {#overview}
 
@@ -31,90 +34,90 @@ Per i componenti Community consegnati nella release, le tabelle seguenti descriv
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | membro crea un evento del calendario |
-| AGGIUNGI | commenti dei membri su un evento del calendario |
-| AGGIORNA | evento del calendario del membro o commento modificato |
-| ELIMINA | l&#39;evento o il commento del calendario del membro viene eliminato |
+| POST | Il membro crea un evento del calendario |
+| AGGIUNGI | Commenti dei membri su un evento del calendario |
+| AGGIORNA | Evento calendario del membro o commento modificato |
+| ELIMINA | L&#39;evento o il commento del calendario del membro viene eliminato |
 
 [Componente](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | crea un commento |
-| AGGIUNGI | risposta del membro al commento |
-| AGGIORNA | commento del membro è stato modificato |
-| ELIMINA | commento del membro è eliminato |
+| POST | Il membro crea un commento |
+| AGGIUNGI | Risposte del membro al commento |
+| AGGIORNA | Il commento del membro è modificato |
+| ELIMINA | Il commento del membro è eliminato |
 
 [Componente](essentials-file-library.md)Libreria file SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | create una cartella |
-| ATTACCO | il membro carica un file |
-| AGGIORNA | il membro aggiorna una cartella o un file |
-| ELIMINA | il membro elimina una cartella o un file |
+| POST | Il membro crea una cartella |
+| ATTACCO | Il membro carica un file |
+| AGGIORNA | Il membro aggiorna una cartella o un file |
+| ELIMINA | Member elimina una cartella o un file |
 
 [Componente](essentials-forum.md)forumSocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | membro crea argomento del forum |
-| AGGIUNGI | risposte dei membri all&#39;argomento del forum |
-| AGGIORNA | argomento forum o risposta del membro è modificato |
-| ELIMINA | l&#39;argomento o la risposta del forum del membro viene eliminata |
+| POST | Membro crea argomento forum |
+| AGGIUNGI | Risposte dei membri all&#39;argomento del forum |
+| AGGIORNA | Argomento forum o risposta del membro è modificato |
+| ELIMINA | L&#39;argomento o la risposta del forum del membro viene eliminata |
 
 [Componente](blog-developer-basics.md)JournalSocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | un membro crea un articolo di blog |
-| AGGIUNGI | commenti dei membri su un articolo di blog |
-| AGGIORNA | articolo o commento del blog del membro è stato modificato |
-| ELIMINA | l&#39;articolo o il commento del blog del membro viene eliminato |
+| POST | Il membro crea un articolo di blog |
+| AGGIUNGI | Commenti su un articolo di blog |
+| AGGIORNA | L&#39;articolo o il commento del blog del membro viene modificato |
+| ELIMINA | L&#39;articolo o il commento del blog del membro viene eliminato |
 
 [QnA Component](qna-essentials.md)SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | un membro crea una domanda QnA |
-| AGGIUNGI | un membro crea una risposta QnA |
-| AGGIORNA | la domanda o la risposta QnA del membro viene modificata |
-| SELECT | la risposta del membro è selezionata |
-| ANNULLA | la risposta del membro è deselezionata |
-| ELIMINA | la domanda o la risposta QnA del membro viene eliminata |
+| POST | Il membro crea una domanda QnA |
+| AGGIUNGI | Il membro crea una risposta QnA |
+| AGGIORNA | La domanda o la risposta QnA del membro viene modificata |
+| SELECT | La risposta del membro è selezionata |
+| ANNULLA | La risposta del membro è deselezionata |
+| ELIMINA | La domanda o la risposta QnA del membro viene eliminata |
 
 [Recensioni Component](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | il membro crea una revisione |
-| AGGIORNA | revisione membro |
-| ELIMINA | la revisione del membro viene eliminata |
+| POST | Il membro crea la revisione |
+| AGGIORNA | Revisione del membro |
+| ELIMINA | La revisione del membro è soppressa |
 
 [Classificazione componente](rating-basics.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| AGGIUNGI VALUTAZIONE | il contenuto del membro è stato valutato |
-| RIMUOVI VALUTAZIONE | il contenuto del membro non è stato valutato |
+| AGGIUNGI VALUTAZIONE | Il contenuto del membro è stato valutato |
+| RIMUOVI VALUTAZIONE | Il contenuto del membro è stato ridotto |
 
 [Componente](essentials-voting.md)di voto `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| AGGIUNGI VOTO | il contenuto del membro è stato votato |
-| RIMUOVI VOTO | il contenuto del membro è stato respinto |
+| AGGIUNGI VOTO | Il contenuto del membro è stato votato |
+| RIMUOVI VOTO | Il contenuto dei membri è stato respinto |
 
 **Componenti** SocialEvent abilitati per moderazione `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| NEGA | contenuto del membro negato |
-| FLAG-AS-INAPPROPRIATE | il contenuto del membro è contrassegnato |
-| INAPPROPRIATO | contenuto del membro non contrassegnato |
-| ACCETTARE | il contenuto del membro è approvato dal moderatore |
-| CHIUDI | il membro chiude il commento alle modifiche e alle risposte |
-| APRI | il membro riapre il commento |
+| NEGA | Il contenuto del membro viene negato |
+| FLAG-AS-INAPPROPRIATE | Il contenuto del membro è contrassegnato |
+| INAPPROPRIATO | Il contenuto del membro non è contrassegnato |
+| ACCETTARE | Il contenuto del membro è approvato dal moderatore |
+| CHIUDI | Il membro chiude il commento alle modifiche e alle risposte |
+| APRI | Il membro riapre il commento |
 
 ## Eventi per componenti personalizzati {#events-for-custom-components}
 
@@ -125,6 +128,7 @@ L&#39;evento personalizzato sostituisce il metodo in `getVerb()` modo che `verb`
 >[!NOTE]
 >
 >Verifica che un&#39;estensione personalizzata sia registrata con una classificazione inferiore a qualsiasi implementazione esistente nel prodotto.
+
 
 ### Pseudo-Code per evento componente personalizzato {#pseudo-code-for-custom-component-event}
 
