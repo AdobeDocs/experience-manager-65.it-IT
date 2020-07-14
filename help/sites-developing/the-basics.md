@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+source-git-commit: d621a612556f0bea032444c2e07be101868b1905
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3371'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Prima di approfondire i concetti di base di AEM, Adobe consiglia di completare l’esercitazione WKND nel documento [Primi passi nello sviluppo di AEM Sites](/help/sites-developing/getting-started.md) per una panoramica del processo di sviluppo di AEM e per introdurre i concetti di base.
+>Prima di approfondire i concetti di base di AEM, Adobe consiglia di completare l’esercitazione WKND nel documento [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md) (Primi passi nello sviluppo) per una panoramica del processo di sviluppo di AEM e per introdurre i concetti di base.
 
 ## Prerequisiti per lo sviluppo su AEM {#prerequisites-for-developing-on-aem}
 
@@ -68,11 +68,11 @@ Consulta [Scoprire Sling in 15 minuti](https://sling.apache.org/documentation/ge
 
 Nel diagramma seguente viene illustrata la risoluzione dello script Sling: mostra come passare da una richiesta HTTP al nodo del contenuto, dal nodo del contenuto al tipo di risorsa, dal tipo di risorsa allo script e quali variabili di script sono disponibili.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
+![Informazioni sulla risoluzione degli script Apache Sling](assets/sling-cheatsheet-01.png)
 
 Il diagramma seguente illustra tutti i parametri di richiesta nascosti ma potenti che è possibile utilizzare per gestire SlingPostServlet, il gestore predefinito per tutte le richieste POST che offre infinite opzioni per creare, modificare, eliminare, copiare e spostare i nodi nell&#39;archivio.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![Utilizzo di SlingPostServlet](assets/sling-cheatsheet-02.png)
 
 ### Sling è incentrato sui contenuti {#sling-is-content-centric}
 
@@ -444,9 +444,9 @@ L&#39;elenco seguente fornisce una panoramica della struttura che verrà visuali
 
 Con AEM un ambiente di produzione è spesso costituito da due tipi diversi di istanze: le istanze [](/help/sites-deploying/deploy.md#author-and-publish-installs)Autore e Pubblica.
 
-## Il dispatcher {#the-dispatcher}
+## Dispatcher {#the-dispatcher}
 
-Il dispatcher è lo strumento di Adobe per il caching e/o il bilanciamento del carico. Ulteriori informazioni sono disponibili [nel Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+Dispatcher è lo strumento di Adobe per il caching e/o il bilanciamento del carico. Ulteriori informazioni sono disponibili [nel Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault (sistema di revisione dell&#39;origine) {#filevault-source-revision-system}
 
