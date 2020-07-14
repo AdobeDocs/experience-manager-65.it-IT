@@ -3,9 +3,9 @@ title: ' Adobe Experience Manager 6.5 Note sulla versione del Service Pack prece
 description: Note sulla versione specifiche per  Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '8102'
+source-wordcount: '8108'
 ht-degree: 36%
 
 ---
@@ -445,7 +445,7 @@ Remove one mention of this fix.
 
 **Problemi risolti**
 
-* Quando si crea una nuova cartella Contribution nella funzione Asset Sourcing (CQ-4282825), viene visualizzata un’icona errata.
+* Quando si crea una nuova cartella Contribution in Asset Sourcing feature (CQ-4282825), viene visualizzata un’icona errata.
 * Quando create una nuova cartella Contribution, una o entrambe le sottocartelle (NEW e SHARED) non vengono visualizzate all’interno della cartella Contribution (CQ-4282424).
 * Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da [!DNL Experience Manager] a [!DNL Brand Portal] dopo aver ricevuto nuove risorse dalla [!DNL Brand Portal] fine della cartella Contribution (CQ-4279740).
 * La creazione di una cartella Contribution all’interno di una cartella Contribution (cartella nidificata) non è consentita per evitare la complessità (CQ-4278391).
@@ -506,7 +506,7 @@ Remove one mention of this fix.
 
 * Il servizio Web SOAP che utilizza MTOM in un progetto .NET visualizza le eccezioni per i metodi AssemblerServiceClient invoke e HtmlToPDF2 (NPR-4281771).
 
-* Le versioni 1.4 e 1.4.1 dell&#39;Axis Jar includono una vulnerabilità di sicurezza (NPR-31015).
+* [Le versioni 1.4 e 1.4.1](https://helpx.adobe.com/it/aem-forms/quick-fixes/6-5/jee-patch-0014.html) dell&#39;Axis Jar includono una vulnerabilità di sicurezza (NPR-31015).
 
 **JEE per Foundation**
 
