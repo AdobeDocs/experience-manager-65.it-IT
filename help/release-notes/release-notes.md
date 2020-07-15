@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 7d3ceccb-4f00-4e11-9c9f-6de46a455e02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 23dfcc944a83dd683078cfe00f85c4cc734e7752
+workflow-type: tm+mt
+source-wordcount: '2182'
+ht-degree: 79%
 
 ---
 
@@ -36,7 +39,7 @@ source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
   </tr>
   <tr>
    <th>Aggiornamenti consigliati</th>
-   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM Releases and Updates</a></td>
+   <td>See <a href="https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html">AEM Releases and Updates</a></td>
   </tr>
  </tbody>
 </table>
@@ -152,7 +155,7 @@ AEM 6.5 introduce le seguenti funzionalità e miglioramenti per incrementare la 
 
 #### Integrazione in Adobe Creative Cloud {#integration-with-adobe-creative-cloud}
 
-Introduzione ad [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html), un’esperienza in-app per gli utenti creativi che lavorano su applicazioni Adobe Creative Cloud, tra cui Photoshop, Illustrator e InDesign, per semplificare la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. L’app desktop AEM continua a supportare le esigenze degli utenti che utilizzano risorse da AEM su desktop, utilizzando qualsiasi tipo di file e qualsiasi applicazione desktop.
+Introduzione ad [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html), un’esperienza in-app per gli utenti creativi che lavorano su applicazioni Adobe Creative Cloud, tra cui Photoshop, Illustrator e InDesign, per semplificare la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. L’app desktop AEM continua a supportare le esigenze degli utenti che utilizzano risorse da AEM su desktop, utilizzando qualsiasi tipo di file e qualsiasi applicazione desktop.
 
 Inoltre, AEM si integra con Adobe Stock per trovare, visualizzare in anteprima, concedere in licenza e salvare le risorse Adobe Stock direttamente dall’interfaccia utente di AEM Web.
 
@@ -160,7 +163,7 @@ Inoltre, AEM si integra con Adobe Stock per trovare, visualizzare in anteprima, 
 
 #### Risorse collegate {#connected-assets}
 
-La funzionalità Risorse collegate è destinata a installazioni di dimensioni maggiori con una serie di distribuzioni AEM Sites che devono sfruttare le risorse da una distribuzione DAM di Risorse AEM centrale. Consente di migliorare la governance intorno alle risorse gestite a livello centrale, consentendo allo stesso tempo di fornire risorse alle varie installazioni dei siti.
+La funzionalità Risorse collegate è destinata a installazioni di dimensioni maggiori con una serie di distribuzioni di AEM Sites che devono sfruttare le risorse da una distribuzione DAM di AEM Assets centrali. Consente di migliorare la governance intorno alle risorse gestite a livello centrale, consentendo allo stesso tempo di fornire risorse alle varie installazioni dei siti.
 
 ### Dynamic Media {#dynamic-media}
 
@@ -217,7 +220,7 @@ Puoi integrare Livefyre con l’istanza di AEM 6.5. Le informazioni su come inte
 
 Adobe utilizza un modello di sviluppo incentrato sul cliente che consente ai clienti di contribuire a tutte le fasi del processo di sviluppo, per le specifiche, lo sviluppo e il testing. Il nostro ringraziamento va a tutti i clienti e partner che hanno contribuito a questo processo.
 
-Adobe dispone delle procedure e dei processi necessari a consentire la raccolta, la definizione delle priorità e il monitoraggio della risoluzione dei bug incentrati sul cliente e dello sviluppo delle richieste di miglioramento. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. Ove possibile, le domande dei clienti vengono identificate e risolte dall’Assistenza clienti. Quando è necessario passarle al reparto R&amp;D, tutte le informazioni sui clienti vengono acquisite e utilizzate per stabilire le priorità e a scopo di reportistica. Nello sviluppo viene data priorità ai casi di assistenza a pagamento, garanzia e ai miglioramenti proposti da clienti con licenze a pagamento.
+Adobe dispone delle procedure e dei processi necessari a consentire la raccolta, la definizione delle priorità e il monitoraggio della risoluzione dei bug incentrati sul cliente e dello sviluppo delle richieste di miglioramento. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. Ove possibile, le domande dei clienti vengono identificate e risolte dall’Assistenza clienti. Quando è necessario passarle al reparto R&amp;D, tutte le informazioni sui clienti vengono acquisite e utilizzate per stabilire le priorità e a scopo di reportistica. Nello sviluppo viene data priorità ai casi di assistenza a pagamento, garanzia e ai miglioramenti proposti da clienti con licenze a pagamento.
 
 Grazie a questo processo di prioritizzazione, in AEM 6.5 sono stati risolti oltre 750 cambiamenti incentrati sul cliente.
 
@@ -246,10 +249,10 @@ Grazie a questo processo di prioritizzazione, in AEM 6.5 sono stati risolti oltr
 
 * Modelli lingua per contenuti avanzati. L’inglese è preinstallato, è possibile scaricare altre lingue
 
-   * [Tedesco](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [Spagnolo](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [Italiano](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [Francese](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [Tedesco](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+   * [Spagnolo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+   * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+   * [Francese](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM Modernize Tools Suite, ad esempio lo strumento di conversione delle finestre di dialogo. ([Progetto GitHub](https://github.com/adobe/aem-modernize-tools))
 
@@ -260,7 +263,7 @@ Grazie a questo processo di prioritizzazione, in AEM 6.5 sono stati risolti oltr
 
 **Forms**
 
-* [Pacchetti per le funzionalità di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [Pacchetti per le funzionalità di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 * [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
 
 ## Lingue {#languages}
