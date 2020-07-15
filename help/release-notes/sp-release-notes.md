@@ -4,10 +4,10 @@ description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Serv
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 97714abf86a80f6b3d1c68c85ccf443482da22bf
+source-git-commit: a599a1c75a1933d6b21e60e96485f43a0aedd679
 workflow-type: tm+mt
-source-wordcount: '4529'
-ht-degree: 7%
+source-wordcount: '4496'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 | Versione | 6.5.5.0 |
 | Tipo | Versione Service Pack |
 | Data | 04 giugno 2020 |
-| URL di download | [Condivisione](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0)pacchetti, distribuzione [software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
+| URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
 ## Contenuto nell&#39; Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
@@ -340,7 +340,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 Per installare Service Pack in un&#39;istanza  Adobe Experience Manager 6.5 esistente, effettuate le seguenti operazioni:
 
-1. Scaricate il service pack da [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) o [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
+1. Scaricate il service pack da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
 
 1. Aprite Gestione pacchetti e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto. Per sapere come utilizzarlo, consulta Gestione [](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)pacchetti.
 
