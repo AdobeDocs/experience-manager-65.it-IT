@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29b1a151a6c284fcb0bf01de425dfba79f5943c2
+source-git-commit: f4dcf58d70ea5a17617ef1e80942de7db3233031
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2464'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Sono inclusi anche i seguenti gruppi:
 
 ## Conversione automatizzata dei moduli (Camila) {#automated-forms-conversion}
 
-**Questa sezione**: Camila, il lead CX, dispone di un vecchio modulo basato su PDF, che è stato utilizzato come parte di un processo basato su carta. Nell&#39;ambito di un&#39;attività di modernizzazione, l&#39;utente desidera utilizzare il modulo PDF per creare automaticamente nuovi moduli adattivi moderni.
+**Questa sezione**: Camila il lead CX dispone di un modulo PDF esistente che è stato utilizzato come parte di un processo basato su carta. Nell&#39;ambito di un&#39;attività di modernizzazione, l&#39;utente desidera utilizzare il modulo PDF per creare automaticamente nuovi moduli adattivi moderni.
 
 ### Conversione automatizzata dei moduli - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -116,7 +116,7 @@ Sono inclusi anche i seguenti gruppi:
 
    ![Carica modulo](assets/aftia-upload-form.jpg)
 
-1. Camilla seleziona quindi un&#39;attività di conversione moduli automatizzati
+1. Camilla seleziona quindi il modulo PDF e fa clic su **Avvia conversione** automatica per avviare il processo di conversione. Se il modulo è stato convertito, potrebbe essere necessario fare clic su **Sovrascrivi conversione** .
 
    >[!NOTE]
    >
@@ -124,9 +124,11 @@ Sono inclusi anche i seguenti gruppi:
 
    * **Facoltativo**: Se si desidera utilizzare il tema Accessible Ultramarine, fare clic sul tema Specificare un modulo adattivo e selezionare il tema Accessible-Ultramarine che viene visualizzato nell&#39;elenco delle opzioni.
 
+   ![Avvia conversione](assets/aftia-start-conversion.jpg)
+
    ![Tema ultramarino](assets/aftia-upload-conversion-settings.jpg)
 
-   ![Avvia conversione](assets/aftia-start-conversion.jpg)
+   Durante la conversione viene visualizzato lo stato di completamento della percentuale. Una volta visualizzato lo stato **Convertito**, fare clic sulla cartella di **output** , selezionare il modulo adattivo e fare clic su **Modifica** per aprire il modulo convertito.
 
 1. Camilla quindi esamina il modulo e verifica che tutti i campi siano presenti
 
@@ -156,7 +158,7 @@ Sono inclusi anche i seguenti gruppi:
 
 Camila inoltre verifica che i contenuti creati siano creati correttamente e completamente accessibili in base agli standard aziendali.
 
-1. Camila apre il modulo We.Gov compilato.
+1. Camila fa clic sulla cartella di **output** , seleziona il modulo adattivo e fa clic su **Anteprima** per aprire il modulo We.Gov completato.
 
 1. Apre la scheda Audit in Chrome Developer Tool.
 
@@ -214,24 +216,9 @@ Aya scopre di essere idonea e inizia a compilare la sua applicazione per richied
    1. Informazioni di base
 
       1. Nome
-      1. Secondo nome
       1. Cognome
-      1. Nome preferito
       1. DOB
-      1. Genere
-   1. Informazioni di contatto
-
-      1. Indirizzo
-      1. Città
-      1. Numero di telefono
-      1. CAP
       1. E-mail
-      1. Stadio
-   1. Stato Marziale
-
-      1. Stato famiglia
-
-
 
 1. Utilizzate la seguente logica **** dinamica per mostrare la funzione dinamica utilizzando il menu a discesa Stato **** famiglia:
 
@@ -416,7 +403,7 @@ George approva l’applicazione di Aya e grazie a un flusso di lavoro automatizz
 1. Individuate e aprite il messaggio e-mail del kit di benvenuto.
 1. Scorrete fino all’allegato PDF nella parte inferiore della pagina.
 1. Fare clic per aprire l&#39;allegato PDF.
-1. Scorri verso l&#39;alto nel tuo client di posta elettronica e clicca su &quot;**Visualizza kit di benvenuto online**&quot;.
+1. Scorri verso l&#39;alto nel client di posta elettronica e fai clic su &quot;**Visualizza kit di benvenuto online**&quot;.
 
    1. Viene aperta la versione per il canale Web dello stesso documento.
 
