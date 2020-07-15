@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
+source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Esistono i seguenti casi di utilizzo:
 
 * Ottenete oggetti specifici per l&#39;implementazione.
 
-   Ad esempio, un&#39;implementazione JCR dell&#39; [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interfaccia generica fornisce l&#39;accesso al JCR sottostante [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&quot;
+   Ad esempio, un&#39;implementazione JCR dell&#39; [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interfaccia generica fornisce l&#39;accesso al JCR sottostante [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Creazione di collegamenti per oggetti che richiedono il passaggio di oggetti contestuali interni.
 
@@ -70,7 +70,7 @@ Tuttavia, non esiste una regola generale: l&#39;oggetto potrebbe essere una nuov
 Esistono diversi modi per `Adaptable.adaptTo()` implementarlo:
 
 * dall&#39;oggetto stesso; implementazione del metodo stesso e mappatura a determinati oggetti.
-* Tramite un carattere [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)`, che può mappare oggetti arbitrari.
+* Mediante un [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), che può mappare oggetti arbitrari.
 
    Gli oggetti devono comunque implementare l&#39; `Adaptable` interfaccia e devono estendersi [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (che trasmette la `adaptTo` chiamata a un gestore di adattatori centrale).
 
