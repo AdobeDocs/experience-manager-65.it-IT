@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Panoramica {#overview}
 
-AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice dell&#39;editor [di](/help/forms/using/rule-editor.md)regole.
+I AEM Forms consentono agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice dell&#39;editor [di](/help/forms/using/rule-editor.md)regole.
 
 Questo documento è incentrato sulla scrittura di JavaScript tramite l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare un servizio.
 
@@ -28,14 +31,6 @@ L&#39; `guidelib.dataIntegrationUtils.executeOperation` API richiama un servizio
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
-
-L&#39;API richiede i seguenti parametri.
-
-| Parametro | Descrizione |
-|---|---|
-| `operationInfo` | Struttura per specificare l&#39;identificatore del modello dati del modulo, il titolo dell&#39;operazione e il nome dell&#39;operazione |
-| `inputs` | Struttura per specificare gli oggetti modulo i cui valori vengono immessi nell&#39;operazione del servizio |
-| `outputs` | Struttura per specificare gli oggetti modulo che verranno compilati con i valori restituiti dall&#39;operazione del servizio |
 
 La struttura dell&#39; `guidelib.dataIntegrationUtils.executeOperation` API specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
 
@@ -64,20 +59,32 @@ La struttura API specifica i seguenti dettagli sull&#39;operazione del servizio.
    <th>Descrizione</th>
   </tr>
   <tr>
-   <td><code>forDataModelId</code></td>
-   <td>Specificare il percorso dell'archivio del modello dati del modulo con il relativo nome</td>
+   <td><code>operationInfo</code></td>
+   <td>Struttura per specificare l'identificatore del modello dati del modulo, il titolo dell'operazione e il nome dell'operazione</td>
+  </tr>
+  <tr>
+   <td><code>formDataModelId</code></td>
+   <td>Specifica il percorso dell'archivio del modello dati del modulo con il relativo nome</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
-   <td>Specificare il nome dell'operazione del servizio da eseguire</td>
+   <td>Specifica il nome dell'operazione del servizio da eseguire</td>
   </tr>
   <tr>
-   <td><code>input</code></td>
-   <td>Mappare uno o più oggetti modulo agli argomenti di input per l'operazione del servizio</td>
+   <td><code>inputs</code></td>
+   <td>Mappa uno o più oggetti modulo agli argomenti di input per l'operazione del servizio</td>
   </tr>
   <tr>
-   <td>Output</td>
-   <td>Mappare uno o più oggetti modulo ai valori di output dall'operazione del servizio per compilare i campi del modulo<br /> </td>
+   <td><code>Outputs</code></td>
+   <td>Mappa uno o più oggetti modulo ai valori di output dell'operazione del servizio per compilare i campi del modulo<br /> </td>
+  </tr>
+  <tr>
+   <td><code>success</code></td>
+   <td>Restituisce valori basati sugli argomenti di input per l'operazione del servizio. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>failure</code></td>
+   <td>Visualizza un messaggio di errore se la funzione di callback success non visualizza i valori di output in base agli argomenti di input. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -104,3 +111,41 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
+## Utilizzo dell&#39;API con la funzione di callback {#using-the-api-callback}
+
+È inoltre possibile richiamare il servizio del modello dati modulo utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API con una funzione di callback. La sintassi API è la seguente:
+
+```
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
+```
+
+La funzione call back può avere funzioni `success` e `failure` callback.
+
+### Script di esempio con funzioni di callback success e failure {#callback-function-success-failure}
+
+Lo script di esempio seguente utilizza l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare l&#39;operazione di `GETOrder` servizio configurata nel modello dati del `employeeOrder` modulo.
+
+L&#39; `GETOrder` operazione assume il valore nel campo `Order ID` modulo come input per l&#39; `orderId` argomento e restituisce il valore della quantità dell&#39;ordine nella funzione di `success` callback.  Se la funzione di `success` callback non restituisce la quantità dell&#39;ordine, la funzione di `failure` callback visualizza il `Error occured` messaggio.
+
+>[!NOTE]
+>
+> Se si utilizza la funzione di `success` callback, i valori di output non vengono inseriti nei campi modulo specificati.
+
+```
+var operationInfo = {
+    "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
+    "operationTitle": "GETOrder",
+    "operationName": "GETOrder"
+};
+var inputs = {
+    "orderId" : Order ID
+};
+var outputs = {};
+var success = function (wsdlOutput, textStatus, jqXHR) {
+order_quantity.value = JSON.parse(wsdlOutput).quantity;
+ };
+var failure = function(){
+alert('Error occured');
+};
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, success, failure);
+```
