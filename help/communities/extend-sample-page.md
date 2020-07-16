@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
 
-# Aggiungi commento a pagina di esempio {#add-comment-to-sample-page}
+# Aggiungi commento a pagina di esempio  {#add-comment-to-sample-page}
 
 Ora che i componenti per il sistema di commenti personalizzato sono presenti nella directory dell&#39;applicazione (/apps), è possibile utilizzare il componente esteso. L’istanza del sistema di commenti in un sito Web da modificare deve impostare resourceType come sistema di commenti personalizzato e includere tutte le librerie client necessarie.
 
@@ -30,7 +33,7 @@ La Guida ai componenti [della](/help/communities/components-guide.md) community 
 
 Tenere presenti le tre librerie client necessarie affinché Commenti possa eseguire correttamente il rendering e il funzionamento. Devono essere inclusi dove si fa riferimento ai commenti estesi e nella libreria [client dei commenti](/help/communities/extend-create-components.md#create-a-client-library-folder) estesi ( `apps.custom.comments`).
 
-![chlimage_1-79](assets/chlimage_1-79.png)
+![chlimage_1-47](assets/chlimage_1-47.png)
 
 ### Aggiunta di commenti personalizzati a una pagina {#add-custom-comments-to-a-page}
 
@@ -42,17 +45,17 @@ Affinché il commento venga visualizzato e funzioni correttamente, è necessario
 
 #### Commenti Clientlibs sulla pagina di esempio {#comments-clientlibs-on-sample-page}
 
-![Commenti Clientlibs sulla pagina di esempio](assets/chlimage_1-80.png)
+![chlimage_1-48](assets/chlimage_1-48.png)
 
 #### Autore: Commento Alt sulla pagina di esempio {#author-alt-comment-on-sample-page}
 
-![Commento Alt sulla pagina di esempio](assets/chlimage_1-81.png)
+![chlimage_1-49](assets/chlimage_1-49.png)
 
 #### Autore: Nodo commenti pagina di esempio {#author-sample-page-comments-node}
 
 È possibile verificare resourceType in CRXDE visualizzando le proprietà del nodo dei commenti per la pagina di esempio in `/content/sites/sample/en/jcr:content/content/primary/comments`.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![chlimage_1-50](assets/chlimage_1-50.png)
 
 #### Pubblica pagina di esempio {#publish-sample-page}
 
@@ -64,6 +67,8 @@ Dopo aver pubblicato l&#39;applicazione personalizzata e la pagina di esempio, �
 
 Di seguito è riportato aaron.mcdonald@mailinator.com di un commento:
 
-![chlimage_1-83](assets/chlimage_1-83.png) ![chlimage_1-84](assets/chlimage_1-84.png)
+![chlimage_1-51](assets/chlimage_1-51.png)
+
+![chlimage_1-52](assets/chlimage_1-52.png)
 
 Ora che il componente esteso funziona correttamente con l’aspetto predefinito, è ora di modificare l’aspetto.
