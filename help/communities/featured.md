@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ## Introduzione {#introduction}
 
-La funzione di contenuto disponibile fornisce un&#39;area per i visitatori del sito che hanno effettuato l&#39;accesso (membri della community) nell&#39;ambiente di pubblicazione per evidenziare i contenuti per
+La funzione di contenuto disponibile fornisce un’area per i visitatori del sito che hanno effettuato l’accesso (membri della community) nell’ambiente di pubblicazione per evidenziare i contenuti relativi a:
 
 * [Blog](blog-feature.md)
 * [Calendari](calendar.md)
@@ -33,8 +36,8 @@ La possibilità di visualizzare il contenuto può essere consentita o disabilita
 
 Questa sezione della documentazione descrive quanto segue:
 
-* Aggiunta di contenuti contenuti a un sito community
-* Impostazioni di configurazione per il `Featured Content` componente
+* Aggiunta di contenuti contenuti a un sito community.
+* Impostazioni di configurazione per il `Featured Content` componente.
 
 ## Aggiunta di contenuti contenuti a una pagina {#adding-featured-content-to-a-page}
 
@@ -54,18 +57,25 @@ Quando sono incluse le librerie [lato client](essentials-featured.md#essentials-
 
 Selezionate il `Featured Content` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
+
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### scheda Impostazioni {#settings-tab}
 
 Nella scheda **[!UICONTROL Impostazioni]** , identificate il contenuto da includere:
 
-* **[!UICONTROL Nome]** visualizzato Titolo per l&#39;elenco del contenuto disponibile. For example `Featured Questions` or `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
+* **[!UICONTROL Nome visualizzato]**
+
+   Titolo per l’elenco del contenuto disponibile. For example `Featured Questions` or `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
 
 * **[!UICONTROL Posizione del contenuto in primo piano]**
-   *(Obbligatorio)* Passate alla pagina contenente il contenuto che potrebbe essere una funzione (i componenti di tale pagina devono essere configurati per Consenti contenuto disponibile). Esempio, `/content/sites/engage/en/forum`
 
-* **[!UICONTROL Limite]** visualizzazione Il numero massimo di contenuti contenuti da visualizzare. Il valore predefinito è 5.
+   *(Obbligatorio)* Passate alla pagina contenente il contenuto che potrebbe essere una funzione (i componenti di tale pagina devono essere configurati per Consenti contenuto disponibile). Esempio, `/content/sites/engage/en/forum`.
+
+* **[!UICONTROL Limite di visualizzazione]**
+
+   Il numero massimo di contenuti contenuti da visualizzare. Il valore predefinito è 5.
 
 ## Esperienza dei visitatori del sito {#site-visitor-experience}
 
