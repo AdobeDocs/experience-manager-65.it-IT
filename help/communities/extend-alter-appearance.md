@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 618464d1e01986786a47a4e9c6ecce87e2a77ec3
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 0%
 
 ---
 
@@ -26,28 +29,29 @@ Per una semplice dimostrazione, viene rimossa una funzione visiva, l’avatar mo
 >
 >Per utilizzare l’estensione, l’istanza del sistema di commenti in un sito Web da influenzare (/content) deve impostare resourceType come sistema di commenti personalizzato.
 
+
 ## Modificare gli script HBS {#modify-the-hbs-scripts}
 
 Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Apri [/app/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Apri [/app/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * commentare il tag che include l&#39;avatar per un post di commento (~ riga 21):
-
-      ```
-      <!--
-       <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-       -->
-      ```
-
-* Apri [/app/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
-
-   * commentare il tag che include l&#39;avatar per la voce di commento successiva (~ riga 44):
+   * Aggiungete un commento al tag che include l&#39;avatar per un post di commento (~ riga 21):
 
       ```
-      <!--
-       <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-       -->
+        <!--
+         <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+         -->
+      ```
+
+* Apri [/app/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+
+   * Aggiungete un commento al tag che include l&#39;avatar per la voce di commento successiva (~ riga 44):
+
+      ```
+        <!--
+         <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+         -->
       ```
 
 * Seleziona **Salva tutto**
@@ -56,21 +60,21 @@ Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 Dopo che l’applicazione è stata modificata, è necessario replicare nuovamente il componente personalizzato.
 
-Un modo per farlo è
+Un modo per farlo è:
 
 * Dal menu principale
 
-   * selezionare **Strumenti > Operazioni > Replica**
-   * select `Activate Tree`
-   * set `Start Path`: to `/apps/custom`
-   * deselect `Only Modified`
-   * pulsante `Activate`di selezione
+   * Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
+   * Selezionare **[!UICONTROL Attiva albero]**.
+   * Impostate `Start Path` su `/apps/custom`.
+   * Deselezionare **[!UICONTROL Solo Modificato]**.
+   * Fate clic sul pulsante **[!UICONTROL Attiva]** .
 
 ### Visualizza commento modificato sulla pagina di esempio pubblicata {#view-modified-comment-on-published-sample-page}
 
 [Continuando l’esperienza](/help/communities/extend-sample-page.md#publish-sample-page) nell’istanza di pubblicazione, ancora con accesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
 
-![chlimage_1-136](assets/chlimage_1-136.png)
+![chlimage_1-81](assets/chlimage_1-81.png)
 
 ### Esempio di pacchetto di estensione dei commenti {#sample-comment-extension-package}
 
