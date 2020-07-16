@@ -218,14 +218,14 @@ Fornisce un registro di tutte le operazioni di aggiornamento in esecuzione dai `
 `revision.log`
 Informazioni sulla registrazione delle revisioni.`com.adobe.cq.upgradesexecutor`
 
-* [!NOTE]
+>[!NOTE]
+>
+>I file di registro ImageServer e s7access non sono inclusi nel pacchetto **Download Full **generato dalla pagina **system/console/status-Bundlelist*. Per motivi di assistenza, in caso di [!DNL Dynamic Media] problemi, aggiungete i registri ImageServer e s7access quando contattate l’Assistenza clienti.
 
-   * I file di registro ImageServer e s7access non sono inclusi nel pacchetto **Download Full **generato dalla pagina **system/console/status-Bundlelist*. Per motivi di assistenza, in caso di [!DNL Dynamic Media] problemi, aggiungete i registri ImageServer e s7access quando contattate l’Assistenza clienti.
-
->Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
+### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
 Il livello di registro predefinito (Configurazione[registrazione](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)Apache Sling) è Informazioni, quindi i messaggi di debug non vengono registrati.
 
-### Per attivare il livello di registro di debug per un logger, impostare la proprietà `org.apache.sling.commons.log.level` su debug nell&#39;archivio. Ad esempio, per configurare `/libs/sling/config/org.apache.sling.commons.log.LogManager` la registrazione Sling Apache [globale](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
+Per attivare il livello di registro di debug per un logger, impostare la proprietà `org.apache.sling.commons.log.level` su debug nell&#39;archivio. Ad esempio, per configurare `/libs/sling/config/org.apache.sling.commons.log.LogManager` la registrazione Sling Apache [globale](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 [!CAUTION]](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
 
@@ -246,11 +246,16 @@ Errore irreversibile
 |---|---|---|
 | L&#39;azione non è riuscita. L&#39;installazione continua, ma una parte di AEM WCM non è stata installata correttamente e non funzionerà. | 2 | Avvertenza |
 | L&#39;azione è riuscita ma ha incontrato dei problemi. AEM WCM potrebbe funzionare o meno correttamente. | 3 | Informazioni |
-| L&#39;azione è riuscita. | Creare un file di registro personalizzato {#create-a-custom-log-file} | [!NOTE] |
+| L&#39;azione è riuscita. | 
 
-### When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+### Creare un file di registro personalizzato {#create-a-custom-log-file}
 
->[!NOTE]In alcune circostanze può essere utile creare un file di registro personalizzato con un livello di registro diverso. È possibile eseguire questa operazione nella directory archivio:
+When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+
+>[!NOTE]
+>
+>In alcune circostanze può essere utile creare un file di registro personalizzato con un livello di registro diverso. È possibile eseguire questa operazione nella directory archivio:
+
 Se non già esistente, create una nuova cartella di configurazione ( `sling:Folder`) per il progetto `/apps/<*project-name*>/config`.
 
 In `/apps/<*project-name*>/config`, create un nodo per la nuova configurazione [del log di registrazione](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration)Apache Sling:
@@ -601,7 +606,9 @@ raccogliere il maggior numero possibile di informazioni per sviluppare una buona
  </tbody>
 </table>
 
-### L&#39; `request.log` offerta offre un modo integrato per vedere quanto tempo le richieste richiedono. A scopo di sviluppo è utile per `tail -f` il `request.log` e guardare per tempi di risposta lenti. Per analizzare un numero maggiore `request.log` consigliamo l&#39; [utilizzo di `rlog.jar` cui è possibile ordinare e filtrare i tempi](#using-rlog-jar-to-find-requests-with-long-duration-times)di risposta.
+### Interpreting the request.log {#interpreting-the-request-log}
+
+L&#39; `request.log` offerta offre un modo integrato per vedere quanto tempo le richieste richiedono. A scopo di sviluppo è utile per `tail -f` il `request.log` e guardare per tempi di risposta lenti. Per analizzare un numero maggiore `request.log` consigliamo l&#39; [utilizzo di `rlog.jar` cui è possibile ordinare e filtrare i tempi](#using-rlog-jar-to-find-requests-with-long-duration-times)di risposta.
 
 Si consiglia di isolare le pagine &quot;lente&quot; dal `request.log`pannello, quindi di sintonizzarle singolarmente per ottenere prestazioni migliori. In genere questo viene fatto includendo le metriche delle prestazioni per componente o utilizzando uno strumento di profiling delle prestazioni come ` [yourkit](https://www.yourkit.com/)`.
 
@@ -735,9 +742,7 @@ $ java -jar ../opt/helpers/rlog.jar -n 10 request.log
 
 Per ridurre al minimo l&#39;impatto di casi speciali (come il processo di garbage collection, ecc.), si consiglia di utilizzare uno strumento come `apachebench` (vedere, ad esempio, [ab[#$tu387] per ulteriori documenti) per identificare le perdite di memoria e analizzare in modo selettivo il tempo di risposta.
 
-### 
-
-
+### Apache Bench {#apache-bench}
 
 `apachebench` visualizza anche il tempo per richiesta come media, per tutte le richieste simultanee; vedere `Time per request: 54.595 [ms]` (media, per tutte le richieste simultanee). Potete modificare il valore del parametro di concorrenza `-c` (numero di richieste multiple da eseguire alla volta) per visualizzare eventuali effetti.
 
