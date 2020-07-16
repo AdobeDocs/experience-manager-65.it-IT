@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
 
 ## Panoramica {#overview}
 
-FFmpeg è una soluzione per la conversione e lo streaming audio e video e, se installata, viene utilizzata per la corretta transcodifica delle risorse [](../../help/sites-authoring/default-components-foundation.md#video) video e per la funzione di abilitazione di AEM Communities.
+FFmpeg è una soluzione per la conversione e lo streaming audio e video e, se installato, viene utilizzato per la corretta transcodifica delle risorse [](../../help/sites-authoring/default-components-foundation.md#video) video e per la funzione di abilitazione degli AEM Communities.
 
 FFmpeg viene utilizzato nell’ambiente di authoring per ottenere i metadati per le risorse di abilitazione caricate e generare una miniatura da visualizzare quando si elenca le risorse di abilitazione.
 
@@ -60,7 +63,7 @@ Per modificare il flusso di lavoro Aggiorna risorsa  DAM e, in questo esempio, d
 
    * **[!UICONTROL Articoli]**: Cancella tutte le voci per disabilitare la transcodifica di valori predefiniti: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
-![chlimage_1-372](assets/chlimage_1-372.png)
+   ![chlimage_1-372](assets/chlimage_1-372.png)
 
 * Selezionare **[!UICONTROL OK]** per chiudere la `Step Properties` finestra di dialogo.
 
