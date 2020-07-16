@@ -336,16 +336,12 @@ Se si dispone di più configurazioni, per impostazione predefinita AEM visualizz
 >* Le risorse presenti nella cartella ad-hoc non verranno visualizzate nel browser dei contenuti di Scene7.
 >* Quando l’[anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser dei contenuti di Scene7 vengono visualizzate le risorse pubblicate e non pubblicate in Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
-
-   >
-   >
-* Per i video, il browser dei contenuti di Scene7 supporta:
-   >
-   >  
-* Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
+>
+>* Per i video, il browser dei contenuti di Scene7 supporta:
+>
+>  * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
 >  * Video MP4 singolo
 >  * Video F4V singolo
-
 
 ### Esplorazione dei contenuti {#browsing-content-in-the-classic-ui}
 
