@@ -223,6 +223,7 @@ Informazioni sulla registrazione delle revisioni.`com.adobe.cq.upgradesexecutor`
 >I file di registro ImageServer e s7access non sono inclusi nel pacchetto **Download Full **generato dalla pagina **system/console/status-Bundlelist*. Per motivi di assistenza, in caso di [!DNL Dynamic Media] problemi, aggiungete i registri ImageServer e s7access quando contattate l’Assistenza clienti.
 
 ### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
+
 Il livello di registro predefinito (Configurazione[registrazione](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)Apache Sling) è Informazioni, quindi i messaggi di debug non vengono registrati.
 
 Per attivare il livello di registro di debug per un logger, impostare la proprietà `org.apache.sling.commons.log.level` su debug nell&#39;archivio. Ad esempio, per configurare `/libs/sling/config/org.apache.sling.commons.log.LogManager` la registrazione Sling Apache [globale](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
