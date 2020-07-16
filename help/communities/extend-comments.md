@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
 
-# Estendi componente commenti {#extend-comments-component}
+# Estendi componente commenti  {#extend-comments-component}
 
 L’intenzione di [estendere](client-customize.md#extensions) un componente predefinito consiste nel modificare l’aspetto o il comportamento di un componente per usi specifici.
 
@@ -24,6 +27,7 @@ Il percorso del componente è univoco e fa riferimento al componente predefinito
 >[!NOTE]
 >
 >L’estensione di un componente [sovrapposto](client-customize.md#overlays) non è supportata.
+
 
 ## Esempio {#example}
 
