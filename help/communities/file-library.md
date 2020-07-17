@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '753'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +32,7 @@ Questa sezione della documentazione descrive quanto segue:
 
 ### Aggiunta di una libreria di file a una pagina {#adding-a-file-library-to-a-page}
 
-Per aggiungere un `File Library` componente a una pagina in modalità di creazione, individuare il componente
+Per aggiungere un `File Library` componente a una pagina in modalità di creazione, individuare il componente:
 
 * `Communities / File Library`
 
@@ -39,13 +42,15 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando sono incluse le librerie [lato client](/help/communities/essentials-file-library.md#essentials-for-client-side) richieste, verrà visualizzato il `File Library` componente:
 
-![chlimage_1-145](assets/chlimage_1-145.png)
+![chlimage_1-430](assets/chlimage_1-430.png)
 
 ### Configurazione della libreria dei file {#configuring-file-library}
 
 Selezionate il `File Library` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-146](assets/chlimage_1-146.png) ![forum-config-1](assets/forum-config-1.png)
+![chlimage_1-431](assets/chlimage_1-431.png)
+
+![chlimage_1-432](assets/chlimage_1-432.png)
 
 #### Scheda Commenti {#comments-tab}
 
