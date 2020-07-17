@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 10%
 
 ---
 
@@ -32,7 +35,7 @@ La funzione forum fornisce un’area per i visitatori del sito che hanno effettu
 Questa sezione della documentazione descrive quanto segue:
 
 * Aggiunta della funzione forum a un sito AEM.
-* Impostazioni di configurazione per il `Forum`componente.
+* Impostazioni di configurazione per il `Forum` componente.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
@@ -44,15 +47,17 @@ trascinatelo nella posizione desiderata su una pagina in cui dovrebbe essere vis
 
 Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/essentials-forum.md#essentials-for-client-side) richieste, viene visualizzato il `Forum`componente:
+Quando sono incluse le librerie [lato client](/help/communities/essentials-forum.md#essentials-for-client-side) richieste, verrà visualizzato il `Forum` componente:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Configurazione di un forum {#configuring-a-forum}
 
 Selezionate il `Forum` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
+
+![forum-config](assets/forum-config.png)
 
 #### scheda Impostazioni {#settings-tab}
 
@@ -109,7 +114,7 @@ Nella scheda **Impostazioni** , specificate le impostazioni per gli argomenti e 
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è attivata, consentite ai membri di ricevere notifiche sui nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, consentite ai membri di ricevere notifiche relative ai nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **Dimensione file massima**
 
@@ -240,7 +245,9 @@ Nella scheda **Impostazioni** ordinamento, specificare in che modo i commenti in
 
 * **Seleziona le opzioni di tempo per l&#39;ordinamento Analytics**
 
-   Per selezionare una delle due opzioni, trascinate verso il basso `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
+   Per selezionare una delle opzioni seguenti, effettuate il pull down: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+
+   Default is `All`.
 
 ### Informazioni aggiuntive {#additional-information}
 
