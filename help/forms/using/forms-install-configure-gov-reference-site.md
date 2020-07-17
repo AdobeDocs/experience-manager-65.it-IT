@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
 workflow-type: tm+mt
-source-wordcount: '4685'
+source-wordcount: '5004'
 ht-degree: 1%
 
 ---
@@ -222,6 +222,48 @@ Questa sezione contiene informazioni e istruzioni sulla configurazione di Adobe 
 1. Fornire l&#39;ID client e il Segreto cliente configurati dall&#39;istanza Adobe Sign configurata.
 1. Fare clic su &quot;Connetti ad Adobe Sign&quot;.
 1. Dopo la connessione, fate clic su &quot;Save and Close&quot; (Salva e chiudi) per completare l&#39;integrazione.
+
+### Compilare e firmare più moduli {#fill-sign-multiple-forms}
+
+Questo documento descrive i passaggi necessari per impostare la capacità di compilare e firmare più moduli. Puoi anche provare la [stessa funzionalità qui](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Questo esempio memorizza i dati necessari per questo esempio nell’archivio di AME. Questa procedura consente di distribuire risorse demo sul server locale in modo semplice. Nella vita reale archivieremo le stesse informazioni in RDMS di vostra scelta.
+
+#### Prerequisiti {#pre-requisites-fill-sign-multiple-forms}
+
+* [Configura servizio di posta CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
+
+* [Configurare i AEM Forms con Adobe Sign](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
+
+#### Impostare l’esempio sul server locale {#setup-sample-local-server}
+
+Per impostare l’esempio sul server locale, effettuate le seguenti operazioni:
+
+1. Installate il pacchetto. Questo pacchetto contiene i seguenti elementi:
+   * Moduli adattivi. I moduli si trovano nella cartella **formsandsigndemo**
+   * Pacchetti OSGI personalizzati
+   * Flussi di lavoro
+1. Configura il modulo [di](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) consenso per utilizzare la configurazione di Adobe Sign.
+1. Configura il modulo di blocco [interessi](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) con più stati per utilizzare la configurazione di Adobe Sign.
+1. Apri modello di flusso di lavoro [Formsandsigningdemo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) :
+   1. Aprire il passaggio Salva moduli in CRX.
+   1. Modificate l’host locale nell’indirizzo IP di AEM Server.
+   1. Salvare le modifiche.
+   1. Sincronizzate il flusso di lavoro per generare il modello di runtime.
+
+      ![Firmare più moduli](assets/sign-multiple-forms.jpg)
+
+   1. Aprire il modulo [](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)Rifinanzia.
+   1. Compila i campi richiesti. Assicurarsi di fornire un indirizzo e-mail valido e selezionare uno o più moduli per firmare e inviare il modulo.
+Viene inviato un messaggio e-mail contenente un collegamento per la compilazione e la firma dei moduli.
+
+#### Risoluzione dei problemi {#troubleshoot-sign-multiple-forms}
+
+* I registri di debug vengono scritti nel `signingmultipleforms.log` file presente nella cartella di registro del server.
+
+* I moduli da firmare sono memorizzati in `/content/formsforsigning`.
+
+* Accertatevi di disporre di tutti i bundle nello stato attivo.
+
+* Controllare la configurazione del server di posta elettronica.
 
 ### (Facoltativo) Configurazione di MS Dynamics cloud {#ms-dynamics-cloud-configuration}
 
@@ -549,7 +591,7 @@ Dopo aver creato un&#39;integrazione, è possibile completare l&#39;installazion
 
 Una volta completata la configurazione IMS, possiamo procedere alla verifica della configurazione cloud in AEM. Se la configurazione non esiste, effettua i seguenti passaggi per creare la configurazione cloud in AEM:
 
-1. Aprite il browser e andate all&#39;URL del sistema https://&lt;nome_dominio>:&lt;porta_sistema>
+1. Aprite il browser e passate all&#39;URL del sistema https://&lt;nome_dominio>:&lt;porta_sistema>
 
 1. Fate clic  Adobe Experience Manager nell&#39;angolo in alto a sinistra della schermata > Strumenti > Servizi cloud > Configurazione della conversazione automatizzata dei moduli.
 
@@ -579,7 +621,7 @@ Una volta completata la configurazione IMS, possiamo procedere alla verifica del
 
 Una volta completata la configurazione IMS, possiamo procedere alla creazione della configurazione cloud in AEM.
 
-1. Aprite il browser e andate all&#39;URL del sistema https://&lt;nome_dominio>:&lt;porta_sistema>
+1. Aprite il browser e passate all&#39;URL del sistema https://&lt;nome_dominio>:&lt;porta_sistema>
 
 1. Fate clic  Adobe Experience Manager nell&#39;angolo in alto a sinistra della schermata > Strumenti > Servizi cloud > Configurazione della conversazione automatizzata dei moduli.
 
