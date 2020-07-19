@@ -3,9 +3,9 @@ title: 'Schemi di metadati per definire il layout della pagina delle proprietà 
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 0496d2d541be052e1201ada2bff99a2ed6fef4f3
 workflow-type: tm+mt
-source-wordcount: '2644'
+source-wordcount: '2670'
 ht-degree: 7%
 
 ---
@@ -43,16 +43,17 @@ Per visualizzare un elenco di moduli o modelli, nell&#39; [!DNL Experience Manag
 |---|---|---|
 | [!UICONTROL impostazione predefinita] |  | Modulo schema metadati di base per le risorse. |
 |  | I seguenti moduli secondari ereditano le proprietà del modulo [!UICONTROL predefinito] : |  |
+|  | [!UICONTROL dm_video] | Modulo schema per video Dynamic Media. |
 |  | [!UICONTROL immagine] | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con il sottotipo TIFF.</li></ul> |
 |  | [!UICONTROL applicazione] | Modulo schema per risorse con tipo MIME, ad esempio `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Modulo schema per risorse con PDF di tipo secondario. |
 |  | [!UICONTROL video] | Modulo schema per risorse video con tipo MIME, ad esempio `video/avi` e `video/mp4`. |
 | [!UICONTROL collection] |  | Modulo schema per le raccolte. |
 | [!UICONTROL contentFragment] |  | [Modulo schema per frammenti](/help/sites-developing/customizing-content-fragments.md)di contenuto. |
 | [!UICONTROL forms] |  | Questo modulo schema si riferisce a [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] |  | Modulo di schema per contenuti generati dall&#39;utente e risorse integrate in  Experience Manager dai social media. |
 
 <!-- 
-TBD: Add dm_video child for the default form OOTB.
-video doesn't contain any sub types as listed above OOTB.
+TBD: video doesn't contain any sub types as listed above OOTB.
 application doesn't contain the sub type zip OOTB.
 -->
 
