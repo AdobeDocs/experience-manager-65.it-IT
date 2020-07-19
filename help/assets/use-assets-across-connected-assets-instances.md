@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7d001ce126e72663bf8ad0722cf59c1cb7239ae0
+source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2105'
 ht-degree: 44%
 
 ---
@@ -27,8 +27,8 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
-* Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna implementazione.
-* Per  tipi di distribuzione di Adobe Experience Manager, uno dei criteri supportati è soddisfatto. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona con [!DNL Experience Manager] un Cloud Service. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [connesse in  Experience Manager come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona con [!DNL Experience Manager] un Cloud Service. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [connesse in  Experience Manager come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] come Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] locale |
    |---|---|---|---|
@@ -41,7 +41,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finder e utilizzano le risorse ricercate in Editor pagina. I documenti vengono aggiunti al `Download` componente e le immagini al `Image` componente. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. I formati supportati sono:
 
 * **Formati** immagine: Formati supportati dal componente [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html) Immagine. [!DNL Dynamic Media] le immagini non sono supportate.
-* **Formati** del documento: Consulta [i formati dei documenti supportati dalle risorse](assets-formats.md#supported-document-formats)connesse.
+* **Formati** del documento: Vedere i formati [di documento](assets-formats.md#supported-document-formats)supportati.
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
 
@@ -96,8 +96,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    | Prima | Dopo |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
@@ -182,11 +182,12 @@ Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa loc
 
 * Gli utenti possono cercare risorse remote e trascinarle sulla pagina locale durante l’authoring. Non sono supportate altre funzionalità.
 * L’operazione di recupero si interrompe per timeout dopo 5 secondi. Gli autori possono rilevare dei problemi durante il recupero delle risorse, ad esempio in caso di problemi di rete. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
-* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. Le risorse sono di sola lettura.
+* Le risorse recuperate possono essere sottoposte a semplici modifiche non distruttive e alle modifiche supportate tramite il componente `Image` di Le risorse sono di sola lettura.
+* L’unico metodo per recuperare nuovamente la risorsa consiste nel trascinarla su una pagina. Non esiste un supporto API o altri metodi per recuperare nuovamente una risorsa e aggiornarla.
 
 ## Risoluzione dei problemi {#troubleshoot}
 
 Per risolvere eventuali problemi relativi allo scenario di errore comune, procedere come segue:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
-* Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni necessarie per recuperarlo o l&#39;errore di rete può essere dovuto a cause. Assicurarsi che la risorsa non venga rimossa dal DAM remoto. Verificate che siano disponibili le autorizzazioni appropriate e che siano soddisfatti i prerequisiti. Provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controlla l’[elenco dei processi asincroni](/help/sites-administering/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
+* Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni necessarie per recuperarlo o l&#39;errore di rete può essere dovuto a cause. Assicurarsi che la risorsa non venga rimossa dal DAM remoto. Verificate che siano disponibili le autorizzazioni appropriate e che i prerequisiti siano soddisfatti. Provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controlla l’[elenco dei processi asincroni](/help/sites-administering/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
