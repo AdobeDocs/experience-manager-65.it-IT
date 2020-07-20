@@ -166,7 +166,7 @@ Per ulteriori informazioni sui pattern di file, vedere [Informazioni sui pattern
 
 * **overwriteDuplicateFilename (Boolean)**: Se è impostata su True, i file nella cartella dei risultati e nella cartella preserve vengono sovrascritti. Se è impostata su False, per il nome vengono utilizzati file e cartelle con un suffisso indice numerico. Il valore predefinito è False.
 * **preserveOnFailed (Boolean)**: Mantieni i file di input in caso di mancata esecuzione dell&#39;operazione su un servizio. Il valore predefinito è true.
-* **inputFilePattern (String)**: Specifica il pattern dei file di input per una cartella esaminata. Crea un elenco dei file consentiti.
+* **inputFilePattern (String)**: Specifica il pattern dei file di input per una cartella esaminata. Crea un inserire nell&#39;elenco Consentiti  dei file.
 * **asincrono (booleano)**: Identifica il tipo di chiamata come asincrono o sincrono. Il valore predefinito è true (asincrono). L&#39;elaborazione del file è un&#39;attività che richiede risorse. Mantenere il valore del flag asincrono su true per evitare di soffocare il thread principale del processo di scansione. In un ambiente cluster, è fondamentale mantenere il flag true per abilitare il bilanciamento del carico per i file elaborati nei server disponibili. Se il flag è false, il processo di scansione tenta di eseguire l&#39;elaborazione di ciascun file/cartella di livello principale in sequenza all&#39;interno del proprio thread. Non impostare il flag su false senza un motivo specifico, ad esempio l&#39;elaborazione basata su flusso di lavoro in una configurazione a server singolo.
 
 >[!NOTE]
