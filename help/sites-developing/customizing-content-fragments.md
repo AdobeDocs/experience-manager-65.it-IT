@@ -50,6 +50,7 @@ A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
    * Un frammento fa riferimento al modello; le modifiche apportate al modello possono quindi avere o avranno effetto su eventuali frammenti dipendenti.
    * I modelli sono composti di tipi di dati.
    * Le funzioni per aggiungere nuove varianti, ecc., devono aggiornare di conseguenza il frammento.
+
    >[!CAUTION]
    >
    >Qualsiasi modifica apportata a un modello di frammento di contenuto esistente può avere un impatto sui frammenti dipendenti; in questo modo è possibile creare proprietà orfane nei frammenti.
@@ -88,7 +89,8 @@ ad esempio `jcr:content/data/myvariation`
    * I dati di ciascun elemento vengono memorizzati nel rispettivo nodo secondario come proprietà con il nome dell&#39;elemento:
 Ad esempio, il contenuto dell&#39;elemento `text` viene memorizzato come proprietà `text` in `jcr:content/data/master`
 
-* I metadati e il contenuto associato sono memorizzati sotto `jcr:content/metadata`Eccetto il titolo e la descrizione, che non sono considerati metadati tradizionali e memorizzati in `jcr:content`
+* I metadati e il contenuto associato sono memorizzati sotto `jcr:content/metadata`Eccetto il titolo e la descrizione, che non sono considerati metadati tradizionali e memorizzati in 
+`jcr:content`
 
 #### Mappatura di frammenti di contenuto semplici a risorse {#mapping-simple-content-fragments-to-assets}
 
@@ -158,7 +160,8 @@ L’implementazione di back-end dei frammenti di contenuto, ad esempio, consente
 
 I parametri per questo possono essere configurati nella console [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Web, per la configurazione **del componente di frammento di** contenuto del bundle OSGi.
 
-* **Tipi** di risorse È possibile fornire un elenco di componenti `sling:resourceTypes` utilizzabili per il rendering di frammenti di contenuto e a cui applicare l&#39;elaborazione in background.
+* **Tipi** di risorse Elenco 
+`sling:resourceTypes` può essere fornito per definire i componenti utilizzati per il rendering dei frammenti di contenuto e a cui applicare l&#39;elaborazione in background.
 
 * **Proprietà** di riferimento È possibile configurare un elenco di proprietà per specificare la posizione di memorizzazione del riferimento al frammento relativo al rispettivo componente.
 
@@ -262,6 +265,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
    * un modello di frammento di contenuto o un modello di frammento di contenuto da cui creare un frammento di contenuto,
    * e (dopo la creazione) le informazioni strutturali di tale frammento
+
    Queste informazioni possono includere:
 
    * Accesso ai dati di base (titolo, descrizione)
@@ -276,6 +280,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Ottenere informazioni strutturali per una determinata variazione
       * Accedere al modello di variazione (vedere `VariationTemplate`)
    * Ottenere il contenuto associato iniziale
+
    Interfacce che rappresentano informazioni importanti:
 
    * `ElementTemplate`
@@ -318,6 +323,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Aggiungere raccolte
       * Rimuovere le raccolte
    * Accesso al modello o al modello del frammento
+
    Le interfacce che rappresentano gli elementi primari di un frammento sono:
 
    * **Elemento** contenuto ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
@@ -337,6 +343,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
       * Ottenere i dati di base (nome, titolo, descrizione)
       * Ottenere/impostare il contenuto
       * Sincronizzazione semplice, in base alle ultime informazioni modificate
+
    Tutte e tre le interfacce ( `ContentFragment`, `ContentElement`, `ContentVariation`) estendono l&#39; `Versionable` interfaccia, che aggiunge funzionalità di controllo delle versioni, necessarie per i frammenti di contenuto:
 
    * Creare una nuova versione dell&#39;elemento
@@ -504,7 +511,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Esempio: Specifica dell&#39;intervallo di salvataggio automatico {#example-specifying-the-auto-save-interval}
 
-L’intervallo di salvataggio automatico (in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
+L&#39;intervallo di salvataggio automatico (in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
 
 * Nodo: `<*conf-root*>/settings/dam/cfm/jcr:content`
 * Nome proprietà: `autoSaveInterval`
