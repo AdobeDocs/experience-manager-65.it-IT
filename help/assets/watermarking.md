@@ -3,7 +3,10 @@ title: Aggiungi una filigrana alle risorse digitali.
 description: Scoprite come usare la funzione Filigrana per aggiungere una filigrana digitale alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5035d3457187f4d5fe5c2af255a1a886df7291b4
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
@@ -35,3 +38,5 @@ Per applicare una filigrana alle risorse, aggiungi la filigrana nel flusso di la
 
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. Dall’interfaccia [!DNL Assets] utente, caricate una risorsa di esempio. La filigrana viene visualizzata con la dimensione del font, il colore e così via, nella posizione configurata nei passaggi precedenti.
+
+Per applicare filigrane ai documenti PDF a livello di programmazione o con informazioni dinamiche, è consigliabile utilizzare l&#39;offerta [AEM Document Services](/help/forms/using/overview-aem-document-services.md) .
