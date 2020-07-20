@@ -3,19 +3,19 @@ title: Come modificare o aggiungere i metadati
 description: Scoprite i metadati delle risorse [!DNL Adobe Experience Manager Assets] in vari modi per modificarli.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 1%
+source-wordcount: '436'
+ht-degree: 2%
 
 ---
 
 
 # Come modificare o aggiungere i metadati {#how-to-edit-or-add-metadata}
 
-I metadati sono informazioni aggiuntive sulla risorsa ricercabile. Viene estratto automaticamente quando caricate un’immagine. Potete modificare i metadati esistenti o aggiungere nuove proprietà di metadati ai campi esistenti (ad esempio, quando un campo di metadati è vuoto).
+I metadati sono informazioni aggiuntive sulla risorsa ricercabile. Viene estratto automaticamente quando caricate un’immagine. Potete modificare i metadati esistenti o aggiungere nuove proprietà di metadati al campo esistente, ad esempio quando un campo di metadati è vuoto.
 
-Poiché le organizzazioni necessitano di vocabolari di metadati controllati e affidabili, [!DNL Experience Manager Assets] non consentono l&#39;aggiunta su richiesta di nuove proprietà di metadati. Sebbene gli autori non possano aggiungere nuovi campi di metadati per le risorse, gli sviluppatori possono farlo. Consultate [Creare le proprietà dei metadati per le risorse](meta-edit.md#editing-metadata-schema).
+Le organizzazioni hanno bisogno di vocabolari di metadati controllati e affidabili. Pertanto [!DNL Experience Manager Assets] non è possibile aggiungere su richiesta nuove proprietà di metadati. Gli sviluppatori e non gli autori possono aggiungere nuovi campi di metadati per le risorse. Consultate [Creare le proprietà dei metadati per le risorse](meta-edit.md#editing-metadata-schema).
 
 ## Modificare i metadati di una risorsa {#editing-metadata-for-an-asset}
 
@@ -25,10 +25,11 @@ Per modificare i metadati, effettuate le seguenti operazioni:
 
    * Dall’ [!DNL Assets] interfaccia, selezionate la risorsa e fate clic su **[!UICONTROL Visualizza proprietà]** nella barra degli strumenti.
    * Dalla miniatura della risorsa, selezionate l’azione rapida **[!UICONTROL Visualizza proprietà]** .
-   * Dalla pagina della risorsa, fate clic su **[!UICONTROL Visualizza proprietà]** ![chlimage_1-168](assets/chlimage_1-168.png) nella barra degli strumenti.
+   * Dalla pagina della risorsa, fai clic sull’icona **[!UICONTROL Visualizza proprietà]** ![](assets/do-not-localize/info-circle-icon.png) Risorse nella barra degli strumenti.
+
    Nella pagina della risorsa vengono visualizzati tutti i metadati della risorsa. I metadati vengono estratti quando la risorsa viene caricata (assimilata) in [!DNL Experience Manager].
 
-   ![selezionate Proprietà risorsa per visualizzare i metadati](assets/asset-metadata.png)
+   ![Selezionate Proprietà di una risorsa per visualizzarne i metadati](assets/asset-metadata.png)
 
    *Figura: Modificate o aggiungete i metadati nella pagina[!UICONTROL Proprietà]risorsa.*
 
@@ -50,8 +51,14 @@ Per informazioni dettagliate, vedere [Modificare i moduli](metadata-schemas.md#e
 
 Potete aggiungere spazi dei nomi personalizzati all&#39;interno [!DNL Experience Manager]. Allo stesso modo in cui esistono spazi dei nomi predefiniti come `cq`, `jcr`e `sling`, potete avere uno spazio dei nomi per i metadati dell&#39;archivio e l&#39;elaborazione XML.
 
-1. Vai alla pagina di amministrazione del tipo di nodo `https:[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. Fate clic su **[!UICONTROL Spazi dei nomi]** nella parte superiore della pagina. La pagina di amministrazione dello spazio dei nomi viene visualizzata in una finestra.
-
-1. Per aggiungere uno spazio nomi, fate clic su **[!UICONTROL Nuovo]** in basso.
+1. Accedere alla pagina di amministrazione del tipo di nodo `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
+1. Per accedere alla pagina di amministrazione dello spazio dei nomi, fare clic su **[!UICONTROL Spazi dei nomi]** nella parte superiore della pagina.
+1. Per aggiungere uno spazio nomi, fate clic su **[!UICONTROL Nuovo]** nella parte inferiore della pagina.
 1. Specificate uno spazio nomi personalizzato nella convenzione spazio nomi XML. Specificate l’ID sotto forma di URI e il prefisso associato per l’ID. Fai clic su **[!UICONTROL Salva]**.
+
+>[!MORELIKETHIS]
+>
+>* [Informazioni sui metadati e le relative esigenze in Risorse](metadata.md)
+>* [Metadati XMP](xmp.md)
+>* [Riferimento schemi metadati](meta-ref.md)
+
