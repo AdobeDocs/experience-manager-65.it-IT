@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 72%
@@ -291,7 +291,7 @@ To link a field to a client context value, click **Select** to open the client-c
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-Il testo si aggiorna con il nome dell’utente attualmente connesso. Per ripristinare il valore originale, fare clic su **Reset **Accanto al campo.
+Il testo si aggiorna con il nome dell’utente attualmente connesso. Per ripristinare il testo al valore originale, fai clic su **Ripristina** accanto al campo.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -336,12 +336,16 @@ Se si dispone di più configurazioni, per impostazione predefinita AEM visualizz
 >* Le risorse presenti nella cartella ad-hoc non verranno visualizzate nel browser dei contenuti di Scene7.
 >* Quando l’[anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser dei contenuti di Scene7 vengono visualizzate le risorse pubblicate e non pubblicate in Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
->
->* Per i video, il browser dei contenuti di Scene7 supporta:
->
->  * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
->  * Video MP4 singolo
->  * Video F4V singolo
+
+   >
+   >
+* Per i video, il browser dei contenuti di Scene7 supporta:
+   >
+   >   
+   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
+   >   * Video MP4 singolo
+   >   * Video F4V singolo
+
 
 ### Esplorazione dei contenuti {#browsing-content-in-the-classic-ui}
 
