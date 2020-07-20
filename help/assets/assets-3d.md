@@ -16,7 +16,7 @@ ht-degree: 5%
 ---
 
 
-# Utilizzo di risorse 3D in Dynamic Media {#working-with-three-d-assets-dm}
+# Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
 
 Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 3D come esperienze coinvolgenti.
 
@@ -51,7 +51,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
 >
 >Le risorse 3D non sono supportate in Dynamic Media - Modalità ibrida.
 
-Prima di lavorare con risorse 3D in Dynamic Media, accertatevi che il vostro amministratore AEM abbia già attivato e configurato i servizi Dynamic Media Cloud in modalità Dynamic Media - Scene7.
+Prima di usare risorse 3D in Dynamic Media, accertatevi che l’amministratore AEM abbia già attivato e configurato i servizi Dynamic Media Cloud in modalità Dynamic Media - Scene7.
 
 Consultate [Configurazione dei servizi](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) di Dynamic Media Cloud in configurazione di Dynamic Media - modalità Scene7 e Risoluzione di [problemi relativi ad Dynamic Media - modalità Scene7.](/help/assets/troubleshoot-dms7.md)
 
