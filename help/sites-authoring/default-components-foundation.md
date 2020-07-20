@@ -183,7 +183,8 @@ Sono disponibili in due schede:
          * **Pagina padre** Consente di specificare il percorso manualmente o utilizzando il selettore. Non specificare nulla per utilizzare la pagina corrente come pagina padre.
       * **Opzioni per elenco fisso**
 
-         * **Pagine** Selezionare un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
+         * **Pagine** Selezionare un elenco di pagine. Use 
+`+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
       * **Opzioni per la ricerca**
 
          * **Inizia in** Consente di immettere un percorso di inizio, manualmente o utilizzando il selettore.
@@ -192,7 +193,8 @@ Sono disponibili in due schede:
       * **Opzioni di ricerca avanzata**
 
          * **Notazione predicato QueryBuilder** Consente di inserire una query di ricerca utilizzando la notazione del predicato QueryBuilder. Ad esempio, è possibile inserire “fulltext=Marketing” per visualizzare nel Carosello tutte le pagine il cui contenuto include “Marketing”. Consulta [API di QueryBuilder](/help/sites-developing/querybuilder-api.md) per una descrizione approfondita delle espressioni di query e per altri esempi.
-   * **Ordina per** Seleziona `jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` dal menu a discesa.
+   * **Ordina per** selezione 
+`jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` dal menu a discesa.
 
    * **Limite** Il numero massimo di voci da utilizzare nel Carosello, facoltativo.
 
@@ -278,7 +280,7 @@ Il componente per l’integrazione con applicazioni esterne (**Esterno**) consen
 
 * **Esterno**
 
-   * **Applicazione** di destinazione Specificate l’URL dell’applicazione Web da integrare; ad esempio:
+   * **applicazione** Target Specificate l’URL dell’applicazione Web da integrare; ad esempio:
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
