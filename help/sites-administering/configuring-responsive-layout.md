@@ -45,7 +45,8 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
          Potete avere il Contenitore di layout come standard per la pagina, consentendo all&#39;utente di aggiungere altri contenitori di layout all&#39;interno di questo; ad esempio, per ottenere il controllo delle colonne.
 
-* **[Modalità](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Layout Una volta che il Contenitore di layout è posizionato sulla pagina, è possibile utilizzare la modalità&#x200B;**Layout**per posizionare il contenuto all&#39;interno della griglia reattiva.
+* **[Modalità](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Layout Una volta che il Contenitore di layout è collocato sulla pagina, è possibile utilizzare la
+**Modalità Layout** per posizionare il contenuto all&#39;interno della griglia reattiva.
 
 * [**Emulatore **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Consente di creare e modificare siti Web reattivi il cui layout si riorganizza in base alle dimensioni del dispositivo/finestra, ridimensionando i componenti in modo interattivo. L’utente può quindi visualizzare quale sarà l’aspetto dei contenuti utilizzando l’emulatore.
 
@@ -116,6 +117,7 @@ Se state eseguendo la migrazione di un progetto esistente (con contenuto esisten
 >
 >* aggiungere punti di interruzione ai modelli
 >* aggiungere gli stessi punti di interruzione alle pagine esistenti
+
 >
 >  
 Poiché l’ereditarietà è attiva, potete limitare questa opzione alla pagina principale del contenuto.
