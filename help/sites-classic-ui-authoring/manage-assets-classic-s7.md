@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
+source-git-commit: 9bd71115dac8109c9a47155ab60ac7573d88014c
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 72%
@@ -340,9 +340,7 @@ Se si dispone di più configurazioni, per impostazione predefinita AEM visualizz
    >
    >
 * Per i video, il browser dei contenuti di Scene7 supporta:
-   >
-   >   
-   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
+   >   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
    >   * Video MP4 singolo
    >   * Video F4V singolo
 
