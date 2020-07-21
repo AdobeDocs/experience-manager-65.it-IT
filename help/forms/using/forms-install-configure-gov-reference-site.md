@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
+source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '5035'
 ht-degree: 1%
 
 ---
@@ -81,19 +81,16 @@ Le risorse incluse in questo pacchetto includono:
 
 Questa sezione contiene informazioni sull&#39;installazione del pacchetto dimostrativo.
 
-### Dalla condivisione del pacchetto {#from-package-share}
+### Da distribuzione software {#from-software-distribution}
 
-1. Andate a *https://&lt;aemserver>:&lt;porta>/crx/packageshare/*
-
-   In alternativa, in AEM, fate clic su Distribuzione e selezionate l&#39;icona Condivisione pacchetti.
-
-   ![Icona di condivisione del pacchetto](assets/package_share_icon.jpg)
-
-1. Effettuate l&#39;accesso utilizzando il Adobe ID .
-1. Cercate e individuate il pacchetto **we-gov-forms.pkg.all-&lt;version>** .
-1. Selezionate l&#39;opzione &quot;Scarica&quot; e accettate i termini e le condizioni.
-1. Una volta scaricato, selezionate l&#39;opzione &quot;Scaricato&quot; per individuare il pacchetto in Gestione pacchetti.
-1. Selezionate l&#39;opzione &quot;Install&quot; per installare il pacchetto.
+1. Apri distribuzione [](https://experience.adobe.com/downloads)software. È necessario un Adobe ID  per accedere a Distribuzione software.
+1. Toccate **[!UICONTROL Adobe Experience Manager]** disponibile nel menu dell&#39;intestazione.
+1. Nella sezione **[!UICONTROL Filtri]** :
+   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]** .
+   2. Selezionate la versione e digitate il tipo di pacchetto. Potete anche utilizzare l&#39;opzione Download **[!UICONTROL di]** ricerca per filtrare i risultati.
+1. Toccate il nome del pacchetto **we-gov-forms.pkg.all-&lt;versione>.zip** , selezionate **[!UICONTROL Accetta termini]** EULA e toccate **[!UICONTROL Scarica]**.
+1. Aprite [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) e fate clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Select the package and click **[!UICONTROL Install]**.
 
    ![pacchetto moduli governativi](assets/wegov_forms_package.jpg)
 
@@ -591,7 +588,7 @@ Dopo aver creato un&#39;integrazione, è possibile completare l&#39;installazion
 
 Una volta completata la configurazione IMS, possiamo procedere alla verifica della configurazione cloud in AEM. Se la configurazione non esiste, effettua i seguenti passaggi per creare la configurazione cloud in AEM:
 
-1. Aprite il browser e passate all&#39;URL del sistema https://&lt;nome_dominio>:&lt;porta_sistema>
+1. Aprite il browser e andate all&#39;URL del sistema https://&lt;nome_dominio>:&lt;porta_sistema>
 
 1. Fate clic  Adobe Experience Manager nell&#39;angolo in alto a sinistra della schermata > Strumenti > Servizi cloud > Configurazione della conversazione automatizzata dei moduli.
 
