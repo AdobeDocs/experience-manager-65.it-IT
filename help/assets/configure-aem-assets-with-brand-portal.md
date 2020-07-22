@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d7e2d33b81847b15d1e33b3aa406e5e91d44a5f8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 15%
@@ -129,7 +129,7 @@ Il certificato pubblico consente di autenticare il profilo in Adobe Developer Co
 
 1. Accedete all’istanza di creazione AEM Assets. L’URL predefinito è
    `http:// localhost:4502/aem/start.html`
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Interfaccia utente di configurazione dell’account Adobe IMS](assets/ims-config1.png)
 
@@ -302,7 +302,7 @@ Per creare il servizio cloud Brand Portal, effettuate le seguenti operazioni:
 
 1. Accedete all’istanza di creazione AEM Assets.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Nella pagina Configurazioni Brand Portal, fate clic su **[!UICONTROL Crea]**.
 
@@ -322,7 +322,7 @@ Effettuate le seguenti operazioni per convalidare la configurazione:
 
 1. Accedi all’istanza cloud AEM Assets.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
 
    ![](assets/test-integration1.png)
 
@@ -379,7 +379,7 @@ Prima di apportare eventuali modifiche, verificate che nell’istanza di creazio
 
 1. Accedete all’istanza di creazione AEM Assets.
 
-1. Dal pannello **Strumenti** ![Strumenti](assets/tools.png) , accedi a **[!UICONTROL Distribuzione]** > Replica **** distribuzione.
+1. Dal pannello **Strumenti** ![Strumenti](assets/do-not-localize/tools.png) , accedi a **[!UICONTROL Distribuzione]** > Replica **** distribuzione.
 
 1. Nella pagina Replica, fate clic su **[!UICONTROL Agenti sull’autore]**.
 
