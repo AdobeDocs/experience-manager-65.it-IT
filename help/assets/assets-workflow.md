@@ -3,9 +3,9 @@ title: Elabora risorse per eseguire processi aziendali, eseguire audit, ottenere
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '979'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Per visualizzare i vari modelli di workflow disponibili per impostazione predefi
 
 ## Applicazione di flussi di lavoro per elaborare le risorse {#applying-workflows-to-assets}
 
-L’applicazione dei flussi di lavoro alle risorse digitali è la stessa utilizzata per le pagine di siti Web. Per una guida completa su come creare e utilizzare i flussi di lavoro, consulta Flussi di lavoro [](/help/sites-authoring/workflows-participating.md)iniziali.
+L’applicazione dei flussi di lavoro alle risorse digitali è la stessa utilizzata per le pagine di siti Web. Per una guida completa su come creare e utilizzare i flussi di lavoro, consulta Flussi di lavoro [iniziali](/help/sites-authoring/workflows-participating.md).
 
 Usate i flussi di lavoro nelle risorse digitali per attivare la risorsa o creare filigrane. Molti dei flussi di lavoro per le risorse vengono automaticamente attivati. Ad esempio, il flusso di lavoro che crea automaticamente una rappresentazione dopo la modifica di un’immagine viene automaticamente attivato.
 
@@ -72,10 +72,7 @@ Per applicare un flusso di lavoro a una risorsa, effettuate le seguenti operazio
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Fate clic su **[!UICONTROL Azioni]** in basso.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Fate clic su **[!UICONTROL Azioni]** ![con la freccia verso l’alto](assets/do-not-localize/chevron-up-icon.png) in basso.
 1. Fate clic su **[!UICONTROL Avvia flusso di lavoro]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
