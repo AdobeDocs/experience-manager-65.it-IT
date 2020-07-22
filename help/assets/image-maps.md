@@ -3,10 +3,10 @@ title: Aggiungere mappe immagine con collegamenti ipertestuali alle immagini dig
 description: Scoprite come aggiungere una mappa immagine con collegamenti ipertestuali a un’immagine.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -26,12 +26,9 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamento iper
    * Nella vista **[!UICONTROL Scheda]** o **[!UICONTROL Elenco]** , selezionate la risorsa e fate clic su **[!UICONTROL Modifica]** sulla barra degli strumenti.
    * Fate clic su **[!UICONTROL Modifica]** dalla pagina della risorsa.
 
-      ![chlimage_1-420](assets/chlimage_1-420.png)
+      ![opzione di modifica](assets/do-not-localize/edit_icon.png)
 
-1. Per inserire una mappa immagine, fate clic su **[!UICONTROL Avvia mappa]** dalla barra degli strumenti.
-
-   ![chlimage_1-421](assets/chlimage_1-421.png)
-
+1. Per inserire una mappa immagine, fate clic su **[!UICONTROL Avvia mappa]** ![immagine dalla barra degli strumenti](assets/do-not-localize/image-map-icon.png) .
 1. Selezionate la forma della mappa immagine. Il punto di attivazione della forma selezionata viene posizionato sull&#39;immagine.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
@@ -40,13 +37,9 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamento iper
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Fate clic su **[!UICONTROL Conferma]** , quindi su **[!UICONTROL Fine]** dalla barra degli strumenti per salvare le modifiche.
+1. Fare clic su **[!UICONTROL Conferma]** , quindi su **[!UICONTROL Fine]** , ![selezionare il controllo eseguito](assets/do-not-localize/check-ok-done-icon.png) dalla barra degli strumenti per salvare le modifiche.
 
-   ![chlimage_1-424](assets/chlimage_1-424.png)
-
-   Per eliminare la mappa immagine, fate clic sull’area sensibile e fate clic su **[!UICONTROL Elimina]**.
-
-   ![chlimage_1-425](assets/chlimage_1-425.png)
+   Per eliminare la mappa immagine, fate clic sull’area sensibile e fate clic su **[!UICONTROL Elimina]** ![eliminazione](assets/do-not-localize/delete-solid-line.png).
 
 1. Per visualizzare la mappa immagine, andate alla pagina dei dettagli della risorsa e passate il cursore sull’immagine.
 
