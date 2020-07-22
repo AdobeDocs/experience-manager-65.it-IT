@@ -3,7 +3,7 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 1%
@@ -290,7 +290,7 @@ Per informazioni sulla modifica degli spazi dei nomi disponibili nei moduli di m
 
 Di seguito è riportato un esempio di modulo Metadati con vari campi:
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![metadati](assets/chlimage_1-390.png)
 
 Nella pagina Editor risorse, gli utenti possono quindi immettere valori nei campi di metadati (se modificabili) ed eseguire l’azione finale (ad esempio, inviare le modifiche).
 
