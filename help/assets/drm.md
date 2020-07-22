@@ -3,23 +3,23 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 6%
+source-wordcount: '1422'
+ht-degree: 7%
 
 ---
 
 
 # Digital Rights Management for assets {#digital-rights-management-in-assets}
 
-Digital assets are often associated with a license that specifies the terms and duration of use. Because [!DNL Adobe Experience Manager Assets] is fully integrated with the [!DNL Experience Manager] platform, you can efficiently manage asset expiration information and asset states. Potete anche associare le informazioni sulla licenza alle risorse.
+Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata dell&#39;utilizzo. Poiché [!DNL Adobe Experience Manager Assets] è completamente integrato con la [!DNL Experience Manager] piattaforma, potete gestire in modo efficiente le informazioni di scadenza delle risorse e gli stati delle risorse. Potete anche associare le informazioni sulla licenza alle risorse.
 
-## Asset expiration {#asset-expiration}
+## Scadenza risorsa {#asset-expiration}
 
 La scadenza delle risorse è un modo efficace per applicare i requisiti di licenza per le risorse. Garantisce che la risorsa pubblicata non venga pubblicata alla scadenza, evitando così la possibilità di eventuali violazioni della licenza. Un utente senza autorizzazioni di livello amministratore non può modificare, copiare, spostare, pubblicare e scaricare una risorsa scaduta.
 
-You can view the expiration status of an asset in the [!DNL Assets] console in both the card and list views.
+Potete visualizzare lo stato di scadenza di una risorsa nella [!DNL Assets] console sia nelle viste scheda che in quelle elenco.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
@@ -108,10 +108,7 @@ La [!DNL Assets] console può visualizzare vari stati per le risorse. A seconda 
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Fate clic su **[!UICONTROL Pubblica]** nella barra degli strumenti. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **[!UICONTROL Pubblica]** .
-
-   ![chlimage_1-156](assets/chlimage_1-156.png)
-
+1. Click **[!UICONTROL Publish]** from the toolbar. Se nella barra degli strumenti non è disponibile l’opzione **Pubblica** , fate clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuate l’opzione **** Pubblica ![](assets/do-not-localize/publish-globe.png) pubblicazione.
 1. Scegliete **[!UICONTROL Pubblica]** dal menu, quindi chiudete la finestra di dialogo di conferma.
 1. Esci dalla modalità di selezione. Lo stato di pubblicazione della risorsa viene visualizzato nella parte inferiore della miniatura della risorsa nella vista a schede. Nella vista a elenco, la colonna Pubblicato mostra l’ora in cui la risorsa è stata pubblicata.
 
@@ -138,10 +135,7 @@ La [!DNL Assets] console può visualizzare vari stati per le risorse. A seconda 
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Per cercare le risorse in base al loro stato, fate clic su **[!UICONTROL Cerca]** per visualizzare la barra di ricerca Omnico.
-
-   ![chlimage_1-162](assets/chlimage_1-162.png)
-
+1. Per cercare le risorse in base al loro stato, fate clic su **[!UICONTROL Cerca]** ![nell’opzione](assets/do-not-localize/search_icon.png) di ricerca per visualizzare la barra di ricerca Omnico.
 1. Premere Invio e fare clic [!DNL Experience Manager] per visualizzare il pannello di ricerca.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
