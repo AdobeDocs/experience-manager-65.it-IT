@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '9250'
+source-wordcount: '9245'
 ht-degree: 4%
 
 ---
@@ -63,6 +63,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    * Sulla barra degli strumenti, fate clic su **[!UICONTROL Crea]**. Scegliere **[!UICONTROL File dal menu]**. Se necessario, potete rinominare il file nella finestra di dialogo visualizzata.
    * In un browser che supporta HTML5, trascinate le risorse direttamente sull’interfaccia [!DNL Assets] utente. La finestra di dialogo per rinominare il file non viene visualizzata.
+
    ![Opzione Crea per caricare le risorse](assets/create-options.png)
 
    Per selezionare più file, premete il tasto Ctrl o Comando e selezionate le risorse nella finestra di dialogo del selettore file. Quando usate un iPad, potete selezionare un solo file alla volta.
@@ -119,6 +120,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    * il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
    * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
 
    ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/chlimage_1-10.png)
@@ -333,11 +335,7 @@ Per visualizzare l’anteprima di una risorsa, effettuate le seguenti operazioni
 
 1. Nella modalità di anteprima, le opzioni di zoom sono disponibili per i tipi [di immagini](/help/assets/assets-formats.md#supported-raster-image-formats) supportati (con modifica interattiva).
 
-   Per ingrandire una risorsa, fate clic `+` (o fate clic sulla lente di ingrandimento della risorsa). Per ridurre lo zoom, fate clic `-`. Quando ingrandite, potete osservare da vicino qualsiasi area dell’immagine eseguendo il panning. La freccia di reimpostazione dello zoom consente di tornare alla visualizzazione originale.
-
-   Fate clic su **[!UICONTROL Ripristina]** per ripristinare la visualizzazione alle dimensioni originali.
-
-   ![Ripristina per riportare l’utente nella visualizzazione originale](assets/chlimage_1-11.png)
+   Per ingrandire una risorsa, fate clic `+` (o fate clic sulla lente di ingrandimento della risorsa). Per ridurre lo zoom, fate clic `-`. Quando ingrandite, potete osservare da vicino qualsiasi area dell’immagine eseguendo il panning. La freccia di reimpostazione dello zoom consente di tornare alla visualizzazione originale. Per ripristinare le dimensioni originali della visualizzazione, fate clic su **[!UICONTROL Ripristina]** ![Ripristina visualizzazione](assets/do-not-localize/revert.png).
 
 **Visualizzare in anteprima le risorse utilizzando solo i tasti di scelta rapida**
 
@@ -350,6 +348,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 1. Per ingrandire la risorsa:
    1. Utilizzate `Tab` il tasto per spostare lo stato attivo nell&#39;opzione di zoom in.
    1. Utilizzate `Enter` il tasto per ingrandire l&#39;immagine.
+
    Per ridurre la visualizzazione, usate `Tab` il tasto per spostare la messa a fuoco sull’opzione di zoom out e premete `Enter`.
 
 1. Utilizzare `Shift` + `Tab` per spostare la messa a fuoco sull&#39;immagine.
@@ -407,6 +406,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata
    * Canali/dispositivi attraverso i quali è stata utilizzata la risorsa
    * Soluzioni creative in cui la risorsa è stata utilizzata di recente
+
    Per ulteriori dettagli, consulta [Informazioni approfondite](/help/assets/touch-ui-asset-insights.md)sulle risorse.
 
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
@@ -424,8 +424,7 @@ Alcuni attributi univoci per una particolare copia di una risorsa non vengono ri
 
 Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la copia di una risorsa non viene creata una copia parziale.
 
-1. Nell’ [!DNL Assets] interfaccia, selezionate una o più risorse e fate clic su **[!UICONTROL Copia]** nella barra degli strumenti. In alternativa, selezionate l’azione rapida **[!UICONTROL Copia]** dalla scheda delle risorse.
-   ![Opzione Copia nella barra degli strumenti dell’interfaccia Risorse](assets/copy_icon.png)
+1. Nell’ [!DNL Assets] interfaccia, selezionate una o più risorse e fate clic su **[!UICONTROL Copia]** nella barra degli strumenti. In alternativa, seleziona l’opzione **[!UICONTROL Copia]** ![copia nella barra degli strumenti dell’interfaccia](assets/do-not-localize/copy_icon.png) Risorse per effettuare le azioni rapide dalla scheda delle risorse.
 
    >[!NOTE]
    >
@@ -437,10 +436,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    >
    >Se copiate una risorsa nella stessa posizione, [!DNL Experience Manager] viene generata automaticamente una variante del nome. Ad esempio, se copiate una risorsa con titolo `Square`, [!DNL Experience Manager] viene automaticamente generato il titolo della relativa copia come `Square1`.
 
-1. Fate clic sull’opzione **[!UICONTROL Incolla]** risorsa dalla barra degli strumenti.
-
-   ![Opzione Incolla nella barra degli strumenti Risorse](assets/chlimage_1-14.png)
-   [!DNL Assets] vengono quindi copiate in questa posizione.
+1. Fate clic sull’opzione **[!UICONTROL Incolla]** ![Incolla nella barra degli strumenti](assets/do-not-localize/paste.png) Risorse, disponibile nella barra degli strumenti. Le risorse vengono quindi copiate in questa posizione.
 
    >[!NOTE]
    >
@@ -451,7 +447,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 1. Andate alla posizione della risorsa da spostare.
 
 1. Selezionate la risorsa e fate clic sull’opzione **[!UICONTROL Sposta]** nella barra degli strumenti.
-   ![Opzione Sposta nella barra degli strumenti Risorse](assets/move_icon.png)
+   ![Opzione Sposta nella barra degli strumenti Risorse](assets/do-not-localize/move.png)
 
 1. Nella procedura guidata [!UICONTROL Sposta risorse] , effettuate una delle seguenti operazioni:
 
@@ -480,6 +476,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
    * Fate clic su **[!UICONTROL Indietro]** per tornare alla schermata **[!UICONTROL Seleziona destinazione]** .
 
    * Fate clic su **[!UICONTROL Annulla]** per interrompere l&#39;operazione di spostamento.
+
    Se non aggiornate i riferimenti, continueranno a indicare il percorso precedente della risorsa. Se regolate i riferimenti, questi vengono aggiornati al nuovo percorso della risorsa.
 
 ## Gestire le rappresentazioni {#managing-renditions}
@@ -555,6 +552,7 @@ Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per
 
       * Se la risorsa non dispone di riferimenti, viene eliminata.
       * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+
    >[!NOTE]
    >
    >Per eliminare le risorse, un utente deve disporre di autorizzazioni di eliminazione per `dam/asset`. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
@@ -607,6 +605,7 @@ Consultate [Scaricare risorse da  Experience Manager](/help/assets/download-asse
 
    * **[!UICONTROL Annulla]** per interrompere l’azione
    * **[!UICONTROL Annulla pubblicazione]** per confermare che le risorse non sono più pubblicate (non sono più disponibili nell’ambiente di pubblicazione) alla data specificata.
+
    >[!NOTE]
    >
    >Per annullare la pubblicazione di una risorsa complessa, annullate la pubblicazione solo della risorsa. Evitate di annullare la pubblicazione dei riferimenti, in quanto ad essi potrebbero fare riferimento altre risorse pubblicate.
@@ -677,9 +676,10 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
    * Selezionate la risorsa e fate clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Fate clic sull&#39;opzione **[!UICONTROL Modifica]** che viene visualizzata su una risorsa nella vista a schede.
    * Fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
-   ![Opzione Modifica nella barra degli strumenti](assets/edit_icon.png)
 
-1. Per ritagliare l’immagine, fate clic su **[!UICONTROL Ritaglia]** ![opzione per ritagliare un’immagine](assets/chlimage_1-22.png).
+   ![Opzione Modifica nella barra degli strumenti](assets/do-not-localize/edit_icon.png)
+
+1. Per ritagliare l’immagine, fate clic su **[!UICONTROL Ritaglia]** ![opzione per ritagliare un’immagine](assets/do-not-localize/crop.png).
 
 1. Seleziona l’opzione desiderata dall’elenco. L’area di ritaglio viene visualizzata sull’immagine in base all’opzione scelta. L’opzione **Mano libera** consente di ritagliare l’immagine senza limitazioni di proporzioni.
 
@@ -687,19 +687,19 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
 
 1. Selezionate l’area da ritagliare e ridimensionatela o riposizionatela sull’immagine.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
 
    ![Opzioni Annulla e Ripristina](assets/chlimage_1-25.png)
 
-1. Fate clic sull’opzione **Ruota** appropriata per ruotare l’immagine in senso orario o antiorario.
+1. Fate clic sull’opzione **[!UICONTROL Ruota]** appropriata per ruotare l’immagine in senso orario o antiorario.
 
    ![Opzioni di rotazione in senso orario e antiorario](assets/chlimage_1-26.png)
 
-1. Fate clic sull’opzione **Rifletti** appropriata per riflettere l’immagine in orizzontale o verticale.
+1. Fate clic sull’opzione **[!UICONTROL Rifletti]** appropriata per riflettere l’immagine in orizzontale o verticale.
 
    ![opzioni per riflettere un’immagine in orizzontale o in verticale](assets/chlimage_1-27.png)
 
-1. Fate clic sull’opzione **Fine** ![fine](assets/chlimage_1-24.png) per completare la modifica delle immagini. Facendo clic su **Fine** viene avviata anche la rigenerazione delle rappresentazioni.
+1. Per completare la modifica delle immagini, fate clic sull’opzione **[!UICONTROL Fine]** ![fine](assets/do-not-localize/check-ok-done-icon.png). Facendo clic su **Fine** viene avviata anche la rigenerazione delle rappresentazioni.
 
 >[!NOTE]
 >
@@ -742,6 +742,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
    * [Azioni rapide](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
+
    ![Opzione Annota](assets/chlimage_1-29.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
@@ -825,7 +826,7 @@ Per stampare le annotazioni e verificare lo stato, fare clic su **[!UICONTROL St
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Opzione Stampa nella barra degli strumenti](assets/chlimage_1-40.png)
+   ![Opzione Stampa nella barra degli strumenti](assets/do-not-localize/print.png)
 
 1. Nella finestra di dialogo Stampa, scegliete la posizione in cui visualizzare le annotazioni o lo stato della revisione sul PDF. Ad esempio, se desiderate che le annotazioni o lo stato vengano stampati in alto a destra della pagina che contiene l’immagine stampata, utilizzate l’impostazione **In alto a sinistra** . È selezionato per impostazione predefinita.
 
@@ -933,6 +934,7 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
 1. Per confrontare due versioni di un’immagine, effettuate le seguenti operazioni:
    * Fare clic sulla versione da confrontare con la versione corrente.
    * Trascinate il cursore verso sinistra per sovrapporre la versione corrente alla versione corrente e confrontare.
+
    ![Utilizza il cursore per confrontare le versioni selezionate di una risorsa con la versione corrente](assets/version-slider.gif)
 
    *Figura: Usate il cursore per confrontare facilmente le versioni selezionate di una risorsa con la versione corrente.*
