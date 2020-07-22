@@ -3,9 +3,9 @@ title: Modelli di risorse in [!DNL Adobe Experience Manager Assets].
 description: Scopri i modelli delle risorse [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli delle risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1554'
 ht-degree: 1%
 
 ---
@@ -165,9 +165,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Nella pagina Unione  modelli, fate clic su **[!UICONTROL Unisci]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. Dalla pagina Unione  modelli, fate clic su **[!UICONTROL Unisci]** per ![aggiungere risorse](assets/do-not-localize/assets_add_icon.png).
 
 1. Andate alla posizione del materiale collaterale da unire e fate clic sulle miniature del materiale collaterale da unire per selezionarlo.
 
