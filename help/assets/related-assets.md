@@ -3,10 +3,10 @@ title: Risorse correlate
 description: Scoprite come collegare risorse digitali che condividono attributi comuni. Create anche relazioni derivate dal codice sorgente tra le risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 3%
+source-wordcount: '638'
+ht-degree: 2%
 
 ---
 
@@ -37,15 +37,13 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Per mettere in relazione un’altra risorsa con la risorsa selezionata, fate clic su **[!UICONTROL Relate (Relazione)]** nella barra degli strumenti.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. Per mettere in relazione un’altra risorsa con la risorsa selezionata, fate clic su **[!UICONTROL Relate]** ![rapporta risorse](assets/do-not-localize/link-relate.png) dalla barra degli strumenti.
 1. Effettua una delle operazioni seguenti:
 
    * Per correlare il file di origine della risorsa, selezionate **[!UICONTROL Origine]** dall’elenco.
    * Per correlare un file derivato, selezionare **[!UICONTROL Derivato]** dall&#39;elenco.
    * Per creare una relazione bidirezionale tra le risorse, selezionate **[!UICONTROL Altre]** dall’elenco.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Dalla schermata **[!UICONTROL Seleziona risorsa]** , individuate la posizione della risorsa da correlare e selezionatela.
@@ -59,7 +57,7 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
 1. Per non correlare una risorsa, fate clic su **[!UICONTROL Annulla relazione]** nella barra degli strumenti.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![attività non correlate](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Selezionate le risorse da rimuovere dalla finestra di dialogo **[!UICONTROL Rimuovi relazioni]** e fate clic su **[!UICONTROL Annulla relazione]**.
 
