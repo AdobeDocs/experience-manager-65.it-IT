@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
+source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
 workflow-type: tm+mt
 source-wordcount: '5035'
 ht-degree: 1%
@@ -222,7 +222,7 @@ Questa sezione contiene informazioni e istruzioni sulla configurazione di Adobe 
 
 ### Compilare e firmare più moduli {#fill-sign-multiple-forms}
 
-Questo documento descrive i passaggi necessari per impostare la capacità di compilare e firmare più moduli. Puoi anche provare la [stessa funzionalità qui](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Questo esempio memorizza i dati necessari per questo esempio nell’archivio di AME. Questa procedura consente di distribuire risorse demo sul server locale in modo semplice. Nella vita reale archivieremo le stesse informazioni in RDMS di vostra scelta.
+Questo documento descrive i passaggi necessari per impostare la capacità di compilare e firmare più moduli. Puoi anche provare la [stessa funzionalità qui](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Questo esempio memorizza i dati necessari per questo esempio nell’archivio di AEM. Questa procedura consente di distribuire risorse demo sul server locale in modo semplice. Nella vita reale archivieremo le stesse informazioni in RDMS di vostra scelta.
 
 #### Prerequisiti {#pre-requisites-fill-sign-multiple-forms}
 
