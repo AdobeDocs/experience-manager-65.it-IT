@@ -4,9 +4,9 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2200'
 ht-degree: 12%
 
 ---
@@ -124,10 +124,7 @@ Potete aggiungere risorse a una raccolta contenente un elenco di risorse o carte
 
 Le raccolte intelligenti vengono create salvando una ricerca in modo da modificarne il contenuto modificando i parametri di ricerca della ricerca [](#saved-searches)salvata.
 
-1. Nell’interfaccia utente Risorse, fai clic sull’opzione di ricerca nella barra degli strumenti.
-
-   ![chlimage_1-9](assets/chlimage_1-110.png)
-
+1. Nell’interfaccia utente Risorse, fai clic sull’opzione di ![ricerca nella barra degli strumenti](assets/do-not-localize/search_icon.png) .
 1. Con il cursore nella casella Omnisearch, premere il tasto Invio.
 1. Nell’interfaccia  Experience Manager, aprite il pannello Filtri.
 1. Dall’elenco **[!UICONTROL Ricerche salvate]**, seleziona la raccolta avanzata da modificare. Nel pannello Ricerca sono visualizzati i filtri configurati per la ricerca salvata.
@@ -256,12 +253,9 @@ La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzat
 
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
-1. Nell’interfaccia utente di Assets, fai clic su Cerca ![in Chlimage_1-13](assets/chlimage_1-114.png).
-
+1. Nell’interfaccia utente Risorse, fai clic sull’opzione ![di](assets/do-not-localize/search_icon.png)ricerca.
 1. Con il cursore nel campo Omnisearch, premere il tasto Invio.
-
 1. Nell’interfaccia  Experience Manager, aprite il pannello Filtri.
-
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -273,7 +267,7 @@ Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccolta. Se la raccolta contiene raccolte nidificate, il flusso di lavoro viene eseguito anche sulle risorse all&#39;interno delle raccolte nidificate. Tuttavia, se la raccolta e la raccolta nidificata contengono risorse duplicate, il flusso di lavoro viene eseguito una sola volta per tali risorse.
 
 1. Aprite **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**. Per eseguire un flusso di lavoro su una raccolta specifica, selezionatelo.
-1. Open **[!UICONTROL Timeline]** rail. Fate clic su ![chlimage_1-14](assets/chlimage_1-137.png) e fate clic su **[!UICONTROL Avvia flusso di lavoro]**.
+1. Open **[!UICONTROL Timeline]** rail. Fate clic ![sulla freccia verso l’alto](assets/do-not-localize/chevron-up-icon.png) e fate clic su **[!UICONTROL Avvia flusso di lavoro]**.
 1. Nella sezione **[!UICONTROL Avvia flusso di lavoro]**, seleziona un modello di flusso di lavoro dall’elenco. Ad esempio, scegli il modello **[!UICONTROL Risorsa di aggiornamento DAM]**.
 1. Inserite un titolo per il flusso di lavoro e fate clic su **[!UICONTROL Avvia]**.
 1. In the dialog, click **[!UICONTROL Proceed]**. Il flusso di lavoro elabora tutte le risorse nella raccolta selezionata.
