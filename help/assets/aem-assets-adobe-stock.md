@@ -3,9 +3,9 @@ title: Gestire [!DNL Adobe Stock] le risorse in [!DNL Adobe Experience Manager A
 description: Cercare, recuperare, ottenere licenze e [!DNL Adobe Stock] gestire risorse dall'interno [!DNL Adobe Experience Manager]. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1097'
 ht-degree: 13%
 
 ---
@@ -72,7 +72,7 @@ Gli [!DNL Experience Manager] utenti possono cercare le risorse sia in [!DNL Exp
 
 * Per cercare [!DNL Adobe Stock] le risorse, fai clic su **[!UICONTROL Navigazione]** > **[!UICONTROL Risorse]** > **[!UICONTROL Cerca in Adobe Stock]**.
 
-* Per cercare risorse in [!DNL Adobe Stock] e [!DNL Experience Manager Assets], fate clic su Cerca ![nell’icona](assets/search_icon.png)search_icon.
+* Per cercare le risorse [!DNL Adobe Stock] e [!DNL Experience Manager Assets], fate clic su Cerca ![nella ricerca](assets/do-not-localize/search_icon.png).
 
 In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricerca per selezionare [!DNL Adobe Stock] le risorse. [!DNL Experience Manager] offre funzionalità di filtro avanzate sulle risorse ricercate, che consentono agli utenti di accedere rapidamente alle risorse necessarie tramite filtri, quali tipi di risorse supportate, orientamento delle immagini e stato della licenza.
 
@@ -88,7 +88,7 @@ In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricer
 
 Selezionate una risorsa da salvare in [!DNL Experience Manager]. Fate clic su [!UICONTROL Salva] nella barra degli strumenti nella parte superiore e fornite il nome e la posizione della risorsa. Le risorse senza licenza vengono salvate localmente con una filigrana.
 
-La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno per indicare che sono disponibili in [!DNL Experience Manager Assets].
+La prossima volta che ricercate le risorse, queste vengono evidenziate con un contrassegno, per indicare che sono disponibili in [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
