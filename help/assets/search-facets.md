@@ -1,11 +1,11 @@
 ---
-title: Facet di ricerca
-description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in  Adobe Experience Manager.
+title: Facet di ricerca.
+description: Come creare, modificare e utilizzare i facet di ricerca in  Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2523'
+source-wordcount: '2525'
 ht-degree: 18%
 
 ---
@@ -25,10 +25,10 @@ Ad esempio, se cercate un’immagine, potete scegliere se un elemento bitmap o u
 
 I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di ricerca sottostante utilizzando i predicati. Per visualizzare più facet o facet diversi, è possibile aggiungere predicati al modulo predefinito oppure utilizzare un modulo personalizzato che includa facet di propria scelta.
 
-Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizzate il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata. Utilizzate il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create entro un intervallo di date specificato.
+Per le ricerche full-text, aggiungere al modulo il predicato [!UICONTROL full-text] . Utilizzate il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata. Utilizzate il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create entro un intervallo di date specificato.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Dalla pagina Moduli di ricerca, seleziona Barra di ricerca **[!UICONTROL Amministratore]** risorse, quindi fai clic su **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    ![Individua e seleziona la Barra di ricerca Amministratore risorse](assets/assets_admin_searchrail.png)
 
@@ -46,9 +46,9 @@ Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizza
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Ad esempio, trascinare Predicato **[!UICONTROL proprietà]**.
 
-   ![Trascinate un predicato per personalizzare i filtri di ricerca](assets/drag_predicate.png)
+   ![Premere e spostare un predicato per personalizzare i filtri di ricerca](assets/drag_predicate.png)
 
-   Trascinate un predicato per personalizzare i filtri di ricerca
+   *Figura: Premere e spostare un predicato per personalizzare i filtri di ricerca.*
 
 1. Nella scheda Impostazioni, inserite un&#39;etichetta di campo, un testo segnaposto e una descrizione per il predicato. Specificate un nome valido per la proprietà di metadati che desiderate associare al predicato.
 
@@ -66,14 +66,14 @@ Per le ricerche full-text, aggiungere il predicato full-text al modulo. Utilizza
 
    Associare una proprietà di metadati a un predicato nel campo Nome proprietà
 
-1. Fate clic su **[!UICONTROL Anteprima]** ![anteprima](assets/preview.png) per generare un’anteprima del pannello Filtri così come appare dopo l’aggiunta del predicato.
+1. Fate clic su **[!UICONTROL Anteprima]** ![anteprima](assets/do-not-localize/preview_icon.png) per generare un’anteprima del pannello Filtri così come appare dopo l’aggiunta del predicato.
 1. Esaminate il layout del predicato in modalità Anteprima.
 
    ![Visualizzare l&#39;anteprima del modulo di ricerca prima di inviare le modifiche](assets/preview-1.png)
 
    Visualizzare l&#39;anteprima del modulo di ricerca prima di inviare le modifiche
 
-1. Per chiudere l’anteprima, fate clic su **[!UICONTROL Chiudi]** ![chiudi](assets/close.png) nell’angolo in alto a destra dell’anteprima.
+1. Per chiudere l’anteprima, fate clic su **[!UICONTROL Chiudi]** ![chiudi](assets/do-not-localize/close.png) nell’angolo in alto a destra dell’anteprima.
 1. Fate clic su **[!UICONTROL Fine]** per salvare le impostazioni.
 1. Andate al pannello Ricerca nell’interfaccia utente Risorse. Il predicato Proprietà viene aggiunto al pannello.
 1. Immettete una descrizione per la risorsa da cercare nella casella di testo. Ad esempio, immettete &quot;Adobe&quot;. Quando eseguite una ricerca, nei risultati della ricerca vengono elencate le risorse con la descrizione &quot;Adobe&quot;.
@@ -137,7 +137,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 Il predicato Proprietà multivalore consente di cercare risorse per più valori. Considerate uno scenario in cui sono presenti immagini di più prodotti in Risorse e i metadati di ciascuna immagine includono un numero SKU associato al prodotto. Potete usare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Nella pagina Moduli di ricerca, seleziona Barra **[!UICONTROL di ricerca Amministratore]** risorse e fai clic su **[!UICONTROL Modifica]** ![aemassets_edit](assets/aemassets_edit.png).
+1. Nella pagina Moduli di ricerca, seleziona Barra **[!UICONTROL di ricerca Amministratore]** risorse e fai clic sull’icona **[!UICONTROL Modifica]** ![modifica](assets/do-not-localize/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina il predicato **[!UICONTROL Proprietà con più valori]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
 1. Assicurati di aver selezionato **[!UICONTROL Supporto delimitatore]**. Specifica i delimitatori per separare i singoli valori nel campo **[!UICONTROL Delimitatori di input]**. Per impostazione predefinita, la virgola è indicata come delimitatore. È possibile specificare un delimitatore diverso.
@@ -150,7 +150,7 @@ Il predicato Proprietà multivalore consente di cercare risorse per più valori.
 Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, Risorse cerca nelle risorse una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, potete usare l’opzione corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Nella pagina Moduli di ricerca, seleziona Barra di ricerca **[!UICONTROL Amministratore]** risorse e fai clic su **[!UICONTROL Modifica]** ![aemassets_edit](assets/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Nella scheda Impostazioni, inserite un testo segnaposto per il predicato. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. In alternativa, è possibile selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
 1. Configurate la proprietà del percorso dei tag radice di questo predicate per popolare i vari tag nell&#39;elenco Tag.
@@ -200,7 +200,7 @@ Per impostazione predefinita, prima della Barra di ricerca Amministratore ![riso
 Per ripristinare il facet di ricerca predefinito, effettuare le seguenti operazioni:
 
 1. Seleziona Barra di ricerca Amministratore **[!UICONTROL risorse]** nella pagina **[!UICONTROL Moduli]** di ricerca.
-1. Fare clic su **[!UICONTROL Elimina]** ![elimina il contorno](assets/deleteoutline.png) nella barra degli strumenti.
+1. Fare clic su **[!UICONTROL Elimina]** ![elimina il contorno](assets/do-not-localize/deleteoutline.png) nella barra degli strumenti.
 1. Nella finestra di dialogo di conferma, fate clic su **[!UICONTROL Elimina]** per rimuovere le modifiche personalizzate.
 
    After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
