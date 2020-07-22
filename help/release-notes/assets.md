@@ -1,15 +1,18 @@
 ---
-title: Note sulla versione di Adobe Experience Manager Assets
+title: Note sulla versione di  Adobe Experience Manager Assets
 description: Nuove funzionalità e miglioramenti di Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 42%
 
 ---
 
 
-# Note sulla versione di Adobe Experience Manager Assets {#aem-assets-release-notes}
+# Note sulla versione di  Adobe Experience Manager Assets {#aem-assets-release-notes}
 
-Di seguito sono elencate le funzioni e gli elementi di rilievo principali della versione Risorse di Adobe Experience Manager 6.5.
+Di seguito sono elencate le funzioni chiave ed evidenziazioni della versione  Adobe Experience Manager 6.5 Assets.
 
 ## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -31,13 +34,13 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock]Il servizio offre a designer e aziende l’accesso a milioni di foto, immagini vettoriali, illustrazioni, video, modelli e risorse 3D di alta qualità, curate ed esenti da royalty, per qualsiasi progetto creativo.
 
-For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Visualizzare in anteprima l’immagine e la licenza di Adobe Stock da Experience Manager Assets](assets/stock_image_preview_license_options.png)
+![Visualizzare in anteprima l’immagine e la licenza di Adobe Stock da  Risorse Experience Manager](assets/stock_image_preview_license_options.png)
 
 *Figura: Visualizza in anteprima[!DNL Adobe Stock]immagini e licenze dall&#39;interno[!DNL Experience Manager Assets].*
 
-![Cercare e filtrare le immagini Adobe Stock autorizzate in Experience Manager](assets/aem-search-filters2.jpg)
+![Cercare e filtrare le immagini Adobe Stock autorizzate in  Experience Manager](assets/aem-search-filters2.jpg)
 
 *Figura: Cercate e filtrate le[!DNL Adobe Stock]immagini con licenza in[!DNL Experience Manager].*
 
@@ -81,7 +84,7 @@ Manage your 360-video files directly in [!DNL Experience Manager] using the cutt
 
 ## Miglioramento dell’esperienza di ricerca {#search-experience-enhancement}
 
-[!DNL Experience Manager] A partire da 6.5, gli addetti al marketing possono individuare più rapidamente le risorse desiderate dalla pagina dei risultati della ricerca. I facet di ricerca vengono aggiornati con il numero di risorse anche prima di applicare il filtro di ricerca. La visualizzazione del conteggio previsto per il filtro consente agli utenti di navigare in modo efficiente tra i risultati della ricerca. Per ulteriori informazioni, consulta [Cercare risorse in Experience Manager](../assets/search-assets.md).
+[!DNL Experience Manager] A partire da 6.5, gli addetti al marketing possono individuare più rapidamente le risorse desiderate dalla pagina dei risultati della ricerca. I facet di ricerca vengono aggiornati con il numero di risorse anche prima di applicare il filtro di ricerca. La visualizzazione del conteggio previsto per il filtro consente agli utenti di navigare in modo efficiente tra i risultati della ricerca. Per ulteriori informazioni, consultate [Cercare risorse in  Experience Manager](../assets/search-assets.md).
 
 ![Visualizzazione del numero di risorse senza filtrare i risultati nei facet di ricerca](/help/assets/assets/asset_search_results_in_facets_filters.png)
 
