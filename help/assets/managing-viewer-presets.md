@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '4361'
+source-wordcount: '4360'
 ht-degree: 16%
 
 ---
@@ -423,7 +423,7 @@ Consultate Considerazioni [speciali per la creazione di un predefinito](#special
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. Nella pagina Predefiniti visualizzatore, toccate **[!UICONTROL Crea sulla barra degli strumenti.]**
-1. Nella finestra di dialogo **[!UICONTROL Nuovo predefinito visualizzatore**, inserisci il nome del nuovo predefinito nel campo **[!UICONTROL Nome predefinito]**. Scegli il nome attentamente, poiché non potrai modificarlo, dopo aver toccato **[!UICONTROL Crea.]**
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Scegli il nome attentamente, poiché non potrai modificarlo, dopo aver toccato **[!UICONTROL Crea.]**
 
    Quando salvate il predefinito in seguito, il nome viene visualizzato nella pagina Predefiniti visualizzatore, sotto l’intestazione della colonna Titolo predefinito.
 
