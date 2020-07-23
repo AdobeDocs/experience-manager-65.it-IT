@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
+source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7698'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Le seguenti impostazioni consigliate si applicano ai AEM Forms sul server JEE al
 
 **Patch di sicurezza**
 
-Esiste un rischio maggiore che un utente non autorizzato possa accedere al server dell&#39;applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificate le patch di sicurezza prima di applicarle ai server di produzione per garantire la compatibilità e la disponibilità delle applicazioni. Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare. Gli AEM Forms sugli aggiornamenti JEE si trovano nel sito di download dei prodotti Enterprise.
+Esiste un rischio maggiore che un utente non autorizzato possa accedere al server applicazione se le patch e gli aggiornamenti di sicurezza del fornitore non vengono applicati in modo tempestivo. Verificate le patch di sicurezza prima di applicarle ai server di produzione per garantire la compatibilità e la disponibilità delle applicazioni. Inoltre, potete creare criteri e procedure per verificare e installare le patch su base regolare. Gli AEM Forms sugli aggiornamenti JEE si trovano nel sito di download dei prodotti Enterprise.
 
 **Account di servizio (chiavi in mano JBoss solo in Windows)**
 
@@ -393,7 +393,7 @@ In WebSphere è possibile configurare la protezione integrata solo quando si uti
 1. Nel riquadro a destra, in Proprietà aggiuntive, fare clic su Proprietà **** personalizzate, quindi su **Nuovo**.
 1. Nella casella **Nome** digitare `integratedSecurity` e digitare **nella casella** Valore `true`.
 1. Nel computer in cui è installato WebSphere, aggiungere il file sqljdbc_auth.dll al percorso dei sistemi Windows (C:\Windows). Il file sqljdbc_auth.dll si trova nello stesso percorso dell&#39;installazione del driver Microsoft SQL JDBC 1.2 (il valore predefinito è *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. Selezionare **Start** > Pannello **di** controllo > **Servizi**, fare clic con il pulsante destro del mouse sul servizio Windows per WebSphere (IBM WebSphere Application Server &lt;versione> - &lt;nodo>) e selezionare **Proprietà**.
+1. Selezionare **Start** > **Pannello di controllo Campaign** > **Servizi**, fare clic con il pulsante destro del mouse sul servizio Windows per WebSphere (IBM WebSphere Application Server &lt;versione> - &lt;nodo>) e selezionare **Proprietà**.
 1. Nella finestra di dialogo Proprietà, fare clic sulla scheda **Accesso** .
 1. Selezionate **Questo account** e fornite le informazioni necessarie per impostare l’account di accesso che desiderate utilizzare.
 1. Impostare la protezione su SQL Server dalla modalità **mista** solo **a Autenticazione** Windows.
@@ -429,7 +429,7 @@ Un attacco comune che utilizza LDAP coinvolge un aggressore che intenzionalmente
 
 ### Controllo e registrazione {#auditing-and-logging}
 
-L&#39;utilizzo corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali siano tracciati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il monitoraggio degli accessi riusciti e non riusciti, nonché eventi applicativi chiave come la creazione o l&#39;eliminazione di record chiave.
+L&#39;uso corretto e sicuro del controllo e della registrazione delle applicazioni può contribuire a garantire che la sicurezza e altri eventi anomali siano tracciati e rilevati il più rapidamente possibile. L&#39;utilizzo efficace del controllo e della registrazione all&#39;interno di un&#39;applicazione include elementi quali il monitoraggio degli accessi riusciti e non riusciti, nonché eventi applicativi chiave come la creazione o l&#39;eliminazione di record chiave.
 
 Potete utilizzare il controllo per rilevare molti tipi di attacchi, tra cui:
 
@@ -955,6 +955,8 @@ Per informazioni sulle porte WebSphere richieste dai AEM Forms in JEE, passare a
 Facendo riferimento all&#39;architettura fisica descritta nei [AEM Forms di sezione sull&#39;architettura](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)fisica JEE, è necessario configurare SSL per tutte le connessioni che si intende utilizzare. Nello specifico, tutte le connessioni SOAP devono essere eseguite su SSL per impedire l&#39;esposizione delle credenziali utente in una rete.
 
 Per istruzioni su come configurare SSL su JBoss, WebLogic e WebSphere, consultate &quot;Configuring SSL&quot; (Configurazione di SSL) nella guida [di](https://www.adobe.com/go/learn_aemforms_admin_64)amministrazione.
+
+Per istruzioni su come importare certificati in JVM (Java Virtual Machine) configurati per un server AEM Forms, vedere la sezione Autenticazione reciproca nella Guida [di Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65)AEM Forms.
 
 ### Configurazione del reindirizzamento SSL {#configuring-ssl-redirect}
 
