@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3843'
 ht-degree: 10%
 
 ---
@@ -291,7 +291,7 @@ Lasciandoli vuoti, indica ad AEM che questo predefinito per immagini è reattivo
 
 Quando create o modificate i predefiniti per immagini, avete a disposizione le opzioni descritte in questa sezione. Inoltre, Adobe consiglia di iniziare dalle seguenti opzioni &quot;best practice&quot;:
 
-* **[!UICONTROL Formato** scheda (**[!UICONTROL Base]**) - Seleziona **[!UICONTROL JPEG]** o un altro formato che rispetta i tuoi requisiti. Tutti i browser web supportano il formato immagine JPEG, in quanto offre un buon compromesso tra dimensioni ridotte dei file e qualità delle immagini. Tuttavia, le immagini in formato JPEG usano uno schema di compressione che causa la perdita di dati, con possibile introduzione di artefatti di immagine indesiderati, qualora l’impostazione di compressione sia troppo bassa. Per questo motivo, Adobe consiglia di impostare la qualità di compressione su 75. Questa impostazione offre un buon compromesso tra la qualità delle immagini e le dimensioni ridotte dei file.
+* **[!UICONTROL Formato]** scheda (**[!UICONTROL Base]**) - Seleziona **[!UICONTROL JPEG]** o un altro formato che rispetta i tuoi requisiti. Tutti i browser web supportano il formato immagine JPEG, in quanto offre un buon compromesso tra dimensioni ridotte dei file e qualità delle immagini. Tuttavia, le immagini in formato JPEG usano uno schema di compressione che causa la perdita di dati, con possibile introduzione di artefatti di immagine indesiderati, qualora l’impostazione di compressione sia troppo bassa. Per questo motivo, Adobe consiglia di impostare la qualità di compressione su 75. Questa impostazione offre un buon compromesso tra la qualità delle immagini e le dimensioni ridotte dei file.
 
 * **[!UICONTROL Attiva nitidezza semplice]**: non selezionare **[!UICONTROL Attiva nitidezza semplice]** (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera definizione dettagli).
 
@@ -504,5 +504,5 @@ Se utilizzate la modalità Dynamic Media - Scene7, i predefiniti per immagini ve
 
 1. In AEM, tocca o fai clic sul logo AEM per accedere alla console di navigazione globale.
 1. Toccate l’icona **[!UICONTROL Strumenti]** , quindi selezionate **[!UICONTROL Risorse > Predefiniti immagine.]**
-1. Selezionate un predefinito, quindi fate clic su **[!UICONTROL Delete**. Dynamic Media conferma che si desidera eliminarla. Toccate **[!UICONTROL Elimina]** per eliminare o toccate **[!UICONTROL Annulla]** per interrompere.
+1. Selezionate un predefinito, quindi fate clic su **[!UICONTROL Elimina]**. Dynamic Media conferma che si desidera eliminarla. Toccate **[!UICONTROL Elimina]** per eliminare o toccate **[!UICONTROL Annulla]** per interrompere.
 
