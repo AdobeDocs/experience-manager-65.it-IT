@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 10%
 
 ---
 
@@ -44,13 +47,15 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando sono incluse le librerie [lato client](/help/communities/ideation.md#essentials-for-client-side) richieste, verrà visualizzato il `Ideation` componente:
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![ideazione](assets/ideation.png)
 
 ### Configurazione di un&#39;idea {#configuring-an-ideation}
 
 Selezionate il `Ideation` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![ideation-settings](assets/ideation-settings.png)
+![configure-new](assets/configure-new.png)
+
+![ideation-settings](assets/ideation-settings.png)
 
 #### scheda Impostazioni {#settings-tab}
 
@@ -124,7 +129,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è attivata, consentite ai membri di ricevere notifiche relative ai nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, consentite ai membri di ricevere notifiche sui nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
 
 * **Consenti votazione**
 
@@ -212,23 +217,23 @@ Come per tutte le funzioni Community, se non è stato effettuato l’accesso, un
 
 Una volta effettuato l’accesso, un membro può creare una nuova idea.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![create-new-idea](assets/create-new-idea.png)
 
 Prima di inviare l&#39;idea, è possibile salvare una bozza.
 
 Selezionando il `Save as Draft` pulsante, viene salvata una bozza.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![save-idea](assets/save-idea.png)
 
 Quando visualizzate le bozze salvate nella `My Drafts` scheda, selezionate `Read More` di nuovo la modalità di modifica:
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![edit-idea](assets/edit-idea.png)
 
 #### Feedback {#providing-feedback}
 
 Una volta pubblicata l&#39;idea, altri membri possono accedere, aprire l&#39;idea ( `Read More`) e come l&#39;idea, aggiungendo così al conteggio dei voti, e fare commenti.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![feedback](assets/feedback-idea.png)
 
 ### Informazioni aggiuntive {#additional-information}
 
