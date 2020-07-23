@@ -2,9 +2,9 @@
 title: Creazione e sincronizzazione di Live Copy
 description: Scoprite come creare e sincronizzare Live Copy.
 translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
 workflow-type: tm+mt
-source-wordcount: '4116'
+source-wordcount: '4115'
 ht-degree: 2%
 
 ---
@@ -86,7 +86,7 @@ Potete creare una copia dal vivo di qualsiasi pagina o ramo. Quando create la Li
 
 Potete creare una copia dal vivo di qualsiasi pagina:
 
-* Le pagine a cui fa riferimento una configurazione [di](#creating-a-blueprint-configuration)blueprint,
+* Pagine alle quali viene fatto riferimento in una configurazione [](#creating-a-blueprint-configuration)blueprint.
 * E pagine senza connessione a una configurazione.
 * AEM supporta anche la creazione di una Live Copy nelle pagine di un’altra Live Copy.
 
@@ -233,7 +233,7 @@ Distribuite una pagina di blueprint per inviare le modifiche ai contenuti alle L
 
    ![Blueprint di rollout](assets/rollout-blueprint.png)
 
-I rollout vengono elaborati come processi asincroni e possono essere sottoposti a check-in nel dashboard Stato [**processi **Async in Navigazione](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)** globale ->**Strumenti**->**Operazioni**->**** Processi **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ I rollout vengono elaborati come processi asincroni e possono essere sottoposti 
 
 1. Dopo aver confermato questi dettagli, selezionate **Rollout** per eseguire l’azione.
 
-I rollout vengono elaborati come processi asincroni e possono essere sottoposti a check-in nel dashboard Stato [**processi **Async in Navigazione](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)** globale ->**Strumenti**->**Operazioni**->**** Processi **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ L&#39;azione [Rollout è disponibile anche dalla Panoramica](/help/sites-adminis
 
    ![Blueprint di rollout](assets/rollout-blueprint.png)
 
-I rollout vengono elaborati come processi asincroni e possono essere sottoposti a check-in nel dashboard Stato [**processi **Async in Navigazione](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)** globale ->**Strumenti**->**Operazioni**->**** Processi **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
