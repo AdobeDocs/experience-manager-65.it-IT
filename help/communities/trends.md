@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 5%
 
 ---
 
@@ -30,9 +33,9 @@ Il documento descrive:
 
 ### Requisito {#requirement}
 
-I dati per il sito `Community Activity List` sono disponibili solo se Adobe Analytics è concesso in licenza e configurato per il sito della community.
+I dati per il sito `Community Activity List` sono disponibili solo se Adobe  Analytics è concesso in licenza e configurato per il sito della community.
 
-Consultate Configurazione [di Analytics per le funzioni](/help/communities/analytics.md)Community.
+Consultate [Configurazione Analytics per le funzioni](/help/communities/analytics.md)Community.
 
 ### Aggiunta di un elenco di attività community a una pagina {#adding-a-community-activity-list-to-a-page}
 
@@ -46,9 +49,9 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
-![chlimage_1-54](assets/chlimage_1-54.png)
+![attività della comunità](assets/community-activity.png)
 
-### Configurazione dell&#39;elenco delle attività community {#configuring-community-activity-list}
+### Configurazione dell&#39;elenco delle attività community  {#configuring-community-activity-list}
 
 Selezionate il `Community Activity List` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
@@ -66,6 +69,7 @@ Nella scheda **Commenti** , specificate se e come vengono visualizzati i comment
 
    * `Members`
    * `Content`
+
    Default is `Members`.
 
 * **Titolo da visualizzare**
@@ -86,6 +90,7 @@ Il valore predefinito è 10.
    * `Posts`(creazione di UGC)
    * `Follows`
    * `Likes`
+
    Il valore predefinito è Visualizzazioni.
 
 * **Periodo di tempo**
@@ -98,6 +103,7 @@ Il valore predefinito è 10.
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    Default is `Total`.
 
 * **Percorso contesto**
