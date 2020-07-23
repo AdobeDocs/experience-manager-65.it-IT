@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: 299c4cb377c65e49b94383704a906fdd0bb38d06
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Per modificare il flusso di lavoro Aggiorna risorsa  DAM e, in questo esempio, d
 * Fate doppio clic sul passaggio di transcodifica **[!UICONTROL FFmpeg]** per accedere alla finestra di dialogo Proprietà passaggio.
 * Nella scheda **[!UICONTROL Processo]** :
 
-   * **[!UICONTROL Articoli]**: Cancella tutte le voci per disabilitare la transcodifica di valori predefiniti: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Articoli]**: Cancella tutte le voci per disabilitare la transcodifica di valori predefiniti: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
