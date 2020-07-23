@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '2897'
 ht-degree: 2%
@@ -62,7 +62,7 @@ I simboli basati sul ruolo vengono assegnati da un amministratore ai membri dell
 
 I simboli assegnati (e assegnati) sono memorizzati nell&#39; [SRP](/help/communities/srp.md) selezionato e non sono direttamente accessibili. Fino a quando non sarà disponibile un&#39;interfaccia utente grafica, l&#39;unico modo per assegnare i simboli basati sui ruoli è farlo con codice o cURL. Per le istruzioni cURL, consultate la sezione intitolata [Assegna e revoca distintivi](#assign-and-revoke-badges).
 
-Nella release sono inclusi tre simboli basati sui ruoli:
+Nella versione sono inclusi tre simboli basati sui ruoli:
 
 * **moderatore**
 
@@ -308,7 +308,7 @@ Eventuali modifiche o aggiunte apportate alle regole di punteggio o alle regole 
 
 ## Regole di Badking {#badging-rules}
 
-Regole di assegnazione dei tag collegano le regole di punteggio ai simboli specificando:
+Le regole di assegnazione del tag collegano le regole di punteggio ai simboli specificando:
 
 * Regola di punteggio.
 * Il punteggio necessario per ottenere un contrassegno specifico.
