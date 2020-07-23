@@ -10,9 +10,9 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 371ecbdaad97b7111353f40d1ddfb686e99d46c5
 workflow-type: tm+mt
-source-wordcount: '2864'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ In AEM, **Externalizer** è un servizio OSGI che consente di trasformare program
 >
 >Non esternalizzate con l’URL HTTPS se utilizzate un certificato autofirmato per SSL.
 >
->Inoltre, per il server locale utilizzate localhost invece del relativo nome host.
+>Inoltre, utilizzate localhost invece del relativo nome host per il server locale.
 
 Effettuate le seguenti operazioni sia sulle istanze di creazione che di pubblicazione:
 
@@ -216,8 +216,8 @@ Per i siti di riferimento AEM Forms, in AEM DS Settings Service, specificate l&#
 
 Installate i pacchetti dei siti di riferimento utilizzando la distribuzione [](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)software.
 
-* [AEM Forms FSI Reference Site Package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-FSI-REF-SITE)
-* [Pacchetto del sito di riferimento del governo dei AEM Forms](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-GOV-REF-SITE)
+* [AEM Forms FSI Reference Site Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-FSI-REF-SITE)
+* [Pacchetto del sito di riferimento del governo dei AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-GOV-REF-SITE)
 
 Per ulteriori informazioni sull&#39;utilizzo dei pacchetti, vedere [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 
