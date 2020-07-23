@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 4%
+source-wordcount: '1344'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Per attivare o disattivare i predefiniti per visualizzatori nell’interfaccia u
 
 **Per visualizzare in anteprima le risorse mediante l&#39;interfaccia software**
 
-1. Da **[!UICONTROL Adobe Experience Manager**, vai alla pagina di **navigazione [!UICONTROL**, tocca **[!UICONTROL Risorse]**, quindi seleziona **[!UICONTROL File]** per accedere alle risorse.
+1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Facoltativo) Usate la colonna **[!UICONTROL Tipo]** per ordinare le risorse in base al tipo di cui desiderate visualizzare l’anteprima.
 1. Nella colonna **[!UICONTROL Titolo]** , fate clic sul nome del titolo (non sulla miniatura) della risorsa da visualizzare in anteprima.
