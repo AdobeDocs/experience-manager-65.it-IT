@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '11829'
+source-wordcount: '11828'
 ht-degree: 8%
 
 ---
@@ -33,6 +33,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
    >
    >
 * Consulta [Configurazione dei servizi](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) Dynamic Media Cloud in Configurazione di Dynamic Media - Modalità ibrida.
+
 >
 
 
@@ -472,6 +473,7 @@ Per configurare le impostazioni di Google Cloud:
 
    * Nel dashboard del progetto, nella scheda Guida introduttiva, toccate **[!UICONTROL Esplora e abilitate le API.]**
    * Nel dashboard del progetto, nella scheda API, toccate **[!UICONTROL Vai alla panoramica delle API.]**
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Nella parte superiore della pagina API e servizi, toccate **[!UICONTROL Abilita API e servizi.]**
@@ -491,6 +493,7 @@ Per configurare le impostazioni di Google Cloud:
    * Da **[!UICONTROL dove chiamerete l&#39;API?]** elenco a discesa, selezionate Server **[!UICONTROL Web (ad esempio, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** dall&#39;elenco a discesa, toccate Dati **[!UICONTROL utente.]**
+
    ![6_5_googleaccount-apis-create-ecredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Toccare **[!UICONTROL Quali credenziali sono necessarie?]**
@@ -836,9 +839,11 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 1. Visualizzate l’avanzamento della codifica video nella cartella delle risorse:
 
    * Nella vista a schede, l&#39;avanzamento della codifica video viene visualizzato per percentuale sulla risorsa. In caso di errore, queste informazioni vengono visualizzate anche sulla risorsa.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. In caso di errore, il messaggio viene visualizzato nella stessa colonna.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Questa colonna non viene visualizzata per impostazione predefinita. Per abilitare la colonna, dal menu a discesa delle viste seleziona **[!UICONTROL Visualizza impostazioni]**, quindi aggiungi la colonna **[!UICONTROL Stato elaborazione]** e tocca o fai clic su **[!UICONTROL Aggiorna.]**
@@ -858,6 +863,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >    * Configurazione coda di lavoro Apache Sling
    >    * Gestore processo esterno flusso di lavoro Adobe Granite
    >    * Coda timeout flusso di lavoro Granite
+
    >
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
 
@@ -892,6 +898,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
    >    * Configurazione coda di lavoro Apache Sling
    >    * Gestore processo esterno flusso di lavoro Adobe Granite
    >    * Coda timeout flusso di lavoro Granite
+
    >
    >
    >In queste configurazioni è possibile regolare le proprietà dei **[!UICONTROL nuovi tentativi]**, dei **[!UICONTROL tentativi ritardati]** e del **[!UICONTROL timeout]**.
@@ -938,6 +945,7 @@ La modalità di configurazione delle notifiche dipende dal tipo di notifiche per
    * Inizio pubblicazione
    * Errore di pubblicazione
    * Completamento pubblicazione - include informazioni su canali e URL
+
    Deselezionando una casella di controllo non si riceverà la notifica e-mail specificata dal flusso di lavoro di pubblicazione di YouTube.
 
    >[!NOTE]
@@ -987,6 +995,7 @@ Per visualizzare i rapporti video:
 
    * Vicino all&#39;angolo superiore destro, toccare l&#39;icona **Date Picker **.
 Specificate l&#39;intervallo di date iniziale e finale per il quale desiderate i dati video, quindi toccate **[!UICONTROL Esegui rapporto.]**
+
    La casella del gruppo Metriche principali identifica diverse misurazioni aggregate per tutti i *video pubblicati *in tutto il sito.
 
 1. Nella tabella in cui sono elencati i primi video pubblicati, toccate un nome video per riprodurre il video e visualizzate il rapporto (a discesa) di mantenimento dell’audience del video.
@@ -1012,7 +1021,7 @@ Per visualizzare i rapporti sui video basati su un visualizzatore video creato c
 
    `videoViewer.setParam("config2", "<value>");`
 
-   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per il cliente.
+   Il `config2` parametro abilita il tracciamento nei visualizzatori HTML5. È anche un predefinito specifico per la società che contiene le informazioni di configurazione per Video Reporting e per le configurazioni Adobe  Analytics specifiche per i clienti.
 
    Il valore corretto per il parametro config2 si trova sia nella funzione **Embed Code **che nella funzione copy **URL **. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . Il valore è quasi sempre `companypreset`, ma in alcuni casi può anche essere `companypreset-1`, `companypreset-2` e così via.
 
@@ -1080,7 +1089,7 @@ Per aggiungere sottotitoli o sottotitoli al video:
 
    Per risultati ottimali, usate lo strumento in Internet Explorer 9 o versione successiva, Google Chrome o Safari.
 
-   Nello strumento, incolla l’URL copiato del file video nel campo **[!UICONTROL Enter URL of video file (Inserisci URL del file video)]**, infine fai clic su **[!UICONTROL Load (Carica)**. Consulta la sezione [Ottenere l’URL per una risorsa](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) per conoscere l’URL del file video stesso, che potrai incollare nel campo **[!UICONTROL Enter URL of video file (Inserisci URL del file video).]** A quel punto, Internet Explorer, Chrome o Safari possono riprodurre il video in modalità nativa.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. Consulta la sezione [Ottenere l’URL per una risorsa](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) per conoscere l’URL del file video stesso, che potrai incollare nel campo **[!UICONTROL Enter URL of video file (Inserisci URL del file video).]** A quel punto, Internet Explorer, Chrome o Safari possono riprodurre il video in modalità nativa.
 
    Seguite ora le istruzioni visualizzate dal sito per creare e salvare il file WebVTT. Al termine, copiate il contenuto del file dei sottotitoli e incollatelo in un editor di testo normale, quindi salvatelo con l’estensione .vtt.
 
