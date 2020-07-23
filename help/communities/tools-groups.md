@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 3%
 
 ---
 
@@ -33,9 +36,9 @@ Nel momento in cui viene eseguita un&#39;azione per creare un nuovo gruppo commu
 
 ## Console Modelli per gruppi {#group-templates-console}
 
-Per accedere alla console dei modelli di gruppi nell’ambiente AEM Author:
+Per accedere alla console dei modelli dei gruppi nell’ambiente AEM Author:
 
-* Seleziona **strumenti| Community| Modelli di gruppo,** dalla navigazione globale.
+* Seleziona **strumenti | Community | Modelli di gruppo,** dalla navigazione globale.
 
 Questa console visualizza i modelli da cui è possibile creare un sito [](/help/communities/sites-console.md) community e consente di creare nuovi modelli di gruppo.
 
@@ -49,7 +52,7 @@ Viene visualizzato il pannello Editor sito che contiene 3 sottopannelli:
 
 ### Informazioni di base {#basic-info}
 
-![chlimage_1-137](assets/chlimage_1-137.png)
+![site-basic-info](assets/site-basic-info.png)
 
 Nel pannello Informazioni di base, un nome, una descrizione e se il modello è abilitato o disabilitato sono configurati:
 
@@ -67,7 +70,7 @@ Nel pannello Informazioni di base, un nome, una descrizione e se il modello è a
 
 #### Miniatura  {#thumbnail}
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![site-thumbnail](assets/site-thumbnail.png)
 
 (Facoltativo) Selezionate l’icona Carica immagine per visualizzare una miniatura con il nome e la descrizione per i creatori dei siti della community.
 
