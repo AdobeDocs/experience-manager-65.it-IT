@@ -3,9 +3,9 @@ title: Esaminare raccolte e risorse delle cartelle
 description: Configurate i flussi di lavoro di revisione per le risorse all'interno di una cartella o di una raccolta e condividetela con revisori o partner creativi per ottenere feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '794'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Configurate i flussi di lavoro di revisione per le risorse all&#39;interno di una cartella o di una raccolta e condividetela con revisori o partner creativi per ottenere feedback.
 
-Risorse Adobe Experience Manager consente di impostare un flusso di lavoro di revisione ad hoc per le risorse all&#39;interno di una cartella o raccolta e di condividerlo con revisori o partner creativi per ottenere feedback.
+ risorse di Adobe Experience Manager consente di impostare un flusso di lavoro di revisione ad hoc per le risorse all&#39;interno di una cartella o raccolta e di condividerlo con revisori o partner creativi per ottenere feedback.
 
 Potete associare il flusso di lavoro di revisione a un progetto o creare un&#39;attività di revisione indipendente.
 
@@ -26,9 +26,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 ## Creazione di un&#39;attività di revisione per le cartelle {#creating-a-review-task-for-folders}
 
 1. Dall’interfaccia utente di Risorse, selezionate la cartella per la quale desiderate creare un’attività di revisione.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Crea attività]** revisione per ![creare l&#39;attività](assets/do-not-localize/create-review-task.png) revisione per aprire la pagina Attività **** revisione. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Facoltativo) Dall&#39;elenco **[!UICONTROL Progetto]** , selezionare il progetto al quale si desidera associare l&#39;attività di revisione. Per impostazione predefinita, è selezionata l&#39;opzione **[!UICONTROL Nessuno]** . Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
 
@@ -74,9 +72,7 @@ Dopo che il revisore ha completato la revisione (approva o rifiuta le risorse), 
 ## Creazione di un&#39;attività di revisione per le raccolte {#creating-a-review-task-for-collections}
 
 1. Nella pagina Raccolte, selezionate la raccolta per la quale desiderate creare un&#39;attività di revisione.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. Dalla barra degli strumenti, fare clic su **[!UICONTROL Crea attività]** revisione per ![creare l&#39;attività](assets/do-not-localize/create-review-task.png) revisione per aprire la pagina Attività **** revisione. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Facoltativo) Dall&#39;elenco **[!UICONTROL Progetto]** , selezionare il progetto al quale si desidera associare l&#39;attività di revisione. Per impostazione predefinita, è selezionata l&#39;opzione **[!UICONTROL Nessuno]** . Se non si desidera associare alcun progetto all&#39;attività di revisione, mantenere questa selezione.
 
