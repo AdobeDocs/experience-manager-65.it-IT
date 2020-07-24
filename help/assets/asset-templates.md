@@ -3,9 +3,9 @@ title: Modelli di risorse in [!DNL Adobe Experience Manager Assets].
 description: Scopri i modelli delle risorse [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli delle risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
 1. Fate clic su **[!UICONTROL Anteprima]** per visualizzare l’anteprima delle modifiche di testo.
 
-   ![chlimage_1-112](assets/chlimage_1-317.png)
+   ![visualizza modifiche](assets/view-changes.png)
 
 1. Per sostituire un’immagine, fate clic su **[!UICONTROL Asset Finder]**.
 
@@ -122,11 +122,11 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
 1. Fate clic su **[!UICONTROL Anteprima]** per visualizzare l’anteprima dell’immagine.
 
-   ![chlimage_1-116](assets/chlimage_1-321.png)
+   ![visualizza modifiche](assets/view-changes.png)
 
 1. Per modificare una pagina specifica in un materiale collaterale composto da più pagine, utilizzate il navigatore pagina nella parte inferiore.
 
-   ![chlimage_1-117](assets/chlimage_1-322.png)
+   ![navigatore pagina](assets/page-navigator.png)
 
 1. Fate clic su **[!UICONTROL Anteprima]** sulla barra degli strumenti per visualizzare in anteprima tutte le modifiche. Fate clic su **[!UICONTROL Fine]** per salvare le modifiche apportate al materiale collaterale.
 
@@ -172,8 +172,6 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
    ![chlimage_1-122](assets/chlimage_1-327.png)
 
    Potete anche cercare i modelli dalla casella di ricerca Omnice.
-
-   ![chlimage_1-123](assets/chlimage_1-328.png)
 
    Potete sfogliare la [!DNL Experience Manager Assets] directory archivio o le raccolte, individuare la posizione dei modelli desiderati e selezionarli per l&#39;unione.
 
