@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+source-git-commit: 81249e13db9bd173d4251683ccaacbb7f71b3209
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 4%
@@ -27,9 +27,15 @@ Potete modificare la schermata di login di tutti i moduli AEM Forms che utilizza
 1. Effettuate l&#39;accesso `/lc/crx/de` con le autorizzazioni di amministratore.
 1. Effettuare le seguenti operazioni:
 
-   1. Replicare la struttura gerarchica: di `/libs/livecycle/core/content` a `/apps/livecycle/core/content`. Mantenere le stesse proprietà (nodo/cartella) e il controllo di accesso.
+   1. Replicare la struttura gerarchica: di `/libs/livecycle/core/content` a `/apps/livecycle/core/content`.
 
-   1. Copiate la cartella del contenuto: da `/libs/livecycle/core` a `/apps/livecycle/core`.
+      Mantenere le stesse proprietà (nodo/cartella) e il controllo di accesso.
+
+   1. Copiate la cartella del contenuto:
+
+      da: `/libs/livecycle/core`
+
+      a: `/apps/livecycle/core`.
 
    1. Eliminate il contenuto della `/apps/livecycle/core` cartella.
 
@@ -244,6 +250,7 @@ String browserLocale = "en";
 
       * a `/apps/livecycle/core/components/login`
    1. Modificate `/apps/livecycle/core/components/login/login.jsp` per incorporare i nuovi stili aggiunti.
+
 
 
 Ad esempio:
