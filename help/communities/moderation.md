@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '2110'
+ht-degree: 4%
 
 ---
 
 
 # Console di moderazione {#moderation-console}
 
-Nelle community AEM, la [moderazione collettiva dei contenuti](/help/communities/moderate-ugc.md) della community è possibile sia dall’ambiente di creazione che da quello di pubblicazione da parte di amministratori e moderatori della community (membri attendibili della community assegnati come moderatori).
+Negli AEM Communities, la [moderazione di contenuti](/help/communities/moderate-ugc.md) della community è possibile sia dall&#39;ambiente di creazione che da quello di pubblicazione da parte di amministratori e moderatori della comunità (membri della comunità attendibili assegnati come moderatori).
 
 Gli amministratori e i moderatori della community possono eseguire anche la moderazione [contestuale](/help/communities/in-context.md) nell’ambiente di pubblicazione.
 
@@ -45,7 +48,7 @@ L&#39;accesso alla console Moderazione da un sito community pubblicato avviene t
 
 Selezionando il collegamento Amministrazione, viene visualizzata la console Moderazione:
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ## Accesso all&#39;ambiente di authoring {#author-environment-access}
 
@@ -243,11 +246,11 @@ Il progetto [di](https://github.com/Adobe-Marketing-Cloud/aem-communities-extens
 
 Per installare l’esempio per il filtro Tag:
 
-1. Aprite il gestore pacchetti nell&#39;istanza di AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e nell&#39;istanza di AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Aprite il gestore pacchetti nell’istanza AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Create il pacchetto `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` dal codice Github, quindi installate e abilitate lo stesso.
-1. Aprite la console dei bundle nell&#39;istanza di AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e nell&#39;istanza di AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Aprite la console dei bundle nell’istanza AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Create il pacchetto ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` da Github, quindi installate e abilitate lo stesso.
-1. Andate al nodo **/apps/social/moderation/facets** su AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) e AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
+1. Andate al nodo **/apps/social/moderation/facets** sul AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) e AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Aggiungete un utente tecnico **community-utilità-reader** con `jcr:read` le autorizzazioni.
 
 Per esporre i filtri personalizzati sui siti comunitari esistenti:
