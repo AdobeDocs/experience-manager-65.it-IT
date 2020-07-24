@@ -3,7 +3,7 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 7%
@@ -65,9 +65,6 @@ Potete cercare le risorse scadute, comprese le risorse secondarie scadute, nel p
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Fate clic sul [!DNL Experience Manager] logo per visualizzare il pannello di ricerca.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -114,11 +111,9 @@ La [!DNL Assets] console può visualizzare vari stati per le risorse. A seconda 
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Per visualizzare la pagina dei dettagli della risorsa, nell’ [!DNL Assets] interfaccia selezionate una risorsa e fate clic su **[!UICONTROL Proprietà]**.
+1. Per visualizzare la pagina dei dettagli della risorsa, nell’ [!DNL Assets] interfaccia selezionate una risorsa e fate clic su **[!UICONTROL Proprietà]** per ![visualizzare le proprietà](assets/do-not-localize/info-circle-icon.png).
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. Nella scheda Avanzate, imposta una data di scadenza per la risorsa dal campo **[!UICONTROL Scadenza]** .
+1. Nella scheda [!UICONTROL Avanzate] , imposta una data di scadenza per la risorsa dal campo **[!UICONTROL Scadenza]** .
 
    ![imposta data e ora di scadenza risorsa nel campo Scadenza](assets/asset-properties-advanced-tab.png)
 
