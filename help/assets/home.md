@@ -4,7 +4,7 @@ seo-title: Guida utente  Adobe Experience Manager 6.5 Assets
 description: Questa guida descrive tutte  attività di Risorse Experience Manager, come ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 seo-description: Vengono  tutte le attività di Experience Manager Assets, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 12%
@@ -18,9 +18,12 @@ Questa guida descrive tutte  attività di Risorse Experience Manager, come ad es
 
 ## Chiave  articoli Experience Manager
 
+<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
+-->
+
 * [Guida introduttiva  Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Note  sulla versione di Experience Manager 6.5](/help/release-notes/home.md)
-* [Aggiornamenti recenti alla documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Elenco di controllo protezione](/help/sites-administering/security-checklist.md)
 
 ##  delle guide utente di Experience Manager 6.5
