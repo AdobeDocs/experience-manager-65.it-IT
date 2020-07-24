@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ Un limite noto espone il contenuto del sito della community ai visitatori anonim
 
 Per proteggere i contenuti del sito della community dall&#39;accesso di utenti anonimi tramite contenuti jcr e json, procedi come segue:
 
-1. Nell&#39;istanza di AEM Author, andate a https:// nomehost:port/editor.html/content/site/sitename.html.
+1. Nell’istanza AEM Author, andate a https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -89,7 +92,7 @@ Una volta effettuato l&#39;accesso come membro della community registrato, potet
    1. Comporre nuovi messaggi diretti da inviare a singoli e gruppi.
 
 * [L&#39;opzione Notifiche](/help/communities/notifications.md) consente di accedere alla sezione delle notifiche, in cui è possibile visualizzare gli eventi di interesse e modificare le impostazioni delle notifiche.
-* [Se disponete dei privilegi di moderazione, l&#39;amministrazione](/help/communities/published-site.md#moderationlink) vi indirizza alla pagina Moderazione di AEM Communities.
+* [Se disponete di privilegi di moderazione, Amministrazione](/help/communities/published-site.md#moderationlink) vi indirizza alla pagina Moderazione AEM Communities.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -103,6 +106,7 @@ Notate che la pagina Calendario è la home page perché il modello di sito di ri
 >
 >* [Componenti](/help/communities/author-communities.md) Community (per autori)
 >* [Componenti, funzioni e funzionalità Essentials](/help/communities/essentials.md) (per sviluppatori)
+
 >
 
 
@@ -125,7 +129,7 @@ Questo è un esempio in cui viene creato un gruppo nell’ambiente di pubblicazi
 
 I gruppi possono essere creati anche nell’ambiente di authoring e gestiti all’interno del sito della community nell’ambiente di authoring (console[Gruppi](/help/communities/groups.md)community). Questa esercitazione illustra come [creare gruppi in fase di creazione](/help/communities/nested-groups.md) .
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![classic-ui](assets/classic-ui.png)
 
 Crea un gruppo di riferimento:
 
@@ -143,11 +147,11 @@ Crea un gruppo di riferimento:
 
 1. Seleziona **Crea gruppo**
 
-![chlimage_1-37](assets/chlimage_1-37.png)
+![classic-ui-website](assets/classic-ui-website.png)
 
 Dopo aver creato un nuovo gruppo, **selezionate il nuovo gruppo** Sport per creare due gruppi (nidificati) al suo interno. Poiché una struttura del sito non può iniziare con la funzione dei gruppi, dopo aver aperto il gruppo Sport, è necessario selezionare il collegamento Gruppi:
 
-![chlimage_1-38](assets/chlimage_1-38.png)
+![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 Il secondo gruppo di collegamenti, a partire da `Blog`, appartiene al gruppo attualmente selezionato, il `Sports` gruppo. Selezionando il collegamento Sport&#39; `Groups` , è possibile nidificare due gruppi all&#39;interno del gruppo Sport.
 
@@ -175,7 +179,7 @@ Una volta creati entrambi i gruppi, selezionate il gruppo Baseball, un gruppo ap
 
 I collegamenti del gruppo sono visualizzati sotto i collegamenti del sito principale e i risultati sono la seguente visualizzazione:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![classic-ui-website-page](assets/classic-ui-website-page.png)
 
 Per l’autore, con privilegi amministrativi, andate alla console [Gruppi di](/help/communities/members.md) Communities e aggiungete Weston McCall al `Community Engage Gymnastics <uid> Members` gruppo.
 
@@ -190,7 +194,7 @@ Solo il gruppo di baseball sarà visibile.
 
 Effettuate l&#39;accesso come Weston McCall (weston.mccall@dodgit.com / password) e andate alla stessa posizione. Notate che Weston è in grado di aprire `Join` il `Baseball` gruppo e `enter or Leave` il `Gymnastics` gruppo privato.
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ### Collegamento pagina Web {#web-page-link}
 
@@ -198,7 +202,7 @@ Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento
 
 Ad esempio, passate all’istanza di **creazione** , aprite la `engage` cartella nella console [Siti](/help/communities/sites-console.md)community, selezionate l’icona **Apri sito** per passare alla modalità di modifica dell’autore. Selezionate quindi la modalità di anteprima per selezionare il `Web Page` collegamento, quindi selezionate la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblicate solo la pagina o l’intero sito.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 ### Collegamento moderazione {#moderationlink}
 
