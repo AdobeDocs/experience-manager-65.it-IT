@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -38,13 +38,13 @@ Ora che è presente un modello [di](initial-app.md#createthepagetemplate)pagina,
 
    Per passare all’interfaccia classica, selezionate la navigazione globale e passate il mouse sul lato destro dell’icona Progetti. Selezionate l’icona *Passa all’interfaccia* classica visualizzata:
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    La possibilità di passare all’interfaccia classica deve essere [abilitata da un amministratore](../../help/sites-administering/enable-classic-ui.md).
 
 1. Nella pagina [di benvenuto dell’interfaccia](http://localhost:4502/welcome.html)classica, selezionate **[!UICONTROL Siti Web]**.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    In alternativa, potete accedere direttamente all’interfaccia classica per i siti Web accedendo direttamente a [/siteadmin.](http://localhost:4502/siteadmin)
 
@@ -57,7 +57,7 @@ Ora che è presente un modello [di](initial-app.md#createthepagetemplate)pagina,
    * Selezionare **[!UICONTROL un modello di riproduzione sandbox SCF]**
    * Fai clic su **[!UICONTROL Crea]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site`e fate clic su **[!UICONTROL Nuova]** > **[!UICONTROL Nuova pagina]**:
 
@@ -75,11 +75,11 @@ Ora che è presente un modello [di](initial-app.md#createthepagetemplate)pagina,
 
 1. Il sito Web ora viene visualizzato nella console Siti Web. Le pagine figlie dell&#39;elemento selezionato nel riquadro di esplorazione vengono visualizzate nel riquadro di destra in cui è possibile gestirle.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    Questa è la visualizzazione archivio di ciò che è stato creato con lo strumento Sito Web e il modello:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ## Aggiungere il percorso di progettazione {#add-the-design-path}
 
@@ -100,7 +100,7 @@ Quando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 
 Il repository deve essere visualizzato come segue:
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Fate clic su **[!UICONTROL Salva tutto]**
 
