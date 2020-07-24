@@ -1,8 +1,8 @@
 ---
 title: Creazione di una nuova schermata di login
 seo-title: Creazione di una nuova schermata di login
-description: Procedura per modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro di AEM Forms o Forms Manager.
-seo-description: Procedura per modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro di AEM Forms o Forms Manager.
+description: Come modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro AEM Forms o Forms Manager.
+seo-description: Come modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro AEM Forms o Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,17 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 4%
 
 ---
 
 
 # Creazione di una nuova schermata di login{#creating-a-new-login-screen}
 
-È possibile modificare la schermata di accesso di tutti i moduli AEM Forms che utilizzano la schermata di accesso di AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
+Potete modificare la schermata di login di tutti i moduli AEM Forms che utilizzano la schermata di login dei AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
 
 ## Prerequisito {#prerequisite}
 
@@ -42,13 +45,15 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 1. Copiate la `i18n` cartella:
 
-   * from `/libs/livecycle/core/components/login`
+   * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
 1. Eliminate tutte le cartelle all&#39;interno `i18n` tranne una, ad esempio `en`.
+
 1. Nella cartella `en`, effettuate le seguenti operazioni:
 
    1. Rinominare la cartella con il nome delle impostazioni internazionali da supportare. Esempio, `ar`.
+
    1. Modificate il valore della proprietà `jcr:language` in `ar`(per la `ar` cartella).
    >[!NOTE]
    >
@@ -56,15 +61,15 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 1. Copia `login.jsp`:
 
-   * from `/libs/livecycle/core/components/login`
+   * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
 1. Modificate il frammento di codice seguente per `/apps/livecycle/core/components/login/login.jsp`:
 
-   ***Lingua è il codice della lingua***
+***Lingua è il codice della lingua***
 
-   ```
-   String browserLocale = "en";
+```
+String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -85,9 +90,9 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -113,12 +118,13 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
                break;
            }
        }
-   ```
+```
 
-   ***Lingua è il codice del paese della lingua***
 
-   ```
-   String browserLocale = "en";
+***Lingua è il codice del paese della lingua***
+
+```
+String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -139,9 +145,9 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -167,61 +173,64 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
                break;
            }
        }
-   ```
+```
 
-   ***Per modificare le impostazioni internazionali predefinite***
+***Per modificare le impostazioni internazionali predefinite***
 
-   ```
-   String browserLocale = "en";
+```
+String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
-   
+
    To
-   
+
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
-   ```
+```
 
 ### Aggiunta di nuovo testo o modifica di testo esistente {#adding-new-text-or-modifying-existing-text}
 
 1. Copia `i18n` cartella:
 
-   * from `/libs/livecycle/core/components/login`
+   * da `/libs/livecycle/core/components/login`
    * a `/apps/livecycle/core/components/login`
 
 1. A questo punto, modificate il valore della proprietà `sling:message` del nodo (nella cartella del codice lingua desiderata) per il quale desiderate modificare il testo. La conversione viene eseguita tramite la chiave indicata nel valore della `sling:key` proprietà del nodo.
+
 1. Per aggiungere una nuova coppia chiave-valore, effettuare le seguenti operazioni. Controllate un esempio nello screenshot che segue.
 
    1. Creare un nodo di tipo `sling:MessageEntry`, o copiare un nodo esistente e rinominarlo, in tutte le cartelle delle impostazioni internazionali.
    1. Copia `login.jsp` :
 
-      * from `/libs/livecycle/core/components/login`
+      * da `/libs/livecycle/core/components/login`
 
       * a `/apps/livecycle/core/components/login`
    1. Modificate `/apps/livecycle/core/components/login/login.jsp` per incorporare il testo appena aggiunto.
+
    ![Aggiungi nuova coppia chiave-valore](assets/capture_new.png)
 
-   ```
-   div class="loginContent">
+
+```
+<div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-   
+
    To
-   
-   div class="loginContent">
+
+   <div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-   ```
+```
 
 ### Aggiunta di nuovo stile o modifica di uno stile esistente {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
 
-   * from `/libs/livecycle/core/content`
+   * da `/libs/livecycle/core/content`
    * a `/apps/livecycle/core/content`
 
 1. Eliminare file `login.js` e `jquery-1.8.0.min.js`, dal nodo `/apps/livecycle/core/content/login.`
@@ -231,36 +240,37 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
    1. Aggiungi nuovi stili a `/apps/livecycle/core/content/login/login.css`
    1. Copia `login.jsp`
 
-      * from `/libs/livecycle/core/components/login`
+      * da `/libs/livecycle/core/components/login`
 
       * a `/apps/livecycle/core/components/login`
    1. Modificate `/apps/livecycle/core/components/login/login.jsp` per incorporare i nuovi stili aggiunti.
 
 
-1. Esempio:
+Ad esempio:
 
-   * Aggiungi quanto segue a `/apps/livecycle/core/content/login/login.css`.
+* Aggiungi quanto segue a `/apps/livecycle/core/content/login/login.css`.
 
-   ```css
-   .newLoginContentArea {
+```
+css.newLoginContentArea {
     width: 700px;
     padding: 100px 0px 0px 100px;
    }
-   ```
+```
 
-   * Modificate quanto segue in /apps/livecycle/core/components/login.jsp.
+* Modificate quanto segue in `/apps/livecycle/core/components/login.jsp`.
 
-   ```
-   <div class="loginContentArea">
-   
+```
+<div class="loginContentArea">
+
    To
-   
+
    <div class="newLoginContentArea">
-   ```
+```
 
 >[!NOTE]
 >
 >Se le immagini esistenti in `/apps/livecycle/core/content/login` (copiate da `/libs/livecycle/core/content/login`) vengono rimosse, rimuovete i riferimenti corrispondenti in CSS.
+
 
 ### Aggiungere nuove immagini {#add-new-images}
 
@@ -274,25 +284,27 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 1. Aggiungete nuovi stili in `/apps/livecycle/core/content/login/login.css,` base alle nuove immagini aggiunte in `/apps/livecycle/core/content/login`.
 1. Utilizzate i nuovi stili in `login.jsp` in `/apps/livecycle/core/components`.
-1. Ad Esempio:
 
-   * Aggiungi quanto segue a `/apps/livecycle/core/content/login/login.css`
+Ad Esempio:
 
-   ```css
-   .newLoginContainerBkg {
+* Aggiungi quanto segue a `/apps/livecycle/core/content/login/login.css`
+
+```
+css.newLoginContainerBkg {
     background-image: url(my_Bg.gif);
     background-repeat: no-repeat;
     background-position: left top;
     width: 727px;
    }
-   ```
+```
 
-   * Modificate quanto segue in /apps/livecycle/core/components/login.jsp.
+* Modificate quanto segue in `/apps/livecycle/core/components/login.jsp`.
 
-   ```
-   <div class="loginContainerBkg">
-   
+```
+<div class="loginContainerBkg">
+
    To
-   
+
    <div class="newLginContainerBkg">
-   ```
+```
+
