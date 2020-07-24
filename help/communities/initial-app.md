@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 2%
 
 ---
 
@@ -40,13 +43,14 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
    * Descrizione: `An SCF Sandbox template for play pages`
    * Tipo risorsa: `an-scf-sandbox/components/playpage`
    * Classificazione: &lt;lasciare come predefinito>
+
    Etichetta utilizzata per il nome del nodo.
 
    Il tipo di risorsa viene visualizzato sul nodo jcr:content `playpage`come proprietà `sling:resourceType`. Identifica il componente (risorsa) che esegue il rendering del contenuto quando richiesto da un browser.
 
    In questo caso, tutte le pagine create utilizzando il `playpage` modello vengono sottoposte a rendering dal `an-scf-sandbox/components/playpage` componente. Per convenzione, il percorso del componente è relativo, consentendo a Sling di cercare la risorsa prima nella `/apps` cartella e, se non trovata, nella `/libs` cartella.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
+   ![create-content-template](assets/create-content-template-1.png)
 
 1. Se si utilizza Copia/Incolla, assicurarsi che il valore Tipo risorsa non contenga spazi iniziali o finali.
 
@@ -56,7 +60,7 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
    Per aggiungere un tracciato, fate clic sul pulsante più `+` e digitate `/content(/.&ast;)?` nella casella di testo visualizzata. Se usate Copia/Incolla, accertatevi che non vi siano spazi iniziali o finali.
 
-   Nota: Il valore della proprietà path consentita è un&#39;espressione *regolare.* Le pagine di contenuto con un percorso che corrisponde all&#39;espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le relative sottopagine.
+   Nota: Il valore della proprietà path consentita è un&#39;espressione ** regolare. Le pagine di contenuto con un percorso che corrisponde all&#39;espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le relative sottopagine.
 
    Quando un autore crea una pagina sotto `/content`, il `playpage` modello denominato &quot;An SCF Sandbox Page Template&quot; viene visualizzato in un elenco di modelli disponibili da utilizzare.
 
@@ -64,7 +68,7 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![configure-template-path](assets/configure-template-path.png)
 
 1. Fai clic su **[!UICONTROL Avanti]**.
 
@@ -72,13 +76,13 @@ In questo esercizio, tutte le pagine sono basate su un modello semplice.
 
    Fate clic su **[!UICONTROL Avanti]** nei pannelli Figli **** consentiti.
 
-   Fai clic su **[!UICONTROL OK]**. 
+   Fai clic su **[!UICONTROL OK]**.
 
 1. Dopo aver fatto clic su OK e aver completato la creazione del modello, agli angoli dei valori della scheda Proprietà per il nuovo `playpage` modello vengono visualizzati triangoli rossi. Questi triangoli rossi indicano le modifiche che non sono state salvate.
 
    Fate clic su **[!UICONTROL Salva tutto]** per salvare il nuovo modello nella directory archivio.
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+   ![verify-content-template](assets/verify-content-template.png)
 
 ### Creare il componente di rendering del modello {#create-the-template-s-rendering-component}
 
@@ -94,16 +98,17 @@ Create il *componente* che definisce il contenuto ed esegue il rendering di tutt
    Nella finestra di dialogo **[!UICONTROL Crea componente]** , digitare i seguenti valori di proprietà:
 
    * Etichetta: **playpage**
-   * Titolo: Componente **di riproduzione sandbox SCF**
-   * Descrizione: È **il componente che esegue il rendering del contenuto per una pagina sandbox SCF.**
-   * Super Type: *&lt;blank>*
-   * Gruppo:
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   * Titolo: **Componente di riproduzione sandbox SCF**
+   * Descrizione: **È il componente che esegue il rendering del contenuto per una pagina sandbox SCF.**
+   * Super Type: *&lt;lasciare vuoto>*
+   * Gruppo: *&lt;lasciare vuoto>*
+
+   ![create-template-component](assets/create-template-component.png)
 
 1. Fate clic su **[!UICONTROL Avanti]** fino a visualizzare il pannello **[!UICONTROL Elementi figlio]** consentiti nella finestra di dialogo:
 
-   * Fai clic su **[!UICONTROL OK]**
-   * Fate clic su **[!UICONTROL Salva tutto]**
+   * Fai clic su **[!UICONTROL OK]**.
+   * Fate clic su **[!UICONTROL Salva tutto]**.
 
 1. Verifica che il percorso del componente e il resourceType per il modello corrispondano.
 
@@ -111,4 +116,4 @@ Create il *componente* che definisce il contenuto ed esegue il rendering di tutt
    >
    >La corrispondenza tra il percorso del componente della pagina di riproduzione e la proprietà sling:resourceType del modello della pagina di riproduzione è fondamentale per il corretto funzionamento del sito Web.
 
-   ![chlimage_1-79](assets/chlimage_1-79.png)
+   ![verify-template-component](assets/verify-template-component.png)
