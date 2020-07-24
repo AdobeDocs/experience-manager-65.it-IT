@@ -3,9 +3,9 @@ title: 'Schemi di metadati per definire il layout della pagina delle proprietà 
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04babc1ec79a0816e1cb9f97e2711fe212f51387
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2667'
 ht-degree: 7%
 
 ---
@@ -19,11 +19,7 @@ Gli schemi [!DNL Adobe Experience Manager Assets]contengono campi specifici per 
 
 Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
 
-1. Fate clic sull’opzione **[!UICONTROL Visualizza proprietà]** dalle azioni rapide nella sezione delle risorse nella vista a schede.
-
-   ![Azioni rapide nella sezione delle risorse](assets/chlimage_1-170.png)
-
-   In alternativa, seleziona una risorsa e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti.
+1. Fate clic sull’opzione **[!UICONTROL Visualizza proprietà]** dalle azioni rapide nella sezione delle risorse nella vista a schede. In alternativa, seleziona una risorsa e fai clic su **[!UICONTROL Proprietà]** per ![visualizzare le proprietà](assets/do-not-localize/info-circle-icon.png) dalla barra degli strumenti.
 
 1. Potete modificare le varie proprietà di metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
 
