@@ -3,9 +3,9 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2130'
 ht-degree: 1%
 
 ---
@@ -298,8 +298,6 @@ Nella pagina Editor risorse, gli utenti possono quindi immettere valori nei camp
 
 Il componente Risorse secondarie consente di visualizzare e selezionare le risorse secondarie. Potete determinare i nomi visualizzati sotto le risorse [e le risorse secondarie](/help/assets/assets.md#what-are-digital-assets) principali.
 
-![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
-
 Fate doppio clic sul componente Risorse secondarie per aprire la finestra di dialogo delle risorse secondarie, in cui potete modificare i titoli per la risorsa principale e le risorse secondarie. I valori predefiniti vengono visualizzati sotto il campo corrispondente.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
@@ -347,8 +345,6 @@ Esempio di un componente Miniatura con popolamento:
 #### Titolo {#title}
 
 Il componente Titolo visualizza il titolo della risorsa e una descrizione.
-
-![chlimage_1-163](assets/chlimage_1-391.png)
 
 Per impostazione predefinita, è in modalità di sola lettura e gli utenti non possono modificarla. Per renderlo modificabile, fate doppio clic sul componente e deselezionate la casella di controllo **Nascondi pulsante** modifica. Inoltre, immettete un titolo per più risorse.
 
