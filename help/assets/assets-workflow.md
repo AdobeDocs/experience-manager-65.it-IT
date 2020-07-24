@@ -3,9 +3,9 @@ title: Elabora risorse per eseguire processi aziendali, eseguire audit, ottenere
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '986'
 ht-degree: 3%
 
 ---
@@ -56,11 +56,9 @@ Per applicare un flusso di lavoro a una risorsa, effettuate le seguenti operazio
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (Facoltativo) Specificate un titolo per il flusso di lavoro che può essere utilizzato per fare riferimento all&#39;istanza del flusso di lavoro.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![selezionate il flusso di lavoro, fornite un titolo e fate clic su Avvia](assets/start-workflow.png)
 
 1. Fate clic su **[!UICONTROL Avvia]** , quindi fate clic su **[!UICONTROL Procedi]**. Ciascun passaggio del flusso di lavoro viene visualizzato nella timeline come un evento.
 
@@ -75,7 +73,7 @@ Per applicare un flusso di lavoro a una risorsa, effettuate le seguenti operazio
 1. Fate clic su **[!UICONTROL Azioni]** ![con la freccia verso l’alto](assets/do-not-localize/chevron-up-icon.png) in basso.
 1. Fate clic su **[!UICONTROL Avvia flusso di lavoro]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![avvia flusso di lavoro](assets/start-workflow.png)
 
 1. (Facoltativo) Specificate un titolo per il flusso di lavoro, che può essere utilizzato per fare riferimento all’istanza del flusso di lavoro.
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Avvia]**, quindi su **[!UICONTROL Conferma]**. Il flusso di lavoro viene eseguito su tutte le risorse selezionate.
