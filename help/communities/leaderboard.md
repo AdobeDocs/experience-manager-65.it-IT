@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Questa pagina contiene le informazioni essenziali per l’utilizzo della funzione della classifica.
 
-Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](implementing-scoring.md). Vedere anche [Punteggio e Badges Essentials](configure-scoring.md).
+Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](implementing-scoring.md).
+
+Consulta [Punteggio e Badge Essentials](configure-scoring.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -35,7 +40,7 @@ Prima di includere il componente della classifica in una pagina, è necessario c
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.gamifications.hbs.leaderboard</td>
+   <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
