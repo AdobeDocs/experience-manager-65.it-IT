@@ -3,9 +3,9 @@ title: Gestire [!DNL Adobe Stock] le risorse in [!DNL Adobe Experience Manager A
 description: Cercare, recuperare, ottenere licenze e [!DNL Adobe Stock] gestire risorse dall'interno [!DNL Adobe Experience Manager]. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1099'
 ht-degree: 13%
 
 ---
@@ -122,7 +122,7 @@ Gli utenti possono visualizzare le proprietà delle risorse con licenza e senza 
 
 >[!MORELIKETHIS]
 >
->* [Esercitazione video sull’utilizzo delle risorse Adobe Stock con  risorse Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Esercitazione video sull’utilizzo delle risorse Adobe Stock con  risorse Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Guida al piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Domande frequenti su Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
