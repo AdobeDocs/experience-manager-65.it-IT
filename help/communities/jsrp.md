@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
@@ -44,20 +44,18 @@ Nell’ambiente di authoring, per accedere alla console Configurazione archiviaz
 
 * Seleziona **[!UICONTROL Invia]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 ### Pubblicazione della configurazione {#publishing-the-configuration}
 
 JSRP è la configurazione predefinita, ma per assicurarsi che la configurazione identica sia impostata nell’ambiente di pubblicazione:
 
-* Per autore:
+* Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]**
+* Selezionare **[!UICONTROL Attiva albero]** > Percorso **** iniziale:
 
-   * Dalla navigazione globale: **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]**
-   * Selezionare **[!UICONTROL Attiva albero]** > Percorso **** iniziale:
+   * Passa a `/conf/global/settings/community/srpc/`
 
-      * Passa a `/conf/global/settings/community/srpc/`
-   * Seleziona **[!UICONTROL attiva]**
-
+* Seleziona **[!UICONTROL attiva]**
 
 ## Gestione dei dati utente {#managing-user-data}
 
