@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ Dalla navigazione globale, selezionare **[!UICONTROL Strumenti]** > **[!UICONTRO
 
 Per Percorso iniziale, immettete `/apps/social/commons` e selezionate **[!UICONTROL Attiva]**.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+![verify-content-template](assets/verify-content-template.png)
 
 ### Visualizza risultati {#view-results}
 
@@ -72,5 +75,5 @@ Se accedete all’istanza di pubblicazione come amministratore, ad esempio https
 
 Se effettuate il logout e accedete nuovamente come `aaron.mcdonald@mailinator.com/password` e aggiornate la pagina, il commento pubblicato non viene più visualizzato con un avatar, ma viene visualizzato un semplice &#39;xxx&#39;.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![create-template-component](assets/create-template-component.png)
 
