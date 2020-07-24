@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 917fceffb58883df83e96f60da4769046a18f3c0
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
 
 # Moderazione In-Context {#in-context-moderation}
 
-Per AEM Communities, la moderazione può essere eseguita da amministratori e membri della community trusted direttamente nella pagina pubblicata in cui è stato pubblicato il contenuto della community.
+Per i AEM Communities, la moderazione può essere eseguita dagli amministratori e dai membri della community trusted direttamente nella pagina pubblicata in cui è stato pubblicato il contenuto della community.
 
 Quando si utilizza una console [di](moderation.md)moderazione, le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l&#39;accesso a ulteriori azioni di moderazione disponibili durante la moderazione nel contesto.
 
@@ -37,7 +40,7 @@ L’interfaccia utente presentata al moderatore nell’istanza di pubblicazione 
 
 ## Esempio {#example}
 
-Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato durante la [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare diverse attività di moderazione nell’ambiente di pubblicazione, come illustrato di seguito.
+Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato durante la [Guida introduttiva ai AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare varie attività di moderazione nell’ambiente di pubblicazione, come illustrato di seguito.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro di fiducia della comunità aggiungendo lui al gruppo di moderatori-coinvolti nella comunità durante la creazione del sito.
 
@@ -58,6 +61,7 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
    * Immettete il testo del corpo
 
       Non ho avuto molto successo quando appendo un mangime per colibrì ogni anno. Sembra che arrivino un giorno o due allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
+
    * Seleziona post
    * Seleziona uscita
 
@@ -89,7 +93,7 @@ Di seguito è riportata una visualizzazione del forum visualizzato da un visitat
 
 Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubblicare alcun contenuto né eseguire azioni di moderazione.
 
-![chlimage_1](assets/chlimage_1.png)
+![community-forum-visitor](assets/community-forum-visitor.png)
 
 ### Nuovo membro (#4) {#new-member}
 
@@ -107,7 +111,7 @@ Fate clic su Contrassegno corpo per contrassegnare il contenuto pubblicato da An
 
 Disconnetti
 
-![chlimage_1-1](assets/chlimage_1-1.png)
+![membro della community-forum](assets/community-forum-member.png)
 
 ### Administrator (#3) {#administrator}
 
@@ -118,7 +122,7 @@ Avviso:
 * L’Amministratore può contrassegnare, eliminare, modificare, rifiutare, tagliare, chiudere, fissare, feature.
 * L&#39;amministratore può selezionare Amministrazione per accedere alla console di moderazione.
 
-![community-admin-forum](assets/communityadmin-forum.png)
+![community-admin-forum](assets/community-admin-forum.png)
 
 Selezionate la voce di menu Amministrazione per accedere alla console [di](moderation.md) moderazione dall’ambiente di pubblicazione.
 
@@ -128,7 +132,7 @@ Il filtro di ricerca è un pannello laterale che attiva o disattiva l’apertura
 
 Disconnetti.
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ### Moderatore community (#2) {#community-moderator}
 
@@ -141,7 +145,7 @@ Avviso:
 * Aaron può tagliare l&#39;argomento del forum per spostarlo in un altro forum per il quale modera.
 * Aaron può selezionare Amministrazione per accedere alla console di moderazione.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![community-forum-moderator](assets/community-forum-moderator.png)
 
 Selezionate la voce di menu Amministrazione per accedere alla console [di](moderation.md) moderazione dall’ambiente di pubblicazione.
 
@@ -151,7 +155,7 @@ Il moderatore della community dispone delle stesse opzioni dell’amministratore
 
 Disconnetti.
 
-![moderatore](assets/moderatoraccess.png)
+![moderatore-accesso](assets/moderator-access.png)
 
 ### Content Author (#1) {#content-author}
 
@@ -163,5 +167,5 @@ Avviso:
 * Rebekah può anche rispondere o contrassegnare altri contenuti.
 * Rebekah non può accedere alla console di moderazione.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![community-forum-author](assets/community-forum-author.png)
 
