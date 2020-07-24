@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +24,7 @@ Il `Liking` componente è uno strumento utile che consente agli utenti di esprim
 
 ## Aggiunta di collegamenti a una pagina {#adding-liking-to-a-page}
 
-Per aggiungere un `Liking` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare:
+Per aggiungere un `Liking` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
 
 * `Communities / Liking`
 
