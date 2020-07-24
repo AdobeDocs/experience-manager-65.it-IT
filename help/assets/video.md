@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '11828'
+source-wordcount: '11830'
 ht-degree: 8%
 
 ---
@@ -444,7 +444,7 @@ Tenete presente che Google apporta periodicamente delle modifiche alla propria i
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento della scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
 
 Per configurare le impostazioni di Google Cloud:
 
@@ -773,7 +773,7 @@ Per pubblicare i video sul canale YouTube:
 1. Nell’angolo superiore destro della pagina delle proprietà del video, fate clic su **[!UICONTROL Salva e chiudi.]**
 1. Nella barra degli strumenti, fate clic su Pubblicazione **[!UICONTROL rapida.]**
 
-   Consultate anche [Utilizzo della gestione della pubblicazione con i AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Consultate anche [Utilizzo della gestione della pubblicazione con i AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Facoltativamente, potete verificare il video pubblicato sul canale YouTube.
 
