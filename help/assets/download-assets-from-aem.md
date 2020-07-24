@@ -3,9 +3,9 @@ title: Scarica le risorse digitali da [!DNL Adobe Experience Manager].
 description: Scoprite come scaricare le risorse [!DNL Adobe Experience Manager] da e attivare o disattivare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3602a39e03536696911b39cceb20f10dfd3a9347
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '852'
 ht-degree: 3%
 
 ---
@@ -74,6 +74,6 @@ Per consentire il download delle risorse da DAM, ad esempio quando si utilizza u
 >[!MORELIKETHIS]
 >
 >* [Scaricate le risorse](drm.md)protette da DRM.
->* [Scaricate le risorse tramite  app desktop Experience Manager su Windows o Mac desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>* [Scaricate le risorse tramite  app desktop Experience Manager su Windows o Mac desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Scaricate le risorse tramite Adobe Assets Link dall&#39;interno delle app](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)Adobe Creative Cloud supportate.
 
