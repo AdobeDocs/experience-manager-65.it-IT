@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
 source-wordcount: '2424'
 ht-degree: 0%
@@ -42,11 +42,11 @@ Adobe fornisce due tipi di archetipo utilizzabili come base per i progetti AEM. 
 * [archetipo progetto AEM](https://github.com/adobe/aem-project-archetype)
 * [archetype Maven per il kit di avvio per applicazioni a pagina singola](https://github.com/adobe/aem-spa-project-archetype)
 
-## Dipendenze API Experience Manager {#experience-manager-api-dependencies}
+##  dipendenze API Experience Manager {#experience-manager-api-dependencies}
 
 ### Cos&#39;è UberJar? {#what-is-the-uberjar}
 
-&quot;UberJar&quot; è il nome informale assegnato al file JAR (Java Archives) speciale fornito da Adobe. Questi file JAR contengono tutte le API Java pubbliche esposte da Adobe Experience Manager. Sono incluse anche librerie esterne limitate, in particolare tutte le API pubbliche disponibili in AEM che provengono da Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava e due librerie utilizzate per l&#39;elaborazione delle immagini (la libreria CYMK JPEG ImageIO di Werner Randelshofer e la libreria delle immagini di dodici scimmie). UberJars contiene solo interfacce e classi API, il che significa che contengono solo interfacce e classi esportate da un bundle OSGi in AEM. Contengono anche un file *MANIFEST.MF* contenente le versioni corrette per l&#39;esportazione di pacchetti per tutti questi pacchetti esportati, garantendo così che i progetti creati con UberJar abbiano gli intervalli di importazione corretti.
+&quot;UberJar&quot; è il nome informale assegnato al file JAR (Java Archives) speciale fornito da Adobe. Questi file JAR contengono tutte le API Java pubbliche esposte da  Adobe Experience Manager. Sono incluse anche librerie esterne limitate, in particolare tutte le API pubbliche disponibili in AEM che provengono da Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava e due librerie utilizzate per l&#39;elaborazione delle immagini (la libreria CYMK JPEG ImageIO di Werner Randelshofer e la libreria delle immagini di dodici scimmie). UberJars contiene solo interfacce e classi API, il che significa che contengono solo interfacce e classi esportate da un bundle OSGi in AEM. Contengono anche un file *MANIFEST.MF* contenente le versioni corrette per l&#39;esportazione di pacchetti per tutti questi pacchetti esportati, garantendo così che i progetti creati con UberJar abbiano gli intervalli di importazione corretti.
 
 ### Perché Adobe ha creato gli UberJars? {#why-did-adobe-create-the-uberjars}
 
@@ -126,7 +126,7 @@ Con UberJar, puoi compilare il codice del progetto che dipende dalle API di AEM 
 
 ### Cosa non posso fare con UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Poiché UberJar contiene **solo** API, non è eseguibile e non può essere utilizzato per **eseguire** Adobe Experience Manager. Per eseguire AEM, è necessario disporre del modulo AEM Quickstart, Standalone o Archivio applicazioni Web (WAR).
+Poiché UberJar contiene **solo** API, non è eseguibile e non può essere utilizzato per **eseguire**  Adobe Experience Manager. Per eseguire AEM, è necessario disporre del modulo AEM Quickstart, Standalone o Archivio applicazioni Web (WAR).
 
 ### Hai menzionato i limiti dei unit test. Per favore, spieghi di più. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -386,10 +386,6 @@ Per aggiungere altri `<filter>` elementi ai percorsi:
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```
@@ -487,7 +483,7 @@ Le dipendenze sotto devono essere aggiunte al POM del `content` modulo.
 
 Per compilare i JSP nella `compile` fase di Maven, utilizziamo il plug-in [JspC](https://sling.apache.org/documentation/development/jspc.html) Maven di Apache Sling come mostrato di seguito:
 
-* abbiamo impostato un&#39;esecuzione per l&#39; `jspc` obiettivo (che per impostazione predefinita si collega alla `compile` fase, in modo da non dover specificare esplicitamente la fase)
+* abbiamo impostato un&#39;esecuzione per l&#39; `jspc` obiettivo (che per impostazione predefinita si collega alla `compile` fase, quindi non è necessario specificare la fase in modo esplicito)
 
 * si consiglia di compilare eventuali JSP in `${project.build.directory}/jsps-to-compile`
 * e restituisce il risultato a `${project.build.directory}/ignoredjspc` (che si traduce in `myproject/content/target/ignoredjspc`)
@@ -699,7 +695,7 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### Procedura per lavorare con AEM Communities {#how-to-work-with-aem-communities}
+### Utilizzo dei AEM Communities {#how-to-work-with-aem-communities}
 
 Quando si dispone di una licenza per la funzionalità AEM Communities, è necessario un&#39;ulteriore vasca API.
 
