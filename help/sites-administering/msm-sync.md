@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2673'
 ht-degree: 79%
 
 ---
@@ -188,7 +188,7 @@ Nella tabella seguente sono elencate le azioni di sincronizzazione che vengono i
   </tr>
   <tr>
    <td>workflow</td>
-   <td><p>Avvia il flusso di lavoro definito dalla proprietà target (solo per le pagine) e impiega la Live Copy come payload.</p> <p>Il percorso di destinazione è quello del nodo del modello, ad esempio /etc/workflow/models/request_for_activation/jcr:content/model</p> </td>
+   <td><p>Avvia il flusso di lavoro definito dalla proprietà target (solo per le pagine) e impiega la Live Copy come payload.</p> <p>Il percorso target è il percorso del nodo del modello.</p> </td>
    <td>target: (stringa) il percorso del modello di flusso di lavoro.<br /> </td>
   </tr>
   <tr>
@@ -416,4 +416,4 @@ Configura il servizio utilizzando la [Console web](/help/sites-deploying/configu
 * Nella console web, il nome della proprietà da configurare è: Default rollout config (Configurazione rollout predefinita).
 * Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-Imposta il valore di questa proprietà sul percorso della configurazione di rollout da utilizzare come impostazione predefinita del sistema. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Imposta il valore di questa proprietà sul percorso della configurazione di rollout da utilizzare come impostazione predefinita del sistema. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
