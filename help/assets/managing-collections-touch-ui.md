@@ -4,9 +4,9 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2203'
 ht-degree: 12%
 
 ---
@@ -102,19 +102,14 @@ Per creare una raccolta dinamica, effettuate le seguenti operazioni:
 
    ![collection_list](assets/collection_listing.png)
 
-   L’etichetta del pulsante **[!UICONTROL Create Smart Selection (Crea selezione avanzata)]** diventa **[!UICONTROL Edit Smart Selection (Modifica selezione avanzata)]**. Per modificare le impostazioni della raccolta avanzata, seleziona **[!UICONTROL File]** dall’elenco **[!UICONTROL File e cartelle]**. Then, Click the **[!UICONTROL Edit Smart Selection]** button.
-
-   ![chlimage_1-7](assets/chlimage_1-112.png)
+   The label of the **[!UICONTROL Create Smart Selection]** option changes to **[!UICONTROL Edit Smart Selection]**. Per modificare le impostazioni della raccolta avanzata, seleziona **[!UICONTROL File]** dall’elenco **[!UICONTROL File e cartelle]**. Fate clic sull&#39;opzione **[!UICONTROL Modifica selezione]** avanzata per ![modificare la raccolta](assets/do-not-localize/edit-smart-collection.png) dinamica.
 
 ## Aggiunta di risorse a una raccolta {#adding-assets-to-a-collection}
 
 Potete aggiungere risorse a una raccolta contenente un elenco di risorse o cartelle a cui viene fatto riferimento. Le raccolte dinamiche utilizzano una query di ricerca per compilare le risorse. Pertanto, non è possibile applicare riferimenti statici a risorse e cartelle.
 
-1. Nell’interfaccia utente Risorse, seleziona la risorsa e fai clic su **[!UICONTROL Alla raccolta]** nella barra degli strumenti.
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
-   In alternativa, puoi trascinare la risorsa nell&#39;area **[!UICONTROL Rilascia nella raccolta]** dell&#39;interfaccia. Aggiungete le risorse quando l&#39;etichetta della regione diventa **[!UICONTROL Rilascia in Aggiungi]**.
+1. Nell&#39;interfaccia utente Risorse, seleziona la risorsa e fai clic su **[!UICONTROL Alla raccolta]** ![aggiungi alla raccolta](assets/do-not-localize/add-to-collection.png) dalla barra degli strumenti.
+In alternativa, puoi trascinare la risorsa nell&#39;area **[!UICONTROL Rilascia nella raccolta]** dell&#39;interfaccia. Aggiungete le risorse quando l&#39;etichetta della regione diventa **[!UICONTROL Rilascia in Aggiungi]**.
 
 1. Nella pagina **[!UICONTROL Aggiungi alla raccolta]** , selezionate la raccolta alla quale desiderate aggiungere la risorsa.
 
