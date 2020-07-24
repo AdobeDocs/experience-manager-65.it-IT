@@ -4,9 +4,9 @@ description: Scoprite come trovare le risorse necessarie [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8ca4e3057ec13762404a8b7fb6f6bdf5dd562281
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '5826'
+source-wordcount: '5830'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,7 @@ Potete migliorare la rilevanza delle parole chiave per risorse particolari per m
 1. Nella casella **[!UICONTROL Search Promote (Promuovi]** ricerca), specificate una parola chiave per la quale desiderate incrementare la ricerca dell&#39;immagine e fate clic su **[!UICONTROL Add (Aggiungi)]**. Potete specificare più parole chiave nello stesso modo.
 1. Fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i primi risultati della ricerca.
 
-Potete usarlo a proprio vantaggio aumentando il livello di alcune risorse nei risultati della ricerca per la parola chiave di destinazione. Guardate il video di esempio riportato di seguito. Per informazioni dettagliate, consultate [cercare in  Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+Potete usarlo a proprio vantaggio aumentando il livello di alcune risorse nei risultati della ricerca per la parola chiave di destinazione. Guardate il video di esempio riportato di seguito. Per informazioni dettagliate, consultate [cercare in  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -351,7 +351,7 @@ La ricerca visiva utilizza i tag avanzati e richiede [!DNL Experience Manager] 6
 1. In CRXDE, nel `/oak-index/damAssetLucene` nodo, impostare la `reindex` proprietà su `true`. Salva le modifiche.
 1. (Facoltativo) Se si dispone di un modulo di ricerca personalizzato, copiare il `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salva le modifiche.
 
-Per ulteriori informazioni, vedere [Informazioni sugli smart tag in  Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) e [come gestire gli smart tag](/help/assets/managing-smart-tags.md).
+Per ulteriori informazioni, vedere [Informazioni sugli smart tag in  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) e [come gestire gli smart tag](/help/assets/managing-smart-tags.md).
 
 ### Metadati obbligatori {#mandatorymetadata}
 
