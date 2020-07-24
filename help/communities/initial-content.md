@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ In questa sezione vengono create le seguenti pagine che utilizzano tutte il mode
 
    * SCF Sandbox - La pagina principale per la versione inglese del sito.
 
-      * Riproduzione SCF - Elemento secondario della pagina principale in cui verrà riprodotta.
+   * Riproduzione SCF - Elemento secondario della pagina principale in cui verrà riprodotta.
 
 Sebbene questa esercitazione non contenga copie [della](../../help/sites-administering/tc-prep.md)lingua, è progettata in modo che la pagina principale possa implementare il rilevamento della lingua preferita per l’utente tramite l’intestazione HTML e reindirizzare alla pagina principale appropriata per la lingua. La convenzione prevede l’uso del codice del paese di due lettere per il nome del nodo della pagina, ad esempio &quot;en&quot; per l’inglese, &quot;fr&quot; per il francese e così via.
 
@@ -53,14 +56,15 @@ Ora che è presente un modello [di](initial-app.md#createthepagetemplate)pagina,
    * Nome: `an-scf-sandbox`
    * Selezionare **[!UICONTROL un modello di riproduzione sandbox SCF]**
    * Fai clic su **[!UICONTROL Crea]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site`e fate clic su **[!UICONTROL Nuova]** > **[!UICONTROL Nuova pagina]**:
 
    * Titolo: `SCF Sandbox`
    * Nome: `en`
-   * Selezionare **un modello di riproduzione sandbox SCF **
-   * Fai clic su **Crea **
+   * Selezionare **[!UICONTROL un modello di riproduzione sandbox SCF]**
+   * Fai clic su **[!UICONTROL Crea]**
 
 1. Nel riquadro Esplora risorse, selezionate la pagina appena creata `/Websites/SCF Sandbox Site/SCF Sandbox`e fate clic su **[!UICONTROL Nuova]** > **[!UICONTROL Nuova pagina]**
 
@@ -85,7 +89,7 @@ Quando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 
 è stato definito, che fornisce la possibilità facoltativa di fare riferimento alle risorse di progettazione in uno script utilizzando `currentDesign.getPath()`. Ad esempio
 
-* &lt;% String favoriteIcon = currentDesign.getPath() + &quot;/favicon.ico&quot;; %>
+* `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
    * Nome: `cq:designPath`
@@ -100,10 +104,10 @@ Il repository deve essere visualizzato come segue:
 
 * Fate clic su **[!UICONTROL Salva tutto]**
 
-[ Problemi di salvataggio? Effettua nuovamente l&#39;accesso! ]
+In caso di problemi durante il salvataggio della configurazione, effettuate nuovamente l’accesso e configuratelo di nuovo.
 
 >[!NOTE]
 >
->L’utilizzo di cq:designPath è facoltativo e non è correlato all’ [utilizzo di clientlibs](develop-app.md#includeclientlibsintemplate), che sono essenzialmente necessari in quanto i componenti SCF utilizzano [clientlibs](client-customize.md#clientlibs-for-scf) per gestire i rispettivi JS e CSS.
+>L’utilizzo di `cq:designPath` è facoltativo e non è correlato all’ [utilizzo di clientlibs](develop-app.md#includeclientlibsintemplate), che sono essenzialmente necessari in quanto i componenti SCF utilizzano [clientlibs](client-customize.md#clientlibs-for-scf) per gestire i rispettivi JS e CSS.
 
 
