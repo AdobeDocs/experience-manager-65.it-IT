@@ -1,5 +1,5 @@
 ---
-title: Procedure ottimali per ottimizzare la qualità delle immagini
+title: Best practice per ottimizzare la qualità delle immagini
 description: Best practice per ottimizzare la qualità delle immagini in Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -8,23 +8,26 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+workflow-type: tm+mt
+source-wordcount: '1474'
+ht-degree: 5%
 
 ---
 
 
-# Procedure ottimali per ottimizzare la qualità delle immagini {#best-practices-for-optimizing-the-quality-of-your-images}
+# Best practice per ottimizzare la qualità delle immagini {#best-practices-for-optimizing-the-quality-of-your-images}
 
-L’ottimizzazione della qualità delle immagini può richiedere molto tempo, poiché molti fattori contribuiscono a ottenere risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità delle immagini in modo diverso. La sperimentazione strutturata è fondamentale.
+L’ottimizzazione della qualità delle immagini può richiedere molto tempo, poiché molti fattori contribuiscono a ottenere risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell’immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-AEM include più di 100 comandi per la distribuzione di immagini per file multimediali dinamici per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
+AEM include più di 100 comandi di distribuzione delle immagini Dynamic Media per ottimizzare le immagini e i risultati di rendering. Le seguenti linee guida possono aiutarti a semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi e procedure ottimali essenziali.
 
 ## Best practice per il formato immagine (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * I formati JPG o PNG rappresentano la scelta migliore per la distribuzione di immagini di buona qualità e con dimensioni e peso gestibili.
-* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini multimediali dinamiche.
+* Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita viene utilizzato il formato JPG per la distribuzione delle immagini Dynamic Media.
 * Il formato JPG si comprime con un rapporto di 10:1 e in genere produce file di dimensioni ridotte. Il formato PNG viene compresso con un rapporto di circa 2:1, tranne in alcuni casi, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, i file PNG sono di dimensioni maggiori rispetto ai file JPG.
-* Il formato JPG utilizza la compressione con perdita di dati, ossia durante la compressione vengono omessi gli elementi immagine (pixel). Il formato PNG utilizza invece la compressione senza perdita di dati.
+* Il formato JPG utilizza la compressione con perdita di dati, ossia durante la compressione vengono omessi gli elementi dell&#39;immagine (pixel). Il formato PNG utilizza invece la compressione senza perdita di dati.
 * Il formato JPG spesso comprime le immagini fotografiche con una fedeltà migliore rispetto alle immagini sintetiche con bordi netti e contrasto elevato.
 * Se le immagini contengono trasparenze, usate il formato PNG perché il formato JPG non supporta la trasparenza.
 
@@ -35,17 +38,18 @@ Come procedura ottimale per il formato immagine, iniziate con l’impostazione p
 La riduzione dinamica delle dimensioni delle immagini è una delle attività più comuni. Si tratta di specificare le dimensioni e, facoltativamente, la modalità di downsampling da usare per ridimensionare l’immagine.
 
 * Per il ridimensionamento delle immagini, l’approccio migliore e più semplice consiste nell’usare `&wid=<value>` e `&hei=<value>,`o semplicemente `&hei=<value>`. Questi parametri impostano automaticamente la larghezza dell’immagine in base alle proporzioni.
-* `&resMode=<value>`controlla l’algoritmo utilizzato per il downsampling. Cominciate con `&resMode=sharp2`. Questo valore offre la migliore qualità dell’immagine. L’utilizzo del downsampling `value =bilin` è più veloce, ma comporta spesso l’aliasing degli artefatti.
+* `&resMode=<value>`controlla l’algoritmo utilizzato per il downsampling. Cominciate con `&resMode=sharp2`. Questo valore offre la migliore qualità dell’immagine. L’utilizzo del downsampling `value =bilin` è più veloce, ma comporta spesso l’aliasing di artefatti.
 
-Come procedura ottimale per il ridimensionamento, l’utilizzo `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
+Come procedura ottimale per il ridimensionamento delle immagini, l’utilizzo `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
 
 ## Procedure ottimali per la nitidezza delle immagini {#best-practices-for-image-sharpening}
 
-La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito Web e in cui si verificano numerosi errori. Dedica del tempo a scoprire come funzionano la nitidezza e la maschera di contrasto in AEM, facendo riferimento alle seguenti risorse:
+La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito Web e in cui si verificano numerosi errori. Dedica del tempo a scoprire come funzionano la nitidezza e la maschera di contrasto in AEM, facendo riferimento alle seguenti risorse utili:
 
 Il white paper sulle procedure ottimali [La nitidezza delle immagini in Adobe Scene7 Publishing System e sul server](/help/assets/assets/s7_sharpening_images.pdf) immagini si applica anche ad AEM.
 
-Consultate anche [Nitidezza di un’immagine con maschera](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)di contrasto.
+<!-- To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
 
 Con AEM, potete rendere le immagini più nitide in fase di assimilazione, distribuzione o entrambe. Nella maggior parte dei casi, tuttavia, è necessario rendere le immagini più nitide utilizzando un solo metodo, ma non entrambi. La nitidezza delle immagini al momento della distribuzione, con un URL, offre in genere i risultati migliori.
 
@@ -63,7 +67,7 @@ Esistono due metodi per rendere le immagini più nitide:
 
       * **[!UICONTROL threshold]** (0-255, sensibilità dell’effetto).
 
-         Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel di un bordo, e il filtro li rende più nitidi. Il parametro **[!UICONTROL threshold]** consente di evitare l’eccessiva nitidezza delle aree con colori simili, ad esempio i toni della pelle. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere &quot;disturbo&quot;, mentre viene aumentato il contrasto lungo i bordi delle aree con maggior contrasto, ad esempio tra ciglia e pelle.
+         Questo parametro determina la differenza tra i pixel da rendere più nitidi rispetto all’area circostante, prima che vengano considerati pixel del bordo e che il filtro li renda più nitidi. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare di aggiungere “disturbo”, mentre viene aumentato il contrasto lungo i bordi delle aree dove è più presente, ad esempio tra ciglia e pelle.
       Per ulteriori informazioni su come impostare questi tre parametri, comprese le best practice da utilizzare con il filtro, consultate le risorse seguenti:
 
       Argomento dell’Aiuto di AEM sulla nitidezza di un’immagine.
@@ -73,7 +77,7 @@ Esistono due metodi per rendere le immagini più nitide:
    * AEM consente inoltre di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ciascun componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell’immagine utilizzando il valore 1.
 
 
-Come procedura ottimale, iniziate con il parametro di maschera di contrasto radius. Le impostazioni del raggio con cui potete iniziare sono le seguenti:
+Come procedura ottimale, iniziate con il parametro del raggio della maschera di contrasto. Le impostazioni del raggio con cui potete iniziare sono le seguenti:
 
 * **[!UICONTROL Sito Web]**: 0,2-0,3 pixel
 * **[!UICONTROL Stampa fotografica (250-300 ppi)]**: 0,3-0,5 pixel
@@ -121,6 +125,6 @@ Se i risultati della nitidezza non sono ancora soddisfacenti, aumentate il raggi
 Per ottimizzare il flusso di lavoro, potete inoltre trovare utili i seguenti suggerimenti generali:
 
 * Provate a utilizzare parametri diversi in tempo reale, direttamente su un URL o mediante la funzionalità di regolazione delle immagini di Scene7 Publishing System, che fornisce anteprime in tempo reale per le operazioni di regolazione.
-* Come procedura ottimale, potete raggruppare i comandi Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire comandi e impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
+* Come procedura ottimale, potete raggruppare i comandi di Dynamic Media Image Serving in un predefinito per immagini. Un predefinito per immagini è in pratica una macro di comandi URL con nomi predefiniti personalizzati, ad esempio `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL richiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito Web e di ridurre la lunghezza complessiva degli URL.
 * AEM offre inoltre metodi più avanzati per ottimizzare la qualità delle immagini, ad esempio l’applicazione della nitidezza alle immagini al momento dell’assimilazione. Per i casi d’uso avanzati in cui questa può rappresentare un’opzione per ottimizzare ulteriormente i risultati di rendering, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) può aiutarti con approfondimenti personalizzati e procedure ottimali.
 
