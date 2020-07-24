@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '4811'
+source-wordcount: '4814'
 ht-degree: 5%
 
 ---
@@ -94,7 +94,7 @@ Per iniziare subito a lavorare:
       ](/help/assets/adding-dynamic-media-assets-to-pages.md)Se siete AEM Sites, potete aggiungere il set carosello direttamente alla pagina in AEM, utilizzando il componente Supporto interattivo.
 
 
-Per modificare i set di caroselli, consultate [Modifica dei set di caroselli.](#editing-carousel-sets) Inoltre, potete visualizzare e modificare le proprietà [del set](https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.md#editingproperties)carosello.
+Per modificare i set di caroselli, consultate [Modifica dei set di caroselli.](#editing-carousel-sets) Inoltre, potete visualizzare e modificare le proprietà [del set](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)carosello.
 
 ## Identificazione delle variabili dei punti di attivazione e delle mappe immagine {#identifying-hotspot-and-image-map-variables}
 
@@ -108,7 +108,7 @@ Quando aggiungete punti di attivazione o mappe immagine a un&#39;immagine del ba
 >
 >Se siete AEM Assets o clienti Media, pubblicate l’URL o il codice da incorporare, quindi integrate con il sistema di gestione dei contenuti di terze parti e identificate manualmente i punti di attivazione e le mappe immagine.
 
-È importante identificare in modo appropriato il numero e il tipo di variabili da associare ai dati dei punti di attivazione o delle mappe immagine. Ogni punto sensibile o mappa immagine aggiunta a un&#39;immagine banner deve contenere informazioni sufficienti per identificare in modo chiaro il prodotto nel sistema di back-end esistente. Allo stesso tempo, ogni punto di attivazione o mappa immagine non deve includere più dati del necessario. Questo perché renderebbe il processo di immissione dei dati eccessivamente complesso e la gestione continua dei punti attivi o delle mappe immagine più soggetta a errori.
+È importante identificare in modo appropriato il numero e il tipo di variabili da associare ai dati dei punti di attivazione o delle mappe immagine. Ogni punto sensibile o mappa immagine aggiunta a un&#39;immagine banner deve contenere informazioni sufficienti per identificare in modo chiaro il prodotto nel sistema di back-end esistente. Allo stesso tempo, ogni punto di attivazione o mappa immagine non deve includere più dati del necessario. Questo perché renderebbe il processo di immissione dei dati eccessivamente complesso e la gestione dei punti attivi o delle mappe immagine più soggetta a errori.
 
 Esistono diversi modi per identificare un set di variabili da utilizzare per i dati di aree sensibili o mappe immagine.
 
