@@ -3,9 +3,9 @@ title: Preparare le risorse per la traduzione
 description: Create le cartelle principali della lingua per preparare le risorse da tradurre e supportare le risorse multilingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
@@ -67,4 +67,4 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
 1. Nel riquadro Riferimenti, fare clic su Copie **[!UICONTROL lingua]**. Il pannello Copie  lingua mostra le copie in lingua delle risorse.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![copie per lingua](assets/lang-copy2.png)
