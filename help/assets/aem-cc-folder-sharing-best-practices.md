@@ -3,9 +3,9 @@ title: ' Adobe Experience Manager alle cartelle di Adobe Creative Cloud che cond
 description: Configura  Adobe Experience Manager per consentire agli utenti di  Experience Manager Assets di scambiare cartelle con utenti Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La funzione di condivisione delle cartelle  da Experience Manager a Creative Cloud è obsoleta. Adobe consiglia vivamente di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o l’app [desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Scopri di più nelle procedure ottimali per l&#39;integrazione [Experience Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione di condivisione delle cartelle  da Experience Manager a Creative Cloud è obsoleta. Adobe consiglia vivamente di utilizzare funzionalità più recenti, come [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) o l’app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager. Scopri di più nelle procedure ottimali per l&#39;integrazione [Experience Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
  Adobe Experience Manager può essere configurato per consentire agli utenti di Risorse di condividere cartelle con gli utenti delle app Adobe Creative Cloud, in modo che siano disponibili come cartelle condivise nel servizio Risorse Adobe Creative Cloud. La funzione può essere utilizzata per scambiare file tra team creativi e utenti di Risorse, soprattutto quando gli utenti creativi non hanno accesso alla distribuzione di Risorse (non sono sulla rete aziendale).
 
