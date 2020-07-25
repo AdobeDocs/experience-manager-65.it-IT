@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Deploying Guide
+user-guide-title: Guida alla distribuzione di AEM 6.5
+user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 11%
 
 ---
 
@@ -12,8 +16,8 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
 # AEM 6.5 Deploying User Guide {#deploying}
 
 + [Guida utente alla distribuzione](home.md)
-+ Introduzione alla piattaforma AEM {#introduction}
-   + [Introduzione alla piattaforma AEM](platform.md)
++ Introduzione ad AEM Platform {#introduction}
+   + [Introduzione ad AEM Platform](platform.md)
    + [Requisiti tecnici](technical-requirements.md)
    + [Elementi di archiviazione in AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
@@ -78,7 +82,7 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [Ristrutturazione del repository comune in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione del repository dei siti in AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell&#39;archivio risorse in AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Ristrutturazione Dynamic Media Repository in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Ristrutturazione dell&#39;archivio Dynamic Media in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione dell&#39;archivio moduli in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione del repository di e-commerce in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Ristrutturazione del repository per AEM Communities in 6.5](communities-repository-restructuring-in-aem-6-5.md)
@@ -87,7 +91,7 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Best practice   {#practices}
++ Best practice  {#practices}
    + [Best practice di distribuzione](best-practices.md)
    + [Struttura delle prestazioni](performance-tree.md)
    + [Best practice per il test delle prestazioni](best-practices-for-performance-testing.md)
