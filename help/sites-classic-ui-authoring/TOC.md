@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-title: Guida utente per l’authoring con l’interfaccia classica di AEM 6.5
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 89%
 
 ---
 
@@ -33,12 +37,12 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Annotazioni durante la modifica di una pagina](classic-page-author-annotations.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring ](classic-page-author-troubleshooting.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Authoring di una pagina per dispositivi mobili  ](classic-feature-mobile.md)
+   + [Authoring di una pagina per dispositivi mobili ](classic-feature-mobile.md)
    + [Componenti per l’authoring delle pagine](classic-page-author-edit-mode.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](classic-page-author-keyboard-shortcuts.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Authoring delle pagine con frammenti di contenuto](classic-page-author-content-fragments.md)
-   + [Layout reattivo](classic-page-author-responsive-layout.md)
+   + [Layout dinamico](classic-page-author-responsive-layout.md)
    + [Utilizzo delle versioni di una pagina  ](classic-page-author-work-with-versions.md)
    + [Utilizzo dei tag](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
