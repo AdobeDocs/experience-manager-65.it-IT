@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Communities User Guide
+user-guide-title: Guida utente di AEM 6.5 Communities
+user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 7%
 
 ---
 
@@ -14,10 +18,10 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
 + [Guida utente di Communities](home.md)
 + Introduction to AEM Communities {#introduction}
    + [Siti community](administer-landing.md)
-   + [Panoramica di AEM Communities](overview.md)
+   + [Panoramica sui AEM Communities](overview.md)
    + [Note sulla versione di AEM Communities](/help/release-notes/communities-release-notes.md)
    + [Guida introduttiva di AEM Communities](getting-started.md)
-   + [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
+   + [Guida introduttiva ai AEM Communities per l’abilitazione](getting-started-enablement.md)
    + [Configurazione iniziale](setup.md)
    + [Creazione di un nuovo sito community](create-site.md)
    + [Scopri il sito pubblicato](published-site.md)
@@ -27,15 +31,15 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Creazione e assegnazione di risorse di abilitazione](resource.md)
    + [Scopri il sito di abilitazione pubblicato](enablement-published-site.md)
 + Distribuzione {#deploy}
-   + [Distribuzione di Communities](deploy-communities.md)
+   + [Implementazione di Communities](deploy-communities.md)
    + [Aggiornamento ad AEM 6.5 Communities](upgrade.md)
    + [Topologie consigliate per community](topologies.md)
-   + [Configurazione del dispatcher per Communities](dispatcher.md)
+   + [Configurazione di Dispatcher per Communities](dispatcher.md)
 + Amministrazione {#administer}
-   + [Servizio di gestione di utenti e UGC in AEM Communities](user-ugc-management-service.md)
+   + [Servizio di gestione UGC e utenti in AEM Communities](user-ugc-management-service.md)
    + [Siti community](administer-landing.md)
    + [Console community](consoles.md)
-   + [Configurazione di Analytics per le funzioni Community](analytics.md)
+   + [Configurazione Analytics per le funzioni Community](analytics.md)
    + [Configurazione delle funzioni di abilitazione](enablement.md)
    + [Configurazione dei messaggi](messaging.md)
    + [Moderazione del contenuto della community](moderate-ugc.md)
@@ -67,18 +71,18 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Come impostare MongoDB per la demo](demo-mongo.md)
    + [DSRP - Provider di risorse di archiviazione del database relazionale](dsrp.md)
    + [Configurazione MySQL per DSRP](dsrp-mysql.md)
-   + [JSRP - Provider risorse di storage JCR](jsrp.md)
+   + [JSRP - Provider di risorse di storage JCR](jsrp.md)
    + [Configurazione Solr per SRP](solr.md)
    + [Assegnazione tag alle risorse di abilitazione](tag-resources.md)
    + [Assegnazione di tag ai contenuti generati dall&#39;utente](tag-ugc.md)
    + [Traduzione di contenuti generati dall&#39;utente](translate-ugc.md)
    + [Sincronizzazione utenti community](sync.md)
-   + [Limiti di contributo](limits.md)
+   + [Limiti Di Contributo](limits.md)
 + Sviluppo {#develop}
    + [Sviluppo di community](communities.md)
    + [Quadro componente sociale](scf.md)
    + [Guida ai componenti community](components-guide.md)
-   + [Componenti, funzioni e funzioni essenziali](essentials.md)
+   + [Componenti, funzioni e funzioni di base](essentials.md)
    + [Esercitazioni](tutorials.md)
    + [Risoluzione dei problemi](troubleshooting.md)
    + [Linee guida sulla codifica](code-guide.md)
@@ -87,7 +91,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Helper manubrio SCF](handlebars-helpers.md)
    + [Panoramica del provider di risorse di storage](srp.md)
    + [Community Site Essentials](sites-for-developers.md)
-   + [Funzioni di base del flusso di attività](essentials-activities.md)
+   + [Nozioni di base sul flusso di attività](essentials-activities.md)
    + [Assignments Essentials](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Funzioni di base del calendario](calendar-basics-for-developers.md)
@@ -111,7 +115,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Ricerca Essentials](search-implementation.md)
    + [Sideloading componente](sideloading.md)
    + [Social Graph Essentials](essentials-socialgraph.md)
-   + [Essenze SRP e UGC](srp-and-ugc.md)
+   + [Funzioni di base SRP e UGC](srp-and-ugc.md)
    + [Tag Essentials](tag.md)
    + [Tally Essentials](tally.md)
    + [Voto Essenziali](essentials-voting.md)
@@ -138,7 +142,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
 + Authoring {#authoring}
    + [Componenti di Communities](author-communities.md)
    + [Nozioni di base sui componenti per community](basics.md)
-   + [Funzionalità Flussi attività](activities.md)
+   + [Funzionalità Flussi di attività](activities.md)
    + [Funzione Assegnazioni](assignments.md)
    + [Funzione blog](blog-feature.md)
    + [Funzione calendario](calendar.md)
@@ -154,7 +158,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [Funzionalità di messaggistica](configure-messaging.md)
    + [Funzionalità forum D e R](working-with-qna.md)
    + [Utilizzo delle valutazioni](rating.md)
-   + [Utilizzo del riepilogo di recensioni (visualizzazione)](reviews.md)
+   + [Utilizzo del riepilogo di recensioni e recensioni (visualizzazione)](reviews.md)
    + [Funzione di ricerca](search.md)
    + [Utilizzo di Social Graph](socialgraph.md)
    + [Tendenze attività](trends.md)
