@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente per l’authoring in AEM 6.5
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 89%
@@ -41,7 +42,7 @@ ht-degree: 89%
    + [Authoring di una pagina per dispositivi mobili ](mobile.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring ](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
-   + [Best practice  ](best-practices.md)
+   + [Best practice ](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Utilizzo dei tag](tags.md)
    + [Creazione di modelli di pagina  ](templates.md)
@@ -88,7 +89,7 @@ ht-degree: 89%
    + [Gestione dei tipi di pubblico](managing-audiences.md)
    + [Creazione e gestione delle offerte](offerlib.md)
    + [Segmentazione](segmentation-overview.md)
-+ AEM e Adobe Campaign {#aem-adobe-campaign}
++ AEM e  Adobe Campaign {#aem-adobe-campaign}
    + [Utilizzo di Adobe Campaign](adobe-campaign.md)
    + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
    + [Targeting con Adobe Campaign](target-adobe-campaign.md)
