@@ -3,11 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente per lo sviluppo di AEM 6.5
+user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -33,8 +34,8 @@ ht-degree: 10%
    + [Progettazione e Designer (interfaccia classica)](designer.md)
    + [Migrazione all’interfaccia utente touch](/help/sites-developing/touch-ui-migration.md)
 + Platform{#platform}
-   + [Foglio di lavoro Sling](sling-cheatsheet.md)
-   + [Utilizzo delle schede di rete Sling](sling-adapters.md)
+   + [Guida di riferimento rapido per Sling](sling-cheatsheet.md)
+   + [Utilizzo di adattatori Sling](sling-adapters.md)
    + [Librerie di tag](taglib.md)
    + Modelli{#templates}
       + [Modelli](templates.md)
