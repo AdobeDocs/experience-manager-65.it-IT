@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: e103640784f9d5b00a2a78cead6e904017ad7a53
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Per l&#39;API del servizio Converti PDF sono disponibili i seguenti Avvio rapido
 
 [Avvio rapido (modalità SOAP): Conversione di un documento PDF in file JPEG mediante l&#39;API Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizz
 
 L&#39;esempio di codice seguente converte un documento PDF denominato *Loan.pdf* in un documento PostScript denominato *Loan.ps*. (Vedere [Conversione di documenti PDF in PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ L&#39;esempio di codice seguente converte un documento PDF denominato *Loan.pdf*
 
 L&#39;esempio di codice Java seguente converte un documento PDF denominato *Loan.pdf* in un set di file JPEG e li memorizza nella cartella C:\Adobe directory. Ogni file è denominato `tempFile[index].jpg`, dove il primo file immagine è denominato *tempFile0.jpg*. Consultate [Conversione di documenti PDF in formati](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)immagine.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
