@@ -1,15 +1,18 @@
 ---
 title: ConvertPDF Service
 seo-title: ConvertPDF Service
-description: Utilizzare il servizio AEM Forms ConvertPDF per convertire i documenti PDF in file PostScript o di immagini.
-seo-description: Utilizzare il servizio AEM Forms ConvertPDF per convertire i documenti PDF in file PostScript o di immagini.
+description: Utilizzate il servizio AEM Forms ConvertPDF per convertire i documenti PDF in file PostScript o di immagini.
+seo-description: Utilizzate il servizio AEM Forms ConvertPDF per convertire i documenti PDF in file PostScript o di immagini.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Con il servizio Converti PDF puoi effettuare le seguenti operazioni:
 * Convertire i documenti PDF in PostScript. Durante la conversione in PostScript, è possibile utilizzare l&#39;operazione di conversione per specificare il documento di origine e se convertire in PostScript livello 2 o 3. Il documento PDF convertito in file PostScript deve essere non interattivo.
 * Convertite i documenti PDF nei formati immagine JPEG, JPEG 2000, PNG e TIFF. Durante la conversione in uno di questi formati immagine, potete utilizzare l&#39;operazione di conversione per specificare il documento di origine e una specifica delle opzioni immagine. La specifica contiene diverse preferenze, come il formato di conversione delle immagini, la risoluzione delle immagini e la conversione del colore.
 
-## Configurare le proprietà del servizio {#properties}
+## Configurare le proprietà del servizio   {#properties}
 
 Puoi usare il servizio **** AEMFD ConvertPDF nella console AEM per configurare le proprietà del servizio. L’URL predefinito della console AEM è `https://[host]:'port'/system/console/configMgr`.
 
@@ -39,7 +42,7 @@ Il servizio ConvertPDF fornisce le due API seguenti:
 
 ### Utilizzo dell&#39;API toPS con un JSP o Servlet {#using-tops-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -83,7 +86,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 ### Utilizzo dell’API toImage con un JSP o servlet {#using-toimage-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -136,7 +139,7 @@ L&#39;unica differenza consiste nell&#39;eseguire il servizio da JSP/Servlet l&#
 
 Il seguente processo del flusso di lavoro di esempio converte il documento di input in un documento PostScript. Il codice viene scritto in ECMAScript e il documento viene trasmesso come payload del flusso di lavoro:
 
-```
+```javascript
 /*
  * Imports
  */
