@@ -4,9 +4,9 @@ description: Scoprite come trovare le risorse necessarie [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 8f8134d6c4fcc0ef54f9cc8298936c5c7d746c09
 workflow-type: tm+mt
-source-wordcount: '5830'
+source-wordcount: '5860'
 ht-degree: 5%
 
 ---
@@ -275,7 +275,7 @@ La funzionalità di ricerca può presentare limiti di prestazioni nei seguenti s
 * Per selezionare le risorse ricercate, usate la casella di controllo **[!UICONTROL Seleziona tutto]** . [!DNL Experience Manager] inizialmente visualizza 100 risorse nella vista a schede e 200 risorse nella vista a elenco. Quando scorrete i risultati della ricerca, vengono caricate più risorse. Potete selezionare più risorse rispetto alle risorse caricate. Il conteggio delle risorse selezionate viene visualizzato nell’angolo superiore destro della pagina dei risultati della ricerca. Potete gestire la selezione, ad esempio scaricare le risorse selezionate, aggiornare le proprietà dei metadati in blocco per le risorse selezionate o aggiungere le risorse selezionate a una raccolta. Quando più risorse sono selezionate rispetto a quelle visualizzate, un’azione viene applicata a tutte le risorse selezionate oppure viene visualizzata una finestra di dialogo con il numero di risorse a cui sono applicate. Per applicare un’azione alle risorse non caricate, accertatevi che tutte le risorse siano selezionate in modo esplicito.
 * Per cercare risorse che non contengono metadati obbligatori, consultate Metadati [](#mandatorymetadata)obbligatori.
 * La ricerca utilizza tutti i campi di metadati. Una ricerca generica, come la ricerca di 12, in genere restituisce molti risultati. Per risultati ottimali, utilizzate virgolette doppie (non singole) o assicuratevi che il numero sia contiguo a una parola senza un carattere speciale (ad esempio *shoe12*).
-* La ricerca full text supporta operatori quali - e ^. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette. Ad esempio, utilizzare &quot;Notebook - Bellezza&quot; invece di Notebook - Bellezza.
+* La ricerca full-text supporta operatori quali - e ^. Per cercare queste lettere come stringhe letterali, racchiudere l&#39;espressione di ricerca tra virgolette. Ad esempio, utilizzare &quot;Notebook - Bellezza&quot; invece di Notebook - Bellezza.
 * Se i risultati della ricerca sono troppi, limita l’ [ambito della ricerca](#scope) a zero per le risorse desiderate. Questa funzione è particolarmente utile se avete qualche idea su come cercare meglio le risorse desiderate, ad esempio un tipo di file specifico, una posizione specifica, metadati specifici e così via.
 
 * **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro. [!DNL Experience Manager] offre metodi per assegnare automaticamente tag alle risorse utilizzando i servizi intelligenti di Adobe Sensei che migliorano costantemente l’assegnazione di tag alle risorse mediante l’utilizzo e la formazione. Quando ricercate le risorse, gli smart tag vengono inseriti se la funzione è attivata nel vostro account. Funziona insieme alla funzionalità di ricerca integrata. Consultate Comportamento [di](#searchbehavior)ricerca. Per ottimizzare l’ordine in cui vengono visualizzati i risultati della ricerca, potete [aumentare la classifica](#searchrank) di ricerca di alcune risorse selezionate.
@@ -325,6 +325,8 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 L&#39;individuazione delle risorse si basa sull&#39;indicizzazione dei contenuti DAM, inclusi i metadati. L’individuazione delle risorse è rapida e accurata e si basa su un’indicizzazione ottimizzata e configurazioni appropriate. Consulta indice [di](/help/assets/performance-tuning-guidelines.md#search-indexes)ricerca, query [di quercia e indicizzazione](/help/sites-deploying/queries-and-indexing.md)e [best practice](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
+Per escludere risorse specifiche dai risultati della ricerca, utilizzate `excludedPath` la proprietà nell’indice di Lucene.
+
 ### Ricerca visiva o per similarità {#configvisualsearch}
 
 La ricerca visiva utilizza i tag avanzati e richiede [!DNL Experience Manager] 6.5.2.0 o versione successiva. Dopo aver configurato la funzionalità di smart tag, effettuate le seguenti operazioni:
@@ -364,6 +366,8 @@ Per migliorare la velocità di individuazione, [!DNL Experience Manager Assets] 
 ### Estrarre il testo durante il caricamento delle risorse {#extracttextupload}
 
 Potete configurare [!DNL Experience Manager] per estrarre il testo dalle risorse quando gli utenti caricano delle risorse, come file PSD o PDF. [!DNL Experience Manager] indicizza il testo estratto e consente agli utenti di eseguire ricerche in base al testo estratto. Consultate [Caricare le risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+
+Se l’estrazione del testo richiede troppo risorse per la distribuzione, provate a [disattivare l’estrazione](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)del testo.
 
 ### Predici personalizzati per filtrare i risultati della ricerca {#custompredicates}
 
