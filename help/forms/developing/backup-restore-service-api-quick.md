@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -23,17 +26,17 @@ Java API Quick Start(SOAP) è disponibile per l&#39;API del servizio di backup e
 
 [Avvio rapido: Uscire dalla modalità di backup mediante l&#39;API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili nella sezione Programmazione con AEM Forms sono basati sul sistema operativo Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano sul sistema operativo Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Accesso alla modalità di backup mediante l&#39;API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene attivata la modalità di backup con un&#39;etichetta univoca per due ore. Dopo la scadenza del tempo di backup o se la modalità di backup viene esplicitamente chiusa, il server moduli ritorna alla rimozione dei file dall&#39;archivio documenti globale. (Vedere [Accesso alla modalità di backup sul server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)dei moduli.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene attivata la modalità
 
 Nell&#39;esempio di codice Java riportato di seguito viene indicato che Forms Server esce dalla modalità di backup e ritorna a rimuovere i file dall&#39;archivio documenti globale. (Vedere [Uscita dalla modalità di backup sul server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)dei moduli.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
