@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '16977'
 ht-degree: 0%
@@ -589,8 +589,8 @@ Quando si utilizza una credenziale HSM di CipherShield per firmare o certificare
 
 Potete aggiungere il seguente valore di configurazione nel file cknfastrc, che si trova in /opt/nfast/cknfastrc (o c:\nfast\cknfastrc):
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Dopo aver aggiunto questo valore di configurazione al file cknfastrc, è possibile utilizzare la nuova credenziale senza riavviare il server applicazione J2EE.
@@ -663,7 +663,7 @@ Se si specifica di non eseguire il controllo di revoca, il servizio Firma non co
 
 >[!NOTE]
 >
->Sebbene nel certificato sia possibile specificare un CRL o un server OCSP, è possibile sostituire l&#39;URL specificato nel certificato utilizzando un `CRLOptionSpec` oggetto e un `OCSPOptionSpec` oggetto. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo dell&#39; `CRLOptionSpec` oggetto `setLocalURI` .
+>Sebbene sia possibile specificare un CRL o un server OCSP nel certificato, è possibile sostituire l&#39;URL specificato nel certificato utilizzando un `CRLOptionSpec` oggetto e un `OCSPOptionSpec` oggetto. Ad esempio, per ignorare il server CRL, è possibile richiamare il metodo dell&#39; `CRLOptionSpec` oggetto `setLocalURI` .
 
 La marca temporale indica il processo di tracciamento dell&#39;ora in cui un documento firmato o certificato è stato modificato. Una volta firmato, il documento non deve essere modificato, neanche dal proprietario del documento. La marca temporale consente di applicare la validità di un documento firmato o certificato. È possibile impostare le opzioni di marca temporale utilizzando un `TSPOptionSpec` oggetto. Ad esempio, potete specificare l&#39;URL di un server provider di marca temporale (TSP).
 
@@ -1077,8 +1077,8 @@ Firmare digitalmente un modulo interattivo utilizzando l&#39;API Forms e Signatu
 
 Potete aggiungere il seguente valore di configurazione nel file cknfastrc, che si trova in /opt/nfast/cknfastrc (o c:\nfast\cknfastrc):
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Dopo aver aggiunto questo valore di configurazione al file cknfastrc, è possibile utilizzare la nuova credenziale senza riavviare il server applicazione J2EE.
