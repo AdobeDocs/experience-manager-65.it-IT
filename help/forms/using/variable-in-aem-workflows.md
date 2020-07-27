@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2113'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Per creare una variabile, eseguite i seguenti passaggi:
    * Modello dati modulo - Specifica un percorso del modello dati del modulo.
    * ArrayList - Specifica un sottotipo per la raccolta.
 
-1. Specificate una descrizione facoltativa per la variabile e toccate ![](assets/done_icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
+1. Specificate una descrizione facoltativa per la variabile e toccate ![done_icon](assets/done_icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
 
 Quando create delle variabili, tenete presenti le seguenti procedure:
 
@@ -97,10 +97,10 @@ Potete anche aggiornare elementi specifici di una variabile di tipo JSON o XML u
 Per aggiungere la mappatura tra le variabili, effettua i seguenti passaggi:
 
 1. Nella pagina di modifica del flusso di lavoro, toccate l’icona Passaggi disponibile nella barra laterale del modello di workflow.
-1. Trascinate il passaggio **Imposta variabile** nell’editor del flusso di lavoro, toccate il passaggio e selezionate ![](assets/configure_icon.png) (Configura).
+1. Trascinate il passaggio **Imposta variabile** nell’editor del flusso di lavoro, toccate il passaggio e selezionate ![configure_icon](assets/configure_icon.png) (Configura).
 1. Nella finestra di dialogo Imposta variabile, selezionare **[!UICONTROL Mapping]** > **[!UICONTROL Aggiungi mapping]**.
 1. Nella sezione Variabile **** mappa, selezionate la variabile da memorizzare i dati, selezionate la modalità di mappatura e specificate un valore da memorizzare nella variabile. Le modalità di mappatura variano in base al tipo di variabile.
-1. Mappare più variabili per creare un&#39;espressione significativa. Toccate ![](assets/done_icon.png) per salvare le modifiche.
+1. Mappare più variabili per creare un&#39;espressione significativa. Tap ![done_icon](assets/done_icon.png) to save the changes.
 
 ### Esempio 1: Eseguire una query su una variabile XML per impostare il valore di una variabile stringa {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -273,8 +273,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modificare una variabile {#edit-a-variable}
 
 1. Nella pagina del flusso di lavoro di modifica, toccate l&#39;icona Variabili disponibile nella barra laterale del modello di workflow. Nella sezione Variabili del riquadro a sinistra sono visualizzate tutte le variabili esistenti.
-1. Toccate l’icona ![](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
-1. Modificate le informazioni sulla variabile e toccate ![](assets/done_icon.png) per salvare le modifiche. Non è possibile modificare i campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** per una variabile.
+1. Toccate l’icona ![Modifica](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
+1. Modificate le informazioni della variabile e toccate ![done_icon](assets/done_icon.png) per salvare le modifiche. Non è possibile modificare i campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** per una variabile.
 
 ## Eliminare una variabile {#delete-a-variable}
 
@@ -284,7 +284,7 @@ Per eliminare una variabile, eseguite i seguenti passaggi:
 
 1. Nella pagina del flusso di lavoro di modifica, toccate l&#39;icona Variabili disponibile nella barra laterale del modello di workflow. Nella sezione Variabili del riquadro a sinistra sono visualizzate tutte le variabili esistenti.
 1. Toccate l’icona Elimina accanto al nome della variabile da eliminare.
-1. Toccate ![](assets/done_icon.png) per confermare ed eliminare la variabile.
+1. Toccate ![done_icon](assets/done_icon.png) per confermare ed eliminare la variabile.
 
 ## Riferimenti {#references}
 
