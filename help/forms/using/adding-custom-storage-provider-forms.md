@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza consente di mantenere un modulo di lavoro in corso, che può essere completato e inviato in un secondo momento da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all&#39;invio di un modulo nel `/content/forms/fp` nodo dell&#39;istanza Pubblica. Inoltre, i componenti del portale AEM Forms forniscono servizi dati che potete utilizzare per personalizzare l&#39;implementazione dell&#39;archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
+Per impostazione predefinita, i AEM Forms memorizzano i dati utente associati alla bozza e all&#39;invio di un modulo nel `/content/forms/fp` nodo dell&#39;istanza Pubblica. Inoltre, i componenti del portale AEM Forms forniscono servizi dati che consentono di personalizzare l&#39;implementazione dell&#39;archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
 
 ## Prerequisiti  {#prerequisites}
 
@@ -202,8 +205,8 @@ Puoi usare l’annotazione seguente per aumentare la classificazione del servizi
 
 Per utilizzare la nota di cui sopra, importa quanto segue nel progetto:
 
-```
+```java
 import org.apache.felix.scr.annotations.Properties;
- import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Property;
 ```
 
