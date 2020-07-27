@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
 
 
 # Avvio rapido API Servizio repository {#repository-service-api-quick-starts}
 
-Per il servizio archivio AEM Forms sono disponibili i seguenti Avvio rapido.
+Per il servizio AEM Forms Repository sono disponibili i seguenti avvii rapidi.
 
 [Avvio rapido (modalità SOAP): Creazione di una cartella mediante l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
@@ -39,21 +42,21 @@ Per il servizio archivio AEM Forms sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Eliminazione di una risorsa tramite l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-Le operazioni relative ai moduli AEM possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms; la modalità di connessione deve essere impostata su SOAP
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP
 
 **Applicazioni/FormsApplication**
 
-La maggior parte del servizio archivio di AEM Forms avvia rapidamente l&#39;interazione con un&#39;applicazione denominata `Applications/FormsApplication,` come illustrato nella figura seguente.
+La maggior parte del servizio directory archivio avvia rapidamente l&#39;interazione con un&#39;applicazione denominata `Applications/FormsApplication,` come illustrato nell&#39;illustrazione seguente.
 
-La cartella FormsFolder è un percorso nell&#39;archivio di AEM Forms. Ad esempio, potete aggiungere questa cartella a livello di programmazione `Applications/FormsApplication`. (Vedere Avvio [rapido (modalità SOAP): Creazione di una cartella tramite l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.
+La cartella FormsFolder è un percorso nell’archivio AEM Forms. Ad esempio, potete aggiungere questa cartella a livello di programmazione `Applications/FormsApplication`. (Vedere Avvio [rapido (modalità SOAP): Creazione di una cartella tramite l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.
 
-Il percorso di una risorsa situata nell&#39;archivio di AEM Forms è:
+Il percorso di una risorsa che si trova nell&#39;archivio AEM Forms è:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
 >[!NOTE]
 >
->È possibile esplorare l&#39;archivio moduli AEM utilizzando un browser Web. Per sfogliare la directory archivio, immettete il seguente URL in un browser Web `https://[server name]:[server port]/repository`. È possibile verificare i risultati di avvio rapido utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio moduli di AEM, potete visualizzarne il contenuto in un browser Web.
+>È possibile esplorare l&#39;archivio AEM Forms utilizzando un browser Web. Per sfogliare la directory archivio, immettete il seguente URL in un browser Web `https://[server name]:[server port]/repository`. È possibile verificare i risultati di avvio rapido utilizzando un browser Web. Ad esempio, se aggiungete contenuto all&#39;archivio AEM Forms, potete visualizzarne il contenuto in un browser Web.
 
 >[!NOTE]
 >
@@ -63,7 +66,7 @@ Il percorso di una risorsa situata nell&#39;archivio di AEM Forms è:
 
 Nell&#39;esempio di codice Java riportato di seguito viene creata una cartella denominata *FormsFolder* nel percorso seguente `/Applications/FormsApplication/1.0/`. Consultate [Creazione di cartelle](/help/forms/developing/aem-forms-repository.md#creating-folders).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -169,7 +172,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creata una cartella d
 
 Nell&#39;esempio di codice Java riportato di seguito viene scritta una risorsa denominata *loan.xdp* nell&#39;archivio. La risorsa viene aggiunta alla `/Applications/FormsApplication/1.0/FormsFolder` posizione. (Vedere [Creazione di risorse](/help/forms/developing/aem-forms-repository.md#writing-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -297,7 +300,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene scritta una risorsa d
 
 Nell&#39;esempio di codice Java riportato di seguito sono elencate le risorse che si trovano in `Applications/FormsApplication/1.0/FormsFolder`. (Vedere [Elenco delle risorse](/help/forms/developing/aem-forms-repository.md#listing-resources)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -396,7 +399,7 @@ Nell&#39;esempio di codice Java riportato di seguito sono elencate le risorse ch
 
 Nell&#39;esempio di codice Java riportato di seguito viene letta una risorsa denominata *Loan.xdp* dall&#39;archivio. Il file XDP si trova in `/Applications/FormsApplication/1.0/FormsFolder/`. (Vedere Risorse [di](/help/forms/developing/aem-forms-repository.md#reading-resources)lettura.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -497,7 +500,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene letta una risorsa den
 
 Il seguente esempio di codice Java si aggiorna `/Applications/FormsApplication/1.0/FormsFolder` modificandone la descrizione. (Vedere [Aggiornamento delle risorse](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -609,7 +612,7 @@ Il seguente esempio di codice Java si aggiorna `/Applications/FormsApplication/1
 
 Il seguente esempio di codice Java cerca Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder`. Consultate [Ricerca di risorse](/help/forms/developing/aem-forms-repository.md#searching-for-resources).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -731,9 +734,9 @@ Il seguente esempio di codice Java cerca Loan.xdp in `Applications/FormsApplicat
 
 ## Avvio rapido (modalità SOAP): Creazione di relazioni tra le risorse tramite l&#39;API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione tra due risorse nell&#39;archivio di AEM Forms. (Vedere [Creazione di relazioni](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)con le risorse.)
+Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione tra due risorse nell&#39;archivio dei AEM Forms. (Vedere [Creazione di relazioni](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)con le risorse.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -874,7 +877,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creata una relazione 
 
 L&#39;esempio di codice Java riportato di seguito blocca /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. Consultate [Blocco delle risorse](/help/forms/developing/aem-forms-repository.md#locking-resources).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -985,7 +988,7 @@ L&#39;esempio di codice Java riportato di seguito blocca /Applications/FormsAppl
 
 Nell&#39;esempio di codice Java riportato di seguito vengono letti e creati elenchi di controllo di accesso (ACL) nell&#39;archivio.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -1100,7 +1103,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono letti e creati elen
 
 Il seguente esempio di codice Java elimina Loan.xdp da `Applications/FormsApplication/1.0/FormsFolder`. Se il file XDP non si trova in questa cartella, viene generata un&#39;eccezione. (Vedere [Eliminazione delle risorse](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
