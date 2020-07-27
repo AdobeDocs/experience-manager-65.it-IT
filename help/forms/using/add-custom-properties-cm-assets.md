@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '4460'
+ht-degree: 4%
 
 ---
 
@@ -86,7 +89,7 @@ Per aggiungere una proprietà personalizzata a tutti i tipi di risorse e alle le
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | fieldLabel | Stringa | Nome a cui assegnare il campo o la proprietà. (Qui: Posizione dei destinatari) |
-      | nome | Stringa | `./extendedproperties/GeoLocation` (mantenere lo stesso valore del nome campo creato sotto il nodo elementi) |
+      | name | Stringa | `./extendedproperties/GeoLocation` (mantenere lo stesso valore del nome campo creato sotto il nodo elementi) |
       | renderingReadOnly | Booleano | vero |
       | sling:resourceType | Stringa | `granite/ui/components/coral/foundation/form/textfield` |
 
@@ -128,7 +131,7 @@ Questo scenario mostra come aggiungere una proprietà personalizzata a tutti i t
       <td>Nome a cui assegnare il campo o la proprietà. (Qui: geografia)</td>
    </tr>
    <tr>
-      <td>nome</td>
+      <td>name</td>
       <td>Stringa</td>
       <td>./extensionproperties/geographicdistribution (mantenere lo stesso valore del nome campo creato sotto il nodo items)</td>
    </tr>
@@ -212,7 +215,7 @@ Con la procedura seguente potete aggiungere una scheda con un campo a tutte le r
 
    1. Fate clic con il pulsante destro del mouse sulla cartella delle proprietà dei metadati e selezionate **Crea** > **Crea nodo**.
 
-      ![Create node](assets/cmmetadatapropertiescreatenode.png)
+      ![Crea nodo](assets/cmmetadatapropertiescreatenode.png)
 
    1. Verificate che la finestra di dialogo Crea nodo contenga i valori seguenti e fate clic su **OK**:
 
@@ -307,7 +310,7 @@ Con la procedura seguente potete aggiungere una scheda con un campo a tutte le r
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | fieldLabel | Stringa | Posizione dei destinatari (o nome che si desidera assegnare al campo). |
-      | nome | Stringa | ./extensionproperties/GeographicLocation |
+      | name | Stringa | ./extensionproperties/GeographicLocation |
       | renderingReadOnly | Booleano | vero |
       | sling:resourceType | Stringa | `/libs/granite/ui/components/coral/foundation/form/textfield` |
 
@@ -502,7 +505,7 @@ Per aggiungere una proprietà a un tipo di risorsa, effettua i seguenti passaggi
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | fieldLabel | Stringa | Posizione dei destinatari (o nome che si desidera assegnare al campo). |
-      | nome | Stringa | `./extendedproperties/GeoLocation` |
+      | name | Stringa | `./extendedproperties/GeoLocation` |
       | renderingReadOnly | Booleano | vero |
       | sling:resourceType | Stringa | granite/ui/components/corallo/foundation/form/textfield |
 
@@ -677,13 +680,13 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
    1. Aggiungete quanto segue alla riga 19 del file (dopo la dichiarazione di copyright).
 
-      ```
+      ```jsp
       <%@page import="java.util.Map"%>
       ```
 
    1. Aggiungete il codice seguente di una funzione che ottiene il valore per ogni proprietà personalizzata alla fine del file:
 
-      ```
+      ```jsp
       <%!
           private String getCustomPropertyValue(Map<String, Object> extendedProperties, String propertyName) {
       
@@ -699,7 +702,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
    1. Aggiungere quanto segue prima del tag &lt;tr> (&lt;tr &lt;%= attrs.build() %>):
 
-      ```
+      ```jsp
       <%
           String GeoLocation = "";
           if (asset != null) {
@@ -715,7 +718,7 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
    1. Per visualizzare la nuova proprietà nell&#39;interfaccia utente, aggiungi un tag TD come segue prima del tag di chiusura (&lt;/tr>):
 
-      ```
+      ```jsp
       <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
       ```
 
@@ -727,11 +730,11 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
 
    La colonna e la proprietà dell’interfaccia utente aggiunta in questa procedura vengono visualizzate per tutti i tipi di risorse. Tuttavia, i valori di queste proprietà possono essere immessi e visualizzati solo per i tipi di risorse per i quali è stata originariamente aggiunta la proprietà personalizzata.
 
-   Ad esempio, utilizzando lo scenario: Se aggiungete proprietà personalizzate per tipi di risorse specifici e aggiungete una proprietà personalizzata alle risorse di testo, potete immettere proprietà personalizzate solo per le risorse di testo. If, however, you display that custom property in the UI, the column appears for all asset types.
+   Ad esempio, utilizzando lo scenario: Se aggiungete proprietà personalizzate per tipi di risorse specifici e aggiungete una proprietà personalizzata alle risorse di testo, potete immettere proprietà personalizzate solo per le risorse di testo. Se, tuttavia, tale proprietà personalizzata viene visualizzata nell’interfaccia utente, la colonna viene visualizzata per tutti i tipi di risorse.
 
    ![custompropertyinlistview](assets/custompropertyinlistview.png)
 
-1. (Optional) By default the new column appears as the last column in the UI. To make the column appear at a specific position, add the following property to the column node:
+1. (Facoltativo) Per impostazione predefinita, la nuova colonna viene visualizzata come ultima colonna dell’interfaccia utente. Per visualizzare la colonna in una posizione specifica, aggiungere la seguente proprietà al nodo della colonna:
 
 <table>
  <tbody>
@@ -743,25 +746,25 @@ Per visualizzare la proprietà personalizzata nell’interfaccia utente dell’e
   <tr>
    <td>sling:orderBefore</td>
    <td>Stringa</td>
-   <td><p>Nome del nodo di colonna nel percorso "/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/Columns" prima del quale la colonna personalizzata deve essere visualizzata nell’interfaccia utente.</p> <p>Here, if you want Geographical Location column to appear before (to the left of) the Version column, add the property sling:orderBefore to GeoLocation node at path ""/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation" and set the value of property to version.</p> </td>
+   <td><p>Nome del nodo di colonna nel percorso "/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/Columns" prima del quale la colonna personalizzata deve essere visualizzata nell’interfaccia utente.</p> <p>In questo caso, se si desidera che la colonna Posizione geografica venga visualizzata prima (a sinistra) della colonna Versione, aggiungere il nodo sling:orderBefore a GeoLocation nel percorso ""/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/Columns/GeoLocation" e impostare il valore della proprietà su version.</p> </td>
   </tr>
  </tbody>
 </table>
 
-When you add the sling:orderBefore property to specify the column location, then you also need to update the order of the corresponding &lt;td> tag specified in step 6.4 of this procedure. For example, in this case, you need to ensure that the &lt;td> tag of Geographical Location is placed before &lt;td> tag of Version column:
+Quando aggiungete la proprietà sling:orderBefore per specificare la posizione della colonna, dovete anche aggiornare l&#39;ordine del tag &lt;td> corrispondente specificato al punto 6.4 di questa procedura. Ad esempio, in questo caso, devi assicurarti che il tag &lt;td> della posizione geografica sia posizionato prima del tag &lt;td> della colonna Versione:
 
 ```xml
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(version) %>"><%= xssAPI.encodeForHTML(version) %></td>
 ```
 
-## Enable search for custom properties {#enable-search-for-custom-properties}
+## Abilita la ricerca di proprietà personalizzate {#enable-search-for-custom-properties}
 
-By default, full text search doesn&#39;t include custom properties that you add to the UI using CRX/DE.
+Per impostazione predefinita, la ricerca full text non include proprietà personalizzate aggiunte all’interfaccia utente tramite CRX/DE.
 
 Per includere le proprietà personalizzate nella ricerca, è necessario consentire l&#39;indicizzazione delle proprietà personalizzate.
 
-To allow indexing of custom properties, complete the following steps:
+Per consentire l&#39;indicizzazione delle proprietà personalizzate, completare i seguenti passaggi:
 
 1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 1. Vai a `/oak:index/cmLucene`e aggiungi un nodo denominato **aggregati** al suo interno.
@@ -775,7 +778,7 @@ To allow indexing of custom properties, complete the following steps:
 
    1. Fate clic su **Salva tutto**.
 
-1. Under the newly created aggregates folder, add a node cm:resource. In cm:resource, aggiungete un nodo denominato include0.
+1. Nella cartella degli aggregati appena creata, aggiungi un nodo cm:resource. In cm:resource, aggiungete un nodo denominato include0.
 
    1. Fai clic con il pulsante destro del mouse sulla cartella aggregates e seleziona **Crea** > **Crea nodo**. Verificate che la finestra di dialogo Crea nodo contenga i valori seguenti e fate clic su **OK**:
 
@@ -790,7 +793,7 @@ To allow indexing of custom properties, complete the following steps:
       **Tipo:** nt:non strutturato
 
    1. Fate clic sul nuovo nodo creato (includi0). CRX visualizza le proprietà del nodo.
-   1. Add the following property to the node (here include0):
+   1. Aggiungete la seguente proprietà al nodo (includi0):
 
       <table>
          <tbody>
@@ -809,9 +812,9 @@ To allow indexing of custom properties, complete the following steps:
 
    1. Fate clic su **Salva tutto**.
 
-1. Go to properties at the following location and add a node location under it: `/oak:index/cmLucene/indexRules/cm:resource/properties`
+1. Passate alle proprietà nella posizione seguente e aggiungete una posizione nodo al di sotto di essa: `/oak:index/cmLucene/indexRules/cm:resource/properties`
 
-   Repeat this step for each of the custom properties you want to add to the search.
+   Ripetere questo passaggio per ciascuna delle proprietà personalizzate che si desidera aggiungere alla ricerca.
 
    1. Fare clic con il pulsante destro del mouse sulla cartella delle proprietà e selezionare **Crea** > **Crea nodo**.
    1. Verificate che la finestra di dialogo Crea nodo contenga i valori seguenti e fate clic su **OK**:
@@ -826,7 +829,7 @@ To allow indexing of custom properties, complete the following steps:
       | **Nome** | **Tipo** | **Valore** |
       |---|---|---|
       | analizzato | Stringa | vero |
-      | nome | Stringa | extendedProperties/location (o il nome della proprietà che si desidera aggiungere alla ricerca) |
+      | name | Stringa | extendedProperties/location (o il nome della proprietà che si desidera aggiungere alla ricerca) |
       | propertyIndex | Booleano | vero |
       | useInSuggest | Booleano | vero |
 
