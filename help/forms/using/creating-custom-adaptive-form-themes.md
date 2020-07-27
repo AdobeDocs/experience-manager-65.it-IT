@@ -9,7 +9,10 @@ topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 0%
 
 ---
 
@@ -18,12 +21,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!CAUTION]
 >
->I moduli AEM forniscono l&#39;Editor [di](/help/forms/using/themes.md) temi per creare e modificare [i temi](/help/forms/using/themes.md)dei moduli adattivi. Eseguite i passaggi elencati in questo articolo, solo se avete effettuato l&#39;aggiornamento da una versione che non dispone di Editor [di](/help/forms/using/themes.md) tema e disponete di un investimento esistente in temi creati utilizzando file Less/CSS (metodo editor pre-tema).
+>I AEM Forms forniscono la funzionalità [Editor](/help/forms/using/themes.md) tema per creare e modificare [i temi](/help/forms/using/themes.md)dei moduli adattivi. Eseguite i passaggi elencati in questo articolo, solo se avete effettuato l&#39;aggiornamento da una versione che non dispone di Editor [di](/help/forms/using/themes.md) tema e disponete di un investimento esistente in temi creati utilizzando file Less/CSS (metodo editor pre-tema).
 
 ## Prerequisiti {#prerequisites}
 
 * Conoscenza del framework LESS (Leaner CSS)
-* Come creare una libreria client in Adobe Experience Manager
+* Come creare una libreria client in  Adobe Experience Manager
 * [Creazione di un modello](/help/forms/using/custom-adaptive-forms-templates.md) di modulo adattivo per l&#39;utilizzo del tema creato
 
 ## Adaptive form theme {#adaptive-form-theme}
@@ -42,7 +45,7 @@ Potete creare un modello **** adattivo e applicare il tema al modello. Quindi ut
 >
 >Se si seguono questi passaggi utilizzando i nomi, il modello risultante dovrebbe essere simile all&#39;istantanea seguente:
 
-![](assets/thumbnail.png) Snapshot **** Figura modulo adattivo con tema foresta: Esempio di tema *foresta*
+![Snapshot](assets/thumbnail.png)**Figura modulo adattivo con tema foresta:** *Esempio di tema della foresta*
 
 1. Crea un nodo di tipo `cq:ClientLibraryFolder` sotto il `/apps`nodo.
 
@@ -63,12 +66,14 @@ Potete creare un modello **** adattivo e applicare il tema al modello. Quindi ut
       Questa cartella è composta da file `less` variabili, file `less` mixin, `less` file che definiscono gli stili usando mixin e variabili. E tutti questi meno file vengono poi importati in stili.less.
 
    * `css`cartella: Contiene i file .css in cui vengono definiti gli stili statici da utilizzare nel tema.
+
    **Meno file** variabili: Si tratta dei file in cui potete definire o ignorare le variabili utilizzate per definire gli stili CSS.
 
    I moduli adattivi forniscono variabili OOOTB definite nei seguenti file .less:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
+
    I moduli adattivi forniscono anche variabili di terze parti definite in:
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
@@ -81,7 +86,7 @@ Potete creare un modello **** adattivo e applicare il tema al modello. Quindi ut
 
    Esempio di sostituzione delle variabili:
 
-   ```
+   ```css
    @button-background-color: rgb(19, 102, 44);
    @button-border-color: rgb(19, 102, 44);
    @button-border-size: 0px;
@@ -96,24 +101,27 @@ Potete creare un modello **** adattivo e applicare il tema al modello. Quindi ut
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
    1. Quindi importate il file minore che include le variabili sostituite.
+
    Esempio di nuove definizioni di variabili:
 
-   ```
+   ```css
    @button-focus-bg-color: rgb(40, 208, 90);
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **** Meno file mixin: È possibile definire le funzioni che accettano le variabili come argomenti. L&#39;output di queste funzioni sono gli stili risultanti. Usate questi mixin all&#39;interno di stili diversi, per evitare di ripetere stili CSS.
+   **Meno file mixin:** È possibile definire le funzioni che accettano le variabili come argomenti. L&#39;output di queste funzioni sono gli stili risultanti. Usate questi mixin all&#39;interno di stili diversi, per evitare di ripetere stili CSS.
 
    I moduli adattivi forniscono mixaggi OOOTB definiti in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
+
    I moduli adattivi forniscono anche mixin di terze parti definiti in:
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
+
    Definizione mixin campione:
 
-   ```
+   ```css
    .rounded-corners (@radius) {
      -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
@@ -127,7 +135,7 @@ Potete creare un modello **** adattivo e applicare il tema al modello. Quindi ut
    }
    ```
 
-   **** File Styles.less: Utilizzate questo file per includere tutti i file minori (variabili, mixin, stili) da utilizzare nella libreria client.
+   **File Styles.less:** Utilizzate questo file per includere tutti i file minori (variabili, mixin, stili) da utilizzare nella libreria client.
 
    Nel file di esempio seguente `styles.less` , l&#39;istruzione import può essere inserita in qualsiasi ordine.
 
@@ -138,7 +146,7 @@ Potete creare un modello **** adattivo e applicare il tema al modello. Quindi ut
    * `components.less`
    * `layouts.less`
 
-   ```
+   ```css
    @import "../../../clientlibs/fd/af/guidetheme/common/less/globalvariables.less";
    @import "../../../clientlibs/fd/af/guidetheme/common/less/layoutvariables.less";
    @import "forestTheme-variables";
@@ -168,9 +176,9 @@ Potete creare un modello **** adattivo e applicare il tema al modello. Quindi ut
 
    Il percorso `css.txt` contiene i percorsi dei file .css da scaricare per la libreria.
 
-   Esempio:
+   Ad esempio:
 
-   ```
+   ```javascript
    #base=/apps/clientlibs/fd/af/third-party/css
    bootstrap.css
    
@@ -214,7 +222,7 @@ Dopo aver creato un tema modulo adattivo, effettuare le seguenti operazioni per 
 
       Il frammento di codice di esempio seguente importa il `af.theme.forest` tema.
 
-      ```
+      ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
       <cq:includeClientLib categories="af.theme.forest"/>
       ```
@@ -225,5 +233,5 @@ Dopo aver creato un tema modulo adattivo, effettuare le seguenti operazioni per 
 
    ![Snapshot archivio CRX](assets/2-1.png)
 
-1. Creare un modulo adattivo utilizzando il modello creato nel passaggio precedente. L&#39;aspetto del modulo adattivo è definito dal tema creato in Per creare una sezione tema modulo adattivo in questo articolo.
+1. Creare un modulo adattivo utilizzando il modello creato nel passaggio precedente. L&#39;aspetto del modulo adattivo è definito dal tema creato in Per creare una sezione del tema del modulo adattivo in questo articolo.
 
