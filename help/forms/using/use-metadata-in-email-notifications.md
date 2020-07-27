@@ -8,7 +8,10 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Potete utilizzare i metadati in un modello e-mail per compilare dinamicamente le
 
 I metadati sono memorizzati in coppie chiave-valore. Potete specificare la chiave nel modello e-mail e la chiave viene sostituita con un valore in fase di esecuzione (quando viene generata una notifica e-mail). Ad esempio, nell&#39;esempio di codice seguente, &quot;$ {workitem_title} &quot; è una chiave. Viene sostituito con il valore &quot;Loan-Request&quot; in fase di esecuzione.
 
-```xml
+```html
 subject=Task Assigned - ${workitem_title}
 
 message=<html><body>\n\
@@ -96,7 +99,7 @@ message=<html><body>\n\
 
 ## Utilizzo dei metadati generati dal sistema in una notifica e-mail {#using-system-generated-metadata-in-an-email-notification}
 
-Un’applicazione AEM Forms offre diverse variabili di metadati (coppie chiave-valore) pronte all’uso. Potete usare queste variabili in un modello e-mail. Il valore della variabile si basa sull&#39;applicazione dei moduli associata. Nella tabella seguente sono elencate tutte le variabili di metadati disponibili:
+Un&#39;applicazione AEM Forms fornisce diverse variabili di metadati (coppie chiave-valore) pronte all&#39;uso. Potete usare queste variabili in un modello e-mail. Il valore della variabile si basa sull&#39;applicazione dei moduli associata. Nella tabella seguente sono elencate tutte le variabili di metadati disponibili:
 
 <table>
  <tbody> 
@@ -151,7 +154,7 @@ Un’applicazione AEM Forms offre diverse variabili di metadati (coppie chiave-v
 
 Potete inoltre utilizzare metadati personalizzati in una notifica e-mail. I metadati personalizzati contengono informazioni oltre ai metadati generati dal sistema. Ad esempio, i dettagli dei criteri recuperati da un database. Potete utilizzare un bundle ECMAScript o OSGi per aggiungere metadati personalizzati in archivio crx:
 
-### Utilizzare ECMAScript per aggiungere metadati personalizzati {#use-ecmascript-to-add-custom-metadata}
+### Utilizzare ECMAScript per aggiungere metadati personalizzati  {#use-ecmascript-to-add-custom-metadata}
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) è un linguaggio di script. Viene utilizzato per applicazioni di script sul lato client e server. Effettuate le seguenti operazioni per utilizzare ECMAScript per aggiungere metadati personalizzati a un modello e-mail:
 
@@ -163,7 +166,7 @@ Potete inoltre utilizzare metadati personalizzati in una notifica e-mail. I meta
 
 1. Aggiungete il codice al file .ecma che ha la logica per generare metadati personalizzati nelle coppie chiave-valore. Ad esempio, il seguente codice ECMAScript genera metadati personalizzati per una polizza assicurativa:
 
-   ```
+   ```javascript
    function getUserMetaData()  {
        //Commented lines below provide an overview on how to set user metadata in map and return it.
        var HashMap = Packages.java.util.HashMap;
@@ -184,31 +187,27 @@ Potete inoltre utilizzare metadati personalizzati in una notifica e-mail. I meta
    Se non si specifica il titolo, il campo Metadati personalizzati visualizza il percorso completo del file ECMAScript. Per specificare un titolo significativo per lo script, effettuare le operazioni seguenti:
 
    1. Espandete il nodo script, fate clic con il pulsante destro del mouse sul nodo **[!UICONTROL jcr:content]** e fate clic su **[!UICONTROL Mixins]**.
-   1. Type mix:title in Edit Mixins dialog and click **+**.
-   1. Add a property with the following values.
+   1. Digitare mix:title nella finestra di dialogo Modifica mixin e fare clic su **+**.
+   1. Aggiungete una proprietà con i seguenti valori.
 
       | Nome | jcr:title |
       |---|---|
       | Tipo | Stringa |
-      | Valore | Specify the title of the script. Ad esempio, metadati personalizzati per il titolare della polizza. The specified value is displayed in the assign task step. |
+      | Valore | Specificate il titolo dello script. Ad esempio, metadati personalizzati per il titolare della polizza. Il valore specificato viene visualizzato nel passaggio dell&#39;attività di assegnazione. |
 
-### Use an OSGi bundle and Java interface to add custom metadata {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Utilizzare un bundle OSGi e un&#39;interfaccia Java per aggiungere metadati personalizzati {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-You can use the WorkitemUserMetadataService Java interface to add custom metadata for email templates. You can create an OSGi bundle that uses the WorkitemUserMetadataService Java interface and deploy it to the AEM Forms server. Rende i metadati disponibili per la selezione nel passaggio Assegna attività.
+Potete usare l’interfaccia Java WorkitemUserMetadataService per aggiungere metadati personalizzati per i modelli e-mail. Potete creare un bundle OSGi che utilizza l’interfaccia Java WorkitemUserMetadataService e distribuirlo nel server AEM Forms. Rende i metadati disponibili per la selezione nel passaggio Assegna attività.
 
-Per creare un bundle OSGi con l’interfaccia Java, aggiungete i file JAR [Client](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms e Jar [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) granite come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. The following procedure provides steps to use Eclipse to create an OSGi bundle:
+Per creare un bundle OSGi con l’interfaccia Java, aggiungete [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) jar e file JAR [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) graniti come dipendenze esterne al progetto bundle OSGi. Potete utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente illustra i passaggi per utilizzare Eclipse per creare un bundle OSGi:
 
-1. Open Eclipse IDE. Navigate to File > New Project.
+1. Aprite Eclipse IDE. Selezionare File > Nuovo progetto.
 
-1. On the Select a wizard screen, select Maven Project, and click Next.
+1. Nella schermata Seleziona una procedura guidata, selezionate Progetto Paradiso e fate clic su Avanti.
 
-1. On the New Maven project, keep defaults, and click Next. Select an archetype and click Next. Ad esempio, maven-archetype-quickstart. Specificate ID gruppo, ID evento, versione e pacchetto per il progetto, quindi fate clic su Fine. Il progetto viene creato.
+1. Nel progetto New Maven, mantenete le impostazioni predefinite e fate clic su Next (Avanti). Selezionate un archetipo e fate clic su Avanti. Ad esempio, maven-archetype-quickstart. Specificate ID gruppo, ID evento, versione e pacchetto per il progetto, quindi fate clic su Fine. Il progetto viene creato.
 
 1. Aprite il file pom.xml per la modifica e sostituite tutto il contenuto del file con quanto segue:
-
-   ```
-   
-   ```
 
 1. Aggiungete il codice sorgente che utilizza l’interfaccia Java WorkitemUserMetadataService per aggiungere metadati personalizzati per i modelli e-mail. Di seguito è riportato un esempio di codice:
 
@@ -250,6 +249,6 @@ Per creare un bundle OSGi con l’interfaccia Java, aggiungete i file JAR [Clien
 
    `mvn clean install`
 
-1. Caricate il bundle in un server AEM Forms. È possibile utilizzare AEM Package Manager per importare il bundle nel server AEM Forms.
+1. Caricate il bundle in un server di AEM Forms. Potete utilizzare AEM Package Manager per importare il bundle nel server AEM Forms.
 
 Una volta importato il bundle, potete selezionare i metadati nel passaggio Assegna attività e usarlo come modello e-mail.
