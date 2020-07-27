@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
 
 # Personalizzazione tema {#theme-customization}
 
-Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un aspetto distinti specifici dell&#39;organizzazione all&#39;app AEM Forms. Ad esempio, è possibile modificare il colore e l&#39;altezza di sfondo delle attività o dei punti di inizio. L&#39;esempio seguente fornisce le istruzioni per la modifica:
+Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un aspetto distinti dell&#39;organizzazione all&#39;app AEM Forms. Ad esempio, è possibile modificare il colore e l&#39;altezza di sfondo delle attività o dei punti di inizio. L&#39;esempio seguente fornisce le istruzioni per la modifica:
 
 * visualizzare le istruzioni al posto della descrizione
 * numero di percorsi di visualizzazione
@@ -40,7 +43,7 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
 1. Open the `template.html` file for editing.
 1. Individuate la stringa seguente:
 
-   ```
+   ```jsp
    <%if ( (task.description !== "") && (task.description !== null) && (typeof task.description !== null) && (typeof task.description !== 'undefined') ) {%>
                   <div class="description_details">
                     <%= task.description %>
@@ -52,7 +55,7 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
 
 1. Individuate il codice seguente nel `template.html` file:
 
-   ```
+   ```jsp
    <ul id="task_menu_list">
                                    <li class="approve" title="<%= task.availableCommands.directCommands[0]%>" data-routename="<%= task.availableCommands.directCommands[0]%>">
                                        <%= task.availableCommands.directCommands[0]%>
@@ -64,7 +67,7 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
 
 1. Commenta la riga seguente e salva il file.
 
-   ```
+   ```jsp
    task.availableCommands.directCommands[1]%>">
    <%= task.availableCommands.directCommands[1]%>
    </li>
@@ -81,4 +84,4 @@ Potete personalizzare il codice HTML e il file CSS per fornire un aspetto e un a
 1. Salvare le modifiche e chiudere il `_style.css` file.
 1. Aprite l&#39;app AEM Forms.
 
-   L&#39;app AEM Forms ora visualizza istruzioni invece della descrizione.
+   L&#39;app AEM Forms ora visualizza le istruzioni invece della descrizione.
