@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Potete utilizzare l&#39;API Batch insieme alle cartelle esaminate o come API di 
 
 **Un singolo record in un file JSON**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -41,7 +41,7 @@ Potete utilizzare l&#39;API Batch insieme alle cartelle esaminate o come API di 
 
 **Più record in un file JSON**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -155,7 +155,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
       |--- |--- |--- |
       | templatePath | Stringa | Specificate il percorso del modello di comunicazione interattiva da utilizzare. Ad esempio, /content/dam/formsanddocuments/testsample/mediumic. È una proprietà obbligatoria. |
       | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specificate /dipendente/Id, il valore del campo id diventa nome per la corrispondente comunicazione interattiva. Il valore predefinito è un UUID [casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID())casuale. |  |
-      | usePrefillService | Booleano | Impostate il valore su True. The default value is false.  Quando il valore è impostato su true, l&#39;API Batch legge i dati dal modello dati modulo configurato e li riempie alla comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. |
+      | usePrefillService | Booleano | Impostate il valore su True. Il valore predefinito è false.  Quando il valore è impostato su true, l&#39;API Batch legge i dati dal modello dati modulo configurato e li riempie alla comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ciascun record) vengono trattati come argomenti FDM. |
       | batchType | Stringa | Impostare il valore su STAMPA, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | locale | Stringa | Specificate le impostazioni internazionali della comunicazione interattiva di output. Il servizio out-of-the-box non utilizza l&#39;opzione delle impostazioni internazionali, ma è possibile creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore predefinito è en_US. |
 
@@ -179,7 +179,7 @@ Prima di distribuire il servlet Java, accertatevi di disporre di una comunicazio
 1. [Creazione e implementazione di un progetto AEM tramite Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) nell’istanza AEM.
 1. Aggiungi [AEM Forms Client SDK versione 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) o successiva nell&#39;elenco delle dipendenze del file POM del progetto AEM. Ad esempio,
 
-   ```XML
+   ```xml
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
@@ -345,12 +345,15 @@ Quindi, il seguente URL sul nodo di pubblicazione visualizza il canale Web della
 Oltre a salvare i dati sul file system, si memorizzano i file JSON nel repository CRX, nel file system, nel server Web o possono accedere ai dati tramite il servizio di precompilazione OSGI. Sintassi per l&#39;unione dei dati tramite vari protocolli:
 
 * **Protocollo CRX**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocollo file**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Protocollo Prefill Service**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME fa riferimento al nome del servizio di precompilazione OSGI. Fate riferimento a Creare ed eseguire un servizio di precompilazione.
@@ -358,6 +361,7 @@ Oltre a salvare i dati sul file system, si memorizzano i file JSON nel repositor
    IDENTIFIER fa riferimento a tutti i metadati richiesti dal servizio di precompilazione OSGI per recuperare i dati di precompilazione. Un identificatore per l’utente connesso è un esempio di metadati che possono essere utilizzati.
 
 * **protocollo HTTP**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
