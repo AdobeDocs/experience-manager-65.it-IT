@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ I modelli per il canale Web vengono creati in AEM. Gli autori e gli amministrato
 Questa esercitazione illustra i passaggi necessari per creare modelli per i canali Stampa e Web in modo che siano disponibili per l&#39;utilizzo durante la creazione di comunicazioni interattive. Al termine di questa esercitazione, potrete:
 
 * Creazione di modelli XDP per il canale di stampa tramite Adobe Forms Designer
-* Caricare i modelli XDP nel server AEM Forms
+* Caricare i modelli XDP sul server AEM Forms
 * Creazione e attivazione di modelli per il canale Web
 
 ## Creare un modello per il canale di stampa {#create-template-for-print-channel}
@@ -37,7 +40,7 @@ Questa esercitazione illustra i passaggi necessari per creare modelli per i cana
 Crea e gestisci un modello per il canale di stampa della comunicazione interattiva utilizzando le seguenti attività:
 
 * [Creare un modello XDP utilizzando Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
-* [Caricare il modello XDP nel server AEM Forms](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
+* [Caricare il modello XDP sul server AEM Forms](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
 * [Creare un modello XDP per i frammenti di layout](../../forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
 ### Creare un modello XDP utilizzando Forms Designer {#create-xdp-template-using-forms-designer}
@@ -70,6 +73,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
    1. Specificare **BillDetails** nel campo **Nome** .
 
    1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+
    ![Sottomodulo Designer](assets/forms_designer_subform_new.png)
 
 1. Analogamente, selezionare il sottomodulo principale, la scheda **Sottomodulo** e selezionare **Flusso** dall&#39;elenco a discesa **Contenuto** . Nella scheda **Binding** :
@@ -77,6 +81,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
    1. Specificare **TelecaBill** nel campo **Nome** .
 
    1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+
    ![Sottomodulo per modello Stampa](assets/root_subform_print_template_new.png)
 
 1. Ripetere i passaggi da 2 a 5 per creare i sottomoduli seguenti:
@@ -91,6 +96,7 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
    * ItemCalls
    * PayNow
    * ValueAddedServices
+
    Per risparmiare tempo, è inoltre possibile copiare e incollare sottomoduli esistenti per creare nuovi sottomoduli.
 
    Per spostare il sottomodulo **Grafici** a destra del sottomodulo Addebiti, selezionare il sottomodulo **Grafici** dal riquadro a sinistra, selezionare la scheda **Layout** e specificare un valore per il campo **AnchorX** . Il valore deve essere maggiore del valore relativo al campo **Larghezza** del sottomodulo **Addebiti** . Selezionare il sottomodulo **Addebiti** e selezionare la scheda **Layout** per visualizzare il valore del campo **Larghezza** .
@@ -107,14 +113,14 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
 
    1. Toccate **Salva**.
 
-### Caricare il modello XDP nel server AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
+### Caricare il modello XDP sul server AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
 
-Dopo aver creato un modello XDP utilizzando Designer moduli, è necessario caricarlo nel server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
+Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo nel server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
 
 1. Selezionare **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** > Caricamento **** file.
 
-   Individuate e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms.
+   Spostatevi e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms.
 
 ### Creare un modello XDP per i frammenti di layout {#create-xdp-template-for-layout-fragments}
 
@@ -173,7 +179,7 @@ Per creare un modello di canale Web, definite una cartella in cui salvare i mode
 
 Per creare una cartella per i modelli modificabili, effettuate le seguenti operazioni:
 
-1. Toccate **Strumenti** ![](assets/hammer-icon.svg) > Browser **** di configurazione.
+1. Toccate **Strumenti** icona a forma di ![martello](assets/hammer-icon.svg) > **Browser** di configurazione.
 1. Nella pagina del browser di configurazione, toccate **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** , specificate **Create_First_IC_templates** come titolo della cartella, selezionate **Modelli** modificabili e toccate **Crea**.
 
@@ -217,7 +223,7 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
 
    ![Struttura contenuto](assets/content_tree_root_panel_new.png)
 
-1. Selezionate il pannello e toccate ![](assets/configure_icon.png) (Configura).
+1. Selezionate il pannello e toccate ![configure_icon](assets/configure_icon.png) (Configura).
 1. Nel riquadro Proprietà:
 
    1. Specificate **i dettagli** fatturati nel campo Nome.
@@ -225,6 +231,7 @@ Per creare un modello per il canale Web nella cartella **Create_First_IC_templat
    1. Selezionare **1** dall&#39;elenco a discesa **Numero di colonne** .
 
    1. Toccate ![](/help/forms/using/assets/done_icon.png) per salvare le proprietà.
+
    Il nome del pannello viene aggiornato in Dettagli **** fatturazione nella struttura del contenuto.
 
 1. Ripetete i passaggi da 7 a 11 per aggiungere al modello i pannelli con le seguenti proprietà:
@@ -248,7 +255,7 @@ Dopo aver creato il modello Web, è necessario attivarlo per utilizzare il model
 
 Per abilitare il modello Web, eseguite i seguenti passaggi:
 
-1. Toccate **Strumenti** ![](assets/hammer-icon.svg) > **Modelli**.
+1. Toccare **Strumenti** icona a forma di ![martello](assets/hammer-icon.svg) > **Modelli**.
 1. Individuate il modello **Create_First_IC_Web_Template** , selezionatelo e toccate **Abilita**.
 1. Scheda **Abilita** di nuovo per confermare.
 
@@ -267,4 +274,4 @@ In base al caso di utilizzo, nella comunicazione interattiva è necessario inclu
 
    ![Componenti consentiti](assets/allowed_components_af_new.png)
 
-1. Toccate ![](assets/done_icon.png) per salvare le proprietà.
+1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà.
