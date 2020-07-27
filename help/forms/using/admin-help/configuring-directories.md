@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3246'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +60,7 @@ Potete modificare i dettagli di una directory precedentemente configurata.
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Gestione dominio.
 1. Fare clic sul dominio appropriato nell&#39;elenco e, sulla pagina visualizzata, selezionare la directory appropriata dall&#39;elenco.
 1. Configurate le impostazioni di directory, utenti e gruppi come necessario. Consultate Impostazioni [](configuring-directories.md#directory-settings)della directory.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ## Eliminare una directory {#delete-a-directory}
 
@@ -204,7 +207,7 @@ Se DN è specificato come identificatore univoco, non è necessario configurare 
 >
 >Per abilitare VLV, configurare Sun One. Consultate [Configurare la gestione utente per l’utilizzo della visualizzazione a elenco virtuale (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Nome campo ordinamento:** Se avete selezionato Abilita controllo VLV (Virtual List View Control), specificate il nome attributo utilizzato per ordinare l&#39;indice. Questo nome attributo è quello specificato al momento della creazione di un indice per VLV sul server di directory.
+**Nome campo ordinamento:** Se avete selezionato Abilita controllo VLV (Virtual List View Control), specificate il nome attributo utilizzato per ordinare l&#39;indice. Questo nome attributo è quello specificato al momento della creazione di un indice per VLV nel server di directory.
 
 >[!NOTE]
 >
@@ -240,7 +243,7 @@ La creazione di un VLV richiede una coppia di voci che includono le classi `vlvS
 
 Di seguito è riportato uno script di esempio LDIF per la voce VLV destinata agli utenti:
 
-```as3
+```text
  dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
  objectclass: top
  objectclass: vlvSearch
@@ -290,11 +293,11 @@ Dopo aver configurato le impostazioni di directory e creato le voci VLV LDAP per
 1. Dopo aver creato le voci dell&#39;oggetto, arrestare Sun ONE Server.
 1. Utilizzando lo strumento vlvindex, generate l&#39;indice digitando il testo seguente:
 
-   *istanza* del server di directory `\vlvindex.bat -n userRoot -T lcuser`
+   *istanza del server di directory* `\vlvindex.bat -n userRoot -T lcuser`
 
    Viene generato il seguente output:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle
     [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle
     [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%).
@@ -309,11 +312,11 @@ Dopo aver configurato le impostazioni di directory e creato le voci VLV LDAP per
 
 1. Se VLV è abilitato anche per i gruppi, create l&#39;indice corrispondente per i gruppi. Verificare se gli indici sono creati eseguendo il comando seguente:
 
-   *Sun one server directory* `\shared\bin>ldapsearch -h`*hostname *host`-p`*port no*`-s base -b "" objectclass=*`
+   *Sun one server directory* `\shared\bin>ldapsearch -h`*hostname *host`-p`*port no* `-s base -b "" objectclass=*`
 
    Viene generato un output come i seguenti dati di esempio:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*
     ldapsearch.exe: started Tue Nov 27 16:34:20 2007
     version: 1
