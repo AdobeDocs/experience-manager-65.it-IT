@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f470768fd3368e3b2118333b8a84f8331e7fa2e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 5f470768fd3368e3b2118333b8a84f8331e7fa2e
 
 Conoscenza dei layout, che consente di creare/utilizzare un layout personalizzato. Consultate [Modifica del layout](../../forms/using/layout-capabilities-adaptive-forms.md)del pannello.
 
-## Componente Layout pannello moduli adattivo {#adaptive-form-panel-layout-component}
+## Componente Layout del pannello dei moduli adattivi {#adaptive-form-panel-layout-component}
 
 Il componente Layout del pannello dei moduli adattivi controlla il modo in cui i componenti per moduli adattivi vengono disposti in un pannello relativo all’interfaccia utente.
 
@@ -29,7 +32,7 @@ Il componente Layout del pannello dei moduli adattivi controlla il modo in cui i
 
 1. Navigate to the location `/crx/de`.
 1. Copiate un layout del pannello dalla posizione `/libs/fd/af/layouts/panel` (ad esempio, `tabbedPanelLayout`) a `/apps` (ad esempio, `/apps/af-custom-layout`).
-1. Rinominate il layout in cui avete copiato `customPanelLayout`. Modificare le proprietà dei nodi `qtip` e `jcr:description`. Ad esempio, modificateli in `Custom layout - Toggle tabs`.
+1. Rinominare il layout in cui è stato copiato `customPanelLayout`. Modificare le proprietà dei nodi `qtip` e `jcr:description`. Ad esempio, modificateli in `Custom layout - Toggle tabs`.
 
 qtip
 
@@ -88,7 +91,7 @@ qtip
    }
    ```
 
-   ```
+   ```javascript
    /** function for toggling the navigators **/
    var toggleNav = function () {
    
@@ -116,7 +119,7 @@ qtip
 
    Inoltre, aggiornate i percorsi degli script inclusi nei file .jsp. Ad esempio, aggiornate il `customPanelLayout.jsp` file come segue:
 
-   ```
+   ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -145,7 +148,7 @@ qtip
 
    Il `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` file:
 
-   ```
+   ```html
    <%-- jsp governing the navigation part --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -174,7 +177,7 @@ qtip
 
    Aggiornato `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
-   ```
+   ```html
    <%-- jsp governing the panel content --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
