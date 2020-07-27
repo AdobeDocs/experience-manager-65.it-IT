@@ -1,8 +1,8 @@
 ---
 title: Riduzione dei file JavaScript
 seo-title: Riduzione dei file JavaScript
-description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell'area di lavoro di AEM Forms per ottimizzare i file JS per il Web.
-seo-description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell'area di lavoro di AEM Forms per ottimizzare i file JS per il Web.
+description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell’area di lavoro AEM Forms per ottimizzare i file JS per il Web.
+seo-description: Istruzioni per generare codice ridotto dopo le personalizzazioni dell’area di lavoro AEM Forms per ottimizzare i file JS per il Web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -25,17 +28,19 @@ Per generare codice ridotto per le modifiche semantiche, effettuate le seguenti 
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui pacchetti, consultate [Introduzione alla personalizzazione dell&#39;area di lavoro](/help/forms/using/introduction-customizing-html-workspace.md) Moduli AEM.
+   >Per ulteriori informazioni sui pacchetti, consultate [Introduzione all&#39;area](/help/forms/using/introduction-customizing-html-workspace.md) di lavoroPersonalizzazione AEM Forms.
 
 1. Aggiornate i percorsi in `main.js` Client-html/src/main/webapp/js, per modelli/visualizzazioni aggiunti/aggiornati.
 
    Ad esempio, l&#39;aggiunta di un nuovo modello Sharequeue, ad esempio mySharequeue, modifica:
 
-   ```
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
-   
-   To
-   
+   ```
+
+   A
+
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
@@ -48,9 +53,11 @@ Per generare codice ridotto per le modifiche semantiche, effettuate le seguenti 
                name="sharequeue"
                path="runtime/models/sharequeue.js"
                service="service"/>
-   
-   To
-   
+   ```
+
+   A
+
+   ```xml
    <sharequeue
                name="sharequeue"
                path="runtime/myModels/mySharequeue.js"
