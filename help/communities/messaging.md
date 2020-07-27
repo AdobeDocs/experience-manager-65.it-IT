@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-La funzione di messaggistica per i AEM Communities consente ai visitatori del sito (membri) che hanno effettuato l’accesso di inviare messaggi a un altro utente accessibili una volta effettuato l’accesso al sito.
+La funzione di messaggistica per i AEM Communities consente ai visitatori del sito (membri) che hanno effettuato l’accesso di inviare messaggi a un altro utente accessibili una volta entrati nel sito.
 
 La messaggistica è abilitata per un sito community selezionando una casella durante la creazione [del sito](/help/communities/sites-console.md)community.
 
@@ -47,7 +47,7 @@ Come mostrato di seguito, esiste una configurazione del servizio per i siti crea
 
 Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+** accanto al nome del servizio:
 
-* **Campi messaggio consentiti**
+* **Campi  messaggio Inserì nell&#39;elenco Consentiti**
 
    Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
 
@@ -85,11 +85,11 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **Percorso Inbox**
 
-   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la **`inbox`** cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/inbox*.
+   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la `inbox` cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/inbox*.
 
 * **Percorso elementi inviati**
 
-   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la **`send items`** cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/sentitems* .
+   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la `sent items` cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/sentitems* .
 
 * **Allegati di supporto**
 
@@ -111,13 +111,13 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
    Se supportAttachments è selezionato, questo valore specifica la dimensione totale massima consentita (in byte) di tutti gli allegati. Il valore predefinito è *104857600* (100 MB).
 
-* **Elenco blocchi tipo di allegato**
+* **Tipo di allegato  inserii nell&#39;elenco Bloccati**
 
-   Un blocco di estensioni di nomi file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non è presente in elenco, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
+   Un  inserire nell&#39;elenco Bloccati di estensioni del nome file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non  inserire nell&#39;elenco Bloccati, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
 
 * **Tipi di allegati consentiti**
 
-   **(*Action Required*)** Un elenco di estensioni di nomi file consentite, nell&#39;opposto dell&#39;elenco di blocco. Per consentire tutte le estensioni di file, ad eccezione di quelle elencate in blocco, utilizzate l&#39;icona **-** per rimuovere la singola voce vuota.
+   **(*Action Required*)** Un  inserì nell&#39;elenco Consentiti di estensioni di nomi file, l&#39;opposto del inserire nell&#39;elenco Bloccati . Per consentire tutte le estensioni del nome file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona &#39;**-**&#39; per rimuovere la singola voce vuota.
 
 * **Selezione servizio**
 
@@ -125,15 +125,15 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
    Il valore predefinito è */bin/messaging* .
 
-* **Elenco campi consentiti**
+* **campo Inserì nell&#39;elenco Consentiti**
 
-   Usa elenco campi **messaggio**.
+   Usa campi **messaggio  Inserì nell&#39;elenco Consentiti**.
 
 >[!CAUTION]
 >
 >Ogni volta che una `Messaging Operations Service` configurazione viene aperta per la modifica, se `allowedAttachmentTypes.name` è stata rimossa, viene aggiunta una voce vuota per rendere la proprietà configurabile. Una singola voce vuota disattiva efficacemente gli allegati.
 >
->Per consentire tutte le estensioni di file, ad eccezione di quelle elencate, utilizzate l&#39;icona **-** per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
+>Per consentire tutte le estensioni di file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona **-** per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
 
 
 ## Group Messaging {#group-messaging}
