@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fa99c3bc2110aadb403920aa3e0fcf0919f26735
+source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
 workflow-type: tm+mt
-source-wordcount: '2611'
+source-wordcount: '2610'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ I principali oggetti API MSM interagiscono come segue (vedere anche [Termini uti
 
    * Quando si configura una copia dal vivo per la prima volta, viene utilizzato anche un RolloutConfig (che attiva le azioni LiveActions).
 
-### Creazione di una nuova azione di sincronizzazione {#creating-a-new-synchronization-action}
+## Creazione di una nuova azione di sincronizzazione {#creating-a-new-synchronization-action}
 
 Create azioni di sincronizzazione personalizzate da utilizzare con le configurazioni di rollout. Create un&#39;azione di sincronizzazione quando le azioni [](/help/sites-administering/msm-sync.md#installed-synchronization-actions) installate non soddisfano i requisiti specifici dell&#39;applicazione. A tale scopo, creare due classi:
 
@@ -162,7 +162,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >Gli `Resource` argomenti possono essere `null` o `Resources` oggetti che non si adattano agli `Node` oggetti, ad esempio [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) gli oggetti.
 
-### Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
+## Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 
 Create una configurazione di rollout quando le configurazioni di rollout installate non soddisfano i requisiti dell&#39;applicazione:
 
@@ -175,7 +175,7 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 >
 >Consultate anche le [best practice per la personalizzazione dei](/help/sites-administering/msm-best-practices.md#customizing-rollouts)rollout.
 
-#### Create the Rollout Configuration {#create-the-rollout-configuration}
+### Create the Rollout Configuration {#create-the-rollout-configuration}
 
 Per creare una nuova configurazione di rollout:
 
@@ -224,7 +224,7 @@ Per creare una nuova configurazione di rollout:
 
 1. Fate clic su **Salva tutto**.
 
-#### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
+### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
 
 Le configurazioni di rollout sono memorizzate sotto il nodo [di configurazione di](#create-the-rollout-configuration) rollout creato sotto il `/apps/msm/<your-project>/rolloutconfigs` nodo.
 
@@ -241,9 +241,9 @@ Aggiungete nodi secondari di tipo `cq:LiveSyncAction` per aggiungere azioni di s
 Il nome deve corrispondere al nome dell’ **azione** nella tabella in Azioni [di](/help/sites-administering/msm-sync.md#installed-synchronization-actions)sincronizzazione, ad esempio `contentCopy` o `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
-1. Aggiungi e configura tutti i nodi di azione di sincronizzazione richiesti. Ridisporre i nodi di azione in modo che l&#39;ordine corrisponda all&#39;ordine in cui si desidera che si verifichino. Il nodo di azione superiore si verifica per primo.
+1. Aggiungi e configura tutti i nodi di azione di sincronizzazione richiesti. Ridisporre i nodi di azione in modo che il loro ordine corrisponda all&#39;ordine in cui si desidera che si verifichino. Il nodo di azione superiore si verifica per primo.
 
-### Creazione e utilizzo di una semplice classe LiveActionFactory {#creating-and-using-a-simple-liveactionfactory-class}
+## Creazione e utilizzo di una semplice classe LiveActionFactory {#creating-and-using-a-simple-liveactionfactory-class}
 
 Seguite le procedure riportate in questa sezione per sviluppare un `LiveActionFactory` e utilizzarlo in una configurazione di rollout. Le procedure utilizzano Maven ed Eclipse per sviluppare e distribuire `LiveActionFactory`:
 
@@ -262,7 +262,7 @@ Puoi trovare il codice di questa pagina su GitHub
 * [Apri il progetto Experience emanager-java-msmrollout su GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-#### Crea progetto Paradiso {#create-the-maven-project}
+### Crea progetto Paradiso {#create-the-maven-project}
 
 La procedura seguente richiede l’aggiunta del profilo adobe-public al file delle impostazioni Maven.
 
@@ -288,7 +288,7 @@ La procedura seguente richiede l’aggiunta del profilo adobe-public al file del
 
 1. Avviate Eclipse e [importate il progetto](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse)Maven.
 
-#### Aggiungere dipendenze al file POM {#add-dependencies-to-the-pom-file}
+### Aggiungere dipendenze al file POM {#add-dependencies-to-the-pom-file}
 
 Aggiungete dipendenze in modo che il compilatore Eclipse possa fare riferimento alle classi utilizzate nel `LiveActionFactory` codice.
 
@@ -378,7 +378,7 @@ Aggiungete dipendenze in modo che il compilatore Eclipse possa fare riferimento 
     </dependency>
    ```
 
-#### Implementa LiveActionFactory {#implement-liveactionfactory}
+### Implementa LiveActionFactory {#implement-liveactionfactory}
 
 La `LiveActionFactory` classe seguente implementa un `LiveAction` che registra i messaggi sulle pagine di origine e di destinazione e copia la `cq:lastModifiedBy` proprietà dal nodo di origine al nodo di destinazione. Il nome dell&#39;azione live è `exampleLiveAction`.
 
@@ -544,7 +544,7 @@ La `LiveActionFactory` classe seguente implementa un `LiveAction` che registra i
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-#### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
+### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
 
 Create la configurazione di rollout MSM che utilizza l&#39; `LiveActionFactory` oggetto creato:
 
@@ -554,7 +554,7 @@ Create la configurazione di rollout MSM che utilizza l&#39; `LiveActionFactory` 
    * **Nome**: examplerolloutconfig
    * **cq:trigger**: `publish`
 
-#### Aggiungere l&#39;azione Live alla configurazione rollout di esempio {#add-the-live-action-to-the-example-rollout-configuration}
+### Aggiungere l&#39;azione Live alla configurazione rollout di esempio {#add-the-live-action-to-the-example-rollout-configuration}
 
 Configurate la configurazione di rollout creata nella procedura precedente in modo che utilizzi la `ExampleLiveActionFactory` classe.
 
@@ -575,7 +575,7 @@ Configurate la configurazione di rollout creata nella procedura precedente in mo
 
 1. Fate clic su **Salva tutto**.
 
-#### Creare la Live Copy {#create-the-live-copy}
+### Creare la Live Copy {#create-the-live-copy}
 
 [Create una copia](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) dal vivo della sezione inglese/prodotti del sito di riferimento We.Retail utilizzando la configurazione di rollout:
 
@@ -591,7 +591,7 @@ Attiva la pagina **Prodotti** (inglese) del ramo di origine e osserva i messaggi
 ```
 
 <!--
-### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
+## Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
@@ -611,7 +611,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-### Modifica dei nomi delle lingue e dei paesi predefiniti {#changing-language-names-and-default-countries}
+## Modifica dei nomi delle lingue e dei paesi predefiniti {#changing-language-names-and-default-countries}
 
 AEM utilizza un set predefinito di codici lingua e paese.
 
@@ -641,9 +641,7 @@ Per modificare le lingue:
 
    Denominate la nuova cartella `wcm`.
 
-1. Ripetete il passaggio precedente per creare la struttura delle `/apps/wcm/core` cartelle. Create un nodo di tipo `sling:Folder` in `core` denominato `resources`.
-
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+1. Ripetete il passaggio precedente per creare la struttura delle `/apps/wcm/core` cartelle. Create un nodo di tipo `sling:Folder` in `core` denominato `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
 
 1. Fare clic con il pulsante destro del mouse sul `/libs/wcm/core/resources/languages` nodo e scegliere **Copia**.
 1. Fare clic con il pulsante destro del mouse sulla `/apps/wcm/core/resources` cartella e scegliere **Incolla**. Modificate i nodi secondari come necessario.
@@ -653,7 +651,7 @@ Per modificare le lingue:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-### Configurazione di blocchi MSM sulle proprietà della pagina (interfaccia touch) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## Configurazione di blocchi MSM sulle proprietà della pagina (interfaccia touch) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 Durante la creazione di una proprietà pagina personalizzata, potrebbe essere necessario considerare se la nuova proprietà deve essere idonea per il rollout in qualsiasi Live Copy.
 
