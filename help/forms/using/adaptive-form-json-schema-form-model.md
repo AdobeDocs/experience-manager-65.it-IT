@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1469'
+ht-degree: 5%
 
 ---
 
@@ -23,13 +26,13 @@ Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo
 * [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
-## Utilizzo di uno schema JSON come modello di modulo {#using-a-json-schema-as-form-model}
+## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
 
-AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle specifiche [](https://json-schema.org/draft-04/schema)v4.
+I AEM Forms supportano la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle specifiche [](https://json-schema.org/draft-04/schema)v4.
 
 Le caratteristiche chiave dell&#39;utilizzo di uno schema JSON sono:
 
-* La struttura del JSON viene visualizzata come struttura nella scheda Content Finder nella modalità di creazione per un modulo adattivo. Puoi trascinare e aggiungere elementi dalla gerarchia JSON al modulo adattivo.
+* La struttura del JSON viene visualizzata come struttura ad albero nella scheda Content Finder nella modalità di creazione per un modulo adattivo. Puoi trascinare e aggiungere elementi dalla gerarchia JSON al modulo adattivo.
 * È possibile precompilare il modulo utilizzando JSON conforme allo schema associato.
 * Al momento dell&#39;invio, i dati immessi dall&#39;utente vengono inviati come JSON che si allinea allo schema associato.
 
@@ -37,7 +40,7 @@ Uno schema JSON è costituito da tipi di elementi semplici e complessi. Gli elem
 
 La mappatura degli elementi JSON con componenti per moduli adattivi è la seguente:
 
-```
+```json
 "birthDate": {
               "type": "string",
               "format": "date",
@@ -109,7 +112,7 @@ La mappatura degli elementi JSON con componenti per moduli adattivi è la seguen
 
 Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per mappare ciascun campo generato. In particolare:
 
-* La proprietà title funge da etichetta per i componenti modulo adattivi.
+* La proprietà title funge da etichetta per i componenti per modulo adattivo.
 * La proprietà description è impostata come descrizione lunga per un componente modulo adattivo.
 * La proprietà predefinita funge da valore iniziale di un campo modulo adattivo.
 * La proprietà maxLength è impostata come attributo maxlength del componente Campo di testo.
@@ -125,7 +128,7 @@ Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per ma
 
 Ecco un esempio di uno schema JSON.
 
-```
+```json
 {
  "$schema": "https://json-schema.org/draft-04/schema#",
  "definitions": {
@@ -307,7 +310,7 @@ Ecco un esempio di uno schema JSON.
 
 Le chiavi di definizione vengono utilizzate per identificare gli schemi riutilizzabili. Le definizioni dello schema riutilizzabili vengono utilizzate per creare i frammenti. È simile all&#39;identificazione di tipi complessi in XSD. Di seguito è riportato un esempio di schema JSON con definizioni:
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
 
@@ -332,13 +335,13 @@ Le chiavi di definizione vengono utilizzate per identificare gli schemi riutiliz
 }
 ```
 
-L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia un indirizzo di spedizione che un indirizzo di fatturazione. La struttura di entrambi gli indirizzi è la stessa (gli indirizzi hanno un indirizzo, una città e uno stato) quindi è una buona idea non duplicare gli indirizzi. Consente inoltre di aggiungere ed eliminare campi con facilità per qualsiasi modifica futura.
+L&#39;esempio precedente definisce un record cliente, in cui ogni cliente dispone sia di un indirizzo di spedizione che di un indirizzo di fatturazione. La struttura di entrambi gli indirizzi è la stessa (gli indirizzi hanno un indirizzo, una città e uno stato) quindi è una buona idea non duplicare gli indirizzi. Consente inoltre di aggiungere ed eliminare campi con facilità per qualsiasi modifica futura.
 
 ## Pre-configurazione dei campi nella definizione dello schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
 È possibile utilizzare la proprietà **aem:afProperties** per preconfigurare il campo Schema JSON in modo che venga associato a un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
 
-```
+```json
 {
     "properties": {
         "sizeInMB": {
@@ -356,13 +359,13 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
 }
 ```
 
-## Configurare script o espressioni per gli oggetti modulo {#configure-scripts-or-expressions-for-form-objects}
+## Configurare script o espressioni per gli oggetti modulo  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. È possibile preconfigurare gli oggetti modulo per [valutare un&#39;espressione](../../forms/using/adaptive-form-expressions.md) su un evento del modulo.
 
 Utilizzare la proprietà aem:afproperties per preconfigurare le espressioni di modulo adattivo o gli script per i componenti modulo adattivi. Ad esempio, quando si attiva l&#39;evento initialize, il codice seguente imposta il valore del campo telefonico e stampa un valore nel registro:
 
-```
+```json
 "telephone": {
   "type": "string",
   "pattern": "/\\d{10}/",
@@ -587,9 +590,9 @@ Alcuni esempi dell&#39;utilizzo degli eventi in un JSON nascondono un campo in c
 
 Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
 
-### Nascondere un campo all&#39;evento initialize {#hiding-a-field-on-initialize-event}
+### Nascondere un campo durante l&#39;evento initialize {#hiding-a-field-on-initialize-event}
 
-```
+```json
 "name": {
     "type": "string",
     "aem:afProperties": {
@@ -602,7 +605,7 @@ Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
 
 #### Configurare il valore di un altro campo in caso di evento commit del valore {#configure-value-of-another-field-on-value-commit-event}
 
-```
+```json
 "Income": {
     "type": "object",
     "properties": {
@@ -701,7 +704,7 @@ Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi a un pattern specificato.</p> <p>La proprietà pattern viene mappata sul pattern di convalida del componente modulo adattivo corrispondente.</p> </td>
+   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi al pattern specificato.</p> <p>La proprietà pattern viene mappata sul pattern di convalida del componente modulo adattivo corrispondente.</p> </td>
    <td>
     <ul>
      <li>Tutti i componenti di moduli adattivi mappati a uno schema XSD </li>
@@ -722,16 +725,16 @@ Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
  </tbody>
 </table>
 
-## costrutti non supportati {#non-supported-constructs}
+## costrutti non supportati  {#non-supported-constructs}
 
 I moduli adattivi non supportano i seguenti costrutti dello schema JSON:
 
 * Tipo Null
 * tipi di Unione, quali eventuali, e
-* Uno, AnyOf, AllOf e not
+* Uno, AnyOf, AllOf e NO
 * Sono supportati solo gli array omogenei. Pertanto, il vincolo elementi deve essere un oggetto e non un array.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Domande frequenti {#frequently-asked-questions}
 
 **Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
