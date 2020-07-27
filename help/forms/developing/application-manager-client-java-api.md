@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 0%
 
 ---
 
@@ -31,21 +34,21 @@ La seguente sezione Java API Quick Start(SOAP) è disponibile per il client Appl
 
 [Avvio rapido (modalità SOAP): Ottenimento dello stato delle applicazioni tramite Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Avvio rapido (modalità SOAP):anteprima dei moduli AEM e dell&#39;archivio delle applicazioni successivo tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Avvio rapido (modalità SOAP):visualizzazione in anteprima degli AEM Forms e dell&#39;archivio applicazioni successivo tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
 [Avvio rapido (modalità SOAP):eliminazione dell&#39;archivio dell&#39;applicazione AEM Forms tramite l&#39;API Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Avvio rapido nella programmazione con AEM Forms è basato su Forms Server implementato su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Avvio rapido in Programmazione con AEM Forms si basa sulla distribuzione di Forms Server su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Creazione di una versione dell&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene creata un&#39;applicazione utilizzando l&#39;API JAVA.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -144,7 +147,7 @@ public class CreateApplicationVersion_SOAP {
 
 L&#39;esempio di codice Java seguente esporta un&#39;applicazione utilizzando l&#39;API JAVA.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -251,7 +254,7 @@ L&#39;esempio di codice Java seguente importa un&#39;applicazione utilizzando l&
 >
 >L&#39;API Java importApplication() sostituisce le applicazioni esistenti con lo stesso nome con quelle più recenti. Per aggiornare un&#39;applicazione esistente, utilizzate API importApplication() al posto di API updateApplication().
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -334,7 +337,7 @@ public class ImportLCA_SOAP {
 
 L&#39;esempio di codice Java seguente ottiene un&#39;applicazione utilizzando l&#39;API Java.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -441,9 +444,9 @@ public class GetApplication_SOAP {
 
 L&#39;esempio di codice Java seguente ottiene le applicazioni utilizzando l&#39;API Java.
 
-**nota**: Ottenendo l&#39;API dell&#39;applicazione AEM Forms, getApplications(), vengono restituite solo le applicazioni distribuite.
+**nota**: Ottenendo l&#39;API dell&#39;applicazione AEM Forms, getApplications(), restituisce solo le applicazioni distribuite.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -538,7 +541,7 @@ public class GetApplications_SOAP {
 
 ## Avvio rapido (modalità SOAP): Ottenimento dello stato delle applicazioni tramite Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -643,9 +646,9 @@ public class GetApplicationStatus_SOAP {
 
 ## Avvio rapido (modalità SOAP):anteprima dell&#39;archivio delle applicazioni LiveCycle ES2 e versioni successive tramite l&#39;API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-Il seguente esempio di codice Java è destinato all’anteprima di AEM Forms e di un successivo archivio di applicazioni tramite l’API Java.
+Il seguente esempio di codice Java è relativo alla visualizzazione in anteprima di AEM Forms e successivo archivio delle applicazioni mediante l&#39;API Java.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -724,7 +727,7 @@ public class PreviewLCA_SOAP {
 
 Il seguente esempio di codice Java è relativo all&#39;eliminazione di un archivio applicazioni.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
