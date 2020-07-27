@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Per evitare problemi di accessibilità con gli assistenti vocali che non support
 
 Per utilizzare il nuovo formato in HTML5 Forms, contrassegnare la tabella come complessa. Per contrassegnare la tabella come complessa, aggiungere `extras` tag nell&#39;origine XML del sottomodulo tabella come segue:
 
-```
+```xml
 </extras>
  <text name="complexTable">1</text>
  </extras>
