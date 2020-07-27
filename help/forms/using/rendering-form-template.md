@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ Per un profilo personalizzato, l&#39;endpoint cambia di conseguenza. Ad esempio,
 
 Se il modello risiede nell’archivio AEM in un’applicazione denominata FormSubmission, l’URI è:
 
-```
+```http
 http://localhost:4502/content/xfaforms/profiles/default.html?
  contentRoot=crx:///content/dam/formsanddocuments/FormSubmission/1.0
  &template=sampleForm.xdp
