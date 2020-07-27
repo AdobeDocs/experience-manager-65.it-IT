@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +34,9 @@ Per il servizio Forms sono disponibili i seguenti Avvio rapido:
 
 [Avvio rapido (modalità SOAP): Rendering di un modulo HTML con una barra degli strumenti personalizzata tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Gestione dei moduli PDF inviati come XML mediante l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Avvio rapido (modalità SOAP): Gestione dei PDF forms inviati come XML tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Gestione dei moduli PDF inviati come PDF tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Avvio rapido (modalità SOAP): Gestione dei PDF forms inviati come PDF tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Avvio rapido (modalità SOAP): Gestione dei moduli HTML inviati come XML mediante l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
@@ -49,7 +52,7 @@ Per il servizio Forms sono disponibili i seguenti Avvio rapido:
 
 [Avvio rapido (modalità SOAP): Trasmissione di documenti al servizio Forms tramite l&#39;API Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-La logica dell&#39;applicazione che utilizza l&#39;API del servizio Forms è implementata come servlet Java. Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+La logica dell&#39;applicazione che utilizza l&#39;API del servizio Forms è implementata come servlet Java. Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
@@ -59,9 +62,9 @@ La logica dell&#39;applicazione che utilizza l&#39;API del servizio Forms è imp
 
 ## Avvio rapido (modalità SOAP): Rendering di un modulo PDF interattivo mediante l&#39;API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
-Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo PDF interattivo denominato *Loan.xdp* in un browser Web client. Al modulo viene allegato un file. Tenere presente che la struttura del modulo fa parte di un&#39;applicazione e a cui viene fatto riferimento utilizzando il valore URI della radice del contenuto `repository:///`. (Vedere [Rendering di moduli](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)PDF interattivi.)
+Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo PDF interattivo denominato *Loan.xdp* in un browser Web client. Al modulo viene allegato un file. Tenere presente che la struttura del modulo fa parte di un&#39;applicazione e a cui viene fatto riferimento utilizzando il valore URI della radice del contenuto `repository:///`. Consultate [Rendering di PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)interattivi.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -203,7 +206,7 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo denominato *Loan.xdp* sul client tramite l&#39;API Java del servizio Forms. Tenere presente che la struttura del modulo fa parte di un&#39;applicazione e a cui viene fatto riferimento utilizzando il valore URI della radice del contenuto `repository:///`. (Vedere [Rendering dei moduli in Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -336,7 +339,7 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di una Guida (obsoleta) denominata *TLALifeClaim.xdp* in un browser Web client.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -470,9 +473,9 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 ## Avvio rapido (modalità SOAP): Rendering di un modulo basato su frammenti utilizzando l&#39;API Java {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
 
-Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo basato su frammenti. Il nome della struttura del modulo è *PurchaseOrderDynamic.xdp* e si trova nell’archivio di AEM Forms (il file XDP è memorizzato in una cartella denominata FormsFolder situata nell’archivio). Anche i frammenti a cui fa riferimento il modulo POFragment devono trovarsi nell&#39;archivio. (Vedere [Rendering dei moduli basati su frammenti](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
+Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo basato su frammenti. Il nome della struttura del modulo è *PurchaseOrderDynamic.xdp* e si trova nell&#39;archivio dei AEM Forms (il file XDP è memorizzato in una cartella denominata FormsFolder situata nell&#39;archivio). Anche i frammenti a cui fa riferimento il modulo POFragment devono trovarsi nell&#39;archivio. (Vedere [Rendering dei moduli basati su frammenti](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -605,7 +608,7 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 L&#39;esempio di codice seguente esegue il rendering di un modulo abilitato per i diritti in un browser Web client. I diritti di utilizzo impostati in questo esempio di codice consentono a un utente di aggiungere commenti nel modulo e salvare i dati del modulo. (Vedere [Rendering di moduli](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms)con diritti di utilizzo.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -742,7 +745,7 @@ L&#39;esempio di codice seguente esegue il rendering di un modulo abilitato per 
 
 Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo HTML utilizzando l&#39;API Java del servizio Forms. Una barra degli strumenti viene aggiunta al modulo HTML e a due file allegati. Inoltre, il valore dell&#39;agente utente viene ottenuto dall&#39; `HttpServletRequest` oggetto. (Vedere [Rendering dei moduli come HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -903,7 +906,7 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo HTML utilizzando l&#39;API client del servizio Forms. Il nome del file CSS personalizzato a cui viene fatto riferimento è *custom.css*. (Vedere [Rendering di moduli HTML con file](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files)CSS personalizzati.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1056,9 +1059,9 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
 
 ## Avvio rapido (modalità SOAP): Rendering di un modulo HTML con una barra degli strumenti personalizzata tramite l&#39;API Java {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
-Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo HTML con una barra degli strumenti visualizzata in francese. Il percorso del file fscmenu.xml è C:\Adobe (questa cartella deve trovarsi sul server in cui è installato AEM Forms). Il valore delle impostazioni internazionali è `fr_FR`. La sezione che illustra come eseguire il rendering di un modulo HTML con una barra degli strumenti personalizzata mostra la sintassi del file fscmenu.xml utilizzato in questo avvio rapido. (Vedere [Rendering di moduli HTML con barre degli strumenti](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars)personalizzate.)
+Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di un modulo HTML con una barra degli strumenti visualizzata in francese. Il percorso del file fscmenu.xml è C:\Adobe (la cartella deve trovarsi sui AEM Forms del server in cui sono installati i file). Il valore delle impostazioni internazionali è `fr_FR`. La sezione che illustra come eseguire il rendering di un modulo HTML con una barra degli strumenti personalizzata mostra la sintassi del file fscmenu.xml utilizzato in questo avvio rapido. (Vedere [Rendering di moduli HTML con barre degli strumenti](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars)personalizzate.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1210,11 +1213,11 @@ Nell&#39;esempio di codice riportato di seguito viene eseguito il rendering di u
  
 ```
 
-## Avvio rapido (modalità SOAP): Gestione dei moduli PDF inviati come XML mediante l&#39;API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Avvio rapido (modalità SOAP): Gestione dei PDF forms inviati come XML tramite l&#39;API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
 Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato come XML. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=text/xml`. I valori corrispondenti ai campi denominati `mortgageAmount`, `lastName`e `firstName` vengono visualizzati. In questo avvio rapido viene utilizzato un metodo definito dall’utente `getNodeText` . Accetta un&#39; `org.w3c.dom.Document` istanza e un valore di stringa che specifica il nome del nodo. Questo metodo restituisce un valore di stringa che rappresenta il valore del nodo. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1379,11 +1382,11 @@ Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato 
 >
 >Se si utilizza un `com.adobe.idp.Document` oggetto e un oggetto `org.w3c.dom.Document` nella stessa applicazione, è necessario soddisfare tutti i requisiti `org.w3c.dom.Document`.
 
-## Avvio rapido (modalità SOAP): Gestione dei moduli PDF inviati come PDF tramite l&#39;API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Avvio rapido (modalità SOAP): Gestione dei PDF forms inviati come PDF tramite l&#39;API Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato come dati PDF. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=application/pdf`. Il modulo inviato viene salvato come file PDF denominato *tempPDF.pdf*. Inoltre, poiché il modulo viene inviato come PDF, è possibile recuperare gli allegati. Tutti gli allegati vengono salvati come file JPEG. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1533,7 +1536,7 @@ Nell&#39;esempio di codice riportato di seguito viene gestito un modulo inviato 
 
 Nell&#39;esempio di codice riportato di seguito viene gestito un modulo HTML inviato come dati XML. Il valore del tipo di contenuto passato al `processFormSubmission` metodo è `CONTENT_TYPE=application/x-www-form-urlencoded`.I valori che corrispondono ai campi denominati `mortgageAmount`, `lastName`e `firstName` vengono visualizzati. In questo avvio rapido viene utilizzato un metodo definito dall’utente `getNodeText` . Accetta un&#39; `org.w3c.dom.Document` istanza e un valore di stringa che specifica il nome del nodo. Questo metodo restituisce un valore di stringa che rappresenta il valore del nodo. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1693,7 +1696,7 @@ Nell&#39;esempio di codice riportato di seguito viene gestito un modulo HTML inv
 
 Nell&#39;esempio di codice Java riportato di seguito vengono gestiti i dati del modulo inviati come XML. I dati del modulo vengono recuperati dall&#39;invio del modulo tramite l&#39;API Forms e inviati al servizio Output. I dati del modulo e una struttura del modulo vengono utilizzati per creare un documento PDF non interattivo. Il documento PDF non interattivo è memorizzato in un nodo Content Services (obsoleto) denominato `/Company Home/Test Directory`. Il nome del modulo viene creato in modo dinamico. In altre parole, il nome e il cognome dell’utente vengono utilizzati per denominare il file PDF. L&#39;identificatore della risorsa del nuovo contenuto viene scritto nel browser Web del client. (Vedere [Creazione di documenti PDF con dati](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data)XML inviati).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2250,7 +2253,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 
 Nell&#39;esempio di codice seguente viene elaborato un modulo contenente uno script di calcolo e i risultati vengono riscritti nel browser Web del client. (Vedere [Calcolo dei dati](/help/forms/developing/rendering-forms.md#calculating-form-data)del modulo.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2368,7 +2371,7 @@ Nell&#39;esempio di codice seguente viene elaborato un modulo contenente uno scr
 
 L&#39;esempio di codice seguente ottimizza le prestazioni impostando le opzioni di caching, standalone e linearizzato. Un file linearizzato è ottimizzato per la distribuzione sul Web. (vedere [Ottimizzazione delle prestazioni del servizio](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service)Forms).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2496,7 +2499,7 @@ L&#39;esempio di codice seguente ottimizza le prestazioni impostando le opzioni 
 
 Il seguente avvio rapido Java esegue il rendering di un modulo PDF interattivo basato su una struttura del modulo denominata *Loan.xdp* per valore. Tenere presente che la struttura del modulo viene utilizzata per compilare un `com.adobe.idp.Document` oggetto denominato *inputXDP*. (Vedere [Rendering Dei Moduli Per Valore](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2623,7 +2626,7 @@ Il seguente avvio rapido Java esegue il rendering di un modulo PDF interattivo b
 
 Il seguente avvio rapido Java recupera il file Loan.xdp da Content Services (obsoleto). Questo file XDP si trova nello spazio `/Company Home/Form Designs`. Il file XDP viene restituito in un&#39; `com.adobe.idp.Document` istanza. L&#39; `com.adobe.idp.Document` istanza viene passata al servizio Forms. Il modulo interattivo viene scritto in un browser Web client. (vedere [Trasmissione di documenti al servizio](/help/forms/developing/passing-documents-forms-service.md)Forms).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
