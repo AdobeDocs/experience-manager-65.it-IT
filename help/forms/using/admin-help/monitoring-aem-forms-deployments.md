@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 0%
 
 ---
 
@@ -25,14 +28,14 @@ Per ulteriori informazioni sul monitoraggio delle distribuzioni di moduli AEM, c
 
 I moduli AEM forniscono due MBeans registrati che forniscono informazioni di navigazione e statistiche. Sono gli unici MBeans supportati per l&#39;integrazione e l&#39;ispezione:
 
-* **** ServiceStatistic: Questo MBean fornisce informazioni sul nome del servizio e sulla sua versione.
-* **** OperationStatistic: Questo MBean fornisce le statistiche di ogni servizio del server dei moduli. È qui che gli amministratori possono ottenere informazioni su un particolare servizio, ad esempio ora di chiamata, numero di errori e così via.
+* **ServiceStatistic:** Questo MBean fornisce informazioni sul nome del servizio e sulla sua versione.
+* **OperationStatistic:** Questo MBean fornisce le statistiche di ogni servizio del server dei moduli. È qui che gli amministratori possono ottenere informazioni su un particolare servizio, ad esempio ora di chiamata, numero di errori e così via.
 
-### Interfacce pubbliche ServiceStatisticM {#servicestatisticmbean-public-interfaces}
+### Interfacce pubbliche ServiceStatisticMava {#servicestatisticmbean-public-interfaces}
 
 È possibile accedere alle seguenti interfacce pubbliche di ServiceStatistic MBean a scopo di test:
 
-```as3
+```java
  public String getServiceId();
  public int getMajorVersion();
  public int getMinorVersion();
@@ -42,7 +45,7 @@ I moduli AEM forniscono due MBeans registrati che forniscono informazioni di nav
 
 È possibile accedere a queste interfacce pubbliche di OperationStatistic MBean a scopo di test:
 
-```as3
+```java
  // InvocationCount: The number of times the method is invoked.
  public long getInvocationCount();
  // InvocationStartTime: The time at which the method started to execute.
@@ -72,33 +75,33 @@ Utilizzando una console JConsole (JMX console), sono disponibili le statistiche 
 
 **MBean tree**
 
-**** Nome dominio Adobe: Dipende da Application Server. Se Application Server non definisce il dominio, il valore predefinito è adobe.com.
+**Nome dominio Adobe:** Dipende da Application Server. Se Application Server non definisce il dominio, il valore predefinito è adobe.com.
 
-**** ServiceType: AdobeService è il nome utilizzato per elencare tutti i servizi.
+**ServiceType:** AdobeService è il nome utilizzato per elencare tutti i servizi.
 
-**** AdobeServiceName: Nome servizio o ID servizio.
+**AdobeServiceName:** Nome servizio o ID servizio.
 
-**** Versione: Versione del servizio.
+**Versione:** Versione del servizio.
 
 **Statistiche operazione**
 
-**** Tempo di richiamo: Tempo necessario per l&#39;esecuzione del metodo. Ciò non include l&#39;ora in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
+**Tempo di richiamo:** Tempo necessario per l&#39;esecuzione del metodo. Ciò non include l&#39;ora in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
 
-**** Numero di vocazioni: Il numero di volte in cui il servizio viene richiamato.
+**Numero di vocazioni:** Il numero di volte in cui il servizio viene richiamato.
 
-**** Tempo medio di chiamata: Tempo medio di tutte le chiamate eseguite dall&#39;avvio del server.
+**Tempo medio di chiamata:** Tempo medio di tutte le chiamate eseguite dall&#39;avvio del server.
 
-**** Tempo massimo di chiamata: Durata della chiamata più lunga eseguita dall&#39;avvio del server.
+**Tempo massimo di chiamata:** Durata della chiamata più lunga eseguita dall&#39;avvio del server.
 
-**** Tempo minimo di chiamata: Durata della chiamata più breve eseguita dall&#39;avvio del server.
+**Tempo minimo di chiamata:** Durata della chiamata più breve eseguita dall&#39;avvio del server.
 
-**** Conteggio eccezioni: Numero di chiamate che hanno generato errori.
+**Conteggio eccezioni:** Numero di chiamate che hanno generato errori.
 
-**** Messaggio eccezione: Messaggio di errore dell&#39;ultima eccezione che si è verificata.
+**Messaggio eccezione:** Messaggio di errore dell&#39;ultima eccezione che si è verificata.
 
-**** Data ultima campionamento: Data dell’ultima chiamata.
+**Data ultima campionamento:** Data dell’ultima chiamata.
 
-**** Unità di tempo: Il valore predefinito è millisecondi.
+**Unità di tempo:** Il valore predefinito è millisecondi.
 
 Per abilitare il monitoraggio JMX, i server applicazione in genere necessitano di una certa configurazione. Per informazioni specifiche, consultate la documentazione del server applicazione.
 
@@ -111,7 +114,7 @@ Per visualizzare gli MBeans da JConsole, configurare i parametri di avvio JVM de
 1. Modificate il file run.bat che si trova in InstallJBoss/bin.
 1. Trovate la riga JAVA_OPTS e aggiungete quanto segue:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -120,7 +123,7 @@ Per visualizzare gli MBeans da JConsole, configurare i parametri di avvio JVM de
 1. Modificate il file startWebLogic.bat che si trova in `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Trovate la riga JAVA_OPTS e aggiungete quanto segue:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -139,13 +142,13 @@ Per visualizzare gli MBeans da JConsole, configurare i parametri di avvio JVM de
 
 1. Nella console di amministrazione (server applicazioni > server1 > Definizione processo > JVM), aggiungere la seguente riga al campo relativo all&#39;argomento JVM generico:
 
-   ```as3
+   ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
 1. Aggiungete o rimuovete il commento dalle seguenti tre righe nel file /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (o &lt;JRE_Siti Web>/ lib/management/management.properties):
 
-   ```as3
+   ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect
     com.sun.management.jmxremote.authenticate=false
     com.sun.management.jmxremote.ssl=false
