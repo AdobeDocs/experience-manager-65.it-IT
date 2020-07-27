@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -28,6 +31,7 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
    * empid
    * reason
    * duration
+
    >[!NOTE]
    >
    >Questo renderer è il modello di pagina di riepilogo.
@@ -36,7 +40,7 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
 
    `apps/Employees/PtoApplication/html.esp`
 
-   ```
+   ```html
    <html>
      <body>
        <table>
@@ -82,6 +86,6 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Nell’area di lavoro AEM Forms, quando si apre un’attività, l’URL di riepilogo accede al nodo CRX e il renderer HTML visualizza il riepilogo.
+Nell’area di lavoro AEM Forms, quando si apre un’attività, l’URL di riepilogo accede al nodo CRX, mentre il renderer HTML visualizza il riepilogo.
 
 Il layout di riepilogo può essere modificato senza modificare il processo. Il renderer HTML visualizza il riepilogo in modo appropriato.
