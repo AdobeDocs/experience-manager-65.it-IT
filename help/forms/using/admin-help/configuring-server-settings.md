@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2657'
+ht-degree: 0%
 
 ---
 
@@ -57,13 +60,13 @@ Se i vostri processi sono progettati e implementati senza richiedere e-mail, non
 >
 >Flex Workspace è obsoleto per la versione dei moduli AEM.
 
-Per impostazione predefinita, le e-mail inviate dai moduli AEM contengono collegamenti a (obsoleto per i moduli AEM su JEE) Flex Workspace. Puoi configurare i moduli AEM per l’invio di e-mail con collegamenti ad AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di AEM Forms Workspace su Flex Workspace (obsoleto per i moduli AEM su JEE), consulta [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
+Per impostazione predefinita, le e-mail inviate dai moduli AEM contengono collegamenti a (obsoleto per i moduli AEM su JEE) Flex Workspace. Puoi configurare i moduli AEM per l’invio di e-mail con collegamenti a AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di AEM Forms Workspace (obsoleto per i moduli AEM su JEE) Flex Workspace, consulta [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
 
 1. Nella console di amministrazione, fare clic su Home > Servizi > Flusso di lavoro moduli > Impostazioni server > Notifiche attività.
 1. Aprire il modello di assegnazione delle attività.
 1. Impostate il modello nelle notifiche attività su quanto segue: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
-   ```as3
+   ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
    ```
 
@@ -124,9 +127,9 @@ Potete inviare notifiche di promemoria all’utente o al gruppo assegnato quando
 1. Nell’elenco Codifica e-mail, selezionate il formato di codifica da usare per il messaggio e-mail. Il valore predefinito è UTF-8, che verrà utilizzato dalla maggior parte degli utenti al di fuori del Giappone. Gli utenti in Giappone possono selezionare ISO2022-JP.
 1. Fate clic su Salva.
 
-### Nascondi il tag NON ELIMINARE per tutte le e-mail {#hide-the-do-not-delete-tag-for-all-emails}
+### Nascondere il tag NON DELETE per tutte le e-mail {#hide-the-do-not-delete-tag-for-all-emails}
 
-Puoi configurare l’e-mail in modo che venga nascosta al tag di tracciamento NON ELIMINARE in tutte le e-mail inviate in un processo incentrato sull’utente. Per informazioni dettagliate, consultate [Come nascondere il tag &#39;DO-NOT-DELETE&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+Puoi configurare l’e-mail in modo che venga nascosta al tag di tracciamento NON DELETE in tutte le e-mail inviate in un processo incentrato sull’utente. Per informazioni dettagliate, consultate [Come nascondere il tag &#39;DO-NOT-DELETE&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
 ## Configurazione delle notifiche per gli amministratori {#configuring-notifications-for-administrators}
 
@@ -183,7 +186,7 @@ Solo per le notifiche delle attività, il flusso di lavoro Forms include due con
 
    `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
-* ClaimTask è disponibile per i tipi di notifica Gruppo - Promemoria e Gruppo - Assegnazione task. Questo URL fornisce un collegamento alla pagina dei dettagli dell’attività in Workspace, in cui l’utente può reclamare o reclamare e aprire l’elemento di lavoro. Quando si trascina l&#39;URL ClaimTask nella casella Modello di notifica, l&#39;URL è nel seguente formato:
+* ClaimTask è disponibile per i tipi di notifica Gruppo - Promemoria e Gruppo - Assegnazione task. Questo URL fornisce un collegamento alla pagina dei dettagli dell’attività in Workspace, in cui l’utente può reclamare o reclamare e aprire l’elemento di lavoro. Quando si trascina l&#39;URL ClaimTask nella casella Modello di notifica, l&#39;URL è nel formato seguente:
 
    `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
