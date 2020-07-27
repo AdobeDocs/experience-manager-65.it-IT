@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -43,17 +46,17 @@ Java API Quick Start(SOAP) è disponibile per il servizio Rights Management:
 
 [Avvio rapido (modalità SOAP): Rimozione di un criterio da un documento Word tramite l&#39;API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->La sezione Avvio rapido nella programmazione con AEM Forms è basata sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>La sezione Avvio rapido, che si trova nella sezione Programmazione con AEM Forms, si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Creazione di un criterio tramite l&#39;API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio denominato *Consenti copia*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Questo set di criteri esiste per impostazione predefinita. Consultate [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -182,7 +185,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo crite
 
 L&#39;esempio di codice Java seguente modifica un criterio denominato *Consenti copia* impostando il periodo di tempo consentito offline su 40 giorni. (Vedere [Modifica dei criteri](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -283,7 +286,7 @@ L&#39;esempio di codice Java seguente modifica un criterio denominato *Consenti 
 
 Nell&#39;esempio di codice Java riportato di seguito viene eliminato un criterio denominato *Consenti copia*. (Vedere [Eliminazione dei criteri](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -375,7 +378,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eliminato un criterio
 
 Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento PDF denominato *Loan.pdf*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file PDF denominato *PolicyProtectedLoanDoc.pdf. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -481,7 +484,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
 
 Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento PDF denominato *PolicyProtectedLoanDoc.pdf*. Il documento PDF non protetto viene salvato come *unProtectedLoan.pdf*. (Vedere [Rimozione di criteri dai documenti](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -588,7 +591,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento PD
 
 Il seguente esempio di codice Java revoca un documento protetto tramite criterio denominato *PolicyProtectedLoanDoc.pdf*. Un documento PDF rivisto si trova nel seguente percorso URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Vedere [Revoca dell&#39;accesso ai documenti](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -702,7 +705,7 @@ Il seguente esempio di codice Java revoca un documento protetto tramite criterio
 
 Nell&#39;esempio di codice Java riportato di seguito viene analizzato un documento PDF protetto tramite criterio denominato *PolicyProtectedLoanDoc.* pdf. (Vedere [Ispezione dei documenti](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protetti tramite criterio.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -820,7 +823,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene analizzato un documen
 
 Nell&#39;esempio di codice Java riportato di seguito viene ripristinato l&#39;accesso a un documento PDF revocato denominato *PolicyProtectedLoanDoc.pdf*. (Vedere [Ripristino dell&#39;accesso ai documenti](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)revocati.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -926,7 +929,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ripristinato l&#39;ac
 
 Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana PDF denominata &#39;Esempio di filigrana PDF&#39;. Questa filigrana contiene un singolo elemento (consultate [Creazione di filigrane](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1059,7 +1062,7 @@ public class PDFWatermarksSOAPMode {
 
 Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana di testo denominata Filigrana di testo *di esempio*. Questa filigrana contiene un singolo elemento.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1208,7 +1211,7 @@ public class TextWatermarks {
 
 L&#39;esempio di codice Java seguente modifica una filigrana denominata &#39;Esempio di filigrana di testo&#39; e imposta l&#39;opacità del primo elemento su 100.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1320,7 +1323,7 @@ public class ModifyWatermarks {
 
 Nell&#39;esempio di codice Java riportato di seguito viene modificata una filigrana denominata *Confidential* modificando il valore dell&#39; `opacity` attributo su 80.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1418,7 +1421,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene modificata una filigr
 
 Nell&#39;esempio di codice Java riportato di seguito viene ricercato l&#39;evento create policy.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1531,7 +1534,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ricercato l&#39;event
 
 Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento Word denominato *Loan.doc*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file DOC denominato *PolicyProtectedLoanDoc.doc. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1646,7 +1649,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
 
 Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento di Word denominato *PolicyProtectedLoanDoc.doc*. Il documento Word non protetto viene salvato come *unProtectedLoan.doc*. (Vedere [Rimozione di criteri dai documenti](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)di Word.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1754,7 +1757,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento di
 
 Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio astratto denominato AllowCopy. Il set di criteri a cui viene aggiunto il criterio è denominato Set di criteri globale. Questo set di criteri esiste per impostazione predefinita. Consultate Creazione di criteri.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1871,7 +1874,7 @@ public class CreateAbstractPolicySoap {
 
 L&#39;esempio di codice Java seguente modifica un criterio astratto denominato AllowCopy. Il set di criteri in cui viene modificato il criterio è denominato Set di criteri globali. Questo set di criteri esiste per impostazione predefinita. Consultate Creazione di criteri.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1970,7 +1973,7 @@ public class ModifyingAbstractPolicySoap {
 
 Nell&#39;esempio di codice Java riportato di seguito viene eliminato un criterio astratto denominato AllowCopy. Il set di criteri da cui viene eliminato il criterio è denominato Set di criteri globale. Questo set di criteri esiste per impostazione predefinita. Consultate Creazione di criteri.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2057,7 +2060,7 @@ public class DeleteAbstractPolicySoap {
 
 L&#39;esempio di codice Java riportato di seguito illustra il metodo per proteggere un documento nel flusso di lavoro istruzioni per un utente esistente.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2168,7 +2171,7 @@ Il seguente esempio di codice Java illustra come proteggere un documento in Flus
 * Vengono creati nuovi utenti, licenze e criteri.
 * L&#39;utente è associato alla Licenza e ai Criteri e il documento è protetto.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
