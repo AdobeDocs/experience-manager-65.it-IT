@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Per il servizio Gestione documenti (obsoleto) sono disponibili i seguenti Avvio 
 
 [Avvio rapido (modalità SOAP): Impostazione delle autorizzazioni di Content Services tramite l&#39;API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 
@@ -49,7 +52,7 @@ Gli avvii rapidi disponibili nella programmazione con i moduli AEM si basano sul
 
 Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo spazio denominato *Test Directory* che si trova nella home dell&#39;azienda. Il valore di identificazione del nuovo spazio viene scritto nella console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -145,7 +148,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo spazi
 
 Nell&#39;esempio di codice Java riportato di seguito viene eliminato uno spazio denominato /Company Home/Test Directory.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -245,7 +248,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eliminato uno spazio 
 
 Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un file PDF denominato *MortgageForm.pdf* a una cartella denominata /Company Home/Test Directory. Gli attributi creatore e descrizione sono impostati. Il valore di identificazione del nuovo contenuto viene scritto nella console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -368,7 +371,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un file PDF 
 
 Nell&#39;esempio di codice Java riportato di seguito viene recuperato un file PDF denominato *MortgageForm.pdf* da /Company Home. Il file PDF viene salvato nel file system locale e denominato *UpdatedMortgageForm.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -474,7 +477,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene recuperato un file PD
 
 Nell&#39;esempio di codice Java riportato di seguito viene spostato un file PDF denominato *MortgageForm.pdf* da /Company Home/Test Directory a /Company Home. Il valore di identificazione del contenuto spostato viene scritto nella console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -575,7 +578,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene spostato un file PDF 
 
 Nell&#39;esempio di codice Java riportato di seguito è riportato il contenuto che si trova in /Company Home. Vengono visualizzati il tipo di nodo e il nome del nodo.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -688,7 +691,7 @@ Nell&#39;esempio di codice Java riportato di seguito è riportato il contenuto c
 
 Il seguente codice Java cerca in /Company Home un documento contenente il testo MortgageForm. Vengono inoltre effettuate ricerche nelle sottocartelle.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -798,7 +801,7 @@ Il seguente codice Java cerca in /Company Home un documento contenente il testo 
 
 Nell&#39;esempio di codice Java riportato di seguito viene impostata un&#39;autorizzazione per un utente denominato tony blue. Il dominio specificato è il dominio predefinito. L&#39;autorizzazione Consumer viene specificata e il nodo è `/Company Home/Test Directory`.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -908,7 +911,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene impostata un&#39;auto
 
 Il seguente codice Java crea un&#39;associazione tra un file di dati XML e un modulo PDF. Questo tipo di associazione è denominato LinkedBy.Al documento PDF deve essere applicato il tipo di associazione con collegamento di aspetto.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
