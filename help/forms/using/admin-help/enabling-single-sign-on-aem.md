@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1538'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +36,11 @@ Potete utilizzare la pagina Configurazione portale per abilitare SSO (Single Sig
 1. Selezionare Sì per abilitare SSO. Se si seleziona No, le impostazioni rimanenti sulla pagina non sono disponibili.
 1. Impostate le altre opzioni sulla pagina come desiderate e fate clic su OK:
 
-   * **** Tipo SSO: (Obbligatorio) Selezionate Intestazione HTTP per abilitare SSO utilizzando le intestazioni HTTP.
-   * **** Intestazione HTTP per l’identificatore dell’utente: (Obbligatorio) Nome dell’intestazione il cui valore contiene l’identificatore univoco dell’utente connesso. Gestione utente utilizza questo valore per trovare l&#39;utente nel database Gestione utente. Il valore ottenuto da questa intestazione deve corrispondere all’identificatore univoco dell’utente sincronizzato dalla directory LDAP. Consultate Impostazioni [](/help/forms/using/admin-help/adding-configuring-users.md#user-settings)utente.
-   * **** Il valore dell’identificatore viene mappato sull’ID utente dell’utente invece dell’identificatore univoco dell’utente: Mappa il valore dell&#39;identificatore univoco dell&#39;utente all&#39;ID utente. Selezionare questa opzione se l&#39;identificatore univoco dell&#39;utente è un valore binario che non può essere facilmente propagato attraverso le intestazioni HTTP (ad esempio, objectGUID se si sincronizzano gli utenti da Active Directory).
-   * **** Intestazione HTTP per il dominio: (Non obbligatorio) Nome dell’intestazione il cui valore contiene il nome del dominio. Utilizzate questa impostazione solo se nessuna singola intestazione HTTP identifica in modo univoco l&#39;utente. Utilizzare questa impostazione per i casi in cui esistono più domini e l&#39;identificatore univoco è univoco solo all&#39;interno di un dominio. In questo caso, specificate il nome dell&#39;intestazione in questa casella di testo e specificate la mappatura del dominio per i più domini nella casella Mappatura dominio. (Vedere [Modifica e conversione di domini](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)esistenti.)
-   * **** Mappatura dominio: (Obbligatorio) Specifica la mappatura per più domini nel formato *header value=domain name*.
+   * **Tipo SSO:** (Obbligatorio) Selezionate Intestazione HTTP per abilitare SSO utilizzando le intestazioni HTTP.
+   * **Intestazione HTTP per l’identificatore dell’utente:** (Obbligatorio) Nome dell’intestazione il cui valore contiene l’identificatore univoco dell’utente connesso. Gestione utente utilizza questo valore per trovare l&#39;utente nel database Gestione utente. Il valore ottenuto da questa intestazione deve corrispondere all’identificatore univoco dell’utente sincronizzato dalla directory LDAP. Consultate Impostazioni [](/help/forms/using/admin-help/adding-configuring-users.md#user-settings)utente.
+   * **Il valore dell’identificatore viene mappato sull’ID utente dell’utente invece dell’identificatore univoco dell’utente:** Mappa il valore dell&#39;identificatore univoco dell&#39;utente all&#39;ID utente. Selezionare questa opzione se l&#39;identificatore univoco dell&#39;utente è un valore binario che non può essere facilmente propagato attraverso le intestazioni HTTP (ad esempio, objectGUID se si sincronizzano gli utenti da Active Directory).
+   * **Intestazione HTTP per il dominio:** (Non obbligatorio) Nome dell’intestazione il cui valore contiene il nome del dominio. Utilizzate questa impostazione solo se nessuna singola intestazione HTTP identifica in modo univoco l&#39;utente. Utilizzare questa impostazione per i casi in cui esistono più domini e l&#39;identificatore univoco è univoco solo all&#39;interno di un dominio. In questo caso, specificate il nome dell&#39;intestazione in questa casella di testo e specificate la mappatura del dominio per i più domini nella casella Mappatura dominio. (Vedere [Modifica e conversione di domini](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)esistenti.)
+   * **Mappatura del dominio:** (Obbligatorio) Specifica la mappatura per più domini nel formato *header value=domain name*.
 
       Ad esempio, si consideri una situazione in cui l’intestazione HTTP di un dominio è domainName e può avere valori di domain1, domain2 o domain3. In questo caso, utilizzate la mappatura del dominio per mappare i valori domainName ai nomi del dominio Gestione utente. Ogni mappatura deve essere su una riga diversa:
 
@@ -51,7 +54,7 @@ Potete utilizzare la pagina Configurazione portale per abilitare SSO (Single Sig
 
 Per i passaggi per configurare i referenti consentiti, consulta [Configurare i referenti](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers)consentiti.
 
-## Abilita SSO tramite SPNEGO {#enable-sso-using-spnego}
+## Abilita SSO con SPNEGO {#enable-sso-using-spnego}
 
 È possibile utilizzare il meccanismo di negoziazione GSSAPI semplice e protetto (SPNEGO) per abilitare SSO (Single Sign-On) quando si utilizza Active Directory come server LDAP in un ambiente Windows. Quando SSO è abilitato, le pagine di accesso utente dei moduli AEM non sono obbligatorie e non vengono visualizzate.
 
@@ -59,31 +62,31 @@ Per i passaggi per configurare i referenti consentiti, consulta [Configurare i r
 
 >[!NOTE]
 >
->AEM Forms su JEE non supporta la configurazione di SSO con Kerberos/SPNEGO in ambienti con più domini figlio.
+>I AEM Forms su JEE non supportano la configurazione di SSO tramite Kerberos/SPNEGO in ambienti con più domini figlio.
 
 1. Decidete quale dominio utilizzare per abilitare SSO. Il server moduli AEM e gli utenti devono appartenere allo stesso dominio Windows o allo stesso dominio trusted.
 1. In Active Directory, creare un utente che rappresenti il server moduli AEM. Consultate [Creare un account](enabling-single-sign-on-aem.md#create-a-user-account)utente. Se state configurando più di un dominio per utilizzare SPNEGO, accertatevi che le password per ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
 1. Mappare il nome dell&#39;entità del servizio. (vedere [Mappare un nome entità servizio (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
-1. Configurare il controller di dominio. (vedere [Impedire errori](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)di controllo dell&#39;integrità Kerberos).
+1. Configurare il controller di dominio. (vedere [Impedire gli errori](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)di controllo dell&#39;integrità Kerberos).
 1. Aggiungi o modifica un dominio enterprise come descritto in [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains) o [Modifica e conversione di domini](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)esistenti. Quando create o modificate il dominio Enterprise, eseguite le seguenti operazioni:
 
    * Aggiungere o modificare una directory che contiene le informazioni di Active Directory.
    * Aggiungete LDAP come provider di autenticazione.
    * Aggiungi Kerberos come provider di autenticazione. Fornire le seguenti informazioni nella pagina Nuova autenticazione o Modifica autenticazione per Kerberos:
 
-      * **** Provider autenticazione: Kerberos
-      * **** IP DNS: L&#39;indirizzo IP DNS del server in cui sono in esecuzione i moduli AEM. È possibile determinare questo indirizzo IP eseguendo `ipconfig/all` la riga di comando.
-      * **** Host KDC: Nome host completo o indirizzo IP del server Active Directory utilizzato per l&#39;autenticazione
-      * **** Utente del servizio: Il nome dell&#39;entità del servizio (SPN) passato allo strumento KtPass. Nell’esempio precedente, l’utente del servizio è `HTTP/lcserver.um.lc.com`.
-      * **** Service Realm: Nome di dominio per Active Directory. Nell&#39;esempio precedente, il nome del dominio è `UM.LC.COM.`
-      * **** Password del servizio: Password dell’utente del servizio. Nell’esempio precedente, la password del servizio è `password`.
-      * **** Abilita SPNEGO: Abilita l&#39;utilizzo di SPNEGO per Single Sign-On (SSO). Selezionate questa opzione.
+      * **Provider autenticazione:** Kerberos
+      * **IP DNS:** L&#39;indirizzo IP DNS del server in cui sono in esecuzione i moduli AEM. È possibile determinare questo indirizzo IP eseguendo `ipconfig/all` la riga di comando.
+      * **Host KDC:** Nome host completo o indirizzo IP del server Active Directory utilizzato per l&#39;autenticazione
+      * **Utente del servizio:** Il nome dell&#39;entità del servizio (SPN) passato allo strumento KtPass. Nell’esempio precedente, l’utente del servizio è `HTTP/lcserver.um.lc.com`.
+      * **Service Realm:** Nome di dominio per Active Directory. Nell&#39;esempio precedente, il nome del dominio è `UM.LC.COM.`
+      * **Password del servizio:** Password dell’utente del servizio. Nell’esempio precedente, la password del servizio è `password`.
+      * **Abilita SPNEGO:** Abilita l&#39;utilizzo di SPNEGO per Single Sign-On (SSO). Selezionate questa opzione.
 
 1. Configurare le impostazioni del browser del client SPNEGO. Consultate [Configurazione delle impostazioni](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings)del browser client SPNEGO.
 
 ### Creazione di un account utente {#create-a-user-account}
 
-1. In SPNEGO, registrare un servizio come utente in Active Directory nel controller di dominio per rappresentare i moduli AEM. Nel controller di dominio, scegliere Start Menu > Strumenti di amministrazione > Utenti e computer di Active Directory. Se Strumenti di amministrazione non si trova nel menu Start, utilizzare il Pannello di controllo.
+1. In SPNEGO, registrare un servizio come utente in Active Directory nel controller di dominio per rappresentare i moduli AEM. Nel controller di dominio, scegliere Start Menu > Strumenti di amministrazione > Utenti e computer di Active Directory. Se Strumenti di amministrazione non si trova nel menu Start, usate l’Pannello di controllo Campaign.
 1. Fate clic sulla cartella Utenti per visualizzare un elenco di utenti.
 1. Fate clic con il pulsante destro del mouse sulla cartella utente e selezionate Nuovo > Utente.
 1. Digitate il nome/cognome e il nome di accesso dell’utente, quindi fate clic su Avanti. Ad esempio, impostare i seguenti valori:
@@ -107,34 +110,35 @@ Per i passaggi per configurare i referenti consentiti, consulta [Configurare i r
 
    I valori che dovete fornire sono descritti di seguito:
 
-   **** host: Nome completo del server dei moduli o qualsiasi URL univoco. In questo esempio, è impostata su lcserver.um.lc.com.
+   **host:** Nome completo del server dei moduli o qualsiasi URL univoco. In questo esempio, è impostata su lcserver.um.lc.com.
 
-   **** REALM: Area di autenticazione di Active Directory per il controller di dominio. In questo esempio, è impostata su UM.LC.COM. Assicurarsi di immettere l&#39;area di autenticazione in caratteri maiuscoli. Per determinare l&#39;area di autenticazione per Windows 2003, completare i seguenti passaggi:
+   **REALM:** Area di autenticazione di Active Directory per il controller di dominio. In questo esempio, è impostata su UM.LC.COM. Assicurarsi di immettere l&#39;area di autenticazione in caratteri maiuscoli. Per determinare l&#39;area di autenticazione per Windows 2003, completare i seguenti passaggi:
 
    * Fate clic con il pulsante destro del mouse su Risorse del computer e selezionate Proprietà
    * Fare clic sulla scheda Nome computer. Il valore Nome dominio è il nome dell&#39;area di autenticazione.
-   **** utente: Nome di accesso dell’account utente creato nell’attività precedente. In questo esempio, è impostato su spnegozidemo.
+
+   **utente:** Nome di accesso dell’account utente creato nell’attività precedente. In questo esempio, è impostato su spnegozidemo.
 
 Se si verifica questo errore:
 
-```as3
+```java
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 provate a specificare l’utente come spnegodemo@um.lc.com:
 
-```as3
+```java
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
 ### Impedisci errori di controllo dell&#39;integrità Kerberos {#prevent-kerberos-integrity-check-failures}
 
-1. Nel controller di dominio, scegliere Start Menu > Strumenti di amministrazione > Utenti e computer di Active Directory. Se Strumenti di amministrazione non si trova nel menu Start, utilizzare il Pannello di controllo.
+1. Nel controller di dominio, scegliere Start Menu > Strumenti di amministrazione > Utenti e computer di Active Directory. Se Strumenti di amministrazione non si trova nel menu Start, usate l’Pannello di controllo Campaign.
 1. Fate clic sulla cartella Utenti per visualizzare un elenco di utenti.
 1. Fare clic con il pulsante destro del mouse sull&#39;account utente creato in un&#39;attività precedente. In questo esempio, l&#39;account utente è `spnegodemo`.
 1. Fate clic su Reimposta password.
-1. Digitare e confermare la password digitata in precedenza. In questo esempio, è impostato su `password`.
+1. Digitare e confermare la stessa password digitata in precedenza. In questo esempio, è impostato su `password`.
 1. Deselezionate Modifica password al successivo accesso, quindi fate clic su OK.
 
 ### Configurazione delle impostazioni del browser del client SPNEGO {#configuring-spnego-client-browser-settings}
