@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ L’articolo fornisce i passaggi necessari per personalizzare i messaggi di erro
 * visualizzare messaggi di errore per più campi in un dato momento.
 * visualizza l&#39;errore indipendentemente dal fatto che sia selezionato o meno un campo.
 
-## Personalizzazione dei messaggi di errore {#customizing-error-messages-nbsp}
+## Personalizzazione dei messaggi di errore  {#customizing-error-messages-nbsp}
 
 Prima di personalizzare i messaggi di errore, scaricate ed estraete il pacchetto allegato (CustomErrorManager-1.0-SNAPSHOT.zip).
 
@@ -31,11 +34,11 @@ Dopo aver estratto il pacchetto, aprite la cartella CustomErrorManager-1.0-SNAPS
 
 [Ottieni file](assets/customerrormanager-1.0-snapshot.zip)
 
-### Personalizzazione della posizione dei messaggi di errore {#customizing-the-position-of-error-messages-nbsp}
+### Personalizzazione della posizione dei messaggi di errore  {#customizing-the-position-of-error-messages-nbsp}
 
-Per personalizzare la posizione del messaggio di errore, aggiungere il tag &lt;div> per ciascun campo di errore e di avviso, posizionare il tag &lt;div> a sinistra o a destra e applicare gli stili css al tag &lt;div>. Per i passaggi dettagliati, consulta la procedura seguente:
+Per personalizzare la posizione del messaggio di errore, aggiungere il tag &lt;div> per ciascun campo di errore e di avviso, posizionare il tag &lt;div> a sinistra o a destra e applicare gli stili css al tag &lt;div>. Per i passaggi dettagliati, consulta la procedura indicata di seguito:
 
-1. Individuate la `CustomErrorManager-1.0-SNAPSHOT``etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` cartella e apritela.
+1. Andate alla `CustomErrorManager-1.0-SNAPSHOT`cartella e aprite la `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` cartella.
 1. Open the `customErrorManager.js` file for editing. La `markError` funzione nel file accetta i seguenti parametri:
 
    |  |  |
@@ -46,7 +49,7 @@ Per personalizzare la posizione del messaggio di errore, aggiungere il tag &lt;d
 
 1. All&#39;esterno dell&#39;implementazione, a destra del campo viene visualizzato un messaggio di errore. Per visualizzare i messaggi di errore nella parte superiore, utilizzate il seguente codice.
 
-   ```
+   ```javascript
    markError: function (jqWidget, msg, type) {
                var element = jqWidget.element,                                //Gives the div containing widget
                    pos = $(element).offset(),                          //Calculates the position of the div in the view port
@@ -77,7 +80,7 @@ Per personalizzare la posizione del messaggio di errore, aggiungere il tag &lt;d
 1. Andate alla `CustomErrorManager-1.0-SNAPSHOT` cartella e create un archivio delle cartelle jcr_root e META-INF. Rinominare l&#39;archivio in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilizzate il gestore pacchetti per caricare e installare il pacchetto.
 
-## Visualizza messaggi di errore per più campi {#display-error-messages-for-multiple-fields-nbsp}
+## Visualizza messaggi di errore per più campi  {#display-error-messages-for-multiple-fields-nbsp}
 
 Usate il pacchetto allegato per visualizzare simultaneamente messaggi di errore per tutti i campi. Per visualizzare un singolo messaggio di errore, utilizzare il profilo predefinito.
 
@@ -89,7 +92,7 @@ Usate il pacchetto allegato per visualizzare simultaneamente messaggi di errore 
 
    Utilizzare il codice seguente per modificare la dimensione del font e il colore dei messaggi di errore/avviso.
 
-   ```
+   ```css
    #customError {
    color: #0000FF; // it changes the color of Error Message
    display:none;
