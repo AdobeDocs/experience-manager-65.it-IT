@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ Di seguito sono riportati alcuni esempi JSP EL comunemente utilizzati per la sol
 * Per concatenare due stringhe: ${str1} ${str2}
 * Per confrontare due numeri: ${age &lt; 18}
 
-Ulteriori informazioni sono disponibili nella specifica [EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)JSP. Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
+Per ulteriori informazioni, consulta la specifica [EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)JSP. Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
 
 * Gli indici delle raccolte e le chiavi di mappa (utilizzando la [] notazione) non sono supportati nei nomi delle variabili per le espressioni valutate sul lato client.
 * Di seguito sono riportati i tipi di parametro o i tipi di restituzione delle funzioni utilizzate nelle espressioni:
@@ -80,7 +83,7 @@ Le funzioni remote consentono di utilizzare la logica personalizzata nelle espre
    1. **Abilitato**: Determina se questo metodo è abilitato. Expression Manager ignora i metodi disattivati.
    1. **familyId**: Specifica la famiglia del metodo (gruppo). Se vuoto, Expression Manager presuppone che il metodo appartenga alla famiglia predefinita. Non esiste un registro delle famiglie (ad eccezione di quello predefinito) da cui vengono scelte le funzioni. Expression Manager crea dinamicamente il Registro di sistema, unendo tutti gli ID familiari specificati da tutte le funzioni esportate dai vari bundle. Assicurarsi che l’ID qui specificato sia ragionevolmente leggibile, in quanto viene visualizzato anche nell’interfaccia utente di authoring delle espressioni.
    1. **displayName**: Un nome leggibile dall&#39;utente per la funzione. Questo nome viene utilizzato per la visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea un nome predefinito utilizzando il prefisso della funzione e il nome locale.
-   1. **Descrizione**: Descrizione dettagliata della funzione. Questa descrizione viene utilizzata per la visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea una descrizione predefinita utilizzando il prefisso della funzione e il nome locale.
+   1. **Descrizione**: Una descrizione dettagliata della funzione. Questa descrizione viene utilizzata per la visualizzazione nell’interfaccia utente di authoring. Se vuoto, Expression Manager crea una descrizione predefinita utilizzando il prefisso della funzione e il nome locale.
 
    ```java
    package mergeandfuse.com;
@@ -119,7 +122,7 @@ Le funzioni remote consentono di utilizzare la logica personalizzata nelle espre
 
 1. Definite l&#39;implementazione dell&#39;interfaccia, configuratela come servizio OSGI e definite le seguenti proprietà del servizio:
 
-```
+```jsp
 @org.apache.felix.scr.annotations.Properties({
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker", boolValue = true),
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker.alias", value = "<service_id>"),
@@ -128,7 +131,7 @@ Le funzioni remote consentono di utilizzare la logica personalizzata nelle espre
 
 La voce exm.service=true indica a Expression Manager che il servizio contiene funzioni remote utilizzabili nelle espressioni. Il valore &lt;service_id> deve essere un identificatore Java valido (alfanumerico,$, _ senza altri caratteri speciali). Questo valore, con il prefisso della parola chiave REMOTE_, forma il prefisso utilizzato all&#39;interno delle espressioni. Ad esempio, un&#39;interfaccia con un metodo annotato bar() e l&#39;ID del servizio foo nelle proprietà del servizio, può essere utilizzata come riferimento all&#39;interno di espressioni utilizzando REMOTE_foo:bar().
 
-```
+```java
 package mergeandfuse.com;
 
 import org.apache.felix.scr.annotations.Component;
