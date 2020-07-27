@@ -1,8 +1,8 @@
 ---
 title: Servizio Forms con codice a barre
 seo-title: Utilizzo di AEM Forms Barcoded Forms Service
-description: 'Il servizio AEM Forms Barcoded Forms consente di estrarre dati da immagini elettroniche di codici a barre. '
-seo-description: 'Il servizio AEM Forms Barcoded Forms consente di estrarre dati da immagini elettroniche di codici a barre. '
+description: 'Utilizzare il servizio AEM Forms Barcoded Forms per estrarre dati da immagini elettroniche di codici a barre. '
+seo-description: 'Utilizzare il servizio AEM Forms Barcoded Forms per estrarre dati da immagini elettroniche di codici a barre. '
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 1%
 
 ---
 
@@ -128,7 +131,7 @@ Inoltre, quando si utilizza il servizio Barcoded Forms, tenere in considerazione
 
 Inoltre, il servizio può decodificare qualsiasi codice a barre che utilizza la simbologia supportata, se vengono osservate le limitazioni di cui sopra. Per ulteriori informazioni sulla creazione di moduli interattivi con codice a barre, vedere la Guida [di](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.
 
-## Configurare le proprietà del servizio {#configureproperties}
+## Configurare le proprietà del servizio   {#configureproperties}
 
 È possibile utilizzare il servizio **AEMFD** Barcoded Forms Servicenella console AEM per configurare le proprietà per questo servizio. L’URL predefinito della console AEM è `https://[host]:'port'/system/console/configMgr`.
 
@@ -144,7 +147,7 @@ In Barcoded Forms Service sono disponibili le due API seguenti:
 
 Il seguente codice di esempio decodifica un codice a barre in un documento e salva il codice XML di output sul disco.
 
-```java
+```jsp
 <%@ page import="java.util.List,
                 com.adobe.fd.bcf.api.BarcodedFormsService,
                 com.adobe.fd.bcf.api.CharSet,
