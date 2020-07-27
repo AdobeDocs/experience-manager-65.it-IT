@@ -8,7 +8,10 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '966'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Questa esercitazione è un passaggio della serie [Crea il primo modulo](https://
 
 Una volta che il modulo adattivo è pronto, è importante verificare l&#39;adattivo prima di distribuirlo agli utenti finali. È possibile testare manualmente (test funzionale) ogni campo o automatizzare il test del modulo adattivo. In presenza di più moduli adattivi, il test manuale di tutti i campi di tutti i moduli adattivi diventa un&#39;attività scoraggiante.
 
-AEM Forms offre un framework di verifica, Calvin, per automatizzare il test dei moduli adattivi. Utilizzando il framework, potete scrivere ed eseguire test di interfaccia direttamente in un browser Web. Il framework fornisce API JavaScript per la creazione di test. Il test automatizzato consente di verificare l&#39;esperienza di precompilazione di un modulo adattivo, inviare esperienze relative a un modulo adattivo, regole di espressione, da convalide, caricamento lento e interazioni dell&#39;interfaccia utente. Questa esercitazione illustra i passaggi necessari per creare ed eseguire test automatici su un modulo adattivo. Al termine di questa esercitazione, potrete:
+I AEM Forms forniscono un framework di test, Calvin, per automatizzare il test dei moduli adattivi. Utilizzando il framework, potete scrivere ed eseguire test di interfaccia direttamente in un browser Web. Il framework fornisce API JavaScript per la creazione di test. Il test automatizzato consente di verificare l&#39;esperienza di precompilazione di un modulo adattivo, inviare esperienze relative a un modulo adattivo, regole di espressione, da convalide, caricamento lento e interazioni dell&#39;interfaccia utente. Questa esercitazione illustra i passaggi necessari per creare ed eseguire test automatici su un modulo adattivo. Al termine di questa esercitazione, potrete:
 
 * [Creare una suite di test per il modulo adattivo](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Creazione di test per il modulo adattivo](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -31,7 +34,7 @@ AEM Forms offre un framework di verifica, Calvin, per automatizzare il test dei 
 
 Le suite di test dispongono di una raccolta di casi di test. Potete avere più suite di test. È consigliabile disporre di una suite di test distinta per ciascun modulo. Per creare una suite di test:
 
-1. Accedi all’istanza di creazione di AEM Forms come amministratore. Aprite CRXDE Lite. Toccate AEM Logo > **Strumenti** > **Generale** > **CRXDE Lite** oppure aprite l’URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in un browser per aprire CRXDE Lite.
+1. Esegui il login ai AEM Forms per creare l’istanza come amministratore. Aprite CRXDE Lite. Toccate AEM Logo > **Strumenti** > **Generale** > **CRXDE Lite** oppure aprite l’URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in un browser per aprire CRXDE Lite.
 
 1. Andate a /etc/clientlibs in CRXDE Lite. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **Crea** > **Crea nodo.** Nel campo Nome digitare **WeRetailFormTestCase**. Selezionare il tipo come **cq:ClientLibraryFolder** e fare clic su **OK**. Crea un nodo. È possibile utilizzare qualsiasi nome al posto di WeRetailFormTestCase.
 1. Aggiungete le seguenti proprietà al nodo WeRetailFormTestCase e toccate **Salva TUTTO**.
@@ -75,14 +78,14 @@ Accertatevi che ciascuna proprietà sia aggiunta a una casella separata come ill
 1. Fare clic con il pulsante destro del mouse sul nodo **[!UICONTROL WeRetailFormTestCase]** , fare clic su **Crea** > **Crea file**. Nel campo Nome, digitare `js.txt` e fare clic su **OK**.
 1. Aprite il file js.txt per la modifica, aggiungete il codice seguente e salvate il file:
 
-   ```
+   ```text
    #base=.
     init.js
    ```
 
 1. Create un file, init.js, nel `WeRetailFormTestCases`nodo. Aggiungi il codice seguente al file e tocca **[!UICONTROL Salva tutto]**.
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -218,6 +221,7 @@ Una suite di test può contenere più casi di test. Potete eseguire tutti i casi
 
    1. Nel pannello Test, toccate **[!UICONTROL We retail - Test (1)]**. La suite si espande per visualizzare l&#39;elenco dei test.
    1. Toccate il pulsante **[!UICONTROL Esegui test]** . L&#39;area vuota sul lato destro dello schermo viene sostituita con un modulo adattivo durante l&#39;esecuzione del test.
+
    ![run-all-test](assets/run-all-test.png)
 
 1. Per eseguire un singolo test dalla suite di test:
