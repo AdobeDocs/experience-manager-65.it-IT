@@ -10,22 +10,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
 
 # Introduzione a Java API Quick Start {#introducing-java-api-quickstart}
 
-La Guida rapida all&#39;API di Adobe AEM Forms consente di accelerare i vostri sforzi per sviluppare programmi che interagiscono con i servizi AEM Forms. *Gli* avvii rapidi sono programmi completi che puoi copiare e incollare nei tuoi progetti e utilizzare come punto di partenza. Potete eseguire una Avvio rapido per vedere come si comporta e modificarla in base alle vostre esigenze.
+Adobe AEM Forms API Quick Start consente di accelerare i vostri sforzi per sviluppare programmi che interagiscono con i servizi AEM Forms. *Gli* avvii rapidi sono programmi completi che puoi copiare e incollare nei tuoi progetti e utilizzare come punto di partenza. Potete eseguire una Avvio rapido per vedere come si comporta e modificarla in base alle vostre esigenze.
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 Java fortemente tipizzato API Quick Start fornisce un elenco di file JAR necessari per eseguire l&#39;applicazione Java. La maggior parte dei Avvio rapido Java è un&#39;applicazione console eseguita all&#39;interno di `main`. Tuttavia, l&#39;API Quick Start Java fortemente tipizzata è implementata come servlet Java che viene eseguito all&#39;interno di un&#39;applicazione Web.
 
 L’elenco dei file JAR si trova in una sezione di commenti all’inizio della Avvio rapido. Ad esempio, il commento seguente si trova in un avvio rapido di Output ed è un tipico elenco di file JAR trovato in ciascuna Avvio rapido di Java.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -62,9 +65,9 @@ L’elenco dei file JAR si trova in una sezione di commenti all’inizio della A
 
 ## Avvio rapido di più servizi {#multiple-services-quick-start}
 
-La maggior parte dei primi rapidi disponibili nella *programmazione con AEM Forms su JEE* richiama un servizio specifico per eseguire un&#39;operazione. Tuttavia, alcuni Avvio rapido richiamano più servizi AEM Forms per eseguire un determinato flusso di lavoro. Nell&#39;elenco seguente sono riportati gli avvii rapidi Java che richiamano più di un servizio AEM Forms:
+La maggior parte degli avvii rapidi situati in *Programmazione con AEM Forms su JEE* richiama un servizio specifico per eseguire un&#39;operazione. Tuttavia, alcuni Avvio rapido richiamano più servizi AEM Forms per eseguire un determinato flusso di lavoro. Nell&#39;elenco seguente sono riportati gli avvii rapidi Java che richiamano più di un servizio AEM Forms:
 
-[Avvio rapido (modalità SOAP): Trasmissione di un documento situato nell&#39;archivio moduli AEM al servizio Output tramite l&#39;API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (richiama il servizio Repository e Output)
+[Avvio rapido (modalità SOAP): Trasmissione di un documento situato nell&#39;archivio AEM Forms al servizio Output tramite l&#39;API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (richiama il servizio Repository e Output)
 
 [Avvio rapido (modalità SOAP): Creazione di un documento PDF basato su frammenti tramite l&#39;API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) Java (richiama il servizio Assembler e Output)
 
@@ -80,9 +83,9 @@ La maggior parte dei primi rapidi disponibili nella *programmazione con AEM Form
 
 >[!NOTE]
 >
->La sezione Avvio rapido nella programmazione con AEM Forms si basa sulla distribuzione di AEM Forms su JBoss® Application Server e sul sistema operativo Microsoft® Windows®. Tuttavia, se si utilizza un altro sistema operativo, come UNIX®, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
+>La sezione Avvio rapido, che si trova in Programmazione con AEM Forms, si basa sui AEM Forms distribuiti in JBoss® Application Server e nel sistema operativo Microsoft® Windows®. Tuttavia, se si utilizza un altro sistema operativo, come UNIX®, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
 
 >[!NOTE]
 >
->La maggior parte dei servizi Web Quick Starts è scritta in C# e utilizza .NET framework. Tuttavia, è possibile creare logica dell&#39;applicazione client in grado di richiamare i servizi AEM Forms in qualsiasi ambiente di sviluppo che supporti gli standard SOAP. (Vedere [Attivazione di moduli AEM tramite i servizi](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)Web.)
+>La maggior parte dei servizi Web Quick Starts è scritta in C# e utilizza .NET framework. Tuttavia, è possibile creare una logica dell&#39;applicazione client in grado di richiamare i servizi AEM Forms in qualsiasi ambiente di sviluppo che supporti gli standard SOAP. (Vedere [Chiamata di AEM Forms tramite servizi](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)Web.)
 
