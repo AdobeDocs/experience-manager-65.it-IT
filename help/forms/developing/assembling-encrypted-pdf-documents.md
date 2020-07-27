@@ -11,18 +11,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 0%
 
 ---
 
 
 # Assemblaggio di documenti PDF crittografati {#assembling-encrypted-pdf-documents}
 
-È possibile cifrare un documento PDF con una password utilizzando il servizio Assembler. Dopo aver crittografato un documento PDF con una password, l&#39;utente deve specificarla per visualizzare il documento PDF in Adobe Reader o Acrobat. Per cifrare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di cifratura necessari per cifrare un documento PDF.
+È possibile cifrare un documento PDF con una password utilizzando il servizio Assembler. Dopo aver crittografato un documento PDF con una password, l&#39;utente deve specificarla per visualizzare il documento PDF in Adobe Reader o Acrobat. Per cifrare un documento PDF con una password, il documento DDX deve contenere i valori degli elementi di cifratura necessari per la cifratura di un documento PDF.
 
 Ai fini di questa discussione, si supponga di utilizzare il seguente documento DDX.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
         <PDF result="EncryptLoan.pdf" encryption="userProtect">
@@ -42,7 +45,7 @@ Il servizio di cifratura non deve necessariamente far parte dell’installazione
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere Riferimento [servizi per i AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -69,10 +72,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti su JBoss)
 
-se AEM Forms è implementato su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE in cui è distribuito AEM Forms. Per informazioni sulla posizione di tutti i file AEM Forms JAR, consultate [Inclusione dei file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms.
+se i AEM Forms sono distribuiti su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE in cui sono distribuiti i AEM Forms. Per informazioni sulla posizione di tutti i file JAR AEM Forms, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un client Assembler**
 
@@ -88,9 +91,9 @@ Per cifrare un documento PDF non protetto è necessario fare riferimento a tale 
 
 **Impostazione delle opzioni di esecuzione**
 
-È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, consultate il riferimento alla `AssemblerOptionSpec` classe in Riferimento API di [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, vedere il riferimento alla `AssemblerOptionSpec` classe in Riferimento API per [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Cifra documento**
+**Crittografare il documento**
 
 Dopo aver creato il client del servizio Assembler, fare riferimento al documento DDX che contiene informazioni di cifratura, fare riferimento a un documento PDF non protetto e impostare le opzioni di esecuzione, è possibile richiamare l&#39; `invokeOneDocument` operazione. Poiché al servizio Assembler viene passato un solo documento PDF di input (e viene restituito un documento), è possibile utilizzare l&#39; `invokeOneDocument` operazione invece dell&#39; `invokeDDX` operazione.
 
@@ -139,6 +142,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
    * Un `com.adobe.idp.Document` oggetto che rappresenta il documento DDX. Assicurarsi che il documento DDX contenga il valore `inDoc` per l&#39;elemento di origine PDF.
    * Un `com.adobe.idp.Document` oggetto che contiene il documento PDF non protetto.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione, incluso il livello predefinito del font e del registro dei processi.
+
    Il `invokeOneDocument` metodo restituisce un `com.adobe.idp.Document` oggetto che contiene un documento PDF crittografato con password.
 
 1. Salvare il documento PDF crittografato.
@@ -158,12 +162,12 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server host AEM Forms.
 
 1. Creare un client Assembler.
 
    * Creare un `AssemblerServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passate un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `AssemblerServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
@@ -184,7 +188,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
 1. Fare riferimento a un documento PDF non protetto.
 
    * Creare un `BLOB` oggetto utilizzando il relativo costruttore. L&#39; `BLOB` oggetto viene utilizzato per memorizzare il documento PDF di input. Questo `BLOB` oggetto viene passato all&#39;oggetto `invokeOneDocument` come argomento.
-   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento PDF di input e la modalità di apertura del file.
+   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento PDF di input e la modalità in cui aprire il file.
    * Creare un array di byte che memorizza il contenuto dell&#39; `System.IO.FileStream` oggetto. È possibile determinare la dimensione dell&#39;array di byte ottenendo la proprietà dell&#39; `System.IO.FileStream` oggetto `Length` .
    * Compilare l&#39;array di byte con i dati del flusso richiamando il `System.IO.FileStream` `Read` metodo dell&#39;oggetto e passando l&#39;array di byte, la posizione iniziale e la lunghezza del flusso da leggere.
    * Compilare l&#39; `BLOB` oggetto assegnandone `MTOM` il campo con il contenuto dell&#39;array di byte.
@@ -192,7 +196,7 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
 1. Impostare le opzioni di esecuzione.
 
    * Creare un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati appartenente all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
+   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati che appartiene all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
 
 1. Cifra il documento.
 
@@ -201,15 +205,16 @@ Se al servizio Assembler viene passato un solo documento PDF, il servizio Assemb
    * Un `BLOB` oggetto che rappresenta il documento DDX
    * Un `BLOB` oggetto che rappresenta il documento PDF non protetto
    * Un oggetto `AssemblerOptionSpec` che specifica le opzioni di esecuzione
-   Il `invokeOneDocument` metodo restituisce un `BLOB` oggetto contenente un documento PDF crittografato.
+
+   Il `invokeOneDocument` metodo restituisce un `BLOB` oggetto che contiene un documento PDF crittografato.
 
 1. Salvare il documento PDF crittografato.
 
-   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento PDF crittografato e la modalità di apertura del file.
+   * Creare un `System.IO.FileStream` oggetto richiamando il relativo costruttore e passando un valore di stringa che rappresenta la posizione del file del documento PDF crittografato e la modalità in cui aprire il file.
    * Creare un array di byte che memorizza il contenuto dell&#39; `BLOB` oggetto restituito dal `invokeOneDocument` metodo. Compilare l&#39;array di byte ottenendo il valore del membro `BLOB` dati dell&#39; `MTOM` oggetto.
    * Creare un `System.IO.BinaryWriter` oggetto richiamando il relativo costruttore e passando l&#39; `System.IO.FileStream` oggetto.
    * Scrivere il contenuto dell&#39;array di byte in un file PDF richiamando il metodo dell&#39; `System.IO.BinaryWriter` oggetto `Write` e passando l&#39;array di byte.
 
 **Consulta anche**
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata di AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
