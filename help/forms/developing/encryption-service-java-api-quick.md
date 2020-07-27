@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 [Avvio rapido (modalità SOAP): Determinazione del tipo di crittografia tramite l&#39;API Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizz
 
 Nell&#39;esempio di codice Java riportato di seguito viene crittografato un documento PDF denominato *Loan.pdf* con un valore di password pari a `OpenPassword`. La password master è `PermissionPassword`. Il documento PDF protetto viene salvato come file PDF denominato *EncryptLoan.pdf*. (vedere [Cifratura di documenti PDF con una password](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -159,7 +162,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene crittografato un docu
 
 Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su password da un documento PDF denominato *EncryptLoan.pdf*. Il valore della password master utilizzato per rimuovere la crittografia basata su password è *PermissionPassword*. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione della cifratura](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)della password.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -256,7 +259,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura 
 
 Nell&#39;esempio di codice Java riportato di seguito viene crittografato un documento PDF denominato *Loan.pdf* con un certificato denominato *Encryption.cer*. Il documento PDF crittografato viene salvato come file PDF denominato *EncryptLoanCert.pdf*. (vedere [Cifratura di documenti PDF con certificati](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -385,7 +388,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene crittografato un docu
 
 Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su certificato da un documento PDF denominato *EncryptLoanCert.pdf*. L&#39;alias della chiave pubblica utilizzata per rimuovere la crittografia è `Encryption`. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione della cifratura](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption)basata su certificato.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -482,7 +485,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura 
 
 Nell’esempio di codice Java riportato di seguito viene sbloccato un documento PDF con password crittografata denominato *EncryptLoan.pdf*. (Vedere [Sblocco di documenti](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF crittografati.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -578,7 +581,7 @@ Nell’esempio di codice Java riportato di seguito viene sbloccato un documento 
 
 Nell&#39;esempio di codice Java riportato di seguito viene determinato il tipo di cifratura che protegge un documento PDF denominato *EncryptLoan.pdf*. (Vedere [Determinazione del tipo](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type)di cifratura.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
