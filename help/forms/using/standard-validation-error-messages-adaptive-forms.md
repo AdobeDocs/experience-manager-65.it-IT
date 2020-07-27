@@ -9,7 +9,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 translation-type: tm+mt
-source-git-commit: 48cd21915017da96015df4e7619611ebf775c5fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 0%
 
 ---
 
@@ -55,13 +58,13 @@ Dove:
 * `originCode` contiene il codice di errore restituito dal servizio esterno
 * `originMessage` contiene i dati di errore non elaborati restituiti dal servizio esterno
 
-## Configurare l&#39;invio di moduli adattivi per aggiungere gestori personalizzati {#configure-adaptive-form-submission}
+## Configurare l&#39;invio di moduli adattivi per l&#39;aggiunta di gestori personalizzati {#configure-adaptive-form-submission}
 
 Se il messaggio di errore convalida server non è visualizzato nel formato standard, è possibile abilitare l&#39;invio asincrono e aggiungere un gestore errori personalizzato per l&#39;invio di moduli adattivi per convertire il messaggio in un formato standard.
 
 ### Configurare l&#39;invio asincrono di moduli adattivi {#configure-asynchronous-adaptive-form-submission}
 
-Prima di aggiungere un gestore personalizzato, è necessario configurare il modulo adattivo per l&#39;invio asincrono. Esegui i seguenti passaggi:
+Prima di aggiungere un gestore personalizzato, è necessario configurare il modulo adattivo per l&#39;invio asincrono. Effettuate i seguenti passaggi:
 
 1. In modalità di creazione moduli adattivi, selezionare l&#39;oggetto Contenitore modulo e toccare le proprietà ![del modulo](assets/configure_icon.png) adattivo per aprirne le proprietà.
 1. Nella sezione Proprietà **[!UICONTROL invio]** , abilitare **[!UICONTROL Usa invio]** asincrono.
@@ -70,13 +73,14 @@ Prima di aggiungere un gestore personalizzato, è necessario configurare il modu
 
    * Selezionare **[!UICONTROL Invia utilizzando il modello]** dati modulo e selezionare il modello dati appropriato, se si utilizza il modello [dati](work-with-form-data-model.md) modulo basato su servizi Web RESTful come origine dati.
    * Selezionare **[!UICONTROL Invia a endpoint]** REST e specificare l&#39;URL/percorso **[!UICONTROL di]** reindirizzamento se si utilizzano i servizi Web RESTful come origine dati.
+
    ![proprietà di invio dei moduli adattivi](assets/af_submission_properties.png)
 
 1. Toccate ![Salva](assets/save_icon.png) per salvare le proprietà.
 
 ### Aggiunta di un gestore errori personalizzato per l&#39;invio di moduli adattivi {#add-custom-error-handler-af-submission}
 
-In AEM Forms sono inclusi i gestori di errori e di successo per l&#39;invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
+I AEM Forms forniscono gestori di errori e di successo out-of-the-box per l&#39;invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
 
 Per aggiungere un gestore errori personalizzato all&#39;invio di moduli adattivi, eseguire i passaggi seguenti:
 
@@ -131,13 +135,13 @@ Utilizzando questo handler di errori personalizzato, il modulo adattivo converte
 
 ## Aggiunta di un gestore personalizzato tramite l&#39;azione Servizio di chiamata
 
-Per aggiungere un gestore errori per convertire una struttura di errore personalizzata nella struttura di errore standard, eseguire la procedura seguente utilizzando l&#39;azione Servizio di chiamata dell&#39;Editor [regole](rule-editor.md) :
+Per aggiungere un gestore di errori per convertire una struttura di errore personalizzata nella struttura di errore standard, eseguire la procedura seguente utilizzando l&#39;azione Servizio di chiamata dell&#39;Editor di [regole](rule-editor.md) :
 
 1. Aprite il modulo adattivo in modalità di creazione, selezionate un oggetto modulo qualsiasi e toccate Editor ![](assets/rule_editor_icon.png) regole per aprire l&#39;editor di regole.
 1. Toccate **[!UICONTROL Crea]**.
 1. Creare una condizione nella sezione **[!UICONTROL Quando]** della regola. Ad esempio,[QuandoName del campo] viene modificato. Selezionate **[!UICONTROL viene modificato]** dall’elenco a discesa **[!UICONTROL Seleziona stato]** per ottenere questa condizione.
 1. Nella sezione **[!UICONTROL Quindi]** , selezionare **[!UICONTROL Richiama servizio]** dall&#39;elenco a discesa **[!UICONTROL Seleziona azione]** .
-1. Selezionare un servizio Post e i relativi binding dati dalla sezione **[!UICONTROL Input]** . Ad esempio, se si desidera convalidare i campi **Nome**, **ID** e **Stato** nel modulo adattivo, selezionare un servizio Post (animale domestico) e quindi pet.name, pet.id e pet.status nella sezione **[!UICONTROL Input]** .
+1. Selezionare un servizio Post e i relativi binding dei dati dalla sezione **[!UICONTROL Input]** . Ad esempio, se si desidera convalidare i campi **Nome**, **ID** e **Stato** nel modulo adattivo, selezionare un servizio Post (animale domestico) e quindi pet.name, pet.id e pet.status nella sezione **[!UICONTROL Input]** .
 
 Come risultato di questa regola, i valori inseriti per i campi **Nome**, **ID** e **Stato** vengono convalidati non appena il campo definito al punto 2 viene modificato e si esce dal campo del modulo.
 
