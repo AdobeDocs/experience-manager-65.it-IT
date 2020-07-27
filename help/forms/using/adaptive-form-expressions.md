@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2766'
+ht-degree: 0%
 
 ---
 
@@ -85,7 +88,7 @@ L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un 
 
 **Tipo** di restituzione: L&#39;espressione click non restituisce alcun valore. Se una qualsiasi espressione restituisce un valore, il valore viene ignorato.
 
-**Esempio**: Per compilare una casella di testo **textbox1** con l&#39;azione clic di un pulsante con il valore **AEM Forms**, fare clic con l&#39;espressione del pulsante `textbox1.value="AEM Forms"`
+**Esempio**: Per compilare una casella di testo **textbox1** nell&#39;azione clic di un pulsante con **AEM Forms** di valore, l&#39;espressione click del pulsante è `textbox1.value="AEM Forms"`
 
 ### Script di inizializzazione {#initialization-script}
 
@@ -161,7 +164,7 @@ Lo script Value Commit viene attivato quando:
 
 >[!NOTE]
 >
->È possibile disabilitare l&#39;esecuzione dello script di commit dei valori quando il valore di un campo viene modificato a livello di programmazione. A questo scopo, andate al https://&#39;[server]:[port]&#39;/system/console/configMgr e modificate la versione **dei moduli adattivi per compatibilità** con **AEM Forms 6.1**. In seguito, lo script Value Commit viene eseguito solo quando l&#39;utente modifica il valore del campo dall&#39;interfaccia utente.
+>È possibile disabilitare l&#39;esecuzione dello script di commit dei valori quando il valore di un campo viene modificato a livello di programmazione. A questo scopo, andate al https://&#39;[server]:[port]&#39;/system/console/configMgr e modificate la versione **dei moduli adattivi per compatibilità** con **i AEM Forms 6.1**. In seguito, lo script Value Commit viene eseguito solo quando l&#39;utente modifica il valore del campo dall&#39;interfaccia utente.
 
 ### Espressione di visibilità {#visibility-expression}
 
@@ -224,13 +227,13 @@ GuideBridge è un insieme di API che possono essere utilizzate per interagire co
 
 * Per convalidare un modulo adattivo o i relativi pannelli specifici, utilizzare `guideBridge.validate(errorList, somExpression).`
 
-#### Utilizzo di GuideBridge all’esterno delle espressioni {#using-guidebridge-outside-expressions-nbsp}
+#### Utilizzo di GuideBridge all’esterno delle espressioni  {#using-guidebridge-outside-expressions-nbsp}
 
 Potete anche utilizzare le API GuideBridge al di fuori delle espressioni. Ad esempio, è possibile utilizzare l&#39;API GuideBridge per impostare la comunicazione tra l&#39;HTML della pagina che ospita il modulo adattivo e il modello di modulo. Inoltre, è possibile impostare il valore che proviene dall&#39;elemento padre di Iframe che ospita il modulo.
 
 Per utilizzare l’API GuideBridge per gli esempi di cui sopra, acquisite un’istanza di GuideBridge. Per acquisire l&#39;istanza, ascoltare l&#39; `bridgeInitializeStart`evento di un `window`oggetto:
 
-```
+```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      // get hold of the guideBridge object
@@ -260,7 +263,7 @@ GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina h
 
 Utilizzare il codice seguente per registrare i gestori:
 
-```
+```javascript
 guideBridge.on("elementValueChanged", function (event, data)  {
 
       // execute some logic when value of a field is changed
