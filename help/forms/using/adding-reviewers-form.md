@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 55c12683ba66b3aace07ea83931c9c32ea65663e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -30,12 +33,12 @@ Per associare un gruppo di revisori a un modulo, modificare lo schema di metadat
 
 Per modificare lo schema di metadati:
 
-1. In modalità di creazione, in Experience Manager, fate clic su **Strumenti** > **Risorse** > Schemi di **metadati**.
+1. In modalità di authoring, in  Experience Manager, fate clic su **Strumenti** > **Risorse** > Schemi di **metadati**.
 1. Nella pagina Moduli schema, passa a **Moduli** > **Moduli creati in AEM.**
 
    L’URL della pagina è:
 
-   ```
+   ```html
    https://<hostname>:<port>/mnt/overlay/dam/gui/content/metadataschemaeditor/
     schemalist.html/forms/aem-authored
    ```
@@ -58,7 +61,7 @@ Prima di eseguire i seguenti passaggi, vedete [Prerequisito](../../forms/using/a
 
 Per creare un gruppo e aggiungervi dei membri, andate a **Strumenti** > **Operazioni** > **Protezione** > **Gruppi**.
 Per ulteriori informazioni, consulta Amministrazione [utente e servizi](/help/sites-administering/security.md).
-Assicuratevi di aggiungere il gruppo creato come membro del gruppo di utenti predefinito: **form-submit-reviewers**. Questo gruppo di utenti viene fornito con AEM Forms e garantisce che gli utenti vengano aggiunti come revisori per l&#39;invio.
+Assicuratevi di aggiungere il gruppo creato come membro del gruppo di utenti out-of-the-box: **form-submit-reviewers**. Questo gruppo di utenti viene fornito con AEM Forms e garantisce che gli utenti vengano aggiunti come revisori per l’invio.
 
 Per associare gruppi di utenti a un modulo adattivo:
 
@@ -71,7 +74,7 @@ Per associare gruppi di utenti a un modulo adattivo:
 
 >[!NOTE]
 >
->Replicare utenti e moduli per garantire la disponibilità di utenti e moduli nell&#39;implementazione remota di AEM Forms.
+>Replicare utenti e moduli per garantire la disponibilità di utenti e moduli nell&#39;implementazione remota dei AEM Forms.
 >
 >Assicurati che tutti gli utenti vengano replicati come membri di revisione dei gruppi di utenti nell&#39;implementazione remota.
 
