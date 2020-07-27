@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Per il servizio Utilità XMP sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Importazione di metadati XMP tramite l&#39;API Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizz
 
 Nell’esempio di codice seguente vengono recuperati, ispezionati e salvati i metadati XMP. Consultate [Esportazione di metadati da documenti](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)PDF.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
@@ -138,7 +141,7 @@ Nell’esempio di codice seguente vengono recuperati, ispezionati e salvati i me
 
 Nell&#39;esempio di codice seguente vengono importati i metadati XMP e salvati il nuovo file PDF su disco. Il documento PDF è basato su un file PDF denominato Loan.pdf. Il documento XML che contiene i metadati da importare nel documento PDF si basa su un file XML denominato *LoanMetaData.xml*. Per informazioni su questo file XML, vedere [Importazione di metadati in documenti](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents)PDF.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
