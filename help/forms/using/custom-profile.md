@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ Per creare un profilo personalizzato, effettuate le seguenti operazioni:
 
 ### Crea nodo profilo {#create-profile-node}
 
-1. Passate all&#39;interfaccia CRX DE all&#39;URL: ed `https://'[server]:[port]'/crx/de` effettuate l&#39;accesso all&#39;interfaccia con le credenziali di amministratore.
+1. Passate all&#39;interfaccia CRX DE all&#39;URL: `https://'[server]:[port]'/crx/de` ed effettuate l&#39;accesso all&#39;interfaccia con le credenziali di amministratore.
 
 1. Nel riquadro a sinistra, passare alla posizione */content/xfaforms/profile*.
 
@@ -80,4 +83,4 @@ Dopo aver creato un profilo personalizzato, aggiungete le informazioni di render
 
 1. Per verificare che il profilo sia stato creato, apri URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Per verificare i moduli, [importare i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale in AEM Forms e [visualizzare l&#39;anteprima del modulo](/help/forms/using/previewing-forms.md) nell&#39;istanza di creazione del server AEM.
+Per verificare i moduli, [importare i moduli](/help/forms/using/get-xdp-pdf-documents-aem.md) dal file system locale ai AEM Forms e [visualizzare l&#39;anteprima del modulo](/help/forms/using/previewing-forms.md) nell&#39;istanza di creazione del server AEM.
