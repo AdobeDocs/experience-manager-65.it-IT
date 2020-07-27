@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6120'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ Toccate il frammento di documento, toccate ![configure_icon](assets/configure_ic
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](assets/edit.svg) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà. Inoltre, per i frammenti di documento generati [](#synchronize) automaticamente nel canale Web utilizzando il canale Stampa, utilizzare l&#39;icona ![](assets/cancelinheritance.png) (Annulla ereditarietà) accanto a ciascun oggetto e variabile del modello dati per [annullare l&#39;ereditarietà](#cancelinheritance) e modificarli.
+   Toccate il frammento di documento, toccate ![configure_icon](assets/configure_icon.png) (Configura), quindi toccate **[!UICONTROL Proprietà]** dalla barra laterale della comunicazione interattiva. La sezione **[!UICONTROL Variabili e oggetti]** modello dati elenca le variabili, incluse le variabili nascoste e gli oggetti modello dati utilizzati nei frammenti del documento. Utilizzare l&#39;icona ![Modifica](assets/edit.svg) (Modifica) accanto a ogni oggetto o variabile del modello dati per modificare le proprietà. Inoltre, per i frammenti di documento generati [](#synchronize) automaticamente nel canale Web tramite il canale Stampa, utilizzare l&#39;icona ![Annulla ereditarietà](assets/cancelinheritance.png) (Annulla ereditarietà) accanto a ciascun oggetto e variabile del modello dati per [annullare l&#39;ereditarietà](#cancelinheritance) e modificarli.
 
 1. Per aggiungere altri componenti nel canale Web, toccate **[!UICONTROL Componenti]** con il canale Web selezionato. Trascina i componenti sul canale Web della comunicazione interattiva, come necessario, e procedi a configurarli.
 
@@ -386,12 +386,12 @@ Toccate il pannello principale nel modello Web e toccate **+** per aggiungere un
 
 #### Aggiungere o modificare il testo nelle celle di una tabella {#addedittexttable}
 
-1. Selezionare la casella di testo predefinita nella cella della tabella e toccare ![](assets/edit.png) (Modifica).
-1. Digitate il testo nella cella della tabella e toccate ![](assets/done_icon.png) per salvarlo.
+1. Selezionare la casella di testo predefinita nella cella della tabella e toccare ![Modifica](assets/edit.png) (Modifica).
+1. Digitate il testo nella cella della tabella e toccate ![done_icon](assets/done_icon.png) per salvarlo.
 
 #### Creazione di un binding tra le celle della tabella e gli elementi dell&#39;oggetto modello dati {#createbindingtablecells}
 
-1. Selezionare la casella di testo predefinita nella riga della tabella e toccare ![](assets/edit.png) (Modifica).
+1. Selezionare la casella di testo predefinita nella riga della tabella e toccare ![Modifica](assets/edit.png) (Modifica).
 1. Toccare l&#39;elenco a discesa degli oggetti del modello dati e selezionare la proprietà.
 1. Toccare per salvare e creare un binding tra la cella della tabella e la proprietà dell&#39;oggetto modello dati.
 
@@ -399,10 +399,10 @@ Toccate il pannello principale nel modello Web e toccate **+** per aggiungere un
 
 #### Creare un collegamento ipertestuale per il testo nella cella della tabella {#createhyperlinktable}
 
-1. Selezionare la casella di testo predefinita nella cella della tabella e toccare ![](assets/edit.svg) (Modifica).
+1. Selezionare la casella di testo predefinita nella cella della tabella e toccare ![Modifica](assets/edit.svg) (Modifica).
 1. Selezionare il testo nella cella della tabella e toccare l&#39;icona Collegamento ipertestuale.
 1. Specificate l’URL nel campo **Percorso** .
-1. Toccate ![](assets/done_icon.png) per salvare le proprietà del collegamento ipertestuale.
+1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà del collegamento ipertestuale.
 
 ![Creare un collegamento ipertestuale](assets/create_hyperlink_table_new.png)
 
@@ -426,9 +426,9 @@ L&#39;ordinamento può essere applicato alle colonne di tabelle contenenti:
 
 Per abilitare l&#39;ordinamento:
 
-1. Seleziona la tabella e tocca ![](assets/configure_icon.png) (Configura). Potete anche selezionare la tabella utilizzando il browser **Contenuto** nella barra laterale della comunicazione interattiva.
+1. Selezionate la tabella e toccate ![configure_icon](assets/configure_icon.png) (Configure). Potete anche selezionare la tabella utilizzando il browser **Contenuto** nella barra laterale della comunicazione interattiva.
 1. Selezionate **Abilita ordinamento.**
-1. Toccate ![](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, le frecce su e giù, nelle intestazioni delle colonne, indicano che l&#39;ordinamento è stato attivato.
+1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, le frecce su e giù, nelle intestazioni delle colonne, indicano che l&#39;ordinamento è stato attivato.
 
    ![Abilita ordinamento](assets/enable_sorting_new-1.png)
 
@@ -479,7 +479,7 @@ Per aggiungere il canale Web per una comunicazione interattiva esistente, esegui
 Per aggiungere un pulsante e definire le relative regole:
 
 1. Toccate il pannello principale nel modello Web e toccate **+** per aggiungere il componente **Pulsante** alla comunicazione interattiva.
-1. Toccate il componente pulsante e ![](assets/edit-rules.png) per definire le regole sul tocco del pulsante.
+1. Toccate il componente pulsante e toccate ![le regole](assets/edit-rules.png) di modifica per definire le regole sul tocco del pulsante.
 1. Nella sezione **Quando** , selezionare **premuto** dallo stato dell&#39;elenco a discesa del pulsante.
 1. Nella sezione **Quindi** :
 
