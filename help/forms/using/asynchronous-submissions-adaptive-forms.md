@@ -1,8 +1,8 @@
 ---
 title: Invio asincrono di moduli adattivi
 seo-title: Invio asincrono di moduli adattivi
-description: Informazioni sulla configurazione dell'invio asincrono per i moduli adattivi.
-seo-description: Informazioni sulla configurazione dell'invio asincrono per i moduli adattivi.
+description: Informazioni su come configurare l'invio asincrono per i moduli adattivi.
+seo-description: Informazioni su come configurare l'invio asincrono per i moduli adattivi.
 uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Per configurare l&#39;invio asincrono per un modulo adattivo:
 
 ## Funzionamento dell&#39;invio asincrono {#how-asynchronous-submission-works}
 
-In AEM Forms sono inclusi i gestori di errori e di successo per l&#39;invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
+I AEM Forms forniscono gestori di errori e di successo out-of-the-box per l&#39;invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
 
 Inoltre, autori e sviluppatori di moduli possono scrivere regole a livello di modulo per ignorare i gestori predefiniti. Per ulteriori informazioni, vedere [Ignorare i gestori predefiniti utilizzando le regole](#custom).
 
@@ -46,9 +49,9 @@ Esaminiamo innanzitutto la risposta del server per gli eventi di successo e di e
 
 ### Risposta del server per l&#39;evento di successo invio {#server-response-for-submission-success-event}
 
-La struttura per la risposta del server per l&#39;evento di successo di invio è la seguente:
+La struttura per la risposta del server per l&#39;evento di successo dell&#39;invio è la seguente:
 
-```
+```json
 {
   contentType : "<xmlschema or jsonschema>",
   data : "<dataXML or dataJson>" ,
@@ -70,7 +73,7 @@ Il gestore di eventi di successo legge la risposta del server e reindirizza quin
 
 La struttura per la risposta del server all&#39;evento di errore di invio è la seguente:
 
-```
+```json
 {
    errorCausedBy : "<CAPTCHA_VALIDATION or SERVER_SIDE_VALIDATION>",
 
@@ -90,9 +93,9 @@ La risposta del server in caso di errore nell&#39;invio del modulo include:
 
 Il gestore errori legge la risposta del server e visualizza di conseguenza il messaggio di errore sul modulo.
 
-## Ignora gestori predefiniti utilizzando le regole {#custom}
+## Ignorare i gestori predefiniti utilizzando le regole {#custom}
 
-Gli sviluppatori di moduli e gli autori possono scrivere regole, a livello di modulo, nell&#39;editor di codice per ignorare i gestori predefiniti. La risposta del server agli eventi di successo e di errore è esposta a livello di modulo, a cui gli sviluppatori possono accedere utilizzando `$event.data` nelle regole.
+Gli sviluppatori di moduli e gli autori possono scrivere regole, a livello di modulo, nell&#39;editor di codice per ignorare i gestori predefiniti. La risposta del server per gli eventi di successo e di errore è esposta a livello di modulo, a cui gli sviluppatori possono accedere utilizzando `$event.data` nelle regole.
 
 Effettuate le seguenti operazioni per scrivere le regole nell&#39;editor di codice per gestire gli eventi di successo e di errore.
 
