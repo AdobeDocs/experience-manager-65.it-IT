@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -120,14 +120,14 @@ Vediamo un esempio di come impostare un server proxy inverso Apache 2.4 senza di
 
 1. Aprite il file di `httpd.conf` configurazione e rimuovete il commento dalle seguenti righe di codice. In alternativa, è possibile aggiungere queste righe di codice nel file.
 
-   ```
+   ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. Configurate le regole del proxy aggiungendo le seguenti righe di codice nel file di `httpd-proxy.conf` configurazione.
 
-   ```
+   ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
@@ -136,7 +136,7 @@ Vediamo un esempio di come impostare un server proxy inverso Apache 2.4 senza di
 
 Se non installi il server AEM su un percorso contestuale, le regole del proxy sul livello Apache saranno le seguenti:
 
-```java
+```text
 ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
@@ -151,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Se configurate un’altra topologia, accertatevi di aggiungere gli URL di invio, precompilazione e altri URL all’elenco consentito nel livello dispatcher.
+>Se configurate un’altra topologia, accertatevi di aggiungere gli URL di invio, precompilazione e altri URL al inserire nell&#39;elenco Consentiti  del livello del dispatcher.
 
 ## Best practices {#best-practices}
 
