@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6822'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ## Panoramica {#overview}
 
-La funzione Editor regole di Adobe Experience Manager Forms consente agli utenti aziendali e agli sviluppatori di moduli di scrivere regole sugli oggetti modulo adattivi. Queste regole definiscono le azioni da eseguire sugli oggetti modulo in base a condizioni predefinite, input dell&#39;utente e azioni dell&#39;utente sul modulo. Consente di semplificare ulteriormente la compilazione dei moduli, garantendo precisione e velocità.
+La funzione Editor regole di  Adobe Experience Manager Forms consente agli utenti aziendali e agli sviluppatori di moduli di scrivere regole sugli oggetti modulo adattivi. Queste regole definiscono le azioni da eseguire sugli oggetti modulo in base a condizioni predefinite, input dell&#39;utente e azioni dell&#39;utente sul modulo. Consente di semplificare ulteriormente la compilazione dei moduli, garantendo precisione e velocità.
 
 L&#39;editor di regole fornisce un&#39;interfaccia utente intuitiva e semplificata per scrivere le regole. L’editor delle regole offre un editor visivo a tutti gli utenti. Inoltre, solo per gli utenti che utilizzano i moduli, l&#39;editor di regole fornisce un editor di codice per scrivere regole e script. Alcune delle azioni chiave che è possibile eseguire sugli oggetti modulo adattivi utilizzando le regole sono:
 
@@ -134,11 +137,11 @@ Durante la scrittura di una regola Quando, è possibile attivare l&#39;azione Ca
 
 Oltre al servizio del modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio del modello dati modulo presenta molti vantaggi e l&#39;approccio consigliato per richiamare un servizio.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, consultate Integrazione [dati di](/help/forms/using/data-integration.md)AEM Forms.
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere Integrazione [dei dati](/help/forms/using/data-integration.md)AEM Forms.
 
 **Impostare il valore** Computes e impostare il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando l&#39;espressione o la funzione matematica, il valore di una proprietà di un oggetto o il valore di output da un servizio del modello dati del modulo configurato. Quando si sceglie l&#39;opzione del servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo nell&#39;istanza di AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, consultate Integrazione [dati di](/help/forms/using/data-integration.md)AEM Forms.
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere Integrazione [dei dati](/help/forms/using/data-integration.md)AEM Forms.
 
 Il tipo di regola **Imposta proprietà** consente di impostare il valore di una proprietà dell&#39;oggetto specificato in base a un&#39;azione di condizione.
 
@@ -343,7 +346,7 @@ Visualizza il titolo dell&#39;oggetto modulo adattivo tramite il quale sono stat
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
-Il riquadro a sinistra nell&#39;interfaccia utente dell&#39;editor di regole include due schede: Oggetti **[!UICONTROL e]** funzioni **[!UICONTROL di]** Forms
+Il riquadro a sinistra nell&#39;interfaccia utente dell&#39;editor di regole include due schede: **[!UICONTROL Oggetti]** e **[!UICONTROL funzioni]** dei moduli.
 
 La scheda Oggetti modulo mostra una visualizzazione gerarchica di tutti gli oggetti contenuti nel modulo adattivo. Visualizza il titolo e il tipo degli oggetti. Durante la scrittura di una regola, è possibile trascinare gli oggetti modulo nell&#39;editor di regole. Durante la creazione o la modifica di una regola quando si trascina un oggetto o una funzione in un segnaposto, il segnaposto assume automaticamente il tipo di valore appropriato.
 
@@ -373,7 +376,7 @@ Per ulteriori informazioni sull&#39;utilizzo dell&#39;editor di regole visive, v
 
 Gli utenti del gruppo form-power-users possono accedere all&#39;editor di codice. Per altri utenti, l’editor di codice non è disponibile. Se disponete dei diritti, potete passare dalla modalità editor visivo alla modalità editor di codice dell&#39;editor di regole e viceversa, utilizzando lo switcher immediatamente sopra l&#39;editor di regole. Quando si avvia l&#39;editor di regole la prima volta, questo viene aperto in modalità editor visivo. È possibile scrivere regole in modalità editor visivo o passare alla modalità editor di codice per scrivere uno script di regola. Tuttavia, se modificate una regola o scrivete una regola nell&#39;editor di codice, non potete tornare all&#39;editor visivo per tale regola a meno che non cancellate l&#39;editor di codice.
 
-AEM Forms tiene traccia della modalità editor regole utilizzata per l&#39;ultima volta per scrivere una regola. Quando si avvia l&#39;editor di regole la prossima volta, questo si apre in tale modalità. Tuttavia, potete anche configurare una modalità predefinita per aprire l&#39;editor di regole nella modalità specificata. A questo scopo:
+AEM Forms tiene traccia della modalità editor regole utilizzata per scrivere una regola. Quando si avvia l&#39;editor di regole la prossima volta, questo si apre in tale modalità. Tuttavia, potete anche configurare una modalità predefinita per aprire l&#39;editor di regole nella modalità specificata. A questo scopo:
 
 1. Andate alla console Web di AEM all&#39;indirizzo `https://[host]:[port]/system/console/configMgr`.
 1. Fare clic per modificare il servizio **[!UICONTROL di configurazione del modulo]** adattivo.
@@ -473,6 +476,7 @@ Effettuare le seguenti operazioni per scrivere le regole:
    * Selezionare **Plus** dal campo **Seleziona operatore** .
 
    * Selezionare o trascinare il campo Stipendio **del** coniuge dalla scheda Oggetto Forms nell&#39;altro oggetto **Drop oppure selezionare il campo qui** .
+
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
 1. Quindi, toccate l&#39;area evidenziata intorno al campo espressione e toccate **Estendi espressione**.
@@ -500,6 +504,7 @@ Effettuare le seguenti operazioni per scrivere le regole:
    * Seleziona **è uguale** al campo **Seleziona operatore** .
 
    * Selezionare Stringa nell&#39;altro oggetto **Drop oppure selezionare qui** field e specificare **Sposato** nel campo **Enter a String** .
+
    La regola viene finalmente visualizzata come segue nell&#39;editor di regole.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Toccate **Fine** per salvare la regola.
@@ -546,30 +551,40 @@ For more information, see [usejsdoc.org](https://usejsdoc.org/).
 
 Tag supportati `jsdoc` :
 
-* **Sintassi privata**: `@private`Una funzione privata non è inclusa come funzione personalizzata.
+* **Sintassi privata**: 
+Una funzione privata non è inclusa come funzione personalizzata.`@private`
+Una funzione privata non è inclusa come funzione personalizzata.
 
-* **Sintassi nome**: `@name funcName <Function Name>`In alternativa `,` è possibile utilizzare: `@function funcName <Function Name>` o **o** `@func` `funcName <Function Name>`.
+* **Sintassi nome**: 
+In `@name funcName <Function Name>`alternativa `,` è possibile utilizzare: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
    `funcName` è il nome della funzione (non sono consentiti spazi).
    `<Function Name>` è il nome visualizzato della funzione.
 
-* **Sintassi membro**: Associa `@memberof namespace`uno spazio dei nomi alla funzione.
+* **Sintassi membro**: 
+Associa uno spazio dei nomi alla funzione.`@memberof namespace`
+Associa uno spazio dei nomi alla funzione.
 
-* **Sintassi parametro**: In `@param {type} name <Parameter Description>`alternativa, potete utilizzare: `@argument``{type} name <Parameter Description>` o **** `@arg``{type}` `name <Parameter Description>`.
+* **Sintassi parametro**: 
+In alternativa, potete utilizzare: `@param {type} name <Parameter Description>`
+In alternativa, potete utilizzare: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}``name <Parameter Description>`.
 Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag di parametro, un tag per ogni parametro nell&#39;ordine di occorrenza.
    `{type}` rappresenta il tipo di parametro. I tipi di parametri consentiti sono:
 
    1. string
    1. numero
    1. booleano
+
    Tutti gli altri tipi di parametri sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertatevi di selezionare uno dei tipi riportati sopra. I tipi non fanno distinzione tra maiuscole e minuscole. Gli spazi non sono consentiti nel parametro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Tipo** di ritorno: In `@return {type}`alternativa, potete utilizzare `@returns {type}`.
+* **Tipo**di ritorno: 
+In alternativa, potete utilizzare `@return {type}`Alternativamente `@returns {type}`.
 Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
 {type} rappresenta il tipo restituito dalla funzione. I tipi restituiti consentiti sono:
 
    1. string
    1. numero
    1. booleano
+
    Tutti gli altri tipi di reso sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertatevi di selezionare uno dei tipi riportati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
 
 >[!NOTE]
@@ -606,7 +621,7 @@ Per aprire un modulo in modalità di modifica, selezionare un modulo e toccare *
 
 **Istruzione Function**
 
-```
+```javascript
 function area(len) {
     return len*len;
 }
@@ -616,7 +631,7 @@ Questa funzione è inclusa senza `jsdoc` commenti.
 
 **Espressione funzione**
 
-```
+```javascript
 var area;
 //Some codes later
 /** */
@@ -698,7 +713,7 @@ Per copiare e incollare le regole, effettuate le seguenti operazioni:
 
    Per informazioni sulla gestione delle regole esistenti, consultate [Gestire le regole](../../forms/using/rule-editor.md#p-manage-rules-p).
 
-1. Selezionare la casella di controllo accanto al titolo della regola. Vengono visualizzate ulteriori opzioni per gestire la regola. Tocca **Copia**.
+1. Selezionate la casella di controllo accanto al titolo della regola. Vengono visualizzate ulteriori opzioni per gestire la regola. Tocca **Copia**.
 
    ![copyrule2](assets/copyrule2.png)
 
@@ -750,9 +765,9 @@ Se l&#39;utente indica che ha soggiornato presso il suo attuale indirizzo di res
 
 ## Impatto dell&#39;editor di regole sugli script esistenti {#impact-of-rule-editor-on-existing-scripts}
 
-Nelle versioni di AEM Forms precedenti al feature pack 1 di AEM 6.1 Forms, gli autori e gli sviluppatori di moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamenti dinamici ai moduli adattivi. La scheda Script viene ora sostituita dall&#39;editor di regole.
+Nelle versioni AEM Forms precedenti al feature pack 1 di AEM 6.1 per moduli, gli autori e gli sviluppatori dei moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamenti dinamici ai moduli adattivi. La scheda Script viene ora sostituita dall&#39;editor di regole.
 
-Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell&#39;editor delle regole. Anche se non è possibile visualizzarli o modificarli nell&#39;editor visivo, se si fa parte del gruppo di utenti di moduli è possibile modificare gli script nell&#39;editor di codice.
+Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell&#39;editor delle regole. Anche se non è possibile visualizzarli o modificarli nell&#39;editor visivo, se si fa parte del gruppo di utenti che si occupano di moduli è possibile modificare gli script nell&#39;editor di codice.
 
 ## Regole di esempio {#example}
 
