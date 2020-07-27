@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10273'
+ht-degree: 0%
 
 ---
 
@@ -116,7 +119,7 @@ Se l&#39;autenticazione estesa è abilitata, gli utenti che aprono un documento 
 1. Aprite il file in un editor e individuate il nodo AllowedUrls.
 1. Nel `AllowedUrls` nodo, aggiungere le seguenti righe: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
-   ```as3
+   ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
    <entry key="sso-s" value="/ssoexample"/>
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
@@ -140,7 +143,7 @@ I destinatari dei documenti protetti tramite criterio possono portare i document
 
 1. Nella pagina di protezione del documento, fare clic su Configurazione > Configurazione server.
 1. Nella casella Periodo di leasing offline predefinito, specificare il numero di giorni per il periodo di leasing offline.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ### Gestire i rollover delle chiavi {#manage-key-rollovers}
 
@@ -164,7 +167,7 @@ Per motivi di riservatezza, quando si utilizzano documenti offline, Document Sec
 
 1. Nella pagina Protezione documento, fare clic su Configurazione > Gestione chiavi.
 1. Nella casella Frequenza rollover chiave, digitate il numero di giorni per il periodo di rollover.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 **Passate manualmente il puntatore del mouse sulle chiavi principali**
 
@@ -210,7 +213,7 @@ Quando abilitate il controllo del server, potete visualizzare gli eventi sottopo
 
       Consultate Opzioni [di controllo degli](configuring-client-server-options.md#event-auditing-options)eventi.
 
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 >[!NOTE]
 >
@@ -228,7 +231,7 @@ Potete attivare e disattivare un messaggio di notifica sulla privacy. Quando abi
    Se il criterio allegato a un documento non consente l&#39;accesso anonimo, l&#39;utente visualizzerà il messaggio di notifica della privacy.
 
 1. Se applicabile, nella casella URL privacy digitare l&#39;URL della pagina dell&#39;informativa sulla privacy. Se la casella URL privacy viene lasciata vuota, viene visualizzata la pagina sulla privacy di adobe.com.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 >[!NOTE]
 >
@@ -241,13 +244,13 @@ Se si utilizza un&#39;applicazione abilitata per la protezione dei documenti che
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Configuration > Gestione eventi.
 1. Fate clic su Sfoglia per passare al file XML da importare e fate clic su Importa.
 1. L&#39;importazione sovrascrive i tipi di evento di controllo personalizzato esistenti sul server se vengono trovate combinazioni identiche per il codice evento e lo spazio dei nomi.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ### Eliminazione di un tipo di evento di controllo personalizzato {#delete-a-custom-audit-event-type}
 
 1. Nella console di amministrazione, fate clic su Servizi > Protezione documento > Configurazione > Gestione eventi.
 1. Selezionare la casella di controllo accanto al tipo di evento di controllo personalizzato da eliminare e fare clic su Elimina.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ### Esportazione di eventi di controllo {#export-audit-events}
 
@@ -514,14 +517,14 @@ Potete creare modelli di filigrane dinamiche. Tali modelli restano disponibili c
    Selezionare la posizione in cui si desidera visualizzare la filigrana. Per impostazione predefinita, la filigrana viene visualizzata sia in copia software (online) che in copia cartacea (stampa).
 
 1. Fate clic su **Nuovo** in Elementi filigrana per aggiungere altri elementi di filigrana, se necessario.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ### Modificare un modello di filigrana dinamica {#edit-a-dynamic-watermark-template}
 
 1. Nella console di amministrazione, fate clic su Servizi > Protezione documento > Configurazione > Filigrane.
 1. Fare clic sulla filigrana appropriata nell&#39;elenco.
 1. Nella pagina Modifica filigrane, modificare le impostazioni in base alle esigenze.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ### Eliminare un modello di filigrana dinamica {#delete-a-dynamic-watermark-template}
 
@@ -529,7 +532,7 @@ Quando si elimina una filigrana dinamica, non è più possibile aggiungerla a un
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Configuration > Watermarks.
 1. Selezionate la casella accanto alla filigrana appropriata e fate clic su Elimina.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ## Configurazione della registrazione degli utenti invitati {#configuring-invited-user-registration}
 
@@ -567,7 +570,7 @@ Per impostazione predefinita, il processo di registrazione degli utenti invitati
    * [Configurare un messaggio e-mail per la reimpostazione della password](configuring-client-server-options.md#configure-a-password-reset-email)
 
 1. (Facoltativo) In Registrazione incorporata, selezionate Sì per abilitare questa opzione. Se non abilitate la registrazione integrata, dovete configurare il vostro sistema di registrazione utente.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ### Escludere o includere un utente o un gruppo esterno {#exclude-or-include-an-external-user-or-group}
 
@@ -736,14 +739,14 @@ Utilizzando il file di configurazione potete effettuare le seguenti modifiche:
 
 1. Nella console di amministrazione, fare clic su Servizi > Protezione documento 11 > Configurazione > Configurazione manuale.
 1. Fate clic su Esporta e salvate il file di configurazione in un’altra posizione. Il nome file predefinito è config.xml.
-1. Fate clic su OK.
+1. Fai clic su OK.
 1. Prima di modificare il file di configurazione, effettuate una copia di backup nel caso sia necessario ripristinarlo.
 
 **Importare un file di configurazione**
 
 1. Nella console di amministrazione, fare clic su Servizi > Protezione documento 11 > Configurazione > Configurazione manuale.
 1. Fate clic su Sfoglia per passare al file di configurazione e quindi su Importa. Non è possibile digitare il percorso direttamente nella casella Nome file.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ### Specificare un periodo di timeout per la sincronizzazione offline {#specify-a-timeout-period-for-offline-synchronization}
 
@@ -819,7 +822,7 @@ Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato 
 1. Esportare il file di configurazione della protezione del documento. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 1. Apri il file di configurazione in un editor e individua il `PolicyServer` nodo. Aggiungi un `ClientVersionRules` nodo come figlio immediato del `PolicyServer` nodo, se non esiste:
 
-   ```as3
+   ```java
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -855,6 +858,7 @@ Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato 
    * Apple OS X
    * Sun Solaris
    * HP-UX
+
    `SDKVersions` specifica la versione dell&#39;API client C++ di protezione del documento utilizzata dall&#39;applicazione client. Esempio, `"8.2"`.
 
    `APPFamilies` è definita dall&#39;API client.
@@ -875,7 +879,7 @@ Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato 
 
 In questo esempio, a tutti i client Windows viene negato l&#39;accesso.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -893,7 +897,7 @@ In questo esempio, a tutti i client Windows viene negato l&#39;accesso.
 
 In questo esempio, l&#39;accesso alla versione della mia applicazione 3.0 e alla versione della mia altra applicazione 2.0 non è consentito. Lo stesso URL negazioni informazioni viene utilizzato indipendentemente dal motivo del rifiuto.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -918,7 +922,7 @@ In questo esempio, l&#39;accesso alla versione della mia applicazione 3.0 e alla
 
 In questo esempio, tutte le richieste provenienti da un&#39;installazione di Microsoft PowerPoint 2007 o Microsoft PowerPoint 2010 di Acrobat Reader DC con estensioni per Microsoft Office vengono negate.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -951,7 +955,7 @@ Per impostazione predefinita, è possibile specificare fino a cinque elementi in
 
    La seconda voce, *max elements* , è il numero massimo di elementi consentiti in una filigrana. Il valore predefinito è 5.
 
-   ```as3
+   ```java
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -971,7 +975,7 @@ Le seguenti modifiche al file config.xml disattivano tutti i collegamenti estern
 1. Apri il file di configurazione in un editor e individua il `DisplaySettings` nodo.
 1. Per disattivare tutti i collegamenti esterni, nel `DisplaySettings` nodo aggiungere la seguente voce e salvare il file: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```as3
+   ```java
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -985,7 +989,7 @@ Le seguenti modifiche al file config.xml abilitano il supporto TLS per la funzio
 1. Apri il file di configurazione in un editor e individua il `DisplaySettings` nodo.
 1. Individua il nodo seguente: `<node name="ExternalUser">`
 
-   ```as3
+   ```java
    <node name="ExternalUser">
    ```
 
@@ -1001,7 +1005,7 @@ Le seguenti modifiche al file config.xml per disabilitare gli endpoint SOAP per 
 1. Esportare il file di configurazione della protezione del documento. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 1. Aprite il file di configurazione in un editor e individuate il seguente nodo: `<node name="DRM">`
 
-   ```as3
+   ```java
    <node name="DRM">
    ```
 
@@ -1011,7 +1015,7 @@ Le seguenti modifiche al file config.xml per disabilitare gli endpoint SOAP per 
 
 1. Per disabilitare gli endpoint SOAP per i documenti di protezione, impostare l&#39;attributo value su **false**.
 
-   ```as3
+   ```java
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
