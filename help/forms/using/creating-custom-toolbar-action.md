@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
 translation-type: tm+mt
-source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -44,17 +47,17 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
 1. Selezionare `cq:template` il nodo nel `reviewbeforesubmit` nodo. Assicurarsi che il valore della `guideNodeClass` proprietà sia `guideButton` e modificare di conseguenza la `jcr:title` proprietà.
 1. Modificare la proprietà type nel `cq:Template` nodo. Per l&#39;esempio corrente, modificare la proprietà type in button.
 
-   Il valore type viene aggiunto come classe CSS nel codice HTML generato per il componente. Gli utenti possono utilizzare la classe CSS per definire lo stile delle proprie azioni. Lo stile predefinito per dispositivi mobili e desktop è disponibile per i valori di pulsante, invio, ripristino e salvataggio.
+   Il valore type viene aggiunto come classe CSS nel codice HTML generato per il componente. Gli utenti possono utilizzare la classe CSS per definire lo stile delle proprie azioni. Lo stile predefinito per i dispositivi mobili e desktop è disponibile per i valori di pulsante, invio, ripristino e salvataggio.
 
 1. Selezionare l&#39;azione personalizzata dalla finestra di dialogo della barra degli strumenti per la modifica di moduli adattivi. Nella barra degli strumenti del pannello viene visualizzato il pulsante Revisione.
 
-   ![Azione personalizzata è disponibile nella barra degli strumenti](assets/custom_action_available_in_toolbar.png) ![Visualizzazione dell&#39;azione personalizzata della barra degli strumenti](assets/action7.png)
+   ![L&#39;azione personalizzata è disponibile nella barra degli strumenti](assets/custom_action_available_in_toolbar.png) ![Visualizza l&#39;azione personalizzata della barra degli strumenti](assets/action7.png)
 
 1. Per fornire funzionalità al pulsante Review, aggiungete codice JavaScript e CSS e codice lato server nel file init.jsp, presente all&#39;interno del `reviewbeforesubmit` nodo.
 
    Aggiungi il seguente codice in `init.jsp`.
 
-   ```
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <guide:initializeBean name="guideField" className="com.adobe.aemds.guide.common.GuideButton"/>
    
@@ -112,7 +115,7 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
 
    Aggiungi il codice seguente nel `ReviewBeforeSubmit.js` file.
 
-   ```
+   ```javascript
    /*anonymous function to handle show of review before submit view */
    $(function () {
        if($("div.reviewbeforesubmit button[id*=reviewbeforesubmit]").length > 0) {
@@ -174,7 +177,7 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
    }
    ```
 
-1. Per verificare la funzionalità dell’azione personalizzata, aprire il modulo adattivo in modalità Anteprima e fare clic su Revisione nella barra degli strumenti.
+1. Per verificare la funzionalità dell’azione personalizzata, aprire il modulo adattivo in modalità Anteprima e fare clic su Rivedi nella barra degli strumenti.
 
    >[!NOTE]
    >
@@ -184,6 +187,6 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
 
 ## Esempi {#samples}
 
-Il seguente archivio contiene un pacchetto di contenuti. Il pacchetto include un modulo adattivo correlato alla dimostrazione sopra riportata dell’azione personalizzata della barra degli strumenti.
+Il seguente archivio contiene un pacchetto di contenuti. Il pacchetto include un modulo adattivo correlato alla dimostrazione sopra riportata dell’azione personalizzata per la barra degli strumenti.
 
 [Ottieni file](assets/customtoolbaractiondemo.zip)
