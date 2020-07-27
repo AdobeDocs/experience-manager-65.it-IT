@@ -1,22 +1,25 @@
 ---
 title: Personalizzare le tabelle di tracciamento
 seo-title: Personalizzare le tabelle di tracciamento
-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro Moduli AEM.
-seo-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro Moduli AEM.
+description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro AEM Forms.
+seo-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro AEM Forms.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
 
 # Personalizzare le tabelle di tracciamento{#customize-tracking-tables}
 
-La scheda di tracciamento nell&#39;area di lavoro Moduli AEM viene utilizzata per visualizzare i dettagli delle istanze del processo alle quali l&#39;utente connesso è coinvolto. Per visualizzare le tabelle di tracciamento, selezionare innanzitutto un nome di processo nel riquadro a sinistra per visualizzare l&#39;elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare nel riquadro a destra una tabella delle attività generate dall&#39;istanza. Per impostazione predefinita, nelle colonne della tabella sono visualizzati i seguenti attributi attività (l&#39;attributo corrispondente nel modello attività è specificato tra parentesi):
+La scheda di tracciamento nell’area di lavoro AEM Forms viene utilizzata per visualizzare i dettagli delle istanze del processo in cui è coinvolto l’utente che ha effettuato l’accesso. Per visualizzare le tabelle di tracciamento, selezionare innanzitutto un nome di processo nel riquadro a sinistra per visualizzare l&#39;elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare nel riquadro a destra una tabella delle attività generate dall&#39;istanza. Per impostazione predefinita, nelle colonne della tabella sono visualizzati i seguenti attributi attività (l&#39;attributo corrispondente nel modello attività è specificato tra parentesi):
 
 * ID ( `taskId`)
 * Nome ( `stepName`)
@@ -113,13 +116,13 @@ Gli attributi rimanenti nel modello attività disponibili per la visualizzazione
  </tbody>
 </table>
 
-Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche nel codice sorgente. Consultate [Introduzione alla personalizzazione dell’area](/help/forms/using/introduction-customizing-html-workspace.md) di lavoroModuli AEM per informazioni su come apportare modifiche semantiche utilizzando l’SDK dell’area di lavoro e per creare un pacchetto ridotto dall’origine modificata.
+Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche nel codice sorgente. Consultate [Introduzione all’area](/help/forms/using/introduction-customizing-html-workspace.md) di lavoroPersonalizzazione AEM Forms per informazioni su come effettuare modifiche semantiche utilizzando l’SDK dell’area di lavoro e come creare un pacchetto ridotto dall’origine modificata.
 
 ## Modifica delle colonne di tabella e relativo ordine {#changing-table-columns-and-their-order}
 
 1. Per modificare gli attributi attività visualizzati nella tabella e il relativo ordine, configurate il file /ws/js/runtime/templates/processinstancehistory.html :
 
-   ```as3
+   ```html
    <table>
        <thead>
            <tr>
@@ -134,7 +137,7 @@ Per le seguenti personalizzazioni nella tabella delle attività, è necessario a
    </table>
    ```
 
-   ```as3
+   ```html
    <table>
        <tbody>
            <%_.each(obj, function(task){%>
@@ -157,7 +160,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
 
 1. Registra un gestore di clic per `.fixedTaskTableHeader th` il file `js/runtime/views/processinstancehistory.js`.
 
-   ```as3
+   ```javascript
    events: {
        //other handlers
        "click .fixedTaskTableHeader th": "onTaskTableHeaderClick",
@@ -167,7 +170,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
 
    Nel gestore, richiamare la `onTaskTableHeaderClick` funzione di `js/runtime/util/history.js`.
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick: function (event) {
            history.onTaskTableHeaderClick(event);
    }
@@ -179,7 +182,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
 
    L&#39;ordinamento viene eseguito utilizzando la funzione di ordinamento Backbone nella raccolta di elenchi di task fornendo una funzione di confronto.
 
-   ```as3
+   ```javascript
        return {
            //other methods
            onTaskTableHeaderClick  : onTaskTableHeaderClick,
@@ -187,7 +190,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
        };
    ```
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick = function (event) {
            var target = $(event.target),
             comparator,
