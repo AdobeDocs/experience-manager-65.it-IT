@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Gli utenti potrebbero riscontrare un tempo di risposta più lento se appartengon
 1. Per esportare l’impostazione di configurazione corrente in un file, fate clic su **[!UICONTROL Esporta]** e salvate il file di configurazione in un’altra posizione.
 1. Aggiungete il seguente nodo (in grassetto):
 
-   ```as3
+   ```xml
     <node name="UM">
     <map/>
     <node name="PrincipalCache">
