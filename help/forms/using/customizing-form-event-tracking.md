@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +64,7 @@ In un modulo adattivo abilitato per l&#39;analisi, vengono tracciati gli eventi 
 
 ## Personalizzazione del timeout dell’evento visita sul campo {#customizing-the-field-visit-event-timeout}
 
-Nella configurazione predefinita del modulo AEM, se un utente trascorre più di 60 secondi su un campo, viene attivato un `fieldvisit` evento e i dettagli del campo vengono inviati ad Adobe Analytics. Puoi personalizzare la linea di base per il tracciamento dell’ora del campo nella configurazione di AEM Forms Analytics nella console di configurazione di AEM (sistema/console/configMgr) per aumentare o diminuire il limite di timeout.
+Nella configurazione predefinita del modulo AEM, se un utente trascorre più di 60 secondi su un campo, viene attivato un `fieldvisit` evento e i dettagli del campo vengono inviati ad Adobe  Analytics. Puoi personalizzare la linea di base per il tracciamento dell’ora del campo in AEM Forms  configurazione Analytics nella console di configurazione AEM (/system/console/configMgr) per aumentare o diminuire il limite di timeout.
 
 ## Personalizzazione degli eventi di tracciamento {#customizing-the-tracking-events}
 
@@ -75,11 +78,11 @@ Potete modificare la `trackEvent`funzione disponibile nel `/libs/afanalytics/js/
 
 * Potete scegliere di non inviare l&#39;evento al server di analisi.
 
-### Esempio {#sample}
+### Esempi {#sample}
 
-Nell&#39;esempio seguente viene mantenuto lo stato per l&#39;evento *error* di ogni attributo *fieldName* . L&#39;evento viene inviato al server di analisi solo se si verifica nuovamente un errore.
+Nell&#39;esempio seguente, lo stato per l&#39;evento *error* di ogni attributo *fieldName* viene mantenuto. L&#39;evento viene inviato al server di analisi solo se si verifica di nuovo un errore.
 
-```
+```javascript
 case 'error':
         if(errorOccurred[variableValueMap.fieldName] == true) {
             pushEvent(eventName, variableValueMap)
@@ -90,10 +93,10 @@ case 'error':
 
 ## Personalizzazione dell’evento panelvisit {#customizing-the-panelvisit-event}
 
-Nella configurazione predefinita di AEM Forms, dopo 60 secondi, viene verificato se la finestra contenente il modulo adattivo è attiva. Se la finestra è attiva, viene attivato un `panelVisit`evento in Adobe Analytics. È utile verificare che il documento o il modulo sia attivo e calcolare il tempo impiegato per il modulo o il documento corrispondente.
+Nella configurazione dei AEM Forms predefiniti, dopo 60 secondi, viene verificato se la finestra contenente il modulo adattivo è attiva. Se la finestra è attiva, viene attivato un `panelVisit`evento in Adobe  Analytics. È utile verificare che il documento o il modulo sia attivo e calcolare il tempo impiegato per il modulo o il documento corrispondente.
 
 >[!NOTE]
 >
 >Il nome dell&#39;evento utilizzato per tenere traccia dell&#39;attività e calcolare il tempo trascorso è &quot;panelVisit&quot;. Questo evento è diverso dall’evento della visita del pannello elencato nella tabella precedente.
 
-Potete modificare la funzione ScheduleHeartBeatCheck disponibile nel `/libs/afanalytics/js/custom.js` file per modificare o interrompere l&#39;evento inviato ad Adobe Analytics a intervalli regolari.
+È possibile modificare la funzione ScheduleHeartBeatCheck disponibile nel `/libs/afanalytics/js/custom.js` file per modificare o interrompere l&#39;evento inviato ad Adobe  Analytics a intervalli regolari.
