@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '7077'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ## Passaggi del flusso di lavoro Moduli {#forms-workflow-steps}
 
-I passaggi del flusso di lavoro per i moduli eseguono operazioni specifiche per i moduli AEM in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente in OSGi un flusso di lavoro incentrato sui moduli adattivi basato su moduli. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi del flusso di lavoro per moduli per avviare Document Services, integrarsi con il flusso di lavoro di firma Adobe Sign ed eseguire altre operazioni AEM Forms. Per utilizzare questi passaggi in un flusso di lavoro è necessario il componente aggiuntivo [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms.
+I passaggi del flusso di lavoro per i moduli eseguono operazioni specifiche per i AEM Forms in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente in OSGi un flusso di lavoro incentrato sui moduli adattivi basato su moduli. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi del flusso di lavoro per moduli per avviare Document Services, integrarsi con il flusso di lavoro di firma Adobe Sign ed eseguire altre operazioni sui AEM Forms. Per utilizzare questi passaggi in un flusso di lavoro è necessario un componente aggiuntivo per [AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) .
 
 ## Assign task step {#assign-task-step}
 
@@ -75,7 +78,7 @@ Il passaggio dell&#39;attività di assegnazione crea un&#39;attività e la asseg
    * **Salva modello di layout utilizzando:** Salvare il modello di layout utilizzando un percorso relativo al payload o memorizzarlo in una variabile del tipo di dati Documento. Il modello [di](../../forms/using/layout-design-details.md) layout fa riferimento a un file XDP creato con Forms Designer. Questa opzione è disponibile solo se si seleziona Interattivo agente di comunicazione dall&#39;elenco a discesa Tipo.
 
 * **Assegnatario > Opzioni di assegnazione:** Specificare il metodo per assegnare l’attività a un utente. Potete assegnare dinamicamente l’attività a un utente o a un gruppo utilizzando lo script Selezione partecipanti o assegnando l’attività a un utente o gruppo AEM specifico.
-* **Selezione partecipanti:** L&#39;opzione è disponibile quando l&#39;opzione **Dinamicamente per un utente o un gruppo** è selezionata nel campo Assegna opzioni. È possibile utilizzare uno script ECMAS o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consultate Assegnare [dinamicamente un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creare un passaggio personalizzato per i partecipanti dinamici di Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **Selezione partecipanti:** L&#39;opzione è disponibile quando l&#39;opzione **Dinamicamente per un utente o un gruppo** è selezionata nel campo Assegna opzioni. È possibile utilizzare uno script ECMAS o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consultate Assegnare [dinamicamente un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio di partecipante dinamico a un Adobe Experience Manager  personalizzato.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 * **Partecipanti:** Il campo è disponibile quando l’opzione **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nel campo Selezione **partecipanti** . Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -173,7 +176,7 @@ Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i fi
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-È possibile utilizzare [AEM Forms Data Integration](../../forms/using/data-integration.md) per configurare e connettersi a origini dati diverse. Queste origini dati possono essere un database, un servizio Web, un servizio REST, un servizio OData e una soluzione CRM. L&#39;integrazione dei dati di AEM Forms consente di creare un modello di dati del modulo che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati nel database configurato. È possibile utilizzare il passaggio **** Richiama servizio modello dati per selezionare un modello dati del modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati a origini dati diverse.
+È possibile utilizzare Integrazione [dati](../../forms/using/data-integration.md) AEM Forms per configurare e connettersi a origini dati diverse. Queste origini dati possono essere un database, un servizio Web, un servizio REST, un servizio OData e una soluzione CRM. L&#39;integrazione dei dati dei AEM Forms consente di creare un modello dati del modulo che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati nel database configurato. È possibile utilizzare il passaggio **** Richiama servizio modello dati per selezionare un modello dati del modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati a origini dati diverse.
 
 Per spiegare gli input per i campi del passaggio, la seguente tabella di database e il file JSON sono utilizzati come esempio:
 
@@ -206,26 +209,26 @@ Per spiegare gli input per i campi del passaggio, la seguente tabella di databas
 
 **Esempio di file JSON**
 
-```
-{ 
-  customer: { 
-   firstName: "Sarah", 
-   lastName:"Rose", 
-   customerId: "1", 
-   emailAddress:"srose@we.info" 
- }, 
-  insurance: {
-   customerId: "1", 
-  policyType: "Premium,
-  policyNumber: "Premium-521499",
-  customerDetails: { 
-   firstName: "Sarah",
-   lastName: "Rose",
-   customerId: "1",
-   emailAddress: "srose@we.info" 
-  }
- }
-}
+```json
+  { 
+    customer: { 
+     firstName: "Sarah", 
+     lastName:"Rose", 
+     customerId: "1", 
+     emailAddress:"srose@we.info" 
+   }, 
+    insurance: {
+     customerId: "1", 
+    policyType: "Premium,
+    policyNumber: "Premium-521499",
+    customerDetails: { 
+     firstName: "Sarah",
+     lastName: "Rose",
+     customerId: "1",
+     emailAddress: "srose@we.info" 
+    }
+   }
+  }
 ```
 
 Il passaggio Richiama servizio modello dati modulo include i campi elencati di seguito per facilitare le operazioni del modello dati del modulo:
@@ -260,7 +263,7 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 
 * **Impostazioni internazionali:** Specificate la lingua per le opzioni e-mail e verifica. È possibile memorizzare le impostazioni internazionali in una variabile del tipo di dati String o selezionare **Letterale** per scegliere le impostazioni internazionali dall&#39;elenco delle opzioni disponibili. È necessario definire il codice delle impostazioni internazionali durante la memorizzazione del valore delle impostazioni internazionali in una variabile. Ad esempio, specificate **en_US** per l’inglese e **fr_FR** per il francese.
 
-* **Configurazione** di Adobe Sign Cloud: Scegliere una configurazione di Adobe Sign Cloud. Se non è stato configurato Adobe Sign per AEM Forms, consulta [Integrazione di Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Configurazione** di Adobe Sign Cloud: Scegliere una configurazione di Adobe Sign Cloud. Se non hai configurato Adobe Sign per AEM Forms, consulta [Integrazione di Adobe Sign con i AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Selezionare il documento da firmare utilizzando:** È possibile scegliere un documento da una posizione relativa al payload, utilizzare payload come documento, specificare un percorso assoluto del documento o recuperare il documento memorizzato in una variabile del tipo di dati Documento.
 * **Giorni fino alla scadenza:** Un documento viene contrassegnato come scaduto (scadenza trascorsa) dopo l&#39;assenza di attività sull&#39;attività per il numero di giorni specificato nel campo **Giorni fino a scadenza** . Il numero di giorni contati dopo che il documento è stato assegnato a un utente per la firma.
@@ -276,9 +279,9 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 
 ## Passaggi di Document Services {#document-services-steps}
 
-AEM Document Services è un set di servizi per la creazione, l&#39;assemblaggio e la protezione di documenti PDF. AEM Forms fornisce un passaggio del flusso di lavoro AEM separato per ogni servizio documenti.
+AEM Document Services è un set di servizi per la creazione, l&#39;assemblaggio e la protezione di documenti PDF. I AEM Forms forniscono un passaggio del flusso di lavoro AEM separato per ogni servizio documenti.
 
-Simile ad altri passaggi del flusso di lavoro per i moduli AEM, quali Assegna attività, Invia e-mail e Firma documento, è possibile utilizzare le variabili in tutti i passaggi di AEM Document Services. Per ulteriori informazioni sulla creazione e gestione di variabili, consultate [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM.
+Simile ad altri passaggi del flusso di lavoro per AEM Forms, ad esempio Assegna attività, Invia e-mail e Firma documento, potete utilizzare le variabili in tutti i passaggi di AEM Document Services. Per ulteriori informazioni sulla creazione e gestione di variabili, consultate [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
@@ -309,7 +312,7 @@ Genera un documento PDF a partire da URL, HTML e file ZIP forniti.
 
 ### Passaggio Esporta dati {#export-data-step}
 
-Esporta i dati da moduli PDF o da un file XDP. È necessario immettere il percorso del file Documento di input e Formato dati di esportazione. Le opzioni di Esporta formato dati sono Auto, XDP e XmlData.
+Esporta i dati da un file PDF forms o XDP. È necessario immettere il percorso del file Documento di input e Formato dati di esportazione. Le opzioni di Esporta formato dati sono Auto, XDP e XmlData.
 
 ### Export PDF to specified type step {#export-pdf-to-specified-type-step}
 
@@ -341,7 +344,7 @@ Ottimizza i file PDF riducendone le dimensioni. Il risultato di questa conversio
 
 Le impostazioni di ottimizzazione specificano la modalità di ottimizzazione dei file. Di seguito sono riportati alcuni esempi di impostazioni:
 
-* Versione PDF di destinazione
+* Versione Target PDF
 * Eliminazione di oggetti quali azioni JavaScript e miniature di pagina incorporate
 * Eliminazione di dati utente quali commenti e allegati di file
 * Eliminazione delle impostazioni non valide o non utilizzate
@@ -359,7 +362,7 @@ Consente di eseguire il rendering di un modulo creato in Form Designer (XDP) in 
 
 ### Passaggio di protezione documento {#secure-document-step}
 
-Cifra, firma e certifica un documento. AEM Forms supporta sia la cifratura basata su password che quella basata su certificato. È inoltre possibile scegliere tra vari algoritmi per la firma dei documenti. Ad esempio, SHA-256 e SH-512. È inoltre possibile utilizzare il passaggio del flusso di lavoro per leggere ed estendere i documenti PDF. Il passaggio del flusso di lavoro fornisce l&#39;opzione per abilitare la decodifica dei codici a barre, le firme digitali, l&#39;importazione e l&#39;esportazione di dati PDF e altre opzioni.
+Cifra, firma e certifica un documento. I AEM Forms supportano sia la cifratura basata su password che quella basata su certificato. È inoltre possibile scegliere tra vari algoritmi per la firma dei documenti. Ad esempio, SHA-256 e SH-512. È inoltre possibile utilizzare il passaggio del flusso di lavoro per leggere ed estendere i documenti PDF. Il passaggio del flusso di lavoro fornisce l&#39;opzione per abilitare la decodifica dei codici a barre, le firme digitali, l&#39;importazione e l&#39;esportazione di dati PDF e altre opzioni.
 
 ### Passaggio Invia a stampante {#send-to-printer-step}
 
@@ -416,7 +419,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Impostazioni internazionali]**: Specifica la lingua utilizzata per generare il documento PDF. Se si specifica un valore letterale, selezionare una lingua dall&#39;elenco o selezionare uno dei seguenti valori:
    * **Per utilizzare il server predefinito**:
-(Impostazione predefinita) Utilizzare le impostazioni internazionali configurate sul server AEM Forms. L’impostazione internazionale è configurata tramite la console di amministrazione. (Vedere la Guida [di](http://www.adobe.com/go/learn_aemforms_designer_65)Designer.)
+(Impostazione predefinita) Utilizzare l&#39;impostazione internazionale configurata sul server AEM Forms. L’impostazione internazionale è configurata tramite la console di amministrazione. (Vedere la Guida [di](http://www.adobe.com/go/learn_aemforms_designer_65)Designer.)
 
    * **Per utilizzare un valore**personalizzato:
 Digitare il codice delle impostazioni internazionali nella casella letterale o selezionare una variabile di stringa contenente il codice delle impostazioni internazionali. Per un elenco completo dei codici lingua supportati, consultate http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
