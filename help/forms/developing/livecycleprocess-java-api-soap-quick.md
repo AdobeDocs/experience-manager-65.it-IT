@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
@@ -31,17 +34,17 @@ Java API(SOAP) Quick Start è disponibile per i processi. Un&#39;istanza *di* pr
 
 [Avvio rapido (modalità SOAP): Recupero dello stato di un processo tramite l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con AEM Forms sono basati su Forms se utilizzi un altro sistema operativo, come Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
+>Gli avvii rapidi disponibili in Programmazione con AEM Forms si basano su Forms se si utilizza un altro sistema operativo, ad esempio Unix, per sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
 
 ## Avvio rapido (modalità SOAP): Ricerca di istanze di processo tramite Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito vengono cercate le istanze di processo basate sul processo *mutuo* - Pregenerato.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -159,7 +162,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono cercate le istanze 
 
 Nell&#39;esempio di codice Java riportato di seguito viene sospesa un&#39;istanza di processo. Per sospendere con successo un’istanza di processo, è necessario l’identificatore di chiamata del processo che può essere ottenuto quando si richiama un processo di lunga durata utilizzando l’API di vocazione.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -251,7 +254,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene sospesa un&#39;istanz
 
 Nell&#39;esempio di codice Java riportato di seguito viene avviata un&#39;istanza di processo sospesa.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -339,7 +342,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene avviata un&#39;istanz
 
 Nell’esempio di codice Java riportato di seguito viene terminata un’istanza di processo con il valore di identificatore 756c22860a242fb101ec7a5bc0977fd6.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -430,7 +433,7 @@ Nell’esempio di codice Java riportato di seguito viene terminata un’istanza 
 
 Il seguente codice Java elimina i dati da un processo denominato *SecureDocument*. Viene utilizzato un filtro che specifica di eliminare i dati per le istanze di processo in cui la variabile di processo denominata *inValue* è maggiore di 200.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -535,9 +538,9 @@ Il seguente codice Java elimina i dati da un processo denominato *SecureDocument
 
 ## Avvio rapido (modalità SOAP): Recupero dello stato di un processo tramite l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-Nell’esempio di codice seguente viene recuperato lo stato di 10 processi AEM Forms.
+Nell&#39;esempio di codice riportato di seguito viene recuperato lo stato dei processi con 10 AEM Forms.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
