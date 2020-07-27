@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -34,17 +34,17 @@ Per le informazioni necessarie, consulta [Community Components Basics](basics.md
 
 Quando vengono incluse le librerie [lato client](essentials-liking.md#essentials-for-client-side) richieste, viene visualizzato così il `Liking` componente.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![componente di collegamento](assets/liking-component.png)
 
 ## Configurazione del collegamento {#configuring-liking}
 
 Selezionate il `Liking` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![configure-new](assets/configure-new.png)
 
 Nella scheda **[!UICONTROL Testo ed etichette]** , specificare le proprietà utilizzate per registrare i like.
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configurare](assets/configure-liking.png)
 
 * **[!UICONTROL Etichetta risposta positiva]**
 
