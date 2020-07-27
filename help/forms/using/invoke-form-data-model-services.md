@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -28,13 +28,13 @@ Questo documento è incentrato sulla scrittura di JavaScript tramite l&#39; `gui
 
 L&#39; `guidelib.dataIntegrationUtils.executeOperation` API richiama un servizio dall&#39;interno di un campo modulo adattivo. La sintassi API è la seguente:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
 La struttura dell&#39; `guidelib.dataIntegrationUtils.executeOperation` API specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
 
-```
+```javascript
 var operationInfo = {
 formDataModelId,
 operationTitle,
@@ -95,7 +95,7 @@ Lo script di esempio seguente utilizza l&#39; `guidelib.dataIntegrationUtils.exe
 
 L&#39; `getAccountById` operazione prende il valore nel campo `employeeID` modulo come input per l&#39; `empId` argomento e restituisce il nome del dipendente, il numero del conto e il saldo del conto per il dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore nell&#39; `name` argomento è popolato nell&#39;elemento `fullName` modulo e il valore per l&#39; `accountNumber` argomento nell&#39;elemento `account` modulo.
 
-```
+```javascript
 var operationInfo = {
 "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeAccount",
 "operationName": "getAccountDetails"
@@ -115,7 +115,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 È inoltre possibile richiamare il servizio del modello dati modulo utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API con una funzione di callback. La sintassi API è la seguente:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
@@ -131,7 +131,7 @@ L&#39; `GETOrder` operazione assume il valore nel campo `Order ID` modulo come i
 >
 > Se si utilizza la funzione di `success` callback, i valori di output non vengono inseriti nei campi modulo specificati.
 
-```
+```javascript
 var operationInfo = {
     "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
     "operationTitle": "GETOrder",
