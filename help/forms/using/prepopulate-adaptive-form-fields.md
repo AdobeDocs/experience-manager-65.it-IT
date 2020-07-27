@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +61,7 @@ Un modulo adattivo può contenere diversi campi associati o non associati. I cam
 
 ### Esempio di struttura JSON precompilata {#sample-prefill-json-structure}
 
-```
+```javascript
 {
    "afBoundData": {
       "employeeData": { }
@@ -86,7 +89,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 [Ottieni file](assets/prefill-submit-data-contentpackage.zip)esempio contenente dati precompilati e dati inviati
 
-### Moduli adattivi basati sullo schema XML {#xml-schema-af}
+### Moduli adattivi basati sullo schema XML  {#xml-schema-af}
 
 La struttura del file XML precompilato e del file XML inviato per i moduli adattivi basati sullo schema XML è la seguente:
 
@@ -146,7 +149,7 @@ Per i moduli adattivi basati sullo schema JSON, la struttura di precompila JSON 
 * **Precompila struttura** JSON: Il JSON di precompilazione deve essere conforme allo schema JSON associato. Facoltativamente, è possibile racchiudere l&#39;oggetto /afData/afBoundData se si desidera precompilare anche i campi non associati.
 * **Struttura** JSON inviata: se non viene utilizzato alcun JSON di precompilazione, il JSON inviato contiene i dati per i campi associati e non associati nel tag wrapper afData. Se viene utilizzato il JSON di precompilazione, il JSON inviato ha la stessa struttura del JSON di precompilazione. Se il JSON di precompilazione inizia con l&#39;oggetto radice afData, il JSON di output ha lo stesso formato. Se il JSON di precompilazione non dispone del wrapper afData/afBoundData e inizia direttamente dall&#39;oggetto principale dello schema, ad esempio l&#39;utente, anche il JSON inviato inizia con l&#39;oggetto utente.
 
-```
+```json
 {
     "id": "https://some.site.somewhere/entry-schema#",
     "$schema": "https://json-schema.org/draft-04/schema#",
@@ -165,7 +168,7 @@ Per i moduli adattivi basati sullo schema JSON, la struttura di precompila JSON 
 
 Per i campi che utilizzano il modello di schema JSON, i dati vengono precompilati nell&#39;oggetto afBoundData come illustrato nell&#39;esempio JSON riportato di seguito. Può essere utilizzato per precompilare un modulo adattivo con uno o più campi di testo non associati. Di seguito è riportato un esempio di dati con `afData/afBoundData` wrapper:
 
-```
+```json
 {
   "afData": {
     "afUnboundData": {
@@ -182,7 +185,7 @@ Per i campi che utilizzano il modello di schema JSON, i dati vengono precompilat
 
 Di seguito è riportato un esempio senza `afData/afBoundData` wrapper:
 
-```
+```json
 {
  "user": {
   "address": {
@@ -230,7 +233,7 @@ Per abilitare il servizio di precompilazione, specificate la Configurazione pred
 >
 >Precompila configurazione del servizio è applicabile ai moduli adattivi, ai moduli HTML5 e ai set di moduli HTML5.
 
-1. Apri la configurazione **[!UICONTROL della console Web di]** Adobe Experience Manager utilizzando l&#39;URL:\
+1. Apri **[!UICONTROL Configurazione]** console Web di Adobe Experience Manager utilizzando l&#39;URL:\
    https://&lt;server>:&lt;porta>/sistema/console/configMgr
 1. Cercate e aprite la configurazione **** predefinita del servizio di precompilazione.
 
@@ -240,6 +243,7 @@ Per abilitare il servizio di precompilazione, specificate la Configurazione pred
 
    * file:///C:/Users/public/Document/Prefill/.*
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di moduli adattivi (XSD, XDP, JSON, FDM e nessun modello di modulo). La precompilazione è consentita solo per i file JSON e XML.
@@ -267,15 +271,15 @@ I moduli adattivi possono essere precompilati con dati utente in formato precomp
 
 ### Il protocollo crx:// {#the-crx-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
 Il nodo specificato deve avere una proprietà denominata `jcr:data` e contenere i dati.
 
-### Il protocollo file:// {#the-file-protocol-nbsp}
+### Il protocollo file://  {#the-file-protocol-nbsp}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 ```
 
@@ -283,13 +287,13 @@ Il file di cui si fa riferimento deve trovarsi sullo stesso server.
 
 ### Il protocollo https:// {#the-http-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
 ### Il protocollo service:// {#the-service-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
@@ -304,7 +308,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 Potete anche impostare l&#39; `data` attributo in `slingRequest`, dove l&#39; `data` attributo è una stringa contenente XML o JSON, come illustrato nel codice di esempio seguente (Esempio per XML):
 
-```java
+```javascript
 <%
            String dataXML="<afData>" +
                             "<afUnboundData>" +
@@ -330,13 +334,13 @@ precompila pagina component.zip
 
 [Ottieni file](assets/prefill-page-component.zip)esempio prefill.jsp nel componente pagina
 
-## Servizio di precompilazione personalizzato di AEM Forms {#aem-forms-custom-prefill-service}
+## AEM Forms servizio di precompilazione personalizzato {#aem-forms-custom-prefill-service}
 
 Potete utilizzare il servizio di precompilazione personalizzato per gli scenari, in cui leggete costantemente i dati da un&#39;origine predefinita. Il servizio di precompilazione legge i dati da origini dati definite e compila i campi del modulo adattivo con il contenuto del file di dati di precompilazione. Consente inoltre di associare in modo permanente i dati precompilati a un modulo adattivo.
 
 ### Creare ed eseguire un servizio di precompilazione {#create-and-run-a-prefill-service}
 
-Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo nei bundle AEM Forms. Prima di iniziare a creare il bundle:
+Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo nei bundle di AEM Forms. Prima di iniziare a creare il bundle:
 
 * [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 * Scarica il pacchetto ricorrenti
@@ -361,9 +365,9 @@ Il pacchetto standard (pacchetto del servizio di precompilazione di esempio) con
 
 #### Avviare e utilizzare il servizio di precompilazione {#start-and-use-the-prefill-service}
 
-Per avviare il servizio di precompilazione, caricate il file JAR nella console Web di AEM Forms e attivate il servizio. Ora, il servizio inizia a comparire nell&#39;editor di moduli adattivi. Per associare un servizio di precompilazione a un modulo adattivo:
+Per avviare il servizio di precompilazione, caricate il file JAR nella console Web AEM Forms e attivate il servizio. Ora, il servizio inizia a comparire nell&#39;editor di moduli adattivi. Per associare un servizio di precompilazione a un modulo adattivo:
 
 1. Aprire il modulo adattivo in Forms Editor e il pannello Proprietà per il contenitore del modulo.
-1. Nella console Proprietà, passa al contenitore AEM Forms > Base > Precompila servizio.
+1. Nella console Proprietà, accedete al contenitore AEM Forms > Base > Precompila servizio.
 1. Selezionate il servizio di precompilazione predefinito e fate clic su **[!UICONTROL Salva]**. Il servizio è associato al modulo.
 
