@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '7842'
+ht-degree: 0%
 
 ---
 
@@ -67,8 +70,8 @@ Il servizio Genera PDF converte i PDF nei seguenti formati di file (solo Windows
 
 Il servizio Genera PDF richiede l&#39;esecuzione delle seguenti attività amministrative:
 
-* Installazione delle applicazioni native necessarie nel computer in cui è installato AEM Forms
-* Installare Adobe Acrobat Professional o Acrobat Pro Extended 9.2 sul computer in cui è installato AEM Forms
+* Installazione delle applicazioni native necessarie nel computer in cui sono installati AEM Forms
+* Installare Adobe Acrobat Professional o Acrobat Pro Extended 9.2 sul computer in cui sono installati i AEM Forms
 * Eseguire operazioni di configurazione post-installazione
 
 Queste attività sono descritte in Installazione e distribuzione di moduli AEM tramite chiavi in mano JBoss.
@@ -81,7 +84,7 @@ Queste attività sono descritte in Installazione e distribuzione di moduli AEM t
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Genera PDF, consultate Guida di riferimento [ai servizi per i moduli](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Per ulteriori informazioni sul servizio Genera PDF, vedere Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Conversione di documenti Word in documenti PDF {#converting-word-documents-to-pdf-documents}
 
@@ -93,7 +96,7 @@ Questa sezione descrive come utilizzare l&#39;API Generate PDF per convertire in
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Genera PDF, consultate Guida di riferimento [ai servizi per i moduli](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Per ulteriori informazioni sul servizio Genera PDF, vedere Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -166,6 +169,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
    * Un `java.lang.String` oggetto che contiene il nome delle impostazioni di protezione da utilizzare.
    * Un `com.adobe.idp.Document` oggetto facoltativo che contiene le impostazioni da applicare durante la generazione del documento PDF.
    * Un `com.adobe.idp.Document` oggetto facoltativo che contiene le informazioni sui metadati da applicare al documento PDF.
+
    Il `createPDF2` metodo restituisce un `CreatePDFResult` oggetto contenente il nuovo documento PDF e le informazioni di registro. Il file di registro in genere contiene messaggi di errore o di avviso generati dalla richiesta di conversione.
 
 1. Recuperate i risultati.
@@ -174,6 +178,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
 
    * Richiama il metodo dell&#39; `CreatePDFResult` oggetto `getCreatedDocument` , che restituisce un `com.adobe.idp.Document` oggetto.
    * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per estrarre il documento PDF dall&#39;oggetto creato nel passaggio precedente.
+
    Se avete utilizzato il `createPDF2` metodo per ottenere il documento di registro (non applicabile alle conversioni HTML), effettuate le seguenti operazioni:
 
    * Richiama il metodo dell’ `CreatePDFResult` oggetto `getLogDocument` . Questo restituisce un `com.adobe.idp.Document` oggetto.
@@ -200,7 +205,7 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server host AEM Forms.
 
 1. Creare un client Generate PDF.
 
@@ -248,9 +253,9 @@ Convertire un documento di Microsoft Word in un documento PDF utilizzando l&#39;
 
 [Riepilogo dei passaggi](converting-file-formats-pdf.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata di AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversione di documenti HTML in documenti PDF {#converting-html-documents-to-pdf-documents}
 
@@ -258,7 +263,7 @@ Questa sezione descrive come utilizzare l&#39;API Generate PDF per convertire in
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Genera PDF, consultate Guida di riferimento [ai servizi per i moduli](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Per ulteriori informazioni sul servizio Genera PDF, vedere Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-1}
 
@@ -357,7 +362,7 @@ Convertire il contenuto HTML in un documento PDF utilizzando l&#39;API Generate 
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server host AEM Forms.
 
 1. Creare un client Generate PDF.
 
@@ -398,9 +403,9 @@ Convertire il contenuto HTML in un documento PDF utilizzando l&#39;API Generate 
 
 [Conversione di documenti HTML in documenti PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata di AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversione di documenti PDF in formati non immagine {#converting-pdf-documents-to-non-image-formats}
 
@@ -408,7 +413,7 @@ Questa sezione descrive come utilizzare l&#39;API Java Generate PDF e l&#39;API 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Genera PDF, consultate Guida di riferimento [ai servizi per i moduli](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Per ulteriori informazioni sul servizio Genera PDF, vedere Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Riepilogo dei passaggi {#summary_of_steps-2}
 
@@ -478,6 +483,7 @@ Convertire un documento PDF in un file RTF utilizzando l&#39;API Generate PDF (J
    * Un `java.lang.String` oggetto che contiene il nome delle impostazioni Adobe PDF.
    * Un `ConvertPDFFormatType` oggetto che specifica il tipo di file di destinazione per la conversione.
    * Un `com.adobe.idp.Document` oggetto facoltativo che contiene le impostazioni da applicare durante la generazione del documento PDF.
+
    Il `exportPDF2` metodo restituisce un `ExportPDFResult` oggetto che contiene il file convertito.
 
 1. Convertire il documento PDF.
@@ -507,7 +513,7 @@ Convertire un documento PDF in un file RTF utilizzando l&#39;API Generate PDF (s
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server host AEM Forms.
 
 1. Creare un client Generate PDf.
 
@@ -537,7 +543,7 @@ Convertire un documento PDF in un file RTF utilizzando l&#39;API Generate PDF (s
    * Un `BLOB` oggetto che rappresenta il file PDF da convertire.
    * Una stringa che contiene il nome del percorso del file da convertire.
    * Un `java.lang.String` oggetto che specifica la posizione del file.
-   * Un oggetto stringa che specifica il tipo di file di destinazione per la conversione. Specificate `RTF`.
+   * Un oggetto stringa che specifica il tipo di file di destinazione per la conversione. Specifica `RTF`.
    * Un `BLOB` oggetto facoltativo che contiene le impostazioni da applicare durante la generazione del documento PDF.
    * Un parametro di output di tipo `BLOB` che viene popolato dal `ExportPDF2` metodo. Il `ExportPDF2` metodo popola l&#39;oggetto con il documento convertito. (Questo valore di parametro è richiesto solo per la chiamata al servizio Web).
 
@@ -552,9 +558,9 @@ Convertire un documento PDF in un file RTF utilizzando l&#39;API Generate PDF (s
 
 [Riepilogo dei passaggi](converting-file-formats-pdf.md#summary-of-steps)
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata di AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Richiamo di moduli AEM con SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Chiamata di AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Aggiunta del supporto per formati di file nativi aggiuntivi {#adding-support-for-additional-native-file-formats}
 
@@ -718,7 +724,7 @@ Se intendete lavorare su file di dialogo o script XML, installate l&#39;applicaz
 
 I file di dialogo e script risiedono nel file appmondata.jar. Per poter modificare uno di questi file o aggiungere nuovi file di script o di dialogo, è necessario rimuovere il pacchetto dal file JAR. Ad esempio, si supponga di voler aggiungere il supporto per l&#39;applicazione EditPlus. Potete creare due file XML denominati appmon.editplus.script.en_US.xml e appmon.editplus.script.add.en_US.xml. Questi script XML devono essere aggiunti al file adobe-appmondata.jar in due posizioni, come specificato di seguito:
 
-* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Il file adobe-livecycle-native-jboss-x86_win32.ear si trova nella cartella di esportazione in `[AEM forms install directory]\configurationManager`. Se AEM Forms è implementato su un altro server applicazioni J2EE, sostituisci il file adobe-livecycle-native-jboss-x86_win32.ear con il file EAR corrispondente al server applicazioni J2EE.
+* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Il file adobe-livecycle-native-jboss-x86_win32.ear si trova nella cartella di esportazione in `[AEM forms install directory]\configurationManager`. (se i AEM Forms vengono distribuiti su un altro server applicazione J2EE, sostituite il file adobe-livecycle-native-jboss-x86_win32.ear con il file EAR corrispondente al server applicazione J2EE).
 * adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (il file adobe-appmondata.jar si trova nel file adobe-generatepdf-dsc.jar). Il file adobe-generatepdf-dsc.jar si trova nella `[AEM forms install directory]\deploy` cartella.
 
 Dopo aver aggiunto questi file XML al file adobe-appmondata.jar, è necessario ridistribuire il componente GeneratePDF. Per aggiungere file di dialogo e script XML al file adobe-appmondata.jar, eseguire le operazioni seguenti:
@@ -769,7 +775,7 @@ Utilizzate Microsoft Spy++ per ottenere le identità delle proprietà degli elem
 
 **Espressione regolare che contiene il nome del file preceduto dal Blocco note nel banner del Blocco note**
 
-```as3
+```xml
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. -->
  <step>
      <expectedWindow>
@@ -780,7 +786,7 @@ Utilizzate Microsoft Spy++ per ottenere le identità delle proprietà degli elem
 
 **Espressione regolare che differenzia Stampa da Impostazione stampa**
 
-```as3
+```xml
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. -->
  <windowList>
      <window controlID="0x01" caption="^Print$" action="press"/>
@@ -796,7 +802,7 @@ Utilizzate Microsoft Spy++ per ottenere le identità delle proprietà degli elem
 
 **Ordinamento degli elementi della finestra in un file di dialogo**
 
-```as3
+```xml
  <!-- The caption attribute in the following window element is 40 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <window caption="Unexpected Failure in DebugActiveProcess">
      <…>
@@ -820,7 +826,7 @@ Utilizzate Microsoft Spy++ per ottenere le identità delle proprietà degli elem
 
 **Ordinamento degli elementi della finestra all&#39;interno di un elemento windowList**
 
-```as3
+```xml
  <!-- The caption attribute in the following indexes element is 56 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <windowList>
      <window caption="Can&apos;t exit design mode because.* cannot be created"/>
@@ -881,7 +887,7 @@ In questo esempio, i dati di configurazione predefiniti forniti con il servizio 
 
 **Modifiche per reindirizzare i file di testo a Notepad (native2pdfconfig.xml)**
 
-```as3
+```xml
  <filetype-settings>
 
  <!-- Some native app file types were omitted for brevity. -->
@@ -910,7 +916,7 @@ Dopo aver creato la nuova variabile di ambiente, è necessario riavviare il serv
 
 **Creare una variabile di sistema nell&#39;ambiente Windows XP**
 
-1. Selezionare **Pannello di controllo > Sistema**.
+1. Selezionare **Pannello di controllo Campaign > Sistema**.
 1. Nella finestra di dialogo Proprietà sistema, fare clic sulla scheda **Avanzate** , quindi su Variabili **** ambiente.
 1. In Variabili di sistema nella finestra di dialogo Variabili di ambiente, fare clic su **Nuovo**.
 1. Nella finestra di dialogo Nuova variabile di sistema, digitare nella casella Nome **** variabile un nome che utilizza il formato `[applicationname]_PATH`.
@@ -921,7 +927,7 @@ Dopo aver creato la nuova variabile di ambiente, è necessario riavviare il serv
 
 1. Nella finestra della riga di comando, digitare la definizione della variabile utilizzando il seguente formato:
 
-   ```as3
+   ```shell
             [applicationname]_PATH=[Full path name]
    ```
 
@@ -931,7 +937,7 @@ Dopo aver creato la nuova variabile di ambiente, è necessario riavviare il serv
 
 #### File XML {#xml-files}
 
-In AEM Forms sono inclusi file XML di esempio che fanno in modo che il servizio Genera PDF utilizzi Notepad per elaborare qualsiasi file con estensione .txt. Questo codice è incluso in questa sezione. Inoltre, è necessario apportare le altre modifiche descritte in questa sezione.
+I AEM Forms includono file XML di esempio che causano l&#39;utilizzo di Notepad da parte del servizio Genera PDF per l&#39;elaborazione di file con estensione .txt. Questo codice è incluso in questa sezione. Inoltre, è necessario apportare le altre modifiche descritte in questa sezione.
 
 #### File XML della finestra di dialogo aggiuntivo {#additional-dialog-xml-file}
 
@@ -939,7 +945,7 @@ Questo esempio contiene le finestre di dialogo aggiuntive per l&#39;applicazione
 
 **Finestra di dialogo Blocco note(appmon.blocco note.addizione.en_US.xml)**
 
-```as3
+```xml
  <dialogs app="Notepad" locale="en_US" version="7.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dialogs.xsd">
      <window caption="Caption Title">
          <windowList>
@@ -955,7 +961,7 @@ Questo esempio specifica in che modo il servizio Genera PDF deve interagire con 
 
 **File XML di script Notepad (appmon.blocco note.script.en_US.xml)**
 
-```as3
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
 *
