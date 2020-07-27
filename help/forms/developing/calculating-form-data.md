@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +80,7 @@ Per illustrare l&#39;uso di uno script della struttura del modulo, in questa sez
 
 La sintassi dello script in questa struttura del modulo è la seguente:
 
-```as3
+```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
@@ -89,7 +92,7 @@ In questa struttura del modulo, il pulsante Calcola è un pulsante di comando e 
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per gli AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -120,7 +123,7 @@ Dopo aver verificato lo stato di elaborazione associato a un modulo inviato, è 
 
 **Consulta anche**
 
-[Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms[Calcola i dati del modulo utilizzando l&#39;API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)Java[Calcola i dati del modulo utilizzando il servizio Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)[della connessione API del servizio](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Forms Avvio[](/help/forms/developing/rendering-interactive-pdf-forms.md)[rapido Rendering Interactive PDF FormsAPICreazione di applicazioni Web per il rendering dei moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms[Calcola i dati del modulo utilizzando l&#39;API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)Java[Calcola i dati del modulo utilizzando il servizio Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione[dell&#39;API di servizio](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Forms Avvio[rapido](/help/forms/developing/rendering-interactive-pdf-forms.md)[Rendering PDF forms interattiviCreazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcolare i dati del modulo utilizzando l&#39;API Java {#calculate-form-data-using-the-java-api}
 
@@ -144,6 +147,7 @@ Calcola i dati del modulo utilizzando l&#39;API Forms (Java):
       * Valore stringa che specifica le variabili di ambiente, comprese tutte le intestazioni HTTP rilevanti. È necessario specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di `CONTENT_TYPE` ambiente. Ad esempio, per gestire i dati XML e PDF, specificare il seguente valore di stringa per questo parametro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Un valore di stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Un `RenderOptionsSpec` oggetto che memorizza le opzioni di esecuzione.
+
       Il `processFormSubmission` metodo restituisce un `FormsResult` oggetto contenente i risultati dell&#39;invio del modulo.
 
    * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il `FormsResult` metodo dell&#39; `getAction` oggetto. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere riscritti nel browser Web del client.
@@ -197,6 +201,7 @@ Calcola i dati del modulo utilizzando l&#39;API Forms (servizio Web):
       * Un oggetto vuoto `javax.xml.rpc.holders.ShortHolder` compilato dal metodo.
       * Un oggetto vuoto `MyArrayOf_xsd_anyTypeHolder` compilato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati inviati insieme al modulo.
       * Un `FormsResultHolder` oggetto vuoto compilato dal metodo con il modulo inviato.
+
       Il `processFormSubmission` metodo compila il `FormsResultHolder` parametro con i risultati dell&#39;invio del modulo. Il `processFormSubmission` metodo restituisce un `FormsResult` oggetto contenente i risultati dell&#39;invio del modulo.
 
    * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il `FormsResult` metodo dell&#39; `getAction` oggetto. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere riscritti nel browser Web del client.
@@ -209,4 +214,4 @@ Calcola i dati del modulo utilizzando l&#39;API Forms (servizio Web):
    * Creare un array di byte e compilarlo richiamando il metodo dell&#39; `BLOB` oggetto `getBinaryData` . Questa attività assegna il contenuto dell&#39; `FormsResult` oggetto all&#39;array di byte.
    * Richiamare il metodo dell&#39; `javax.servlet.http.HttpServletResponse` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
 
-**Consultate anche**[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Vedere anche**[Chiamata di AEM Forms mediante codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
