@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1217'
+ht-degree: 0%
 
 ---
 
@@ -18,26 +21,26 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ![integrazione dei dati](assets/data-integeration.png)
 
-Microsoft Dynamics è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account cliente, contatti, lead, opportunità e casi. [L&#39;integrazione](../../forms/using/data-integration.md) dei dati di AEM Forms fornisce una configurazione del servizio cloud OData per integrare Forms con il server Microsoft Dynamics online e locale. Consente di creare un modello dati modulo basato su entità, attributi e servizi definiti nel servizio Microsoft Dynamics. Il modello dati del modulo può essere utilizzato per creare moduli adattivi che interagiscono con il server Microsoft Dynamics per abilitare i flussi di lavoro aziendali. Esempio:
+Microsoft Dynamics è un software CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account cliente, contatti, lead, opportunità e casi. [L&#39;integrazione](../../forms/using/data-integration.md) dei dati AEM Forms fornisce una configurazione del servizio cloud OData per integrare Forms con il server Microsoft Dynamics online e locale. Consente di creare un modello dati modulo basato su entità, attributi e servizi definiti nel servizio Microsoft Dynamics. Il modello dati del modulo può essere utilizzato per creare moduli adattivi che interagiscono con il server Microsoft Dynamics per abilitare i flussi di lavoro aziendali. Ad esempio:
 
 * Query del server Microsoft Dynamics per dati e precompilazione di moduli adattivi
 * Inserimento di dati in Microsoft Dynamics per l&#39;invio di moduli adattivi
 * Scrittura di dati in Microsoft Dynamics tramite entità personalizzate definite nel modello dati del modulo e viceversa
 
-Il pacchetto del componente aggiuntivo AEM Forms include anche la configurazione di riferimento OData che puoi sfruttare per integrare rapidamente Microsoft Dynamics con AEM Forms.
+Il pacchetto aggiuntivo AEM Forms include anche la configurazione OData di riferimento che puoi sfruttare per integrare rapidamente Microsoft Dynamics con AEM Forms.
 
-Quando il pacchetto è installato, nell’istanza di AEM Forms sono disponibili le entità e i servizi seguenti:
+Quando il pacchetto è installato, le entità e i servizi seguenti sono disponibili nell&#39;istanza AEM Forms:
 
-* Servizio cloud MS Dynamics OData (servizio OData)
+* MS Dynamics OData Cloud Service (servizio OData)
 * Modello dati modulo con entità e servizi Microsoft Dynamics preconfigurati.
 
-Il servizio OData Cloud e il modello di dati del modulo con entità e servizi Microsoft Dynamics preconfigurati sono disponibili nell&#39;istanza di AEM Forms solo se la modalità di esecuzione dell&#39;istanza di AEM è impostata come `samplecontent`(impostazione predefinita). Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un’istanza di AEM, consultate Modalità di [esecuzione](/help/sites-deploying/configure-runmodes.md).
+L’Cloud Service OData e il modello di dati del modulo con entità e servizi Microsoft Dynamics preconfigurati sono disponibili nell’istanza AEM Forms solo se la modalità di esecuzione per l’istanza AEM è impostata come `samplecontent`(impostazione predefinita). Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un’istanza di AEM, consultate Modalità di [esecuzione](/help/sites-deploying/configure-runmodes.md).
 
 ## Prerequisiti {#prerequisites}
 
 Prima di iniziare a configurare Microsoft Dynamics, accertati di disporre di:
 
-* Installazione del pacchetto del componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md)
+* Installato il pacchetto del componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md)
 * Microsoft Dynamics 365 configurato online o installato un&#39;istanza di una delle seguenti versioni di Microsoft Dynamics:
 
    * Microsoft Dynamics 365 in loco
@@ -72,7 +75,7 @@ Microsoft Dynamics utilizza l&#39;autenticazione basata sulle attestazioni per f
 1. Configurare l&#39;istanza locale di Microsoft Dynamics per IFD come descritto in [Configurare IFD per Microsoft Dynamics](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Eseguite i comandi seguenti utilizzando Windows PowerShell per configurare le impostazioni delle attestazioni su Microsoft Dynamics abilitato per IFD:
 
-   ```
+   ```shell
    Add-PSSnapin Microsoft.Crm.PowerShell
     $ClaimsSettings = Get-CrmSetting -SettingType OAuthClaimsSettings
     $ClaimsSettings.Enabled = $true
@@ -96,7 +99,7 @@ Per registrare un client OAuth nel computer Active Directory Federation Services
    Dove:
 
    * `Client-ID` è un ID client che è possibile generare utilizzando qualsiasi generatore GUID.
-   * `redirect-uri` è l&#39;URL del servizio cloud Microsoft Dynamics OData su AEM Forms. Il servizio cloud predefinito installato con il pacchetto AEM Forms viene distribuito al seguente URL:
+   * `redirect-uri` è l&#39;URL del servizio cloud Microsoft Dynamics OData sui AEM Forms. Il servizio cloud predefinito installato con il pacchetto AEM Forms viene distribuito al seguente URL:
       `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Eseguire il comando seguente per concedere l&#39;accesso al computer AD FS:
@@ -107,14 +110,14 @@ Per registrare un client OAuth nel computer Active Directory Federation Services
 
    * `resource` è l&#39;URL dell&#39;organizzazione di Microsoft Dynamics.
 
-1. Microsoft Dynamics utilizza il protocollo HTTPS. Per richiamare gli endpoint AD FS dal server Forms, installare il certificato del sito Microsoft Dynamics nell&#39;archivio certificati Java utilizzando il `keytool` comando disponibile nel computer in cui è in esecuzione AEM Forms.
+1. Microsoft Dynamics utilizza il protocollo HTTPS. Per richiamare gli endpoint AD FS dal server Forms, installare il certificato del sito Microsoft Dynamics nell&#39;archivio certificati Java utilizzando il `keytool` comando nel computer in cui sono in esecuzione AEM Forms.
 
 ## Configurare il servizio cloud per il servizio Microsoft Dynamics {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
 La configurazione **MS Dynamics OData Cloud Service (OData Service)** viene fornita con la configurazione OData predefinita. Per configurarlo per la connessione al servizio Microsoft Dynamics, effettuare le seguenti operazioni.
 
 1. Passa a **[!UICONTROL Strumenti > Servizi cloud > Origini]** dati e tocca la cartella di `global` configurazione.
-1. Selezionare la configurazione del servizio **MS Dynamics OData Cloud Service (OData Service)** e toccare **[!UICONTROL Proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà di configurazione del servizio cloud.
+1. Selezionare la configurazione **MS Dynamics OData Cloud Service (OData Service)** e toccare **[!UICONTROL Proprietà]**. Viene visualizzata la finestra di dialogo delle proprietà di configurazione del servizio cloud.
 
    Nella scheda **Impostazioni** autenticazione:
 
@@ -123,6 +126,7 @@ La configurazione **MS Dynamics OData Cloud Service (OData Service)** viene forn
    1. Sostituite i valori predefiniti nei campi ID **** client (altrimenti denominati ID **** applicazione), Segreto **** client, URL **** OAuth, URL **token di** aggiornamento, URL ******** token di accesso, URLtoken di accesso, e SegretoRisorsacon i valori della configurazione del servizio Microsoft Dynamics. È obbligatorio specificare l&#39;URL dell&#39;istanza dinamica nel campo **Risorsa** per configurare Microsoft Dynamics con un modello dati del modulo. Utilizzate l&#39;URL di directory principale del servizio per derivare l&#39;URL dell&#39;istanza di dinamica. Ad esempio, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Specificate **open** nel campo Ambito **** autorizzazione per il processo di autorizzazione in Microsoft Dynamics.
+
    ![Impostazioni di autenticazione](assets/dynamics_authentication_settings_new.png)
 
 1. Fate clic su **[!UICONTROL Connetti a OAuth]**. Viene nuovamente visualizzata la pagina di accesso di Microsoft Dynamics.
@@ -134,7 +138,7 @@ Il servizio cloud MS Dynamics OData Cloud Service (OData Service) è configurato
 
 ## Create form data model {#create-form-data-model}
 
-Quando installate il pacchetto AEM Forms, nell’istanza di AEM viene distribuito un modello dati modulo,**Microsoft Dynamics FDM**. Per impostazione predefinita, il modello dati del modulo utilizza il servizio Microsoft Dynamics configurato nel servizio MS Dynamics OData Cloud Service (OData Service) come origine dati.
+Quando installate il pacchetto AEM Forms, nell&#39;istanza di AEM viene distribuito un modello dati modulo,**Microsoft Dynamics FDM**. Per impostazione predefinita, il modello dati del modulo utilizza il servizio Microsoft Dynamics configurato in MS Dynamics OData Cloud Service (OData Service) come origine dati.
 
 Quando apre il modello dati del modulo per la prima volta, si connette al servizio Microsoft Dynamics configurato e recupera entità dall&#39;istanza di Microsoft Dynamics. Le entità &quot;contatto&quot; e &quot;lead&quot; di Microsoft Dynamics sono già aggiunte nel modello dati del modulo.
 
