@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -164,6 +167,7 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate l
       * Proprietà quali l&#39;altezza e la spaziatura tra le lettere
       * Valori predefiniti di famiglia e dimensione del font, altezza, spaziatura tra le lettere e formato della data
       * Punti elenco
+
       Ad esempio, per aggiungere un font giapponese denominato Sazanami Mincho Medium, è necessario inserire la voce seguente nel file XML: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo font sia installato nel computer client e utilizzato per accedere e utilizzare la personalizzazione dei font. Per ulteriori informazioni, vedere [Aggiunta di font personalizzati al computer](#addcustomfonts)client.
 
       Potete inoltre modificare le impostazioni predefinite per vari aspetti del testo e, rimuovendo le voci, rimuovere i font dall’editor di testo.
@@ -182,7 +186,7 @@ Per ulteriori informazioni sull&#39;installazione dei font, consultate i seguent
 
 ## Accesso alle personalizzazioni dei font {#access-font-customizations}
 
-Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e installato i font richiesti nel computer client utilizzato per accedere a AEM Forms, le modifiche vengono visualizzate nell’editor di testo.
+Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e installato i font richiesti nel computer client utilizzato per accedere ai AEM Forms, le modifiche vengono visualizzate nell&#39;editor di testo.
 
 Ad esempio, il font Sazanami Mincho Medium aggiunto nei font [Customize modificando il file tbxeditor-config.xml nella procedura CRX](#customizefonts) viene visualizzato nell’interfaccia utente dell’editor di testo come segue:
 
