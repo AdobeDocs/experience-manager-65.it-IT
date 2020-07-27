@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 1%
@@ -107,7 +107,7 @@ L’aggiunta di un pulsante con un’azione (in questo caso, invia lettera per l
 
    | **Nome** | **Descrizione** |
    |---|---|
-   | nome | Nome alfanumerico dell’azione da eseguire. Il valore di questo tag è obbligatorio, deve essere univoco (all&#39;interno del tag modelExtension) e deve iniziare con un alfabeto. |
+   | name | Nome alfanumerico dell’azione da eseguire. Il valore di questo tag è obbligatorio, deve essere univoco (all&#39;interno del tag modelExtension) e deve iniziare con un alfabeto. |
    | label | Etichetta da visualizzare sul pulsante dell&#39;azione |
    | tooltip | Testo descrittivo del pulsante, visualizzato quando l&#39;utente passa il mouse sul pulsante. |
    | styleName | Nome dello stile personalizzato applicato al pulsante di azione. |
@@ -226,7 +226,7 @@ La gestione dell&#39;azione o del pulsante quando si fa clic su action/button in
    1. Fate doppio clic sul file ccrcustomization.js per aprirlo in CRX.
    1. Nel file, incollate il codice seguente e fate clic su **Salva tutto**:
 
-      ```
+      ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
         * One instance of handler will be created for each action.
         * CM.domain.CCRCustomActionHandler is actionHandler class.
@@ -380,7 +380,7 @@ Processo di LiveCycle richiesto per abilitare il processo del servizio e-mail.
 
 1. Fai clic su **Importa**.
 
-#### Aggiunta di ServiceName all&#39;elenco dei servizi Allowlist {#adding-servicename-to-the-allowlist-service-list}
+#### Aggiunta di ServiceName all&#39;elenco  Inserire nell&#39;elenco Consentiti Servizio {#adding-servicename-to-the-allowlist-service-list}
 
 Ricorda nel server AEM i servizi LiveCycle a cui vuoi accedere.
 
