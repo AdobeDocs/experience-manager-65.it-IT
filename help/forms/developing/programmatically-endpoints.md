@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10781'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +55,7 @@ Gli endpoint E-mail, Task Manager e Cartella esaminata mostrano solo un&#39;oper
 
 ## Aggiunta di endpoint EJB {#adding-ejb-endpoints}
 
-È possibile aggiungere a livello di programmazione un endpoint EJB a un servizio utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint EJB a un servizio, si sta abilitando un&#39;applicazione client per richiamare il servizio utilizzando la modalità EJB. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità EJB. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
+Puoi aggiungere a livello di programmazione un endpoint EJB a un servizio utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint EJB a un servizio, si sta abilitando un&#39;applicazione client per richiamare il servizio utilizzando la modalità EJB. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità EJB. (Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.)
 
 >[!NOTE]
 >
@@ -78,10 +81,10 @@ Includete i file necessari nel progetto di sviluppo. I seguenti file JAR devono 
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -155,7 +158,7 @@ Aggiungete un endpoint EJB utilizzando l&#39;API Java:
 
 ## Aggiunta di endpoint SOAP {#adding-soap-endpoints}
 
-Potete aggiungere a livello di programmazione un endpoint SOAP a un servizio utilizzando l&#39;API Java di AEM Forms. Aggiungendo un endpoint SOAP, si abilita un&#39;applicazione client per richiamare il servizio utilizzando la modalità SOAP. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità SOAP.
+È possibile aggiungere a livello di programmazione un endpoint SOAP a un servizio utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint SOAP, si abilita un&#39;applicazione client per richiamare il servizio utilizzando la modalità SOAP. In altre parole, quando si impostano le proprietà di connessione necessarie per richiamare AEM Forms, è possibile selezionare la modalità SOAP.
 
 >[!NOTE]
 >
@@ -183,10 +186,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Questi file JAR sono necessari per creare un endpoint SOAP. Tuttavia, è necessario aggiungere file JAR se si utilizza l&#39;endpoint SOAP per richiamare il servizio. Per informazioni sui file AEM Forms JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Questi file JAR sono necessari per creare un endpoint SOAP. Tuttavia, è necessario aggiungere file JAR se si utilizza l&#39;endpoint SOAP per richiamare il servizio. Per informazioni sui file JAR AEM Forms, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -262,7 +265,7 @@ Aggiungete un endpoint SOAP a un servizio utilizzando l&#39;API Java:
 
 È possibile aggiungere a livello di programmazione un endpoint di cartelle esaminate a un servizio utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint cartella esaminata, gli utenti possono inserire un file (ad esempio un file PDF) in una cartella. Quando il file viene inserito nella cartella, viene richiamato il servizio configurato e manipolato il file. Dopo che il servizio ha eseguito l&#39;operazione specificata, salva il file modificato in una cartella di output specificata. Una cartella esaminata è configurata per essere analizzata a un intervallo di frequenza fissa o con una pianificazione cron, ad esempio ogni lunedì, mercoledì e venerdì a mezzogiorno.
 
-Per aggiungere in modo programmatico un endpoint di una cartella esaminata a un servizio, è consigliabile seguire il seguente processo di breve durata denominato *EncryptDocument*. (Vedere [Informazioni sui processi](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)dei moduli AEM.)
+Per aggiungere in modo programmatico un endpoint di una cartella esaminata a un servizio, è consigliabile seguire il seguente processo di breve durata denominato *EncryptDocument*. (Vedere [Informazioni sui processi](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -293,10 +296,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -388,7 +391,7 @@ Dopo aver creato un endpoint cartella esaminata, è necessario attivarlo. Quando
 
 ### Aggiunta di un endpoint cartella esaminata tramite l&#39;API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java di AEM Forms:
+Aggiungete un endpoint cartella esaminata utilizzando l&#39;API Java AEM Forms:
 
 1. Includere i file di progetto.
 
@@ -414,6 +417,7 @@ Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java di AEM 
 
    * Un valore di stringa che specifica il nome del valore di configurazione. Quando impostate il valore di `url` configurazione, specificate `url`.
    * Un valore di stringa che specifica il valore del valore di configurazione. Quando impostate il valore di `url` configurazione, specificate il percorso della cartella esaminata.
+
    >[!NOTE]
    >
    >Per visualizzare tutti i valori di configurazione impostati per il servizio EncryptDocument, vedere l&#39;esempio di codice Java disponibile in [QuickStart: Aggiunta di un endpoint cartella esaminata tramite l&#39;API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)Java.
@@ -426,6 +430,7 @@ Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java di AEM 
    * Una stringa che specifica il tipo di dati del parametro di input. Ad esempio, il tipo di dati del parametro di `InDoc` input è `com.adobe.idp.Document`.
    * Un valore di stringa che specifica il tipo di mapping. For example, you can specify `variable`.
    * Un valore di stringa che specifica il valore del tipo di mappatura. Ad esempio, è possibile specificare &amp;ast;.pdf come pattern di file.
+
    >[!NOTE]
    >
    >Richiama il `setInputParameterMapping` metodo da definire per ogni valore del parametro di input. Poiché il processo EncryptDocument ha un solo parametro di input, è necessario richiamare questo metodo una volta.
@@ -460,7 +465,7 @@ Aggiungi un endpoint della cartella esaminata utilizzando l&#39;API Java di AEM 
 
 Avvio [rapido: L&#39;aggiunta di un endpoint di cartelle esaminate tramite l&#39;API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) Java utilizza un file costante che deve far parte del progetto Java per compilare il rapido avvio. Questo file costante rappresenta i valori di configurazione che devono essere impostati quando si aggiunge un endpoint cartella esaminata. Il seguente codice Java rappresenta il file costante.
 
-```as3
+```java
  /**
      * This class contains constants that can be used when setting Watched Folder
      * configuration values
@@ -491,9 +496,9 @@ Avvio [rapido: L&#39;aggiunta di un endpoint di cartelle esaminate tramite l&#39
 
 ## Aggiunta di endpoint e-mail {#adding-email-endpoints}
 
-Puoi aggiungere un endpoint e-mail a un servizio a livello di programmazione utilizzando l’API Java di AEM Forms. Aggiungendo un endpoint e-mail, gli utenti possono inviare un messaggio e-mail contenente uno o più file allegati a un account e-mail specificato. Quindi, viene richiamata l’operazione di configurazione del servizio e vengono modificati i file. Dopo che il servizio ha eseguito l&#39;operazione specificata, invia un messaggio e-mail al mittente con i file modificati come allegati di file.
+Puoi aggiungere un endpoint e-mail a un servizio a livello di programmazione utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint e-mail, gli utenti possono inviare un messaggio e-mail contenente uno o più file allegati a un account e-mail specificato. Quindi, viene richiamata l’operazione di configurazione del servizio e vengono modificati i file. Dopo che il servizio ha eseguito l&#39;operazione specificata, invia un messaggio e-mail al mittente con i file modificati come allegati di file.
 
-Ai fini dell&#39;aggiunta programmatica di un endpoint e-mail a un servizio, tenere in considerazione il seguente processo di breve durata denominato *MyApplication\EncryptDocument*. Per informazioni sui processi di breve durata, consultate [I processi](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
+Ai fini dell&#39;aggiunta programmatica di un endpoint e-mail a un servizio, tenere in considerazione il seguente processo di breve durata denominato *MyApplication\EncryptDocument*. Per informazioni sui processi di breve durata, vedere [Informazioni sui processi](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -524,10 +529,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -657,6 +662,7 @@ Aggiungete un endpoint e-mail utilizzando l&#39;API Java:
 
    * Un valore di stringa che specifica il nome del valore di configurazione. Quando impostate il valore di `smtpHost` configurazione, specificate `smtpHost`.
    * Un valore di stringa che specifica il valore del valore di configurazione. Quando si imposta il valore di `smtpHost` configurazione, specificare un valore di stringa che specifica il nome del server SMTP.
+
    >[!NOTE]
    >
    >Per visualizzare tutti i valori di configurazione impostati per il servizio EncryptDocument introdotto in questa sezione, vedere l&#39;esempio di codice Java disponibile in [QuickStart: Aggiunta di un endpoint e-mail tramite l&#39;API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)Java.
@@ -669,6 +675,7 @@ Aggiungete un endpoint e-mail utilizzando l&#39;API Java:
    * Una stringa che specifica il tipo di dati del parametro di input. Ad esempio, il tipo di dati del parametro di `InDoc` input è `com.adobe.idp.Document`.
    * Un valore di stringa che specifica il tipo di mapping. For example, you can specify `variable`.
    * Un valore di stringa che specifica il valore del tipo di mappatura. Ad esempio, è possibile specificare &amp;ast;.pdf come pattern di file.
+
    >[!NOTE]
    >
    >Richiama il `setInputParameterMapping` metodo da definire per ogni valore del parametro di input. Poiché il processo EncryptDocument ha un solo parametro di input, è necessario richiamare questo metodo una volta.
@@ -703,7 +710,7 @@ Aggiungete un endpoint e-mail utilizzando l&#39;API Java:
 
 Avvio [rapido: L&#39;aggiunta di un endpoint e-mail tramite l&#39;API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) Java utilizza un file costante che deve far parte del progetto Java per compilare il rapido avvio. Questo file costante rappresenta i valori di configurazione che devono essere impostati quando si aggiunge un endpoint e-mail. Il seguente codice Java rappresenta il file costante.
 
-```as3
+```java
  /**
      * This class contains constants that can be used when setting email endpoint
      * configuration values
@@ -745,7 +752,7 @@ Avvio [rapido: L&#39;aggiunta di un endpoint e-mail tramite l&#39;API](/help/for
 >
 >Le API LiveCycle Remoting non sono più utilizzate per i moduli AEM su JEE.
 
-È possibile aggiungere a livello di programmazione un endpoint remoto a un servizio utilizzando l&#39;API Java di AEM Forms. Aggiungendo un endpoint remoto, si sta abilitando un&#39;applicazione Flex per richiamare il servizio utilizzando la rimozione. (consultate [Richiamo di moduli AEM con (obsoleto per i moduli AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Puoi aggiungere un endpoint remoto a un servizio a livello di programmazione utilizzando l&#39;API Java AEM Forms. Aggiungendo un endpoint remoto, si sta abilitando un&#39;applicazione Flex per richiamare il servizio utilizzando la rimozione. (Vedere [Richiamo di AEM Forms mediante (obsoleto per i moduli AEM) AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Ai fini dell&#39;aggiunta programmatica di un endpoint Remoting a un servizio, tenere in considerazione il seguente processo di breve durata denominato *EncryptDocument*.
 
@@ -777,10 +784,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -879,10 +886,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -975,7 +982,7 @@ Aggiungete un endpoint TaskManager utilizzando l&#39;API Java:
 
 ## Modifica di endpoint {#modifying-endpoints}
 
-Puoi modificare a livello di programmazione un endpoint esistente utilizzando l&#39;API Java di AEM Forms. Modificando un endpoint, potete modificare il comportamento dell&#39;endpoint. Considerate, ad esempio, un endpoint cartella esaminata che specifica una cartella utilizzata come cartella esaminata. È possibile modificare a livello di programmazione i valori di configurazione che appartengono all’endpoint della cartella esaminata, in modo che un’altra cartella funzioni come cartella esaminata. Per informazioni sui valori di configurazione che appartengono a un endpoint di una cartella esaminata, consultate [Aggiunta di endpoint](programmatically-endpoints.md#adding-watched-folder-endpoints)di cartelle esaminate.
+Potete modificare programmaticamente un endpoint esistente utilizzando l&#39;API Java AEM Forms. Modificando un endpoint, potete modificare il comportamento dell&#39;endpoint. Considerate, ad esempio, un endpoint cartella esaminata che specifica una cartella utilizzata come cartella esaminata. È possibile modificare a livello di programmazione i valori di configurazione che appartengono all’endpoint della cartella esaminata, in modo che un’altra cartella funzioni come cartella esaminata. Per informazioni sui valori di configurazione che appartengono a un endpoint di una cartella esaminata, consultate [Aggiunta di endpoint](programmatically-endpoints.md#adding-watched-folder-endpoints)di cartelle esaminate.
 
 Per dimostrare come modificare un endpoint, in questa sezione viene modificato un endpoint cartella esaminata modificando la cartella che si comporta come cartella esaminata.
 
@@ -1000,10 +1007,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -1050,7 +1057,7 @@ Modificate un endpoint utilizzando l&#39;API Java:
 
 1. Recuperate l’endpoint da modificare.
 
-   * Recuperare un elenco di tutti gli endpoint a cui l&#39;utente corrente (specificato nelle proprietà di connessione) può accedere richiamando il metodo dell&#39; `EndpointRegistryClient` oggetto `getEndpoints` e passando un `PagingFilter` oggetto che funge da filtro. Potete passare un `(PagingFilter)null` valore per restituire tutti gli endpoint. Questo metodo restituisce un `java.util.List` oggetto in cui ogni elemento è un `Endpoint` oggetto. Per informazioni su un `PagingFilter` oggetto, consultate Guida di riferimento [delle API di](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Recuperare un elenco di tutti gli endpoint a cui l&#39;utente corrente (specificato nelle proprietà di connessione) può accedere richiamando il metodo dell&#39; `EndpointRegistryClient` oggetto `getEndpoints` e passando un `PagingFilter` oggetto che funge da filtro. Potete passare un `(PagingFilter)null` valore per restituire tutti gli endpoint. Questo metodo restituisce un `java.util.List` oggetto in cui ogni elemento è un `Endpoint` oggetto. Per informazioni su un `PagingFilter` oggetto, consultate [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API per AEM Forms.
    * Eseguire un&#39;iterazione sull&#39; `java.util.List` oggetto per determinare se dispone di endpoint. Se esistono endpoint, ogni elemento è un&#39; `EndPoint` istanza.
    * Determinare il servizio che corrisponde a un endpoint richiamando il metodo dell&#39; `EndPoint` oggetto `getServiceId` . Questo metodo restituisce un valore di stringa che specifica il nome del servizio.
    * Determinare il tipo di endpoint richiamando il metodo dell&#39; `EndPoint` oggetto `getConnectorId` . Questo metodo restituisce un valore di stringa che specifica il tipo di endpoint. Ad esempio, se l’endpoint è un endpoint cartella esaminata, questo metodo restituisce `WatchedFolder`.
@@ -1077,7 +1084,7 @@ Modificate un endpoint utilizzando l&#39;API Java:
 
 ## Rimozione di endpoint {#removing-endpoints}
 
-Puoi rimuovere programmaticamente un endpoint da un servizio utilizzando l&#39;API Java di AEM Forms. Dopo aver rimosso un endpoint, il servizio non può essere invocato utilizzando il metodo di chiamata abilitato dall&#39;endpoint. Ad esempio, se si rimuove un endpoint SOAP da un servizio, non è possibile richiamare il servizio utilizzando la modalità SOAP.
+Puoi rimuovere programmaticamente un endpoint da un servizio utilizzando l&#39;API Java AEM Forms. Dopo aver rimosso un endpoint, il servizio non può essere invocato utilizzando il metodo di chiamata abilitato dall&#39;endpoint. Ad esempio, se si rimuove un endpoint SOAP da un servizio, non è possibile richiamare il servizio utilizzando la modalità SOAP.
 
 Per dimostrare come rimuovere un endpoint da un servizio, questa sezione rimuove un endpoint EJB da un servizio denominato *EncryptDocument*.
 
@@ -1102,10 +1109,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Per informazioni sulla posizione di questi file JAR, consultate [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
+Per informazioni sulla posizione di questi file JAR, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto Client EndpointRegistry**
 
@@ -1175,7 +1182,7 @@ Per dimostrare come recuperare informazioni sui connettori endpoint, questa sezi
 
 >[!NOTE]
 >
->In questo argomento viene utilizzata l&#39; `ConnectorRegistryClient` API per recuperare informazioni sui connettori endpoint. Consultate Riferimento [API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+>In questo argomento viene utilizzata l&#39; `ConnectorRegistryClient` API per recuperare informazioni sui connettori endpoint. Consultate Riferimento API per [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 ### Riepilogo dei passaggi {#summary_of_steps-8}
 
@@ -1194,10 +1201,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito sul server applicazioni JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss Application Server)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti in JBoss Application Server)
 
-Se AEM Forms è distribuito su un server applicazione J2EE supportato che non sia JBoss, sostituire adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE in cui è distribuito AEM Forms. Per informazioni sulla posizione di tutti i file AEM Forms JAR, consultate [Inclusione dei file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms.
+Se i AEM Forms sono distribuiti su un server applicazione J2EE supportato che non è JBoss, sostituite adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE in cui sono distribuiti i AEM Forms. Per informazioni sulla posizione di tutti i file JAR AEM Forms, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un oggetto ConnectorRegistry Client**
 
