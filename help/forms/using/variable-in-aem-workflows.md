@@ -1,8 +1,8 @@
 ---
 title: Variabili nei flussi di lavoro AEM Forms
 seo-title: Variabili nei flussi di lavoro AEM Forms
-description: Crea una variabile, imposta un valore per la variabile e utilizzala nei passaggi del flusso di lavoro di AEM Forms.
-seo-description: Crea una variabile, imposta un valore per la variabile e utilizzala nei passaggi del flusso di lavoro di AEM Forms.
+description: Create una variabile, impostate un valore per la variabile e utilizzatela nei passaggi del flusso di lavoro dei AEM Forms.
+seo-description: Create una variabile, impostate un valore per la variabile e utilizzatela nei passaggi del flusso di lavoro dei AEM Forms.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2102'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Nei modelli di flusso di lavoro AEM è possibile:
 
 * [Creare una variabile](../../forms/using/variable-in-aem-workflows.md#create-a-variable) di un tipo di dati in base al tipo di informazioni che si desidera memorizzare al suo interno.
 * [Impostate un valore per la variabile](../../forms/using/variable-in-aem-workflows.md#set-a-variable) utilizzando il passaggio del flusso di lavoro Imposta variabile.
-* [Utilizzate la variabile](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in tutti i passaggi del flusso di lavoro di AEM Forms per recuperare il valore memorizzato e nei passaggi di divisione e di spostamento OR per definire un&#39;espressione di routing.
+* [Utilizzare la variabile](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in tutti i passaggi del flusso di lavoro dei AEM Forms per recuperare il valore memorizzato e nei passaggi di divisione e goto OR per definire un&#39;espressione di routing.
 
 Il seguente video illustra come creare, impostare e utilizzare le variabili nei modelli di flusso di lavoro AEM:
 
@@ -36,13 +39,13 @@ Le variabili sono un&#39;estensione dell&#39;interfaccia [MetaDataMap](https://h
 Per creare le variabili, utilizzate la sezione Variabili disponibile nella barra laterale del modello di workflow. Le variabili del flusso di lavoro AEM supportano i seguenti tipi di dati:
 
 * **Tipi** di dati di base: Long, Double, Boolean, Date e String
-* **Tipi** di dati complessi: istanza [Document](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)e Form Data Model.
+* **Tipi** di dati complessi: [istanza Document](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)e Form Data Model.
 
 >[!NOTE]
 >
 >I flussi di lavoro supportano solo il formato ISO8601 per le variabili di tipo Data.
 
-È necessario un pacchetto [aggiuntivo](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms per i tipi di dati Document e Form Data Model.  Utilizzate il tipo di dati ArrayList per creare raccolte di variabili. È possibile creare una variabile ArrayList per tutti i tipi di dati primitivi e complessi. Ad esempio, creare una variabile ArrayList e selezionare String come sottotipo per memorizzare più valori stringa utilizzando la variabile.
+Per i tipi di dati Document e Form Data Model è necessario un pacchetto [aggiuntivo per](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms.  Utilizzate il tipo di dati ArrayList per creare raccolte di variabili. È possibile creare una variabile ArrayList per tutti i tipi di dati primitivi e complessi. Ad esempio, creare una variabile ArrayList e selezionare String come sottotipo per memorizzare più valori stringa utilizzando la variabile.
 
 Per creare una variabile, eseguite i seguenti passaggi:
 
@@ -57,7 +60,7 @@ Per creare una variabile, eseguite i seguenti passaggi:
 
    * Tipo di dati di base - Specificate un valore predefinito facoltativo per la variabile.
    * JSON o XML - Specificate un percorso di schema JSON o XML facoltativo. Il sistema convalida il percorso dello schema durante la mappatura e la memorizzazione delle proprietà disponibili in questo schema a un&#39;altra variabile.
-   * Modello dati modulo - Specifica un percorso del modello dati modulo.
+   * Modello dati modulo - Specifica un percorso del modello dati del modulo.
    * ArrayList - Specifica un sottotipo per la raccolta.
 
 1. Specificate una descrizione facoltativa per la variabile e toccate ![](assets/done_icon.png) per salvare le modifiche. La variabile viene visualizzata nell’elenco disponibile nel riquadro a sinistra.
@@ -76,16 +79,16 @@ Le modifiche ai valori delle variabili interessano solo l’istanza del processo
 
 A seconda del tipo di dati della variabile, è possibile utilizzare le seguenti opzioni per impostare il valore di una variabile:
 
-* **** Letterale: Utilizzate l&#39;opzione quando conoscete il valore esatto da specificare.
+* **Letterale:** Utilizzate l&#39;opzione quando conoscete il valore esatto da specificare.
 
-* **** Espressione: Utilizzare l&#39;opzione quando il valore da utilizzare viene calcolato in base a un&#39;espressione. L&#39;espressione viene creata nell&#39;editor di espressioni fornito.
+* **Espressione:** Utilizzare l&#39;opzione quando il valore da utilizzare viene calcolato in base a un&#39;espressione. L&#39;espressione viene creata nell&#39;editor di espressioni fornito.
 
-* **** Notazione punto JSON: Utilizzate l&#39;opzione per recuperare un valore da una variabile di tipo JSON o FDM.
-* **** XPATH: Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo XML.
+* **Notazione punto JSON:** Utilizzate l&#39;opzione per recuperare un valore da una variabile di tipo JSON o FDM.
+* **XPATH:** Utilizzare l&#39;opzione per recuperare un valore da una variabile di tipo XML.
 
-* **** Relativo al payload: Utilizzare l&#39;opzione quando il valore da salvare in variabile è disponibile in un percorso relativo al payload.
+* **Relativo al payload:** Utilizzare l&#39;opzione quando il valore da salvare in variabile è disponibile in un percorso relativo al payload.
 
-* **** Percorso assoluto: Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso assoluto.
+* **Percorso assoluto:** Utilizzare l&#39;opzione quando il valore da salvare nella variabile è disponibile in un percorso assoluto.
 
 Potete anche aggiornare elementi specifici di una variabile di tipo JSON o XML utilizzando la notazione JSON DOT o XPATH.
 
@@ -117,11 +120,11 @@ In questo esempio, utilizzate l&#39;editor di espressioni per definire un&#39;es
 
 ## Usa editor espressioni {#use-expression-editor}
 
-È inoltre possibile utilizzare le espressioni per calcolare il valore di una variabile nel runtime. Le variabili forniscono un editor di espressioni per definire le espressioni.
+È inoltre possibile utilizzare le espressioni per calcolare il valore di una variabile in fase di esecuzione. Le variabili forniscono un editor di espressioni per definire le espressioni.
 
 Utilizzate l&#39;editor di espressioni per:
 
-* Impostare il valore delle variabili utilizzando altre variabili di flusso di lavoro, numeri o espressioni matematiche.
+* Impostate il valore delle variabili utilizzando altre variabili di flusso di lavoro, numeri o espressioni matematiche.
 * Utilizzare variabili di flusso di lavoro, stringa, numero o espressione all&#39;interno di un&#39;espressione matematica
 * Aggiungere condizioni per impostare i valori delle variabili.
 * Aggiungere operatori tra le condizioni.
@@ -148,7 +151,7 @@ Per ulteriori informazioni, vedere Editor [di regole per moduli](../../forms/usi
 
 ### Passaggi del flusso di lavoro con supporto per le variabili {#workflow-steps-with-support-for-variables}
 
-Il passaggio Vai a, O Dividi e tutti i passaggi del flusso di lavoro di AEM Forms supportano le variabili.
+Il passaggio Vai a, O Dividi e tutti i passaggi del flusso di lavoro AEM Forms supportano le variabili.
 
 #### Passaggio divisione OR {#or-split-step}
 
@@ -158,7 +161,7 @@ La divisione OR crea una divisione nel flusso di lavoro, dopo di che è attivo u
 
 È possibile utilizzare le variabili per definire l&#39;espressione di routing utilizzando l&#39;editor di espressioni. Per ulteriori informazioni sull&#39;uso delle espressioni di routing per il passaggio di divisione OR, vedere Passaggio [di divisione](/help/sites-developing/workflows-step-ref.md#or-split)OR.
 
-In questo esempio, prima di definire l&#39;espressione di routing, utilizzare [l&#39;esempio 2](../../forms/using/variable-in-aem-workflows.md#example2) per impostare il valore per la variabile **totalvalue** . Il ramo 1 è attivo se il valore della variabile **total value** è maggiore di 50000. Allo stesso modo, è possibile definire una regola per rendere attivo il ramo 2 se il valore della variabile **total value** è inferiore a 50000.
+In questo esempio, prima di definire l&#39;espressione di routing, utilizzare [l&#39;esempio 2](../../forms/using/variable-in-aem-workflows.md#example2) per impostare il valore per la variabile **totalvalue** . La diramazione 1 è attiva se il valore della variabile **total value** è maggiore di 50000. Allo stesso modo, è possibile definire una regola per rendere attivo il ramo 2 se il valore della variabile **total value** è inferiore a 50000.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -182,7 +185,7 @@ Per ulteriori esempi sull&#39;utilizzo della definizione della regola nel passag
 
 #### Passaggi del flusso di lavoro incentrati sui moduli {#forms-workflow-centric-workflow-steps}
 
-Tutti i passaggi del flusso di lavoro di AEM Forms supportano le variabili. Per ulteriori informazioni, vedere Flusso di lavoro incentrato sui [moduli in OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
+Tutti i passaggi del flusso di lavoro AEM Forms supportano le variabili. Per ulteriori informazioni, vedere Flusso di lavoro incentrato sui [moduli in OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
 
 ### Passaggi del flusso di lavoro senza supporto delle variabili {#workflow-steps-without-support-for-variables}
 
@@ -200,13 +203,13 @@ Utilizzate le seguenti API nello script ECMA per recuperare i valori per le vari
 | Modello dati modulo | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-È necessario un pacchetto [aggiuntivo](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms per i tipi di dati variabili Document e Form Data Model.
+È necessario un pacchetto [aggiuntivo per](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms per i tipi di dati variabili Document e Form Data Model.
 
 **Esempio**
 
 Recuperare il valore del tipo di dati stringa utilizzando la seguente API:
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)
 ```
 
@@ -214,13 +217,13 @@ workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.Stri
 
 Utilizzate la seguente API nello script ECMA per aggiornare il valore di una variabile:
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
 ```
 
 **Esempio**
 
-```
+```javascript
 workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 ```
 
@@ -234,7 +237,7 @@ Potete utilizzare un&#39;API per impostare le variabili e passarle alle istanze 
 
 In questa API, la variabile **variableName** è impostata su **value** utilizzando metaData.put(variableName, value);
 
-```java
+```javascript
 import com.adobe.granite.workflow.model.WorkflowModel;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.adobe.aemfd.docmanager.Document;
@@ -251,7 +254,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 Inizializzare l&#39;oggetto **doc** document su un percorso (&quot;a/b/c&quot;) e impostare il valore della variabile **docVar** sul percorso memorizzato nell&#39;oggetto document.
 
-```java
+```javascript
 import com.adobe.granite.workflow.WorkflowSession;
 import com.adobe.granite.workflow.exec.WorkflowData;
 import com.adobe.granite.workflow.model.WorkflowModel;
@@ -285,4 +288,4 @@ Per eliminare una variabile, eseguite i seguenti passaggi:
 
 ## Riferimenti {#references}
 
-Per ulteriori esempi sull&#39;uso delle variabili nei passaggi del flusso di lavoro di AEM Forms, consultate [Variabili nei flussi di lavoro](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html)AEM.
+Per ulteriori esempi sull’uso delle variabili nei passaggi del flusso di lavoro AEM Forms, consultate [Variabili nei flussi di lavoro](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html)AEM.
