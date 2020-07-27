@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 Quando si crea un modulo adattivo, è possibile specificare il layout di una barra degli strumenti per il modulo. Il layout della barra degli strumenti definisce i comandi e il layout della barra degli strumenti sul modulo.
 
-Gli utilizzi del layout della barra degli strumenti dipendono in larga misura dall&#39;elaborazione sul lato client basata su codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato. Per risolvere questo problema, AEM offre cartelle libreria lato client che consentono di archiviare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, consultate [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
+Gli utilizzi del layout della barra degli strumenti dipendono in larga misura dall&#39;elaborazione sul lato client, gestita da codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato. Per risolvere questo problema, AEM offre cartelle libreria lato client che consentono di archiviare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, consultate [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
 
 ![Esempio di layout della barra degli strumenti](assets/default_toolbar_layout.png)
 
@@ -29,9 +32,9 @@ Esempio di layout della barra degli strumenti
 
 I moduli adattivi forniscono una serie di layout predefiniti:
 
-![Layout della barra degli strumenti disponibili ](assets/toolbar1.png)
+![Layout della barra degli strumenti disponibili out-of-the-box ](assets/toolbar1.png)
 
-Layout della barra degli strumenti disponibili
+Layout della barra degli strumenti disponibili out-of-the-box
 
 È inoltre possibile creare un layout personalizzato per la barra degli strumenti.
 
@@ -41,11 +44,11 @@ Il pacchetto di contenuti allegato contiene l’intero codice descritto di segui
 
 CustomToolbarLayoutDemo.zip
 
-[Ottieni layout barra degli strumenti personalizzato](assets/customtoolbarlayoutdemo.zip)Demo
+[Ottieni layout barra degli strumenti personalizzato Demo file](assets/customtoolbarlayoutdemo.zip)
 
 ## Per creare un layout personalizzato della barra degli strumenti {#layout-1}
 
-1. Create una cartella per mantenere i layout personalizzati della barra degli strumenti. Esempio:
+1. Create una cartella per mantenere i layout personalizzati della barra degli strumenti. Ad esempio:
 
    `/apps/customlayout/toolbar`.
 
@@ -89,9 +92,9 @@ CustomToolbarLayoutDemo.zip
 
    Percorso del file customToolbarLayout.css
 
-   Esempio `customToolbarLayout.jsp`:
+   Esempi `customToolbarLayout.jsp`:
 
-   ```php
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <cq:includeClientLib categories="customtoolbarlayout" />
    <c:if test="${isEditMode}">
@@ -107,9 +110,9 @@ CustomToolbarLayoutDemo.zip
    >
    >Aggiungete la classe guidetoolbar per il layout. Lo stile predefinito per la barra degli strumenti è definito in relazione alla classe guidetoolbar.
 
-   Esempio `toolBarCommon.jsp`:
+   Esempi `toolBarCommon.jsp`:
 
-   ```php
+   ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
    <%--------------------
    This code iterates over all the tool bar items using the guideToolbar bean.
