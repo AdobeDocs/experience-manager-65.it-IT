@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -155,7 +158,7 @@ Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **S
 
    ![Aggiunta di nomi](assets/country-dropdown.png) di paese ![Aggiunta di script per la compilazione di elenchi a discesa di stati](assets/state-dropdown.png) ![Paese e Stato](assets/2dropdowns.png)
 
-   ```
+   ```javascript
    JSON.parse(
        $.ajax({
            url: "/apps/myfolder/demo/dropdown",
