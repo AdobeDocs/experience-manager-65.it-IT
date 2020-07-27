@@ -9,20 +9,23 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
 
 # Funzionalità di layout dei moduli adattivi{#layout-capabilities-of-adaptive-forms}
 
-Adobe Experience Manager (AEM) consente di creare moduli adattivi di facile utilizzo che offrono esperienze dinamiche agli utenti finali. Il layout del modulo controlla il modo in cui gli elementi o i componenti vengono visualizzati in un modulo adattivo.
+ Adobe Experience Manager (AEM) consente di creare moduli adattivi di facile utilizzo che offrono esperienze dinamiche agli utenti finali. Il layout del modulo controlla il modo in cui gli elementi o i componenti vengono visualizzati in un modulo adattivo.
 
 ## Conoscenza dei prerequisiti {#prerequisite-knowledge}
 
 Prima di apprendere le diverse funzionalità di layout dei moduli adattivi, consultare i seguenti articoli per ulteriori informazioni sui moduli adattivi.
 
-[Introduzione ad AEM Forms](../../forms/using/introduction-aem-forms.md)
+[Introduzione ai AEM Forms](../../forms/using/introduction-aem-forms.md)
 
 [Introduzione alla creazione di moduli](../../forms/using/introduction-forms-authoring.md)
 
@@ -76,7 +79,7 @@ Utilizzare questo layout del pannello per fornire la navigazione guidata all&#39
 
 Usate il `Panel adaptive form` componente per effettuare una navigazione dettagliata all’interno di un pannello. Quando utilizzate questo layout, un utente passa al passaggio successivo solo dopo che il passaggio corrente è stato completato
 
-```
+```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
@@ -86,7 +89,7 @@ Espressione completamento passo nel layout Procedura guidata per un modulo a pi�
 
 ![Un modulo con layout guidato](assets/wizard-layout.png)
 
-Modulo tramite procedura guidata
+Un modulo che utilizza la procedura guidata
 
 ### Layout per la progettazione a soffietto {#layout-for-accordion-design}
 
@@ -108,7 +111,7 @@ Schede visualizzate a sinistra di un pannello
 
 ### Layout a schede - le schede vengono visualizzate nella parte superiore {#tabbed-layout-tabs-appear-on-the-top}
 
-Utilizzando questo layout, è possibile posizionare il `Panel adaptive form` componente in un pannello con navigazione tramite tabulazioni. Le schede vengono posizionate sopra al contenuto del pannello.
+Utilizzando questo layout, è possibile posizionare il `Panel adaptive form` componente in un pannello con la navigazione tramite scheda. Le schede vengono posizionate sopra al contenuto del pannello.
 
 ![Layout a schede nei moduli adattivi con schede nella parte superiore](assets/tabbed_layout_top.png)
 
