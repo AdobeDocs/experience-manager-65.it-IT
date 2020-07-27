@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7153'
 ht-degree: 0%
@@ -360,7 +360,7 @@ Il nome della cartella di output è una combinazione di numero del passaggio cor
 
 ECMAScript ottiene un riferimento al servizio di contesto del flusso di lavoro e crea un&#39;implementazione dell&#39;interfaccia WorkflowContextProcessor. L&#39;implementazione WorkflowContextProcessor accetta i file di input, copia il file in una posizione temporanea e restituisce un documento che rappresenta il file copiato. In base al valore della variabile booleana purgePrevious, il passaggio corrente elimina l&#39;output generato l&#39;ultima volta dallo stesso passaggio quando il passaggio è stato avviato nell&#39;istanza del flusso di lavoro corrente. Alla fine, il metodo wfSvc.execute viene richiamato per eseguire l&#39;implementazione WorkflowContextProcessor. Il contenuto del documento di output viene salvato nella cartella dei risultati nel percorso fisico indicato nel nodo di configurazione Cartella esaminata.
 
-```java
+```javascript
 log.error("Watch-folder workflow script called for step: " + graniteWorkItem.getNode().getTitle());
 var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
 // Custom WorkflowContextProcessor implementation which defines the processWorkflowContext() method purely in JS
@@ -613,7 +613,7 @@ ECMAScript utilizza l’API createPDF di PDF Generator per convertire i document
 
 1. Nella cartella PDFG, creare un file denominato pdfg-openOffice-sample.ecma e aggiungere al file il codice seguente:
 
-   ```java
+   ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
    // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
    var impl = { processWorkflowContext: function (wrkfContext) {
