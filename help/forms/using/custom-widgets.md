@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Un esempio di widget predefinito e personalizzato
 
 ## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
-### Creazione di un profilo {#create-a-profile-nbsp}
+### Creazione di un profilo  {#create-a-profile-nbsp}
 
 Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione dei profili, consultate [Creazione di un profilo](/help/forms/using/custom-profile.md)personalizzato.
 
@@ -69,15 +72,15 @@ I moduli HTML5 forniscono un&#39;implementazione del framework di widget che pu�
 
 Per creare un widget personalizzato, nel profilo creato sopra, includete i riferimenti del file JavaScript che contiene funzioni sostituite e funzioni aggiunte di recente. Ad esempio, *sliderNumericFieldWidget* è un widget per i campi numerici. Per utilizzare il widget nel profilo nella sezione di intestazione, includi la seguente riga:
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Registrazione di un widget personalizzato con il motore di script XFA {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Registrazione di un widget personalizzato con il motore di script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 Quando il codice widget personalizzato è pronto, registrate il widget con il motore di script utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). È necessario widgetConfigObject come input.
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig",
         {
         ".<field-identifier>":"<name-of-the-widget>"
