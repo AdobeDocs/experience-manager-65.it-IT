@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Per il servizio Task Manager sono disponibili i seguenti Avvio rapido.
 
 [Avvio rapido (modalità SOAP): Recupero delle informazioni sulle attività tramite l&#39;API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizzazione forte di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
@@ -41,13 +44,13 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API con tipizz
 
 >[!NOTE]
 >
->La sezione Avvio rapido nella programmazione con AEM Forms è basata sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>La sezione Avvio rapido, che si trova nella sezione Programmazione con AEM Forms, si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Assegnazione di attività tramite l&#39;API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene assegnata un&#39;attività a un utente denominato Tony Blue.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -180,7 +183,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene assegnata un&#39;atti
 
 L&#39;esempio di codice Java seguente blocca un&#39;attività che corrisponde al valore di identificatore dell&#39;attività 2.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -269,7 +272,7 @@ L&#39;esempio di codice Java seguente blocca un&#39;attività che corrisponde al
 
 Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività assegnate a un utente denominato *tony blue*. Questo utente viene specificato nelle proprietà della connessione. Vengono visualizzate informazioni sulle attività restituite, ad esempio il valore e la descrizione dell&#39;identificatore.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -395,7 +398,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le
 
 L&#39;esempio di codice Java riportato di seguito recupera i dati del modulo da un&#39;attività con il valore di identificatore 304. I dati del modulo vengono scritti in un file XML denominato *FormData.xml* all&#39;indirizzo C:\Adobe.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -501,7 +504,7 @@ L&#39;esempio di codice Java riportato di seguito recupera i dati del modulo da 
 
 Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo con dati che si trova nel file *FormData.xml* .
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -611,7 +614,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiornato un modulo 
 
 Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli allegati di file. Ogni allegato viene salvato come file TXT.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -715,7 +718,7 @@ Nell&#39;esempio di codice Java riportato di seguito vengono recuperati gli alle
 
 Nell&#39;esempio di codice Java riportato di seguito vengono recuperate tutte le attività basate su un processo denominato *Mutuo*- Pregenerato. Lo stato di ogni attività restituita viene controllato per verificare che si tratti di un&#39;attività completata. Vengono recuperate e visualizzate informazioni quali il nome dell&#39;utente che ha completato l&#39;attività e la data in cui è stata completata.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
