@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 2%
 
 ---
 
@@ -168,7 +171,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
 
       Quindi aggiungete il codice seguente alla fine nel file formaction.js (sotto il ramo /apps) e fate clic su **Salva tutto**:
 
-      ```
+      ```javascript
       /* Action url for xml file to be added.*/
       var ACTION_URL = "/apps/fd/cm/ma/gui/content/commons/actionhandlers/items/letterpdfdownloader.html";
       
@@ -276,7 +279,7 @@ Per personalizzare la gestione della corrispondenza per consentire agli utenti d
    1. Fate doppio clic sul file **POST.jsp** per aprirlo in CRX.
    1. Aggiungete il codice seguente al file POST.jsp e fate clic su **Salva tutto**:
 
-      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie Java della risorsa al codice. Per ulteriori informazioni sulle API di AEM Forms, consultate API [di](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie Java della risorsa al codice. Per ulteriori informazioni sulle API AEM Forms, consultate API [](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
       Per ulteriori informazioni sulle librerie AEM, consultate [Componenti](/help/sites-developing/components.md)AEM.
 
