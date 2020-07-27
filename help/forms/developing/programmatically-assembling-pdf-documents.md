@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2092'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +25,11 @@ source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
 
 ![pa_pa_document_assembly](assets/pa_pa_document_assembly.png)
 
-Per assemblare due o più documenti PDF in un singolo documento PDF, è necessario un documento DDX. Un documento DDX descrive il documento PDF prodotto dal servizio Assembler. In altre parole, il documento DDX indica al servizio Assembler quali azioni eseguire.
+Per assemblare due o più documenti PDF in un singolo documento PDF, è necessario disporre di un documento DDX. Un documento DDX descrive il documento PDF prodotto dal servizio Assembler. In altre parole, il documento DDX indica al servizio Assembler quali azioni eseguire.
 
 Ai fini di questa discussione, si supponga di utilizzare il seguente documento DDX.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
      <PDF result="out.pdf">
@@ -44,7 +47,7 @@ Questo documento DDX unisce due documenti PDF denominati *map.pdf* e *directiona
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere Riferimento [servizi per i AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ Questo documento DDX unisce due documenti PDF denominati *map.pdf* e *directiona
 
 ## Considerazioni durante la chiamata del servizio Assembler con i servizi Web {#considerations-when-invoking-assembler-service-using-web-services}
 
-Quando si aggiungono intestazioni e piè di pagina durante il montaggio di documenti di grandi dimensioni, si potrebbe verificare un `OutOfMemory` errore e i file non verranno assemblati. Per ridurre la possibilità che si verifichi questo problema, aggiungere un `DDXProcessorSetting` elemento al documento DDX, come illustrato nell&#39;esempio seguente.
+Quando si aggiungono intestazioni e piè di pagina durante l&#39;assemblaggio di documenti di grandi dimensioni, si potrebbe verificare un `OutOfMemory` errore e i file non verranno assemblati. Per ridurre la possibilità che si verifichi questo problema, aggiungere un `DDXProcessorSetting` elemento al documento DDX, come illustrato nell&#39;esempio seguente.
 
 `<DDXProcessorSetting name="checkpoint" value="2000" />`
 
@@ -79,10 +82,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti su JBoss)
 
-se AEM Forms è distribuito su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE in cui è distribuito AEM Forms.
+se i AEM Forms sono distribuiti su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE in cui sono distribuiti i AEM Forms.
 
 **Creare un client Assembler PDF**
 
@@ -104,7 +107,7 @@ Sia il file map.pdf che il file direction.pdf devono essere inseriti in un ogget
 
 **Impostazione delle opzioni di esecuzione**
 
-È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, consultate il riferimento alla `AssemblerOptionSpec` classe in Riferimento API di [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, vedere il riferimento alla `AssemblerOptionSpec` classe in Riferimento API per [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Assemblare i documenti PDF in input**
 
@@ -191,6 +194,7 @@ Assemblate un documento PDF utilizzando l&#39;API di Assembler Service (Java):
    * Un `com.adobe.idp.Document` oggetto che rappresenta il documento DDX da utilizzare
    * Un `java.util.Map` oggetto che contiene i file PDF di input da assemblare
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione, incluso il font predefinito e il livello di registro del processo
+
    Il `invokeDDX` metodo restituisce un `com.adobe.livecycle.assembler.client.AssemblerResult` oggetto che contiene i risultati del processo ed eventuali eccezioni.
 
 1. Estrarre i risultati.
@@ -198,8 +202,9 @@ Assemblate un documento PDF utilizzando l&#39;API di Assembler Service (Java):
    Per ottenere il documento PDF appena creato, effettuare le seguenti operazioni:
 
    * Richiama il metodo dell’ `AssemblerResult` oggetto `getDocuments` . Questo restituisce un `java.util.Map` oggetto.
-   * Iterare l&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante. Per ottenere il documento è possibile utilizzare l&#39;elemento risultato PDF specificato nel documento DDX.
+   * Eseguire un&#39;iterazione sull&#39; `java.util.Map` oggetto fino a individuare l&#39; `com.adobe.idp.Document` oggetto risultante. Per ottenere il documento è possibile utilizzare l&#39;elemento risultato PDF specificato nel documento DDX.
    * Richiamare il metodo dell&#39; `com.adobe.idp.Document` oggetto `copyToFile` per estrarre il documento PDF.
+
    >[!NOTE]
    >
    >Se `LOG_LEVEL` è stato impostato per generare un registro, è possibile estrarre il registro utilizzando il `AssemblerResult` metodo dell&#39; `getJobLog` oggetto.
@@ -222,12 +227,12 @@ Assemblate i documenti PDF utilizzando l&#39;API di Assembler Service (servizio 
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server host AEM Forms.
 
 1. Creare un client Assembler PDF.
 
    * Creare un `AssemblerServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passate un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `AssemblerServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
@@ -254,14 +259,14 @@ Assemblate i documenti PDF utilizzando l&#39;API di Assembler Service (servizio 
    * Compilare l&#39; `BLOB` oggetto assegnandone `MTOM` il campo con il contenuto dell&#39;array di byte.
    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Questo oggetto raccolta viene utilizzato per memorizzare i documenti PDF di input.
    * Per ciascun documento PDF di input, creare un `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto. Ad esempio, se si utilizzano due documenti PDF di input, creare due `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetti.
-   * Assegnare un valore stringa che rappresenta il nome chiave al campo dell&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto `key` . Questo valore deve corrispondere al valore dell&#39;elemento di origine PDF specificato nel documento DDX. (Eseguire questa operazione per ciascun documento PDF di input.)
+   * Assegnare un valore di stringa che rappresenta il nome chiave al campo dell&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto `key` . Questo valore deve corrispondere al valore dell&#39;elemento di origine PDF specificato nel documento DDX. (Eseguire questa operazione per ciascun documento PDF di input.)
    * Assegnare l&#39; `BLOB` oggetto che memorizza il documento PDF nel campo dell&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto `value` . (Eseguire questa operazione per ciascun documento PDF di input.)
    * Aggiungere l&#39; `MyMapOf_xsd_string_To_xsd_anyType_Item` oggetto all&#39; `MyMapOf_xsd_string_To_xsd_anyType` oggetto. Richiamare il `MyMapOf_xsd_string_To_xsd_anyType` metodo dell&#39;oggetto `Add` e passare l&#39; `MyMapOf_xsd_string_To_xsd_anyType` oggetto. (Eseguire questa operazione per ciascun documento PDF di input.)
 
 1. Impostare le opzioni di esecuzione.
 
    * Creare un `AssemblerOptionSpec` oggetto che memorizza le opzioni di esecuzione utilizzando il relativo costruttore.
-   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati appartenente all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
+   * Impostare le opzioni di runtime per soddisfare i requisiti aziendali assegnando un valore a un membro di dati che appartiene all&#39; `AssemblerOptionSpec` oggetto. Ad esempio, per indicare al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore, assegnare `false` al membro `AssemblerOptionSpec` dati dell&#39; `failOnError` oggetto.
 
 1. Assemblare i documenti PDF di input.
 
@@ -270,6 +275,7 @@ Assemblate i documenti PDF utilizzando l&#39;API di Assembler Service (servizio 
    * Un `BLOB` oggetto che rappresenta il documento DDX.
    * L&#39; `mapItem` array che contiene i documenti PDF di input. Le chiavi devono corrispondere ai nomi dei file sorgente PDF e i relativi valori devono essere gli `BLOB` oggetti che corrispondono a tali file.
    * Un `AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione.
+
    Il `invoke` metodo restituisce un `AssemblerResult` oggetto che contiene i risultati del processo ed eventuali eccezioni.
 
 1. Estrarre i risultati.
@@ -279,10 +285,11 @@ Assemblate i documenti PDF utilizzando l&#39;API di Assembler Service (servizio 
    * Accedere al campo dell&#39; `AssemblerResult` oggetto `documents` , ovvero un `Map` oggetto che contiene i documenti PDF risultanti.
    * Eseguire un&#39;iterazione sull&#39; `Map` oggetto fino a individuare la chiave che corrisponde al nome del documento risultante. Quindi, inserite l&#39;elemento `value` dell&#39;array in un `BLOB`.
    * Estrarre i dati binari che rappresentano il documento PDF accedendo alla `BLOB` proprietà dell&#39; `MTOM` oggetto. Questo restituisce un array di byte che è possibile scrivere in un file PDF.
+
    >[!NOTE]
    >
    >Se `LOG_LEVEL` è stato impostato per generare un registro, è possibile estrarre il registro ottenendo il valore del membro `AssemblerResult` dati dell&#39; `jobLog` oggetto.
 
 **Consulta anche**
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata di AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
