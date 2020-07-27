@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ Di seguito sono elencate le risorse già create in questa esercitazione e necess
 
 **Immagini:** PayNow e ValueAddedServices
 
-1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Accedete all’istanza di creazione di AEM e andate a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
@@ -56,6 +59,7 @@ Di seguito sono elencate le risorse già create in questa esercitazione e necess
    1. Specificate la cartella **Create_First_IC_templates** > **Create_First_IC_Web_Template** come modello Web e toccate **Seleziona**.
 
    1. Toccate **Crea**.
+
    Viene visualizzato un messaggio di conferma della corretta creazione della comunicazione interattiva.
 
 1. Toccate **Modifica** per aprire la comunicazione interattiva nel riquadro a destra.
@@ -72,27 +76,27 @@ Di seguito sono elencate le risorse già create in questa esercitazione e necess
    ![Frammenti di documenti per le comunicazioni interattive](assets/create_first_ic_doc_fragments_new.png)
 
 1. Toccate l’area di destinazione **Grafici** e toccate **+** per aggiungere un componente **Grafico** .
-1. Toccate il componente Grafico e selezionate ![](assets/configure_icon.png) (Configura). Le proprietà del grafico vengono visualizzate nel riquadro a sinistra:
+1. Toccate il componente Grafico e selezionate ![configure_icon](assets/configure_icon.png) (Configura). Le proprietà del grafico vengono visualizzate nel riquadro a sinistra:
 
    1. Specifica un nome per il grafico.
    1. Selezionare **Torta** dall&#39;elenco a discesa Tipo **** grafico.
-   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** X. Toccare ![](assets/done_icon.png).
+   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** X. Toccate ![done_icon](assets/done_icon.png).
    1. Selezionare **Frequenza** dall&#39;elenco a discesa **Funzione** .
-   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** Y. Toccare ![](assets/done_icon.png).
-   1. Toccate ![](assets/done_icon.png) per salvare le proprietà del grafico.
+   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** Y. Toccate ![done_icon](assets/done_icon.png).
+   1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà del grafico.
 
 1. Vai alla scheda **Risorse** e applica il filtro per visualizzare solo i frammenti di layout nel riquadro a sinistra. Trascinare il frammento di layout **table_lf** nell’area di destinazione Chiamate **** dettagliate.
-1. Selezionate il Campo di testo nella colonna **Data** e toccate ![](assets/configure_icon.png) (Configura).
-1. Selezionare Oggetto **modello** dati dall&#39;elenco a discesa Tipo **di** binding, quindi selezionare **chiamate** > **data** di chiamata. Toccate ![](assets/done_icon.png) due volte per salvare le proprietà.
+1. Selezionate il Campo di testo nella colonna **Data** e toccate ![configure_icon](assets/configure_icon.png) (Configura).
+1. Selezionare Oggetto **modello** dati dall&#39;elenco a discesa Tipo **di** binding, quindi selezionare **chiamate** > **data** di chiamata. Toccate due volte ![done_icon](assets/done_icon.png) per salvare le proprietà.
 
    Allo stesso modo, potete creare un binding con **calltime**, **callnumber**, **callterm** e **callcharge** per i campi di testo nelle colonne **Time************** ,Number, Durata, Durata, e Oneridi testo.
 
 1. Toccate l’area di destinazione **PayNow** e toccate **+** per aggiungere un componente **Immagine** .
-1. Toccate il componente Immagine e selezionate ![](assets/configure_icon.png) (Configura). Le proprietà dell’immagine vengono visualizzate nel riquadro a sinistra:
+1. Toccate il componente Immagine e selezionate ![configure_icon](assets/configure_icon.png) (Configura). Le proprietà dell’immagine vengono visualizzate nel riquadro a sinistra:
 
    1. Specificate **PayNow** come nome dell&#39;immagine nel campo **Nome** .
    1. Toccate **Carica**, selezionate l’immagine salvata nel file system locale e toccate **Apri**.
-   1. Toccate ![](assets/done_icon.png) per salvare le proprietà dell’immagine.
+   1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà dell&#39;immagine.
 
 1. Ripetere i passaggi 13 e 14 per aggiungere l&#39;immagine **ValueAddedServices** all&#39;area di destinazione **ValueAddedServices** .
 
@@ -108,7 +112,7 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
 
 **Immagini:** PayNowWeb e ValueAddedServicesWeb
 
-1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Accedete all’istanza di creazione di AEM e andate a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
@@ -118,6 +122,7 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
    1. Specificate la cartella **Create_First_IC_templates** > **Create_First_IC_Web_Template** come modello Web e toccate **Seleziona**.
 
    1. Toccate **Crea**.
+
    Viene visualizzato un messaggio di conferma della corretta creazione della comunicazione interattiva.
 
 1. Toccate **Modifica** per aprire la comunicazione interattiva nel riquadro a destra.
@@ -133,18 +138,18 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
    | summary_charge_first_interactive_communication | Oneri |
 
 1. Toccate **Riepilogo spese** nell’area di destinazione e toccate **+** per aggiungere un componente **Grafico** .
-1. Toccate il componente Grafico e selezionate ![](assets/configure_icon.png) (Configura). Le proprietà del grafico vengono visualizzate nel riquadro a sinistra:
+1. Toccate il componente Grafico e selezionate ![configure_icon](assets/configure_icon.png) (Configura). Le proprietà del grafico vengono visualizzate nel riquadro a sinistra:
 
    1. Specifica un nome per il grafico.
    1. Selezionare **Torta** dall&#39;elenco a discesa Tipo **** grafico.
 
-   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** X. Toccare ![](assets/done_icon.png).
+   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** X. Toccate ![done_icon](assets/done_icon.png).
 
    1. Selezionare **Frequenza** dall&#39;elenco a discesa **Funzione** .
 
-   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** Y. Toccare ![](assets/done_icon.png).
+   1. Selezionare la proprietà **calltype** dal tipo di oggetto modello dati **chiamate** nella sezione dell&#39;asse **** Y. Toccate ![done_icon](assets/done_icon.png).
 
-   1. Toccate ![](assets/done_icon.png) per salvare le proprietà del grafico.
+   1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà del grafico.
 
 1. Selezionare la scheda **Origini** dati dal riquadro a sinistra e trascinare l&#39;oggetto modello dati **chiamate** nell&#39;area di destinazione Chiamate **** dettagliate. Tutte le proprietà nell&#39;oggetto modello dati **chiamate** sono visualizzate come colonne di tabella nell&#39;area di destinazione Chiamate **** dettagliate nel riquadro a destra.
 
@@ -162,9 +167,9 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
    1. Rinominare il testo in **Paga ora**.
    1. Selezionate il testo e toccate l&#39;icona Collegamento ipertestuale.
    1. Specificate l&#39;URL di pagamento nel campo **Percorso** .
-   1. Selezionate **Nuova scheda** dall&#39;elenco a discesa **Target** .
+   1. Selezionare **Nuova scheda** dall&#39;elenco a discesa **Target** .
 
-   1. Toccate ![](assets/done_icon.png) per salvare le proprietà del collegamento ipertestuale.
+   1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà del collegamento ipertestuale.
 
 1. Selezionare **Stile** dall&#39;elenco a discesa accanto all&#39;opzione **Anteprima** .
 
@@ -177,16 +182,17 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
 
    1. Selezionate Rosso come colore di sfondo per il pulsante dalla sezione **Sfondo** .
    1. Nel campo **Margine** per **Dimensioni e posizione** , toccate l’icona **Modifica simultaneamente** e impostate il margine **destro** su **450 pixel**. I campi In alto, In basso e A sinistra sono impostati come vuoti.
+
    ![Inserisci collegamento ipertestuale nella comunicazione interattiva](assets/ic_web_hyperlink_new.png)
 
 1. Toccate **Paga ora** nell’area di destinazione e toccate **+** per aggiungere un componente **Immagine** .
-1. Toccate il componente Immagine e selezionate ![](assets/configure_icon.png) (Configura). Le proprietà dell’immagine vengono visualizzate nel riquadro a sinistra:
+1. Toccate il componente Immagine e selezionate ![configure_icon](assets/configure_icon.png) (Configura). Le proprietà dell’immagine vengono visualizzate nel riquadro a sinistra:
 
    1. Specificate **PayNow** come nome dell&#39;immagine nel campo **Nome** .
 
    1. Toccate **Carica**, selezionate l&#39;immagine **PayNowWeb** salvata nel file system locale, quindi toccate **Apri**.
 
-   1. Toccate ![](assets/done_icon.png) per salvare le proprietà dell’immagine.
+   1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà dell&#39;immagine.
 
 1. In base al caso di utilizzo, inserire un pulsante **Iscrizione** nella comunicazione interattiva che offra all&#39;utente la possibilità di iscriversi ai servizi a valore aggiunto facendo clic sul pulsante.
 
@@ -198,7 +204,7 @@ Di seguito è riportato l&#39;elenco delle risorse già create in questa esercit
 
 Per derivare il contenuto del canale Web utilizzando il canale di stampa, eseguire la procedura seguente:
 
-1. Accedete all’istanza di creazione di AEM e passate ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Accedete all’istanza di creazione di AEM e andate a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Toccate **Crea** e selezionate Comunicazione **** interattiva. Viene visualizzata la procedura guidata **Crea comunicazione** interattiva.
 1. Specificate **create_first_ic** nel campo **Titolo** e **Nome** . Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Avanti**.
 1. Nella procedura guidata **Canali** :
@@ -209,6 +215,7 @@ Per derivare il contenuto del canale Web utilizzando il canale di stampa, esegui
    1. Specificate la cartella **Create_First_IC_templates** > **Create_First_IC_Web_Template** come modello Web e toccate **Seleziona**.
 
    1. Toccate **Crea**.
+
    Viene visualizzato un messaggio di conferma della corretta creazione della comunicazione interattiva.
 
 1. Toccate **Modifica** per aprire la comunicazione interattiva nel riquadro a destra.
@@ -232,6 +239,7 @@ Per derivare il contenuto del canale Web utilizzando il canale di stampa, esegui
    * Riepilogo distinta, componente, al pannello Riepilogo fatturazione
    * Riepilogo del componente Addebiti nel pannello Riepilogo spese
    * Frammento di layout (tabella) nel pannello Chiamate dettagliate
+
    ![Struttura contenuto Web](assets/ic_web_content_tree_new.png)
 
 1. Ripetete i passaggi da 13 a 18 di [Create Interactive Communication for Web channel](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) per inserire i collegamenti ipertestuali **Pay Now** e **Subscribe** nel canale Web della Comunicazione interattiva.
