@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '3909'
+ht-degree: 36%
 
 ---
 
@@ -104,7 +107,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td><code>numPages</code></td>
    <td>Restituisce il numero di pagine nel documento.</td>
-   <td>I criteri di impaginazione dei moduli HTML5 non sono identici ai criteri di impaginazione dei moduli PDF. Pertanto, l'API numPages può restituire valori diversi in entrambi i casi.</td>
+   <td>I criteri di impaginazione dei moduli HTML5 non sono identici ai criteri di impaginazione degli PDF forms. Pertanto, l'API numPages può restituire valori diversi in entrambi i casi.</td>
   </tr>
   <tr>
    <td><code>platform</code></td>
@@ -114,7 +117,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td><code>title</code></td>
    <td>Specifica il titolo del documento. È disponibile solo per le applicazioni client.</td>
-   <td>ma restituisce il titolo del documento HTML anziché il titolo dei metadati del modulo, come nel caso dei moduli PDF.</td>
+   <td>Restituisce il titolo del documento HTML nel modulo, anziché il titolo dei metadati del modulo, come nel caso dei PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -164,7 +167,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
  </tbody>
 </table>
 
-### field {#field}
+### o in un altro campo {#field}
 
 <table>
  <tbody>
@@ -457,7 +460,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>nome</td>
+   <td>name</td>
    <td>Identificatore utilizzato per identificare questo elemento nelle espressioni di script.</td>
    <td>Nessuno</td>
   </tr>
@@ -509,7 +512,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
     </ul> </td>
   </tr>
   <tr>
-   <td>nome</td>
+   <td>name</td>
    <td>Specifica il nome del nodo.</td>
    <td>L'impostazione del nome tramite script non è consentita in HTML.</td>
   </tr>
@@ -727,7 +730,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td> </td>
   </tr>
   <tr>
-   <td>nome</td>
+   <td>name</td>
    <td>Specifica un identificatore che può essere utilizzato per specificare questo oggetto o evento nelle espressioni di script.</td>
    <td>L'impostazione del valore in fase di esecuzione non è supportata</td>
   </tr>
@@ -815,7 +818,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>nome<br /> </td>
+   <td>name<br /> </td>
    <td>Identificatore utilizzato per identificare questo elemento nelle espressioni di script.</td>
    <td>Nessuno</td>
   </tr>
@@ -970,7 +973,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>Per i singoli elementi nell'exclgrp, restituisce sempre open. </td>
   </tr>
   <tr>
-   <td>nome</td>
+   <td>name</td>
    <td>Specifica un identificatore che può essere utilizzato per specificare questo oggetto o evento nelle espressioni di script.</td>
    <td>Nessuno</td>
   </tr>
@@ -1121,7 +1124,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
   <tr>
    <td><strong>Categoria </strong></td>
    <td><strong>Descrizione </strong></td>
-   <td><strong>Esempio </strong></td>
+   <td><strong>Esempi </strong></td>
   </tr>
   <tr>
    <td>Espressione semplice</td>
@@ -1254,12 +1257,12 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>Questa API acrobat scarica l’output nella console javascript.</td>
+   <td>Questa API acrobat scarica l’output nella console JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Questa API di acrobat invia un messaggio di avviso tramite la finestra popup di JavaScript.</td>
+   <td>Questa API di acrobat invia un messaggio di avviso tramite la finestra a comparsa JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
