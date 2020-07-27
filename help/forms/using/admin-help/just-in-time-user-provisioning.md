@@ -10,14 +10,17 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 0%
 
 ---
 
 
 # Provisioning degli utenti in tempo reale {#just-in-time-user-provisioning}
 
-I moduli AEM supportano il provisioning temporaneo di utenti che non esistono ancora in Gestione utente. Con il provisioning in tempo reale, gli utenti vengono automaticamente aggiunti a Gestione utente dopo che le loro credenziali sono state autenticate correttamente. Inoltre, i ruoli e i gruppi rilevanti vengono assegnati in modo dinamico al nuovo utente.
+I moduli AEM supportano il provisioning temporaneo di utenti che non esistono ancora in Gestione utente. Con il provisioning &quot;in-time&quot;, gli utenti vengono automaticamente aggiunti a Gestione utente dopo che le loro credenziali sono state autenticate correttamente. Inoltre, i ruoli e i gruppi rilevanti vengono assegnati in modo dinamico al nuovo utente.
 
 ## Necessità di un provisioning utente &quot;just-in-time&quot; {#need-for-just-in-time-user-provisioning}
 
@@ -27,11 +30,11 @@ Questo è il funzionamento dell&#39;autenticazione tradizionale:
 1. Il provider di autenticazione convalida le credenziali.
 1. Il provider di autenticazione verifica quindi se l&#39;utente esiste nel database Gestione utente. Sono possibili i seguenti risultati:
 
-   **** Esiste: Se l&#39;utente è corrente e sbloccato, Gestione utente restituisce il successo dell&#39;autenticazione. Tuttavia, se l&#39;utente non è corrente o è bloccato, Gestione utente restituisce un errore di autenticazione.
+   **Esiste:** Se l&#39;utente è corrente e sbloccato, Gestione utente restituisce il successo dell&#39;autenticazione. Tuttavia, se l&#39;utente non è corrente o è bloccato, Gestione utente restituisce un errore di autenticazione.
 
-   **** Non esiste: Gestione utente restituisce un errore di autenticazione.
+   **Non esiste:** Gestione utente restituisce un errore di autenticazione.
 
-   **** Non valido: Gestione utente restituisce un errore di autenticazione.
+   **Non valido:** Gestione utente restituisce un errore di autenticazione.
 
 1. Il risultato restituito dal provider di autenticazione viene valutato. Se il provider di autenticazione ha restituito un esito positivo, l&#39;utente può effettuare l&#39;accesso. In caso contrario, Gestione utente verifica con il provider di autenticazione successivo (passaggi da 2 a 3).
 1. L&#39;errore di autenticazione viene restituito se nessun provider di autenticazione disponibile convalida le credenziali utente.
@@ -40,11 +43,11 @@ Quando viene implementato il provisioning &quot;in-time&quot;, un nuovo utente v
 
 ## Implementare il provisioning degli utenti &quot;just-in-time&quot; {#implement-just-in-time-user-provisioning}
 
-### API per il provisioning just-in-time {#apis-for-just-in-time-provisioning}
+### API per il provisioning &quot;just-in-time&quot; {#apis-for-just-in-time-provisioning}
 
 I moduli AEM forniscono le seguenti API per il provisioning &quot;just-in-time&quot;:
 
-```as3
+```java
 package com.adobe.idp.um.spi.authentication  ;
 publ ic interface IdentityCreator {
 /**
@@ -90,7 +93,7 @@ public Boolean assign(User user);
 1. Implementare il DSC nel server dei moduli.
 1. Crea un dominio abilitato solo nel tempo:
 
-   * In Admin Console, fai clic su Impostazioni > Gestione utente > Gestione dominio > Nuovo dominio Enterprise.
+   * In Admin Console, fai clic su Settings (Impostazioni) > User Management (Gestione utente) > Domain Management (Gestione dominio) > New Enterprise Domain (Nuovo dominio Enterprise).
    * Configurate il dominio e selezionate Abilita solo provisioning in tempo. <!--Fix broken link (See Setting up and managing domains).-->
    * Aggiunta di provider di autenticazione. Durante l&#39;aggiunta di provider di autenticazione, nella schermata Nuova autenticazione, selezionate un creatore di identità registrato e un provider di assegnazione.
 
@@ -98,7 +101,7 @@ public Boolean assign(User user);
 
 ## Dietro le quinte {#behind-the-scenes}
 
-Supponiamo che un utente stia tentando di accedere ai moduli AEM e che un provider di autenticazione accetti le credenziali utente. Se l&#39;utente non esiste ancora nel database Gestione utente, il controllo dell&#39;identità dell&#39;utente non riesce. I moduli AEM ora eseguono le azioni seguenti:
+Supponete che un utente stia tentando di accedere ai moduli AEM e che un provider di autenticazione accetti le credenziali utente. Se l&#39;utente non esiste ancora nel database Gestione utente, il controllo dell&#39;identità dell&#39;utente non riesce. I moduli AEM ora eseguono le azioni seguenti:
 
 1. Creare un `UserProvisioningBO` oggetto con i dati di autenticazione e inserirlo in una mappa delle credenziali.
 1. In base alle informazioni di dominio restituite da `UserProvisioningBO`, recuperate e richiamate il dominio registrato `IdentityCreator` e `AssignmentProvider` per il dominio.
