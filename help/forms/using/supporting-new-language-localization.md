@@ -1,8 +1,8 @@
 ---
 title: Supporto di nuove impostazioni internazionali per la localizzazione dei moduli adattivi
 seo-title: Supporto di nuove impostazioni internazionali per la localizzazione dei moduli adattivi
-description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione di moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
-seo-description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione di moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
+description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
+seo-description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,8 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari di lingua
 
 Quando viene eseguito il rendering di un modulo adattivo, identifica le impostazioni internazionali richieste, esaminando i seguenti parametri nell&#39;ordine specificato:
 
-* Parametro della richiesta `afAcceptLang`Per ignorare le impostazioni internazionali del browser degli utenti, potete trasmettere il parametro della `afAcceptLang` richiesta per imporre le impostazioni internazionali. Ad esempio, con il seguente URL sarà necessario eseguire il rendering del modulo in lingua giapponese:
+* Parametro della richiesta `afAcceptLang`Per ignorare le impostazioni internazionali del browser degli utenti, puoi passare il 
+`afAcceptLang` richiede il parametro per imporre l&#39;impostazione internazionale. Ad esempio, con il seguente URL sarà necessario eseguire il rendering del modulo in lingua giapponese:
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * Le impostazioni internazionali del browser impostate per l’utente, specificate nella richiesta utilizzando l’ `Accept-Language` intestazione.
@@ -42,7 +46,7 @@ Se non esiste una libreria client per l&#39;impostazione internazionale richiest
 
 ## Aggiunta del supporto per la localizzazione per le lingue non supportate {#add-localization-support-for-non-supported-locales}
 
-AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
+AEM Forms attualmente supporta la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
 Per aggiungere il supporto per una nuova impostazione internazionale in fase di esecuzione dei moduli adattivi:
 
@@ -70,7 +74,7 @@ Create un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con 
 
 * **js.txt** contenente quanto segue:
 
-```
+```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
@@ -86,7 +90,7 @@ Aggiungete i seguenti file alla libreria client:
 * **LogMessages.js** che definisce `guidelib.i18n.strings` e `guidelib.i18n.LogMessages` per il `<locale>` file come definito in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.txt** contenente quanto segue:
 
-```
+```text
 i18n.js
 LogMessages.js
 ```
