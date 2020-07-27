@@ -8,7 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2079'
+ht-degree: 7%
 
 ---
 
@@ -21,9 +24,9 @@ Scoprite come creare un tema personalizzato, personalizzare lo stile dei singoli
 
 Questa esercitazione è un passaggio della serie [Crea il primo modulo](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) adattivo. Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
 
-## Informazioni sull&#39;esercitazione {#about-the-tutorial}
+## Informazioni sull&#39;esercitazione  {#about-the-tutorial}
 
-È possibile utilizzare i temi per fornire un aspetto e uno stile univoci a un modulo adattivo. È possibile applicare temi out-of-box forniti con l&#39;editor di moduli adattivi o creare temi personalizzati. AEM Forms fornisce un editor [di](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) temi per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l&#39;editor di temi, ma è desiderato.
+È possibile utilizzare i temi per fornire un aspetto e uno stile univoci a un modulo adattivo. È possibile applicare temi out-of-box forniti con l&#39;editor di moduli adattivi o creare temi personalizzati. I AEM Forms forniscono un editor [di](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) temi per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l&#39;editor di temi, ma è desiderato.
 
 Al termine dell&#39;esercitazione, imparerete a:
 
@@ -57,11 +60,11 @@ L&#39;editor di moduli adattivi offre diversi temi out-of-the-box. Se non si int
 
 ![Modulo adattivo con tema predefinito](assets/default-adaptive-form.png)
 
-**Figura:** Modulo *adattivo con tema predefinito*
+**Figura:** *Modulo adattivo con tema predefinito*
 
 ![Modulo adattivo con il tema del sondaggio](assets/adaptive-form-with-survey-theme.png)
 
-**Figura:** Modulo *adattivo con il tema Survey*
+**Figura:** *Modulo adattivo con il tema del sondaggio*
 
 ## Passaggio 2: Aggiornare il modulo adattivo {#step-update-your-adaptive-form}
 
@@ -76,6 +79,7 @@ La struttura visualizzata sopra richiede modifiche nel testo segnaposto e nel lo
    1. Toccate l’immagine del logo nel componente intestazione e toccate le proprietà ![cmppr](assets/cmppr.png) . Nella proprietà image, toccate X per rimuovere l&#39;immagine del logo esistente.
    1. Toccate upload, selezionate logo.png e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) per salvare le modifiche. L&#39;immagine è stata scaricata nella sezione [Prima di iniziare](/help/forms/using/style-your-adaptive-form.md#before-you-start) .
    1. Toccate il testo dell&#39;intestazione `We.Retail`e toccate ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Cambia il testo dell’intestazione in `we retail`. Applica la formattazione in grassetto solo a `we`in `we retail`.
+
    ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Rimuovete il titolo e aggiungete il testo segnaposto:
@@ -84,6 +88,7 @@ La struttura visualizzata sopra richiede modifiche nel testo segnaposto e nel lo
    1. Copiare il contenuto del campo **Titolo** nel campo Testo **** segnaposto.
    1. Eliminate il contenuto del campo **Titolo** e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Ripetere i tre passaggi precedenti per tutte le caselle di testo, le caselle numeriche e i campi e-mail del modulo.
+
    ![aggiornato-adattivo-modulo](assets/updated-adaptive-form.png)
 
 ## Passaggio 3: Creare un tema personalizzato per il modulo adattivo {#step-create-a-custom-theme-for-your-adaptive-form}
@@ -96,13 +101,13 @@ In questa esercitazione verranno formattati intestazione e piè di pagina, compo
 
 ### Creare un tema {#create-a-theme}
 
-1. Accedete all’istanza di creazione di AEM e andate ad **Adobe Experience Manager** > **Moduli** > **Temi**. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Accedete all’istanza di creazione di AEM e andate a **Adobe Experience Manager** > **Moduli** > **Temi**. L’URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Toccate **[!UICONTROL Crea]** e selezionate **[!UICONTROL Tema]**. Viene visualizzata la pagina Crea tema con i campi necessari per creare un tema. I campi Titolo e Nome sono obbligatori:
 
    * **Titolo:** Specificate un titolo del tema. Ad esempio, Tema **globale.** Il titolo consente di identificare il tema dall’elenco dei temi.
    * **Nome:** Specificate il nome del tema. Ad esempio, **Global-Theme.** Nella directory archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, viene automaticamente generato il valore relativo al campo del nome. È possibile modificare il valore suggerito. Il campo del nome può includere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti con un trattino.
 
-1. Toccate **Crea**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Toccate **Apri** per aprire il tema appena creato in una nuova scheda. Il tema si apre nell’editor di temi. Per lo stile, l’editor di temi utilizza un modulo adattivo fornito con AEM Forms.
+1. Toccate **Crea**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Toccate **Apri** per aprire il tema appena creato in una nuova scheda. Il tema si apre nell’editor di temi. Per lo stile, l&#39;editor di temi utilizza un modulo adattivo fornito con AEM Forms.
 
    Per informazioni sull’utilizzo dell’interfaccia utente dell’editor di temi, consultate [Informazioni sull’editor](/help/forms/using/themes.md#aboutthethemeeditor)di temi.
 
@@ -110,17 +115,17 @@ In questa esercitazione verranno formattati intestazione e piè di pagina, compo
 
    ![tema personalizzato](assets/custom-theme.png)
 
-   **Figura:** Editor di *temi con il modulo adattivo per il modulo di aggiunta di indirizzi e aggiornamenti*
+   **Figura:** *Editor tema con modulo adattivo per il modulo di spedizione indirizzo-add-update-form*
 
    ![create-a-tema](assets/create-a-theme.png)
 
-   **Figura:** Modulo *adattivo con modulo predefinito*
+   **Figura:** *Modulo adattivo con il modulo predefinito*
 
 ### Intestazione e piè di pagina dello stile {#style-header-and-footer}
 
 Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un modulo adattivo. In genere, l&#39;intestazione contiene il logo e il nome dell&#39;organizzazione, il piè di pagina contiene le informazioni sul copyright e questi rimangono identici in più forme di un&#39;organizzazione. Per formattare l’intestazione e il piè di pagina del modulo adattivo per l’indirizzo di spedizione-add-update-form:
 
-1. Nel pannello Selettori, individuate l’opzione **Intestazione** > **Testo** . Il pannello Selettori si trova a sinistra dell’editor di temi. Se il pannello non è visibile, toccate ![](assets/toggle-side-panel.png) Attiva/disattiva pannello laterale.
+1. Nel pannello Selettori, individuate l’opzione **Intestazione** > **Testo** . Il pannello Selettori si trova a sinistra dell’editor di temi. Se il pannello non è visibile, toccate ![per attivare/disattivare il pannello](assets/toggle-side-panel.png) laterale.
 
 1. Impostate le seguenti proprietà nel pannello di **navigazione Testo** e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -155,7 +160,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
     <ul> 
      <li>In alto: 1,5 rem</li> 
      <li>In basso: -35 px</li> 
-     <li>A sinistra: 1rem<strong><br /></strong></li> 
+     <li>A sinistra: 1rem<strong><br /> </strong></li> 
     </ul> <p><strong>Suggerimento:</strong> Toccate l'icona del <img src="assets/link.png"> collegamento per fornire un valore diverso a ciascun campo.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -443,7 +448,7 @@ Adobe Typekit è un servizio di font Web. È possibile configurare e utilizzare 
 >![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit ora è denominato Adobe Fonts ed è incluso con Creative Cloud e altre iscrizioni. [Per saperne di più](https://fonts.adobe.com/).
 
 1. Create un account [Adobe Typekit](https://typekit.com/) , create un kit, aggiungete il font Myriad Pro al kit, pubblicate il kit e ottenete l&#39;ID Kit. È necessario utilizzare i font Adobe Typekit (font Web) in un modulo adattivo.
-1. Nel server AEM Forms, passa a ![adobeexperienceemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Strumenti** ![a martello](assets/hammer.png) > **Distribuzione** ****> Servizi cloud. Nella pagina Servizi cloud, accedi a Servizi **di** terze parti > **Typekit** e fai clic su **Configura** ora in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante + per creare una nuova istanza.
+1. Nel server AEM Forms, andate a ![adobeexperience](assets/adobeexperiencemanager.png) emanager **Adobe Experience Manager** > **Strumenti** ![martello](assets/hammer.png) > **Distribuzione** ****> Servizi cloud. Nella pagina Servizi cloud, accedi a Servizi **di** terze parti > **Typekit** e fai clic su **Configura** ora in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante + per creare una nuova istanza.
 
    Nella finestra di dialogo Crea configurazione, specificate un **Titolo** per la configurazione e fate clic su **Crea**. Viene nuovamente visualizzata la pagina di configurazione. Nella finestra di dialogo Modifica componente visualizzata, inserite l’ID **** kit e fate clic su **OK**.
 
