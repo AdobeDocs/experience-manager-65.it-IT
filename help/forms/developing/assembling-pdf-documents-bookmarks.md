@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: e3f700b52446505224fa4b4688d439750a66f471
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2526'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ I segnalibri contengono le proprietà seguenti:
 
 Ai fini di questa discussione, si supponga di utilizzare il seguente documento DDX.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
        <PDF result="FinalDoc.pdf">
@@ -44,7 +47,7 @@ In questo documento DDX di esempio, l&#39; `Bookmarks` elemento specifica `doc2`
 
 In questo argomento viene utilizzato il seguente linguaggio di segnalibri XML per assemblare un documento PDF contenente segnalibri.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <Bookmarks xmlns="https://ns.adobe.com/pdf/bookmarks" version="1.0">
        <Bookmark>
@@ -84,7 +87,7 @@ Quando un utente fa clic sul segnalibro *Apri dettagli* prestito, viene aperto i
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere Riferimento [servizi per i AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -113,10 +116,10 @@ I seguenti file JAR devono essere aggiunti al percorso di classe del progetto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (richiesto se AEM Forms è distribuito su JBoss)
-* jbossall-client.jar (richiesto se AEM Forms è distribuito su JBoss)
+* adobe-utilities.jar (richiesto se i AEM Forms sono distribuiti su JBoss)
+* jbossall-client.jar (richiesto se i AEM Forms sono distribuiti su JBoss)
 
-se AEM Forms è implementato su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici per il server applicazione J2EE in cui è distribuito AEM Forms. Per informazioni sulla posizione di tutti i file AEM Forms JAR, consultate [Inclusione dei file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms.
+se i AEM Forms sono distribuiti su un server applicazione J2EE supportato diverso da JBoss, è necessario sostituire i file adobe-utilities.jar e jbossall-client.jar con file JAR specifici del server applicazione J2EE in cui sono distribuiti i AEM Forms. Per informazioni sulla posizione di tutti i file JAR AEM Forms, vedere [Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms.
 
 **Creare un client Assembler PDF**
 
@@ -130,7 +133,7 @@ Per assemblare un documento PDF è necessario fare riferimento a un documento DD
 
 Fare riferimento a un documento PDF al quale vengono aggiunti i segnalibri. Non importa se il documento PDF di riferimento contiene già dei segnalibri. Se l&#39; `Bookmarks` elemento è un elemento secondario dell&#39;elemento sorgente PDF, i segnalibri sostituiranno quelli già esistenti nell&#39;origine PDF. Tuttavia, se si desidera mantenere i segnalibri esistenti, assicurarsi che `Bookmarks` sia un elemento di pari livello dell&#39;elemento sorgente PDF. Ad esempio, considerate quanto segue:
 
-```as3
+```xml
  <PDF result="foo">
       <PDF source="inDoc"/>
       <Bookmarks source="doc2"/>
@@ -151,7 +154,7 @@ Per assemblare un PDF contenente nuovi segnalibri, è necessario fare riferiment
 
 **Impostazione delle opzioni di esecuzione**
 
-È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, consultate il riferimento alla `AssemblerOptionSpec` classe nella Guida di riferimento [delle API per](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+È possibile impostare opzioni di esecuzione che controllano il comportamento del servizio Assembler mentre esegue un processo. Ad esempio, potete impostare un&#39;opzione che indichi al servizio Assembler di continuare l&#39;elaborazione di un processo in caso di errore. Per informazioni sulle opzioni di esecuzione che è possibile impostare, vedere il riferimento alla `AssemblerOptionSpec` classe in Riferimento API per [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Assemblare il documento PDF**
 
@@ -222,6 +225,7 @@ Assemblate un documento PDF con segnalibri utilizzando l&#39;API di Assembler Se
    * Un `com.adobe.idp.Document` oggetto che rappresenta il documento DDX da utilizzare
    * Un `java.util.Map` oggetto che contiene sia il documento PDF di input che il documento XML del segnalibro.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` oggetto che specifica le opzioni di esecuzione, incluso il font predefinito e il livello di registro del processo
+
    Il `invokeDDX` metodo restituisce un `com.adobe.livecycle.assembler.client.AssemblerResult` oggetto che contiene i risultati del processo ed eventuali eccezioni.
 
 1. Salvare il documento PDF contenente i segnalibri.
@@ -250,12 +254,12 @@ Assemblate un documento PDF con segnalibri utilizzando l&#39;API di Assembler Se
 
    >[!NOTE]
    >
-   >Sostituire `localhost` con l&#39;indirizzo IP del server in cui è installato AEM Forms.
+   >Sostituire `localhost` con l&#39;indirizzo IP del server host AEM Forms.
 
 1. Creare un client Assembler PDF.
 
    * Creare un `AssemblerServiceClient` oggetto utilizzando il relativo costruttore predefinito.
-   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passa un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
+   * Creare un `AssemblerServiceClient.Endpoint.Address` oggetto utilizzando il `System.ServiceModel.EndpointAddress` costruttore. Passate un valore di stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Non è necessario utilizzare l&#39; `lc_version` attributo. Questo attributo viene utilizzato quando create un riferimento a un servizio.
    * Creare un `System.ServiceModel.BasicHttpBinding` oggetto ottenendo il valore del `AssemblerServiceClient.Endpoint.Binding` campo. Inserite il valore restituito in `BasicHttpBinding`.
    * Impostare il campo `System.ServiceModel.BasicHttpBinding` dell&#39; `MessageEncoding` oggetto su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilitate l&#39;autenticazione HTTP di base eseguendo le seguenti operazioni:
@@ -309,6 +313,7 @@ Assemblate un documento PDF con segnalibri utilizzando l&#39;API di Assembler Se
    * Un `BLOB` oggetto che rappresenta il documento DDX
    * L&#39; `MyMapOf_xsd_string_To_xsd_anyType` array che contiene i documenti di input
    * Un oggetto `AssemblerOptionSpec` che specifica le opzioni di esecuzione
+
    Il `invokeDDX` metodo restituisce un `AssemblerResult` oggetto che contiene i risultati del processo ed eventuali eccezioni.
 
 1. Salvare il documento PDF contenente i segnalibri.
@@ -321,4 +326,4 @@ Assemblate un documento PDF con segnalibri utilizzando l&#39;API di Assembler Se
 
 **Consulta anche**
 
-[Attivazione di moduli AEM tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Chiamata di AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
