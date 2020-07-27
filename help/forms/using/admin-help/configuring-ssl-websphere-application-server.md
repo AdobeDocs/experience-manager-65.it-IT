@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Per abilitare SSL, WebSphere richiede l&#39;accesso a un account utente nel regi
 
    >[!NOTE]
    >
-   >(Linux e Solaris) Per il funzionamento del Registro di sistema di sicurezza del sistema operativo locale del server applicazioni WebSphere, è necessario che esista un file password shadow. Il file della password shadow è in genere denominato **/etc/shadow** ed è basato sul file /etc/passwd. Se il file della password shadow non esiste, si verifica un errore dopo l&#39;attivazione della protezione globale e la configurazione del Registro di sistema come sistema operativo locale.
+   >(Linux e Solaris) Per il funzionamento del Registro di sistema di sicurezza del sistema operativo locale del server applicazioni WebSphere, è necessario che esista un file di password shadow. Il file della password shadow è in genere denominato **/etc/shadow** ed è basato sul file /etc/passwd. Se il file della password shadow non esiste, si verifica un errore dopo l&#39;attivazione della protezione globale e la configurazione del Registro di sistema come sistema operativo locale.
 
 1. Aprite il file del gruppo dalla directory /etc in un editor di testo.
 1. Aggiungete al `root` gruppo l’utente creato al punto 2.
@@ -49,7 +52,7 @@ Per abilitare SSL, WebSphere richiede l&#39;accesso a un account utente nel regi
 ### Creare un utente Windows per WebSphere {#create-a-windows-user-for-websphere}
 
 1. Effettuate l&#39;accesso a Windows utilizzando un account utente amministratore.
-1. Selezionate **Start > Pannello di controllo > Strumenti di amministrazione > Gestione computer > Utenti e gruppi** locali.
+1. Selezionate **Start > Pannello di controllo Campaign > Strumenti di amministrazione > Gestione computer > Utenti e gruppi** locali.
 1. Fate clic con il pulsante destro del mouse su Utenti e selezionate **Nuovo utente**.
 1. Digitate un nome utente e una password nelle caselle appropriate e digitate tutte le altre informazioni necessarie nelle caselle rimanenti.
 1. Deselezionate **Utente deve cambiare la password al login** successivo, fate clic su **Crea**, quindi su **Chiudi**.
@@ -57,7 +60,7 @@ Per abilitare SSL, WebSphere richiede l&#39;accesso a un account utente nel regi
 1. Fare clic sulla scheda **Membro di** e quindi su **Aggiungi**.
 1. Nella casella Immettere i nomi degli oggetti da selezionare, digitare `Administrators`, fare clic su Controlla nomi per verificare che il nome del gruppo sia corretto.
 1. Fate clic su **OK** , quindi fate di nuovo clic su **OK** .
-1. Selezionare **Start > Pannello di controllo > Strumenti di amministrazione > Criteri di sicurezza locali > Criteri** locali.
+1. Selezionare **Start > Pannello di controllo Campaign > Strumenti di amministrazione > Criteri di sicurezza locali > Criteri** locali.
 1. Fate clic su Assegnazione diritti utente, quindi fate clic con il pulsante destro del mouse su Agisci come parte del sistema operativo e selezionate Proprietà.
 1. Click **Add User or Group**.
 1. Nella casella Immettere i nomi degli oggetti da selezionare, digitare il nome dell&#39;utente creato al punto 4, fare clic su **Controlla nomi** per verificare che il nome sia corretto, quindi fare clic su **OK**.
@@ -70,7 +73,7 @@ Per abilitare SSL, WebSphere richiede l&#39;accesso a un account utente nel regi
 1. In Sicurezza amministrativa, selezionare Ruoli **utente** amministrativi.
 1. Fate clic su Aggiungi ed effettuate le seguenti operazioni:
 
-   1. **Tipo**&amp;ast; nella casella di ricerca e fate clic su Cerca.
+   1. Tipo **&amp;ast;** nella casella di ricerca e fate clic su Cerca.
    1. Fare clic su **Amministratore** in Ruoli.
    1. Aggiungete l’utente appena creato a Mappato al ruolo e mapparlo ad Amministratore.
 
@@ -104,7 +107,7 @@ Truststore e keystore possono essere creati utilizzando l&#39;utility ikeyman o 
 1. Fate clic su Certificato **** personale.
 1. Se hai già creato un archivio chiavi con ikeyman, verrà visualizzato il certificato. In caso contrario, è necessario aggiungere un nuovo certificato autofirmato eseguendo la procedura seguente:
 
-   1. Selezionare **Crea > Certificato** autofirmato.
+   1. Select **Create > Self-signed Certificate**.
    1. Specificare i valori appropriati nel modulo del certificato. Assicurarsi di mantenere Alias e nome comune come nome di dominio completo del computer.
    1. Fate clic su **Applica**.
 
@@ -114,7 +117,7 @@ Truststore e keystore possono essere creati utilizzando l&#39;utility ikeyman o 
 
 1. Nella console di amministrazione di WebSphere, selezionate **Protezione > certificato SSL e gestione** chiavi.
 1. Fate clic su **Gestisci configurazione** di protezione endpoint. Viene visualizzata la mappa topologia locale.
-1. In Inbound, selezionare direct child of nodes (figlio diretto dei nodi).
+1. In Inbound (In entrata), selezionare direct child of nodes (figlio diretto dei nodi).
 1. In Elementi correlati, selezionate Configurazioni **** SSL.
 1. Selezionare **NodeDefaultSSLSetting**.
 1. Negli elenchi a discesa Nome e Nome archivio chiavi, selezionate l&#39;archivio di dati attendibili e l&#39;archivio di chiavi che avete creato.
@@ -152,7 +155,7 @@ La conversione da HTML a PDF dal sito il cui certificato è stato aggiunto ora f
 
 >[!NOTE]
 >
->Affinché un&#39;applicazione possa connettersi a siti SSL da WebSphere, è necessario un certificato di firma. Viene utilizzato da Java Secure Socket Extensions (JSSE) per convalidare i certificati inviati dal lato remoto durante un handshake SSL.
+>Affinché un&#39;applicazione possa connettersi a siti SSL da WebSphere, è necessario un certificato del firmatario. Viene utilizzato da Java Secure Socket Extensions (JSSE) per convalidare i certificati inviati dal lato remoto durante un handshake SSL.
 
 ## Configurazione di porte dinamiche {#configuring-dynamic-ports}
 
@@ -175,7 +178,7 @@ Per impostare la porta come dinamica e risolvere il problema, effettuate le segu
 1. Aprite il file `[aem-forms_root]`\crx-repository\launchpad\sling.properties per la modifica.
 1. Individuare la `sling.bootdelegation.ibm` proprietà e aggiungere `com.ibm.websphere.ssl.*`al relativo campo valore. Il campo aggiornato sarà simile al seguente:
 
-   ```as3
+   ```java
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
