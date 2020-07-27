@@ -8,7 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Questa esercitazione è un passaggio della serie [Crea il primo modulo](/help/fo
 
 ## Informazioni sull&#39;esercitazione {#about-the-tutorial}
 
-È possibile utilizzare le regole per aggiungere interattività, logica aziendale e convalide intelligenti a un modulo adattivo. I moduli adattivi dispongono di un editor di regole integrato. L&#39;editor di regole fornisce una funzionalità di trascinamento, simile alle visite guidate. Il metodo di trascinamento è il metodo più veloce e semplice per creare le regole. L&#39;editor di regole fornisce inoltre una finestra di codice per gli utenti interessati a testare le proprie capacità di codifica o a portare le regole al livello successivo.
+È possibile utilizzare le regole per aggiungere interattività, logica aziendale e convalide intelligenti a un modulo adattivo. I moduli adattivi dispongono di un editor di regole integrato. L&#39;editor di regole fornisce una funzionalità di trascinamento, simile alle visite guidate. Il metodo di trascinamento della selezione è il metodo più veloce e semplice per creare le regole. L&#39;editor di regole fornisce inoltre una finestra di codice per gli utenti interessati a testare le proprie capacità di codifica o a portare le regole al livello successivo.
 
 Per ulteriori informazioni sull&#39;editor di regole, vedere Editor di regole [per moduli adattivi](/help/forms/using/rule-editor.md).
 
@@ -53,7 +56,7 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
    ![quando customeridischanged](assets/whencustomeridischanged.png)
 
 1. Nell&#39;istruzione **[!UICONTROL THEN]** , selezionare **[!UICONTROL Richiama servizio]** dal menu a discesa **[!UICONTROL Seleziona azione]** .
-1. Selezionare il servizio **[!UICONTROL Recupera indirizzo]** spedizione dal menu a discesa **[!UICONTROL Seleziona]** .
+1. Selezionare il servizio **[!UICONTROL Recupera indirizzo]** di spedizione dal menu a discesa **[!UICONTROL Seleziona]** .
 1. Trascinare il campo ID **** cliente dalla scheda Oggetti modulo all&#39;oggetto **[!UICONTROL Drop oppure selezionare il campo qui]** nella casella **[!UICONTROL INPUT]** .
 
    ![dropobjectstoinputfield-retrieveedata](assets/dropobjectstoinputfield-retrievedata.png)
@@ -66,11 +69,11 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
 
 1. Visualizzare l&#39;anteprima del modulo adattivo. Immettete un ID nel campo ID **** cliente. Il modulo ora può recuperare i dettagli dei clienti dal database.
 
-   ![recupero informazioni](assets/retrieve-information.gif)
+   ![retrieve-information](assets/retrieve-information.gif)
 
 ## Passaggio 2: Aggiungere l&#39;indirizzo cliente aggiornato al database {#updated-customer-address}
 
-Dopo aver recuperato i dettagli del cliente dal database, potete aggiornare l&#39;indirizzo di spedizione, lo stato e il codice postale. La procedura seguente richiama un servizio Form Data Model per aggiornare le informazioni sui clienti al database:
+Dopo aver recuperato i dettagli del cliente dal database, potete aggiornare l&#39;indirizzo di spedizione, lo stato e il codice postale. La procedura seguente richiama un servizio Form Data Model per aggiornare le informazioni dei clienti al database:
 
 1. Selezionate il campo **[!UICONTROL Invia]** e toccate l&#39;icona **[!UICONTROL Modifica regole]** . Viene visualizzata la finestra Editor regole.
 1. Selezionate la regola **[!UICONTROL Invia - Fate clic]** e toccate l&#39;icona **[!UICONTROL Modifica]** . Vengono visualizzate le opzioni per modificare la regola di invio.
@@ -88,7 +91,7 @@ Dopo aver recuperato i dettagli del cliente dal database, potete aggiornare l&#3
 
 1. ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Trascinare il campo Indirizzo di **[!UICONTROL spedizione, Stato e CAP]** dalla scheda Oggetti modulo alla proprietà .nome tabella corrispondente (ad esempio, customdetails .ShippingAddress) dell&#39;oggetto **[!UICONTROL Drop oppure selezionare qui]** campo nella casella **[!UICONTROL INPUT]** . Tutti i campi con il prefisso nome tabella (ad esempio, i dettagli del cliente in questo caso d’uso) fungono da dati di input per il servizio di aggiornamento. Tutto il contenuto fornito in questi campi viene aggiornato nell&#39;origine dati.
+   Trascinare il campo Indirizzo di **[!UICONTROL spedizione, Stato e CAP]** dalla scheda Oggetti modulo alla proprietà .nome tabella corrispondente (ad esempio, customdetails .ShippingAddress) dell&#39;oggetto **[!UICONTROL Drop oppure selezionare il campo qui]** nella casella **[!UICONTROL INPUT]** . Tutti i campi con il prefisso nome tabella (ad esempio, i dettagli del cliente in questo caso d’uso) fungono da dati di input per il servizio di aggiornamento. Tutto il contenuto fornito in questi campi viene aggiornato nell&#39;origine dati.
 
    >[!NOTE]
    >
@@ -123,7 +126,7 @@ La procedura seguente mostra come creare una regola per visualizzare un messaggi
 
 1. Sostituite la sezione della variabile di input con il seguente codice:
 
-   ```
+   ```javascript
    var inputs = {
        "id" : this
    };
@@ -131,7 +134,7 @@ La procedura seguente mostra come creare una regola per visualizzare un messaggi
 
 1. Sostituisci la sezione guidelib.dataIntegrationUtils.executeOperation (operationInfo, input, output) con il seguente codice:
 
-   ```
+   ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
      if (result) {
          result = JSON.parse(result);
