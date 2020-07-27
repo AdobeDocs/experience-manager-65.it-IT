@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
 
 # Inserimento di moduli in una pagina Web tramite API {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms offre un’API di ricerca basata su REST che gli sviluppatori Web possono utilizzare per eseguire query e recuperare un set di moduli che soddisfa i criteri di ricerca. È possibile utilizzare le API per cercare moduli basati su vari filtri. L&#39;oggetto response contiene attributi modulo, proprietà e punti finali di rendering dei moduli.
+AEM Forms fornisce un&#39;API di ricerca basata su REST che gli sviluppatori Web possono utilizzare per eseguire query e recuperare un set di moduli che soddisfa i criteri di ricerca. È possibile utilizzare le API per cercare moduli basati su vari filtri. L&#39;oggetto response contiene attributi modulo, proprietà e punti finali di rendering dei moduli.
 
 Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richiesta GET al server `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
 
@@ -30,7 +33,7 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Specifica la funzione da chiamare. Per eseguire la ricerca nei moduli, impostare il valore dell' <code>func </code>attributo su <code>searchForms</code>.</p> <p>Esempio, <code class="code">
+   <td><p>Specifica la funzione da chiamare. Per eseguire la ricerca nei moduli, impostare il valore dell' <code>func </code>attributo su <code>searchForms</code>.</p> <p>Ad esempio, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Questo parametro è obbligatorio.</em><br /> </p> </td>
   </tr>
@@ -40,7 +43,7 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Specifica le proprietà da recuperare con le risorse. È possibile utilizzare l'asterisco (*) per recuperare tutte le proprietà contemporaneamente. Utilizzare l'operatore pipe (|) per specificare più proprietà. </p> <p>Esempio, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
+   <td><p>Specifica le proprietà da recuperare con le risorse. È possibile utilizzare l'asterisco (*) per recuperare tutte le proprietà contemporaneamente. Utilizzare l'operatore pipe (|) per specificare più proprietà. </p> <p>Ad esempio, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
     <ul>
      <li><em>Le proprietà quali id, path e name vengono sempre recuperate. </em></li>
      <li><em>Ogni risorsa dispone di un set di proprietà diverso. Le proprietà come formUrl, pdfUrl e guideUrl non dipendono dall'attributo cutpoints. Tali proprietà dipendono dal tipo di risorsa e vengono recuperate di conseguenza. </em></li>
@@ -69,7 +72,7 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
   </tr>
   <tr>
    <td>resoconti</td>
-   <td><p>Specifica l'elenco di istruzioni. Le query vengono eseguite nell'elenco delle istruzioni specificate nel formato JSON. </p> <p>Esempio,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Specifica l'elenco di istruzioni. Le query vengono eseguite nell'elenco delle istruzioni specificate nel formato JSON. </p> <p>Ad esempio,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -91,12 +94,12 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
        <li>ENDSWITH - A termina con B se B è la parte finale di A</li>
        <li>LIKE - Implementa l'operatore LIKE</li>
        <li>AND - Combinare più istruzioni</li>
-      </ul> <p><strong>Nota:</strong> Gli operatori <em>GT, LT, GTEQ e LTEQ sono applicabili per proprietà di tipo lineare quali LONG, DOUBLE e DATE.</em></p> </li>
+      </ul> <p><strong>Nota:</strong> <em>Gli operatori GT, LT, GTEQ e LTEQ sono applicabili per proprietà di tipo lineare quali LONG, DOUBLE e DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>ordine<br /> </td>
-   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti nel formato JSON. È possibile ordinare i risultati della ricerca in più campi. I risultati vengono ordinati nell’ordine in cui vengono visualizzati i campi nella query.</p> <p>Esempio,</p> <p>Per recuperare i risultati della query ordinati dalla proprietà title nell'ordine crescente, aggiungere il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti nel formato JSON. È possibile ordinare i risultati della ricerca in più campi. I risultati vengono ordinati nell’ordine in cui vengono visualizzati i campi nella query.</p> <p>Ad esempio,</p> <p>Per recuperare i risultati della query ordinati dalla proprietà title nell'ordine crescente, aggiungere il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
@@ -124,7 +127,7 @@ Per eseguire la ricerca nei moduli utilizzando l&#39;API REST, inviare una richi
 
 ## Richiesta di esempio {#sample-request}
 
-```
+```json
 func : searchForms
 appPath : /content/dam/formsanddocuments/MyApplication23
 cutPoints : title|description|author|status|creationDate|lastModifiedDate|activationDate|expiryDate|tags|allowedRenderFormat|formmodel
@@ -144,7 +147,7 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Risposta di esempio {#sample-response}
 
-```
+```json
 [
 {"resultCount":2},
     {"assetType":"FORM","name":"ExpenseClaim.xdp","id":"509fa2d5-e3c9-407b-b8dc-fa0ba08eb0ce",
