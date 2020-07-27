@@ -1,15 +1,18 @@
 ---
 title: Tabelle nei moduli adattivi
 seo-title: Tabelle nei moduli adattivi
-description: Il componente Tabella in AEM Forms consente di creare tabelle in moduli adattivi che siano reattive ai layout per dispositivi mobili e che consentano l’utilizzo di componenti per tabelle XDP.
-seo-description: Il componente Tabella in AEM Forms consente di creare tabelle in moduli adattivi che siano reattive ai layout per dispositivi mobili e che consentano l’utilizzo di componenti per tabelle XDP.
+description: Il componente Tabella in AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout mobili e di utilizzare anche componenti per tabelle XDP.
+seo-description: Il componente Tabella in AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout mobili e di utilizzare anche componenti per tabelle XDP.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2301'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 L&#39;utilizzo delle tabelle rappresenta un modo efficace, semplificato e organizzato di presentare dati complessi. Consente agli utenti di identificare facilmente le informazioni e fornire gli input in una disposizione ordinata di righe e colonne. La maggior parte dei moduli provenienti da servizi finanziari e organizzazioni governative richiede tabelle di dati di grandi dimensioni per inserire numeri ed eseguire calcoli.
 
-In AEM Forms è disponibile un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle nei moduli adattivi. Alcune delle funzionalità chiave che fornisce sono:
+AEM Forms fornisce un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle in moduli adattivi. Alcune delle funzionalità chiave che fornisce sono:
 
 * Layout reattivo su dispositivi mobili
 * Righe e colonne configurabili
@@ -88,9 +91,9 @@ Per applicare l&#39;ordinamento alle colonne di tabella, le celle delle colonne 
 
 Per abilitare l&#39;ordinamento:
 
-1. Seleziona la tabella e tocca ![](assets/configure_icon.png) (Configura). Potete anche selezionare la tabella utilizzando il browser **Contenuto** nella barra laterale della comunicazione interattiva.
+1. Selezionate la tabella e toccate ![configure_icon](assets/configure_icon.png) (Configure). Potete anche selezionare la tabella utilizzando il browser **Contenuto** nella barra laterale della comunicazione interattiva.
 1. Selezionate **Abilita ordinamento**.
-1. Toccate ![](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, le frecce su e giù, nelle intestazioni delle colonne, indicano che l&#39;ordinamento è stato attivato.
+1. Toccate ![done_icon](assets/done_icon.png) per salvare le proprietà della tabella. Le icone di ordinamento, le frecce su e giù, nelle intestazioni delle colonne, indicano che l&#39;ordinamento è stato attivato.
 
    ![Abilita ordinamento](assets/enable_sorting_new.png)
 
@@ -118,7 +121,7 @@ Potete visualizzare le proprietà di stile nella barra laterale.
 
 >[!NOTE]
 >
->È possibile modificare il tema colore per le righe di intestazione e le righe corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, consultate [Temi in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>È possibile modificare il tema colore per le righe di intestazione e le righe corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, vedere [Temi in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ## Aggiunta o eliminazione dinamica di una riga {#add-or-delete-a-row-dynamically}
 
@@ -160,7 +163,7 @@ Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API 
 
 ## Layout per dispositivi mobili {#mobile-layouts}
 
-Le tabelle nei moduli adattivi offrono un&#39;esperienza senza confronti per i dispositivi mobili grazie ai layout fluidi e reattivi. In AEM Forms sono disponibili due tipi di layout per dispositivi mobili per le tabelle: Intestazioni sulle colonne sinistra e Comprimibili.
+Le tabelle nei moduli adattivi offrono un&#39;esperienza senza confronti per i dispositivi mobili grazie ai layout fluidi e reattivi. I AEM Forms offrono due tipi di layout mobili per le tabelle: Intestazioni sulle colonne sinistra e Comprimibili.
 
 È possibile configurare un layout mobile per una tabella dalla scheda Stile della finestra di dialogo del componente Modifica per una tabella.
 
@@ -196,7 +199,7 @@ Colonna estesa di una tabella su un dispositivo mobile
 
 ## Unione di dati in una tabella {#merge-data-in-a-table}
 
-Le tabelle in moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati provenienti da un file XML. Il file XML di dati può risiedere nel file system locale del computer in cui è in esecuzione AEM Forms Server o nell&#39;archivio CRX.
+Le tabelle in moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati provenienti da un file XML. Il file XML di dati può risiedere nel file system locale del computer in cui è in esecuzione il server AEM Forms o nell&#39;archivio CRX.
 
 Esempio della tabella di riepilogo delle transazioni bancarie seguente che si desidera compilare con i dati provenienti da un file XML.
 
