@@ -1,8 +1,8 @@
 ---
 title: Visualizzazione di dati aggiuntivi nell'elenco Attività
 seo-title: Visualizzazione di dati aggiuntivi nell'elenco Attività
-description: Procedura per personalizzare la visualizzazione dell'elenco A dell'area di lavoro di LiveCycle AEM Forms per visualizzare ulteriori informazioni oltre a quelle predefinite.
-seo-description: Procedura per personalizzare la visualizzazione dell'elenco A dell'area di lavoro di LiveCycle AEM Forms per visualizzare ulteriori informazioni oltre a quelle predefinite.
+description: Procedura per personalizzare la visualizzazione dell'elenco A dell'area di lavoro AEM Forms di LiveCycle per visualizzare ulteriori informazioni oltre a quelle predefinite.
+seo-description: Procedura per personalizzare la visualizzazione dell'elenco A dell'area di lavoro AEM Forms di LiveCycle per visualizzare ulteriori informazioni oltre a quelle predefinite.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,17 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Visualizzazione di dati aggiuntivi nell&#39;elenco Attività{#displaying-additional-data-in-todo-list}
 
-Per impostazione predefinita, nell&#39;elenco A-do dell&#39;area di lavoro AEM Forms sono visualizzati il nome visualizzato e la descrizione dell&#39;attività. Tuttavia, potete aggiungere altre informazioni, ad esempio data di creazione e data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
+Per impostazione predefinita, nell&#39;elenco Attività dell&#39;area di lavoro AEM Forms vengono visualizzati il nome visualizzato e la descrizione dell&#39;attività. Tuttavia, potete aggiungere altre informazioni, ad esempio data di creazione e data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
 
 ![Vedere la scheda Attività di HTML Workspace che mostra la configurazione predefinita](assets/html-todo-list.png)
 
@@ -31,12 +34,12 @@ Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [
 
 ## Visualizzazione delle informazioni su un&#39;attività {#displaying-information-on-a-task}
 
-1. Seguite i passaggi [Generici per la personalizzazione](../../forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
+1. Seguite la procedura [Generico per la personalizzazione](../../forms/using/generic-steps-html-workspace-customization.md)dell’area di lavoro AEM Forms.
 1. Per visualizzare informazioni aggiuntive su un&#39;attività, è necessario aggiungere le coppie chiave-valore corrispondenti all&#39;interno del blocco attività di `translation.json`.
 
    Ad esempio, change `/apps/ws/locales/en-US/translation.json` for English:
 
-   ```
+   ```json
    "task" : {
            "reminder" : {
                "value" : "Reminder",
@@ -112,7 +115,7 @@ Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [
 
 1. Ad esempio, aggiungere informazioni all&#39;interno del blocco attività:
 
-   ```
+   ```json
    "stepname" : {
                "value" : "Step Name",
                "tooltip" : "This task belongs to __stepName__ step"
@@ -135,17 +138,17 @@ Per ulteriori informazioni sulla descrizione dell&#39;oggetto JSON, consultate [
 
 ## Aggiunta di voci nel modello HTML {#adding-entry-in-the-html-template}
 
-Infine, è necessario includere una voce nel pacchetto dev per ogni proprietà che si desidera aggiungere all&#39;attività. Per crearne uno, fare riferimento al codice dell&#39;area di lavoro Creazione di moduli AEM.
+Infine, è necessario includere una voce nel pacchetto dev per ogni proprietà che si desidera aggiungere all&#39;attività. Per crearne uno, fare riferimento al codice dell&#39;area di lavoro Creazione di AEM Forms.
 
 1. Copia `task.html`:
 
-   * from: `/libs/ws/js/runtime/templates/`
+   * da: `/libs/ws/js/runtime/templates/`
    * a: `/apps/ws/js/runtime/templates/`
 
 1. Aggiungete le nuove informazioni a `/apps/ws/js/runtime/templates/task.html`.
 
    Ad esempio, aggiungi in `div class="taskProperties"`:
 
-   ```
+   ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
