@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 9f3129aff8a3e389231b0fe0973794e5d34480a0
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '4108'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ Per eseguire il rendering di un modulo come HTML, la struttura del modulo deve e
 
 * Non utilizzare le proprietà relative al bordo degli oggetti per disegnare righe, riquadri o griglie all’interno del modulo. In alcuni browser i bordi non vengono allineati esattamente come nell’anteprima di Gli oggetti possono risultare sovrapposti o impedire di visualizzare altri oggetti nella posizione prevista.
 * Potete definire lo sfondo mediante linee, rettangoli e cerchi.
-* Disegnate del testo leggermente più grande di quanto sembra necessario per contenere il testo. Alcuni browser Web non visualizzano il testo in modo leggibile.
+* Disegnate del testo leggermente più grande di quello che sembra necessario per contenere il testo. Alcuni browser Web non visualizzano il testo in modo leggibile.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ Per eseguire il rendering di un modulo come HTML, la struttura del modulo deve e
 
 Durante il rendering di una struttura del modulo come modulo HTML, viene eseguito il rendering di ciascun sottomodulo di secondo livello come pagina HTML (pannello). È possibile visualizzare la gerarchia di un sottomodulo in Designer. I sottomoduli secondari appartenenti al sottomodulo principale (il nome predefinito di un sottomodulo principale è modulo1) sono i sottomoduli del pannello. L&#39;esempio seguente mostra i sottomoduli di una struttura del modulo.
 
-```as3
+```java
      form1
          Master Pages
          PanelSubform1
@@ -80,9 +83,9 @@ L&#39;autore di un modulo specifica se uno script viene eseguito sul server o su
 
 Il servizio Forms è in grado di eseguire gli script durante il rendering del modulo. Di conseguenza, è possibile precompilare un modulo con i dati connettendosi a un database o a servizi Web che potrebbero non essere disponibili sul client. Potete anche impostare l&#39; `Click` evento di un pulsante da eseguire sul server in modo che il client esegua il ciclo dei dati sul server. Questo consente al client di eseguire script che possono richiedere risorse server, ad esempio un database aziendale, mentre l&#39;utente interagisce con un modulo. Per i moduli HTML, gli script di formcalc possono essere eseguiti solo sul server. Di conseguenza, è necessario contrassegnare questi script per l&#39;esecuzione in `server` o `both`.
 
-È possibile progettare moduli che si spostano tra le pagine (pannelli) chiamando `xfa.host.pageUp` e `xfa.host.pageDown` utilizzando metodi. Questo script viene posizionato nell&#39; `Click` &#39;evento di un pulsante e l&#39; `runAt` attributo è impostato su `Both`. La ragione `Both` è che Adobe Reader o Acrobat (per i moduli di cui viene eseguito il rendering come PDF) possono modificare le pagine senza passare al server e i moduli HTML possono cambiare le pagine arrotondando i dati al server. In altre parole, un modulo viene inviato al servizio Forms e viene riprodotto come HTML con la nuova pagina visualizzata.
+È possibile progettare moduli che si spostano tra le pagine (pannelli) chiamando `xfa.host.pageUp` e `xfa.host.pageDown` utilizzando metodi. Questo script viene posizionato nell&#39; `Click` &#39;evento di un pulsante e l&#39; `runAt` attributo è impostato su `Both`. È quindi `Both` possibile scegliere Adobe Reader o Acrobat (per i moduli di cui viene eseguito il rendering in formato PDF) per modificare le pagine senza passare al server e i moduli HTML possono modificare le pagine arrotondando i dati al server. In altre parole, un modulo viene inviato al servizio Forms e viene riprodotto come HTML con la nuova pagina visualizzata.
 
-È consigliabile non assegnare alle variabili di script e ai campi modulo gli stessi nomi, ad esempio item. Alcuni browser Web, come Internet Explorer, potrebbero non inizializzare una variabile con lo stesso nome di un campo di modulo che genera un errore di script. È buona norma assegnare a campi modulo e variabili di script nomi diversi.
+Si consiglia di non assegnare alle variabili di script e ai campi modulo gli stessi nomi, ad esempio item. Alcuni browser Web, come Internet Explorer, potrebbero non inizializzare una variabile con lo stesso nome di un campo di modulo che genera un errore di script. È buona norma assegnare ai campi del modulo e alle variabili di script nomi diversi.
 
 Quando si esegue il rendering di moduli HTML contenenti sia la funzionalità di navigazione delle pagine che gli script di un modulo (ad esempio, se uno script recupera dati di campo da un database ogni volta che viene eseguito il rendering del modulo), assicurarsi che lo script del modulo si trovi nell&#39;evento form:calculate anziché nell&#39;evento form:readyevent.
 
@@ -99,11 +102,11 @@ Quando formserver esegue il rendering di un XDP contenente un elenco a discesa, 
 
 Se non si desidera inviare i dati, è possibile disattivare questi elementi di input nel modo seguente. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
-```as3
+```java
 header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]
 ```
 
-```as3
+```java
 var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
     function _user_onsubmit() {
     var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]");
@@ -115,7 +118,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 ## Sottoinsiemi XFA {#xfa-subsets}
 
-Quando si creano strutture del modulo per il rendering come HTML, è necessario limitare lo script al sottoinsieme XFA per gli script nel linguaggio javascript.
+Quando si creano strutture del modulo per il rendering come HTML, è necessario limitare lo script al sottoinsieme XFA per gli script nel linguaggio JavaScript.
 
 Gli script eseguiti sul client o eseguiti sia sul client che sul server devono essere scritti all&#39;interno del sottoinsieme XFA. Gli script eseguiti sul server possono utilizzare il modello di script XFA completo e FormCalc. Per informazioni sull&#39;uso di JavaScript, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)di moduli.
 
@@ -144,7 +147,7 @@ Se a un pulsante non è associato alcuno script sul lato client, i dati vengono 
 
 ## Browser Web HTML 4.0 {#html-4-0-web-browser}
 
-Un browser Web che supporta solo HTML 4.0 non può supportare il modello di script lato client del sottoinsieme XFA. Durante la creazione di una struttura del modulo da utilizzare sia in HTML 4.0 che in MSDHTML o CSS2HTML, uno script contrassegnato per l&#39;esecuzione sul client verrà eseguito sul server. Ad esempio, si supponga che un utente faccia clic su un pulsante situato in un modulo visualizzato in un browser Web HTML 4.0. In questa situazione, i dati del modulo vengono inviati al server in cui viene eseguito lo script sul lato client.
+Un browser Web che supporta solo HTML 4.0 non può supportare il modello di script lato client del sottoinsieme XFA. Durante la creazione di una struttura del modulo da utilizzare sia in HTML 4.0 che in MSDHTML o CSS2HTML, uno script contrassegnato per l&#39;esecuzione sul client verrà eseguito sul server. Ad esempio, si supponga che l&#39;utente faccia clic su un pulsante situato in un modulo visualizzato in un browser Web HTML 4.0. In questa situazione, i dati del modulo vengono inviati al server in cui viene eseguito lo script sul lato client.
 
 È consigliabile inserire la logica del modulo negli eventi calculate, che vengono eseguiti sul server in HTML 4.0 e sul client per MSDHTML o CSS2HTML.
 
@@ -154,7 +157,7 @@ Quando vi spostate tra le pagine HTML (pannelli), viene mantenuto solo lo stato 
 
 Lo script seguente mantiene l&#39;aspetto `fillColor` di un campo in base al valore di `hiddenField`. Si supponga che questo script si trovi nell&#39; `Calculate` evento del campo.
 
-```as3
+```java
      If (hiddenField.rawValue == 1)
          this.fillColor = "255,0,0"
      else
@@ -175,16 +178,16 @@ Non è possibile firmare un modulo HTML che contiene un campo firma digitale se 
 
 Per informazioni sulla firma digitale di un documento, vedere Firma [digitale e certificazione dei documenti](/help/forms/developing/digitally-signing-certifying-documents.md)
 
-## Rendering di un modulo XHTML conforme alle linee guida di accesso facilitato {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
+## Rendering di un modulo XHTML conforme alle linee guida per l&#39;accesso facilitato {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
 È possibile eseguire il rendering di un modulo HTML completo conforme alle linee guida per l&#39;accessibilità. In altre parole, il rendering del modulo viene eseguito all&#39;interno di tag HTML completi, al contrario del rendering del modulo HTML all&#39;interno dei tag body (non una pagina HTML completa).
 
 ## Convalida dei dati del modulo {#validating-form-data}
 
-È consigliabile limitare l&#39;uso delle regole di convalida per i campi modulo durante il rendering del modulo come modulo HTML. Alcune regole di convalida potrebbero non essere supportate per i moduli HTML. Ad esempio, quando un pattern di convalida MM-GG-AAAA viene applicato a un `Date/Time` campo posizionato in una struttura del modulo rappresentata come modulo HTML, non funziona correttamente, anche se la data viene digitata correttamente. Tuttavia, questo pattern di convalida funziona correttamente per i moduli sottoposti a rendering come PDF.
+È consigliabile limitare l&#39;uso delle regole di convalida per i campi modulo durante il rendering del modulo come modulo HTML. Alcune regole di convalida potrebbero non essere supportate per i moduli HTML. Ad esempio, quando un pattern di convalida MM-GG-AAAA viene applicato a un `Date/Time` campo che si trova in una struttura del modulo rappresentata come modulo HTML, non funziona correttamente, anche se la data viene digitata correttamente. Tuttavia, questo pattern di convalida funziona correttamente per i moduli sottoposti a rendering come PDF.
 
 >[!NOTE]
-Per ulteriori informazioni sul servizio Forms, consultate Riferimento [servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per gli AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
@@ -246,7 +249,7 @@ Quando il servizio Forms esegue il rendering di un modulo HTML, restituisce un f
 
 [Avvio rapido dell&#39;API di Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Rendering di moduli HTML con barre degli strumenti personalizzate](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
@@ -271,8 +274,9 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
    * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setHTMLToolbar` e passare un valore `HTMLToolbar` enum. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
    * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passare una stringa che specifica il valore delle impostazioni internazionali. (Questa è un&#39;impostazione opzionale).
    * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setOutputType` e passare `OutputType.FullHTMLTags`. (Questa è un&#39;impostazione opzionale).
+
    >[!NOTE]
-   Il rendering dei moduli non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE in cui è installato AEM Forms (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se `ApplicationWebRoot` si tratta di un altro server da uno in cui è installato AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Moduli e impostare l&#39;URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.
+   Il rendering dei moduli non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dai AEM Forms del server applicazione J2EE (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se `ApplicationWebRoot` si tratta di un altro server appartenente a uno dei AEM Forms host, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Moduli e impostare l&#39;URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.
 
 1. Eseguire il rendering di un modulo HTML
 
@@ -285,6 +289,7 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (Java):
    * Un valore di stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Un `URLSpec` oggetto che memorizza i valori URI richiesti per eseguire il rendering di un modulo HTML.
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo.
+
    Il `(Deprecated) renderHTMLForm` metodo restituisce un `FormsResult` oggetto che contiene un flusso di dati del modulo che può essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
@@ -324,10 +329,11 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio We
 
    * Creare un `HTMLRenderSpec` oggetto utilizzando il relativo costruttore.
    * Per eseguire il rendering di un modulo HTML con una barra degli strumenti, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setHTMLToolbar` e passare un valore `HTMLToolbar` enum. Ad esempio, per visualizzare una barra degli strumenti HTML verticale, passare `HTMLToolbar.Vertical`.
-   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passare una stringa che specifica il valore delle impostazioni internazionali. Per ulteriori informazioni, consulta [Riferimento](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)API per AEM Forms.
+   * Per impostare il valore delle impostazioni internazionali per il modulo HTML, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setLocale` e passare una stringa che specifica il valore delle impostazioni internazionali. Per ulteriori informazioni, consulta [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)(Riferimento API per gli ).
    * Per eseguire il rendering del modulo HTML all&#39;interno di tag HTML completi, richiamare il metodo dell&#39; `HTMLRenderSpec` oggetto `setOutputType` e passare `OutputType.FullHTMLTags`.
+
    >[!NOTE]
-   Il rendering dei moduli non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazione J2EE in cui è installato AEM Forms (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se `ApplicationWebRoot` si tratta di un altro server da uno in cui è installato AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Moduli e impostare l&#39;URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.
+   Il rendering dei moduli non viene eseguito correttamente in HTML quando l&#39; `StandAlone` opzione è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dai AEM Forms del server applicazione J2EE (il `ApplicationWebRoot` valore viene specificato utilizzando l&#39; `URLSpec` oggetto passato al `FormsServiceClient` metodo dell&#39; `(Deprecated) renderHTMLForm` oggetto). Se `ApplicationWebRoot` si tratta di un altro server appartenente a uno dei AEM Forms host, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore URI dell&#39;applicazione Web Form. A tale scopo, accedere alla console di amministrazione, fare clic su Servizi > Moduli e impostare l&#39;URI della directory principale Web come https://server-name:port/FormServer. Quindi, salvate le impostazioni.
 
 1. Eseguire il rendering di un modulo HTML
 
@@ -342,11 +348,12 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio We
    * Un `java.util.HashMap` oggetto che memorizza gli allegati. Si tratta di un parametro facoltativo e potete specificare `null` se non desiderate allegare file al modulo. (Vedere [Allegare file al modulo](/help/forms/developing/rendering-interactive-pdf-forms.md).)
    * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal metodo. Questo valore del parametro memorizza il modulo di cui è stato effettuato il rendering.
    * Un oggetto vuoto `com.adobe.idp.services.holders.BLOBHolder` compilato dal metodo. Questo parametro memorizzerà i dati XML di output.
-   * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. Questo argomento memorizza il numero di pagine nel modulo.
+   * Un oggetto vuoto `javax.xml.rpc.holders.LongHolder` compilato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. Questo argomento memorizzerà il valore delle impostazioni internazionali.
    * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo. Questo argomento memorizzerà il valore di rendering HTML utilizzato.
    * Un oggetto vuoto `com.adobe.idp.services.holders.FormsResultHolder` che conterrà i risultati dell&#39;operazione.
-   Il `(Deprecated) renderHTMLForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come ultimo valore argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
+
+   Il `(Deprecated) renderHTMLForm` metodo compila l&#39; `com.adobe.idp.services.holders.FormsResultHolder` oggetto passato come valore dell&#39;ultimo argomento con un flusso di dati del modulo che deve essere scritto nel browser Web del client.
 
 1. Scrivere il flusso di dati del modulo nel browser Web del client
 
@@ -362,5 +369,5 @@ Eseguire il rendering di un modulo HTML utilizzando l&#39;API Forms (servizio We
 
 [Rendering dei moduli come HTML](#rendering-forms-as-html)
 
-[Richiamo di moduli AEM con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Chiamata di AEM Forms mediante codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
