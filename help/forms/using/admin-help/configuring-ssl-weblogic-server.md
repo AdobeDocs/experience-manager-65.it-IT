@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
 
@@ -113,9 +116,9 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    >
    >Sostituire `[JAVA_HOME]`*con la directory in cui è installato il JDK e sostituire il testo in corsivo con valori che corrispondono al vostro ambiente.*
 
-   Esempio:
+   Ad esempio:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
@@ -133,9 +136,9 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    >
    >Sostituire `[JAVA_HOME]` con la directory in cui è installato il JDK e sostituire `store`*_*`password`* con la password per l&#39;archivio di chiavi Identità personalizzata.*
 
-   Esempio:
+   Ad esempio:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
@@ -144,15 +147,15 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
 1. Copiate il file ads-ca.cer nei computer host che richiedono una comunicazione sicura con il server dell&#39;applicazione.
 1. Inserite il certificato in un nuovo file dell&#39;archivio chiavi (l&#39;archivio chiavi personalizzato) immettendo il seguente comando:
 
-   [JAVA_HOME]`/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
+   [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
    >[!NOTE]
    >
    >Sostituire `[JAVA_HOME]` con la directory in cui è installato JDK e sostituire `store`*_*`password`e`key`*_* `password` *con le proprie password.*
 
-   Esempio:
+   Ad esempio:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
@@ -177,11 +180,11 @@ Configurare WebLogic in modo che utilizzi l&#39;archivio chiavi identità person
 1. Fare clic su **Modifica** per ottenere l&#39;elenco a discesa degli archivi di chiavi e selezionare Identità **personalizzata e attendibilità** personalizzata.
 1. In Identità, specificate i seguenti valori:
 
-   **Keystore** identità personalizzata: *[appserverdomain]*/adobe/nome *[server/ads-credentials.jks, dove *]* appserverdomain[*è il percorso effettivo e il nome] del *[]* server è il nome del server applicazione.
+   **Keystore** identità personalizzata: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, dove *[appserverdomain] *è il percorso effettivo e il nome *[del]* server è il nome del server applicazione.
 
    **Tipo** archivio chiavi identità personalizzato: JKS
 
-   **Passphrase** archivio chiavi identità personalizzata: *mypassword* (password archivio chiavi identità personalizzata)
+   **Passphrase** archivio chiavi identità personalizzata: *mypassword* (password dell&#39;archivio chiavi di identità personalizzata)
 
 1. In Trust, specificate i seguenti valori:
 
