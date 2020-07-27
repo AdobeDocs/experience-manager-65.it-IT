@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 1%
 
 ---
 
@@ -130,7 +133,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
 1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)** , quindi scegliere **Crea** > **Crea file**. Denominate il file js.txt e fate clic su **OK**.
 1. Nel file js.txt aggiungete il testo seguente:
 
-   ```
+   ```javascript
    #base=.
    js.txt
    ```
@@ -139,7 +142,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
 1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)** e scegliere **Crea** > **Crea file**. Denominate il file init.js e fate clic su **OK**.
 1. Copiate il codice seguente nel file init.js e fate clic su **Salva tutto**:
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -165,7 +168,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
    | **Proprietà** | **Tipo** | **Valore** |
    |---|---|---|
    | categorie | Stringa[] | granite.testing.hobbes.test, granite.testing.hobbes.test.testForm |
-   | dipendenze | Stringa[] | granite.testing.calvin.test |
+   | dipendenze | Stringa[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -177,7 +180,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
 
    Per utilizzare il codice seguente per testare un altro modulo adattivo, modificare il percorso e il nome del modulo in **navigateTo** (righe 11, 36 e 62) e i rispettivi casi di test. Per ulteriori informazioni sulle API per il test di diversi aspetti dei moduli e degli oggetti modulo, vedere API [Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
    
@@ -283,7 +286,7 @@ Le suite di test possono essere eseguite singolarmente. Quando eseguite una suit
 
 Un&#39;icona a forma di segno di spunta indica un test superato: ![segno di spunta](assets/checkmark.png)
 
-Un&#39;icona &quot;X&quot; indica un test non riuscito: ![incrocio](assets/cross.png)
+Un&#39;icona &quot;X&quot; indica un test non riuscito: ![cross](assets/cross.png)
 
 Per eseguire una suite di test:
 
