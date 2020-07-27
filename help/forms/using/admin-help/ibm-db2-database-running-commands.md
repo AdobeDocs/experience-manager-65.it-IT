@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 I seguenti comandi IBM DB2 sono consigliati per la manutenzione regolare del database dei moduli AEM. Per informazioni dettagliate sulla manutenzione e l&#39;ottimizzazione delle prestazioni per il database DB2, vedere la Guida *all&#39;amministrazione* IBM DB2.
 
-* **** runstats: Questo comando aggiorna le statistiche che descrivono le caratteristiche fisiche di una tabella di database, insieme ai relativi indici associati. Le istruzioni SQL dinamiche generate dai moduli AEM utilizzano automaticamente queste statistiche aggiornate, ma anche le istruzioni SQL statiche create all&#39;interno di un database richiedono l&#39;esecuzione del `db2rbind` comando.
-* **** db2rbind: Questo comando ripristina tutti i pacchetti nel database. Utilizzate questo comando dopo aver eseguito l&#39; `runstats` utility per convalidare nuovamente tutti i pacchetti nel database.
-* **** riorganizzazione tabella o indice: Questo comando controlla se è necessaria una riorganizzazione di alcune tabelle e indici.
+* **runstats:** Questo comando aggiorna le statistiche che descrivono le caratteristiche fisiche di una tabella di database, insieme ai relativi indici associati. Le istruzioni SQL dinamiche generate dai moduli AEM utilizzano automaticamente queste statistiche aggiornate, ma anche le istruzioni SQL statiche create all&#39;interno di un database richiedono l&#39;esecuzione del `db2rbind` comando.
+* **db2rbind:** Questo comando ripristina tutti i pacchetti nel database. Utilizzate questo comando dopo aver eseguito l&#39; `runstats` utility per convalidare nuovamente tutti i pacchetti nel database.
+* **riorganizzazione tabella o indice:** Questo comando controlla se è necessaria una riorganizzazione di alcune tabelle e indici.
 
    Con la crescita e la modifica dei database, il ricalcolo delle statistiche delle tabelle è fondamentale per migliorare le prestazioni del database e deve essere eseguito regolarmente. Questi comandi possono essere eseguiti manualmente tramite script o tramite un processo cron.
 
@@ -31,7 +34,7 @@ I seguenti comandi IBM DB2 sono consigliati per la manutenzione regolare del dat
 
 Per un database di dimensioni ridotte, ad esempio per 10.000 utenti o 2.500 gruppi, è sufficiente richiamare il `runstats` comando per ridurre i tempi di sincronizzazione.
 
-Per i database più grandi, ad esempio per 100.000 utenti o 10.000 gruppi, eseguite il `reorg` comando prima di eseguire il `runstats` comando.
+Per i database di dimensioni maggiori, ad esempio per 100.000 utenti o 10.000 gruppi, eseguire il `reorg` comando prima di eseguire il `runstats` comando.
 
 ## Utilizzare il comando runstats nel database dei moduli AEM {#use-the-runstats-command-on-your-aem-forms-database}
 
@@ -43,7 +46,7 @@ Esegui il `runstats` comando nelle tabelle e negli indici del database dei modul
 
 Per una sintassi e un utilizzo corretti, consultate la documentazione del produttore del database. Di seguito `<schema>` viene utilizzato per indicare lo schema associato al nome utente DB2. Se si dispone di una semplice installazione DB2 predefinita, si tratta del nome dello schema del database.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
@@ -69,7 +72,7 @@ Per una sintassi e un utilizzo corretti, consultate la documentazione del produt
 
 Esegui il `reorg` comando nelle tabelle e negli indici del database dei moduli AEM seguenti. Per una sintassi e un utilizzo corretti, consultate la documentazione del produttore del database.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
