@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -94,7 +94,7 @@ In questa procedura:
 1. 
    * **Per un singolo server,** nel file lc_&lt;dbaname/tunkey>.xml aggiungete quanto segue dopo la sezione &lt;security-realms>:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -110,13 +110,13 @@ In questa procedura:
 
    Aggiungete quanto segue alla sezione &lt;server> presente dopo il codice precedente:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
    * **Per il cluster di server,** nella directory principale [\domain\configuration\host.xml dell&#39;]appserver su tutti i nodi, aggiungere quanto segue dopo la sezione &lt;security-realms>:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -132,16 +132,16 @@ In questa procedura:
 
    Aggiungete quanto segue alla sezione &lt;server> presente dopo il codice precedente:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
-1. Modificate il valore per l’ `keystoreFile` attributo e l’ `keystorePass` attributo nella password dell’archivio di chiavi specificata al momento della creazione dell’archivio di chiavi.
+1. Modificate il valore per l&#39; `keystoreFile` attributo e l&#39; `keystorePass` attributo nella password dell&#39;archivio di chiavi specificata al momento della creazione dell&#39;archivio di chiavi.
 1. Riavviate il server applicazione:
 
    * Per gli impianti chiavi in mano:
 
-      * Dal Pannello di controllo di Windows, fare clic su Strumenti di amministrazione e quindi su Servizi.
+      * Dal Pannello di controllo Campaign Windows, fare clic su Strumenti di amministrazione, quindi fare clic su Servizi.
       * Selezionare JBoss per  moduli di Adobe Experience Manager.
       * Selezionare Azione > Interrompi.
       * Attendere che lo stato del servizio venga visualizzato come interrotto.
