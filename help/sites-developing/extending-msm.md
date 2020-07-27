@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: fa99c3bc2110aadb403920aa3e0fcf0919f26735
+workflow-type: tm+mt
+source-wordcount: '2611'
+ht-degree: 2%
 
 ---
 
@@ -22,12 +25,17 @@ Questa pagina consente di estendere le funzionalità di Multi Site Manager:
 
 * Informazioni sui membri principali dell&#39;API Java MSM.
 * Create una nuova azione di sincronizzazione che possa essere utilizzata in una configurazione di rollout.
-* Rimuovere il passaggio &quot;Capitoli&quot; nella procedura guidata Crea sito.
+* Rimuovete il passaggio &quot;Capitoli&quot; nella procedura guidata Crea sito.
 * Modificare la lingua e i codici paese predefiniti.
 
 >[!NOTE]
 >
 >Questa pagina deve essere letta insieme a [Riutilizzo del contenuto: Multi Site Manager](/help/sites-administering/msm.md).
+>
+>Anche le seguenti sezioni sulla ristrutturazione del repository dei siti in AEM 6.4 potrebbero essere di interesse:
+>* [Configurazioni Blueprint Manager multisito](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-blueprint-configurations)
+>* [Configurazioni di rollout di Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-rollout-configurations)
+
 
 >[!CAUTION]
 >
@@ -37,7 +45,7 @@ Questa pagina consente di estendere le funzionalità di Multi Site Manager:
 
 Multi Site Management è costituito dai pacchetti seguenti:
 
-* [com.day.cq.wc.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
 * [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 I principali oggetti API MSM interagiscono come segue (vedere anche [Termini utilizzati](/help/sites-administering/msm.md#terms-used)):
@@ -63,7 +71,7 @@ I principali oggetti API MSM interagiscono come segue (vedere anche [Termini uti
 
    * Ad esempio, una Live Copy viene creata in `/content/copy/us` dalla sorgente o dal blueprint in `/content/we-retail/language-masters`. Le risorse `/content/we.retail/language-masters/en/jcr:content` e `/content/copy/us/en/jcr:content` formano una relazione.
 
-* **`LiveCopy`** contiene `LiveCopy` i dettagli di configurazione per le relazioni ( `LiveRelationship`) tra le risorse Live Copy e le relative risorse di origine/blueprint.
+* **`LiveCopy`** `LiveCopy` contiene i dettagli di configurazione per le relazioni ( `LiveRelationship`) tra le risorse Live Copy e le relative risorse di origine/blueprint.
 
    * Utilizzate la `LiveCopy` classe per accedere al percorso della pagina, al percorso della pagina di origine/blueprint, alle configurazioni di rollout e all&#39;eventuale inclusione di pagine figlie nella `LiveCopy`.
 
@@ -103,11 +111,11 @@ Crea `LiveActionFactory` le istanze della `LiveAction` classe per una determinat
 
 * `LiveActionFactory` le classi includono i seguenti membri:
 
-   * `LIVE_ACTION_NAME`: Campo che contiene il nome dell&#39;associato `LiveAction`. Questo nome deve corrispondere al valore restituito dal `getName` metodo della `LiveAction` classe.
+   * `LIVE_ACTION_NAME`: Campo che contiene il nome dell&#39;associato `LiveAction`. Questo nome deve coincidere con il valore restituito dal `getName` metodo della `LiveAction` classe.
 
    * `createAction`: Crea un&#39;istanza dell&#39; `LiveAction`. Il `Resource` parametro opzionale può essere utilizzato per fornire informazioni sulla configurazione.
 
-   * `createsAction`: Restituisce il nome del associato `LiveAction`.
+   * `createsAction`: Restituisce il nome dell&#39;associato `LiveAction`.
 
 ### Accesso al nodo di configurazione LiveAction {#accessing-the-liveaction-configuration-node}
 
@@ -129,7 +137,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Accesso ai nodi di destinazione, ai nodi di origine e alla LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Accesso ai nodi Target, ai nodi di origine e alla LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 I seguenti oggetti sono forniti come parametri del `execute` metodo dell&#39; `LiveAction` oggetto:
 
@@ -169,52 +177,71 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 #### Create the Rollout Configuration {#create-the-rollout-configuration}
 
-1. Aprite la console **Strumenti** nell’interfaccia classica; ad esempio, [https://localhost:4502/miscadmin#/etc](https://localhost:4502/miscadmin#/etc)
+Per creare una nuova configurazione di rollout:
+
+1. Aperto CRXDE Lite; ad esempio:
+   [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+
+1. Accedi a :
+   `/apps/msm/<your-project>/rolloutconfigs`
+
+   >[!NOTE]
+   >Questa è la versione personalizzata del progetto di:
+   >`/libs/msm/wcm/rolloutconfigs`
+   >Deve essere creato se si tratta della prima configurazione.
 
    >[!NOTE]
    >
-   >Nell’interfaccia touch standard potete passare alla console classica Strumenti dell’interfaccia utente utilizzando le voci della barra laterale **Strumenti**, **Operazioni** e quindi **Configurazione**.
+   >Non è necessario modificare nulla nel percorso /libs.
+   >Questo perché il contenuto di /libs viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+   >Il metodo consigliato per la configurazione e altre modifiche è:
+   >* Ricreare l&#39;elemento richiesto (ovvero come esiste in /libs) in /apps
+   >* Apportare modifiche all&#39;interno di /apps
 
-1. Nella struttura delle cartelle, selezionate la cartella **Strumenti**, **MSM**, **Rollout Configurations** .
-1. Fate clic su **Nuovo**, quindi su **Nuova pagina** per definire le proprietà di configurazione del rollout:
 
-   * **Titolo**: Titolo della configurazione del rollout, ad esempio Configurazione del rollout personale
-   * **Nome**: Nome del nodo che memorizza i valori delle proprietà, ad esempio myrolloutconfig
-   * Selezionate **Modello** RolloutConfig.
+1. In questa sezione **Create** un nodo con le seguenti proprietà:
 
-1. Fai clic su **Crea**. 
-1. Fate doppio clic sulla configurazione di rollout creata per aprirla e configurarla ulteriormente.
-1. Fate clic su **Modifica**. 
-1. Nella finestra di dialogo **Rollout Config** , selezionate **[Sincronizza attivatore](/help/sites-administering/msm-sync.md#rollout-triggers)**per definire l’azione che causa il rollout.
-1. Fate clic su **OK** per salvare le modifiche.
+   * **Nome**: Il nome del nodo della configurazione del rollout. md#installed-sync-actions), ad esempio `contentCopy` o `workflow`.
+   * **Tipo**: `cq:RolloutConfig`
+
+1. Aggiungi le seguenti proprietà al nodo:
+   * **Nome**: `jcr:title`
+
+      **Tipo**: `String`
+      **Valore**: Titolo identificativo che verrà visualizzato nell’interfaccia utente.
+   * **Nome**: `jcr:description`
+
+      **Tipo**: `String`
+      **Valore**: Una descrizione facoltativa.
+   * **Nome**: `cq:trigger`
+
+      **Tipo**: `String`
+      **Valore**: Trigger [Rollout](/help/sites-administering/msm-sync.md#rollout-triggers) da utilizzare. Seleziona da:
+      * `rollout`
+      * `modification`
+      * `publish`
+      * `deactivate`
+
+1. Fate clic su **Salva tutto**.
 
 #### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
 
-Le configurazioni del rollout sono memorizzate sotto il `/etc/msm/rolloutconfigs` nodo. Aggiungete nodi secondari di tipo `cq:LiveSyncAction` per aggiungere azioni di sincronizzazione alla configurazione del rollout. L&#39;ordine dei nodi di azione della sincronizzazione determina l&#39;ordine in cui si verificano le azioni.
+Le configurazioni di rollout sono memorizzate sotto il nodo [di configurazione di](#create-the-rollout-configuration) rollout creato sotto il `/apps/msm/<your-project>/rolloutconfigs` nodo.
 
-1. Aperto CRXDE Lite; ad esempio [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
-1. Selezionare il `jcr:content` nodo sotto il nodo di configurazione rollout.
+Aggiungete nodi secondari di tipo `cq:LiveSyncAction` per aggiungere azioni di sincronizzazione alla configurazione del rollout. L&#39;ordine dei nodi di azione della sincronizzazione determina l&#39;ordine in cui si verificano le azioni.
 
-   Ad esempio, per la configurazione di rollout con la proprietà **Name** di `myrolloutconfig`, selezionare il nodo:
+1. Sempre in CRXDE Lite, selezionate il nodo [Rollout Configuration](#create-the-rollout-configuration) .
 
-   `/etc/msm/rolloutconfigs/myrolloutconfig/jcr:content`
+   Ad esempio:
+   `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. Fai clic su **Crea** , quindi su **Crea nodo**. Quindi configurate le seguenti proprietà del nodo e fate clic su **OK**:
+1. **Creare** un nodo con le seguenti proprietà:
 
-   * **Nome**: Nome del nodo dell’azione di sincronizzazione. Il nome deve corrispondere al nome dell’ **azione** nella tabella in Azioni [di](/help/sites-administering/msm-sync.md#installed-synchronization-actions)sincronizzazione, ad esempio `contentCopy` o `workflow`.
-
+   * **Nome**: Il nome del nodo dell&#39;azione di sincronizzazione.
+Il nome deve corrispondere al nome dell’ **azione** nella tabella in Azioni [di](/help/sites-administering/msm-sync.md#installed-synchronization-actions)sincronizzazione, ad esempio `contentCopy` o `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
-1. Seleziona il nodo di azione appena creato e aggiungi la seguente proprietà al nodo:
-
-   * **Nome**: Nome della proprietà dell’azione. Il nome deve corrispondere al nome della **proprietà** nella tabella in Azioni [di](/help/sites-administering/msm-sync.md#installed-synchronization-actions)sincronizzazione, ad esempio `enabled`.
-
-   * **Tipo**:Stringa
-
-   * **Valore**: il valore della proprietà dell&#39;azione. Per valori validi, vedere la colonna **Proprietà** in Azioni [di](/help/sites-administering/msm-sync.md#installed-synchronization-actions)sincronizzazione, ad esempio `true`.
-
 1. Aggiungi e configura tutti i nodi di azione di sincronizzazione richiesti. Ridisporre i nodi di azione in modo che l&#39;ordine corrisponda all&#39;ordine in cui si desidera che si verifichino. Il nodo di azione superiore si verifica per primo.
-1. Fate clic su **Salva tutto**.
 
 ### Creazione e utilizzo di una semplice classe LiveActionFactory {#creating-and-using-a-simple-liveactionfactory-class}
 
@@ -270,7 +297,7 @@ Aggiungete dipendenze in modo che il compilatore Eclipse possa fare riferimento 
    `MyLiveActionFactory/pom.xml`
 
 1. Nell’editor, fate clic sulla `pom.xml` scheda e individuate la `project/dependencyManagement/dependencies` sezione.
-1. Aggiungete il seguente codice XML all’interno dell’ `dependencyManagement` elemento e salvate il file.
+1. Aggiungete il seguente codice XML all’interno dell’ `dependencyManagement` elemento, quindi salvate il file.
 
    ```xml
     <dependency>
@@ -431,7 +458,7 @@ La `LiveActionFactory` classe seguente implementa un `LiveAction` che registra i
        /* get the source's cq:lastModifiedBy property */
        if (source != null && source.adaptTo(Node.class) !=  null){
         ValueMap sourcevm = source.adaptTo(ValueMap.class);
-        lastMod = sourcevm.get(com.day.cq.wcm.api.NameConstants.PN_PAGE_LAST_MOD_BY, String.class);
+        lastMod = sourcevm.get(com.day.cq.wcm.msm.api.MSMNameConstants.PN_PAGE_LAST_MOD_BY, String.class);
        }
    
        /* set the target node's la-lastModifiedBy property */
@@ -523,33 +550,27 @@ Create la configurazione di rollout MSM che utilizza l&#39; `LiveActionFactory` 
 
 1. Create e configurate una configurazione [Rollout con la procedura](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) standard e utilizzando le proprietà:
 
-   1. Crea:
-
-      1. **Titolo**: Esempio di configurazione del rollout
-      1. **Nome**: examplerolloutconfig
-      1. Utilizzo del modello **RolloutConfig**.
-   1. Modifica:
-
-      1. **Trigger** sincronizzazione: Attivazione
-
+   * **Titolo**: Esempio di configurazione del rollout
+   * **Nome**: examplerolloutconfig
+   * **cq:trigger**: `publish`
 
 #### Aggiungere l&#39;azione Live alla configurazione rollout di esempio {#add-the-live-action-to-the-example-rollout-configuration}
 
 Configurate la configurazione di rollout creata nella procedura precedente in modo che utilizzi la `ExampleLiveActionFactory` classe.
 
 1. Aperto CRXDE Lite; ad esempio, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
-1. Crea il nodo seguente sotto `/etc/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
+1. Crea il nodo seguente sotto `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Nome**: `exampleLiveAction`
    * **Tipo**: `cq:LiveSyncAction`
-   ![chlimage_1-75](assets/chlimage_1-75.png)
 
 1. Fate clic su **Salva tutto**.
-1. Selezionare il `exampleLiveAction` nodo e aggiungere la proprietà seguente:
+1. Selezionate il `exampleLiveAction` nodo e aggiungete la seguente proprietà:
 
    * **Nome**: `repLastModBy`
    * **Tipo**: `Boolean`
    * **Valore**: `true`
+
    Questa proprietà indica alla `ExampleLiveAction` classe che la `cq:LastModifiedBy` proprietà deve essere replicata dal nodo di origine a quello di destinazione.
 
 1. Fate clic su **Salva tutto**.
@@ -569,24 +590,26 @@ Attiva la pagina **Prodotti** (inglese) del ramo di origine e osserva i messaggi
 16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  ***Target node lastModifiedBy property updated: admin ***
 ```
 
-### Rimozione del passaggio dei capitoli nella Creazione guidata sito {#removing-the-chapters-step-in-the-create-site-wizard}
+<!--
+### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
-In alcuni casi, la selezione dei **capitoli** non è necessaria nella procedura guidata di creazione del sito (è necessaria solo la selezione delle **lingue** ). Per rimuovere questo passaggio nella blueprint inglese predefinita We.Retail:
+In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
-1. In CRX Explorer, rimuovere il nodo:
+1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Passa a `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` e crea un nuovo nodo:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
 
-   1. **Nome** = `chapters`; **Tipo** = `cq:Widget`.
+    1. **Name** = `chapters`; **Type** = `cq:Widget`.
 
-1. Aggiungi le seguenti proprietà al nuovo nodo:
+1. Add following properties to the new node:
 
-   1. **Nome** = `name`; **Tipo** = `String`; **Value** = `msm:chapterPages`
+    1. **Name** = `name`; **Type** = `String`; **Value** = `msm:chapterPages`
 
-   1. **Nome** = `value`; **Tipo** = `String`; **Value** = `all`
+    1. **Name** = `value`; **Type** = `String`; **Value** = `all`
 
-   1. **Nome** = `xtype`; **Tipo** = `String`; **Value** = `hidden`
+    1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
+-->
 
 ### Modifica dei nomi delle lingue e dei paesi predefiniti {#changing-language-names-and-default-countries}
 
@@ -597,7 +620,7 @@ AEM utilizza un set predefinito di codici lingua e paese.
 
 MSM utilizza un elenco memorizzato di codici lingua e paese per determinare il nome del paese associato al nome della versione della lingua della pagina. Se necessario, potete modificare i seguenti aspetti dell’elenco:
 
-* Titolo lingua
+* Titoli della lingua
 * Nomi paese
 * Paesi predefiniti per le lingue (per codici quali `en`, `de`ad esempio,
 
@@ -638,7 +661,7 @@ Ad esempio, se vengono aggiunte due nuove proprietà di pagina:
 
 * E-mail di contatto:
 
-   * Questa proprietà non è obbligatoria, in quanto sarà diversa in ogni paese (o marchio, ecc.).
+   * Questa proprietà non deve essere implementata, in quanto sarà diversa in ogni paese (o marchio, ecc.).
 
 * Stile visivo chiave:
 
@@ -659,7 +682,7 @@ Se una proprietà di pagina è soggetta al rollout e, di conseguenza, all’annu
 * `cq-msm-lockable`
 
    * è applicabile agli elementi in una finestra di dialogo dell’interfaccia touch
-   * crea il simbolo di collegamento catena nella finestra di dialogo
+   * crea il simbolo del collegamento a catena nella finestra di dialogo
    * consente la modifica solo se l&#39;ereditarietà viene annullata (il collegamento a catena non funziona)
    * si applica solo al primo livello figlio della risorsa
    * **Tipo**: `String`
@@ -667,14 +690,14 @@ Se una proprietà di pagina è soggetta al rollout e, di conseguenza, all’annu
    * **Valore**: detiene il nome dell’immobile in questione (ed è paragonabile al valore dell’immobile `name`; ad esempio, vedete
       `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
-Una volta `cq-msm-lockable` definita, l&#39;interruzione/chiusura della catena interagisce con MSM nel modo seguente:
+Una volta `cq-msm-lockable` definita, l&#39;interruzione o la chiusura della catena interagisce con MSM nel modo seguente:
 
 * if the value of `cq-msm-lockable` is:
 
    * **Relativo** (ad esempio `myProperty` o `./myProperty`)
 
       * aggiungerà e rimuoverà la proprietà da `cq:propertyInheritanceCancelled`.
-   * **Assoluto** (ad esempio `/image`)
+   * **Assoluto** (ad es. `/image`)
 
       * spezzando la catena si annullerà l&#39;ereditarietà aggiungendo il `cq:LiveSyncCancelled` mixin `./image` e impostando `cq:isCancelledForChildren` su `true`.
 
