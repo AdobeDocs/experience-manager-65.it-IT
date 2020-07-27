@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
 
 # Personalizzazione delle azioni attività {#customizing-task-actions}
 
-L&#39;area di lavoro Moduli AEM consente agli utenti di personalizzare le azioni dell&#39;attività. Prima di personalizzare le azioni dell&#39;attività, accertatevi di seguire i passaggi elencati in Procedura [generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell&#39;area di lavoro di AEM Forms.
+L’area di lavoro AEM Forms consente agli utenti di personalizzare le azioni dell’attività. Prima di personalizzare le azioni dell’attività, accertatevi di seguire i passaggi elencati in Procedura [Generica per la personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md)dell’area di lavoro AEM Forms.
 
 ## Personalizzazione dello stile del testo {#customizing-text-style}
 
@@ -135,11 +138,11 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
 
 ### Menu a comparsa delle azioni elenco attività {#task-list-task-action-nbsp-pop-up-menu}
 
-1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa delle azioni dell&#39;elenco delle attività dell&#39;area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate [Creazione del codice dell&#39;area di lavoro Moduli AEM.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa Attività dell&#39;area di lavoro AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, consultate Creazione del codice dell&#39;area di lavoro dei AEM Forms [Building.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copiate /libs/ws/js/runtime/templates/task.html per `/apps/ws/js/runtime/templates/task.html`sostituire il frammento di codice seguente:
 
-   ```
+   ```html
    // Orignal code
    <div class="taskActionsPopUp">
            <!--START_TASKACTIONS-->
@@ -174,7 +177,7 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
        </div>
    ```
 
-   ```
+   ```html
    //New code
    
    <div class="taskActionsPopUp">
@@ -267,7 +270,7 @@ Per personalizzare il menu a comparsa Azioni attività Dettagli, effettuate le s
 * Copiate il file /libs/ws/js/runtime/templates/taskdetails.html nella `/apps/ws/js/runtime/templates/` cartella:
 * Incapsula il tag dell&#39;icona all&#39;interno del tag di ancoraggio invece del testo. Ad esempio, il *nuovo codice* elencato di seguito racchiude il tag dell&#39;icona all&#39;interno del tag di ancoraggio:
 
-```
+```html
 // Original code
 <div class="taskActionsPopUp">
         <!--START_ACTIONBUTTONGROUP-->
@@ -310,7 +313,7 @@ Per personalizzare il menu a comparsa Azioni attività Dettagli, effettuate le s
     </div>
 ```
 
-```
+```html
 //New code
 
 <div class="taskActionsPopUp">
