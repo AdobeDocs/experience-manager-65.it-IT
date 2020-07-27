@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -33,10 +36,12 @@ Per un modulo adattivo, l&#39;opzione di salvataggio automatico non è abilitata
 
    * **[!UICONTROL Basato su ora:]** Selezionate l’opzione per iniziare a salvare il contenuto in base a un intervallo di tempo specifico.
    * **[!UICONTROL Basato sull&#39;evento:]** Selezionate l&#39;opzione per iniziare a salvare il contenuto in base all&#39;attivazione di un evento.
+
    Quando selezionate un attivatore, la casella Configurazione strategia è abilitata. La finestra Configurazione strategia consente di:
 
    * Specificate un intervallo di tempo se selezionate l&#39;attivatore **[!UICONTROL basato su]** tempo.
    * Specificate un nome evento se selezionate l&#39;attivatore basato sull **[!UICONTROL &#39;]** evento.
+
    Potete anche creare e aggiungere all&#39;elenco una strategia personalizzata. Per informazioni dettagliate, vedere [Implementazione di una strategia personalizzata per l&#39;salvataggio automatico dei moduli](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Solo salvataggio automatico basato su tempo) Effettuate le seguenti operazioni per configurare le opzioni per l&#39;salvataggio automatico basato su tempo.
@@ -63,7 +68,7 @@ Potete implementare un evento personalizzato per attivare la funzionalità di sa
 
    Ad esempio, lo script seguente utilizza l&#39; `emailFocusChange`evento personalizzato per attivare la funzionalità di salvataggio automatico:
 
-   ```
+   ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
        guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) {
            if(data.target.name === 'Email') {
@@ -82,5 +87,5 @@ Potete implementare un evento personalizzato per attivare la funzionalità di sa
 
 1. In modalità di modifica, selezionare un componente, quindi toccare il livello ![](assets/field-level.png) campo > Contenitore **[!UICONTROL modulo]** adattivo, quindi toccare ![cmppr](assets/cmppr.png).
 1. Nelle proprietà, aprire la sezione **[!UICONTROL Base]** . Nella casella Categoria **[!UICONTROL libreria]** client, immettere il valore della proprietà category definita durante la creazione delle cartelle libreria client.
-1. Aprite la sezione Salvataggio automatico. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** , specificate un evento personalizzato già definito nella libreria client. Fai clic su **[!UICONTROL OK]**. 
+1. Aprite la sezione Salvataggio automatico. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** , specificate un evento personalizzato già definito nella libreria client. Fai clic su **[!UICONTROL OK]**.
 
