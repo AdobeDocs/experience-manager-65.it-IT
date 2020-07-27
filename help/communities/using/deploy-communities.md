@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -138,7 +138,7 @@ Ulteriori informazioni sull&#39;installazione dei bundle sono disponibili nella 
 
 #### Esempio: Bundle del connettore MySQL installato {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### Pacchetto SCORM {#scorm-package}
 
@@ -222,7 +222,7 @@ Per impostazione predefinita, la configurazione `AEM Communities Publisher Confi
 
 Pertanto, è necessario **modificare la configurazione su tutte le istanze** di pubblicazione secondarie per deselezionare la **`Primary Publisher`** casella di controllo.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 Per tutte le altre istanze di pubblicazione (secondarie) in una farm di pubblicazione:
 
@@ -266,11 +266,11 @@ Le immagini seguenti mostrano i risultati della modifica della porta da 4503 a 6
 
 #### Agente predefinito (pubblicazione) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configure-limits](../assets/configure-limits.png)
 
 #### Agente replica inversa (pubblicazione invertita) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### Servizio Tunnel sull&#39;autore {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ Per abilitare il servizio tunnel:
 * selezionare **enable **box
 * select **Save**
 
-![](/help/communities/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### Replicare la chiave Crypto {#replicate-the-crypto-key}
 
@@ -350,7 +350,7 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [aggiorna il bundle Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### Aggiornare il pacchetto Granite Crypto {#refresh-the-granite-crypto-bundle}
 
@@ -361,7 +361,7 @@ Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * seleziona **Aggiorna**
 
-![](/help/communities/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * dopo un momento, dovrebbe comparire una finestra di dialogo **Success **Success :
    `Operation completed successfully.`
