@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '4102'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Per creare una proprietà figlio:
 1. In un modello dati modulo, selezionare un oggetto modello dati e toccare **[!UICONTROL Crea proprietà]** figlio.
 1. Nella finestra di dialogo **[!UICONTROL Crea proprietà]** figlio, specificate un nome e un tipo di dati per la proprietà rispettivamente nei campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** . Facoltativamente è possibile specificare un titolo e una descrizione per la proprietà.
 1. Abilitare Computed se la proprietà è una proprietà calcolata. Il valore di una proprietà calcolata viene valutato in base a una regola o un&#39;espressione. Per ulteriori informazioni, vedere [Modificare le proprietà](#edit-properties).
-1. Se l&#39;oggetto del modello dati è associato a un&#39;origine dati, la proprietà figlia aggiunta viene automaticamente associata alla proprietà dell&#39;oggetto del modello dati padre con lo stesso nome e tipo di dati.
+1. Se l&#39;oggetto del modello dati è associato a un&#39;origine dati, la proprietà figlia aggiunta viene automaticamente associata alla proprietà dell&#39;oggetto modello dati padre con lo stesso nome e tipo di dati.
 
    Per eseguire un binding manuale di una proprietà figlia con una proprietà oggetto modello dati, toccare l&#39;icona Sfoglia accanto al campo Riferimento **** binding. Nella finestra di dialogo **[!UICONTROL Seleziona oggetto]** sono elencate tutte le proprietà dell&#39;oggetto modello dati principale. Selezionare una proprietà con cui eseguire il binding e toccare l&#39;icona del segno di spunta. È possibile selezionare solo una proprietà dello stesso tipo di dati della proprietà figlio.
 
@@ -200,7 +200,7 @@ Utilizzare l&#39;attributo request per recuperare le proprietà associate dall&#
 
 1. Includete il testo seguente nel file head.jsp:
 
-   ```
+   ```jsp
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
     request.setAttribute("paramMap",paraMap);%>
@@ -242,6 +242,7 @@ Per aggiungere un&#39;associazione:
    * Selezionare il tipo di associazione — Da uno a uno o da uno a molti.
    * Selezionare l&#39;oggetto del modello dati a cui associarsi.
    * Selezionare il servizio di lettura per leggere i dati dall&#39;oggetto modello selezionato. Viene visualizzato l&#39;argomento del servizio di lettura. Modificare l&#39;argomento, se necessario, e associarlo alla proprietà dell&#39;oggetto modello dati da associare.
+
    Nell&#39;esempio seguente, l&#39;argomento predefinito per il servizio di lettura dell&#39;oggetto modello dati Dependents è `dependentid`.
 
    ![add-Association-example](assets/add-association-example.png)
@@ -279,6 +280,7 @@ Per modificare le proprietà:
    * **Oggetto** del modello dati: Specificare i servizi di lettura e scrittura e gli argomenti di modifica.
    * **Proprietà**: Specificare il tipo, il sottotipo e il formato della proprietà. È inoltre possibile specificare se la proprietà selezionata è la chiave primaria per l&#39;oggetto modello dati.
    * **Servizio**: Specificare l&#39;oggetto del modello di input, il tipo di output e gli argomenti per il servizio. Per un servizio Get, potete specificare se deve restituire un array.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Finestra di dialogo Modifica proprietà per un servizio get
@@ -508,24 +510,24 @@ Nella tabella seguente sono elencati i vincoli per i dati di input basati sull&#
 
 In questo esempio, i dati di input vengono convalidati in base ai vincoli massimi, minimi e obbligatori definiti nel file Swagger. I dati di input soddisfano i criteri di convalida solo se l&#39;ID ordine è presente e il suo valore è compreso tra 1 e 10.
 
-```xml
-parameters: [
-{
-name: "orderId",
-in: "path",
-description: "ID of pet that needs to be fetched",
-required: true,
-type: "integer",
-maximum: 10,
-minimum: 1,
-format: "int64"
-}
-]
+```json
+   parameters: [
+   {
+   name: "orderId",
+   in: "path",
+   description: "ID of pet that needs to be fetched",
+   required: true,
+   type: "integer",
+   maximum: 10,
+   minimum: 1,
+   format: "int64"
+   }
+   ]
 ```
 
 Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log** . Ad esempio,
 
-```java
+```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
 ```
 
