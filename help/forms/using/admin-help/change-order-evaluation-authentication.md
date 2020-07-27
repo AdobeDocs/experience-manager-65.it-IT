@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Se avete configurato più provider di autenticazione, potete modificare l&#39;or
 1. Per esportare l’impostazione di configurazione corrente in un file, fate clic su Esporta e salvate il file di configurazione in un’altra posizione.
 1. Trovare il seguente nodo nel file:
 
-   ```as3
+   ```xml
     <node name="AuthSchemes">
         <map />
             <node name="CertificateAuth">
@@ -44,5 +47,5 @@ Se avete configurato più provider di autenticazione, potete modificare l&#39;or
    In `<entry key="order" value="3" />`, modificate il valore di ciascun nodo per impostare l&#39;ordine della valutazione dell&#39;autenticazione.
 
 1. Per importare il file aggiornato, in Gestione utente fate clic su Configurazione > Importa ed esporta file di configurazione.
-1. Fate clic su Sfoglia per trovare il file, fate clic su Importa, quindi su OK.
+1. Fate clic su Sfoglia per trovare il file, fate clic su Importa, quindi fate clic su OK.
 
