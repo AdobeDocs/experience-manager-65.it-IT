@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ L&#39;API **connect** accetta un gestore come argomento. Dopo che è stata creat
 
 Per creare la connessione è possibile utilizzare il seguente codice di esempio.
 
-```
+```javascript
 // Example showing how to connect to FormBridge
 window.addEventListener("FormBridgeInitialized",
                                 function(event) {
@@ -37,7 +40,7 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Assicurarsi di creare una connessione prima di includere il file formRuntime.jsp.
 
-## API Form Bridge disponibile {#available-form-bridge-api-nbsp}
+## API Form Bridge disponibile  {#available-form-bridge-api-nbsp}
 
 **getBridgeVersion()**
 
@@ -91,11 +94,11 @@ Restituisce il numero di versione della libreria Script
 
       * **pagingConfig:** Consente all&#39;utente di ignorare il comportamento predefinito del rendering solo della prima pagina. La configurazione viene sostituita come segue:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true| false>, shrinkPageDisabled: &lt;true| false> }).*
+         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
       * **LoggingConfig:** Consente all&#39;utente di ignorare il livello di registrazione, disabilitare la registrazione per una categoria o se visualizzare la console dei registri o inviare al server. La configurazione può essere ignorata e sostituita come segue:
 
-      ```JavaScript
+      ```javascript
       formBridge.registerConfig{
         "LoggerConfig" : {
       {
@@ -109,7 +112,7 @@ Restituisce il numero di versione della libreria Script
 
       * **SubmitServiceProxyConfig:** Consentire agli utenti di registrare i servizi proxy di invio e registrazione.
 
-         ```JavaScript
+         ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
          {
          "submitServiceProxy" : "`<submitServiceProxy>`",
