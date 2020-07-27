@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ## Creazione di gruppi sull&#39;autore {#creating-groups-on-author}
 
-Nell&#39;istanza di AEM Author, dalla navigazione globale:
+Nell&#39;istanza AEM Author, dalla navigazione globale:
 
 * Selezionare **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
 * Selezionate **[!UICONTROL la cartella]** di coinvolgimento per aprirla.
@@ -49,7 +52,7 @@ Queste console sono simili alla console Siti community.
 
    * **[!UICONTROL Titolo]** gruppo community: Arti.
    * **[!UICONTROL Descrizione]** gruppo community: Un gruppo padre per vari gruppi artistici.
-   * **[!UICONTROL Radice]** gruppo community: *lasciate impostato come predefinito*.
+   * **[!UICONTROL Radice]** gruppo community: *lasciate come predefinito*.
    * **[!UICONTROL Lingue aggiuntive disponibili per i gruppi]** community: utilizzate il menu a discesa per selezionare le lingue dei gruppi di community disponibili. Nel menu vengono visualizzate tutte le lingue in cui viene creato il sito community principale. Gli utenti possono selezionare una di queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti della community.
    * **[!UICONTROL Nome]** gruppo community: arti.
    * **[!UICONTROL Modello]**: a discesa per selezionare `Reference Group.`
@@ -91,7 +94,7 @@ La `groups` cartella ora contiene due gruppi (aggiorna la pagina).
 
 Prima di creare gruppi nidificati all&#39;interno del `arts` gruppo, passate il mouse sulla `arts` scheda e selezionate l&#39;icona Pubblica per pubblicarla.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![componente di collegamento](assets/liking-component.png)
 
 Attendete la conferma della pubblicazione del gruppo.
 
@@ -130,7 +133,7 @@ Per accedere ai gruppi nidificati dalla console Siti community:
 * Seleziona scheda **[!UICONTROL arti]**
 * Seleziona cartella **[!UICONTROL Gruppi]**
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configurare](assets/configure-liking.png)
 
 ## Pubblicazione di gruppi {#publishing-groups}
 
