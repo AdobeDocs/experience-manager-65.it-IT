@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -337,7 +337,7 @@ Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizz
 
 1. Fare clic con il pulsante destro del mouse sul nodo, scegliere **[!UICONTROL Crea nuovo file]** e creare un file con estensione .txt. Ad esempio, `js.txt`aggiungete il codice seguente al file .txt appena creato e fate clic su **[!UICONTROL Salva tutto]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -348,7 +348,7 @@ Per creare [una libreria](/help/sites-developing/clientlibs.md) client e utilizz
 
 1. Aggiungi il codice seguente al file util.js e fai clic su **[!UICONTROL Salva tutto]**. Lunghezza di convalida del codice per il nome del file.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________
