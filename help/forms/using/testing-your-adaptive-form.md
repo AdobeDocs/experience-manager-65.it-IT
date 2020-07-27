@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '969'
 ht-degree: 2%
 
 ---
@@ -213,8 +213,8 @@ Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fa
 
 Una suite di test può contenere più casi di test. Potete eseguire tutti i casi di test in una suite di test contemporaneamente o singolarmente. Quando eseguite un test, le icone indicano i risultati:
 
-* Un&#39;icona a forma di segno di spunta indica un test superato: ![](assets/save_icon.svg)
-* Un&#39;icona &quot;X&quot; indica un test non riuscito: ![](assets/close-icon.svg)
+* Un&#39;icona a forma di segno di spunta indica un test superato: ![save_icon](assets/save_icon.svg)
+* Un&#39;icona &quot;X&quot; indica un test non riuscito: ![close-icon](assets/close-icon.svg)
 
 1. Passa all’icona AEM > **[!UICONTROL Strumenti]**> **[!UICONTROL Operazioni]**> **[!UICONTROL Test]**
 1. Per eseguire tutti i test della suite di test:
