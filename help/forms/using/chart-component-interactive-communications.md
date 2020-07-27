@@ -2,7 +2,7 @@
 title: Utilizzo dei grafici in Interactive Communications
 seo-title: Componente grafico in Interactive Communications
 description: Utilizzando i grafici in una comunicazione interattiva, è possibile condensare grandi quantità di informazioni in un formato visivo facile da analizzare
-seo-description: In AEM Forms è disponibile un componente grafico che consente di creare grafici nella comunicazione interattiva. Questo documento descrive le configurazioni di base e di agente del componente grafico.
+seo-description: AEM Forms fornisce un componente grafico che potete usare per creare grafici nella comunicazione interattiva. Questo documento descrive le configurazioni di base e di agente del componente grafico.
 uuid: 978aa431-9a5b-4964-b37c-7bfa8c3f49b9
 content-type: reference
 topic-tags: interactive-communications
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2646'
+ht-degree: 2%
 
 ---
 
@@ -28,8 +31,8 @@ Per aggiungere e configurare un grafico in una comunicazione interattiva, effett
 1. Toccate **Componenti** dalla barra laterale della comunicazione interattiva.
 1. Trascinare il componente **Grafico** su uno dei seguenti componenti:
 
-   * Canale di stampa: Area di destinazione o campo immagine
-   * Canale Web: Area Pannello o Target
+   * Canale di stampa: Area Target o campo immagine
+   * Canale Web: Pannello o area Target
 
 1. Toccate il componente grafico nell’editor delle comunicazioni interattive e selezionate **[!UICONTROL Configura (]** configura_icona ![](assets/configure_icon.png)) dalla barra degli strumenti del componente.
 
@@ -157,8 +160,8 @@ Configura le seguenti proprietà durante la creazione di grafici per la stampa e
    <td>Configurazioni specifiche per i grafici</td>
    <td><p>Oltre alle configurazioni comuni, sono disponibili le seguenti configurazioni specifiche per i grafici:</p>
     <ul>
-     <li><strong>Mostra legenda: Se abilitata, </strong>mostra una legenda per il grafico a torta o a torta.</li>
-     <li><strong>Posizione della legenda: Specifica </strong>la posizione della legenda rispetto al grafico. Le opzioni disponibili sono Destra, Sinistra, In alto e In basso. Si consiglia di utilizzare la legenda sul lato destro del canale di stampa.</li>
+     <li><strong>Mostra legenda: </strong>Mostra una legenda per il grafico a torta o a torta quando è attivato.</li>
+     <li><strong>Posizione della legenda: </strong>Specifica la posizione della legenda rispetto al grafico. Le opzioni disponibili sono Destra, Sinistra, In alto e In basso. Si consiglia di utilizzare la legenda sul lato destro del canale di stampa.</li>
      <li><strong>Raggio</strong>interno: Disponibile per i grafici ad anello per specificare il raggio (in pixel) del cerchio interno nel grafico.</li>
      <li><strong>Colore</strong>linea: Disponibile per i grafici Linea, Linea e Punto e Area, per specificare il colore della linea nel grafico.</li>
      <li><strong>Colore</strong>punto: Disponibile per i grafici Punto e Linea e Punto per specificare il colore dei punti nel grafico.<br /> </li>
@@ -166,12 +169,12 @@ Configura le seguenti proprietà durante la creazione di grafici per la stampa e
      <li><strong>Punto di riferimento &gt; Tipo di binding: </strong>Disponibile per i grafici quadranti per<strong> </strong>specificare il tipo di binding per il punto di riferimento. Utilizzare la proprietà statica dell'oggetto testo o modello dati per definire il valore per il punto di riferimento.</li>
      <li><strong>Punto di riferimento &gt; asse X: </strong>Disponibile per i grafici quadranti se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di binding per specificare il valore dell'asse X per il punto di riferimento.</code></li>
      <li><strong>Punto di riferimento &gt; asse Y: </strong>Disponibile per i grafici quadranti se si seleziona <span class="uicontrol">Statico</code> dall'elenco a discesa Tipo di binding per specificare il valore dell'asse Y per il punto di riferimento.</code></li>
-     <li><strong>Punto di riferimento &gt; Oggetto del modello dati per le serie: </strong>Disponibile per più grafici Quadrante serie se si seleziona Oggetto <span class="uicontrol">modello</code> dati dall'elenco a discesa Tipo di binding. Definisci le proprietà oggetto modello dati del modulo per identificare la serie per il punto di riferimento. </code></li>
-     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per le serie: </strong>Disponibile per più grafici Quadrante serie se si seleziona Oggetto <span class="uicontrol">modello</code> dati dall'elenco a discesa Tipo di binding. Utilizzare la proprietà dell'oggetto modello dati modulo per le serie e il valore definito in questo campo per identificare le serie per il punto di riferimento.</code></li>
+     <li><strong>Punto di riferimento &gt; Oggetto del modello dati per le serie: </strong>Disponibile per i grafici Quadrante con più serie se si seleziona Oggetto <span class="uicontrol">modello</code> dati dall'elenco a discesa Tipo di binding. Definisci le proprietà oggetto modello dati del modulo per identificare la serie per il punto di riferimento. </code></li>
+     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per le serie: </strong>Disponibile per i grafici Quadrante con più serie se si seleziona Oggetto <span class="uicontrol">modello</code> dati dall'elenco a discesa Tipo di binding. Utilizzare la proprietà dell'oggetto modello dati modulo per le serie e il valore definito in questo campo per identificare le serie per il punto di riferimento.</code></li>
      <li><strong>Punto di riferimento &gt; Oggetto del modello dati per il punto di riferimento: </strong>Disponibile per i grafici quadranti se si seleziona Oggetto <span class="uicontrol">modello</code> dati dall'elenco a discesa Tipo di binding. Definire una proprietà dell'oggetto modello dati modulo di pari livello con le proprietà tracciate sull'asse X e sull'asse Y. Inoltre, per più serie, definire una proprietà dell'oggetto modello dati che sia un'entità figlia della proprietà dell'oggetto modello dati definita per la serie.</code></li>
-     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici quadranti se si seleziona Oggetto <span class="uicontrol">modello</code> dati dall'elenco a discesa Tipo di binding. Utilizzare la proprietà dell'oggetto modello dati modulo per il punto di riferimento e il valore definito in questo campo per identificare il punto di riferimento per il grafico.<br /> Etichette <strong>quadranti &gt; In alto a sinistra:</strong> Disponibile per i grafici Quadrante per specificare il nome del quadrante in alto a sinistra.</code></li>
+     <li><strong>Punto di riferimento &gt; Valore oggetto modello dati per punto di riferimento: </strong>Disponibile per i grafici quadranti se si seleziona Oggetto <span class="uicontrol">modello</code> dati dall'elenco a discesa Tipo di binding. Utilizzare la proprietà dell'oggetto modello dati modulo per il punto di riferimento e il valore definito in questo campo per identificare il punto di riferimento per il grafico.<br /> <strong>Etichette quadranti &gt; In alto a sinistra:</strong> Disponibile per i grafici Quadrante per specificare il nome del quadrante in alto a sinistra.</code></li>
      <li><strong>Etichette quadranti &gt; In alto a destra:</strong> Disponibile per i grafici Quadrante per specificare il nome del quadrante in alto a destra.</li>
-     <li><strong>Etichette quadranti &gt; In basso a destra: </strong>Disponibile per i grafici Quadrante per specificare il nome del quadrante in basso a destra.</li>
+     <li><strong>Etichette quadranti &gt; In basso a destra: </strong>Disponibile per i grafici Quadrante per specificare il nome del quadrante inferiore destro.</li>
      <li><strong>Etichette quadranti &gt; In basso a sinistra: </strong>Disponibile per i grafici Quadrante per specificare il nome del quadrante in basso a sinistra.</li>
     </ul> </td>
    <td>Stampa e Web</td>
@@ -211,9 +214,9 @@ Per ulteriori informazioni, vedere [Esempio 2: Applicazione delle funzioni Somma
 
 Oltre a utilizzare le funzioni predefinite nei grafici, è possibile scrivere funzioni personalizzate in JavaScript™ e renderle disponibili nell&#39;elenco delle funzioni del componente Grafico per il canale Web.
 
-Una funzione utilizza una matrice o più valori e un nome di categoria come input e restituisce un valore. Esempio:
+Una funzione utilizza una matrice o più valori e un nome di categoria come input e restituisce un valore. Ad esempio:
 
-```
+```javascript
 Multiply(valueArray, category) {
  var val = 1;
  _.each(valueArray, function(value) {
