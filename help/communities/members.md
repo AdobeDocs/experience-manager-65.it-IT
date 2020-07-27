@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Panoramica {#overview}
 
-Le funzioni di AEM Communities spesso richiedono la registrazione e l&#39;accesso dei visitatori del sito prima di partecipare a una community nell&#39;ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell’ambiente di pubblicazione e sono comunemente denominati *membri* per distinguerli dagli *utenti* registrati nell’ambiente di authoring.
+Le funzioni AEM Communities spesso richiedono che i visitatori del sito siano registrati e connessi prima di partecipare a una community nell’ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell’ambiente di pubblicazione e sono comunemente denominati *membri* per distinguerli dagli *utenti* registrati nell’ambiente di authoring.
 
 ### Membri (utenti) in Pubblica {#members-users-on-publish}
 
@@ -48,19 +51,22 @@ Nell’ambiente di authoring, per accedere alla console Membri per la gestione d
 >Non sarà possibile utilizzare la console Membri se il servizio [](deploy-communities.md#tunnel-service-on-author) tunnel non è abilitato.
 
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![member-console1](assets/member-console1.png)
 
 ### Ricerca {#search-features}
 
 Selezionate l’icona del pannello laterale a sinistra dell’ `Members` intestazione per aprire il pannello laterale di ricerca.
 
-![chlimage_1-120](assets/chlimage_1-120.png) ![chlimage_1-121](assets/chlimage_1-121.png)
+![](assets/leftpanel-icon.png)
+
+
+![member-console2](assets/member-console2.png)
 
 Selezionate l’icona di ricerca a sinistra dell’ `Members` intestazione per chiudere il pannello di ricerca.
 
 ### Statistiche membri {#member-statistics}
 
-Le colonne che vengono visualizzate `Views`, `Posts`e `Follows` vengono aggiornate quando l&#39;utente è membro di uno o più siti della community con Adobe Analytics `Likes` abilitato [](sites-console.md#analytics).
+Le colonne che vengono visualizzate `Views`, `Posts`e `Follows` vengono aggiornate quando l&#39;utente è membro di uno o più siti della community con Adobe  Analytics `Likes` abilitato [](sites-console.md#analytics).
 
 ### Esporta CSV {#export-csv}
 
@@ -74,7 +80,7 @@ Le intestazioni di colonna sono
 
 Selezionate questa opzione `Create Member` per creare un utente nell’ambiente di pubblicazione.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![create-member1](assets/create-member1.png)
 
 ### GENERALE - Dettagli membro {#general-member-details}
 
@@ -117,6 +123,7 @@ In Impostazioni account è possibile per un amministratore della community:
    * VietatoUn membro non è in grado di effettuare l&#39;accesso, né di visualizzarne le pagine o di partecipare ad attività che richiedono l&#39;accesso. Possono ancora visitare in forma anonima un sito di community aperto.
 
    * Non vietatoUn membro ha accesso completo al sito della community.
+
    Default is `Not Banned`.
 
 * **[!UICONTROL Limiti per contributi]**
@@ -147,7 +154,7 @@ Il `BADGES` pannello consente di assegnare manualmente i simboli e revocarli. I 
 
 Vedere anche [Punteggio e Badge](implementing-scoring.md).
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![create-member2](assets/create-member2.png)
 
 * **[!UICONTROL Aggiungi simboli]**
    * Inizia a digitare per selezionare uno dei simboli [disponibili](badges.md). Dopo aver selezionato un contrassegno, scegliete ogni sito, o tutti i siti, su cui deve essere visualizzato il contrassegno insieme all&#39;avatar del membro.
@@ -173,7 +180,7 @@ Per accedere alla console Gruppi:
 
 Selezionate questa opzione `Add Group` per creare un gruppo nell’ambiente di pubblicazione.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![group-console1](assets/group-console1.png)
 
 I campi necessari per creare un nuovo gruppo di membri lato pubblicazione sono:
 
