@@ -1,8 +1,8 @@
 ---
 title: Report personalizzati in Process Reporting
 seo-title: Report personalizzati in Process Reporting
-description: Puoi creare rapporti personalizzati e aggiungere tali rapporti ai moduli AEM nell’interfaccia utente di generazione rapporti sui processi JEE.
-seo-description: Puoi creare rapporti personalizzati e aggiungere tali rapporti ai moduli AEM nell’interfaccia utente di generazione rapporti sui processi JEE.
+description: Puoi creare rapporti personalizzati e aggiungere tali rapporti ai AEM Forms nell'interfaccia utente di reporting dei processi JEE.
+seo-description: Puoi creare rapporti personalizzati e aggiungere tali rapporti ai AEM Forms nell'interfaccia utente di reporting dei processi JEE.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -45,20 +48,20 @@ L’interfaccia REST di CRX QueryBuilder espone la funzionalità di Asset Share 
    >
    >In ogni query, il parametro path punta alla posizione di memorizzazione crx e i caratteri vengono preceduti in base allo standard URL.
 
-## Creazione di un servizio mediante l&#39;API Query Builder {#creating-a-service-using-query-builder-api-nbsp}
+## Creazione di un servizio mediante l&#39;API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
 Il prerequisito per la creazione di un servizio mediante l&#39;API Query Builder è la [creazione e la distribuzione del bundle](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) CQ OSGI e l&#39; [utilizzo dell&#39;API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)Query Builder.
 
 1. Create un servizio OSGi con le relative annotazioni. Per accedere a QueryBuilder utilizzare:
 
-   ```
+   ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
 1. Create un gruppo di predicati. Il codice per creare un gruppo di predicati è:
 
-   ```
+   ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
@@ -340,7 +343,7 @@ public class PeriodicProcessVolume {
 
 Il `pom.xml`file di esempio da creare sopra il servizio è:
 
-```java
+```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -420,7 +423,7 @@ Il `pom.xml`file di esempio da creare sopra il servizio è:
 </project>
 ```
 
-## Creazione di un’interfaccia utente separata {#creating-a-separate-ui-nbsp}
+## Creazione di un’interfaccia utente separata  {#creating-a-separate-ui-nbsp}
 
 I prerequisiti per la creazione di un’interfaccia utente separata per la visualizzazione dei risultati sono [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornire i privilegi [di](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accesso appropriati.
 
@@ -432,7 +435,7 @@ I prerequisiti per la creazione di un’interfaccia utente separata per la visua
 
    Un nodo di esempio con file JSP e CSS
 
-1. Aggiungi il codice javascript per avviare una chiamata Ajax all&#39;API REST querybuilder o al tuo servizio. Inoltre, aggiungete gli argomenti appropriati.
+1. Aggiungete il codice JavaScript per avviare una chiamata Ajax all&#39;API REST querybuilder o al vostro servizio. Inoltre, aggiungete gli argomenti appropriati.
 
 1. Aggiungete un gestore di risultati appropriato alla chiamata Ajax per analizzare e visualizzare il risultato. È possibile analizzare il risultato in più formati (json/csv/user defined) e visualizzarlo in una tabella o in altri moduli.
 
@@ -440,7 +443,7 @@ I prerequisiti per la creazione di un’interfaccia utente separata per la visua
 
 Un esempio di codice JSP che utilizza sia OSGi Service che QueryBuilder API è il seguente:
 
-```
+```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integrazione dell&#39;interfaccia utente del rapporto nell&#39;interfaccia utente di Process Reporting esistente {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integrazione dell&#39;interfaccia utente del rapporto nell&#39;interfaccia utente di Process Reporting esistente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 I prerequisiti per la creazione di un’interfaccia utente separata per la visualizzazione dei risultati sono [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornire i privilegi [di](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accesso appropriati.
 
@@ -640,6 +643,7 @@ I prerequisiti per la creazione di un’interfaccia utente separata per la visua
    * **link**- Specifica il collegamento relativo al renderer dell&#39;interfaccia utente separata. Il collegamento viene creato al punto 1.
    * **description**- Specifica la descrizione di una riga del report. È possibile lasciare vuoto il campo di descrizione.
    * **icon**- Specifica l&#39;immagine da rappresentare pittoricamente il rapporto. È possibile lasciare vuoto il campo dell&#39;icona.
+
    ![Proprietà del nodo ](assets/node_properties_new.png)
 
    Proprietà del nodo
