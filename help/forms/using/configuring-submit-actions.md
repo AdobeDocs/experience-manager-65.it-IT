@@ -1,15 +1,18 @@
 ---
 title: Configurazione dell’azione Invia
 seo-title: Configurazione dell’azione Invia
-description: AEM Forms consente di configurare un’azione di invio per definire il modo in cui un modulo adattivo viene elaborato dopo l’invio. È possibile utilizzare azioni di invio integrate o scrivere azioni personalizzate da zero.
-seo-description: AEM Forms consente di configurare un’azione di invio per definire il modo in cui un modulo adattivo viene elaborato dopo l’invio. È possibile utilizzare azioni di invio integrate o scrivere azioni personalizzate da zero.
+description: I AEM Forms consentono di configurare un'azione di invio per definire il modo in cui un modulo adattivo viene elaborato dopo l'invio. È possibile utilizzare azioni di invio integrate o scrivere azioni personalizzate da zero.
+seo-description: I AEM Forms consentono di configurare un'azione di invio per definire il modo in cui un modulo adattivo viene elaborato dopo l'invio. È possibile utilizzare azioni di invio integrate o scrivere azioni personalizzate da zero.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +71,7 @@ Configurazione dell&#39;azione di invio dell&#39;endpoint rimanente
 >[!NOTE]
 Per trasmettere i campi come parametri in un URL REST, tutti i campi devono avere nomi di elementi diversi, anche se i campi sono posizionati in pannelli diversi.
 
-### Invia i dati inviati a una risorsa o a un punto finale di riposo esterno {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Invia i dati inviati a una risorsa o a un punto finale di riposo esterno  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Utilizzare l&#39;azione **Invia a endpoint** REST per inviare i dati inviati a un URL rimanente. L&#39;URL può essere di un server interno (il server su cui viene eseguito il rendering del modulo) o di un server esterno.
 
@@ -107,7 +110,7 @@ Questa azione di invio è disponibile per i moduli adattivi basati su XFA e per 
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
-L&#39;opzione di invio del flusso di lavoro **** Invia a Forms invia un file XML di dati ed eventuali allegati a un processo Adobe LiveCycle o AEM Forms on JEE esistente.
+L&#39;opzione di invio del flusso di lavoro **** Invia a Forms invia un file xml di dati ed eventuali allegati a un eventuale processo Adobe LiveCycle o a AEM Forms esistenti in un processo JEE.
 
 Per informazioni su come configurare l&#39;azione di invio del flusso di lavoro Invia ai moduli, vedere [Invio ed elaborazione dei dati del modulo mediante i flussi di lavoro](../../forms/using/submit-form-data-livecycle-process.md)dei moduli.
 
@@ -117,7 +120,7 @@ L&#39;azione di invio **Invia utilizzando il modello** dati del modulo scrive i 
 
 È inoltre possibile inviare all&#39;origine dati un allegato del modulo utilizzando un modello dati del modulo e un documento record (DoR).
 
-Per informazioni sul modello di dati del modulo, consultate Integrazione [dei dati in](../../forms/using/data-integration.md)AEM Forms.
+Per informazioni sul modello dati del modulo, vedere Integrazione dei dati [AEM Forms](../../forms/using/data-integration.md).
 
 ## Azione di invio del portale Forms {#forms-portal-submit-action}
 
@@ -133,7 +136,7 @@ Prima di usare l’azione di invio **Richiama un flusso di lavoro** AEM, [config
 
 ## Ripristino lato server nel modulo adattivo {#server-side-revalidation-in-adaptive-form}
 
-In genere, in qualsiasi sistema di acquisizione dei dati online, gli sviluppatori inseriscono alcune convalide javascript sul lato client per applicare alcune regole aziendali. Tuttavia, nei browser più recenti, gli utenti finali hanno modo di bypassare tali convalide e di effettuare manualmente gli invii utilizzando varie tecniche, come ad esempio Web Browser DevTools Console. Tali tecniche sono valida anche per i moduli adattivi. Gli sviluppatori di moduli possono creare diversi logici di convalida, ma tecnicamente gli utenti finali possono ignorare tali logici di convalida e inviare al server dati non validi. Dati non validi potrebbero interrompere le regole aziendali applicate dall&#39;autore di un modulo.
+In genere, in qualsiasi sistema di acquisizione dei dati online, gli sviluppatori inseriscono alcune convalide JavaScript sul lato client per applicare alcune regole aziendali. Tuttavia, nei browser più recenti, gli utenti finali hanno modo di bypassare tali convalide e di effettuare manualmente gli invii utilizzando varie tecniche, come ad esempio Web Browser DevTools Console. Tali tecniche sono valida anche per i moduli adattivi. Gli sviluppatori di moduli possono creare diversi logici di convalida, ma tecnicamente gli utenti finali possono ignorare tali logici di convalida e inviare al server dati non validi. Dati non validi potrebbero interrompere le regole aziendali applicate dall&#39;autore di un modulo.
 
 La funzione di ripristino lato server consente inoltre di eseguire le convalide fornite da un autore di moduli adattivi durante la progettazione di un modulo adattivo sul server. Impedisce qualsiasi compromesso nell&#39;invio di dati e nelle violazioni delle regole aziendali rappresentate in termini di convalida dei moduli.
 
