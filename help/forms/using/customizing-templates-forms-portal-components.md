@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Conoscenza di base di HTML e CSS
 
 ## Panoramica {#overview}
 
-L&#39;interfaccia utente di AEM Forms consente di aggiungere metadati a qualsiasi modulo. I metadati personalizzati possono migliorare l&#39;esperienza utente durante l&#39;elencazione e la ricerca di moduli all&#39;interno dell&#39;organizzazione.
+L&#39;interfaccia utente AEM Forms consente di aggiungere metadati a qualsiasi modulo. I metadati personalizzati possono migliorare l&#39;esperienza utente durante l&#39;elencazione e la ricerca di moduli all&#39;interno dell&#39;organizzazione.
 
 Forms Portal consente di utilizzare i metadati personalizzati negli elenchi dei moduli. Durante la creazione di modelli personalizzati per le risorse, potete modificarne il layout e utilizzare i metadati personalizzati con il set di stili CSS.
 
@@ -43,6 +46,7 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
       * Sezione Bozze: /libs/fd/fp/draftTemplate
       * Sezione Invii: /libs/fd/fp/submitTemplate
    * Collegamento componente: /libs/fd/fp/linkTemplate
+
    Aggiungete un titolo da visualizzare durante la selezione dei modelli di layout.
 
    >[!NOTE]
@@ -59,7 +63,7 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
 
 Di seguito è riportato un esempio di implementazione di un modello personalizzato in cui Forms Portal acquisisce un layout personalizzato della scheda governativa Geometrixx per il componente Ricerca e verifica.
 
-```mxml
+```xml
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
@@ -126,7 +130,7 @@ Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valo
 
 * **Titolo:** Titolo del modulo
 * **formUrl**: URL per il rendering del modulo come HTML
-* **target**: Attributo di destinazione del collegamento. I valori validi sono &quot;_blank&quot; e &quot;_self.&quot;
+* **target**: Attributo Target del collegamento. I valori validi sono &quot;_blank&quot; e &quot;_self.&quot;
 * **linkText**: Didascalia collegamento
 
 ### Bozze e invii, componente {#drafts-amp-submissions-component}
