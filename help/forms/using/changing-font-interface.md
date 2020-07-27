@@ -11,16 +11,19 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 1%
 
 ---
 
 
 # Modifica del font nell&#39;interfaccia{#changing-the-font-on-the-interface}
 
-È possibile modificare il font visualizzato nell&#39;area di lavoro Moduli AEM. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i font nell&#39;interfaccia utente in modo selettivo.
+Potete modificare il font visualizzato nell&#39;area di lavoro AEM Forms. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i font nell&#39;interfaccia utente in modo selettivo.
 
-Seguite i passaggi [Generici per la personalizzazione](../../forms/using/generic-steps-html-workspace-customization.md) dell&#39;area di lavoro AEM Forms e, a seconda dei requisiti, seguite i passaggi per personalizzare CSS, HTML o entrambi.
+Attenetevi alla procedura [Generico per la personalizzazione](../../forms/using/generic-steps-html-workspace-customization.md) dell’area di lavoro AEM Forms e, a seconda dei requisiti, seguite i passaggi per personalizzare CSS, HTML o entrambi.
 
 1. Modificate o aggiungete la famiglia di font in uno stile esistente.
 1. Modificate o aggiungete l&#39;agganciamento font-family per l&#39;elemento HTML.
@@ -43,7 +46,7 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
 
       Aggiornate il file /apps/ws/js/runtime/templates/appnavigation.html come segue:
 
-      ```
+      ```jsp
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
       <li class="todo"><a href="#/todo" title="<%= $.t('index.header.topnav.todo.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.todo.name')%></a></li>
       <li class="track"><a href="#/tracking" title="<%= $.t('index.header.topnav.tracking.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.tracking.name')%></a></li>
@@ -62,7 +65,7 @@ Ad esempio, per modificare il font del testo di ancoraggio della barra di naviga
 
       Per aggiungere la famiglia di font in linea per l&#39;elemento HTML, aggiungete quanto segue nel file appnavigation.html in /apps/ws/js/runtime/templates.
 
-      ```css
+      ```jsp
       <div id="topnav" class="myNewFontStyle">
           <ul>
               <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
