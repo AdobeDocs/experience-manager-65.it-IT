@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Per impostazione predefinita, PDF Generator può convertire un solo documento Op
 
 Ogni istanza di OpenOffice o PDFMaker viene avviata utilizzando un account utente separato. Ogni account utente aggiunto deve essere un utente valido con privilegi amministrativi nel computer del server dei moduli. In un ambiente cluster, lo stesso set di utenti deve essere valido per tutti i nodi del cluster.
 
-Nella pagina Account utente della console di amministrazione potete specificare gli account utente da utilizzare per le conversioni di file multithread. Potete aggiungere account, eliminarli o cambiare le password dell&#39;account. Se PDF Generator è in esecuzione su Windows Server 2003 o Windows Server 2008, aggiungere almeno tre account utente con diritti di amministratore.
+Nella pagina Account utente della console di amministrazione, potete specificare gli account utente da utilizzare per le conversioni di file multithread. Potete aggiungere account, eliminarli o cambiare le password dell&#39;account. Se PDF Generator è in esecuzione su Windows Server 2003 o Windows Server 2008, aggiungere almeno tre account utente con diritti di amministratore.
 
 Quando si aggiungono utenti per OpenOffice, Microsoft Word o Microsoft PowerPoint su Windows Server 2003 o 2008, oppure per OpenOffice su Linux o Sun™ Solaris™, le finestre di dialogo di attivazione iniziali vengono chiuse per tutti gli utenti.
 
@@ -43,13 +46,13 @@ In un sistema operativo Windows, gli account utente amministratore utilizzati pe
 
 1. Nel menu Start di Windows, fate clic su Esegui e immettete gpedit.msc.
 1. Fate clic su Criteri computer locale > Configurazione computer > Impostazioni di Windows > Impostazioni di protezione > Criteri locali > Assegnazione diritti utente. Modificate il criterio *Sostituisci token* a livello di processo per includere il gruppo Amministratori.
-1. Aggiungete l&#39;utente alla voce Sostituisci token a livello di processo.
+1. Aggiungete l&#39;utente alla voce Replace a Process Level Token (Sostituisci token a livello di processo).
 
 ### Configurazione aggiuntiva necessaria per OpenOffice, Microsoft Word e Microsoft PowerPoint in Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
 
 Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsoft PowerPoint, disattivate l&#39;account utente per ogni utente aggiunto.
 
-1. Fate clic su Pannello di controllo > Account utente > Attiva o disattiva Controllo account utente.
+1. Fate clic su Pannello di controllo Campaign > Account utente > Attiva o disattiva Controllo account utente.
 1. Deselezionate la casella &quot;Usa controllo account utente (UAC) per proteggere il computer&quot; e fate clic su OK.
 1. Riavviare il computer per rendere effettive le impostazioni.
 
@@ -57,9 +60,9 @@ Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsof
 
 1. Aggiungete account utente. Consultate [Aggiungere un account](enabling-multi-threaded-file-conversions.md#add-a-user-account)utente.
 1. Quindi, verranno apportate modifiche al file /etc/sudoers. L&#39;autorizzazione predefinita per questo file è 440. Cambia l&#39;autorizzazione per questo file in scrivibile.
-1. Aggiungere voci per altri utenti (diversi dall&#39;amministratore che esegue il server moduli) nel file /etc/sudoers. Ad esempio, se i moduli AEM vengono eseguiti come utente denominato lcadm e server denominato myhost e si desidera rappresentare user1 e user2, aggiungere le seguenti voci a /etc/sudoers:
+1. Aggiungere voci per altri utenti (diversi dall&#39;amministratore che esegue il server dei moduli) nel file /etc/sudoers. Ad esempio, se i moduli AEM vengono eseguiti come utente denominato lcadm e server denominato myhost e si desidera rappresentare user1 e user2, aggiungere le seguenti voci a /etc/sudoers:
 
-   ```as3
+   ```shell
     lcadm myhost=(user1) NOPASSWD: ALL
     lcadm myhost=(user2) NOPASSWD: ALL
    ```
@@ -68,11 +71,11 @@ Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsof
 
    >[!NOTE]
    >
-   >Assicurarsi di aver assegnato i ruoli utente di sistema e PDFG a &quot;user1&quot; e &quot;user2&quot;. Per assegnare il ruolo PDFG a un utente, consultate [Aggiunta di un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Assicurarsi di aver assegnato i ruoli utente utente di sistema e PDFG a &quot;user1&quot; e &quot;user2&quot;. Per assegnare il ruolo PDFG a un utente, consultate [Aggiunta di un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Anche nel file /etc/sudoers, individuare e commentare questa riga aggiungendo un simbolo cancelletto (#) all&#39;inizio della riga:
 
-   ```as3
+   ```shell
    Defaults requiretty
    ```
 
@@ -89,7 +92,7 @@ Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsof
 
 >[!NOTE]
 >
->OpenOffice deve essere installato in una directory accessibile a tutti gli utenti PDFG. È possibile verificare questa situazione accedendo come utente PDFG e verificando se è possibile avviare OpenOffice senza problemi.
+>OpenOffice deve essere installato in una directory accessibile a tutti gli utenti PDFG. È possibile verificare questa situazione effettuando l&#39;accesso come utente PDFG e verificando se è possibile avviare OpenOffice senza problemi.
 
 ### Aggiunta di un account utente {#add-a-user-account}
 
