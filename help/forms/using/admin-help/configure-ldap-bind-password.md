@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ Per evitare rischi di protezione, il campo password di binding nel file di confi
 1. Per esportare l’impostazione di configurazione corrente in un file, fate clic su Esporta e salvate il file di configurazione in un’altra posizione.
 1. Nel file, individuare il `Domains` > *[Nome]* dominio > `DirectoryConfigs` > `LDAPGroupConfig` nodo. Di seguito è riportato un esempio:
 
-   ```as3
+   ```xml
     <node name="LDAPGroupConfig">
         <map>
             <entry key="bindanonymously" value="false" />
@@ -38,7 +41,7 @@ Per evitare rischi di protezione, il campo password di binding nel file di confi
 
 1. Nel file, individuare il `Domains` > *[Nome]* dominio > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nodo. Di seguito è riportato un esempio:
 
-   ```as3
+   ```xml
     <node name="LDAPUserConfig">
         <map>
             <entry key="bindanonymously" value="false" />
@@ -52,5 +55,5 @@ Per evitare rischi di protezione, il campo password di binding nel file di confi
    Digitare un valore per `bindpassword` e salvare le modifiche.
 
 1. Per importare il file aggiornato, in Gestione utente fate clic su Configurazione > Importa ed esporta file di configurazione.
-1. Fate clic su Sfoglia per trovare il file, fate clic su Importa, quindi su OK.
+1. Fate clic su Sfoglia per trovare il file, fate clic su Importa, quindi fate clic su OK.
 
