@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -67,7 +67,7 @@ Nell’ambiente di authoring, per accedere alla console Moderazione
 
 ## Interfaccia utente della console di moderazione {#moderation-console-ui}
 
-Se si esclude la barra di navigazione a sinistra (che viene visualizzata sull’autore, ma non sulla pubblicazione), l’interfaccia utente di moderazione presenta le seguenti aree principali:
+Se si esclude la barra di navigazione a sinistra (visualizzata sull’autore, ma non sulla pubblicazione), l’interfaccia utente di moderazione presenta le seguenti aree principali:
 
 * **[Barra di navigazione superiore](#top-navigation-bar)**
 * **[Barra degli strumenti](#toolbar)**
@@ -112,7 +112,7 @@ L&#39;area contenuto contiene informazioni per gli UGC inviati:
 
 ### Barra Filtro {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![open-filterrail](assets/open-filterrail.png)
 
 L’icona del pannello laterale apre la barra laterale del filtro. La barra laterale del filtro, visualizzata a sinistra dell&#39;area contenuto, fornisce diversi filtri, ciascuno dei quali ha un effetto immediato sull&#39;UGC di riferimento visualizzato nell&#39;area contenuto.
 
@@ -141,17 +141,17 @@ Percorso contenuto limita l&#39;UGC di riferimento visualizzato ai post inseriti
 
 La ricerca del testo limita l’UGC di riferimento visualizzato ai post che contengono il testo immesso.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![text-search](assets/text-search.png)
 
 #### Sito {#site}
 
 Il sito limita l&#39;UGC di riferimento visualizzato ai post a siti community selezionati. Se non sono selezionati siti, vengono visualizzati tutti i riferimenti a UGC.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![site-panel](assets/site-panel.png)
 
 >[!NOTE]
 >
->Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, compresi i siti non creati con la procedura guidata [di creazione del](/help/communities/sites-console.md)sito, ad esempio gli esempi Geometrixx.
+>Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, compresi i siti non creati con la procedura guidata [di creazione del](/help/communities/sites-console.md)sito, ad esempio gli esempi di Geometrixx.
 >
 >Quando l&#39;accesso alla console di moderazione in blocco viene eseguito in seguito alla pubblicazione da parte di un membro della community affidabile, vengono visualizzati solo i riferimenti a UGC creati per i siti della community in cui il membro è autorizzato a moderare e possono essere filtrati con il filtro Sito.
 
@@ -189,8 +189,7 @@ Per aggiungere ulteriori risorse da filtrare:
    * Ad esempio, per filtrare i componenti per il voto inclusi, immettere:
 
       `Voting=social/tally/components/hbs/voting`
-
-![chlimage_1-215](assets/chlimage_1-215.png)
+   ![tipo di contenuto aggiuntivo](assets/additional-contenttype.png)
 
 * Seleziona Salva.
 * Aggiornare la console Community - Moderazione.
@@ -216,25 +215,25 @@ Contrassegno limita l’UGC di riferimento visualizzato ai post contrassegnati o
 
 Una volta che un contenuto è stato contrassegnato, rimane contrassegnato fino a quando non si annulla l’evidenziazione di quel singolo contenuto, selezionando nuovamente il pulsante **Contrassegna** . Tenete presente che non esistono livelli di contrassegno, ad esempio importanti o successivi.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![contraddittorio](assets/flagging.png)
 
 #### Membri {#members}
 
 I membri limitano l&#39;UGC di riferimento visualizzato a UGC pubblicato dal nome membro immesso.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![membri](assets/members.png)
 
 #### Pubblicato nell&#39;ultimo/a {#posted-in-the-last}
 
 Pubblicato nell’ultimo limita la visualizzazione dell’UGC di riferimento ai post effettuati nell’ultima ora, giorno, settimana, mese o anno.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![postlast](assets/posted-last.png)
 
 #### Sentimento {#sentiment}
 
 [Il sentimento](/help/communities/moderate-ugc.md#sentiment) limita l&#39;UGC di riferimento visualizzato ai post con un valore sentimentale positivo, negativo o neutro.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![sentimento](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
@@ -271,7 +270,7 @@ Per esporre i filtri personalizzati sui siti comunitari esistenti:
 
 [Le azioni](/help/communities/moderate-ugc.md#moderation-actions) di moderazione possono essere eseguite su una o più selezioni effettuate nell&#39;area contenuto o durante la visualizzazione dei dettagli del contenuto.
 
-Per moderare in massa i post, nell&#39;area del contenuto fate clic sull&#39;icona Seleziona ( ![selezione](assets/selecticon.png)) su un post, che viene visualizzata quando passate il puntatore del mouse (desktop) o tenendo premuto un dito sul post (mobile). A questo scopo, potete passare alla modalità multi-selezione e ora selezionare i post successivi da moderare in massa semplicemente facendo clic su di essi. Utilizzare i pulsanti visualizzati sulla barra degli strumenti per eseguire azioni di moderazione sui post selezionati. Tutte le azioni richiederanno la conferma.
+Per moderare in massa i post, nell&#39;area del contenuto fate clic sull&#39;icona Seleziona (![selezione](assets/selecticon.png)) su un post, che viene visualizzata quando passate il puntatore del mouse (desktop) o tenendo premuto un dito sul post (mobile). A questo scopo, potete passare alla modalità multi-selezione e ora selezionare i post successivi da moderare in massa semplicemente facendo clic su di essi. Utilizzare i pulsanti visualizzati sulla barra degli strumenti per eseguire azioni di moderazione sui post selezionati. Tutte le azioni richiederanno la conferma.
 
 Per moderare un singolo post nell&#39;area contenuto, posizionate il puntatore del mouse (desktop) o tenete premuto un dito sul post (mobile) in modo che sul post figurino dei pulsanti. Quando si utilizza un singolo dettaglio di contenuto, viene richiesta la conferma solo per un&#39;azione di eliminazione.
 
@@ -318,19 +317,19 @@ Presente nella vista a schede sopra le icone delle azioni di moderazione, il tes
 
 #### Risposta {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![response](assets/reply.png)
 
 Quando si lavora con un singolo post, viene visualizzata un&#39;icona Rispondi se il tipo UGC supporta le risposte ed è configurato per consentire le risposte.
 
 #### Consenti {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![consenti](assets/allow.png)
 
 Quando si utilizza un singolo post, l&#39;icona Consenti viene visualizzata quando il post è stato contrassegnato o rifiutato. Se questa opzione è contrassegnata, quando si seleziona Consenti verranno cancellati tutti i flag.
 
 #### Rifiuta {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![rifiuta](assets/deny.png)
 
 L&#39;azione **Rifiuta** moderazione è disponibile solo per il contenuto moderato e non viene visualizzata su contenuto non moderato tranne che in modalità multi-selezione.
 
@@ -342,31 +341,31 @@ Il contenuto che lascia lo stato in sospeso non può mai tornare a uno stato in 
 
 #### Elimina {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![delete](assets/delete.png)
 
 In modalità di selezione singola o in blocco, potete selezionare gli elementi ed eliminarli. L’azione di eliminazione crea una finestra di dialogo di conferma. Una volta eliminati, questi elementi scompaiono immediatamente dall&#39;area contenuto. **Una volta eliminato, l’UGC viene rimosso in modo permanente dall’archivio e non può essere recuperato** in un secondo momento.
 
 #### Chiudi {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![chiudi](assets/close.png)
 
 Quando si lavora con un singolo post, viene visualizzata un&#39;icona Chiudi se il tipo UGC supporta la capacità di impedire ulteriori post per tale risorsa.
 
 #### Cronologia moderazione {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![moderazione](assets/moderation.png)
 
 Quando si lavora con un singolo post, quando si passa il puntatore sopra di esso viene visualizzata un&#39;icona Cronologia moderazione. Quando si seleziona l’icona, viene visualizzato un riquadro contenente una cronologia delle azioni eseguite rispetto al post UGC.
 
 Per tornare alla visualizzazione dell&#39;area contenuto di più post UGC, selezionate la X nell&#39;angolo superiore destro del riquadro dei dettagli di visualizzazione.
 
-Ad esempio :
+Ad esempio:
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![moderazione](assets/moderation-history.png)
 
 #### Visualizza dettagli {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![view](assets/view.png)
 
 Quando si lavora con un singolo post, è possibile visualizzare ulteriori dettagli aprendo l&#39;UGC in modalità dettaglio.
 
@@ -374,7 +373,7 @@ A questo scopo, passate il mouse sul post per visualizzare l&#39; `View Detail` 
 
 Per tornare alla visualizzazione dell&#39;area contenuto di più post UGC, selezionate la X nell&#39;angolo superiore destro del riquadro dei dettagli di visualizzazione.
 
-Ad esempio :
+Ad esempio:
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 
