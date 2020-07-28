@@ -3,9 +3,9 @@ title: Consente di gestire le risorse video in [!DNL Adobe Experience Manager].
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '816'
 ht-degree: 7%
 
 ---
@@ -23,26 +23,20 @@ Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Ma
 
 1. Nella cartella o nelle sottocartelle Risorse digitali, individuate il percorso in cui desiderate aggiungere le risorse digitali.
 1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL File]**. In alternativa, rilasciatelo direttamente nell’area delle risorse. Per informazioni dettagliate sull’operazione di caricamento, consultate [Caricare le risorse](managing-assets-touch-ui.md#uploading-assets) .
-1. Per visualizzare un’anteprima del video nella vista a schede, fate clic sul pulsante **[!UICONTROL Riproduci]** della risorsa video.
+1. Per visualizzare un’anteprima del video nella vista a schede, fate clic sull’opzione **[!UICONTROL Riproduci]** ![riproduzione](assets/do-not-localize/play.png) nella risorsa video. Potete mettere in pausa o riprodurre il video solo nella vista a schede. Le opzioni [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
 
-   ![chlimage_1-65](assets/chlimage_1-201.png)
+1. Per visualizzare l&#39;anteprima del video nella pagina dei dettagli della risorsa, fate clic su **[!UICONTROL Modifica]** nella scheda. Il video viene riprodotto nel lettore video nativo del browser. Potete riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
 
-   Potete mettere in pausa o riprodurre il video solo nella vista a schede. I pulsanti [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
-
-1. Per visualizzare l&#39;anteprima del video nella pagina dei dettagli della risorsa, fate clic su **[!UICONTROL Modifica]** nella scheda.
-
-   Il video viene riprodotto nel lettore video nativo del browser. Potete riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
-
-   ![chlimage_1-66](assets/chlimage_1-202.png)
+   ![Controlli per la riproduzione video](assets/video-playback-controls.png)
 
 ## Configurazione per il caricamento di risorse di dimensioni superiori a 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
-Per impostazione predefinita, [!DNL Assets] non consente di caricare risorse maggiori di 2 GB a causa di un limite di dimensione file. Tuttavia, potete sovrascrivere questo limite entrando in CRXDE Lite e creando un nodo sotto la `/apps` directory. Il nodo deve avere lo stesso nome di nodo, la stessa struttura di directory e le stesse proprietà di nodo confrontabili dell&#39;ordine.
+Per impostazione predefinita, [!DNL Assets] non consente di caricare risorse maggiori di 2 GB a causa di un limite di dimensione file. Tuttavia, potete sovrascrivere questo limite entrando nel CRXDE Lite e creando un nodo sotto la `/apps` directory. Il nodo deve avere lo stesso nome di nodo, la stessa struttura di directory e le stesse proprietà di nodo confrontabili dell&#39;ordine.
 
 Oltre alla [!DNL Assets] configurazione, modificate le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
-* Aumenta l’ora di scadenza del token. Consulta Servlet [!UICONTROL CSRF] Adobe Granite nella console Web all’indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumentare la configurazione `receiveTimeout` in Dispatcher. Per ulteriori informazioni, consultate [configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager Dispatcher.
+* Aumenta l’ora di scadenza del token. Consulta [!UICONTROL servlet] CSRF Granite Adobe nella console Web all’indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione](/help/sites-developing/csrf-protection.md)CSRF.
+* Aumentare la configurazione `receiveTimeout` in Dispatcher. Per ulteriori informazioni, consultate [Experience Manager di configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Dispatcher.
 
 >[!NOTE]
 >
@@ -51,7 +45,7 @@ Oltre alla [!DNL Assets] configurazione, modificate le seguenti configurazioni p
 Per configurare un limite di dimensione file più elevato, eseguire i seguenti passaggi nella `/apps` directory.
 
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
-1. In CRXDE Lite, passare a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Per visualizzare la finestra della directory, fare clic su `>>`.
+1. In CRXDE Lite, andate a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Per visualizzare la finestra della directory, fare clic su `>>`.
 1. From the toolbar, click the **[!UICONTROL Overlay Node]**. In alternativa, seleziona **[!UICONTROL Sovrapponi nodo]** dal menu di scelta rapida.
 1. In the **[!UICONTROL Overlay Node]** dialog, click **[!UICONTROL OK]**.
 
@@ -62,7 +56,7 @@ Per configurare un limite di dimensione file più elevato, eseguire i seguenti p
 
 1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Salva tutto]**.
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Nella pagina Bundles della console [!DNL Adobe Experience Manager] Web [!UICONTROL , nella colonna Nome della tabella, individuare e fare clic su Gestore] processi esterni **** Adobe Granite Workflow.
+1. Nella pagina Bundle [!DNL Adobe Experience Manager] della console [!UICONTROL Web, nella colonna Nome della tabella, individuare e fare clic su] Gestoreprocesso esterno di Adobe flusso di lavoro granito ****.
 1. On the [!UICONTROL Adobe Granite Workflow External Process Job Handler] page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours). Fai clic su **[!UICONTROL Salva]**.
 1. In [!DNL Experience Manager], fare clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Flusso]** di lavoro > **[!UICONTROL Modelli]**.
 1. Nella pagina Modelli di workflow, seleziona **[!UICONTROL Dynamic Media Encode Video]**, quindi fai clic su **[!UICONTROL Modifica]**.
@@ -95,6 +89,6 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 
 >[!MORELIKETHIS]
 >
->* [Gestione delle risorse digitali in  risorse Experience Manager](/help/assets/managing-assets-touch-ui.md)
->* [Gestione delle raccolte in  Experience Manager Assets](/help/assets/managing-collections-touch-ui.md)
+>* [Gestione delle risorse digitali nelle risorse  Experience Manager](/help/assets/managing-assets-touch-ui.md)
+>* [Gestire le raccolte in  risorse Experience Manager](/help/assets/managing-collections-touch-ui.md)
 
