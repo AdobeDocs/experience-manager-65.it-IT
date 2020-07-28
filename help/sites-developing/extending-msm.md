@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
+source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2601'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,9 @@ Questa pagina consente di estendere le funzionalità di Multi Site Manager:
 
 * Informazioni sui membri principali dell&#39;API Java MSM.
 * Create una nuova azione di sincronizzazione che possa essere utilizzata in una configurazione di rollout.
-* Rimuovete il passaggio &quot;Capitoli&quot; nella procedura guidata Crea sito.
 * Modificare la lingua e i codici paese predefiniti.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
