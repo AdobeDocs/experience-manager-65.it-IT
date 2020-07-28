@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '9234'
+source-wordcount: '9216'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->* La condivisione di una [!DNL Assets] cartella del tipo `sling:OrderedFolder` non è supportata quando si condivide con Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una [!DNL Assets] cartella di tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
 >* [!DNL Experience Manager] non consente l&#39;utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
 
 
@@ -50,7 +50,7 @@ Potete caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) 
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file non superiori a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse la cui dimensione file è inferiore o uguale a 2 GB.
 
 Potete scegliere di caricare le risorse nelle cartelle a cui è stato assegnato o meno un profilo di elaborazione.
 
@@ -70,7 +70,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    Potete mettere in pausa il caricamento di risorse di grandi dimensioni (superiori a 500 MB) e riprenderlo più tardi dalla stessa pagina. Fate clic su **[!UICONTROL Pausa]** accanto alla barra di avanzamento che viene visualizzata all’avvio del caricamento.
 
-   ![Barra di avanzamento del caricamento delle risorse](assets/chlimage_1-5.png)
+   ![Barra di avanzamento del caricamento delle risorse](assets/upload-progress-bar.png)
 
    È possibile configurare la dimensione sopra la quale una risorsa viene considerata una risorsa grande. Ad esempio, potete configurare il sistema affinché consideri le risorse superiori ai 1000 MB (invece dei 500 MB) come risorse grandi. In questo caso, **[!UICONTROL la pausa]** viene visualizzata sulla barra di avanzamento quando vengono caricate risorse di dimensioni superiori a 1000 MB.
 
@@ -80,7 +80,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    Quando fate clic su **[!UICONTROL Pausa]**, viene attivata l’opzione **[!UICONTROL Riproduci]** . Per riprendere il caricamento, fate clic su **[!UICONTROL Riproduci]**.
 
-   ![Riprendere il caricamento della risorsa in pausa](assets/chlimage_1-6.png)
+   ![Riprendere il caricamento della risorsa in pausa](assets/resume-paused-upload.png)
 
    Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, [!DNL Assets] elimina la parte parzialmente caricata della risorsa.
 
@@ -94,13 +94,13 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tenerle entrambe rinominando la nuova risorsa caricata. Se sostituite una risorsa esistente, i metadati della risorsa e le eventuali modifiche precedenti (ad esempio, annotazione o ritaglio) apportate alla risorsa esistente vengono eliminati. Se scegliete di mantenere entrambe le risorse, la nuova risorsa viene rinominata con un numero `1` aggiunto al nome.
 
-   ![Finestra di dialogo Conflitto nome per risolvere il conflitto tra i nomi delle risorse](assets/chlimage_1-7.png)
+   ![Finestra di dialogo Conflitto nome per risolvere il conflitto tra i nomi delle risorse](assets/resolve-naming-conflict.png)
 
    >[!NOTE]
    >
    >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
    >
-   >Se Asset Insights è abilitato per tenere traccia di impression/clic con Adobe  Analytics, l’ID risorsa rigenerata invalida i dati acquisiti per la risorsa su  Analytics.
+   >Se Asset Insights è abilitato per il tracciamento di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su  Analytics.
 
    Se la risorsa caricata esiste in [!DNL Assets], la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che state tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore `SHA 1` checksum del binario della risorsa esistente corrisponde al valore checksum della risorsa caricata. In questo caso, i nomi delle risorse non contano.
 
@@ -108,7 +108,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
    >
    >La finestra di dialogo [!UICONTROL Duplicati rilevati] viene visualizzata solo quando è attivata la funzione di rilevamento duplicati. Per abilitare la funzione di rilevamento dei duplicati, consultate [Abilitare il rilevamento](/help/assets/duplicate-detection.md)dei duplicati.
 
-   ![Finestra di dialogo Duplica risorsa rilevata](assets/chlimage_1-8.png)
+   ![Finestra di dialogo Duplica risorsa rilevata](assets/duplicate-asset-detected.png)
 
    Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, fate clic su **[!UICONTROL Elimina]**.
 
@@ -123,7 +123,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
 
-   ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/chlimage_1-10.png)
+   ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/bulk-upload-progress.png)
 
    Inoltre, l’interfaccia [!DNL Assets] utente mostra la risorsa più recente caricata o la cartella creata per la prima volta.
 
@@ -133,7 +133,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
 ### Caricamenti seriali {#serialuploads}
 
-Il caricamento di numerose risorse in massa richiede notevoli risorse di I/O, il che potrebbe avere un impatto negativo sulle prestazioni della [!DNL Assets] distribuzione. In particolare, se si dispone di una connessione Internet lenta, il tempo di caricamento aumenta drasticamente a causa di un picco di I/O del disco. Inoltre, il browser Web potrebbe introdurre ulteriori restrizioni al numero di richieste POST [!DNL Assets] in grado di gestire per caricamenti simultanei di risorse. Di conseguenza, l’operazione di caricamento non riesce o si interrompe prematuramente. In altre parole, [!DNL Experience Manager Assets] potrebbe mancare alcuni file durante l&#39;acquisizione di un gruppo di file o non riuscire completamente a caricare alcun file.
+Il caricamento di numerose risorse in massa richiede notevoli risorse di I/O, il che potrebbe avere un impatto negativo sulle prestazioni della [!DNL Assets] distribuzione. In particolare, se si dispone di una connessione Internet lenta, il tempo di caricamento aumenta drasticamente a causa di un picco di I/O del disco. Inoltre, il browser Web potrebbe introdurre ulteriori restrizioni al numero di richieste di POST [!DNL Assets] che possono essere gestite per il caricamento simultaneo di risorse. Di conseguenza, l’operazione di caricamento non riesce o si interrompe prematuramente. In altre parole, [!DNL Experience Manager Assets] potrebbe mancare alcuni file durante l&#39;acquisizione di un gruppo di file o non riuscire completamente a caricare alcun file.
 
 Per ovviare a questa situazione, [!DNL Assets] durante un’operazione di caricamento in blocco viene inserita una risorsa alla volta (caricamento seriale), anziché tutte le risorse.
 
@@ -145,11 +145,11 @@ Dynamic Media consente il caricamento in batch delle risorse tramite server FTP.
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file non superiori a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse la cui dimensione file è inferiore o uguale a 2 GB.
 
 >[!NOTE]
 >
->Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze di [!DNL Experience Manager] creazione. Contatta l&#39;Assistenza [clienti di](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) Adobe per accedere al FP-18912 e completare la configurazione dell&#39;account FTP. Per ulteriori informazioni, consultate [Installare feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
+>Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze di [!DNL Experience Manager] authoring. Contatta [Assistenza](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) clienti del Adobe per accedere al FP-18912 e completare la configurazione del tuo account FTP. Per ulteriori informazioni, consultate [Installare feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
 >
 >Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in [!DNL Experience Manager] vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
 
@@ -188,10 +188,10 @@ Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL An
 |  | Opzioni di ritaglio | Per ritagliare manualmente dai lati di un’immagine, selezionate il menu Ritaglio e scegliete Manuale. Immettete quindi il numero di pixel da ritagliare da ogni lato o da uno dei lati dell’immagine. La quantità di immagine che viene ritagliata dipende dall’impostazione ppi (pixel per pollice) nel file immagine. Ad esempio, se l’immagine viene visualizzata a 150 ppi e immettete 75 nelle caselle di testo, viene ritagliato mezzo pollice da ogni lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un’immagine, aprite il menu Ritaglio, scegliete Manuale e immettete i valori in pixel nei campi In alto, A destra, In basso e A sinistra per ritagliare dai lati. Potete anche scegliere Rifila dal menu Ritaglio e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliete l’opzione Colore. Dal menu Angolo scegliete quindi l’angolo dell’immagine con il colore che rappresenta meglio quello dello spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliete l’opzione Trasparenza.<br> **Tolleranza** - Trascinate il cursore per specificare una tolleranza da 0 a 1. Per rifilare in base al colore, specificate 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell’angolo dell’immagine. Con valori più vicini a 1 viene invece tollerata una maggiore differenza di colore.<br>Per rifilare in base alla trasparenza, l’impostazione 0 ritaglia i pixel solo se sono trasparenti. Con valori più vicini a 1 viene invece tollerata una minore trasparenza.</li></ul><br>Tenete presente che queste opzioni di ritaglio non sono distruttive. |
 |  | Opzioni profilo colore | Scegliete una conversione del colore quando create file ottimizzati per la distribuzione:<ul><li>Mantenimento colore predefinito: mantiene i colori dell’immagine sorgente ogni volta che le immagini contengono informazioni sullo spazio colore; non esiste alcuna conversione del colore. Quasi tutte le immagini presentano già il profilo colore appropriato. Tuttavia, se un’immagine sorgente CMYK non contiene un profilo colore incorporato, i colori vengono convertiti nello spazio colore sRGB (standard Rosso Verde Blu). sRGB è lo spazio colore consigliato per la visualizzazione di immagini sulle pagine Web.</li><li>Mantieni spazio colore originale: Mantiene i colori originali senza alcuna conversione colore. Per le immagini senza un profilo colore incorporato, qualsiasi conversione colore viene effettuata utilizzando i profili colore predefiniti configurati nelle impostazioni di pubblicazione. I profili colore potrebbero non essere allineati con il colore nei file creati con questa opzione. Pertanto, si consiglia di utilizzare l’opzione Mantenimento colore predefinito.</li><li>Personalizzato da > Per<br> aprire i menu in modo da poter scegliere uno spazio colore Converti da e Converti in. Questa opzione avanzata ha la priorità sulle informazioni di colore incorporate nel file sorgente. Selezionate questa opzione quando tutte le immagini che state inviando contengono dati di profilo colore errati o mancanti.</li></ul> |
 |  | Opzioni di modifica delle immagini | Potete mantenere le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consultate [Impostazione delle opzioni di modifica delle immagini al momento del caricamento](#setting-image-editing-options-at-upload). |
-|  | Opzioni PostScript | Potete rasterizzare i file PostScript®, ritagliare i file, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore.<br> Consultate [Impostazione delle opzioni](#setting-postscript-and-illustrator-upload-options)di caricamento PostScript e Illustrator. |
-|  | Opzioni Photoshop | Potete creare modelli da file di Adobe® Photoshop®, mantenere i livelli, specificare i nomi dei livelli, estrarre del testo e specificare il modo in cui le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in [!DNL Experience Manager].<br> Consultate [Impostazione delle opzioni](#setting-photoshop-upload-options)di caricamento di Photoshop. |
+|  | Opzioni PostScript | Potete rasterizzare i file di PostScript®, ritagliare i file, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore.<br> Consultate [Impostazione delle opzioni](#setting-postscript-and-illustrator-upload-options)di caricamento PostScript e  Illustrator. |
+|  | Opzioni Photoshop | Potete creare modelli da file  Adobe® Photoshop®, mantenere i livelli, specificare i nomi dei livelli, estrarre del testo e specificare il modo in cui le immagini vengono ancorate ai modelli.<br> I modelli non sono supportati in [!DNL Experience Manager].<br> Consultate [Impostazione delle opzioni](#setting-photoshop-upload-options)di caricamento di Photoshop. |
 |  | Opzioni PDF | Potete rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br> Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Consultate [Impostazione delle opzioni](#setting-pdf-upload-options)di caricamento PDF. |
-|  | Opzioni Illustrator | Potete rasterizzare i file Adobe Illustrator®, conservare gli sfondi trasparenti, scegliere una risoluzione e uno spazio colore.<br> Consultate [Impostazione delle opzioni](#setting-postscript-and-illustrator-upload-options)di caricamento PostScript e Illustrator. |
+|  |  opzioni Illustrator | Potete rasterizzare  file Adobe Illustrator®, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore.<br> Consultate [Impostazione delle opzioni](#setting-postscript-and-illustrator-upload-options)di caricamento PostScript e  Illustrator. |
 |  | Opzioni eVideo | Potete transcodificare un file video scegliendo un predefinito per video.<br> Consultate [Impostazione delle opzioni](#setting-evideo-upload-options)di caricamento per eVideo. |
 |  | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fate clic sulla colonna Attivo per il predefinito che desiderate usare. Potete selezionare più predefiniti. Potete creare i predefiniti nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Consultate [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 360 gradi per ulteriori informazioni sulla creazione di predefiniti per set di batch.<br> Consultate [Impostazione dei predefiniti per set di batch al momento del caricamento](#setting-batch-set-presets-at-upload). |
 
@@ -221,9 +221,9 @@ Quando caricate dei file immagine, inclusi i file AI, EPS e PSD, potete effettua
 | | Tolerance | Optional.<br> Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.<br> Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation. |
 -->
 
-#### Impostare le opzioni di caricamento di PostScript e Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Impostare le opzioni di caricamento PostScript e  Illustrator {#setting-postscript-and-illustrator-upload-options}
 
-Quando caricate i file immagine PostScript (EPS) o Illustrator (AI), potete formattarli in vari modi. Potete rasterizzare i file, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore. Le opzioni per formattare i file PostScript e Illustrator sono disponibili nella finestra di dialogo Opzioni [!UICONTROL processo di] caricamento, in Opzioni  PostScript e Opzioni Illustrator.
+Quando caricate i file immagine PostScript (EPS) o  Illustrator (AI), potete formattarli in vari modi. Potete rasterizzare i file, mantenere lo sfondo trasparente, scegliere una risoluzione e uno spazio colore. Le opzioni per formattare i file PostScript e  Illustrator sono disponibili nella finestra di dialogo Opzioni [!UICONTROL processo di] caricamento, in Opzioni  PostScript e [!UICONTROL Opzioni]Illustrator.
 
 | Opzione | Sottoopzione | Descrizione |
 |---|---|---|
@@ -238,11 +238,11 @@ Quando caricate i file immagine PostScript (EPS) o Illustrator (AI), potete form
 
 #### Impostare le opzioni di caricamento di Photoshop {#setting-photoshop-upload-options}
 
-I file documento (PSD) di Photoshop vengono usati più spesso per creare modelli di immagine. Quando caricate un file PSD, potete creare automaticamente dal file un modello di immagine (selezionate l’opzione [!UICONTROL Crea modello] nella schermata Carica).
+I file Photoshop Document (PSD) vengono utilizzati più spesso per creare modelli di immagine. Quando caricate un file PSD, potete creare automaticamente dal file un modello di immagine (selezionate l’opzione [!UICONTROL Crea modello] nella schermata Carica).
 
 Dynamic Media crea più immagini da un file PSD con livelli, se utilizzate il file per creare un modello; crea un’immagine per ciascun livello.
 
-Usate le opzioni  Ritaglio e le opzioni [!UICONTROL Profilo]colore descritte sopra, con le opzioni di caricamento di Photoshop.
+Utilizzate le opzioni  Ritaglio e le opzioni [!UICONTROL Profilo]colore descritte sopra, con le opzioni di caricamento Photoshop.
 
 >[!NOTE]
 >
@@ -255,9 +255,9 @@ Usate le opzioni  Ritaglio e le opzioni [!UICONTROL Profilo]colore descritte sop
 | Estrai testo |  | Estrae il testo in modo che gli utenti possano cercare il testo in un visualizzatore. |
 | Estendere i livelli alle dimensioni dello sfondo |  | Estende le dimensioni dei livelli di immagine estratti alle dimensioni del livello di sfondo. |
 | Denominazione dei livelli |  | I livelli nel file PSD vengono caricati come immagini separate. |
-|  | Nome livello | Denomina le immagini in base ai nomi dei rispettivi livelli nel file PSD. Ad esempio, un livello denominato Price Tag nel file PSD originale diventa un’immagine denominata Price Tag. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei rispettivi livelli nel file PSD, non in base ai nomi dei livelli predefiniti. |
-|  | Photoshop e numero livello | Denomina le immagini in base ai numeri dei rispettivi livelli nel file PSD, ignorando i nomi dei livelli originali. Le immagini vengono denominate con il nome del file Photoshop e un numero del livello aggiunto. Ad esempio, il secondo livello di un file denominato Spring Ad.psd è denominato Spring Ad_2 anche se in Photoshop tale livello aveva un nome non predefinito. |
-|  | Photoshop e nome livello | Denomina le immagini dopo il file PSD seguito dal nome o dal numero del livello. Il numero del livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop. Ad esempio, un livello denominato Price Tag in un file PSD denominato SpringAd è denominato Spring Ad_Price Tag. Un livello con il nome predefinito Layer 2 è denominato Spring Ad_2. |
+|  | Nome livello | Denomina le immagini in base ai nomi dei rispettivi livelli nel file PSD. Ad esempio, un livello denominato Price Tag nel file PSD originale diventa un’immagine denominata Price Tag. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello Photoshop predefiniti (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei rispettivi livelli nel file PSD, non in base ai nomi dei livelli predefiniti. |
+|  | Photoshop e numero livello | Denomina le immagini in base ai numeri dei rispettivi livelli nel file PSD, ignorando i nomi dei livelli originali. Le immagini vengono denominate con il nome del file Photoshop e un numero del livello aggiunto. Ad esempio, il secondo livello di un file denominato Spring Ad.psd è denominato Spring Ad_2 anche se in Photoshop aveva un nome non predefinito. |
+|  | Photoshop e nome livello | Denomina le immagini dopo il file PSD seguito dal nome o dal numero del livello. Il numero del livello viene utilizzato se i nomi del livello nel file PSD sono nomi di livello Photoshop predefiniti. Ad esempio, un livello denominato Price Tag in un file PSD denominato SpringAd è denominato Spring Ad_Price Tag. Un livello con il nome predefinito Layer 2 è denominato Spring Ad_2. |
 | Ancoraggio |  | Specificate in che modo le immagini vengono ancorate nei modelli generati dalla composizione a livelli generata dal file PSD. Per impostazione predefinita, l’ancoraggio è al centro. Un ancoraggio centrale consente alle immagini sostitutive di riempire al meglio lo stesso spazio, indipendentemente dalle proporzioni dell’immagine sostitutiva. Le immagini con proporzioni diverse che sostituiscono l’immagine, quando fanno riferimento al modello e utilizzano la sostituzione dei parametri, occupano in modo efficace lo stesso spazio. Passate a un’impostazione diversa se l’applicazione richiede che le immagini sostitutive riempiano lo spazio allocato nel modello. |
 
 #### Impostazione delle opzioni di caricamento PDF {#setting-pdf-upload-options}
@@ -480,10 +480,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 1. Potete aggiungere o rimuovere rappresentazioni per una risorsa, tranne l’originale. Andate alla posizione della risorsa per la quale desiderate aggiungere o rimuovere le rappresentazioni.
 
 1. Fate clic sulla risorsa per aprirne la pagina.
-
-   ![Pagina Dettagli risorse per gestire le rappresentazioni](assets/chlimage_1-15.png)
-
-1. Nell&#39;interfaccia Experience Manager , selezionare **[!UICONTROL Rendering]** dall&#39;elenco.
+1. Nell&#39;interfaccia del Experience Manager , selezionare **[!UICONTROL Rendering]** dall&#39;elenco.
 
    ![Barra a sinistra per aprire il menu e selezionare l&#39;opzione Rendering](assets/renditions_menu.png)
 
@@ -515,7 +512,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 
    Allo stesso modo, potete personalizzare l&#39;immagine della pagina Annotazione sovrapponendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Sovrapposizione del nodo del selettore delle rappresentazioni in CRXDE per personalizzare l&#39;immagine della pagina Annotazione](assets/chlimage_1-17.png)
+   ![Sovrapposizione del nodo del selettore delle rappresentazioni in CRXDE per personalizzare l&#39;immagine della pagina Annotazione](assets/renditionpicker-node-crxde.png)
 
    Per configurare le dimensioni di rappresentazione per una risorsa video, andate al `videopicker` nodo nell’archivio CRX nella posizione `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sovrapponete il nodo, quindi modificate la proprietà appropriata.
 
@@ -624,7 +621,7 @@ I COG consentono di limitare l’accesso alle risorse. Potete anche configurare 
 
 La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM.
 
-Per ricerche semplici, avanzate e personalizzate per scoprire e utilizzare le risorse più appropriate, consultate [Cercare risorse in  Experience Manager](search-assets.md).
+Per ricerche semplici, avanzate e personalizzate per individuare e utilizzare le risorse più appropriate, consultate [Cercare risorse in  Experience Manager](search-assets.md).
 
 ## Azioni rapide {#quick-actions}
 
@@ -671,21 +668,16 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
 
 1. Seleziona l’opzione desiderata dall’elenco. L’area di ritaglio viene visualizzata sull’immagine in base all’opzione scelta. L’opzione **Mano libera** consente di ritagliare l’immagine senza limitazioni di proporzioni.
 
-   ![Opzioni di ritaglio](assets/chlimage_1-23.png)
+   ![Opzioni di ritaglio](assets/crop-options.png)
 
 1. Selezionate l’area da ritagliare e ridimensionatela o riposizionatela sull’immagine.
 
-1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
-
-   ![Opzioni Annulla e Ripristina](assets/chlimage_1-25.png)
-
+1. Per ripristinare l’immagine non ritagliata o mantenere l’immagine ritagliata, usate le opzioni **** Annulla ![](assets/do-not-localize/undo.png) Annulla e **[!UICONTROL Ripristina]** barra degli strumenti ![](assets/do-not-localize/redo.png) .
 1. Fate clic sull’opzione **[!UICONTROL Ruota]** appropriata per ruotare l’immagine in senso orario o antiorario.
 
-   ![Opzioni di rotazione in senso orario e antiorario](assets/chlimage_1-26.png)
+   ![Opzioni di rotazione in senso orario e antiorario](assets/do-not-localize/rotate-options.png)
 
-1. Fate clic sull’opzione **[!UICONTROL Rifletti]** appropriata per riflettere l’immagine in orizzontale o verticale.
-
-   ![opzioni per riflettere un’immagine in orizzontale o in verticale](assets/chlimage_1-27.png)
+1. Fate clic sulle opzioni **[!UICONTROL Rifletti]** appropriate per riflettere l’immagine in orizzontale e ![riflettere l’opzione](assets/do-not-localize/flip-horizontal.png) orizzontale o verticale per ![riflettere l’opzione](assets/do-not-localize/flip-vertical.png)verticale.
 
 1. Per completare la modifica delle immagini, fate clic sull’opzione **[!UICONTROL Fine]** ![fine](assets/do-not-localize/check-ok-done-icon.png). Facendo clic su **Fine** viene avviata anche la rigenerazione delle rappresentazioni.
 
@@ -731,23 +723,23 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    * [Azioni rapide](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
 
-   ![Opzione Annota](assets/chlimage_1-29.png)
+   ![Opzione Annota](assets/annotate-option.png)
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
 
-   ![Commento nella finestra di dialogo Aggiungi annotazione](assets/chlimage_1-30.png)
+   ![Commento nella finestra di dialogo Aggiungi annotazione](assets/annotation-comment-box.png)
 
 1. Per notificare all’utente un’annotazione, specificate l’indirizzo e-mail dell’utente e aggiungete il commento. Ad esempio, per notificare ad Aaron MacDonald un&#39;annotazione, immettete @aa. I suggerimenti per tutti gli utenti corrispondenti vengono visualizzati in un elenco. Selezionare l&#39;indirizzo e-mail di Aaron dall&#39;elenco per contrassegnare il commento con il relativo tag. Analogamente, potete assegnare tag a più utenti in qualsiasi punto dell’annotazione, prima o dopo.
 
+   ![Specificate l&#39;indirizzo e-mail dell&#39;utente e aggiungete un commento per inviare una notifica all&#39;utente](assets/annotation-add-user-email.png)
+
    >[!NOTE]
    >
-   >Per un utente non amministratore, i suggerimenti vengono visualizzati solo se l&#39;utente dispone delle autorizzazioni di lettura in */home* in Crx-de.
-
-   ![Specificate l&#39;indirizzo e-mail dell&#39;utente e aggiungete un commento per inviare una notifica all&#39;utente](assets/chlimage_1-31.png)
+   >Per un utente non amministratore, i suggerimenti vengono visualizzati solo se l&#39;utente dispone di autorizzazioni di lettura nel `/home` percorso in CRXDE.
 
 1. Dopo aver aggiunto l’annotazione, fate clic su **[!UICONTROL Aggiungi]** per salvarla. Una notifica per l’annotazione viene inviata ad Aaron.
 
-   ![Pulsante Aggiungi per salvare un’annotazione](assets/chlimage_1-32.png)
+   ![Pulsante Aggiungi per salvare un’annotazione](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -776,17 +768,17 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 
 1. Per visualizzare le annotazioni salvate per una risorsa, andate alla posizione della risorsa e aprite la pagina della risorsa.
 
-1. Nell’interfaccia Experience Manager , scegliete **[!UICONTROL Timeline]**.
+1. Nell’interfaccia del Experience Manager , scegliete **[!UICONTROL Timeline]**.
 
-   ![Opzioni disponibili in  Experience Manager](assets/chlimage_1-35.png)
+   ![Opzione Timeline disponibile in  Experience Manager](assets/view-timeline.png)
 
 1. Dall’elenco **[!UICONTROL Mostra tutti]** nella timeline, seleziona **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
 
-   ![Mostra tutti gli elenchi nella timeline](assets/chlimage_1-36.png)
+   ![Mostra tutti gli elenchi nella timeline](assets/timeline-show-all-option.png)
 
    Fate clic su un commento nel pannello **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
 
-   ![Pannello Timeline per visualizzare le annotazioni sull’immagine](assets/chlimage_1-37.png)
+   ![Pannello Timeline per visualizzare le annotazioni sull’immagine](assets/timeline-view-annotations.png)
 
    Fate clic su **[!UICONTROL Elimina]** per eliminare un particolare commento.
 
@@ -806,11 +798,9 @@ Per stampare le annotazioni e verificare lo stato, fare clic su **[!UICONTROL St
 
 1. Per stampare annotazioni specifiche, selezionate le annotazioni dalla timeline.
 
-   ![Selezionare un&#39;annotazione dalla timeline per stamparla](assets/chlimage_1-38.png)
+   ![Selezionare un&#39;annotazione dalla timeline per stamparla](assets/timeline-select-annotations.png)
 
    Per stampare solo lo stato della revisione, selezionatelo dalla timeline.
-
-   ![Per stampare solo lo stato di revisione di Annotation selezionarlo dalla timeline](assets/chlimage_1-39.png)
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
@@ -824,11 +814,11 @@ Per stampare le annotazioni e verificare lo stato, fare clic su **[!UICONTROL St
 
    >[!NOTE]
    >
-   >Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale, Adobe consiglia di limitare le annotazioni a 50 parole.
+   >Il rendering delle annotazioni lunghe potrebbe non essere corretto nel file PDF. Per un rendering ottimale,  Adobe consiglia di limitare le annotazioni a 50 parole.
 
 1. Fate clic su **[!UICONTROL Stampa]**. A seconda dell’opzione scelta al passaggio 2, il PDF generato visualizza annotazioni/stato nella posizione specificata. Ad esempio, se scegli di stampare sia le annotazioni che lo stato di revisione utilizzando l’impostazione **In alto a sinistra**, l’output generato sarà simile al file PDF qui riportato.
 
-   ![Stato di annotazione e revisione su PDF generato](assets/chlimage_1-42.png)
+   ![Stato di annotazione e revisione su PDF generato](assets/annotation-status-pdf.png)
 
 1. Scaricate l’opzione ![Scarica per PDF](assets/do-not-localize/download.png) o stampate le opzioni di ![stampa su PDF](assets/do-not-localize/print.png) utilizzando le opzioni in alto a destra.
 
@@ -838,7 +828,7 @@ Per stampare le annotazioni e verificare lo stato, fare clic su **[!UICONTROL St
 
    Per modificare l&#39;aspetto del file PDF di cui è stato effettuato il rendering, ad esempio il colore, la dimensione e lo stile del font, il colore dello sfondo dei commenti e degli stati, aprire la configurazione **[!UICONTROL PDF]** Annotation da Configuration Manager e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modificate il codice colore nel campo corrispondente. Per informazioni sulla modifica del colore font delle annotazioni, vedere [Annotazione](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![Configurazione per la stampa dell&#39;annotazione della risorsa su un documento PDF](assets/chlimage_1-44.png)
+   ![Configurazione per la stampa delle annotazioni di risorsa su un documento PDF](assets/annotation-print-pdf-config.png)
 
    Tornare al file PDF di cui è stato effettuato il rendering e aggiornarlo. Il PDF aggiornato riflette le modifiche apportate.
 
@@ -848,7 +838,7 @@ Se una risorsa include annotazioni in lingue straniere (in particolare lingue no
 1. Per configurare CQ-DAM-Handler-Gibson Font Manager Service, effettuate una delle seguenti operazioni:
 
    * Nell&#39;opzione della directory Font di sistema, specificate il percorso completo della directory dei font nel sistema. Ad esempio, se siete un utente Mac, potete specificare il percorso come */Library/Fonts* nell&#39;opzione di directory Font di sistema. [!DNL Experience Manager] recupera i font da questa directory.
-   * Create una directory denominata `fonts` all’interno della ``crx-quickstart`` cartella. CQ-DAM-Handler-Gibson Font Manager Service recupera automaticamente i font nella posizione `crx-quickstart/fonts`. Potete ignorare questo percorso predefinito dall&#39;opzione di directory Font di Adobe Server.
+   * Create una directory denominata `fonts` all’interno della ``crx-quickstart`` cartella. CQ-DAM-Handler-Gibson Font Manager Service recupera automaticamente i font nella posizione `crx-quickstart/fonts`. Potete ignorare questo percorso predefinito dall&#39;opzione di directory Font del server di Adobe .
 
    * Create una nuova cartella per i font nel sistema e memorizzate i font desiderati nella cartella. Quindi, specificate il percorso completo della cartella nell&#39;opzione di directory Font cliente.
 
