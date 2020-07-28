@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ La moderazione di UGC è utile per riconoscere contributi positivi e limitare qu
 
 * [Archivio di contenuti community](working-with-srp.md)
 
-* [console di moderazione in blocco](moderation.md)
+* [Console di moderazione di massa](moderation.md)
 
    La console Moderazione è accessibile sia dagli amministratori che dai moderatori [della](/help/communities/users.md) community nell’ambiente pubblico, sia dagli amministratori nell’ambiente di authoring. Questo è possibile quando il contenuto della community viene memorizzato in uno store [](/help/communities/working-with-srp.md)comune.
 
@@ -154,11 +157,15 @@ Un amministratore o un moderatore della community può spostare uno o più argom
 
 Selezionando l’azione Taglia, il contenuto viene copiato negli Appunti. Più post possono essere copiati e spostati come gruppo nella nuova posizione.
 
-![putbackugc](assets/cutugc.png) ![cutugc](assets/putbackugc.png)
+![cutugc](assets/cutugc.png)
+
+![putbackugc](assets/putbackugc.png)
 
 Nell&#39;altra posizione, quando il contenuto è presente negli Appunti, accanto a Nuovo post è visibile un pulsante Incolla con un numero che identifica il numero di post da incollare. Il pulsante Incolla include un&#39;opzione per cancellare gli Appunti invece di incollare.
 
-![chlimage_1-28](assets/chlimage_1-28.png) ![chlimage_1-29](assets/chlimage_1-29.png)
+![pastorgolo](assets/pasteugc.png)
+
+![pasteugc1](assets/pasteugc1.png)
 
 ### Rifiuta {#deny}
 
@@ -214,7 +221,7 @@ Per attivare il motore di rilevamento dello spam, effettuate le seguenti operazi
 
 1. Aprite la console [](https://localhost:4502/system/console/configMgr)Web accedendo a `/system/console/configMgr`.
 
-1. Individua la configurazione di Moderazione **automatica di** AEM Communities e modificala.
+1. Individuare la configurazione di Moderazione **automatica** AEM Communities e modificarla.
 1. Aggiungere la voce **[!UICONTROL SpamProcess]** .
 
 ![spam](assets/spamprocess.png)
@@ -247,7 +254,7 @@ Dalla console [di moderazione in](/help/communities/moderation.md)massa, è poss
 
 #### Watchwords {#watchwords}
 
-Le community di AEM forniscono un analizzatore *di* parole chiave come passo nel processo di valutazione del [sentimento](#sentiment). Il contributo al valore sentimentale fornito dalle parole d&#39;ordine è dovuto al confronto tra le parole d&#39;ordine negative e positive utilizzate nei contenuti pubblicati, nonché alle parole proibite.
+AEM comunità fornisce un analizzatore *di* parole d&#39;ordine come passo nel processo di valutazione del [sentimento](#sentiment). Il contributo al valore sentimentale fornito dalle parole d&#39;ordine è dovuto al confronto tra le parole d&#39;ordine negative e positive utilizzate nei contenuti pubblicati, nonché alle parole proibite.
 
 #### Configurare sentimento e parole di controllo {#configure-sentiment-and-watchwords}
 
