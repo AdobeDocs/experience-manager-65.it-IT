@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2187'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ I file di applicazione e di dati da sottoporre a backup sono descritti più dett
 
 Considerare i seguenti punti relativi a backup e ripristino:
 
-* Il backup del database deve essere eseguito prima di GDS e dell’archivio AEM.
+* Il backup del database deve essere eseguito prima di GDS e AEM repository.
 * Se è necessario disattivare i nodi in un ambiente cluster cluster per il backup, assicurarsi che i nodi secondari vengano chiusi prima del nodo principale. In caso contrario, potrebbe causare incoerenza nel cluster o nel server. Inoltre, il nodo primario deve essere reso attivo prima di qualsiasi nodo secondario.
 * Per l&#39;operazione di ripristino di un cluster, il server applicazione deve essere arrestato per ogni nodo del cluster.
 
 ## Directory Global Document Storage {#global-document-storage-directory}
 
-GDS è una directory utilizzata per memorizzare i file longevi utilizzati all’interno di un processo. La durata di vita dei file è destinata a coprire uno o più avvii di un sistema di moduli AEM e può estendersi su giorni e anni. Questi file di lunga durata possono includere PDF, criteri e modelli di modulo. I file longevi sono una parte fondamentale dello stato generale di molte distribuzioni di moduli AEM. Se alcuni o tutti i documenti di lunga durata vengono persi o danneggiati, il server dei moduli potrebbe diventare instabile.
+GDS è una directory utilizzata per memorizzare i file longevi utilizzati all’interno di un processo. La durata dei file di lunga durata ha lo scopo di estendere uno o più avvii di un sistema di moduli AEM e può estendersi su giorni e anni. Questi file di lunga durata possono includere PDF, criteri e modelli di modulo. I file di lunga durata rappresentano una parte fondamentale dello stato generale di molte distribuzioni di moduli AEM. Se alcuni o tutti i documenti di lunga durata vengono persi o danneggiati, il server dei moduli potrebbe diventare instabile.
 
 I documenti di input per la chiamata asincrona del processo sono inoltre memorizzati nel GDS e devono essere disponibili per l’elaborazione delle richieste. Pertanto, è importante considerare l&#39;affidabilità del file system che ospita il GDS e utilizzare un array ridondante di dischi indipendenti (RAID) o altre tecnologie, in base alla qualità e al livello di servizio richiesti.
 
-La posizione di GDS è determinata durante il processo di installazione dei moduli di AEM o successivamente mediante la console di amministrazione. Oltre a mantenere una posizione di elevata disponibilità per GDS, puoi anche abilitare la memorizzazione del database per i documenti. Vedere Opzioni [di backup quando il database viene utilizzato per l&#39;archiviazione](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)dei documenti.
+La posizione del GDS è determinata durante il processo di installazione dei moduli AEM o successivamente utilizzando la console di amministrazione. Oltre a mantenere una posizione di elevata disponibilità per GDS, puoi anche abilitare la memorizzazione del database per i documenti. Vedere Opzioni [di backup quando il database viene utilizzato per l&#39;archiviazione](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)dei documenti.
 
 ### Posizione GDS {#gds-location}
 
@@ -55,13 +55,13 @@ Se la posizione originale non è più disponibile, la posizione del GDS può ess
 
 ### Opzioni di backup quando il database viene utilizzato per l&#39;archiviazione dei documenti {#backup-options-when-database-is-used-for-document-storage}
 
-È possibile abilitare la memorizzazione dei documenti nei moduli AEM nel database dei moduli AEM tramite la console di amministrazione. Anche se questa opzione mantiene tutti i documenti persistenti nel database, i moduli AEM richiedono ancora la directory GDS basata su file system, perché viene utilizzata per memorizzare file e risorse permanenti e temporanee correlate alle sessioni e alle chiamate dei moduli AEM.
+È possibile abilitare l&#39;archiviazione dei documenti AEM moduli nel database dei moduli AEM utilizzando la console di amministrazione. Anche se questa opzione mantiene tutti i documenti persistenti nel database, AEM moduli richiede comunque la directory GDS basata su file system, perché viene utilizzata per memorizzare file e risorse permanenti e temporanee correlate alle sessioni e alle chiamate dei moduli AEM.
 
-Quando si seleziona l&#39;opzione &quot;Abilita archiviazione documenti nel database&quot; nelle Impostazioni di sistema principali nella console di amministrazione o tramite Configuration Manager, i moduli AEM non consentono la modalità di backup snapshot e la modalità di backup rollout. Pertanto, non è necessario gestire le modalità di backup utilizzando i moduli AEM. Se utilizzate questa opzione, è necessario eseguire il backup di GDS solo una volta dopo aver attivato l&#39;opzione. Quando si recuperano i moduli AEM da un backup, non è necessario rinominare la directory di backup per GDS o ripristinare GDS.
+Se si seleziona l&#39;opzione &quot;Abilita archiviazione documenti nel database&quot; nelle Impostazioni di sistema principali nella console di amministrazione o utilizzando Configuration Manager, AEM moduli non consentono la modalità di backup snapshot e la modalità di backup rollout. Pertanto, non è necessario gestire le modalità di backup utilizzando AEM moduli. Se utilizzate questa opzione, è necessario eseguire il backup di GDS solo una volta dopo aver attivato l&#39;opzione. Quando si ripristinano AEM moduli da un backup, non è necessario rinominare la directory di backup per GDS o ripristinare GDS.
 
-## Archivio AEM {#aem-repository}
+## AEM repository {#aem-repository}
 
-L&#39;archivio AEM (archivio crx) viene creato se è configurato l&#39;archivio crx durante l&#39;installazione dei moduli AEM. La posizione della directory del repository crx è determinata durante il processo di installazione dei moduli AEM. È necessario eseguire il backup e il ripristino dell&#39;archivio AEM, insieme a database e GDS, per garantire la coerenza dei dati dei moduli AEM nei moduli AEM. L&#39;archivio AEM contiene i dati per la soluzione di gestione della corrispondenza, Forms Manager e AEM Forms Workspace.
+AEM repository (crx-repository) viene creato se è configurato crx-repository durante l&#39;installazione AEM moduli. La posizione della directory del repository crx è determinata durante il processo di installazione dei moduli AEM. AEM repository è necessario eseguire il backup e il ripristino, insieme al database e al GDS, per garantire la coerenza dei dati AEM moduli nei moduli AEM. AEM repository contiene i dati per la soluzione di gestione della corrispondenza, Forms Manager e l&#39;area di lavoro AEM Forms.
 
 ### Soluzione per la gestione della corrispondenza {#correspondence-management-solution}
 
@@ -79,21 +79,21 @@ AEM Forms Workspace combina le funzionalità di Flex Workspace (obsoleto per i m
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
-Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Consente la rappresentazione di moduli HTML, oltre a PDF forms e moduli Flex.
+Consente la gestione delle attività sui client senza Flash Player e  Adobe Reader. Consente la rappresentazione di HTML Forms, oltre ai PDF forms e ai moduli Flex.
 
-## Database moduli AEM {#aem-forms-database}
+## database moduli AEM {#aem-forms-database}
 
-Il database dei moduli AEM memorizza il contenuto, ad esempio artefatti di modulo, configurazioni di servizio, stato del processo e riferimenti al database, nei file GDS e nella directory principale di Content Storage (per Content Services). I backup del database possono essere eseguiti in tempo reale senza interruzione del servizio e il ripristino può essere effettuato in un momento specifico o in un momento specifico. Questa sezione descrive come configurare il database in modo che possa essere sottoposto a backup in tempo reale.
+Il database dei moduli AEM memorizza il contenuto, ad esempio artefatti del modulo, configurazioni del servizio, stato del processo e riferimenti al database, nei file GDS e nella directory principale di Content Storage (per Content Services). I backup del database possono essere eseguiti in tempo reale senza interruzione del servizio e il ripristino può essere effettuato in un momento specifico o in un momento specifico. Questa sezione descrive come configurare il database in modo che possa essere sottoposto a backup in tempo reale.
 
-In un sistema di moduli AEM configurato correttamente, l&#39;amministratore di sistema e l&#39;amministratore di database possono collaborare facilmente per ripristinare lo stato del sistema in modo coerente e noto.
+In un sistema AEM moduli configurato correttamente, l&#39;amministratore di sistema e l&#39;amministratore di database possono collaborare facilmente per ripristinare lo stato del sistema in modo coerente e noto.
 
 Per eseguire il backup del database in tempo reale, è necessario utilizzare la modalità snapshot o configurare il database per l&#39;esecuzione in modalità log specificata. Questo consente il backup dei file di database mentre il database è aperto e disponibile per l&#39;uso. Inoltre, il database mantiene il rollback e i log delle transazioni quando è in esecuzione in queste modalità.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta il documento sul ciclo di vita dei prodotti [Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Per informazioni sulla configurazione di Content Services (obsoleto), consulta [Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+> Adobe® Content Services ES (obsoleto) è un sistema di gestione dei contenuti installato con LiveCycle LiveCycle®. Consente agli utenti di progettare, gestire, monitorare e ottimizzare i processi incentrati sulle persone. Il supporto di Content Services (obsoleto) termina il 31/12/2014. Consulta [documento](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)sul ciclo di vita del prodotto di Adobe. Per informazioni sulla configurazione di Content Services (obsoleto), consulta [Amministrazione di Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ### DB2 {#db2}
 
@@ -101,7 +101,7 @@ Configurare il database DB2 per l&#39;esecuzione in modalità log di archivio.
 
 >[!NOTE]
 >
->Se l&#39;ambiente dei moduli AEM è stato aggiornato da una versione precedente di moduli AEM e utilizza DB2, il backup online non è supportato. In questo caso, è necessario arrestare i moduli AEM ed eseguire un backup offline. Le versioni future dei moduli AEM supporteranno il backup online per i clienti che effettuano l&#39;aggiornamento.
+>Se l&#39;ambiente AEM dei moduli è stato aggiornato da una versione precedente di AEM moduli e utilizza DB2, il backup online non è supportato. In questo caso, è necessario chiudere AEM moduli ed eseguire un backup offline. Le versioni future dei moduli AEM supporteranno il backup online per i clienti che effettuano l&#39;aggiornamento.
 
 IBM dispone di una suite di strumenti e sistemi di aiuto per aiutare gli amministratori di database a gestire le attività di backup e ripristino:
 
@@ -131,7 +131,7 @@ SQL Server offre inoltre due strumenti di backup e ripristino:
 * SQL Server Management Studio (GUI)
 * T-SQL (riga di comando)
 
-Consulta [Strategie di](https://articles.techrepublic.com.com/5100-1035_61-1043671.md)backup e [backup e ripristino](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Per ulteriori informazioni, vedere [Backup e ripristino](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -157,7 +157,7 @@ La directory principale di Content Storage contiene l&#39;archivio di Content Se
 
 ### Posizione di origine dell&#39;archiviazione dei contenuti (ambiente autonomo) {#content-storage-root-location-stand-alone-environment}
 
-La directory principale dell&#39;archivio contenuti viene creata quando è installato Content Services (obsoleto). La posizione della directory principale di archiviazione dei contenuti è determinata durante il processo di installazione dei moduli AEM.
+La directory principale dell&#39;archivio contenuti viene creata quando è installato Content Services (obsoleto). La posizione della directory principale di memorizzazione dei contenuti è determinata durante il processo di installazione dei moduli AEM.
 
 Il percorso predefinito per la directory principale dell&#39;archiviazione dei contenuti è `[aem-forms root]/lccs_data`.
 
@@ -197,10 +197,10 @@ La posizione predefinita per la directory radice dell&#39;indice è `[aem-forms 
 
 ## Font installati dal cliente {#customer-installed-fonts}
 
-Se sono stati installati font aggiuntivi nell&#39;ambiente dei moduli AEM, è necessario eseguirne il backup separatamente. Esegui il backup di tutte le directory di font Adobe e del cliente specificate nella console di amministrazione in Impostazioni > Sistema di base > Configurazioni. Assicurarsi di eseguire il backup dell&#39;intera directory dei font.
+Se sono stati installati font aggiuntivi nell&#39;ambiente AEM moduli, è necessario eseguire il backup separatamente. Esegui il backup di tutte  directory di Adobi e di font cliente specificate nella console di amministrazione in Impostazioni > Sistema di base > Configurazioni. Assicurarsi di eseguire il backup dell&#39;intera directory dei font.
 
 >[!NOTE]
 >
->Per impostazione predefinita, i font Adobe installati con i moduli AEM si trovano nella `[aem-forms root]/fonts` directory.
+>Per impostazione predefinita, i font  Adobe installati con AEM moduli si trovano nella `[aem-forms root]/fonts` directory.
 
 Se si sta reinizializzando il sistema operativo sul computer host e si desidera utilizzare i font del sistema operativo precedente, è necessario eseguire il backup anche del contenuto della directory dei font di sistema. Per istruzioni specifiche, consultate la documentazione del sistema operativo in uso.
