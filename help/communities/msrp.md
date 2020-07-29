@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
    * Versione 2.6 o successiva
    * Non è necessario configurare i logo o la condivisione
    * Consiglia vivamente l&#39;utilizzo di un set di [replica](#mongoreplicaset)
-   * Può essere eseguito sullo stesso host di AEM o in remoto
+   * Può essere eseguito sullo stesso host AEM o in remoto
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -43,7 +43,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
    * Scelta delle modalità di esecuzione:
       * Modalità indipendente
       * [Modalità](solr.md#solrcloud-mode) SolrCloud (consigliato per gli ambienti di produzione)
-   * Scelta della ricerca multilingue (MLS)
+   * Scelta della ricerca multilingue (MLS):
       * [Installazione di MLS standard](solr.md#installing-standard-mls)
       * [Installazione di MLS avanzate](solr.md#installing-advanced-mls)
 
@@ -102,7 +102,7 @@ Lasciate vuoto se eseguite in modalità SolrCloud.
 
 >[!NOTE]
 >
->Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di [nodi o gli archivi](../../help/sites-deploying/data-store-config.md)di dati (binari). Consultate anche Elementi [di archiviazione in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di [nodi o gli archivi](../../help/sites-deploying/data-store-config.md)di dati (binari). Vedere anche [Elementi di storage in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 
 ### Set di replica MongoDB {#mongodb-replica-set}
@@ -224,7 +224,7 @@ Per impostare MSRP per un ambiente di dimostrazione o di sviluppo, vedere [Come 
 
 Verificate che MSRP sia stato configurato come provider predefinito, verificando la configurazione dell&#39;opzione di archiviazione. Per impostazione predefinita, il provider delle risorse di storage è JSRP.
 
-Per creare e pubblicare tutte le istanze di AEM, rivisitate la console [Configurazione](srp-config.md) archiviazione o verificate l’archivio AEM:
+Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console [Configurazione](srp-config.md) archiviazione o controllate l&#39;archivio AEM:
 
 * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -239,7 +239,7 @@ Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0 esistente, quals
 
 * [Strumento di migrazione UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti delle community social AEM da importare nei AEM Communities 6.1 o versioni successive.
+Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti di AEM social community da importare in AEM Communities 6.1 o versioni successive.
 
 ### Errore - provider_id campo non definito {#error-undefined-field-provider-id}
 
@@ -265,8 +265,8 @@ Per risolvere l&#39;errore, quando si seguono le istruzioni per l&#39; [installa
 Se un tentativo di connessione protetta al server MongoDB non riesce a causa di una definizione di classe mancante, è necessario aggiornare il bundle del driver MongoDB, `mongo-java-driver`, disponibile dall&#39;archivio pubblico del server.
 
 1. Scaricate il driver da [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versione 2.13.2 o successiva).
-1. Copiate il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza di AEM.
-1. Riavviate l’istanza di AEM.
+1. Copiate il bundle nella cartella &quot;crx-quickstart/install&quot; per un’istanza AEM.
+1. Riavviate l&#39;istanza AEM.
 
 ## Riferimenti {#resources}
 
