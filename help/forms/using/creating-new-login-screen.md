@@ -1,8 +1,8 @@
 ---
 title: Creazione di una nuova schermata di login
 seo-title: Creazione di una nuova schermata di login
-description: Come modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro AEM Forms o Forms Manager.
-seo-description: Come modificare la pagina di accesso dei moduli LiveCycle, ad esempio l'area di lavoro AEM Forms o Forms Manager.
+description: Come modificare la pagina di login dei moduli di LiveCycle, ad esempio l’area di lavoro AEM Forms o Forms Manager.
+seo-description: Come modificare la pagina di login dei moduli di LiveCycle, ad esempio l’area di lavoro AEM Forms o Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b4c1bc5f09491a8843a82c3589604f6717a76ea8
+source-git-commit: 9fcfd1c2c63d9a32f2d68f5b0c974bc5b5d22b40
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '485'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # Creazione di una nuova schermata di login{#creating-a-new-login-screen}
 
-Potete modificare la schermata di login di tutti i moduli AEM Forms che utilizzano la schermata di login dei AEM Forms. Ad esempio, le modifiche interessano la schermata di accesso dell&#39;area di lavoro Forms Manager e AEM Forms.
+Potete modificare la schermata di login di tutti i moduli AEM Forms che utilizzano la schermata di login dei AEM Forms. Ad esempio, le modifiche influiscono sulla schermata di accesso dell’area di lavoro di Forms Manager e AEM Forms.
 
 ## Prerequisito {#prerequisite}
 
@@ -97,9 +97,11 @@ String browserLocale = "en";
             break;
         }
     }
+```
 
-To
+A
 
+```jsp
 String browserLocale = "en";
     for(int i=0; i<locales.length; i++)
     {
@@ -125,8 +127,9 @@ String browserLocale = "en";
             break;
         }
     }
-```jsp
+```
 
+```jsp
 String browserLocale = "en";
 
     for(int i=0; i<locales.length; i++)
@@ -149,9 +152,11 @@ String browserLocale = "en";
             break;
         }
     }
+```
 
-To
+A
 
+```jsp
 String browserLocale = "en";
     for(int i=0; i<locales.length; i++)
     {
@@ -177,20 +182,19 @@ String browserLocale = "en";
             break;
         }
     }
-***To change Default locale***
-
-```jsp
-
-String browserLocale = "en";
-for(int i=0; i<locales.length; i++)
-
-To
-
-String browserLocale = "ar";
-for(int i=0; i<locales.length; i++)
 ```
 
+***Per modificare le impostazioni internazionali predefinite***
 
+```jsp
+   String browserLocale = "en";
+   for(int i=0; i<locales.length; i++)
+
+   To
+
+   String browserLocale = "ar";
+   for(int i=0; i<locales.length; i++)
+```
 
 ### Aggiunta di nuovo testo o modifica di testo esistente {#adding-new-text-or-modifying-existing-text}
 
@@ -233,8 +237,6 @@ for(int i=0; i<locales.length; i++)
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
    ```
-
-
 
 ### Aggiunta di nuovo stile o modifica di uno stile esistente {#adding-new-style-or-modifying-existing-style}
 
@@ -285,7 +287,6 @@ css.newLoginContentArea {
 >
 >Se le immagini esistenti in `/apps/livecycle/core/content/login` (copiate da `/libs/livecycle/core/content/login`) vengono rimosse, rimuovete i riferimenti corrispondenti in CSS.
 
-
 ### Aggiungere nuove immagini {#add-new-images}
 
 1. Seguire i passaggi per aggiungere nuovo stile o modificare lo stile esistente (documentato sopra).
@@ -324,4 +325,3 @@ A
 ```jsp
 <div class="newLginContainerBkg">
 ```
-
