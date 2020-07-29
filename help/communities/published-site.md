@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Passa a nuovo sito in Pubblica {#browse-to-new-site-on-publish}
 
-Ora che il sito community appena creato è stato pubblicato, individuate l’URL visualizzato al momento della creazione del sito, ma sul server di pubblicazione, ad esempio
+Ora che il sito community appena creato è stato pubblicato, individuate l’URL visualizzato al momento della creazione del sito, ma sul server di pubblicazione, ad esempio:
 
 * URL autore = https://localhost:4502/content/sites/engage/en.html
 * URL pubblicazione = https://localhost:4503/content/sites/engage/en.html
@@ -65,13 +65,14 @@ Per proteggere i contenuti del sito della community dall&#39;accesso di utenti a
 
 1. Vai a Proprietà **** pagina.
 
-   ![autenticazione del sito](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Vai alla scheda **Avanzate** .
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![autenticazione del sito](assets/site-authentication.png)
+
 1. Aggiungete il percorso della pagina di login. Ad esempio, **/content/......./GetStarted**.
 1. Pubblicate la pagina.
 
@@ -198,7 +199,7 @@ Effettuate l&#39;accesso come Weston McCall (weston.mccall@dodgit.com / password
 
 ### Collegamento pagina Web {#web-page-link}
 
-Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Gli strumenti di authoring standard di AEM possono essere utilizzati per aggiungere contenuti a questa pagina nell’ambiente di authoring.
+Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Per aggiungere contenuti a questa pagina nell’ambiente di authoring è possibile utilizzare gli strumenti AEM di authoring standard.
 
 Ad esempio, passate all’istanza di **creazione** , aprite la `engage` cartella nella console [Siti](/help/communities/sites-console.md)community, selezionate l’icona **Apri sito** per passare alla modalità di modifica dell’autore. Selezionate quindi la modalità di anteprima per selezionare il `Web Page` collegamento, quindi selezionate la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblicate solo la pagina o l’intero sito.
 
