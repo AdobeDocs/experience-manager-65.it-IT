@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
+source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1580'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ In  Experience Manager una risorsa contiene i seguenti elementi:
 * Rappresentazioni multiple, ad esempio la rappresentazione originale (che è la risorsa caricata originariamente), una miniatura e varie altre rappresentazioni. Rappresentazioni aggiuntive possono essere immagini di dimensioni diverse, codifiche video diverse o pagine estratte da PDF o [!DNL Adobe InDesign] file.
 * Commenti facoltativi.
 
-Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto  API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP di Experience Manager Assets.
+Per informazioni sugli elementi nei frammenti di contenuto, consulta Supporto frammenti di [contenuto in  API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP delle risorse di Experience Manager.
 
 In [!DNL Experience Manager] una cartella sono presenti i seguenti componenti:
 
@@ -96,7 +96,7 @@ L&#39;API HTTP Assets include le seguenti funzionalità:
 **Prerequisiti**
 
 * Accesso `https://[aem_server]:[port]/system/console/configMgr`.
-* Passate al filtro **[!UICONTROL CSRF]** Adobe Granite.
+* Andate a **[!UICONTROL Adobe Filtro]** CSRF Granite.
 * Accertatevi che la proprietà **[!UICONTROL Filter Methods]** includa: `POST`, `PUT`, `DELETE`.
 
 ## Recuperare un elenco di cartelle {#retrieve-a-folder-listing}
@@ -253,6 +253,9 @@ Sposta una cartella o una risorsa nel percorso specificato in una nuova destinaz
 * `X-Overwrite` - Utilizzare `T` per forzare l&#39;eliminazione di una risorsa esistente o `F` per impedire la sovrascrittura di una risorsa esistente.
 
 **Richiesta**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+
+Non usate `/content/dam` nell’URL. Un comando di esempio da spostare durante la sovrascrittura è:
+`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
 
 **Codici** di risposta: I codici di risposta sono:
 
