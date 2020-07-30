@@ -3,7 +3,7 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fo
 
 La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con Risorse possono essere estese: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
 
-Un’applicazione incentrata sulle risorse in  Experience Manager consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
+Un’applicazione incentrata sulle risorse in  Experience Manager è costituita da una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -171,7 +171,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -204,17 +204,17 @@ Quando create la pagina Editor risorse, è buona norma creare la pagina direttam
 Per creare una pagina Editor risorse:
 
 1. Nella scheda **[!UICONTROL Siti]** Web individuate il punto in cui desiderate creare la pagina dell’editor risorse e fate clic su **Nuovo**.
-1. Selezionate Editor **risorse** Geometrixx e fate clic su **Crea**. La nuova pagina viene creata e la pagina viene elencata nella scheda **Siti Web** .
+1. Selezionate **Geometrixx editor** risorse e fate clic su **Crea**. La nuova pagina viene creata e la pagina viene elencata nella scheda **Siti Web** .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-La pagina di base creata con il modello Geometrixx Asset Editor si presenta come segue:
+La pagina di base creata con il modello di Editor risorse di Geometrixx si presenta come segue:
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
-Per personalizzare la pagina Editor risorse, usate gli elementi della barra laterale. La pagina Editor risorse a cui si accede da **Geometrixx Press Center** è una versione personalizzata di una pagina basata su questo modello:
+Per personalizzare la pagina Editor risorse, usate gli elementi della barra laterale. La pagina Editor risorse a cui si accede dal Centro **** stampa è una versione personalizzata di una pagina basata su questo modello:
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### Aprire un Editor risorse da una pagina Condivisione risorse {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -262,7 +262,7 @@ Per aggiungere componenti dell’editor di risorse:
 
 #### Modulo metadati e campo di testo - Configurazione del componente Visualizza metadati {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Il Modulo metadati è un modulo che include un’azione iniziale e finale. Tra questi due campi è possibile immettere i campi **Testo** . Per ulteriori informazioni sull&#39;uso dei moduli, vedere [Moduli](/help/sites-authoring/default-components-foundation.md#form-component) .
+Il Modulo metadati è un modulo che include un’azione iniziale e finale. Tra questi due campi è possibile immettere i campi **Testo** . Per ulteriori informazioni sull&#39;uso dei moduli, vedere [Forms](/help/sites-authoring/default-components-foundation.md#form-component) .
 
 1. Per creare un&#39;azione iniziale, fare clic su **Modifica** nell&#39;area Inizio del modulo. Se necessario, potete immettere un titolo Casella. Per impostazione predefinita, il titolo Casella è **Metadati**. Selezionare la casella di controllo Convalida client se si desidera generare il codice client Java-script per la convalida.
 
@@ -387,7 +387,7 @@ Sono disponibili le azioni seguenti:
 
 ## Risorse con più modifiche nella pagina Editor risorse {#multi-editing-assets-with-the-asset-editor-page}
 
-Con  Risorse Experience Manager puoi apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
+Con  risorse di Experience Manager potete apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
 
 * Tag
 * Metadati
@@ -405,7 +405,7 @@ Per modificare più risorse con la pagina Editor risorse:
    Per selezionare un intervallo di risorse: fate clic sulla prima risorsa e quindi `Shift + click` sull’ultima.
 
 1. Fate clic su **Modifica metadati** nel campo **Azioni** (parte sinistra della pagina).
-1. La pagina Editor **risorse** per centro stampa Geometrixx si apre in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
+1. La pagina Editor **risorse del centro** stampa si apre in una nuova scheda. I metadati delle risorse vengono visualizzati come segue:
 
    * Un tag, che non si applica a tutte le risorse ma solo ad alcune, viene visualizzato in corsivo.
    * Un tag applicato a tutte le risorse viene visualizzato con un font normale.
