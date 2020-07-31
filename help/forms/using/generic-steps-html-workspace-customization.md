@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 I passaggi generici per eseguire eventuali personalizzazioni sono:
 
-1. Accedete a CRXDE Lite accedendo `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Accedete al CRXDE Lite accedendo `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Create una cartella denominata `ws`in `/apps`, se non esiste. Fate clic su **[!UICONTROL Salva tutto]**.
 1. Individuare `/apps/ws`e passare alla scheda Controllo **** accesso.
 1. Nell&#39;elenco Controllo **** accesso, fare clic su **[!UICONTROL +]** per aggiungere una nuova voce. Fate di nuovo clic **[!UICONTROL +]** .
@@ -37,7 +37,7 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
 1. Copiate la `/libs/ws/locales` cartella nella `/apps/ws` cartella. Fate clic su **[!UICONTROL Salva tutto]**.
 1. Aggiornate i riferimenti e i percorsi relativi nel `GET.jsp` file, come illustrato di seguito, quindi fate clic su **[!UICONTROL Salva tutto]**.
 
-   ```jsp
+   ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
    ```
 
@@ -49,14 +49,14 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
 
    1. Open `/apps/ws/html`.jsp e modifica da
 
-   ```css
+   ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
    ```
 
    a
 
-   ```css
+   ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/style.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="css/newStyle.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/jquery-ui.css"/>
@@ -68,13 +68,13 @@ I passaggi generici per eseguire eventuali personalizzazioni sono:
 
 1. Nel file /apps/ws/html.jsp, modificare da
 
-   ```css
+   ```jsp
    <script data-main="js/main" src="js/libs/require/require.js"></script>
    ```
 
    a
 
-   ```css
+   ```jsp
    <script data-main="js/main" src="../../libs/ws/js/libs/require/require.js"></script>
    ```
 
