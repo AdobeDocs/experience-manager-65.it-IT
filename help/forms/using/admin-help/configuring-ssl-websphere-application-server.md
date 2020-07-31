@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -127,7 +127,7 @@ Truststore e keystore possono essere creati utilizzando l&#39;utility ikeyman o 
 
    Il profilo ora viene eseguito in base alle impostazioni SSL personalizzate e al certificato.
 
-## Abilitazione del supporto per i moduli nativi AEM {#enabling-support-for-aem-forms-natives}
+## Abilitazione del supporto per AEM moduli nativi {#enabling-support-for-aem-forms-natives}
 
 1. Nella console di amministrazione di WebSphere, selezionate **Protezione > Sicurezza** globale.
 1. Nella sezione Autenticazione, espandi la protezione **** RMI/IIOP e fai clic su Comunicazioni **in ingresso** CSIv2.
@@ -178,7 +178,7 @@ Per impostare la porta come dinamica e risolvere il problema, effettuate le segu
 1. Aprite il file `[aem-forms_root]`\crx-repository\launchpad\sling.properties per la modifica.
 1. Individuare la `sling.bootdelegation.ibm` proprietà e aggiungere `com.ibm.websphere.ssl.*`al relativo campo valore. Il campo aggiornato sarà simile al seguente:
 
-   ```java
+   ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
