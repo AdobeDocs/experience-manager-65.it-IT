@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '6822'
 ht-degree: 0%
@@ -33,7 +33,7 @@ L&#39;editor di regole fornisce un&#39;interfaccia utente intuitiva e semplifica
 * Richiamare un servizio del modello dati del modulo ed eseguire un&#39;operazione
 * Imposta proprietà di un oggetto
 
-L&#39;editor di regole sostituisce le funzionalità di scripting in AEM 6.1 Forms e nelle versioni precedenti. Tuttavia, gli script esistenti vengono mantenuti nel nuovo editor di regole. Per ulteriori informazioni sull&#39;utilizzo degli script esistenti nell&#39;editor delle regole, vedere [Impatto dell&#39;editor delle regole sugli script](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p)esistenti.
+L&#39;editor di regole sostituisce le funzionalità di script di AEM 6.1 Forms e versioni precedenti. Tuttavia, gli script esistenti vengono mantenuti nel nuovo editor di regole. Per ulteriori informazioni sull&#39;utilizzo degli script esistenti nell&#39;editor delle regole, vedere [Impatto dell&#39;editor delle regole sugli script](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p)esistenti.
 
 Gli utenti aggiunti al gruppo form-power-users possono creare nuovi script e modificare quelli esistenti. Gli utenti del gruppo form-users possono utilizzare gli script ma non creare o modificare script.
 
@@ -133,13 +133,13 @@ Durante la scrittura di una regola Quando, è possibile attivare l&#39;azione Ca
 
 **Disattiva** disabilita l&#39;oggetto specificato.
 
-**Richiama il servizio** Richiama un servizio configurato in un modello dati del modulo. Quando si sceglie l&#39;operazione di richiamo del servizio, viene visualizzato un campo. Toccando il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo nell&#39;istanza di AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedere regola di esempio per richiamare i servizi del modello dati del modulo.
+**Richiama il servizio** Richiama un servizio configurato in un modello dati del modulo. Quando si sceglie l&#39;operazione di richiamo del servizio, viene visualizzato un campo. Toccando il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo nell&#39;istanza AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedere regola di esempio per richiamare i servizi del modello dati del modulo.
 
-Oltre al servizio del modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio del modello dati modulo presenta molti vantaggi e l&#39;approccio consigliato per richiamare un servizio.
+Oltre al servizio del modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio del modello dati del modulo presenta molti vantaggi e l&#39;approccio consigliato per richiamare un servizio.
 
 Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere Integrazione [dei dati](/help/forms/using/data-integration.md)AEM Forms.
 
-**Impostare il valore** Computes e impostare il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando l&#39;espressione o la funzione matematica, il valore di una proprietà di un oggetto o il valore di output da un servizio del modello dati del modulo configurato. Quando si sceglie l&#39;opzione del servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo nell&#39;istanza di AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
+**Impostare il valore** Computes e impostare il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando l&#39;espressione o la funzione matematica, il valore di una proprietà di un oggetto o il valore di output da un servizio del modello dati del modulo configurato. Quando si sceglie l&#39;opzione del servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo nell&#39;istanza AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
 
 Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere Integrazione [dei dati](/help/forms/using/data-integration.md)AEM Forms.
 
@@ -165,7 +165,7 @@ La figura seguente illustra un esempio di aggiunta dinamica di caselle di contro
 
 **Salva modulo** Salva il modulo.
 
-**Invia moduli** Invia il modulo.
+**Invia Forms** Invia il modulo.
 
 **Ripristina modulo** Ripristina il modulo.
 
@@ -346,7 +346,7 @@ Visualizza il titolo dell&#39;oggetto modulo adattivo tramite il quale sono stat
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
-Il riquadro a sinistra nell&#39;interfaccia utente dell&#39;editor di regole include due schede: **[!UICONTROL Oggetti]** e **[!UICONTROL funzioni]** dei moduli.
+Il riquadro a sinistra nell&#39;interfaccia utente dell&#39;editor di regole include due schede: **[!UICONTROL Oggetti]** e **[!UICONTROL funzioni]** Forms.
 
 La scheda Oggetti modulo mostra una visualizzazione gerarchica di tutti gli oggetti contenuti nel modulo adattivo. Visualizza il titolo e il tipo degli oggetti. Durante la scrittura di una regola, è possibile trascinare gli oggetti modulo nell&#39;editor di regole. Durante la creazione o la modifica di una regola quando si trascina un oggetto o una funzione in un segnaposto, il segnaposto assume automaticamente il tipo di valore appropriato.
 
@@ -358,7 +358,7 @@ La scheda Funzioni include un set di funzioni integrate, ad esempio Somma di, Mi
 
 >[!NOTE]
 >
->È possibile eseguire la ricerca del testo nei nomi e nei titoli di oggetti e funzioni delle schede Oggetti e funzioni di Forms.
+>È possibile eseguire la ricerca del testo sui nomi e i titoli di oggetti e funzioni nelle schede Oggetti e Funzioni di Forms.
 
 Nella struttura ad albero a sinistra degli oggetti modulo è possibile toccare gli oggetti modulo per visualizzare le regole applicate a ciascuno di essi. Non solo è possibile spostarsi tra le regole dei vari oggetti modulo, ma è anche possibile copiare e incollare le regole tra gli oggetti modulo. Per ulteriori informazioni, consultate [Copiare e incollare le regole](../../forms/using/rule-editor.md#p-copy-paste-rules-p).
 
@@ -378,7 +378,7 @@ Gli utenti del gruppo form-power-users possono accedere all&#39;editor di codice
 
 AEM Forms tiene traccia della modalità editor regole utilizzata per scrivere una regola. Quando si avvia l&#39;editor di regole la prossima volta, questo si apre in tale modalità. Tuttavia, potete anche configurare una modalità predefinita per aprire l&#39;editor di regole nella modalità specificata. A questo scopo:
 
-1. Andate alla console Web di AEM all&#39;indirizzo `https://[host]:[port]/system/console/configMgr`.
+1. Passate AEM console Web all&#39;indirizzo `https://[host]:[port]/system/console/configMgr`.
 1. Fare clic per modificare il servizio **[!UICONTROL di configurazione del modulo]** adattivo.
 1. scegliere Editor **** visivo o Editor **[!UICONTROL di]** codice dal menu a discesa Modalità **[!UICONTROL predefinita per Editor]** regola
 
@@ -471,11 +471,11 @@ Effettuare le seguenti operazioni per scrivere le regole:
 
 1. Nel campo espressione:
 
-   * Selezionare o trascinare dalla scheda Oggetto modulo il campo **Stipendio** del primo oggetto **Drop oppure selezionare il campo qui** .
+   * Selezionare o trascinare dalla scheda Oggetto Forms il campo **Stipendio** del primo oggetto **Drop oppure selezionare il campo qui** .
 
    * Selezionare **Plus** dal campo **Seleziona operatore** .
 
-   * Selezionare o trascinare il campo Stipendio **del** coniuge dalla scheda Oggetto Forms nell&#39;altro oggetto **Drop oppure selezionare il campo qui** .
+   * Selezionare o trascinare dalla scheda Oggetto Forms il campo Stipendio **** coniuge nell&#39;altro oggetto **Drop oppure selezionare il campo qui** .
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -499,7 +499,7 @@ Effettuare le seguenti operazioni per scrivere le regole:
 
    Nell&#39;istruzione When:
 
-   * Selezionare o trascinare dalla scheda Oggetto Forms il campo Stato **** civile del primo oggetto **Drop oppure selezionare il campo qui** .
+   * Selezionare o trascinare dalla scheda Oggetto Forms il campo Stato **** civile nel primo oggetto **Drop oppure selezionare il campo qui** .
 
    * Seleziona **è uguale** al campo **Seleziona operatore** .
 
@@ -642,7 +642,7 @@ area = function(len) {
 
 **Espressione di funzione e istruzione**
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -652,7 +652,7 @@ b.area = function(len) {
 
 **Dichiarazione di funzione come variabile**
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -665,7 +665,7 @@ Limitazione: la funzione personalizzata seleziona solo la prima dichiarazione di
 
 **Dichiarazione di funzione come oggetto**
 
-```
+```javascript
 var c = {
     b : {
         /** */
@@ -713,7 +713,7 @@ Per copiare e incollare le regole, effettuate le seguenti operazioni:
 
    Per informazioni sulla gestione delle regole esistenti, consultate [Gestire le regole](../../forms/using/rule-editor.md#p-manage-rules-p).
 
-1. Selezionate la casella di controllo accanto al titolo della regola. Vengono visualizzate ulteriori opzioni per gestire la regola. Tocca **Copia**.
+1. Selezionare la casella di controllo accanto al titolo della regola. Vengono visualizzate ulteriori opzioni per gestire la regola. Tocca **Copia**.
 
    ![copyrule2](assets/copyrule2.png)
 
@@ -765,9 +765,9 @@ Se l&#39;utente indica che ha soggiornato presso il suo attuale indirizzo di res
 
 ## Impatto dell&#39;editor di regole sugli script esistenti {#impact-of-rule-editor-on-existing-scripts}
 
-Nelle versioni AEM Forms precedenti al feature pack 1 di AEM 6.1 per moduli, gli autori e gli sviluppatori dei moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamenti dinamici ai moduli adattivi. La scheda Script viene ora sostituita dall&#39;editor di regole.
+Nelle versioni AEM Forms precedenti al AEM 6.1 del feature pack 1 per Forms, gli autori e gli sviluppatori di moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamenti dinamici ai moduli adattivi. La scheda Script viene ora sostituita dall&#39;editor di regole.
 
-Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell&#39;editor delle regole. Anche se non è possibile visualizzarli o modificarli nell&#39;editor visivo, se si fa parte del gruppo di utenti che si occupano di moduli è possibile modificare gli script nell&#39;editor di codice.
+Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell&#39;editor delle regole. Anche se non è possibile visualizzarli o modificarli nell&#39;editor visivo, se si fa parte del gruppo di utenti di moduli è possibile modificare gli script nell&#39;editor di codice.
 
 ## Regole di esempio {#example}
 
@@ -785,9 +785,9 @@ Richiamo del servizio del modello dati del modulo utilizzando la regola del modu
 
 In un modulo di domanda di prestito, si desidera verificare se il richiedente è un cliente esistente o meno. In base alle informazioni fornite dall&#39;utente, il campo ID cliente deve essere visualizzato o nascosto. Inoltre, se l&#39;utente è un cliente esistente, è necessario impostare l&#39;attenzione sul campo ID cliente. Il modulo di domanda di prestito include i seguenti componenti:
 
-* Un pulsante di scelta, **Siete già clienti Geometrixx?**, che fornisce le opzioni Sì e No. Il valore per Sì è **0** e No è **1**.
+* Un pulsante di scelta, **Sei un cliente Geometrixx esistente?**, che fornisce le opzioni Sì e No. Il valore per Sì è **0** e No è **1**.
 
-* Un campo di testo, ID **cliente** Geometrixx, per specificare l’ID cliente.
+* Un campo di testo, **Geometrixx ID** cliente, per specificare l&#39;ID cliente.
 
 Quando si scrive una regola Quando sul pulsante di scelta per implementare questo comportamento, la regola viene visualizzata come segue nell&#39;editor di regole visive.  ![quando-rule-example](assets/when-rule-example.png)
 
