@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 1%
 
 ---
 
@@ -65,12 +68,15 @@ Controllate i seguenti parametri:
    Verificate che lo stato dei seguenti bundle sia &quot;attivo&quot;:
 
    * scala-lang.bundle [osgi]
+
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Modulo di rendering Adobe XFA
+   *  Modulo di rendering Forms XFA Adobe
+
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Adobe XFA Forms LC Connector
+   *  Adobe XFA Forms LC Connector
+
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
 ## Problema: Rendering del modulo senza stili {#problem-form-renders-without-styles}
@@ -111,7 +117,7 @@ Controllate i seguenti parametri:
 
 ## Problema: Impossibile inviare il modulo {#problem-unable-to-submit-the-form}
 
-1. Verifica di disporre dei diritti di accesso al server AEM e di essere connesso al server.
+1. Verificate di disporre dei diritti di accesso al server AEM e di essere connessi al server.
 1. Verificate che il parametro submitUrl sia corretto.
 1. Abilitare i registri lato client come indicato in [Registri per i moduli](/help/forms/using/enable-logs.md) HTML5 utilizzando l&#39;opzione di debug come **1-a5-b5-c5**. Quindi, eseguite il rendering del modulo e fate clic su Invia. Aprite la console di debug del browser e verificate se si è verificato un errore.
 1. Individuare i registri del server come indicato in [Registri per i moduli](/help/forms/using/enable-logs.md)HTML5. Verificare se si è verificato un errore nei registri del server durante l&#39;invio.
@@ -134,7 +140,7 @@ Controllate i seguenti parametri:
 
 1. Controllate il contenuto di js.txt e accertatevi che contenga le voci seguenti.
 
-   ```
+   ```javascript
    ../Namespace.js
    I18N.js
    ../LogMessages.js
