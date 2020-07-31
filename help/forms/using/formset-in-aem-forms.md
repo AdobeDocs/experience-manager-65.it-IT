@@ -10,7 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+workflow-type: tm+mt
+source-wordcount: '2860'
+ht-degree: 0%
 
 ---
 
@@ -19,45 +22,46 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
 ## Panoramica {#overview}
 
-Spesso ai clienti viene richiesto di inviare più moduli per richiedere un servizio o un benefit. Si tratta di trovare tutti i moduli pertinenti; e riempirli, inviarli e tenerne traccia separatamente. Inoltre, devono compilare i dettagli comuni più volte tra i moduli. L&#39;intero processo diventa complesso e soggetto a errore se comporta un numero elevato di moduli. La funzione per i set di moduli di AEM Forms consente di semplificare l&#39;esperienza utente in tali scenari.
+Spesso ai clienti viene richiesto di inviare più moduli per richiedere un servizio o un benefit. Si tratta di trovare tutti i moduli pertinenti; e riempirli, inviarli e tenerne traccia separatamente. Inoltre, devono compilare i dettagli comuni più volte nei diversi moduli. L&#39;intero processo diventa complesso e soggetto a errore se si tratta di un numero elevato di moduli. La funzione dei set di moduli dei AEM Forms può semplificare l&#39;esperienza utente in tali scenari.
 
- Un set di moduli è un insieme di moduli HTML5 raggruppati e presentati come un singolo set di moduli agli utenti finali. Quando gli utenti finali iniziano a compilare un set di moduli, si passa direttamente da un modulo all&#39;altro. Alla fine, è possibile inviare tutti i moduli con un solo clic.
+Un set di moduli è un insieme di moduli HTML5 raggruppati e presentati come un singolo set di moduli per gli utenti finali. Quando gli utenti finali iniziano a compilare un set di moduli, si passa direttamente da un modulo all&#39;altro. Alla fine, è possibile inviare tutti i moduli con un solo clic.
 
-AEM Forms offre agli autori dei moduli un&#39;interfaccia utente intuitiva per creare, configurare e gestire i set di moduli. L&#39;autore può ordinare i moduli in una sequenza specifica che gli utenti finali dovranno seguire. È inoltre possibile applicare condizioni o espressioni di idoneità a singoli moduli per controllarne la visibilità in base agli input dell&#39;utente. Ad esempio, è possibile configurare il modulo dei dettagli del coniuge in modo che venga visualizzato solo quando lo stato del matrimonio specifica come Sposato.
+I AEM Forms forniscono agli autori dei moduli un&#39;interfaccia utente intuitiva per creare, configurare e gestire i set di moduli. In qualità di autore, è possibile ordinare i moduli in una sequenza specifica che gli utenti finali dovranno seguire. È inoltre possibile applicare condizioni o espressioni di idoneità a singoli moduli per controllarne la visibilità in base agli input dell&#39;utente. Ad esempio, è possibile configurare il modulo dei dettagli del coniuge in modo che venga visualizzato solo quando lo stato del matrimonio specifica come Sposato.
 
 È inoltre possibile configurare campi comuni in diversi moduli per condividere binding dei dati comuni. In presenza di binding dei dati appropriati, agli utenti finali viene richiesto di compilare le informazioni comuni solo una volta che tali informazioni verranno compilate automaticamente nei moduli successivi.
 
-I set di moduli sono supportati anche nell’app AEM Forms, per consentire al personale sul campo di utilizzare un set di moduli offline, di visitare i clienti, di inserire dati e di sincronizzarsi successivamente con il server AEM Forms per inviare i dati dei moduli ai processi aziendali.
+I set di moduli sono supportati anche nell&#39;app AEM Forms, consentendo al personale addetto al campo di utilizzare un set di moduli offline, di visitare i clienti, di inserire dati e di sincronizzarsi successivamente con il server AEM Forms per inviare i dati dei moduli ai processi aziendali.
 
 ## Creazione e gestione di un set di moduli {#creating-and-managing-form-set}
 
 È possibile associare diversi XDP o modelli di modulo, creati utilizzando Designer, a un set di moduli. I set di moduli possono quindi essere utilizzati per eseguire il rendering selettivo degli XDP in base ai valori immessi dagli utenti nei moduli iniziali e nei relativi profili.
 
-Utilizzare l&#39;interfaccia [utente di](../../forms/using/introduction-managing-forms.md) AEM Forms per gestire tutti i moduli, i set di moduli e le risorse correlate.
+Utilizzare l&#39;interfaccia [utente](../../forms/using/introduction-managing-forms.md) AEM Forms per gestire tutti i moduli, i set di moduli e le risorse correlate.
 
 ### Creare un set di moduli {#create-a-form-set}
 
 Per creare un set di moduli, effettuare le seguenti operazioni:
 
-1. Selezionare Moduli > Moduli e documenti.
+1. Selezionate Forms > Forms e documenti.
 1. Selezionare Crea > Set di moduli.
 
 1. Nella pagina Aggiungi proprietà, aggiungi i seguenti dettagli e fai clic su Avanti.
 
-   * Titolo: Specifica il titolo del documento. Il titolo consente di identificare il set di moduli nell’interfaccia utente di AEM Forms.
+   * Titolo: Specifica il titolo del documento. Il titolo consente di identificare il set di moduli nell’interfaccia utente dei AEM Forms.
    * Descrizione: Specifica le informazioni dettagliate sul documento.
    * Tag: Specifica i tag per identificare in modo univoco il set di moduli. I tag consentono di effettuare ricerche nel set di moduli. Per creare i tag, digitate nuovi nomi di tag nella casella Tag.
-   * Invia URL: Specifica l&#39;URL in cui vengono inviati i dati per il caso di rappresentazione autonoma del set di moduli (caso di utilizzo dell&#39;app non AEM Forms). I dati vengono inviati a questo endpoint come multipart/formdata con il seguente parametro di richiesta:
+   * Invia URL: Specifica l&#39;URL in cui i dati inviati vengono inviati per il caso di rappresentazione autonoma del set di moduli (caso di utilizzo dell&#39;app non AEM Forms). I dati vengono inviati a questo endpoint come multipart/formdata con il seguente parametro di richiesta:
    * dataXML: Questo parametro contiene una rappresentazione XML dei dati del set di moduli inviati. Se tutti i moduli del set di moduli utilizzano uno schema comune, l&#39;XML viene generato in base a tale schema. In caso contrario, il tag XML principale contiene un tag secondario per ciascun modulo compilato nel set di moduli che contiene i dati per gli allegati del modulo.
-   * formsetPath: Percorso del modulo impostato in CRXDE inviato.
+   * formsetPath: Percorso del modulo impostato in CRXDE, inviato.
    * Profilo di rendering HTML: È possibile configurare determinate opzioni, quali campi mobili, allegati e supporto delle bozze (per le rappresentazioni dei set di moduli indipendenti) per personalizzare l&#39;aspetto, il comportamento e le interazioni del set di moduli. È possibile personalizzare o estendere il profilo esistente per modificare eventuali impostazioni del profilo modulo HTML.
+
    ![Set di moduli: aggiungi proprietà](assets/createformset1.png)
 
 1. Nella schermata Seleziona moduli vengono visualizzati i moduli XDP o i file XDP disponibili. Cercare e selezionare i moduli da includere nel set di moduli, quindi fare clic su Aggiungi al set di moduli. Se necessario, cercare di nuovo i moduli da aggiungere. Dopo aver aggiunto tutti i moduli al set di moduli, fare clic su Avanti.
 
    >[!NOTE]
    >
-   >Assicurarsi che i nomi dei campi nei moduli XDP non contengano il carattere punto. In caso contrario, gli script che tentano di risolvere i campi, contenenti caratteri punto, non possono risolverli.
+   >Assicurarsi che i nomi dei campi nei moduli XDP non contengano il carattere punto. In caso contrario, gli script che tentano di risolvere i campi, contenenti caratteri punto, non sono in grado di risolverli.
 
 1. Nella pagina Configura moduli è possibile effettuare le seguenti operazioni:
 
@@ -65,6 +69,7 @@ Per creare un set di moduli, effettuare le seguenti operazioni:
    * Identificatore modulo: Specifica un&#39;identità univoca per i moduli da utilizzare nelle espressioni di idoneità.
    * Radice dati: Per ciascun modulo del set di moduli, l&#39;autore può configurare l&#39;XPATH in cui i dati di quel particolare modulo sono posizionati nel codice XML inviato. Il valore predefinito è /. Se tutti i moduli del set di moduli sono associati allo schema e condividono lo stesso schema XML, è possibile modificare questo valore. È consigliabile che ogni campo del modulo disponga di un binding dati appropriato specificato in XDP. Se due campi di due moduli diversi condividono il binding dei dati comune, nel campo del secondo modulo vengono visualizzati i valori precompilati del primo modulo. Non eseguire il binding di due sottomoduli con lo stesso contenuto interno con lo stesso nodo XML. Per ulteriori informazioni sulla struttura XML del set di moduli, vedere [Precompila XML per il set](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p)di moduli.
    * Espressione di idoneità: Specifica un&#39;espressione JavaScript che valuta un valore booleano e indica se un modulo in un set di moduli è idoneo alla compilazione. Se è false, all&#39;utente non viene chiesto né mostrato il modulo da compilare. In genere, l&#39;espressione si basa sui valori dei campi acquisiti prima del modulo. Le espressioni contengono anche chiamate all&#39;API fs.valueOf set di moduli per estrarre i valori compilati dall&#39;utente in un campo di un modulo del set di moduli:
+
    *fs.valueOf(&lt;Identificatore modulo>, &lt;espressione fieldSom>) > &lt;valore>*
 
    Ad esempio, se nel set di moduli sono presenti due moduli: spese aziendali e spese di viaggio, è possibile aggiungere uno snippet JavaScript nel campo Espressione di idoneità per entrambi i moduli per controllare l&#39;input dell&#39;utente per il tipo di spesa in un modulo. Se l&#39;utente sceglie Spese commerciali, viene eseguito il rendering del modulo Spese aziendali per l&#39;utente finale. Oppure, se l&#39;utente sceglie le spese di viaggio, all&#39;utente finale verrà eseguito il rendering di un altro modulo. Per ulteriori informazioni, vedere Espressione di idoneità.
@@ -75,13 +80,13 @@ Per creare un set di moduli, effettuare le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Tutti i moduli utilizzati nel set di moduli sono gestiti dall&#39;interfaccia utente di AEM Forms.
+   >Tutti i moduli utilizzati nel set di moduli sono gestiti dall&#39;interfaccia utente AEM Forms.
 
 ### Gestione di un set di moduli {#managing-a-form-set}
 
 Una volta creato il set di moduli, è possibile effettuare le seguenti operazioni su tale set di moduli:
 
-* Con un solo clic: Quando il set di moduli viene creato ed elencato nella pagina della risorsa principale, è possibile fare clic sul set per visualizzarlo. Un set di moduli si apre e visualizza tutti i modelli di modulo (XDP) presenti nel set.
+* Con un solo clic: Quando il set di moduli viene creato ed elencato nella pagina della risorsa principale, è possibile fare clic sul set di moduli per visualizzarlo. Un set di moduli si apre e visualizza tutti i modelli di modulo (XDP) presenti in tale set.
 * Modifica: Facendo clic su Modifica dopo aver selezionato un set di moduli, si apre la schermata Configura modulo visualizzata sopra in Passaggi per creare un set di moduli. È possibile eseguire tutte le funzionalità descritte in questo punto.
 * Copia + Incolla: Questo consente di copiare l’intero set di moduli da una posizione e incollarlo nello stesso percorso o in qualsiasi altra cartella.
 * Scarica: È possibile scaricare il set di moduli con tutte le relative dipendenze.
@@ -97,7 +102,7 @@ Una volta creato il set di moduli, è possibile effettuare le seguenti operazion
 
 Per modificare un set di moduli, effettuare le seguenti operazioni:
 
-1. Selezionare Moduli > Moduli e documenti.
+1. Selezionate Forms > Forms e documenti.
 1. Individuare il set di moduli da modificare. Passate il puntatore del mouse sopra di esso e selezionate Modifica ( ![icona](assets/editicon.png)di modifica).
 1. Nella pagina Configura moduli è possibile modificare quanto segue:
 
@@ -105,11 +110,12 @@ Per modificare un set di moduli, effettuare le seguenti operazioni:
    * Identificatore  modulo
    * Radice dati
    * Espressione di idoneità
+
    È inoltre possibile fare clic sull&#39;icona Elimina corrispondente per eliminare il modulo dal set di moduli.
 
 ## Set di moduli in Process Management {#form-set-in-process-management}
 
-Dopo aver creato un set di moduli utilizzando l&#39;interfaccia utente di AEM Forms Management, è possibile utilizzare il set di moduli in un punto iniziale o in un&#39;attività Assegna attività tramite Workbench.
+Dopo aver creato un set di moduli utilizzando l&#39;interfaccia utente Gestione AEM Forms, è possibile utilizzare il set di moduli in un punto iniziale o in un&#39;attività Assegna attività tramite Workbench.
 
 ### Utilizzo del set di moduli in Task o Punto iniziale {#using-form-set-in-task-or-start-point}
 
@@ -117,7 +123,7 @@ Dopo aver creato un set di moduli utilizzando l&#39;interfaccia utente di AEM Fo
 
    ![Progettare un processo: usare una risorsa CRX](assets/formsetinprocessmgmt1.png)
 
-1. Selezionate un set di moduli per filtrare il set di moduli nell’archivio AEM (CRX).
+1. Selezionare il set di moduli per filtrare il set di moduli AEM repository (CRX).
 
    ![Progettare un processo: Seleziona risorsa modulo, finestra di dialogo](assets/formsetinprocessmgmt2.png)
 
@@ -150,7 +156,7 @@ Utilizzo valido dell&#39;API:
 
 Utilizzo non valido dell&#39;API:
 
-```
+```javascript
 var formUid = "form1";
  var fieldSOM = “xfa.form.form1.subform1.field1"; fs.valueOf(formUid, fieldSOM);
 ```
@@ -191,7 +197,7 @@ Ogni modulo ha un campo denominato comune, denominato &quot;field&quot; e un cam
 
 >[!NOTE]
 >
->Il tag XML principale può avere qualsiasi nome, ma i tag degli elementi corrispondenti ai campi devono avere lo stesso nome del campo. La gerarchia dell&#39;XML deve simulare la gerarchia del modulo, il che significa che l&#39;XML deve avere i tag corrispondenti per racchiudere i sottomoduli.
+>Il tag XML principale può avere un nome qualsiasi, ma i tag degli elementi corrispondenti ai campi devono avere lo stesso nome del campo. La gerarchia dell&#39;XML deve simulare la gerarchia del modulo, il che significa che l&#39;XML deve avere i tag corrispondenti per racchiudere i sottomoduli.
 
 Lo snippet XML di cui sopra mostra che l&#39;XML di precompilazione per il set di moduli è un&#39;unione degli snippet XML di precompilazione dei singoli moduli. Se alcuni campi nei diversi moduli presentano una gerarchia di dati o uno schema simile, i campi vengono precompilati con gli stessi valori. In questo esempio, tutti e tre i moduli sono precompilati con lo stesso valore per il campo comune &quot;field&quot;. Si tratta di un modo semplice per trasmettere i dati da un modulo all&#39;altro. Ciò può essere ottenuto anche mediante il binding dei campi con lo stesso schema o riferimento dati. Se si desidera separare i dati del set di moduli in base allo schema del modulo. Questo può essere ottenuto specificando l&#39;attributo &quot;data root&quot; del modulo, durante la creazione del set di moduli (il valore predefinito è &quot;/&quot;, che viene mappato sul tag principale del set di moduli).
 
@@ -238,7 +244,7 @@ In un set di moduli, l&#39;XML ha definito uno schema XML con la sintassi seguen
 
 >[!NOTE]
 >
->Se sono presenti due moduli con origini dati sovrapposte o la gerarchia di elementi di un modulo si sovrappone alla gerarchia di dati principale di un altro modulo, nel file XML di precompilazione i valori degli elementi sovrapposti vengono uniti. L&#39;XML di invio ha una struttura simile all&#39;XML di precompilazione, ma l&#39;XML di invio ha più tag wrapper e alcuni tag di dati contestuali del set di moduli sono aggiunti alla fine.
+>Se nel file XML di precompilazione sono presenti due moduli con origini dati sovrapposte o la gerarchia di elementi di un modulo si sovrappone alla gerarchia di dati principale di un altro modulo, i valori degli elementi sovrapposti vengono uniti. L&#39;XML di invio ha una struttura simile all&#39;XML di precompilazione, ma l&#39;XML di invio ha più tag wrapper e alcuni tag di dati contestuali del set di moduli sono aggiunti alla fine.
 
 ### Descrizione degli elementi XML di precompilazione {#prefill-xml-elements-description}
 
@@ -274,9 +280,9 @@ L&#39;elemento principale del set di moduli XML. È consigliabile non utilizzare
 
 cardinalità: [1]
 
-submitXML:P
+submitXML: P
 
-prefillXML:O
+prefillXML: O
 
 `children: xdp:xdp/rootElement`
 
@@ -332,17 +338,17 @@ Questo tag indica l’inizio di HTML5 Form XML. Questo viene aggiunto nel file X
 
 `children: controlled by the Forms in Form set`
 
-Il nome rootElement è solo un segnaposto. Il nome effettivo viene selezionato dai moduli utilizzati nel set di moduli. La struttura ad albero secondaria che inizia con rootElement contiene i dati dei campi e dei sottomoduli all&#39;interno dei moduli nel set di moduli. Esistono più fattori che determinano la struttura dell&#39;elemento rootElement e dei relativi elementi secondari.
+Il nome rootElement è solo un segnaposto. Il nome effettivo viene selezionato dai moduli utilizzati nel set di moduli. La struttura ad albero secondaria che inizia con rootElement contiene i dati dei campi e dei sottomoduli all&#39;interno dell&#39;Forms nel set di moduli. Esistono più fattori che determinano la struttura dell&#39;elemento rootElement e dei relativi elementi secondari.
 
 In XML di precompilazione, questo tag è facoltativo, ma se manca, l&#39;intero XML viene ignorato.
 
 NOME DEL TAG ELEMENTO PRINCIPALE
 
-Nel caso esista un elemento principale nel file XML di precompilazione, il nome di tale elemento viene assunto anche nel file XML di invio. Se non è presente un codice xml di precompilazione, il nome dell&#39;elemento rootElement è il nome del sottomodulo principale del primo modulo del set di moduli con una proprietà dataRoot impostata su &quot;/&quot;. In assenza di tale modulo, il nome rootElement è **fs_dummy_root**, che è una parola chiave riservata.
+Nel caso in cui vi sia un elemento principale nel file XML di precompilazione, il nome di tale elemento viene assunto anche nel file XML di invio. Se non è presente un codice xml di precompilazione, il nome dell&#39;elemento rootElement è il nome del sottomodulo principale del primo modulo del set di moduli con una proprietà dataRoot impostata su &quot;/&quot;. In assenza di tale modulo, il nome rootElement è **fs_dummy_root**, che è una parola chiave riservata.
 
 ## Set di moduli nell&#39;app AEM Forms {#formset-in-workspace-app}
 
-L&#39;app AEM Forms consente ai lavoratori del settore di sincronizzare i dispositivi mobili con un server AEM Forms e di lavorare sulle loro attività. L&#39;applicazione funziona anche quando il dispositivo è offline, salvando i dati localmente sul dispositivo. Utilizzando le funzioni di annotazione, come le fotografie, i dipendenti sul campo possono fornire informazioni precise da integrare nei processi aziendali.
+L&#39;app AEM Forms consente ai lavoratori del campo di sincronizzare i loro dispositivi mobili con un server AEM Forms e di lavorare sulle loro attività. L&#39;applicazione funziona anche quando il dispositivo è offline, salvando i dati localmente sul dispositivo. Utilizzando le funzioni di annotazione, come le fotografie, i dipendenti sul campo possono fornire informazioni precise da integrare nei processi aziendali.
 
 <!-- Update link as it is a 404 - For more information on AEM Forms app, see [AEM Forms app overview](/help/forms/using/mobile-workspace-overview.md).-->
 
@@ -366,7 +372,7 @@ I seguenti pattern di dati non sono completamente supportati nel set di moduli:
   </tr>
   <tr>
    <td>Pattern di dati multipli</td>
-   <td>num{zz,zzz}| num{z,zzz,zzz}</td>
+   <td>num{zz,zzz} | num{z,zzz,zzz}</td>
   </tr>
   <tr>
    <td>Pattern di abbreviazione </td>
