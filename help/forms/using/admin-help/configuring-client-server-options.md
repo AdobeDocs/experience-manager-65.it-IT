@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '10273'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 **URL di base:** L&#39;URL di protezione del documento di base, contenente il nome del server e la porta. Le informazioni aggiunte alla base creano gli URL di connessione. Ad esempio, /edc/Main.do viene aggiunto per accedere alle pagine Web. Gli utenti rispondono anche agli inviti di registrazione degli utenti esterni tramite questo URL.
 
-Se si utilizza IPv6, immettere l&#39;URL di base come nome del computer o nome DNS. Se si utilizza un indirizzo IP numerico, Acrobat non riuscirà ad aprire i file protetti tramite criterio. Inoltre, utilizzate l&#39;URL HTTP sicuro (HTTPS) per il vostro server.
+Se si utilizza IPv6, immettere l&#39;URL di base come nome del computer o nome DNS. Se utilizzate un indirizzo IP numerico,  Acrobat non riuscirà ad aprire i file protetti tramite criterio. Inoltre, utilizzate l&#39;URL HTTP sicuro (HTTPS) per il vostro server.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Per informazioni sul funzionamento del lease e della sincronizzazione offline, c
 
 **Consenti accesso utenti anonimi:** Selezionate questa opzione per abilitare la possibilità di creare criteri condivisi e personali che consentano agli utenti anonimi di aprire documenti protetti tramite criterio. Gli utenti che non dispongono di account possono accedere al documento, ma non possono accedere a Document Security o utilizzare altri documenti protetti tramite criterio.
 
-**Disattiva accesso ai client della versione 7:** Specifica se gli utenti possono utilizzare Acrobat o Reader 7.0 per connettersi al server. Quando questa opzione è selezionata, gli utenti devono utilizzare Acrobat o Reader 8.0 e versioni successive per completare le operazioni di protezione dei documenti sui documenti PDF. Se i criteri richiedono l&#39;esecuzione in modalità certificata di Acrobat o Reader 8.0 e versioni successive all&#39;apertura dei documenti protetti tramite criterio, è consigliabile disattivare l&#39;accesso ad Acrobat o Reader 7. Consultate Specificare le autorizzazioni del documento per utenti e gruppi.
+**Disattiva accesso ai client della versione 7:** Specifica se gli utenti possono utilizzare  Acrobat o l&#39;Reader 7.0 per connettersi al server. Quando questa opzione è selezionata, gli utenti devono utilizzare  Acrobat o l&#39;Reader 8.0 e versioni successive per completare le operazioni di protezione dei documenti sui documenti PDF. Se i criteri richiedono che  Acrobat o l&#39;Reader 8.0 e versioni successive venga eseguito in modalità certificata all&#39;apertura dei documenti protetti tramite criterio, è necessario disattivare l&#39;accesso a  Acrobat o all&#39;Reader 7. Consultate Specificare le autorizzazioni del documento per utenti e gruppi.
 
 **Consenti accesso offline per documento** Selezionate questa opzione per specificare l&#39;accesso offline per documento. Se questa impostazione è abilitata, l&#39;utente avrà accesso non in linea solo ai documenti che l&#39;utente ha aperto online almeno una volta.
 
@@ -55,25 +55,25 @@ Per informazioni sul funzionamento del lease e della sincronizzazione offline, c
 
 **Consenti autenticazione** estesa Selezionate questa opzione per abilitare l&#39;autenticazione estesa e immettete l&#39;URL di destinazione autenticazione estesa.
 
-Selezionando questa opzione, le applicazioni client possono utilizzare l&#39;autenticazione estesa. L&#39;autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server moduli AEM. Ad esempio, ora gli utenti possono utilizzare l&#39;autenticazione basata su SAML invece del nome utente/password dei moduli AEM, da Acrobat e Reader Client. Per impostazione predefinita, l’URL di destinazione contiene *localhost* come nome del server. Sostituite il nome del server con un nome host completo. Il nome host nell&#39;URL di destinazione viene popolato automaticamente dall&#39;URL di base, se l&#39;autenticazione estesa non è ancora abilitata. Consultate [Aggiunta del provider](configuring-client-server-options.md#add-the-extended-authentication-provider)di autenticazione estesa.
+Selezionando questa opzione, le applicazioni client possono utilizzare l&#39;autenticazione estesa. L&#39;autenticazione estesa fornisce processi di autenticazione personalizzati e diverse opzioni di autenticazione configurate sul server AEM moduli. Ad esempio, gli utenti possono ora provare l&#39;autenticazione basata su SAML invece di AEM nome utente/password del modulo, da  Acrobat e Reader Client. Per impostazione predefinita, l’URL di destinazione contiene *localhost* come nome del server. Sostituite il nome del server con un nome host completo. Il nome host nell&#39;URL di destinazione viene popolato automaticamente dall&#39;URL di base, se l&#39;autenticazione estesa non è ancora abilitata. Consultate [Aggiunta del provider](configuring-client-server-options.md#add-the-extended-authentication-provider)di autenticazione estesa.
 
-***nota **: L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.*
+***nota **: L&#39;autenticazione estesa è supportata su Apple Mac OS X con  versione 11.0.6 e successiva di Adobe Acrobat.*
 
-**Larghezza di controllo HTML preferita per l&#39;autenticazione** estesa Consente di specificare la larghezza della finestra di dialogo di autenticazione estesa che si apre in Acrobat per l&#39;immissione delle credenziali utente.
+**Larghezza di controllo HTML preferita per l&#39;autenticazione** estesa Consente di specificare la larghezza della finestra di dialogo di autenticazione estesa che si apre in  Acrobat per l&#39;immissione delle credenziali utente.
 
-**Altezza di controllo HTML preferita per l&#39;autenticazione** estesa Consente di specificare l&#39;altezza della finestra di dialogo di autenticazione estesa che si apre in Acrobat per l&#39;immissione delle credenziali utente.
+**Altezza di controllo HTML preferita per l&#39;autenticazione** estesa Specificate l&#39;altezza della finestra di dialogo di autenticazione estesa che si apre in  Acrobat per l&#39;immissione delle credenziali utente.
 
 ***nota **: I limiti di larghezza e altezza per questa finestra di dialogo sono i seguenti:*Larghezza: Minimo = 400, massimo = 900
 
 Altezza: Minimo = 450; max = 800
 
-**Abilita cache credenziali client:** Selezionate questa opzione per consentire agli utenti di memorizzare nella cache le credenziali (nome utente e password). Quando le credenziali degli utenti vengono memorizzate nella cache, non devono immettere le credenziali ogni volta che aprono un documento o quando fanno clic sul pulsante Aggiorna nella pagina Gestisci criteri di protezione di Adobe Acrobat. È possibile specificare il numero di giorni prima che gli utenti debbano nuovamente fornire le proprie credenziali. Impostando il numero di giorni su 0, le credenziali possono essere memorizzate nella cache a tempo indeterminato.
+**Abilita cache credenziali client:** Selezionate questa opzione per consentire agli utenti di memorizzare nella cache le credenziali (nome utente e password). Quando le credenziali degli utenti vengono memorizzate nella cache, non devono immettere le credenziali ogni volta che aprono un documento o quando fanno clic sul pulsante Aggiorna nella pagina Gestisci criteri di protezione di  Adobe Acrobat. È possibile specificare il numero di giorni prima che gli utenti debbano nuovamente fornire le proprie credenziali. Impostando il numero di giorni su 0, le credenziali possono essere memorizzate nella cache a tempo indeterminato.
 
 ## Configurazione di utenti e amministratori per la protezione dei documenti {#configuring-document-security-users-and-administrators}
 
 ### Assegnazione di ruoli di protezione dei documenti agli amministratori {#assigning-document-security-roles-to-administrators}
 
-L&#39;ambiente dei moduli AEM contiene uno o più utenti amministratori che dispongono dei privilegi appropriati per la creazione di utenti e gruppi. Se l&#39;organizzazione utilizza la protezione dei documenti, almeno un amministratore deve anche avere il privilegio di gestire gli utenti invitati e locali.
+L&#39;ambiente AEM dei moduli contiene uno o più utenti amministratori che dispongono dei privilegi appropriati per la creazione di utenti e gruppi. Se l&#39;organizzazione utilizza la protezione dei documenti, almeno un amministratore deve anche avere il privilegio di gestire gli utenti invitati e locali.
 
 Per accedere alla console di amministrazione, gli amministratori devono anche avere il ruolo utente della console di amministrazione. Consultate [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
 
@@ -83,7 +83,7 @@ Per visualizzare gli utenti e i gruppi nei domini selezionati durante le ricerch
 
 L&#39;elenco di utenti e gruppi visibile è visibile al coordinatore del set di criteri e viene utilizzato per limitare i domini che l&#39;utente finale può esplorare quando sceglie utenti o gruppi da aggiungere ai criteri. Se questa attività non viene eseguita, il coordinatore del set di criteri non troverà utenti o gruppi da aggiungere al criterio. Per ciascun set di criteri può essere presente più di un coordinatore set di criteri.
 
-1. Dopo aver installato e configurato l&#39;ambiente dei moduli AEM con la protezione dei documenti, configura tutti i domini appropriati in Gestione utente. <!-- Fix broken link (See Setting up and managing domains) -->
+1. Dopo aver installato e configurato l&#39;ambiente dei moduli AEM con la protezione dei documenti, impostare tutti i domini appropriati in Gestione utente. <!-- Fix broken link (See Setting up and managing domains) -->
 
    ***nota **: È necessario creare i domini prima di poter creare qualsiasi criterio.*
 
@@ -95,11 +95,11 @@ L&#39;elenco di utenti e gruppi visibile è visibile al coordinatore del set di 
 
 ## Aggiunta del provider di autenticazione estesa {#add-the-extended-authentication-provider}
 
-I moduli AEM forniscono un esempio di configurazione personalizzabile per il proprio ambiente. Effettuate le seguenti operazioni:
+AEM moduli offre una configurazione di esempio che è possibile personalizzare in base all&#39;ambiente in uso. Effettuate le seguenti operazioni:
 
 >[!NOTE]
 >
->L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
+>L&#39;autenticazione estesa è supportata su Apple Mac OS X con  versione 11.0.6 e successiva di Adobe Acrobat.
 
 1. Ottenere il file WAR di esempio distribuirlo. Consultate la guida all’installazione appropriata per il server delle applicazioni.
 1. Verificare che il server dei moduli disponga di un nome completo invece degli indirizzi IP come URL di base e che sia un URL HTTPS. Consultate Impostazioni [di configurazione del](configuring-client-server-options.md#server-configuration-settings)server.
@@ -108,11 +108,11 @@ I moduli AEM forniscono un esempio di configurazione personalizzabile per il pro
 
 ### Aggiunta di URL di reindirizzamento SSO per l&#39;autenticazione estesa {#add-sso-redirect-urls-for-extended-authentication}
 
-Se l&#39;autenticazione estesa è abilitata, gli utenti che aprono un documento protetto tramite criterio in Acrobat XI o Reader XI ricevono una finestra di dialogo per l&#39;autenticazione. Questa finestra di dialogo carica la pagina HTML specificata come URL di destinazione dell&#39;autenticazione estesa nelle impostazioni del server di protezione del documento. Consultate Impostazioni [di configurazione del](configuring-client-server-options.md#server-configuration-settings)server.
+Con l&#39;autenticazione estesa abilitata, gli utenti che aprono un documento protetto tramite criterio in  Acrobat XI o nell&#39;Reader XI ricevono una finestra di dialogo per l&#39;autenticazione. Questa finestra di dialogo carica la pagina HTML specificata come URL di destinazione dell&#39;autenticazione estesa nelle impostazioni del server di protezione del documento. Consultate Impostazioni [di configurazione del](configuring-client-server-options.md#server-configuration-settings)server.
 
 >[!NOTE]
 >
->L&#39;autenticazione estesa è supportata su Apple Mac OS X con Adobe Acrobat versione 11.0.6 e successiva.
+>L&#39;autenticazione estesa è supportata su Apple Mac OS X con  versione 11.0.6 e successiva di Adobe Acrobat.
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione.
 1. Fate clic su Esporta e salvate il file di configurazione sul disco.
@@ -131,7 +131,7 @@ Se l&#39;autenticazione estesa è abilitata, gli utenti che aprono un documento 
 
 la protezione dei documenti consente di utilizzare i documenti protetti tramite criterio offline senza una connessione di rete o Internet. Questa funzionalità richiede che il criterio consenta l&#39;accesso offline, come descritto in [Specificare le autorizzazioni del documento per utenti e gruppi](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Prima che un documento con tale criterio possa essere utilizzato offline, il destinatario deve aprire il documento mentre è in linea e abilitare l&#39;accesso offline, facendo clic su Sì quando richiesto. Il destinatario può anche essere invitato ad autenticare la propria identità. Il destinatario può quindi utilizzare i documenti offline per tutta la durata del periodo di tempo consentito per l&#39;utilizzo offline specificata nel criterio.
 
-Al termine del periodo di tempo consentito per l’utilizzo non in linea, il destinatario deve sincronizzarsi nuovamente con la protezione del documento aprendo un documento in linea oppure utilizzando un comando di menu delle estensioni Acrobat o Acrobat Reader DC per la sincronizzazione. (Vedere la Guida *di* Acrobat o la Guida *delle estensioni di* Acrobat Reader DC appropriata.)
+Al termine del periodo di tempo consentito per l&#39;utilizzo non in linea, il destinatario deve sincronizzarsi nuovamente con la protezione del documento aprendo un documento online o utilizzando un comando di menu  estensioni Acrobat o Acrobat Reader DC per la sincronizzazione. (vedere *Guida* di Acrobat o la Guida *delle estensioni* Acrobat Reader DC appropriata).
 
 Poiché i documenti che consentono l&#39;accesso offline richiedono la memorizzazione nella cache del materiale chiave nel computer in cui i file vengono memorizzati offline, il file può essere potenzialmente compromesso se un utente non autorizzato può ottenere il materiale chiave. Per compensare questa possibilità, sono disponibili opzioni di rollover programmate e manuali che è possibile configurare per impedire a una persona non autorizzata di utilizzare la chiave per accedere al documento.
 
@@ -196,7 +196,7 @@ Quando il controllo è abilitato, è possibile visualizzare i dettagli degli eve
 * Eventi di documenti protetti tramite criterio, ad esempio tentativi di apertura di documenti da parte di utenti autorizzati o non autorizzati
 * Eventi dei criteri, quali creazione, modifica, eliminazione, attivazione e disattivazione dei criteri
 * Eventi utente, come inviti e registrazioni di utenti esterni, account utente attivati e disattivati, modifiche alle password utente e aggiornamenti dei profili
-* Eventi dei moduli AEM, come mancata corrispondenza delle versioni, fornitori di autorizzazioni e server di directory non disponibili e modifiche alla configurazione del server
+* AEM eventi dei moduli, ad esempio mancata corrispondenza delle versioni, fornitori di autorizzazioni e server di directory non disponibili e modifiche alla configurazione del server
 
 ### Attivare o disattivare il controllo degli eventi {#enable-or-disable-event-auditing}
 
@@ -239,7 +239,7 @@ Potete attivare e disattivare un messaggio di notifica sulla privacy. Quando abi
 
 ### Importare un tipo di evento di controllo personalizzato {#import-a-custom-audit-event-type}
 
-Se si utilizza un&#39;applicazione abilitata per la protezione dei documenti che supporta il controllo di eventi aggiuntivi, ad esempio eventi specifici per un determinato tipo di file, un partner Adobe può fornire all&#39;utente eventi di controllo personalizzati che è possibile importare in Document Security. Utilizzate questa funzione solo se avete ricevuto tipi di evento personalizzati da un partner Adobe.
+Se si utilizza un&#39;applicazione abilitata per la protezione dei documenti che supporta il controllo di eventi aggiuntivi, ad esempio eventi specifici per un determinato tipo di file, un partner  Adobe può fornire eventi di controllo personalizzati che è possibile importare in Document Security. Utilizzate questa funzione solo se avete ricevuto tipi di eventi personalizzati da un partner di Adobe .
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Configuration > Gestione eventi.
 1. Fate clic su Sfoglia per passare al file XML da importare e fate clic su Importa.
@@ -309,9 +309,9 @@ Potete abilitare e disabilitare il controllo degli eventi e specificare i tipi d
 
 **Cambia criterio sul documento:** Un utente o un amministratore modifica il criterio associato a un documento.
 
-**Pubblica documento come:** Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti non hanno una relazione padre-figlio. Questo evento può essere attivato mediante l’SDK dei moduli AEM.
+**Pubblica documento come:** Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti non hanno una relazione padre-figlio. Questo evento può essere attivato utilizzando l&#39;SDK dei moduli AEM.
 
-**Inserisci documento:** Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti hanno una relazione padre-figlio. Questo evento può essere attivato mediante l’SDK dei moduli AEM.
+**Inserisci documento:** Un nuovo documento con documentName e licenza identici a un documento esistente viene registrato sul server e i documenti hanno una relazione padre-figlio. Questo evento può essere attivato utilizzando l&#39;SDK dei moduli AEM.
 
 **Eventi dei criteri**
 
@@ -365,7 +365,7 @@ Potete abilitare e disabilitare il controllo degli eventi e specificare i tipi d
 
 **L&#39;applicazione client** client sincronizzata deve sincronizzare le informazioni con il server per consentire l&#39;accesso offline.
 
-**Versione non corrispondente:** Versione dell’SDK dei moduli AEM incompatibile con il server che ha tentato di connettersi al server.
+**Versione non corrispondente:** Una versione dell&#39;SDK dei moduli AEM incompatibile con il server ha tentato di connettersi al server.
 
 **Informazioni sulla sincronizzazione della directory:** Queste informazioni non sono disponibili nella pagina Eventi. Le informazioni sulla sincronizzazione della directory corrente, incluso lo stato e l&#39;ora della sincronizzazione correnti dell&#39;ultima sincronizzazione, vengono visualizzate nella pagina Gestione dominio. Per accedere alla pagina Gestione dominio nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Gestione dominio.
 
@@ -420,7 +420,7 @@ Queste impostazioni controllano il testo visualizzato nella finestra di dialogo 
 
 **Personalizzazione per visualizzazione certificato client**
 
-**Visualizza solo emittenti di credenziali attendibili:** Quando questa opzione è selezionata, l&#39;applicazione client presenta all&#39;utente solo i certificati provenienti da emittenti di credenziali per i quali i moduli AEM sono configurati per essere affidabili (consultate Gestione di certificati e credenziali.) Se questa opzione non è selezionata, l&#39;utente riceve un elenco di tutti i certificati presenti nel sistema dell&#39;utente.
+**Visualizza solo emittenti di credenziali attendibili:** Quando questa opzione è selezionata, l&#39;applicazione client presenta all&#39;utente solo i certificati provenienti da emittenti di credenziali che AEM moduli è configurato per l&#39;attendibilità (vedere Gestione di certificati e credenziali.) Se questa opzione non è selezionata, l&#39;utente riceve un elenco di tutti i certificati presenti nel sistema dell&#39;utente.
 
 ## Configurare le filigrane dinamiche {#configure-dynamic-watermarks}
 
@@ -432,7 +432,7 @@ Le filigrane non sono modificabili e pertanto rappresentano un metodo più sicur
 
 La filigrana specificata da un criterio viene visualizzata nel documento protetto tramite criterio quando il destinatario visualizza o stampa il documento. A differenza delle filigrane permanenti, nel documento non viene mai salvata una filigrana dinamica, il che offre la flessibilità necessaria per distribuire un documento in un ambiente Intranet in modo da garantire che l&#39;applicazione di visualizzazione visualizzi l&#39;identità dell&#39;utente specifico. Inoltre, se un documento ha più utenti, l&#39;uso della filigrana dinamica consente di utilizzare un documento invece di più versioni, ognuna con una filigrana diversa. La filigrana visualizzata riflette l&#39;identità dell&#39;utente corrente.
 
-Le filigrane dinamiche sono diverse dalle filigrane che gli utenti possono aggiungere direttamente al documento in Acrobat. In un documento protetto tramite criterio è quindi possibile inserire due filigrane.
+Le filigrane dinamiche sono diverse dalle filigrane che gli utenti possono aggiungere direttamente al documento in  Acrobat. In un documento protetto tramite criterio è quindi possibile inserire due filigrane.
 
 ### Considerazioni per la creazione di filigrane {#considerations-when-creating-watermarks}
 
@@ -452,24 +452,24 @@ Quando configurate le filigrane, tenete presente quanto segue:
 * È possibile modificare la dimensione massima del file PDF che si desidera utilizzare come elemento filigrana. Tuttavia, i documenti PDF di grandi dimensioni utilizzati come filigrane compromettono le prestazioni durante la sincronizzazione offline dei documenti applicati con tali filigrane. Consultate [Modificare i parametri](configuring-client-server-options.md#change-the-watermark-configuration-parameters)di configurazione delle filigrane.
 * Come filigrana viene usata solo la prima pagina del PDF selezionato. Verificate che le informazioni da visualizzare come filigrane siano disponibili sulla prima pagina stessa.
 * Anche se è possibile specificare il ridimensionamento del documento PDF, tenere conto delle dimensioni e del layout della pagina del PDF se si intende utilizzarlo come filigrana nell&#39;intestazione, piè di pagina o margini.
-* Quando specificate il nome del font, immettete correttamente il nome. I moduli AEM sostituiscono il font specificato se non è presente nel computer client in cui viene aperto il documento.
+* Quando specificate il nome del font, immettete correttamente il nome. AEM moduli sostituisce il font specificato se non è presente nel computer client in cui è aperto il documento.
 * Se il testo è stato selezionato come contenuto della filigrana, specificando l&#39;opzione di ridimensionamento Adatta alla pagina non sarà possibile utilizzare pagine con larghezza diversa.
 * Quando specificate il posizionamento degli elementi della filigrana, accertatevi che non vi sia più di un elemento con lo stesso posizionamento. Se due elementi di filigrana hanno lo stesso posizionamento, ad esempio il centro, appaiono sovrapposti sul documento e nell&#39;ordine in cui sono stati aggiunti alla filigrana.
-* Quando specificate la dimensione e il tipo di font, accertatevi che la lunghezza del testo sia completamente visibile all’interno della pagina. Il contenuto del testo viene disposto su nuove righe, pertanto il contenuto della filigrana che si intende presentare ai margini potrebbe sovrapporsi alle aree contenuto delle pagine. Tuttavia, se il documento viene aperto in Acrobat 9, il testo oltre la singola riga viene troncato.
+* Quando specificate la dimensione e il tipo di font, accertatevi che la lunghezza del testo sia completamente visibile all’interno della pagina. Il contenuto del testo viene disposto su nuove righe, pertanto il contenuto della filigrana che si intende presentare ai margini potrebbe sovrapporsi alle aree contenuto delle pagine. Tuttavia, se il documento viene aperto in  Acrobat 9, il testo oltre la singola riga viene troncato.
 
 ### Limitazioni delle filigrane dinamiche {#limitations-of-dynamic-watermarks}
 
-Alcune applicazioni client potrebbero non supportare filigrane dinamiche. Vedere la Guida alle estensioni Acrobat Reader DC appropriata. Inoltre, tenere presente quanto segue sulle versioni di Acrobat che supportano le filigrane dinamiche:
+Alcune applicazioni client potrebbero non supportare filigrane dinamiche. Consultate la Guida delle estensioni Acrobat Reader DC appropriata. Inoltre, tenete presente quanto segue sulle versioni di  Acrobat che supportano le filigrane dinamiche:
 
 * Non è possibile utilizzare un documento PDF protetto da password come elemento filigrana.
-* Le versioni di Acrobat e Adobe Reader precedenti alla 10 non supportano le seguenti funzionalità delle filigrane:
+*  versioni di Acrobat e  Adobe Reader precedenti alla 10 non supportano le seguenti funzionalità delle filigrane:
 
    * Filigrane PDF
    * Più elementi nella filigrana (Testo/PDF)
    * Opzioni avanzate, ad esempio una serie di pagine o opzioni di visualizzazione
-   * Opzioni di formattazione del testo quali il font specificato, il nome e il colore del font specificati. Tuttavia, le versioni precedenti di Acrobat e Reader visualizzeranno il contenuto del testo con il font e il colore predefiniti.
+   * Opzioni di formattazione del testo quali il font specificato, il nome e il colore del font specificati. Tuttavia, le versioni precedenti di  Acrobat e Reader visualizzeranno il contenuto del testo con il font e il colore predefiniti.
 
-* Acrobat 9.0 e versioni precedenti: Acrobat 9.0 e versioni precedenti non supporta i nomi dei criteri nelle filigrane dinamiche. Se Acrobat 9.0 apre un documento protetto tramite criterio con una filigrana dinamica che include un nome di criterio e altri dati dinamici, la filigrana viene visualizzata senza il nome del criterio. Se la filigrana dinamica include solo il nome del criterio, Acrobat visualizza un messaggio di errore
+*  Acrobat 9.0 e versioni precedenti:  Acrobat 9.0 e versioni precedenti non supporta i nomi dei criteri nelle filigrane dinamiche. Se  Acrobat 9.0 apre un documento protetto tramite criterio con una filigrana dinamica che include un nome di criterio e altri dati dinamici, la filigrana viene visualizzata senza il nome del criterio. Se la filigrana dinamica include solo il nome del criterio,  Acrobat visualizza un messaggio di errore
 
 ### Aggiungere un modello di filigrana dinamica {#add-a-dynamic-watermark-template}
 
@@ -553,7 +553,7 @@ Document Security genera automaticamente un messaggio e-mail di invito alla regi
 
 Il messaggio e-mail di registrazione contiene un collegamento a una pagina di registrazione e informazioni su come registrarsi. Dopo che l&#39;utente invitato si è registrato, la protezione del documento genera un messaggio e-mail di attivazione con un collegamento a una pagina di attivazione. Quando è attivato, l&#39;account rimane valido fino a quando non viene disattivato o eliminato.
 
-Se abilitate la registrazione integrata, specificate il vostro server SMTP, i dettagli e-mail di registrazione, le capacità di accesso e reimpostate le informazioni relative alla password solo una volta. Prima di abilitare la registrazione integrata, accertatevi di aver creato un dominio locale in Gestione utenti che abbia assegnato il ruolo &quot;Utente invito protezione documento&quot; agli utenti e ai gruppi appropriati dell&#39;organizzazione. Consultate [Aggiungere un dominio](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) locale e [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles). Se non utilizzate la registrazione integrata, è necessario che sia creato un sistema di registrazione utente personalizzato tramite l&#39;SDK dei moduli AEM. Consulta la guida sullo sviluppo di SPI per moduli AEM nella [programmazione con i moduli](https://www.adobe.com/go/learn-aemforms-programming-63)AEM. Se non utilizzate l&#39;opzione Registrazione incorporata, si consiglia di configurare un messaggio nel messaggio e-mail di attivazione e nella schermata di accesso del client per informare gli utenti su come contattare l&#39;amministratore per ottenere una nuova password o per altre informazioni.
+Se abilitate la registrazione integrata, specificate il vostro server SMTP, i dettagli e-mail di registrazione, le capacità di accesso e reimpostate le informazioni relative alla password solo una volta. Prima di abilitare la registrazione integrata, accertatevi di aver creato un dominio locale in Gestione utenti che abbia assegnato il ruolo &quot;Utente invito protezione documento&quot; agli utenti e ai gruppi appropriati dell&#39;organizzazione. Consultate [Aggiungere un dominio](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) locale e [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles). Se non si utilizza la registrazione incorporata, è necessario che sia creato un sistema di registrazione utente personalizzato tramite l&#39;SDK dei moduli AEM. Vedere la Guida sullo sviluppo di SPI per moduli AEM nella [programmazione con moduli](https://www.adobe.com/go/learn-aemforms-programming-63)AEM. Se non utilizzate l&#39;opzione Registrazione incorporata, si consiglia di configurare un messaggio nel messaggio e-mail di attivazione e nella schermata di accesso del client per informare gli utenti su come contattare l&#39;amministratore per ottenere una nuova password o per altre informazioni.
 
 **Abilitare e configurare la registrazione degli utenti invitati**
 
@@ -762,7 +762,7 @@ Nel file di configurazione della protezione del documento, potete specificare la
 
    `<entry key="BackgroundSyncFrequency" value="`*time *`"/>`
 
-   dove *tempo* è il numero di secondi tra le sincronizzazioni in background automatiche. Se hai inviato questo valore a `0`, la sincronizzazione viene sempre eseguita. Il valore predefinito è `14400` secondi (ogni quattro ore).
+   dove *tempo* è il numero di secondi tra le sincronizzazioni in background automatiche. Se hai inviato questo valore a `0`, la sincronizzazione si verifica sempre. Il valore predefinito è `14400` secondi (ogni quattro ore).
 
 1. Importa il file di configurazione. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 
@@ -777,11 +777,11 @@ Quando le applicazioni client tentano di stabilire un collegamento con la protez
 
 Le impostazioni Rifiuti possono contenere diversi set di condizioni di rifiuto. Se tutti gli attributi di un set corrispondono, all&#39;applicazione richiedente viene negato l&#39;accesso ai servizi di protezione del documento.
 
-La funzione di negazione del servizio richiede che le applicazioni client utilizzino la versione SDK client C++ versione 8.2 o successiva per la protezione del documento. I seguenti prodotti Adobe forniscono informazioni sui prodotti durante la richiesta di servizi di Document Security:
+La funzione di negazione del servizio richiede che le applicazioni client utilizzino la versione SDK client C++ versione 8.2 o successiva per la protezione del documento. I seguenti prodotti  Adobe forniscono informazioni sui prodotti durante la richiesta di servizi Document Security:
 
-* Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard e versioni successive
-* Adobe Reader 9.0 e versioni successive
-* Estensioni di Acrobat Reader DC per Microsoft Office 8.2 e versioni successive
+*  Adobe Acrobat 9.0 Professional/ Acrobat 9.0 Standard e versioni successive
+*  Adobe Reader 9.0 e versioni successive
+* Estensioni Acrobat Reader DC per Microsoft Office 8.2 e versioni successive
 
 Le applicazioni client utilizzano l&#39;API client dall&#39;SDK client per la protezione dei documenti C++ per richiedere i servizi dalla protezione dei documenti. Le richieste API client includono informazioni sulla piattaforma e sulla versione SDK (precompilate nell&#39;API client) e informazioni sui prodotti ottenute dall&#39;applicazione client.
 
@@ -795,25 +795,25 @@ Le applicazioni client o i plug-in forniscono informazioni sui prodotti nella lo
 
 Se non sono disponibili informazioni, l&#39;applicazione client lascia vuoto il campo corrispondente.
 
-Diverse applicazioni Adobe includono informazioni sui prodotti durante la richiesta di servizi di protezione dei documenti, ad esempio le estensioni Acrobat, Adobe Reader e Acrobat Reader DC per Microsoft Office.
+Diverse applicazioni  Adobe includono informazioni sui prodotti durante la richiesta di servizi di protezione dei documenti, tra cui  estensioni Acrobat,  Adobe Reader e Acrobat Reader DC per Microsoft Office.
 
 **Acrobat e Adobe Reader**
 
-Quando Acrobat o Adobe Reader richiedono un servizio di protezione dei documenti, fornisce le seguenti informazioni sul prodotto:
+Quando  Acrobat o  Adobe Reader richiede un servizio di protezione dei documenti, fornisce le seguenti informazioni sul prodotto:
 
-* **Integratore:** Adobe Systems, Inc.
+* **Integratore:**  Adobe Systems, Inc.
 * **Versione integratore:** 1,0
-* **Famiglia di applicazioni:** Acrobat
-* **Nome applicazione:** Acrobat
+* **Famiglia di applicazioni:**  Acrobat
+* **Nome applicazione:**  Acrobat
 * **Versione applicazione:** 9.0.0
 
-**Estensioni di Acrobat Reader DC per Microsoft Office**
+**Estensioni Acrobat Reader DC per Microsoft Office**
 
 Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato con i prodotti Microsoft Office Microsoft Word, Microsoft Excel e Microsoft PowerPoint. Quando richiede un servizio, fornisce le seguenti informazioni:
 
 * **Integratore:** Adobe Systems Incorporated
 * **Versione integratore:** 8.2
-* **Famiglia di applicazioni:** Estensioni di Acrobat Reader DC per Microsoft Office
+* **Famiglia di applicazioni:** Estensioni Acrobat Reader DC per Microsoft Office
 * **Nome applicazione:** Microsoft Word, Microsoft Excel o Microsoft PowerPoint
 * **Versione applicazione:** 2003 o 2007
 
@@ -822,7 +822,7 @@ Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato 
 1. Esportare il file di configurazione della protezione del documento. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 1. Apri il file di configurazione in un editor e individua il `PolicyServer` nodo. Aggiungi un `ClientVersionRules` nodo come figlio immediato del `PolicyServer` nodo, se non esiste:
 
-   ```java
+   ```xml
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -863,7 +863,7 @@ Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato 
 
    `APPFamilies` è definita dall&#39;API client.
 
-   `AppName`specifica il nome dell&#39;applicazione client. Le virgole vengono utilizzate come separatori di nomi. Per includere una virgola in un nome, eseguitene l&#39;escape con un carattere barra rovesciata (\). Ad esempio, *&quot;Adobe Systems\, Inc.&quot;*.
+   `AppName`specifica il nome dell&#39;applicazione client. Le virgole vengono utilizzate come separatori di nomi. Per includere una virgola in un nome, eseguitene l&#39;escape con un carattere barra rovesciata (\). Ad esempio, *&quot; Adobe Systems\, Inc.&quot;*.
 
    `AppVersions` specifica la versione dell&#39;applicazione client.
 
@@ -879,7 +879,7 @@ Le estensioni Acrobat Reader DC per Microsoft Office sono un plug-in utilizzato 
 
 In questo esempio, a tutti i client Windows viene negato l&#39;accesso.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -897,7 +897,7 @@ In questo esempio, a tutti i client Windows viene negato l&#39;accesso.
 
 In questo esempio, l&#39;accesso alla versione della mia applicazione 3.0 e alla versione della mia altra applicazione 2.0 non è consentito. Lo stesso URL negazioni informazioni viene utilizzato indipendentemente dal motivo del rifiuto.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -920,9 +920,9 @@ In questo esempio, l&#39;accesso alla versione della mia applicazione 3.0 e alla
  </node>
 ```
 
-In questo esempio, tutte le richieste provenienti da un&#39;installazione di Microsoft PowerPoint 2007 o Microsoft PowerPoint 2010 di Acrobat Reader DC con estensioni per Microsoft Office vengono negate.
+In questo esempio, tutte le richieste provenienti da un&#39;installazione di Microsoft PowerPoint 2007 o Microsoft PowerPoint 2010 di estensioni Acrobat Reader DC per Microsoft Office vengono negate.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -955,7 +955,7 @@ Per impostazione predefinita, è possibile specificare fino a cinque elementi in
 
    La seconda voce, *max elements* , è il numero massimo di elementi consentiti in una filigrana. Il valore predefinito è 5.
 
-   ```java
+   ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -975,7 +975,7 @@ Le seguenti modifiche al file config.xml disattivano tutti i collegamenti estern
 1. Apri il file di configurazione in un editor e individua il `DisplaySettings` nodo.
 1. Per disattivare tutti i collegamenti esterni, nel `DisplaySettings` nodo aggiungere la seguente voce e salvare il file: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```java
+   ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -989,7 +989,7 @@ Le seguenti modifiche al file config.xml abilitano il supporto TLS per la funzio
 1. Apri il file di configurazione in un editor e individua il `DisplaySettings` nodo.
 1. Individua il nodo seguente: `<node name="ExternalUser">`
 
-   ```java
+   ```xml
    <node name="ExternalUser">
    ```
 
@@ -1005,7 +1005,7 @@ Le seguenti modifiche al file config.xml per disabilitare gli endpoint SOAP per 
 1. Esportare il file di configurazione della protezione del documento. (Vedere Modifica [manuale del file](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)di configurazione per la protezione dei documenti.)
 1. Aprite il file di configurazione in un editor e individuate il seguente nodo: `<node name="DRM">`
 
-   ```java
+   ```xml
    <node name="DRM">
    ```
 
@@ -1015,7 +1015,7 @@ Le seguenti modifiche al file config.xml per disabilitare gli endpoint SOAP per 
 
 1. Per disabilitare gli endpoint SOAP per i documenti di protezione, impostare l&#39;attributo value su **false**.
 
-   ```java
+   ```xml
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
