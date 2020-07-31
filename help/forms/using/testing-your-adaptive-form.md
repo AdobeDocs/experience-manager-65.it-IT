@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
+source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 2%
@@ -34,7 +34,7 @@ I AEM Forms forniscono un framework di test, Calvin, per automatizzare il test d
 
 Le suite di test dispongono di una raccolta di casi di test. Potete avere più suite di test. È consigliabile disporre di una suite di test distinta per ciascun modulo. Per creare una suite di test:
 
-1. Esegui il login ai AEM Forms per creare l’istanza come amministratore. Aprite CRXDE Lite. Toccate AEM Logo > **Strumenti** > **Generale** > **CRXDE Lite** oppure aprite l’URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in un browser per aprire CRXDE Lite.
+1. Esegui il login ai AEM Forms per creare l’istanza come amministratore. Apri CRXDE Lite. Toccate AEM Logo > **Strumenti** > **Generale** > **CRXDE Lite** oppure aprite l’URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in un browser per aprire CRXDE Lite.
 
 1. Andate a /etc/clientlibs in CRXDE Lite. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **Crea** > **Crea nodo.** Nel campo Nome digitare **WeRetailFormTestCase**. Selezionare il tipo come **cq:ClientLibraryFolder** e fare clic su **OK**. Crea un nodo. È possibile utilizzare qualsiasi nome al posto di WeRetailFormTestCase.
 1. Aggiungete le seguenti proprietà al nodo WeRetailFormTestCase e toccate **Salva TUTTO**.
@@ -101,7 +101,7 @@ Accertatevi che ciascuna proprietà sia aggiunta a una casella separata come ill
 
    Il codice riportato sopra crea una suite di test denominata **We retail - Test**.
 
-1. Aprite l&#39;interfaccia utente di AEM Testing (AEM > Strumenti > Operazioni > Test). La suite di test - **We retail - Test** - è elencata nell&#39;interfaccia utente.
+1. Aprite AEM’interfaccia utente di test (AEM > Strumenti > Operazioni > Test). La suite di test - **We retail - Test** - è elencata nell&#39;interfaccia utente.
 
    ![we-retail-test-suite](assets/we-retail-test-suite.png)
 
@@ -177,7 +177,7 @@ Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fa
 
 1. Create un file, `prefillTest.js`, nel nodo **[!UICONTROL WeRetailFormTest]** . Aggiungi il codice seguente al file. Il codice crea un test case. Il test case precompila tutti i campi di un modulo e convalida alcuni campi per garantire che vengano immessi valori corretti.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
    
@@ -216,7 +216,7 @@ Una suite di test può contenere più casi di test. Potete eseguire tutti i casi
 * Un&#39;icona a forma di segno di spunta indica un test superato: ![save_icon](assets/save_icon.svg)
 * Un&#39;icona &quot;X&quot; indica un test non riuscito: ![close-icon](assets/close-icon.svg)
 
-1. Passa all’icona AEM > **[!UICONTROL Strumenti]**> **[!UICONTROL Operazioni]**> **[!UICONTROL Test]**
+1. Passa all&#39;icona AEM > **[!UICONTROL Strumenti]**> **[!UICONTROL Operazioni]**> **[!UICONTROL Test]**
 1. Per eseguire tutti i test della suite di test:
 
    1. Nel pannello Test, toccate **[!UICONTROL We retail - Test (1)]**. La suite si espande per visualizzare l&#39;elenco dei test.
