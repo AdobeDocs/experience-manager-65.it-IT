@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -32,7 +32,7 @@ L&#39;interfaccia utente AEM Forms consente di aggiungere metadati a qualsiasi m
 
 Forms Portal consente di utilizzare i metadati personalizzati negli elenchi dei moduli. Durante la creazione di modelli personalizzati per le risorse, potete modificarne il layout e utilizzare i metadati personalizzati con il set di stili CSS.
 
-Per creare un modello personalizzato per vari componenti di Forms Portal, effettuare le operazioni seguenti.
+Per creare un modello personalizzato per vari componenti di Forms Portal, effettuate le seguenti operazioni.
 
 ## Creating a custom template {#creating-a-nbsp-custom-template}
 
@@ -61,9 +61,9 @@ Per creare un modello personalizzato per vari componenti di Forms Portal, effett
 
 ## Esempio di lavoro {#working-example}
 
-Di seguito è riportato un esempio di implementazione di un modello personalizzato in cui Forms Portal acquisisce un layout personalizzato della scheda governativa Geometrixx per il componente Ricerca e verifica.
+Di seguito è riportato un esempio di implementazione di un modello personalizzato in cui Forms Portal acquisisce un layout scheda Geometrixx personalizzato per il componente Ricerca e verifica.
 
-```xml
+```html
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
@@ -85,7 +85,7 @@ Di seguito è riportato un esempio di implementazione di un modello personalizza
 
 Un modello personalizzato per qualsiasi componente di Forms Portal include voci ripetibili e non ripetibili. Le voci ripetibili sono entità di base per l&#39;elenco. Alcuni esempi di voci ripetibili sono i componenti Cerca e nascondi, Bozze e invii e Collegamento.
 
-Forms Portal fornisce una sintassi per i segnaposto per la visualizzazione di metadati OOOTB personalizzati. I segnaposto vengono compilati dopo la visualizzazione dei risultati di moduli, bozze o invii.
+Forms Portal fornisce una sintassi per i segnaposto per la visualizzazione di metadati OOTB/personalizzati. I segnaposto vengono compilati dopo la visualizzazione dei risultati di moduli, bozze o invii.
 
 Per includere una voce ripetibile, configurate il valore dell&#39;attributo **ripetibile** su **true**.
 
@@ -136,7 +136,7 @@ Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valo
 ### Bozze e invii, componente {#drafts-amp-submissions-component}
 
 * **Percorso**: Percorso del nodo di metadati bozza/invio. Utilizzatelo con l&#39;estensione .HTML come URL per aprire una bozza o per inviarla.
-* **contextPath**: Percorso contestuale dell’istanza AEM
+* **contextPath**: Percorso di contesto dell&#39;istanza AEM
 * **firstLetter**: Prima lettera (maiuscola) del titolo del modulo adattivo, salvata come bozza o inviata.
 * **formName**: Titolo del modulo adattivo, salvato come Bozza o inviato.
 * **draftID**: ID per la bozza elencata (Utilizzate solo nel modello per la sezione Bozza).
@@ -172,9 +172,9 @@ Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valo
 ## Suggerimenti, trucchi e problemi noti {#tips-tricks-and-known-issues}
 
 1. Non utilizzate virgolette singole (&#39;) in alcun modello personalizzato.
-1. Per i metadati personalizzati, memorizzate questa proprietà solo nel nodo **jcr:content/metadata** . Se i metadati vengono memorizzati in qualsiasi altra posizione, Forms Portal non è in grado di visualizzarli.
+1. Per i metadati personalizzati, memorizzate questa proprietà solo nel nodo **jcr:content/metadata** . Se li archiviate in qualsiasi altro luogo, Forms Portal non può visualizzare i metadati.
 1. Accertatevi che il nome di eventuali metadati personalizzati o metadati esistenti non contenga due punti ( : ). In caso contrario, non è possibile visualizzarlo nell&#39;interfaccia utente.
-1. **la ripetizione** dei dati non ha alcun significato per un componente **Link** . Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
+1. **la ripetizione** dei dati non ha alcun significato per un componente **Link** .  Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
 
 ## Articoli correlati
 
