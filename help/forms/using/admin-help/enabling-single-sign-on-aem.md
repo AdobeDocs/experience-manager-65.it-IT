@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # Abilitazione del single sign-on nei moduli AEM{#enabling-single-sign-on-in-aem-forms}
 
-I moduli AEM forniscono due modi per abilitare Single Sign-On (SSO) - Intestazioni HTTP e SPNEGO.
+AEM moduli offre due modi per abilitare Single Sign-On (SSO) - Intestazioni HTTP e SPNEGO.
 
-Quando SSO è implementato, le pagine di accesso utente dei moduli AEM non sono obbligatorie e non vengono visualizzate se l&#39;utente è già autenticato tramite il portale aziendale.
+Quando si implementa SSO, le pagine di login utente dei moduli AEM non sono obbligatorie e non vengono visualizzate se l&#39;utente è già autenticato tramite il portale aziendale.
 
-Se i moduli AEM non sono in grado di autenticare un utente utilizzando uno di questi metodi, l&#39;utente viene reindirizzato a una pagina di accesso.
+Se AEM moduli non sono in grado di autenticare un utente utilizzando uno di questi metodi, l&#39;utente viene reindirizzato a una pagina di accesso.
 
 ## Abilita SSO mediante intestazioni HTTP {#enable-sso-using-http-headers}
 
-Potete utilizzare la pagina Configurazione portale per abilitare SSO (Single Sign-On) tra le applicazioni e qualsiasi applicazione che supporti la trasmissione dell&#39;identità tramite l&#39;intestazione HTTP. Quando SSO è implementato, le pagine di accesso utente dei moduli AEM non sono obbligatorie e non vengono visualizzate se l&#39;utente è già autenticato tramite il portale aziendale.
+Potete utilizzare la pagina Configurazione portale per abilitare SSO (Single Sign-On) tra le applicazioni e qualsiasi applicazione che supporti la trasmissione dell&#39;identità tramite l&#39;intestazione HTTP. Quando si implementa SSO, le pagine di login utente dei moduli AEM non sono obbligatorie e non vengono visualizzate se l&#39;utente è già autenticato tramite il portale aziendale.
 
 È inoltre possibile abilitare SSO utilizzando SPNEGO. Consultate [Abilitare SSO con SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).
 
@@ -56,7 +56,7 @@ Per i passaggi per configurare i referenti consentiti, consulta [Configurare i r
 
 ## Abilita SSO con SPNEGO {#enable-sso-using-spnego}
 
-È possibile utilizzare il meccanismo di negoziazione GSSAPI semplice e protetto (SPNEGO) per abilitare SSO (Single Sign-On) quando si utilizza Active Directory come server LDAP in un ambiente Windows. Quando SSO è abilitato, le pagine di accesso utente dei moduli AEM non sono obbligatorie e non vengono visualizzate.
+È possibile utilizzare il meccanismo di negoziazione GSSAPI semplice e protetto (SPNEGO) per abilitare SSO (Single Sign-On) quando si utilizza Active Directory come server LDAP in un ambiente Windows. Quando è attivato SSO, le pagine di login utente dei moduli AEM non sono obbligatorie e non vengono visualizzate.
 
 È inoltre possibile abilitare SSO utilizzando intestazioni HTTP. Consultate [Abilitare SSO utilizzando intestazioni](enabling-single-sign-on-aem.md#enable-sso-using-http-headers)HTTP.
 
@@ -64,8 +64,8 @@ Per i passaggi per configurare i referenti consentiti, consulta [Configurare i r
 >
 >I AEM Forms su JEE non supportano la configurazione di SSO tramite Kerberos/SPNEGO in ambienti con più domini figlio.
 
-1. Decidete quale dominio utilizzare per abilitare SSO. Il server moduli AEM e gli utenti devono appartenere allo stesso dominio Windows o allo stesso dominio trusted.
-1. In Active Directory, creare un utente che rappresenti il server moduli AEM. Consultate [Creare un account](enabling-single-sign-on-aem.md#create-a-user-account)utente. Se state configurando più di un dominio per utilizzare SPNEGO, accertatevi che le password per ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
+1. Decidete quale dominio utilizzare per abilitare SSO. Il server AEM moduli e gli utenti devono appartenere allo stesso dominio Windows o allo stesso dominio trusted.
+1. In Active Directory, creare un utente che rappresenti il server AEM moduli. Consultate [Creare un account](enabling-single-sign-on-aem.md#create-a-user-account)utente. Se state configurando più di un dominio per utilizzare SPNEGO, accertatevi che le password per ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
 1. Mappare il nome dell&#39;entità del servizio. (vedere [Mappare un nome entità servizio (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configurare il controller di dominio. (vedere [Impedire gli errori](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)di controllo dell&#39;integrità Kerberos).
 1. Aggiungi o modifica un dominio enterprise come descritto in [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains) o [Modifica e conversione di domini](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)esistenti. Quando create o modificate il dominio Enterprise, eseguite le seguenti operazioni:
@@ -75,7 +75,7 @@ Per i passaggi per configurare i referenti consentiti, consulta [Configurare i r
    * Aggiungi Kerberos come provider di autenticazione. Fornire le seguenti informazioni nella pagina Nuova autenticazione o Modifica autenticazione per Kerberos:
 
       * **Provider autenticazione:** Kerberos
-      * **IP DNS:** L&#39;indirizzo IP DNS del server in cui sono in esecuzione i moduli AEM. È possibile determinare questo indirizzo IP eseguendo `ipconfig/all` la riga di comando.
+      * **IP DNS:** Indirizzo IP DNS del server in cui sono in esecuzione AEM moduli. È possibile determinare questo indirizzo IP eseguendo `ipconfig/all` la riga di comando.
       * **Host KDC:** Nome host completo o indirizzo IP del server Active Directory utilizzato per l&#39;autenticazione
       * **Utente del servizio:** Il nome dell&#39;entità del servizio (SPN) passato allo strumento KtPass. Nell’esempio precedente, l’utente del servizio è `HTTP/lcserver.um.lc.com`.
       * **Service Realm:** Nome di dominio per Active Directory. Nell&#39;esempio precedente, il nome del dominio è `UM.LC.COM.`
@@ -86,7 +86,7 @@ Per i passaggi per configurare i referenti consentiti, consulta [Configurare i r
 
 ### Creazione di un account utente {#create-a-user-account}
 
-1. In SPNEGO, registrare un servizio come utente in Active Directory nel controller di dominio per rappresentare i moduli AEM. Nel controller di dominio, scegliere Start Menu > Strumenti di amministrazione > Utenti e computer di Active Directory. Se Strumenti di amministrazione non si trova nel menu Start, usate l’Pannello di controllo Campaign.
+1. In SPNEGO, registrare un servizio come utente in Active Directory nel controller di dominio per rappresentare AEM moduli. Nel controller di dominio, scegliere Start Menu > Strumenti di amministrazione > Utenti e computer di Active Directory. Se Strumenti di amministrazione non si trova nel menu Start, usate l’Pannello di controllo Campaign.
 1. Fate clic sulla cartella Utenti per visualizzare un elenco di utenti.
 1. Fate clic con il pulsante destro del mouse sulla cartella utente e selezionate Nuovo > Utente.
 1. Digitate il nome/cognome e il nome di accesso dell’utente, quindi fate clic su Avanti. Ad esempio, impostare i seguenti valori:
@@ -121,14 +121,14 @@ Per i passaggi per configurare i referenti consentiti, consulta [Configurare i r
 
 Se si verifica questo errore:
 
-```java
+```shell
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 provate a specificare l’utente come spnegodemo@um.lc.com:
 
-```java
+```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
@@ -153,7 +153,7 @@ Se l&#39;accesso al server avviene utilizzando il nome del computer, ad esempio 
 1. Fate clic sull&#39;icona Intranet locale, quindi fate clic su Siti.
 1. Fare clic su Avanzate e, nella casella Aggiungi questo sito Web alla zona, digitare l&#39;URL del server moduli. For example, type `https://lcserver.um.lc.com`
 1. Fare clic su OK fino a chiudere tutte le finestre di dialogo.
-1. Verificare la configurazione accedendo all&#39;URL del server moduli AEM. Ad esempio, nella casella URL del browser, digitare `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Verificare la configurazione accedendo all&#39;URL del server AEM moduli. Ad esempio, nella casella URL del browser, digitare `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Configurare Mozilla Firefox**
 
