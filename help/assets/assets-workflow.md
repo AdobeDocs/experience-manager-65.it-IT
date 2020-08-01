@@ -3,9 +3,9 @@ title: Elabora risorse per eseguire processi aziendali, eseguire audit, ottenere
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '985'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Per applicare un flusso di lavoro a una risorsa, effettuate le seguenti operazio
 
 ## Applicazione di un flusso di lavoro a più risorse {#applying-a-workflow-to-multiple-assets}
 
-1. Dalla console Risorse, individuate la posizione delle risorse per le quali desiderate avviare un flusso di lavoro e selezionate le risorse. Selezionate **[!UICONTROL Timeline]** dal menu per visualizzare la timeline.
+1. Dalla [!DNL Assets] console, individuate la posizione delle risorse per le quali desiderate avviare un flusso di lavoro e selezionate le risorse. Selezionate **[!UICONTROL Timeline]** dal menu per visualizzare la timeline.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
