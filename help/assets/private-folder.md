@@ -1,11 +1,11 @@
 ---
-title: Create e condividete una cartella privata in  Adobe Experience Manager.
-description: Scoprite come creare una cartella privata in Risorse  Adobe Experience Manager e condividerla con altri utenti e assegnare loro vari privilegi.
+title: Create e condividete una cartella privata in [!DNL Adobe Experience Manager].
+description: Scoprite come creare una cartella privata in [!DNL Adobe Experience Manager Assets] e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '480'
 ht-degree: 1%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 1%
 
 # Condivisione di cartelle private {#private-folder-sharing}
 
-Potete creare una cartella privata nell’interfaccia utente di Risorse Adobe Experience Manager  disponibile esclusivamente per voi. Potete condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.
+Potete creare una cartella privata nell’interfaccia [!DNL Adobe Experience Manager Assets] utente disponibile esclusivamente per voi. Potete condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.
 
 >[!NOTE]
 >
 >La cartella privata ha almeno un membro con il ruolo Proprietario.
 
-1. Nella console Risorse, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
+1. Nella [!DNL Assets] console, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
 
    ![Crea cartella risorse](assets/Create-folder.png)
 
@@ -49,9 +49,9 @@ Potete creare una cartella privata nell’interfaccia utente di Risorse Adobe Ex
    >
    >La cartella privata ha almeno un membro con il ruolo Proprietario. Pertanto, l’amministratore non può rimuovere tutti i membri del proprietario da una cartella privata. Tuttavia, per rimuovere i proprietari esistenti (e lo stesso amministratore) dalla cartella privata, l&#39;amministratore deve aggiungere un altro utente come proprietario.
 
-1. Fai clic su **[!UICONTROL Salva]**. A seconda del ruolo assegnato, all’utente viene assegnato un set di privilegi nella cartella privata quando accede a Risorse.
+1. Fai clic su **[!UICONTROL Salva]**. A seconda del ruolo assegnato, all’utente viene assegnato un set di privilegi nella cartella privata al momento dell’accesso [!DNL Assets].
 1. Fate clic su **[!UICONTROL OK]** per chiudere il messaggio di conferma.
-1. L’utente con il quale condividete la cartella riceve una notifica di condivisione. Accedete a Risorse con le credenziali dell&#39;utente per visualizzare la notifica.
+1. L’utente con il quale condividete la cartella riceve una notifica di condivisione. Effettuate l&#39;accesso [!DNL Assets] con le credenziali dell&#39;utente per visualizzare la notifica.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
