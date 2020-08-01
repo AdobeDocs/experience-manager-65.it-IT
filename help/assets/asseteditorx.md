@@ -3,9 +3,9 @@ title: Estendi editor risorse
 description: Scoprite come estendere le funzionalità di Editor risorse utilizzando componenti personalizzati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '688'
 ht-degree: 13%
 
 ---
@@ -17,21 +17,21 @@ Editor risorse è la pagina che si apre quando si fa clic su una risorsa reperib
 
 La configurazione dell’editor mediante i componenti di modifica predefiniti è descritta in [Creazione e configurazione di una pagina](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)Editor risorse.
 
-Oltre a utilizzare componenti editor preesistenti, gli sviluppatori Adobe Experience Manager possono anche creare i propri componenti.
+Oltre a utilizzare componenti preesistenti per l’editor, [!DNL Adobe Experience Manager] gli sviluppatori possono anche creare i propri componenti.
 
 ## Creare un modello di Editor risorse {#creating-an-asset-editor-template}
 
-In Geometrixx sono incluse le seguenti pagine di esempio:
+Le pagine di esempio seguenti sono incluse in Geometrixx:
 
-* Pagina campione Geometrixx: `/content/geometrixx/en/press/asseteditor.html`
+* Pagina di esempio Geometrixx: `/content/geometrixx/en/press/asseteditor.html`
 * Modello di esempio: `/apps/geometrixx/templates/asseteditor`
 * Esempio di componente pagina: `/apps/geometrixx/components/asseteditor`
 
 ### Configura Clientlib {#configuring-clientlib}
 
-I componenti Assets utilizzano un&#39;estensione della clientlib di modifica WCM. I clientlibs solitamente sono caricati in `init.jsp`.
+[!DNL Assets] i componenti utilizzano un&#39;estensione della clientlib di modifica WCM. I clientlibs solitamente sono caricati in `init.jsp`.
 
-Rispetto al caricamento clientlib predefinito (nei core `init.jsp`), un modello di risorse deve avere i seguenti elementi:
+Rispetto al caricamento clientlib predefinito (nei core `init.jsp`), un [!DNL Assets] modello deve avere le seguenti caratteristiche:
 
 * Il modello deve includere la `cq.dam.edit` clientlib (invece di `cq.wcm.edit`).
 
@@ -41,17 +41,17 @@ Nella maggior parte dei casi, la copia del campione esistente `init.jsp` (`/apps
 
 ### Configurare le azioni JS {#configuring-js-actions}
 
-Alcuni dei componenti Risorse richiedono funzioni JS definite in `component.js`. Copiate questo file nella directory dei componenti e collegatelo.
+Alcuni dei [!DNL Assets] componenti richiedono funzioni JS definite in `component.js`. Copiate questo file nella directory dei componenti e collegatelo.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-L&#39;esempio carica questa origine javascript in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+L&#39;esempio carica l&#39;origine JavaScript in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Fogli di stile aggiuntivi {#additional-style-sheets}
 
-Alcuni dei componenti Risorse utilizzano la libreria widget. Per poter eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente azione tag richiede un altro componente.
+Alcuni dei [!DNL Assets] componenti utilizzano la libreria widget. Per poter eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente azione tag richiede un altro componente.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
