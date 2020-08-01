@@ -3,25 +3,25 @@ title: Schema metadati per cartelle
 description: Scopri come creare uno schema di metadati per le cartelle di risorse in  Adobe Experience Manager Risorse
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1016'
+ht-degree: 6%
 
 ---
 
 
 # Schema metadati per cartelle {#folder-metadata-schema}
 
- Adobe Experience Manager Risorse consente di creare schemi di metadati per le cartelle di risorse, che definiscono il layout e i metadati visualizzati nelle pagine delle proprietà della cartella.
+[!DNL Adobe Experience Manager Assets] consente di creare schemi di metadati per le cartelle delle risorse, che definiscono il layout e i metadati visualizzati nelle pagine di proprietà delle cartelle.
 
 ## Aggiunta di uno schema di metadati di una cartella {#add-a-folder-metadata-schema-form}
 
-Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare gli schemi di metadati per le cartelle.
+Usate l’editor Forms Schema metadati cartella per creare e modificare gli schemi di metadati per le cartelle.
 
-1. &#39;interfaccia Experience Manager, accedete a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati **[!UICONTROL della cartella]**.
-1. Nella pagina Moduli [!UICONTROL schema metadati] cartella fare clic su **[!UICONTROL Crea]**.
-1. Specify a name for the form, and click **[!UICONTROL Create]**. Il nuovo modulo schema è elencato nella pagina Moduli  schema.
+1. Nell’ [!DNL Experience Manager] interfaccia, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati **[!UICONTROL della cartella]**.
+1. Nella pagina Forms [!UICONTROL Schema metadati] cartella, fate clic su **[!UICONTROL Crea]**.
+1. Specify a name for the form, and click **[!UICONTROL Create]**. Il nuovo modulo schema è elencato nella pagina Forms  schema.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
@@ -32,7 +32,7 @@ Utilizzare l&#39;editor Moduli schema metadati cartella per creare e modificare 
 
 È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere nuove schede o elementi del modulo al modulo schema di metadati.
 
-1. Nella pagina Moduli schema, selezionare il modulo creato, quindi selezionare l&#39;opzione **[!UICONTROL Modifica]** dalla barra degli strumenti.
+1. Nella pagina Schema Forms, selezionare il modulo creato, quindi selezionare l&#39;opzione **[!UICONTROL Modifica]** dalla barra degli strumenti.
 1. Nella pagina Editor schema metadati cartella, fare clic su `+` per aggiungere una scheda al modulo. Per rinominare la scheda, fare clic sul nome predefinito e specificare il nuovo nome in **[!UICONTROL Impostazioni]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -80,7 +80,7 @@ Di seguito sono riportati i valori validi per questa proprietà:
 
 * `./jcr:content/metadata/dc:title`: Memorizza il valore nel nodo di metadati della cartella come proprietà `dc:title`.
 
-* `./jcr:created`: Visualizza la proprietà JCR nel nodo della cartella. Se configurate queste proprietà in CRXDE, Adobe consiglia di contrassegnarle come Disattiva modifica, perché sono protette. In caso contrario, l&#39;errore `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
+* `./jcr:created`: Visualizza la proprietà JCR nel nodo della cartella. Se configurate queste proprietà in CRXDE,  Adobe consiglia di contrassegnarle come Disattiva modifica, perché sono protette. In caso contrario, l&#39;errore `Asset(s) failed to modify`&#39; si verifica quando si salvano le proprietà della risorsa.
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema di metadati, non includete uno spazio nel percorso della proprietà.
 
@@ -96,20 +96,20 @@ Per garantire che il componente venga visualizzato correttamente nel modulo dell
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-È possibile eliminare i moduli dello schema di metadati della cartella dalla pagina Moduli schema metadati cartella. Per eliminare un modulo, selezionarlo e fare clic sull&#39;opzione Elimina dalla barra degli strumenti.
+È possibile eliminare i moduli dello schema di metadati della cartella dalla pagina Forms Schema metadati cartella. Per eliminare un modulo, selezionarlo e fare clic sull&#39;opzione Elimina dalla barra degli strumenti.
 
 ![delete_form](assets/delete_form.png)
 
 ## Assegnazione di uno schema di metadati di una cartella {#assign-a-folder-metadata-schema}
 
-È possibile assegnare uno schema di metadati a una cartella dalla pagina Moduli schema metadati cartella o durante la creazione di una cartella.
+Potete assegnare uno schema di metadati a una cartella dalla pagina Forms Schema metadati cartella o durante la creazione di una cartella.
 
 Se si configura uno schema di metadati per una cartella, il percorso del modulo dello schema viene memorizzato nella `folderMetadataSchema` proprietà del nodo della cartella in .*/jcr:content*.
 
 ### Assegnazione a uno schema dalla pagina Schema metadati cartella {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. &#39;interfaccia Experience Manager, accedete a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati **[!UICONTROL della cartella]**.
-1. Dalla pagina Moduli schema metadati cartella, selezionare il modulo schema che si desidera applicare a una cartella.
+1. Nell’ [!DNL Experience Manager] interfaccia, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di metadati **[!UICONTROL della cartella]**.
+1. Nella pagina Forms Schema metadati cartella, selezionate il modulo dello schema da applicare a una cartella.
 1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Applica alle cartelle]**.
 
 1. Selezionare la cartella in cui applicare lo schema, quindi fare clic su **[!UICONTROL Applica]**. Se uno schema di metadati è già applicato alla cartella, un messaggio di avviso informa che lo schema di metadati esistente sta per essere sovrascritto. Fate clic su **[!UICONTROL Sovrascrivi]**.
