@@ -1,21 +1,21 @@
 ---
-title: Personalizzare ed estendere le risorse Adobe Experience Manager
+title: Personalizza ed estendi [!DNL Adobe Experience Manager Assets].
 description: Scoprite come personalizzare ed estendere l’Editor risorse e condivisione di risorse, che offre agli utenti un’interfaccia e un set di funzionalità specifici.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
 
-# Personalizzare ed estendere le risorse {#customizing-and-extending-assets}
+# Personalizzare ed estendere [!DNL Assets] {#customizing-and-extending-assets}
 
-Asset Editor è il punto di accesso principale che gli utenti di un sito Web Adobe Enterprise Manager utilizzeranno per trovare, visualizzare e manipolare le risorse digitali nell’archivio.
+Asset Editor è il principale punto di accesso che gli utenti di un sito Web Enterprise Manager  utilizzeranno per trovare, visualizzare e manipolare le risorse digitali presenti nell’archivio.
 
-In qualità di sviluppatore Experience Manager, potete personalizzare ed estendere l’Editor risorse in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
+In qualità di [!DNL Experience Manager] sviluppatore, potete personalizzare ed estendere l’Editor risorse in diversi modi, presentando agli utenti un’interfaccia e un set di funzionalità specifici.
 
 È possibile personalizzare o migliorare i seguenti aspetti della funzionalità:
 
@@ -36,6 +36,6 @@ In qualità di sviluppatore Experience Manager, potete personalizzare ed estende
 
 ## Personalizzare le rappresentazioni {#customizing-renditions}
 
-Nella terminologia di Experience Manager Assets una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in una dimensione ridotta e un’altra in scala di grigio.
+Nella [!DNL Experience Manager Assets] terminologia una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in una dimensione ridotta e un’altra in scala di grigio.
 
 Le rappresentazioni in cui è disponibile una particolare risorsa possono essere personalizzate e create nuove rappresentazioni.
