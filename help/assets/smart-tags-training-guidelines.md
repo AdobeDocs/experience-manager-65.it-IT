@@ -1,12 +1,12 @@
 ---
 title: Linee guida sulla formazione per Smart Content Service
-description: Formazione del servizio AI di Adobe Sensei per l'applicazione di smart tag alle risorse
+description: Formazione del servizio  Adobe Sensei AI per l'applicazione di smart tag alle risorse
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '462'
 ht-degree: 11%
 
 ---
@@ -28,7 +28,7 @@ Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag `my-pa
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](/help/assets/assets/do-not-localize/coherence.png)
 
-**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini della formazione. L&#39;idea è di fornire alcuni esempi, ma ragionevolmente diversi, in modo che Experience Manager impari a concentrarsi sulle cose giuste. Se applicate lo stesso tag a immagini visivamente diverse, includete almeno cinque esempi di ciascun tipo.
+**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini della formazione. L&#39;idea è quella di fornire alcuni esempi, ma abbastanza diversi, in modo che  Experience Manager impari a concentrarsi sulle cose giuste. Se applicate lo stesso tag a immagini visivamente diverse, includete almeno cinque esempi di ciascun tipo.
 
 Ad esempio, per il tag *model-down-pose*, includete più immagini di formazione simili all’immagine evidenziata di seguito per il servizio, in modo da identificare immagini simili con maggiore precisione durante l’assegnazione dei tag.
 
@@ -50,10 +50,10 @@ Gli smart tag avanzati si basano su modelli di apprendimento delle immagini e de
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
-* I tag sono supportati nelle impostazioni internazionali in cui Experience Manager è supportato. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione di Smart Content Services.
+* I tag sono supportati nelle impostazioni internazionali [!DNL Experience Manager] supportate in. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione di Smart Content Services.
 
-Per cercare le risorse con gli smart tag (regolari o avanzati), usate la ricerca Omnisearch delle risorse (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
+Per cercare risorse con tag avanzati (regolari o avanzati), usate la ricerca [!DNL Assets] Omnisearch (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
 >[!NOTE]
 >
->La capacità di Smart Content Service di formare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per risultati ottimali, Adobe consiglia di usare immagini visivamente simili per addestrare il servizio per ciascun tag.
+>La capacità di Smart Content Service di formare i tag e applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per la formazione. Per risultati ottimali,  Adobe consiglia di usare immagini visivamente simili per formare il servizio per ciascun tag.
