@@ -3,9 +3,9 @@ title: Configurate i tag delle risorse mediante Smart Content Service.
 description: Scoprite come configurare i tag avanzati e i tag avanzati in [!DNL Adobe Experience Manager]mediante Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1103'
 ht-degree: 61%
 
 ---
@@ -13,19 +13,19 @@ ht-degree: 61%
 
 # Configurare i tag delle risorse tramite Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
-È possibile effettuare l&#39;integrazione [!DNL Adobe Experience Manager] con Smart Content Service tramite Adobe Developer Console. Utilizzate questa configurazione per accedere a Smart Content Service dall&#39;interno [!DNL Experience Manager].
+È possibile effettuare l&#39;integrazione [!DNL Adobe Experience Manager] con Smart Content Service tramite  Adobe Developer Console. Utilizzate questa configurazione per accedere a Smart Content Service dall&#39;interno [!DNL Experience Manager].
 
 L’articolo descrive le seguenti attività chiave necessarie per configurare il Servizio di contenuti avanzati. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
 1. Crea una configurazione del Servizio di contenuti avanzati in [!DNL Experience Manager] per generare una chiave pubblica. [Ottieni un certificato pubblico](#obtain-public-certificate) per l’integrazione di OAuth.
 1. [Crea un’integrazione in Adobe Developer Console](#create-adobe-i-o-integration) e carica la chiave pubblica generata.
-1. [Configurate la distribuzione](#configure-smart-content-service) utilizzando la chiave API e altre credenziali da Adobe Developer Console.
+1. [Configurate la distribuzione](#configure-smart-content-service) utilizzando la chiave API e altre credenziali da  Adobe Developer Console.
 1. [Verifica la configurazione](#validate-the-configuration).
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
 ## Prerequisiti {#prerequisites}
 
-Prima di poter utilizzare Smart Content Service, accertatevi quanto segue per creare un&#39;integrazione in Adobe Developer Console:
+Prima di poter utilizzare Smart Content Service, è necessario assicurarsi quanto segue per creare un&#39;integrazione  Adobe Developer Console:
 
 * Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
@@ -33,7 +33,7 @@ Prima di poter utilizzare Smart Content Service, accertatevi quanto segue per cr
 <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
 -->
 
-Per abilitare i tag avanzati avanzati avanzati, oltre a quanto indicato sopra, installa anche il service pack [](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html)AEM più recente.
+Per abilitare Enhanced Smart Tags, oltre a quanto sopra, installare anche il service pack [di](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html)Experience Manager più recente.
 
 ## Recuperare il certificato pubblico {#obtain-public-certificate}
 
@@ -79,9 +79,9 @@ Una volta scaduto, il certificato non è più affidabile. Non è possibile rinno
 1. Per scaricare un certificato pubblico, fai clic su **[!UICONTROL Scarica certificato pubblico per integrazione OAuth]**.
 1. Accedi a [https://console.adobe.io](https://console.adobe.io) e passa ai Servizi di contenuti avanzati esistenti nella pagina **[!UICONTROL Integrazioni]**. Carica il nuovo certificato. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
 
-## Creare un’integrazione con Adobe Developer Console {#create-adobe-i-o-integration}
+## Creare &#39;integrazione con la console per sviluppatori di Adobi {#create-adobe-i-o-integration}
 
-Per utilizzare le API Smart Content Service, create un&#39;integrazione in Adobe Developer Console per generare la chiave API, l&#39;ID account tecnico, l&#39;ID organizzazione e il Segreto cliente.
+Per utilizzare le API Smart Content Service, create un&#39;integrazione in  Adobe Developer Console per generare la chiave API, l&#39;ID account tecnico, l&#39;ID organizzazione e il Segreto cliente.
 
 1. Accedi a [https://console.adobe.io](https://console.adobe.io/) in un browser. Seleziona l’account appropriato e verifica che il ruolo aziendale associato sia quello di amministratore di sistema.
 1. Crea un progetto con il nome desiderato. Fai clic su **[!UICONTROL Aggiungi API]**.
@@ -94,7 +94,7 @@ Per utilizzare le API Smart Content Service, create un&#39;integrazione in Adobe
 
 ## Configurare il Servizio di contenuti avanzati {#configure-smart-content-service}
 
-Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tecnico, ID organizzazione, Segreto cliente, Server di autorizzazione e chiave API dall&#39;integrazione di Adobe Developer Console. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
+Per configurare l&#39;integrazione, utilizzate i valori dei campi ID account tecnico, ID organizzazione, Segreto cliente, Server di autorizzazione e chiave API dall&#39;integrazione  Console per sviluppatori di Adobe. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
 
 1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
 1. In **[!UICONTROL Tag avanzati risorse]**, apri la configurazione creata in precedenza. Nella pagina delle impostazioni del servizio, fai clic su **[!UICONTROL Modifica]**.
