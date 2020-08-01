@@ -1,11 +1,11 @@
 ---
 title: Facet di ricerca.
-description: Come creare, modificare e utilizzare i facet di ricerca in  Adobe Experience Manager.
+description: Come creare, modificare e utilizzare i facet di ricerca in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2515'
+source-wordcount: '2488'
 ht-degree: 18%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 18%
 
 # Facet di ricerca {#search-facets}
 
-L’implementazione a livello aziendale di  risorse di Adobe Experience Manager consente di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se si utilizzano solo le funzionalità di ricerca generiche di  Experience Manager.
+L’implementazione a livello aziendale di [!DNL Adobe Experience Manager Assets] ha la capacità di archiviare molte risorse. A volte, trovare la risorsa giusta può essere difficile e richiede molto tempo se si utilizzano solo le funzionalità di ricerca generiche di [!DNL Experience Manager].
 
 Usate i facet di ricerca nel pannello Filtri per aggiungere maggiore granularità all’esperienza di ricerca e rendere più efficiente e versatile la funzionalità di ricerca. I facet di ricerca aggiungono più dimensioni (predicati) che consentono di eseguire ricerche più complesse. Il pannello Filtri include alcuni facet standard. Potete inoltre aggiungere facet di ricerca personalizzati.
 
@@ -27,16 +27,16 @@ I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di 
 
 Per le ricerche full-text, aggiungere al modulo il predicato [!UICONTROL full-text] . Utilizzate il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata. Utilizzate il predicato Opzioni per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create entro un intervallo di date specificato.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
-   ![Individua e seleziona la Barra di ricerca Amministratore risorse](assets/assets_admin_searchrail.png)
+   ![Individua e seleziona le risorse o l’Admin Search Rail](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
    >Per utilizzare la funzionalità di ricerca delle cartelle dalla barra **di ricerca per l’amministratore delle** risorse preconfigurata, effettua le seguenti operazioni:
    >
-   >1. Andate a */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRXDE.
+   >1. Passare a `/conf/global/settings/dam/search/facets/assets/jcr:content/items` CRXDE.
    >1. Eliminare il nodo **del tipo** .
    >1. Dal percorso */libs/settings/dam/search/facets/assets/jcr:content/items*, copia i nodi **asset, directory, typeor, excludepaths** e **searchtype** nel percorso indicato al passaggio 1.
    >1. Salva le modifiche.
@@ -73,7 +73,7 @@ Per le ricerche full-text, aggiungere al modulo il predicato [!UICONTROL full-te
 
 1. Per chiudere l’anteprima, fate clic su **[!UICONTROL Chiudi]** ![chiudi](assets/do-not-localize/close.png) nell’angolo in alto a destra dell’anteprima.
 1. Fate clic su **[!UICONTROL Fine]** per salvare le impostazioni.
-1. Andate al pannello Ricerca nell’interfaccia utente Risorse. Il predicato Proprietà viene aggiunto al pannello.
+1. Navigate to the Search panel in the [!DNL Assets] user interface. Il predicato Proprietà viene aggiunto al pannello.
 1. Immettete una descrizione per la risorsa da cercare nella casella di testo. For example, enter `Adobe`. Quando eseguite una ricerca, nei risultati della ricerca `Adobe` vengono elencate le risorse con la descrizione corrispondente.
 
 ## Aggiunta di un predicato Opzioni {#adding-an-options-predicate}
@@ -112,7 +112,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 >
 >Il predicato Options è un wrapper personalizzato che include i predicati delle proprietà per illustrare il comportamento descritto. Al momento non è disponibile alcun endpoint REST per supportare la funzionalità in modo nativo.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l’etichetta, ad esempio **[!UICONTROL Tipo file]**. Specifica la proprietà in base alla quale eseguire la ricerca nel campo apposito, ad esempio `jcr:content/metadata/dc:format.`
@@ -132,22 +132,22 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 
 ## Aggiunta di un predicato di proprietà con più valori {#adding-a-multi-value-property-predicate}
 
-Il predicato Proprietà multivalore consente di cercare risorse per più valori. Considerate uno scenario in cui sono presenti immagini di più prodotti in Risorse e i metadati di ciascuna immagine includono un numero SKU associato al prodotto. Potete usare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
+Il predicato Proprietà multivalore consente di cercare risorse per più valori. Considerate uno scenario in cui sono presenti immagini di più prodotti in [!DNL Assets] e i metadati di ciascuna immagine includono un numero SKU associato al prodotto. Potete usare questo predicato per cercare immagini di prodotto basate su più numeri SKU.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Nella pagina Ricerca in Forms, seleziona Barra di ricerca **[!UICONTROL Amministratore]** risorse e fai clic sull’icona **[!UICONTROL Modifica]** ![modifica](assets/do-not-localize/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina il predicato **[!UICONTROL Proprietà con più valori]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
 1. Assicurati di aver selezionato **[!UICONTROL Supporto delimitatore]**. Specifica i delimitatori per separare i singoli valori nel campo **[!UICONTROL Delimitatori di input]**. Per impostazione predefinita, la virgola è indicata come delimitatore. È possibile specificare un delimitatore diverso.
 1. Nel campo **Descrizione** , immettete una descrizione facoltativa e fate clic su **[!UICONTROL Fine]**.
-1. Nell’interfaccia utente Assets, vai al pannello Filtri. Al pannello viene aggiunto il predicato **[!UICONTROL Proprietà con più valori]**.
+1. Navigate to the Filters panel in the [!DNL Assets] user interface. Al pannello viene aggiunto il predicato **[!UICONTROL Proprietà con più valori]**.
 1. Specificate più valori nel campo Valore multiplo separati dai delimitatori ed eseguite la ricerca. Il predicato recupera una corrispondenza di testo esatta per i valori specificati.
 
 ## Aggiunta di un predicato Tag {#adding-a-tags-predicate}
 
-Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, Risorse cerca nelle risorse una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, potete usare l’opzione corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
+Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per impostazione predefinita, [!DNL Assets] cerca nelle risorse una o più corrispondenze di tag in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, potete usare l’opzione corrispondenza con tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Nella scheda Impostazioni, inserite un testo segnaposto per il predicato. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. In alternativa, è possibile selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
