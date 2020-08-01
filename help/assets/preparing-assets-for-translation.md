@@ -3,9 +3,9 @@ title: Preparare le risorse per la traduzione
 description: Create le cartelle principali della lingua per preparare le risorse da tradurre e supportare le risorse multilingue.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Per risorse in più lingue si intendono risorse con file binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag delle risorse esistono in una lingua, che vengono poi tradotti in altre lingue per l’utilizzo in progetti multilingue.
 
-In  risorse di Adobe Experience Manager, le risorse in più lingue sono incluse nelle cartelle, in cui ciascuna cartella contiene le risorse in un’altra lingua.
+In [!DNL Adobe Experience Manager Assets]altre, le risorse in più lingue sono incluse in cartelle, in cui ciascuna cartella contiene le risorse in un’altra lingua.
 
 Ogni cartella lingua è denominata copia per lingua. La cartella principale di una copia della lingua, nota come radice della lingua, identifica la lingua del contenuto nella copia della lingua. Ad esempio, */content/dam/it* è la radice della lingua italiana per la copia in lingua italiana. Le copie della lingua devono utilizzare una radice [della lingua configurata](preparing-assets-for-translation.md#creating-a-language-root) correttamente, in modo che venga utilizzata la lingua corretta quando vengono eseguite le traduzioni delle risorse di origine.
 
@@ -46,7 +46,7 @@ Per creare la directory principale della lingua, create una cartella e utilizzat
 
 Ad esempio, la pagina principale della copia in lingua italiana della gerarchia di esempi ha `it` come proprietà Name. La proprietà Name viene utilizzata come nome del nodo della risorsa nella directory archivio e pertanto determina il percorso delle risorse. (`https://[aem_server]:[port]/assets.html/content/dam/it/`)
 
-1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
+1. From the [!DNL Assets] console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Crea cartella](assets/Create-folder.png)
 
@@ -54,13 +54,13 @@ Ad esempio, la pagina principale della copia in lingua italiana della gerarchia 
 
    ![Aggiungi il codice della lingua nella cartella](assets/Add-language-code-in-folder.png)
 
-1. Fai clic su **[!UICONTROL Crea]**. L’elemento principale della lingua viene creato nella console Risorse.
+1. Fai clic su **[!UICONTROL Crea]**. La radice della lingua viene creata nella [!DNL Assets] console.
 
 ## Visualizzare le origini della lingua {#viewing-language-roots}
 
-&#39;interfaccia Experience Manager fornisce un pannello **[!UICONTROL Riferimenti]** che visualizza un elenco delle origini delle lingue create all&#39;interno di Risorse.
+[!DNL Experience Manager] l&#39;interfaccia fornisce un pannello **[!UICONTROL Riferimenti]** che visualizza un elenco delle radici della lingua create all&#39;interno di [!DNL Assets].
 
-1. Nella console Risorse, selezionate la lingua principale per la quale desiderate creare delle copie in lingua.
+1. Nella [!DNL Assets] console selezionare la lingua principale per la quale si desidera creare le copie della lingua.
 1. Dalla barra a sinistra, selezionate l’opzione **[!UICONTROL Riferimenti]** per aprire il riquadro [!UICONTROL Riferimento] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
