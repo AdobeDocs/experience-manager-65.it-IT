@@ -4,17 +4,17 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 12%
+source-wordcount: '2178'
+ht-degree: 11%
 
 ---
 
 
 # Gestire le raccolte {#managing-collections}
 
-Una raccolta è un insieme di risorse all&#39;interno  risorse di Adobe Experience Manager. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
+Una raccolta è un insieme di risorse all&#39;interno [!DNL Adobe Experience Manager Assets]. Utilizzate le raccolte per condividere le risorse tra gli utenti. Il set può essere una raccolta statica o una raccolta dinamica basata sui risultati di ricerca.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Potete condividere le raccolte con vari utenti a cui sono stati assegnati diversi livelli di privilegi, inclusi la visualizzazione, la modifica e così via.
 
@@ -28,7 +28,7 @@ Le raccolte sono dei tipi seguenti, in base al modo in cui vengono raccolte le r
 
 ## Accedere alla console delle raccolte {#navigating-the-collections-console}
 
-Per aprire le **[!UICONTROL raccolte]**, nell&#39;interfaccia Experience Manager , passate a **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**.
+Per aprire le **[!UICONTROL raccolte]**, nell&#39; [!DNL Experience Manager] interfaccia passate a **[!UICONTROL Risorse]** > **[!UICONTROL Raccolte]**.
 
 ## Creare una raccolta {#creating-a-collection}
 
@@ -52,15 +52,15 @@ Potete creare una raccolta con riferimenti statici, ad esempio una raccolta con 
 
    >[!NOTE]
    >
-   > Risorse Experience Manager consente di creare attività di revisione per una raccolta, in modo simile a come si creano le attività di revisione per una cartella di risorse.
+   >[!DNL Experience Manager Assets] consente di creare attività di revisione per una raccolta in modo simile alle attività di revisione per una cartella di risorse.
 
-   Per aggiungere risorse alla raccolta, passate all&#39;interfaccia utente Risorse. Per informazioni dettagliate, consultate [Aggiungere risorse a una raccolta](#adding-assets-to-a-collection).
+   Per aggiungere risorse alla raccolta, passate all&#39;interfaccia [!DNL Assets] utente. Per informazioni dettagliate, consultate [Aggiungere risorse a una raccolta](#adding-assets-to-a-collection).
 
 ### Creazione di raccolte tramite dropzone {#create-collections-using-dropzone}
 
-Potete trascinare le risorse dall&#39;interfaccia utente delle risorse a una raccolta. Potete anche creare una copia di una raccolta e trascinarvi le risorse.
+Potete trascinare le risorse dall&#39;interfaccia [!DNL Assets] utente a una raccolta. Potete anche creare una copia di una raccolta e trascinarvi le risorse.
 
-1. Dall&#39;interfaccia utente Risorse, selezionate le risorse che desiderate aggiungere a una raccolta.
+1. Dall&#39;interfaccia [!DNL Assets] utente, selezionate le risorse che desiderate aggiungere a una raccolta.
 1. Trascinate le risorse nell&#39;area **[!UICONTROL Rilascia nella raccolta]** . In alternativa, fare clic su **[!UICONTROL Alla raccolta]** dalla barra degli strumenti.
 
    ![drop_in_collection](assets/drop_in_collection.png)
@@ -78,7 +78,7 @@ Una raccolta avanzata utilizza un criterio di ricerca per compilare in modo dina
 
 Per creare una raccolta dinamica, effettuate le seguenti operazioni:
 
-1. Passa all’interfaccia utente Risorse e fai clic su Cerca.
+1. Passate all’interfaccia [!DNL Assets] utente e fate clic su Cerca.
 
 1. Digitate la parola chiave search nella casella corrispondente e premete `Enter`. Aprite il pannello Filtri e applicate un filtro di ricerca.
 
@@ -108,7 +108,7 @@ Per creare una raccolta dinamica, effettuate le seguenti operazioni:
 
 Potete aggiungere risorse a una raccolta contenente un elenco di risorse o cartelle a cui viene fatto riferimento. Le raccolte dinamiche utilizzano una query di ricerca per compilare le risorse. Pertanto, non è possibile applicare riferimenti statici a risorse e cartelle.
 
-1. Nell&#39;interfaccia utente Risorse, seleziona la risorsa e fai clic su **[!UICONTROL Alla raccolta]** ![aggiungi alla raccolta](assets/do-not-localize/add-to-collection.png) dalla barra degli strumenti.
+1. Nell&#39;interfaccia utente delle [!DNL A]risorse, selezionate la risorsa e fate clic su **[!UICONTROL Alla raccolta]** da ![aggiungere alla raccolta](assets/do-not-localize/add-to-collection.png) dalla barra degli strumenti.
 In alternativa, puoi trascinare la risorsa nell&#39;area **[!UICONTROL Rilascia nella raccolta]** dell&#39;interfaccia. Aggiungete le risorse quando l&#39;etichetta della regione diventa **[!UICONTROL Rilascia in Aggiungi]**.
 
 1. Nella pagina **[!UICONTROL Aggiungi alla raccolta]** , selezionate la raccolta alla quale desiderate aggiungere la risorsa.
@@ -119,9 +119,9 @@ In alternativa, puoi trascinare la risorsa nell&#39;area **[!UICONTROL Rilascia 
 
 Le raccolte intelligenti vengono create salvando una ricerca in modo da modificarne il contenuto modificando i parametri di ricerca della ricerca [](#saved-searches)salvata.
 
-1. Nell’interfaccia utente Risorse, fai clic sull’opzione di ![ricerca nella barra degli strumenti](assets/do-not-localize/search_icon.png) .
+1. Nell’interfaccia [!DNL Assets] utente, fare clic sull’opzione di ![ricerca nella barra degli strumenti](assets/do-not-localize/search_icon.png) .
 1. Con il cursore nella casella Omnisearch, premere il tasto Invio.
-1. Nell’interfaccia  Experience Manager, aprite il pannello Filtri.
+1. Nell’ [!DNL Experience Manager] interfaccia, aprire il pannello Filtri.
 1. Dall’elenco **[!UICONTROL Ricerche salvate]**, seleziona la raccolta avanzata da modificare. Nel pannello Ricerca sono visualizzati i filtri configurati per la ricerca salvata.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -156,7 +156,7 @@ Potete modificare i metadati di più raccolte contemporaneamente. Questa funzion
 
    >[!NOTE]
    >
-   >* Nella pagina [!UICONTROL Proprietà] , potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita.  Experience Manager non aggiorna i metadati delle raccolte che rimuovete.
+   >* Nella pagina [!UICONTROL Proprietà] , potete rimuovere le raccolte dall&#39;elenco delle raccolte deselezionandole. L&#39;elenco delle raccolte include tutte le raccolte selezionate per impostazione predefinita. [!DNL Experience Manager] non aggiorna i metadati delle raccolte che rimuovete.
    >* Nella parte superiore dell&#39;elenco, selezionate la casella di controllo accanto a **[!UICONTROL Titolo]** per alternare tra la selezione delle raccolte e la cancellazione dell&#39;elenco.
 
 
@@ -175,15 +175,15 @@ Per personalizzare la pagina [!UICONTROL Proprietà] metadati, compresa l&#39;ag
 
 ## Cerca raccolte {#searching-collections}
 
-Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico, Risorse cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
+Potete cercare le raccolte dalla console Raccolte. Quando eseguite una ricerca con le parole chiave nella casella di ricerca Omnico, [!DNL Assets] cerca i nomi delle raccolte, i metadati e i tag aggiunti alle raccolte.
 
-Se cercate raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. Le risorse o le cartelle all&#39;interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all&#39;interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
+Se cercate raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. [!DNL Assets] o le cartelle all&#39;interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all&#39;interno di una singola raccolta o in una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
 ## Cerca nelle raccolte {#searching-within-collections}
 
 Nella console Raccolte, fate clic su una raccolta per aprirla.
 
-All&#39;interno di una raccolta,  ricerca Experience Manager è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
+All&#39;interno di una raccolta, la [!DNL Experience Manager] ricerca è limitata alle risorse (e ai relativi tag e metadati) all&#39;interno della raccolta che state visualizzando. Quando eseguite una ricerca all’interno di una cartella, vengono restituite tutte le risorse e le cartelle figlie corrispondenti all’interno della cartella corrente. Quando eseguite una ricerca all&#39;interno di una raccolta, vengono restituite solo le risorse, le cartelle e altre raccolte corrispondenti a membri diretti della raccolta.
 
 ## Modifica delle impostazioni della raccolta {#editing-collection-settings}
 
@@ -234,7 +234,7 @@ Potete aggiungere una raccolta a un&#39;altra raccolta, creando in tal modo una 
 
 ## Ricerche salvate {#saved-searches}
 
-Nell’interfaccia utente Assets, puoi cercare o filtrare le risorse in base a determinate regole, criteri di ricerca o facet di ricerca personalizzata. Se salvi queste ricerche come **[!UICONTROL Ricerche salvate]**, puoi accedervi in un secondo momento dall’elenco **[!UICONTROL Ricerche salvate]** nel pannello Filtro. La creazione di una ricerca salvata genera anche una raccolta avanzata.
+In the [!DNL Assets] user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. Se salvi queste ricerche come **[!UICONTROL Ricerche salvate]**, puoi accedervi in un secondo momento dall’elenco **[!UICONTROL Ricerche salvate]** nel pannello Filtro. La creazione di una ricerca salvata genera anche una raccolta avanzata.
 
 ![saved_Search_list](assets/saved_searches_list.png)
 
@@ -248,9 +248,9 @@ La modifica delle ricerche salvate equivale alla modifica delle raccolte avanzat
 
 Per eliminare le ricerche salvate, effettuate le seguenti operazioni:
 
-1. Nell’interfaccia utente Risorse, fai clic sull’opzione ![di](assets/do-not-localize/search_icon.png)ricerca.
+1. Nell’interfaccia [!DNL Assets] utente, fate clic sull’opzione ![di](assets/do-not-localize/search_icon.png)ricerca.
 1. Con il cursore nel campo Omnisearch, premere il tasto Invio.
-1. Nell’interfaccia  Experience Manager, aprite il pannello Filtri.
+1. Nell’ [!DNL Experience Manager] interfaccia, aprire il pannello Filtri.
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -269,6 +269,6 @@ Potete eseguire un flusso di lavoro per le risorse all&#39;interno di una raccol
 
 >[!MORELIKETHIS]
 >
->* [Configurare  notifiche e-mail di Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configurare  notifiche e-mail di Risorse Experience Manager](/help/sites-administering/notification.md#assetsconfig)
 >* [Creazione di un&#39;attività di revisione per le raccolte](bulk-approval.md)
 
