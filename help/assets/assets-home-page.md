@@ -1,25 +1,25 @@
 ---
-title: Esperienza pagina iniziale  risorse Adobe Experience Manager
-description: Personalizza la home page di  Experience Manager Assets per un’esperienza sullo schermo di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
+title: '[!DNL  risorse Adobe Experience Manager] Esperienza pagina iniziale.'
+description: Personalizza [!DNL Experience Manager Assets] la pagina principale per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti intorno alle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
 
 
-# Esperienza pagina iniziale  risorse Adobe Experience Manager {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Esperienza pagina iniziale {#aem-assets-home-page-experience}
 
-Personalizza la home page delle risorse del Adobe Experience Manager  per un’esperienza sullo schermo di benvenuto completa, con un’istantanea delle attività recenti relative alle risorse.
+Personalizza la pagina [!DNL Adobe Experience Manager Assets] principale per un’esperienza ricca di schermata di benvenuto, con un’istantanea delle attività recenti intorno alle risorse.
 
-La pagina principale Risorse offre un’esperienza sulla schermata di benvenuto ricca e personalizzata, che include un’istantanea delle attività recenti, come le risorse che sono state visualizzate o caricate di recente.
+[!DNL Assets] la pagina principale offre un’esperienza sulla schermata di benvenuto ricca e personalizzata, che include un’istantanea delle attività recenti, come le risorse che sono state visualizzate o caricate di recente.
 
-Per impostazione predefinita, la home page delle risorse è disattivata. Per attivarla, effettuare le seguenti operazioni:
+Per impostazione predefinita, la [!DNL Assets] home page è disabilitata. Per attivarla, effettuare le seguenti operazioni:
 
-1. Aprite  Experience Manager Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Aprite [!DNL Experience Manager] Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Aprite il servizio **[!UICONTROL Day CQ DAM Event Recorder]** .
 1. Selezionate **[!UICONTROL Abilita questo servizio]** per abilitare la registrazione dell&#39;attività.
 
@@ -32,7 +32,7 @@ Per impostazione predefinita, la home page delle risorse è disattivata. Per att
    >Abilitando le opzioni di visualizzazione delle risorse, dei progetti visualizzati e delle raccolte, il numero di eventi registrati aumenta notevolmente.
 
 1. Aprite il servizio Flag **[!UICONTROL di funzionalità della home page della risorsa]** DAM da Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Selezionate l’ `isEnabled.name` opzione per attivare la funzione Pagina iniziale risorse. Salva le modifiche.
+1. Selezionate l’ `isEnabled.name` opzione per attivare la funzione [!DNL Assets] Home page. Salva le modifiche.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -40,13 +40,13 @@ Per impostazione predefinita, la home page delle risorse è disattivata. Per att
 
    ![Abilita pagina principale risorse nella finestra di dialogo Preferenze utente](assets/Annotation-color.png)
 
-Dopo aver attivato la home page delle risorse, passa all’interfaccia utente delle risorse dalla pagina di navigazione o accedi direttamente dall’URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
+Dopo aver attivato la [!DNL Assets] home page, passare all&#39;interfaccia [!DNL Assets] utente dalla pagina di navigazione o accedervi direttamente dall&#39;URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
 
 ![configura collegamento esperienza nell’interfaccia utente di Risorse](assets/config-experience-link.png)
 
 Fate clic su **[!UICONTROL Clicca qui per configurare il collegamento]** dell&#39;esperienza per aggiungere il vostro nome utente, l&#39;immagine di sfondo e l&#39;immagine del profilo.
 
-La home page delle risorse include le seguenti sezioni:
+La [!DNL Assets] home page include le sezioni seguenti:
 
 * Sezione Benvenuti
 * Sezione Widget
@@ -69,7 +69,7 @@ Questa sezione viene visualizzata sotto la sezione Benvenuti e presenta i widget
 
 **Recente**: Il widget **[!UICONTROL Visualizzato]** di recente in questa sezione visualizza le entità a cui l&#39;utente ha effettuato l&#39;accesso di recente, comprese cartelle, raccolte e progetti.
 
-**Scopri**: Il **[!UICONTROL nuovo]** widget in questa sezione visualizza le risorse e le rappresentazioni recentemente caricate nella distribuzione Risorse.
+**Scopri**: Il **[!UICONTROL nuovo]** widget in questa sezione visualizza le risorse e le rappresentazioni recentemente caricate nella [!DNL Assets] distribuzione.
 
 Per abilitare la rimozione dei dati dell&#39;attività utente, abilita il servizio **[!UICONTROL di rimozione eventi]** DAM da Configuration Manager. Dopo aver attivato questo servizio, le attività dell&#39;utente connesso che superano un numero specificato vengono eliminate dal sistema.
 
@@ -77,12 +77,12 @@ La schermata introduttiva fornisce strumenti di navigazione semplici, ad esempio
 
 >[!NOTE]
 >
->Se si abilitano i servizi [!UICONTROL Day CQ DAM Event Recorder] e [!UICONTROL DAM Event Purge] , le operazioni di scrittura su JCR e l&#39;indicizzazione delle ricerche aumentano notevolmente il carico sul server Experience Manager . Il carico aggiuntivo sul server Experience Manager  può influire sulle prestazioni.
+>Se si abilitano i servizi [!UICONTROL Day CQ DAM Event Recorder] e [!UICONTROL DAM Event Purge] , le operazioni di scrittura su JCR e l&#39;indicizzazione delle ricerche aumentano notevolmente il carico sul [!DNL Experience Manager] server. Il carico aggiuntivo sul [!DNL Experience Manager] server può influire sulle prestazioni.
 
 >[!CAUTION]
 >
->L’acquisizione, il filtro e l’eliminazione delle attività utente richieste per la home page delle risorse comportano un sovraccarico delle prestazioni. Pertanto, gli amministratori devono configurare la pagina principale in modo efficace per gli utenti target.
+>L&#39;acquisizione, il filtro e l&#39;eliminazione delle attività utente richieste per la pagina [!DNL Assets] principale comportano un sovraccarico delle prestazioni. Pertanto, gli amministratori devono configurare la pagina principale in modo efficace per gli utenti target.
 >
->Adobe consiglia agli amministratori e agli utenti che eseguono operazioni in blocco di evitare di utilizzare la funzione Pagina iniziale risorsa per impedire l’aumento delle attività degli utenti. Inoltre, gli amministratori possono escludere le attività di registrazione per utenti specifici configurando [!UICONTROL Day CQ DAM Event Recorder] da [!UICONTROL Configuration Manager].
+> Adobe consiglia agli amministratori e agli utenti che eseguono operazioni in blocco di evitare di utilizzare la funzione Pagina iniziale risorsa per impedire l’aumento delle attività degli utenti. Inoltre, gli amministratori possono escludere le attività di registrazione per utenti specifici configurando [!UICONTROL Day CQ DAM Event Recorder] da [!UICONTROL Configuration Manager].
 >
->Se utilizzate questa funzione, Adobe consiglia di pianificare la frequenza di eliminazione in base al carico del server.
+>Se utilizzate la funzione,  Adobe consiglia di pianificare la frequenza di eliminazione in base al carico del server.
