@@ -3,9 +3,9 @@ title: Consente di gestire le risorse video in [!DNL Adobe Experience Manager].
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '814'
 ht-degree: 7%
 
 ---
@@ -19,9 +19,9 @@ Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Ma
 
 ## Caricare e visualizzare in anteprima le risorse video {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] genera anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installate il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Puoi visualizzare l’anteprima delle rappresentazioni nell’interfaccia utente di Risorse.
+[!DNL Adobe Experience Manager Assets] genera anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installate il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Potete visualizzare l&#39;anteprima delle rappresentazioni nell&#39;interfaccia [!DNL Assets] utente.
 
-1. Nella cartella o nelle sottocartelle Risorse digitali, individuate il percorso in cui desiderate aggiungere le risorse digitali.
+1. Nella cartella o nelle sottocartelle delle risorse digitali, individuate il percorso in cui desiderate aggiungere le risorse digitali.
 1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL File]**. In alternativa, rilasciatelo direttamente nell’area delle risorse. Per informazioni dettagliate sull’operazione di caricamento, consultate [Caricare le risorse](managing-assets-touch-ui.md#uploading-assets) .
 1. Per visualizzare un’anteprima del video nella vista a schede, fate clic sull’opzione **[!UICONTROL Riproduci]** ![riproduzione](assets/do-not-localize/play.png) nella risorsa video. Potete mettere in pausa o riprodurre il video solo nella vista a schede. Le opzioni [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
 
@@ -36,7 +36,7 @@ Per impostazione predefinita, [!DNL Assets] non consente di caricare risorse mag
 Oltre alla [!DNL Assets] configurazione, modificate le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
 * Aumenta l’ora di scadenza del token. Consulta [!UICONTROL servlet] CSRF Granite Adobe nella console Web all’indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumentare la configurazione `receiveTimeout` in Dispatcher. Per ulteriori informazioni, consultate [Experience Manager di configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Dispatcher.
+* Aumentare la configurazione `receiveTimeout` in Dispatcher. Per ulteriori informazioni, consultate [Experience Manager configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Dispatcher.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 
 ## Annotazione delle risorse video {#annotate-video-assets}
 
-1. Dalla console Risorse, fate clic su [!UICONTROL Modifica] nella scheda della risorsa per visualizzare la pagina dei dettagli della risorsa.
+1. Dalla [!DNL Assets] console, fate clic su [!UICONTROL Modifica] nella scheda della risorsa per visualizzare la pagina dei dettagli della risorsa.
 1. Per riprodurre il video, fate clic su [!UICONTROL Anteprima].
 1. Per annotare il video, fate clic sul pulsante **[!UICONTROL Annota]** . Un’annotazione viene aggiunta alla data e all’ora specifiche (fotogramma) del video. Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente.
 
