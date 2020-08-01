@@ -1,27 +1,27 @@
 ---
 title: Rilevamento del tipo MIME di risorse tramite Apache Tika
-description: Abilita Apache Tika per aiutare Experience Manager Assets a rilevare il tipo MIME di risorse dal flusso di contenuto durante l’operazione di caricamento invece che l’estensione del file.
+description: Abilitate Apache Tika per [!DNL Experience Manager Assets] rilevare il tipo MIME di risorse dal flusso di contenuto durante l’operazione di caricamento invece dell’estensione del file.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
 
 
-# Detect MIME type of assets using Apache Tika {#detecting-mime-type-of-assets-using-apache-tika}
+# Rilevamento del tipo MIME di risorse tramite [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-In genere, Risorse Adobe Experience Manager rileva il tipo MIME di risorse caricate dall’estensione del file.
+Normalmente, [!DNL Adobe Experience Manager Assets] rileva il tipo MIME delle risorse caricate dall’estensione del file.
 
-Se usate Apache Tika per caricare le risorse, le risorse rilevano il tipo MIME dal flusso di contenuto durante l’operazione di caricamento invece dell’estensione del file.
+Se usate [!DNL Apache Tika] per caricare le risorse, [!DNL Assets] rileva il tipo MIME delle risorse dal flusso di contenuto durante l’operazione di caricamento invece dell’estensione del file.
 
 Questa funzione è disattivata per impostazione predefinita. Per abilitare questa funzione, configura il servizio **[!UICONTROL Day CQ DAM Mime Type]** da [!UICONTROL Configuration Manager].
 
 >[!NOTE]
 >
->Il rilevamento del tipo MIME con la libreria Apache Tika richiede molte risorse.
+>Il rilevamento del tipo MIME tramite la [!DNL Apache Tika] libreria richiede molte risorse.
 
 1. Per aprire la console Web di Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
 
