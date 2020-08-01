@@ -3,9 +3,9 @@ title: Creazione di progetti di traduzione
 description: Scopri come creare progetti di traduzione in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1898'
 ht-degree: 18%
 
 ---
@@ -66,7 +66,7 @@ Utilizza l’opzione **[!UICONTROL Crea solo struttura]** per creare una gerarch
 
 Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella directory principale della lingua in cui desiderate tradurre. A seconda delle opzioni selezionate, viene creato un progetto di traduzione per le risorse nella console Progetti. A seconda delle impostazioni, il progetto di traduzione può essere avviato manualmente o eseguito automaticamente non appena viene creato il progetto di traduzione.
 
-1. Nell’interfaccia utente Risorse, seleziona la cartella di origine per la quale vuoi creare una copia per la lingua.
+1. Nell’interfaccia [!DNL Assets] utente, selezionate la cartella di origine per la quale desiderate creare una copia della lingua.
 1. Open the **[!UICONTROL References]** pane and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
@@ -85,7 +85,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Fai clic su **[!UICONTROL Crea]**. Le risorse della cartella di origine vengono copiate nelle cartelle di destinazione per le impostazioni internazionali selezionate al punto 4.
+1. Fai clic su **[!UICONTROL Crea]**. [!DNL Assets] dalla cartella di origine vengono copiati nelle cartelle di destinazione per le impostazioni internazionali selezionate al punto 4.
 
    ![copie per lingua](assets/lang-copy2.png)
 
@@ -111,12 +111,11 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
    Per ulteriori dettagli sugli stati dei processi, vedere [Monitoraggio dello stato di un processo](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)di traduzione.
 
-1. Andate all’interfaccia utente delle risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
+1. Andate all&#39; [!DNL Assets] interfaccia utente e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
 
    ![visualizzare i metadati convertiti nella pagina Proprietà della risorsa](assets/translated-metadata-asset-properties.png)
 
    *Figura: Metadati tradotti nella pagina delle proprietà della risorsa.*
-
 
    >[!NOTE]
    >
@@ -126,7 +125,7 @@ Se utilizzate questa opzione, le risorse da tradurre vengono copiate nella direc
 
 Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito per le risorse aggiunte alla cartella di origine dopo aver eseguito un flusso di lavoro di traduzione precedente. Solo le risorse appena aggiunte vengono copiate nella cartella di destinazione che contiene le risorse tradotte in precedenza. In questo caso non viene creato alcun nuovo progetto di traduzione.
 
-1. Nell’interfaccia utente Risorse, passa alla cartella di origine contenente le risorse non tradotte.
+1. Nell’ [!DNL Assets] interfaccia utente, individuate la cartella sorgente che contiene le risorse non tradotte.
 1. Seleziona una risorsa da tradurre e apri il **[!UICONTROL riquadro Riferimento]**. Nella sezione **[!UICONTROL Copie per lingua]** viene visualizzato il numero di copie di traduzione attualmente disponibili.
 1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. Viene visualizzato un elenco delle copie di traduzione disponibili.
 1. Fate clic su **[!UICONTROL Crea e traduci]** in basso.
@@ -184,7 +183,7 @@ Se utilizzate questa opzione, il flusso di lavoro di traduzione viene eseguito p
 
    Per ulteriori dettagli, consultate [Monitoraggio dello stato di un processo](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)di traduzione.
 
-1. Al termine della traduzione, lo stato diventa Pronto per la revisione. Andate all’interfaccia utente delle risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
+1. Al termine della traduzione, lo stato diventa Pronto per la revisione. Andate all&#39; [!DNL Assets] interfaccia utente e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
 
 ## Aggiorna copie per lingua {#update-language-copies}
 
@@ -197,7 +196,7 @@ Eseguite questo flusso di lavoro per tradurre qualsiasi altro set di risorse e i
 
 Se utilizzate questa opzione, viene creato un progetto di traduzione per il set di risorse per il quale desiderate aggiornare una copia in lingua.
 
-1. Nell’interfaccia utente Risorse, seleziona la cartella di origine in cui hai aggiunto una risorsa.
+1. Dall’ [!DNL Assets] interfaccia utente, selezionate la cartella sorgente in cui avete aggiunto una risorsa.
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**, quindi fai clic sulla cartella di destinazione che corrisponde alle impostazioni internazionali appropriate.
 
@@ -240,13 +239,13 @@ Se utilizzate questa opzione, viene creato un progetto di traduzione per il set 
 
    Per ulteriori dettagli sugli stati dei processi, vedere [Monitoraggio dello stato di un processo](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)di traduzione.
 
-1. Andate all’interfaccia utente delle risorse e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati tradotti.
+1. Passate all’interfaccia [!DNL Assets] utente e aprite la pagina Proprietà per ciascuna risorsa convertita per visualizzare i metadati convertiti.
 
 ### Aggiungi a progetto di traduzione esistente {#add-to-existing-translation-project-1}
 
 Se utilizzate questa opzione, il set di risorse viene aggiunto a un progetto di traduzione esistente per aggiornare la copia della lingua per le impostazioni internazionali scelte.
 
-1. Dall’interfaccia utente Risorse, selezionate la cartella di origine in cui avete aggiunto una cartella di risorse.
+1. Dall’ [!DNL Assets] interfaccia utente, selezionate la cartella di origine in cui avete aggiunto una cartella di risorse.
 1. Open the **[!UICONTROL References pane]**, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
