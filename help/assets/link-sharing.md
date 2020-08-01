@@ -1,19 +1,19 @@
 ---
 title: Generare un URL per le risorse condivise
-description: Questo articolo descrive come condividere risorse, cartelle e raccolte all’interno  Experience Manager Assets come URL per parti esterne.
+description: Questo articolo descrive come condividere risorse, cartelle e raccolte [!DNL Experience Manager Assets] all’interno di un URL per parti esterne.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 6%
+source-wordcount: '1196'
+ht-degree: 7%
 
 ---
 
 
 # Condivisione di risorse tramite un collegamento {#asset-link-sharing}
 
- Risorse Adobe Experience Manager consente di condividere risorse, cartelle e raccolte come URL con i membri dell’organizzazione e le entità esterne, inclusi partner e fornitori. La condivisione di risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili a soggetti esterni senza dover prima accedere alle risorse.
+[!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte come URL con i membri dell&#39;organizzazione e le entità esterne, inclusi partner e fornitori. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere disponibili le risorse a soggetti esterni senza dover prima effettuare il login a [!DNL Assets].
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 >
 >Prima di condividere un collegamento con gli utenti, assicurarsi che Day CQ Mail Service sia configurato. Si verifica un errore se si tenta di condividere un collegamento senza prima [configurare Day CQ Mail Service](/help/assets/link-sharing.md#configmailservice).
 
-1. Nell’interfaccia utente Risorse, seleziona la risorsa da condividere come collegamento.
+1. Nell’interfaccia [!DNL Assets] utente, seleziona la risorsa da condividere come collegamento.
 1. Dalla barra degli strumenti, fate clic sull’icona **[!UICONTROL Condividi collegamento]** per ![condividere le risorse](assets/do-not-localize/assets_share.png).
 
    Nel campo **[!UICONTROL Condividi collegamento]** viene creato automaticamente un collegamento a una risorsa. Copiate questo collegamento e condividetelo con gli utenti. Il tempo di scadenza predefinito per il collegamento è un giorno.
@@ -40,7 +40,7 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    >[!NOTE]
    >
-   >Se desiderate condividere i collegamenti dalla distribuzione di Experience Manager Author  a entità esterne, accertatevi di esporre solo i seguenti URL (utilizzati solo per la condivisione dei collegamenti) per `GET` le richieste. Bloccate altri URL per garantire la sicurezza di  Experience Manager Author.
+   >Se desiderate condividere i collegamenti dalla distribuzione di [!DNL Experience Manager] Author a entità esterne, accertatevi di esporre solo i seguenti URL (utilizzati per la condivisione dei collegamenti) per `GET` le richieste. Bloccate altri URL per garantire la sicurezza di [!DNL Experience Manager] Author.
    >
    >* http://[aem_server]:[porta]/linkshare.html
    >* http://[aem_server]:[porta]/linksharepreview.html
@@ -51,9 +51,9 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
    >
    >Se una risorsa condivisa viene spostata in un percorso diverso, il collegamento non funziona più. Crea di nuovo il collegamento e condividi nuovamente con gli utenti.
 
-1. Nell&#39;interfaccia  Experience Manager, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Nell&#39; [!DNL Experience Manager] interfaccia, accedere a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
 
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Per le proprietà `local` e `author` , fornite l’URL rispettivamente per l’istanza locale e per l’istanza di creazione. Sia `local` che `author` le proprietà hanno lo stesso valore se eseguite una singola istanza di Experience Manager Author . Ad `publish`esempio, fornite l’URL per l’istanza di pubblicazione Experience Manager .
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Per le proprietà `local` e `author` , fornite l’URL rispettivamente per l’istanza locale e per l’istanza di creazione. Sia `local` che `author` le proprietà hanno lo stesso valore se si esegue una singola istanza di [!DNL Experience Manager] Author. Ad `publish`esempio, fornite l’URL per l’istanza di [!DNL Experience Manager] pubblicazione.
 
 1. Nella casella dell’indirizzo e-mail della finestra di dialogo **[!UICONTROL Condivisione collegamenti]**, digita l’ID e-mail dell’utente con cui vuoi condividere il collegamento. Puoi anche condividere il collegamento con più utenti.
 
@@ -96,19 +96,19 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
    >[!NOTE]
    >
-   > Experience Manager supporta la generazione dell&#39;anteprima delle risorse di questi tipi MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Potete scaricare solo le risorse degli altri tipi MIME.
+   >[!DNL Experience Manager] supporta la generazione dell&#39;anteprima delle risorse di questi tipi MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Potete scaricare solo le risorse degli altri tipi MIME.
 
 1. Per scaricare la risorsa condivisa, fate clic su **[!UICONTROL Seleziona]** nella barra degli strumenti, fate clic sulla risorsa, quindi su **[!UICONTROL Scarica]** dalla barra degli strumenti.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Per visualizzare le risorse condivise come collegamenti, accedi all’interfaccia utente delle risorse e fai clic sul logo Experience Manager . Scegliere **[!UICONTROL Navigazione]** dall&#39;elenco per visualizzare il riquadro di navigazione.
+1. Per visualizzare le risorse condivise come collegamenti, passate all’interfaccia [!DNL Assets] utente e fate clic sul [!DNL Experience Manager] logo. Scegliere **[!UICONTROL Navigazione]** dall&#39;elenco per visualizzare il riquadro di navigazione.
 1. Per visualizzare un elenco delle risorse condivise, scegli **[!UICONTROL Collegamenti condivisi]** nel riquadro di navigazione.
 1. Per annullare la condivisione di una risorsa, selezionatela e fate clic su **[!UICONTROL Annulla condivisione]** nella barra degli strumenti. Segue un messaggio di conferma. La voce relativa alla risorsa viene rimossa dall’elenco.
 
 ## Configura servizio di posta CQ Day {#configmailservice}
 
-1. Nella home page di  Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
+1. Nella pagina [!DNL Experience Manager] principale, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
 1. Dall&#39;elenco dei servizi, individuare il servizio **[!UICONTROL di posta]** Day CQ.
 1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -123,9 +123,9 @@ Per generare l’URL delle risorse da condividere con gli utenti, usate la fines
 
 ## Configurare la dimensione massima dei dati {#maxdatasize}
 
-Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti,  Experience Manager comprime la gerarchia delle risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione di servizio a causa di questa situazione, configurate la dimensione massima utilizzando il parametro **[!UICONTROL Max Content Size (non compresso)]** per il servlet [!UICONTROL proxy di condivisione di risorse Adhoc] Day CQ DAM in Configuration Manager. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
+Quando scaricate le risorse dal collegamento condiviso mediante la funzione Condivisione collegamenti, comprime [!DNL Experience Manager] la gerarchia delle risorse dall’archivio e quindi restituisce la risorsa in un file ZIP. Tuttavia, in assenza di limiti alla quantità di dati che possono essere compressi in un file ZIP, enormi quantità di dati sono soggetti a compressione, il che causa errori di memoria insufficiente in JVM. Per proteggere il sistema da un potenziale attacco di negazione di servizio a causa di questa situazione, configurate la dimensione massima utilizzando il parametro **[!UICONTROL Max Content Size (non compresso)]** per il servlet [!UICONTROL proxy di condivisione di risorse Adhoc] Day CQ DAM in Configuration Manager. Se le dimensioni non compresse della risorsa superano il valore configurato, le richieste di download delle risorse vengono rifiutate. Il valore predefinito è 100 MB.
 
-1. Click the Experience Manager logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Click the [!DNL Experience Manager] logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Dalla console Web, individua la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** .
 1. Apri la configurazione **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** in modalità di modifica e cambia il valore del parametro in **[!UICONTROL Max Content Size (uncompressed)]**.
 
@@ -136,6 +136,6 @@ Quando scaricate le risorse dal collegamento condiviso mediante la funzione Cond
 ## Best practices and troubleshooting {#bestpractices}
 
 * Le cartelle di risorse o le raccolte che contengono uno spazio vuoto nel loro nome potrebbero non essere condivise.
-* Se gli utenti non possono scaricare le risorse condivise, verificate con il vostro amministratore  Experience Manager i limiti [di](#maxdatasize) download.
-* Se non riuscite a inviare e-mail con collegamenti a risorse condivise o se gli altri utenti non possono ricevere l’e-mail, verificate con il vostro  amministratore Experience Manager se il servizio [](#configmailservice) e-mail è configurato o meno.
+* Se gli utenti non possono scaricare le risorse condivise, verificate con [!DNL Experience Manager] l’amministratore quali siano i limiti [di](#maxdatasize) download.
+* Se non potete inviare e-mail con collegamenti a risorse condivise o se gli altri utenti non possono ricevere l’e-mail, verificate con l’ [!DNL Experience Manager] amministratore se il servizio [e-](#configmailservice) mail è configurato o meno.
 * Se non potete condividere le risorse utilizzando la funzionalità di condivisione dei collegamenti, accertatevi di disporre delle autorizzazioni appropriate. Consultate [Condividere le risorse](#sharelink).
