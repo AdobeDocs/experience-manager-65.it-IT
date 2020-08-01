@@ -1,11 +1,11 @@
 ---
-title: Gestire i metadati di molte risorse e raccolte in Adobe Enterprise Manager.
+title: Gestire i metadati di molte risorse e raccolte in [!DNL Adobe Enterprise Manager].
 description: Modificate simultaneamente i metadati di molte risorse e raccolte per diffondere rapidamente le comuni modifiche ai metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '487'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # Gestione di risorse e raccolte {#managing-multiple-assets-and-collections}
 
-Risorse Adobe Enterprise Manager consente di modificare simultaneamente i metadati di più risorse, in modo da poter rapidamente estendere le comuni modifiche ai metadati alle risorse in gruppo. Potete anche modificare i metadati per più raccolte in blocco.
+[!DNL Adobe Enterprise Manager Assets] consente di modificare simultaneamente i metadati di più risorse, in modo da poter rapidamente estendere le comuni modifiche ai metadati alle risorse in gruppo. Potete anche modificare i metadati per più raccolte in blocco.
 
 Utilizzate la pagina delle proprietà per eseguire modifiche ai metadati su più risorse o raccolte:
 
@@ -28,7 +28,7 @@ Per personalizzare la pagina delle proprietà dei metadati, incluse l’aggiunta
 
 ## Modificare le proprietà dei metadati di più risorse {#editing-metadata-properties-of-multiple-assets}
 
-1. Nell’interfaccia utente Risorse, passa alla posizione delle risorse che desideri modificare.
+1. Nell’interfaccia [!DNL Assets] utente, individuate la posizione delle risorse da modificare.
 1. Selezionate le risorse per le quali desiderate modificare le proprietà comuni.
 1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà relativa alle risorse selezionate.
 
