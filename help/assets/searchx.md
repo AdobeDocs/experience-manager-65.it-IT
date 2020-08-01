@@ -1,11 +1,11 @@
 ---
-title: Estendi la funzionalità di ricerca di risorse  Adobe Experience Manager
-description: Estendi le funzionalità di ricerca di  risorse Adobe Experience Manager oltre i valori predefiniti.
+title: Estende la funzionalità di ricerca di [!DNL Adobe Experience Manager Assets].
+description: Estendete le funzionalità [!DNL Adobe Experience Manager Assets] di ricerca oltre i valori predefiniti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '841'
 ht-degree: 19%
 
 ---
@@ -21,7 +21,7 @@ Potete anche aggiungere ulteriori schede al pannello [!DNL Assets] Amministrazio
 
 >[!CAUTION]
 >
->A partire dalla versione [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consultate [Funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsolete e rimosse. Adobe consiglia di utilizzare l&#39;interfaccia touch. Per la personalizzazione, consultate Facet di [ricerca](/help/assets/search-facets.md).
+>A partire dalla versione [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consultate [Funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsolete e rimosse.  Adobe consiglia di utilizzare l&#39;interfaccia touch. Per la personalizzazione, consultate Facet di [ricerca](/help/assets/search-facets.md).
 
 ## Sovrapposizione {#overlaying}
 
@@ -35,7 +35,7 @@ Per sovrapporre i predicati preconfigurati, copiate il `facets` nodo da `/libs/d
 
 ## Aggiungi schede {#adding-tabs}
 
-Puoi aggiungere ulteriori schede di ricerca configurandole nell’interfaccia di amministrazione delle risorse. Per creare schede aggiuntive:
+Potete aggiungere ulteriori schede di ricerca configurandole nell&#39;interfaccia [!DNL Assets] di amministrazione. Per creare schede aggiuntive:
 
 1. Create la struttura delle cartelle `/apps/wcm/core/content/damadmin/tabs,`se non esiste già, quindi copiate il `tabs` nodo da `/libs/wcm/core/content/damadmin` e incollatelo.
 1. Create e configurate la seconda scheda, come desiderato.
@@ -48,7 +48,7 @@ Puoi aggiungere ulteriori schede di ricerca configurandole nell’interfaccia di
 
 [!DNL Assets] viene fornito con un set di predicati predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. La personalizzazione di una condivisione di risorse in questo modo è inclusa nella sezione relativa alla [creazione e alla configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)Condivisione di risorse.
 
-Oltre a utilizzare i predicati preesistenti,  sviluppatori Experience Manager possono anche creare i propri predicati utilizzando l&#39;API [](/help/sites-developing/querybuilder-api.md)Query Builder.
+Oltre a utilizzare i predicati preesistenti, [!DNL Experience Manager] gli sviluppatori possono anche creare i propri predicati utilizzando l&#39;API [di](/help/sites-developing/querybuilder-api.md)Query Builder.
 
 La creazione di predicati personalizzati richiede conoscenze di base sul framework [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)Widget.
 
@@ -296,6 +296,6 @@ I seguenti predicati sono disponibili come widget ExtJS preconfigurati.
 
 ## Personalizzare i risultati della ricerca {#customizing-search-results}
 
-La presentazione dei risultati della ricerca in una pagina Condivisione risorse è regolata dall’obiettivo selezionato.  Risorse Experience Manager include una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
+La presentazione dei risultati della ricerca in una pagina Condivisione risorse è regolata dall’obiettivo selezionato. [!DNL Experience Manager Assets] viene fornito con una serie di obiettivi predefiniti che possono essere utilizzati per personalizzare una pagina Condivisione risorse. In questo modo potete personalizzare una condivisione di risorse in [Creazione e configurazione di una pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)di condivisione di risorse.
 
-Oltre a utilizzare ottiche preesistenti,  sviluppatori Experience Manager possono anche creare ottiche proprie.
+Oltre a utilizzare ottiche preesistenti, [!DNL Experience Manager] gli sviluppatori possono anche creare le proprie ottiche.
