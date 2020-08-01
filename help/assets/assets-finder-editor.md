@@ -3,9 +3,9 @@ title: Creare e configurare le pagine Editor risorse
 description: Scoprite come creare pagine Editor risorse personalizzate e modificare più risorse contemporaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2130'
+source-wordcount: '2120'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ Il presente documento descrive quanto segue:
 
 ## Perché creare e configurare le pagine Editor risorse? {#why-create-and-configure-asset-editor-pages}
 
-Gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale, ad esempio fotografi o tassonomisti, a gruppi di utenti più grandi e diversificati, ad esempio utenti aziendali, autori WCM, giornalisti e così via, la potente interfaccia utente di  Adobe Experience Manager Assets per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali rilevanti per loro.
+Gestione delle risorse digitali viene utilizzata in sempre più scenari. Quando si passa da una soluzione su piccola scala per un piccolo gruppo di utenti con una formazione professionale - ad esempio fotografi o tassonomisti - a gruppi di utenti più grandi e diversificati - ad esempio utenti aziendali, autori WCM, giornalisti e così via - la potente interfaccia utente di [!DNL Adobe Experience Manager Assets] per gli utenti professionali può fornire troppe informazioni e le parti interessate iniziano a richiedere interfacce utente o applicazioni specifiche per accedere alle risorse digitali che sono rilevanti per loro.
 
 Queste applicazioni incentrate sulle risorse possono essere semplici gallerie fotografiche in una rete Intranet dove i dipendenti possono caricare le foto dalle visite alle fiere o da un centro stampa in un sito Web rivolto al pubblico. Le applicazioni incentrate sulle risorse possono anche estendersi alle soluzioni complete, inclusi carrelli commerciali, checkout e processi di verifica.
 
-La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con Risorse possono essere estese: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
+La creazione di un’applicazione incentrata sulle risorse diventa in larga misura un processo di configurazione che non richiede la codifica, ma solo la conoscenza dei gruppi di utenti e delle loro esigenze, nonché la conoscenza dei metadati utilizzati. Le applicazioni incentrate sulle risorse create con [!DNL Assets] sono estensibili: con un lavoro di codifica moderato è possibile creare componenti riutilizzabili per la ricerca, la visualizzazione e la modifica delle risorse.
 
-Un’applicazione incentrata sulle risorse in  Experience Manager è costituita da una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
+Un’applicazione incentrata sulle risorse in [!DNL Experience Manager] consiste in una pagina Editor risorse, che può essere utilizzata per ottenere una visualizzazione dettagliata di una risorsa specifica. Una pagina Editor risorse consente anche di modificare i metadati, a condizione che l’utente che accede alla risorsa disponga delle autorizzazioni necessarie.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -387,7 +387,7 @@ Sono disponibili le azioni seguenti:
 
 ## Risorse con più modifiche nella pagina Editor risorse {#multi-editing-assets-with-the-asset-editor-page}
 
-Con  risorse di Experience Manager potete apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
+È [!DNL Experience Manager Assets] possibile apportare modifiche a più risorse alla volta. Dopo aver selezionato le risorse, potete modificarle simultaneamente:
 
 * Tag
 * Metadati
