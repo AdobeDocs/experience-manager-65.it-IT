@@ -1,23 +1,23 @@
 ---
-title: Integrare le risorse con il flusso di attività
-description: Descrive le funzionalità di registrazione di Experience Manager e come configurarle per registrare eventi specifici.
+title: ' [!DNL Assets] Integrate con il flusso di attività.'
+description: Descrive le funzionalità [!DNL Experience Manager] di registrazione e come configurarle per registrare eventi specifici.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
 
 
-# Integrare le risorse con il flusso di attività {#integrating-assets-with-activity-stream}
+# Integrazione [!DNL Assets] con il flusso di attività {#integrating-assets-with-activity-stream}
 
-Gli utenti di Risorse Adobe Experience Manager eseguono numerose azioni come creazione, caricamento ed eliminazione di risorse. Queste azioni possono essere registrate in modo da fornire una cronologia delle operazioni eseguite da un utente. Questa sezione descrive le funzionalità di registrazione di Experience Manager e come configurare Experience Manager per registrare eventi specifici.
+[!DNL Adobe Experience Manager Assets] gli utenti eseguono numerose azioni come creazione, caricamento ed eliminazione di risorse. Queste azioni possono essere registrate in modo da fornire una cronologia delle operazioni eseguite da un utente. Questa sezione descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurarle [!DNL Experience Manager] per registrare eventi specifici.
 
 ## Considerazioni sulle prestazioni e comportamento predefinito {#performance-considerations-and-default-behavior}
 
-Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l&#39;integrazione delle risorse con il Flusso attività è disabilitata per impostazione predefinita.
+Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durante l&#39;importazione in massa. Per questi motivi l&#39; [!DNL Assets] integrazione con il Flusso attività è disabilitata per impostazione predefinita.
 
 ## Eventi azione supportati {#supported-action-events}
 
@@ -39,7 +39,7 @@ Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durant
 * Risorsa secondaria aggiornata (SUBASSET_UPDATED)
 * Risorsa secondaria rimossa (SUBASSET_REMOVED)
 
-## Configurazione della registrazione degli eventi delle risorse {#configuring-aem-assets-events-recording}
+## Configurare la registrazione [!DNL Assets] degli eventi {#configuring-aem-assets-events-recording}
 
 La console [](/help/sites-deploying/configuring-osgi.md) Web consente di accedere al tuning del registratore eventi delle risorse. Per configurare il Registratore eventi risorse, effettuate le seguenti operazioni:
 
