@@ -3,9 +3,9 @@ title: Gestire le risorse composte con riferimenti e risorse di più pagine in [
 description: Scopri come creare riferimenti a risorse digitali dall’interno [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 
 È possibile fare riferimento a risorse digitali esistenti direttamente da un [!DNL Adobe Illustrator] file.
 
-1. Utilizzando [app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)desktop Experience Manager, recuperate le risorse digitali nel file system locale. Andate alla posizione del file system della risorsa a cui desiderate fare riferimento.
+1. Utilizzando [app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)desktop di Experience Manager, recuperate le risorse digitali nel file system locale. Andate alla posizione del file system della risorsa a cui desiderate fare riferimento.
 1. Trascinate la risorsa dalla cartella locale al [!DNL Illustrator] file.
 
 1. Salvate il [!DNL Illustrator] file nell&#39;unità montata o [caricatelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) nell&#39; [!DNL Experience Manager] archivio.
@@ -40,7 +40,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 
 1. Fare clic su **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti. Nella pagina [!UICONTROL Proprietà] , l’elenco dei file che fanno riferimento alla risorsa corrente viene visualizzato nella colonna **[!UICONTROL Riferimenti]** della scheda **[!UICONTROL Base]** .
 
-   ![visualizzare i riferimenti di  risorse Experience Manager nella colonna Riferimenti nei dettagli della risorsa](assets/asset-references.png)
+   ![visualizzare i riferimenti di Risorse  Experience Manager nella colonna Riferimenti nei dettagli della risorsa](assets/asset-references.png)
 
    *Figura: Riferimenti alle risorse nei dettagli delle risorse.*
 
@@ -48,15 +48,15 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 
 Per fare riferimento a risorse digitali da un [!DNL InDesign] file, trascinate le risorse sul [!DNL InDesign] file o esportate il [!DNL InDesign] file come archivio ZIP.
 
-Le risorse di riferimento esistono già in [!DNL Experience Manager Assets]. Potete estrarre le risorse secondarie [configurando InDesign Server](indesign.md). Le risorse incorporate in un [!DNL InDesign] file vengono estratte come risorse secondarie.
+Le risorse di riferimento esistono già in [!DNL Experience Manager Assets]. Potete estrarre le risorse secondarie [configurando  InDesign Server](indesign.md). Le risorse incorporate in un [!DNL InDesign] file vengono estratte come risorse secondarie.
 
 >[!NOTE]
 >
->Se il file [!DNL InDesign Server] è proxy, [!DNL InDesign] la relativa anteprima viene incorporata nei metadati XMP. In questo caso, l&#39;estrazione delle miniature non è obbligatoria in modo esplicito. Tuttavia, se il file non [!DNL InDesign Server] è proxy, le miniature devono essere esplicitamente estratte per [!DNL InDesign] i file.
+>Se il file [!DNL InDesign Server] è proxy, [!DNL InDesign] l’anteprima dei file viene incorporata nei metadati XMP. In questo caso, l&#39;estrazione delle miniature non è obbligatoria in modo esplicito. Tuttavia, se il file non [!DNL InDesign Server] è proxy, le miniature devono essere esplicitamente estratte per [!DNL InDesign] i file.
 
 ### Creare riferimenti trascinando le risorse {#create-references-by-dragging-aem-assets}
 
-Questa procedura è simile all’ [aggiunta di risorse digitali come riferimenti in Adobe Illustrator](#refai).
+Questa procedura è simile all’ [aggiunta di risorse digitali come riferimenti in  Adobe Illustrator](#refai).
 
 ### Creare riferimenti alle risorse esportando un file ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
@@ -131,12 +131,12 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 ## Best practice e limitazioni {#best-practice-limitation-tips}
 
-* La generazione di risorse secondarie può richiedere molte risorse per qualsiasi implementazione Experience Manager . Se generate risorse secondarie quando vengono caricate risorse complesse, aggiungete il passaggio nel flusso di lavoro Aggiorna risorsa DAM. Se generate risorse secondarie su richiesta, create un flusso di lavoro separato per generare le risorse secondarie. Un flusso di lavoro dedicato consente di saltare gli altri passaggi del flusso di lavoro DAM Update Asset e di salvare le risorse di calcolo.
+* La generazione di risorse secondarie può richiedere molte risorse per qualsiasi [!DNL Experience Manager] implementazione. Se generate risorse secondarie quando vengono caricate risorse complesse, aggiungete il passaggio nel flusso di lavoro Aggiorna risorsa DAM. Se generate risorse secondarie su richiesta, create un flusso di lavoro separato per generare le risorse secondarie. Un flusso di lavoro dedicato consente di saltare gli altri passaggi del flusso di lavoro DAM Update Asset e di salvare le risorse di calcolo.
 
 >[!MORELIKETHIS]
 >
 >* [Usa app desktop  Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
 >* [Configurare le azioni desktop in  Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
->* [Creare Smart Object collegati in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Inserire elementi grafici in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+>* [Creare Smart Object collegati in  Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [Inserire grafica in  Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
