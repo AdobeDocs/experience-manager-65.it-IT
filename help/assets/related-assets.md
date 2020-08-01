@@ -3,9 +3,9 @@ title: Risorse correlate
 description: Scoprite come collegare risorse digitali che condividono attributi comuni. Create anche relazioni derivate dal codice sorgente tra le risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
 ## Relate assets {#relating-assets}
 
-1. Dall’interfaccia Experience Manager , aprite la pagina **[!UICONTROL Proprietà]** di una risorsa da correlare.
+1. Dall’ [!DNL Experience Manager] interfaccia, aprite la pagina **[!UICONTROL Proprietà]** di una risorsa da correlare.
 
    ![aprire la pagina Proprietà di una risorsa per correlare la risorsa](assets/asset-properties-relate-assets.png)
 
@@ -65,9 +65,9 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
 1. Click **[!UICONTROL OK]** to close the dialog. Le risorse per le quali avete rimosso le relazioni vengono eliminate dall’elenco delle risorse correlate nella sezione **[!UICONTROL Correlati]** .
 
-## Conversione di risorse correlate {#translating-related-assets}
+## Tradurre le risorse correlate {#translating-related-assets}
 
-La creazione di relazioni sorgente/derivate tra risorse mediante la funzione Risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando eseguite un flusso di lavoro di traduzione su una risorsa derivata, recupera [!DNL Experience Manager Assets] automaticamente tutte le risorse a cui fa riferimento il file sorgente e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene convertita insieme alle risorse sorgente e derivate. Ad esempio, in uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
+La creazione di relazioni sorgente/derivate tra risorse mediante la funzione delle risorse correlate è utile anche nei flussi di lavoro di traduzione. Quando eseguite un flusso di lavoro di traduzione su una risorsa derivata, recupera [!DNL Experience Manager Assets] automaticamente tutte le risorse a cui fa riferimento il file sorgente e le include per la traduzione. In questo modo, la risorsa a cui fa riferimento la risorsa di origine viene convertita insieme alle risorse sorgente e derivate. Ad esempio, in uno scenario in cui la copia in lingua inglese include una risorsa derivata e il relativo file di origine come mostrato.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
