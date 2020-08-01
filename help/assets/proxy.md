@@ -1,23 +1,23 @@
 ---
-title: Sviluppo proxy delle risorse
-description: Un proxy è un’istanza Experience Manager che utilizza i proxy worker per elaborare i processi. Scopri come configurare un proxy Experience Manager, le operazioni supportate, i componenti proxy e come sviluppare un lavoratore proxy personalizzato.
+title: Sviluppo proxy di [!DNL Assets]
+description: Un proxy è [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] un proxy, operazioni supportate, componenti proxy e come sviluppare un proxy lavoratore personalizzato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
 
 
-# Sviluppo proxy delle risorse {#assets-proxy-development}
+# [!DNL Assets] sviluppo proxy {#assets-proxy-development}
 
-Risorse Adobe Experience Manager utilizza un proxy per distribuire l’elaborazione per determinate attività.
+[!DNL Adobe Experience Manager Assets] utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
 
-Un proxy è un’istanza Experience Manager specifica (e a volte separata) che utilizza i proxy worker come processori responsabili della gestione di un processo e della creazione di un risultato. Un lavoratore proxy può essere utilizzato per un&#39;ampia gamma di attività. Nel caso di un proxy Risorse, questo può essere utilizzato per caricare le risorse per il rendering all’interno di Risorse. Ad esempio, il lavoratore [proxy](indesign.md) IDS utilizza un [!DNL Adobe InDesign] server per elaborare i file da utilizzare in Assets.
+Un proxy è un&#39;istanza di Experience Manager  specifica (e a volte separata) che utilizza i proxy worker come processori responsabili della gestione di un processo e della creazione di un risultato. Un lavoratore proxy può essere utilizzato per un&#39;ampia gamma di attività. Nel caso di un [!DNL Assets] proxy, questo può essere utilizzato per caricare le risorse per il rendering all’interno delle risorse. Ad esempio, il lavoratore [proxy](indesign.md) IDS utilizza un [!DNL Adobe InDesign] server per elaborare i file da utilizzare in Assets.
 
-Se il proxy è un’istanza Experience Manager separata, questo consente di ridurre il carico sulle istanze di authoring di Experience Manager. Per impostazione predefinita, Assets esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite proxy) per ridurre il carico sull’istanza di authoring di Experience Manager.
+Se il proxy è un&#39; [!DNL Experience Manager] istanza separata, questo consente di ridurre il carico sulle istanze di authoring dei Experienci Manager . Per impostazione predefinita, [!DNL Assets] esegue le attività di elaborazione delle risorse nella stessa JVM (esternalizzata tramite proxy) per ridurre il carico sull’istanza di creazione del Experience Manager .
 
 ## Proxy (accesso HTTP) {#proxy-http-access}
 
@@ -109,11 +109,11 @@ Esempio di utilizzo delle API:
 >
 >La documentazione di riferimento per l&#39;API proxy è disponibile in [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Sia le configurazioni di proxy che quelle di proxy worker sono disponibili tramite configurazioni di servizi cloud accessibili dalla console **Strumenti** risorse o in `/etc/cloudservices/proxy`. Ogni lavoratore proxy deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del lavoratore (ad esempio, `/etc/cloudservices/proxy/workername`).
+Sia le configurazioni di proxy che quelle di proxy worker sono disponibili tramite configurazioni di servizi cloud accessibili dalla console [!DNL Assets] Strumenti **o in** `/etc/cloudservices/proxy`. Ogni lavoratore proxy deve aggiungere un nodo in `/etc/cloudservices/proxy` per i dettagli di configurazione specifici del lavoratore (ad esempio, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta Configurazione [del Proxy Worker di](indesign.md#configuring-the-proxy-worker-for-indesign-server) InDesign Server e configurazione [dei servizi](../sites-developing/extending-cloud-config.md) Cloud.
+>Per ulteriori informazioni, consulta [configurazione](indesign.md#configuring-the-proxy-worker-for-indesign-server) InDesign Server Proxy Worker e configurazione [](../sites-developing/extending-cloud-config.md) Cloud Services.
 
 Esempio di utilizzo delle API:
 
@@ -132,9 +132,9 @@ Esempio di utilizzo delle API:
 
 ### Sviluppo di un Proxy Worker personalizzato {#developing-a-customized-proxy-worker}
 
-Il lavoratore [proxy](indesign.md) IDS è un esempio di un lavoratore proxy Assets già fornito out-of-the-box per esternalizzare l&#39;elaborazione delle risorse InDesign.
+Il lavoratore [proxy](indesign.md) IDS è un esempio di un lavoratore [!DNL Assets] proxy già fornito out-of-the-box per esternalizzare l&#39;elaborazione delle risorse  InDesign.
 
-Puoi anche sviluppare e configurare il tuo personale addetto proxy Risorse per creare un lavoratore specializzato per l’invio e l’outsourcing delle attività di elaborazione Risorse.
+È inoltre possibile sviluppare e configurare il proprio [!DNL Assets] proxy worker per creare un lavoratore specializzato per l&#39;invio e l&#39;outsourcing delle attività di [!DNL Assets] elaborazione.
 
 Per impostare un lavoratore proxy personalizzato è necessario:
 
@@ -156,7 +156,7 @@ Nel diagramma seguente e nei passaggi viene descritto come procedere:
 
 >[!NOTE]
 >
->Nei passaggi seguenti, gli equivalenti di InDesign sono indicati come esempi di riferimento.
+>Nei passaggi seguenti, gli equivalenti  InDesign sono indicati come esempi di riferimento.
 
 1. Viene utilizzato un processo [](https://sling.apache.org/site/eventing-and-jobs.html) Sling, per cui è necessario definire un argomento di processo per il caso d’uso.
 
@@ -176,7 +176,7 @@ Nel diagramma seguente e nei passaggi viene descritto come procedere:
 
 >[!NOTE]
 >
->Ciò che il framework proxy Assets non fornisce è il meccanismo del pool.
+>Ciò che il framework [!DNL Assets] proxy non fornisce è il meccanismo del pool.
 >
 >L&#39; [!DNL InDesign] integrazione consente l&#39;accesso a un pool di [!DNL InDesign] server (IDSPool). Questo pool è specifico dell&#39; [!DNL InDesign] integrazione e non fa parte del framework [!DNL Assets] proxy.
 
@@ -184,4 +184,4 @@ Nel diagramma seguente e nei passaggi viene descritto come procedere:
 >
 >Sincronizzazione dei risultati:
 >
->In caso di n istanze che utilizzano lo stesso proxy, il risultato dell&#39;elaborazione rimane con il proxy. È compito del client (Experience Manager Author) richiedere il risultato utilizzando lo stesso ID processo univoco fornito al client al momento della creazione del processo. Il proxy ottiene semplicemente il lavoro e mantiene il risultato pronto per essere richiesto.
+>In caso di n istanze che utilizzano lo stesso proxy, il risultato dell&#39;elaborazione rimane con il proxy. È compito del client ( Autore Experience Manager) richiedere il risultato utilizzando lo stesso ID processo univoco fornito al client al momento della creazione del processo. Il proxy ottiene semplicemente il lavoro e mantiene il risultato pronto per essere richiesto.
