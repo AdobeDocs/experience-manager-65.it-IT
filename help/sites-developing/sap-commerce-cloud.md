@@ -1,8 +1,8 @@
 ---
 title: Sviluppo con SAP Commerce Cloud
 seo-title: Sviluppo con SAP Commerce Cloud
-description: Il framework di integrazione di SAP Commerce Cloud include un livello di integrazione con un'API
-seo-description: Il framework di integrazione di SAP Commerce Cloud include un livello di integrazione con un'API
+description: Il framework di integrazione di Commerce Cloud SAP include un livello di integrazione con un'API
+seo-description: Il framework di integrazione di Commerce Cloud SAP include un livello di integrazione con un'API
 uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -26,8 +26,8 @@ ht-degree: 0%
 
 Il framework di integrazione include un livello di integrazione con un&#39;API. Questo consente di:
 
-* plug-in in un sistema eCommerce ed estrazione di dati di prodotto in AEM
-* creazione di componenti AEM per funzionalità di eCommerce, indipendentemente dallo specifico motore di eCommerce
+* collegare un sistema eCommerce ed estrarre i dati del prodotto in AEM
+* creazione di componenti AEM per funzionalità di e-commerce indipendenti dal motore eCommerce specifico
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
 
@@ -35,17 +35,17 @@ Il framework di integrazione include un livello di integrazione con un&#39;API. 
 >
 >[È disponibile anche la documentazione](/help/sites-developing/ecommerce.md#api-documentation) API.
 
-Per usare il livello di integrazione, sono disponibili diversi componenti AEM forniti con il prodotto. Attualmente si tratta di:
+Per utilizzare il livello di integrazione sono disponibili diversi componenti AEM predefiniti. Attualmente si tratta di:
 
 * un componente per la visualizzazione di un prodotto
 * un carrello
 * check-out
 
-Per la ricerca viene fornito un gancio di integrazione che consente di utilizzare la ricerca AEM, la ricerca del sistema eCommerce, una ricerca di terze parti (come Search&amp;Promote) o una combinazione di tali metodi.
+Per la ricerca viene fornito un gancio di integrazione che consente di utilizzare la ricerca di AEM, la ricerca del sistema eCommerce, una ricerca di terze parti (come Search&amp;Promote) o una combinazione di esso.
 
 ## Selezione motore eCommerce {#ecommerce-engine-selection}
 
-Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce. Il motore utilizzato deve essere identificabile da AEM:
+Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce, il motore utilizzato deve essere identificabile da AEM:
 
 * I motori di eCommerce sono servizi OSGi che supportano l&#39; `CommerceService` interfaccia
 
@@ -68,7 +68,7 @@ Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce.
 
 Vedere gli esempi seguenti:
 
-| `cq:commerceProvider = geometrixx` | in un’installazione standard di AEM è richiesta un’implementazione specifica; ad esempio, l&#39;esempio geometrixx, che include estensioni minime per l&#39;API generica |
+| `cq:commerceProvider = geometrixx` | in un’installazione AEM standard è necessaria un’implementazione specifica; ad esempio, l&#39;esempio geometrixx, che include estensioni minime per l&#39;API generica |
 |---|---|
 | `cq:commerceProvider = hybris` | implementazione di hybris |
 
@@ -96,7 +96,7 @@ Vedere gli esempi seguenti:
 
 >[!NOTE]
 >
->Utilizzando CRXDE Lite potete vedere come questo viene gestito nel componente prodotto per l&#39;implementazione hybris:
+>Utilizzando CRXDE Lite potete vedere come questo viene gestito nel componente prodotto per l’implementazione di hybris:
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
@@ -112,11 +112,7 @@ Per sviluppare per Hybris 4 è necessario quanto segue:
 
    `-P hybris4`
 
-   Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel pacchetto:
-
-   ```
-   cq-commerce-hybris-server
-   ```
+   Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel pacchetto `cq-commerce-hybris-server`.
 
 * In Gestione configurazione OSGi:
 
@@ -156,23 +152,24 @@ hybris utilizza una sessione utente per memorizzare informazioni come il carrell
 I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stato attuato il seguente meccanismo:
 
 * Un carico iniziale di ID è fornito da hybris come feed. Possono essere presenti aggiornamenti a questo feed.
-* hybris fornirà informazioni di aggiornamento tramite un feed (che verrà controllato da AEM).
-* Quando AEM utilizza i dati di prodotto, invia le richieste ai hybris per i dati correnti (richiesta di ottenimento condizionale con data dell’ultima modifica).
+* hybris fornirà informazioni di aggiornamento tramite un feed (che AEM sondaggi).
+* Quando AEM utilizza i dati del prodotto, invierà le richieste ai hybris per i dati correnti (richiesta di ricezione condizionale utilizzando l&#39;ultima data modificata).
 * In hybris è possibile specificare il contenuto di feed in modo dichiarativo.
-* La mappatura della struttura del feed al modello di contenuto AEM avviene nella scheda del feed sul lato AEM.
+* La mappatura della struttura del feed al modello di contenuto AEM avviene nella scheda di feed sul lato AEM.
 
 ![chlimage_1-12](assets/chlimage_1-12a.png)
 
-* L’importazione (b) viene utilizzata per l’impostazione iniziale della struttura ad albero delle pagine in AEM per i cataloghi.
-* Le modifiche al catalogo negli ibridi sono indicate ad AEM tramite un feed, che quindi si propaga ad AEM (b)
+* L’importazione (b) viene utilizzata per l’impostazione iniziale della struttura ad albero della pagina in AEM per i cataloghi.
+* Le modifiche al catalogo negli ibridi sono indicate per AEM tramite un feed, che poi si propagano a AEM (b)
 
    * Prodotto aggiunto/eliminato/modificato rispetto alla versione del catalogo.
    * Prodotto approvato.
 
-* L’estensione hybris fornisce un importatore polling (&quot;schema hybris&quot;), che può essere configurato per importare le modifiche in AEM a un intervallo specificato (ad esempio, ogni 24 ore in cui l’intervallo è specificato in secondi):
+* L&#39;estensione hybris fornisce un importatore polling (&quot;schema hybris&quot;), che può essere configurato per importare modifiche in AEM a un intervallo specificato (ad esempio, ogni 24 ore in cui l&#39;intervallo è specificato in secondi):
 
    * 
-      ```
+
+      ```js
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -183,21 +180,21 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
        }
       ```
 
-* La configurazione del catalogo in AEM riconosce le versioni del catalogo **in fase** e **online** .
+* La configurazione del catalogo in AEM riconosce le versioni **dei cataloghi Staged** e **Online** .
 
 * La sincronizzazione di prodotti tra versioni catalogo richiederà una (disattivazione)attivazione della pagina AEM corrispondente (a, c)
 
    * L&#39;aggiunta di un prodotto a una versione di catalogo **online** richiede l&#39;attivazione della pagina del prodotto.
    * La rimozione di un prodotto richiede la disattivazione.
 
-* L’attivazione di una pagina in AEM (c) richiede un controllo (b) ed è possibile solo se
+* L&#39;attivazione di una pagina in AEM c) richiede un controllo (b) ed è possibile solo se
 
    * Il prodotto si trova in una versione catalogo **online** per le pagine dei prodotti.
    * I prodotti di riferimento sono disponibili in una versione catalogo **online** per altre pagine (ad esempio, pagine di campagna).
 
 * Le pagine di prodotto attivate devono accedere alla versione **online** (d) dei dati del prodotto.
 
-* L’istanza di pubblicazione AEM richiede l’accesso agli ibridi per il recupero di dati di prodotto e personalizzati (d).
+* L’istanza di pubblicazione AEM richiede l’accesso agli hybris per il recupero di prodotti e dati personalizzati (d).
 
 ### Architettura {#architecture}
 
@@ -209,7 +206,7 @@ Tuttavia, non tutte le proprietà sono assi variabili. Le variazioni possono int
 
 Ciascun prodotto e/o variante è rappresentato da una risorsa e pertanto viene mappato 1:1 su un nodo del repository. È un corollario che un prodotto e/o una variante specifica possa essere identificato in modo univoco dal suo percorso.
 
-La risorsa prodotto/variante non contiene sempre i dati effettivi del prodotto. Può trattarsi di una rappresentazione dei dati effettivamente contenuti in un altro sistema (ad esempio gli ibridi). Ad esempio, le descrizioni dei prodotti, i prezzi e così via non vengono memorizzati in AEM, ma recuperati in tempo reale dal motore eCommerce.
+La risorsa prodotto/variante non contiene sempre i dati effettivi del prodotto. Può trattarsi di una rappresentazione dei dati effettivamente contenuti in un altro sistema (ad esempio gli ibridi). Ad esempio, le descrizioni dei prodotti, i prezzi, ecc. non vengono memorizzati in AEM, ma recuperati in tempo reale dal motore eCommerce.
 
 Qualsiasi risorsa prodotto può essere rappresentata da un `Product API`. La maggior parte delle chiamate nell&#39;API del prodotto sono specifiche per le varianti (anche se le variazioni possono ereditare valori condivisi da un predecessore), ma ci sono anche chiamate che elencano il set di variazioni ( `getVariantAxes()`, `getVariants()`ecc.).
 
@@ -228,7 +225,7 @@ Mentre i prodotti (in generale) possono avere molti assi di variante, il compone
 1. più uno
 >
 >   
-Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
+Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per i Geometrixx Outdoors).
 
 #### Riferimenti prodotto e dati prodotto {#product-references-and-product-data}
 
@@ -240,25 +237,25 @@ In generale:
 
 Deve essere presente una mappa 1:1 tra le varianti di prodotto e i nodi dati del prodotto.
 
-Anche i riferimenti ai prodotti devono avere un nodo per ogni variante presentata, ma non è necessario presentare tutte le varianti. Ad esempio, se un prodotto ha varianti S, M, L, i dati del prodotto potrebbero essere:
+Anche i riferimenti ai prodotti devono avere un nodo per ogni variante presentata, ma non è necessario presentare tutte le varianti. Ad esempio, se un prodotto ha varianti S, M, L, i dati del prodotto potrebbero essere.
 
 ```shell
 etc
-  commerce
-    products
-      shirt
-        shirt-s
-        shirt-m
-        shirt-l
+|──commerce
+|  |──products
+|     |──shirt
+|       |──shirt-s
+|       |──shirt-m
+|       |──shirt-l
 ```
 
-Mentre un catalogo &quot;Big and Tall&quot; può contenere solo:
+Mentre un catalogo &quot;Grande e Alto&quot; potrebbe avere solo.
 
 ```shell
 content
-  big-and-tall
-    shirt
-      shirt-l
+|──big-and-tall
+|  |──shirt
+|     |──shirt-l
 ```
 
 Infine, non è previsto l&#39;uso di dati di prodotto. È possibile inserire tutti i dati di prodotto sotto i riferimenti nel catalogo; ma non è possibile avere più cataloghi senza duplicare tutti i dati del prodotto.
@@ -352,7 +349,7 @@ public class AxisFilter implements VariantFilter {
          * Un nodo di prodotto che contiene tutte le proprietà localmente (e non contiene una proprietà productData) eredita gli attributi di prodotto direttamente dai propri predecessori.
 
 
-* **Struttura di prodotto generica AEM**
+* **Struttura AEM prodotto generica**
 
    * Ogni variante deve avere un proprio nodo foglia.
    * L&#39;interfaccia del prodotto rappresenta sia prodotti che varianti, ma il nodo del repository correlato è specifico sul quale si trova.
@@ -428,16 +425,16 @@ public class AxisFilter implements VariantFilter {
 * Archiviazione
 
    * Nel caso hybris, il server hybris possiede il carrello.
-   * In AEM i carrelli di maiuscole e minuscole generici sono memorizzati in [ClientContext](/help/sites-administering/client-context.md).
+   * Nel caso AEM-generico i carrelli di maiuscole e minuscole sono memorizzati nel [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalizzazione**
 
-* La personalizzazione deve sempre essere guidata da [ClientContext](/help/sites-administering/client-context.md).
-* ClientContext `/version/` del carrello viene creato in tutti i casi:
+* La personalizzazione deve sempre essere guidata dal [ClientContext](/help/sites-administering/client-context.md).
+* Viene creato un ClientContext `/version/` del carrello in tutti i casi:
 
    * I prodotti devono essere aggiunti utilizzando il `CommerceSession.addCartEntry()` metodo .
 
-* Esempio di informazioni sul carrello nel carrello ClientContext:
+* Esempio di informazioni sul carrello nel carrello dei ClientContext:
 
 ![chlimage_1-13](assets/chlimage_1-13a.png)
 
@@ -456,9 +453,9 @@ La proprietà `CommerceSession` possiede i tre elementi:
    Lo schema del contenuto del carrello è fisso dall&#39;API:
 
    ```java
-       public void addCartEntry(Product product, int quantity);
-       public void modifyCartEntry(int entryNumber, int quantity);
-       public void deleteCartEntry(int entryNumber);
+   public void addCartEntry(Product product, int quantity);
+   public void modifyCartEntry(int entryNumber, int quantity);
+   public void deleteCartEntry(int entryNumber);
    ```
 
 1. **Prezzi**
@@ -466,12 +463,12 @@ La proprietà `CommerceSession` possiede i tre elementi:
    Lo schema tariffario è anche fissato dall&#39;API:
 
    ```java
-       public String getCartPreTaxPrice();
-       public String getCartTax();
-       public String getCartTotalPrice();
-       public String getOrderShipping();
-       public String getOrderTotalTax();
-       public String getOrderTotalPrice();
+   public String getCartPreTaxPrice();
+   public String getCartTax();
+   public String getCartTotalPrice();
+   public String getOrderShipping();
+   public String getOrderTotalTax();
+   public String getOrderTotalPrice();
    ```
 
 1. **Dettagli ordine**
@@ -479,9 +476,9 @@ La proprietà `CommerceSession` possiede i tre elementi:
    Tuttavia, i dettagli dell&#39;ordine *non* vengono corretti dall&#39;API:
 
    ```java
-       public void updateOrderDetails(Map<String, String> orderDetails);
-       public Map<String, String> getOrderDetails();
-       public void submitOrder();
+   public void updateOrderDetails(Map<String, String> orderDetails);
+   public Map<String, String> getOrderDetails();
+   public void submitOrder();
    ```
 
 **Calcoli di spedizione**
@@ -504,7 +501,7 @@ La proprietà `CommerceSession` possiede i tre elementi:
    >
 * Verifica della disponibilità del metodo
 >* Aggiunta di informazioni sui prezzi
->* Per consentire agli acquirenti di aggiornare la pagina dell’ordine in AEM (incluso il superset di metodi di spedizione e il testo che li descrive), pur mantenendo il controllo per esporre le `CommerceSession` informazioni pertinenti.
+>* Per consentire agli acquirenti di aggiornare la pagina dell&#39;ordine in AEM (incluso il superset di metodi di spedizione e il testo che li descrive), pur mantenendo il controllo per esporre le `CommerceSession` informazioni pertinenti.
 
 
 **Elaborazione pagamenti**
@@ -551,35 +548,35 @@ Il punto di ingresso per l&#39;API di ricerca è il `CommerceService#search` met
 
 ### Integrazione utente {#user-integration}
 
-L&#39;integrazione è fornita tra AEM e vari sistemi di eCommerce. Ciò richiede una strategia per la sincronizzazione degli acquirenti tra i vari sistemi, in modo che il codice specifico per AEM debba conoscere solo AEM e viceversa:
+L&#39;integrazione viene fornita tra AEM e vari sistemi di eCommerce. Ciò richiede una strategia per la sincronizzazione degli acquirenti tra i vari sistemi, in modo che il codice AEM specifico debba conoscere solo AEM e viceversa:
 
 * Autenticazione
 
-   Si presume che AEM sia l’ *unico* front-end Web e pertanto esegue *tutta* l’autenticazione.
+   Si presume che AEM sia l&#39; *unico* web front-end e pertanto esegua *tutta* l&#39;autenticazione.
 
 * Account in Hybris
 
-   AEM crea un account corrispondente (subordinato) in hybris per ogni acquirente. Il nome utente di questo account è lo stesso del nome utente di AEM. Una password crittografata casuale viene generata automaticamente e memorizzata (cifrata) in AEM.
+   AEM un account corrispondente (subordinato) in hybris per ogni acquirente. Il nome utente di questo account è lo stesso del nome utente AEM. Una password crittografata casuale viene generata automaticamente e memorizzata (cifrata) in AEM.
 
 #### Utenti preesistenti {#pre-existing-users}
 
-Un front-end AEM può essere posizionato davanti a un’implementazione ibrida esistente. È inoltre possibile aggiungere un motore ibrido a un’installazione AEM esistente. A tal fine, i sistemi devono essere in grado di gestire correttamente gli utenti esistenti in entrambi i sistemi:
+Un front-end AEM può essere posizionato davanti a un&#39;implementazione ibrida esistente. È inoltre possibile aggiungere un motore ibrido a un&#39;installazione AEM esistente. A tal fine, i sistemi devono essere in grado di gestire correttamente gli utenti esistenti in entrambi i sistemi:
 
 * AEM -> hybris
 
-   * Quando accedete a hybris, se l’utente AEM non esiste già:
+   * Quando si effettua l&#39;accesso agli ibridi, se l&#39;utente AEM non esiste già:
 
       * creare un nuovo utente hybris con una password crittografata casuale
-      * memorizzare il nome utente hybris nella directory utente dell’utente AEM
+      * memorizzare il nome utente hybris nella directory utente dell&#39;utente AEM
    * Consulta: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 
 * hybris -> AEM
 
-   * Quando effettuate l’accesso ad AEM, se il sistema riconosce l’utente:
+   * Durante l&#39;accesso a AEM, se il sistema riconosce l&#39;utente:
 
       * tentativo di accedere a hybris con nome utente/pwd fornito
-      * in caso di esito positivo, create il nuovo utente in AEM con la stessa password (il valore aggiunto specifico di AEM darà luogo all’hash specifico di AEM)
+      * in caso di esito positivo, create il nuovo utente in AEM con la stessa password (il valore di sale AEM specifico darà luogo a un hash AEM specifico)
    * L&#39;algoritmo di cui sopra è implementato in una Sling `AuthenticationInfoPostProcessor`
 
       * Consulta: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
@@ -591,7 +588,7 @@ Per sfruttare le funzionalità esistenti del gestore di importazioni personalizz
 
 * deve implementare l&#39; `ImportHandler` interfaccia
 
-* può estendere `DefaultImportHandler`
+* può estendere il `DefaultImportHandler`.
 
 ```java
 /**
@@ -601,66 +598,66 @@ Per sfruttare le funzionalità esistenti del gestore di importazioni personalizz
  */
 public interface ImportHandler {
 
-    /**
-     * Not used.
-     */
-    public void createTaxonomie(ImporterContext ctx);
+  /**
+  * Not used.
+  */
+  public void createTaxonomie(ImporterContext ctx);
 
-    /**
-     * Creates a catalog with the given name.
-     * @param ctx   The importer context
-     * @param name  The catalog's name
-     * @return Path of created catalog
-     */
-    public String createCatalog(ImporterContext ctx, String name) throws Exception;
+  /**
+  * Creates a catalog with the given name.
+  * @param ctx   The importer context
+  * @param name  The catalog's name
+  * @return Path of created catalog
+  */
+  public String createCatalog(ImporterContext ctx, String name) throws Exception;
 
-    /**
-     * Creates a product from the given values.
-     * @param ctx                The importer context
-     * @param values             The product's properties
-     * @param parentCategoryPath The containing category's path
-     * @return Path of created product
-     */
-    public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a product from the given values.
+  * @param ctx                The importer context
+  * @param values             The product's properties
+  * @param parentCategoryPath The containing category's path
+  * @return Path of created product
+  */
+  public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 
-    /**
-     * Creates a variant product from the given values.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The base product's path
-     * @return Path of created product
-     */
-    public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
+  /**
+  * Creates a variant product from the given values.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The base product's path
+  * @return Path of created product
+  */
+  public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
 
-    /**
-     * Creates an asset for a product. This is usually a product
-     * image.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The product's path
-     * @return Path of created asset
-     */
-    public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
+  /**
+  * Creates an asset for a product. This is usually a product
+  * image.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The product's path
+  * @return Path of created asset
+  */
+  public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
 
-    /**
-     * Creates a category from the given values.
-     * @param ctx           The importer context
-     * @param values        The category's properties
-     * @param parentPath    Path of parent category or base path of import in case of root category
-     * @return Path of created category
-     */
-    public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a category from the given values.
+  * @param ctx           The importer context
+  * @param values        The category's properties
+  * @param parentPath    Path of parent category or base path of import in case of root category
+  * @return Path of created category
+  */
+  public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 }
 ```
 
-Affinché il gestore personalizzato venga riconosciuto dall&#39;importatore, deve specificare la `service.ranking`proprietà con un valore superiore a 0; ad esempio:
+Affinché il gestore personalizzato venga riconosciuto dall&#39;importatore, deve specificare la `service.ranking`proprietà con un valore superiore a 0; ad esempio.
 
 ```java
 @Component
 @Service
 @Property(name = "service.ranking", value = 100)
-public class MyImportHandler extends DefaultImportHandler {
-    ...
+public class MyImportHandler extends DefaultImportHandler
+{
+...
 }
 ```
-
