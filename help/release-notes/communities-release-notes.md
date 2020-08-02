@@ -1,20 +1,18 @@
 ---
 title: Note sulla versione di AEM Communities
 description: Note sulla versione relative ad Adobe Experience Manager 6.5 Communities.
-uuid: 1b436959-581c-4b34-b2df-cccc5727da59
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: c3505807-1550-491a-8619-e87839afca4f
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 61%
 
 ---
 
 
-# Note sulla versione di AEM Communities{#aem-communities-release-notes}
+# AEM Communities release notes {#aem-communities-release-notes}
 
-Di seguito sono elencati i miglioramenti apportati ad AEM Communities a partire dalla versione 6.4. To learn about the new features in greater detail, see [AEM 6.5 Communities User Guide](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html).
+Di seguito sono elencati i miglioramenti apportati ad AEM Communities a partire dalla versione 6.4. To learn about the new features in greater detail, see [AEM 6.5 Communities User Guide](https://helpx.adobe.com/it/experience-manager/6-4/communities/user-guide.html).
 
 To obtain the latest release, see the [Deploying Communities](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) section of the documentation.
 
@@ -22,13 +20,13 @@ To obtain the latest release, see the [Deploying Communities](https://helpx.adob
 
 ### Miglioramenti relativi al coinvolgimento della community {#enhancements-to-community-engagement}
 
-**@Mentions supporta** AEM Communities ora consente agli utenti registrati di assegnare tag (menzionare) ad altri membri registrati per attirare la loro attenzione, in Contenuto generato dagli utenti. I membri taggati (menzionati) ricevono quindi una notifica con un collegamento diretto al corrispondente contenuto generato dagli utenti. Tuttavia, gli utenti possono scegliere di disabilitare/abilitare le notifiche Web e e-mail.
+**@Mentions supporta** i AEM Communities ora permettono agli utenti registrati di assegnare tag (menzionare) ad altri membri registrati per attirare la loro attenzione, in Contenuto generato dagli utenti. I membri taggati (menzionati) ricevono quindi una notifica con un collegamento diretto al corrispondente contenuto generato dagli utenti. Tuttavia, gli utenti possono scegliere di disabilitare/abilitare le notifiche Web e e-mail.
 
 ![Supporto delle @menzioni](assets/at-mentions.png)
 
 Gli utenti della community non devono cercare il loro nome, cognome o nome utente per vedere se qualcuno li ha contattati o richiama la loro attenzione. Inoltre, permette agli autori di contenuti generati dagli utenti di cercare risposte da specifici utenti registrati che possono risolvere al meglio il problema e aggiungere input.
 
-Gli amministratori della community devono **Enable Mention **on community components per consentire agli utenti registrati di utilizzare le funzionalità di tali componenti.
+The community administrators need to **Enable Mention** on community components to allow registered users use the functionality on those components.
 
 **Messaggistica di gruppo**
 
@@ -68,8 +66,10 @@ Gli amministratori del sito possono creare un gruppo a qualsiasi livello gerarch
 
 The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
-**Supporto per la navigazione tramite tastiera sui componenti di abilitazione**I componenti di abilitazione (ad esempio, Catalogo e Riproduzione corso, Assegnazioni, Libreria file) in AEM Communities supportano la navigazione tramite tastiera per una migliore accessibilità.
+* Supporto per la navigazione tramite tastiera sui componenti di abilitazione
+* I componenti di abilitazione (ad esempio Catalogo e Riproduzione corso, Assegnazioni, Libreria file) nei AEM Communities supportano la navigazione tramite tastiera per una migliore accessibilità.
 
 ### Altri miglioramenti {#other-enhancements}
 
-* **Supporto di Solr 7**AEM 6.5 Communities supporta la versione Apache Solr 7.0 della piattaforma di ricerca durante la configurazione di MSRP e DSRP.
+* Supporto Solr 7
+* AEM 6.5 Communities supporta la versione Apache Solr 7.0 della piattaforma di ricerca durante la configurazione di MSRP e DSRP.
