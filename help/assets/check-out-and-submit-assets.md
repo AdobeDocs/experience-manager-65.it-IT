@@ -3,9 +3,9 @@ title: Archivia e controlla le risorse digitali per la modifica.
 description: Scoprite come estrarre le risorse per la modifica e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '437'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,10 @@ Gli amministratori possono archiviare le risorse sottoposte a Check-Out da altri
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
 1. Dalla barra degli strumenti, fate clic su **[!UICONTROL Rilascia blocco]**. La risorsa viene archiviata e può essere modificata da altri utenti.
+
+## Best practice e limitazioni {#tips-limitations}
+
+* È possibile eliminare una *cartella* che contiene i file di risorse estratti. Prima di eliminare una cartella, accertatevi che gli utenti non dispongano di risorse digitali.
 
 >[!MORELIKETHIS]
 >
