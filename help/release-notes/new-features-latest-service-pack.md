@@ -4,7 +4,7 @@ description: Novità  Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '1873'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
  Service Pack dell&#39;Adobe Experience Manager 6.5 offrono nuove funzioni, miglioramenti richiesti dai clienti e miglioramenti a prestazioni, stabilità e sicurezza a intervalli trimestrali. La disponibilità trimestrale semplifica l&#39;accesso e l&#39;adozione di nuove caratteristiche e innovazioni.
 
-In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Service Pack 6.5, le funzioni [chiave incluse nei Service Pack](#key-features-previous-service-packs)6.5 precedenti e alcune delle release [chiave a partire  rilascio di Experience Manager 6.5.4.0](#key-releases-since-last-sp) .
+In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Service Pack 6.5, le funzioni [chiave incluse nei Service Pack](#key-features-previous-service-packs)6.5 precedenti e alcune delle release [chiave a partire  rilascio dell&#39;Experience Manager 6.5.4.0](#key-releases-since-last-sp) .
 
 ## Adobe Experience Manager Sites {#aem-sites}
 
@@ -80,7 +80,7 @@ Il supporto per le immagini 3D in [!DNL Dynamic Media] consente ai clienti di pu
 
 È possibile personalizzare una [!DNL Experience Manager] casella in entrata per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro. I membri `administrators` o i `workflow-administrators` gruppi possono personalizzare le colonne. Per ulteriori informazioni, consulta [Admin Control](../sites-authoring/inbox.md#inbox-admin-control).
 
-![Personalizzare  colonne Inbox Experience Manager](assets/customize-columns.gif)
+![Personalizzare  colonne Casella in entrata Experience Manager](assets/customize-columns.gif)
 
 ### Salva le comunicazioni interattive come bozza {#save-as-draft}
 
@@ -90,7 +90,7 @@ Il supporto per le immagini 3D in [!DNL Dynamic Media] consente ai clienti di pu
 
 ### [!DNL Oracle WebLogic] supporto del server applicazioni {#weblogic-support}
 
- modulo di Adobe Experience Manager ha aggiunto il supporto per [!DNL Oracle WebLogic 12] moduli di Adobe Experience Manager su JEE. È possibile effettuare l&#39;aggiornamento da una versione precedente o impostare un nuovo  Experience Manager 6.5 Forms sul server JEE sulla versione [!DNL Oracle WebLogic] 12.2.1.4 e versioni successive. Successivamente corrisponde alle modifiche minori, dove x in 12.2.1.x viene sostituito con un numero di versione.
+ Adobe Experience Manager Forms ha aggiunto il supporto [!DNL Oracle WebLogic 12] per  Adobe Experience Manager Forms su JEE. È possibile effettuare l’aggiornamento da una versione precedente o impostare un nuovo Forms  Experience Manager 6.5 sul server JEE sulla versione [!DNL Oracle WebLogic] 12.2.1.4 e successive. Successivamente corrisponde alle modifiche minori, dove x in 12.2.1.x viene sostituito con un numero di versione.
 
 ### Miglioramenti all&#39;accessibilità {#accessibility-improvements}
 
@@ -112,7 +112,7 @@ Il modello di dati del modulo ora supporta l&#39;autenticazione basata sui certi
 
 * È stato aggiunto il supporto per [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
-## Funzioni principali nei precedenti Service Pack di Experience Manager 6.5  {#key-features-previous-service-packs}
+## Caratteristiche principali dei Service Pack precedenti  Experience Manager 6.5 {#key-features-previous-service-packs}
 
 ### Experience Manager - Sites {#aem-sites-previous-service-packs}
 
@@ -134,9 +134,9 @@ Il modello di dati del modulo ora supporta l&#39;autenticazione basata sui certi
 
 #### Configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Il canale di autorizzazione tra [!DNL Experience Manager Assets] e [!DNL Brand Portal] viene modificato. Precedentemente, [!DNL Brand Portal] era stato configurato nell&#39;interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l&#39;autorizzazione. [!DNL Experience Manager Assets] è ora configurato con [!DNL Brand Portal] tramite Adobe I/O, che fornisce un token IMS per l&#39;autorizzazione del [!DNL Brand Portal] tenant.
+Il canale di autorizzazione tra [!DNL Experience Manager Assets] e [!DNL Brand Portal] viene modificato. Precedentemente, [!DNL Brand Portal] era stato configurato nell&#39;interfaccia classica tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l&#39;autorizzazione. [!DNL Experience Manager Assets] è ora configurato con [!DNL Brand Portal] tramite  I/O Adobe, che fornisce un token IMS per l&#39;autorizzazione del [!DNL Brand Portal] tenant.
 
-I passaggi da configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] sono diversi a seconda della [!DNL Experience Manager] versione in uso e se si sta configurando per la prima volta, oppure se si desidera aggiornare le configurazioni esistenti. Per informazioni, consultate [Configurare  risorse Experience Manager con il Portale](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) marchio.
+I passaggi da configurare [!DNL Experience Manager Assets] con [!DNL Brand Portal] sono diversi a seconda della [!DNL Experience Manager] versione in uso e se si sta configurando per la prima volta, oppure se si desidera aggiornare le configurazioni esistenti. Per informazioni, consultate [Configurare  risorse di Experience Manager con il Portale](https://docs.adobe.com/content/help/it-IT/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) marchio.
 
 #### Accessibility enhancements (6.5.4.0) {#accessibility-enhancements}
 
@@ -153,7 +153,7 @@ Esempio, `On Time (MM-DD-YYYY HH:mm)`. Qui MM è mese in formato a due cifre, AA
 
 #### Ricerca visiva per [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
-[!DNL Assets]Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di  Experience Manager visualizza dall&#39;archivio DAM le immagini con tag avanzati simili a quelle selezionate dall&#39;utente. See [Visual search](../assets/search-assets.md).
+[!DNL Assets]Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di  Experience Manager visualizza le immagini con tag avanzati dall&#39;archivio DAM, simili a quelle selezionate dall&#39;utente. See [Visual search](../assets/search-assets.md).
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
@@ -163,13 +163,13 @@ Le immagini intelligenti utilizzano le caratteristiche di visualizzazione esclus
 
 #### Ritaglio avanzato nei profili video per Dynamic Media (6.5.3.0) {#smart-crop-video}
 
-La funzione di ritaglio avanzato per i video, una funzione opzionale disponibile nei profili video, è uno strumento che utilizza l&#39;intelligenza artificiale di Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o progressivo caricato, indipendentemente dalle dimensioni. Consultate [Utilizzo del ritaglio avanzato nei profili](../assets/video-profiles.md)video.
+La funzione di ritaglio avanzato per i video - una funzione opzionale disponibile nei profili video - è uno strumento che utilizza l&#39;intelligenza artificiale di  Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o progressivo caricato, indipendentemente dalle dimensioni. Consultate [Utilizzo del ritaglio avanzato nei profili](../assets/video-profiles.md)video.
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Generazione di output stampabile nei flussi di lavoro  Experience Manager Forms (6.5.4.0) {#generate-printable-output}
+#### Genera output stampabile nei flussi di lavoro Forms  Experience Manager (6.5.4.0) {#generate-printable-output}
 
-Il passaggio del flusso di lavoro Genera output stampabile consente di integrare un file modello sorgente con un file di dati. Questa integrazione consente di stampare o salvare copie diverse del file modello. Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL. Per ulteriori informazioni su questa funzione, vedere [Flusso di lavoro incentrato sui moduli in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
+Il passaggio del flusso di lavoro Genera output stampabile consente di integrare un file modello sorgente con un file di dati. Questa integrazione consente di stampare o salvare copie diverse del file modello. Il passaggio genera un output PCL, PostScript, ZPL, IPL, TPCL o DPL. Per ulteriori informazioni su questa funzione, consulta Flusso di lavoro incentrato su [Forms in OSGi - Riferimento](../forms/using/aem-forms-workflow-step-reference.md)passo.
 
 ![Genera output stampabile](assets/generate-print-output-step.gif)
 
@@ -179,7 +179,7 @@ Il passaggio del flusso di lavoro Genera output stampabile consente di integrare
 
 ![Layout a più colonne](assets/multi-column-layout.gif)
 
-#### Personalizzazioni  Experience Manager Inbox (6.5.4.0) {#aem-inbox}
+#### Personalizzazioni della Casella in entrata  Experience Manager (6.5.4.0) {#aem-inbox}
 
 La nuova opzione Controllo amministratore consente agli amministratori di:
 
@@ -201,7 +201,7 @@ Convertire un campo di testo in un modulo XFA in un campo di testo RTF in un mod
 
 * Ogni pagina di un modulo adattivo ora include un titolo e un’etichetta con il punto di riferimento principale.
 
-#### Condivisione e richiesta dell&#39;accesso agli elementi in entrata di un utente  Experience Manager Forms (6.5.3.0) {#share-request-access}
+#### Condivisione e richiesta dell&#39;accesso agli elementi Inbox di un utente Forms di un Experience Manager  (6.5.3.0) {#share-request-access}
 
 È possibile condividere gli elementi Inbox con un altro utente. Quando un altro utente accede agli elementi della Casella in entrata, può richiedere e intervenire sugli elementi condivisi. Allo stesso modo, potete richiedere l’accesso agli elementi della casella in entrata ad altri utenti. Consultate [Condividere e richiedere l’accesso agli elementi in entrata di un utente](../forms/using/configure-shared-queues-osgi.md).
 
@@ -216,15 +216,15 @@ Potete utilizzare l&#39;API Batch per produrre più comunicazioni interattive da
 
 ## Rilasci principali a partire  Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
 
-Tra il 5 marzo 2020 e il 4 giugno 2020, Adobe ha rilasciato quanto segue, oltre ai Service Pack e ai fix pack cumulativi:
+Tra il 5 marzo 2020 e il 4 giugno 2020,  Adobe ha rilasciato quanto segue, oltre ai Service Pack e ai fix pack cumulativi:
 
-* [Il portale](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) di distribuzione software è disponibile per scaricare  Service Pack Experience Manager, pacchetti di correzione cumulativi, hotfix e pacchetti di funzionalità.
+* [Il portale](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) di distribuzione software è disponibile per scaricare  Service Pack di Experience Manager, pacchetti di correzione cumulativi, hotfix e pacchetti di funzionalità.
 
 * [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)e [2020.5.0](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
 
 * [app desktop Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experienci Manager Screens: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
