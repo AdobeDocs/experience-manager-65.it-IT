@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
+source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebb
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![authorpublished](assets/authorpublished.png)
 
 ## Visitatore del sito anonimo {#anonymous-site-visitor}
 
@@ -82,7 +82,7 @@ Questa esperienza presuppone che [ad Aaron McDonald](/help/communities/tutorials
 
 Nell&#39;angolo superiore destro, selezionate `Log in`e firmate con nome utente (aaron.mcdonald@mailinator.com) e password (password). Notate la possibilità di accedere con le credenziali di Twitter o Facebook.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![login](assets/login.png)
 
 Una volta effettuato l&#39;accesso come membro della community registrato, potete vedere le seguenti voci di menu su cui fare clic ed esplorare il sito della community:
 
@@ -95,11 +95,11 @@ Una volta effettuato l&#39;accesso come membro della community registrato, potet
 * [L&#39;opzione Notifiche](/help/communities/notifications.md) consente di accedere alla sezione delle notifiche, in cui è possibile visualizzare gli eventi di interesse e modificare le impostazioni delle notifiche.
 * [Se disponete di privilegi di moderazione, Amministrazione](/help/communities/published-site.md#moderationlink) vi indirizza alla pagina Moderazione AEM Communities.
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![adminscreen](assets/adminscreen.png)
 
 Notate che la pagina Calendario è la home page perché il modello di sito di riferimento scelto includeva prima la funzione Calendario, seguita dalla funzione Flusso di attività, dalla funzione Forum e così via. Questa struttura è visibile dalla console Modello [](/help/communities/sites.md#edit-site-template) sito o quando si modificano le proprietà del sito nell’ambiente di authoring:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![sitetemplate](assets/sitetemplate.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ I membri possono pubblicare un nuovo argomento o seguire un argomento.
 
 I visitatori del sito possono visualizzare i post e ordinarli in vari modi.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![forumlink](assets/forumlink.png)
 
 ### Collegamento gruppi {#groups-link}
 
@@ -130,7 +130,7 @@ Questo è un esempio in cui viene creato un gruppo nell’ambiente di pubblicazi
 
 I gruppi possono essere creati anche nell’ambiente di authoring e gestiti all’interno del sito della community nell’ambiente di authoring (console[Gruppi](/help/communities/groups.md)community). Questa esercitazione illustra come [creare gruppi in fase di creazione](/help/communities/nested-groups.md) .
 
-![classic-ui](assets/classic-ui.png)
+![grouplink](assets/grouplink.png)
 
 Crea un gruppo di riferimento:
 
@@ -148,11 +148,11 @@ Crea un gruppo di riferimento:
 
 1. Seleziona **Crea gruppo**
 
-![classic-ui-website](assets/classic-ui-website.png)
+   ![creategroup](assets/creategroup.png)
 
 Dopo aver creato un nuovo gruppo, **selezionate il nuovo gruppo** Sport per creare due gruppi (nidificati) al suo interno. Poiché una struttura del sito non può iniziare con la funzione dei gruppi, dopo aver aperto il gruppo Sport, è necessario selezionare il collegamento Gruppi:
 
-![classic-ui-create-page](assets/classic-ui-create-page.png)
+![grouplink1](assets/grouplink1.png)
 
 Il secondo gruppo di collegamenti, a partire da `Blog`, appartiene al gruppo attualmente selezionato, il `Sports` gruppo. Selezionando il collegamento Sport&#39; `Groups` , è possibile nidificare due gruppi all&#39;interno del gruppo Sport.
 
@@ -180,7 +180,7 @@ Una volta creati entrambi i gruppi, selezionate il gruppo Baseball, un gruppo ap
 
 I collegamenti del gruppo sono visualizzati sotto i collegamenti del sito principale e i risultati sono la seguente visualizzazione:
 
-![classic-ui-website-page](assets/classic-ui-website-page.png)
+![grouplink2](assets/grouplink2.png)
 
 Per l’autore, con privilegi amministrativi, andate alla console [Gruppi di](/help/communities/members.md) Communities e aggiungete Weston McCall al `Community Engage Gymnastics <uid> Members` gruppo.
 
@@ -195,7 +195,7 @@ Solo il gruppo di baseball sarà visibile.
 
 Effettuate l&#39;accesso come Weston McCall (weston.mccall@dodgit.com / password) e andate alla stessa posizione. Notate che Weston è in grado di aprire `Join` il `Baseball` gruppo e `enter or Leave` il `Gymnastics` gruppo privato.
 
-![classic-ui-repository-view](assets/classic-ui-repository-view.png)
+![grouplink3](assets/grouplink3.png)
 
 ### Collegamento pagina Web {#web-page-link}
 
@@ -203,7 +203,7 @@ Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento
 
 Ad esempio, passate all’istanza di **creazione** , aprite la `engage` cartella nella console [Siti](/help/communities/sites-console.md)community, selezionate l’icona **Apri sito** per passare alla modalità di modifica dell’autore. Selezionate quindi la modalità di anteprima per selezionare il `Web Page` collegamento, quindi selezionate la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblicate solo la pagina o l’intero sito.
 
-![classic-ui-repository-path](assets/classic-ui-repository-path.png)
+![webpagelink](assets/webpagelink.png)
 
 ### Collegamento moderazione {#moderationlink}
 
@@ -211,7 +211,7 @@ Quando il membro della community dispone di privilegi di moderazione, il collega
 
 Utilizzate il pulsante Indietro del browser per tornare al sito pubblicato. La maggior parte delle console non è accessibile dalla navigazione globale nell’ambiente di pubblicazione. [](/help/communities/moderate-ugc.md)
 
-![chlimage_1-42](assets/chlimage_1-42.png)
+![moderationlink](assets/moderationlink.png)
 
 ## Autoregistrazione {#self-registration}
 
@@ -220,7 +220,9 @@ Dopo la disconnessione, è possibile creare una nuova registrazione utente.
 * Seleziona `Log In`
 * Seleziona `Sign up for a new account`
 
-![chlimage_1-43](assets/chlimage_1-43.png) ![chlimage_1-44](assets/chlimage_1-44.png)
+![registration](assets/registration.png)
+
+![registrazione](assets/signup.png)
 
 Per impostazione predefinita, l’indirizzo e-mail è l’ID di login. Se questa opzione è deselezionata, il visitatore può immettere il proprio ID di accesso (nome utente). Il nome utente deve essere univoco nell’ambiente di pubblicazione.
 
@@ -228,9 +230,9 @@ Dopo aver specificato il nome utente, l&#39;e-mail e la password, selezionando `
 
 Una volta effettuato l’accesso, la prima pagina presentata è la `Profile` pagina corrispondente, che possono personalizzare.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![profilo](assets/profile.png)
 
 Se il membro dimentica il suo ID di accesso, è possibile recuperare utilizzando il suo indirizzo e-mail.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![forgotusername](assets/forgotusername.png)
 
