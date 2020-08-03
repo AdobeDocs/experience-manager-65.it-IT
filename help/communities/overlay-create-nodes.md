@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +27,7 @@ Sovrapponete il sistema dei commenti a una versione personalizzata copiando il n
 >Il contenuto della cartella /libs non viene mai modificato perché qualsiasi reinstallazione o aggiornamento potrebbe eliminare o sostituire la cartella /libs mentre il contenuto della cartella /apps non viene toccato.
 
 
-Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) su un’istanza di creazione, iniziate creando un percorso nella cartella /apps che è identico al percorso dei componenti sovrapposti nella cartella /libs.
+L’utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) in un’istanza di authoring inizia con la creazione di un percorso nella cartella /apps identico al percorso dei componenti sovrapposti nella cartella /libs.
 
 Il percorso da duplicare è:
 
@@ -56,7 +59,7 @@ Alcuni nodi del percorso sono cartelle e alcuni sono componenti.
       * Fare clic su **[!UICONTROL Avanti]** fino a **[!UICONTROL OK]**
 1. Seleziona `comments` nodo
 
-   * **[!UICONTROL Crea > Crea componente...]**
+   * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente...]**
 
       * Inserisci etichetta: `comment`
       * Enter Title: `Comment`
@@ -79,6 +82,7 @@ Alcuni nodi del percorso sono cartelle e alcuni sono componenti.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
@@ -95,5 +99,5 @@ La proprietà `Type`(proprietà `sling:resourceType`) della sovrapposizione deve
 1. Selezionate il verde `[+] Add`
    * Seleziona **[!UICONTROL Salva tutto]**
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![create-nodes](assets/create-nodes.png)
 
