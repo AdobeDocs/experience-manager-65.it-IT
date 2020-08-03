@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 5%
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 Nell&#39;istanza AEM Author, dalla navigazione globale:
 
-* Selezionare **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
+* Selezionate **[!UICONTROL Community]** > **[!UICONTROL Siti]**.
 * Selezionate **[!UICONTROL la cartella]** di coinvolgimento per aprirla.
 * Selezionate la scheda per il sito **[!UICONTROL Guida introduttiva all&#39;esercitazione]** inglese.
 
@@ -34,11 +34,11 @@ Nell&#39;istanza AEM Author, dalla navigazione globale:
 
 Il risultato è di raggiungere la console [](/help/communities/groups.md)Gruppi:
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![create-group](assets/create-group.png)
 
 La funzione dei gruppi verrà visualizzata come una cartella in cui vengono create le istanze dei gruppi. Selezionate la cartella Gruppi per aprirla. Il gruppo creato al momento della pubblicazione è visibile.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## Crea gruppo di arti principali {#create-main-arts-group}
 
@@ -94,11 +94,11 @@ La `groups` cartella ora contiene due gruppi (aggiorna la pagina).
 
 Prima di creare gruppi nidificati all&#39;interno del `arts` gruppo, passate il mouse sulla `arts` scheda e selezionate l&#39;icona Pubblica per pubblicarla.
 
-![componente di collegamento](assets/liking-component.png)
+![sito di pubblicazione](assets/publish-site.png)
 
 Attendete la conferma della pubblicazione del gruppo.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![pubblicato in gruppo](assets/group-published.png)
 
 Il `arts` gruppo deve contenere anche una `groups` cartella, ma vuota e in cui è possibile creare nuovi gruppi. Andate alla cartella del gruppo di arti e create 3 gruppi nidificati, ciascuno con un&#39;impostazione di appartenenza diversa:
 
@@ -133,11 +133,11 @@ Per accedere ai gruppi nidificati dalla console Siti community:
 * Seleziona scheda **[!UICONTROL arti]**
 * Seleziona cartella **[!UICONTROL Gruppi]**
 
-![configurare](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## Pubblicazione di gruppi {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![sito di pubblicazione](assets/publish-site.png)
 
 Dopo la pubblicazione del sito della community principale:
 
@@ -149,7 +149,7 @@ Dopo la pubblicazione del sito della community principale:
 
    * Tutti i gruppi devono essere pubblicati in modo top-down.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![pubblicato in gruppo](assets/group-published.png)
 
 ## Esperienza su Pubblica {#experience-on-publish}
 
