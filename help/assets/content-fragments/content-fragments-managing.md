@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 11%
@@ -143,11 +143,7 @@ Per aprire il frammento per la modifica:
    >[!NOTE]
    >
    >1. Viene visualizzato un messaggio se al frammento è già fatto riferimento in una pagina di contenuto.
-      >
-      >
-      >
-
-   2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello** laterale.
+   >2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **Attiva/Disattiva pannello** laterale.
 
 
 1. Per spostarsi tra le tre modalità, usate le icone nel pannello laterale:
@@ -197,9 +193,9 @@ L&#39;editor dispone di due opzioni:
 
    Uscirà dall’editor senza salvare le modifiche più recenti.
 
-Durante la modifica di un frammento di contenuto, AEM crea automaticamente delle versioni che garantiscono il ripristino del contenuto precedente in caso di **annullamento** delle modifiche:
+Durante la modifica del frammento di contenuto AEM crea automaticamente delle versioni che garantiscono il ripristino del contenuto precedente in caso di **annullamento** delle modifiche:
 
-1. Quando un frammento di contenuto viene aperto per la modifica in AEM, viene verificata l’esistenza del token basato su cookie che indica se esiste una sessione *di* modifica:
+1. Quando un frammento di contenuto viene aperto per la modifica AEM verifica l’esistenza del token basato su cookie che indica se esiste una sessione *di* modifica:
 
    1. Se il token viene trovato, il frammento viene considerato parte della sessione di modifica esistente.
    2. Se il token *non* è disponibile e l&#39;utente avvia la modifica del contenuto, viene creata una versione e viene inviato un token per questa nuova sessione di modifica al client, dove viene salvato in un cookie.
@@ -330,7 +326,7 @@ I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambien
 
 >[!CAUTION]
 >
->Dopo aver pubblicato e/o fatto riferimento a un frammento, quando un autore riapre il frammento per la modifica in AEM verrà visualizzato un avviso. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
+>Dopo aver pubblicato e/o fatto riferimento a un frammento, AEM viene visualizzato un avviso quando un autore riapre il frammento per la modifica. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
