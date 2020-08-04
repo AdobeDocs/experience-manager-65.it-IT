@@ -4,9 +4,9 @@ description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Serv
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4522'
 ht-degree: 7%
 
 ---
@@ -78,6 +78,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * Quando eseguite l&#39;aggiornamento  Experience Manager 6.2 a  Experience Manager 6.5, il componente Parsys dei modelli statici non viene visualizzato correttamente. L&#39;altezza del componente Parsys è impostata su 0 e i componenti al suo interno non sono visibili (NPR-33663).
 * Quando un utente copia e incolla un Contenitore di layout sulla stessa pagina, i componenti in un Contenitore di layout non vengono visualizzati (NPR-33648).
 * Il controllo dello stato di Dispatcher visualizza un messaggio di `Invalid cookie header` avviso nei file di registro (NPR-33629).
+* XSS riflesso in PreferencesServlet (NPR-33438).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -117,7 +118,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Sono ora accessibili diverse versioni delle risorse nella visualizzazione [!UICONTROL Timeline] nella pagina dei dettagli delle risorse tramite i tasti di scelta rapida (NPR-33283).
 
-* I nomi dei suggerimenti di ricerca visualizzati nella casella combinata Omnisearch ora vengono annunciati dagli assistenti vocali quando si utilizza la funzionalità di ricerca (NPR-33280).
+* I nomi dei suggerimenti di ricerca visualizzati nella casella combinata Omnisearch ora sono annunciati dagli assistenti vocali quando si utilizza la funzionalità di ricerca (NPR-33280).
 
 * Gli elementi selezionabili e il collegamento [!UICONTROL Vai a nella barra laterale]  Riferimenti vengono ora annunciati dagli assistenti vocali come elementi selezionabili (NPR-33278).
 
@@ -239,6 +240,8 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Viene visualizzato un messaggio di errore durante l&#39;installazione del pacchetto SDL del Experience Manager  (NPR-33175).
 
+* Vulnerabilità SSRF nel Experience Manager  (NPR-33435).
+
 ### Platform {#platform-6550}
 
 * Il [!DNL Sling] filtro non viene chiamato se la voce della `sling:match` mappa è creata in `/etc/maps` (NPR-33362).
@@ -264,6 +267,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * Gli utenti IMS autorizzati nel gruppo di amministrazione  Experience Manager locale non possono creare o modificare configurazioni IMS (NPR-33045).
 *  pagina Configurazioni lancio Adobe non visualizza tutti i record (NPR-33011).
 * Gli utenti appartenenti al gruppo content-authors non possono modificare le proprietà di un componente Adobe Target  a causa di un errore JavaScript (NPR-32996).
+* Script tra siti per JSON (NPR-32744).
 
 ### Progetti traduzione {#translation-6550}
 
@@ -295,6 +299,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * Un utente non è in grado di inviare un&#39;e-mail a un altro utente in una community (NPR-32598).
 * Un blog inviato non viene visualizzato finché l&#39;utente non aggiorna la pagina (NPR-32391).
 * Durante la creazione di una versione di notifiche e sottoscrizioni di contenuti generati dall&#39;utente (UGC), viene memorizzato un ID errato della pagina di origine (CQ-4279355, CQ-4289703).
+* Problema di scripting tra siti (NPR-33203).
 
 ### Flusso di lavoro {#workflow-6550}
 
@@ -321,6 +326,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * BackendIntegration: Le richieste del modello dati del modulo non vanno a buon fine perché il token di aggiornamento scade a causa di uno stato inattivo non corretto (NPR-33169).
 * Designer: Gli assistenti vocali eseguono l&#39;ordine di tabulazione in base all&#39;ordine geografico predefinito anziché all&#39;ordine di tabulazione personalizzato definito nel file XDP (NPR-32160).
 * Designer: Se l&#39;opzione relativa ai tag è abilitata, il bordo del sottomodulo scompare nell&#39;output PDF generato (NPR-32778).
+* Memorizzato XSS con GuideSOMProviderServlet (NPR-32700).
 
 ## Install 6.5.5.0 {#install}
 
