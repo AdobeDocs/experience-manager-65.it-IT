@@ -1,8 +1,8 @@
 ---
 title: Mappatura personalizzata dei gruppi di utenti in AEM 6.5
 seo-title: Mappatura personalizzata dei gruppi di utenti in AEM 6.5
-description: Scopri come funziona la mappatura personalizzata per gruppi di utenti in AEM.
-seo-description: Scopri come funziona la mappatura personalizzata per gruppi di utenti in AEM.
+description: Scopri come funziona la mappatura personalizzata per i gruppi di utenti in AEM.
+seo-description: Scopri come funziona la mappatura personalizzata per i gruppi di utenti in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugEnabled</p> <p>Dichiarazione del tipo di nodo: N/D, proprietà residua</p> </td>
-   <td><p>Autorizzazione:</p> <p>Nodo: rep:cugPolicy di tipo nodo rep:CugPolicy</p> <p>Dichiarazione del tipo di nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticazione:</p> <p>Tipo mixin: granite:AuthenticationRequired</p> </td>
+   <td><p>Autorizzazione:</p> <p>Nodo: rep:cugPolicy di tipo nodo rep:CugPolicy</p> <p>Dichiarazione del tipo di nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticazione:</p> <p>Tipo di mixin: granite:AuthenticationRequired</p> </td>
    <td><p>Per limitare l'accesso in lettura, al nodo di destinazione viene applicato un criterio CUG dedicato.</p> <p>NOTA: I criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>i nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando chiamate API JCR regolari; utilizzate invece la gestione del controllo di accesso JCR.</p> <p>Consulta <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a> per ulteriori informazioni.</p> <p>Per applicare i requisiti di autenticazione su un nodo è sufficiente aggiungere il tipo di mixin granite:AuthenticationRequired.</p> <p>NOTA: Rispettato solo sotto i percorsi supportati configurati.</p> </td>
   </tr>
   <tr>
@@ -40,7 +43,7 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
   <tr>
    <td><p>Proprietà: cq:cugLoginPage</p> <p>Dichiarazione del tipo di nodo: NA, proprietà residua</p> </td>
    <td><p>Proprietà: granite:loginPath (facoltativo)</p> <p>Dichiarazione del tipo di nodo: granite:AuthenticationRequired</p> </td>
-   <td><p>Un nodo JCR con il tipo di mixin granite:AuthenticationRequired definito può eventualmente definire un percorso di login alternativo.</p> <p>NOTA: Rispettato solo sotto i percorsi supportati configurati.</p> </td>
+   <td><p>Un nodo JCR con il tipo di mixin granite:AuthenticationRequired definito, può eventualmente definire un percorso di login alternativo.</p> <p>NOTA: Rispettato solo sotto i percorsi supportati configurati.</p> </td>
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugRealm</p> <p>Dichiarazione del tipo di nodo: NA, proprietà residua</p> </td>
@@ -54,7 +57,7 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
 
 **Versioni AEM precedenti**
 
-Etichetta: Supporto di Adobe Granite Closed User Group (CUG)
+Etichetta: Supporto per  gruppo di utenti chiuso Granite del Adobe (CUG)
 
 Nome: com.day.cq.auth.impl.CugSupportImpl
 
@@ -73,7 +76,7 @@ Nome: com.day.cq.auth.impl.CugSupportImpl
    ConfigurationPolicy = REQUIRED
 
 * Nome: com.adobe.granite.auth.requirements.impl.RequirementService
-* Etichetta: Gestore percorso di login e requisiti di autenticazione Adobe Granite
+* Etichetta:  Adobe requisito di autenticazione Granite e gestore del percorso di accesso
 
    Nome: com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler
 
@@ -84,12 +87,14 @@ Nome: com.day.cq.auth.impl.CugSupportImpl
 * Configurazione dell’autorizzazione CUG e attivazione/disattivazione della valutazione.
 Servizio per configurare l&#39;elenco di esclusione delle entità che non dovrebbero essere interessate dall&#39;autorizzazione CUG.
 
-   >[!NOTE] Se CugExcludeImpl non è configurato, CugConfiguration torna all&#39;impostazione predefinita.
+   >[!NOTE]
+   > 
+   >Se `CugExcludeImpl` non è configurata, `CugConfiguration` tornerà all&#39;impostazione predefinita.
 
    È possibile collegare un&#39;implementazione personalizzata di CugExclude in caso di esigenze specifiche.
 
 * Componente OSGi che implementa LoginPathProvider che espone un percorso di login corrispondente a LoginSelectorHandler. Ha un riferimento obbligatorio a un RequirementHandler utilizzato per registrare l&#39;osservatore che ascolta i requisiti di autenticazione modificati memorizzati nel contenuto tramite il tipo di mixin granite:AuthenticationRequired.
-* Componente OSGi che implementa RequirementHandler che notifica a SlingAuthenticator le modifiche ai requisiti di autenticazione.
+* Componente OSGi che implementa RequirementHandler che notifica a SlingAuthenticator le modifiche apportate ai requisiti di autenticazione.
 
    Poiché il criterio di configurazione per questo componente è REQUIRE, sarà attivato solo se è specificato un set di percorsi supportati.
 
