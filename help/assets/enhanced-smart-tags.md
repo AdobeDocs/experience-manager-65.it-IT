@@ -3,9 +3,9 @@ title: Tag avanzati migliorati
 description: Tag avanzati migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1533'
 ht-degree: 11%
 
 ---
@@ -68,7 +68,7 @@ Aggiungete le risorse a una cartella e applicate i tag a ciascuna risorsa dalla 
 >[!NOTE]
 >
 >1. La formazione è un processo irrevocabile.  Adobe consiglia di rivedere i tag nel set di risorse curato prima di addestrare Smart Content Service sui tag.
->1. Prima di iniziare la formazione per qualsiasi tag, leggete le linee guida [per la formazione su](smart-tags-training-guidelines.md) Smart Content Service.
+>1. Prima di iniziare la formazione per un tag, consultate le linee guida [di formazione per](smart-tags-training-guidelines.md)Smart Content Service.
 >1. Quando formate Smart Content Service per la prima volta,  Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 
