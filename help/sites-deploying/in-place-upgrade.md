@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 Prima di eseguire l&#39;aggiornamento, è necessario completare diversi passaggi. Per ulteriori informazioni, consulta [Aggiornamento di codice e personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) e attività [di manutenzione](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pre-aggiornamento. Inoltre, accertatevi che il sistema soddisfi i requisiti per la nuova versione di AEM. Scopri come il Rilevatore di pattern può aiutarti a stimare la complessità dell&#39;aggiornamento e come consultare la sezione Ambito e requisiti dell&#39;aggiornamento di [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md) per ulteriori informazioni.
 
-Infine, è possibile ridurre notevolmente i tempi di inattività durante l&#39;aggiornamento indicizzando il repository **prima** di eseguire l&#39;aggiornamento. Per ulteriori informazioni, vedere [Utilizzo della reindicizzazione offline per ridurre i tempi di inattività durante un aggiornamento](/help/sites-deploying/upgrade-offline-reindexing.md)
+<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Prerequisiti per la migrazione {#migration-prerequisites}
 
-* **Versione Java minima richiesta:** Lo strumento di migrazione funziona solo con Java versione 7 e versioni successive. Per AEM 6.3 e versioni successive, Oracle&#39;s JRE 8 e IBM JRE 7 &amp; 8 sono le uniche versioni supportate.
+* **Versione Java minima richiesta:** Lo strumento di migrazione funziona solo con Java versione 7 e versioni successive. Per AEM 6.3 e versioni successive, Oracle JRE 8 e IBM JRE 7 &amp; 8 sono le uniche versioni supportate.
 
 * **Istanza aggiornata:** Se state effettuando l&#39;aggiornamento da una versione **precedente alla 5.6**, accertatevi di aver eseguito un aggiornamento locale a AEM 6.0 seguendo la procedura descritta nella versione 6.0 della documentazione relativa all&#39;aggiornamento.
 
