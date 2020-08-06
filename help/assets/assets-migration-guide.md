@@ -3,9 +3,9 @@ title: Migra le risorse [!DNL Adobe Experience Manager Assets] in massa.
 description: Illustra come inserire risorse [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1799'
 ht-degree: 8%
 
 ---
@@ -17,17 +17,18 @@ Durante la migrazione delle risorse in [!DNL Adobe Experience Manager], è neces
 
 ## Prerequisiti {#prerequisites}
 
-Prima di eseguire effettivamente uno dei passaggi descritti in questa metodologia, consulta e implementa le linee guida contenute nei suggerimenti per l’ottimizzazione delle prestazioni di [Assets](performance-tuning-guidelines.md). Molti dei passaggi, come la configurazione del numero massimo di processi simultanei, migliorano notevolmente la stabilità e le prestazioni del server in condizioni di carico. Altri passaggi, come la configurazione di un archivio dati file, sono molto più difficili da eseguire dopo che il sistema è stato caricato con le risorse.
+Prima di eseguire effettivamente uno qualsiasi dei passaggi descritti in questa metodologia, controlla e implementa le linee guida contenute nei suggerimenti [di ottimizzazione delle prestazioni di](performance-tuning-guidelines.md)Assets. Molti dei passaggi, come la configurazione del numero massimo di processi simultanei, migliorano notevolmente la stabilità e le prestazioni del server in condizioni di carico. Altri passaggi, come la configurazione di un archivio dati file, sono molto più difficili da eseguire dopo che il sistema è stato caricato con le risorse.
 
 >[!NOTE]
 >
->I seguenti strumenti di migrazione delle risorse non fanno parte di [!DNL Experience Manager] e non sono supportati da Adobe:
+>I seguenti strumenti di migrazione delle risorse non fanno parte di [!DNL Experience Manager] e non sono supportati da  Adobe:
 >
->* Tag Maker di ACS AEM Tools
->* Importazione risorse CSV degli strumenti AEM
+>* ACS AEM Tools Tag Maker
+>* Importazione risorse CSV AEM strumenti ACS
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Fast Action Manager
 >* Flusso di lavoro sintetico
+
 >
 >
 Questo software è open source ed è coperto dalla [Licenza Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Per porre una domanda o segnalare un problema, visita rispettivamente [GitHub Issues for ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
@@ -61,7 +62,7 @@ Esistono due approcci per caricare le risorse nel sistema: un approccio basato s
 
 #### Invia tramite HTTP {#pushing-through-http}
 
-Il team dei servizi gestiti di Adobe utilizza uno strumento denominato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory a un&#39;altra in una [!DNL Experience Manager] distribuzione. Al posto di Glutton, potete anche utilizzare strumenti come gli script Perl per inserire le risorse nella directory archivio.
+ team Managed Services del Adobe utilizza uno strumento denominato Glutton per caricare i dati negli ambienti dei clienti. Glutton è una piccola applicazione Java che carica tutte le risorse da una directory a un&#39;altra in una [!DNL Experience Manager] distribuzione. Al posto di Glutton, potete anche utilizzare strumenti come gli script Perl per inserire le risorse nella directory archivio.
 
 Esistono due aspetti negativi principali dell&#39;utilizzo dell&#39;approccio di spingere attraverso https:
 
@@ -72,13 +73,13 @@ L’altro approccio per l’assimilazione delle risorse consiste nel estrarre le
 
 #### Recupero dal file system locale {#pulling-from-the-local-filesystem}
 
-Importazione risorse CSV degli strumenti [ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) estrae le risorse dal file system e dai metadati delle risorse da un file CSV per l’importazione delle risorse. L’API Experience Manager Asset Manager  viene utilizzata per importare le risorse nel sistema e applicare le proprietà di metadati configurate. Idealmente, le risorse sono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
+Importazione [risorse CSV](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools estrae le risorse dal file system e dai metadati delle risorse da un file CSV per l’importazione delle risorse. L’API  Gestione risorse Experience Manager viene utilizzata per importare le risorse nel sistema e applicare le proprietà dei metadati configurate. Idealmente, le risorse sono montate sul server tramite un montaggio di file di rete o tramite un&#39;unità esterna.
 
 Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessive migliorano notevolmente e questo metodo è generalmente considerato il modo più efficiente per caricare le risorse nell’archivio. Inoltre, poiché lo strumento supporta l’assimilazione dei metadati, potete importare tutte le risorse e i metadati in un singolo passaggio, anziché creare un secondo passaggio per applicare i metadati tramite uno strumento separato.
 
 ### Elaborazione di rappresentazioni {#processing-renditions}
 
-Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro [!UICONTROL DAM Update Asset] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare il flusso di lavoro [!UICONTROL DAM Update Asset] in base alle proprie esigenze. Il flusso di lavoro predefinito contiene molti passaggi che potrebbero non essere necessari, ad esempio generazione PTIFF o [!DNL InDesign Server] integrazione di Scene7.
+Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro [!UICONTROL DAM Update Asset] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare il flusso di lavoro [!UICONTROL DAM Update Asset] in base alle proprie esigenze. Il flusso di lavoro predefinito contiene molti passaggi che potrebbero non essere necessari, ad esempio generazione o [!DNL InDesign Server] integrazione di Scene7 PTIFF.
 
 Dopo aver configurato il flusso di lavoro in base alle esigenze, potete eseguire il flusso di lavoro in due modi:
 
@@ -87,7 +88,7 @@ Dopo aver configurato il flusso di lavoro in base alle esigenze, potete eseguire
 
 ### Attivare le risorse {#activating-assets}
 
-Per le distribuzioni con un livello di pubblicazione, è necessario attivare le risorse nella farm di pubblicazione. Adobe consiglia di eseguire più di un’istanza di pubblicazione, ma è più efficace replicare tutte le risorse in un’unica istanza di pubblicazione e quindi duplicarla. Quando si attivano numerose risorse, dopo l’attivazione di una struttura ad albero potrebbe essere necessario intervenire. Ecco perché: Quando si disattivano le attivazioni, gli elementi vengono aggiunti alla coda di processi Sling/eventi. Dopo che la dimensione di questa coda inizia a superare circa 40.000 elementi, l&#39;elaborazione rallenta notevolmente. Dopo che la dimensione di questa coda supera i 100.000 elementi, la stabilità del sistema inizia a soffrire.
+Per le distribuzioni con un livello di pubblicazione, è necessario attivare le risorse nella farm di pubblicazione. Mentre  Adobe consiglia di eseguire più di una singola istanza di pubblicazione, è più efficace replicare tutte le risorse in una singola istanza di pubblicazione e quindi duplicarla. Quando si attivano numerose risorse, dopo l’attivazione di una struttura ad albero potrebbe essere necessario intervenire. Ecco perché: Quando si disattivano le attivazioni, gli elementi vengono aggiunti alla coda di processi Sling/eventi. Dopo che la dimensione di questa coda inizia a superare circa 40.000 elementi, l&#39;elaborazione rallenta notevolmente. Dopo che la dimensione di questa coda supera i 100.000 elementi, la stabilità del sistema inizia a soffrire.
 
 Per risolvere questo problema, potete utilizzare [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) per gestire la replica delle risorse. Ciò funziona senza l&#39;utilizzo delle code Sling, riducendo il sovraccarico e riducendo al contempo il carico di lavoro per evitare che il server venga sovraccaricato. Un esempio di utilizzo di FAM per gestire la replica è riportato nella pagina della documentazione della funzione.
 
@@ -97,7 +98,7 @@ Per ciascuno di questi approcci, l’avviso è che le risorse nell’istanza di 
 
 >[!NOTE]
 >
->Adobe non mantiene o supporta Grabbit.
+> Adobe non mantiene o supporta Grabbit.
 
 ### Clona pubblicazione {#cloning-publish}
 
