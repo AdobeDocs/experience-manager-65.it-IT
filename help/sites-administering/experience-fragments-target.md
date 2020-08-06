@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Alcune funzionalità presenti in questa pagina richiedono l’applicazione di AEM 6.5.3.0.
+>Alcune funzionalità in questa pagina richiedono l&#39;applicazione di AEM 6.5.3.0.
 >
 >6.5.3.0
 >
@@ -37,7 +37,8 @@ ht-degree: 0%
    >   
    * l&#39;area di lavoro predefinita.
    >   * un&#39;area di lavoro denominata, specificata in Configurazione cloud.
->* AEM deve essere [integrato con  Adobe Target tramite Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+      >     **Nota:** L&#39;esportazione in aree di lavoro specifiche richiede  Adobe Target Premium.
+>* AEM deve essere [integrato con  Adobe Target utilizzando  I/O](/help/sites-administering/integration-ims-adobe-io.md)Adobe.
 
 >
 >
@@ -47,19 +48,19 @@ AEM 6.5.0.0 e 6.5.1.0:
 >* AEM deve essere integrato con  Adobe Target in base alle istruzioni in [Integrazione con  Adobe Target](/help/sites-administering/target.md).
 
 
-Puoi esportare frammenti [](/help/sites-authoring/experience-fragments.md)esperienza, creati in  Adobe Experience Manager (AEM), in  Adobe Target (Target). Possono quindi essere utilizzati come offerte nelle attività di Target per sottoporre a test e personalizzare le esperienze su scala.
+Puoi esportare frammenti [](/help/sites-authoring/experience-fragments.md)esperienza creati in Adobe Experience Manager (AEM) in  Adobe Target (Target). Possono quindi essere utilizzati come offerte nelle attività Target, per sottoporre a test e personalizzare le esperienze su scala.
 
-Sono disponibili tre opzioni di formato per esportare un frammento esperienza in  Adobe Target:
+Per esportare un frammento esperienza in  Adobe Target sono disponibili tre opzioni di formato:
 
 * HTML (predefinito): Supporto per la distribuzione di contenuti Web e ibridi
 * JSON: Supporto per la distribuzione headless dei contenuti
 * HTML e JSON
 
-I frammenti esperienza AEM possono essere esportati nell’area di lavoro predefinita in  Adobe Target o in aree di lavoro definite dall’utente per  Adobe Target. Questo avviene tramite Adobe I/O, per il quale AEM deve essere [integrato con  Adobe Target tramite Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+AEM frammenti esperienza possono essere esportati nell’area di lavoro predefinita in  Adobe Target o in aree di lavoro definite dall’utente per  Adobe Target. Questo avviene tramite  I/O Adobe, per il quale AEM deve essere [integrato con  Adobe Target utilizzando  Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 
 >[!NOTE]
 >
->Le aree di lavoro  Adobe Target non esistono  Adobe Target stesso. Vengono definiti e gestiti in Adobe IMS ( Identity Management System), quindi selezionati per l&#39;utilizzo tra le soluzioni tramite integrazioni di I/O Adobe.
+>Le aree di lavoro  Adobe Target non esistono  Adobe Target. Vengono definiti e gestiti in  Adobe IMS ( Identity Management System), quindi selezionati per l&#39;utilizzo tra le soluzioni utilizzando  integrazioni I/O Adobe.
 
 >[!NOTE]
 >
@@ -69,7 +70,7 @@ I frammenti esperienza AEM possono essere esportati nell’area di lavoro predef
 >
 >Per ulteriori informazioni, consulta anche:
 >
->* [Sviluppo  Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
+>* [sviluppo Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Componenti di base - Frammenti esperienza](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 
 >
@@ -80,12 +81,12 @@ I frammenti esperienza AEM possono essere esportati nell’area di lavoro predef
 
 >[!CAUTION]
 >
->Alcune funzionalità presenti in questa pagina richiedono l’applicazione di AEM 6.5.3.0.
+>Alcune funzionalità in questa pagina richiedono l&#39;applicazione di AEM 6.5.3.0.
 
 Sono necessarie diverse azioni:
 
-1. Devi [integrare AEM con  Adobe Target utilizzando Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
-2. I frammenti esperienza vengono esportati dall’istanza di creazione di AEM, pertanto devi [configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) sull’istanza di creazione per garantire che eventuali riferimenti all’interno del frammento esperienza siano esternalizzati per la distribuzione Web.
+1. È necessario [integrare AEM con  Adobe Target utilizzando  I/O](/help/sites-administering/integration-ims-adobe-io.md).
+2. I frammenti esperienza vengono esportati dall’istanza di creazione AEM, pertanto è necessario [configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) nell’istanza di creazione per garantire che eventuali riferimenti all’interno del frammento esperienza siano esternalizzati per la distribuzione sul Web.
 
    >[!NOTE]
    >
@@ -96,7 +97,7 @@ Sono necessarie diverse azioni:
 Prima di esportare un frammento è necessario aggiungere al frammento o alla cartella la Configurazione **** Cloud per **Adobe Target** . Questo consente anche di:
 
 * specificare le opzioni di formato da utilizzare per l&#39;esportazione
-* selezionare un&#39;area di lavoro Target come destinazione
+* selezionate un&#39;area di lavoro Target come destinazione
 * selezionate un dominio esternalizzatore per riscrivere i riferimenti nel frammento esperienza (facoltativo)
 
 Le opzioni richieste possono essere selezionate in Proprietà **** pagina della cartella e/o del frammento richiesti; la specifica verrà ereditata in base alle esigenze.
@@ -112,9 +113,9 @@ Le opzioni richieste possono essere selezionate in Proprietà **** pagina della 
    >
    >Se aggiungi la configurazione cloud allo stesso frammento esperienza, la configurazione viene ereditata da tutte le varianti.
 
-1. Selezionate la scheda Servizi **** cloud.
+1. Selezionate la scheda **Cloud Services** .
 
-1. In Configurazione **** Cloud Service, selezionare **Adobe Target** dall&#39;elenco a discesa.
+1. In Configurazione **** Cloud Service, selezionate **Adobe Target** dall&#39;elenco a discesa.
 
 1. 
    >[!NOTE]
@@ -129,7 +130,7 @@ Le opzioni richieste possono essere selezionate in Proprietà **** pagina della 
 
    * la configurazione appropriata
    * l&#39;opzione di formato richiesta
-   * un’area di lavoro di Adobe Target 
+   * un’area di lavoro Adobe Target 
    * se necessario - il dominio esternalizzatore
 
    >[!CAUTION]
@@ -138,7 +139,7 @@ Le opzioni richieste possono essere selezionate in Proprietà **** pagina della 
 
    Ad esempio, per una cartella:
 
-   ![Cartella -](assets/xf-target-integration-01.png "Servizi cloud - Servizi cloud")
+   ![Cartella - Cloud](assets/xf-target-integration-01.png "ServicesFolder - Cloud Services")
 
 1. **Salva e chiudi**.
 
@@ -146,11 +147,11 @@ Le opzioni richieste possono essere selezionate in Proprietà **** pagina della 
 
 >[!CAUTION]
 >
->Per le risorse multimediali, come le immagini, viene esportato in Target solo un riferimento. La risorsa stessa rimane memorizzata nei AEM Assets e viene distribuita dall’istanza di pubblicazione AEM.
+>Per le risorse multimediali, come le immagini, viene esportato solo un riferimento a Target. La risorsa stessa rimane memorizzata in  AEM Assets e viene distribuita dall’istanza di pubblicazione AEM.
 >
 >Per questo motivo, il frammento esperienza, con tutte le risorse correlate, deve essere pubblicato prima di esportare in Target.
 
-Per esportare un frammento esperienza da AEM ad Target (dopo aver specificato la configurazione cloud):
+Per esportare un frammento esperienza da AEM a Target (dopo aver specificato la configurazione cloud):
 
 1. Passate alla console Frammenti esperienza.
 1. Selezionate il frammento esperienza da esportare come destinazione.
@@ -159,7 +160,7 @@ Per esportare un frammento esperienza da AEM ad Target (dopo aver specificato la
    >
    >Deve essere una variante Web del frammento esperienza.
 
-1. Toccate o fate clic su **Esporta in  Adobe Target**.
+1. Toccate o fate clic su **Esporta per  Adobe Target**.
 
    >[!NOTE]
    >
@@ -169,7 +170,7 @@ Per esportare un frammento esperienza da AEM ad Target (dopo aver specificato la
 
    >[!NOTE]
    >
-   >Se selezionate **Pubblica** , il frammento esperienza viene subito pubblicato e inviato ad Target.
+   >Se selezionate **Pubblica** , il frammento esperienza viene subito pubblicato e inviato a Target.
 
 1. Toccate o fate clic su **OK** nella finestra di dialogo di conferma.
 
@@ -181,7 +182,7 @@ Per esportare un frammento esperienza da AEM ad Target (dopo aver specificato la
 
    >[!NOTE]
    >
-   >Quando si visualizza un frammento esperienza in  Adobe Target, l’ *ultima data di modifica* visualizzata corrisponde alla data dell’ultima modifica del frammento in AEM, non alla data dell’ultima esportazione del frammento  Adobe Target.
+   >Quando si visualizza un frammento esperienza in  Adobe Target, la data dell&#39; *ultima modifica* visualizzata corrisponde alla data dell&#39;ultima modifica AEM del frammento, non alla data dell&#39;ultima esportazione &#39;Adobe Target.
 
 >[!NOTE]
 >
@@ -189,25 +190,25 @@ Per esportare un frammento esperienza da AEM ad Target (dopo aver specificato la
 
 ## Utilizzo dei frammenti esperienza in  Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Dopo aver eseguito le attività precedenti, il frammento esperienza viene visualizzato nella pagina Offerte di Target. Consulta la documentazione [Target](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) specifica per saperne di più sui risultati ottenuti.
+Dopo aver eseguito le attività precedenti, il frammento esperienza viene visualizzato nella pagina Offerte in Target. Consulta la documentazione [](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) specifica di Target per saperne di più sui risultati ottenuti.
 
 >[!NOTE]
 >
->Quando si visualizza un frammento esperienza in  Adobe Target, l’ *ultima data di modifica* visualizzata corrisponde alla data dell’ultima modifica del frammento in AEM, non alla data dell’ultima esportazione del frammento  Adobe Target.
+>Quando si visualizza un frammento esperienza in  Adobe Target, la data dell&#39; *ultima modifica* visualizzata corrisponde alla data dell&#39;ultima modifica AEM del frammento, non alla data dell&#39;ultima esportazione &#39;Adobe Target.
 
 ## Eliminazione di un frammento esperienza già esportato in  Adobe Target {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-L’eliminazione di un frammento esperienza già esportato in Target potrebbe causare problemi se il frammento è già utilizzato in un’offerta in Target. L’eliminazione del frammento renderebbe l’offerta inutilizzabile mentre il contenuto del frammento viene distribuito da AEM.
+L&#39;eliminazione di un frammento esperienza già esportato in Target potrebbe causare problemi se il frammento è già utilizzato in un&#39;offerta in Target. L’eliminazione del frammento renderebbe l’offerta inutilizzabile mentre il contenuto del frammento viene distribuito da AEM.
 
 Per evitare tali situazioni:
 
-* Se il frammento esperienza non è attualmente utilizzato in un&#39;attività, AEM consente all&#39;utente di eliminare il frammento senza ricevere un messaggio di avviso.
-* Se il frammento esperienza è attualmente utilizzato da un&#39;attività in Target, un messaggio di errore avvisa l&#39;utente AEM delle possibili conseguenze che l&#39;eliminazione del frammento avrà sull&#39;attività.
+* Se il frammento esperienza non è attualmente utilizzato in un&#39;attività, AEM l&#39;utente può eliminare il frammento senza ricevere un messaggio di avviso.
+* Se il frammento esperienza è attualmente utilizzato da un&#39;attività in Target, un messaggio di errore avvisa l&#39;utente AEM circa le possibili conseguenze che l&#39;eliminazione del frammento avrà sull&#39;attività.
 
-   Il messaggio di errore in AEM non impedisce all’utente di (forzare-)eliminare il frammento esperienza. Se il frammento esperienza viene eliminato:
+   Il messaggio di errore in AEM non impedisce all&#39;utente di (forzare-)eliminare il frammento esperienza. Se il frammento esperienza viene eliminato:
 
-   * L&#39;offerta Target con frammento esperienza AEM può mostrare un comportamento indesiderato
+   * L&#39;offerta Target con AEM frammento esperienza può mostrare un comportamento indesiderato
 
-      * Il rendering dell&#39;offerta continuerà probabilmente, in quanto l&#39;HTML del frammento esperienza è stato inviato ad Target
+      * Il rendering dell&#39;offerta continuerà probabilmente, in quanto l&#39;HTML del frammento esperienza è stato inviato a Target
       * Eventuali riferimenti nel frammento esperienza potrebbero non funzionare correttamente se anche le risorse di riferimento venivano eliminate in AEM.
-   * Ovviamente, non è possibile apportare ulteriori modifiche al frammento esperienza, in quanto il frammento esperienza non esiste più in AEM.
+   * Naturalmente, qualsiasi ulteriore modifica al frammento esperienza è impossibile in quanto il frammento esperienza non esiste più in AEM.
