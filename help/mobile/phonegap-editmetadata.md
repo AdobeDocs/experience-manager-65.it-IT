@@ -1,8 +1,8 @@
 ---
 title: Modifica dei metadati dell'app
 seo-title: Modifica dei metadati dell'app
-description: I metadati dell'app sono necessari dettagli per il rilascio di un'applicazione allo store di un fornitore. Segui questa pagina per informazioni sulla modifica dei dati dell'app.
-seo-description: I metadati dell'app sono necessari dettagli per il rilascio di un'applicazione allo store di un fornitore. Segui questa pagina per informazioni sulla modifica dei dati dell'app.
+description: I metadati dell'app sono necessari dettagli per il rilascio di un'applicazione allo store di un fornitore. Segui questa pagina per saperne di più sulla modifica dei dati dell'app.
+seo-description: I metadati dell'app sono necessari dettagli per il rilascio di un'applicazione allo store di un fornitore. Segui questa pagina per saperne di più sulla modifica dei dati dell'app.
 uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 translation-type: tm+mt
-source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 La sezione **Gestisci app** e la pagina &quot;Gestisci app&quot; forniscono uno strumento per visualizzare e modificare i metadati dell&#39;applicazione. I metadati dell&#39;app sono necessari dettagli per il rilascio di un&#39;applicazione allo store di un fornitore. Ciò può includere metadati comuni, metadati iOS e screenshot. Consultate [Gestione sezione](/help/mobile/phonegap-app-details-tile.md) app per ulteriori dettagli sui metadati comuni e iOS.
 
@@ -48,7 +51,7 @@ Potete modificare i metadati comuni e IOS:
 
 ## Aggiunta e rimozione di schermate {#add-and-remove-screenshots}
 
-Potete includere le schermate app nel rollup dei metadati. Alcuni fornitori richiedono screenshot precisi quando inviano qualsiasi app al loro app store. Queste immagini devono già esistere in Risorse. Consultate [Selezione](../assets/search-assets.md#assetselector) risorse per caricare le schermate.
+Potete includere le schermate app nel rollup dei metadati. Alcuni fornitori richiedono screenshot precisi quando inviano qualsiasi app al loro app store. Queste immagini devono già esistere in Risorse. Consultate [Selezione](../assets/search-assets.md#assetpicker) risorse per caricare le schermate.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -85,9 +88,9 @@ Per ulteriori informazioni su altri ruoli di authoring, consulta le seguenti ris
 * [Importare un&#39;app ibrida esistente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
-### Additional Resources {#additional-resources}
+### Risorse aggiuntive {#additional-resources}
 
 Per informazioni su ruoli e responsabilità di un amministratore e sviluppatore, consulta le risorse seguenti:
 
-* [Sviluppo per Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
-* [Amministrazione di contenuti per Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
+* [Sviluppo per  Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Amministrazione di contenuti per  Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
