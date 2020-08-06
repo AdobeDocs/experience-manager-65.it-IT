@@ -12,9 +12,9 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '720'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,8 @@ In questa sezione viene descritto l&#39;aggiornamento di un&#39;installazione AE
 * [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)
 * [Valutazione della complessità dell&#39;aggiornamento con il rilevamento dei pattern](/help/sites-deploying/pattern-detector.md)
 * [Compatibilità con le versioni precedenti della AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-* [Utilizzo della reindicizzazione offline per ridurre i tempi di inattività durante un aggiornamento](/help/sites-deploying/upgrade-offline-reindexing.md)
+
+<!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Procedura di aggiornamento](/help/sites-deploying/upgrade-procedure.md)
 * [Aggiornamento di codice e personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
