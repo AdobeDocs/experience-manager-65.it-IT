@@ -1,9 +1,9 @@
 ---
-title: ' Adobe Experience Manager 6.5 Note sulla versione del Service Pack precedente'
-description: Note sulla versione specifiche per  Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
+title: Note sulla versione di Adobe Experience Manager 6.5 Service Pack precedente
+description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '8108'
 ht-degree: 36%
@@ -15,11 +15,11 @@ ht-degree: 36%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
- Adobe Experience Manager 6.5.4.0 è un aggiornamento importante che include nuove funzioni, miglioramenti e prestazioni richiesti dai clienti chiave, stabilità, miglioramenti a livello di sicurezza, rilasciati a partire dalla release 6.5 di **aprile 2019**. Può essere installato sopra  Adobe Experience Manager 6.5.
+Adobe Experience Manager 6.5.4.0 è un aggiornamento importante che include nuove funzioni, miglioramenti e prestazioni richiesti dai clienti chiave, stabilità, miglioramenti a livello di sicurezza, rilasciati a partire dalla release 6.5 di **aprile 2019**. Può essere installato sulla parte superiore di Adobe Experience Manager 6.5.
 
-Alcune funzioni chiave e miglioramenti introdotti  Adobe Experience Manager 6.5.4.0 includono:
+Alcune funzioni chiave e miglioramenti introdotti in Adobe Experience Manager 6.5.4.0 includono:
 
-*  risorse Adobe Experience Manager è ora configurato con Portale marchio tramite  console I/O Adobe.
+* Adobe Experience Manager Assets è ora configurato con Brand Portal tramite  console I/O Adobe.
 
 * È ora disponibile un nuovo passaggio [Genera output](../forms/using/aem-forms-workflow-step-reference.md) stampabile per  flussi di lavoro Adobe Experience Manager Forms.
 
@@ -31,13 +31,13 @@ Alcune funzioni chiave e miglioramenti introdotti  Adobe Experience Manager 6.5.
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.10.8.
 
-* Ora potete sincronizzare le sottostrutture di contenuto selettivo nella modalità *Dynamic Media - Scene7 invece di tutte le sottostrutture disponibili in* `content/dam`.
+* Ora potete sincronizzare le sottostrutture di contenuti selettivi su Contenuti multimediali *dinamici - Modalità* Scene7 invece di tutti i contenuti disponibili in `content/dam`.
 
 * L&#39;integrazione del modello dati del modulo con il servizio Web SOAP ora supporta i gruppi di scelta o gli attributi sugli elementi.
 
 * Le strutture di input o output SOAP e i dati complessi ora supportano la sostituzione di gruppi dinamici.
 
-Per un elenco completo delle funzioni e delle caratteristiche principali introdotte nei Service Pack più recenti, consulta [Novità  Adobe Experience Manager 6.5 Service Pack](new-features-latest-service-pack.md).
+Per un elenco completo delle funzioni e delle caratteristiche principali introdotte nei Service Pack più recenti, consulta [Novità nei Service Pack](new-features-latest-service-pack.md)Adobe Experience Manager 6.5.
 
 ### Sites {#sites-fixes}
 
@@ -87,7 +87,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * Il pulsante per attivare il flusso di lavoro nella pagina di raccolta delle risorse è disattivato (NPR-32471).
 
-* In SPS (Scene7 Publishing System) viene creata una cartella senza nome durante lo spostamento di una risorsa da una cartella all’altra in  Experience Manager con configurazione Dynamic Media Scene7 (NPR-32440).
+* Una cartella senza nome viene creata in SPS (Scene7 Publishing System) mentre si sposta una risorsa da una cartella all’altra in  Experience Manager con configurazione Scene7 per file multimediali dinamici (NPR-32440).
 
 * L’azione per spostare tutte le risorse (tramite Seleziona tutto e quindi Sposta) in una cartella contenente le risorse pubblicate non riesce e ha esito negativo (NPR-32366).
 
@@ -119,11 +119,11 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * La pagina dei risultati della ricerca nell&#39;interfaccia touch (realizzata tramite Omnisearch) scorre automaticamente verso l&#39;alto e perde la posizione di scorrimento dell&#39;utente (NPR-31307).
 
-* La pagina dei dettagli delle risorse PDF non mostra i pulsanti delle azioni eccetto A raccolta e Aggiungi rappresentazione nell&#39;Experience Manager  esecuzione in modalità Scene7 Dynamic Media (CQ-4286705).
+* La pagina dei dettagli delle risorse PDF non mostra i pulsanti delle azioni tranne I pulsanti Raccolta e Aggiungi rappresentazione nell&#39;Experience Manager  esecuzione in modalità di esecuzione di Dynamic Media Scene7 (CQ-4286705).
 
 * L&#39;elaborazione delle risorse richiede troppo tempo durante il processo di caricamento batch di Scene7 (CQ-4286445).
 
-* Il pulsante Salva non importa il set remoto se l&#39;utente non ha apportato modifiche nell&#39;Editor set nel client Dynamic Media (CQ-4285690).
+* Il pulsante Salva non importa il set remoto quando l&#39;utente non ha apportato modifiche nell&#39;Editor set nel client per contenuti multimediali dinamici (CQ-4285690).
 
 * La miniatura della risorsa 3D non è informativa, quando un modello 3D supportato viene assimilato  Experience Manager (CQ-4283701).
 
@@ -131,7 +131,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * L’altezza contenitore errata di un modello 3D caricato visualizzato in anteprima nel visualizzatore 3D viene visualizzata nella pagina dei dettagli della risorsa (CQ-4283309).
 
-* Carosello Editor non si apre in IE 11 in modalità ibrida Dynamic Media  Experience Manager (CQ-4255590).
+* Carosello Editor non si apre in IE 11 in modalità ibrida  Experience Manager Dynamic Media (CQ-4255590).
 
 * Lo stato attivo si blocca nel menu a discesa E-mail nella finestra di dialogo Download, nei browser Chrome e Safari (NPR-32067).
 
@@ -141,9 +141,9 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * Il controllo del mouse passa al campo filtro precedente invece di rimanere nel campo filtro esistente durante la ricerca delle risorse mediante il pannello Filtro (NPR-32538).
 
-* Assegnazione tag Platform: La ricerca di tag digitando nei campi tag mostra i tag al di fuori dei limiti principali e non rispetta la `rootPath` proprietà dei campi tag (NPR-31895).
+* Assegnazione tag piattaforma: La ricerca di tag digitando nei campi tag mostra i tag al di fuori dei limiti principali e non rispetta la `rootPath` proprietà dei campi tag (NPR-31895).
 
-* Interfaccia utente Platform: Se nel campo di testo viene aggiunto un percorso non valido (NPR-31884), il browser del percorso si interrompe.
+* Interfaccia utente della piattaforma: Se nel campo di testo viene aggiunto un percorso non valido (NPR-31884), il browser del percorso si interrompe.
 
 * La notifica viene nascosta dietro un menu fisso nella selezione delle pagine (NPR-31628).
 
@@ -179,7 +179,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 ### Campaign Targeting {#campaign-targeting-6540}
 
-* La configurazione cloud di Target non riesce e la richiesta di mbox di ricezione dell&#39;errore non è riuscita (CQ-4279880).
+* La configurazione cloud di destinazione non riesce. Errore: richiesta mbox di recupero (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal-6540}
 
@@ -203,7 +203,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 * Il modulo Crea membro viene visualizzato come una pagina vuota (NPR-31997).
 
-* L&#39;utente non è in grado di visualizzare il  rapporto Analytics sull&#39;istanza di creazione (NPR-30913).
+* L&#39;utente non è in grado di visualizzare il rapporto di Analytics sull&#39;istanza di creazione (NPR-30913).
 
 ### Quercia - Indicizzazione e query {#oak-indexing-6540}
 
@@ -337,7 +337,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 * Le rappresentazioni dinamiche scaricate dall&#39; [!DNL Experience Manager] esecuzione in modalità [!DNL Dynamic Media]ibrida sono interrotte (sono di tipo testo con contenuto &quot;impossibile trovare l&#39;immagine&quot; invece del tipo di contenuto dell&#39;immagine) (NPR-30876).
 
-* [!DNL Dynamic Media] Il flusso di lavoro di codifica video non riesce a generare le miniature per il video migrato dalla modalità [!DNL Dynamic Media Classic] [!DNL Dynamic Media]Scene7 al  Adobe Experience Manager (CQ-4282011).
+* [!DNL Dynamic Media] Il flusso di lavoro Codifica video non genera le miniature per il video migrato dalla modalità [!DNL Dynamic Media Classic] a [!DNL Dynamic Media]Scene7 su Adobe Experience Manager (CQ-4282011).
 
 * IpsApiException durante la migrazione delle risorse da un’istanza all’altra tramite ID società Scene7 diversi (CQ-4280548).
 
@@ -401,7 +401,7 @@ Remove one mention of this fix.
 
 ### Ricerca e interfaccia utente {#ui-interface-and-search}
 
-* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima dello scorrimento della pagina (NPR-31286).
+* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima che la pagina possa essere scorrevole (NPR-31286).
 
 * La casella di controllo [!UICONTROL Seleziona tutto] è nascosta nella vista a elenco dell&#39;interfaccia [!DNL Sites] utente (NPR-31614).
 
@@ -421,7 +421,7 @@ Remove one mention of this fix.
 
 * Gli aggiornamenti nella configurazione della dimensione del buffer per il servizio HTTP basato su Jetty non vengono salvati (NPR-30925).
 
-* QueryBuilder supporta ora l&#39;ordine ``fn:name()`` nelle query xpath (NPR-31322).
+* QueryBuilder supporta ora l&#39;ordine `fn:name()` nelle query xpath (NPR-31322).
 
 * L&#39;albero di attivazione duplicato viene creato durante l&#39;aggiornamento dalla versione [!DNL Experience Manager] 6.3 (NPR-31513).
 
@@ -431,7 +431,7 @@ Remove one mention of this fix.
 
 * Viene visualizzato un errore quando si allega un file ZIP a un [!DNL Experience Manager Communities] post a causa di diverse versioni del bundle Apache POI e Apache Tika (NPR-31018).
 
-* Il ``org.apache.sling.distribution.api`` bundle è nascosto nel gestore di configurazione e pertanto non è disponibile per i bundle personalizzati (NPR-31720).
+* Il `org.apache.sling.distribution.api` bundle è nascosto nel gestore di configurazione e pertanto non è disponibile per i bundle personalizzati (NPR-31720).
 
 ### Progetti {#projects}
 
@@ -445,7 +445,7 @@ Remove one mention of this fix.
 
 **Problemi risolti**
 
-* Quando si crea una nuova cartella Contribution nella funzione Asset Sourcing (CQ-4282825), viene visualizzata un’icona errata.
+* Quando si crea una nuova cartella Contribution in Asset Sourcing feature (CQ-4282825), viene visualizzata un’icona errata.
 * Quando create una nuova cartella Contribution, una o entrambe le sottocartelle (NEW e SHARED) non vengono visualizzate all’interno della cartella Contribution (CQ-4282424).
 * Il sistema genera un’eccezione se l’utente tenta di ripubblicare la cartella Contribution da [!DNL Experience Manager] a [!DNL Brand Portal] dopo aver ricevuto nuove risorse dalla [!DNL Brand Portal] fine della cartella Contribution (CQ-4279740).
 * La creazione di una cartella Contribution all’interno di una cartella Contribution (cartella nidificata) non è consentita per evitare la complessità (CQ-4278391).
