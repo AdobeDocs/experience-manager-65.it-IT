@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '9240'
 ht-degree: 4%
@@ -50,7 +50,7 @@ Potete caricare vari tipi di risorse (immagini, file PDF, file RAW e così via) 
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, potete caricare solo risorse la cui dimensione file è inferiore o uguale a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file pari o inferiori a 2 GB.
 
 Potete scegliere di caricare le risorse nelle cartelle a cui è stato assegnato o meno un profilo di elaborazione.
 
@@ -100,7 +100,7 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
    >
    >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
    >
-   >Se Asset Insights è abilitato per il tracciamento di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa su  Analytics.
+   >Se Asset Insights è abilitato per tenere traccia di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Analytics.
 
    Se la risorsa caricata esiste in [!DNL Assets], la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che state tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore `SHA 1` checksum del binario della risorsa esistente corrisponde al valore checksum della risorsa caricata. In questo caso, i nomi delle risorse non contano.
 
@@ -141,22 +141,22 @@ Per impostazione predefinita, il caricamento seriale delle risorse è attivato. 
 
 ### Caricare le risorse mediante FTP {#uploading-assets-using-ftp}
 
-Dynamic Media consente il caricamento in batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (>1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
+Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se intendete caricare risorse di grandi dimensioni (>1 GB) o intere cartelle e sottocartelle, utilizzate l’FTP. Potete anche impostare il caricamento FTP in modo che avvenga su base programmata ricorrente.
 
 >[!NOTE]
 >
->In modalità Dynamic Media - Scene7, potete caricare solo risorse la cui dimensione file è inferiore o uguale a 2 GB.
+>In modalità Dynamic Media - Scene7, potete caricare solo risorse di dimensioni file pari o inferiori a 2 GB.
 
 >[!NOTE]
 >
->Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze di [!DNL Experience Manager] authoring. Contatta [Assistenza](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) clienti del Adobe per accedere al FP-18912 e completare la configurazione del tuo account FTP. Per ulteriori informazioni, consultate [Installare feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
+>Per caricare le risorse tramite FTP in modalità Dynamic Media - Scene7, installate Feature Pack 18912 sulle istanze dell&#39; [!DNL Experience Manager] autore. Contatta [Assistenza](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) clienti del Adobe per accedere al FP-18912 e completare la configurazione del tuo account FTP. Per ulteriori informazioni, consultate [Installare feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md)in massa delle risorse.
 >
 >Se utilizzate l’FTP per caricare le risorse, le impostazioni di caricamento specificate in [!DNL Experience Manager] vengono ignorate. Vengono invece utilizzate le regole di elaborazione dei file, come definite in Dynamic Media Classic.
 
 **Per caricare le risorse tramite FTP**
 
 1. Utilizzando il client FTP desiderato, effettuate l&#39;accesso al server FTP utilizzando il nome utente e la password FTP ricevuti dall&#39;e-mail di provisioning. Nel client FTP, caricate i file o le cartelle sul server FTP.
-1. [Effettuate l&#39;accesso ad Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, fate clic su **[!UICONTROL Carica]**.
+1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali ricevute dall&#39;e-mail di provisioning. Nella barra di navigazione globale, fate clic su **[!UICONTROL Carica]**.
 
 1. Nella pagina Carica, accanto all’angolo in alto a sinistra, fate clic sulla scheda **[!UICONTROL Mediante FTP]** .
 1. Sul lato sinistro della pagina, scegliete una cartella FTP da cui caricare i file; sul lato destro della pagina, scegliete una cartella di destinazione.
@@ -171,7 +171,7 @@ Dynamic Media consente il caricamento in batch delle risorse tramite server FTP.
 1. Nell’angolo inferiore destro della finestra di dialogo Opzioni processo di caricamento, fate clic su **[!UICONTROL Salva]**.
 1. Nell’angolo inferiore destro della pagina Carica, fate clic su **[!UICONTROL Invia caricamento]**.
 
-   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale fate clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. In Dynamic Media Classic potete continuare a lavorare [!DNL Experience Manager] e tornare alla pagina Processi in qualsiasi momento per controllare un processo in corso di elaborazione.
+   Per visualizzare l’avanzamento del caricamento, nella barra di navigazione globale fate clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. Potete continuare a lavorare [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per controllare un processo in corso.
 Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL Annulla]** accanto alla durata.
 
 #### Opzioni processo di caricamento {#upload-job-options}
@@ -180,7 +180,7 @@ Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL An
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Annulla compressione file ZIP o Tar durante il caricamento |  |  |
 | Opzioni processo |  | Fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Fate clic sul pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
@@ -240,7 +240,7 @@ Quando caricate i file immagine PostScript (EPS) o  Illustrator (AI), potete for
 
 I file Photoshop Document (PSD) vengono utilizzati più spesso per creare modelli di immagine. Quando caricate un file PSD, potete creare automaticamente dal file un modello di immagine (selezionate l’opzione [!UICONTROL Crea modello] nella schermata Carica).
 
-Dynamic Media crea più immagini da un file PSD con livelli, se utilizzate il file per creare un modello; crea un’immagine per ciascun livello.
+Dynamic Media crea più immagini da un file PSD con livelli, se usate il file per creare un modello; crea un’immagine per ciascun livello.
 
 Utilizzate le opzioni  Ritaglio e le opzioni [!UICONTROL Profilo]colore descritte sopra, con le opzioni di caricamento Photoshop.
 
@@ -303,11 +303,11 @@ Consultate [Configurazione dei predefiniti per set di batch per la generazione a
 
 ### Caricamenti in streaming {#streamed-uploads}
 
-Se caricate molte risorse  Adobe Experience Manager, le richieste di I/O al server aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche il timeout di alcune attività di caricamento. [!DNL Experience Manager Assets] supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell’archivio. Al contrario, i dati vengono trasferiti direttamente nella directory archivio. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in [!DNL Assets].
+Se caricate molte risorse su Adobe Experience Manager, le richieste di I/O al server aumentano drasticamente, riducendo l’efficienza del caricamento e causando anche il timeout di alcune attività di caricamento. [!DNL Experience Manager Assets] supporta il caricamento in streaming delle risorse. Il caricamento in streaming riduce l’I/O del disco durante l’operazione di caricamento, evitando la memorizzazione delle risorse in una cartella temporanea sul server prima di copiarla nell’archivio. Al contrario, i dati vengono trasferiti direttamente nella directory archivio. In questo modo, si riduce il tempo necessario per caricare risorse di grandi dimensioni e la possibilità di timeout. Il caricamento in streaming è abilitato per impostazione predefinita in [!DNL Assets].
 
 >[!NOTE]
 >
->Il caricamento dello streaming è disattivato per  Adobe Experience Manager in esecuzione sul server JEE con la versione servlet-api inferiore a 3.1.
+>Il caricamento dello streaming è disattivato per Adobe Experience Manager eseguito su un server JEE con una versione servlet-api inferiore a 3.1.
 
 ### Estrai archivio ZIP contenente le risorse {#extractzip}
 
@@ -357,7 +357,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 >[!MORELIKETHIS]
 >
->* [Anteprima delle risorse](/help/assets/previewing-assets.md)Dynamic Media.
+>* [Visualizzare in anteprima le risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
 >* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets)secondarie.
 
 
@@ -554,7 +554,7 @@ Consultate [Scaricare risorse da  Experience Manager](/help/assets/download-asse
 
 >[!NOTE]
 >
->Per ulteriori informazioni specifiche per Dynamic Media, consultate [Pubblicazione di risorse Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+>Per ulteriori informazioni specifiche per gli elementi multimediali dinamici, consultate [Pubblicazione di risorse per file multimediali dinamici.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Andate alla posizione delle risorse o delle cartelle da pubblicare.
 
@@ -836,7 +836,7 @@ Se una risorsa include annotazioni in lingue straniere (in particolare lingue no
 1. Per configurare CQ-DAM-Handler-Gibson Font Manager Service, effettuate una delle seguenti operazioni:
 
    * Nell&#39;opzione della directory Font di sistema, specificate il percorso completo della directory dei font nel sistema. Ad esempio, se siete un utente Mac, potete specificare il percorso come */Library/Fonts* nell&#39;opzione di directory Font di sistema. [!DNL Experience Manager] recupera i font da questa directory.
-   * Create una directory denominata `fonts` all’interno della ``crx-quickstart`` cartella. CQ-DAM-Handler-Gibson Font Manager Service recupera automaticamente i font nella posizione `crx-quickstart/fonts`. Potete ignorare questo percorso predefinito dall&#39;opzione di directory Font del server di Adobe .
+   * Create una directory denominata `fonts` all’interno della `crx-quickstart` cartella. CQ-DAM-Handler-Gibson Font Manager Service recupera automaticamente i font nella posizione `crx-quickstart/fonts`. Potete ignorare questo percorso predefinito dall&#39;opzione di directory Font del server di Adobe .
 
    * Create una nuova cartella per i font nel sistema e memorizzate i font desiderati nella cartella. Quindi, specificate il percorso completo della cartella nell&#39;opzione di directory Font cliente.
 
