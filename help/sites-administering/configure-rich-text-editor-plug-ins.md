@@ -1,11 +1,11 @@
 ---
 title: Configurare i plug-in Editor Rich Text
-description: Scoprite come configurare i plug-in Editor di testo RTF  Adobe Experience Manager per abilitare singole funzionalità.
+description: Scoprite come configurare i plug-in di Adobe Experience Manager Rich Text Editor per abilitare singole funzionalità.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
-source-wordcount: '4400'
+source-wordcount: '4397'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Per informazioni dettagliate sulle altre configurazioni dell’editor Rich Text,
 
 >[!NOTE]
 >
->Quando si lavora con CRXDE Lite, si consiglia di salvare regolarmente le modifiche utilizzando l&#39;opzione [!UICONTROL Salva tutto] .
+>Quando si lavora con i CRXDE Lite, si consiglia di salvare regolarmente le modifiche utilizzando l&#39;opzione [!UICONTROL Salva tutto] .
 
 ## Attivare un plug-in e configurare la proprietà features {#activateplugin}
 
@@ -62,7 +62,7 @@ Dopo aver attivato un plug-in, attenetevi alle seguenti linee guida per configur
 |  | Abilitare tutte le funzioni | Abilitare alcune funzionalità specifiche | Disattiva tutte le funzioni |
 |---|---|---|---|
 | Nome | funzionalità | funzionalità | funzionalità |
-| Tipo | Stringa | String[] (multi-stringa; impostare Tipo su Stringa e fare clic su Più in CRXDE Lite) | Stringa |
+| Tipo | Stringa | String[] (multi-stringa; imposta Tipo su Stringa e fai clic su Più in CRXDE Lite) | Stringa |
 | Valore | `*` (un asterisco) | impostare uno o più valori di feature | - |
 
 ## Comprendere il plug-in più recente {#findreplace}
@@ -79,7 +79,7 @@ Quando si utilizza l’editor Rich Text, gli autori possono incollare il contenu
 
 * **Modalità** browser: Incolla il testo utilizzando l&#39;implementazione Incolla predefinita del browser. Non è un metodo consigliato in quanto potrebbe introdurre markup indesiderati.
 
-* **Modalità** testo normale: Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirlo nel componente AEM.
+* **Modalità** testo normale: Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserire AEM componente.
 
 * **Modalità** MS Word: Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e viene mantenuta solo la formattazione parziale.
 
@@ -107,7 +107,7 @@ La configurazione consente tre tipi di casi di utilizzo:
 
 * Incolla il testo utilizzando l&#39;implementazione Incolla predefinita del browser. Non è un metodo consigliato in quanto potrebbe introdurre markup indesiderati. Configurato utilizzando `browser` di seguito.
 
-* Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserirlo nel componente AEM. Configurato utilizzando `plaintext` di seguito.
+* Incolla il contenuto degli Appunti come testo normale. Rimuove tutti gli elementi di stile e formattazione dal contenuto copiato prima di inserire AEM componente. Configurato utilizzando `plaintext` di seguito.
 
 * Incolla il testo, incluse le tabelle, con la formattazione durante la copia da MS Word. La copia e l&#39;incolla del testo da un&#39;altra origine, ad esempio una pagina Web o MS Excel, non è supportata e viene mantenuta solo la formattazione parziale. Configurato utilizzando `wordhtml` di seguito.
 
@@ -120,16 +120,16 @@ La configurazione consente tre tipi di casi di utilizzo:
 
 ### Configurare i formati consentiti per incollare il contenuto {#pasteformats}
 
-È possibile configurare ulteriormente la modalità Incolla come Microsoft Word (`paste-wordhtml`) in modo da definire in modo esplicito gli stili consentiti quando si incolla in AEM da un altro programma, ad esempio Microsoft Word.
+La modalità Incolla come Microsoft Word (`paste-wordhtml`) può essere configurata ulteriormente in modo da poter definire in modo esplicito gli stili consentiti quando si incolla in AEM da un altro programma, ad esempio Microsoft Word.
 
-Ad esempio, se per incollare in AEM solo i formati grassetto e gli elenchi devono essere consentiti, potete filtrare gli altri formati. Questa operazione è denominata filtro Incolla configurabile, che può essere eseguita per entrambi:
+Ad esempio, se è consentito incollare AEM solo formati ed elenchi in grassetto, è possibile filtrare gli altri formati. Questa operazione è denominata filtro Incolla configurabile, che può essere eseguita per entrambi:
 
 * [Testo](#pastemodes)
 * [Collegamenti](#linkstyles)
 
 Per i collegamenti è inoltre possibile definire i protocolli accettati automaticamente.
 
-Per configurare quali formati sono consentiti quando si incolla del testo in AEM da un altro programma:
+Per configurare quali formati sono consentiti quando si incolla testo in AEM da un altro programma:
 
 1. Nel componente, andate al nodo `<rtePlugins-node>/edit`. Creare i nodi se questi non esistono. Per ulteriori dettagli, consultate [Attivare un plug-in](#activateplugin).
 1. Create un nodo sotto il `edit` nodo per mantenere le regole di incolla HTML:
@@ -329,7 +329,7 @@ Quindi, specificare le posizioni dei fogli di stile a cui si desidera fare rifer
 
 ### Configurare l&#39;editor Rich Text per interruzioni di parole ottimali in giapponese {#jpwordwrap}
 
-Gli autori che utilizzano AEM per creare contenuti in lingua giapponese possono applicare uno stile ai caratteri per evitare interruzioni di riga nei casi in cui non è richiesta un’interruzione. Questo permette agli autori di lasciare le frasi rompere nella posizione desiderata. Lo stile di questa funzionalità è basato sulla classe CSS predefinita nel foglio di stile CSS.
+Gli autori che utilizzano AEM per creare contenuti in lingua giapponese possono applicare uno stile ai caratteri per evitare interruzioni di riga nei casi in cui non è richiesta un&#39;interruzione. Questo permette agli autori di lasciare le frasi rompere nella posizione desiderata. Lo stile di questa funzionalità è basato sulla classe CSS predefinita nel foglio di stile CSS.
 
 >[!NOTE]
 >
@@ -445,7 +445,7 @@ Se si definiscono formati personalizzati, i formati predefiniti (`<p>`, `<h1>`, 
 
 ## Configurare i caratteri speciali {#spchar}
 
-In un’installazione standard di AEM, quando il `misctools` plug-in è abilitato per caratteri speciali (`specialchars`) è immediatamente disponibile per l’uso una selezione predefinita; ad esempio, i simboli di copyright e marchio.
+In un&#39;installazione standard di AEM, quando il `misctools` plug-in è abilitato per caratteri speciali (`specialchars`) è immediatamente disponibile per l&#39;uso una selezione predefinita; ad esempio, i simboli di copyright e marchio.
 
 È possibile configurare l’editor Rich Text per rendere disponibile la propria selezione di caratteri; mediante la definizione di caratteri distinti o di un&#39;intera sequenza.
 
@@ -607,7 +607,7 @@ Quando il plug-in per il controllo ortografia è attivato, l&#39;editor Rich Tex
 >[!NOTE]
 Il messaggio `Spell checking failed` viene visualizzato se si tenta di controllare una lingua non installata. I dizionari standard si trovano in `/libs/cq/spellchecker/dictionaries`, insieme ai file Leggimi appropriati. Non modificate i file.
 
-Un’installazione standard di AEM include i dizionari per inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, procedere come segue.
+Un&#39;installazione standard AEM include i dizionari per inglese americano (`en_us`) e inglese britannico (`en_gb`). Per aggiungere altri dizionari, procedere come segue.
 
 1. Passate alla pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -695,7 +695,7 @@ Quando aggiungete collegamenti in AEM, potete definire:
 * Stili CSS da utilizzare
 * I protocolli automaticamente accettati
 
-Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un altro programma, definite le regole HTML.
+Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un altro programma, definire le regole HTML.
 
 1. Utilizzando CRXDE Lite, individuate il componente di testo per il progetto.
 1. Crea un nuovo nodo allo stesso livello `<rtePlugins-node>`, ovvero crea il nodo sotto il nodo principale di `<rtePlugins-node>`:
@@ -731,7 +731,7 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
       * **Nome** `cssExternal`
       * **Tipo** `String`
       * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente.; for example, `cssClass` instead of `.cssClass`)
-   * Array di **protocolli** validi (tra cui https://, https:// file://, mailto:, ecc.)
+   * Array di **protocolli** validi (inclusi `https://`, `https://`, `file://`e `mailto:` altri)
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
@@ -764,7 +764,7 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
 
          * **Nome** `targetInternal`
          * **Tipo** `String`
-         * **Valore** della destinazione per i collegamenti interni (utilizzare solo quando &quot;mode is `auto`&quot;)
+         * **Valore** della destinazione per i collegamenti interni (utilizzare solo quando la modalità è `auto`)
       * Destinazione per i collegamenti esterni:
 
          * **Nome** `targetExternal`
