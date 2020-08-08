@@ -1,18 +1,18 @@
 ---
-title: ' Adobe Experience Manager 6.5 - Note sulla versione del Service Pack'
+title: Note sulla versione di Adobe Experience Manager 6.5 Service Pack
 description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Service Pack 5.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
+source-git-commit: ca965d8495c0460b2b6bc5e08d8818b91f9fcdee
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4531'
 ht-degree: 7%
 
 ---
 
 
-#  Adobe Experience Manager 6.5 - Note sulla versione del Service Pack {#aem-service-pack-release-notes}
+# Note sulla versione di Adobe Experience Manager 6.5 Service Pack {#aem-service-pack-release-notes}
 
 ## Informazioni sulla versione {#release-information}
 
@@ -23,13 +23,13 @@ ht-degree: 7%
 | Data | 04 giugno 2020 |
 | URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
-## Contenuto nell&#39; Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
+## Contenuto in Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
- Adobe Experience Manager 6.5.5.0 è un aggiornamento importante che include nuove funzioni, miglioramenti fondamentali richiesti dai clienti e miglioramenti a prestazioni, stabilità e sicurezza, rilasciati a partire dalla release 6.5 di **aprile 2019**. Può essere installato sopra  Adobe Experience Manager 6.5.
+Adobe Experience Manager 6.5.5.0 è un aggiornamento importante che include nuove funzioni, miglioramenti fondamentali richiesti dai clienti e miglioramenti a prestazioni, stabilità e sicurezza, rilasciati a partire dalla release 6.5 di **aprile 2019**. Può essere installato sulla parte superiore di Adobe Experience Manager 6.5.
 
-Alcune funzioni chiave e miglioramenti introdotti  Adobe Experience Manager 6.5.5.0 includono:
+Alcune funzioni chiave e miglioramenti introdotti in Adobe Experience Manager 6.5.5.0 includono:
 
-* Personalizzare i nomi delle colonne visualizzati nella casella in entrata  Adobe Experience Manager.
+* Personalizzare i nomi delle colonne visualizzati in Adobe Experience Manager Inbox.
 
 * È stata migliorata l&#39;accessibilità in varie aree in  Web Content Management (WCM) di Experience Manager, come Editor pagina, Componenti di base, Editor Rich Text e l&#39;interfaccia utente Amministratore.
 
@@ -39,15 +39,15 @@ Alcune funzioni chiave e miglioramenti introdotti  Adobe Experience Manager 6.5.
 
 * Gestione delle eccezioni migliorata nel flusso dell&#39;interfaccia [!DNL Adobe Experience Manager Assets] utente.
 
-* Per ottenere l’URL di pubblicazione per Dynamic Media Scene7, `getRemoteAssetPublishURL` viene aggiunto un nuovo metodo all’ `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interfaccia.
+* Per ottenere l’URL di pubblicazione per l’Scene7 per contenuti multimediali dinamici, `getRemoteAssetPublishURL` viene aggiunto un nuovo metodo all’ `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interfaccia.
 
 * [Miglioramenti](#assets-6550) dell&#39;accessibilità in [!DNL Adobe Experience Manager Assets] conformità con le linee guida WCAG (Web Content Accessibility Guidelines).
 
-* È stata rimossa l&#39;integrazione di Package Share dall&#39;interno  Adobe Experience Manager.
+* È stata rimossa l&#39;integrazione di Package Share da Adobe Experience Manager.
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.22.3.
 
-Per un elenco completo delle funzioni, degli elementi salienti e delle caratteristiche principali introdotti  service pack 5 dell&#39;Experience Manager 6.5, vedere [Novità  Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
+Per un elenco completo delle funzioni, degli elementi salienti e delle funzioni chiave introdotti  service pack 5 dell&#39;Experience Manager 6.5, consultare [Novità di Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
 
 Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DNL Experience Manager] 6.5.5.0.
 
@@ -77,8 +77,9 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * Quando selezionate un percorso per un componente Frammento esperienza e la casella di controllo Apri finestra di dialogo di selezione, non viene visualizzato nel browser Percorso (NPR-32308).
 * Quando eseguite l&#39;aggiornamento  Experience Manager 6.2 a  Experience Manager 6.5, il componente Parsys dei modelli statici non viene visualizzato correttamente. L&#39;altezza del componente Parsys è impostata su 0 e i componenti al suo interno non sono visibili (NPR-33663).
 * Quando un utente copia e incolla un Contenitore di layout sulla stessa pagina, i componenti in un Contenitore di layout non vengono visualizzati (NPR-33648).
-* Il controllo dello stato di Dispatcher visualizza un messaggio di `Invalid cookie header` avviso nei file di registro (NPR-33629).
+* Il controllo dello stato del dispatcher visualizza un messaggio di `Invalid cookie header` avviso nei file di registro (NPR-33629).
 * XSS riflesso in PreferencesServlet (NPR-33438).
+* Gli utenti anonimi possono accedere alle funzioni CRX DE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -118,7 +119,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Sono ora accessibili diverse versioni delle risorse nella visualizzazione [!UICONTROL Timeline] nella pagina dei dettagli delle risorse tramite i tasti di scelta rapida (NPR-33283).
 
-* I nomi dei suggerimenti di ricerca visualizzati nella casella combinata Omnisearch ora sono annunciati dagli assistenti vocali quando si utilizza la funzionalità di ricerca (NPR-33280).
+* I nomi dei suggerimenti di ricerca visualizzati nella casella combinata Omnisearch ora vengono annunciati dagli assistenti vocali quando si utilizza la funzionalità di ricerca (NPR-33280).
 
 * Gli elementi selezionabili e il collegamento [!UICONTROL Vai a nella barra laterale]  Riferimenti vengono ora annunciati dagli assistenti vocali come elementi selezionabili (NPR-33278).
 
@@ -182,11 +183,11 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 [!DNL Adobe Experience Manager] 6.5.5.0 Assets risolve i seguenti problemi:
 
-* [!UICONTROL L&#39;opzione Avvia] nella finestra di dialogo [!UICONTROL Crea flusso di lavoro] per le risorse di una raccolta è disabilitata, impedendo l&#39;attivazione del flusso di lavoro (NPR-32471).
+* [!UICONTROL L&#39;opzione Avvia] nella finestra di dialogo [!UICONTROL Crea flusso di lavoro] per le risorse di una raccolta è disabilitata, impedendo così l&#39;attivazione del flusso di lavoro (NPR-32471).
 
 * Quando si utilizza la finestra a comparsa a cascata negli schemi di metadati, quando si seleziona e si salva un&#39;opzione a discesa contenente un apostrofo (dall&#39;elenco a discesa figlio) l&#39;opzione dell&#39;apostrofo selezionato scompare dopo la riapertura delle [!UICONTROL proprietà] della risorsa (NPR-32649).
 
-* [!UICONTROL Asset Insights Sync Job] si interrompe e non riesce se rileva voci non valide (sul lato Analytics ) invece di passare alla voce successiva (NPR-32674).
+* [!UICONTROL Asset Insights Sync Job] si interrompe e non riesce se rileva voci non valide (sul lato Analytics) invece di passare alla voce successiva (NPR-32674).
 
 * Il giroscopio non funziona perché i sensori di movimento sono disattivati per impostazione predefinita sui browser mobili nel visualizzatore panoramico (CQ-4272937).
 
@@ -214,11 +215,11 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Eccezione nei registri relativi all&#39;apertura della barra delle rappresentazioni per un PDF in una cartella con profilo di ritaglio avanzato (CQ-4294201).
 
-* I predefiniti per immagini non vengono pubblicati se la modalità [!UICONTROL di sincronizzazione] Dynamic Media è disabilitata per impostazione predefinita  Experience Manager con Dynamic Media Scene7 runmode (CQ-4294200).
+* I predefiniti per immagini non vengono pubblicati se per impostazione predefinita la modalità [!UICONTROL di sincronizzazione per file multimediali] dinamici è disabilitata  Experience Manager con la modalità di esecuzione di Scene7 per file multimediali dinamici (CQ-4294200).
 
 * L&#39;elaborazione delle risorse durante il caricamento in blocco si blocca e l&#39;istanza del flusso di lavoro mostra le istanze bloccate della risorsa di aggiornamento DAM (CQ-4293916).
 
-* La creazione di una configurazione Dynamic Media sul Experience Manager  funziona, ma nell&#39;interfaccia utente non accade nulla quando si seleziona Salva (CQ-4292442).
+* La creazione di una configurazione per file multimediali dinamici su  Experience Manager funziona, ma nell’interfaccia utente non accade nulla se si seleziona Salva (CQ-4292442).
 
 * L&#39;anteprima delle risorse video F4V non funziona nella riproduzione progressiva su Safari/Mac (CQ-4289844).
 
@@ -230,11 +231,11 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * I problemi di prestazioni risolti in 6.5.5.0 sono (CQ-4279206):
 
-   * Il caricamento di file binari di grandi dimensioni sui server Dynamic Media Image Processing richiede troppo tempo.
+   * Il caricamento di file binari di grandi dimensioni sui server di elaborazione immagini per file multimediali dinamici richiede troppo tempo.
 
-   * Il tempo di generazione delle miniature sul  Experience Manager aumenta a causa dell&#39;architettura Dynamic Media Scene7.
+   * Il tempo di generazione delle miniature  Experience Manager aumenta a causa dell’architettura Dynamic Media Scene7.
 
-* I problemi di migrazione ad Dynamic Media Scene7 non vanno a buon fine per i clienti con un numero elevato di risorse (CQ-4279206).
+* I problemi di migrazione di Dynamic Media Scene7 non riescono per i clienti con un numero elevato di risorse (CQ-4279206).
 
 * Il layout del visualizzatore video 360 viene interrotto se `setVideo` viene utilizzato, e il video si sposta verso il basso utilizzando `video= modifier` (CQ-4263201).
 
@@ -263,10 +264,10 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * La cache interna viene cancellata quando viene pubblicata una pagina con un componente Adobe Target  (NPR-33162).
 * L&#39;integrazione con  Adobe Target non funziona sulla versione [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Durante la configurazione  Adobe Target, i campi [!UICONTROL Società] e Suite [!UICONTROL di] rapporti non vengono visualizzati quando si seleziona un&#39;origine di reporting (NPR-32502).
-* Durante l&#39;esportazione [!DNL Experience Fragments] con  I/O Adobe, i metadati come Prodotto sorgente non vengono esportati  Adobe Target (NPR-32159).
+* Durante l&#39;esportazione [!DNL Experience Fragments] con  I/O Adobe, i metadati come Prodotto sorgente non vengono esportati in  Adobe Target (NPR-32159).
 * Gli utenti IMS autorizzati nel gruppo di amministrazione  Experience Manager locale non possono creare o modificare configurazioni IMS (NPR-33045).
 *  pagina Configurazioni lancio Adobe non visualizza tutti i record (NPR-33011).
-* Gli utenti appartenenti al gruppo content-authors non possono modificare le proprietà di un componente Adobe Target  a causa di un errore JavaScript (NPR-32996).
+* Gli utenti del gruppo di autori di contenuti non possono modificare le proprietà di un componente Adobe Target  a causa di un errore JavaScript (NPR-32996).
 * Script tra siti per JSON (NPR-32744).
 
 ### Progetti traduzione {#translation-6550}
@@ -310,7 +311,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 >[!NOTE]
 >
-> Service Pack di Experience Manager non include correzioni per [!DNL Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+> Service Pack di Experience Manager non include correzioni per [!DNL Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per  AEM Forms su JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
 * Gestione corrispondenza: L&#39;ordine delle risorse in un&#39;area di destinazione viene visualizzato dopo l&#39;invio di una lettera (NPR-33359, NPR-33153).
 * Forms adattivo: Quando un utente modifica un modulo adattivo, l&#39;opzione [!UICONTROL Avvia flusso di lavoro] disponibile nel menu Informazioni  pagina non funziona (NPR-33004).
@@ -340,11 +341,11 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 >[!NOTE]
 >
-> Adobe non consiglia di rimuovere o disinstallare il pacchetto  Adobe Experience Manager 6.5.5.0.
+> Adobe non consiglia di rimuovere o disinstallare il pacchetto Adobe Experience Manager 6.5.5.0.
 
 ### Installare Service Pack {#install-service-pack}
 
-Per installare Service Pack in un&#39;istanza  Adobe Experience Manager 6.5 esistente, effettuate le seguenti operazioni:
+Per installare Service Pack in un’istanza Adobe Experience Manager 6.5 esistente, effettuate le seguenti operazioni:
 
 1. Scaricate il service pack da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
 
@@ -358,7 +359,7 @@ Per installare Service Pack in un&#39;istanza  Adobe Experience Manager 6.5 esis
 
 **Installazione automatica**
 
-Esistono due modi per installare automaticamente  Adobe Experience Manager 6.5.5.0 in un&#39;istanza di lavoro:
+Esistono due modi per installare automaticamente Adobe Experience Manager 6.5.5.0 su un’istanza di lavoro:
 
 A. Inserite il pacchetto nella `../crx-quickstart/install` cartella quando il server è disponibile online. Il pacchetto viene installato automaticamente.
 
@@ -366,7 +367,7 @@ B. Utilizzate l&#39;API [HTTP da Package Manager](https://docs.adobe.com/content
 
 >[!NOTE]
 >
-> Adobe Experience Manager 6.5.5.0 non supporta l&#39;installazione di Bootstrap.
+>Adobe Experience Manager 6.5.5.0 non supporta l&#39;installazione di Bootstrap.
 
 **Convalidare l’installazione**
 
@@ -384,7 +385,7 @@ Per conoscere le piattaforme certificate per l’utilizzo con questa versione, c
 >
 >Ignora questa sezione se non usi AEM Forms. Le correzioni  Adobe Experience Manager Forms vengono distribuite tramite un pacchetto aggiuntivo separato.
 
-1. Accertatevi di aver installato  Adobe Experience Manager Service Pack.
+1. Accertatevi di aver installato Adobe Experience Manager Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
@@ -420,7 +421,7 @@ Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzio
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
-| Integrations (Integrazioni) | La schermata **[!UICONTROL AEM cloud services consenso]** è obsoleta. Con l&#39;integrazione AEM e Target aggiornata in AEM 6.5 per supportare l&#39;API Target Standard, che utilizza l&#39;autenticazione tramite  Adobe IMS e I/O, e il ruolo crescente di  lancio del Adobe per strumentalizzare AEM pagine per l&#39;analisi e la personalizzazione, la procedura guidata di consenso è diventata funzionale e irrilevante. | Configurate le connessioni di sistema, l&#39;autenticazione  Adobe IMS e le integrazioni di I/O  Adobe tramite i rispettivi AEM cloud services. |
+| Integrations (Integrazioni) | La schermata di consenso dei servizi **[!UICONTROL AEM Cloud non è più disponibile]** . Con l&#39;integrazione AEM e Target aggiornata in AEM 6.5 per supportare l&#39;API di Target Standard, che utilizza l&#39;autenticazione tramite  IMS Adobe e I/O, e il ruolo crescente di  lancio del Adobe per strumentalizzare AEM pagine per l&#39;analisi e la personalizzazione, la procedura guidata di consenso è diventata funzionale e irrilevante. | Configurate le connessioni di sistema, l&#39;autenticazione  Adobe IMS e le integrazioni di I/O  Adobe tramite i rispettivi servizi cloud AEM. |
 | Connettori | Il connettore JCR  Adobe per Microsoft SharePoint 2010 e Microsoft SharePoint 2013 non è più supportato per AEM 6.5. | N/D |
 
 ## Problemi noti {#known-issues}
@@ -442,7 +443,7 @@ Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzio
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
    * La convalida lato server del modulo adattivo non riesce se vengono utilizzate funzioni di aggregazione quali SUM, MAX e MIN. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance.
-   * L’area sensibile in un’immagine Dynamic Media interattiva non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore per banner acquistabili.
+   * L’area sensibile in un’immagine multimediale dinamica interattiva non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore per banner acquistabili.
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
