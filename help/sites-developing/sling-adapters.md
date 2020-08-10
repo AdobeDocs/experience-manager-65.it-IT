@@ -1,6 +1,6 @@
 ---
-title: Utilizzo delle schede di rete Sling
-seo-title: Utilizzo delle schede di rete Sling
+title: Utilizzo di adattatori Sling
+seo-title: Utilizzo di adattatori Sling
 description: Sling offre un pattern di adattatore per tradurre facilmente gli oggetti che implementano l'interfaccia Adattabile
 seo-description: Sling offre un pattern di adattatore per tradurre facilmente gli oggetti che implementano l'interfaccia Adattabile
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
@@ -10,15 +10,15 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
+source-git-commit: 36cc5ca0de9ae2933a0d7585a00f26cc984d24db
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2350'
 ht-degree: 1%
 
 ---
 
 
-# Utilizzo delle schede di rete Sling{#using-sling-adapters}
+# Utilizzo di adattatori Sling{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) offre un pattern [](https://sling.apache.org/site/adapters.html) Adapter per tradurre facilmente gli oggetti che implementano l&#39;interfaccia [Adattabile](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) . Questa interfaccia fornisce un metodo [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) generico che converte l&#39;oggetto nel tipo di classe passato come argomento.
 
@@ -145,12 +145,36 @@ Per il primo caso, i javadocs possono specificare quali `adaptTo-targets` sono p
    <td>Se si tratta di una risorsa basata su nodo JCR.</td>
   </tr>
   <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html">Pagina</a></td>
+   <td>Se si tratta di una risorsa basata su nodo JCR e il nodo è un <code>cq:Page</code> (o <code>cq:PseudoPage</code>).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html">Componente</a></td>
+   <td>Se si tratta di una risorsa <code>cq:Component</code> nodo.</td>
+  </tr>  
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">Progettazione</a></td>
+   <td>Se si tratta di un nodo di progettazione (<code>cq:Page</code>).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html">Modello</a></td>
+   <td>Se si tratta di una risorsa <code>cq:Template</code> nodo.</td>
+  </tr>  
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
+   <td>Se si tratta di una risorsa <code>cq:Template</code> nodo.</td>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">Risorsa</a></td>
    <td>Se si tratta di una risorsa nodo dam:Asset.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Rendition.html">Rendering</a></td>
    <td>Se si tratta di una rappresentazione dam:Asset (nt:file sotto la cartella di rappresentazione di una dam:Assert)</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
+   <td>Se si tratta di una risorsa <code>cq:Tag</code> nodo.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -200,7 +224,23 @@ Per il primo caso, i javadocs possono specificare quali `adaptTo-targets` sono p
    <td>La sessione JCR della richiesta, se si tratta di un risolutore di risorse basato su JCR (predefinito).</td>
   </tr>
   <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td> </td>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td>In base alla sessione JCR, se si tratta di un risolutore di risorse basato su JCR.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>In base alla sessione JCR, se si tratta di un risolutore di risorse basato su JCR.</td>
   </tr>
   <tr>
@@ -244,7 +284,7 @@ Nessuna destinazione ancora, ma implementa Adattabile e potrebbe essere utilizza
 
 #### WCM {#wcm}
 
-**La pagina** si adatta a:
+**[La pagina](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)**si adatta a:
 
 <table>
  <tbody>
@@ -267,7 +307,7 @@ Nessuna destinazione ancora, ma implementa Adattabile e potrebbe essere utilizza
  </tbody>
 </table>
 
-**Il componente** si adatta a:
+**[Il componente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)**si adatta a:
 
 | [Risorsa](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Risorsa del componente. |
 |---|---|
@@ -275,7 +315,7 @@ Nessuna destinazione ancora, ma implementa Adattabile e potrebbe essere utilizza
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nodo del componente. |
 | ... | Tutto ciò a cui la risorsa del componente può essere adattata. |
 
-**Il modello** si adatta a:
+**[Il modello](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)**si adatta a:
 
 <table>
  <tbody>
