@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 7%
 
 ---
 
@@ -25,15 +28,15 @@ Per aggiungere una risorsa di abilitazione al nuovo sito community:
    * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
 * Dalla navigazione globale, selezionate **[!UICONTROL Community]** > **[!UICONTROL Risorse]**
 
-   ![chlimage_1-199](assets/chlimage_1-199.png)
+   ![riferimenti](assets/resources.png)
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![enablement-resource](assets/enablement-resource.png)
 * Selezionate il sito della community in cui vengono aggiunte le risorse di abilitazione:
    * Selezionate **[!UICONTROL Esercitazione]** di abilitazione.
 * Dal menu, selezionate **[!UICONTROL Crea]**.
 * Selezionare **[!UICONTROL Risorsa]**.
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![create-resource](assets/create-enablement-resource.png)
 
 ### Informazioni di base {#basic-info}
 
@@ -63,7 +66,7 @@ Compila le informazioni di base per la risorsa:
 
    Aggiungere un&#39;immagine per rappresentare la risorsa al membro nella visualizzazione Assegnazioni.
 
-   ![chlimage_1-202](assets/chlimage_1-202.png)
+   ![basic-info](assets/basic-info.png)
 
 * Seleziona **[!UICONTROL Avanti]**
 
@@ -73,11 +76,13 @@ Anche se è possibile selezionare più risorse, ne è consentita solo una.
 
 Selezionare `'+' icon`, nell&#39;angolo superiore destro, per iniziare il processo di scelta della risorsa identificando l&#39;origine.
 
-![chlimage_1-203](assets/chlimage_1-203.png) ![chlimage_1-204](assets/chlimage_1-204.png)
+![add-content](assets/add-content.png)
+
+![upload-resource](assets/upload-resource.png)
 
 Carica una risorsa. Se una risorsa video, caricate un’immagine personalizzata da visualizzare prima dell’inizio della riproduzione del video oppure consentite la generazione di una miniatura dal video (potrebbe richiedere alcuni minuti - non è necessario attendere).
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![upload-video](assets/upload-video.png)
 
 * Seleziona **[!UICONTROL Avanti]**.
 
@@ -105,7 +110,7 @@ Carica una risorsa. Se una risorsa video, caricate un’immagine personalizzata 
 
    **Nota**: Se gli utenti o i gruppi non sono visibili, accertatevi che siano stati aggiunti al `Community Enable Members` gruppo e *salvati* nell’istanza di pubblicazione.
 
-   ![chlimage_1-206](assets/chlimage_1-206.png)
+   ![enablement-settings](assets/enablement-settings.png)
 
 * Seleziona **[!UICONTROL Avanti]**
 
@@ -115,11 +120,11 @@ Carica una risorsa. Se una risorsa video, caricate un’immagine personalizzata 
 
    Non impostate perché questa risorsa di abilitazione verrà aggiunta a un percorso di apprendimento. Se uno studente viene assegnato sia alla singola risorsa di abilitazione che a un percorso di apprendimento contenente la risorsa di abilitazione, lo studente verrà assegnato due volte alla risorsa di abilitazione.
 
-   ![chlimage_1-207](assets/chlimage_1-207.png)
+   ![add-assegnazioni](assets/add-assignments.png)
 
 * Seleziona **[!UICONTROL Crea]**
 
-   ![chlimage_1-208](assets/chlimage_1-208.png)
+   ![create-resource](assets/create-resource.png)
 
 La creazione della risorsa è riuscita e torna alla console Risorse con la risorsa appena creata selezionata. Da questa console è possibile pubblicare, aggiungere utenti in formazione e modificare altre impostazioni.
 
@@ -133,13 +138,13 @@ Prima che gli iscritti siano in grado di visualizzare il corso di aggiornamento 
 
 L&#39;attivazione viene confermata con un messaggio di riuscita:
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![publish-resource](assets/publish-resource.png)
 
 ## Aggiunta di una seconda risorsa di abilitazione {#add-a-second-enablement-resource}
 
 Ripetete i passaggi descritti qui sopra per creare e pubblicare una seconda risorsa di abilitazione correlata dalla quale verrà creato un percorso di apprendimento.
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![add-resource](assets/add-resource.png)
 
 **Pubblicate** la seconda risorsa.
 
@@ -147,7 +152,7 @@ Tornate all&#39;elenco delle risorse di Enablement Tutorial.
 
 *Suggerimento: Se entrambe le risorse non sono visibili, aggiorna la pagina.*
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![refresh-resource](assets/refresh-resource.png)
 
 ## Aggiungere un percorso di apprendimento {#add-a-learning-path}
 
@@ -156,7 +161,7 @@ Un percorso di apprendimento è un gruppo logico di risorse di abilitazione che 
 * Dalla console Risorse, selezionate `+ Create`
 * Seleziona percorso **[!UICONTROL di apprendimento]**
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![add-learning-path](assets/add-learning-path.png)
 
 Aggiungete le informazioni **[!UICONTROL di base]**:
 
@@ -176,7 +181,7 @@ Aggiungete le informazioni **[!UICONTROL di base]**:
 
    Per rappresentare il percorso di apprendimento nella console Risorse.
 
-   ![chlimage_1-213](assets/chlimage_1-213.png)
+   ![learning-path-basic](assets/learningpath-basic.png)
 
 * Seleziona **[!UICONTROL Avanti]**.
 
@@ -197,13 +202,13 @@ Nel pannello Aggiungi risorse:
 
 * Seleziona **[!UICONTROL Invia]**.
 
-   ![chlimage_1-214](assets/chlimage_1-214.png)
+   ![percorso di apprendimento](assets/learningpath-add.png)
 
-   ![chlimage_1-215](assets/chlimage_1-215.png)
+   ![create-learning path](assets/create-learningpath.png)
 
 * Seleziona **[!UICONTROL Avanti]**
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![apprendimento delle impostazioni dei percorsi](assets/learningpath-settings.png)
 
 * **[!UICONTROL Aggiungi assegnatari]**
 
@@ -215,7 +220,7 @@ Nel pannello Aggiungi risorse:
 
 * Seleziona **[!UICONTROL Crea]**.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![learning-path-info](assets/learningpath-info.png)
 
 La creazione corretta del percorso di apprendimento torna alla console Risorse con il nuovo percorso di apprendimento selezionato. Da questa console è possibile pubblicare, aggiungere utenti in formazione e modificare altre impostazioni.
 
