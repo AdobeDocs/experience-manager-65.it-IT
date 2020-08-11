@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ## Panoramica {#overview}
 
-Per AEM Communities, esistono diversi rapporti a cui è possibile accedere in diversi modi dall&#39;ambiente di authoring.
+Per  AEM Communities, esistono diversi rapporti a cui è possibile accedere in diversi modi dall’ambiente di authoring.
 
 In generale, le relazioni sono le seguenti:
 
@@ -60,7 +63,7 @@ I rapporti tabulari possono essere esportati in formato .csv per l’elaborazion
 
 
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![report](assets/reports1.png)
 
 ### Rapporti per risorse di abilitazione e percorsi di apprendimento {#reports-for-enablement-resources-and-learning-paths}
 
@@ -93,7 +96,7 @@ La console Assegnazioni consente di filtrare i rapporti in base all&#39;abilitaz
 
 Il rapporto fornisce informazioni sui loro progressi, nonché eventuali commenti o valutazioni forniti.
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![rapporto sulle assegnazioni](assets/assignment-report.png)
 
 Seleziona i criteri per il rapporto:
 
@@ -104,6 +107,7 @@ Seleziona i criteri per il rapporto:
 * **Utente o gruppo**
    * Selezionate Utente per generare un rapporto per uno studente.
    * Selezionate Gruppo per generare un rapporto per un gruppo di utenti in formazione.
+
    Il servizio tunnel accederà ai membri e ai gruppi di membri dall&#39;ambiente di pubblicazione.
 
 * **Assegnazione**
@@ -112,13 +116,13 @@ Seleziona i criteri per il rapporto:
 
 Selezionate **Genera** per creare il rapporto:
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![generate-report](assets/generate-assignment-report.png)
 
 ## Rapporto visualizzazioni {#views-report}
 
 La console Visualizzazioni consente di generare rapporti sulle visualizzazioni di pagina in base alle funzioni per community per un determinato periodo di tempo.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![view-report](assets/view-report.png)
 
 Seleziona i criteri per il rapporto:
 
@@ -141,13 +145,13 @@ Seleziona i criteri per il rapporto:
 
 Selezionate **[!UICONTROL Genera]** per creare il rapporto.
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![generate-views](assets/generate-views.png)
 
 ## Rapporto sui post {#posts-report}
 
 La console Post consente di generare rapporti sul numero di post alle funzioni della community per un determinato periodo di tempo.
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![post-report](assets/posts-report.png)
 
 Seleziona i criteri per il rapporto:
 
@@ -170,13 +174,13 @@ Seleziona i criteri per il rapporto:
 
 Selezionate **[!UICONTROL Genera]** per creare il rapporto.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![generate-report](assets/generate-posts-report.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
 ### Nessun sito community elencato {#no-community-sites-listed}
 
-Se non sono elencati siti community, accertati che Adobe Analytics sia stato abilitato per un sito. Se scegli rapporti sulle assegnazioni, assicurati che la funzione delle assegnazioni sia nella struttura del sito della community.
+Se non è presente alcun sito community, accertatevi che  Adobe Analytics sia stato abilitato per un sito. Se scegli rapporti sulle assegnazioni, assicurati che la funzione delle assegnazioni sia nella struttura del sito della community.
 
 ### I rapporti non vengono visualizzati nell&#39;istanza di AEM Author {#reports-do-not-show-in-aem-author-instance}
 
