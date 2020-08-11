@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
@@ -27,19 +30,19 @@ Per le informazioni necessarie, consulta [Community Components Basics](basics.md
 
 Quando vengono incluse le librerie [lato client](rating-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Rating` componente.
 
-![chlimage_1-493](assets/chlimage_1-493.png)
+![valutazione](assets/rating.png)
 
 ## Configurazione della valutazione {#configuring-rating}
 
 Selezionate il `Rating` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure-new](assets/configure-new.png)
 
 Nella scheda **[!UICONTROL Testo ed etichette]** è possibile specificare l’identificatore interno per la valutazione.
 
-![chlimage_1-495](assets/chlimage_1-495.png)
+![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Tally Name]**(*Obbligatorio*) Un nome semplice per il `Rating`quale identifica l&#39;istanza in modo univoco. Deve essere un nome di nodo valido per il repository.
+**[!UICONTROL Tally Name]**(*Obbligatorio*) Un nome semplice per il `Rating` quale l&#39;istanza viene identificata in modo univoco. Deve essere un nome di nodo valido per il repository.
 
 ## Esperienza dei visitatori del sito {#site-visitor-experience}
 
