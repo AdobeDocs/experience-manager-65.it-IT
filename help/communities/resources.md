@@ -10,18 +10,21 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+workflow-type: tm+mt
+source-wordcount: '2979'
+ht-degree: 5%
 
 ---
 
 
 # Console Risorse di abilitazione {#enablement-resources-console}
 
-Per AEM Communities, la console Risorse è il luogo in cui [Enablement Manager](users.md) crea, gestisce e assegna le risorse ai membri di un sito community di abilitazione.
+Per  AEM Communities, la console Risorse è il luogo in cui [i manager](users.md) di abilitazione creano, gestiscono e assegnano le risorse ai membri di un sito della community di abilitazione.
 
 ## Requisiti {#requirements}
 
-Prima di aggiungere risorse di abilitazione per un sito community, le istanze AEM devono essere configurate correttamente, compresi:
+Prima di aggiungere le risorse di abilitazione per un sito community, le istanze AEM devono essere configurate correttamente, inclusi:
 
 * SCORM
 * FFmpeg
@@ -36,7 +39,7 @@ Per informazioni dettagliate, consultate [Configurazione dell&#39;abilitazione](
 
 >[!NOTE]
 >
->Con il rilascio di [AEM 6.3](deploy-communities.md#latestfeaturepack) e dei pacchetti di funzionalità Community equivalenti [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la funzione di abilitazione non richiede più un database [](mysql.md)MySQL.
+>Con il rilascio di [AEM 6.3](deploy-communities.md#latestfeaturepack) e dei pacchetti di funzioni Community equivalenti [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la funzione di abilitazione non richiede più un database [](mysql.md)MySQL.
 
 
 ## Terminologia {#terminology}
@@ -63,7 +66,7 @@ Un percorso di apprendimento è un insieme logico di risorse di abilitazione rag
 
 Quando viene creato un sito community, il nome assegnato al sito per l&#39;URL viene utilizzato nella creazione di gruppi [utente specifici per il](users.md) sito configurati con varie autorizzazioni per vari ruoli. Tutti questi gruppi creati automaticamente hanno il prefisso `Community <site-name>`.
 
-Un gruppo di utenti di questo tipo è `Community <site-name> Members` il gruppo, che identifica gli utenti registrati nell&#39;ambiente di pubblicazione come membri della community. Per un esempio, consulta la [guida introduttiva all’abilitazione di AEM Communities](getting-started-enablement.md) .
+Un gruppo di utenti di questo tipo è `Community <site-name> Members` il gruppo, che identifica gli utenti registrati nell&#39;ambiente di pubblicazione come membri della community. Per un esempio, consulta la [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md) .
 
 Per le comunità [di](overview.md#egagementcommunity)coinvolgimento, è ragionevole consentire ai visitatori del sito di registrarsi o utilizzare il login mediante social network, al momento in cui vengono automaticamente aggiunti al gruppo di membri.
 
@@ -77,7 +80,7 @@ Nell’ambiente di authoring, per accedere alla console Risorse
 
 * Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** > **[!UICONTROL Risorse]**
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   ![enablement-sites](assets/enablement-sites.png)
 
 ### Selezione di un sito community {#select-a-community-site}
 
@@ -87,25 +90,25 @@ Le risorse di abilitazione vengono create per un sito community specifico dopo a
 
 Una volta selezionato un sito community specifico, tutte le risorse di abilitazione e i percorsi di apprendimento esistenti sono accessibili per la gestione e la modifica e possono essere create nuove risorse di abilitazione e percorsi di apprendimento.
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![community-resources](assets/community-resources.png)
 
 #### Ricerca {#search-features}
 
-![chlimage_1-165](assets/chlimage_1-165.png)
+![search site](assets/searchsite.png)
 
 Selezionate l’icona di attivazione/disattivazione del pannello laterale per cercare una risorsa di abilitazione o un percorso di apprendimento. Quando è selezionato, un pannello di ricerca si apre sul lato sinistro della console e fornisce una casella di testo in cui immettere i termini di ricerca.
 
-![chlimage_1-166](assets/chlimage_1-166.png)
+![search-result](assets/search-result.png)
 
 #### Modalità di selezione {#selection-mode}
 
 Per selezionare più risorse di abilitazione, selezionatele prima passando il mouse sulla scheda e selezionando l&#39;icona del segno di spunta. Una volta selezionata, la selezione di qualsiasi altra scheda la aggiungerà al gruppo di selezione. Selezionando una seconda volta, la scheda viene deselezionata.
 
-![chlimage_1-167](assets/chlimage_1-167.png)
+![modalità di selezione](assets/selection-mode.png)
 
 ## Creazione di una risorsa {#create-a-resource}
 
-![chlimage_1-168](assets/chlimage_1-168.png)
+![create-resource](assets/create-resource1.png)
 
 Per aggiungere una nuova risorsa di abilitazione al sito community
 
@@ -124,7 +127,7 @@ Quando la risorsa fa parte di un corso, un percorso di apprendimento, i membri d
 
 ### 1 Basic Info {#basic-info}
 
-![chlimage_1-169](assets/chlimage_1-169.png)
+![resource-basicinfo](assets/resource-basicinfo.png)
 
 * **[!UICONTROL Aggiungi]**
 
@@ -154,27 +157,27 @@ Quando la risorsa fa parte di un corso, un percorso di apprendimento, i membri d
 
 * **[!UICONTROL Risorsa piccola]**
 
-   (*Facoltativo*) Selezionato da Risorse AEM. Un’immagine in miniatura che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio in un catalogo.
+   (*Facoltativo*) Selezionato da  AEM Assets. Un’immagine in miniatura che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio in un catalogo.
 
 * **[!UICONTROL Risorsa grande]**
 
-   (*Facoltativo*) Selezionato da Risorse AEM. Immagine grande che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio sulla pagina principale di una risorsa.
+   (*Facoltativo*) Selezionato da  AEM Assets. Immagine grande che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio sulla pagina principale di una risorsa.
 
 * **[!UICONTROL Risorsa frammento di contenuto]**
 
-   (*Facoltativo*) Selezionato da Risorse AEM. Un frammento di contenuto a cui può essere fatto riferimento nell’ambiente di pubblicazione, ma che per impostazione predefinita non è in uso.
+   (*Facoltativo*) Selezionato da  AEM Assets. Un frammento di contenuto a cui può essere fatto riferimento nell’ambiente di pubblicazione, ma che per impostazione predefinita non è in uso.
 
 * Seleziona **[!UICONTROL Avanti]**
 
 ### 2 Add Content {#add-content}
 
-![chlimage_1-170](assets/chlimage_1-170.png)
+![resource-addcontent](assets/resource-addcontent.png)
 
 Anche se è possibile selezionare più risorse di abilitazione, è consentita solo una.
 
 Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere la risorsa identificando l’origine.
 
-![chlimage_1-171](assets/chlimage_1-171.png)
+![upload-resource](assets/upload-resource1.png)
 
 * **[!UICONTROL Carica dai file locali]**
 
@@ -200,7 +203,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 * **[!UICONTROL Aggiungi un URL di Adobe Connect]**
 
-   Inserite un collegamento a una sessione di Adobe Connect.
+   Inserite un collegamento a una sessione Adobe Connect .
 
    Nella finestra di dialogo visualizzata, immettete:
 
@@ -210,7 +213,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
    * **[!UICONTROL URL]**
 
-      L’URL di una sessione di Adobe Connect.
+      URL di una sessione Adobe Connect .
 
 * **[!UICONTROL Definisci una risorsa esterna]**
 
@@ -228,7 +231,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 #### Esempio di una risorsa video aggiunta {#example-of-an-added-video-resource}
 
-![chlimage_1-172](assets/chlimage_1-172.png)
+![add-video](assets/add-video.png)
 
 * **[!UICONTROL Immagine copertina riferimento]**
 
@@ -240,7 +243,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 ### 3 Settings {#settings}
 
-![chlimage_1-173](assets/chlimage_1-173.png)
+![resource-settings](assets/resource-settings.png)
 
 >[!NOTE]
 >
@@ -283,7 +286,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 ### 4 Assignments {#assignments}
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![assegnazioni di risorse](assets/resource-assignments.png)
 
 * **[!UICONTROL Aggiungi assegnatari]**
 
@@ -291,13 +294,13 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 * Seleziona **[!UICONTROL Crea]**.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![resourcesInfo](assets/resourceinfo.png)
 
-La creazione della risorsa di abilitazione è riuscita e viene nuovamente visualizzata la console Risorse, con la risorsa appena creata selezionata. Da questa console è possibile [gestire la risorsa](#managing-a-resource).
+La creazione della risorsa di abilitazione ha avuto esito positivo e viene nuovamente visualizzata la console Risorse, con la risorsa appena creata selezionata. Da questa console è possibile [gestire la risorsa](#managing-a-resource).
 
 ## Create a Learning Path {#create-a-learning-path}
 
-![chlimage_1-176](assets/chlimage_1-176.png)
+![add-learning-path](assets/add-learning-path.png)
 
 Per aggiungere un nuovo percorso di apprendimento al sito della community
 
@@ -318,7 +321,7 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 ### Informazioni di base {#basic-info-1}
 
-![chlimage_1-177](assets/chlimage_1-177.png)
+![learning-path-basic](assets/learningpath-basic1.png)
 
 * **[!UICONTROL Aggiungi]**
 
@@ -348,21 +351,21 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 * **[!UICONTROL Risorsa piccola]**
 
-   (*Facoltativo*) Selezionato da Risorse AEM. Un’immagine in miniatura che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio in un catalogo.
+   (*Facoltativo*) Selezionato da  AEM Assets. Un’immagine in miniatura che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio in un catalogo.
 
 * **[!UICONTROL Risorsa grande]**
 
-   (*Facoltativo*) Selezionato da Risorse AEM. Immagine grande che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio sulla pagina principale di una risorsa.
+   (*Facoltativo*) Selezionato da  AEM Assets. Immagine grande che rappresenta la risorsa nell’ambiente di pubblicazione, ad esempio sulla pagina principale di una risorsa.
 
 * **[!UICONTROL Risorsa frammento di contenuto]**
 
-   (*Facoltativo*) Selezionato da Risorse AEM. Un frammento di contenuto a cui può essere fatto riferimento nell’ambiente di pubblicazione, ma che per impostazione predefinita non è in uso.
+   (*Facoltativo*) Selezionato da  AEM Assets. Un frammento di contenuto a cui può essere fatto riferimento nell’ambiente di pubblicazione, ma che per impostazione predefinita non è in uso.
 
 * Seleziona **[!UICONTROL Avanti]**.
 
 ### Aggiungi prerequisiti {#add-prerequisites}
 
-![chlimage_1-178](assets/chlimage_1-178.png)
+![apprendimento dei prerequisiti per i percorsi](assets/learningpath-prerequisites.png)
 
 * **[!UICONTROL Percorsi di formazione da completare come prerequisiti]**
 
@@ -372,7 +375,7 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 ### Aggiungi riferimenti {#add-resources}
 
-![chlimage_1-179](assets/chlimage_1-179.png)
+![learning-path-addresource](assets/learningpath-addresource.png)
 
 * **[!UICONTROL Rispetta l&#39;ordine del percorso di apprendimento]**
 
@@ -391,7 +394,7 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 ### Impostazioni {#settings-1}
 
-![chlimage_1-180](assets/chlimage_1-180.png)
+![learningpath-settings1](assets/learningpath-settings1.png)
 
 * **[!UICONTROL Aggiungi adesioni]**
 
@@ -420,7 +423,7 @@ Per gestire una singola risorsa di abilitazione:
 Per la risorsa di abilitazione selezionata, è possibile:
 
 * Visualizza proprietà (predefinito)
-* Modifica proprietà
+* Modifica delle proprietà
 * Elimina
 * Pubblicazione
 * Annulla pubblicazione
@@ -429,7 +432,7 @@ Per caricare una nuova versione della risorsa di abilitazione, si consiglia di c
 
 ### Modifica riferimento {#edit-resource}
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![edit-resource](assets/edit-resource.png)
 
 Selezionando l&#39;icona a forma di matita, vengono resi disponibili i passaggi per la creazione di una risorsa di abilitazione, in modo da modificare le informazioni fornite.
 
@@ -437,13 +440,13 @@ Se l’unica modifica consiste nel modificare le assegnazioni nel passaggio Impo
 
 ### Elimina riferimento {#delete-resource}
 
-![chlimage_1-182](assets/chlimage_1-182.png)
+![delete-resource](assets/delete-resource.png)
 
 Selezionando l&#39;icona del cestino, la risorsa di abilitazione verrà visualizzata `Deleted` dopo la conferma.
 
 ### Pubblicazione {#publish}
 
-![chlimage_1-183](assets/chlimage_1-183.png)
+![publish-resource](assets/publish-resource1.png)
 
 Prima che gli utenti in formazione siano in grado di visualizzare le risorse di abilitazione assegnate, è necessario pubblicarle:
 
@@ -455,27 +458,27 @@ Anche se la finestra di dialogo dichiara che l’azione è in coda, spesso viene
 
 ### Annulla pubblicazione {#unpublish}
 
-![chlimage_1-184](assets/chlimage_1-184.png)
+![Annulla pubblicazione](assets/unpublish.png)
 
 Per rendere temporaneamente le risorse di abilitazione inaccessibili ai membri nell’ambiente di pubblicazione senza eliminarle, utilizzate l’icona del mondo per `Unpublish` la risorsa.
 
 ### Rapporto {#report}
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![risorse-report](assets/resource-reports.png)
 
 L’icona Rapporto consente di accedere ai rapporti generati quando gli studenti interagiscono con le risorse di abilitazione assegnate nell’ambiente di pubblicazione. Il rapporto varia a seconda del tipo di risorsa.
 
 Per tutti i percorsi di apprendimento, è possibile visualizzare un rapporto basato sulle risorse o sugli studenti ( `User Report`.)
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![learning-path-info](assets/learningpath-info1.png)
 
-Questo rapporto è specifico per la risorsa di abilitazione corrente o il percorso di apprendimento. La profondità del reporting fornita dipende dal fatto che [Adobe Analytics](analytics.md) sia autorizzato o meno per il sito community. I rapporti [Timeline](#timeline), [Coinvolgimento](#viewer-engagement)del visualizzatore e [Coinvolgimento in base al dispositivo](#engagement-by-device) vengono importati da Adobe Analytics in base all&#39;intervallo [di](analytics.md#report-importer)polling.
+Questo rapporto è specifico per la risorsa di abilitazione corrente o il percorso di apprendimento. La profondità del reporting fornita dipende dal fatto che [Adobe Analytics](analytics.md) sia autorizzato o meno per il sito community. I rapporti [Timeline](#timeline), [Coinvolgimento](#viewer-engagement)del visualizzatore e [Coinvolgimento per dispositivo](#engagement-by-device) vengono importati da  Adobe Analytics in base all&#39;intervallo [di](analytics.md#report-importer)polling.
 
-Per tutte le risorse di abilitazione, indipendentemente dal fatto che Adobe Analytics sia abilitato o meno, sono presenti rapporti sullo stato [](#assignee-status) assegnatario e sulle [valutazioni](#ratings) , nonché una tabella di riepilogo [dei](#report-summary) rapporti.
+Per tutte le risorse di abilitazione, indipendentemente dal fatto che sia attivato o meno  Adobe Analytics, sono presenti rapporti sullo stato [e le](#assignee-status) valutazioni [di](#ratings) Assegnatario e una tabella Riepilogo [](#report-summary) report.
 
-![chlimage_1-187](assets/chlimage_1-187.png)
+![resource-report](assets/resource-report1.png)
 
-#### Timeline   {#timeline}
+#### Timeline  {#timeline}
 
 Il rapporto Cronologia analisi mostra quando si verificano eventi nel tempo per questa risorsa di abilitazione:
 
