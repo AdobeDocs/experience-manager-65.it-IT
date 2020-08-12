@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ Un editor Rich Text (RTE) consente di immettere testo con la marcatura.
 
 Per i componenti Community, anche se simili all’editor di testo [RTF nell’ambiente](../../help/sites-authoring/rich-text-editor.md)di authoring, questo incide sul testo immesso nell’ambiente di pubblicazione.
 
-![chlimage_1-410](assets/chlimage_1-410.png)
+![editor Rich Text](assets/rich-text-editor.png)
 
 ## Abilitazione dell&#39;editor Rich Text {#enabling-rich-text-editor}
 
@@ -31,7 +34,7 @@ Per i componenti Community, anche se simili all’editor di testo [RTF nell’am
 
 Se non è abilitata, è sufficiente attivare la modalità [di modifica](sites-console.md#authoring-site-content)dell’autore, selezionare il componente per la modifica e selezionare la `Rich Text Editor` casella di controllo.
 
-RTE è disponibile per i seguenti componenti Community:
+L&#39;editor Rich Text è disponibile per i seguenti componenti Community:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
