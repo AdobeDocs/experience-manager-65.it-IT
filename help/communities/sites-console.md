@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+workflow-type: tm+mt
+source-wordcount: '3292'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +28,7 @@ La console Siti community consente di accedere a:
 * Gestione del sito
 * [Creazione e modifica di gruppi](/help/communities/groups.md) nidificati (sottocomunità)
 
-Consultate [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md) per verificare la rapidità con cui è possibile creare un sito community nell&#39;ambiente di authoring, nonché come creare gruppi di community dagli ambienti di creazione e pubblicazione.
+Consultate [Guida introduttiva  AEM Communities](/help/communities/getting-started.md) per verificare la rapidità con cui è possibile creare un sito community nell’ambiente di authoring, nonché come creare gruppi di community dagli ambienti di creazione e pubblicazione.
 
 >[!NOTE]
 >
@@ -44,7 +47,7 @@ Prima di creare un sito community, è *necessario* :
 Per garantire che il sito sia pronto a supportare molte funzioni, è consigliabile adottare le seguenti misure:
 
 * Installate il pacchetto [di funzioni](/help/communities/deploy-communities.md#latestfeaturepack)più recente.
-* Abilita [Adobe Analytics](/help/communities/analytics.md) per AEM Communities.
+* Abilita [Adobe Analytics](/help/communities/analytics.md) per  AEM Communities.
 * Configura [e-mail](/help/communities/email.md)
 * Identificare gli amministratori [della](/help/communities/users.md#creating-community-members)community.
 * [Abilita il gestore](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler) OAuth per l&#39;accesso tramite social network.
@@ -63,7 +66,7 @@ Per accedere a un sito community esistente, allo scopo di creare, modificare, pu
 
 Ad esempio, l&#39;immagine seguente mostra la console Siti community principale, che mostra le cartelle per due siti della community: [abilitare](/help/communities/getting-started-enablement.md) e [coinvolgere](/help/communities/getting-started.md):
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![site-console](assets/site-console.png)
 
 ## Creazione del sito {#site-creation}
 
@@ -128,7 +131,7 @@ Il pannello Progettazione contiene 2 pannelli secondari per selezionare il tema 
 
 ![sitetema](assets/sitetheme.png)
 
-Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per fornire al sito un design reattivo e flessibile. È possibile selezionare uno dei numerosi temi Bootstrap precaricati per definire lo stile del modello di sito community selezionato, oppure caricare un tema Bootstrap.
+Il framework utilizza l’Bootstrap [](https://twitterbootstrap.org/) Twitter per fornire al sito un design reattivo e flessibile. È possibile selezionare uno dei numerosi temi di Bootstrap precaricati per definire lo stile del modello di sito community selezionato oppure caricare un tema di Bootstrap.
 
 Quando è selezionato, il tema verrà sovrapposto con un segno di spunta blu opaco.
 
@@ -136,7 +139,7 @@ Dopo la pubblicazione del sito community, è possibile [modificare le proprietà
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![marchio del sito](assets/site-branding.png)
 
 Il marchio Community del sito è un&#39;immagine visualizzata come intestazione nella parte superiore di ogni pagina.
 
@@ -228,7 +231,7 @@ Lasciate deselezionato un sito community *privato* . Il valore predefinito è de
 
 #### TAGGING {#tagging}
 
-![chlimage_1-156](assets/chlimage_1-156.png)
+![assegnazione di tag al sito](assets/site-tagging.png)
 
 I tag che possono essere applicati al contenuto della community sono controllati selezionando Spazi dei nomi dei tag definiti in precedenza tramite la console [](/help/sites-administering/tags.md#tagging-console)Tagging.
 
@@ -262,7 +265,7 @@ La ricerca di membri della community è semplice grazie alla funzione di ricerca
 
 #### MODERATION {#moderation}
 
-![chlimage_1-157](assets/chlimage_1-157.png)
+![sito-moderazione](assets/site-moderation.png)
 
 L&#39;impostazione globale per la moderazione del contenuto generato dall&#39;utente (UGC) è controllata da queste impostazioni. I singoli componenti dispongono di impostazioni aggiuntive per controllare la moderazione.
 
@@ -276,14 +279,14 @@ L&#39;impostazione globale per la moderazione del contenuto generato dall&#39;ut
 
 #### ANALYTICS {#analytics}
 
-![chlimage_1-158](assets/chlimage_1-158.png)
+![site-analytics](assets/site-analytics.png)
 
 * **Abilita Analytics**
 
-   Disponibile solo se Adobe Analytics è stato [configurato](/help/communities/analytics.md) per le funzioni Community.
+   Disponibile solo se  Adobe Analytics è stato [configurato](/help/communities/analytics.md) per le funzioni Community.
 Il valore predefinito è deselezionato. Quando questa opzione è selezionata, viene visualizzato un menu di selezione aggiuntivo:
 
-![chlimage_1-159](assets/chlimage_1-159.png)
+![site-analytics-enabled](assets/site-analytics-enable.png)
 
 * **Riferimento framework configurazione Cloud**
 
@@ -292,13 +295,13 @@ Il valore predefinito è deselezionato. Quando questa opzione è selezionata, vi
 
 #### TRANSLATION {#translation}
 
-![chlimage_1-160](assets/chlimage_1-160.png)
+![traduzione in loco](assets/site-translation.png)
 
 * **Consenti traduzione automatica**
 
-   Se questa opzione è selezionata (il valore predefinito è deselezionato), la traduzione automatica è abilitata per l&#39;UGC all&#39;interno del sito. Ciò non influisce su altri contenuti, come il contenuto della pagina, anche se il sito è configurato come sito multilingue. Consultate [Traduzione di contenuto](/help/communities/translate-ugc.md) generato dall&#39;utente per informazioni sulla configurazione di un servizio di traduzione concesso in licenza per AEM Communities. Consultate [Traduzione di contenuti per siti](/help/sites-administering/translation.md) multilingue per una panoramica completa.
+   Se questa opzione è selezionata (il valore predefinito è deselezionato), la traduzione automatica è abilitata per l&#39;UGC all&#39;interno del sito. Ciò non influisce su altri contenuti, come il contenuto della pagina, anche se il sito è configurato come sito multilingue. Consultate [Traduzione di contenuto](/help/communities/translate-ugc.md) generato dall&#39;utente per informazioni sulla configurazione di un servizio di traduzione con licenza per  AEM Communities. Consultate [Traduzione di contenuti per siti](/help/sites-administering/translation.md) multilingue per una panoramica completa.
 
-![chlimage_1-161](assets/chlimage_1-161.png)
+![allow-machine-Translation](assets/allow-machine-translation.png)
 
 * **Attiva traduzione automatica per le lingue selezionate**
 
@@ -353,7 +356,7 @@ Il valore predefinito è *selezionato*.
 
 #### ENABLEMENT {#enablement}
 
-![chlimage_1-162](assets/chlimage_1-162.png)
+![abilitazione del sito](assets/site-enablement.png)
 
 Le `ENABLEMENT`impostazioni sono applicabili quando il modello di sito community scelto include la funzione [di](/help/communities/functions.md#assignments-function)assegnazione, disponibile quando le funzioni di abilitazione sono [configurate](/help/communities/enablement.md)e abilitate. Il modello di sito di riferimento che include la funzione assegnazioni è `Reference Structured Learning Site Template.`
 
@@ -378,25 +381,23 @@ Una volta creato il sito:
 * La disattivazione del modello di sito community non influisce sul sito community creato.
 * È possibile modificare la [STRUTTURA](#modify-structure) di un sito comunitario modificandone le proprietà.
 
-![chlimage_1-163](assets/chlimage_1-163.png)
+![create-site](assets/create-site1.png)
 
 Al termine del processo, la cartella del nuovo sito viene visualizzata nella console Siti community, da cui gli autori possono aggiungere contenuti di pagina o gli amministratori possono modificare le proprietà del sito.
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![edit-site-property](assets/modify-site-property.png)
 
 Per modificare un sito community, selezionatene la cartella per aprirlo:
 
-![siteactions-1](assets/siteactions-1.png)
+![site-project](assets/site-project.png)
 
 Quando passate il puntatore del mouse su un sito con un mouse o toccate una scheda del sito, vengono visualizzate icone che consentono di [modificare il sito in modalità](#authoring-site-content)di creazione, [aprire le proprietà del sito per modificarle](#modifying-site-properties), [pubblicare il sito](#publishing-the-site), [esportare il sito](#exporting-the-site)ed [eliminare il sito](#deleting-the-site).
 
 ## Creazione di contenuti del sito {#authoring-site-content}
 
-![chlimage_1-165](assets/chlimage_1-165.png)
+Il contenuto di un sito può essere creato con gli stessi strumenti di qualsiasi altro sito Web AEM. Per aprire il sito per l’authoring, selezionate l’ `Open Site` icona che compare quando passate il puntatore del mouse sul sito. Il sito verrà aperto in una nuova scheda in modo che la console Siti di Communities rimanga accessibile.
 
-I contenuti di un sito possono essere creati con gli stessi strumenti di qualsiasi altro sito Web AEM. Per aprire il sito per l’authoring, selezionate l’ `Open Site` icona che compare quando passate il puntatore del mouse sul sito. Il sito verrà aperto in una nuova scheda in modo che la console Siti di Communities rimanga accessibile.
-
-![chlimage_1-166](assets/chlimage_1-166.png)
+![site-content](assets/site-content.png)
 
 >[!NOTE]
 >
@@ -405,13 +406,13 @@ I contenuti di un sito possono essere creati con gli stessi strumenti di qualsia
 
 ## Modifica delle proprietà del sito {#modifying-site-properties}
 
-![chlimage_1-167](assets/chlimage_1-167.png)
+![edit-site](assets/edit-site.png)
 
 Le proprietà di un sito esistente, specificate durante il processo di creazione del sito, possono essere modificate selezionando l&#39; `Edit Site`icona visualizzata quando si passa il puntatore del mouse sul sito.
 
-`Details of the following properties match the descriptions provided in the` Sezione Creazione [del](#site-creation) sito.
+`Details of the following properties match the descriptions provided in the` [Sezione Creazione](#site-creation) sito.
 
-![chlimage_1-168](assets/chlimage_1-168.png)
+![edit-site-basicinfo](assets/modify-site-basicinfo.png)
 
 ### Modifica base {#modify-basic}
 
@@ -467,7 +468,7 @@ Ad esempio, la ridenominazione dell’URL non comporterà lo spostamento dell’
 
 #### Esempio: Aggiunta di una funzione catalogo a una struttura del sito community {#example-adding-a-catalog-function-to-a-community-site-structure}
 
-![chlimage_1-169](assets/chlimage_1-169.png)
+![add-catalog-site](assets/add-catalog-site.png)
 
 ### Modifica struttura {#modify-design}
 
@@ -503,11 +504,11 @@ Consultate la descrizione [ABILITAZIONE](#enablement) .
 
 Dopo aver creato o modificato un sito community, è possibile pubblicarlo (attivarlo) selezionando l&#39; `Publish Site` icona, visualizzata al passaggio del mouse sul sito.
 
-![chlimage_1-170](assets/chlimage_1-170.png)
+![sito di pubblicazione](assets/publish-site.png)
 
 Una volta che il sito è stato pubblicato correttamente, verrà visualizzata un&#39;indicazione.
 
-![chlimage_1-171](assets/chlimage_1-171.png)
+![site-published](assets/site-published.png)
 
 ### Pubblicazione con i gruppi nidificati {#publishing-with-nested-groups}
 
@@ -515,7 +516,7 @@ Dopo la pubblicazione di un sito community, è necessario pubblicare singolarmen
 
 ## Esportazione del sito {#exporting-the-site}
 
-![chlimage_1-172](assets/chlimage_1-172.png)
+![sito di esportazione](assets/export-site.png)
 
 Selezionate l&#39;icona di esportazione, al passaggio del mouse sul sito, per creare un pacchetto del sito della community che sia memorizzato in [package manager](/help/sites-administering/package-manager.md) e scaricato.
 
@@ -558,7 +559,7 @@ Per impostazione predefinita, un sito community si reindirizzerà a una pagina d
 
 Per eseguire correttamente il reindirizzamento, una volta che un sito è stato configurato e inviato per la pubblicazione, completare i seguenti passaggi per evitare che l&#39;autenticazione venga reindirizzata al sito della community:
 
-* In ogni istanza di pubblicazione AEM.
+* Su ogni istanza di pubblicazione AEM.
 * Effettuate l&#39;accesso con privilegi di amministratore.
 * Accedere alla console [](/help/sites-deploying/configuring-osgi.md)Web.
 
@@ -575,11 +576,11 @@ Per eseguire correttamente il reindirizzamento, una volta che un sito è stato c
 
 * Seleziona **Salva**.
 
-![chlimage_1-173](assets/chlimage_1-173.png)
+![errore di autenticazione](assets/auth-error.png)
 
 ### Reindirizzamento autenticazione test {#test-authentication-redirection}
 
-Nella stessa istanza di pubblicazione AEM configurata con una mappatura pagina di accesso per il sito della community:
+Nella stessa istanza di pubblicazione AEM configurata con una mappatura pagina di login per il sito della community:
 
 * Passate alla home page del sito community.
 
@@ -590,7 +591,7 @@ Nella stessa istanza di pubblicazione AEM configurata con una mappatura pagina d
 * Immettete ovviamente credenziali errate, ad esempio nome utente &quot;x&quot; e password &quot;x&quot;.
 * La pagina di accesso deve essere visualizzata con un errore di tipo &quot;login non valido&quot;.
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![test-authentication](assets/test-authentication.png)
 
 ## Accesso ai siti della community dalla console Siti principali {#accessing-community-sites-from-main-sites-console}
 
@@ -598,5 +599,7 @@ Dalla console di navigazione globale Siti, i siti della community si trovano nel
 
 Anche se è possibile accedere a un sito della comunità in questo modo, per compiti amministrativi, il sito della community è accessibile dalla console Siti della community.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![access-site](assets/access-site.png)
+
+
 
