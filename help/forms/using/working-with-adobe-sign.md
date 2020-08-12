@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
+source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
 workflow-type: tm+mt
-source-wordcount: '3643'
+source-wordcount: '3839'
 ht-degree: 0%
 
 ---
@@ -304,12 +304,16 @@ Ora, l&#39;esperienza di firma del modulo in è pronta. È possibile visualizzar
 
 ## Domande frequenti {#frequently-asked-questions}
 
+**D:** È possibile incorporare un modulo adattivo in un altro modulo adattivo. È possibile abilitare il modulo adattivo incorporato  Adobe Sign?
 **Ans:** No,  AEM Forms non supporta l&#39;uso di un modulo adattivo che incorpora un modulo adattivo abilitato per Adobe Sign  per la firma
 
+**D:** Quando si crea un modulo adattivo utilizzando il modello avanzato e lo si apre per la modifica, viene visualizzato il messaggio di errore &quot;Firma elettronica o Firma elettronica non sono configurati correttamente&quot;. viene visualizzato. Come risolvere il messaggio di errore?
 **Ans:** Il modulo adattivo creato utilizzando il modello avanzato è configurato per l&#39;utilizzo  Adobe Sign. Per risolvere l&#39;errore, creare e selezionare una configurazione cloud Adobe Sign  e configurare un firmatario Adobe Sign  per il modulo adattivo.
 
+**D:** È possibile utilizzare  tag di testo Adobe Sign in un componente di testo statico di un modulo adattivo?
 **Ans:** Sì, è possibile utilizzare i tag di testo in un componente di testo per aggiungere  campi Adobe Sign a un modulo adattivo abilitato per il [documento di registrazione](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (solo per il documento di registrazione generato automaticamente). Per informazioni sulla procedura e sulle regole per creare un tag di testo, consultate [Documentazione](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign. Inoltre, i moduli adattivi hanno un supporto limitato per i tag di testo. È possibile utilizzare i tag di testo per creare solo i campi supportati da [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) .
 
+**D:**  AEM Forms fornisce sia componenti per blocchi Adobe Sign che componenti per passaggi firma. Possono essere utilizzati simultaneamente in un modulo adattivo?
 **Ans:** È possibile utilizzare entrambi i componenti contemporaneamente in un modulo. Di seguito sono riportati alcuni suggerimenti per l&#39;utilizzo di questi componenti:
 
 **blocco Adobe Sign:** È possibile utilizzare  Adobe Sign Block per aggiungere  campi Adobe Sign ovunque nel modulo adattivo. Consente inoltre di assegnare campi specifici ai firmatari. Quando un modulo adattivo viene visualizzato in anteprima o pubblicato  blocco Adobe Sign non è visibile, per impostazione predefinita. Questi blocchi sono abilitati solo nel documento di firma. Nel documento di firma sono abilitati solo i campi assegnati a un firmatario.  blocco Adobe Sign può essere utilizzato con il primo e il successivo firmatario.
@@ -329,6 +333,14 @@ Ora, l&#39;esperienza di firma del modulo in è pronta. È possibile visualizzar
 * Se utilizzate più servizi  Adobe Sign Cloud, indicate l&#39;URL **[!UICONTROL di]** autenticazione di tutti i servizi allo stesso **[!UICONTROL Adobe Sign Share]**.
 
 * Utilizza indirizzi e-mail separati per configurare  account Adobe Sign e per il primo firmatario e il singolo firmatario. L&#39;indirizzo e-mail del primo firmatario o dell&#39;unico firmatario (nel caso del singolo firmatario) non può essere identico a  account Adobe Sign utilizzato per configurare i servizi cloud AEM.
+
+
+**Problema**:  Adobe Sign è configurato per un modulo adattivo, il flusso di lavoro configurato con l&#39;opzione Richiama Forms Workflow non viene avviato.
+
+**Risoluzione**
+
+* Se si utilizza  Adobe Sign senza il passaggio Firma o se il modulo richiede la firma di più persone,  server AEM Forms attende che il pianificatore confermi che tutte le persone hanno firmato il modulo. L&#39;utilità di pianificazione invia il modulo adattivo solo dopo che l&#39;utente ha completato la firma e il flusso di lavoro inizia solo dopo l&#39;invio corretto del modulo adattivo. È possibile abbreviare l&#39;intervallo del modulo di [pianificazione](adobe-sign-integration-adaptive-forms.md) per controllare lo stato della firma del modulo a intervalli rapidi e per velocizzare l&#39;invio.
+
 
 ## Related Articles {#related-articles}
 
