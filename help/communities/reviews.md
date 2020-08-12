@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 4%
 
 ---
 
@@ -32,19 +35,19 @@ Per aggiungere un `Reviews` componente a una pagina in modalità di creazione, u
 
 Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
 
-Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Reviews`componente.
+Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Reviews` componente.
 
-![chlimage_1-340](assets/chlimage_1-340.png)
+![create-review](assets/create-review.png)
 
 ## Configurazione delle revisioni {#configuring-reviews}
 
 Selezionate il `Reviews` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![configure-new](assets/configure-new.png)
 
 Nella scheda Valutazioni **** consentite, specificate l&#39;elenco completo delle valutazioni da visualizzare ai membri. Il primo rating dovrebbe essere un rating generale, in quanto è il rating che fornisce il rating medio per il `Review Summary (Display)` componente. Alle due valutazioni successive nella configurazione predefinita dovrebbe essere assegnato un titolo diverso, diverso da &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
 
-![chlimage_1-342](assets/chlimage_1-342.png)
+![abilitazione](assets/configure-review1.png)
 
 * **[!UICONTROL Classificazioni consentite]**
 
@@ -58,7 +61,7 @@ Nella scheda Valutazioni **** richieste, immettere nuovamente gli elementi dall&
 
 Nel sito Web, le valutazioni richieste sono contrassegnate da un asterisco. Se un elemento è obbligatorio e lasciato senza contrassegno, viene visualizzato un messaggio al membro e l&#39;invio viene negato finché non vengono contrassegnate tutte le valutazioni richieste.
 
-![chlimage_1-343](assets/chlimage_1-343.png)
+![valutazione richiesta](assets/configure-review2.png)
 
 * **[!UICONTROL Classificazioni richieste]**
 
@@ -75,7 +78,7 @@ Nel sito Web, le valutazioni richieste sono contrassegnate da un asterisco. Se u
 
 Nella scheda **[!UICONTROL Recensioni]** , specificare le modalità di gestione delle revisioni.
 
-![chlimage_1-344](assets/chlimage_1-344.png)
+![recensioni](assets/configure-review3.png)
 
 * **[!UICONTROL Consenti risposte]**
 
@@ -111,7 +114,7 @@ Nella scheda **[!UICONTROL Recensioni]** , specificare le modalità di gestione 
 
 Nella scheda Moderazione **** utente, specificate le modalità di gestione delle revisioni pubblicate. Per ulteriori informazioni, consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
 
-![chlimage_1-345](assets/chlimage_1-345.png)
+![moderazione dell&#39;utente](assets/configure-review4.png)
 
 * **[!UICONTROL Premoderazione]**
 
@@ -161,7 +164,7 @@ Per le informazioni necessarie, consulta [Community Components Basics](basics.md
 
 Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Reviews Summary (Display)`componente.
 
-![chlimage_1-346](assets/chlimage_1-346.png)
+![review-summary](assets/configure-review5.png)
 
 >[!NOTE]
 >
@@ -172,15 +175,15 @@ Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-fo
 
 Selezionate il `Reviews Summary (Display)` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![configure](assets/configure-new.png)
 
 Nella scheda Riepilogo **** revisione
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![review-summary](assets/configure-review6.png)
 
 * `Review Path`
 
-   immettere o individuare l&#39;istanza inserita del `reviews`componente per riepilogare, ad esempio, se aggiunta alla pagina Web del sito [Geometrixx Engage,](getting-started.md) il percorso sarebbe:
+   immettete o individuate l’istanza inserita del `reviews`componente per riepilogare, ad esempio, se aggiunta alla pagina Web del sito di [Geometrixx,](getting-started.md) il percorso sarà:
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -196,9 +199,9 @@ Modificando il Tipo risorsa commento, il sistema di commenti non genererà più 
 
 Una volta noti i tipi di risorse personalizzati, immettete la modalità [](../../help/sites-authoring/default-components-designmode.md) Progettazione e fate doppio clic sul `Comments` componente inserito per aprire una finestra di dialogo con una scheda aggiuntiva.
 
-Nella scheda Tipi **[!UICONTROL di]** risorse, specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting`componenti:
+Nella scheda Tipi **[!UICONTROL di]** risorse, specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting` componenti:
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![votazione per commenti](assets/configure-review7.png)
 
 * **[!UICONTROL Tipo risorsa commento]**
 
@@ -224,12 +227,12 @@ Quando l’utente che ha effettuato l’accesso dispone di privilegi di moderato
 
 ### Membri {#members}
 
-Quando il visitatore del sito ha effettuato l&#39;accesso, a seconda della configurazione, può
+Quando il visitatore del sito ha effettuato l’accesso, a seconda della configurazione, può:
 
-* Pubblica una nuova revisione.
-* Modificate la propria revisione.
-* Eliminate la loro revisione.
-* Contrassegnare i commenti di revisione di altri utenti.
+* Pubblicare una nuova revisione
+* Modifica la propria revisione
+* Elimina la propria revisione
+* Contrassegnare i commenti di revisione di altri utenti
 
 È consentita una sola valutazione per membro. Il membro può cambiare la propria valutazione in qualsiasi momento.
 
