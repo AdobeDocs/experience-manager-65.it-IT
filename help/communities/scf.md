@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '1505'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ L&#39;API SocialComponent può essere estesa per fornire i dati richiesti da un 
 
 ### Rendering delle pagine per il client {#how-pages-are-rendered-for-client}
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![rendering scf-pagina](assets/scf-overview.png)
 
 ### Personalizzazione ed estensione dei componenti {#component-customization-and-extension}
 
@@ -79,9 +82,9 @@ Per informazioni sull&#39;utilizzo di UGC, visitare [Panoramica](srp.md) sui pro
 
 L&#39;API HTTP supporta la facilità di personalizzazione e la scelta delle piattaforme client per le app PhoneGap, le app native e altre integrazioni e mashup. Inoltre, l&#39;API HTTP consente a un sito community di essere eseguito come servizio senza client, in modo che i componenti framework possano essere integrati in qualsiasi pagina Web creata su qualsiasi tecnologia.
 
-### API HTTP - Richieste GET {#http-api-get-requests}
+### API HTTP - Richieste di GET {#http-api-get-requests}
 
-Per ogni componente Social, il framework fornisce un endpoint API basato su HTTP. L&#39;accesso all&#39;endpoint viene effettuato inviando una richiesta GET alla risorsa con un selettore + estensione &#39;.social.json&#39;. Utilizzando Sling, la richiesta viene trasmessa al `DefaultSocialGetServlet`.
+Per ogni componente Social, il framework fornisce un endpoint API basato su HTTP. L&#39;accesso all&#39;endpoint viene effettuato inviando una richiesta di GET alla risorsa con un selettore + estensione &#39;.social.json&#39;. Utilizzando Sling, la richiesta viene trasmessa al `DefaultSocialGetServlet`.
 
 **`DefaultSocialGetServlet`**
 
@@ -93,21 +96,21 @@ Per ogni componente Social, il framework fornisce un endpoint API basato su HTTP
 
 **`GET Request`**
 
-Un servlet GET predefinito ascolta le richieste .social.json alle quali SocialComponent risponde con JSON personalizzabile.
+Un servlet di GET predefinito ascolta le richieste .social.json alle quali SocialComponent risponde con JSON personalizzabile.
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![scf-framework](assets/scf-framework.png)
 
 ### API HTTP - Richieste POST {#http-api-post-requests}
 
-Oltre alle operazioni GET (lettura), il framework definisce un pattern di endpoint per abilitare altre operazioni su un componente, tra cui Crea, Aggiorna ed Elimina. Tali endpoint sono API HTTP che accettano l&#39;input e rispondono con codici di stato HTTP o con un oggetto di risposta JSON.
+Oltre alle operazioni di GET (lettura), il framework definisce un pattern di endpoint per abilitare altre operazioni su un componente, tra cui Crea, Aggiorna ed Elimina. Tali endpoint sono API HTTP che accettano l&#39;input e rispondono con codici di stato HTTP o con un oggetto di risposta JSON.
 
 Questo modello di endpoint framework rende le operazioni CUD estensibili, riutilizzabili e testabili.
 
 **`POST Request`**
 
-È disponibile un&#39;operazione Sling POST:per ogni operazione SocialComponent. Il codice business logic e di manutenzione di ciascuna operazione è incluso in un servizio OperationService accessibile tramite l&#39;API HTTP o da un&#39;altra ubicazione come servizio OSGi. Sono disponibili blocchi che supportano le estensioni di funzionamento collegabili per le azioni prima/dopo.
+Esiste un&#39;operazione Sling POST:operation per ogni operazione SocialComponent. Il codice business logic e di manutenzione di ciascuna operazione è incluso in un servizio OperationService accessibile tramite l&#39;API HTTP o da un&#39;altra ubicazione come servizio OSGi. Sono disponibili blocchi che supportano le estensioni di funzionamento collegabili per le azioni prima/dopo.
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![scf-post-richiesta](assets/scf-post-request.png)
 
 ### Provider di risorse di storage (SRP) {#storage-resource-provider-srp}
 
@@ -129,7 +132,7 @@ Gli script HBS sono semplici, senza logica, compilati sia sul server che sul cli
 
 Il framework fornisce diversi [strumenti](handlebars-helpers.md) Handlebars utili per lo sviluppo di SocialComponents.
 
-Sul server, quando Sling risolve una richiesta GET, identifica lo script che verrà utilizzato per rispondere alla richiesta. Se lo script è un modello HBS (.hbs), Sling delegherà la richiesta al motore Handlebars. Il motore handlebars otterrà il SocialComponent dalla SocialComponentFactory appropriata, creerà un contesto ed eseguirà il rendering del codice HTML.
+Sul server, quando Sling risolve una richiesta di GET, identifica lo script che verrà utilizzato per rispondere alla richiesta. Se lo script è un modello HBS (.hbs), Sling delegherà la richiesta al motore Handlebars. Il motore handlebars otterrà il SocialComponent dalla SocialComponentFactory appropriata, creerà un contesto ed eseguirà il rendering del codice HTML.
 
 ### Nessuna limitazione di accesso {#no-access-restriction}
 
@@ -157,7 +160,7 @@ L’inclusione di un componente fa riferimento al processo di aggiunta di un rif
 
 A partire da AEM 6.1, quando un componente viene incluso dinamicamente invece che aggiunto, è possibile modificare le proprietà del componente nel modo *design *authoring.
 
-Solo alcuni dei componenti di AEM Communities possono essere inclusi dinamicamente. Sono:
+È possibile includere in modo dinamico solo alcuni dei  componenti AEM Communities. Sono:
 
 * [Commenti](essentials-comments.md)
 * [Valutazione](rating-basics.md)
