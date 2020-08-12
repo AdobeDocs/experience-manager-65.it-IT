@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +35,7 @@ Nell’ambiente di authoring, per accedere alla console Siti community:
 
 Questa console visualizza i modelli da cui è possibile creare un sito [](sites-console.md) community e consente di creare nuovi modelli di sito.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![site-template](assets/site-template.png)
 
 ## Crea modello sito {#create-site-template}
 
@@ -42,7 +45,7 @@ Viene visualizzato il pannello Editor sito che contiene 3 sottopannelli:
 
 ### Basic info {#basic-info}
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![site-template-basicinfo](assets/site-template-basicinfo.png)
 
 Nel pannello Informazioni di base, un nome, una descrizione e se il modello è abilitato o disabilitato sono configurati:
 
@@ -60,13 +63,13 @@ Nel pannello Informazioni di base, un nome, una descrizione e se il modello è a
 
 ### Miniatura  {#thumbnail}
 
-![chlimage_1-20](assets/chlimage_1-20.png)
+![site-thumbnail](assets/site-thumbnail.png)
 
 (Facoltativo) Selezionate l’icona Carica immagine per visualizzare una miniatura con il nome e la descrizione per gli autori dei siti della community.
 
 ### Struttura {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![struttura del sito](assets/site-structure.png)
 
 Per aggiungere funzioni per la community, trascinate dal lato destro a sinistra nell&#39;ordine in cui dovrebbero essere visualizzati i collegamenti del menu del sito. Gli stili verranno applicati al modello durante la creazione del sito.
 
@@ -83,7 +86,7 @@ La funzione page fornisce una pagina vuota. La funzione Groups (Gruppi) consente
 >Qualsiasi altra funzione, come la funzione [](functions.md#page-function)page, deve essere inclusa ed elencata per prima.
 
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![site-editor](assets/site-editor.png)
 
 ### Modelli di gruppo per la funzione Gruppi {#group-templates-for-groups-function}
 
@@ -94,11 +97,11 @@ Quando si inserisce una funzione di gruppo nel modello di sito, la configurazion
 >La funzione Groups *non* deve essere né la *prima né l&#39;unica* funzione nella struttura del sito.
 
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![funzioni del sito](assets/site-functions.png)
 
 Selezionando due o più modelli di gruppo community, l&#39;amministratore del gruppo può scegliere se creare effettivamente un nuovo gruppo nella community.
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![site-function](assets/site-functions1.png)
 
 ## Modifica modello sito{#edit-site-template}
 
