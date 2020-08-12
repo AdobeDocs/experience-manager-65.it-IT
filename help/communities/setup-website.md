@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 1%
 
 ---
 
@@ -40,6 +43,7 @@ Il codice riportato in questa esercitazione si basa sul fatto che il nome della 
 >* I nomi visualizzati in CRXDE sono nomi di nodi che costituiscono il percorso al contenuto indirizzabile.
 >* I nomi dei nodi possono contenere spazi, ma se utilizzati in un URI, lo spazio deve essere codificato come &#39;%20&#39; o &#39;+&#39;.
 >* I nomi dei nodi possono contenere trattini e caratteri di sottolineatura, ma devono essere codificati se vi viene fatto riferimento come nome di pacchetto all&#39;interno di un file Java. Sia i trattini che i caratteri di sottolineatura sono preceduti dal relativo valore Unicode:
+
    >
    >   
    * hyphen diventa &#39;_002d&#39;
@@ -60,28 +64,29 @@ La directory /apps è protetta e non accessibile al pubblico così come le direc
    1. Fare clic con il pulsante destro del mouse su **[!UICONTROL Crea]**... oppure fai clic su **[!UICONTROL Crea...]** menu.
    1. Seleziona **[!UICONTROL Crea cartella...]**.
    1. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , immettete `an-scf-sandbox`.
-   1. Fai clic su **[!UICONTROL OK]**. 
+   1. Fai clic su **[!UICONTROL OK]**.
 
 1. Crea sottocartella **[!UICONTROL componenti]** .
 
    1. Selezionate la `/apps/an-scf-sandbox` cartella.
    1. Fate clic su **[!UICONTROL Crea > Crea cartella]**.
    1. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , immettete **[!UICONTROL i componenti]**.
-   1. Fai clic su **[!UICONTROL OK]**. 
+   1. Fai clic su **[!UICONTROL OK]**.
 
 1. Creare **[!UICONTROL la sottocartella dei modelli]** .
 
    1. Selezionate la `/apps/an-scf-sandbox` cartella.
    1. Fate clic su **[!UICONTROL Crea > Crea cartella]**.
    1. Nella finestra di dialogo **[!UICONTROL Crea cartella]** , immettete **[!UICONTROL i modelli]**.
-   1. Fai clic su **[!UICONTROL OK]**. 
+   1. Fai clic su **[!UICONTROL OK]**.
    1. Selezionate di nuovo `/apps/an-scf-sandbox`.
    1. Selezionate **[!UICONTROL Salva tutto]**.
+
    Come per qualsiasi processo di modifica, salvate spesso. Se si verificano problemi durante l’immissione dei dati, è possibile che l’accesso sia scaduto o che sia necessario salvare le modifiche precedenti.
 
-1. La struttura nel riquadro di esplorazione di CRXDE Lite dovrebbe ora essere simile a questa:
+1. La struttura nel riquadro di esplorazione del CRXDE Lite deve ora essere simile alla seguente:
 
-   ![chlimage_1-44](assets/chlimage_1-44.png)
+   ![crxde-template](assets/crxde-template.png)
 
 ## Configurare la directory di progettazione (/etc/designs) {#setup-the-design-directory-etc-designs}
 
@@ -89,26 +94,27 @@ La directory /etc/designs contiene le immagini, gli script e i fogli di stile da
 
 1. Per utilizzare lo strumento Designer nell&#39;interfaccia classica, accedere a [https://&lt;server>:&lt;porta>/miscadmin](http://localhost:4502/miscadmin).
 
-   Nota: Se si utilizza CRXDE Lite per creare un nodo di tipo `cq:Page`, i controlli di accesso e la replica non verranno impostati sulle impostazioni predefinite per una pagina.
+   Nota: Se si utilizza CRXDE Lite per creare un nodo di tipo `cq:Page`, i controlli di accesso e la replica non vengono impostati sulle impostazioni predefinite per una pagina.
 
 1. Nel riquadro di esplorazione, selezionare la cartella **[!UICONTROL Designer]** , quindi fare clic su **[!UICONTROL Nuovo]** > **[!UICONTROL Nuova pagina]**.
 
    Invio:
 
-   * Titolo: Sandbox **[!UICONTROL SCF]**
-   * Nome: sandbox **[!UICONTROL an-scf]**
+   * Titolo: **[!UICONTROL Un sandbox SCF]**
+   * Nome: **[!UICONTROL an-scf-sandbox]**
    * Seleziona modello pagina **[!UICONTROL di progettazione]**
+
    Fai clic su **[!UICONTROL Crea]**.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   ![design-template](assets/design-template.png)
 
 1. Aggiornate il riquadro di esplorazione se la cartella &quot;Una sandbox SCF&quot; non viene visualizzata.
 
-1. Tornate a CRXDE Lite (http:// localhost:4502/crx/de) ed espandete /etc/designs per visualizzare il nodo denominato &quot;an-scf-sandbox&quot;.
+1. Tornate al CRXDE Lite (http:// localhost:4502/crx/de) ed espandete /etc/designs per visualizzare il nodo denominato &quot;an-scf-sandbox&quot;.
 
    Nel riquadro inferiore destro di CRXDE, è possibile visualizzare la scheda Proprietà, la scheda Controllo accesso e la scheda Replica per vedere cosa è stato definito utilizzando il modello di pagina di progettazione.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![crxde-configure-template](assets/crxde-configure-template.png)
 
 ## Configurare la directory contenuto (/content) {#setup-the-content-directory-content}
 
