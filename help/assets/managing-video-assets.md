@@ -3,7 +3,7 @@ title: Consente di gestire le risorse video in [!DNL Adobe Experience Manager].
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Il formato video è una parte fondamentale delle risorse digitali di un&#39;organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzionalità mature per gestire l’intero ciclo di vita delle risorse video dopo la loro creazione.
 
-Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. Inoltre, se disponete di una licenza per l’utilizzo [!DNL Dynamic Media], consultate la documentazione [video](/help/assets/video.md)Dynamic Media.
+Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. Inoltre, se disponete di una licenza per l’utilizzo [!DNL Dynamic Media], consultate la documentazione [video](/help/assets/video.md)Contenuti multimediali dinamici.
 
 ## Caricare e visualizzare in anteprima le risorse video {#upload-and-preview-video-assets}
 
@@ -36,7 +36,7 @@ Per impostazione predefinita, [!DNL Assets] non consente di caricare risorse mag
 Oltre alla [!DNL Assets] configurazione, modificate le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
 * Aumenta l’ora di scadenza del token. Consulta [!UICONTROL servlet] CSRF Granite Adobe nella console Web all’indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumentare la configurazione `receiveTimeout` in Dispatcher. Per ulteriori informazioni, consultate [Experience Manager configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Dispatcher.
+* Aumentare la configurazione `receiveTimeout` del dispatcher. Per ulteriori informazioni, consultate [configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)del dispatcher di Experienci Manager.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Per configurare un limite di dimensione file più elevato, eseguire i seguenti p
 1. Nella pagina del flusso di lavoro, fate doppio clic sul componente **[!UICONTROL Dynamic Media Video Service Process]** .
 1. Nella finestra di dialogo [!UICONTROL Step Properties (Proprietà passo)], nella scheda **[!UICONTROL Common (Comune)]**, espandi **Impostazioni avanzate**.
 1. In the **[!UICONTROL Timeout]** field, specify a value of `18000`, then click **[!UICONTROL OK]** to return to the **[!UICONTROL Dynamic Media Encode Video]** workflow page.
-1. Nella parte superiore della pagina, sotto il titolo della pagina [!UICONTROL Dynamic Media Encode Video] , fate clic su **[!UICONTROL Salva]**.
+1. Nella parte superiore della pagina, sotto il titolo della pagina [!UICONTROL Codifica video] elemento multimediale dinamico, fate clic su **[!UICONTROL Salva]**.
 
 ## Pubblicare risorse video {#publish-video-assets}
 
@@ -79,7 +79,7 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 
    Per uscire dalla procedura guidata di annotazione, fate clic su **[!UICONTROL Chiudi]**.
 
-1. Individua un punto specifico del video, specifica il tempo in secondi nel campo di **testo**, infine fai clic su **Jump (Passa a)**. Ad esempio, per saltare i primi 10 secondi del video, inserisci 20 nel campo di testo.
+1. Individua un punto specifico del video, specifica il tempo in secondi nel campo di **testo**, infine fai clic su **Jump (Passa a)**. Ad esempio, per saltare i primi 20 secondi del video, inserisci 20 nel campo di testo.
 
    ![Cercare un&#39;ora in un video per saltare per secondi specificati](assets/seek-in-video.png)
 
