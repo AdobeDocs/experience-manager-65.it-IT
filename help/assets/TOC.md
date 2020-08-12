@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guida utente  Experience Manager 6.5 Assets
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 41%
+source-wordcount: '635'
+ht-degree: 40%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 41%
    + [Utilizzo di Dynamic Media](dynamic-media.md)
    + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
-   + [Risoluzione dei problemi Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
-   + [Migrazione da Dynamic Media - Modalità ibrida alla modalità Dynamic Media - S7](migrate-from-hybrid-to-dms7.md)
+   + [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
+   + [Migrazione da Dynamic Media - Modalità ibrida a Dynamic Media - Modalità S7](migrate-from-hybrid-to-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestione dei predefiniti per i visualizzatori Dynamic Media](managing-viewer-presets.md)
@@ -72,7 +72,7 @@ ht-degree: 41%
    + [Collegamento di URL all’applicazione web](linking-urls-to-yourwebapplication.md)
    + [Utilizzo di set di regole per la trasformazione degli URL](using-rulesets-to-transform-urls.md)
    + [Pubblicazione delle risorse Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Annullare la validità di contenuti CDN memorizzati nella cache](invalidate-cdn-cached-content.md)
+   + [Annullamento della validità della cache CDN tramite Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installazione di Feature Pack 18912 per la migrazione di massa delle risorse](bulk-ingest-migrate.md)
    + [Utilizzo dei selettori](working-with-selectors.md)
 + Estendi risorse {#extending}
