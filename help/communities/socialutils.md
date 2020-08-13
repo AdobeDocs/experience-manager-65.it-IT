@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 1429a099288f038510cb0a194fb55632297ef371
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 Il pacchetto `com.adobe.cq.social.ugcbase.SocialUtils` è stato dichiarato obsoleto in AEM 6.1.
 
-Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei metodi SocialUtils.
+Nelle tabelle seguenti sono elencati i metodi da utilizzare al posto dei `SocialUtils` metodi.
 
-## Pacchetto SocialResourceUtilities {#socialresourceutilities-package}
+## Pacchetto SocialResourceUtilities  {#socialresourceutilities-package}
 
 | Metodi in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
