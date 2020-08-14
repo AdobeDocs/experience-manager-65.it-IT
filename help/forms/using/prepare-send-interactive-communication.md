@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 4c4a5a15e9cbb5cc22bc5999fb40f1d6db3bb091
+source-git-commit: 5bbafd9006b04d761ffab218e8480c1e94903bb6
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Durante la preparazione della comunicazione interattiva tramite l&#39;interfacci
 
 ## Preparazione della comunicazione interattiva tramite l’interfaccia utente dell’agente {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Selezionare **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Selezionate **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Selezionate la comunicazione interattiva appropriata e toccate **[!UICONTROL Apri interfaccia utente]** agente.
 
    >[!NOTE]
@@ -175,13 +175,18 @@ L&#39;interfaccia utente dell&#39;agente supporta 210 caratteri speciali. L&#39;
 
 È possibile utilizzare l&#39;interfaccia utente agente per salvare una o più bozze per ogni comunicazione interattiva e recuperare la bozza in un secondo momento per continuare a lavorarci. È possibile specificare un nome diverso per ciascuna bozza per identificarla.
 
-Adobe consiglia di eseguire queste istruzioni in sequenza per salvare correttamente una comunicazione interattiva come bozza.
+ Adobe consiglia di eseguire queste istruzioni in sequenza per salvare correttamente una comunicazione interattiva come bozza.
 
 ### Abilitare la funzione Salva come bozza {#before-save-as-draft}
 
 Per impostazione predefinita, la funzione Salva come bozza non è abilitata. Per attivare la funzione, effettuate le seguenti operazioni:
 
-1. Implementare l&#39;interfaccia [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). L&#39;SPI consente di salvare la versione bozza della comunicazione interattiva nel database con un ID bozza come identificatore univoco.
+1. Implementare l&#39;interfaccia [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Service Provider Interface (SPI).
+
+   L&#39;SPI consente di salvare la versione bozza della comunicazione interattiva nel database con un ID bozza come identificatore univoco. Queste istruzioni presuppongono di avere già una conoscenza su come creare un bundle OSGi utilizzando un progetto Maven.
+
+   Per un esempio di implementazione SPI, consultate [Esempio di implementazione](#sample-ccrDocumentInstance-spi)SPI di ccrDocumentInstance.
+1. Aprite `http://<hostname>:<port>/ system/console/bundles` e toccate **[!UICONTROL Installa/Aggiorna]** per caricare il bundle OSGi. Verificate che lo stato del pacchetto caricato sia **Attivo**. Riavviate il server se lo stato del pacchetto non è **Attivo**.
 1. Passa a `https://'[server]:[port]'/system/console/configMgr`.
 1. Toccate **[!UICONTROL Crea configurazione]** corrispondenza.
 1. Selezionate **[!UICONTROL Abilita salvataggio con CCRDocumentInstanceService]** e toccate **[!UICONTROL Salva]**.
@@ -190,7 +195,7 @@ Per impostazione predefinita, la funzione Salva come bozza non è abilitata. Per
 
 Per salvare una comunicazione interattiva come bozza, effettuate le seguenti operazioni:
 
-1. Selezionare una comunicazione interattiva in Forms Manager e toccare **[!UICONTROL Apri interfaccia utente]** agente.
+1. Selezionate una comunicazione interattiva in Forms Manager e toccate **[!UICONTROL Apri interfaccia utente]** agente.
 
 1. Apportate le modifiche necessarie nell&#39;interfaccia utente dell&#39;agente e toccate **[!UICONTROL Salva come bozza]**.
 
@@ -209,3 +214,233 @@ Dopo aver salvato una comunicazione interattiva come bozza, potete recuperarla p
 >[!NOTE]
 >
 >Se dopo il salvataggio come bozza apportate delle modifiche alla comunicazione interattiva, la versione bozza non viene aperta.
+
+### Esempio di implementazione SPI di ccrDocumentInstance {#sample-ccrDocumentInstance-spi}
+
+Implementate lo `ccrDocumentInstance` SPI per salvare una comunicazione interattiva come bozza. Esempio di implementazione dell’ `ccrDocumentInstance` SPI.
+
+```javascript
+package Implementation;
+
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.exception.CCRDocumentException;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.model.CCRDocumentInstance;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.services.CCRDocumentInstanceService;
+import org.apache.commons.lang3.StringUtils;
+import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.*;
+
+
+@Component(service = CCRDocumentInstanceService.class, immediate = true)
+public class CCRDraftService implements CCRDocumentInstanceService {
+
+ private static final Logger logger = LoggerFactory.getLogger(CCRDraftService.class);
+
+ private HashMap<String, Object> draftDataMap = new HashMap<>();
+
+ @Override
+ public String save(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", ccrDocumentInstance.getName());
+         if (!CCRDocumentInstance.Status.SUBMIT.equals(ccrDocumentInstance.getStatus())) {
+             ccrDocumentInstance = mySQLDataBaseServiceCRUD(ccrDocumentInstance,null, "SAVE");
+         }
+     } else {
+         logger.error("Could not save data as draft name is empty");
+     }
+     return ccrDocumentInstance.getId();
+ }
+
+ @Override
+ public void update(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", documentInstanceName);
+         mySQLDataBaseServiceCRUD(ccrDocumentInstance, ccrDocumentInstance.getId(), "UPDATE");
+     } else {
+         logger.error("Could not save data as draft Name is empty");
+     }
+ }
+
+ @Override
+ public CCRDocumentInstance get(String id) throws CCRDocumentException {
+     CCRDocumentInstance cCRDocumentInstance;
+     if (StringUtils.isEmpty(id)) {
+         logger.error("Could not retrieve data as draftId is empty");
+         cCRDocumentInstance = null;
+     } else {
+         cCRDocumentInstance = mySQLDataBaseServiceCRUD(null, id,"GET");
+     }
+     return cCRDocumentInstance;
+ }
+
+ @Override
+ public List<CCRDocumentInstance> getAll(String userId, Date creationTime, Date updateTime,
+                                         Map<String, Object> optionsParams) throws CCRDocumentException {
+     List<CCRDocumentInstance> ccrDocumentInstancesList = new ArrayList<>();
+
+     HashMap<String, Object> allSavedDraft = mySQLGetALLData();
+     for (String key : allSavedDraft.keySet()) {
+         ccrDocumentInstancesList.add((CCRDocumentInstance) allSavedDraft.get(key));
+     }
+     return ccrDocumentInstancesList;
+ }
+
+ //The APIs call the service in the database using the following section.
+ private CCRDocumentInstance mySQLDataBaseServiceCRUD(CCRDocumentInstance ccrDocumentInstance,String draftId, String method){
+     if(method.equals("SAVE")){
+
+         String autoGenerateId = draftDataMap.size() + 1 +"";
+         ccrDocumentInstance.setId(autoGenerateId);
+         draftDataMap.put(autoGenerateId, ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if (method.equals("UPDATE")){
+
+         draftDataMap.put(ccrDocumentInstance.getId(), ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if(method.equals("GET")){
+
+         return (CCRDocumentInstance) draftDataMap.get(draftId);
+
+     }
+     return null;
+ }
+
+ private HashMap<String, Object> mySQLGetALLData(){
+     return draftDataMap;
+ }
+}
+```
+
+Le `save`operazioni, `update``get`e `getAll` le operazioni richiamano il servizio di database per salvare una comunicazione interattiva come bozza, aggiornare una comunicazione interattiva, recuperare i dati dal database e recuperare i dati per tutte le comunicazioni interattive disponibili nel database. Questo esempio utilizza `mySQLDataBaseServiceCRUD` come nome del servizio di database.
+
+La tabella seguente illustra l’implementazione `ccrDocumentInstance` SPI di esempio. Viene illustrato come le `save`, `update`, `get`e `getAll` le operazioni chiamano il servizio di database nell&#39;implementazione di esempio.
+
+<table> 
+ <tbody>
+ <tr>
+  <td><p><strong>Operazione</strong></p></td>
+  <td><p><strong>Esempi di servizi di database</strong></p></td> 
+   </tr>
+  <tr>
+   <td><p>Potete creare una bozza per una comunicazione interattiva o inviarla direttamente. L'API per l'operazione di salvataggio verifica se la comunicazione interattiva viene inviata come bozza e include un nome bozza. L'API chiama quindi il servizio mySQLDataBaseServiceCRUD con il metodo Save (Salva) come metodo di input.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
+   <td><p>Il servizio mySQLDataBaseServiceCRUD verifica il metodo Save come metodo di input e genera un ID bozza generato automaticamente e lo restituisce a AEM. La logica per generare un ID bozza può variare in base al database.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   </tr>
+  <tr>
+   <td><p>L'API per l'operazione di aggiornamento recupera lo stato della bozza di comunicazione interattiva e verifica se la comunicazione interattiva include un nome bozza. L'API chiama il servizio mySQLDataBaseServiceCRUD per aggiornare tale stato nel database.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>Il servizio mySQLDataBaseServiceCRUD verifica l'aggiornamento come metodo di input e salva lo stato della bozza di comunicazione interattiva nel database.</br></p><img src="assets/update-operation-service.png"/></td>
+   </tr>
+   <tr>
+   <td><p>L'API per l'operazione get verifica se la comunicazione interattiva include un ID bozza. L'API chiama quindi il servizio mySQLDataBaseServiceCRUD con Get come metodo di input per recuperare i dati per la comunicazione interattiva.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>Il servizio mySQLDataBaseServiceCRUD verifica Get come metodo di input e recupera i dati per la comunicazione interattiva in base all'ID bozza.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   </tr>
+   <tr>
+   <td><p>L'API per l'operazione getAll chiama il servizio mySQLGetALLData per recuperare i dati per tutte le comunicazioni interattive salvate nel database.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>Il servizio mySQLGetALLData recupera i dati per tutte le comunicazioni interattive salvate nel database.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   </tr>
+  </tbody>
+</table>
+
+Di seguito è riportato un esempio del `pom.xml` file che fa parte dell&#39;implementazione:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.adobe.livecycle</groupId>
+    <artifactId>draft-sample</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+
+    <name>Interact</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.aemfd</groupId>
+            <artifactId>aemfd-client-sdk</artifactId>
+            <version>6.0.122</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D D E F I N I T I O N -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.3.0</version>
+                <extensions>true</extensions>
+                <executions>
+                    <!--Configure extra execution of 'manifest' in process-classes phase to make sure SCR metadata is generated before unit test runs-->
+                    <execution>
+                        <id>scr-metadata</id>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <exportScr>true</exportScr>
+                    <instructions>
+                        <!-- Enable processing of OSGI DS component annotations -->
+                        <_dsannotations>*</_dsannotations>
+                        <!-- Enable processing of OSGI metatype annotations -->
+                        <_metatypeannotations>*</_metatypeannotations>
+                        <Bundle-SymbolicName>${project.groupId}-${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>autoInstall</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+```
+
+>[!NOTE]
+>
+>Assicurarsi di aggiornare la `aemfd-client-sdk` dipendenza a 6.0.122 nel `pom.xml` file.
