@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
+source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -334,6 +334,7 @@ Ora, l&#39;esperienza di firma del modulo in è pronta. È possibile visualizzar
 
 * Utilizza indirizzi e-mail separati per configurare  account Adobe Sign e per il primo firmatario e il singolo firmatario. L&#39;indirizzo e-mail del primo firmatario o dell&#39;unico firmatario (nel caso del singolo firmatario) non può essere identico a  account Adobe Sign utilizzato per configurare i servizi cloud AEM.
 
+###  flusso di lavoro AEM Forms configurato per  modulo adattivo abilitato per Adobe Sign non viene avviato {#adobe-sign-aem-form-workflow-failures}
 
 **Problema**:  Adobe Sign è configurato per un modulo adattivo, il flusso di lavoro configurato con l&#39;opzione Richiama Forms Workflow non viene avviato.
 
