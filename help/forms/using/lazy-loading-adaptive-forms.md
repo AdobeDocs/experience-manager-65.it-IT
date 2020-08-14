@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 0%
 
 ---
 
@@ -30,13 +33,13 @@ Prima di configurare il caricamento pigro dei frammenti nel modulo adattivo, è 
 
    Per ulteriori informazioni sulla creazione di frammenti, vedere [Frammenti](../../forms/using/adaptive-form-fragments.md)di moduli adattivi.
 
-* **Identificazione e contrassegno di valori** globali Le transazioni basate sumoduli comportano elementi dinamici per acquisire dati rilevanti dagli utenti ed elaborarli per semplificare la compilazione dei moduli. Ad esempio, nel modulo è presente il campo A nel frammento X il cui valore determina la validità del campo B in un altro frammento. In questo caso, se il frammento X è contrassegnato per il caricamento pigro, il valore del campo A deve essere disponibile per convalidare il campo B anche se il frammento X non è caricato. A tal fine, è possibile contrassegnare il campo A come globale, in modo che il relativo valore sia disponibile per la convalida del campo B quando il frammento X non è caricato.
+* **Identificare e contrassegnare valori** globali Le transazioni basate suForms comportano elementi dinamici per acquisire dati rilevanti dagli utenti ed elaborarli per semplificare la compilazione dei moduli. Ad esempio, nel modulo è presente il campo A nel frammento X il cui valore determina la validità del campo B in un altro frammento. In questo caso, se il frammento X è contrassegnato per il caricamento pigro, il valore del campo A deve essere disponibile per convalidare il campo B anche se il frammento X non è caricato. A tal fine, è possibile contrassegnare il campo A come globale, in modo che il relativo valore sia disponibile per la convalida del campo B quando il frammento X non è caricato.
 
    Per informazioni su come rendere il valore di un campo globale, consultate [Configurazione del caricamento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)pigro.
 
-* **Regole di scrittura per controllare la visibilità dei campi** I moduli contengono alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di moduli utilizzano regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input dell&#39;utente. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato occupazione di un modulo. Per ulteriori informazioni sulla scrittura delle regole, vedere [Utilizzo dell&#39;editor](../../forms/using/rule-editor.md)delle regole.
+* **Regole di scrittura per controllare la visibilità dei campi** Forms includono alcuni campi e sezioni che non sono applicabili a tutti gli utenti e in tutte le condizioni. Gli autori e gli sviluppatori di Forms utilizzano regole di visibilità o di visualizzazione per controllarne la visibilità in base agli input degli utenti. Ad esempio, il campo Indirizzo ufficio non viene visualizzato agli utenti che scelgono Disoccupato nel campo Stato occupazione di un modulo. Per ulteriori informazioni sulla scrittura delle regole, vedere [Utilizzo dell&#39;editor](../../forms/using/rule-editor.md)delle regole.
 
-   È possibile utilizzare le regole di visibilità nei frammenti caricati in modo da visualizzare i campi condizionali solo quando sono obbligatori. Inoltre, contrassegnare il campo condizionale globale per farvi riferimento nell&#39;espressione di visibilità del frammento caricato in modo graduale.
+   È possibile utilizzare le regole di visibilità nei frammenti caricati in modo da visualizzare i campi condizionali solo quando sono obbligatori. Inoltre, contrassegnare il campo condizionale come globale per farvi riferimento nell&#39;espressione di visibilità del frammento caricato in modo graduale.
 
 ## Configurazione del caricamento lento {#configuring-lazy-loading}
 
@@ -65,10 +68,10 @@ Per abilitare il caricamento lento su un frammento di modulo adattivo, effettuar
 Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando si lavora con il caricamento pigro sono i seguenti:
 
 * È consigliabile utilizzare moduli adattivi basati sullo schema XSD su moduli adattivi basati su XFA per configurare il caricamento pigro sui moduli di grandi dimensioni. Il guadagno di prestazioni dovuto all&#39;implementazione pigra del caricamento nei moduli adattivi basati su XFA è relativamente inferiore al guadagno nei moduli adattivi basati su XSD.
-* Non configurare il caricamento pigro sui frammenti in un layout griglia reattivo. Ciò può comportare un peggioramento delle prestazioni.
+* Non configurare il caricamento pigro sui frammenti di un modulo adattivo che utilizza la funzione **[!UICONTROL Reattiva, ovvero tutto il contenuto di una pagina senza layout di navigazione]** per il pannello principale. A seguito della configurazione di layout reattivo, tutti i frammenti vengono caricati contemporaneamente in un modulo adattivo. Può anche causare un peggioramento delle prestazioni.
 * Si consiglia di non configurare il caricamento pigro sui frammenti nel primo pannello visualizzato al caricamento del modulo adattivo.
 * Il caricamento dei layout è supportato fino a due livelli nella gerarchia dei frammenti.
-* Assicurarsi che i campi contrassegnati come globali siano univoci in un modulo adattivo.
+* Assicurarsi che i campi contrassegnati come globali siano univoci all&#39;interno di un modulo adattivo.
 * Valutare la possibilità di scrivere regole di visibilità per i frammenti da mostrare o nascondere in base a una condizione. Ad esempio, è possibile mostrare o nascondere il frammento Dettagli coniuge in base allo stato civile specificato da un utente.
 * I componenti Allegati e Termini e Condizioni del file non sono supportati nei frammenti caricati lentamente.
 
@@ -78,7 +81,7 @@ I punti importanti da tenere a mente durante lo sviluppo di script per i pannell
 
 * Verificare che gli script di inizializzazione e di calcolo utilizzati nei campi di un frammento caricato pigro siano di natura ottimale. Gli script impotenti sono quelli che hanno lo stesso effetto anche dopo più esecuzioni.
 * Utilizzare la proprietà globalmente disponibile dei campi per rendere disponibile il valore dei campi che si trovano in un pannello di caricamento pigro a tutti gli altri pannelli di un modulo.
-* Non inoltrare il valore di riferimento di un campo all’interno di un pannello pigro indipendentemente dal fatto che il campo sia contrassegnato o meno a livello globale tra i frammenti.
+* Non inoltrare il valore di riferimento di un campo all’interno di un pannello pigro, indipendentemente dal fatto che il campo sia contrassegnato o meno a livello globale tra i frammenti.
 * Utilizzate la funzione di ripristino del pannello per ripristinare tutti gli elementi visibili nel pannello utilizzando la seguente espressione di clic.\
    guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
 
