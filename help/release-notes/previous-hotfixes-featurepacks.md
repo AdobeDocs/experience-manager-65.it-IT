@@ -3,9 +3,9 @@ title: Note sulla versione di Adobe Experience Manager 6.5 Service Pack preceden
 description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 2639a57682c7f0696dd2515e0fe8f6d520d10c21
 workflow-type: tm+mt
-source-wordcount: '8108'
+source-wordcount: '8113'
 ht-degree: 36%
 
 ---
@@ -506,7 +506,7 @@ Remove one mention of this fix.
 
 * Il servizio Web SOAP che utilizza MTOM in un progetto .NET visualizza le eccezioni per i metodi AssemblerServiceClient invoke e HtmlToPDF2 (NPR-4281771).
 
-* [Le versioni 1.4 e 1.4.1](https://helpx.adobe.com/it/aem-forms/quick-fixes/6-5/jee-patch-0014.html) dell&#39;Axis Jar includono una vulnerabilità di sicurezza (NPR-31015).
+* Vulnerabilità di sicurezza 2012-5784 e 2014-3596 trovata con AXIS 1.4 jar e corretta fornita con [AXIS1.4.1 jar](https://helpx.adobe.com/it/aem-forms/quick-fixes/6-5/jee-patch-0014.html) (NPR-31015).
 
 **JEE per Foundation**
 
