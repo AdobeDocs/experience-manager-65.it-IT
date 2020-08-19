@@ -1,8 +1,8 @@
 ---
 title: Architettura dei moduli HTML5
 seo-title: Architettura dei moduli HTML5
-description: I moduli HTML5 vengono distribuiti come pacchetto all’interno dell’istanza AEM incorporata ed espone la funzionalità come punto finale REST su HTTP/S mediante l’architettura RESTful Apache Sling.
-seo-description: I moduli HTML5 vengono distribuiti come pacchetto all’interno dell’istanza AEM incorporata ed espone la funzionalità come punto finale REST su HTTP/S mediante l’architettura RESTful Apache Sling.
+description: I moduli HTML5 vengono distribuiti come pacchetto all’interno dell’istanza di AEM incorporata ed espone la funzionalità come punto finale REST su HTTP/S utilizzando l’architettura RESTful Apache Sling.
+seo-description: I moduli HTML5 vengono distribuiti come pacchetto all’interno dell’istanza di AEM incorporata ed espone la funzionalità come punto finale REST su HTTP/S utilizzando l’architettura RESTful Apache Sling.
 uuid: 7f515cea-1447-4fc7-82ba-17f2e3f9f80c
 contentOwner: robhagat
 content-type: reference
@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 84dd0d551431169239f63cff62a015e15f998e7d
+workflow-type: tm+mt
+source-wordcount: '2043'
+ht-degree: 0%
 
 ---
 
@@ -22,19 +25,17 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 La funzionalità dei moduli HTML5 è distribuita come pacchetto all’interno dell’istanza AEM incorporata ed è esposta come punto finale REST su HTTP/S utilizzando RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-`<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` Architettura [ - ![01-aem-forms-](assets/01-aem-forms-architecture.jpg)*Visualizza dimensioni intere *](javascript:void(0).md)
-
-[ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
+![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Utilizzo di Sling Framework {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/) è incentrato sulle risorse. Utilizza un URL di richiesta per risolvere la risorsa. Ciascuna risorsa dispone di una proprietà **sling:resourceType** (o **sling:resourceSuperType**). In base a questa proprietà, al metodo di richiesta e alle proprietà dell’URL della richiesta, viene quindi selezionato uno script sling per gestire la richiesta. Questo script sling può essere un JSP o un servlet. Per i moduli HTML5, i nodi **Profilo** fungono da risorse sling e il modulo di rendering dei **profili** funge da script sling che gestisce la richiesta di rendering del modulo mobile con un profilo particolare. Un **Modulo di rendering** di profilo è un JSP che legge i parametri da una richiesta e chiama il servizio OSGi di Forms.
+[Apache Sling](https://sling.apache.org/) è incentrato sulle risorse. Utilizza un URL di richiesta per risolvere la risorsa. Ciascuna risorsa dispone di una proprietà **sling:resourceType** (o **sling:resourceSuperType**). In base a questa proprietà, al metodo di richiesta e alle proprietà dell’URL della richiesta, viene quindi selezionato uno script sling per gestire la richiesta. Questo script sling può essere un JSP o un servlet. Per i moduli HTML5, i nodi **Profilo** fungono da risorse sling e il modulo di rendering dei **profili** funge da script sling che gestisce la richiesta di rendering del modulo mobile con un profilo particolare. Un renderer di **profilo** è un JSP che legge i parametri da una richiesta e chiama il servizio Forms OSGi.
 
 Per informazioni dettagliate sull&#39;endpoint REST e sui parametri di richiesta supportati, consultate Modello [per moduli di](/help/forms/using/rendering-form-template.md)rendering.
 
-Quando un utente effettua una richiesta da un dispositivo client come un browser iOS o Android, Sling risolve prima il nodo del profilo in base all&#39;URL della richiesta. Da questo nodo di profilo si legge **sling:resourceSuperType** e **sling:resourceType** per determinare tutti gli script disponibili che possono gestire questa richiesta di rendering del modulo. Quindi utilizza i selettori di richieste Sling insieme al metodo di richiesta per identificare lo script più adatto per gestire questa richiesta. Una volta che la richiesta raggiunge un JSP per il rendering dei profili, il JSP chiama il servizio Forms OSGi.
+Quando un utente effettua una richiesta da un dispositivo client come un browser iOS o Android, Sling risolve prima il nodo del profilo in base all&#39;URL della richiesta. Da questo nodo di profilo si legge **sling:resourceSuperType** e **sling:resourceType** per determinare tutti gli script disponibili che possono gestire questa richiesta di rendering del modulo. Quindi utilizza i selettori di richieste Sling insieme al metodo di richiesta per identificare lo script più adatto per gestire questa richiesta. Quando la richiesta raggiunge un JSP di rendering profilo, il JSP chiama il servizio Forms OSGi.
 
-Per ulteriori dettagli sulla risoluzione degli script Sling, consultate [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) o [Apache Sling Url decomposizione](https://sling.apache.org/site/url-decomposition.html).
+Per ulteriori dettagli sulla risoluzione dello script Sling, vedere [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) o [Apache Sling Url decomposizione](https://sling.apache.org/site/url-decomposition.html).
 
 #### Flusso di chiamate di elaborazione dei moduli tipico {#typical-form-processing-call-flow}
 
@@ -50,28 +51,28 @@ I moduli HTML5 non memorizzano nella cache i modelli con riferimenti di framment
 
 Il servizio Forms OSGi elabora una richiesta in due passaggi:
 
-* **Generazione** di layout e stato modulo iniziale: Il servizio di rendering Forms OSGi richiama il componente Cache dei moduli per determinare se il modulo è già stato memorizzato nella cache e non è stato invalidato. Se il modulo è memorizzato nella cache e valido, viene distribuito l&#39;HTML generato dalla cache. Se il modulo viene invalidato, il servizio di rendering Forms OSGi genera il layout iniziale del modulo e lo stato del modulo in formato XML. Il codice XML viene trasformato in layout HTML e stato iniziale del modulo JSON dal servizio Forms OSGi, quindi memorizzato nella cache per richieste successive.
-* **Moduli** precompilati: Durante il rendering, se un utente richiede moduli con dati precompilati, il servizio di rendering Forms OSGi richiama il contenitore del servizio Forms e genera un nuovo stato Modulo con dati uniti. Tuttavia, poiché il layout è già generato nel passaggio precedente, questa chiamata è più veloce della prima. Questa chiamata esegue solo l&#39;unione dei dati ed esegue gli script sui dati.
+* **Generazione** di layout e stato modulo iniziale: Il servizio di rendering Forms OSGi chiama il componente Forms Cache per determinare se il modulo è già stato memorizzato nella cache e non è stato invalidato. Se il modulo è memorizzato nella cache e valido, viene distribuito l&#39;HTML generato dalla cache. Se il modulo viene invalidato, il servizio di rendering Forms OSGi genera il layout iniziale del modulo e lo stato del modulo in formato XML. Il codice XML viene trasformato in layout HTML e stato iniziale del modulo JSON dal servizio Forms OSGi, quindi memorizzato nella cache per richieste successive.
+* **Forms** prepopolato: Durante il rendering, se un utente richiede moduli con dati precompilati, il servizio di rendering Forms OSGi chiama il contenitore del servizio Forms e genera un nuovo stato Modulo con dati uniti. Tuttavia, poiché il layout è già generato nel passaggio precedente, questa chiamata è più veloce della prima. Questa chiamata esegue solo l&#39;unione dei dati ed esegue gli script sui dati.
 
-Se è presente un aggiornamento del modulo o di risorse utilizzate all’interno del modulo, il componente cache del modulo lo rileva e la cache del modulo specifico viene invalidata. Una volta completata l&#39;elaborazione del servizio Forms OSGi, il modulo di rendering del profilo aggiunge riferimenti e stile alla libreria JavaScript al modulo e restituisce la risposta al client. Un server Web tipico come [Apache](https://httpd.apache.org/) può essere utilizzato qui con la compressione HTML attivata. Un server Web ridurrebbe notevolmente le dimensioni di risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra il server e il computer client.
+Se è presente un aggiornamento del modulo o di risorse utilizzate all’interno del modulo, il componente cache del modulo lo rileva e la cache del modulo specifico viene invalidata. Una volta completata l&#39;elaborazione del servizio Forms OSGi, il modulo di rendering dei profili jsp aggiunge riferimenti e stili di libreria JavaScript al modulo e restituisce la risposta al client. Un server Web tipico come [Apache](https://httpd.apache.org/) può essere utilizzato qui con la compressione HTML attivata. Un server Web ridurrebbe notevolmente le dimensioni di risposta, il traffico di rete e il tempo necessario per lo streaming dei dati tra il server e il computer client.
 
 Quando un utente invia il modulo, il browser invia lo stato del modulo in formato JSON al proxy [del servizio di](../../forms/using/service-proxy.md)invio; quindi il proxy del servizio di invio genera un XML di dati utilizzando i dati JSON e invia l&#39;XML di dati per inviare l&#39;endpoint.
 
 ## Componenti {#components}
 
-Per abilitare i moduli HTML5 è necessario un pacchetto aggiuntivo AEM Forms. Per informazioni sull&#39;installazione del pacchetto del componente aggiuntivo AEM Forms, consultate [Installazione e configurazione di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
+Per abilitare i moduli HTML5 è necessario  pacchetto aggiuntivo AEM Forms. Per informazioni sull&#39;installazione  pacchetto aggiuntivo AEM Forms, consultate [Installazione e configurazione  AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 ### Componenti OSGi (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** è il nome visualizzato del bundle OSGi di moduli HTML5 visualizzato da Bundle View of Felix admin console (https://[host]:[port]/system/console/bundle).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** è il nome visualizzato del bundle OSGi moduli HTML5 visualizzato da Bundle View of Felix admin console (https://[host]:[port]/system/console/bundle).
 
 Questo componente contiene componenti OSGi per le impostazioni di rendering, gestione cache e configurazione.
 
 #### Forms OSGi Service {#forms-osgi-service}
 
-Questo servizio OSGi contiene la logica per eseguire il rendering di un XDP come HTML e gestisce l&#39;invio di un modulo per generare dati XML. Questo servizio utilizza il contenitore del servizio Forms. Il contenitore del servizio Forms richiama internamente il componente nativo `XMLFormService.exe` che esegue l’elaborazione.
+Questo servizio OSGi contiene la logica per eseguire il rendering di un XDP come HTML e gestisce l&#39;invio di un modulo per generare dati XML. Questo servizio utilizza il contenitore del servizio Forms. Il contenitore del servizio Forms chiama internamente il componente nativo `XMLFormService.exe` che esegue l’elaborazione.
 
-Se viene ricevuta una richiesta di rendering, questo componente chiama il contenitore del servizio Forms per generare informazioni sul layout e sullo stato ulteriormente elaborate per generare gli stati DOM modulo HTML e JSON.
+Se viene ricevuta una richiesta di rendering, questo componente chiama il contenitore del servizio Forms per generare informazioni di layout e stato ulteriormente elaborate per generare stati DOM modulo HTML e JSON.
 
 Questo componente è inoltre responsabile della generazione di dati XML da JSON (stato modulo inviato).
 
@@ -110,7 +111,7 @@ I moduli HTML5 eseguono il caching in memoria utilizzando la strategia LRU. Se l
 
 Il servizio di configurazione consente di sintonizzare i parametri di configurazione e le impostazioni della cache per i moduli HTML5.
 
-Per aggiornare queste impostazioni, accedete all&#39;Admin Console di CQ Felix (disponibile all&#39;indirizzo https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), cercate e selezionate Configurazione moduli mobili.
+Per aggiornare queste impostazioni, andate all&#39;Admin Console di CQ Felix  (disponibile all&#39;indirizzo https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), cercate e selezionate Configurazione Forms mobile.
 
 È possibile configurare la dimensione della cache o disabilitare la cache utilizzando il servizio di configurazione. Potete inoltre abilitare il debug utilizzando il parametro Opzioni di debug. Per ulteriori informazioni sul debug dei moduli, vedere [Debug di moduli](/help/forms/using/debug.md)HTML5.
 
@@ -122,7 +123,7 @@ Il pacchetto Runtime contiene le librerie lato client utilizzate per il renderin
 
 #### Motore di scripting {#scripting-engine}
 
-L&#39;implementazione di Adobe XFA supporta due tipi di linguaggi di script per consentire l&#39;esecuzione logica definita dall&#39;utente nei moduli: JavaScript e FormCalc.
+&#39;implementazione XFA di Adobe supporta due tipi di linguaggi di script per consentire l&#39;esecuzione logica definita dall&#39;utente nei moduli: JavaScript e FormCalc.
 
 Il motore di script di HTML Forms è scritto in JavaScript per supportare l&#39;API di script XFA in entrambi i linguaggi.
 
@@ -169,7 +170,7 @@ Il pacchetto Sling contiene il contenuto correlato a Profili e Modulo di renderi
 
 #### Profili {#profiles}
 
-I profili sono i nodi delle risorse in sling che rappresentano una maschera o una famiglia di moduli. A livello di CQ, questi profili sono nodi JCR. I nodi risiedono nella cartella **/content** dell’archivio JCR e possono trovarsi all’interno di qualsiasi sottocartella all’interno della cartella **/content** .
+I profili sono i nodi delle risorse in sling che rappresentano una maschera o una famiglia di Forms. A livello di CQ, questi profili sono nodi JCR. I nodi risiedono nella cartella **/content** dell’archivio JCR e possono trovarsi all’interno di qualsiasi sottocartella all’interno della cartella **/content** .
 
 #### Modulo di rendering profili {#profile-renderers}
 
@@ -181,7 +182,7 @@ Il nodo Profile ha una proprietà **sling:resourceSuperType** con valori **xfafo
 Queste librerie sono modellate come CQ Client Libraries e sono caratterizzate dalle funzionalità di concatenazione, riduzione e compressione automatiche delle librerie JavaScript del framework CQ.
 Per ulteriori informazioni sulle librerie client CQ, consulta la documentazione [](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html)CQ Clientlib.
 
-Come descritto in precedenza, il renderer di profili JSP chiama Forms Service tramite un sling include. Questa JSP imposta anche diverse opzioni di debug in base alla configurazione dell&#39;amministratore o ai parametri di richiesta.
+Come descritto in precedenza, il renderer di profili JSP chiama Forms Service tramite una sling include. Questa JSP imposta anche diverse opzioni di debug in base alla configurazione dell&#39;amministratore o ai parametri di richiesta.
 
 I moduli HTML5 consentono agli sviluppatori di creare il modulo di rendering dei profili e di personalizzarne l&#39;aspetto. Ad esempio, i moduli HTML consentono agli sviluppatori di integrare moduli in un pannello o nella sezione &lt;div> di un portale HTML esistente.
 Per ulteriori dettagli sulla creazione di profili personalizzati, consultate [Creazione di un profilo](/help/forms/using/custom-profile.md)personalizzato.
