@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 5%
 
 ---
 
@@ -37,22 +40,23 @@ Per le informazioni necessarie, consulta [Community Components Basics](basics.md
 
 Quando sono incluse le librerie [lato client](tag.md#essentials-for-client-side) richieste, verrà visualizzato il `Social Tag Cloud` componente:
 
-![chlimage_1-303](assets/chlimage_1-303.png)
+![social-tag](assets/social-tag.png)
 
 ## Configurazione di Social Tag Cloud {#configuring-social-tag-cloud}
 
 Selezionate il `Social Tag Cloud` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-304](assets/chlimage_1-304.png)
+![configure](assets/configure-new.png)
 
 Nella scheda **[!UICONTROL Social Tag Cloud]** , specificate i tag da visualizzare e, se i tag sono collegamenti attivi, la posizione della pagina per i risultati della ricerca:
 
-![chlimage_1-305](assets/chlimage_1-305.png)
+![social-tag-cloud](assets/social-tag-cloud.png)
 
 * **[!UICONTROL Tag per social network da visualizzare]** Identificare i tag UGC da visualizzare. Le opzioni a discesa sono:
 
    * `From page and child pages`
    * `All tags`
+
    Il valore predefinito è `From page and child pages`, dove &quot;page&quot; fa riferimento all’impostazione **Pagina** riportata di seguito.
 
 * **[!UICONTROL Pagina]**
@@ -73,7 +77,7 @@ Per modificare la visualizzazione di **Social Tag Cloud**, entrate in modalità 
 
 Utilizzando la scheda **[!UICONTROL Social Tag Cloud (Progettazione)]** , specificate il modo in cui i tag vengono visualizzati. Un tag può essere un tag semplice, una singola parola nello spazio dei nomi predefinito o una tassonomia gerarchica:
 
-![chlimage_1-306](assets/chlimage_1-306.png)
+![social-tag-cloud-design](assets/social-tag-cloud-design.png)
 
 * **[!UICONTROL Mostra percorsi titolo completi]**
 
@@ -83,6 +87,7 @@ Utilizzando la scheda **[!UICONTROL Social Tag Cloud (Progettazione)]** , specif
 
    * Selezionato: `Geometrixx Media: Gadgets / Cars`
    * Deselezionato: `Cars`
+
    Non c&#39;è differenza per un tag semplice.
 
    Il valore predefinito è deselezionato.
@@ -101,6 +106,7 @@ Utilizzando la scheda **[!UICONTROL Social Tag Cloud (Progettazione)]** , specif
 
    * Selezionato: Viene `Cars` visualizzato solo se applicato.
    * Non selezionato: `Geometrixx Media` e `Gadgets`così come `Cars` verrà visualizzato, se applicato.
+
    Un tag semplice è un tag foglia.
 
    Il valore predefinito è deselezionato.
