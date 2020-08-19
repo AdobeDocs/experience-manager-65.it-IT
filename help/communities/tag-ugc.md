@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +30,7 @@ Gli spazi dei nomi e le tassonomie dei tag sono gli stessi per entrambe le appli
 
 ## Funzioni di Communities {#communities-features}
 
-Le funzioni di AEM Communities che possono essere configurate per consentire l’assegnazione di tag sono:
+Le  funzioni AEM Communities che possono essere configurate per consentire l’assegnazione di tag sono:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -53,5 +56,5 @@ Consultate [Impostazione delle autorizzazioni](../../help/sites-administering/ta
 
 Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura `/etc/tag/discussions` per il gruppo `Community Engage Members`.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![tag-permissions](assets/tag-permissions.png)
 
