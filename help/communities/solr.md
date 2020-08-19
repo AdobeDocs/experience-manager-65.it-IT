@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +83,8 @@ sh./scripts/cloud-scripts/zkcli.sh \
 #### 2. Creare una raccolta {#create-a-collection}
 
 Riferimento:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
+](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Utilizzo:
 ./bin/solr create \
@@ -107,9 +111,9 @@ sh./scripts/cloud-scripts/zkcli.sh \
 
 ### Confronto tra standard e Advanced MLS {#comparison-of-standard-and-advanced-mls}
 
-La ricerca multilingue (MLS) per AEM Communities è stata creata per la piattaforma Solr per fornire una ricerca migliore in tutte le lingue supportate, incluso l&#39;inglese.
+La ricerca multilingue (MLS) per  AEM Communities è stata creata per la piattaforma Solr per fornire una ricerca migliore in tutte le lingue supportate, incluso l&#39;inglese.
 
-MLS per le community AEM è disponibile come standard MLS o Advanced MLS. MLS standard include solo le impostazioni di configurazione Solr ed esclude eventuali plug-in o file di risorse. MLS avanzato è la soluzione più completa e include le impostazioni di configurazione Solr, i plug-in e le relative risorse
+MLS per le comunità AEM è disponibile sia come standard MLS che come Advanced MLS. MLS standard include solo le impostazioni di configurazione Solr ed esclude eventuali plug-in o file di risorse. MLS avanzato è la soluzione più completa e include le impostazioni di configurazione Solr, i plug-in e le relative risorse
 
 MLS standard include miglioramenti per la ricerca di contenuti per le seguenti lingue:
 
@@ -141,9 +145,9 @@ In tutto, le seguenti 33 lingue sono supportate in Advanced MLS.
 
 #### Confronto tra AEM 6.1 Solr search, MLS standard e MLS avanzate {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Nota**: AEM 6.1 si riferisce al FP3 di AEM Communities 6.1 e versioni precedenti.
+**Nota**: AEM 6.1 si riferisce al AEM 6.1 FP3 delle Comunità europee e versioni precedenti.
 
-![chlimage_1-283](assets/chlimage_1-283.png)
+![compare-solr-mls](assets/compare-solr-mls.png)
 
 ### Installazione di MLS standard {#installing-standard-mls}
 
@@ -221,7 +225,7 @@ Per ottenere il pacchetto MLS avanzato, consultate [AEM Advanced MLS](deploy-com
 
 Per iniziare a utilizzare l&#39;installazione per SolrCloud o la modalità standalone:
 
-* Scarica l&#39;archivio zip AEM-SOLR-MLS sul server in cui è installato Solr.
+* Scarica AEM-SOLR-MLS archivio zip sul server in cui è installato Solr.
 * Estrarre l&#39;archivio.
 
 #### Modalità SolrCloud - MLS avanzate {#solrcloud-mode-advanced-mls}
