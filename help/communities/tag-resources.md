@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +62,7 @@ Per un sito community, dopo la pubblicazione del sito e la pubblicazione dei tag
 
 Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura `/etc/tags/ski-catalog` per il gruppo `Community Enable Members`.
 
-![chlimage_1-420](assets/chlimage_1-420.png)
+![site-tags](assets/site-tags.png)
 
 ## Spazi dei nomi dei tag del catalogo {#catalog-tag-namespaces}
 
@@ -67,7 +70,7 @@ La funzione del catalogo utilizza i tag per definirsi. Quando si configura la fu
 
 La funzione Catalog include un&#39;impostazione di tag che definisce i tag elencati nell&#39;interfaccia utente del filtro per il catalogo. L&#39;impostazione &quot;Tutti i namespace&quot; fa riferimento all&#39;ambito degli spazi dei nomi dei tag selezionati per il sito della community.
 
-![chlimage_1-421](assets/chlimage_1-421.png)
+![catalog-namespace](assets/catalog-namespace.png)
 
 ## Applicazione dei tag alle risorse di abilitazione {#applying-tags-to-enablement-resources}
 
@@ -88,7 +91,7 @@ Di conseguenza, qualsiasi risorsa di abilitazione con un tag tra:
 
 verrà visualizzato in `Ski Catalog` dopo la pubblicazione della risorsa di abilitazione.
 
-![chlimage_1-422](assets/chlimage_1-422.png)
+![basic-info](assets/applytags-basicinfo.png)
 
 ## Visualizzazione del catalogo in Pubblica {#viewing-catalog-on-publish}
 
@@ -100,5 +103,5 @@ Se gli spazi dei nomi dei tag sono stati aggiunti e mancano, accertatevi che i t
 
 Se non vengono visualizzate risorse di abilitazione dopo aver selezionato un tag durante la visualizzazione del catalogo, accertatevi che sia presente un tag dagli spazi dei nomi del catalogo applicato alla risorsa di abilitazione.
 
-![chlimage_1-423](assets/chlimage_1-423.png)
+![view-catalog](assets/viewcatalog.png)
 
