@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Ciò che distingue le sottoscrizioni dalle notifiche è:
 
 * I membri non possono iscriversi quando seguono altri membri.
 * L&#39;unica azione che i membri devono intraprendere è selezionare `Email Subscriptions` quando si segue.
-* Quando è configurata la risposta e-mail, i membri possono pubblicare contenuti semplicemente rispondendo all&#39;e-mail ricevuta.
+* Quando è configurata la risposta e-mail, i membri possono pubblicare efficacemente il contenuto semplicemente rispondendo all&#39;e-mail ricevuta.
 
 ### Requisiti {#requirements}
 
@@ -43,7 +46,7 @@ I componenti devono essere configurati per abilitare le iscrizioni *e i* seguent
 
 ## Iscrizioni da: {#subscriptions-from-following}
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![subscription-follow](assets/subscription-following.png)
 
 Il pulsante **Segui** consente di seguire le voci come attività, iscrizioni e/o notifiche. Ogni volta che si seleziona il pulsante **Segui** , è possibile attivare o disattivare una selezione.
 
@@ -61,9 +64,9 @@ Quando l’e-mail è [configurata per la risposta tramite e-mail](email.md#confi
 
 Se rispondono all’e-mail, il contenuto immesso nella risposta verrà visualizzato come contenuto online.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![email-response](assets/email-reply.png)
 
 Il tempo necessario per inviare una risposta è controllato dall&#39;intervallo [di aggiornamento dell&#39;importatore](email.md#configure-polling-importer)di polling.
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![Controllo qualità](assets/qa.png)
 
