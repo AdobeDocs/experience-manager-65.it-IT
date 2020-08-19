@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +22,18 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ## Introduzione {#introduction}
 
-A partire da AEM Communities 6.1, i contenuti della community, comunemente denominati contenuti generati dall&#39;utente (UGC), vengono memorizzati in un unico store comune fornito da un provider [di risorse di](working-with-srp.md) storage (SRP).
+A partire  AEM Communities 6.1, i contenuti della community, comunemente denominati contenuti generati dall&#39;utente (UGC), vengono memorizzati in un unico store comune fornito da un provider [di risorse di](working-with-srp.md) storage (SRP).
 
-Esistono diverse opzioni SRP, tutte con accesso a UGC tramite una nuova interfaccia di AEM Communities, l&#39;API [](srp-and-ugc.md) SocialResourceProvider (API SRP), che include tutte le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD).
+Esistono diverse opzioni SRP, tutte con accesso a UGC tramite una nuova interfaccia AEM Communities , l&#39;API [](srp-and-ugc.md) SocialResourceProvider (API SRP), che include tutte le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD).
 
 Tutti i componenti SCF sono implementati utilizzando l&#39;API SRP, consentendo lo sviluppo del codice senza conoscere la topologia [](topologies.md) sottostante o la posizione dell&#39;UGC.
 
-***L&#39;API SocialResourceProvider è disponibile solo per i clienti con licenza di AEM Communities.***
+***L&#39;API SocialResourceProvider è disponibile solo per i clienti autorizzati di  AEM Communities.***
 
 >[!NOTE]
 >
->**Componenti** personalizzati: Per i clienti con licenza di AEM Communities, l&#39;API SRP è disponibile per gli sviluppatori di componenti personalizzati allo scopo di accedere a UGC senza riguardo alla topologia sottostante. Vedere [Funzioni di base SRP e UGC](srp-and-ugc.md).
+>**Componenti** personalizzati: Per i clienti con licenza di  AEM Communities, l&#39;API SRP è disponibile per gli sviluppatori di componenti personalizzati allo scopo di accedere a UGC senza riguardo alla topologia sottostante. Vedere [Funzioni di base SRP e UGC](srp-and-ugc.md).
+
 
 Consulta anche:
 
@@ -39,15 +43,15 @@ Consulta anche:
 
 ## Informazioni sull&#39;archivio {#about-the-repository}
 
-Per comprendere meglio SRP, è utile comprendere il ruolo dell&#39;archivio AEM (OAK) in un sito della community AEM.
+Per comprendere meglio SRP, è utile comprendere il ruolo del repository AEM (OAK) in un sito AEM community.
 
 **Java Content Repository (JCR)** Questo standard definisce un modello dati e un&#39;interfaccia di programmazione applicazione (API[](https://jackrabbit.apache.org/jcr/jcr-api.html)JCR) per i repository dei contenuti. Unisce le caratteristiche dei file system convenzionali a quelle dei database relazionali e aggiunge una serie di funzioni aggiuntive spesso necessarie per le applicazioni di contenuto.
 
-Un&#39;implementazione di JCR è l&#39;archivio AEM, OAK.
+Un&#39;implementazione di JCR è il repository AEM, OAK.
 
 **Apache Jackrabbit Oak (OAK)**[OAK](../../help/sites-deploying/platform.md) è un&#39;implementazione di JCR 2.0 che è un sistema di archiviazione dei dati appositamente progettato per applicazioni incentrate sui contenuti. È un tipo di database gerarchico progettato per dati non strutturati e semi-strutturati. L&#39;archivio memorizza non solo il contenuto rivolto all&#39;utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall&#39;applicazione. L&#39;interfaccia utente per accedere ai contenuti è [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Sia JCR che OAK sono generalmente utilizzati per fare riferimento all’archivio di AEM.
+Sia JCR che OAK sono generalmente utilizzati per fare riferimento al repository AEM.
 
 Dopo aver sviluppato il contenuto del sito nell’ambiente di authoring privato, questo deve essere copiato nell’ambiente di pubblicazione pubblica. Questa operazione viene spesso eseguita tramite un&#39;operazione denominata *[replica](deploy-communities.md#replication-agents-on-author)*. Ciò avviene sotto il controllo dell&#39;autore/sviluppatore/amministratore.
 
@@ -68,33 +72,33 @@ Quando UGC viene salvato nello storage condiviso, esiste un&#39;unica istanza di
 
 ### ASRP {#asrp}
 
-Nel caso di ASRP, UGC non è memorizzato in JCR, ma in un servizio cloud ospitato e gestito da Adobe. L&#39;UGC memorizzato in ASRP non può essere visualizzato con CRXDE Lite né utilizzato tramite l&#39;API JCR.
+Nel caso di ASRP, UGC non è memorizzato in JCR, è memorizzato in un servizio cloud ospitato e gestito da  Adobe. L&#39;UGC memorizzato in ASRP non può essere visualizzato né con CRXDE Lite né accessibile tramite l&#39;API JCR.
 
-Consultate [ASRP - Adobe Storage Resource Provider](asrp.md).
+Consulta [ASRP -  provider](asrp.md)di risorse di storage di Adobe.
 
 Gli sviluppatori non possono accedere direttamente all&#39;UGC.
 
-ASRP utilizza Adobe Cloud per le query.
+ASRP utilizza  Adobe cloud per le query.
 
 ### MSRP {#msrp}
 
-Nel caso di MSRP, UGC non è memorizzato in JCR, è memorizzato in MongoDB. Gli UGC memorizzati in MSRP non possono essere visualizzati con CRXDE Lite né utilizzati tramite l&#39;API JCR.
+Nel caso di MSRP, UGC non è memorizzato in JCR, è memorizzato in MongoDB. L&#39;UGC memorizzato in MSRP non può essere visualizzato né con CRXDE Lite né accessibile tramite l&#39;API JCR.
 
 Consultate [MSRP - Fornitore](msrp.md)di risorse di storage MongoDB.
 
-Sebbene MSRP sia paragonabile ad ASRP, poiché tutte le istanze del server AEM accedono allo stesso UGC, è possibile utilizzare strumenti comuni per accedere direttamente all’UGC memorizzato in MongoDB.
+Sebbene MSRP sia paragonabile ad ASRP, poiché tutte AEM istanze server accedono allo stesso UGC, è possibile utilizzare strumenti comuni per accedere direttamente all&#39;UGC memorizzato in MongoDB.
 
 MSRP utilizza Solr per le query.
 
 ### JSRP {#jsrp}
 
-JSRP è il provider predefinito per accedere a tutti gli UGC su una singola istanza di AEM. Consente di provare rapidamente AEM Communities 6.1 senza dover configurare MSRP o ASRP.
+JSRP è il provider predefinito per l&#39;accesso a tutti gli UGC su una singola istanza AEM. Fornisce la possibilità di sperimentare rapidamente  AEM Communities 6.1 senza la necessità di configurare MSRP o ASRP.
 
 Consulta [JSRP - Provider](jsrp.md)risorse di storage JCR.
 
-Nel caso di JSRP, mentre UGC è memorizzato in JCR e accessibile sia tramite CRXDE Lite che tramite l&#39;API JCR, si consiglia vivamente di non utilizzare mai l&#39;API JCR per farlo, altrimenti le modifiche future potrebbero influenzare il codice personalizzato.
+Nel caso di JSRP, mentre UGC è memorizzato in JCR, e accessibile tramite API CRXDE Lite e JCR, è fortemente consigliato che l&#39;API JCR non venga mai utilizzata per farlo, altrimenti le modifiche future potrebbero influenzare il codice personalizzato.
 
-Inoltre, l’archivio per gli ambienti di creazione e pubblicazione non è condiviso. Mentre un cluster di istanze di pubblicazione genera un archivio condiviso di pubblicazione, gli UGC immessi al momento della pubblicazione non saranno visibili all’autore, per cui non è possibile gestire UGC dall’autore. UGC è persistente solo nell’archivio AEM (JCR) dell’istanza in cui è stato immesso.
+Inoltre, l’archivio per gli ambienti di creazione e pubblicazione non è condiviso. Mentre un cluster di istanze di pubblicazione genera un archivio condiviso di pubblicazione, gli UGC immessi al momento della pubblicazione non saranno visibili all’autore, per cui non è possibile gestire UGC dall’autore. UGC è persistente solo nell&#39;archivio AEM (JCR) dell&#39;istanza in cui è stato immesso.
 
 JSRP utilizza gli indici Oak per le query.
 
