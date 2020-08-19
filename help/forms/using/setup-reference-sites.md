@@ -1,8 +1,8 @@
 ---
 title: Configurare e configurare siti di riferimento self-service per We.Finance e Dipendenti
 seo-title: Configurare e configurare siti di riferimento self-service per We.Finance e Dipendenti
-description: I siti di riferimento AEM Forms mostrano come utilizzare i AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
-seo-description: I siti di riferimento AEM Forms mostrano come utilizzare i AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.
+description: ' siti di riferimento AEM Forms illustrano come utilizzare  AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.'
+seo-description: ' siti di riferimento AEM Forms illustrano come utilizzare  AEM Forms per implementare un flusso di lavoro end-to-end in un’organizzazione.'
 uuid: 199349b7-97bd-4eca-a2e7-19d6708fcbee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 371ecbdaad97b7111353f40d1ddfb686e99d46c5
+source-git-commit: b0e071cb3bf972ceaa2af3b70a7887557e6f10f9
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2915'
 ht-degree: 0%
 
 ---
@@ -20,40 +20,42 @@ ht-degree: 0%
 
 # Configurare e configurare siti di riferimento self-service per We.Finance e Dipendenti{#set-up-and-configure-we-finance-and-employee-self-service-reference-sites}
 
-I AEM Forms forniscono l&#39;implementazione del sito di riferimento per dimostrare in che modo i AEM Forms aiutano le organizzazioni del settore e del governo dei servizi finanziari a trasformare le loro complesse transazioni in esperienze digitali semplici e coinvolgenti ovunque, in qualsiasi momento, su qualsiasi dispositivo.
+ AEM Forms fornisce un&#39;implementazione del sito di riferimento per dimostrare come  AEM Forms aiuta le organizzazioni del settore e del governo dei servizi finanziari a trasformare le loro complesse transazioni in esperienze digitali semplici e coinvolgenti ovunque, in qualsiasi momento, su qualsiasi dispositivo.
 
 Il sito di riferimento We.Finance raccoglie casi di utilizzo reali per interagire con clienti esistenti e potenziali, dal momento del primo tocco alla gestione delle corrispondenze e delle transazioni in modo personalizzato ed economico.
 
-I siti di riferimento consentono di esplorare e mostrare le seguenti funzionalità chiave dei AEM Forms.
+Installate i pacchetti dei siti di riferimento We.Gov e We.Finance utilizzando la distribuzione [](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)software. Per ulteriori informazioni, consultate [Implementare pacchetti](#refsite)di siti di riferimento.
+
+I siti di riferimento consentono di esplorare e presentare le seguenti funzionalità chiave di  AEM Forms.
 
 * Esperienza di authoring semplificata con moduli adattivi coinvolgenti e reattivi e comunicazioni interattive.
 * Comunicazioni interattive per creare comunicazioni interattive, personalizzate e reattive per i clienti che si adattano all&#39;impostazione e al layout del dispositivo.
 * Integrazione dei dati per la connessione a origini dati diverse per la precompilazione e l&#39;invio dei dati del modulo tramite un modello dati del modulo.
-* Flusso di lavoro dei moduli per automatizzare processi e flussi di lavoro aziendali.
+* Flusso di lavoro Forms per automatizzare processi e flussi di lavoro aziendali.
 * Funzionalità avanzate di gestione ed elaborazione dei dati utente.
-* Integrazione con Adobe Sign per la firma e l&#39;invio sicuri di moduli adattivi.
-* Integrazione con  Adobe Target per distribuire raccomandazioni mirate ed eseguire test A/B per ottimizzare il ROI da un modulo.
-* Integrazione con Adobe  Analytics per misurare le prestazioni di un modulo o di una campagna e prendere decisioni informate.
+* Integrazione con  Adobe Sign per firmare e inviare moduli adattivi in modo sicuro.
+* Integrazione con  Adobe Target per distribuire raccomandazioni mirate e eseguire test A/B per ottimizzare il ROI da un modulo.
+* Integrazione con  Adobe Analytics per misurare le prestazioni di un modulo o di una campagna e prendere decisioni informate.
 * Esperienza di compilazione dei moduli migliorata.
 
 I siti di riferimento forniscono risorse riutilizzabili che potete usare come modelli per creare risorse personalizzate.
 
-* Integrazione con Adobe Sign per la firma e l&#39;invio sicuri di moduli adattivi.
+* Integrazione con  Adobe Sign per firmare e inviare moduli adattivi in modo sicuro.
 
-* Integrazione con Adobe Sign per la firma e l&#39;invio sicuri di moduli adattivi.
+* Integrazione con  Adobe Sign per firmare e inviare moduli adattivi in modo sicuro.
 
 ## Prerequisiti e passaggi per configurare i siti di riferimento {#prerequisites-and-steps-to-set-up-reference-sites}
 
 Prima di configurare il sito di riferimento, accertatevi di disporre dei seguenti elementi:
 
-* **AEM** Essentials AEM QuickStart, AEM Forms add-on package e pacchetti del sito di riferimento. Consultate Rilasci di [AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per i dettagli dei pacchetti di add-on e dei pacchetti dei siti di riferimento.
+* **AEM essenziali** AEM QuickStart,  pacchetto aggiuntivo AEM Forms e pacchetti per siti di riferimento. Consultate [versioni](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) AEM Forms per i dettagli dei pacchetti di componenti aggiuntivi e di riferimento per siti Web.
 
 * **Un servizio** SMTP È possibile utilizzare qualsiasi servizio SMTP.
 
-* **Account sviluppatore Adobe Sign e applicazione** API Adobe Sign Per utilizzare le funzionalità di firma digitale, è necessario un account sviluppatore Adobe Sign. Vedere [Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
+* **account sviluppatore Adobe Sign e  applicazione** API Adobe Sign Per utilizzare le funzionalità di firma digitale, è necessario  account sviluppatore Adobe Sign. Consultate [Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 
-* Un&#39;istanza in esecuzione di Microsoft Dynamics 365 da integrare con i AEM Forms. Per eseguire il sito di riferimento, importare i dati di esempio nell&#39;istanza di Microsoft Dynamics per precompilare la comunicazione interattiva utilizzata nel sito di riferimento.
-* Un&#39;istanza in esecuzione di AEM con il pacchetto del componente aggiuntivo Forms. Per ulteriori informazioni, vedere [Installazione e configurazione di AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
+* Un&#39;istanza in esecuzione di Microsoft Dynamics 365 da integrare con  AEM Forms. Per eseguire il sito di riferimento, importare i dati di esempio nell&#39;istanza di Microsoft Dynamics per precompilare la comunicazione interattiva utilizzata nel sito di riferimento.
+* Un&#39;istanza in esecuzione di AEM con il pacchetto del componente aggiuntivo Forms. Per ulteriori informazioni, consultate [Installazione e configurazione  AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 Effettuate i seguenti passaggi nella sequenza consigliata per configurare e impostare i siti di riferimento.
 
@@ -65,14 +67,14 @@ Effettuate i seguenti passaggi nella sequenza consigliata per configurare e impo
    <th><strong>Note</strong></th>
   </tr>
   <tr>
-   <td><a href="#installandconfigureaemform">Installare e configurare AEM Forms</a></td>
+   <td><a href="#installandconfigureaemform">Installare e configurare  AEM Forms</a></td>
    <td>Creazione e pubblicazione</td>
-   <td>Installate e configurate le istanze di creazione e pubblicazione dei AEM Forms.</td>
+   <td>Installate e configurate  istanze di creazione e pubblicazione AEM Forms.</td>
   </tr>
   <tr>
    <td><a href="#ssl">Configurare SSL</a></td>
    <td>Author and Publish<br /> </td>
-   <td>Abilita HTTP su SSL per comunicazioni sicure con Adobe Sign.</td>
+   <td>Abilita HTTP su SSL per comunicazioni sicure con  Adobe Sign.</td>
   </tr>
   <tr>
    <td><p><a href="#externalizer">Configurare la configurazione Day CQ Link Externalizer</a></p> </td>
@@ -92,12 +94,12 @@ Effettuate i seguenti passaggi nella sequenza consigliata per configurare e impo
   <tr>
    <td><a href="#aemds">Configurare le impostazioni di AEM DS</a></td>
    <td>Autore</td>
-   <td>Configurare AEM DS per l'invio del modulo nell'istanza di pubblicazione e i flussi di lavoro di elaborazione nell'istanza di creazione.</td>
+   <td>Configurare AEM DS per l'invio del modulo nell'istanza di pubblicazione e per l'elaborazione dei flussi di lavoro nell'istanza di creazione.</td>
   </tr>
   <tr>
    <td><a href="#refsite">Distribuzione di pacchetti di siti di riferimento</a></td>
    <td>Autore</td>
-   <td>Distribuire pacchetti di siti di riferimento nell'istanza di creazione di AEM Forms.</td>
+   <td>Distribuire pacchetti per siti di riferimento ’istanza di creazione AEM Forms.</td>
   </tr>
   <tr>
    <td><a href="../../forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">Importa dati di esempio in Microsoft Dynamics</a></td>
@@ -107,15 +109,15 @@ Effettuate i seguenti passaggi nella sequenza consigliata per configurare e impo
   <tr>
    <td><a href="../../forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Configurare il servizio cloud OAuth per Microsoft Dynamics</a></td>
    <td>Creazione e pubblicazione</td>
-   <td>Configurate il servizio cloud OAuth in AEM Forms per abilitare la comunicazione tra AEM Forms e Microsoft Dynamics. </td>
+   <td>Configurare il servizio cloud OAuth in  AEM Forms per abilitare la comunicazione tra  AEM Forms e Microsoft Dynamics. </td>
   </tr>
   <tr>
-   <td><a href="#scheduler">Configurare Adobe Sign Scheduler</a></td>
+   <td><a href="#scheduler">Configurare  pianificazione Adobe Sign</a></td>
    <td>Author and Publish<br /> </td>
    <td>Modifica la configurazione del pianificatore per controllare lo stato ogni due minuti.</td>
   </tr>
   <tr>
-   <td><a href="#sign-service">Configurare il sito di riferimento Adobe Sign Cloud Service</a></td>
+   <td><a href="#sign-service">Configura sito di riferimento  Cloud Service Adobe Sign</a></td>
    <td>Author and Publish<br /> </td>
    <td>Una configurazione fornita con i siti di riferimento crea pacchetti e richiede la riconfigurazione con credenziali valide.</td>
   </tr>
@@ -132,9 +134,9 @@ Effettuate i seguenti passaggi nella sequenza consigliata per configurare e impo
  </tbody>
 </table>
 
-## Installare e configurare AEM Forms {#installandconfigureaemform}
+## Installare e configurare  AEM Forms {#installandconfigureaemform}
 
-Installate e distribuite AEM Forms come descritto in [Installazione e configurazione di AEM Forms in OSGi](../../forms/using/installing-configuring-aem-forms-osgi.md).
+Installate e distribuite  AEM Forms come descritto in [Installazione e configurazione  AEM Forms su OSGi](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 >[!NOTE]
 >
@@ -142,7 +144,7 @@ Installate e distribuite AEM Forms come descritto in [Installazione e configuraz
 
 ## Configurare SSL {#ssl}
 
-La configurazione SSL è necessaria per comunicare con i server Adobe Sign. Per i passaggi dettagliati, consultate [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md).
+La configurazione SSL è necessaria per comunicare con  server Adobe Sign. Per i passaggi dettagliati, consultate [Abilitazione di HTTP su SSL](/help/sites-administering/ssl-by-default.md).
 
 >[!CAUTION]
 >
@@ -188,7 +190,7 @@ Per configurare il servizio di posta elettronica nell’istanza di pubblicazione
 
 ## Ignora configurazione XSS predefinita {#xss}
 
-I modelli e-mail per il sito di riferimento We.Finance contengono collegamenti personalizzati nelle e-mail. Tali collegamenti hanno il segnaposto `${placeholder}`. Questi segnaposto vengono sostituiti dai valori effettivi prima dell&#39;invio delle e-mail. La configurazione di protezione XSS predefinita per AEM non consente l&#39;uso delle parentesi graffe (**{ }**) nell&#39;URL nel contenuto HTML. Tuttavia, potete ignorare la configurazione predefinita eseguendo i seguenti passaggi sull’istanza di pubblicazione:
+I modelli e-mail per il sito di riferimento We.Finance contengono collegamenti personalizzati nelle e-mail. Tali collegamenti hanno il segnaposto `${placeholder}`. Questi segnaposto vengono sostituiti dai valori effettivi prima dell&#39;invio delle e-mail. La configurazione di protezione XSS predefinita per AEM non consente le parentesi graffe (**{ }**) nell&#39;URL nel contenuto HTML. Tuttavia, potete ignorare la configurazione predefinita eseguendo i seguenti passaggi sull’istanza di pubblicazione:
 
 1. Copia `/libs/cq/xssprotection/config.xml` in `/apps/cq/xssprotection/config.xml`.
 1. Apri `/apps/cq/xssprotection/config.xml`.
@@ -204,20 +206,20 @@ Dopo aver configurato il server SMTP, provare a compilare un modulo utilizzando 
 
 ## Configurare le impostazioni di AEM DS {#aemds}
 
-Le impostazioni del servizio AEM DS sono richieste nell’istanza Pubblica per le comunicazioni e-mail nei casi di utilizzo del sito di riferimento. Per i passaggi dettagliati per configurare la configurazione del servizio AEM DS sull&#39;istanza Pubblica, consultate [Configurare le impostazioni](../../forms/using/configuring-the-processing-server-url-.md)di AEM DS.
+AEM le impostazioni del servizio DS sono richieste nell&#39;istanza Pubblica per le comunicazioni e-mail nei casi di utilizzo del sito di riferimento. Per i passaggi dettagliati per configurare AEM configurazione del servizio DS nell&#39;istanza Pubblica, vedi [Configurare AEM impostazioni](../../forms/using/configuring-the-processing-server-url-.md)DS.
 
-Per i siti di riferimento AEM Forms, in AEM DS Settings Service, specificate l&#39;URL del server di pubblicazione invece dell&#39;URL del server di elaborazione.
+Per  siti di riferimento AEM Forms, in AEM DS Settings Service, specificate l&#39;URL del server di pubblicazione invece dell&#39;URL del server di elaborazione.
 
 >[!CAUTION]
 >
->Non inserite `/lc` nell’URL del server di elaborazione se lo state configurando per AEM Forms OSGi.
+>Non inserite `/lc` l’URL del server di elaborazione se lo state configurando per  AEM Forms OSGi.
 
 ## Distribuzione di pacchetti di siti di riferimento {#refsite}
 
 Installate i pacchetti dei siti di riferimento utilizzando la distribuzione [](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)software.
 
 * [AEM Forms FSI Reference Site Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-FSI-REF-SITE)
-* [Pacchetto del sito di riferimento del governo dei AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-GOV-REF-SITE)
+* [pacchetto dimostrativo AEM Forms We.Gov](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=168&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fwe-gov-forms.pkg.all-2.0.2.zip)
 
 Per ulteriori informazioni sull&#39;utilizzo dei pacchetti, vedere [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 
@@ -234,7 +236,7 @@ I siti di riferimento dell&#39;applicazione ipoteca principale e dell&#39;applic
 
 Per importare l&#39;entità personalizzata per l&#39;applicazione di assicurazione automatica:
 
-1. Scaricate il pacchetto della soluzione **WeFinanceAutoInsurance_1_0.zip** dall&#39;istanza di `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` creazione di AEM.
+1. Scaricate il pacchetto della soluzione **WeFinanceAutoInsurance_1_0.zip** dall&#39;istanza di `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` authoring AEM.
 1. Nell’istanza di Microsoft Dynamics, accedete a **Impostazioni > Soluzioni** e fate clic su **Importa**. Selezionate e importate il pacchetto.
 
 Per importare l&#39;entità personalizzata per l&#39;applicazione di assicurazione automatica:
@@ -245,7 +247,7 @@ Per importare l&#39;entità personalizzata per l&#39;applicazione di assicurazio
 
 Per importare i record cliente e polizza assicurativa:
 
-1. Scarica i file di dati **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv** e **home ipoteca** dalle seguenti posizioni nell’istanza di creazione di AEM:
+1. Scaricate i file di dati **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv** e **home ipoteca** dalle seguenti posizioni nell&#39;istanza di autore AEM:
 
    * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
    * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
@@ -261,51 +263,51 @@ Per importare i record cliente e polizza assicurativa:
 
 ## Configurare il servizio cloud OAuth per Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
-Configurate il servizio cloud OAuth in AEM Forms per abilitare la comunicazione tra AEM Forms e Microsoft Dynamics. Per configurare l’Cloud Service OAuth sulle istanze di creazione e pubblicazione di AEM, effettuate le seguenti operazioni:
+Configurare il servizio cloud OAuth in  AEM Forms per abilitare la comunicazione tra  AEM Forms e Microsoft Dynamics. Effettuate le seguenti operazioni per configurare l’Cloud Service OAuth sulle istanze di creazione e pubblicazione AEM:
 
-1. Nell’istanza di creazione di AEM, andate a **Strumenti** > Servizi **** Cloud > Origini **** dati > **globale**. Tocca l&#39;icona **Refsite Dynamics Integration** e tocca Proprietà.
+1. AEM’istanza di creazione, andate a **Strumenti** > **Cloud Services** > Origini **** dati > **globale**. Tocca l&#39;icona **Refsite Dynamics Integration** e tocca Proprietà.
 1. Accedere all&#39;account Microsoft Azure Active Directory. Aggiungete l&#39;URL di configurazione del servizio cloud copiato nell&#39;impostazione **Rispondi URL** per l&#39;applicazione registrata. Salva la configurazione.
 1. Nella scheda Impostazioni autenticazione, specificate **Origine** servizio, ID **** client, Segreto **** cliente e URL **** risorsa per l&#39;istanza di Microsoft Dynamics. Fate clic su **Connetti a OAuth** per reindirizzare alla pagina di accesso di Microsoft Dynamics.
-1. Immettete le credenziali di accesso. Una volta effettuato l&#39;accesso, verrete reindirizzati alla pagina di configurazione del servizio cloud AEM Forms. Fai clic su **Salva e chiudi**. La configurazione del servizio cloud viene salvata.
+1. Immettete le credenziali di accesso. Una volta effettuato l&#39;accesso, verrete reindirizzati alla pagina di configurazione del servizio cloud  AEM Forms. Fai clic su **Salva e chiudi**. La configurazione del servizio cloud viene salvata.
 1. Vai a **Forms** > Integrazioni **** dati > **We.Finance**. Selezionare Auto Insurance (Dynamics) e fare clic su Edit (Modifica). Le entità di Microsoft Dynamics sono elencate nella scheda Origini dati. Attendere che tutte le entità siano recuperate da Microsoft Dynamics ed elencate nella scheda origini dati.
 1. Selezionare l&#39;entità **** AutoInsuranceRenewal e fare clic su **Test Model Object**. Nella sezione della richiesta di input, specificate il valore per l&#39;ID cliente come &quot;900001&quot; e fate clic su **Test**. Nella sezione Output vengono visualizzati i record recuperati da Microsoft Dynamics per ID cliente 900001.
 1. Nella sezione della richiesta di input, specificate il valore per l&#39;ID cliente come &quot;900001&quot; e fate clic su **Test**. Nella sezione Output vengono visualizzati i record recuperati da Microsoft Dynamics per ID cliente 900001.
 1. Ripetete i passaggi da 1 a 6 sull’istanza di pubblicazione.
 
-## Configurare Adobe Sign Scheduler {#scheduler}
+## Configurare  pianificazione Adobe Sign {#scheduler}
 
 Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
-1. Andate alla console di configurazione Web di AEM all&#39;indirizzo `https://'[server]:[port]'system/console/configMgr`.
-1. Individua e tocca il servizio **[!UICONTROL di configurazione di]** Adobe Sign per aprirlo alla configurazione.
+1. Passate AEM console Configurazione Web all&#39;indirizzo `https://'[server]:[port]'system/console/configMgr`.
+1. Individuate e toccate **[!UICONTROL servizio]** di configurazione Adobe Sign per aprirlo alla configurazione.
 1. Configurare l&#39;espressione **[!UICONTROL del pianificatore di aggiornamento]** dello stato come **0 0/2 * * ?**.
 
    >[!NOTE]
    >
-   >La configurazione dell’Utilità di pianificazione di cui sopra verifica lo stato del servizio Adobe Sign ogni due minuti.
+   >La configurazione del pianificatore di cui sopra verifica lo stato del servizio Adobe Sign  ogni due minuti.
 
 1. Toccate **[!UICONTROL Salva]**.
 
-## Configurare il sito di riferimento il servizio cloud Adobe Sign {#sign-service}
+## Configurare il sito di riferimento  servizio cloud Adobe Sign {#sign-service}
 
 Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 
-1. Vai a **Strumenti** > Servizi **** Cloud > **Adobe Sign** > **globale**. Selezionare **AEM Forms Riferimento Segno** sito e toccare Proprietà.
+1. Vai a **Strumenti** > **Cloud Services** > **Adobe Sign** > **globale**. Selezionare **AEM Forms Reference Site Sign** e toccare Proprietà.
 
    >[!CAUTION]
    >
-   >Assicurarsi che l’ `https://[host]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html` URL sia aggiunto all’elenco URL di reindirizzamento della configurazione OAuth dell’applicazione API Adobe Sign.
+   >Accertatevi che l&#39; `https://[host]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html` URL venga aggiunto all&#39;elenco URL di reindirizzamento della configurazione OAuth &#39;applicazione API Adobe Sign.
 
-1. Specificare l&#39;ID client e il segreto della configurazione OAuth dell&#39;applicazione Adobe Sign.
-1. (Facoltativo) Selezionare anche **[!UICONTROL l&#39;opzione]** Abilita Adobe Sign per gli allegati, quindi toccare **[!UICONTROL Connetti ad Adobe Sign]**. Aggiunge i file allegati a un modulo adattivo al documento Adobe Sign corrispondente inviato per la firma.
-1. Tocca **[!UICONTROL Connetti ad Adobe Sign]** ed effettua l&#39;accesso con le credenziali di Adobe Sign.
+1. Specificate l&#39;ID client e il segreto della configurazione OAuth dell&#39;applicazione Adobe Sign .
+1. (Facoltativo) Selezionate anche **[!UICONTROL l&#39;opzione]** Abilita  Adobe Sign per gli allegati e toccate **[!UICONTROL Connetti per  Adobe Sign]**. Aggiunge i file allegati a un modulo adattivo al documento Adobe Sign  corrispondente inviato per la firma.
+1. Toccate **[!UICONTROL Connect per  Adobe Sign]** ed effettuate l&#39;accesso con le credenziali Adobe Sign .
 
 ## Configurare Forms Common Configuration Service {#anonymous}
 
 Effettuate le seguenti operazioni nell’istanza di pubblicazione per consentire l’accesso agli utenti anonimi:
 
-1. Andate alla console di configurazione Web di AEM all&#39;indirizzo `https://'[server]:[port]'/system/console/configMgr`.
-1. Individuare e toccare **[!UICONTROL Forms Common Configuration Service]** per aprirlo alla configurazione.
+1. Passate AEM console Configurazione Web all&#39;indirizzo `https://'[server]:[port]'/system/console/configMgr`.
+1. Individuate e toccate **[!UICONTROL Forms Common Configuration Service]** per aprirlo alla configurazione.
 1. Configura il campo **[!UICONTROL Consenti]** per **[!UICONTROL tutti gli utenti]**.
 1. Toccate **[!UICONTROL Salva]**.
 
@@ -317,66 +319,66 @@ Per le istanze di creazione e pubblicazione effettuate le seguenti operazioni:
 1. Andate a **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** e aprite il file swagger.
 1. Aggiornate le impostazioni di host e porta in base all&#39;ambiente in uso.
 1. Salvate le impostazioni.
-1. (Solo **istanza** Author) Vai a **Strumenti** > Servizi **** Cloud > Origini **** dati > **globale**. Selezionate **roi-rest** e toccate **Properties**.Toccate Impostazioni **** autenticazione e impostate Tipo **** autenticazione su Autenticazione **** di base. Specificate `admin`/ `admin`come nome utente/password per accedere al servizio. Toccate **Salva e chiudi**.
+1. (Solo **istanza** Author) Vai a **Strumenti** > **Cloud Services** > **Origini** dati > **globale**. Selezionate **roi-rest** e toccate **Properties**.Toccate Impostazioni **** autenticazione e impostate Tipo **** autenticazione su Autenticazione **** di base. Specificate `admin`/ `admin`come nome utente/password per accedere al servizio. Toccate **Salva e chiudi**.
 
-## Integrazione con Marketing Cloud {#integrate-with-marketing-cloud}
+## Integrazione con il Marketing Cloud {#integrate-with-marketing-cloud}
 
-Potete integrare i AEM Forms con Adobe  Analytics e  Adobe Target. Adobe  Analytics consente di generare report e analizzare le prestazioni dei moduli adattivi,  Adobe Target consente di distribuire esperienze personalizzate ed eseguire test A/B per i moduli adattivi.
+È possibile integrare il  AEM Forms con  Adobe Analytics e  Adobe Target.  Adobe Analytics consente di generare report e analizzare le prestazioni dei moduli adattivi, mentre  Adobe Target consente di distribuire esperienze personalizzate ed eseguire test A/B per i moduli adattivi.
 
-Per configurare Adobe  Analytics e  Adobe Target in AEM Forms, effettuate le seguenti operazioni.
+Effettuate le seguenti operazioni per configurare  Adobe Analytics e  Adobe Target  AEM Forms.
 
-### Configurare Adobe  Analytics {#configureanalytics}
+### Configurare  Adobe Analytics {#configureanalytics}
 
-L&#39;integrazione dei AEM Forms con Adobe  Analytics consente di monitorare e analizzare in che modo i clienti interagiscono con moduli e documenti. Consente di identificare e risolvere le aree problematiche e di agire per aumentare il tasso di conversione.
+&#39;integrazione AEM Forms con  Adobe Analytics consente di monitorare e analizzare in che modo i clienti interagiscono con moduli e documenti. Consente di identificare e risolvere le aree problematiche e di agire per aumentare il tasso di conversione.
 
-Per provare questa funzionalità nel sito di riferimento, configura il tuo account Analytics  come descritto in [Configurazione di analisi e rapporti](../../forms/using/configure-analytics-forms-documents.md).
+Per provare questa funzionalità nel sito di riferimento, configura il tuo account Analytics come descritto in [Configurazione di analisi e rapporti](../../forms/using/configure-analytics-forms-documents.md).
 
 Per generare un rapporto, i dati iniziali vengono raggruppati con i siti di riferimento. Prima di utilizzare i dati iniziali, effettuate le seguenti operazioni:
 
-1. Verificate che le configurazioni di analisi We.Finance siano disponibili nei AEM cloud services. Puoi trovare i servizi cloud in uno dei seguenti modi:
+1. Verifica che le configurazioni di analisi We.Finance siano disponibili nei servizi AEM Cloud. Puoi trovare i servizi cloud in uno dei seguenti modi:
 
-   * Passa a **[!UICONTROL Strumenti>Servizi cloud>Servizi]** cloud legacy oppure passa a https://&lt;host>:&lt;porta>/libs/cq/core/content/tools/cloudservices.html.
-   * Nella pagina Servizi **** cloud, nella sezione **[!UICONTROL Adobe  Analytics]** , fai clic su `Show Configurations`. Potete vedere le configurazioni We.Finance disponibili. Fate clic per aprire la configurazione. Nella pagina di configurazione, fate clic su **[!UICONTROL Modifica]**. Immettete Società, Nome utente, Segreto condiviso (Password) e Centro dati validi e fate clic su **[!UICONTROL Connetti per  Analytics]**. Una volta visualizzata la finestra di dialogo Connessione, fate clic su **[!UICONTROL OK]** nella finestra di dialogo di configurazione. Configurate il framework nella configurazione Analytics  come descritto in [Configurazione  Analytics e Report](../../forms/using/configure-analytics-forms-documents.md).
+   * Accedete a **[!UICONTROL Strumenti>Cloud Services>Cloud Services]** legacy oppure selezionate https://&lt;host>:&lt;porta>/libs/cq/core/content/tools/cloudservices.html.
+   * Nella pagina **[!UICONTROL Cloud Services]** , nella sezione **[!UICONTROL Adobe Analytics]** , fate clic su `Show Configurations`. Potete vedere le configurazioni We.Finance disponibili. Fate clic per aprire la configurazione. Nella pagina di configurazione, fate clic su **[!UICONTROL Modifica]**. Specifica società, nome utente, segreto condiviso (password) e centro dati validi e fai clic su **[!UICONTROL Connetti ad Analytics]**. Una volta visualizzata la finestra di dialogo Connessione, fate clic su **[!UICONTROL OK]** nella finestra di dialogo di configurazione. Configurate il framework nella configurazione di Analytics come descritto in [Configurazione di Analytics e Report](../../forms/using/configure-analytics-forms-documents.md).
 
 1. Andate a https://&lt;*host*>:&lt;*porta*>/system/console/configMgr ed effettuate le seguenti operazioni:
 
-   * Nella pagina Configurazione **[!UICONTROL console]** Web, trovate e fate clic su **[!UICONTROL AEM Forms  Configurazione]** Analytics.
+   * Nella pagina Configurazione **[!UICONTROL console]** Web, individua e fai clic su **[!UICONTROL Configurazione]** AEM Forms Analytics.
 
-   * Nel campo **[!UICONTROL SiteCatalyst Framework]** della finestra di dialogo AEM Forms  configurazione Analytics, selezionate we-finance(we-finance) o we-gov(we-gov).
+   * Nel campo **[!UICONTROL Framework]** SiteCatalyst della finestra di dialogo Configurazione AEM Forms Analytics , selezionate we-finance(we-finance) o we-gov(we-gov).
    * Fate clic su **[!UICONTROL Salva]** e lasciate che la pagina venga aggiornata.
 
 1. Passare a Forms Manager all&#39;indirizzo https://&lt;host>:&lt;porta>/aem/forms ed effettuare le seguenti operazioni:
 
    * Aprire la cartella We.Finance e selezionare il modulo per il quale si desidera visualizzare il rapporto.
-   * Fare clic su Abilita  Analytics nella barra degli strumenti Azioni. Dopo aver attivato l&#39;analisi del modulo, fare clic su  report Analytics. Potete visualizzare un rapporto vuoto generato. Dopo la generazione di un report vuoto, devi fornire i dati iniziali forniti con il pacchetto refsite per generare report di analisi a scopo dimostrativo.
+   * Fate clic su Abilita analisi nella barra degli strumenti Azioni. Dopo aver attivato l&#39;analisi del modulo, fai clic su Rapporto analisi. Potete visualizzare un rapporto vuoto generato. Dopo la generazione di un report vuoto, devi fornire i dati iniziali forniti con il pacchetto refsite per generare report di analisi a scopo dimostrativo.
 
    I siti di riferimento forniscono report di analisi con dati iniziali per i casi di utilizzo di carte di credito, ipoteche per la casa e assistenza ai bambini.
 
 ### Configurare Target {#configure-target}
 
-Il sito di riferimento mostra l’integrazione di AEM Forms con  Adobe Target che consente di includere contenuti mirati e personalizzati nei documenti adattivi. Consente inoltre di creare test A/B per i moduli adattivi.
+Il sito di riferimento mostra l&#39;integrazione di  AEM Forms con  Adobe Target che consente di includere contenuti mirati e personalizzati nei documenti adattivi. Consente inoltre di creare test A/B per i moduli adattivi.
 
-Per provare l’integrazione nel sito di riferimento, effettuate le seguenti operazioni per configurare Target in AEM:
+Per provare l&#39;integrazione nel sito di riferimento, effettuate le seguenti operazioni per configurare Target in AEM:
 
 1. Avviate l&#39;argomento jvm dell&#39;autore `-Dabtesting.enabled=true` per abilitare i test A/B sul server.
 
    >[!NOTE]
    >
-   >Se l’istanza AEM è in esecuzione su JBoss, avviata come servizio dall’installazione chiavi in mano, aggiungete il `-Dabtesting.enabled=true` parametro nella seguente voce del `jboss\bin\standalone.conf.bat` file:
+   >Se l&#39;istanza AEM è in esecuzione su JBoss, che viene avviata come servizio dall&#39;installazione di Turnkey, aggiungere il `-Dabtesting.enabled=true` parametro nella seguente voce del `jboss\bin\standalone.conf.bat` file:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Accesso `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
 
-1. Nella sezione **[!UICONTROL Adobe Target]** , fate clic su **[!UICONTROL Mostra configurazioni]**. È possibile visualizzare la configurazione Target We.Finance disponibile. Fate clic per aprire la configurazione. Nella pagina di configurazione, fate clic su **[!UICONTROL Modifica]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Modifica componente]** per la configurazione.
+1. Nella **[!UICONTROL sezione Adobe Target]** , fate clic su **[!UICONTROL Mostra configurazioni]**. È possibile visualizzare la configurazione di destinazione We.Finance disponibile. Fate clic per aprire la configurazione. Nella pagina di configurazione, fate clic su **[!UICONTROL Modifica]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Modifica componente]** per la configurazione.
 
-1. Specificate il codice cliente, l&#39;e-mail e la password associati al vostro account Target. Selezionate il tipo di API **[!UICONTROL REST]**.
-1. Click **[!UICONTROL Connect to Adobe target]**. Una volta configurato l&#39;account Target, fate clic su **[!UICONTROL OK]**. Potete vedere che la configurazione del pacchetto include un Target Framework.
+1. Specifica il codice cliente, l&#39;e-mail e la password associati all&#39;account Target. Selezionate il tipo di API **[!UICONTROL REST]**.
+1. Click **[!UICONTROL Connect to Adobe target]**. Una volta configurato l&#39;account Target, fate clic su **[!UICONTROL OK]**. Potete vedere che la configurazione del pacchetto include un framework di Target.
 
 1. Passa a `https://<hostname>:<port>/system/console/configMgr`.
 
-1. Fate clic su **[!UICONTROL AEM Forms Target Configuration]**.
+1. Fate clic su **[!UICONTROL Configurazione]** AEM Forms Target.
 1. Selezionate un framework Target.
-1. Nel campo URL **** Target, specificate l’URL per i AEM Forms. Esempio: `https://<hostname>:<port>/`.
+1. Nel campo URL **** Target, specificate l&#39;URL per  AEM Forms. Esempio: `https://<hostname>:<port>/`.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
