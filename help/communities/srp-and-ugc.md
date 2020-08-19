@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ L&#39;API SRP non è una classe astratta, è un&#39;interfaccia. L&#39;implement
 
 I mezzi per utilizzare l&#39;API SRP sono attraverso le utility fornite, come quelle presenti nel pacchetto SocialResourceUtilities.
 
-Quando esegui l’aggiornamento da AEM 6.0 o versioni precedenti, sarà necessario migrare l’UGC per tutti gli SRP, per i quali è disponibile uno strumento Open Source. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Durante l&#39;aggiornamento da AEM 6.0 o versioni precedenti, sarà necessario migrare UGC per tutti gli SRP, per i quali è disponibile uno strumento Open Source. See [Upgrading to AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -102,9 +105,9 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## UGC-Related Storage Locations {#ugc-related-storage-locations}
 
-Le seguenti descrizioni della posizione di storage possono essere di aiuto durante lo sviluppo con JSRP o forse MSRP. Al momento non esiste alcuna interfaccia utente per accedere a UGC memorizzati in ASRP, in quanto esistono per gli strumenti JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (MongoDB).
+Le seguenti descrizioni della posizione di storage possono essere di aiuto durante lo sviluppo con JSRP o forse MSRP. Attualmente non esiste alcuna interfaccia utente per accedere a UGC memorizzati in ASRP, in quanto esistono per gli strumenti JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (MongoDB).
 
-**posizione del componente**
+**Posizione del componente**
 
 Quando un membro accede a UGC nell’ambiente di pubblicazione, interagisce con un componente come parte di un sito AEM.
 
@@ -112,7 +115,7 @@ Un esempio di tale componente è il componente [](http://localhost:4502/content/
 
 * Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-**posizione nodo ombra**
+**Posizione nodo ombreggiato**
 
 La creazione di UGC crea anche un nodo [](srp.md#about-shadow-nodes-in-jcr) ombra a cui vengono applicati gli ACL necessari. Il percorso del nodo shadow corrispondente nell&#39;archivio locale è il risultato della precedenza del percorso principale del nodo shadow al percorso del componente:
 
@@ -126,7 +129,7 @@ L&#39;UGC viene creato in nessuna di queste posizioni e dovrebbe essere accessib
 * Percorso directory principale = `/content/usergenerated/asi/srp-choice`
 * Nodo UGC per JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Per JSRP, il nodo UGC è presente* solo ** nell’istanza AEM (autore o pubblicazione) in cui è stato immesso. Se immessa in un’istanza di pubblicazione, la moderazione non sarà possibile dalla console di moderazione sull’autore.
+*Attenzione*: per JSRP, il nodo UGC sarà presente *solo* nell’istanza AEM (autore o pubblicazione) in cui è stato immesso. Se immessa in un’istanza di pubblicazione, la moderazione non sarà possibile dalla console di moderazione sull’autore.
 
 ## Informazioni correlate {#related-information}
 
