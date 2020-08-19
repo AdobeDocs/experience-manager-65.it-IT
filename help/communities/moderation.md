@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Console di moderazione {#moderation-console}
 
-Negli AEM Communities, la [moderazione di contenuti](/help/communities/moderate-ugc.md) della community è possibile sia dall&#39;ambiente di creazione che da quello di pubblicazione da parte di amministratori e moderatori della comunità (membri della comunità attendibili assegnati come moderatori).
+In  AEM Communities, la [moderazione di contenuti](/help/communities/moderate-ugc.md) della community è possibile sia dall&#39;ambiente di creazione che da quello di pubblicazione da parte di amministratori e moderatori della comunità (membri della comunità attendibili assegnati come moderatori).
 
 Gli amministratori e i moderatori della community possono eseguire anche la moderazione [contestuale](/help/communities/in-context.md) nell’ambiente di pubblicazione.
 
@@ -241,15 +241,15 @@ Oltre ai filtri integrati nella barra [dei filtri](/help/communities/moderation.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Il progetto [di](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) esempio su Github implementa il filtro Tag, per filtrare l’elenco UGC in base all’applicazione o meno dei tag specifici al contenuto generato dall’utente. Potete seguire il codice di esempio e creare filtri analoghi per altri campi di metadati UGC simili.
+Il progetto [di](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) esempio su Github implementa il filtro Tag, per filtrare l’elenco UGC in base all’applicazione o meno dei tag specifici al contenuto generato dall’utente. Potete seguire il codice di esempio e creare filtri analoghi per altri campi di metadati UGC simili.
 
 Per installare l’esempio per il filtro Tag:
 
-1. Aprite il gestore pacchetti nell’istanza AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Aprite il gestore pacchetti nell&#39;istanza di AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e nell&#39;istanza di AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Create il pacchetto `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` dal codice Github, quindi installate e abilitate lo stesso.
-1. Aprite la console dei bundle nell’istanza AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Aprite la console dei bundle nell&#39;istanza di AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e nell&#39;istanza di AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Create il pacchetto ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` da Github, quindi installate e abilitate lo stesso.
-1. Andate al nodo **/apps/social/moderation/facets** sul AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) e AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
+1. Andate al nodo **/apps/social/moderation/facets** su AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) e AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Aggiungete un utente tecnico **community-utilità-reader** con `jcr:read` le autorizzazioni.
 
 Per esporre i filtri personalizzati sui siti comunitari esistenti:
