@@ -1,6 +1,6 @@
 ---
-title: Portale Moduli| Gestione dei dati utente
-seo-title: Portale Moduli| Gestione dei dati utente
+title: Forms Portal | Gestione dei dati utente
+seo-title: Forms Portal | Gestione dei dati utente
 description: 'null'
 seo-description: 'null'
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
@@ -9,23 +9,26 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+workflow-type: tm+mt
+source-wordcount: '859'
+ht-degree: 1%
 
 ---
 
 
-# Portale Moduli| Gestione dei dati utente {#forms-portal-handling-user-data}
+# Forms Portal | Gestione dei dati utente {#forms-portal-handling-user-data}
 
-Il portale AEM Forms include componenti che è possibile utilizzare per elencare moduli adattivi, moduli HTML5 e altre risorse su Forms nella pagina AEM Sites. Inoltre, è possibile configurarlo per visualizzare le bozze e i moduli adattivi inviati e i moduli HTML5 per un utente connesso. Per ulteriori informazioni sul portale dei moduli, vedere [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] Portal fornisce componenti che è possibile utilizzare per elencare moduli adattivi, moduli HTML5 e altre risorse Forms sulla [!DNL AEM Sites] pagina. Inoltre, è possibile configurarlo per visualizzare le bozze e i moduli adattivi inviati e i moduli HTML5 per un utente connesso. Per ulteriori informazioni sul portale dei moduli, vedere [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md).
 
-Quando un utente connesso salva un modulo adattivo come bozza o lo invia, viene visualizzato nelle schede Bozze e Invii del portale dei moduli. I dati per le bozze o i moduli inviati vengono memorizzati nell&#39;archivio dati configurato per la distribuzione AEM. Le bozze e gli invii di utenti anonimi non vengono visualizzati sulla pagina del portale dei moduli; tuttavia, i dati vengono memorizzati nell&#39;archivio dati configurato. Per ulteriori informazioni, consultate [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
+Quando un utente connesso salva un modulo adattivo come bozza o lo invia, viene visualizzato nelle schede Bozze e Invii del portale dei moduli. I dati per le bozze o i moduli inviati vengono memorizzati nell&#39;archivio dati configurato per AEM distribuzione. Le bozze e gli invii di utenti anonimi non vengono visualizzati nella pagina del portale dei moduli; tuttavia, i dati vengono memorizzati nell&#39;archivio dati configurato. Per ulteriori informazioni, consultate [Configurazione dei servizi di archiviazione per bozze e invii](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Archivio dati utente e data {#user-data-and-data-stores}
 
 Il portale Forms memorizza i dati per i moduli bozza e inviati nei seguenti scenari:
 
-* L&#39;azione di invio configurata nel modulo adattivo è l&#39;azione **di invio di** Forms Portal.
-* Per le azioni di invio diverse da **Forms Portal - Azione** di invio, l&#39;opzione **[!UICONTROL Memorizza dati nel portale]** dei moduli è abilitata nelle proprietà **Invio** del contenitore di moduli adattivi.
+* L&#39;azione di invio configurata nel modulo adattivo è Azione **di invio** Forms Portal.
+* Per le azioni di invio diverse da **Forms Portal Submit Action**, l&#39;opzione **[!UICONTROL Memorizza dati nel portale]** dei moduli è abilitata nelle proprietà **[!UICONTROL Invia]** del contenitore di moduli adattivi.
 
 Per ogni bozza e modulo inviato per utenti anonimi e connessi, il portale dei moduli memorizza i dati seguenti:
 
@@ -44,17 +47,17 @@ A seconda della persistenza dell&#39;archivio dati configurato, le bozze e i dat
   </tr>
   <tr>
    <td><p>Predefiniti</p> </td>
-   <td><p>Archivio AEM di istanze di creazione e pubblicazione</p> </td>
+   <td><p>AEM archivio delle istanze di creazione e pubblicazione</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>
-   <td><p>Archivio AEM per l’autore e le istanze AEM remote</p> </td>
+   <td><p>AEM archivio dell'autore e delle istanze AEM remote</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Database</p> </td>
-   <td><p>Archivio AEM dell’istanza di creazione e delle tabelle di database</p> </td>
+   <td><p>AEM archivio dell'istanza di creazione e delle tabelle di database</p> </td>
    <td>Tabelle di database <code>data</code>, <code>metadata</code>e <code>additionalmetadata</code></td>
   </tr>
  </tbody>
@@ -66,13 +69,13 @@ A seconda della persistenza dell&#39;archivio dati configurato, le bozze e i dat
 
 ### Istanze AEM {#aem-instances}
 
-Tutte le bozze e i dati dei moduli inviati nelle istanze di AEM (autore, pubblicazione o remoto) per gli utenti registrati e anonimi sono memorizzati nel `/content/forms/fp/` nodo dell&#39;archivio AEM applicabile. Ogni volta che un utente connesso o anonimo salva una bozza o invia un modulo, una `draft ID` o `submission ID`, una `user data ID`, e un collegamento casuale `ID` per ciascun allegato (se applicabile) viene generato, associato alla relativa bozza o invio.
+Tutte le bozze e i dati dei moduli inviati nelle istanze AEM (autore, pubblicazione o remoto) per gli utenti connessi e anonimi sono memorizzati nel `/content/forms/fp/` nodo dell&#39;archivio AEM applicabile. Ogni volta che un utente connesso o anonimo salva una bozza o invia un modulo, una `draft ID` o `submission ID`, una `user data ID`, e un collegamento casuale `ID` per ciascun allegato (se applicabile) viene generato, associato alla relativa bozza o invio.
 
 #### Accesso ai dati utente {#access-user-data}
 
-Quando un utente connesso salva una bozza o invia un modulo, viene creato un nodo figlio con il relativo ID utente. Ad esempio, le bozze e i dati di invio per Sarah Rose il cui ID utente è `srose` `/content/forms/fp/srose/` memorizzato nel nodo nell&#39;archivio di AEM. All&#39;interno del nodo ID utente, i dati sono organizzati in una struttura gerarchica.
+Quando un utente connesso salva una bozza o invia un modulo, viene creato un nodo figlio con il relativo ID utente. Ad esempio, le bozze e i dati di invio per Sarah Rose il cui ID utente è `srose` memorizzato nel `/content/forms/fp/srose/` nodo AEM repository. All&#39;interno del nodo ID utente, i dati sono organizzati in una struttura gerarchica.
 
-La tabella seguente illustra come i dati per tutte le bozze `srose` vengono memorizzati nell’archivio AEM.
+Nella tabella seguente è illustrato come i dati per tutte le bozze `srose` vengono memorizzati AEM repository.
 
 >[!NOTE]
 >
@@ -92,13 +95,13 @@ La tabella seguente illustra come i dati per tutte le bozze `srose` vengono memo
 
 #### Eliminare i dati utente {#delete-user-data}
 
-Per eliminare completamente i dati utente dalle bozze e dagli invii di un utente connesso dai sistemi AEM, è necessario eliminare completamente il `user ID` nodo di un utente specifico dal nodo di creazione. Devi eliminare manualmente i dati da tutte le istanze AEM applicabili.
+Per eliminare completamente i dati utente da bozze e invii per un utente connesso AEM sistemi, è necessario eliminare completamente il `user ID` nodo di un utente specifico dal nodo di creazione. È necessario eliminare manualmente i dati da tutte le istanze AEM applicabili.
 
-Le bozze e i dati di invio per tutti gli utenti anonimi sono memorizzati all&#39;interno dei nodi comuni `drafts` e `submit` sotto `/content/forms/fp/anonymous`. Non esiste un metodo per trovare i dati per un particolare utente anonimo a meno che non siano note alcune informazioni identificabili.In questo caso, potete cercare le informazioni che identificano l’utente anonimo nell’archivio di AEM ed eliminare manualmente il nodo che lo contiene da tutte le istanze AEM applicabili per rimuovere i dati dal sistema AEM. Tuttavia, per eliminare i dati per tutti gli utenti anonimi, è possibile eliminare il `anonymous` nodo per rimuovere le bozze e i dati di invio per tutti gli utenti anonimi.
+Le bozze e i dati di invio per tutti gli utenti anonimi sono memorizzati all&#39;interno dei nodi comuni `drafts` e `submit` sotto `/content/forms/fp/anonymous`. Non esiste un metodo per trovare i dati per un utente anonimo specifico, a meno che non siano note alcune informazioni identificabili. In questo caso, è possibile cercare le informazioni che identificano l&#39;utente anonimo in AEM repository ed eliminare manualmente il nodo che lo contiene da tutte le istanze AEM applicabili per rimuovere i dati dal sistema AEM. Tuttavia, per eliminare i dati per tutti gli utenti anonimi, è possibile eliminare il `anonymous` nodo per rimuovere le bozze e i dati di invio per tutti gli utenti anonimi.
 
 ### Database {#database}
 
-Quando AEM è configurato per memorizzare i dati in un database, i dati di bozza e invio del portale dei moduli vengono memorizzati nelle seguenti tabelle di database per gli utenti anonimi e connessi:
+Se AEM è configurato per memorizzare i dati in un database, i dati di bozza e invio del portale dei moduli vengono memorizzati nelle seguenti tabelle di database per gli utenti anonimi e connessi:
 
 * data
 * metadata
