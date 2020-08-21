@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -33,9 +33,9 @@ Il documento descrive:
 
 ### Requisito {#requirement}
 
-I dati per il sito `Community Activity List` sono disponibili solo se Adobe  Analytics è concesso in licenza e configurato per il sito della community.
+I dati per il sito `Community Activity List` sono disponibili solo se  Adobe Analytics è concesso in licenza e configurato per il sito della community.
 
-Consultate [Configurazione Analytics per le funzioni](/help/communities/analytics.md)Community.
+Consultate Configurazione [di Analytics per le funzioni](/help/communities/analytics.md)Community.
 
 ### Aggiunta di un elenco di attività community a una pagina {#adding-a-community-activity-list-to-a-page}
 
@@ -55,11 +55,11 @@ La prima volta che il componente viene inserito in una pagina di un sito communi
 
 Selezionate il `Community Activity List` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![configure](assets/configure-new.png)
 
 Nella scheda **Commenti** , specificate se e come vengono visualizzati i commenti per i file caricati:
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![proprietà](assets/activity-list-properties.png)
 
 * **Tipo**
 
@@ -126,5 +126,5 @@ Il valore predefinito è selezionato.
 
 **Configurazione dei contenuti** di tendenza: Tipo = Contenuto, Tipo di attività = Post
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![components](assets/activity-list-components.png)
 
