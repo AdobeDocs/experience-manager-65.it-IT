@@ -1,8 +1,8 @@
 ---
 title: Aggiornamento ad AEM 6.5 Communities
 seo-title: Aggiornamento ad AEM 6.5 Communities
-description: Come effettuare l’aggiornamento da una versione precedente a AEM 6.4 Communities
-seo-description: Come effettuare l’aggiornamento da una versione precedente a AEM 6.4 Communities
+description: Come effettuare l'aggiornamento da una versione precedente a AEM 6.4 Communities
+seo-description: Come effettuare l'aggiornamento da una versione precedente a AEM 6.4 Communities
 uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,18 +11,21 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 3%
 
 ---
 
 
 # Aggiornamento ad AEM 6.5 Communities {#upgrading-to-aem-communities}
 
-A seconda della topologia e delle funzioni di ciascun sito, potrebbero essere necessarie le seguenti azioni quando si esegue l&#39;aggiornamento ad AEM Communities 6.5 o si installa l&#39;ultimo pacchetto di funzioni.
+A seconda della topologia e delle caratteristiche di ciascun sito, per effettuare l&#39;aggiornamento ad AEM Communities 6.5 o installare l&#39;ultimo pacchetto di funzioni potrebbero essere necessarie le azioni seguenti.
 
-Questa sezione è specifica per Communities e integra le informazioni fornite in [Aggiornamento ad AEM 6.5](/help/sites-deploying/upgrade.md) (piattaforma).
+Questa sezione è specifica per Communities e integra le informazioni fornite in [Aggiornamento a AEM 6.5](/help/sites-deploying/upgrade.md) (piattaforma).
 
-## Aggiornamento da AEM 6.1 o versione successiva {#upgrading-from-aem-or-later}
+## Aggiornamento da AEM 6.1 o successivo {#upgrading-from-aem-or-later}
 
 ### Reindicizza Solr {#reindex-solr}
 
@@ -40,15 +43,15 @@ Per assistenza nella migrazione dei contenuti da Enablement 1.0, contattate l&#3
 
 ## Aggiornamento da AEM 6.0 {#upgrading-from-aem}
 
-Se è necessario mantenere un UGC preesistente, i mezzi per farlo dipendono dal fatto che la distribuzione memorizzi UGC [locale](#on-premise-storage) o in [Adobe Cloud](#adobe-cloud-storage).
+Se è necessario mantenere un UGC preesistente, i mezzi per farlo dipendono dal fatto che la distribuzione memorizzi UGC [on-premise](#on-premise-storage) o nel [Adobe cloud](#adobe-cloud-storage).
 
-### Archiviazione Adobe Cloud {#adobe-cloud-storage}
+###  Adobe di archiviazione cloud {#adobe-cloud-storage}
 
-Se il sito aggiornato è stato configurato per l’utilizzo dell’archiviazione cloud Adobe, potrebbe apparire (in modo non corretto) come se tutti gli UGC fossero andati perduti in quanto i metodi SRP non sarebbero in grado di individuare gli UGC preesistenti nella vecchia posizione.
+Se il sito aggiornato è stato configurato per l&#39;utilizzo  Adobe di archiviazione cloud, potrebbe apparire (in modo non corretto) come se tutti gli UGC fossero andati persi in quanto i metodi SRP non sarebbero in grado di individuare gli UGC preesistenti nella vecchia posizione.
 
 Pertanto, esiste la capacità di istruire l&#39;ASRP a utilizzare `AEM 6.0 compatability-mode` per accedere a UGC.
 
-Per tutte le istanze di creazione e pubblicazione di AEM 6.3:
+Per tutte le istanze di creazione e pubblicazione AEM 6.3:
 
 * Effettuate l&#39;accesso con privilegi di amministratore.
 * Configurare [ASRP](/help/communities/asrp.md).
@@ -58,25 +61,26 @@ Per tutte le istanze di creazione e pubblicazione di AEM 6.3:
 
       * Ad esempio, [https://&lt;host>:&lt;porta>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-      * Individua la configurazione **AEM Communities Utilities** .
+      * Individua **configurazione di AEM Communities Utilities** .
       * Selezionare per espandere il pannello di configurazione:
 
-         * *Deseleziona*`Cloud Storage`
+         * *Deseleziona* `Cloud Storage`
 
          * Seleziona **Salva**
-      ![chlimage_1-176](assets/chlimage_1-176.png)
+
+      ![utilità](assets/utilities.png)
 
 
 ### Storage locale {#on-premise-storage}
 
-Se il sito aggiornato non utilizza l’archiviazione cloud, qualsiasi UGC preesistente deve essere convertito in conformità alla nuova struttura introdotta in AEM 6.1 Communities a supporto dello store comune.
+Se il sito aggiornato non ha utilizzato l&#39;archiviazione cloud, qualsiasi UGC preesistente deve essere convertito in conformità alla nuova struttura introdotta in AEM 6.1 Communities a supporto dello store comune.
 
 A questo scopo, su GitHub è disponibile uno strumento di migrazione open source:
-Strumento di migrazione[AEM Communities UGC](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+[AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 ### API Java {#java-apis}
 
-Quando eseguite l&#39;aggiornamento dalle community social di AEM 6.0 alle community AEM 6.3, tenete presente che molte API sono state riorganizzate in pacchetti diversi. La maggior parte dovrebbe essere facilmente risolta quando si utilizza un IDE per la personalizzazione delle funzionalità di Communities.
+Quando eseguite l&#39;aggiornamento da AEM 6.0 social community a AEM community 6.3, tenete presente che molte API sono state riorganizzate in pacchetti diversi. La maggior parte dovrebbe essere facilmente risolta quando si utilizza un IDE per la personalizzazione delle funzionalità di Communities.
 
 Per informazioni dettagliate sul pacchetto SocialUtils obsoleto, visitate [SocialUtils Refactoring](/help/communities/socialutils.md).
 
@@ -84,15 +88,15 @@ Vedere anche [Utilizzo di Paradiso per Community](/help/communities/maven.md).
 
 ### Nessun modello di componente JSP {#no-jsp-component-templates}
 
-Il framework [di componenti](/help/communities/scf.md) social network (SCF) utilizza il linguaggio di modellazione [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) al posto di JSP (Java Server Pages) utilizzato prima di AEM 6.0.
+Il framework [di componenti](/help/communities/scf.md) social network (SCF) utilizza il linguaggio di modellazione [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) al posto di Java Server Pages (JSP) utilizzato prima del AEM 6.0.
 
-In AEM 6.0, i componenti JSP sono rimasti accanto ai nuovi componenti del framework HBS nella stessa posizione, mentre i componenti HBS si trovano generalmente in sottocartelle denominate &quot;hbs&quot;.
+In AEM 6.0, i componenti JSP sono rimasti accanto ai nuovi componenti framework HBS nella stessa posizione, con i componenti HBS generalmente situati in sottocartelle denominate &quot;hbs&quot;.
 
-A partire da AEM 6.1, i componenti JSP sono stati rimossi completamente. Per Communities, si consiglia di sostituire tutti gli usi dei componenti JSP con i componenti SCF.
+A partire dal AEM 6.1, i componenti JSP sono stati completamente rimossi. Per Communities, si consiglia di sostituire tutti gli usi dei componenti JSP con i componenti SCF.
 
-## Strumento di migrazione UGC di AEM Communities {#aem-communities-ugc-migration-tool}
+##  AEM Communities UGC Migration Tool {#aem-communities-ugc-migration-tool}
 
-Lo strumento [di migrazione UGC di](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) AEM Communities è uno strumento di migrazione open source, disponibile su GitHub, che può essere personalizzato per esportare UGC da versioni precedenti delle social community AEM e importarli in AEM Communities 6.1 o versioni successive.
+Il [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) è uno strumento di migrazione open source, disponibile su GitHub, che può essere personalizzato per esportare UGC da versioni precedenti di AEM social community e importare  AEM Communities 6.1 o versioni successive.
 
 Oltre a spostare UGC dalle versioni precedenti, è anche possibile utilizzare lo strumento per spostare UGC da un [SRP](/help/communities/working-with-srp.md) all&#39;altro, ad esempio da MSRP a DSRP.
 
@@ -100,8 +104,8 @@ Oltre a spostare UGC dalle versioni precedenti, è anche possibile utilizzare lo
 
 Concettualmente, esistono tre generazioni di componenti per comunità:
 
-**Gen 1**: Da CQ 5.4 a AEM 5.6.0 circa, questi sono i componenti **collab** che hanno memorizzato UGC nell&#39;archivio locale utilizzando la replica come mezzo per sincronizzare UGC tra piattaforme. Altre differenze riguardano l’implementazione tramite Java Server Pages (JSP), nonché la funzione blog che consiste nell’authoring solo nell’ambiente di authoring.
+**Gen 1**: CQ 5.4 e AEM 5.6.0 circa, questi sono i componenti **collab** che hanno memorizzato UGC nel repository locale utilizzando la replica come mezzo per sincronizzare UGC tra piattaforme. Altre differenze riguardano l’implementazione tramite Java Server Pages (JSP), nonché la funzione blog che consiste nell’authoring solo nell’ambiente di authoring.
 
-**Gen 2**: Da AEM 5.6.1 a AEM 6.1, si tratta di una combinazione di componenti **collab** e **social** . AEM 6.0 ha introdotto il nuovo framework [di componenti](/help/communities/scf.md) sociali (SCF) e AEM 6.2 ha introdotto un archivio [UGC](/help/communities/working-with-srp.md) comune a cui è possibile accedere tramite un provider [di risorse di](/help/communities/srp.md) storage (SRP).
+**Gen 2**: Da AEM 5.6.1 a AEM 6.1, questo è un mix di componenti **collab** e **social** . AEM 6.0 ha introdotto il nuovo [social component framework](/help/communities/scf.md) (SCF) e AEM 6.2 ha introdotto un archivio [UGC](/help/communities/working-with-srp.md) comune in cui l&#39;accesso a UGC è effettuato tramite un provider [di risorse di](/help/communities/srp.md) storage (SRP).
 
-**Gen 3**: Da AEM 6.2 in avanti, esistono solo componenti **social** implementati in SCF come Handlebars (HBS) e che richiedono una scelta di SRP per UGC.
+**Gen 3**: Dal AEM 6.2 in avanti, esistono solo componenti **sociali** , implementati in SCF come componenti Handlebars (HBS) che richiedono una scelta di SRP per UGC.
