@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 3%
 
 ## Aggiungere una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Create una ClientLibraryFolder denominata `clientlibs`che conterrà i file JS e CSS utilizzati per il rendering delle pagine del sito.
+Create una ClientLibraryFolder denominata `clientlibs` che conterrà i file JS e CSS utilizzati per il rendering delle pagine del sito.
 
-Il valore della `categories`proprietà dato a questa libreria client è l&#39;identificatore utilizzato per includere direttamente questa clientlib da una pagina di contenuto o per incorporarla in altri clientlibs.
+Il valore della `categories` proprietà dato a questa libreria client è l&#39;identificatore utilizzato per includere direttamente questa clientlib da una pagina di contenuto o per incorporarla in altri clientlibs.
 
-1. Utilizzando **CRXDE Lite**, espandete `/etc/designs`
+1. Utilizzando **CRXDE Lite**, espandi `/etc/designs`
 
 1. Fare clic con il pulsante destro del mouse `an-scf-sandbox` e selezionare `Create Node`
 
@@ -36,7 +36,7 @@ Il valore della `categories`proprietà dato a questa libreria client è l&#39;id
 
 1. Fai clic su **OK**
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![add-client-library](assets/add-client-library.png)
 
 Nella scheda **Proprietà** del nuovo `clientlibs` nodo, immettere la proprietà **category** :
 
@@ -55,7 +55,7 @@ Nota: visualizzazione in anteprima del valore delle categorie con &#39;app&#39;.
 1. Enter **Name:** `js.txt`
 1. Fate clic su **Salva tutto**
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![clientlibs-css](assets/clientlibs-css.png)
 
 La prima riga di css.txt e js.txt identifica la posizione di base dalla quale si trovano i seguenti elenchi di file.
 
@@ -103,11 +103,11 @@ In questo caso, includendo tutti e così i clienti SCF più basilari che sono gl
 
 * Fate clic su **Salva tutto**
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![scf-clientlibs](assets/scf-clientlibs.png)
 
 Questo è il modo in cui `/etc/designs/an-scf-sandbox/clientlibs` dovrebbe essere visualizzato nella directory archivio:
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![scf-clientlibs-view](assets/scf-clientlibs1.png)
 
 ### Includi Clientlibs nel modello PlayPage {#include-clientlibs-in-playpage-template}
 
@@ -115,11 +115,11 @@ Senza includere la categoria `apps.an-scf-sandbox` ClientLibraryFolder nella pag
 
 Ad esempio, senza includere clientlibs, il componente commenti SCF non ha lo stile :
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![clientlibs-comment](assets/clientlibs-comment.png)
 
 Una volta inclusi i clientlibs apps.an-scf-sandbox, il componente dei commenti SCF appare formattato :
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![clientlibs-comment-styled](assets/clientlibs-comment1.png)
 
 L&#39;istruzione include appartiene alla `head` sezione dello `html` script. L&#39;impostazione predefinita **`foundation head.jsp`** include uno script che può essere sovrapposto : **`headlibs.jsp`**.
 
@@ -150,7 +150,7 @@ Caricate il sito Web nel browser e verificate se lo sfondo non è blu.
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![gioco di comunità](assets/community-play.png)
 
 ### Salvataggio del lavoro fino ad ora {#saving-your-work-so-far}
 
@@ -160,7 +160,7 @@ Questo pacchetto è disponibile nell’esercitazione [Crea una pagina](/help/com
 
 Per creare un pacchetto:
 
-* Da CRXDE Lite fate clic sull&#39;icona [Pacchetto](https://localhost:4502/crx/packmgr/)
+* Dal CRXDE Lite fate clic sull&#39;icona [Pacchetto](https://localhost:4502/crx/packmgr/)
 * Fate clic su **Crea pacchetto**
 
    * Nome pacchetto: an-scf-sandbox-minimal-pkg
