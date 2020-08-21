@@ -1,8 +1,8 @@
 ---
 title: Gestione di utenti e gruppi di utenti
 seo-title: Gestione di utenti e gruppi di utenti
-description: Gli utenti di AEM Communities possono registrarsi e modificare i propri profili
-seo-description: Gli utenti di AEM Communities possono registrarsi e modificare i propri profili
+description: Gli utenti di  AEM Communities possono registrarsi e modificare i propri profili
+seo-description: Gli utenti di  AEM Communities possono registrarsi e modificare i propri profili
 uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '2183'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
 
 ## Panoramica {#overview}
 
-In AEM Communities, nell&#39;ambiente di pubblicazione, gli utenti possono registrarsi e modificare i propri profili. Considerate le autorizzazioni appropriate, possono anche:
+In  AEM Communities, nell’ambiente di pubblicazione, gli utenti possono registrarsi autonomamente e modificare i propri profili. Considerate le autorizzazioni appropriate, possono anche:
 
 * Create sub-community all&#39;interno del sito della community (vedete Gruppi [](creating-groups.md)della community).
 
@@ -75,14 +78,14 @@ Per gestire utenti e gruppi di utenti registrati nell’ambiente di authoring, u
 |---|---|
 | amministratori | Il gruppo Administrators è composto da amministratori di sistema che dispongono di tutte le capacità di un amministratore community e di gestire il gruppo Community Administrators. |
 | Amministratori community | Il gruppo Amministratori community diventa automaticamente membro di tutti i siti community e di tutti i gruppi di community creati sul sito. Un membro iniziale del gruppo Amministratori community è il gruppo Amministratori. Nell’ambiente di authoring, gli amministratori della community possono creare siti per la community, gestire i siti, gestire i membri (possono vietare i membri della community) e moderare i contenuti. |
-| Community &lt;nome ** sito> Sitecontentmanager | Community Site Content Manager è in grado di eseguire operazioni di authoring, creazione di contenuti e modifica tradizionali di AEM per un sito community. |
+| Community &lt;nome ** sito> Sitecontentmanager | Community Site Content Manager è in grado di eseguire operazioni AEM di authoring, creazione di contenuti e modifica delle pagine per un sito community. |
 | Manager abilitazione community | Il gruppo Manager abilitazione comunità è costituito da utenti disponibili per l&#39;assegnazione per gestire il gruppo Manager abilitazione di un sito community. |
 | Community &lt;*site name* > Siteenablementmanager | Il gruppo Community Site Enablement Manager (Manager abilitazione sito community) è costituito da utenti assegnati per la gestione delle [risorse](resources.md)di abilitazione di un sito community. |
 | Nessuno | Un visitatore anonimo del sito non può accedere all’ambiente di authoring. |
 
 ### Amministratori di sistema {#system-administrators}
 
-I membri del gruppo di amministratori sono amministratori di sistema in grado di eseguire la configurazione iniziale di un’installazione AEM sia per gli ambienti di creazione che per quelli di pubblicazione.
+I membri del gruppo di amministratori sono amministratori di sistema in grado di eseguire la configurazione iniziale di un’installazione AEM per gli ambienti di creazione e pubblicazione.
 
 A scopo dimostrativo e di sviluppo, il gruppo di amministratori ha un membro il cui ID utente è *admin* e la cui password è *admin*.
 
@@ -214,18 +217,18 @@ In un’istanza di creazione:
    * Il percorso deve essere `/home/users/community`.
 4. Seleziona **[!UICONTROL Crea]**.
 
-   ![chlimage_1-130](assets/chlimage_1-130.png)
+   ![create-community-user](assets/create-community-user.png)
 
 * Nel riquadro a sinistra, cercare l’utente appena creato e selezionare per visualizzarlo nel riquadro a destra.
 
-   ![chlimage_1-135](assets/chlimage_1-131.png)
+   ![utente della community](assets/view-community-user.png)
 
 Nel riquadro a sinistra:
 
 1. Deselezionate la casella di ricerca e selezionate **[!UICONTROL Nascondi utenti]**.
 2. Individuate e trascinate `community-enablementmanagers` nella scheda **[!UICONTROL Gruppi]** del nuovo utente visualizzata nel riquadro a destra.
 
-   ![chlimage_1-132](assets/chlimage_1-132.png)
+   ![assign-group](assets/assign-group.png)
 
 ### Ruolo Amministratori community {#community-administrators-role}
 
@@ -235,7 +238,7 @@ Seguite gli stessi passaggi per creare e assegnare un utente al ruolo di [gestio
 
 ### Integrazione LDAP {#ldap-integration}
 
-AEM supporta l’utilizzo di LDAP per l’autenticazione degli utenti e per la creazione di account utente. Questa sezione è dettagliata nella [configurazione di LDAP con AEM 6](../../help/sites-administering/ldap-config.md).
+AEM supporta l’utilizzo di LDAP per l’autenticazione degli utenti e per la creazione di account utente. Questo è descritto in [Configurazione di LDAP con AEM 6](../../help/sites-administering/ldap-config.md).
 
 Di seguito sono riportati alcuni dettagli di configurazione specifici per i membri della community e i gruppi di membri.
 
@@ -260,7 +263,7 @@ Ciò comporta l&#39;assegnazione automatica degli utenti al gruppo di membri del
 
 * Il `User auto membership` valore deve essere la `rep:authorizableId` proprietà, non il `givenName` (nome visualizzato) dal profilo.
 
-## Sincronizzazione degli utenti tra le istanze di AEM {#synchronizing-users-among-aem-instances}
+## Sincronizzazione degli utenti tra AEM istanze {#synchronizing-users-among-aem-instances}
 
 Quando utilizzate una farm [di](topologies.md)pubblicazione, accertatevi che gli utenti abbiano lo stesso percorso in ciascuna istanza di pubblicazione importando gli utenti prima in un’istanza e [abilitando la sincronizzazione](sync.md) utente su Sling, gli utenti distribuiscono gli utenti alle altre istanze di pubblicazione.
 
