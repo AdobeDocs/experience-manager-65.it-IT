@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ La possibilità di seguire aggiunge un&#39;altra visione delle attività quando 
 
 Il documento descrive:
 
-* Aggiunta del componente Flussi attività a un sito AEM
+* Aggiunta del componente Activity Streams a un sito AEM
 * Impostazioni di configurazione per il componente Activity Streams
 
 ### Aggiunta di flussi di attività a una pagina {#adding-activity-streams-to-a-page}
@@ -44,13 +44,13 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando sono incluse le librerie [lato client](/help/communities/essentials-activities.md#essentials-for-client-side) richieste, verrà visualizzato il `Activity Streams` componente:
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![activity-streams](assets/activity-component.png)
 
 ### Configurazione dei flussi di attività {#configuring-activity-streams}
 
 Selezionate il `Activity Streams` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure](assets/configure-new.png)
 
 Nella scheda Attività **** utente, specificate le attività da visualizzare:
 
@@ -80,7 +80,7 @@ Nella scheda Attività **** utente, specificate le attività da visualizzare:
 
 I componenti devono essere configurati per abilitare quanto segue. Le funzioni che consentono di seguire sono [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filibreria](/help/communities/file-library.md)[](/help/communities/comments.md), commenti.
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![visualizzazione](assets/following-activities.png)
 
 Il pulsante **Segui** consente di seguire le voci come attività, [notifiche](/help/communities/notifications.md)o [iscrizioni](/help/communities/subscriptions.md). Ogni volta che si seleziona il pulsante **Segui** , è possibile attivare o disattivare una selezione. La `Email Subscriptions` selezione è presente solo se configurata.
 
