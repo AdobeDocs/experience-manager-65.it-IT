@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -62,12 +62,12 @@ Le differenze nella configurazione delle regole di punteggio e contrassegno sono
 
 Il motore di punteggio avanzato fornisce una configurazione OSGi con parametri che influiscono sull’algoritmo di punteggio avanzato.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![motore a punteggio avanzato](assets/advanced-scoring-engine.png)
 
 * **Pesi punteggio**
 
    Per un argomento, specificate il verbo a cui assegnare la priorità più alta per il calcolo del punteggio. È possibile inserire uno o più argomenti, ma solo **un verbo per argomento**. Consulta [Argomenti e verbi](/help/communities/implementing-scoring.md#topics-and-verbs).
-Inserito come `topic,verb` con la virgola con carattere di escape. Ad esempio:
+Inserito come `topic,verb` con la virgola con carattere di escape. Esempio:
    `/social/forum/hbs/social/forum\,ADD`
 L’impostazione predefinita è impostata sul verbo ADD per i componenti QnA e forum.
 
@@ -103,7 +103,7 @@ Per richiamare il motore di punteggio avanzato, `scoringType`impostare `advanced
 
 Consulta [Regole](/help/communities/implementing-scoring.md#scoring-sub-rules)secondarie punteggio.
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![di punteggio avanzato](assets/advanced-scoring-type.png)
 
 ### Stopwords {#stopwords}
 
@@ -123,7 +123,7 @@ Le proprietà avanzate della regola di contrassegno sono diverse dalle propriet�
 
 Invece di associare i punti a un’immagine badge, è necessario solo identificare il numero di esperti consentiti e l’immagine del contrassegno da assegnare.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![regole avanzate per il contrassegno](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -165,7 +165,7 @@ In questa versione beta è incluso un badge di esperti basato sui premi:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![tesserino](assets/included-badge.png)
 
 Affinché il contrassegno dell&#39;esperto venga visualizzato come ricompensa per l&#39;attività, accertatevi che:
 
