@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 9%
 
 ---
 
@@ -37,19 +40,21 @@ La documentazione descrive:
 
 ## Aggiunta di un forum D e R a una pagina {#adding-a-q-a-forum-to-a-page}
 
-Per aggiungere un `QnA` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / QnA`e trascinarlo nella posizione desiderata su una pagina in cui dovrebbe comparire il forum QnA.
+Per aggiungere un `QnA` componente a una pagina in modalità di creazione, usate il browser Componenti per individuarlo `Communities / QnA` e trascinarlo nella posizione desiderata su una pagina in cui dovrebbe comparire il forum QnA.
 
 Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/qna-essentials.md#essentials-for-client-side) richieste, viene visualizzato il `QnA`componente:
+Quando sono incluse le librerie [lato client](/help/communities/qna-essentials.md#essentials-for-client-side) richieste, viene visualizzato il `QnA` componente:
 
-![chlimage_1](assets/chlimage_1.png)
+![qna-component](assets/qna-component.png)
 
 ### Configurazione di QnA {#configuring-qna}
 
 Selezionate il `QnA` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-1](assets/chlimage_1-1.png) ![qna-config](assets/qna-config.png)
+![configure](assets/configure-new.png)
+
+![qna-config](assets/qna-config.png)
 
 #### scheda Impostazioni {#settings-tab}
 
