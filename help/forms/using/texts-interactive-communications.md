@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '2493'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 
 ## Create text {#createtext}
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Testo]**.
 1. Specificate le seguenti informazioni:
 
@@ -59,6 +62,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
    * [Caratteri speciali](#special)
    * [Ricerca e sostituzione del testo](#searching)
    * [Scelte rapide da tastiera](/help/forms/using/keyboard-shortcuts.md)
+
    >[!NOTE]
    >
    >È possibile aggiungere elementi del modello dati modulo, elementi del dizionario dati e variabili utilizzando il simbolo @ nell&#39;editor di testo. Quando si immette una stringa preceduta da @ nell&#39;editor di testo, vengono cercati tutti gli elementi del modello dati, gli elementi del dizionario dati e le variabili e vengono visualizzati elementi o variabili contenenti la stringa ricercata. Potete scorrere i risultati della ricerca e selezionare un elemento o una variabile. In assenza di risultati corrispondenti, viene visualizzato il messaggio *Nessun risultato trovato* corrispondente.
@@ -71,7 +75,7 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 
 È possibile modificare un frammento di documento di testo esistente utilizzando la procedura seguente. È inoltre possibile scegliere di modificare un frammento di documento di testo direttamente da un editor di comunicazione interattiva.
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > Frammenti **** documento.
 1. Individuare e selezionare un frammento di documento di testo.
 1. Toccate **[!UICONTROL Modifica]**.
 1. Apportate le modifiche necessarie. Per ulteriori informazioni sulle opzioni nel testo, consultate [Creare testo](#createtext).
@@ -79,13 +83,13 @@ Il frammento di documento di testo in Comunicazione interattiva supporta il segu
 
 ## Personalizzazione di un frammento di documento di testo mediante le proprietà del modello dati del modulo {#formdatamodel}
 
-È possibile personalizzare i frammenti di documento di testo inserendo le proprietà del modello dati del modulo. Inserendo le proprietà del modello dati del modulo nel testo, è possibile recuperare e compilare dati specifici del destinatario dall&#39;origine dati associata durante la visualizzazione dell&#39;anteprima di una comunicazione interattiva. Per ulteriori informazioni sul modello di dati del modulo, consultate Integrazione [dei dati in](/help/forms/using/data-integration.md)AEM Forms.
+È possibile personalizzare i frammenti di documento di testo inserendo le proprietà del modello dati del modulo. Inserendo le proprietà del modello dati del modulo nel testo, è possibile recuperare e compilare dati specifici del destinatario dall&#39;origine dati associata durante la visualizzazione dell&#39;anteprima di una comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dati AEM Forms.
 
 Se durante la creazione di un testo è stato specificato un modello dati modulo, le proprietà del modello dati modulo vengono visualizzate nel riquadro sinistro dell&#39;editor di testo. Il modello dati del modulo specificato deve essere lo stesso per il frammento di documento di testo e per la comunicazione interattiva che lo include.
 
 ![insert tfdmelementtext](assets/insertfdmelementtext.png)
 
-* Per inserire nel testo una proprietà del modello dati del modulo, posizionare il cursore nel punto in cui si desidera inserire la proprietà, quindi selezionare la proprietà **[A]** nel riquadro a sinistra toccando la proprietà, quindi toccare **[!UICONTROL [B]Aggiungi selezionato]**. È inoltre possibile toccare due volte la proprietà per inserirla nella posizione del cursore**[ C ]**. Le proprietà del modello dati del modulo sono evidenziate in un colore di sfondo brunastro.
+* Per inserire nel testo una proprietà del modello dati del modulo, posizionare il cursore nel punto in cui si desidera inserire la proprietà, quindi selezionare la proprietà **[A]** nel riquadro a sinistra toccando la proprietà, quindi toccare **[!UICONTROL [B]Aggiungi selezionato]**. È inoltre possibile toccare due volte la proprietà per inserirla nella posizione del cursore **[C]** . Le proprietà del modello dati del modulo sono evidenziate in un colore di sfondo brunastro.
 
 In alternativa, è possibile cercare e aggiungere la proprietà del modello dati del modulo utilizzando il simbolo @ nell&#39;editor di testo. Posizionare il cursore nel punto in cui si desidera inserire la proprietà. Digitare @ seguito dalla stringa di ricerca. L&#39;operazione di ricerca viene eseguita su tutte le proprietà del modello dati del modulo e le variabili disponibili nel frammento di documento. Le proprietà o le variabili contenenti la stringa di ricerca vengono recuperate e visualizzate come elenco a discesa. Scorrete i risultati della ricerca e fate clic sulla proprietà che desiderate inserire nella posizione del cursore. Premete Esc per nascondere i risultati della ricerca.
 
@@ -161,6 +165,7 @@ Utilizzando l&#39;editor di regole in un testo, potete creare regole per visuali
 
    * Proprietà del modello dati del modulo associato
    * Qualsiasi variabile creata
+
    Selezionare l&#39;opzione appropriata da valutare.
 
    ![ruleeditor](assets/ruleeditor.png) ![ruleeditorfdm](assets/ruleeditorfdm.png)
@@ -194,11 +199,12 @@ Utilizzando l&#39;editor di regole in un testo, potete creare regole per visuali
 ## Formattazione del testo {#formatting}
 
 Durante la creazione o la modifica del testo, la barra degli strumenti cambia a seconda del tipo di modifiche che si desidera apportare: Paragrafo, Allineamento o Elenco:
-[ ![Selezionare il tipo di barra degli strumenti](do-not-localize/toolbarselection.png)
+
+![Selezionare il tipo di barra degli strumenti](do-not-localize/toolbarselection.png)
 
 Selezionare il tipo di barra degli strumenti: Paragrafo, Allineamento o Elenco
 
-](assets/toolbarselection.png) Barra degli strumenti di modifica ![dei font](do-not-localize/paragraphtoolbar.png)
+![Barra degli strumenti di modifica dei font](do-not-localize/paragraphtoolbar.png)
 
 Barra degli strumenti di modifica dei font
 
@@ -265,7 +271,8 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 
    * Se viene trovata un&#39;altra istanza del testo di ricerca, tale istanza viene evidenziata nel frammento del documento di testo. Se toccate nuovamente **[!UICONTROL Sostituisci]** , l’istanza evidenziata viene sostituita e il cursore si sposta in avanti, se viene trovata una terza istanza.
    * Se non viene trovata un&#39;altra istanza, nella finestra di dialogo Trova e sostituisci viene visualizzato un messaggio: Fine del modulo raggiunta.
-   Potete anche toccare Replace all (Sostituisci tutto) per sostituire tutte le corrispondenze in una sola volta.
+
+   Potete anche toccare Replace all (Sostituisci tutto) per sostituire tutte le corrispondenze in un&#39;unica operazione.
 
    Trova e sostituisci include anche una potente ricerca di espressioni regolari. Per utilizzare regex nella ricerca, selezionare **[!UICONTROL Reg ex]** , quindi toccare **[!UICONTROL Trova]** o **[!UICONTROL Sostituisci]**.
 
