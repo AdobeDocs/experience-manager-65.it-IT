@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6822'
+source-wordcount: '6814'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Nell&#39;editor delle regole, il tipo di regola **Quando** applica il costrutto 
 
 **Action-Condition** In questo costrutto, una regola definisce innanzitutto un&#39;azione da attivare seguita da condizioni per la valutazione. Un&#39;altra variante di questo costrutto è action-condition-alternate action, che definisce anche un&#39;azione alternativa da attivare se la condizione restituisce False.
 
-I tipi di regola Mostra, Nascondi, Abilita, Disattiva, Imposta valore di e Convalida nell&#39;editor di regole applicano il costrutto della regola della condizione azione. Per impostazione predefinita, l’azione alternativa per Mostra è Nascondi e per Abilita è Disattiva e viceversa. Non è possibile modificare l&#39;azione alternativa predefinita.
+I tipi di regola Mostra, Nascondi, Abilita, Disattiva, Imposta valore di e Convalida nell&#39;editor di regole applicano il costrutto della regola della condizione azione. Per impostazione predefinita, l’azione alternativa per Mostra è Nascondi e per Abilita è Disattiva, e viceversa. Non è possibile modificare l&#39;azione alternativa predefinita.
 
 >[!NOTE]
 >
@@ -135,13 +135,13 @@ Durante la scrittura di una regola Quando, è possibile attivare l&#39;azione Ca
 
 **Richiama il servizio** Richiama un servizio configurato in un modello dati del modulo. Quando si sceglie l&#39;operazione di richiamo del servizio, viene visualizzato un campo. Toccando il campo, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo nell&#39;istanza AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato. Vedere regola di esempio per richiamare i servizi del modello dati del modulo.
 
-Oltre al servizio del modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio del modello dati del modulo presenta molti vantaggi e l&#39;approccio consigliato per richiamare un servizio.
+Oltre al servizio del modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio del modello dati modulo presenta molti vantaggi e l&#39;approccio consigliato per richiamare un servizio.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere Integrazione [dei dati](/help/forms/using/data-integration.md)AEM Forms.
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
 **Impostare il valore** Computes e impostare il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando l&#39;espressione o la funzione matematica, il valore di una proprietà di un oggetto o il valore di output da un servizio del modello dati del modulo configurato. Quando si sceglie l&#39;opzione del servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo nell&#39;istanza AEM. Quando si sceglie un servizio del modello dati modulo, vengono visualizzati campi aggiuntivi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
 
-Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere Integrazione [dei dati](/help/forms/using/data-integration.md)AEM Forms.
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati del modulo, vedere [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
 Il tipo di regola **Imposta proprietà** consente di impostare il valore di una proprietà dell&#39;oggetto specificato in base a un&#39;azione di condizione.
 
@@ -334,11 +334,10 @@ Per avviare l&#39;interfaccia utente dell&#39;editor di regole:
    In questa visualizzazione sono elencate tutte le regole esistenti per gli oggetti modulo selezionati. Per informazioni sulla gestione delle regole esistenti, consultate [Gestire le regole](../../forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Toccate **[!UICONTROL Crea]** per scrivere una nuova regola. L&#39;editor visivo dell&#39;interfaccia utente dell&#39;editor di regole si apre per impostazione predefinita quando si avvia l&#39;editor di regole la prima volta.
-[ Interfaccia utente dell&#39;Editor ![regole](assets/rule-editor-ui.png)
 
-   Fare clic per visualizzare l&#39;immagine ingrandita
+   ![Interfaccia utente Editor regole](assets/rule-editor-ui.png)
 
-   ](assets/rule-editor-ui-1.png)Esaminiamo ogni componente dell’interfaccia utente dell’editor di regole in dettaglio.
+Esaminiamo ogni componente dell&#39;interfaccia utente dell&#39;editor di regole in dettaglio.
 
 ### A. Visualizzazione di regole di componente {#a-component-rule-display}
 
@@ -376,7 +375,7 @@ Per ulteriori informazioni sull&#39;utilizzo dell&#39;editor di regole visive, v
 
 Gli utenti del gruppo form-power-users possono accedere all&#39;editor di codice. Per altri utenti, l’editor di codice non è disponibile. Se disponete dei diritti, potete passare dalla modalità editor visivo alla modalità editor di codice dell&#39;editor di regole e viceversa, utilizzando lo switcher immediatamente sopra l&#39;editor di regole. Quando si avvia l&#39;editor di regole la prima volta, questo viene aperto in modalità editor visivo. È possibile scrivere regole in modalità editor visivo o passare alla modalità editor di codice per scrivere uno script di regola. Tuttavia, se modificate una regola o scrivete una regola nell&#39;editor di codice, non potete tornare all&#39;editor visivo per tale regola a meno che non cancellate l&#39;editor di codice.
 
-AEM Forms tiene traccia della modalità editor regole utilizzata per scrivere una regola. Quando si avvia l&#39;editor di regole la prossima volta, questo si apre in tale modalità. Tuttavia, potete anche configurare una modalità predefinita per aprire l&#39;editor di regole nella modalità specificata. A questo scopo:
+ AEM Forms tiene traccia della modalità editor regole utilizzata per scrivere una regola. Quando si avvia l&#39;editor di regole la prossima volta, questo si apre in tale modalità. Tuttavia, potete anche configurare una modalità predefinita per aprire l&#39;editor di regole nella modalità specificata. A questo scopo:
 
 1. Passate AEM console Web all&#39;indirizzo `https://[host]:[port]/system/console/configMgr`.
 1. Fare clic per modificare il servizio **[!UICONTROL di configurazione del modulo]** adattivo.
@@ -525,7 +524,7 @@ Effettuare le seguenti operazioni per scrivere le regole:
 
 Gli utenti aggiunti al gruppo form-power-users possono utilizzare l&#39;editor di codice. L&#39;editor di regole genera automaticamente il codice JavaScript per qualsiasi regola creata utilizzando l&#39;editor visivo. È possibile passare dall&#39;editor visivo all&#39;editor di codice per visualizzare il codice generato. Tuttavia, se modificate il codice della regola nell&#39;editor di codice, non potete tornare all&#39;editor visivo. Se preferite scrivere le regole nell&#39;editor di codice piuttosto che nell&#39;editor visivo, potete scrivere di nuovo le regole nell&#39;editor di codice. Lo switcher di modifica del codice visivo consente di passare da una modalità all&#39;altra.
 
-JavaScript dell&#39;editor di codice è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il documento Riferimento API della libreria [JavaScript per i moduli](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adattivi.
+JavaScript dell&#39;editor di codice è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il riferimento alle API della libreria [JavaScript per i moduli](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adattivi.
 
 Per ulteriori informazioni sulle linee guida per la scrittura di regole nell&#39;editor di codice, vedere Espressioni [modulo](/help/forms/using/adaptive-form-expressions.md)adattive.
 
@@ -765,7 +764,7 @@ Se l&#39;utente indica che ha soggiornato presso il suo attuale indirizzo di res
 
 ## Impatto dell&#39;editor di regole sugli script esistenti {#impact-of-rule-editor-on-existing-scripts}
 
-Nelle versioni AEM Forms precedenti al AEM 6.1 del feature pack 1 per Forms, gli autori e gli sviluppatori di moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamenti dinamici ai moduli adattivi. La scheda Script viene ora sostituita dall&#39;editor di regole.
+Nelle  versioni di AEM Forms precedenti al AEM 6.1 Forms Feature Pack 1, gli autori e gli sviluppatori di moduli utilizzavano per scrivere espressioni nella scheda Script della finestra di dialogo Modifica componente per aggiungere comportamenti dinamici ai moduli adattivi. La scheda Script viene ora sostituita dall&#39;editor di regole.
 
 Tutti gli script o le espressioni che è necessario scrivere nella scheda Script sono disponibili nell&#39;editor delle regole. Anche se non è possibile visualizzarli o modificarli nell&#39;editor visivo, se si fa parte del gruppo di utenti di moduli è possibile modificare gli script nell&#39;editor di codice.
 
@@ -813,7 +812,7 @@ In un modulo di ordine di acquisto è presente la tabella seguente, nella quale 
 
 **A.** Riga1 **B.** Quantità **C.** Quantità totale
 
-A questo punto, si desidera aggiungere quantità specificate nella colonna Quantità prodotto per tutti i prodotti e visualizzare la somma nella cella Quantità totale. A tal fine, è possibile scrivere una regola Imposta valore di nella cella Quantità totale come illustrato di seguito.
+A questo punto, si desidera aggiungere quantità specificate nella colonna Quantità prodotto per tutti i prodotti e visualizzare la somma nella cella Quantità totale. È possibile ottenere questo risultato scrivendo una regola Imposta valore di nella cella Quantità totale come illustrato di seguito.
 
 ![example-function-output](assets/example-function-output.png)
 
