@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '6146'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +31,7 @@ Nella pagina Impostazioni tipo di file è possibile eseguire le seguenti operazi
 
 >[!NOTE]
 >
->Le impostazioni relative al tipo di file non sono disponibili per i convertitori di fallback quali Acrobat per la conversione da HTML a PDF, Microsoft PowerPoint, Microsoft Word e Microsoft Excel.
+>Le impostazioni relative al tipo di file non sono disponibili per i convertitori di fallback, come  Acrobat per la conversione da HTML a PDF, Microsoft PowerPoint, Microsoft Word e Microsoft Excel.
 
 ## Creare o modificare le impostazioni Tipo di file {#create-or-edit-file-type-settings}
 
@@ -49,11 +52,11 @@ Creare o modificare un&#39;impostazione di tipo di file per specificare come l&#
 
    [Importazione ed esportazione di file di configurazione PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-   [Impostazioni di esportazione Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
+   [le impostazioni di esportazione Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
 
    [Impostazioni HTML-PDF](#html-to-pdf-settings)
 
-   [Impostazioni Flash Video to PDF](#flash-videos-to-pdf-settings)
+   [Flash video alle impostazioni PDF](#flash-videos-to-pdf-settings)
 
    [Impostazioni da XPS a PDF](#xps-to-pdf-settings)
 
@@ -81,19 +84,19 @@ Creare o modificare un&#39;impostazione di tipo di file per specificare come l&#
 
 1. Dopo aver completato tutte le sezioni, fare clic su **[!UICONTROL Salva]** o **[!UICONTROL Salva con nome]** e specificare un nome per l&#39;impostazione.
 
-È possibile personalizzare il supporto per diversi tipi di file. (vedere &quot; [Aggiunta del supporto per formati](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)di file nativi aggiuntivi&quot; nella [programmazione con i moduli](https://www.adobe.com/go/learn_lc_programming_11)AEM.)
+È possibile personalizzare il supporto per diversi tipi di file. (Vedere [Aggiunta del supporto per formati](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)di file nativi aggiuntivi nella [programmazione con moduli](https://www.adobe.com/go/learn_lc_programming_11)AEM.)
 
 ## Modificare le impostazioni predefinite {#change-the-default-settings}
 
-È possibile modificare il valore predefinito per le impostazioni Adobe PDF, le impostazioni di protezione e le impostazioni del tipo di file che si applicano alle origini appena create. La modifica delle impostazioni predefinite non influisce sulle impostazioni delle origini esistenti.
+È possibile modificare il valore predefinito per le impostazioni di  Adobe PDF, le impostazioni di protezione e il tipo di file che si applicano alle origini appena create. La modifica delle impostazioni predefinite non influisce sulle impostazioni delle origini esistenti.
 
 1. In Admin Console, fai clic su **[!UICONTROL Servizi > PDF Generator]**.
-1. Nella pagina Impostazioni **[!UICONTROL Adobe PDF, Impostazioni]** tipo di **[!UICONTROL file o Impostazioni]****[!UICONTROL protezione, fare clic su]** Imposta impostazioni **** predefinite.
+1. Nella **[!UICONTROL pagina Impostazioni]** Adobe PDF, Impostazioni **[!UICONTROL tipo di]** file o Impostazioni **** protezione fare clic su **[!UICONTROL Imposta impostazioni]** predefinite.
 1. Selezionate le impostazioni predefinite preferite. Nella pagina Imposta impostazioni predefinite è disponibile una o più delle seguenti impostazioni:
 
-   **[!UICONTROL Impostazione]** Adobe PDF: Il valore predefinito originale è Standard (Acrobat 6).
+   **[!UICONTROL impostazione]** Adobe PDF: Il valore predefinito originale è Standard ( Acrobat 6).
 
-   **[!UICONTROL Impostazioni]** di protezione: Il valore predefinito originale è Nessuna protezione (Acrobat 5).
+   **[!UICONTROL Impostazioni]** di protezione: Il valore predefinito originale è Nessuna protezione ( Acrobat 5).
 
    **[!UICONTROL Impostazioni]** tipo di file: Il valore predefinito originale è Standard.
 
@@ -109,15 +112,15 @@ Creare o modificare un&#39;impostazione di tipo di file per specificare come l&#
 
 ## Impostazioni di Image to PDF {#image-to-pdf-settings}
 
-Le seguenti opzioni determinano la modalità di conversione dei file immagine in PDF. Per istruzioni su come accedere a queste impostazioni, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
+Le seguenti opzioni determinano il modo in cui i file immagine vengono convertiti in PDF. Per istruzioni su come accedere a queste impostazioni, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
 
 **Estensioni nome file:** Elenco separato da virgole di estensioni di nomi file convertibili.
 
-**Try Fallback Converter:** PDF Generator può usare Java™ o Acrobat per convertire i file immagine in PDF. Quando questa opzione è selezionata e una conversione non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando il metodo alternativo. Se il metodo alternativo non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
+**Try Fallback Converter:** PDF Generator può usare Java™ o  Acrobat per convertire i file immagine in PDF. Quando questa opzione è selezionata e una conversione non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando il metodo alternativo. Se il metodo alternativo non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
 
 >[!NOTE]
 >
->I file JPEG 2000 possono essere convertiti solo utilizzando Acrobat.
+>I file JPEG 2000 possono essere convertiti solo utilizzando  Acrobat.
 
 **Usa OCR:** Specifica se applicare l&#39;OCR (riconoscimento ottico dei caratteri) al PDF. Il software OCR consente di cercare, correggere e copiare il testo nel PDF.
 
@@ -135,9 +138,9 @@ Le seguenti opzioni determinano la modalità di conversione dei file immagine in
 
 **Downsampling immagini:** Riduce il numero di pixel nelle immagini a colori, in scala di grigi e monocromatiche al termine dell’OCR. Scegliete il grado di downsampling da applicare. Le opzioni numerate più elevate consentono di eseguire meno il downsampling, producendo quindi PDF a risoluzione più elevata.
 
-## Impostazioni di esportazione Adobe PDF (solo Windows) {#adobe-pdf-export-settings-windows-only}
+##  le impostazioni di esportazione Adobe PDF (solo Windows) {#adobe-pdf-export-settings-windows-only}
 
-L&#39;impostazione Tipo file esportazione nella sezione delle impostazioni di esportazione Adobe PDF viene utilizzata per convertire un file PDF in un altro formato. Il valore predefinito è HTML 4.01 con fogli di stile CSS 1.0 (*.htm, *.html).
+L&#39;impostazione Tipo file esportazione nella sezione  impostazioni di esportazione Adobe PDF viene utilizzata per convertire un file PDF in un altro formato. Il valore predefinito è HTML 4.01 con fogli di stile CSS 1.0 (*.htm, *.html).
 
 Per istruzioni su come accedere a questa impostazione, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
 
@@ -145,7 +148,7 @@ Per istruzioni su come accedere a questa impostazione, consultate [Creare o modi
 
 Le seguenti opzioni determinano la modalità di conversione dei file HTML in PDF. Per istruzioni su come accedere a queste opzioni, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
 
-**Try Fallback Converter:** PDF Generator può usare Java™ o Acrobat per convertire i file HTML in PDF. Quando questa opzione è selezionata e una conversione non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando il metodo alternativo. Se il metodo alternativo non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
+**Try Fallback Converter:** PDF Generator può usare Java™ o  Acrobat per convertire i file HTML in PDF. Quando questa opzione è selezionata e una conversione non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando il metodo alternativo. Se il metodo alternativo non riesce o raggiunge il limite di timeout specificato, nel file di registro viene scritta un&#39;eccezione.
 
 **Codifica predefinita:** Imposta la codifica di input del testo del file da un menu di sistemi operativi e alfabeti. Utilizza la selezione visualizzata nell&#39;opzione Codifica predefinita solo se il file di origine HTML non specifica un tipo di codifica.
 
@@ -183,11 +186,11 @@ Abilitate queste opzioni per specificare la modalità di conversione delle pagin
 
 Abilitare queste opzioni per specificare come visualizzare il contenuto, come visualizzare le pagine nel documento PDF e come specificare il livello di ingrandimento:
 
-**Mostra:** Selezionare i riquadri da aprire in Acrobat all&#39;apertura del documento PDF.
+**Mostra:** Selezionare i riquadri da aprire in  Acrobat all&#39;apertura del documento PDF.
 
 **Layout pagina:** Selezionare il tipo di layout di pagina per il documento PDF.
 
-**Ingrandimento:** Scegliere l&#39;ingrandimento predefinito per la visualizzazione iniziale del documento PDF o selezionare un valore personalizzato. Se si sceglie un&#39;impostazione predefinita, verrà utilizzato l&#39;ingrandimento predefinito di Acrobat.
+**Ingrandimento:** Scegliere l&#39;ingrandimento predefinito per la visualizzazione iniziale del documento PDF o selezionare un valore personalizzato. Se si sceglie un&#39;impostazione predefinita, viene usata l&#39;ingrandimento  Acrobat predefinito.
 
 **Apri in numero pagina:** Specificare il numero di pagina a cui si apre il PDF.
 
@@ -195,7 +198,7 @@ Abilitare queste opzioni per specificare come visualizzare il contenuto, come vi
 
 Abilitate queste opzioni per specificare le dimensioni e la visualizzazione della finestra.
 
-**Ridimensiona finestra alla pagina iniziale:** Ridimensiona la finestra di Acrobat alle dimensioni della pagina iniziale.
+**Ridimensiona finestra alla pagina iniziale:** Ridimensiona la finestra  Acrobat alle dimensioni della pagina iniziale.
 
 **Centra finestra sullo schermo:** Apre la finestra al centro dello schermo.
 
@@ -213,15 +216,15 @@ Abilitate queste opzioni per specificare l’aspetto della finestra:
 
 **Nascondi controlli finestra:** Nasconde i controlli della finestra nel documento PDF.
 
-## Impostazioni Flash Video to PDF {#flash-videos-to-pdf-settings}
+## Flash video alle impostazioni PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator supporta la possibilità di inviare un video per Adobe Flash (file SWF o FLV) e creare un file PDF contenente un video per Adobe Flash. Questa conversione non richiede l&#39;installazione di Adobe Flash Player nel server dei moduli. Per istruzioni su come accedere a questa opzione, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
+PDF Generator supporta la possibilità di inviare un video per  Flash Adobe (file SWF o FLV) e creare un file PDF con un video per  Flash Adobe incorporato al suo interno. Questa conversione non richiede l&#39;installazione  Flash Player Adobe nel server dei moduli. Per istruzioni su come accedere a questa opzione, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
 
 **Estensioni nome file:** Elenco separato da virgole di estensioni di nomi file convertibili.
 
 ## Impostazioni da XPS a PDF {#xps-to-pdf-settings}
 
-XML Paper Specification (XPS) è utilizzato nella macchina di stampa Windows. Questo è un formato Microsoft e può essere creato da qualsiasi applicazione di Microsoft Office. I moduli AEM consentono di convertire file XPS in formato PDF.
+XML Paper Specification (XPS) è utilizzato nella macchina di stampa Windows. Questo è un formato Microsoft e può essere creato da qualsiasi applicazione di Microsoft Office. AEM moduli consente di convertire file XPS in formato PDF.
 
 **Estensioni nome file:** Elenco separato da virgole di tutte le estensioni del nome file XPS che è possibile convertire. Attualmente esiste un formato: .xps.
 
@@ -235,7 +238,7 @@ PDF Generator supporta la possibilità di ridurre le dimensioni dei file PDF. L�
 
 Per istruzioni su come accedere a questa impostazione, consultate [Creare o modificare le impostazioni](configuring-file-type-settings.md#create-or-edit-file-type-settings)dei tipi di file.
 
-**Versione PDF di destinazione:** Specifica la versione di Acrobat con cui il PDF è compatibile.
+**Versione PDF di destinazione:** Specifica la versione di  Acrobat con cui il PDF è compatibile.
 
 ### Font {#fonts}
 
@@ -251,9 +254,10 @@ Per istruzioni su come accedere a questa impostazione, consultate [Creare o modi
    * Se necessario, selezionate una directory di font diversa dal menu a discesa **Origine** font. Questo menu a discesa elenca le directory dei font specificate in **Home > Impostazioni > Sistema di base > Configurazioni** di base.
    * Selezionate uno o più font dall&#39;elenco Font **** disponibili e fate clic su **Aggiungi**. Questi font vengono aggiunti all&#39;elenco **Font da annullare l&#39;incorporazione** .
    * Se si desidera rimuovere alcuni font che non esistono nel server moduli, immettere i nomi di tali font nella casella **Aggiungi font a cui annullare l&#39;incorporazione** . Fate clic su **Aggiungi**.
+
    >[!NOTE]
    >
-   >*Se si desidera rimuovere alcuni font i cui sottoinsiemi sono incorporati nel documento, aggiungere al nome del font il prefisso +. Ad esempio, &quot;+Helvetica&quot;.*
+   >*Se si desidera rimuovere alcuni font i cui sottoinsiemi sono incorporati nel documento, aggiungere il prefisso al nome del font con il segno +. Ad esempio, &quot;+Helvetica&quot;.*
 
 1. Se si desidera incorporare solo i sottoinsiemi in uso dei font incorporati, selezionare **Sottoinsieme tutti i font** incorporati.
 
@@ -271,7 +275,7 @@ Se il documento PDF include immagini con trasparenza, è possibile utilizzare le
 
 >[!NOTE]
 >
->Se Acrobat 4.0 e versioni successive vengono selezionati come versione PDF di destinazione, tutti gli oggetti trasparenti vengono appiattiti. Per le altre versioni PDF di Target, la trasparenza è supportata e potete configurare le impostazioni di trasparenza.
+>Se  Acrobat 4.0 e versioni successive è selezionato come versione PDF di destinazione, tutti gli oggetti trasparenti vengono appiattiti. Per le altre versioni PDF di Target, la trasparenza è supportata e potete configurare le impostazioni di trasparenza.
 
 Selezionate **Trasparenza** per configurare le impostazioni di trasparenza durante l’ottimizzazione dei documenti PDF.
 
@@ -281,7 +285,7 @@ Selezionate **Trasparenza** per configurare le impostazioni di trasparenza duran
 >
 >La quantità di rasterizzazione che si verifica dipende dalla complessità della pagina e dai tipi di oggetti sovrapposti.
 
-**Linea Art (Line Art) e risoluzione testo** a cui vengono rasterizzati tutti gli oggetti, incluse immagini, grafica vettoriale, testo e sfumature. I valori supportati sono da 1 pixel per pollice (ppi) a 9600 ppi.
+**Risoluzione grafica e testo** a cui vengono rasterizzati tutti gli oggetti, incluse immagini, grafica vettoriale, testo e sfumature. I valori supportati sono da 1 pixel per pollice (ppi) a 9600 ppi.
 
 >[!NOTE]
 >
@@ -293,11 +297,15 @@ Selezionate **Trasparenza** per configurare le impostazioni di trasparenza duran
 >
 >La risoluzione della sfumatura e della trama deve essere generalmente impostata su 150-300 ppi, perché la qualità delle sfumature, delle ombre esterne e delle piume non migliora con risoluzioni più elevate, ma il tempo di stampa e la dimensione del file aumentano.
 
-**Converti tutto il testo in contorni** Converte tutti gli oggetti di tipo (tipo di punto, tipo di area e tipo di percorso) in contorni e scarta tutte le informazioni di tipo glifo nelle pagine contenenti trasparenza. Questa opzione assicura che la larghezza del testo rimanga costante durante la conversione. Tenete presente che l&#39;attivazione di questa opzione causerà un lieve spessore per i font di piccole dimensioni visualizzati in Acrobat o stampati con stampanti desktop a bassa risoluzione. Non influisce sulla qualità del tipo stampato su stampanti o fotounità ad alta risoluzione.
+**Converti tutto il testo in contorni** Converte tutti gli oggetti di tipo (tipo di punto, tipo di area e tipo di percorso) in contorni e scarta tutte le informazioni di tipo glifo nelle pagine contenenti trasparenza. Questa opzione assicura che la larghezza del testo rimanga costante durante la conversione. Se si attiva questa opzione, i font di piccole dimensioni verranno visualizzati leggermente più spessi se visualizzati in  Acrobat o stampati con stampanti desktop a bassa risoluzione. Non influisce sulla qualità del tipo stampato su stampanti o fotounità ad alta risoluzione.
 
 **Converti tutti i tratti in contorni** Converte tutti i tratti in semplici tracciati riempiti su pagine contenenti trasparenza. Questa opzione assicura che la larghezza dei tratti rimanga costante durante la conversione. Tenete presente che l’attivazione di questa opzione fa sì che i tratti sottili appaiano leggermente più spessi e potrebbero compromettere le prestazioni di appiattimento.
 
-**Le aree** complesse della clip garantiscono che i bordi tra grafica vettoriale e grafica rasterizzata rientrino lungo i percorsi degli oggetti. Questa opzione consente di ridurre gli artefatti di cucitura che si verificano quando fanno parte di un og] &quot;>
+**Le aree** complesse della clip garantiscono che i bordi tra grafica vettoriale e grafica rasterizzata rientrino lungo i percorsi degli oggetti. Questa opzione consente di ridurre gli artefatti che si verificano quando parte di un og
+
+<!--
+NOTE to WRITER: Unfinished sentence above.
+-->
 
 >[!NOTE]
 >
@@ -362,7 +370,7 @@ La tabella seguente mostra i tipi comuni di stampanti e la loro risoluzione, mis
 
 Selezionate **Elimina dati** utente per rimuovere eventuali informazioni personali che non desiderate distribuire o condividere con altri utenti.
 
-* **Elimina Tutti I Commenti, I Moduli E I File Multimediali**: Rimuove dal PDF tutti i commenti, moduli, campi modulo e contenuti multimediali.
+* **Elimina Tutti I Commenti, Forms E File Multimediali**: Rimuove dal PDF tutti i commenti, moduli, campi modulo e contenuti multimediali.
 * **Elimina tutti i dati** oggetto: Rimuove tutti gli oggetti dal PDF.
 * **Elimina riferimenti** incrociati esterni: Rimuove i collegamenti ad altri documenti. I collegamenti che consentono di passare ad altre posizioni all’interno del PDF non vengono rimossi.
 * **Elimina Contenuto Livello Nascosto E Appiattisci Livelli** Visibili: Diminuisce la dimensione del file. Il documento ottimizzato è simile al PDF originale ma non contiene informazioni sul livello.
@@ -406,9 +414,9 @@ Queste opzioni determinano la modalità di conversione dei file Microsoft Excel.
 
 **Estensioni** nome file: Specifica le estensioni del nome file per i tipi di file, separati da virgole, che vengono accettate per questa applicazione. Il valore predefinito è `xls,xlsx`. Non includete un punto prima o uno spazio tra le estensioni.
 
-**Crea file** conforme con PDF/A-1a: Impone l&#39;utilizzo dell&#39;impostazione PDF Adobe PDF RGB PDF/A-1b:2005.
+**Crea file** conforme con PDF/A-1a: Forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB  Adobe PDF.
 
-**Aggiungere Segnalibri Ad Adobe PDF**: Converte i nomi dei fogli di lavoro di Excel in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
+**Aggiungi Segnalibri A  Adobe PDF**: Converte i nomi dei fogli di lavoro di Excel in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
 
 **Adatta foglio di lavoro a una singola pagina**: Riduce le dimensioni del testo per adattarlo al foglio di lavoro su una singola pagina.
 
@@ -418,11 +426,11 @@ Queste opzioni determinano la modalità di conversione dei file Microsoft Excel.
 
 **Converti informazioni** documento: Aggiunge proprietà del documento PDF basate sulle informazioni del documento nel file di origine. Sono incluse informazioni quali titolo del documento, autore, oggetto e parole chiave.
 
-**Aggiungere Collegamenti Ad Adobe PDF**: Converte i collegamenti ipertestuali nel file sorgente in collegamenti ipertestuali nel documento PDF.
+**Aggiungere Collegamenti A  Adobe PDF**: Converte i collegamenti ipertestuali nel file sorgente in collegamenti ipertestuali nel documento PDF.
 
-**Allega file sorgente ad Adobe PDF**: Quando questa opzione è selezionata, il foglio di calcolo Excel originale viene inserito come allegato nel documento PDF generato.
+**Allega File Di Origine A  Adobe PDF**: Quando questa opzione è selezionata, il foglio di calcolo Excel originale viene inserito come allegato nel documento PDF generato.
 
-**Abilita Accessibilità E Ridisponi Con Adobe PDF** Con Tag: Incorpora i tag all&#39;interno del documento PDF per abilitare l&#39;accessibilità e la ridisposizione.
+**Abilita Accessibilità E Reflow Con Tag  Adobe PDF**: Incorpora i tag all&#39;interno del documento PDF per abilitare l&#39;accessibilità e la ridisposizione.
 
 **Elenco Di Componenti Aggiuntivi Di Excel Da Caricare**: Per impostazione predefinita (per motivi di sicurezza), quando un file Excel viene convertito in PDF non viene eseguito alcun componente aggiuntivo di Excel. Per consentire l&#39;esecuzione di alcuni componenti aggiuntivi di Excel durante la conversione, fornite un elenco separato da virgole dei nomi dei componenti aggiuntivi.
 
@@ -438,11 +446,11 @@ Queste opzioni determinano la modalità di conversione dei file Microsoft PowerP
 
 **[!UICONTROL Converti informazioni]** documento: Aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, società, categoria e commenti. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Aggiungere Segnalibri Ad Adobe PDF]**: Converte i titoli di PowerPoint in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
+**[!UICONTROL Aggiungi Segnalibri A  Adobe PDF]**: Converte i titoli di PowerPoint in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Allega file sorgente ad Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato. Per impostazione predefinita questa opzione è deselezionata.
+**[!UICONTROL Allega File Di Origine A  Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato. Per impostazione predefinita questa opzione è deselezionata.
 
-**[!UICONTROL Abilita Accessibilità E Ridisponi Con Adobe PDF]** Con Tag: Incorpora i tag nel file PDF. Per impostazione predefinita questa opzione è deselezionata.
+**[!UICONTROL Abilita Accessibilità E Reflow Con Tag  Adobe PDF]**: Incorpora i tag nel file PDF. Per impostazione predefinita questa opzione è deselezionata.
 
 **[!UICONTROL Converti file multimediali in file multimediali]** PDF: Converte i file multimediali in file multimediali PDF, se possibile. Per impostazione predefinita, questa opzione è selezionata.
 
@@ -452,15 +460,15 @@ Queste opzioni determinano la modalità di conversione dei file Microsoft PowerP
 
 **[!UICONTROL Layout PDF basato sulle impostazioni]** della stampante PowerPoint: Utilizza le impostazioni della stampante PowerPoint per il layout del documento PDF.
 
-**[!UICONTROL Aggiungere Collegamenti Ad Adobe PDF]**: Mantiene i collegamenti esistenti quando il file viene convertito. L&#39;aspetto dei collegamenti è generalmente invariato. I collegamenti possono essere creati solo se è selezionata anche l&#39;opzione Abilita accessibilità. Per impostazione predefinita questa opzione è deselezionata.
+**[!UICONTROL Aggiungere Collegamenti A  Adobe PDF]**: Mantiene i collegamenti esistenti quando il file viene convertito. L&#39;aspetto dei collegamenti è generalmente invariato. I collegamenti possono essere creati solo se è selezionata anche l&#39;opzione Abilita accessibilità. Per impostazione predefinita questa opzione è deselezionata.
 
-**[!UICONTROL Salva Transizioni Diapositive In Adobe PDF]**: Converte le transizioni delle diapositive. Per impostazione predefinita, questa opzione è selezionata.
+**[!UICONTROL Salva Transizioni Diapositive In  Adobe PDF]**: Converte le transizioni delle diapositive. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Salva Animazioni In Adobe PDF]**: Salva le animazioni convertite nel file PDF.
+**[!UICONTROL Salva Animazioni In  Adobe PDF]**: Salva le animazioni convertite nel file PDF.
 
 **[!UICONTROL Converti diapositive nascoste in pagine]** PDF: Converte le diapositive nascoste.
 
-**[!UICONTROL Crea file]** conforme con PDF/A-1a: Impone l&#39;utilizzo dell&#39;impostazione PDF Adobe PDF RGB PDF/A-1b:2005. Alcune funzioni di PowerPoint non vengono convertite quando si crea un file PDF. Se una transizione PowerPoint non ha una transizione equivalente in Acrobat, viene sostituita una transizione simile. Se più effetti di animazione si trovano nella stessa diapositiva, viene utilizzato un singolo effetto. Le transizioni di pagina e i plug-in vengono convertiti.
+**[!UICONTROL Crea file]** conforme con PDF/A-1a: Forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB  Adobe PDF. Alcune funzioni di PowerPoint non vengono convertite quando si crea un file PDF. Se una transizione PowerPoint non ha una transizione equivalente in  Acrobat, viene sostituita una transizione simile. Se più effetti di animazione si trovano nella stessa diapositiva, viene utilizzato un singolo effetto. Le transizioni di pagina e i plug-in vengono convertiti.
 
 ## Impostazioni Microsoft Project (solo Windows) {#microsoft-project-settings-windows-only}
 
@@ -469,8 +477,8 @@ Queste opzioni determinano la modalità di conversione dei file Microsoft Projec
 1. **[!UICONTROL Estensioni nome file:]** Specifica le estensioni del nome file per i tipi di file, separati da virgole, che vengono accettate per questa applicazione. Il valore predefinito è `mpp`. Non includete un punto prima o uno spazio tra le estensioni.
 
 1. **[!UICONTROL Converti informazioni]** documento: Aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, società, categoria e commenti. Per impostazione predefinita, questa opzione è selezionata.
-1. **[!UICONTROL Allega file sorgente ad Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato.
-1. **[!UICONTROL Crea file]** conforme con PDF/A-1a: Impone l&#39;utilizzo dell&#39;impostazione PDF Adobe PDF RGB PDF/A-1b:2005.
+1. **[!UICONTROL Allega File Di Origine A  Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato.
+1. **[!UICONTROL Crea file]** conforme con PDF/A-1a: Forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB  Adobe PDF.
 1. **[!UICONTROL Esegui macro automaticamente]**: Esegue qualsiasi macro nel documento di Microsoft Project (ad esempio una macro che inserisce l&#39;ora corrente) prima di convertire il documento.
 
 ## Impostazioni di Microsoft Word (solo Windows) {#microsoft-word-settings-windows-only}
@@ -483,25 +491,25 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Wor
 
 **[!UICONTROL Converti informazioni]** documento: Aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, società, categoria e commenti. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Aggiungere Segnalibri Ad Adobe PDF]**: Converte le intestazioni in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
+**[!UICONTROL Aggiungi Segnalibri A  Adobe PDF]**: Converte le intestazioni in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Allega file sorgente ad Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato.
+**[!UICONTROL Allega File Di Origine A  Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato.
 
 **[!UICONTROL Converti Riferimenti E Sommario In Collegamenti]**: Converte tutti i riferimenti incrociati e le voci del sommario in collegamenti. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Abilita Accessibilità E Ridisponi Con Adobe PDF]** Con Tag: Incorpora i tag nel file PDF. Per impostazione predefinita, questa opzione è selezionata.
+**[!UICONTROL Abilita Accessibilità E Reflow Con Tag  Adobe PDF]**: Incorpora i tag nel file PDF. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Crea file]** conforme con PDF/A-1a: Se questa opzione è selezionata, forza l&#39;utilizzo dell&#39;impostazione PDF Adobe PDF RGB PDF/A-1b:2005.
+**[!UICONTROL Crea file]** conforme con PDF/A-1a: Se questa opzione è selezionata, forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB  Adobe PDF.
 
 **[!UICONTROL Esegui macro automaticamente]**: Esegue qualsiasi macro nel documento Word (ad esempio una macro che inserisce l&#39;ora corrente) prima di convertire il documento.
 
-**[!UICONTROL Mantieni marcatura documento in Adobe PDF]**: Converte la marcatura nel documento Word in annotazioni nel file PDF.
+**[!UICONTROL Mantieni markup documento in  Adobe PDF]**: Converte la marcatura nel documento Word in annotazioni nel file PDF.
 
-**[!UICONTROL Aggiungere Collegamenti Ad Adobe PDF]**: Converte i collegamenti ipertestuali nel file sorgente in collegamenti ipertestuali nel documento PDF.
+**[!UICONTROL Aggiungere Collegamenti A  Adobe PDF]**: Converte i collegamenti ipertestuali nel file sorgente in collegamenti ipertestuali nel documento PDF.
 
 **[!UICONTROL Converti Collegamenti]** Nota A Piè Di Pagina E Nota Di Chiusura: Crea collegamenti dalle note a piè di pagina e di chiusura alle note presenti nel documento PDF.
 
-**[!UICONTROL Converti commenti visualizzati in note in Adobe PDF]**: Converte i commenti nel documento Word in note di testo nel documento PDF.
+**[!UICONTROL Converti commenti visualizzati in note in  Adobe PDF]**: Converte i commenti nel documento Word in note di testo nel documento PDF.
 
 **[!UICONTROL Abilita tag]** avanzati: Aggiunge tag avanzati per una migliore accessibilità.
 
@@ -513,27 +521,27 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Wor
 
 Se il nome di uno stile di Microsoft Word include una virgola (,) o un segno di uguale (=), anteporre i caratteri speciali al carattere di escape (&quot;\_). Ad esempio, specificare uno stile denominato &quot;Titolo, 1&quot; come Intestazione\, 1.
 
-**Codifica di Acrobat PDFMaker:** Specifica il tipo di codifica dei file di testo normale di input in Acrobat PDFMaker. Ad esempio, se utilizzate un file con codifica UTF-8, selezionate UTF-8 per ottenere risultati ottimali.
+**codifica Acrobat PDFMaker:** Specifica il tipo di codifica dei file di testo normale di input nel  Acrobat PDFMaker. Ad esempio, se utilizzate un file con codifica UTF-8, selezionate UTF-8 per ottenere risultati ottimali.
 
 ## Impostazioni di Microsoft Visio (solo Windows) {#visio}
 
 **Converti informazioni** documento: Aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, società, categoria e commenti. Per impostazione predefinita, questa opzione è selezionata. Questa opzione è attivata per impostazione predefinita.
 
-**Aggiungere Collegamenti Ad Adobe PDF**: Mantiene tutti i collegamenti. Per impostazione predefinita, questa opzione è selezionata.
+**Aggiungere Collegamenti A  Adobe PDF**: Mantiene tutti i collegamenti. Per impostazione predefinita, questa opzione è selezionata.
 
-**Aggiungere Segnalibri Ad Adobe PDF**: Converte le intestazioni in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
+**Aggiungi Segnalibri A  Adobe PDF**: Converte le intestazioni in segnalibri. Per impostazione predefinita, questa opzione è selezionata.
 
-**Allega file sorgente ad Adobe PDF**: Aggiunge il file sorgente al file PDF come allegato.
+**Allega File Di Origine A  Adobe PDF**: Aggiunge il file sorgente al file PDF come allegato.
 
-**Appiattisci sempre i livelli in Adobe PDF**: Appiattisce tutti i livelli di Visio.
+**Appiattisci sempre i livelli in  Adobe PDF**: Appiattisce tutti i livelli di Visio.
 
 **Converti tutte le pagine**: Converte tutte le pagine del file Visio.
 
-**Aprite Il Pannello Livelli Quando Visualizzato In Adobe Acrobat**: Se i livelli di Visio non sono appiattiti, apre una finestra in cui è possibile specificare i livelli che vengono conservati nel file PDF quando vengono aperti con Acrobat. Per impostazione predefinita, questa opzione è selezionata.
+**Aprite Il Pannello Livelli Quando Visualizzato In  Adobe Acrobat**: Se i livelli di Visio non sono appiattiti, apre una finestra in cui è possibile specificare i livelli che vengono conservati nel file PDF quando vengono aperti con  Acrobat. Per impostazione predefinita, questa opzione è selezionata.
 
-**Crea file** conforme con PDF/A-1b: Impone l&#39;utilizzo dell&#39;impostazione Adobe PDF (impostazione PDF/A-1b:2005) (RGB).
+**Crea file** conforme con PDF/A-1b: Impone l&#39;utilizzo dell&#39;impostazione Adobe PDF  PDF/A-1b:2005 (RGB).
 
-**Converti commenti in commenti** Adobe PDF: Converte le note di Visio in commenti PDF.
+**Converti Commenti In  Commenti** Adobe PDF: Converte le note di Visio in commenti PDF.
 
 ## Impostazioni di Microsoft Publisher (solo Windows) {#microsoft-publisher-settings-windows-only}
 
@@ -549,21 +557,21 @@ Queste opzioni determinano la modalità di conversione dei file AutoCAD. Per ist
 
 **[!UICONTROL Converti informazioni]** documento: Aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, società, categoria e commenti. Per impostazione predefinita, questa opzione è selezionata.
 
-**[!UICONTROL Aggiungere Segnalibri Ad Adobe PDF]**: Converte le intestazioni in segnalibri.
+**[!UICONTROL Aggiungi Segnalibri A  Adobe PDF]**: Converte le intestazioni in segnalibri.
 
-**[!UICONTROL Appiattisci sempre i livelli in Adobe PDF]**: Appiattisce tutti i livelli AutoCAD.
+**[!UICONTROL Appiattisci sempre i livelli in  Adobe PDF]**: Appiattisce tutti i livelli AutoCAD.
 
-**[!UICONTROL Aprire Il Riquadro Livelli Visualizzato In Adobe Acrobat]**: Mostra la struttura dei livelli quando il PDF viene aperto in Acrobat.
+**[!UICONTROL Apri Riquadro Livelli Visualizzato In  Adobe Acrobat]**: Mostra la struttura dei livelli quando il PDF viene aperto in  Acrobat.
 
 **[!UICONTROL Converti tutti i layout]**: Include tutti i layout nel PDF.
 
 **[!UICONTROL Converti spazio modello in 3D]**: Quando è selezionato, il layout dello spazio modello viene convertito in un&#39;annotazione 3D nel PDF.
 
-**[!UICONTROL Aggiungere Collegamenti Ad Adobe PDF]**: Se selezionato, mantiene tutti i collegamenti.
+**[!UICONTROL Aggiungere Collegamenti A  Adobe PDF]**: Se selezionato, mantiene tutti i collegamenti.
 
-**[!UICONTROL Allega file sorgente ad Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato.
+**[!UICONTROL Allega File Di Origine A  Adobe PDF]**: Aggiunge il file sorgente al file PDF come allegato.
 
-**[!UICONTROL Crea file]** conforme con PDF/A-1b: Impone l&#39;utilizzo dell&#39;impostazione PDF Adobe PDF PDF PDF PDF PDF PDF/A-1b.
+**[!UICONTROL Crea file]** conforme con PDF/A-1b: Impone l&#39;utilizzo dell&#39;impostazione PDF/A-1b  Adobe PDF.
 
 **[!UICONTROL Converti tutti i livelli]**: Per impostazione predefinita, PDF Generator converte in PDF solo il livello predefinito dei file AutoCAD anziché tutti i livelli contenuti nel file. Selezionate questa opzione per convertire tutti i livelli del file.
 
@@ -602,7 +610,7 @@ Queste opzioni determinano la modalità di conversione dei file OpenOffice. Per 
 
 **Usa effetti** di transizione: Converte gli effetti di transizione della diapositiva nelle presentazioni OpenOffice in effetti di transizione PDF corrispondenti.
 
-**Invia Moduli In Formato**: Crea un modulo PDF che può essere compilato e stampato dall&#39;utente del documento PDF.
+**Invia Forms In Formato**: Crea un modulo PDF che può essere compilato e stampato dall&#39;utente del documento PDF.
 
 **Esporta automaticamente pagine** vuote inserite: Quando questa opzione è selezionata, nel documento PDF generato vengono inserite automaticamente pagine vuote. Questa funzione è utile se si stampa un documento PDF fronte/retro. Ad esempio, un libro può essere configurato in modo che la prima pagina del capitolo inizi sempre su una pagina dispari. Se il capitolo precedente termina su una pagina dispari, OpenOffice inserisce una pagina pari vuota. Questa opzione controlla se includere la pagina pari nel PDF generato.
 
@@ -611,10 +619,10 @@ Queste opzioni determinano la modalità di conversione dei file OpenOffice. Per 
 Non è possibile modificare le impostazioni per altre applicazioni tramite la console di amministrazione; visualizzano le estensioni del nome file per i tipi di file supportati. Per istruzioni su come accedere a queste impostazioni, consultate [Creare o modificare le impostazioni](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html)dei tipi di file.
 
 * Corel WordPerfect: `wpd`
-* Adobe PageMaker: `pmd, pm6, p65, pm`
-* Adobe FrameMaker: `fm`
+* PageMaker Adobe : `pmd, pm6, p65, pm`
+*  Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Potrebbe essere necessario personalizzare il supporto per questi tipi di file. Per ulteriori informazioni, vedere &quot;Aggiunta di supporto per formati di file nativi aggiuntivi&quot; nella [programmazione con i moduli](https://www.adobe.com/go/learn_aemforms_programming_62)AEM.
+Potrebbe essere necessario personalizzare il supporto per questi tipi di file. Per ulteriori informazioni, vedere &quot;Aggiunta del supporto per formati di file nativi aggiuntivi&quot; nella [programmazione con moduli](https://www.adobe.com/go/learn_aemforms_programming_62)AEM.
 
 Per informazioni sulla configurazione di una stampante di rete PDFG, vedere [Configurazione di una stampante di rete PDFG (solo Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).
