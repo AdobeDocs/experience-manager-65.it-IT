@@ -3,9 +3,9 @@ title: Best practice per [!DNL Adobe Experience Manager Assets] monitorare l'imp
 description: Procedure ottimali per monitorare l'ambiente e le prestazioni dell' [!DNL Adobe Experience Manager] implementazione dopo l'implementazione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1671'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ In genere, questi strumenti vengono utilizzati insieme per ottenere un’idea co
 
 >[!NOTE]
 >
->Questi strumenti sono strumenti standard e non sono supportati direttamente da Adobe. Non richiedono licenze aggiuntive.
+>Questi strumenti sono strumenti standard e non sono supportati direttamente  Adobe. Non richiedono licenze aggiuntive.
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
@@ -71,7 +71,7 @@ Il monitoraggio ambientale include il monitoraggio dei seguenti elementi:
 * JMX MBeans
 * Siti Web esterni
 
-Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, un backup del flusso di lavoro, un errore del controllo dello stato o un accesso non autenticato al tuo sito Web. Adobe non consiglia di utilizzare strumenti particolari su altri. Trovate lo strumento che funziona per voi e sfruttatelo per monitorare gli elementi discussi.
+Per monitorare ogni elemento sono necessari strumenti esterni, come NewRelic(TM) e AppDynamics(TM). Utilizzando questi strumenti, puoi definire avvisi specifici per il tuo sistema, ad esempio un elevato utilizzo del sistema, un backup del flusso di lavoro, un errore del controllo dello stato o un accesso non autenticato al tuo sito Web.  Adobe non consiglia strumenti particolari rispetto ad altri. Trovate lo strumento che funziona per voi e sfruttatelo per monitorare gli elementi discussi.
 
 #### Monitoraggio delle applicazioni interne {#internal-application-monitoring}
 
@@ -95,7 +95,7 @@ Memoria
 * Soglia allarme: Quando l&#39;utilizzo della memoria heap o non heap supera il 75% della memoria massima corrispondente.
 * Definizione allarme: La memoria del sistema è insufficiente o si verifica una perdita di memoria nel codice. Analizzare un dump di thread per arrivare a una definizione.
 
->[!Note]
+>[!NOTE]
 >
 >Le informazioni fornite da questo fagiolo sono espresse in byte.
 
@@ -122,7 +122,7 @@ Agenti di replica
 
 * Definizione allarme: Presenza di una coda bloccata nel sistema per indicare che la destinazione di replica è inattiva o non raggiungibile. Spesso, problemi di rete o di infrastruttura causano la messa in coda di voci eccessive, che possono avere un impatto negativo sulle prestazioni del sistema.
 
->[!Note]
+>[!NOTE]
 >
 >Per i parametri MBean e URL, sostituite `<AGENT_NAME>` con il nome dell&#39;agente di replica da monitorare.
 
@@ -198,5 +198,5 @@ Nel processo di monitoraggio, in caso di problemi, sono disponibili alcune attiv
 * Utilizzate la console del flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, condensa più flussi di lavoro in un unico flusso di lavoro.
 * Rivedere il monitoraggio live e cercare ulteriori strozzature o elevati consumatori di risorse specifiche.
 * Esaminare i punti di uscita dalla rete client e i punti di ingresso alla rete di [!DNL Experience Manager] distribuzione, incluso il dispatcher. Spesso si tratta di aree con collo di bottiglia. Per ulteriori informazioni, consulta Considerazioni sulla rete delle [risorse](/help/assets/assets-network-considerations.md).
-* Ridimensionare il [!DNL Experience Manager] server. È possibile che la [!DNL Experience Manager] distribuzione non sia sufficientemente dimensionata. L&#39;Assistenza clienti Adobe può aiutarti a identificare se il server è di dimensioni ridotte.
+* Ridimensionare il [!DNL Experience Manager] server. È possibile che la [!DNL Experience Manager] distribuzione non sia sufficientemente dimensionata.  Assistenza clienti di Adobe può aiutarti a identificare se il server è di dimensioni ridotte.
 * Esaminare i `access.log` file e `error.log` le voci relative al momento in cui qualcosa è andato storto. Cercare pattern che possono indicare anomalie di codice potenzialmente personalizzate. Aggiungeteli all’elenco degli eventi monitorati.
