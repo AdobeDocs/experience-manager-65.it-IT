@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ba6f94435a4d4945d54614db19f7ff612a317692
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '11830'
+source-wordcount: '11828'
 ht-degree: 8%
 
 ---
@@ -356,7 +356,7 @@ Questa tabella descrive la velocità dati delle velocità di connessione tipiche
 
 **La risoluzione **descrive l&#39;altezza e la larghezza di un file video, in pixel. La maggior parte dei video sorgente viene memorizzata ad alta risoluzione (ad esempio, 1920 x 1080). Per lo streaming, il video sorgente viene compresso in una risoluzione più piccola (640 x 480 o inferiore).
 
-La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320x240 e un file video con risoluzione 640x480:
+La risoluzione e la velocità dati sono due fattori strettamente correlati che determinano la qualità video. Per mantenere la stessa qualità video, più elevato è il numero di pixel in un file video (più alta è la risoluzione), più alta deve essere la velocità dati. Ad esempio, considerate il numero di pixel per fotogramma in una risoluzione 320 x 240 e un file video con risoluzione 640 x 480:
 
 | Risoluzione | Pixel per fotogramma |
 |--- |--- |
@@ -444,7 +444,7 @@ Tenete presente che Google apporta periodicamente delle modifiche alla propria i
 
 >[!NOTE]
 >
->I seguenti passaggi erano accurati al momento di questa scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
+>I seguenti passaggi erano accurati al momento della scrittura. Tuttavia, Google aggiorna periodicamente i loro siti web senza preavviso. Di conseguenza, questi passaggi possono essere leggermente diversi.
 
 Per configurare le impostazioni di Google Cloud:
 
@@ -642,7 +642,7 @@ Lasciate aperta la pagina Crea configurazione YouTube; ritornerete su di esso tr
 1. Toccate **[!UICONTROL Crea.]**
 1. Nella finestra di dialogo Impostazioni account di YouTube, immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
 
-   L&#39;ID progetto è stato specificato al momento della [configurazione iniziale delle impostazioni](/help/assets/video.md#configuring-google-cloud-settings) Google Cloud.
+   Hai specificato l&#39;ID progetto al momento della [configurazione iniziale delle impostazioni](/help/assets/video.md#configuring-google-cloud-settings) Google Cloud.
 Lasciate aperta la finestra di dialogo Impostazioni account di YouTube; ritornerete su di esso tra un momento.
 
 1. Utilizzando un editor di testo normale, aprite il file JSON scaricato e salvato in precedenza nell&#39;attività Configurazione delle impostazioni di Google Cloud.
@@ -688,7 +688,7 @@ Per automatizzare l’impostazione delle proprietà predefinite di YouTube per i
 
 1. Nell’angolo in alto a sinistra di AEM, tocca il logo AEM, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi di metadati.]**
 1. Click **[!UICONTROL default.]** (Non aggiungere un segno di spunta alla casella di selezione a sinistra di &quot;default&quot;).
-1. Nella pagina **[!UICONTROL predefinita]**, seleziona la casella a sinistra del **[!UICONTROL video]**, quindi fai clic su **Modifica.]**
+1. Nella pagina **[!UICONTROL predefinita]**, seleziona la casella a sinistra del **[!UICONTROL video]**, quindi fai clic su **[!UICONTROL Modifica.]**
 1. Nella pagina Editor schema metadati, fate clic sulla scheda **[!UICONTROL Avanzate]** .
 1. Nell’intestazione Pubblicazione su YouTube, fai clic su **[!UICONTROL Categoria YouTube.]**
 1. Sul lato destro della pagina, nella scheda **[!UICONTROL Impostazioni]** , effettuate le seguenti operazioni:
@@ -722,7 +722,7 @@ Incollate il valore copiato nell’editor di testo aperto. Questo valore sarà n
    * (Facoltativo) Sul lato destro della pagina, nella scheda Impostazioni, immettere `YouTube Publishing`.
    * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you just created.
 
-   * Click **[!UICONTROL Field Label** to select the component.
+   * Click **[!UICONTROL Field Label]** to select the component.
    * Sul lato destro della pagina, nella scheda Impostazioni, incollate i valori di Pubblicazione su YouTube (valore Etichetta campo e Mappa su valore proprietà) precedentemente copiati nei rispettivi campi del modulo. Incolla il valore di Scelte nel campo Valore predefinito.
 
 1. Aggiungete i valori di privacy di YouTube copiati al profilo effettuando le seguenti operazioni:
@@ -885,7 +885,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
    >[!NOTE]
    >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
@@ -1079,7 +1079,7 @@ Per aggiungere sottotitoli o sottotitoli al video:
 
 1. Usate un’applicazione o un servizio di terze parti per creare il file di sottotitoli o sottotitoli video.
 
-   Verificate che il file creato sia conforme allo standard WebVTT (Web Video Text Tracks). L’estensione dei file di sottotitoli è .vtt. Per ulteriori informazioni sullo standard per sottotitoli WebVTT,
+   Verificate che il file creato sia conforme allo standard WebVTT (Web Video Text Tracks). L’estensione del nome file dei sottotitoli è .vtt. Per ulteriori informazioni sullo standard per sottotitoli WebVTT,
 
    Vedere [WebVTT: Il formato](https://dev.w3.org/html5/webvtt/)Web Video Text Tracks.
 
@@ -1227,7 +1227,7 @@ Per **aggiungere una miniatura** video personalizzata,
 
 1. Passate a una risorsa video caricata la cui miniatura desiderate modificare.
 1. Nella modalità di selezione delle risorse dalla vista **** Elenco o **[!UICONTROL a schede]**, toccate la risorsa video.
-1. Sulla barra degli strumenti, toccate l&#39;icona **[!UICONTROL Properties** (un cerchio contenente un &quot;i&quot;).
+1. Sulla barra degli strumenti, toccate l’icona **[!UICONTROL Proprietà]** (un cerchio con in essa un &quot;i&quot;).
 1. Nella pagina Proprietà del video, toccate **[!UICONTROL Cambia miniatura.]**
 1. Nella pagina Modifica miniatura, effettuate una delle seguenti operazioni:
 
@@ -1254,7 +1254,7 @@ In base al tempo totale del video, Contenuti multimediali dinamici acquisisce di
 
 È consigliabile aggiungere una miniatura video in qualsiasi momento dopo aver caricato il video, ma prima di pubblicarlo sul sito Web.
 
-Se preferite, potete scegliere di caricare una miniatura personalizzata per rappresentare il video invece di usare una miniatura generata da Contenuti multimediali dinamici. Ad esempio, potete creare un’immagine in miniatura personalizzata con il titolo del video, un’immagine di apertura accattivante o un’immagine molto specifica acquisita dal video. La miniatura video personalizzata caricata deve avere una risoluzione massima di 1280 x 720 pixel (larghezza minima di 640 pixel) e non deve essere superiore a 2 MB.
+Se preferite, potete scegliere di caricare una miniatura personalizzata per rappresentare il video invece di usare una miniatura generata da Contenuti multimediali dinamici. Ad esempio, potete creare una miniatura personalizzata con il titolo del video, un’immagine di apertura accattivante o un’immagine molto specifica acquisita dal video. La miniatura video personalizzata caricata deve avere una risoluzione massima di 1280 x 720 pixel (larghezza minima di 640 pixel) e non deve essere superiore a 2 MB.
 
 Consultate anche [Le miniature video in modalità](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode)Contenuti multimediali dinamici - Scene7.
 
