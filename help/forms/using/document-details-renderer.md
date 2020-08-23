@@ -1,15 +1,15 @@
 ---
 title: Dettagli del documento per il renderer
 seo-title: Dettagli del documento per il renderer
-description: Informazioni concettuali sul funzionamento dei rendering nell'area di lavoro AEM Forms per eseguire il rendering dei vari moduli e tipi di file supportati.
-seo-description: Informazioni concettuali sul funzionamento dei rendering nell'area di lavoro AEM Forms per eseguire il rendering dei vari moduli e tipi di file supportati.
+description: Informazioni concettuali sul funzionamento dei rendering nell'area di lavoro  AEM Forms per eseguire il rendering dei vari moduli e tipi di file supportati.
+seo-description: Informazioni concettuali sul funzionamento dei rendering nell'area di lavoro  AEM Forms per eseguire il rendering dei vari moduli e tipi di file supportati.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Nell&#39;area di lavoro AEM Forms, più tipi di modulo sono supportati senza problemi. Comprendono:
+Nellarea di lavoro di AEM Forms, sono supportati più tipi di moduli senza problemi. Comprendono:
 
 * PDF forms (XDP/Acroform/PDF flat)
 * Nuovi moduli HTML
 * Immagini
 * Applicazioni di terze parti (ad esempio, Gestione della corrispondenza)
 
-In questo documento viene illustrato il funzionamento di questi renderer dal punto di vista della personalizzazione semantica e del riutilizzo dei componenti, in modo da soddisfare le esigenze dei clienti senza interrompere alcuna rappresentazione. Anche se l&#39;area di lavoro AEM Forms consente qualsiasi interfaccia utente/modifica semantica, si consiglia di non modificare la logica di rendering dei diversi tipi di modulo, altrimenti i risultati potrebbero essere imprevedibili. Questo documento è destinato alle linee guida/conoscenze per supportare il rendering dello stesso modulo, l’utilizzo degli stessi componenti dell’area di lavoro in portali diversi e non la modifica della logica di rendering stessa.
+In questo documento viene illustrato il funzionamento di questi renderer dal punto di vista della personalizzazione semantica e del riutilizzo dei componenti, in modo da soddisfare le esigenze dei clienti senza interrompere alcuna rappresentazione. Anche se &#39;area di lavoro di AEM Forms consente qualsiasi interfaccia utente/modifica semantica, si consiglia di non modificare la logica di rendering dei diversi tipi di modulo, altrimenti i risultati potrebbero essere imprevedibili. Questo documento è destinato alle linee guida/conoscenze per supportare il rendering dello stesso modulo, l’utilizzo degli stessi componenti dell’area di lavoro in portali diversi e non la modifica della logica di rendering stessa.
 
 ## PDF forms {#pdf-forms}
 
@@ -36,7 +36,7 @@ Viene eseguito il rendering dei PDF forms da `PdfTaskForm View`.
 
 Quando si esegue il rendering di un modulo XDP come PDF, il servizio FormsAugmenter aggiunge un `FormBridge` JavaScript™. Questo JavaScript™ (all&#39;interno del modulo PDF) consente di eseguire azioni quali l&#39;invio, il salvataggio dei moduli o la messa in modalità offline dei moduli.
 
-Nell&#39;area di lavoro AEM Forms, la visualizzazione PDFTaskForm comunica con il `FormBridge`javascript tramite un HTML intermedio presente in `/lc/libs/ws/libs/ws/pdf.html`. Il flusso è:
+Nell&#39;area di lavoro  AEM Forms, la visualizzazione PDFTaskForm comunica con il `FormBridge`javascript tramite un HTML intermedio presente in `/lc/libs/ws/libs/ws/pdf.html`. Il flusso è:
 
 **Visualizzazione PDFTaskForm - pdf.html**
 
@@ -54,7 +54,7 @@ Questo metodo è il metodo standard di comunicazione con un PDF PDFavaScript da 
 >
 >Non è consigliabile modificare il contenuto pdf.html / della visualizzazione PdfTaskForm.
 
-## Nuovi moduli HTML {#new-html-forms}
+## Nuovo Forms HTML {#new-html-forms}
 
 Il rendering dei nuovi moduli HTML viene eseguito dalla visualizzazione NewHTMLTaskForm.
 
@@ -66,11 +66,11 @@ Questo JavaScript è diverso da quello indicato nei PDF forms precedenti, ma ha 
 >
 >Non è consigliabile modificare il contenuto della visualizzazione NewHTMLTaskForm.
 
-## Moduli e guide Flex {#flex-forms-and-guides}
+## Flex Forms e Guide {#flex-forms-and-guides}
 
-Per i moduli Flex viene eseguito il rendering da SwfTaskForm e le guide vengono rappresentate rispettivamente da HtmlTaskForm Views.
+Il rendering di Flex Forms viene eseguito da SwfTaskForm e il rendering delle guide viene eseguito rispettivamente da HtmlTaskForm Views.
 
-Nell&#39;area di lavoro AEM Forms, queste viste comunicano con il file SWF effettivo che costituisce la forma/guida Flex utilizzando un file SWF intermedio presente in `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+Nell&#39;area di lavoro  AEM Forms, queste viste comunicano con il file SWF effettivo che costituisce la forma/guida flessibile utilizzando un file SWF intermedio presente in `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 La comunicazione avviene utilizzando `swfObject.postMessage` / `window.flexMessageHandler`.
 
@@ -84,16 +84,16 @@ Questo protocollo è definito dall&#39; `WsNextAdapter.swf`. L&#39;oggetto `flex
 
 Il rendering delle applicazioni di terze parti viene eseguito utilizzando la visualizzazione ExtAppTaskForm.
 
-**Comunicazione dell’area di lavoro applicazione di terze parti a AEM Forms**
+**Applicazione di terze parti per  comunicazione area di lavoro AEM Forms**
 
-L’area di lavoro AEM Forms ascolta `window.global.postMessage([Message],[Payload])`
+&#39;area di lavoro di AEM Forms `window.global.postMessage([Message],[Payload])`
 
-[Il messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`nel `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per inviare le notifiche all&#39;area di lavoro AEM Forms in base alle esigenze. L&#39;utilizzo di questa interfaccia è obbligatorio, perché l&#39;area di lavoro AEM Forms deve sapere che quando l&#39;attività viene inviata in modo da poter ripulire la finestra dell&#39;attività.
+[Il messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`nel `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per notificare &#39;area di lavoro di AEM Forms in base alle esigenze. L&#39;utilizzo di questa interfaccia è obbligatorio, perché l&#39;area di lavoro di AEM Forms  deve sapere che quando l&#39;attività viene inviata in modo da poter ripulire la finestra dell&#39;attività.
 
-**Area di lavoro AEM Forms con comunicazione di applicazioni di terze parti**
+**area di lavoro AEM Forms alla comunicazione con applicazioni di terze parti**
 
-Se i pulsanti di azione diretta dell&#39;area di lavoro AEM Forms sono visibili, viene chiamato `window.[External-App-Name].getMessage([Action])`, dove [ `Action]` viene letto dal `routeActionMap`. L&#39;applicazione di terze parti deve ascoltare questa interfaccia, quindi inviare una notifica all&#39;area di lavoro AEM Forms tramite l&#39; `postMessage ()` API.
+Se  pulsanti di azione diretta dell&#39;area di lavoro di AEM Forms sono visibili, viene chiamato `window.[External-App-Name].getMessage([Action])`il punto in cui `[Action]` viene letto dal `routeActionMap`. L&#39;applicazione di terze parti deve ascoltare questa interfaccia e inviare una notifica &#39;area di lavoro AEM Forms tramite l&#39; `postMessage ()` API.
 
 Ad esempio, un&#39;applicazione Flex può definire `ExternalInterface.addCallback('getMessage', listener)` per supportare questa comunicazione. Se l&#39;applicazione di terze parti desidera gestire l&#39;invio del modulo tramite i propri pulsanti, è necessario specificare `hideDirectActions = true() in the runtimeMap` e ignorare il listener. Quindi, questo costrutto è facoltativo.
 
-Per ulteriori informazioni sull’integrazione di applicazioni di terze parti con la gestione della corrispondenza, consulta [Integrazione della gestione della corrispondenza nell’area di lavoro](/help/forms/using/integrating-correspondence-management-html-workspace.md)AEM Forms.
+Per ulteriori informazioni sull’integrazione di applicazioni di terze parti con la gestione della corrispondenza, consulta [Integrazione della gestione della corrispondenza nell’area di lavoro](/help/forms/using/integrating-correspondence-management-html-workspace.md) AEM Forms.
