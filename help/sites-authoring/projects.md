@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 85%
 
 ---
 
@@ -33,8 +36,7 @@ Come utente, puoi effettuare le seguenti operazioni:
 
 Consulta i seguenti argomenti aggiuntivi:
 
-* [Gestione di progetti
-   ](/help/sites-authoring/touch-ui-managing-projects.md)
+* [Gestione dei progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Utilizzo delle attività](/help/sites-authoring/task-content.md)
 * [Utilizzo dei flussi di lavoro del progetto](/help/sites-authoring/projects-with-workflows.md)
 * [Integrazione di Progetto creativo e PIM](/help/sites-authoring/managing-product-information.md)
@@ -68,7 +70,7 @@ Da Progetti, è possibile associare diversi tipi di informazioni ai progetti. Qu
 * Lanci
 * Attività
 
-### Risorse {#assets}
+### Assets {#assets}
 
 Nella sezione **Risorse**, puoi raccogliere tutte le risorse usate per un particolare progetto.
 
@@ -92,7 +94,7 @@ La sezione **Esperienze** consente di aggiungere un’applicazione per dispositi
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-Le icone indicano il tipo di esperienza rappresentato: sito web, applicazione mobile o pubblicazione. Aggiungi le esperienze facendo clic sul segno + o facendo clic su **Aggiungi esperienza** e selezionando il tipo di esperienza.
+Le icone indicano quale tipo di esperienza è rappresentata: sito web, app mobile o pubblicazione. Aggiungi le esperienze facendo clic sul segno + o su **Aggiungi esperienza** e selezionandone il tipo.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -178,7 +180,7 @@ Le attività consentono di controllare lo stato di tutte le attività relative a
 
 ## Modelli di progetto {#project-templates}
 
-AEM viene fornito con tre modelli diversi:
+AEM navi con tre diversi modelli:
 
 * Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (un catch-all). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
 * Un progetto multimediale - Un progetto di esempio di riferimento per le attività relative ai supporti. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Inoltre, include due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per la richiesta e il controllo del testo) e Servizio fotografico per il prodotto (per la gestione delle fotografie del prodotto)
@@ -201,7 +203,7 @@ Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’ut
   <tr>
    <td><p><strong>Ruolo</strong></p> </td>
    <td><p><strong>Descrizione</strong></p> </td>
-   <td><p><strong>Autorizzazioni</strong></p> </td>
+   <td><p><strong>Autorizzazioni </strong></p> </td>
    <td><p><strong>Iscrizione al gruppo</strong></p> </td>
   </tr>
   <tr>
@@ -242,4 +244,4 @@ Per i progetti creativi, sono disponibili altri ruoli, ad esempio fotografi. Puo
 
 >[!NOTE]
 >
->Quando crei il progetto e aggiungi utenti ai vari ruoli, vengono creati automaticamente dei gruppi associati al progetto per gestire le relative autorizzazioni. Ad esempio, un progetto denominato Myproject avrebbe tre gruppi **Proprietari di Myproject**, **Editor di Myproject**, **Osservatori di Myproject**. la sua eliminazione non comporta tuttavia l’eliminazione automatica dei gruppi presenti. I gruppi devono essere eliminati manualmente da un amministratore in **Strumenti** > **Protezione** > **Gruppi**.
+>Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
