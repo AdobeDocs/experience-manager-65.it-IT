@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 456460d54650bcb71d8eee47fdf0e859a383b3d4
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 0%
@@ -187,7 +187,7 @@ In questo documento sono elencate le piattaforme client e server supportate per 
 * Lo Shopping MongoDB non è supportato in AEM.
 *  AEM Forms su JEE non supporta MySQL per la persistenza RDBMK.
 * Il modulo Document Security non utilizza l&#39;archivio dei contenuti. Ciò implica che, se si utilizza solo Document Security e non si intende utilizzare HTML Workspace, moduli HTML5 o moduli adattivi, non installare Content Repository.
-*  AEM Forms su JEE non supporta l&#39;utilizzo di MySQL per AEM repository persistente (CRX-Repository).
+*  AEM Forms su JEE non supporta l&#39;uso di MySQL per AEM repository persistente (CRX-Repository).
 
 
 ### Driver del database {#database-drivers}
@@ -316,7 +316,7 @@ Considerate le seguenti eccezioni quando scegliete una piattaforma per configura
 1.  AEM Forms su JEE non supporta e JBoss su SUSE Linux Enterprise Server 12. Solo IBM WebSphere è supportato su SUSE Linux Enterprise Server 12.
 1.  AEM Forms su JEE non supporta JDK con JBoss® diverso da Oracle Java™ SE.
 1.  AEM Forms su JEE non supporta JDK con IBM® WebSphere® diverso da IBM® JDK.
-1. CRX-repository supporta la persistenza di tipo TarMK, MongoDB e database relazionali (RDBMK). Non è possibile avere due diversi sistemi di database tra il server applicazioni e il repository CRX. Tuttavia, su un AEM Forms  in ambiente JEE, è possibile utilizzare MongoMK con repository CRX e un database relazionale supportato con server applicazioni.
+1. CRX-repository supporta la persistenza di tipo TarMK, MongoDB e database relazionali (RDBMK). Non è possibile avere due diversi sistemi di database tra il server applicazioni e il repository CRX. Tuttavia, in un AEM Forms  in ambiente JEE, è possibile utilizzare MongoMK con repository CRX e un database relazionale supportato con server applicazioni.
 1.  AEM Forms su JEE non supporta il server applicazioni WebSphere su CentOS.
 1.  AEM Forms su JEE non supporta il controllo degli accessi basato sui ruoli JBoss (RBAC).
 
@@ -511,8 +511,7 @@ I seguenti sottosistemi di  AEM Forms non sono [508](https://www.section508.gov/
 Per ulteriori requisiti, consulta:
 
 * [Requisiti di sistema per un singolo server  AEM Forms su distribuzione JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Requisiti di sistema per un  cluster AEM Forms su distribuzione JEE
-   ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [Requisiti di sistema per un  cluster AEM Forms su distribuzione JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
 ## Client supportati per  AEM Forms su JEE {#supported-clients-for-aem-forms-on-jee}
 
