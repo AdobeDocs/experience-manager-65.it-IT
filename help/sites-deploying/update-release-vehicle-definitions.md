@@ -1,8 +1,8 @@
 ---
 title: Aggiorna definizioni veicolo di rilascio
 seo-title: Aggiorna definizioni veicolo di rilascio
-description: Questo articolo descrive i vari tipi di rilasci di AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
-seo-description: Questo articolo descrive i vari tipi di rilasci di AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
+description: Questo articolo descrive i vari tipi di rilasci AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
+seo-description: Questo articolo descrive i vari tipi di rilasci AEM, inclusi rilasci completi, pacchetti di funzioni e Service Pack.
 uuid: 388fb6f5-0249-41e2-a460-1bb4cd0f8494
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,21 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '768'
 ht-degree: 3%
 
 ---
 
 
-# AEM - Definizioni dei veicoli rilasci di aggiornamento{#update-release-vehicle-definitions}
+# AEM Aggiorna le definizioni dei veicoli di rilascio{#update-release-vehicle-definitions}
 
-Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Experience Manager (AEM), inclusi rilasci completi, pacchetti di funzioni e Service Pack che Adobe distribuisce ai propri clienti.
+Questo documento contiene informazioni dettagliate sui diversi tipi di rilasci Adobe Experience Manager (AEM), tra cui rilasci completi, pacchetti di funzioni e Service Pack che   Adobe offre ai propri clienti.
 
->[!Note]
+>[!NOTE]
 >
->Per la pianificazione delle versioni di aggiornamento di AEM, fai riferimento alla roadmap degli aggiornamenti di [AEM](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
+>Per la pianificazione delle release AEM rilasci di aggiornamento, fate riferimento alla roadmap delle release di [AEM aggiornamento](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
 
 ## Versione completa {#full-release}
 
@@ -72,7 +72,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td>
     <ul>
      <li>Fornito come programma di installazione autonomo</li>
-     <li>Disponibile dal sito Web delle licenze e dal sito Web delle licenze dei servizi gestiti</li>
+     <li>Disponibile dal sito Web delle licenze e dal sito Web delle licenze Managed Services</li>
      <li>Può richiedere la migrazione dell'archivio dei contenuti</li>
     </ul> </td>
   </tr>
@@ -221,7 +221,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td><strong>Disponibilità e installazione</strong></td>
    <td>
     <ul>
-     <li>Fornito come pacchetto dall'assistenza clienti AEM</li>
+     <li>Consegnato come pacchetto da AEM Assistenza clienti</li>
      <li>Non necessariamente incluso nei service pack o nelle versioni complete</li>
     </ul> </td>
   </tr>
@@ -240,8 +240,8 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td><strong>Definizione</strong></td>
    <td>
     <ul>
-     <li>I Feature Pack sono funzionalità aggiuntive e vengono forniti tramite Service Pack. Se una versione di AEM ha rilasciato l’ultimo service pack, Adobe non invierà alcun feature pack per tale versione in futuro.</li>
-     <li>I PQ contengono miglioramenti del prodotto, pianificati per una versione successiva del prodotto, ma consegnati in anticipo in base alla decisione di Adobe Product Management.</li>
+     <li>I Feature Pack sono funzionalità aggiuntive e vengono forniti tramite Service Pack. Se una versione AEM ha rilasciato l'ultimo service pack,  Adobe non fornirà alcun feature pack per esso in futuro.</li>
+     <li>I PQ contengono miglioramenti del prodotto, pianificati per una versione successiva del prodotto, ma consegnati in anticipo in base alla decisione di  Adobe  Gestione del prodotto.</li>
      <li>Le funzioni vengono sempre unite con la versione principale successiva e quindi riportate alla versione AEM richiesta dal cliente</li>
      <li>I pacchetti di funzioni di interesse comune e GA vengono uniti nel service pack successivo</li>
     </ul> </td>
@@ -272,7 +272,7 @@ Questo documento contiene informazioni sui diversi tipi di rilasci di Adobe Expe
    <td>
     <ul>
      <li>Consegnato tramite Service Pack</li>
-     <li>Disponibile in Package Share. I clienti accettano i termini e le condizioni di Adobe tramite Package Share.</li>
+     <li>Disponibile in Package Share. I clienti accettano  Adobe  Termini e Condizioni tramite Package Share.</li>
     </ul> </td>
   </tr>
   <tr>
