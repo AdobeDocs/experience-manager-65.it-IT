@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Scopri i AEM Assets di gestione centralizzata delle risorse video in cui puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente dai AEM Assets. L'integrazione con video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi.
+description: Scopri la gestione centralizzata delle risorse video  AEM Assets, dove puoi caricare i video per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da  AEM Assets. L’integrazione video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1627'
 ht-degree: 55%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 55%
 
 Risorse offre una gestione centralizzata delle risorse video in cui è possibile caricare i video direttamente su Risorse per la codifica automatica in Dynamic Media Classic (Scene7) e accedere ai video Dynamic Media Classic direttamente da Risorse per l’authoring delle pagine.
 
-L&#39;integrazione video di Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi (rilevamento automatico della periferica e della larghezza di banda).
+L’integrazione video Dynamic Media Classic estende la portata dei video ottimizzati a tutti gli schermi (rilevamento automatico della periferica e della larghezza di banda).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
 * Risorse: è possibile includere set di video adattivi anziché risorse con un singolo video. Un set di video adattivo è un contenitore di tutte le rappresentazioni video necessarie a consentirne la riproduzione su diversi tipi di schermi. Un set video adattivo raggruppa versioni dello stesso video codificate con diversi bitrate e formati quali 400, 800 e 1000 kbps. Utilizza un set video adattivo, insieme al componente video S7, per lo streaming video adattivo per schermi diversi, come computer desktop e dispositivi mobili iOS, Android, Blackberry e Windows. Per ulteriori informazioni, vedi [la documentazione di Scene7 sui set di video adattivi](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
@@ -32,9 +32,9 @@ Il processo di codifica video predefinito si basa sull’utilizzo dell’integra
 * Miniature FFMPEG
 * Codifica FFMPEG
 
-Tenete presente che l&#39;abilitazione e la configurazione dell&#39;integrazione di Dynamic Media Classic non rimuove o disattiva automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di assimilazione di DAM predefinito. Se utilizzi già la codifica video basata su FFMPEG in AEM, è probabile che FFMPEG sia già installato negli ambienti di authoring. In questo caso, un nuovo video caricato con DAM verrebbe codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione con Dynamic Media Classic.
+Attenzione: l&#39;abilitazione e la configurazione dell&#39;integrazione di Dynamic Media Classic non rimuove o disattiva automaticamente questi due passaggi del flusso di lavoro dal flusso di lavoro di caricamento out-of-the-box DAM. Se utilizzi già la codifica video basata su FFMPEG in AEM, è probabile che FFMPEG sia già installato negli ambienti di authoring. In questo caso, un nuovo video caricato con DAM verrebbe codificato due volte: una volta dall&#39;encoder FFMPEG e una dall&#39;integrazione Dynamic Media Classic.
 
-Se in AEM è configurata la codifica video basata su FFMPEG e viene installato FFMPEG, Adobe consiglia di rimuovere i due flussi di lavoro FFMPEG dai flussi di lavoro di assimilazione DAM.
+Se la codifica video basata su FFMPEG è configurata e installata in AEM,  Adobe consiglia di rimuovere i due flussi di lavoro FFMPEG dai flussi di lavoro di assimilazione DAM.
 
 ## Formati supportati {#supported-formats}
 
@@ -54,9 +54,9 @@ Se la risposta è “sì” ad almeno una di queste domande, carica il video dir
 
 ### If you are uploading your video directly to Adobe DAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
-Se hai bisogno di un flusso di lavoro o di un controllo delle versioni per le risorse, devi prima caricare il file in Adobe DAM. Di seguito è riportato il flusso di lavoro consigliato:
+Se avete bisogno di un flusso di lavoro o di un controllo delle versioni per le risorse, dovete prima caricare  Adobe DAM. Di seguito è riportato il flusso di lavoro consigliato:
 
-1. Caricate la risorsa video in Adobe DAM e codificatela e pubblicatela automaticamente in Dynamic Media Classic.
+1. Caricate la risorsa video in  Adobe DAM e codificatela e pubblicatela automaticamente in Dynamic Media Classic.
 1. In AEM, accedi alle risorse video in WCM nella scheda **[!UICONTROL Filmati]** del Content Finder.
 1. Author with **[!UICONTROL Scene7 Video]** or **[!UICONTROL Foundation Video]** component.
 
@@ -97,7 +97,7 @@ Se devi aggiornare il visualizzatore e i predefiniti di codifica video in AEM, p
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Caricamento del video sorgente principale in Scene7 da Adobe DAM {#uploading-your-master-video}
+## Caricamento del video sorgente principale su Scene7 da  Adobe DAM {#uploading-your-master-video}
 
 1. Individua la cartella di destinazione CQ DAM in cui hai impostato la configurazione cloud con i profili di codifica di Scene7.
 1. Fate clic su **[!UICONTROL Carica]** per caricare il video sorgente principale. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
@@ -120,7 +120,7 @@ La matrice seguente spiega quando utilizzare questi componenti:
 
 >[!NOTE]
 >
->Come impostazione predefinita, il componente video S7 utilizza il profilo video universale. Tuttavia, potete ottenere il lettore video basato su HTML5 da usare in AEM effettuando una delle seguenti operazioni in Scene7: copiate il codice da incorporare del lettore video HTML5 predefinito e inseritelo nella pagina AEM.
+>Come impostazione predefinita, il componente video S7 utilizza il profilo video universale. Tuttavia, potete ottenere il lettore video basato su HTML5 da usare AEM effettuando una delle seguenti operazioni in Scene7: copiate il codice da incorporare del lettore video HTML5 predefinito e inseritelo nella pagina AEM.
 
 ## Componente video AEM {#aem-video-component}
 
@@ -148,7 +148,7 @@ Le varie codifiche video vengono create in base ai predefiniti di codifica S7 se
 >
 >Per la pubblicazione, i nuovi profili video e le relative modifiche devono essere attivati.
 
-1. In AEM, toccate **[!UICONTROL Tools > Configuration Console**.
+1. In AEM, toccate **[!UICONTROL Strumenti]> Console[!UICONTROL di]** configurazione.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
 1. Crea un nuovo profilo video S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Assegna un nome alla nuova pagina del profilo video e fai clic su **[!UICONTROL Crea.]**
 
@@ -179,7 +179,7 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 >Le modifiche apportate alla progettazione richiedono l’attivazione della progettazione per avere effetto al momento della pubblicazione.
 
 1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Quindi eliminate i profili predefiniti e aggiungete i nuovi profili video S7. L&#39;ordine dell&#39;elenco dei profili nella finestra di dialogo della progettazione definisce l&#39;ordine dell&#39;elemento delle sorgenti video durante il rendering.
-1. Per i browser che non supportano HTML5, il componente video consente di configurare un fallback Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configurare le impostazioni del lettore Flash e assegnare un profilo di fallback al lettore Flash.
+1. Per i browser che non supportano HTML5, il componente video consente di configurare un fallback di Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configurare le impostazioni del lettore Flash e assegnare un profilo di fallback al lettore Flash.
 
 #### Elenco di controllo {#checklist}
 
