@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ Quando un utente riceve una notifica, riceve un messaggio e-mail nella lingua de
 
 ## Configurazione di Mail Service {#configuring-the-mail-service}
 
-Affinché AEM possa inviare e-mail, è necessario configurare correttamente il servizio **di posta** Day CQ Mail. Potete visualizzare la configurazione nella console Web. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+Per AEM poter inviare e-mail, è necessario configurare correttamente il servizio **di posta** Day CQ Mail. Potete visualizzare la configurazione nella console Web. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 Si applicano i seguenti vincoli:
 
@@ -65,7 +68,7 @@ Per configurare l’indirizzo e-mail, aggiungete un `sling:OsgiConfig` nodo alla
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` di tipo `sling:OsgiConfig`
 
-1. Aggiungi una `String` proprietà al nodo] denominato `email.from`. Per il valore, specificate l&#39;indirizzo e-mail che desiderate utilizzare.
+1. Aggiungere una `String` proprietà al nodo denominato `email.from`. Per il valore, specificate l&#39;indirizzo e-mail che desiderate utilizzare.
 
 1. Fate clic su **Salva tutto**.
 
@@ -133,7 +136,7 @@ Il modello deve avere il formato seguente:
  footer=<text_4>
 ```
 
-Dove &lt;text_x> può essere un mix di testo statico e variabili stringa dinamiche. Le seguenti variabili possono essere utilizzate nel modello e-mail per le notifiche di pagina:
+Dove &lt;text_x> può essere un mix di testo statico e variabili di stringa dinamiche. Le seguenti variabili possono essere utilizzate nel modello e-mail per le notifiche di pagina:
 
 * `${time}`, la data e l’ora dell’evento.
 
@@ -301,11 +304,11 @@ Per aggiungere un modello per una nuova lingua:
 >
 >Il nome `<language-code>` utilizzato come nome file per il modello e-mail deve essere un codice della lingua minuscola a due lettere riconosciuto da AEM. Per i codici lingua, AEM si basa su ISO-639-1.
 
-## Configurazione delle notifiche e-mail di AEM Assets {#assetsconfig}
+## Configurazione  notifiche e-mail AEM Assets {#assetsconfig}
 
-Quando le raccolte in Risorse AEM vengono condivise o non condivise, gli utenti possono ricevere notifiche e-mail da AEM. Per configurare le notifiche e-mail, effettuate le seguenti operazioni.
+Quando le raccolte in  AEM Assets vengono condivise o non condivise, gli utenti possono ricevere notifiche e-mail da AEM. Per configurare le notifiche e-mail, effettuate le seguenti operazioni.
 
-1. Configurate il servizio e-mail, come descritto sopra in [Configurazione del servizio](/help/sites-administering/notification.md#configuring-the-mail-service)e-mail.
-1. Accedi ad AEM come amministratore. Fate clic su **Strumenti** > **Operazioni** > Console **** Web per aprire Configurazione console Web.
+1. Configurate il servizio e-mail, come descritto in precedenza in [Configurazione del servizio](/help/sites-administering/notification.md#configuring-the-mail-service)e-mail.
+1. Accedete a AEM come amministratore. Fate clic su **Strumenti** > **Operazioni** > Console **** Web per aprire Configurazione console Web.
 1. Modifica servlet **raccolta risorse CQ DAM** Day. Selezionate **Invia e-mail**. Fai clic su **Salva**.
 
