@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 translation-type: tm+mt
-source-git-commit: e37ff1c9e657c580c607f2656adca01a2b39f81f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ ContextHub offre diversi esempi di candidati store che potete utilizzare nelle s
 
 >[!WARNING]
 >
->I candidati allo store di esempio vengono forniti come configurazioni di riferimento per facilitare la creazione di una propria configurazione dedicata per il progetto e non devono essere utilizzati direttamente.
+>I candidati allo store di esempio vengono forniti come configurazioni di riferimento per facilitare la creazione di una propria configurazione dedicata per il progetto e pertanto non devono essere utilizzati direttamente.
 
 ## aem.segmentation Sample Store Candidate {#aem-segmentation-sample-store-candidate}
 
@@ -35,7 +38,7 @@ Memorizzazione per segmenti ContextHub risolti e non risolti. Recupera automatic
 
 ### Implementazione di base {#base-implementation-segmentation}
 
-Il candidato per lo store aem.segmentation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Il candidato per l&#39;archivio di segmentazione aem.segmentation si estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configurazione {#configuration-segmentation}
 
@@ -107,13 +110,13 @@ L&#39;archivio utilizza una struttura dati simile all&#39;esempio seguente:
 
 >[!NOTE]
 >
->Una politica di sicurezza introdotta in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione siano effettuate su una connessione protetta. AEM applica pertanto l’utilizzo https per le chiamate API di geolocalizzazione se anche AEM è in esecuzione su https. In caso contrario, http viene utilizzato per rispettare i criteri della stessa origine. Consultate [questo post](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) di Google blog per ulteriori dettagli sulla modifica in Chrome.
+>Una politica di sicurezza introdotta in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione siano effettuate su una connessione protetta. Pertanto, AEM forza l&#39;utilizzo https per le chiamate API di geolocalizzazione se AEM è in esecuzione anche su https. In caso contrario, http viene utilizzato per rispettare i criteri della stessa origine. Consultate [questo post](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) di Google blog per ulteriori dettagli sulla modifica in Chrome.
 
 ## contexthub.surferinfo Esempio di candidato per store {#contexthub-surferinfo-sample-store-candidate}
 
-Memorizza informazioni sull&#39;ambiente client corrente, ad esempio dispositivo, finestra, browser, data e ora.
+Memorizza informazioni sull&#39;ambiente client corrente, ad esempio il dispositivo, la finestra, il browser, la data e l&#39;ora.
 
-### Posizione di origine {#source-location-surferinfo
+### Posizione origine {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
@@ -237,7 +240,7 @@ La configurazione predefinita include un array denominato `defaultEmulators` che
 
 ### Elementi dati {#data-items-emulators}
 
-La struttura ad albero dei dati store è simile all&#39;esempio seguente:
+La struttura ad albero dei dati dell&#39;archivio è simile all&#39;esempio seguente:
 
 ```xml
 {
