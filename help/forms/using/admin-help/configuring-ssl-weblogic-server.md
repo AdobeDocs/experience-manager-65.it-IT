@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 1%
@@ -59,8 +59,8 @@ Il comando keytool si trova in genere nella directory Java jre/bin e deve includ
    <td><p>Posizione e nome del file keystore.</p><p>La posizione può includere il percorso assoluto del file. Oppure può essere relativo alla directory corrente del prompt dei comandi in cui è immesso il comando keytool.</p></td>
    <td>
     <ul>
-     <li><p>Keystore identità personalizzata: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[nome server]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>Keystore Trust personalizzato: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[nome server]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>Keystore identità personalizzata: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nome server]</i><code>/ads-ssl.jks</code></p></li>
+     <li><p>Keystore Trust personalizzato: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[nome server]</i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -116,7 +116,7 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
    >
    >Sostituire `[JAVA_HOME]`*con la directory in cui è installato il JDK e sostituire il testo in corsivo con valori che corrispondono al vostro ambiente.*
 
-   Ad esempio:
+   Esempio:
 
    ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
@@ -134,9 +134,9 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
 
    >[!NOTE]
    >
-   >Sostituire `[JAVA_HOME]` con la directory in cui è installato il JDK e sostituire `store`*_*`password`* con la password per l&#39;archivio di chiavi Identità personalizzata.*
+   >Sostituire `[JAVA_HOME]` con la directory in cui è installato il JDK e sostituire `store`*_* `password`* con la password per l&#39;archivio di chiavi Identità personalizzata.*
 
-   Ad esempio:
+   Esempio:
 
    ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
@@ -151,9 +151,9 @@ Per ulteriori informazioni sull&#39;utilizzo del comando keytool, vedere il file
 
    >[!NOTE]
    >
-   >Sostituire `[JAVA_HOME]` con la directory in cui è installato JDK e sostituire `store`*_*`password`e`key`*_* `password` *con le proprie password.*
+   >Sostituire `[JAVA_HOME]` con la directory in cui è installato JDK e sostituire `store`*_* `password` e `key`*_* `password` *con le proprie password.*
 
-   Ad esempio:
+   Esempio:
 
    ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
@@ -195,7 +195,7 @@ Configurare WebLogic in modo che utilizzi l&#39;archivio chiavi identità person
    **Frase** Passaggio archivio chiavi trust personalizzato: *mypassword* (password della chiave di attendibilità personalizzata)
 
 1. In Generale, in Configurazione, selezionate **SSL**.
-1. Per impostazione predefinita, l&#39;opzione Keystore è selezionata per le posizioni di identità e trust. In caso contrario, cambiatelo in keystore.
+1. Per impostazione predefinita, l&#39;opzione Keystore è selezionata per le posizioni di identità e attendibilità. In caso contrario, cambiatelo in keystore.
 1. In Identità, specificate i seguenti valori:
 
    **Alias** chiave privata: ads-permissions
