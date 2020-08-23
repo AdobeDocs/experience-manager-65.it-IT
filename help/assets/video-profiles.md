@@ -1,6 +1,6 @@
 ---
 title: Profili video
-description: Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
+description: Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Potete anche aggiungere ritaglio avanzato ai video.
 uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 20%
@@ -19,7 +19,7 @@ ht-degree: 20%
 
 # Video profiles {#video-profiles}
 
-Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Quando codificate i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. È noto come streaming adattivo.
+Gli elementi multimediali dinamici dispongono già di un profilo di codifica video adattiva predefinito. Le impostazioni incluse in questo profilo out-of-the-box sono ottimizzate per offrire ai clienti la migliore esperienza di visualizzazione possibile. Quando codificate i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. È noto come streaming adattivo.
 
 Di seguito sono riportati altri fattori che determinano la qualità dei video:
 
@@ -39,7 +39,7 @@ Consultate anche [Best practice per l’organizzazione delle risorse digitali pe
 >
 >Per generare i metadati di un video e le miniature delle immagini video associate, il video stesso deve seguire il processo di codifica di Dynamic Media. Se hai attivato gli elementi multimediali dinamici e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video elementi multimediali dinamici]** di AEM ti consente di eseguire la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Consulta la sezione [Monitoraggio della codifica video e stato della pubblicazione su YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se hai attivato gli elementi multimediali dinamici e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video elementi multimediali dinamici]** viene applicato automaticamente al momento di caricare un video. Se non utilizzi gli elementi multimediali dinamici, viene applicato il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 >
->I metadati sono utili per la ricerca delle risorse. Le miniature sono immagini video statiche generate durante la codifica. Sono richiesti dal sistema AEM e sono utilizzati nell’interfaccia utente per identificare visivamente i video nelle viste Schede, Risultati ricerca e Elenco risorse. Potete visualizzare le miniature generate toccando l&#39;icona Rappresentazioni (la palette del pittore) di un video codificato.
+>I metadati sono utili per la ricerca delle risorse. Le miniature sono immagini video statiche generate durante la codifica. Sono richieste dal sistema AEM e utilizzate nell’interfaccia utente per identificare visivamente i video nelle viste Schede, Risultati ricerca e Elenco risorse. Potete visualizzare le miniature generate toccando l&#39;icona Rappresentazioni (la palette del pittore) di un video codificato.
 
 Una volta creato il profilo video, questo viene applicato a una cartella o più cartelle. See [Applying a video profile to folders.](#applying-a-video-profile-to-folders)
 
@@ -98,7 +98,7 @@ Nella tabella seguente sono riportati i profili di codifica best practice per lo
 
 ## Utilizzo del ritaglio avanzato nei profili video {#about-smart-crop-video}
 
-La funzione di ritaglio avanzato per i video, una funzione opzionale disponibile nei profili video, è uno strumento che utilizza l&#39;intelligenza artificiale di Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o progressivo caricato, indipendentemente dalle dimensioni.
+La funzione di ritaglio avanzato per i video - una funzione opzionale disponibile nei profili video - è uno strumento che utilizza l&#39;intelligenza artificiale di  Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o progressivo caricato, indipendentemente dalle dimensioni.
 
 I formati video supportati per il ritaglio avanzato includono MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -108,7 +108,7 @@ La dimensione massima del file video supportato per il ritaglio avanzato è il s
 * 30 fotogrammi al secondo (FPS).
 * 300 MB di dimensione file.
 
-Adobe Sensei al momento è limitato a 9000 fotogrammi. Cioè, cinque minuti a 30 fps. Se il video ha un valore FPS superiore, la durata video massima supportata diminuisce. Ad esempio, un video a 60 fps deve avere una durata di due minuti e mezzo per essere supportato da Adobe Sensai e dallo smart crop.
+ Adobe Sensei è attualmente limitato a 9000 fotogrammi. Cioè, cinque minuti a 30 fps. Se il video ha un valore FPS superiore, la durata video massima supportata diminuisce. Ad esempio, un video a 60 fps deve avere una durata di due minuti e mezzo per essere supportato dal sensore  Adobe e dal ritaglio avanzato.
 
 ![Ritaglio avanzato per video](assets/smart-crop-video.png)
 
@@ -130,11 +130,11 @@ Consultate anche [Ritaglio avanzato per le immagini](image-profiles.md).
 
 ## Creazione di un profilo video per lo streaming adattivo {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media è già dotato di un profilo di codifica video adattiva predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per garantire una migliore esperienza di visualizzazione. Potete usare questo profilo quando caricate i video.
+Gli elementi multimediali dinamici sono già dotati di un profilo di codifica video adattiva predefinito, un gruppo di impostazioni di caricamento video per MP4 H.264, ottimizzato per garantire una migliore esperienza di visualizzazione. Potete usare questo profilo quando caricate i video.
 
 Tuttavia, se questo profilo predefinito non soddisfa le esigenze, potete scegliere di creare un profilo di codifica video adattivo personalizzato. Quando utilizzate l’impostazione **[!UICONTROL Codifica per lo streaming]** adattivo, come best practice, vengono convalidati tutti i predefiniti di codifica che aggiungete al profilo, in modo da garantire che tutti i video abbiano le stesse proporzioni. Inoltre, i video codificati vengono trattati come un set di bitrate multipli per lo streaming.
 
-Quando create il profilo di codifica video, noterete che la maggior parte delle opzioni di codifica sono precompilate con le impostazioni predefinite consigliate per facilitare l’utente. Tuttavia, se selezionate un valore diverso da quello predefinito consigliato, tenete presente che potrebbe causare problemi di qualità video durante la riproduzione e altri problemi di prestazioni.
+Quando create il profilo di codifica video, noterete che la maggior parte delle opzioni di codifica sono precompilate con le impostazioni predefinite consigliate per facilitare l’utente. Tuttavia, se selezionate un valore diverso da quello predefinito consigliato, tenete presente che potrebbe causare problemi di qualità video durante la riproduzione e altre prestazioni.
 
 Pertanto, per tutti i predefiniti di codifica video MP4 H.264 presenti nel profilo, i seguenti valori vengono convalidati per garantire che siano identici tra i singoli predefiniti di codifica nel profilo, rendendo possibile lo streaming adattivo:
 
@@ -200,7 +200,7 @@ Se scegli di non utilizzare l’opzione **[!UICONTROL Codifica per lo streaming 
 A seconda della modalità in esecuzione, i codec supportati sono:
 
 * Modalità Dynamic Media-Scene7: H.264 (.mp4)
-* Modalità ibrida Dynamic Media: H.264 (.mp4), WebM
+* Modalità Dynamic Media-Hybrid: H.264 (.mp4), WebM
 
 Consultate anche [Creazione di un profilo di codifica video per lo streaming](#creating-a-video-encoding-profile-for-adaptive-streaming)adattivo.
 
@@ -256,7 +256,7 @@ Potete modificare un profilo di codifica video esistente per sfruttare i paramet
 **Per utilizzare parametri** di codifica video personalizzati:
 
 1. Tocca il logo AEM, quindi seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite.]**
-1. Dalla pagina CRXDE Lite, nel pannello Esplora risorse a sinistra, andate a:
+1. Dalla pagina CRXDE Lite, nel pannello Explorer a sinistra, individuate le seguenti opzioni:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
@@ -313,13 +313,13 @@ Potete modificare un profilo di codifica video esistente per sfruttare i paramet
    * Ripetete i passaggi 3 e 4 per aggiungere un altro parametro al profilo di codifica video.
    * Nell’angolo in alto a sinistra della pagina, toccate **[!UICONTROL Salva tutto.]**
 
-1. Nell’angolo in alto a sinistra della pagina CRXDE Lite, toccate l’icona **[!UICONTROL Indietro Home]** per tornare ad AEM.
+1. Nell&#39;angolo superiore sinistro della pagina CRXDE Lite, toccate l&#39;icona **[!UICONTROL Indietro Home]** per tornare alla AEM.
 
 ### Modifica di un profilo video {#editing-a-video-encoding-profile}
 
 Potete modificare qualsiasi profilo video creato per aggiungere, modificare o eliminare i predefiniti video all’interno di tale profilo.
 
-Per impostazione predefinita, non è possibile modificare il profilo predefinito per la codifica **[!UICONTROL video]** adattiva fornito con Dynamic Media. Potete invece copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
+Per impostazione predefinita, non è possibile modificare il profilo predefinito per la codifica **[!UICONTROL video]** adattiva fornito con gli elementi multimediali dinamici. Potete invece copiare facilmente il profilo e salvarlo con un nuovo nome. Potete quindi modificare i predefiniti desiderati nel profilo copiato.
 
 Consultate anche [Best practice per la codifica](/help/assets/video.md#best-practices-for-encoding-videos)video.
 
@@ -347,7 +347,7 @@ Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni
 1. Nella pagina Profilo codifica video, immettete un nuovo nome per il profilo.
 1. Come best practice, accertati che la casella di controllo **[!UICONTROL Codifica per streaming adattivo]** sia selezionata. Per una descrizione dello streaming adattivo, tocca l’icona delle informazioni. Se copi un profilo video progressivo, non selezionare la casella di controllo.
 
-   In Dynamic Media - Modalità ibrida, se un predefinito per video WebM fa parte del profilo video, **[!UICONTROL Codifica per lo streaming]** adattivo non è possibile perché tutti i predefiniti devono essere MP4.
+   In modalità Dynamic Media - Hybrid, se un predefinito video WebM fa parte del profilo video, **[!UICONTROL Codifica per lo streaming]** adattivo non è possibile perché tutti i predefiniti devono essere MP4.
 1. Nell’intestazione Predefiniti codifica video, potete aggiungere, modificare o eliminare predefiniti di codifica video che compongono il profilo.
 
    Toccate l&#39;icona delle informazioni accanto a ciascuna opzione nelle schede Base e Avanzate per le impostazioni e le descrizioni consigliate.
@@ -400,13 +400,13 @@ Potete [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-a
 
 ### Applicazione di un profilo video a livello globale {#applying-a-video-profile-globally}
 
-Oltre ad applicare un profilo a una cartella, puoi applicarne uno a livello globale in modo che a qualsiasi contenuto caricato in risorse AEM in qualsiasi cartella sia applicato il profilo selezionato.
+Oltre ad applicare un profilo a una cartella, potete anche applicarne uno a livello globale in modo che a qualsiasi contenuto caricato AEM risorse di qualsiasi cartella sia applicato il profilo selezionato.
 
 See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 **Per applicare un profilo video a livello globale**,
 
-* Passa a CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungete la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toccate **[!UICONTROL Salva tutto.]**
+* Passa al CRXDE Lite al seguente nodo: `/content/dam/jcr:content`. Aggiungete la proprietà `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toccate **[!UICONTROL Salva tutto.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Potete [monitorare l’avanzamento di un processo](#monitoring-the-progress-of-an-encoding-job)di elaborazione del profilo video.
@@ -415,7 +415,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 Viene visualizzato un indicatore di elaborazione (o una barra di avanzamento) che consente di monitorare visivamente l’avanzamento di un processo di elaborazione del profilo video.
 
-Potete inoltre visualizzare il `error.log` file per monitorare l’avanzamento di un processo di codifica, verificare se la codifica è terminata o visualizzare eventuali errori di processo. Il file `error.log` si trova nella `logs` cartella in cui è installata l’istanza di AEM.
+Potete inoltre visualizzare il `error.log` file per monitorare l’avanzamento di un processo di codifica, verificare se la codifica è terminata o visualizzare eventuali errori di processo. L’ `error.log` elemento si trova nella `logs` cartella in cui è installata l’istanza di AEM.
 
 ## Rimozione di un profilo video dalle cartelle {#removing-a-video-profile-from-folders}
 
@@ -434,6 +434,6 @@ Puoi rimuovere un profilo video da una cartella direttamente dal menu **[!UICONT
 ### Rimozione di un profilo video dalle cartelle tramite Proprietà {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toccate o fate clic sul logo AEM, accedete a **[!UICONTROL Risorse]** e quindi alla cartella da cui desiderate rimuovere un profilo video.
-1. Sulla cartella, toccate o fate clic sul segno di spunta per selezionarlo, quindi toccate o fate clic su **Proprietà.]**
+1. Sulla cartella, toccate o fate clic sul segno di spunta per selezionarlo, quindi toccate o fate clic su **[!UICONTROL Proprietà.]**
 1. Seleziona la scheda **[!UICONTROL Profili video]**, fai clic su **[!UICONTROL Nessuno]** dal menu a discesa e infine tocca **[!UICONTROL Salva e chiudi.]** Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
