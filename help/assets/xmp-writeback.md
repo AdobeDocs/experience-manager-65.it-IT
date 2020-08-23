@@ -3,9 +3,9 @@ title: Write-back XMP per le rappresentazioni
 description: Scoprite in che modo la funzione di XMP writeback propaga le modifiche dei metadati di una risorsa a tutte le rappresentazioni o a specifiche della risorsa.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 5%
 
 ---
@@ -33,7 +33,7 @@ Per abilitare la propagazione delle modifiche ai metadati alle rappresentazioni 
 
 1. Per aprire Configuration Manager, accedere `https://[aem_server]:[port]/system/console/configMgr`.
 1. Apri la configurazione **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
-1. Selezionare l&#39;opzione **[!UICONTROL Propaga XMP[!UICONTROL **, quindi salvare le modifiche.
+1. Selezionate l’opzione **[!UICONTROL Propaga XMP]** , quindi salvate le modifiche.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
