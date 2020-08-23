@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '6933'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ I frammenti di documento sono parti/componenti riutilizzabili di una corrisponde
 * **Testo**: Una risorsa di testo è una parte di contenuto costituita da uno o più paragrafi di testo. Un paragrafo può essere statico o dinamico.
 * **Elenco**: Elenco è un gruppo di frammenti di documento, inclusi testo, elenchi, condizioni e immagini. L&#39;ordine degli elementi elenco può essere fisso o modificabile. Durante la creazione di una lettera, è possibile utilizzare alcuni o tutti gli elementi dell&#39;elenco per replicare un pattern di elementi riutilizzabili.
 * **Condizione**: Le condizioni consentono di definire il contenuto da includere al momento della creazione della corrispondenza, in base ai dati forniti. La condizione è descritta in termini di variabili di controllo. Una variabile di controllo può essere un elemento del dizionario dati o un segnaposto.
-* **Frammento** di layout: Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi caricati in AEM Forms.
+* **Frammento** di layout: Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi caricati in  AEM Forms.
 
 ## Testo {#text}
 
@@ -40,7 +43,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
 ### Create text {#create-text}
 
-1. Selezionare **Moduli** > Frammenti **** documento.
+1. Selezionare **Forms** > Frammenti **** documento.
 1. Toccate **Crea** > **Testo** O selezionate una risorsa di testo e toccate **Modifica**.
 1. Specificate le seguenti informazioni per il testo:
 
@@ -54,17 +57,18 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    Il correttore ortografico predefinito nel browser esegue il controllo ortografia nell&#39;editor di testo. Per gestire il controllo ortografico e grammaticale, potete modificare le impostazioni del correttore ortografico del browser oppure installare plug-in/addons del browser per il controllo ortografico e grammaticale.
 
-   È inoltre possibile utilizzare le varie scelte rapide da tastiera nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera dell&#39;Editor [di](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) testo, vedere Scelte rapide da tastiera di Gestione della corrispondenza.
+   È inoltre possibile utilizzare le varie scelte rapide da tastiera nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera dell&#39;Editor [di](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) testo, vedere Scelte rapide da tastiera per la gestione della corrispondenza.
 
 1. Viene aperto un editor di testo e inserite il testo. Utilizzate la barra degli strumenti nella parte superiore della pagina per formattare il testo, inserire condizioni, collegamenti e interruzioni di pagina.
 
-   [ ![Barra degli strumenti](assets/advancedediting.png)
+   ![Barra degli strumenti](assets/advancedediting.png)
 
    * **Collegamento**: Inserisci [collegamento ipertestuale](#insert-hyperlink) nel testo.
    * **Ripeti**: Ripete la stampa dell&#39;elemento raccolta nel dizionario dati utilizzando un delimitatore.
    * **Condizione**: Toccate per inserire una condizione. Inserisci testo in base alla condizione. Se la condizione è true, il testo è visibile nella lettera, altrimenti non è visibile.
    * **Aggiungi descrizione**: Aggiungete un’annotazione a un elemento di testo. Si tratta di metadati visibili all’autore, ma non a una parte della lettera creata.
    * **Interruzione** pagina: Se si imposta l&#39;attributo di interruzione di pagina di un modulo di testo su false, il modulo di testo non viene suddiviso tra le pagine.
+
    Viene aperto un editor di testo. Inserite il testo. La barra degli strumenti cambia a seconda del tipo di modifiche che si desidera apportare: Paragrafo, Allineamento o Elenco:
 
    ![Selezionare il tipo di barra degli strumenti](assets/toolbarselection.png)
@@ -74,7 +78,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
    ![Barra degli strumenti Paragrafo](assets/fonteditingtoolbar.png)
 
    Barra degli strumenti Paragrafo
-   [ ![Allineamento,](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)barra degli strumentiAllineamento, barra degli strumenti
+   [ ![Allineamento,](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)barra degli strumentiAllineamento
 
    ![Elenco, barra degli strumenti](assets/bulleteditingtoolbar.png)
 
@@ -82,7 +86,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
 1. Per riutilizzare uno o più paragrafi di testo esistenti in un’altra applicazione, ad esempio da pagine MS Word o HTML, copiate e incollate il testo nell’editor di testo. La formattazione del testo copiato viene mantenuta nell’editor di testo.
 
-   È possibile copiare e incollare uno o più paragrafi di testo in un modulo di testo modificabile. Ad esempio, è possibile che si disponga di un documento MS Word con un elenco puntato di prove di residenza accettabili, ad esempio:
+   È possibile copiare e incollare uno o più paragrafi di testo in un modulo di testo modificabile. Ad esempio, è possibile che si disponga di un documento MS Word con un elenco puntato di prove di residenza accettabili, come segue:
 
    ![pastetextmword-1](assets/pastetextmsword-1.png)
 
@@ -99,6 +103,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
    * Simboli di valuta come €,⇒ e £
    * Simboli matematici come i simboli all&#39;unisono, seguente:
    * Simboli di punteggiatura come ‟ e&quot;
+
    ![caratteri speciali-1](assets/specialcharacters-1.png)
 
    La gestione della corrispondenza è dotata di supporto per 210 caratteri speciali. L&#39;amministratore può [aggiungere il supporto per più o meno caratteri speciali personalizzati in base alla personalizzazione](/help/forms/using/custom-special-characters.md).
@@ -119,6 +124,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    * Aggiungete un elemento del dizionario dati nel testo, selezionate un elemento dati dall&#39;elenco e toccate Inserisci ( ![inserire](assets/insert.png)). Se selezionate Protetto, l’elemento del dizionario dati è di sola lettura e viene visualizzato nell’editor di lettere, ma non nell’interfaccia utente Crea corrispondenza o in Creazione corrispondenza.
    * Aggiungi un elemento segnaposto nel testo, nel pannello Elementi dati tocca Crea nuovo, immetti i dettagli per il nuovo elemento dati e tocca Crea per aggiungere il nuovo elemento all&#39;elenco. Il nuovo segnaposto può essere inserito nel testo allo stesso modo dell&#39;elemento dizionario dati. Per modificare un segnaposto, selezionate un segnaposto e toccate Modifica.
+
    ![Elementi Placeholder](assets/placeholder_elements_in_xmldata.png)
 
    Elementi segnaposto come specificato nel file di dati di esempio di un dizionario dati
@@ -227,7 +233,7 @@ Un elenco è un gruppo di contenuti correlati che possono essere utilizzati in u
 * **Letterato**: Un elenco alfabetico con la scelta di lettere minuscole (a,b,...) e maiuscole (A,B,...).
 * **Personalizzato**: Potete creare qualsiasi tipo di carattere Numerato/Letterato e i valori di prefisso e suffisso desiderati.
 
-1. Selezionare **Moduli** > Frammenti **** documento.
+1. Selezionare **Forms** > Frammenti **** documento.
 
 1. Selezionate **Crea** > **Elenco**.
 
@@ -300,7 +306,7 @@ L&#39;editor Condizione consente di specificare una condizione predefinita. Se i
 
 ### Creare una condizione {#create-a-condition}
 
-1. Selezionare **Moduli** > Frammenti **** documento.
+1. Selezionare **Forms** > Frammenti **** documento.
 1. Selezionare **Crea > Condizione**.
 1. Specificate le seguenti informazioni per l&#39;elenco:
 
@@ -342,13 +348,13 @@ L&#39;editor Condizione consente di specificare una condizione predefinita. Se i
 
 ## Frammenti di layout {#layoutfragments}
 
-Un frammento di layout è basato sugli XDP creati in Designer. Per creare i frammenti di layout, è necessario creare gli XDP e [caricarli in AEM Forms](/help/forms/using/import-export-forms-templates.md).
+Un frammento di layout è basato sugli XDP creati in Designer. Per creare i frammenti di layout, è necessario creare gli XDP e [caricarli in  AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 Uno o più frammenti di layout possono formare parti di una lettera e definire il layout grafico di tali parti. Un frammento di layout può contenere campi modulo tipici, ad esempio Indirizzo e Numero di riferimento, e sottomoduli vuoti che indicano le aree di destinazione. Inoltre, i frammenti di layout consentono di creare tabelle e di inserirle in lettere.
 
 Un caso comune è quello di individuare pattern di layout riutilizzabili in Lettere e creare frammenti di layout per tali pattern. Ad esempio, la formula introduttiva, l&#39;indirizzo e la parte oggetto della lettera, che vengono visualizzate nello stesso ordine con più lettere. Un altro esempio potrebbe essere una tabella con un numero di righe e colonne simile, utilizzata in più lettere.
 
-È possibile creare un frammento di layout basato su un XDP esistente. Un frammento di layout può essere composto da campi e aree di destinazione o da una o più tabelle. Le tabelle di un layout possono essere statiche o dinamiche. Un XDP viene creato in Designer e [caricato in AEM Forms](/help/forms/using/import-export-forms-templates.md). Un XDP può formare la struttura di un frammento di layout o di una lettera. Ulteriori informazioni su [Layout Design](/help/forms/using/layout-design-details.md).
+È possibile creare un frammento di layout basato su un XDP esistente. Un frammento di layout può essere composto da campi e aree di destinazione o da una o più tabelle. Le tabelle di un layout possono essere statiche o dinamiche. Un file XDP viene creato in Designer e [caricato in  AEM Forms](/help/forms/using/import-export-forms-templates.md). Un XDP può formare la struttura di un frammento di layout o di una lettera. Ulteriori informazioni su [Layout Design](/help/forms/using/layout-design-details.md).
 
 L’utilizzo di frammenti associati alle aree di destinazione consente di modificare la lettera al momento dell’authoring. È possibile creare un frammento di layout con dimensioni diverse e associare il frammento appropriato all&#39;area di destinazione. I frammenti di layout consentono inoltre di personalizzare alcune proprietà della tabella:
 
@@ -404,19 +410,21 @@ Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei
 
    * **Righe**: Selezionare il numero di righe per il layout. Il conteggio delle righe configurato deve essere maggiore o uguale al conteggio delle righe originale.
    * **Colonne**: selezionate il numero di colonne per il layout. Il numero di colonne configurato deve essere maggiore o uguale al numero di colonne originale.
+
    Per ogni colonna sono necessari i seguenti dettagli:
 
    * **Intestazione**: testo da visualizzare per l’intestazione
    * **Piè di pagina**: testo da visualizzare per il piè di pagina
    * **Tipo**: tipo di colonna aggiuntiva. Campo o Area di destinazione. Il tipo è abilitato per le tabelle dei segnaposto statici. Il tipo può essere definito a livello di colonna e non a livello di cella. Tutte le celle di una colonna estesa sarebbero dello stesso tipo. Per una tabella dinamica, tutte le colonne sono di tipo Field. Per le tabelle non segnaposto non è possibile definire il tipo di colonne aggiuntive. In questo caso, il tipo di celle aggiuntive nella colonna estesa è uguale al tipo dell&#39;ultima colonna in quella riga; e il tipo di cella nella riga aggiuntiva è uguale al tipo dell&#39;ultima cella in quella colonna.
    * **Rapporto larghezza:** rapporto tra le larghezze delle colonne della tabella.
+
    Per un esempio dettagliato sull&#39;utilizzo di tabelle statiche e dinamiche nei frammenti di layout, vedere [Esempio con file di esempio: utilizzo di tabelle statiche e dinamiche in una lettera](#examplewithsamplefiles).
 
 1. Toccate **Salva**.
 
 ### Caricare un XDP in Gestione corrispondenza {#upload-an-xdp-to-correspondence-management}
 
-Per istruzioni su come caricare/importare un XDP in Gestione della corrispondenza, consultate [Importazione ed esportazione di risorse in AEM Forms](/help/forms/using/import-export-forms-templates.md).
+Per istruzioni su come caricare/importare un XDP in Gestione corrispondenza, consultate [Importazione ed esportazione di risorse in  AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 ### Best practice/suggerimenti e trucchi {#best-practices-tips-and-tricks-2}
 
@@ -498,6 +506,7 @@ Questo esempio mostra come creare una tabella dinamica e statica, eseguire un bi
 
    * Aggiungere un sottomodulo alla colonna della tabella. Assicurarsi di modificare il layout del sottomodulo principale della tabella in modo che sia scorrevole e rimuovere i binding del sottomodulo nella tabella.
    * Aggiungere un sottomodulo alla cella della tabella. Assicurarsi di modificare il layout del sottomodulo principale della tabella in modo che sia scorrevole e rimuovere i binding del sottomodulo nella tabella.
+
    In alternativa, utilizzate gli XDP statici e dinamici associati a questo passaggio.
 
    Per ulteriori informazioni sull&#39;uso dei frammenti di layout, vedere Frammenti [di](#layoutfragments)layout.
@@ -507,7 +516,7 @@ Per ulteriori informazioni sulla progettazione dei layout, vedere la Guida [di](
 
    [Ottieni file](assets/dynamic.xdp.zip)
 
-1. Caricate gli XDP in AEM Forms.
+1. Caricate gli XDP in  AEM Forms.
 1. Creare un frammento di layout basato su XDP dinamico. La scheda Tabella delle proprietà mostra che la tabella è dinamica (campo Configuration For). Il numero di righe (1) e colonne (3) deriva dal frammento XDP/Layout.
 
    I campi di questo layout sono successivamente associati al DD importato e, nella lettera, il numero di righe viene creato in modo dinamico in base al numero di record nel file di dati di prova (il file di dati XML allegato al DD).
@@ -527,7 +536,7 @@ Per ulteriori informazioni sulla progettazione dei layout, vedere la Guida [di](
 
 1. Salvate la lettera e visualizzatela in anteprima. Quando si visualizza l&#39;anteprima della lettera, i valori del dizionario dati sono visualizzati nella lettera. Per la tabella dinamica sono presenti tre righe. Questo perché i dati del test hanno tre record per queste righe.
 
-   Per la tabella statica, durante la creazione del frammento di layout sono presenti tutte le righe e colonne specificate.
+   Per la tabella statica, durante la creazione del frammento di layout sono presenti tutte le righe e le colonne specificate.
 
    ![Tabella statica nella lettera](assets/statictableletter.png)
 
