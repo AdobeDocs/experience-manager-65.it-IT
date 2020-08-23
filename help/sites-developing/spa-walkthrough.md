@@ -1,8 +1,8 @@
 ---
 title: Introduzione e introduzione SPA
 seo-title: Introduzione e introduzione SPA
-description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un’applicazione SPA di base per l’authoring, mostrando il suo rapporto con l’Editor AEM SPA sottostante.
-seo-description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un’applicazione SPA di base per l’authoring, mostrando il suo rapporto con l’Editor AEM SPA sottostante.
+description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un'applicazione SPA di base per l'authoring, mostrando il suo rapporto con l'Editor SPA AEM sottostante.
+seo-description: Questo articolo introduce i concetti di SPA e illustra come utilizzare un'applicazione SPA di base per l'authoring, mostrando il suo rapporto con l'Editor SPA AEM sottostante.
 uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # Introduzione e introduzione SPA{#spa-introduction-and-walkthrough}
 
-Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare facilmente i contenuti in AEM per un sito creato utilizzando tali framework.
+Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti all&#39;interno AEM per un sito creato utilizzando tali framework.
 
-SPA Editor offre una soluzione completa per il supporto degli SPA in AEM. Questo articolo descrive l’utilizzo di un’applicazione SPA di base per l’authoring e illustra i rapporti con l’Editor AEM SPA sottostante.
+L&#39;editor SPA offre una soluzione completa per supportare gli SPA in AEM. Questo articolo descrive l’utilizzo di un’applicazione SPA di base per l’authoring e mostra il rapporto con l’Editor SPA AEM sottostante.
 
 >[!NOTE]
 >
@@ -33,21 +33,20 @@ SPA Editor offre una soluzione completa per il supporto degli SPA in AEM. Questo
 
 ### Articolo Obiettivo {#article-objective}
 
-Questo articolo introduce i concetti di base degli SPA prima di guidare il lettore attraverso una panoramica dettagliata dell&#39;editor SPA, utilizzando una semplice applicazione SPA per dimostrare l&#39;editing di base dei contenuti. Viene quindi descritto come creare la pagina e come l’applicazione SPA si collega e interagisce con AEM SPA Editor.
+Questo articolo introduce i concetti di base degli SPA prima di guidare il lettore attraverso una panoramica dettagliata dell&#39;editor SPA, utilizzando una semplice applicazione SPA per dimostrare l&#39;editing di base dei contenuti. Viene quindi descritto come creare la pagina e come l&#39;applicazione SPA si collega e interagisce con l&#39;editor AEM SPA.
 
-L’obiettivo di questa introduzione e di questa procedura dettagliata è dimostrare a uno sviluppatore AEM perché le app SPA sono rilevanti, come funzionano generalmente, come un’app SPA viene gestita dall’editor AEM SPA e come è diversa da un’applicazione AEM standard.
+L&#39;obiettivo di questa introduzione e di questa panoramica è dimostrare a uno sviluppatore AEM perché le SPA sono rilevanti, come funzionano in generale, come una SPA viene gestita dall&#39;editor AEM SPA e come è diversa da un&#39;applicazione AEM standard.
 
-La procedura dettagliata si basa sulle funzionalità standard di AEM e sull’app di esempio We.Retail Journal. Devono essere soddisfatti i seguenti requisiti:
+La procedura dettagliata si basa sulla funzionalità standard AEM e sull&#39;app di esempio We.Retail Journal. Devono essere soddisfatti i seguenti requisiti:
 
-* [AEM versione 6.4 con service pack 2 o successiva
-   ](/help/release-notes/sp-release-notes.md)
+* [AEM versione 6.4 con service pack 2 o successiva](/help/release-notes/sp-release-notes.md)
 * [Installa l&#39;app di esempio We.Retail Journal disponibile su GitHub qui.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
 >
 >Questo documento utilizza l&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
 >
->Qualsiasi progetto AEM deve sfruttare il tipo di archivio dei progetti [AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA mediante React o Angular e sfrutta l’SDK SPA.
+>Qualsiasi progetto AEM dovrebbe sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA utilizzando React o Angular e sfrutta l’SDK SPA.
 
 ### Che cos&#39;è un SPA? {#what-is-a-spa}
 
@@ -55,7 +54,7 @@ Un&#39;applicazione a pagina singola (SPA) differisce da una pagina tradizionale
 
 Questo riduce la necessità di aggiornare le pagine e offre all&#39;utente un&#39;esperienza semplice, rapida e più simile a un&#39;esperienza app nativa.
 
-AEM SPA Editor consente agli sviluppatori front-end di creare SPA da integrare in un sito AEM, consentendo agli autori di modificare i contenuti SPA con la stessa facilità con cui si trovano tutti gli altri contenuti AEM.
+AEM SPA Editor consente agli sviluppatori front-end di creare SPA che possono essere integrati in un sito AEM, consentendo agli autori di modificare i contenuti SPA con la stessa facilità con cui si trovano altri contenuti AEM.
 
 ### Perché una SPA? {#why-a-spa}
 
@@ -92,17 +91,17 @@ Rendering sul lato client, l’elemento di pagina reagisce più rapidamente e le
 
 >[!NOTE]
 >
->Per informazioni tecniche sul funzionamento degli SPA in AEM, consultate l’articolo [Guida introduttiva alle app SPA in AEM](/help/sites-developing/spa-getting-started-react.md).
+>Per informazioni tecniche sul funzionamento degli SPA in AEM, consultate l&#39;articolo [Guida introduttiva alle SPA in AEM](/help/sites-developing/spa-getting-started-react.md).
 >
 >Per un&#39;occhiata più dettagliata alla progettazione, all&#39;architettura e al flusso di lavoro tecnico dell&#39;editor SPA, consultate l&#39;articolo Panoramica [dell&#39;editor](/help/sites-developing/spa-overview.md)SPA.
 
 ## Esperienza di editing dei contenuti con SPA {#content-editing-experience-with-spa}
 
-Quando un&#39;app SPA è creata per sfruttare l&#39;Editor AEM SPA, l&#39;autore del contenuto non nota alcuna differenza quando si modifica e si crea contenuto. È disponibile una comune funzionalità di AEM e non sono necessarie modifiche al flusso di lavoro dell’autore.
+Quando un&#39;app SPA è creata per sfruttare l&#39;editor AEM SPA, l&#39;autore del contenuto non nota alcuna differenza durante la modifica e la creazione di contenuti. È disponibile una funzionalità AEM comune e non sono necessarie modifiche al flusso di lavoro dell’autore.
 
 >[!NOTE]
 >
->La procedura dettagliata si basa sulle funzionalità standard di AEM e sull’app di esempio We.Retail Journal. Devono essere soddisfatti i seguenti requisiti:
+>La procedura dettagliata si basa sulla funzionalità standard AEM e sull&#39;app di esempio We.Retail Journal. Devono essere soddisfatti i seguenti requisiti:
 >
 >* [AEM versione 6.4 con service pack 2](/help/release-notes/sp-release-notes.md)
 >* [Installa l&#39;app di esempio We.Retail Journal disponibile su GitHub qui.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
@@ -121,7 +120,7 @@ Quando un&#39;app SPA è creata per sfruttare l&#39;Editor AEM SPA, l&#39;autore
 
    ![screen_shot_2018-06-07at142937](assets/screen_shot_2018-06-07at142937.png)
 
-1. Modificate il contenuto come normale in AEM e tenete presente che le modifiche sono persistenti.
+1. Modificate il contenuto come normale all’interno AEM e tenete presente che le modifiche sono persistenti.
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
@@ -142,11 +141,11 @@ Sono supportati ulteriori strumenti di authoring, come il trascinamento di compo
 >
 >L’editor SPA non modifica il DOM dell’applicazione. La stessa SPA è responsabile del DOM.
 >
->Per vedere come funziona, continuate con la sezione successiva di questo articolo App [SPA e Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)AEM SPA.
+>Per vedere come funziona, continuate con la sezione successiva di questo articolo App [SPA e AEM Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)SPA.
 
 ## App SPA e AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
 
-L&#39;esperienza di comportamento di un&#39;app SPA per l&#39;utente finale e quindi l&#39;analisi della pagina SPA consentono di comprendere meglio in che modo un&#39;app SAP funziona con l&#39;editor SPA in AEM.
+L&#39;esperienza di come un&#39;app SPA si comporta per l&#39;utente finale e quindi l&#39;analisi della pagina SPA aiuta a capire meglio come funziona un&#39;app SAP con l&#39;editor SPA in AEM.
 
 ### Utilizzo di un&#39;applicazione SPA {#using-an-spa-application}
 
@@ -229,7 +228,7 @@ La sezione successiva, [Caricamento di un&#39;applicazione](/help/sites-developi
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   AEM SPA Editor sfrutta [AEM Content Services](/help/assets/content-fragments/content-fragments.md) per distribuire l’intero contenuto della pagina come modello JSON.
+   AEM SPA Editor sfrutta [AEM Content Services](/help/assets/content-fragments/content-fragments.md) per distribuire l&#39;intero contenuto della pagina come modello JSON.
 
    Implementando interfacce specifiche, Sling Models fornisce le informazioni necessarie alla SPA. La consegna dei dati JSON viene delegata verso il basso a ciascun componente (dalla pagina al paragrafo, al componente, ecc.).
 
@@ -253,9 +252,9 @@ La sezione successiva, [Caricamento di un&#39;applicazione](/help/sites-developi
 
 Utilizzando l&#39;applicazione di esempio We.Retail Journal, è chiaro come l&#39;app si comporta e viene caricata quando viene pubblicata, sfruttando i servizi di contenuto per la distribuzione dei contenuti JSON e il caricamento asincrono delle risorse.
 
-Inoltre, per l’autore di contenuti, la creazione di contenuti tramite un editor SPA è semplice in AEM.
+Inoltre, per l&#39;autore dei contenuti, la creazione di contenuti tramite un editor SPA è semplice all&#39;interno AEM.
 
-Nella sezione seguente verrà illustrato il contratto che consente all’editor SPA di correlare i componenti dell’SPA ai componenti di AEM e di ottenere questa esperienza di modifica senza soluzione di continuità.
+Nella sezione seguente verrà illustrato il contratto che consente all&#39;editor SPA di collegare componenti all&#39;interno dell&#39;SPA per AEM componenti e ottenere questa esperienza di editing senza problemi.
 
 1. Caricate l&#39;applicazione We.Retail Journal nell&#39;editor e passate alla modalità **Anteprima** .
 
@@ -267,7 +266,7 @@ Nella sezione seguente verrà illustrato il contratto che consente all’editor 
 
    ![screen_shot_2018-06-08at095124](assets/screen_shot_2018-06-08at095124.png)
 
-   Ad esempio
+   Esempio
 
    `data-cq-data-path="root/responsivegrid/paragraph_1`
 
@@ -279,15 +278,15 @@ Nella sezione seguente verrà illustrato il contratto che consente all’editor 
 
    >[!NOTE]
    >
-   >Si tratta di una modifica nel comportamento delle pagine sottoposte a rendering sul lato server in AEM, in cui è inserito un `cq` elemento per ciascun componente modificabile.
+   >Si tratta di una modifica nel comportamento delle pagine di rendering lato server in AEM, dove è inserito un `cq` elemento per ciascun componente modificabile.
    >
    >
    >Questo approccio in SPA elimina la necessità di inserire elementi personalizzati, basandosi solo su un attributo di dati aggiuntivo, semplificando il markup per lo sviluppatore frontend.
 
 ## Passaggi successivi {#next-steps}
 
-Ora che hai compreso l&#39;esperienza di editing SPA in AEM e come l&#39;SPA si relaziona con l&#39;Editor SPA, approfondisci la tua conoscenza di come è stata creata l&#39;SPA.
+Ora che avete compreso l&#39;esperienza di editing SPA in AEM e come l&#39;SPA si collega all&#39;editor SPA, scoprite meglio come è stata creata una SPA.
 
-* [La Guida introduttiva alle app SPA in AEM](/help/sites-developing/spa-getting-started-react.md) illustra come è possibile creare un&#39;app SPA di base per l&#39;utilizzo con l&#39;editor SPA in AEM
-* [Panoramica](/help/sites-developing/spa-overview.md) dell&#39;editor SPA approfondisce il modello di comunicazione tra AEM e l&#39;SPA.
-* [Lo sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md) descrive come coinvolgere gli sviluppatori front-end nello sviluppo di una SPA per AEM e come le SPA interagiscono con l’architettura di AEM.
+* [Guida introduttiva alle app SPA in AEM](/help/sites-developing/spa-getting-started-react.md) mostra come è possibile creare un&#39;app SPA di base per lavorare con l&#39;editor SPA in AEM
+* [SPA Editor Overview](/help/sites-developing/spa-overview.md) approfondisce il modello di comunicazione tra AEM e SPA.
+* [Lo sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md) descrive come coinvolgere gli sviluppatori front-end nello sviluppo di una SPA per AEM e come le SPA interagiscono con AEM architettura.
