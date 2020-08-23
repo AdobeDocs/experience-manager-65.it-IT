@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1984'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Ad esempio, si desidera che tutti gli autori dei moduli dispongano di determinat
 
 ## Utilizzo dei modelli {#working-with-templates}
 
-Per accedere all’editor modelli dal menu Strumenti, passa ad **Adobe Experience Manager > Strumenti > Modelli**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. AEM fornisce una cartella globale per organizzare i modelli. Tuttavia, per impostazione predefinita non è attivato. Potete richiedere all’amministratore di abilitare la cartella globale o di creare una nuova cartella per i modelli. Per ulteriori informazioni sulla creazione di cartelle, consultate Cartelle [](/help/sites-developing/page-templates-editable.md)modello.
+Per accedere all’editor modelli dal menu Strumenti, accedi a **Adobe Experience Manager > Strumenti > Modelli**. In questo caso, i modelli sono organizzati in cartelle abilitate per i modelli modificabili. AEM una cartella globale per organizzare i modelli. Tuttavia, per impostazione predefinita non è attivato. Potete richiedere all’amministratore di abilitare la cartella globale o di creare una nuova cartella per i modelli. Per ulteriori informazioni sulla creazione di cartelle, consultate Cartelle [](/help/sites-developing/page-templates-editable.md)modello.
 
 Toccando per aprire una cartella, è disponibile un pulsante Crea che consente di creare un nuovo modello per i moduli adattivi.
 
@@ -45,7 +48,7 @@ Dopo aver creato una cartella, aprite la cartella ed eseguite i seguenti passagg
 
 ### Interfaccia dell’editor modelli {#template-editor-ui}
 
-Quando apri un modello per la modifica, puoi vedere i seguenti componenti di AEM Editor:
+Quando aprite un modello per la modifica, potete vedere i seguenti componenti dell’editor AEM:
 
 * **Barra degli strumenti** della pagina Contiene le seguenti opzioni:
 
@@ -105,7 +108,7 @@ Ad esempio, potete aggiungere il componente intestazione nel modello. Quando sel
 Quando l&#39;opzione Contenuto iniziale è selezionata, il contenitore modulo adattivo del modello si apre come un modulo adattivo per la modifica. Come per la creazione di un modulo adattivo, è possibile specificare le impostazioni iniziali, ad esempio la selezione di un tema e l&#39;invio di azioni.
 
 Gli autori dei moduli la utilizzano come base per creare un modulo. La struttura del flusso di contenuto è specificata nel livello Contenuto iniziale del modello. Per passare alla modifica del contenuto iniziale del modello di modulo, prima di visualizzare l&#39;anteprima nella barra degli strumenti della pagina, toccare ![canvas-menu a discesa](assets/canvas-drop-down.png) **> Contenuto**iniziale.
-![Livello Contenuto iniziale nell&#39;Editor modelli](assets/initial-content-layer.png)
+![Livello contenuto iniziale nell&#39;Editor modelli](assets/initial-content-layer.png)
 
 Livello contenuto iniziale nell&#39;Editor modelli che mostra il contenitore modulo adattivo selezionato per specificare le proprietà.
 
@@ -119,7 +122,7 @@ Consultate [Barra laterale](../../forms/using/introduction-forms-authoring.md#si
 >
 >Quando si seleziona Archivia contenuto o Memorizza PDF come azione di invio, è possibile specificare il percorso di archiviazione. Se si specifica il percorso nel modello, tutti i moduli creati da esso avranno lo stesso percorso. È possibile specificare il percorso di memorizzazione corretto o assicurarsi che gli autori dei moduli lo aggiornino per evitare che i dati di ogni modulo vengano memorizzati nella stessa posizione.
 
-#### Creazione di un modello di modulo adattivo con schede e pannelli {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Creazione di un modello di modulo adattivo con schede e pannelli  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Ad esempio, potete creare un modello con le seguenti schede:
 
@@ -139,11 +142,9 @@ Per creare le schede Informazioni generali e Informazioni professionali, aggiung
 
 #### Aggiunta di contenuto alle schede {#adding-content-in-tabs}
 
-[ ![Aggiunta di campi nel modello di modulo adattivo](assets/template-edit-initial-content.png)
+![Aggiunta di campi nel modello di modulo adattivo](assets/template-edit-initial-content.png)
 
-Aggiunta di campi nel modello
-
-](assets/template-edit-initial-content-1.png) Dopo aver aggiunto i pannelli e averli strutturati come schede, è possibile aggiungere campi all&#39;interno delle schede. Quando selezionate una scheda nell’editor, potete visualizzare l’opzione **Trascinate qui** i componenti. È possibile trascinare componenti come caselle di testo, elementi elenco e pulsanti. Puoi trascinare componenti dal browser Componenti nella barra laterale.
+Dopo aver aggiunto i pannelli e averli strutturati come schede, potete aggiungere campi all’interno delle schede. Quando selezionate una scheda nell’editor, potete visualizzare l’opzione **Trascinate qui** i componenti. È possibile trascinare componenti come caselle di testo, elementi elenco e pulsanti. Puoi trascinare componenti dal browser Componenti nella barra laterale.
 
 Ciascun componente dispone di proprietà che migliorano l’acquisizione e la manipolazione dei dati. Ad esempio, è possibile abilitare la proprietà Campo **** obbligatorio di un componente. Gli autori possono specificare un messaggio che i clienti potranno visualizzare quando saltano la compilazione di un campo obbligatorio. Specificate il messaggio nella proprietà Messaggio **campo** obbligatorio.
 
@@ -155,7 +156,7 @@ Dopo aver aggiunto i campi, potete aggiungere pulsanti quali Invia e Ripristina.
 
 Quando create un modello, questo viene aggiunto come bozza. Abilitare il modello a utilizzarlo per la creazione di moduli adattivi. Per abilitare un modello:
 
-1. Accedete ad **Adobe Experience Manager > Strumenti > Modelli** e aprite la cartella in cui avete creato il modello.
+1. Andate su **Adobe Experience Manager > Strumenti > Modelli** e aprite la cartella in cui avete creato il modello.
 
 1. Il modello creato è contrassegnato come Bozza.
 1. Selezionate il modello e toccate **Abilita** nella barra degli strumenti.
@@ -163,28 +164,28 @@ Quando si crea un modulo adattivo, è possibile visualizzare il modello elencato
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando importate il modulo in un’altra istanza di AEM Forms, questo viene importato senza il relativo modello. Se un modulo viene importato ma il suo modello non è disponibile, non viene eseguito il rendering. Potete creare un pacchetto del modello personalizzato da un `/conf` nodo all&#39;interno di `https://<server>:<port>/crx/packmgr`e portarlo nell&#39;istanza di AEM Forms in cui desiderate caricare il modulo.
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo in un&#39;altra istanza  AEM Forms, questo viene importato senza il relativo modello. Se un modulo viene importato ma il suo modello non è disponibile, non viene eseguito il rendering. È possibile creare un pacchetto del modello personalizzato dal `/conf` `https://<server>:<port>/crx/packmgr`nodo in e portarlo nell&#39;istanza di AEM Forms  in cui si desidera caricare il modulo.
 
 ## Creazione di un modulo adattivo utilizzando il modello {#creating-an-adaptive-form-using-the-template}
 
 Dopo aver creato e attivato un modello, questo sarà disponibile in Forms Manager quando si crea un modulo adattivo. Per utilizzare un modello e creare un modulo adattivo, vedere [Creazione di un modulo](../../forms/using/creating-adaptive-form.md)adattivo.
 
-## Modificare l&#39;opzione di visualizzazione dei modelli predefiniti {#change-display-option-of-out-of-the-box-templates}
+## Modificare l&#39;opzione di visualizzazione dei modelli predefiniti  {#change-display-option-of-out-of-the-box-templates}
 
-È possibile creare modelli personalizzati per i moduli adattivi per definire la struttura di base e il contenuto iniziale. In AEM Forms è inoltre disponibile un set di modelli predefiniti per i moduli adattivi. Potete scegliere di mostrare o nascondere i modelli.
+È possibile creare modelli personalizzati per i moduli adattivi per definire la struttura di base e il contenuto iniziale.  AEM Forms fornisce inoltre un set di modelli predefiniti per i moduli adattivi. Potete scegliere di mostrare o nascondere i modelli.
 
 Per visualizzare e nascondere i modelli, effettuate le seguenti operazioni:
 
-1. Accedi all’istanza di creazione di AEM Forms e passa a **Strumenti** > **Operazioni** > Console **** Web.
+1. Accedete ’istanza di creazione AEM Forms e selezionate **Strumenti** > **Operazioni** > Console **** Web.
 
    >[!NOTE]
    >
-   >L’URL della console Web di AEM è https://&#39;[server]:[porta]&#39;/system/console/configMgr
+   >L’URL di AEM console Web è https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Individuare e aprire le impostazioni di configurazione **di** FormsManager:
 
    * Per visualizzare o nascondere il modello di moduli adattivi nella casella, selezionare o deselezionare l&#39;opzione **Includi modelli** AF e AD.
-   * Per visualizzare o nascondere i modelli di modulo adattivo inclusi nelle versioni di AEM 6.0 Forms o AEM 6.1 Forms ma ora non più disponibili, seleziona o deseleziona l’opzione **Includi modelli** AEM 6.0 AF. Se questa opzione è selezionata, per avere effetto è necessario abilitare la configurazione **Includi modelli** AF e AD.
+   * Per visualizzare o nascondere i modelli di modulo adattivo che sono stati aggiunti nelle versioni di Forms AEM 6.0 Forms o AEM 6.1 ma che sono ora obsoleti, selezionare o deselezionare l&#39;opzione **Includi AEM 6.0 Modelli** AF. Se questa opzione è selezionata, per avere effetto è necessario abilitare la configurazione **Includi modelli** AF e AD.
 
 1. Fai clic su **Salva**. Le opzioni di visualizzazione per i modelli forniti vengono modificate.
 
