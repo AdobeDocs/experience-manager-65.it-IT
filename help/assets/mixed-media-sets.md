@@ -1,6 +1,6 @@
 ---
 title: Set di file multimediali diversi
-description: Scoprite come utilizzare i set di file multimediali diversi in Dynamic Media
+description: Scoprite come utilizzare i set di file multimediali diversi in Contenuti multimediali dinamici
 uuid: cecad772-ed05-46f6-ba44-107195866b0d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 27%
@@ -61,7 +61,7 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettuate 
 
 1. [Collegare gli URL all’applicazione](/help/assets/linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](/help/assets/embed-code.md)video o immagini.
 
-   I AEM Assets creano richieste URL per i set di file multimediali diversi e li attivano dopo la pubblicazione dei set di file multimediali diversi. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
+    AEM Assets crea richieste di URL per i set di file multimediali diversi e li attiva dopo la pubblicazione dei set di file multimediali diversi. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
 
    Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers.]**
 
@@ -71,7 +71,7 @@ Se necessario, potete modificare i set [di file multimediali](#editing-mixed-med
 
 >[!NOTE]
 >
->In caso di problemi durante la creazione dei set, consultate [Risoluzione dei problemi relativi alla modalità](/help/assets/troubleshoot-dms7.md)Dynamic Media - Scene7.
+>In caso di problemi durante la creazione dei set, consulta [Risoluzione dei problemi relativi ai file multimediali dinamici - Modalità](/help/assets/troubleshoot-dms7.md)Scene7.
 
 ## Caricamento delle risorse {#uploading-assets}
 
@@ -97,7 +97,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
    >[!NOTE]
    >
-   >Quando create un set di file multimediali diversi, potete modificare la miniatura del set di file multimediali diversi o consentire ad AEM di selezionare la miniatura automaticamente in base alle risorse del set di file multimediali diversi. Per selezionare una miniatura, fate clic su **[!UICONTROL Cambia miniatura]** e selezionate una qualsiasi immagine (per trovare anche le immagini potete spostarvi in altre cartelle). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail.]**
+   >Quando create il set di file multimediali diversi, potete modificare la miniatura del set di file multimediali diversi o consentire AEM selezionare la miniatura automaticamente in base alle risorse del set di file multimediali diversi. Per selezionare una miniatura, fate clic su **[!UICONTROL Cambia miniatura]** e selezionate una qualsiasi immagine (per trovare anche le immagini potete spostarvi in altre cartelle). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail.]**
 
 1. Toccate il selettore delle risorse per selezionare le risorse che desiderate includere nel set di file multimediali diversi. Selezionateli e fate clic su **[!UICONTROL Seleziona.]**
 
@@ -107,7 +107,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
    ![chlimage_1-140](assets/chlimage_1-383.png)
 
-1. Riordinare le risorse trascinandole verso l’alto o verso il basso nell’elenco (se necessario, selezionate l’icona **[!UICONTROL Riordina]** ).
+1. Riordinate le risorse trascinandole verso l’alto o verso il basso nell’elenco (se necessario, selezionate l’icona **[!UICONTROL Riordina]** ).
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
@@ -138,7 +138,7 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
    * Passate il puntatore del mouse su una risorsa del set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita).
    * Passate il puntatore del mouse su una risorsa di set di file multimediali diversi, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** sulla barra degli strumenti.
 
-   * Toccate una risorsa set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita) nella barra degli strumenti.
+   * Toccate una risorsa di set di file multimediali diversi, quindi toccate **[!UICONTROL Modifica]** (icona matita) sulla barra degli strumenti.
 
 1. Nell’editor di set di file multimediali diversi, effettuate una delle seguenti operazioni:
 
@@ -151,10 +151,10 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
 
       >[!NOTE]
       >
-      >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Passa il puntatore del mouse sulla risorsa, quindi tocca l’icona del segno di spunta per selezionarla. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete.]**
+      >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Passa il puntatore del mouse sulla risorsa, quindi tocca l’icona del segno di spunta per selezionarla. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete.]**
          >
-         >    
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+         >
+      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
 1. Toccate **[!UICONTROL Salva]** al termine della modifica.
@@ -164,7 +164,7 @@ Potete eseguire diverse attività di modifica delle risorse in set di file multi
    >* Per modificare le risorse in un set di file multimediali diversi, passa a Set di file multimediali diversi. Per aprire il set nella pagina Anteprima set AEM, toccalo ma non selezionarlo. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members.]** Nella pagina Set Members (Imposta membri), passate il mouse su una risorsa, quindi toccate **** Edit (icona matita) per aprire la pagina di modifica.
       >
       >
-   * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Hover on the set, then tap **Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete.]**
+   * Per eliminare un intero set di file multimediali diversi: da qualsiasi modalità di visualizzazione (come Vista a schede o Vista a colonne), vai al set di file multimediali diversi. Hover on the set, then tap **Select** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete.]**
 
 
 ## Anteprima dei set di file multimediali diversi {#previewing-mixed-media-sets}
