@@ -3,9 +3,9 @@ title: API HTTP [!DNL Assets] in [!DNL Adobe Experience Manager].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1673'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,10 @@ Per accedere all&#39;API:
 La risposta API è un file JSON per alcuni tipi MIME e un codice di risposta per tutti i tipi MIME. La risposta JSON è facoltativa e potrebbe non essere disponibile, ad esempio per i file PDF. Per ulteriori analisi o azioni, fai affidamento sul codice di risposta.
 
 Dopo la [!UICONTROL disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l&#39;interfaccia [!DNL Assets] Web e l&#39;API HTTP. L&#39;API restituisce un messaggio di errore 404 se l&#39;ora [!UICONTROL di] attivazione è futura o [!UICONTROL Ora] di disattivazione è passata.
+
+>[!CAUTION]
+>
+>[L&#39;API HTTP aggiorna le proprietà](#update-asset-metadata) dei metadati nello `jcr` spazio dei nomi. Tuttavia, l&#39;interfaccia utente del Experience Manager  aggiorna le proprietà dei metadati nello `dc` spazio dei nomi.
 
 ## Frammenti di contenuto {#content-fragments}
 
@@ -113,7 +117,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 
 **Risposta**: La classe dell&#39;entità restituita è una risorsa o una cartella. Le proprietà delle entità contenute sono un sottoinsieme dell&#39;intero insieme di proprietà di ciascuna entità. Per ottenere una rappresentazione completa dell&#39;entità, i clienti devono recuperare il contenuto dell&#39;URL indicato dal collegamento con un `rel` di `self`.
 
-## Creare una cartella {#create-a-folder}
+## Crea una cartella . {#create-a-folder}
 
 Crea un nuovo `sling`: `OrderedFolder` nel percorso specificato. Se `*` viene fornito un nome di nodo al posto del nome di un nodo, il servlet utilizza il nome del parametro come nome del nodo. Accettato come dati della richiesta è una rappresentazione Siren della nuova cartella o un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`, utile per creare una cartella direttamente da un modulo HTML. Inoltre, le proprietà della cartella possono essere specificate come parametri di query URL.
 
@@ -168,7 +172,7 @@ Aggiorna il binario di una risorsa (rappresentazione con nome originale). Un agg
 
 Aggiorna le proprietà dei metadati della risorsa. Se aggiornate una qualsiasi proprietà nello `dc:` spazio dei nomi, l&#39;API aggiorna la stessa proprietà nello `jcr` spazio dei nomi. L&#39;API non sincronizza le proprietà sotto i due spazi dei nomi.
 
-**Richiesta**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Richiesta**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Codici** di risposta: I codici di risposta sono:
 
@@ -176,6 +180,27 @@ Aggiorna le proprietà dei metadati della risorsa. Se aggiornate una qualsiasi p
 * 404 - NON TROVATO - se la risorsa non è stata trovata o a cui non è stato possibile accedere all&#39;URI fornito.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
 * 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro va storto.
+
+### Sincronizzare l&#39;aggiornamento dei metadati tra `dc` `jcr` e lo spazio dei nomi {#sync-metadata-between-namespaces}
+
+Il metodo API aggiorna le proprietà dei metadati nello `jcr` spazio dei nomi. Gli aggiornamenti effettuati utilizzando l&#39;interfaccia touch modificano le proprietà dei metadati nello `dc` spazio dei nomi. Per sincronizzare i valori dei metadati tra `dc` e lo `jcr` spazio dei nomi, potete creare un flusso di lavoro e configurare  Experience Manager in modo da eseguire il flusso di lavoro dopo la modifica della risorsa. Utilizzate uno script ECMA per sincronizzare le proprietà di metadati richieste. Lo script di esempio seguente sincronizza la stringa del titolo tra `dc:title` e `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Creare una rappresentazione di una risorsa {#create-an-asset-rendition}
 
