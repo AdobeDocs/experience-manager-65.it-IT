@@ -3,10 +3,10 @@ title: Come modificare o aggiungere i metadati
 description: Scoprite i metadati delle risorse [!DNL Adobe Experience Manager Assets] in vari modi per modificarli.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
+source-git-commit: fc14ccc834c9a41b67eb8cf17dd8b34f5dff2406
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 2%
+source-wordcount: '473'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Per modificare i metadati, effettuate le seguenti operazioni:
 
 Qualsiasi modifica ai metadati di una risorsa viene riscritta nel binario originale come parte dei dati XMP. Il flusso di lavoro per la riscrittura dei metadati aggiunge i metadati al binario originale. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le nuove proprietà (incluse quelle personalizzate come `cq:tags`) vengono aggiunte allo schema.
 
-La funzione di riscrittura XMP è supportata e abilitata per le piattaforme e i formati di file descritti nei requisiti [tecnici.](/help/sites-deploying/technical-requirements.md)
+XMP riscrittura è supportata e abilitata per le piattaforme e i formati di file descritti nei requisiti [tecnici.](/help/sites-deploying/technical-requirements.md)
 
 ## Modifica schema metadati {#editing-metadata-schema}
 
@@ -55,6 +55,10 @@ Potete aggiungere spazi dei nomi personalizzati all&#39;interno [!DNL Experience
 1. Per accedere alla pagina di amministrazione dello spazio dei nomi, fare clic su **[!UICONTROL Spazi dei nomi]** nella parte superiore della pagina.
 1. Per aggiungere uno spazio nomi, fate clic su **[!UICONTROL Nuovo]** nella parte inferiore della pagina.
 1. Specificate uno spazio nomi personalizzato nella convenzione spazio nomi XML. Specificate l’ID sotto forma di URI e il prefisso associato per l’ID. Fai clic su **[!UICONTROL Salva]**.
+
+## Suggerimenti e limitazioni {#best-practices-limitations}
+
+* Gli aggiornamenti dei metadati tramite l&#39;interfaccia touch modificano le proprietà dei metadati nello `dc` spazio dei nomi. Eventuali aggiornamenti effettuati tramite l’API HTTP modificano le proprietà dei metadati nello `jcr` spazio nomi. Scoprite [come aggiornare i metadati mediante l&#39;API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
 
 >[!MORELIKETHIS]
 >
