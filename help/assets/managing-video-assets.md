@@ -3,9 +3,9 @@ title: Consente di gestire le risorse video in [!DNL Adobe Experience Manager].
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 268689d534f8bf649335269f9169455c381f9554
+source-git-commit: 93b8fccc2a0c4663104150fdba3651ff5e4f6bbc
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '810'
 ht-degree: 7%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 7%
 
 Il formato video è una parte fondamentale delle risorse digitali di un&#39;organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzionalità mature per gestire l’intero ciclo di vita delle risorse video dopo la loro creazione.
 
-Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. Inoltre, se disponete di una licenza per l’utilizzo [!DNL Dynamic Media], consultate la documentazione [video](/help/assets/video.md)Contenuti multimediali dinamici.
+Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Manager Assets]. La codifica e la transcodifica video, ad esempio la transcodifica FFmpeg, è possibile tramite [!DNL Dynamic Media] integrazione.
 
 ## Caricare e visualizzare in anteprima le risorse video {#upload-and-preview-video-assets}
 
 [!DNL Adobe Experience Manager Assets] genera anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installate il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Potete visualizzare l&#39;anteprima delle rappresentazioni nell&#39;interfaccia [!DNL Assets] utente.
 
 1. Nella cartella o nelle sottocartelle delle risorse digitali, individuate il percorso in cui desiderate aggiungere le risorse digitali.
-1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL File]**. In alternativa, rilasciatelo direttamente nell’area delle risorse. Per informazioni dettagliate sull’operazione di caricamento, consultate [Caricare le risorse](managing-assets-touch-ui.md#uploading-assets) .
+1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti e scegliete **[!UICONTROL File]**. In alternativa, trascinare un file nell’interfaccia utente. Per informazioni dettagliate, consultate [caricare le risorse](managing-assets-touch-ui.md#uploading-assets) .
 1. Per visualizzare un’anteprima del video nella vista a schede, fate clic sull’opzione **[!UICONTROL Riproduci]** ![riproduzione](assets/do-not-localize/play.png) nella risorsa video. Potete mettere in pausa o riprodurre il video solo nella vista a schede. Le opzioni [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
 
 1. Per visualizzare l&#39;anteprima del video nella pagina dei dettagli della risorsa, fate clic su **[!UICONTROL Modifica]** nella scheda. Il video viene riprodotto nel lettore video nativo del browser. Potete riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
@@ -67,17 +67,15 @@ Per configurare un limite di dimensione file più elevato, eseguire i seguenti p
 
 ## Pubblicare risorse video {#publish-video-assets}
 
-Dopo la pubblicazione, potete includere le risorse video in una pagina Web come URL o incorporarle direttamente. Per informazioni dettagliate, consultate [pubblicare risorse](/help/assets/publishing-dynamicmedia-assets.md)multimediali dinamiche.
+Dopo la pubblicazione, potete includere le risorse video in una pagina Web come URL o incorporarle direttamente. Per informazioni dettagliate, consultate [pubblicare risorse](/help/assets/publishing-dynamicmedia-assets.md)per contenuti multimediali dinamici.
 
 ## Annotazione delle risorse video {#annotate-video-assets}
 
-1. Dalla [!DNL Assets] console, fate clic su [!UICONTROL Modifica] nella scheda della risorsa per visualizzare la pagina dei dettagli della risorsa.
-1. Per riprodurre il video, fate clic su [!UICONTROL Anteprima].
-1. Per annotare il video, fate clic sul pulsante **[!UICONTROL Annota]** . Un’annotazione viene aggiunta alla data e all’ora specifiche (fotogramma) del video. Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente.
+1. Dalla [!DNL Assets] console, selezionate **[!UICONTROL Modifica]** nella scheda della risorsa per visualizzare la pagina dei dettagli della risorsa.
+1. Per riprodurre il video, fate clic su **[!UICONTROL Anteprima]**.
+1. Per annotare il video, fate clic su **[!UICONTROL Annota]**. Un’annotazione viene aggiunta alla data e all’ora specifiche (fotogramma) del video. Durante l&#39;annotazione, è possibile disegnare sul quadro e inserire un commento con il disegno. I commenti vengono salvati automaticamente. Per uscire dalla procedura guidata di annotazione, fate clic su **[!UICONTROL Chiudi]**.
 
    ![Disegnare e annotare su un fotogramma video](assets/annotate-video.png)
-
-   Per uscire dalla procedura guidata di annotazione, fate clic su **[!UICONTROL Chiudi]**.
 
 1. Individua un punto specifico del video, specifica il tempo in secondi nel campo di **testo**, infine fai clic su **Jump (Passa a)**. Ad esempio, per saltare i primi 20 secondi del video, inserisci 20 nel campo di testo.
 
@@ -91,4 +89,5 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 >
 >* [Gestione delle risorse digitali nelle risorse  Experience Manager](/help/assets/managing-assets-touch-ui.md)
 >* [Gestire le raccolte in  risorse Experience Manager](/help/assets/managing-collections-touch-ui.md)
+>* [Documentazione](/help/assets/video.md)video per contenuti multimediali dinamici.
 
