@@ -4,7 +4,7 @@ description: Scoprite come trovare le risorse necessarie [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 4efe5247d91fa846c4a444c81245b0fa1515a7b4
 workflow-type: tm+mt
 source-wordcount: '5858'
 ht-degree: 5%
@@ -290,7 +290,7 @@ Usate virgolette doppie intorno alle parole chiave per trovare le risorse che co
 
 *Figura: Funzionamento della ricerca con e senza virgolette.*
 
-**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Ad esempio,
+**Cerca con carattere jolly asterisco**: Per ampliare la ricerca, usate un asterisco prima o dopo la parola di ricerca per far corrispondere un numero qualsiasi di caratteri. Ad esempio, la ricerca di un&#39;esecuzione senza un asterisco non restituisce risorse contenenti variazioni della parola (anche nei metadati). Un asterisco sostituisce qualsiasi numero di caratteri. Esempio,
 
 * `run` restituisce le risorse con la parola chiave run esatta
 * `run*` restituisce le risorse in esecuzione, in esecuzione, in esecuzione e così via.
@@ -403,7 +403,7 @@ Con le risorse ricercate in  Experience Manager potete effettuare le seguenti op
 
 ### Ordinare i risultati della ricerca {#sort}
 
-Ordinate i risultati della ricerca per individuare più rapidamente le risorse necessarie. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse all’interno di una cartella o nei risultati di una query di ricerca, indipendentemente dal numero. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
+Ordinate i risultati della ricerca per individuare più rapidamente le risorse necessarie. You can sort the search results in list view and only when you select **[!UICONTROL [Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] utilizza l’ordinamento lato server per ordinare rapidamente tutte le risorse all’interno di una cartella o nei risultati di una query di ricerca, indipendentemente dal numero. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
 
 Nella vista a elenco, potete ordinare i risultati della ricerca esattamente come potete ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimension, Dimensioni, Valutazione, Utilizzo, (Data) Creata, (Data) Modificata, (Data) Pubblicata, Flusso di lavoro e Estratta.
 
@@ -445,7 +445,7 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 | Errore, problemi, sintomi | Possibile motivo | Possibile correzione o comprensione del problema |
 |---|---|---|
 | Risultati errati durante la ricerca di risorse con metadati mancanti. | Quando si ricercano risorse per le quali mancano i metadati obbligatori, [!DNL Experience Manager] è possibile che vengano visualizzate risorse con metadati validi. I risultati si basano sulle proprietà dei metadati indicizzati. | Una volta aggiornati i metadati, è necessario reindicizzare lo stato corretto dei metadati delle risorse. Consultate Metadati [](metadata-schemas.md#define-mandatory-metadata)obbligatori. |
-| Troppi risultati di ricerca. | Parametro di ricerca ampio. | Considerate la limitazione dell&#39; [ambito di ricerca](#scope). Gli smart tag consentono di ottenere più risultati di quanto previsto. Consultate Comportamento [di ricerca con gli smart tag](#withsmarttags). |
+| Troppi risultati di ricerca. | Parametro di ricerca ampio. | Considerate la limitazione dell&#39; [ambito di ricerca](#scope). Gli smart tag consentono di ottenere più risultati di quanto previsto. Consultate Comportamento di [ricerca con gli smart tag](#withsmarttags). |
 | Risultati di ricerca non correlati o in parte correlati. | Il comportamento di ricerca cambia con l’assegnazione di smart tag. | Scoprite [come cambia la ricerca dopo l’assegnazione di tag](#withsmarttags)avanzati. |
 | Nessun suggerimento di completamento automatico per le risorse. | Le risorse appena caricate non sono ancora indicizzate. I metadati non sono immediatamente disponibili come suggerimenti quando iniziate a digitare una parola chiave di ricerca nella barra di ricerca Omnyser. | [!DNL Assets] attende la scadenza di un periodo di timeout (per impostazione predefinita, un’ora) prima di eseguire un processo in background per indicizzare i metadati per tutte le risorse caricate o aggiornate di recente e quindi aggiungere i metadati all’elenco dei suggerimenti. |
 | Nessun risultato di ricerca. | <ul><li>Le risorse corrispondenti alla query non esistono. </li><li> Spazi bianchi aggiunti prima della query di ricerca. </li><li> Il campo di metadati non supportato contiene la parola chiave cercata.</li><li> Ricerca eseguita durante la disattivazione di una risorsa. </li></ul> | <ul><li>Effettuate ricerche utilizzando un&#39;altra parola chiave. In alternativa, potete usare tag avanzati o ricerche per similarità per migliorare i risultati della ricerca. </li><li>[Limitazione](#limitations)nota.</li><li>Non tutti i campi di metadati sono considerati come ricerche. Vedere [ambito](#scope).</li><li>Effettuate ricerche in un secondo momento o modificate i tempi di attivazione e disattivazione delle risorse richieste.</li></ul> |
