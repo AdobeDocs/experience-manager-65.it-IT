@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1148ac87ef6ff1afa77788e9cbd180d883290bfe
+source-git-commit: 6eb6ea86c5544329be5cb28500c59c632ccc9639
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,13 @@ Per integrare  Adobe Sign con  AEM Forms è necessario disporre dei seguenti req
 * Un&#39;applicazione [API](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)Adobe Sign.
 * Credenziali (ID client e Segreto cliente) &#39;applicazione API Adobe Sign.
 * Durante la riconfigurazione, rimuovete la configurazione Adobe Sign esistente  dalle istanze di creazione e pubblicazione.
+* Utilizzate una chiave [di crittografia](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) identica per le istanze di creazione e pubblicazione.
 
 ## Configurare  Adobe Sign con  AEM Forms {#configure-adobe-sign-with-aem-forms}
 
 Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare  Adobe Sign con  AEM Forms nell’istanza Author:
 
-1. ’istanza di creazione di AEM Forms, andate a **Strumenti** ![a martello](assets/hammer.png) > **Generale** > **Browser** di configurazione.
+1. ’istanza di creazione di AEM Forms, selezionate **Strumenti** ![martello](assets/hammer.png) > **Generale** > **Browser** di configurazione.
 1. Nella pagina del browser **[!UICONTROL di]** configurazione, toccate **[!UICONTROL Crea]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]** , specificate un **[!UICONTROL titolo]** per la configurazione, abilitate le configurazioni **** Cloud e toccate **[!UICONTROL Crea]**. Crea un contenitore di configurazione per i servizi cloud.
 1. Accedete a **Strumenti** ![martello](assets/hammer.png) > **Cloud Services** > **Adobe Sign** e selezionate il contenitore di configurazione creato nel passaggio precedente.
@@ -89,16 +90,11 @@ Dopo aver creato i prerequisiti, eseguite i seguenti passaggi per configurare  A
 1. Apri AEM console Web. L&#39;URL è `https://'[server]:[port]'/system/console/configMgr`
 1. Aprite il servizio di configurazione comune **Forms.**
 1. Nel campo **Consenti** , **selezionare** Tutti gli utenti - Tutti gli utenti, anonimi o connessi, possono visualizzare in anteprima gli allegati, verificare e firmare i moduli e fare clic su **Salva.** L&#39;istanza Author è configurata per l&#39;utilizzo  Adobe Sign.
-1. Nell’istanza [Pubblica](/help/sites-deploying/deploy.md) , effettuate l’accesso e aprite il seguente URL:
+1. Utilizzate [la replica](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) per creare una configurazione identica sulle istanze di pubblicazione corrispondenti.
 
-   `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
+ Adobe Sign è ora integrato con  AEM Forms ed è pronto per essere utilizzato nei moduli adattivi. Per [utilizzare  servizio Adobe Sign in un modulo](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)adattivo, specificare il contenitore di configurazione creato sopra nelle proprietà del modulo adattivo.
 
-1. Ripetete i passaggi da 1 a 12 per configurare  Adobe Sign con  AEM Forms. Utilizzate lo stesso titolo per la configurazione (come specificato al punto 3) e lo stesso nome (come specificato al punto 6) per replicare le impostazioni configurate nell&#39;istanza Author.
 
-    Adobe Sign è integrato con  AEM Forms ed è pronto per essere utilizzato nei moduli adattivi. Per [utilizzare  servizio Adobe Sign in un modulo](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)adattivo, specificare il contenitore di configurazione creato sopra nelle proprietà del modulo adattivo.
-
-   >[!NOTE]
-   > Se disponete di un ambiente protetto e non disponete dell’accesso all’URL, `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`completate la configurazione in Author e utilizzate la [replica](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) per creare una configurazione identica sulle istanze di pubblicazione corrispondenti.
 
 ## Configurare  pianificazione Adobe Sign per sincronizzare lo stato di firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
