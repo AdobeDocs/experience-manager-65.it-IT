@@ -4,9 +4,9 @@ description: Suggerimenti e indicazioni [!DNL Experience Manager] sulla configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2746'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Ad esempio, dopo aver eseguito numerosi flussi di lavoro non transitori (che cre
 
 ### Numero massimo di processi paralleli {#maximum-parallel-jobs}
 
-Per impostazione predefinita, [!DNL Experience Manager] esegue un numero massimo di processi paralleli pari al numero di processori presenti sul server. Il problema di questa impostazione è che durante i periodi di carico eccessivo, tutti i processori sono occupati da flussi di lavoro [!UICONTROL DAM Update Asset] , rallentando la reattività dell&#39;interfaccia utente e impedendo a [!DNLEExperience Manager] di eseguire altri processi che salvaguardano le prestazioni e la stabilità del server. Come procedura corretta, impostare questo valore su metà dei processori disponibili sul server eseguendo la procedura seguente:
+Per impostazione predefinita, [!DNL Experience Manager] esegue un numero massimo di processi paralleli pari al numero di processori presenti sul server. Il problema di questa impostazione è che durante i periodi di carico eccessivo, tutti i processori sono occupati da flussi di lavoro [!UICONTROL DAM Update Asset] , rallentando la reattività dell&#39;interfaccia utente e impedendo [!DNL Experience Manager] l&#39;esecuzione di altri processi che salvaguardano le prestazioni e la stabilità del server. Come procedura corretta, impostare questo valore su metà dei processori disponibili sul server eseguendo la procedura seguente:
 
 1. In [!DNL Experience Manager] Autore, accedere `https://[aem_server]:[port]/system/console/slingevent`.
 
