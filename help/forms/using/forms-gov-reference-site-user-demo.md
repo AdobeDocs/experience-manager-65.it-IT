@@ -1,26 +1,26 @@
 ---
-title: Procedura dettagliata sul sito di riferimento We.Gov
-seo-title: Procedura dettagliata sul sito di riferimento We.Gov
-description: Utilizzate utenti e gruppi fittizi per eseguire  attività AEM Forms utilizzando il pacchetto dimostrativo di We.Gov.
-seo-description: Utilizzate utenti e gruppi fittizi per eseguire  attività AEM Forms utilizzando il pacchetto dimostrativo di We.Gov.
+title: Procedura dettagliata sul sito di riferimento We.Gov e We.Finance
+seo-title: Procedura dettagliata sul sito di riferimento We.Gov e We.Finance
+description: Utilizzate utenti e gruppi fittizi per eseguire  attività AEM Forms utilizzando il pacchetto dimostrativo We.Gov e We.Finance.
+seo-description: Utilizzate utenti e gruppi fittizi per eseguire  attività AEM Forms utilizzando il pacchetto dimostrativo We.Gov e We.Finance.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1da42d7274e9a4257b9e8effae2b754e0104aa4
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2548'
 ht-degree: 1%
 
 ---
 
 
-# Procedura dettagliata sul sito di riferimento We.Gov {#we-gov-reference-site-walkthrough}
+# Procedura dettagliata sul sito di riferimento We.Gov e We.Finance {#we-gov-reference-site-walkthrough}
 
 ## Prerequisiti {#pre-requisites}
 
-Configurate il sito di riferimento come descritto in [Impostazione e configurazione del sito](../../forms/using/forms-install-configure-gov-reference-site.md)di riferimento We.Gov.
+Configurate il sito di riferimento come descritto in [Impostazione e configurazione del sito](../../forms/using/forms-install-configure-gov-reference-site.md)di riferimento We.Gov e We.Finance.
 
 ## Storia utente {#user-story}
 
