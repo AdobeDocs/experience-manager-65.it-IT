@@ -1,27 +1,26 @@
 ---
 title: Procedura dettagliata sul sito di riferimento per le assunzioni dei dipendenti
 seo-title: Assunzione dipendente
-description: Il sito di riferimento Moduli AEM mostra come le organizzazioni possono utilizzare le funzionalità di AEM Forms per implementare il flusso di lavoro di selezione dei dipendenti.
-seo-description: Il sito di riferimento Moduli AEM mostra come le organizzazioni possono utilizzare le funzionalità di AEM Forms per implementare il flusso di lavoro di selezione dei dipendenti.
+description: ' sito di riferimento AEM Forms mostra come le organizzazioni possono utilizzare  funzionalità di AEM Forms per implementare il flusso di lavoro di assunzione dei dipendenti.'
+seo-description: ' sito di riferimento AEM Forms mostra come le organizzazioni possono utilizzare  funzionalità di AEM Forms per implementare il flusso di lavoro di assunzione dei dipendenti.'
 uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '1435'
+ht-degree: 0%
 
 ---
 
 
 # Procedura dettagliata sul sito di riferimento per le assunzioni dei dipendenti {#employee-recruitment-reference-site-walkthrough}
 
-## Prerequisito {#prerequisite}
-
-Configurate i siti di riferimento come descritto in [Impostazione e configurazione dei siti](/help/forms/using/setup-reference-sites.md)di riferimento di AEM Forms.
-
 ## Panoramica {#overview}
 
-We.Finance è un&#39;organizzazione che consente ai candidati di richiedere un impiego attraverso il portale del sito di riferimento. L&#39;organizzazione utilizza inoltre il portale per gestire la programmazione degli interviste, la creazione di elenchi puntati e la comunicazione interna dei candidati. Il sito gestisce quanto segue:
+We.Finance è un&#39;organizzazione che consente ai candidati di fare domanda di lavoro attraverso il portale del sito di riferimento. L&#39;organizzazione utilizza inoltre il portale per gestire la programmazione degli interviste, la creazione di elenchi puntati e la comunicazione interna dei candidati. Il sito gestisce quanto segue:
 
 * Candidati alla ricerca e alla richiesta di processi
 * Screening e rosa dei candidati
@@ -41,11 +40,11 @@ Il caso d’uso di assunzione dei dipendenti comprende due flussi di lavoro:
 * Prima dell&#39;intervista - Flusso di lavoro di reclutamento dei dipendenti di finanza
 * Dopo l&#39;intervista - Contabilizziamo il flusso di lavoro del post-intervista del dipendente Reclutamento
 
-Questi flussi di lavoro vengono creati in AEM e sono disponibili all’indirizzo:
+Questi flussi di lavoro vengono creati in AEM e sono disponibili al seguente indirizzo:
 
 `https://[authorHost]:[authorPort]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models/`
 
-#### Flusso di lavoro di reclutamento dei dipendenti {#we-finance-employee-recruiting-workflow}
+#### Flusso di lavoro di reclutamento dei dipendenti di finanza {#we-finance-employee-recruiting-workflow}
 
 Di seguito è riportato il modello del flusso di lavoro di reclutamento dei dipendenti di We Finance seguito in questo documento.
 
@@ -78,13 +77,13 @@ Pagina principale We.Finance
 
 Pagina di carriera We.Finance
 
-Sarah fa clic su Applica su un processo di registrazione. Viene visualizzato il modulo di richiesta del processo. Compila tutti i dettagli nella domanda e li invia.
+Sarah fa clic su Applica su un processo di registrazione. Viene visualizzato il modulo di richiesta del processo. Riempie tutti i dettagli nella domanda e li invia.
 
 ![job-application-form](assets/job-application-form.png)
 
 ### Come funziona {#how-it-works}
 
-La home page di We.Finance e la pagina della carriera sono pagine di AEM Sites. La pagina della carriera incorpora un modulo adattivo, che utilizza un pannello ripetibile per recuperare le aperture di un processo utilizzando un servizio e visualizzarle nella pagina. È possibile esaminare il modulo adattivo in `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+La home page di We.Finance e la pagina della carriera sono  pagine AEM Sites. La pagina della carriera incorpora un modulo adattivo, che utilizza un pannello ripetibile per recuperare le aperture di un processo utilizzando un servizio e visualizzarle nella pagina. È possibile esaminare il modulo adattivo in `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
 
 ### Vedi te stesso {#see-it-yourself}
 
@@ -94,7 +93,7 @@ Accertatevi di specificare un ID e-mail valido nell&#39;applicazione come qualsi
 
 ## John Jacobs presenta il profilo di Sarah Rose per lo screening del responsabile delle assunzioni {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-L&#39;organizzazione riceve la domanda di lavoro presentata da Sarah. John Jacobs, un reclutatore, ha il compito di rivedere il profilo di Sarah. Controlla l’attività nella sua Casella in entrata AEM, trova il profilo corrispondente al requisito del processo e fa clic su Elenco di scelta rapida. Il profilo di Sarah viene inoltrato a Gloria Rios, la responsabile delle assunzioni, per la sua approvazione.
+L&#39;organizzazione riceve la domanda di lavoro presentata da Sarah. John Jacobs, un reclutatore, ha il compito di rivedere il profilo di Sarah. Controlla l’attività nella propria casella in entrata AEM, trova il profilo corrispondente al requisito del processo e fa clic su Elenco di scelta rapida. Il profilo di Sarah viene inoltrato a Gloria Rios, la responsabile delle assunzioni, per la sua approvazione.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -114,11 +113,11 @@ Vai a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.ht
 
 ## Gloria esamina la domanda e approva il richiedente per un colloquio {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
-Gloria, responsabile assunzioni, riceve il profilo inserito nella rosa dei nomi come un’attività nella propria inbox AEM. Lo esamina e approva la candidata, Sarah Rose, per l&#39;intervista.
+Gloria, la responsabile delle assunzioni, riceve il profilo in lista ridotta come un&#39;attività nella sua casella AEM Posta in arrivo. Lo esamina e approva la candidata, Sarah Rose, per l&#39;intervista.
 
 ![gloriainbox](assets/gloriainbox.png)
 
-Inbox AEM di Gloria
+AEM inbox di Gloria
 
 ![gloriaschedulesinterintervista](assets/gloriaschedulesinterview.png)
 
@@ -126,7 +125,7 @@ Gloria approva Sarah Rose per un&#39;intervista
 
 **Come funziona**
 
-Quando Gloria approva il candidato per un&#39;intervista, il flusso di lavoro crea un&#39;attività nella Casella in entrata AEM di John Doe, che è un reclutatore per We.Finance.
+Quando Gloria approva il candidato per un&#39;intervista, il flusso di lavoro crea un&#39;attività nella AEM Posta in arrivo di John Doe, che è un reclutatore per We.Finance.
 
 ### Vedi te stesso {#see-it-yourself-2}
 
@@ -140,7 +139,7 @@ John Doe riceve il compito di programmare un&#39;intervista nella sua inbox. Joh
 
 ![johnjacobsaeminbox](assets/johnjacobsaeminbox.png)
 
-Inbox AEM di John Doe
+Posta in AEM di John Doe
 
 ![johndoescheduleintervista](assets/johndoescheduleinterview.png)
 
@@ -156,11 +155,11 @@ Sarah Rose riceve il programma del colloquio
 
 ## Dopo le interviste, il responsabile delle assunzioni sceglie Sarah Rose {#after-the-interviews-the-hiring-manager-shortlists-sarah-rose}
 
-Dopo che Sarah Rose attraversa le interviste e le cancella, Gloria Rios, il manager delle assunzioni, apre il compito di selezione dei candidati dalla sua inbox e fa clic su Seleziona. La decisione di Gloria Rios è trasmessa alla persona HR, John Doe, per ulteriori elaborazioni.
+Dopo che Sarah Rose attraversa le interviste e le cancella, Gloria Rios, il manager delle assunzioni, apre il compito di selezione dei candidati dalla sua casella in entrata e fa clic su Seleziona. La decisione di Gloria Rios è trasmessa alla persona HR, John Doe, per ulteriori elaborazioni.
 
 ![gloriariosinboxoffer](assets/gloriariosinboxoffer.png)
 
-Inbox AEM di Gloria
+AEM inbox di Gloria
 
 ![gloriariosselectcandidate](assets/gloriariosselectcandidate.png)
 
@@ -168,7 +167,7 @@ Gloria Rios seleziona Sarah Rose dopo le interviste
 
 ## John Doe richiede ulteriori informazioni {#john-doe-requests-more-information}
 
-Prima di chiedere a un candidato di unirsi all&#39;organizzazione, è necessario verificare il suo background. John Doe apre e rivede i dettagli del candidato selezionato e rileva che alcuni dei suoi dettagli di lavoro e istruzione non sono ancora stati compilati. John Doe Clicca Per Maggiori Informazioni.
+Prima di chiedere a un candidato di unirsi all&#39;organizzazione, è necessario verificare il suo background. John Doe apre e rivede i dettagli del candidato selezionato e rileva che alcuni dei suoi dettagli di lavoro e istruzione non sono ancora stati compilati. John Doe Clicca Ha Bisogno Di Ulteriori Informazioni.
 
 ![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
@@ -176,7 +175,7 @@ John Doe richiede maggiori informazioni da Sarah Rose sulla sua istruzione e la 
 
 ## Sarah Rose riceve una e-mail con la richiesta di ulteriori informazioni {#sarah-rose-receives-an-email-requesting-further-information}
 
-Sarah Rose riceve un&#39;e-mail di notifica della necessità di ulteriori informazioni per l&#39;elaborazione della domanda di lavoro. Il messaggio e-mail include un collegamento al modulo per la compilazione delle informazioni richieste.
+Sarah Rose riceve un&#39;e-mail di notifica della necessità di ulteriori informazioni per l&#39;elaborazione della sua domanda di lavoro. Il messaggio e-mail include un collegamento al modulo per la compilazione delle informazioni richieste.
 
 ![sarahroseemailmoredettagli](assets/sarahroseemailmoredetails.png)
 
@@ -198,7 +197,7 @@ John Doe seleziona la richiesta di revisione del candidato e la apre. John Doe t
 
 ![johndoadionainformationinbox](assets/johndoeadditionainformationinbox.png)
 
-Casella in entrata AEM di John Doe
+Posta in arrivo AEM John Doe
 
 ![johndoadionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
@@ -210,7 +209,7 @@ John Jacobs vede la richiesta del controllo in background nella sua inbox. John 
 
 ![johnjacobsbackground checkinbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-Inbox AEM di John Jacobs
+Posta in AEM di John Jacobs
 
 ![johnjacobsbackground scacchiera](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -218,11 +217,11 @@ Dopo aver eseguito il controllo di sfondo, John Jacobs fa clic su Vai avanti
 
 ## John Doe invia la lettera di partecipazione a Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe riceve nella propria inbox AEM una richiesta di invio della lettera di partecipazione. John apre la richiesta e visualizza i dettagli. John Doe allega la lettera di unione PDF e quindi fa clic su Allega e invia lettera di unione.
+John Doe riceve nella sua casella in AEM una richiesta di invio della lettera di partecipazione. John apre la richiesta e visualizza i dettagli. John Doe allega la lettera di unione PDF e quindi fa clic su Allega e invia lettera di unione.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 
-Inbox AEM di John Doe
+Posta in AEM di John Doe
 
 ![johndoejoininglaccessorio](assets/johndoejoiningletterattachandsend.png)
 
