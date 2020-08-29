@@ -1,5 +1,5 @@
 ---
-title: Configurare e configurare il sito di riferimento We.Gov
+title: Configurare e configurare il sito di riferimento We.Gov e We.Finance
 seo-title: Configurare e configurare il sito di riferimento We.Gov
 description: Installate, configurate e personalizzate un pacchetto dimostrativo  AEM Forms.
 seo-description: Installate, configurate e personalizzate un pacchetto dimostrativo  AEM Forms.
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c42e5e5274c41469824f12b228698a77bf5d4a6
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4742'
 ht-degree: 1%
 
 ---
 
 
-# Configurare e configurare il sito di riferimento We.Gov {#set-up-and-configure-we-gov-reference-site}
+# Configurare e configurare il sito di riferimento We.Gov e We.Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Dettagli del pacchetto dimostrativo {#demo-package-details}
 
@@ -620,7 +620,7 @@ Una volta impostata la configurazione, gli utenti possono eseguire il test caric
 
 1. Dopo aver selezionato il pulsante, gli utenti avranno a disposizione le seguenti opzioni
 
-   * Accertatevi che gli utenti selezionino la configurazione *We.Gov AFC Production*
+   * Accertatevi che gli utenti selezionino la configurazione di produzione *AFC* We.Gov
 
    ![Impostazioni di conversione](assets/aftia-conversion-settings.jpg)
 
