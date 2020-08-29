@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
-source-git-commit: dc7804c9985bf9a14bfad40f546e393b39615dab
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 5%
 
 ---
 
@@ -32,10 +35,6 @@ Di seguito sono elencate le funzionalità chiave delle comunicazioni interattive
 * I frammenti di documento supportano l&#39;editor di regole e il modello di dati del modulo
 * L&#39;interfaccia utente dell&#39;agente visualizza la stampa e l&#39;anteprima Web della comunicazione interattiva
 * Trascinare i componenti per creare rapidamente canali di stampa e Web
-
-## Esempio di utilizzo {#sample-use-case}
-
-Il kit di [benvenuto per un esempio di utilizzo di un cliente](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) con carta di credito illustra le funzionalità di una comunicazione interattiva.
 
 ## Interactive Communication creation  {#interactive-communication-creation}
 
@@ -106,7 +105,7 @@ La comunicazione interattiva è l&#39;approccio predefinito e consigliato per cr
    <td>Nessuna interfaccia utente per la creazione dell'espressione condizionale</td>
   </tr>
   <tr>
-   <td>Authoring</td>
+   <td>Authoring  </td>
    <td>Interfaccia di trascinamento per la creazione di canali Web e di stampa</td>
    <td>Nessun meccanismo di trascinamento </td>
   </tr>
