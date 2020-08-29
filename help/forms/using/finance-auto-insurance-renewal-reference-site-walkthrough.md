@@ -10,22 +10,21 @@ content-type: reference
 discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '743'
+ht-degree: 0%
 
 ---
 
 
 # Procedura dettagliata sul sito di riferimento We.Finance Auto Insurance Renewal{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Prerequisiti {#pre-requisites}
+## Scenario del sito di riferimento We.Finance  {#we-finance-reference-site-scenario}
 
-Impostate il sito di riferimento come descritto in [Configurazione e configurate il sito](../../forms/using/setup-reference-sites.md)di riferimento di AEM Forms.
+Il sito We.Finance è un sito di servizi finanziari progettato per aiutarvi a apprendere le capacità di comunicazione interattiva di  AEM Forms.
 
-## Scenario del sito di riferimento We.Finance {#we-finance-reference-site-scenario}
-
-Il sito We.Finance è un sito di servizi finanziari progettato per aiutarti a imparare le funzionalità di comunicazione interattiva di AEM Forms.
-
-Leggi la descrizione dettagliata del caso d’uso della funzione Assicurazione automatica We.Finance che illustra in che modo i moduli AEM e la sua integrazione con Microsoft Dynamics consentono di personalizzare l’esperienza dei clienti in una società di servizi finanziari. La procedura interattiva è stata progettata per semplificare l&#39;implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
+Leggi la descrizione dettagliata del caso di utilizzo della funzione Assicurazione automatica We.Finance che mostra come AEM moduli e la sua integrazione con Microsoft Dynamics contribuiscano a personalizzare l&#39;esperienza dei clienti in una società di servizi finanziari. La procedura interattiva è stata progettata per semplificare l&#39;implementazione di transazioni digitali complesse e la comunicazione con i clienti in una società finanziaria.
 
 **Il viaggio inizia con il caso di utilizzo:**
 
@@ -33,14 +32,14 @@ Sarah Rose è un cliente esistente di We.Finance e ha acquistato una polizza di 
 
 ## Procedura dettagliata sull&#39;applicazione di assicurazione automatica {#auto-insurance-application-walkthrough}
 
-Lo scenario dell&#39;applicazione di assicurazione automatica We.Finance è un commento visivo per l&#39;utente e si basa su due persone:
+Lo scenario dell&#39;applicazione di assicurazione automatica We.Finance è una narrazione visiva per l&#39;utente e si basa su due persone:
 
 * Sarah Rose, un cliente di We.Finance
 * Gloria Rios, agente assicurativo, We.Finance
 
 ### Gloria invia una comunicazione di rinnovo della polizza assicurativa da We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria accede all’istanza di AEM, fa clic su Rinnovo **assicurazione automatica,** quindi seleziona **Apri interfaccia utente agente.** Il clic precompila il documento assicurativo con i dettagli sulla polizza di Sarah Rose. Gloria fa clic **su Invia** e sullo schermo viene visualizzato un messaggio &quot;Invio avviato&quot;, quindi in pochi secondi &quot;Invio completato&quot;.
+Gloria accede AEM&#39;istanza, fa clic su Rinnovo **assicurazione automatica,** quindi seleziona **Apri interfaccia utente agente.** Il clic precompila il documento assicurativo con i dettagli sulla polizza di Sarah Rose. Gloria fa clic **su Invia** e sullo schermo viene visualizzato un messaggio &quot;Invio avviato&quot;, quindi in pochi secondi &quot;Invio completato&quot;.
 
 Sarah riceve un&#39;e-mail con l&#39;oggetto &quot;Il rinnovo della tua assicurazione automatica&quot;.
 
@@ -48,7 +47,7 @@ Sarah riceve un&#39;e-mail con l&#39;oggetto &quot;Il rinnovo della tua assicura
 
 #### Vedi te stesso {#see-it-yourself}
 
-Vai a **Adobe Experience Manager** > **Moduli** > **Moduli e documenti** > **We.Finance** > **Auto Insurance**. Selezionate la comunicazione **** interattiva Rinnovo assicurazione automatica e fate clic su **Apri interfaccia utente** agente. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Immettete un indirizzo e-mail valido per ricevere l&#39;e-mail con il documento del criterio allegato e fate clic su Invia.
+Vai a **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Auto Insurance**. Selezionate la comunicazione **** interattiva Rinnovo assicurazione automatica e fate clic su **Apri interfaccia utente** agente. La comunicazione interattiva si apre nell’interfaccia utente dell’agente. Immettete un indirizzo e-mail valido per ricevere l&#39;e-mail con il documento del criterio allegato e fate clic su Invia.
 
 È possibile accedere e rivedere la comunicazione interattiva Auto Insurance Renewal direttamente da `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
@@ -102,6 +101,6 @@ Quando Sarah compila i dettagli della carta di credito e fa clic su Invia, il pa
 
 #### Vedi te stesso {#see-it-yourself-3}
 
-È possibile visualizzare il messaggio di conferma dopo aver fatto clic su Paga in
+È possibile visualizzare il messaggio di conferma dopo aver fatto clic su Effettua pagamento in
 
 `https://[authorServer]:[authorPort]/content/forms/af/we-finance/credit-card/ccbillpayment/jcr:content/guideContainer.guideThankYouPage.html?owner=admin&status=Submitted`
