@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guida utente Forms di AEM 6.5
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '3719'
-ht-degree: 1%
+source-wordcount: '3704'
+ht-degree: 2%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 1%
    + [Introduzione al servizio di conversione automatica dei moduli](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
    + Esercitazione: Creare il primo modulo adattivo {#create-first-adaptive-form}
       + [Esercitazione: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
-      + [Esercitazione: Creare un modulo adattivo](using/create-adaptive-form.md)
+      + [modulo: Creare un modulo adattivo](using/create-adaptive-form.md)
       + [Esercitazione: Crea modello dati modulo](using/create-form-data-model.md)
-      + [Esercitazione: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
-      + [Esercitazione: Stile del modulo adattivo](using/style-your-adaptive-form.md)
-      + [Esercitazione: Pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
+      + [modulo: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
+      + [modulo: Stile del modulo adattivo](using/style-your-adaptive-form.md)
+      + [modulo: Pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
       + [Esercitazione: Verifica del modulo adattivo](/help/forms/using/testing-your-adaptive-form.md)
    + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
@@ -42,11 +42,8 @@ ht-degree: 1%
       + [Esercitazione: Creare i modelli](using/create-templates-print-web.md)
       + [Esercitazione: Creazione di comunicazioni interattive](using/create-interactive-communication0.md)
    +  Materiali di riferimento AEM Forms {#aem-forms-reference-collaterals}
-      + [Configurare e configurare siti di riferimento self-service per We.Finance e Dipendenti](using/setup-reference-sites.md)
-      + [Configurare e configurare il sito di riferimento We.Gov](/help/forms/using/forms-install-configure-gov-reference-site.md)
-      + [Procedura dettagliata sul sito di riferimento We.Finance](using/finance-reference-site-walkthrough.md)
-      + [Procedura dettagliata sul sito di riferimento We.Gov](/help/forms/using/forms-gov-reference-site-user-demo.md)
-      + [Procedura dettagliata sul sito di riferimento self-service dei dipendenti](/help/forms/using/employee-self-service-reference-site.md)
+      + [Configurare e configurare il sito di riferimento We.Gov e We.Finance](/help/forms/using/forms-install-configure-gov-reference-site.md)
+      + [Procedura dettagliata sul sito di riferimento We.Gov e We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Procedura dettagliata sul sito di riferimento per le assunzioni dei dipendenti](/help/forms/using/employee-recruitment-reference-site.md)
       + [Sito di riferimento per il rinnovo automatico delle assicurazioni We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [Procedura dettagliata sul sito di riferimento We.Gov](/help/forms/using/gov-reference-site-foia-walkthrough.md)
@@ -58,7 +55,7 @@ ht-degree: 1%
    + [Topologie di architettura e implementazione per  AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Scelta di un tipo di persistenza per un&#39;installazione AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
    + Installare  AEM Forms su OSGi {#osgi-installation}
-      + [Piattaforme supportate per AEM moduli su OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
+      + [Piattaforme supportate per AEM moduli su OSGi](https://docs.adobe.com/content/help/it-IT/experience-manager-65/deploying/introduction/technical-requirements.html)
       + [Installazione e configurazione di document services](using/install-configure-document-services.md)
       + [Installare e configurare le funzionalità di acquisizione dei dati](using/installing-configuring-aem-forms-osgi.md)
       + [Installazione e configurazione del flusso di lavoro Forms-centric su OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
@@ -163,7 +160,7 @@ ht-degree: 1%
    + [Utilizzo di  Adobe Sign in un modulo adattivo](using/working-with-adobe-sign.md)
    + [Creazione e utilizzo di temi](using/themes.md)
    + [Editor di regole per moduli adattivi](using/rule-editor.md)
-   + [API per richiamare il servizio del modello dati modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
+   + [API per richiamare il servizio del modello dati del modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
    + [Invio asincrono di moduli adattivi](using/asynchronous-submissions-adaptive-forms.md)
    + [Creare un modulo adattivo utilizzando un set di moduli adattivi](using/create-adaptive-form-using-adaptive-form-set.md)
    + [Modelli di moduli adattivi](using/template-editor.md)
@@ -416,7 +413,7 @@ ht-degree: 1%
       + [Modificare l&#39;ordine di valutazione per l&#39;autenticazione](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
       + [Configurare la password per il binding LDAP](/help/forms/using/admin-help/configure-ldap-bind-password.md)
       + [Configurare AEM moduli per la preacquisizione delle informazioni sul dominio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
-      + [Configurazione dell&#39;autenticazione basata sui certificati](/help/forms/using/admin-help/configuring-certificate-based-authentication.md)
+      + [Configurazione dell&#39;autenticazione basata su certificato](/help/forms/using/admin-help/configuring-certificate-based-authentication.md)
       + [Configurare le impostazioni del provider di servizi SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md)
       + [Abilitazione del single sign-on nei moduli AEM](/help/forms/using/admin-help/enabling-single-sign-on-aem.md)
       + [Configurare la gestione utente per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md)
@@ -459,7 +456,7 @@ ht-degree: 1%
       + [Tipi di certificato utilizzati dalle estensioni Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Riconoscimento di certificati validi e scaduti nei documenti PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configurazione delle estensioni Acrobat Reader DC per l&#39;acquisizione dei dati](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-      + [Rivedere le informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
+      + [Verifica delle informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
       + [Configurazione delle credenziali per l&#39;uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
       + [Verificare i diritti di utilizzo di un file PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Abilitazione dei commenti online per  plug-in browser Web Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
@@ -474,7 +471,7 @@ ht-degree: 1%
       + [Abilita supporto PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configurazione di una stampante di rete PDFG (solo Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configurazione dei font di fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
-      + [Modifica delle impostazioni di conversione PDF Export](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
+      + [Modifica delle impostazioni di conversione di esportazione PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Conversione di file tramite PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
    + Configurazione di SSL {#configure-ssl}
       + [Panoramica sulla configurazione di SSL](/help/forms/using/admin-help/overview-6.md)
