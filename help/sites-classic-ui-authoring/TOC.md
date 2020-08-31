@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guida utente per l’authoring con l’interfaccia classica di AEM 6.5
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '257'
 ht-degree: 89%
 
 ---
@@ -61,10 +61,8 @@ ht-degree: 89%
 + Personalizzazione {#personalization}
    + [Segmentazione](classic-personalization-campaigns-segmentation.md)
    + [Gestione delle campagne](classic-personalization-campaigns.md)
-   + [Teaser e strategie](classic-personalization-campaigns-teasers-strategy.md)
    + [Pagine di destinazione](classic-personalization-campaigns-landingpage.md)
    + [Offerte Target](classic-personalization-campaigns-target-offers.md)
-   + [Utilizzo di Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [E-mail marketing](classic-personalization-campaigns-email.md)
    + [Tracciamento dei messaggi e-mail non pervenuti a destinazione](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teaser e strategie](classic-personalization-campaigns-teasers-strategy.md)
