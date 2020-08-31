@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente per l’authoring in AEM 6.5
+user-guide-title: Guida utente per l'authoring di AEM 6.5
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti essenziali per l’authoring con AEM {#essentials}
++ Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
    + [Primi passi per gli autori](first-steps.md)
    + [Authoring delle pagine](page-authoring.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
@@ -42,7 +42,7 @@ ht-degree: 89%
    + [Authoring di una pagina per dispositivi mobili ](mobile.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring ](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
-   + [Best practice ](best-practices.md)
+   + [Best practice  ](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Utilizzo dei tag](tags.md)
    + [Creazione di modelli di pagina  ](templates.md)
@@ -53,7 +53,6 @@ ht-degree: 89%
    + [Layout reattivo](responsive-layout.md)
    + [Approfondimenti contenuto](content-insights.md)
    + [Creazione di contenuto accessibile (conformità WCAG 2.1)](creating-accessible-content.md)
-   + [Scaffolding](scaffolding.md)
    + [Configurazione dei componenti in modalità Progettazione](default-components-designmode.md)
    + [Componenti di base](default-components-foundation.md)
    + [Scaffolding](scaffolding.md)
