@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 5%
@@ -83,18 +83,18 @@ Le funzioni di ricerca personalizzate devono utilizzare l&#39;API [di ricerca](#
 
 #### Indicizzazione quercia {#oak-indexing}
 
-Anche se gli indici Oak non vengono creati automaticamente per la ricerca della piattaforma AEM, a partire da AEM 6.2 sono stati aggiunti per  AEM Communities per migliorare le prestazioni e fornire supporto per l&#39;impaginazione durante la presentazione dei risultati di ricerca UGC.
+Sebbene gli indici Oak non vengano creati automaticamente per la ricerca della piattaforma AEM, a partire da AEM 6.2 sono stati aggiunti per  AEM Communities per migliorare le prestazioni e fornire supporto per l’impaginazione quando si presentano i risultati di ricerca UGC.
 
-Se le proprietà personalizzate sono in uso e le ricerche sono lente, è necessario creare indici aggiuntivi per le proprietà personalizzate per renderle più performanti. Per mantenere la portabilità, attenetevi ai requisiti [di](#naming-of-custom-properties) denominazione quando create proprietà personalizzate ricercabili.
+Se le proprietà personalizzate sono in uso e le ricerche sono lente, è necessario creare ulteriori indici per rendere più efficaci le proprietà personalizzate. Per mantenere la portabilità, attenetevi ai requisiti [di](#naming-of-custom-properties) denominazione quando create proprietà personalizzate ricercabili.
 
-Per modificare gli indici esistenti o creare indici personalizzati, fare riferimento a Query [quercia e indicizzazione](../../help/sites-deploying/queries-and-indexing.md).
+Per modificare gli indici esistenti o creare indici personalizzati, fare riferimento a Query [Oak e indicizzazione](../../help/sites-deploying/queries-and-indexing.md).
 
 La [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) è disponibile da ACS AEM Commons. Fornisce:
 
 * Una visualizzazione degli indici esistenti.
 * Possibilità di avviare un reindicizzazione.
 
-Per visualizzare gli indici Oak esistenti in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), la posizione è:
+Per visualizzare gli indici Oak esistenti nel [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), la posizione è:
 
 * `/oak:index/socialLucene`
 
