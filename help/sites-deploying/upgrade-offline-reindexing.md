@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Inoltre, questo è l&#39;ordine dei passaggi descritti nell&#39;approccio:
 
 ### Estrazione testo {#text-extraction}
 
-Per abilitare l&#39;indicizzazione completa in AEM, il testo dei file binari, come il PDF, viene estratto e aggiunto all&#39;indice. In genere si tratta di un passo costoso nel processo di indicizzazione. L&#39;estrazione del testo è una fase di ottimizzazione consigliata soprattutto per reindicizzare i repository di risorse in quanto contengono un gran numero di file binari.
+Per abilitare l&#39;indicizzazione completa in AEM, il testo dei file binari come il PDF viene estratto e aggiunto all&#39;indice. In genere si tratta di un passo costoso nel processo di indicizzazione. L&#39;estrazione del testo è una fase di ottimizzazione consigliata soprattutto per reindicizzare i repository di risorse in quanto contengono un gran numero di file binari.
 
 ![offline-reindexing-upgrade-text-estrazione](assets/offline-reindexing-upgrade-text-extraction.png)
 
@@ -117,7 +117,7 @@ Per eliminare la definizione dell&#39;indice dall&#39;istanza di AEM **di origin
 java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index-definitions
 ```
 
-Posizione `datastore path` e `nodestore path` dell’istanza di AEM **origine** .
+Posizione `datastore path` e `nodestore path` dell&#39;istanza di AEM **origine** .
 
 Quindi, generate le definizioni di indice dalla versione di **destinazione** AEM utilizzando il bundle del repository Granite della versione di destinazione.
 
@@ -174,7 +174,7 @@ Di seguito sono riportati alcuni utili suggerimenti e istruzioni per la risoluzi
 
 ### Ridurre l&#39;impatto sul sistema di produzione live {#reduce-the-impact-on-the-live-production-system}
 
-Si consiglia di duplicare il sistema di produzione e creare l&#39;indice offline utilizzando il clone. Ciò elimina ogni potenziale impatto sul sistema di produzione. Tuttavia, il checkpoint richiesto per l&#39;importazione dell&#39;indice deve essere presente nel sistema di produzione. Pertanto, è fondamentale creare un punto di controllo prima di eseguire il clone.
+Si consiglia di duplicare il sistema di produzione e creare l&#39;indice offline utilizzando il clone. Questo elimina ogni potenziale impatto sul sistema di produzione. Tuttavia, il checkpoint richiesto per l&#39;importazione dell&#39;indice deve essere presente nel sistema di produzione. Pertanto, è fondamentale creare un punto di controllo prima di eseguire il clone.
 
 ### Preparare un Runbook e un&#39;esecuzione di prova {#prepare-a-runbook-and-trial-run}
 
