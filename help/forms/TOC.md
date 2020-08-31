@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guida utente Forms di AEM 6.5
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '3704'
+source-wordcount: '3700'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 2%
       + [Esercitazione: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
       + [modulo: Creare un modulo adattivo](using/create-adaptive-form.md)
       + [Esercitazione: Crea modello dati modulo](using/create-form-data-model.md)
-      + [modulo: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
-      + [modulo: Stile del modulo adattivo](using/style-your-adaptive-form.md)
-      + [modulo: Pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
+      + [Esercitazione: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
+      + [Esercitazione: Stile del modulo adattivo](using/style-your-adaptive-form.md)
+      + [Esercitazione: Pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
       + [Esercitazione: Verifica del modulo adattivo](/help/forms/using/testing-your-adaptive-form.md)
    + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
@@ -501,17 +501,16 @@ ht-degree: 2%
       + [Configurazione dei messaggi di convalida](/help/forms/using/admin-help/configuring-validation-messages.md)
    + Configurazione dell&#39;output {#configure-output}
       + [Panoramica del servizio di output](/help/forms/using/admin-help/overview-8.md)
-      + [Modificare il set di caratteri](/help/forms/using/admin-help/change-character-set.md)
       + [Specificare le opzioni di configurazione XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Configurazione della memorizzazione nella cache per Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Specificare i percorsi dei file per Output](/help/forms/using/admin-help/specify-file-locations-output.md)
       + [Font disponibili](/help/forms/using/admin-help/make-fonts-available.md)
       + [Specificare i font da incorporare](/help/forms/using/admin-help/specify-fonts-embed.md)
-      + [Specificare le impostazioni di protezione](/help/forms/using/admin-help/specify-security-settings.md)
+      + [Configurazione delle impostazioni di protezione](/help/forms/using/admin-help/specify-security-settings.md)
       + [Modificare il set di caratteri](/help/forms/using/admin-help/change-character-set.md)
    + Configurazione del flusso di lavoro dei moduli{#configure-forms-workflow}
       + [Informazioni sull&#39;amministrazione e la terminologia del processo](/help/forms/using/admin-help/administration-process-terminology.md)
-      + [Gestione dei processi](/help/forms/using/admin-help/processes.md)
+      + [Configurazione dei processi](/help/forms/using/admin-help/processes.md)
       + [Configurazione dei calendari aziendali](/help/forms/using/admin-help/configuring-business-calendars.md)
       + [Panoramica del flusso di lavoro Forms](/help/forms/using/admin-help/overview-9.md)
       + [Configurazione delle impostazioni Fuori sede](/help/forms/using/admin-help/configuring-out-office-settings.md)
