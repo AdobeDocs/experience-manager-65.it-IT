@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6da27dfda2bb504fc7a1de24260e94141f1a22ab
+source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
 workflow-type: tm+mt
 source-wordcount: '4407'
 ht-degree: 6%
@@ -154,7 +154,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
    *Figura:[!UICONTROL Cerca Aiuto]nel menu[!UICONTROL Aiuto]*
 
-   * il messaggio di errore se nel campo [!ICONTROL Impersona come] è stato immesso un valore non corretto nell&#39;opzione [!UICONTROL Utente] e lo stato attivo si sposta correttamente nel campo di testo (NPR-33804).
+   * il messaggio di errore se nel campo [!UICONTROL Impersona come] è stato immesso un valore non corretto nell&#39;opzione [!UICONTROL Utente] e lo stato attivo si sposta correttamente nel campo di testo (NPR-33804).
 
    ![Menu utente nell’intestazione](assets/User_aem_header.png)
 
