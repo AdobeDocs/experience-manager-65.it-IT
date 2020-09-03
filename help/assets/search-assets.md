@@ -4,9 +4,9 @@ description: Scoprite come trovare le risorse necessarie [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5bbdc80f199a2af38631a5443c46daae827abb52
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '5858'
+source-wordcount: '5878'
 ht-degree: 5%
 
 ---
@@ -354,6 +354,10 @@ La ricerca visiva utilizza i tag avanzati e richiede [!DNL Experience Manager] 6
 1. (Facoltativo) Se si dispone di un modulo di ricerca personalizzato, copiare il `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salva le modifiche.
 
 Per ulteriori informazioni, vedere [Informazioni sugli smart tag nel  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) e [come gestire gli smart tag](/help/assets/managing-smart-tags.md).
+
+>[!CAUTION]
+>
+>Se l&#39;indicizzazione Lucene viene eseguita [!DNL Adobe Experience Manager], la ricerca basata sugli smart tag non funziona come previsto.
 
 ### Metadati obbligatori {#mandatorymetadata}
 
