@@ -3,9 +3,9 @@ title: Gestione di smart tag e ricerche
 description: Aggiornare o rimuovere gli smart tag non accurati per migliorare la pertinenza dei tag
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza r
 
 ## Comprendere i risultati [!DNL Experience Manager] di ricerca con gli smart tag {#understandsearch}
 
-Per impostazione predefinita, [!DNL Experience Manager] la ricerca combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con tag `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, [!DNL Experience Manager] la ricerca combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
 
 * risorse con `woman` e `running` parole chiave nei metadati.
 
@@ -44,3 +44,7 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 1. corrispondenze di `woman running` nei vari campi di metadati.
 1. corrispondenze di `woman running` in smart tag.
 1. corrispondenze di `woman` o di `running` in smart tag.
+
+>[!CAUTION]
+>
+>Se l&#39;indicizzazione Lucene viene effettuata [!DNL Adobe Experience Manager] quindi la ricerca basata sugli smart tag non funziona come previsto.
