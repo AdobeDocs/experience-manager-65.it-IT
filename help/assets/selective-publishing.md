@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6e7368663d18dd0b5b46be9e292dba17577acf70
+source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 2%
@@ -202,6 +202,7 @@ Facoltativamente, potete utilizzare queste caselle di controllo insieme al predi
    | Pubblica in Dynamic Media | Pubblicazione selettiva | Pubblicato solo su Contenuti multimediali dinamici. |
    | Annulla pubblicazione da Dynamic Media | Immediatamente o al momento dell&#39;attivazione | Non viene annullata la pubblicazione da AEM, Contenuti multimediali dinamici o entrambi. |
    | Annulla pubblicazione da Dynamic Media | Pubblicazione selettiva | Non pubblicato solo da Contenuti multimediali dinamici. |
+
 1. In **[!UICONTROL Schedule (Pianificazione]**), impostate il tempo di disattivazione.
 | Pianificazione selezionata | Cosa succede |
 | — | — |
