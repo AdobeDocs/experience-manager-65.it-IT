@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
 workflow-type: tm+mt
-source-wordcount: '5778'
+source-wordcount: '5944'
 ht-degree: 7%
 
 ---
@@ -71,17 +71,17 @@ Il Feature Pack 18912 consente di caricare le risorse in blocco tramite FTP, opp
 
 Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per la migrazione](/help/assets/bulk-ingest-migrate.md) in massa delle risorse.
 
-## Creazione di una configurazione per contenuti multimediali dinamici {#configuring-dynamic-media-cloud-services}
+## Creazione di una configurazione per contenuti multimediali dinamici in Cloud Services {#configuring-dynamic-media-cloud-services}
 
 **Prima di configurare gli elementi multimediali** dinamici: Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per gli elementi multimediali dinamici, dovete [accedere](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il Cloud Service di contenuti multimediali dinamici sia configurato con le credenziali corrette.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Per creare una configurazione per contenuti multimediali dinamici**
+**Per creare una configurazione per contenuti multimediali dinamici negli Cloud Services**
 
-1. In AEM, toccate il logo AEM per accedere alla console di navigazione globale e toccate o fate clic sull&#39;icona Strumenti, quindi toccate **[!UICONTROL Cloud Services > Configurazione elemento multimediale dinamico.]**
+1. In AEM, toccate il logo AEM per accedere alla console di navigazione globale e toccate l’icona Strumenti, quindi toccate **[!UICONTROL Cloud Services > Configurazione elemento multimediale dinamico.]**
 1. Nella pagina del Browser configurazioni Dynamic Media, seleziona il riquadro a sinistra e tocca **[!UICONTROL global (globale)]** (non toccare o selezionare l’icona della cartella a sinistra di **[!UICONTROL global]**), quindi tocca **[!UICONTROL Crea.]**
-1. Nella pagina Crea configurazione elemento multimediale dinamico, immetti un titolo, l’indirizzo e-mail dell’account elemento multimediale dinamico, la password, quindi seleziona la tua area geografica. Questi vengono forniti  Adobe nel messaggio e-mail di provisioning. Se non avete ricevuto questa richiesta, contattate l&#39;assistenza.
+1. Nella pagina **[!UICONTROL Crea configurazione]** elemento multimediale dinamico, immetti un titolo, l’indirizzo e-mail dell’account elemento multimediale dinamico, la password, quindi seleziona la tua area geografica. Questi vengono forniti  Adobe nel messaggio e-mail di provisioning. Se non avete ricevuto questa richiesta, contattate l&#39;assistenza.
 
    Click **[!UICONTROL Connect to Dynamic Media.]**
 
@@ -89,7 +89,7 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
    >
    >Dopo aver ricevuto il messaggio e-mail di provisioning con le credenziali per i contenuti multimediali dinamici, [accedete](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) a Dynamic Media Classic per cambiare la password. La password fornita nel messaggio e-mail di provisioning è generata dal sistema e deve essere solo una password temporanea. È importante aggiornare la password in modo che il servizio Dynamic Media Cloud sia configurato con le credenziali corrette.
 
-1. Quando la connessione ha esito positivo, potete anche impostare quanto segue:
+1. Quando la connessione ha esito positivo, impostate quanto segue. Le intestazioni con un asterisco (*) sono obbligatorie:
 
    * **[!UICONTROL Company]** - il nome dell&#39;account Dynamic Media. È possibile che si disponga di più account Dynamic Media per diversi marchi secondari, divisioni o diversi ambienti di produzione/staging.
 
@@ -98,6 +98,7 @@ Per ulteriori informazioni, consulta [Installazione del feature pack 18912 per l
    * **[!UICONTROL Pubblicazione delle risorse]** - Potete scegliere tra le tre opzioni seguenti:
       * **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le raccoglie e fornisce l’URL/Incorpora immediatamente. Non è necessario alcun intervento da parte degli utenti per pubblicare le risorse.
       * **[!UICONTROL Al momento dell’attivazione]** , è necessario pubblicare la risorsa in modo esplicito prima di fornire un collegamento URL/Incorpora.
+      * **[!UICONTROL Pubblicazione]** selettiva Questa opzione consente di controllare le cartelle pubblicate in Contenuti multimediali dinamici, in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche oppure, quali cartelle vengono pubblicate esclusivamente in AEM per la visualizzazione dell’anteprima; la stessa risorsa *non* viene pubblicata in Contenuti multimediali dinamici per la distribuzione nel dominio pubblico.<br>Potete impostare questa opzione in Configurazione **** Dynamic Media Cloud oppure, se preferite, potete scegliere di impostare questa opzione a livello di cartella, in **[!UICONTROL Proprietà]** di una cartella.<br>Consultate [Utilizzo della pubblicazione selettiva nei file multimediali dinamici.](/help/assets/selective-publishing.md)<br>Se successivamente modificate questa configurazione o la modificate a livello di cartella, tali modifiche interesseranno solo le nuove risorse che caricate da quel momento in poi. Lo stato di pubblicazione delle risorse esistenti nella cartella rimane invariato finché non le modificate manualmente dalla finestra di dialogo Pubblicazione **** rapida o **[!UICONTROL Gestisci pubblicazione]** .
    * **[!UICONTROL Server]** di anteprima protetto: consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM accedere e visualizzare in modo sicuro le rappresentazioni per contenuti multimediali dinamici remoti (nessun file binario viene inviato nuovamente all’istanza AEM).
 A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale,  Adobe Systems consiglia di lasciare questa impostazione come specificato.
 
@@ -106,7 +107,7 @@ A meno che non disponiate di una disposizione speciale per utilizzare il server 
    * **[!UICONTROL Modalità di sincronizzazione elementi Dynamic Media]**
       * **[!UICONTROL Abilitata per impostazione predefinita]** : la configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non venga contrassegnata una cartella specifica per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabilitata per impostazione predefinita]** : la configurazione non viene applicata ad alcuna cartella finché non si contrassegna in modo esplicito una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici.
-Per contrassegnare una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici, selezionate una cartella di risorse, quindi fate clic su **[!UICONTROL Proprietà sulla barra degli strumenti.]** Nella scheda **[!UICONTROL Dettagli]** , nell’elenco a discesa Modalità **[!UICONTROL sincronizzazione file multimediali]** dinamici, scegliete una delle tre opzioni seguenti. Al termine, toccate **[!UICONTROL Salva.]** *Ricorda: queste tre opzioni non sono disponibili se avete selezionato **Sincronizza tutto il contenuto**in precedenza.*
+Per contrassegnare una cartella selezionata per la sincronizzazione con gli elementi multimediali dinamici, selezionate una cartella di risorse, quindi fate clic su **[!UICONTROL Proprietà sulla barra degli strumenti.]** Nella scheda **[!UICONTROL Dettagli]** , nell’elenco a discesa Modalità **[!UICONTROL sincronizzazione file multimediali]** dinamici, scegliete una delle tre opzioni seguenti. Al termine, toccate **[!UICONTROL Salva.]** *Ricorda: queste tre opzioni non sono disponibili se avete selezionato **Sincronizza tutto il contenuto**in precedenza.* Consultate anche [Utilizzo della pubblicazione selettiva a livello di cartella in Contenuti multimediali dinamici.](/help/assets/selective-publishing.md)
          * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito sulla cartella; invece, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per le presentazioni ereditate viene visualizzato tramite una descrizione comandi.
          * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto ciò che si trova in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono la modalità predefinita nella configurazione cloud.
          * **[!UICONTROL Disattivato per le sottocartelle]** - Escludete tutti gli elementi di questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici.
