@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
+source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 4%
@@ -114,6 +114,7 @@ Consultate [Creazione di una configurazione](#configuring-dynamic-media-cloud-se
 
 1. Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione]** , toccate **[!UICONTROL Avanti.]**
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , effettuate una delle seguenti operazioni:
+
    * Se necessario, selezionate una o più risorse da rimuovere dalla pubblicazione.
    * Nell’angolo in alto a destra della pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , tocca **[!UICONTROL Pubblica]** o **[!UICONTROL Pubblica su file multimediali dinamici.]**
 1. Toccate **[!UICONTROL OK.]**
