@@ -1,8 +1,8 @@
 ---
 title: Best practice per i modelli e-mail
 seo-title: Best practice per i modelli e-mail
-description: Best practice per la creazione di modelli di e-mail in AEM.
-seo-description: Best practice per la creazione di modelli di e-mail in AEM.
+description: Best practice per la creazione di modelli per le e-mail in AEM.
+seo-description: Best practice per la creazione di modelli per le e-mail in AEM.
 uuid: 07417a63-7ca6-484c-b55d-57b319428329
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
+source-git-commit: 7e05502b590fb2c7c36919f94611efe999262d32
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 >[!CAUTION]
 >
->I componenti e-mail di AEM non sono più disponibili. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti out-of-the-box da AEM diventano un utilizzo limitato per i clienti, a causa della necessità di implementare stili personalizzati in qualsiasi componente sia necessario per i progetti.
+>I componenti e-mail AEM sono obsoleti. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti out-of-the-box AEM diventano un riutilizzo limitato per i clienti, a causa della necessità di implementare stili personalizzati in qualsiasi componente sia necessario per i progetti.
 >
 >I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ottenere questo risultato. Tuttavia, questi componenti obsoleti non devono essere utilizzati per i progetti.
 
 Questo documento descrive alcune delle procedure ottimali per la progettazione delle e-mail e fornisce un modello di campagna e-mail ben sviluppato.
 
-La campagna dimostrativa disponibile in AEM segue tutte queste best practice. Per ogni best practice viene descritto in che modo vengono implementate le best practice nella campagna demo.
+La campagna demo disponibile in AEM segue tutte queste best practice. Per ogni best practice viene descritto in che modo vengono implementate le best practice nella campagna demo.
 
 Utilizzate queste best practice per la creazione di newsletter.
 
@@ -44,7 +47,7 @@ Utilizzate queste best practice per la creazione di newsletter.
 
 >[!NOTE]
 >
->Quando crei un modello di posta elettronica per Adobe Campaign, devi includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello, oppure non sarai in grado di selezionare il modello Adobe Campaign in Proprietà **** pagina di AEM (il campo è disabilitato).
+>Quando si crea un modello di posta per  Adobe Campaign, è necessario includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello, oppure non sarà possibile selezionare il modello di Adobe Campaign  in Proprietà **** pagina di AEM (campo disabilitato).
 
 ## Modello/componente pagina {#template-page-component}
 
@@ -127,13 +130,13 @@ Utilizzate queste best practice per la creazione di newsletter.
 
 | **Best practice** | **Implementazione** |
 |---|---|
-| Utilizzate la funzione di convalida W3C per correggere il codice HTML. Accertatevi che tutti i tag aperti siano chiusi correttamente. | Il codice è stato convalidato. Per XHTML Transitional Doctype solo l&#39;attributo xmlns mancante per <html> elemento mancante. |
-| Non preoccupatevi di JavaScript o Flash; tali tecnologie non sono in gran parte supportate dai client e-mail. | Nel modello per newsletter non vengono utilizzati JavaScript né Flash. |
+| Utilizzate la funzione di convalida W3C per correggere il codice HTML. Accertatevi che tutti i tag aperti siano chiusi correttamente. | Il codice è stato convalidato. Per XHTML Transitional Doctype manca solo l&#39;attributo xmlns mancante per l&#39; `<html>` elemento. |
+| Non preoccupatevi di JavaScript o di Flash; tali tecnologie non sono in gran parte supportate dai client e-mail. | Né JavaScript né Flash vengono utilizzati nel modello per newsletter. |
 | Aggiungete una versione di testo normale per l’invio multiparte. | Un nuovo widget è stato creato nelle proprietà della pagina per estrarre facilmente una versione in testo normale dal contenuto della pagina. Può essere utilizzato come punto di partenza per la versione normale finale. |
 
 ## Modelli ed esempi per newsletter per campagne {#campaign-newsletter-templates-and-examples}
 
-Con AEM sono disponibili diversi modelli e componenti per la creazione di newsletter per le campagne. Potete usare questi modelli e componenti per creare newsletter personalizzate.
+AEM con diversi modelli e componenti per la creazione di newsletter per le campagne. Potete usare questi modelli e componenti per creare newsletter personalizzate.
 
 ### Modelli {#templates}
 
@@ -145,7 +148,7 @@ Tutti hanno un&#39; **intestazione**, un **piè di pagina** e una sezione **corp
 
 ### Componenti {#components}
 
-Al momento sono disponibili [sette componenti da utilizzare nei modelli](/help/sites-authoring/adobe-campaign-components.md)delle campagne. Tutti questi componenti sono basati sul linguaggio di marcatura Adobe **HTL**.
+Al momento sono disponibili [sette componenti da utilizzare nei modelli](/help/sites-authoring/adobe-campaign-components.md)delle campagne. Tutti questi componenti sono basati sul linguaggio  di marcatura Adobe **HTL**.
 
 | **Nome componente** | **Percorso componente** |
 |---|---|
@@ -161,4 +164,4 @@ Al momento sono disponibili [sette componenti da utilizzare nei modelli](/help/s
 >
 >Questi componenti sono ottimizzati per il contenuto della posta; in altre parole, aderiscono alle best practice illustrate nel presente documento. L&#39;utilizzo di altri componenti forniti di solito viola tali regole.
 
-Questi componenti sono descritti dettagliatamente nei componenti [di](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign.
+Questi componenti sono descritti in dettaglio in [componenti](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign.
