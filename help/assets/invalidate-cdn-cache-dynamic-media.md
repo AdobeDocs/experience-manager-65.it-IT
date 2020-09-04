@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 6a44c4ac11f2fdf794895c28468c2a600a09b3c0
+source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Le risorse per contenuti multimediali dinamici sono memorizzate nella cache dall
 
 >[!IMPORTANT]
 >
->I passaggi seguenti si applicano solo alla modalità Dynamic Media - Scene7 in AEM 6.5, Service Pack 6 (AEM 6.5.6) o versioni successive. Questa funzione di annullamento della validità CDN richiede anche l’utilizzo del CDN out-of-the-box fornito con AEM oggetto multimediale dinamico; qualsiasi altra CDN personalizzata non è supportata.<br>Se utilizzate Dynamic Media in AEM 6.5, Service Pack 5 (AEM 6.5.5) o versioni precedenti, seguite i passaggi descritti in [Invalidare la cache CDN tramite Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>I passaggi seguenti si applicano solo alla modalità Dynamic Media - Scene7 in AEM 6.5, Service Pack 6 (AEM 6.5.6) o versioni successive. Questa funzione di annullamento della validità CDN richiede anche l’utilizzo del CDN out-of-the-box fornito con AEM oggetto multimediale dinamico; qualsiasi altra CDN personalizzata non è supportata.<br>Se utilizzate Contenuti multimediali dinamici in AEM 6.5, Service Pack 5 (AEM 6.5.5) o versioni precedenti, attenetevi alla procedura descritta in [Invalidazione della cache CDN tramite Dynamic Media Classic.](/help/assets/invalidate-cdn-cache-dm-classic.md)
 
 Consultate anche Panoramica sulla [memorizzazione nella cache dei file multimediali](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)dinamici.
 
