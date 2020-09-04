@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
+source-git-commit: 5e5108b943907e5286298552c724d2b33873503f
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -50,11 +50,12 @@ Dopo aver configurato la pubblicazione selettiva in una cartella, potete effettu
    * Modificate le proprietà di una nuova cartella: in visualizzazione **[!UICONTROL a]** schede, a **[!UICONTROL colonne]** o a **[!UICONTROL elenco]**, toccate **[!UICONTROL Crea > Cartella accanto all’angolo superiore destro della pagina.]** Nella finestra di dialogo **[!UICONTROL Crea cartella]** , immettete un titolo (obbligatorio) per la cartella, quindi toccate **[!UICONTROL Crea.]** Selezionate la cartella, quindi toccate **[!UICONTROL Proprietà sulla barra degli strumenti.]**
 
 1. Nell’elenco a discesa Modalità **** sincronizzazione, selezionate una delle seguenti opzioni:
-| Modalità di sincronizzazione | Descrizione |
-| — | — |
-| **[!UICONTROL Ereditato]** | Nessun valore di sincronizzazione esplicito nella cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita impostata in Configurazione **[!UICONTROL file multimediali]** dinamici. Lo stato dettagliato per le **[!UICONTROL presentazioni]** ereditate viene visualizzato tramite una descrizione comandi. |
-| **[!UICONTROL Sincronizzare tutto ciò che si trova nella struttura ad albero della cartella con i supporti dinamici]** | Per la corretta pubblicazione su file multimediali dinamici, le risorse devono essere sincronizzate su file multimediali dinamici. Selezionando questa opzione verranno incluse tutte le risorse presenti in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono l’impostazione predefinita in Configurazione **[!UICONTROL elemento multimediale]**dinamico. |
-| **[!UICONTROL Escludere tutto ciò che si trova nella sottostruttura della cartella dalla sincronizzazione di contenuti multimediali dinamici]** | Escludere tutte le risorse presenti in questa sottostruttura dalla sincronizzazione agli elementi multimediali dinamici. |
+
+   | Modalità di sincronizzazione | Descrizione |
+   | --- | --- |
+   | **[!UICONTROL Ereditato]** | Nessun valore di sincronizzazione esplicito sulla cartella; al contrario, la cartella eredita il valore di sincronizzazione da una delle cartelle antenate o dalla modalità predefinita impostata in Configurazione **[!UICONTROL file multimediali]** dinamici. Lo stato dettagliato per le **[!UICONTROL presentazioni]** ereditate viene visualizzato tramite una descrizione comandi. |
+   | **[!UICONTROL Sincronizza tutto il contenuto di questo sottoalbero di cartelle in Dynamic Media]** | Affinché la pubblicazione possa essere eseguita correttamente, le risorse devono essere sincronizzate su elementi multimediali dinamici. Selezionando questa opzione verranno incluse tutte le risorse presenti in questo sottoalbero per la sincronizzazione con gli elementi multimediali dinamici. Le impostazioni specifiche per la cartella sostituiscono l’impostazione predefinita in Configurazione **[!UICONTROL elemento multimediale]** dinamico. |
+   | **[!UICONTROL Escludere tutto ciò che si trova nella sottostruttura della cartella dalla sincronizzazione di contenuti multimediali dinamici]** | Escludete tutte le risorse in questo sottoalbero dalla sincronizzazione a Contenuti multimediali dinamici. |
 
    ![Pubblicazione selettiva a livello di cartella](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
@@ -69,6 +70,7 @@ Dopo aver configurato la pubblicazione selettiva in una cartella, potete effettu
    | **[!UICONTROL Immediatamente]** | Quando le risorse vengono caricate in questa cartella, il sistema le assimila in AEM e fornisce l’URL/Incorpora immediatamente. Questa opzione è legata solo AEM pubblicazione e non è necessario alcun intervento da parte dell’utente per pubblicare le risorse.<br>Questa opzione *non* è disponibile se avete selezionato **[!UICONTROL Escludi tutto nella sottostruttura della cartella dalla sincronizzazione]** dei supporti dinamici in modalità **** Sinc nel passaggio precedente. |
    | **[!UICONTROL All&#39;attivazione]** | Quando le risorse vengono caricate in questa cartella, è necessario pubblicare esplicitamente la risorsa prima di fornire un collegamento URL/Incorpora. Questa opzione è legata solo AEM pubblicazione.<br>Questa opzione *non* è disponibile se avete selezionato **[!UICONTROL Escludi tutto nella sottostruttura della cartella dalla sincronizzazione]** dei supporti dinamici in modalità **** Sinc nel passaggio precedente. |
    | **[!UICONTROL Pubblicazione selettiva]** | Le risorse vengono pubblicate a scelta dell’AEM o su contenuti multimediali dinamici per la distribuzione nel dominio pubblico. Entrambi i metodi di pubblicazione si escludono a vicenda.  In altre parole, potete pubblicare le risorse su DMS7 in modo da poter utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche. Oppure potete pubblicare le risorse esclusivamente per AEM per un’anteprima protetta; le stesse risorse *non* vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico. Questa opzione non è disponibile se nel passaggio precedente avete selezionato **[!UICONTROL Escludi tutto ciò che si trova nella sottostruttura della cartella dalla sincronizzazione]** dei supporti dinamici in modalità **** sincronizzazione. |
+
 1. Nell’angolo superiore destro della pagina, toccate **[!UICONTROL Salva e chiudi]**, quindi toccate **[!UICONTROL OK]** per tornare  AEM Assets.
 
 ## Pubblicare in modo selettivo le risorse su file multimediali dinamici o AEM tramite Gestisci pubblicazione{#selective-publish-manage-publication}
@@ -97,15 +99,19 @@ Consultate [Creazione di una configurazione](#configuring-dynamic-media-cloud-se
       >Se **[!UICONTROL Gestisci pubblicazione]** non è visibile sulla barra degli strumenti, toccate il pulsante con i puntini di sospensione, quindi selezionate **[!UICONTROL Gestisci pubblicazione]** dal menu a discesa.
 
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]** , in **[!UICONTROL Azione]**, selezionate il tipo di attivazione desiderata.
-| Azione | Descrizione |
-| — | — |
-| **[!UICONTROL Pubblica]** (su AEM) | Selezionate questa opzione per pubblicare le risorse da AEM per l’anteprima protetta. |
-| **[!UICONTROL Pubblica su file multimediali dinamici]** | Selezionate questa opzione per pubblicare le risorse su file multimediali dinamici per la distribuzione nel pubblico dominio. Potete quindi utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche.<br>Questa opzione è disponibile solo se la modalità **[!UICONTROL Pubblicazione file multimediali]** dinamici è impostata su Pubblicazione **** selettiva nelle proprietà della cartella. |
+
+   | Azione | Descrizione |
+   | --- | --- |
+   | **[!UICONTROL Pubblica]** (su AEM) | Selezionate questa opzione per pubblicare le risorse da AEM per l&#39;anteprima protetta. |
+   | **[!UICONTROL Pubblica in Dynamic Media]** | Selezionate questa opzione per pubblicare le risorse su file multimediali dinamici per la distribuzione nel pubblico dominio o per utilizzare funzioni quali SmartCrop o rappresentazioni dinamiche.<br>Questa opzione è disponibile solo se la modalità **[!UICONTROL Pubblicazione file multimediali]** dinamici è impostata su Pubblicazione **** selettiva nelle proprietà della cartella. |
+
 1. In **[!UICONTROL Pianificazione]**, impostate la tempistica della pubblicazione.
-| Pianificazione | Descrizione |
-| — | — |
-| **[!UICONTROL Ora]** | Selezionate questa opzione per pubblicare immediatamente le risorse. |
-| **[!UICONTROL Più Tardi]** | Selezionate questa opzione per pubblicare le risorse in una data e in un’ora specifiche. |
+
+   | Pianificazione | Descrizione |
+   | --- | --- |
+   | **[!UICONTROL Ora]** | Selezionate questa opzione per pubblicare immediatamente le risorse. |
+   | **[!UICONTROL Più tardi]** | Selezionate questa opzione per pubblicare le risorse in una data e in un’ora specifiche. |
+
 1. Nell&#39;angolo superiore destro della pagina **[!UICONTROL Gestisci pubblicazione]** , tocca **[!UICONTROL Avanti]**.
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , effettuate una delle seguenti operazioni:
    * Se necessario, selezionate una o più risorse da rimuovere dalla pubblicazione.
@@ -124,15 +130,19 @@ Consultate [Creazione di una configurazione](#configuring-dynamic-media-cloud-se
       >Se **[!UICONTROL Gestisci pubblicazione]** non è visibile sulla barra degli strumenti, toccate il pulsante con i puntini di sospensione, quindi selezionate **[!UICONTROL Gestisci pubblicazione]** dal menu a discesa.
 
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]** , in **[!UICONTROL Azione]**, selezionate il tipo di disattivazione desiderata.
-| Azione | Descrizione |
-| — | — |
-| **[!UICONTROL Annulla pubblicazione]** (da AEM) | Selezionate questa opzione per annullare la pubblicazione delle risorse da AEM. |
-| **[!UICONTROL Annulla pubblicazione da elementi multimediali dinamici]** | Selezionate questa opzione per annullare la pubblicazione delle risorse da Contenuti multimediali dinamici.<br>Questa opzione è disponibile solo se la modalità **[!UICONTROL Pubblicazione file multimediali]** dinamici è impostata su Pubblicazione **** selettiva nelle proprietà della cartella.  |
+
+   | Azione | Descrizione |
+   | --- | --- |
+   | **[!UICONTROL Annulla pubblicazione]** (da AEM) | Selezionate questa opzione per annullare la pubblicazione delle risorse da AEM. |
+   | **[!UICONTROL Annulla pubblicazione da Dynamic Media]** | Selezionate questa opzione per annullare la pubblicazione delle risorse da Contenuti multimediali dinamici.<br>Questa opzione è disponibile solo se la modalità **[!UICONTROL Pubblicazione file multimediali]** dinamici è impostata su Pubblicazione **** selettiva nelle proprietà della cartella. |
+
 1. In **[!UICONTROL Schedule (Pianificazione]**), impostate il tempo di disattivazione.
-| Pianificazione | Descrizione |
-| — | — |
-| **[!UICONTROL Ora]** | Selezionate questa opzione per annullare la pubblicazione immediata delle risorse. |
-| **[!UICONTROL Più Tardi]** | Selezionate questa opzione per annullare la pubblicazione delle risorse in una data e in un’ora specifiche. |
+
+   | Pianificazione | Descrizione |
+   | --- | --- |
+   | **[!UICONTROL Ora]** | Selezionate questa opzione per annullare immediatamente la pubblicazione delle risorse. |
+   | **[!UICONTROL Più tardi]** | Selezionate questa opzione per annullare la pubblicazione delle risorse in una data e in un’ora specifiche. |
+
 1. Nell&#39;angolo superiore destro della pagina **[!UICONTROL Gestisci pubblicazione]** , tocca **[!UICONTROL Avanti]**.
 1. Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** , effettuate una delle seguenti operazioni:
    * Selezionate una o più risorse da rimuovere dall’annullamento della pubblicazione.
@@ -159,12 +169,15 @@ Potete usare Pubblicazione **** rapida per casi di attivazione semplici delle ri
       >Se **[!UICONTROL Pubblicazione]** rapida non viene visualizzata sulla barra degli strumenti, toccate il pulsante con i puntini di sospensione, quindi selezionate Pubblicazione **** rapida dal menu a discesa.
 
       ![Pubblicazione rapida a livello di cartella su file multimediali dinamici](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+
 1. Selezionate una delle seguenti opzioni dall’elenco del menu Pubblicazione **** rapida.
-| Opzione Pubblicazione rapida | Cosa fa |
-| — | — |
-| Pubblica su AEM | Pubblica immediatamente le risorse selezionate da AEM. |
-| Pubblica su Brand Portal | Pubblica immediatamente le risorse selezionate in **[!UICONTROL Brand Portal]**.<br>Questa opzione è disponibile solo se ’istanza di AEM Assets è già configurato **[!UICONTROL Brand Portal]** . |
-| Pubblica su file multimediali dinamici | Pubblica immediatamente le risorse selezionate in Contenuti multimediali dinamici.<br>Una risorsa deve essere già sincronizzata con un elemento multimediale dinamico. Se necessario, accertatevi che la modalità **[!UICONTROL di]** sincronizzazione nelle proprietà di una cartella sia già impostata su **[!UICONTROL Sincronizza tutto ciò che si trova nella sottostruttura della cartella con i contenuti multimediali]** dinamici. |
+
+   | Opzione Pubblicazione rapida | Azioni |
+   | --- | --- | 
+   | Pubblica in AEM | Pubblica immediatamente le risorse selezionate da AEM. |
+   | Pubblica su Brand Portal | Pubblica immediatamente le risorse selezionate in **[!UICONTROL Brand Portal]**.<br>Questa opzione è disponibile solo se ’istanza di AEM Assets è già configurato **[!UICONTROL Brand Portal]** . |
+   | Pubblica in Dynamic Media | Pubblica immediatamente le risorse selezionate in Contenuti multimediali dinamici.<br>Una risorsa deve essere già sincronizzata con un elemento multimediale dinamico. Se necessario, accertatevi che la modalità **[!UICONTROL di]** sincronizzazione nelle proprietà di una cartella sia già impostata su **[!UICONTROL Sincronizza tutto ciò che si trova nella sottostruttura della cartella con i contenuti multimediali]** dinamici. |
+
 1. Toccate **[!UICONTROL OK]**, quindi **[!UICONTROL Chiudi]**.
 
 ## Pubblicare o annullare la pubblicazione selettiva delle risorse tramite i risultati della ricerca {#selective-publish-unpublish-search-results}
@@ -204,10 +217,12 @@ Facoltativamente, potete utilizzare queste caselle di controllo insieme al predi
    | Annulla pubblicazione da Dynamic Media | Pubblicazione selettiva | Non pubblicato solo da Contenuti multimediali dinamici. |
 
 1. In **[!UICONTROL Schedule (Pianificazione]**), impostate il tempo di disattivazione.
-| Pianificazione selezionata | Cosa succede |
-| — | — |
-| Ora | L&#39;azione selezionata viene eseguita immediatamente. |
-| Più tardi | L&#39;azione selezionata viene eseguita in base alla data e all&#39;ora specifiche selezionate. |
+
+   | Pianificazione selezionata | Cosa accade |
+   | --- | --- |
+   | Ora | L&#39;azione selezionata viene eseguita immediatamente. |
+   | Più tardi | L&#39;azione selezionata viene eseguita in base alla data e all&#39;ora specifiche selezionate. |
+
 1. Nell&#39;angolo superiore destro della pagina **[!UICONTROL Gestisci pubblicazione - Opzioni]** , tocca **[!UICONTROL Avanti]**.
 1. (Facoltativo) Nella pagina **[!UICONTROL Gestisci pubblicazione - Ambito]** di applicazione, controlla la colonna Destinazione **[!UICONTROL di]** pubblicazione nella tabella relativa alle risorse selezionate.
 
