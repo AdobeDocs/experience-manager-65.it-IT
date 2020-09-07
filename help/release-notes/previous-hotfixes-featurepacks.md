@@ -1,11 +1,11 @@
 ---
-title: Note sulla versione di Adobe Experience Manager 6.5 Service Pack precedente
-description: Note sulla versione specifiche di Adobe Experience Manager 6.5 Service Pack 3 e versioni precedenti.
+title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack precedente.'
+description: Note sulla versione per [!DNL Adobe Experience Manager] i Service Pack 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: a842da57a155f56ad3efc268610c167fe140998b
+source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
 workflow-type: tm+mt
-source-wordcount: '11431'
+source-wordcount: '11438'
 ht-degree: 26%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 26%
 
 # Hotfix e Feature Pack inclusi nei Service Pack precedenti {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
 Adobe Experience Manager 6.5.5.0 è un aggiornamento importante che include nuove funzioni, miglioramenti fondamentali richiesti dai clienti e miglioramenti a prestazioni, stabilità e sicurezza, rilasciati a partire dalla release 6.5 di **aprile 2019**. Può essere installato sulla parte superiore di Adobe Experience Manager 6.5.
 
-Alcune funzioni chiave e miglioramenti introdotti in Adobe Experience Manager 6.5.5.0 includono:
+Alcune funzioni chiave e miglioramenti introdotti in [!DNL Adobe Experience Manager] 6.5.5.0 includono:
 
-* Personalizzare i nomi delle colonne visualizzati in Adobe Experience Manager Inbox.
+* L&#39;accesso anonimo al CRXDE Lite non è consentito. Al contrario, gli utenti vengono indirizzati alla schermata di accesso. Consultate [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
+* Personalizzare i nomi delle colonne visualizzati in [!DNL Adobe Experience Manager] Posta in arrivo.
 
 * È stata migliorata l&#39;accessibilità in varie aree in  Web Content Management (WCM) di Experience Manager, come Editor pagina, Componenti di base, Editor Rich Text e l&#39;interfaccia utente Amministratore.
 
@@ -69,7 +71,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * Quando un utente copia e incolla un Contenitore di layout sulla stessa pagina, i componenti in un Contenitore di layout non vengono visualizzati (NPR-33648).
 * Il controllo dello stato del dispatcher visualizza un messaggio di `Invalid cookie header` avviso nei file di registro (NPR-33629).
 * XSS riflesso in PreferencesServlet (NPR-33438).
-* Gli utenti anonimi possono accedere alle funzioni CRX DE Lite (GRANITE-27790).
+* Gli utenti anonimi possono accedere alle funzioni CRXDE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -707,7 +709,7 @@ Remove one mention of this fix.
 
 ### Ricerca e interfaccia utente {#ui-interface-and-search}
 
-* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima che la pagina possa essere scorrevole (NPR-31286).
+* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima dello scorrimento della pagina (NPR-31286).
 
 * La casella di controllo [!UICONTROL Seleziona tutto] è nascosta nella vista a elenco dell&#39;interfaccia [!DNL Sites] utente (NPR-31614).
 
