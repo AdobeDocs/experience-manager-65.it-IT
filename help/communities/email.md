@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 097109edcf66cc06460c9d962037e49613e3405b
+source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '822'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Configurazione e-mail {#configuring-email}
 
-AEM Communities utilizza l’e-mail per:
+ AEM Communities utilizza l’e-mail per:
 
 * [Notifiche community](notifications.md)
 * [Iscrizioni community](subscriptions.md)
@@ -76,7 +76,7 @@ Ad esempio (con valori solo a scopo illustrativo):
 
    Se questa opzione è selezionata, consente la registrazione delle interazioni del server SMTP.
 
-## Configurazione e-mail AEM Communities {#aem-communities-email-configuration}
+## Configurazione e-mail AEM Communities  {#aem-communities-email-configuration}
 
 Una volta configurato il servizio [di posta](#default-mail-service-configuration) predefinito, le due istanze esistenti della configurazione `AEM Communities Email Reply Configuration` OSGi, incluse nella release, diventano operative.
 
@@ -112,7 +112,7 @@ Questa configurazione non deve essere modificata.
 
 * Verifica che **Crea post dal messaggio e-mail** di risposta sia `unchecked`.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### Configurazione per le iscrizioni {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Per le iscrizioni Community, è possibile abilitare o disabilitare la possibilit
 * Selezionate l’icona di modifica.
 * Verifica che il **nome** sia `subscriptions-email`.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL Nome]**
 
@@ -138,9 +138,10 @@ Per le iscrizioni Community, è possibile abilitare o disabilitare la possibilit
 * **[!UICONTROL Lunghezza massima oggetto]**
 
    Se l’ID tracciatore viene aggiunto all’oggetto, si tratta della lunghezza massima dell’oggetto, escluso l’ID tracciato, dopo di che verrà tagliato. Tieni presente che questo deve essere il più piccolo possibile per evitare che le informazioni ID tracciate vadano perdute. Il valore predefinito è 200.
-* **[!UICONTROL Indirizzo &quot;Da&quot; e-mail]**
 
-   *(Obbligatorio)* Indirizzo da cui verrà inviato il messaggio e-mail di notifica. Probabilmente lo stesso utente **** SMTP specificato per il servizio [di posta](#configuredefaultmailservice)predefinito. Default is `no-reply@example.com`.
+* **[!UICONTROL Indirizzo e-mail &quot;Rispondi a&quot;]**
+
+   Indirizzo utilizzato come indirizzo e-mail &quot;Rispondi a&quot;. Default is `communities@adobe.com`.
 
 * **[!UICONTROL Rispondi a delimitatore]**
 
