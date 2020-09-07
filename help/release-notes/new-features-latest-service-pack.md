@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8980348736825f45647a91062b1fe4e4a790b8f1
+source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2462'
 ht-degree: 2%
 
 ---
@@ -126,6 +126,8 @@ Il modello dati modulo consente di salvare l&#39;output di un servizio del model
 * Supporto migliorato per gli assistenti vocali.
 
 #### Altri miglioramenti chiave (6.5.5.0) {#other-enhancements-sites}
+
+* L&#39;accesso anonimo ai CRXDE Lite non è consentito per migliorare la sicurezza. Al contrario, gli utenti vengono indirizzati alla schermata di accesso. Consultate [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 * Quando si copia o incolla una struttura ad albero di pagina, è ora possibile incollare la pagina principale o incollare la pagina principale con le relative sottopagine.
 
