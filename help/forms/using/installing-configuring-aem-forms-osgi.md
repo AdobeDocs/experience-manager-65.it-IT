@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
+source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1910'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione de
    * **Autore**: Istanza AEM utilizzata per creare, caricare e modificare i contenuti e per amministrare il sito Web. Quando il contenuto è pronto per essere live, viene replicato nell’istanza di pubblicazione.
    * **Pubblica**: Un&#39;istanza AEM che trasmette il contenuto pubblicato al pubblico su Internet o su una rete interna.
 
-* I requisiti di memoria sono soddisfatti.  pacchetto aggiuntivo AEM Forms richiede:
+* I requisiti di memoria sono soddisfatti.  pacchetto del componente aggiuntivo AEM Forms richiede:
 
    * 15 GB di spazio temporaneo per le installazioni basate su Microsoft Windows.
    * 6 GB di spazio temporaneo per le installazioni basate su UNIX.
@@ -180,7 +180,7 @@ Per aggiungere il pacchetto al inserire nell&#39;elenco Consentiti di , eseguite
 
 #### Configura dispatcher {#configure-dispatcher}
 
-Dispatcher: strumento di caching e bilanciamento del carico per AEM. AEM Dispatcher aiuta anche a proteggere AEM server dagli attacchi. È possibile aumentare la sicurezza dell&#39;istanza AEM utilizzando il dispatcher insieme a un server Web di classe enterprise. Se utilizzate [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html), eseguite le seguenti configurazioni per  AEM Forms:
+Dispatcher è uno strumento di cache e/o bilanciamento del carico Adobe Experience Manager che può essere utilizzato insieme a un server Web di classe enterprise. Se utilizzate [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html), eseguite le seguenti configurazioni per  AEM Forms:
 
 1. Configurare l&#39;accesso per  AEM Forms:
 
