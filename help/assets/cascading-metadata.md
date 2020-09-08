@@ -3,9 +3,9 @@ title: Cascading metadata in [!DNL Adobe Experience Manager Assets].
 description: In questo articolo viene descritto come definire metadati a cascata per le risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '948'
 ht-degree: 6%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 6%
 Quando acquisite le informazioni di metadati di una risorsa, gli utenti forniscono informazioni nei vari campi disponibili. Potete visualizzare campi di metadati o valori di campi specifici che dipendono dalle opzioni selezionate negli altri campi. Tale visualizzazione condizionale dei metadati è denominata metadati CSS. In altre parole, potete creare una dipendenza tra un particolare campo/valore di metadati e uno o più campi e/o relativi valori.
 
 Usate gli schemi di metadati per definire le regole per la visualizzazione dei metadati CSS. Ad esempio, se lo schema di metadati include un campo del tipo di risorsa, potete definire un set di campi pertinenti da visualizzare in base al tipo di risorsa selezionata dall’utente.
+
+>[!CAUTION]
+>
+>I metadati a cascata non sono supportati per i frammenti di contenuto.
 
 Di seguito sono riportati alcuni casi d’uso per i quali potete definire metadati a cascata:
 
