@@ -1,10 +1,10 @@
 ---
-title: Funzioni obsolete e rimosse nell'Adobe Experience Manager  versione 6.5.
+title: Funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 description: Note specifiche per le funzioni obsolete e rimosse in Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1722'
 ht-degree: 45%
 
 ---
@@ -29,7 +29,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
-| Integrazione  Creative Cloud | AEM a Creative Cloud condivisione cartelle è stato introdotto in AEM 6.2 come modo per consentire agli utenti creativi di accedere alle risorse da AEM, in modo che possano aprirle nelle applicazioni CC e caricare nuovi file o salvare le modifiche in AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione mediante condivisione delle cartelle Creative Cloud. Sebbene la funzione sia inclusa in AEM, consigliamo ai clienti di utilizzare soluzioni sostitutive. | Ai clienti viene consigliato di passare alle nuove funzionalità di integrazione delle Creative Cloud, tra cui  collegamento delle risorse di Adobe o AEM app desktop. Leggi le best practice per l&#39;integrazione di AEM e Creative Cloud per ulteriori dettagli. |
+| Integrazione  Creative Cloud | AEM a Creative Cloud condivisione cartelle è stato introdotto in AEM 6.2 come modo per consentire agli utenti creativi di accedere alle risorse da AEM, in modo che possano aprirle nelle applicazioni CC e caricare nuovi file o salvare le modifiche in AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione mediante condivisione delle cartelle Creative Cloud. Sebbene la funzione sia inclusa in AEM, consigliamo ai clienti di utilizzare soluzioni sostitutive. | Ai clienti viene consigliato di passare alle nuove funzionalità di integrazione delle Creative Cloud, tra cui  collegamento delle risorse di Adobe o AEM app desktop. Per ulteriori informazioni, consulta Tecniche consigliate per l&#39;integrazione di AEM e Creative Cloud. |
 | Assets | `AssetDownloadServlet`Per la pubblicazione di istanze,  è disattivato per impostazione predefinita. Per ulteriori informazioni, vedi [Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). | Configurazione descritta nell’[Elenco di controllo per la sicurezza AEM](/help/sites-administering/security-checklist.md). |
 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Rispetta le impostazioni di controllo dell’accesso dell’utente e verifica le autorizzazioni appropriate. |
 | Adobe Search&amp;Promote | L&#39;integrazione con  Adobe Search&amp;Promote è obsoleta. Adobe non prevede di apportare ulteriori miglioramenti all’integrazione con Search&amp;Promote. Nota: l’integrazione con Search&amp;Promote rimane completamente supportata anche se obsoleta. |  |
@@ -48,7 +48,8 @@ Consigliamo ai clienti di verificare se utilizzano la funzione o funzionalità n
 | Sviluppatori | `Granite.Sling.js` libreria client. Adobe non prevede di migliorare ulteriormente la libreria client Granite.Sling.js fornita come parte della distribuzione (Quickstart) |  Adobe consiglia ai clienti che si affidano alla funzionalità della libreria di rigenerare il codice per non utilizzarlo più. |
 | Sviluppatori | Utilizzo di YUI per comprimere/minimizzare le librerie client JavaScript. Adobe non prevede di aggiornare ulteriormente la libreria YUI. Fino AEM 6.4, per impostazione predefinita, YUI ha ridotto a icona JavaScript con l&#39;opzione per passare a Google Closure Compiler (GCC). A partire da AEM 6.5, GCC è l’impostazione predefinita. |  Adobe consiglia ai clienti di effettuare l&#39;aggiornamento a AEM 6.5 per passare al CCG per la loro implementazione |
 | Sviluppatori | Editor finestra di dialogo dell’interfaccia utente classica in CRXDE lite. Adobe non prevede di migliorare ulteriormente l’Editor finestra di dialogo dell’interfaccia utente classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |
-| Forms | L&#39;integrazione dei AEM Forms con  AEM Mobile è obsoleta. | Nessuna sostituzione disponibile. |
+| Forms | &#39;integrazione AEM Forms con  AEM Mobile è obsoleta. | Nessuna sostituzione disponibile. |  | Sviluppatori | Editor finestra di dialogo dell’interfaccia utente classica in CRXDE lite. Adobe non prevede di migliorare ulteriormente l’Editor finestra di dialogo dell’interfaccia utente classica fornito come parte della distribuzione (Quickstart) | Nessuna sostituzione disponibile. |
+| Forms | Libreria client Lodash/underscore.  Adobe non prevede di mantenere e aggiornare ulteriormente la libreria client Lodash/underscore fornita come parte della distribuzione (Quickstart) |  Adobe consiglia ai clienti che necessitano ancora di Lodash/underscore per il codice di aggiungerlo alla base di codice del progetto. |
 
 ## Funzioni rimosse {#removed-features}
 
@@ -62,8 +63,8 @@ In questa sezione sono elencate le funzionalità rimosse dalla AEM 6.5. Le versi
 | Forms | Il supporto per il servizio Adobe Central Migration Bridge è stato rimosso in quanto il prodotto Adobe Central non è più supportato. | Nessuna sostituzione. |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nessuna sostituzione. |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nessuna sostituzione |
-| Forms | L&#39;aggiornamento single-hop dal LiveCycle ES4 SP1 a AEM Forms 6.5 su JEE non è disponibile | Consultate i percorsi [di aggiornamento](../forms/using/upgrade.md) disponibili nella documentazione sull&#39;aggiornamento dei AEM Forms. |
-| Forms | È stato rimosso il supporto del clustering basato su UPD dai AEM Forms su JEE | È possibile utilizzare solo il clustering basato su TCP in AEM Forms su JEE. Se si aggiorna un server multicast UDP da una versione precedente a AEM 5.5 Forms su JEE, si eseguono configurazioni manuali per passare al clustering gemFire basato su TCP. Per istruzioni dettagliate, vedere [Aggiornamento ai moduli AEM 6.5 su JEE](../forms/using/upgrade-forms-jee.md) |
+| Forms | L&#39;aggiornamento single-hop dal LiveCycle ES4 SP1 a AEM Forms 6.5 su JEE non è disponibile | Consultate i percorsi [di aggiornamento](../forms/using/upgrade.md) disponibili nella documentazione  aggiornamento di AEM Forms. |
+| Forms | È stato rimosso il supporto del clustering basato su UPD da  AEM Forms su JEE | È possibile utilizzare solo il clustering basato su TCP in  AEM Forms su JEE. Se si aggiorna un server multicast UDP da una versione precedente a AEM 5.5 Forms su JEE, si eseguono configurazioni manuali per passare al clustering gemFire basato su TCP. Per istruzioni dettagliate, vedere [Aggiornamento ai moduli AEM 6.5 su JEE](../forms/using/upgrade-forms-jee.md) |
 | Sviluppatori | Firebug Lite è stato rimosso dalla distribuzione predefinita (Quickstart) | Utilizza le console di sviluppo integrate nel browser |
 | Sviluppatori | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Nessuna sostituzione |
 | [!DNL Assets] | La funzione di scaricamento delle risorse viene rimossa in [!DNL Adobe Experience Manager] 6.5. | Nessuna sostituzione disponibile. |
