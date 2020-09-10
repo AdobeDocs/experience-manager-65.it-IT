@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
+source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 4%
@@ -112,7 +112,7 @@ Questa configurazione non deve essere modificata.
 
 * Verifica che **Crea post dal messaggio e-mail** di risposta sia `unchecked`.
 
-![chlimage_1-100](assets/configure-email.png)
+![configure-email-reply](assets/configure-email-reply.png)
 
 ### Configurazione per le iscrizioni {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Per le iscrizioni Community, è possibile abilitare o disabilitare la possibilit
 * Selezionate l’icona di modifica.
 * Verifica che il **nome** sia `subscriptions-email`.
 
-   ![chlimage_1-101](assets/configure-email-subscription.png)
+   ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Nome]**
 
@@ -141,7 +141,7 @@ Per le iscrizioni Community, è possibile abilitare o disabilitare la possibilit
 
 * **[!UICONTROL Indirizzo e-mail &quot;Rispondi a&quot;]**
 
-   Indirizzo utilizzato come indirizzo e-mail &quot;Rispondi a&quot;. Default is `communities@adobe.com`.
+   Indirizzo utilizzato come indirizzo e-mail &quot;Rispondi a&quot;. Default is `no-reply@example.com`.
 
 * **[!UICONTROL Rispondi a delimitatore]**
 
