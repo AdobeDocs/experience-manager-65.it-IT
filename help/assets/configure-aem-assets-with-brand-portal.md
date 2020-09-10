@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5baef6f4d570aff738444e0620b982729b897f89
+source-git-commit: 8633216807061c73f4bc692d13f9eba37845cffc
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 13%
+source-wordcount: '2028'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) Assets è configurato con Portale marchio tramite
 
 >[!NOTE]
 >
->La configurazione  AEM Assets con il portale del marchio tramite  console per sviluppatori di Adobi è supportata in AEM 6.5.4.0 e versioni successive.
+>La configurazione  AEM Assets con il portale del marchio tramite  console per sviluppatori di Adobi è supportata AEM 6.5.4.0 e versioni successive.
 >
 >In precedenza, il Portale marchio era stato configurato tramite il gateway OAuth legacy, che utilizza lo scambio di token JWT per ottenere un token di accesso IMS per l&#39;autorizzazione.
 >
@@ -357,6 +357,8 @@ Effettuate le seguenti operazioni per convalidare la configurazione:
    >[!NOTE]
    >
    >Evitate di disattivare qualsiasi agente di replica. Potrebbe causare il fallimento della replica di alcune delle risorse.
+   >
+   >Verificate che tutti e quattro gli agenti di replica siano configurati in modo da evitare errori di timeout. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 L’istanza di creazione di  AEM Assets è stata configurata correttamente con Brand Portal ed è ora possibile:
 
