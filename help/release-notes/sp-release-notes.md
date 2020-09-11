@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
+source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
 workflow-type: tm+mt
-source-wordcount: '4423'
+source-wordcount: '4422'
 ht-degree: 6%
 
 ---
@@ -112,7 +112,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * La pagina di ricerca e i risultati della ricerca ora dispongono di titoli più informativi per una migliore comprensione degli utenti degli assistenti vocali (NPR-34093).
 
-* Gli assistenti vocali annunciano ora le opzioni per eliminare i tag selezionati nella scheda [!UICONTROL Base] dei pulsanti delle proprietà delle risorse per eliminare i tag selezionati (NPR-33972).
+* Gli assistenti vocali annunciano ora le opzioni per eliminare i tag selezionati nella scheda [!UICONTROL Base] dei pulsanti delle [!UICONTROL proprietà] della risorsa per eliminare i tag selezionati (NPR-33972).
 
 * Gli elementi di ciascuna riga nella vista a elenco vengono ora correttamente annunciati come elementi della stessa riga dagli assistenti vocali (NPR-33932).
 
