@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Questa configurazione è ideale per ambienti *non di produzione* , ad esempio pe
    * Il percorso definito della directory dati verrà denominato &lt;percorso-mongo>.
 
 
-* MongoDB può essere eseguito sullo stesso host di AEM o in remoto.
+* MongoDB può essere eseguito sullo stesso host AEM o eseguito in remoto.
 
 ### Avvia MongoDB {#start-mongodb}
 
@@ -72,7 +72,7 @@ Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 
 >[!NOTE]
 >
->Se MongoDB viene avviato *dopo* AEM, **riavviate** tutte le istanze **AEM** in modo che si connettano correttamente a MongoDB.
+>Se MongoDB viene avviato *dopo* AEM, **riavviare** tutte le istanze **AEM** in modo che si connettano correttamente a MongoDB.
 
 
 ### Opzione Produzione Demo: Imposta set di replica MongoDB {#demo-production-option-setup-mongodb-replica-set}
@@ -100,7 +100,7 @@ I comandi seguenti sono un esempio di configurazione di un set di repliche con 3
 * Scarica Solr da [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Ideale per qualsiasi sistema operativo.
-   * Utilizzate la versione 4.10 o 5.
+   * Solr versione 7.0.
    * Solr richiede Java 1.7 o versione successiva.
 
 * Configurazione di base
@@ -109,7 +109,7 @@ I comandi seguenti sono un esempio di configurazione di un set di repliche con 3
    * Nessun servizio necessario.
    * La cartella Solr installata verrà denominata &lt;solr-install>.
 
-### Configurare Solr per AEM Communities {#configure-solr-for-aem-communities}
+### Configurare Solr per  AEM Communities {#configure-solr-for-aem-communities}
 
 Per configurare una raccolta Solr per MSRP per la demo, sono necessarie due decisioni (per i dettagli, selezionare i collegamenti alla documentazione principale):
 
@@ -143,9 +143,9 @@ Per eseguire una configurazione solrCloud di base (non di produzione), inizia da
 
 ## Identificare MongoDB come archivio comune {#identify-mongodb-as-common-store}
 
-Avviate le istanze di AEM, se necessario.
+Avviate le istanze di creazione e pubblicazione AEM, se necessario.
 
-Se AEM era in esecuzione prima dell&#39;avvio di MongoDB, le istanze di AEM dovranno essere riavviate.
+Se AEM in esecuzione prima dell&#39;avvio di MongoDB, è necessario riavviare le istanze AEM.
 
 Seguite le istruzioni riportate nella pagina principale della documentazione: [MSRP - Store comune MongoDB](msrp.md)
 
@@ -165,7 +165,7 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
 
    Nota: mentre sull’autore sono presenti nodi JCR sotto il *percorso* asiatico, questi sono per il framework SCF. L&#39;UGC effettivo non è in JCR, è in MongoDB.
 
-1. Visualizzare l&#39;UGC in **[!UICONTROL Mongodb Communities]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
+1. Visualizzare l’UGC in **[!UICONTROL Mongodb Communities]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -186,9 +186,9 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
 
 1. Verificate che MSRP sia stato configurato come provider predefinito:
 
-   * Per creare e pubblicare tutte le istanze di AEM, rivisitate la console Configurazione [archiviazione](srp-config.md)
+   * Per tutte le istanze di creazione e pubblicazione AEM, rivisitate la console Configurazione [archiviazione](srp-config.md)
 
-   Oppure consultate l&#39;archivio di AEM:
+   Oppure, controllate il repository AEM:
 
    * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -196,4 +196,4 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
    * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito
 
 
-1. Accertatevi che AEM sia stato riavviato dopo la selezione di MSRP.
+1. Verificare che AEM sia stato riavviato dopo aver selezionato MSRP.
