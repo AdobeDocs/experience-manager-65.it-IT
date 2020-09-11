@@ -1,8 +1,8 @@
 ---
-title: Riferimenti API SPA Javascript
-seo-title: Riferimenti API SPA Javascript
-description: Panoramica dei riferimenti API dell'applicazione a pagina singola
-seo-description: Panoramica dei riferimenti API dell'applicazione a pagina singola
+title: Materiali di riferimento SPA
+seo-title: Materiali di riferimento SPA
+description: Panoramica dei riferimenti API dell'applicazione a pagina singola e dei repository dei codici sorgente
+seo-description: Panoramica dei riferimenti API dell'applicazione a pagina singola e dei repository dei codici sorgente
 uuid: 503a1bec-da8b-4f5e-adcc-fe65c3c96034
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,15 @@ topic-tags: spa
 content-type: reference
 discoiquuid: c3a81baa-98b0-40b4-bd34-f39e8491acca
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
 
-# Riferimenti API SPA Javascript{#spa-javascript-api-references}
+# Materiali di riferimento SPA {#spa-reference-materials}
 
 Di seguito sono riportati i riferimenti API JavaScript disponibili per i moduli NPM per il framework SDK AEM SPA Editor.
 
@@ -23,7 +26,17 @@ Di seguito sono riportati i riferimenti API JavaScript disponibili per i moduli 
 >
 >SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
 
-* [Mapping dei componenti](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
-* [Page Model Manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [Reazione di componenti modificabili](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [Componenti modificabili angolari](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [Mapping dei componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [Page Model Manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+* [Reazione di componenti modificabili](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Componenti modificabili angolari](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+
+## Repository GitHub open Source {#github-repositories}
+
+Di seguito sono riportati i repository open source su GitHub per le librerie SPA.
+
+* [Mapping dei componenti](https://github.com/adobe/aem-spa-component-mapping)
+* [Page Model Manager](https://github.com/adobe/aem-spa-page-model-manager)
+* [Reazione di componenti modificabili](https://github.com/adobe/aem-react-editable-components)
+* [Componenti modificabili angolari](https://github.com/adobe/aem-angular-editable-components)
+* [Progetto SPA di base](https://github.com/adobe/aem-spa-project-core)
