@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -30,7 +30,7 @@ Lo script predefinito, creato al momento dell&#39;aggiunta del componente che es
 
 Il primo passaggio consiste nell&#39;aggiungere al `/apps/an-scf-sandbox/components/playpage` nodo una proprietà super type di risorsa in modo che erediti gli script e le proprietà del super type.
 
-Utilizzo di CRXDE Lite:
+Utilizzo del CRXDE Lite:
 
 1. Selezionare il nodo `/apps/an-scf-sandbox/components/playpage`.
 1. Nella scheda Proprietà, immettere una nuova proprietà con i seguenti valori:
@@ -48,7 +48,7 @@ Utilizzo di CRXDE Lite:
 
 ### Script head e body {#head-and-body-scripts}
 
-1. Nel riquadro **CRXDE Lite** Explorer, individuate `/apps/an-scf-sandbox/components/playpage` e fate doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
+1. Nel riquadro di **CRXDE Lite** Explorer, individuate `/apps/an-scf-sandbox/components/playpage` e fate doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -99,6 +99,7 @@ Utilizzo di CRXDE Lite:
 
       * Nome: **body.jsp**
    1. Fate clic su **[!UICONTROL Salva tutto]**.
+
    Aprite `/apps/an-scf-sandbox/components/playpage/body.jsp` e incollate il testo seguente:
 
    ```xml
