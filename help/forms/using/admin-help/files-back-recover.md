@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Se si seleziona l&#39;opzione &quot;Abilita archiviazione documenti nel database
 
 ## AEM repository {#aem-repository}
 
-AEM repository (crx-repository) viene creato se è configurato crx-repository durante l&#39;installazione AEM moduli. La posizione della directory del repository crx è determinata durante il processo di installazione dei moduli AEM. AEM repository è necessario eseguire il backup e il ripristino, insieme al database e al GDS, per garantire la coerenza dei dati AEM moduli nei moduli AEM. AEM repository contiene i dati per la soluzione di gestione della corrispondenza, Forms Manager e l&#39;area di lavoro AEM Forms.
+AEM repository (crx-repository) viene creato se è configurato crx-repository durante l&#39;installazione AEM moduli. La posizione della directory del repository crx è determinata durante il processo di installazione dei moduli AEM. AEM repository è necessario eseguire il backup e il ripristino, insieme al database e al GDS, per garantire la coerenza dei dati AEM moduli nei moduli AEM. AEM repository contiene i dati per la soluzione di gestione della corrispondenza, Forms Manager e  AEM Forms Workspace.
 
 ### Soluzione per la gestione della corrispondenza {#correspondence-management-solution}
 
@@ -73,9 +73,9 @@ Una semplice configurazione della soluzione di gestione della corrispondenza inc
 
 gestione moduli semplifica il processo di aggiornamento, gestione e ritiro dei moduli.
 
-### Area di lavoro AEM Forms {#html-workspace}
+###  AEM Forms Workspace {#html-workspace}
 
-AEM Forms Workspace combina le funzionalità di Flex Workspace (obsoleto per i moduli AEM su JEE) e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
+ AEM Forms Workspace combina le funzionalità dei moduli (obsoleti per AEM su JEE) Flex Workspace e aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ log-bin=logname
 
 ## Directory principale dell&#39;archivio contenuti (solo Content Services) {#content-storage-root-directory-content-services-only}
 
-La directory principale di Content Storage contiene l&#39;archivio di Content Services (obsoleto) in cui sono memorizzati tutti i documenti, gli artefatti e gli indici. È necessario eseguire il backup della struttura di directory principale dell&#39;archivio contenuti. In questa sezione viene descritto come determinare la posizione della directory principale di memorizzazione dei contenuti per gli ambienti sia standalone che cluster.
+La directory principale di Content Storage contiene l&#39;archivio di Content Services (obsoleto) in cui sono memorizzati tutti i documenti, gli artefatti e gli indici. È necessario eseguire il backup della struttura di directory principale dell&#39;archivio contenuti. In questa sezione viene descritto come determinare la posizione della directory radice di memorizzazione dei contenuti per gli ambienti sia standalone che cluster.
 
 ### Posizione di origine dell&#39;archiviazione dei contenuti (ambiente autonomo) {#content-storage-root-location-stand-alone-environment}
 
