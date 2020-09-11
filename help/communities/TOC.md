@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guida utente di AEM 6.5 Communities
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 7%
@@ -18,10 +19,10 @@ ht-degree: 7%
 + [Guida utente di Communities](home.md)
 + Introduction to AEM Communities {#introduction}
    + [Siti community](administer-landing.md)
-   + [Panoramica sui AEM Communities](overview.md)
+   + [Panoramica di AEM Communities](overview.md)
    + [Note sulla versione di AEM Communities](/help/release-notes/communities-release-notes.md)
    + [Guida introduttiva di AEM Communities](getting-started.md)
-   + [Guida introduttiva ai AEM Communities per l’abilitazione](getting-started-enablement.md)
+   + [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
    + [Configurazione iniziale](setup.md)
    + [Creazione di un nuovo sito community](create-site.md)
    + [Scopri il sito pubblicato](published-site.md)
@@ -34,12 +35,12 @@ ht-degree: 7%
    + [Implementazione di Communities](deploy-communities.md)
    + [Aggiornamento ad AEM 6.5 Communities](upgrade.md)
    + [Topologie consigliate per community](topologies.md)
-   + [Configurazione di Dispatcher per Communities](dispatcher.md)
+   + [Configurazione del dispatcher per Communities](dispatcher.md)
 + Amministrazione {#administer}
-   + [Servizio di gestione UGC e utenti in AEM Communities](user-ugc-management-service.md)
+   + [Servizio di gestione di utenti e UGC in  AEM Communities](user-ugc-management-service.md)
    + [Siti community](administer-landing.md)
    + [Console community](consoles.md)
-   + [Configurazione Analytics per le funzioni Community](analytics.md)
+   + [Configurazione di Analytics per le funzioni Community](analytics.md)
    + [Configurazione delle funzioni di abilitazione](enablement.md)
    + [Configurazione dei messaggi](messaging.md)
    + [Moderazione del contenuto della community](moderate-ugc.md)
@@ -66,7 +67,7 @@ ht-degree: 7%
    + [FFmpeg for Communities](ffmpeg.md)
    + [Moderazione In-Context](in-context.md)
    + [Punteggio e distintivi avanzati](advanced.md)
-   + [ASRP - Fornitore di risorse di storage Adobe](asrp.md)
+   + [ASRP - Fornitore di risorse di storage  Adobe](asrp.md)
    + [MSRP - Provider di risorse di storage MongoDB](msrp.md)
    + [Come impostare MongoDB per la demo](demo-mongo.md)
    + [DSRP - Provider di risorse di archiviazione del database relazionale](dsrp.md)
