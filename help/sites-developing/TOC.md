@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guida utente per lo sviluppo di AEM 6.5
+user-guide-title: AEM 6.5 Guida utente allo sviluppo
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '820'
 ht-degree: 11%
 
 ---
@@ -18,16 +18,16 @@ ht-degree: 11%
 + [Panoramica sullo sviluppo della Guida utente](home.md)
 + Introduzione per gli sviluppatori{#introduction}
    + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](getting-started.md)
-   + [Concetti di base di AEM](the-basics.md)
-   + [Struttura dell&#39;interfaccia utente di AEM Touch](touch-ui-structure.md)
-   + [Concetti dell’interfaccia utente di AEM Touch](touch-ui-concepts.md)
-   + [Sviluppo AEM - Linee guida e best practice](dev-guidelines-bestpractices.md)
+   + [Concetti di base AEM](the-basics.md)
+   + [Struttura dell’interfaccia AEM touch](touch-ui-structure.md)
+   + [Concetti dell’interfaccia AEM touch](touch-ui-concepts.md)
+   + [Sviluppo AEM - Linee guida e migliori prassi](dev-guidelines-bestpractices.md)
    + [Utilizzo delle librerie lato client](clientlibs.md)
    + [Sviluppo e Page Diff](pagediff.md)
    + [Limitazioni per l’editor](editor-limitations.md)
    + [Quadro di protezione CSRF](csrf-protection.md)
    + [Modellazione dei dati - Modello di David Nuescheler](model-data.md)
-   + [Contributo ad AEM](contributing-to-cq.md)
+   + [Contributo a AEM](contributing-to-cq.md)
    + [Sicurezza](security.md)
    + [Materiali di riferimento](reference-materials.md)
    + [Creare un sito Web completo (interfaccia classica)](website.md)
@@ -54,7 +54,7 @@ ht-degree: 11%
    + Assegnazione tag{#tagging}
       + [Assegnazione tag](tags.md)
       + [AEM Tagging Framework](framework.md)
-      + [Creazione di tag in un’applicazione AEM](building.md)
+      + [Creazione di tag in un&#39;applicazione AEM](building.md)
    + [Personalizzazione delle pagine mostrate dal gestore errori](customizing-errorhandler-pages.md)
    + [Tipi di nodo personalizzati](custom-nodetypes.md)
    + [Aggiunta di font per il rendering grafico](adding-fonts.md)
@@ -96,30 +96,30 @@ ht-degree: 11%
       + [Sviluppo di componenti AEM (interfaccia classica)](developing-components-classic.md)
       + [Utilizzo ed estensione dei widget (interfaccia classica)](widgets.md)
       + [Utilizzo di xtype (interfaccia classica)](xtypes.md)
-      + [Sviluppo di moduli (interfaccia classica)](developing-forms.md)
+      + [Sviluppo di Forms (interfaccia classica)](developing-forms.md)
 + Gestione delle esperienze headless{#headless}
    + [Senza testa e ibrido con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Abilitazione dell&#39;esportazione JSON per un componente](json-exporter-components.md)
    + Applicazioni a pagina singola{#spas}
       + [Introduzione e introduzione SPA](spa-walkthrough.md)
       + [Esercitazione SPA WKND](spa-wknd.md)
-      + [Guida introduttiva all’app SPA in AEM - React](spa-getting-started-react.md)
+      + [Guida introduttiva alle app SPA in AEM - React](spa-getting-started-react.md)
       + [Guida introduttiva alle app SPA in AEM - Angular](spa-getting-started-angular.md)
       + [Implementazione di un componente React per SPA](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
       + [Panoramica di SPA Editor](spa-overview.md)
-      + [Sviluppo di app SPA per AEM](spa-architecture.md)
+      + [Sviluppo di SPA per AEM](spa-architecture.md)
       + [Blueprint SPA](spa-blueprint.md)
       + [Componente pagina SPA](spa-page-component.md)
       + [Mappatura da modello dinamico a componente per SPA](spa-dynamic-model-to-component-mapping.md)
       + [Routing modello SPA](spa-routing.md)
-      + [Integrazione di SPA e lancio di  Adobe Experience Platform](spa-launch.md)
+      + [Integrazione SPA e  Adobe Experience Platform Launch](spa-launch.md)
       + [Rendering SPA e lato server](spa-ssr.md)
-      + [Riferimenti API SPA Javascript](spa-reference-materials.md)
+      + [Materiali di riferimento SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
    + [Frammenti esperienza](/help/sites-authoring/experience-fragments.md)
-   + [Informazioni sui frammenti di contenuto e i servizi sui contenuti in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+   + [Informazioni sui frammenti di contenuto e i servizi di contenuto in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Strumenti di sviluppo{#devtools}
    + [Strumenti di sviluppo](dev-tools.md)
    + [Strumenti di modernizzazione AEM](modernization-tools.md)
@@ -127,27 +127,27 @@ ht-degree: 11%
    + [Strumento di conversione finestra di dialogo](dialog-conversion.md)
    + [Sviluppo con CRXDE Lite](developing-with-crxde-lite.md)
    + [Gestione dei pacchetti con il cielo](vlt-mavenplugin.md)
-   + [Come sviluppare progetti AEM con Eclipse](howto-projects-eclipse.md)
-   + [Come creare progetti AEM con Apache Maven](ht-projects-maven.md)
-   + [Come sviluppare progetti AEM con IntelliJ IDEA](ht-intellij.md)
+   + [Come sviluppare AEM progetti con Eclipse](howto-projects-eclipse.md)
+   + [Come creare AEM progetti con Apache Maven](ht-projects-maven.md)
+   + [Come sviluppare progetti AEM utilizzando IntelliJ IDEA](ht-intellij.md)
    + [Come utilizzare lo strumento VLT](ht-vlttool.md)
    + [Come utilizzare lo strumento Proxy Server](ht-proxy-server.md)
-   + [Estensione AEM Bracket](aem-brackets.md)
-   + [Strumenti per sviluppatori AEM per Eclipse](aem-eclipse.md)
+   + [Estensione AEM parentesi](aem-brackets.md)
+   + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
 + Personalizzazione{#personlization}
    + [ContextHub](contexthub.md)
    + [Riferimento API ContextHub Javascript](contexthub-api.md)
    + [Estensione di ContextHub](ch-extend.md)
    + [Aggiunta di ContextHub alle pagine e accesso agli store](ch-adding.md)
-   + [Candidati per lo store ContextHub di esempio](ch-samplestores.md)
+   + [Candidati per l&#39;archivio ContextHub di esempio](ch-samplestores.md)
    + [Tipi di moduli interfaccia utente ContextHub di esempio](ch-samplemodules.md)
    + [Diagnostica ContextHub](ch-diagnostics.md)
    + [Sviluppo per contenuti mirati](target.md)
    + ClientContext{#client-context}
       + [Contesto cliente in dettaglio](client-context.md)
       + [API JavaScript ClientContext](ccjsapi.md)
-+ Estensione di AEM{#extending-aem}
++ Estensione AEM{#extending-aem}
    + [Personalizzazione dell’authoring delle pagine](customizing-page-authoring-touch.md)
    + [Personalizzazione delle console](customizing-consoles-touch.md)
    + [Personalizzazione delle visualizzazioni delle proprietà pagina](page-properties-views.md)
@@ -165,18 +165,18 @@ ht-degree: 11%
       + [Riferimento per il processo di workflow](workflows-process-ref.md)
       + [Variabili nei flussi di lavoro AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Estensione di Multi Site Manager](extending-msm.md)
-   + Tracciamento e  Analytics{#extending-analytics}
+   + Tracciamento e analisi{#extending-analytics}
       + [Estensione del tracciamento degli eventi](extending-analytics.md)
-      + [Aggiunta di Adobe  Analytics Tracking ai componenti](extending-analytics-components.md)
-      + [Personalizzazione di Adobe  Analytics Framework](extending-analytics-framework.md)
-      + [Implementazione della denominazione delle pagine lato server per  Analytics](extending-analytics-pa-naming.md)
+      + [Aggiunta  tracciamento Adobe Analytics ai componenti](extending-analytics-components.md)
+      + [Personalizzazione di  Adobe Analytics Framework](extending-analytics-framework.md)
+      + [Implementazione della denominazione delle pagine lato server per Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
       + [Configurazioni Cloud Service](extending-cloud-config.md)
       + [Creazione di un Cloud Service personalizzato](extending-cloud-config-custom-cloud.md)
    + [Creazione di estensioni personalizzate](extending-campaign-extensions.md)
    + Forms{#extending-forms}
       + [Creazione di mappature di moduli personalizzate](extending-campaign-form-mapping.md)
-      + [Creazione di un modello personalizzato di pagina AEM con componenti modulo  Adobe Campaign](extending-campaign-custom-template.md)
+      + [Creazione di un modello di pagina AEM personalizzato con  componenti modulo Adobe Campaign](extending-campaign-custom-template.md)
       + [Richiedi script di analisi](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](jmx-integration.md)
    + [Sviluppo dell’editor di massa](dev-bulk-editor.md)
@@ -197,9 +197,9 @@ ht-degree: 11%
    + [Elenchi di controllo](checklists.md)
    + [Giorno Duro](tough-day.md)
    + [Verifica dell’interfaccia](hobbes.md)
-+ Best practice {#bestpractices}
++ Best practice  {#bestpractices}
    + [Panoramica sulle best practice](best-practices.md)
-   + [Linee guida per lo sviluppo AEM e best practice](dev-guidelines-bestpractices.md)
+   + [Linee guida per lo sviluppo AEM e migliori prassi](dev-guidelines-bestpractices.md)
    + [Tecniche consigliate per lo sviluppo](development-practices.md)
    + [Architettura dei contenuti](content-architecture.md)
    + [Architettura del software](software-architecture.md)
