@@ -1,8 +1,8 @@
 ---
 title: MSRP - Provider di risorse di storage MongoDB
 seo-title: MSRP - Provider di risorse di storage MongoDB
-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
-seo-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
+description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
+seo-description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 412200c1bb0c7050c981fc5dc2a5430f37b3beb3
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Informazioni su MSRP {#about-msrp}
 
-Quando i AEM Communities sono configurati per utilizzare MSRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
+Quando  AEM Communities è configurato per utilizzare MSRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
 
 Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
 
@@ -37,7 +37,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Versione 4.10 o 5
+   * Solr versione 7.0
    * Solr richiede Java 1.7 o versione successiva
    * Nessun servizio necessario
    * Scelta delle modalità di esecuzione:
@@ -80,7 +80,7 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host**
 
       In modalità [SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper esterno, imposta questo valore su `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181*
 
@@ -137,7 +137,7 @@ Per informazioni dettagliate sulla configurazione, consultate Configurazione [So
 
 Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP, sarà necessario:
 
-1. Eseguire l&#39; [aggiornamento ai AEM Communities](upgrade.md)
+1. Eseguire l&#39; [aggiornamento a  AEM Communities](upgrade.md)
 1. Installare nuovi file di configurazione Solr
    * Per MLS [standard](solr.md#installing-standard-mls)
    * Per MLS [avanzati](solr.md#installing-advanced-mls)
@@ -233,13 +233,13 @@ Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console [Conf
 
 ### UGC scompare dopo l&#39;aggiornamento {#ugc-disappears-after-upgrade}
 
-Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0 esistente, qualsiasi UGC preesistente deve essere convertito in conformità alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a AEM Communities 6.3.
+Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0  esistente, qualsiasi UGC preesistente deve essere convertito in modo da essere conforme alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a  AEM Communities 6.3.
 
 È disponibile uno strumento open source su GitHub per questo scopo:
 
-* [Strumento di migrazione UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti di AEM social community da importare in AEM Communities 6.1 o versioni successive.
+Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti di AEM social community da importare in  AEM Communities 6.1 o versioni successive.
 
 ### Errore - provider_id campo non definito {#error-undefined-field-provider-id}
 
