@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5cf27977d3d94d39c9dfec51eb50778048f76dfd
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
 source-wordcount: '2482'
 ht-degree: 2%
@@ -17,8 +17,6 @@ ht-degree: 2%
 I Service Pack di Adobe Experience Manager 6.5 offrono nuove funzioni, miglioramenti richiesti dai clienti e miglioramenti a prestazioni, stabilità e sicurezza a intervalli trimestrali. La disponibilità trimestrale semplifica l&#39;accesso e l&#39;adozione di nuove caratteristiche e innovazioni.
 
 In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Service Pack 6.5, le funzioni [chiave incluse nei Service Pack](#key-features-previous-service-packs)6.5 precedenti e alcune delle release [chiave a partire  rilascio dell&#39;Experience Manager 6.5.5.0](#key-releases-since-last-sp) .
-
->[!VIDEO](https://video.tv.adobe.com/v/39867)
 
 ##  Adobe [!DNL Experience Manager] Siti {#aem-sites}
 
@@ -274,7 +272,7 @@ La nuova opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
