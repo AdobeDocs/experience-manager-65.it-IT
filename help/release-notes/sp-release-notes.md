@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74606bc3e9c768c3d94b7d05c722980f29e20e0e
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
-source-wordcount: '4418'
+source-wordcount: '4458'
 ht-degree: 6%
 
 ---
@@ -434,7 +434,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-UberJar per  Experience Manager 6.5.6.0 è disponibile nell’archivio [Public Maven del Adobe](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/).
+UberJar per  Experience Manager 6.5.6.0 è disponibile nell’archivio [](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/)Maven Central.
 
 Per utilizzare UberJar in un progetto Maven, consulta [come utilizzare UberJar](/help/sites-developing/ht-projects-maven.md) e includere nel POM del progetto la seguente dipendenza:
 
@@ -446,6 +446,10 @@ Per utilizzare UberJar in un progetto Maven, consulta [come utilizzare UberJar](
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>A partire da questa versione, UberJar e altri artifact correlati sono disponibili nel repository centrale di Maven invece  repository di Public Maven Adobe (repo.adobe.com). Il file UberJar principale viene rinominato in `uber-jar-<version>.jar`. Di conseguenza, non esiste `classifier`, con `apis` il valore, per il `dependency` tag.
 
 ## Funzioni obsolete {#removed-deprecated-features}
 
