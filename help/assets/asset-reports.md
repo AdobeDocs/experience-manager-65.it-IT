@@ -3,7 +3,7 @@ title: Rapporti sull’utilizzo e la condivisione delle risorse digitali.
 description: Rapporti sulle risorse [!DNL Adobe Experience Manager Assets] per comprendere l’utilizzo, l’attività e la condivisione delle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
+source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 10%
@@ -25,7 +25,7 @@ Quando viene generato un rapporto, riceverete una notifica via e-mail (facoltati
 
 ## Prerequisito {#prerequisite-for-reporting}
 
-Per generare i rapporti, accertati che:
+Per generare i rapporti, effettuate le seguenti operazioni:
 
 * Attiva il servizio [!UICONTROL Day CQ DAM Event Recorder] da **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
 * Selezionate le attività o gli eventi sui quali desiderate creare rapporti. Ad esempio, per generare un rapporto sulle risorse scaricate, selezionate [!UICONTROL Risorsa scaricata (DOWNLOADED)].
@@ -50,7 +50,7 @@ Per generare i rapporti, accertati che:
 
 1. Nell’ [!DNL Experience Manager] interfaccia, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
 
-![Pagina degli strumenti per navigare nel rapporto delle risorse](assets/AssetsReportNavigation.png)
+   ![Pagina degli strumenti per navigare nel rapporto delle risorse](assets/AssetsReportNavigation.png)
 
 1. Nella pagina Rapporti  risorse, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
 1. Dalla pagina **[!UICONTROL Crea rapporto]** , scegliete il rapporto da creare e fate clic su **[!UICONTROL Avanti]**.
@@ -59,11 +59,12 @@ Per generare i rapporti, accertati che:
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto [!UICONTROL Download] della risorsa. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
+   >Per impostazione predefinita, i frammenti di contenuto e le condivisioni di collegamenti sono inclusi nel rapporto [!UICONTROL Download] risorse. Selezionate l&#39;opzione appropriata per creare un rapporto delle condivisioni di collegamenti o per escludere i frammenti di contenuto dal rapporto di download.
 
    >[!NOTE]
    >
-   >Il rapporto [!UICONTROL Scarica] mostra i dettagli solo delle risorse che vengono selezionate singolarmente e scaricate o scaricate mediante la funzione Azione rapida. Tuttavia, non include i dettagli delle risorse che si trovavano all’interno di una cartella scaricata.
+   >Il rapporto [!UICONTROL Scarica] mostra i dettagli solo delle risorse che vengono scaricate dopo aver selezionato singolarmente o che vengono scaricate mediante la funzione Azione rapida. Tuttavia, non include i dettagli delle risorse che si trovano all’interno di una cartella scaricata.
+
 1. Configurare i dettagli del rapporto come titolo, descrizione, miniatura e percorso della cartella nell&#39;archivio CRX in cui è memorizzato il rapporto. Per impostazione predefinita, il percorso della cartella è `/content/dam`. Potete specificare un percorso diverso.
 
    ![Pagina per aggiungere i dettagli del rapporto](assets/report_configuration.png)
