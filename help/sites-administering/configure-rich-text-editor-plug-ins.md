@@ -3,9 +3,9 @@ title: Configurare i plug-in Editor Rich Text
 description: Scoprite come configurare i plug-in di Adobe Experience Manager Rich Text Editor per abilitare singole funzionalità.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4398'
 ht-degree: 3%
 
 ---
@@ -150,7 +150,7 @@ Per configurare quali formati sono consentiti quando si incolla testo in AEM da 
    * **Nome** `anchor` (per collegamenti e ancoraggi denominati)
    * **Nome** `image`
 
-   Tutte le proprietà sono di **tipo** `Boolean`, quindi in **Valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
+   Tutte le proprietà sono di **tipo** `Boolean`, quindi nel **valore** appropriato è possibile selezionare o rimuovere il segno di spunta per abilitare o disabilitare la funzionalità.
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ Esempio di una `htmlPasteRules` struttura valida:
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Ad esempio:
+Gli autori possono applicare Stili per modificare l’aspetto di una parte del testo. Gli stili sono basati sulle classi CSS che avete precedentemente definito nel foglio di stile CSS. Il contenuto formattato è racchiuso in `span` tag che utilizzano l&#39; `class` attributo per fare riferimento alla classe CSS. Esempio:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -731,7 +731,7 @@ Per configurare la modalità in cui i collegamenti vengono aggiunti in AEM da un
       * **Nome** `cssExternal`
       * **Tipo** `String`
       * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente.; for example, `cssClass` instead of `.cssClass`)
-   * Array di **protocolli** validi (inclusi `https://`, `https://`, `file://`e `mailto:` altri)
+   * Array di **protocolli** validi. I protocolli supportati sono `http://`, `https://`, `file://`e `mailto:`.
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
