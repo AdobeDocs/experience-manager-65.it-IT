@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
 workflow-type: tm+mt
-source-wordcount: '4458'
+source-wordcount: '4402'
 ht-degree: 6%
 
 ---
@@ -104,39 +104,39 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 ### [!DNL Assets] {#assets-6560}
 
-**Miglioramenti dell&#39;accessibilità in Experience Manager Assets**
+**Miglioramenti dell&#39;accessibilità in  risorse Experience Manager**
 
-* Gli utenti ora possono accedere e attivare le opzioni dell&#39;interfaccia utente interattiva nell&#39;elenco [!UICONTROL Riferimenti] delle risorse mediante i tasti di scelta rapida (NPR-34115).
+* Utilizzando i tasti di tastiera, gli utenti possono ora accedere alle opzioni dell&#39;interfaccia utente interattiva nell&#39;elenco [!UICONTROL Riferimenti] delle risorse (NPR-34115).
 
-* L&#39;assistente vocale ora annuncia le opzioni nel filtro di ricerca come fisarmoniche espandibili (NPR-34104).
+* L&#39;assistente vocale ora annuncia l&#39;azione prevista dei predicati nella pagina di ricerca (NPR-34104).
 
 * La pagina di ricerca e i risultati della ricerca ora dispongono di titoli più informativi per una migliore comprensione degli utenti degli assistenti vocali (NPR-34093).
 
-* Gli assistenti vocali annunciano ora le opzioni per eliminare i tag selezionati nella scheda [!UICONTROL Base] dei pulsanti delle [!UICONTROL proprietà] della risorsa per eliminare i tag selezionati (NPR-33972).
+* Gli assistenti vocali annunciano ora le opzioni per eliminare i tag selezionati nella scheda [!UICONTROL Base] della pagina [!UICONTROL Proprietà] risorsa (NPR-33972).
 
-* Gli elementi di ciascuna riga nella vista a elenco vengono ora correttamente annunciati come elementi della stessa riga dagli assistenti vocali (NPR-33932).
+* Gli elementi di ciascuna riga nella vista a elenco vengono ora annunciati come elementi della stessa riga dagli assistenti vocali (NPR-33932).
 
-* Lo stato attivo dell&#39;utente quando si naviga con il tasto Tab ora si sposta correttamente sull&#39;opzione di chiusura nell&#39;anteprima della versione (NPR-33863).
+* Lo stato attivo dell&#39;utente durante la navigazione con `Tab` il tasto ora si sposta sull&#39;opzione di chiusura nell&#39;anteprima della versione (NPR-33863).
 
-* Lo stato attivo ora si sposta correttamente sull&#39;icona di ricerca dopo la chiusura di Omnisearch (NPR-33705).
+* Lo stato attivo ora si sposta sull&#39;icona di ricerca dopo la chiusura di Omnisearch (NPR-33705).
 
-* Le opzioni dell&#39;interfaccia utente attivabili ora sono più visibili e con maggior contrasto se utilizzate i tasti della tastiera. Pertanto, gli utenti con una tastiera vedente possono ora differenziare le aree interessate (NPR-33542).
+* Le opzioni dell&#39;interfaccia utente attivabili ora sono più visibili e con maggior contrasto quando si naviga utilizzando i tasti della tastiera. Gli utenti della tastiera possono identificare le aree interessate (NPR-33542).
 
-* La funzionalità di trascinamento mediante la tastiera ora funziona correttamente nell&#39;Editor [!UICONTROL schema] metadati in modalità Sfoglia dell&#39;assistente vocale (CQ-4296326).
+* La funzione di trascinamento mediante la tastiera ora funziona nell’Editor [!UICONTROL schema] metadati in modalità Sfoglia dell’assistente vocale (CQ-4296326).
 
-* Nella finestra di dialogo di condivisione dei collegamenti, quando si naviga in modalità Sfoglia, gli assistenti vocali,
+* Nella finestra di dialogo di condivisione dei collegamenti, quando si naviga in modalità Sfoglia, un assistente vocale,
 
-   * ora non riportare le informazioni della tabella non appena la finestra di dialogo viene caricata.
+   * Non narra le informazioni della tabella non appena la finestra di dialogo viene caricata.
 
-   * Potete passare a tutti i suggerimenti automatici elencati.
+   * È possibile accedere a tutti i suggerimenti automatici elencati.
 
-   * ora vengono indicati i suggerimenti automatici visualizzati per l&#39;opzione [!UICONTROL Aggiungi indirizzo e-mail/Ricerca] (CQ-4294232).
+   * Racconta i suggerimenti automatici visualizzati per l&#39;opzione [!UICONTROL Aggiungi indirizzo e-mail/Ricerca] (CQ-4294232).
 
-* L&#39;utilizzo del tasto Esc per rimuovere le icone delle azioni rapide dalla visualizzazione delle miniature non rimuove più lo stato attivo dall&#39;ultimo elemento attivo (CQ-4293554).
+* L&#39;uso del `Esc` tasto per rimuovere le icone delle azioni rapide dalla vista a schede non rimuove più lo stato attivo dall&#39;ultimo elemento attivo (CQ-4293554).
 
-* L&#39;assistente vocale ora annuncia alternative testuali che ne descrivono le funzionalità, per le icone (ad esempio le chevron) invece dei loro nomi letterali (CQ-4272943).
+* Per le opzioni interattive nell&#39;interfaccia utente, l&#39;assistente vocale ne annuncia lo scopo invece dei nomi letterali delle icone (CQ-4272943).
 
-* Lo stato attivo ora si sposta con successo su [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light]  , ZoomVertical_dark, ZoomVertical_light, opzioni di spostamento mediante il tasto Tab nei dettagli delle risorseAnteprima in Dynamic Media (CQ-42422000000000000000000000000000000000000000000000000000000000000000000000090605).
+* Lo stato attivo ora si sposta correttamente su [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light]  [!DNL Dynamic Media] , ZoomVerticaldark, ZoomVertical_light, opzioni di spostamento mediante tasto Tab nei dettagli delle risorseViewersad (CQ-4429) 0605).
 
 * [!UICONTROL È ora possibile accedere all&#39;opzione Salva e chiudi] nella pagina [!UICONTROL Proprietà] della risorsa utilizzando i tasti di scelta rapida (NPR-34107).
 
@@ -144,38 +144,35 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Nella sezione [!DNL Experience Manager] dell&#39;intestazione, quando si naviga in modalità Sfoglia, l&#39;assistente vocale ora annuncia,
 
-   * modificate automaticamente i suggerimenti in [!UICONTROL Tipo per effettuare ricerche] in Omnisearch.
+   * Modificate automaticamente i suggerimenti in [!UICONTROL Tipo per effettuare ricerche] in Omnisearch.
 
-   * stato espanso o compresso per le opzioni [!UICONTROL Soluzioni], [!UICONTROL Aiuto], [!UICONTROL Inbox] e [!UICONTROL Utente] .
+   * Stato espanso o compresso per [!UICONTROL le opzioni Soluzioni], [!UICONTROL Aiuto], [!UICONTROL Inbox]e [!UICONTROL Utente] .
 
-   * il messaggio di stato della Guida [!UICONTROL di] ricerca che viene visualizzato quando l’utente immette una stringa di ricerca nel campo [!UICONTROL Cerca nella Guida] , nell’opzione [!UICONTROL Aiuto] .
+   * Il messaggio di stato della Guida [!UICONTROL di] ricerca visualizzato quando l’utente immette una stringa di ricerca nel campo [!UICONTROL Cerca aiuto] in [!UICONTROL Aiuto] dell’opzioneAiuto.
 
    ![Menu Aiuto nell&#39;intestazione](assets/Help_aem_header.png)
 
-   *Figura:[!UICONTROL Cerca Aiuto]nel menu[!UICONTROL Aiuto]*
+   *Figura:[!UICONTROL Cercate Aiuto]nel menu[!UICONTROL Aiuto].*
 
-   * il messaggio di errore se nel campo [!UICONTROL Impersona come] è stato immesso un valore non corretto nell&#39;opzione [!UICONTROL Utente] e lo stato attivo si sposta correttamente nel campo di testo (NPR-33804).
+   * Il messaggio di errore se il valore errato viene immesso nel campo [!UICONTROL Impersona come] nell&#39;opzione [!UICONTROL Utente] e lo stato attivo si sposta correttamente nel campo di testo (NPR-33804).
 
    ![Menu utente nell’intestazione](assets/User_aem_header.png)
 
-   *Figura:[!UICONTROL Impersona come]campo nel menu[!UICONTROL Utente]nell’intestazione*
+   *Figura:[!UICONTROL Impersona come]campo nel menu[!UICONTROL Utente]nell’intestazione.*
 
-* L&#39;utente può ora spostare lo stato attivo utilizzando i tasti della tastiera:
+* L&#39;utente ora può cambiare lo stato attivo utilizzando la tastiera all&#39;interno di:
 
-   * [!UICONTROL Campo Cerca/Aggiungi indirizzo] e-mail nella finestra di dialogo Condivisione  collegamenti.
+   * [!UICONTROL Cerca/aggiungi indirizzo] e-mail nella finestra di dialogo Condivisione  collegamento.
 
-   * [!UICONTROL Aggiungi campo Utente o Gruppo] in Gruppo [!UICONTROL utenti] chiuso nella scheda [!UICONTROL Autorizzazioni] delle [!UICONTROL proprietà] della cartella (NPR-34452).
+   * [!UICONTROL Aggiungete il campo Utente o Gruppo] in Gruppo [!UICONTROL utenti] chiuso nella scheda [!UICONTROL Autorizzazioni] di [!UICONTROL Proprietà] cartella (NPR-34452).
 
 **Problemi risolti in Risorse  Experience Manager**
 
-[!DNL Adobe Experience Manager] 6.5.6.0 Assets risolve i seguenti problemi:
+[!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] risolve i seguenti problemi:
 
-* L&#39;anteprima delle risorse collaterali di marketing (come Brochure, Volantino e Biglietto da visita) create con il modello [!DNL Adobe InDesign] (INDD) non contiene interruzioni di riga e interruzioni di paragrafo (NPR-34268).
+* L&#39;anteprima delle risorse collaterali di marketing (come Brochure, Volantino e Biglietto da visita) create con [!DNL Adobe InDesign] il modello non mostra interruzioni di riga e interruzioni di paragrafo (NPR-34268).
 
-* L&#39;estrazione del testo per i file PDF caricati non funziona e la ricerca full-text di alcune parole in un file PDF non riesce a recuperare il file PDF (NPR-34164).
-
-   >[!NOTE]
-   >Per risolvere il problema, riavviate l&#39;istanza di Adobe Experience Manager dopo l&#39;installazione di Service Pack 6.5.6.0.
+* L&#39;estrazione del testo e quindi la ricerca full-text per i file PDF caricati non funziona (NPR-34164). Per risolvere il problema, riavviate la [!DNL sAdobe Experience Manager] distribuzione dopo l&#39;installazione di Service Pack 6.
 
 * Nella timeline di risorse con più pagine vengono visualizzate le annotazioni applicate a tutte le risorse secondarie quando si sfoglia la risorsa nella visualizzazione Timeline, invece di visualizzare le annotazioni specifiche per le risorse secondarie specifiche (NPR-34100).
 
@@ -205,11 +202,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 * Quando si creano regole per l&#39;elenco a discesa nel modulo [!UICONTROL Schema metadati]cartella, l&#39;utente non può selezionare valori dalla colonna Scelte  campo (CQ-4297530).
 
-* La copia in fase di esecuzione del modello di flusso di lavoro personalizzato delle risorse (creato in `/var/workflow/models/dam`) viene eliminata quando si installa 6.5 Service Pack 5 o versioni precedenti in 6.5 GA (NPR-34532).
-
-   >[!NOTE]
-   >
-   >L&#39;aggiornamento a [!DNL Experience Manager] 6.5 Service Pack 6 non recupera la copia in fase di esecuzione, se la copia in fase di esecuzione viene eliminata al momento dell&#39;installazione di [!DNL Experience Manager] 6.5 Service Pack 5 o versioni precedenti al 6.5 GA. Per recuperare la copia in fase di esecuzione, sincronizzate la copia in fase di progettazione del modello di workflow con la copia in fase di esecuzione mediante l’API HTTP:
+* La copia in fase di esecuzione del modello di flusso di lavoro personalizzato delle risorse (creato in `/var/workflow/models/dam`) viene eliminata quando installate [!DNL Experience Manager] 6.5 Service Pack 5 o una versione precedente il [!DNL Experience Manager] 6.5 (NPR-34532). Per recuperare la copia in fase di esecuzione, sincronizzate la copia in fase di progettazione del modello di workflow con la copia in fase di esecuzione mediante l’API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
 **Problemi risolti in Contenuti multimediali dinamici**
@@ -410,7 +403,7 @@ B. Utilizzate l&#39;API [HTTP da Package Manager](https://docs.adobe.com/content
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. Il bundle OSGI `org.apache.jackrabbit.oak-core` è della versione 1.22.3 o successiva (Usa console Web: `/system/console/bundles`).
+1. Il bundle OSGi `org.apache.jackrabbit.oak-core` è della versione 1.22.3 o successiva (Usa console Web: `/system/console/bundles`).
 
 Per conoscere le piattaforme certificate per l’utilizzo con questa versione, consulta i requisiti [tecnici](/help/sites-deploying/technical-requirements.md).
 
@@ -453,7 +446,7 @@ Per utilizzare UberJar in un progetto Maven, consulta [come utilizzare UberJar](
 
 ## Funzioni obsolete {#removed-deprecated-features}
 
-In questa sezione sono elencate le funzionalità contrassegnate come obsolete con AEM 6.5.6.0. Le funzioni pianificate per essere rimosse in una versione futura sono impostate per prime su obsoleto, con un&#39;opzione alternativa da utilizzare.
+In questa sezione sono elencate le funzionalità contrassegnate come obsolete con  Experience Manager 6.5.6.0. Le funzioni pianificate per essere rimosse in una versione futura sono impostate per prime su obsoleto, con un&#39;opzione alternativa da utilizzare.
 
 Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzionalità nella distribuzione corrente e di pianificare la modifica della propria implementazione per utilizzare l&#39;opzione alternativa.
 
@@ -464,7 +457,7 @@ Si consiglia ai clienti di verificare se utilizzano la funzionalità o la funzio
 
 ## Problemi noti {#known-issues}
 
-* Se installate [!DNL Experience Manager] 6.5 Service Pack 5 o versioni precedenti su 6.5 GA, la copia in fase di esecuzione del modello di flusso di lavoro personalizzato delle risorse (creato in `/var/workflow/models/dam`) viene eliminata.
+* Se installate [!DNL Experience Manager] 6.5 Service Pack 5 o un service pack precedente al [!DNL Experience Manager] 6.5, la copia in fase di esecuzione del modello di flusso di lavoro personalizzato delle risorse (creato in `/var/workflow/models/dam`) viene eliminata.
 Per recuperare la copia in fase di esecuzione,  Adobe suggerisce di sincronizzare la copia in fase di progettazione del modello di flusso di lavoro personalizzato con la relativa copia in fase di esecuzione tramite l&#39;API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
