@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
+source-git-commit: 4f6b2bbb58f7f18798eb01a6c8f2cef4b02063a3
 workflow-type: tm+mt
-source-wordcount: '4402'
+source-wordcount: '4413'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,7 @@ Le funzioni chiave e i miglioramenti introdotti in Adobe Experience Manager 6.5.
 
 * Supporto per  tag di testo Adobe Sign in Automated Forms Conversion Service.
 
-* Supporto per la conversione di moduli colorati in moduli adattivi tramite [!DNL Automated Forms Conversion service].
+* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
 
 * Supporto per i protocolli SMB 2 e SMB 3.
 
@@ -169,6 +169,8 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 **Problemi risolti in Risorse  Experience Manager**
 
 [!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] risolve i seguenti problemi:
+
+* Le annotazioni non sono evidenziate se selezionate dalla timeline della risorsa (CQ-4302422).
 
 * L&#39;anteprima delle risorse collaterali di marketing (come Brochure, Volantino e Biglietto da visita) create con [!DNL Adobe InDesign] il modello non mostra interruzioni di riga e interruzioni di paragrafo (NPR-34268).
 
