@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack
 description: Note sulla versione per [!DNL Adobe Experience Manager] i Service Pack 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
+source-git-commit: 5db4dd7ccc7d722f0503b22fdd5ff9e5508be4ea
 workflow-type: tm+mt
-source-wordcount: '11438'
+source-wordcount: '11482'
 ht-degree: 26%
 
 ---
@@ -74,6 +74,10 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * Gli utenti anonimi possono accedere alle funzioni CRXDE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
+
+>[!IMPORTANT]
+>
+>Agli utenti Windows di [!DNL Experience Manager desktop app] è consigliabile effettuare l&#39;aggiornamento all&#39;app [desktop versione 2.0.3.2](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) per accedere all&#39;archivio DAM sull&#39; [!DNL Adobe Experience Manager 6.5.5.0] istanza. In quanto possono rilevare problemi durante l&#39;accesso all&#39;archivio DAM nell&#39;istanza [!DNL Adobe Experience Manager] 6.5.5.0 tramite l&#39;app desktop versione 2.0.2.
 
 **Miglioramenti dell&#39;accessibilità in  risorse Experience Manager**
 
@@ -709,7 +713,7 @@ Remove one mention of this fix.
 
 ### Ricerca e interfaccia utente {#ui-interface-and-search}
 
-* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima dello scorrimento della pagina (NPR-31286).
+* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima che la pagina possa essere scorrevole (NPR-31286).
 
 * La casella di controllo [!UICONTROL Seleziona tutto] è nascosta nella vista a elenco dell&#39;interfaccia [!DNL Sites] utente (NPR-31614).
 
