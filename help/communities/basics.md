@@ -1,8 +1,8 @@
 ---
 title: Nozioni di base sui componenti per community
 seo-title: Nozioni di base sui componenti per community
-description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione di componenti
-seo-description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione di componenti
+description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione dei componenti
+seo-description: Aggiunta di funzioni di Communities ai siti AEM in modalità di modifica e configurazione dei componenti
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-La sezione relativa all’authoring della documentazione descrive l’aggiunta delle funzioni di Communities ai siti AEM in modalità di modifica dell’autore e descrive le configurazioni dei componenti.
+La sezione relativa all’authoring della documentazione descrive l’aggiunta delle funzioni di Communities ai siti AEM in modalità di modifica dell’autore, nonché la descrizione delle configurazioni dei componenti.
 
-I componenti possono essere esplorati utilizzando un’istanza di AEM e la guida [interattiva sui componenti](components-guide.md)community.
+I componenti possono essere esplorati utilizzando un&#39;istanza AEM e la guida [interattiva sui componenti](components-guide.md)community.
 
 ## Accesso ai componenti Community {#accessing-communities-components}
 
@@ -36,7 +36,7 @@ I componenti Community disponibili sono elencati [qui](author-communities.md#ava
 >
 >Per informazioni generali sull’authoring, consulta la guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se non hai familiarità con AEM, consulta la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
+>Se non avete familiarità con AEM, consultate la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
 
 
 ### Accesso alla modalità Progettazione {#entering-design-mode}
@@ -47,13 +47,13 @@ Per informazioni dettagliate, consultate [Configurazione dei componenti in modal
 
 Di seguito sono riportate le immagini che mostrano come selezionare alcuni componenti Community e visualizzarli nel browser Componenti:
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![progettazione di componenti](assets/component-design.png)
 
 I componenti selezionati sono ora disponibili nel browser Componenti:
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![component-design1](assets/component-design1.png)
 
-## Clientlibs richiesti {#required-clientlibs}
+## ClientLibs richiesti {#required-clientlibs}
 
 [Le librerie](../../help/sites-developing/clientlibs.md) lato client (clientlibs) sono necessarie per il corretto funzionamento (JavaScript) e lo stile (CSS) di un componente.
 
@@ -61,11 +61,11 @@ Quando si aggiunge un componente Community a una pagina, se il risultato è un e
 
 ### Esempio: Recensioni posizionate inizialmente senza librerie client... {#example-initially-placed-reviews-without-client-libraries}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![clientlibs1](assets/clientlibs1.png)
 
 ### ... E con le librerie client {#and-with-client-libraries}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![clientlibs2](assets/clientlibs2.png)
 
 ## Assegnazione tag {#tagging}
 
