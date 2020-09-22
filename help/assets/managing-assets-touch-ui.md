@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
 workflow-type: tm+mt
-source-wordcount: '9240'
+source-wordcount: '9370'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->* La condivisione di una [!DNL Assets] cartella di tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una [!DNL Assets] cartella del tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
 >* [!DNL Experience Manager] non consente l&#39;utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
 
 
@@ -72,64 +72,76 @@ Prima di caricare una risorsa, assicuratevi che sia in un [formato](/help/assets
 
    ![Barra di avanzamento del caricamento delle risorse](assets/upload-progress-bar.png)
 
-   È possibile configurare la dimensione sopra la quale una risorsa viene considerata una risorsa grande. Ad esempio, potete configurare il sistema affinché consideri le risorse superiori ai 1000 MB (invece dei 500 MB) come risorse grandi. In questo caso, **[!UICONTROL la pausa]** viene visualizzata sulla barra di avanzamento quando vengono caricate risorse di dimensioni superiori a 1000 MB.
+È possibile configurare la dimensione sopra la quale una risorsa viene considerata una risorsa grande. Ad esempio, potete configurare il sistema affinché consideri le risorse superiori ai 1000 MB (invece dei 500 MB) come risorse grandi. In questo caso, **[!UICONTROL la pausa]** viene visualizzata sulla barra di avanzamento quando vengono caricate risorse di dimensioni superiori a 1000 MB.
 
-   Il pulsante Pausa non viene visualizzato se un file maggiore di 1000 MB viene caricato con un file inferiore a 1000 MB. Tuttavia, se annullate il caricamento di file di dimensioni inferiori a 1000 MB, viene visualizzato il pulsante **[!UICONTROL Pausa]** .
+Il pulsante Pausa non viene visualizzato se un file maggiore di 1000 MB viene caricato con un file inferiore a 1000 MB. Tuttavia, se annullate il caricamento di file di dimensioni inferiori a 1000 MB, viene visualizzato il pulsante **[!UICONTROL Pausa]** .
 
-   Per modificare il limite di dimensioni, configurare la `chunkUploadMinFileSize` proprietà del `fileupload`nodo nell&#39;archivio CRX.
+Per modificare il limite di dimensioni, configurare la `chunkUploadMinFileSize` proprietà del `fileupload`nodo nell&#39;archivio CRX.
 
-   Quando fate clic su **[!UICONTROL Pausa]**, viene attivata l’opzione **[!UICONTROL Riproduci]** . Per riprendere il caricamento, fate clic su **[!UICONTROL Riproduci]**.
+Quando fate clic su **[!UICONTROL Pausa]**, viene attivata l’opzione **[!UICONTROL Riproduci]** . Per riprendere il caricamento, fate clic su **[!UICONTROL Riproduci]**.
 
-   ![Riprendere il caricamento della risorsa in pausa](assets/resume-paused-upload.png)
+![Riprendere il caricamento della risorsa in pausa](assets/resume-paused-upload.png)
 
-   Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, [!DNL Assets] elimina la parte parzialmente caricata della risorsa.
+Per annullare un caricamento in corso, fate clic su Chiudi (`X`) accanto alla barra di avanzamento. Quando annullate l’operazione di caricamento, [!DNL Assets] elimina la parte parzialmente caricata della risorsa.
 
-   La possibilità di riprendere il caricamento è particolarmente utile in situazioni con larghezza di banda ridotta e problemi di rete, in cui il caricamento di una risorsa di grandi dimensioni richiede molto tempo. Potete mettere in pausa l’operazione di caricamento e continuare in seguito quando la situazione migliora. Quando si riprende, il caricamento inizia dal punto in cui è stato messo in pausa.
+La possibilità di riprendere il caricamento è particolarmente utile in situazioni con larghezza di banda ridotta e problemi di rete, in cui il caricamento di una risorsa di grandi dimensioni richiede molto tempo. Potete mettere in pausa l’operazione di caricamento e continuare in seguito quando la situazione migliora. Quando si riprende, il caricamento inizia dal punto in cui è stato messo in pausa.
 
-   Durante l’operazione di caricamento, [!DNL Experience Manager] salva le porzioni della risorsa caricata come blocchi di dati nell’archivio CRX. Al termine del caricamento, [!DNL Experience Manager] consolida questi blocchi in un singolo blocco di dati nell’archivio.
+Durante l’operazione di caricamento, [!DNL Experience Manager] salva le porzioni della risorsa caricata come blocchi di dati nell’archivio CRX. Al termine del caricamento, [!DNL Experience Manager] consolida questi blocchi in un singolo blocco di dati nell’archivio.
 
-   Per configurare l’attività di pulizia per i processi di caricamento dei blocchi non ancora completati, passate a `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
+Per configurare l’attività di pulizia per i processi di caricamento dei blocchi non ancora completati, passate a `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
-   Se caricate una risorsa con lo stesso nome di una già disponibile nel percorso in cui state caricando la risorsa, viene visualizzata una finestra di dialogo di avviso.
-
-   Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tenerle entrambe rinominando la nuova risorsa caricata. Se sostituite una risorsa esistente, i metadati della risorsa e le eventuali modifiche precedenti (ad esempio, annotazione o ritaglio) apportate alla risorsa esistente vengono eliminati. Se scegliete di mantenere entrambe le risorse, la nuova risorsa viene rinominata con un numero `1` aggiunto al nome.
-
-   ![Finestra di dialogo Conflitto nome per risolvere il conflitto tra i nomi delle risorse](assets/resolve-naming-conflict.png)
-
-   >[!NOTE]
+>[!CAUTION]
+>
+>Il valore predefinito quando viene attivato il caricamento del blocco è 500 MB e la dimensione del blocco è 50 MB. Se modificate la configurazione [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) per impostare `timeout configuration` un valore inferiore al tempo necessario per il caricamento di una risorsa, potete eseguire una situazione di timeout sessione mentre è in corso il caricamento della risorsa. Pertanto, è necessario modificare l’ `chunkUploadMinFileSize` e `chunksize`, in modo che ogni richiesta di blocco aggiorni la sessione.
+>
+>Dati il timeout della scadenza delle credenziali, la latenza, la larghezza di banda e i caricamenti simultanei previsti, il valore più alto che consente di garantire che vengano selezionati i due valori seguenti:
+>
+>* Per fare in modo che il caricamento dei blocchi sia abilitato per i file con dimensioni tali da causare la scadenza delle credenziali durante il caricamento.
    >
-   >Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
    >
-   >Se Asset Insights è abilitato per tenere traccia di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Analytics.
+* Per assicurarsi che ogni blocco venga completato prima della scadenza della credenziale.
 
-   Se la risorsa caricata esiste in [!DNL Assets], la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che state tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore `SHA 1` checksum del binario della risorsa esistente corrisponde al valore checksum della risorsa caricata. In questo caso, i nomi delle risorse non contano.
 
-   >[!NOTE]
-   >
-   >La finestra di dialogo [!UICONTROL Duplicati rilevati] viene visualizzata solo quando è attivata la funzione di rilevamento duplicati. Per abilitare la funzione di rilevamento dei duplicati, consultate [Abilitare il rilevamento](/help/assets/duplicate-detection.md)dei duplicati.
+Se caricate una risorsa con lo stesso nome di una già disponibile nel percorso in cui state caricando la risorsa, viene visualizzata una finestra di dialogo di avviso.
 
-   ![Finestra di dialogo Duplica risorsa rilevata](assets/duplicate-asset-detected.png)
+Potete scegliere di sostituire una risorsa esistente, crearne un’altra o tenerle entrambe rinominando la nuova risorsa caricata. Se sostituite una risorsa esistente, i metadati della risorsa e le eventuali modifiche precedenti (ad esempio, annotazione o ritaglio) apportate alla risorsa esistente vengono eliminati. Se scegliete di mantenere entrambe le risorse, la nuova risorsa viene rinominata con un numero `1` aggiunto al nome.
 
-   Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, fate clic su **[!UICONTROL Elimina]**.
+![Finestra di dialogo Conflitto nome per risolvere il conflitto tra i nomi delle risorse](assets/resolve-naming-conflict.png)
 
-   [!DNL Experience Manager Assets] impedisce il caricamento di risorse con i caratteri proibiti nel nome del file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito.
+>[!NOTE]
+>
+>Quando selezionate **[!UICONTROL Sostituisci]** nella finestra di dialogo Conflitto  nome, l’ID risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso dall’ID della risorsa precedente.
+>
+>Se Asset Insights è abilitato per tenere traccia di impression/clic con  Adobe Analytics, l’ID risorsa rigenerato invalida i dati acquisiti per la risorsa in Analytics.
 
-   Per soddisfare convenzioni di denominazione dei file specifiche per la vostra organizzazione, la finestra di dialogo [!UICONTROL Carica risorse] consente di specificare nomi lunghi per i file caricati.
+Se la risorsa caricata esiste in [!DNL Assets], la finestra di dialogo **[!UICONTROL Duplicati rilevati]** avvisa che state tentando di caricare una risorsa duplicata. La finestra di dialogo viene visualizzata solo se il valore `SHA 1` checksum del binario della risorsa esistente corrisponde al valore checksum della risorsa caricata. In questo caso, i nomi delle risorse non contano.
 
-   Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
+>[!NOTE]
+>
+>La finestra di dialogo [!UICONTROL Duplicati rilevati] viene visualizzata solo quando è attivata la funzione di rilevamento duplicati. Per abilitare la funzione di rilevamento dei duplicati, consultate [Abilitare il rilevamento](/help/assets/duplicate-detection.md)dei duplicati.
 
-   * il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
-   * il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+![Finestra di dialogo Duplica risorsa rilevata](assets/duplicate-asset-detected.png)
 
-   Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
+Per mantenere la risorsa duplicata in [!DNL Assets], fate clic su **[!UICONTROL Mantieni]**. Per eliminare la risorsa duplicata caricata, fate clic su **[!UICONTROL Elimina]**.
 
-   ![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/bulk-upload-progress.png)
+[!DNL Experience Manager Assets] impedisce il caricamento di risorse con i caratteri proibiti nel nome del file. Se provate a caricare una risorsa con un nome file contenente un carattere non consentito o più, [!DNL Assets] visualizza un messaggio di avviso e interrompe il caricamento fino a quando non rimuovete questi caratteri o lo caricate con un nome consentito.
 
-   Inoltre, l’interfaccia [!DNL Assets] utente mostra la risorsa più recente caricata o la cartella creata per la prima volta.
+Per rispettare convenzioni di denominazione dei file specifiche per la vostra azienda, la finestra di dialogo [!UICONTROL Carica risorse] consente di specificare nomi lunghi per i file caricati.
 
-   Se annullate l’operazione di caricamento prima del caricamento dei file, [!DNL Assets] interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
+Tuttavia, i seguenti caratteri (elenco separato da spazi) non sono supportati:
 
-   Nella finestra di dialogo di avanzamento del caricamento [!DNL Assets] viene visualizzato il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
+* il nome del file di risorse non deve contenere `* / : [ \\ ] | # % { } ? &`
+* il nome della cartella di risorse non deve contenere `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Non includete caratteri speciali nelle estensioni dei nomi file delle risorse.
+
+![La finestra di dialogo di avanzamento del caricamento mostra lo stato dei file e dei file caricati correttamente che non possono essere caricati](assets/bulk-upload-progress.png)
+
+Inoltre, l’interfaccia [!DNL Assets] utente mostra la risorsa più recente caricata o la cartella creata per la prima volta.
+
+Se annullate l’operazione di caricamento prima del caricamento dei file, [!DNL Assets] interrompe il caricamento del file corrente e aggiorna il contenuto. Tuttavia, i file già caricati non vengono eliminati.
+
+Nella finestra di dialogo di avanzamento del caricamento [!DNL Assets] viene visualizzato il numero di file caricati correttamente e i file che non sono stati caricati correttamente.
 
 ### Caricamenti seriali {#serialuploads}
 
@@ -180,7 +192,7 @@ Per annullare un processo di caricamento in corso, fate clic su **[!UICONTROL An
 |---|---|---|
 | Nome processo |  | Il nome predefinito precompilato nel campo di testo include la parte del nome immessa dall&#39;utente e la data e l&#39;ora. Per questo processo di caricamento potete usare il nome predefinito o immettere un nome personalizzato per la creazione. <br>Il processo e gli altri processi di caricamento e pubblicazione vengono registrati nella pagina Processi, dove è possibile controllarne lo stato. |
 | Pubblica dopo il caricamento |  | Pubblica automaticamente le risorse caricate. |
-| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione può essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
+| Sovrascrivi in qualsiasi cartella, nome come risorsa base, indipendentemente dall’estensione |  | Selezionate questa opzione se desiderate che i file caricati sostituiscano quelli esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in Impostazione **[!UICONTROL applicazione > Impostazioni]** **[!UICONTROL generali >]** Carica nell’applicazione **[!UICONTROL >]** Sovrascrivi immagini ****. |
 | Annulla compressione file ZIP o Tar durante il caricamento |  |  |
 | Opzioni processo |  | Fate clic su Opzioni **** processo per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento e scegliete le opzioni che interessano l’intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>Potete scegliere le opzioni predefinite per caricare i file dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliete **[!UICONTROL Configurazione]** > Impostazione **** applicazione. Fate clic sul pulsante Opzioni **[!UICONTROL di caricamento]** predefinite per aprire la finestra di dialogo Opzioni [!UICONTROL processo di] caricamento. |
 |  | Quando  | Selezionate Una tantum o Periodico. Per impostare un processo periodico, scegliete un’opzione Ripeti (Quotidianamente, Settimanalmente, Mensilmente o Personalizzato) per specificare quando eseguire il processo di caricamento FTP. Quindi specificate le opzioni di pianificazione in base alle esigenze. |
@@ -283,7 +295,7 @@ Scegliete tra le seguenti opzioni:
 |  | Forza come CMYK | Effettua la conversione nello spazio colore CMYK. |
 |  | Forza come scala di grigio | Effettua la conversione nello spazio colore Scala di grigio. |
 
-#### Impostare le opzioni di caricamento di eVideo {#setting-evideo-upload-options}
+#### Impostare le opzioni di caricamento per eVideo {#setting-evideo-upload-options}
 
 Per transcodificare un file video scegliendo tra diversi predefiniti per video.
 
@@ -357,7 +369,7 @@ Per visualizzare in anteprima una risorsa mediante la tastiera, effettuate le se
 
 >[!MORELIKETHIS]
 >
->* [Visualizzare in anteprima le risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
+>* [Visualizzare l’anteprima delle risorse](/help/assets/previewing-assets.md)multimediali dinamiche.
 >* [Visualizzare le risorse](managing-linked-subassets.md#viewing-subassets)secondarie.
 
 
@@ -595,7 +607,7 @@ Consultate [Scaricare risorse da  Experience Manager](/help/assets/download-asse
 
 ## Gruppo utenti chiuso {#closed-user-group}
 
-Per limitare l’accesso a specifiche cartelle di risorse pubblicate, viene utilizzato un gruppo di utenti chiuso (CUG) [!DNL Experience Manager]. Se create un gruppo di utenti chiuso per una cartella, l’accesso alla cartella (comprese le risorse e le sottocartelle) è limitato solo ai membri o ai gruppi assegnati. Per accedere alla cartella, devono accedere utilizzando le credenziali di protezione.
+Per limitare l’accesso a specifiche cartelle di risorse pubblicate viene utilizzato un gruppo di utenti chiuso (CUG) [!DNL Experience Manager]. Se create un gruppo di utenti chiuso per una cartella, l’accesso alla cartella (comprese le risorse e le sottocartelle) è limitato solo ai membri o ai gruppi assegnati. Per accedere alla cartella, devono accedere utilizzando le credenziali di protezione.
 
 I COG consentono di limitare l’accesso alle risorse. Potete anche configurare una pagina di login per la cartella.
 
@@ -860,7 +872,7 @@ Di seguito è riportato un esempio di come è possibile configurare [!DNL Experi
 
 ## Creare, gestire, visualizzare in anteprima e ripristinare le versioni delle risorse {#asset-versioning}
 
-Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, se desiderate annullare una modifica apportata a una risorsa, ripristinate la versione non modificata della risorsa. In [!DNL Experience Manager]potete creare una versione, visualizzare la revisione corrente, visualizzare le differenze affiancate tra due versioni delle immagini e ripristinare la versione precedente di una risorsa.
+Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. La gestione delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, se desiderate annullare una modifica apportata a una risorsa, ripristinate la versione non modificata della risorsa. In [!DNL Experience Manager]potete creare una versione, visualizzare la revisione corrente, visualizzare le differenze affiancate tra due versioni delle immagini e ripristinare la versione precedente di una risorsa.
 
 Potete creare versioni [!DNL Experience Manager] nei seguenti scenari:
 
