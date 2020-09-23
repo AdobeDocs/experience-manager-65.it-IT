@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 8%
+source-wordcount: '1676'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## Introduzione {#introduction}
 
-La funzione blog per i AEM Communities si è trasformata da attività di authoring a una vera e propria attività della community che si svolge nell’ambiente di pubblicazione.
+La funzione blog di  AEM Communities è stata trasformata da attività di authoring a vera e propria attività della community che si svolge nell’ambiente di pubblicazione.
 
 La funzione blog supporta la fornitura di informazioni sulla community in un formato di pubblicazione. Le voci di blog vengono inserite nell’ambiente di pubblicazione da membri autorizzati (utenti registrati e con accesso).
 
@@ -47,7 +47,7 @@ Questa sezione della documentazione descrive quanto segue:
 >
 >I componenti `Journal` e `Journal Sidebar` sono denominati `Blog` e `Blog Sidebar`.
 >
->La funzione blog disponibile in AEM 6.0 e nelle versioni precedenti è stata rimossa. Era basato su un modello e consentiva solo agli autori di creare contenuti nell’ambiente di authoring.
+>La funzione blog di AEM 6.0 e versioni precedenti è stata rimossa. Era basato su un modello e consentiva solo agli autori di creare contenuti nell’ambiente di authoring.
 
 
 ## Aggiunta di componenti blog a una pagina {#adding-blog-components-to-a-page}
@@ -63,17 +63,13 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando sono incluse le librerie [lato client](/help/communities/blog-developer-basics.md#essentials-for-client-side) richieste, verrà visualizzato il `Blog` componente:
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-E come `Blog Sidebar` apparirà:
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### Configurazione del blog {#configuring-blog}
 
 Selezionate il `Blog` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![configure](assets/configure-new.png)
 
 ![Impostazioni blog](assets/blog-configure.png)
 
@@ -239,7 +235,7 @@ Nella scheda Campo **** tag, specificate i tag che possono essere applicati se n
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
@@ -307,7 +303,7 @@ Gli articoli del blog verranno visualizzati nella scheda appropriata (Pubblicato
 
 Quando l&#39;utente che ha effettuato l&#39;accesso dispone di privilegi di moderatore o amministratore, può eseguire attività [di](/help/communities/moderate-ugc.md) moderazione (come consentito dalla configurazione del componente) su tutti gli articoli di blog e i commenti inviati a un blog.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![moderatore-homepage](assets/moderator-homepage.png)
 
 #### Membri {#members}
 
@@ -322,15 +318,15 @@ In particolare, essi possono:
 * Eliminare un proprio articolo o commento di blog
 * Contrassegnare gli articoli o i commenti di altri blog
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![home page](assets/member-homepage.png)
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### Anonimo {#anonymous}
 
 I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere articoli e commenti di blog postati, tradurli se supportati, ma non possono aggiungere un articolo o un commento di blog né contrassegnare gli articoli o i commenti di altri utenti.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![visualizzazione utente anonima](assets/anonymous-user-view.png)
 
 ## Informazioni aggiuntive {#additional-information}
 
