@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '9370'
+source-wordcount: '9368'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->* La condivisione di una [!DNL Assets] cartella del tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una [!DNL Assets] cartella di tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
 >* [!DNL Experience Manager] non consente l&#39;utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
 
 
@@ -94,7 +94,7 @@ Per configurare l’attività di pulizia per i processi di caricamento dei blocc
 >
 >Il valore predefinito quando viene attivato il caricamento del blocco è 500 MB e la dimensione del blocco è 50 MB. Se modificate la configurazione [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) per impostare `timeout configuration` un valore inferiore al tempo necessario per il caricamento di una risorsa, potete eseguire una situazione di timeout sessione mentre è in corso il caricamento della risorsa. Pertanto, è necessario modificare l’ `chunkUploadMinFileSize` e `chunksize`, in modo che ogni richiesta di blocco aggiorni la sessione.
 >
->Dati il timeout della scadenza delle credenziali, la latenza, la larghezza di banda e i caricamenti simultanei previsti, il valore più alto che consente di garantire che vengano selezionati i due valori seguenti:
+>In considerazione del timeout della scadenza delle credenziali, della latenza, della larghezza di banda e dei caricamenti simultanei previsti, il valore più alto che consente di garantire che vengano selezionati i seguenti elementi:
 >
 >* Per fare in modo che il caricamento dei blocchi sia abilitato per i file con dimensioni tali da causare la scadenza delle credenziali durante il caricamento.
    >
