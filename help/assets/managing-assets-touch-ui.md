@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '9368'
+source-wordcount: '9410'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->* La condivisione di una [!DNL Assets] cartella di tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una [!DNL Assets] cartella del tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
 >* [!DNL Experience Manager] non consente l&#39;utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
 
 
@@ -538,25 +538,30 @@ Per ulteriori informazioni sulla generazione e la visualizzazione di risorse sec
 
 Per eliminare le risorse, un utente deve disporre di autorizzazioni di eliminazione per `dam/asset`. Se disponete solo di autorizzazioni di modifica, potete modificare solo i metadati della risorsa e aggiungere delle annotazioni alla risorsa. Tuttavia, non potete eliminare la risorsa o i relativi metadati.
 
-Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiornate i riferimenti pertinenti prima di eliminare una risorsa. Per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti, disattivate l’opzione Forza eliminazione con una sovrapposizione, .
+Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiornate i riferimenti pertinenti prima di eliminare una risorsa. Per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti, disattivate l’opzione di eliminazione forzata mediante una sovrapposizione.
 
-1. Andate alla posizione delle risorse che desiderate eliminare.
+Per eliminare una risorsa o una cartella contenente una risorsa:
 
-1. Selezionate la risorsa e fate clic sull’opzione **[!UICONTROL Elimina]** ![Elimina](assets/do-not-localize/deleteoutline.png) dalla barra degli strumenti.
+1. Andate alla posizione della risorsa o alla cartella da eliminare.
 
-1. Nella finestra di dialogo di conferma, selezionate una delle seguenti opzioni:
+1. Selezionate la risorsa o la cartella, quindi fate clic sull’opzione **[!UICONTROL Elimina]** ![Elimina](assets/do-not-localize/deleteoutline.png) dalla barra degli strumenti.
 
-   * **[!UICONTROL Annulla]** per interrompere l’azione
-   * **[!UICONTROL Elimina]** per confermare l’azione:
+   Una volta confermata l&#39;eliminazione:
 
-      * Se la risorsa non dispone di riferimenti, viene eliminata.
-      * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti.** Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+   * Se la risorsa non dispone di riferimenti, viene eliminata.
 
+   * Se la risorsa dispone di riferimenti, un messaggio di errore vi informa che **Una o più risorse dispongono di riferimenti**. Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
    >[!NOTE]
    >
    >* Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiornate i riferimenti pertinenti prima di eliminare una risorsa. Inoltre, disattivate il pulsante Forza eliminazione con una sovrapposizione, per impedire agli utenti di eliminare le risorse di riferimento e di lasciare i collegamenti interrotti.
    >* È possibile eliminare una *cartella* che contiene i file di risorse estratti. Prima di eliminare una cartella, accertatevi che gli utenti non dispongano di risorse digitali.
 
+
+>[!NOTE]
+>
+>Se eliminate una cartella utilizzando il metodo indicato sopra dall’interfaccia utente, vengono eliminati anche i gruppi di utenti associati.
+>
+>Tuttavia, i gruppi di utenti ridondanti, non utilizzati e generati automaticamente possono essere eliminati dall’archivio utilizzando `clean` il metodo JMX nell’istanza di creazione (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 ## Scaricare le risorse {#downloading-assets}
 
