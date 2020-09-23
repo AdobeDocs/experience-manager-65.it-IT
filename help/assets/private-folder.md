@@ -1,23 +1,27 @@
 ---
-title: Create e condividete una cartella privata in [!DNL Adobe Experience Manager].
+title: Cartella privata in [!DNL Adobe Experience Manager Assets]
 description: Scoprite come creare una cartella privata in [!DNL Adobe Experience Manager Assets] e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '642'
 ht-degree: 1%
 
 ---
 
 
-# Condivisione di cartelle private {#private-folder-sharing}
+# Cartella privata in [!DNL Adobe Experience Manager Assets] {#private-folder}
 
 Potete creare una cartella privata nell’interfaccia [!DNL Adobe Experience Manager Assets] utente disponibile esclusivamente per voi. Potete condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificarle.
 
 >[!NOTE]
 >
 >La cartella privata ha almeno un membro con il ruolo Proprietario.
+
+## Creazione e condivisione di cartelle private {#create-share-private-folder}
+
+Per creare e condividere una cartella privata:
 
 1. Nella [!DNL Assets] console, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegliete **[!UICONTROL Cartella]** dal menu.
 
@@ -64,3 +68,25 @@ Potete creare una cartella privata nell’interfaccia [!DNL Adobe Experience Man
 >[!NOTE]
 >
 >Per creare una cartella privata, è necessario disporre delle autorizzazioni di lettura e modifica ACL per la cartella principale in cui si desidera creare una cartella privata. Se non siete un amministratore, per impostazione predefinita tali autorizzazioni non sono abilitate per voi in `/content/dam`. In questo caso, ottenete prima queste autorizzazioni per l’ID utente o il gruppo prima di tentare di creare cartelle private o visualizzare le impostazioni delle cartelle.
+
+## Eliminazione di cartelle private {#delete-private-folder}
+
+Per eliminare una cartella privata, selezionate la cartella e selezionate l’opzione [!UICONTROL Elimina] dal menu principale, oppure utilizzate il tasto Backspace della tastiera.
+
+### Rimozione del gruppo di utenti nell’eliminazione delle cartelle {#group-removal-on-folder-deletion}
+
+Se eliminate una cartella privata utilizzando il metodo indicato sopra dall’interfaccia utente, vengono eliminati anche i gruppi di utenti associati. Tuttavia, i gruppi di utenti ridondanti, inutilizzati e generati automaticamente possono essere ripuliti dall&#39;archivio utilizzando [JMX](#group-clean-up-jmx).
+
+>[!CAUTION]
+>
+>Se eliminate una cartella privata dal CRXDE Lite , i gruppi di utenti ridondanti vengono lasciati nella directory archivio.
+
+### Utilizzare JMX per ripulire i gruppi di utenti inutilizzati {#group-clean-up-jmx}
+
+Per ripulire l’archivio dei gruppi di utenti non utilizzati:
+
+1. Apri JMX per eliminare i gruppi ridondanti per le risorse da `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+
+1. Richiama il `clean` metodo da questo JMX.
+
+Potete vedere che tutti i gruppi di utenti ridondanti o i gruppi generati automaticamente (creati al momento della creazione di una cartella privata con lo stesso nome di un gruppo eliminato in precedenza) vengono rimossi dal percorso `/home/groups/mac/default/<user_name>/<folder_name>`.
