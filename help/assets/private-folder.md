@@ -3,9 +3,9 @@ title: Cartella privata in [!DNL Adobe Experience Manager Assets]
 description: Scoprite come creare una cartella privata in [!DNL Adobe Experience Manager Assets] e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
@@ -67,26 +67,30 @@ Per creare e condividere una cartella privata:
 
 >[!NOTE]
 >
->Per creare una cartella privata, è necessario disporre delle autorizzazioni di lettura e modifica ACL per la cartella principale in cui si desidera creare una cartella privata. Se non siete un amministratore, per impostazione predefinita tali autorizzazioni non sono abilitate per voi in `/content/dam`. In questo caso, ottenete prima queste autorizzazioni per l’ID utente o il gruppo prima di tentare di creare cartelle private o visualizzare le impostazioni delle cartelle.
+>Per creare una cartella privata, è necessario disporre delle autorizzazioni [di controllo di](/help/sites-administering/security.md#permissions-in-aem) accesso Lettura e Modifica nella cartella principale in cui si desidera creare una cartella privata. Se non siete un amministratore, per impostazione predefinita tali autorizzazioni non sono abilitate per voi in `/content/dam`. In questo caso, ottenete prima queste autorizzazioni per l’ID utente o il gruppo prima di tentare di creare cartelle private.
 
 ## Eliminazione di cartelle private {#delete-private-folder}
 
-Per eliminare una cartella privata, selezionate la cartella e selezionate l’opzione [!UICONTROL Elimina] dal menu principale, oppure utilizzate il tasto Backspace della tastiera.
+Per eliminare una cartella, selezionatela e selezionate l’opzione [!UICONTROL Elimina] dal menu principale, oppure utilizzate il tasto Backspace della tastiera.
 
-### Rimozione del gruppo di utenti nell’eliminazione delle cartelle {#group-removal-on-folder-deletion}
-
-Se eliminate una cartella privata utilizzando il metodo indicato sopra dall’interfaccia utente, vengono eliminati anche i gruppi di utenti associati. Tuttavia, i gruppi di utenti ridondanti, inutilizzati e generati automaticamente possono essere ripuliti dall&#39;archivio utilizzando [JMX](#group-clean-up-jmx).
+![opzione Elimina nel menu principale](assets/delete-option.png)
 
 >[!CAUTION]
 >
 >Se eliminate una cartella privata dal CRXDE Lite , i gruppi di utenti ridondanti vengono lasciati nella directory archivio.
 
+>[!NOTE]
+>
+>Se eliminate una cartella utilizzando il metodo indicato sopra dall’interfaccia utente, vengono eliminati anche i gruppi di utenti associati.
+Tuttavia, i gruppi di utenti ridondanti, inutilizzati e generati automaticamente possono essere ripuliti dall&#39;archivio utilizzando [JMX](#group-clean-up-jmx).
+
 ### Utilizzare JMX per ripulire i gruppi di utenti inutilizzati {#group-clean-up-jmx}
 
 Per ripulire l’archivio dei gruppi di utenti non utilizzati:
 
-1. Apri JMX per eliminare i gruppi ridondanti per le risorse da `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+1. Aprite JMX per eliminare i gruppi ridondanti per le risorse nell’istanza di [!DNL Experience Manager] creazione da `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+Esempio, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
 
 1. Richiama il `clean` metodo da questo JMX.
 
-Potete vedere che tutti i gruppi di utenti ridondanti o i gruppi generati automaticamente (creati al momento della creazione di una cartella privata con lo stesso nome di un gruppo eliminato in precedenza) vengono rimossi dal percorso `/home/groups/mac/default/<user_name>/<folder_name>`.
+Potete vedere che tutti i gruppi di utenti ridondanti o i gruppi generati automaticamente (creati al momento della creazione di una cartella con lo stesso nome di un gruppo eliminato in precedenza) vengono rimossi dal percorso `/home/groups/mac/default/<user_name>/<folder_name>`.
