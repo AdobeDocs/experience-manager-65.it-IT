@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2480'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Ora potete scegliere se pubblicare o annullare la pubblicazione selettiva delle 
 
 ### Altri miglioramenti in Risorse {#other-enhancements-assets-6560}
 
-* I gruppi di utenti di cartelle private ora vengono rimossi dall’archivio al momento dell’eliminazione di cartelle private. L’eliminazione di una cartella privata elimina il repository dei gruppi di utenti orfani, che vengono creati ogni volta che viene creata una cartella privata. Per ulteriori informazioni, consultate Rimozione dei gruppi di [utenti dall’eliminazione](#group-removal-on-folder-deletion)delle cartelle.
+* I gruppi di utenti associati alle cartelle (privati e non privati) ora vengono rimossi dall’archivio al momento dell’ [eliminazione di tali cartelle](/help/assets/private-folder.md#delete-private-folder). Tuttavia, i gruppi di utenti ridondanti, orfani, inutilizzati e generati automaticamente possono essere ripuliti dall&#39;archivio tramite JMX.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
