@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2492'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Ora potete scegliere se pubblicare o annullare la pubblicazione selettiva delle 
 
 ### Altri miglioramenti in Risorse {#other-enhancements-assets-6560}
 
-* I gruppi di utenti di cartelle private ora vengono rimossi dall’archivio al momento dell’eliminazione di cartelle private. L’eliminazione di una cartella privata elimina il repository dei gruppi di utenti orfani, che vengono creati ogni volta che viene creata una cartella privata.
+* I gruppi di utenti di cartelle private ora vengono rimossi dall’archivio al momento dell’eliminazione di cartelle private. L’eliminazione di una cartella privata elimina il repository dei gruppi di utenti orfani, che vengono creati ogni volta che viene creata una cartella privata. Per ulteriori informazioni, consultate Rimozione dei gruppi di [utenti dall’eliminazione](#group-removal-on-folder-deletion)delle cartelle.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -87,7 +87,7 @@ Ora è possibile configurare il [!DNL Experience Manager Forms] server per esegu
 
 Se un AcroForm include [!DNL Adobe Sign] tag di testo, questi campi vengono ora riconosciuti e rappresentati come [!DNL Adobe Sign] campi nel modulo adattivo convertito utilizzando [!DNL Automated Forms Conversion service]. Un firmatario può compilare tali campi durante la firma del modulo adattivo.
 
-### Supporto per la conversione di PDF forms colorati in moduli adattivi {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
 
 È possibile utilizzare [!DNL Automated Forms Conversion service] per convertire PDF forms colorati in moduli adattivi.
 
@@ -272,7 +272,7 @@ La nuova opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
