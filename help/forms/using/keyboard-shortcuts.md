@@ -1,20 +1,23 @@
 ---
-title: Scelte rapide da tastiera di AEM Forms
-seo-title: Scelte rapide da tastiera di AEM Forms
+title: ' Scelte rapide da tastiera AEM Forms'
+seo-title: ' Scelte rapide da tastiera AEM Forms'
 description: In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con Editor modulo adattivo, Editor tema, Browser contenuti e Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
 seo-description: In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con Editor modulo adattivo, Editor tema, Browser contenuti e Gestione della corrispondenza.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
-topic-tags: correspondence-management
+topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 13%
 
 ---
 
 
-# Scelte rapide da tastiera di AEM Forms {#aem-forms-keyboard-shortcuts}
+#  Scelte rapide da tastiera AEM Forms {#aem-forms-keyboard-shortcuts}
 
 In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con Editor modulo adattivo, Editor tema, Browser contenuti e Gestione della corrispondenza per i sistemi operativi Windows e Macintosh.
 
@@ -49,6 +52,7 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 >
 >* Windows: Ctrl+clic sui componenti richiesti.
 >* MAC OS: Comando+clic sui componenti richiesti.
+
 >
 
 
@@ -67,7 +71,7 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 >
 >I tasti di scelta rapida contrassegnati con un&#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando in Mac OS.
 
-## Browser contenuto {#contentbrowser}
+## Browser contenuto  {#contentbrowser}
 
 | **Azione** | **Tasti di scelta rapida per Windows** | **Scelta rapida in Mac OS** |
 |---|---|---|
@@ -75,8 +79,8 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 | Comprimi tutte le finestre a soffietto nella struttura Oggetti modulo del browser Contenuto quando è attiva | Ctrl+A per selezionare tutti i fisarmonici seguiti da Freccia sinistra per comprimere | Comando+A per selezionare tutti i fisarmonici seguiti da Freccia sinistra per comprimere |
 | Espande la struttura di navigazione selezionata nella struttura Oggetti modulo | Freccia destra | Freccia destra |
 | Comprimi la struttura di navigazione selezionata nella struttura Oggetti modulo | Freccia sinistra | Freccia sinistra |
-| Selezionare l&#39;elemento successivo nella struttura Oggetti modulo |  Freccia giù |  Freccia giù |
-| Selezionare l&#39;elemento precedente nella struttura Oggetti modulo | Freccia su | Freccia su |
+| Selezionare l&#39;elemento successivo nella struttura degli oggetti di Forms |  Freccia giù |  Freccia giù |
+| Selezionare l&#39;elemento precedente nell&#39;albero Oggetti di Forms | Freccia su | Freccia su |
 
 [1] Sostituisce Ctrl + Freccia destra per Windows e Comando + Freccia destra per Mac OS.\
 [2] Sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per Mac OS.
