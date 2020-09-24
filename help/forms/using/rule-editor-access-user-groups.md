@@ -5,12 +5,15 @@ description: Concedere accesso limitato all'editor delle regole per selezionare 
 seo-description: Concedere accesso limitato all'editor delle regole per selezionare gruppi di utenti.
 uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 1%
 
 ---
 
@@ -19,14 +22,14 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 ## Panoramica {#overview}
 
-È possibile utilizzare diversi tipi di utenti con competenze diverse per l&#39;utilizzo dei moduli adattivi. Anche se gli utenti esperti possono avere la conoscenza necessaria per lavorare con script e regole complesse, potrebbero essere presenti utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
+Potete avere diversi tipi di utenti con competenze diverse che funzionano con Forms adattivo. Anche se gli utenti esperti possono avere la conoscenza necessaria per lavorare con script e regole complesse, potrebbero essere presenti utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
 
-AEM Forms consente di limitare l&#39;accesso all&#39;editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione dei moduli adattivi, è possibile specificare i gruppi [di](/help/sites-administering/security.md) utenti che possono visualizzare e accedere all&#39;editor delle regole.
+ AEM Forms consente di limitare l&#39;accesso all&#39;editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione Forms adattivo, potete specificare i gruppi [di](/help/sites-administering/security.md) utenti che possono visualizzare e accedere all&#39;editor delle regole.
 
 ## Specificare i gruppi di utenti che possono accedere all&#39;editor delle regole {#specify-user-groups-that-can-access-rule-editor}
 
-1. Accedi ad AEM Forms come amministratore.
-1. Nell’istanza di creazione, fate clic su ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![martello](assets/hammer.png) Strumenti > Operazioni > Console Web. La console Web si apre in una nuova finestra.
+1. Accedete a  AEM Forms come amministratore.
+1. Nell’istanza di authoring, fate clic su ![](assets/adobeexperiencemanager.png)adobeexperience emanagerExperience Manager  Adobe > ![martello](assets/hammer.png) Strumenti > Operazioni > Console Web. La console Web si apre in una nuova finestra.
 
    ![1-2](assets/1-2.png)
 
