@@ -1,15 +1,15 @@
 ---
 title: API per l'utilizzo dei moduli inviati nel portale dei moduli
 seo-title: API per l'utilizzo dei moduli inviati nel portale dei moduli
-description: I AEM Forms forniscono API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
-seo-description: I AEM Forms forniscono API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
+description: ' AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.'
+seo-description: ' AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.'
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: developer-reference
+topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # API per l&#39;utilizzo dei moduli inviati nel portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-I AEM Forms forniscono API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
+ AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
 
 >[!NOTE]
 >
