@@ -1,32 +1,35 @@
 ---
-title: Best practice MSM
-seo-title: Best practice MSM
-description: Scoprite le best practice compilate dai team di consulenza e progettazione di Adobe per imparare a usare AEM Multi Site Manager.
-seo-description: Scoprite le best practice compilate dai team di consulenza e progettazione di Adobe per imparare a usare AEM Multi Site Manager.
+title: Tecniche consigliate per MSM
+seo-title: Tecniche consigliate per MSM
+description: Scopri le best practice compilate dai team di progettazione e consulenza di  Adobe per iniziare a utilizzare il AEM Multi Site Manager.
+seo-description: Scopri le best practice compilate dai team di progettazione e consulenza di  Adobe per iniziare a utilizzare il AEM Multi Site Manager.
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 1%
 
 ---
 
 
-# Best practice MSM{#msm-best-practices}
+# Tecniche consigliate per MSM{#msm-best-practices}
 
 ## Generale {#general}
 
-MSM è un framework configurabile per l&#39;automazione della distribuzione dei contenuti. Le implementazioni spesso coinvolgono parti importanti di un sito Web e organizzazioni e geografie. È quindi vivamente consigliato pianificare le implementazioni MSM con la stessa attenzione con cui pianificate il sito Web:
+MSM è un framework configurabile per l&#39;automazione della distribuzione dei contenuti. Le implementazioni spesso coinvolgono parti importanti di un sito Web e organizzazioni e geografie. Si consiglia quindi vivamente di pianificare le implementazioni MSM con la stessa attenzione con cui pianificate il sito Web:
 
 * Pianificare accuratamente la struttura e i flussi **** di contenuti prima di iniziare l&#39;implementazione.
 * **Personalizzare il più possibile, ma il meno possibile.** MSM supporta un elevato grado di personalizzazione (ad es. configurazioni di rollout), ma in genere la best practice per prestazioni, affidabilità e aggiornamento del sito Web è quella di ridurre al minimo la personalizzazione.
 * Stabilire un modello di **governance** in tempi brevi e formare gli utenti di conseguenza per garantire il successo. Dal punto di vista della governance, una best practice consiste nel **ridurre al minimo l&#39;autorità che i produttori di contenuti locali devono** allocare/collegare i contenuti ad altri utenti locali e alle rispettive copie dal vivo. Ciò è dovuto al fatto che le eredità concatenate non gestite possono aumentare notevolmente la complessità di una struttura MSM e comprometterne le prestazioni e l&#39;affidabilità.
 
 * Quando esiste un piano per la struttura, i flussi di contenuti, l&#39;automazione e la governance - **prototipo e test completo del sistema**, prima di iniziare l&#39;implementazione live.
-* Tenere presente che **Adobe Consulting e i principali integratori** di sistemi dispongono di una pianificazione approfondita e di un&#39;implementazione dell&#39;automazione dei contenuti con MSM, per consentirvi di iniziare a utilizzare il progetto MSM e l&#39;intera implementazione.
+* Tenere presente che **Consulenza di Adobe e i principali integratori** di sistema hanno una pianificazione approfondita dell&#39;esperienza e implementano l&#39;automazione dei contenuti con MSM, consentendo di iniziare a utilizzare il progetto MSM e l&#39;intera implementazione.
 
 >[!NOTE]
 >
@@ -34,6 +37,7 @@ MSM è un framework configurabile per l&#39;automazione della distribuzione dei 
 >
 >* [Domande frequenti su MSM](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
 >* [Risoluzione dei problemi relativi a MSM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
+
 >
 
 
@@ -43,7 +47,8 @@ MSM è un framework configurabile per l&#39;automazione della distribuzione dei 
 >È inoltre possibile utilizzare il componente [](/help/sites-authoring/default-components-foundation.md#reference) Riferimento per riutilizzare una singola pagina o paragrafo. Ricorda tuttavia:
 >
 >* MSM è più flessibile e consente di controllare con precisione i contenuti sincronizzati e quando.
->* [I componenti](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) core sono ora consigliati rispetto ai componenti di base.
+>* [I componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) core sono ora consigliati rispetto ai componenti di base.
+
 >
 
 
@@ -56,7 +61,7 @@ L’utilizzo di una configurazione blueprint comporta inoltre i seguenti vantagg
 
 * Consentite all’autore di utilizzare l’opzione **Rollout** su un blueprint, per (in modo esplicito) le modifiche push alle Live Copy che ereditano da questo blueprint.
 * Consentire all&#39;autore di utilizzare **Crea sito**; questo consente all&#39;utente di selezionare facilmente le lingue e configurare la struttura della Live Copy.
-* Definire una configurazione di rollout predefinita per le copie live che hanno una relazione con il progetto.
+* Definite una configurazione di rollout predefinita per le copie live che hanno una relazione con il progetto.
 
 Nel caso in cui non venga fatto riferimento a una configurazione di blueprint, i rollout possono essere avviati solo dalle copie live, essenzialmente recuperando il contenuto dall&#39;origine.
 
@@ -79,7 +84,7 @@ Per supportare la nidificazione di componenti in modo che i componenti aggiunti 
 
 ## Crea sito {#create-site}
 
-In AEM sono disponibili due approcci principali per la creazione di copie dal vivo:
+AEM dispone di due approcci principali per la creazione di copie live:
 
 * When [creating a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
@@ -89,7 +94,7 @@ In AEM sono disponibili due approcci principali per la creazione di copie dal vi
 
    Si tratta di un approccio più specializzato, soprattutto per la creazione di siti web con una struttura multilingue.
 
-Di seguito sono riportate alcune considerazioni da tenere presenti durante la creazione di un sito:
+Di seguito sono riportate alcune considerazioni da tenere a mente durante la creazione di un sito:
 
 * Per creare un nuovo sito, è necessaria una configurazione [](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)blueprint.
 * Per consentire la selezione dei percorsi di lingua da creare in un nuovo sito, nel blueprint (origine) devono essere presenti le radici della lingua corrispondenti.
@@ -98,7 +103,7 @@ Di seguito sono riportate alcune considerazioni da tenere presenti durante la cr
    Consente di evitare:
 
    * aggiunta manuale di lingue nel blueprint (sotto il primo livello)
-   * aggiunta manuale di contenuti direttamente sotto la lingua principale,
+   * aggiungere manualmente il contenuto direttamente sotto la radice della lingua,
    * non comporta il trasferimento automatico del nuovo contenuto alla Live Copy al momento del rollout.
 
 ## MSM e siti Web multilingue {#msm-and-multilingual-websites}
@@ -114,9 +119,9 @@ MSM può contribuire alla creazione di siti Web multilingue in due modi:
 
          Per ulteriori informazioni, contattate il vostro provider di servizi di traduzione.
 
-      * Un approccio alternativo per la creazione e la traduzione di master in lingua consiste nell’utilizzare copie in lingua insieme al framework di integrazione per la traduzione out-of-the-box di AEM.
+      * Un approccio alternativo per la creazione e la traduzione di master di lingua consiste nell&#39;utilizzare copie di lingua insieme AEM framework di integrazione per la traduzione out-of-the-box.
 
-* Quando si distribuiscono contenuti da master lingua.
+* Quando si distribuiscono contenuti dalle mastro della lingua.
 
    * Ad esempio, dal master in lingua francese ai siti specifici per paese, come Francia/francese, Canada/francese, Svizzera/francese.
 
