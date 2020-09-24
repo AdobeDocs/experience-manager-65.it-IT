@@ -7,10 +7,13 @@ uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: page-authoring
+topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +28,7 @@ Vengono trattati i seguenti argomenti:
 
 * [Ulteriori azioni](#further-actions): Seguite le numerose altre azioni che potete usare per la creazione.
 
-## Introduzione {#getting-started}
+## Guida introduttiva {#getting-started}
 
 Sequenza di base degli eventi necessari per creare e pubblicare una prima pagina.
 
@@ -50,7 +53,7 @@ Se l’istanza in uso include già una o più pagine, oppure hai appena creato u
 * [Spostamento di un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#moving-a-component)
 * [Eliminazione di un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#deleting-a-component)
 * [Operazioni di Taglia, Copia, Incolla su un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
-* [Annullamento e ripristino delle modifiche apportate alle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
+* [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Uso della modalità di anteprima](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (per visualizzare l’aspetto della pagina quando verrà pubblicata)
 * [Blocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Sblocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
