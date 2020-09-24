@@ -5,12 +5,12 @@ description: È possibile utilizzare i temi per stilizzare e fornire un'identit�
 seo-description: È possibile utilizzare i temi per stilizzare e fornire un'identità visiva a un modulo adattivo o a una comunicazione interattiva. È possibile condividere un tema tra un numero qualsiasi di moduli adattivi o comunicazioni interattive.
 uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '6067'
 ht-degree: 1%
@@ -28,18 +28,18 @@ Operazioni disponibili:
 
 * Creare un tema
 * Modificare e copiare un tema esistente
-* Scaricare e caricare un tema esistente nel server AEM Forms
+* Scaricare e caricare un tema esistente  server AEM Forms
 * Gestione delle dipendenze per un tema
 
 ## Creazione, download o caricamento di un tema {#creating-downloading-or-uploading-a-theme}
 
-Con i AEM Forms, potete creare, scaricare o caricare i temi. Un tema viene creato come altre risorse come moduli, documenti e lettere. Il tema viene salvato come entità separata, completa di meta-proprietà come i moduli. I temi, essendo un&#39;entità separata, possono essere riutilizzati in più moduli adattivi e nelle comunicazioni interattive. Potete anche spostare un tema in un&#39;altra istanza di AEM Forms e riutilizzarlo.
+Con  AEM Forms potete creare, scaricare o caricare i temi. Un tema viene creato come altre risorse come moduli, documenti e lettere. Il tema viene salvato come entità separata, completa di meta-proprietà come i moduli. I temi, essendo un&#39;entità separata, possono essere riutilizzati in più moduli adattivi e nelle comunicazioni interattive. Potete anche spostare un tema in un’altra istanza di  AEM Forms e riutilizzarlo.
 
 ### Creazione di un tema {#creating-a-theme}
 
 Per creare un tema, effettuate le seguenti operazioni:
 
-1. Fare clic su **Adobe Experience Manager**, fare clic su **Moduli** e quindi su **Temi**.
+1. Fate clic su **Adobe Experience Manager**, fate clic su **Forms**, quindi fate clic su **Temi**.
 
 1. Nella pagina Temi, fate clic su **Crea > Tema**.
 Viene avviata una procedura guidata per creare un tema.
@@ -56,9 +56,9 @@ Viene avviata una procedura guidata per creare un tema.
 
 ### Download di un tema {#downloading-a-theme}
 
-Potete esportare i temi come file zip e usarli in altri progetti o istanze AEM. Per scaricare un tema:
+Potete esportare i temi come file zip e usarli in altri progetti o AEM istanze. Per scaricare un tema:
 
-1. Fare clic su **Adobe Experience Manager**, fare clic su **Moduli** e quindi su **Temi**.
+1. Fate clic su **Adobe Experience Manager**, fate clic su **Forms**, quindi fate clic su **Temi**.
 
 1. Nella pagina Temi, **selezionate** un tema e fate clic su **Scarica**. Viene visualizzata una finestra di dialogo con i dettagli del tema.
 
@@ -66,7 +66,7 @@ Potete esportare i temi come file zip e usarli in altri progetti o istanze AEM. 
 
 >[!NOTE]
 >
->Se scaricate un tema a cui è associato un modulo adattivo e il modulo adattivo associato si basa su un modello personalizzato, scaricate anche il modello personalizzato. Quando caricate il tema scaricato e il modulo adattivo su un server di AEM Forms, caricate anche il modello personalizzato correlato.
+>Se scaricate un tema a cui è associato un modulo adattivo e il modulo adattivo associato si basa su un modello personalizzato, scaricate anche il modello personalizzato. Quando caricate il tema scaricato e il modulo adattivo su un server AEM Forms , caricate anche il modello personalizzato correlato.
 
 ### Caricamento di un tema {#uploading-a-theme}
 
@@ -74,7 +74,7 @@ Potete usare i temi creati con i predefiniti di stile del progetto. Potete impor
 
 Per caricare un tema:
 
-1. Fare clic su **Adobe Experience Manager**, fare clic su **Moduli** e quindi su **Temi**.
+1. Fate clic su **Adobe Experience Manager**, fate clic su **Forms**, quindi fate clic su **Temi**.
 
 1. Nella pagina Temi, fate clic su **Crea > Caricamento** file.
 1. Nel prompt Caricamento file, individuate e selezionate un pacchetto di temi sul computer e fate clic su **Carica**.
@@ -195,7 +195,7 @@ Elenco di meta-proprietà di un tema (trovato nella pagina delle proprietà di u
 
 ## Informazioni sull&#39;Editor tema {#about-the-theme-editor}
 
-AEM Forms con Editor tema. Si tratta di un&#39;interfaccia semplice per utenti aziendali e web-designer/sviluppatori che fornisce le funzionalità necessarie per specificare facilmente lo stile dei vari elementi di comunicazione interattiva e dei moduli adattivi. Quando si crea un tema, questo viene memorizzato come entità separata come moduli, comunicazioni interattive, lettere, frammenti di documento e dizionari di dati.
+ AEM Forms viene fornito con Theme Editor. Si tratta di un&#39;interfaccia semplice per utenti aziendali e web-designer/sviluppatori che fornisce le funzionalità necessarie per specificare facilmente lo stile dei vari elementi di comunicazione interattiva e dei moduli adattivi. Quando si crea un tema, questo viene memorizzato come entità separata come moduli, comunicazioni interattive, lettere, frammenti di documento e dizionari di dati.
 
 L’Editor tema consente di personalizzare gli stili dei componenti formattati in un tema. È possibile personalizzare l&#39;aspetto di un modulo o di una comunicazione interattiva su un dispositivo.
 
@@ -219,7 +219,7 @@ Un componente specifico interessa gli oggetti della categoria specifica. Quando 
       Quando personalizzate tutti i componenti campo con un colore di sfondo specifico, tutti i campi quali età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio age, e ne si riduce la larghezza, la larghezza di tutte le caselle numeriche, come l&#39;età, il numero di persone in una famiglia viene ridotto. La larghezza delle caselle di testo non viene modificata.
 
    * **Stato:** Consente di personalizzare gli stili di un oggetto in uno stato specifico. Ad esempio, è possibile specificare l&#39;aspetto di un oggetto quando è nello stato predefinito, attivo, disattivato, passaggio del mouse o di errore.
-   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Ad esempio Dimensioni e posizione, testo, sfondo, bordo ed effetti. In ciascuna categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo, potete fornire Colore di sfondo e Immagine e sfumatura.
+   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Dimension e posizione, testo, sfondo, bordo ed effetti. In ciascuna categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo, potete fornire Colore di sfondo e Immagine e sfumatura.
 
    * **Avanzate:** Consente di aggiungere un CSS personalizzato a un oggetto, che sostituisce le proprietà definite dai controlli visivi in caso di sovrapposizione.
 
@@ -228,7 +228,7 @@ Un componente specifico interessa gli oggetti della categoria specifica. Quando 
 
 [ ![Editor di temi con Barra e Area di lavoro evidenziata.](assets/themes.png)](assets/themes-1.png) **A.** Barra laterale **B.** Canvas
 
-### Componenti di stile {#styling-components}
+### Styling components {#styling-components}
 
 È possibile utilizzare un tema in più moduli adattivi e nelle comunicazioni interattive, per importare la formattazione del componente specificata nel tema. È possibile formattare vari componenti come titoli, descrizioni, pannelli, campi, icone e caselle di testo. Utilizzare i widget per configurare le proprietà dei componenti in un tema. La conoscenza precedente di CSS o LESS non è necessaria ma desiderata, anche se la sezione Ignorare i CSS consente di scrivere codice CSS o fornire selettori personalizzati. La sezione Sostituzioni CSS viene visualizzata quando selezionate un componente nella barra laterale.
 
@@ -244,7 +244,7 @@ Fate clic su **ESPANDI TUTTO** nella barra laterale per visualizzare, selezionar
 
 ### Layout del pannello Stile {#styling-panel-layouts-br}
 
-I temi negli AEM Forms supportano lo stile degli elementi nel layout dei pannelli nei moduli e nelle comunicazioni interattive. È supportato lo stile degli elementi nei layout out-of-the-box e nei layout personalizzati.
+I temi in  AEM Forms supportano lo stile degli elementi nel layout dei pannelli nei moduli e nelle comunicazioni interattive. È supportato lo stile degli elementi nei layout out-of-the-box e nei layout personalizzati.
 
 I pannelli forniti includono:
 
@@ -334,7 +334,7 @@ I pulsanti Ripristina/Annulla vengono visualizzati quando si formatta un compone
 
 ## Utilizzo dell&#39;Editor tema {#using-the-theme-editor}
 
-L&#39;Editor tema consente di modificare un tema creato o caricato. Passare a **Moduli e documenti > Temi**, selezionare un tema e aprirlo. Il tema viene aperto nell’Editor tema.
+L&#39;Editor tema consente di modificare un tema creato o caricato. Andate su **Forms e documenti > Temi**, selezionate un tema e apritelo. Il tema viene aperto nell’Editor tema.
 
 Come già detto, l’Editor tema dispone di due pannelli: Barra laterale e quadro.
 ![editor di temi](assets/theme-editor.png)
@@ -454,7 +454,7 @@ Per personalizzare lo stile di un particolare componente, effettuate le seguenti
 
 1. Selezionare Widget **casella** numerica.
 1. Il titolo della barra laterale diventa Widget Casella numerica e mostra le opzioni per personalizzarne l’aspetto.
-Utilizzate l’opzione **Dimensioni e posizione** nella barra laterale per personalizzare le dimensioni del componente. Assicurarsi che lo stato sia **Predefinito**.
+Utilizzate l’opzione **Dimension e posizione** nella barra laterale per personalizzare le dimensioni del componente. Assicurarsi che lo stato sia **Predefinito**.
 
 Anziché selezionare Widget **casella** numerica, selezionare Widget **** campo nella barra degli strumenti del componente ed eseguire la procedura descritta sopra. Quando si selezionano le dimensioni per l&#39;opzione Widget **** campo, tutte le caselle di testo tranne la casella numerica hanno la stessa dimensione.
 
@@ -489,12 +489,12 @@ Un punto di interruzione rappresenta un dispositivo mobile e le sue dimensioni d
 
 ### Utilizzo dei font Web in un tema {#using-web-fonts-in-a-theme}
 
-È ora possibile utilizzare i font disponibili in un servizio Web in un modulo adattivo o in una comunicazione interattiva. Out-of-the-box, [Typekit](https://typekit.com/), il servizio di font Web di Adobe, è disponibile come configurazione. Per utilizzare Typekit, create un kit e font al suo interno, quindi ottenete l&#39;ID Kit dal sito Web [Typekit](https://typekit.com/).
+È ora possibile utilizzare i font disponibili in un servizio Web in un modulo adattivo o in una comunicazione interattiva. È disponibile come configurazione [Typekit](https://typekit.com/),  servizio di font Web  out-of-the-box. Per utilizzare Typekit, create un kit e font al suo interno, quindi ottenete l&#39;ID Kit dal sito Web [Typekit](https://typekit.com/).
 
 Per configurare Typekit in AEM, effettuate le seguenti operazioni:
 
-1. Nell’istanza di creazione, fate clic su ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe  Experience Manager > ![martello](assets/hammer.png) Strumenti > Distribuzione > Servizi cloud.
-1. Nella pagina Servizi **** cloud, andate a Servizi **di** terze parti > **Typekit** e fate clic su **Configura ora** in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante **+** per creare una nuova istanza.
+1. Nell’istanza di authoring, fate clic su ![](assets/adobeexperiencemanager.png)adobeexperience emanagerExperience Manager  Adobe > ![martello](assets/hammer.png) Strumenti > Distribuzione > Cloud Services.
+1. Nella pagina **Cloud Services** , accedi a Servizi **di** terze parti > **Typekit** e fai clic su **Configura ora** in Typekit. Se una configurazione è già disponibile, fate clic sul pulsante **+** per creare una nuova istanza.
 1. Nella finestra di dialogo **Crea configurazione** , specificate un titolo per la configurazione e fate clic su **Crea**.
 
    Viene nuovamente visualizzata la pagina di configurazione.
@@ -513,7 +513,7 @@ Per configurare un tema in modo che utilizzi la configurazione TypeKit, effettua
 
 Potete utilizzare il servizio di configurazione del tema per aggiungere altri font all&#39;editor del tema. Per aggiungere i font, effettuate le seguenti operazioni:
 
-1. Accedete alla console Web di AEM con privilegi di amministratore. L’URL per la console Web di AEM è `https://'[server]:[port]'/system/console/configMgr`.
+1. Accedi a AEM console Web con privilegi di amministratore. L&#39;URL per la console Web AEM è `https://'[server]:[port]'/system/console/configMgr`.
 1. Aprire Il Servizio **Di Configurazione Tema Modulo** Adattivo.
 
    ![themoconfig](assets/theme-config.png)
@@ -583,11 +583,11 @@ L&#39; `themeOverride` opzione consente di fornire un percorso a un tema. Cambia
 
 ## Ottenimento di un aspetto specifico tramite Temi {#specific-af-appearance}
 
-Con i AEM Forms, insieme al tema quadro predefinito, ci sono molti altri temi. Se si desidera progettare il modulo o la comunicazione interattiva utilizzando altri temi, insieme ad altre modifiche, copiare il tema dalla cartella Libreria temi. Incollate i temi copiati all’esterno della cartella Libreria temi e modificate il tema copiato in base alle modifiche desiderate.
+Con  AEM Forms, insieme a un tema quadro predefinito, ci sono molti altri temi. Se si desidera progettare il modulo o la comunicazione interattiva utilizzando altri temi, insieme ad altre modifiche, copiare il tema dalla cartella Libreria temi. Incollate i temi copiati all’esterno della cartella Libreria temi e modificate il tema copiato in base alle modifiche desiderate.
 
 Per copiare un tema, effettuate le seguenti operazioni:
 
-1. Nell’istanza di creazione, passare a **Adobe Experience Manager > Moduli > Temi**.
+1. Nell’istanza di creazione, passa a **Adobe Experience Manager > Forms > Temi**.
 1. Aprite la cartella Libreria temi.
 1. Nella cartella Libreria temi, passate il puntatore del mouse sul tema out-of-the-box corrispondente e toccate **Copia**.
 1. Incollate il tema copiato fuori dalla cartella Libreria temi.
@@ -597,7 +597,7 @@ Dopo aver personalizzato il tema, applicatelo al modulo o alla comunicazione int
 
 >[!NOTE]
 >
->Non modificate i temi disponibili nella cartella Libreria temi. Questa cartella contiene i temi del sistema. Qualsiasi modifica apportata a questi temi viene sovrascritta al momento dell’installazione di una versione più recente o di una correzione rapida dei AEM Forms.
+>Non modificate i temi disponibili nella cartella Libreria temi. Questa cartella contiene i temi del sistema. Eventuali modifiche apportate a questi temi vengono sovrascritte al momento dell’installazione di una versione più recente o  correzione rapida di AEM Forms.
 
 ## Impatto su altri casi di utilizzo di moduli adattivi {#impact-on-other-adaptive-form-use-cases}
 
@@ -639,7 +639,7 @@ Potete visualizzare i CSS generati utilizzando le seguenti opzioni:
 
       La libreria client di base contiene informazioni sullo stile. Per utilizzare le informazioni sullo stile nelle librerie lato client nei temi.
 
-      1. Passare a **Experience Manager > Moduli > Temi**.
+      1. Andate a **Experience Manager > Forms > Temi**.
       1. Nella pagina Temi, selezionate un tema e fate clic su **Visualizza proprietà**.
       1. Nella pagina Proprietà visualizzata, fate clic su **Avanzate**.
       1. Nella scheda Avanzate, nel campo Posizione Clientlib, individuare e selezionare la libreria client da utilizzare.
