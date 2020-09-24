@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 7%
@@ -32,7 +32,7 @@ Questa sezione della documentazione descrive
 
 ## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
 
-Per aggiungere un `Calendar` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un `Calendar` componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
 
 * `Communities / Calendar`
 
@@ -42,15 +42,15 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando vengono incluse le librerie [lato client](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) richieste, viene visualizzato così il `Calendar` componente.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![calendario-componente](assets/calendar-component.png)
 
 ### Configurazione del calendario {#configuring-calendar}
 
 Selezionate il `Calendar` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![configure](assets/configure-new.png)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-Calendar](assets/configure-calendar1.png)
 
 #### scheda Impostazioni {#settings-tab}
 
@@ -162,7 +162,7 @@ Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti n
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato sotto la scheda **Impostazioni** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
@@ -193,7 +193,7 @@ Altre capacità dipendono dal fatto che il visitatore del sito sia un moderatore
 
 Quando l’utente che ha effettuato l’accesso dispone di privilegi di moderatore o amministratore, può eseguire attività [di](/help/communities/moderate-ugc.md) moderazione (come consentito dalla configurazione del componente) su tutti gli eventi del calendario e i commenti inviati a un evento.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![moderatori-vista](assets/moderators-view.png)
 
 #### Membri {#members}
 
@@ -207,15 +207,15 @@ In particolare, essi possono:
 * Elimina un proprio evento o commento calendario
 * Contrassegnare eventi o commenti di calendario di altri utenti
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![create-event](assets/configure-calendar2.png)
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![event-post](assets/configure-calendar3.png)
 
 #### Anonimo {#anonymous}
 
 I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere gli eventi del calendario postati, tradurli se supportati, ma non possono aggiungere un evento o un commento né contrassegnare eventi o commenti di altri utenti.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![visualizzazione utente anonima](assets/anonymous-user-view1.png)
 
 ## Informazioni aggiuntive {#additional-information}
 
