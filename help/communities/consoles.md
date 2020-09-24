@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Console community {#communities-consoles}
 
-Le console AEM Communities, disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere alle attività amministrative come:
+Le console AEM Communities , disponibili nell’ambiente di authoring dal pannello di navigazione globale, consentono di accedere a operazioni amministrative quali:
 
 * [Creazione di un sito community](sites-console.md)
 * Aggiunta di [gruppi](groups.md) nidificati nel sito
@@ -41,8 +41,6 @@ Nell’ambiente di authoring, dopo aver effettuato l’accesso con i privilegi d
 
 ## Pannello di navigazione globale {#global-navigation-panel}
 
-![chlimage_1-91](assets/chlimage_1-91.png)
-
 Selezionate l’ `Adobe Experience Manager` icona nell’angolo in alto a sinistra per aprire il pannello di navigazione globale e accedere a due icone:
 
 * [Console di navigazione](#navigation-console)
@@ -52,7 +50,7 @@ Selezionate l’ `Adobe Experience Manager` icona nell’angolo in alto a sinist
 
 Per accedere alle varie console Community, dalla navigazione globale selezionate **Navigazione, Community**.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![community](assets/communities.png)
 
 * [Sites](sites-console.md)
 
@@ -68,7 +66,7 @@ Per accedere alle varie console Community, dalla navigazione globale selezionate
 
 * [Rapporti](reports.md)
 
-   La console Rapporti consente di generare rapporti su assegnazioni, visualizzazioni di pagina e contenuto pubblicato (UGC) quando un sito community ha [attivato Adobe  Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
+   La console Rapporti consente di generare rapporti su assegnazioni, visualizzazioni di pagina e contenuto pubblicato (UGC) quando un sito community ha [attivato  Adobe Analytics](sites-console.md#analytics). La console è disponibile solo nell’ambiente di authoring.
 
 * [Riferimenti](resources.md)
 
