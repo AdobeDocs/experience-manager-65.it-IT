@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 3%
@@ -104,13 +104,13 @@ Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di
 
 * Ripubblica il sito della community
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-catalog](assets/configure-catalog.png)
 
 #### ID tag pre-filtro {#pre-filter-tagids}
 
 Gli [IDtag](../../help/sites-developing/framework.md#tagid) pre-filtro devono corrispondere esattamente ai tag applicati alle risorse di abilitazione. Questi sono visibili nella `resources` cartella del sito come valori della proprietà `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-Filters](assets/configure-catalog1.png)
 
 ### API di riferimento {#reference-apis}
 
@@ -118,5 +118,5 @@ Gli [IDtag](../../help/sites-developing/framework.md#tagid) pre-filtro devono co
 
 * [API di reporting](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [Reporting  API Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API di Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
