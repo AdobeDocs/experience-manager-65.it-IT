@@ -1,23 +1,26 @@
 ---
 title: Single Sign On
 seo-title: Single Sign On
-description: Scopri come configurare Single Sign On (SSO) per un’istanza di AEM.
-seo-description: Scopri come configurare Single Sign On (SSO) per un’istanza di AEM.
+description: Scoprite come configurare Single Sign On (SSO) per un'istanza AEM.
+seo-description: Scoprite come configurare Single Sign On (SSO) per un'istanza AEM.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: configuring, Security
 content-type: reference
-topic-tags: Security
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
 
 # Single Sign On {#single-sign-on}
 
-Single Sign On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione (ad esempio un nome utente e una password) una volta. Un sistema separato (noto come autenticatore affidabile) esegue l&#39;autenticazione e fornisce a Experience Manager le credenziali utente. Experience Manager verifica e applica le autorizzazioni di accesso per l&#39;utente (ossia determina a quali risorse l&#39;utente può accedere).
+Single Sign On (SSO) consente a un utente di accedere a più sistemi dopo aver fornito le credenziali di autenticazione (ad esempio un nome utente e una password) una volta. Un sistema separato (noto come autenticatore affidabile) esegue l&#39;autenticazione e fornisce  Experience Manager con le credenziali utente.  Experience Manager verifica e applica le autorizzazioni di accesso per l’utente (ossia determina a quali risorse l’utente può accedere).
 
 Il servizio Gestore autenticazione SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) elabora i risultati dell&#39;autenticazione forniti dall&#39;autenticatore affidabile. Il gestore autenticazione SSO cerca in questo ordine un valore ssid (SSO Identifier) come valore di un attributo speciale nelle seguenti posizioni:
 
@@ -36,26 +39,27 @@ Configurate i due servizi seguenti per riconoscere il nome dell&#39;attributo ch
 
 ## Configurazione di SSO {#configuring-sso}
 
-Per configurare SSO per un’istanza di AEM, è necessario configurare il gestore [autenticazione](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)SSO:
+Per configurare SSO per un&#39;istanza AEM, è necessario configurare il gestore [autenticazione](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)SSO:
 
 1. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
    Ad esempio, per i set NTLM:
 
-   * **** Percorso: se necessario; ad esempio, `/`
+   * **Percorso:** se necessario; ad esempio, `/`
    * **Nomi** intestazione: `LOGON_USER`
    * **Formato** ID: `^<DOMAIN>\\(.+)$`
 
       Dove `<*DOMAIN*>` viene sostituito dal proprio nome di dominio.
    Per CoSign:
 
-   * **** Percorso: se necessario; ad esempio, `/`
+   * **Percorso:** se necessario; ad esempio, `/`
    * **Nomi** intestazione: remote_user
-   * **** Formato ID: AsIs
+   * **Formato ID:** AsIs
+
    Per SiteMinder:
 
-   * **** Percorso: se necessario; ad esempio, `/`
-   * **** Nomi intestazione: SM_USER
+   * **Percorso:** se necessario; ad esempio, `/`
+   * **Nomi intestazione:** SM_USER
    * **Formato** ID: AsIs
 
 
@@ -64,11 +68,11 @@ Per configurare SSO per un’istanza di AEM, è necessario configurare il gestor
 
 >[!CAUTION]
 >
->Assicurati che gli utenti non possano accedere direttamente ad AEM se è configurato SSO.
+>Assicuratevi che gli utenti non possano accedere AEM direttamente se è configurato SSO.
 >
->Richiedendo agli utenti di eseguire un server Web che esegue l&#39;agente del sistema SSO, viene garantito che nessun utente possa inviare direttamente un&#39;intestazione, un cookie o un parametro che induca l&#39;utente a essere ritenuto affidabile da AEM, in quanto l&#39;agente filtra tali informazioni se inviate dall&#39;esterno.
+>Richiedendo agli utenti di passare attraverso un server Web che esegue l&#39;agente del sistema SSO, si garantisce che nessun utente possa inviare direttamente un&#39;intestazione, un cookie o un parametro che induca l&#39;utente ad essere fidato da AEM, in quanto l&#39;agente filtrerà tali informazioni se inviate dall&#39;esterno.
 >
->Ogni utente che può accedere direttamente all’istanza di AEM senza passare attraverso il server Web può agire come qualsiasi utente inviando l’intestazione, il cookie o il parametro, se i nomi sono noti.
+>Ogni utente che può accedere direttamente all’istanza AEM senza passare attraverso il server Web sarà in grado di agire come qualsiasi utente inviando l’intestazione, il cookie o il parametro, se i nomi sono noti.
 >
 >Inoltre, accertatevi che per le intestazioni, i cookie e i nomi dei parametri di richiesta, sia configurato solo quello richiesto per la configurazione SSO.
 
@@ -83,6 +87,7 @@ Per configurare SSO per un’istanza di AEM, è necessario configurare il gestor
 >
 >* `disp_iis.ini`
 >* IIS
+
 >
 >
 Nel `disp_iis.ini` set:
@@ -90,6 +95,7 @@ Nel `disp_iis.ini` set:
 >
 >* `servervariables=1` (inoltra le variabili del server IIS come intestazioni di richiesta all&#39;istanza remota)
 >* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Autorizzazione&quot; diversa da &quot;Base&quot; con il suo equivalente &quot;Base&quot;)
+
 >
 >
 In IIS:
@@ -98,6 +104,7 @@ In IIS:
    >
    >
 * abilita autenticazione **integrata di Windows**
+
 >
 
 
@@ -153,15 +160,16 @@ Transfer-Encoding: chunked
 Questo funziona anche se richiedete:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Oppure potete usare il seguente comando curl per inviare l’ `TestHeader` intestazione a `admin:``curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
+Oppure potete usare il seguente comando curl per inviare l’ `TestHeader` intestazione a `admin:`
+`curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
 >Quando si utilizza il parametro request in un browser, viene visualizzato solo parte del codice HTML, senza CSS. Questo perché tutte le richieste dall’HTML vengono effettuate senza il parametro request.
 
-## Rimozione dei collegamenti di disconnessione AEM {#removing-aem-sign-out-links}
+## Rimozione AEM collegamenti Disconnetti {#removing-aem-sign-out-links}
 
-Quando si utilizza SSO, l’accesso e la disconnessione vengono gestiti esternamente, in modo che i collegamenti di disconnessione di AEM non siano più applicabili e debbano essere rimossi.
+Quando si utilizza SSO, l&#39;accesso e la disconnessione vengono gestiti esternamente, in modo che AEM propri collegamenti di disconnessione non siano più applicabili e debbano essere rimossi.
 
 Il collegamento di disconnessione nella schermata di benvenuto può essere rimosso tramite la procedura seguente.
 
