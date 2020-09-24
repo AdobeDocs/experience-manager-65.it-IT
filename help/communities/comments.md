@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 6%
@@ -37,7 +37,7 @@ Il documento descrive:
 
 ### Aggiunta di commenti a una pagina {#adding-comments-to-a-page}
 
-Per aggiungere un `Comments` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un `Comments` componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
 
 * `Communities / Comments`
 
@@ -47,7 +47,7 @@ Per le informazioni necessarie, consulta [Community Components Basics](/help/com
 
 Quando sono incluse le librerie [lato client](/help/communities/essentials-comments.md#essentials-for-client-side) richieste, viene visualizzato così il `Comments` componente.
 
-![chlimage_1-428](assets/chlimage_1-428.png)
+![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ Una volta noti i tipi di risorse personalizzati, immettete la modalità [](/help
 
 Nella scheda Tipi **di** risorse, specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting` componenti:
 
-![chlimage_1-429](assets/chlimage_1-429.png)
+![resource-type](assets/resource-type.png)
 
 * **Tipo risorsa commento**
 
