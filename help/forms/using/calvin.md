@@ -6,11 +6,11 @@ seo-description: Con Calvin è possibile creare test case in CRXDE ed eseguire t
 uuid: 7bf4fc8f-96df-4407-8d10-cf18880518bd
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Prima di utilizzare questo articolo per creare i casi di test, è necessario con
 
 L&#39;esempio seguente illustra la creazione di una suite di test per il test di più moduli adattivi. È necessario creare un test case separato per ciascun modulo da sottoporre a test. Seguendo passaggi simili a quelli indicati di seguito e modificando il codice JavaScript al punto 11, è possibile creare una suite di test personalizzata per verificare i moduli adattivi.
 
-1. Passare a CRXDE Lite nel browser Web: `https://'[server]:[port]'/crx/de`.
+1. Andate al CRXDE Lite nel browser Web: `https://'[server]:[port]'/crx/de`.
 1. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **Crea** > **Crea nodo**. Immettete un nome (qui afTestRegistration), specificate il tipo di nodo come cq:ClientLibraryFolder e fate clic su **OK.**
 
    La cartella clientlibs contiene l’aspetto di registrazione dell’applicazione (JS e Init). Si consiglia di registrare tutti gli oggetti delle suite di test di Hobbes specifici per un modulo nella cartella clientlibs.
@@ -306,7 +306,7 @@ Per eseguire una suite di test:
 
    ![4_reviewResults](assets/4_reviewresults.png)
 
-La verifica dei moduli adattivi di AEM è simile alla verifica dell’interfaccia utente di AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, vedere i seguenti argomenti in [Verifica dell’interfaccia](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+La verifica dei AEM moduli adattivi è simile alla verifica dell&#39;interfaccia utente AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, vedere i seguenti argomenti in [Verifica dell’interfaccia](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Visualizzazione delle suite di test
 * Esecuzione di più test
