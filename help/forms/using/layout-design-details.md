@@ -5,12 +5,15 @@ description: In Dettagli progettazione layout viene illustrato come creare layou
 seo-description: In Dettagli progettazione layout viene illustrato come creare layout da utilizzare per le lettere o per le comunicazioni interattive.
 uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
-topic-tags: interactive-communications
+topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '2190'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +27,11 @@ I modelli di modulo XFA o XDP sono i modelli per:
 
 * Frammenti di layout
 
-Un XDP è progettato in Adobe Forms Designer. Questo articolo fornisce dettagli su come progettare i file XDP per la creazione di corrispondenze/comunicazioni interattive efficaci, ad esempio dove utilizzare i campi del modulo o le aree di destinazione e quando utilizzare i frammenti di layout.
+Un XDP è progettato in Forms Designer  Adobe. Questo articolo fornisce dettagli su come progettare i file XDP per la creazione di corrispondenze/comunicazioni interattive efficaci, ad esempio dove utilizzare i campi del modulo o le aree di destinazione e quando utilizzare i frammenti di layout.
 
 ## Creazione di un layout per le lettere o per il canale di stampa delle comunicazioni interattive {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Un layout definisce il layout grafico di un canale lettera/stampa di una comunicazione interattiva. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. Crea il layout nella finestra di progettazione del modulo e, al termine, lo specialista dell’applicazione lo carica nel server AEM. Da qui potete selezionare il layout quando create un modello di corrispondenza o un canale di stampa di una comunicazione interattiva.
+Un layout definisce il layout grafico di un canale lettera/stampa di una comunicazione interattiva. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. Creare il layout nella finestra di progettazione del modulo e, al termine, caricarlo AEM server mediante Application Specialist. Da qui potete selezionare il layout quando create un modello di corrispondenza o un canale di stampa di una comunicazione interattiva.
 
 ![Designer: creare un layout](assets/claimsubrogationlayout.png)
 
@@ -38,14 +41,14 @@ Per creare layout per lettere/canale di stampa delle comunicazioni interattive, 
 1. Durante la progettazione delle pagine corpo, suddividere il contenuto della pagina in sezioni. Ogni sezione è progettata come un sottomodulo incorporato nel layout stesso o come layout di frammento. Se la sezione contiene una tabella, modellare la sezione come un frammento di layout.
 1. Un layout può essere progettato come segue:
 
-   1. Creare ogni sezione come sottomodulo separato contenente tutti gli elementi della sezione.
+   1. Creare ciascuna sezione come sottomodulo separato contenente tutti gli elementi della sezione.
    1. Rendere ogni sottomodulo di sezione secondario dello stesso sottomodulo principale. Il layout del sottomodulo principale è impostato in modo da consentire lo spostamento verso il basso delle sezioni nel caso in cui dati di grandi dimensioni vengano uniti nelle sezioni precedenti.
    1. La residenza principale sezione può essere riutilizzata anche in altri layout. Crea come layout di frammento.
    1. Sezione I dettagli di interesse aggiuntivi contengono solo due elementi posizionati uno sotto l&#39;altro, possono contenere dati di grandi dimensioni ed è progettato come flusso.
    1. Altre sezioni contengono elementi in posizioni specifiche, in modo che siano progettati come layout posizionato.
    1. Suddividere una sezione in sottomoduli se la sezione contiene elementi in posizioni specifiche e questi elementi contengono grandi quantità di dati. Disporre quindi i sottomoduli per ottenere il comportamento desiderato.
    1. Per la sezione Residenza principale, aggiungere un&#39;area di destinazione segnaposto. Questo segnaposto è associato al frammento Residenza principale al momento della progettazione Lettera/Comunicazione interattiva.
-   1. Caricate il layout (e l&#39;eventuale frammento che utilizza il layout) nel server AEM Forms.
+   1. Caricate il layout (e l&#39;eventuale frammento che utilizza il layout) nel server AEM Forms .
 
 ### Utilizzare un sottomodulo in un modello XDP {#usesubformxdp}
 
@@ -83,6 +86,7 @@ Effettuare le seguenti operazioni per utilizzare il sottomodulo in un modello XD
 
    1. Specificare un nome per il sottomodulo nel campo **Nome** .
    1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+
    Ripetere i passaggi da 2 a 5 per aggiungere altri sottomoduli al modello XDP. Aggiungere [testo, frammenti di documento, immagini e grafici](create-interactive-communication.md#step2) alle aree di destinazione solo durante la creazione della comunicazione interattiva.
 
 1. Selezionare **File** > **Salva con nome** per salvare il file nel file system locale:
@@ -111,13 +115,13 @@ Per usare il componente Campo immagine in un modello XDP, effettuate le seguenti
 
 ### Creare un modello XDP per i frammenti di layout {#xdplayoutfragments}
 
-Utilizzare il componente Tabella in Forms Designer per creare frammenti di layout, quindi utilizzarli per creare tabelle durante la creazione del canale di stampa della comunicazione interattiva. L&#39;utilizzo di frammenti di layout per creare tabelle garantisce che il contenuto della tabella mantenga la struttura quando il canale Web viene generato automaticamente utilizzando il canale di stampa.
+Utilizzare il componente Tabella di Forms Designer per creare frammenti di layout, quindi utilizzarli per creare tabelle durante la creazione del canale di stampa della comunicazione interattiva. L&#39;utilizzo di frammenti di layout per creare tabelle garantisce che il contenuto della tabella mantenga la struttura quando il canale Web viene generato automaticamente utilizzando il canale di stampa.
 
 >[!NOTE]
 >
 >Immettere il testo nelle celle della tabella o [creare il binding con gli oggetti](create-interactive-communication.md#step2) del modello dati del modulo solo durante la creazione della comunicazione interattiva.
 
-Per utilizzare il componente Tabella nel modello XDP utilizzando Forms Designer, effettuare le seguenti operazioni:
+Per utilizzare il componente Tabella nel modello XDP utilizzando Forms Designer, procedere come segue:
 
 1. Trascinare il componente **Tabella** dalla Libreria **** oggetto al modulo.
 1. Nella finestra di dialogo **Inserisci tabella** :
@@ -143,13 +147,13 @@ Per utilizzare il componente Tabella nel modello XDP utilizzando Forms Designer,
 
    1. Toccate **Salva**.
 
-### Caricare il modello XDP nel server AEM Forms {#uploadxdptemplate}
+### Caricare il modello XDP sul server AEM Forms  {#uploadxdptemplate}
 
-Dopo aver creato un modello XDP utilizzando Designer moduli, è necessario caricarlo nel server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
+Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo  server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
 
-1. Selezionare **Moduli** > **Moduli e documenti**.
+1. Selezionate **Forms** > **Forms e documenti**.
 1. Toccate **Crea** > Caricamento **** file.
-1. Andate alla posizione del modello XDP nel file system locale e toccate **Apri** per importare il modello XDP nel server AEM Forms.
+1. Andate alla posizione del modello XDP nel file system locale e toccate **Apri** per importare il modello XDP nel server AEM Forms .
 
 ## Uso dello schema {#using-schema}
 
@@ -227,7 +231,7 @@ Quando elementi come il logo e l&#39;indirizzo dell&#39;organizzazione vengono v
 
 ## Specificare il formato di rendering del server {#specify-the-server-nbsp-render-format}
 
-Utilizzare il formato di rendering del server del layout su Modulo XML dinamico; in caso contrario, il rendering di lettere/comunicazioni interattive basate su questo layout non può essere eseguito correttamente. Per impostazione predefinita, in Forms Designer il formato di rendering del server è impostato su Modulo XML dinamico. Per verificare di utilizzare il formato corretto:
+Utilizzare il formato di rendering del server del layout su Modulo XML dinamico; in caso contrario, il rendering di lettere/comunicazioni interattive basate su questo layout non può essere eseguito correttamente. Per impostazione predefinita, il formato di rendering del server in Forms Designer è impostato su Modulo XML dinamico. Per verificare di utilizzare il formato corretto:
 
 * In Designer, fare clic su **File** > Proprietà **** modulo > **Valori predefiniti**, quindi assicurarsi che l&#39;impostazione Rendering/Formato PDF sia impostata su Modulo XML dinamico.
 
