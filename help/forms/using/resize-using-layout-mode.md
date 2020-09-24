@@ -5,12 +5,15 @@ description: 'Definire la posizione dei componenti utilizzando la griglia reatti
 seo-description: 'Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout '
 uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
 contentOwner: anujkapo
+topic-tags: interactive-communications, author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Se si crea il canale Web utilizzando il canale [Stampa come master](../../forms/
 
 Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superiore dell’interfaccia per la creazione di moduli adattivi e comunicazioni interattive accanto all’opzione **Anteprima** . Il modulo viene visualizzato in modalità Layout.
 
-1. Accedete all’istanza di creazione di AEM e passate ad **Adobe Experience Manager** > **Moduli** > **Moduli e documenti**.
+1. Accedete all’istanza di creazione AEM e passate a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
 1. [Create un nuovo](../../forms/using/create-interactive-communication.md) modulo adattivo o aprite una comunicazione interattiva.
 1. Selezionate **Layout** dall’elenco a discesa nella parte superiore accanto all’opzione **Anteprima** . Il modulo viene visualizzato in modalità Layout.
 
@@ -44,6 +47,7 @@ Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superior
 
    * **Elemento padre:** Selezionate l’elemento padre di un componente.
    * **Mobile in nuova riga:** Se sono presenti più componenti nella stessa riga, sposta il componente sulla riga successiva.
+
    Potete annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito al pannello contenente i componenti ridimensionati utilizzando l’opzione **[!UICONTROL Ripristina layout]** punto di interruzione ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)). Toccate l’elemento padre del componente ridimensionato per visualizzare l’opzione.
 
    >[!NOTE]
@@ -93,7 +97,7 @@ Per definire il numero di colonne per un pannello, eseguite i seguenti passaggi:
 
 ## Abilita la nuova griglia reattiva per i vecchi layout reattivi {#enableresponsivegrid}
 
-Abilita la nuova griglia reattiva per i moduli creati con AEM Forms 6.4 o versione successiva per ridimensionare i componenti.
+Abilitare la nuova griglia reattiva per i moduli creati con  AEM Forms 6.4 o versione precedente per ridimensionare i componenti.
 
 >[!NOTE]
 >
