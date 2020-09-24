@@ -1,17 +1,20 @@
 ---
 title: Verifica dell’interfaccia
 seo-title: Verifica dell’interfaccia
-description: AEM fornisce un framework per l’automazione dei test per l’interfaccia utente di AEM
-seo-description: AEM fornisce un framework per l’automazione dei test per l’interfaccia utente di AEM
+description: AEM fornisce un framework per l'automazione dei test per l'interfaccia utente AEM
+seo-description: AEM fornisce un framework per l'automazione dei test per l'interfaccia utente AEM
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: testing
+topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 2%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 
 >[!NOTE]
 >
->A partire da AEM 6.5, il framework di test dell’interfaccia utente di hobbes.js è obsoleto. Adobe non intende apportare ulteriori miglioramenti e consiglia ai clienti di utilizzare l&#39;automazione selenio.
+>A partire da AEM 6.5, il framework di test dell&#39;interfaccia utente di hobbes.js è obsoleto.  Adobe non prevede di apportare ulteriori miglioramenti e consiglia ai clienti di utilizzare l&#39;automazione Selenium.
 >
 >See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
 
-AEM fornisce un framework per l’automazione dei test per l’interfaccia utente di AEM. Utilizzando il framework, potete scrivere ed eseguire test di interfaccia direttamente in un browser Web. Il framework fornisce un&#39;API javascript per la creazione di test.
+AEM fornisce un framework per l&#39;automazione dei test per l&#39;interfaccia utente AEM. Utilizzando il framework, potete scrivere ed eseguire test di interfaccia direttamente in un browser Web. Il framework fornisce un&#39;API javascript per la creazione di test.
 
-Il framework di test di AEM utilizza Hobbes.js, una libreria di test scritta in Javascript. Il framework Hobbes.js è stato sviluppato per testare AEM come parte del processo di sviluppo. Il framework è ora disponibile per l’uso pubblico per il test delle applicazioni AEM.
+Il framework di test AEM utilizza Hobbes.js, una libreria di test scritta in Javascript. Il framework Hobbes.js è stato sviluppato per AEM di test come parte del processo di sviluppo. Il framework è ora disponibile per l&#39;uso pubblico per il test delle applicazioni AEM.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ Il framework di test di AEM utilizza Hobbes.js, una libreria di test scritta in 
 
 ## Struttura dei test {#structure-of-tests}
 
-Quando si utilizzano test automatizzati in AEM, è importante tenere presenti i termini seguenti:
+Quando si utilizzano test automatizzati all&#39;interno di AEM, è importante comprendere i termini seguenti:
 
 | Azione | Un&#39; **azione** è un&#39;attività specifica in una pagina Web, ad esempio fare clic su un collegamento o un pulsante. |
 |---|---|
@@ -105,7 +108,7 @@ La procedura seguente illustra la creazione ed esecuzione di una suite di test c
 
 Per informazioni dettagliate sulla creazione di suite di test, consultate la documentazione [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)Hobbes.js.
 
-1. Aprite CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. Apri CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Fate clic con il pulsante destro del mouse sulla `/etc/clientlibs` cartella e fate clic su **Crea > Crea cartella**. Digitare `myTests` il nome e fare clic su **OK**.
 1. Fare clic con il pulsante destro del mouse sulla `/etc/clientlibs/myTests` cartella e scegliere **Crea > Crea nodo**. Utilizzate i seguenti valori di proprietà e fate clic su **OK**:
 
@@ -121,7 +124,7 @@ Per informazioni dettagliate sulla creazione di suite di test, consultate la doc
 
    >[!NOTE]
    >
-   >**Solo AEM Forms**
+   >**solo AEM Forms**
    >
    >
    >Per verificare i moduli adattivi, aggiungere i seguenti valori alle categorie e alle dipendenze. Esempio:
