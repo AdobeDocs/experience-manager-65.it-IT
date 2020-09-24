@@ -1,24 +1,27 @@
 ---
 title: Gestione dei progetti - Elenco di controllo Best Practices
 seo-title: Gestione dei progetti - Elenco di controllo Best Practices
-description: La gestione di un progetto per implementare Adobe Experience Manager (AEM) richiede pianificazione e comprensione. Gli elenchi di controllo del progetto sono concepiti come un insieme di procedure ottimali per la distribuzione dei progetti. Essi guidano l'utente attraverso tutte le fasi del ciclo di vita del progetto e forniscono un monitoraggio di alto livello del suo stato attuale.
-seo-description: La gestione di un progetto per implementare Adobe Experience Manager (AEM) richiede pianificazione e comprensione. Gli elenchi di controllo del progetto sono concepiti come un insieme di procedure ottimali per la distribuzione dei progetti. Essi guidano l'utente attraverso tutte le fasi del ciclo di vita del progetto e forniscono un monitoraggio di alto livello del suo stato attuale.
+description: La gestione di un progetto per l'implementazione di Adobe Experience Manager (AEM) richiede pianificazione e comprensione. Gli elenchi di controllo del progetto sono concepiti come un insieme di procedure ottimali per la distribuzione dei progetti. Essi guidano l'utente attraverso tutte le fasi del ciclo di vita del progetto e forniscono un monitoraggio di alto livello del suo stato attuale.
+seo-description: La gestione di un progetto per l'implementazione di Adobe Experience Manager (AEM) richiede pianificazione e comprensione. Gli elenchi di controllo del progetto sono concepiti come un insieme di procedure ottimali per la distribuzione dei progetti. Essi guidano l'utente attraverso tutte le fasi del ciclo di vita del progetto e forniscono un monitoraggio di alto livello del suo stato attuale.
 uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 810d4e9fa93bd0913ba6c928a2508587c605c07e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '3316'
+ht-degree: 1%
 
 ---
 
 
 # Gestione dei progetti - Elenco di controllo Best Practices{#managing-projects-best-practices-checklist}
 
-La gestione di un progetto per implementare Adobe Experience Manager (AEM) richiede pianificazione e comprensione per essere certi di essere a conoscenza dei problemi e delle relative decisioni da prendere (sia prima che durante l’implementazione del progetto).
+La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede pianificazione e comprensione per essere consapevoli dei problemi e delle decisioni (correlate) da prendere (sia prima che durante l’implementazione del progetto).
 
 Per aiutarti, le best practice sono:
 
@@ -55,7 +58,7 @@ Il foglio di lavoro **Heartbeat** progetto fornisce una panoramica grafica delle
 
 ## Stato per ruolo {#status-by-role}
 
-Il foglio di lavoro **Stato per ruolo** mostra una suddivisione dettagliata di [**Salute **,** Qualità&#x200B;**e** Completezza **](#projectheartbeat)per**[ Fase](#phases-and-milestones)** **[](#persona)**e Persona.
+Il foglio di lavoro **Stato per ruolo** mostra una suddivisione dettagliata di [**Salute**, **Qualità** e **Completezza**](#projectheartbeat) per **[Fase](#phases-and-milestones)** **[](#persona)** e Persona.
 
 ## Fasi e pietre miliari {#phases-and-milestones}
 
@@ -77,7 +80,7 @@ La preparazione del progetto costituisce la base dell&#39;intero progetto. È ne
 
 * **Ambito e programma**
 
-   * È opportuno rendere disponibili un ambito di applicazione di base e un calendario approssimativo per definire i requisiti e entro quale termine; se aiuta a chiarire la situazione, puoi anche definire cosa si trova al di fuori dell&#39;ambito.
+   * È opportuno rendere disponibili un ambito di applicazione di base e un calendario approssimativo per definire i requisiti e entro quale periodo di tempo; se aiuta a chiarire la situazione, puoi anche definire cosa si trova al di fuori dell&#39;ambito.
 
 Le modalità di preparazione, pianificazione ed esecuzione del progetto e implementazione della soluzione saranno influenzate dalle restrizioni applicate, ad esempio budget fisso, scadenze fisse, quantità di contenuto, qualità richiesta.
 
@@ -104,7 +107,7 @@ I Quattro Fattori:
    * Esistono sistemi legacy da sostituire e, in caso affermativo, esistono dati da migrare?
    * Chi sarà coinvolto?
    * Come misurerai il progresso?
-   * Con quale frequenza verificherete i progressi compiuti durante la durata del progetto?
+   * Con quale frequenza verificherete i progressi compiuti nel corso della durata del progetto?
 
 
 * **Budget**
@@ -172,7 +175,7 @@ La pianificazione dello sviluppo è fondamentale per garantire che il progetto s
    * La struttura del contenuto; incluse le risorse
    * strutture di base; incluse le campagne, ecc.
    * Strutture multisito e multilingue (MSM, Traduzione, ecc.)
-   * Contenuto di supporto (compresi tag e concetti di tag)
+   * Contenuto di supporto (inclusi tag e concetti di tag)
    * Strategie di memorizzazione nella cache e di riutilizzo dei contenuti
 
 * **Architettura del sistema**
@@ -187,7 +190,7 @@ La pianificazione dello sviluppo è fondamentale per garantire che il progetto s
 
    * Processi per ogni ambiente; ad esempio, requisiti di implementazione e manutenzione
    * Attività di manutenzione (Datastore GC, ottimizzazione TarPM, ecc.)
-   * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) caching
+   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Memorizzazione in cache di Dispatcher
    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authoring
    * Prestazioni lato client (JS minify, concat, sprites css, numero totale di richieste http e altre)
 
@@ -199,6 +202,7 @@ La pianificazione dello sviluppo è fondamentale per garantire che il progetto s
 
    * Come interagiranno tra loro e con gli utenti.
    * I dati che devono essere consumati e prodotti dalle applicazioni, piuttosto che la loro struttura interna.
+
    Le definizioni dovrebbero riguardare:
 
    * Struttura del codice di base per il progetto
@@ -238,17 +242,17 @@ La pianificazione dello sviluppo è fondamentale per garantire che il progetto s
 
    Prima di sviluppare tutti i processi di supporto, necessari per distribuire, rilasciare, testare e segnalare i problemi, dovrebbero essere impostati.
 
-   Consultate anche [Adobe Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+   Consultate anche il [Portale](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)di supporto per Adobi.
 
-### Pianificazione e operazioni {#operations-planning-and-operations}
+### Pianificazione delle operazioni e operazioni {#operations-planning-and-operations}
 
-Analogamente, le operazioni devono essere pianificate in modo appropriato per garantire l&#39;esistenza degli ambienti richiesti, per tutte le fasi del ciclo di vita del progetto. Sono inoltre necessari i processi appropriati per la loro manutenzione.
+Allo stesso modo, le operazioni devono essere pianificate in modo appropriato per garantire l&#39;esistenza degli ambienti richiesti, per tutte le fasi del ciclo di vita del progetto. È inoltre necessario disporre dei processi appropriati per la loro manutenzione.
 
 #### Milestones {#milestones-3}
 
 * **Autorizzazioni**
 
-   Devi pianificare e implementare un concetto di ruoli e diritti per tutti gli utenti/gruppi che utilizzeranno la soluzione.
+   È necessario pianificare e quindi implementare un concetto di ruoli e diritti per tutti gli utenti/gruppi che utilizzeranno la soluzione.
 
    Esempio:
 
@@ -257,6 +261,7 @@ Analogamente, le operazioni devono essere pianificate in modo appropriato per ga
    * Definizione dell’uso dei privilegi che hanno un impatto sull’ambiente di pubblicazione; ad esempio, `replicate`
    * Per gli utenti con privilegi minimi, i flussi di lavoro devono essere definiti
    * Gli utenti del `editor` gruppo non devono avere `admin` diritti né far parte del `administrators` gruppo
+
    For more information, see [User Administration and Security](/help/sites-administering/security.md).
 
 * **Monitoraggio e manutenzione**
@@ -265,6 +270,7 @@ Analogamente, le operazioni devono essere pianificate in modo appropriato per ga
 
    * Quali sono le necessità di monitoraggio
    * Attività di manutenzione; sia regolare che per casi speciali
+
    Per ulteriori informazioni, consulta anche [Monitoraggio e manutenzione](/help/sites-deploying/monitoring-and-maintaining.md) .
 
 * **Migrazione**
@@ -273,7 +279,7 @@ Analogamente, le operazioni devono essere pianificate in modo appropriato per ga
 
 * **Piano di ripristino**
 
-   Assicurarsi di disporre di un piano di ripristino. In situazioni di emergenza, questo deve essere disponibile per garantire l’utilizzo della produzione in AEM. Questo dovrebbe coprire situazioni come backup, ripristino, failover e altri.
+   Assicurarsi di disporre di un piano di ripristino. In una situazione di emergenza ciò deve essere disponibile per garantire l&#39;uso della produzione di AEM. Questo dovrebbe coprire situazioni come backup, ripristino, failover e altri.
 
 ### Sviluppo {#development}
 
@@ -293,7 +299,7 @@ Lo sviluppo è una fase cruciale che richiede più di una semplice codifica.
          * un sistema di monitoraggio dei problemi; come Jira
          * un IDE; come Eclipse
          * uno strumento di gestione della costruzione; come Maven
-         * uno strumento di integrazione continua; come Jenkins
+         * uno strumento per l&#39;integrazione continua; come Jenkins
          * uno strumento per il controllo della versione; come GIT/SVN
          * un gestore dell&#39;archivio degli artifact; come Archiva/Nexus
    * Integrazione/dipendenze software di terze parti
@@ -361,12 +367,13 @@ Una volta che la nuova applicazione sarà disponibile, sarà necessario sottopor
 
 #### Milestones {#milestones-5}
 
-* **Test di accettazione dell&#39;utente finale**
+* **Test di accettazione da parte dell&#39;utente finale**
 
    [Il test](/help/sites-developing/acceptance-signoff.md) di accettazione da parte dell&#39;utente (UAT) è fondamentale per garantire che:
 
    * La soluzione soddisfa i requisiti utente/cliente
    * I clienti/utenti accettano la soluzione (funzione, progettazione e prestazioni)
+
    Dovrebbe essere prevista una checklist formalizzata per la consegna del cliente; idealmente automatizzato ed eseguito su base notturna su uno snapshot. I risultati devono essere inviati al project manager e al team di sviluppo
 
 * **Test prestazioni e carico**
@@ -381,11 +388,11 @@ Una volta che la nuova applicazione sarà disponibile, sarà necessario sottopor
    * [Linee guida di base sulle prestazioni](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
    >[!NOTE]
    >
-   >Questo processo dovrà essere proseguito durante il normale utilizzo di AEM, ma queste fasi iniziali sono le più importanti.
+   >Questo processo dovrà essere proseguito durante il normale uso di AEM, ma queste fasi iniziali sono le più importanti.
 
 ### Rollout {#rollout}
 
-L&#39;implementazione della nuova applicazione richiede un&#39;attenta pianificazione per garantire un Go Live uniforme. Ciò include la conferma di un elevato livello di sicurezza, la formazione di tutti i potenziali utenti e la realizzazione di più prove a secco per confermare che tutti i problemi sono stati risolti.
+L&#39;implementazione della nuova applicazione richiede un&#39;attenta pianificazione per garantire un Go Live uniforme. Ciò include la conferma di un elevato livello di sicurezza, la formazione di tutti i potenziali utenti e la realizzazione di più prove a secco per confermare che tutti i problemi sono stati affrontati.
 
 #### Milestones {#milestones-6}
 
@@ -403,7 +410,7 @@ L&#39;implementazione della nuova applicazione richiede un&#39;attenta pianifica
 
    Assicurati che gli amministratori della soluzione abbiano:
 
-   * Formati
+   * È stato addestrato
    * Ricevuto materiale di formazione appropriato
    * Ricevuta la documentazione appropriata
 
@@ -411,7 +418,7 @@ L&#39;implementazione della nuova applicazione richiede un&#39;attenta pianifica
 
    Assicuratevi che gli autori abbiano:
 
-   * Formati
+   * È stato addestrato
    * Ricevuto materiale di formazione appropriato
    * ha ricevuto la documentazione appropriata; ad esempio, la Guida utente
 
@@ -493,7 +500,7 @@ L&#39;architetto della soluzione:
 
 L&#39;analista aziendale:
 
-* È principalmente responsabile della raccolta e dell&#39;analisi dei requisiti di alto livello, quindi trasformarli in specifiche:
+* È principalmente responsabile della raccolta e dell&#39;analisi dei requisiti di alto livello, e quindi della loro trasformazione in specifiche:
 
    * per consentire al project manager di utilizzare la pianificazione dello sviluppo
    * per consentire al team di sviluppo di lavorare durante la progettazione e lo sviluppo.
@@ -502,7 +509,7 @@ L&#39;analista aziendale:
 
    * La definizione di successo.
    * I criteri per il successo.
-   * KPI (basati sia sul business che sulle prestazioni).
+   * KPI (basati sia sulle attività aziendali che sulle prestazioni).
 
 ### Lead di sviluppo {#development-lead}
 
@@ -515,13 +522,13 @@ Il lead di sviluppo:
    * assicurare che sia allineata con i KPI aziendali e delle prestazioni
    * tenendo conto dei criteri di successo e della definizione
 
-* Lavora a stretto contatto con l’architetto (in particolare quando elabora la strategia di sviluppo per AEM) per definire aspetti quali la relazione tra modelli e componenti, la strategia di integrazione per applicazioni di terze parti e qualsiasi funzionalità specializzata.
+* Lavora a stretto contatto con l&#39;architetto (soprattutto quando elabora la strategia di sviluppo per AEM) per definire aspetti quali la relazione tra modelli e componenti, la strategia di integrazione per applicazioni di terze parti e qualsiasi funzionalità specializzata.
 
 ### Piombo Qualità {#quality-lead}
 
 Lead di qualità:
 
-* è responsabile della qualità della consegna; garantire che soddisfi i criteri di successo e gli eventuali KPI definiti dal client.
+* è responsabile della qualità della consegna; garantire che soddisfi i criteri per il successo e gli eventuali KPI definiti dal client.
 * Definisce le metriche di qualità, si allinea con tutti i soggetti interessati, elabora i piani di test e ne assicura l’esecuzione.
 * Crea e invia report ai soggetti coinvolti nel progetto.
 
@@ -602,7 +609,7 @@ Per le procedure ottimali per l’implementazione, l’amministrazione, lo svilu
 
 * Altre best practice e linee guida relative alla gestione di un progetto AEM:
    * [Linee guida per le dimensioni dell’hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [DevOps Enterprise](/help/managing/enterprise-devops.md)
+   * [DevOps aziendale](/help/managing/enterprise-devops.md)
    * [Best practice per SEO e gestione degli URL](/help/managing/seo-and-url-management.md)
    * [Linee guida sull’accessibilità di AEM per il Web](/help/managing/web-accessibility.md)
    * [Regolamento](/help/managing/data-protection-and-privacy.md)generale sulla protezione dei dati* [Implementazione e manutenzione delle procedure ottimali](/help/sites-deploying/best-practices.md)
@@ -612,17 +619,17 @@ Per le procedure ottimali per l’implementazione, l’amministrazione, lo svilu
 
 ## Aree principali della documentazione {#key-documentation-areas}
 
-* Documentazione di AEMInoltre, le seguenti sezioni della documentazione di AEM sono di particolare interesse (questo elenco non è esaustivo):
+* AEM documentazioneInoltre, le seguenti sezioni della documentazione AEM sono di particolare interesse (tuttavia, questo elenco non è esaustivo):
 
    * [Sicurezza](/help/sites-developing/security.md)
    * [Implementazioni consigliate](/help/sites-deploying/recommended-deploys.md)
-   * [DevOps Enterprise](/help/managing/enterprise-devops.md)
+   * [DevOps aziendale](/help/managing/enterprise-devops.md)
    * [Ridimensionamento hardware](/help/managing/hardware-sizing-guidelines.md)
    * Concetti di AEM:
 
       * [Sviluppo - Concetti di base](/help/sites-developing/the-basics.md)
       * [Concetti MSM](/help/sites-administering/msm.md)
-      * [HTML Template Language (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+      * [HTML Template Language (HTL)](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 
 * Documentazione correlata
 
