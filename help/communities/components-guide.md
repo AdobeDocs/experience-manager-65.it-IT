@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Guida ai componenti community  {#community-components-guide}
 
-La guida Componenti comunitari è uno strumento di sviluppo interattivo per il quadro della componente [sociale (SCF)](scf.md). Contiene un elenco dei componenti AEM Communities disponibili o le funzioni più complesse create da più componenti.
+La guida Componenti comunitari è uno strumento di sviluppo interattivo per il quadro della componente [sociale (SCF)](scf.md). Fornisce un elenco dei componenti disponibili  AEM Communities o delle funzioni più complesse create da più componenti.
 
 Oltre alle informazioni di base per ciascun componente, la guida consente di sperimentare il funzionamento dei componenti e delle funzioni SCF e le modalità di configurazione o personalizzazione.
 
@@ -61,7 +61,7 @@ Per attivare la modalità di modifica, al momento dell&#39;authoring, inserire `
 >
 >Per informazioni generali sull’authoring, consulta la guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se non hai familiarità con AEM, consulta la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
+>Se non avete familiarità con AEM, consultate la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
 
 
 ### Home page {#home-page}
@@ -70,13 +70,13 @@ La guida fornisce un elenco dei componenti SCF disponibili per l’anteprima e l
 
 Guida ai componenti visualizzata su un’istanza di creazione in modalità di modifica:
 
-![chlimage_1-404](assets/chlimage_1-404.png)
+![community-component1](assets/community-component1.png)
 
 ## Pagine dei componenti {#component-pages}
 
 Selezionate un componente dall’elenco sul lato sinistro della pagina.
 
-![chlimage_1-405](assets/chlimage_1-405.png)
+![community-component-pages](assets/community-component2.png)
 
 Il corpo principale della guida visualizza:
 
@@ -100,11 +100,11 @@ Quando si utilizza la guida in un’istanza di authoring, è possibile configura
 
 Per la guida Componenti comunità, alcune impostazioni della finestra di dialogo dei componenti sono sovrapposte allo stato [Inclusibile](scf.md#add-or-include-a-communities-component) . Per alternare tra l’utilizzo della risorsa esistente o di una risorsa inclusa dinamicamente, in modalità di modifica selezionate sia il componente che il testo incluso, quindi fate doppio clic per aprire la finestra di dialogo di modifica:
 
-![chlimage_1-406](assets/chlimage_1-406.png)
+![community-component3](assets/community-component3.png)
 
 Nella scheda **Modelli** :
 
-![chlimage_1-407](assets/chlimage_1-407.png)
+![community-component4](assets/community-component4.png)
 
 * **Includi componente secondario con sling:include**
 
@@ -152,7 +152,7 @@ Per sperimentare rapidamente le personalizzazioni, la `scg:showIde`proprietà de
 
 Utilizzando il componente commenti come esempio, nell’istanza di creazione o di pubblicazione, è stato effettuato l’accesso con privilegi di amministratore:
 
-1. Passa a [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Passa al [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Ad esempio, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -173,7 +173,9 @@ Utilizzando il componente commenti come esempio, nell’istanza di creazione o d
 
 1. Ora sono disponibili 3 schede per Modelli, CSS e Dati.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
+![community-component5](assets/community-component5.png)
+
+![community-component6](assets/community-component6.png)
 
 ### Scheda Modelli {#templates-tab}
 
