@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Per informazioni di base, visita :
 
 * [Utilizzo delle librerie](/help/sites-developing/clientlibs.md) lato client per fornire dettagli di utilizzo e strumenti di debug
 * [Clientlibs per SCF](/help/communities/client-customize.md#clientlibs) che fornisce informazioni utili per la personalizzazione dei componenti SCF
-* [Blog : Librerie client AEM spiegate ad esempio](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog : AEM librerie client spiegate dall&#39;esempio](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Perché Clientlibs sono richiesti {#why-clientlibs-are-required}
 
@@ -41,24 +41,24 @@ Se i clientlibs richiesti non sono disponibili, l’ [aggiunta di un componente 
 
 ### Esempio: Recensioni inserite senza Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![valutazioni inserite](assets/placed-reviews.png)
 
 ### Esempio: Recensioni inserite con Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![recensioni-clientlibs](assets/reviews-clientlibs.png)
 
 ## Identificazione delle librerie di client necessarie {#identifying-required-clientlibs}
 
 Le informazioni essenziali sulle funzioni per gli sviluppatori identificano i clientlibs richiesti.
 
-Inoltre, da un’istanza di AEM, l’accesso alla Guida [ai componenti](/help/communities/components-guide.md) della community consente di accedere a un elenco delle categorie clientlib richieste per un componente.
+Inoltre, da un&#39;istanza AEM, l&#39;accesso alla Guida [ai componenti](/help/communities/components-guide.md) comunitari consente di accedere a un elenco delle categorie clientlib richieste per un componente.
 
 Ad esempio, nella parte superiore della pagina [](https://localhost:4502/content/community-components/en/reviews.html) Recensioni i clientlibs richiesti sono elencati
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![clientlibs-review](assets/clientlibs-reviews.png)
 
 ## Aggiunta Di Clientlibs Richiesti {#adding-required-clientlibs}
 
@@ -92,7 +92,7 @@ Per aggiungere una clientlib per un sito community utilizzando [CRXDE Lite](/hel
 >Se il sito non è un sito community, è necessario individuare l&#39;esistenza o la posizione delle librerie client in uso per il sito.
 
 
-Utilizzando l’esempio [Primi passi con i AEM Communities](/help/communities/getting-started.md) , dove `site-name` è *attivo*, questo è il modo in cui apparirebbe l’elenco clientliblist se si aggiungesse il componente recensioni:
+Utilizzando l’ [esempio Guida introduttiva  AEM Communities](/help/communities/getting-started.md) , in cui `site-name` è *attiva*, l’elenco clientliblist viene visualizzato così se si aggiunge il componente recensioni:
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![review-component](assets/review-component.png)
 
