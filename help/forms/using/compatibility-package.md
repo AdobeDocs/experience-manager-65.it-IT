@@ -1,17 +1,20 @@
 ---
 title: Pacchetto di compatibilità
 seo-title: Pacchetto di compatibilità
-description: L'installazione del pacchetto Compatibilità su AEM Forms 6.5 consente di utilizzare le risorse Gestione corrispondenza di AEM Forms 6.4 e versioni precedenti, nonché modelli e pagine di moduli adattivi obsoleti
-seo-description: L'installazione del pacchetto di compatibilità su AEM Forms 6.4 consente di utilizzare le risorse Gestione corrispondenza di AEM Forms 6.4 e di utilizzare modelli e pagine di moduli adattivi obsoleti
+description: L'installazione del pacchetto Compatibilità su  AEM Forms 6.5 consente di utilizzare le risorse Gestione corrispondenza di  AEM Forms 6.4 e versioni precedenti e modelli e pagine di moduli adattivi obsoleti
+seo-description: L'installazione del pacchetto di compatibilità su  AEM Forms 6.4 consente di utilizzare le risorse Gestione corrispondenza da  AEM Forms 6.4 e da pagine e modelli di moduli adattivi obsoleti
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: correspondence-management
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 6%
 
 ---
 
@@ -20,24 +23,24 @@ source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
 
 ## Panoramica {#overview}
 
-La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM Forms 6.5. Per continuare a utilizzare le lettere in AEM Forms 6.5, è necessario installare l&#39;ultimo pacchetto [di compatibilità](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)AEMFD.
+La comunicazione interattiva è l&#39;approccio predefinito e consigliato per creare comunicazioni con i clienti in  AEM Forms 6.5. Per continuare a utilizzare le lettere in  AEM Forms 6.5, è necessario installare l&#39;ultimo pacchetto [di compatibilità](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)AEMFD.
 
-Il pacchetto Compatibilità AEM-FD consente inoltre di [utilizzare le risorse seguenti da AEM Forms 6.4, 6.3 e 6.2 su AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Il pacchetto di compatibilità AEMFD consente inoltre di [utilizzare le risorse seguenti da  AEM Forms 6.4, 6.3 e 6.2 su  AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Frammenti di documenti
 * Lettere
 * Dizionari dati
 * Moduli adattivi modelli e pagine obsoleti
 
-Per ulteriori informazioni, consultate [Risorse rese compatibili con AEM Forms 6.5, installando il pacchetto](../../forms/using/compatibility-package.md#assetsmadecompatible)Compatibilità.
+Per ulteriori informazioni, vedi [Risorse rese compatibili con  AEM Forms 6.5, installando il pacchetto](../../forms/using/compatibility-package.md#assetsmadecompatible)Compatibilità.
 
-## Supporto per le risorse AEM Forms 6.4, 6.3 e 6.2 in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Supporto aggiuntivo per  risorse AEM Forms 6.4, 6.3 e 6.2 in  AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Dopo aver effettuato l’aggiornamento, effettuate le seguenti operazioni per installare il pacchetto di compatibilità AEMFD e rendere le risorse compatibili con la versione 6.5:
 
-Accertatevi di disporre di un pacchetto [](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Compatibilità preinstallato.
+Accertatevi di disporre di [AEM pacchetto](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) di compatibilità preinstallato.
 
-1. Installate la versione più recente del pacchetto [di](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)compatibilità 6.5.
+1. Installate la versione più recente del pacchetto [di](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)compatibilità 6.5.
 
    Per ulteriori informazioni sul caricamento e l&#39;installazione del pacchetto, consultate [Come lavorare con i pacchetti](/help/sites-administering/package-manager.md).
 
@@ -46,11 +49,11 @@ Accertatevi di disporre di un pacchetto [](https://helpx.adobe.com/aem-forms/kb/
 
    Per ulteriori informazioni, vedi Utilità [di](../../forms/using/migration-utility.md)migrazione.
 
-## Risorse rese compatibili con AEM Forms 6.5 installando il pacchetto Compatibilità {#assetsmadecompatible}
+## Risorse rese compatibili con  AEM Forms 6.5 installando il pacchetto Compatibilità {#assetsmadecompatible}
 
-Installando il pacchetto Compatibilità, potete rendere le risorse e i modelli seguenti compatibili con AEM Forms 6.5:
+Installando il pacchetto Compatibilità, potete rendere le risorse e i modelli seguenti compatibili con  AEM Forms 6.5:
 
-* Risorse per la gestione della corrispondenza da AEM 6.4 e versioni precedenti:
+* Risorse per la gestione della corrispondenza dal AEM 6.4 e versioni precedenti:
 
    * [Lettere](../../forms/using/create-letter.md)
    * [Dizionari dati](/help/forms/using/data-dictionary.md)
