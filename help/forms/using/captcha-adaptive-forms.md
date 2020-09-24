@@ -1,16 +1,16 @@
 ---
 title: Uso del CAPTCHA nei moduli adattivi
 seo-title: Uso del CAPTCHA nei moduli adattivi
-description: Scoprite come configurare il servizio AEM CAPTCHA o Google reCAPTCHA nei moduli adattivi.
-seo-description: Scoprite come configurare il servizio AEM CAPTCHA o Google reCAPTCHA nei moduli adattivi.
+description: Scoprite come configurare AEM servizio CAPTCHA o Google reCAPTCHA nei moduli adattivi.
+seo-description: Scoprite come configurare AEM servizio CAPTCHA o Google reCAPTCHA nei moduli adattivi.
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
+topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -22,12 +22,13 @@ ht-degree: 0%
 
 CAPTCHA (Test di Turing Pubblico Completamente Automatizzato per dire Computer e Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra gli umani e i programmi o robot automatizzati. Rappresenta una sfida e valuta la risposta degli utenti per determinare se si tratta di un essere umano o un bot che interagisce con il sito. Impedisce all&#39;utente di procedere in caso di esito negativo del test e contribuisce a rendere sicure le transazioni online, impedendo ai bot di inviare spam o scopi dannosi.
 
-AEM Forms supporta CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
+ AEM Forms supporta il CAPTCHA nei moduli adattivi. Potete utilizzare il servizio reCAPTCHA di Google per implementare CAPTCHA.
 
 >[!NOTE]
 >
->* I AEM Forms supportano solo reCaptcha v2. Qualsiasi altra versione non è supportata.
->* CAPTCHA nei moduli adattivi non è supportato in modalità offline nell&#39;app AEM Forms.
+>*  AEM Forms supporta solo reCaptcha v2. Qualsiasi altra versione non è supportata.
+>* CAPTCHA nei moduli adattivi non è supportato in modalità offline nell&#39;app  AEM Forms.
+
 >
 
 
@@ -38,12 +39,12 @@ Gli autori dei moduli possono utilizzare il servizio reCAPTCHA di Google per imp
 
 ![Recaptcha](assets/recaptcha_new.png)
 
-Per implementare il servizio reCAPTCHA in AEM Forms:
+Per implementare il servizio reCAPTCHA in  AEM Forms:
 
 1. Ottenete una coppia [di chiavi API](https://www.google.com/recaptcha/admin) reCAPTCHA da Google. Include una chiave del sito e un segreto.
 1. Creare un contenitore di configurazione per i servizi cloud.
 
-   1. Scegliere **[!UICONTROL Strumenti > Generale > Browser]** di configurazione.
+   1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
    1. Effettuate le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud o saltate questo passaggio per creare e configurare un&#39;altra cartella per le configurazioni del servizio cloud.
 
       1. Nel browser di configurazione, selezionate la cartella **[!UICONTROL globale]** e toccate **[!UICONTROL Proprietà]**.
@@ -57,10 +58,11 @@ Per implementare il servizio reCAPTCHA in AEM Forms:
 
 1. Configurare il servizio cloud per reCAPTCHA.
 
-   1. Nell’istanza di authoring di AEM, andate a ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. Nell’istanza di AEM authoring, andate a ![tools-1](assets/tools-1.png) > **Cloud Services**.
    1. Toccate **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Selezionate il contenitore di configurazione creato nel passaggio precedente e toccate **[!UICONTROL Crea]**.
    1. Specificate Nome, Chiave del sito e Chiave segreta per il servizio reCAPTCHA e toccate **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
    1. Nella finestra di dialogo Modifica componente, specificate il sito e le chiavi segrete ottenute al punto 1. Toccate **Salva impostazioni** , quindi toccate **OK** per completare la configurazione.
+
    Una volta configurato, il servizio reCAPTCHA è disponibile per l&#39;uso nei moduli adattivi. Per ulteriori informazioni, vedere [Uso di CAPTCHA nei moduli](#using-captcha)adattivi.
 
 ## Uso del CAPTCHA nei moduli adattivi {#using-captcha}
