@@ -1,6 +1,6 @@
 ---
-title: 'Modifica delle proprietà di una pagina  '
-seo-title: 'Modifica delle proprietà di una pagina  '
+title: Modifica delle proprietà di una pagina
+seo-title: Modifica delle proprietà di una pagina
 description: Puoi impostare le proprietà richieste per una pagina.
 seo-description: Puoi impostare le proprietà richieste per una pagina.
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1781'
+ht-degree: 89%
 
 ---
 
@@ -43,6 +46,7 @@ Le proprietà sono distribuite su più schede.
       * Un asterisco a destra del nome lo identifica come nuovo tag.
    * L’elenco a discesa consente di selezionare uno dei tag esistenti.
    * Quando sposti il mouse su un tag nella casella di selezione viene visualizzata una x, che consente di rimuovere il tag dalla pagina in questione.
+
    Per ulteriori informazioni sui tag, consulta [Utilizzo dei tag](/help/sites-authoring/tags.md).
 
 * **Nascondi in navigazione**
@@ -98,7 +102,7 @@ Le proprietà sono distribuite su più schede.
 
    Specifica se vuoi che la pagina usi l’URL personalizzato.
 
-### Avanzate   {#advanced}
+### Avanzate  {#advanced}
 
 * **Lingua**
 
@@ -146,11 +150,11 @@ Le proprietà sono distribuite su più schede.
 
    >[!NOTE]
    >
-   >Nella scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions)**è possibile definire gruppi utenti chiusi per la pagina.
+   >Nella scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)**tab allows editing of CUG configurations based on the presence of the`granite:AuthenticationRequired`mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of`cq:cugEnabled`property, a warning message will be shown under **Authentication Requirement**and the option will not be editable, nor will the[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)be editable.
+   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
    >
    >
    >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -163,7 +167,7 @@ Le proprietà sono distribuite su più schede.
 
    Consente di specificare una configurazione di esportazione.
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 Mostra la miniatura della pagina. Operazioni disponibili:
 
@@ -204,16 +208,16 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
 
 * **Configurazioni ContextHub**
 
-   Seleziona la [Configurazione ContextHub](/help/sites-administering/contexthub-config.md) e il [Percorso segmenti](/help/sites-administering/segmentation.md).
+   Seleziona la [Configurazione ContextHub](/help/sites-developing/ch-configuring.md) e il [Percorso segmenti](/help/sites-administering/segmentation.md).
 
 * **Configurazione targeting**
 
-   Seleziona un [marchio per specificare l’ambito di impostazione della destinazione](/help/sites-authoring/target-adobe-campaign.md).
+   Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-authoring/target-adobe-campaign.md).
 
    >[!NOTE]
-   >Questa opzione richiede che l&#39;account utente sia nel `Target Adminstrators`gruppo.
+   >Questa opzione richiede che l’account utente appartenga al gruppo `Target Adminstrators`.
 
-### Autorizzazioni   {#permissions}
+### Autorizzazioni  {#permissions}
 
 * **Autorizzazioni**
 
@@ -240,13 +244,13 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
 
    Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
    Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito   {#site-structure}
+### Struttura sito  {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
@@ -263,7 +267,7 @@ Puoi definire le proprietà di pagina:
       * Per una singola pagina
       * Per più pagine (solo un sottoinsieme di proprietà è disponibile per la modifica in blocco)
 
-* Dall’editor pagina:
+* Dall’editor di pagine:
 
    * Tramite **Informazioni pagina** (quindi **Apri proprietà**)
 
@@ -277,6 +281,7 @@ Tocca o fai clic su **Proprietà** per definire le proprietà di pagina:
 
    * [Azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modalità di selezione](/help/sites-authoring/basic-handling.md#selectionmode)
+
    Le proprietà di pagina vengono visualizzate utilizzando le relative schede.
 
 1. Visualizza o modifica le proprietà a seconda delle esigenze.
@@ -348,6 +353,7 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
 
       * Nella modalità Visualizza vengono mostrate solo le proprietà con un valore comune.
       * Quando il campo ha più valori (ad esempio Tag), questi vengono visualizzati solo se *tutti* i valori sono applicati alle pagine selezionate. Se le pagine hanno in comune solo alcuni valori, questi verranno visualizzati solo in fase di modifica.
+
    Se non esiste nessuna proprietà con un valore comune, viene visualizzato un messaggio.
 
 * **Modifica**
