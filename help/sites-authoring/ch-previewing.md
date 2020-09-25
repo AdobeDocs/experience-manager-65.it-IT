@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +27,7 @@ La barra degli strumenti è composta da una serie di modalità di interfaccia ut
 * Le modalità di interfaccia utente sono icone che vengono visualizzate sul lato sinistro della barra degli strumenti. Quando fai clic o tocchi un’icona, la barra degli strumenti rivela i moduli di interfaccia utente che contiene.
 * I moduli di interfaccia utente visualizzano dati da uno o più archivi di ContextHub. Alcuni moduli di interfaccia utente ti consentono inoltre di manipolare i dati archiviati.
 
-ContextHub installa varie modalità di interfaccia utente e moduli di interfaccia utente. L’amministratore può aver [configurato ContextHub](/help/sites-administering/contexthub-config.md) per visualizzarne di diversi.
+ContextHub installa varie modalità di interfaccia utente e moduli di interfaccia utente. L’amministratore può aver [configurato ContextHub](/help/sites-developing/ch-configuring.md) per visualizzarne di diversi.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
