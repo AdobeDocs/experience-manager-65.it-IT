@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 99%
@@ -29,10 +29,11 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-authoring/experience-fragments.md)**sono funzioni diverse in AEM:
+>I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
+
 >
 >
 I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -53,7 +54,7 @@ I frammenti di contenuto si prestano alle seguenti applicazioni:
 
 * **Copywriter**
 
-   * Creazione di contenuti nell’Editor frammento di contenuto di AEM.
+   * Creazione di contenuti nell’editor frammento di contenuto di AEM.
    * Creazione di varianti del contenuto.
    * Associazione di contenuti rilevanti ai frammenti di contenuto.
    * Uso delle funzioni di gestione versioni/flusso di lavoro.
@@ -116,6 +117,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
    * L’elemento predefinito **Principale** è sempre disponibile.
    * Una selezione è disponibile se il frammento è stato creato con un modello appropriato. 
+
    >[!NOTE]
    >
    >Gli elementi disponibili dipendono dal modello utilizzato.
@@ -146,7 +148,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **Trascina qui i componenti** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
-Questo consente di aggiungere ulteriori contenuti [intermedi (ad esempio, contenuti intermedi)](/help/assets/content-fragments/content-fragments.md#inbetweencontent) all’interno del contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
+Questo consente di aggiungere ulteriori contenuti [intermedi (ad esempio, contenuti intermedi)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) all’interno del contenuto del frammento (nei punti disponibili), senza dover modificare il frammento principale.
 
 Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
@@ -168,7 +170,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 
 >[!CAUTION]
 >
->Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’Editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
+>Dopo aver aggiunto contenuto intermedio a un frammento di contenuto nella pagina, se si modifica la struttura del frammento di contenuto sottostante (ovvero nell’editor frammento di contenuto) si potrebbero verificare risultati erronei o imprevisti.
 >
 >In questi casi, il contenuto intermedio rimane inalterato:
 >
@@ -177,6 +179,7 @@ Per il contenuto intermedio puoi effettuare le seguenti operazioni:
 >  
 Questo potrebbe dare l’impressione di una modifica nella posizione relativa, poiché i paragrafi intermedi non hanno alcuna relazione contestuale con i paragrafi (del frammento) accanto ai quali sono posizionati,
 >* a meno che le due strutture di paragrafo non siano in conflitto. In questo caso il contenuto intermedio non viene visualizzato, ma resta comunque presente nel codice interno.
+
 >
 
 
