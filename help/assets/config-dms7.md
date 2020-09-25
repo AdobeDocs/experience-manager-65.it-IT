@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '5944'
 ht-degree: 7%
@@ -132,19 +132,19 @@ Per contrassegnare una cartella selezionata per la sincronizzazione con gli elem
 
 Ora hai finito con la configurazione di base; è possibile utilizzare la modalità Dynamic Media - Scene7.
 
-Se desiderate personalizzare ulteriormente la configurazione, potete eventualmente completare una qualsiasi delle attività descritte in [(Facoltativo) Configurazione delle impostazioni avanzate in modalità](#optionalconfigurationofadvancedsettingindynamicmediascene7mode)Dynamic Media - Scene7.
+Se desiderate personalizzare ulteriormente la configurazione, potete eventualmente completare una qualsiasi delle attività descritte in [(Facoltativo) Configurazione delle impostazioni avanzate in modalità](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)Dynamic Media - Scene7.
 
 ## (Facoltativo) Configurazione delle impostazioni avanzate in modalità Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Se desiderate personalizzare ulteriormente la configurazione e l’impostazione di Dynamic Media - Modalità Scene7, oppure ottimizzarne le prestazioni, potete completare una o più delle seguenti attività *facoltative* :
 
-* [(Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni modalità Scene7](#optionalsetupandconfigurationofdynamicmediascene7modesettings)
+* [(Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni modalità Scene7](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media - Modalità Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Facoltativo) Filtrare le risorse per la replica](#optional-filtering-assets-for-replication)
 
-### (Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni modalità Scene7</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
+### (Facoltativo) Configurazione e configurazione di Dynamic Media - Impostazioni modalità Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
 Quando siete in modalità di esecuzione `dynamicmedia_scene7`, utilizzate l’interfaccia utente di Dynamic Media Classic (Scene7) per apportare modifiche alle impostazioni di Dynamic Media.
 
@@ -196,7 +196,7 @@ Per aprire la pagina Impostazioni generali applicazione, nella barra di navigazi
 
 >[!NOTE]
 >
->Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Per impostazione predefinita, il sistema mostra 15 rappresentazioni quando selezioni **[!UICONTROL Rappresentazioni]** e 15 predefiniti visualizzatore quando fai clic su **[!UICONTROL Visualizzatori]** nella vista Dettaglio della risorsa. Puoi aumentare questo limite. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
 #### Configurazione della gestione del colore {#configuring-color-management}
@@ -205,7 +205,7 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
-1. [Effettuate l&#39;accesso a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione applicazione.]**
+1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione applicazione.]**
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server.]** Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
 
