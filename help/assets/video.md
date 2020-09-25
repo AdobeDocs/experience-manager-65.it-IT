@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 8%
@@ -51,7 +51,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
       * Ulteriori informazioni sull’ [organizzazione delle risorse](/help/assets/organize-assets.md)digitali.
    * Caricate i video sorgente principali nelle cartelle. Potete caricare file video fino a 15 GB ciascuno. Quando aggiungete dei video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
-      * [Caricate i video](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+      * [Caricate i video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Ulteriori informazioni sui formati [di file di input](/help/assets/assets-formats.md#supported-multimedia-formats)supportati.
    * Monitorate l’avanzamento [della codifica](#monitoring-video-encoding-and-youtube-publishing-progress) video dalla visualizzazione della risorsa o del flusso di lavoro.
 
@@ -64,7 +64,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
 
       * [Organizzazione delle risorse](/help/assets/organize-assets.md)digitali Ulteriori informazioni sulle [procedure ottimali per l’organizzazione delle risorse digitali per l’utilizzo dei profili di elaborazione](organize-assets.md)
 
-      * [Ricerca di risorse](search-assets.md#custompredicates) video o [Ricerca di risorse](managing-assets-touch-ui.md#search-assets)
+      * [Ricerca di risorse](search-assets.md#custompredicates) video o [Ricerca di risorse](/help/assets/search-assets.md)
    * Anteprima e pubblicazione delle risorse video
 
       * Visualizzate il video sorgente e le rappresentazioni codificate del video insieme alle miniature associate:
@@ -885,7 +885,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
    >[!NOTE]
    >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
+   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
@@ -907,7 +907,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
    >[!NOTE]
    >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -917,7 +917,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
 >[!NOTE]
 >
->Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
+>Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
 
 La modalità di configurazione delle notifiche dipende dal tipo di notifiche per i processi di codifica o pubblicazione su YouTube:
 
@@ -1223,7 +1223,7 @@ Per **aggiungere una miniatura** video personalizzata,
    * È stata creata una cartella per le risorse video.
    * [È stato applicato un profilo video alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
-   * [Caricati i video nella cartella](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+   * [Caricati i video nella cartella](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Passate a una risorsa video caricata la cui miniatura desiderate modificare.
 1. Nella modalità di selezione delle risorse dalla vista **** Elenco o **[!UICONTROL a schede]**, toccate la risorsa video.
