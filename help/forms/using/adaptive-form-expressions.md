@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2766'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 I moduli adattivi offrono agli utenti finali un&#39;esperienza di compilazione dei moduli ottimizzata e semplificata grazie a funzionalità di scripting dinamico. Consente di scrivere espressioni per aggiungere vari comportamenti, ad esempio campi e pannelli di visualizzazione o di visualizzazione dinamici. Consente inoltre di aggiungere campi calcolati, rendere i campi di sola lettura, aggiungere logica di convalida e molto altro ancora. Il comportamento dinamico si basa sull&#39;input dell&#39;utente o sui dati precompilati.
 
-JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il documento Riferimento API della libreria [JavaScript per i moduli](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adattivi.
+JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il riferimento alle API della libreria [JavaScript per i moduli](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adattivi.
 
 ## Procedure ottimali per la scrittura di espressioni {#best-practices-for-writing-expressions}
 
@@ -48,16 +48,16 @@ I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse i
 
 Nei moduli adattivi è possibile scrivere espressioni per aggiungere comportamenti quali mostrare/nascondere campi e pannelli dinamici. È inoltre possibile scrivere espressioni per aggiungere campi calcolati, rendere i campi di sola lettura, la logica di convalida e molto altro ancora. I moduli adattivi supportano le seguenti espressioni:
 
-* **[Espressioni](#access-expression-enablement-expression)**di accesso: per attivare/disattivare un campo.
+* **[Espressioni](#access-expression-enablement-expression)** di accesso: per attivare/disattivare un campo.
 * **[Calcola espressioni](#calculate-expression)**: per calcolare automaticamente il valore di un campo.
-* **[Espressione](#click-expression)**di clic: per gestire le azioni in caso di clic su un pulsante.
-* **[Script](#initialization-script)di inizializzazione:**eseguire un&#39;azione all&#39;inizializzazione di un campo.
-* **[Espressione](#options-expression)**Opzioni: per compilare in modo dinamico un elenco a discesa.
-* **[Espressione](#summary)**di riepilogo: per calcolare in modo dinamico il titolo di un pannello a soffietto.
+* **[Espressione](#click-expression)** di clic: per gestire le azioni in caso di clic su un pulsante.
+* **[Script](#initialization-script)di inizializzazione:** eseguire un&#39;azione all&#39;inizializzazione di un campo.
+* **[Espressione](#options-expression)** Opzioni: per compilare in modo dinamico un elenco a discesa.
+* **[Espressione](#summary)** di riepilogo: per calcolare in modo dinamico il titolo di un pannello a soffietto.
 * **[Convalidare le espressioni](#validate-expression)**: per convalidare un campo.
-* **[Script](#value-commit-script)di conferma del valore:**per modificare i componenti di un modulo dopo la modifica del valore di un campo.
-* **[Espressione](#visibility-expression)**di visibilità: per controllare la visibilità di un campo e di un pannello.
-* **[Espressione](#step-completion-expression)**completamento passaggio: per impedire che un utente passi al passaggio successivo di una procedura guidata.
+* **[Script](#value-commit-script)di conferma del valore:** per modificare i componenti di un modulo dopo la modifica del valore di un campo.
+* **[Espressione](#visibility-expression)** di visibilità: per controllare la visibilità di un campo e di un pannello.
+* **[Espressione](#step-completion-expression)** completamento passaggio: per impedire che un utente passi al passaggio successivo di una procedura guidata.
 
 ### Espressione di accesso (espressione di abilitazione) {#access-expression-enablement-expression}
 
@@ -88,7 +88,7 @@ L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un 
 
 **Tipo** di restituzione: L&#39;espressione click non restituisce alcun valore. Se una qualsiasi espressione restituisce un valore, il valore viene ignorato.
 
-**Esempio**: Per compilare una casella di testo **textbox1** nell&#39;azione clic di un pulsante con **AEM Forms** di valore, l&#39;espressione click del pulsante è `textbox1.value="AEM Forms"`
+**Esempio**: Per compilare una casella di testo **textbox1** in corrispondenza dell&#39;azione clic di un pulsante con valore **AEM Forms**, l&#39;espressione click del pulsante è `textbox1.value="AEM Forms"`
 
 ### Script di inizializzazione {#initialization-script}
 
@@ -164,7 +164,7 @@ Lo script Value Commit viene attivato quando:
 
 >[!NOTE]
 >
->È possibile disabilitare l&#39;esecuzione dello script di commit dei valori quando il valore di un campo viene modificato a livello di programmazione. A questo scopo, andate al https://&#39;[server]:[port]&#39;/system/console/configMgr e modificate la versione **dei moduli adattivi per compatibilità** con **i AEM Forms 6.1**. In seguito, lo script Value Commit viene eseguito solo quando l&#39;utente modifica il valore del campo dall&#39;interfaccia utente.
+>È possibile disabilitare l&#39;esecuzione dello script di commit dei valori quando il valore di un campo viene modificato a livello di programmazione. A questo scopo, andate a https://&#39;[server]:[port]&#39;/system/console/configMgr e modificate la versione **Forms adattiva per compatibilità** in **AEM Forms 6.1**. In seguito, lo script Value Commit viene eseguito solo quando l&#39;utente modifica il valore del campo dall&#39;interfaccia utente.
 
 ### Espressione di visibilità {#visibility-expression}
 
@@ -277,13 +277,13 @@ Come già detto, i moduli adattivi consentono all&#39;autore di fornire pattern 
 
 Per creare un pattern personalizzato per un tipo di campo specifico e riutilizzarlo per altri campi dello stesso tipo, procedere come segue:
 
-1. Passa a CRXDE Lite nell’istanza di authoring.
+1. Passa al CRXDE Lite nell’istanza di authoring.
 1. Create una cartella per mantenere i pattern personalizzati. Nella directory /apps, create un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. Sotto questo nodo, creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari pattern personalizzati che si desidera aggiungere.
 1. Aprire la scheda Proprietà del nodo creato. Ad esempio, aprire la scheda Proprietà di `textboxpatterns`. Aggiungete la `guideComponentType` proprietà a questo nodo e impostatene il valore su *fd/af/components/formatter/guideTextBox*.
 
 1. Il valore di questa proprietà varia a seconda del campo per il quale si desidera definire i pattern. Per i campi numerici, il valore della `guideComponentType` proprietà è *fd/af/components/formatter/guideNumericBox*. Il valore del campo Datepicker è *fd/af/components/formatter/guideDatepicker*.
 &quot;
-1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungete una proprietà con un nome (ad esempio `pattern1`) e impostatene il valore sul pattern da aggiungere. Ad esempio, aggiungere una proprietà `pattern1` con il valore Fax=text{99-999-999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate nei moduli adattivi.
+1. È possibile aggiungere un pattern personalizzato assegnando una proprietà al `textboxpatterns` nodo. Aggiungete una proprietà con un nome (ad esempio `pattern1`) e impostatene il valore sul pattern da aggiungere. Ad esempio, aggiungere una proprietà `pattern1` con il valore Fax=text{99-999-999999}. Il pattern è disponibile per tutte le caselle di testo utilizzate in Forms adattivo.
 
    ![Creazione di pattern personalizzati per i campi in CrxDe](assets/creating-custom-patterns.png)
 
