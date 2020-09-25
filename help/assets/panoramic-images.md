@@ -1,6 +1,6 @@
 ---
 title: Immagini panoramiche
-description: Scoprite come utilizzare le immagini panoramiche in Dynamic Media.
+description: Scopri come lavorare con immagini panoramiche in Dynamic Media.
 uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -30,7 +30,7 @@ See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 Affinché una risorsa caricata possa essere considerata un’immagine panoramica sferica che intendete usare con il visualizzatore immagini panoramiche, la risorsa deve contenere una o entrambe le opzioni seguenti:
 
 * Proporzioni di 2.
-È possibile ignorare l&#39;impostazione predefinita di 2 proporzioni in CRXDE Lite nel modo seguente:
+Potete ignorare l’impostazione predefinita delle proporzioni pari a 2 in CRXDE Lite:
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Sono stati assegnati tag con le parole chiave `equirectangular`, oppure `spherical`e `panorama`, `spherical` e `panoramic`. Consultate [Utilizzo dei tag](/help/sites-authoring/tags.md).
@@ -41,7 +41,7 @@ Per caricare le risorse da usare con il visualizzatore immagini panoramiche, con
 
 ## Configurazione di Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
 
-Affinché il visualizzatore immagini panoramiche funzioni correttamente in AEM, è necessario sincronizzare i predefiniti per visualizzatori immagini panoramiche con i metadati specifici di Dynamic Media Classic (Scene7) e Dynamic Media Classic (Scene7), in modo che i predefiniti per visualizzatori vengano aggiornati nel JCR. A questo scopo, configurate Dynamic Media Classic (Scene7) nel modo seguente:
+Affinché il visualizzatore di immagini panoramiche funzioni correttamente all’interno AEM, è necessario sincronizzare i predefiniti per visualizzatori di immagini panoramiche con i metadati specifici di Dynamic Media Classic (Scene7) e Dynamic Media Classic (Scene7), in modo che i predefiniti per visualizzatori vengano aggiornati nel JCR. A questo scopo, configura Dynamic Media Classic (Scene7) nel modo seguente:
 
 1. [Accedete all’istanza di Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ciascun account aziendale.
 
@@ -72,11 +72,11 @@ Affinché il visualizzatore immagini panoramiche funzioni correttamente in AEM, 
 
 Se un’immagine viene rilasciata nel componente Contenuti multimediali panoramici in WCM e il segnaposto del componente viene compresso, potrebbe essere utile risolvere i seguenti problemi:
 
-* Se si verifica un errore 403 Vietato, la dimensione dell&#39;immagine richiesta potrebbe essere eccessiva. Consultate le impostazioni Limite **[!UICONTROL dimensioni immagine risposta in]** Configurazione di Dynamic Media Classic (Scene7) [](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Se si verifica un errore 403 Vietato, la dimensione dell&#39;immagine richiesta potrebbe essere eccessiva. Consultate le impostazioni Limite **[!UICONTROL dimensioni immagine risposta in]** Configurazione di Dynamic Media Classic (Scene7) [](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Per un &quot;blocco non valido&quot; sulla risorsa o un &quot;errore di analisi&quot; visualizzato sulla pagina, controllate Modalità offuscamento richieste e Modalità blocco richieste per verificare che siano disattivate.
 * Per un errore di tela colorata, imposta un percorso per il file di definizione del set di regole e Annulla validità CTN per le richieste precedenti per la risorsa immagine.
-* Se dopo una richiesta di immagini con dimensioni superiori al limite supportato, la qualità dell’immagine diventa molto bassa, verificate che l’impostazione **[!UICONTROL JPEG Encoding Attributes (Attributi di codifica JPEG) > Quality (Qualità]** ) non sia vuota. Un&#39;impostazione tipica per il campo **[!UICONTROL Qualità]** è `95`. L’impostazione è disponibile nella pagina Pubblica su Image Server. Per accedere alla pagina, consultate [Configurazione di Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Se dopo una richiesta di immagini con dimensioni superiori al limite supportato, la qualità dell’immagine diventa molto bassa, verificate che l’impostazione **[!UICONTROL JPEG Encoding Attributes (Attributi di codifica JPEG) > Quality (Qualità]** ) non sia vuota. Un&#39;impostazione tipica per il campo **[!UICONTROL Qualità]** è `95`. L’impostazione è disponibile nella pagina Pubblica su Image Server. Per accedere alla pagina, consultate [Configurazione di Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Anteprima delle immagini panoramiche {#previewing-panoramic-images}
 
