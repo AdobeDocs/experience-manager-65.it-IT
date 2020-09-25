@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '4813'
 ht-degree: 4%
@@ -223,11 +223,10 @@ Per caricare i banner immagine, consultate [Caricamento delle risorse](/help/ass
    >    * Animazione. Per impostazione predefinita, ogni transizione di diapositiva è una dissolvenza. È possibile modificare questa impostazione in una transizione diapositiva.
    >    * Stile dei pulsanti. Gli utenti possono ruotare i banner toccando ogni punto o numero. È possibile modificare la posizione in cui appaiono i pulsanti degli indicatori di set (e se si tratta di uno stile numerico o punteggiato) e le loro dimensioni.
    >    * Modifica lo stile di evidenziazione di una mappa immagine o dell’icona utilizzata per i punti di attivazione.
-   >    * Prima di modificare un predefinito per visualizzatori, scegliete lo stile su cui basare il predefinito. In caso contrario, quando iniziate a modificare il predefinito per visualizzatori, tutte le modifiche apportate andranno perdute se decidete di passare a un altro predefinito
+   >    * Prima di modificare un predefinito per visualizzatori, scegliete lo stile su cui basare il predefinito. In caso contrario, quando iniziate a modificare il predefinito per visualizzatori, tutte le modifiche apportate andranno perdute se decidete di passare a un altro predefinito.
 
    >
-   >
-   >Consultate Considerazioni [speciali per i banner](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) carosello per istruzioni dettagliate e ulteriori informazioni sull’editor visualizzatore.
+   >Consultate Considerazioni [speciali per i banner](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) carosello per istruzioni dettagliate e ulteriori informazioni sull’editor visualizzatore.
 
    Potete anche visualizzare l’anteprima dell’aspetto del banner del carosello. Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-banners)Carosello.
 
