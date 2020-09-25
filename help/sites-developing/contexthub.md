@@ -10,7 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ ContextHub memorizza i dati contestuali persistenti sul client. L&#39;API Contex
 Ciascun archivio ContextHub è un&#39;istanza di un tipo di store predefinito:
 
 * ContextHub fornisce diversi tipi [di archivio di](/help/sites-developing/ch-samplestores.md)esempio.
-* Utilizzate le console AEM per [creare store](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* Utilizzate AEM console per [creare store](ch-configuring.md#creating-a-contexthub-store).
 * Gli sviluppatori possono [creare tipi](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)di store personalizzati.
 * Gli sviluppatori possono [accedere ai dati](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) dell&#39;archivio tramite Javascript.
 
@@ -51,7 +54,7 @@ La barra degli strumenti [](/help/sites-authoring/ch-previewing.md) ContextHub c
 Ciascun modulo dell’interfaccia utente ContextHub è un’istanza di tipo di modulo predefinito:
 
 * ContextHub offre diversi tipi [di moduli di](/help/sites-developing/ch-samplemodules.md)esempio.
-* Utilizzate le console AEM per [aggiungere moduli](/help/sites-administering/contexthub-config.md#adding-a-ui-module)di interfaccia utente e per [raggrupparli in modalità](/help/sites-administering/contexthub-config.md#adding-a-ui-mode)di interfaccia utente.
+* Utilizzate AEM console per [aggiungere moduli](ch-configuring.md#adding-a-ui-module)dell&#39;interfaccia utente e per [raggrupparli in modalità](ch-configuring.md#adding-a-ui-mode)di interfaccia.
 
 * Gli sviluppatori possono [creare tipi](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)di moduli personalizzati.
 
