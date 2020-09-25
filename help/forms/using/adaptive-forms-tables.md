@@ -1,17 +1,17 @@
 ---
 title: Tabelle nei moduli adattivi
 seo-title: Tabelle nei moduli adattivi
-description: Il componente Tabella in AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout mobili e di utilizzare anche componenti per tabelle XDP.
-seo-description: Il componente Tabella in AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout mobili e di utilizzare anche componenti per tabelle XDP.
+description: Il componente Tabella in  AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout mobili e di utilizzare anche componenti per tabelle XDP.
+seo-description: Il componente Tabella in  AEM Forms consente di creare tabelle in moduli adattivi reattivi ai layout mobili e di utilizzare anche componenti per tabelle XDP.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 L&#39;utilizzo delle tabelle rappresenta un modo efficace, semplificato e organizzato di presentare dati complessi. Consente agli utenti di identificare facilmente le informazioni e fornire gli input in una disposizione ordinata di righe e colonne. La maggior parte dei moduli provenienti da servizi finanziari e organizzazioni governative richiede tabelle di dati di grandi dimensioni per inserire numeri ed eseguire calcoli.
 
-AEM Forms fornisce un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle in moduli adattivi. Alcune delle funzionalità chiave che fornisce sono:
+ AEM Forms fornisce un componente Tabella nel browser Componenti nella barra laterale che consente di creare tabelle in moduli adattivi. Alcune delle funzionalità chiave che fornisce sono:
 
 * Layout reattivo su dispositivi mobili
 * Righe e colonne configurabili
@@ -37,7 +37,7 @@ AEM Forms fornisce un componente Tabella nel browser Componenti nella barra late
 
 Per creare una tabella, trascinate il componente Tabella dal browser Componenti nella barra laterale del modulo adattivo. Per impostazione predefinita, la tabella contiene due colonne e tre righe, inclusa la riga di intestazione.
 
-![Componente tabella nella barra laterale AEM](assets/sidebar-tables.png)
+![Componente tabella nella AEM barra laterale](assets/sidebar-tables.png)
 
 ### Informazioni sulle celle di intestazione e corpo {#about-header-and-body-cells}
 
@@ -121,7 +121,7 @@ Potete visualizzare le proprietà di stile nella barra laterale.
 
 >[!NOTE]
 >
->È possibile modificare il tema colore per le righe di intestazione e le righe corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, vedere [Temi in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>È possibile modificare il tema colore per le righe di intestazione e le righe corpo modificando i valori delle variabili LESS. Per ulteriori informazioni, vedere [Temi in  AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ## Aggiunta o eliminazione dinamica di una riga {#add-or-delete-a-row-dynamically}
 
@@ -159,11 +159,11 @@ Mentre tabelle e righe supportano solo le espressioni di visibilità per control
 
 L’espressione di visibilità per una tabella o una riga può essere definita nella scheda Proprietà pannello della finestra di dialogo corrispondente del componente Modifica. Le espressioni per una cella possono essere definite nella scheda Script della finestra di dialogo del componente Modifica.
 
-Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il documento Riferimento API della libreria [JavaScript per i moduli](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adattivi.
+Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche dei moduli adattivi, consultare il riferimento alle API della libreria [JavaScript per i moduli](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adattivi.
 
 ## Layout per dispositivi mobili {#mobile-layouts}
 
-Le tabelle nei moduli adattivi offrono un&#39;esperienza senza confronti per i dispositivi mobili grazie ai layout fluidi e reattivi. I AEM Forms offrono due tipi di layout mobili per le tabelle: Intestazioni sulle colonne sinistra e Comprimibili.
+Le tabelle nei moduli adattivi offrono un&#39;esperienza senza confronti per i dispositivi mobili grazie ai layout fluidi e reattivi.  AEM Forms offre due tipi di layout mobili per le tabelle: Intestazioni sulle colonne sinistra e Comprimibili.
 
 È possibile configurare un layout mobile per una tabella dalla scheda Stile della finestra di dialogo del componente Modifica per una tabella.
 
@@ -199,7 +199,7 @@ Colonna estesa di una tabella su un dispositivo mobile
 
 ## Unione di dati in una tabella {#merge-data-in-a-table}
 
-Le tabelle in moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati provenienti da un file XML. Il file XML di dati può risiedere nel file system locale del computer in cui è in esecuzione il server AEM Forms o nell&#39;archivio CRX.
+Le tabelle in moduli adattivi consentono di compilare la tabella in fase di esecuzione utilizzando i dati provenienti da un file XML. Il file XML di dati può risiedere nel file system locale del computer in cui è in esecuzione  server AEM Forms o nell&#39;archivio CRX.
 
 Esempio della tabella di riepilogo delle transazioni bancarie seguente che si desidera compilare con i dati provenienti da un file XML.
 
@@ -281,7 +281,7 @@ Per unire questi dati alla tabella in fase di esecuzione, è necessario indirizz
 
 ## Utilizzare componenti XDP e tipi complessi XSD {#use-xdp-components-and-xsd-complex-types}
 
-Se avete creato un modulo adattivo basato su un modello di modulo XFA, gli elementi XFA sono disponibili nella scheda Modello dati di AEM Content Finder. È possibile trascinare questi elementi XFA, incluse le tabelle, nel modulo adattivo.
+Se è stato creato un modulo adattivo basato su un modello di modulo XFA, gli elementi XFA sono disponibili nella scheda Modello dati di AEM Content Finder. È possibile trascinare questi elementi XFA, incluse le tabelle, nel modulo adattivo.
 
 L’elemento tabella XFA è mappato sul componente Tabella e funziona out-of-the-box nei moduli adattivi. Tutte le proprietà e le funzionalità della tabella XDP vengono mantenute quando vengono spostate in un modulo adattivo e potete eseguire qualsiasi operazione su di esso, come avviene per la tabella di moduli adattivi nativi. Ad esempio, se una riga in una tabella XDP è contrassegnata come ripetibile, viene ripetuta anche se rilasciata in moduli adattivi.
 
