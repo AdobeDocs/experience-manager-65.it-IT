@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1889'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
 
 >[!NOTE]
 >
->ClientContext è stato sostituito da ContextHub. Per ulteriori dettagli, consultate la relativa [configurazione](/help/sites-administering/contexthub-config.md) e documentazione [per gli sviluppatori](/help/sites-developing/contexthub.md) .
+>ClientContext è stato sostituito da ContextHub. Per ulteriori dettagli, consultate la relativa []configurazione-configuring.md) e la documentazione [per gli sviluppatori](/help/sites-developing/contexthub.md) .
 
 ClientContext è un meccanismo che fornisce determinate informazioni sulla pagina corrente e sul visitatore. Può essere aperto utilizzando **Ctrl+Alt+C** (Windows) o **Ctrl+Opzione+C** (Mac):
 
@@ -58,7 +61,7 @@ ClientContext può mostrare le seguenti proprietà ([a seconda di ciò che è st
 * la posizione X **del** mouse
 * la posizione Y **del** mouse
 
-**Flusso** attività Fornisce informazioni sull&#39;attività social dell&#39;utente su varie piattaforme; ad esempio, i forum, i blog, le valutazioni di AEM ecc.
+**Flusso** attività Fornisce informazioni sull&#39;attività social dell&#39;utente su varie piattaforme; ad esempio, i forum AEM, i blog, le valutazioni ecc.
 
 **Campaign** Consente agli autori di simulare un&#39;esperienza specifica per una campagna. Questo componente sostituisce la risoluzione normale della campagna e la selezione dell’esperienza per consentire il test di diverse mutazioni.
 
@@ -68,11 +71,11 @@ La risoluzione delle campagne è in genere basata sulla proprietà priority dell
 
 L&#39;archivio delle sessioni del carrello informa anche il server delle modifiche alla promozione risolte (basate sulle modifiche alla segmentazione) tramite ClientContextCartServlet.
 
-**Store** generico È un componente generico che visualizza il contenuto di uno store. Si tratta di una versione di livello inferiore del componente Proprietà store generico.
+**Store** generico È un componente generico che visualizza il contenuto di uno store. Si tratta di una versione di livello inferiore del componente Proprietà store generiche.
 
 Lo Store generico deve essere configurato con un renderer JS che visualizzerà i dati in modo personalizzato.
 
-**Proprietà** store generiche È un componente generico che visualizza il contenuto di uno store. È una versione di livello superiore del componente Store generico.
+**Proprietà** store generiche È un componente generico che visualizza il contenuto di uno store. Si tratta di una versione di livello superiore del componente Store generico.
 
 Il componente Proprietà store generiche include un renderer predefinito che elenca le proprietà configurate (insieme a una miniatura).
 
@@ -82,7 +85,7 @@ Quando viene visualizzato in Context Cloud, il componente utilizza un&#39;API Go
 
 >[!NOTE]
 >
->In AEM 6.1, lo store Geolocalizzazione non fornisce più la funzione di codifica inversa. Di conseguenza, lo store Geolocation non recupera più i dettagli sulla posizione corrente, come il nome della città o il codice del paese. I segmenti che utilizzano questi dati dell&#39;archivio non funzioneranno correttamente. Lo store Geolocation contiene solo la latitudine e la longitudine di una posizione.
+>In AEM 6.1, lo store Geolocalizzazione non fornisce più la funzione di geocodifica inversa. Di conseguenza, lo store Geolocation non recupera più i dettagli sulla posizione corrente, come il nome della città o il codice del paese. I segmenti che utilizzano questi dati dell&#39;archivio non funzioneranno correttamente. Lo store Geolocation contiene solo la latitudine e la longitudine di una posizione.
 
 **JSONP Store** Un componente che visualizza il contenuto a seconda dell’installazione.
 
@@ -204,25 +207,25 @@ La modifica di un contesto client può essere utilizzata per impostare (o reimpo
 
 ### Aggiunta di un componente proprietà {#adding-a-property-component}
 
-Dopo aver aperto la pagina **di progettazione** ClientContext, è anche possibile **aggiungere** una proprietà completamente nuova utilizzando i componenti disponibili (i componenti sono elencati sia nella barra laterale che nella finestra di dialogo **Inserisci nuovo componente** che viene aperta dopo un doppio clic sulla casella **Trascinate qui** i componenti o le risorse):
+Dopo aver aperto la pagina **di progettazione del** ClientContext, potete anche **aggiungere** una proprietà completamente nuova utilizzando i componenti disponibili (i componenti sono elencati nella barra laterale o nella finestra di dialogo **Inserisci nuovo componente** , che viene aperta dopo aver fatto doppio clic sulla casella **Trascinate qui** i componenti o le risorse):
 
 ![](assets/clientcontext_alisonparker_new.png)
 
 ### Rimozione di un componente proprietà {#removing-a-property-component}
 
-Dopo aver aperto la pagina **di progettazione** ClientContext, potete anche **rimuovere** una proprietà se non è più necessario. Sono incluse le proprietà fornite out-of-the-box; Se **Reimposta** , questi verranno ripristinati.
+Dopo aver aperto la pagina **di progettazione del** ClientContext, potete anche **rimuovere** una proprietà se non è più necessario. Sono incluse le proprietà fornite out-of-the-box; **Reimposta** le reimporrà se sono state rimosse.
 
 ## Memorizzazione dei dati in ClientContext tramite JSONP {#storing-data-in-client-context-via-jsonp}
 
 Seguite questo esempio per utilizzare il componente archivio contesto JSONP Store per aggiungere dati esterni a ClientContext. Quindi, crea un segmento in base alle informazioni tratte da tali dati. Nell&#39;esempio viene utilizzato il servizio JSONP fornito da WIPmania.com. Il servizio restituisce informazioni sulla geolocalizzazione in base all&#39;indirizzo IP del client Web.
 
-In questo esempio viene utilizzato il sito Web di esempio Geometrixx Outdoors per accedere a ClientContext e per verificare il segmento creato. Potete utilizzare un sito Web diverso a condizione che la pagina abbia attivato ClientContext. Consultate [Aggiunta di contesto client a una pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).
+In questo esempio viene utilizzato il sito Web Geometrixx Outdoors di esempio per accedere a ClientContext e per verificare il segmento creato. Potete utilizzare un sito Web diverso a condizione che la pagina abbia attivato ClientContext. Consultate [Aggiunta di contesto client a una pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).
 
 ### Aggiungere il componente JSONP Store {#add-the-jsonp-store-component}
 
 Aggiungete il componente JSONP Store a ClientContext e utilizzatelo per recuperare e memorizzare le informazioni sulla geolocalizzazione sul client Web.
 
-1. Aprite la home page inglese del sito Geometrixx Outdoors nell’istanza di authoring di AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Aprite la home page inglese del sito Geometrixx Outdoors nell’istanza di creazione AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Per aprire ClientContext, premete Ctrl+Alt+C (Windows) o Ctrl+Opzione+C (Mac).
 1. Fate clic sull&#39;icona di modifica nella parte superiore di ClientContext per aprire ClientContext Designer.
 
@@ -241,8 +244,8 @@ Aggiungete il componente JSONP Store a ClientContext e utilizzatelo per recupera
 
    ![](assets/chlimage_1-40.png)
 
-1. Fate clic su OK.
-1. Tornate alla home page di Geometrixx Outdoors e aggiornate la pagina. ClientContext ora include le informazioni dal componente JSONP Store.
+1. Fai clic su OK.
+1. Tornate alla home page dei Geometrixx Outdoors e aggiornate la pagina. ClientContext ora include le informazioni dal componente JSONP Store.
 
    ![](assets/chlimage_1-41.png)
 
@@ -251,7 +254,7 @@ Aggiungete il componente JSONP Store a ClientContext e utilizzatelo per recupera
 Utilizzate i dati dell&#39;archivio sessioni creato con il componente Store JSONP. Il segmento utilizza la latitudine dall&#39;archivio delle sessioni e la data corrente per determinare se si tratta dell&#39;ora invernale nella posizione del cliente.
 
 1. Aprite la console Strumenti nel browser Web (`https://localhost:4502/miscadmin#/etc`).
-1. Nella struttura delle cartelle, fare clic sulla cartella Strumenti/Segmentazione, quindi scegliere Nuovo > Nuova cartella. Specificate i seguenti valori di proprietà e fate clic su Crea:
+1. Nella struttura delle cartelle, fare clic sulla cartella Strumenti/Segmentazione, quindi fare clic su Nuovo > Nuova cartella. Specificate i seguenti valori di proprietà e fate clic su Crea:
 
    * Nome: mysegmenti
    * Titolo: Segmenti personali
@@ -260,7 +263,7 @@ Utilizzate i dati dell&#39;archivio sessioni creato con il componente Store JSON
 
    1. Per il Titolo, digitate Inverno.
    1. Selezionare il modello Segmento.
-   1. Fate clic su Crea.
+   1. Fai clic su Crea.
 
 1. Fare clic con il pulsante destro del mouse sul segmento Inverno e scegliere Apri.
 1. Trascinate la proprietà Store generica sul contenitore AND predefinito.
@@ -270,7 +273,7 @@ Utilizzate i dati dell&#39;archivio sessioni creato con il componente Store JSON
 1. Fate doppio clic sul componente per aprire la finestra di dialogo di modifica, specificate i seguenti valori delle proprietà, quindi fate clic su OK:
 
    * Store: wipmania
-   * Nome proprietà:latitudine
+   * Nome proprietà: latitudine
    * Operatore: è maggiore di
    * Valore proprietà: 30
 
