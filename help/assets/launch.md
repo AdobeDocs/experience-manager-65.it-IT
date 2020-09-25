@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 17%
@@ -133,7 +133,7 @@ Al momento, il supporto per il tracciamento video è limitato solo al tracciamen
 
 ## Utilizzo dell’estensione visualizzatori per contenuti multimediali dinamici {#using-the-dynamic-media-viewers-extension}
 
-Come indicato in [Casi di utilizzo per l’integrazione](#use%20cases%20for%20the%20integration), è possibile monitorare i visualizzatori per contenuti multimediali dinamici con la nuova integrazione Lancio Adobe  in  AEM Sites e utilizzando il codice da incorporare.
+Come indicato in [Casi di utilizzo per l’integrazione](#use-cases-for-the-integration), è possibile monitorare i visualizzatori per contenuti multimediali dinamici con la nuova integrazione Lancio Adobe  in  AEM Sites e utilizzando il codice da incorporare.
 
 ### Tracciamento dei visualizzatori per contenuti multimediali dinamici in  AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -149,7 +149,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 I clienti che non utilizzano  visualizzatori AEM Sites, né incorporano visualizzatori per contenuti multimediali dinamici in pagine Web all’esterno di  AEM Sites, o in entrambi, possono comunque utilizzare l’integrazione  Adobe Lancio .
 
-Devi completare i passaggi di configurazione delle sezioni [Configurazione di Adobe Analytics](#configuringadobeanalytics) e [Configurazione di Adobe Launch](#configuringadobelaunch). Tuttavia, i passaggi di configurazione relativi ad AEM non sono necessari.
+Devi completare i passaggi di configurazione delle sezioni [Configurazione di Adobe Analytics](#configuring-adobe-analytics-for-the-integration) e [Configurazione di Adobe Launch](#configuring-adobe-launch-for-the-integration). Tuttavia, i passaggi di configurazione relativi ad AEM non sono necessari.
 
 Dopo la corretta configurazione, potete aggiungere  supporto per Lancio Adobe a una pagina Web con un visualizzatore per file multimediali dinamici.
 
@@ -162,7 +162,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **Per tenere traccia dei visualizzatori per contenuti multimediali dinamici mediante il codice** incorporato:
 
 1. Tenete pronta una pagina Web per incorporare un visualizzatore per contenuti multimediali dinamici.
-1. Ottenete il codice da incorporare per  libreria Lancio Adobe effettuando il login  Lancio del Adobe (consultate [Configurazione  Adobe Lancio](#configuringadobelaunch)del ).
+1. Ottenete il codice da incorporare per  libreria Lancio Adobe effettuando il login  Lancio del Adobe (consultate [Configurazione  Adobe Lancio](#configuring-adobe-launch-for-the-integration)del ).
 1. Fate clic su **[!UICONTROL Proprietà]**, quindi sulla scheda **[!UICONTROL Ambienti]** .
 1. Consente di alzare il livello Ambiente in base all&#39;ambiente della pagina Web. Quindi, nella colonna **[!UICONTROL Installa]** , fate clic sull&#39;icona della casella.
 1. **[!UICONTROL Nella finestra di dialogo Istruzioni]** per l&#39;installazione Web, copiare il codice da incorporare della libreria Lancio  Adobe completo insieme ai `<script/>` tag circostanti.
@@ -234,7 +234,7 @@ L&#39;attività dell&#39;utente finale determina l&#39;effettuazione di due chia
 * La prima chiamata si verifica perché la regola **[!UICONTROL TrackPan]** viene attivata quando l&#39;utente esegue il panning nel *visualizzatore1*. Tale chiamata invia il 50% come valore dell&#39;elemento dati **[!UICONTROL ZoomScale]** perché l&#39;elemento dati sa che la regola viene attivata da *viewer1* e recupera il valore di scala corrispondente;
 * La seconda chiamata si verifica perché la regola **[!UICONTROL TrackKey]** viene attivata quando l&#39;utente preme un tasto sulla tastiera. Tale chiamata invia il 25% come valore dell’elemento dati **[!UICONTROL ZoomScale]** perché la regola non è stata attivata dal visualizzatore. Di conseguenza, l&#39;elemento dati restituisce il valore più aggiornato.
 
-L&#39;esempio sopra impostato influisce anche sulla durata del valore Data Element. Il valore dell’elemento dati gestito da Dynamic Media Viewer è memorizzato nel codice  libreria Lancio Adobe anche dopo che il visualizzatore stesso è stato eliminato dalla pagina Web. Questo significa che se è presente una regola attivata da un’estensione del visualizzatore multimediale non dinamico e fa riferimento a tale elemento dati, l’elemento dati restituisce l’ultimo valore noto, anche se il visualizzatore non è più presente sulla pagina Web.
+Il campione impostato sopra incide anche sulla durata del valore Data Element. Il valore dell’elemento dati gestito da Dynamic Media Viewer è memorizzato nel codice  libreria Lancio Adobe anche dopo che il visualizzatore stesso è stato eliminato dalla pagina Web. Questo significa che se è presente una regola attivata da un’estensione del visualizzatore di contenuti multimediali non dinamici e fa riferimento a tale elemento dati, l’elemento dati restituisce l’ultimo valore noto, anche se il visualizzatore non è più presente sulla pagina Web.
 
 In ogni caso, i valori degli elementi dati guidati dai visualizzatori per contenuti multimediali dinamici non sono memorizzati nell’archivio locale o sul server; vengono invece conservati solo nella libreria Lancio Adobe lato client  lato client. I valori di tale Data Element scompaiono quando la pagina Web viene ricaricata.
 
@@ -263,7 +263,7 @@ Il metodo più semplice per farlo consiste nel completare il seguente processo i
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-È tuttavia possibile adottare un approccio alternativo e ignorare la creazione di elementi dati. Per fare riferimento diretto a un argomento di un evento Dynamic Media Viewer: inserisci il nome completo dell’argomento dell’evento nel campo di immissione del **[!UICONTROL valore]** dell’assegnazione della variabile Analytics, circondato dai segni di percentuale (%). Ad esempio,
+È tuttavia possibile adottare un approccio alternativo e ignorare la creazione di elementi dati. Per fare riferimento diretto a un argomento di un evento Dynamic Media Viewer: inserisci il nome completo dell’argomento dell’evento nel campo di immissione del **[!UICONTROL valore]** dell’assegnazione della variabile Analytics, circondato dai segni di percentuale (%). Esempio,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -483,7 +483,7 @@ Consultate anche Guida all&#39;implementazione di [Analytics](https://docs.adobe
 
 1. In genere, l&#39;impostazione di un report in  Adobe Analytics dipende da esigenze specifiche del progetto. Di conseguenza, la configurazione dettagliata dei report non rientra nell&#39;ambito di questa integrazione.
 
-   È tuttavia sufficiente sapere che i report Custom Traffic (Traffico personalizzato) diventano automaticamente disponibili in  Adobe Analytics dopo l&#39;impostazione delle variabili Custom Traffic (Traffico personalizzato) in **[Impostazione  variabili](#setting-up-adobe-analytics-variables)**Adobe Analytics.
+   È tuttavia sufficiente sapere che i report Custom Traffic (Traffico personalizzato) diventano automaticamente disponibili in  Adobe Analytics dopo l&#39;impostazione delle variabili Custom Traffic (Traffico personalizzato) in **[Impostazione  variabili](#setting-up-adobe-analytics-variables)** Adobe Analytics.
 
    Ad esempio, il rapporto per la variabile di **[!UICONTROL Viewer asset (Risorsa visualizzatore) (prop 30)]** è disponibile dal menu Rapporti di **[!UICONTROL Traffico personalizzato > Traffico personalizzato 21-30 > Viewer asset (Risorsa visualizzatore) (prop 30)]**.
 
@@ -493,7 +493,7 @@ Consultate anche Guida all&#39;implementazione di [Analytics](https://docs.adobe
 
 ## Configurazione  lancio Adobe per l&#39;integrazione {#configuring-adobe-launch-for-the-integration}
 
-Dopo aver configurato  lancio Adobe, per l&#39;integrazione verranno impostati i seguenti parametri:
+Dopo aver configurato  Adobe Launch, per l&#39;integrazione verranno impostate le seguenti impostazioni:
 
 * La creazione di una nuova proprietà per mantenere tutte le configurazioni unite.
 * Installazione e configurazione delle estensioni. Il codice lato client di tutte le estensioni installate nella proprietà viene compilato insieme in una libreria. Questa libreria viene utilizzata dalla pagina Web in un secondo momento.
@@ -514,7 +514,7 @@ Una proprietà in  lancio Adobe è una configurazione denominata che mantiene tu
 
 Consultate anche [Creare una proprietà](https://docs.adobe.com/content/help/en/launch/using/implement/configure/create-a-property.html).
 
-1. In Lancio  Adobe, fare clic su **[!UICONTROL Nuova proprietà]**.
+1. In Lancio  Adobe, fate clic su **[!UICONTROL Nuova proprietà]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea proprietà]**, digita un nome descrittivo nel campo **[!UICONTROL Nome]**, ad esempio il titolo del tuo sito web. Esempio, `DynamicMediaViewersProp.`
 1. Nel campo **[!UICONTROL Domini]** , immetti il dominio del tuo sito Web.
 1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use--in this case, *Dynamic Media Viewers*--is not yet released.
@@ -610,7 +610,7 @@ La pubblicazione di una libreria comporta i due passaggi seguenti:
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. Nella pagina Crea nuova libreria, nel campo **[!UICONTROL Nome]** , immettete un nome descrittivo per la nuova libreria. Ad esempio,
+1. Nella pagina Crea nuova libreria, nel campo **[!UICONTROL Nome]** , immettete un nome descrittivo per la nuova libreria. Esempio,
 
    *DynamicMediaViewersLib*
 
@@ -846,7 +846,7 @@ Ad esempio, `https://ims-na1.adobelogin.com/`(il nome del server di esempio è s
 
 Al momento, AEM’autore non supporta l’integrazione dei visualizzatori per contenuti multimediali dinamici con  lancio del Adobe.
 
-È tuttavia supportata nel nodo di pubblicazione AEM. Utilizzando le impostazioni predefinite di  Configurazione di Launch Cloud di Adobe, AEM pubblicazione utilizza l&#39;ambiente di produzione  Launch Adobe. Di conseguenza, è necessario inviare  Adobe gli aggiornamenti della libreria Launch dallo Sviluppo all&#39;ambiente Produzione ogni volta durante il test.
+È tuttavia supportata nel nodo di pubblicazione AEM. Utilizzando le impostazioni predefinite di  Configurazione di Launch Cloud di Adobe, AEM pubblicazione utilizza l&#39;ambiente di produzione  Launch Adobe. In quanto tale, è necessario inviare  Adobe gli aggiornamenti della libreria Launch da Development all&#39;ambiente Production ogni volta durante il test.
 
 È possibile ovviare a questo limite specificando l&#39;URL di sviluppo o di gestione temporanea della libreria di lancio di  Adobe nella configurazione  Adobe Launch Cloud per AEM pubblicazione precedente. In questo modo, il nodo di pubblicazione AEM utilizza la versione Sviluppo o Gestione temporanea della libreria  Lancio Adobe.
 
