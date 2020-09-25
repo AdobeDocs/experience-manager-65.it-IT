@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 17%
@@ -117,7 +117,7 @@ Potete creare i set di immagini tramite l’interfaccia utente o l’API. Questa
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+>You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >**Importante:** I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 
 Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte in ordine alfanumerico. Potete riordinare o ordinare manualmente le risorse dopo averle aggiunte.
@@ -172,7 +172,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
 ## Visualizzazione di set di immagini {#viewing-image-sets}
 
-Potete creare i set di immagini nell’interfaccia utente o automaticamente utilizzando i predefiniti [per set di](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets)batch.
+Potete creare i set di immagini nell’interfaccia utente o automaticamente utilizzando i predefiniti [per set di](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)batch.
 
 >[!IMPORTANT]
 >
