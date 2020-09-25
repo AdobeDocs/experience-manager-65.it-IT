@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 80%
@@ -666,7 +666,7 @@ Per simulare l’esperienza del visitatore, utilizza i seguenti strumenti:
   </tr>
   <tr>
    <td><strong>Motore</strong></td>
-   <td>Selezionare tra le regole lato <strong>client (senza tracciamento),  Adobe Target, ContextHub </strong>e  Adobe Campaign a<strong> </strong>seconda del motore che si desidera utilizzare.</td>
+   <td>Selezionate tra le regole lato <strong>client (senza tracciamento),  Adobe Target, ContextHub </strong>e  Adobe Campaign a<strong> </strong>seconda del motore da utilizzare.</td>
   </tr>
  </tbody>
 </table>
@@ -683,7 +683,7 @@ Se hai selezionato Adobe Target come motore:
   </tr>
   <tr>
    <td><strong>Impostazione destinazione precisa</strong></td>
-   <td><p>L'attivazione di un targeting accurato indica al componente di attendere che i dati contestuali del client o dell'hub di contesto siano disponibili prima di inviare la richiesta al Adobe Target . Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Nota:</strong> L'attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td>
+   <td><p>L'attivazione di un targeting preciso indica al componente di attendere la disponibilità dei dati contestuali del client o dell'hub di contesto prima di inviare la richiesta a  Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Nota:</strong> L'attivazione o la disattivazione di un targeting preciso su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td>
   </tr>
   <tr>
    <td><strong>Includi segmenti risolti</strong></td>
@@ -691,15 +691,15 @@ Se hai selezionato Adobe Target come motore:
   </tr>
   <tr>
    <td><strong>Parametri di contesto ereditati</strong></td>
-   <td>Elenca gli eventuali parametri contestuali ereditati dal framework del Adobe Target , associati alla pagina selezionata.</td>
+   <td>Elenca gli eventuali parametri contestuali ereditati dal framework Adobe Target  associato alla pagina selezionata.</td>
   </tr>
   <tr>
    <td><strong>Param contesto</strong></td>
-   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri di contesto aggiuntivi (come nel caso di ciò che è disponibile nel framework Target). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
+   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri di contesto aggiuntivi (come avviene per il framework di Target). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
   </tr>
   <tr>
    <td><strong>Param statici</strong></td>
-   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare parametri statici aggiuntivi (come avviene per il framework Target). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub).</td>
+   <td>Tocca o fai clic su <strong>Aggiungi campo</strong> per configurare ulteriori parametri statici (come avviene per ciò che è disponibile nel framework di Target). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. I parametri statici non sono contenuti nel contesto (contesto cliente del Content Hub).</td>
   </tr>
  </tbody>
 </table>
@@ -731,5 +731,4 @@ Se selezioni Contesto cliente (lato cliente) come motore:
 
 Seleziona **Adobe Campaign** come motore se stai integrando AEM con Adobe Campaign. Consulta [Integrazione di AEM con Adobe Campaign](/help/sites-administering/campaign.md) per ulteriori informazioni.
 
-Seleziona **ContextHub** come motore se stai utilizzando ContextHub per il targeting. Consulta [Configurazione di ContextHub.](/help/sites-administering/contexthub-config.md) 
-
+Seleziona **ContextHub** come motore se stai utilizzando ContextHub per il targeting. Consulta [Configurazione di ContextHub.](/help/sites-developing/ch-configuring.md) 
