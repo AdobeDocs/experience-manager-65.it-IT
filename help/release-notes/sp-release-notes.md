@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
+source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
 workflow-type: tm+mt
-source-wordcount: '4495'
+source-wordcount: '4518'
 ht-degree: 6%
 
 ---
@@ -290,6 +290,16 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 >[!NOTE]
 >
 >[!DNL Experience Manager] Service Pack non include correzioni per [!DNL Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+
+Dopo l&#39;installazione del pacchetto del componente aggiuntivo [!DNL Experience Manager Forms] 6.5.6.0:
+
+* Arrestate l&#39; [!DNL Experience Manager Forms] istanza.
+
+* Eliminate `bcpkix-1.51`i file `bcmail-1.51`e `bcprov-1.51` JAR dalla `crx-repository\launchpad\ext` directory.
+
+* Elimina` sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider` proprietà dal `sling.properties` file.
+
+* Riavviate l’ [!DNL Experience Manager Forms] istanza.
 
 **Moduli adattivi**
 
