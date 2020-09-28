@@ -1,11 +1,11 @@
 ---
-title: Usate il rasterizzatore PDF per generare rappresentazioni di file PDF.
-description: Generate miniature e rappresentazioni di alta qualità utilizzando la libreria Rasterizer Adobe PDF in [!DNL Adobe Experience Manager].
+title: Usare il rasterizzatore PDF per generare le rappresentazioni
+description: Generate miniature e rappresentazioni di alta qualità utilizzando la libreria  Adobe PDF Rasterizer in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Usa PDF Rasterizer {#using-pdf-rasterizer}
 
-Quando caricate file PDF o AI di grandi dimensioni e che richiedono molto contenuto, la conversione predefinita potrebbe non generare un output accurato. [!DNL Adobe Experience Manager Assets] La libreria Rasterizer PDF di Adobe può generare un output più affidabile e preciso rispetto all&#39;output di una libreria predefinita. Adobe consiglia di utilizzare la libreria PDF Rasterizer per i seguenti scenari:
+Quando caricate file PDF o AI di grandi dimensioni e che richiedono molto contenuto, la conversione predefinita potrebbe non generare un output accurato. [!DNL Adobe Experience Manager Assets]  Adobe  libreria Rasterizer PDF può generare un output più affidabile e preciso rispetto all&#39;output di una libreria predefinita.  Adobe consiglia di utilizzare la libreria PDF Rasterizer per i seguenti scenari:
 
 * File AI o PDF pesanti e ricchi di contenuti.
 * File AI e file PDF con miniature non generate per impostazione predefinita.
 * File AI con colori Pantone Matching System (PMS).
 
-Le miniature e le anteprime generate con PDF Rasterizer sono di qualità migliore rispetto all’output out-of-the-box e, pertanto, offrono un’esperienza di visualizzazione coerente su tutti i dispositivi. La libreria Adobe PDF Rasterizer non supporta la conversione dello spazio colore. Trasmette sempre in RGB indipendentemente dallo spazio colore del file sorgente.
+Le miniature e le anteprime generate con PDF Rasterizer sono di qualità migliore rispetto all’output out-of-the-box e, pertanto, offrono un’esperienza di visualizzazione coerente su tutti i dispositivi. La libreria  Adobe PDF Rasterizer non supporta la conversione dello spazio colore. Trasmette sempre in RGB indipendentemente dallo spazio colore del file sorgente.
 
 1. Installate il pacchetto PDF Rasterizer nella [!DNL Adobe Experience Manager] distribuzione da Distribuzione [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
 
@@ -32,9 +32,11 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
 1. Per impedire la generazione di miniature e rappresentazioni Web per i file PDF e i file AI utilizzando i metodi predefiniti, procedere come segue:
 
    * Aprite il passaggio Miniature **[!UICONTROL di]** processo e aggiungete `application/pdf` o `application/postscript` nel campo **[!UICONTROL Skip Mime Types]** nella scheda **[!UICONTROL Miniature]** , a seconda delle necessità.
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * Nella scheda Immagine **[!UICONTROL abilitata per il]** Web, aggiungete `application/pdf` o `application/postscript` in Elenco **** salti a seconda delle esigenze.
+
    ![Configurazione per saltare l&#39;elaborazione delle miniature per un formato immagine](assets/web_enabled_imageskiplist.png)
 
 1. Aprite il passaggio **[!UICONTROL Rasterizza rappresentazione]** anteprima immagine PDF/AI e rimuovete il tipo MIME per il quale desiderate saltare la generazione di rappresentazioni immagine di anteprima predefinita. Ad esempio, rimuovere il tipo MIME `application/pdf`, `application/postscript`, o `application/illustrator` dall&#39;elenco Tipi **** MIME.
@@ -47,6 +49,7 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
    * Tipi MIME: `application/pdf` o `application/postscript`
    * Comandi: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Aggiungere le dimensioni delle miniature: 319:319, 140:100, 48:48. Se necessario, aggiungete una configurazione personalizzata per le miniature.
+
    Gli argomenti della riga di comando per il `PDFRasterizer` comando possono includere quanto segue:
 
    * `-d`: Contrassegno per consentire il rendering uniforme di testo, immagini vettoriali e immagini. Consente di creare immagini di qualità migliore. Tuttavia, se si inserisce questo parametro, il comando viene eseguito lentamente e le dimensioni delle immagini aumentano.
@@ -84,6 +87,7 @@ Le miniature e le anteprime generate con PDF Rasterizer sono di qualità miglior
 
    * Comandi: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Aggiungete le dimensioni delle miniature: `319:319`, `140:100`, `48:48`. Aggiungi la configurazione personalizzata delle miniature, a seconda delle necessità.
+
    Gli argomenti della riga di comando per il `PDFRasterizer` comando possono includere quanto segue:
 
    * `-d`: Contrassegno per consentire il rendering uniforme di testo, immagini vettoriali e immagini. Consente di creare immagini di qualità migliore. Tuttavia, se si inserisce questo parametro, il comando viene eseguito lentamente e le dimensioni delle immagini aumentano.
