@@ -1,11 +1,11 @@
 ---
-title: Modelli di risorse in [!DNL Adobe Experience Manager Assets].
+title: Modelli di risorse
 description: Scopri i modelli delle risorse [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli delle risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1555'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    >[!NOTE]
    >
-   >Assicuratevi che la [!DNL Experience Manager] distribuzione sia integrata con un [!DNL InDesign Server] sistema per consentire [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [integrare  risorse Experience Manager con InDesign Server](/help/assets/indesign.md).
+   >Assicuratevi che la [!DNL Experience Manager] distribuzione sia integrata con un [!DNL InDesign Server] sistema per consentire [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [Integrazione  risorse di Experience Manager con  InDesign Server](/help/assets/indesign.md).
 
 1. Per modificare il testo in un campo modificabile, fare clic sul campo di testo nell&#39;elenco dei campi modificabili e modificare il testo nel campo.
 
@@ -144,9 +144,9 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
    >* Passate [!DNL Experience Manager] al file system locale e mappate le icone mancanti con le risorse esistenti in [!DNL Experience Manager].
 
    >
-   >Per ulteriori informazioni sull&#39;uso dei [!DNL InDesign] documenti, consultate [Best practice per l&#39;utilizzo di documenti InDesign in  Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Per ulteriori informazioni sull&#39;uso dei [!DNL InDesign] documenti, vedere [Best practice per l&#39;utilizzo di documenti InDesign  in  Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
-1. Per generare una rappresentazione PDF per la brochure, selezionate l’opzione Acrobat nella finestra di dialogo, quindi fate clic su **[!UICONTROL Continua]**.
+1. Per generare una rappresentazione PDF per la brochure, selezionate l’opzione  Acrobat nella finestra di dialogo, quindi fate clic su **[!UICONTROL Continua]**.
 1. Il materiale collaterale viene creato nella cartella con cui avete iniziato. Per visualizzare i rendering, aprite il materiale collaterale e scegliete **[!UICONTROL Rendering]** dall’elenco di navigazione globale.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
