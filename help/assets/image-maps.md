@@ -1,11 +1,11 @@
 ---
-title: Aggiungere mappe immagine con collegamenti ipertestuali alle immagini digitali
+title: Aggiungere mappe immagine con collegamenti ipertestuali
 description: Scoprite come aggiungere una mappa immagine con collegamenti ipertestuali a un’immagine.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamento iper
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Fate clic sull’area sensibile e immettete l’URL e il testo Alt. Dall’elenco **[!UICONTROL Target]** , specificate dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immettete `https://www.adobe.com` come URL `Adobe website` come testo Alt e specificate **[!UICONTROL Nuova scheda]** dall’elenco **[!UICONTROL Target]** per aprire la mappa immagine in una nuova scheda.
+1. Fate clic sull’area sensibile e immettete l’URL e il testo Alt. Dall&#39;elenco **[!UICONTROL Target]** , specificate dove visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immettete `https://www.adobe.com` come URL, `Adobe website` come testo Alt, e specificate **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Destinazione]** affinché la mappa immagine si apra in una nuova scheda.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
@@ -45,4 +45,4 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamento iper
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se l’opzione Dynamic Media è abilitata, andate all’editor delle risorse e fate clic su **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
+   Se l’opzione Contenuti multimediali dinamici è attivata, andate all’editor risorse e fate clic su **[!UICONTROL Mappa]** per visualizzare tutte le mappe immagine applicate.
