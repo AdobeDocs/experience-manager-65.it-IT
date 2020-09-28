@@ -1,11 +1,11 @@
 ---
-title: Facet di ricerca.
+title: Facet di ricerca per filtrare i risultati di ricerca
 description: Come creare, modificare e utilizzare i facet di ricerca in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2489'
 ht-degree: 18%
 
 ---
@@ -78,7 +78,7 @@ Per le ricerche full-text, aggiungere al modulo il predicato [!UICONTROL full-te
 
 ## Aggiunta di un predicato Opzioni {#adding-an-options-predicate}
 
-Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri. Potete selezionare una o più di queste opzioni nel pannello Filtri per cercare le risorse. Ad esempio, per cercare le risorse in base al tipo di file, configurare le opzioni, quali Immagini, Multimedia, Documenti e Archivi, nel modulo di ricerca. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezionate l’opzione Immagini nel pannello Filtri.
+Il predicato Opzioni consente di aggiungere più opzioni di ricerca nel pannello Filtri. Potete selezionare una o più di queste opzioni nel pannello Filtri per cercare le risorse. Ad esempio, per cercare risorse in base al tipo di file, configurare le opzioni, quali Immagini, Multimedia, Documenti e Archivi, nel modulo di ricerca. Dopo aver configurato queste opzioni, la ricerca viene eseguita sulle risorse di tipo GIF, JPEG, PNG e così via, quando selezionate l’opzione Immagini nel pannello Filtri.
 
 Per mappare le opzioni sulla rispettiva proprietà, create una struttura di nodi per le opzioni e fornite il percorso del nodo principale nella proprietà Nome proprietà del predicato Opzioni. Il nodo padre deve essere di tipo `sling`: `OrderedFolder`. Le opzioni devono essere di tipo `nt:unstructured`. I nodi di opzione devono avere le proprietà `jcr:title` e `value` configurate.
 
@@ -183,7 +183,7 @@ Analogamente al modo in cui aggiungete un predicato Proprietà o un predicato Op
 | [!UICONTROL Intervallo date] | Cerca predicato per cercare le risorse create all’interno di un intervallo specificato per una proprietà data. Nel pannello Ricerca, potete specificare le date di inizio e fine utilizzando i selettori data. | <ul><li>Etichetta</li><li>Segnaposto</li><li>Nome proprietà</li><li>Testo intervallo (Da)</li><li>Testo intervallo (A)</li><li>Descrizione</li></ul> |
 | [!UICONTROL Data] | Consente di eseguire una ricerca basata sul cursore delle risorse in base a una proprietà data. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Dimensione file] | Cercare un predicato per cercare le risorse in base alla loro dimensione. Si tratta di un predicato basato su silder in cui potete selezionare le opzioni del cursore da un nodo configurabile. Le opzioni predefinite sono definite in /libs/dam/options/predicates/filesize nel repository CRXDE. Le dimensioni del file sono espresse in byte. | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Percorso</li><li>Descrizione</li></ul> |
-| [!UICONTROL Ultima modifica risorsa] | Predicato di ricerca per cercare le risorse modificate di recente | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |
+| [!UICONTROL Ultima modifica risorsa] | Cerca predicato per cercare le risorse modificate di recente | <ul><li>Nome proprietà</li><li>Valore proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Stato pubblicazione] | Cerca predicato per cercare le risorse in base al loro stato di pubblicazione | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
 | [!UICONTROL Valutazione] | Cerca predicato per cercare le risorse in base alla loro valutazione media | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Percorso opzione</li><li>Descrizione</li></ul> |
 | [!UICONTROL Stato scadenza] | Cerca predicato per cercare le risorse in base al loro stato di scadenza | <ul><li>Etichetta</li><li>Nome proprietà</li><li>Descrizione</li></ul> |
