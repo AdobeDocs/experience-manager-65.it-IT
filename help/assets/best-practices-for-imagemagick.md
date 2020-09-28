@@ -1,11 +1,11 @@
 ---
-title: Installa e configura ImageMagick per l’utilizzo [!DNL Adobe Experience Manager Assets].
+title: Installazione e configurazione di ImageMagick
 description: Scopri il software ImageMagick, come installarlo, impostare il passaggio della riga di comando e utilizzarlo per modificare, comporre e generare miniature dalle immagini.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Per elaborare file di grandi dimensioni con ImageMagick, considerate requisiti d
 
 >[!NOTE]
 >
->Se utilizzi [!DNL Experience Manager] su [!DNL Adobe Managed Services] (AMS), contatta l’Assistenza clienti Adobe se intendi elaborare molti file PSD o PSB ad alta risoluzione. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con oltre 30000 x 23000 pixel.
+>Se utilizzi [!DNL Experience Manager] su [!DNL Adobe Managed Services] (AMS), contatta l&#39;Assistenza clienti  Adobe se intendi elaborare molti file PSD o PSB ad alta risoluzione. [!DNL Experience Manager] potrebbero non essere in grado di elaborare file PSB ad alta risoluzione con oltre 30000 x 23000 pixel.
 
 ## Installa ImageMagick {#installing-imagemagick}
 
@@ -82,7 +82,7 @@ L’utilizzo di ImageMagick per elaborare le immagini presenta diverse vulnerabi
 
 Inoltre, diversi plug-in per l&#39;elaborazione delle immagini dipendono dalla libreria ImageMagick, tra cui, tra l&#39;altro, l&#39;immagine di PHP, il clip di immagine di Ruby e l&#39;immagine di nodejs.
 
-Se utilizzate ImageMagick o una libreria interessata, Adobe consiglia di attenuare le vulnerabilità note eseguendo almeno una delle seguenti operazioni (preferibilmente entrambe):
+Se si utilizza ImageMagick o una libreria interessata,  Adobe consiglia di attenuare le vulnerabilità note eseguendo almeno una delle seguenti operazioni (preferibilmente entrambe):
 
 1. Verificate che tutti i file di immagine inizino con i [&quot;byte magici&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) previsti corrispondenti ai tipi di file di immagine supportati prima di inviarli a ImageMagick per l&#39;elaborazione.
 1. Usate un file di criteri per disabilitare i codificatori ImageMagick vulnerabili. La politica globale per ImageMagick è disponibile all&#39;indirizzo `/etc/ImageMagick`.
