@@ -1,11 +1,11 @@
 ---
-title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [!DNL Sites]
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2103'
 ht-degree: 44%
 
 ---
@@ -21,20 +21,20 @@ Gli utenti possono creare pagine Web in [!DNL Experience Manager Sites]. [!DNL E
 
 When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. Gli amministratori creano un&#39;integrazione una tantum di una distribuzione [!DNL Sites] con una distribuzione diversa (remota) di [!DNL Assets].
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulta [guida](/help/assets/assets-migration-guide.md)alla migrazione di Experience Manager Assets.
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulta [guida](/help/assets/assets-migration-guide.md)alla migrazione delle risorse di Experience Manager.
 
 ### Prerequisiti e implementazioni supportate {#prerequisites}
 
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona con [!DNL Experience Manager] un Cloud Service. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [connesse in  Experience Manager come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona [!DNL Experience Manager] come Cloud Service. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [collegate in  Experience Manager come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] come Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] locale |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]come Cloud Service ** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]su AMS ** | Supportato | Supportato | Supportato |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]locale ** | Non supportato | Non supportato | Non supportato |
+   | **[!DNL Experience Manager Assets]come Cloud Service** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]su AMS** | Supportato | Supportato | Supportato |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]locale** | Non supportato | Non supportato | Non supportato |
 
 ### Formati di file supportati {#mimetypes}
 
