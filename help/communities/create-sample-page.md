@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
 
 # Creare una pagina di esempio {#create-a-sample-page}
 
-A partire da AEM 6.1 Communities, il modo più semplice per creare una pagina di esempio è creare un sito community semplice, composto semplicemente da una funzione Pagina.
+A partire da AEM Community 6.1, il modo più semplice per creare una pagina di esempio è creare un sito community semplice, costituito semplicemente da una funzione Pagina.
 
 Questo includerà un componente parsys in modo da poter [abilitare i componenti per l’authoring](basics.md#accessing-communities-components).
 
@@ -28,7 +28,7 @@ Un&#39;altra opzione per l&#39;esplorazione con componenti campione consiste nel
 
 ## Creazione di un sito community {#create-a-community-site}
 
-È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva agli AEM Communities](getting-started.md).
+È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva  AEM Communities](getting-started.md).
 
 La differenza principale è che questa esercitazione creerà un nuovo modello di sito community che contiene solo la funzione [](functions.md#page-function) Pagina per creare un sito community semplice privo di altre funzioni (diverse dalle funzioni precablate di base per tutti i siti community).
 
@@ -38,7 +38,7 @@ Per iniziare, create un semplice modello [di sito per](sites.md)community.
 
 Per la navigazione globale in un’istanza di creazione, selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Modelli **** sito.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![create-site-template](assets/create-site-template1.png)
 
 * Seleziona `Create button`
 * INFORMAZIONI DI BASE
@@ -47,7 +47,7 @@ Per la navigazione globale in un’istanza di creazione, selezionate **[!UICONTR
    * `Description`: Un modello composto da una funzione Pagina singola.
    * Seleziona `Enabled`
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![site-template-editor](assets/site-template-editor.png)
 
 * STRUTTURA
 
@@ -57,7 +57,7 @@ Per la navigazione globale in un’istanza di creazione, selezionate **[!UICONTR
       * `Title`: Pagina singola
       * `URL`: page
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![site-template-editor-structure](assets/site-template-editor1.png)
 
 * Seleziona **`Save`** per la configurazione
 * Selezionare **`Save`** per il modello di sito
@@ -68,7 +68,7 @@ Ora create un nuovo sito community basato sul modello di sito semplice.
 
 Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!UICONTROL Community > Siti]**.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![create-community-site](assets/create-community-site1.png)
 
 * Seleziona **`Create`** icona
 
@@ -83,7 +83,8 @@ Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!U
       * url = http://localhost:4502/content/sites/sample
 
       * `Template`: scegli `Single Page Template`
-      ![chlimage_1-86](assets/chlimage_1-86.png)
+
+      ![create-community-site-template](assets/create-community-site-template.png)
 
 
 * Seleziona `Next`
@@ -98,23 +99,23 @@ Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!U
 
 * Seleziona `Create`
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
+   ![create-community-site](assets/create-community-site.png)
 
 ## Pubblicare il sito {#publish-the-site}
 
-![chlimage_1-88](assets/chlimage_1-88.png)
+![sito di pubblicazione](assets/publish-site.png)
 
 Dalla console [Siti](sites-console.md)community, selezionate l’icona Pubblica per pubblicare il sito, per impostazione predefinita, su http://localhost:4503.
 
 ## Aprire il sito in modalità di modifica {#open-the-site-on-author-in-edit-mode}
 
-![chlimage_1-89](assets/chlimage_1-89.png)
+![open-site](assets/open-site.png)
 
 Selezionate l’icona del sito aperto per visualizzare il sito in modalità di modifica.
 
 L’URL sarà [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![chlimage_1-90](assets/chlimage_1-90.png)
+![author-site](assets/author-site.png)
 
 Nella semplice home page è possibile vedere cosa è preconnesso attraverso le funzioni e i modelli della community, e giocare con l&#39;aggiunta e la configurazione di componenti della community.
 
