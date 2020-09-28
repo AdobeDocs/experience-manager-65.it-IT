@@ -1,11 +1,11 @@
 ---
-title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
+title: Digital Rights Management di attività
 description: Scoprite come gestire gli stati di scadenza delle risorse e le informazioni per le risorse con licenza in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1423'
 ht-degree: 7%
 
 ---
@@ -82,7 +82,7 @@ Inoltre, se un problema o un errore impedisce al pianificatore di rilevare le ri
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Aprite [!DNL Experience Manager] Configuration Manager.
-1. Scegliete **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
+1. Scegliete **[!UICONTROL notifica]** di scadenza Adobe CQ DAM. Per impostazione predefinita, è selezionata l’opzione Pianificatore **[!UICONTROL basato su]** tempo, che pianifica un processo per verificare in un momento specifico se una risorsa ha risorse secondarie scadute. Al termine del processo, le risorse con risorse secondarie scadute e risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -165,7 +165,7 @@ Una risorsa è considerata protetta se una delle seguenti condizioni è soddisfa
 >
 >Il percorso `/etc/dam/drm/licenses` utilizzato per memorizzare le licenze nelle versioni precedenti di [!DNL Experience Manager] è obsoleto.
 >
->Se create o modificate le pagine delle licenze o le rimuovete dalle [!DNL Experience Manager] versioni precedenti, Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/&ast;/settings/dam/drm/licenses`.
+>Se create o modificate le pagine delle licenze o le rimuovete dalle [!DNL Experience Manager] versioni precedenti,  Adobe consiglia di memorizzarle in `/apps/settings/dam/drm/licenses` o `/conf/&ast;/settings/dam/drm/licenses`.
 
 ### Scaricare risorse protette da DRM {#downloading-drm-assets}
 
