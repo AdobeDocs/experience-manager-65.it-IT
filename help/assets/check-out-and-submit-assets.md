@@ -1,11 +1,11 @@
 ---
-title: Archivia e controlla le risorse digitali per la modifica.
+title: Archiviare e estrarre le risorse per la modifica
 description: Scoprite come estrarre le risorse per la modifica e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '435'
 ht-degree: 1%
 
 ---
