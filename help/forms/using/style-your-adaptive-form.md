@@ -8,10 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
+source-git-commit: 0b3884301e09eba6860891f00a98508033d12ec8
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 7%
+source-wordcount: '2058'
+ht-degree: 8%
 
 ---
 
@@ -107,7 +107,7 @@ In questa esercitazione verranno formattati intestazione e piè di pagina, compo
    * **Titolo:** Specificate un titolo del tema. Ad esempio, Tema **globale.** Il titolo consente di identificare il tema dall’elenco dei temi.
    * **Nome:** Specificate il nome del tema. Ad esempio, **Global-Theme.** Nella directory archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, viene automaticamente generato il valore relativo al campo del nome. È possibile modificare il valore suggerito. Il campo del nome può includere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti con un trattino.
 
-1. Toccate **[!UICONTROL Crea]**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Toccate **[!UICONTROL Apri]** per aprire il tema appena creato in una nuova scheda. Il tema si apre nell’editor di temi. Per lo stile, l&#39;editor di temi utilizza un modulo adattivo fornito con AEM [!DNL Forms].
+1. Toccate **[!UICONTROL Crea]**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Toccate **[!UICONTROL Apri]** per aprire il tema appena creato in una nuova scheda. Il tema si apre nell&#39;editor di temi. Per lo stile, l&#39;editor di temi utilizza un modulo adattivo fornito con AEM [!DNL Forms].
 
    Per informazioni sull’utilizzo dell’interfaccia utente dell’editor di temi, consultate [Informazioni sull’editor](/help/forms/using/themes.md#aboutthethemeeditor)di temi.
 
@@ -135,7 +135,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
    | Colore font | FFFFFF |
    | Dimensione font | 54px |
 
-1. Toccate il widget di [!UICONTROL intestazione] e toccate **[!UICONTROL Intestazione]**. Le opzioni per lo stile del widget Intestazione vengono visualizzate a sinistra. Espandete il pannello **[!UICONTROL Dimension e posizione]** , impostate **[!UICONTROL Altezza]** su `120px`e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Toccate il widget di [!UICONTROL intestazione] e toccate **[!UICONTROL Intestazione]**. Le opzioni per lo stile del widget Intestazione sono visualizzate a sinistra. Espandete il pannello **[!UICONTROL Dimension e posizione]** , impostate **[!UICONTROL Altezza]** su `120px`e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Espandete la struttura di **[!UICONTROL sfondo]** del widget dell’intestazione e impostate il colore **[!UICONTROL di]** sfondo su `F6921E.`
 
    Passa il puntatore del mouse su **[!UICONTROL Immagine e sfumatura]** > **[!UICONTROL + Aggiungi]**, tocca **[!UICONTROL Immagine]**. Impostate le seguenti proprietà e toccate ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -159,7 +159,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
       <td> 
        <ul> 
         <li>In alto: 1,5 rem</li> 
-        <li>In basso: -35 px</li> 
+        <li>7b: -35 px</li> 
         <li>A sinistra: 1rem<strong><br /> </strong></li> 
        </ul> <p><strong>Suggerimento:</strong> Toccate l'icona del <img src="assets/link.png"> collegamento per fornire un valore diverso a ciascun campo.<br /> </p> </td> 
      </tr> 
@@ -442,18 +442,18 @@ Alcuni stili si applicano solo a un componente specifico. Tali componenti sono f
 
 È possibile utilizzare vari font per progettare un modulo adattivo. Tutti i dispositivi su cui è visualizzato il modulo adattivo potrebbero non avere i font utilizzati per progettare il modulo adattivo. È possibile utilizzare un servizio di font Web per distribuire i font richiesti al dispositivo di destinazione.
 
-[!DNL Adobe Typekit] è un servizio di font Web. È possibile configurare e utilizzare il servizio con moduli adattivi. Per utilizzare [!DNL Adobe Typekit] in un modulo adattivo:
+[!DNL Adobe Fonts] è un servizio di font Web. È possibile configurare e utilizzare il servizio con moduli adattivi. Per utilizzare [!DNL Adobe Fonts] in un modulo adattivo:
 
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] ora è denominato  Adobe Fonts ed è incluso con Creative Cloud e altre iscrizioni. [Per saperne di più](https://fonts.adobe.com/).
 
-1. Create un account [Adobe Typekit](https://typekit.com/) , create un kit, aggiungete il font Myriad Pro al kit, pubblicate il kit e ottenete l&#39;ID kit. È necessario utilizzare [!DNL Adobe Typekit] i font (font Web) in un modulo adattivo.
-1. Nel server AEM [!DNL Forms] , andate a ![adobeexperience](assets/adobeexperiencemanager.png) emanager **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** ![a martello](assets/hammer.png) > **** **** Distribuzione >Cloud Services. Nella pagina Cloud Services, accedi a Servizi **[!UICONTROL di]** terze parti > **[!UICONTROL Typekit]**, quindi fai clic su **[!UICONTROL Configura]** ora in [!UICONTROL Typekit]. Se una configurazione è già disponibile, fate clic sul pulsante + per creare una nuova istanza.
+1. Create un account [Adobe Fonts](https://typekit.com/) , create un kit, aggiungete il font Myriad Pro al kit, pubblicate il kit e ottenete l&#39;ID kit. È necessario utilizzare [!DNL Adobe Fonts] (font Web) in un modulo adattivo.
+1. Nel server AEM [!DNL Forms] , andate a ![adobeexperience](assets/adobeexperiencemanager.png) emanager **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** ![a martello](assets/hammer.png) > **** Adobe Fonts. A questo punto, aprite una cartella di configurazione. Se una configurazione è già disponibile, fate clic sul pulsante **[!UICONTROL Crea]** per creare una nuova istanza.
 
    Nella finestra di dialogo Crea configurazione, specificate un **Titolo** per la configurazione e fate clic su **[!UICONTROL Crea]**. Viene nuovamente visualizzata la pagina di configurazione. Nella finestra di dialogo [!UICONTROL Modifica componente] visualizzata, fornite l&#39;ID **** kit e fate clic su **[!UICONTROL OK]**.
 
-1. Configurate il tema per utilizzare la [!DNL TypeKit] configurazione. Nell’istanza di creazione, aprite Tema **** globale nell’editor di temi. Nell&#39;editor di temi, accedi a Opzioni **[!UICONTROL tema (]** Theme Options) ![(Opzioni](assets/theme-options.png) tema) > **[!UICONTROL Configura (Configure)]**. Nel campo Configurazione **** Typekit, selezionate il kit e fate clic su **[!UICONTROL Salva]**.
+1. Configurate il tema per utilizzare la [!DNL Adobe Fonts] configurazione. Nell’istanza di creazione, aprite Tema **** globale nell’editor di temi. Nell&#39;editor di temi, accedi a Opzioni **[!UICONTROL tema (]** Theme Options) ![(Opzioni](assets/theme-options.png) tema) > **[!UICONTROL Configura (Configure)]**. Nel **[!UICONTROL campo Configurazione]** Adobe Fonts, selezionate il kit e fate clic su **[!UICONTROL Salva]**.
 
-   I font aggiunti a [!UICONTROL Typekit] sono disponibili per la selezione nel pannello di **[!UICONTROL testo]** di tutti i componenti.
+   I font aggiunti al **[!UICONTROL Adobe Fonts]** sono disponibili per la selezione nel pannello di **[!UICONTROL testo]** di tutti i componenti.
 
