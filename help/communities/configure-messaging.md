@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Funzionalità di messaggistica {#messaging-feature}
 
-Oltre alle interazioni visibili al pubblico che si verificano nei forum e nei commenti, la funzione di messaggistica degli AEM Communities consente ai membri della community di interagire più privatamente tra di loro.
+Oltre alle interazioni pubblicamente visibili che si verificano nei forum e nei commenti, la funzione di messaggistica di  AEM Communities consente ai membri della community di interagire più privatamente tra di loro.
 
 Questa funzione può essere inclusa quando si crea un sito [](/help/communities/overview.md#communitiessites) community.
 
@@ -41,7 +41,9 @@ La funzione di messaggistica consente di:
 
 **G** - ripristino di un messaggio eliminato
 
-![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
+![messaging-section](assets/messaging-section.png)
+
+![restore-message](assets/restore-message.png)
 
 Per attivare e modificare la funzione di messaggistica, vedi:
 
@@ -77,7 +79,7 @@ Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di
 
 * **Selezione servizio**
 
-   (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal servizio [Operazioni messaggistica](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
+   (*Obbligatorio*) Impostare questa proprietà sul valore **`serviceSelector.name`** della proprietà del [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
 * **Componi pagina**
 
@@ -97,7 +99,7 @@ Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di
 
 * **Percorsi cartella**
 
-   (*Obbligatorio*) Riferimento ai valori impostati per **inbox.path.name** e **sentitems.path.name** in [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Quando si configura per un `Inbox`, aggiungere una voce utilizzando il valore di **inbox.path.name**. Quando si configura per un `Outbox`, aggiungere una voce utilizzando il valore di **sentitems.path.name**. Durante la configurazione per `Trash`, aggiungere due voci con entrambi i valori.
+   (*Obbligatorio*) Riferimento ai valori impostati per **inbox.path.name** e **sentitems.path.name** nel [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Quando si configura per un `Inbox`, aggiungere una voce utilizzando il valore di **inbox.path.name**. Quando si configura per un `Outbox`, aggiungere una voce utilizzando il valore di **sentitems.path.name**. Durante la configurazione per `Trash`, aggiungere due voci con entrambi i valori.
 
 #### Scheda Visualizzazione {#display-tab}
 
@@ -167,7 +169,7 @@ Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di
 
 * **Selezione servizio**
 
-   (*Obbligatorio*) Impostate questo valore sul valore della proprietà **`serviceSelector.name`** dal servizio [Operazioni messaggistica](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
+   (*Obbligatorio*) Impostare questa proprietà sul valore **`serviceSelector.name`** della proprietà del [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
 #### Scheda Visualizzazione {#display-tab-1}
 
