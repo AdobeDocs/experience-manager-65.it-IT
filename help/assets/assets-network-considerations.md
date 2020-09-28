@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Assets] considerazioni e requisiti di rete.'
+title: Considerazioni e requisiti di rete
 description: Considerazioni sulla rete durante la progettazione [!DNL Adobe Experience Manager Assets] di una distribuzione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Il diagramma mostra velocità di uplink superiori all&#39;interno della rete azi
 
 Dall&#39;uplink di una rete aziendale a Internet, possono esserci altri servizi che utilizzano la larghezza di banda. È importante comprendere la quantità di larghezza di banda che può essere dedicata o impostata come priorità per le risorse. Ad esempio, se un collegamento da 1 Gbps è già utilizzato all&#39;80%, potete allocare solo un massimo del 20% della larghezza di banda per [!DNL Experience Manager Assets].
 
-I firewall e i proxy Enterprise possono inoltre modellare la larghezza di banda in molti modi diversi. Questo tipo di dispositivo può dare priorità alla larghezza di banda utilizzando qualità del servizio, limitazioni di larghezza di banda per utente o limiti di bitrate per host. Si tratta di punti di interruzione importanti da esaminare in quanto possono avere un impatto significativo sull&#39;esperienza [!DNL Assets] degli utenti.
+I firewall e i proxy Enterprise possono inoltre modellare la larghezza di banda in molti modi diversi. Questo tipo di dispositivo può dare priorità alla larghezza di banda utilizzando qualità del servizio, limitazioni di larghezza di banda per utente o limiti di bitrate per host. Si tratta di punti di interruzione importanti da esaminare in quanto possono avere un impatto significativo sull&#39;esperienza [!DNL Assets] utente.
 
 In questo esempio, l&#39;azienda dispone di un collegamento di 10 Gbps. Dovrebbe essere sufficientemente grande per diversi clienti. Inoltre, il firewall impone un limite di velocità host di 10 Mbps. Questa limitazione può limitare il traffico a un singolo host a 10 Mbps, anche se il collegamento a Internet è a 10 Gbps.
 
@@ -68,7 +68,7 @@ Dai diagrammi di esempio, potete concludere che sei dispositivi condividono un c
 
 La progettazione della topologia dell&#39; [!DNL Experience Manager] ambiente richiede una conoscenza dettagliata della configurazione del sistema e del modo in cui la rete è connessa all&#39;interno dell&#39;ambiente dell&#39;utente.
 
-Lo scenario di esempio include una farm di pubblicazione con cinque server, uno store binario S3 e Dynamic Media configurato.
+Lo scenario di esempio include una farm di pubblicazione con cinque server, uno store binario S3 e un file multimediale dinamico configurato.
 
 Il dispatcher condivide una connessione di 100 Mbps con due entità, il mondo esterno e la [!DNL Experience Manager] distribuzione. Per le operazioni di caricamento e scaricamento simultanee, dividete questo numero per due. L&#39;archivio esterno collegato utilizza una connessione separata.
 
@@ -78,7 +78,7 @@ Se si esamina la rete dal dispositivo client alla [!DNL Experience Manager] dist
 
 ## Flussi di lavoro definiti per la [!DNL Experience Manager] distribuzione {#defined-workflows-of-the-aem-deployment}
 
-Quando si considerano le prestazioni della rete, potrebbe essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, lo storage collegato in rete S3 o di altro tipo utilizzato e le richieste di I/O utilizzano la larghezza di banda della rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
+Quando si considerano le prestazioni della rete, potrebbe essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, l&#39;archiviazione S3 o altra rete collegata utilizzata e le richieste di I/O richiedono una larghezza di banda di rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
 
 Per semplificare i processi relativi all’assimilazione delle risorse (in particolare durante il caricamento di un gran numero di risorse), esplora i flussi di lavoro delle risorse e scopri di più sulla loro configurazione.
 
