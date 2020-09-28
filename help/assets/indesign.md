@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Integrate con [!DNL Adobe InDesign Server]'
+title: ' [!DNL Assets] Integrate con [!DNL InDesign Server]'
 description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 4%
@@ -23,7 +23,7 @@ Per caricare completamente i file in [!DNL Experience Manager Assets] cui avete 
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] viene offerto come due offerte separate. [App desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati basati su ciò che avete creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://www.adobe.com/devnet/scripting.html) .Gli script sono scritti in [!DNL ExtendScript], che è simile a [!DNL JavaScript]. Per informazioni sugli [!DNL InDesign] script, vedere [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] viene offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare a livello di programmazione documenti automatizzati basati su ciò che è stato creato [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore ExtendScript [](https://www.adobe.com/devnet/scripting.html) .Gli script sono scritti in [!DNL ExtendScript], che è simile a [!DNL JavaScript]. Per informazioni sugli [!DNL InDesign] script, vedere [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## Funzionamento dell&#39;estrazione {#how-the-extraction-works}
 
@@ -47,7 +47,7 @@ Questo script di comando:
 
    >[!NOTE]
    >
-   >IDML è un formato basato su XML che esegue il rendering di tutti i contenuti del [!DNL InDesign] file. Viene memorizzato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip) . Per ulteriori informazioni, consultate [InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)(Formati di interscambio InDesign INX e IDML).
+   >IDML è un formato basato su XML che esegue il rendering di tutti i contenuti del [!DNL InDesign] file. Viene memorizzato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip) . Per ulteriori informazioni, vedere [formati di interscambio InDesign INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
@@ -63,10 +63,10 @@ Questo script di comando:
 
 Per integrare l&#39; [!DNL InDesign Server] utilizzo con [!DNL Experience Manager Assets] e dopo la configurazione del proxy, è necessario:
 
-1. [Installate InDesign Server](#installing-the-indesign-server).
-1. Se necessario, [configura il  Experience Manager Assets Workflow](#configuring-the-aem-assets-workflow).
+1. [Installare il InDesign Server](#installing-the-indesign-server).
+1. Se necessario, [configura il flusso di lavoro](#configuring-the-aem-assets-workflow)Risorse Experience Manager .
 Ciò è necessario solo se i valori predefiniti non sono appropriati per l’istanza in uso.
-1. Configurate un lavoratore [proxy per InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
+1. Configurare un lavoratore [proxy per il InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
 ### Installa [!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -108,11 +108,11 @@ Per personalizzare, puoi modificare la scheda **[!UICONTROL Arguments (Argomenti
 
 Argomenti di estrazione dei supporti e percorsi di script
 
-* **Libreria** ExtendScript: Si tratta di una semplice libreria di metodi http get/post, richiesta dagli altri script.
+* **Libreria** ExtendScript : Si tratta di una semplice libreria di metodi http get/post, richiesta dagli altri script.
 
 * **Estendi script**: Qui è possibile specificare diverse combinazioni di script. Se si desidera che gli script personalizzati siano eseguiti sul [!DNL InDesign Server]computer, salvare gli script in `/apps/settings/dam/indesign/scripts`.
 
-Per informazioni sugli [!DNL Adobe InDesign] script, consultate la documentazione per gli sviluppatori di [InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Per informazioni sugli [!DNL Adobe InDesign] script, consultate la documentazione per lo sviluppo di [InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -149,7 +149,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 >
 >Il lavoratore risiede nell&#39;istanza proxy.
 
-1. Nella console Strumenti, espandi Configurazioni **[!UICONTROL Servizi]** cloud nel riquadro a sinistra. Quindi espandete Configurazione **[!UICONTROL proxy]** Cloud.
+1. Nella console Strumenti, espandete Configurazioni **** Cloud Services nel riquadro a sinistra. Quindi espandete Configurazione **[!UICONTROL proxy]** Cloud.
 
 1. Per aprire la configurazione, fai doppio clic su **[!UICONTROL IDS worker]**.
 
@@ -190,7 +190,7 @@ Per configurare il numero di processi IDS paralleli:
    * **Processi** paralleli massimi - `<*x*>` (come calcolato sopra)
 
 1. Salvate queste modifiche.
-1. Per abilitare il supporto per più sessioni per Adobe CS6 e versioni successive, selezionate `enable.multisession.name` casella di controllo, in `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione.
+1. Per abilitare il supporto per più sessioni per  Adobe CS6 e versioni successive, selezionate `enable.multisession.name` casella di controllo, in `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione.
 1. Create un [pool di lavoratori `x` IDS aggiungendo endpoint SOAP alla configurazione](#configuring-the-proxy-worker-for-indesign-server)IDS Worker.
 
    Se sono in esecuzione più computer [!DNL InDesign Server], aggiungere endpoint SOAP (numero di processori per computer -1) per ogni computer.
@@ -207,7 +207,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
 >
->Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoratore IDS viene riconvalidato. Se il lavoratore viene trovato online, viene rimosso dal elenco Bloccati .
+>Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoro IDS viene riconvalidato. Se il lavoratore viene trovato online, viene rimosso dal elenco Bloccati .
 
 ## Abilita il supporto per la versione [!DNL InDesign Server] 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
 
@@ -231,5 +231,5 @@ Potete modificare le credenziali di amministratore predefinite (nome utente e pa
 
 >[!MORELIKETHIS]
 >
->* [Informazioni su Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [Informazioni su  Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
 
