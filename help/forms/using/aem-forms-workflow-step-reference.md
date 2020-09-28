@@ -1,8 +1,8 @@
 ---
-title: Flusso di lavoro incentrato sui moduli in OSGi - Riferimento passo
-seo-title: Flusso di lavoro incentrato sui moduli in OSGi - Riferimento passo
-description: Flusso di lavoro basato su moduli con i passaggi OSGi per creare rapidamente flussi di lavoro basati su moduli adattivi.
-seo-description: Flusso di lavoro basato su moduli con i passaggi OSGi per creare rapidamente flussi di lavoro basati su moduli adattivi.
+title: Flusso di lavoro Forms basato su OSGi - Riferimento passo
+seo-title: Flusso di lavoro Forms basato su OSGi - Riferimento passo
+description: Flusso di lavoro Forms incentrato sui passaggi OSGi per creare rapidamente flussi di lavoro basati su moduli adattivi.
+seo-description: Flusso di lavoro Forms incentrato sui passaggi OSGi per creare rapidamente flussi di lavoro basati su moduli adattivi.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 contentOwner: null
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,19 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
 workflow-type: tm+mt
-source-wordcount: '7077'
+source-wordcount: '7109'
 ht-degree: 0%
 
 ---
 
 
-# Flusso di lavoro incentrato sui moduli in OSGi - Riferimento passo{#forms-centric-workflow-on-osgi-step-reference}
+# Flusso di lavoro Forms basato su OSGi - Riferimento passo{#forms-centric-workflow-on-osgi-step-reference}
 
-## Passaggi del flusso di lavoro Moduli {#forms-workflow-steps}
+## Passaggi Forms Workflow {#forms-workflow-steps}
 
-I passaggi del flusso di lavoro per i moduli eseguono operazioni specifiche per i AEM Forms in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente in OSGi un flusso di lavoro incentrato sui moduli adattivi basato su moduli. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi del flusso di lavoro per moduli per avviare Document Services, integrarsi con il flusso di lavoro di firma Adobe Sign ed eseguire altre operazioni sui AEM Forms. Per utilizzare questi passaggi in un flusso di lavoro è necessario un componente aggiuntivo per [AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) .
+I passaggi del flusso di lavoro Forms eseguono  operazioni specifiche di AEM Forms in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente in OSGi un flusso di lavoro basato su Forms basato su moduli adattivi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, processi aziendali interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi di Forms Workflow per avviare Document Services, integrarsi con  flusso di lavoro di firma Adobe Sign ed eseguire altre operazioni  AEM Forms. È necessario [componente aggiuntivo](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms per utilizzare questi passaggi in un flusso di lavoro.
 
 ## Assign task step {#assign-task-step}
 
@@ -30,12 +30,12 @@ Il passaggio dell&#39;attività di assegnazione crea un&#39;attività e la asseg
 
 È inoltre possibile utilizzare il componente per controllare il comportamento dell&#39;attività. Ad esempio, creazione di un documento di record automatico, assegnazione dell&#39;attività a un utente o gruppo specifico, specifica il percorso dei dati inviati, specifica il percorso dei dati da precompilare e specifica delle azioni predefinite. Il passaggio Assegna attività ha le seguenti proprietà:
 
-* **Titolo:** Titolo dell’attività. Il titolo viene visualizzato in AEM Inbox.
+* **Titolo:** Titolo dell’attività. Il titolo viene visualizzato in AEM Posta in arrivo.
 * **Descrizione:** Spiegazione delle operazioni eseguite nell&#39;attività. Queste informazioni sono utili per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
 * **Percorso miniatura:** Percorso della miniatura dell’attività. Se non viene specificato alcun percorso, per la miniatura predefinita di un modulo adattivo e per il documento di registrazione viene visualizzata un&#39;icona predefinita.
-* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi passaggi vengono visualizzati nella Casella in entrata AEM. È possibile definire questi passaggi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
-* **Priorità:** La priorità selezionata viene visualizzata nella casella in entrata di AEM. Le opzioni disponibili sono Alta, Media e Bassa. Il valore predefinito è Medium.
+* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi passaggi vengono visualizzati nella AEM Posta in arrivo. È possibile definire questi passaggi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
+* **Priorità:** La priorità selezionata viene visualizzata nella casella in entrata AEM. Le opzioni disponibili sono Alta, Media e Bassa. Il valore predefinito è Medium.
 * **Data scadenza:** Specificare il numero di giorni o ore dopo i quali l&#39;attività è contrassegnata come scaduta. Se si seleziona **Disattiva**, l&#39;attività non verrà mai contrassegnata come scaduta. È inoltre possibile specificare un gestore di timeout per eseguire attività specifiche dopo la scadenza dell&#39;attività.
 
 * **Giorni:** Numero di giorni prima dei quali deve essere completata l&#39;attività. Numero di giorni contati dopo che l’attività è stata assegnata a un utente. Se un&#39;attività non è completa e supera il numero di giorni specificato nel campo Giorni, se selezionata, viene attivato un gestore di timeout dopo la data di scadenza.
@@ -51,14 +51,14 @@ Il passaggio dell&#39;attività di assegnazione crea un&#39;attività e la asseg
 
 >[!NOTE]
 >
->Per accedere all’interfaccia utente di Interactive Communications Agent nella inbox di AEM è necessario disporre di un’assegnazione per i gruppi agente-utenti e utenti del flusso di lavoro.
+>Per accedere all&#39;interfaccia utente di Interactive Communications Agent nella casella in AEM in entrata è necessario disporre di assegnazioni di gruppi di agenti e utenti del flusso di lavoro.
 
 * **Modulo adattivo o percorso** di comunicazione interattiva: Specificate il percorso del modulo adattivo o della comunicazione interattiva. È possibile utilizzare il modulo adattivo o la comunicazione interattiva inviata al flusso di lavoro, disponibile in un percorso assoluto, oppure recuperare il modulo adattivo da un percorso memorizzato in una variabile di tipo dati stringa.
 * **Seleziona PDF di input utilizzando:** Specificare il percorso di un documento PDF non interattivo. Il campo è disponibile quando si sceglie un documento PDF non interattivo nel campo Tipo. È possibile selezionare il PDF di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto o utilizzando una variabile del tipo di dati Documento. Ad esempio, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Il percorso non esiste nell&#39;archivio crx. Un amministratore crea il percorso prima di utilizzarlo. Per utilizzare l&#39;opzione Percorso PDF è necessario abilitare l&#39;opzione Documento di registrazione o utilizzare moduli adattivi basati su modelli di modulo.
 * **Per l&#39;attività completata, eseguite il rendering del modulo adattivo come** segue: Quando un&#39;attività è contrassegnata come completa, è possibile eseguire il rendering del modulo adattivo come modulo adattivo di sola lettura o come documento PDF. Per eseguire il rendering del modulo adattivo come documento di registrazione, è necessario abilitare l&#39;opzione Documento di registrazione o i moduli adattivi basati su modelli di modulo.
 * **Pre-popolato:** I seguenti campi elencati di seguito fungono da input per l&#39;attività:
 
-   * **Selezionare il file di dati di input utilizzando:** Percorso del file di dati di input (.json,. xml, .doc o modello dati modulo). È possibile recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile del tipo di dati Document, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un’applicazione AEM Inbox. Un percorso di esempio è [Payload_Directory]/workflow/data.
+   * **Selezionare il file di dati di input utilizzando:** Percorso del file di dati di input (.json,. xml, .doc o modello dati modulo). È possibile recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile del tipo di dati Document, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Un percorso di esempio è [Payload_Directory]/workflow/data.
    * **Selezionare gli allegati di input utilizzando:** Gli allegati disponibili nella posizione sono allegati al modulo associato all&#39;attività. Il percorso è sempre relativo al payload. Un percorso di esempio è [Payload_Directory]/attachments/
    * **Scegli JSON di input:** Selezionare un file JSON di input utilizzando un percorso relativo al payload o memorizzato in una variabile del tipo di dati Document, JSON o Form Data Model. Questa opzione è disponibile se si seleziona Interattivo comunicazione agente interfaccia utente o Documento canale Web comunicazione interattiva dall&#39;elenco a discesa Tipo.
    * **Scegliete un servizio di precompilazione personalizzato:** Selezionate il servizio di precompilazione per recuperare i dati e precompilare il documento del canale Web di comunicazione interattiva o l’interfaccia utente dell’agente.
@@ -78,7 +78,7 @@ Il passaggio dell&#39;attività di assegnazione crea un&#39;attività e la asseg
    * **Salva modello di layout utilizzando:** Salvare il modello di layout utilizzando un percorso relativo al payload o memorizzarlo in una variabile del tipo di dati Documento. Il modello [di](../../forms/using/layout-design-details.md) layout fa riferimento a un file XDP creato con Forms Designer. Questa opzione è disponibile solo se si seleziona Interattivo agente di comunicazione dall&#39;elenco a discesa Tipo.
 
 * **Assegnatario > Opzioni di assegnazione:** Specificare il metodo per assegnare l’attività a un utente. Potete assegnare dinamicamente l’attività a un utente o a un gruppo utilizzando lo script Selezione partecipanti o assegnando l’attività a un utente o gruppo AEM specifico.
-* **Selezione partecipanti:** L&#39;opzione è disponibile quando l&#39;opzione **Dinamicamente per un utente o un gruppo** è selezionata nel campo Assegna opzioni. È possibile utilizzare uno script ECMAS o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consultate Assegnare [dinamicamente un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio di partecipante dinamico a un Adobe Experience Manager  personalizzato.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **Selezione partecipanti:** L&#39;opzione è disponibile quando l&#39;opzione **Dinamicamente per un utente o un gruppo** è selezionata nel campo Assegna opzioni. È possibile utilizzare uno script ECMAS o un servizio per selezionare in modo dinamico un utente o un gruppo. Per ulteriori informazioni, consultate Assegnare [dinamicamente un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato per i partecipanti dinamici di Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 * **Partecipanti:** Il campo è disponibile quando l’opzione **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nel campo Selezione **partecipanti** . Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -89,24 +89,24 @@ Il passaggio dell&#39;attività di assegnazione crea un&#39;attività e la asseg
 * **Utente o gruppo:** L&#39;attività viene assegnata all&#39;utente o al gruppo selezionato. L&#39;opzione è disponibile quando l&#39;opzione **Per un utente o un gruppo specifico** è selezionata nel campo **Assegna opzioni** . Il campo elenca tutti gli utenti e i gruppi del gruppo Workflow-utenti.\
    Nel menu a discesa **Utente o Gruppo** sono elencati gli utenti e i gruppi a cui l&#39;utente ha effettuato l&#39;accesso. La visualizzazione del nome utente dipende dal fatto che si disponga delle autorizzazioni di accesso sul nodo **utente** nell&#39;archivio crx per quel particolare utente.
 
-* **Notifica al cessionario per e-mail:** Selezionate questa opzione per inviare le notifiche e-mail all’assegnatario. Queste notifiche vengono inviate quando un&#39;attività viene assegnata a un utente. Prima di utilizzare l&#39;opzione, abilita le notifiche dalla console Web di AEM. Per istruzioni dettagliate, consultate [Configurare le notifiche e-mail per la fase di assegnazione delle attività](../../forms/using/aem-forms-workflow.md)
+* **Notifica al cessionario per e-mail:** Selezionate questa opzione per inviare le notifiche e-mail all’assegnatario. Queste notifiche vengono inviate quando un&#39;attività viene assegnata a un utente. Prima di utilizzare l&#39;opzione, abilita le notifiche dalla console AEM Web. Per istruzioni dettagliate, consultate [Configurare le notifiche e-mail per la fase di assegnazione delle attività](../../forms/using/aem-forms-workflow.md)
 
 * **Modello** e-mail HTML: Selezionate il modello e-mail per il messaggio e-mail di notifica. Per modificare un modello, modificate il file che si trova in /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
-* **Consenti delega a:** AEM Inbox fornisce all’utente che ha effettuato l’accesso un’opzione per delegare il flusso di lavoro assegnato a un altro utente. Potete delegare lo stesso gruppo o l’utente del flusso di lavoro di un altro gruppo. Se l&#39;attività è assegnata a un singolo utente e l&#39;opzione **Consenti delega ai membri del gruppo** assegnatario è selezionata, non è possibile delegare l&#39;attività a un altro utente o gruppo.
-* **Impostazioni condivisione:** La Casella in entrata AEM offre opzioni per condividere con altri utenti una o tutte le attività della inbox:
+* **Consenti delega a:** AEM Casella in entrata fornisce all’utente che ha effettuato l’accesso un’opzione per delegare il flusso di lavoro assegnato a un altro utente. Potete delegare lo stesso gruppo o l’utente del flusso di lavoro di un altro gruppo. Se l&#39;attività è assegnata a un singolo utente e l&#39;opzione **Consenti delega ai membri del gruppo** assegnatario è selezionata, non è possibile delegare l&#39;attività a un altro utente o gruppo.
+* **Impostazioni condivisione:** AEM Casella in entrata offre opzioni per condividere con altri utenti una o tutte le attività della inbox:
    * Quando l&#39;opzione **Consenti all&#39;assegnatario di condividere in modo esplicito nella inbox** è selezionata, l&#39;utente può fare clic sull&#39;attività e condividerla con un altro utente AEM.
    * Quando si seleziona l&#39;opzione **Consenti al assegnatario di condividere** la posta in arrivo e un utente condivide gli elementi della propria casella in entrata o consente ad altri utenti di accedere agli elementi della propria casella in entrata, vengono condivise con altri utenti solo le attività con l&#39;opzione sopra riportata.
 
 * **Azioni > Azioni predefinite:** Sono disponibili le azioni Invia, Salva e Ripristina. Per impostazione predefinita sono attivate tutte le azioni predefinite.
-* **Variabile route:** Nome della variabile di route. La variabile di route acquisisce le azioni personalizzate selezionate da un utente in AEM Inbox.
-* **Percorsi:** Un&#39;attività può essere collegata a percorsi diversi. Se selezionata in Casella in entrata AEM, la route restituisce un valore e i rami del flusso di lavoro in base alla route selezionata. È possibile memorizzare i percorsi in una variabile di array di tipo dati String o selezionare **Letterale** per aggiungere manualmente i percorsi.
+* **Variabile route:** Nome della variabile di route. La variabile route acquisisce le azioni personalizzate selezionate da un utente AEM Posta in arrivo.
+* **Percorsi:** Un&#39;attività può essere collegata a percorsi diversi. Se selezionato in AEM Posta in arrivo, la route restituisce un valore e i rami del flusso di lavoro in base alla route selezionata. È possibile memorizzare i percorsi in una variabile di array di tipo dati String o selezionare **Letterale** per aggiungere manualmente i percorsi.
 
-* **Titolo**: Specificare il titolo della route. Viene visualizzato in AEM Inbox.
-* **Icona** Corallo: Specificate l&#39;attributo HTML di un&#39;icona corallo. La libreria Adobe CorelUI offre un vasto set di icone di tipo &quot;touch-first&quot;. È possibile scegliere e utilizzare un&#39;icona per la route. Viene visualizzato insieme al titolo nella Casella in entrata AEM. Se si memorizzano le route in una variabile, le route utilizzano l&#39;icona corale &#39;Tags&#39; predefinita.
-* **Consenti all&#39;assegnatario di aggiungere un commento**: Selezionare questa opzione per abilitare i commenti per l&#39;attività. Un assegnatario può aggiungere i commenti dalla Casella in entrata AEM al momento dell&#39;invio dell&#39;attività.
+* **Titolo**: Specificare il titolo della route. Viene visualizzato in AEM Posta in arrivo.
+* **Icona** Corallo: Specificate l&#39;attributo HTML di un&#39;icona corallo.  libreria CorelUI Adobe offre un vasto set di icone per i primi tocco. È possibile scegliere e utilizzare un&#39;icona per la route. Viene visualizzato insieme al titolo in AEM Posta in arrivo. Se si memorizzano le route in una variabile, le route utilizzano l&#39;icona corale &#39;Tags&#39; predefinita.
+* **Consenti all&#39;assegnatario di aggiungere un commento**: Selezionare questa opzione per abilitare i commenti per l&#39;attività. Un assegnatario può aggiungere i commenti dall&#39;interno AEM Posta in arrivo al momento dell&#39;invio dell&#39;attività.
 * **Salva commento in variabile:** Salvare il commento in una variabile del tipo di dati String. Questa opzione viene visualizzata solo se selezionate la casella di controllo **Consenti all&#39;assegnatario di aggiungere commenti** .
 
-* **Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività**: Selezionare questa opzione per abilitare gli allegati per l&#39;attività. Un assegnatario può aggiungere gli allegati dalla Casella in entrata AEM al momento dell’invio dell’attività.
+* **Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività**: Selezionare questa opzione per abilitare gli allegati per l&#39;attività. Un assegnatario può aggiungere gli allegati dall&#39;interno AEM Posta in arrivo al momento dell&#39;invio dell&#39;attività.
 * **Salva gli allegati delle attività di output utilizzando**: Specificate il percorso della cartella dell&#39;allegato. È possibile salvare gli allegati delle attività di output utilizzando un percorso relativo al payload o in una variabile di array di tipi di dati del documento. Questa opzione viene visualizzata solo se si seleziona la casella di controllo **Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività** e si seleziona Modulo **** adattivo, Modulo **adattivo di sola** lettura o Documento **PDF** non interattivo dall&#39;elenco a discesa **Tipo** **** nella scheda AnteprimaModulo/Documento.
 
 >[!NOTE]
@@ -151,7 +151,7 @@ Il passaggio e-mail utilizza Day CQ Mail Service per inviare e-mail. Prima di ut
 
 Selezionare l&#39;opzione **Variabile** per recuperare l&#39;allegato del file memorizzato in una variabile di tipo di dati Document, XML o JSON.
 
-**Nome file:** Nome del file allegato e-mail. Il Passaggio e-mail modifica il nome file originale dell&#39;allegato in base al nome file specificato. Il nome può essere specificato manualmente o recuperato da una proprietà metadati o da una variabile del flusso di lavoro. Utilizzare l&#39;opzione **Letterale** quando si conosce il valore esatto da specificare. Utilizzare l&#39;opzione **Variabile** per recuperare il nome del file dal valore memorizzato in una variabile di tipo dati stringa. Usate l’opzione **Recupera da metadati** flusso di lavoro quando il valore da utilizzare viene salvato in una proprietà di metadati del flusso di lavoro.
+**Nome file:** Nome del file allegato e-mail. Il Passaggio e-mail modifica il nome file originale dell&#39;allegato in base al nome file specificato. Il nome può essere specificato manualmente o recuperato da una proprietà di metadati di un flusso di lavoro o da una variabile. Utilizzare l&#39;opzione **Letterale** quando si conosce il valore esatto da specificare. Utilizzare l&#39;opzione **Variabile** per recuperare il nome del file dal valore memorizzato in una variabile di tipo dati stringa. Usate l’opzione **Recupera da metadati** flusso di lavoro quando il valore da utilizzare viene salvato in una proprietà di metadati del flusso di lavoro.
 
 ## Generate Document of Record step {#generate-document-of-record-step}
 
@@ -176,7 +176,7 @@ Se si specifica il percorso di una cartella, ad esempio gli allegati, tutti i fi
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-È possibile utilizzare Integrazione [dati](../../forms/using/data-integration.md) AEM Forms per configurare e connettersi a origini dati diverse. Queste origini dati possono essere un database, un servizio Web, un servizio REST, un servizio OData e una soluzione CRM. L&#39;integrazione dei dati dei AEM Forms consente di creare un modello dati del modulo che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati nel database configurato. È possibile utilizzare il passaggio **** Richiama servizio modello dati per selezionare un modello dati del modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati a origini dati diverse.
+È possibile utilizzare [Integrazione](../../forms/using/data-integration.md) dati AEM Forms per configurare e connettersi a origini dati diverse. Queste origini dati possono essere un database, un servizio Web, un servizio REST, un servizio OData e una soluzione CRM.  AEM Forms Data Integration consente di creare un modello dati modulo che include vari servizi per eseguire operazioni di recupero, aggiunta e aggiornamento dei dati nel database configurato. È possibile utilizzare il passaggio **** Richiama servizio modello dati per selezionare un modello dati del modulo (FDM) e utilizzare i servizi di FDM per recuperare, aggiornare o aggiungere dati a origini dati diverse.
 
 Per spiegare gli input per i campi del passaggio, la seguente tabella di database e il file JSON sono utilizzati come esempio:
 
@@ -239,7 +239,7 @@ Il passaggio Richiama servizio modello dati modulo include i campi elencati di s
 * **Percorso** modello dati modulo: Individuare e selezionare un modello dati modulo presente sul server.
 
 * **Servizio**: Elenco dei servizi forniti dal modello dati modulo selezionato.
-* **Input per services > Fornisci dati di input utilizzando metadati letterali, variabili o flussi di lavoro e un file** JSON: Un servizio può avere più argomenti. Selezionate l&#39;opzione per ottenere il valore degli argomenti del servizio da una proprietà di metadati del flusso di lavoro, un oggetto JSON, una variabile o immettete direttamente il valore nella casella di testo fornita:
+* **Input per services > Fornisci dati di input utilizzando metadati letterali, variabili o flussi di lavoro e un file** JSON: Un servizio può avere più argomenti. Selezionate l&#39;opzione per ottenere il valore degli argomenti del servizio da una proprietà di metadati di un flusso di lavoro, un oggetto JSON, una variabile o immettete direttamente il valore nella casella di testo fornita:
 
    * **Letterale:** Utilizzate l&#39;opzione quando conoscete il valore esatto da specificare. Ad esempio, srose@we.info.
    * **Variabile:** Utilizzare l&#39;opzione per recuperare il valore memorizzato in una variabile.
@@ -251,37 +251,38 @@ Il passaggio Richiama servizio modello dati modulo include i campi elencati di s
 * **Selezionate il documento JSON di input utilizzando**: Il file JSON contiene i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **relativo al payload** o a un percorso **assoluto.** È inoltre possibile recuperare il documento JSON di input utilizzando una variabile del tipo di dati JSON o del modello dati modulo.
 
 * **Notazione punto JSON:** Lasciate vuoto il campo per utilizzare tutti gli oggetti del file JSON specificato come input per gli argomenti del servizio. Per leggere un oggetto JSON specifico dal file JSON specificato come input per gli argomenti del servizio, specificate la notazione del punto per l&#39;oggetto JSON, ad esempio, se disponete di un JSON simile a quello elencato all&#39;inizio della sezione, specificate Insurance.customerDetails per fornire tutti i dettagli di un cliente come input al servizio.
-* **Output di service > Mappa e scrittura di valori di output su variabili o metadati:** Selezionare l&#39;opzione per salvare i valori di output come proprietà del nodo di metadati dell&#39;istanza del flusso di lavoro nell&#39;archivio crx. Specificate il nome della proprietà dei metadati e selezionate l&#39;attributo di output del servizio corrispondente da mappare con la proprietà dei metadati, ad esempio, mappate il numero_telefono restituito dal servizio di output con la proprietà phone_number dei metadati del flusso di lavoro. Analogamente, è possibile memorizzare l&#39;output in una variabile di tipo dati Long.
+* **Output di service > Mappa e scrittura di valori di output su variabili o metadati:** Selezionare l&#39;opzione per salvare i valori di output come proprietà del nodo di metadati dell&#39;istanza del flusso di lavoro nell&#39;archivio crx. Specificate il nome della proprietà dei metadati e selezionate l&#39;attributo di output del servizio corrispondente da mappare con la proprietà dei metadati, ad esempio, mappate il numero_telefono restituito dal servizio di output con la proprietà phone_number dei metadati del flusso di lavoro. Analogamente, è possibile memorizzare l&#39;output in una variabile di tipo dati Long. Quando si seleziona una proprietà per l&#39;opzione di output **[!UICONTROL Service da mappare]** , solo le variabili in grado di memorizzare i dati della proprietà selezionata vengono popolate per l&#39;opzione **[!UICONTROL Salva l&#39;output in]**.
+
 * **Output di service > Salva output su variabile o file JSON:** Selezionare l&#39;opzione per salvare i valori di output in un file JSON in un percorso assoluto, in un percorso relativo al payload o in una variabile.
 * **Salva documento Output JSON utilizzando le seguenti opzioni:** Salvate il file JSON di output. Il percorso del file JSON di output può essere relativo al payload o a un percorso assoluto. È inoltre possibile salvare il file JSON di output utilizzando una variabile del tipo di dati JSON o del modello dati modulo.
 
 ## Passaggio firma documento {#sign-document-step}
 
-Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i documenti. Il passaggio Firma documento presenta le proprietà seguenti:
+Il passaggio Firma documento consente di utilizzare  Adobe Sign per firmare i documenti. Il passaggio Firma documento presenta le proprietà seguenti:
 
 * **Nome accordo:** Specificate il titolo dell&#39;accordo. Il nome del contratto fa parte dell’oggetto e del corpo del messaggio e-mail inviato ai firmatari. È possibile memorizzare il nome in una variabile del tipo di dati String o selezionare **Letterale** per aggiungere il nome manualmente.
 
 * **Impostazioni internazionali:** Specificate la lingua per le opzioni e-mail e verifica. È possibile memorizzare le impostazioni internazionali in una variabile del tipo di dati String o selezionare **Letterale** per scegliere le impostazioni internazionali dall&#39;elenco delle opzioni disponibili. È necessario definire il codice delle impostazioni internazionali durante la memorizzazione del valore delle impostazioni internazionali in una variabile. Ad esempio, specificate **en_US** per l’inglese e **fr_FR** per il francese.
 
-* **Configurazione** di Adobe Sign Cloud: Scegliere una configurazione di Adobe Sign Cloud. Se non hai configurato Adobe Sign per AEM Forms, consulta [Integrazione di Adobe Sign con i AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Configurazione** Adobe Sign Cloud : Scegliete una configurazione  Adobe Sign Cloud. Se non avete configurato  Adobe Sign per  AEM Forms, consultate [Integrare  Adobe Sign con  AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Selezionare il documento da firmare utilizzando:** È possibile scegliere un documento da una posizione relativa al payload, utilizzare payload come documento, specificare un percorso assoluto del documento o recuperare il documento memorizzato in una variabile del tipo di dati Documento.
 * **Giorni fino alla scadenza:** Un documento viene contrassegnato come scaduto (scadenza trascorsa) dopo l&#39;assenza di attività sull&#39;attività per il numero di giorni specificato nel campo **Giorni fino a scadenza** . Il numero di giorni contati dopo che il documento è stato assegnato a un utente per la firma.
 * **Frequenza e-mail promemoria:** Potete inviare un&#39;e-mail di promemoria a intervalli giornalieri o settimanali. La settimana viene conteggiata a partire dal giorno in cui il documento viene assegnato a un utente per la firma.
 * **Processo firma:** È possibile scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Dopo che il primo firmatario ha completato la firma del documento, quest&#39;ultimo viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
 * **URL di reindirizzamento:** Specificate un URL di reindirizzamento. Dopo aver firmato il documento, è possibile reindirizzare l&#39;assegnatario a un URL. In genere, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
-* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi passaggi vengono visualizzati nella Casella in entrata AEM. È possibile definire questi passaggi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
+* **Fase flusso di lavoro:** Un flusso di lavoro può avere più fasi. Questi passaggi vengono visualizzati nella AEM Posta in arrivo. È possibile definire questi passaggi nelle proprietà del modello (barra laterale > Pagina > Proprietà pagina > Stadi).
 * **Seleziona firmatari:** Specificare il metodo per scegliere i firmatari per il documento. Puoi assegnare il flusso di lavoro in modo dinamico a un utente o a un gruppo oppure puoi aggiungere manualmente i dettagli di un firmatario.
 * **Script o servizio per selezionare i firmatari:** L&#39;opzione è disponibile solo se l&#39;opzione Dinamicamente è selezionata nel campo Seleziona firmatari. È possibile specificare uno script ECMAS o un servizio per scegliere i firmatari e le opzioni di verifica per un documento.
-* **Dettagli firmatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona firmatari. Specificate l&#39;indirizzo e-mail e scegliete un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, assicurarsi che l&#39;opzione di verifica corrispondente sia abilitata per l&#39;account Adobe Sign configurato. È possibile utilizzare una variabile di tipo String per definire i valori dei campi **[!UICONTROL E-mail]**, Codice **** paese e Numero **** telefono. I campi Codice **** paese e Numero **** telefono vengono visualizzati solo se si seleziona Verifica **** telefono dall’elenco a discesa Verifica **[!UICONTROL in]** 2 fasi.
-* **Variabile di stato:** Un documento abilitato per Adobe Sign memorizza lo stato di firma del documento in una variabile del tipo di dati String. Specificare il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un&#39;istanza è disponibile in CRXDE in /etc/workflow/instance/&lt;server>/&lt;data-ora>/&lt;istanza del modello di flusso di lavoro>/workItems/&lt;nodo>/metaData contiene lo stato di una variabile.
+* **Dettagli firmatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona firmatari. Specificate l&#39;indirizzo e-mail e scegliete un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertatevi che l&#39;opzione di verifica corrispondente sia abilitata per l&#39;account Adobe Sign  configurato. È possibile utilizzare una variabile di tipo String per definire i valori dei campi **[!UICONTROL E-mail]**, Codice **** paese e Numero **** telefono. I campi Codice **** paese e Numero **** telefono vengono visualizzati solo se si seleziona Verifica **** telefono dall’elenco a discesa Verifica **[!UICONTROL in]** 2 fasi.
+* **Variabile di stato:** Un documento abilitato per  Adobe Sign memorizza lo stato di firma del documento in una variabile del tipo di dati String. Specificare il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un&#39;istanza è disponibile in CRXDE in /etc/workflow/instance/&lt;server>/&lt;data-ora>/&lt;istanza del modello di flusso di lavoro>/workItems/&lt;nodo>/metaData contiene lo stato di una variabile.
 * **Salva documento firmato utilizzando le seguenti opzioni:** Specificare il percorso in cui conservare i documenti firmati. È possibile scegliere di sovrascrivere il file di payload, posizionare il documento firmato in una posizione all&#39;interno della directory di payload o archiviare il documento firmato in una variabile di tipo Document.
 
 ## Passaggi di Document Services {#document-services-steps}
 
-AEM Document Services è un set di servizi per la creazione, l&#39;assemblaggio e la protezione di documenti PDF. I AEM Forms forniscono un passaggio del flusso di lavoro AEM separato per ogni servizio documenti.
+AEM Document Services è un insieme di servizi per la creazione, l&#39;assemblaggio e la protezione di documenti PDF.  AEM Forms fornisce un passaggio AEM Workflow separato per ogni servizio documenti.
 
-Simile ad altri passaggi del flusso di lavoro per AEM Forms, ad esempio Assegna attività, Invia e-mail e Firma documento, potete utilizzare le variabili in tutti i passaggi di AEM Document Services. Per ulteriori informazioni sulla creazione e gestione di variabili, consultate [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM.
+Come per altri passaggi  flusso di lavoro AEM Forms, quali Assegna attività, Invia e-mail e Firma documento, è possibile utilizzare le variabili in tutti AEM passaggi di Document Services. Per ulteriori informazioni sulla creazione e la gestione di variabili, vedi [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
@@ -292,7 +293,7 @@ Aggiunta di marca temporale a un documento. Vengono forniti i dettagli del docum
 Converte un documento PDF in un elenco di immagini. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF. Le seguenti informazioni si applicano alle conversioni a immagini TIFF:
 
 * Viene generato un file TIFF con più pagine.
-* Alcune annotazioni non sono incluse nelle immagini TIFF. Le annotazioni per le quali è richiesto Acrobat di generarne l’aspetto non sono incluse.
+* Alcune annotazioni non sono incluse nelle immagini TIFF. Le annotazioni che richiedono  Acrobat per generare il relativo aspetto non sono incluse.
 
 ### Convert to PDF/A step {#convert-to-pdf-a-step}
 
@@ -338,13 +339,13 @@ Esegue il file DDX sulla mappa specificata dei documenti di input e restituisce 
 >
 >È possibile utilizzare le variabili per specificare il file DDX per i documenti di input. Memorizzare il file DDX in una variabile del tipo di dati Document o XML.
 
-### Passaggio Ottimizza PDF {#optimize-pdf-step}
+###  passo Optimize PDF {#optimize-pdf-step}
 
 Ottimizza i file PDF riducendone le dimensioni. Il risultato di questa conversione è rappresentato da file PDF di dimensioni inferiori rispetto alle versioni originali. Questa operazione converte anche i documenti PDF nella versione PDF specificata nei parametri di ottimizzazione.
 
 Le impostazioni di ottimizzazione specificano la modalità di ottimizzazione dei file. Di seguito sono riportati alcuni esempi di impostazioni:
 
-* Versione Target PDF
+* Versione PDF di destinazione
 * Eliminazione di oggetti quali azioni JavaScript e miniature di pagina incorporate
 * Eliminazione di dati utente quali commenti e allegati di file
 * Eliminazione delle impostazioni non valide o non utilizzate
@@ -362,7 +363,7 @@ Consente di eseguire il rendering di un modulo creato in Form Designer (XDP) in 
 
 ### Passaggio di protezione documento {#secure-document-step}
 
-Cifra, firma e certifica un documento. I AEM Forms supportano sia la cifratura basata su password che quella basata su certificato. È inoltre possibile scegliere tra vari algoritmi per la firma dei documenti. Ad esempio, SHA-256 e SH-512. È inoltre possibile utilizzare il passaggio del flusso di lavoro per leggere ed estendere i documenti PDF. Il passaggio del flusso di lavoro fornisce l&#39;opzione per abilitare la decodifica dei codici a barre, le firme digitali, l&#39;importazione e l&#39;esportazione di dati PDF e altre opzioni.
+Cifra, firma e certifica un documento.  AEM Forms supporta sia la crittografia basata su password che la crittografia basata su certificato. È inoltre possibile scegliere tra vari algoritmi per la firma dei documenti. Ad esempio, SHA-256 e SH-512. È inoltre possibile utilizzare il passaggio del flusso di lavoro per leggere ed estendere i documenti PDF. Il passaggio del flusso di lavoro fornisce l&#39;opzione per abilitare la decodifica dei codici a barre, le firme digitali, l&#39;importazione e l&#39;esportazione di dati PDF e altre opzioni.
 
 ### Passaggio Invia a stampante {#send-to-printer-step}
 
@@ -419,7 +420,7 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Impostazioni internazionali]**: Specifica la lingua utilizzata per generare il documento PDF. Se si specifica un valore letterale, selezionare una lingua dall&#39;elenco o selezionare uno dei seguenti valori:
    * **Per utilizzare il server predefinito**:
-(Impostazione predefinita) Utilizzare l&#39;impostazione internazionale configurata sul server AEM Forms. L’impostazione internazionale è configurata tramite la console di amministrazione. (Vedere la Guida [di](http://www.adobe.com/go/learn_aemforms_designer_65)Designer.)
+(Impostazione predefinita) Utilizzate le impostazioni internazionali configurate sul server AEM Forms . L’impostazione internazionale è configurata tramite la console di amministrazione. (Vedere la Guida [di](http://www.adobe.com/go/learn_aemforms_designer_65)Designer.)
 
    * **Per utilizzare un valore**personalizzato:
 Digitare il codice delle impostazioni internazionali nella casella letterale o selezionare una variabile di stringa contenente il codice delle impostazioni internazionali. Per un elenco completo dei codici lingua supportati, consultate http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
