@@ -1,11 +1,11 @@
 ---
-title: Gestire [!DNL Adobe Stock] le risorse in [!DNL Adobe Experience Manager Assets].
+title: Risorse [!DNL Adobe Stock] di gestione
 description: Cercare, recuperare, ottenere licenze e [!DNL Adobe Stock] gestire risorse dall'interno [!DNL Adobe Experience Manager]. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1109'
 ht-degree: 13%
 
 ---
