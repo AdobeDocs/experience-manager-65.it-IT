@@ -1,11 +1,11 @@
 ---
-title: Elabora le risorse utilizzando gestori di contenuti multimediali e flussi di lavoro in [!DNL Adobe Experience Manager].
+title: Elaborazione delle risorse tramite gestori e flussi di lavoro di contenuti multimediali
 description: Scopri i gestori di contenuti multimediali e come utilizzare i flussi di lavoro per eseguire attività sulle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2108'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ Per visualizzare i gestori di contenuti multimediali attivi:
 
 1. In your browser, navigate to `http://localhost:4502/system/console/components`.
 1. Clic `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
-1. Viene visualizzato un elenco con tutti i gestori di contenuti multimediali attivi. Ad esempio:
+1. Viene visualizzato un elenco con tutti i gestori di contenuti multimediali attivi. Esempio:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
