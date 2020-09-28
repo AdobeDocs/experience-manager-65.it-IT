@@ -1,9 +1,9 @@
 ---
-title: Best practice per [!DNL Adobe Experience Manager Assets] monitorare l'implementazione.
+title: Best practice per [!DNL Assets] monitorare l'implementazione
 description: Procedure ottimali per monitorare l'ambiente e le prestazioni dell' [!DNL Adobe Experience Manager] implementazione dopo l'implementazione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
