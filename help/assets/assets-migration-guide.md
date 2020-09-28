@@ -1,11 +1,11 @@
 ---
-title: Migra le risorse [!DNL Adobe Experience Manager Assets] in massa.
+title: Migrazione delle risorse in blocco
 description: Illustra come inserire risorse [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle per pubblicare istanze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1798'
 ht-degree: 8%
 
 ---
@@ -79,11 +79,11 @@ Poiché le risorse non devono essere trasmesse in rete, le prestazioni complessi
 
 ### Elaborazione di rappresentazioni {#processing-renditions}
 
-Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro [!UICONTROL DAM Update Asset] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare il flusso di lavoro [!UICONTROL DAM Update Asset] in base alle proprie esigenze. Il flusso di lavoro predefinito contiene molti passaggi che potrebbero non essere necessari, ad esempio generazione o [!DNL InDesign Server] integrazione di Scene7 PTIFF.
+Dopo aver caricato le risorse nel sistema, è necessario elaborarle tramite il flusso di lavoro [!UICONTROL DAM Update Asset] per estrarre i metadati e generare le rappresentazioni. Prima di eseguire questo passaggio, è necessario duplicare e modificare il flusso di lavoro [!UICONTROL DAM Update Asset] in base alle proprie esigenze. Il flusso di lavoro out-of-the-box contiene molti passaggi che potrebbero non essere necessari, ad esempio generazione o [!DNL InDesign Server] integrazione di Scene7 PTIFF.
 
 Dopo aver configurato il flusso di lavoro in base alle esigenze, potete eseguire il flusso di lavoro in due modi:
 
-1. L&#39;approccio più semplice è [ACS Commons&#39;s Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Questo strumento consente di eseguire una query ed elaborare i risultati della query attraverso un flusso di lavoro. Sono inoltre disponibili opzioni per impostare le dimensioni batch.
+1. L&#39;approccio più semplice è [ACS Commons&#39;s Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Questo strumento consente di eseguire una query ed elaborare i risultati della query tramite un flusso di lavoro. Sono inoltre disponibili opzioni per impostare le dimensioni batch.
 1. Puoi utilizzare [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) insieme a [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) (Flussi di lavoro sintetici). While this approach is much more involved, it lets you remove the overhead of the [!DNL Experience Manager] workflow engine while optimizing the use of server resources. Inoltre, Fast Action Manager migliora ulteriormente le prestazioni monitorando dinamicamente le risorse del server e riducendo il carico posizionato sul sistema. Gli script di esempio sono stati forniti nella pagina delle funzioni di ACS Commons.
 
 ### Attivare le risorse {#activating-assets}
