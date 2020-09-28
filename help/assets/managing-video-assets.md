@@ -1,11 +1,11 @@
 ---
-title: Consente di gestire le risorse video in [!DNL Adobe Experience Manager].
+title: Gestire le risorse video
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93b8fccc2a0c4663104150fdba3651ff5e4f6bbc
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '809'
 ht-degree: 7%
 
 ---
