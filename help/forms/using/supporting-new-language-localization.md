@@ -1,8 +1,8 @@
 ---
 title: Supporto di nuove impostazioni internazionali per la localizzazione dei moduli adattivi
 seo-title: Supporto di nuove impostazioni internazionali per la localizzazione dei moduli adattivi
-description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
-seo-description: AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.
+description: ' AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.'
+seo-description: ' AEM Forms consente di aggiungere nuove impostazioni internazionali per la localizzazione dei moduli adattivi. Le impostazioni internazionali supportate per impostazione predefinita sono Inglese, Francese, Tedesco e Giapponese.'
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -26,27 +26,38 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari di lingua
 
 **Dizionario** specifico per il modulo Contiene le stringhe utilizzate nei moduli adattivi. Ad esempio, etichette, nomi di campi, messaggi di errore, descrizioni della guida e così via. Viene gestito come un set di file XLIFF per ogni lingua e potete accedervi in `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Dizionari** globali Nella libreria client AEM sono presenti due dizionari globali, gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, pattern di data e ora e così via. Questi dizionari sono disponibili in CRXDe Lite all&#39;indirizzo /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni impostazione internazionale. Poiché in genere i dizionari globali non vengono aggiornati frequentemente, il mantenimento di file JavaScript separati per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando accedono a diversi moduli adattivi sullo stesso server.
+**Dizionari** globali Esistono due dizionari globali, gestiti come oggetti JSON, AEM libreria client. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, pattern di data e ora e così via. Questi dizionari sono disponibili in CRXDe Lite all&#39;indirizzo /libs/fd/xfaforms/clientlibs/I18N. Questi percorsi contengono cartelle separate per ogni impostazione internazionale. Poiché in genere i dizionari globali non vengono aggiornati frequentemente, il mantenimento di file JavaScript separati per ciascuna lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando accedono a diversi moduli adattivi sullo stesso server.
 
 ### Funzionamento della localizzazione del modulo adattivo {#how-localization-of-adaptive-form-works}
 
-Quando viene eseguito il rendering di un modulo adattivo, identifica le impostazioni internazionali richieste, esaminando i seguenti parametri nell&#39;ordine specificato:
+Esistono due metodi per identificare le impostazioni internazionali del modulo adattivo. Quando viene eseguito il rendering di un modulo adattivo, identifica le impostazioni internazionali richieste tramite:
 
-* Parametro della richiesta `afAcceptLang`Per ignorare le impostazioni internazionali del browser degli utenti, puoi passare il 
+* il `[local]` selettore nell’URL del modulo adattivo. The format of the URL is `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L&#39;utilizzo del `[local]` selettore consente di memorizzare nella cache un modulo adattivo.
+
+* osservando i seguenti parametri nell&#39;ordine specificato:
+
+   * Parametro della richiesta `afAcceptLang`Per ignorare le impostazioni internazionali del browser degli utenti, puoi passare il 
 `afAcceptLang` richiede il parametro per imporre l&#39;impostazione internazionale. Ad esempio, con il seguente URL sarà necessario eseguire il rendering del modulo in lingua giapponese:
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* Le impostazioni internazionali del browser impostate per l’utente, specificate nella richiesta utilizzando l’ `Accept-Language` intestazione.
+   * Le impostazioni internazionali del browser impostate per l’utente, specificate nella richiesta utilizzando l’ `Accept-Language` intestazione.
 
-* Impostazione della lingua dell’utente specificata in AEM.
+   * Impostazione della lingua dell’utente specificata in AEM.
 
-Una volta identificate le impostazioni internazionali, i moduli adattivi selezionano il dizionario specifico del modulo. Se il dizionario specifico del modulo per le impostazioni internazionali richieste non viene trovato, viene utilizzato il dizionario inglese (en).
+   * Le impostazioni internazionali del browser sono abilitate, per impostazione predefinita. Per modificare le impostazioni internazionali del browser,
+      * Aprite il gestore di configurazione. L&#39;URL è `http://[server]:[port]/system/console/configMgr`
+      * Individuare e aprire la configurazione **[!UICONTROL Modulo adattivo e Canale]** Web di comunicazione interattiva.
+      * Modificate lo stato dell’opzione **[!UICONTROL Usa impostazioni internazionali]** browser e **[!UICONTROL salvate]** la configurazione.
+
+Una volta identificate le impostazioni internazionali, i moduli adattivi selezionano il dizionario specifico del modulo. Se il dizionario specifico del modulo per le impostazioni internazionali richieste non viene trovato, utilizza il dizionario per la lingua in cui è stato creato il modulo adattivo.
+
+Se non sono presenti informazioni sulle impostazioni internazionali, il modulo adattivo viene distribuito nella lingua originale del modulo. La lingua originale è la lingua utilizzata per sviluppare il modulo adattivo.
 
 Se non esiste una libreria client per l&#39;impostazione internazionale richiesta, essa cerca una libreria client per il codice della lingua presente nelle impostazioni internazionali. Ad esempio, se le impostazioni internazionali richieste sono `en_ZA` (Inglese sudafricano) e la libreria client per `en_ZA` non esiste, il modulo adattivo utilizzerà la libreria client per la lingua `en` (Inglese), se esiste. Tuttavia, se non ne esiste alcuna, il modulo adattivo utilizza il dizionario per le `en` impostazioni internazionali.
 
 ## Aggiunta del supporto per la localizzazione per le lingue non supportate {#add-localization-support-for-non-supported-locales}
 
-AEM Forms attualmente supporta la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
+ AEM Forms supporta attualmente la localizzazione di contenuti di moduli adattivi in inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR).
 
 Per aggiungere il supporto per una nuova impostazione internazionale in fase di esecuzione dei moduli adattivi:
 
