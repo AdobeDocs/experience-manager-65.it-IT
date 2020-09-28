@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Confronto e Libreria multimediale.'
+title: Offerte [!DNL Assets] Compared Media Library
 description: Confronta le offerte [!DNL Experience Manager Assets] e la libreria di contenuti multimediali e conosce le differenze.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 2%
@@ -62,7 +62,7 @@ Puoi rimuovere tutti i flussi di lavoro, i componenti, le tassonomie, le opzioni
 
 ### Desidero aggiungere delle immagini a una pagina e ritagliarle e ridimensionarle. Ho bisogno di risorse? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-Per questo caso di utilizzo non è necessario acquistare [!DNL Assets], anche l’utilizzo della libreria multimediale non è richiesto per utilizzare immagini su un sito Web, in quanto il componente per immagini intelligenti consente di caricare le immagini direttamente nella pagina.
+Per questo caso d’uso non è necessario acquistare [!DNL Assets], anche l’utilizzo della libreria multimediale non è richiesto per utilizzare immagini su un sito Web, in quanto il componente per immagini intelligenti consente di caricare le immagini direttamente nella pagina.
 
 ### Elenco dettagliato delle funzioni disponibili in [!DNL Assets] Confronto tra libreria multimediale {#listoffeatures}
 
