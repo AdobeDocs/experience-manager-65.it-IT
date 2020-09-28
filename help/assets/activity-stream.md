@@ -1,11 +1,11 @@
 ---
-title: Flusso di attività delle risorse digitali nella visualizzazione [!DNL Experience Manager]timeline.
+title: Flusso di attività delle risorse digitali nella visualizzazione timeline
 description: Questo articolo descrive come visualizzare i registri attività per le risorse nella timeline.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 27%
 
 ---
