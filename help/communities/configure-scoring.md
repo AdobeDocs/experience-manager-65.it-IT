@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '965'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
 # Punteggio e Badge Essentials {#scoring-and-badges-essentials}
 
-La funzione AEM Communities punteggio e simboli consente di identificare e premiare i membri della community.
+La funzione  punteggio e distintivi AEM Communities consente di identificare e premiare i membri della community.
 
 I dettagli relativi alla configurazione della funzione sono descritti in
 
@@ -83,7 +83,7 @@ Per istruzioni dettagliate, vedere [Creazione di un file](/help/sites-deploying/
 
 Per impostare rapidamente un file slinglog:
 
-1. Accedere al **Adobe Experience Manager Supporto** Registro console Web, ad esempio
+1. Accedere al supporto **dei registri della console Web di** Adobe Experience Manager, ad esempio
 
    * https://localhost:4502/system/console/slinglog
 
@@ -102,7 +102,7 @@ Per impostare rapidamente un file slinglog:
 
 
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![debug-scoring-log](assets/debug-scoring-log.png)
 
 Per visualizzare le voci di registro:
 
@@ -118,17 +118,17 @@ Per visualizzare le voci di registro:
 
    * Esempio, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png)
+![punteggio-log](assets/scoring-log.png)
 
 ## UGC per il punteggio e il contrassegno {#ugc-for-scoring-and-badging}
 
-È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui provider di risorse di archiviazione e archiviazione).
+È possibile visualizzare l&#39;UGC relativo al punteggio e al contrassegno quando l&#39;SRP scelto è JSRP o MSRP, ma non ASRP. (Se non avete familiarità con questi termini, consultate [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md)(Panoramica sui fornitori di risorse di archiviazione e archiviazione).
 
 Le descrizioni per accedere ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile tramite [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP sull’autore**: la sperimentazione nell’ambiente di authoring produce UGC visibile solo dall’ambiente di authoring.
 
-**JSRP al momento della pubblicazione**: analogamente, se si eseguono test nell’ambiente di pubblicazione, sarà necessario accedere a CRXDE Lite con privilegi amministrativi in un’istanza di pubblicazione. Se l’istanza di pubblicazione è in esecuzione in modalità [di](/help/sites-administering/production-ready.md) produzione (modalità di esecuzione nosamplecontent), sarà necessario [abilitare CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP al momento della pubblicazione**: analogamente, se si eseguono test nell’ambiente di pubblicazione, sarà necessario accedere ai CRXDE Lite con privilegi amministrativi in un’istanza di pubblicazione. Se l’istanza di pubblicazione è in esecuzione in modalità [di](/help/sites-administering/production-ready.md) produzione (nosamplecontent runmode), sarà necessario [abilitare CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 La posizione di base di UGC su JSRP è `/content/usergenerated/asi/jcr/`.
 
@@ -139,7 +139,7 @@ Le seguenti API sono disponibili per l&#39;uso:
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-Gli ultimi Javadocs per il pacchetto di funzioni installato sono disponibili per gli sviluppatori dall&#39;archivio di Adobe. Vedere [Utilizzo di Paradiso per le community: Javadocs](/help/communities/maven.md#javadocs).
+I più recenti Javadocs per il pacchetto di funzionalità installato sono disponibili per gli sviluppatori dall&#39;archivio del Adobe . Vedere [Utilizzo di Paradiso per le community: Javadocs](/help/communities/maven.md#javadocs).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
@@ -217,7 +217,7 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 
    Poiché un utente ha guadagnato due simboli di bronzo ed è stato assegnato un badge moderatore, questo è il modo in cui l&#39;utente appare con la sua voce forum.
 
-![chlimage_1-250](assets/chlimage_1-250.png)
+   ![moderatore](assets/moderator.png)
 
 >[!NOTE]
 >
@@ -230,6 +230,7 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
    >
    >
 * Creazione di immagini di contrassegno univoche per diversi siti AEM
+
 >
 
 
@@ -244,7 +245,7 @@ A scopo investigativo, utilizzando JSRP per esempio, la cartella base contenente
 
 Il nodo figlio di `scoring` è il nome della regola di punteggio. Di conseguenza, si consiglia di assegnare a un server nomi univoci per le regole di punteggio.
 
-Per il sito Geometrixx Engage, l’utente e il relativo punteggio si trovano in un percorso conteggiato con il nome della regola di punteggio, l’ID del sito della community ( `engage-ba81p`), un ID univoco e l’ID dell’utente:
+Per il sito di Geometrixx Engage, l&#39;utente e il relativo punteggio si trovano in un percorso conteggiato con il nome della regola di punteggio, l&#39;ID del sito della community ( `engage-ba81p`), un ID univoco e l&#39;ID dell&#39;utente:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
@@ -254,7 +255,7 @@ Per il sito della guida per i componenti della community, l’utente e il relati
 
 Il punteggio è memorizzato nella proprietà `scoreValue_tl` che può contenere solo un valore o fare riferimento indirettamente a un atomicCounter.
 
-![chlimage_1-251](assets/chlimage_1-251.png)
+![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### Accesso UGC {#access-badging-ugc}
 
@@ -270,11 +271,11 @@ Seguito dal percorso del profilo dell&#39;utente, che termina in una cartella de
 
 #### Badge aggiudicato {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png)
+![badging-ugc](assets/access-badging-ugc.png)
 
 #### Badge assegnato {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png)
+![badge assegnato](assets/assigned-badge.png)
 
 ## Informazioni aggiuntive {#additional-information}
 
