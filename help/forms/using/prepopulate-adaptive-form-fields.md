@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 12b2b73b6363c90d784527b260d664e48c746496
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2200'
 ht-degree: 0%
 
 ---
@@ -227,13 +227,13 @@ I tag XML per i dati utente inviati per vari campi vengono generati utilizzando 
 
 ## Configurazione del servizio di precompilazione tramite Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
-Per abilitare il servizio di precompilazione, specificate la Configurazione predefinita del servizio di precompilazione nella configurazione della console Web di AEM. Per configurare il servizio Precompila, effettuate le seguenti operazioni:
+Per abilitare il servizio di precompilazione, specificate la Configurazione predefinita del servizio di precompilazione nella Configurazione AEM console Web. Per configurare il servizio Precompila, effettuate le seguenti operazioni:
 
 >[!NOTE]
 >
 >Precompila configurazione del servizio è applicabile ai moduli adattivi, ai moduli HTML5 e ai set di moduli HTML5.
 
-1. Apri **[!UICONTROL Configurazione]** console Web di Adobe Experience Manager utilizzando l&#39;URL:\
+1. Apri Configurazione **[!UICONTROL console Web]** Adobe Experience Manager utilizzando l&#39;URL:\
    https://&lt;server>:&lt;porta>/sistema/console/configMgr
 1. Cercate e aprite la configurazione **** predefinita del servizio di precompilazione.
 
@@ -246,7 +246,7 @@ Per abilitare il servizio di precompilazione, specificate la Configurazione pred
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di moduli adattivi (XSD, XDP, JSON, FDM e nessun modello di modulo). La precompilazione è consentita solo per i file JSON e XML.
+   >Per impostazione predefinita, la precompilazione è consentita tramite file crx per tutti i tipi di Forms adattivo (XSD, XDP, JSON, FDM e nessun modello di modulo). La precompilazione è consentita solo per i file JSON e XML.
 
 1. Il servizio di precompilazione è ora configurato per il modulo.
 
@@ -334,15 +334,15 @@ precompila pagina component.zip
 
 [Ottieni file](assets/prefill-page-component.zip)esempio prefill.jsp nel componente pagina
 
-## AEM Forms servizio di precompilazione personalizzato {#aem-forms-custom-prefill-service}
+##  servizio di precompilazione personalizzato AEM Forms {#aem-forms-custom-prefill-service}
 
 Potete utilizzare il servizio di precompilazione personalizzato per gli scenari, in cui leggete costantemente i dati da un&#39;origine predefinita. Il servizio di precompilazione legge i dati da origini dati definite e compila i campi del modulo adattivo con il contenuto del file di dati di precompilazione. Consente inoltre di associare in modo permanente i dati precompilati a un modulo adattivo.
 
 ### Creare ed eseguire un servizio di precompilazione {#create-and-run-a-prefill-service}
 
-Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo nei bundle di AEM Forms. Prima di iniziare a creare il bundle:
+Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pacchetto OSGi. Potete creare il bundle OSGi, caricarlo e installarlo  bundle AEM Forms. Prima di iniziare a creare il bundle:
 
-* [Scaricare l’SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
+* [Download dell&#39;SDK del client AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 * Scarica il pacchetto ricorrenti
 
 * Inserire il file di dati (dati di precompilazione) nell&#39;archivio crx. È possibile posizionare il file in qualsiasi posizione nella cartella \contents di crx-repository.
@@ -351,7 +351,7 @@ Il servizio di precompilazione è un servizio OSGi e viene fornito tramite il pa
 
 #### Creare un servizio di precompilazione {#create-a-prefill-service}
 
-Il pacchetto standard (pacchetto del servizio di precompilazione di esempio) contiene un esempio di implementazione del servizio di precompilazione AEM Forms. Aprite il pacchetto ricorrenti in un editor di codice. Ad esempio, apri il progetto ricorrenti in Eclipse per la modifica. Dopo aver aperto il pacchetto standard in un editor di codice, eseguite i seguenti passaggi per creare il servizio.
+Il pacchetto standard (pacchetto del servizio di precompilazione di esempio) contiene un esempio di implementazione  servizio di precompilazione AEM Forms. Aprite il pacchetto ricorrenti in un editor di codice. Ad esempio, apri il progetto ricorrenti in Eclipse per la modifica. Dopo aver aperto il pacchetto standard in un editor di codice, eseguite i seguenti passaggi per creare il servizio.
 
 1. Aprite il file src\main\java\com\adobe\test\Prefill.java per la modifica.
 1. Nel codice, imposta il valore di:
@@ -365,9 +365,26 @@ Il pacchetto standard (pacchetto del servizio di precompilazione di esempio) con
 
 #### Avviare e utilizzare il servizio di precompilazione {#start-and-use-the-prefill-service}
 
-Per avviare il servizio di precompilazione, caricate il file JAR nella console Web AEM Forms e attivate il servizio. Ora, il servizio inizia a comparire nell&#39;editor di moduli adattivi. Per associare un servizio di precompilazione a un modulo adattivo:
+Per avviare il servizio di precompilazione, caricate il file JAR  AEM Forms Web Console e attivate il servizio. Ora, il servizio inizia a comparire nell&#39;editor di moduli adattivi. Per associare un servizio di precompilazione a un modulo adattivo:
 
-1. Aprire il modulo adattivo in Forms Editor e il pannello Proprietà per il contenitore del modulo.
-1. Nella console Proprietà, accedete al contenitore AEM Forms > Base > Precompila servizio.
+1. Aprire il modulo adattivo in Forms Editor e aprire il pannello Proprietà per il contenitore del modulo.
+1. Nella console Proprietà, accedete a  contenitore AEM Forms > Base > Precompila servizio.
 1. Selezionate il servizio di precompilazione predefinito e fate clic su **[!UICONTROL Salva]**. Il servizio è associato al modulo.
 
+## Precompilare i dati nel client {#prefill-at-client}
+
+Quando si precompila un modulo adattivo, il server AEM Forms  unisce i dati a un modulo adattivo e invia il modulo compilato. Per impostazione predefinita, l&#39;azione di unione dei dati viene eseguita sul server.
+
+È possibile configurare il server AEM Forms  per eseguire l&#39;azione di unione dati sul client anziché sul server. Riduce notevolmente il tempo necessario per precompilare ed eseguire il rendering dei moduli adattivi. Per impostazione predefinita, la funzione è disattivata. È possibile attivarla da Gestione configurazione o dalla riga di comando.
+
+* Per attivare o disattivare da Gestione configurazione:
+   1. Aprite AEM Configuration Manager.
+   1. Individuare e aprire la configurazione del canale Web per moduli adattivi e comunicazioni interattive
+   1. Abilitate l’opzione Configuration.af.clientside.datamerge.enabled.name
+* Per abilitare o disabilitare dalla riga di comando:
+   * Per attivare, eseguite il seguente comando cURL:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   * Per disattivare, eseguite il seguente comando cURL:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+   Per sfruttare appieno l&#39;opzione di precompilazione dei dati in corrispondenza del client, aggiorna il servizio di precompilazione per restituire [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
