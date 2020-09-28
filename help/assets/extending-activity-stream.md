@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Assets] Integrate con il flusso di attività.'
+title: ' [!DNL Assets] Integrazione con il flusso di attività'
 description: Descrive le funzionalità [!DNL Experience Manager] di registrazione e come configurarle per registrare eventi specifici.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Questa integrazione potrebbe richiedere CPU e spazio su disco, ad esempio durant
 
 ## Configurare la registrazione [!DNL Assets] degli eventi {#configuring-aem-assets-events-recording}
 
-La console [](/help/sites-deploying/configuring-osgi.md) Web consente di accedere al tuning del registratore eventi delle risorse. Per configurare il Registratore eventi risorse, effettuate le seguenti operazioni:
+La console [](/help/sites-deploying/configuring-osgi.md) Web consente di accedere al tuning del registratore eventi delle risorse. Per configurare il registratore eventi risorse, effettuate le seguenti operazioni:
 
 1. Passare alla console **[!UICONTROL Web]**
 
