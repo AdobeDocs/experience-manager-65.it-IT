@@ -1,11 +1,11 @@
 ---
-title: Elabora risorse per eseguire processi aziendali, eseguire audit, ottenere conformità e mantenere l'integrità di base
+title: Elaborazione delle risorse tramite flussi di lavoro
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '975'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Per l’elaborazione delle risorse, [!DNL Experience Manager] utilizza i flussi 
 
 ## Flussi di lavoro predefiniti disponibili in [!DNL Experience Manager] {#default-workflows}
 
-Per impostazione predefinita, tutte le risorse caricate vengono elaborate utilizzando il flusso di lavoro Aggiorna risorsa  DAM. Il flusso di lavoro viene eseguito per ciascuna risorsa caricata ed esegue attività di base per la gestione delle risorse come generazione di rappresentazioni, remix di metadati, estrazione di pagina, estrazione di contenuti multimediali e transcodifica.
+Per impostazione predefinita, tutte le risorse caricate vengono elaborate utilizzando il flusso di lavoro Aggiorna risorsa  DAM. Il flusso di lavoro viene eseguito per ciascuna risorsa caricata ed esegue attività di base per la gestione delle risorse, come generazione di rappresentazioni, remix di metadati, estrazione di pagina, estrazione di contenuti multimediali e transcodifica.
 
 Per visualizzare i vari modelli di workflow disponibili per impostazione predefinita, vedi **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]** in [!DNL Experience Manager].
 
