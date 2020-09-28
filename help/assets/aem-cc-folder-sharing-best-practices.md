@@ -1,11 +1,11 @@
 ---
-title: '[!DNL  Adobe Experience Manager] [!DNL Adobe Creative Cloud] per condividere le best practice per la condivisione delle cartelle.'
+title: Procedure [!DNL Adobe Creative Cloud] per la condivisione delle cartelle
 description: Configurate [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] per scambiare cartelle con utenti Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La funzione [!DNL Experience Manager] per la condivisione delle [!DNL Creative Cloud] cartelle è obsoleta.  Adobe consiglia vivamente di utilizzare funzionalità più recenti come [collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe o l&#39;app [desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Scopri di più nelle best practice relative all&#39;integrazione con [Experience Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La funzione [!DNL Experience Manager] per la condivisione delle [!DNL Creative Cloud] cartelle è obsoleta.  Adobe consiglia vivamente di utilizzare funzionalità più recenti, come [collegamento](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) risorse Adobe o l&#39;app [desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Scopri di più nelle best practice relative all&#39;integrazione con [Experience Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] può essere configurato per consentire [!DNL Assets] agli utenti di condividere cartelle con gli utenti di [!DNL Adobe Creative Cloud] app, in modo che siano disponibili come cartelle condivise nel servizio [!DNL Adobe Creative Cloud] Risorse. La funzione può essere utilizzata per scambiare file tra team creativi e [!DNL Assets] utenti, soprattutto quando gli utenti creativi non hanno accesso alla [!DNL Assets] distribuzione (non sono sulla rete aziendale).
 
@@ -39,9 +39,9 @@ Il diagramma seguente fornisce una panoramica dell&#39;integrazione.
 L&#39;integrazione include i seguenti elementi:
 
 * **[!DNL Experience Manager Assets]** implementato nella rete aziendale (servizi gestiti o in sede): La condivisione delle cartelle viene avviata qui.
-* **[!DNL Adobe Marketing Cloud Assets]servizio **di base: funge da intermediario tra i servizi[!DNL Experience Manager]di[!DNL Creative Cloud]storage e di storage. Un amministratore di un&#39;organizzazione che utilizza l&#39;integrazione deve stabilire una relazione di trust tra l&#39;organizzazione del Marketing Cloud e la[!DNL Assets]distribuzione. Inoltre,[definiscono un elenco di collaboratori](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)di Creative Cloud approvati, che[!DNL Assets]gli utenti possono condividere anche le cartelle per ulteriore protezione.
+* **[!DNL Adobe Marketing Cloud Assets]servizio** di base: funge da intermediario tra i servizi [!DNL Experience Manager] di [!DNL Creative Cloud] storage e di storage. Un amministratore di un&#39;organizzazione che utilizza l&#39;integrazione deve stabilire una relazione di trust tra l&#39;organizzazione del Marketing Cloud e la [!DNL Assets] distribuzione. Inoltre, [definiscono un elenco di collaboratori](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)di Creative Cloud approvati, che [!DNL Assets] gli utenti possono condividere anche le cartelle per ulteriore protezione.
 
-* **[!DNL Creative Cloud]Servizi **Web risorse (interfaccia utente Web archivio e[!DNL Creative Cloud]file): Questo è il punto in cui gli utenti dell&#39;app di Creative Cloud specifici, con cui è stata condivisa una[!DNL Assets]cartella, potrebbero accettare l&#39;invito e visualizzare la cartella nell&#39;archivio dell&#39;account di Creative Cloud.
+* **[!DNL Creative Cloud]Servizi** Web risorse (interfaccia utente Web archivio e [!DNL Creative Cloud] file): Questo è il punto in cui gli utenti dell&#39;app di Creative Cloud specifici, con cui è stata condivisa una [!DNL Assets] cartella, potrebbero accettare l&#39;invito e visualizzare la cartella nell&#39;archivio dell&#39;account di Creative Cloud.
 * **Creative Cloud app** desktop: (Facoltativo) Consente l’accesso diretto alla cartella o ai file condivisi dal desktop dell’utente creativo tramite sincronizzazione con l’archiviazione [!DNL Creative Cloud] Risorse.
 
 ## Caratteristiche e limitazioni {#characteristics-and-limitations}
@@ -50,9 +50,9 @@ L&#39;integrazione include i seguenti elementi:
 * **Gestione versioni:**
 
    * [!DNL Experience Manager] crea versioni di una risorsa sugli aggiornamenti solo se il file è stato creato [!DNL Experience Manager] e vi viene aggiornato.
-   * [!DNL Creative Cloud] Assets offre una funzione [di](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) controllo delle versioni specifica per gli aggiornamenti di Work in Progress (in pratica, memorizza gli aggiornamenti fino a 10 giorni)
+   * [!DNL Creative Cloud] Assets offre una funzione [di](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) controllo delle versioni specifica per gli aggiornamenti di Work In Progress (in pratica, memorizza gli aggiornamenti fino a 10 giorni)
 
-* **Limiti di spazio:** Le dimensioni e i volumi dei file scambiati sono limitati dalla quota [di risorse per le](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud specifiche per gli utenti creativi (dipende dal livello di iscrizione) e da un limite di 5 GB per la dimensione massima dei file. Lo spazio è inoltre limitato dalla quota di risorse di cui dispone l’organizzazione nel servizio di base  risorse di Adobe Marketing Cloud.
+* **Limiti di spazio:** Le dimensioni e i volumi dei file scambiati sono limitati dalla quota [di risorse per le](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud specifiche per gli utenti creativi (dipende dal livello di iscrizione) e da un limite di 5 GB per la dimensione massima dei file. Lo spazio è inoltre limitato dalla quota di risorse di cui dispone l’organizzazione nel servizio di base di Adobe Marketing Cloud Assets.
 
 * **Requisiti di spazio:** Anche i file nelle cartelle condivise devono essere memorizzati fisicamente in [!DNL Experience Manager] e poi nell&#39; [!DNL Creative Cloud] account, con una copia memorizzata nella cache nel servizio [!DNL Marketing Cloud Assets] di base.
 * **Rete e larghezza di banda:** I file in cartelle condivise e tutti gli aggiornamenti devono essere trasportati attraverso la rete tra i sistemi. Devi accertarti che siano condivisi solo i file e gli aggiornamenti rilevanti.
