@@ -1,9 +1,9 @@
 ---
-title: Formati di file supportati per l'elaborazione in [!DNL Adobe Experience Manager Assets].
+title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati [!DNL Assets] and [!DNL Dynamic Media] da e funzionalità supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 10%
@@ -76,7 +76,7 @@ Oltre alle informazioni di cui sopra, considerate quanto segue:
 
 See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
-| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione Dynamic Media |
+| Formato | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo di accesso | Anteprima miniature | Anteprima 3D | Distribuzione di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -87,9 +87,9 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 ## Formati immagine raster non supportati in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-Nell&#39;elenco seguente sono descritti i sottotipi di formati di file immagine raster *non* supportati in Dynamic Media.
+Nell&#39;elenco seguente sono descritti i sottotipi di formati di file immagine raster *non* supportati in Contenuti multimediali dinamici.
 
-Consultate anche [Rilevamento di formati di file non supportati per Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Consultate anche [Rilevamento di formati di file non supportati per gli elementi multimediali](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dinamici.
 
 * File PNG con dimensioni blocco IDAT superiori a 100 MB.
 * File PSB.
@@ -173,11 +173,11 @@ I formati dei documenti supportati per le funzioni di gestione delle risorse son
 
 Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 
-* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file PDF, consultate [formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare gli elementi multimediali dinamici per generare rappresentazioni dinamiche per i file PDF, consultate [formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Per utilizzare Dynamic Media per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, consultate [formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Per utilizzare gli elementi multimediali dinamici per visualizzare in anteprima e generare rappresentazioni dinamiche per i file AI, consultate [formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Per utilizzare Dynamic Media per generare rappresentazioni dinamiche per i file INDD, consultate [formato](../assets/managing-image-presets.md#indesign-indd-file-format)di file InDesign (INDD).
+* Per utilizzare gli elementi multimediali dinamici per generare rappresentazioni dinamiche per i file INDD, consultate [formato](../assets/managing-image-presets.md#indesign-indd-file-format)di file InDesign (INDD).
 
 ## Formati multimediali supportati {#supported-multimedia-formats}
 
@@ -202,7 +202,7 @@ Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Formati video di input supportati in Dynamic Media per la transcodifica {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Formati video di input supportati in Contenuti multimediali dinamici per la transcodifica {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Estensione dei file video | Contenitore | Codec video consigliati | Codec video non supportati |
 |---|---|---|---|
@@ -227,7 +227,7 @@ Oltre alla funzionalità di cui sopra, tenete presente quanto segue:
 
 I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM comuni sono descritti nella tabella seguente.
 
-| Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Distribuzione Dynamic Media |
+| Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -237,9 +237,9 @@ I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM
 
 ## Altri formati supportati {#other-supported-formats}
 
-L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di file è descritta nella tabella seguente. Per tutti i file è supportata la consueta funzionalità DAM come archiviazione, controllo delle versioni, ACL, flusso di lavoro, pubblicazione e gestione dei metadati, ad eccezione di Dynamic Media Delivery.
+L&#39;applicabilità dei flussi di lavoro DAM comuni ad alcuni altri formati di file è descritta nella tabella seguente. Per tutti i file è supportata la consueta funzionalità DAM come archiviazione, controllo delle versioni, ACL, flusso di lavoro, pubblicazione e gestione dei metadati, ad eccezione di Distribuzione di contenuti multimediali dinamici.
 
-| Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Distribuzione Dynamic Media |
+| Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
