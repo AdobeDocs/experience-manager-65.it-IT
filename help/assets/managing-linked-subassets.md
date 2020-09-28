@@ -1,11 +1,11 @@
 ---
-title: Gestire le risorse composte con riferimenti e risorse di più pagine in [!DNL Adobe Experience Manager].
+title: Gestire le risorse composte con riferimenti e più pagine
 description: Scopri come creare riferimenti a risorse digitali dall’interno [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -135,8 +135,8 @@ Le seguenti opzioni sono disponibili nella barra degli strumenti, nella barra a 
 
 >[!MORELIKETHIS]
 >
->* [Usa app desktop  Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Configurare le azioni desktop in  Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Usa app desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Configurare le azioni desktop in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Creare Smart Object collegati in  Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Inserire grafica in  Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
