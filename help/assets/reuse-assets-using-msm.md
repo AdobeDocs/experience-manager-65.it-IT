@@ -1,12 +1,12 @@
 ---
-title: Riutilizzate le risorse utilizzando MSM per [!DNL Adobe Experience Manager Assets].
+title: Riutilizzare le risorse con MSM
 description: Utilizzate le risorse tra più pagine/cartelle derivate e collegate alle risorse principali. Le risorse restano sincronizzate con una copia principale e, con pochi clic, ricevono gli aggiornamenti dalle risorse principali.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 10%
 
 ---
@@ -22,7 +22,7 @@ La funzionalità Multi Site Manager (MSM) [!DNL Adobe Experience Manager] consen
 
 ## Prerequisiti {#configprereq}
 
-Per utilizzare MSM per [!DNL Assets], installate almeno Service Pack 1. Per ulteriori informazioni, consulta [le note](/help/release-notes/sp-release-notes.md)sulla versione.
+Per utilizzare MSM per [!DNL Assets], installare almeno Service Pack 1. Per ulteriori informazioni, consulta [le note](/help/release-notes/sp-release-notes.md)sulla versione.
 
 ## Comprendere i vantaggi e i concetti {#concepts}
 
@@ -64,7 +64,7 @@ Per creare una Live Copy da una o più risorse o cartelle sorgente, effettuate l
 * Metodo 1: Selezionate le risorse sorgente e fate clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]** dalla barra degli strumenti nella parte superiore.
 * Metodo 2: Nell&#39;interfaccia [!DNL Experience Manager] utente, fate clic su **[!UICONTROL Crea]** > **[!UICONTROL Live Copy]** nell&#39;angolo superiore destro dell&#39;interfaccia.
 
-Potete creare copie live di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
+Potete creare copie dal vivo di una risorsa o di una cartella una per volta. Potete creare delle copie dal vivo derivate da una risorsa o da una cartella che è una Live Copy stessa. I frammenti di contenuto (CF) non sono supportati per il caso di utilizzo. Quando tentano di creare le loro copie dal vivo, i CF vengono copiati così come non esiste alcuna relazione. Gli CF copiati sono un&#39;istantanea nel tempo e non si aggiornano quando gli CF originali vengono aggiornati.
 
 Per creare copie live con il primo metodo, attenetevi alla seguente procedura:
 
