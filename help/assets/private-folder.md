@@ -3,9 +3,9 @@ title: Cartelle private per condividere le risorse
 description: Scoprite come creare una cartella privata in [!DNL Adobe Experience Manager Assets] e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -82,15 +82,4 @@ Per eliminare una cartella, selezionatela e selezionate l’opzione [!UICONTROL 
 >[!NOTE]
 >
 >Se eliminate una cartella utilizzando il metodo indicato sopra dall’interfaccia utente, vengono eliminati anche i gruppi di utenti associati.
-Tuttavia, i gruppi di utenti ridondanti, inutilizzati e generati automaticamente possono essere ripuliti dall&#39;archivio utilizzando [JMX](#group-clean-up-jmx).
-
-### Utilizzare JMX per ripulire i gruppi di utenti inutilizzati {#group-clean-up-jmx}
-
-Per ripulire l’archivio dei gruppi di utenti non utilizzati:
-
-1. Aprite JMX per eliminare i gruppi ridondanti per le risorse nell’istanza di [!DNL Experience Manager] creazione da `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-Esempio, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-
-1. Richiama il `clean` metodo da questo JMX.
-
-Potete vedere che tutti i gruppi di utenti ridondanti o i gruppi generati automaticamente (creati al momento della creazione di una cartella con lo stesso nome di un gruppo eliminato in precedenza) vengono rimossi dal percorso `/home/groups/mac/default/<user_name>/<folder_name>`.
+Tuttavia, i gruppi di utenti ridondanti, non utilizzati e generati automaticamente possono essere eliminati dall&#39;archivio utilizzando `clean` il metodo JMX nell&#39;istanza di creazione (http://[server]:[porta]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+ridondante+gruppi+for+Assets).
