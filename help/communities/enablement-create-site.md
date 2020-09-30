@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1728'
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ Verificare che la maggior parte delle caselle di controllo siano deselezionate p
 
 * NON consentire ai visitatori del sito di registrarsi autonomamente.
 * NON consentire ai visitatori anonimi del sito di visualizzare il sito.
-* Facoltativo, che i membri della community possano o meno consentire la messaggistica.
+* Facoltativo, sia che si desideri consentire o meno la messaggistica tra i membri della community.
 * NON consentire l&#39;accesso con Facebook.
 * NON consentire l&#39;accesso con Twitter.
 
@@ -98,11 +98,11 @@ Verificare che la maggior parte delle caselle di controllo siano deselezionate p
 
 #### TAGGING {#tagging}
 
-I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM precedentemente definiti tramite la console [](/help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](/help/communities/enablement-setup.md#create-tutorial-tags)esercitazioni).
+I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM definiti in precedenza tramite la console [](/help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](/help/communities/enablement-setup.md#create-tutorial-tags)esercitazioni).
 
 Inoltre, selezionando Tag namespace per il sito della community, la selezione presentata nella definizione di cataloghi e risorse di abilitazione viene limitata. Per informazioni importanti, consulta [Assegnazione di tag alle risorse](/help/communities/tag-resources.md) di abilitazione.
 
-La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio,
+La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio,
 
 * Tipo `tut`
 * Seleziona `Tutorial`
@@ -113,9 +113,9 @@ La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esem
 
 [I ruoli](/help/communities/users.md) dei membri della community vengono assegnati tramite le impostazioni nella sezione Ruoli.
 
-Per consentire a un membro della comunità (o a un gruppo di membri) di utilizzare il sito come manager della comunità, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
+Per consentire a un membro della community (o a un gruppo di membri) di utilizzare il sito come manager della community, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
 
-Ad esempio,
+Esempio,
 
 * Tipo `q`
 * Seleziona [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
@@ -135,7 +135,7 @@ Accettate le impostazioni globali predefinite per [moderare](/help/communities/s
 
 #### ANALYTICS {#analytics}
 
-Dall&#39;elenco a discesa, selezionate il framework  del servizio cloud Analytics configurato per questo sito community.
+Dall&#39;elenco a discesa, seleziona il framework del servizio cloud di Analytics configurato per questo sito community.
 
 La selezione vista nello screenshot `Communities`, è l&#39;esempio di framework tratto dalla documentazione di [configurazione.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
@@ -160,7 +160,7 @@ Per una comunità di abilitazione, è necessario identificare uno o più manager
    * Tipo `s`
    * Seleziona `Sirius Nilson`
 
-* **ID** organizzazione Marketing Cloud (facoltativo) L&#39;ID per un account Adobe  Analytics necessario per l&#39;inclusione di [Video Heartbeat  Analytics](/help/communities/analytics.md#video-heartbeat-analytics) nella generazione dei rapporti di abilitazione.
+* **ID** organizzazione Marketing Cloud (facoltativo) ID per un account Adobe Analytics , necessario per l’inclusione di [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) nella generazione dei rapporti di abilitazione.
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -331,7 +331,7 @@ Il valore &#39;**$**&#39; alla fine della stringa dell&#39;espressione regolare 
 
 ## Modifica del sito community {#modifying-the-community-site}
 
-Dopo la creazione iniziale del sito, gli autori possono utilizzare l’icona [](/help/communities/sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring di AEM.
+Dopo la creazione iniziale del sito, gli autori possono utilizzare l&#39;icona [](/help/communities/sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring AEM.
 
 Inoltre, gli amministratori possono utilizzare l’icona [](/help/communities/sites-console.md#modifying-site-properties) Modifica sito per modificare le proprietà del sito, ad esempio il titolo.
 
@@ -350,7 +350,7 @@ In caso contrario, è possibile aggiungere facilmente la funzione catalogo. Ciò
 
 Se la struttura del sito contiene già la funzione catalogo, è possibile modificarne il Titolo.
 
-Per modificare la struttura del sito, accedete alla console **Community, Siti** , aprite la `enable` cartella e selezionate l&#39;icona **Modifica sito** per accedere alle proprietà di `Enablement Tutorial`.
+Per modificare la struttura del sito, accedete a **[!UICONTROL Community]** > console **[!UICONTROL Siti]** , aprite la `enable` cartella e selezionate l&#39;icona **Modifica sito** per accedere alle proprietà di `Enablement Tutorial`.
 
 Selezionate il pannello STRUTTURA per aggiungere un catalogo o modificare un catalogo esistente:
 
