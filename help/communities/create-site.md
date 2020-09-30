@@ -1,8 +1,8 @@
 ---
 title: Creazione di un nuovo sito community
 seo-title: Creazione di un nuovo sito community
-description: Come creare un nuovo sito AEM Communities
-seo-description: Come creare un nuovo sito AEM Communities
+description: 'Come creare un nuovo sito AEM Communities '
+seo-description: 'Come creare un nuovo sito AEM Communities '
 uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
 source-wordcount: '1661'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 3%
 
 ## Creazione di un sito community {#create-a-community-site}
 
-Utilizzate l&#39;istanza di creazione per creare un sito community. Nell&#39;istanza AEM Author:
+Utilizzate l&#39;istanza di creazione per creare un sito community. Nell&#39;istanza di AEM Author:
 
 1. Effettuate l&#39;accesso con privilegi di amministratore.
-1. Dalla navigazione globale, andate a **Navigazione, Community, Siti.**
+1. Dalla navigazione globale, andate a **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
 La console Siti community offre una procedura guidata che guida l’utente attraverso i passaggi necessari per creare un sito community. È possibile passare al `Next` passaggio o `Back` al passaggio precedente prima di impegnare il sito nel passaggio finale.
 
@@ -71,7 +71,7 @@ Selezionate lo stile da applicare al modello. Quando viene selezionato, al tema 
 
 (Facoltativo) Caricate un&#39;immagine banner da visualizzare nelle pagine del sito. Il banner è fissato al bordo sinistro del browser, tra l&#39;intestazione del sito community e i collegamenti di navigazione. L’altezza del banner viene ritagliata a 120 pixel. Il banner non può essere ridimensionato in modo da adattarlo alla larghezza del browser e all&#39;altezza di 120 pixel.
 
-![chlimage_1-284](assets/chlimage_1-284.png)
+![marchio comunitario](assets/community-site-branding.png)
 
 ![upload-image-site](assets/upload-image-site.png)
 
@@ -81,7 +81,7 @@ Seleziona **Avanti**.
 
 Nella fase Settings (Impostazioni), prima di selezionare `Next`, tenete presente che sono presenti sette sezioni che forniscono l&#39;accesso alle configurazioni che includono gestione utente, tag, moderazione, gestione dei gruppi, analisi, traduzione e abilitazione.
 
-Per provare a utilizzare le funzioni di abilitazione, visita l’esercitazione [Guida introduttiva agli AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md) .
+Per provare a utilizzare le funzioni di abilitazione, [consulta l’esercitazione Guida introduttiva  AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md) .
 
 #### User Management {#user-management}
 
@@ -102,22 +102,22 @@ Seleziona tutte le caselle di controllo per Gestione [utente](/help/communities/
 
 #### TAGGING {#tagging}
 
-I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM precedentemente definiti tramite la console [](/help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](/help/communities/setup.md#create-tutorial-tags)esercitazioni).
+I tag che possono essere applicati al contenuto della community sono controllati selezionando gli spazi di nomi AEM definiti in precedenza tramite la console [](/help/sites-administering/tags.md#tagging-console) Tagging (ad esempio lo spazio dei nomi [delle](/help/communities/setup.md#create-tutorial-tags)esercitazioni).
 
-La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Ad esempio,
+La ricerca di spazi dei nomi è semplice tramite la ricerca tipo-avanti. Esempio,
 
 * Tipo `tut`
 * Seleziona `Tutorial`
 
-![chlimage_1-286](assets/chlimage_1-286.png)
+![assegnazione](assets/tagging.png)
 
 #### ROLES {#roles}
 
 [I ruoli](/help/communities/users.md) dei membri della community vengono assegnati tramite le impostazioni nella sezione Ruoli.
 
-Per consentire a un membro della comunità (o a un gruppo di membri) di utilizzare il sito come manager della comunità, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
+Per consentire a un membro della community (o a un gruppo di membri) di utilizzare il sito come manager della community, utilizzate la ricerca tipo avanti e selezionate il nome del membro o del gruppo dalle opzioni disponibili nel menu a discesa.
 
-Ad esempio,
+Esempio,
 
 * Tipo `q`
 * Seleziona [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
@@ -133,15 +133,15 @@ Ad esempio,
 
 Accettate le impostazioni globali predefinite per la [moderazione](/help/communities/sites-console.md#moderation) del contenuto generato dall’utente (UGC).
 
-![chlimage_1-287](assets/chlimage_1-287.png)
+![moderazione](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
-Se Adobe  Analytics è dotato di licenza e  è stato configurato un servizio cloud e un framework Analytics, è possibile abilitare  Analytics e selezionare il framework.
+Se  Adobe Analytics è concesso in licenza e è stato configurato un servizio e un framework cloud di Analytics, è possibile abilitare Analytics e selezionare il framework.
 
-Consultate [Configurazione Analytics per le funzioni](/help/communities/analytics.md)Community.
+Consultate Configurazione [di Analytics per le funzioni](/help/communities/analytics.md)Community.
 
-![chlimage_1-288](assets/chlimage_1-288.png)
+![analisi](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -154,23 +154,23 @@ Le impostazioni [di](/help/communities/sites-console.md#translation) traduzione 
 * Seleziona **Traduci tutta la pagina**
 * Opzione Mantieni persistenza predefinita
 
-![chlimage_1-289](assets/chlimage_1-289.png)
+![impostazioni di traduzione](assets/translation-settings.png)
 
 #### ENABLEMENT {#enablement}
 
 Lasciate vuoto quando create una community di coinvolgimento.
 
-Per un’esercitazione simile per creare rapidamente una community di [abilitazione](/help/communities/overview.md#enablement-community), consultate [Guida introduttiva ai AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md).
+Per un’esercitazione simile per creare rapidamente una community di [abilitazione](/help/communities/overview.md#enablement-community), consulta [Guida introduttiva a  AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md).
 
 Seleziona **Avanti**.
 
-![chlimage_1-290](assets/chlimage_1-290.png)
+![abilitazione](assets/enablement.png)
 
 ### Passaggio 4: Crea sito community {#step-create-communities-site}
 
 Seleziona **Crea.**
 
-![chlimage_1-291](assets/chlimage_1-291.png)
+![create-site](assets/create-site2.png)
 
 Al termine del processo, la cartella del nuovo sito viene visualizzata nella console Community - Siti.
 
@@ -236,11 +236,9 @@ UGC non è incluso nel pacchetto del sito.
 
 Dopo aver verificato che il server di pubblicazione sia in esecuzione, selezionate l&#39;icona del mondo per pubblicare il sito della community.
 
-![chlimage_1-292](assets/chlimage_1-292.png)
+![sito di pubblicazione](assets/publish-site.png)
 
-Quando il sito della community è stato pubblicato correttamente, viene visualizzato un breve messaggio:
-
-![chlimage_1-293](assets/chlimage_1-293.png)
+Quando il sito della community è stato pubblicato correttamente, viene visualizzato brevemente il messaggio &quot;Sito pubblicato&quot;.
 
 ### Nuovi gruppi di utenti della community {#new-community-user-groups}
 
@@ -261,11 +259,11 @@ Ricorda che [Aaron McDonald](/help/communities/tutorials.md#demo-users) è membr
 * Moderatori di coinvolgimento community
 * Partecipazione community (indirettamente come membro del gruppo Moderatori)
 
-![chlimage_1-294](assets/chlimage_1-294.png)
+![user-group](assets/user-group.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![coinvolgimento](assets/engage.png)
 
 ## Configura per errore di autenticazione {#configure-for-authentication-error}
 
@@ -321,13 +319,13 @@ Per iniziare:
 >Per disattivare, è sufficiente preimpostare il valore della `sling:match` proprietà con &#39;x&#39; - `xlocalhost.4503/$` - e **Salva tutto**.
 
 
-![chlimage_1-297](assets/chlimage_1-297.png)
+![optional-step](assets/optional-steps.png)
 
 #### Risoluzione dei problemi: Errore durante il salvataggio della mappa {#troubleshooting-error-saving-map}
 
 Se non è possibile salvare le modifiche, assicurarsi che il nome del nodo sia `localhost.4503`, con un separatore &#39;punto&#39; e non `localhost:4503` con un separatore &#39;due punti&#39;, in quanto non `localhost`è un prefisso valido per lo spazio nomi.
 
-![chlimage_1-298](assets/chlimage_1-298.png)
+![error-message](assets/error-message.png)
 
 #### Risoluzione dei problemi: Impossibile eseguire il reindirizzamento {#troubleshooting-fail-to-redirect}
 
@@ -335,7 +333,7 @@ Il valore &#39;**$**&#39; alla fine della `sling:match`stringa dell&#39;espressi
 
 ### Modifica del sito {#modify-the-site}
 
-Dopo la creazione iniziale del sito, gli autori possono utilizzare l’icona [](/help/communities/sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring di AEM.
+Dopo la creazione iniziale del sito, gli autori possono utilizzare l&#39;icona [](/help/communities/sites-console.md#authoring-site-content) Apri sito per eseguire le attività standard di authoring AEM.
 
 Inoltre, gli amministratori possono utilizzare l’icona [](/help/communities/sites-console.md#modifying-site-properties) Modifica sito per modificare le proprietà del sito, ad esempio il titolo.
 
