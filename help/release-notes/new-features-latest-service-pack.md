@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
+source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2518'
 ht-degree: 2%
 
 ---
@@ -200,6 +200,12 @@ Esempio, `On Time (MM-DD-YYYY HH:mm)`. Qui MM è mese in formato a due cifre, AA
 
 * Gli assistenti vocali annunciano ora il `X` simbolo per rimuovere i tag selezionati insieme al numero di tag selezionati.
 
+#### Colonna ordinabile per la data di creazione delle risorse nella vista a elenco (6.5.3.0) {#sortable-date-created-column}
+
+Nella visualizzazione a elenco di DAM e nei risultati della ricerca di risorse nella visualizzazione a elenco viene aggiunta una nuova colonna ordinabile per la data di creazione delle risorse.
+
+![Colonna ordinabile per la data di creazione](assets/asset-created-date.png)
+
 #### Ricerca visiva per [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
 [!DNL Assets]Aggiunta della funzionalità di ricerca di immagini visivamente simili per gli utenti di  Experience Manager visualizza le immagini con tag avanzati dall&#39;archivio DAM, simili a quelle selezionate dall&#39;utente. See [Visual search](../assets/search-assets.md).
@@ -272,7 +278,7 @@ La nuova opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
