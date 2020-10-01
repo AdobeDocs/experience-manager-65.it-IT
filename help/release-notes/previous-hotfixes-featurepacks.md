@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack
 description: Note sulla versione per [!DNL Adobe Experience Manager] i Service Pack 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 5db4dd7ccc7d722f0503b22fdd5ff9e5508be4ea
+source-git-commit: 359eb60c0ba3845d7aa0ca58488aa945a9f45aea
 workflow-type: tm+mt
-source-wordcount: '11482'
+source-wordcount: '11484'
 ht-degree: 26%
 
 ---
@@ -307,7 +307,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 >[!NOTE]
 >
-> Service Pack di Experience Manager non include correzioni per [!DNL Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per  AEM Forms su JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+> Service Pack di Experience Manager non include correzioni per [!DNL Forms]. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per  AEM Forms su JEE. Per ulteriori informazioni, consultate [Installare  Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare  Experience Manager Forms in JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Gestione corrispondenza: L&#39;ordine delle risorse in un&#39;area di destinazione viene visualizzato dopo l&#39;invio di una lettera (NPR-33359, NPR-33153).
 * Forms adattivo: Quando un utente modifica un modulo adattivo, l&#39;opzione [!UICONTROL Avvia flusso di lavoro] disponibile nel menu Informazioni  pagina non funziona (NPR-33004).
@@ -970,7 +970,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack non include correzioni per [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms JEE installer](#forms-jee-installer).
+>[!DNL Experience Manager] Service Pack non include correzioni per [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. Per ulteriori informazioni, consultate [Installare  Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) e [Installare  Experience Manager Forms in JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
