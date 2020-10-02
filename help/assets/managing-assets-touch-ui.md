@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cb531bfc009fc766bab20d28cf332856b1e95c7b
 workflow-type: tm+mt
-source-wordcount: '9409'
+source-wordcount: '9408'
 ht-degree: 4%
 
 ---
@@ -92,7 +92,7 @@ Per configurare l’attività di pulizia per i processi di caricamento dei blocc
 
 >[!CAUTION]
 >
->Il valore predefinito quando viene attivato il caricamento del blocco è 500 MB e la dimensione del blocco è 50 MB. Se modificate la configurazione [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) per impostare `timeout configuration` un valore inferiore al tempo necessario per il caricamento di una risorsa, potete eseguire una situazione di timeout sessione mentre è in corso il caricamento della risorsa. Pertanto, è necessario modificare l’ `chunkUploadMinFileSize` e `chunksize`, in modo che ogni richiesta di blocco aggiorni la sessione.
+>Il valore predefinito quando viene attivato il caricamento del blocco è 500 MB e la dimensione del blocco è 50 MB. Se modificate [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) in modo da impostare `timeout configuration` un valore inferiore al tempo necessario per il caricamento di una risorsa, potete incontrare una situazione di timeout sessione mentre è in corso il caricamento della risorsa. Pertanto, è necessario modificare l’ `chunkUploadMinFileSize` e `chunksize`, in modo che ogni richiesta di blocco aggiorni la sessione.
 >
 >In considerazione del timeout della scadenza delle credenziali, della latenza, della larghezza di banda e dei caricamenti simultanei previsti, il valore più alto che consente di garantire che vengano selezionati i seguenti elementi:
 >
