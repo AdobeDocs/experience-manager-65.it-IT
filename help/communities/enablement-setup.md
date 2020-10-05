@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 2%
 
 A scopo di sviluppo e dimostrazione, sarà necessario eseguire un&#39;istanza di creazione e pubblicazione.
 
-Seguite le istruzioni di base della [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) di AEM per
+Seguite le istruzioni di base AEM [Guida introduttiva](../../help/sites-deploying/deploy.md#getting-started) per ottenere
 
 * Ambiente di authoring su [localhost:4502](Http://localhost:4502/)
 * Ambiente di pubblicazione su [localhost:4503](Http://localhost:4503/)
 
-Per AEM Communities,
+Per  AEM Communities,
 
 * L’ambiente di authoring è destinato a:
 
@@ -55,7 +55,7 @@ Questa esercitazione crea un sito community di [abilitazione](overview.md#enable
 
 * [Ultime versioni](deploy-communities.md#latest-releases)
 
-Per un&#39;esercitazione che crea un sito [per la community di](overview.md#engagement-community)coinvolgimento, visita la [Guida introduttiva agli AEM Communities](getting-started.md).
+Per un&#39;esercitazione che crea un sito [per la community di](overview.md#engagement-community)coinvolgimento, visita la [Guida introduttiva ad  AEM Communities](getting-started.md).
 
 ## Configurare le funzioni di abilitazione {#configure-enablement-features}
 
@@ -63,7 +63,7 @@ Per seguire questa esercitazione, è necessario installare e [configurare corret
 
 ## Configura Analytics {#configure-analytics}
 
-Quando [Adobe  Analytics è configurato per il sito](analytics.md)community, sono disponibili ulteriori informazioni nei [rapporti](reports.md) generati sulle risorse di abilitazione e sui percorsi di apprendimento assegnati ai membri della community (utenti in formazione).
+Quando [Adobe Analytics è configurato per il sito](analytics.md)community, sono disponibili ulteriori informazioni nei [rapporti](reports.md) generati sulle risorse di abilitazione e sui percorsi di apprendimento assegnati ai membri della community (utenti in formazione).
 
 ## Configura e-mail per notifiche {#configure-email-for-notifications}
 
@@ -94,14 +94,14 @@ Utilizzate la console [](../../help/sites-administering/tags.md#tagging-console)
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-417](assets/chlimage_1-417.png)
+![tutorial-tags](assets/tutorial-tags.png)
 
 Seguite quindi le istruzioni per:
 
 1. [Impostare le autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Pubblicare i tag](../../help/sites-administering/tags.md#publishing-tags)
 
-Esempio di pacchetto di tag creati per le esercitazioni introduttive sugli AEM Communities
+Esempio di pacchetto di tag creati per i Tutorials Guida introduttiva  AEM Communities
 
 [Ottieni file](assets/communities_tutorialtags-10.zip)
 
@@ -139,7 +139,7 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 
 [Crea un secondo membro](members.md#create-new-member) che verrà aggiunto al gruppo Community Ski Class.
 
-* **ID**: sidney
+* **ID**: sidro
 * **E-mail**: sidney.croft@mailinator.com
 * **Password**: password
 * **Conferma password**: password
@@ -167,13 +167,13 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 * **Aggiungi membri al gruppo** &#39;aggiungi&#39;:
 
    * riley
-   * sidney
+   * sidro
 
 * Seleziona **[!UICONTROL Salva]**
 
 ### Proprietà della classe Ski Community {#community-ski-class-properties}
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![ski-class-properties](assets/ski-class-properties.png)
 
 >[!NOTE]
 >
@@ -219,5 +219,5 @@ Scorri verso il basso fino a `Add User to Groups`:
 
 * Seleziona **[!UICONTROL Salva]**
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![admin-role](assets/admin-role.png)
 
