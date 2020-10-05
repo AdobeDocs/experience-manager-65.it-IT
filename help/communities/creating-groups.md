@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: 6337a57ea12f1e026f6c754a083307ce018a1c13
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -33,17 +33,17 @@ Uno o più modelli di gruppo vengono selezionati per la funzione dei gruppi quan
 
 La capacità di creare un nuovo gruppo di community si basa sull&#39;esistenza di un sito community che include la funzione dei gruppi, come quella creata con il Modello [del sito di](/help/communities/sites.md)riferimento.
 
-Gli esempi seguenti utilizzano il sito della community creato dalla `Reference Site Template` sezione come descritto nell’esercitazione [Guida introduttiva agli AEM Communities](/help/communities/getting-started.md) .
+Gli esempi seguenti utilizzano il sito della community creato a partire da `Reference Site Template` come descritto in [Guida introduttiva  esercitazione AEM Communities](/help/communities/getting-started.md) .
 
 Pagina che viene caricata al momento della pubblicazione quando è selezionata la voce di menu **Gruppi** :
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![nuovo gruppo](assets/new-group.png)
 
 Quando selezionate l’icona **Nuovo gruppo** , si apre una finestra di dialogo di modifica.
 
 Nella scheda **Impostazioni** , sono disponibili le funzioni di base del gruppo:
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![group-settings](assets/group-settings.png)
 
 * **Nome gruppo**
 
@@ -71,21 +71,21 @@ Nella scheda **Impostazioni** , sono disponibili le funzioni di base del gruppo:
 
 Nella scheda **Modello** è possibile selezionare dall&#39;elenco dei modelli di gruppo community specificati quando la funzione dei gruppi è stata inclusa nella struttura del sito community o in un modello di sito community.
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![group-template](assets/group-template.png)
 
 Nella scheda **Immagine** è possibile caricare un&#39;immagine da visualizzare per il gruppo nella pagina Gruppi del sito della community. Il foglio di stile predefinito ridimensiona l&#39;immagine a 170 x 90 pixel.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![group-image](assets/group-image.png)
 
 Selezionando il pulsante **Crea gruppo** , le pagine del gruppo vengono create in base al modello scelto e viene creato un gruppo di utenti per l’iscrizione. La pagina Gruppi verrà aggiornata per mostrare la nuova sub-community.
 
 Ad esempio, la pagina Gruppi con una nuova sottocomunità denominata &quot;Focus Group&quot;, per la quale è stata caricata una miniatura di immagine, verrà visualizzata come segue (ancora con accesso come amministratore di gruppo community):
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![group-page](assets/group-page.png)
 
 Quando si seleziona il `Focus Group` collegamento, nel browser viene aperta la pagina Gruppo di interesse, con un aspetto iniziale basato sul modello scelto, e un sottomenu che si trova sotto il menu del sito della community principale:
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![open-group-page](assets/open-group-page.png)
 
 ### Community Group Member List Component {#community-group-member-list-component}
 
