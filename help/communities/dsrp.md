@@ -1,8 +1,8 @@
 ---
 title: DSRP - Provider di risorse di archiviazione del database relazionale
 seo-title: DSRP - Provider di risorse di archiviazione del database relazionale
-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
-seo-description: Imposta AEM Communities per utilizzare un database relazionale come store comune
+description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
+seo-description: Imposta  AEM Communities per utilizzare un database relazionale come store comune
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## Informazioni su DSRP {#about-dsrp}
 
-Quando i AEM Communities sono configurati per utilizzare un database relazionale come store comune, il contenuto generato dall&#39;utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
+Se  AEM Communities è configurato per utilizzare un database relazionale come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione o la replica.
 
 Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
 
@@ -71,7 +71,7 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore
       >[!NOTE]
       >
       >La configurazione di storage predefinita ora è memorizzata nel percorso (`/conf/global/settings/community/srpc/defaultconfiguration`) conf anziché nel percorso (`/etc/socialconfig/srpc/defaultconfiguration`) etc. È consigliabile seguire i passaggi [di](#zerodt-migration-steps) migrazione per fare in modo che i predefiniti funzionino come previsto.
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Configurazione database**
@@ -90,7 +90,7 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host**
 
       Lasciate vuoto questo valore se eseguite Solr utilizzando ZooKeeper interno. In caso contrario, quando si esegue in modalità [SolrCloud](solr.md#solrcloud-mode) con uno ZooKeeper esterno, imposta questo valore sull’URI per ZooKeeper, ad esempio *my.server.com:80*
 
@@ -142,7 +142,7 @@ Per informazioni sugli *utenti*, i profili ** utente e i gruppi *di* utenti, spe
 
 ## Solr di reindicizzazione per DSRP {#reindexing-solr-for-dsrp}
 
-Per reindicizzare DSRP Solr, seguite la documentazione relativa alla [reindicizzazione MSRP](msrp.md#msrp-reindex-tool), ma quando effettuate la reindicizzazione per DSRP, utilizzate invece questo URL: **/services/social/datastore/rdb/reindex**
+Per reindicizzare DSRP Solr, seguite la documentazione per la [reindicizzazione MSRP](msrp.md#msrp-reindex-tool), ma quando effettuate la reindicizzazione per DSRP, utilizzate invece questo URL: **/services/social/datastore/rdb/reindex**
 
 Ad esempio, un comando curl per reindicizzare DSRP sarà simile al seguente:
 
