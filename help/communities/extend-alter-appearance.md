@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 618464d1e01986786a47a4e9c6ecce87e2a77ec3
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Un modo per farlo è:
 
 [Continuando l’esperienza](/help/communities/extend-sample-page.md#publish-sample-page) nell’istanza di pubblicazione, ancora con accesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![view-modified-content](assets/view-modified-content.png)
 
 ### Esempio di pacchetto di estensione dei commenti {#sample-comment-extension-package}
 
