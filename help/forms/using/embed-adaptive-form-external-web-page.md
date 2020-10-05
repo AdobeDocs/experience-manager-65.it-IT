@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Per incorporare il modulo adattivo:
 
 1. Nel codice incorporato:
 
-   * Modificate il valore della variabile *options.path* con il percorso dell’URL di pubblicazione del modulo adattivo. Se il server AEM è in esecuzione su un percorso contestuale, accertatevi che l’URL includa il percorso contestuale. Ad esempio, il codice riportato sopra e l&#39;adattatore risiedono sullo stesso server di moduli AEM, pertanto nell&#39;esempio viene utilizzato il percorso contestuale del modulo adattivo /content/forms/af/locbasic.html.
+   * Modificate il valore della variabile *options.path* con il percorso dell’URL di pubblicazione del modulo adattivo. Se il server AEM è in esecuzione su un percorso contestuale, accertatevi che l’URL includa il percorso contestuale. Fare sempre riferimento al nome completo del modulo adattivo, inclusa l&#39;estensione.   Ad esempio, il codice riportato sopra e l&#39;adattatore risiedono sullo stesso server AEM moduli, pertanto nell&#39;esempio viene utilizzato il percorso contestuale del modulo adattivo /content/forms/af/locbasic.html.
    * Sostituisci *options.dataRef* con gli attributi da trasmettere con l’URL. È possibile utilizzare la variabile dataref per [precompilare un modulo](/help/forms/using/prepopulate-adaptive-form-fields.md)adattivo.
    * Sostituisci *options.subjectPath* con il percorso a un tema diverso dal tema configurato nel modulo adattivo. In alternativa, potete specificare il percorso del tema utilizzando l&#39;attributo request.
    * CSS_Selector è il selettore CSS del contenitore di moduli in cui è incorporato il modulo adattivo. Ad esempio, la classe css .customafsection è il selettore CSS nell&#39;esempio precedente.
@@ -155,7 +155,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 ## Best practices {#best-practices}
 
-Durante l&#39;incorporazione di un modulo adattivo in una pagina Web, tenere in considerazione le seguenti procedure ottimali:
+Durante l&#39;incorporazione di un modulo adattivo in una pagina Web, tenere in considerazione le procedure ottimali seguenti:
 
 * Assicurarsi che le regole di stile definite nella pagina Web CSS non siano in conflitto con l&#39;oggetto modulo CSS. Per evitare i conflitti, è possibile riutilizzare il CSS della pagina Web nel tema del modulo adattivo utilizzando AEM libreria client. Per informazioni sull&#39;uso della libreria client nei temi dei moduli adattivi, vedere [Temi in  AEM Forms](../../forms/using/themes.md).
 * Per fare in modo che il contenitore del modulo nella pagina Web utilizzi l’intera larghezza della finestra. Garantisce il funzionamento delle regole CSS configurate per i dispositivi mobili senza alcuna modifica. Se il contenitore del modulo non occupa l&#39;intera larghezza della finestra, è necessario scrivere CSS personalizzato per adattare il modulo ai diversi dispositivi mobili.
