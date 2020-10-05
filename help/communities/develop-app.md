@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -44,7 +44,7 @@ Utilizzo del CRXDE Lite:
 1. Fate clic sul pulsante verde **[!UICONTROL +Aggiungi]** .
 1. Fate clic su **[!UICONTROL Salva tutto]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![pageScript](assets/page-script.png)
 
 ### Script head e body {#head-and-body-scripts}
 
@@ -128,13 +128,13 @@ Per modificare il contenuto della pagina è necessario non solo visualizzare l�
 
 Il pannello laterale Risorse/Componente viene visualizzato quando il pannello laterale è aperto e la finestra è sufficientemente ampia da consentire la visualizzazione del contenuto laterale e del contenuto della pagina.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![view-page](assets/view-page.png)
 
 * Interfaccia classica: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Di seguito viene illustrata l’aspetto della pagina di riproduzione nell’interfaccia classica, incluso con Content Finder (cf):
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![play-page-view](assets/play-page-view.png)
 
 ## Componenti di Communities {#communities-components}
 
