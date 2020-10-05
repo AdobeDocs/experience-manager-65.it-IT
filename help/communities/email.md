@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ Questo si basa sulla documentazione per la [configurazione delle notifiche](../.
 
 Ad esempio (con valori solo a scopo illustrativo):
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+![email-config](assets/email-config.png)
 
 * **[!UICONTROL Nome host del server SMTP]**
 
@@ -98,7 +98,7 @@ Per raggiungere le istanze di configurazione e-mail di Communities:
 
 * Individua `AEM Communities Email Reply Configuration`.
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+![email-reply-config](assets/email-reply-config.png)
 
 ### Configurazione per le notifiche {#configuration-for-notifications}
 
@@ -177,7 +177,7 @@ Affinché l’e-mail possa essere inserita nella directory archivio, è necessar
 
 * Seleziona **[!UICONTROL Aggiungi]**
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![importatore di polling](assets/polling-importer.png)
 
 * **[!UICONTROL Tipo]**
 
@@ -207,7 +207,7 @@ Affinché l’e-mail possa essere inserita nella directory archivio, è necessar
 
 ### Regola protocollo per il nuovo importatore di polling {#adjust-protocol-for-new-polling-importer}
 
-Una volta salvata la nuova configurazione di polling, è necessario modificare ulteriormente le proprietà di Subscription Email Importer per cambiare il protocollo da `POP3` a `emailreply`
+Una volta salvata la nuova configurazione di polling, è necessario modificare ulteriormente le proprietà di Subscription Email Importer per cambiare il protocollo da `POP3` a `emailreply`.
 
 Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -217,7 +217,7 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
    * **feedType**: Sostituisci `pop3s` con **`emailreply`**
    * **source**: Sostituire il protocollo di origine `pop3s://` con **`emailreply://`**
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![protocollo elettorale](assets/polling-protocol.png)
 
 I triangoli rossi indicano le proprietà modificate. Salvare le modifiche:
 
