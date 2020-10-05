@@ -10,9 +10,9 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
+source-git-commit: 42386f6e580d85efb972f2e63c5ab89112b3f734
 workflow-type: tm+mt
-source-wordcount: '3115'
+source-wordcount: '3145'
 ht-degree: 3%
 
 ---
@@ -146,7 +146,7 @@ Consente di trascinare gli elementi del modello di modulo nel modulo adattivo. G
   </tr>
   <tr>
    <td>Allegato file</td>
-   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare i documenti di supporto a un modulo. È possibile allegare più file a un componente Allegato file.</p> <p><strong> Nota: </strong><ul> <li> Per allegare più file a un componente allegato aperto nel browser Apple Safari, selezionate e allegate i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per  Adobe Sign. Per ulteriori informazioni, vedere Formati <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">di file</a>supportati. </li> </ul></p> </td>
+   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare i documenti di supporto a un modulo. È possibile allegare più file a un componente Allegato file.</p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file con nomi di file che iniziano con caratteri (.), contenenti caratteri \ / : * ? " &lt; &gt; | ; % $, o contenente nomi file speciali riservati al sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente allegato aperto nel browser Apple Safari, selezionate e allegate i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per  Adobe Sign. Per ulteriori informazioni, vedere Formati <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">di file</a>supportati. </li> </ul></p> </td>
   </tr>
   <tr>
    <td>Elenco allegati file</td>
