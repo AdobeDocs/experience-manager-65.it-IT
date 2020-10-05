@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4162'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Uso del modello dati del modulo{#work-with-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![integrazione dei dati](do-not-localize/data-integeration.png)
 
 L&#39;editor dei modelli di dati per i moduli offre un&#39;interfaccia utente intuitiva e strumenti per la modifica e la configurazione di un modello di dati per i moduli. Utilizzando l&#39;editor, è possibile aggiungere e configurare oggetti, proprietà e servizi del modello dati da origini dati associate nel modello dati del modulo. Inoltre, consente di creare oggetti e proprietà del modello dati senza origini dati e di eseguire successivamente un binding con i rispettivi oggetti e proprietà del modello dati. È inoltre possibile generare e modificare dati di esempio per le proprietà degli oggetti del modello dati che è possibile utilizzare per precompilare moduli adattivi e comunicazioni interattive durante la visualizzazione dell&#39;anteprima. È possibile sottoporre a test gli oggetti e i servizi del modello dati configurati in un modello dati del modulo per assicurarsi che sia correttamente integrato con le origini dati.
 
-Se non si è esperti nell&#39;integrazione dei dati di Forms e non si è configurata un&#39;origine dati o non è stato creato un modello di dati del modulo, consultare i seguenti argomenti:
+Se non si è esperti nell&#39;integrazione dei dati Forms e non si è configurata un&#39;origine dati o non è stato creato un modello dati modulo, consultare i seguenti argomenti:
 
-* [Integrazione dei dati AEM Forms](/help/forms/using/data-integration.md)
+* [Integrazione dei dati  AEM Forms](/help/forms/using/data-integration.md)
 * [Configurare le origini dati](/help/forms/using/configure-data-sources.md)
 * [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
 
@@ -33,7 +33,7 @@ Per informazioni dettagliate sulle varie attività e configurazioni che è possi
 
 >[!NOTE]
 >
->È necessario essere membri sia dei gruppi **fdm-author** che **form-user** per poter creare e utilizzare il modello dati del modulo. Contatta il tuo amministratore AEM per diventare membro dei gruppi.
+>È necessario essere membri sia dei gruppi **fdm-author** che **form-user** per poter creare e utilizzare il modello dati del modulo. Contattate il vostro amministratore AEM per diventare membro dei gruppi.
 
 ## Aggiunta di oggetti e servizi del modello dati {#add-data-model-objects-and-services}
 
@@ -43,7 +43,7 @@ Se si è creato un modello dati modulo con origini dati, è possibile utilizzare
 
 Per aggiungere oggetti e servizi del modello dati:
 
-1. Accedi all’istanza di creazione di AEM, passa a **[!UICONTROL Forms > Integrazioni]** dati e apri il modello dati del modulo in cui desideri aggiungere oggetti del modello dati.
+1. Accedere all&#39;istanza di creazione AEM, accedere a **[!UICONTROL Forms > Integrazioni]** dati e aprire il modello dati del modulo in cui si desidera aggiungere gli oggetti del modello dati.
 1. Nel riquadro Origini dati espandere le origini dati per visualizzare gli oggetti e i servizi del modello dati disponibili.
 1. Selezionare gli oggetti del modello dati e i servizi che si desidera aggiungere al modello dati del modulo e toccare **[!UICONTROL Aggiungi selezionato]**.
 
@@ -85,7 +85,7 @@ Anche se è possibile aggiungere oggetti modello dati da origini dati configurat
 
 Per creare un oggetto modello dati senza origini dati:
 
-1. Accedi all’istanza di creazione di AEM, passa a **[!UICONTROL Forms > Integrazioni]** dati e apri il modello dati del modulo in cui vuoi creare un oggetto o un’entità del modello dati.
+1. Accedere all&#39;istanza di creazione AEM, accedere a **[!UICONTROL Forms > Integrazioni]** dati e aprire il modello dati del modulo in cui si desidera creare un oggetto o un&#39;entità del modello dati.
 1. Toccate **[!UICONTROL Crea entità]**.
 1. Nella finestra di dialogo Crea modello dati, specificare un nome per l&#39;oggetto modello dati e toccare **[!UICONTROL Aggiungi]**. Un oggetto modello dati viene aggiunto al modello dati del modulo. L&#39;oggetto modello dati appena aggiunto non è associato a un&#39;origine dati e non dispone di proprietà come illustrato nell&#39;immagine seguente.
 
@@ -175,11 +175,11 @@ In questo esempio, i dettagli associati con **4367655678**, come valore per l&#3
 
 #### Attributo profilo utente {#user-profile-attribute}
 
-Selezionare Attributo **[!UICONTROL profilo]** utente dal menu a discesa **[!UICONTROL Binding a]** e immettere il nome dell&#39;attributo nel campo Valore **** binding. I dettagli dell’utente che ha eseguito l’accesso all’istanza di AEM vengono recuperati dall’origine dati in base al nome dell’attributo.
+Selezionare Attributo **[!UICONTROL profilo]** utente dal menu a discesa **[!UICONTROL Binding a]** e immettere il nome dell&#39;attributo nel campo Valore **** binding. I dettagli dell&#39;utente che ha eseguito l&#39;accesso all&#39;istanza AEM vengono recuperati dall&#39;origine dati in base al nome dell&#39;attributo.
 
 Il nome dell&#39;attributo specificato nel campo Valore **** di binding deve includere il percorso di binding completo fino al nome dell&#39;attributo per l&#39;utente. Aprite il seguente URL per accedere ai dettagli utente su CRXDE:
 
-https://&lt;nome-server>:&lt;numero porta>/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Profilo utente](assets/binding_crxde_user_profile_new.png)
 
@@ -195,15 +195,31 @@ Utilizzare l&#39;attributo request per recuperare le proprietà associate dall&#
 
 1. Selezionare **[!UICONTROL Richiedi attributo]** dal menu a discesa **[!UICONTROL Binding a]** e immettere il nome dell&#39;attributo nel campo Valore **** binding.
 
-1. Aprite head.jsp per definire i dettagli attributo su CRXDE:\
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Create una [sovrapposizione](../../../help/sites-developing/overlays.md) per head.jsp. Per creare la sovrapposizione, aprite CRX DE e copiate il `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` file in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
-1. Includete il testo seguente nel file head.jsp:
+   >[!NOTE]
+   >
+   > * Se usate un modello statico, sovrapponete head.jsp in:
+/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * Se usate un modello modificabile, sovrapponete aftemplatedpage.jsp a:
+/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+
+1. Impostato [!DNL paramMap] per l’attributo request. Ad esempio, includete il seguente codice nel file .jsp nella cartella delle app:
+
+   ```javascript
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+   ```
+
+   Ad esempio, utilizzare il codice seguente per recuperare il valore di petid dall&#39;origine dati:
+
+
+   ```javascript
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
    ```
 
 I dettagli vengono recuperati dall&#39;origine dati in base al nome attributo specificato nella richiesta.
@@ -525,7 +541,7 @@ In questo esempio, i dati di input vengono convalidati in base ai vincoli massim
    ]
 ```
 
-Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log** . Ad esempio,
+Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log** . Esempio,
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
