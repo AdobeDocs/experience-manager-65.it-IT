@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -157,26 +157,26 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
 1. Accedete per pubblicare un commento:
 1. Immettete il testo nella casella di immissione del commento e fate clic su **[!UICONTROL Post]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![post-commento](assets/post-comment.png)
 
 1. È sufficiente visualizzare il commento sull’istanza [di](http://localhost:4502/content/community-components/en/comments.html) authoring (con probabilità ancora eseguito l’accesso come amministratore/amministratore).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![view-comment](assets/view-comment.png)
 
-   Nota: mentre sull’autore sono presenti nodi JCR sotto il *percorso* asiatico, questi sono per il framework SCF. L&#39;UGC effettivo non è in JCR, è in MongoDB.
+   Nota: Sebbene sull’autore siano presenti nodi JCR sotto il *percorso* asiatico, questi sono per il framework SCF. L&#39;UGC effettivo non è in JCR, è in MongoDB.
 
 1. Visualizzare l’UGC in **[!UICONTROL Mongodb Communities]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+   ![ugc-content](assets/ugc-content.png)
 
 1. Visualizzare l’UGC in Solr:
 
-   * Passa al dashboard Solr: [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * Utente `core selector` da selezionare `collection1`
-   * Seleziona `Query`
-   * Seleziona `Execute Query`
+   * Passa al dashboard Solr: [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * Utente `core selector` da selezionare `collection1`.
+   * Seleziona `Query`.
+   * Seleziona `Execute Query`.
 
-   ![chlimage_1-194](assets/chlimage_1-194.png)
+   ![ugc-solr](assets/ugc-solr.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -186,14 +186,9 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
 
 1. Verificate che MSRP sia stato configurato come provider predefinito:
 
-   * Per tutte le istanze di creazione e pubblicazione AEM, rivisitate la console Configurazione [archiviazione](srp-config.md)
+   * Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console [Configurazione](srp-config.md) archiviazione o controllate l&#39;archivio AEM:
 
-   Oppure, controllate il repository AEM:
-
-   * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
-
-   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa che il provider di archiviazione è JSRP
-   * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito
-
+   * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa che il provider di storage è JSRP.
+   * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito.
 
 1. Verificare che AEM sia stato riavviato dopo aver selezionato MSRP.
