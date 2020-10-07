@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
+source-git-commit: b76d93ada35f5d054c1d07bf1a7dd9deaaaec1ee
 workflow-type: tm+mt
-source-wordcount: '9618'
+source-wordcount: '9619'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->* La condivisione di una [!DNL Assets] cartella di tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una [!DNL Assets] cartella del tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
 >* [!DNL Experience Manager] non consente l&#39;utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
 
 
@@ -453,7 +453,7 @@ Le altre proprietà e informazioni sui metadati vengono mantenute. Durante la co
 ## Spostare e rinominare le risorse {#moving-or-renaming-assets}
 
 Quando spostate le risorse (o le cartelle) in un’altra posizione, le risorse (o cartelle) non vengono duplicate, a differenza di quando copiate la risorsa. Le risorse (o le cartelle) vengono posizionate nel percorso di destinazione e rimosse dal percorso di origine. Potete inoltre rinominare la risorsa quando la spostate nella nuova posizione.
-Se spostate una risorsa pubblicata in un percorso diverso, potete ripubblicare la risorsa. Per impostazione predefinita, l’operazione di spostamento su una risorsa pubblicata viene automaticamente annullata dalla pubblicazione. La risorsa spostata viene ripubblicata se l’autore seleziona l’opzione [!UICONTROL Ripubblica] quando si sposta la risorsa.
+Se spostate una risorsa pubblicata in un percorso diverso, potete ripubblicare la risorsa. Per impostazione predefinita, l’operazione di spostamento su una risorsa pubblicata viene automaticamente annullata dalla pubblicazione. Una risorsa spostata viene ripubblicata se l’autore seleziona l’opzione [!UICONTROL Ripubblica] quando sposta la risorsa.
 
 ![Quando si sposta una risorsa già pubblicata, è possibile ripubblicarla](assets/republish-on-move.png)
 
