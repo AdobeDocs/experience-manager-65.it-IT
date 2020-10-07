@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -24,8 +24,8 @@ ht-degree: 2%
 
 La console Gruppi consente di creare gruppi di community quando la struttura [di](/help/communities/sites-console.md#step1) modelli di un sito community include la funzione [](/help/communities/functions.md#groups-function)Gruppi.
 
-* I AEM Communities supportano la nidificazione dei gruppi all&#39;interno di altri gruppi. La nidificazione dei gruppi è possibile quando la [struttura del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
-* Solo per l’ambiente di authoring, esiste una procedura guidata per la creazione di gruppi simile a quella per la creazione di siti.
+*  AEM Communities supporta la nidificazione dei gruppi all&#39;interno di altri gruppi. La nidificazione dei gruppi è possibile quando la [struttura del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
+* Solo per l’ambiente di authoring, è disponibile una procedura guidata per la creazione di gruppi simile a quella per la creazione di siti.
 * Se i membri possono o meno creare gruppi nell&#39;ambiente di pubblicazione, è possibile configurarli quando si aggiunge una funzione Gruppi a una struttura del sito community o di un gruppo community.
 
 Dei tre modelli di gruppo inclusi, solo il `Reference Group` modello include una funzione di gruppo nella sua struttura.
@@ -39,14 +39,14 @@ I diversi aspetti dei gruppi comunitari sono:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+-->
 
 >[!NOTE]
 >
 >Questa console Gruppi, accessibile solo dalla console Siti community, non deve essere confusa con la console [](/help/communities/members.md) Gruppi membri per la gestione dei gruppi di membri.
 >
 >I gruppi di membri sono gruppi di utenti registrati nell’ambiente di pubblicazione a cui si accede dall’ambiente di authoring mediante il servizio [](/help/communities/deploy-communities.md#tunnel-service-on-author)tunnel.
-
 
 ## Creazione gruppo {#group-creation}
 
@@ -113,7 +113,7 @@ La radice predefinita è il sito principale principale, ma può essere spostata 
 
 ![communityGroup](assets/communitygrouptheme.png)
 
-Il framework utilizza [Twitter Bootstrap](https://twitterbootstrap.org/) per fornire al sito un design reattivo e flessibile. È possibile selezionare uno dei numerosi temi Bootstrap precaricati per definire lo stile del modello di gruppo di community selezionato oppure caricare un tema Bootstrap.
+Il framework utilizza l’Bootstrap [](https://twitterbootstrap.org/) Twitter per fornire al sito un design reattivo e flessibile. È possibile selezionare uno dei numerosi temi di Bootstrap precaricati per definire lo stile del modello di gruppo di community selezionato oppure caricare un tema di Bootstrap.
 
 Quando è selezionato, il tema sarà sovrapposto con un segno di spunta blu opaco.
 
@@ -204,12 +204,11 @@ Al termine del processo, la scheda per il nuovo sito della community secondaria 
 >
 >Il gruppo viene creato in tutte le lingue, come specificato nel [Passaggio 1: Modello](/help/communities/groups.md#step-community-group-template) Gruppo community in ulteriori lingue del gruppo community disponibili, nella console Gruppi community dei rispettivi siti community.
 
-
 ## Contenuto gruppo autore {#author-group-content}
 
 ![open-site](assets/open-site.png)
 
-Il contenuto di una pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina AEM. Per aprire il gruppo per la creazione, selezionate l&#39;icona Apri sito che viene visualizzata quando passate il puntatore del mouse sulla scheda del gruppo.
+Il contenuto della pagina di un gruppo può essere creato con gli stessi strumenti di qualsiasi altra pagina AEM. Per aprire il gruppo per la creazione, selezionate l&#39;icona Apri sito che viene visualizzata quando passate il puntatore del mouse sulla scheda del gruppo.
 
 ## Modifica proprietà gruppo {#modify-group-properties}
 
@@ -252,17 +251,15 @@ Modificate l&#39;ordine delle funzioni come visualizzate nella barra di navigazi
 
 >[!CAUTION]
 >
->Anche se il titolo visualizzato può essere modificato senza effetti collaterali, non è consigliabile modificare il nome URL di una funzione community appartenente a un sito community.
+>Anche se il titolo visualizzato può essere modificato senza effetti collaterali, si consiglia di non modificare il nome URL di una funzione community appartenente a un sito community.
 >
 >Ad esempio, la ridenominazione dell’URL non comporterà lo spostamento dell’UGC esistente, con l’effetto di perdere l’UGC.
-
 
 >[!CAUTION]
 >
 >La funzione group *non* deve essere la *prima né l&#39;unica* funzione nella struttura del sito.
 >
 >Qualsiasi altra funzione, come la funzione [](/help/communities/functions.md#page-function)page, deve essere inclusa ed elencata per prima.
-
 
 **Esempio: Aggiunta di una funzione di calendario a una struttura di sottocomunità (gruppo)**
 
@@ -304,7 +301,6 @@ Dopo che il gruppo è stato pubblicato correttamente, viene visualizzato un mess
 >Il sito della comunità padre e i gruppi padre dovrebbero essere già stati pubblicati.
 >
 >Il sito della community e i gruppi nidificati devono essere pubblicati in modo top-down.
-
 
 ## Eliminare il gruppo {#delete-the-group}
 
