@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0c6a1afff62d4a962edfc8c2e6574d65a18534ac
+source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
 workflow-type: tm+mt
-source-wordcount: '9619'
+source-wordcount: '9613'
 ht-degree: 4%
 
 ---
@@ -496,7 +496,7 @@ Per spostare risorse o cartelle:
 
 ### Spostare le risorse tramite trascinamento {#move-using-drag}
 
-Potete spostare le risorse (o cartelle) in una cartella di pari livello, nella raccolta [!UICONTROL Lightbox] o in un&#39;altra raccolta trascinandole nella posizione di destinazione, invece di utilizzare l&#39;opzione [!UICONTROL Sposta] nell&#39;interfaccia utente. Tuttavia, questa operazione è possibile solo nella vista a elenco.
+Potete spostare le risorse (o cartelle) in una cartella di pari livello trascinandole nella posizione di destinazione, invece di utilizzare l’opzione [!UICONTROL Sposta] nell’interfaccia utente. Tuttavia, questa operazione è possibile solo nella vista a elenco.
 
 Se si spostano le risorse trascinandole, non viene aperta la procedura guidata [!UICONTROL Sposta risorsa] . Pertanto, durante lo spostamento non è possibile rinominare le risorse. Inoltre, le risorse già pubblicate vengono ripubblicate trascinandole per spostarle, senza richiedere l&#39;approvazione dell&#39;utente per la ripubblicazione.
 
