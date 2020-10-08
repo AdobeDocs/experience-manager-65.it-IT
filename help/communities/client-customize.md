@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione lato client
 seo-title: Personalizzazione lato client
-description: Personalizzazione del comportamento o dell'aspetto lato client negli AEM Communities
-seo-description: Personalizzazione del comportamento o dell'aspetto lato client negli AEM Communities
+description: Personalizzazione del comportamento o dell'aspetto sul lato client in  AEM Communities
+seo-description: Personalizzazione del comportamento o dell'aspetto sul lato client in  AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 |---|---|
 |  | **[Helper manubrio SCF](handlebars-helpers.md)** |
 
-Per personalizzare l’aspetto e/o il comportamento di un componente AEM Communities sul lato client, sono disponibili diversi approcci.
+Per personalizzare l’aspetto e/o il comportamento di un componente AEM Communities  lato client, sono disponibili diversi approcci.
 
 Due approcci principali consistono nel sovrapporre o estendere un componente.
 
@@ -44,7 +44,7 @@ Il componente predefinito nella directory /libs non deve mai essere modificato i
 
 Ciò è diverso dall’ [estensione](#extensions) di un componente predefinito in cui si desidera apportare modifiche per un uso specifico, la creazione di un percorso univoco per il componente e l’utilizzo di un riferimento al componente predefinito originale nella directory /libs come tipo di risorsa super.
 
-Per un rapido esempio di sovrapposizione del componente commenti, provate l’esercitazione [sul componente](overlay-comments.md)Overlay Comments (Commenti sovrapposizione).
+Per un esempio rapido di sovrapposizione del componente commenti, provate l’esercitazione [sul componente](overlay-comments.md)Overlay Comments (Commenti sovrapposizione).
 
 ## Estensioni {#extensions}
 
@@ -109,7 +109,6 @@ Gli stili personalizzati sostituiranno gli stili framework predefiniti e il comp
 >
 >Anche se le `scf-js` classi non influiscono sugli stili, i nomi delle classi possono essere utilizzati in fogli di stile con l&#39;avvertenza che, mentre controllano gli stati degli elementi, ci possono essere effetti collaterali.
 
-
 ## Estensione di Javascript {#extending-javascript}
 
 Per estendere un’implementazione Javascript per componenti, è necessario:
@@ -170,7 +169,7 @@ Queste versioni sono disponibili in:
 
 * `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
-Ad esempio:
+Esempio:
 
 * Nodo cartella client: `/etc/clientlibs/social/hbs/forum`
 * Proprietà Categories: `cq.social.hbs.forum`
@@ -189,7 +188,7 @@ Queste versioni si trovano nella cartella delle librerie SCF:
 
 * `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
-Ad esempio:
+Esempio:
 
 * Nodo cartella client: `/libs/social/forum/hbs/forum/clientlibs`
 * Proprietà Categories: `cq.social.author.hbs.forum`
