@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 4%
@@ -27,7 +27,6 @@ Il `Reviews Summary (Display)` componente fornisce un riepilogo di un’istanza 
 >[!NOTE]
 >
 >L&#39;invio anonimo di una revisione non è supportato. I visitatori del sito devono registrarsi (diventare membri) ed effettuare l’accesso per partecipare. Il visitatore che ha effettuato l’accesso può aggiornare la propria revisione in qualsiasi momento.
-
 
 ## Adding a Review to a Page {#adding-a-review-to-a-page}
 
@@ -75,7 +74,6 @@ Nel sito Web, le valutazioni richieste sono contrassegnate da un asterisco. Se u
 >
 >Se un elemento viene immesso nella scheda Valutazioni **** richieste non specificata nella scheda Valutazioni **** consentite, non viene incluso negli elementi da valutare.
 
-
 Nella scheda **[!UICONTROL Recensioni]** , specificare le modalità di gestione delle revisioni.
 
 ![recensioni](assets/configure-review3.png)
@@ -92,7 +90,7 @@ Nella scheda **[!UICONTROL Recensioni]** , specificare le modalità di gestione 
 
    Se questa opzione è selezionata, consentire il caricamento degli allegati per la revisione. Il valore predefinito è deselezionato.
 
-* **Dimensione file massima **
+* **Dimensione file massima**
 
    Pertinente solo se **[!UICONTROL Consenti caricamenti]** file è selezionato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 10 MB.
 
@@ -169,7 +167,6 @@ Quando vengono incluse le librerie [lato client](reviews-basics.md#essentials-fo
 >[!NOTE]
 >
 >La &quot;media&quot; riflette i voti per il primo elemento elencato nelle schede Valutazioni consentite della revisione che viene riepilogata.
-
 
 ### Configurazione del riepilogo delle revisioni (visualizzazione) {#configuring-reviews-summary-display}
 
