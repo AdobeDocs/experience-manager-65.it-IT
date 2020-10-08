@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c03ba5e2ec7954cca8b129f453919d151956df5
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 12%
@@ -32,16 +32,14 @@ Adobe Experience Manager Assets Brand Portal consente di pubblicare le risorse d
 >
 >La configurazione tramite gateway OAuth legacy non è più supportata dal 6 aprile 2020 e viene modificata in  console per sviluppatori di Adobe.
 
-
 >[!TIP]
 >
 >***Solo per i clienti esistenti***
 >
 >Si consiglia di continuare a utilizzare la configurazione gateway OAuth esistente. Se si verificano problemi con la configurazione del gateway OAuth legacy, eliminare la configurazione esistente e creare una nuova configurazione tramite  console sviluppatore di Adobe.
 
-
-
 Questa guida descrive i due casi d’uso seguenti:
+
 * [Nuova configurazione](#configure-new-integration-65): Se siete un nuovo utente del Brand Portal e desiderate configurare ’istanza di creazione AEM Assets con Brand Portal, potete creare la configurazione tramite  Adobe Developer Console.
 * [Configurazione](#upgrade-integration-65)aggiornamento: Se siete già utenti di Brand Portal con una configurazione su gateway OAuth, eliminate la configurazione esistente e create una nuova configurazione tramite  console per sviluppatori di Adobe.
 
@@ -58,7 +56,6 @@ Per configurare AEM Assets con Brand Portal, è necessario quanto segue:
 * Un’istanza di creazione di  AEM Assets con l’ultimo Service Pack
 * URL tenant del Brand Portal
 * Un utente con privilegi di amministratore di sistema nell’organizzazione IMS del tenant di Brand Portal
-
 
 [Download e installazione AEM 6.5](#aemquickstart)
 
@@ -94,12 +91,9 @@ La configurazione di  AEM Assets con Brand Portal richiede configurazioni sia ne
 1. In  AEM Assets, configurate il servizio cloud Brand Portal utilizzando l&#39;account IMS e l&#39;endpoint del Brand Portal (URL organizzazione).
 1. Verificate la configurazione pubblicando una risorsa da  AEM Assets al Brand Portal.
 
-
 >[!NOTE]
 >
 >Un’istanza di autore  AEM Assets può essere configurata solo con un tenant Brand Portal.
-
-
 
 Effettuate i seguenti passaggi nella sequenza elencata se state configurando  AEM Assets con Brand Portal per la prima volta:
 1. [Recuperare il certificato pubblico](#public-certificate)
@@ -269,7 +263,6 @@ Effettuate le seguenti operazioni per configurare l&#39;account IMS.
 
    ![Configurazione dell’account IMS](assets/create-new-integration6.png)
 
-
 1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
    Fare clic su **[!UICONTROL Controlla]** nella finestra di dialogo. Se la configurazione è stata completata, viene visualizzato un messaggio che informa che il *token è stato recuperato* correttamente.
@@ -281,8 +274,6 @@ Effettuate le seguenti operazioni per configurare l&#39;account IMS.
 >Puoi disporre di una sola configurazione IMS.
 >
 >Verifica che la configurazione IMS superi il controllo di integrità. Se la configurazione non supera questa verifica, non è valida. Dovrai quindi eliminarla e creare una nuova configurazione valida.
-
-
 
 ### Configurare il servizio cloud {#configure-the-cloud-service}
 
@@ -326,11 +317,9 @@ Effettuate le seguenti operazioni per convalidare la configurazione:
 
    ![](assets/test-integration3.png)
 
-
    >[!NOTE]
    >
    >Gli agenti di replica lavorano in parallelo e condividono la distribuzione dei processi in modo uniforme, aumentando così la velocità di pubblicazione di quattro volte la velocità originale. Una volta configurato il servizio cloud, non è richiesta ulteriore configurazione per abilitare gli agenti di replica attivati per impostazione predefinita per abilitare la pubblicazione parallela di più risorse.
-
 
 1. To verify the connection between AEM Assets and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
