@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 3%
@@ -31,7 +31,6 @@ Per impostazione predefinita, la funzione e-mail non funziona perché richiede l
 >[!CAUTION]
 >
 >Le e-mail per le notifiche e le iscrizioni devono essere configurate solo sull&#39;editore [](deploy-communities.md#primary-publisher)principale.
-
 
 ## Configurazione servizio di posta elettronica predefinita {#default-mail-service-configuration}
 
