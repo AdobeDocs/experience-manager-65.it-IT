@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione lato server
 seo-title: Personalizzazione lato server
-description: Personalizzazione lato server in AEM Communities
-seo-description: Personalizzazione lato server in AEM Communities
+description: Personalizzazione lato server in  AEM Communities
+seo-description: Personalizzazione lato server in  AEM Communities
 uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '896'
+ht-degree: 0%
 
 ---
 
@@ -27,12 +30,11 @@ source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 >
 >La posizione del pacchetto delle API Community è soggetta a modifiche quando si esegue l&#39;aggiornamento da una versione principale a quella successiva.
 
-
 ### Interfaccia SocialComponent {#socialcomponent-interface}
 
-I componenti social sono POJO che rappresentano una risorsa per una funzione di AEM Communities. Idealmente, ogni SocialComponent rappresenta uno specifico resourceType con GETters esposti che forniscono i dati al client in modo che la risorsa sia correttamente rappresentata. Tutta la logica di business e di visualizzazione è racchiusa in SocialComponent, incluse le informazioni sulla sessione del visitatore del sito, se necessario.
+I componenti social sono POJO che rappresentano una risorsa per una funzione AEM Communities . Idealmente, ogni SocialComponent rappresenta uno specifico resourceType con GETters esposti che forniscono i dati al client in modo che la risorsa sia correttamente rappresentata. Tutta la logica di business e di visualizzazione è racchiusa in SocialComponent, incluse le informazioni sulla sessione del visitatore del sito, se necessario.
 
-L&#39;interfaccia definisce un set base di GETters necessari per rappresentare una risorsa. L&#39;interfaccia specifica i metodi Map&lt;String, Object> getAsMap() e String toJSONString() necessari per eseguire il rendering dei modelli Handlebars ed esporre gli endpoint GET JSON per le risorse.
+L&#39;interfaccia definisce un set base di GETters necessari per rappresentare una risorsa. È importante notare che l&#39;interfaccia specifica i metodi Map&lt;String, Object> getAsMap() e String toJSONString() necessari per eseguire il rendering dei modelli Handlebars ed esporre gli endpoint JSON GET per le risorse.
 
 Tutte le classi SocialComponent devono implementare l&#39;interfaccia `com.adobe.cq.social.scf.SocialComponent`
 
@@ -68,7 +70,7 @@ Un handle per il servizio OSGi viene ottenuto richiamando `com.adobe.cq.social.s
 
 Gli endpoint POST API HTTP sono classi PostOperation definite implementando l&#39; `SlingPostOperation` interfaccia (pacchetto `org.apache.sling.servlets.post`).
 
-L&#39;implementazione dell&#39; `PostOperation` endpoint viene impostata `sling.post.operation` su un valore a cui l&#39;operazione risponderà. Tutte le richieste POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
+L&#39;implementazione dell&#39; `PostOperation` endpoint viene impostata `sling.post.operation` su un valore a cui l&#39;operazione risponderà. Tutte le richieste di POST con un parametro:operation impostato su tale valore verranno delegate a questa classe di implementazione.
 
 Viene `PostOperation` richiamata la `SocialOperation` quale esegue le azioni necessarie per l&#39;operazione.
 
@@ -117,11 +119,11 @@ Tutte `OperationService` le classi si estendono `AbstractOperationService`, cons
 
 ## Codice di esempio {#sample-code}
 
-Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.com/Adobe-Marketing-Cloud) Adobe Marketing Cloud. Cercare progetti con un prefisso `aem-communities` o `aem-scf`.
+Il codice di esempio è disponibile nell’archivio [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Cercare progetti con un prefisso `aem-communities` o `aem-scf`.
 
 ## Best practice   {#best-practices}
 
-Consultate la sezione Linee guida [per la](code-guide.md) codifica per diverse linee guida e best practice per gli sviluppatori di AEM Communities.
+Consultate la sezione [Coding Guidelines (Linee guida](code-guide.md) per la codifica) per diverse linee guida e best practice per  sviluppatori AEM Communities.
 
 Per informazioni sull&#39;accesso ai contenuti generati dall&#39;utente, consultate anche [Storage Resource Provider (SRP) per UGC](srp.md) .
 
