@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -74,7 +74,6 @@ Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 >
 >Se MongoDB viene avviato *dopo* AEM, **riavviare** tutte le istanze **AEM** in modo che si connettano correttamente a MongoDB.
 
-
 ### Opzione Produzione Demo: Imposta set di replica MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
 I comandi seguenti sono un esempio di configurazione di un set di repliche con 3 nodi in localhost:
@@ -133,7 +132,6 @@ Verrà avviato un server Solr HTTP utilizzando la porta predefinita 8983. Per ot
 >
 >Se Console Solr non è disponibile, controlla i registri in &lt;solrinstall>/example/logs. Verificare se SOLR sta tentando di eseguire un binding con un nome host specifico che non può essere risolto (ad es. &quot;user-macbook-pro&quot;).
 In tal caso, aggiornate il file etc/hosts con una nuova voce per questo nome host (ad esempio 127.0.0.1 user-macbook-pro) e Solr verrà avviato correttamente.
-
 
 ### SolrCloud {#solrcloud}
 
