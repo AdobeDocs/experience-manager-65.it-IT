@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1534'
+ht-degree: 2%
 
 ---
 
@@ -25,14 +28,13 @@ Gli Helpers (helper) sono metodi richiamabili dagli script Handlebars per facili
 
 L&#39;implementazione include una definizione lato client e lato server. È inoltre possibile per gli sviluppatori creare helper personalizzati.
 
-Gli assistenti SCF personalizzati forniti con AEM Communities sono definiti nella libreria [client](../../help/sites-developing/clientlibs.md):
+Gli assistenti SCF personalizzati forniti con  AEM Communities sono definiti nella libreria [client](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
 >Accertatevi di installare il pacchetto [di funzioni Community](deploy-communities.md#latestfeaturepack)più recente.
-
 
 ## Abbreviate {#abbreviate}
 
@@ -237,7 +239,7 @@ Supporto per includere un componente come risorsa non esistente in un modello.
 
 Questo consente di personalizzare la risorsa in modo programmatico più facilmente di quanto sia possibile per una risorsa aggiunta come nodo JCR. Consultate [Aggiungere o includere un componente](scf.md#add-or-include-a-communities-component)Community.
 
-Sono inclusi solo alcuni componenti Community. Per AEM 6.1, sono inclusi [commenti](essentials-comments.md), [valutazioni](rating-basics.md), [revisioni](reviews-basics.md)e [votazioni](essentials-voting.md).
+Sono inclusi solo alcuni componenti Community. Per AEM 6.1, quelli che possono essere inclusi sono [commenti](essentials-comments.md), [valutazioni](rating-basics.md), [revisioni](reviews-basics.md)e [votazioni](essentials-voting.md).
 
 Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a [cq:include](../../help/sites-developing/taglib.md) per gli script JSP.
 
@@ -277,7 +279,7 @@ Questo includerà un nuovo componente Commenti in `this.id` + /commenti.
 
 ## IncludeClientLib {#includeclientlib}
 
-Un helper che include una libreria client AEM html, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nello script Handlebars.
+Un helper che include una libreria client HTML AEM, che può essere un js, un css o una libreria di temi. Per più inclusioni di tipi diversi, ad esempio js e css, questo tag deve essere utilizzato più volte nello script Handlebars.
 
 Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a [ui:includeClientLib](../../help/sites-developing/taglib.md) per gli script JSP.
 
@@ -343,7 +345,7 @@ Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a
 
 Un helper per per visualizzare il tempo passato a un punto di interruzione, dopo il quale viene visualizzato un formato di data regolare.
 
-Ad esempio:
+Esempio:
 
 * 12 ore fa
 * 7 giorni fa
@@ -524,7 +526,7 @@ I client helper personalizzati devono essere implementati sia sul lato server ch
 
 Per implementare e registrare un helper SCF personalizzato sul lato server, implementate semplicemente l&#39;interfaccia Java [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), rendetelo un servizio [](../../help/sites-developing/the-basics.md#osgi) OSGi e installatelo come parte di un bundle OSGi.
 
-Ad esempio:
+Esempio:
 
 ### FooTextHelper.java {#footexthelper-java}
 
@@ -568,11 +570,10 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >Il componente viene riprodotto sul lato client per l’utente che ha eseguito l’accesso e, se l’helper sul lato client non viene trovato, il componente scompare.
 
-
 ### Helper personalizzati lato client {#client-side-custom-helpers}
 
 Gli assistenti lato client sono script Handlebars registrati mediante chiamata `Handlebars.registerHelper()`.
-Ad esempio:
+Esempio:
 
 ### custom-helpers.js {#custom-helpers-js}
 
