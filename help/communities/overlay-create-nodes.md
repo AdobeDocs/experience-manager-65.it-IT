@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,6 @@ Sovrapponete il sistema dei commenti a una versione personalizzata copiando il n
 >[!CAUTION]
 >
 >Il contenuto della cartella /libs non viene mai modificato perché qualsiasi reinstallazione o aggiornamento potrebbe eliminare o sostituire la cartella /libs mentre il contenuto della cartella /apps non viene toccato.
-
 
 L’utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) in un’istanza di authoring inizia con la creazione di un percorso nella cartella /apps identico al percorso dei componenti sovrapposti nella cartella /libs.
 
@@ -82,9 +81,6 @@ Alcuni nodi del percorso sono cartelle e alcuni sono componenti.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
->
-
 
 
 La proprietà `Type`(proprietà `sling:resourceType`) della sovrapposizione deve essere un riferimento autonomo relativo, in modo che qualsiasi contenuto non trovato in /apps venga ricercato in /libs.
