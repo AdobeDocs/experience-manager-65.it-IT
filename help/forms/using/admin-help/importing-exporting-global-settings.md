@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Puoi importare ed esportare le definizioni dei modelli di ricerca e le impostazi
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 Ad esempio, potete passare da un ambiente di sviluppo a un ambiente di produzione esportando le definizioni dei modelli di ricerca e le impostazioni globali da un ambiente e importandole nell&#39;altro.
 
@@ -65,7 +68,7 @@ Dopo aver esportato il file delle impostazioni globali, potete modificare le imp
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
 Il file delle impostazioni globali di Workspace include le seguenti impostazioni:
 
@@ -79,13 +82,13 @@ Le impostazioni *specialRoutes* specificano le proprietà delle route speciali, 
 **client_specialRoutes_route_Denunce_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretato come &quot;negazione&quot;. Le stringhe seguono la distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è Rifiuta. Se l&#39;utente di Workbench utilizza la parola Rifiuta in un processo, la parola non verrà riconosciuta. Per personalizzare il pulsante di route, è necessario aggiungere la parola Rifiuta e applicare lo stile al pulsante.
 
 **client_specialRoutes_route_nega_stile:** Nome dello stile che si trova nel file tema Workspace, che identifica le icone dei pulsanti di rifiuto. Lo stile deve includere valori per un&#39;icona abilitata e un&#39;icona disattivata. Per definire uno stile per un pulsante personalizzato, è necessario utilizzare il modello seguente:
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` client_ **specialRoutes_route_authorized_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretato come &quot;approvato&quot;. Le stringhe seguono la distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è approva. Se l&#39;utente di Workbench utilizza la parola Approva in un processo, la parola non verrà riconosciuta. Per personalizzare il pulsante di route, è necessario aggiungere la parola Approva a questa impostazione e applicare lo stile al pulsante.
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_route_authorized_names:** La varietà di stringhe che un utente di Workbench può utilizzare per essere interpretato come &quot;approvato&quot;. Le stringhe seguono la distinzione tra maiuscole e minuscole. Ad esempio, il valore predefinito è approva. Se l&#39;utente di Workbench utilizza la parola Approva in un processo, la parola non verrà riconosciuta. Per personalizzare il pulsante di route, è necessario aggiungere la parola Approva a questa impostazione e applicare lo stile al pulsante.
 
 **client_specialRoutes_names:** Tasti utilizzati per individuare il valore stringa personalizzato dai file delle risorse. Ogni voce in questa impostazione deve includere i valori per i nomi e lo stile.
 
 ### Impostazioni JGroup {#jgroup-settings}
 
-Queste impostazioni vengono visualizzate solo se l&#39;utente ha effettuato l&#39;aggiornamento da Adobe LiveCycle ES 2.5 o versioni precedenti.
+Queste impostazioni vengono visualizzate solo se sono stati aggiornati dall&#39;LiveCycle  Adobe ES 2.5 o versioni precedenti.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** Tempo massimo di attesa dei messaggi dell&#39;evento da parte del gruppo JG. Questa impostazione non deve essere modificata.
 
@@ -103,7 +106,7 @@ Le proprietà rimanenti in questa impostazione non devono essere modificate.
 
 **server_remoteevents_JGroupName:** Il nome del gruppo JG utilizzato per la comunicazione degli eventi remoti. Questo valore viene generato in modo casuale per evitare conflitti nei cluster. Questo valore non deve essere modificato.
 
-Per ulteriori informazioni su gruppi JG e Workspace, consulta Area di lavoro [JGroups e moduli AEM - Spiegazione](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+Per ulteriori informazioni sui gruppi di lavoro e su gruppi di lavoro, vedere Area di lavoro [JGroups e moduli AEM - Spiegazione](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
 
 ### impostazioni di formView {#formview-settings}
 
@@ -123,9 +126,9 @@ Per ulteriori informazioni su gruppi JG e Workspace, consulta Area di lavoro [JG
 
 **server_debugLevel:** Non modificate questa impostazione.
 
-**client_pollingInterval:** Imposta l&#39;intervallo di polling (in secondi) utilizzato nell&#39;area di lavoro Flex (obsoleto per i moduli AEM su JEE) per rilevare le attività nuove e modificate. Il valore predefinito è 3 secondi. Ciò non funziona per AEM Forms Workspace.
+**client_pollingInterval:** Imposta l&#39;intervallo di polling (in secondi) utilizzato nell&#39;area di lavoro Flex (obsoleto per i moduli AEM su JEE) per rilevare le attività nuove e modificate. Il valore predefinito è 3 secondi. Questo non funziona per  AEM Forms Workspace.
 
-**client_systemContext_name:** Specificate un nome personalizzato (ad esempio, Cittadino) da visualizzare nel campo Aggiunto da (nella scheda Allegati) per gli allegati di un’attività in AEM Forms Workspace.
+**client_systemContext_name:** Specificare un nome personalizzato (ad esempio, Cittadino) da visualizzare nel campo Aggiunto da (nella scheda Allegati) per gli allegati di un’attività in  AEM Forms Workspace.
 
 Per definire il nome personalizzato:
 
@@ -133,4 +136,6 @@ Per definire il nome personalizzato:
 
 >[!NOTE]
 >
->Per l&#39;applicazione Demo, il nome visualizzato predefinito è **Cittadino**. Per un&#39;applicazione personalizzata creata dall&#39;utente, il nome visualizzato predefinito è **Account** contesto di sistema.***client_idleTimeout:** Quando un utente rimane inattivo per un periodo di tempo specifico, la sessione di AEM Forms Workspace scade. Per abilitare la funzione, aggiungete una voce alle impostazioni globali &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Potete specificare il valore 0 per disattivare il timeout di inattività. Il tempo viene specificato in secondi.
+>Per l&#39;applicazione Demo, il nome visualizzato predefinito è **Cittadino**. Per un&#39;applicazione personalizzata creata dall&#39;utente, il nome visualizzato predefinito è **Account** contesto di sistema.
+>
+>**client_idleTimeout:** Quando un utente rimane inattivo per un determinato periodo di tempo,  sessione di AEM Forms Workspace scade. Per abilitare la funzione, aggiungete una voce alle impostazioni globali &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Potete specificare il valore 0 per disattivare il timeout di inattività. Il tempo viene specificato in secondi.
