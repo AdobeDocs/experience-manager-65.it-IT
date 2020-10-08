@@ -1,8 +1,8 @@
 ---
 title: Componenti di Communities
 seo-title: Componenti di Communities
-description: Aggiunta di funzioni per la community Internet a qualsiasi sito AEM
-seo-description: Aggiunta di funzioni per la community Internet a qualsiasi sito AEM
+description: Aggiunta di funzioni per la community a qualsiasi sito AEM
+seo-description: Aggiunta di funzioni per la community a qualsiasi sito AEM
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 44%
@@ -27,14 +27,13 @@ Con una licenza di AEM Communities, oltre a creare siti di community, è possibi
 
 Per ulteriori informazioni sulla creazione di un sito community, visitate:
 
-* [Panoramica sui AEM Communities](/help/communities/overview.md)
+* [Panoramica di AEM Communities](/help/communities/overview.md)
 * [Guida introduttiva di AEM Communities](/help/communities/getting-started.md)
-* [Guida introduttiva ai AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md)
+* [Guida introduttiva  AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
 >Se non avete familiarità con l’ambiente di authoring, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida all’authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
-
 
 ## Componenti community disponibili {#available-communities-components}
 
@@ -81,8 +80,7 @@ Vedere anche la guida [interattiva sui componenti](/help/communities/components-
 
 >[!NOTE]
 >
->Il componente del sondaggio non è più disponibile e supportato in  Experience Manager Communities.
-
+>Il componente del sondaggio non è più disponibile e supportato in  Community Experience Manager.
 
 ## Documentazione di Community correlate {#related-communities-documentation}
 
