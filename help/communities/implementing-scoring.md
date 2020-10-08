@@ -72,7 +72,7 @@ Nella versione sono inclusi tre simboli basati sui ruoli:
 
    `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
-* **membro privilegiato**
+* **privileged member**
 
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
