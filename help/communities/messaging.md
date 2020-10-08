@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-La funzione di messaggistica per i AEM Communities consente ai visitatori del sito (membri) che hanno effettuato l’accesso di inviare messaggi a un altro utente accessibili una volta entrati nel sito.
+La funzione di messaggistica di  AEM Communities consente ai visitatori del sito che hanno effettuato l’accesso (membri) di inviare messaggi a un altro utente accessibili una volta effettuato l’accesso al sito.
 
 La messaggistica è abilitata per un sito community selezionando una casella durante la creazione [del sito](/help/communities/sites-console.md)community.
 
@@ -33,7 +33,7 @@ Per ulteriori informazioni per gli sviluppatori, consulta [Messaging Essentials]
 
 ## Servizio Operazioni di messaggistica {#messaging-operations-service}
 
-Il servizio [Operazioni messaggistica](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities di configurazione identifica l&#39;endpoint che gestisce le richieste relative ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
+La configurazione [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica l&#39;endpoint che gestisce le richieste correlate ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
 
 Per i siti della community creati utilizzando l&#39; `Communities Sites console`, esiste già un&#39;istanza del servizio, con la casella in entrata impostata su `/mail/inbox`.
 
@@ -113,7 +113,7 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **Tipo di allegato  inserii nell&#39;elenco Bloccati**
 
-   Un  inserire nell&#39;elenco Bloccati di estensioni del nome file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non  inserire nell&#39;elenco Bloccati, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
+   Un  inserii nell&#39;elenco Bloccati di estensioni di nomi file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non  inserire nell&#39;elenco Bloccati, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
 
 * **Tipi di allegati consentiti**
 
@@ -135,10 +135,9 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 >
 >Per consentire tutte le estensioni di file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona **-** per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
 
-
 ## Group Messaging {#group-messaging}
 
-Per consentire agli utenti registrati di inviare messaggi diretti in massa a gruppi di utenti, accertatevi di **abilitare i messaggi** di gruppo nelle due seguenti istanze della configurazione **Messaging Operation Services** :
+Per consentire agli utenti registrati di inviare messaggi diretti in massa a gruppi di utenti, accertatevi di **abilitare i messaggi** di gruppo nelle due istanze seguenti della configurazione **Messaging Operation Services** :
 
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
