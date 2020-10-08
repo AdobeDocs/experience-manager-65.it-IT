@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Panoramica {#overview}
 
-Le funzioni AEM Communities spesso richiedono che i visitatori del sito siano registrati e connessi prima di partecipare a una community nell’ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell’ambiente di pubblicazione e sono comunemente denominati *membri* per distinguerli dagli *utenti* registrati nell’ambiente di authoring.
+ funzioni AEM Communities spesso richiedono che i visitatori del sito siano registrati e connessi prima di partecipare a una community nell’ambiente di pubblicazione. La registrazione degli utenti è necessaria solo nell’ambiente di pubblicazione e sono comunemente denominati *membri* per distinguerli dagli *utenti* registrati nell’ambiente di authoring.
 
 ### Membri (utenti) in Pubblica {#members-users-on-publish}
 
@@ -39,7 +39,6 @@ Per gestire utenti e gruppi registrati nell’ambiente di *authoring* , è neces
 >
 >Con il contenuto di esempio distribuito e attivato, molti utenti di esempio esistono sia nell’ambiente di creazione che nell’ambiente di pubblicazione. Questi utenti non saranno presenti se eseguiti con [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
-
 ## Console Membri {#members-console}
 
 Nell’ambiente di authoring, per accedere alla console Membri per la gestione dei membri registrati nell’ambiente di pubblicazione:
@@ -49,7 +48,6 @@ Nell’ambiente di authoring, per accedere alla console Membri per la gestione d
 >[!CAUTION]
 >
 >Non sarà possibile utilizzare la console Membri se il servizio [](deploy-communities.md#tunnel-service-on-author) tunnel non è abilitato.
-
 
 ![member-console1](assets/member-console1.png)
 
@@ -66,7 +64,7 @@ Selezionate l’icona di ricerca a sinistra dell’ `Members` intestazione per c
 
 ### Statistiche membri {#member-statistics}
 
-Le colonne che vengono visualizzate `Views`, `Posts`e `Follows` vengono aggiornate quando l&#39;utente è membro di uno o più siti della community con Adobe  Analytics `Likes` abilitato [](sites-console.md#analytics).
+Le colonne che vengono visualizzate `Views`, `Posts`e `Follows` vengono aggiornate quando l&#39;utente è membro di uno o più siti della community con  Adobe Analytics `Likes` abilitato [](sites-console.md#analytics).
 
 ### Esporta CSV {#export-csv}
 
@@ -174,7 +172,6 @@ Per accedere alla console Gruppi:
 >[!CAUTION]
 >
 >Non sarà possibile utilizzare la console Gruppi se il servizio [](deploy-communities.md#tunnel-service-on-author) tunnel non è abilitato.
-
 
 ### Crea nuovo gruppo {#create-new-group}
 
