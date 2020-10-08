@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 2%
@@ -50,8 +50,8 @@ Questa home page include quattro voci di menu: `Assignments, Ski Catalog, What's
 >[!NOTE]
 >
 >È possibile concedere l&#39;accesso anonimo a un sito di abilitazione senza consentire ai visitatori del sito di registrarsi autonomamente.
+>
 >Se una risorsa di abilitazione è impostata su `show in catalog` e `allow anonymous access`, i visitatori anonimi del sito potranno visualizzare le risorse nel catalogo.
-
 
 ### Impedire l&#39;accesso anonimo su JCR {#prevent-anonymous-access-on-jcr}
 
@@ -59,7 +59,7 @@ Un limite noto espone il contenuto del sito della community ai visitatori anonim
 
 Per proteggere i contenuti del sito della community dall&#39;accesso di utenti anonimi tramite contenuti jcr e json, procedi come segue:
 
-1. Nell’istanza di creazione di AEM, andate a https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;nome sito>.html.
+1. AEM’istanza di creazione, andate a https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;nome sito>.html.
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ Una volta effettuato l&#39;accesso, viene visualizzata una nuova voce di menu `A
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
-La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Quinn è il contatto moderatore e di abilitazione delle risorse e non è stato registrato in alcuna risorsa di abilitazione o percorsi di apprendimento, pertanto non c&#39;è nulla da visualizzare.
+La pagina principale è identificata dalla prima voce di menu, Assegnazioni. Quinn è il contatto con le risorse di moderatore e abilitazione e non è stato registrato in alcuna risorsa di abilitazione o percorsi di apprendimento, pertanto non c&#39;è nulla da visualizzare.
 
 ### Amministrazione {#administration}
 
@@ -177,12 +177,12 @@ Passando il puntatore su una scheda di commento vengono visualizzate le azioni d
 
 Esistono due modi per accedere ai rapporti sugli studenti e alle risorse di abilitazione.
 
-All&#39;autore, andate alla console **[Community,](resources.md)**Risorse, in cui vengono gestite le risorse di abilitazione, e dopo aver selezionato un sito community, è possibile generare rapporti per
+All&#39;autore, andate alla console **[Community,](resources.md)** Risorse, in cui vengono gestite le risorse di abilitazione, e dopo aver selezionato un sito community, è possibile generare rapporti per
 
 * Tutte le risorse di abilitazione e i percorsi di apprendimento
 * Una risorsa di abilitazione o un percorso di apprendimento specifico
 
-Andate alla console **[Community,](reports.md)**Rapporti e generate i rapporti in base a:
+Andate alla console **[Community,](reports.md)** Rapporti e generate i rapporti in base a:
 
 * Assegnazioni per abilitare risorse e percorsi di apprendimento
 * Post a un sito community su un periodo specifico
@@ -209,7 +209,7 @@ Con una piccola attività e un’interazione con le risorse durante la pubblicaz
 * Selezionate l’ `Report` icona per un riepilogo di tutte le risorse.
 * Selezionare una risorsa, quindi l&#39; `Report` icona relativa a un rapporto sulla risorsa.
 
-È probabile che la visualizzazione dei dati di Adobe  Analytics sia troppo presto, e che la visualizzazione potrebbe richiedere da 1 a 12 ore. Tuttavia, il reporting SCORM di base è già disponibile.
+Notare che è probabile che troppo presto per visualizzare i dati da  Adobe Analytics, che può richiedere da 1 a 12 ore di visualizzazione. Tuttavia, il reporting SCORM di base è già disponibile.
 
 #### Rapporto sulle risorse sulle lezioni di sci {#ski-lessons-resource-report}
 
@@ -251,7 +251,7 @@ Per i rapporti sulle visualizzazioni:
 
 * Per l’autore, effettuate l’accesso con privilegi amministrativi.
 * Vai a **[!UICONTROL Community]** > **[!UICONTROL Rapporti]** > Rapporto **** visualizzazioni.
-* Selezionate un **sito **dal menu a discesa (selezionate`Enablement Tutorial`).
+* Selezionate un **sito** dal menu a discesa (selezionate `Enablement Tutorial`).
 
 * Selezionate Tipo **[!UICONTROL di]** contenuto (selezionate `all`).
 
