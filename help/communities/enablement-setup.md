@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 1%
@@ -47,7 +47,6 @@ Per  AEM Communities,
 >[!NOTE]
 >
 >Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](../../help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](../../help/sites-authoring/qg-page-authoring.md)di authoring.
-
 
 ## Installa ultima versione di Communities {#install-latest-communities-release}
 
@@ -123,7 +122,6 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 >
 >In seguito verranno invece [assegnati al gruppo](enablement-create-site.md#assignuserstocommunityenablemembersgroup)di membri.
 
-
 ### Riley Taylor - Iscritto {#riley-taylor-enrollee}
 
 [Create un membro](members.md#create-new-member) che verrà aggiunto a un gruppo di utenti in formazione, il gruppo Community Ski Class.
@@ -178,7 +176,6 @@ Un quarto utente viene creato nell’ambiente di authoring e gli viene assegnato
 >[!NOTE]
 >
 >Durante la creazione del sito, i membri e i gruppi esistenti possono essere aggiunti al gruppo di membri del sito.
-
 
 ## Ruolo amministratore community {#community-administrator-role}
 
