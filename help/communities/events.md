@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 4%
@@ -112,7 +112,7 @@ Per i componenti Community consegnati nella release, le tabelle seguenti descriv
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| NEGA | Il contenuto del membro viene negato |
+| NEGA | Il contenuto del membro è rifiutato |
 | FLAG-AS-INAPPROPRIATE | Il contenuto del membro è contrassegnato |
 | INAPPROPRIATO | Il contenuto del membro non è contrassegnato |
 | ACCETTARE | Il contenuto del membro è approvato dal moderatore |
@@ -128,7 +128,6 @@ L&#39;evento personalizzato sostituisce il metodo in `getVerb()` modo che `verb`
 >[!NOTE]
 >
 >Verifica che un&#39;estensione personalizzata sia registrata con una classificazione inferiore a qualsiasi implementazione esistente nel prodotto.
-
 
 ### Pseudo-Code per evento componente personalizzato {#pseudo-code-for-custom-component-event}
 
