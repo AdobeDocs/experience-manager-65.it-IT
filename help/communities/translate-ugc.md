@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 1%
@@ -52,7 +52,6 @@ Quando si [crea un sito](sites-console.md)community, il servizio di traduzione p
 >
 >Per un sistema di produzione, è necessario un servizio di traduzione con licenza. Se non si dispone di una licenza, il servizio di traduzione predefinito deve essere [disattivato](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
-
 ## Traduzione globale di UGC {#global-translation-of-ugc}
 
 Quando un sito Web contiene più copie [in](../../help/sites-administering/tc-prep.md)lingua, il servizio di traduzione predefinito non riconosce che l’UGC immesso in un sito possa essere correlato all’UGC immesso in un altro sito, come nel caso in cui l’UGC sia, essenzialmente, generato dallo stesso componente (la copia in lingua della pagina contenente il componente).
@@ -70,7 +69,6 @@ Ad esempio, se un forum è stato creato sul sito di base, le copie della lingua 
 >Mentre l&#39;UGC è ancora nello store [](working-with-srp.md)comune, si trova nella posizione UGC specifica per la lingua, mentre il nuovo contenuto, aggiunto dopo la configurazione della traduzione globale, viene recuperato dal percorso dello store condiviso globale.
 >
 >Non è disponibile uno strumento di migrazione per spostare o unire contenuto specifico della lingua nello store condiviso globale.
-
 
 ### Configurazione integrazione traduzione {#translation-integration-configuration}
 
@@ -146,7 +144,6 @@ Il nuovo servizio cloud per l’integrazione della traduzione dovrà essere atti
 >La lingua preferita è la preferenza della lingua impostata nel profilo di un utente, quando il visitatore del sito ha effettuato l’accesso e ha specificato una preferenza per la lingua.
 >
 >Quando il visitatore del sito è anonimo o non ha specificato una preferenza di lingua nel suo profilo, la lingua preferita è la lingua di base del modello di pagina.
-
 
 ### Preferenze utente {#user-preference}
 
