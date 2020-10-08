@@ -3,7 +3,7 @@ title: Cartelle private per condividere le risorse
 description: Scoprite come creare una cartella privata in [!DNL Adobe Experience Manager Assets] e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2bd850ff421494dda83bafb59fa695365498bbbe
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 1%
@@ -82,4 +82,5 @@ Per eliminare una cartella, selezionatela e selezionate l’opzione [!UICONTROL 
 >[!NOTE]
 >
 >Se eliminate una cartella utilizzando il metodo indicato sopra dall’interfaccia utente, vengono eliminati anche i gruppi di utenti associati.
-Tuttavia, i gruppi di utenti ridondanti, non utilizzati e generati automaticamente possono essere eliminati dall’archivio utilizzando `clean` il metodo JMX nell’istanza di creazione (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>
+>Tuttavia, i gruppi di utenti ridondanti, non utilizzati e generati automaticamente possono essere eliminati dall’archivio utilizzando `clean` il metodo JMX nell’istanza di creazione (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
