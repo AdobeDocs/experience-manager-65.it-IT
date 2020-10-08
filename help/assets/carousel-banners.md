@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4813'
 ht-degree: 4%
@@ -243,7 +243,8 @@ Consulta Frammento [](/help/sites-authoring/experience-fragments.md)esperienza.
 >[!NOTE]
 >
 >Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorporate il visualizzatore in un frammento esperienza.
-Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
+>
+>Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
 
 Quando aggiungete punti di attivazione o mappe immagine a un’immagine, ricordate di salvare il lavoro. Le opzioni Annulla e Ripristina, accanto all’angolo superiore destro della pagina, sono supportate durante la sessione di creazione/modifica corrente.
 
@@ -311,7 +312,7 @@ Consulta Frammenti [](/help/sites-authoring/experience-fragments.md)esperienza.
 
          >[!NOTE]
          Gli strumenti di condivisione social media in Carosello Banner non sono supportati quando incorporate il visualizzatore in un frammento esperienza.
-Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
+         Per ovviare a questo problema, potete usare o creare predefiniti per visualizzatori privi di strumenti per la condivisione social media. Tali predefiniti per visualizzatori consentono di incorporarli correttamente nei frammenti esperienza.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    Potete anche visualizzare l’anteprima dell’aspetto del banner del carosello. Consultate [(Facoltativo) Anteprima Dei Banner](#optional-previewing-carousel-banners)Carosello.
