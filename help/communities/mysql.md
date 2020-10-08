@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 2%
@@ -140,9 +140,6 @@ Prima di installare i dati, assicurarsi di installare lo schema.
 >* [Configurazione JDBC](#configure-jdbc-connections)
 >* [Configurazione SCORM](#configure-scorm)
 
->
-
-
 
 #### Passaggio 1: apri file SQL {#step-open-sql-file}
 
@@ -158,7 +155,7 @@ In MySQL Workbench
 
 #### Passaggio 2: execute SQL Script {#step-execute-sql-script}
 
-Nella finestra Workbench per il file aperto al passaggio 1, selezionare l&#39;opzione `lightening (flash) icon` da eseguire.
+Nella finestra Workbench per il file aperto al passaggio 1, selezionare il file `lightening (flash) icon` da eseguire.
 
 L&#39;esecuzione dello `database_scormengine.sql` script per la creazione del database SCORM potrebbe richiedere alcuni minuti.
 
@@ -195,7 +192,7 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
 
 * Immettete i seguenti valori:
    * **[!UICONTROL Classe]** driver JDBC: `com.mysql.jdbc.Driver`
-   * **Connessione DBC URIJ **:`jdbc:mysql://localhost:3306/aem63reporting`specificare il server al posto di localhost se MySQL Server non è uguale a &#39;this&#39; AEM server.
+   * **Connessione DBC URIJ**: `jdbc:mysql://localhost:3306/aem63reporting` specificare il server al posto di localhost se MySQL Server non è uguale a &#39;this&#39; AEM server.
    * **[!UICONTROL Nome utente]**: Radice o immettere il nome utente configurato per MySQL Server, se non &#39;root&#39;.
    * **[!UICONTROL Password]**: Deselezionare questo campo se non è impostata alcuna password per MySQL, altrimenti immettere la password configurata per il nome utente MySQL.
    * **[!UICONTROL Nome]** origine dati: Nome immesso per la connessione [](#new-connection-settings)MySQL, ad esempio &quot;enablement&quot;.
@@ -203,9 +200,9 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
 
 ## Configura punteggio {#configure-scorm}
 
-### Servizio ScormEngine AEM Communities {#aem-communities-scormengine-service}
+###  AEM Communities ScormEngine Service {#aem-communities-scormengine-service}
 
-La configurazione OSGi per il servizio **ScormEngine** AEM Communities configura SCORM per l&#39;utilizzo del server MySQL da parte di una comunità di abilitazione.
+La configurazione OSGi per **AEM Communities ScormEngine Service** configura SCORM per l&#39;utilizzo del server MySQL da parte di una comunità di abilitazione.
 
 Questa configurazione è presente quando viene installato il pacchetto [](deploy-communities.md#scorm-package) SCORM.
 
@@ -229,7 +226,7 @@ Quando MySQL viene eseguito su un server diverso da AEM, il nome host del server
 * Per quanto riguarda il seguente parametro:
    * **[!UICONTROL Password]** utente scorm: NON MODIFICARE
 
-      Solo per uso interno: È per un utente di servizio speciale utilizzato dai AEM Communities per comunicare con il motore di punteggio.
+      Solo per uso interno: È per un utente di servizio speciale utilizzato da  AEM Communities per comunicare con il motore di punteggio.
 * Seleziona **[!UICONTROL Salva]**
 
 ### Filtro  Adobe Granite CSRF {#adobe-granite-csrf-filter}
