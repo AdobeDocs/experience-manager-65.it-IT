@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 1%
@@ -55,11 +55,9 @@ Esempio: `/content/sites/engage/en/configuration`
 >
 >Tutti i nodi del percorso sovrapposto devono essere solo di tipo `Folder`.
 
-
 >[!CAUTION]
 >
 >Se al modello personalizzato viene assegnato il nome *sitepage.hbs*, tutti i siti della community verranno personalizzati.
-
 
 ### Esempio di modello di sito personalizzato {#custom-site-template-example}
 
