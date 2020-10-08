@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 7%
@@ -198,7 +198,6 @@ Nel pannello Aggiungi risorse:
 >[!NOTE]
 >
 >Potete selezionare solo le risorse disponibili allo stesso livello del percorso di apprendimento. Ad esempio, per un percorso di apprendimento creato in un gruppo sono disponibili solo le risorse a livello di gruppo; per un percorso di apprendimento creato in un sito community, le risorse in tale sito sono disponibili per l&#39;aggiunta al percorso di apprendimento.
-
 
 * Seleziona **[!UICONTROL Invia]**.
 
