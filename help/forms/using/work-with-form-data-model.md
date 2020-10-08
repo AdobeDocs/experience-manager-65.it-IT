@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '4162'
+source-wordcount: '4148'
 ht-degree: 0%
 
 ---
@@ -200,9 +200,9 @@ Utilizzare l&#39;attributo request per recuperare le proprietà associate dall&#
    >[!NOTE]
    >
    > * Se usate un modello statico, sovrapponete head.jsp in:
-/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Se usate un modello modificabile, sovrapponete aftemplatedpage.jsp a:
-/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Impostato [!DNL paramMap] per l’attributo request. Ad esempio, includete il seguente codice nel file .jsp nella cartella delle app:
