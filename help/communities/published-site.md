@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Un limite noto espone il contenuto del sito della community ai visitatori anonim
 
 Per proteggere i contenuti del sito della community dall&#39;accesso di utenti anonimi tramite contenuti jcr e json, procedi come segue:
 
-1. Nell’istanza AEM Author, andate a https:// hostname:port/editor.html/content/site/sitename.html.
+1. Nell&#39;istanza di AEM Author, andate a https:// nomehost:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ Una volta effettuato l&#39;accesso come membro della community registrato, potet
    1. Comporre nuovi messaggi diretti da inviare a singoli e gruppi.
 
 * [L&#39;opzione Notifiche](/help/communities/notifications.md) consente di accedere alla sezione delle notifiche, in cui è possibile visualizzare gli eventi di interesse e modificare le impostazioni delle notifiche.
-* [Se disponete di privilegi di moderazione, Amministrazione](/help/communities/published-site.md#moderationlink) vi indirizza alla pagina Moderazione AEM Communities.
+* [Se disponete di privilegi di moderazione, Amministrazione](/help/communities/published-site.md#moderationlink) vi indirizza  pagina Moderazione AEM Communities.
 
 ![adminscreen](assets/adminscreen.png)
 
@@ -107,9 +107,6 @@ Notate che la pagina Calendario è la home page perché il modello di sito di ri
 >
 >* [Componenti](/help/communities/author-communities.md) Community (per autori)
 >* [Componenti, funzioni e funzionalità Essentials](/help/communities/essentials.md) (per sviluppatori)
-
->
-
 
 
 ### Collegamento forum {#forum-link}
