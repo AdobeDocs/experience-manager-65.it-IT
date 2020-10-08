@@ -1,8 +1,8 @@
 ---
 title: Punteggio e distintivi delle community
 seo-title: Punteggio e distintivi delle community
-description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
-seo-description: Il punteggio e i simboli dei AEM Communities consente di identificare e premiare i membri della community
+description: ' punteggio e simboli AEM Communities consente di identificare e premiare i membri della community'
+seo-description: ' punteggio e simboli AEM Communities consente di identificare e premiare i membri della community'
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2884'
 ht-degree: 2%
 
 ---
@@ -24,21 +24,21 @@ ht-degree: 2%
 
 ## Panoramica {#overview}
 
-La funzione AEM Communities punteggio e simboli consente di identificare e premiare i membri della community.
+La funzione  punteggio e distintivi AEM Communities consente di identificare e premiare i membri della community.
 
 I principali aspetti del punteggio e dei simboli sono:
 
 * [Assegnare simboli](#assign-and-revoke-badges) per identificare il ruolo di un membro nella community.
 
 * [Attribuzione di base di simboli](#enable-scoring) ai membri per incoraggiarne la partecipazione (quantità di contenuto creato).
+
 * [Assegnazione avanzata di distintivi](/help/communities/advanced.md) per identificare i membri come esperti (qualità del contenuto creato).
 
 **Tenere presente** che l&#39;assegnazione dei simboli [non è abilitata per impostazione predefinita](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
 >
->La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche una volta che l&#39;interfaccia utente diventa disponibile.
-
+>La struttura di implementazione visibile in CRXDE Lite è soggetta a modifiche una volta che l’interfaccia utente diventa disponibile.
 
 ## Badge {#badges}
 
@@ -76,7 +76,7 @@ Nella versione sono inclusi tre simboli basati sui ruoli:
 
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+   ![assegnatari](assets/assigned-badges.png)
 
 ### Badge aggiudicati {#awarded-badges}
 
@@ -101,14 +101,13 @@ Nel rilascio sono inclusi tre simboli basati sulla ricompensa:
 
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+   ![badge assegnati](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >Le regole di punteggio possono essere configurate per assegnare punti negativi ai post contrassegnati come inappropriati e quindi per influenzare il valore del punteggio. Tuttavia, una volta ottenuto un contrassegno, questo non verrà rimosso automaticamente a causa di modifiche alla regola di riduzione del punto di punteggio o di valutazione.
 >
 >I simboli assegnati possono essere revocati allo stesso modo dei simboli assegnati. Vedere la sezione [Assegna e revoca distintivi](#assign-and-revoke-badges) . I miglioramenti futuri includeranno un&#39;interfaccia utente per gestire i simboli dei membri.
-
 
 ### Badge personalizzati {#custom-badges}
 
@@ -140,13 +139,12 @@ Se il nodo è di tipo `cq:Page` (consigliato), aggiungere le proprietà al `jcr:
 
 | **Proprietà** | **Tipo** | **Descrizione** |
 |---|---|---|
-| badgingRules | Stringa[] | un elenco matrice di regole di [contrassegno](#badging-rules) |
-| scoringRules | Stringa[] | un elenco matrice di regole di [punteggio](#scoring-rules) |
+| badgingRules | Stringa | un elenco matrice di regole di [contrassegno](#badging-rules) |
+| scoringRules | Stringa | un elenco matrice di regole di [punteggio](#scoring-rules) |
 
 >[!NOTE]
 >
 >Se una regola di punteggio non ha alcun effetto sull&#39;assegnazione dei simboli, assicurarsi che la regola di punteggio non sia stata bloccata dalla proprietà ScoringRules della regola di assegnazione contrassegno. Vedere la sezione intitolata [Regole](#badging-rules)di Badging.
-
 
 ### Abilita distintivi per componente {#enable-badges-for-component}
 
@@ -156,12 +154,11 @@ Una proprietà booleana `allowBadges`abilita/disabilita la visualizzazione dei s
 
 #### Esempio: allowBadges per l’istanza del componente Forum {#example-allowbadges-for-forum-component-instance}
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
 >
 >Qualsiasi componente può essere sovrapposto per visualizzare i simboli utilizzando come esempio il codice HBS presente nei forum, QnA e nei commenti.
-
 
 ## Regole di punteggio {#scoring-rules}
 
@@ -169,7 +166,7 @@ Le regole di punteggio sono alla base del punteggio ai fini dell&#39;assegnazion
 
 Molto semplicemente, ogni regola di punteggio è un elenco di una o più regole secondarie. Le regole di punteggio vengono applicate al contenuto del sito della community per identificare le regole da applicare quando i simboli sono abilitati.
 
-Le regole di punteggio vengono ereditate ma non aggiunte. Ad esempio:
+Le regole di punteggio vengono ereditate ma non aggiunte. Esempio:
 
 * Se la pagina2 contiene la regola di punteggio2 e la pagina1 corrispondente contiene la regola di punteggio1.
 * Un&#39;azione su un componente pagina2 richiamerà sia rule1 che rule2.
@@ -191,9 +188,9 @@ I punteggi sono memorizzati in SRP.
 >I nomi delle regole di punteggio devono essere univoci a livello globale; non devono terminare con lo stesso nome.
 >
 >Un esempio di cosa *non* fare:
+>
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
-
 
 ### Regole secondarie punteggio {#scoring-sub-rules}
 
@@ -209,7 +206,7 @@ Per impostazione predefinita, i punti vengono assegnati al membro che agisce a m
 
 Ciascuna regola secondaria può essere inclusa in una o più regole di punteggio.
 
-Il nome della regola secondaria segue in genere il pattern di utilizzo di un *oggetto* , di un *oggetto* e di un *verbo*. Ad esempio:
+Il nome della regola secondaria segue in genere il pattern di utilizzo di un *oggetto* , di un *oggetto* e di un *verbo*. Esempio:
 
 * membro-commento-create
 * membro-ricevente
@@ -228,7 +225,7 @@ Le regole secondarie sono nodi di tipo `cq:Page` con proprietà sul relativo `jc
    <td>Lungo</td>
    <td>
     <ul>
-     <li>obbligatorio; il verbo corrisponde a un'azione evento</li>
+     <li>obbligatorio; il verbo corrisponde a un'azione di evento</li>
      <li>deve essere presente almeno una proprietà verbo</li>
      <li>il verbo deve essere inserito in tutto MAIUSCOLO</li>
      <li>possono essere presenti più proprietà verbo, ma non sono presenti duplicati</li>
@@ -239,7 +236,7 @@ Le regole secondarie sono nodi di tipo `cq:Page` con proprietà sul relativo `jc
   </tr>
   <tr>
    <td><code>topics</code></td>
-   <td>Stringa[]</td>
+   <td>Stringa</td>
    <td>
     <ul>
      <li>optional; limita la regola secondaria ai componenti della community identificati dagli argomenti dell'evento</li>
@@ -310,12 +307,12 @@ Eventuali modifiche o aggiunte apportate alle regole di punteggio o alle regole 
 
 Le regole di assegnazione del tag collegano le regole di punteggio ai simboli specificando:
 
-* Regola di punteggio.
-* Il punteggio necessario per ottenere un contrassegno specifico.
+* Regola punteggio
+* Punteggio necessario per ottenere un contrassegno specifico
 
 Le regole di Badging sono nodi di tipo `cq:Page` con proprietà sul `jcr:content` nodo che correlano le regole di punteggio a valutazioni e simboli.
 
-Le regole per il contrassegno consistono in una `thresholds` proprietà obbligatoria che è un elenco ordinato di punteggi mappati a simboli. I punteggi devono essere ordinati in valore crescente. Ad esempio:
+Le regole per il contrassegno consistono in una `thresholds` proprietà obbligatoria che è un elenco ordinato di punteggi mappati a simboli. I punteggi devono essere ordinati in valore crescente. Esempio:
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -335,10 +332,9 @@ La `scoringRules` proprietà di una regola di contrassegno limita semplicemente 
 
 >[!NOTE]
 >
->Best practice: create immagini del badge univoche per ciascun sito AEM.
+>Best practice: create immagini di contrassegno univoche per ciascun sito AEM.
 
-
-![chlimage_1-101](assets/chlimage_1-101.png)
+![configurazione badging-rule](assets/badging-rule-configuration.png)
 
 <table>
  <tbody>
@@ -349,7 +345,7 @@ La `scoringRules` proprietà di una regola di contrassegno limita semplicemente 
   </tr>
   <tr>
    <td>threshold</td>
-   <td>Stringa[]</td>
+   <td>Stringa</td>
    <td><em>(obbligatorio)</em> Una stringa con più valori nel formato 'numero|percorso'
     <ul>
      <li>number = score</li>
@@ -364,7 +360,7 @@ La `scoringRules` proprietà di una regola di contrassegno limita semplicemente 
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>Stringa[]</td>
+   <td>Stringa</td>
    <td>(<em>facoltativo</em>) Stringa con più valori per limitare la regola di contrassegno agli eventi di punteggio identificati dalle regole di punteggio</td>
   </tr>
  </tbody>
@@ -374,9 +370,9 @@ La `scoringRules` proprietà di una regola di contrassegno limita semplicemente 
 
 Nella release sono incluse due regole di badging corrispondenti alle regole di punteggio dei [forum e dei commenti](#includedscoringrules).
 
-* /libs/settings/community/badging/rules/comments-badging
+* `/libs/settings/community/badging/rules/comments-badging`
 
-* /libs/settings/community/badging/rules/forums-badging
+* `/libs/settings/community/badging/rules/forums-badging`
 
 **Note:**
 
@@ -414,10 +410,7 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *membro-profil
 >L’URL-profilo- *membro*:
 >
 >* Può fare riferimento a un&#39;istanza di autore se il servizio [](/help/communities/users.md#tunnel-service) Tunnel è abilitato.
->* Può trattarsi di un nome oscuro e casuale. Consulta Elenco [di controllo](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) sicurezza per gli ID autorizzabili.
-
->
-
+>* Può trattarsi di un nome oscuro e casuale. Consulta Elenco [di controllo](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) protezione per gli ID autorizzabili.
 
 
 ### Esempi: {#examples}
@@ -454,8 +447,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 >
 >Una nuova proprietà booleana `allowBadges`, abilita/disabilita la visualizzazione dei simboli per un’istanza di componente. Sarà configurabile nelle finestre di dialogo di modifica dei [componenti aggiornate](/help/communities/author-communities.md) tramite una casella di controllo con l’etichetta **Display Badges**.
 
-
-**[Componente](/help/communities/calendar.md)**calendario SocialEvent`topic`= com/adobe/cq/social/calendario
+**[Componente](/help/communities/calendar.md)** calendario SocialEvent `topic`= com/adobe/cq/social/calendario
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -464,7 +456,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | AGGIORNA | evento del calendario del membro o commento modificato |
 | ELIMINA | l&#39;evento o il commento del calendario del membro viene eliminato |
 
-**[Componente](/help/communities/comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
+**[Componente](/help/communities/comments.md)** SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -473,7 +465,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | AGGIORNA | commento del membro è stato modificato |
 | ELIMINA | commento del membro è eliminato |
 
-**[Componente](/help/communities/file-library.md)**Libreria file SocialEvent`topic`= com/adobe/cq/social/fileLibrary
+**[Componente](/help/communities/file-library.md)** Libreria file SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -482,7 +474,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | AGGIORNA | il membro aggiorna una cartella o un file |
 | ELIMINA | il membro elimina una cartella o un file |
 
-**[Componente](/help/communities/forum.md)**forumSocialEvent`topic`= com/adobe/cq/social/forum
+**[Componente](/help/communities/forum.md)** forumSocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -491,7 +483,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | AGGIORNA | argomento forum o risposta del membro è modificato |
 | ELIMINA | l&#39;argomento o la risposta del forum del membro viene eliminata |
 
-**[Componente](/help/communities/blog-feature.md)**JournalSocialEvent`topic`= com/adobe/cq/social/journal
+**[Componente](/help/communities/blog-feature.md)** JournalSocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -500,7 +492,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | AGGIORNA | articolo o commento del blog del membro è stato modificato |
 | ELIMINA | l&#39;articolo o il commento del blog del membro viene eliminato |
 
-**[QnA Component](/help/communities/working-with-qna.md)**SocialEvent`topic`= com/adobe/cq/social/qna
+**[QnA Component](/help/communities/working-with-qna.md)** SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -511,7 +503,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | ANNULLA | la risposta del membro è deselezionata |
 | ELIMINA | la domanda o la risposta QnA del membro viene eliminata |
 
-**[Recensioni Component](/help/communities/reviews.md)**SocialEvent`topic`= com/adobe/cq/social/review
+**[Recensioni Component](/help/communities/reviews.md)** SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -519,14 +511,14 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | AGGIORNA | revisione membro |
 | ELIMINA | la revisione del membro viene eliminata |
 
-**[Classificazione componente](/help/communities/rating.md)**SocialEvent`topic`= com/adobe/cq/social/tally/rating
+**[Classificazione componente](/help/communities/rating.md)** SocialEvent `topic`= com/adobe/cq/social/tally/rating
 
 | **Verbo** | **Descrizione** |
 |---|---|
 | AGGIUNGI VALUTAZIONE | il contenuto del membro è stato valutato |
 | RIMUOVI VALUTAZIONE | il contenuto del membro non è stato valutato |
 
-**[Componente](/help/communities/voting.md)**di voto`topic`= com/adobe/cq/social/tally/Votazione
+**[Componente](/help/communities/voting.md)** di voto `topic`= com/adobe/cq/social/tally/Votazione
 
 | **Verbo** | **Descrizione** |
 |---|---|
@@ -542,7 +534,7 @@ Per i componenti comunità consegnati, le tabelle che seguono descrivono i `verb
 | INAPPROPRIATO | contenuto del membro non contrassegnato |
 | ACCETTARE | il contenuto del membro è approvato dal moderatore |
 | CHIUDI | il membro chiude il commento alle modifiche e alle risposte |
-| APRI | il membro riapre il commento |
+| APRI | riapre commento membro |
 
 ### Eventi componente personalizzati {#custom-component-events}
 
@@ -574,7 +566,7 @@ Se la funzione non funziona come previsto, verificare che i dati siano stati imm
 
 È possibile provare rapidamente il punteggio e il contrassegno utilizzando il sito [Guida introduttiva all&#39;esercitazione](/help/communities/getting-started.md) :
 
-* Accedete a CRXDE Lite in fase di creazione.
+* Accedere al CRXDE Lite sull&#39;autore.
 * Passa alla pagina di base:
 
    * /content/sites/interazione/it/jcr:content
@@ -603,7 +595,7 @@ Se la funzione non funziona come previsto, verificare che i dati siano stati imm
 
 * Selezionate **Salva tutto**.
 
-![chlimage_1-102](assets/chlimage_1-102.png)
+![test-punteggio](assets/test-scoring-badging.png)
 
 Assicuratevi quindi che i componenti forum e commenti consentano la visualizzazione dei simboli:
 
@@ -618,7 +610,7 @@ Assicuratevi quindi che i componenti forum e commenti consentano la visualizzazi
    * **Tipo**: `Boolean`
    * **Valore**: `true`
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![test-forum-component](assets/test-forum-component.png)
 
 Quindi, [ripubblicate](/help/communities/sites-console.md#publishing-the-site) il sito della community.
 
