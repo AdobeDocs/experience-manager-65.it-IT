@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 2%
@@ -97,7 +97,6 @@ Seleziona tutte le caselle di controllo per Gestione [utente](/help/communities/
 >
 >Per un ambiente di produzione, è necessario creare applicazioni Facebook e Twitter personalizzate. Consultate Accesso [social network con Facebook e Twitter](/help/communities/social-login.md).
 
-
 ![impostazioni del sito community](assets/site-settings.png)
 
 #### TAGGING {#tagging}
@@ -125,7 +124,6 @@ Esempio,
 >[!NOTE]
 >
 >[Il servizio](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Tunnel consente la selezione di membri e gruppi esistenti solo nell’ambiente di pubblicazione.
-
 
 ![ruoli utente nel nuovo sito](assets/site-admin-1.png)
 
@@ -228,9 +226,6 @@ UGC non è incluso nel pacchetto del sito.
 >1. Selezionare **[!UICONTROL OK]**.
 >1. (Facoltativo) Selezionare **[!UICONTROL Cancella]** o **[!UICONTROL Forza tentativo]** per ripristinare la coda di replica.
 
->
-
-
 
 ### Selezionate Pubblica {#select-publish}
 
@@ -318,7 +313,6 @@ Per iniziare:
 >
 >Per disattivare, è sufficiente preimpostare il valore della `sling:match` proprietà con &#39;x&#39; - `xlocalhost.4503/$` - e **Salva tutto**.
 
-
 ![optional-step](assets/optional-steps.png)
 
 #### Risoluzione dei problemi: Errore durante il salvataggio della mappa {#troubleshooting-error-saving-map}
@@ -342,5 +336,3 @@ Dopo ogni modifica, ricordate di **salvare** e **pubblicare** nuovamente il sito
 >[!NOTE]
 >
 >Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](/help/sites-authoring/qg-page-authoring.md)di authoring.
-
-
