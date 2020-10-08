@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di Maven for Communities
 seo-title: Utilizzo di Maven for Communities
-description: Jar API AEM Communities e JAR API di AEM Uber
-seo-description: Jar API AEM Communities e JAR API di AEM Uber
+description: ' Jar API AEM Communities e AEM Jar API Uber'
+seo-description: ' Jar API AEM Communities e AEM Jar API Uber'
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Questa sezione della documentazione sui AEM Communities è in aggiunta a:
+Questa sezione della documentazione AEM Communities  si aggiunge a:
 
-* [Creazione di progetti AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Creazione AEM progetti con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Esistono ora due artefatti &quot;uber&quot; che sostituiscono singoli artefatti:
 
-* Jar API di AEM [Communities](#communities-api-jar-artifact)
-* Jar API di AEM [Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM API [Community](#communities-api-jar-artifact)
+* AEM API [Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Artifact API community {#communities-api-jar-artifact}
 
-Di seguito è riportato un esempio di GAV per il Jar API AEM Communities:
+Di seguito è riportato un esempio di GAV per il  Jar API di AEM Communities:
 
 ```xml
 <dependency>
@@ -44,10 +44,10 @@ Di seguito è riportato un esempio di GAV per il Jar API AEM Communities:
 </dependency>
 ```
 
-Verificate che la versione specificata corrisponda alla versione del pacchetto Community installata per i AEM Communities. Per verificare il numero di versione installato:
+Verificate che la versione specificata corrisponda alla versione del pacchetto Community installata per  AEM Communities. Per verificare il numero di versione installato:
 
 1. Effettuate l&#39;accesso con privilegi amministrativi.
-1. Passa a Gestione [](../../help/sites-administering/package-manager.md)pacchetti. Ad esempio, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Passate a Gestione [](../../help/sites-administering/package-manager.md)pacchetti. Ad esempio, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
 1. Individuate il pacchetto: `cq-socialcommunities-pkg-1.x.xxx`
 1. Estraete la versione dal nome del pacchetto:
@@ -59,7 +59,6 @@ Verificate che la versione specificata corrisponda alla versione del pacchetto C
 >Si consiglia di essere aggiornati con la versione più recente di Communities.
 >
 >Visitate la sezione [Ultime release](deploy-communities.md#latest-releases) per identificare la versione più recente.
-
 
 ## Esempio di dipendenza del cielo {#maven-dependency-example}
 
