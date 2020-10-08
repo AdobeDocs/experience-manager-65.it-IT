@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -62,12 +62,11 @@ Nell’ambiente di authoring, per accedere alla console Moderazione
 >
 >L’UGC dell’ambiente di pubblicazione sarà visibile solo per gli autori se l’SRP scelto implementa uno store comune. Ad esempio, per impostazione predefinita l’archivio è JSRP, che non è uno store comune per l’autore e la pubblicazione. Consultate Archiviazione [dei contenuti](/help/communities/working-with-srp.md)della community.
 
-
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## Interfaccia utente della console di moderazione {#moderation-console-ui}
 
-Se si esclude la barra di navigazione a sinistra (visualizzata sull’autore, ma non sulla pubblicazione), l’interfaccia utente di moderazione presenta le seguenti aree principali:
+Se si esclude la barra di navigazione a sinistra (che viene visualizzata sull’autore, ma non sulla pubblicazione), l’interfaccia utente di moderazione presenta le seguenti aree principali:
 
 * **[Barra di navigazione superiore](#top-navigation-bar)**
 * **[Barra degli strumenti](#toolbar)**
@@ -109,7 +108,6 @@ L&#39;area contenuto contiene informazioni per gli UGC inviati:
 > 
 >L&#39;area contenuto presenta uno scorrimento ** infinito, che consente di continuare lo scorrimento fino alla fine del contenuto. La barra degli strumenti rimane in una posizione fissa e visibile sopra l&#39;area contenuto anche durante lo scorrimento.
 
-
 ### Barra Filtro {#ootbfilters}
 
 ![open-filterrail](assets/open-filterrail.png)
@@ -125,7 +123,6 @@ Tuttavia, se selezionate **Domanda** e **In sospeso**, verrà visualizzato solo 
 >[!NOTE]
 >
 >I moderatori della community possono aggiungere segnalibri ai filtri predefiniti nell’interfaccia utente della console di moderazione. Poiché questi filtri vengono aggiunti alla fine dell’URL (come parametri della stringa di query), i moderatori possono tornare ai filtri con segnalibro in un secondo momento e condividere anche questi collegamenti.
-
 
 ![search icon](assets/searchicon.png)
 
@@ -154,7 +151,6 @@ Il sito limita l&#39;UGC di riferimento visualizzato ai post a siti community se
 >Quando un amministratore accede alla console di moderazione in blocco, vengono visualizzati tutti i riferimenti a UGC, compresi i siti non creati con la procedura guidata [di creazione del](/help/communities/sites-console.md)sito, ad esempio gli esempi di Geometrixx.
 >
 >Quando l&#39;accesso alla console di moderazione in blocco viene eseguito in seguito alla pubblicazione da parte di un membro della community affidabile, vengono visualizzati solo i riferimenti a UGC creati per i siti della community in cui il membro è autorizzato a moderare e possono essere filtrati con il filtro Sito.
-
 
 #### Tipo di contenuto {#content-type}
 
@@ -200,12 +196,11 @@ Quando il filtro viene selezionato, il contenuto del dashboard mostrerà UGC che
 
 #### Stato {#status}
 
-Lo stato limita l&#39;UGC di riferimento visualizzato ai post dello stato selezionato, che possono essere uno o più dei messaggi in sospeso, approvati, rifiutati o chiusi, nonché bozza o pianificati per gli articoli del blog e risposta o non risposta alle domande di QnA. Se non è selezionata alcuna opzione, vengono visualizzati tutti gli elementi.
+Lo stato limita l&#39;UGC di riferimento visualizzato ai post dello stato selezionato, che possono essere uno o più dei messaggi in sospeso, approvati, rifiutati o chiusi, nonché bozza o pianificati per gli articoli del blog e risposte o non fornite per le domande di QnA. Se non è selezionata alcuna opzione, vengono visualizzati tutti gli elementi.
 
 >[!NOTE]
 >
 >Se è selezionato solo lo stato Non risposto, il moderatore visualizzerà tutto il contenuto (per tutti i tipi di contenuto) tranne le domande cui è stato risposto. Questo perché la proprietà responsabile della domanda cui è stata fornita la risposta non esiste nel caso di domande senza risposta e altri contenuti quali l&#39;argomento del forum, l&#39;articolo del blog o i commenti.
-
 
 ![stati](assets/statuses.png)
 
@@ -343,7 +338,7 @@ Il contenuto che lascia lo stato in sospeso non può mai tornare a uno stato in 
 
 ![delete](assets/delete.png)
 
-In modalità di selezione singola o in blocco, potete selezionare gli elementi ed eliminarli. L’azione di eliminazione crea una finestra di dialogo di conferma. Una volta eliminati, questi elementi scompaiono immediatamente dall&#39;area contenuto. **Una volta eliminato, l’UGC viene rimosso in modo permanente dall’archivio e non può essere recuperato** in un secondo momento.
+In modalità di selezione singola o in blocco, potete selezionare gli elementi ed eliminarli. L’azione di eliminazione crea una finestra di dialogo di conferma. Una volta eliminati, tali elementi scompaiono immediatamente dall&#39;area contenuto. **Una volta eliminato, l’UGC viene rimosso in modo permanente dall’archivio e non può essere recuperato** in un secondo momento.
 
 #### Chiudi {#close}
 
@@ -359,7 +354,7 @@ Quando si lavora con un singolo post, quando si passa il puntatore sopra di esso
 
 Per tornare alla visualizzazione dell&#39;area contenuto di più post UGC, selezionate la X nell&#39;angolo superiore destro del riquadro dei dettagli di visualizzazione.
 
-Ad esempio:
+Esempio:
 
 ![moderazione](assets/moderation-history.png)
 
@@ -373,7 +368,7 @@ A questo scopo, passate il mouse sul post per visualizzare l&#39; `View Detail` 
 
 Per tornare alla visualizzazione dell&#39;area contenuto di più post UGC, selezionate la X nell&#39;angolo superiore destro del riquadro dei dettagli di visualizzazione.
 
-Ad esempio:
+Esempio:
 
 ![view1](assets/view1.png)
 
