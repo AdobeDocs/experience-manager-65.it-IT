@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -553,8 +553,7 @@ Per configurare i certificati, effettuate le seguenti operazioni:
 
    >[!NOTE]
    >
-   >* Nell&#39;ambiente di produzione, sostituite le credenziali di valutazione con le credenziali di produzione. Prima di aggiornare le credenziali scadute o di valutazione, assicurarsi di eliminare le credenziali di estensioni di Reader precedenti.
-
+   >Nell&#39;ambiente di produzione, sostituite le credenziali di valutazione con le credenziali di produzione. Prima di aggiornare le credenziali scadute o di valutazione, assicurarsi di eliminare le credenziali di estensioni di Reader precedenti.
 
 1. Fate clic su **[!UICONTROL Salva e chiudi]** nella pagina **[!UICONTROL Modifica impostazioni]** utente.
 
