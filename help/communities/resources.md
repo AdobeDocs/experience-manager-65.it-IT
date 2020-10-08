@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 5%
@@ -35,12 +35,9 @@ Per informazioni dettagliate, consultate [Configurazione dell&#39;abilitazione](
 >
 >Se SCORM è installato dopo la creazione del sito community, è necessario ricreare tutte le risorse di abilitazione presenti prima dell&#39;installazione di SCORM.
 
-
-
 >[!NOTE]
 >
 >Con il rilascio di [AEM 6.3](deploy-communities.md#latestfeaturepack) e dei pacchetti di funzioni Community equivalenti [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la funzione di abilitazione non richiede più un database [](mysql.md)MySQL.
-
 
 ## Terminologia {#terminology}
 
@@ -64,7 +61,7 @@ Un percorso di apprendimento è un insieme logico di risorse di abilitazione rag
 
 ### Gruppo di membri {#members-group}
 
-Quando viene creato un sito community, il nome assegnato al sito per l&#39;URL viene utilizzato nella creazione di gruppi [utente specifici per il](users.md) sito configurati con varie autorizzazioni per vari ruoli. Tutti questi gruppi creati automaticamente hanno il prefisso `Community <site-name>`.
+Quando create un sito community, il nome assegnato al sito per l&#39;URL viene utilizzato per la creazione di gruppi [utente specifici per il](users.md) sito configurati con varie autorizzazioni per vari ruoli. Tutti questi gruppi creati automaticamente hanno il prefisso `Community <site-name>`.
 
 Un gruppo di utenti di questo tipo è `Community <site-name> Members` il gruppo, che identifica gli utenti registrati nell&#39;ambiente di pubblicazione come membri della community. Per un esempio, consulta la [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md) .
 
@@ -251,7 +248,6 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 >
 >Se un membro è iscritto sia a una risorsa che a un percorso di apprendimento che fa riferimento a tale risorsa, le assegnazioni mostreranno sia la singola risorsa che la risorsa all&#39;interno del percorso di apprendimento.
 
-
 * **[!UICONTROL Impostazioni social]**
 
    Queste impostazioni controllano se gli utenti in formazione sono in grado di fornire o meno i dati relativi alla risorsa di abilitazione. Le impostazioni [di](sites-console.md#moderation) moderazione sono quelle del sito della comunità padre.
@@ -296,7 +292,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
    ![resourcesInfo](assets/resourceinfo.png)
 
-La creazione della risorsa di abilitazione ha avuto esito positivo e viene nuovamente visualizzata la console Risorse, con la risorsa appena creata selezionata. Da questa console è possibile [gestire la risorsa](#managing-a-resource).
+La creazione della risorsa di abilitazione è riuscita e viene nuovamente visualizzata la console Risorse, con la risorsa appena creata selezionata. Da questa console è possibile [gestire la risorsa](#managing-a-resource).
 
 ## Create a Learning Path {#create-a-learning-path}
 
@@ -327,7 +323,7 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
    (*Facoltativo*) Un&#39;immagine da visualizzare sulla scheda per il percorso di apprendimento nella pagina delle assegnazioni del membro e nella console Risorse. L&#39;immagine viene selezionata dal file system locale del server. Se non viene fornita un’immagine, verrà generata una miniatura per la risorsa caricata.
 
-   ***Nota***: Le dimensioni consigliate per l’immagine non sono più semplicemente 480 x 480 pixel. A causa del design reattivo delle schede a varie dimensioni del browser, la dimensione del display varia da 220x165 pixel a 400x165 pixel.
+   ***Nota***: Le dimensioni immagine consigliate non sono più semplicemente 480 x 480 pixel. A causa del design reattivo delle schede a varie dimensioni del browser, la dimensione del display varia da 220x165 pixel a 400x165 pixel.
 
 * **[!UICONTROL Nome sito]**
 
@@ -389,7 +385,6 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 >
 >Potete selezionare solo le risorse disponibili allo stesso livello del percorso di apprendimento. Ad esempio, per un percorso di apprendimento creato in un gruppo sono disponibili solo le risorse a livello di gruppo; per un percorso di apprendimento creato in un sito community, le risorse in tale sito sono disponibili per l&#39;aggiunta al percorso di apprendimento.
 
-
 * Seleziona **[!UICONTROL Avanti]**.
 
 ### Impostazioni {#settings-1}
@@ -411,7 +406,6 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 >Le risorse di abilitazione a cui si fa riferimento dal percorso di apprendimento non devono elencare gli eventuali associati (studenti).
 >
 >Se un membro è iscritto sia a una risorsa di abilitazione che a un percorso di apprendimento che fa riferimento a tale risorsa, le assegnazioni mostreranno sia la singola risorsa che la risorsa all&#39;interno del percorso di apprendimento.
-
 
 ## Gestione di una risorsa {#managing-a-resource}
 
@@ -543,7 +537,7 @@ Per una risorsa di abilitazione, il Riepilogo report è un elenco di tabelle.
       * Numero di commenti inviati
       * l&#39;eventuale rating attribuito
 
-Per un rapporto sulle risorse del percorso di apprendimento, il Riepilogo report è un elenco di tabelle
+Per un rapporto sulle risorse del percorso di apprendimento, il Riepilogo rapporti è un elenco di tabelle
 
 * Ogni risorsa inclusa nel percorso di apprendimento
    * Stato pubblicazione
