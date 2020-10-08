@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,6 @@ Entrambi i componenti devono essere implementati, soprattutto se si personalizza
 >È consentito un solo sistema di commenti per pagina del sito.
 >
 >Molte funzioni Community includono già un sistema di commenti il cui resourceType può essere modificato per fare riferimento al sistema di commenti esteso.
-
 
 ## Creare il componente Commenti {#create-the-comments-component}
 
