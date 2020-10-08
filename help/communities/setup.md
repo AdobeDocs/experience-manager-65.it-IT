@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 2%
@@ -44,7 +44,6 @@ Per  AEM Communities,
 >[!NOTE]
 >
 >Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](../../help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](../../help/sites-authoring/qg-page-authoring.md)di authoring.
-
 
 ## Installa ultima versione di Communities {#install-latest-communities-release}
 
@@ -95,7 +94,7 @@ Create un utente all’ *autore*, al quale verrà assegnato il ruolo di Amminist
    * Ad esempio, nome utente &#39;admin&#39; / password &#39;admin&#39;
 
 * Dalla console principale, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Protezione]** > **[!UICONTROL Utenti]**.
-* Dal menu **Modifica **, selezionate**[!UICONTROL Aggiungi utente ]**
+* Dal menu **Modifica** , selezionate **[!UICONTROL Aggiungi utente]**
 
 * Nella `Create New User` finestra di dialogo immetti:
 
