@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -33,10 +33,9 @@ Nel momento in cui viene eseguita un&#39;azione per creare un nuovo gruppo commu
 >
 >Le console per la creazione di siti [](/help/communities/sites-console.md)community, modelli [di siti](/help/communities/sites.md)community, modelli [di gruppi](/help/communities/tools-groups.md) community e funzioni [](/help/communities/functions.md) community sono utilizzabili solo nell’ambiente di authoring.
 
-
 ## Console Modelli per gruppi {#group-templates-console}
 
-Per accedere alla console dei modelli dei gruppi nell’ambiente AEM Author:
+Per accedere alla console dei modelli di gruppi nell’ambiente AEM Author:
 
 * Seleziona **strumenti | Community | Modelli di gruppo,** dalla navigazione globale.
 
@@ -78,12 +77,11 @@ Nel pannello Informazioni di base, un nome, una descrizione e se il modello è a
 
 >[!CAUTION]
 >
->Se lavori con AEM 6.1 Communities FP4 o versioni precedenti, non aggiungere una funzione di gruppo a un modello di gruppo.
+>Se lavorate con AEM 6.1 Communities FP4 o versioni precedenti, non aggiungete una funzione di gruppo a un modello di gruppo.
 >
 >La funzione dei gruppi nidificati è disponibile a partire da Community [FP1](/help/communities/communities.md#latestfeaturepack).
 >
 >Non è ancora consentito aggiungere una funzione Groups come prima o unica funzione in un modello.
-
 
 ![Editor modelli di gruppo](assets/template-editor.png)
 
