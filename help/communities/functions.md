@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 7%
@@ -23,12 +23,11 @@ ht-degree: 7%
 
 Il tipo di funzionalità previste da un&#39;esperienza di community è noto. Le funzioni della community Internet sono disponibili come funzioni della community Internet. Essenzialmente, si tratta di una o più pagine precollegate per implementare una funzione community che richiede più di un semplice aggiunta di un componente a una pagina in modalità di creazione. Sono gli elementi costitutivi utilizzati per definire la struttura di un modello [di sito](/help/communities/sites.md) community da cui vengono [creati](/help/communities/sites-console.md)siti community.
 
-Una volta creato un sito community, il contenuto può essere aggiunto alle pagine risultanti utilizzando la modalità [di authoring standard di](/help/sites-authoring/editing-content.md)AEM. Varie funzioni della community sono disponibili nella console delle funzioni community.
+Una volta creato un sito community, il contenuto può essere aggiunto alle pagine risultanti utilizzando la modalità [di authoring standard](/help/sites-authoring/editing-content.md)AEM. Varie funzioni della community sono disponibili nella console delle funzioni community.
 
 >[!NOTE]
 >
 >Le console per la creazione di siti [](/help/communities/sites-console.md)community, modelli [di siti](/help/communities/sites.md)community, modelli [di gruppi](/help/communities/tools-groups.md)community e funzioni [](/help/communities/functions.md) community sono utilizzabili solo nell’ambiente di authoring.
-
 
 ## Console Funzioni community {#community-functions-console}
 
@@ -40,7 +39,7 @@ Per accedere alla console delle funzioni per la community nell’ambiente di aut
 
 ## Funzioni pre-costruite {#pre-built-functions}
 
-Segue una breve descrizione delle funzioni fornite con AEM Communities. Ogni funzione include una o più pagine AEM contenenti componenti Community collegati tra loro in una funzione facilmente incorporata in un modello [di sito](/help/communities/sites.md)community.
+Segue una breve descrizione delle funzioni fornite con  AEM Communities. Ogni funzione include una o più pagine AEM contenenti componenti Community collegati tra loro in una funzione facilmente incorporata in un modello [di sito](/help/communities/sites.md)community.
 
 Un modello di sito community fornisce la struttura di un sito community, inclusi login, profili utente, notifiche, messaggi, menu del sito, ricerca, temi e funzioni di branding.
 
@@ -234,7 +233,6 @@ Quando viene aggiunto a un modello, si apre la finestra di dialogo seguente:
 >
 >Qualsiasi altra funzione, come la funzione [](#page-function)page, deve essere inclusa ed elencata per prima.
 
-
 La funzione Groups (Gruppi) consente ai membri della community di creare sub-community all&#39;interno del sito della community nell&#39;ambiente di pubblicazione.
 
 A seconda delle [impostazioni](/help/communities/sites-console.md#groupmanagement) in cui la funzione Gruppi è inclusa in un modello [di sito](/help/communities/sites.md)community, i gruppi possono essere pubblici o privati e uno o più modelli di gruppo community possono essere configurati per fornire una scelta di modelli quando il gruppo community viene effettivamente creato (ad esempio dall&#39;ambiente di pubblicazione). Un modello [di gruppo](/help/communities/tools-groups.md) community specifica quali funzioni Community vengono create per le pagine del gruppo, ad esempio forum e calendari.
@@ -317,7 +315,7 @@ Il valore predefinito è deselezionato.
 
 ### Funzione Pagina {#page-function}
 
-La funzione page aggiunge una pagina vuota al sito della community che viene collegata alle funzioni del sito della community: login, menu, notifiche, messaggi, temi e branding. Il contenuto viene aggiunto alla pagina utilizzando la modalità [di authoring](/help/sites-authoring/editing-content.md)standard di AEM.
+La funzione page aggiunge una pagina vuota al sito della community che viene collegata alle funzioni del sito della community: login, menu, notifiche, messaggi, temi e branding. Il contenuto viene aggiunto alla pagina utilizzando la modalità [di authoring AEM](/help/sites-authoring/editing-content.md)standard.
 
 Quando viene aggiunta a un modello, l’unica configurazione è [Titolo e Impostazioni](#title-and-url-settings)URL.
 
