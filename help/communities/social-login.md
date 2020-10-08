@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 42606e76742fe7698c4c186208e515ed22adc5a4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2787'
 ht-degree: 1%
@@ -72,7 +72,6 @@ A partire da AEM 6.4 GA e AEM 6.3 SP1 il login per social network è stato aggio
 >
 >Per le versioni AEM precedenti, se si riscontra un&#39;eccezione nei registri **Non è possibile estrarre un token da questo**, eseguire l&#39;aggiornamento all&#39;ultimo CFP per la versione AEM.
 
-
 Per informazioni sulla versione dell&#39;API di Facebook Graph, consultate la finestra di dialogo della modifica dell&#39;API di [Facebook](https://developers.facebook.com/docs/apps/changelog).
 
 ### Creare un&#39;app Facebook {#create-a-facebook-app}
@@ -94,7 +93,6 @@ In generale, a partire dall&#39;API Facebook v2.7:
 >[!NOTE]
 >
 >Per lo sviluppo, http://localhost:4503 funzionerà.
-
 
 Una volta creata l&#39;applicazione, individua le impostazioni ID **** app e Segreto **** app. Queste informazioni sono necessarie per configurare il servizio [cloud di](#createafacebookcloudservice)Facebook.
 
@@ -131,7 +129,6 @@ L&#39;istanza [applicazione e provider](#adobe-granite-oauth-application-and-pro
 
    * Select **[!UICONTROL SAVE]**.
    * **[!UICONTROL Pubblicazione]**.
-
 
 
 
@@ -395,7 +392,6 @@ Ad esempio, http://localhost:4503/system/console/configMgr
 >[!CAUTION]
 >
 >Fare attenzione a non confondere il gestore di autenticazione con un&#39;istanza Facebook o Twitter di *Adobe Granite OAuth Application and Provider*.
-
 
 ![chlimage_1-490](assets/chlimage_1-490.png)
 
