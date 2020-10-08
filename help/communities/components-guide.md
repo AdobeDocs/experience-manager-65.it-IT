@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 2%
@@ -62,7 +62,6 @@ Per attivare la modalità di modifica, al momento dell&#39;authoring, inserire `
 >Per informazioni generali sull’authoring, consulta la guida [rapida all’authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
 >Se non avete familiarità con AEM, consultate la documentazione sulle operazioni di [base](../../help/sites-authoring/basic-handling.md).
-
 
 ### Home page {#home-page}
 
