@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -39,7 +39,7 @@ In SCF, un componente è composto da un POJO SocialComponent, un Modello JS Hand
 
 Un modello JS Handlebars può estendere i componenti JS model/view per gestire l&#39;interazione dell&#39;utente con il componente sul client.
 
-Se un componente deve supportare la modifica dei dati, l&#39;implementazione dell&#39;API SocialComponent può essere scritta per supportare la modifica/il salvataggio di dati simili a oggetti modello/dati nelle applicazioni Web tradizionali. Inoltre, è possibile aggiungere operazioni (controller) e un servizio operativo per gestire le richieste di operazioni, eseguire business logic e richiamare le API negli oggetti modello/dati.
+Se un componente deve supportare la modifica dei dati, l&#39;implementazione dell&#39;API SocialComponent può essere scritta per supportare la modifica/il salvataggio di dati simili a oggetti modello/dati nelle applicazioni Web tradizionali. Inoltre, è possibile aggiungere operazioni (controller) e un servizio operativo per gestire le richieste di operazioni, eseguire business logic e richiamare le API sugli oggetti modello/dati.
 
 L&#39;API SocialComponent può essere estesa per fornire i dati richiesti da un client per un livello di visualizzazione o un client HTTP.
 
@@ -74,7 +74,7 @@ Il framework fornisce alle API l&#39;accesso alle funzionalità sul server e il 
 
 Le API Java forniscono classi e interfacce astratte che possono essere facilmente ereditate o sottoclassificate.
 
-Le classi principali sono descritte nella pagina Personalizzazione [lato](server-customize.md) server.
+Le classi principali sono descritte nella pagina Personalizzazione lato [server](server-customize.md) .
 
 Per informazioni sull&#39;utilizzo di UGC, visitare [Panoramica](srp.md) sui provider di risorse di storage.
 
@@ -183,7 +183,6 @@ La Guida [ai componenti](components-guide.md) della community consente di passar
 >[!NOTE]
 >
 >Per aggiungere un componente a una pagina in modo dinamico, invece di aggiungerlo o includerlo in un modello, vedere [Bendeloading](sideloading.md)per componenti.
-
 
 ### Helper manubrio {#handlebars-helpers}
 
