@@ -131,7 +131,7 @@ Esempio,
 
 Accettate le impostazioni globali predefinite per la [moderazione](/help/communities/sites-console.md#moderation) del contenuto generato dall’utente (UGC).
 
-![moderazione](assets/moderation1.png)
+![moderation](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
