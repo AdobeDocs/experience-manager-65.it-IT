@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4742'
 ht-degree: 1%
@@ -788,10 +788,10 @@ Per configurarli in modo che siano attivati nel Flusso di lavoro, gli utenti dev
 
 1. Aprite la definizione del servizio e abilitate i servizi selezionati a essere richiamati all&#39;interno del flusso di lavoro.
 
->[!NOTE]
-Solo perché un utente abilita il servizio nella pagina Configuration Manager, gli utenti devono comunque impostare una configurazione di servizio per comunicare con i servizi esterni richiesti.
+   >[!NOTE]
+   Solo perché un utente abilita il servizio nella pagina Configuration Manager, gli utenti devono comunque impostare una configurazione di servizio per comunicare con i servizi esterni richiesti.
 
-![pacchetto moduli governativi](assets/aftia-configuration-options.jpg)
+   ![pacchetto moduli governativi](assets/aftia-configuration-options.jpg)
 
 1. Al termine, fare clic sul pulsante Salva per salvare le impostazioni.
 
