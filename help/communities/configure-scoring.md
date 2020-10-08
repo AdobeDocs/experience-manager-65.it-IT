@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -224,15 +224,14 @@ Le schermate dei dati del repository derivano dalla configurazione del punteggio
 >Questo esempio non segue le best practice seguenti:
 >
 >* I nomi delle regole di punteggio devono essere univoci a livello globale; non devono terminare con lo stesso nome.
-   >  Un esempio di cosa *non* fare:
-   >  /libs/settings/community/scoring/rules/site1/forums-scoring
-   >  /libs/settings/community/scoring/rules/site2/forums-scoring
-   >
-   >
-* Creazione di immagini di contrassegno univoche per diversi siti AEM
-
 >
-
+>  
+Un esempio di cosa *non* fare:
+>
+>  /libs/settings/community/scoring/rules/site1/forums-scoring
+>  /libs/settings/community/scoring/rules/site2/forums-scoring
+>
+>* Creazione di immagini di contrassegno univoche per diversi siti AEM
 
 
 ### UGC per punteggio di accesso {#access-scoring-ugc}
