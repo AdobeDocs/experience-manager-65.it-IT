@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c0834e9b70266e8b678771510fb1756c8091ea8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -329,7 +329,6 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 >
 >Se è già stata configurata un&#39;altra funzione di protezione basata sulle chiavi di crittografia, la replica delle chiavi di crittografia potrebbe danneggiare la configurazione. Per assistenza, [contattate l&#39;assistenza](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)clienti.
 
-
 #### Replica archivio {#repository-replication}
 
 È possibile conservare il materiale chiave memorizzato nell&#39;archivio, come nel caso di AEM 6.2 e versioni precedenti, specificando la seguente proprietà di sistema al primo avvio di ogni istanza AEM (che crea l&#39;archivio iniziale):
@@ -339,7 +338,6 @@ Per copiare il materiale chiave dall’autore a tutte le altre istanze, è neces
 >[!NOTE]
 >
 >È importante verificare che l&#39;agente di [replica nell&#39;istanza di creazione](#replication-agents-on-author) sia configurato correttamente.
-
 
 Con il materiale chiave memorizzato nella directory archivio, la procedura per replicare la chiave di crittografia dall’autore ad altre istanze è la seguente:
 
