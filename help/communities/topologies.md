@@ -10,24 +10,27 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 1%
 
 ---
 
 
 # Topologie consigliate per community {#recommended-topologies-for-communities}
 
-A partire da AEM Communities 6.1, è stato adottato un approccio univoco per la gestione del contenuto generato dall’utente (UGC) inviato dai visitatori del sito (membri) dall’ambiente di pubblicazione.
+A partire  AEM Communities 6.1, è stato adottato un approccio univoco per la gestione del contenuto generato dall’utente (UGC) inviato dai visitatori del sito (membri) dall’ambiente di pubblicazione.
 
-Questo approccio è fondamentalmente diverso dal modo in cui la piattaforma AEM gestisce il contenuto del sito generalmente gestito dall’ambiente di authoring.
+Questo approccio è sostanzialmente diverso dal modo in cui la piattaforma AEM gestisce il contenuto del sito generalmente gestito dall’ambiente di authoring.
 
-La piattaforma AEM utilizza un archivio nodi che replica il contenuto del sito dall&#39;autore alla pubblicazione, mentre AEM Communities utilizza un unico store comune per UGC che non viene mai replicato.
+La piattaforma AEM utilizza un archivio nodi che replica il contenuto del sito dall&#39;autore alla pubblicazione, mentre  AEM Communities utilizza un singolo archivio comune per UGC che non viene mai replicato.
 
 Per lo store UGC comune, è necessario scegliere un provider di risorse di [storage (SRP)](working-with-srp.md). Le opzioni consigliate sono:
 
 * [DSRP - Provider di risorse di archiviazione del database relazionale](dsrp.md)
 * [MSRP - Provider di risorse di storage MongoDB](msrp.md)
-* [ASRP - Fornitore di risorse di storage Adobe](asrp.md)
+* [ASRP - Fornitore di risorse di storage  Adobe](asrp.md)
 
 Un&#39;altra opzione SRP, [JSRP - JCR Storage Resource Provider](jsrp.md), non supporta uno store UGC comune per gli ambienti di creazione e pubblicazione per entrambi gli accessi.
 
@@ -35,15 +38,14 @@ La richiesta di uno store comune genera le seguenti topologie consigliate.
 
 >[!NOTE]
 >
->Per AEM Communities, [UGC non viene mai replicato](working-with-srp.md#ugc-never-replicated).
+>Per  AEM Communities, [UGC non viene mai replicato](working-with-srp.md#ugc-never-replicated).
 >
->Se la distribuzione non include uno store [](working-with-srp.md)comune, UGC sarà visibile solo nell’istanza di pubblicazione AEM o di creazione su cui è stato immesso.
+>Se la distribuzione non include uno store [](working-with-srp.md)comune, UGC sarà visibile solo nell’istanza di pubblicazione o di creazione AEM in cui è stato immesso.
 
 
 >[!NOTE]
 >
 >Per ulteriori informazioni sulla piattaforma AEM, consultate Implementazioni [](../../help/sites-deploying/recommended-deploys.md) consigliate e [Introduzione alla piattaforma](../../help/sites-deploying/data-store-config.md)AEM.
-
 
 ## Per la produzione {#for-production}
 
@@ -74,7 +76,7 @@ Quando la topologia è un’azienda di pubblicazione, gli argomenti rilevanti so
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | qualsiasi | JCR | MySQL | DSRP | Sì |
 | qualsiasi | JCR | MongoDB | MSRP | Sì |
-| qualsiasi | JCR | Archiviazione su richiesta di Adobe | ASRP | Sì |
+| qualsiasi | JCR |  Adobe di storage su richiesta | ASRP | Sì |
 
 ### JSRP {#jsrp}
 
@@ -88,7 +90,7 @@ Quando la topologia è un’azienda di pubblicazione, gli argomenti rilevanti so
 
 Per gli ambienti non di produzione, [JSRP](jsrp.md) offre semplicità nella configurazione di un ambiente di sviluppo con un’istanza di authoring e un’istanza di pubblicazione.
 
-Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzione, è anche possibile configurare un ambiente di sviluppo simile utilizzando lo storage su richiesta Adobe o MongoDB. Per un esempio, vedere [Come impostare MongoDB per Demo](demo-mongo.md).
+Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzione, è anche possibile impostare un ambiente di sviluppo simile utilizzando  Adobe di storage on-demand o MongoDB. Per un esempio, vedere [Come impostare MongoDB per Demo](demo-mongo.md).
 
 ## Riferimenti {#references}
 
@@ -108,6 +110,6 @@ Se si sceglie [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) per la produzio
 
    In sostanza, il contenuto del sito viene memorizzato in un archivio nodi. Per le risorse, un archivio dati può essere configurato per memorizzare dati binari. Per Communities, è necessario configurare uno store comune per selezionare l&#39;SRP.
 
-* [Elementi di archiviazione in AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementi di storage in AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Descrive le implementazioni di storage a due nodi: Tar e MongoDB.
