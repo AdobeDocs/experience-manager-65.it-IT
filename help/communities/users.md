@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 0%
@@ -111,7 +111,6 @@ Nell’ambiente di pubblicazione, a seconda delle [impostazioni](sites-console.m
 >
 >Se un visitatore del sito si registra come membro di un sito community aperto, diventa automaticamente membro di altri siti community aperti nello stesso ambiente di pubblicazione.
 
-
 ### Pubblica ruoli gruppo {#publish-group-roles}
 
 | Se membro del gruppo... | Ruolo principale |
@@ -151,7 +150,6 @@ Quando una funzione community non è protetta (non è assegnato alcun gruppo di 
 >[!NOTE]
 >
 >L&#39;aggiunta di un utente a un gruppo di membri privilegiati per un sito community concederà loro privilegi di creazione solo se sono anche membri dello stesso sito community.
-
 
 ## Creazione di membri della community {#creating-community-members}
 
@@ -277,7 +275,7 @@ Quando si discute di gruppi, ci sono due argomenti distinti:
 
 * **[Gruppi community](overview.md#communitygroups)**
 
-   I gruppi comunitari sono le sub-comunità che possono essere create nell&#39;ambiente di pubblicazione per un sito comunitario che supporta la creazione di gruppi di comunità. La creazione di un gruppo community genera un numero maggiore di pagine aggiunte al sito Web e gestite in modo simile al sito della community principale. Per maggiori informazioni, visita [Community Group Essentials](essentials-groups.md) for developers and [Community Group](creating-groups.md) for authors.
+   I gruppi comunitari sono le sub-comunità che possono essere create nell&#39;ambiente di pubblicazione per un sito della comunità che supporta la creazione di gruppi della comunità. La creazione di un gruppo community genera un numero maggiore di pagine aggiunte al sito Web e gestite in modo simile al sito della community principale. Per maggiori informazioni, visita [Community Group Essentials](essentials-groups.md) for developers and [Community Group](creating-groups.md) for authors.
 
 * **[Gruppi di membri](../../help/sites-administering/security.md)**
 
