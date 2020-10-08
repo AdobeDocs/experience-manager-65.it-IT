@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 6%
@@ -34,7 +34,6 @@ Il documento descrive:
 >
 >L&#39;invio anonimo di un commento non è supportato. I visitatori del sito devono registrarsi (diventare membri) ed effettuare l’accesso per partecipare.
 
-
 ### Aggiunta di commenti a una pagina {#adding-comments-to-a-page}
 
 Per aggiungere un `Comments` componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
@@ -52,7 +51,6 @@ Quando sono incluse le librerie [lato client](/help/communities/essentials-comme
 >[!NOTE]
 >
 >Su una pagina può esistere un solo `Comments` componente. Alcune funzioni di Communities includono già commenti, ad esempio blog, calendario, forum, QnA e recensioni.
-
 
 ### Configurazione dei commenti {#configuring-comments}
 
