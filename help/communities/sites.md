@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -25,7 +25,6 @@ La console Modelli per sito è molto simile alla console Modelli [per](tools-gro
 >[!NOTE]
 >
 >Le console per la creazione di siti [](sites-console.md)community, modelli [di siti](sites.md)community, modelli [di gruppi](tools-groups.md) community e funzioni [](functions.md) community sono utilizzabili solo nell’ambiente di authoring.
-
 
 ## Console Modelli per siti {#site-templates-console}
 
@@ -85,7 +84,6 @@ La funzione page fornisce una pagina vuota. La funzione Groups (Gruppi) consente
 >
 >Qualsiasi altra funzione, come la funzione [](functions.md#page-function)page, deve essere inclusa ed elencata per prima.
 
-
 ![site-editor](assets/site-editor.png)
 
 ### Modelli di gruppo per la funzione Gruppi {#group-templates-for-groups-function}
@@ -95,7 +93,6 @@ Quando si inserisce una funzione di gruppo nel modello di sito, la configurazion
 >[!CAUTION]
 >
 >La funzione Groups *non* deve essere né la *prima né l&#39;unica* funzione nella struttura del sito.
-
 
 ![funzioni del sito](assets/site-functions.png)
 
