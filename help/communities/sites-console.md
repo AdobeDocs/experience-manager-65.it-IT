@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 4%
@@ -33,7 +33,6 @@ Consultate [Guida introduttiva  AEM Communities](/help/communities/getting-start
 >[!NOTE]
 >
 >I principali menu Community per la creazione di siti [](/help/communities/sites-console.md)community, modelli [di siti](/help/communities/sites.md)community, modelli [di gruppi](/help/communities/tools-groups.md) community e funzioni [](/help/communities/functions.md) community sono utilizzabili solo nell&#39;ambiente di authoring.
-
 
 ## Prerequisiti {#prerequisites}
 
@@ -92,7 +91,7 @@ Nel pannello Modello del sito sono specificati il Titolo, la Descrizione, la Rad
 
 * **Descrizione del sito community**
 
-   Descrizione del sito.
+   Una descrizione del sito.
 
    La descrizione non viene visualizzata sul sito pubblicato.
 
@@ -115,7 +114,7 @@ Nel pannello Modello del sito sono specificati il Titolo, la Descrizione, la Rad
 
    * Per un URL valido, aggiungete un codice della lingua di base + &quot;.html&quot;
 
-      *Ad esempio*, `https://localhost:4502/content/sites/mysight/en.html`
+      *Esempio*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * **Menu Modello** sito community
 
@@ -149,7 +148,7 @@ Quando create o selezionate un’immagine, tenete presente:
 
 * L’altezza dell’immagine viene ritagliata a 120 pixel dal bordo superiore dell’immagine.
 * L&#39;immagine viene bloccata sul bordo sinistro della finestra del browser.
-* Non è disponibile alcun ridimensionamento dell&#39;immagine, ad esempio quando la larghezza dell&#39;immagine è...
+* L&#39;immagine non viene ridimensionata, pertanto quando la larghezza dell&#39;immagine è impostata su ...
 
    * Con una larghezza inferiore a quella del browser, l&#39;immagine viene ripetuta in orizzontale.
    * Maggiore della larghezza del browser, l&#39;immagine apparentemente verrà ritagliata.
@@ -180,7 +179,6 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano le f
 >
 >A questo scopo, è possibile attivare l’ambiente ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` di authoring.
 
-
 #### USER MANAGEMENT {#user-management}
 
 ![createsitesettings](assets/createsitesettings.png)
@@ -190,7 +188,6 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano le f
 >Si consiglia di [abilitare i siti](/help/communities/overview.md#enablement-community) della community privati (per ulteriori informazioni, contattare il rappresentante commerciale di riferimento).
 >
 >Un sito community è privato quando ai visitatori anonimi viene negato l&#39;accesso, non può registrarsi autonomamente e non può utilizzare il login mediante social network.
-
 
 * **Consenti registrazione utente**
 
@@ -227,7 +224,6 @@ Lasciate deselezionato un sito community *privato* . Il valore predefinito è de
 >**Consentire accessi tramite social network**
 >
 >Anche se le configurazioni Facebook e Twitter di esempio possono esistere e essere selezionabili, per un ambiente [di](/help/sites-administering/production-ready.md)produzione è necessario creare applicazioni Facebook e Twitter personalizzate. Consultate Accesso [social network con Facebook e Twitter](/help/communities/social-login.md).
-
 
 #### TAGGING {#tagging}
 
@@ -403,7 +399,6 @@ Il contenuto di un sito può essere creato con gli stessi strumenti di qualsiasi
 >
 >Se non avete familiarità con AEM, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida alle pagine](/help/sites-authoring/qg-page-authoring.md)di authoring.
 
-
 ## Modifica delle proprietà del sito {#modifying-site-properties}
 
 ![edit-site](assets/edit-site.png)
@@ -450,7 +445,6 @@ Il pannello STRUTTURA consente la modifica della struttura creata inizialmente d
 >
 >È possibile modificare l&#39;ordine di tutte le funzioni nella struttura del sito, ad eccezione della funzione nella parte superiore. Pertanto, la home page del sito community non può essere modificata.
 
-
 >[!CAUTION]
 >
 >* Anche se il titolo visualizzato può essere modificato senza effetti collaterali, si consiglia di non modificare il nome URL di una funzione community appartenente a un sito community.
@@ -458,13 +452,11 @@ Il pannello STRUTTURA consente la modifica della struttura creata inizialmente d
 >
 Ad esempio, la ridenominazione dell’URL non comporterà lo spostamento dell’UGC esistente, con l’effetto di perdere l’UGC.
 
-
 >[!CAUTION]
 >
 >La funzione group *non* deve essere la *prima né l&#39;unica* funzione nella struttura del sito.
 >
 >Qualsiasi altra funzione, come la funzione [](/help/communities/functions.md#page-function)page, deve essere inclusa ed elencata per prima.
-
 
 #### Esempio: Aggiunta di una funzione catalogo a una struttura del sito community {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -552,7 +544,6 @@ Per informazioni dettagliate, consultate [Gestione di utenti e gruppi](/help/com
 >
 viene creato, il servizio [cloud](/help/communities/social-login.md#createafacebookcloudservice) Facebook applicato deve essere configurato per aggiungere utenti a questo gruppo.
 
-
 ## Configura per errore di autenticazione {#configure-for-authentication-error}
 
 Per impostazione predefinita, un sito community si reindirizzerà a una pagina di accesso di esempio quando l&#39;utente immette le credenziali errate e non riesce a effettuare l&#39;accesso. L&#39;accesso di esempio non sarà presente in un server [di](/help/sites-administering/production-ready.md)produzione.
@@ -571,7 +562,7 @@ Per eseguire correttamente il reindirizzamento, una volta che un sito è stato c
 
    `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-   Ad esempio:
+   Esempio:
    `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 * Seleziona **Salva**.
