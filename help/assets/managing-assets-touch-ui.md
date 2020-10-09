@@ -4,9 +4,9 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '9613'
+source-wordcount: '9565'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Quando organizzate una raccolta di risorse, ad esempio tutte `Nature` le immagin
 
 >[!NOTE]
 >
->* La condivisione di una [!DNL Assets] cartella del tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
+>* La condivisione di una [!DNL Assets] cartella di tipo `sling:OrderedFolder` non è supportata quando si condivide un Marketing Cloud. Se desiderate condividere una cartella, non selezionate [!UICONTROL Ordinato] al momento della creazione di una cartella.
 >* [!DNL Experience Manager] non consente l&#39;utilizzo di `subassets` word come nome di una cartella. È una parola chiave riservata al nodo che contiene risorse secondarie per le risorse composte.
 
 
@@ -508,9 +508,6 @@ Se si spostano le risorse trascinandole, non viene aperta la procedura guidata [
 
 1. Fate clic sulla risorsa per aprirne la pagina.
 1. Nell&#39;interfaccia del Experience Manager , selezionare **[!UICONTROL Rendering]** dall&#39;elenco.
-
-   ![Barra a sinistra per aprire il menu e selezionare l&#39;opzione Rendering](assets/renditions_menu.png)
-
 1. Nel pannello **[!UICONTROL Rappresentazioni]** , visualizzate l’elenco delle rappresentazioni generate per la risorsa.
 
    ![Pannello Rappresentazioni nella pagina Dettagli risorse](assets/renditions_panel.png)
@@ -666,10 +663,6 @@ Potete visualizzare, navigare e selezionare le risorse con una qualsiasi delle v
 
 Nelle viste a elenco e a colonne, quando passate il puntatore sulla miniatura della risorsa viene visualizzata l’opzione **[!UICONTROL Seleziona]** .
 
-![Selezionare le risorse nella vista a elenco](assets/select_quick_in_listview.png)
-
-![Selezionare le risorse nella vista a colonne](assets/select_quick_in_columnview.png)
-
 Nella vista a schede, l&#39;opzione **[!UICONTROL Seleziona]** viene visualizzata come azione rapida.
 
 ![Seleziona azione rapida nella vista a schede](assets/select_quick_action.png)
@@ -690,9 +683,7 @@ Gli strumenti di modifica nell’ [!DNL Assets] interfaccia consentono di esegui
 
    * Selezionate la risorsa e fate clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
    * Fate clic sull&#39;opzione **[!UICONTROL Modifica]** che viene visualizzata su una risorsa nella vista a schede.
-   * Fai clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
-
-   ![Opzione Modifica nella barra degli strumenti](assets/do-not-localize/edit_icon.png)
+   * Fate clic su **[!UICONTROL Modifica]** dall’opzione ![Modifica nella barra degli strumenti](assets/do-not-localize/edit_icon.png).
 
 1. Per ritagliare l’immagine, fate clic su **[!UICONTROL Ritaglia]** ![opzione per ritagliare un’immagine](assets/do-not-localize/crop.png).
 
@@ -751,9 +742,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 1. Fate clic sull’opzione **[!UICONTROL Annota]** da una delle seguenti opzioni:
 
    * [Azioni rapide](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa
-
-   ![Opzione Annota](assets/annotate-option.png)
+   * Dalla barra degli strumenti dopo aver selezionato la risorsa o aver aperto la pagina della risorsa.
 
 1. Aggiungi un commento nella casella **[!UICONTROL Commento]** posta nella parte inferiore della timeline. In alternativa, contrassegna un’area sull’immagine e aggiungi un’annotazione nella finestra di dialogo **[!UICONTROL Aggiungi annotazione]**.
 
@@ -768,8 +757,6 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
    >Per un utente non amministratore, i suggerimenti vengono visualizzati solo se l&#39;utente dispone di autorizzazioni di lettura nel `/home` percorso in CRXDE.
 
 1. Dopo aver aggiunto l’annotazione, fate clic su **[!UICONTROL Aggiungi]** per salvarla. Una notifica per l’annotazione viene inviata ad Aaron.
-
-   ![Pulsante Aggiungi per salvare un’annotazione](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -799,12 +786,7 @@ Le annotazioni video sono supportate solo sui browser con formati video compatib
 1. Per visualizzare le annotazioni salvate per una risorsa, andate alla posizione della risorsa e aprite la pagina della risorsa.
 
 1. Nell’interfaccia del Experience Manager , scegliete **[!UICONTROL Timeline]**.
-
-   ![Opzione Timeline disponibile in  Experience Manager](assets/view-timeline.png)
-
 1. Dall’elenco **[!UICONTROL Mostra tutti]** nella timeline, seleziona **[!UICONTROL Commenti]** per filtrare i risultati in base alle annotazioni.
-
-   ![Mostra tutti gli elenchi nella timeline](assets/timeline-show-all-option.png)
 
    Fate clic su un commento nel pannello **[!UICONTROL Timeline]** per visualizzare l’annotazione corrispondente sull’immagine.
 
@@ -833,8 +815,6 @@ Per stampare le annotazioni e verificare lo stato, fare clic su **[!UICONTROL St
    Per stampare solo lo stato della revisione, selezionatelo dalla timeline.
 
 1. Click **[!UICONTROL Print]** from the toolbar.
-
-   ![Opzione Stampa nella barra degli strumenti](assets/do-not-localize/print.png)
 
 1. Nella finestra di dialogo Stampa, scegliete la posizione in cui visualizzare le annotazioni o lo stato della revisione sul PDF. Ad esempio, se desiderate che le annotazioni o lo stato vengano stampati in alto a destra della pagina che contiene l’immagine stampata, utilizzate l’impostazione **In alto a sinistra** . È selezionato per impostazione predefinita.
 
@@ -923,8 +903,6 @@ Potete inoltre abilitare il controllo automatico delle versioni tramite un fluss
 
    * Fate clic su **[!UICONTROL Mostra tutto]** nella [!UICONTROL timeline].
    * Fate clic su **[!UICONTROL Versioni]**. Tutte le versioni create per una risorsa sono elencate nella barra laterale sinistra.
-
-      ![ Opzione Selezione versioni dalla timeline](assets/versions_option.png)
 
    * Selezionate una versione specifica della risorsa e fate clic su **[!UICONTROL Anteprima versione]**.
 
