@@ -8,9 +8,9 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Se la modalità binaria è attivata, i pacchetti di contenuto distribuiti conten
 #### Come si abilita la distribuzione senza binario? {#how-do-i-enable-binary-less-distribution}
 
 Per abilitare la distribuzione binaria, distribuisci con uno store BLOB condiviso.
-Controllate la `useBinaryReferences` proprietà nella configurazione OSGI con il PID di fabbrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*che il vostro agente sta utilizzando.
+Controllate la `useBinaryReferences` proprietà nella configurazione OSGI con il PID di fabbrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* che il vostro agente sta utilizzando.
 
 #### Come è possibile personalizzare i messaggi di errore durante la navigazione nella gerarchia delle pagine AEM console Siti? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
@@ -118,7 +118,7 @@ Per risolvere il problema, potete anche disattivare manualmente il componente tr
 
 #### Come configurare Asset Insights con AEM 6.5 instance? {#how-to-configure-asset-insights-with-aem-instance}
 
-Per impostare e configurare approfondimenti risorse per  Experience Manager distribuito tramite  Attivazione Adobe (DTM), consulta [Configurare approfondimenti risorse con  AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+Per impostare e configurare approfondimenti risorse per  Experience Manager distribuito tramite  Attivazione Adobe (DTM), consulta come [configurare approfondimenti risorse con  AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### Come personalizzare le console di amministrazione? {#how-to-customize-admin-consoles}
 
@@ -140,7 +140,7 @@ L&#39;implementazione semplice della ricerca sono i materiali del laboratorio Su
 
  AEM Assets è un&#39;applicazione della piattaforma AEM che consente ai nostri clienti di gestire le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web, mentre AEM Media Library è una parte designata dell&#39;archivio AEM contenuti WCM in cui vengono memorizzate immagini e altre risorse condivise.
 
-Per ulteriori informazioni, consultate [AEM Assets e AEM MediaLibrary](/help/assets/medialibrary.md) .
+Per ulteriori informazioni, consulta [AEM Assets e AEM MediaLibrary](/help/assets/medialibrary.md) .
 
 #### È possibile creare un plug-in per WordPress che consenta a un cliente di accedere  Adobe Asset Picker per selezionare le immagini? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
