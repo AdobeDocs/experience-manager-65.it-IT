@@ -3,9 +3,9 @@ title: Modelli di risorse
 description: Scopri i modelli delle risorse [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli delle risorse per creare materiale collaterale di marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -50,17 +50,11 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Accertatevi che uno o più modelli INDD siano caricati e disponibili [!DNL Experience Manager] in anticipo. Scegliete un modello per la brochure e fate clic su **[!UICONTROL Avanti]**.
-
-   ![chlimage_1-103](assets/chlimage_1-308.png)
-
 1. Specificate un nome e una descrizione facoltativa per la brochure.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Facoltativo) Fate clic su **[!UICONTROL Tag]** e selezionate uno o più tag per la brochure. Fate clic su **[!UICONTROL Conferma]** per confermare la selezione.
-
-   ![chlimage_1-105](assets/chlimage_1-310.png)
-
 1. Fai clic su **[!UICONTROL Crea]**. Una finestra di dialogo conferma la creazione di una nuova brochure. Fate clic su **[!UICONTROL Apri]** per aprire la brochure in modalità di modifica.
 
    <!--![chlimage_1-106](assets/.png) -->
@@ -92,8 +86,6 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    I modificabili sono visualizzati a destra. Affinché un campo possa essere modificato in [!DNL Experience Manager Assets], il campo corrispondente nel modello deve essere contrassegnato in [!DNL InDesign]. In altre parole, devono essere contrassegnati come modificabili in [!DNL InDesign].
 
-   ![chlimage_1-110](assets/chlimage_1-315.png)
-
    >[!NOTE]
    >
    >Assicuratevi che la [!DNL Experience Manager] distribuzione sia integrata con un [!DNL InDesign Server] sistema per consentire [!DNL Experience Manager Assets] di estrarre i dati dal [!DNL InDesign] modello e renderlo disponibile per la modifica. Per informazioni dettagliate, consultate [Integrazione  risorse di Experience Manager con  InDesign Server](/help/assets/indesign.md).
@@ -106,11 +98,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
 1. Fate clic su **[!UICONTROL Anteprima]** per visualizzare l’anteprima delle modifiche di testo.
 
-   ![visualizza modifiche](assets/view-changes.png)
-
-1. Per sostituire un’immagine, fate clic su **[!UICONTROL Asset Finder]**.
-
-   ![chlimage_1-113](assets/chlimage_1-318.png)
+1. Per sostituire un’immagine, fate clic sul **[!UICONTROL collegamento Asset Finder]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Selezionate il campo immagine dall’elenco dei campi modificabili, quindi trascinate l’immagine desiderata dal selettore delle risorse al campo modificabile.
 
@@ -121,12 +109,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Fate clic su **[!UICONTROL Anteprima]** per visualizzare l’anteprima dell’immagine.
-
-   ![visualizza modifiche](assets/view-changes.png)
-
 1. Per modificare una pagina specifica in un materiale collaterale composto da più pagine, utilizzate il navigatore pagina nella parte inferiore.
-
-   ![navigatore pagina](assets/page-navigator.png)
 
 1. Fate clic su **[!UICONTROL Anteprima]** sulla barra degli strumenti per visualizzare in anteprima tutte le modifiche. Fate clic su **[!UICONTROL Fine]** per salvare le modifiche apportate al materiale collaterale.
 
@@ -175,11 +158,7 @@ Considerate uno scenario in cui desiderate creare materiale collaterale stampabi
 
    Potete sfogliare la [!DNL Experience Manager Assets] directory archivio o le raccolte, individuare la posizione dei modelli desiderati e selezionarli per l&#39;unione.
 
-   ![chlimage_1-124](assets/chlimage_1-329.png)
-
    Potete applicare vari filtri per cercare nei modelli desiderati. Ad esempio, potete cercare i modelli in base al tipo di file o ai tag.
-
-   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 1. Nella schermata **[!UICONTROL Anteprima e riordina]** , se necessario ridisponete i modelli e visualizzate l’anteprima della selezione di modelli da unire. Quindi fate clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
