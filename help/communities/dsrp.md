@@ -70,6 +70,7 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore
       >[!NOTE]
       >
       >La configurazione di storage predefinita ora è memorizzata nel percorso (`/conf/global/settings/community/srpc/defaultconfiguration`) conf anziché nel percorso (`/etc/socialconfig/srpc/defaultconfiguration`) etc. È consigliabile seguire i passaggi [di](#zerodt-migration-steps) migrazione per fare in modo che i predefiniti funzionino come previsto.
+
    ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
