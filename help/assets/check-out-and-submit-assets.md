@@ -3,7 +3,7 @@ title: Archiviare e estrarre le risorse per la modifica
 description: Scoprite come estrarre le risorse per la modifica e archiviarle nuovamente al termine delle modifiche.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -64,5 +64,5 @@ Gli amministratori possono archiviare le risorse sottoposte a Check-Out da altri
 >[!MORELIKETHIS]
 >
 >* [Informazioni sull&#39;archiviazione e il check-out &#39;app desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Esercitazione video per comprendere il check-in e il check-out delle risorse](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Esercitazione video per comprendere il check-in e il check-out delle risorse](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
