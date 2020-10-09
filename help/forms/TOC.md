@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: forms
 audience: end-user
-user-guide-title: Guida utente Forms di AEM 6.5
+user-guide-title: Guida per Forms di Adobe Experience Manager 6.5
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '3700'
+source-wordcount: '3702'
 ht-degree: 2%
 
 ---
 
-# AEM 6.5 - Forms User Guide {#forms}
+# Adobe Experience Manager 6.5 Forms Guide {#forms}
 
 + [Guida utente Forms di AEM 6.5](home.md)
 + Note sulla versione {#release-notes-new-features}
@@ -27,17 +27,17 @@ ht-degree: 2%
    + [Introduzione alle comunicazioni interattive](using/interactive-communications-overview.md)
    + [Introduzione alla gestione dei moduli](using/introduction-managing-forms.md)
    + [Introduzione al servizio di conversione automatica dei moduli](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
-   + modulo: Creare il primo modulo adattivo {#create-first-adaptive-form}
-      + [modulo: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
-      + [modulo: Creare un modulo adattivo](using/create-adaptive-form.md)
-      + [modulo: Crea modello dati modulo](using/create-form-data-model.md)
+   + Esercitazione: Creare il primo modulo adattivo {#create-first-adaptive-form}
+      + [Esercitazione: Creare il primo modulo adattivo](using/create-your-first-adaptive-form.md)
+      + [Esercitazione: Creare un modulo adattivo](using/create-adaptive-form.md)
+      + [Esercitazione: Crea modello dati modulo](using/create-form-data-model.md)
       + [Esercitazione: Applica regole ai campi modulo adattivi l](using/apply-rules-to-adaptive-form-fields.md)
       + [Esercitazione: Stile del modulo adattivo](using/style-your-adaptive-form.md)
       + [Esercitazione: Pubblicare il modulo adattivo](/help/forms/using/publish-your-adaptive-form.md)
       + [Esercitazione: Verifica del modulo adattivo](/help/forms/using/testing-your-adaptive-form.md)
    + Esercitazione: Creazione della prima comunicazione interattiva {#create-first-interactive-communication}
       + [Esercitazione: Creazione della prima comunicazione interattiva](using/create-your-first-interactive-communication.md)
-      + [modulo: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
+      + [Esercitazione: Pianificare la comunicazione interattiva](using/planning-interactive-communications.md)
       + [Esercitazione: Crea modello dati modulo](using/create-form-data-model0.md)
       + [Esercitazione: Creazione di frammenti di documento](using/create-document-fragments.md)
       + [Esercitazione: Creare i modelli](using/create-templates-print-web.md)
@@ -161,7 +161,7 @@ ht-degree: 2%
    + [Utilizzo di  Adobe Sign in un modulo adattivo](using/working-with-adobe-sign.md)
    + [Creazione e utilizzo di temi](using/themes.md)
    + [Editor di regole per moduli adattivi](using/rule-editor.md)
-   + [API per richiamare il servizio del modello dati del modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
+   + [API per richiamare il servizio del modello dati modulo dai moduli adattivi](using/invoke-form-data-model-services.md)
    + [Invio asincrono di moduli adattivi](using/asynchronous-submissions-adaptive-forms.md)
    + [Creare un modulo adattivo utilizzando un set di moduli adattivi](using/create-adaptive-form-using-adaptive-form-set.md)
    + [Modelli di moduli adattivi](using/template-editor.md)
@@ -457,7 +457,7 @@ ht-degree: 2%
       + [Tipi di certificato utilizzati dalle estensioni Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Riconoscimento di certificati validi e scaduti nei documenti PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
       + [Configurazione delle estensioni Acrobat Reader DC per l&#39;acquisizione dei dati](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-      + [Verifica delle informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
+      + [Rivedere le informazioni sull&#39;uso delle credenziali](/help/forms/using/admin-help/review-credential-information.md)
       + [Configurazione delle credenziali per l&#39;uso con le estensioni Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
       + [Verificare i diritti di utilizzo di un file PDF](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Abilitazione dei commenti online per  plug-in browser Web Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
