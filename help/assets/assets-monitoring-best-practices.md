@@ -3,7 +3,7 @@ title: Best practice per [!DNL Assets] monitorare l'implementazione
 description: Procedure ottimali per monitorare l'ambiente e le prestazioni dell' [!DNL Adobe Experience Manager] implementazione dopo l'implementazione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
@@ -28,7 +28,7 @@ In genere, [!DNL Experience Manager Assets] è possibile monitorare i dati in du
 
 È necessario eseguire il monitoraggio live durante la fase di test delle prestazioni del proprio sviluppo o durante situazioni di carico elevato per comprendere le caratteristiche di prestazioni dell&#39;ambiente. In genere, il monitoraggio live dovrebbe essere eseguito utilizzando una suite di strumenti. Di seguito sono riportati alcuni suggerimenti:
 
-* [VM](https://visualvm.java.net/)visiva: La VM visiva consente di visualizzare informazioni dettagliate sulla VM Java, incluso l&#39;utilizzo della CPU, l&#39;utilizzo della memoria Java. Inoltre, consente di campionare e valutare il codice in esecuzione su una distribuzione.
+* [VM](https://visualvm.github.io/)visiva: La VM visiva consente di visualizzare informazioni dettagliate sulla VM Java, incluso l&#39;utilizzo della CPU, l&#39;utilizzo della memoria Java. Inoltre, consente di campionare e valutare il codice in esecuzione su una distribuzione.
 * [In alto](https://man7.org/linux/man-pages/man1/top.1.html): Top è un comando Linux che apre un dashboard, che visualizza le statistiche di utilizzo, incluso l&#39;utilizzo di CPU, memoria e IO. Fornisce una panoramica di alto livello di ciò che sta accadendo in un’istanza.
 * [Htop](https://hisham.hm/htop/): Htop è un visualizzatore di processo interattivo. Offre un utilizzo dettagliato della CPU e della memoria oltre a quanto può fornire Top. Htop può essere installato nella maggior parte dei sistemi Linux utilizzando `yum install htop` o `apt-get install htop`.
 
