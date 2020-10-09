@@ -3,7 +3,7 @@ title: ' [!DNL Assets] Integrate con [!DNL InDesign Server]'
 description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 4%
@@ -47,7 +47,7 @@ Questo script di comando:
 
    >[!NOTE]
    >
-   >IDML è un formato basato su XML che esegue il rendering di tutti i contenuti del [!DNL InDesign] file. Viene memorizzato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip) . Per ulteriori informazioni, vedere [formati di interscambio InDesign INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML è un formato basato su XML che esegue il rendering di tutti i contenuti del [!DNL InDesign] file. Viene memorizzato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip) . Per ulteriori informazioni, vedere [formati di interscambio InDesign INX e IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
