@@ -3,9 +3,9 @@ title: Risorse correlate
 description: Scoprite come collegare risorse digitali che condividono attributi comuni. Create anche relazioni derivate dal codice sorgente tra le risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '632'
 ht-degree: 2%
 
 ---
@@ -44,8 +44,6 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
    * Per correlare un file derivato, selezionare **[!UICONTROL Derivato]** dall&#39;elenco.
    * Per creare una relazione bidirezionale tra le risorse, selezionate **[!UICONTROL Altre]** dall’elenco.
 
-   ![chlimage_1-276](assets/chlimage_1-276.png)
-
 1. Dalla schermata **[!UICONTROL Seleziona risorsa]** , individuate la posizione della risorsa da correlare e selezionatela.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -55,9 +53,7 @@ Grazie a questa funzione, potete condividere un file PDF o JPG a bassa risoluzio
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Per non correlare una risorsa, fate clic su **[!UICONTROL Annulla relazione]** nella barra degli strumenti.
-
-   ![attività non correlate](assets/do-not-localize/link-unrelate-icon.png)
+1. Per non correlare una risorsa, fate clic su **[!UICONTROL Annulla relazione]** ![annulla correlazione tra risorse](assets/do-not-localize/link-unrelate-icon.png) nella barra degli strumenti.
 
 1. Selezionate le risorse da rimuovere dalla finestra di dialogo **[!UICONTROL Rimuovi relazioni]** e fate clic su **[!UICONTROL Annulla relazione]**.
 
@@ -81,8 +77,6 @@ Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manage
 
 1. Dalla pagina [!UICONTROL Progetti] , aprite la cartella di traduzione.
 
-   ![chlimage_1-283](assets/chlimage_1-283.png)
-
 1. Fate clic sulla sezione del progetto per aprire la pagina dei dettagli.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
@@ -97,8 +91,4 @@ Se il file di origine è correlato a un’altra risorsa, [!DNL Experience Manage
 
 1. Per verificare se le risorse correlate all’origine sono state tradotte, fate clic sulla risorsa sorgente.
 
-   ![chlimage_1-287](assets/chlimage_1-287.png)
-
 1. Selezionate la risorsa correlata all’origine, quindi fate clic su **[!UICONTROL Mostra in risorse]**. Viene visualizzata la risorsa correlata convertita.
-
-   ![chlimage_1-288](assets/chlimage_1-288.png)
