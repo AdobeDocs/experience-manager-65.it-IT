@@ -1,16 +1,16 @@
 ---
-title: Note sulla versione di AEM 6.5
+title: Note sulla versione di Adobe Experience Manager 6.5
 description: Le AEM Note sulla versione contengono informazioni importanti sull’ultima versione di AEM, tra cui le nuove piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 19%
+source-wordcount: '374'
+ht-degree: 17%
 
 ---
 
 
-# Note sulla versione di AEM 6.5
+# Note sulla versione di Adobe Experience Manager 6.5
 
 Le AEM Note sulla versione contengono informazioni importanti sull’ultima versione di AEM, tra cui le nuove piattaforme supportate, le funzioni obsolete e rimosse e i problemi noti.
 
@@ -31,7 +31,7 @@ Le AEM Note sulla versione contengono informazioni importanti sull’ultima vers
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM. |
 | [Guida all’authoring con l’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
-| [Guida utente alla distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
+| [Guida utente per la distribuzione](/help/sites-deploying/home.md) | Questa guida illustra le nozioni di base di AEM. |
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scoprite come creare l&#39;istanza AEM. |
 | [Gestione della Guida utente](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto AEM. |
 | [Guida utente per dispositivi mobili](/help/mobile/home.md) | Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili. |
@@ -40,7 +40,7 @@ Le AEM Note sulla versione contengono informazioni importanti sull’ultima vers
 ## Risorse AEM chiave
 
 * [AEM esercitazioni](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
-* [Guida utente Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
+* [Guida utente del dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
 * [Guida utente HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
 * [Guida utente ai componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
