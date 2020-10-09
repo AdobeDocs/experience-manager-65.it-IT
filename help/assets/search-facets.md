@@ -3,9 +3,9 @@ title: Facet di ricerca per filtrare i risultati di ricerca
 description: Come creare, modificare e utilizzare i facet di ricerca in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2438'
 ht-degree: 18%
 
 ---
@@ -42,19 +42,13 @@ Per le ricerche full-text, aggiungere al modulo il predicato [!UICONTROL full-te
    >1. Salva le modifiche.
 
 
-1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Ad esempio, trascinare Predicato **[!UICONTROL proprietà]**.
+1. In the [!UICONTROL Edit Search Forms] page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Ad esempio, trascinare Predicato **[!UICONTROL proprietà]**.
 
    ![Premere e spostare un predicato per personalizzare i filtri di ricerca](assets/drag_predicate.png)
 
    *Figura: Premere e spostare un predicato per personalizzare i filtri di ricerca.*
 
-1. Nella scheda Impostazioni, inserite un&#39;etichetta di campo, un testo segnaposto e una descrizione per il predicato. Specificate un nome valido per la proprietà di metadati che desiderate associare al predicato.
-
-   L&#39;etichetta dell&#39;intestazione nella scheda Impostazioni identifica il tipo di predicato selezionato.
-
-   ![Utilizzate la scheda Impostazioni per fornire le opzioni richieste per un predicato](assets/settings.png)
-
-   Utilizzate la scheda Impostazioni per fornire le opzioni richieste per un predicato
+1. Nella scheda [!UICONTROL Impostazioni] , inserite un&#39;etichetta campo, un testo segnaposto e una descrizione per il predicato. Specificate un nome valido per la proprietà di metadati che desiderate associare al predicato. L&#39;etichetta dell&#39;intestazione nella scheda [!UICONTROL Impostazioni] identifica il tipo di predicato selezionato.
 
 1. Nel campo **[!UICONTROL Nome proprietà]**, specifica un nome valido per la proprietà di metadati che vuoi associare al predicato. È il nome in base al quale viene eseguita la ricerca. Ad esempio, inserisci `jcr:content/metadata/dc:description` o `./jcr:content/metadata/dc:description`.
 
@@ -154,17 +148,9 @@ Il predicato Tag consente di eseguire ricerche basate su tag per le risorse. Per
 1. Configurate la proprietà del percorso dei tag radice di questo predicate per popolare i vari tag nell&#39;elenco Tag.
 1. Seleziona **[!UICONTROL Mostra opzione di corrispondenza con tutti i tag]** per cercare le risorse che includono tutti i tag specificati.
 
-   ![Impostazioni tipiche del predicato Tag](assets/tags_predicate.png)
-
-   Impostazioni tipiche del predicato Tag
-
 1. Nel campo **[!UICONTROL Descrizione]** , immettete una descrizione facoltativa e fate clic su **[!UICONTROL Fine]**.
 1. Andate al pannello Ricerca. Il **[!UICONTROL predicato Tag]** viene aggiunto al pannello Ricerca.
 1. Specificate i tag in base ai quali desiderate effettuare ricerche nelle risorse o selezionarli dall’elenco dei suggerimenti.
-
-   ![suggerimento fornito dal Experience Manager durante la digitazione del nome del tag](assets/tag-suggestion.png)
-
-   *Figura:  suggerimento fornito dal Experience Manager durante la digitazione del nome del tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
