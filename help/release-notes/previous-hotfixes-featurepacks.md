@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack
 description: Note sulla versione per [!DNL Adobe Experience Manager] i Service Pack 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 359eb60c0ba3845d7aa0ca58488aa945a9f45aea
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '11484'
+source-wordcount: '11487'
 ht-degree: 26%
 
 ---
@@ -713,7 +713,7 @@ Remove one mention of this fix.
 
 ### Ricerca e interfaccia utente {#ui-interface-and-search}
 
-* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima che la pagina possa essere scorrevole (NPR-31286).
+* Quando si passa dalla vista a schede alla vista a elenco in una pagina dei risultati di ricerca, si verifica un ritardo prima dello scorrimento della pagina (NPR-31286).
 
 * La casella di controllo [!UICONTROL Seleziona tutto] è nascosta nella vista a elenco dell&#39;interfaccia [!DNL Sites] utente (NPR-31614).
 
@@ -1259,7 +1259,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Risorse - Incluse
 
-* Abilitazione del supporto per l’utilità di gestione di più siti per [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: Hotfix per CQ-4259922
+* Abilitazione del supporto per l’utilità di gestione di più siti per [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: Hotfix per CQ-4259922
 
 #### Siti - Inclusi
 
