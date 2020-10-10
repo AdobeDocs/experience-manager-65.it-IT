@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 8%
@@ -739,7 +739,7 @@ Incollate il valore copiato nell’editor di testo aperto. Questo valore sarà n
 1. Near the upper-right corner of the page, click **[!UICONTROL Save.]**
 1. Applicate il profilo di metadati Pubblicazione su YouTube alle cartelle in cui desiderate caricare i video. Dovrete avere sia il profilo metadati che il profilo video impostato.
 
-   Consulta le sezioni [Profili di metadati](/help/assets/metadata-profiles.md) e [Profili video](/help/assets/video-profiles.md).
+   Consulta le sezioni [Profili di metadati](/help/assets/metadata-config.md#metadata-profiles) e [Profili video](/help/assets/video-profiles.md).
 
 ### Pubblicazione di video sul canale YouTube {#publishing-videos-to-your-youtube-channel}
 
@@ -907,7 +907,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
    >[!NOTE]
    >
-   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
+   >Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -917,7 +917,7 @@ Per monitorare l’avanzamento (compresa la codifica non riuscita/Pubblicazione 
 
 >[!NOTE]
 >
->Per accedere al menu **[!UICONTROL Strumenti]** potrebbero essere necessari diritti amministrativi.
+>Per accedere al menu **[!UICONTROL Strumenti]** potrebbe essere necessario disporre dei diritti amministrativi.
 
 La modalità di configurazione delle notifiche dipende dal tipo di notifiche per i processi di codifica o pubblicazione su YouTube:
 
