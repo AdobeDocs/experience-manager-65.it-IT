@@ -1,63 +1,63 @@
 ---
 title: Processi asincroni
-description: ' Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività che richiedono risorse.'
+description: ' Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.'
 translation-type: tm+mt
-source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
+source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 3%
+source-wordcount: '891'
+ht-degree: 98%
 
 ---
 
 
 # Operazioni asincrone {#asynchronous-operations}
 
-Per ridurre l&#39;impatto negativo sulle prestazioni, Adobe Experience Manager elabora in modo asincrono alcune operazioni a lungo termine e che richiedono risorse. L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità di risorse di sistema.
+Adobe Experience Manager, per ridurre l’impatto negativo sulle prestazioni, elabora in modo asincrono alcune operazioni che richiedono tempo e risorse. L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità delle risorse di sistema.
 
-Tali operazioni comprendono:
+Alcune di queste operazioni sono:
 
-* Eliminazione di molte risorse
-* Spostamento di più risorse o risorse con più riferimenti
-* Esportazione/importazione in massa dei metadati di una risorsa
-* Recupero delle risorse, che superano il limite di soglia impostato, da una distribuzione Experience Manager  remota
-* Spostamento delle pagine
-* Rollout Live Copy
+* Eliminazione di numerose risorse
+* Spostamento di più di una risorsa o risorse con più riferimenti
+* Esportazione/importazione in blocco dei metadati di una risorsa
+* Recupero di risorse che superano il limite di soglia impostato da una implementazione remota di Experience Manager
+* Spostamento di pagine
+* Rollout di Live Copy
 
-Potete visualizzare lo stato dei processi asincroni dal dashboard Stato **[!UICONTROL processo]** Async in Navigazione **** globale > **Strumenti** > **Operazioni** > **Processi**.
+Lo stato dei processi asincroni è visibile dal dashboard **[!UICONTROL Stato processo asincrono]** in **Navigazione globale** -> **Strumenti** -> **Operazioni** -> **Processi**.
 
 >[!NOTE]
 >
->Per impostazione predefinita, i processi asincroni vengono eseguiti in parallelo. Se *`n`* è il numero di core CPU, per impostazione predefinita *`n/2`* i processi possono essere eseguiti in parallelo. Per utilizzare le impostazioni personalizzate per la coda di processi, modificate la configurazione **[!UICONTROL della coda predefinita dell&#39;operazione]** Async e la configurazione **Sposta pagina operazione** Async e Rollout dalla console Web.
+>Per impostazione predefinita, i processi asincroni vengono eseguiti in parallelo. Se *`n`* è il numero di core della CPU, per impostazione predefinita è possibile eseguire in parallelo *`n/2`* processi. Per personalizzare le impostazioni della coda dei processi, modifica la **[!UICONTROL configurazione della coda predefinita dell’operazione asincrona]** e la **configurazione per spostamento e rollout pagina dell’operazione asincrona** dalla console Web.
 >
->Per ulteriori informazioni, consultate [Configurazione](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)della coda.
+>Per ulteriori informazioni, consulta [Configurazione della coda](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitorare lo stato delle operazioni asincrone {#monitor-the-status-of-asynchronous-operations}
 
-Ogni volta che AEM elabora un’operazione in modo asincrono, riceverete una notifica nella [inbox](/help/sites-authoring/inbox.md) e tramite e-mail (se abilitata).
+Ogni volta che AEM elabora un’operazione in modo asincrono, ricevi una notifica nella tua [casella in entrata](/help/sites-authoring/inbox.md) e tramite e-mail (se abilitata).
 
-Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla pagina Stato **[!UICONTROL processo]** asincrono.
+Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[!UICONTROL Stato processo asincrono]**.
 
-1. Nell’interfaccia di Experience Manager  fate clic su **[!UICONTROL Operazioni]** > **[!UICONTROL Processi]**.
+1. Nell’interfaccia di Experience Manager, fai clic su **[!UICONTROL Operazioni]** > **[!UICONTROL Processi]**.
 
-1. Nella pagina Stato **[!UICONTROL processo]** asincrono, controllate i dettagli delle operazioni.
+1. Nella pagina **[!UICONTROL Stato processo asincrono]**, controlla i dettagli delle operazioni.
 
    ![Stato e dettagli delle operazioni asincrone](assets/async-operation-status.png)
 
-   Per determinare l&#39;avanzamento di una particolare operazione, vedere il valore nella colonna **[!UICONTROL Stato]** . A seconda dell’avanzamento, viene visualizzato uno dei seguenti stati:
+   Per determinare l’avanzamento di una particolare operazione, controlla il valore nella colonna **[!UICONTROL Stato]**. A seconda dell’avanzamento, viene visualizzato uno dei seguenti stati:
 
-   * **[!UICONTROL Attivo]**: Elaborazione dell&#39;operazione in corso
+   * **[!UICONTROL Attivo]**: elaborazione dell’operazione in corso
 
-   * **[!UICONTROL Successo]**: Operazione completata
+   * **[!UICONTROL Completato]**: operazione completata
 
-   * **[!UICONTROL Fail]** or **[!UICONTROL Error]** (Non riuscito o errore): impossibile elaborare l’operazione
+   * **[!UICONTROL Non riuscito]** o **[!UICONTROL Errore]**: impossibile elaborare l’operazione
 
-   * **[!UICONTROL Pianificato]**: L&#39;elaborazione dell&#39;operazione è pianificata per un momento successivo
+   * **[!UICONTROL Pianificato]**: l’elaborazione dell’operazione è pianificata per un momento successivo
 
-1. Per interrompere un&#39;operazione attiva, selezionatela dall&#39;elenco e fate clic su **[!UICONTROL Interrompi]** nella barra degli strumenti.
+1. Per interrompere un’operazione attiva, selezionala nell’elenco e scegli **[!UICONTROL Interrompi]** nella barra degli strumenti.
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Per visualizzare ulteriori dettagli, ad esempio la descrizione e i registri, selezionate l’operazione e fate clic su **[!UICONTROL Apri]** nella barra degli strumenti.
+1. Per visualizzare ulteriori dettagli, ad esempio la descrizione e i registri, seleziona l’operazione e fai clic su **[!UICONTROL Apri]** nella barra degli strumenti.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -65,77 +65,77 @@ Per visualizzare nel dettaglio lo stato delle operazioni asincrone, andate alla 
 
    ![job_details](assets/async-job-details.png)
 
-1. Per eliminare l&#39;operazione dall&#39;elenco, selezionare **[!UICONTROL Elimina]** dalla barra degli strumenti. Per scaricare i dettagli in un file CSV, fate clic su **[!UICONTROL Scarica]**.
+1. Per eliminare un’operazione dall’elenco, seleziona **[!UICONTROL Elimina]** dalla barra degli strumenti. Per scaricare i dettagli in un file CSV, fai clic su **[!UICONTROL Scarica]**.
 
    >[!NOTE]
    >
-   >Non potete eliminare un processo se il suo stato è **Attivo** o **In coda**.
+   >Non è possibile eliminare un processo se il suo stato è **Attivo** o **In coda**.
 
-## Elimina processi completati {#purging-completed-jobs}
+## Eliminare i processi completati {#purging-completed-jobs}
 
-AEM esegue un processo di eliminazione ogni giorno alle 01:00 per eliminare i processi asincroni completati con più di un giorno.
+AEM ogni giorno alle 01:00 esegue un processo che elimina i processi asincroni completati da più di un giorno.
 
-È possibile modificare la pianificazione per il processo di eliminazione e la durata per la quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Potete inoltre configurare il numero massimo di processi completati per i quali i dettagli vengono conservati in qualsiasi momento.
+Puoi modificare la pianificazione per il processo di eliminazione e il periodo per il quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Puoi anche configurare il numero massimo di processi completati per i quali i dettagli devono essere conservati.
 
-1. In Navigazione globale, fate clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
-1. Aprite il processo **[!UICONTROL di rimozione dei processi Async di]** Adobe Granite Scheduled.
-1. Specificate:
-   * Il numero di giorni di soglia dopo i quali i processi completati vengono eliminati.
+1. Dalla pagina di navigazione globale, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
+1. Apri il lavoro **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]** (Processo pianificato di rimozione dei processi asincroni di Adobe Granite).
+1. Specifica:
+   * Il numero limite di giorni oltre i quali i processi completati vengono eliminati.
    * Il numero massimo di processi per i quali i dettagli vengono conservati nella cronologia.
-   * L&#39;espressione cron per quando deve essere eseguita la rimozione.
+   * L’espressione cron per indicare quando deve essere eseguita la rimozione.
 
-   ![Configurazione per pianificare la rimozione dei processi asincroni](assets/async-purge-job.png)
+   ![Configurazione della rimozione pianificata dei processi asincroni](assets/async-purge-job.png)
 
 1. Salva le modifiche.
 
-## Configurare l&#39;elaborazione asincrona {#configuring-asynchronous-processing}
+## Configurare l’elaborazione asincrona {#configuring-asynchronous-processing}
 
-Potete configurare la soglia del numero di risorse, pagine o riferimenti per l’elaborazione asincrona di una determinata operazione, nonché attivare o disattivare le notifiche e-mail per l’elaborazione dei processi.
+In AEM è possibile configurare il limite del numero di risorse, pagine o riferimenti per l’elaborazione asincrona di una determinata operazione, nonché attivare o disattivare le notifiche e-mail.
 
-### Configurare le operazioni di eliminazione asincrone delle risorse {#configuring-synchronous-delete-operations}
+### Configurare le operazioni di eliminazione delle risorse asincrone {#configuring-synchronous-delete-operations}
 
-Se il numero di risorse o cartelle da eliminare supera la soglia, l’operazione di eliminazione viene eseguita in modo asincrono.
+Quando il numero di risorse o cartelle da eliminare supera la soglia, l’operazione di eliminazione viene eseguita in modo asincrono.
 
-1. In Navigazione globale, fate clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
-1. Dalla console Web, aprite la configurazione della coda predefinita del processo **[!UICONTROL asincrono.]**
-1. Nella casella **[!UICONTROL Soglia numero di risorse]** , specificate il numero di soglia di risorse/cartelle per l’elaborazione asincrona delle operazioni di eliminazione.
+1. Dalla pagina di navigazione globale, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
+1. Dalla console Web, apri la **[!UICONTROL configurazione della coda predefinita del processo asincrono]**.
+1. Nella casella **[!UICONTROL Threshold number of assets]** (Soglia risorse), specifica il limite di risorse o cartelle per l’elaborazione asincrona delle operazioni di eliminazione.
 
-   ![Soglia eliminazione risorsa](assets/async-delete-threshold.png)
+   ![Soglia per l’eliminazione delle risorse](assets/async-delete-threshold.png)
 
-1. Selezionate l’opzione **Abilita notifica** e-mail per ricevere le notifiche e-mail per questo stato del processo. Ad esempio, il successo non è riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
 1. Salva le modifiche.
 
-### Configurare le operazioni di spostamento asincrono delle risorse {#configuring-asynchronous-move-operations}
+### Configurare le operazioni di spostamento delle risorse asincrone {#configuring-asynchronous-move-operations}
 
-Se il numero di risorse/cartelle o riferimenti da spostare supera il numero di soglia, l&#39;operazione di spostamento viene eseguita in modo asincrono.
+Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia, l’operazione di spostamento viene eseguita in modo asincrono.
 
-1. In Navigazione globale, fate clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
-1. Dalla console Web, aprite la configurazione **[!UICONTROL Async Move Operation Job Processing.]**
-1. Nella casella **[!UICONTROL Soglia numero di risorse/riferimenti]** , specificate il numero di soglia di risorse/cartelle o riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
+1. Dalla pagina di navigazione globale, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
+1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
+1. Nella casella **[!UICONTROL Threshold number of assets/references]** (Soglia risorse/riferimenti), specifica il numero limite di risorse, cartelle o riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
 
-   ![Soglia di spostamento risorsa](assets/async-move-threshold.png)
+   ![Soglia per lo spostamento delle risorse](assets/async-move-threshold.png)
 
-1. Selezionate l’opzione **Abilita notifica** e-mail per ricevere le notifiche e-mail per questo stato del processo. Ad esempio, il successo non è riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
 1. Salva le modifiche.
 
-### Configurare le operazioni di spostamento asincrone delle pagine {#configuring-asynchronous-page-move-operations}
+### Configurare le operazioni di spostamento delle pagine asincrone {#configuring-asynchronous-page-move-operations}
 
-Se il numero di riferimenti alle pagine da spostare supera il numero di soglia, l&#39;operazione di spostamento viene eseguita in modo asincrono.
+Quando il numero di riferimenti o pagine da spostare supera la soglia impostata, l’operazione di spostamento viene eseguita in modo asincrono.
 
-1. In Navigazione globale, fate clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
-1. Dalla console Web, aprite la configurazione **[!UICONTROL Async Page Move Operation Job Processing.]**
-1. Nel campo **[!UICONTROL Soglia numero di riferimenti]** , specificate il numero di soglia di riferimenti per l&#39;elaborazione asincrona delle operazioni di spostamento della pagina.
+1. Dalla pagina di navigazione globale, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
+1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
+1. Nel campo **[!UICONTROL Threshold number of references]** (Soglia riferimenti), specifica il numero limite di riferimenti per l’elaborazione asincrona delle operazioni di spostamento.
 
-   ![Soglia di spostamento pagina](assets/async-page-move.png)
+   ![Soglia per lo spostamento delle pagine ](assets/async-page-move.png)
 
-1. Selezionate l’opzione **Abilita notifica** e-mail per ricevere le notifiche e-mail per questo stato del processo. Ad esempio, il successo non è riuscito.
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
 1. Salva le modifiche.
 
 ### Configurare le operazioni MSM asincrone {#configuring-asynchronous-msm-operations}
 
-1. In Navigazione globale, fate clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > Console **** Web.
-1. Dalla console Web, aprite la configurazione **[!UICONTROL Async Page Move Operation Job Processing.]**
-1. Selezionate l’opzione **Abilita notifica** e-mail per ricevere le notifiche e-mail per questo stato del processo. Ad esempio, il successo non è riuscito.
+1. Dalla pagina di navigazione globale, fai clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
+1. Dalla console Web, apri la **[!UICONTROL configurazione dell’elaborazione asincrona del processo di spostamento.]**
+1. Seleziona l’opzione **Enable email notification** (Abilita notifica e-mail) per ricevere notifiche e-mail sullo stato del processo. Ad esempio: Completato, Non riuscito.
 
    ![Configurazione MSM](assets/async-msm.png)
 
@@ -145,7 +145,8 @@ Se il numero di riferimenti alle pagine da spostare supera il numero di soglia, 
 >
 >* [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md)
 >* [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
->* [Configurare l’e-mail in  Experience Manager](/help/sites-administering/notification.md).
->* [Importare ed esportare i metadati delle risorse in blocco](/help/assets/metadata-import-export.md).
->* [Utilizza le risorse collegate per condividere le risorse DAM da distribuzioni](/help/assets/use-assets-across-connected-assets-instances.md)remote.
+>* [Configura e-mail in  Experience Manager](/help/sites-administering/notification.md).
+>* [Importare i metadati](/help/assets/metadata.md#import-metadata)delle risorse.
+>* [Esportare i metadati](/help/assets/metadata.md#export-metadata)delle risorse.
+>* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).
 
