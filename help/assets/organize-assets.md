@@ -3,7 +3,7 @@ title: Organizzazione delle risorse digitali
 description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando  Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Utilizzando i tag come metadati potete facilmente cercare le risorse, creare rac
 Per ulteriori informazioni, consultate i seguenti articoli:
 
 * [Informazioni sui tag in  Experience Manager](/help/sites-authoring/tags.md)
-* [Modificare i metadati delle risorse](meta-edit.md)
+* [Modificare i metadati delle risorse](metadata.md)
 * [Tag avanzati migliorati nelle risorse](enhanced-smart-tags.md)
 
 ## Organizzare come raccolte {#organize-as-collections}
@@ -69,7 +69,7 @@ La standardizzazione dell’utilizzo dei metadati, della denominazione dei file 
 >[!MORELIKETHIS]
 >
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
->* [Profili metadati](metadata-profiles.md).
+>* [Profili metadati](/help/assets/metadata-config.md#metadata-profiles).
 >* [Profili](video-profiles.md)video.
->* [Profili](image-profiles.md)immagine Dynamic Media.
+>* [Profili](image-profiles.md)immagine per elementi multimediali dinamici.
 
