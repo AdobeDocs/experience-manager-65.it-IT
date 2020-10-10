@@ -4,7 +4,7 @@ description: Scoprite come gestire le raccolte di risorse, ad esempio creare, vi
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: cedefb58919d7d215040e72b4cc41159161938a8
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 11%
@@ -137,7 +137,7 @@ Le raccolte intelligenti vengono create salvando una ricerca in modo da modifica
 1. Fate clic su **[!UICONTROL Sovrascrivi]** per sostituire la raccolta avanzata originale con la raccolta modificata. In alternativa, selezionate **[!UICONTROL Salva con nome]** per salvare separatamente la raccolta modificata.
 1. Nella finestra di dialogo di conferma, fate clic su **[!UICONTROL Salva]** per completare il processo.
 
-## Visualizzare e modificare i metadati della raccolta {#viewing-and-editing-collection-metadata}
+## Visualizzare e modificare i metadati della raccolta {#view-edit-collection-metadata}
 
 I metadati della raccolta includono i dati sulla raccolta, compresi eventuali tag aggiunti.
 
