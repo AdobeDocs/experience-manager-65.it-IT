@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Un profilo è una ricetta per le opzioni da applicare alle risorse caricate in u
 
 Tali regole possono includere l’aggiunta di metadati, il ritaglio avanzato delle immagini o la definizione di profili di codifica video. In AEM, potete creare tre tipi di profili, descritti dettagliatamente nei seguenti collegamenti:
 
-* [Profili metadati](/help/assets/metadata-profiles.md)
+* [Profili metadati](/help/assets/metadata-config.md#metadata-profiles)
 * [Profili immagine](/help/assets/image-profiles.md)
 * [Profili video](/help/assets/video-profiles.md)
 
