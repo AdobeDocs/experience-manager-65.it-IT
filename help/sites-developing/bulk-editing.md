@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+source-git-commit: b08149e00c418319ebacec71c56472ad4e8e1089
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -36,13 +36,14 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 >* Non disponibile nell’interfaccia classica.
 >* Non disponibile per le pagine all&#39;interno di una Live Copy.
 >* Disponibile solo per le pagine con lo stesso tipo di risorsa.
+
 >
 
 
 
 >[!NOTE]
 >
->La modifica collettiva è disponibile anche per le risorse. È molto simile, ma differisce in alcuni punti. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for full information. Puoi personalizzare i campi nell’editor metadati di massa per le risorse utilizzando l’editor [](/help/assets/metadata-schemas.md)schema.
+>La modifica collettiva è disponibile anche per le risorse. È molto simile, ma differisce in alcuni punti. See [Editing Properties of Multiple Assets](/help/assets/metadata.md) for full information. Puoi personalizzare i campi nell’editor metadati di massa per le risorse utilizzando l’editor [](/help/assets/metadata-schemas.md)schema.
 
 ## Abilitazione di un campo {#enabling-a-field}
 
@@ -56,13 +57,14 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
 
 I campi sono attivati sul componente pagina (*non* sul modello):
 
-1. Utilizzando CRXDE Lite (o un metodo equivalente), aprite il componente di pagina.
+1. Utilizzando un CRXDE Lite (o un metodo equivalente) potete aprire il componente della pagina.
 
    Esempio: `/apps/core/wcm/components/page/v1/page`
 
@@ -76,6 +78,7 @@ I campi sono attivati sul componente pagina (*non* sul modello):
    * **Nome**: `allowBulkEdit`
    * **Tipo**: `Boolean`
    * **Valore**: `true`
+
    Ad esempio, per il componente [pagina standard](/help/sites-authoring/default-components-foundation.md)foundation:
 
    `/libs/foundation/components/page`
