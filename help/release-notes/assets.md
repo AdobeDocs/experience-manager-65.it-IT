@@ -2,7 +2,7 @@
 title: Note sulla versione del [!DNL Adobe Experience Manager Assets] 6.5.
 description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 41%
@@ -24,7 +24,7 @@ Read on to know the specific capabilities and integrations of [!DNL Experience M
 
 [!DNL Adobe Asset Link] rafforza la collaborazione tra creativi e professionisti del marketing nel processo di creazione dei contenuti. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] fa parte di [Creative Cloud per l&#39;offerta enterprise](https://www.adobe.com/it/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] è una parte della [Creative Cloud per l&#39;offerta enterprise](https://www.adobe.com/it/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html).
 
 ![Cercare risorse in  Adobe Photoshop](assets/asset_search_photoshop.png)
 
@@ -100,9 +100,9 @@ Ora potete selezionare tutte le risorse caricate all’interno di una cartella o
 
 ## Miglioramenti dei metadati {#metadata-enhancements}
 
-[!DNL Assets] consente di creare schemi di metadati per le cartelle delle risorse, che definiscono il layout e i metadati visualizzati nelle pagine di proprietà delle cartelle. È ora possibile assegnare uno schema di metadati di una cartella a una cartella esistente o quando si crea una nuova cartella. Per ulteriori informazioni, consulta [Schema metadati cartelle](/help/assets/folder-metadata-schema.md).
+[!DNL Assets] consente di creare schemi di metadati per le cartelle delle risorse, che definiscono il layout e i metadati visualizzati nelle pagine di proprietà delle cartelle. È ora possibile assegnare uno schema di metadati di una cartella a una cartella esistente o quando si crea una nuova cartella. Per ulteriori informazioni, consulta [Schema metadati cartelle](/help/assets/metadata-config.md#folder-metadata-schema).
 
-Quando si specificano i metadati a cascata, le selezioni possono essere caricate da un file JSON in fase di runtime, ad es. invece di digitare manualmente nel modulo. Per ulteriori informazioni, consulta [Metadati a cascata](/help/assets/cascading-metadata.md).
+Quando si specificano i metadati a cascata, le selezioni possono essere caricate da un file JSON in fase di runtime, ad es. invece di digitare manualmente nel modulo. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
 
 ## Miglioramenti della creazione di rapporti {#reporting-enhancements}
 
