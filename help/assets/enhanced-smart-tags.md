@@ -3,9 +3,9 @@ title: Tag avanzati migliorati
 description: Tag avanzati migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1587'
 ht-degree: 11%
 
 ---
@@ -44,6 +44,7 @@ Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto seg
 
 * Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
+* Smart Content Services Base Package può essere aggiunto solo a una distribuzione in cui sono stati concessi in licenza pacchetti [!DNL Sites] di base e [!DNL Assets] componenti aggiuntivi.
 
 ## Onboarding {#onboarding}
 
@@ -179,3 +180,7 @@ Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro d
 >[!NOTE]
 >
 >Nei cicli di assegnazione dei tag successivi, solo le risorse modificate dispongono di tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i 6 mesi.
+
+## Suggerimenti e limitazioni {#tips-best-practices-limitations}
+
+* L&#39;utilizzo di Smart Content Services è limitato a 2 milioni di immagini con tag all&#39;anno. Qualsiasi immagine duplicata elaborata e con tag viene conteggiata come immagine con tag.
