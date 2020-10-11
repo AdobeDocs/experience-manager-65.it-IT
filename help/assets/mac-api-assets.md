@@ -3,9 +3,9 @@ title: API HTTP [!DNL Assets].
 description: Creazione, lettura, aggiornamento, eliminazione, gestione di risorse digitali tramite l'API HTTP in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -307,3 +307,9 @@ Elimina una risorsa (-tree) nel percorso specificato.
 * 200 - OK - Se la cartella è stata eliminata correttamente.
 * 412 - PRECONDIZIONE NON RIUSCITA - se non è possibile trovare o accedere alla raccolta radice.
 * 500 - ERRORE SERVER INTERNO - se qualcos&#39;altro va storto.
+
+## Suggerimenti e limitazioni {#tips-best-practices-limitations}
+
+* [L&#39;API HTTP aggiorna le proprietà](#update-asset-metadata) dei metadati nello `jcr` spazio dei nomi. Tuttavia, l&#39;interfaccia utente del Experience Manager  aggiorna le proprietà dei metadati nello `dc` spazio dei nomi.
+
+* L&#39;API della risorsa non restituisce i metadati completi. Nell&#39;API gli spazi dei nomi sono codificati e vengono restituiti solo questi. Se avete bisogno di metadati interi, consultate il percorso della risorsa `/jcr_content/metadata.json`.
