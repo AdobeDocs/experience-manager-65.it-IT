@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 410858ee7d1b8022070445937731644724a90155
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
 >6.5.3.0
 >
 >* **È ora possibile selezionare Domini** di esternalizzatore.
+   >  **Nota:** I domini di Externalizer sono pertinenti solo al contenuto del frammento esperienza inviato a Target, e non ai metadati come Visualizza contenuto offerta.
 >
 >
 6.5.2.0:
@@ -136,7 +137,11 @@ Le opzioni richieste possono essere selezionate in Proprietà **** pagina della 
 
    >[!CAUTION]
    >
-   >Il dominio esternalizzatore è facoltativo. Un esternalizzatore AEM è configurato quando desiderate che il contenuto esportato faccia riferimento a un dominio di *pubblicazione* specifico. Per ulteriori dettagli, consultate [Configurazione di AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >Il dominio esternalizzatore è facoltativo.
+   >
+   > Un esternalizzatore AEM è configurato quando desiderate che il contenuto esportato faccia riferimento a un dominio di *pubblicazione* specifico. Per ulteriori dettagli, consultate [Configurazione di AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >
+   > Inoltre, i domini di Externalizer sono pertinenti solo al contenuto del frammento esperienza inviato a Target, e non ai metadati come Visualizza contenuto offerta.
 
    Ad esempio, per una cartella:
 
