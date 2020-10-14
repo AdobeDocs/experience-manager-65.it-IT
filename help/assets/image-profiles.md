@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: aef3579f4f608d442cbaf156b6f5f13ffda8ceed
+source-git-commit: 1320dd107690ad39f0154d160ec126ad28a1eee0
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2761'
 ht-degree: 14%
 
 ---
@@ -26,7 +26,7 @@ Quando caricate le immagini, potete ritagliare automaticamente l’immagine al m
 
 >[!IMPORTANT]
 >
->I profili immagine non sono applicabili ai file PDF, GIF o INDD ( Adobe InDesign).
+>I profili immagine non sono applicabili ai file PDF, GIF animata o INDD ( Adobe InDesign).
 
 ## Crop options {#crop-options}
 
