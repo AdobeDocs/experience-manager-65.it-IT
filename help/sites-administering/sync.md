@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
+source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+workflow-type: tm+mt
+source-wordcount: '2436'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +31,7 @@ La maggior parte dei dati utente creati nell’ambiente di authoring deve restar
 
 Per poter accedere agli stessi dati utente, le registrazioni e le modifiche effettuate su un’istanza di pubblicazione devono essere sincronizzate con altre istanze di pubblicazione.
 
-A partire da AEM 6.1, quando la sincronizzazione degli utenti è abilitata, i dati utente vengono automaticamente sincronizzati tra le istanze pubblicate nella farm e non vengono creati in fase di creazione.
+A partire AEM 6.1, quando la sincronizzazione degli utenti è abilitata, i dati utente vengono automaticamente sincronizzati tra le istanze di pubblicazione nella farm e non vengono creati in fase di creazione.
 
 ## Distribuzione Sling {#sling-distribution}
 
@@ -50,7 +53,7 @@ Rispetto alla replica tradizionale, i vantaggi della sincronizzazione utente med
 >
 >La sincronizzazione del gruppo di ***amministratori*** non è supportata, anche se è abilitata la sincronizzazione degli utenti. Al contrario, un&#39;operazione di importazione delle diff verrà registrata nel registro degli errori.
 >
->Pertanto, se la distribuzione è una pubblicazione farm, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
+>Pertanto, se la distribuzione è una farm di pubblicazione, se un utente viene aggiunto o rimosso dal gruppo ***Administrators** , la modifica deve essere eseguita manualmente su ogni istanza di pubblicazione.
 
 ## Abilita sincronizzazione utente {#enable-user-sync}
 
@@ -74,8 +77,8 @@ Una volta attivata la sincronizzazione degli utenti, vengono sincronizzati solo 
 
 1. Verifica che sia stato installato il codice più recente:
 
-* [Aggiornamenti della piattaforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
-* [Aggiornamenti di AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
+* [Aggiornamenti AEM piattaforma](https://helpx.adobe.com/it/experience-manager/kb/aem62-available-hotfixes.html)
+* [Aggiornamenti  AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Sync Agent Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -123,13 +126,14 @@ Una volta attivata la sincronizzazione degli utenti, vengono sincronizzati solo 
 >
 >* L&#39;utente predefinito assegnato è **`admin`**.
 >* Non utilizzare `communities-user-admin user.`
+
 >
 
 
 
 #### Come aggiungere ACL {#addacls}
 
-* access CRXDE Lite
+* crxde lite di accesso
 
    * ad esempio, [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
@@ -137,7 +141,7 @@ Una volta attivata la sincronizzazione degli utenti, vengono sincronizzati solo 
 * nel riquadro a destra, selezionare la `Access Control` scheda
 * selezionare il `+` pulsante per aggiungere una voce ACL
 
-   * **Principal**: *ricerca di utenti creati per la sincronizzazione degli utenti*
+   * **Principal**: *cercare gli utenti creati per la sincronizzazione degli utenti*
    * **Tipo**: `Allow`
    * **Privilegi**: `jcr:all`
    * **Limitazioni** rep:idspn: `*/activities/*`
@@ -152,7 +156,7 @@ Consulta anche
 * [Accesso a Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Sezione Risoluzione dei problemi [Modifica eccezione operazione durante l&#39;elaborazione](#modify-operation-exception-during-response-processing)delle risposte.
 
-### 3. Credenziali di trasporto di distribuzione Apache Sling - Credenziali utente basate su DistributionTransportSecretProvider {#adobegraniteencpasswrd}
+### 3. Distribuzione Granite  Adobe - Provider Segreto Di Trasporto Password Crittografato {#adobegraniteencpasswrd}
 
 **Configurare le autorizzazioni**
 
@@ -164,7 +168,7 @@ Una volta creato un utente autorizzato, membro del gruppo di utenti **`administr
    * accedere alla console [Web](/help/sites-deploying/configuring-osgi.md)
 
       * ad esempio, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * locate `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
+   * locate `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * seleziona la configurazione esistente da aprire per la modifica (icona matita)Verifica `property name`: **`socialpubsync-publishUser`**
 
    * imposta nome utente e password per l’utente [](#createauthuser) autorizzato creato al momento della pubblicazione nel passaggio 2
@@ -196,7 +200,7 @@ Una volta creato un utente autorizzato, membro del gruppo di utenti **`administr
 
 ![](assets/chlimage_1-23.png)
 
-### 5. Adobe Social Sync - Diff Observer Factory {#diffobserver}
+### 5.  Adobe Social Sync - Diff Observer Factory {#diffobserver}
 
 **Abilita sincronizzazione gruppo**
 
@@ -275,7 +279,7 @@ La configurazione predefinita è per una singola istanza di pubblicazione. Poich
 
 * select `Save`
 
-### 8. Listener di sincronizzazione utenti di AEM Communities {#aem-communities-user-sync-listener}
+### 8.  AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
 **(Facoltativo) Sincronizzare nodi JCR aggiuntivi**
 
@@ -358,7 +362,7 @@ Ripetete questi passaggi finché tutte le istanze di pubblicazione non dispongon
 
 Per sincronizzare correttamente gli aggiornamenti, è necessario modificare il generatore di pacchetti vault per la sincronizzazione utente:
 
-* in ogni istanza di pubblicazione AEM
+* su ogni istanza di pubblicazione AEM
 * accedere alla console [Web](/help/sites-deploying/configuring-osgi.md)
 
    * ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
@@ -409,7 +413,7 @@ Per verificare lo stato della coda di distribuzione:
 
 * autore:
 
-   * utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+   * using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
       * cerca le voci in `/var/sling/distribution/packages`
 
@@ -474,7 +478,7 @@ Di seguito sono riportate le visualizzazioni di come dovrebbero essere visualizz
 
 ![](assets/chlimage_1-32.png)
 
-#### (pubblicare) Una sincronizzazione Adobe Social - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
+#### (pubblicare) Un  Adobe Social Sync - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
 
 ![](assets/chlimage_1-33.png)
 
@@ -524,7 +528,7 @@ Cfr. sezione [9. ID Sling univoco](#unique-sling-id)
 
 * sull’editore in cui sono presenti utenti e gruppi di utenti:
 
-   * [se abilitata, disattiva la sincronizzazione utente](#how-to-take-user-sync-offline)
+   * [se abilitata, disabilitate la sincronizzazione utente](#how-to-take-user-sync-offline)
    * [create un pacchetto](/help/sites-administering/package-manager.md#creating-a-new-package) di `/home`
 
       * durante la modifica del pacchetto
@@ -538,7 +542,7 @@ Cfr. sezione [9. ID Sling univoco](#unique-sling-id)
 
    * [importare il pacchetto](/help/sites-administering/package-manager.md#installing-packages)
 
-Per configurare o abilitare la sincronizzazione degli utenti, andate al punto 1: Agente di distribuzione [Apache Sling - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory)
+Per configurare o abilitare la sincronizzazione degli utenti, andate al punto 1: [Apache Sling Distribution Agent - Sync Agent Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### Quando un editore diventa non disponibile {#when-a-publisher-becomes-unavailable}
 
