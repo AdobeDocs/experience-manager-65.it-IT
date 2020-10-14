@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '3842'
+source-wordcount: '3867'
 ht-degree: 10%
 
 ---
@@ -35,6 +35,10 @@ Questa sezione descrive come creare, modificare e gestire in genere i predefinit
 ## Understanding Dynamic Media image presets {#understanding-image-presets}
 
 Analogamente a una macro, un predefinito per immagini è un insieme predefinito di comandi di ridimensionamento e formattazione salvati con un nome. Per comprendere il funzionamento dei predefiniti per immagini, supponete che nel vostro sito Web ciascuna immagine di prodotto venga visualizzata in dimensioni diverse, in formati diversi e con tassi di compressione per la distribuzione desktop e mobile.
+
+>[!NOTE]
+>
+>In modalità Dynamic Media - Scene7, i predefiniti per immagini sono supportati solo per le risorse immagine.
 
 Potete creare due predefiniti per immagini: uno con 500 x 500 pixel per la versione desktop e 150 x 150 pixel per la versione mobile. Potete creare due predefiniti per immagini, uno `Enlarge` per visualizzare le immagini a 500x500 pixel e uno per visualizzare le immagini `Thumbnail` a 150x150 pixel. Per trasmettere le immagini a `Enlarge` e `Thumbnail` dimensione, AEM cerca la definizione del predefinito Ingrandimento immagine e Miniatura immagine. Quindi AEM genera in modo dinamico un’immagine secondo le specifiche di ridimensionamento e formattazione di ciascun predefinito per immagini.
 
@@ -62,7 +66,11 @@ Per gestire i predefiniti per immagini in AEM, toccate o fate clic sul logo AEM 
 >
 >Il sistema mostra diverse rappresentazioni quando selezionate **[!UICONTROL Rappresentazioni]** nella visualizzazione Dettagli di una risorsa. Potete aumentare o diminuire il numero di predefiniti per immagini da visualizzare. See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-###  formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Ritaglio avanzato,  formati di file Adobe Illustrator (AI), Postscript (EPS) e PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+>[!NOTE]
+>
+>Questo argomento è applicabile solo a Contenuti multimediali dinamici - Modalità ibrida.
 
 Se intendete supportare l’assimilazione di file AI, EPS e PDF in modo da poter generare rappresentazioni dinamiche di questi formati di file, prima di creare i predefiniti per immagini potrebbe essere utile consultare le seguenti informazioni.
 
