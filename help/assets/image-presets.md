@@ -1,6 +1,6 @@
 ---
 title: Applicazione dei predefiniti per le immagini Dynamic Media
-description: Scoprite come applicare i predefiniti per immagini in Dynamic Media
+description: Scoprite come applicare i predefiniti per immagini in Contenuti multimediali dinamici
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 15%
+source-wordcount: '325'
+ht-degree: 14%
 
 ---
 
@@ -30,7 +30,11 @@ Questa sezione descrive come usare i predefiniti per immagini. [Gli amministrato
 
 Potete applicare un predefinito per immagini a un’immagine ogni volta che la visualizzate in anteprima.
 
-**Per applicare i predefiniti per immagini di Dynamic Media**
+>[!NOTE]
+>
+>In modalità Dynamic Media - Scene7, i predefiniti per immagini sono supportati solo per le risorse immagine.
+
+**Per applicare i predefiniti per immagini per contenuti multimediali dinamici**
 
 1. Aprite la risorsa e, nella barra a sinistra, toccate il menu a discesa, quindi toccate **[!UICONTROL Rappresentazioni.]**
 
