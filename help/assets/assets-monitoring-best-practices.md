@@ -3,9 +3,9 @@ title: Best practice per [!DNL Assets] monitorare l'implementazione
 description: Procedure ottimali per monitorare l'ambiente e le prestazioni dell' [!DNL Adobe Experience Manager] implementazione dopo l'implementazione.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ In genere, [!DNL Experience Manager Assets] è possibile monitorare i dati in du
 * [In alto](https://man7.org/linux/man-pages/man1/top.1.html): Top è un comando Linux che apre un dashboard, che visualizza le statistiche di utilizzo, incluso l&#39;utilizzo di CPU, memoria e IO. Fornisce una panoramica di alto livello di ciò che sta accadendo in un’istanza.
 * [Htop](https://hisham.hm/htop/): Htop è un visualizzatore di processo interattivo. Offre un utilizzo dettagliato della CPU e della memoria oltre a quanto può fornire Top. Htop può essere installato nella maggior parte dei sistemi Linux utilizzando `yum install htop` o `apt-get install htop`.
 
-* [Iotop](https://guichaz.free.fr/iotop/): Iotop è una dashboard dettagliata per l&#39;utilizzo di I/O su disco. Vengono visualizzate barre e misuratori che rappresentano i processi che utilizzano l&#39;I/O del disco e la quantità utilizzata. Iotop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install iotop` o `apt-get install iotop`.
+* Iotop: Iotop è una dashboard dettagliata per l&#39;utilizzo di I/O su disco. Vengono visualizzate barre e misuratori che rappresentano i processi che utilizzano l&#39;I/O del disco e la quantità utilizzata. Iotop può essere installato sulla maggior parte dei sistemi Linux utilizzando `yum install iotop` o `apt-get install iotop`.
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop visualizza informazioni dettagliate sull&#39;utilizzo di Ethernet/rete. Iftop visualizza le statistiche sui canali di comunicazione delle entità che utilizzano Ethernet e la quantità di larghezza di banda utilizzata. Iftop può essere installato nella maggior parte dei sistemi Linux utilizzando `yum install iftop` o `apt-get install iftop`.
 
