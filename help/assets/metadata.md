@@ -3,9 +3,9 @@ title: Consente di gestire i metadati delle risorse digitali in [!DNL Adobe Expe
 description: Scoprite i tipi di metadati e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] come organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2423'
 ht-degree: 11%
 
 ---
@@ -49,7 +49,7 @@ Per modificare i metadati di una risorsa nell’interfaccia [!DNL Assets] utente
 
    ![Selezionate Proprietà di una risorsa per visualizzarne i metadati](assets/asset-metadata.png)
 
-   *Figura: Modificate o aggiungete i metadati nella pagina[!UICONTROL Proprietà]risorsa.*
+   *Figura: Modificate o aggiungete i metadati nella pagina [!UICONTROL Proprietà] risorsa.*
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
@@ -68,7 +68,7 @@ XMP riscrittura è supportata e abilitata per le piattaforme e i formati di file
 * Cambiare le proprietà dei metadati impostando un valore comune
 * Aggiunta o modifica di tag
 
-Per personalizzare la pagina delle proprietà dei metadati, incluse l’aggiunta, la modifica, l’eliminazione delle proprietà dei metadati, utilizzate l’editor dello schema.
+Per personalizzare la pagina delle proprietà dei metadati, ad esempio aggiungere, modificare, eliminare proprietà dei metadati, utilizzate l&#39;editor [](metadata-config.md#folder-metadata-schema)dello schema.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Per personalizzare la pagina delle proprietà dei metadati, incluse l’aggiunta
 
 [!DNL Assets] consente di importare in massa i metadati delle risorse mediante un file CSV. Potete eseguire aggiornamenti in blocco per le risorse caricate di recente o per le risorse esistenti importando un file CSV. Potete anche assimilare i metadati delle risorse in massa da sistemi di terze parti in formato CSV.
 
-L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa XMP’attività di reinserimento se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo che le prestazioni per altri utenti non vengano compromesse.
+L&#39;importazione dei metadati è asincrona e non ostacola le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa XMP’attività di reinserimento se è selezionato il flag del flusso di lavoro. Pianificate tale importazione durante l&#39;utilizzo di un server snello in modo da non influenzare le prestazioni di altri utenti.
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visuali
 
 Potete rielaborare le risorse in una cartella che dispone già di un profilo video esistente modificato in seguito. Consulta [Rielaborazione delle risorse in una cartella dopo la modifica del profilo di elaborazione](processing-profiles.md#reprocessing-assets).
 
-### Applicazione dei profili di metadati alle cartelle dall&#39;interfaccia utente Profili {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Applicazione dei profili di metadati alle cartelle dall&#39;interfaccia utente [!UICONTROL Profili] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Seguite i passaggi per applicare il profilo di metadati:
 
@@ -196,7 +196,7 @@ Seguite i passaggi per applicare il profilo di metadati:
 1. Selezionate il profilo di metadati da applicare a una o più cartelle.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
-### Applicazione dei profili di metadati alle cartelle da Proprietà {#applying-metadata-profiles-to-folders-from-properties}
+### Applicazione dei profili di metadati alle cartelle da [!UICONTROL Proprietà] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. Nella barra a sinistra, fate clic su **[!UICONTROL Risorse]** , quindi individuate la cartella a cui desiderate applicare un profilo di metadati.
 1. Nella cartella, fare clic sul segno di spunta per selezionarlo, quindi fare clic su **[!UICONTROL Proprietà]**.
@@ -205,9 +205,11 @@ Seguite i passaggi per applicare il profilo di metadati:
 
 Le cartelle a cui è già stato assegnato un profilo sono indicate dalla visualizzazione del nome del profilo che è posto direttamente sotto il nome della cartella.
 
-### Applicazione del profilo di metadati a livello globale {#metadata-profile-global}
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
 
-Per informazioni dettagliate, consultate [Configurazione per applicare il profilo di metadati a livello globale](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+### Apply metadata profile globally {#metadata-profile-global}
+
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### Rimozione di un profilo di metadati dalle cartelle {#removing-a-metadata-profile-from-folders}
 
