@@ -3,9 +3,9 @@ title: Scaricare le risorse
 description: Scoprite come scaricare le risorse [!DNL Adobe Experience Manager] da e attivare o disattivare la funzionalità di download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '866'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Per scaricare le risorse, effettuate le seguenti operazioni:
 
    ![Opzioni disponibili durante il download delle risorse da  risorse Experience Manager](/help/assets/assets/asset-download1.png)
 
-   *Figura: Opzioni della finestra di dialogo Download.*
+   *Figura: Opzioni disponibili nella finestra di dialogo di download.*
 
 1. Nella finestra di dialogo Download, selezionate le opzioni di download desiderate.
 
@@ -73,6 +73,7 @@ Per consentire il download delle risorse da DAM, ad esempio quando si utilizza u
 
 >[!MORELIKETHIS]
 >
+>* [Scaricare le risorse tramite Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Scaricate le risorse](drm.md)protette da DRM.
 >* [Scaricate le risorse tramite &#39;app desktop Experience Manager su Windows o Mac desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Scaricate le risorse tramite  collegamento Risorse Adobe dalle app](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)Adobe Creative Cloud supportate.
