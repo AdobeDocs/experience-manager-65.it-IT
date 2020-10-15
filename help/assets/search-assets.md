@@ -4,15 +4,15 @@ description: Scoprite come trovare le risorse necessarie [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 421f18bef4b0dbcad74e91316eead70036c9750e
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '5955'
+source-wordcount: '5968'
 ht-degree: 5%
 
 ---
 
 
-# Cercare risorse in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Cercare risorse in [!DNL Adobe Experience Manager] {#assets-search-in-aem}
 
 [!DNL Adobe Experience Manager Assets] fornisce solidi metodi di individuazione delle risorse che consentono di ottenere una maggiore velocità del contenuto. I team di lavoro riducono i tempi necessari per realizzare ricerche intelligenti e senza soluzione di continuità grazie alla funzionalità e ai metodi personalizzati forniti con il prodotto. La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia per l’ulteriore utilizzo da parte dei creativi, per una gestione affidabile delle risorse da parte degli utenti aziendali e degli esperti di marketing, sia per l’amministrazione da parte degli amministratori DAM. Ricerche semplici, avanzate e personalizzate che potete eseguire tramite l&#39;interfaccia [!DNL Assets] utente o altre app e superfici aiutano a soddisfare questi casi di utilizzo.
 
@@ -43,7 +43,7 @@ Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
 ![Comprendere  Experience Manager Interfaccia dei risultati della ricerca Risorse](assets/aem_search_results.png)
 
-*Figura: Comprendere l’interfaccia dei risultati della[!DNL Experience Manager Assets]ricerca.*
+*Figura: Comprendere l’interfaccia dei risultati della [!DNL Experience Manager Assets] ricerca.*
 
 **A.** Salvate la ricerca come raccolta avanzata. **B.** Filtri o predicati per limitare i risultati della ricerca. **C.** Visualizzare file, cartelle o entrambi. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. **F.** Campo di ricerca Omnisearch con parola chiave di ricerca fornita dall’utente. **G.** Selezionare i risultati di ricerca caricati. **H.** Numero di risultati della ricerca visualizzati rispetto al totale dei risultati della ricerca. **I.** Chiudi la ricerca **J.** Passa dalla vista a scheda a quella a elenco.
 
@@ -178,13 +178,13 @@ Potete cercare le risorse in base ai valori esatti di specifici campi di metadat
 | Altezza dell’immagine | height:lowerbound.upperbound |
 | Person | persona:John |
 
-Le proprietà `path`, `limit`, `size`e `orderby` non possono essere *eliminate* con qualsiasi altra proprietà.
+Le proprietà `path`, `limit`, `size`e `orderby` non possono essere combinate utilizzando `OR` operatore con qualsiasi altra proprietà.
 
 La parola chiave per una proprietà generata dall&#39;utente è la relativa etichetta campo nell&#39;editor delle proprietà in lettere minuscole, con la rimozione degli spazi.
 
 Di seguito sono riportati alcuni esempi di formati di ricerca per query complesse:
 
-* Per visualizzare tutte le risorse con più campi facet (ad esempio: title=John Doe e strumento di creazione =  Adobe Photoshop): `tiltle:"John Doe" creatortool:Adobe*`
+* Per visualizzare tutte le risorse con più campi facet (ad esempio: title=John Doe e strumento di creazione =  Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * Per visualizzare tutte le risorse quando il valore dei facet non è una singola parola ma una frase (ad esempio: title=Scott Reynolds): `title:"Scott Reynolds"`
 * Per visualizzare le risorse con più valori di una singola proprietà (ad esempio: title=Scott Reynolds o John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * Per visualizzare le risorse con valori di proprietà che iniziano con una stringa specifica (ad esempio: title is Scott Reynolds): `title:Scott*`
@@ -284,6 +284,8 @@ La funzionalità di ricerca può presentare limiti di prestazioni nei seguenti s
 * **Assegnazione tag**: I tag consentono di classificare le risorse che possono essere cercate e cercate in modo più efficiente. I tag consentono di estendere la tassonomia appropriata ad altri utenti e flussi di lavoro. [!DNL Experience Manager] offre metodi per assegnare automaticamente tag alle risorse utilizzando  servizi intelligenti di Adobe Sensei che consentono di aggiungere tag con utilizzo e formazione sempre più avanzati alle risorse. Quando ricercate le risorse, gli smart tag vengono inseriti se la funzione è attivata nel vostro account. Funziona insieme alla funzionalità di ricerca integrata. Consultate Comportamento [di](#searchbehavior)ricerca. Per ottimizzare l’ordine in cui vengono visualizzati i risultati della ricerca, potete [aumentare la classifica](#searchrank) di ricerca di alcune risorse selezionate.
 
 * **Indicizzazione**: Nei risultati della ricerca vengono restituiti solo i metadati e le risorse indicizzati. Per una migliore copertura e migliori prestazioni, accertatevi che l&#39;indicizzazione sia corretta e seguite le best practice. Vedere [indicizzazione](#searchindex).
+
+* Per escludere risorse specifiche dai risultati della ricerca, utilizzate `excludedPath` la proprietà nell’indice di Lucene.
 
 ## Alcuni esempi che illustrano la ricerca {#samples}
 
@@ -438,7 +440,7 @@ Potete scaricare le risorse ricercate e le relative rappresentazioni esattamente
 
 Per le risorse disponibili in una singola cartella o raccolta, è più semplice [aggiornare i metadati in blocco](/help/assets/metadata.md) senza utilizzare la funzionalità di ricerca. Per le risorse disponibili in più cartelle o che corrispondono a criteri comuni, è più rapido aggiornare in massa i metadati tramite la ricerca.
 
-### Raccolte intelligenti {#collections-1}
+### Raccolte intelligenti {#smart-collections}
 
 Una raccolta è un set ordinato di risorse che può includere risorse da posizioni diverse, perché le raccolte contengono solo riferimenti a tali risorse. Le raccolte sono dei due tipi seguenti:
 
@@ -451,7 +453,7 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 
 | Errore, problemi, sintomi | Possibile motivo | Possibile correzione o comprensione del problema |
 |---|---|---|
-| Risultati errati durante la ricerca di risorse con metadati mancanti. | Quando si ricercano risorse per le quali mancano i metadati obbligatori, [!DNL Experience Manager] è possibile che vengano visualizzate risorse con metadati validi. I risultati si basano sulle proprietà dei metadati indicizzati. | Una volta aggiornati i metadati, è necessario reindicizzare lo stato corretto dei metadati delle risorse. Consultate Metadati [](metadata-schemas.md#define-mandatory-metadata)obbligatori. |
+| Risultati errati durante la ricerca di risorse con metadati mancanti. | Quando si ricercano risorse per le quali mancano i metadati obbligatori, [!DNL Experience Manager] è possibile che vengano visualizzate risorse con metadati validi. I risultati si basano sulle proprietà dei metadati indicizzati. | Una volta aggiornati i metadati, è necessario reindicizzarli per riflettere lo stato corretto dei metadati delle risorse. Consultate Metadati [](metadata-schemas.md#define-mandatory-metadata)obbligatori. |
 | Troppi risultati di ricerca. | Parametro di ricerca ampio. | Considerate la limitazione dell&#39; [ambito di ricerca](#scope). Gli smart tag consentono di ottenere più risultati di quanto previsto. Consultate Comportamento di [ricerca con gli smart tag](#withsmarttags). |
 | Risultati di ricerca non correlati o in parte correlati. | Il comportamento di ricerca cambia con l’assegnazione di smart tag. | Scoprite [come cambia la ricerca dopo l’assegnazione di tag](#withsmarttags)avanzati. |
 | Nessun suggerimento di completamento automatico per le risorse. | Le risorse appena caricate non sono ancora indicizzate. I metadati non sono immediatamente disponibili come suggerimenti quando iniziate a digitare una parola chiave di ricerca nella barra di ricerca Omnyser. | [!DNL Assets] attende la scadenza di un periodo di timeout (per impostazione predefinita, un’ora) prima di eseguire un processo in background per indicizzare i metadati per tutte le risorse caricate o aggiornate di recente e quindi aggiungere i metadati all’elenco dei suggerimenti. |
@@ -463,7 +465,7 @@ Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UI
 
 >[!MORELIKETHIS]
 >
->* [Guida all&#39;implementazione della ricerca  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [[!DNL Experience Manager] guida all&#39;implementazione della ricerca](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configurazione avanzata per migliorare i risultati della ricerca](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configurare la ricerca per la traduzione intelligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
