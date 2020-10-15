@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: fa3d5923784a8d89e2b440412d2b88790de3e39e
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2663'
 ht-degree: 3%
 
 ---
@@ -277,10 +277,6 @@ Per configurare un documento di record per i moduli adattivi, procedere come seg
 
    **Genera documento record** Selezionare questa opzione per utilizzare un file XDP come modello di base per definire lo stile e l&#39;aspetto del documento del record. Selezionando questa opzione, vengono visualizzati tutti i file XDP disponibili  archivio AEM Forms. Selezionare il file appropriato.
 
-   **[!UICONTROL Selezionare questa opzione per utilizzare un file XDP come modello di base per definire lo stile e l&#39;aspetto del documento del record. Selezionando questa opzione, vengono visualizzati tutti i file XDP disponibili  archivio AEM Forms. Selezionare il file appropriato.]**
-
-   **Selezionare Modello Forms come modello di base per generare il documento di registrazione** Selezionare questa opzione per utilizzare un file XDP come modello di base per definire lo stile e l&#39;aspetto del documento di record. Selezionando questa opzione, vengono visualizzati tutti i file XDP disponibili  archivio AEM Forms. Selezionare il file appropriato.
-
    >[!NOTE]
    >
    >Verificare che lo schema utilizzato per creare il modulo adattivo e lo schema (schema dati) del modulo XFA sia lo stesso se:
@@ -380,8 +376,6 @@ Quando si lavora su un documento di record per i moduli adattivi, tenere present
 
 * Il documento dei modelli di record non supporta il testo RTF. Di conseguenza, il testo RTF nel modulo adattivo statico o nelle informazioni compilate dall’utente finale viene visualizzato come testo normale nel documento del record.
 * I frammenti di documento in un modulo adattivo non vengono visualizzati nel documento del record. Tuttavia, i frammenti di modulo adattivo sono supportati.
-* document of record viene utilizzato solo per la stampa.
-* Il binding del contenuto nel documento del record generato per il modulo adattivo basato su schema XML non è supportato.
 * Il binding del contenuto nel documento del record generato per il modulo adattivo basato su schema XML non è supportato.
 * La versione localizzata del documento del record viene creata su richiesta per una lingua quando l&#39;utente richiede il rendering del documento del record. La localizzazione del documento del record avviene insieme alla localizzazione del modulo adattivo. Per ulteriori informazioni sulla localizzazione del documento dei moduli di registrazione e adattivi, vedere [Utilizzo AEM flusso di lavoro di traduzione per localizzare moduli adattivi e documenti di record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
