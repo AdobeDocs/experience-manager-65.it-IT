@@ -3,7 +3,7 @@ title: Elaborazione delle risorse tramite gestori e flussi di lavoro di contenut
 description: Scopri i gestori di contenuti multimediali e come utilizzare i flussi di lavoro per eseguire attività sulle risorse digitali.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 4%
@@ -447,7 +447,7 @@ Le seguenti conversioni possono essere eseguite automaticamente e memorizzate al
 * Trasformazione EPS e AI tramite [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/).
 * Transcodifica video FLV tramite [FFmpeg](https://ffmpeg.org/).
 * Codifica MP3 con [LAME](https://lame.sourceforge.io/).
-* Elaborazione audio con [SOX](http://sox.sourceforge.net/).
+* Elaborazione audio con [SOX](https://sox.sourceforge.net/).
 
 >[!NOTE]
 >
