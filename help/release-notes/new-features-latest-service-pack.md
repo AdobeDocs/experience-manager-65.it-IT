@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
+source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2561'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Ora potete scegliere se pubblicare o annullare la pubblicazione selettiva delle 
 ### Precompilare un modulo adattivo nel client {#prefill-merge-data-at-client}
 
 Quando si precompila un modulo adattivo, il [!DNL Experience Manager Forms] server unisce i dati a un modulo adattivo e invia il modulo compilato. Per impostazione predefinita, l&#39;azione di unione dei dati viene eseguita sul server.
-Ora è possibile configurare il [!DNL Experience Manager Forms] server per eseguire l&#39;azione di unione dati sul client anziché sul server. Riduce notevolmente il tempo necessario per precompilare ed eseguire il rendering dei moduli adattivi.
+Ora è possibile configurare il [!DNL Experience Manager Forms] server per [eseguire l&#39;azione di unione dati sul client](../../help/forms/using/prepopulate-adaptive-form-fields.md) anziché sul server. Riduce notevolmente il tempo necessario per precompilare ed eseguire il rendering dei moduli adattivi.
 
 ### Integrazione del modello dati del modulo con le API RESTful su un server con implementazione SSL bidirezionale {#fdm-integration-rest-apis-two-way-ssl}
 
@@ -87,7 +87,7 @@ Ora è possibile configurare il [!DNL Experience Manager Forms] server per esegu
 
 Se un AcroForm include [!DNL Adobe Sign] tag di testo, questi campi vengono ora riconosciuti e rappresentati come [!DNL Adobe Sign] campi nel modulo adattivo convertito utilizzando [!DNL Automated Forms Conversion service]. Un firmatario può compilare tali campi durante la firma del modulo adattivo.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 È possibile utilizzare [!DNL Automated Forms Conversion service] per convertire PDF forms colorati in moduli adattivi.
 
@@ -97,7 +97,7 @@ Se un AcroForm include [!DNL Adobe Sign] tag di testo, questi campi vengono ora 
 
 ### Caching migliorato per le pagine dei moduli adattivi tradotte {#enhanced-caching-translated-adaptive-forms}
 
-Ora è possibile specificare le impostazioni internazionali come selettore invece dell&#39;argomento URL. Consente di memorizzare i moduli adattivi tradotti nella cache in [!DNL Experience Manager Dispatcher].
+Ora è possibile specificare le [impostazioni internazionali come selettore nell&#39;URL del modulo adattivo invece di un argomento nell&#39;URL](../../help/forms/using/supporting-new-language-localization.md)del modulo adattivo. Consente di memorizzare i moduli adattivi tradotti nella cache in [!DNL Experience Manager Dispatcher]. La memorizzazione nella cache del modulo adattivo convertito non era possibile nelle versioni precedenti. Per informazioni dettagliate sulla configurazione del caching per l&#39;utilizzo delle impostazioni internazionali come selettore nell&#39;URL del modulo adattivo, vedere [Configurare la cache dei moduli adattivi nel dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### Salva l&#39;output del servizio del modello dati del modulo su una variabile {#save-fdm-service-to-variable}
 
@@ -105,7 +105,9 @@ Il modello dati modulo consente di salvare l&#39;output di un servizio del model
 
 ### Allega più file per il componente Allegato file {#attach-multiple-files}
 
-È ora possibile allegare più file al componente [!UICONTROL File allegato] dei moduli adattivi.
+È ora possibile [allegare più file](../../help/forms/using/introduction-forms-authoring.md) al componente [!UICONTROL File allegato] dei moduli adattivi.
+
+
 
 ## Caratteristiche principali dei Service Pack precedenti  Experience Manager 6.5 {#key-features-previous-service-packs}
 
@@ -278,7 +280,7 @@ La nuova opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
