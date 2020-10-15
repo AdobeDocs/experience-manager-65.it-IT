@@ -3,10 +3,10 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2bc8c7c52084a415faaf8a5b68be7dc6fc461c4
+source-git-commit: c5972647d23b7e7bfd2fcd791648cb26de1fdb68
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 42%
+source-wordcount: '2247'
+ht-degree: 41%
 
 ---
 
@@ -194,4 +194,6 @@ Per risolvere eventuali problemi relativi allo scenario di errore comune, proced
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni necessarie per recuperarlo o l&#39;errore di rete può essere dovuto a cause. Assicurarsi che la risorsa non venga rimossa dal DAM remoto. Verificate che siano disponibili le autorizzazioni appropriate e che i prerequisiti siano soddisfatti. Provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controlla l’[elenco dei processi asincroni](/help/sites-administering/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
-* Se non riuscite ad accedere alla distribuzione remota di DAM dalla [!DNL Sites] distribuzione locale, accertatevi che i cookie tra siti siano consentiti. Se i cookie cross-site sono bloccati, le due distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità Incognito i cookie di terze parti possono essere bloccati. In [!DNL Chrome], fate clic sull&#39;icona &quot;occhio&quot; nella barra degli indirizzi per consentire i cookie o per visualizzare informazioni su [come abilitare i cookie](https://support.google.com/chrome/answer/95647)di terze parti.
+* Se non riuscite ad accedere alla distribuzione remota di DAM dalla [!DNL Sites] distribuzione locale, accertatevi che i cookie tra siti siano consentiti. Se i cookie cross-site sono bloccati, le due distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità Incognito i cookie di terze parti possono essere bloccati. Per consentire i cookie nel [!DNL Chrome] browser, fai clic sull&#39;icona a forma di occhio nella barra degli indirizzi, vai a Sito che non funziona > Bloccato, seleziona l&#39;URL DAM remoto e consenti il cookie del token di login. In alternativa, consulta la guida su [come abilitare i cookie](https://support.google.com/chrome/answer/95647)di terze parti.
+
+![Errore del cookie in Chrome in modalità incognito](assets/chrome-cookies-incognito-dialog.png)
