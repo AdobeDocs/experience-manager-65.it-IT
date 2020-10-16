@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: Guida utente per l'amministrazione di AEM 6.5
-breadcrumb-title: Administering Guide
-user-guide-description: Learn about administering AEM.
+user-guide-title: Guida utente all’amministrazione di AEM 6.5
+breadcrumb-title: Guida all’amministrazione
+user-guide-description: Scopri come amministrare AEM.
 translation-type: tm+mt
 source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 15%
+source-wordcount: '625'
+ht-degree: 18%
 
 ---
 
 
-# AEM 6.5 Administering User Guide {#administering}
+# Guida utente all’amministrazione di AEM 6.5 {#administering}
 
 + [Panoramica sulla Guida utente di amministrazione](home.md)
 + Caratteristiche dei siti {#introduction}
