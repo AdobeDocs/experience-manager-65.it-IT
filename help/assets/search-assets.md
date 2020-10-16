@@ -4,7 +4,7 @@ description: Scoprite come trovare le risorse necessarie [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 5%
@@ -358,7 +358,7 @@ La ricerca visiva utilizza i tag avanzati e richiede [!DNL Experience Manager] 6
 1. In CRXDE, nel `/oak-index/damAssetLucene` nodo, impostare la `reindex` proprietà su `true`. Salva le modifiche.
 1. (Facoltativo) Se si dispone di un modulo di ricerca personalizzato, copiare il `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nodo in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salva le modifiche.
 
-Per ulteriori informazioni, vedere [Informazioni sugli smart tag nel  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) e [come gestire gli smart tag](/help/assets/managing-smart-tags.md).
+Per ulteriori informazioni, vedere [Informazioni sugli smart tag nel  Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) e [come gestire gli smart tag](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
