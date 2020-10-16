@@ -3,17 +3,15 @@ title: Tag avanzati migliorati
 description: Tag avanzati migliorati
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 11%
+source-wordcount: '1522'
+ht-degree: 4%
 
 ---
 
 
 # Tag avanzati migliorati {#enhanced-smart-tags}
-
-## Panoramica dei tag avanzati avanzati {#overview-of-enhanced-smart-tags}
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre di più il vocabolario controllato dalla tassonomia nei metadati delle risorse. Comprende in sostanza un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una determinata classe. L’assegnazione di tag alle risorse con un vocabolario controllato dalla tassonomia ne consente l’identificazione e il recupero tramite ricerche basate sui tag.
 
@@ -60,70 +58,36 @@ La procedura di registrazione è completa quando l’amministratore configura il
 
 ## Rivedere risorse e tag {#reviewing-assets-and-tags}
 
-Dopo essere stati caricati, la prima cosa da fare è identificare un set di tag che meglio descrivono queste immagini nel contesto della vostra attività.
+Dopo essere stati a bordo, la prima cosa da fare è identificare un insieme di tag che meglio descrivono queste immagini nel contesto della vostra attività.
 
-Quindi, rivedete le immagini per identificare un set di immagini che meglio rappresentano il vostro prodotto per un particolare requisito aziendale. Assicurati che le risorse del set selezionato siano conformi alle linee guida [di formazione di](smart-tags-training-guidelines.md)Smart Content Service.
+Quindi, rivedete le immagini per identificare un set di immagini che meglio rappresentano il vostro prodotto per un particolare requisito aziendale. Assicurati che le risorse del set selezionato siano conformi alle linee guida [di formazione di](/help/assets/config-smart-tagging.md#training-the-smart-content-service)Smart Content Service.
 
 Aggiungete le risorse a una cartella e applicate i tag a ciascuna risorsa dalla pagina delle proprietà. Quindi, eseguite il flusso di lavoro di formazione su questa cartella. La serie di risorse selezionata consente a Smart Content Service di formare in modo efficace più risorse utilizzando le definizioni della tassonomia.
 
 >[!NOTE]
 >
 >1. La formazione è un processo irrevocabile.  Adobe consiglia di rivedere i tag nel set di risorse curato prima di addestrare Smart Content Service sui tag.
->1. Prima di iniziare la formazione per un tag, consultate le linee guida [di formazione per](smart-tags-training-guidelines.md)Smart Content Service.
+>1. Prima di iniziare la formazione per un tag, consultate le linee guida [di formazione per](/help/assets/config-smart-tagging.md#training-the-smart-content-service)Smart Content Service.
 >1. Quando formate Smart Content Service per la prima volta,  Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 
-## Formazione del servizio Smart Content {#training-the-smart-content-service}
+## Comprendere i risultati [!DNL Experience Manager] di ricerca con gli smart tag {#understandsearch}
 
-Affinché Smart Content Service riconosca la tassonomia aziendale, eseguitela su un set di risorse che già includono tag rilevanti per la vostra attività. Dopo la formazione, il servizio può applicare la stessa tassonomia a un set di risorse simile.
+Per impostazione predefinita, [!DNL Experience Manager] la ricerca combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
 
-È possibile formare il servizio più volte per migliorarne la capacità di applicare tag rilevanti. Dopo ogni ciclo di formazione, eseguite un flusso di lavoro con tag e verificate che le risorse dispongano dei tag appropriati.
+* risorse con `woman` e `running` parole chiave nei metadati.
 
-Potete addestrare Smart Content Service periodicamente o su richiesta.
+* assets smart tag con una delle parole chiave.
 
->[!NOTE]
+I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a uno qualsiasi dei termini di ricerca negli smart tag. Nell&#39;esempio precedente, l&#39;ordine approssimativo di visualizzazione dei risultati della ricerca è:
+
+1. corrispondenze di `woman running` nei vari campi di metadati.
+1. corrispondenze di `woman running` in smart tag.
+1. corrispondenze di `woman` o di `running` in smart tag.
+
+>[!CAUTION]
 >
->Il flusso di lavoro di formazione viene eseguito solo sulle cartelle.
-
-### Formazione periodica {#periodic-training}
-
-Potete abilitare Smart Content Service per l&#39;addestramento periodico delle risorse e dei tag associati all&#39;interno di una cartella. Aprite la pagina [!UICONTROL Proprietà] della cartella di risorse, selezionate **[!UICONTROL Abilita tag]** avanzati nella scheda **[!UICONTROL Dettagli]** e salvate le modifiche.
-
-![enable_smart_tags](assets/enable_smart_tags.png)
-
-Quando questa opzione è selezionata per una cartella, [!DNL Experience Manager] esegue automaticamente un flusso di lavoro di formazione per formare Smart Content Service sulle risorse delle cartelle e i relativi tag. Per impostazione predefinita, il flusso di lavoro della formazione viene eseguito settimanalmente alle 12:30 del sabato.
-
-### Formazione su richiesta {#on-demand-training}
-
-Potete addestrare Smart Content Service quando necessario dalla console Flusso di lavoro.
-
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]** , individuate la cartella payload che include le risorse con tag per la formazione del servizio.
-1. Specificate un titolo per il flusso di lavoro e un commento. Quindi fate clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
-
-   ![workflow_dialog](assets/workflow_dialog.png)
-
->[!NOTE]
->
->Una volta che le risorse di una cartella vengono elaborate per la formazione, solo le risorse modificate vengono elaborate nei cicli di formazione successivi.
-
-### Visualizzazione dei rapporti sulla formazione {#viewing-training-reports}
-
-Per verificare se Smart Content Service è addestrato sui tag presenti nel set di risorse di formazione, controllate il rapporto sul flusso di lavoro di formazione dalla console Rapporti.
-
-1. Nell’ [!DNL Experience Manager] interfaccia, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Rapporti]**.
-1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
-1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Then, click **[!UICONTROL Create]** from the toolbar.
-1. Nella pagina **[!UICONTROL Rapporti su risorse]**, seleziona il rapporto generato. To view the report, click **[!UICONTROL View]** from the toolbar.
-1. Rivedete i dettagli del rapporto.
-
-   Il rapporto mostra lo stato di formazione per i tag che hai appreso. La presenza del colore verde nella colonna **[!UICONTROL Training Status (Stato formazione)]** indica che per il tag è stato eseguito il training del servizio di contenuti avanzati. Se invece del verde è presente il colore giallo, il training del servizio di contenuti avanzati non è stato completato per un tag specifico. In questo caso, aggiungi altre immagini che contengono il tag in questione ed esegui il flusso di lavoro di formazione per completare il training del servizio per quel tag.
-
-   Se non visualizzate i tag nel rapporto, eseguite nuovamente il flusso di lavoro di formazione per questi tag.
-
-1. Per scaricare il rapporto, selezionatelo dall’elenco e fate clic su **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come foglio di calcolo di Microsoft Excel.
+>Se l&#39;indicizzazione Lucene viene effettuata [!DNL Adobe Experience Manager] quindi la ricerca basata sugli smart tag non funziona come previsto.
 
 ## Assegnare automaticamente tag alle risorse {#tagging-assets-automatically}
 
@@ -143,10 +107,7 @@ Quando questa opzione è selezionata per una cartella, Smart Content Service ass
 
 ### Assegnazione tag su richiesta {#on-demand-tagging}
 
-Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro dei tag:
-
-* Console Flusso di lavoro
-* Timeline 
+Potete attivare il flusso di lavoro dei tag dalla console del flusso di lavoro o dalla timeline per assegnare tag istantanei alle risorse.
 
 >[!NOTE]
 >
@@ -164,7 +125,7 @@ Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro d
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consultate [Gestione dei tag](managing-smart-tags.md)avanzati.
+   Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse.
 
 #### Applicare tag alle risorse dalla timeline {#tagging-assets-from-the-timeline}
 
@@ -175,12 +136,29 @@ Per assegnare tag istantanei alle risorse, potete attivare il flusso di lavoro d
    ![start_workflow](assets/start_workflow.png)
 
 1. Selezionate il flusso di lavoro **[!UICONTROL DAM Smart Tag Assets]** e specificate un titolo per il flusso di lavoro.
-1. Fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consultate [Gestione dei tag](managing-smart-tags.md)avanzati.
+1. Fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse.
 
 >[!NOTE]
 >
 >Nei cicli di assegnazione dei tag successivi, solo le risorse modificate dispongono di tag di nuova formazione. Tuttavia, vengono assegnati tag anche alle risorse inalterate se lo spazio tra l’ultimo ciclo di tag e quello corrente per il flusso di lavoro dei tag supera le 24 ore. Per i flussi di lavoro con tag periodici, le risorse inalterate vengono contrassegnate con tag quando l’intervallo di tempo supera i 6 mesi.
 
+## Cura o moderazione degli smart tag applicati {#manage-smart-tags}
+
+Potete curare i tag avanzati per rimuovere eventuali tag non accurati eventualmente assegnati alle immagini del vostro marchio, in modo da visualizzare solo i tag più rilevanti.
+
+La moderazione degli smart tag consente inoltre di perfezionare le ricerche basate sui tag per le immagini, assicurando che l’immagine venga visualizzata nei risultati di ricerca per i tag più rilevanti. In sostanza, elimina la possibilità che immagini non collegate vengano visualizzate nei risultati della ricerca.
+
+Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza rispetto a un’immagine. La promozione di un tag per un’immagine aumenta le probabilità che l’immagine venga visualizzata nei risultati di ricerca quando viene eseguita una ricerca in base al tag specifico.
+
+1. Nella casella di ricerca Omnico, cercate le risorse in base a un tag.
+1.  Inspect i risultati della ricerca per identificare un’immagine che non si trova rilevante ai fini della ricerca.
+1. Selezionate l’immagine e fate clic su **[!UICONTROL Gestisci tag]** nella barra degli strumenti.
+1. Dalla pagina **[!UICONTROL Gestisci tag]** , ispezionate i tag. Se non desiderate che l’immagine venga cercata in base a un tag specifico, selezionate il tag e fate clic su **[!UICONTROL Elimina]** nella barra degli strumenti. In alternativa, fate clic sul `x` simbolo visualizzato accanto al tag .
+1. Se necessario, per assegnare un rango più alto a un tag, selezionate il tag e fate clic su **[!UICONTROL Promuovi]** nella barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
+1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
+1. Passate alla pagina **[!UICONTROL Proprietà]** dell’immagine. Osservate che al tag promosso viene assegnata maggiore rilevanza e che compare prima nei risultati della ricerca.
+
 ## Suggerimenti e limitazioni {#tips-best-practices-limitations}
 
 * L&#39;utilizzo di Smart Content Services è limitato a 2 milioni di immagini con tag all&#39;anno. Qualsiasi immagine duplicata elaborata e con tag viene conteggiata come immagine con tag.
+* Se eseguite il flusso di lavoro dei tag dalla timeline, potete applicare tag a un massimo di 15 risorse alla volta.
