@@ -8,9 +8,9 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: 0b3884301e09eba6860891f00a98508033d12ec8
+source-git-commit: 263a25b70fe4a3e7de65b47f07932d2e5f3d0197
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2057'
 ht-degree: 8%
 
 ---
@@ -159,7 +159,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
       <td> 
        <ul> 
         <li>In alto: 1,5 rem</li> 
-        <li>7b: -35 px</li> 
+        <li>In basso: -35 px</li> 
         <li>A sinistra: 1rem<strong><br /> </strong></li> 
        </ul> <p><strong>Suggerimento:</strong> Toccate l'icona del <img src="assets/link.png"> collegamento per fornire un valore diverso a ciascun campo.<br /> </p> </td> 
      </tr> 
@@ -246,7 +246,7 @@ Intestazione e piè di pagina forniscono un aspetto coerente e distintivo a un m
     <tbody> 
      <tr> 
       <td><b>Pannello a soffietto</b></td> 
-      <td><b>Proprietà&lt;/b</td> 
+      <td><b>Proprietà</b></td> 
       <td><b>Valore</b></td> 
      </tr> 
      <tr> 
