@@ -3,9 +3,9 @@ title: Configurare i tag delle risorse tramite Smart Content Service
 description: Scoprite come configurare i tag avanzati e i tag avanzati in [!DNL Adobe Experience Manager]mediante Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2188'
 ht-degree: 35%
 
 ---
@@ -23,7 +23,7 @@ Prima di utilizzare Smart Content Service, accertatevi quanto segue:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Installate il service pack [di](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html)Experience Manager più recente.
+* Installate il service pack [di](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager più recente.
 
 ## Integrare con Adobe Developer Console {#integrate-adobe-io}
 
