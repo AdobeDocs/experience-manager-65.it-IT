@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
+source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 2%
@@ -28,7 +28,7 @@ L&#39;operazione Page Move (Sposta pagina) è ora disponibile in modalità asinc
 
 ### Annullamento della validità del contenuto della cache CDN {#invalidate-cdn-cached-content}
 
-Ora potete utilizzare l&#39;interfaccia utente per[!DNL  Dynamic Media] annullare la validità del contenuto nella cache della rete CDN (Content Delivery Network). Di conseguenza, le risorse aggiornate sono disponibili all’istante invece di attendere la scadenza della cache. Potete annullare la validità della CDN:
+Ora potete utilizzare l&#39;interfaccia [!DNL Dynamic Media] utente per annullare la validità del contenuto nella cache della rete CDN (Content Delivery Network). Di conseguenza, le risorse aggiornate sono disponibili all’istante invece di attendere la scadenza della cache. Potete annullare la validità della CDN:
 
 * Creazione di un modello di annullamento validità CDN: Selezione delle risorse e degli URL basati su modelli associati
 
