@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Prima di eseguire l&#39;aggiornamento, è necessario completare diversi passaggi
 
 ## Prerequisiti per la migrazione {#migration-prerequisites}
 
-* **Versione Java minima richiesta:** Lo strumento di migrazione funziona solo con Java versione 7 e versioni successive. Per AEM 6.3 e versioni successive, Oracle JRE 8 e IBM JRE 7 &amp; 8 sono le uniche versioni supportate.
+* **Versione Java minima richiesta:** Lo strumento di migrazione funziona solo con Java versione 7 e versioni successive. Per AEM 6.3 e versioni successive, Oracle&#39;s JRE 8 e IBM JRE 7 &amp; 8 sono le uniche versioni supportate.
 
 * **Istanza aggiornata:** Se state effettuando l&#39;aggiornamento da una versione **precedente alla 5.6**, accertatevi di aver eseguito un aggiornamento locale a AEM 6.0 seguendo la procedura descritta nella versione 6.0 della documentazione relativa all&#39;aggiornamento.
 
@@ -175,6 +175,10 @@ Dove `/path/to/datastore` rappresenta il percorso del datastore del file.
 ### Determinazione del comando di avvio dell&#39;aggiornamento corretto {#determining-the-correct-upgrade-start-command}
 
 Per eseguire l&#39;aggiornamento, è importante iniziare a AEM utilizzando il file jar per visualizzare l&#39;istanza. Per l&#39;aggiornamento alla versione 6.5, potete vedere anche altre opzioni di ristrutturazione e migrazione dei contenuti in Migrazione [dei contenuti](/help/sites-deploying/lazy-content-migration.md) Lazy che potete scegliere con il comando di aggiornamento.
+
+>[!IMPORTANT]
+>
+>Se si esegue Oracle Java 11 (o in genere versioni di Java successive a 8), all&#39;avvio della AEM è necessario aggiungere alla riga di comando ulteriori switch. Per ulteriori informazioni, consultate Considerazioni relative a [Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 L&#39;avvio AEM dallo script iniziale non avvia l&#39;aggiornamento. La maggior parte dei clienti inizia AEM utilizzare lo script iniziale e ha personalizzato questo script iniziale per includere opzioni per le configurazioni di ambiente quali le impostazioni di memoria, i certificati di protezione, ecc. Per questo motivo, si consiglia di seguire questa procedura per determinare il comando di aggiornamento corretto:
 
