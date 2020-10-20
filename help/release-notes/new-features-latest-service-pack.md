@@ -4,7 +4,7 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
+source-git-commit: 750e3729a33718d54dca8b2514468d4a40910d4c
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 2%
@@ -81,7 +81,8 @@ Ora è possibile configurare il [!DNL Experience Manager Forms] server per [eseg
 
 ### Integrazione del modello dati del modulo con le API RESTful su un server con implementazione SSL bidirezionale {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] il modello di dati del modulo può ora integrarsi con le API RESTful su un server in cui è implementato un SSL bidirezionale.
+[!DNL Experience Manager Forms] il modello di dati modulo ora può [integrarsi con le API RESTful su un server in cui è implementato](../../help/forms/using/configure-data-sources.md)un SSL bidirezionale.
+
 
 ### È stato aggiunto il supporto per i tag di [!DNL Adobe Sign] testo in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
 
@@ -280,7 +281,7 @@ La nuova opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
