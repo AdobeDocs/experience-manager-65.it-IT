@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Adobe Experience Manager] 6.5 Service Pack - Note sulla versione.'
+title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione di Service Pack'
 description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
+source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
 workflow-type: tm+mt
-source-wordcount: '4518'
+source-wordcount: '4530'
 ht-degree: 6%
 
 ---
@@ -39,15 +39,15 @@ Le funzioni chiave e i miglioramenti introdotti in Adobe Experience Manager 6.5.
 
 * Le opzioni predefinite per `test` e `aiprocess` vengono aggiornate a `Thumbnail`, da `Rasterize` precedenti contenuti multimediali dinamici, per garantire che gli utenti debbano creare solo una miniatura e saltare l’estrazione della pagina e l’estrazione delle parole chiave.
 
-* Precompilare un modulo adattivo presso il client.
+* [Precompilare un modulo adattivo presso il client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
-* Integrazione del modello dati del modulo con le API RESTful su un server con implementazione SSL bidirezionale.
+* [Integrazione del modello dati del modulo con le API RESTful su un server con implementazione](../../help/forms/using/configure-data-sources.md)SSL bidirezionale.
 
-* È stata migliorata la memorizzazione nella cache per le pagine di moduli adattivi convertite.
+* [È stata migliorata la memorizzazione nella cache per le pagine](../../help/forms/using/configure-adaptive-forms-cache.md)di moduli adattivi convertite.
 
-* Supporto per  tag di testo Adobe Sign in Automated Forms Conversion Service.
+* Supporto per [tag di testo Adobe Sign in Automated Forms Conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
-* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
+* Supporto per [convertire moduli colorati in moduli](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) adattivi utilizzando [!DNL Automated Forms Conversion service].
 
 * Supporto per i protocolli SMB 2 e SMB 3.
 
@@ -152,13 +152,13 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
    ![Menu Aiuto nell&#39;intestazione](assets/Help_aem_header.png)
 
-   *Figura:[!UICONTROL Cercate Aiuto]nel menu[!UICONTROL Aiuto].*
+   *Figura: [!UICONTROL Cercate Aiuto] nel menu [!UICONTROL Aiuto] .*
 
    * Il messaggio di errore se il valore errato viene immesso nel campo [!UICONTROL Impersona come] nell&#39;opzione [!UICONTROL Utente] e lo stato attivo si sposta correttamente nel campo di testo (NPR-33804).
 
    ![Menu utente nell’intestazione](assets/User_aem_header.png)
 
-   *Figura:[!UICONTROL Impersona come]campo nel menu[!UICONTROL Utente]nell’intestazione.*
+   *Figura: [!UICONTROL Impersona come] campo nel menu [!UICONTROL Utente] nell’intestazione.*
 
 * L&#39;utente ora può cambiare lo stato attivo utilizzando la tastiera all&#39;interno di:
 
