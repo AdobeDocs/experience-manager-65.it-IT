@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 149e505eb4dac0d9a56c53036ce1c6b8d16ad0f1
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 1%
@@ -136,7 +136,7 @@ L’applicazione è il modulo adattivo associato al flusso di lavoro. Quando un&
 >
 >È necessario essere membri del gruppo di amministratori di fd per poter creare e gestire le applicazioni del flusso di lavoro.
 
-1. Nell’istanza di AEM autore, andate a ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** (Gestisci applicazione flusso di lavoro) e toccate **[!UICONTROL Create]**(Crea).
+1. Nell’istanza di AEM autore, andate a ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Gestisci applicazione]** flusso di lavoro e toccate **[!UICONTROL Crea]**.
 1. Nella finestra Crea applicazione flusso di lavoro, fornisci gli input per i campi seguenti e tocca **Crea**. Una nuova applicazione viene creata ed elencata nella schermata Applicazioni flusso di lavoro.
 
 <table>
@@ -147,7 +147,7 @@ L’applicazione è il modulo adattivo associato al flusso di lavoro. Quando un&
   </tr>
   <tr>
    <td>Titolo</td>
-   <td>Il titolo è visibile in AEM Casella in entrata e consente agli utenti di scegliere un’applicazione. Tenetelo descrittivo. Ad esempio, Salvataggio dell'applicazione di apertura dell'account.<br /> </td>
+   <td>Il titolo è visibile in AEM Posta in arrivo e consente agli utenti di scegliere un’applicazione. Tenetelo descrittivo. Ad esempio, Salvataggio dell'applicazione di apertura dell'account.<br /> </td>
   </tr>
   <tr>
    <td>Nome </td>
@@ -218,7 +218,7 @@ L&#39;app  AEM Forms si sincronizza con un server  AEM Forms e consente di appor
 
 Un amministratore (membro del gruppo di amministratori di fd) può configurare una cartella di rete per eseguire un flusso di lavoro preconfigurato quando un utente inserisce un file (ad esempio un file PDF) nella cartella. Al termine del flusso di lavoro, è possibile salvare il file dei risultati in una cartella di output specificata. Tale cartella è nota come cartella [](../../forms/using/watched-folder-in-aem-forms.md)esaminata. Per configurare una cartella esaminata e avviare un flusso di lavoro, effettuate le seguenti operazioni:
 
-1. Nell’istanza di AEM autore, andate a ![tools-1](assets/tools-1.png) **>**[!UICONTROL  Forms ]**> Configure Watched Folder (Configura cartella esaminata).** Viene visualizzato un elenco di cartelle esaminate già configurate.
+1. Nell’istanza di AEM autore, andate a ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configura cartella]** esaminata. Viene visualizzato un elenco di cartelle esaminate già configurate.
 1. Toccate **[!UICONTROL Nuovo]**. Viene visualizzato un elenco di campi. Specificate un valore per i seguenti campi per configurare una cartella esaminata per un flusso di lavoro:
 
 <table>
