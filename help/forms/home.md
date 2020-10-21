@@ -4,9 +4,9 @@ seo-title: Guida per Forms di AEM 6.5
 description: Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 seo-description: Vengono  tutte le attività di AEM Forms, inclusa la modalità di creazione, gestione, pubblicazione e aggiornamento dei moduli digitali.
 translation-type: tm+mt
-source-git-commit: 5b5937303dd543195b6c8300e6579a58e03a97d1
+source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '368'
 ht-degree: 30%
 
 ---
@@ -23,7 +23,7 @@ Questa guida descrive tutte  attività di AEM Forms, inclusa la modalità di cre
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
 
-## Guide utente AEM 6.5
+## AEM 6.5 guide
 
 | Guida utente | Descrizione |
 |--- |---|
