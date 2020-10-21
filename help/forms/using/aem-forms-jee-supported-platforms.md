@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 23aee6802e625e82d18a205586eb77341b6ef16e
+source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3276'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,7 @@ In questo documento sono elencate le piattaforme client e server supportate per 
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bit)</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bit)</br><b>Nota:</b> Red Hat Enterprise Linux 6 raggiunge la fase di fine manutenzione e le transizioni alla fase di durata estesa il 30 novembre 2020.  Adobe consiglia Red Hat Enterprise Linux 7 per l'aggiornamento e le nuove installazioni.</p> </td>
    <td><p>A: Supportato</p> </td>
    <td><p>Rilasci secondari, aggiornamenti cumulativi e aggiornamenti critici</p> </td>
   </tr>
