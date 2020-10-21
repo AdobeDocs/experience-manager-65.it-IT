@@ -1,8 +1,8 @@
 ---
-title: AEM Forms su gruppi OSGi e privilegi
-seo-title: AEM Forms su gruppi OSGi e privilegi
-description: Assegnazione di utenti ai gruppi per gestire AEM Forms su OSGi
-seo-description: Assegnazione di utenti ai gruppi per gestire AEM Forms su OSGi
+title: ' AEM Forms su gruppi e privilegi OSGi'
+seo-title: ' AEM Forms su gruppi e privilegi OSGi'
+description: Assegnare gli utenti ai gruppi per gestire  AEM Forms su OSGi
+seo-description: Assegnare gli utenti ai gruppi per gestire  AEM Forms su OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+source-git-commit: 494551d3d886c1ed70d252a28b03cfa9d8e82a6a
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 1%
@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# AEM Forms su gruppi OSGi e privilegi{#aem-forms-on-osgi-groups-and-privileges}
+#  AEM Forms su gruppi e privilegi OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
 Potete [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Tali criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Dopo aver installato il pacchetto [aggiuntivo](../../forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, i gruppi menzionati in questo articolo, quali form-user e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per AEM Forms su OSGi in base alle assegnazioni dei gruppi:
+Dopo aver installato [pacchetto](../../forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo AEM Forms, i gruppi menzionati in questo articolo, quali form-users e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per  AEM Forms in OSGi in base alle assegnazioni del gruppo:
 
 <table>
  <tbody>
@@ -32,12 +32,12 @@ Dopo aver installato il pacchetto [aggiuntivo](../../forms/using/installing-conf
    <td>Attività</td> 
   </tr>
   <tr>
-   <td>forms-user <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Creare, visualizzare in anteprima, pubblicare e inviare moduli adattivi</li> 
      <li>Creazione, anteprima e pubblicazione di comunicazioni interattive e frammenti di documento</li> 
-     <li>Caricare le risorse in un’istanza di AEM</li> 
+     <li>Caricare le risorse in un’istanza AEM</li> 
      <li>Creazione di temi</li> 
     </ul> </td> 
   </tr>
@@ -94,7 +94,7 @@ Dopo aver installato il pacchetto [aggiuntivo](../../forms/using/installing-conf
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utilizzare le applicazioni<br /> inbox AEM <strong>Nota: </strong>Per accedere all’interfaccia utente di Interactive Communications Agent nella inbox di AEM è necessario disporre di un’assegnazione per i gruppi agente-utenti e utenti del flusso di lavoro.</li> 
+     <li>AEM applicazioni<br /> inbox <strong>Nota: </strong>Per accedere all'interfaccia utente di Interactive Communications Agent nella casella in AEM in entrata è necessario disporre di assegnazioni di gruppi di agenti e utenti del flusso di lavoro.</li> 
      <li>Gestione delle istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
@@ -110,6 +110,6 @@ Dopo aver installato il pacchetto [aggiuntivo](../../forms/using/installing-conf
  </tbody>
 </table>
 
-1. L&#39;utente con privilegi di gruppo di moduli non è in grado di scrivere script per i moduli adattivi.
+1. L&#39;utente con privilegi di gruppo di utenti modulo non è in grado di scrivere script per i moduli adattivi.
 1. L&#39;utente con privilegi di gruppo di autori di modelli non può scrivere script per i modelli.
 
