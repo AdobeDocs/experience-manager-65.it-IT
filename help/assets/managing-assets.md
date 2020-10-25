@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 13%
@@ -22,7 +22,7 @@ La gestione delle risorse di elementi multimediali dinamici, immagini, video e r
 
 Quando visualizzate l’anteprima, potete anche applicare predefiniti per immagini (solo per immagini) o per visualizzatori (per video e immagini). Non potete applicare entrambi a una risorsa. Consultate [Applicazione dei predefiniti](/help/assets/viewer-presets.md) per visualizzatori e [Applicazione dei predefiniti](/help/assets/image-sets.md)per immagini.
 
-Per informazioni generali sulla gestione delle risorse, consulta [Gestione delle risorse con l’interfaccia](/help/assets/managing-assets-touch-ui.md)touch.
+Per informazioni generali sulla gestione delle risorse, consulta [Gestione delle risorse con l’interfaccia](/help/assets/manage-assets.md)touch.
 
 Gli argomenti seguenti descrivono le operazioni necessarie per gestire le risorse per file multimediali dinamici:
 
