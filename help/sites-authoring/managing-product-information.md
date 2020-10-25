@@ -10,7 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 69%
 
 ---
 
@@ -153,6 +156,7 @@ Per configurare il flusso di lavoro **Servizio fotografico per prodotto**:
    * Ritocca servizio fotografico
    * Revisiona servizio fotografico
    * Sposta a produzione
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 Questa sezione descrive come integrare la gestione delle informazioni sul prodotto con il progetto creativo.
@@ -219,6 +223,7 @@ L’attività **Crea elenco di foto** consente al proprietario del progetto di s
    * Le risorse corrispondenti alla gerarchia del prodotto vengono create in una cartella con lo stesso nome del titolo del flusso di lavoro.
    * I metadati per le risorse diventano modificabili mediante la console delle risorse, anche prima che il fotografo inserisca le immagini.
    * Viene creata una cartella Servizio fotografico dove vengono memorizzate le immagini che fornisce il fotografo. La cartella Servizio fotografico contiene delle sottocartelle per ogni voce di prodotto nell’Elenco di foto.
+
    Per il flusso di lavoro del Servizio fotografico per prodotto (senza l’integrazione Commerce), la prima attività è Carica elenco di foto. Tocca o fai clic su **Carica elenco di foto** per caricare un file **shotlist.csv**. Il file CSV deve contenere l’ID del prodotto. Gli altri campi sono facoltativi. Puoi utilizzarli per associare le risorse ai prodotti.
 
 ### Carica attività elenco di foto {#upload-shot-list-task}
@@ -344,7 +349,7 @@ Questa attività consente di spostare le risorse approvate nella cartella per la
 
 ## Visualizzazione dei metadati risorsa DAM {#viewing-dam-asset-metadata}
 
-Dopo che avrai approvato, le risorse vengono collegate ai prodotti corrispondenti. La [pagina delle proprietà](/help/assets/managing-assets-touch-ui.md#editing-properties) delle risorse approvate ora dispone di una scheda aggiuntiva, **Dati prodotto** (collegata alle informazioni sul prodotto). Questa scheda consente di visualizzare i dettagli del prodotto, il numero SKU e altri dettagli relativi ai prodotti che collegano la risorsa. Tocca o fa clic sull’icona **Modifica** per aggiornare una proprietà di risorsa. Le informazioni relative al prodotto restano di sola lettura.
+Dopo che avrai approvato, le risorse vengono collegate ai prodotti corrispondenti. La [pagina delle proprietà](/help/assets/manage-assets.md#editing-properties) delle risorse approvate ora dispone di una scheda aggiuntiva, **Dati prodotto** (collegata alle informazioni sul prodotto). Questa scheda consente di visualizzare i dettagli del prodotto, il numero SKU e altri dettagli relativi ai prodotti che collegano la risorsa. Tocca o fa clic sull’icona **Modifica** per aggiornare una proprietà di risorsa. Le informazioni relative al prodotto restano di sola lettura.
 
 Tocca o fai clic sul collegamento che appare per passare alla relativa pagina di dettagli del prodotto nella console del prodotto al quale la risorsa è associato.
 
