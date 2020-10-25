@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '6050'
 ht-degree: 4%
@@ -237,14 +237,14 @@ Consultate [Creazione di un nuovo predefinito](/help/assets/managing-viewer-pres
 
 Se avete già caricato le risorse video e miniature, passate all’ [Aggiunta di interattività al video](#adding-interactivity-to-your-video).
 
-Se avete caricato i video o le immagini errati o desiderate eliminare i video o le immagini caricati e non più necessari, consultate [Eliminazione delle risorse](/help/assets/managing-assets-touch-ui.md#deleting-assets).
+Se avete caricato i video o le immagini errati o desiderate eliminare i video o le immagini caricati e non più necessari, consultate [Eliminazione delle risorse](/help/assets/manage-assets.md#deleting-assets).
 
 Per caricare un video e le relative risorse di miniatura:
 
 1. Caricate il video e le relative risorse di miniature nella cartella o nelle cartelle desiderate.
 
-   See [Uploading assets](/help/assets/managing-assets-touch-ui.md).
-Consultate [Caricamento delle risorse tramite la pianificazione](/help/assets/managing-assets-touch-ui.md)dei processi FTP.
+   See [Uploading assets](/help/assets/manage-assets.md).
+Consultate [Caricamento delle risorse tramite la pianificazione](/help/assets/manage-assets.md)dei processi FTP.
 
    Ora aggiungete interattività al video.
 
@@ -336,7 +336,7 @@ Per aggiungere interattività al video:
 
    Screenshot B
 
-   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala della linea temporale sono ora impostati a intervalli di 3 secondi.
+   Nella schermata B sopra, il cursore Scala timeline è stato trascinato dal valore predefinito di 5 secondi a 3 secondi. Tenere presente che i timbri temporali della scala temporale sono impostati a intervalli di 3 secondi.
 
    ![chlimage_1-25](assets/chlimage_1-131.png)
 
