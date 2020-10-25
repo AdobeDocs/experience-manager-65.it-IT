@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 7%
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 # Utilizzo di frammenti di contenuto{#working-with-content-fragments}
 
- frammenti di contenuto di Adobe Experience Manager (AEM) consentono di progettare, creare, curare e [pubblicare contenuti](/help/sites-authoring/content-fragments.md)indipendenti dalla pagina. Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali.
+Adobe Experience Manager (AEM) I frammenti di contenuto consentono di progettare, creare, curare e [pubblicare contenuti](/help/sites-authoring/content-fragments.md)indipendenti dalla pagina. Consentono di preparare i contenuti pronti per l’uso in più posizioni/su più canali.
 
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione JSON (Sling Model) dei componenti core di AEM. Questo modulo di consegna:
 
@@ -44,7 +44,7 @@ In questa e nelle pagine seguenti sono illustrate le attività di creazione, con
 Il numero di canali di comunicazione aumenta ogni anno. In genere i canali fanno riferimento al meccanismo di consegna, come:
 
 * canale fisico; ad esempio desktop, mobile.
-* forma di consegna in un canale fisico; Ad esempio, &quot;pagina di dettaglio del prodotto&quot;, &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
+* forma di consegna in un canale fisico; ad esempio &quot;pagina di dettaglio del prodotto&quot;, &quot;pagina di categoria del prodotto&quot; per desktop o &quot;web mobile&quot;, &quot;app mobile&quot; per dispositivi mobili.
 
 Tuttavia, è probabile che non desideriate utilizzare esattamente lo stesso contenuto per tutti i canali; è necessario ottimizzare il contenuto in base al canale specifico.
 
@@ -60,23 +60,23 @@ Questi frammenti di contenuto possono quindi essere assemblati per fornire esper
 
 ## Frammenti di contenuto e servizi di contenuto {#content-fragments-and-content-services}
 
-AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM, oltre a concentrarsi sulle pagine Web.
+AEM Content Services è progettato per rendere più generalizzata la descrizione e la distribuzione dei contenuti in/da AEM oltre l&#39;attenzione sulle pagine Web.
 
-Forniscono contenuti ai canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
+Forniscono contenuti a canali che non sono pagine Web AEM tradizionali, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente. Questi canali possono includere:
 
 * Applicazioni a pagina singola
 * Applicazioni mobili native
-* altri canali e punti di contatto esterni ad AEM
+* altri canali e punti di contatto esterni a AEM
 
 La consegna è realizzata in formato JSON.
 
-I frammenti di contenuto AEM possono essere utilizzati per descrivere e gestire il contenuto strutturato. Il contenuto strutturato è definito in modelli che possono contenere diversi tipi di contenuto; tra cui testo, dati numerici, booleani, data e ora e altro.
+AEM Frammenti di contenuto possono essere utilizzati per descrivere e gestire il contenuto strutturato. Il contenuto strutturato è definito in modelli che possono contenere diversi tipi di contenuto; tra cui testo, dati numerici, booleani, data e ora e altro.
 
-Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, questo contenuto strutturato può essere utilizzato per distribuire contenuti AEM a canali diversi dalle pagine AEM.
+Insieme alle funzionalità di esportazione JSON AEM componenti core, questo contenuto strutturato può essere utilizzato per distribuire contenuti AEM a canali diversi da AEM pagine.
 
 >[!NOTE]
 >
->I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-authoring/experience-fragments.md)**sono funzioni diverse in AEM:
+>I **frammenti di contenuto** e i **[frammenti esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
 >* I **frammenti esperienza** sono contenuti con un layout completo, un frammento di una pagina Web.
 
@@ -94,7 +94,7 @@ I frammenti esperienza possono includere contenuti sotto forma di frammenti di c
 
 >[!NOTE]
 >
->AEM supporta anche la traduzione del contenuto del frammento. Per ulteriori informazioni, consulta [Creazione di progetti di traduzione per i frammenti](/help/assets/creating-translation-projects-for-content-fragments.md) di contenuto.
+>AEM supporta anche la conversione del contenuto del frammento. Per ulteriori informazioni, consulta [Creazione di progetti di traduzione per i frammenti](/help/assets/creating-translation-projects-for-content-fragments.md) di contenuto.
 
 ## Tipi di frammento di contenuto {#types-of-content-fragment}
 
@@ -207,7 +207,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
    * Le risorse sono [associate ai frammenti tramite raccolte](/help/assets/content-fragments/content-fragments-assoc-content.md); le raccolte associate consentono all&#39;autore di decidere quali risorse utilizzare al momento della creazione della pagina.
 
       * Le raccolte possono essere associate ai frammenti tramite modelli, come contenuto predefinito o da autori durante l&#39;authoring dei frammenti.
-      * [Le raccolte](/help/assets/managing-collections-touch-ui.md) di risorse (DAM) sono la base per il contenuto associato dei frammenti.
+      * [Le raccolte](/help/assets/manage-collections.md) di risorse (DAM) sono la base per il contenuto associato dei frammenti.
    * Facoltativamente, è anche possibile aggiungere il frammento stesso a una raccolta per facilitare il tracciamento.
 
 
