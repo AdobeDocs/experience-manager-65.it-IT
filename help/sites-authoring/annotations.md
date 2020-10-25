@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
 
 Quando si aggiunge del contenuto alle pagine di un sito web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (a differenza, ad esempio, dei componenti per il layout) supportano l’inserimento di annotazioni.
 
-Un’annotazione si presenta come una nota colorata applicata alla pagina. Può contenere commenti o domande inseriti da un utente e destinati ad altri autori o revisori.
+Un’annotazione si presenta come una nota colorata applicata alla pagina. può contenere commenti o domande inseriti da un utente e destinati ad altri autori o revisori.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ Un’annotazione si presenta come una nota colorata applicata alla pagina. Può 
 
 >[!NOTE]
 >
->A seconda delle esigenze è anche possibile sviluppare un flusso di lavoro per inviare notifiche quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
+>Se necessario, puoi anche sviluppare un flusso di lavoro per inviare una notifica quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
 
 ## Annotazioni {#annotations}
 
@@ -49,13 +52,14 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 >
 >È possibile annotare una varietà di risorse:
 >
->* [Annotazione delle risorse](/help/assets/managing-assets-touch-ui.md#annotating)
+>* [Annotazione delle risorse](/help/assets/manage-assets.md#annotating)
 >* [Annotazione delle risorse video](/help/assets/managing-video-assets.md#annotate-video-assets)
+
 >
 
 
 
-### Annotazione di un componente {#annotating-a-component}
+### Aggiunta di annotazioni a un componente {#annotating-a-component}
 
 La modalità Annota consente di creare, modificare, spostare o eliminare le annotazioni nei contenuti:
 
@@ -79,18 +83,20 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
-   Puoi usare il campo e/o l’icona appropriata per effettuare le seguenti operazioni:
+   Utilizzando il campo e/o l’icona appropriata puoi effettuare le seguenti operazioni:
 
    * Inserisci il testo dell’annotazione.
-   * Create uno sketch (linee e forme) per evidenziare un’area del componente.
+   * Crea uno schizzo (linee e forme) per evidenziare un’area del componente.
 
-      Quando create uno sketch, il cursore diventa un mirino. È possibile disegnare più linee distinte. La linea dello sketch assume il colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
+      Quando create uno sketch, il cursore diventa un mirino. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Scegli o modifica il colore:
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * Elimina l’annotazione.
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Per chiudere la finestra di dialogo dell’annotazione, tocca o fai clic all’esterno della finestra di dialogo. Di seguito viene illustrata un’annotazione troncata (la prima parola) con relativi schizzi:
@@ -102,9 +108,9 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
    * Tocca o fai clic sul marcatore di testo per aprire l’annotazione. Una volta aperta l’annotazione, è possibile visualizzare il testo completo, apportare modifiche o eliminare l’annotazione.
 
       * Gli schizzi non possono essere eliminati in modo indipendente dall’annotazione.
-   * Riposizionamento del marcatore di testo.
-   * Toccate o fate clic su una linea di uno schizzo per selezionarlo e trascinatelo nella posizione desiderata.
-   * Sposta o copia un componente
+   * Riposiziona il marcatore di testo.
+   * Tocca o fai clic su una linea di uno schizzo per selezionarlo e trascinarlo nella posizione desiderata.
+   * Sposta o copia un componente.
 
       * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi associati, mantenendo la stessa posizione in relazione al paragrafo.
 
@@ -117,7 +123,7 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
 ### Indicatore di annotazione {#annotation-indicator}
 
-Le annotazioni non vengono visualizzate in modalità di modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il contrassegno sostituisce l’icona Annotazioni predefinita, ma continua a fungere da collegamento rapido per attivare o disattivare la modalità Annota:
+Le annotazioni non vengono visualizzate in modalità Modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il contrassegno sostituisce l’icona Annotazioni predefinita, ma continua a fungere da collegamento rapido per attivare o disattivare la modalità Annota:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
