@@ -3,7 +3,7 @@ title: Elaborazione delle risorse tramite flussi di lavoro
 description: Elaborazione delle risorse per convertire i formati, creare rappresentazioni, gestire le risorse, convalidare le risorse ed eseguire flussi di lavoro.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Per visualizzare i vari modelli di workflow disponibili per impostazione predefi
 
 ![Alcuni dei flussi di lavoro predefiniti](assets/aem-default-workflows.png)
 
-*Figura: Alcuni dei flussi di lavoro predefiniti disponibili in[!DNL Experience Manager].*
+*Figura: Alcuni dei flussi di lavoro predefiniti disponibili in [!DNL Experience Manager].*
 
 ## Applicazione di flussi di lavoro per elaborare le risorse {#applying-workflows-to-assets}
 
@@ -84,7 +84,7 @@ La procedura per applicare un flusso di lavoro a più cartelle è simile a quell
 
 ## Applicazione di un flusso di lavoro a una raccolta {#applying-a-workflow-to-a-collection}
 
-Consultate [Applicare un flusso di lavoro a una raccolta](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+Consultate [Applicare un flusso di lavoro a una raccolta](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Avvio automatico di un flusso di lavoro per elaborare le risorse in modo condizionale {#auto-execute-workflow-on-some-assets}
 
