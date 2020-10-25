@@ -3,7 +3,7 @@ title: Introduzione a [!DNL Adobe Experience Manager Assets].
 description: Scopri cos’è la gestione delle risorse digitali, i relativi casi di utilizzo e [!DNL Adobe Experience Manager Asset] il offerta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 35%
@@ -67,7 +67,7 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 * **Rappresentazioni**: Una rappresentazione è la rappresentazione binaria di una risorsa. [!DNL Assets] hanno sempre una rappresentazione principale, quella del file caricato. Possono disporre di diverse rappresentazioni aggiuntive create, ad esempio, dai passaggi personalizzati del flusso di lavoro o durante il caricamento di una risorsa. Le rappresentazioni possono essere di dimensioni diverse, con diverse risoluzioni, con filigrana aggiunta o altre caratteristiche modificate.
 
-* **Versioni**: Quando si crea una versione, viene creata un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. See [versioning in Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versioni**: Quando si crea una versione, viene creata un&#39;istantanea delle risorse digitali in un momento specifico. Se necessario, puoi ripristinare le risorse alle versioni precedenti. See [versioning in Assets](manage-assets.md#asset-versioning).
 
 * **Risorse secondarie**: Le risorse secondarie sono risorse che costituiscono una risorsa, ad esempio i livelli di un [!DNL Adobe Photoshop] file o le pagine di un file PDF. In [!DNL Assets], you can manage sub-assets as you would assets.
 
