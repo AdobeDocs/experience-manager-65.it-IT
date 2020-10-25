@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 15%
@@ -42,7 +42,7 @@ Eseguire una serie di altre azioni in base al tipo di dati in corso di modifica;
 
 >[!CAUTION]
 >
->Dopo aver pubblicato e/o fatto riferimento a un frammento, quando un autore riapre il frammento per la modifica in AEM verrà visualizzato un avviso. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
+>Dopo aver pubblicato e/o fatto riferimento a un frammento, AEM viene visualizzato un avviso quando un autore riapre il frammento per la modifica. In questo modo viene segnalato che le modifiche apportate al frammento avranno effetto anche sulle pagine di riferimento.
 
 ## Authoring dei contenuti {#authoring-your-content}
 
@@ -56,7 +56,7 @@ Quando si apre il frammento di contenuto per la modifica, per impostazione prede
 
    * accedere a una serie di [azioni](#actions)
 
-Ad esempio:
+Esempio:
 
 * Modifica di un frammento semplice
 
@@ -165,7 +165,7 @@ Potete anche aprire l’editor a schermo intero per ulteriori [azioni](#actions)
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 
-Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo. Ad esempio:
+Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo. Esempio:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
@@ -199,6 +199,7 @@ Il testo di riepilogo è progettato per consentire agli utenti di ridurre la lun
 >* [Tedesco (de) dalla distribuzione del software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 >* [Italiano (it) da Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 >* [Spagnolo (es) da Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -216,6 +217,7 @@ Il testo di riepilogo è progettato per consentire agli utenti di ridurre la lun
    * Tutte le frasi da eliminare sono evidenziate in rosso, con lo sciopero.
    * Fate clic su una frase evidenziata per mantenerla nel contenuto riepilogato.
    * Fate clic su una frase non evidenziata per eliminarla.
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Selezionate **Riepiloga** per confermare le modifiche.
@@ -254,7 +256,7 @@ Annotazioni:
 
 ### Inserimento di risorse nel frammento {#inserting-assets-into-your-fragment}
 
-Per semplificare la creazione di frammenti di contenuto, è possibile aggiungere [risorse](/help/assets/managing-assets-touch-ui.md) (immagini) direttamente al frammento.
+Per semplificare la creazione di frammenti di contenuto, è possibile aggiungere [risorse](/help/assets/manage-assets.md) (immagini) direttamente al frammento.
 
 Saranno aggiunti alla sequenza di paragrafi del frammento senza formattazione; è possibile formattare il [frammento utilizzando o facendo riferimento a una pagina](/help/sites-authoring/content-fragments.md).
 
@@ -277,6 +279,7 @@ Saranno aggiunti alla sequenza di paragrafi del frammento senza formattazione; �
 
    * passa alla risorsa richiesta in DAM
    * cercare la risorsa in DAM
+
    Una volta individuata la risorsa desiderata, selezionatela facendo clic sulla miniatura.
 
 1. Utilizza **Seleziona** per aggiungere la risorsa al sistema paragrafo del frammento di contenuto nella posizione corrente.
@@ -360,7 +363,7 @@ Quando si modifica una variante, è possibile accedere all&#39;azione per sincro
 >
 >La sincronizzazione funziona solo sul tipo di dati **Testo su più righe**.
 >
->Il trasferimento delle modifiche *da una variante a **Master ***non è disponibile come opzione.
+>Il trasferimento delle modifiche *da una variante a **Master*** non è disponibile come opzione.
 
 1. Aprire il frammento di contenuto nell&#39;editor frammento. Verificare che la **Master** sia stata modificata.
 1. Selezionate una variante specifica, quindi l’azione di sincronizzazione appropriata da:
@@ -373,6 +376,7 @@ Quando si modifica una variante, è possibile accedere all&#39;azione per sincro
 
    * verde indica il contenuto aggiunto (alla variante)
    * il rosso indica che il contenuto è stato rimosso (dalla variante)
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Selezionate **Sincronizza**. La variante verrà aggiornata e visualizzata.
