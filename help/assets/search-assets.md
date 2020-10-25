@@ -4,7 +4,7 @@ description: Scoprite come trovare le risorse necessarie [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 5%
@@ -35,7 +35,7 @@ Cercate le risorse utilizzando il campo di ricerca Omnice nella parte superiore 
 
 Usate il pannello **[!UICONTROL Filtri]** per limitare la ricerca filtrando i risultati della ricerca in base alle varie opzioni (predicati), come il tipo di file, la dimensione del file, la data dell’ultima modifica, lo stato della risorsa, i dati di approfondimento e  licenza Adobe Stock. Gli amministratori possono personalizzare il pannello Filtri e aggiungere o rimuovere i predicati di ricerca utilizzando i facet di ricerca. Il filtro Tipo [!UICONTROL di] file nel pannello [!UICONTROL Filtri] dispone di caselle di controllo con più stati. Pertanto, a meno che non si selezionino tutti i predicati (o i formati) nidificati, le caselle di controllo di primo livello sono selezionate parzialmente.
 
-[!DNL Experience Manager] la funzionalità di ricerca supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] la funzionalità di ricerca supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/manage-collections.md).
 
 ## Comprendere l’interfaccia di ricerca {#searchui}
 
@@ -222,7 +222,7 @@ Gli autori possono utilizzare Content Finder per ricercare nell&#39;archivio DAM
 
 ### Cerca raccolte {#collections}
 
-[!DNL Experience Manager] la funzionalità di ricerca supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] la funzionalità di ricerca supporta la ricerca di raccolte e la ricerca di risorse all&#39;interno di una raccolta. Consultate [Cercare le raccolte](/help/assets/manage-collections.md).
 
 ## Asset selector {#assetpicker}
 
@@ -374,7 +374,7 @@ Per migliorare la velocità di individuazione, [!DNL Experience Manager Assets] 
 
 ### Estrarre il testo durante il caricamento delle risorse {#extracttextupload}
 
-Potete configurare [!DNL Experience Manager] per estrarre il testo dalle risorse quando gli utenti caricano delle risorse, come file PSD o PDF. [!DNL Experience Manager] indicizza il testo estratto e consente agli utenti di eseguire ricerche in base al testo estratto. Consultate [Caricare le risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Potete configurare [!DNL Experience Manager] per estrarre il testo dalle risorse quando gli utenti caricano delle risorse, come file PSD o PDF. [!DNL Experience Manager] indicizza il testo estratto e consente agli utenti di eseguire ricerche in base al testo estratto. Consultate [Caricare le risorse](/help/assets/manage-assets.md#uploading-assets).
 
 Se l’estrazione del testo richiede troppo risorse per la distribuzione, provate a [disattivare l’estrazione](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)del testo.
 
@@ -447,7 +447,7 @@ Una raccolta è un set ordinato di risorse che può includere risorse da posizio
 * Un elenco di riferimento statico di risorse, cartelle e altre raccolte.
 * Un elenco dinamico (raccolta avanzata) che popola le risorse nella raccolta in base a un criterio di ricerca.
 
-Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UICONTROL Filtri]**, seleziona **[!UICONTROL File]** e fai clic su **[!UICONTROL Salva raccolta avanzata]**. Consulta la sezione [Gestisci raccolte](/help/assets/managing-collections-touch-ui.md).
+Puoi creare raccolte avanzate in base ai criteri di ricerca. Dal pannello **[!UICONTROL Filtri]**, seleziona **[!UICONTROL File]** e fai clic su **[!UICONTROL Salva raccolta avanzata]**. Consulta la sezione [Gestisci raccolte](/help/assets/manage-collections.md).
 
 ## Risoluzione di problemi e risultati della ricerca imprevisti {#troubleshoot-unexpected-search-results-and-issues}
 
