@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 27%
@@ -27,7 +27,7 @@ I set di file multimediali diversi sono indicati da un banner con la parola **[!
 
 >[!NOTE]
 >
->Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse con l’interfaccia](/help/assets/managing-assets-touch-ui.md)touch.
+>Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse con l’interfaccia](/help/assets/manage-assets.md)touch.
 
 ## Avvio rapido: Set di file multimediali diversi {#quick-start-mixed-media-sets}
 
@@ -67,7 +67,7 @@ Per iniziare rapidamente a usare i set di file multimediali diversi, effettuate 
 
    Consulta le sezioni [Collegamento di un set di file multimediali diversi a una pagina web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](/help/assets/embed-code.md).
 
-Se necessario, potete modificare i set [di file multimediali](#editing-mixed-media-sets)diversi. Inoltre, potete visualizzare e modificare le proprietà [dei set di file multimediali](/help/assets/managing-assets-touch-ui.md#editing-properties)diversi.
+Se necessario, potete modificare i set [di file multimediali](#editing-mixed-media-sets)diversi. Inoltre, potete visualizzare e modificare le proprietà [dei set di file multimediali](/help/assets/manage-assets.md#editing-properties)diversi.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
 ## Modifica di set di file multimediali diversi {#editing-mixed-media-sets}
 
-Potete eseguire diverse attività di modifica delle risorse in set di file multimediali diversi direttamente nell’interfaccia utente, [come qualsiasi risorsa in Risorse](/help/assets/managing-assets-touch-ui.md). In Set di file multimediali diversi potete inoltre effettuare le seguenti operazioni:
+Potete eseguire diverse attività di modifica delle risorse in set di file multimediali diversi direttamente nell’interfaccia utente, [come qualsiasi risorsa in Risorse](/help/assets/manage-assets.md). In Set di file multimediali diversi potete inoltre effettuare le seguenti operazioni:
 
 * Aggiungete le risorse al set di file multimediali diversi.
 * Riordinare le risorse nel set di file multimediali diversi.
