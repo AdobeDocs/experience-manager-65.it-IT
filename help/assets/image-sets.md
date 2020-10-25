@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 17%
@@ -33,7 +33,7 @@ Ad esempio, supponete di voler presentare immagini di berretti con diverse bolle
 
 >[!NOTE]
 >
->Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse con l’interfaccia](/help/assets/managing-assets-touch-ui.md)touch.
+>Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse con l’interfaccia](/help/assets/manage-assets.md)touch.
 
 ## Avvio rapido: Set di immagini {#quick-start-image-sets}
 
@@ -83,7 +83,7 @@ Per iniziare subito a lavorare:
 
    Consulta le sezioni [Collegamento di un set di immagini a una pagina web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](/help/assets/embed-code.md).
 
-Per modificare i set di immagini, consultate [Modifica dei set di immagini.](#editing-image-sets) Inoltre, potete visualizzare e modificare le proprietà [dei set di](/help/assets/managing-assets-touch-ui.md#editing-properties)immagini.
+Per modificare i set di immagini, consultate [Modifica dei set di immagini.](#editing-image-sets) Inoltre, potete visualizzare e modificare le proprietà [dei set di](/help/assets/manage-assets.md#editing-properties)immagini.
 
 In caso di problemi durante la creazione di set, consulta Immagini e set in [Risoluzione di problemi relativi a file multimediali dinamici - modalità](/help/assets/troubleshoot-dms7.md#images-and-sets)Scene7.
 
@@ -91,7 +91,7 @@ In caso di problemi durante la creazione di set, consulta Immagini e set in [Ris
 
 Per iniziare, caricate le immagini per i set di immagini. Poiché gli utenti possono eseguire lo zoom sulle immagini nel visualizzatore di set di immagini, tenete conto dello zoom quando scegliete le immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. I set di immagini supportano molti formati di file immagine, ma sono consigliate immagini senza perdita di dati TIFF, PNG ed EPS.
 
-Potete caricare le immagini per i set di immagini come fareste per [caricare qualsiasi altra risorsa in Risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Potete caricare le immagini per i set di immagini come fareste per [caricare qualsiasi altra risorsa in Risorse](/help/assets/manage-assets.md#uploading-assets).
 
 ### Preparazione delle risorse di set di immagini per il caricamento {#preparing-image-set-assets-for-upload}
 
