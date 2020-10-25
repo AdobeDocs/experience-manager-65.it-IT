@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '4006'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +35,7 @@ L’immagine seguente mostra un flusso di lavoro tipico per la creazione di un m
 
 In questo flusso di lavoro:
 
-1. I progettisti di moduli creano layout e frammenti utilizzando Adobe Forms Designer e li caricano in un archivio CRX. I layout contengono campi modulo tipici, funzioni di layout quali intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto. Successivamente, gli specialisti dell&#39;applicazione mappano il contenuto richiesto per queste aree di destinazione. Ulteriori informazioni sulla [progettazione del layout](/help/forms/using/layout-design-details.md).
+1. I progettisti di moduli creano layout e frammenti utilizzando  Adobe Forms Designer e li caricano in un archivio CRX. I layout contengono campi modulo tipici, funzioni di layout quali intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto. Successivamente, gli specialisti dell&#39;applicazione mappano il contenuto richiesto per queste aree di destinazione. Ulteriori informazioni sulla [progettazione del layout](/help/forms/using/layout-design-details.md).
 1. Esperti di materia oggetto di dipartimenti legali, finanziari o di marketing, creano e caricano contenuti quali clausole di testo, clausole di non responsabilità, termini e condizioni e immagini come logo, che vengono riutilizzati in vari modelli di corrispondenza.
 1. Gli specialisti dell&#39;applicazione creano modelli di corrispondenza. Specialista dell&#39;applicazione
 
@@ -66,7 +69,7 @@ Le condizioni consentono di definire il contenuto da includere al momento della 
 
 #### Layout fragment {#layout-fragment}
 
-Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi [caricati in Forms e Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Un frammento di layout è un layout che può essere utilizzato all&#39;interno di una o più lettere. Un frammento di layout viene utilizzato per creare pattern ripetibili, in particolare tabelle dinamiche. Il layout può contenere campi modulo tipici come &quot;Indirizzo&quot; e &quot;Numero di riferimento&quot;. Contiene inoltre sottomoduli vuoti che indicano le aree di destinazione. I layout (XDP) vengono creati in Designer e quindi [caricati in Forms e Documenti](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Creazione di lettere {#letter-creation}
 
@@ -92,7 +95,7 @@ La corrispondenza finale può essere inviata a un processo back-end per la poste
 1. Presentato per revisione e approvazione.
 1. Protetto mediante l’applicazione di firme digitali, certificazione, cifratura o gestione dei diritti.
 1. Convertito in un documento PDF ricercabile contenente tutti i metadati necessari per l&#39;archiviazione e il controllo.
-1. Incluso in un portfolio PDF che include più documenti, come materiale di marketing. Il portfolio PDF può quindi essere inviato come corrispondenza finale.
+1. Incluso in un Portfolio PDF che include più documenti, come materiale di marketing. Il Portfolio PDF può quindi essere inviato come corrispondenza finale.
 
 ### Architettura della soluzione di gestione della corrispondenza {#correspondence-management-solution-architecture}
 
@@ -136,7 +139,7 @@ Questo documento Avviso di cancellazione è un esempio di corrispondenza tipica:
   <tr> 
    <td>Immagini archiviate<br /> dall'archivio centrale</td> 
    <td>Immagini quali logo e immagini della firma. Immagini come il logo aziendale apparirebbero nella maggior parte o in tutta la corrispondenza. Le immagini della firma sono specifiche per la lettera e per la persona per conto della quale la lettera viene inviata.</td> 
-   <td><p>Immagini memorizzate in risorse AEM (DAM)<br /> </p> <p> </p> </td> 
+   <td><p>Immagini memorizzate in AEM risorse (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -225,7 +228,7 @@ Questa tabella fornisce alcune linee guida che è possibile utilizzare per class
 
 Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
 
-* [Pacchetto](compatibility-package.md)di compatibilità. Installate il pacchetto di compatibilità per visualizzare l&#39;opzione **Lettere** nella pagina **Moduli** .
+* [Pacchetto](compatibility-package.md)di compatibilità. Installate il pacchetto di compatibilità per visualizzare l’opzione **Lettere** nella pagina **Forms** .
 * La lettera XDP ([layout](/help/forms/using/document-fragments.md)).
 * Altri XDP (frammenti[di](document-fragments.md#document-fragments)layout) che formano parti della lettera. I file XDP\Layout vengono creati in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
 * Il dizionario [](/help/forms/using/data-dictionary.md) dati pertinente (facoltativo).
@@ -236,9 +239,9 @@ Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
 
 ### Selezionare un layout e immettere le proprietà della lettera {#select-a-layout-and-enter-the-letter-properties}
 
-1. Selezionare **Moduli** > **Lettere**.
+1. Selezionare **Forms** > **Lettere**.
 
-1. Selezionare **Crea > Lettera**. Gestione corrispondenza visualizza i layout disponibili (XDP). Questi layout provengono da Designer. I layout includono anche i modelli Lettera forniti da Gestione Corrispondenza. Per ulteriori informazioni sui modelli di gestione della corrispondenza, consultate Modelli [di lettere di](/help/forms/using/reference-cm-layout-templates.md)riferimento. Per aggiungere layout personalizzati, create file XDP (layout) in Designer e quindi [caricateli in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Selezionare **Crea > Lettera**. Gestione corrispondenza visualizza i layout disponibili (XDP). Questi layout provengono da Designer. I layout includono anche i modelli Lettera forniti da Gestione Corrispondenza. Per ulteriori informazioni sui modelli di gestione della corrispondenza, consultate Modelli [di lettere di](/help/forms/using/reference-cm-layout-templates.md)riferimento. Per aggiungere layout personalizzati, create file XDP (layout) in Designer e quindi [caricateli in  AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![create-letter](assets/create-letter.png)
 
@@ -253,7 +256,8 @@ Prima di creare una corrispondenza è necessario disporre dei seguenti elementi:
    * **Descrizione (facoltativo):** Descrivete la lettera per il vostro riferimento.
    * **Dizionario dati (facoltativo)**: Il dizionario dati può essere associato alla corrispondenza. Le risorse inserite successivamente in questa corrispondenza devono avere lo stesso dizionario dati scelto per la corrispondenza oppure nessun dizionario dati.
    * **Tag (facoltativo):** Selezionare i tag da applicare alla corrispondenza. Potete anche digitare un nome di tag nuovo/personalizzato e premere Invio per crearlo.
-   * **Post-processo (facoltativo):** Selezionare il processo di pubblicazione da applicare al modello di lettera. Esistono processi di pubblicazione out-of-box e quelli creati con AEM, ad esempio e-mail e stampa.
+   * **Post-processo (facoltativo):** Selezionare il processo di pubblicazione da applicare al modello di lettera. Sono disponibili processi di pubblicazione out-of-box e quelli creati con AEM, ad esempio e-mail e stampa.
+
    ![Proprietà corrispondenza](assets/createcorrespondenceproperties.png)
 
 1. Il sistema visualizza un messaggio: &quot;La lettera è stata creata con successo.&quot; (nel messaggio di avviso) Toccate **Apri** per configurare i moduli dati e i frammenti di layout al loro interno. Oppure toccate **Fine** per tornare alla pagina precedente.
@@ -284,9 +288,10 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
    1. **Modificabile**: Quando questa opzione è selezionata, il contenuto può essere modificato nell’interfaccia utente Crea corrispondenza. Contrassegnare il contenuto come modificabile solo se l&#39;utente aziendale (ad esempio, un regolatore di richieste di indennizzo) lo richiede per modificarlo.
    1. **Obbligatorio**: Quando questa opzione è selezionata, il contenuto è richiesto nell&#39;interfaccia utente Crea corrispondenza.
    1. **Selezionato**: Quando questa opzione è selezionata, il contenuto viene selezionato per impostazione predefinita nell&#39;interfaccia utente Crea corrispondenza.
-   1. **Rientro**: Aumentare o diminuire il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa rientrare 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, vedere **[!UICONTROL Configurazioni]** di gestione della corrispondenza nel flusso di lavoro [di](submit-letter-topostprocess.md#formsworkflow)Forms.
+   1. **Rientro**: Aumentare o diminuire il rientro del modulo/contenuto nella lettera. Il rientro è specificato in termini di livelli, a partire da 0. Ogni livello fa rientrare 36 punti. Per ulteriori informazioni sulla personalizzazione dei moduli, vedere **[!UICONTROL Configurazioni]** di gestione della corrispondenza nel flusso di lavoro [](submit-letter-topostprocess.md#formsworkflow)Forms.
    1. **Interruzione di pagina prima** di: Se si imposta l&#39;opzione Interrompi pagina prima su attivata, il contenuto di QUESTO modulo viene sempre visualizzato su una nuova pagina.
    1. **Interruzione di pagina dopo**: Se per un modulo specifico si imposta l&#39;opzione Interruzione pagina dopo, il contenuto del modulo NEXT viene sempre visualizzato su una nuova pagina.
+
    ![Moduli dati e frammenti di layout inseriti](assets/insertdmandlf2.png)
 
 1. Per modificare un modulo, toccate l&#39;icona Modifica accanto ad esso. Dopo aver modificato i moduli, toccate **Salva**.
@@ -295,6 +300,7 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
 
    1. **Consenti testo** gratuito: Se l&#39;opzione Consenti testo gratuito è attivata, l&#39;utente può aggiungere testo in linea nelle lettere della vista CCR. Nella visualizzazione CCR è attivata un&#39;azione &quot;T&quot; per le aree di destinazione in cui è attivato Consenti testo libero e quando l&#39;utente tocca, chiede il nome e la descrizione del testo e, toccando, apre il testo in modalità di modifica, dove l&#39;utente può aggiungere del testo. Questo si comporta come gli altri moduli di testo
    1. **Blocca ordine**: Blocca l&#39;ordine dei sottomoduli nella lettera. L&#39;autore non può riordinare i sottomoduli/componenti durante la creazione della lettera.
+
    In questa pagina è inoltre possibile eseguire le operazioni seguenti per ciascuna risorsa dei sottomoduli:
 
    1. **Modificare l’ordine delle risorse**: trascinate una risorsa contenente l’icona di riordinamento per una risorsa ( ![libretto](assets/dragndrop.png)).
@@ -309,6 +315,7 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
 
    * Gli elementi del **campo** possono essere collegati a un elemento letterale del dizionario dati, a una risorsa o a un valore specificato dall&#39;utente. È inoltre possibile ignorare un elemento campo associandolo all&#39;opzione Ignora.
    * Gli elementi **variabili** possono essere collegati a un elemento letterale del dizionario dati, a un campo, a una variabile, a una risorsa o a un valore specificato dall’utente.
+
    Di seguito sono riportati alcuni campi principali del collegamento:
 
    * **Più righe**: È possibile specificare se l&#39;immissione di dati per un campo o una variabile è su più righe. Se si seleziona questa opzione, la casella di input per il campo o la variabile viene visualizzata come casella di input a più righe nella Visualizzazione modifica dati. Il campo o la variabile viene visualizzata anche come su più righe nelle visualizzazioni Dati e Contenuto nell’interfaccia utente Crea corrispondenza. Il campo di immissione su più righe è simile al campo per l&#39;immissione di un commento in un TextModule. L&#39;opzione su più righe è disponibile solo per i campi e le variabili con tipo di collegamento Utente o elementi del dizionario dati non protetti.
@@ -316,6 +323,7 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
 
    * **Convalida** campo/variabile: Per consentire una migliore convalida del valore di un campo o di una variabile, è possibile assegnare un validatore al campo o alla variabile. Questa opzione è disponibile solo per i campi e le variabili con tipo di collegamento Utente o elementi del dizionario dati non protetti.
    * **Didascalia** e **descrizione**: Didascalia è l&#39;etichetta del campo visualizzato prima del campo nell&#39;interfaccia utente CCR. Questa opzione è disponibile per i campi e le variabili con tipo di collegamento Utente o elementi del dizionario dati non protetti.
+
    Di seguito sono riportati i tipi di convalida utilizzabili per i campi:
 
    * **Convalida** stringa: Utilizzare Convalida stringa per specificare una lunghezza minima e massima della stringa immessa nel campo o nella variabile. Quando si crea una convalida di tipo String, assicurarsi di specificare parametri di convalida validi. Immettere una lunghezza valida per i valori minimo e massimo. Per la funzione di convalida della stringa, è possibile specificare la lunghezza minima e massima del valore immesso. Se il valore immesso non corrisponde al valore minimo e massimo specificato, il campo pertinente nell’interfaccia utente del CCR è contrassegnato in rosso.
@@ -334,7 +342,7 @@ Dopo aver creato una corrispondenza, toccate Apri, Gestione corrispondenza per v
 ### Impostazione degli allegati {#set-up-the-attachments}
 
 1. Selezionate **Aggiungi risorsa**.
-1. Nella schermata Seleziona risorsa, toccate le risorse da allegare con la lettera e toccate **Fine**. È necessario che le risorse vengano caricate per la prima volta in Risorse. È consigliabile allegare solo documenti PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, consultate [Caricamento di risorse](/help/assets/managing-assets-touch-ui.md).
+1. Nella schermata Seleziona risorsa, toccate le risorse da allegare con la lettera e toccate **Fine**. È necessario che le risorse vengano caricate per la prima volta in Risorse. È consigliabile allegare solo documenti PDF e Microsoft Office, ma è anche possibile allegare immagini. Per ulteriori informazioni sul caricamento di risorse in DAM, consultate [Caricamento di risorse](/help/assets/manage-assets.md).
 1. Per bloccare l&#39;ordine delle risorse nell&#39;elenco in modo che l&#39;Aggiustatore crediti non possa modificare l&#39;ordine, toccate **Blocca ordine**. Se non si seleziona questa opzione, l&#39;Aggiustatore crediti può modificare l&#39;ordine delle voci dell&#39;elenco.
 1. Per cambiare l’ordine delle risorse, trascinate una risorsa contenente l’icona di riordinamento per una risorsa ( ![libretto](assets/dragndrop.png)).
 1. Toccate **Modifica** davanti a un allegato e specificate un allegato come obbligatorio se non desiderate che l&#39;autore possa eliminarlo. Specificate un allegato come selezionato se lo desiderate preselezionare nell&#39;interfaccia CCR.
