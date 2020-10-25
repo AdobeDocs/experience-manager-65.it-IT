@@ -3,7 +3,7 @@ title: Gestire le risorse video
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 7%
@@ -22,7 +22,7 @@ Scoprite come gestire e modificare le risorse video in [!DNL Adobe Experience Ma
 [!DNL Adobe Experience Manager Assets] genera anteprime per le risorse video con l’estensione MP4. Se il formato della risorsa non è MP4, installate il pacchetto FFmpeg per generare un&#39;anteprima. FFmpeg crea rappresentazioni video di tipo OGG e MP4. Potete visualizzare l&#39;anteprima delle rappresentazioni nell&#39;interfaccia [!DNL Assets] utente.
 
 1. Nella cartella o nelle sottocartelle delle risorse digitali, individuate il percorso in cui desiderate aggiungere le risorse digitali.
-1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti e scegliete **[!UICONTROL File]**. In alternativa, trascinare un file nell’interfaccia utente. Per informazioni dettagliate, consultate [caricare le risorse](managing-assets-touch-ui.md#uploading-assets) .
+1. Per caricare la risorsa, fate clic su **[!UICONTROL Crea]** nella barra degli strumenti e scegliete **[!UICONTROL File]**. In alternativa, trascinare un file nell’interfaccia utente. Per informazioni dettagliate, consultate [caricare le risorse](manage-assets.md#uploading-assets) .
 1. Per visualizzare un’anteprima del video nella vista a schede, fate clic sull’opzione **[!UICONTROL Riproduci]** ![riproduzione](assets/do-not-localize/play.png) nella risorsa video. Potete mettere in pausa o riprodurre il video solo nella vista a schede. Le opzioni [!UICONTROL Riproduci] e [!UICONTROL Pausa] non sono disponibili nella vista a elenco.
 
 1. Per visualizzare l&#39;anteprima del video nella pagina dei dettagli della risorsa, fate clic su **[!UICONTROL Modifica]** nella scheda. Il video viene riprodotto nel lettore video nativo del browser. Potete riprodurre, mettere in pausa, controllare il volume e ingrandire il video a schermo intero.
@@ -87,7 +87,7 @@ Dopo la pubblicazione, potete includere le risorse video in una pagina Web come 
 
 >[!MORELIKETHIS]
 >
->* [Gestione delle risorse digitali nelle risorse  Experience Manager](/help/assets/managing-assets-touch-ui.md)
->* [Gestire le raccolte in  risorse Experience Manager](/help/assets/managing-collections-touch-ui.md)
+>* [Gestione delle risorse digitali nelle risorse  Experience Manager](/help/assets/manage-assets.md)
+>* [Gestire le raccolte in  risorse Experience Manager](/help/assets/manage-collections.md)
 >* [Documentazione](/help/assets/video.md)video per contenuti multimediali dinamici.
 
