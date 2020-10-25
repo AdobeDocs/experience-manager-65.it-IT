@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 8%
@@ -70,7 +70,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
       * Visualizzate il video sorgente e le rappresentazioni codificate del video insieme alle miniature associate:
          [Anteprima dei video](managing-video-assets.md#upload-and-preview-video-assets) o [Anteprima delle risorse](previewing-assets.md)
          [Visualizzazione delle rappresentazioni video](video-renditions.md)
-         [Gestione delle rappresentazioni video](managing-assets-touch-ui.md#managing-renditions)
+         [Gestione delle rappresentazioni video](manage-assets.md#managing-renditions)
 
       * [Gestire i predefiniti per visualizzatori](managing-viewer-presets.md)
       * [Pubblicazione delle risorse](publishing-dynamicmedia-assets.md)
@@ -80,16 +80,16 @@ La seguente descrizione dettagliata del flusso di lavoro è stata creata per con
          [Visualizzazione delle proprietà di rappresentazione video](video-renditions.md)
 
       * Modificate le proprietà del video come titolo, descrizione e tag, campi di metadati personalizzati:
-         [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
+         [Modifica delle proprietà video](manage-assets.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
       * [Schemi metadati](metadata-schemas.md)
    * Revisione, approvazione e annotazione di video e mantenimento del controllo completo della versione
 
-      * [Annotazione dei video](managing-video-assets.md#annotate-video-assets) o [Annotazione delle risorse](managing-assets-touch-ui.md#annotating)
+      * [Annotazione dei video](managing-video-assets.md#annotate-video-assets) o [Annotazione delle risorse](manage-assets.md#annotating)
 
-      * [Creazione di una versione](managing-assets-touch-ui.md#asset-versioning)
-      * [Applicazione di flussi di lavoro alle risorse](assets-workflow.md) o consultate [Avvio di un flusso di lavoro per una risorsa](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Creazione di una versione](manage-assets.md#asset-versioning)
+      * [Applicazione di flussi di lavoro alle risorse](assets-workflow.md) o consultate [Avvio di un flusso di lavoro per una risorsa](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Verificare le risorse delle cartelle](bulk-approval.md)
       * [Progetti](../sites-authoring/projects.md)
@@ -1165,7 +1165,7 @@ Vedere [WebVTT: Formato Tracce testo video Web](https://dev.w3.org/html5/webvtt/
    In genere, è consigliabile assegnare al file VTT dei capitoli lo stesso nome del file video, aggiungendo il suffisso captions. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti Web esistente.
 1. In AEM, caricate il file WebVTT dei capitoli.
 
-   Consulta [Caricamento delle risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Consulta [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
 
 1. Effettua una delle operazioni seguenti:
 
