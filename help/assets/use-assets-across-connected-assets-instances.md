@@ -3,7 +3,7 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2c3836cb7e2275c30e88e8a750eafce24a05837a
+source-git-commit: 2fe2b5fcaff2b2f2402f0bc638a0df2afd335b31
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 41%
@@ -159,7 +159,7 @@ Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa loc
 
 ## Limitazioni  and best practices {#tips-and-limitations}
 
-* Per informazioni dettagliate sull’utilizzo delle risorse, configurate la funzionalità [Asset Insight](/help/assets/touch-ui-asset-insights.md) nell’ [!DNL Sites] istanza.
+* Per informazioni dettagliate sull’utilizzo delle risorse, configurate la funzionalità [Asset Insight](/help/assets/asset-insights.md) nell’ [!DNL Sites] istanza.
 
 ### Gestione delle autorizzazioni e delle risorse {#permissions-and-managing-assets}
 
