@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2749'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Un frammento di contenuto estende una risorsa standard; vedere:
 
 * [Creazione e gestione di frammenti](/help/assets/content-fragments/content-fragments.md) di contenuto e creazione di [pagine con frammenti](/help/sites-authoring/content-fragments.md) di contenuto per ulteriori informazioni sui frammenti di contenuto.
 
-* [Gestione delle risorse](/help/assets/managing-assets-touch-ui.md) e [personalizzazione ed estensione delle risorse](/help/assets/extending-assets.md) per ulteriori informazioni sulle risorse standard.
+* [Gestione delle risorse](/help/assets/manage-assets.md) e [personalizzazione ed estensione delle risorse](/help/assets/extending-assets.md) per ulteriori informazioni sulle risorse standard.
 
 ## Architettura {#architecture}
 
@@ -66,7 +66,7 @@ A seconda del tipo di frammento, vengono utilizzati anche modelli o modelli:
 
 ### Integrazione con le risorse {#integration-with-assets}
 
-Content Fragment Management (CFM) fa parte dei AEM Assets come:
+Content Fragment Management (CFM) fa parte di  AEM Assets come:
 
 * I frammenti di contenuto sono risorse.
 * Utilizzano la funzionalità Risorse esistente.
@@ -130,7 +130,7 @@ Per ulteriori dettagli, vedere Frammento di [contenuto - Considerazioni](/help/a
 >
 >È ora consigliabile utilizzare il componente [di base del frammento di](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) contenuto. Per ulteriori informazioni, consulta [Sviluppo di componenti](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) di base.
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. AEM fornisce il componente [**di base **Frammento](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)di contenuto, un[componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). È inoltre possibile estendere questo componente di base** Frammento **di contenuto.
+È possibile fare riferimento ai frammenti di contenuto dalle AEM pagine, come qualsiasi altro tipo di risorsa. AEM fornisce il componente [**di base** Frammento](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) di contenuto, un [componente che consente di includere nelle pagine](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)frammenti di contenuto. È inoltre possibile estendere questo componente di base **Frammento** di contenuto.
 
 * Il componente utilizza la `fragmentPath` proprietà per fare riferimento al frammento di contenuto effettivo. La `fragmentPath` proprietà viene gestita allo stesso modo delle proprietà simili di altri tipi di risorse; ad esempio, quando il frammento di contenuto viene spostato in un&#39;altra posizione.
 
@@ -169,7 +169,7 @@ I parametri per questo possono essere configurati nella console [](/help/sites-d
 >
 >Non esiste una mappatura diretta tra proprietà e tipo di componente.
 >
->AEM acquisisce semplicemente la prima proprietà che si trova su un paragrafo. Quindi dovreste scegliere le proprietà con attenzione.
+>AEM considera semplicemente la prima proprietà che è possibile trovare su un paragrafo. Quindi dovreste scegliere le proprietà con attenzione.
 
 ![screenshot_2019-03-18at100941](assets/screenshot_2019-03-18at100941.png)
 
@@ -196,7 +196,7 @@ I frammenti di contenuto possono essere integrati con:
 
 * **Traduzioni**
 
-   I frammenti di contenuto sono completamente integrati nel flusso di lavoro [di traduzione di](/help/sites-administering/tc-manage.md)AEM. A livello architettonico, ciò significa:
+   I frammenti di contenuto sono completamente integrati nel flusso di lavoro [di traduzione](/help/sites-administering/tc-manage.md)AEM. A livello architettonico, ciò significa:
 
    * Le singole traduzioni di un frammento di contenuto sono in realtà frammenti separati; ad esempio:
 
@@ -218,7 +218,7 @@ I frammenti di contenuto possono essere integrati con:
    * Oltre ai percorsi basati su regole, non esiste un&#39;ulteriore connessione tra le diverse versioni linguistiche di un frammento di contenuto; sono gestiti come due frammenti separati, anche se l’interfaccia utente fornisce i mezzi per spostarsi tra le varianti di lingua.
    >[!NOTE]
    >
-   >Il flusso di lavoro di traduzione di AEM funziona con `/content`:
+   >Il flusso di lavoro di traduzione AEM funziona con `/content`:
    >
    >    * Poiché i modelli di frammento di contenuto risiedono in `/conf`, questi non sono inclusi in tali traduzioni. Potete [internazionalizzare le stringhe](/help/sites-developing/i18n-dev.md)dell’interfaccia utente.
       >
@@ -398,7 +398,7 @@ Va osservato che:
 
 >[!CAUTION]
 >
->Per AEM 6.5 l’API lato client è interna.
+>Per AEM 6.5 l&#39;API lato client è interna.
 
 ### Informazioni aggiuntive {#additional-information}
 
@@ -448,7 +448,7 @@ I processi coinvolti sono:
 * Modifica
 
    * Tutte le modifiche (salvataggio automatico incluso) vengono effettuate sul frammento di contenuto attivo, non in un&#39;area separata e protetta.
-   * Di conseguenza, tali modifiche si riflettono immediatamente sulle pagine AEM che fanno riferimento al rispettivo frammento di contenuto
+   * Di conseguenza, tali modifiche si riflettono immediatamente su AEM pagine che fanno riferimento al rispettivo frammento di contenuto
 
 #### Azioni {#actions}
 
@@ -483,7 +483,7 @@ A tal fine, potete adattare la risorsa che rappresenta l&#39;API a:
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-Ad esempio:
+Esempio:
 
 ```java
 // first, get the resource
@@ -501,7 +501,7 @@ Per creare un nuovo frammento di contenuto a livello di programmazione, è neces
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 
-Ad esempio:
+Esempio:
 
 ```java
 Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -511,7 +511,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Esempio: Specifica dell&#39;intervallo di salvataggio automatico {#example-specifying-the-auto-save-interval}
 
-L&#39;intervallo di salvataggio automatico (in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
+L’intervallo di salvataggio automatico (in secondi) può essere definito utilizzando il gestore di configurazione (ConfMgr):
 
 * Nodo: `<*conf-root*>/settings/dam/cfm/jcr:content`
 * Nome proprietà: `autoSaveInterval`
