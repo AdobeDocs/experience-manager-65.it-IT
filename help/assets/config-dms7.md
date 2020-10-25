@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5944'
 ht-degree: 7%
@@ -237,7 +237,7 @@ Potete definire i tipi di risorse che devono essere elaborati da Dynamic Media e
 * Rasterizzare un file Adobe Illustrator  (.AI) o un file  Encapsulated Postscript di Adobe Photoshop (.EPS).
 * Nota: I profili video e i profili immagine possono essere utilizzati rispettivamente per definire l’elaborazione di video e immagini.
 
-Consulta [Caricamento delle risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Consulta [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
 
 **Per configurare l’elaborazione delle risorse**
 
@@ -428,7 +428,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
    Le credenziali e l&#39;accesso sono stati forniti  Adobe al momento del provisioning. Se non disponete di tali informazioni, contattate il supporto tecnico.
 
-1. Nella barra di navigazione accanto alla parte superiore della pagina, fate clic su **[!UICONTROL Configurazione]> Impostazioneapplicazione > Predefiniti[!UICONTROL set di]batch > Predefinito[!UICONTROL set di]** batch.
+1. Nella barra di navigazione accanto alla parte superiore della pagina, fate clic su **[!UICONTROL Configurazione] > Impostazione  applicazione > Predefiniti [!UICONTROL set di] batch > Predefinito [!UICONTROL set di]** batch.
 
    Tenere presente che **[!UICONTROL Visualizza modulo]**, come impostato nell’angolo superiore destro della pagina Dettagli, è la visualizzazione predefinita.
 
