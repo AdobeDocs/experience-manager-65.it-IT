@@ -3,7 +3,7 @@ title: Gestire le risorse composte con riferimenti e più pagine
 description: Scopri come creare riferimenti a risorse digitali dall’interno [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. La funzione Visualizzatore pagina consente di visualizzare le singole pagine delle risorse secondarie di file con più pagine, ad esempio file PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -28,7 +28,7 @@ I riferimenti vengono risolti in base a percorso, ID documento e ID istanza dell
 1. Utilizzando [app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)desktop di Experience Manager, recuperate le risorse digitali nel file system locale. Andate alla posizione del file system della risorsa a cui desiderate fare riferimento.
 1. Trascinate la risorsa dalla cartella locale al [!DNL Illustrator] file.
 
-1. Salvate il [!DNL Illustrator] file nell&#39;unità montata o [caricatelo](/help/assets/managing-assets-touch-ui.md#uploading-assets) nell&#39; [!DNL Experience Manager] archivio.
+1. Salvate il [!DNL Illustrator] file nell&#39;unità montata o [caricatelo](/help/assets/manage-assets.md#uploading-assets) nell&#39; [!DNL Experience Manager] archivio.
 
 1. Al termine del flusso di lavoro, passate alla pagina dei dettagli della risorsa. I riferimenti alle risorse digitali esistenti sono elencati in **[!UICONTROL Dipendenze]** nella colonna **[!UICONTROL Riferimenti]** .
 
@@ -72,7 +72,7 @@ Questa procedura è simile all’ [aggiunta di risorse digitali come riferimenti
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Salvate nel [!DNL Photoshop] file l&#39;unità montata o [caricate](/help/assets/managing-assets-touch-ui.md#uploading-assets) nella [!DNL Experience Manager] directory archivio.
+1. Salvate nel [!DNL Photoshop] file l&#39;unità montata o [caricate](/help/assets/manage-assets.md#uploading-assets) nella [!DNL Experience Manager] directory archivio.
 1. Al termine del flusso di lavoro, i riferimenti alle [!DNL Experience Manager] risorse esistenti sono elencati nella pagina dei dettagli della risorsa.
 
    Per visualizzare le risorse a cui si fa riferimento, chiudete la [Barra](/help/sites-authoring/basic-handling.md#rail-selector) nella pagina dei dettagli della risorsa.
