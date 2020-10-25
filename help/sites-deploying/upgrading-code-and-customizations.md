@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Per preparare le personalizzazioni all’interfaccia utente delle risorse, effet
 
 ### Generazione degli ID risorsa per le risorse esistenti {#generating-asset-ids-for-existing-assets}
 
-Per generare ID di risorse per le risorse esistenti, aggiornate le risorse quando aggiornate l’istanza AEM in modo da eseguire AEM 6.5. Questa funzione è necessaria per abilitare la funzione [Risorse approfondite](/help/assets/touch-ui-asset-insights.md). Per ulteriori dettagli, consultate [Aggiungere il codice](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)da incorporare.
+Per generare ID di risorse per le risorse esistenti, aggiornate le risorse quando aggiornate l’istanza AEM in modo da eseguire AEM 6.5. Questa funzione è necessaria per abilitare la funzione [Risorse approfondite](/help/assets/asset-insights.md). Per ulteriori dettagli, consultate [Aggiungere il codice](/help/assets/use-page-tracker.md#add-embed-code)da incorporare.
 
 Per aggiornare le risorse, configura il pacchetto Associate Asset ID (ID risorsa associati) nella console JMX. A seconda del numero di risorse presenti nella directory archivio, `migrateAllAssets` potrebbe essere necessario molto tempo. I nostri test interni stimano circa un&#39;ora per 125mila asset su TarMK.
 
@@ -173,7 +173,7 @@ Dovrebbe essere preparato un piano di test completo per gli aggiornamenti di tes
 
 ### Verifica della procedura di aggiornamento {#testing-the-upgrade-procedure}
 
-La procedura di aggiornamento come illustrato di seguito deve essere testata sugli ambienti Dev e QA come documentato nel manuale di esecuzione personalizzato (vedere [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)). La procedura di aggiornamento deve essere ripetuta fino a quando tutti i passaggi non sono documentati nel registro di esecuzione dell&#39;aggiornamento e il processo di aggiornamento non è uniforme.
+La procedura di aggiornamento come illustrato di seguito deve essere testata sugli ambienti Dev e QA come documentato nel manuale di esecuzione personalizzato (vedere [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)). La procedura di aggiornamento deve essere ripetuta fino a quando tutte le fasi non sono documentate nel libro di esecuzione dell&#39;aggiornamento e il processo di aggiornamento non è uniforme.
 
 ### Aree di test di implementazione  {#implementation-test-areas-}
 
