@@ -3,7 +3,7 @@ title: Organizzazione delle risorse digitali
 description: Organizzate le risorse digitali, le immagini, i file, le cartelle e così via utilizzando  Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Tutte le risorse digitali, i metadati e il contenuto di documenti Microsoft Offi
 
 ## Organizzare le risorse nelle cartelle {#organize-using-folders}
 
-Il modo più semplice per organizzare le risorse è salvarle in cartelle. È analogo all&#39;organizzazione di file in cartelle nel nostro file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consultate [Gestire le risorse](managing-assets-touch-ui.md). Il modo in cui denominate file e cartelle, come vengono disposte le sottocartelle e come vengono gestiti i file all’interno di tali cartelle possono avere un impatto significativo sulla modalità di elaborazione delle risorse. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio il vostro archivio delle risorse digitali.
+Il modo più semplice per organizzare le risorse è salvarle in cartelle. È analogo all&#39;organizzazione di file in cartelle nel nostro file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consultate [Gestire le risorse](manage-assets.md). Il modo in cui denominate file e cartelle, come vengono disposte le sottocartelle e come vengono gestiti i file all’interno di tali cartelle possono avere un impatto significativo sulla modalità di elaborazione delle risorse. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio il vostro archivio delle risorse digitali.
 
 * Nella maggior parte dei casi, l’archivio delle risorse digitali è in continua crescita. Pertanto, è importante formalizzare l’utilizzo dei metadati, la struttura delle cartelle e la denominazione dei file all’inizio del ciclo di creazione dei contenuti.
 * Utilizzate le cartelle solo per imporre una struttura di memorizzazione coerente alle risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono essere utili per utilizzare [i profili appropriati per l’elaborazione](processing-profiles.md)delle risorse:
@@ -53,7 +53,7 @@ Per ulteriori informazioni, consultate i seguenti articoli:
 
 Con le raccolte di risorse in [!DNL Experience Manager Assets], potete semplificare la possibilità di creare, modificare e condividere risorse tra gli utenti. Create diversi tipi di raccolte in base al modo in cui le utilizzate, comprese le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte, nonché le raccolte che richiamano risorse in base ai criteri di ricerca.  Potete anche creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica dei privilegi.
 
-Per ulteriori informazioni, vedete [Gestione delle raccolte](managing-collections-touch-ui.md)
+Per ulteriori informazioni, vedete [Gestione delle raccolte](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
