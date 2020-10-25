@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 23%
@@ -29,7 +29,7 @@ Il contenuto associato consente la connessione in modo che le risorse (ad es.) p
 >
 >Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
-Per creare l&#39;associazione, dovete prima [aggiungere le risorse multimediali a una raccolta](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection). Una volta completata questa operazione, è possibile:
+Per creare l&#39;associazione, dovete prima [aggiungere le risorse multimediali a una raccolta](/help/assets/manage-collections.md#adding-assets-to-a-collection). Una volta completata questa operazione, è possibile:
 
 1. Apri il frammento e seleziona **Contenuto associato** dal pannello laterale.
 
