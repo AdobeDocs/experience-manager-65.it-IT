@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 #  Amministrazione degli utenti e sicurezza{#user-administration-and-security}
 
-Questo capitolo descrive come configurare e gestire l’autorizzazione degli utenti e descrive anche la teoria che sta dietro il funzionamento dell’autenticazione e dell’autorizzazione in AEM.
+Questo capitolo descrive come configurare e gestire l&#39;autorizzazione utente e descrive anche la teoria che sta alla base del funzionamento dell&#39;autenticazione e dell&#39;autorizzazione in AEM.
 
 ## Utenti e gruppi in AEM {#users-and-groups-in-aem}
 
@@ -29,7 +29,7 @@ In questa sezione vengono descritte in dettaglio le varie entità e i concetti c
 
 ### Utenti {#users}
 
-Gli utenti accederanno ad AEM con il loro account. Ciascun account utente è univoco e contiene i dettagli di base dell&#39;account, insieme ai privilegi assegnati.
+Gli utenti accederanno a AEM con il proprio account. Ciascun account utente è univoco e contiene i dettagli di base dell&#39;account, insieme ai privilegi assegnati.
 
 Gli utenti sono spesso membri di Gruppi, il che semplifica l&#39;allocazione di tali autorizzazioni e/o privilegi.
 
@@ -48,7 +48,7 @@ Con la pianificazione e una struttura pulita, l&#39;uso dei gruppi può riflette
 
 ### Built-in Users and Groups {#built-in-users-and-groups}
 
-AEM WCM installa un certo numero di utenti e gruppi. Questi possono essere visualizzati quando accedete per la prima volta alla console di sicurezza dopo l&#39;installazione.
+AEM WCM installa un numero di utenti e gruppi. Questi possono essere visualizzati quando accedete per la prima volta alla console di sicurezza dopo l&#39;installazione.
 
 Le tabelle seguenti elencano ciascuna voce con:
 
@@ -69,7 +69,7 @@ Le tabelle seguenti elencano ciascuna voce con:
    <td><p>admin</p> <p>Password predefinita: admin</p> </td>
    <td>User</td>
    <td><p>Account di amministrazione del sistema con diritti di accesso completi.</p> <p>Questo account viene utilizzato per la connessione tra AEM WCM e CRX.</p> <p>Se si elimina accidentalmente questo account, verrà ricreato al riavvio del repository (nella configurazione predefinita).</p> <p>L'account amministratore è un requisito della piattaforma AEM. Di conseguenza, questo account non può essere eliminato.</p> </td>
-   <td><p>Adobe consiglia vivamente di modificare la password per questo account utente rispetto a quella predefinita.</p> <p>Preferibilmente all'installazione, anche se può essere fatto dopo.</p> <p>Nota: Questo account non deve essere confuso con l’account amministratore del motore servlet CQ.</p> </td>
+   <td><p> Adobe consiglia vivamente di modificare la password per questo account utente rispetto a quella predefinita.</p> <p>Preferibilmente all'installazione, anche se può essere fatto dopo.</p> <p>Nota: Questo account non deve essere confuso con l’account amministratore del motore servlet CQ.</p> </td>
   </tr>
   <tr>
    <td><p>anonimo</p> <p> </p> </td>
@@ -81,7 +81,7 @@ Le tabelle seguenti elencano ciascuna voce con:
    <td><p>author</p> <p>Password predefinita: author</p> </td>
    <td>User</td>
    <td><p>Un account autore autorizzato a scrivere in /content. Include i privilegi di collaboratore e di surfer.</p> <p>Può essere utilizzato come webmaster in quanto ha accesso all'intera struttura /content.</p> <p>Questo non è un utente incorporato, ma un altro utente dimostrativo geometrixx</p> </td>
-   <td><p>Adobe consiglia di eliminare completamente l’account o di cambiare la password rispetto all’impostazione predefinita.</p> <p>Preferibilmente all'installazione, anche se può essere fatto dopo.</p> </td>
+   <td><p> Adobe consiglia di eliminare completamente l’account o di cambiare la password rispetto al valore predefinito.</p> <p>Preferibilmente all'installazione, anche se può essere fatto dopo.</p> </td>
   </tr>
   <tr>
    <td>amministratori</td>
@@ -104,13 +104,13 @@ Le tabelle seguenti elencano ciascuna voce con:
   <tr>
    <td>dam-users</td>
    <td>Gruppo</td>
-   <td>Gruppo di riferimento predefinito per un utente AEM Assets tipico. I membri di questo gruppo dispongono dei privilegi appropriati per abilitare il caricamento/condivisione di risorse e raccolte.</td>
+   <td>Gruppo di riferimento predefinito per un utente AEM Assets  tipico. I membri di questo gruppo dispongono dei privilegi appropriati per abilitare il caricamento/condivisione di risorse e raccolte.</td>
    <td> </td>
   </tr>
   <tr>
    <td>everyone</td>
    <td>Gruppo</td>
-   <td><p>Ogni utente in AEM è membro del gruppo, anche se potresti non visualizzare il gruppo o la relazione di appartenenza in tutti gli strumenti.</p> <p>Questo gruppo può essere considerato come il diritto predefinito, in quanto può essere utilizzato per applicare le autorizzazioni a tutti, anche agli utenti che verranno creati in futuro.</p> </td>
+   <td><p>Ogni utente in AEM è membro del gruppo di tutti, anche se potreste non visualizzare il gruppo o la relazione di appartenenza in tutti gli strumenti.</p> <p>Questo gruppo può essere considerato come il diritto predefinito, in quanto può essere utilizzato per applicare le autorizzazioni a tutti, anche agli utenti che verranno creati in futuro.</p> </td>
    <td><p>Non modificate o eliminate questo gruppo.</p> <p>La modifica di questo account ha ulteriori implicazioni in termini di sicurezza.</p> </td>
   </tr>
   <tr>
@@ -141,7 +141,7 @@ Le tabelle seguenti elencano ciascuna voce con:
 
 ## Autorizzazioni in AEM {#permissions-in-aem}
 
-AEM utilizza gli ACL per determinare le azioni che un utente o un gruppo può intraprendere e dove può eseguire tali azioni.
+AEM utilizza gli ACL per determinare le azioni che un utente o un gruppo può eseguire e dove può eseguire tali azioni.
 
 ### Autorizzazioni e ACL {#permissions-and-acls}
 
@@ -205,7 +205,7 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina nella
 
 >[!NOTE]
 >
->AEM genera automaticamente i gruppi di utenti per l&#39;assegnazione del ruolo (Proprietario, Editor, Visualizzatore) nelle [raccolte](/help/assets/managing-collections-touch-ui.md). Tuttavia, l’aggiunta manuale di ACL per tali gruppi può introdurre vulnerabilità di sicurezza in AEM. Adobe consiglia di evitare di aggiungere ACL manualmente.
+>AEM genera automaticamente i gruppi di utenti per l&#39;assegnazione del ruolo (Proprietario, Editor, Visualizzatore) nelle [raccolte](/help/assets/manage-collections.md). Tuttavia, l&#39;aggiunta manuale di ACL per tali gruppi può introdurre vulnerabilità di protezione all&#39;interno di AEM.  Adobe consiglia di evitare di aggiungere ACL manualmente.
 
 ### Elenchi di controllo degli accessi e modalità di valutazione {#access-control-lists-and-how-they-are-evaluated}
 
@@ -215,7 +215,7 @@ Gli elenchi di controllo degli accessi sono composti di singole autorizzazioni e
 
 >[!NOTE]
 >
->Esistono ACL inclusi con i campioni. Si consiglia di esaminare e determinare le opzioni appropriate per le applicazioni. Per esaminare gli ACL inclusi, passare a **CRXDE **e selezionare la scheda Controllo **** accesso per i nodi seguenti:
+>Esistono ACL inclusi con i campioni. Si consiglia di esaminare e determinare gli elementi appropriati per le applicazioni. Per esaminare gli ACL inclusi, passare a **CRXDE **e selezionare la scheda Controllo **** accesso per i nodi seguenti:
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Consente a tutti l&#39;accesso in lettura.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Consente a tutti l&#39;accesso in lettura.
@@ -238,7 +238,7 @@ Gli elenchi di controllo degli accessi sono composti di singole autorizzazioni e
 
 | **Azione** | **Descrizione** |
 |---|---|
-| Consenti (segno di spunta) | AEM WCM consente all’utente di eseguire l’azione su questa pagina o su qualsiasi pagina figlia. |
+| Consenti (segno di spunta) | AEM WCM consente all&#39;utente di eseguire l&#39;azione su questa pagina o su qualsiasi pagina figlia. |
 | Nega (nessun segno di spunta) | AEM WCM non consente all&#39;utente di eseguire l&#39;azione su questa pagina né su alcuna pagina figlia. |
 
 Le autorizzazioni vengono applicate anche a tutte le pagine figlie.
@@ -292,13 +292,13 @@ Di seguito sono riportate alcune raccomandazioni sulla gestione degli elenchi di
 
    L’utilizzo di Rifiuta può causare effetti imprevisti se le autorizzazioni vengono applicate in un ordine diverso da quello previsto. Se un utente è membro di più di un gruppo, le istruzioni Deny di un gruppo possono annullare l&#39;istruzione Allow di un altro gruppo o viceversa. È difficile mantenere una panoramica quando questo accade e può facilmente portare a risultati imprevisti, mentre Consenti assegnazioni non causano tali conflitti.
 
-   Adobe consiglia di utilizzare le procedure [ottimali](#best-practices)Consenti anziché Rifiuta.
+    Adobe consiglia di utilizzare le procedure [consigliate](#best-practices)Consenti anziché Rifiuta.
 
-Prima di modificare entrambe le autorizzazioni, accertatevi di comprenderne il funzionamento e interrelazionarvi. Consultate la documentazione CRX per illustrare in che modo AEM WCM [valuta i diritti](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) di accesso ed esempi sulla configurazione degli elenchi di controllo di accesso.
+Prima di modificare entrambe le autorizzazioni, accertatevi di comprenderne il funzionamento e interrelazionarvi. Consultate la documentazione CRX per illustrare in che modo AEM WCM [valuta i diritti](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) di accesso e per esempi sull&#39;impostazione di elenchi di controllo di accesso.
 
 ### Autorizzazioni  {#permissions}
 
-Le autorizzazioni consentono a utenti e gruppi di accedere alle funzionalità di AEM sulle pagine AEM.
+Le autorizzazioni consentono a utenti e gruppi di accedere AEM funzionalità sulle pagine AEM.
 
 Le autorizzazioni vengono cercate per percorso espandendo/comprimendo i nodi e l&#39;ereditarietà delle autorizzazioni può essere tracciata fino al nodo principale.
 
@@ -308,7 +308,7 @@ Potete concedere o negare le autorizzazioni selezionando o deselezionando le cas
 
 ### Visualizzazione di informazioni dettagliate sulle autorizzazioni {#viewing-detailed-permission-information}
 
-Insieme alla visualizzazione griglia, AEM fornisce una visualizzazione dettagliata delle autorizzazioni per un utente/gruppo selezionato in un determinato percorso. La visualizzazione Dettagli fornisce ulteriori informazioni.
+Insieme alla vista griglia, AEM fornisce una visualizzazione dettagliata delle autorizzazioni per un utente/gruppo selezionato in un determinato percorso. La visualizzazione Dettagli fornisce ulteriori informazioni.
 
 Oltre a visualizzare le informazioni, potete anche includere o escludere l’utente o il gruppo corrente da un gruppo. Consultate [Aggiunta di utenti o gruppi durante l’aggiunta di autorizzazioni](#adding-users-or-groups-while-adding-permissions). Le modifiche apportate qui si riflettono immediatamente nella parte superiore della visualizzazione dettagliata.
 
@@ -352,7 +352,7 @@ Questo consente agli account del soggetto di completare le attività come se uti
 >
 >Affinché la rappresentazione funzioni correttamente per gli utenti non amministratori, è necessario che nel `/home/users` percorso sia presente l&#39;utente/impersona (nel caso precedente user-B) con autorizzazioni di lettura.
 >
->Per ulteriori informazioni su come ottenere questo risultato, consultate [Autorizzazioni in AEM](/help/sites-administering/security.md#permissions-in-aem).
+>Per ulteriori informazioni su come ottenere questo risultato, consulta [Autorizzazioni in AEM](/help/sites-administering/security.md#permissions-in-aem).
 
 >[!CAUTION]
 >
@@ -364,7 +364,7 @@ Questo consente agli account del soggetto di completare le attività come se uti
 >
 >Non è consentito sbloccare le pagine bloccate impersonando l’utente che le ha boccate.
 
-### Best practice  {#best-practices}
+### Best practice   {#best-practices}
 
 Di seguito vengono descritte le procedure ottimali per l&#39;utilizzo di autorizzazioni e privilegi:
 
@@ -388,13 +388,13 @@ Entrambi possono essere configurati utilizzando la funzionalità Amministrazione
 
 Potete accedere a tutti gli utenti, i gruppi e le autorizzazioni associate utilizzando la console Protezione. Tutte le procedure descritte in questa sezione vengono eseguite in questa finestra.
 
-Per accedere alla protezione di AEM WCM, effettuate una delle seguenti operazioni:
+Per accedere AEM protezione WCM, effettuare una delle seguenti operazioni:
 
-* Dalla schermata introduttiva o in diverse aree di AEM, fate clic sull’icona della protezione:
+* Nella schermata introduttiva o in diverse aree di AEM, fate clic sull’icona relativa alla protezione:
 
 ![](do-not-localize/wcmtoolbar.png)
 
-* Passa direttamente a `https://<server>:<port>/useradmin`. Assicuratevi di accedere ad AEM come amministratore.
+* Passa direttamente a `https://<server>:<port>/useradmin`. Assicuratevi di accedere AEM come amministratore.
 
 Viene visualizzata la finestra seguente:
 
@@ -458,7 +458,7 @@ Per creare un nuovo utente o gruppo:
 
    * Se selezionate **Crea utente,** immettete l’ID di accesso, il nome e il cognome, l’indirizzo e-mail e una password. Per impostazione predefinita, AEM crea un percorso basato sulla prima lettera del cognome, ma potete selezionare un altro percorso.
 
-   ![createuserdialog](assets/createuserdialog.png)
+   ![create ateuserdialog](assets/createuserdialog.png)
 
    * Se selezionate **Crea gruppo**, immettete un ID gruppo e una descrizione facoltativa.
 
@@ -496,7 +496,7 @@ Per modificare la password di un utente, effettuate le seguenti operazioni.
 >
 >Non potete usare la console Protezione per cambiare la password dell&#39;amministratore. Per modificare la password dell&#39;account amministratore, utilizzate la console [](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) Utenti fornita da Granite Operations.
 >
->Se utilizzate AEM Forms su JEE, non utilizzate le istruzioni riportate di seguito per modificare la password, ma utilizzate AEM Forms nella console di amministrazione JEE (/adminui) per modificare la password.
+>Se utilizzate  AEM Forms su JEE, non utilizzate le istruzioni riportate di seguito per cambiare la password, ma utilizzate  AEM Forms sulla console di amministrazione JEE (/adminui) per modificare la password.
 
 1. Nella console **Protezione** , fate doppio clic sul nome utente per il quale desiderate cambiare la password.
 1. Fare clic sulla scheda **Proprietà** (se non è già attiva).
@@ -611,7 +611,7 @@ Per informazioni sulla sincronizzazione degli utenti e su come attivarla, consul
 
 >[!NOTE]
 >
->Adobe ha introdotto una nuova visualizzazione principale basata sull&#39;interfaccia touch per la gestione delle autorizzazioni. Per ulteriori dettagli su come usarlo, consultate [questa pagina](/help/sites-administering/touch-ui-principal-view.md).
+> Adobe ha introdotto una nuova visualizzazione principale basata sull&#39;interfaccia touch per la gestione delle autorizzazioni. Per ulteriori dettagli su come usarlo, consultate [questa pagina](/help/sites-administering/touch-ui-principal-view.md).
 
 Questa sezione descrive come impostare le autorizzazioni, compresi i privilegi di replica.
 
@@ -639,7 +639,7 @@ Il privilegio di replica è il diritto di pubblicare contenuto e può essere imp
 >
 >* Tutti i diritti di replica applicati a un gruppo si applicano a tutti gli utenti del gruppo.
 >* I privilegi di replica di un utente sostituiscono i privilegi di replica di un gruppo.
->* I diritti di replica Consenti hanno una precedenza superiore rispetto ai diritti di replica Rifiuta. Per ulteriori informazioni, consultate [Autorizzazioni in AEM](#permissions-in-aem) .
+>* I diritti di replica Consenti hanno una precedenza superiore rispetto ai diritti di replica Rifiuta. Consulta [Autorizzazioni in AEM](#permissions-in-aem) per ulteriori informazioni.
 
 >
 
