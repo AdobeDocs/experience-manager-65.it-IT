@@ -4,7 +4,7 @@ description: Scopri come visualizzare in anteprima le risorse 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 15%
@@ -14,13 +14,13 @@ ht-degree: 15%
 
 # Anteprima delle risorse 3D in AEM{#previewing-3d-assets-aem}
 
- Adobe Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
+Adobe Experience Manager supporta il caricamento, la distribuzione e l’anteprima interattiva di risorse 3D come parte del processo di authoring.
 
 Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle risorse in AEM. Il visualizzatore include, tra le altre, una raccolta di controlli interattivi della videocamera che consentono di eseguire zoom, rotazione e scorrimento della risorsa 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Formati supportati per l’anteprima 3D in AEM {#supported-3d-previewing-assets}
+## Formati supportati per l&#39;anteprima 3D in AEM {#supported-3d-previewing-assets}
 
 L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 
@@ -30,7 +30,7 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 | GLTF | Formato di trasmissione GL | model/gltf+json | Vedi **Nota** di seguito. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
+| DN |  Adobe Dimension | model/x-adobe-dn | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
 | USDZ | Archivio ZIP con descrizione universale di Scene7 | model/vnd.usdz+zip | Sostegno solo all&#39;ingestione; Anteprima non disponibile. |
 
 **Nota**: Se il rendering dei materiali non viene eseguito in anteprima di un modello gLTF, accertatevi che siano denominati correttamente e che si trovino in una `textures` cartella nella stessa cartella principale del modello, in modo simile al seguente:
@@ -42,7 +42,7 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
     Material_0_baseColor.
     jpegMaterial_0_normal.jpeg
 
-## Considerazioni sulle prestazioni per l’anteprima di risorse 3D in AEM{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni per l’anteprima delle risorse 3D in AEM{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori quali larghezza di banda, complessità dell’immagine e latenze verso il server.
 
@@ -51,8 +51,8 @@ Inoltre, le funzionalità del computer client, come una workstation, un notebook
 **Per visualizzare in anteprima le risorse 3D in AEM**
 
 1. Assicurati di aver caricato le risorse 3D in AEM.
-Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-assets) 3D e per il [caricamento delle risorse](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. Da AEM, nella pagina **[!UICONTROL di navigazione]** , toccate **[!UICONTROL Risorse > File.]**
+Consultate Formati [supportati per l’anteprima](#supported-3d-previewing-assets) 3D e per il [caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
+1. Da AEM, nella pagina di **[!UICONTROL navigazione]** toccate **[!UICONTROL Risorse > File.]**
 
    ![Pagina di navigazione](/help/assets/assets-dm/navigation-assets.png)
 
