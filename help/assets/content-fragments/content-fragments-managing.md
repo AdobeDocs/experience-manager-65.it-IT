@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 11%
@@ -96,7 +96,7 @@ Selezionare il frammento per visualizzare la barra degli strumenti con le azioni
    * Salvare il frammento come file ZIP; potete definire se includere elementi, varianti, metadati.
 
 * **Crea**
-* **Estrai**
+* **Pagamento**
 * **Proprietà**
 
    * Consente di visualizzare e/o modificare i metadati del frammento.
@@ -120,7 +120,7 @@ Selezionare il frammento per visualizzare la barra degli strumenti con le azioni
 
 >[!NOTE]
 >
->Molte di queste sono azioni [standard per Risorse](/help/assets/managing-assets-touch-ui.md) e/o per l’app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
+>Molte di queste sono azioni [standard per Risorse](/help/assets/manage-assets.md) e/o per l’app [desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
@@ -233,14 +233,14 @@ Dopo aver creato il contenuto principale, potete creare e gestire [le varianti](
 
 ## Timeline per i frammenti di contenuto {#timeline-for-content-fragments}
 
-Oltre alle opzioni standard, [Timeline](/help/assets/managing-assets-touch-ui.md#timeline) fornisce informazioni e azioni specifiche per i frammenti di contenuto:
+Oltre alle opzioni standard, [Timeline](/help/assets/manage-assets.md#timeline) fornisce informazioni e azioni specifiche per i frammenti di contenuto:
 
 * Visualizzazione di informazioni su versioni, commenti e annotazioni
 * Azioni per le versioni
 
-   * **[Ripristina questa versione](#reverting-to-a-version)**(selezionare un frammento esistente, quindi una versione specifica)
+   * **[Ripristina questa versione](#reverting-to-a-version)** (selezionare un frammento esistente, quindi una versione specifica)
 
-   * **[Confronta con corrente](#comparing-fragment-versions)**(selezionare un frammento esistente, quindi una versione specifica)
+   * **[Confronta con corrente](#comparing-fragment-versions)** (selezionare un frammento esistente, quindi una versione specifica)
 
    * Aggiungere un’ **etichetta** e/o un **commento** (selezionare un frammento esistente, quindi una versione specifica)
 
@@ -269,7 +269,7 @@ Le annotazioni (per i frammenti di contenuto) sono:
 
 
 
-Ad esempio:
+Esempio:
 
 ![cfm-6420-19-2019](assets/cfm-6420-19-2019.png)
 
