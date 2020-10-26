@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2803'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,8 @@ L&#39;istanza [applicazione e provider](#adobe-granite-oauth-application-and-pro
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
 
    ![config-properties](assets/config-propertiespng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. **Creare/modificare** la configurazione del servizio cloud di Facebook.
 
@@ -260,6 +262,8 @@ L&#39;istanza [applicazione e provider](#adobe-granite-oauth-application-and-pro
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Seleziona il contesto e modifica le proprietà. Abilita configurazioni cloud se non ancora abilitata.
 
    ![twitterconfigpropping](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Creare/modificare la configurazione del servizio cloud di Twitter.
 
@@ -460,7 +464,7 @@ Se nei registri sono visibili avvisi di attraversamento, è consigliabile aggiun
 
 Per un’istanza di authoring, effettuate l’accesso con privilegi amministrativi:
 
-1. Dalla navigazione globale: selezionare **Strumenti,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Dalla navigazione globale: selezionare **Strumenti, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Create un indice denominato ntBaseLucene-oauth da una copia di ntBaseLucene:
 
    * Sotto il nodo `/oak:index`
