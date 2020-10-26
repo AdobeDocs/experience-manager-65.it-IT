@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 0%
 
 Questa esercitazione è un passaggio della serie [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) (Creazione della prima serie di comunicazioni interattive). Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
 
-Per creare una comunicazione interattiva, nel server AEM per la stampa e i canali Web devono essere disponibili dei modelli.
+Per creare una comunicazione interattiva, è necessario disporre di modelli nel server AEM per i canali di stampa e Web.
 
-I modelli per il canale di stampa vengono creati in Adobe Forms Designer e caricati nel server AEM. Questi modelli sono quindi disponibili per la creazione di una comunicazione interattiva.
+I modelli per il canale di stampa vengono creati  Adobe Forms Designer e caricati nel server di AEM. Questi modelli sono quindi disponibili per la creazione di una comunicazione interattiva.
 
 I modelli per il canale Web vengono creati in AEM. Gli autori e gli amministratori dei modelli possono creare, modificare e abilitare i modelli Web. Una volta creati e abilitati, questi modelli sono disponibili per la creazione di una comunicazione interattiva.
 
 Questa esercitazione illustra i passaggi necessari per creare modelli per i canali Stampa e Web in modo che siano disponibili per l&#39;utilizzo durante la creazione di comunicazioni interattive. Al termine di questa esercitazione, potrete:
 
-* Creazione di modelli XDP per il canale di stampa tramite Adobe Forms Designer
-* Caricare i modelli XDP sul server AEM Forms
+* Creare modelli XDP per il canale di stampa utilizzando  Adobe Forms Designer
+* Caricare i modelli XDP sul  AEM Forms Server
 * Creazione e attivazione di modelli per il canale Web
 
 ## Creare un modello per il canale di stampa {#create-template-for-print-channel}
@@ -113,18 +113,18 @@ Per creare un modello XDP per il canale di stampa, eseguite i seguenti passaggi:
 
    1. Toccate **Salva**.
 
-### Caricare il modello XDP sul server AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
+### Caricare il modello XDP sul server AEM Forms  {#upload-xdp-template-to-the-aem-forms-server}
 
-Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo nel server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
+Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo  server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
 
-1. Selezionare **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Selezionate **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 1. Toccate **Crea** > Caricamento **** file.
 
-   Spostatevi e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms.
+   Spostatevi e selezionate il modello **create_first_ic_print_template** (XDP), quindi toccate **Apri** per importare il modello XDP nel server AEM Forms .
 
 ### Creare un modello XDP per i frammenti di layout {#create-xdp-template-for-layout-fragments}
 
-Per creare un frammento di layout per il canale di stampa della comunicazione interattiva, creare un file XDP utilizzando Forms Designer e caricarlo nel server AEM Forms.
+Per creare un frammento di layout per il canale di stampa della comunicazione interattiva, creare un file XDP utilizzando Forms Designer e caricarlo sul server AEM Forms .
 
 1. Aprire Forms Designer, selezionare **File** > **Nuovo** > **Usa un modulo vuoto,** toccare **Avanti**, quindi **Fine** per aprire il modulo per la creazione del modello.
 
@@ -140,7 +140,7 @@ Per creare un frammento di layout per il canale di stampa della comunicazione in
 
 1. Toccare **+** nel riquadro a sinistra accanto a **Tabella** 1 e fare clic con il pulsante destro del mouse su **Cella1** , quindi selezionare **Rinomina oggetto** in **data**.
 
-   Allo stesso modo, rinominate **Cell2**, **Cell3**, **Cell4** e **Cell5** rispettivamente in **Time************** , Number, Duration, Durata, e Oneri.
+   Allo stesso modo, rinominate **Cell2**, **Cell3**, **Cell4** e **Cell5** rispettivamente in **Time************** , Number, Duration, e in Upload.
 
 1. Fare clic sui campi di testo Intestazione nella vista **di** Designer e rinominarli in **Ora**, **Numero**, **Durata** e **Addebiti**.
 
@@ -162,7 +162,7 @@ Per creare un frammento di layout per il canale di stampa della comunicazione in
    1. Selezionate **.xdp** dall&#39;elenco a discesa **Salva come** .
 
    1. Toccate **Salva**.
-   Dopo aver creato un modello XDP per un frammento di layout utilizzando Forms Designer, è necessario [caricarlo](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) nel server AEM Forms in modo che il modello sia disponibile per la creazione di frammenti di layout.
+   Dopo aver creato un modello XDP per un frammento di layout utilizzando Forms Designer, è necessario [caricarlo](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)  server AEM Forms in modo che il modello sia disponibile per la creazione di frammenti di layout.
 
 ## Creare un modello per il canale Web {#create-template-for-web-channel}
 
@@ -180,6 +180,7 @@ Per creare un modello di canale Web, definite una cartella in cui salvare i mode
 Per creare una cartella per i modelli modificabili, effettuate le seguenti operazioni:
 
 1. Toccate **Strumenti** icona a forma di ![martello](assets/hammer-icon.svg) > **Browser** di configurazione.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Nella pagina del browser di configurazione, toccate **Crea**.
 1. Nella finestra di dialogo **Crea configurazione** , specificate **Create_First_IC_templates** come titolo della cartella, selezionate **Modelli** modificabili e toccate **Crea**.
 
