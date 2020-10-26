@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3218'
 ht-degree: 8%
 
 ---
@@ -51,13 +51,13 @@ Questo documento presuppone che si abbia già familiarità con la creazione e la
 >[!NOTE]
 >
 >L&#39;esercitazione seguente potrebbe interessare anche la configurazione di un modello di pagina modificabile in un nuovo progetto:
->[Guida introduttiva ad AEM Sites - Parte 2 - Creazione di una pagina di base e di un modello](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Guida introduttiva  AEM Sites Part 2 - Creazione di una pagina di base e di un modello](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
 La creazione di modelli modificabili viene realizzata principalmente con la console [modelli e con l’editor](/help/sites-authoring/templates.md) modelli da un autore di modelli. Questa sezione fornisce una panoramica di questo processo e una descrizione di quanto avviene a livello tecnico.
 
-Per informazioni sull’utilizzo di modelli modificabili in un progetto AEM, consultate [Creazione di un progetto AEM con Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+Per informazioni sull’utilizzo di modelli modificabili in un progetto AEM consultate [Creazione di un progetto AEM con Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 Durante la creazione di un nuovo modello modificabile:
 
@@ -134,7 +134,7 @@ Durante la creazione di un nuovo modello modificabile:
 >
 >La libreria client dell&#39;editor presuppone la presenza dello `cq.shared` spazio dei nomi nelle pagine di contenuto, e se è assente, `Uncaught TypeError: Cannot read property 'shared' of undefined` si verificherà l&#39;errore JavaScript.
 >
->Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse viene incluso automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo `cq.shared` spazio dei nomi.
+>Tutte le pagine di contenuto di esempio contengono `cq.shared`, pertanto qualsiasi contenuto basato su di esse viene incluso automaticamente `cq.shared`. Tuttavia, se decidete di creare da zero pagine di contenuto personalizzate senza basarle su contenuti di esempio, dovete includere lo `cq.shared` spazio nomi.
 >
 >Per ulteriori informazioni, consultate [Utilizzo delle librerie](/help/sites-developing/clientlibs.md) lato client.
 
@@ -226,6 +226,8 @@ Per creare una nuova cartella, potete effettuare le seguenti operazioni:
 >[!NOTE]
 >
 >Nel browser di configurazione, potete modificare la cartella globale e attivare l’opzione Modelli **** modificabili se desiderate creare dei modelli all’interno di questa cartella, ma questa non è la procedura consigliata.
+>
+>See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 ### ACL e gruppi {#acls-and-groups}
 
@@ -235,7 +237,7 @@ Le cartelle dei modelli per l’implementazione [di riferimento](/help/sites-dev
 
 #### Il gruppo di autori dei modelli {#the-template-authors-group}
 
-Il `template-authors` gruppo è il gruppo utilizzato per gestire l’accesso ai modelli ed è dotato di AEM come standard, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
+Il `template-authors` gruppo è il gruppo utilizzato per gestire l&#39;accesso ai modelli ed è dotato di AEM standard, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
 
 >[!CAUTION]
 >
@@ -374,7 +376,7 @@ Quando create un nuovo modello, dovete specificare un tipo di modello:
    * Il criterio del nodo principale, che definisce i componenti consentiti nell&#39;editor modelli.
    * È consigliabile definire i punti di interruzione per la griglia reattiva e l&#39;impostazione dell&#39;emulatore mobile sul tipo di modello. Questo è facoltativo, perché la configurazione può essere definita anche sul singolo modello (consultate Tipo di [modello e Gruppi](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)di dispositivi mobili).
 
-* AEM offre una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina HTML5 e Pagina modulo adattiva.
+* AEM fornisce una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina HTML5 e Pagina modulo adattiva.
 
    * Altri esempi sono forniti come parte del contenuto di esempio [We.Retail](/help/sites-developing/we-retail.md) .
 
@@ -392,7 +394,7 @@ I tipi di modello specifici per il sito devono essere memorizzati nella posizion
 
 * `/apps/settings/wcm/template-types`
 
-Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Ad esempio:
+Le definizioni per i tipi di modelli personalizzati devono essere memorizzate in cartelle definite dall&#39;utente (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -426,7 +428,7 @@ Quando create un nuovo modello modificabile, il valore viene copiato dal tipo di
 Se avete creato un modello che può fungere da base per altri modelli, potete copiare il modello come tipo di modello.
 
 1. Create un modello come fareste con qualsiasi altro modello modificabile [come illustrato qui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), che fungerà da base per il tipo di modello.
-1. Con CRXDE Lite, copiate il modello appena creato dal `templates` nodo al `template-types` nodo sotto la cartella [del](/help/sites-developing/page-templates-editable.md#template-folders)modello.
+1. Utilizzando CRXDE Lite, copiate il modello appena creato dal `templates` nodo al `template-types` nodo sotto la cartella [del](/help/sites-developing/page-templates-editable.md#template-folders)modello.
 1. Eliminate il modello dal `templates` nodo sotto la cartella [del](/help/sites-developing/page-templates-editable.md#template-folders)modello.
 1. Nella copia del modello che si trova sotto il `template-types` nodo, eliminare tutte `cq:template` e `cq:templateType` le `jcr:content` proprietà.
 
@@ -441,7 +443,7 @@ Puoi trovare il codice di questa pagina su GitHub
 
 ## Definizioni dei modelli {#template-definitions}
 
-Le definizioni per i modelli modificabili sono memorizzate nelle cartelle [definite dall&#39;](/help/sites-developing/page-templates-editable.md#template-folders) utente (consigliato) o in alternativa in `global`. Ad esempio:
+Le definizioni per i modelli modificabili sono memorizzate nelle cartelle [definite dall&#39;](/help/sites-developing/page-templates-editable.md#template-folders) utente (consigliato) o in alternativa in `global`. Esempio:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -582,7 +584,7 @@ I criteri di pagina consentono di definire i criteri [di](#content-policies) con
 
 1. **Modelli consentiti**
 
-   * [Definire i percorsi dei modelli consentiti nelle proprietà **di **](/help/sites-authoring/templates.md#allowing-a-template-author)pagina della pagina o della pagina principale appropriata di un ramo secondario.
+   * [Definire i percorsi dei modelli consentiti nelle proprietà **di**](/help/sites-authoring/templates.md#allowing-a-template-author) pagina della pagina o della pagina principale appropriata di un ramo secondario.
    * Impostare la proprietà:
       `cq:allowedTemplates`
 In 
@@ -625,10 +627,10 @@ Durante il rendering di una pagina:
 
 * **Componenti**:
 
-   * Il componente Pagina unisce la `structure/jcr:content` struttura ad albero del modello alla `jcr:content` struttura della pagina.
+   * Il componente Pagina unisce la `structure/jcr:content` struttura ad albero del modello alla `jcr:content` struttura ad albero della pagina.
 
    * Il componente Pagina consente solo all’autore di modificare i nodi della struttura del modello contrassegnati come modificabili (così come altri elementi secondari).
-   * Quando si esegue il rendering di un componente su una pagina, il percorso relativo di tale componente viene tracciato dal `jcr:content` nodo; viene quindi ricercato lo stesso percorso sotto il `policies/jcr:content` nodo del modello.
+   * Quando si esegue il rendering di un componente su una pagina, il percorso relativo di tale componente viene ricavato dal `jcr:content` nodo; viene quindi ricercato lo stesso percorso sotto il `policies/jcr:content` nodo del modello.
 
       * La `cq:policy` proprietà di questo nodo fa riferimento al criterio del contenuto effettivo (ovvero contiene la configurazione di progettazione per quel componente).
 
