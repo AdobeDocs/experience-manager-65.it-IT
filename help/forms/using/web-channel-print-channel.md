@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +23,17 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: s
 
 Gli autori delle comunicazioni interattive possono riutilizzare risorse quali frammenti di documento e immagini per creare versioni Web e per la stampa delle comunicazioni interattive.
 
-Uno dei prerequisiti per la [creazione di una comunicazione](../../forms/using/create-interactive-communication.md) interattiva è che i modelli per la stampa e/o il canale Web siano disponibili sul server. Mentre gli autori dei modelli creano il modello per il canale Web in AEM, il modello per il canale di stampa XDP viene creato in Adobe Forms Designer e caricato sul server.
+Uno dei prerequisiti per la [creazione di una comunicazione](../../forms/using/create-interactive-communication.md) interattiva è che i modelli per la stampa e/o il canale Web siano disponibili sul server. Mentre gli autori dei modelli creano AEM il modello per il canale Web, il modello per il canale di stampa XDP viene creato in  Forms Designer Adobe e caricato sul server.
 
 ## Print channel {#printchannel}
 
-Il canale di stampa di una comunicazione interattiva utilizza il modello di modulo XFA, XDP. Un XDP è progettato in Adobe Forms Designer. Per ulteriori informazioni sulla creazione di modelli per canali di stampa, vedere Progettazione [](../../forms/using/layout-design-details.md)di layout. Per utilizzare un modello per canali di stampa nella comunicazione interattiva, è necessario caricare il modello nel server AEM Forms.
+Il canale di stampa di una comunicazione interattiva utilizza il modello di modulo XFA, XDP. Un XDP è progettato in Forms Designer  Adobe. Per ulteriori informazioni sulla creazione di modelli per canali di stampa, vedere Progettazione [](../../forms/using/layout-design-details.md)di layout. Per utilizzare un modello per canali di stampa nella comunicazione interattiva, è necessario caricare il modello sul server AEM Forms .
 
 ### Carica modello canale di stampa comunicazione interattiva {#upload-interactive-communication-print-channel-template}
 
-Per caricare il modello, è necessario essere membri del gruppo di utenti-moduli. Per caricare il modello per canali di stampa (XDP) in AEM Forms, effettuate le seguenti operazioni:
+Per caricare il modello, è necessario essere membri del gruppo di utenti-moduli. Per caricare il modello per canali di stampa (XDP) in  AEM Forms, effettuate le seguenti operazioni:
 
-1. Selezionare **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Selezionate **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 
 1. Toccate **[!UICONTROL Crea]** > Caricamento **** file.
 
@@ -49,7 +52,8 @@ Per creare un modello di canale Web, completare i seguenti passaggi:
 1. Se non disponete già di un modello, create una cartella Template per conservare i modelli Web di comunicazione interattiva. Per ulteriori informazioni, vedere Cartelle dei modelli in Modelli di [pagina - Modificabili](/help/sites-developing/page-templates-editable.md).
 
    1. Toccate **[!UICONTROL Strumenti]** ![Strumenti](assets/tools.png) > **[!UICONTROL Browser]** di configurazione.
-   1. Nella pagina Browser configurazione, toccate **[!UICONTROL Crea]**.
+      * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+   1. Nella pagina del browser di configurazione, toccate **[!UICONTROL Crea]**.
    1. Nella finestra di dialogo Crea configurazione, specificate un titolo per la cartella, selezionate Modelli **** modificabili e toccate **[!UICONTROL Crea]**.
 
       La cartella viene creata ed elencata nella pagina del browser di configurazione.
