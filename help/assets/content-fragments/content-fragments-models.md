@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 22%
@@ -30,7 +30,7 @@ I modelli di frammenti di contenuto definiscono la struttura del contenuto per i
 
 Per abilitare i modelli di frammenti di contenuto è necessario:
 
-* Abilitare l&#39;utilizzo di modelli di frammento di contenuto in Gestione configurazione
+* Abilitare l&#39;utilizzo di modelli di frammenti di contenuto nel browser [di configurazione](/help/sites-administering/configurations.md)
 * Applica la configurazione alla cartella Risorse
 
 ### Abilitare i modelli di frammento di contenuto in Configuration Manager {#enable-content-fragment-models-in-configuration-manager}
@@ -100,7 +100,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
-   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Ad esempio:
+   * Una volta aggiunto un campo al modello, nel pannello a destra vengono visualizzate le **proprietà** che è possibile definire per quel particolare tipo di dati. Qui è possibile definire i requisiti necessari per tale campo. Esempio:
 
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
@@ -121,7 +121,7 @@ Il modello di frammento di contenuto definisce in modo efficace la struttura dei
 
    ![cf-32](assets/cf-32.png)
 
-1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **Salva** per mantenere la definizione. Ad esempio:
+1. Dopo aver aggiunto tutti i campi obbligatori e definito le proprietà, utilizzate **Salva** per mantenere la definizione. Esempio:
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
