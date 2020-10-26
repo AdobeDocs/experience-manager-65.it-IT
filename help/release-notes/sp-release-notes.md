@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '4530'
 ht-degree: 6%
@@ -248,7 +248,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 ### Interfaccia utente {#ui-6560}
 
 * L&#39;interfaccia del browser di offload non visualizza tutti gli argomenti del processo (NPR-34308).
-* L&#39;interfaccia del browser di configurazione non visualizza tutte le configurazioni (NPR-33644).
+* L&#39;interfaccia del browser [di](/help/sites-administering/configurations.md) configurazione non visualizza tutte le configurazioni (NPR-33644).
 * Premendo il `Esc` tasto durante la ricerca di utenti da impersonare, la finestra di dialogo **[!UICONTROL Utente]** si chiude invece dell&#39;elenco di utenti (NPR-34084).
 
 ### Integrations (Integrazioni){#integrations-6560}
