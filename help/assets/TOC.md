@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Guida ad Assets
 breadcrumb-title: Guida ad Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 39%
