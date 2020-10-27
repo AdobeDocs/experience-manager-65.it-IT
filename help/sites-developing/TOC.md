@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guida utente allo sviluppo in AEM 6.5
 breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 translation-type: tm+mt
-source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
+source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 13%
