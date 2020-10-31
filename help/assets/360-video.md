@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: 0d5ee29141c897284f3f298d921f4f8528216f8f
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Consultate [Modificare video](https://helpx.adobe.com/premiere-pro/how-to/edit-3
 **Per caricare le risorse da usare con il visualizzatore video 360:**
 
 1. È stata creata una cartella dedicata alla risorsa video 360.
-1. [Applicate un profilo video adattivo alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+1. [Applicate un profilo video adattivo alla cartella.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
    Il rendering di contenuti video a 360° pone requisiti più elevati per la risoluzione video sorgente e per la risoluzione delle rappresentazioni codificate rispetto al contenuto video standard non 360.
 
@@ -96,8 +96,8 @@ Consultate anche [Modifica dei predefiniti](/help/assets/managing-viewer-presets
 
 Quando siete soddisfatti del video 360, potete pubblicarlo.
 
-See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
-See [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
+See [Embedding the Video or Image Viewer on a Web Page.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
+Consultate [Collegamento di URL all’applicazione](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html)Web. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo contiene collegamenti con URL relativi, in particolare con collegamenti alle pagine  AEM Sites.
 See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **Per visualizzare in anteprima 360 video**
