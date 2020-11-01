@@ -1,8 +1,7 @@
 ---
 title: Avvio rapido JavaAPI di Document Security Service (SOAP)
 seo-title: Avvio rapido JavaAPI di Document Security Service (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Avvio rapido JavaAPI di Document Security Service (SOAP)
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 0%
 
 # Avvio rapido API Java di Document Security Service (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-Java API Quick Start(SOAP) è disponibile per il servizio Rights Management:
+Java API Quick Start(SOAP) è disponibile per il servizio di Rights Management:
 
 [Avvio rapido (modalità SOAP): Creazione di un criterio tramite l&#39;API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
@@ -46,11 +45,11 @@ Java API Quick Start(SOAP) è disponibile per il servizio Rights Management:
 
 [Avvio rapido (modalità SOAP): Rimozione di un criterio da un documento Word tramite l&#39;API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->La sezione Avvio rapido, che si trova nella sezione Programmazione con AEM Forms, si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Quick Start situato in Programmazione con  AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
 
 ## Avvio rapido (modalità SOAP): Creazione di un criterio tramite l&#39;API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
@@ -2056,7 +2055,7 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Protezione di un PDF nel flusso di lavoro istruzioni per un utente esistente tramite l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Avvio rapido (modalità SOAP): Protect un PDF nel flusso di lavoro istruzioni per un utente esistente, utilizzando l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
 L&#39;esempio di codice Java riportato di seguito illustra il metodo per proteggere un documento nel flusso di lavoro istruzioni per un utente esistente.
 
@@ -2164,7 +2163,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Proteggere un PDF nel flusso di lavoro istruzioni per un nuovo utente, utilizzando l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Avvio rapido (modalità SOAP): Protect un PDF nel flusso di lavoro istruzioni per un nuovo utente, utilizzando l&#39;API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 Il seguente esempio di codice Java illustra come proteggere un documento in Flusso di lavoro istruzioni. Si tratta di un processo in due fasi:
 
