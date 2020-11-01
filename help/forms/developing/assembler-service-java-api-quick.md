@@ -1,8 +1,7 @@
 ---
 title: Avvio rapido dell'API Java del servizio Assembler (SOAP)
 seo-title: Avvio rapido dell'API Java del servizio Assembler (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Avvio rapido dell'API Java del servizio Assembler (SOAP)
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -40,15 +39,15 @@ Java API Quick Start(SOAP) è disponibile per il servizio Assembler
 
 [Avvio rapido (modalità SOAP): Creazione dinamica di un documento DDX utilizzando l&#39;API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Avvio rapido (modalità SOAP): Assemblare portfolio PDF utilizzando l&#39;API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Avvio rapido (modalità SOAP): Assemblare Portfoli PDF utilizzando l&#39;API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [Avvio rapido (modalità SOAP): Assemblare più frammenti XDP utilizzando l&#39;API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-Le operazioni sui AEM Forms possono essere eseguite utilizzando l&#39;API fortemente tipizzata dai AEM Forms e la modalità di connessione deve essere impostata su SOAP.
+ le operazioni AEM Forms possono essere eseguite utilizzando l&#39;API  fortemente tipizzata da AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
 >[!NOTE]
 >
->La sezione Avvio rapido, che si trova nella sezione Programmazione con AEM Forms, si basa sul server Forms in fase di implementazione in JBoss Application Server e nel sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>La sezione Avvio rapido, che si trova in Programmazione con  AEM Forms, si basa sul server Forms in fase di implementazione in JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Avvio rapido (modalità SOAP): Assemblare un documento PDF utilizzando l&#39;API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -1381,9 +1380,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Assemblare portfolio PDF utilizzando l&#39;API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Avvio rapido (modalità SOAP): Assemblare Portfoli PDF utilizzando l&#39;API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-Nell’esempio di codice Java riportato di seguito viene creato un portfolio PDF. Il portfolio PDF viene salvato come file PDF denominato *AssemblerResultPortfolio.pdf*. Consultate [Assemblare portfolio](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF.
+Nell’esempio di codice Java riportato di seguito viene creato un portfolio PDF. Il portfolio PDF viene salvato come file PDF denominato *AssemblerResultPortfolio.pdf*. Consultate [Assemblare Portfoli](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF.
 
 ```java
  /*
@@ -1691,7 +1690,7 @@ Nell&#39;esempio di codice riportato di seguito viene copiato un documento PDF u
 
 >[!NOTE]
 >
->`PDFUtility` è possibile redigere solo i PDF contrassegnati per la redazione con Acrobat.
+>`PDFUtility` è possibile redigere solo i PDF contrassegnati per la redazione utilizzando  Acrobat.
 
 ```java
 /*
