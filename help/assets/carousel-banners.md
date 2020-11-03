@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4803'
 ht-degree: 4%
 
 ---
@@ -92,7 +92,7 @@ Per iniziare subito a lavorare:
    * [Aggiungete un banner carosello al sito Web in AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Se siete  cliente AEM Sites, potete aggiungere il set di carosello direttamente alla pagina in AEM, utilizzando il componente Supporto interattivo.
 
 
-Per modificare i set di caroselli, consultate [Modifica dei set di caroselli.](#editing-carousel-sets) Inoltre, potete visualizzare e modificare le proprietà [del set](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)carosello.
+Per modificare i set di caroselli, consultate [Modifica dei set di caroselli.](#editing-carousel-sets) Inoltre, potete visualizzare e modificare le proprietà [del set](manage-assets.md#editing-properties)carosello.
 
 ## Identificazione delle variabili dei punti di attivazione e delle mappe immagine {#identifying-hotspot-and-image-map-variables}
 
