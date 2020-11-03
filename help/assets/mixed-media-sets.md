@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1465'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ I set di file multimediali diversi sono indicati da un banner con la parola **[!
 
 >[!NOTE]
 >
->Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse con l’interfaccia](/help/assets/manage-assets.md)touch.
+>Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse](/help/assets/manage-assets.md).
 
 ## Avvio rapido: Set di file multimediali diversi {#quick-start-mixed-media-sets}
 
