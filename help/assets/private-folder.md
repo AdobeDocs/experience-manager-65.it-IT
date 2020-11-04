@@ -3,9 +3,9 @@ title: Cartelle private per condividere le risorse
 description: Scoprite come creare una cartella privata in [!DNL Adobe Experience Manager Assets] e condividerla con altri utenti e assegnare loro vari privilegi.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -47,11 +47,11 @@ Per creare e condividere una cartella privata:
 
    >[!NOTE]
    >
-   >Potete assegnare diversi ruoli, ad esempio Editor, Proprietario o Visualizzatore all’utente con il quale condividete la cartella. Se assegnate un ruolo Proprietario all’utente, quest’ultimo dispone dei privilegi di Modifica sulla cartella. Inoltre, l’utente può condividere la cartella con altri utenti. Se assegnate un ruolo Editor, l’utente può modificare le risorse presenti nella cartella privata. Se assegnate un ruolo di visualizzatore, l’utente può visualizzare solo le risorse presenti nella propria cartella privata.
+   >Potete assegnare vari ruoli, ad esempio `Editor`, `Owner`o `Viewer` all’utente con il quale condividete la cartella. Se assegnate un `Owner` ruolo all’utente, l’utente dispone di `Editor` privilegi sulla cartella. Inoltre, l’utente può condividere la cartella con altri utenti. Se assegnate un `Editor` ruolo, l’utente può modificare le risorse presenti nella cartella privata. Se assegnate un ruolo di visualizzatore, l’utente può visualizzare solo le risorse presenti nella propria cartella privata.
 
    >[!NOTE]
    >
-   >La cartella privata ha almeno un membro con il ruolo Proprietario. Pertanto, l’amministratore non può rimuovere tutti i membri del proprietario da una cartella privata. Tuttavia, per rimuovere i proprietari esistenti (e lo stesso amministratore) dalla cartella privata, l&#39;amministratore deve aggiungere un altro utente come proprietario.
+   >La cartella privata ha almeno un membro con `Owner` ruolo. Pertanto, l’amministratore non può rimuovere tutti i membri del proprietario da una cartella privata. Tuttavia, per rimuovere i proprietari esistenti (e lo stesso amministratore) dalla cartella privata, l&#39;amministratore deve aggiungere un altro utente come proprietario.
 
 1. Fai clic su **[!UICONTROL Salva]**. A seconda del ruolo assegnato, all’utente viene assegnato un set di privilegi nella cartella privata al momento dell’accesso [!DNL Assets].
 1. Fate clic su **[!UICONTROL OK]** per chiudere il messaggio di conferma.
@@ -59,7 +59,7 @@ Per creare e condividere una cartella privata:
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Fate clic su Notifiche per aprire l’elenco delle notifiche.
+1. Fate clic su [!UICONTROL Notifiche] per aprire un elenco di notifiche.
 
    ![Elenco delle notifiche](assets/Assets-Notification.png)
 
@@ -83,4 +83,4 @@ Per eliminare una cartella, selezionatela e selezionate l’opzione [!UICONTROL 
 >
 >Se eliminate una cartella utilizzando il metodo indicato sopra dall’interfaccia utente, vengono eliminati anche i gruppi di utenti associati.
 >
->Tuttavia, i gruppi di utenti ridondanti, non utilizzati e generati automaticamente possono essere eliminati dall’archivio utilizzando `clean` il metodo JMX nell’istanza di creazione (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>Tuttavia, i gruppi di utenti ridondanti, inutilizzati e generati automaticamente esistenti possono essere rimossi dall’archivio utilizzando `clean` il metodo JMX nell’istanza di creazione (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
