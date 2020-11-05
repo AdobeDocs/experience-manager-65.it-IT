@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 >`JAR` e `WAR` i tipi di file AEM vengono rilasciati in. Questi formati sono sottoposti a controllo qualità per soddisfare i livelli di supporto  Adobe si è impegnato a raggiungere.
 
 
-In questa sezione viene illustrato come installare  Adobe Experience Manager (AEM) con un server applicazioni. Consultate la sezione Piattaforme [](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) supportate per visualizzare i livelli di supporto specifici forniti per i singoli server delle applicazioni.
+In questa sezione viene illustrato come installare Adobe Experience Manager (AEM) con un server applicazioni. Consultate la sezione Piattaforme [](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) supportate per visualizzare i livelli di supporto specifici forniti per i singoli server delle applicazioni.
 
 Sono descritti i passaggi di installazione dei seguenti Application Server:
 
@@ -38,7 +38,7 @@ Per ulteriori informazioni sull&#39;installazione delle applicazioni Web, sulle 
 
 >[!NOTE]
 >
->Se utilizzi Dynamic Media in una distribuzione WAR, consulta la documentazione [relativa ai supporti](/help/assets/config-dynamic.md#enabling-dynamic-media)dinamici.
+>Se utilizzi Dynamic Media in una distribuzione WAR, consulta la documentazione [relativa ai contenuti multimediali](/help/assets/config-dynamic.md#enabling-dynamic-media)dinamici.
 
 ## Descrizione generale {#general-description}
 
@@ -49,7 +49,7 @@ AEM viene fornito come un singolo file di guerra da distribuire.
 Se distribuito, per impostazione predefinita si verifica quanto segue:
 
 * la modalità di esecuzione è `author`
-* l’istanza (repository, ambiente Felix OSGI, pacchetti, ecc.) è installato in `${user.dir}/crx-quickstart`cui `${user.dir}` si trova la directory di lavoro corrente, questo percorso a crx-quickstart viene chiamato `sling.home`
+* l’istanza (repository, ambiente Felix OSGI, pacchetti, ecc.) è installato in `${user.dir}/crx-quickstart`cui `${user.dir}` si trova la directory di lavoro corrente, questo percorso a crx-quickstart è chiamato `sling.home`
 
 * la radice del contesto è il nome del file di guerra, ad esempio: `aem-6`
 
@@ -136,7 +136,7 @@ Impostate gli argomenti di memoria nel file conf (ad es. `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-se utilizzate lo scanner di distribuzione per installare l&#39;applicazione Web AEM, potrebbe essere utile aumentare il `deployment-timeout,` relativo valore impostando un `deployment-tiimeout` attributo nel file xml dell&#39;istanza (ad esempio `configuration/standalone.xml)`:
+se utilizzate lo scanner di distribuzione per installare l&#39;applicazione Web AEM, potrebbe essere utile aumentare il `deployment-timeout,` relativo valore impostando un `deployment-timeout` attributo nel file xml dell&#39;istanza (ad esempio `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -218,7 +218,7 @@ Prima di una distribuzione, leggete la Descrizione [](#general-description) gene
       * Arrestare e annullare la distribuzione dell&#39;app Web ROOT
       * Rinominare la cartella ROOT.war nella cartella delle app Web di Tomcat
       * Avvia di nuovo l&#39;app Web
-   * Se installate l&#39;applicazione Web AEM utilizzando manager-gui, dovete aumentare la dimensione massima di un file caricato, in quanto l&#39;impostazione predefinita consente solo 50 MB di caricamento. Per aprire il file web.xml dell&#39;applicazione Web manager,
+   * Se installate l&#39;applicazione Web AEM utilizzando manager-gui, dovete aumentare la dimensione massima di un file caricato, in quanto l&#39;impostazione predefinita consente solo 50 MB di caricamento. Per questo aprire il web.xml dell&#39;applicazione Web manager,
 
       `webapps/manager/WEB-INF/web.xml`
 
