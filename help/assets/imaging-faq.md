@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '2085'
 ht-degree: 2%
 
 ---
@@ -60,11 +60,23 @@ No. La funzione Smart Imaging è inclusa nella licenza esistente di Dynamic Medi
 
 ## Come funziona l&#39;imaging intelligente? {#how-does-smart-imaging-work}
 
-Smart Imaging utilizza  Adobe Sensei per convertire automaticamente le immagini nel formato, nelle dimensioni e nella qualità ottimali, in base alla funzionalità del browser:
+Quando un&#39;immagine viene richiesta da un consumatore, verifichiamo le caratteristiche dell&#39;utente e la convertiamo nel formato immagine appropriato in base al browser in uso. Queste conversioni del formato vengono effettuate in modo da non compromettere la fedeltà visiva. La funzione di imaging intelligente converte automaticamente le immagini in diversi formati, in base alla funzionalità del browser, nel modo seguente.
 
-* Converti automaticamente in WebP per browser quali Chrome, Firefox, Microsoft Edge, Android e Opera.
-* Converti automaticamente in JPEG2000 per browser come Safari.
-* Converti automaticamente in JPEG per browser come Internet Explorer 9+.
+* Converti automaticamente in WebP per i seguenti browser:
+   * Effetto cromatura
+   * Firefox
+   * Microsoft Edge
+   * Safari 14.0 +
+      * Safari 14 solo con iOS 14.0 e versioni successive e macOS BigSur e versioni successive
+   * Android
+   * Opera
+* Supporto browser legacy per i seguenti elementi:
+
+   | Browser | Versione browser/sistema operativo | Formato |
+   | --- | --- | --- |
+   | Safari | iOS 14.0 o versioni precedenti | JPEG2000 |
+   | Edge | 18 o versioni precedenti | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * Per i browser che non supportano questi formati, viene distribuito il formato immagine originariamente richiesto.
 
 Se le dimensioni dell&#39;immagine originale sono inferiori a quelle generate da Smart Imaging, viene trasmessa l&#39;immagine originale.
@@ -90,11 +102,15 @@ Smart Imaging funziona con i &quot;predefiniti per immagini&quot; esistenti e os
 
 ## Dovrò cambiare URL, predefiniti per immagini o distribuire un nuovo codice sul mio sito per Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-No. Le immagini intelligenti si integrano perfettamente con gli URL esistenti e con i predefiniti per immagini. Inoltre, per rilevare il browser di un utente non è necessario aggiungere codice al sito Web. Tutto questo viene gestito automaticamente.
+Smart Imaging funziona perfettamente con gli URL esistenti delle immagini e i predefiniti per immagini se configurate Smart Imaging sul dominio personalizzato esistente. Inoltre, per rilevare il browser di un utente non è necessario aggiungere codice al sito Web. Tutto questo viene gestito automaticamente.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+Nel caso sia necessario configurare un nuovo dominio personalizzato per l&#39;utilizzo di Smart Imaging, gli URL dovranno essere aggiornati per riflettere questo dominio personalizzato.
 
 Vedete [Posso usare le Smart Imaging?](#am-i-eligible-to-use-smart-imaging) per comprendere i prerequisiti per la funzione Smart Imaging.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## Smart Imaging funziona con HTTPS? E HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
@@ -177,6 +193,34 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache arrivan
 Non tutte le immagini sono convertite. La funzione Smart Imaging decide se la conversione è necessaria per migliorare le prestazioni. In alcuni casi, se non si prevede alcun guadagno di prestazioni o se il formato non è JPEG o PNG, l&#39;immagine non viene convertita.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## Come faccio a sapere il guadagno di prestazioni? Esiste un modo per considerare i vantaggi di Smart Imaging? {#performance-gain}
+
+**Informazioni sulle intestazioni delle immagini intelligenti**
+
+I valori dell&#39;intestazione di Smart Imaging funzionano solo quando le richieste non memorizzate nella cache vengono servite fin da ora. Ciò consente di mantenere la cache corrente ed evitare la necessità di calcolare quando le immagini vengono servite tramite la cache.
+
+Per utilizzare le intestazioni di imaging avanzato, dovete aggiungere il`cache=off`modificatore nelle richieste. Consultate[cache in Dynamic Media Image Serving and Rendering API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html).
+
+Esempio di utilizzo `cache=off` (solo a scopo illustrativo):
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+Dopo aver utilizzato tale richiesta, nella sezione Intestazioni risposta potete visualizzare `-x-adobe-smart-imaging` l’intestazione. Guardate la schermata seguente con `-x-adobe-smart-imaging` evidenziata.
+
+![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+Questo valore di intestazione indica quanto segue:
+
+* Smart Imaging funziona per l&#39;azienda.
+* Il valore positivo (>=0) indica che la conversione è avvenuta correttamente. In questo caso viene restituita una nuova immagine (qui WebP).
+* Il valore negativo (&lt;0) indica che la conversione non è riuscita. In questo caso viene restituita l’immagine originale richiesta (per impostazione predefinita, JPEG se non specificata).
+* Il valore indica la differenza in byte tra l&#39;immagine richiesta e la nuova immagine. In questo caso, i byte salvati sono 75048, che corrisponde a circa 75 KB per un&#39;immagine. 
+   * Il valore negativo indica che l&#39;immagine richiesta era più piccola della nuova immagine. La differenza di dimensione negativa viene mostrata, ma l’immagine trasmessa è solo l’immagine originale richiesta
+
+**Quando utilizzare le intestazioni per immagini intelligenti?**
+
+Le intestazioni di risposta per le immagini intelligenti sono abilitate per il debug o per evidenziare i vantaggi delle sole immagini intelligenti. L&#39;utilizzo`cache=off`in scenari normali può influire in modo significativo sui tempi di caricamento.
 
 ## È possibile disattivare la funzione Smart Imaging per qualsiasi richiesta? {#turning-off-smart-imaging}
 
