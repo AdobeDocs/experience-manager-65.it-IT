@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
+source-git-commit: 141a1783f275c0b3587ebc374bde19a21e107409
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Consultate [Regolazione delle dimensioni batch del flusso di lavoro](#adjusting-
 **Per regolare facoltativamente la dimensione batch del flusso di lavoro di rielaborazione**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. Nella pagina Modelli flusso di lavoro, nella vista a schede o a elenco, selezionate **[!UICONTROL Scene7: Rielabora risorse.]**
+1. Nella pagina Modelli flusso di lavoro, nella vista a schede o a elenco, selezionate **[!UICONTROL Scene7: Rielabora risorse]**.
 
    ![Pagina Modelli di workflow con Scene7: Rielabora flusso di lavoro risorse selezionato nella vista a schede](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -117,9 +117,9 @@ Consultate [Regolazione delle dimensioni batch del flusso di lavoro](#adjusting-
 
    ![Proprietà, finestra di dialogo](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Nell’angolo in alto a destra della finestra di dialogo Caricamento **[!UICONTROL batch in Scene7 - Proprietà]** passaggio, fate clic su **[!UICONTROL Fine.]**
+1. Nell’angolo in alto a destra della finestra di dialogo Caricamento **[!UICONTROL batch in Scene7 - Proprietà]** passaggio, fate clic su **[!UICONTROL Fine]**.
 
-1. Nell&#39;angolo superiore destro dell&#39;Scene7: Rielabora la pagina del modello di flusso di lavoro Risorse, fai clic su **[!UICONTROL Sincronizza.]** Quando viene visualizzato **[!UICONTROL Sincronizzato]**, il modello runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
+1. Nell&#39;angolo superiore destro dell&#39;Scene7: Rielabora la pagina del modello di flusso di lavoro Risorse, fai clic su **[!UICONTROL Sincronizza]**. Quando viene visualizzato **[!UICONTROL Sincronizzato]**, il modello runtime del flusso di lavoro viene sincronizzato correttamente e pronto per rielaborare le risorse in una cartella.
 
    ![Sincronizzazione del modello di workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
