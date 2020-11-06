@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 648b9601445a46b6a2734d5a47545c0439b9c283
 workflow-type: tm+mt
-source-wordcount: '5944'
+source-wordcount: '5964'
 ht-degree: 7%
 
 ---
@@ -155,8 +155,8 @@ Le attività di configurazione e configurazione includono:
 * [Configurazione pubblicazione per Image Server](#publishing-setup-for-image-server)
 * [Configurazione delle impostazioni generali dell’applicazione](#configuring-application-general-settings)
 * [Configurazione della gestione del colore](#configuring-color-management)
-* [Configurazione dell’elaborazione delle risorse](#configuring-asset-processing)
-* [Aggiunta di tipi MIME personalizzati per i formati non supportati](#adding-custom-mime-types-for-unsupported-formats)
+* [Modifica dei tipi MIME per i formati supportati](#editing-mime-types-for-supported-formats)
+* [Aggiunta di tipi MIME per i formati non supportati](#adding-mime-types-for-unsupported-formats)
 * [Creazione di predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configurazione pubblicazione per Image Server {#publishing-setup-for-image-server}
@@ -205,7 +205,7 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
-1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione applicazione.]**
+1. [Effettuate l&#39;accesso a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione applicazione.]**
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server.]** Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
 
@@ -228,18 +228,18 @@ In questo modo si effettua quanto segue:
 * Le rappresentazioni dinamiche che restituiscono l&#39;output RGB, lo restituiranno nello spazio colore *sRGB *s.
 * Rappresentazioni dinamiche che restituiscono l’output CMYK, lo restituiranno nello spazio colore *WebCoated* .
 
-#### Configurazione dell’elaborazione delle risorse {#configuring-asset-processing}
+#### Modifica dei tipi MIME per i formati supportati {#editing-mime-types-for-supported-formats}
 
 Potete definire i tipi di risorse che devono essere elaborati da Dynamic Media e personalizzare i parametri di elaborazione avanzati delle risorse. Ad esempio, potete specificare i parametri di elaborazione delle risorse per effettuare le seguenti operazioni:
 
 * Convertite un Adobe PDF  in una risorsa eCatalog.
 * Convertite un documento Adobe Photoshop  (.PSD) in una risorsa modello banner per la personalizzazione.
 * Rasterizzare un file Adobe Illustrator  (.AI) o un file  Encapsulated Postscript di Adobe Photoshop (.EPS).
-* Nota: I profili video e i profili immagine possono essere utilizzati rispettivamente per definire l’elaborazione di video e immagini.
+* [Profili](/help/assets/video-profiles.md) video e [profili](/help/assets/image-profiles.md) immagine possono essere utilizzati rispettivamente per definire l’elaborazione di video e immagini.
 
 Consulta [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-assets).
 
-**Per configurare l’elaborazione delle risorse**
+**Per modificare i tipi MIME per i formati supportati**
 
 1. In AEM, fate clic sul logo AEM per accedere alla console di navigazione globale, quindi fate clic su **[!UICONTROL Strumenti > Generale > CRXDE Lite.]**
 1. Nella barra a sinistra, andate a:
@@ -262,11 +262,11 @@ Consulta [Caricamento delle risorse](/help/assets/manage-assets.md#uploading-ass
 
 1. Nell’angolo superiore sinistro della pagina, toccate **[!UICONTROL CRXDE Lite]** per tornare alla AEM.
 
-#### Aggiunta di tipi MIME personalizzati per i formati non supportati {#adding-custom-mime-types-for-unsupported-formats}
+#### Aggiunta di tipi MIME per i formati non supportati {#adding-mime-types-for-unsupported-formats}
 
 All’interno di AEM Assets puoi aggiungere tipi MIME personalizzati per i formati non supportati. Per assicurarti che AEM non elimini eventuali nuovi nodi che aggiungi in CRXDE Lite, devi accertarti di spostare il tipo MIME prima di `image_` e che il suo valore abilitato sia impostato su **[!UICONTROL false.]**
 
-**Aggiunta di tipi MIME personalizzati per i formati non supportati**
+**Aggiunta di tipi MIME per i formati non supportati**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -521,11 +521,13 @@ La coda del flusso di lavoro di transito Granite viene utilizzata per il flusso 
 
 1. Nel campo Processi **[!UICONTROL paralleli]** massimi, impostate il numero sul valore desiderato.
 
-   Per impostazione predefinita, il numero massimo di processi paralleli dipende dal numero di core CPU disponibili. Ad esempio, su un server di 4 core assegna 2 thread di lavoro. (Un valore compreso tra 0,0 e 1,0 è basato sul rapporto, altrimenti qualsiasi numero maggiore di 1 assegnerà il numero di thread di lavoro.)
+   Potete aumentare il **[!UICONTROL numero massimo di processi]** paralleli per supportare in modo adeguato il caricamento di file su elementi multimediali dinamici. Il valore esatto dipende dalla capacità hardware. In alcuni scenari, ad esempio una migrazione iniziale o un caricamento in blocco una tantum, potete usare un valore elevato. Tenete presente, tuttavia, che l&#39;utilizzo di un valore elevato (ad esempio, due volte il numero di core) può avere effetti negativi su altre attività simultanee. È quindi necessario verificare e regolare il valore in base al caso di utilizzo specifico.
 
-    Adobe consiglia di configurare 32 Processi **[!UICONTROL paralleli]** massimi per supportare in modo adeguato il caricamento di file in formato Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Toccate **[!UICONTROL Salva.]**
 
