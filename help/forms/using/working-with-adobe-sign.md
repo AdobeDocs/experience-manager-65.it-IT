@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3904'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,10 @@ Per creare un modulo adattivo abilitato per i segni, effettuare le seguenti oper
    1. Specificare **Nome** e **Titolo** per il modulo adattivo.
 
    1. Selezionate il contenitore [di](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configurazione creato durante la configurazione  Adobe Sign con  AEM Forms.
+
+      >[!NOTE]
+      >
+      >Nell&#39;elenco a discesa **[!UICONTROL Cloud Service]** Adobe Sign sono visualizzati i servizi cloud configurati nel contenitore di configurazione selezionato in questo campo. L&#39;elenco a discesa **[!UICONTROL Cloud Service]** Adobe Sign è disponibile nella sezione Firma **** elettronica delle proprietà del modulo adattivo quando si seleziona l&#39;opzione **[!UICONTROL Abilita  Adobe Sign]** .
 
 1. Nella scheda Modello **** modulo, selezionare una delle opzioni seguenti:
 
