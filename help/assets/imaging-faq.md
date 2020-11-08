@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
+source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '1816'
 ht-degree: 2%
 
 ---
@@ -193,34 +193,6 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache arrivan
 Non tutte le immagini sono convertite. La funzione Smart Imaging decide se la conversione è necessaria per migliorare le prestazioni. In alcuni casi, se non si prevede alcun guadagno di prestazioni o se il formato non è JPEG o PNG, l&#39;immagine non viene convertita.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-## Come faccio a sapere il guadagno di prestazioni? Esiste un modo per considerare i vantaggi di Smart Imaging? {#performance-gain}
-
-**Informazioni sulle intestazioni delle immagini intelligenti**
-
-I valori dell&#39;intestazione di Smart Imaging funzionano solo quando le richieste non memorizzate nella cache vengono servite fin da ora. Ciò consente di mantenere la cache corrente ed evitare la necessità di calcolare quando le immagini vengono servite tramite la cache.
-
-Per utilizzare le intestazioni di imaging avanzato, dovete aggiungere il`cache=off`modificatore nelle richieste. Consultate[cache in Dynamic Media Image Serving and Rendering API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html).
-
-Esempio di utilizzo `cache=off` (solo a scopo illustrativo):
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-Dopo aver utilizzato tale richiesta, nella sezione Intestazioni risposta potete visualizzare `-x-adobe-smart-imaging` l’intestazione. Guardate la schermata seguente con `-x-adobe-smart-imaging` evidenziata.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-Questo valore di intestazione indica quanto segue:
-
-* Smart Imaging funziona per l&#39;azienda.
-* Il valore positivo (>=0) indica che la conversione è avvenuta correttamente. In questo caso viene restituita una nuova immagine (qui WebP).
-* Il valore negativo (&lt;0) indica che la conversione non è riuscita. In questo caso viene restituita l’immagine originale richiesta (per impostazione predefinita, JPEG se non specificata).
-* Il valore indica la differenza in byte tra l&#39;immagine richiesta e la nuova immagine. In questo caso, i byte salvati sono 75048, che corrisponde a circa 75 KB per un&#39;immagine. 
-   * Il valore negativo indica che l&#39;immagine richiesta era più piccola della nuova immagine. La differenza di dimensione negativa viene mostrata, ma l’immagine trasmessa è solo l’immagine originale richiesta
-
-**Quando utilizzare le intestazioni per immagini intelligenti?**
-
-Le intestazioni di risposta per le immagini intelligenti sono abilitate per il debug o per evidenziare i vantaggi delle sole immagini intelligenti. L&#39;utilizzo`cache=off`in scenari normali può influire in modo significativo sui tempi di caricamento.
 
 ## È possibile disattivare la funzione Smart Imaging per qualsiasi richiesta? {#turning-off-smart-imaging}
 
