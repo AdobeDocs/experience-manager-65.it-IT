@@ -3,9 +3,9 @@ title: Risorse [!DNL Adobe Stock] di gestione
 description: Cercare, recuperare, ottenere licenze e [!DNL Adobe Stock] gestire risorse dall'interno [!DNL Adobe Experience Manager]. Utilizzate le risorse con licenza come qualsiasi altra risorsa digitale.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1080'
 ht-degree: 13%
 
 ---
@@ -19,7 +19,7 @@ Le organizzazioni possono integrare il piano [!DNL Adobe Stock] aziendale con [!
 
 ## Prerequisiti {#prerequisites}
 
-L&#39;integrazione richiede un piano [Adobe Stock](https://stockenterprise.adobe.com/)Enterprise .
+L&#39;integrazione richiede un [ [!DNL Adobe Stock] piano aziendale](https://stockenterprise.adobe.com/).
 
 ## Integrare [!DNL Experience Manager] e [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -52,7 +52,7 @@ Per consentire la comunicazione tra [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 >[!NOTE]
 >
->Se sono presenti più [!DNL Adobe Stock] configurazioni, selezionate la configurazione desiderata nel pannello Preferenze utente. Per accedere al pannello  pagina principale del Experience Manager, fate clic sull’icona utente, quindi fate clic su Preferenze **** utente > Configurazione **** Stock.
+>Se sono presenti più [!DNL Adobe Stock] configurazioni, selezionate la configurazione desiderata nel pannello Preferenze  utente. Per accedere al pannello dalla [!DNL Experience Manager] home page, fai clic sull’icona utente, quindi fai clic su Preferenze **** utente > Configurazione **** Stock.
 
 ## Utilizzare e gestire [!DNL Adobe Stock] le risorse in [!DNL Experience Manager] {#usemanage}
 
@@ -60,9 +60,9 @@ Grazie a questa funzione, le organizzazioni possono consentire agli utenti di ut
 
 Una volta ottenuta la licenza di una [!DNL Adobe Stock] risorsa in [!DNL Experience Manager], questa può essere utilizzata e gestita come una risorsa tipica. In [!DNL Experience Manager]potete cercare e visualizzare in anteprima le risorse; copiare e pubblicare le risorse; condividere le attività su [!DNL Brand Portal]; accedere e utilizzare le risorse tramite l’app [!DNL Experience Manager] desktop; e così via.
 
-![Cercare  risorse Adobe Stock e filtrare i risultati dall’area di lavoro Adobe Experience Manager](assets/adobe-stock-search-results-workspace.png)
+![Cercare [!DNL Adobe Stock] risorse e filtrare i risultati dall’ [!DNL Adobe Experience Manager] area di lavoro](assets/adobe-stock-search-results-workspace.png)
 
-*Figura: Cercate[!DNL Adobe Stock]le risorse e i risultati del filtro dall’[!DNL Experience Manager]interfaccia.*
+*Figura: Cercate [!DNL Adobe Stock] le risorse e i risultati del filtro dall’ [!DNL Experience Manager] interfaccia.*
 
 **A.**[!DNL Adobe Stock] Cerca risorse simili a quelle di chi è fornito l’ID **B.** Cerca risorse corrispondenti alla tua selezione di forma o orientamento. **C.** Cerca uno o più dei tipi di risorse supportati **D.** Apri o comprimi il riquadro Filtri **E.** Procurati la licenza relativa e salva la risorsa selezionata in [!DNL Experience Manager]**F.**[!DNL Experience Manager] Salva la risorsa in applicando la filigrana **G.**[!DNL Adobe Stock] Sul sito web di , esplora le risorse simili a quella selezionata **H.**[!DNL Adobe Stock] Visualizza le risorse selezionate sul sito web di **I.** Numero di risorse selezionate proveniente dai risultati della ricerca **J.** Passaggio tra la vista a schede e la vista a elenco
 
@@ -80,9 +80,9 @@ In alternativa, iniziate a digitare `Location: Adobe Stock` nella barra di ricer
 >
 >Assets searched from [!DNL Adobe Stock] are just displayed in [!DNL Experience Manager]. [!DNL Adobe Stock] le risorse vengono recuperate e memorizzate nell’ [!DNL Experience Manager] archivio solo dopo che un utente [salva una risorsa](/help/assets/aem-assets-adobe-stock.md#saveassets) o [le licenze e salva una risorsa](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets that are already stored in [!DNL Experience Manager] are displayed and highlighted for ease of reference and access. Also, the [!DNL Stock] assets are saved with some additional metadata to indicate the source as [!DNL Stock].
 
-![Filtri di ricerca in  Experience Manager ed evidenziati  risorse Adobe Stock nei risultati di ricerca](assets/aem-search-filters2.jpg)
+![Ricerca di filtri nelle risorse [!DNL Experience Manager] e evidenziate [!DNL Adobe Stock] nei risultati di ricerca](assets/aem-search-filters2.jpg)
 
-*Figura: Consente di cercare i filtri nelle risorse[!DNL Experience Manager]evidenziate[!DNL Adobe Stock]nei risultati della ricerca.*
+*Figura: Consente di cercare i filtri nelle risorse [!DNL Experience Manager] evidenziate [!DNL Adobe Stock] nei risultati della ricerca.*
 
 ### Salvate e visualizzate le risorse richieste {#saveassets}
 
@@ -98,9 +98,9 @@ La prossima volta che ricercate le risorse, queste vengono evidenziate con un co
 
 Gli utenti possono concedere in licenza [!DNL Adobe Stock] le risorse utilizzando la quota del proprio piano [!DNL Adobe Stock] enterprise. Quando acquistate una licenza, la risorsa viene salvata senza filigrana ed è disponibile per la ricerca e l’utilizzo in [!DNL Experience Manager Assets].
 
-![Finestra di dialogo per ottenere la licenza e salvare  risorse Adobe Stock in  risorse Experience Manager](assets/aem-stock_licenseandsave.jpg)
+![Finestra di dialogo per ottenere la licenza e salvare [!DNL Adobe Stock] le risorse in [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
 
-*Figura: Finestra di dialogo per ottenere la licenza e salvare[!DNL Adobe Stock]le risorse in[!DNL Experience Manager Assets].*
+*Figura: Finestra di dialogo per ottenere la licenza e salvare [!DNL Adobe Stock] le risorse in [!DNL Experience Manager Assets].*
 
 ### Accesso a metadati e proprietà delle risorse {#access-metadata-and-asset-properties}
 
@@ -122,7 +122,7 @@ Gli utenti possono visualizzare le proprietà per risorse con licenza e senza li
 
 >[!MORELIKETHIS]
 >
->* [Esercitazione video sull’uso  risorse Adobe Stock con  risorse Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [del piano aziendale Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Domande frequenti su  Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Esercitazione video sull’ [!DNL Adobe Stock] utilizzo delle risorse [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] guida del piano aziendale](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/stock/faq.html)
 
