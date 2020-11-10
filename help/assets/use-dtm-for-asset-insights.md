@@ -3,10 +3,10 @@ title: Abilita approfondimenti risorse tramite DTM
 description: Scopri come utilizzare  Gestione dinamica dei tag (DTM, Dynamic Tag Management) di Adobe per abilitare le informazioni sulle risorse.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d13381d961f7663366b041168da369c0b01c9336
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '671'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-> Adobe DTM è obsoleto a favore di  Adobe Experience Platform Launch e presto arriverà [alla fine della vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f).  Adobe consiglia di [utilizzare Launch per approfondimenti](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sulle risorse.
+> Adobe DTM è obsoleto a favore di [!DNL Adobe Experience Platform Launch] e presto raggiungerà la [fine della vita](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f).  Adobe consiglia di [ [!DNL Launch] utilizzare approfondimenti](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sulle risorse.
 
 Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come indicato di seguito.
 
@@ -31,7 +31,7 @@ Per abilitare Asset Insights tramite Gestione dinamica dei tag, procedi come ind
 
    * Selezionate la scheda Proprietà **** Web, quindi fate clic su **[!UICONTROL Aggiungi proprietà]**.
 
-   * Aggiornate i campi come appropriato e fate clic su **[!UICONTROL Crea proprietà]**. Consulta [la documentazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Aggiornate i campi come appropriato e fate clic su **[!UICONTROL Crea proprietà]**. Consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Creare una proprietà Web di modifica](assets/Create-edit-web-property.png)
 
