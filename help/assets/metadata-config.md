@@ -3,9 +3,9 @@ title: Configurazione e amministrazione della funzionalità dei metadati.
 description: Funzionalità di configurazione e amministrazione [!DNL Experience Manager Assets] relative all'aggiunta e alla gestione dei metadati.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1951'
 ht-degree: 6%
 
 ---
@@ -270,7 +270,7 @@ Immettete i valori dei metadati nei vari campi e fate clic su **[!UICONTROL Salv
 >
 >* [Concetti di metadati e comprensione](metadata-concepts.md).
 >* [Modificate le proprietà dei metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importazione ed esportazione di metadati in  risorse](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)Experience Manager.
+>* [Importazione ed esportazione di metadati in  risorse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)Experience Manager.
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Best practice per organizzare le risorse digitali in modo da utilizzare i profili](/help/assets/organize-assets.md)di elaborazione.
 >* [XMP riscritto](/help/assets/xmp-writeback.md).
