@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 9ba00322588326df6fbcc02bdfba88491d39c289
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -92,8 +92,13 @@ Consulta anche:
 >[!NOTE]
 >
 >**Esempi di nomi delle proprietà**
->
 >Tutti i nomi delle proprietà visualizzati, ad esempio **/0050** e **/0170**, devono essere regolati in modo da rientrare in un file di configurazione dispatcher.any esistente.
+
+
+>[!CAUTION]
+>
+>Per ulteriori considerazioni su come limitare l&#39;accesso tramite Dispatcher, consulta l&#39;elenco di controllo [Protezione dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) . Inoltre, leggete l&#39;elenco di controllo [AEM sicurezza](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) per ulteriori dettagli di sicurezza relativi all&#39;installazione AEM.
+
 
 Le seguenti voci devono essere aggiunte alla fine della sezione /filter, specialmente dopo che tutte le voci negano.
 
