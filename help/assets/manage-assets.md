@@ -4,7 +4,7 @@ description: Scopri le attività di gestione delle risorse come caricare, scaric
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c59726cc1e6656f16a237aac703f37f3f38a87f9
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '9565'
 ht-degree: 4%
@@ -879,7 +879,7 @@ Potete creare versioni [!DNL Experience Manager] nei seguenti scenari:
 * Caricate una risorsa con lo stesso nome file che esiste nella stessa posizione. Può trattarsi di una nuova risorsa o di una versione modificata della stessa risorsa.
 * Modificate un’immagine in [!DNL Experience Manager] e salvate le modifiche.
 * Modificate i metadati di una risorsa.
-* Utilizzate l&#39;app [!DNL Experience Manager] desktop per estrarre una risorsa esistente, modificarla e [caricare le modifiche](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Utilizzate l&#39;app [!DNL Experience Manager] desktop per estrarre una risorsa esistente, modificarla e [caricare le modifiche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
 Potete inoltre abilitare il controllo automatico delle versioni tramite un flusso di lavoro. Quando create una versione per una risorsa, i metadati e le rappresentazioni vengono salvati insieme alla versione. Le rappresentazioni sono alternative per il rendering delle stesse immagini, ad esempio una rappresentazione PNG di un file JPEG caricato.
 
