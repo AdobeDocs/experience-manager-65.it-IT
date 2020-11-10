@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ee527712b4d7f6ebf9ef2996de1405f6f9c3d335
+source-git-commit: 24ad36d3ff329885efff319404e0d5321e8ce46d
 workflow-type: tm+mt
-source-wordcount: '5964'
+source-wordcount: '5990'
 ht-degree: 7%
 
 ---
@@ -205,7 +205,7 @@ La gestione dinamica del colore dei contenuti multimediali consente di colorare 
 
 Per configurare le proprietà colore predefinite per attivare la correzione colore durante la richiesta delle immagini:
 
-1. [Effettuate l&#39;accesso a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione applicazione.]**
+1. [Accedete a Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) utilizzando le credenziali fornite durante il provisioning. Selezionate **[!UICONTROL Configurazione > Impostazione applicazione.]**
 1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server.]** Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorrete fino alla proprietà da modificare, ad esempio una proprietà nell’area Attributi **[!UICONTROL di gestione]** colore.
 
@@ -545,9 +545,7 @@ La coda Flusso di lavoro Granite viene utilizzata per i flussi di lavoro non tra
 
 1. Nel campo Processi **[!UICONTROL paralleli]** massimi, impostate il numero sul valore desiderato.
 
-   Per impostazione predefinita, il numero massimo di processi paralleli dipende dal numero di core CPU disponibili. Ad esempio, su un server di 4 core assegna 2 thread di lavoro. (Un valore compreso tra 0,0 e 1,0 è basato sul rapporto, altrimenti qualsiasi numero maggiore di 1 assegnerà il numero di thread di lavoro.)
-
-   Per la maggior parte dei casi di utilizzo, l&#39;impostazione predefinita 0.5 è sufficiente.
+   Potete aumentare il numero massimo di processi paralleli per supportare in modo adeguato il caricamento di file su file multimediali dinamici. Il valore esatto dipende dalla capacità hardware. In alcuni scenari, ad esempio una migrazione iniziale o un caricamento in blocco una tantum, potete usare un valore elevato. Tenete presente, tuttavia, che l&#39;utilizzo di un valore elevato (ad esempio, due volte il numero di core) può avere effetti negativi su altre attività simultanee. È quindi necessario verificare e regolare il valore in base al caso di utilizzo specifico.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
