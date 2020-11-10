@@ -3,9 +3,9 @@ title: Estende la funzionalità di ricerca.
 description: Estendete le funzionalità [!DNL Adobe Experience Manager Assets] di ricerca oltre i valori predefiniti.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '838'
 ht-degree: 19%
 
 ---
@@ -21,7 +21,7 @@ Potete anche aggiungere ulteriori schede al pannello [!DNL Assets] Amministrazio
 
 >[!CAUTION]
 >
->A partire dalla versione [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consultate [Funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsolete e rimosse.  Adobe consiglia di utilizzare l&#39;interfaccia touch. Per la personalizzazione, consultate Facet di [ricerca](/help/assets/search-facets.md).
+>A partire dalla versione [!DNL Experience Manager] 6.4, l’interfaccia classica è obsoleta. Per un annuncio, consultate [Funzioni](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)obsolete e rimosse.  Adobe consiglia di utilizzare l&#39;interfaccia touch. Per la personalizzazione, consultate Facet di [ricerca](/help/assets/search-facets.md).
 
 ## Sovrapposizione {#overlaying}
 
