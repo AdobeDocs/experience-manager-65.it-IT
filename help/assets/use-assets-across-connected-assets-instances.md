@@ -3,9 +3,9 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2fe2b5fcaff2b2f2402f0bc638a0df2afd335b31
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2246'
 ht-degree: 41%
 
 ---
@@ -28,7 +28,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 * Gli utenti fanno parte dei gruppi di utenti appropriati per ciascuna distribuzione.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona [!DNL Experience Manager] come Cloud Service. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [collegate in  Experience Manager come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] funziona [!DNL Experience Manager] come Cloud Service. Per ulteriori informazioni, consulta la sezione relativa alla funzionalità delle risorse [collegate in  Experience Manager come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] come Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] su AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] locale |
    |---|---|---|---|
@@ -40,7 +40,7 @@ Prima di utilizzare o configurare questa funzionalità, verifica questi aspetti:
 
 Gli autori ricercano le immagini e i seguenti tipi di documenti in Content Finder e utilizzano le risorse ricercate in Editor pagina. I documenti vengono aggiunti al `Download` componente e le immagini al `Image` componente. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. I formati supportati sono:
 
-* **Formati** immagine: Formati supportati dal componente [](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html) Immagine. [!DNL Dynamic Media] le immagini non sono supportate.
+* **Formati** immagine: Formati supportati dal componente [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) Immagine. [!DNL Dynamic Media] le immagini non sono supportate.
 * **Formati** del documento: Vedere i formati [di documento](assets-formats.md#supported-document-formats)supportati.
 
 ### Utenti e gruppi interessati {#users-and-groups-involved}
@@ -192,8 +192,8 @@ Le risorse recuperate possono essere utilizzate come qualsiasi altra risorsa loc
 
 Per risolvere eventuali problemi relativi allo scenario di errore comune, procedere come segue:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Una risorsa recuperata dalla diga remota potrebbe non essere pubblicata su una pagina Web per uno o più motivi. Non esiste sul server remoto, mancano le autorizzazioni necessarie per recuperarlo o l&#39;errore di rete può essere dovuto a cause. Assicurarsi che la risorsa non venga rimossa dal DAM remoto. Verificate che siano disponibili le autorizzazioni appropriate e che i prerequisiti siano soddisfatti. Provate ad aggiungere la risorsa alla pagina e ripubblicatela. Controlla l’[elenco dei processi asincroni](/help/sites-administering/asynchronous-jobs.md) per verificare la presenza di errori nel recupero delle risorse.
-* Se non riuscite ad accedere alla distribuzione remota di DAM dalla [!DNL Sites] distribuzione locale, accertatevi che i cookie tra siti siano consentiti. Se i cookie cross-site sono bloccati, le due distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità Incognito i cookie di terze parti possono essere bloccati. Per consentire i cookie nel [!DNL Chrome] browser, fai clic sull&#39;icona a forma di occhio nella barra degli indirizzi, vai a Sito che non funziona > Bloccato, seleziona l&#39;URL DAM remoto e consenti il cookie del token di login. In alternativa, consulta la guida su [come abilitare i cookie](https://support.google.com/chrome/answer/95647)di terze parti.
+* Se non riuscite ad accedere alla distribuzione DAM remota dalla [!DNL Sites] distribuzione locale, accertatevi che i cookie intersito siano consentiti. Se i cookie cross-site sono bloccati, le due distribuzioni di [!DNL Experience Manager] potrebbero non essere autenticate. Ad esempio, [!DNL Google Chrome] in modalità Incognito i cookie di terze parti possono essere bloccati. Per consentire i cookie nel [!DNL Chrome] browser, fai clic sull&#39;icona a forma di occhio nella barra degli indirizzi, vai a Sito che non funziona > Bloccato, seleziona l&#39;URL DAM remoto e consenti il cookie del token di login. In alternativa, consulta la guida su [come abilitare i cookie](https://support.google.com/chrome/answer/95647)di terze parti.
 
    ![Errore del cookie in Chrome in modalità incognito](assets/chrome-cookies-incognito-dialog.png)
