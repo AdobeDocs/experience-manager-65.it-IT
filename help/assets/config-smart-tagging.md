@@ -3,9 +3,9 @@ title: Configurare i tag delle risorse tramite Smart Content Service
 description: Scoprite come configurare i tag avanzati e i tag avanzati in [!DNL Adobe Experience Manager]mediante Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2179'
 ht-degree: 35%
 
 ---
@@ -23,7 +23,7 @@ Prima di utilizzare Smart Content Service, accertatevi quanto segue:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Installate il service pack [di](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager più recente.
+* Installate il service pack [di](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager più recente.
 
 ## Integrare con Adobe Developer Console {#integrate-adobe-io}
 
@@ -281,12 +281,12 @@ Per verificare se Smart Content Service è addestrato sui tag presenti nel set d
 
    * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
    * Impossibile identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i logo delle T-shirt.
-   * I tag sono supportati nelle impostazioni internazionali [!DNL Experience Manager] supportate in. Per un elenco delle lingue, consultate [Note](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione di Smart Content Services.
+   * I tag sono supportati nelle impostazioni internazionali [!DNL Experience Manager] supportate in. Per un elenco delle lingue, consultate [Note](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html)sulla versione di Smart Content Services.
 
 * Per cercare risorse con tag avanzati (regolari o avanzati), usate la ricerca [!DNL Assets] Omnisearch (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 
 >[!MORELIKETHIS]
 >
 >* [Panoramica e come formare i tag avanzati](enhanced-smart-tags.md)
->* [Esercitazione video sulla configurazione degli smart tag](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
