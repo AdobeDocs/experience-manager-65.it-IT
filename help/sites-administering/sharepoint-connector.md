@@ -11,31 +11,31 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
+source-git-commit: cc3a2ce7cb3dc020f5466a4b65cf5a9714e7a344
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 2%
+source-wordcount: '1571'
+ht-degree: 1%
 
 ---
 
 
 # Connettore SharePoint{#sharepoint-connector}
 
-Questo articolo include informazioni dettagliate sul connettore Adobe JCR per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0.
+Questo articolo include informazioni dettagliate sul connettore JCR  Adobe per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0.
 
 Il connettore di SharePoint supporta le seguenti funzionalità di base:
 
 * Lettura di contenuti e metadati da SharePoint.
 * Riconoscimento delle impostazioni di protezione di SharePoint per il contenuto a cui si accede tramite l&#39;applicazione dell&#39;autenticazione e dell&#39;autorizzazione nativa di SharePoint
 * Integrazione dei contenuti tramite Content Finder
-* Utilizzo di componenti AEM, ad esempio Risorse esterne per visualizzare immagini e video di SharePoint
-* Sincronizzazione di SharePoint con AEM Assets
+* Utilizzo di componenti AEM, come Risorse esterne per visualizzare immagini e video di SharePoint
+* Sincronizzazione di SharePoint con  AEM Assets
 
 Tutte le funzionalità sono implementate utilizzando i servizi Web di SharePoint nativi come interfaccia per il contenuto e i servizi di SharePoint.
 
 >[!NOTE]
 >
->Il connettore SharePoint è supportato anche con il service pack 2 di AEM 6.1. Il connettore non supporta più il montaggio dell&#39;archivio virtuale e, pertanto, non può essere montato. Se desiderate accedere all&#39;archivio di SharePoint utilizzando le API Java, utilizzate l&#39;implementazione dell&#39;archivio JCR del connettore di Sharepoint nel progetto.
+>Il connettore SharePoint è supportato anche con AEM 6.1 service pack 2. Il connettore non supporta più il montaggio dell&#39;archivio virtuale e, pertanto, non può essere montato. Se desiderate accedere all&#39;archivio di SharePoint utilizzando le API Java, utilizzate l&#39;implementazione dell&#39;archivio JCR del connettore di Sharepoint nel progetto.
 >
 >L&#39;installazione, la configurazione, la gestione e le operazioni IT del server SharePoint e dell&#39;infrastruttura IT correlata non rientrano nell&#39;ambito del presente documento. Per informazioni su questi argomenti, consulta la documentazione del fornitore in [SharePoint](https://www.microsoft.com/sharepoint) . Il connettore richiede che queste parti dell&#39;infrastruttura siano installate, configurate e gestite correttamente.
 
@@ -45,10 +45,10 @@ Tutte le funzionalità sono implementate utilizzando i servizi Web di SharePoint
 Per iniziare a utilizzare il connettore, effettuare le seguenti operazioni:
 
 * Accertatevi che sia installato almeno Java 7.
-* Scaricate il file di distribuzione del pacchetto di connettore da Package Share.
+* Scaricate il file di distribuzione del pacchetto di connettore da Distribuzione software.
 * Copiate un file *license.properties* valido nella directory che contiene il file *cq-quickstart-6.4.0.jar* .
 
-* Toccate o fate doppio clic sul file .jar per avviare AEM oppure avviatelo dalla riga di comando.
+* Tocca o fai doppio clic sul file .jar per avviare AEM oppure avviarlo dalla riga di comando.
 * Installate il pacchetto del connettore da Package Manager.
 * Configurare le opzioni del connettore.
 
@@ -63,10 +63,10 @@ Il connettore richiede quanto segue:
 * Java Runtime Environment 1.7 o versione successiva
 * SharePoint Web Services disponibile nella rete
 * URL server SharePoint
-* Credenziali utente e autorizzazioni per i repository CRX e SharePoint
+* Credenziali utente e autorizzazioni per repository CRX e SharePoint
 * [Piattaforme supportate](#supported-platforms)
 
-Il connettore di SharePoint è disponibile per il download da [packagesshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+Il connettore SharePoint è disponibile per il download da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Piattaforme supportate {#supported-platforms}
 
@@ -81,7 +81,7 @@ Il connettore supporta le seguenti funzionalità:
    * Microsoft Office SharePoint Server (MOSS) 2010
    * Microsoft Office SharePoint Server (MOSS) 2013
 
-* Se è necessario il supporto per le installazioni personalizzate del connettore (OEM, requisiti speciali, metodi di autenticazione personalizzati), contattare l&#39;ufficio Adobe della propria area geografica.
+* Se è necessario il supporto per le installazioni personalizzate del connettore (OEM, requisiti speciali, metodi di autenticazione personalizzati), contattare l&#39;ufficio del Adobe  della propria area geografica.
 
 >[!NOTE]
 >
@@ -89,16 +89,15 @@ Il connettore supporta le seguenti funzionalità:
 
 ### Installazione standard {#standard-installation}
 
-AEM Package Share viene utilizzato per distribuire funzionalità, esempi e correzioni di prodotti. Per informazioni dettagliate, consultate la documentazione [di](/help/sites-administering/package-manager.md#package-share)Package Share.
+Distribuzione software viene utilizzata per distribuire funzionalità, esempi e correzioni rapide del prodotto. Per informazioni dettagliate, consultate la documentazione [sulla distribuzione del](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)software.
 
-Per accedere a Condivisione pacchetti nella pagina di benvenuto di AEM, tocca o fai clic su **Strumenti** , quindi seleziona Condivisione **** pacchetti. È necessario un Adobe ID  valido che includa l&#39;indirizzo e-mail della società. Inoltre, dopo aver effettuato l&#39;accesso al vostro account, richiedete l&#39;accesso a Package Share.
 
 #### Integrazione con AEM {#integrating-with-aem}
 
 Per installare il pacchetto di contenuto del connettore.
 
-1. Aprite un ticket di supporto Adobe per richiedere la funzionalità del connettore.
-1. Scaricate il pacchetto quando è disponibile e quindi aprite Package Manager per la vostra istanza di AEM.
+1. Aprite un ticket di assistenza  Adobe per richiedere la funzionalità del connettore.
+1. Scaricate il pacchetto quando è disponibile e quindi aprite Package Manager per l&#39;istanza AEM.
 1. Toccate/fate clic su **Installa** nella pagina di descrizione del pacchetto.
 1. Dalla finestra di dialogo **Installa pacchetto** , toccate o fate clic su **Installa**.
 
@@ -133,7 +132,7 @@ Il connettore può essere configurato anche per più aree di lavoro. In questo c
 
 In AEM, eseguite un altro passaggio oltre ai passaggi di configurazione indicati sopra.  Elenco consentiti il bundle &#39;**com.day.cq.dam.cq-dam-jcr-Connectors**&#39;.
 
-Per  pacchetti di elenchi consentiti in AEM, effettuate le seguenti operazioni:
+Per  pacchetti di elenco consentiti in AEM, effettuate le seguenti operazioni:
 
 1. Andate alla console di gestione OSGi: http://localhost:4502/system/console/configMgr.
 1. Cercate il servizio &quot;Apache Sling Login Admin Whitelist&quot;.
@@ -186,27 +185,27 @@ Facoltativamente, potete configurare il ritardo di sincronizzazione tra i divers
 Sharepoint include i metodi di autenticazione Classic e Basato su attestazioni, che supportano entrambi i tipi di autenticazione seguenti:
 
 * Base
-* Basato su moduli
+* Basato su Forms
 
 In particolare, sono disponibili i seguenti tipi di autenticazione:
 
 * Classic-Basic
-* Basato su classici moduli
+* Basato su Forms classico
 * Claims-Basic
-* Claims-Forms
+* Claims-based Forms
 
-Il connettore AEM JCR per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0. supporta l&#39;autenticazione basata sulle attestazioni (suggerita da Microsoft), che funziona nelle seguenti modalità:
+Il connettore JCR AEM per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0. supporta l&#39;autenticazione basata sulle attestazioni (suggerita da Microsoft), che funziona nelle seguenti modalità:
 
 * **Autenticazione** di base/NTLM: Il connettore tenta innanzitutto di connettersi utilizzando l&#39;autenticazione di base. Se non disponibile, passa all&#39;autenticazione basata su NTLM.
-* **Autenticazione** basata su moduli: Sharepoint convalida gli utenti in base alle credenziali che gli utenti digitano in un modulo di login (in genere una pagina Web). Il sistema emette un token per le richieste autenticate che contiene una chiave per ripristinare l&#39;identità per le richieste successive.
+* **Autenticazione** basata su Forms: Sharepoint convalida gli utenti in base alle credenziali che gli utenti digitano in un modulo di login (in genere una pagina Web). Il sistema emette un token per le richieste autenticate che contiene una chiave per ripristinare l&#39;identità per le richieste successive.
 
-**Configurazione dell&#39;autenticazione basata su moduli**
+**Configurazione dell&#39;autenticazione basata su Forms**
 
 Vai a: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 1. Fare clic su OSGI -> Configurazione
 1. Cerca &quot;Connettore JCR Day per Microsoft SharePoint&quot;
-1. Fate clic su &quot;Edit the configuration values&quot; (Modifica i valori di configurazione)
+1. Fate clic su &quot;Edit the configuration values&quot; (Modifica valori di configurazione)
 1. Impostate il valore di ‘Sharepoint Connection Factory’ come ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’
 1. Fai clic su **Salva**.
 
@@ -220,9 +219,9 @@ Vai a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 1. Impostate il valore di Sharepoint Connection Factory su `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Fai clic su **Salva**.
 
-Solo un utente autenticato su AEM e SharePoint può accedere al contenuto SharePoint tramite il connettore.
+Solo un utente autenticato sia su AEM che su SharePoint può accedere al contenuto SharePoint tramite il connettore.
 
-Potete inoltre utilizzare l&#39;estensione del connettore per l&#39;autenticazione per creare un modulo di autenticazione personalizzato, che, ad esempio, associa l&#39;accesso degli utenti AEM a utenti di SharePoint specifici. Crea utenti AEM corrispondenti agli utenti di SharePoint (il nome utente e la password devono corrispondere) per poter visualizzare il contenuto di SharePoint mappato all&#39;istanza del connettore.
+È inoltre possibile utilizzare l&#39;estensione del connettore per l&#39;autenticazione per creare un modulo di autenticazione personalizzato, che, ad esempio, mappa l&#39;accesso degli utenti AEM a specifici utenti di SharePoint. Creare utenti AEM corrispondenti agli utenti di SharePoint (il nome utente e la password devono corrispondere) per poter visualizzare il contenuto di SharePoint mappato all&#39;istanza del connettore.
 
 Per creare un utente in AEM:
 
@@ -245,7 +244,7 @@ Per aggiungere l&#39;utente nel gruppo di amministrazione:
 
 ### Disattiva autenticazione token {#disable-token-authentication}
 
-1. Scaricate e installate il pacchetto `basic auth`. `zip` da Package Share.
+1. Scaricate e installate il pacchetto `basic auth`. `zip` da Distribuzione software.
 
 1. Chiudi Avvio rapido.
 1. Aprite il file *\crx-quickstart\repository\repository.xml*.
@@ -256,7 +255,7 @@ Per aggiungere l&#39;utente nel gruppo di amministrazione:
 
 #### Supporto di diversi metodi di autenticazione del server SharePoint {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-Nella versione standard, il connettore supporta l&#39;autenticazione standard IIS **Windows** (Basic) e l&#39;autenticazione basata su Forms (basata su token). Gli [altri metodi](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) di autenticazione possono essere supportati tramite il meccanismo di estensibilità.
+Nella versione standard, il connettore supporta l&#39;autenticazione standard IIS **Windows** (Basic) e l&#39;autenticazione basata su Forms (token). Gli [altri metodi](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) di autenticazione possono essere supportati tramite il meccanismo di estensibilità.
 
 I passaggi seguenti forniscono linee guida sull&#39;estensione dell&#39;autenticazione standard per supportare vari metodi di autenticazione del server SharePoint:
 
