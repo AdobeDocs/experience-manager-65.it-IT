@@ -3,9 +3,9 @@ title: Gestire le risorse video
 description: Caricate, visualizzate in anteprima, annotate e pubblicate le risorse video in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '807'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ Per impostazione predefinita, [!DNL Assets] non consente di caricare risorse mag
 Oltre alla [!DNL Assets] configurazione, modificate le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
 * Aumenta l’ora di scadenza del token. Consulta [!UICONTROL servlet] CSRF Granite Adobe nella console Web all’indirizzo `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumentare la configurazione `receiveTimeout` del dispatcher. Per ulteriori informazioni, consultate [configurazione](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)del dispatcher di Experienci Manager.
+* Aumentare la configurazione `receiveTimeout` del dispatcher. Per ulteriori informazioni, consultate [configurazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)del dispatcher di Experienci Manager.
 
 >[!NOTE]
 >
