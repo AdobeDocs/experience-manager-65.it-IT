@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Valutazione della complessità dell&#39;aggiornamento con il rilevamento dei pattern{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Valutazione della complessità dell&#39;aggiornamento con il rilevamento dei pattern
 
 ## Panoramica {#overview}
 
@@ -43,9 +43,10 @@ Il rilevamento dei pattern viene rilasciato separatamente come un [unico pacchet
 >* aumentare la velocità di rilevamento
 >* evitare rallentamenti in casi business critical
 
-
->allo stesso tempo, si consiglia di eseguirlo **in ambienti** di pre-produzione il più vicino possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
 >
+>
+allo stesso tempo, si consiglia di eseguirlo **in ambienti** di pre-produzione il più vicino possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
+
 È possibile utilizzare diversi metodi per controllare l&#39;output di Rilevamento pattern:
 
 * **Tramite la console di Felix Inventory:**
@@ -56,7 +57,6 @@ Il rilevamento dei pattern viene rilasciato separatamente come un [unico pacchet
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Tramite un&#39;interfaccia JSON reattiva basata su testo o normale**
-
 * **Tramite un&#39;interfaccia di linee JSON reattive, **che genera un documento JSON separato in ogni riga.
 
 Entrambi i metodi sono descritti di seguito:
@@ -211,7 +211,8 @@ Con l&#39;uscita:
 ```
 
 >[!NOTE]
-L&#39;approccio consigliato consiste nel salvare l&#39;intero output dall&#39;archivio e quindi elaborarlo tramite `jq` o `grep` filtrare il tipo di informazioni.
+>
+>L&#39;approccio consigliato consiste nel salvare l&#39;intero output dall&#39;archivio e quindi elaborarlo tramite `jq` o `grep` filtrare il tipo di informazioni.
 
 ## Ambito di rilevamento {#scope}
 
@@ -224,5 +225,5 @@ Al momento il rilevamento dei pattern consente di controllare:
 * rep:compatibilità dei nodi utente (nel contesto della configurazione OAuth)
 
 >[!NOTE]
-Tenere presente che il rilevatore di pattern tenta di prevedere con precisione gli avvisi relativi all&#39;aggiornamento. Tuttavia, in alcuni scenari potrebbe generare falsi positivi.
-
+>
+>Tenere presente che il rilevatore di pattern tenta di prevedere con precisione gli avvisi relativi all&#39;aggiornamento. Tuttavia, in alcuni scenari potrebbe generare falsi positivi.
