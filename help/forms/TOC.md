@@ -8,9 +8,9 @@ user-guide-title: Guida a Forms di Adobe Experience Manager 6.5
 breadcrumb-title: Guida a Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3716'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 2%
       + [Installare e configurare le funzionalità di acquisizione dei dati](using/installing-configuring-aem-forms-osgi.md)
       + [Installazione e configurazione del flusso di lavoro Forms-centric su OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installare e configurare le comunicazioni interattive](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [Installare e configurare il servizio di conversione Forms automatizzata](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [Installazione e configurazione del servizio Automated forms conversion](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [Piattaforme supportate per AEM moduli su JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installare e distribuire  AEM Forms su JEE tramite chiavi in mano JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -193,6 +193,7 @@ ht-degree: 2%
    + [Canale di stampa e canale web](using/web-channel-print-channel.md)
    + [Proprietà di configurazione di Interactive Communications](using/interactive-communication-configuration-properties.md)
    + [Generazione di più comunicazioni interattive](using/generate-multiple-interactive-communication-using-batch-api.md)
+   + [Utilizzare la modalità Layout per ridimensionare i componenti](using/resize-using-layout-mode-interactive-communication.md)
 + Flussi di lavoro {#workflows}
    + [Flusso di lavoro Forms basato su OSGi](using/aem-forms-workflow.md)
    + [Flusso di lavoro Forms basato su OSGi - Riferimento passo](using/aem-forms-workflow-step-reference.md)
