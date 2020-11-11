@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
+source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3949'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,8 @@ Per selezionare un servizio cloud e l&#39;ordine di firma, effettuate le seguent
 1. Selezionate un servizio cloud dall&#39;elenco di Cloud Services Adobe Sign già configurati.
 
    Se l’elenco di Cloud Service **Adobe Sign** è vuoto, seguite l’articolo [Configura  Adobe Sign con  AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) per configurare il servizio.
+
+   Il menu a discesa elenca i servizi cloud presenti nella `global` cartella in Strumenti > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Inoltre, nel menu a discesa sono elencati anche i servizi cloud presenti nella cartella selezionata nel campo Contenitore **[!UICONTROL di]** configurazione al momento della creazione di un modulo adattivo.
 
 1. Selezionare l&#39;ordine di firma dalla finestra di dialogo **Firma** dei firmatari.  cantanti Adobe Sign possono firmare un modulo adattivo in **sequenza** , uno dopo l’altro firmatario o **simultaneamente** , in qualsiasi ordine.
 
