@@ -1,40 +1,30 @@
 ---
-title: Utilizzare la modalità Layout per ridimensionare i componenti
-seo-title: Utilizzare la modalità Layout per ridimensionare i componenti
+title: Utilizzare la modalità Layout per ridimensionare i componenti per i moduli adattivi
 description: 'Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout '
-seo-description: 'Definire la posizione dei componenti utilizzando la griglia reattiva disponibile in modalità Layout '
-uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
-contentOwner: anujkapo
-topic-tags: interactive-communications, author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzare la modalità Layout per ridimensionare i componenti{#use-layout-mode-to-resize-components}
+# Utilizzare la modalità Layout per ridimensionare i componenti {#use-layout-mode-to-resize-components}
 
-L’interfaccia per la creazione di canali Web per la comunicazione adattiva e la comunicazione interattiva consente di ridimensionare i componenti in modalità Layout. Trascinate i punti blu all’interno delle colonne per definire i punti iniziale e finale per posizionare i componenti. I punti blu vengono visualizzati dopo aver toccato il componente all’interno della griglia reattiva. La griglia reattiva è composta da 12 colonne uguali. L&#39;ombreggiatura del colore bianco e blu nelle colonne alternative differisce una colonna dall&#39;altra.
+L’interfaccia per la creazione di moduli adattivi consente di ridimensionare i componenti in modalità Layout. Trascinate i punti blu all’interno delle colonne per definire i punti iniziale e finale per posizionare i componenti. I punti blu vengono visualizzati dopo aver toccato il componente all’interno della griglia reattiva. La griglia reattiva è composta da 12 colonne uguali. L&#39;ombreggiatura del colore bianco e blu nelle colonne alternative differisce una colonna dall&#39;altra.
 
 Potete utilizzare la modalità Layout per ridimensionare i componenti per tutti i tipi di dispositivi, ad esempio desktop, tablet, telefoni e altri dispositivi più piccoli. Il tablet deriva automaticamente la configurazione del layout dalla versione desktop e i dispositivi più piccoli derivano la configurazione del layout dal telefono. Tuttavia, potete ignorare le configurazioni derivate automaticamente per definire una configurazione diversa per ciascun tipo di dispositivo.
 
-Se si crea il canale Web utilizzando il canale [Stampa come master](../../forms/using/create-interactive-communication.md) per una comunicazione interattiva, i componenti disponibili per il ridimensionamento includono anche i sottomoduli e i campi generati automaticamente nel canale Web utilizzando il canale Stampa. Il canale Web mantiene il layout degli elementi del canale di stampa in modalità Layout.
-
 ## Accesso alla modalità Layout {#access-layout-mode}
 
-Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superiore dell’interfaccia per la creazione di moduli adattivi e comunicazioni interattive accanto all’opzione **Anteprima** . Il modulo viene visualizzato in modalità Layout.
+Selezionare **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore dell&#39;interfaccia di creazione dei moduli adattivi accanto all&#39;opzione **Anteprima** . Il modulo viene visualizzato in modalità Layout.
 
 1. Accedete all’istanza di creazione AEM e passate a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
-1. [Create un nuovo](../../forms/using/create-interactive-communication.md) modulo adattivo o aprite una comunicazione interattiva.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Selezionate **Layout** dall’elenco a discesa nella parte superiore accanto all’opzione **Anteprima** . Il modulo viene visualizzato in modalità Layout.
 
-   ![Modalità Layout per le comunicazioni interattive](assets/layout_mode_ic_new.png)
+   ![Modalità Layout](assets/layout_mode_ic_new.png)
 
 ## Ridimensiona i componenti {#resize-components}
 
@@ -56,9 +46,9 @@ Selezionate **Layout** dall’elenco a discesa visualizzato nella parte superior
 
 ### Esempio {#example}
 
-**Obiettivo:** Inserire un componente tabella e un componente Immagine e posizionarli parallelamente in una comunicazione interattiva.
+**Obiettivo:** Inserire un componente tabella e un componente Immagine e posizionarli parallelamente in un modulo adattivo.
 
-1. Inserite i componenti di tabella e immagine utilizzando la modalità Modifica nel canale Web. Il componente Immagine viene visualizzato dopo il componente Tabella.
+1. Inserite i componenti di tabella e immagine utilizzando la modalità di modifica nel modulo adattivo. Il componente Immagine viene visualizzato dopo il componente Tabella.
 1. Passate alla modalità Layout e toccate il componente Tabella. I punti blu per ridimensionare il componente vengono visualizzati nelle colonne 1 e 12.
 1. Trascinate il punto blu nella colonna 12 alla colonna 6 della griglia reattiva.
 
