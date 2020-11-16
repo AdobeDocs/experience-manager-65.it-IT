@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b23b66e9d57742f6771bc4b26753a47b334e06bc
+source-git-commit: c4e602a208fa5f66e79a5705a7f1f2f844fb23b5
 workflow-type: tm+mt
-source-wordcount: '4557'
+source-wordcount: '4574'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ Le funzioni chiave e i miglioramenti introdotti in Adobe Experience Manager 6.5.
 
 * [È stata migliorata la memorizzazione nella cache per le pagine](../../help/forms/using/configure-adaptive-forms-cache.md)di moduli adattivi convertite.
 
-* Supporto per [tag di testo Adobe Sign in Automated Forms Conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+* Supporto per [tag di testo Adobe Sign nel servizio](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)Automated forms conversion.
 
 * Supporto per [convertire moduli colorati in moduli](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) adattivi utilizzando [!DNL Automated Forms Conversion service].
 
@@ -258,6 +258,12 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 ### Integrations (Integrazioni){#integrations-6560}
 
 * Le attività con nomi lunghi non vengono sincronizzate con [!DNL Adobe Target] (NPR-34254).
+
+* Quando si seleziona una proprietà durante la creazione di una nuova configurazione di avvio  Adobe, viene visualizzato il seguente messaggio di errore (NPR-33947):
+
+   ```javascript
+   GET http://hostname:Port/libs/cq/dtm-reactor/content/configurations/createcloudconfigwizard/jcr:content/body/items/form/items/wizard/items/general/items/fixedcolumns/items/container/items/general/items/property/data.html?query=&start=0&end=25&imsConfigurationId=Adobe%20Launch&companyId=&_charset_=utf-8 400 (Bad Request)
+   ```
 
 ### Progetti traduzione {#translation-6560}
 
