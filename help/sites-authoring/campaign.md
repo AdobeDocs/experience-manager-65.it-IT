@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 77%
@@ -39,7 +39,7 @@ Vedi anche [Creazione di moduli per Adobe Campaign in AEM](/help/sites-authoring
 
 Dopo aver configurato AEM e Adobe Campaign, puoi creare contenuti per l’invio di e-mail direttamente in AEM e quindi elaborarli in Adobe Campaign.
 
-Quando create  contenuto Adobe Campaign in AEM, dovete impostare un collegamento a un servizio  Adobe Campaign prima di modificare il contenuto per accedere a tutte le funzionalità.
+When you create Adobe Campaign content in AEM, you must link to an Adobe Campaign service before editing the content to access all the functionality.
 
 Esistono due casi possibili:
 
@@ -53,7 +53,6 @@ Le istruzioni dettagliate sono descritte in questo documento.
 >[!NOTE]
 >
 >When adding email templates, be sure to add them under **/content/campaigns** to make them available.
-
 
 #### Creazione di nuovi contenuti e-mail {#creating-new-email-content-1}
 
@@ -160,9 +159,6 @@ Per una descrizione dettagliata di ciascun componente, vedi [Componenti di Adobe
 >
 >* Vengono presi in considerazione solo i campi della dimensione di destinazione dei **Profili** di Adobe Campaign.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. È possibile accedere a tali informazioni direttamente dall’e-mail durante la modifica.
-
->
-
 
 
 Per inserire la personalizzazione:
