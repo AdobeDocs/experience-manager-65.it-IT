@@ -105,7 +105,6 @@ Per aggiungere una proprietà personalizzata a tutti i tipi di risorse e alle le
 
    >[!NOTE]
    >
-
    >Le proprietà comuni per tutte le risorse aggiunte vengono visualizzate nella scheda di base delle proprietà della risorsa. Per impostazione predefinita, le proprietà comuni aggiunte per tutte le risorse vengono visualizzate nella pagina delle proprietà e nella pagina di creazione delle risorse. Per nascondere le proprietà comuni, è necessario <!--link to show / hide properties]-->.
 
 ### Scenario: Aggiunta di valori e menu a discesa personalizzati a una proprietà/campo personalizzato {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
