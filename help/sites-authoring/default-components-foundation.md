@@ -13,7 +13,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '7287'
 ht-degree: 86%
@@ -27,9 +27,9 @@ ht-degree: 86%
 >
 >Most Foundation Components are now deprecated with AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further information.
 >
->Adobe consiglia di utilizzare nei progetti AEM i [nuovi componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”) più avanzati ed estensibili. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
+>Adobe consiglia di utilizzare nei progetti AEM i [nuovi componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”) più avanzati ed estensibili. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
->Potete utilizzare [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) per ridefinire il sito basato su componenti di base in modo da utilizzare i componenti core.
+>È possibile utilizzare la [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) per ridefinire il sito basato sui componenti di base in modo che utilizzi i componenti core.
 
 I precedenti componenti di base erano stati progettati per essere utilizzati durante la creazione di contenuti per una pagina web standard. Costituiscono un sottoinsieme dei componenti disponibili direttamente per un’installazione standard di AEM.
 
@@ -280,7 +280,7 @@ Il componente per l’integrazione con applicazioni esterne (**Esterno**) consen
 
 * **Esterno**
 
-   * **applicazione** Target Specificate l’URL dell’applicazione Web da integrare; ad esempio:
+   * **Applicazione** di destinazione Specificate l’URL dell’applicazione Web da integrare; ad esempio:
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
@@ -363,17 +363,19 @@ Una volta che l’immagine è caricata (non prima) è possibile utilizzare la [m
 >[!NOTE]
 >
 >L’editor locale utilizza le dimensioni e le proporzioni originali dell’immagine durante la modifica. Potete inoltre specificare le proprietà relative a altezza e larghezza. Eventuali limitazioni di dimensioni e proporzioni definite nelle proprietà vengono applicate al salvataggio delle modifiche.
-
->In base all’istanza, le limitazioni minime e massime possono essere imposte anche a partire dalla [progettazione della pagina](/help/sites-developing/designer.md); queste vengono sviluppate durante l’implementazione del progetto.
 >
+>In base all’istanza, le limitazioni minime e massime possono essere imposte anche a partire dalla [progettazione della pagina](/help/sites-developing/designer.md); queste vengono sviluppate durante l’implementazione del progetto.
+
 Diverse opzioni aggiuntive sono disponibili nella modalità di modifica a schermo intero, ad esempio, mappa e zoom: 
 
 ![](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
-In Internet Explorer non è possibile monitorare l’avanzamento del caricamento.
-Se si utilizza Internet Explorer è necessario caricare l’immagine e fare clic su **OK**, quindi riaprire l’immagine per vedere il file caricato nell’anteprima e per eseguire eventuali modifiche (ad es. ritagliare l’immagine).
-
+>
+>In Internet Explorer non è possibile monitorare l’avanzamento del caricamento.
+>
+>Se si utilizza Internet Explorer è necessario caricare l’immagine e fare clic su **OK**, quindi riaprire l’immagine per vedere il file caricato nell’anteprima e per eseguire eventuali modifiche (ad es. ritagliare l’immagine).
+>
 >See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 Quando carichi un’immagine, puoi configurare le opzioni seguenti:
@@ -415,7 +417,8 @@ Quando carichi un’immagine, puoi configurare le opzioni seguenti:
    Imposta l’altezza e la larghezza dell’immagine.
 
 >[!NOTE]
-Alcune opzioni sono disponibili solo nell’editor a schermo intero.
+>
+>Alcune opzioni sono disponibili solo nell’editor a schermo intero.
 
 L’immagine finale (con **Titolo** e **Descrizione**) può essere visualizzata come:
 
@@ -428,12 +431,14 @@ Il componente fornisce un sistema paragrafo a griglia che consente di aggiungere
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
 >[!NOTE]
-Questo componente è stato implementato con il linguaggio [HTL (HTML Template Language)](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html).
+>
+>Questo componente è stato implementato con il linguaggio [HTL (HTML Template Language)](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html).
 
 ### Elenco {#list}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Elenco](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Elenco](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html).
 
 Il componente Elenco permette di configurare criteri di ricerca per la creazione di un elenco:
 
@@ -506,7 +511,8 @@ Nell’esempio seguente, un componente **Elenco** visualizza una serie di pagine
 ### Accesso {#login}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Forniscono i campi nome utente e password.
 
@@ -563,7 +569,8 @@ Puoi configurare i parametri seguenti:
 ### Riferimento {#reference}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html).
 
 Il componente **Riferimento** consente di fare riferimento al testo da un’altra pagina del sito Web AEM (all’interno dell’istanza corrente). Il contenuto del paragrafo a cui viene fatto riferimento verrà visualizzato come se si trovasse nella pagina corrente. Il contenuto verrà aggiornato al modificarsi del paragrafo di origine (potrebbe essere necessario un aggiornamento della pagina).
 
@@ -577,7 +584,7 @@ Per specificare il percorso di un paragrafo è necessario aggiungere in coda al 
 
 `.../jcr:content/par/<paragraph-ID>`
 
-Ad esempio:
+Esempio:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par/similar-products`
 
@@ -585,7 +592,7 @@ Oltre a fare riferimento a un paragrafo specifico, il percorso può essere modif
 
 `/jcr:content/par`
 
-Ad esempio:
+Esempio:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par`
 
@@ -596,7 +603,8 @@ Una volta configurato il contenuto apparirà esattamente come nella pagina sorge
 ### Ricerca {#searching}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Ricerca rapida](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Ricerca rapida](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html).
 
 Il componente Ricerca aggiunge alla pagina le funzionalità di ricerca.
 
@@ -664,7 +672,8 @@ L’esempio seguente mostra un termine di ricerca con errore ortografico e non d
 ### Sitemap {#sitemap}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) instead.
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) instead.
 
 Un elenco automatico di tipo sitemap, con impostazioni predefinite, include tutte le pagine, (sotto forma di collegamenti attivi), presenti nel sito Web corrente. Ad esempio, un estratto mostra quanto segue:
 
@@ -681,7 +690,8 @@ Se necessario è possibile configurare:
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Carosello](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html).
 
 Questo componente permette di caricare una serie di immagini da visualizzare sulla pagina sotto forma di slideshow. Puoi aggiungere o rimuovere immagini e assegnare un titolo a ognuna di esse. In Avanzate è inoltre possibile specificare la dimensione dell’area di visualizzazione.
 
@@ -710,10 +720,12 @@ Quindi, il componente Presentazione visualizza in sequenza ciascuna immagine per
 ### Tabella {#table}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html).
 
 >[!NOTE]
-Il componente di base **Tabella** è basato sull’[editor Rich Text](/help/sites-authoring/rich-text-editor.md), come il componente di base **[Testo](#text)**.
+>
+>Il componente di base **Tabella** è basato sull’[editor Rich Text](/help/sites-authoring/rich-text-editor.md), come il componente di base **[Testo](#text)**.
 
 Il componente **Tabella** è preconfigurato per consentire di generare, compilare e formattare una tabella. Utilizzando la finestra di dialogo puoi configurare la tabella e creare contenuti:
 
@@ -757,10 +769,12 @@ Per ulteriori informazioni sull’applicazione dei tag, consulta [Utilizzo dei t
 ### Testo {#text}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html).
 
 >[!NOTE]
-Il componente di base **Testo** è basato sull’[editor Rich Text](/help/sites-authoring/rich-text-editor.md), come il componente di base **Tabella**.
+>
+>Il componente di base **Testo** è basato sull’[editor Rich Text](/help/sites-authoring/rich-text-editor.md), come il componente di base **Tabella**.
 
 Il componente Testo consente di inserire un blocco di testo utilizzando un editor WYSIWYG, le cui funzionalità sono fornite dall’[Editor Rich Text](/help/sites-authoring/rich-text-editor.md). Sono disponibili varie icone che consentono di formattare il testo, specificando caratteristiche del font, allineamento, collegamenti, elenchi e rientri.
 
@@ -784,7 +798,8 @@ Oltre alla modalità di modifica del testo RTF basata su finestra di dialogo, AE
 ### Testo e immagine {#text-image}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Immagine](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html) e [Testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Immagine](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/components/image.html) e [Testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html).
 
 Il componente Testo e immagine aggiunge un blocco di testo e un’immagine. È inoltre possibile aggiungere testo e immagini separatamente; per maggiori dettagli, vedi i componenti [Testo](#text) e [Immagine](#image).
 
@@ -831,7 +846,8 @@ L’esempio seguente mostra un componente Testo e immagine che mostra l’immagi
 ### Titolo {#title}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Titolo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Titolo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html).
 
 Il componente Titolo può visualizzare uno dei seguenti elementi:
 
@@ -859,7 +875,8 @@ L’esempio seguente mostra un componente **Titolo** visualizzato in base al CSS
 ### Video {#video}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Il componente **Video** consente di inserire un elemento video predefinito, disponibile out-of-the-box, nella pagina.
 
@@ -878,10 +895,12 @@ Dopo aver posizionato un’istanza del componente sulla pagina puoi configurare 
       Le dimensioni native del video (larghezza x altezza, in pixel) vengono riportate nelle caselle accanto a Dimensione (ved. sopra). Per escludere le dimensioni native del video, potete inserire manualmente nuovi valori di larghezza e altezza. Click **OK** to dismiss the dialog.
 
 >[!NOTE]
-Tra i formati supportati:
-* `.mp4`
-* `Ogg`
-* `FLV` (video Flash)
+>
+>Tra i formati supportati:
+>
+>* `.mp4`
+>* `Ogg`
+>* `FLV` (video Flash)
 
 
 ## Columns {#columns}
@@ -913,12 +932,14 @@ Il componente Controllo colonna consente agli utenti di selezionare la modalità
 ## Modulo {#form}
 
 >[!CAUTION]
-Il componente di base per componenti moduli è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Il componente di base per componenti moduli è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 I componenti Modulo permettono di creare dei moduli che i visitatori possono compilare e inviare. I moduli e i componenti modulo consentono di raccogliere informazioni come ad esempio feedback dagli utenti (ad es. mediante un modulo di valutazione del livello di soddisfazione) e informazioni (ad es. mediante un modulo di registrazione utente).
 
 >[!NOTE]
-Consulta [Aiuto moduli AEM](/help/forms/home.md) per informazioni sui moduli AEM.
+>
+>Consulta [Aiuto moduli AEM](/help/forms/home.md) per informazioni sui moduli AEM.
 
 I moduli sono composti di diversi componenti distinti:
 
@@ -939,7 +960,8 @@ Di seguito è visualizzato un modulo di esempio, composto dal componente **Modul
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
-Informazioni sullo sviluppo e sulla personalizzazione ulteriori del moduli sono disponibili sulla [pagina Sviluppo di moduli](/help/sites-developing/developing-forms.md). Sono inclusi, tra gli altri, aggiunta di azioni, vincoli, precaricamento di campi e utilizzo di script per richiamare un servizio per l’esecuzione di un’azione.
+>
+>Informazioni sullo sviluppo e sulla personalizzazione ulteriori del moduli sono disponibili sulla [pagina Sviluppo di moduli](/help/sites-developing/developing-forms.md). Sono inclusi, tra gli altri, aggiunta di azioni, vincoli, precaricamento di campi e utilizzo di script per richiamare un servizio per l’esecuzione di un’azione.
 
 ### Impostazioni comuni a numerosi componenti modulo {#settings-common-to-many-form-components}
 
@@ -964,7 +986,8 @@ Quando si configura un componente modulo, la finestra di dialogo presenta le seg
    Indica la dimensione e lo stile dei campi.
 
 >[!NOTE]
-I campi disponibili variano notevolmente in base al singolo componente.
+>
+>I campi disponibili variano notevolmente in base al singolo componente.
 
 Queste schede forniscono i parametri necessari, che dipendono dal tipo di componente, ma possono includere:
 
@@ -1029,7 +1052,8 @@ Questo campo è obbligatorio e può contenere solo i seguenti caratteri:
 ### Modulo (componente) {#form-component}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Contenitore modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-container.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Contenitore modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-container.html).
 
 Il componente Modulo definisce l’inizio e la fine di un modulo con gli elementi **Inizio modulo** e **Fine modulo**. Questi sono sempre utilizzati in coppia per garantire la corretta definizione del modulo.
 
@@ -1038,7 +1062,8 @@ Il componente Modulo definisce l’inizio e la fine di un modulo con gli element
 Tra l’inizio e la fine di un modulo puoi aggiungere componenti modulo che definiscono i campi di immissione presentati agli utenti.
 
 >[!NOTE]
-Il componente modulo dei componenti di base supporta solo l’uso di altri componenti modulo dei componenti di base (pulsante, testo, nascosto, ecc.). Non è possibile utilizzare dei componenti modulo dei nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”) all’interno di un modulo creato con un precedente componente di base (“foundation”), e viceversa.
+>
+>Il componente modulo dei componenti di base supporta solo l’uso di altri componenti modulo dei componenti di base (pulsante, testo, nascosto, ecc.). Non è possibile utilizzare dei componenti modulo dei nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”) all’interno di un modulo creato con un precedente componente di base (“foundation”), e viceversa.
 
 #### Inizio del modulo {#start-of-form}
 
@@ -1059,7 +1084,7 @@ Questo componente è necessario per definire l’inizio di un nuovo modulo su un
    * **Tipo di azione**
 
       Un modulo richiede un’azione che definisca l’operazione da avviare con i dati inviati dall’utente (simile a action= in HTML). Alcuni richiedono una configurazione ****azione corrispondente.
-Una selezione di tipi di azione è inclusa in un’installazione standard di AEM:
+Una selezione di tipi di azione è inclusa in un&#39;installazione standard AEM:
 
       * **Richiesta account**
       * **Crea contenuto**
@@ -1255,7 +1280,8 @@ Questo indica la fine del modulo. È possibile configurare quanto segue:
 ### Nome account {#account-name}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html).
 
 Consente di inserire un nome account:
 
@@ -1264,7 +1290,8 @@ Consente di inserire un nome account:
 ### Indirizzo {#address}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html).
 
 Consente di inserire un campo di indirizzo internazionale nel seguente formato:
 
@@ -1275,7 +1302,8 @@ Il componente è configurato per l’utilizzo immediato, ma puoi modificare la c
 ### Captcha {#captcha}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Il componente Captcha richiede all’utente di inserire la stringa alfanumerica visualizzata sullo schermo. Con ogni aggiornamento della schermata viene visualizzata una stringa diversa.
 
@@ -1286,7 +1314,8 @@ Puoi configurare vari parametri per questo componente, incluso un messaggio da v
 ### Gruppo di caselle di selezione {#checkbox-group}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Opzioni modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Opzioni modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html).
 
 Una casella di selezione consente di generare un elenco composto di una o più caselle. L’utente potrà selezionare più caselle.
 
@@ -1295,13 +1324,16 @@ Una casella di selezione consente di generare un elenco composto di una o più c
 Puoi specificare vari parametri, inclusi un titolo, una descrizione e il nome dell’elemento. Utilizza i pulsanti + e - per aggiungere o rimuovere elementi, quindi riposizionali mediante le frecce verso l’alto o il basso.
 
 >[!NOTE]
-Utilizzando **Percorso di caricamento elementi** puoi precaricare l’elenco del gruppo di caselle di selezione con i relativi valori.
-Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Utilizzando **Percorso di caricamento elementi** puoi precaricare l’elenco del gruppo di caselle di selezione con i relativi valori.
+>
+>Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Dati carta di credito {#credit-card-details}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Questo consente di includere i campi necessari per inserire i dati della carta di credito. Puoi configurarlo per specificare i tipi di carte accettate e le informazioni richieste (ad esempio, il codice protezione).
 
@@ -1310,7 +1342,8 @@ Questo consente di includere i campi necessari per inserire i dati della carta d
 ### Elenco a discesa {#dropdown-list}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Opzioni modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Opzioni modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html).
 
 Un elenco a discesa può essere configurato per fornire all&#39;utente una serie di valori da selezionare:
 
@@ -1319,38 +1352,46 @@ Un elenco a discesa può essere configurato per fornire all&#39;utente una serie
 Puoi specificare un titolo e le voci incluse nell’elenco. Utilizza i pulsanti + e - per aggiungere o rimuovere le voci, quindi riposizionale mediante le frecce verso l’alto o il basso. Puoi specificare se gli utenti sono autorizzati a selezionare più voci dall’elenco e tutte le voci che dovrebbero essere selezionate automaticamente al primo accesso all’elenco (valori iniziali).
 
 >[!NOTE]
-Utilizzando **Percorso di caricamento elementi** puoi precaricare nell’elenco a discesa i relativi valori.
-Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Utilizzando **Percorso di caricamento elementi** puoi precaricare nell’elenco a discesa i relativi valori.
+>
+>Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Caricamento di file {#file-upload}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Il componente Caricamento file offre all’utente la possibilità di selezionare e caricare un file.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
 >[!NOTE]
-Puoi creare un componente di caricamento personalizzato per caricare i file su un Servlet Sling. Per ulteriori informazioni, consulta [Caricamento dei file in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
+>
+>Puoi creare un componente di caricamento personalizzato per caricare i file su un Servlet Sling. Per ulteriori informazioni, consulta [Caricamento dei file in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
 ### Campo nascosto {#hidden-field}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Nascosto per modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-hidden.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Nascosto per modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-hidden.html).
 
 Questo componente consente di creare un campo nascosto. Questi possono essere utilizzati per vari scopi; ad esempio, quando è necessario eseguire un’azione dopo l’invio del modulo, o quando dati nascosti sono necessari in fase di post-elaborazione.
 
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
-Puoi inoltre personalizzare il modulo in modo da mostrare o nascondere specifici componenti a seconda dei valori di altri campi nel modulo. La modifica della visibilità di un campo modulo è utile se il campo è richiesto solo in presenza di particolari condizioni.
-Consulta [Mostrare e nascondere i componenti di un modulo](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+>
+>Puoi inoltre personalizzare il modulo in modo da mostrare o nascondere specifici componenti a seconda dei valori di altri campi nel modulo. La modifica della visibilità di un campo modulo è utile se il campo è richiesto solo in presenza di particolari condizioni.
+>
+>Consulta [Mostrare e nascondere i componenti di un modulo](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Pulsante immagine {#image-button}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Pulsante modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Pulsante modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html).
 
 Un pulsante immagine consente di creare un pulsante con testo e immagine personalizzati:
 
@@ -1359,7 +1400,8 @@ Un pulsante immagine consente di creare un pulsante con testo e immagine persona
 ### Caricamento immagine {#image-upload}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Il componente Caricamento immagine offre all’utente la possibilità di selezionare e caricare un file immagine.
 
@@ -1368,7 +1410,8 @@ Il componente Caricamento immagine offre all’utente la possibilità di selezio
 ### Campo collegamento {#link-field}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Il componente Campo collegamento permette di specificare un URL:
 
@@ -1379,7 +1422,8 @@ Viene utilizzato frequentemente per il modulo Evento calendario, in cui fornisce
 ### Campo password {#password-field}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Viene utilizzato per consentire all’utente di inserire la propria password:
 
@@ -1388,7 +1432,8 @@ Viene utilizzato per consentire all’utente di inserire la propria password:
 ### Reimpostazione password {#password-reset}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Questo componente fornisce all’utente due campi:
 
@@ -1402,7 +1447,8 @@ Con le impostazioni predefinite, il componente si presenta come segue:
 ### Gruppo pulsanti di scelta {#radio-group}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Opzioni modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Opzioni modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html).
 
 Un gruppo pulsanti di scelta offre un elenco composto di uno o più caselle di selezione. L’utente potrà selezionarne solo uno.
 
@@ -1411,13 +1457,16 @@ Puoi specificare il nome dell’elemento insieme a un titolo e descrizione. Util
 ![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
-Utilizzando **Percorso di caricamento elementi** puoi precaricare il gruppo pulsanti di scelta con i relativi valori.
-Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Utilizzando **Percorso di caricamento elementi** puoi precaricare il gruppo pulsanti di scelta con i relativi valori.
+>
+>Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Pulsante Invia {#submit-button}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Pulsante modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Pulsante modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html).
 
 Questo componente permette di creare un pulsante Invia, con testo predefinito:
 
@@ -1430,7 +1479,8 @@ oppure con testo personalizzato:
 ### Campo tag {#tags-field}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto i nuovi [componenti di base](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) (“core”).
 
 Questo campo consente di selezionare i tag:
 
@@ -1456,7 +1506,8 @@ Puoi specificare vari parametri, compresi i namespace utilizzabili mediante la s
 ### Campo testo {#text-field}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Testo modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html).
 
 Il campo di testo standard può essere configurato con la dimensione richiesta e con un messaggio introduttivo personalizzato:
 
@@ -1465,7 +1516,8 @@ Il campo di testo standard può essere configurato con la dimensione richiesta e
 ### Workflow Submit Button(s) {#workflow-submit-button-s}
 
 >[!CAUTION]
-Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Pulsante modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html).
+>
+>Questo componente di base è stato dichiarato obsoleto. Adobe consiglia di utilizzare al suo posto il nuovo [componente di base Pulsante modulo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html).
 
 Questo consente di creare un pulsante Invia da utilizzare in un flusso di lavoro.
 
