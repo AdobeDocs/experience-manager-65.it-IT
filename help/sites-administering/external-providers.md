@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 4%
 
 ---
 
@@ -54,8 +57,8 @@ Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dat
 
 >[!CAUTION]
 >
->Il sito dimostrativo Geometrixx-Outdoors è configurato in modo che gli attributi forniti in Proprietà pagina vengano aggiunti al codice sorgente HTML (appena sopra il `</html>` tag finale) nello `js` script corrispondente.
-
+>Il sito dimostrativo Geometrixx-esterno è configurato in modo che gli attributi forniti in Proprietà pagina vengano aggiunti al codice sorgente HTML (appena sopra il `</html>` tag endtag) nello `js` script corrispondente.
+>
 >Se `/apps` non si eredita dal componente pagina predefinito ( `/libs/foundation/components/page`), è necessario assicurarsi che gli `js` script corrispondenti siano inclusi, ad esempio includendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizzando un meccanismo simile.
 >
 >Senza questo, nessuno dei servizi (Generico, Analytics, Target, ecc.) funzionerà.
@@ -65,7 +68,7 @@ Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dat
 Per la configurazione di base:
 
 1. Open the **Tools** console.
-1. Nel riquadro a sinistra, espandi **Cloud Services Configurations**.
+1. Nel riquadro a sinistra, espandete Configurazioni **per** Cloud Services.
 1. Fate doppio clic su Snippet di analisi **generici** per aprire la pagina:
 
    ![](assets/analytics_genericoverview.png)
@@ -85,21 +88,22 @@ Per la configurazione di base:
 Dopo aver creato la configurazione del servizio è ora necessario configurare le pagine necessarie per utilizzarla:
 
 1. Passate alla pagina.
-1. Apri le proprietà **di** pagina dalla barra laterale, quindi dalla scheda Servizi **** cloud.
+1. Aprite Proprietà **** pagina dalla barra laterale, quindi dalla scheda **Cloud Services** .
 1. Fate clic su **Aggiungi servizio**, quindi selezionate il servizio richiesto; ad esempio, lo snippet di analisi **generico**:
 
    ![](assets/analytics_selectservice.png)
 
 1. Fate clic su **OK** per salvare. 
-1. Verrai riportato nella scheda Servizi **** cloud. Lo snippet di analisi **generico** è ora elencato con il messaggio `Configuration reference missing`. Utilizzate l&#39;elenco a discesa per selezionare la vostra istanza di servizio specifica; ad esempio google-analytics:
+1. Viene nuovamente visualizzata la scheda **Cloud Services** . Lo snippet di analisi **generico** è ora elencato con il messaggio `Configuration reference missing`. Utilizzate l&#39;elenco a discesa per selezionare la vostra istanza di servizio specifica; ad esempio google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
 1. Fate clic su **OK** per salvare. 
 
-   Lo snippet può essere visualizzato se visualizzate l&#39;origine pagina per la pagina.
+   Lo snippet può ora essere visualizzato se visualizzate l&#39;origine pagina per la pagina.
 
    Una volta trascorso un periodo di tempo adeguato, sarà possibile visualizzare le statistiche raccolte.
 
    >[!NOTE]
-   Se la configurazione è associata a una pagina con pagine figlie, il servizio viene ereditato anche da tali pagine.
+   >
+   >Se la configurazione è associata a una pagina con pagine figlie, il servizio viene ereditato anche da tali pagine.
