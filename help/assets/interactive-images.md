@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '4334'
 ht-degree: 2%
@@ -246,7 +246,7 @@ Consultate [(Facoltativo) Anteprima delle immagini](#optional-previewing-interac
 >[!NOTE]
 >
 >Quando aggiungete punti di attivazione a un’immagine in un’immagine interattiva o in un banner carosello, le informazioni relative ai punti di attivazione vengono memorizzate nella stessa posizione di metadati, relativa alla posizione dell’immagine, indipendentemente dal fatto che si tratti di un’immagine interattiva o di un banner carosello. Questa funzionalità consente di riutilizzare facilmente la stessa immagine, insieme ai dati dei punti di attivazione definiti, in entrambi i visualizzatori.
-
+>
 >Tenete presente, tuttavia, che i banner carosello supportano le mappe immagine sulle immagini che possono anche contenere punti di attivazione; un’immagine interattiva non lo è. Tenete presente questo aspetto se intendete creare un&#39;immagine interattiva o un banner carosello che utilizza la stessa immagine. È possibile creare immagini interattive e banner carosello utilizzando copie separate della stessa immagine.
 >
 >Consultate anche Banner [carosello](/help/assets/carousel-banners.md).
