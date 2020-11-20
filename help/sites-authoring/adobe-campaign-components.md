@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '2854'
+ht-degree: 79%
 
 ---
 
@@ -22,9 +25,9 @@ Al momento dell’integrazione con Adobe Campaign, hai a disposizione componenti
 
 >[!CAUTION]
 >
->I componenti e-mail di AEM non sono più disponibili. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti out-of-the-box da AEM diventano un utilizzo limitato per i clienti, a causa della necessità di implementare stili personalizzati in qualsiasi componente sia necessario per i progetti.
+>I componenti e-mail AEM sono obsoleti. A causa della natura dell’e-mail, che unisce contenuto e stile, i componenti e-mail forniti out-of-the-box AEM diventano un riutilizzo limitato per i clienti, a causa della necessità di implementare stili personalizzati in qualsiasi componente sia necessario per i progetti.
 >
->I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ottenere questo risultato. Tuttavia, questi componenti obsoleti non devono essere utilizzati nei progetti.
+>I componenti e-mail possono essere implementati a livello di progetto, e i componenti e-mail AEM obsoleti illustrano come ottenere questo risultato. Tuttavia, questi componenti obsoleti non devono essere utilizzati per i progetti.
 
 ## Componenti per newsletter di Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -88,9 +91,9 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 >[!NOTE]
 >
 >L’editor locale utilizza le dimensioni e le proporzioni originali dell’immagine durante la modifica. Potete inoltre specificare le proprietà relative a altezza e larghezza. Eventuali limitazioni di dimensioni e proporzioni definite nelle proprietà vengono applicate al salvataggio delle modifiche.
-
->In base all’istanza, le limitazioni minime e massime possono essere imposte anche a partire dalla [progettazione della pagina](/help/sites-developing/designer.md); queste vengono sviluppate durante l’implementazione del progetto.
 >
+>In base all’istanza, le limitazioni minime e massime possono essere imposte anche a partire dalla [progettazione della pagina](/help/sites-developing/designer.md); queste vengono sviluppate durante l’implementazione del progetto.
+
 Diverse opzioni aggiuntive sono disponibili nella modalità di modifica a schermo intero, ad esempio, mappa e zoom: 
 
 ![](do-not-localize/chlimage_1-11.png)
@@ -117,8 +120,10 @@ Quando carichi un’immagine, puoi configurare le opzioni seguenti:
 * **Dimensioni** Consente di impostare l’altezza e la larghezza dell’immagine.
 
 >[!NOTE]
-Immetti le informazioni nel campo **Testo Alt** della scheda **Avanzate**. In caso contrario l’immagine non verrà salvata e verrà visualizzato il seguente messaggio di errore:
-`Validation failed. Verify the values of the marked fields.`
+>
+>Immetti le informazioni nel campo **Testo Alt** della scheda **Avanzate**. In caso contrario l’immagine non verrà salvata e verrà visualizzato il seguente messaggio di errore:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 Il seguente esempio mostra come viene visualizzato il componente Immagine (Campaign).
@@ -135,13 +140,16 @@ Puoi configurare le seguenti operazioni nelle schede **Visualizzazione**, **Info
 
 * **Descrizione collegamento** Ulteriori informazioni su come utilizzare il collegamento.
 
-* **Tipo di collegamento** Nell&#39;elenco a discesa, seleziona **URL personalizzato** o **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
+* **LinkType** Nell&#39;elenco a discesa, seleziona tra 
+**URL** personalizzato e un documento **** adattivo. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo** Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere altri elementi.
 
 >[!NOTE]
-You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
-`Validation failed. Verify the values of the marked fields.`
+>
+>You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 I seguenti esempi mostrano come viene visualizzato un componente Collegamento (Campaign).
@@ -150,7 +158,7 @@ I seguenti esempi mostrano come viene visualizzato un componente Collegamento (C
 
 ### Modello immagini Scene7 (Campaign) {#scene-image-template-campaign}
 
-[I modelli](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) immagine di Scene7 sono file immagine con più livelli, con i quali è possibile parametrizzare contenuto e proprietà per la variabilità. Il componente **Modello immagini** consente di utilizzare i modelli di Scene7 all&#39;interno delle newsletter e modificare i valori dei parametri di modello. Inoltre, puoi utilizzare le variabili di metadati Adobe Campaign all&#39;interno dei parametri, in modo che ogni utente possa vedere l&#39;immagine in modo personalizzato.
+[I modelli](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) immagine di Scene7 sono file immagine a più livelli, con contenuti e proprietà parametrizzabili per la variabilità. Il componente **Modello immagini** consente di utilizzare i modelli di Scene7 all&#39;interno delle newsletter e modificare i valori dei parametri di modello. Inoltre, potete utilizzare  variabili di metadati Adobe Campaign all&#39;interno dei parametri, in modo che ogni utente possa vedere l&#39;immagine in modo personalizzato.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -206,8 +214,10 @@ Come per i componenti di Testo e personalizzazione (Campaign) e Immagine (Campai
    * **Dimensioni** Imposta l’altezza e la larghezza dell’immagine.
 
 >[!NOTE]
-Il campo **Testo Alt** nella scheda **Avanzate** è obbligatorio; se non viene fornito, il componente non verrò salvato e viene visualizzato il seguente messaggio di errore:
-`Validation failed. Verify the values of the marked fields.`
+>
+>Il campo **Testo Alt** nella scheda **Avanzate** è obbligatorio; se non viene fornito, il componente non verrò salvato e viene visualizzato il seguente messaggio di errore:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 I seguenti esempi mostrano un componente Testo e immagine (Campaign) che viene visualizzato.
@@ -225,15 +235,19 @@ Le varie icone consentono di formattare il testo con font, allineamento, collega
 Nell’editor interno è possibile aggiungere testo, modificare la giustificazione, aggiungere e rimuovere collegamenti, aggiungere campi contestuali o blocchi di personalizzazione ed entrare in modalità a schermo intero. Una volta finito di aggiungere testo/personalizzare, seleziona il segno di spunta per salvare le modifiche (oppure x per annullare). See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
 
 >[!NOTE]
-* I campi disponibili dipendono dal modello di Adobe Campaign a cui la newsletter è collegata.
-* Dopo aver selezionato una persona da ContextHub, i campi di personalizzazione vengono automaticamente sostituiti dai dati del profilo selezionato.
+>
+>* I campi disponibili dipendono dal modello di Adobe Campaign a cui la newsletter è collegata.
+>* Dopo aver selezionato una persona da ContextHub, i campi di personalizzazione vengono automaticamente sostituiti dai dati del profilo selezionato.
 
+>
+>
 Consulta [Inserimento di personalizzazioni](/help/sites-authoring/campaign.md#inserting-personalization).
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
-Vengono presi in considerazione solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi di tabelle collegate a **nms:seedMember** non sono disponibili.
+>
+>Vengono presi in considerazione solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi di tabelle collegate a **nms:seedMember** non sono disponibili.
 
 ## Componenti per i moduli di Adobe Campaign {#adobe-campaign-form-components}
 
@@ -267,7 +281,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
  <tbody>
   <tr>
    <td><p><strong>Componente</strong></p> </td>
-   <td><p><strong>Tipo di dati del campo Adobe Campaign</strong></p> </td>
+   <td><p><strong>Tipo di dati  campo Adobe Campaign</strong></p> </td>
    <td><p><strong>Esempio di campo</strong></p> </td>
   </tr>
   <tr>
@@ -406,7 +420,7 @@ Usa il campo numerico per consentire ai destinatari di immettere numeri, ad esem
 
 Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
 
-* **Vincoli - Vincolo** a discesaÈ possibile selezionare - **Nessuno** o **Numerico -** per aggiungere il vincolo di un numero o nessun vincolo. Se si seleziona un numero, la risposta che gli utenti immettono nel campo deve essere numerica.
+* **Vincoli - Vincolo** a discesaÈ possibile selezionare - **Nessuno** o **Numerico -** per aggiungere il vincolo di un numero o di nessun vincolo. Se si seleziona un numero, la risposta che gli utenti immettono nel campo deve essere numerica.
 
 * **Messaggio vincolo** Puoi aggiungere un messaggio che spieghi agli utenti come formattare correttamente le risposte.
 * **Attribuzione stile - Larghezza** Consente di regolare la larghezza del campo toccando o facendo clic sulle icone **+** e **+** oppure immettendo un numero.
@@ -434,7 +448,8 @@ Usa il componente **Lista di controllo delle iscrizioni (Campaign)** per modific
 Una volta aggiunto a un modulo, questo componente mostra tutte le iscrizioni disponibili come caselle di controllo e consente all’utente di selezionare quelle desiderate. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
 
 >[!NOTE]
-Il componente non controlla a quali servizi l’utente è già iscritto o meno.
+>
+>Il componente non controlla a quali servizi l’utente è già iscritto o meno.
 
 Puoi [configurare le impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components) nel componente Lista di controllo delle iscrizioni (Campaign). Non sono disponibili configurazioni di Adobe Campaign per questo componente.
 
