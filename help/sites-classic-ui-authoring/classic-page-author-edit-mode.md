@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '6169'
+ht-degree: 86%
 
 ---
 
@@ -149,7 +152,8 @@ Sono disponibili in due schede:
          * **Pagina padre** Consente di specificare il percorso manualmente o utilizzando il selettore. Non specificare nulla per utilizzare la pagina corrente come pagina padre.
       * **Opzioni per elenco fisso**
 
-         * **Pagine** Selezionare un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
+         * **Pagine** Selezionare un elenco di pagine. Use 
+`+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
       * **Opzioni per la ricerca**
 
          * **Inizia in** Consente di immettere un percorso di inizio, manualmente o utilizzando il selettore.
@@ -158,7 +162,8 @@ Sono disponibili in due schede:
       * **Opzioni di ricerca avanzata**
 
          * **Notazione predicato QueryBuilder** Consente di inserire una query di ricerca utilizzando la notazione del predicato QueryBuilder. Ad esempio, è possibile inserire “fulltext=Marketing” per visualizzare nel Carosello tutte le pagine il cui contenuto include “Marketing”. Consulta [API di QueryBuilder](/help/sites-developing/querybuilder-api.md) per una descrizione approfondita delle espressioni di query e per altri esempi.
-   * **Ordina per** Seleziona `jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` dal menu a discesa.
+   * **Ordina per** selezione 
+`jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` dal menu a discesa.
 
    * **Limite** Il numero massimo di voci da utilizzare nel Carosello, facoltativo.
 
@@ -200,7 +205,7 @@ Puoi creare un controllo per grafici AEM personalizzato per la visualizzazione d
 La funzionalità completa di gestione dei frammenti di contenuto è disponibile solo nell’interfaccia touch.
 Il componente Frammento di contenuto è visibile anche nella barra laterale dell’interfaccia classica, ma senza ulteriori funzioni.
 
-I [frammenti di contenuto](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) vengono creati e gestiti come risorse indipendenti dalla pagina. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante la creazione di pagine di contenuto.
+I [frammenti di contenuto](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) vengono creati e gestiti come risorse indipendenti dalla pagina. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 ### Importazione progettazione {#design-importer}
 
@@ -302,8 +307,7 @@ Puoi trascinare un’immagine da [Content Finder](/help/sites-classic-ui-authori
 >[!NOTE]
 In Internet Explorer non è possibile monitorare l’avanzamento del caricamento.
 Se si utilizza Internet Explorer è necessario caricare l’immagine e fare clic su **OK**, quindi riaprire l’immagine per vedere il file caricato nell’anteprima e per eseguire eventuali modifiche (ad es. ritagliare l’immagine).
-
->See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 Quando carichi un’immagine, puoi configurare le opzioni seguenti:
 
@@ -474,7 +478,7 @@ Puoi configurare i parametri seguenti:
 
    * **Tipo/Dimensione**
 
-      Selezionare dalla selezione fornita.
+      Selezionare tra le opzioni disponibili.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -740,7 +744,7 @@ L’esempio seguente mostra un componente **Titolo** visualizzato in base al CSS
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### Il video {#video}
+### Video {#video}
 
 Il componente **Video** consente di inserire un elemento video predefinito, disponibile out-of-the-box, nella pagina.
 
@@ -933,7 +937,7 @@ Questo componente è necessario per definire l’inizio di un nuovo modulo su un
 
       Un modulo richiede un’azione che definisca l’operazione da avviare con i dati inviati dall’utente (simile a action= in HTML). Alcuni richiedono una configurazione **** azione corrispondente.
 
-      Una selezione di tipi di azione è inclusa in un’installazione standard di AEM:
+      Una selezione di tipi di azione è inclusa in un&#39;installazione standard AEM:
 
       * **Richiesta account**
       * **Crea contenuto**
@@ -1170,7 +1174,7 @@ Puoi specificare un titolo e le voci incluse nell’elenco. Utilizza i pulsanti 
 Utilizzando **Percorso di caricamento elementi** puoi precaricare nell’elenco a discesa i relativi valori.
 Consulta [Precaricamento dei campi modulo con più valori](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Caricamento file {#file-upload}
+### Caricamento di file {#file-upload}
 
 Il componente Caricamento file offre all’utente la possibilità di selezionare e caricare un file.
 
