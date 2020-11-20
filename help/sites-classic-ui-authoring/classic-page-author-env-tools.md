@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 88%
 
 ---
 
 
 # Ambiente e strumenti di authoring {#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti disponibili sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Amministrazione del sito {#site-administration}
 
@@ -161,7 +164,7 @@ Per visualizzare i riferimenti diretti alle pagine:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Seleziona** Mostra riferimenti... AEM apre la finestra Riferimenti e mostra le pagine che fanno riferimento alla pagina selezionata, inclusi i relativi percorsi.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +187,7 @@ Il **Registro di controllo** è accessibile dalla scheda **Informazioni** della 
 
 The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
 
-## Modalità pagina {#page-modes}
+## Modalità pagina   {#page-modes}
 
 Quando modificate una pagina nell’interfaccia classica, potete accedere a diverse modalità mediante le icone che si trovano nella parte inferiore della barra laterale:
 
@@ -201,12 +204,11 @@ La serie di icone visualizzata nella parte inferiore della barra laterale consen
 >[!NOTE]
 >
 >Sono inoltre disponibili altre opzioni:
-
+>
 >* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
-* Siti web, per aprire la console Siti web.
-* Ricarica, per aggiornare la visualizzazione della pagina.
-
+>* Siti web, per aprire la console Siti web.
+>* Ricarica, per aggiornare la visualizzazione della pagina.
 
 
 ## Scelte rapide da tastiera {#keyboard-shortcuts}
