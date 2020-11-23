@@ -1,5 +1,5 @@
 ---
-ttitle: Administering generic eCommerce
+title: Amministrazione di eCommerce generico
 seo-title: Amministrazione di eCommerce generico
 description: La soluzione AEM generica fornisce metodi per la gestione delle informazioni commerciali contenute nel repository.
 seo-description: La soluzione AEM generica fornisce metodi per la gestione delle informazioni commerciali contenute nel repository.
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 06d6696a5493f0e166e400bcd9a379b7be062c1e
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3011'
 ht-degree: 5%
 
 ---
@@ -356,7 +356,7 @@ L&#39;integrazione del Search&amp;Promote consente di:
 
 Per ulteriori informazioni, consultate Feed [](/help/sites-administering/product-feed.md)prodotto.
 
-### Gestore eventi per gli aggiornamenti di prodotto {#event-handler-for-product-updates}
+### Gestore eventi per aggiornamenti prodotti {#event-handler-for-product-updates}
 
 Esiste un gestore eventi che registra un evento quando un prodotto viene aggiunto, modificato o eliminato e quando una pagina di prodotto viene aggiunta, modificata o eliminata. Esistono i seguenti eventi OSGi:
 
@@ -488,9 +488,9 @@ Per generare un catalogo:
 >
 >Il catalogo farà riferimento ai Dati [](#products-and-product-variants)prodotto.
 
-1. Utilizzando la console Siti **Web** , passate alla Blueprint **del** catalogo e quindi al Catalogo di base.
+1. Utilizzando la console Siti **Web** , accedete alla Blueprint **del** catalogo e quindi al Catalogo di base.
 
-   Ad esempio:
+   Esempio:
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
@@ -536,7 +536,7 @@ Per eseguire il rollout di un catalogo:
 
 Per eseguire il rollout di un catalogo:
 
-1. Individuate il catalogo da rollout. Ad esempio:
+1. Individuate il catalogo da rollout. Esempio:
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
@@ -564,7 +564,7 @@ Per eseguire il rollout di un catalogo:
 
 1. Dalla console **Strumenti** , passa a **Commerce**.
 
-   Ad esempio:
+   Esempio:
 
    `http://localhost:4502/miscadmin#/etc/commerce`
 
