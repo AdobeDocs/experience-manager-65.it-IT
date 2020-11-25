@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2743'
 ht-degree: 4%
 
 ---
@@ -123,7 +123,11 @@ Effettuando l&#39;accesso ad [Adobe Experience Cloud](https://docs.adobe.com/con
 
 Se utilizzate una **nuova suite** di rapporti, tenete presente che una nuova suite di rapporti può contenere solo 4 variabili evar e 6 eventi, mentre per le community sono richieste 11 variabili evar e 7 variabili evento.
 
-Se utilizzi una suite **di rapporti** esistente, potrebbe essere necessario [modificare la mappatura](#modifying-analytics-variable-mapping) delle variabili prima di attivare il framework Analytics per un sito community. Contatta il tuo rappresentante commerciale per qualsiasi dubbio sulle variabili dedicate alle Community.
+Se utilizzi una suite **di rapporti** esistente, potrebbe essere necessario [modificare la mappatura](#modifying-analytics-variable-mapping) delle variabili prima di attivare il framework Analytics per un sito community.
+
+<!--
+Contact your account representative for any concerns regarding the variables dedicated to Communities.
+-->
 
 >[!CAUTION]
 >
@@ -241,7 +245,6 @@ Per salvare le impostazioni:
 
       * Verificare che le voci non contengano spazi iniziali.
       * Prova a utilizzare un datacenter diverso.
-      * Contattate il rappresentante commerciale di riferimento.
 
 * Selezionare **OK**.
 
