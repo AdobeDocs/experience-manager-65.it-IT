@@ -3,9 +3,9 @@ title: Utilizzare la funzione Risorse collegate per condividere risorse DAM in [
 description: Utilizzate le risorse disponibili in una distribuzione [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 916b49572981115f6178c04f260ce63bcfc6d054
+source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2263'
 ht-degree: 41%
 
 ---
@@ -19,7 +19,7 @@ Gli utenti possono creare pagine Web in [!DNL Experience Manager Sites]. [!DNL E
 
 ## Panoramica della funzione Risorse collegate {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. Gli amministratori creano un&#39;integrazione una tantum di una distribuzione [!DNL Sites] con una distribuzione diversa (remota) di [!DNL Assets].
+Quando modificate le pagine in Editor  pagina come destinazione, gli autori possono cercare, sfogliare e incorporare facilmente le risorse da una diversa [!DNL Assets] distribuzione che funge da origine delle risorse. Gli amministratori creano un&#39;integrazione una tantum di una distribuzione di [!DNL Experience Manager] funzionalità con un&#39;altra implementazione di [!DNL Sites] funzionalità [!DNL Experience Manager] [!DNL Assets] .
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Questa funzionalità supporta la ricerca e l’utilizzo di un numero limitato di risorse remote alla volta. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulta [guida](/help/assets/assets-migration-guide.md)alla migrazione delle risorse di Experience Manager.
 
