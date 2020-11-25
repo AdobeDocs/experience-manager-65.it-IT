@@ -3,9 +3,9 @@ title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati [!DNL Assets] and [!DNL Dynamic Media] da e funzionalità supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c2c0f38d0c8e403264db05064d4423ef46880d9a
+source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1615'
 ht-degree: 10%
 
 ---
@@ -237,7 +237,7 @@ I formati di archivio supportati e l&#39;applicabilità dei flussi di lavoro DAM
 
 ## Altri formati supportati {#other-supported-formats}
 
-Per molti formati di file sono supportate le consuete funzionalità DAM come archiviazione, controllo delle versioni, ACL, flusso di lavoro, pubblicazione e gestione dei metadati, ad eccezione [!DNL Dynamic Media] della distribuzione. Di seguito viene descritta l’applicabilità delle funzionalità per alcuni formati di file specifici.
+Di seguito viene descritta l’applicabilità delle consuete funzionalità DAM per alcuni formati di file specifici.
 
 | Formati | Archiviazione | Gestione versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna di contenuti multimediali dinamici |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
