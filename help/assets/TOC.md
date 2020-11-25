@@ -7,9 +7,9 @@ user-guide-title: Guida ad Assets
 breadcrumb-title: Guida ad Assets
 user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digitali.
 translation-type: tm+mt
-source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
+source-git-commit: 3443fe49e7eacbdacf7d21077f920d38b34daeae
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '588'
 ht-degree: 39%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 39%
    + [Configurazione di Dynamic Media - Modalità Scene7](config-dms7.md)
    + [Configurazione di Dynamic Media - Modalità ibrida](config-dynamic.md)
    + [Risoluzione dei problemi relativi ai contenuti multimediali dinamici - Modalità Scene7](troubleshoot-dms7.md)
+   + [Funzioni di accessibilità in [!DNL Dynamic Media]](accessibility-dm.md)
    + [Migrazione da Dynamic Media - Modalità ibrida a Dynamic Media - Modalità S7](migrate-from-hybrid-to-dms7.md)
    + [Gestione delle risorse Dynamic Media](managing-assets.md)
    + [Best practice per ottimizzare la qualità delle immagini](best-practices-for-optimizing-the-quality-of-your-images.md)
