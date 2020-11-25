@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3796'
 ht-degree: 5%
 
 ---
@@ -139,7 +139,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 [!DNL Adobe Experience Manager] 6.5.7.0 [!DNL Assets] risolve i seguenti problemi e fornisce i seguenti miglioramenti.
 
-* I seguenti miglioramenti sono stati apportati per l&#39;accessibilità in [!DNL Experience Manager Assets]:
+* I seguenti miglioramenti sono stati apportati per l&#39;accessibilità in questa [!DNL Experience Manager Assets] versione. Per ulteriori informazioni, vedere Funzioni di [accessibilità in [!DNL Assets]](/help/assets/accessibility.md).
 
    * Quando si naviga nella timeline utilizzando una tastiera, il `Esc` tasto può comprimere l&#39;opzione [!UICONTROL Mostra tutto] senza perdere lo stato attivo (CQ-4293598).
    * Quando si naviga utilizzando il tasto di tabulazione della tastiera, dopo aver rimosso l&#39;ultimo tag dai tag aggiunti, il campo del tag rimane attivo (NPR-35109).
@@ -193,7 +193,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* I seguenti miglioramenti principali sono stati apportati per l&#39;accessibilità in [!DNL Dynamic Media] (CQ-4290306). Per informazioni dettagliate, consultate Funzioni di accessibilità in [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* I seguenti miglioramenti sono stati apportati per l&#39;accessibilità in [!DNL Dynamic Media] (CQ-4290306). Per informazioni dettagliate, consultate Funzioni di [accessibilità in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
    * Gli assistenti vocali (JAWS, Assistente vocale) indicano il nome, il ruolo e lo stato delle voci di menu nell&#39;opzione di menu Incorpora dimensioni (CQ-4290927).
    * Gli utenti possono passare alla finestra di dialogo del collegamento E-mail utilizzando la `Tab` chiave (CQ-4290926).
