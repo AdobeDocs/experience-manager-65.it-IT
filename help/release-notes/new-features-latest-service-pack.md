@@ -4,9 +4,9 @@ description: Novità in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -32,9 +32,9 @@ In questo articolo vengono evidenziate le funzioni incluse nell&#39;ultimo Servi
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Gli utenti possono ordinare le risorse digitali nelle viste a schede e a colonne.
+* [!DNL Assets] e [!DNL Dynamic Media] fornire diversi miglioramenti a livello di accessibilità. I miglioramenti riguardano la navigazione tramite tastiera, l&#39;uso di assistenti vocali, miglioramenti simili per consentire l&#39;uso di tecnologie di assistenza (AT). Consultate [[!DNL Assets] Miglioramenti](/help/release-notes/sp-release-notes.md#assets-6570) e [[!DNL Dynamic Media] miglioramenti](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
 
-* [!DNL Assets] e [!DNL Dynamic Media] fornire diversi miglioramenti a livello di accessibilità. I miglioramenti riguardano la navigazione tramite tastiera, l&#39;uso di assistenti vocali, miglioramenti simili per consentire l&#39;uso di tecnologie di assistenza (AT). Consulta Miglioramenti [e](/help/release-notes/sp-release-notes.md#assets-6570) miglioramenti [[!DNL Dynamic Media] ](/help/release-notes/sp-release-notes.md#dynamic-media-6570)per le risorse. <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
+* Gli utenti possono ordinare le risorse digitali nelle viste a schede e a colonne.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -294,7 +294,7 @@ La nuova opzione Controllo amministratore consente agli amministratori di:
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione.
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o `workflow-administrators` . Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
+L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo. Per ulteriori informazioni su questa funzione, vedere [Casella in entrata](../sites-authoring/inbox.md).
 
 #### Supporto di testo RTF nei moduli HTML5 (6.5.4.0) {#rich-text-support}
 
