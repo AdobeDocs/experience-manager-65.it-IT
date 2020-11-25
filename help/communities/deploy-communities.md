@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1898'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## Elenco di controllo dell&#39;installazione {#installation-checklist}
 
-**Per la piattaforma[AEM](/help/sites-deploying/deploy.md#what-is-aem)**
+**Per la piattaforma [AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
 * Installa gli ultimi aggiornamenti [AEM 6.5](#aem64updates)
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 * [Replicare la chiave di crittografia](#replicate-the-crypto-key)
 * Se supporta la globalizzazione, [imposta la traduzione](/help/sites-administering/translation.md)automatica (è disponibile l&#39;impostazione di esempio per lo sviluppo)
 
-**Per la funzionalità[Community](/help/communities/overview.md)**
+**Per la funzionalità [Community](/help/communities/overview.md)**
 
 * Se distribuite una farm [di](/help/sites-deploying/recommended-deploys.md#tarmk-farm)pubblicazione, [identificate l&#39;editore principale](#primary-publisher)
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.5 Communities GA navi con il pacchetto Community. Per informazioni sugli aggiornamenti di AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), consulta [AEM Note](/help/release-notes/release-notes.md#communities-release-notes.html)sulla versione 6.5.
+AEM 6.5 Communities GA include il pacchetto Community. Per informazioni sugli aggiornamenti di AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), consulta [AEM Note](/help/release-notes/release-notes.md#communities-release-notes.html)sulla versione 6.5.
 
 ### Aggiornamenti di AEM 6.5 {#aem-updates}
 
@@ -122,7 +122,7 @@ Le misure necessarie sono:
    * Ad esempio, https://localhost:4502/system/console/bundles
    * Seleziona **`Install/Update`**
    * Sfoglia... per selezionare il bundle estratto dall&#39;archivio ZIP scaricato
-   * Verificare che il driver JDBC di *Oracle Corporation per MySQLcom.mysql.jdbc* sia attivo e avviarlo in caso contrario (o controllare i registri)
+   * Verificare che *il driver JDBC di Oracle Corporation per MySQLcom.mysql.jdbc* sia attivo e avviarlo in caso contrario (o controllare i registri)
 
 1. Se l&#39;installazione avviene su una distribuzione esistente dopo la configurazione di JDBC, eseguire un nuovo riferimento JDBC al nuovo connettore salvando nuovamente la configurazione JDBC dalla console Web:
    * Ad esempio, https://localhost:4502/system/console/configMgr
