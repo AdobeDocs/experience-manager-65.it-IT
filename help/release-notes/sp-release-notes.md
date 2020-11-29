@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
+source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3789'
 ht-degree: 5%
 
 ---
@@ -145,7 +145,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
    * Quando si naviga utilizzando il tasto di tabulazione della tastiera, dopo aver rimosso l&#39;ultimo tag dai tag aggiunti, il campo del tag rimane attivo (NPR-35109).
    * [!DNL Experience Manager] i componenti ora contengono informazioni appropriate per nome, ruolo e valore che devono essere utilizzati dagli assistenti vocali (NPR-34255).
    * Dopo aver eliminato la casella combinata Tipo/Dimensione, Collegamento, Lingua o Testo, lo stato attivo torna agli elementi dell&#39;interfaccia utente successivi o precedenti o a un elemento dell&#39;interfaccia utente più rilevante (CQ-4293585).
-   * Quando si passa il puntatore del mouse su diverse opzioni, vengono visualizzati i suggerimenti come Seleziona e Scarica. Gli utenti che utilizzano l&#39;ingrandimento dello schermo potrebbero avere difficoltà a visualizzare le miniature dei file a causa del contenuto visualizzato a causa del passaggio del mouse. Ora è possibile mantenere lo stato attivo, dopo aver rimosso l&#39;opzione utilizzando un `Escape` tasto (CQ-4293554).
+   * Quando si passa il puntatore sulle opzioni, vengono visualizzati suggerimenti come Seleziona e Scarica. Gli utenti che utilizzano una lente di ingrandimento dello schermo potrebbero non visualizzare le miniature dei file a causa di questi suggerimenti. Ora, è possibile mantenere lo stato attivo, dopo aver rimosso l&#39;opzione utilizzando `Escape` key. (CQ-4293554).
    * Selezionando una cella della griglia presente nella pagina, lo stato attivo si sposta sulla barra delle azioni visualizzata sullo schermo (CQ-4282127).
    * Gli utenti visivi possono distinguere tra testo normale e collegamento, in quanto vengono visualizzati indizi visivi (sottolineatura e icona a forma di freccia) per i collegamenti a tutte le soluzioni nella pagina [!DNL Experience Manager] principale (CQ-4282072).
 
@@ -405,7 +405,7 @@ Verifica se utilizzi una funzione o una funzionalità in una distribuzione. Pian
 
 | Area | Funzione obsoleta | Sostituzione |
 |---|---|---|
-| Integrations (Integrazioni) | La schermata di consenso dei servizi **[!UICONTROL AEM Cloud non è più disponibile]** . Con l&#39;integrazione AEM e Target aggiornata in AEM 6.5 per supportare l&#39;API di Target Standard, che utilizza l&#39;autenticazione tramite  IMS Adobe e I/O, e il ruolo crescente di  lancio del Adobe per strumentalizzare AEM pagine per l&#39;analisi e la personalizzazione, la procedura guidata di consenso è diventata funzionale e irrilevante. | Configurate le connessioni di sistema, l&#39;autenticazione  Adobe IMS e le integrazioni di I/O  Adobe tramite i rispettivi servizi cloud AEM. |
+| Integrations (Integrazioni) | La schermata di consenso dei servizi **[!UICONTROL AEM Cloud non è più disponibile]** . Con l&#39;integrazione AEM e Target aggiornata in AEM 6.5 per supportare l&#39;API di Target Standard, che utilizza l&#39;autenticazione tramite  IMS Adobe e I/O, e il ruolo crescente di  lancio del Adobe per strumentalizzare AEM pagine per l&#39;analisi e la personalizzazione, la procedura guidata di consenso è diventata funzionale e irrilevante. | Configurare le connessioni di sistema,  autenticazione IMS di Adobe e  integrazioni Adobe I/O tramite i rispettivi servizi cloud AEM. |
 | Connettori | Il connettore JCR  Adobe per Microsoft SharePoint 2010 e Microsoft SharePoint 2013 non è più supportato per AEM 6.5. | N/D |
 
 ## Problemi noti {#known-issues}
