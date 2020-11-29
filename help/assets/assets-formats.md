@@ -3,9 +3,9 @@ title: Formati di file supportati e tipi MIME
 description: Formati di file e tipi MIME supportati [!DNL Assets] and [!DNL Dynamic Media] da e funzionalità supportate per ciascun formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
+source-git-commit: eaff176bf3ffc197607b8eb39b15c1e945927f8e
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1639'
 ht-degree: 10%
 
 ---
@@ -246,6 +246,10 @@ Di seguito viene descritta l’applicabilità delle consuete funzionalità DAM p
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (se configurato con un proprio dominio di consegna) | − | − | − | − | − | ✓ |
+
+>[!NOTE]
+>
+>Il caricamento e la distribuzione di file JavaScript potrebbe non essere sicuro. Se necessario, le sovrapposizioni possono essere utilizzate per impedire agli utenti di caricare file JS.
 
 ## Supported MIME types {#supported-mime-types}
 
