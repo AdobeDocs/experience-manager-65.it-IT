@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Note sulla versione del Service Pack
 description: Note sulla versione per [!DNL Adobe Experience Manager] i Service Pack 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 62a04c1d9f62a5a5fa6f97f415015001daa94747
+source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
 workflow-type: tm+mt
-source-wordcount: '14760'
+source-wordcount: '14804'
 ht-degree: 20%
 
 ---
@@ -327,6 +327,8 @@ Dopo l&#39;installazione del pacchetto del componente aggiuntivo [!DNL Experienc
 
 * Quando si apre la configurazione del campo per la prima volta, l&#39;icona delle proprietà non viene visualizzata (CQ-4296284).
 
+* Quando si invia un modulo adattivo, gli utenti possono modificare i metadati di invio, ad esempio `afPath`, `afSubmissionTime` e `signers`. Per risolvere il problema, i valori dei metadati vengono rimossi dai dati di invio del modulo sul lato client. Gli utenti possono utilizzare l&#39; `FormSubmitInfo` oggetto per recuperare questi valori dal server (NPR-33654).
+
 **Flusso di lavoro**
 
 * Quando un approvatore di workflow carica un allegato, l&#39;allegato viene rinominato in `undefined` (NPR-33699).
@@ -618,7 +620,7 @@ Di seguito è riportato l&#39;elenco delle correzioni fornite nella release [!DN
 * La cache interna viene cancellata quando viene pubblicata una pagina con un componente Adobe Target  (NPR-33162).
 * L&#39;integrazione con  Adobe Target non funziona sulla versione [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Durante la configurazione  Adobe Target, i campi [!UICONTROL Società] e Suite [!UICONTROL di] rapporti non vengono visualizzati quando si seleziona un&#39;origine di reporting (NPR-32502).
-* Durante l&#39;esportazione [!DNL Experience Fragments] con  I/O Adobe, i metadati come Prodotto sorgente non vengono esportati in  Adobe Target (NPR-32159).
+* Durante l&#39;esportazione [!DNL Experience Fragments] con  Adobe I/O, i metadati come Prodotto sorgente non vengono esportati in  Adobe Target (NPR-32159).
 * Gli utenti IMS autorizzati nel gruppo di amministrazione  Experience Manager locale non possono creare o modificare configurazioni IMS (NPR-33045).
 *  pagina Configurazioni lancio Adobe non visualizza tutti i record (NPR-33011).
 * Gli utenti del gruppo di autori di contenuti non possono modificare le proprietà di un componente Adobe Target  a causa di un errore JavaScript (NPR-32996).
@@ -689,7 +691,7 @@ Adobe Experience Manager 6.5.4.0 è un aggiornamento importante che include nuov
 
 Alcune funzioni chiave e miglioramenti introdotti in Adobe Experience Manager 6.5.4.0 includono:
 
-* Adobe Experience Manager Assets è ora configurato con Brand Portal tramite  console I/O Adobe.
+* Adobe Experience Manager Assets è ora configurato con Brand Portal tramite  Adobe I/O Console.
 
 * È ora disponibile un nuovo passaggio [Genera output](../forms/using/aem-forms-workflow-step-reference.md) stampabile per  flussi di lavoro Adobe Experience Manager Forms.
 
@@ -853,7 +855,7 @@ Per un elenco completo delle funzioni e delle caratteristiche principali introdo
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Gli utenti di Brand Portal non sono in grado di pubblicare le risorse delle cartelle dei contributi [!DNL Assets] in caso di aggiornamento a  I/O Adobe all&#39;Experience Manager 6.5.4 (CQDOC-15655). Per una correzione immediata all&#39; Experience Manager 6.5.4, si consiglia di [scaricare l&#39;hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e installarlo nell&#39;istanza di creazione.
+* Gli utenti di Brand Portal non sono in grado di pubblicare le risorse delle cartelle dei contributi [!DNL Assets] in caso di aggiornamento ad  Adobe I/O all’Experience Manager 6.5.4 (CQDOC-15655). Per una correzione immediata all&#39; Experience Manager 6.5.4, si consiglia di [scaricare l&#39;hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e installarlo nell&#39;istanza di creazione.
 
 * I valori popup dello schema di metadati non sono visibili nelle proprietà delle risorse (CQ-4283287).
 
