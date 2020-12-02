@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 5%
 
 ---
 
@@ -46,9 +49,9 @@ Durante l&#39;anteprima di una lettera, l&#39;errore &quot;Errore durante il car
 
 Ripristinare la cache delle lettere nell’istanza di pubblicazione seguendo la procedura seguente, quindi riprovare a visualizzare la lettera:
 
-1. Accedete a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e accedete come Amministratore.
-1. Selezionate Configurazioni **di gestione della corrispondenza**.
-1. In Configurazioni **di gestione della** corrispondenza, disattivate **Abilita cache lettere** e fate clic **su Salva.**
-1. Abilita **Abilita cache** lettere e fai clic su **Salva**.
+1. Vai a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** ed effettua l&#39;accesso come Amministratore.
+1. Selezionare **Configurazioni di gestione della corrispondenza**.
+1. In **Configurazioni di gestione della corrispondenza**, disabilitare **Abilita cache lettere** e quindi fare clic su **Salva.**
+1. Attivare **Abilita cache lettere**, quindi fare clic su **Salva**.
 1. Riprova a visualizzare la lettera.
 
