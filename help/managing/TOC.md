@@ -17,7 +17,7 @@ ht-degree: 62%
 # Guida utente alla gestione di AEM 6.5 {#managing}
 
 + [Gestione della Guida utente](home.md)
-+ Gestione - Elenco di controllo Best practice {#managing-best-practices-checklist}
++ Gestione - Elenco di controllo Best Practices {#managing-best-practices-checklist}
    + [Gestione dei progetti - Elenco di controllo Best Practices](best-practices.md)
    + [Elenco di controllo](best-practices-checklist.md)
    + [Glossario](best-practices-glossary.md)
