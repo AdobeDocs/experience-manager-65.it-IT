@@ -18,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# Guida introduttiva  AEM Communities per l’abilitazione {#getting-started-with-aem-communities-for-enablement}
+# Guida introduttiva a  AEM Communities per l&#39;abilitazione {#getting-started-with-aem-communities-for-enablement}
 
  AEM Communities aiuta i marchi a creare esperienze coerenti tra canali digitali e di persona facilitando l&#39;abilitazione tra dipendenti e clienti con un catalogo di risorse di abilitazione, contenuti assegnati e raccomandazioni dinamiche, il tutto distribuito all&#39;interno di una community social per promuovere il coinvolgimento.
 
-Di seguito è riportata un&#39;esercitazione sulla configurazione rapida di una community di [abilitazione](overview.md#enablement-community) a scopo dimostrativo o di sviluppo.
+Di seguito è riportata un&#39;esercitazione sulla configurazione rapida di una [community di abilitazione](overview.md#enablement-community) a scopo dimostrativo o di sviluppo.
 
-Per un’esercitazione sulla configurazione rapida di una community di [coinvolgimento](overview.md#engagement-community), visita la [Guida introduttiva ad  AEM Communities](getting-started.md).
+Per un&#39;esercitazione sulla configurazione rapida di una [community di coinvolgimento](overview.md#engagement-community), visita la [Guida introduttiva  AEM Communities](getting-started.md).
 
 >[!NOTE]
 >
->Questa esercitazione presuppone l&#39;installazione del feature pack [Community 1](deploy-communities.md#latestfeaturepack) o successivo.
+>Questa esercitazione presuppone l&#39;installazione di [Pacchetto di funzioni Community 1](deploy-communities.md#latestfeaturepack) o versioni successive.
 
 * [Configurazione iniziale](enablement-setup.md)
 
