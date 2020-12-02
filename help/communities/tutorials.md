@@ -1,8 +1,8 @@
 ---
 title: Esercitazioni
 seo-title: Esercitazioni
-description: Esempi per imparare e utilizzare il framework dei componenti social di AEM Communities (SCF)
-seo-description: Esempi per imparare e utilizzare il framework dei componenti social di AEM Communities (SCF)
+description: Esempi per imparare e lavorare con  AEM Communities social component framework (SCF)
+seo-description: Esempi per imparare e lavorare con  AEM Communities social component framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
 source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 3%
 
 ---
 
 
 # Esercitazioni {#tutorials}
 
-Questi sono esempi per aiutarvi a imparare e lavorare con il framework delle componenti [sociali (SCF)](scf.md)di AEM 6.1 Communities.
+Questi sono esempi per aiutare a imparare e lavorare con AEM 6.1 Community [social component framework (SCF)](scf.md).
 
 ## Personalizzazione lato client {#client-side-customization}
 
@@ -33,9 +36,9 @@ Consulta anche:
 
 ## Personalizzazione lato server {#server-side-customization}
 
-Vedere anche personalizzazione [lato server](server-customize.md)SCF.
+Vedere anche [personalizzazione lato server SCF](server-customize.md).
 
-Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.com/Adobe-Marketing-Cloud) Adobe Marketing Cloud:
+Il codice di esempio è disponibile nell&#39;archivio [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud):
 
 * [Personalizza esempio componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -45,7 +48,7 @@ Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.c
 
 ## Istruzioni pratiche {#how-to-instructions}
 
-* [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [ AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
    ToDo MVC Mostra come sviluppare un componente SCF+SRP da zero.
 
@@ -57,15 +60,15 @@ Il codice di esempio è disponibile nell’archivio GitHub [di](https://github.c
 
 * [Creare una pagina di esempio](create-sample-page.md)
 
-## Demo {#demo-users}
+## Utenti demo {#demo-users}
 
-Il pacchetto di esempi Geometrixx include utenti dimostrativi. Spesso esiste una differenza di esperienza tra essere un visitatore (non connesso) o un membro (connesso) e, finché i pacchetti di esempi Geometrixx rimangono installati, potete utilizzare questi utenti per simulare lo stato di accesso quando esplorate con la guida [Componenti](components-guide.md)community.
+Il pacchetto di Geometrixx include utenti dimostrativi. Spesso esiste una differenza di esperienza tra essere un visitatore (non connesso) o un membro (connesso) e, fintanto che i pacchetti di esempi di Geometrixx rimangono installati, potete utilizzare questi utenti per simulare lo stato di accesso quando esplorate con la [Guida ai componenti della community](components-guide.md).
 
-Per un elenco completo degli utenti demo, passa alla Barra degli **[!UICONTROL strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Protezione > Utenti]**. Oppure utilizzate la console [di](http://localhost:4502/useradmin) sicurezza dell’interfaccia classica per la gestione di utenti e gruppi.
+Per un elenco completo degli utenti demo, andate utilizzando la Barra degli strumenti **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Protezione > Utenti]**. In alternativa, utilizzate l&#39;interfaccia classica [console di protezione](http://localhost:4502/useradmin) per gestire utenti e gruppi.
 
-Se è stato creato [un sito](getting-started.md)community, è possibile assegnare utenti demo ai gruppi [di utenti della](users.md)community.
+Se è stato creato un [sito community](getting-started.md), è possibile assegnare utenti demo ai gruppi [di utenti della community](users.md).
 
-***id *utente /*password***:
+***id*  utente/  *password***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password
