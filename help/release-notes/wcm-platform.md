@@ -1,6 +1,6 @@
 ---
 title: AEM Foundation e repository
-description: Note sulla versione per  piattaforma di Adobe Experience Manager e repository.
+description: Note sulla versione per la piattaforma e l’archivio Adobe Experience Manager.
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
@@ -21,13 +21,13 @@ ht-degree: 56%
 
 >[!CAUTION]
 >
->La nuova versione di Oak Segment Tar presente a partire da AEM 6.3 richiede una migrazione dell’archivio. Questo passaggio è obbligatorio se si sta effettuando l&#39;aggiornamento da una versione precedente di TarMK o si desidera sostituire la nuova scheda Segment Tar con un altro tipo di persistenza. For more information on what the benefits of the new Segment Tar are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>La nuova versione di Oak Segment Tar presente a partire da AEM 6.3 richiede una migrazione dell’archivio. Questo passaggio è obbligatorio se stai effettuando l’aggiornamento da una versione precedente di TarMK o vuoi cambiare la nuova scheda Segment Tar da un altro tipo di persistenza. Per ulteriori informazioni sui vantaggi della nuova ar segmento, vedere le [Domande frequenti sulla migrazione alla ar segmento Oak](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 ### Supporto per Java {#java-support}
 
 * Nuovo supporto per Java 11, che si aggiunge alla versione già supportata di Java 8.
 * Per prestazioni ottimali, sovrascrivi i valori GC predefiniti con altri valori. Per ulteriori informazioni, consulta la sezione [Installazione e aggiornamento](/help/sites-deploying/custom-standalone-install.md).
-* Gli aggiornamenti di manutenzione di Java 11 e Java 8 vengono distribuiti dal Adobe  per l&#39;utilizzo da parte del cliente nei progetti AEM, quando non sono disponibili al pubblico da Oracle.
+* Gli aggiornamenti di manutenzione di Java 11 e Java 8 vengono distribuiti dal Adobe  per l&#39;utilizzo da parte dei clienti nei progetti AEM, quando non sono disponibili al pubblico da  Oracle.
 
 ### OSGI {#osgi}
 
@@ -35,7 +35,7 @@ ht-degree: 56%
 
 ### Progetti e flussi di lavoro {#projects-and-workflows}
 
-* New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced `OR` and `AND` splits.
+* Il nuovo editor per modelli di workflow introdotto in 6.4 è stato migliorato per includere più operazioni come Copia e Pubblica, Supporto delle variabili nei passaggi del flusso di lavoro e suddivisioni `OR` e `AND` migliorate.
 
 ### Ricerca {#searching}
 
@@ -58,14 +58,14 @@ Sono stati apportati vari miglioramenti all’interfaccia utente per renderla pi
 
 >[!CAUTION]
 >
-> Adobe non apporterà ulteriori miglioramenti all’interfaccia classica.  Experience Manager 6.5 include l&#39;interfaccia classica per la compatibilità con le versioni precedenti. Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+> Adobe non apporterà ulteriori miglioramenti all’interfaccia classica.  Experience Manager 6.5 include l&#39;interfaccia classica per la compatibilità con le versioni precedenti. L&#39;interfaccia classica rimane completamente supportata anche se è obsoleta [Leggi tutto](/help/sites-deploying/ui-recommendations.md).
 
 ### Aggiornamento {#upgrade}
 
 * La procedura di aggiornamento rimane sostanzialmente la stessa nella versione 6.5.
 * Continueremo a supportare la compatibilità con le versioni precedenti, la valutazione della complessità dell’aggiornamento e le funzionalità di aggiornamento progressivo introdotte nella versione 6.4. Sono stati apportati aggiornamenti specifici a queste aree, ove necessario.
 * Il pacchetto Pattern Detector è stato semplificato e ci sarà un pacchetto per la valutazione degli aggiornamenti a 6.5 per le versioni sorgente disponibili.
-* Per informazioni dettagliate sulla procedura di aggiornamento, consulta la documentazione [di](/help/sites-deploying/upgrade.md)aggiornamento.
+* Per informazioni dettagliate sulla procedura di aggiornamento, consultare la [documentazione di aggiornamento](/help/sites-deploying/upgrade.md).
 
 ### Server web {#web-server}
 
