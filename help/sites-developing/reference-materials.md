@@ -32,7 +32,7 @@ Adobe Experience Manager (AEM) fornisce diverse API per lo sviluppo di applicazi
 * [Riferimento API JavaScript Framework di test dell&#39;interfaccia utente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
 * [Riferimento API JavaScript di base dell&#39;editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-AEM l&#39;editor dell&#39;applicazione per pagina singola (SPA) framework i riferimenti API JavaScript:
+AEM i riferimenti dell&#39;API JavaScript per l&#39;editor di applicazioni a pagina singola (SPA):
 
 * [Mapping dei componenti](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Page Model Manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
@@ -45,11 +45,11 @@ AEM API di distribuzione e gestione dei contenuti:
 
    * [Esportatore JSON](/help/sites-developing/json-exporter.md)
    * [Abilitazione dell&#39;esportazione JSON per un componente](/help/sites-developing/json-exporter-components.md)
-   * Per ulteriori informazioni, consulta la sezione [Componenti nella guida](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) utente allo sviluppo
+   * Per ulteriori informazioni, vedere la sezione [Componenti nella guida per l&#39;utente in via di sviluppo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)
 
-* **Risorse**: L’API HTTP Assets consente di creare-leggere-aggiornare-eliminare (CRUD) le operazioni sulle risorse, inclusi file binari, metadati, rappresentazioni e commenti. Consultate [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
+* **Risorse**: L’API HTTP Assets consente di creare-leggere-aggiornare-eliminare (CRUD) le operazioni sulle risorse, inclusi file binari, metadati, rappresentazioni e commenti. Vedere [ AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **Frammenti** di contenuto (CF): [Supporto CF nell’API](/help/assets/assets-api-content-fragments.md) HTTP Assets e nell’API [AEM Assets - Frammenti di contenuto](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* **Frammenti**  di contenuto (CF):  [Supporto CF nell’](/help/assets/assets-api-content-fragments.md) API HTTP Assets e  [ API AEM Assets - Frammenti di contenuto](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 
 Le seguenti risorse esterne sono solo a scopo di riferimento:
 
