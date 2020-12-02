@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Funzioni di base del calendario {#calendar-essentials}
+# Calendario Essentials {#calendar-essentials}
 
 Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione calendario.
 
@@ -66,18 +66,18 @@ Questa pagina fornisce informazioni essenziali sull’utilizzo della funzione ca
 
 ### Funzione Calendario {#calendar-function}
 
-Una struttura del sito community che include la funzione [](functions.md#calendar-function) Calendario avrà un `calendar` componente configurato. La funzione Calendar (Calendario) supporta l&#39;identificazione di un gruppo [di utenti membro](users.md#privileged-members-group)privilegiato.
+Una struttura del sito community che include la funzione [Calendario](functions.md#calendar-function) avrà un componente `calendar` configurato. La funzione Calendario supporta l&#39;identificazione di un [gruppo di utenti con privilegi](users.md#privileged-members-group).
 
 ### Accesso ai post del calendario (UGC) {#accessing-calendar-posts-ugc}
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider di risorse di storage - introduzione e utilizzo del repository
-* [Caratteristiche essenziali di SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
+* [Panoramica](srp.md)  del provider di risorse di storage - introduzione e utilizzo del repository
+* [Funzioni essenziali](srp-and-ugc.md)  SRP e UGC - Metodi di utilità SRP ed esempi
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md)  - linee guida di codifica
+* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
 
