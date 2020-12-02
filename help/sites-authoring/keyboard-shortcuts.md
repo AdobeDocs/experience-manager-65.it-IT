@@ -1,6 +1,6 @@
 ---
-title: Scelte rapide da tastiera per le console
-seo-title: Scelte rapide da tastiera per le console
+title: 'Scelte rapide da tastiera per le console  '
+seo-title: 'Scelte rapide da tastiera per le console  '
 description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
 seo-description: Risparmia tempo durante l’authoring utilizzando le scelte rapide da tastiera
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 100%
 
 ---
 
 
-# Scelte rapide da tastiera per le console{#keyboard-shortcuts-for-consoles}
+# Scelte rapide da tastiera per le console  {#keyboard-shortcuts-for-consoles}
 
 AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -30,16 +33,16 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Scree
 | Dove si trova | Scelta rapida | Descrizione |
 |---|---|---|
 | Generale | `Ctrl+Click` | Selezione multipla su un dispositivo desktop |
-| Console - Vista a colonne e Visualizzazione contenuto | `Right Arrow` | Spostarsi verso il basso nella struttura del sito, espandere un nodo |
-|  | `Left Arrow` | Spostarsi verso l’alto nella struttura ad albero, comprimere il nodo |
-|  | `Down Arrow` | Spostarsi verso il basso in un elenco di pagine sullo stesso livello |
-|  | `Up Arrow` | Spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
-| Console: vista a colonne | `Shift-Up/Down Arrow` | Spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
-|  | `Esc` | Spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
+| Console: vista a colonne e vista contenuto | `Right Arrow` | Consente di spostarsi verso il basso nella struttura del sito o di espandere un nodo |
+|  | `Left Arrow` | Consente di spostarsi verso l’alto nella struttura ad albero o di comprimere un nodo |
+|  | `Down Arrow` | Consente di spostarsi verso il basso in un elenco di pagine sullo stesso livello |
+|  | `Up Arrow` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
+| Console: vista a colonne | `Shift-Up/Down Arrow` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
+|  | `Esc` | Consente di spostarsi verso l’alto in un elenco di pagine sullo stesso livello |
 | Console | `?` | Aiuto per scelte rapide da tastiera |
-|  | `/` | Richiamare [la ricerca](/help/sites-authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-authoring/basic-handling.md#rail-selector) option to view |
-|  | ` | Nascondere la barra |
+|  | `/` | Avvia la [ricerca](/help/sites-authoring/search.md) |
+|  | `Alt+`&lt;`Number`> | Consente di selezionare l’opzione del [selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector) da visualizzare |
+|  | ` | Nasconde la barra |
 |  | `e` | Modifica |
 |  | `p` | Proprietà |
 |  | `m` | Sposta |
@@ -81,16 +84,16 @@ Inoltre, le scelte rapide da tastiera sono le stesse per tutte le lingue e i lay
 
 ## Disattivazione delle scelte rapide da tastiera {#deactivating-keyboard-shortcuts}
 
-AEM fornisce scelte rapide da tastiera per alcune delle funzioni di uso comune (modifica, proprietà, copia/incolla, visualizzazione dei menu delle barre laterali, ecc.).
+AEM fornisce scelte rapide da tastiera per alcune delle funzioni di uso comune (modifica, proprietà, copia/incolla, visualizzazione dei menu delle barre laterali e così via).
 
 Per gli utenti che non utilizzano scelte rapide da tastiera o che hanno determinati requisiti di accessibilità, tutte le scelte rapide da tastiera possono essere disabilitate.
 
 È possibile disattivare le scelte rapide da tastiera in due posizioni:
 
-* [Le mie preferenze](/help/sites-authoring/user-properties.md#my-preferences)
-* Il [menu Aiuto](/help/sites-authoring/basic-handling.md#accessing-help)
+* [Preferenze](/help/sites-authoring/user-properties.md#my-preferences)
+* [Menu Aiuto](/help/sites-authoring/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >
->Le scelte rapide per la navigazione nella vista a colonne e nella struttura del contenuto sono sempre attive.
+>Le scelte rapide per la navigazione nella vista a colonne e nella struttura contenuto sono sempre attive.
 
