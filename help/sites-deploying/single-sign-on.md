@@ -35,30 +35,30 @@ Configurate i due servizi seguenti per riconoscere il nome dell&#39;attributo ch
 * Modulo di login.
 * Servizio autenticazione SSO.
 
-È necessario specificare lo stesso nome attributo per entrambi i servizi. L’attributo è incluso nel `SimpleCredentials` file a cui è stato fornito `Repository.login`. Il valore dell&#39;attributo è irrilevante e ignorato, la sua semplice presenza è importante e verificata.
+È necessario specificare lo stesso nome attributo per entrambi i servizi. L&#39;attributo è incluso in `SimpleCredentials` fornito a `Repository.login`. Il valore dell&#39;attributo è irrilevante e ignorato, la sua semplice presenza è importante e verificata.
 
 ## Configurazione di SSO {#configuring-sso}
 
-Per configurare SSO per un&#39;istanza AEM, è necessario configurare il gestore [autenticazione](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)SSO:
+Per configurare SSO per un&#39;istanza AEM, è necessario configurare il gestore di autenticazione [SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+1. Quando lavorate con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per ulteriori informazioni e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
    Ad esempio, per i set NTLM:
 
-   * **Percorso:** se necessario; ad esempio, `/`
-   * **Nomi** intestazione: `LOGON_USER`
-   * **Formato** ID: `^<DOMAIN>\\(.+)$`
+   * **Percorso:** come richiesto; ad esempio,  `/`
+   * **Nomi** intestazione:  `LOGON_USER`
+   * **Formato** ID:  `^<DOMAIN>\\(.+)$`
 
       Dove `<*DOMAIN*>` viene sostituito dal proprio nome di dominio.
    Per CoSign:
 
-   * **Percorso:** se necessario; ad esempio, `/`
+   * **Percorso:** come richiesto; ad esempio,  `/`
    * **Nomi** intestazione: remote_user
    * **Formato ID:** AsIs
 
    Per SiteMinder:
 
-   * **Percorso:** se necessario; ad esempio, `/`
+   * **Percorso:** come richiesto; ad esempio,  `/`
    * **Nomi intestazione:** SM_USER
    * **Formato** ID: AsIs
 
@@ -83,15 +83,15 @@ Per configurare SSO per un&#39;istanza AEM, è necessario configurare il gestore
 
 >[!NOTE]
 >
->Se si utilizza anche il [dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con Microsoft Internet Information Server (IIS), sarà necessaria una configurazione aggiuntiva in:
+>Se si utilizza anche [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con Microsoft Internet Information Server (IIS), sarà necessaria una configurazione aggiuntiva in:
 >
 >* `disp_iis.ini`
 >* IIS
 
 >
 >
-Nel `disp_iis.ini` set:
->(consultate [Installazione del dispatcher con Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) per ulteriori dettagli)
+In `disp_iis.ini` set:
+>(vedere [installazione del dispatcher con Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) per ulteriori informazioni)
 >
 >* `servervariables=1` (inoltra le variabili del server IIS come intestazioni di richiesta all&#39;istanza remota)
 >* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Autorizzazione&quot; diversa da &quot;Base&quot; con il suo equivalente &quot;Base&quot;)
@@ -100,26 +100,26 @@ Nel `disp_iis.ini` set:
 >
 In IIS:
 >
->* disattiva accesso **anonimo**
+>* disattiva **Accesso anonimo**
    >
    >
-* abilita autenticazione **integrata di Windows**
+* abilita **autenticazione integrata di Windows**
 
 >
 
 
 
-Potete vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura del contenuto utilizzando l&#39;opzione **Autenticatore** della console Flash; ad esempio:
+Per vedere quale gestore di autenticazione viene applicato a qualsiasi sezione della struttura dei contenuti, utilizzate l&#39;opzione **Authenticator** della console Felix; ad esempio:
 
 `http://localhost:4502/system/console/slingauth`
 
-Viene eseguito innanzitutto un query sul gestore che meglio corrisponde al percorso. Ad esempio, se si configura handler-A per il percorso `/` e handler-B per il percorso `/content`, prima una richiesta a `/content/mypage.html` eseguirà query su handler-B.
+Viene eseguito innanzitutto un query sul gestore che meglio corrisponde al percorso. Ad esempio, se si configura handler-A per il percorso `/` e handler-B per il percorso `/content`, prima una richiesta a `/content/mypage.html` eseguirà una query a handler-B.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Esempio {#example}
 
-Per una richiesta di cookie (utilizzando l’URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Per una richiesta di cookie (utilizzando l&#39;URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -131,13 +131,13 @@ Utilizzando la configurazione seguente:
 
 * **Percorso**: `/`
 
-* **Nomi** intestazione: `TestHeader`
+* **Nomi** intestazione:  `TestHeader`
 
-* **Nomi** cookie: `TestCookie`
+* **Nomi** cookie:  `TestCookie`
 
-* **Nomi** dei parametri: `TestParameter`
+* **Nomi** dei parametri:  `TestParameter`
 
-* **Formato** ID: `AsIs`
+* **Formato** ID:  `AsIs`
 
 La risposta sarebbe:
 
@@ -160,14 +160,14 @@ Transfer-Encoding: chunked
 Questo funziona anche se richiedete:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Oppure potete usare il seguente comando curl per inviare l’ `TestHeader` intestazione a `admin:`
+Oppure è possibile utilizzare il seguente comando curl per inviare l&#39;intestazione `TestHeader` a `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
 >Quando si utilizza il parametro request in un browser, viene visualizzato solo parte del codice HTML, senza CSS. Questo perché tutte le richieste dall’HTML vengono effettuate senza il parametro request.
 
-## Rimozione AEM collegamenti Disconnetti {#removing-aem-sign-out-links}
+## Rimozione AEM collegamenti di disconnessione {#removing-aem-sign-out-links}
 
 Quando si utilizza SSO, l&#39;accesso e la disconnessione vengono gestiti esternamente, in modo che AEM propri collegamenti di disconnessione non siano più applicabili e debbano essere rimossi.
 
