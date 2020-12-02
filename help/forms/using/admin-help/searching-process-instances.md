@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
@@ -27,13 +30,13 @@ Una ricerca generale per un processo è più appropriata se si conosce l&#39;ID 
 
 Immettete i criteri di base per eseguire una ricerca generale. Se immettete più criteri, la ricerca viene eseguita con una condizione AND implicita.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Process Search.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Process Search.
 1. Nella pagina Ricerca processo, in Ricerca generale, specificate i seguenti criteri:
 
-   * **** ID processo: Numero intero positivo che identifica ogni istanza di processo univoca.
-   * **** Stato processo: Selezionate uno stato dall’elenco.
-   * **** Applicazione: Selezionare un&#39;applicazione dall&#39;elenco. Vengono visualizzate solo le applicazioni distribuite.
-   * **** Nome processo - Versione: Selezionate un nome di processo dal menu. Vengono visualizzati solo i processi distribuiti.
+   * **ID processo:** il numero intero positivo che identifica ogni istanza di processo univoca.
+   * **Stato processo:** selezionare uno stato dall&#39;elenco.
+   * **Applicazione:** selezionare un&#39;applicazione dall&#39;elenco. Vengono visualizzate solo le applicazioni distribuite.
+   * **Nome processo - Versione:** selezionate dal menu il nome di un processo. Vengono visualizzati solo i processi distribuiti.
 
 1. Fate clic su Cerca. Viene visualizzata la pagina Istanza processo, in cui sono elencate le istanze trovate.
 
@@ -41,7 +44,7 @@ Immettete i criteri di base per eseguire una ricerca generale. Se immettete più
 
 Potete immettere attributi specifici per eseguire una ricerca dettagliata. Una ricerca dettagliata è particolarmente appropriata se sono in esecuzione molte istanze di processo e occorre limitare le ricerche possibili in base a determinati criteri.
 
-1. Nella console di amministrazione, fare clic su Servizi > Flusso di lavoro moduli > Process Search.
+1. Nella console di amministrazione, fai clic su Servizi > Flusso di lavoro Forms > Process Search.
 1. Nella pagina Ricerca processo, in Ricerca dettagliata, specificate il primo set di criteri:
 
    * Nell&#39;elenco Attributi, selezionare un attributo.
