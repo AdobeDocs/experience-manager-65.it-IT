@@ -12,6 +12,9 @@ discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
@@ -28,21 +31,22 @@ Questo miglioramento consente di eseguire il controllo delle azioni CRUD (Crea, 
 * Aggiunta di un utente a un gruppo
 * Modifiche delle autorizzazioni per un utente o un gruppo esistente
 
-Per impostazione predefinita, le voci vengono scritte nel `error.log` file. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato. Ulteriori informazioni su come eseguire questa operazione nel paragrafo seguente.
+Per impostazione predefinita, le voci vengono scritte nel file `error.log`. Per semplificare il monitoraggio, si consiglia di reindirizzarli a un file di registro separato. Ulteriori informazioni su come eseguire questa operazione nel paragrafo seguente.
 
 ## Reindirizzamento dell&#39;output a un file di registro separato {#redirecting-the-output-to-a-separate-log-file}
 
-Per reindirizzare l’output di registrazione a un file di registro separato, è necessario creare una nuova configurazione **Apache Sling Logging Logger** . Nell&#39;esempio seguente verrà utilizzato `useraudit.log` come nome del file separato.
+Per reindirizzare l&#39;output di registrazione a un file di registro separato, è necessario creare una nuova configurazione **Apache Sling Logging Logger**. Nell&#39;esempio seguente verrà utilizzato `useraudit.log` come nome del file separato.
 
-1. Passate alla console Web accedendo a *https://serveraddress:serverport/system/console/configMgr*
-1. Cercate la configurazione **del logger di registrazione** Apache Sling. Quindi, premere il segno &quot;+&quot; sul lato destro della voce per creare una nuova configurazione di fabbrica.
+1. Per accedere alla console Web, visitare il sito Web all&#39;indirizzo *https://serveraddress:serverport/system/console/configMgr*
+1. Cercare la **configurazione del log di registrazione Apache Sling**. Quindi, premere il segno &quot;+&quot; sul lato destro della voce per creare una nuova configurazione di fabbrica.
 1. Create la configurazione seguente:
 
-   * **** Livello registro:Informazioni
-   * **** File di registro: logs/useraudit.log
-   * **** Pattern messaggio: level default
-   * **** Logger: com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
-   Per inserire entrambi i login nel campo **Logger** , è necessario immettere il nome del primo campo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
+   * **Livello Registro:** Informazioni
+   * **File Di Registro:** logs/useraudit.log
+   * **Pattern messaggio:** livello predefinito
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
+   Per inserire entrambi i login nel campo **Logger**, è necessario immettere il nome del primo campo, quindi creare un altro campo premendo il pulsante &quot;+&quot; e immettendo il nome del secondo logger.
 
 ## Esempio di output {#example-output}
 
