@@ -25,17 +25,17 @@ Le attività di un membro della comunità firmato, come l&#39;invio a un forum o
 
 La possibilità di seguire aggiunge un altro gruppo di attività quando i membri della comunità seguono postazioni di interesse o altri membri della comunità.
 
-Tutti i siti [](/help/communities/overview.md#communitiessites) della community includono una pagina del profilo utente per il membro che ha effettuato l&#39;accesso, che mostrerà le attività dei membri allo stesso modo.
+Tutti i [siti della community](/help/communities/overview.md#communitiessites) includono una pagina del profilo utente per il membro che ha effettuato l&#39;accesso e che mostrerà le attività dei membri allo stesso modo.
 
 ## Concetti {#concepts}
 
-Un flusso *di* attività è l&#39;elenco delle attività recenti eseguite da un membro o un elenco delle attività recenti su un singolo thread di contenuto, ad esempio un argomento del forum o un blog.
+Un *flusso di attività* è l&#39;elenco delle attività recenti eseguite da un membro o un elenco delle attività recenti su un singolo thread di contenuto, ad esempio un topic o un blog.
 
 Un membro può seguire un flusso di attività, seguendo un altro individuo o contenuto.
 
-Un feed *di* notizie è un&#39;unione dei flussi di attività seguiti da un membro in un singolo flusso.
+Un *feed di notizie* è un&#39;unione dei flussi di attività seguiti da un membro in un singolo flusso.
 
-Un grafico *[](/help/communities/essentials-socialgraph.md)*sociale acquisisce le seguenti relazioni di un membro con un altro.
+Un *[grafico sociale](/help/communities/essentials-socialgraph.md)* acquisisce le seguenti relazioni di un membro a un altro.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -80,4 +80,4 @@ Un grafico *[](/help/communities/essentials-socialgraph.md)*sociale acquisisce l
 
 ### Funzione Flusso attività {#activity-stream-function}
 
-Una struttura del sito community che include la funzione [Flusso](/help/communities/functions.md#activity-stream-function)attività, include un `activity streams` componente configurato.
+Una struttura del sito community che include la funzione [Activity Stream](/help/communities/functions.md#activity-stream-function), include un componente `activity streams` configurato.
