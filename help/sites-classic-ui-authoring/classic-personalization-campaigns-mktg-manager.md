@@ -12,6 +12,9 @@ discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +35,7 @@ Esempio:
 
 Da MCM è possibile accedere a:
 
-* **[Dashboard](#dashboard)**È composto di quattro riquadri:
+* **[Dashboard](#dashboard)** È composto di quattro riquadri:
 
    * [Elenchi](#lists) Questo riquadro mostra gli elenchi creati e il numero di lead in ciascuno. Da questo riquadro è possibile creare un nuovo elenco direttamente o tramite l’importazione di lead.
 Quando si seleziona un elenco, si passa alla sezione [Elenchi](#lists) contenente i relativi dettagli.
@@ -45,13 +48,13 @@ Quando si seleziona un report si passa alla pagina dello stesso.
 
    * [Campagne](#campaigns) In questo riquadro sono elencate le esperienze di campagna come [newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Lead](#leads)**Questo riquadro consente di gestire i lead. Puoi creare o importare i lead, modificare dettagli specifici di singoli lead o eliminare quelli che non sono più necessari. Puoi inoltre inserire i lead in diversi gruppi, o Elenchi.**Nota:**Adobe non prevede ulteriori miglioramenti di questa funzionalità.
-Si consiglia di utilizzare[Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
+* **[Lead](#leads)** Questo riquadro consente di gestire i lead. Puoi creare o importare i lead, modificare dettagli specifici di singoli lead o eliminare quelli che non sono più necessari. Puoi inoltre inserire i lead in diversi gruppi, o Elenchi. **Nota:** Adobe non prevede ulteriori miglioramenti di questa funzionalità.
+Si consiglia di utilizzare [Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
 
-* **[Elenchi](#lists)**Questo riquadro consente di gestire gli elenchi (di lead).**Nota:**Adobe non prevede ulteriori miglioramenti di questa funzionalità.
-Si consiglia di utilizzare[Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
+* **[Elenchi](#lists)** Questo riquadro consente di gestire gli elenchi (di lead).**Nota:** Adobe non prevede ulteriori miglioramenti di questa funzionalità.
+Si consiglia di utilizzare [Adobe Campaign e l’integrazione con AEM](/help/sites-administering/campaign.md).
 
-* **[Campagne](#campaigns)**Questo riquadro consente di gestire i marchi, le campagne e le esperienze.
+* **[Campagne](#campaigns)** Questo riquadro consente di gestire i marchi, le campagne e le esperienze.
 
 ## Dashboard {#dashboard}
 
@@ -64,7 +67,7 @@ Il dashboard presenta quattro riquadri che offrono una panoramica sugli elenchi 
 >[!NOTE]
 >
 >Adobe non prevede ulteriori miglioramenti di questa funzionalità (gestione dei lead).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Si consiglia di utilizzare [ Adobe Campaign e l&#39;integrazione per AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, puoi organizzare e aggiungere i lead immettendoli manualmente o importando un elenco di voci separate da virgole, ad esempio una mailing list. I lead possono inoltre essere generati dalle registrazioni a newsletter o community (se configurate, queste possono avviare un flusso di lavoro per la compilazione dei lead). In genere i lead sono organizzati per categorie e inseriti in un elenco in modo da consentire successive operazioni quali l’invio di messaggi e-mail personalizzati per un particolare gruppo.
 
@@ -81,7 +84,7 @@ Nella sezione **Lead** nel riquadro a sinistra potete creare, importare, modific
 >[!NOTE]
 >
 >Adobe non prevede ulteriori miglioramenti di questa funzionalità (gestione degli elenchi).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Si consiglia di utilizzare [ Adobe Campaign e l&#39;integrazione per AEM](/help/sites-administering/campaign.md).
 
 Gli elenchi consentono di organizzare i lead in gruppi. Tramite gli elenchi puoi indirizzare una campagna marketing a un determinato gruppo di utenti, ad esempio per l’invio di una newsletter mirata.
 
@@ -130,11 +133,11 @@ In questa sezione è possibile effettuare le seguenti attività:
 
 * Aprire la panoramica della campagna (doppio clic su una campagna nel riquadro a destra o clic nel riquadro a sinistra)
 
-#### Panoramica della campagna {#campaign-overview}
+#### Panoramica della campagna  {#campaign-overview}
 
 Per le singole campagne sono disponibili due viste:
 
-1. **Visualizzazione Calendario**
+1. **Vista calendario**
 
    Usate l’icona:
 
@@ -164,7 +167,7 @@ Per le singole campagne sono disponibili due viste:
 
    In questa sezione è possibile effettuare le seguenti attività:
 
-   * **Crea un** nuovo... esperienza; ad esempio, offerte Adobe Target, teaser e newsletter.
+   * Crea un **Nuovo...** esperienza; ad esempio,  offerte Adobe Target, teaser e newsletter.
    * Seleziona **Modifica** o fai doppio clic per modificare i dettagli di una pagina teaser o newsletter.
    * Seleziona **Proprietà** per definire le proprietà di una pagina teaser o newsletter.
    * Seleziona **Simula** per simulare l’aspetto di un’esperienza (pagina teaser o newsletter).
@@ -176,7 +179,7 @@ Una volta aperta la pagina simulata è possibile aprire la barra laterale per pa
    * Seleziona **Ricerca** per cercare del testo (la ricerca viene effettuata nel campo Titolo delle esperienze).
    * Usa la ricerca **Avanzata** per applicare filtri alla ricerca.
 
-### Simulazione delle esperienze della campagna {#simulating-your-campaign-experiences}
+### Simulazione delle esperienze della campagna  {#simulating-your-campaign-experiences}
 
 In MCM, fai clic su **Campagne**. Accertati che sia attiva la vista Elenco, quindi seleziona l’esperienza di campagna desiderata e fai clic su **Simula**. Verrà aperto il punto di contatto (pagina teaser o newsletter) per mostrare l’esperienza selezionata, così come si presenterà al visitatore.
 
@@ -184,7 +187,7 @@ In MCM, fai clic su **Campagne**. Accertati che sia attiva la vista Elenco, quin
 
 Puoi inoltre aprire la barra laterale (clic sulla piccola freccia rivolta verso il basso) per passare alla modalità di modifica e aggiornare la pagina.
 
-### Analisi delle esperienze della campagna {#analyzing-your-campaign-experiences}
+### Analisi delle esperienze della campagna  {#analyzing-your-campaign-experiences}
 
 In MCM, fai clic su **Campagne**. Accertati che sia attiva la vista Elenco, quindi seleziona l’esperienza di campagna desiderata e seleziona **Analizza**. Viene visualizzato un grafico delle impression registrate per la pagina nel tempo.
 
