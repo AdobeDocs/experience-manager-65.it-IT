@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # Console Risorse di abilitazione {#enablement-resources-console}
 
-Per  AEM Communities, la console Risorse è il luogo in cui [i manager](users.md) di abilitazione creano, gestiscono e assegnano le risorse ai membri di un sito della community di abilitazione.
+Per  AEM Communities, nella console Risorse [Manager abilitazione](users.md) è possibile creare, gestire e assegnare risorse ai membri di un sito della community di abilitazione.
 
 ## Requisiti {#requirements}
 
@@ -29,7 +29,7 @@ Prima di aggiungere le risorse di abilitazione per un sito community, le istanze
 * SCORM
 * FFmpeg
 
-Per informazioni dettagliate, consultate [Configurazione dell&#39;abilitazione](enablement.md).
+Per informazioni dettagliate, consultate [Configuring Enablement](enablement.md).
 
 >[!CAUTION]
 >
@@ -37,13 +37,13 @@ Per informazioni dettagliate, consultate [Configurazione dell&#39;abilitazione](
 
 >[!NOTE]
 >
->Con il rilascio di [AEM 6.3](deploy-communities.md#latestfeaturepack) e dei pacchetti di funzioni Community equivalenti [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la funzione di abilitazione non richiede più un database [](mysql.md)MySQL.
+>Con il rilascio di [AEM 6.3](deploy-communities.md#latestfeaturepack) e dei pacchetti di funzionalità community equivalenti [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la funzione di abilitazione non richiede più un [database MySQL](mysql.md).
 
 ## Terminologia {#terminology}
 
 ### Risorsa {#resource}
 
-Le risorse sono essenziali per una comunità di [abilitazione](overview.md#enablement-community). Sono i materiali assegnati ai membri che consentono loro di migliorare le loro capacità.
+Le risorse sono essenziali per una [community di abilitazione](overview.md#enablement-community). Sono i materiali assegnati ai membri che consentono loro di migliorare le loro capacità.
 
 Caratteristiche di una risorsa:
 
@@ -61,13 +61,13 @@ Un percorso di apprendimento è un insieme logico di risorse di abilitazione rag
 
 ### Gruppo di membri {#members-group}
 
-Quando create un sito community, il nome assegnato al sito per l&#39;URL viene utilizzato per la creazione di gruppi [utente specifici per il](users.md) sito configurati con varie autorizzazioni per vari ruoli. Tutti questi gruppi creati automaticamente hanno il prefisso `Community <site-name>`.
+Quando viene creato un sito community, il nome assegnato al sito per l&#39;URL viene utilizzato nella creazione dei [gruppi utente specifici del sito](users.md) configurati con varie autorizzazioni per vari ruoli. Tutti questi gruppi creati automaticamente hanno il prefisso `Community <site-name>`.
 
-Un gruppo di utenti di questo tipo è `Community <site-name> Members` il gruppo, che identifica gli utenti registrati nell&#39;ambiente di pubblicazione come membri della community. Per un esempio, consulta la [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md) .
+Un gruppo di utenti di questo tipo è `Community <site-name> Members`, che identifica gli utenti registrati nell’ambiente di pubblicazione come membri della community. Per un esempio, vedere l&#39;esercitazione [Getting Started with  AEM Communities for Enablement](getting-started-enablement.md).
 
-Per le comunità [di](overview.md#egagementcommunity)coinvolgimento, è ragionevole consentire ai visitatori del sito di registrarsi o utilizzare il login mediante social network, al momento in cui vengono automaticamente aggiunti al gruppo di membri.
+Per le [comunità di coinvolgimento](overview.md#egagementcommunity), è ragionevole consentire ai visitatori del sito di registrarsi o utilizzare il login mediante social network, al momento in cui vengono automaticamente aggiunti al gruppo di membri.
 
-Per le comunità di [abilitazione](overview.md#enablement-community), si consiglia di rendere privato il sito, il che richiede all&#39;amministratore di aggiungere utenti al gruppo di membri.
+Per le [community di abilitazione](overview.md#enablement-community), si consiglia di rendere privato il sito, il che richiede l&#39;aggiunta di utenti al gruppo di membri da parte di un amministratore.
 
 ## Accesso alle risorse di abilitazione di un sito community {#accessing-a-community-site-s-enablement-resources}
 
@@ -79,7 +79,7 @@ Nell’ambiente di authoring, per accedere alla console Risorse
 
    ![enablement-sites](assets/enablement-sites.png)
 
-### Selezione di un sito community {#select-a-community-site}
+### Selezionare un sito community {#select-a-community-site}
 
 Nella console Risorse di Communities vengono visualizzati tutti i siti della community.
 
@@ -103,14 +103,14 @@ Per selezionare più risorse di abilitazione, selezionatele prima passando il mo
 
 ![modalità di selezione](assets/selection-mode.png)
 
-## Creazione di una risorsa {#create-a-resource}
+## Creare una risorsa {#create-a-resource}
 
 ![create-resource](assets/create-resource1.png)
 
 Per aggiungere una nuova risorsa di abilitazione al sito community
 
-* Select the `Create` icon.
-* Dal sottomenu visualizzato, selezionate **[!UICONTROL Risorsa]**.
+* Selezionate l&#39;icona `Create`.
+* Dal sottomenu visualizzato, selezionare **[!UICONTROL Risorsa]**.
 
 Viene avviato un processo passo-passo di:
 
@@ -122,7 +122,7 @@ Viene avviato un processo passo-passo di:
 
 Quando la risorsa fa parte di un corso, un percorso di apprendimento, i membri devono essere assegnati solo al percorso di apprendimento. Le assegnazioni possono essere aggiunte dopo la creazione della risorsa di abilitazione.
 
-### 1 Basic Info {#basic-info}
+### 1 Informazioni di base {#basic-info}
 
 ![resource-basicinfo](assets/resource-basicinfo.png)
 
@@ -134,19 +134,19 @@ Quando la risorsa fa parte di un corso, un percorso di apprendimento, i membri d
 
 * **[!UICONTROL Nome sito]**
 
-   (*sola* lettura) Il sito della community in cui viene aggiunta la risorsa.
+   (*readonly*) Il sito della community in cui viene aggiunta la risorsa.
 
 * **[!UICONTROL Nome riferimento]**
 
-   (*Obbligatorio*) Nome visualizzato della risorsa. Un nome di nodo valido viene creato dal nome visualizzato.
+   (*Obbligatorio*) Il nome visualizzato per la risorsa. Un nome di nodo valido viene creato dal nome visualizzato.
 
 * **[!UICONTROL Tag]**
 
-   (*Facoltativo*) È possibile scegliere uno o più tag che associano la risorsa di abilitazione a uno o più cataloghi. Consultate [Assegnazione di tag alle risorse](tag-resources.md)di abilitazione.
+   (*Facoltativo*) È possibile scegliere uno o più tag che associano la risorsa di abilitazione a uno o più cataloghi. Vedere [Risorse per l&#39;abilitazione dei tag](tag-resources.md).
 
 * **[!UICONTROL Mostra nel catalogo]**
 
-   Se questa opzione è deselezionata, la risorsa di abilitazione non viene visualizzata in alcun catalogo. Se questa opzione è attivata, la risorsa di abilitazione verrà visualizzata in tutti i cataloghi, a meno che non sia [previamente filtrata](catalog-developer-essentials.md#pre-filters) o che i filtri membro non siano stati inclusi nell’interfaccia utente. Il valore predefinito è deselezionato.
+   Se questa opzione è deselezionata, la risorsa di abilitazione non viene visualizzata in alcun catalogo. Se questa opzione è attivata, la risorsa di abilitazione verrà visualizzata in tutti i cataloghi, a meno che non siano presenti i filtri [pre-filtrati](catalog-developer-essentials.md#pre-filters) o i filtri membro dall&#39;interfaccia utente. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Descrizione]**
 
@@ -166,13 +166,13 @@ Quando la risorsa fa parte di un corso, un percorso di apprendimento, i membri d
 
 * Seleziona **[!UICONTROL Avanti]**
 
-### 2 Add Content {#add-content}
+### 2 Aggiungi contenuto {#add-content}
 
 ![resource-addcontent](assets/resource-addcontent.png)
 
 Anche se è possibile selezionare più risorse di abilitazione, è consentita solo una.
 
-Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere la risorsa identificando l’origine.
+Selezionate `'+' icon`, nell&#39;angolo in alto a destra, per iniziare il processo di scelta della risorsa identificando l&#39;origine.
 
 ![upload-resource](assets/upload-resource1.png)
 
@@ -214,7 +214,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 * **[!UICONTROL Definisci una risorsa esterna]**
 
-   Inserire il luogo in cui il materiale deve essere presentato. I valori per lo stato di successo e la valutazione vengono inseriti manualmente (consultate [Rapporti](reports.md)). Un’immagine di copertina caricata può essere utilizzata per fornire ulteriori informazioni.
+   Inserire il luogo in cui il materiale deve essere presentato. I valori per lo stato di successo e la valutazione vengono inseriti manualmente (vedere [Reports](reports.md)). Un’immagine di copertina caricata può essere utilizzata per fornire ulteriori informazioni.
 
    Nella finestra di dialogo visualizzata, immettete:
 
@@ -226,19 +226,19 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
       Posizione di un sito fisico, ad esempio un&#39;aula.
 
-#### Esempio di una risorsa video aggiunta {#example-of-an-added-video-resource}
+#### Esempio di risorsa video aggiunta {#example-of-an-added-video-resource}
 
 ![add-video](assets/add-video.png)
 
 * **[!UICONTROL Immagine copertina riferimento]**
 
-   L&#39;immagine di copertina è un&#39;immagine da visualizzare quando la risorsa di abilitazione viene visualizzata per la prima volta. Ad esempio, l’immagine di copertina viene visualizzata quando una risorsa video non è ancora in fase di riproduzione. Se non viene caricata un&#39;immagine personalizzata, viene visualizzata un&#39;immagine predefinita. Per le risorse video, potrebbe essere possibile [generare una miniatura](enablement.md#ffmpeg), ma solo quando viene caricato e non quando al video viene fatto riferimento come URL. Per le risorse sulla posizione, l&#39;immagine può essere utilizzata per fornire ulteriori informazioni.
+   L&#39;immagine di copertina è un&#39;immagine da visualizzare quando la risorsa di abilitazione viene visualizzata per la prima volta. Ad esempio, l’immagine di copertina viene visualizzata quando una risorsa video non è ancora in fase di riproduzione. Se non viene caricata un&#39;immagine personalizzata, viene visualizzata un&#39;immagine predefinita. Per le risorse video, potrebbe essere possibile generare una miniatura [ma solo quando viene caricato e non quando al video viene fatto riferimento come URL. ](enablement.md#ffmpeg) Per le risorse sulla posizione, l&#39;immagine può essere utilizzata per fornire ulteriori informazioni.
 
    Le dimensioni consigliate per l&#39;immagine di copertina sono 640 x 360 px.
 
 * Seleziona **[!UICONTROL Avanti]**.
 
-### 3 Settings {#settings}
+### 3 Impostazioni {#settings}
 
 ![resource-settings](assets/resource-settings.png)
 
@@ -250,7 +250,7 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 * **[!UICONTROL Impostazioni social]**
 
-   Queste impostazioni controllano se gli utenti in formazione sono in grado di fornire o meno i dati relativi alla risorsa di abilitazione. Le impostazioni [di](sites-console.md#moderation) moderazione sono quelle del sito della comunità padre.
+   Queste impostazioni controllano se gli utenti in formazione sono in grado di fornire o meno i dati relativi alla risorsa di abilitazione. Le [impostazioni di moderazione](sites-console.md#moderation) sono quelle del sito della community principale.
 
    * **[!UICONTROL Consenti commenti]**
 
@@ -270,23 +270,23 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 * **[!UICONTROL Autore risorse]**
 
-   *(Facoltativo)* L&#39;autore della risorsa di abilitazione. Utilizzate il menu a discesa per selezionare gli utenti membri del gruppo [di](#members-group)membri.
+   *(Facoltativo)* L’autore della risorsa di abilitazione. Utilizzate il menu a discesa per selezionare tra gli utenti membri del gruppo [membri](#members-group).
 
-* **[!UICONTROL Contatto &amp;risorsa;ast;]**
+* **[!UICONTROL Contatto &amp;risorse;]**
 
-   *(Obbligatorio)* Una persona che il membro può contattare in merito alla risorsa di abilitazione. Utilizzate il menu a discesa per selezionare gli utenti membri del gruppo [di](#members-group)membri.
+   *(Obbligatorio)* Una persona che il membro può contattare per quanto riguarda la risorsa di abilitazione. Utilizzate il menu a discesa per selezionare tra gli utenti membri del gruppo [membri](#members-group).
 
 * **[!UICONTROL Esperto risorse]**
 
-   *(Facoltativo)* Una persona a cui il membro può rivolgersi per la propria competenza in merito alla risorsa di abilitazione. Utilizzate il menu a discesa per selezionare gli utenti membri del gruppo [di](#members-group)membri.
+   *(Facoltativo)* Una persona a cui il membro può rivolgersi per la propria competenza in merito alla risorsa di abilitazione. Utilizzate il menu a discesa per selezionare gli utenti membri del gruppo [membri](#members-group).
 
-### 4 Assignments {#assignments}
+### 4 Assegnazioni {#assignments}
 
 ![assegnazioni di risorse](assets/resource-assignments.png)
 
 * **[!UICONTROL Aggiungi assegnatari]**
 
-   Utilizzate il menu a discesa per selezionare tra [i membri](#members-group) - Gli utenti e i gruppi di utenti (visualizzati in grassetto) - che devono essere iscritti come Utenti in formazione. Quando i membri accedono al sito della community, le risorse di abilitazione (e i percorsi di apprendimento) in cui sono iscritti vengono visualizzate nella pagina [Assegnazioni](functions.md#assignments-function) .
+   Utilizzate il menu a discesa per selezionare tra [membri](#members-group) - Utenti e gruppi di utenti (elencati in grassetto) - che devono essere iscritti come Utenti in formazione. Quando i membri accedono al sito della community, le risorse di abilitazione (e i percorsi di apprendimento) in cui sono iscritti vengono visualizzate nella pagina [Assegnazioni](functions.md#assignments-function).
 
 * Seleziona **[!UICONTROL Crea]**.
 
@@ -294,14 +294,14 @@ Selezionate `'+' icon`, nell’angolo in alto a destra, per iniziare a scegliere
 
 La creazione della risorsa di abilitazione è riuscita e viene nuovamente visualizzata la console Risorse, con la risorsa appena creata selezionata. Da questa console è possibile [gestire la risorsa](#managing-a-resource).
 
-## Create a Learning Path {#create-a-learning-path}
+## Creare un percorso di apprendimento {#create-a-learning-path}
 
 ![add-learning-path](assets/add-learning-path.png)
 
 Per aggiungere un nuovo percorso di apprendimento al sito della community
 
-* Selezionate l’ `Create` icona
-* Dal sottomenu visualizzato, selezionate Percorso **** apprendimento.
+* Selezionate l&#39;icona `Create`
+* Dal sottomenu visualizzato, selezionare **[!UICONTROL Percorso di apprendimento]**.
 
 Viene avviato un processo passo-passo di:
 
@@ -327,7 +327,7 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 * **[!UICONTROL Nome sito]**
 
-   (*Sola lettura*) Il sito della community in cui viene aggiunta la risorsa.
+   (*Readonly*) Il sito della community in cui viene aggiunta la risorsa.
 
 * **[!UICONTROL Nome percorso di apprendimento]**
 
@@ -335,11 +335,11 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 * **[!UICONTROL Tag]**
 
-   (*Facoltativo*) È possibile scegliere uno o più tag che associano il percorso di apprendimento a uno o più cataloghi. Consultate [Assegnazione di tag alle risorse](tag-resources.md)di abilitazione.
+   (*Facoltativo*) È possibile scegliere uno o più tag che associano il percorso di apprendimento a uno o più cataloghi. Vedere [Risorse per l&#39;abilitazione dei tag](tag-resources.md).
 
 * **[!UICONTROL Mostra nel catalogo]**
 
-   Se questa opzione è deselezionata, il percorso di apprendimento non verrà visualizzato in alcun catalogo. Se questa opzione è attivata, il percorso di apprendimento verrà visualizzato in tutti i cataloghi, a meno che l’interfaccia utente non sia [previamente filtrata](catalog-developer-essentials.md#pre-filters) o filtri membro. La visualizzazione del percorso di apprendimento in un catalogo consente indirettamente l&#39;accesso in lettura a tutte le risorse in esso contenute. Il valore predefinito è deselezionato.
+   Se questa opzione è deselezionata, il percorso di apprendimento non verrà visualizzato in alcun catalogo. Se questa opzione è attivata, il percorso di apprendimento verrà visualizzato in tutti i cataloghi, a meno che non siano stati previamente filtrati [o i filtri membro dall&#39;interfaccia utente. ](catalog-developer-essentials.md#pre-filters) La visualizzazione del percorso di apprendimento in un catalogo consente indirettamente l&#39;accesso in lettura a tutte le risorse in esso contenute. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Descrizione]**
 
@@ -389,15 +389,15 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 ### Impostazioni {#settings-1}
 
-![learningpath-settings1](assets/learningpath-settings1.png)
+![learning-path-settings1](assets/learningpath-settings1.png)
 
 * **[!UICONTROL Aggiungi adesioni]**
 
-   Utilizzate il menu a discesa per selezionare tra i membri e i gruppi di membri (visualizzati in grassetto) membri del gruppo [di](#members-group)membri del sito community. Non è necessario aggiungere assegnazioni al momento della prima creazione del percorso di apprendimento. Le proprietà del percorso di apprendimento possono essere modificate per aggiungere utenti in formazione in un secondo momento.
+   Utilizzate il menu a discesa per selezionare tra i membri e i gruppi di membri (visualizzati in grassetto) membri del gruppo [membri del sito della community](#members-group). Non è necessario aggiungere assegnazioni al momento della prima creazione del percorso di apprendimento. Le proprietà del percorso di apprendimento possono essere modificate per aggiungere utenti in formazione in un secondo momento.
 
-* **[!UICONTROL Percorso di apprendimento Contatto&amp;ast;]**
+* **[!UICONTROL &amp;Apprendimento percorso contatto;]**
 
-   *(Obbligatorio)* Una persona che il membro può contattare per quanto riguarda il percorso di apprendimento. Utilizzate il menu a discesa per selezionare tra gli utenti membri del gruppo [di](#members-group)membri del sito community.
+   *(Obbligatorio)* Una persona che il membro può contattare per quanto riguarda il percorso di apprendimento. Utilizzate il menu a discesa per selezionare gli utenti membri del gruppo di membri [del sito community](#members-group).
 
 * Seleziona **[!UICONTROL Crea]**
 
@@ -411,7 +411,7 @@ Per le risorse di abilitazione incluse in un percorso di apprendimento, le asseg
 
 Per gestire una singola risorsa di abilitazione:
 
-* Nella console **[!UICONTROL Risorse]** , selezionate il sito della community che contiene la risorsa.
+* Dalla console **[!UICONTROL Risorse]**, selezionate il sito della community che contiene la risorsa.
 * Selezionate la risorsa.
 
 Per la risorsa di abilitazione selezionata, è possibile:
@@ -436,7 +436,7 @@ Se l’unica modifica consiste nel modificare le assegnazioni nel passaggio Impo
 
 ![delete-resource](assets/delete-resource.png)
 
-Selezionando l&#39;icona del cestino, la risorsa di abilitazione verrà visualizzata `Deleted` dopo la conferma.
+Selezionando l&#39;icona del cestino, la risorsa di abilitazione sarà `Deleted` dopo la conferma.
 
 ### Pubblicazione {#publish}
 
@@ -444,9 +444,9 @@ Selezionando l&#39;icona del cestino, la risorsa di abilitazione verrà visualiz
 
 Prima che gli utenti in formazione siano in grado di visualizzare le risorse di abilitazione assegnate, è necessario pubblicarle:
 
-* Selezionate l’icona del mondo da `Publish`.
-* Nella finestra di dialogo visualizzata, selezionate di nuovo **[!UICONTROL Pubblica]** .
-* Selezionate **[!UICONTROL Chiudi]**.
+* Selezionate l&#39;icona del mondo su `Publish`.
+* Nella finestra di dialogo visualizzata, selezionate di nuovo **[!UICONTROL Pubblica]**.
+* Selezionare **[!UICONTROL Chiudi]**.
 
 Anche se la finestra di dialogo dichiara che l’azione è in coda, spesso viene pubblicata immediatamente.
 
@@ -462,13 +462,13 @@ Per rendere temporaneamente le risorse di abilitazione inaccessibili ai membri n
 
 L’icona Rapporto consente di accedere ai rapporti generati quando gli studenti interagiscono con le risorse di abilitazione assegnate nell’ambiente di pubblicazione. Il rapporto varia a seconda del tipo di risorsa.
 
-Per tutti i percorsi di apprendimento, è possibile visualizzare un rapporto basato sulle risorse o sugli studenti ( `User Report`.)
+Per tutti i percorsi di apprendimento, è possibile visualizzare un rapporto basato sulle risorse o sugli studenti ( `User Report`).
 
 ![learning-path-info](assets/learningpath-info1.png)
 
-Questo rapporto è specifico per la risorsa di abilitazione corrente o il percorso di apprendimento. La profondità del reporting fornita dipende dal fatto che [Adobe Analytics](analytics.md) sia autorizzato o meno per il sito community. I rapporti [Timeline](#timeline), [Coinvolgimento](#viewer-engagement)del visualizzatore e [Coinvolgimento per dispositivo](#engagement-by-device) vengono importati da  Adobe Analytics in base all&#39;intervallo [di](analytics.md#report-importer)polling.
+Questo rapporto è specifico per la risorsa di abilitazione corrente o il percorso di apprendimento. La profondità del reporting fornito dipende dal fatto che [ Adobe Analytics](analytics.md) sia concesso in licenza e attivato per il sito community. I report [Timeline](#timeline), [Coinvolgimento visualizzatore](#viewer-engagement) e [Coinvolgimento da dispositivo](#engagement-by-device) vengono importati da  Adobe Analytics in base all&#39;intervallo di polling [](analytics.md#report-importer).
 
-Per tutte le risorse di abilitazione, indipendentemente dal fatto che sia attivato o meno  Adobe Analytics, sono presenti rapporti sullo stato [e le](#assignee-status) valutazioni [di](#ratings) Assegnatario e una tabella Riepilogo [](#report-summary) report.
+Per tutte le risorse di abilitazione, indipendentemente dal fatto che sia attivato o meno  Adobe Analytics, sono presenti rapporti su [Assegnatario Status](#assignee-status) e [Ratings](#ratings), nonché su una tabella [Report Summary](#report-summary).
 
 ![resource-report](assets/resource-report1.png)
 
@@ -496,7 +496,7 @@ L&#39;asse verticale è il numero di eventi.
 
 L&#39;asse orizzontale è l&#39;ora del calendario.
 
-[Adobe Analytics richiesto](sites-console.md#analytics).
+[ Adobe Analytics richiesto](sites-console.md#analytics).
 
 #### Coinvolgimento visualizzatore {#viewer-engagement}
 
@@ -554,13 +554,13 @@ Per un percorso di apprendimento Rapporto utente, il Riepilogo rapporti è un el
    * Numero di risorse completate.
    * Il loro status.
 
-È possibile regolare la visualizzazione della tabella selezionando le colonne utilizzando il `Show / hide columns` selettore.
+È possibile regolare la visualizzazione della tabella selezionando le colonne utilizzando il selettore `Show / hide columns`.
 
-#### Download Report as CSV {#download-report-as-csv}
+#### Scarica rapporto come CSV{#download-report-as-csv}
 
 La tabella Riepilogo rapporti può essere scaricata in formato CSV utilizzando un pulsante nella parte superiore della console.
 
-* Per una risorsa di abilitazione: `Download Resource Report as CSV` pulsante.
-* Per un percorso di apprendimento: `Download Learning Path Report as CSV` pulsante.
+* Per una risorsa di abilitazione: Pulsante `Download Resource Report as CSV`.
+* Per un percorso di apprendimento: Pulsante `Download Learning Path Report as CSV`.
 
 Il riepilogo completo dei report viene scaricato indipendentemente dalle colonne selezionate per la visualizzazione.
