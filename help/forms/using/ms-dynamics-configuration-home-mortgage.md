@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Configurazione di Microsoft Dynamics 365 per il flusso di lavoro del mutuo home del sito di riferimento We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
+# Configurare Microsoft Dynamics 365 per il flusso di lavoro del mutuo home del sito di riferimento We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Scoprite come sfruttare i servizi di Microsoft® Dynamics 365 tramite moduli adattivi per il flusso di lavoro mutui per la casa del sito di riferimento We.Finance
 
@@ -24,7 +24,7 @@ Scoprite come sfruttare i servizi di Microsoft® Dynamics 365 tramite moduli ada
 
 Microsoft® Dynamics 365 è un software CRM (Customer Relationship Management) ed ERP (Enterprise Resource Planning) che fornisce soluzioni aziendali per la creazione e la gestione di account cliente, contatti, lead, opportunità e casi.
 
- AEM Forms fornisce un servizio cloud per integrare Dynamics 365 con il modulo [Forms Data Integration](/help/forms/using/data-integration.md) . Prima di poter utilizzare la procedura dettagliata dell&#39;applicazione Home Mortgage con lo scenario Microsoft® Dynamics, è necessario configurare Microsoft® Dynamics 365 per l&#39;utilizzo con il sito di riferimento We.Finance.
+ AEM Forms fornisce un servizio cloud per integrare Dynamics 365 con il modulo [Forms Data Integration](/help/forms/using/data-integration.md). Prima di poter utilizzare la procedura dettagliata dell&#39;applicazione Home Mortgage con lo scenario Microsoft® Dynamics, è necessario configurare Microsoft® Dynamics 365 per l&#39;utilizzo con il sito di riferimento We.Finance.
 
 ## Prerequisiti {#prerequisites}
 
@@ -35,7 +35,7 @@ Prima di iniziare a configurare Dynamics 365, accertati di disporre di:
 * Applicazione registrata per il servizio Dynamics 365 con Microsoft® Azure Active Directory
 * ID client e segreto client per l’applicazione registrata
 
-## Collegare il calcolatore del mutuo casa con la pagina principale del sito {#link-the-home-mortgage-calculator-with-your-site-home-page}
+## Collegare il calcolatore del mutuo per la casa con la home page del sito {#link-the-home-mortgage-calculator-with-your-site-home-page}
 
 1. Nell’istanza di creazione, passate alla pagina seguente:
 
@@ -46,7 +46,7 @@ Prima di iniziare a configurare Dynamics 365, accertati di disporre di:
 
    ![calcolatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
-1. Nella finestra di dialogo Modifica  contenitore AEM Forms, individuate il percorso della risorsa e selezionate home-mutuo-calcolatore nel percorso seguente, quindi toccate **Conferma**:
+1. Nella finestra di dialogo Edit  AEM Forms Container, individuate il percorso della risorsa e selezionate home-mutuo-calculate nel percorso seguente, quindi toccate **Confirm**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
@@ -65,7 +65,7 @@ Prima di iniziare a configurare Dynamics 365, accertati di disporre di:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importa il pacchetto della soluzione nell&#39;istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, accedete a **Settings** (Impostazioni) > **Solutions** (Soluzioni) **e toccate** Import (Importa).
+   1. Importa il pacchetto della soluzione nell&#39;istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, passare a **Impostazioni** > **Soluzioni**, quindi toccare **Importa**.
 
 1. Per impostare i dettagli di contatto utente utilizzati nel refsite, importate il pacchetto Sarah Rose Contact.CSV nell&#39;istanza di Microsoft® Dynamics:
 
@@ -73,5 +73,5 @@ Prima di iniziare a configurare Dynamics 365, accertati di disporre di:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importa il pacchetto nella tua istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, accedete a **Vendite** > **Contatti** e toccate **Importa dati**.
+   1. Importa il pacchetto nella tua istanza di Microsoft® Dynamics. Nell&#39;istanza di Microsoft® Dynamics, passare a **Vendite** > **Contatti**, quindi toccare **Importa dati**.
 
