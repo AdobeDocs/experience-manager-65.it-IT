@@ -21,64 +21,64 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
- AEM Forms consente agli sviluppatori di moduli di incorporare facilmente moduli adattivi e comunicazioni interattive in un&#39;applicazione AEM Sites Single Page (SPA) . Il modulo adattivo incorporato e la comunicazione interattiva sono completamente funzionanti e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente agli utenti di restare nel contesto di altri elementi della pagina Web e di interagire contemporaneamente con il modulo adattivo o la comunicazione interattiva.
+ AEM Forms consente agli sviluppatori di moduli di incorporare facilmente moduli adattivi e comunicazioni interattive in un&#39;applicazione  pagina singola (SPA) AEM Sites. Il modulo adattivo incorporato e la comunicazione interattiva sono completamente funzionanti e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente agli utenti di restare nel contesto di altri elementi della pagina Web e di interagire contemporaneamente con il modulo adattivo o la comunicazione interattiva.
 
- applicazione AEM Sites per pagina singola, è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando il componente [contenitore AEM Forms SPA](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) È un componente AEM Forms  per  SPA AEM Sites che potete aggiungere alla pagina Siti.
+ applicazione AEM Sites per pagina singola, è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando il componente [ Contenitore SPA AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) È un componente AEM Forms  per  AEM Sites SPA che potete aggiungere alla pagina Siti.
 
-Per informazioni sull&#39;incorporamento di un modulo adattivo in un AEM Sites  non SPA, vedere [Incorporare un modulo adattivo o  comunicazione interattiva pagina](/help/forms/using/embed-adaptive-form-aem-sites.md)AEM Sites.
+Per informazioni sull&#39;incorporamento di un modulo adattivo in un AEM Sites  non SPA, vedere [Incorporare un modulo adattivo o una comunicazione interattiva in  pagina AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 ## Prerequisiti {#prerequisites}
 
-Per incorporare un modulo adattivo o una comunicazione interattiva in un sito AEM SPA utilizzando il componente contenitore AEM Forms SPA , accertatevi di aver installato:
+Per incorporare un modulo adattivo o una comunicazione interattiva in un sito AEM SPA utilizzando il componente  AEM Forms SPA Container, accertatevi di aver installato:
 
 * Java SE Development Kit 8 o successivo
 * Apache Maven 3.3.1 o successivo
 * istanza di AEM
-* [pacchetto](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) aggiuntivo AEM Forms 6.4.2 sull’istanza di creazione
+* [ pacchetto aggiuntivo AEM Forms 6.4.2 ](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per l’istanza di creazione
 
-## Installare  componente Contenitore SPA di AEM Forms {#install-aem-forms-spa-container-component}
+## Installazione  componente contenitore AEM Forms SPA {#install-aem-forms-spa-container-component}
 
-Effettuate i seguenti passaggi per installare il componente Contenitore  AEM Forms SPA:
+Effettuate i seguenti passaggi per installare il componente  AEM Forms SPA Container:
 
 1. [Clona o scarica il componente AEM Forms  per SPA](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa).
-1. Installate il componente AEM Forms  per SPA. Le istruzioni per installare il componente sono disponibili nel file [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component) .
+1. Installate il componente  AEM Forms per SPA. Le istruzioni per installare il componente sono disponibili nel file [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component).
 
-   Il componente include un [esempio di componente](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) React che può essere utilizzato per integrare il componente contenitore SPA con un progetto SPA basato su React.
+   Il componente include un [componente React di esempio](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) che può essere utilizzato per integrare SPA componente contenitore con un progetto SPA basato su React.
 
-1. [Clona o scarica un progetto](https://github.com/adobe/aem-sample-we-retail-journal)SPA basato su React.
-1. Integrare il componente contenitore SPA con un progetto SPA basato su React utilizzando le istruzioni disponibili nel file [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) .
+1. [Clona o scarica un progetto](https://github.com/adobe/aem-sample-we-retail-journal) SPA basato su React.
+1. Integrare SPA componente contenitore con un progetto SPA basato su React utilizzando le istruzioni disponibili nel file [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor).
 
-   Dopo aver installato il componente Contenitore  AEM Forms SPA e integrato il componente con un progetto SPA basato su React, è possibile incorporare moduli adattivi e comunicazioni interattive nella pagina  AEM Sites.
+   Dopo aver installato  componente AEM Forms SPA Container e integrato il componente con un progetto SPA basato su React, è possibile incorporare moduli adattivi e comunicazioni interattive nella pagina  AEM Sites.
 
-## Incorporare un modulo adattivo o una comunicazione interattiva {#af-component}
+## Incorpora un modulo adattivo o una comunicazione interattiva {#af-component}
 
-Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando  AEM Forms per il componente Contenitore SPA:
+Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando  AEM Forms per SPA componente Contenitore:
 
 1. Aprire la pagina AEM siti, in modalità di modifica, in cui si desidera incorporare un modulo adattivo o una comunicazione interattiva.
-1. Inserite nella pagina il componente Modulo **AEM per SPA** utilizzando una delle seguenti opzioni:
+1. Inserite il componente **AEM Form per SPA** nella pagina utilizzando una delle seguenti opzioni:
 
-   * Toccate il Contenitore di layout nella pagina Siti, toccate **+** e selezionate il componente **AEM Modulo per SPA** .
+   * Toccate il Contenitore di layout nella pagina Siti, toccate **+** e selezionate il componente **AEM Modulo per SPA**.
 
-   * Dal pannello del browser Componenti, trascinare sulla pagina il componente **AEM Modulo per SPA** .
-   * Cercate un modulo adattivo o una comunicazione interattiva nel browser Risorse e trascinatelo nella pagina Siti. Incorpora il modulo in un AEM Forms  per il contenitore di componenti SPA.
+   * Dal pannello del browser Componenti, trascinare il componente **AEM Modulo per SPA** sulla pagina.
+   * Cercate un modulo adattivo o una comunicazione interattiva nel browser Risorse e trascinatelo nella pagina Siti. Incorpora il modulo in un AEM Forms  per SPA contenitore di componenti.
 
    >[!NOTE]
    >
-   >Il rendering di più componenti contenitore AEM Forms SPA  su una pagina non è supportato. Potete avere più contenitori AEM Forms SPA  su una pagina, ma viene eseguito il rendering di un solo componente alla volta. Per evitare discrepanze, accertatevi che sulla pagina sia visibile un solo componente.
+   >Il rendering di più componenti AEM Forms SPA Container  pagina non è supportato. Potete avere più  AEM Forms SPA Container su una pagina, ma viene eseguito il rendering di un solo componente alla volta. Per evitare discrepanze, accertatevi che sulla pagina sia visibile un solo componente.
 
-1. Toccate il componente incorporato  AEM Forms SPA Container nella pagina dei siti, quindi toccate ![settings_icon](assets/settings_icon.png) nella barra delle azioni. Viene visualizzata la finestra di dialogo **Modifica  contenitore** AEM Forms SPA.
-1. Nella finestra di dialogo **Modifica  contenitore** AEM Forms, specificate quanto segue:
+1. Toccate il componente incorporato  AEM Forms SPA Container nella pagina dei siti, quindi toccate ![settings_icon](assets/settings_icon.png) nella barra delle azioni. Viene visualizzata la finestra di dialogo **Edit  AEM Forms SPA Container**.
+1. Nella finestra di dialogo **Modifica  contenitore AEM Forms**, specificate quanto segue:
 
-   * **Tipo risorsa:** Selezionate il tipo di risorsa da incorporare. Le opzioni sono Modulo **** adattivo e Comunicazione **interattiva**
+   * **Tipo risorsa:** selezionate il tipo di risorsa da incorporare. Le opzioni sono **Modulo adattivo** e **Comunicazione interattiva**
 
    * **Percorso** risorsa: Individuate e selezionate il modulo adattivo o la comunicazione interattiva da incorporare. Il campo viene popolato automaticamente se viene inserito un modulo adattivo o una comunicazione interattiva tramite il browser Risorse.
-   * **Canale** (Solo Comunicazione Interattiva): Selezionate il tipo di canale interattivo da incorporare. Le opzioni sono Canale **** Web e Canale **** di stampa.
+   * **Canale**  (Solo Comunicazione Interattiva): Selezionate il tipo di canale interattivo da incorporare. Le opzioni sono **Canale Web** e **Canale di stampa**.
 
    * **Tema**: Selezionate un tema che definisca lo stile dei componenti del modulo adattivo o della comunicazione interattiva. Lo stile include proprietà di aspetto quali lo stile del font, il colore di sfondo, le dimensioni e l&#39;allineamento.
 
 1. Toccate ![done_icon](assets/done_icon.png) per salvare le impostazioni. Il modulo adattivo o la comunicazione interattiva ora è incorporato nella pagina.
 
-## Pubblicare un modulo adattivo incorporato e Comunicazione interattiva {#publish-embedded-adaptive-form-and-interactive-communication}
+## Pubblicare moduli adattivi incorporati e comunicazioni interattive {#publish-embedded-adaptive-form-and-interactive-communication}
 
 Considerate i seguenti scenari per pubblicare una risorsa incorporata (modulo adattivo o comunicazione interattiva)  pagina AEM Sites:
 
@@ -86,7 +86,7 @@ Considerate i seguenti scenari per pubblicare una risorsa incorporata (modulo ad
 * Se avete modificato solo il modulo adattivo incorporato o la comunicazione interattiva in una pagina Siti pubblicati, pubblicate la risorsa originale e le modifiche si riflettono nella pagina Siti pubblicati. La pagina Siti pubblicati include un riferimento alla risorsa e non richiede la ripubblicazione della pagina.
 * Se avete modificato la pagina Siti e il modulo adattivo incorporato o la comunicazione interattiva, ripubblicate la pagina Siti e la risorsa incorporata.
 
-## Modifica di moduli adattivi incorporati e comunicazione interattiva {#modify-embedded-adaptive-form-and-interactive-communication}
+## Modifica del modulo adattivo incorporato e comunicazione interattiva {#modify-embedded-adaptive-form-and-interactive-communication}
 
 AEM pagina dei siti contiene un riferimento al modulo adattivo e alla comunicazione interattiva nel  AEM Forms Container. Pertanto, tutte le configurazioni e proprietà, come il tema, gli stili e l&#39;azione Invia, configurate nel modulo adattivo originale e nella comunicazione interattiva vengono mantenute nel modulo adattivo incorporato e nella comunicazione interattiva.
 
@@ -95,7 +95,7 @@ Per modificare qualsiasi configurazione o proprietà del modulo adattivo incorpo
 * Aprire il modulo originale nei moduli adattivi o nelle comunicazioni interattive nei rispettivi editor e modificarlo.
 * Toccate il modulo adattivo o la comunicazione interattiva dalla pagina Siti in modalità di modifica, quindi toccate **Modifica in una nuova finestra**. Il modulo originale viene aperto in modalità di modifica.
 
-## Considerations and best practices {#considerations-and-best-practices}
+## Considerazioni e best practice {#considerations-and-best-practices}
 
 Quando si incorporano moduli adattivi nelle AEM pagine dei siti, tenere presente quanto segue:
 
