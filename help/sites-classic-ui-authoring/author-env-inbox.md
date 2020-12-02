@@ -1,6 +1,6 @@
 ---
-title: Casella in entrata
-seo-title: Casella in entrata
+title: 'Casella in entrata  '
+seo-title: 'Casella in entrata  '
 description: Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 seo-description: Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
@@ -12,18 +12,21 @@ discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 94%
 
 ---
 
 
-# Casella in entrata{#your-inbox}
+# Casella in entrata  {#your-inbox}
 
 Puoi ricevere notifiche da varie aree di AEM, ad esempio notifiche relative a elementi di lavoro o attività che rappresentano azioni da eseguire sul contenuto della pagina.
 
 Tali notifiche vengono recapitate in due caselle in entrata, a seconda del tipo di notifica:
 
 * Una casella in entrata per le notifiche ricevute in seguito alla sottoscrizione di un abbonamento, descritta nella sezione successiva.
-* A specialized inbox for workflow items is described in the [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Una casella in entrata specializzata per gli elementi del flusso di lavoro è descritta nel documento [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
@@ -44,6 +47,7 @@ Per visualizzare le notifiche:
 
    * [Iscrizione alle notifiche](#subscribing-to-notifications)
    * [Elaborazione delle notifiche](#processing-your-notifications)
+
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
 ## Iscrizione alle notifiche {#subscribing-to-notifications}
@@ -69,6 +73,7 @@ Per effettuare la sottoscrizione alle notifiche:
 
    * **Casella in entrata notifica**: le notifiche vengono visualizzate nella casella in entrata AEM dell’utente.
    * **E-mail**: le notifiche vengono inviate all’indirizzo e-mail definito nel profilo dell’utente.
+
    >[!NOTE]
    >
    >Per ricevere la notifica tramite e-mail è necessario configurare alcune impostazioni. È inoltre possibile personalizzare il modello e-mail o aggiungere un modello e-mail per una nuova lingua. Per configurare la notifica tramite e-mail in AEM, consulta [Configurazione notifica e-mail](/help/sites-administering/notification.md#configuringemailnotification).
@@ -88,12 +93,13 @@ Quando una pagina viene eliminata o spostata, l’azione di eliminazione viene r
 1. Specificate i percorsi delle pagine per cui desiderate ricevere le notifiche:
 
    * Fai clic su **Aggiungi** per aggiungere una nuova riga alla tabella.
-   * Click the **Path** table cell and enter the path, e.g. `/content/docs`.
+   * Fare clic sulla cella **Percorso** della tabella e immettere il percorso, ad esempio `/content/docs`.
 
    * Per ricevere le notifiche per tutte le pagine appartenenti al sottoalbero, imposta **Esatto?** su **No**.
 Per ricevere le notifiche solo per la pagina definita dal percorso, impostate **Esatto?** su **Sì**.
 
    * Per abilitare la regola, imposta **Regola** su **Consenti**. Se specifichi **Rifiuta**, la regola viene disabilitata ma non viene rimossa e può essere abilitata in seguito.
+
    Per rimuovere una definizione, seleziona la riga facendo clic su una cella della tabella e quindi fai clic su **Elimina**.
 
 1. Fai clic su **OK** per salvare la configurazione.
