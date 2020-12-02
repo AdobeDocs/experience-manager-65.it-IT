@@ -22,23 +22,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->`JAR` e `WAR` i tipi di file AEM vengono rilasciati in. Questi formati sono sottoposti a controllo qualità per soddisfare i livelli di supporto  Adobe si è impegnato a raggiungere.
+>`JAR` e  `WAR` sono i tipi di file AEM vengono rilasciati in. Questi formati sono sottoposti a controllo qualità per soddisfare i livelli di supporto  Adobe si è impegnato a raggiungere.
 
 
-In questa sezione viene illustrato come installare Adobe Experience Manager (AEM) con un server applicazioni. Consultate la sezione Piattaforme [](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) supportate per visualizzare i livelli di supporto specifici forniti per i singoli server delle applicazioni.
+In questa sezione viene illustrato come installare Adobe Experience Manager (AEM) con un server applicazioni. Consultare la sezione [Piattaforme supportate](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) per visualizzare i livelli di supporto specifici forniti per i singoli server delle applicazioni.
 
 Sono descritti i passaggi di installazione dei seguenti Application Server:
 
 * [WebSphere 8.5](#websphere)
 * [JBoss EAP 6.3.0/6.4.0](#jboss-eap)
-* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
+* [ Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
 * [Tomcat 8/8.5](#tomcat)
 
 Per ulteriori informazioni sull&#39;installazione delle applicazioni Web, sulle configurazioni del server e su come avviare e arrestare il server, consultare la relativa documentazione del server applicazione.
 
 >[!NOTE]
 >
->Se utilizzi Dynamic Media in una distribuzione WAR, consulta la documentazione [relativa ai contenuti multimediali](/help/assets/config-dynamic.md#enabling-dynamic-media)dinamici.
+>Se utilizzi contenuti multimediali dinamici in una distribuzione WAR, consulta la [documentazione relativa ai supporti dinamici](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Descrizione generale {#general-description}
 
@@ -49,7 +49,7 @@ AEM viene fornito come un singolo file di guerra da distribuire.
 Se distribuito, per impostazione predefinita si verifica quanto segue:
 
 * la modalità di esecuzione è `author`
-* l’istanza (repository, ambiente Felix OSGI, pacchetti, ecc.) è installato in `${user.dir}/crx-quickstart`cui `${user.dir}` si trova la directory di lavoro corrente, questo percorso a crx-quickstart è chiamato `sling.home`
+* l’istanza (repository, ambiente Felix OSGI, pacchetti, ecc.) è installato in `${user.dir}/crx-quickstart`dove `${user.dir}` è la directory di lavoro corrente, il percorso di crx-quickstart è denominato `sling.home`
 
 * la radice del contesto è il nome del file di guerra, ad esempio: `aem-6`
 
@@ -57,13 +57,13 @@ Se distribuito, per impostazione predefinita si verifica quanto segue:
 
 Potete modificare il comportamento predefinito nel modo seguente:
 
-* modalità di esecuzione: configurare il `sling.run.modes` parametro nel `WEB-INF/web.xml` file del file di AEM prima della distribuzione
+* modalità di esecuzione: configurare il parametro `sling.run.modes` nel file `WEB-INF/web.xml` del file di AEM prima della distribuzione
 
-* sling.home: configurare il `sling.home` parametro nel `WEB-INF/web.xml`file del file AEM prima della distribuzione
+* sling.home: configurare il parametro `sling.home` nel file `WEB-INF/web.xml`del file di AEM prima della distribuzione
 
 * context root: rinominare il file AEM guerra
 
-#### Installazione di Publish {#publish-installation}
+#### Installazione di pubblicazione {#publish-installation}
 
 Per implementare un’istanza di pubblicazione è necessario impostare la modalità di esecuzione per la pubblicazione:
 
@@ -72,14 +72,14 @@ Per implementare un’istanza di pubblicazione è necessario impostare la modali
 * Repack file web.xml in AEM file di guerra
 * Distribuisci AEM file di guerra
 
-#### Controllo dell&#39;installazione {#installation-check}
+#### Controllo installazione {#installation-check}
 
 Per verificare se è installato tutto, è possibile:
 
-* chiudi il `error.log`file per vedere che tutto il contenuto è installato
-* verificare `/system/console` che tutti i bundle siano installati
+* chiudere il file `error.log`per vedere che tutto il contenuto è installato
+* verificare in `/system/console` che tutti i bundle siano installati
 
-#### Due istanze sullo stesso server applicazioni {#two-instances-on-the-same-application-server}
+#### Due istanze sullo stesso server applicazione {#two-instances-on-the-same-application-server}
 
 A scopo dimostrativo può essere opportuno installare l’istanza di creazione e pubblicazione in un unico server applicazione. Per farlo, effettuate le seguenti operazioni:
 
@@ -99,7 +99,7 @@ A scopo dimostrativo può essere opportuno installare l’istanza di creazione e
 
 ### WebSphere 8.5 {#websphere}
 
-Prima di una distribuzione, leggete la Descrizione [](#general-description) generale riportata qui sopra.
+Prima di una distribuzione, leggere la [Descrizione generale](#general-description) precedente.
 
 **Preparazione server**
 
@@ -128,7 +128,7 @@ Prima di una distribuzione, leggete la Descrizione [](#general-description) gene
 
 #### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Prima di una distribuzione, leggete la Descrizione [](#general-description) generale riportata qui sopra.
+Prima di una distribuzione, leggere la [Descrizione generale](#general-description) precedente.
 
 **Preparazione del server JBoss**
 
@@ -136,7 +136,7 @@ Impostate gli argomenti di memoria nel file conf (ad es. `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-se utilizzate lo scanner di distribuzione per installare l&#39;applicazione Web AEM, potrebbe essere utile aumentare il `deployment-timeout,` relativo valore impostando un `deployment-timeout` attributo nel file xml dell&#39;istanza (ad esempio `configuration/standalone.xml)`:
+se si utilizza lo scanner di distribuzione per installare l&#39;applicazione Web AEM, potrebbe essere utile aumentare l&#39;attributo `deployment-timeout,` per l&#39;impostazione di un attributo `deployment-timeout` nel file xml dell&#39;istanza (ad esempio `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -150,32 +150,32 @@ se utilizzate lo scanner di distribuzione per installare l&#39;applicazione Web 
 
 * Abilitare l&#39;applicazione Web AEM.
 
-#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
+####  Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Prima di una distribuzione, leggete la Descrizione [](#general-description) generale riportata qui sopra.
+Prima di una distribuzione, leggere la [Descrizione generale](#general-description) precedente.
 
 Questo utilizza un layout server semplice con un solo Admin Server.
 
 **Preparazione server WebLogic**
 
-* In `${myDomain}/config/config.xml`aggiunta alla sezione sicurezza-configurazione:
+* In `${myDomain}/config/config.xml`aggiungere alla sezione di configurazione della sicurezza:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` vedete su [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) per la posizione corretta (per impostazione predefinita, posizionarla alla fine della sezione è ok)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` vedere su  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdper la posizione corretta (per impostazione predefinita, posizionarla alla fine della sezione è ok)
 
 * Aumenta le impostazioni della memoria VM:
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (risp.sh) search for WLS_MEM_ARGS, set ad esempio set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * aprire `${myDomain}/bin/setDomainEnv.cmd` (risp.sh) la ricerca per WLS_MEM_ARGS, impostare ad esempio `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * riavvio del server WebLogic
 
-* Creare in `${myDomain}` una cartella di pacchetti e all’interno di una cartella cq e all’interno di una cartella Plan
+* Crea in `${myDomain}` una cartella di pacchetti e all&#39;interno di una cartella cq e in una cartella Plan
 
 **Implementare AEM&#39;applicazione Web**
 
 * Scarica AEM file di guerra
 * Inserire il file di guerra AEM nella cartella ${myDomain}/packages/cq
-* Configurare le configurazioni in `WEB-INF/web.xml` base alle esigenze (vedere sopra nella Descrizione generale)
+* Se necessario, eseguire le configurazioni in `WEB-INF/web.xml` (vedere sopra nella Descrizione generale)
 
-   * Separa `WEB-INF/web.xml`file
+   * Rimuovi `WEB-INF/web.xml`file
    * modifica il parametro sling.run.mode da pubblicare
    * rimuovete il commento dal parametro iniziale sling.home e impostate il percorso come desiderate (consultate Descrizione generale)
    * Reimballaggio del file web.xml
@@ -187,17 +187,17 @@ Questo utilizza un layout server semplice con un solo Admin Server.
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Prima di una distribuzione, leggete la Descrizione [](#general-description) generale riportata qui sopra.
+Prima di una distribuzione, leggere la [Descrizione generale](#general-description) precedente.
 
 * **Prepara server Tomcat**
 
    * Aumenta le impostazioni della memoria VM:
 
-      * In `bin/catalina.bat` (risp `catalina.sh` su unix) aggiungete la seguente impostazione:
+      * In `bin/catalina.bat` (risp. `catalina.sh` su unix) aggiungere la seguente impostazione:
       * `set "JAVA_OPTS= -Xmx2048m`
-   * Tomcat non consente né l&#39;accesso dell&#39;amministratore né del manager all&#39;installazione. Pertanto è necessario modificare manualmente `tomcat-users.xml` per consentire l&#39;accesso ai seguenti account:
+   * Tomcat non consente né l&#39;accesso dell&#39;amministratore né del manager all&#39;installazione. Pertanto è necessario modificare manualmente `tomcat-users.xml` per consentire l&#39;accesso a questi account:
 
-      * Modifica `tomcat-users.xml` per includere l&#39;accesso per l&#39;amministratore e il manager. La configurazione deve essere simile all&#39;esempio seguente:
+      * Modificate `tomcat-users.xml` per includere l&#39;accesso per l&#39;amministratore e il manager. La configurazione deve essere simile all&#39;esempio seguente:
 
          ```xml
          <?xml version='1.0' encoding='utf-8'?>
@@ -222,7 +222,7 @@ Prima di una distribuzione, leggete la Descrizione [](#general-description) gene
 
       `webapps/manager/WEB-INF/web.xml`
 
-      e aumentare le dimensioni massime dei file e massime delle richieste ad almeno 500 MB, vedere l&#39; `multipart-config` esempio seguente di tale `web.xml` file.
+      e aumentare le dimensioni massime dei file e massime delle richieste ad almeno 500 MB, vedere l&#39;esempio seguente di un file `multipart-config` di questo tipo.`web.xml`
 
       ```xml
       <multipart-config>
