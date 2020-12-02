@@ -19,15 +19,15 @@ ht-degree: 1%
 ---
 
 
-# How to Work With Packages{#how-to-work-with-packages}
+# Come utilizzare i pacchetti{#how-to-work-with-packages}
 
 I pacchetti consentono di importare ed esportare il contenuto del repository. Ad esempio, potete utilizzare i pacchetti per installare nuove funzionalità, trasferire contenuti tra le istanze e eseguire il backup del contenuto del repository.
 
 È possibile accedere ai pacchetti e/o mantenerli nelle pagine seguenti:
 
-* [Gestione](#package-manager)pacchetti, che consente di gestire i pacchetti nell&#39;istanza AEM locale.
+* [Gestione](#package-manager) pacchetti, che consente di gestire i pacchetti nell&#39;istanza AEM locale.
 
-* [Distribuzione](#software-distribution)software, un server centralizzato che contiene sia i pacchetti disponibili al pubblico che quelli privati per la società. I pacchetti pubblici possono contenere hotfix, nuove funzionalità, documentazione, ecc.
+* [Distribuzione](#software-distribution) software, un server centralizzato che contiene sia i pacchetti disponibili al pubblico che quelli privati per la società. I pacchetti pubblici possono contenere hotfix, nuove funzionalità, documentazione, ecc.
 
 È possibile trasferire i pacchetti tra il gestore pacchetti, la distribuzione software e il file system.
 
@@ -75,7 +75,7 @@ Una definizione di pacchetto è composta da vari tipi di informazioni:
 
 Potete modificare diverse impostazioni del pacchetto per definire aspetti quali la descrizione del pacchetto, i bug correlati, le dipendenze e le informazioni sul fornitore.
 
-La finestra di dialogo Impostazioni **** pacchetto è disponibile tramite il pulsante **Modifica** al momento della [creazione](#creating-a-new-package) o della [modifica](#viewing-and-editing-package-information) di un pacchetto e fornisce tre schede per la configurazione. Dopo aver apportato le modifiche, fare clic su **OK** per salvarle.
+La finestra di dialogo **Impostazioni pacchetto** è disponibile tramite il pulsante **Modifica** quando [create](#creating-a-new-package) o [editing](#viewing-and-editing-package-information) un pacchetto e fornisce tre schede per la configurazione. Dopo aver apportato le modifiche, fare clic su **OK** per salvarle.
 
 ![packagesedit](assets/packagesedit.png)
 
@@ -129,14 +129,14 @@ La finestra di dialogo Impostazioni **** pacchetto è disponibile tramite il pul
      <li><strong>Unisci</strong></li>
      <li><strong>Cancella</strong></li>
      <li><strong>MergePreserve</strong></li>
-    </ul> <p>The default value is <strong>Ignore</strong>.</p> </td>
+    </ul> <p>Il valore predefinito è <strong>Ignore</strong>.</p> </td>
    <td>
     <ul>
-     <li><strong>Ignora</strong> - Conserva gli ACL nell'archivio</li>
-     <li><strong>Sovrascrivi</strong> - sovrascrivi ACL nell'archivio</li>
-     <li><strong>Unisci</strong> - unisci entrambi i set di ACL</li>
-     <li><strong>Cancella</strong> - cancella ACL</li>
-     <li><strong>MergePreserve</strong> : consente di unire il controllo di accesso nel contenuto a quello fornito con il pacchetto aggiungendo le voci di controllo di accesso delle entità non presenti nel contenuto</li>
+     <li><strong>Ignora</strong> : mantiene gli ACL nell'archivio</li>
+     <li><strong>Sovrascrivi</strong> : sovrascrivi ACL nell'archivio</li>
+     <li><strong>Unisci</strong> : unisci entrambi i set di ACL</li>
+     <li><strong>Cancella</strong>  - ACL trasparenti</li>
+     <li><strong>MergePreserve</strong> : consente di unire il controllo di accesso nel contenuto con quello fornito con il pacchetto aggiungendo le voci di controllo di accesso delle entità non presenti nel contenuto</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -153,9 +153,9 @@ La finestra di dialogo Impostazioni **** pacchetto è disponibile tramite il pul
 
 ### Filtri pacchetto {#package-filters}
 
-I filtri identificano i nodi del repository da includere nel pacchetto. Una definizione **di** filtro specifica le informazioni seguenti:
+I filtri identificano i nodi del repository da includere nel pacchetto. A **Filter Definition** specifica le informazioni seguenti:
 
-* Percorso **** principale del contenuto da includere.
+* Il **percorso principale** del contenuto da includere.
 * **Regole** che includono o escludono nodi specifici sotto il percorso principale.
 
 I filtri possono includere zero o più regole. Quando non sono definite regole, il pacchetto contiene tutto il contenuto al di sotto del percorso principale.
@@ -177,14 +177,14 @@ Nella tabella seguente sono descritte le regole e sono riportati alcuni esempi:
    <td> includi</td>
    <td>È possibile definire un percorso o utilizzare un'espressione regolare per specificare tutti i nodi che si desidera includere.<br /> <br /> Includendo una directory:
     <ul>
-     <li>includi tale directory <i>e tutti</i> i file e le cartelle presenti in tale directory (ovvero l’intera sottostruttura)</li>
-     <li><strong>non</strong> includere altri file o cartelle nel percorso principale specificato</li>
+     <li>includere la directory <i>e</i> tutti i file e le cartelle presenti in tale directory (ovvero l'intera sottostruttura)</li>
+     <li><strong>non </strong> includere altri file o cartelle dal percorso principale specificato</li>
     </ul> </td>
    <td>/libs/sling/install(/.*)? </td>
   </tr>
   <tr>
    <td> escludi</td>
-   <td>È possibile specificare un percorso o utilizzare un'espressione regolare per specificare tutti i nodi da escludere.<br /> <br /> Escludendo una directory, tale directory <i>e tutti</i> i file e le cartelle in essa contenuti (ovvero l’intera sottostruttura) verranno esclusi.<br /> </td>
+   <td>È possibile specificare un percorso o utilizzare un'espressione regolare per specificare tutti i nodi da escludere.<br /> <br /> Escludendo una directory, tale directory  <i></i> e tutti i file e le cartelle presenti in tale directory (ovvero l’intera sottostruttura) verranno esclusi.<br /> </td>
    <td>/libs/wcm/foundation/components(/.*)?</td>
   </tr>
  </tbody>
@@ -194,7 +194,7 @@ Nella tabella seguente sono descritte le regole e sono riportati alcuni esempi:
 >
 >Un pacchetto può contenere più definizioni di filtro, in modo che i nodi di diverse ubicazioni possano essere facilmente combinati in un unico pacchetto.
 
-I filtri pacchetto vengono definiti più spesso quando [create il pacchetto](#creating-a-new-package)per la prima volta, ma possono essere modificati anche in un secondo momento (dopodiché il pacchetto deve essere rigenerato).
+I filtri pacchetto vengono definiti più spesso quando [create il pacchetto](#creating-a-new-package), ma possono essere modificati anche in un secondo momento (dopodiché il pacchetto deve essere rigenerato).
 
 ### Schermate pacchetto {#package-screenshots}
 
@@ -222,28 +222,28 @@ Pacchetti di funzioni ufficiali:
 
 ## Gestione pacchetti {#package-manager}
 
-Gestione pacchetti gestisce i pacchetti nell&#39;installazione AEM locale. Dopo aver [assegnato le autorizzazioni](#permissions-needed-for-using-the-package-manager) necessarie potete utilizzare Gestione pacchetti per diverse azioni, tra cui la configurazione, la creazione, il download e l&#39;installazione dei pacchetti. Gli elementi chiave da configurare sono:
+Gestione pacchetti gestisce i pacchetti nell&#39;installazione AEM locale. Dopo aver [assegnato le autorizzazioni necessarie](#permissions-needed-for-using-the-package-manager) potete utilizzare Gestione pacchetti per diverse azioni, tra cui la configurazione, la creazione, il download e l&#39;installazione dei pacchetti. Gli elementi chiave da configurare sono:
 
 * [Impostazioni pacchetto](#package-settings)
 * [Filtri pacchetto](#package-filters)
 
-### Autorizzazioni necessarie per l&#39;utilizzo di Gestione pacchetti {#permissions-needed-for-using-the-package-manager}
+### Autorizzazioni necessarie per l&#39;utilizzo di Package Manager {#permissions-needed-for-using-the-package-manager}
 
 Per concedere agli utenti il diritto di creare, modificare, caricare e installare pacchetti, dovete concedere loro le autorizzazioni appropriate nei seguenti percorsi:
 
 * **/etc/packages** (diritti completi esclusa l’eliminazione)
 * il nodo che contiene il contenuto del pacchetto
 
-Consultate [Impostazione delle autorizzazioni](/help/sites-administering/security.md#setting-page-permissions) per le istruzioni sulla modifica delle autorizzazioni.
+Per istruzioni sulla modifica delle autorizzazioni, vedere [Impostazione delle autorizzazioni](/help/sites-administering/security.md#setting-page-permissions).
 
-### Creating a New Package {#creating-a-new-package}
+### Creazione di un nuovo pacchetto {#creating-a-new-package}
 
 Per creare una nuova definizione di pacchetto:
 
-1. Nella schermata di benvenuto AEM, fate clic su **Pacchetti** (oppure, nella console **Strumenti** , fate doppio clic su **Pacchetti**).
+1. Nella schermata di benvenuto AEM, fate clic su **Pacchetti** oppure, dalla console **Strumenti**, fate doppio clic su **Pacchetti**.
 
-1. Selezionate quindi Gestione **** pacchetti.
-1. Fate clic su **Crea pacchetto**.
+1. Selezionate quindi **Gestione pacchetti**.
+1. Fare clic su **Crea pacchetto**.
 
    >[!NOTE]
    >
@@ -282,36 +282,38 @@ Per creare una nuova definizione di pacchetto:
    >
    >Se necessario, potete tornare a questa pagina in un secondo momento.
 
-1. Fate clic su **Modifica** per modificare le impostazioni [del](#package-settings)pacchetto.
+1. Fare clic su **Modifica** per modificare le impostazioni [del pacchetto](#package-settings).
 
    Qui è possibile aggiungere informazioni e/o definire determinate impostazioni; ad esempio, questi includono una descrizione, l&#39; [icona](#package-icons), i bug correlati e aggiungere i dettagli del fornitore.
 
-   Dopo aver modificato le impostazioni, fate clic su **OK** .
+   Fare clic su **OK** al termine della modifica delle impostazioni.
 
-1. Aggiungete **[schermate](#package-screenshots)** al pacchetto come necessario. Quando viene creato il pacchetto, è disponibile un&#39;istanza; se necessario, aggiungete altro utilizzando **Package Screenshot** dalla barra laterale.
+1. Aggiungete **[Screenshots](#package-screenshots)** al pacchetto come necessario. Quando viene creato il pacchetto, è disponibile un&#39;istanza; se necessario, aggiungete altro utilizzando **Package Screenshot** dalla barra laterale.
 
-   Per aggiungere l’immagine effettiva, fai doppio clic sul componente immagine nell’area **Screenshots** , aggiungi un’immagine e fai clic su **OK**.
+   Aggiungete l&#39;immagine effettiva facendo doppio clic sul componente immagine nell&#39;area **Screenshots**, aggiungendo un&#39;immagine e facendo clic su **OK**.
 
-1. Per definire i filtri **[](#package-filters)** pacchetto, trascinate le istanze della definizione **del** filtro dalla barra laterale, quindi fate doppio clic per aprire la finestra di modifica:
+1. Definite i **[filtri pacchetto](#package-filters)** trascinando le istanze del **filtro definizione** dalla barra laterale, quindi fate doppio clic per aprire la finestra di modifica:
 
    ![packagesfilter](assets/packagesfilter.png)
 
    Specifica:
 
-   * **Percorso** directory principale Il contenuto da includere nel pacchetto; può essere la radice di un sottoalbero.
-   * **Le regole** sono facoltative; per le definizioni di pacchetti semplici, non è necessario specificare regole di inclusione o esclusione.
+   * **Percorso**
+radice: il contenuto da includere nel pacchetto; può essere la radice di un sottoalbero.
+   * ****
+RulesRules sono facoltative; per le definizioni di pacchetti semplici, non è necessario specificare regole di inclusione o esclusione.
 
-      Se necessario, potete definire regole [**** Includi **o** Escludi](#package-filters) per definire esattamente il contenuto del pacchetto.
+      Se necessario, potete definire [**Includi** o **Escludi** regole](#package-filters) per definire esattamente il contenuto del pacchetto.
 
-      Aggiungete le regole utilizzando il simbolo **+** , in alternativa rimuovete le regole utilizzando il **-** simbolo. Le regole vengono applicate in base al loro ordine, in modo da posizionarle come necessario utilizzando i pulsanti **Su** e **Giù** .
-   Fate clic su **OK** per salvare il filtro.
+      Aggiungete le regole utilizzando il simbolo **+**, in alternativa rimuovete le regole utilizzando il simbolo **-**. Le regole vengono applicate in base al loro ordine, in modo da posizionarle come necessario utilizzando i pulsanti **Su** e **Giù**.
+   Fare clic su **OK** per salvare il filtro.
 
    >[!NOTE]
    >
-   >Puoi utilizzare tutte le definizioni di filtro necessarie, ma devi fare attenzione a non creare conflitti. Usate **Anteprima** per confermare il contenuto del pacchetto.
+   >Puoi utilizzare tutte le definizioni di filtro necessarie, ma devi fare attenzione a non creare conflitti. Utilizzate **Preview** per confermare quali saranno i contenuti del pacchetto.
 
-1. Per confermare il contenuto del pacchetto, potete utilizzare **Anteprima**. Questo esegue una prova a secco del processo di compilazione ed elenca tutti gli elementi che verranno aggiunti al pacchetto quando viene effettivamente costruito.
-1. Ora potete [creare](#building-a-package) il pacchetto.
+1. Per confermare il contenuto del pacchetto, potete utilizzare **Preview**. Questo esegue una prova a secco del processo di compilazione ed elenca tutti gli elementi che verranno aggiunti al pacchetto quando viene effettivamente costruito.
+1. Ora è possibile [Generare](#building-a-package) il pacchetto.
 
    >[!NOTE]
    >
@@ -319,15 +321,15 @@ Per creare una nuova definizione di pacchetto:
 
 ### Creazione di un pacchetto {#building-a-package}
 
-Spesso un pacchetto viene creato contemporaneamente alla [creazione della definizione](#creating-a-new-package)del pacchetto, ma potete tornare in un momento successivo per creare o ricreare il pacchetto. Questo può essere utile se il contenuto all’interno della directory archivio è stato modificato.
+Spesso un pacchetto viene creato contemporaneamente alla [creazione della definizione del pacchetto](#creating-a-new-package), ma potete tornare in un momento successivo per creare o ricreare il pacchetto. Questo può essere utile se il contenuto all’interno della directory archivio è stato modificato.
 
 >[!NOTE]
 >
->Prima di creare il pacchetto può essere utile visualizzare in anteprima il contenuto del pacchetto. A questo scopo, fate clic su **Anteprima**.
+>Prima di creare il pacchetto può essere utile visualizzare in anteprima il contenuto del pacchetto. Fare clic su **Anteprima**.
 
-1. Aprite la definizione del pacchetto da Gestione **** pacchetti (fate clic sull&#39;icona o sul nome del pacchetto).
+1. Aprite la definizione del pacchetto da **Gestione pacchetti** (fate clic sull&#39;icona o sul nome del pacchetto).
 
-1. Fate clic su **Genera**. Viene visualizzata una finestra di dialogo con richiesta di conferma per confermare la creazione del pacchetto.
+1. Fare clic su **Build**. Viene visualizzata una finestra di dialogo con richiesta di conferma per confermare la creazione del pacchetto.
 
    >[!NOTE]
    >
@@ -339,15 +341,15 @@ Spesso un pacchetto viene creato contemporaneamente alla [creazione della defini
 
 Una volta creato, un pacchetto può essere reinserito, se necessario.
 
-Il rewrapping modifica le informazioni sul pacchetto *senza* modificare il contenuto del pacchetto. Le informazioni sul pacchetto sono la miniatura, la descrizione, ecc., in altre parole tutto ciò che è possibile modificare con la finestra di dialogo Impostazioni **** pacchetto (per aprire questo clic su **Modifica**).
+Il rewrapping modifica le informazioni sul pacchetto - *senza* modificare il contenuto del pacchetto. Le informazioni sul pacchetto sono la miniatura, la descrizione, ecc., in altre parole tutto ciò che è possibile modificare con la finestra di dialogo **Impostazioni pacchetto** (per aprire questo clic **Modifica**).
 
 Un caso di utilizzo importante per il rewrapping è durante la preparazione di un pacchetto. Ad esempio, potreste avere un pacchetto esistente e decidere di condividerlo con altri utenti. Per aggiungere una miniatura, aggiungere una descrizione. Invece di ricreare l&#39;intero pacchetto con tutte le sue funzionalità (che potrebbero richiedere un po&#39; di tempo e comporta il rischio che il pacchetto non sia più identico all&#39;originale) potete reinserirlo e aggiungere semplicemente la miniatura e la descrizione.
 
-1. Aprite la definizione del pacchetto da Gestione **** pacchetti (fate clic sull&#39;icona o sul nome del pacchetto).
+1. Aprite la definizione del pacchetto da **Gestione pacchetti** (fate clic sull&#39;icona o sul nome del pacchetto).
 
-1. Fate clic su **Modifica** e aggiornate le impostazioni **[del](#package-settings)** pacchetto come necessario. Fate clic su **OK** per salvare. 
+1. Fare clic su **Modifica** e aggiornare le impostazioni **[Package Settings](#package-settings)** come necessario. Fate clic su **OK** per salvare. 
 
-1. Fate clic su **Rewrapper**. Viene visualizzata una finestra di dialogo con richiesta di conferma.
+1. Fare clic su **Rewrapper**. Viene visualizzata una finestra di dialogo per richiedere una conferma.
 
 ### Visualizzazione e modifica delle informazioni sul pacchetto {#viewing-and-editing-package-information}
 
@@ -364,20 +366,20 @@ Per visualizzare o modificare le informazioni sulla definizione di un pacchetto:
    >
    >I pulsanti disponibili dipendono dal fatto che il pacchetto sia già stato creato o meno.
 
-1. Se il pacchetto è già stato creato, fate clic su **Contenuto**, si aprirà una finestra con l’elenco completo del contenuto del pacchetto:
+1. Se il pacchetto è già stato creato, fate clic su **Contents**, si aprirà una finestra con l&#39;elenco completo del contenuto del pacchetto:
 
-### Visualizzazione del contenuto del pacchetto e verifica dell’installazione {#viewing-package-contents-and-testing-installation}
+### Visualizzazione del contenuto del pacchetto e installazione di test {#viewing-package-contents-and-testing-installation}
 
 Dopo aver creato un pacchetto, potete visualizzare i contenuti:
 
 1. In Gestione pacchetti, andate al pacchetto da visualizzare.
 1. Fate clic sull&#39;icona del pacchetto da visualizzare. Viene aperta la pagina del pacchetto con le informazioni sulla definizione del pacchetto.
 
-1. Per visualizzare il contenuto fate clic su **Sommario**, si apre una finestra con l’elenco completo del contenuto del pacchetto:
+1. Per visualizzare il contenuto fare clic su **Contents**, si apre una finestra con l&#39;elenco completo del contenuto del pacchetto:
 
    ![packgescontents](assets/packgescontents.png)
 
-1. Per eseguire una prova a secco dell&#39;installazione, fate clic su **Test di installazione**. Dopo aver confermato l’azione, si apre una finestra in cui sono elencati i risultati come se l’installazione fosse stata eseguita:
+1. Per eseguire una prova a secco dell&#39;installazione, fare clic su **Test Installation**. Dopo aver confermato l’azione, si apre una finestra in cui sono elencati i risultati come se l’installazione fosse stata eseguita:
 
    ![packagestestinstall](assets/packagestestinstall.png)
 
@@ -385,7 +387,7 @@ Dopo aver creato un pacchetto, potete visualizzare i contenuti:
 
 Questa sezione descrive come scaricare un pacchetto da AEM al file system utilizzando **Package Manager**.
 
-1. Nella schermata di benvenuto AEM, fate clic su **Pacchetti**, quindi selezionate Gestione **** pacchetti.
+1. Nella schermata di benvenuto AEM, fate clic su **Packages**, quindi selezionate **Package Manager**.
 1. Passate al pacchetto da scaricare.
 
    ![packagesdownload](assets/packagesdownload.png)
@@ -399,7 +401,7 @@ Questa sezione descrive come scaricare un pacchetto da AEM al file system utiliz
 Il caricamento di un pacchetto consente di caricare un pacchetto dal file system in AEM Package Manager.
 Per caricare un pacchetto:
 
-1. Passate a Gestione **pacchetti**. Quindi nella cartella del gruppo in cui desiderate caricare il pacchetto.
+1. Andate alla **Gestione pacchetti**. Quindi nella cartella del gruppo in cui desiderate caricare il pacchetto.
 
    ![packagesuploadbutton](assets/packagesuploadbutton.png)
 
@@ -409,7 +411,7 @@ Per caricare un pacchetto:
 
    * **File**
 
-      È possibile digitare direttamente il nome del file oppure utilizzare **Sfoglia.** per selezionare il pacchetto desiderato dal file system locale (dopo aver selezionato, fare clic su **OK**).
+      È possibile digitare direttamente il nome del file oppure utilizzare il percorso **Sfoglia...** finestra di dialogo per selezionare il pacchetto richiesto dal file system locale (dopo la selezione fare clic su **OK**).
 
    * **Forza caricamento**
 
@@ -418,11 +420,11 @@ Per caricare un pacchetto:
 
    >[!NOTE]
    >
-   >Per rendere il contenuto disponibile a AEM, accertatevi di [installare il pacchetto](#installing-packages).
+   >Per rendere il contenuto disponibile a AEM, [installate il pacchetto](#installing-packages).
 
 ### Convalida dei pacchetti {#validating-packages}
 
-Prima di installare un pacchetto, potreste desiderare verificarne il contenuto. Poiché i pacchetti possono modificare i file sovrapposti in `/apps` e/o aggiungere, modificare e rimuovere ACL, è spesso utile convalidare queste modifiche prima dell&#39;installazione.
+Prima di installare un pacchetto, potreste desiderare verificarne il contenuto. Poiché i pacchetti possono modificare i file sovrapposti in `/apps` e/o aggiungere, modificare e rimuovere ACL, spesso è utile convalidare queste modifiche prima dell&#39;installazione.
 
 #### Opzioni di convalida {#validation-options}
 
@@ -438,11 +440,11 @@ Queste opzioni sono descritte di seguito.
 
    **Elementi controllati**
 
-   Questa convalida esamina il pacchetto per tutti i file JAR (bundle OSGi), ne estrae `manifest.xml` (che contiene le dipendenze con le versioni da cui dipende il bundle OSGi) e verifica che l&#39;istanza AEM esporta tali dipendenze con le versioni corrette.
+   Questa convalida esamina il pacchetto per tutti i file JAR (bundle OSGi), ne estrae i `manifest.xml` (che contiene le dipendenze con le versioni su cui si basa il bundle OSGi) e verifica che l&#39;istanza AEM esporta tali dipendenze con le versioni corrette.
 
    **Come viene segnalato**
 
-   Tutte le dipendenze con versione che non possono essere soddisfatte dall&#39;istanza AEM sono elencate nel registro **** attività di Gestione pacchetti.
+   Tutte le dipendenze con versione che non possono essere soddisfatte dall&#39;istanza AEM sono elencate nel **log attività** di Package Manager.
 
    **Stati di errore**
 
@@ -458,11 +460,11 @@ Queste opzioni sono descritte di seguito.
 
    Questa convalida determina se il pacchetto installato contiene un file già sovrapposto nell&#39;istanza AEM di destinazione.
 
-   Ad esempio, a partire da una sovrapposizione esistente in `/apps/sling/servlet/errorhandler/404.jsp`, un pacchetto che contiene `/libs/sling/servlet/errorhandler/404.jsp`, in modo da modificare il file esistente in `/libs/sling/servlet/errorhandler/404.jsp`.
+   Ad esempio, data una sovrapposizione esistente in `/apps/sling/servlet/errorhandler/404.jsp`, un pacchetto che contiene `/libs/sling/servlet/errorhandler/404.jsp`, in modo da modificare il file esistente in `/libs/sling/servlet/errorhandler/404.jsp`.
 
    **Come viene segnalato**
 
-   Tali sovrapposizioni sono descritte nel registro **delle** attività di Gestione pacchetti.
+   Tali sovrapposizioni sono descritte nel **Registro attività** di Gestione pacchetti.
 
    **Stati di errore**
 
@@ -470,7 +472,7 @@ Queste opzioni sono descritte di seguito.
 
    **Risoluzione errori**
 
-   Per risolvere questo problema, il gestore del file della sovrapposizione in `/apps` deve rivedere le modifiche apportate al file della sovrapposizione in `/libs` e incorporare le modifiche necessarie nella sovrapposizione ( `/apps`), quindi ridistribuire il file della sovrapposizione.
+   Per risolvere questo problema, il gestore del file di sovrapposizione in `/apps` deve rivedere le modifiche apportate al file di sovrapposizione in `/libs` e incorporare le modifiche necessarie nella sovrapposizione ( `/apps`), quindi ridistribuire il file di sovrapposizione.
 
    >[!NOTE]
    >
@@ -484,7 +486,7 @@ Queste opzioni sono descritte di seguito.
 
    **Come viene segnalato**
 
-   Le autorizzazioni sono descritte nel registro **delle** attività di Package Manager.
+   Le autorizzazioni sono descritte in **Activity Log** di Package Manager.
 
    **Stati di errore**
 
@@ -512,13 +514,13 @@ La convalida dei pacchetti può essere eseguita in due modi diversi:
 **Convalida del pacchetto tramite Gestione pacchetti**
 
 1. Apri Gestione pacchetti in `https://<server>:<port>/crx/packmgr`
-1. Selezionate il pacchetto nell’elenco, quindi selezionate **Altro** dall’intestazione e **Convalida** dal menu a discesa.
+1. Selezionate il pacchetto nell&#39;elenco, quindi selezionate il menu a discesa **Altro** dall&#39;intestazione e quindi **Convalida** dal menu a discesa.
 
    >[!NOTE]
    >
    >Questa operazione deve essere eseguita dopo il caricamento del pacchetto di contenuto, ma prima di installare il pacchetto.
 
-1. Nella finestra di dialogo modale visualizzata, utilizzare le caselle di controllo per selezionare i tipi di convalida e iniziare la convalida facendo clic su **Convalida**. In alternativa, fate clic su **Annulla**.
+1. Nella finestra di dialogo modale visualizzata, utilizzare le caselle di controllo per selezionare i tipi di convalida e iniziare la convalida facendo clic su **Validate**. In alternativa, fare clic su **Annulla**.
 
 1. Le convalida scelte vengono quindi eseguite. I risultati vengono visualizzati nel registro attività di Gestione pacchetti.
 
@@ -532,7 +534,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >[!NOTE]
 >
->Il `type` parametro può essere un qualsiasi elenco non ordinato separato da virgole composto da:
+>Il parametro `type` può essere un qualsiasi elenco non ordinato separato da virgole composto da:
 >
 >* `osgiPackageImports`
 >* `overlays`
@@ -540,7 +542,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >
 >
-Il valore di `type` default è impostato su `osgiPackageImports` se non viene passato.
+Se non viene passato, il valore di `type` viene impostato come predefinito su `osgiPackageImports`.
 
 Di seguito è riportato un esempio di utilizzo di cURL per eseguire la convalida di un pacchetto.
 
@@ -556,11 +558,11 @@ Di seguito è riportato un esempio di utilizzo di cURL per eseguire la convalida
 >
 >La risposta a una richiesta di POST HTTP di convalida sarà un oggetto JSON con i risultati della convalida.
 
-### Installazione dei pacchetti {#installing-packages}
+### Installazione di pacchetti {#installing-packages}
 
 Dopo aver caricato un pacchetto, dovete installare il contenuto. Per avere installato e funzionante il contenuto del pacchetto, è necessario che sia:
 
-* caricato in AEM ( [caricato dal file system](#uploading-packages-from-your-file-system) o scaricato da Distribuzione [](#software-distribution)software)
+* caricato in AEM ([caricato dal file system](#uploading-packages-from-your-file-system) o scaricato da [Distribuzione software](#software-distribution))
 
 * installati
 
@@ -571,11 +573,11 @@ Dopo aver caricato un pacchetto, dovete installare il contenuto. Per avere insta
 >Per visualizzare il contenuto o l’impatto di un pacchetto, potete effettuare le seguenti operazioni:
 >
 >* Eseguite un&#39;installazione di prova del pacchetto senza modificare il contenuto:
-   >  Aprite il pacchetto (fate clic sull&#39;icona o sul nome del pacchetto) e fate clic su **Test Install**(Prova installazione).
+   >  Aprite il pacchetto (fate clic sull&#39;icona o sul nome del pacchetto) e fate clic su **Test Install**.
    >
    >
 * Consultate un elenco dei contenuti del pacchetto:
-   >  Aprite il pacchetto e fate clic su **Sommario**.
+   >  Aprite il pacchetto e fate clic su **Contents**.
 
 >
 
@@ -592,7 +594,7 @@ Dopo aver caricato un pacchetto, dovete installare il contenuto. Per avere insta
 >Se state installando delle risorse digitali, dovete:
 >
 >* Innanzitutto, disattivate WorkflowLauncher.
-   >  Per disattivare, utilizzate l’opzione di menu Componenti della console OSGi `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl`.
+   >  Utilizzate l&#39;opzione di menu Componenti della console OSGi per disattivare `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl`.
    >
    >
 * Al termine dell&#39;installazione, riattivate WorkflowLauncher.
@@ -602,29 +604,29 @@ La disattivazione di WorkflowLauncher assicura che il framework di Importazione 
 
 1. In Gestione pacchetti, andate al pacchetto da installare.
 
-   Sul lato dei pacchetti che non sono ancora stati installati viene visualizzato il pulsante **Installa** .
+   Un pulsante **Install** viene visualizzato sul lato dei pacchetti che non sono ancora stati installati.
 
    >[!NOTE]
    >
-   >In alternativa, potete aprire il pacchetto facendo clic sulla relativa icona per accedere al pulsante **Installa** .
+   >In alternativa, potete aprire il pacchetto facendo clic sulla relativa icona per accedere al pulsante **Install**.
 
-1. Fate clic su **Installa** per avviare l&#39;installazione. Viene visualizzata una finestra di dialogo con richiesta di conferma e con l’elenco di tutte le modifiche in corso. Al termine, fate clic su **Chiudi** nella finestra di dialogo.
+1. Fare clic su **Installa** per avviare l&#39;installazione. Viene visualizzata una finestra di dialogo con richiesta di conferma e con l’elenco di tutte le modifiche in corso. Al termine, fare clic su **Chiudi** nella finestra di dialogo.
 
-   La parola **Installato** viene visualizzata accanto al pacchetto dopo che è stato installato.
+   La parola **Installed** viene visualizzata accanto al pacchetto dopo che è stato installato.
 
 ### Caricamento e installazione basati su file system {#file-system-based-upload-and-installation}
 
-Esiste un metodo alternativo per caricare e installare i pacchetti nell’istanza. Nel file system è presente una `crx-quicksart` cartella accanto al file jar e al `license.properties` file. È necessario creare una cartella denominata `install` in `crx-quickstart`. Avrete quindi qualcosa di simile a questo: `<aem_home>/crx-quickstart/install`
+Esiste un metodo alternativo per caricare e installare i pacchetti nell’istanza. Nel file system è presente una cartella `crx-quicksart` con il file jar e `license.properties`. È necessario creare una cartella denominata `install` in `crx-quickstart`. Avrete quindi qualcosa di simile a questo: `<aem_home>/crx-quickstart/install`
 
 In questa cartella di installazione, potete aggiungere direttamente i pacchetti. Saranno automaticamente caricati e installati nell’istanza. Al termine, potete visualizzare i pacchetti in Gestione pacchetti.
 
-Se l’istanza è in esecuzione, l’aggiunta di un pacchetto alla `install` cartella avvia direttamente il caricamento e l’installazione nell’istanza. Se l&#39;istanza non è in esecuzione, i pacchetti inseriti nella `install` cartella verranno installati all&#39;avvio in ordine alfabetico.
+Se l&#39;istanza è in esecuzione, l&#39;aggiunta di un pacchetto alla cartella `install` avvierà direttamente il caricamento e l&#39;installazione nell&#39;istanza. Se l&#39;istanza non è in esecuzione, i pacchetti inseriti nella cartella `install` verranno installati all&#39;avvio in ordine alfabetico.
 
 >[!NOTE]
 >
->È inoltre possibile eseguire questa operazione prima ancora di avviare l&#39;istanza per la prima volta. A tal fine, è necessario creare la `crx-quickstart` cartella manualmente, creare la `install` cartella al suo interno e inserire i pacchetti. Al primo avvio dell&#39;istanza, i pacchetti verranno installati in ordine alfabetico.
+>È inoltre possibile eseguire questa operazione prima ancora di avviare l&#39;istanza per la prima volta. A tal fine, è necessario creare manualmente la cartella `crx-quickstart`, creare la cartella `install` al suo interno e inserire i pacchetti. Al primo avvio dell&#39;istanza, i pacchetti verranno installati in ordine alfabetico.
 
-### Disinstallazione dei pacchetti {#uninstalling-packages}
+### Disinstallazione di pacchetti {#uninstalling-packages}
 
 AEM consente di disinstallare i pacchetti. Questa azione consente di ripristinare i contenuti del repository interessati dallo snapshot creato immediatamente prima dell&#39;installazione del pacchetto.
 
@@ -636,7 +638,7 @@ AEM consente di disinstallare i pacchetti. Questa azione consente di ripristinar
 
 1. In Gestione pacchetti, andate al pacchetto da disinstallare.
 1. Fate clic sull&#39;icona del pacchetto da disinstallare.
-1. Fate clic su **Disinstalla** per rimuovere il contenuto del pacchetto dall&#39;archivio. Viene visualizzata una finestra di dialogo con richiesta di conferma e con l’elenco di tutte le modifiche in corso. Al termine, fate clic su **Chiudi** nella finestra di dialogo.
+1. Fate clic su **Disinstalla** per rimuovere il contenuto del pacchetto dall&#39;archivio. Viene visualizzata una finestra di dialogo con richiesta di conferma e con l’elenco di tutte le modifiche in corso. Al termine, fare clic su **Chiudi** nella finestra di dialogo.
 
 ### Eliminazione di pacchetti {#deleting-packages}
 
@@ -644,9 +646,9 @@ Per eliminare un pacchetto dagli elenchi Gestione pacchetti:
 
 >[!NOTE]
 >
->I file/nodi installati dal pacchetto **non** vengono eliminati.
+>I file/nodi installati dal pacchetto sono **non** eliminati.
 
-1. Nella console **Strumenti** , espandete la cartella **Packages** per mostrare il pacchetto nel riquadro a destra.
+1. Nella console **Strumenti**, espandete la cartella **Packages** per visualizzare il pacchetto nel riquadro a destra.
 
 1. Fate clic sul pacchetto da eliminare in modo che sia evidenziato e quindi:
 
@@ -655,32 +657,32 @@ Per eliminare un pacchetto dagli elenchi Gestione pacchetti:
 
    ![packagesdelete](assets/packagesdelete.png)
 
-1. AEM richiede la conferma dell’eliminazione del pacchetto. Click **OK** to confirm the deletion.
+1. AEM richiede la conferma dell’eliminazione del pacchetto. Fare clic su **OK** per confermare l&#39;eliminazione.
 
 >[!CAUTION]
 >
 >Se il pacchetto è già stato installato, il contenuto *installato* **non** verrà eliminato.
 
-### Replica dei pacchetti {#replicating-packages}
+### Replica di pacchetti {#replicating-packages}
 
 Replicate il contenuto di un pacchetto per installarlo nell&#39;istanza di pubblicazione:
 
-1. In Gestione **** pacchetti, andate al pacchetto da replicare.
+1. In **Gestione pacchetti**, andate al pacchetto da replicare.
 
 1. Fate clic sull&#39;icona o sul nome del pacchetto da replicare per espanderlo.
-1. Nel menu a discesa **Altro** della barra degli strumenti, selezionate **Replica**.
+1. Nel menu a discesa **Altro** della barra degli strumenti, selezionare **Replica**.
 
 ## Condivisione pacchetti {#package-share}
 
 Package Share era un server centralizzato reso disponibile al pubblico per la condivisione di pacchetti di contenuti.
 
-È stato sostituito da Distribuzione [](#software-distribution)software.
+È stato sostituito da [Distribuzione software](#software-distribution).
 
 ## Distribuzione software {#software-distribution}
 
-[Distribuzione](https://downloads.experiencecloud.adobe.com) software è la nuova interfaccia utente progettata per semplificare la ricerca e il download di pacchetti AEM.
+[La ](https://downloads.experiencecloud.adobe.com) distribuzione software è la nuova interfaccia utente progettata per semplificare la ricerca e il download di pacchetti AEM.
 
-Per ulteriori informazioni, consulta la documentazione [sulla distribuzione del](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)software.
+Per ulteriori informazioni, consultare la [Documentazione sulla distribuzione del software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 >[!CAUTION]
 >
