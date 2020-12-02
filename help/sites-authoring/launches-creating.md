@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 94%
 
 ---
 
@@ -20,11 +23,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
+* Il titolo viene visualizzato nella barra laterale [Riferimenti](/help/sites-authoring/author-environment-tools.md#references), dalla quale gli autori possono accedervi per utilizzarlo.
 * Per impostazione predefinita nel lancio vengono incluse le pagine figlie della pagina di origine. Se necessario, potete comunque usare anche solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-administering/msm.md) aggiorna automaticamente le pagine di lancio mano a mano che vengono modificate le pagine sorgente. Per evitare che vengano apportate tali modifiche automatiche, puoi specificare che venga creata una copia statica.
 
-Facoltativamente, puoi specificare **la data (e l’ora) di lancio** per definire quando promuovere e attivare le pagine di lancio. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
+Facoltativamente, puoi specificare la **Data lancio** (e l’ora) per definire quando promuovere e attivare le pagine del lancio. Tuttavia, la **Data lancio** funziona solo in combinazione con il flag **Production Ready** (vedi la sezione [Modifica di una configurazione di lancio](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)). Affinché le azioni vengano effettivamente eseguite in automatico, è necessario impostare entrambe.
 
 ## Creazione di un lancio {#creating-a-launch}
 
@@ -45,9 +48,10 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
       1. Seleziona **Crea** nella barra degli strumenti per aprire la casella di selezione.
       1. Da qui seleziona **Crea lancio** per aprire la procedura guidata.
+
    >[!NOTE]
    >
-   >Nella console **Sites** puoi anche usare la [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) per selezionare una pagina prima di selezionare **Crea**.
+   >Nella console **Sites** è inoltre possibile utilizzare la [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) per scegliere una pagina prima di fare clic su **Crea**.
    >
    >La pagina selezionata verrà così utilizzata come pagina sorgente iniziale.
 
@@ -55,6 +59,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
 
    * Passa alla posizione desiderata.
    * Seleziona le pagine sorgente e conferma (segno di spunta).
+
    Ripeti in base alle esigenze.  
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Includi le pagine secondarie**:
 
       * Specifica se creare il lancio con o senza pagine figlie.  Per impostazione predefinita, le pagine secondarie sono incluse.
+
    Procedi con **Successivo**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -79,19 +85,20 @@ Puoi creare un lancio da Sites o dalla console Lanci:
    * **Titolo lancio**: nome del lancio. Scegli un nome che possa essere facilmente riconosciuto dagli autori.
    * **con contenuto esistente**: il contenuto originale verrà utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
-   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Questa opzione consente di ottenere questo risultato impostando il lancio come [live copy](/help/sites-administering/msm.md).
 
       Per impostazione predefinita, questa opzione è selezionata.
 
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Tocca o fai clic su **Crea** per completare il processo e creare il nuovo lancio. La finestra di dialogo di conferma chiederà se desideri aprire il lancio immediatamente.
 
    Se torni alla console (con **Fine**), puoi visualizzare il lancio (e accedervi) in uno dei due modi seguenti:
 
-   * Dalla [****console Lanci](/help/sites-authoring/launches.md#the-launches-console)
-   * da [**Riferimenti **nella console** Sites **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * Dalla [**** console Lanci](/help/sites-authoring/launches.md#the-launches-console)
+   * da [**Riferimenti** nella console **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Creare un lancio con un nuovo modello {#create-launch-with-new-template}
 
@@ -128,10 +135,10 @@ Un lancio nidificato (lancio all’interno di un altro lancio) dà la possibilit
 
 #### Creazione di un lancio nidificato: console Lanci {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+La creazione di un lancio nidificato dalla console **Lanci** è sostanzialmente la stessa procedura utilizzata per creare qualsiasi altra forma di avvio, con l&#39;eccezione che è necessario passare al ramo avvii `/content/launches`:
 
 1. Nella console **Lanci** seleziona **Crea**.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Seleziona il lancio richiesto e conferma con **Seleziona**:
+1. Fai clic su **Aggiungi pagine**, quindi specifica `/content/launches` nel filtro per individuare il ramo lanci. Scegli il lancio necessario e conferma con **Seleziona**:
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
@@ -144,13 +151,13 @@ Creating a nested launch from the **Launches** console is basically the same as 
 Per creare un lancio nidificato dalla console **Sites**, basato su un lancio esistente:
 
 1. Accedi a [Lancio da Riferimenti (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) per visualizzare le azioni disponibili.
-1. Seleziona **Crea lancio** per aprire la procedura guidata (poiché la sorgente è già stata selezionata, verrà saltato il passaggio **Seleziona origine**).
+1. Seleziona **Crea lancio** per aprire la procedura guidata (poiché l’origine è già stata selezionata, ignorerà il passaggio **Seleziona origine**).
 
 1. Immetti il **Titolo lancio** e tutti gli altri dettagli richiesti (come con un normale lancio).
 
 1. Tocca o fai clic su **Crea** per completare il processo e creare il nuovo lancio. La finestra di dialogo di conferma chiederà se desideri aprire il lancio immediatamente.
 
-   If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
+   Se fai clic su **Fine**, vieni riportato alla barra **Riferimenti** della console **Sites**, se selezioni la pagina appropriata viene visualizzato il tuo nuovo lancio.
 
 ### Eliminazione di un lancio {#deleting-a-launch}
 
