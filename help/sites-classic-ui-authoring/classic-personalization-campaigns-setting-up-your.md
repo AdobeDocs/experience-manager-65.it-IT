@@ -12,6 +12,9 @@ discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 94%
 
 ---
 
@@ -62,7 +65,7 @@ Per creare un nuovo marchio:
 
 1. Fai clic su **Crea**. Il nuovo marchio verrà visualizzato in MCM (con un’icona predefinita).
 
-### Definizione delle proprietà del nuovo marchio {#defining-the-properties-for-your-new-brand}
+### Definizione delle proprietà del nuovo marchio  {#defining-the-properties-for-your-new-brand}
 
 1. Da **Campagne** nel riquadro a sinistra, selezionate l’icona del nuovo marchio nel riquadro a destra e fate clic su **Proprietà...**
 
@@ -72,7 +75,7 @@ Per creare un nuovo marchio:
 
 1. Fate clic su **OK** per salvare. 
 
-### Creazione di una nuova campagna {#creating-a-new-campaign}
+### Creazione di una nuova campagna  {#creating-a-new-campaign}
 
 Per creare una nuova campagna:
 
@@ -86,7 +89,7 @@ Per creare una nuova campagna:
 
 1. Fai clic su **Crea**. La nuova campagna verrà mostrata in MCM.
 
-### Definizione delle proprietà della nuova campagna {#defining-the-properties-for-your-new-campaign}
+### Definizione delle proprietà della nuova campagna  {#defining-the-properties-for-your-new-campaign}
 
 Configura le proprietà per le campagne che controllano il comportamento:
 
@@ -105,7 +108,7 @@ Configura le proprietà per le campagne che controllano il comportamento:
 
 1. Fate clic su **OK** per salvare. 
 
-### Creazione di una nuova esperienza {#creating-a-new-experience}
+### Creazione di una nuova esperienza  {#creating-a-new-experience}
 
 La procedura per la creazione di una nuova esperienza dipende dal tipo di esperienza:
 
@@ -119,7 +122,7 @@ La procedura per la creazione di una nuova esperienza dipende dal tipo di esperi
 >
 >Ora, tuttavia, si consiglia di creare nuove esperienze mediante MCM.
 
-### Configurazione della nuova esperienza {#configuring-your-new-experience}
+### Configurazione della nuova esperienza  {#configuring-your-new-experience}
 
 Una volta creata la base dell’esperienza occorre effettuare le seguenti operazioni, a seconda del tipo di esperienza:
 
@@ -139,7 +142,7 @@ Una volta creata la base dell’esperienza occorre effettuare le seguenti operaz
 
    * [Procedi all’integrazione con Adobe Target](/help/sites-administering/target.md).
 
-### Aggiunta di un nuovo punto di contatto {#adding-a-new-touchpoint}
+### Aggiunta di un nuovo punto di contatto  {#adding-a-new-touchpoint}
 
 Se disponete di esperienze esistenti, potete aggiungere un nuovo punto di contatto direttamente dalla vista Calendario di MCM:
 
@@ -170,7 +173,7 @@ Nel dashboard, potete accedere a tutti i lead facendo clic su **Lead** nel riqua
 >
 >Per aggiungere o modificare gli avatar degli utenti, apri il cloud di clickstream (Ctrl+Alt+C), carica il profilo e fai clic su **Modifica**.
 
-### Creazione di nuovi lead {#creating-new-leads}
+### Creazione di nuovi lead  {#creating-new-leads}
 
 Dopo aver creato nuovi lead, è necessario [attivarli](#activating-or-deactivating-leads) per poterne tracciare l’attività nell’istanza pubblicata e personalizzarne l’esperienza di utilizzo.
 
@@ -236,7 +239,7 @@ Per importare i lead da un elenco separato da virgole:
    >La prima riga nell’elenco CSV contiene etichette predefinite che devono essere scritte esattamente come in questo esempio:
    >
    >
-   >`email,givenName,familyName` - se scritto come `givenname`, ad esempio, il sistema non lo riconoscerà.
+   >`email,givenName,familyName` - se scritto come  `givenname`, ad esempio, il sistema non lo riconoscerà.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -250,7 +253,7 @@ Per importare i lead da un elenco separato da virgole:
 
    Il nuovo lead viene visualizzato nel riquadro Lead. Quando fai clic sulla voce, nel riquadro a destra vengono visualizzate tutte le informazioni inserite. Dopo aver creato un lead, è possibile aggiungerlo a un elenco.
 
-### Aggiunta di lead a elenchi {#adding-leads-to-lists}
+### Aggiunta di lead a elenchi  {#adding-leads-to-lists}
 
 Per aggiungere i lead a elenchi esistenti:
 
@@ -266,7 +269,7 @@ Per aggiungere i lead a elenchi esistenti:
 
 1. Seleziona l’elenco a cui desideri aggiungere i lead e fai clic su **OK**. I lead vengono aggiunti ai relativi elenchi.
 
-### Visualizzazione delle informazioni sui lead {#viewing-lead-information}
+### Visualizzazione delle informazioni sui lead  {#viewing-lead-information}
 
 Per visualizzare le informazioni su un lead, in MCM fai clic sulla casella di selezione accanto al lead. Viene aperto un riquadro a destra contenente le informazioni sul lead, compresi gli elenchi a cui appartiene.
 
@@ -294,7 +297,7 @@ Per modificare le informazioni di un lead:
    >
    >Per cambiare l’avatar del lead, passate al profilo dell’utente. Per caricare il profilo in Client Context, premete CTRL+ALT+C, fate clic su **Carica**, quindi selezionate il profilo.
 
-### Eliminazione di lead esistenti {#deleting-existing-leads}
+### Eliminazione di lead esistenti  {#deleting-existing-leads}
 
 Per eliminare i lead esistenti, in MCM seleziona la casella di selezione accanto al lead e fai clic su **Elimina**. Il lead viene rimosso dall’elenco dei lead e da tutti i relativi elenchi associati.
 
@@ -302,7 +305,7 @@ Per eliminare i lead esistenti, in MCM seleziona la casella di selezione accanto
 >
 >Prima di procedere all’eliminazione, viene chiesto di confermare se si desidera eliminare il lead esistente. Una volta eliminato non sarà più possibile ripristinarlo.
 
-## Utilizzo degli elenchi {#working-with-lists}
+## Utilizzo degli elenchi  {#working-with-lists}
 
 >[!NOTE]
 >
@@ -345,7 +348,7 @@ Per modificare un elenco esistente:
 
 1. Apportate le modifiche necessarie e fate clic su **Salva** per salvarle.
 
-### Eliminazione di elenchi esistenti {#deleting-existing-lists}
+### Eliminazione di elenchi esistenti  {#deleting-existing-lists}
 
 Per eliminare gli elenchi esistenti, in MCM seleziona la casella accanto all’elenco e fai clic su **Elimina**. L’elenco viene rimosso. Non vengono rimossi i lead che appartenevano all’elenco, ma solo l’associazione con l’elenco.
 
@@ -353,7 +356,7 @@ Per eliminare gli elenchi esistenti, in MCM seleziona la casella accanto all’e
 >
 >Prima di procedere all’eliminazione, viene chiesto di confermare se si desidera eliminare l’elenco esistente. Una volta eliminato non sarà più possibile ripristinarlo.
 
-### Unione di elenchi {#merging-lists}
+### Unione di elenchi  {#merging-lists}
 
 È possibile unire un elenco esistente a un altro elenco. Così facendo, l’elenco che viene unito diventa membro dell’altro elenco. Non viene eliminato e resta comunque disponibile come entità separata.
 
@@ -385,7 +388,7 @@ Per unire elenchi esistenti:
 >
 >Per rimuovere un elenco unito dal suo elenco di destinazione si esegue la stessa procedura richiesta per rimuovere un lead da un elenco. Apri la scheda **Elenchi**, seleziona l’elenco che comprende l’elenco unito e rimuovi l’iscrizione facendo clic sul cerchio rosso accanto all’elenco.
 
-### Visualizzazione dei lead negli elenchi {#viewing-leads-in-lists}
+### Visualizzazione dei lead negli elenchi  {#viewing-leads-in-lists}
 
 In qualsiasi momento è possibile vedere quali lead appartengono a uno specifico elenco tramite navigazione o ricerca dei membri.
 
