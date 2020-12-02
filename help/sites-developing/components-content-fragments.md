@@ -1,8 +1,8 @@
 ---
 title: Componenti per frammenti di contenuto
 seo-title: Componenti per frammenti di contenuto
-description: I frammenti di contenuto di AEM vengono creati e gestiti come risorse indipendenti dalle pagine
-seo-description: I frammenti di contenuto di AEM vengono creati e gestiti come risorse indipendenti dalle pagine
+description: AEM frammenti di contenuto vengono creati e gestiti come risorse indipendenti dalla pagina
+seo-description: AEM frammenti di contenuto vengono creati e gestiti come risorse indipendenti dalla pagina
 uuid: 81a9e0fe-ed45-4880-b36c-4f49e2598389
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -22,27 +22,27 @@ ht-degree: 4%
 
 # Componenti per frammenti di contenuto{#components-for-content-fragments}
 
-## Componenti per l’authoring dei frammenti {#components-for-fragment-authoring}
+## Componenti per l&#39;authoring dei frammenti {#components-for-fragment-authoring}
 
 >[!CAUTION]
 >
 >Non è consigliabile estendere o modificare i componenti effettivi utilizzati nell&#39;Editor frammento in quanto sono ancora soggetti a modifiche.
 
-Consultate API di gestione dei frammenti di [contenuto - lato](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side)client.
+Consultate l&#39;API [Content Fragment Management API - Client-Side](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
 ## Componenti per l’authoring delle pagine {#components-for-page-authoring}
 
 >[!CAUTION]
 >
->È ora consigliabile utilizzare il componente [di base del frammento di](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) contenuto. Per ulteriori informazioni, consulta [Sviluppo di componenti](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) di base.
+>È ora consigliabile [Componente di base frammento di contenuto](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html). Per ulteriori informazioni, vedere [Sviluppo di componenti core](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
 >
->In questa sezione viene illustrato il componente originale distribuito per l’uso con i frammenti di contenuto (frammento **di** contenuto nel gruppo **Generale** ).
+>In questa sezione viene illustrato il componente originale distribuito per l&#39;utilizzo con frammenti di contenuto (**Frammento di contenuto** nel gruppo **Generale**).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta anche [Frammenti di contenuto Configurazione dei componenti per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md) .
+>Per ulteriori informazioni, vedere anche [Frammenti di contenuto Configurazione dei componenti per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md).
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche usare una risorsa frammento di contenuto esistente [trascinandola dal browser delle risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, come ad esempio Immagine del componente base). Il componente frammento di contenuto fornito visualizza un solo [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto a cui si fa riferimento. La finestra di dialogo del componente consente di definire l’ [elemento, la variante e l’intervallo di paragrafi](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento da visualizzare sulla pagina.
+I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Per usare una risorsa di frammento di contenuto esistente, puoi anche [trascinarla dal browser delle risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, come ad esempio Immagine componente base). Il componente per frammenti di contenuto fornito visualizza un solo elemento [](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto a cui viene fatto riferimento. Utilizzando la finestra di dialogo del componente è possibile definire l&#39; [elemento, la variante e l&#39;intervallo di paragrafi del frammento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che si desidera visualizzare sulla pagina.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e ges
 
 ### Definizione {#definition}
 
-Il componente Frammento **di** contenuto è utilizzato per contenere un riferimento a una risorsa di frammento di contenuto (risorse di testo migliorate). Il tipo di risorsa per il frammento di contenuto è:
+Il componente **Frammento di contenuto** viene utilizzato per contenere un riferimento a una risorsa di frammento di contenuto (risorse di testo migliorate). Il tipo di risorsa per il frammento di contenuto è:
 
 `dam/cfm/components/contentfragment/contentfragment`
 
@@ -70,7 +70,7 @@ Questa libreria aggiunge all’editor funzioni specifiche per i frammenti di con
 
 ### Contenuto intermedio {#in-between-content}
 
-Il componente **Frammento di** contenuto consente di inserire altri componenti tra i diversi paragrafi dell’ [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)visualizzato. In sostanza, l’elemento visualizzato è composto da paragrafi diversi (ogni paragrafo è contrassegnato da un ritorno a capo). Tra questi paragrafi, è possibile inserire il contenuto utilizzando altri componenti.
+Il componente **Frammenti di contenuto** t consente di inserire componenti aggiuntivi tra i diversi paragrafi dell&#39;elemento [visualizzato ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). In sostanza, l’elemento visualizzato è composto da paragrafi diversi (ogni paragrafo è contrassegnato da un ritorno a capo). Tra questi paragrafi, è possibile inserire il contenuto utilizzando altri componenti.
 
 Da un punto di vista tecnico, ogni paragrafo dell&#39;elemento visualizzato* *vive in parsys propri, e ogni componente aggiunto tra i paragrafi sarà (sotto il cofano) inserito nel parsys.
 
@@ -99,28 +99,28 @@ In sostanza, se la struttura del paragrafo di questa istanza viene modificata (m
 
    * Il contenuto intermedio non verrà visualizzato (il secondo parsys non viene più visualizzato a causa della nuova configurazione).
 
-### Personalizzazione del componente Frammento di contenuto {#customizing-the-content-fragment-component}
+### Personalizzazione del componente frammento di contenuto {#customizing-the-content-fragment-component}
 
 Per utilizzare il componente per frammenti di contenuto out-of-the-box come modello per l’estensione, è necessario rispettare il contratto seguente:
 
 * Riutilizzate lo script di rendering HTL e i relativi POJO associati per vedere in che modo la funzione di contenuto intermedio è implementata.
 * Riutilizzare il nodo del frammento di contenuto: `cq:editConfig`
 
-   * I `afterinsert`/ `afteredit`/ `afterdelete` listener vengono utilizzati per attivare gli eventi JS. Questi eventi saranno gestiti nella libreria `cq.authoring.editor.plugin.cfm` client per visualizzare il contenuto associato nel pannello laterale.
-   * Sono `cq:dropTargets` configurati per supportare il trascinamento di risorse di frammenti di contenuto.
-   * `cq:inplaceEditing` è configurato per supportare la creazione di un frammento di contenuto nell’editor pagina. L’editor locale dei frammenti è definito nella libreria `cq.authoring.editor.plugin.cfm` client e consente di aprire l’ [elemento/variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) corrente nell’editor [dei](/help/assets/content-fragments/content-fragments-variations.md)frammenti mediante un collegamento rapido.
+   * I `afterinsert`/ `afteredit`/ `afterdelete` listener vengono utilizzati per attivare gli eventi JS. Questi eventi saranno gestiti nella `cq.authoring.editor.plugin.cfm` libreria client per visualizzare il contenuto associato nel pannello laterale.
+   * Le `cq:dropTargets` sono configurate per supportare il trascinamento di risorse di frammenti di contenuto.
+   * `cq:inplaceEditing` è configurato per supportare la creazione di un frammento di contenuto nell’editor pagina. L&#39;editor locale del frammento è definito nella libreria client `cq.authoring.editor.plugin.cfm` e consente un collegamento rapido per aprire l&#39;elemento [element/variation](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) corrente nell&#39;editor [frammenti](/help/assets/content-fragments/content-fragments-variations.md).
 
-### Riscrittura delle risorse prima del rendering {#asset-rewriting-before-rendering}
+### Riscrittura risorsa prima del rendering {#asset-rewriting-before-rendering}
 
 Content Fragment Management utilizza un processo di rendering interno per generare l&#39;output HTML finale per una pagina. Questo viene utilizzato internamente dal componente Frammento di contenuto, ma anche dal processo in background che aggiorna i frammenti di riferimento sulle pagine di riferimento.
 
-Internamente, Sling Rewriter viene utilizzato per tale rendering. La configurazione corrispondente si trova in `/libs/dam/config/rewriter/cfm` e può essere regolata se necessario. Per ulteriori informazioni, consulta [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) .
+Internamente, Sling Rewriter viene utilizzato per tale rendering. La configurazione corrispondente si trova in `/libs/dam/config/rewriter/cfm` e può essere regolata se necessario. Per ulteriori informazioni, vedere [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html).
 
 La configurazione out-of-the-box utilizza i seguenti trasformatori:
 
-* `transformer-cfm-payloadfilter` - per il recupero della `body` parte ( `<body>...</body>`) del solo codice HTML del frammento
+* `transformer-cfm-payloadfilter` - per il recupero della  `body` parte (  `<body>...</body>`) del solo codice HTML del frammento
 
 * `transformer-cfm-parfilter` - Rimuove i paragrafi indesiderati se è specificato un intervallo di paragrafi (come può essere fatto con il componente Frammento di contenuto)
 * `transformer-cfm-assetprocessor` - viene utilizzato internamente per recuperare un elenco delle risorse incorporate nel frammento
 
-Il processo di rendering è esposto attraverso [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e può essere sfruttato (ad esempio) da componenti personalizzati, se necessario.
+Il processo di rendering è esposto tramite [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e può essere sfruttato (ad esempio) da componenti personalizzati, se necessario.
