@@ -12,6 +12,9 @@ discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 10%
 
 ---
 
@@ -20,15 +23,15 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 ## Panoramica delle funzioni {#feature-overview}
 
-La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un&#39;iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente, affiancando le differenze evidenziate.
+La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente, affiancando le differenze evidenziate.
 
-Le differenze di pagina consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consultate [Page Diff](/help/sites-authoring/page-diff.md)(Differenza pagina).
+Le differenze di pagina consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, vedere [Page Diff](/help/sites-authoring/page-diff.md).
 
 ## Dettagli operazione {#operation-details}
 
-Quando si confrontano le versioni di una pagina, la versione precedente che l’utente desidera confrontare viene ricreata in background da AEM per facilitare la modifica. È necessario per poter eseguire il rendering del contenuto [per il confronto](/help/sites-developing/pagediff.md#operation-details)affiancato.
+Quando si confrontano le versioni di una pagina, la versione precedente che l&#39;utente desidera confrontare viene ricreata AEM in background per facilitare la diff. Questo è necessario per poter eseguire il rendering del contenuto [per il confronto affiancato](/help/sites-developing/pagediff.md#operation-details).
 
-Questa operazione di ricreazione viene eseguita internamente da AEM, è trasparente per l’utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l&#39;archivio, ad esempio in CRX DE Lite, visualizzerà queste versioni ricreato all&#39;interno della struttura del contenuto.
+Questa operazione di ricreazione viene eseguita da AEM internamente ed è trasparente per l&#39;utente e non richiede alcun intervento. Tuttavia, un amministratore che visualizza l&#39;archivio, ad esempio in CRX DE Lite, visualizzerà queste versioni ricreato all&#39;interno della struttura del contenuto.
 
 Quando si confronta il contenuto, l&#39;intera struttura fino alla pagina da confrontare viene ricreata nel seguente percorso:
 
@@ -36,9 +39,9 @@ Quando si confronta il contenuto, l&#39;intera struttura fino alla pagina da con
 
 Un&#39;attività di pulizia viene eseguita automaticamente per ripulire il contenuto temporaneo.
 
-## Autorizzazioni {#permissions}
+## Autorizzazioni  {#permissions}
 
-Precedentemente, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la diffusione di AEM (ad esempio, l’utilizzo di `cq:text` tag lib o l’integrazione personalizzata del servizio `DiffService` OSGi nei componenti). Questo non è più necessario per la nuova funzione diff, poiché la diff si verifica sul lato client tramite il confronto DOM.
+Precedentemente, nell&#39;interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la AEM diffusione (ad esempio per utilizzare la funzione `cq:text` tag lib o per integrare il servizio `DiffService` OSGi nei componenti). Questo non è più necessario per la nuova funzione diff, poiché la diff si verifica sul lato client tramite il confronto DOM.
 
 Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni.
 
