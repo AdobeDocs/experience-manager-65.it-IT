@@ -85,7 +85,7 @@ Le proprietà sono distribuite su più schede.
 
    Consente di immettere un URL personalizzato per questa pagina, se desideri inserire un URL più breve e/o più significativo.
 
-   For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
+   Ad esempio, se l&#39;URL personalizzato è impostato su `welcome`per la pagina identificata dal percorso `/v1.0/startpage`per il sito Web `http://example.com,`, `http://example.com/welcome`sarà l&#39;URL personalizzato di `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -96,7 +96,7 @@ Le proprietà sono distribuite su più schede.
    >* non devono essere impostati su una pagina esistente.
 
 
-   È inoltre necessario configurare Dispatcher per abilitare l’accesso agli URL personalizzati. Per ulteriori informazioni, consultate [Abilitazione dell&#39;accesso agli URL](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) personalizzati.
+   È inoltre necessario configurare Dispatcher per abilitare l’accesso agli URL personalizzati. Per ulteriori informazioni, consultate [Abilitazione dell&#39;accesso agli URL personalizzati](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls).
 
 * **Reindirizza URL personalizzato**
 
@@ -130,7 +130,7 @@ Le proprietà sono distribuite su più schede.
    >
    >Ad esempio, se definisci un alias di `latin-lang` per il nodo `/content/we-retail/spanish`, è possibile accedere a questa pagina tramite `/content/we-retail/latin-language`.
    >
-   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
+   >Per ulteriori dettagli, consultate [Nomi delle pagine localizzate in SEO e Best practice per la gestione degli URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Ereditato da &lt;*percorso*>**
 
@@ -154,7 +154,7 @@ Le proprietà sono distribuite su più schede.
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
+   >La scheda **[Autorizzazioni](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** consente di modificare le configurazioni CUG in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina sono configurate utilizzando configurazioni CUG obsolete basate sulla presenza della proprietà `cq:cugEnabled`, verrà visualizzato un messaggio di avviso in **Autenticazione richiesta** e l&#39;opzione non sarà modificabile, né l&#39;opzione [Autorizzazioni](/help/sites-authoring/editing-page-properties.md#permissions) sarà modificabile.
    >
    >
    >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -167,7 +167,7 @@ Le proprietà sono distribuite su più schede.
 
    Consente di specificare una configurazione di esportazione.
 
-### Miniatura  {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Mostra la miniatura della pagina. Operazioni disponibili:
 
@@ -217,7 +217,7 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
    >[!NOTE]
    >Questa opzione richiede che l’account utente appartenga al gruppo `Target Adminstrators`.
 
-### Autorizzazioni  {#permissions}
+### Autorizzazioni   {#permissions}
 
 * **Autorizzazioni**
 
@@ -229,14 +229,14 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
    * Visualizzare le [Autorizzazioni effettive](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. Se le autorizzazioni della pagina utilizzano configurazioni del gruppo utenti chiuso obsolete, basate sulla proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avvertenza e non sarà possibile modificare né l’opzione né l&#39;Autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced).
+   >La scheda **Autorizzazioni** consente di modificare le configurazioni CUG in base alla presenza del mixin `granite:AuthenticationRequired`. Se le autorizzazioni della pagina utilizzano configurazioni del gruppo utenti chiuso obsolete, basate sulla proprietà `cq:cugEnabled`, viene visualizzato un messaggio di avvertenza e non sarà possibile modificare né l’opzione né l&#39;Autenticazione nella scheda [Avanzate](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >In questo caso, le autorizzazioni del gruppo utenti chiuso devono essere modificate [nell’interfaccia classica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >La scheda Autorizzazioni non consente di creare gruppi utenti chiusi che siano vuoti; una soluzione utile per negare l’accesso a tutti gli utenti. A questo scopo devi usare CRX Explorer. See the document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+   >La scheda Autorizzazioni non consente di creare gruppi utenti chiusi che siano vuoti; una soluzione utile per negare l’accesso a tutti gli utenti. A questo scopo devi usare CRX Explorer. Per ulteriori informazioni, consulta il documento [Amministrazione di utenti, gruppi e diritti di accesso](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
@@ -244,13 +244,13 @@ Consente di definire la variante del frammento esperienza utilizzato per generar
 
    Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Livecopy**
 
    Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito  {#site-structure}
+### Struttura sito   {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
@@ -298,7 +298,7 @@ Quando modifichi una pagina puoi utilizzare **Informazioni pagina** per definire
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
+1. Selezionare **Apri proprietà** e si apre una finestra di dialogo che consente di modificare le proprietà, ordinate in base alla scheda appropriata. A destra della barra degli strumenti sono disponibili anche i seguenti pulsanti:
 
    * **Annulla**
    * **Salva e chiudi**
