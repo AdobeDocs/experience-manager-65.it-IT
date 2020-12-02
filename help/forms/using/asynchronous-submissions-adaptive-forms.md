@@ -31,23 +31,23 @@ Per ulteriori informazioni sull&#39;invio asincrono nei moduli adattivi, consult
 Per configurare l&#39;invio asincrono per un modulo adattivo:
 
 1. In modalità di creazione moduli adattivi, selezionare l&#39;oggetto Contenitore modulo e toccare ![cmppr1](assets/cmppr1.png) per aprirne le proprietà.
-1. Nella sezione Proprietà **[!UICONTROL invio]** , abilitare **[!UICONTROL Usa invio]** asincrono.
-1. Nella sezione **[!UICONTROL Al momento dell&#39;invio]** , selezionare una delle opzioni seguenti da eseguire in caso di invio corretto del modulo.
+1. Nella sezione delle proprietà **[!UICONTROL Invia]**, abilitare **[!UICONTROL Usa invio asincrono]**.
+1. Nella sezione **[!UICONTROL Su invio]**, selezionare una delle opzioni seguenti da eseguire in caso di invio corretto del modulo.
 
-   * **[!UICONTROL Reindirizza a URL]**: Reindirizza all&#39;URL o alla pagina specificati all&#39;invio del modulo. Potete specificare un URL o individuare il percorso di una pagina nel campo URL/percorso **[!UICONTROL di]** reindirizzamento.
+   * **[!UICONTROL Reindirizza a URL]**: Reindirizza all&#39;URL o alla pagina specificati all&#39;invio del modulo. Potete specificare un URL o sfogliare per scegliere il percorso di una pagina nel campo **[!UICONTROL URL/Percorso di reindirizzamento]**.
    * **[!UICONTROL Mostra messaggio]**: Visualizza un messaggio all&#39;invio del modulo. È possibile scrivere un messaggio nel campo di testo sotto l&#39;opzione Mostra messaggio. Il campo di testo supporta la formattazione RTF.
 
 1. Toccate ![check-button1](assets/check-button1.png) per salvare le proprietà.
 
 ## Funzionamento dell&#39;invio asincrono {#how-asynchronous-submission-works}
 
-I AEM Forms forniscono gestori di errori e di successo out-of-the-box per l&#39;invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
+ AEM Forms fornisce handler out-of-the-box per l&#39;invio di moduli con esito positivo e errore. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
 
 Inoltre, autori e sviluppatori di moduli possono scrivere regole a livello di modulo per ignorare i gestori predefiniti. Per ulteriori informazioni, vedere [Ignorare i gestori predefiniti utilizzando le regole](#custom).
 
 Esaminiamo innanzitutto la risposta del server per gli eventi di successo e di errore.
 
-### Risposta del server per l&#39;evento di successo invio {#server-response-for-submission-success-event}
+### Risposta del server all&#39;evento di completamento invio {#server-response-for-submission-success-event}
 
 La struttura per la risposta del server per l&#39;evento di successo dell&#39;invio è la seguente:
 
@@ -99,10 +99,10 @@ Gli sviluppatori di moduli e gli autori possono scrivere regole, a livello di mo
 
 Effettuate le seguenti operazioni per scrivere le regole nell&#39;editor di codice per gestire gli eventi di successo e di errore.
 
-1. Aprite il modulo adattivo in modalità di creazione, selezionate un oggetto modulo qualsiasi e toccate ![edit-rules1](assets/edit-rules1.png) per aprire l&#39;editor di regole.
-1. Selezionare **[!UICONTROL Modulo]** nella struttura Oggetti modulo e toccare **[!UICONTROL Crea]**.
-1. Selezionate Editor **[!UICONTROL di]** codice dal menu a discesa di selezione della modalità.
-1. Nell&#39;editor di codice, tocca **[!UICONTROL Modifica codice]**. Toccate **[!UICONTROL Modifica]** nella finestra di dialogo di conferma.
-1. Scegliete **[!UICONTROL Invio]** o **[!UICONTROL Errore nell&#39;invio]** dall&#39;elenco a discesa **[!UICONTROL Evento]** .
-1. Scrivete una regola per l&#39;evento selezionato e toccate **[!UICONTROL Fine]** per salvare la regola.
+1. Aprite il modulo adattivo in modalità di creazione, selezionate un oggetto modulo e toccate ![edit-rules1](assets/edit-rules1.png) per aprire l&#39;editor delle regole.
+1. Selezionare **[!UICONTROL Form]** nella struttura degli oggetti modulo, quindi toccare **[!UICONTROL Crea]**.
+1. Selezionare **[!UICONTROL Editor di codice]** dal menu a discesa di selezione della modalità.
+1. Nell&#39;editor di codice, toccare **[!UICONTROL Modifica codice]**. Toccate **[!UICONTROL Modifica]** nella finestra di dialogo di conferma.
+1. Scegliere **[!UICONTROL Invio riuscito]** o **[!UICONTROL Errore in invio]** dal menu a discesa **[!UICONTROL Evento]**.
+1. Scrivere una regola per l&#39;evento selezionato e toccare **[!UICONTROL Fine]** per salvare la regola.
 
