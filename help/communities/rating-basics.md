@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
 source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
 
 
-# Classificazione di base {#rating-essentials}
+# Classificazione Essentials {#rating-essentials}
 
-Il componente Valutazione, una sottoclasse [Tally](tally.md) , consente ai membri della community di assegnare un punteggio a una funzione sul sito Web.
+Il componente di valutazione, una sottoclasse [tally](tally.md), consente ai membri della community di assegnare un punteggio a una funzione sul sito Web.
 
-È possibile posizionare più istanze di un componente di voto sulla stessa pagina; ogni istanza deve essere configurata con una `tally name` proprietà univoca.
+È possibile posizionare più istanze di un componente di voto sulla stessa pagina; ogni istanza deve essere configurata con una proprietà `tally name` univoca.
 
 L&#39;invio anonimo di una valutazione non è supportato. I visitatori del sito devono registrarsi ed effettuare l’accesso per partecipare a una valutazione solo una volta. Il visitatore che ha effettuato l’accesso (membro) può cambiare la propria valutazione in qualsiasi momento.
 
@@ -33,7 +36,7 @@ L&#39;invio anonimo di una valutazione non è supportato. I visitatori del sito 
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusa</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>modalità </i>di progettazione</td>
+   <td>Sì - le proprietà sono modificabili in <i>modalità di progettazione </i>modo</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -49,7 +52,7 @@ L&#39;invio anonimo di una valutazione non è supportato. I visitatori del sito 
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td><p>Vedere <a href="rating.md">Utilizzo della valutazione</a></p> </td>
+   <td><p>Vedere <a href="rating.md">Utilizzo della classificazione</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -67,16 +70,16 @@ L&#39;invio anonimo di una valutazione non è supportato. I visitatori del sito 
 ### Accesso alle valutazioni registrate (UGC) {#accessing-posted-ratings-ugc}
 
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
+Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider delle risorse di storage - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
-* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica.
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Panoramica](srp.md)  del provider delle risorse di storage - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con linee guida di codifica SRP](accessing-ugc-with-srp.md) .
+* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
