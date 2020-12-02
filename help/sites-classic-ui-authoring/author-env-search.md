@@ -12,6 +12,9 @@ discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 86%
 
 ---
 
@@ -43,11 +46,13 @@ Il pannello di ricerca consente di effettuare ricerche in tutte le pagine del si
 >
 >* [Caratteri jolly](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operatori booleani](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [Espressioni regolari](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Gruppi di campi](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Incremento](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+
 >
 
 
@@ -76,7 +81,8 @@ Nella console **Siti web**, l’opzione di menu **Trova e sostituisci** consente
    * Definire il termine sostitutivo
    * Specificare se nella ricerca è necessario distinguere tra maiuscole e minuscole
    * Specificare se cercare solo parole intere (in caso contrario vengono trovate anche le sottostringhe)
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+
+   Facendo clic su **Preview** vengono elencati i punti in cui è stato trovato il termine. È possibile selezionare o deselezionare le istanze specifiche da sostituire:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -89,7 +95,7 @@ L’ambito predefinito del servlet di ricerca e sostituzione include le seguenti
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+L&#39;ambito può essere modificato utilizzando la console di gestione Web Apache Felix (ad esempio, in `https://localhost:4502/system/console/configMgr`). Selezionare `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configurare l&#39;ambito come necessario.
 
 >[!NOTE]
 >
