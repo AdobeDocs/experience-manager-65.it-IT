@@ -1,5 +1,5 @@
 ---
-title: Personalizza ed estende [!DNL Assets]
+title: Personalizza ed estendi [!DNL Assets]
 description: Scoprite come personalizzare ed estendere l’Editor risorse e condivisione di risorse, che offre agli utenti un’interfaccia e un set di funzionalità specifici.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Personalizza ed estende [!DNL Assets] {#customizing-and-extending-assets}
+# Personalizzare ed estendere [!DNL Assets] {#customizing-and-extending-assets}
 
 Asset Editor è il principale punto di accesso che gli utenti di un sito Web Enterprise Manager  utilizzeranno per trovare, visualizzare e manipolare le risorse digitali presenti nell’archivio.
 
@@ -26,7 +26,7 @@ In qualità di [!DNL Experience Manager] sviluppatore, potete personalizzare ed 
 * [Sviluppo proxy delle risorse](proxy.md)
 * [Procedure ottimali per la configurazione di ImageMagick](best-practices-for-imagemagick.md)
 
-## Personalizzare l’aspetto {#customizing-the-look-and-feel}
+## Personalizzare l&#39;aspetto {#customizing-the-look-and-feel}
 
 È possibile personalizzare i seguenti aspetti dell’aspetto e del comportamento dell’Editor risorse:
 
@@ -36,6 +36,6 @@ In qualità di [!DNL Experience Manager] sviluppatore, potete personalizzare ed 
 
 ## Personalizzare le rappresentazioni {#customizing-renditions}
 
-Nella [!DNL Experience Manager Assets] terminologia una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in una dimensione ridotta e un’altra in scala di grigio.
+In [!DNL Experience Manager Assets] terminologia, una rappresentazione è il modulo in cui viene presentata una risorsa. In generale, una particolare risorsa può avere più rappresentazioni. Ad esempio, l’immagine a colori interi può avere una rappresentazione nelle dimensioni originali, un’altra in una dimensione ridotta e un’altra in scala di grigio.
 
 Le rappresentazioni in cui è disponibile una particolare risorsa possono essere personalizzate e create nuove rappresentazioni.
