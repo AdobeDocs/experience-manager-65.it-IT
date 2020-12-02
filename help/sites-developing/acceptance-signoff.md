@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
 translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 0%
 
 ---
 
 
-# Accettazione e annullamento{#acceptance-and-sign-off}
+# Accettazione e cancellazione{#acceptance-and-sign-off}
 
-Come indicato, i test di [accettazione](/help/sites-developing/planning.md) sono una categoria speciale di test utilizzati per verificare che:
+Come indicato, i [test di accettazione](/help/sites-developing/planning.md) sono una categoria speciale di test utilizzata per verificare che:
 
 * Project soddisfa i requisiti del cliente.
 * Il cliente accetta il progetto.
