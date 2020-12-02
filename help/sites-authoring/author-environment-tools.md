@@ -286,11 +286,11 @@ Informazioni pagina (icona equalizzatore) mostra un menu che fornisce anche dett
 Ad esempio, quando appropriato, da **Informazioni pagina** possono essere disponibili le funzioni seguenti:
 
 * [Promuovi lancio](/help/sites-authoring/launches-promoting.md) se la pagina è un lancio.
-* [Apri nell’interfaccia](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) classica se questa opzione è stata [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
+* [Apri nell’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interfaccia classicase questa opzione è stata  [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
 
 Inoltre, da **Informazioni pagina** è possibile accedere ad analisi e consigli.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina    {#page-modes}
 
 Quando si modifica una pagina sono disponibili varie modalità che consentono di configurare diverse azioni:
 
@@ -330,7 +330,7 @@ Puoi accedere a questi elementi mediante l’icona nell’angolo in alto a destr
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offrono una funzione di auto-completamento e il [browser Percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più affidabile.
 
-### Campi percorso   {#path-fields}
+### Campi percorso    {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull’utilizzo e la modifica dei componenti consulta [Componenti per l’authoring di pagine](/help/sites-authoring/default-components.md).
 
