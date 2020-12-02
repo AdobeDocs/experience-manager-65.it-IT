@@ -25,31 +25,31 @@ ht-degree: 1%
 
 La funzione di messaggistica di  AEM Communities consente ai visitatori del sito che hanno effettuato l’accesso (membri) di inviare messaggi a un altro utente accessibili una volta effettuato l’accesso al sito.
 
-La messaggistica è abilitata per un sito community selezionando una casella durante la creazione [del sito](/help/communities/sites-console.md)community.
+La messaggistica è abilitata per un sito community selezionando una casella durante la creazione del sito community [](/help/communities/sites-console.md).
 
 Questa pagina contiene informazioni sulla configurazione predefinita e sulle possibili regolazioni.
 
-Per ulteriori informazioni per gli sviluppatori, consulta [Messaging Essentials](/help/communities/essentials-messaging.md).
+Per ulteriori informazioni per gli sviluppatori, vedere [Messaging Essentials](/help/communities/essentials-messaging.md).
 
-## Servizio Operazioni di messaggistica {#messaging-operations-service}
+## Servizio operazioni di messaggistica {#messaging-operations-service}
 
-La configurazione [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica l&#39;endpoint che gestisce le richieste correlate ai messaggi, le cartelle che il servizio deve utilizzare per la memorizzazione dei messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
+La configurazione [ AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica l&#39;endpoint che gestisce le richieste correlate ai messaggi, le cartelle che il servizio deve utilizzare per memorizzare i messaggi e, se i messaggi possono includere allegati, quali tipi di file sono consentiti.
 
-Per i siti della community creati utilizzando l&#39; `Communities Sites console`, esiste già un&#39;istanza del servizio, con la casella in entrata impostata su `/mail/inbox`.
+Per i siti della community creati utilizzando `Communities Sites console`, esiste già un&#39;istanza del servizio, con la inbox impostata su `/mail/inbox`.
 
-### Servizio Operazioni di messaggistica community {#community-messaging-operations-service}
+### Servizio Operazioni messaggistica community {#community-messaging-operations-service}
 
-Come mostrato di seguito, esiste una configurazione del servizio per i siti creati con la procedura guidata [per la creazione del](/help/communities/sites-console.md)sito. Per visualizzare o modificare la configurazione, fai clic sull’icona matita accanto alla configurazione.
+Come mostrato di seguito, esiste una configurazione del servizio per i siti creati con la [creazione guidata sito](/help/communities/sites-console.md). Per visualizzare o modificare la configurazione, fai clic sull’icona matita accanto alla configurazione.
 
 ![messaggistica-operazioni](assets/messaging-operations.png)
 
 ### Aggiungi nuova configurazione {#add-new-configuration}
 
-Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+** accanto al nome del servizio:
+Per aggiungere una nuova configurazione, selezionate l&#39;icona più &quot;**+**&quot; accanto al nome del servizio:
 
 * **Campi  messaggio Inserì nell&#39;elenco Consentiti**
 
-   Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *oggetto* e *contenuto*.
+   Specifica le proprietà del componente Componi messaggio che gli utenti possono modificare e mantenere. Se vengono aggiunti nuovi elementi modulo, l&#39;ID elemento dovrà essere aggiunto se lo si desidera per essere memorizzato nell&#39;SRP. Il valore predefinito è due voci: *subject* e *content*.
 
 * **Limite dimensione casella messaggio**
 
@@ -57,7 +57,7 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **Limite conteggio messaggi**
 
-   Numero totale di messaggi consentiti per utente. Un valore pari a -1 indica che è consentito un numero illimitato di messaggi, in base al limite delle dimensioni delle finestre di messaggio. Il valore predefinito è *10000* (10 k).
+   Numero totale di messaggi consentiti per utente. Un valore pari a -1 indica che è consentito un numero illimitato di messaggi, in base al limite delle dimensioni delle finestre di messaggio. Il valore predefinito è *10000* (10k).
 
 * **Notifica errore di consegna**
 
@@ -73,7 +73,7 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **Numero di tentativi**
 
-   Numero di volte per cui provare a inviare nuovamente il messaggio che non viene recapitato. Default is *3*.
+   Numero di volte per cui provare a inviare nuovamente il messaggio che non viene recapitato. Il valore predefinito è *3*.
 
 * **Attendi tra i tentativi**
 
@@ -81,15 +81,15 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **Conteggio dimensioni pool di aggiornamento**
 
-   Numero di thread simultanei utilizzati per l&#39;aggiornamento del conteggio. Default is *10*.
+   Numero di thread simultanei utilizzati per l&#39;aggiornamento del conteggio. Il valore predefinito è *10*.
 
 * **Percorso Inbox**
 
-   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la `inbox` cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/inbox*.
+   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la cartella `inbox`. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/inbox*.
 
 * **Percorso elementi inviati**
 
-   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la `sent items` cartella. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/sentitems* .
+   (*Obbligatorio*) Il percorso, relativo al nodo dell&#39;utente (/home/users/*username*), da utilizzare per la cartella `sent items`. Il percorso NON deve terminare con una barra finale &#39;/&#39;. Il valore predefinito è */mail/sentitems*.
 
 * **Allegati di supporto**
 
@@ -101,11 +101,11 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **N. massimo dei destinatari totali**
 
-   Se la messaggistica del gruppo è abilitata, specifica il numero massimo di destinatari ai quali è possibile inviare il messaggio del gruppo alla volta. Default is *100*.
+   Se la messaggistica del gruppo è abilitata, specifica il numero massimo di destinatari ai quali è possibile inviare il messaggio del gruppo alla volta. Il valore predefinito è *100*.
 
 * **Dimensione batch**
 
-   Numero di messaggi da raggruppare in batch per un&#39;invio a un gruppo esteso di destinatari. Default is *100*.
+   Numero di messaggi da raggruppare in batch per un&#39;invio a un gruppo esteso di destinatari. Il valore predefinito è *100*.
 
 * **Dimensione totale attacco**
 
@@ -113,31 +113,31 @@ Per aggiungere una nuova configurazione, selezionate l&#39;icona più&#x200B;**+
 
 * **Tipo di allegato  inserii nell&#39;elenco Bloccati**
 
-   Un  inserii nell&#39;elenco Bloccati di estensioni di nomi file, con il prefisso &#39;**.**&quot;, che verrà rifiutato dal sistema. Se non  inserire nell&#39;elenco Bloccati, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
+   Un  inserire nell&#39;elenco Bloccati di estensioni del nome file, con il prefisso &quot;**.**&quot;, che verrà rifiutato dal sistema. Se non  inserire nell&#39;elenco Bloccati, l&#39;estensione è consentita. Le estensioni possono essere aggiunte o rimosse utilizzando le icone &#39;**+**&#39; e &#39;**-**&#39;.
 
 * **Tipi di allegati consentiti**
 
-   **(*Action Required*)** Un  inserì nell&#39;elenco Consentiti di estensioni di nomi file, l&#39;opposto del inserire nell&#39;elenco Bloccati . Per consentire tutte le estensioni del nome file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona &#39;**-**&#39; per rimuovere la singola voce vuota.
+   **(*Azione richiesta*)** Un  inserì nell&#39;elenco Consentiti di estensioni di nomi file, l&#39;opposto del inserire nell&#39;elenco Bloccati . Per consentire tutte le estensioni del nome file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona &quot;**-**&quot; per rimuovere la singola voce vuota.
 
 * **Selezione servizio**
 
-   (*Obbligatorio*) Un percorso assoluto (endpoint) attraverso il quale il servizio viene chiamato (una risorsa virtuale). La radice del percorso scelto deve essere inclusa nell&#39;impostazione di configurazione *Percorsi* di esecuzione della configurazione OSGi [ , `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)ad esempio `/bin/`, `/apps/`e `/services/`. Per selezionare questa configurazione per la funzione di messaggistica di un sito, questo endpoint viene fornito come **`Service selector`** valore per la funzione `Message List and Compose Message components` (vedere Funzione [](/help/communities/configure-messaging.md)Messaggio).
+   (*Obbligatorio*) Un percorso assoluto (endpoint) attraverso il quale viene chiamato il servizio (una risorsa virtuale). La radice del percorso scelto deve essere inclusa nell&#39;impostazione di configurazione *Percorsi di esecuzione* della configurazione OSGi [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), ad esempio `/bin/`, `/apps/` e `/services/`. Per selezionare questa configurazione per la funzione di messaggistica di un sito, questo endpoint viene fornito come il valore **`Service selector`** per la `Message List and Compose Message components` (vedere [Funzione messaggio](/help/communities/configure-messaging.md)).
 
    Il valore predefinito è */bin/messaging* .
 
 * **campo Inserì nell&#39;elenco Consentiti**
 
-   Usa campi **messaggio  Inserì nell&#39;elenco Consentiti**.
+   Utilizzare i campi messaggio **Inserì nell&#39;elenco Consentiti**.
 
 >[!CAUTION]
 >
->Ogni volta che una `Messaging Operations Service` configurazione viene aperta per la modifica, se `allowedAttachmentTypes.name` è stata rimossa, viene aggiunta una voce vuota per rendere la proprietà configurabile. Una singola voce vuota disattiva efficacemente gli allegati.
+>Ogni volta che si apre una configurazione `Messaging Operations Service` per la modifica, se `allowedAttachmentTypes.name` è stato rimosso, viene aggiunta una voce vuota per rendere la proprietà configurabile. Una singola voce vuota disattiva efficacemente gli allegati.
 >
->Per consentire tutte le estensioni di file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzate l&#39;icona **-** per rimuovere (di nuovo) la singola voce vuota prima di fare clic su **Salva**.
+>Per consentire tutte le estensioni del nome file, ad eccezione di quelle  inserire nell&#39;elenco Bloccati, utilizzare l&#39;icona &quot;**-**&quot; per (di nuovo) rimuovere la singola voce vuota prima di fare clic su **Salva**.
 
-## Group Messaging {#group-messaging}
+## Messaggi di gruppo {#group-messaging}
 
-Per consentire agli utenti registrati di inviare messaggi diretti in massa a gruppi di utenti, accertatevi di **abilitare i messaggi** di gruppo nelle due istanze seguenti della configurazione **Messaging Operation Services** :
+Per consentire agli utenti registrati di inviare messaggi diretti in massa a gruppi di utenti, assicurarsi di **Abilitare i messaggi di gruppo** nelle due seguenti istanze della configurazione **Messaging Operation Services**:
 
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
@@ -152,8 +152,8 @@ Per consentire agli utenti registrati di inviare messaggi diretti in massa a gru
 
 ## Risoluzione dei problemi {#troubleshooting}
 
-Un modo per risolvere i problemi è attivare i messaggi di [debug nel registro.](/help/sites-administering/troubleshooting.md)
+Un modo per risolvere i problemi consiste nell&#39;abilitare [il debug dei messaggi nel registro.](/help/sites-administering/troubleshooting.md)
 
-Vedi anche [Loggers e Scrittori per i Servizi](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services)individuali.
+Vedere anche [Registratori e scrittori per servizi individuali](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
 Il pacchetto da monitorare è `com.adobe.cq.social.messaging`.
