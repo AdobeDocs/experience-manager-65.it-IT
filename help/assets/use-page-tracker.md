@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Utilizzare il tracciatore di pagina e il codice da incorporare nelle pagine Web {#using-page-tracker-and-embed-code-in-web-pages}
 
-Page Tracker è un codice JavaScript che viene incluso nel codice di siti Web di terze parti per consentire  Adobe Analytics di acquisire i dati di utilizzo [!DNL Adobe Experience Manager Assets] su questi siti Web.
+Page Tracker è un codice JavaScript che viene incluso nel codice di siti Web di terze parti per consentire  Adobe Analytics di acquisire dati di utilizzo in [!DNL Adobe Experience Manager Assets] su questi siti Web.
 
 Per acquisire eventi, come clic e così via, specifici per le risorse, includete anche il codice da incorporare nel codice dei siti Web di terze parti.
 
@@ -59,7 +59,7 @@ Il seguente codice di esempio mostra l’aspetto di una pagina Web che contiene 
 </html>
 ```
 
-## Aggiunta di codice tracciatore pagina {#adding-page-tracker-code}
+## Aggiungi codice tracciatore pagina {#adding-page-tracker-code}
 
 Potete aggiungere il codice di tracciamento delle pagine nella sezione di intestazione del codice del sito Web. Il frammento di codice seguente visualizza il codice Tracciatore pagina incluso in una pagina Web di esempio:
 
@@ -79,7 +79,7 @@ Potete aggiungere il codice di tracciamento delle pagine nella sezione di intest
  </head>
 ```
 
-## Aggiunta di codice da incorporare {#add-embed-code}
+## Aggiungi codice da incorporare {#add-embed-code}
 
 Il codice da incorporare viene aggiunto all’interno del corpo del codice del sito Web. Il frammento di codice seguente visualizza il codice da incorporare incluso in una pagina Web di esempio:
 
