@@ -11,11 +11,14 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
 
-# Estrazione di stringhe per la conversione{#extracting-strings-for-translating}
+# Estrazione di stringhe per tradurre{#extracting-strings-for-translating}
 
 Utilizzate xgettext-maven-plugin per estrarre le stringhe dal codice sorgente che devono essere tradotte. Il plugin Maven estrae le stringhe in un file XLIFF che si invia per la traduzione. Le stringhe vengono estratte dalle seguenti posizioni:
 
@@ -65,7 +68,7 @@ La parte pattern di una regola viene utilizzata per corrispondere ai nomi dei fi
 | Prefisso | Effetto |
 |---|---|
 | / | Indica un percorso JCR. Pertanto, questo prefisso corrisponde ai file sotto la directory jcr_root. |
-|  &amp;ast; | Indica un file regolare nel file system. |
+| &amp;ast; | Indica un file regolare nel file system. |
 | nessuno | Nessun prefisso o un pattern che inizia con un nome di cartella o file indica un file regolare nel file system. |
 
 Se utilizzato all&#39;interno di un pattern, il carattere / indica una sottodirectory e &amp;ast; il carattere corrisponde a tutti. Nella tabella seguente sono elencate diverse regole di esempio.
@@ -134,7 +137,7 @@ mvn xgettext:extract
 ### File di output {#output-files}
 
 * `raw.xliff`: stringhe estratte
-* `warn.log`: eventuali avvertenze, se `CQ.I18n.getMessage()` l&#39;API viene utilizzata in modo errato. Questi hanno sempre bisogno di una correzione e poi di una nuova esecuzione.
+* `warn.log`: eventuali avvertenze, se l&#39; `CQ.I18n.getMessage()` API viene utilizzata in modo errato. Questi hanno sempre bisogno di una correzione e poi di una nuova esecuzione.
 
 * `parserwarn.log`: eventuali avvertenze del parser, ad esempio problemi del parser js
 * `potentials.xliff`: candidati &quot;potenziali&quot; che non sono estratti, ma potrebbero essere stringhe leggibili dall&#39;uomo che necessitano di traduzione (possono essere ignorati, producono ancora una grande quantità di falsi positivi)
