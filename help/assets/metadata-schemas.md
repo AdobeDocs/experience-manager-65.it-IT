@@ -1,5 +1,5 @@
 ---
-title: 'Schemi di metadati per definire il layout della pagina delle proprietà dei [!DNL Adobe Experience Manager Assets]metadati. '
+title: 'Schemi di metadati per definire il layout della pagina delle proprietà dei metadati in [!DNL Adobe Experience Manager Assets]. '
 description: Lo schema metadati definisce il layout della pagina delle proprietà e le proprietà dei metadati visualizzate per le risorse. Scoprite come creare uno schema di metadati personalizzato, modificare lo schema di metadati e applicare lo schema di metadati alle risorse.
 contentOwner: AG
 translation-type: tm+mt
@@ -15,72 +15,72 @@ ht-degree: 7%
 
 Le organizzazioni dispongono di un modello di metadati che migliora l’individuazione delle risorse, l’utilizzo, l’interoperabilità e così via. La corretta applicazione di metadati è fondamentale per mantenere i flussi di lavoro e i processi basati su metadati. Per aderire alla strategia e agli standard dei metadati a livello di organizzazione, potete utilizzare schemi di metadati che aiutano gli utenti DAM ad allineare. [!DNL Adobe Experience Manager] consente di creare, gestire e applicare schemi di metadati in modo semplice e flessibile.
 
-Gli schemi [!DNL Adobe Experience Manager Assets]contengono campi specifici per informazioni specifiche da compilare. Contiene inoltre informazioni sul layout per visualizzare i campi di metadati in modo semplice e intuitivo. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e altro. Potete usare l’editor Forms [!UICONTROL Schema] metadati per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
+In [!DNL Adobe Experience Manager Assets], gli schemi contengono campi specifici per informazioni specifiche da compilare. Contiene inoltre informazioni sul layout per visualizzare i campi di metadati in modo semplice e intuitivo. Le proprietà dei metadati includono titolo, descrizione, tipi MIME, tag e altro. È possibile utilizzare l&#39;editor [!UICONTROL Schema metadati Forms] per modificare gli schemi esistenti o aggiungere schemi di metadati personalizzati.
 
 Per visualizzare e modificare la pagina delle proprietà di una risorsa, effettuate le seguenti operazioni:
 
-1. Fate clic sull’opzione **[!UICONTROL Visualizza proprietà]** dalle azioni rapide nella sezione delle risorse nella vista a schede. In alternativa, seleziona una risorsa e fai clic su **[!UICONTROL Proprietà]** per ![visualizzare le proprietà](assets/do-not-localize/info-circle-icon.png) dalla barra degli strumenti.
+1. Fate clic sull&#39;opzione **[!UICONTROL Visualizza proprietà]** nelle azioni rapide nella sezione della risorsa nella vista a schede. In alternativa, seleziona una risorsa e fai clic su **[!UICONTROL Proprietà]** ![Visualizza proprietà](assets/do-not-localize/info-circle-icon.png) nella barra degli strumenti.
 
-1. Potete modificare le varie proprietà di metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare il [!UICONTROL tipo] di risorsa nella scheda [!UICONTROL Base] della pagina delle proprietà.
+1. Potete modificare le varie proprietà di metadati modificabili nelle schede disponibili. Tuttavia, non è possibile modificare la risorsa [!UICONTROL Type] nella scheda [!UICONTROL Basic] della pagina delle proprietà.
 
    ![Scheda di base Proprietà risorsa, in cui il tipo di risorsa non può essere modificato](assets/asset-properties-basic-tab.png)
 
-*Figura: Scheda Base in[!UICONTROL Proprietà]risorsa.*
+*Figura: Scheda Base in  [!UICONTROL Proprietà] risorsa.*
 
-Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, consultate [Modifica Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) schema metadati. Se modificate lo schema di metadati di un tipo MIME, viene modificato il layout della pagina delle proprietà per le risorse e tutti i sottotipi. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
+Per modificare il tipo MIME di una risorsa, utilizzate un modulo schema di metadati personalizzato o modificate un modulo esistente. Per ulteriori informazioni, vedere [Modifica schema metadati Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms). Se modificate lo schema di metadati di un tipo MIME, viene modificato il layout della pagina delle proprietà per le risorse e tutti i sottotipi. Ad esempio, modificando uno schema jpeg in `default/image` viene modificato solo il layout dei metadati (proprietà risorsa) per le risorse con tipo MIME `image/jpeg`. Tuttavia, se modificate lo schema predefinito, le modifiche apportate modificheranno il layout dei metadati per tutti i tipi di risorse.
 
-## Metadata Schema forms {#default-metadata-schema-forms}
+## Moduli schema metadati {#default-metadata-schema-forms}
 
-Per visualizzare un elenco di moduli o modelli, nell&#39; [!DNL Experience Manager] interfaccia passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi **[!UICONTROL di]** metadati.
+Per visualizzare un elenco di moduli o modelli, nell&#39;interfaccia [!DNL Experience Manager] passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**.
 
 [!DNL Experience Manager] fornisce i seguenti modelli di modulo Schema metadati.
 
 | Modelli |  | Descrizione |
 |---|---|---|
 | [!UICONTROL impostazione predefinita] |  | Modulo schema metadati di base per le risorse. |
-|  | I seguenti moduli secondari ereditano le proprietà del modulo [!UICONTROL predefinito] : |  |
+|  | I seguenti moduli secondari ereditano le proprietà del modulo [!UICONTROL predefinito]: |  |
 |  | <ul><li>[!UICONTROL dm_video]</li></ul> | Modulo di schema per video Contenuti multimediali dinamici. |
-|  | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME, ad esempio `image/jpeg` e `image/png`. <br> Il modulo [!UICONTROL immagine] include i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con [!UICONTROL jpeg]di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con il sottotipo TIFF.</li></ul> |
+|  | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME quali `image/jpeg` e `image/png`. <br> L&#39;  immagine presenta i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: Modulo schema per risorse con  [!UICONTROL jpeg] di tipo secondario.</li> <li>[!UICONTROL tiff]: Modulo schema per le risorse con il sottotipo TIFF.</li></ul> |
 |  | <ul><li>[!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME, ad esempio `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Modulo schema per risorse con PDF di tipo secondario. |
 |  | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse video con tipo MIME, ad esempio `video/avi` e `video/mp4`. |
 | [!UICONTROL collection] |  | Modulo schema per le raccolte. |
-| [!UICONTROL contentFragment] |  | [Modulo schema per frammenti](/help/sites-developing/customizing-content-fragments.md)di contenuto. |
-| [!UICONTROL forms] |  | Questo modulo schema si riferisce a [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL contentFragment] |  | [Modulo schema per frammenti](/help/sites-developing/customizing-content-fragments.md) di contenuto. |
+| [!UICONTROL forms] |  | Questo modulo schema si riferisce a [ Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Modulo di schema per contenuti generati dall&#39;utente e risorse integrate  Experience Manager dai social media. |
 
 >[!NOTE]
 >
 >Per visualizzare i moduli secondari di un modulo schema, fare clic sul nome del modulo schema.
 
-## Aggiunta di uno schema di metadati {#add-a-metadata-schema-form}
+## Aggiungere un modulo di schema di metadati {#add-a-metadata-schema-form}
 
 Per aggiungere uno schema di metadati, effettuate le seguenti operazioni:
 
-1. Per aggiungere un modello personalizzato all’elenco, fate clic su **[!UICONTROL Crea]** dalla barra degli strumenti.
+1. Per aggiungere un modello personalizzato all&#39;elenco, fare clic su **[!UICONTROL Crea]** nella barra degli strumenti.
 
    >[!NOTE]
    >
    >Un simbolo di blocco viene visualizzato con i modelli non modificati. Se personalizzate un modello, esso non è bloccato ![blocco chiuso](assets/do-not-localize/lock_closed_icon.svg).
 
-1. Nella finestra di dialogo, specificare il titolo del modulo schema e fare clic su **[!UICONTROL Crea]** per completare il processo di creazione del modulo.
+1. Nella finestra di dialogo, fornire il titolo del modulo schema e fare clic su **[!UICONTROL Crea]** per completare il processo di creazione del modulo.
 
-## Modificare i moduli dello schema di metadati {#edit-metadata-schema-forms}
+## Modifica moduli schema metadati {#edit-metadata-schema-forms}
 
 È possibile modificare un modulo di schema di metadati appena aggiunto o esistente. Il modulo schema metadati include schede ed elementi modulo all&#39;interno di schede. È possibile mappare/configurare questi elementi del modulo su un campo all’interno di un nodo di metadati nell’archivio CRX. È possibile aggiungere schede o elementi modulo al modulo schema di metadati. Le schede e gli elementi del modulo derivati dall&#39;elemento padre sono nello stato bloccato. Non è possibile modificarle a livello di figlio.
 
-1. Nella pagina Forms [!UICONTROL Schema] metadati, selezionate un modulo e fate clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
+1. Nella pagina [!UICONTROL Schema metadati Forms], selezionare un modulo e fare clic su **[!UICONTROL Modifica]** nella barra degli strumenti.
 
-1. Nella pagina Editor **[!UICONTROL modulo schema]** metadati, personalizzate il modulo di metadati. Trascinare i componenti necessari dalla scheda **[!UICONTROL Genera modulo]** su una delle schede.
+1. Nella pagina **[!UICONTROL Editor modulo schema metadati]**, personalizzare il modulo dei metadati. Trascinare i componenti necessari dalla scheda **[!UICONTROL Crea modulo]** in una delle schede.
 
    ![Editor schema metadati per personalizzare la pagina Proprietà risorsa](assets/metadata-schema-editor.png)
 
-   *Figura: Pagina Editor[!UICONTROL di moduli schema]metadati con schede disponibili.*
+   *Figura: Pagina  [!UICONTROL Schema metadati Form ] Editor con schede disponibili.*
 
-1. Per configurare un componente, selezionatelo e modificatene le proprietà nella scheda **[!UICONTROL Impostazioni]** .
+1. Per configurare un componente, selezionatelo e modificatene le proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
-### Componenti nella scheda [!UICONTROL Genera modulo] {#components-within-the-build-form-tab}
+### Componenti nella scheda [!UICONTROL Crea modulo] {#components-within-the-build-form-tab}
 
-Nella scheda **[!UICONTROL Genera modulo]** sono elencati gli elementi del modulo utilizzati nel modulo schema. La scheda **[!UICONTROL Impostazioni]** fornisce gli attributi di ogni elemento selezionato nella scheda **[!UICONTROL Modulo]** di creazione. Nella tabella seguente sono elencati gli elementi del modulo disponibili nella scheda **[!UICONTROL Genera modulo]** :
+Nella scheda **[!UICONTROL Crea modulo]** sono elencati gli elementi del modulo utilizzati nel modulo schema. La scheda **[!UICONTROL Impostazioni]** fornisce gli attributi di ogni elemento selezionato nella scheda **[!UICONTROL Crea modulo]**. Nella tabella seguente sono elencati gli elementi del modulo disponibili nella scheda **[!UICONTROL Crea modulo]**:
 
 | Nome componente | Descrizione |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
@@ -101,7 +101,7 @@ Nella scheda **[!UICONTROL Genera modulo]** sono elencati gli elementi del modul
 
 #### Modificare il componente metadati {#edit-the-metadata-component}
 
-Per modificare le proprietà di un componente di metadati sul modulo, fate clic sul componente per modificare tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]** .
+Per modificare le proprietà di un componente di metadati sul modulo, fare clic sul componente per modificare tutte o un sottoinsieme delle seguenti proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
 **Etichetta** campo: Nome della proprietà di metadati visualizzata nella pagina delle proprietà della risorsa.
 
@@ -123,11 +123,11 @@ Per garantire che il componente venga visualizzato correttamente nel modulo dell
 * **Scelte**: Utilizzare questa proprietà per specificare le scelte in un elenco.
 * **Descrizione** : Utilizzate questa proprietà per aggiungere una breve descrizione per il componente di metadati.
 * **Classe**: Classe oggetto a cui è associata la proprietà.
-* **Elimina**: Fare clic su [!UICONTROL Elimina] per eliminare un componente dal modulo schema.
+* **Elimina**: Fare clic su   Elimina per eliminare un componente dal modulo schema.
 
 >[!NOTE]
 >
->Il componente Campo  nascosto non include questi attributi. ma include proprietà quali Nome, Valore, Etichetta campo e Descrizione. I valori per il componente Campo nascosto vengono inviati come parametro POST ogni volta che la risorsa viene salvata. Non viene salvato come metadati per la risorsa.
+>Il componente [!UICONTROL Campo nascosto] non include questi attributi. ma include proprietà quali Nome, Valore, Etichetta campo e Descrizione. I valori per il componente Campo nascosto vengono inviati come parametro POST ogni volta che la risorsa viene salvata. Non viene salvato come metadati per la risorsa.
 
 Se selezioni l’opzione **[!UICONTROL Obbligatorio]**, puoi cercare le risorse per le quali mancano i metadati obbligatori. Dal pannello **[!UICONTROL Filtri]**, espandi il predicato **[!UICONTROL Convalida metadati]** e seleziona l’opzione **[!UICONTROL Non valido]**. Nei risultati della ricerca vengono visualizzate le risorse per le quali mancano i metadati obbligatori, che sono stati configurati dal modulo schema.
 
@@ -147,13 +147,13 @@ Per visualizzare una scheda qualsiasi nella pagina delle proprietà, oltre alla 
 
 Invece di specificare le proprietà delle opzioni nella scheda **[!UICONTROL Impostazioni]**, puoi definire le opzioni in un file JSON, specificando le coppie chiave-valore corrispondenti. Nel campo **[!UICONTROL Percorso JSON]**, specifica il percorso del file JSON.
 
-#### Aggiunta o eliminazione di una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
+#### Aggiungere o eliminare una scheda nel modulo schema {#adding-deleting-a-tab-in-the-schema-form}
 
-L’editor dello schema consente di aggiungere o eliminare una scheda. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
+L’editor dello schema consente di aggiungere o eliminare una scheda. Il modulo schema predefinito include le schede **[!UICONTROL Base]**, **[!UICONTROL Avanzate]**, **[!UICONTROL IPTC]** e **[!UICONTROL IPTC Extension]**.
 
 ![Schede predefinite nel modulo Schema metadati](assets/metadata-schema-form-tabs.png)
 
-Fare clic `+` per aggiungere una scheda a un modulo schema. Per impostazione predefinita, la nuova scheda ha il nome `Unnamed-1`. Potete modificare il nome dalla scheda **[!UICONTROL Impostazioni]** . Fare clic `X` per eliminare una scheda.
+Fare clic su `+` per aggiungere una scheda a un modulo schema. Per impostazione predefinita, la nuova scheda ha il nome `Unnamed-1`. È possibile modificare il nome dalla scheda **[!UICONTROL Impostazioni]**. Fare clic su `X` per eliminare una scheda.
 
 ![Aggiunta o eliminazione di una scheda mediante l’Editor schema metadati](assets/metadata-schema-form-new-tab.png)
 
@@ -176,7 +176,7 @@ Di seguito sono riportati alcuni casi d’uso per i quali potete definire metada
 * Modifica le opzioni visualizzate per un particolare campo in base al valore specificato in un altro campo.
 * Impostate il valore di metadati predefinito in un particolare campo in base al valore specificato in un altro campo.
 
-### Configurare i metadati CSS in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+### Configurare i metadati a cascata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Considerate uno scenario in cui visualizzare i metadati a cascata in base al tipo di risorsa selezionata. Alcuni esempi
 
@@ -185,26 +185,26 @@ Considerate uno scenario in cui visualizzare i metadati a cascata in base al tip
 
 Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul copyright come campo obbligatorio.
 
-1. Nell’ [!DNL Experience Manager] interfaccia, andate a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**.
-1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. Nell&#39;interfaccia [!DNL Experience Manager], passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**.
+1. Nella pagina **[!UICONTROL Schema Forms]** selezionare un modulo schema, quindi fare clic su **[!UICONTROL Modifica]** dalla barra degli strumenti per modificare lo schema.
 
    ![select_form](assets/select_form.png)
 
-1. (Facoltativo) Nell’editor dello schema di metadati, create un nuovo campo da personalizzare. Specificate un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]** .
+1. (Facoltativo) Nell’editor dello schema di metadati, create un nuovo campo da personalizzare. Specificare un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]**.
 
-   Per creare una nuova scheda, fate clic `+` per aggiungere una scheda e quindi un campo di metadati.
+   Per creare una nuova scheda, fate clic su `+` per aggiungere una scheda e quindi un campo di metadati.
 
    ![add_tab](assets/add_tab.png)
 
-1. Aggiungi un campo a discesa per il tipo di risorsa. Specificate un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]** . Aggiungete una descrizione facoltativa.
+1. Aggiungi un campo a discesa per il tipo di risorsa. Specificare un nome e un percorso di proprietà nella scheda **[!UICONTROL Impostazioni]**. Aggiungete una descrizione facoltativa.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. Le coppie di valori chiave sono le opzioni fornite all&#39;utente del modulo. Puoi fornire le coppie chiave-valore manualmente o da un file JSON.
 
-   * Per specificare manualmente i valori, selezionate **[!UICONTROL Aggiungi manualmente]**, quindi fate clic su **[!UICONTROL Aggiungi scelta]** e specificate il testo e il valore dell’opzione. Ad esempio, specificate i tipi di risorse Video, PDF, Word e Immagine.
+   * Per specificare i valori manualmente, selezionare **[!UICONTROL Aggiungi manualmente]**, quindi fare clic su **[!UICONTROL Aggiungi scelta]** e specificare il testo e il valore dell&#39;opzione. Ad esempio, specificate i tipi di risorse Video, PDF, Word e Immagine.
 
-   * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso]** JSON e fornite il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all&#39;utente.
+   * Per recuperare i valori da un file JSON in modo dinamico, selezionate **[!UICONTROL Aggiungi tramite percorso JSON]** e fornite il percorso del file JSON. [!DNL Experience Manager] recupera le coppie chiave-valore in tempo reale quando il modulo viene presentato all&#39;utente.
 
    Entrambe le opzioni si escludono a vicenda. Non potete importare le opzioni da un file JSON e modificarle manualmente.
 
@@ -224,12 +224,12 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    ![video_Depend_fields](assets/video_dependent_fields.png)
 
-1. Per creare una dipendenza tra il campo del tipo di risorsa e altri campi, scegliete il campo dipendente e aprite la scheda **[!UICONTROL Regole]** .
+1. Per creare una dipendenza tra il campo del tipo di risorsa e altri campi, scegliete il campo dipendente e aprite la scheda **[!UICONTROL Regole]**.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
-1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Click **[!UICONTROL Done]** to save the changes.
+1. In **[!UICONTROL Requisiti]**, scegliere l&#39;opzione **[!UICONTROL Obbligatorio, in base alla nuova opzione]**.
+1. Fate clic su **[!UICONTROL Aggiungi regola]** e scegliete il campo **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Fare clic su **[!UICONTROL Fine]** per salvare le modifiche.
 
    ![define_rule](assets/define_rule.png)
 
@@ -239,7 +239,7 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
 1. In **[!UICONTROL Visibilità]**, scegli l’opzione **[!UICONTROL Visibile, in base alla nuova regola]**.
 
-1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Click **[!UICONTROL Done]** to save the changes.
+1. Fate clic su **[!UICONTROL Aggiungi regola]** e scegliete il campo **[!UICONTROL Tipo risorsa]** per creare una dipendenza. Scegli anche il valore del campo in cui creare la dipendenza. In questo caso, scegli **[!UICONTROL Video]**. Fare clic su **[!UICONTROL Fine]** per salvare le modifiche.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -252,7 +252,7 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
    >Puoi applicare la condizione **[!UICONTROL Requisito]** e **[!UICONTROL Visibilità]**, pur lasciandole indipendenti tra di loro.
 
 1. Analogamente, create una dipendenza tra il valore Video nel campo Tipo risorsa e altri campi, come Codec e Durata.
-1. Ripetete i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo Tipo [!UICONTROL di] risorsa e i campi quali Conteggio  pagina e [!UICONTROL Autore].
+1. Ripetete i passaggi per creare una dipendenza tra le risorse del documento (PDF e Word) nel campo [!UICONTROL Tipo risorsa] e nei campi quali [!UICONTROL Conteggio pagina] e [!UICONTROL Autore].
 1. Fai clic su **[!UICONTROL Salva]**. Applicate lo schema di metadati a una cartella.
 
 1. Andate alla cartella alla quale avete applicato lo schema metadati e aprite la pagina delle proprietà di una risorsa. A seconda della scelta effettuata nel campo Tipo risorsa, vengono visualizzati i campi di metadati CSS pertinenti.
@@ -265,7 +265,7 @@ Indipendentemente dal tipo di risorsa scelta, visualizzate le informazioni sul c
 
    *Figura: Cascading metadata for a document.*
 
-## Eliminazione di moduli schema metadati {#delete-metadata-schema-forms}
+## Elimina moduli schema metadati {#delete-metadata-schema-forms}
 
 [!DNL Experience Manager] consente di eliminare solo i moduli schema personalizzati. Non consente di eliminare i moduli/modelli di schema predefiniti. Tuttavia, è possibile eliminare qualsiasi modifica personalizzata in questi moduli.
 
@@ -273,7 +273,7 @@ Per eliminare un modulo, selezionarlo e fare clic su Elimina.
 
 >[!NOTE]
 >
->* Dopo aver eliminato le modifiche personalizzate a un modulo predefinito, il ![blocco chiuso](assets/do-not-localize/lock_closed_icon.svg) viene nuovamente visualizzato prima del modulo. Indica che il modulo viene ripristinato allo stato predefinito.
+>* Dopo aver eliminato le modifiche personalizzate a un modulo predefinito, il blocco ![closed](assets/do-not-localize/lock_closed_icon.svg) viene nuovamente visualizzato prima del modulo. Indica che il modulo viene ripristinato allo stato predefinito.
 >* Non è possibile eliminare i moduli di schema di metadati predefiniti in [!DNL Assets].
 
 
@@ -281,20 +281,20 @@ Per eliminare un modulo, selezionarlo e fare clic su Elimina.
 
 [!DNL Experience Manager] fornisce moduli predefiniti per vari tipi MIME. Tuttavia, è possibile aggiungere moduli personalizzati per risorse di vari tipi MIME.
 
-### Aggiunta di nuovi moduli per i tipi MIME {#add-new-forms-for-mime-types}
+### Aggiungere nuovi moduli per i tipi MIME {#add-new-forms-for-mime-types}
 
-Creare un modulo con il tipo appropriato. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. Il titolo del modulo schema è il nome del sottotipo. In this case, the title is `png`.
+Creare un modulo con il tipo appropriato. Ad esempio, per aggiungere un modello per il sottotipo `image/png`, creare il modulo sotto i moduli &quot;immagine&quot;. Il titolo del modulo schema è il nome del sottotipo. In questo caso, il titolo è `png`.
 
 #### Utilizzare un modello di schema esistente per vari tipi MIME {#use-an-existing-schema-template-for-various-mime-types}
 
-È possibile utilizzare un modello esistente per un tipo MIME diverso. Ad esempio, utilizzare il `image/jpeg` modulo per le risorse di tipo MIME `image/png`.
+È possibile utilizzare un modello esistente per un tipo MIME diverso. Ad esempio, utilizzare il modulo `image/jpeg` per le risorse di tipo MIME `image/png`.
 
-In questo caso, creare un nodo `/etc/dam/metadataeditor/mimetypemappings` nell&#39;archivio CRX. Specificare un nome per il nodo e definire le seguenti proprietà:
+In questo caso, create un nodo in `/etc/dam/metadataeditor/mimetypemappings` nell&#39;archivio CRX. Specificare un nome per il nodo e definire le seguenti proprietà:
 
 | Nome | Descrizione | Tipo | Valore |
 |------|-------------|------|-------|
 | `exposedmimetype` | Nome del modulo esistente da mappare | `String` | `image/jpeg` |
-| `mimetypes` | Elenco di tipi MIME che utilizzano il modulo definito nell&#39; `exposedmimetype` attributo | `String` | `image/png` |
+| `mimetypes` | Elenco di tipi MIME che utilizzano il modulo definito nell&#39;attributo `exposedmimetype` | `String` | `image/png` |
 
 [!DNL Assets] mappa i seguenti tipi MIME e moduli di schema:
 
@@ -312,11 +312,11 @@ In questo caso, creare un nodo `/etc/dam/metadataeditor/mimetypemappings` nell&#
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## Come concedere l’accesso agli schemi di metadati {#grant-access-to-metadata-schemas}
+## Concedere l&#39;accesso agli schemi di metadati {#grant-access-to-metadata-schemas}
 
-La funzione Schema metadati è disponibile solo per gli amministratori. Tuttavia, gli amministratori possono fornire l&#39;accesso ai non amministratori modificando alcune autorizzazioni. Fornite agli utenti non amministratori le autorizzazioni per creare, modificare ed eliminare la `/conf` cartella.
+La funzione Schema metadati è disponibile solo per gli amministratori. Tuttavia, gli amministratori possono fornire l&#39;accesso ai non amministratori modificando alcune autorizzazioni. Fornite agli utenti non amministratori le autorizzazioni di creazione, modifica ed eliminazione nella cartella `/conf`.
 
-## Applicare metadati specifici per le cartelle {#apply-folder-specific-metadata}
+## Applica metadati specifici per le cartelle {#apply-folder-specific-metadata}
 
 [!DNL Assets] consente di definire una variante di uno schema di metadati e applicarlo a una cartella specifica.
 
@@ -328,26 +328,26 @@ L’ereditarietà dei metadati per risorse si basa sullo schema applicato alla c
 
 È possibile applicare uno schema diverso nella sottocartella. Le risorse all’interno di una sottocartella ereditano lo schema di metadati della sottocartella immediata. Se a livello di sottocartella non viene applicato alcuno schema o lo stesso schema, le risorse ereditano lo schema dalla cartella principale.
 
-1. Nell’ [!DNL Experience Manager] interfaccia, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
-1. Selezionare la casella di controllo prima di un modulo, ad esempio il modulo di metadati predefinito, fare clic su **[!UICONTROL Copia]** e salvarlo come modulo personalizzato. Specificare un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
+1. Nell&#39;interfaccia [!DNL Experience Manager], passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
+1. Selezionare la casella di controllo prima di un modulo, ad esempio il modulo di metadati predefinito, quindi fare clic su Copia **[!UICONTROL e salvarlo come modulo personalizzato.]** Specificare un nome personalizzato per il modulo, ad esempio `my_default`. In alternativa, è possibile creare un modulo personalizzato.
 
-1. Nella pagina Forms **[!UICONTROL Schema]** metadati, selezionate il `my_default` modulo, quindi fate clic su **[!UICONTROL Modifica]**.
+1. Nella pagina **[!UICONTROL Schema metadati Forms]**, selezionare il modulo `my_default`, quindi fare clic su **[!UICONTROL Modifica]**.
 
-1. Nella pagina Editor **[!UICONTROL schema]** metadati, aggiungere un campo di testo al modulo schema. Ad esempio, aggiungere un campo con l&#39;etichetta **[!UICONTROL Categoria]**.
+1. Nella pagina **[!UICONTROL Editor schema metadati]** aggiungere un campo di testo al modulo schema. Ad esempio, aggiungere un campo con l&#39;etichetta **[!UICONTROL Categoria]**.
 
    ![Campo di testo aggiunto all&#39;Editor moduli schema metadati](assets/text-field-metadata-schema-editor.png)
 
    *Figura: Campo di testo aggiunto all&#39;editor di moduli dello schema di metadati.*
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Forms **[!UICONTROL Schema]** metadati.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Schema metadati Forms]**.
 1. Fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
 1. Selezionare la cartella in cui applicare lo schema modificato, quindi fare clic su **[!UICONTROL Applica]**.
 
    ![Selezionare la cartella in cui applicare lo schema metadati](assets/metadata-schema-select-folder.png)
 
-1. Se alla cartella è applicato un altro schema di metadati, viene visualizzato un messaggio di avviso che informa che lo schema di metadati esistente sta per essere sovrascritto. Fate clic su **Sovrascrivi**.
-1. Fate clic su **OK** per chiudere il messaggio di riuscita.
+1. Se alla cartella è applicato un altro schema di metadati, viene visualizzato un messaggio di avviso che informa che lo schema di metadati esistente sta per essere sovrascritto. Fare clic su **Sovrascrivi**.
+1. Fare clic su **OK** per chiudere il messaggio di riuscita.
 1. Andate alla cartella a cui avete applicato lo schema di metadati modificato.
 
 ## Definire i metadati obbligatori {#define-mandatory-metadata}
@@ -358,8 +358,8 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 >
 >Un campo di metadati può essere definito come obbligatorio in base al valore di un altro campo. Nella vista a schede, [!DNL Experience Manager] non visualizza il messaggio di avviso relativo ai metadati mancanti per tali campi di metadati obbligatori.
 
-1. Nell’ [!DNL Experience Manager] interfaccia, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > Schemi di **[!UICONTROL metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
-1. Salvare il modulo di metadati predefinito come modulo personalizzato. Ad esempio, salvatelo con nome `my_default`.
+1. Nell&#39;interfaccia [!DNL Experience Manager], passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]** > **[!UICONTROL Schemi metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
+1. Salvare il modulo di metadati predefinito come modulo personalizzato. Ad esempio, salvarlo come `my_default`.
 
 1. Modificare il modulo personalizzato. Aggiungere un campo obbligatorio. Ad esempio, aggiungere un campo **[!UICONTROL Categoria]** e rendere il campo obbligatorio.
 
@@ -367,13 +367,13 @@ Potete definire i campi obbligatori a livello di cartella, che vengono applicati
 
    *Figura: Campo obbligatorio nell&#39;editor di moduli dello schema di metadati.*
 
-1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina Forms **[!UICONTROL Schema]** metadati. Selezionate il modulo e fate clic su **[!UICONTROL Applica a cartella]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
+1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Schema metadati Forms]**. Selezionate il modulo, quindi fate clic su **[!UICONTROL Applica alle cartelle]** nella barra degli strumenti per applicare i metadati personalizzati a una cartella.
 
 1. Individuate la cartella e caricate alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
 
    ![Messaggio per metadati obbligatori mancanti nella vista scheda delle risorse durante il caricamento delle risorse nella cartella](assets/metadata-missing-info-card-view.png)
 
-1. (Facoltativo) Accesso `https://[aem_server]:[port]/system/console/components/`. Configura e abilita `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` il componente disabilitato per impostazione predefinita. Impostate una frequenza con cui [!DNL Experience Manager] verificare la validità dei metadati per le risorse. Questa configurazione aggiunge una proprietà `hasValidMetadata` alle `jcr:content` risorse. [!DNL Experience Manager] utilizza questa proprietà per filtrare le risorse non valide in un risultato di ricerca. Se aggiungete una risorsa dopo un controllo, la risorsa non viene segnalata `hasValidMetadata` fino al controllo pianificato successivo. Pertanto, le risorse non vengono visualizzate nei filtri di ricerca per i metadati non validi fino a quando non viene eseguito il controllo pianificato successivo.
+1. (Facoltativo) Accedere a `https://[aem_server]:[port]/system/console/components/`. Configura e abilita il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disabilitato per impostazione predefinita. Impostate la frequenza con cui [!DNL Experience Manager] verifica la validità dei metadati sulle risorse. Questa configurazione aggiunge una proprietà `hasValidMetadata` a `jcr:content` di risorse. [!DNL Experience Manager] utilizza questa proprietà per filtrare le risorse non valide in un risultato di ricerca. Se aggiungete una risorsa dopo un controllo, la risorsa non viene contrassegnata con `hasValidMetadata` fino al controllo pianificato successivo. Pertanto, le risorse non vengono visualizzate nei filtri di ricerca per i metadati non validi fino a quando non viene eseguito il controllo pianificato successivo.
 
    >[!CAUTION]
    >
