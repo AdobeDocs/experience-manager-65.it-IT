@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introduzione {#introduction}
 
-Se non avete familiarità con il provider delle risorse di storage (SRP) e il suo rapporto con il contenuto generato dall&#39;utente (UGC), visitate Panoramica [del provider delle risorse di](working-with-srp.md) storage e archiviazione di contenuto [](srp.md)community.
+Se non avete familiarità con il provider delle risorse di storage (SRP) e la sua relazione con il contenuto generato dall&#39;utente (UGC), visitate la pagina [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview](srp.md).
 
 Questa sezione della documentazione fornisce alcune informazioni essenziali sull&#39;SRP e sull&#39;UGC.
 
@@ -38,15 +38,15 @@ L&#39;API SRP non è una classe astratta, è un&#39;interfaccia. L&#39;implement
 
 I mezzi per utilizzare l&#39;API SRP sono attraverso le utility fornite, come quelle presenti nel pacchetto SocialResourceUtilities.
 
-Durante l&#39;aggiornamento da AEM 6.0 o versioni precedenti, sarà necessario migrare UGC per tutti gli SRP, per i quali è disponibile uno strumento Open Source. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Durante l&#39;aggiornamento da AEM 6.0 o versioni precedenti, sarà necessario migrare UGC per tutti gli SRP, per i quali è disponibile uno strumento Open Source. Vedere [Aggiornamento a  AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
 >Storicamente, le utility per l&#39;accesso a UGC sono state trovate nel pacchetto SocialUtils, che non esiste più.
 >
->Per le utility sostitutive, consultate Refactoring [SocialUtils](socialutils.md).
+>Per le utility di sostituzione, vedere [Refactoring SocialUtils](socialutils.md).
 
-## Metodo di utilità per accedere all&#39;UGC {#utility-method-to-access-ugc}
+## Metodo di utilità per accedere a UGC {#utility-method-to-access-ugc}
 
 Per accedere a UGC, utilizzate un metodo del pacchetto SocialResourceUtilities che restituisce un percorso adatto per l&#39;accesso a UGC da SRP e sostituisce il metodo obsoleto trovato nel pacchetto SocialUtils.
 
@@ -65,13 +65,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Per altre sostituzioni di SocialUtils, consultate Refactoring di [SocialUtils](socialutils.md).
+Per altre sostituzioni di SocialUtils, vedere [Refactoring SocialUtils](socialutils.md).
 
-Per le linee guida per la codifica, visitate [Accesso a UGC con SRP](accessing-ugc-with-srp.md).
+Per le linee guida sulla codifica, visitare [Accesso a UGC con SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->Il percorso restituito da resourceToUGCStoragePath() *non* è adatto per il controllo [](srp.md#for-access-control-acls)ACL.
+>Il percorso resourceToUGCStoragePath() restituisce *not* adatto per il controllo ACL [](srp.md#for-access-control-acls).
 
 ## Metodo di utilità per accedere agli ACL {#utility-method-to-access-acls}
 
@@ -98,38 +98,38 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->Il percorso restituito da resourceToACLPath() *non* è adatto per [accedere all&#39;UGC](#utility-method-to-access-acls) stesso.
+>Il percorso restituito da resourceToACLPath() è *not* adatto per [l&#39;accesso all&#39;UGC](#utility-method-to-access-acls) stesso.
 
-## UGC-Related Storage Locations {#ugc-related-storage-locations}
+## UGC: posizioni di storage correlate {#ugc-related-storage-locations}
 
-Le seguenti descrizioni della posizione di storage possono essere di aiuto durante lo sviluppo con JSRP o forse MSRP. Attualmente non esiste alcuna interfaccia utente per accedere a UGC memorizzati in ASRP, in quanto esistono per gli strumenti JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (MongoDB).
+Le seguenti descrizioni della posizione di storage possono essere di aiuto durante lo sviluppo con JSRP o forse MSRP. Attualmente non esiste alcuna interfaccia utente per accedere a UGC memorizzati in ASRP, in quanto esistono per JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (strumenti MongoDB).
 
 **Posizione del componente**
 
 Quando un membro accede a UGC nell’ambiente di pubblicazione, interagisce con un componente come parte di un sito AEM.
 
-Un esempio di tale componente è il componente [](http://localhost:4502/content/community-components/en/comments.html) commenti presente nel sito [Community Components Guide](components-guide.md) . Il percorso del nodo del commento nell&#39;archivio locale è:
+Un esempio di tale componente è il componente [commenti](http://localhost:4502/content/community-components/en/comments.html) presente nel sito [Community Components Guide](components-guide.md). Il percorso del nodo del commento nell&#39;archivio locale è:
 
-* Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
+* Percorso componente = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Posizione nodo ombreggiato**
 
-La creazione di UGC crea anche un nodo [](srp.md#about-shadow-nodes-in-jcr) ombra a cui vengono applicati gli ACL necessari. Il percorso del nodo shadow corrispondente nell&#39;archivio locale è il risultato della precedenza del percorso principale del nodo shadow al percorso del componente:
+La creazione di UGC crea anche un [nodo ombra](srp.md#about-shadow-nodes-in-jcr) a cui vengono applicati gli ACL necessari. Il percorso del nodo shadow corrispondente nell&#39;archivio locale è il risultato della precedenza del percorso principale del nodo shadow al percorso del componente:
 
 * Percorso directory principale = `/content/usergenerated`
 * Nodo ombra commento = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **UGC, posizione**
 
-L&#39;UGC viene creato in nessuna di queste posizioni e dovrebbe essere accessibile solo utilizzando un metodo [di](#utility-method-to-access-ugc) utilità che richiama l&#39;API SRP.
+L&#39;UGC viene creato in nessuna di queste posizioni e dovrebbe essere accessibile solo utilizzando un [metodo di utilità](#utility-method-to-access-ugc) che richiama l&#39;API SRP.
 
 * Percorso directory principale = `/content/usergenerated/asi/srp-choice`
 * Nodo UGC per JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Attenzione*: per JSRP, il nodo UGC sarà presente *solo* nell’istanza AEM (autore o pubblicazione) in cui è stato immesso. Se immessa in un’istanza di pubblicazione, la moderazione non sarà possibile dalla console di moderazione sull’autore.
+*Tenete presente* che per JSRP il nodo UGC è presente  ** solo nell’istanza AEM (autore o pubblicazione) in cui è stato immesso. Se immessa in un’istanza di pubblicazione, la moderazione non sarà possibile dalla console di moderazione sull’autore.
 
 ## Informazioni correlate {#related-information}
 
-* [Panoramica](srp.md) del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Panoramica](srp.md)  del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [Accesso a UGC con linee guida SRP](accessing-ugc-with-srp.md) - Codifica.
+* [Refactoring](socialutils.md)  SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
