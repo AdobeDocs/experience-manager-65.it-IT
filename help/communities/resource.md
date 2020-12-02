@@ -26,15 +26,15 @@ Per aggiungere una risorsa di abilitazione al nuovo sito community:
 
 * Effettuate il login come amministratore di sistema nell’istanza di creazione:
    * Ad esempio, [http://localhost:4502/](Http://localhost:4503/)
-* Dalla navigazione globale, selezionate **[!UICONTROL Community]** > **[!UICONTROL Risorse]**
+* Dalla navigazione globale, selezionare **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
    ![riferimenti](assets/resources.png)
 
    ![enablement-resource](assets/enablement-resource.png)
 * Selezionate il sito della community in cui vengono aggiunte le risorse di abilitazione:
-   * Selezionate **[!UICONTROL Esercitazione]** di abilitazione.
-* Dal menu, selezionate **[!UICONTROL Crea]**.
-* Selezionare **[!UICONTROL Risorsa]**.
+   * Selezionare **[!UICONTROL Esercitazione abilitazione]**.
+* Dal menu, selezionare **[!UICONTROL Crea]**.
+* Selezionare **[!UICONTROL Resource]**.
 
 ![create-resource](assets/create-enablement-resource.png)
 
@@ -46,7 +46,7 @@ Compila le informazioni di base per la risorsa:
 
    Impostate il nome del sito community selezionato: Esercitazione di abilitazione
 
-* **[!UICONTROL Nome risorsa&amp;ast;]**
+* **[!UICONTROL Nome &amp;risorsa;]**
 
    Lezione di sci 1
 
@@ -56,7 +56,7 @@ Compila le informazioni di base per la risorsa:
 
 * **[!UICONTROL Mostra nel catalogo]**
 
-   Impostatelo su **On**.
+   Impostare su **On**.
 
 * **[!UICONTROL Descrizione]**
 
@@ -100,15 +100,15 @@ Carica una risorsa. Se una risorsa video, caricate un’immagine personalizzata 
 
    *(Facoltativo)* Lasciate vuoto.
 
-* **[!UICONTROL Contatto &amp;risorsa;ast;]**
+* **[!UICONTROL Contatto &amp;risorse;]**
 
-   *(Obbligatorio)* Utilizzate il menu a discesa per selezionare un membro `Quinn Harper`.
+   *(Obbligatorio)* Utilizzate il menu a discesa per selezionare un membro  `Quinn Harper`.
 
 * **[!UICONTROL Esperto risorse]**
 
    *(Facoltativo)* Lasciate vuoto.
 
-   **Nota**: Se gli utenti o i gruppi non sono visibili, accertatevi che siano stati aggiunti al `Community Enable Members` gruppo e *salvati* nell’istanza di pubblicazione.
+   **Nota**: Se gli utenti o i gruppi non sono visibili, accertatevi che siano stati aggiunti al  `Community Enable Members` gruppo e  ** salvati nell’istanza di pubblicazione.
 
    ![enablement-settings](assets/enablement-settings.png)
 
@@ -134,19 +134,19 @@ Per caricare una nuova versione della risorsa di abilitazione, si consiglia di c
 
 Prima che gli iscritti siano in grado di visualizzare il corso di aggiornamento assegnato, è necessario pubblicarlo:
 
-* Seleziona l’ `Publish` icona del mondo
+* Selezionare l&#39;icona mondiale `Publish`
 
 L&#39;attivazione viene confermata con un messaggio di riuscita:
 
 ![publish-resource](assets/publish-resource.png)
 
-## Aggiunta di una seconda risorsa di abilitazione {#add-a-second-enablement-resource}
+## Aggiungere una seconda risorsa di abilitazione {#add-a-second-enablement-resource}
 
 Ripetete i passaggi descritti qui sopra per creare e pubblicare una seconda risorsa di abilitazione correlata dalla quale verrà creato un percorso di apprendimento.
 
 ![add-resource](assets/add-resource.png)
 
-**Pubblicate** la seconda risorsa.
+**** Pubblica la seconda risorsa.
 
 Tornate all&#39;elenco delle risorse di Enablement Tutorial.
 
@@ -158,12 +158,12 @@ Tornate all&#39;elenco delle risorse di Enablement Tutorial.
 
 Un percorso di apprendimento è un gruppo logico di risorse di abilitazione che formano un corso.
 
-* Dalla console Risorse, selezionate `+ Create`
-* Seleziona percorso **[!UICONTROL di apprendimento]**
+* Dalla console Risorse, selezionare `+ Create`
+* Selezionare **[!UICONTROL Percorso di apprendimento]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-Aggiungete le informazioni **[!UICONTROL di base]**:
+Aggiungete **[!UICONTROL Informazioni di base]**:
 
 * **[!UICONTROL Nome percorso di apprendimento]**
 
@@ -191,9 +191,9 @@ Saltate il pannello successivo in quanto non sono disponibili percorsi di appren
 
 Nel pannello Aggiungi risorse:
 
-* Selezionate `+ Add Resources` per selezionare le 2 risorse sciistiche da aggiungere al percorso di apprendimento.
+* Selezionate `+ Add Resources` per selezionare le 2 risorse di lezione da aggiungere al percorso di apprendimento.
 
-   Nota: Sarà possibile selezionare solo le risorse **pubblicate** .
+   Nota: È possibile selezionare solo **risorse pubblicate**.
 
 >[!NOTE]
 >
@@ -211,11 +211,11 @@ Nel pannello Aggiungi risorse:
 
 * **[!UICONTROL Aggiungi assegnatari]**
 
-   Utilizzate il menu a discesa per selezionare il `Community Ski Class` gruppo, che deve includere i membri `Riley Taylor` e `Sidney Croft.`
+   Utilizzate il menu a discesa per selezionare il gruppo `Community Ski Class`, che deve includere i membri `Riley Taylor` e `Sidney Croft.`
 
-* **[!UICONTROL Percorso di apprendimento Contatto&amp;ast;]**
+* **[!UICONTROL &amp;Apprendimento percorso contatto;]**
 
-   *(Obbligatorio)* Utilizzate il menu a discesa per selezionare un membro `Quinn Harper`.
+   *(Obbligatorio)* Utilizzate il menu a discesa per selezionare un membro  `Quinn Harper`.
 
 * Seleziona **[!UICONTROL Crea]**.
 
