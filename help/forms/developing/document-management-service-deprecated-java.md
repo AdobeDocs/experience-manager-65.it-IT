@@ -45,11 +45,11 @@ Per il servizio Gestione documenti (obsoleto) sono disponibili i seguenti Avvio 
 
 >[!NOTE]
 
-Avvio rapido in Programmazione con moduli AEM basati su Forms Server distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+Avvio rapido in Programmazione con moduli AEM basati su Forms Server distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP): Creare spazi di Content Services utilizzando l&#39;API Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo spazio denominato *Test Directory* che si trova nella home dell&#39;azienda. Il valore di identificazione del nuovo spazio viene scritto nella console.
+Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo spazio denominato *Test Directory* nella home dell&#39;azienda. Il valore di identificazione del nuovo spazio viene scritto nella console.
 
 ```java
  /*
@@ -245,7 +245,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eliminato uno spazio 
 
 ## Avvio rapido (modalità SOAP): Aggiunta di contenuto a Content Services tramite l&#39;API Java (obsoleto) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un file PDF denominato *MortgageForm.pdf* a una cartella denominata /Company Home/Test Directory. Gli attributi creatore e descrizione sono impostati. Il valore di identificazione del nuovo contenuto viene scritto nella console.
+Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un file PDF denominato *mutuiForm.pdf* in una cartella denominata /Company Home/Test Directory. Gli attributi creatore e descrizione sono impostati. Il valore di identificazione del nuovo contenuto viene scritto nella console.
 
 ```java
  /*
@@ -368,7 +368,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene aggiunto un file PDF 
 
 ## Avvio rapido (modalità SOAP): Recuperare contenuto da Content Services utilizzando l&#39;API Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java riportato di seguito viene recuperato un file PDF denominato *MortgageForm.pdf* da /Company Home. Il file PDF viene salvato nel file system locale e denominato *UpdatedMortgageForm.pdf*.
+Nell&#39;esempio di codice Java riportato di seguito viene recuperato un file PDF denominato *mutuiForm.pdf* da /Company Home. Il file PDF viene salvato nel file system locale ed è denominato *UpdatedMortgageForm.pdf*.
 
 ```java
  /*
@@ -474,7 +474,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene recuperato un file PD
 
 ## Avvio rapido (modalità SOAP): Spostare il contenuto di Content Services utilizzando l&#39;API Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-Nell&#39;esempio di codice Java riportato di seguito viene spostato un file PDF denominato *MortgageForm.pdf* da /Company Home/Test Directory a /Company Home. Il valore di identificazione del contenuto spostato viene scritto nella console.
+Nell&#39;esempio di codice Java riportato di seguito viene spostato un file PDF denominato *ModuloIpotecario.pdf* da /Company Home/Test Directory a /Company Home. Il valore di identificazione del contenuto spostato viene scritto nella console.
 
 ```java
  /*
@@ -686,7 +686,7 @@ Nell&#39;esempio di codice Java riportato di seguito è riportato il contenuto c
  
 ```
 
-## Avvio rapido (modalità SOAP): Cercare il contenuto di Content Services utilizzando l&#39;API Java (obsoleto) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Avvio rapido (modalità SOAP): Cercare contenuti di Content Services utilizzando l&#39;API Java (obsoleto) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 Il seguente codice Java cerca in /Company Home un documento contenente il testo MortgageForm. Vengono inoltre effettuate ricerche nelle sottocartelle.
 
