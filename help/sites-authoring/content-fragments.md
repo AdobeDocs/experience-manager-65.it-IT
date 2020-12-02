@@ -136,7 +136,7 @@ Nella finestra di dialogo di configurazione appropriata puoi selezionare i param
 
 * **Tratta le intestazioni come paragrafi propri**
 
-### Collegamento rapido all’Editor frammento di contenuto  {#quick-connection-to-fragment-editor}
+### Collegamento rapido all’Editor frammento di contenuto   {#quick-connection-to-fragment-editor}
 
 Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) mediante l’icona **Modifica** nella barra degli strumenti del componente, così da poter [modificare e gestire il frammento di contenuto](/help/assets/content-fragments/content-fragments.md).
 
@@ -144,7 +144,7 @@ Puoi aprire l’origine del frammento in modalità di modifica (la risorsa) medi
 >
 >Come sempre, la modifica dell’origine del frammento ha un impatto su tutte le pagine che fanno riferimento a tale frammento di contenuto.
 
-### Aggiunta di contenuto intermedio  {#adding-in-between-content}
+### Aggiunta di contenuto intermedio   {#adding-in-between-content}
 
 Quando si aggiunge alla pagina un frammento di contenuto specifico, è disponibile un segnaposto **Trascina qui i componenti** fra ciascun paragrafo HTML (nonché all’inizio e alla fine) del frammento.
 
@@ -184,7 +184,7 @@ Questo potrebbe dare l’impressione di una modifica nella posizione relativa, p
 
 
 
-### Uso di contenuti associati  {#using-associated-content}
+### Uso di contenuti associati   {#using-associated-content}
 
 Se hai [associato del contenuto](/help/assets/content-fragments/content-fragments-assoc-content.md) al [frammento di contenuto](/help/assets/content-fragments/content-fragments.md), queste risorse saranno disponibili nel pannello laterale (dopo aver inserito il frammento nella pagina del contenuto). Il contenuto associato è di fatto una fonte speciale di contenuto per il [contenuto intermedio](#adding-in-between-content).
 
@@ -204,7 +204,7 @@ Da qui puoi trascinare le risorse nella posizione richiesta (su un componente es
 
 ### Risorse inserite nel frammento {#assets-inserted-into-the-fragment}
 
-Se sono state inserite risorse, ad esempio immagini, nel frammento stesso, le opzioni per la modifica di tali risorse nell’editor pagina sono limitate. <!-- Removed link as it was a 404 on helpx -->
+Se sono state inserite risorse, ad esempio immagini, nel frammento stesso, le opzioni per la modifica di tali risorse nell’editor pagina sono limitate.  <!-- Removed link as it was a 404 on helpx -->
 
 Ad esempio, per un’immagine è possibile:
 
