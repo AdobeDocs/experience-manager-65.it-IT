@@ -49,6 +49,7 @@ Queste notifiche arrivano nella casella in entrata, dove puoi visualizzarle e in
 >* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md) 
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
+
 >
 
 
@@ -112,7 +113,7 @@ Operazioni disponibili:
 
 ![wf-91](assets/wf-91.png)
 
-### Inbox - Settings {#inbox-view-settings}
+### Casella in entrata - Impostazioni {#inbox-view-settings}
 
 Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
@@ -123,6 +124,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    * **Raggruppa per**
    * **Pianificazione** o **Nessuna**
    * **Dimensioni scheda**
+
    ![wf-92](assets/wf-92.png)
 
 * **Vista a elenco**
@@ -131,36 +133,38 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
    * **Campo di ordinamento**
    * **Ordinamento**
+
    ![wf-83](assets/inbox-settings.png)
 
 ### Casella in entrata - Controllo amministratore {#inbox-admin-control}
 
 L&#39;opzione Controllo amministratore consente agli amministratori di:
 
-* Personalizzare le colonne Inbox di AEM
+* Personalizzare le colonne AEM Casella in entrata
 
 * Personalizzare il testo dell’intestazione e il logo
 
 * Controllare la visualizzazione dei collegamenti di navigazione disponibili nell&#39;intestazione
 
-L&#39;opzione Controllo amministratore è visibile solo ai membri del `administrators` gruppo o del `workflow-administrators` gruppo.
+L&#39;opzione Controllo amministratore è visibile solo ai membri del gruppo `administrators` o `workflow-administrators`.
 
-* **Personalizzazione** colonna: Personalizzate una Casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
-   * **Aggiungi colonna**: Selezionate una colonna da aggiungere in AEM Inbox.
-   * **Modifica colonna**: Passate il mouse sul titolo della colonna e toccate l&#39;icona di ![modifica](assets/edit.svg) per immettere un nome visualizzato per la colonna.
-   * **Elimina colonna**: Toccate l&#39;icona ![Elimina](assets/delete_updated.svg) per eliminare la colonna dalla Casella in entrata AEM.
-   * **Sposta colonna**: Trascinate l’icona di ![spostamento](assets/move_updated.svg) per spostare una colonna in una nuova posizione nella Casella in entrata AEM.
+* **Personalizzazione** colonna: Personalizzare una casella in entrata AEM per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
+   * **Aggiungi colonna**: Selezionare una colonna da aggiungere AEM Posta in arrivo.
+   * **Modifica colonna**: Passate il mouse sul titolo della colonna e toccate l&#39;icona  ![](assets/edit.svg) di modifica per immettere un nome visualizzato per la colonna.
+   * **Elimina colonna**: Toccate l&#39; ![](assets/delete_updated.svg) icona di eliminazione per eliminare la colonna da AEM Posta in arrivo.
+   * **Sposta colonna**: Trascinare il  ![](assets/move_updated.svg) veic per spostare una colonna in una nuova posizione AEM Casella in entrata.
+
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalizzazione branding**
 
-   * **Personalizzare il testo dell’intestazione:** Specificate il testo da visualizzare nell’intestazione per sostituire il testo predefinito dell’Adobe Experience Manager **** .
+   * **Personalizza il testo dell’intestazione:** specificate il testo da visualizzare nell’intestazione per sostituire il testo predefinito di  **Adobe Experience** Manager.
 
-   * **Personalizza logo:** Specificate l&#39;immagine da visualizzare nell&#39;intestazione come logo. Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine nel campo.
+   * **Personalizza logo:** specifica l’immagine da visualizzare nell’intestazione come logo. Caricate un’immagine in Digital Asset Management (DAM) e fate riferimento a tale immagine nel campo.
 
 * **Navigazione utente**
-   * **Nascondi opzioni di navigazione:** Selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili quando si tocca  logo Adobe Experience Manager o testo.
-* **Salva:** Toccate/fate clic su questa opzione per salvare le impostazioni.
+   * **Nascondi opzioni di navigazione:** selezionate questa opzione per nascondere le opzioni di navigazione disponibili nell’intestazione. Le opzioni di navigazione includono collegamenti ad altre soluzioni, collegamenti alla Guida e opzioni di authoring disponibili quando si tocca il logo o il testo Adobe Experience Manager.
+* **Salva:** Toccate o fate clic su questa opzione per salvare le impostazioni.
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
@@ -185,6 +189,7 @@ L&#39;opzione Controllo amministratore è visibile solo ai membri del `administr
    * **Indietro** per tornare a un passaggio precedente.
    * Visualizzazione del payload di un flusso di lavoro.
    * Creazione di un progetto dall’elemento.
+
    >[!NOTE]
    >
    >Per ulteriori informazioni, consulta:
@@ -197,6 +202,7 @@ L&#39;opzione Controllo amministratore è visibile solo ai membri del `administr
    * Viene aperta la finestra di dialogo relativa all’azione.
    * Viene avviata un’azione guidata.
    * Viene aperta una pagina della documentazione.
+
    Ad esempio, selezionando **Riassegna** viene aperta una finestra di dialogo:
 
    ![wf-85](assets/wf-85.png)
@@ -225,16 +231,18 @@ Dalla casella in entrata è possibile creare le attività:
       * **Priorità attività**
       * **Data iniziale**
       * **Data di scadenza**
+
    ![wf-86](assets/wf-86.png)
 
    * **Avanzate**
 
-      * **Nome**: this will be used to form the URL; if blank it will be based on the **Title**.
+      * **Nome**: verrà utilizzato per formare l’URL; se vuoto, verrà basato sul **Titolo**.
+
    ![wf-87](assets/wf-87.png)
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto  {#creating-a-project}
+## Creazione di un progetto   {#creating-a-project}
 
 Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/projects.md) basato su tale attività:
 
