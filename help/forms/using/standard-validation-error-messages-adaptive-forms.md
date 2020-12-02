@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Messaggi di errore di convalida standard per i moduli adattivi {#standard-validation-error-messages}
+# Messaggi di errore di convalida standard per moduli adattivi {#standard-validation-error-messages}
 
 I moduli adattivi convalidano gli input forniti nei campi in base a criteri di convalida predefiniti. I criteri di convalida fanno riferimento ai valori di input accettabili per i campi di un modulo adattivo. È possibile impostare i criteri di convalida in base all&#39;origine dati utilizzata con il modulo adattivo. Ad esempio, se si utilizzano i servizi Web RESTful come origine dati, è possibile definire i criteri di convalida in un file di definizione Swagger.
 
@@ -58,21 +58,21 @@ Dove:
 * `originCode` contiene il codice di errore restituito dal servizio esterno
 * `originMessage` contiene i dati di errore non elaborati restituiti dal servizio esterno
 
-## Configurare l&#39;invio di moduli adattivi per l&#39;aggiunta di gestori personalizzati {#configure-adaptive-form-submission}
+## Configurare l&#39;invio di moduli adattivi per aggiungere gestori personalizzati {#configure-adaptive-form-submission}
 
 Se il messaggio di errore convalida server non è visualizzato nel formato standard, è possibile abilitare l&#39;invio asincrono e aggiungere un gestore errori personalizzato per l&#39;invio di moduli adattivi per convertire il messaggio in un formato standard.
 
-### Configurare l&#39;invio asincrono di moduli adattivi {#configure-asynchronous-adaptive-form-submission}
+### Configurare l&#39;invio asincrono del modulo adattivo {#configure-asynchronous-adaptive-form-submission}
 
 Prima di aggiungere un gestore personalizzato, è necessario configurare il modulo adattivo per l&#39;invio asincrono. Effettuate i seguenti passaggi:
 
-1. In modalità di creazione moduli adattivi, selezionare l&#39;oggetto Contenitore modulo e toccare le proprietà ![del modulo](assets/configure_icon.png) adattivo per aprirne le proprietà.
-1. Nella sezione Proprietà **[!UICONTROL invio]** , abilitare **[!UICONTROL Usa invio]** asincrono.
+1. In modalità di creazione di moduli adattivi, selezionare l&#39;oggetto Contenitore modulo e toccare ![proprietà del modulo adattivo](assets/configure_icon.png) per aprirne le proprietà.
+1. Nella sezione delle proprietà **[!UICONTROL Invia]**, abilitare **[!UICONTROL Usa invio asincrono]**.
 1. Selezionare **[!UICONTROL Revoca sul server]** per convalidare i valori dei campi di input sul server prima dell&#39;invio.
 1. Selezionate l’azione Invia:
 
-   * Selezionare **[!UICONTROL Invia utilizzando il modello]** dati modulo e selezionare il modello dati appropriato, se si utilizza il modello [dati](work-with-form-data-model.md) modulo basato su servizi Web RESTful come origine dati.
-   * Selezionare **[!UICONTROL Invia a endpoint]** REST e specificare l&#39;URL/percorso **[!UICONTROL di]** reindirizzamento se si utilizzano i servizi Web RESTful come origine dati.
+   * Selezionare **[!UICONTROL Invia utilizzando Form Data Model]** e selezionare il modello dati appropriato, se si utilizza RESTful Web Service based [form data model](work-with-form-data-model.md) come origine dati.
+   * Selezionare **[!UICONTROL Invia all&#39;endpoint REST]** e specificare l&#39; **[!UICONTROL URL/percorso di reindirizzamento]**, se si utilizzano i servizi Web RESTful come origine dati.
 
    ![proprietà di invio dei moduli adattivi](assets/af_submission_properties.png)
 
@@ -80,14 +80,14 @@ Prima di aggiungere un gestore personalizzato, è necessario configurare il modu
 
 ### Aggiunta di un gestore errori personalizzato per l&#39;invio di moduli adattivi {#add-custom-error-handler-af-submission}
 
-I AEM Forms forniscono gestori di errori e di successo out-of-the-box per l&#39;invio dei moduli. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
+ AEM Forms fornisce handler out-of-the-box per l&#39;invio di moduli con esito positivo e errore. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un modulo viene inviato, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull&#39;evento success o error per l&#39;invio. Le informazioni vengono trasmesse come parametri al gestore interessato per eseguire la funzione.
 
 Per aggiungere un gestore errori personalizzato all&#39;invio di moduli adattivi, eseguire i passaggi seguenti:
 
 1. Aprite il modulo adattivo in modalità di creazione, selezionate un oggetto modulo qualsiasi e toccate <!--![Rule Editor](assets/af_edit_rules.png)--> per aprire l&#39;editor delle regole.
-1. Selezionare **[!UICONTROL Modulo]** nella struttura Oggetti modulo e toccare **[!UICONTROL Crea]**.
-1. Selezionare **[!UICONTROL Errore nell&#39;invio]** dall&#39;elenco a discesa Evento.
-1. Scrivete una regola per convertire la struttura di errore personalizzata nella struttura di errore standard e toccate **[!UICONTROL Fine]** per salvare la regola.
+1. Selezionare **[!UICONTROL Form]** nella struttura degli oggetti modulo, quindi toccare **[!UICONTROL Crea]**.
+1. Selezionare **[!UICONTROL Errore in Invio]** dall&#39;elenco a discesa Evento.
+1. Scrivete una regola per convertire la struttura di errore personalizzata nella struttura di errore standard e toccate **[!UICONTROL Done]** per salvare la regola.
 
 Di seguito è riportato un esempio di codice per convertire una struttura di errore personalizzata nella struttura di errore standard:
 
@@ -129,23 +129,23 @@ if (data) {
 }
 ```
 
-L&#39; `var som_map` elenco elenca l&#39;espressione SOM dei campi modulo adattivi che si desidera trasformare nel formato standard. Per visualizzare l&#39;espressione SOM di qualsiasi campo in un modulo adattivo, toccate il campo e selezionate **[!UICONTROL Visualizza espressione]** SOM.
+In `var som_map` è elencata l&#39;espressione SOM dei campi modulo adattivi che si desidera trasformare nel formato standard. Per visualizzare l&#39;espressione SOM di qualsiasi campo in un modulo adattivo, toccate il campo e selezionate **[!UICONTROL Visualizza espressione SOM]**.
 
-Utilizzando questo handler di errori personalizzato, il modulo adattivo converte i campi elencati nel formato `var som_map` di messaggio di errore standard. Di conseguenza, i messaggi di errore convalida vengono visualizzati a livello di campo nel modulo adattivo.
+Utilizzando questo handler di errori personalizzato, il modulo adattivo converte i campi elencati in `var som_map` nel formato di messaggio di errore standard. Di conseguenza, i messaggi di errore convalida vengono visualizzati a livello di campo nel modulo adattivo.
 
 ## Aggiunta di un gestore personalizzato tramite l&#39;azione Servizio di chiamata
 
-Per aggiungere un gestore di errori per convertire una struttura di errore personalizzata nella struttura di errore standard, eseguire la procedura seguente utilizzando l&#39;azione Servizio di chiamata dell&#39;Editor di [regole](rule-editor.md) :
+Per aggiungere un gestore di errori per convertire una struttura di errore personalizzata nella struttura di errore standard, eseguire la procedura seguente utilizzando l&#39;azione del servizio di chiamata [Editor regole](rule-editor.md):
 
-1. Aprite il modulo adattivo in modalità di creazione, selezionate un oggetto modulo qualsiasi e toccate Editor ![](assets/rule_editor_icon.png) regole per aprire l&#39;editor di regole.
+1. Aprite il modulo adattivo in modalità di creazione, selezionate un oggetto modulo e toccate ![Editor regole](assets/rule_editor_icon.png) per aprire l&#39;editor delle regole.
 1. Toccate **[!UICONTROL Crea]**.
-1. Creare una condizione nella sezione **[!UICONTROL Quando]** della regola. Ad esempio,[QuandoName del campo] viene modificato. Selezionate **[!UICONTROL viene modificato]** dall’elenco a discesa **[!UICONTROL Seleziona stato]** per ottenere questa condizione.
-1. Nella sezione **[!UICONTROL Quindi]** , selezionare **[!UICONTROL Richiama servizio]** dall&#39;elenco a discesa **[!UICONTROL Seleziona azione]** .
-1. Selezionare un servizio Post e i relativi binding dei dati dalla sezione **[!UICONTROL Input]** . Ad esempio, se si desidera convalidare i campi **Nome**, **ID** e **Stato** nel modulo adattivo, selezionare un servizio Post (animale domestico) e quindi pet.name, pet.id e pet.status nella sezione **[!UICONTROL Input]** .
+1. Creare una condizione nella sezione **[!UICONTROL When]** della regola. Ad esempio, quando [Nome del campo] viene modificato. Selezionare **[!UICONTROL viene modificato]** dall&#39;elenco a discesa **[!UICONTROL Seleziona stato]** per ottenere questa condizione.
+1. Nella sezione **[!UICONTROL Quindi]**, selezionare **[!UICONTROL Richiama il servizio]** dall&#39;elenco a discesa **[!UICONTROL Seleziona azione]**.
+1. Selezionare un servizio Post e i relativi binding dei dati dalla sezione **[!UICONTROL Input]**. Ad esempio, se desiderate convalidare i campi **Name**, **ID** e **Status** nel modulo adattivo, selezionate un servizio Post (animale domestico) e selezionate pet.name, pet.id e pet.status nella sezione **[!UICONTROL Input]**.
 
-Come risultato di questa regola, i valori inseriti per i campi **Nome**, **ID** e **Stato** vengono convalidati non appena il campo definito al punto 2 viene modificato e si esce dal campo del modulo.
+Come risultato di questa regola, i valori inseriti per i campi **Name**, **ID** e **Status** vengono convalidati non appena il campo definito al punto 2 viene modificato e si esce dal campo del modulo.
 
-1. Selezionare Editor **[!UICONTROL di]** codice dall&#39;elenco a discesa di selezione della modalità.
+1. Selezionare **[!UICONTROL Editor di codice]** dall&#39;elenco a discesa di selezione della modalità.
 1. Toccate **[!UICONTROL Modifica codice]**.
 1. Elimina la riga seguente dal codice esistente:
 
@@ -153,7 +153,7 @@ Come risultato di questa regola, i valori inseriti per i campi **Nome**, **ID** 
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
    ```
 
-1. Scrivete una regola per convertire la struttura di errore personalizzata nella struttura di errore standard e toccate **[!UICONTROL Fine]** per salvare la regola.
+1. Scrivete una regola per convertire la struttura di errore personalizzata nella struttura di errore standard e toccate **[!UICONTROL Done]** per salvare la regola.
 Ad esempio, aggiungete il seguente codice di esempio alla fine per convertire una struttura di errore personalizzata nella struttura di errore standard:
 
    ```javascript
@@ -198,7 +198,7 @@ Ad esempio, aggiungete il seguente codice di esempio alla fine per convertire un
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   L&#39; `var som_map` elenco elenca l&#39;espressione SOM dei campi modulo adattivi che si desidera trasformare nel formato standard. Per visualizzare l&#39;espressione SOM di qualsiasi campo in un modulo adattivo, toccate il campo e selezionate **[!UICONTROL Visualizza espressione]** SOM dal menu **[!UICONTROL Altre opzioni]** (...).
+   In `var som_map` è elencata l&#39;espressione SOM dei campi modulo adattivi che si desidera trasformare nel formato standard. Per visualizzare l&#39;espressione SOM di qualsiasi campo in un modulo adattivo, toccate il campo e selezionate **[!UICONTROL Visualizza espressione SOM]** dal menu **[!UICONTROL Altre opzioni]** (...).
 
    Assicurarsi di copiare la riga seguente del codice di esempio nel gestore errori personalizzato:
 
@@ -206,6 +206,6 @@ Ad esempio, aggiungete il seguente codice di esempio alla fine per convertire un
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   L&#39;API executeOperation include i `null` parametri e `errorHandler` i parametri basati sul nuovo gestore di errori personalizzato.
+   L&#39;API executeOperation include i parametri `null` e `errorHandler` basati sul nuovo gestore di errori personalizzato.
 
-   Utilizzando questo handler di errori personalizzato, il modulo adattivo converte i campi elencati nel formato `var som_map` di messaggio di errore standard. Di conseguenza, i messaggi di errore convalida vengono visualizzati a livello di campo nel modulo adattivo.
+   Utilizzando questo handler di errori personalizzato, il modulo adattivo converte i campi elencati in `var som_map` nel formato di messaggio di errore standard. Di conseguenza, i messaggi di errore convalida vengono visualizzati a livello di campo nel modulo adattivo.
