@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 59%
 
 ---
 
@@ -23,7 +26,7 @@ Con AEM è possibile gestire numerosi contenuti di tipo diverso (ad esempio pagi
 >
 >I dashboard di AEM vengono creati a livello di utente e ogni utente può quindi accedere solo al proprio dashboard.
 >
->However, [Dashboard templates](#creating-a-dashboard-template) can be used to share common configuration and Dashboard layout.
+>Tuttavia, [I modelli di dashboard](#creating-a-dashboard-template) possono essere utilizzati per condividere la configurazione comune e il layout del dashboard.
 
 ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -34,7 +37,7 @@ Con AEM è possibile gestire numerosi contenuti di tipo diverso (ad esempio pagi
 Per creare un nuovo dashboard, effettuate le seguenti operazioni:
 
 1. Nella sezione **Strumenti**, fate clic su **Console di configurazione**.
-1. In the tree, Double-Click **Dashboard**.
+1. Nella struttura ad albero, fare doppio clic su **Dashboard**.
 1. Fate clic su **Dashboard**.
 1. Digitate il **Titolo** (ad esempio Mio dashboard) e **Nome**.
 1. Fate clic su **Crea**. 
@@ -52,7 +55,7 @@ Può essere utile disporre di più dashboard per vedere rapidamente le informazi
 
 1. Digitate il **Nome** del nuovo dashboard.
 
-### Rimozione di un dashboard {#removing-a-dashboard}
+### Rimozione di un dashboard  {#removing-a-dashboard}
 
 1. Nella sezione **Strumenti**, fate clic su **Console di configurazione**.
 
@@ -63,15 +66,15 @@ Può essere utile disporre di più dashboard per vedere rapidamente le informazi
 
 1. Fate clic su **Sì** per confermare.
 
-## Componenti per dashboard {#dashboard-components}
+## Componenti per dashboard  {#dashboard-components}
 
 ### Panoramica {#overview}
 
-I componenti dashboard non sono altro che normali componenti [](/help/sites-developing/developing-components-samples.md)AEM. Questa sezione descrive i componenti per report forniti con AEM.
+I componenti dashboard non sono altro che normali [componenti AEM](/help/sites-developing/developing-components-samples.md). Questa sezione descrive i componenti per report forniti con AEM.
 
-### Componenti per report per analisi Web {#web-analytics-reporting-components}
+### Componenti per report per analisi Web  {#web-analytics-reporting-components}
 
-AEM viene fornito con un set di componenti che eseguono il rendering di più metriche dei dati [SiteCatalyst](/help/sites-administering/adobeanalytics.md) . Tali componenti sono elencati nella barra laterale sotto la sezione **Dashboard**.
+AEM viene fornito con un set di componenti che eseguono il rendering di più metriche dei dati [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Tali componenti sono elencati nella barra laterale sotto la sezione **Dashboard**.
 
 Ciascun componente per report dispone di almeno tre schede:
 
@@ -82,17 +85,17 @@ Ciascun componente per report dispone di almeno tre schede:
 
 I componenti per report vengono inizializzati con una configurazione predefinita che consente di impostare rapidamente il dashboard.
 
-#### Configurazione di base {#basic-configuration}
+#### Configurazione di base  {#basic-configuration}
 
 La scheda **Base** permette di accedere alle seguenti voci di configurazione:
 
-**Titolo** Titolo visualizzato sul dashboard.
+**** Titolo: il titolo visualizzato sul dashboard.
 
-**Tipo** di richiesta Modalità di richiesta dei dati.
+**Tipo** di richiestaModalità di richiesta dei dati.
 
-**Configurazione SiteCatalyst (facoltativo)** Configurazione da usare per la connessione a SiteCatalyst. Se non viene fornita, viene considerata la configurazione sulla pagina Dashboard (tramite le proprietà pagina).
+**Configurazione SiteCatalyst (facoltativo)** Configurazione da utilizzare per la connessione al SiteCatalyst. Se non viene fornita, viene considerata la configurazione sulla pagina Dashboard (tramite le proprietà pagina).
 
-**ID suite di rapporti (facoltativo)** La suite di rapporti SiteCatalyst da usare per generare il grafico.
+**ID suite di rapporti (facoltativo)** La suite di rapporti per SiteCatalyst da usare per generare il grafico.
 
 #### Configurazione del report {#report-configuration}
 
@@ -102,39 +105,39 @@ Per visualizzare le statistiche Web, occorre definire l’intervallo di date che
 >
 >Se si imposta un intervallo di date ampio, il dashboard potrebbe risultare lento.
 
-**Data Da** data assoluta o relativa dalla quale vengono estratti i dati.
+**Data** DaAssoluto o data relativa a partire dalla quale vengono estratti i dati.
 
-**Data A** data assoluta o relativa alla quale vengono estratti i dati.
+**Data** ToAbsolute o data relativa alla quale vengono estratti i dati.
 
 Per ciascun componente vengono inoltre definite specifiche impostazioni.
 
-#### Report tempo eccessivo {#overtime-report}
+#### Report tempo eccessivo  {#overtime-report}
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularità** data Unità di tempo dell’asse X (ad esempio giorno, ora).
+**Unità data** GranularityTime dell’asse X (ad es. giorno, ora).
 
-**Metriche** L&#39;elenco degli eventi da visualizzare.
+**** Metriche: elenco degli eventi da visualizzare.
 
-**Elementi** L’elenco degli elementi che compongono i dati delle metriche nel grafico.
+**** Elementi: elenco di elementi che compongono i dati delle metriche nel grafico.
 
 #### Report elenco classifica {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**Elementi** L’elemento che compone i dati delle metriche nel grafico.
+**** Elementi: l’elemento che suddivide i dati delle metriche nel grafico.
 
-**Metriche** L’evento da visualizzare.
+**** Metriche: evento da visualizzare.
 
-**No. degli elementi** principali Numero di elementi visualizzati dal rapporto.
+**No. degli elementi principali** Numero di elementi visualizzati dal rapporto.
 
 #### Report classifica {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
-**Metriche** L’evento da visualizzare.
+**** Metriche: evento da visualizzare.
 
-**Elementi** L’elemento che compone i dati delle metriche nel grafico.
+**** Elementi: l’elemento che suddivide i dati delle metriche nel grafico.
 
 #### Report sezione del sito principale {#top-site-section-report}
 
@@ -142,17 +145,17 @@ Questo componente visualizza un grafico che illustra la sezione più visitata de
 
 ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-**No. degli elementi** principali Numero di sezioni visualizzate dal report.
+**No. degli elementi principali** Numero di sezioni visualizzate dal report.
 
 #### Report con tendenze {#trended-report}
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularità** data Unità di tempo dell’asse X (ad esempio giorno, ora).
+**Unità data** GranularityTime dell’asse X (ad es. giorno, ora).
 
-**Metriche** L’evento da visualizzare.
+**** Metriche: evento da visualizzare.
 
-**Elementi** L’elemento che compone i dati delle metriche nel grafico.
+**** Elementi: l’elemento che suddivide i dati delle metriche nel grafico.
 
 ## Estensione del dashboard {#extending-dashboard}
 
@@ -160,25 +163,25 @@ Questo componente visualizza un grafico che illustra la sezione più visitata de
 
 I dashboard sono normali pagine (`cq:Page`) e possono quindi essere assemblati con qualsiasi componente.
 
-There is a default component group `Dashboard` containing analytics reporting components which are enabled on the template by default.
+Esiste un gruppo di componenti predefinito `Dashboard` contenente componenti per report di analisi che sono abilitati per impostazione predefinita sul modello.
 
 ### Creazione di un modello di dashboard {#creating-a-dashboard-template}
 
 Con un modello si definisce il contenuto predefinito di un nuovo dashboard. È possibile disporre di più modelli, con cui creare diversi tipi di dashboard.
 
-Dashboard templates are created like other page templates, except that they are stored under `/libs/cq/dashboards/templates/`. Consultate la sezione [Creazione di un modello](/help/sites-developing/website.md#creating-the-contentpage-template) per pagina di contenuto.
+I modelli di dashboard vengono creati come altri modelli di pagina, ma sono memorizzati in `/libs/cq/dashboards/templates/`. Vedere la sezione [Creazione di un modello di pagina contenuto](/help/sites-developing/website.md#creating-the-contentpage-template).
 
 >[!NOTE]
 >
 >I modelli di dashboard possono essere condivisi tra più utenti.
 
-### Sviluppo di un componente dashboard {#developing-a-dashboard-component}
+### Sviluppo di un componente dashboard  {#developing-a-dashboard-component}
 
 Lo sviluppo di un componente dashboard consiste nella creazione di un normale componente AEM. In questa sezione viene descritto un esempio di componente per visualizzare i primi 10 utenti collaboratori.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-The top author components is stored in the repository at `/apps/geometrixx-outdoors/components/reporting` and is composed of :
+I componenti per autori principali sono memorizzati nella directory archivio in `/apps/geometrixx-outdoors/components/reporting` ed è composto da:
 
 1. un file `jsp` che legge i dati jcr e definisce il segnaposto `html`;
 
@@ -186,9 +189,9 @@ The top author components is stored in the repository at `/apps/geometrixx-outdo
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-Il seguente file Javascript è definito nella libreria `geout.reporting.topauthors` [](/help/sites-developing/clientlibs.md) client come figlio del componente stesso.
+Il seguente file Javascript è definito nella `geout.reporting.topauthors` [libreria client](/help/sites-developing/clientlibs.md) come figlio del componente stesso.
 
-QueryBuilder [viene utilizzato per eseguire query nell&#39;archivio per leggere](/help/sites-developing/querybuilder-api.md) `cq:AuditEvent` i nodi. Il risultato della query genera un oggetto JSON dal quale vengono estratti i contributi degli autori.
+La [QueryBuilder](/help/sites-developing/querybuilder-api.md) viene utilizzata per eseguire query sull&#39;archivio per leggere i nodi `cq:AuditEvent`. Il risultato della query genera un oggetto JSON dal quale vengono estratti i contributi degli autori.
 
 #### top_authors.js {#top-authors-js}
 
@@ -235,7 +238,7 @@ $.ajax({
 });
 ```
 
-L&#39; `JSP` opzione include sia `global.jsp` che `clientlib`.
+`JSP` include sia `global.jsp` che `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 
