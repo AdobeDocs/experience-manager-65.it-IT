@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# Creare i componenti  {#create-the-components}
+# Creare i componenti {#create-the-components}
 
 Nell’esempio di estensione dei componenti viene utilizzato il sistema di commenti, che in realtà è composto da due componenti
 
@@ -35,31 +35,31 @@ Entrambi i componenti devono essere implementati, soprattutto se si personalizza
 
 ## Creare il componente Commenti {#create-the-comments-component}
 
-Queste indicazioni specificano un valore **Group** diverso da `.hidden` questo per rendere il componente disponibile dal browser Componenti (barra laterale).
+Queste indicazioni specificano un valore **Group** diverso da `.hidden` in modo che il componente possa essere reso disponibile dal browser Componenti (barra laterale).
 
 L&#39;eliminazione del file JSP creato automaticamente è perché verrà utilizzato il file HBS predefinito.
 
-1. Passa a **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
+1. Passare a **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
 
 1. Create un percorso per le applicazioni personalizzate:
 
-   * Selezionare il `/apps` nodo
+   * Selezionare il nodo `/apps`
 
-      * **Crea cartella** denominata **[!UICONTROL custom]**
-   * Selezionare il `/apps/custom` nodo
+      * **Crea** cartella  **[!UICONTROL personalizzata]**
+   * Selezionare il nodo `/apps/custom`
 
-      * **Creare** componenti con nome cartella ****
+      * **Creare** componenti  **[!UICONTROL con nome cartella]**
 
 
-1. Selezionare il `/apps/custom/components` nodo
+1. Selezionare il nodo `/apps/custom/components`
 
    * **[!UICONTROL Crea > Componente...]**
 
-      * **Etichetta**: *commenti*
-      * **Titolo**: *Commenti Alt*
-      * **Descrizione**: *Stile commento alternativo*
-      * **Super Type**: *social/commons/components/hbs/comments*
-      * **Gruppo**: *Personalizzato*
+      * **Etichetta**:  *commenti*
+      * **Titolo**:  *Commenti Alt*
+      * **Descrizione**:  *Stile commento alternativo*
+      * **Super Type**:  *social/commons/components/hbs/comments*
+      * **Gruppo**:  *Personalizzato*
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL Avanti]**
@@ -67,28 +67,28 @@ L&#39;eliminazione del file JSP creato automaticamente è perché verrà utilizz
 
 
 1. Espandi il nodo appena creato: `/apps/custom/components/comments`
-1. Seleziona **[!UICONTROL Salva tutto]**
-1. Clic con il pulsante destro del mouse `comments.jsp`
-1. Seleziona **[!UICONTROL Elimina]**
-1. Seleziona **[!UICONTROL Salva tutto]**
+1. Selezionare **[!UICONTROL Salva tutto]**
+1. Fare clic con il pulsante destro del mouse su `comments.jsp`
+1. Selezionare **[!UICONTROL Elimina]**
+1. Selezionare **[!UICONTROL Salva tutto]**
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
 ### Creare il componente Commento secondario {#create-the-child-comment-component}
 
-Queste direzioni impostano **Gruppo** su `.hidden` come solo il componente principale deve essere incluso all’interno di una pagina.
+Queste indicazioni impostano **Group** su `.hidden`, in quanto solo il componente principale deve essere incluso all&#39;interno di una pagina.
 
 L&#39;eliminazione del file JSP creato automaticamente è perché verrà utilizzato il file HBS predefinito.
 
-1. Passa al `/apps/custom/components/comments` nodo
+1. Passa al nodo `/apps/custom/components/comments`
 1. Fare clic con il pulsante destro del mouse sul nodo
 
    * Selezionare **[!UICONTROL Crea] > **[!UICONTROL Componente...]**
 
-      * **Etichetta**: *commento*
-      * **Titolo**: *Commento Alt*
-      * **Descrizione**: *Stile commento alternativo*
-      * **Super Type**: *social/commons/components/hbs/comments/comment*
+      * **Etichetta**:  *commento*
+      * **Titolo**:  *Commento Alt*
+      * **Descrizione**:  *Stile commento alternativo*
+      * **Super Type**:  *social/commons/components/hbs/comments/comment*
       * **Gruppo**: `*.hidden*`
    * Seleziona **[!UICONTROL Avanti]**
    * Seleziona **[!UICONTROL Avanti]**
@@ -97,27 +97,27 @@ L&#39;eliminazione del file JSP creato automaticamente è perché verrà utilizz
 
 
 1. Espandi il nodo appena creato: `/apps/custom/components/comments/comment`
-1. Seleziona **[!UICONTROL Salva tutto]**
-1. Clic con il pulsante destro del mouse `comment.jsp`
-1. Seleziona **[!UICONTROL Elimina]**
-1. Seleziona **[!UICONTROL Salva tutto]**
+1. Selezionare **[!UICONTROL Salva tutto]**
+1. Fare clic con il pulsante destro del mouse su `comment.jsp`
+1. Selezionare **[!UICONTROL Elimina]**
+1. Selezionare **[!UICONTROL Salva tutto]**
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Copiare e modificare gli script HBS predefiniti {#copy-and-modify-the-default-hbs-scripts}
+### Copia e modifica degli script HBS predefiniti {#copy-and-modify-the-default-hbs-scripts}
 
-Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Copia `comments.hbs`
 
    * Da [/libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
-   * A/ [apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
+   * A [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
 * Modifica `comments.hbs` in:
 
-   * Modificate il valore dell&#39; `data-scf-component` attributo (~line 20):
+   * Modificate il valore dell&#39;attributo `data-scf-component` (~line 20):
 
       * Da `social/commons/components/hbs/comments`
       * A `/apps/custom/components/comments`
@@ -130,7 +130,7 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 * Copia `comment.hbs`
 
    * Da [/libs/social/commons/components/hbs/comments/comment](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
-   * A/ [apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
+   * A [/apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
 * Modifica `comment.hbs` in:
 
@@ -139,42 +139,42 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
       * Da `social/commons/components/hbs/comments/comment`
       * A `/apps/custom/components/comments/comment`
 
-* Seleziona `/apps/custom` nodo
-* Seleziona **[!UICONTROL Salva tutto]**
+* Selezionare il nodo `/apps/custom`
+* Selezionare **[!UICONTROL Salva tutto]**
 
 ## Creare una cartella libreria client {#create-a-client-library-folder}
 
-Per evitare di dover includere esplicitamente questa libreria client, è possibile utilizzare il valore delle categorie per la clientlib del sistema di commenti predefinito ( `cq.social.author.hbs.comments`), ma tale clientlib verrà incluso anche per tutte le istanze del componente predefinito.
+Per evitare di dover includere in modo esplicito questa libreria client, è possibile utilizzare il valore delle categorie per la clientlib del sistema di commenti predefinito ( `cq.social.author.hbs.comments`), ma anche questa clientlib verrà inclusa per tutte le istanze del componente predefinito.
 
-Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilizzando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Seleziona `/apps/custom/components/comments` nodo
-* Seleziona **[!UICONTROL Crea nodo]**
+* Selezionare il nodo `/apps/custom/components/comments`
+* Selezionare **[!UICONTROL Crea nodo]**
 
    * **Nome**: `clientlibs`
    * **Tipo**: `cq:ClientLibraryFolder`
-   * Aggiungi alla scheda **[!UICONTROL Proprietà]** :
+   * Aggiungi alla scheda **[!UICONTROL Proprietà]**:
 
-      * **Nome** `categories` Tipo **** Valore `String` **Valore** `cq.social.author.hbs.comments` `Multi`
-      * **Nome** `dependencies` Tipo **** Valore `String` **Valore** `cq.social.scf` `Multi`
+      * **** `categories` **** `String` **NameTypeValue** `cq.social.author.hbs.comments` `Multi`
+      * **** `dependencies` **** `String` **NameTypeValue** `cq.social.scf` `Multi`
 
-* Seleziona **[!UICONTROL Salva tutto]**
-* Con `/apps/custom/components/comments/clientlib`il nodo s selezionato, create 3 file:
+* Selezionare **[!UICONTROL Salva tutto]**
+* Con il nodo `/apps/custom/components/comments/clientlib`s selezionato, create 3 file:
 
    * **Nome**: `css.txt`
    * **Nome**: `js.txt`
    * **Nome**: customcommentsystem.js
 
 * Immettete &#39;customcommentsystem.js&#39; come contenuto di `js.txt`
-* Seleziona **[!UICONTROL Salva tutto]**
+* Selezionare **[!UICONTROL Salva tutto]**
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-## Registrazione del modello e della vista SCF {#register-the-scf-model-view}
+## Registra modello SCF &amp; vista {#register-the-scf-model-view}
 
-Quando si estende (ignora) un componente SCF, resourceType è diverso (la sovrapposizione utilizza il meccanismo di ricerca relativa che esegue la ricerca `/apps` prima di `/libs` fare in modo che resourceType rimanga lo stesso). Per questo motivo è necessario scrivere JavaScript (nella libreria client) per registrare il modello SCF JS e visualizzarlo per il resourceType personalizzato.
+Quando si estende (si sovrascrive) un componente SCF, resourceType è diverso (la sovrapposizione utilizza il meccanismo di ricerca relativa che esegue la ricerca in `/apps` prima di `/libs` in modo che resourceType rimanga lo stesso). Per questo motivo è necessario scrivere JavaScript (nella libreria client) per registrare il modello SCF JS e visualizzarlo per il resourceType personalizzato.
 
-Inserite il testo seguente come contenuto di `customcommentsystem.js`:
+Immettete il testo seguente come contenuto di `customcommentsystem.js`:
 
 ### customcommentsystem.js {#customcommentsystem-js}
 
@@ -194,7 +194,7 @@ Inserite il testo seguente come contenuto di `customcommentsystem.js`:
 })($CQ, _, Backbone, SCF);
 ```
 
-* Seleziona **[!UICONTROL Salva tutto]**
+* Selezionare **[!UICONTROL Salva tutto]**
 
 ## Pubblicare l&#39;app {#publish-the-app}
 
@@ -204,9 +204,9 @@ Un modo per farlo è
 
 * Dalla navigazione globale
 
-   * Select **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
-   * Seleziona **[!UICONTROL Attiva albero]**
-   * Imposta `Start Path` su `/apps/custom`
-   * Deseleziona **[!UICONTROL solo modifica]**
-   * Pulsante Seleziona **[!UICONTROL Attiva]**
+   * Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]**
+   * Selezionare **[!UICONTROL Attiva albero]**
+   * Impostare `Start Path` su `/apps/custom`
+   * Deselezionare **[!UICONTROL Solo modificate]**
+   * Selezionare il pulsante **[!UICONTROL Attiva]**
 
