@@ -12,11 +12,11 @@ ht-degree: 27%
 ---
 
 
-# Learn About AEM 6.5 Capabilities {#learn-about-aem-64-capabilities}
+# Informazioni sulle funzionalità di AEM 6.5 {#learn-about-aem-64-capabilities}
 
 ## AEM Sites {#aem-sites}
 
- AEM Sites è un sistema di gestione dei contenuti all&#39;interno  Experience Manager Adeobe che offre un&#39;unica soluzione per creare, gestire e distribuire esperienze digitali su siti Web, siti mobili e schermate interne ai siti, in modo da renderle globali in termini di portata, ma allo stesso tempo pertinenti e coinvolgenti a livello personale. [Scopri di più](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) o [esplora alcune delle nostre esercitazioni sulle nuove funzioni video.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+ AEM Sites è un sistema di gestione dei contenuti all&#39;interno  Experience Manager Adeobe che offre un&#39;unica soluzione per creare, gestire e distribuire esperienze digitali su siti Web, siti mobili e schermate interne ai siti, in modo da renderle globali in termini di portata, ma allo stesso tempo pertinenti e coinvolgenti a livello personale. [Scopri ](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) di più o  [esplora alcune delle nostre esercitazioni sulle nuove funzioni video.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -47,8 +47,8 @@ Community è una funzionalità Adobe Experience Manager che consente di creare e
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre è una nuova funzionalità Adobe Experience Manager che consente di accedere a tutto ciò che è condiviso sul Web per creare un flusso costante di contenuti aggiornati e di alta qualità sui propri siti. [Per saperne di più](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) o per [passare direttamente alle nostre guide.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre è una nuova funzionalità Adobe Experience Manager che consente di accedere a tutto ciò che è condiviso sul Web per creare un flusso costante di contenuti aggiornati e di alta qualità sui propri siti. [Scopri ](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) di più o  [consulta le nostre guide.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 
-Ulteriori informazioni sulla fondazione [](/help/sites-deploying/home.md) Adobe Experience Manager 6.5 e sul modello di implementazione dei servizi gestiti oppure approfondisci alcune delle [nuove introduzione video alle funzioni di questa release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+Ulteriori informazioni su [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) e sul nostro modello di distribuzione dei servizi gestiti oppure approfondisci alcune delle nostre [nuove presentazioni video alle funzioni di questa release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
