@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 3%
 
 ---
 
 
 # Console Panoramica Live Copy{#live-copy-overview-console}
 
-La panoramica **di** Live Copy consente di:
+La **Live Copy Overview** consente di:
 
 * Visualizzare/gestire l&#39;ereditarietà in un sito:
 
@@ -36,10 +39,10 @@ Puoi aprire la panoramica Live Copy da:
 
 ### Apertura di una panoramica Live Copy - Riferimenti per una pagina Blueprint {#opening-live-copy-overview-references-for-a-blueprint-page}
 
-La panoramica **** Live Copy può essere aperta dal pannello laterale **Riferimenti** della console **Siti** :
+La **Live Copy Overview** può essere aperta dal pannello laterale **References** della console **Sites**:
 
-1. Nella console **Siti** , [andate alla pagina del blueprint e selezionatela](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **[References](/help/sites-authoring/basic-handling.md#references)**panel and select **Live Copies**.
+1. Nella console **Siti**, [passare alla pagina di blueprint e selezionarla](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Aprire il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)** e selezionare **Live Copy**.
 
    ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -47,32 +50,32 @@ La panoramica **** Live Copy può essere aperta dal pannello laterale **Riferime
    >
    >Potete anche aprire prima i Riferimenti e quindi selezionare il blueprint.
 
-1. Selezionate Panoramica **** Live Copy per mostrare e utilizzare la panoramica di tutte le Live Copy correlate al progetto selezionato.
-1. Utilizzate **Chiudi** per uscire e tornare alla console **Siti** .
+1. Selezionare **Live Copy Overview** per visualizzare e utilizzare la panoramica di tutte le Live Copy correlate al progetto selezionato.
+1. Utilizzare **Close** per uscire e tornare alla console **Sites**.
 
 ### Apertura di una panoramica Live Copy - Proprietà di una pagina Blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-La panoramica **** Live Copy può essere aperta quando si visualizzano le proprietà di una pagina blueprint:
+È possibile aprire la **Live Copy Overview** quando si visualizzano le proprietà di una pagina di blueprint:
 
-1. Aprite **Proprietà** per la pagina di blueprint appropriata.
-1. Aprite la scheda **Blueprint** ; l&#39;opzione Panoramica **** Live Copy verrà visualizzata nella barra degli strumenti superiore:
+1. Aprire **Properties** per la pagina di blueprint appropriata.
+1. Aprite la scheda **Blueprint** - l&#39;opzione **Live Copy Overview** verrà visualizzata nella barra degli strumenti superiore:
 
    ![chlimage_1-360](assets/chlimage_1-360.png)
 
-1. Selezionate Panoramica **** Live Copy per mostrare e utilizzare la panoramica di tutte le Live Copy correlate al progetto corrente.
+1. Selezionare **Live Copy Overview** per visualizzare e utilizzare la panoramica di tutte le Live Copy correlate al modello corrente.
 
    >[!NOTE]
    >
-   >Per ulteriori dettagli, consultate anche l&#39;articolo della Knowledge Base &quot; [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Per ulteriori dettagli, vedere anche l&#39;articolo della Knowledge Base [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
-1. Utilizzate **Chiudi** per uscire e tornare alla console **Siti** .
+1. Utilizzare **Close** per uscire e tornare alla console **Sites**.
 
-## Utilizzo della panoramica di Live Copy {#using-the-live-copy-overview}
+## Utilizzo della panoramica Live Copy {#using-the-live-copy-overview}
 
-La panoramica **** Live Copy può essere utilizzata anche per eseguire azioni sulla Live Copy:
+È inoltre possibile utilizzare la **Live Copy Overview** per eseguire azioni sulla Live Copy:
 
-1. Open the **Live Copy Overview**.
-1. Selezionate la pagina di blueprint o Live Copy richiesta; la barra degli strumenti verrà aggiornata per visualizzare le azioni disponibili. Le [azioni](/help/sites-administering/msm.md#terms-used) disponibili dipendono dalla selezione di una pagina [blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page) :
+1. Aprite la **Live Copy Overview**.
+1. Selezionate la pagina di blueprint o Live Copy richiesta; la barra degli strumenti verrà aggiornata per visualizzare le azioni disponibili. Le [azioni](/help/sites-administering/msm.md#terms-used) disponibili dipendono dalla selezione di una pagina [blueprint](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page):
 
 ### Azioni per una pagina Blueprint {#actions-for-a-blueprint-page}
 
@@ -124,7 +127,7 @@ Quando selezionate una pagina Live Copy, sono disponibili le azioni seguenti:
 
 ## Stato di relazione {#relationship-status}
 
-La console Stato **** relazione dispone di due schede che forniscono una serie di funzionalità:
+La console **Stato relazione** dispone di due schede che forniscono una serie di funzionalità:
 
 * [Informazioni sullo stato della relazione](#relationship-status-information)
 * [Informazioni Live Copy](#live-copy-information)
