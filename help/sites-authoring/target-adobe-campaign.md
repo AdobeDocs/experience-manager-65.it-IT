@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 74%
 
 ---
 
@@ -33,19 +36,19 @@ L’impostazione della segmentazione comprende la creazione di segmenti, di un m
 
 Per creare i segmenti:
 
-1. Open the [segmentation console](http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Create a new page and enter a title - for example, **AC Segments**- and select the **Segment (Adobe Campaign)** template.
+1. Aprite la [console di segmentazione](Http://localhost:4502/miscadmin#/etc/segmentation) in **&lt;host>:&lt;porta>/miscadmin#/etc/segmentation**.
+1. Create una nuova pagina e immettete un titolo, ad esempio **Segmenti CA**, quindi selezionate il modello **Segmento ( Adobe Campaign)**.
 1. Seleziona la pagina creata nella struttura ad albero a sinistra.
 1. Crea un segmento, ad esempio per utenti maschili, creando una nuova pagina chiamata Uomo sotto il segmento creato e seleziona il modello **Segmento (Adobe Campaign)**.
 1. Apri la pagina dei segmenti creata e trascina sulla pagina l’**ID segmento** dalla finestra laterale.
-1. Double-click the trait, enter the ID representing in this case, the male segment defined in Adobe Campaign - for example, **MALE** - and click **OK**. Dovrebbe comparire il seguente messaggio: *`targetData.segmentCode == "MALE"`*
+1. Fare doppio clic sulla caratteristica, inserire l&#39;ID che rappresenta in questo caso il segmento maschile definito in  Adobe Campaign, ad esempio **MASCHIO**, quindi fare clic su **OK**. Dovrebbe comparire il seguente messaggio: *`targetData.segmentCode == "MALE"`*
 1. Ripeti i passaggi per creare altri segmenti, ad esempio un segmento rivolto alle donne.
 
-### Creazione di un marchio {#creating-a-brand}
+### Creazione di un marchio  {#creating-a-brand}
 
 Per creare un marchio:
 
-1. In **Sites**, navigate to the **Campaigns** folder (for example in We.Retail).
+1. In **Siti**, andate alla cartella **Campagne** (ad esempio in We.Retail).
 1. Fai clic su **Crea pagina** e inserisci un titolo per la pagina, ad esempio We.Retail Brand, poi seleziona il modello **Marchio**.
 
 ### Creazione di una campagna {#creating-a-campaign}
@@ -55,34 +58,34 @@ Per creare una campagna:
 1. Apri la pagina **Marchio** appena creata.
 1. Fai clic su **Crea pagina** e inserisci un titolo per la pagina, ad esempio We.Retail Campaign, poi seleziona il modello di **Campagna** e fai clic su **Crea**.
 
-### Creazione di esperienze {#creating-experiences}
+### Creazione di esperienze  {#creating-experiences}
 
 Per creare delle esperienze per i segmenti:
 
-1. Open the **Campaign** page you just created.
-1. Create experiences for your segments by clicking **Create Page** and entering a title for your page, for example, Male as you are creating an experience for the Male segment, and select the **Experience** template.
+1. Aprite la pagina **Campaign** appena creata.
+1. Per creare esperienze per i segmenti, fai clic su **Crea pagina** e immetti un titolo per la pagina, ad esempio Maschio mentre crei un&#39;esperienza per il segmento Maschio, quindi seleziona il modello **Esperienza**.
 1. Apri la pagina Esperienza creata.
 1. Seleziona **Modifica**, vai in Segmenti e fai clic su **Aggiungi elemento**.
-1. Enter the path to the male segment, for example **/etc/segmentation/ac-segments/male** and click **OK**. The following message should appear: *Experience is targeted at: Male*
+1. Inserite il percorso del segmento maschile, ad esempio **/etc/segmentation/ac-segment/maschio** e fate clic su **OK**. Dovrebbe comparire il seguente messaggio: *L&#39;esperienza è destinata a: Maschio*
 1. Ripeti i passaggi precedenti per creare un&#39;esperienza per tutti i segmenti, ad esempio il target femminile.
 
-## Creazione di una newsletter con contenuti di destinazione {#creating-a-newsletter-with-targeted-content}
+## Creazione di una newsletter con contenuti di destinazione  {#creating-a-newsletter-with-targeted-content}
 
 Dopo aver creato i segmenti, un marchio, una campagna e un&#39;esperienza, puoi creare una newsletter con contenuti personalizzati. Dopo aver creato l&#39;esperienza, collega le esperienze ai tuoi segmenti.
 
 >[!NOTE]
 >
->[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md). Scaricate un esempio di contenuto Geometrixx da Package Share.
+>[I modelli e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md). Scaricate contenuti di Geometrixx di esempio da Package Share.
 
 Creare una newsletter con contenuti di destinazione:
 
-1. Create a newsletter with targeted content: Below Email Campaigns in Geometrixx Outdoors, click or tap **Create** > **Page**, and select one of the Adobe Campaign Mail templates.
+1. Create una newsletter con contenuti mirati: Sotto Campagne e-mail in Geometrixx Outdoors, fare clic o toccare **Crea** > **Pagina**, quindi selezionare uno dei  modelli di Adobe Campaign Mail.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
 1. Nella newsletter, aggiungi un componente Testo e personalizzazione.
 1. Aggiungi il testo al componente Testo e personalizzazione, ad esempio “Questo è il valore predefinito”.
-1. Click the arrow next to **Edit** and select **Targeting**.
+1. Fare clic sulla freccia accanto a **Modifica** e selezionare **Targeting**.
 1. Seleziona il tuo marchio dal menu a discesa Marchio e seleziona la tua Campagna. Si tratta del marchio e della campagna che hai creato in precedenza.
 1. Fai clic su **Inizia impostazione destinazione**. I segmenti vengono visualizzati nell’area Tipi di pubblico. L&#39;esperienza predefinita viene utilizzata se nessuno dei segmenti definiti corrisponde.
 
@@ -96,7 +99,7 @@ Creare una newsletter con contenuti di destinazione:
 
 1. Passa a un altro segmento (ad esempio Uomo), fai clic su **Aggiungi offerta** e sull’icona +. Quindi modificate l’offerta.
 1. Passa a un altro segmento (ad esempio Donna), fai clic su **Aggiungi offerta** e sull’icona +. Quindi, modifica l’offerta.
-1. Click **Next** to see Mapping, then click **Next** to see Settings, which does not apply to Adobe Campaign, and click **Save**.
+1. Fare clic su **Next** per visualizzare la mappatura, quindi fare clic su **Next** per visualizzare le impostazioni, che non si applicano a  Adobe Campaign, e fare clic su **Save**.
 
    AEM genera automaticamente il codice di impostazione della destinazione corretto per Adobe Campaign quando il contenuto viene utilizzato in una consegna in Adobe Campaign.
 
