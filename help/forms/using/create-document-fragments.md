@@ -10,15 +10,18 @@ discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 translation-type: tm+mt
 source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 2%
 
 ---
 
 
-# Esercitazione: Creazione di frammenti di documento{#tutorial-create-document-fragments}
+# Esercitazione: Creare frammenti di documento{#tutorial-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Questa esercitazione è un passaggio della serie [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) (Creazione della prima serie di comunicazioni interattive). Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
+Questa esercitazione è un passaggio della serie [Crea la tua prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md). Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
 
 I frammenti di documento sono componenti riutilizzabili di una corrispondenza utilizzata per comporre una comunicazione interattiva. I frammenti di documento sono dei tipi seguenti:
 
@@ -26,7 +29,7 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 * Elenco - Elenco è un gruppo di frammenti di documento, inclusi testo, elenchi, condizioni e immagini.
 * Condizione: le condizioni consentono di definire il contenuto da includere nella comunicazione interattiva in base ai dati ricevuti dal modello dati del modulo.
 
-Questa esercitazione illustra i passaggi necessari per creare più frammenti di documento di testo in base all&#39;anatomia fornita nella sezione [Pianificare la comunicazione](/help/forms/using/planning-interactive-communications.md) interattiva. Al termine di questa esercitazione, potrete:
+Questa esercitazione illustra i passaggi necessari per creare più frammenti di documento di testo in base all&#39;anatomia fornita nella sezione [Pianificare la comunicazione interattiva](/help/forms/using/planning-interactive-communications.md). Al termine di questa esercitazione, potrete:
 
 * Creazione di frammenti di documento
 * Creare variabili
@@ -41,50 +44,52 @@ Di seguito è riportato l&#39;elenco dei frammenti di documento creati con quest
 * [Riepilogo fatturazione](../../forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Riepilogo delle spese](../../forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Ciascun frammento di documento include campi con testo statico, dati ricevuti dal modello dati del modulo e dati immessi tramite l&#39;interfaccia utente dell&#39;agente. Tutti questi campi sono stati rappresentati nella sezione [Pianificare la comunicazione](/help/forms/using/planning-interactive-communications.md) interattiva.
+Ciascun frammento di documento include campi con testo statico, dati ricevuti dal modello dati del modulo e dati immessi tramite l&#39;interfaccia utente dell&#39;agente. Tutti questi campi sono stati rappresentati nella sezione [Pianificare la comunicazione interattiva](/help/forms/using/planning-interactive-communications.md).
 
 Durante la creazione di frammenti di documento in questa esercitazione, vengono create variabili per i campi che ricevono dati tramite l&#39;interfaccia utente dell&#39;agente.
 
-In questa esercitazione, utilizzare **FDM_Create_First_IC**, come descritto nella sezione [Crea modello](../../forms/using/create-form-data-model0.md) dati modulo, come modello dati modulo per creare frammenti di documento.
+In questa esercitazione, utilizzare **FDM_Create_First_IC**, come descritto nella sezione [Crea modello dati modulo](../../forms/using/create-form-data-model0.md), come modello dati modulo per creare frammenti di documento.
 
-## Passaggio 1: Crea frammento di testo Dettagli fatturazione {#step-create-bill-details-text-document-fragment}
+## Passaggio 1: Crea frammento di testo del documento Dettagli fatturazione {#step-create-bill-details-text-document-fragment}
 
 Il frammento di documento Dettagli fatturazione include i campi seguenti:
 
 | Campo | Sorgente dati |
 |---|---|
-| Numero fattura | INTERFACCIA UTENTE agente |
-| Periodo fatturazione | INTERFACCIA UTENTE agente |
-| Data fatturazione | INTERFACCIA UTENTE agente |
+| Numero fattura | Interfaccia utente agente |
+| Periodo fatturazione | Interfaccia utente agente |
+| Data fatturazione | Interfaccia utente agente |
 | Il tuo piano | Modello dati modulo |
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Frammenti documento]**.
 
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
-   1. Immettere **bill_details_first_ic** come nome nel campo **Titolo** . Il titolo viene popolato automaticamente nel campo **Nome** .
+   1. Immettere **bill_details_first_ic** come nome nel campo **Title**. Il titolo viene compilato automaticamente nel campo **Name**.
 
-   1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
+   1. Selezionare **Form Data Model** dalla sezione **Data Model**.
 
-   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
 
-   1. Toccate **Avanti**.
+   1. Toccare **Next**.
 
-1. Selezionate la scheda **Variabili** nel riquadro a sinistra e toccate **Crea**.
-1. Nella sezione **Crea variabile** :
+1. Selezionare la scheda **Variabili** nel riquadro a sinistra e toccare **Crea**.
+1. Nella sezione **Crea variabile**:
 
-   1. Immettere il **numero di fattura** come nome della variabile.
-   1. Selezionare **Stringa** come tipo.
+   1. Immettere **Numero di fattura** come nome della variabile.
+   1. Selezionare **String** come tipo.
    1. Toccate **Crea**.
+
    ![Crea variabile di tipo String](assets/variable_create_string_new.png)
 
    Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Periodo di fatturazione: Tipo stringa
    * Data fatturazione: Tipo data
+
    ![Dettagli fattura](assets/variable_bill_details_new.png)
 
 1. Utilizzando il riquadro a destra, potete creare testo statico per i seguenti campi:
@@ -93,19 +98,20 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    * Periodo fatturazione
    * Data fatturazione
    * Il tuo piano
+
    ![Testo statico](assets/variable_bill_details_static_text_new.png)
 
-1. Posizionare il cursore accanto al campo **Numero** fattura e fare doppio clic sulla variabile **Numero** fattura dalla scheda **Variabili** nel riquadro a sinistra.
-1. Posizionare il cursore accanto al campo **Periodo** fatturazione e fare doppio clic sulla variabile **Periodo** fatturazione.
-1. Posizionare il cursore accanto al campo Data **** fattura e fare doppio clic sulla variabile Data **** fattura.
-1. Selezionare la scheda Oggetti **modello** dati nel riquadro a sinistra.
-1. Posizionare il cursore accanto al campo **Piano** e fare doppio clic sulla proprietà **cliente** > **piano** cliente.
+1. Posizionare il cursore accanto al campo **Nr. fattura** e fare doppio clic sulla variabile **InvoiceNumber** dalla scheda **Variabili** nel riquadro a sinistra.
+1. Posizionare il cursore accanto al campo **Periodo fatturazione** e fare doppio clic sulla variabile **Billpunto**.
+1. Posizionare il cursore accanto al campo **Data fatturazione** e fare doppio clic sulla variabile **Data fatturazione**.
+1. Selezionare la scheda **Oggetti modello dati** nel riquadro a sinistra.
+1. Posizionare il cursore accanto al campo **Piano** e fare doppio clic sulla proprietà **customer** > **customerplan**.
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Fare clic su **Salva** per creare il frammento di testo relativo ai dettagli fatture.
+1. Fare clic su **Salva** per creare il frammento di testo Dettagli fatturazione.
 
-## Passaggio 2: Crea frammento di testo Dettagli cliente {#step-create-customer-details-text-document-fragment}
+## Passaggio 2: Crea frammento di testo del documento Dettagli cliente {#step-create-customer-details-text-document-fragment}
 
 Il frammento di documento Dettagli cliente include i campi seguenti:
 
@@ -113,41 +119,42 @@ Il frammento di documento Dettagli cliente include i campi seguenti:
 |---|---|
 | Nome cliente | Modello dati modulo |
 | Indirizzo | Modello dati modulo |
-| Luogo di fornitura | INTERFACCIA UTENTE agente |
-| Codice di stato | INTERFACCIA UTENTE agente |
+| Luogo di fornitura | Interfaccia utente agente |
+| Codice di stato | Interfaccia utente agente |
 | Numero cellulare | Modello dati modulo |
 | Numero di contatto alternativo | Modello dati modulo |
 | Numero relazione | Modello dati modulo |
-| Numero di connessioni | INTERFACCIA UTENTE agente |
+| Numero di connessioni | Interfaccia utente agente |
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Frammenti documento]**.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
-   1. Immettete **customer_details_first_ic** come nome nel campo **Titolo** . Il titolo viene popolato automaticamente nel campo **Nome** .
+   1. Immettere **customer_details_first_ic** come nome nel campo **Title**. Il titolo viene compilato automaticamente nel campo **Name**.
 
-   1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
+   1. Selezionare **Form Data Model** dalla sezione **Data Model**.
 
-   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
 
-   1. Toccate **Avanti**.
+   1. Toccare **Next**.
 
-1. Selezionate la scheda **Variabili** nel riquadro a sinistra e toccate **Crea**.
-1. Nella sezione **Crea variabile** :
+1. Selezionare la scheda **Variabili** nel riquadro a sinistra e toccare **Crea**.
+1. Nella sezione **Crea variabile**:
 
    1. Immettere **Placesupply** come nome della variabile.
-   1. Selezionare **Stringa** come tipo.
+   1. Selezionare **String** come tipo.
    1. Toccate **Crea**.
+
    Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Codice di stato: Tipo di numero
    * Numberconnection: Tipo di numero
 
 
-1. Selezionare la scheda Oggetti **modello** dati, posizionare il cursore nel riquadro a destra e fare doppio clic sulla proprietà **customer** > **name** .
-1. Premere Invio per spostare il cursore sulla riga successiva e fare doppio clic sulla proprietà **customer** > **address** .
+1. Selezionare la scheda **Oggetti modello dati**, posizionare il cursore nel riquadro a destra e fare doppio clic sulla proprietà **customer** > **name**.
+1. Premere Invio per spostare il cursore sulla riga successiva e fare doppio clic sulla proprietà **customer** > **address**.
 1. Utilizzando il riquadro a destra, potete creare testo statico per i seguenti campi:
 
    * Numero cellulare
@@ -156,52 +163,54 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    * Numero relazione
    * Codice di stato
    * Numero di connessioni
+
    ![Testo statico dei dettagli del cliente](assets/customer_details_static_text_new.png)
 
-1. Posizionare il cursore accanto al campo Numero **** mobile e fare doppio clic sulla proprietà **customer** > **mobilenum** .
-1. Posizionare il cursore accanto al campo Numero **di contatto** alternativo e fare doppio clic sulla proprietà** customer* > **alternatemobilenumber** .
-1. Posizionare il cursore accanto al campo Numero **** relazione e fare doppio clic sulla proprietà **cliente** > **Numero** relazione.
-1. Selezionare la scheda **Variabili** , posizionare il cursore accanto al campo **Posizione fornitura** e fare doppio clic sulla variabile **Placesupply** .
-1. Posizionare il cursore accanto al campo Codice **di** stato e fare doppio clic sulla variabile **Codice** di stato.
-1. Posizionare il cursore accanto al campo **Numero di connessioni** e fare doppio clic sulla variabile **Connessioni** numeriche.
+1. Posizionare il cursore accanto al campo **Numero mobile** e fare doppio clic sulla proprietà **customer** > **mobilenum**.
+1. Posizionare il cursore accanto al campo **Numero di contatto alternativo** e fare doppio clic sulla proprietà** customer** > **numero di telefono alternativo**.
+1. Posizionare il cursore accanto al campo **Numero relazione**, quindi fare doppio clic sulla proprietà **customer** > **relation number**.
+1. Selezionare la scheda **Variabili**, posizionare il cursore accanto al campo **Luogo di fornitura** e fare doppio clic sulla variabile **Placesupply**.
+1. Posizionare il cursore accanto al campo **Codice di stato** e fare doppio clic sulla variabile **Codice di stato**.
+1. Posizionare il cursore accanto al campo **Numero di connessioni** e fare doppio clic sulla variabile **NumberConnections**.
 
    ![Dettagli cliente](assets/customer_details_df2_new.png)
 
-1. Fare clic su **Salva** per creare il frammento di testo del documento Dettagli cliente.
+1. Fare clic su **Salva** per creare il frammento del documento di testo Dettagli cliente.
 
-## Passaggio 3: Crea frammento di testo Riepilogo fatturazione {#step-create-bill-summary-text-document-fragment}
+## Passaggio 3: Crea frammento di testo di riepilogo distinta {#step-create-bill-summary-text-document-fragment}
 
 Il frammento di documento Riepilogo fatturazione include i campi seguenti:
 
 | Campo | Sorgente dati |
 |---|---|
-| Saldo precedente | INTERFACCIA UTENTE agente |
-| Pagamenti | INTERFACCIA UTENTE agente |
-| Regolazioni | INTERFACCIA UTENTE agente |
+| Saldo precedente | Interfaccia utente agente |
+| Pagamenti | Interfaccia utente agente |
+| Regolazioni | Interfaccia utente agente |
 | Addebito periodo corrente | Modello dati modulo |
-| Importo dovuto | INTERFACCIA UTENTE agente |
-| Data di scadenza | INTERFACCIA UTENTE agente |
+| Importo dovuto | Interfaccia utente agente |
+| Data di scadenza | Interfaccia utente agente |
 
 Per creare variabili per i campi con l’interfaccia utente agente come origine dati, creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Frammenti documento]**.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
-   1. Immettere **bill_summary_first_ic** come nome nel campo **Titolo** . Il titolo viene popolato automaticamente nel campo **Nome** .
+   1. Immettere **bill_summary_first_ic** come nome nel campo **Title**. Il titolo viene compilato automaticamente nel campo **Name**.
 
-   1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
+   1. Selezionare **Form Data Model** dalla sezione **Data Model**.
 
-   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
 
-   1. Toccate **Avanti**.
+   1. Toccare **Next**.
 
-1. Selezionate la scheda **Variabili** nel riquadro a sinistra e toccate **Crea**.
-1. Nella sezione **Crea variabile** :
+1. Selezionare la scheda **Variabili** nel riquadro a sinistra e toccare **Crea**.
+1. Nella sezione **Crea variabile**:
 
-   1. Immettere **il saldo** precedente come nome della variabile.
-   1. Selezionare **Numero** come tipo.
+   1. Immettere **Precedente bilancio** come nome della variabile.
+   1. Selezionare **Number** come tipo.
    1. Toccate **Crea**.
+
    Ripetere i passaggi 4 e 5 per creare le seguenti variabili:
 
    * Pagamenti: Tipo di numero
@@ -219,20 +228,21 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    * Importo dovuto
    * Data di scadenza
    * Le spese di pagamento tardivo dopo la data di scadenza sono $ 20
+
    ![Testo statico Riepilogo distinte](assets/bill_summary_static_new.png)
 
-1. Posizionare il cursore accanto al campo **Saldo** precedente e fare doppio clic sulla variabile Saldo **** precedente.
-1. Posizionare il cursore accanto al campo **Pagamenti** e fare doppio clic sulla variabile **Pagamenti** .
-1. Posizionate il cursore accanto al campo **Regolazioni** e fate doppio clic sulla variabile **Regolazioni** .
-1. Posizionare il cursore accanto al campo **Importo dovuto** e fare doppio clic sulla variabile **Almontabile** .
-1. Posizionare il cursore accanto al campo Data **di** scadenza e fare doppio clic sulla variabile **Data** di scadenza.
-1. Selezionare la scheda Oggetti **modello di** dati, posizionare il cursore accanto al campo Periodo **di fatturazione corrente** Addebiti nel riquadro a destra, quindi fare doppio clic sulla **proprietà fatture** > **addebiti** .
+1. Posizionare il cursore accanto al campo **Saldo precedente** e fare doppio clic sulla variabile **Bilanciamento precedente**.
+1. Posizionare il cursore accanto al campo **Pagamenti** e fare doppio clic sulla variabile **Pagamenti**.
+1. Posizionare il cursore accanto al campo **Regolazioni** e fare doppio clic sulla variabile **Regolazioni**.
+1. Posizionare il cursore accanto al campo **Importo dovuto** e fare doppio clic sulla variabile **Amontdue**.
+1. Posizionare il cursore accanto al campo **Data di scadenza** e fare doppio clic sulla variabile **Data di scadenza**.
+1. Selezionare la scheda **Oggetti modello dati**, posizionare il cursore accanto al campo **Addebito il periodo di fatturazione corrente** nel riquadro a destra, quindi fare doppio clic sulla proprietà **bollette** > **spese d&#39;uso**.
 
    ![Riepilogo fatturazione](assets/bill_summary_static_variables_new.png)
 
-1. Fare clic su **Salva** per creare il frammento di testo del documento Dettagli cliente.
+1. Fare clic su **Salva** per creare il frammento del documento di testo Dettagli cliente.
 
-## Passaggio 4: Crea riepilogo del frammento di documento di testo relativo alle spese {#step-create-summary-of-charges-text-document-fragment}
+## Passaggio 4: Crea riepilogo del frammento di documento di testo delle spese {#step-create-summary-of-charges-text-document-fragment}
 
 Il frammento di documento Riepilogo spese include i campi seguenti:
 
@@ -250,17 +260,17 @@ Il frammento di documento Riepilogo spese include i campi seguenti:
 
 Per creare testo statico e utilizzare gli elementi del modello dati del modulo nel frammento di documento, procedere come segue:
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Frammenti documento]**.
 1. Selezionare **Crea** > **Testo**.
 1. Specificate le seguenti informazioni:
 
-   1. Immettete **summary_charge_first_ic** come nome nel campo **Titolo** . Il titolo viene compilato automaticamente nel campo Nome.
+   1. Immettere **summary_charge_first_ic** come nome nel campo **Title**. Il titolo viene compilato automaticamente nel campo Nome.
 
-   1. Selezionare Modello **dati** modulo dalla sezione Modello **** dati.
+   1. Selezionare **Form Data Model** dalla sezione **Data Model**.
 
-   1. Selezionare **FDM_Create_First_IC** come modello di dati del modulo e toccare **Seleziona**.
+   1. Selezionare **FDM_Create_First_IC** come modello dati modulo e toccare **Seleziona**.
 
-   1. Toccate **Avanti**.
+   1. Toccare **Next**.
 
 1. Utilizzando il riquadro a destra, potete creare testo statico per i seguenti campi:
 
@@ -273,30 +283,32 @@ Per creare testo statico e utilizzare gli elementi del modello dati del modulo n
    * Spese per servizi a valore aggiunto
    * Oneri totali
    * TOTALE PAGABILE
+
    ![Spese di riepilogo](assets/summary_charges_static_new.png)
 
-1. Selezionare la scheda Oggetti **modello** dati.
-1. Posizionare il cursore accanto al campo **Addebiti** per chiamate e fare doppio clic sulla proprietà **fatture** > **canoni** .
-1. Posizionate il cursore accanto al campo **Spese** chiamate conferenza e fate doppio clic sulla proprietà **fatture** > **spese** di chiamata.
-1. Posizionare il cursore accanto al campo **Spese** SMS e fare doppio clic sulla proprietà **fatture** > **schemi** .
-1. Posizionare il cursore accanto al campo Tariffe **Internet** mobile e fare doppio clic sulla proprietà **fatture** > **internetcharge** .
-1. Posizionare il cursore accanto al campo **Tariffe** di roaming nazionali e fare doppio clic sulle **fatture** > Proprietà **nazionale** di roaming.
-1. Posizionare il cursore accanto al campo Tariffe **di roaming** internazionali e fare doppio clic sulla proprietà **fatture** > **canone** .
-1. Posizionare il cursore accanto al campo **Spese** servizio aggiunto e fare doppio clic sulla proprietà **fatture** > **vas** .
-1. Posizionare il cursore accanto al campo **Addebiti** totali e fare doppio clic sulla proprietà **fatture** > **spese** d&#39;uso.
-1. Posizionare il cursore accanto al campo **TOTAL PAYABLE** e fare doppio clic sulla proprietà **bill** > **usagecharge** .
+1. Selezionare la scheda **Oggetti modello dati**.
+1. Posizionare il cursore accanto al campo **Addebiti chiamate** e fare doppio clic sulla proprietà **bollette** > **callcharge**.
+1. Posizionare il cursore accanto al campo **Spese di chiamata conferenza** e fare doppio clic sulla proprietà **bollette** > **spese di chiamata conferenza**.
+1. Posizionare il cursore accanto al campo **Spese SMS** e fare doppio clic sulla proprietà **bollette** > **smscharges**.
+1. Posizionare il cursore accanto al campo **Carica Internet mobile** e fare doppio clic sulla proprietà **bollette** > **internetcharge**.
+1. Posizionare il cursore accanto al campo **Tariffe di roaming nazionali** e fare doppio clic sulla proprietà **bollette** > **roaming nazionale**.
+1. Posizionare il cursore accanto al campo **Tariffe di roaming internazionale** e fare doppio clic sulla proprietà **bollette** > **roaming**.
+1. Posizionare il cursore accanto al campo **Spese per servizi aggiunti** e fare doppio clic sulla proprietà **bollette** > **vas**.
+1. Posizionare il cursore accanto al campo **Addebiti totali** e fare doppio clic sulla proprietà **bollette** > **spese d&#39;uso**.
+1. Posizionare il cursore accanto al campo **TOTAL PAYABLE** e fare doppio clic sulla proprietà **bollette** > **usagecharge**.
 
    ![Riepilogo delle spese](assets/summary_charges_static_fdm_new.png)
 
-1. Selezionate il testo nella riga **Spese** servizio aggiunto e toccate **Crea regola** per creare una condizione in base alla quale la riga viene visualizzata nella comunicazione interattiva:
-1. Nella finestra a comparsa **Crea regola** :
+1. Selezionare il testo nella riga **Spese per servizi aggiunti di valore** e toccare **Crea regola** per creare una condizione in base alla quale la riga viene visualizzata nella comunicazione interattiva:
+1. Nella finestra a comparsa **Crea regola**:
 
-   1. Selezionare Modelli **dati e variabili** , quindi **fatture** > **callcharge**.
+   1. Selezionare **Modelli di dati e variabili**, quindi **bollette** > **callcharge**.
 
-   1. Select **è minore** dell&#39;operatore.
-   1. Selezionate **Numero** e immettete il valore come **60**.
-   In base a questa condizione, la riga Oneri servizi aggiunti valore viene visualizzata solo se il valore per il campo Addebiti chiamate è inferiore a 60.
+   1. Selezionare **è minore di** come operatore.
+   1. Selezionare **Number** e immettere il valore come **60**.
+
+   In base a questa condizione, la riga Added Services Added Cost viene visualizzata solo se il valore per il campo Call Addebiti è inferiore a 60.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Fare clic su **Salva** per creare il frammento di testo Riepilogo spese.
+1. Fare clic su **Salva** per creare il frammento di testo Riepilogo delle spese.
