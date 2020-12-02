@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 1%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Una volta acquisita familiarità con le azioni di gestione del contenuto su articoli, banner e raccolte, potete pubblicare il contenuto. Potete inoltre annullare la pubblicazione del contenuto.
+Una volta che avete familiarità con le azioni di gestione del contenuto su articoli, banner e raccolte, potete pubblicare il contenuto. Potete inoltre annullare la pubblicazione del contenuto.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consultate Considerazioni di [progettazione per le app](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per  app AEM Mobile, consultare [Considerazioni di progettazione per  app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 ## Pubblicazione/annullamento della pubblicazione del contenuto {#publishing-unpublishing-the-content}
 
@@ -53,9 +56,9 @@ Flusso di lavoro generale per pubblicare/annullare la pubblicazione di un artico
 
 Dopo aver appreso la creazione e la pubblicazione di contenuti, vedete
 
-* [Sviluppo di contenuto AEM per i servizi on-demand AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Amministrazione dei contenuti per l&#39;utilizzo dei servizi on-demand AEM Mobile](/help/mobile/aem-mobile.md)
+* [Sviluppo AEM contenuto per  AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Amministrazione di contenuti da utilizzare  AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Per ulteriori informazioni sugli argomenti relativi all’authoring, consulta
 
-[Creazione di contenuti AEM per le app AEM Mobile On-Demand Services](/help/mobile/mobile-apps-ondemand.md)
+[Creazione AEM contenuto per  app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
