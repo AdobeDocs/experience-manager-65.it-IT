@@ -1,6 +1,6 @@
 ---
-title: Risoluzione di problemi AEM durante l’authoring
-seo-title: Risoluzione di problemi AEM nell’ambiente di creazione
+title: Risoluzione di problemi AEM nell’ambiente di authoring
+seo-title: Risoluzione di problemi AEM nell’ambiente di authoring
 description: Alcuni problemi che potrebbero verificarsi durante l’utilizzo di AEM
 seo-description: Alcuni problemi che potrebbero verificarsi durante l’utilizzo di AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
 
-# Risoluzione di problemi AEM nell’ambiente di creazione{#troubleshooting-aem-when-authoring}
+# Risoluzione di problemi AEM nell’ambiente di authoring {#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 
@@ -40,20 +43,20 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 * **Soluzioni**:
 
    * Esistono diverse possibilità:
-   * Verifica che la pagina sia stata replicata correttamente. Controllate lo stato della pagina e, se necessario, lo stato della coda di replica.
+   * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
-   * Add `?` to the end of the page URL. For example:
+   * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
 
       * `http://localhost:4502/sites.html/content?`
-      * Questo fa sì che la pagina venga richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
-   * In caso di problemi relativi alla coda di replica, rivolgetevi al vostro amministratore di sistema.
+      * In questo modo la pagina viene richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
+   * In caso di problemi relativi alla coda di replica, rivolgiti all’amministratore di sistema.
 
 
 ## Azioni per componenti non visibili sulla barra degli strumenti {#component-actions-not-visible-on-toolbar}
 
 * **Problema**:
 
-   * Non tutte le azioni disponibili per i componenti sono visibili quando si modifica il contenuto di una pagina nell’ambiente di creazione.
+   * Non tutte le azioni disponibili per i componenti sono visibili quando si modifica il contenuto di una pagina nell’ambiente di authoring.
 
 * **Motivo**:
 
