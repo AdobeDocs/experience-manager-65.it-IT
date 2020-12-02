@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Potete creare le credenziali SSL (Secure Sockets Layer) e configurare SSL sul server dell’applicazione per migliorare la sicurezza della comunicazione con il server dell’applicazione.
 
-Come prodotto di sicurezza, Rights Management richiede la configurazione di SSL. Quando configurate i certificati SSL, accertatevi di utilizzare solo le chiavi RSA. I certificati SSL con chiavi DSA non sono supportati.
+Come prodotto di sicurezza, il Rights Management richiede la configurazione di SSL. Quando configurate i certificati SSL, accertatevi di utilizzare solo le chiavi RSA. I certificati SSL con chiavi DSA non sono supportati.
 
-Le informazioni fornite si applicano alle installazioni chiavi in mano, automatiche e manuali. Offre un esempio di metodo per configurare SSL. È inoltre possibile utilizzare altri metodi più adatti alla rete o all&#39;organizzazione.
+Le informazioni fornite si applicano alle installazioni chiavi in mano, automatiche e manuali. Offre un esempio di metodo per la configurazione di SSL. È inoltre possibile utilizzare altri metodi più adatti alla rete o all&#39;organizzazione.
 
 >[!NOTE]
 >
@@ -31,4 +34,4 @@ Le informazioni fornite si applicano alle installazioni chiavi in mano, automati
 >
 >Quando create certificati di sicurezza SSL e le credenziali, utilizzate gli stessi privilegi dell&#39;account utente che avete usato per eseguire il server dell&#39;applicazione. Se il server applicazione viene eseguito utilizzando altri privilegi utente, il modulo potrebbe non essere visualizzato correttamente per le rappresentazioni PDFForm quando ContentRootURI punta a https.
 
-Se disponete di un server LDAP abilitato per SSL, configurate Gestione utente per utilizzarlo. Consultate [Configurare la gestione utente per un server](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)LDAP abilitato per SSL.
+Se disponete di un server LDAP abilitato per SSL, configurate Gestione utente per utilizzarlo. Consultate [Configurare la gestione utente per un server LDAP abilitato per SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).
