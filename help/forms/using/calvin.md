@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Verifica automatica dei moduli adattivi{#automate-testing-of-adaptive-forms}
+# Test automatico dei moduli adattivi{#automate-testing-of-adaptive-forms}
 
 ## Panoramica {#overview}
 
 I moduli adattivi sono parte integrante delle interazioni con i clienti. È importante verificare i moduli adattivi con tutte le modifiche apportate, ad esempio durante l&#39;implementazione di un nuovo fix pack o la modifica di una regola nel modulo. Tuttavia, la verifica funzionale dei moduli adattivi e di tutti i campi al loro interno può risultare noiosa.
 
-Calvin consente di automatizzare il test dei moduli adattivi nel browser Web. Calvin utilizza l&#39;interfaccia utente di [Hobbes](/help/sites-developing/hobbes.md)per eseguire i test e fornisce i seguenti strumenti:
+Calvin consente di automatizzare il test dei moduli adattivi nel browser Web. Calvin utilizza l&#39;interfaccia utente di [Hobbes](/help/sites-developing/hobbes.md) per eseguire i test e fornisce i seguenti strumenti:
 
 * API JavaScript per la creazione di test.
 * Interfaccia utente per l&#39;esecuzione di test.
@@ -58,7 +58,7 @@ Con Calvin è possibile creare test case in CRXDE ed eseguire test dell&#39;inte
    <td><p>Regole di espressione</p> <p> </p> </td>
    <td>
     <ul>
-     <li>Le espressioni associate agli oggetti modulo, come calculate, visibili, eseguono script dopo l'uscita da un campo, durante l'esecuzione delle relative operazioni dell'interfaccia utente?<br /> </li>
+     <li>Le espressioni associate agli oggetti modulo, ad esempio calculate, visibili, eseguono gli script dopo l'uscita da un campo, durante l'esecuzione delle relative operazioni dell'interfaccia utente?<br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -89,7 +89,7 @@ Con Calvin è possibile creare test case in CRXDE ed eseguire test dell&#39;inte
 
 Prima di utilizzare questo articolo per creare i casi di test, è necessario conoscere quanto segue:
 
-* Creazione di suite di test ed esecuzione di test case con [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
+* Creazione di suite di test ed esecuzione di casi di test con [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
 * [API JavaScript di Hobbes](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [API JavaScript Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
@@ -98,11 +98,11 @@ Prima di utilizzare questo articolo per creare i casi di test, è necessario con
 L&#39;esempio seguente illustra la creazione di una suite di test per il test di più moduli adattivi. È necessario creare un test case separato per ciascun modulo da sottoporre a test. Seguendo passaggi simili a quelli indicati di seguito e modificando il codice JavaScript al punto 11, è possibile creare una suite di test personalizzata per verificare i moduli adattivi.
 
 1. Andate al CRXDE Lite nel browser Web: `https://'[server]:[port]'/crx/de`.
-1. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **Crea** > **Crea nodo**. Immettete un nome (qui afTestRegistration), specificate il tipo di nodo come cq:ClientLibraryFolder e fate clic su **OK.**
+1. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **Crea** > **Crea nodo**. Immettete un nome (in questo caso afTestRegistration), specificate il tipo di nodo come cq:ClientLibraryFolder, quindi fate clic su **OK.**
 
    La cartella clientlibs contiene l’aspetto di registrazione dell’applicazione (JS e Init). Si consiglia di registrare tutti gli oggetti delle suite di test di Hobbes specifici per un modulo nella cartella clientlibs.
 
-1. Specificate i seguenti valori di proprietà nel nodo appena creato (qui afTestRegistration), quindi fate clic su **Salva tutto**. Queste proprietà consentono a Hobbes di riconoscere la cartella come un test. Per riutilizzare la libreria client come dipendenza in altre librerie client, denominatela granite.testing.calvin.test.
+1. Specificare i seguenti valori di proprietà nel nodo appena creato (qui afTestRegistration), quindi fare clic su **Save All**. Queste proprietà consentono a Hobbes di riconoscere la cartella come un test. Per riutilizzare la libreria client come dipendenza in altre librerie client, denominatela granite.testing.calvin.test.
 
 <table>
  <tbody>
@@ -130,7 +130,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)** , quindi scegliere **Crea** > **Crea file**. Denominate il file js.txt e fate clic su **OK**.
+1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)**, quindi fare clic su **Create** > **Create File**. Denominate il file js.txt e fate clic su **OK**.
 1. Nel file js.txt aggiungete il testo seguente:
 
    ```javascript
@@ -138,8 +138,8 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
    js.txt
    ```
 
-1. Fate clic su **Salva tutto** , quindi chiudete il file js.txt.
-1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)** e scegliere **Crea** > **Crea file**. Denominate il file init.js e fate clic su **OK**.
+1. Fate clic su **Salva tutto**, quindi chiudete il file js.txt.
+1. Fare clic con il pulsante destro del mouse sul nodo test (qui **afTestRegistration)** e fare clic su **Create** > **Create File**. Denominate il file init.js e fate clic su **OK**.
 1. Copiate il codice seguente nel file init.js e fate clic su **Salva tutto**:
 
    ```javascript
@@ -156,7 +156,7 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
    }(window, window.hobs));
    ```
 
-   Il codice riportato sopra crea una suite di test denominata Modulo **adattivo - Test** demo. Per creare una suite di test con un nome diverso, modificate di conseguenza il nome.
+   Il codice riportato sopra crea una suite di test denominata **Modulo adattivo - Demo Test**. Per creare una suite di test con un nome diverso, modificate di conseguenza il nome.
 
 1. Fare clic su **Crea** > **Crea nodo** per creare un nodo sotto la cartella clientlib per ciascun modulo da verificare. In questo esempio viene utilizzato un nodo denominato **testForm** per testare un modulo adattivo denominato **testForm**. Specificate le seguenti proprietà e fate clic su **OK**:
 
@@ -176,9 +176,9 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
-1. Fare clic con il pulsante destro del mouse sulla cartella creata per il modulo di prova (qui testForm) e selezionare **Crea** > **Crea file**. Denominate il file scriptingTest.js e aggiungete il codice seguente al file, quindi fate clic su **Salva tutto.**
+1. Fare clic con il pulsante destro del mouse sulla cartella creata per il modulo di prova (qui testForm) e selezionare **Crea** > **Crea file**. Assegnare al file il nome scriptingTest.js e aggiungere il codice seguente, quindi fare clic su **Salva tutto.**
 
-   Per utilizzare il codice seguente per testare un altro modulo adattivo, modificare il percorso e il nome del modulo in **navigateTo** (righe 11, 36 e 62) e i rispettivi casi di test. Per ulteriori informazioni sulle API per il test di diversi aspetti dei moduli e degli oggetti modulo, vedere API [Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Per utilizzare il codice seguente per testare un altro modulo adattivo, modificare il percorso e il nome del modulo in **navigateTo** (righe 11, 36 e 62) e i rispettivi casi di test. Per ulteriori informazioni sulle API per il test di diversi aspetti dei moduli e degli oggetti modulo, vedere [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```javascript
    (function(window, hobs) {
@@ -272,13 +272,13 @@ L&#39;esempio seguente illustra la creazione di una suite di test per il test di
     }(window, window.hobs));
    ```
 
-   Viene creato il test case. Per testare i moduli adattivi tramite Hobbes, eseguite il test case. Per i passaggi per l&#39;esecuzione dei test case, consultate [Esecuzione di test nell&#39;interfaccia utente tramite test](/help/sites-developing/hobbes.md)automatizzati.
+   Viene creato il test case. Per testare i moduli adattivi tramite Hobbes, eseguite il test case. Per i passaggi per l&#39;esecuzione dei casi di test, vedere [Esecuzione di test nell&#39;interfaccia utente tramite test automatizzati](/help/sites-developing/hobbes.md).
 
 Potete anche installare il pacchetto nel file allegato SampleTestPackage.zip per ottenere gli stessi risultati dei passaggi descritti in Esempio: Creare una suite di test per un modulo adattivo utilizzando Hobbes come framework di test.
 
 [Ottieni file](assets/sampletestpackage.zip)
 
-## Test dell’interfaccia utente mediante test automatici {#testing-your-ui-using-automated-tests}
+## Test dell&#39;interfaccia utente mediante test automatici {#testing-your-ui-using-automated-tests}
 
 ### Esecuzione di una singola suite di test {#running-a-single-test-suite}
 
@@ -286,7 +286,7 @@ Le suite di test possono essere eseguite singolarmente. Quando eseguite una suit
 
 Un&#39;icona a forma di segno di spunta indica un test superato: ![segno di spunta](assets/checkmark.png)
 
-Un&#39;icona &quot;X&quot; indica un test non riuscito: ![cross](assets/cross.png)
+Un&#39;icona &quot;X&quot; indica un test non riuscito: ![incrocio](assets/cross.png)
 
 Per eseguire una suite di test:
 
@@ -306,7 +306,7 @@ Per eseguire una suite di test:
 
    ![4_reviewResults](assets/4_reviewresults.png)
 
-La verifica dei AEM moduli adattivi è simile alla verifica dell&#39;interfaccia utente AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, vedere i seguenti argomenti in [Verifica dell’interfaccia](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+La verifica dei AEM moduli adattivi è simile alla verifica dell&#39;interfaccia utente AEM. Per ulteriori informazioni sulla verifica dei moduli adattivi, consultare i seguenti argomenti in [Verifica dell&#39;interfaccia utente](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Visualizzazione delle suite di test
 * Esecuzione di più test
