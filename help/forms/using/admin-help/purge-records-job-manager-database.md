@@ -1,8 +1,8 @@
 ---
 title: Eliminare i record dal database di Gestione processi
 seo-title: Eliminare i record dal database di Gestione processi
-description: I dati di elaborazione di grandi dimensioni possono comportare prestazioni inferiori dei moduli AEM. È buona norma eliminare i dati di processo quando i record non sono più necessari.
-seo-description: I dati di elaborazione di grandi dimensioni possono comportare prestazioni inferiori dei moduli AEM. È buona norma eliminare i dati di processo quando i record non sono più necessari.
+description: I dati di elaborazione di grandi dimensioni possono ridurre le prestazioni dei moduli AEM. È buona norma eliminare i dati di processo quando i record non sono più necessari.
+seo-description: I dati di elaborazione di grandi dimensioni possono ridurre le prestazioni dei moduli AEM. È buona norma eliminare i dati di processo quando i record non sono più necessari.
 uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
@@ -11,22 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
 
-# Eliminare i record dal database di Gestione processi {#purge-records-from-the-job-manager-database}
+# Eliminare i record dal database di Job Manager {#purge-records-from-the-job-manager-database}
 
-I dati di processo generati quando viene richiamato un processo di lunga durata possono diventare troppo grandi, con conseguente riduzione delle prestazioni dei moduli AEM e dell’utilizzo di spazio su disco non necessario. È buona norma eliminare i dati di processo quando i record non sono più necessari.
+I dati di processo generati quando viene richiamato un processo di lunga durata possono diventare troppo grandi, riducendo le prestazioni dei moduli AEM e l&#39;uso di spazio su disco non necessario. È buona norma eliminare i dati di processo quando i record non sono più necessari.
 
-È possibile utilizzare la console di amministrazione per eseguire una rimozione una tantum di record obsoleti, oppure per pianificare regolarmente le eliminazioni automatiche. Altri metodi per eliminare i record obsoleti sono descritti in [Rimozione dei dati](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)di processo.
+È possibile utilizzare la console di amministrazione per eseguire una rimozione una tantum di record obsoleti, oppure per pianificare regolarmente le eliminazioni automatiche. Altri metodi per eliminare i record obsoleti sono descritti in [Rimozione dei dati del processo](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **Accesso alla pagina Utilità di pianificazione rimozione processo**
 
 1. In Admin Console, fai clic su Health Monitor nell’angolo superiore destro della pagina.
 1. Fate clic sulla scheda Utilità di pianificazione rimozione processo.
 
-Le informazioni sulle eventuali eliminazioni pianificate al momento vengono visualizzate nella casella Informazioni sull&#39;utilità di pianificazione della rimozione dei processi.
+Le informazioni sulle eventuali eliminazioni pianificate al momento vengono visualizzate nella casella Informazioni sull&#39;utilità di pianificazione per la rimozione dei processi.
 
 >[!NOTE]
 >
@@ -45,7 +48,7 @@ Le informazioni sulle eventuali eliminazioni pianificate al momento vengono visu
 
    >[!NOTE]
    >
-   >Se si specifica una data e un&#39;ora di inizio che è in passato, la rimozione si verifica immediatamente quando si fa clic su Avvia pianificazione.
+   >Se si specifica una data e un&#39;ora di inizio che è in passato, l&#39;eliminazione si verifica immediatamente quando si fa clic su Avvia pianificazione.
 
 1. Fate clic su Avvia pianificazione. Eventuali impostazioni pianificate in precedenza vengono sostituite con le nuove.
 
@@ -62,7 +65,7 @@ Le informazioni sulle eventuali eliminazioni pianificate al momento vengono visu
 
    >[!NOTE]
    >
-   >Se si specifica una data e un&#39;ora di inizio che è passata, nei moduli di AEM viene calcolata la data di inizio successiva in base alla data specificata. Ad esempio, se pianificate l’eliminazione settimanale dei processi a partire dal 7 aprile ed è ora il 9 aprile, la prima eliminazione verrà eseguita il 14 aprile.
+   >Se si specifica una data e un&#39;ora di inizio che è passata, AEM moduli calcola la data di inizio successiva logica in base alla data specificata. Ad esempio, se pianificate l’eliminazione settimanale dei processi a partire dal 7 aprile ed è ora il 9 aprile, la prima eliminazione verrà eseguita il 14 aprile.
 
 1. Fate clic su Avvia pianificazione. Eventuali impostazioni pianificate in precedenza vengono sostituite con le nuove.
 
