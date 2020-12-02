@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
@@ -30,8 +30,8 @@ Questa guida descrive tutte  attività di AEM Communities, come la creazione di 
 | [Note sulla versione](/help/release-notes/home.md) | Fornisce informazioni importanti sull&#39;ultima versione di AEM, incluse le nuove piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti |
 | [Guida utente di Assets](/help/assets/home.md) | Scopri come creare, gestire, distribuire e ottimizzare le risorse digitali. |
 | [Guida utente Forms](/help/forms/home.md) | Questa guida descrive come creare, gestire, pubblicare e aggiornare moduli digitali. |
-| [Guida utente di Communities](/help/communities/home.md) | Create esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni per social network. |
-| [Guida all&#39;amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
+| [Guida utente di Communities](/help/communities/home.md) | Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social. |
+| [Guida all’amministrazione](/help/sites-administering/home.md) | Come amministrare AEM |
 | [Guida all’authoring](/help/sites-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM. |
 | [Guida all’authoring con l’interfaccia classica](/help/sites-classic-ui-authoring/home.md) | Questa guida descrive i concetti di authoring in AEM nell’interfaccia utente classica. |
 | [Guida utente di Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Scopri la soluzione di digital signage per pubblicare esperienze digitali dinamiche e interattive. |
