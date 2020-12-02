@@ -1,6 +1,6 @@
 ---
 title: Stato delle funzioni dell’interfaccia touch
-description: Note sulla versione specifiche [!DNL Adobe Experience Manager] per l’interfaccia touch.
+description: 'Note sulla versione specifiche dell''interfaccia utente touch. [!DNL Adobe Experience Manager] '
 translation-type: tm+mt
 source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
 workflow-type: tm+mt
@@ -10,17 +10,17 @@ ht-degree: 14%
 ---
 
 
-# Touch UI Feature Status {#touch-ui-feature-status}
+# Stato delle funzioni dell&#39;interfaccia touch{#touch-ui-feature-status}
 
-AEM 6.4 a partire dall’interfaccia [classica è obsoleta](../release-notes/deprecated-removed-features.md).  Adobe non apporterà ulteriori miglioramenti all’interfaccia classica e gli utenti sono invitati a utilizzare le nuove potenti funzioni disponibili nell’interfaccia touch.
+AEM 6.4 a partire da [Interfaccia classica è obsoleta](../release-notes/deprecated-removed-features.md).  Adobe non apporterà ulteriori miglioramenti all’interfaccia classica e gli utenti sono invitati a utilizzare le nuove potenti funzioni disponibili nell’interfaccia touch.
 
-A partire dalla versione 6.0, AEM introdotto una nuova interfaccia utente denominata &quot;interfaccia touch&quot; (interfaccia touch) allineata alle linee guida [!DNL Adobe Experience Cloud] e alle linee guida generali dell’interfaccia utente del Adobe . Raggiunta la parità delle funzioni, questa è diventata l’interfaccia standard in AEM con l’interfaccia precedente, orientata al desktop, detta &quot;interfaccia classica&quot;.
+A partire dalla versione 6.0, AEM introdotto una nuova interfaccia utente denominata &quot;interfaccia touch&quot; (semplicemente denominata &quot;interfaccia touch&quot;) allineata alle [!DNL Adobe Experience Cloud] e alle linee guida generali dell&#39;interfaccia utente  Adobe. Raggiunta la parità delle funzioni, questa è diventata l’interfaccia standard in AEM con l’interfaccia precedente, orientata al desktop, detta &quot;interfaccia classica&quot;.
 
 Anche se la maggior parte delle funzionalità sono presenti nell’interfaccia touch, alcune funzioni non sono ancora complete e verranno aggiunte nelle release future.
 
 L&#39;elenco seguente mostra lo stato corrente delle funzionalità come implementato in AEM 6.5.
 
-Per le raccomandazioni per i clienti che eseguono l&#39;aggiornamento a AEM 6.5, vedete Suggerimenti per l&#39;interfaccia [utente per i clienti](/help/sites-deploying/ui-recommendations.md).
+Per le raccomandazioni per i clienti che eseguono l&#39;aggiornamento a AEM 6.5, vedete [Suggerimenti per l&#39;interfaccia utente per i clienti](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -38,13 +38,13 @@ Per le raccomandazioni per i clienti che eseguono l&#39;aggiornamento a AEM 6.5,
 * **Sostituito**: La funzione è stata sostituita da una nuova implementazione che funziona in modo diverso.
 * **Rimosso**: La funzione non esiste più nell’interfaccia touch e non verrà sostituita.
 
-## Stato funzione: Amministrazione siti {#feature-status-sites-admin}
+## Stato funzione: Amministratore siti {#feature-status-sites-admin}
 
-Si tratta di un elenco delle funzionalità di cui dispone l’amministratore del sito (`/siteadmin`) dell’interfaccia classica e dello stato nell’interfaccia touch (`/sites.html`).
+Si tratta di un elenco delle funzionalità di cui dispone l&#39;amministratore del sito dell&#39;interfaccia classica (`/siteadmin`) e dello stato nell&#39;interfaccia touch (`/sites.html`).
 
 | Funzione obsoleta | Stato | Commento |
 |--- |--- |--- |
-| Naviga gerarchia sito | Completa | AEM 6.4 ha introdotto una visualizzazione [ad albero del](/help/sites-authoring/basic-handling.md#content-tree)contenuto. |
+| Naviga gerarchia sito | Completa | AEM 6.4 ha introdotto una [visualizzazione struttura del contenuto](/help/sites-authoring/basic-handling.md#content-tree). |
 | Avvia flusso di lavoro | Completa |  |
 | Crea nuova pagina | Completa |  |
 | Crea nuovo sito | Completa |  |
@@ -78,7 +78,7 @@ Si tratta di un elenco delle funzionalità di cui dispone l’amministratore del
 
 ## Stato funzione: Editor pagina {#feature-status-page-editor}
 
-Si tratta di un elenco delle funzionalità dell’interfaccia classica Editor pagina (`/cf#`) e dello stato in abilitato per il tocco (`/editor.html`).
+Si tratta di un elenco delle funzionalità dell&#39;editor pagina dell&#39;interfaccia classica (`/cf#`) e dello stato in cui è abilitato il tocco (`/editor.html`).
 
 | Funzione obsoleta | Stato | Commento |
 |--- |--- |--- |
@@ -103,15 +103,15 @@ Si tratta di un elenco delle funzionalità dell’interfaccia classica Editor pa
 | Blocca/Sblocca pagina | Completa |  |
 | Pubblica pagina | Completa |  |
 | Annulla pubblicazione pagina | Completa |  |
-| Copia pagina | Rimosso | Utilizzate Site Admin per [copiare le pagine](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
-| Sposta pagina | Rimosso | Utilizzate Amministrazione sito per [spostare le pagine](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
-| Elimina pagina | Rimosso | Utilizzate Amministrazione sito per [eliminare le pagine](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| Mostra riferimenti | Rimosso | Utilizzate Amministrazione sito per visualizzare l&#39;elenco [di riferimento](/help/sites-authoring/author-environment-tools.md#references)dettagliato. |
-| Registro di controllo | Rimosso | Utilizzate Site Admin (Amministratore sito) e [aprite la barra](/help/sites-authoring/author-environment-tools.md#events-timeline)delle attività. |
-| Crea versione | Rimosso | Utilizzate Site Admin (Amministratore sito) per [creare nuove versioni](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
+| Copia pagina | Rimosso | Utilizzate Amministrazione sito per [copiare le pagine](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
+| Sposta pagina | Rimosso | Utilizzate Amministrazione sito per [spostare pagine](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
+| Elimina pagina | Rimosso | Utilizzate Amministrazione sito per [eliminare pagine](/help/sites-authoring/managing-pages.md#deleting-a-page). |
+| Mostra riferimenti | Rimosso | Utilizzate Amministrazione sito per visualizzare l&#39; [elenco di riferimento dettagliato](/help/sites-authoring/author-environment-tools.md#references). |
+| Registro di controllo | Rimosso | Utilizzate Site Admin (Amministratore sito) e [open activity rail](/help/sites-authoring/author-environment-tools.md#events-timeline). |
+| Crea versione | Rimosso | Utilizzate Amministrazione sito per [creare nuove versioni](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
 | Ripristina versione | Rimosso | Utilizzate Site Admin per [ripristinare le versioni](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
-| Interrompi avvii | Rimosso | Utilizzate Site Admin (Amministratore sito) per [passare da un avvio all&#39;altro](/help/sites-authoring/launches-promoting.md). |
-| Traduci pagina | Rimosso | Utilizzate Site Admin (Amministratore sito) per [aggiungere una pagina ai progetti](/help/sites-administering/tc-manage.md)di traduzione. |
+| Interrompi avvii | Rimosso | Utilizzate Site Admin (Amministratore sito) per passare da un avvio all&#39;altro[.](/help/sites-authoring/launches-promoting.md) |
+| Traduci pagina | Rimosso | Utilizzate Site Admin (Amministratore sito) per [aggiungere pagina ai progetti di traduzione](/help/sites-administering/tc-manage.md). |
 | Timewarp (scegli data/ora e naviga nel sito così come appariva) | Completa |  |
 | Imposta autorizzazioni | Completa |  |
 | Interfaccia utente ClientContext | Sostituito | Utilizzare l&#39;interfaccia utente [ContextHub](/help/sites-authoring/ch-previewing.md) in futuro. |
@@ -123,14 +123,14 @@ Si tratta di un elenco delle funzionalità dell’interfaccia classica Editor pa
 | Trascinare il contenuto nel segnaposto del componente | Completa |  |
 | Trascinate i contenuti direttamente nel segnaposto parsys con la creazione automatica dei componenti | Completa |  |
 
-## Stato funzione: Editor di testo, tabelle e immagini {#feature-status-text-table-and-image-editors}
+## Stato funzione: Editor di testo, tabelle ed immagini {#feature-status-text-table-and-image-editors}
 
 Si tratta di un elenco delle funzionalità dell’interfaccia classica Testo, Tabella e Editor immagine e dello stato nell’interfaccia touch.
 
 | Funzione obsoleta | Stato | Commento |
 |--- |--- |--- |
 | Editor Rich Text | Completa | Utilizzabile in posizione, nella finestra di dialogo e a schermo intero. |
-| Abilitare/disabilitare i plug-in RTE | Completa | Può essere eseguito utilizzando l&#39;Editor [](/help/sites-authoring/templates.md)modelli. |
+| Abilitare/disabilitare i plug-in RTE | Completa | Può essere eseguito utilizzando l&#39; [Editor modelli](/help/sites-authoring/templates.md). |
 | Usa editor Rich Text per testo semplice | Completa |  |
 | Plug-in RTE: Collegamenti e ancoraggio | Completa |  |
 | Plug-in RTE: Mappa carattere | Completa |  |
@@ -151,7 +151,7 @@ Si tratta di un elenco delle funzionalità dell’interfaccia classica Testo, Ta
 | Editor tabella | Completa | Utilizzabile in posizione, nella finestra di dialogo e a schermo intero. |
 | Trascinare l&#39;immagine nella cella della tabella | Completa | Utilizzabile in linea |
 | Editor immagine | Completa | Utilizzabile in posizione, nella finestra di dialogo e a schermo intero. |
-| Abilitare/disabilitare i plug-in IPE | Completa | AEM 6.3 ha introdotto un’interfaccia utente nell’Editor [](/help/sites-authoring/templates.md)modelli. |
+| Abilitare/disabilitare i plug-in IPE | Completa | AEM 6.3 ha introdotto un&#39;interfaccia utente in [Editor modelli](/help/sites-authoring/templates.md). |
 | Plug-in IPE: Ritaglio | Completa |  |
 | Plug-in IPE: Capovolgimento | Completa |  |
 | Plug-in IPE: Annulla/Ripristina | Completa |  |
@@ -167,7 +167,7 @@ Si tratta di un elenco di diversi strumenti disponibili nell’interfaccia class
 |--- |--- |--- |
 | Gestione attività | Sostituito | 6.0 ha introdotto progetti e attività. |
 | Inbox flusso di lavoro | Completa |  |
-| Configurazione da flusso di lavoro a modello pagina (`/etc/workflow/wcm/templates.html`) | Mancante | Usa interfaccia classica. |
+| Configurazione del flusso di lavoro per il modello di pagina (`/etc/workflow/wcm/templates.html`) | Mancante | Usa interfaccia classica. |
 | Interfaccia utente amministratore dei tag | Completa |  |
 | Centro di controllo MSM/Blueprint | Completa |  |
 | Interfaccia utente di Blueprint Manager | Completa |  |
