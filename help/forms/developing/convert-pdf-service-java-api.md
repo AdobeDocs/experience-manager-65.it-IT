@@ -31,7 +31,7 @@ Per l&#39;API del servizio Converti PDF sono disponibili i seguenti Avvio rapido
 >
 >La sezione Avvio rapido, che si trova nella sezione Programmazione con AEM moduli, si basa sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Avvio rapido (modalità SOAP): Conversione di un documento PDF in PostScript tramite l&#39;API Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
+## Avvio rapido (modalità SOAP): Conversione di un documento PDF in PostScript mediante l&#39;API Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
 L&#39;esempio di codice seguente converte un documento PDF denominato *Loan.pdf* in un documento PostScript denominato *Loan.ps*. (Vedere [Conversione di documenti PDF in PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
@@ -146,9 +146,9 @@ L&#39;esempio di codice seguente converte un documento PDF denominato *Loan.pdf*
  }
 ```
 
-## Avvio rapido (modalità SOAP): Conversione di un documento PDF in file JPEG mediante l&#39;API Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
+## Avvio rapido (modalità SOAP): Conversione di un documento PDF in file JPEG utilizzando l&#39;API Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-L&#39;esempio di codice Java seguente converte un documento PDF denominato *Loan.pdf* in un set di file JPEG e li memorizza nella cartella C:\Adobe directory. Ogni file è denominato `tempFile[index].jpg`, dove il primo file immagine è denominato *tempFile0.jpg*. Consultate [Conversione di documenti PDF in formati](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)immagine.
+L&#39;esempio di codice Java seguente converte un documento PDF denominato *Loan.pdf* in un set di file JPEG e li memorizza nella cartella C:\Adobe directory. Ogni file è denominato `tempFile[index].jpg`, dove il primo file immagine è denominato *tempFile0.jpg*. (Vedere [Conversione di documenti PDF in formati immagine](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```java
  /*
