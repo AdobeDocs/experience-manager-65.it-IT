@@ -1,8 +1,8 @@
 ---
-title: API utilizzate nell'area di lavoro Moduli AEM
-seo-title: API utilizzate nell'area di lavoro Moduli AEM
-description: API e metodi JavaScript pubblici e JavaScript dell'area di lavoro LiveCycle AEM Forms, disponibili per la personalizzazione e l'automazione.
-seo-description: API e metodi JavaScript pubblici e JavaScript dell'area di lavoro LiveCycle AEM Forms, disponibili per la personalizzazione e l'automazione.
+title: API utilizzate nell'area di lavoro  AEM Forms
+seo-title: API utilizzate nell'area di lavoro  AEM Forms
+description: API Java e JavaScript pubblici e metodi dell'area di lavoro di LiveCycle  AEM Forms, esposti per la personalizzazione e l'automazione.
+seo-description: API Java e JavaScript pubblici e metodi dell'area di lavoro di LiveCycle  AEM Forms, esposti per la personalizzazione e l'automazione.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 1%
 
 ---
 
 
-# API utilizzate nell&#39;area di lavoro Moduli AEM {#apis-used-in-aem-forms-workspace}
+# API utilizzate nell&#39;area di lavoro  AEM Forms {#apis-used-in-aem-forms-workspace}
 
-Le seguenti API vengono utilizzate nell&#39;area di lavoro di AEM Forms.
+Le seguenti API vengono utilizzate nell&#39;area di lavoro  AEM Forms.
 
 <table>
  <tbody>
