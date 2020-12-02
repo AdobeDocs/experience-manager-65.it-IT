@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 94%
 
 ---
 
@@ -28,17 +31,22 @@ In questo documento vengono illustrati i vari elementi che compongono le campagn
 * [Pagine di destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Offerte Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Utilizzo di Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-* [Informazioni sulla segmentazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
+* [Segmentazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [Impostazione della campagna](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 La gestione delle campagne consiste di vari elementi:
 
 * **Marchi**
-In AEM, brands are the top level unit and form a collection of **Campaigns**.
+In AEM, i marchi sono l&#39;unità di livello principale e costituiscono una raccolta di 
+**Campagne**.
 
-* **Campagne** Una campagna è una raccolta di singole **Esperienze**.
+* **CampagneUna campagna è un insieme di singole campagne**
+ 
+**Esperienze**.
 
-* **Esperienze** Le esperienze sono composte di contenuti mirati, presentati al visitatore in specifici **punti di contatto**. Sono disponibili diversi tipi di esperienze:
+* ****
+EsperienzeIl contenuto specifico forma le varie esperienze, presentate al visitatore in 
+**Punti di contatto**. Sono disponibili diversi tipi di esperienze:
 
    * **Teaser**
       [Le pagine o i paragrafi teaser](#teasers) vengono utilizzati per indirizzare alcuni **segmenti** di visitatori verso contenuti pertinenti in base ai loro interessi.
@@ -47,6 +55,7 @@ In AEM, brands are the top level unit and form a collection of **Campaigns**.
 
       * presentare all’utente diverse opzioni;
       * mostrare un solo paragrafo teaser in base al segmento del visitatore in questione, ad esempio a seconda dell’età del visitatore;
+
       In genere, una pagina teaser è impostata come azione temporanea con una specifica durata di tempo, dopodiché viene sostituita da una successiva pagina teaser.
 
    * **Newsletter**
