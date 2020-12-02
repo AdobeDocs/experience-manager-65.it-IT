@@ -18,7 +18,7 @@ ht-degree: 17%
 # Guida utente all’amministrazione di AEM 6.5 {#administering}
 
 + [Panoramica sulla Guida utente di amministrazione](home.md)
-+ Caratteristiche dei siti {#introduction}
++ Funzioni del sito {#introduction}
    + [Amministrazione di siti Web](msm-and-translation.md)
    + [Processi asincroni](asynchronous-jobs.md)
    + [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm.md)
@@ -69,7 +69,7 @@ ht-degree: 17%
    + [Configurazione del Contenitore di layout e della modalità Layout](configuring-responsive-layout.md)
    + [Editor](enable-classic-ui-editor.md)
    + [Abilitazione dell&#39;accesso all&#39;interfaccia classica](enable-classic-ui.md)
-   + [Admin Console](enable-classic-ui-admin.md)
+   + [Admin Console ](enable-classic-ui-admin.md)
 + Sicurezza {#security}
    + [ Amministrazione degli utenti e sicurezza](security.md)
    + [Amministrazione di diritti di accesso, gruppi e utenti](user-group-ac-admin.md)
@@ -77,7 +77,7 @@ ht-degree: 17%
    + [OWASP Top 10](owasp-top10.md)
    + [Esecuzione di AEM in modalità pronta per la produzione](production-ready.md)
    + [Gestione identità](identity-management.md)
-   + [autenticazione IMS Adobe e  supporto Admin Console AEM Managed Services](ims-config-and-admin-console.md)
+   + [ autenticazione IMS Adobe e  supporto Admin Console AEM Managed Services](ims-config-and-admin-console.md)
    + [Creazione di un gruppo utenti chiuso](cug.md)
    + [Riduzione dei problemi di serializzazione in AEM](mitigating-serialization-issues.md)
    + [Sincronizzazione utente](sync.md)
@@ -149,18 +149,18 @@ ht-degree: 17%
    + [Integrazione con Adobe Marketing Cloud](marketing-cloud.md)
    + [Configurazione manuale dell&#39;integrazione con  Adobe Target](target-configuring.md)
    + [Prerequisiti per l’integrazione con  Adobe Target](target-requirements.md)
-   + [Integrazione con  Adobe Target utilizzando  I/O Adobe](integration-ims-adobe-io.md)
+   + [Integrazione con  Adobe Target tramite  Adobe I/O](integration-ims-adobe-io.md)
    + [Classificazioni  Adobe](adobeanalytics-classifications.md)
    + [Integrazione con  Search&amp;Promote Adobe](search-and-promote.md)
    + [Integrazione di soluzioni](integration.md)
    + [Esportazione di frammenti esperienza in  Adobe Target](experience-fragments-target.md)
    + [Best practice per i modelli e-mail](best-practices-for-email-templates.md)
    + [Integrazione con Livefyre](livefyre.md)
-+ Best practice   {#bestpractices}
++ Best practice    {#bestpractices}
    + [Best practice  ](administer-best-practices.md)
    + [Tecniche consigliate per la traduzione](tc-bp.md)
    + [Tecniche consigliate per MSM](msm-best-practices.md)
-   + [AEM Sites - Preparazione GDPR](gdpr-compliance-sites.md)
+   + [ AEM Sites - Preparazione GDPR](gdpr-compliance-sites.md)
    + [Gestione delle richieste GDPR per la AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [AEM Commercio - Preparazione GDPR](gdpr-compliance-commerce.md)
 + Gestione dei contenuti {#contentmanagement}
