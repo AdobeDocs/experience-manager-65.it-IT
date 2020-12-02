@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +48,7 @@ Puoi effettuare le seguenti azioni per elaborare un elemento di lavoro:
 
 ### Notifiche di azioni di flusso di lavoro assegnate {#notifications-of-assigned-workflow-actions}
 
-Quando ti viene assegnato un elemento di lavoro (ad esempio **Approva contenuto**) vengono visualizzati vari avvisi e/o notifiche:
+Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto**) vengono visualizzati diversi avvisi e/o notifiche:
 
 * La colonna **Stato** della console Siti web indica quando una pagina è in un flusso di lavoro:
 
@@ -68,7 +71,7 @@ Dopo aver eseguito l&#39;azione indicata è possibile completare l&#39;elemento 
 
 1. Fai clic su **OK** per confermare l’azione.
 
-### Delega di un passaggio partecipante {#delegating-a-participant-step}
+### Delega di un passaggio partecipante  {#delegating-a-participant-step}
 
 Segui la procedura riportata di seguito per delegare l&#39;elemento di lavoro.
 
@@ -79,7 +82,7 @@ Segui la procedura riportata di seguito per delegare l&#39;elemento di lavoro.
 
 1. Fai clic su **OK** per confermare l’azione.
 
-### Tornare indietro di un passaggio {#performing-step-back-on-a-participant-step}
+### Tornare indietro di un passaggio  {#performing-step-back-on-a-participant-step}
 
 Segui la procedura riportata di seguito per tornare a un passaggio precedente.
 
