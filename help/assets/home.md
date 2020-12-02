@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # Guida ad Assets
 
-Questa guida descrive tutte [!DNL Experience Manager Assets] le attività, ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
+Questa guida descrive tutte le attività [!DNL Experience Manager Assets], ad esempio come creare, gestire, distribuire e ottimizzare le risorse digitali.
 
 ## Articoli chiave [!DNL Experience Manager]
 
@@ -21,7 +21,7 @@ Questa guida descrive tutte [!DNL Experience Manager Assets] le attività, ad es
 -->
 
 * [Guida introduttiva  Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
-* [Experience Manager 6.5 - Note sulla versione](/help/release-notes/home.md)
+* [ Experience Manager 6.5 - Note sulla versione](/help/release-notes/home.md)
 * [Aggiornamenti recenti della documentazione](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Elenco di controllo protezione](/help/sites-administering/security-checklist.md)
 
@@ -40,11 +40,11 @@ Questa guida descrive tutte [!DNL Experience Manager Assets] le attività, ad es
 | [Guida utente allo sviluppo](/help/sites-developing/home.md) | Scoprite come creare la distribuzione  Experience Manager. |
 | [Gestione della Guida utente](/help/managing/home.md) | Questa guida descrive come gestire con successo un progetto di Experience Manager . |
 | [Guida utente per dispositivi mobili](/help/mobile/home.md) | Questa guida descrive come creare e gestire il contenuto per le applicazioni mobili. |
-| [Experience Manager - Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In questa guida viene illustrato come condividere con [!DNL Livefyre]gli utenti i contenuti generati dagli utenti. |
+| [Experience Manager - Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Questa guida illustra come condividere con [!DNL Livefyre] i contenuti generati dall&#39;utente. |
 
-## Risorse chiave [!DNL Experience Manager]
+## Risorse [!DNL Experience Manager] chiave
 
-* [Tutorials video Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [ Tutorials video Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Preparazione all’RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Forum della community di  Assets Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
