@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
 source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ Pianificare l&#39;anatomia della comunicazione interattiva
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Questa esercitazione è un passaggio della serie [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) (Creazione della prima serie di comunicazioni interattive). Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
+Questa esercitazione è un passaggio della serie [Crea la tua prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md). Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
 
 Il primo passo nella pianificazione di una comunicazione interattiva consiste nel finalizzare il contenuto della comunicazione interattiva. Gli esperti in materia provenienti da dipartimenti come legali, finanziari, assistenza o marketing possono aiutarti a finalizzare i contenuti. Una volta completato il contenuto, è necessario analizzarlo per identificare i vari tipi di risorse necessari per creare la comunicazione interattiva.
 
@@ -27,29 +30,29 @@ Il primo passo nella pianificazione di una comunicazione interattiva consiste ne
 
 Una comunicazione interattiva include i seguenti elementi:
 
-* **Il testo** statico comprende principalmente le parti della comunicazione interattiva che sono generiche in natura e sono incluse nella comunicazione a tutti i clienti. Ad esempio, intestazione, piè di pagina, formula introduttiva o clausole di non responsabilità.
+* **I** testi statici comprendono principalmente le parti della comunicazione interattiva che sono di natura generica e sono incluse nella comunicazione a tutti i clienti. Ad esempio, intestazione, piè di pagina, formula introduttiva o clausole di non responsabilità.
 * **I dati provenienti da un sistema di backend (modello dati modulo)** sono specifici per il cliente e vengono uniti dinamicamente con la comunicazione interattiva. Ad esempio, il numero o l&#39;indirizzo del criterio può essere originato utilizzando il modello dati del modulo.
-* **Layout o modelli** per la versione Stampa e Web della comunicazione interattiva.
-* **Ordine** in cui i vari paragrafi di testo vengono visualizzati nella comunicazione interattiva.
+* **Layout o** modelli per la versione Stampa e Web della comunicazione interattiva.
+* **Ordine in** cui i vari paragrafi di testo compaiono nella comunicazione interattiva.
 * **Dati immessi da un dipendente in prima linea (interfaccia utente agente)** che sta personalizzando la comunicazione prima di inviarla. Ad esempio, la data di scadenza del pagamento.
 
-* **Dati** condizionali che vengono compilati in base a condizioni predefinite. Ad esempio, la data in cui viene generata la comunicazione interattiva.
+* **I** dati condizionali vengono compilati in base a condizioni predefinite. Ad esempio, la data in cui viene generata la comunicazione interattiva.
 * **Immagini memorizzate in un archivio**, ad esempio logo e immagini della firma. Immagini come il logo aziendale apparirebbero nella maggior parte o nella totalità della comunicazione interattiva.
-* **Grafici e tabelle** necessari per semplificare la rappresentazione di dati complessi in una comunicazione interattiva
+* **Grafici e** tabelle necessarie per semplificare la rappresentazione di dati complessi in una comunicazione interattiva
 
 ## Anatomia della comunicazione interattiva {#anatomy-of-the-interactive-communication}
 
-Una volta completati i contenuti e gli elementi utilizzati per creare la comunicazione interattiva, potete creare un&#39;anatomia della comunicazione interattiva. L&#39;anatomia deve avere i dettagli elencati nella sezione Considerazioni sulla [pianificazione](/help/forms/using/planning-interactive-communications.md#planning-considerations) . In base al nostro caso d&#39;uso, quanto segue è un esempio di anatomia della fattura mensile che un operatore di telecomunicazioni invia ai suoi clienti.
+Una volta completati i contenuti e gli elementi utilizzati per creare la comunicazione interattiva, potete creare un&#39;anatomia della comunicazione interattiva. L&#39;anatomia deve avere i dettagli elencati nella sezione [Considerazioni sulla pianificazione](/help/forms/using/planning-interactive-communications.md#planning-considerations). In base al nostro caso d&#39;uso, quanto segue è un esempio di anatomia della fattura mensile che un operatore di telecomunicazioni invia ai suoi clienti.
 
 L&#39;anatomia include i dati con le seguenti modalità di input:
 
 * Testo statico
 * Modello dati modulo
-* INTERFACCIA UTENTE agente
+* Interfaccia utente agente
 * Dati condizionali
 * Immagini
 
-In ogni sezione, il testo in grassetto rappresenta testo statico. Il database include tabelle cliente, fatture e chiamate. Un modello dati modulo può ricevere dati da una qualsiasi di queste tabelle. Per ulteriori informazioni, vedere [Creazione di un modello](/help/forms/using/create-form-data-model0.md)dati del modulo.
+In ogni sezione, il testo in grassetto rappresenta testo statico. Il database include tabelle cliente, fatture e chiamate. Un modello dati modulo può ricevere dati da una qualsiasi di queste tabelle. Per ulteriori informazioni, vedere [Creare un modello dati del modulo](/help/forms/using/create-form-data-model0.md).
 
 Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’anatomia della comunicazione interattiva:
 
@@ -59,20 +62,20 @@ Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’an
    <td>Sezione</td>
    <td>Testo statico</td>
    <td>FDM (Form Data Model - modello dati modulo) </td>
-   <td>INTERFACCIA UTENTE agente</td>
+   <td>Interfaccia utente agente</td>
    <td>Immagini</td>
   </tr>
   <tr>
    <td>Dettagli fattura</td>
    <td><p>Numero fattura</p> <p>Data fatturazione</p> <p>Periodo fatturazione</p> <p>Il tuo piano</p> </td>
-   <td><p>Valore per il <strong>tuo </strong>campo Piano</p> <p>Tabella - cliente</p> </td>
+   <td><p>Valore per il campo <strong>Piano </strong></p> <p>Tabella - cliente</p> </td>
    <td><p>Valori per i campi seguenti:</p>
     <ul>
      <li>Numero fattura</li>
      <li>Data fatturazione</li>
      <li>Periodo fatturazione</li>
     </ul> <p> </p> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Dettagli cliente</td>
@@ -91,12 +94,12 @@ Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’an
      <li>Codice di stato</li>
      <li>Numero di connessioni</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Riepilogo fatturazione</td>
    <td><p>Saldo precedente</p> <p>Pagamenti</p> <p>Regolazioni</p> <p>Addebito periodo corrente</p> <p>Importo dovuto</p> <p>Data di scadenza</p> </td>
-   <td><p>Valore per il campo <strong>Fatturato periodo corrente </strong></p> <p>Tabella - fatture</p> </td>
+   <td><p>Valore per il campo <strong>Addebito periodo corrente fatturazione </strong></p> <p>Tabella - fatture</p> </td>
    <td><p>Valori per i campi seguenti:</p>
     <ul>
      <li>Saldo precedente</li>
@@ -105,7 +108,7 @@ Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’an
      <li>Importo dovuto</li>
      <li>Data di scadenza</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Riepilogo delle spese</td>
@@ -123,7 +126,7 @@ Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’an
      <li>TOTALE PAYABLE (campo calcolato spese d'uso)</li>
     </ul> <p>Tabella - fatture</p> </td>
    <td>Nessun campo</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Chiamate dettagliate - In uscita</td>
@@ -137,20 +140,20 @@ Nella tabella seguente è illustrata l’origine dati di ciascun campo nell’an
     </ul> </td>
    <td><p>Tutti i valori</p> <p>Tabella - chiamate</p> </td>
    <td>Nessun campo</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Paga ora</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Servizi a valore aggiunto</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>
