@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Utilizzando Trust Store Management è possibile importare, modificare ed eliminare elenchi di revoche di certificati (CRL, Certificate Revocation List). Sono supportati gli elenchi di revoche di certificati con codifica DER e Base64.
 
-## Importare un CRL {#import-a-crl}
+## Importa un CRL {#import-a-crl}
 
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione archivio attendibili > Elenchi di revoca certificati, quindi fate clic su Importa.
 1. Nella casella Alias digitare un identificatore per il CRL.
@@ -30,7 +33,7 @@ Utilizzando Trust Store Management è possibile importare, modificare ed elimina
 1. Nella console di amministrazione, fate clic su Impostazioni > Gestione archivio certificati > Elenchi di revoca certificati.
 1. Fare clic sul nome alias del CRL da esportare, quindi fare clic su Esporta.
 1. Seguire le istruzioni per esportare il CRL. I CRL vengono esportati in codifica Base64.
-1. Fate clic su OK.
+1. Fai clic su OK.
 
 ## Eliminare un CRL {#delete-a-crl}
 
