@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Scopri il sito pubblicato {#experience-the-published-site}
+# Esperienza con il sito pubblicato {#experience-the-published-site}
 
 ## Passa a nuovo sito in Pubblica {#browse-to-new-site-on-publish}
 
@@ -36,7 +36,7 @@ Al primo arrivo sul sito pubblicato, il visitatore del sito in genere non avrebb
 
 ![authorpublished](assets/authorpublished.png)
 
-## Visitatore del sito anonimo {#anonymous-site-visitor}
+## Visitatore anonimo del sito {#anonymous-site-visitor}
 
 Un visitatore anonimo del sito vede quanto segue nell’interfaccia utente:
 
@@ -51,9 +51,9 @@ Un visitatore anonimo del sito vede quanto segue nell’interfaccia utente:
 
 Se selezionate vari collegamenti, questi saranno in modalità di sola lettura.
 
-### Impedire l&#39;accesso anonimo su JCR {#prevent-anonymous-access-on-jcr}
+### Impedisci l&#39;accesso anonimo su JCR {#prevent-anonymous-access-on-jcr}
 
-Un limite noto espone il contenuto del sito della community ai visitatori anonimi attraverso contenuti jcr e json, anche se **consente l&#39;accesso** anonimo è disabilitato per il contenuto del sito. Tuttavia, questo comportamento può essere controllato utilizzando Limitazioni Sling come soluzione alternativa.
+Una limitazione nota espone il contenuto del sito community ai visitatori anonimi attraverso contenuti jcr e json, anche se **consenti l&#39;accesso anonimo** è disabilitato per il contenuto del sito. Tuttavia, questo comportamento può essere controllato utilizzando Limitazioni Sling come soluzione alternativa.
 
 Per proteggere i contenuti del sito della community dall&#39;accesso di utenti anonimi tramite contenuti jcr e json, procedi come segue:
 
@@ -63,41 +63,41 @@ Per proteggere i contenuti del sito della community dall&#39;accesso di utenti a
    >
    >Non andate al sito localizzato.
 
-1. Vai a Proprietà **** pagina.
+1. Vai a **Proprietà pagina**.
 
    ![page-properties](assets/page-properties.png)
 
-1. Vai alla scheda **Avanzate** .
+1. Vai alla scheda **Avanzate**.
 
-1. Enable **Authentication Requirement**.
+1. Abilita **Autenticazione richiesta**.
 
    ![autenticazione del sito](assets/site-authentication.png)
 
 1. Aggiungete il percorso della pagina di login. Ad esempio, **/content/......./GetStarted**.
 1. Pubblicate la pagina.
 
-## Membro della comunità di fiducia {#trusted-community-member}
+## Membro della community trusted {#trusted-community-member}
 
-Questa esperienza presuppone che [ad Aaron McDonald](/help/communities/tutorials.md#demo-users) siano stati assegnati i ruoli di manager e moderatore [della](/help/communities/create-site.md#roles)comunità. In caso contrario, tornate nell&#39;ambiente di authoring per [modificare le impostazioni](/help/communities/sites-console.md#modifying-site-properties) del sito e selezionate Aaron McDonald come responsabile della community e moderatore.
+Questa esperienza presuppone che [Aaron McDonald](/help/communities/tutorials.md#demo-users) sia stato assegnato il ruolo di [community manager e moderatore](/help/communities/create-site.md#roles). In caso contrario, tornate all&#39;ambiente di authoring per [modificare le impostazioni del sito](/help/communities/sites-console.md#modifying-site-properties) e selezionate Aaron McDonald come manager e moderatore della community.
 
-Nell&#39;angolo superiore destro, selezionate `Log in`e firmate con nome utente (aaron.mcdonald@mailinator.com) e password (password). Notate la possibilità di accedere con le credenziali di Twitter o Facebook.
+Nell&#39;angolo in alto a destra, selezionare `Log in` e firmare con nome utente (aaron.mcdonald@mailinator.com) e password (password). Notate la possibilità di accedere con le credenziali di Twitter o Facebook.
 
 ![login](assets/login.png)
 
 Una volta effettuato l&#39;accesso come membro della community registrato, potete vedere le seguenti voci di menu su cui fare clic ed esplorare il sito della community:
 
-* **L’opzione Profilo** consente di visualizzare e modificare il profilo.
-* [L’opzione Messaggi](/help/communities/configure-messaging.md) consente di accedere alla sezione dei messaggi diretti, in cui è possibile:
+* **** Profileoption consente di visualizzare e modificare il profilo.
+* [L&#39;opzione ](/help/communities/configure-messaging.md) Messaggi consente di accedere alla sezione dei messaggi diretti, in cui è possibile:
 
    1. Visualizzare i messaggi diretti ricevuti (Posta in arrivo), inviati (Elementi inviati) ed eliminati (Cestino).
    1. Comporre nuovi messaggi diretti da inviare a singoli e gruppi.
 
-* [L&#39;opzione Notifiche](/help/communities/notifications.md) consente di accedere alla sezione delle notifiche, in cui è possibile visualizzare gli eventi di interesse e modificare le impostazioni delle notifiche.
-* [Se disponete di privilegi di moderazione, Amministrazione](/help/communities/published-site.md#moderationlink) vi indirizza  pagina Moderazione AEM Communities.
+* [L&#39;](/help/communities/notifications.md) opzione Notifiche consente di accedere alla sezione delle notifiche, in cui è possibile visualizzare gli eventi di interesse e modificare le impostazioni delle notifiche.
+* [Se disponete dei privilegi di moderazione, ](/help/communities/published-site.md#moderationlink) Administration vi indirizza  pagina Moderazione AEM Communities.
 
 ![adminscreen](assets/adminscreen.png)
 
-Notate che la pagina Calendario è la home page perché il modello di sito di riferimento scelto includeva prima la funzione Calendario, seguita dalla funzione Flusso di attività, dalla funzione Forum e così via. Questa struttura è visibile dalla console Modello [](/help/communities/sites.md#edit-site-template) sito o quando si modificano le proprietà del sito nell’ambiente di authoring:
+Notate che la pagina Calendario è la home page perché il modello di sito di riferimento scelto includeva prima la funzione Calendario, seguita dalla funzione Flusso di attività, dalla funzione Forum e così via. Questa struttura è visibile dalla console [Site Template](/help/communities/sites.md#edit-site-template) o durante la modifica delle proprietà del sito nell&#39;ambiente di authoring:
 
 ![sitetemplate](assets/sitetemplate.png)
 
@@ -105,8 +105,8 @@ Notate che la pagina Calendario è la home page perché il modello di sito di ri
 >
 >Per ulteriori informazioni sui componenti e sulle funzioni di Community, visita:
 >
->* [Componenti](/help/communities/author-communities.md) Community (per autori)
->* [Componenti, funzioni e funzionalità Essentials](/help/communities/essentials.md) (per sviluppatori)
+>* [Componenti](/help/communities/author-communities.md)  Community (per autori)
+>* [Componenti, funzioni e funzionalità Essentials](/help/communities/essentials.md)  (per sviluppatori)
 
 
 ### Collegamento forum {#forum-link}
@@ -125,51 +125,51 @@ Poiché Aaron è un amministratore di gruppo, selezionando il collegamento Grupp
 
 Questo è un esempio in cui viene creato un gruppo nell’ambiente di pubblicazione.
 
-I gruppi possono essere creati anche nell’ambiente di authoring e gestiti all’interno del sito della community nell’ambiente di authoring (console[Gruppi](/help/communities/groups.md)community). Questa esercitazione illustra come [creare gruppi in fase di creazione](/help/communities/nested-groups.md) .
+I gruppi possono essere creati anche nell&#39;ambiente di authoring e gestiti all&#39;interno del sito community nell&#39;ambiente di authoring ([console Gruppi community](/help/communities/groups.md)). L&#39;esperienza di [creazione di gruppi in author](/help/communities/nested-groups.md) è descritta di seguito in questa esercitazione.
 
 ![grouplink](assets/grouplink.png)
 
 Crea un gruppo di riferimento:
 
-1. Seleziona **nuovo gruppo**
+1. Selezionare **Nuovo gruppo**
 1. **scheda Impostazioni**
 
    * Nome gruppo : `Sports`
    * Descrizione : `A parent group for various sporting groups`.
    * Nome URL del gruppo : `sports`
-   * Selezione `Open Group` (consentire a qualsiasi membro della community di partecipare partecipando)
+   * Selezionare `Open Group` (consentire a qualsiasi membro della community di partecipare partecipando)
 
 1. **Scheda Modello**
 
-   * Seleziona `Reference Group` (contiene una funzione di gruppi nella sua struttura per consentire i gruppi nidificati)
+   * Selezionare `Reference Group` (contiene una funzione di gruppi nella struttura per consentire i gruppi nidificati)
 
-1. Seleziona **Crea gruppo**
+1. Selezionare **Crea gruppo**
 
    ![creategroup](assets/creategroup.png)
 
-Dopo aver creato un nuovo gruppo, **selezionate il nuovo gruppo** Sport per creare due gruppi (nidificati) al suo interno. Poiché una struttura del sito non può iniziare con la funzione dei gruppi, dopo aver aperto il gruppo Sport, è necessario selezionare il collegamento Gruppi:
+Dopo la creazione del nuovo gruppo, **selezionate il nuovo gruppo Sport** per creare due gruppi (nidificati) al suo interno. Poiché una struttura del sito non può iniziare con la funzione dei gruppi, dopo aver aperto il gruppo Sport, è necessario selezionare il collegamento Gruppi:
 
 ![grouplink1](assets/grouplink1.png)
 
-Il secondo gruppo di collegamenti, a partire da `Blog`, appartiene al gruppo attualmente selezionato, il `Sports` gruppo. Selezionando il collegamento Sport&#39; `Groups` , è possibile nidificare due gruppi all&#39;interno del gruppo Sport.
+Il secondo gruppo di collegamenti, a partire da `Blog`, appartiene al gruppo attualmente selezionato, il gruppo `Sports`. Selezionando il collegamento Sport `Groups`, è possibile nidificare due gruppi all&#39;interno del gruppo Sport.
 
-Ad esempio, aggiungetene due `new groups`.
+Ad esempio, aggiungere due `new groups`.
 
-* Uno con nome `Baseball`
+* Uno denominato `Baseball`
 
    * Lasciatelo impostato come `Open Group` (iscrizione obbligatoria).
    * Nella scheda Modelli, selezionare `Conversational Group`.
 
-* Uno con nome `Gymnastics`
+* Uno denominato `Gymnastics`
 
-   * Modificatene l&#39;impostazione in `Member Only Group` (iscrizione limitata).
+   * Modificatene l&#39;impostazione su `Member Only Group` (iscrizione limitata).
    * Nella scheda Modelli, selezionare `Conversational Group`.
 
 **Avviso**:
 
 * Prima di visualizzare entrambi i gruppi potrebbe essere necessario aggiornare la pagina.
-* Questo modello *non* include la funzione dei gruppi, pertanto non sarà possibile effettuare ulteriori nidificazioni dei gruppi.
-* Per l’autore, la console [](/help/communities/groups.md) Gruppi offre una terza scelta, un’iscrizione `Public Group` (facoltativa).
+* Questo modello *not* include la funzione dei gruppi, pertanto non sarà possibile effettuare ulteriori nidificazioni dei gruppi.
+* All&#39;autore, la [console Gruppi](/help/communities/groups.md) offre una terza scelta, ovvero un `Public Group` (iscrizione facoltativa).
 
 Una volta creati entrambi i gruppi, selezionate il gruppo Baseball, un gruppo aperto e notate i relativi collegamenti:
 
@@ -179,18 +179,18 @@ I collegamenti del gruppo sono visualizzati sotto i collegamenti del sito princi
 
 ![grouplink2](assets/grouplink2.png)
 
-Per l’autore, con privilegi amministrativi, andate alla console [Gruppi di](/help/communities/members.md) Communities e aggiungete Weston McCall al `Community Engage Gymnastics <uid> Members` gruppo.
+Per l&#39;autore, con privilegi amministrativi, andate alla console [Gruppi community](/help/communities/members.md) e aggiungete Weston McCall al gruppo `Community Engage Gymnastics <uid> Members`.
 
 Continuando a pubblicare, disconnettetevi come Aaron McDonald e visualizzate i gruppi nel Gruppo sportivo come visitatore anonimo del sito:
 
 * Dalla home page
-* Select `Groups` link
-* Select `Sports` link
-* Selezionate il collegamento Sport&#39; `Groups`
+* Seleziona il collegamento `Groups`
+* Seleziona il collegamento `Sports`
+* Selezionare il collegamento Sport&#39; `Groups`
 
 Solo il gruppo di baseball sarà visibile.
 
-Effettuate l&#39;accesso come Weston McCall (weston.mccall@dodgit.com / password) e andate alla stessa posizione. Notate che Weston è in grado di aprire `Join` il `Baseball` gruppo e `enter or Leave` il `Gymnastics` gruppo privato.
+Effettuate l&#39;accesso come Weston McCall (weston.mccall@dodgit.com / password) e andate alla stessa posizione. Notate che Weston è in grado di `Join` aprire il gruppo `Baseball` e `enter or Leave` il gruppo privato `Gymnastics`.
 
 ![grouplink3](assets/grouplink3.png)
 
@@ -198,19 +198,19 @@ Effettuate l&#39;accesso come Weston McCall (weston.mccall@dodgit.com / password
 
 Visualizzare la pagina Web di base inclusa nel sito selezionando il collegamento Pagina Web. Per aggiungere contenuti a questa pagina nell’ambiente di authoring è possibile utilizzare gli strumenti AEM di authoring standard.
 
-Ad esempio, passate all’istanza di **creazione** , aprite la `engage` cartella nella console [Siti](/help/communities/sites-console.md)community, selezionate l’icona **Apri sito** per passare alla modalità di modifica dell’autore. Selezionate quindi la modalità di anteprima per selezionare il `Web Page` collegamento, quindi selezionate la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblicate solo la pagina o l’intero sito.
+Ad esempio, andate all&#39;istanza **author**, aprite la cartella `engage` nella console [Siti community](/help/communities/sites-console.md), selezionate l&#39;icona **Apri sito** per passare alla modalità di modifica dell&#39;autore. Selezionate quindi la modalità di anteprima per selezionare il collegamento `Web Page`, quindi selezionate la modalità di modifica per aggiungere i componenti Titolo e Testo. Infine, ripubblicate solo la pagina o l’intero sito.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Collegamento moderazione {#moderationlink}
 
-Quando il membro della community dispone di privilegi di moderazione, il collegamento Moderazione sarà visibile e la selezione di tale collegamento consente di visualizzare il contenuto della community pubblicato e di [moderarlo](/help/communities/moderate-ugc.md) in modo simile alla console [di](/help/communities/moderation.md) moderazione nell&#39;ambiente di authoring.
+Quando il membro della community dispone di privilegi di moderazione, il collegamento Moderazione sarà visibile e la selezione visualizzerà il contenuto della community pubblicato e consentirà di essere [moderato](/help/communities/moderate-ugc.md) in modo simile alla [console di moderazione](/help/communities/moderation.md) nell&#39;ambiente di authoring.
 
 Utilizzate il pulsante Indietro del browser per tornare al sito pubblicato. La maggior parte delle console non è accessibile dalla navigazione globale nell’ambiente di pubblicazione. [](/help/communities/moderate-ugc.md)
 
 ![moderationlink](assets/moderationlink.png)
 
-## Autoregistrazione {#self-registration}
+## Registrazione automatica {#self-registration}
 
 Dopo la disconnessione, è possibile creare una nuova registrazione utente.
 
@@ -223,9 +223,9 @@ Dopo la disconnessione, è possibile creare una nuova registrazione utente.
 
 Per impostazione predefinita, l’indirizzo e-mail è l’ID di login. Se questa opzione è deselezionata, il visitatore può immettere il proprio ID di accesso (nome utente). Il nome utente deve essere univoco nell’ambiente di pubblicazione.
 
-Dopo aver specificato il nome utente, l&#39;e-mail e la password, selezionando `Sign Up` l&#39;utente verrà creato e sarà possibile apporvi la firma.
+Dopo aver specificato il nome utente, l&#39;e-mail e la password, selezionando `Sign Up` l&#39;utente sarà in grado di crearlo e di consentirne la firma.
 
-Una volta effettuato l’accesso, la prima pagina presentata è la `Profile` pagina corrispondente, che possono personalizzare.
+Una volta effettuato l&#39;accesso, la prima pagina presentata è la pagina `Profile`, che possono personalizzare.
 
 ![profilo](assets/profile.png)
 
