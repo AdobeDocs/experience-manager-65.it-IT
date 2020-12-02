@@ -31,9 +31,9 @@ Per una semplice dimostrazione, viene rimossa una funzione visiva, l’avatar mo
 
 ## Modificare gli script HBS {#modify-the-hbs-scripts}
 
-Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Apri [/app/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Aprire [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Aggiungete un commento al tag che include l&#39;avatar per un post di commento (~ riga 21):
 
@@ -43,7 +43,7 @@ Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Apri [/app/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Aprire [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Aggiungete un commento al tag che include l&#39;avatar per la voce di commento successiva (~ riga 44):
 
@@ -53,7 +53,7 @@ Utilizzo di [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Seleziona **Salva tutto**
+* Selezionare **Salva tutto**
 
 ### Replica app personalizzata {#replicate-custom-app}
 
@@ -65,17 +65,17 @@ Un modo per farlo è:
 
    * Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
    * Selezionare **[!UICONTROL Attiva albero]**.
-   * Impostate `Start Path` su `/apps/custom`.
-   * Deselezionare **[!UICONTROL Solo Modificato]**.
-   * Fate clic sul pulsante **[!UICONTROL Attiva]** .
+   * Impostare `Start Path` su `/apps/custom`.
+   * Deselezionare **[!UICONTROL Solo modificate]**.
+   * Selezionare il pulsante **[!UICONTROL Activate]**.
 
 ### Visualizza commento modificato sulla pagina di esempio pubblicata {#view-modified-comment-on-published-sample-page}
 
-[Continuando l’esperienza](/help/communities/extend-sample-page.md#publish-sample-page) nell’istanza di pubblicazione, ancora con accesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
+[Continuando l’](/help/communities/extend-sample-page.md#publish-sample-page) esperienza nell’istanza di pubblicazione, ancora con accesso come lo stesso utente, è ora possibile aggiornare la pagina nell’ambiente di pubblicazione per visualizzare la modifica per rimuovere l’avatar:
 
 ![view-modified-content](assets/view-modified-content.png)
 
-### Esempio di pacchetto di estensione dei commenti {#sample-comment-extension-package}
+### Pacchetto di estensioni di commenti di esempio {#sample-comment-extension-package}
 
 Allegato è un pacchetto dell&#39;applicazione di commenti personalizzata creata in questa esercitazione.
 
