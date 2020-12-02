@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 4%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
 
 ## Avvio di Adobe Experience Manager dalla riga di comando {#starting-adobe-experience-manager-from-the-command-line}
 
-Lo `start` script è disponibile *nella directory &lt;cq-install>/bin* . Sono disponibili entrambe le versioni Unix e Windows. Lo script avvia l&#39;istanza installata nella directory *&lt;cq-install>* .
+Lo script `start` è disponibile nella directory *&lt;cq-install>/bin*. Sono disponibili entrambe le versioni Unix e Windows. Lo script avvia l&#39;istanza installata nella directory *&lt;cq-install>*.
 
-Queste due versioni supportano un elenco di variabili di ambiente che possono essere utilizzate per avviare e sintonizzare l’istanza di AEM.
+Queste due versioni supportano un elenco di variabili di ambiente che possono essere utilizzate per avviare e ottimizzare l&#39;istanza AEM.
 
 <table>
  <tbody>
@@ -47,7 +50,7 @@ Queste due versioni supportano un elenco di variabili di ambiente che possono es
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
-   <td>Nome del file Jarfile<br /> </td>
+   <td>Nome del file jarfile<br /> </td>
   </tr>
   <tr>
    <td>CQ_USE_JAAS</td>
@@ -66,7 +69,7 @@ Queste due versioni supportano un elenco di variabili di ambiente che possono es
 
 >[!CAUTION]
 >
->Alcune modalità di esecuzione, tra cui l’authoring e la pubblicazione, devono essere impostate prima di avviare AEM e non possono essere successivamente modificate. Prima di configurare un’istanza di AEM che dovrebbe essere utilizzata per la produzione, consulta la documentazione [sulle modalità di](/help/sites-deploying/configure-runmodes.md) esecuzione per ulteriori informazioni.
+>Alcune modalità di esecuzione, tra cui l’autore e la pubblicazione, devono essere impostate prima del primo AEM di avvio e non possono essere modificate successivamente. Prima di impostare un&#39;istanza AEM che dovrebbe essere utilizzata in produzione, consultare la [documentazione delle modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) per ulteriori informazioni.
 
 ### Esempio di script start.bat della piattaforma Windows {#windows-platform-start-bat-script-example}
 
@@ -82,24 +85,24 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->Lo script di avvio avvia l&#39;avvio rapido di AEM installato *nella cartella &lt;cq-install>/app* .
+>Lo script start avvia il AEM Quickstart installato nella cartella *&lt;cq-install>/app*.
 
-## Stopping Adobe Experience Manager {#stopping-adobe-experience-manager}
+## Arresto di Adobe Experience Manager {#stopping-adobe-experience-manager}
 
 Per arrestare AEM, effettuate una delle seguenti operazioni:
 
 * A seconda della piattaforma in uso:
 
-   * Se AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
-   * Se avete utilizzato lo script start in UNIX, dovete utilizzare lo script stop per arrestare AEM.
+   * Se è stato avviato AEM da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
+   * Se è stato utilizzato lo script start in UNIX, è necessario utilizzare lo script stop per arrestare AEM.
 
-* Se AEM è stato avviato facendo doppio clic sul file JAR, fate clic sul pulsante **Attivato** nella finestra di avvio (il pulsante diventa **Disattivato**) per arrestare il server.
+* Se avete iniziato AEM facendo doppio clic sul file jar, fate clic sul pulsante **On** nella finestra di avvio (il pulsante quindi cambia in **Off**) per arrestare il server.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Arresto di Adobe Experience Manager dalla riga di comando {#stopping-adobe-experience-manager-from-the-command-line}
 
-Lo `stop` script è disponibile *nella directory &lt;cq-install>/bin* . Sono disponibili entrambe le versioni Unix e Windows. Lo script arresta l&#39;istanza in esecuzione installata nella directory *&lt;cq-install>* .
+Lo script `stop` è disponibile nella directory *&lt;cq-install>/bin*. Sono disponibili entrambe le versioni Unix e Windows. Lo script arresta l&#39;istanza in esecuzione installata nella directory *&lt;cq-install>*.
 
 ### Esempio di script di arresto piattaforma Unix {#unix-platform-stop-script-example}
 
@@ -115,9 +118,9 @@ Lo `stop` script è disponibile *nella directory &lt;cq-install>/bin* . Sono dis
 
 Per preconfigurare la directory archivio (senza rimuoverla) è sufficiente:
 
-* extract `repository.xml` to the required location
+* estrarre `repository.xml` nella posizione desiderata
 
-* aggiornamento `repository.xml` come richiesto
+* update `repository.xml` come richiesto
 
 * creare `bootstrap.properties` e definire `repository.config`
 
