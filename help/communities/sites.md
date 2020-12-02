@@ -20,29 +20,29 @@ ht-degree: 4%
 
 # Modelli per siti {#site-templates}
 
-La console Modelli per sito è molto simile alla console Modelli [per](tools-groups.md) gruppi, incentrata sulle funzioni di interesse per i gruppi community.
+La console Modelli per sito è molto simile alla console [Modelli per gruppi](tools-groups.md), incentrata sulle funzioni di interesse per i gruppi community.
 
 >[!NOTE]
 >
->Le console per la creazione di siti [](sites-console.md)community, modelli [di siti](sites.md)community, modelli [di gruppi](tools-groups.md) community e funzioni [](functions.md) community sono utilizzabili solo nell’ambiente di authoring.
+>Le console per la creazione di [siti community](sites-console.md), [modelli di siti community](sites.md), [modelli di gruppi community](tools-groups.md) e [funzioni community](functions.md) sono utilizzabili solo nell&#39;ambiente di authoring.
 
-## Console Modelli per siti {#site-templates-console}
+## Console Modelli sito {#site-templates-console}
 
 Nell’ambiente di authoring, per accedere alla console Siti community:
 
-* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Modelli per siti]**
+* Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Modelli del sito]**
 
-Questa console visualizza i modelli da cui è possibile creare un sito [](sites-console.md) community e consente di creare nuovi modelli di sito.
+Questa console visualizza i modelli da cui è possibile creare un [sito community](sites-console.md) e consente di creare nuovi modelli di sito.
 
 ![site-template](assets/site-template.png)
 
 ## Crea modello sito {#create-site-template}
 
-Per iniziare a creare un nuovo modello di sito, selezionate `Create`.
+Per iniziare a creare un nuovo modello di sito, selezionare `Create`.
 
 Viene visualizzato il pannello Editor sito che contiene 3 sottopannelli:
 
-### Basic info {#basic-info}
+### Informazioni di base {#basic-info}
 
 ![site-template-basicinfo](assets/site-template-basicinfo.png)
 
@@ -72,7 +72,7 @@ Nel pannello Informazioni di base, un nome, una descrizione e se il modello è a
 
 Per aggiungere funzioni per la community, trascinate dal lato destro a sinistra nell&#39;ordine in cui dovrebbero essere visualizzati i collegamenti del menu del sito. Gli stili verranno applicati al modello durante la creazione del sito.
 
-Ad esempio, se desiderate una pagina principale, trascinate la funzione Pagina dalla libreria e rilasciatela sotto il generatore di modelli. Viene visualizzata la finestra di dialogo di configurazione della pagina. Per informazioni sulle finestre di dialogo di configurazione, vedere la console [](functions.md) delle funzioni.
+Ad esempio, se desiderate una pagina principale, trascinate la funzione Pagina dalla libreria e rilasciatela sotto il generatore di modelli. Viene visualizzata la finestra di dialogo di configurazione della pagina. Per informazioni sulle finestre di dialogo di configurazione, vedere la [console delle funzioni](functions.md).
 
 Trascinate e rilasciate tutte le altre funzioni della community desiderate per un sito community basato su questo modello.
 
@@ -80,19 +80,19 @@ La funzione page fornisce una pagina vuota. La funzione Groups (Gruppi) consente
 
 >[!CAUTION]
 >
->La funzione group *non* deve essere la *prima né l&#39;unica* funzione nella struttura del sito.
+>La funzione dei gruppi deve *not* essere la *prima e la funzione unica* nella struttura del sito.
 >
->Qualsiasi altra funzione, come la funzione [](functions.md#page-function)page, deve essere inclusa ed elencata per prima.
+>Qualsiasi altra funzione, come la funzione [page](functions.md#page-function), deve essere inclusa ed elencata per prima.
 
 ![site-editor](assets/site-editor.png)
 
-### Modelli di gruppo per la funzione Gruppi {#group-templates-for-groups-function}
+### Modelli di gruppo per la funzione dei gruppi {#group-templates-for-groups-function}
 
 Quando si inserisce una funzione di gruppo nel modello di sito, la configurazione richiede la specifica delle scelte di modelli di gruppo consentite quando viene creato un nuovo gruppo nell&#39;ambiente di pubblicazione.
 
 >[!CAUTION]
 >
->La funzione Groups *non* deve essere né la *prima né l&#39;unica* funzione nella struttura del sito.
+>La funzione Groups deve *not* essere la *prima e la sola funzione* nella struttura del sito.
 
 ![funzioni del sito](assets/site-functions.png)
 
@@ -102,6 +102,6 @@ Selezionando due o più modelli di gruppo community, l&#39;amministratore del gr
 
 ## Modifica modello sito{#edit-site-template}
 
-Quando visualizzate i modelli di sito nella console [principale Modelli](#site-templates-console)sito, è possibile selezionare un modello di sito esistente da modificare.
+Quando si visualizzano i modelli di sito nella [console principale dei modelli di sito](#site-templates-console), è possibile selezionare un modello di sito esistente da modificare.
 
-Questo processo fornisce gli stessi pannelli utilizzati per [creare un modello](#create-site-template)di sito.
+Questo processo fornisce gli stessi pannelli di [creazione di un modello di sito](#create-site-template).
