@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Creazione di un layout della barra degli strumenti personalizzato{#creating-custom-toolbar-layout}
+# Creazione di un layout personalizzato della barra degli strumenti{#creating-custom-toolbar-layout}
 
-## Layout della barra degli strumenti {#layout}
+## Layout barra degli strumenti {#layout}
 
 Quando si crea un modulo adattivo, è possibile specificare il layout di una barra degli strumenti per il modulo. Il layout della barra degli strumenti definisce i comandi e il layout della barra degli strumenti sul modulo.
 
-Gli utilizzi del layout della barra degli strumenti dipendono in larga misura dall&#39;elaborazione sul lato client, gestita da codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato. Per risolvere questo problema, AEM offre cartelle libreria lato client che consentono di archiviare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, consultate [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
+Gli utilizzi del layout della barra degli strumenti dipendono in larga misura dall&#39;elaborazione sul lato client, gestita da codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato. Per risolvere il problema, AEM fornisce Cartelle libreria lato client che consentono di memorizzare il codice lato client nell&#39;archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, vedere [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
 
 ![Esempio di layout della barra degli strumenti](assets/default_toolbar_layout.png)
 
@@ -32,7 +32,7 @@ Esempio di layout della barra degli strumenti
 
 I moduli adattivi forniscono una serie di layout predefiniti:
 
-![Layout della barra degli strumenti disponibili out-of-the-box ](assets/toolbar1.png)
+![Layout della barra degli strumenti disponibili out-of-the-box  ](assets/toolbar1.png)
 
 Layout della barra degli strumenti disponibili out-of-the-box
 
@@ -44,11 +44,12 @@ Il pacchetto di contenuti allegato contiene l’intero codice descritto di segui
 
 CustomToolbarLayoutDemo.zip
 
-[Ottieni layout barra degli strumenti personalizzato Demo file](assets/customtoolbarlayoutdemo.zip)
+[Ottieni layout barra degli strumenti personalizzato ](assets/customtoolbarlayoutdemo.zip)
+FileDemo
 
 ## Per creare un layout personalizzato della barra degli strumenti {#layout-1}
 
-1. Create una cartella per mantenere i layout personalizzati della barra degli strumenti. Ad esempio:
+1. Create una cartella per mantenere i layout personalizzati della barra degli strumenti. Esempio:
 
    `/apps/customlayout/toolbar`.
 
@@ -56,25 +57,25 @@ CustomToolbarLayoutDemo.zip
 
    `/libs/fd/af/layouts/toolbar`
 
-   Ad esempio, copiate il `mobileFixedToolbarLayout` nodo dalla `/libs/fd/af/layouts/toolbar` cartella alla `/apps/customlayout/toolbar` cartella.
+   Ad esempio, copiare il nodo `mobileFixedToolbarLayout` dalla cartella `/libs/fd/af/layouts/toolbar` alla cartella `/apps/customlayout/toolbar`.
 
-   Inoltre, copiate toolbarCommon.jsp nella `/apps/customlayout/toolbar` cartella.
+   Inoltre, copiate toolbarCommon.jsp nella cartella `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
-   >La cartella creata per mantenere i layout personalizzati molto da creare con la `apps` cartella.
+   >La cartella creata per mantenere i layout personalizzati molto da creare con la cartella `apps`.
 
-1. Rinominare il nodo copiato in `mobileFixedToolbarLayout``customToolbarLayout.`
+1. Rinominare il nodo copiato, `mobileFixedToolbarLayout`, in `customToolbarLayout.`
 
-   Fornire inoltre una descrizione pertinente per il nodo. Ad esempio, modificare jcr:description del nodo in Layout **personalizzato per la barra degli strumenti**.
+   Fornire inoltre una descrizione pertinente per il nodo. Ad esempio, modificare jcr:description del nodo in **Layout personalizzato per la barra degli strumenti**.
 
-   Il tipo di layout è determinato dalla `guideComponentType` proprietà del nodo. In questo caso, il tipo di layout è barra degli strumenti, per cui viene visualizzato nel menu a discesa di selezione del layout della barra degli strumenti.
+   La proprietà `guideComponentType` del nodo determina il tipo di layout. In questo caso, il tipo di layout è barra degli strumenti, per cui viene visualizzato nel menu a discesa di selezione del layout della barra degli strumenti.
 
    ![Un nodo con la relativa descrizione](assets/toolbar3.png)
 
    Un nodo con la relativa descrizione
 
-   Il nuovo layout della barra degli strumenti personalizzata viene visualizzato nella configurazione della finestra di dialogo della barra degli strumenti **modulo** adattiva.
+   Il nuovo layout della barra degli strumenti personalizzata viene visualizzato nella configurazione della finestra di dialogo **Barra degli strumenti del modulo adattivo**.
 
    ![Elenco dei layout disponibili per le barre degli strumenti](assets/toolbar4.png)
 
@@ -86,7 +87,7 @@ CustomToolbarLayoutDemo.zip
 
 1. Selezionare il layout personalizzato della barra degli strumenti e fare clic su OK.
 
-   Aggiungi clientlib (javascript e css) nel `/etc/customlayout` nodo e include il riferimento della clientlib nel `customToolbarLayout.jsp`.
+   Aggiungere clientlib (javascript e css) nel nodo `/etc/customlayout` e includere il riferimento di clientlib nel `customToolbarLayout.jsp`.
 
    ![Percorso del file customToolbarLayout.css](assets/toolbar_3.png)
 
