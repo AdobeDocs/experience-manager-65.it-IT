@@ -20,31 +20,32 @@ ht-degree: 2%
 
 # Utilizzo delle valutazioni {#using-ratings}
 
-Il `Rating` componente viene utilizzato autonomamente o in combinazione con altre funzioni di Communities. Questo componente permette ai membri della community che hanno effettuato l’accesso di esprimere le proprie opinioni in base al punteggio contenuto.
+Il componente `Rating` viene utilizzato autonomamente o insieme ad altre funzioni di Communities. Questo componente permette ai membri della community che hanno effettuato l’accesso di esprimere le proprie opinioni in base al punteggio contenuto.
 
-## Adding a Rating to a Page {#adding-a-rating-to-a-page}
+## Aggiunta di una valutazione a una pagina {#adding-a-rating-to-a-page}
 
-Per aggiungere un `Rating` componente a una pagina in modalità di creazione, individuate il componente `Communities / Rating` e trascinatelo nella posizione desiderata sulla pagina, ad esempio una posizione relativa alla funzione per la quale i membri possono assegnare una valutazione.
+Per aggiungere un componente `Rating` a una pagina in modalità di creazione, individuate il componente `Communities / Rating` e trascinatelo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione per i membri da classificare.
 
-Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
 
-Quando vengono incluse le librerie [lato client](rating-basics.md#essentials-for-client-side) richieste, viene visualizzato così il `Rating` componente.
+Quando vengono incluse le [librerie lato client ](rating-basics.md#essentials-for-client-side), viene visualizzato il componente `Rating`.
 
 ![valutazione](assets/rating.png)
 
-## Configurazione della valutazione {#configuring-rating}
+## Configurazione della classificazione {#configuring-rating}
 
-Selezionate il `Rating` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Rating` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![configure-new](assets/configure-new.png)
 
-Nella scheda **[!UICONTROL Testo ed etichette]** è possibile specificare l’identificatore interno per la valutazione.
+Nella scheda **[!UICONTROL Testi e etichette]** è possibile specificare l&#39;identificatore interno per la valutazione.
 
 ![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Tally Name]**(*Obbligatorio*) Un nome semplice per il `Rating` quale l&#39;istanza viene identificata in modo univoco. Deve essere un nome di nodo valido per il repository.
+**[!UICONTROL Tally Name]**
+(*Obbligatorio*) Un nome semplice per il  `Rating` quale identifica l&#39;istanza in modo univoco. Deve essere un nome di nodo valido per il repository.
 
-## Esperienza dei visitatori del sito {#site-visitor-experience}
+## Esperienza visitatori del sito {#site-visitor-experience}
 
 ### Membri {#members}
 
@@ -56,4 +57,4 @@ L&#39;invio anonimo di una valutazione non è supportato. I visitatori del sito 
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [Valutazione di base](rating-basics.md) per gli sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Classificazione di Essentials](rating-basics.md) per gli sviluppatori.
