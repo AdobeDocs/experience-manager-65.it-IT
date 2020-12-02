@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Abilitazione di conversioni di file multithread {#enabling-multi-threaded-file-conversions}
+# Abilitazione delle conversioni di file multithread {#enabling-multi-threaded-file-conversions}
 
 PDF Generator consente di abilitare conversioni di file multithread per alcuni tipi di file. La conversione di file multithread migliora le prestazioni di PDF Generator consentendo a quest&#39;ultimo di eseguire più conversioni contemporaneamente.
 
@@ -45,7 +45,7 @@ Quando si aggiungono utenti per OpenOffice, Microsoft Word o Microsoft PowerPoin
 In un sistema operativo Windows, gli account utente amministratore utilizzati per la conversione PDF (utenti PDFG) dovranno sostituire i privilegi di token a livello di processo. È possibile aggiungere questo diritto utilizzando l&#39;Editor Criteri di gruppo:
 
 1. Nel menu Start di Windows, fate clic su Esegui e immettete gpedit.msc.
-1. Fate clic su Criteri computer locale > Configurazione computer > Impostazioni di Windows > Impostazioni di protezione > Criteri locali > Assegnazione diritti utente. Modificate il criterio *Sostituisci token* a livello di processo per includere il gruppo Amministratori.
+1. Fate clic su Criteri computer locale > Configurazione computer > Impostazioni di Windows > Impostazioni di protezione > Criteri locali > Assegnazione diritti utente. Modificate il criterio *Sostituisci un token a livello di processo* per includere il gruppo Amministratori.
 1. Aggiungete l&#39;utente alla voce Replace a Process Level Token (Sostituisci token a livello di processo).
 
 ### Configurazione aggiuntiva necessaria per OpenOffice, Microsoft Word e Microsoft PowerPoint in Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -58,9 +58,9 @@ Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsof
 
 ### Configurazione aggiuntiva necessaria per OpenOffice su Linux o Solaris {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. Aggiungete account utente. Consultate [Aggiungere un account](enabling-multi-threaded-file-conversions.md#add-a-user-account)utente.
+1. Aggiungete account utente. (Vedere [Aggiungere un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
 1. Quindi, verranno apportate modifiche al file /etc/sudoers. L&#39;autorizzazione predefinita per questo file è 440. Cambia l&#39;autorizzazione per questo file in scrivibile.
-1. Aggiungere voci per altri utenti (diversi dall&#39;amministratore che esegue il server dei moduli) nel file /etc/sudoers. Ad esempio, se i moduli AEM vengono eseguiti come utente denominato lcadm e server denominato myhost e si desidera rappresentare user1 e user2, aggiungere le seguenti voci a /etc/sudoers:
+1. Aggiungere voci per altri utenti (diversi dall&#39;amministratore che esegue il server dei moduli) nel file /etc/sudoers. Ad esempio, se si esegue AEM moduli come utente denominato lcadm e server denominato myhost e si desidera rappresentare user1 e user2, aggiungere le seguenti voci a /etc/sudoers:
 
    ```shell
     lcadm myhost=(user1) NOPASSWD: ALL
@@ -71,7 +71,7 @@ Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsof
 
    >[!NOTE]
    >
-   >Assicurarsi di aver assegnato i ruoli utente utente di sistema e PDFG a &quot;user1&quot; e &quot;user2&quot;. Per assegnare il ruolo PDFG a un utente, consultate [Aggiunta di un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Assicurarsi di aver assegnato i ruoli utente utente di sistema e PDFG a &quot;user1&quot; e &quot;user2&quot;. Per assegnare il ruolo PDFG a un utente, vedere [Aggiungi un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Anche nel file /etc/sudoers, individuare e commentare questa riga aggiungendo un simbolo cancelletto (#) all&#39;inizio della riga:
 
@@ -82,7 +82,7 @@ Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsof
    Questo consente di aggiungere utenti Linux.
 
 1. Cambia l&#39;autorizzazione per il file etc/sudoers a 440.
-1. Consentire a tutti gli utenti aggiunti tramite [Aggiungi un account](enabling-multi-threaded-file-conversions.md#add-a-user-account) utente di effettuare connessioni al server dei moduli. Ad esempio, per consentire a un utente locale denominato user1 di stabilire la connessione al server dei moduli, utilizzare il comando seguente
+1. Consentire a tutti gli utenti aggiunti tramite [Aggiungi un account utente](enabling-multi-threaded-file-conversions.md#add-a-user-account) di effettuare connessioni al server dei moduli. Ad esempio, per consentire a un utente locale denominato user1 di stabilire la connessione al server dei moduli, utilizzare il comando seguente
 
    `xhost +local:user1@`
 
@@ -94,7 +94,7 @@ Se su Windows Server 2008 è in esecuzione OpenOffice, Microsoft Word o Microsof
 >
 >OpenOffice deve essere installato in una directory accessibile a tutti gli utenti PDFG. È possibile verificare questa situazione effettuando l&#39;accesso come utente PDFG e verificando se è possibile avviare OpenOffice senza problemi.
 
-### Aggiunta di un account utente {#add-a-user-account}
+### Aggiungere un account utente {#add-a-user-account}
 
 1. Nella console di amministrazione, fare clic su Servizi > PDF Generator > Account utente.
 1. Fare clic su Aggiungi e immettere il nome utente e la password di un utente che dispone dei privilegi di amministratore nel server dei moduli. Se state configurando gli utenti per OpenOffice, chiudete le finestre di dialogo di attivazione iniziali di OpenOffice.
