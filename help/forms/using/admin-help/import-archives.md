@@ -11,22 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1465'
+ht-degree: 0%
 
 ---
 
 
-# Importare e gestire gli archivi {#import-and-manage-archives}
+# Importazione e gestione di archivi {#import-and-manage-archives}
 
 Utilizzare la scheda archivi per importare e gestire gli LCA creati in Workbench.
 
-## Importare un archivio {#import-an-archive}
+## Importa un archivio {#import-an-archive}
 
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione applicazione e fare clic sulla scheda archivi.
 1. Fai clic su Importa.
 1. Fate clic su Sfoglia per individuare l’archivio da importare, quindi fate clic su Anteprima.
 1. Esaminare l&#39;elenco delle risorse e degli oggetti che verranno installati con l&#39;archivio. Verificare che non vi siano conflitti con le risorse, gli oggetti e le configurazioni di servizio esistenti, poiché non è disponibile alcuna funzionalità di annullamento.
 
-   Se si sceglie di importare le configurazioni del servizio, i moduli AEM importano tutti i file di configurazione del processo (endpoint, profili di sicurezza e parametri di configurazione del servizio) utilizzati dai processi in LCA.
+   Se si sceglie di importare le configurazioni del servizio, AEM moduli importa tutti i file di configurazione del processo (endpoint, profili di sicurezza e parametri di configurazione del servizio) utilizzati dai processi in LCA.
 
 1. Fai clic su Importa.
 1. Controllate i risultati dell&#39;importazione e fate clic su Ignora configurazione per completare il processo di importazione oppure fate clic su Configura per configurare l&#39;archivio.
@@ -35,57 +38,57 @@ Utilizzare la scheda archivi per importare e gestire gli LCA creati in Workbench
    >
    >Se fate clic su Ignora configurazione, potete configurare l&#39;archivio in un secondo momento.
 
-1. Se si fa clic su Configura, viene visualizzata la pagina Configura endpoint in cui è possibile apportare le modifiche necessarie:
+1. Se si fa clic su Configura, viene visualizzata la pagina Configura endpoint, in cui è possibile apportare le modifiche necessarie:
 
    * Per rinominare un endpoint o modificarne la descrizione, fate clic su di esso.
-   * Per aggiungere un endpoint di Task Manager, fare clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Task Manager, vedere [Configurazione degli endpoint](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)di Task Manager.
-   * Per aggiungere un endpoint cartella esaminata, fate clic su Aggiungi cartella esaminata. Per informazioni dettagliate sulle impostazioni delle cartelle esaminate, consultate Impostazioni [endpoint delle cartelle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)esaminate.
-   * Per aggiungere un endpoint e-mail, fate clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni e-mail, consultate Impostazioni [endpoint e-](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)mail.
+   * Per aggiungere un endpoint di Task Manager, fare clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Task Manager, vedere [Configurazione degli endpoint di Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Per aggiungere un endpoint cartella esaminata, fate clic su Aggiungi cartella esaminata. Per informazioni dettagliate sulle impostazioni delle cartelle esaminate, consultate [Impostazioni endpoint cartella esaminata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Per aggiungere un endpoint e-mail, fate clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni E-mail, vedere [Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Per aggiungere un endpoint EJB, fate clic su Aggiungi EJB e specificate un nome e una descrizione per l’endpoint.
    * Per aggiungere un endpoint SOAP, fare clic su Aggiungi SOAP e specificare un nome e una descrizione per l&#39;endpoint.
-   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per informazioni dettagliate sulle impostazioni Remoto, consultate Impostazioni [endpoint](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)remoto.
+   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per informazioni dettagliate sulle impostazioni Remoto, vedere [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Per aggiungere un endpoint REST, fate clic su Aggiungi REST e specificate un nome e una descrizione per l’endpoint. Osservate l’URL di chiamata REST visualizzato nella pagina Aggiungi endpoint REST.
    * Per rimuovere un endpoint, selezionate la casella di controllo accanto ad esso e fate clic su Rimuovi.
 
 1. Fai clic su Avanti.
-1. Se un processo o un servizio in LCA contiene parametri di configurazione, viene visualizzata una pagina Configura parametri, in cui si configurano i parametri del servizio e si fa clic su Avanti.
+1. Se un processo o un servizio in LCA dispone di parametri di configurazione, viene visualizzata una pagina Configura parametri, in cui si configurano i parametri del servizio e si fa clic su Avanti.
 1. Nella pagina Configura profilo di protezione, apportate le modifiche necessarie:
 
-   * **** Richiedi ai chiamanti di autenticarsi: Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
+   * **Richiedi che i chiamanti autenticino:** questa impostazione indica se il servizio può essere invocato con o senza credenziali.
 
-      Se *i chiamanti sono attualmente tenuti ad autenticarsi* , il chiamante del servizio deve essere autenticato e l&#39;entità utente per tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
+      Se *i chiamanti sono attualmente richiesti per l&#39;autenticazione* viene visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente per tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
 
-      Se *i chiamanti non sono tenuti ad autenticarsi* , non è necessario che il chiamante del servizio sia autenticato. L&#39;invocazione del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fai clic su Richiedi ai chiamanti di eseguire l&#39;autenticazione.
+      Se *I chiamanti non sono richiesti per l&#39;autenticazione* viene visualizzato, il chiamante del servizio non deve essere autenticato. L&#39;invocazione del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fai clic su Richiedi ai chiamanti di eseguire l&#39;autenticazione.
 
-   * **** Esegui come: Specifica l&#39;identità di esecuzione utilizzata da un servizio dopo che questo è stato richiamato. Per modificare questa opzione, fate clic su Cambia. Scegliete tra le seguenti opzioni:
+   * **Esecuzione come:** specifica l&#39;identità di esecuzione utilizzata da un servizio dopo che questo è stato richiamato. Per modificare questa opzione, fate clic su Cambia. Scegliete tra le seguenti opzioni:
 
-      **** Non specificato: Viene utilizzato il comportamento predefinito.
+      **Non specificato:** viene utilizzato il comportamento predefinito.
 
-      **** Richiamatore: Utilizza la stessa identità dell&#39;utente che ha richiamato il servizio.
+      **Invoker:** utilizza la stessa identità dell&#39;utente che ha richiamato il servizio.
 
-      **** Sistema: Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
+      **Sistema:** esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
 
-      **** Utente con nome: Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando selezionate questa opzione, fate clic su Seleziona utente per visualizzare la pagina Seleziona principale, in cui potete cercare e selezionare l&#39;utente.
+      **Utente denominato:** consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando selezionate questa opzione, fate clic su Seleziona utente per visualizzare la pagina Seleziona principale, in cui potete cercare e selezionare l&#39;utente.
 
    * Per aggiungere un&#39;entità al profilo di sicurezza, fate clic su Aggiungi entità e selezionate l&#39;utente o il gruppo da aggiungere come entità. Fate clic su Avanti, quindi selezionate le autorizzazioni da assegnare all&#39;entità:
 
-      **** INVOKE_PERM: Per richiamare tutte le operazioni sul servizio
+      **INVOKE_PERM:** Richiamare tutte le operazioni sul servizio
 
-      **** MODIFY_CONFIG_PERM: Per modificare la configurazione di un servizio
+      **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
 
-      **** SUPERVISOR_PERM: Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
+      **SUPERVISOR_PERM:** Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
 
-      **** START_STOP_PERM: Per avviare e arrestare un servizio
+      **START_STOP_PERM:** Per avviare e arrestare un servizio
 
-      **** ADD_REMOVE_ENDPOINTS_PERM: Aggiunta, rimozione e modifica di endpoint per un servizio
+      **ADD_REMOVE_ENDPOINTS_PERM:** Aggiunta, rimozione e modifica di endpoint per un servizio
 
-      **** CREATE_VERSION_PERM: Per creare una nuova versione del servizio
+      **CREATE_VERSION_PERM:** Per creare una nuova versione del servizio
 
-      **** DELETE_VERSION_PERM: Per eliminare una versione del servizio
+      **DELETE_VERSION_PERM:** Per eliminare una versione del servizio
 
-      **** MODIFY_VERSION_PERM: Per modificare una versione del servizio
+      **MODIFY_VERSION_PERM:** Per modificare una versione del servizio
 
-      **** READ_PERM: Visualizzazione del servizio
+      **READ_PERM:** Visualizzazione del servizio
 
       Fare clic su Finito per aggiungere l&#39;entità al profilo di protezione.
 
@@ -98,65 +101,65 @@ Utilizzare la scheda archivi per importare e gestire gli LCA creati in Workbench
 1. Nella pagina Visualizza archivio, selezionare la risorsa di archivio evidenziata.
 1. Configurare il file di archivio del processo importato.
 
-## Utilizza la procedura guidata di configurazione per configurare i moduli AEM che fanno parte di un file di archivio {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Utilizzare la procedura guidata di configurazione per configurare i moduli AEM che fanno parte di un file di archivio {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Nella console di amministrazione, fare clic su Servizi > Applicazioni e servizi > Gestione applicazione e fare clic sulla scheda archivi.
 1. Fare clic su Configura accanto al file di archivio da configurare.
 1. Viene visualizzata la pagina Configura endpoint, in cui è possibile apportare le modifiche necessarie:
 
    * Per rinominare un endpoint o modificarne la descrizione, fate clic su di esso.
-   * Per aggiungere un endpoint di Task Manager, fare clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Task Manager, vedere [Configurazione degli endpoint](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)di Task Manager.
-   * Per aggiungere un endpoint cartella esaminata, fate clic su Aggiungi cartella esaminata. Per informazioni dettagliate sulle impostazioni delle cartelle esaminate, consultate Impostazioni [endpoint delle cartelle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)esaminate.
-   * Per aggiungere un endpoint e-mail, fate clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni e-mail, consultate Impostazioni [endpoint e-](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)mail.
+   * Per aggiungere un endpoint di Task Manager, fare clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Task Manager, vedere [Configurazione degli endpoint di Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Per aggiungere un endpoint cartella esaminata, fate clic su Aggiungi cartella esaminata. Per informazioni dettagliate sulle impostazioni delle cartelle esaminate, consultate [Impostazioni endpoint cartella esaminata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Per aggiungere un endpoint e-mail, fate clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni E-mail, vedere [Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Per aggiungere un endpoint EJB, fate clic su Aggiungi EJB e specificate un nome e una descrizione per l’endpoint.
    * Per aggiungere un endpoint SOAP, fare clic su Aggiungi SOAP e specificare un nome e una descrizione per l&#39;endpoint.
-   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per informazioni dettagliate sulle impostazioni Remoto, consultate Impostazioni [endpoint](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)remoto.
+   * Per aggiungere un endpoint remoto, fare clic su Aggiungi remoto. Per informazioni dettagliate sulle impostazioni Remoto, vedere [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Per aggiungere un endpoint REST, fate clic su Aggiungi REST e specificate un nome e una descrizione per l’endpoint. Osservate l’URL di chiamata REST visualizzato nella pagina Aggiungi endpoint REST.
    * Per rimuovere un endpoint, selezionate la casella di controllo accanto ad esso e fate clic su Rimuovi.
 
 1. Fai clic su Avanti.
-1. Se un processo o un servizio in LCA contiene parametri di configurazione, viene visualizzata una pagina Configura parametri, in cui si configurano i parametri del servizio e si fa clic su Avanti.
+1. Se un processo o un servizio in LCA dispone di parametri di configurazione, viene visualizzata una pagina Configura parametri, in cui si configurano i parametri del servizio e si fa clic su Avanti.
 1. Nella pagina Configura profilo di protezione, puoi apportare le modifiche necessarie:
 
-   * **** Richiedi ai chiamanti di autenticarsi: Questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
+   * **Richiedi che i chiamanti autenticino:** questa impostazione indica se il servizio può essere invocato con o senza credenziali.
 
-      Se *i chiamanti sono attualmente tenuti ad autenticarsi* , il chiamante del servizio deve essere autenticato e l&#39;entità utente per tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
+      Se *i chiamanti sono attualmente richiesti per l&#39;autenticazione* viene visualizzato, il chiamante del servizio deve essere autenticato e l&#39;entità utente per tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fare clic su Consenti chiamanti non autenticati.
 
-      Se *i chiamanti non sono tenuti ad autenticarsi* , è possibile che il chiamante del servizio sia autenticato o meno. L&#39;invocazione del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fai clic su Richiedi ai chiamanti di eseguire l&#39;autenticazione.
+      Se *I chiamanti non sono tenuti ad autenticare* viene visualizzato, il chiamante del servizio potrebbe essere autenticato o meno. L&#39;invocazione del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l&#39;autenticazione, fai clic su Richiedi ai chiamanti di eseguire l&#39;autenticazione.
 
-   * **** Esegui come: Specifica l&#39;identità di esecuzione utilizzata da un servizio dopo che questo è stato richiamato. Per modificare questa opzione, fate clic su Cambia. Scegliete tra le seguenti opzioni:
+   * **Esecuzione come:** specifica l&#39;identità di esecuzione utilizzata da un servizio dopo che questo è stato richiamato. Per modificare questa opzione, fate clic su Cambia. Scegliete tra le seguenti opzioni:
 
-      **** Non specificato: Viene utilizzato il comportamento predefinito.
+      **Non specificato:** viene utilizzato il comportamento predefinito.
 
-      **** Richiamatore: Utilizza la stessa identità dell&#39;utente che ha richiamato il servizio.
+      **Invoker:** utilizza la stessa identità dell&#39;utente che ha richiamato il servizio.
 
-      **** Sistema: Esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
+      **Sistema:** esegue il servizio con privilegi completi. Questa è l&#39;impostazione predefinita per i processi di lunga durata.
 
-      **** Utente con nome: Consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando selezionate questa opzione, fate clic su Seleziona utente per visualizzare la pagina Seleziona principale, in cui potete cercare e selezionare l&#39;utente.
+      **Utente denominato:** consente di eseguire il servizio come utente specifico. Questa è l&#39;impostazione predefinita per i processi di breve durata. Quando selezionate questa opzione, fate clic su Seleziona utente per visualizzare la pagina Seleziona principale, in cui potete cercare e selezionare l&#39;utente.
 
    * Per aggiungere un&#39;entità al profilo di sicurezza, fate clic su Aggiungi entità e selezionate l&#39;utente o il gruppo da aggiungere come entità. Fate clic su Avanti, quindi selezionate le autorizzazioni da assegnare all&#39;entità:
 
-      **** INVOKE_PERM: Per richiamare tutte le operazioni sul servizio
+      **INVOKE_PERM:** Richiamare tutte le operazioni sul servizio
 
-      **** MODIFY_CONFIG_PERM: Per modificare la configurazione di un servizio
+      **MODIFY_CONFIG_PERM:** Per modificare la configurazione di un servizio
 
-      **** SUPERVISOR_PERM: Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
+      **SUPERVISOR_PERM:** Per visualizzare i dati dell&#39;istanza di processo per un servizio creato da un processo
 
-      **** START_STOP_PERM: Per avviare e arrestare un servizio
+      **START_STOP_PERM:** Per avviare e arrestare un servizio
 
-      **** ADD_REMOVE_ENDPOINTS_PERM: Aggiunta, rimozione e modifica di endpoint per un servizio
+      **ADD_REMOVE_ENDPOINTS_PERM:** Aggiunta, rimozione e modifica di endpoint per un servizio
 
-      **** CREATE_VERSION_PERM: Per creare una nuova versione del servizio
+      **CREATE_VERSION_PERM:** Per creare una nuova versione del servizio
 
-      **** DELETE_VERSION_PERM: Per eliminare una versione del servizio
+      **DELETE_VERSION_PERM:** Per eliminare una versione del servizio
 
-      **** MODIFY_VERSION_PERM: Per modificare una versione del servizio
+      **MODIFY_VERSION_PERM:** Per modificare una versione del servizio
 
-      **** READ_PERM: Visualizzazione del servizio
+      **READ_PERM:** Visualizzazione del servizio
 
       Fare clic su Finito per aggiungere l&#39;entità al profilo di protezione.
 
-## Rimozione di un archivio {#remove-an-archive}
+## Rimuovere un archivio {#remove-an-archive}
 
 >[!NOTE]
 >
