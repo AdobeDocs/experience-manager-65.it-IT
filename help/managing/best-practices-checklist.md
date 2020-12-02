@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Esistono elenchi di controllo per ogni persona (ruolo) coinvolta nel progetto. Q
 
 ## Scarica {#download}
 
-Elenco di controllo delle best practice per i progetti AEM v2
+Elenco di controllo delle best practice AEM progetto v2
 
 [Ottieni file](assets/aem_project_bp_checklistv2.xlsx)
 
@@ -38,18 +41,18 @@ Il foglio di calcolo contiene i seguenti fogli di lavoro:
 * Una serie di checklist, secondo [Persona](/help/managing/best-practices.md#persona), [Fase e Milestone](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossario**
    * Il Glossario elenca i dettagli di tutti i documenti Consegna dall&#39;elenco di controllo del progetto.
-   * Il [Glossario](/help/managing/best-practices-glossary.md) è disponibile anche come parte della documentazione.
+   * La [Glossary](/help/managing/best-practices-glossary.md) è disponibile anche come parte della documentazione.
 * **[Definizioni Persona](/help/managing/best-practices.md#persona)**
 
 ## Utilizzo degli elenchi di controllo {#using-the-checklists}
 
-Per distribuire correttamente un progetto di alta qualità, è necessario completare tutti gli elementi nelle checklist, preferibilmente in ordine:
+Per distribuire correttamente un progetto di alta qualità, è necessario completare tutti gli elementi nelle liste di controllo, preferibilmente in ordine:
 
-1. Le liste di controllo sono definite in base al **[Persona](/help/managing/best-practices.md#persona)**(ruolo) coinvolto. Ogni persona deve utilizzare l&#39;elenco di controllo appropriato al proprio ruolo nel progetto.
-1. Gli elenchi di controllo coprono i documenti **[e i](/help/managing/best-practices.md#required-documents)**risultati finali**[](/help/managing/best-practices.md#deliverables)** richiesti per ogni attività cardine; il soggetto interessato deve impostare i campi di stato e di qualità appropriati.
+1. Le checklist sono definite in base al **[Persona](/help/managing/best-practices.md#persona)** (ruolo) coinvolto. Ogni persona deve utilizzare l&#39;elenco di controllo appropriato al proprio ruolo nel progetto.
+1. Gli elenchi di controllo coprono i **[Documenti richiesti](/help/managing/best-practices.md#required-documents)** e **[Consegne](/help/managing/best-practices.md#deliverables)** per ogni fase cardine; il soggetto interessato deve impostare i campi di stato e di qualità appropriati.
 
    >[!NOTE]
    >
    >Non esiste una relazione diretta 1:1 tra i singoli documenti richiesti e i risultati finali.
 
-1. In base agli stati dei documenti **[e delle](/help/managing/best-practices.md#required-documents)**consegne**[](/help/managing/best-practices.md#deliverables)**richiesti, i fogli di lavoro **[Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)**e**[ stato per ruolo](/help/managing/best-practices.md#status-by-role)** del progetto vengono aggiornati automaticamente per fornire un&#39;indicazione aggiornata dell&#39;avanzamento e dello stato del progetto.
+1. In base agli stati di **[Documenti richiesti](/help/managing/best-practices.md#required-documents)** e **[Risultati](/help/managing/best-practices.md#deliverables)**, i fogli di lavoro **[Project Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status by Role](/help/managing/best-practices.md#status-by-role)** vengono aggiornati automaticamente per fornire un&#39;indicazione aggiornata dell&#39;avanzamento e dello stato del progetto.
