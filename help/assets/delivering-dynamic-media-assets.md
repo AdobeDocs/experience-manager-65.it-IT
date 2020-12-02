@@ -28,11 +28,11 @@ Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
    * Incorporamento del video o dell’immagine nel sito Web.
    * Collegare gli URL all’applicazione Web. Usate il collegamento per distribuire un lettore video come finestra a comparsa o modale.
-   * Se il sito è reattivo, potete [distribuire immagini ottimizzate.](/help/assets/responsive-site.md)
+   * Se il sito è reattivo, è possibile [distribuire immagini ottimizzate.](/help/assets/responsive-site.md)
 
 >[!NOTE]
 >
->La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, consulta [Smart Imaging](/help/assets/imaging-faq.md) .
+>La funzione di imaging avanzato funziona con i predefiniti per immagini esistenti e utilizza funzionalità intelligenti all’ultimo millisecondo di distribuzione per ridurre ulteriormente le dimensioni dei file immagine in base alla velocità della connessione di rete o del browser. Per ulteriori informazioni, vedere [Smart Imaging](/help/assets/imaging-faq.md).
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
@@ -50,4 +50,4 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 
 AEM ora supporta la distribuzione di tutti i contenuti multimediali dinamici (immagini e video) su HTTP/2. ossia un URL pubblicato o un codice da incorporare per l’immagine o il video può essere integrato con qualsiasi applicazione che accetta una risorsa ospitata. La risorsa pubblicata viene quindi distribuita tramite il protocollo HTTP/2. Questo metodo di distribuzione migliora il modo in cui i browser e i server comunicano, consentendo una migliore risposta e tempi di caricamento di tutte le risorse Dynamic Media.
 
-Per ulteriori informazioni, consulta [HTTP/2 Distribuzione di contenuti con domande](/help/sites-administering/scene7-http2faq.md) frequenti.
+Per ulteriori informazioni, consulta [Distribuzione HTTP/2 dei contenuti Domande frequenti](/help/sites-administering/scene7-http2faq.md).
