@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -19,23 +22,23 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 È possibile impostare un messaggio da visualizzare nella pagina di benvenuto nell’interfaccia utente di Workspace.
 
-Se necessario, potete utilizzare i tag HTML supportati da Adobe Flash® Player per formattare l&#39;aspetto del testo:
+Se necessario, potete utilizzare i tag HTML supportati da  Adobe Flash® Player per formattare l&#39;aspetto del testo:
 
-* &lt;a> Tag ancoraggio
-* &lt;b> Grassetto
-* &lt;br> Tag di interruzione
-* &lt;font> Tag font
+* &lt;a> Tag ancoraggio&lt;/a>
+* &lt;b> Grassetto&lt;/b>
+* &lt;br> Tag break
+* &lt;font> Tag font&lt;/font>
 * &lt;img> Tag immagine
-* &lt;i> Tag corsivo
+* &lt;i> Tag corsivo&lt;/i>
 * &lt;li> Tag elemento elenco
 * &lt;p> Tag paragrafo
-* Tag &lt;span> Span
-* &lt;textformat> Tag del formato di testo
-* Tag &lt;u> sottolineato
+* &lt;span> Tag Span&lt;/span>
+* &lt;textformat> Tag formato testo
+* &lt;u> Tag di sottolineatura&lt;/u>
 
-Per ulteriori informazioni sui tag supportati, vedere la definizione della `htmlText` proprietà per la classe TextField nella Guida di riferimento [del linguaggio](https://www.adobe.com/support/documentation/en/flex/)Flex.
+Per ulteriori informazioni sui tag supportati, vedere la definizione della proprietà `htmlText` per la classe TextField nella [Guida di riferimento del linguaggio Flex](https://www.adobe.com/support/documentation/en/flex/).
 
-## Imposta il messaggio del giorno {#set-the-message-of-the-day}
+## Impostare il messaggio del giorno {#set-the-message-of-the-day}
 
 1. Nella console di amministrazione, fai clic su Servizi > Area di lavoro > Messaggio del giorno.
 1. Nella casella Messaggio del giorno, inserite il testo da visualizzare nella schermata di benvenuto.
@@ -43,5 +46,5 @@ Per ulteriori informazioni sui tag supportati, vedere la definizione della `html
 
 >[!NOTE]
 >
->Flex Worksapce è obsoleto per la versione dei moduli AEM.
+>Flex Workspace è obsoleto per AEM rilascio di moduli.
 
