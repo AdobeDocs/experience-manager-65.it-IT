@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Nella pagina Tracciamento, potete cercare i processi attivi o completati avviati
 
 ## Ricerca di processi e attività {#search-for-processes-and-tasks}
 
-È possibile cercare le istanze dei processi e le attività associate in base ai nomi dei processi o utilizzando i modelli di ricerca impostati dall&#39;amministratore dell&#39;area di lavoro Moduli AEM.
+È possibile cercare le istanze di processo e le attività associate in base ai nomi dei processi o utilizzando i modelli di ricerca impostati dall&#39;amministratore dell&#39;area di lavoro di AEM Forms .
 
 È possibile impostare le colonne da visualizzare nei risultati della ricerca.
 
@@ -34,10 +37,10 @@ Nella pagina Tracciamento, potete cercare i processi attivi o completati avviati
 1. Nella pagina Tracciamento, nel riquadro a sinistra, selezionate un nome di processo. Tutte le istanze del processo per cui è stata avviata o completata un&#39;attività vengono visualizzate nel riquadro principale.
 1. Fate clic su un’istanza di processo per visualizzare ulteriori informazioni.
 
-### Ricerca di un&#39;attività mediante un modello di ricerca {#search-for-a-task-using-a-search-template}
+### Cercare un&#39;attività utilizzando un modello di ricerca {#search-for-a-task-using-a-search-template}
 
-1. Nella pagina Tracciamento, nell’elenco a sinistra, selezionate Modelli **di** ricerca e selezionate un modello di ricerca.
-1. Se il modello supporta i parametri di ricerca, per restringere i parametri di ricerca, compilate i campi del modello e fate clic su **Cerca**. Visualizza un elenco di tutte le attività alle quali avete partecipato, che corrispondono ai criteri di ricerca.
+1. Nella pagina Tracciamento, nell&#39;elenco a sinistra, selezionate **Modelli di ricerca** e selezionate un modello di ricerca.
+1. Se il modello supporta i parametri di ricerca, per restringere i parametri di ricerca, compilate i campi del modello e fate clic su **Search**. Visualizza un elenco di tutte le attività alle quali avete partecipato, che corrispondono ai criteri di ricerca.
 
 ## Visualizza dettagli processo {#view-process-details}
 
