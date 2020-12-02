@@ -11,23 +11,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1044'
+ht-degree: 0%
 
 ---
 
 
 # Gestione del lavoro e limitazione{#work-manager-and-throttling}
 
-I moduli AEM (e le versioni precedenti) utilizzavano le code JMS per eseguire le operazioni in modo asincrono. Nei moduli AEM, le code JMS sono state sostituite da Work Manager. Questo documento fornisce informazioni di base su Work Manager e istruzioni sulla configurazione delle opzioni di limitazione di Work Manager.
+AEM moduli (e versioni precedenti) utilizzavano code JMS per eseguire le operazioni in modo asincrono. Nei AEM moduli, le code JMS sono state sostituite da Work Manager. Questo documento fornisce informazioni di base su Work Manager e istruzioni sulla configurazione delle opzioni di limitazione di Work Manager.
 
 ## Informazioni sulle operazioni longeve (asincrone) {#about-long-lived-asynchronous-operations}
 
-Nei moduli AEM, le operazioni eseguite dai servizi possono essere di breve durata (sincrona) o di lunga durata (asincrona). Le operazioni di breve durata vengono completate in modo sincrono sullo stesso thread da cui sono state richiamate. Queste operazioni attendono una risposta prima di continuare.
+Nei AEM moduli, le operazioni eseguite dai servizi possono essere di breve durata (sincrona) o di lunga durata (asincrona). Le operazioni di breve durata vengono completate in modo sincrono sullo stesso thread da cui sono state richiamate. Queste operazioni attendono una risposta prima di continuare.
 
 Le operazioni di lunga durata possono estendersi anche oltre l&#39;organizzazione, ad esempio quando un cliente deve completare e inviare un modulo di richiesta di prestito come parte di una soluzione più ampia che integra molteplici attività automatizzate e umane. Tali operazioni devono proseguire in attesa di una risposta. Le operazioni di lunga durata eseguono il lavoro sottostante in modo asincrono, consentendo il coinvolgimento delle risorse in attesa del completamento. A differenza di un&#39;operazione di breve durata, Work Manager non considera un&#39;operazione di lunga durata completata una volta richiamata. Per completare l&#39;operazione, è necessario che venga eseguito un trigger esterno, ad esempio un sistema che richiede un&#39;altra operazione sullo stesso servizio o un utente che invia un modulo.
 
 ## Informazioni su Work Manager {#about-work-manager}
 
-I moduli AEM (e le versioni precedenti) utilizzavano le code JMS per eseguire le operazioni in modo asincrono. I moduli AEM utilizzano Work Manager per pianificare ed eseguire operazioni asincrone tramite thread gestiti.
+AEM moduli (e versioni precedenti) utilizzavano code JMS per eseguire le operazioni in modo asincrono. AEM moduli utilizza Work Manager per pianificare ed eseguire operazioni asincrone tramite thread gestiti.
 
 Le operazioni asincrone vengono gestite in questo modo:
 
@@ -35,7 +38,7 @@ Le operazioni asincrone vengono gestite in questo modo:
 1. Work Manager memorizza l&#39;elemento di lavoro in una tabella di database e assegna un identificatore univoco all&#39;elemento di lavoro. Il record del database contiene tutte le informazioni necessarie per eseguire l&#39;elemento di lavoro.
 1. I thread di Work Manager estraggono gli elementi di lavoro quando i thread diventano gratuiti. Prima di eseguire il pulling degli elementi di lavoro, i thread possono verificare se i servizi richiesti sono stati avviati, se la dimensione dell&#39;heap è sufficiente per eseguire il pulling dell&#39;elemento di lavoro successivo e se sono disponibili cicli CPU sufficienti per elaborare l&#39;elemento di lavoro. Work Manager valuta anche gli attributi dell&#39;elemento di lavoro (ad esempio la sua priorità) quando ne pianifica l&#39;esecuzione.
 
-Gli amministratori di moduli AEM possono utilizzare il monitoraggio integrità per controllare le statistiche di Work Manager, ad esempio il numero di elementi di lavoro nella coda e i relativi stati. È inoltre possibile utilizzare Health Monitor per mettere in pausa, riprendere, riprovare o eliminare elementi di lavoro. (Vedere [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+AEM gli amministratori dei moduli possono utilizzare il monitoraggio integrità per controllare le statistiche di Work Manager, ad esempio il numero di elementi di lavoro nella coda e i relativi stati. È inoltre possibile utilizzare Health Monitor per mettere in pausa, riprendere, riprovare o eliminare elementi di lavoro. (Vedere [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
 ## Configurazione delle opzioni di limitazione di Work Manager {#configuring-work-manager-throttling-options}
 
@@ -55,15 +58,15 @@ Gli amministratori di moduli AEM possono utilizzare il monitoraggio integrità p
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>Impostate questa opzione <code>true</code> per abilitare la modalità di debug o su false per disattivarla. </p><p>In modalità debug, i messaggi relativi alle violazioni dei criteri di Work Manager e alle azioni di pausa/ripresa di Work Manager vengono registrati. Impostate questa opzione su true solo per la risoluzione dei problemi.</p></td>
+   <td><p>Impostate questa opzione su <code>true</code> per abilitare la modalità di debug o su false per disattivarla. </p><p>In modalità debug, i messaggi relativi alle violazioni dei criteri di Work Manager e alle azioni di pausa/ripresa di Work Manager vengono registrati. Impostate questa opzione su true solo per la risoluzione dei problemi.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
-   <td><p>Impostare questa opzione <code>true</code> per abilitare la limitazione in base alle impostazioni del controllo della memoria descritte di seguito o per <code>false</code> disabilitare la limitazione.</p></td>
+   <td><p>Impostare questa opzione su <code>true</code> per abilitare la limitazione in base alle impostazioni del controllo della memoria descritte di seguito, oppure su <code>false</code> per disabilitare la limitazione.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
-   <td><p>Specifica la percentuale massima di memoria che può essere utilizzata prima che Work Manager limiti i processi in arrivo.</p><p>Il valore predefinito per questa opzione è <code>95</code>. Questo valore deve essere valido per la maggior parte dei sistemi. Aumentarlo solo se il sistema deve raggiungere la capacità massima. Ma tenete presente che, aumentando questo valore, aumenta anche il rischio di problemi di memoria insufficiente.</p><p>Se i moduli AEM sono in esecuzione in un ambiente cluster, è possibile impostare le impostazioni dei limiti di controllo della memoria in modo diverso su nodi diversi del cluster. Ad esempio, potete avere un limite massimo inferiore per i nodi A e B, programmati nel sistema di bilanciamento del carico per il lavoro interattivo. E si potrebbero impostare limiti più alti sui nodi C e D, che non vengono usati dal sistema di bilanciamento del carico, ma riservati al lavoro asincrono.</p></td>
+   <td><p>Specifica la percentuale massima di memoria che può essere utilizzata prima che Work Manager limiti i processi in arrivo.</p><p>Il valore predefinito per questa opzione è <code>95</code>. Questo valore deve essere valido per la maggior parte dei sistemi. Aumentarlo solo se il sistema deve raggiungere la capacità massima. Ma tenete presente che, aumentando questo valore, aumenta anche il rischio di problemi di memoria insufficiente.</p><p>Se si esegue AEM moduli in un ambiente cluster, è possibile impostare le impostazioni dei limiti di controllo della memoria in modo diverso su nodi diversi del cluster. Ad esempio, potete avere un limite massimo inferiore per i nodi A e B, programmati nel sistema di bilanciamento del carico per il lavoro interattivo. E si potrebbero impostare limiti più alti sui nodi C e D, che non vengono usati dal sistema di bilanciamento del carico, ma riservati al lavoro asincrono.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>
@@ -79,7 +82,7 @@ Gli amministratori di moduli AEM possono utilizzare il monitoraggio integrità p
 **Aggiungere opzioni Java a JBoss**
 
 1. Arrestate il server applicazioni JBoss.
-1. Aprite l&#39; *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungete le opzioni Java necessarie nel formato `-Dproperty=value`.
+1. Aprite la *[directory principale dell&#39;appserver]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) in un editor e aggiungete le opzioni Java richieste nel formato `-Dproperty=value`.
 1. Riavviate il server.
 
 **Aggiunta di opzioni Java a WebLogic**
