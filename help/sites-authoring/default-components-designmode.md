@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 82%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Quando si installa un’istanza di AEM out-of-the-box, nel browser Componenti è immediatamente disponibile una serie di componenti.
 
-In addition to these, various other components are also available. You can use Design mode to [enable/disable such components](#enable-disable-components). When enabled and located on your page you can then use Design mode to [configure aspects of the component design](#configuring-the-design-of-a-component) by editing the attribute parameters.
+Oltre a questi, sono disponibili anche vari altri componenti. È possibile utilizzare la modalità Progettazione per [abilitare/disabilitare tali componenti](#enable-disable-components). Quando attivato e posizionato sulla pagina, è possibile utilizzare la modalità Progettazione per [configurare alcuni aspetti della progettazione del componente](#configuring-the-design-of-a-component) modificando i parametri degli attributi.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ In addition to these, various other components are also available. You can use D
 >
 >La modalità Progettazione è disponibile solo per le configurazioni del progetto memorizzate come contenuto sotto ( `/etc`).
 >
->Starting in AEM 6.4, it is recommended to store designs as configuration data under `/apps` to support continuous deployment scenarios. Designs stored under `/apps` are not editable at runtime and the Design mode will not be available to non-admin users for such templates.
+>A partire dalla AEM 6.4, si consiglia di memorizzare le progettazioni come dati di configurazione in `/apps` per supportare scenari di distribuzione continua. Le progettazioni memorizzate in `/apps` non sono modificabili in fase di esecuzione e la modalità Progettazione non sarà disponibile agli utenti non amministratori per tali modelli.
 
 Questo comporta l’aggiunta o la rimozione dei componenti consentiti nel sistema di paragrafi per la pagina. Anche il sistema di paragrafi (`parsys`) stesso è un componente, che contiene gli altri componenti paragrafo. Il sistema di paragrafi consente agli autori di aggiungere a una pagina componenti di tipi diversi e contiene tutti gli altri componenti paragrafo. Ciascun tipo di paragrafo è rappresentato da un componente.
 
@@ -66,7 +69,7 @@ Per attivare o disattivare un componente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. Tocca o fai clic sull&#39;icona **Parent**.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -86,15 +89,17 @@ Per attivare o disattivare un componente:
 
    * Componenti consentiti
    * Impostazioni
+
    **Componenti consentiti**
 
-   On the **Allowed Components** tab, you define which components are available for the parsys.
+   Nella scheda **Componenti consentiti** è possibile definire quali componenti sono disponibili per parsys.
 
    * I componenti sono raggruppati in base ai gruppi di componenti, che possono essere espansi e ridotti.
    * Per selezionare tutti i componenti di un gruppo, attiva la casella del nome del gruppo; per deselezionare tutti i componenti di un gruppo, disattiva questa casella.
    * Se la casella contiene un meno (-) significa che è selezionato almeno un elemento del gruppo, ma non tutti.
    * È disponibile un sistema di ricerca per filtrare i componenti in base al nome.
    * Il numero a destra del nome di un gruppo di componenti indica quanti sono i componenti selezionati in tale gruppo, a prescindere dal filtro.
+
    Definisci la configurazione di ogni componente di pagina. Se le pagine figlie usano lo stesso modello e/o lo stesso componente di pagina (generalmente allineato), la stessa configurazione sarà applicata al sistema di paragrafi corrispondente.
 
    >[!NOTE]
@@ -105,7 +110,7 @@ Per attivare o disattivare un componente:
 
    Nella scheda **Impostazioni** puoi definire opzioni aggiuntive, ad esempio per disegnare un ancoraggio per ciascun componente e definire il margine delle celle di ciascun contenitore.
 
-1. Select **Done** to save your configuration.
+1. Selezionare **Fine** per salvare la configurazione.
 
 ## Configurare l’aspetto di un componente {#configuring-the-design-of-a-component}
 
@@ -130,6 +135,7 @@ Per attivare o disattivare un componente:
    * Principale
    * Funzioni
    * Stili
+
    **Proprietà**
 
    La scheda **Proprietà** consente di configurare i parametri di progettazione principali del componente. Ad esempio, per un componente immagine puoi definire la dimensione massima e minima consentita dell’immagine.
