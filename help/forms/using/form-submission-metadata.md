@@ -10,6 +10,9 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '709'
+ht-degree: 0%
 
 ---
 
@@ -24,18 +27,18 @@ Ad esempio, un&#39;impresa di assicurazione sanitaria pubblica un modulo. In que
 
 Considerare un altro esempio di modulo che acquisisce ID e-mail e numero di telefono. Quando un utente visita il modulo in modo anonimo e lo abbandona, l&#39;autore può configurare il modulo per il salvataggio automatico dell&#39;ID e-mail e del numero di telefono. Questo modulo viene salvato automaticamente e il numero di telefono e l&#39;ID e-mail vengono memorizzati nel nodo di metadati della bozza. Un esempio di utilizzo di questa configurazione è il dashboard di gestione dei lead.
 
-## Aggiunta di elementi modulo ai metadati {#adding-form-elements-to-metadata}
+## Aggiunta di elementi del modulo ai metadati {#adding-form-elements-to-metadata}
 
 Per aggiungere un elemento nei metadati, effettuate le seguenti operazioni:
 
 1. Aprire il modulo adattivo in modalità di modifica.\
    Per aprire il modulo in modalità di modifica, nel modulo di gestione selezionare il modulo e toccare **Apri**.
-1. In modalità di modifica, selezionare un componente, toccare il livello ![del](assets/field-level.png) campo > Contenitore **modulo** adattivo, quindi toccare ![cmppr](assets/cmppr.png).
+1. In modalità di modifica, selezionate un componente, toccate ![livello campo](assets/field-level.png) > **Contenitore modulo adattivo**, quindi toccate ![cmppr](assets/cmppr.png).
 1. Nella barra laterale, fate clic su **Metadati**.
 1. Nella sezione Metadati, fate clic su **Aggiungi**.
 1. Utilizzare il campo Valore della scheda Metadati per aggiungere script. Gli script aggiunti raccolgono i dati dagli elementi del modulo e calcolano i valori che vengono inviati ai metadati.
 
-   Ad esempio, **true** viene registrato nei metadati se la pagina immessa è maggiore di 21 e **false** se è minore di 21. Nella scheda Metadati, inserite il seguente script:
+   Ad esempio, **true** viene registrato nei metadati se la pagina immessa è maggiore di 21 e **false** viene registrato se è inferiore a 21. Nella scheda Metadati, inserite il seguente script:
 
    `(agebox.value >= 21) ? true : false`
 
@@ -43,7 +46,7 @@ Per aggiungere un elemento nei metadati, effettuate le seguenti operazioni:
 
    Script immesso nella scheda Metadati
 
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 
 Dopo che un utente ha immesso i dati nell&#39;elemento selezionato come campo di metadati, le informazioni calcolate vengono registrate nei metadati. Potete visualizzare i metadati nella directory archivio configurata per la memorizzazione dei metadati.
 
@@ -57,11 +60,11 @@ Se aggiungete un elemento casella di controllo nei metadati, i valori selezionat
 
 ![Memorizzazione di più valori da una casella di controllo](assets/checkbox-metadata.png)
 
-È possibile selezionare un contenitore di moduli adattivi e nelle proprietà del modulo aggiungere una chiave di metadati `cb1` che memorizza `checkbox1.value`e pubblica il modulo. Quando un cliente compila il modulo, il cliente seleziona le opzioni Passport e Social Security Number nel campo della casella di controllo. I valori 1 e 2 sono memorizzati come 1, 2 nel campo cb1 dei metadati di invio.
+È possibile selezionare un contenitore di moduli adattivi e nelle proprietà del modulo aggiungere una chiave di metadati `cb1` che memorizza `checkbox1.value` e pubblicare il modulo. Quando un cliente compila il modulo, il cliente seleziona le opzioni Passport e Social Security Number nel campo della casella di controllo. I valori 1 e 2 sono memorizzati come 1, 2 nel campo cb1 dei metadati di invio.
 
 ![Voce di metadati per più valori selezionati in un campo casella di controllo](assets/metadata-entry.png)
 
 >[!NOTE]
 >
->L&#39;esempio precedente è solo a scopo di apprendimento. Accertatevi di cercare i metadati nella posizione corretta, come configurato nell’implementazione di AEM Forms.
+>L&#39;esempio precedente è solo a scopo di apprendimento. Accertatevi di cercare i metadati nella posizione corretta, come configurato nell’implementazione AEM Forms .
 
