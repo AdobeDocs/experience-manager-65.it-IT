@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Assegnazione di tag ai contenuti generati dall&#39;utente {#tagging-user-generated-content}
+# Assegnazione tag a contenuto generato dall&#39;utente {#tagging-user-generated-content}
 
 ## Panoramica {#overview}
 
@@ -28,7 +28,7 @@ In genere, i tag vengono applicati da autori e amministratori nell’ambiente di
 
 Gli spazi dei nomi e le tassonomie dei tag sono gli stessi per entrambe le applicazioni.
 
-## Funzioni di Communities {#communities-features}
+## Caratteristiche delle community {#communities-features}
 
 Le  funzioni AEM Communities che possono essere configurate per consentire l’assegnazione di tag sono:
 
@@ -40,9 +40,9 @@ Le  funzioni AEM Communities che possono essere configurate per consentire l’a
 
 ## Amministrazione dei tag {#administering-tags}
 
-Consultate [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console) per la creazione e la gestione di spazi dei nomi e tassonomie dei tag.
+Per creare e gestire spazi dei nomi dei tag e tassonomie, vedere [Amministrazione dei tag](../../help/sites-administering/tags.md#tagging-console).
 
-Per informazioni sugli sviluppatori, consulta [Tag Essentials](tag.md) .
+Per informazioni sugli sviluppatori, vedere [Tag Essentials](tag.md).
 
 Consultate [Utilizzo di Social Tag Cloud](tagcloud.md) per aggiungere un componente Social Tag Cloud a una pagina per facilitare la ricerca di UGC pubblicate utilizzando i tag applicati.
 
@@ -52,9 +52,9 @@ Le autorizzazioni predefinite sono impostate in modo da non consentire agli spaz
 
 Poiché i tag vengono applicati a UGC nell’ambiente di pubblicazione, è necessario abilitare l’autorizzazione di lettura per i membri della community, affinché possano selezionare i tag da applicare.
 
-Consultate [Impostazione delle autorizzazioni](../../help/sites-administering/tags.md#setting-tag-permissions)per i tag.
+Consultate [Impostazione delle autorizzazioni per i tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura `/etc/tag/discussions` per il gruppo `Community Engage Members`.
+Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura a `/etc/tag/discussions` per il gruppo `Community Engage Members`.
 
 ![tag-permissions](assets/tag-permissions.png)
 
