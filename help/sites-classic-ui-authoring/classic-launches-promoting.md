@@ -12,6 +12,9 @@ discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 92%
 
 ---
 
@@ -31,14 +34,14 @@ Per promuovere le pagine, esegui le seguenti operazioni durante la modifica dell
 1. Nella scheda **Pagina** nella barra laterale, fai clic su **Promuovi lancio**.
 1. Specifica le pagine da promuovere:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
-   * To also promote the child pages of the current page, select **Include Sub Pages**.
+   * (Impostazione predefinita) Per promuovere solo la pagina corrente, selezionare **Promuovi modifiche pagina a versione produzione**.
+   * Per promuovere anche le pagine figlie della pagina corrente, selezionare **Includi sottopagine**.
    * Per promuovere tutte le pagine del lancio, seleziona **Promuovi lancio completo alla versione in produzione**.
 
 1. Per aggiungere le pagine di produzione a un pacchetto flusso di lavoro, seleziona **Aggiungi al pacchetto flusso di lavoro**, quindi selezionalo.
 1. Fai clic su **Promuovi**.
 
-## Elaborazione di pagine promosse con Flusso di lavoro AEM {#processing-promoted-pages-using-aem-workflow}
+## Elaborazione di pagine promosse tramite Flusso di lavoro AEM {#processing-promoted-pages-using-aem-workflow}
 
 I modelli di flusso di lavoro consentono di eseguire operazioni di elaborazione collettive sulle pagine di lancio promosse:
 
