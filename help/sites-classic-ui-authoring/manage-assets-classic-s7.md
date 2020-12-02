@@ -43,7 +43,7 @@ Per ulteriori informazioni sull’uso dei componenti video con AEM, consulta i s
 
 >[!NOTE]
 >
->If Scene7 assets do not display properly, please make sure that Dynamic media is [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
+>Se le risorse Scene7 non vengono visualizzate correttamente, accertatevi che il supporto dinamico sia [disabilitato](/help/assets/config-dynamic.md#disabling-dynamic-media), quindi aggiornate la pagina.
 
 ## Pubblicazione manuale in Scene7 da Assets {#manually-publishing-to-scene-from-assets}
 
@@ -58,9 +58,9 @@ Si possono pubblicare le risorse digitali in Scene7 dalla console Assets nell’
 
 Per pubblicare in Scene7 dalla console Assets se le risorse si trovano in una cartella di destinazione di Scene7:
 
-1. In the AEM classic UI, click **Digital Assets** to access the digital asset manager.
+1. Nell&#39;interfaccia AEM classica, fai clic su **Risorse digitali** per accedere a Gestione risorse digitali.
 
-1. Seleziona la risorsa (o le risorse) o la cartella all’interno della cartella di destinazione da pubblicare in Scene7, quindi fai clic con il pulsante destro del mouse e scegli **Pubblica in Scene7**. Alternatively, you can select **Publish to Scene7** from the **Tools menu**.
+1. Seleziona la risorsa (o le risorse) o la cartella all’interno della cartella di destinazione da pubblicare in Scene7, quindi fai clic con il pulsante destro del mouse e scegli **Pubblica in Scene7**. In alternativa, è possibile selezionare **Pubblica su Scene7** dal menu **Strumenti**.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -76,7 +76,7 @@ Per pubblicare in Scene7 dalla console Assets se le risorse si trovano in una ca
 
 >[!NOTE]
 >
->If the asset is not located in the Scene7 synchronized folder, the link to **Publish to Scene7** will not appear.
+>Se la risorsa non si trova nella cartella sincronizzata Scene7, il collegamento a **Pubblica su Scene7** non verrà visualizzato.
 
 Per pubblicare in Scene7 direttamente da una risorsa digitale:
 
@@ -96,9 +96,9 @@ Per pubblicare in Scene7 direttamente da una risorsa digitale:
 
 ### Pubblicazione di risorse dall’esterno della cartella di destinazione di CQ {#publishing-assets-from-outside-the-cq-target-folder}
 
-Adobe consiglia di pubblicare le risorse in Scene7 solo a partire da quelle presenti nella cartella di destinazione di Scene7. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an **ad-hoc** folder on Scene7.
+Adobe consiglia di pubblicare le risorse in Scene7 solo a partire da quelle presenti nella cartella di destinazione di Scene7. Tuttavia, se dovete caricare le risorse da una cartella all’esterno della cartella di destinazione, potete comunque caricarle in una cartella **ad-hoc** su Scene7.
 
-Per fare ciò, configura prima la configurazione Cloud per la pagina in cui apparirà la risorsa. Quindi, aggiungi un componente di Scene7 alla pagina e rilascia una risorsa sul componente. After the page properties are set for that page, a **Publish to Scene7** link appears that when selected triggers uploading to Scene7.
+Per fare ciò, configura prima la configurazione Cloud per la pagina in cui apparirà la risorsa. Quindi, aggiungi un componente di Scene7 alla pagina e rilascia una risorsa sul componente. Dopo aver impostato le proprietà della pagina, viene visualizzato un collegamento **Pubblica su Scene7** che, quando selezionato, attiva il caricamento in Scene7.
 
 >[!NOTE]
 >
@@ -111,16 +111,16 @@ Per pubblicare le risorse che risiedono al di fuori della cartella di destinazio
 1. Nella barra laterale, fai clic sull’icona **Pagina** e su **Proprietà pagina**.
 
 1. Fai clic su **Servizi cloud**, quindi su **Aggiungi servizi** e seleziona **Scene7**.
-1. In the **Adobe Scene7** drop-down list, select the desired configuration and click **OK**.
+1. Nell&#39;elenco a discesa **Adobe Scene7**, selezionare la configurazione desiderata e fare clic su **OK**.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 1. Nella pagina web, aggiungi un componente Scene7 alla posizione desiderata nella pagina.
-1. Dal Content Finder, trascina una risorsa digitale sul componente. You see a link to **Check Scene7 Publication Status**.
+1. Dal Content Finder, trascina una risorsa digitale sul componente. Viene visualizzato un collegamento a **Controlla stato pubblicazione Scene7**.
 
    >[!NOTE]
    >
-   >If the digital asset is in the CQ target folder, then no link to **Check Scene7 Publication Status** appears. Le risorse sono semplicemente inserite nel componente.
+   >Se la risorsa digitale si trova nella cartella di destinazione CQ, non viene visualizzato alcun collegamento a **Controlla stato pubblicazione Scene7**. Le risorse sono semplicemente inserite nel componente.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -130,7 +130,7 @@ Per pubblicare le risorse che risiedono al di fuori della cartella di destinazio
    >
    >Se la risorsa non si trova in una cartella sincronizzata di Scene7 e non vi è alcuna configurazione cloud di Scene7 associata alla pagina corrente, il caricamento non andrà a buon fine.
 
-## Componenti di Scene7 {#scene-components}
+## Componenti di Scene7  {#scene-components}
 
 I seguenti componenti di Scene7 sono disponibili in AEM:
 
@@ -148,7 +148,7 @@ Dopo che sono stati resi disponibili in modalità Progettazione, è possibile ag
 
 >[!NOTE]
 >
->If you are creating and developing custom S7 viewers and using the Content Finder, you need to explicity add the **allowfullscreen** parameter.
+>Se state creando e sviluppando visualizzatori S7 personalizzati e utilizzate Content Finder, dovete aggiungere esplicitamente il parametro **Allowfullscreen**.
 
 ### Avviso sulla fine del ciclo di vita dei visualizzatori Flash {#flash-viewers-end-of-life-notice}
 
@@ -156,7 +156,7 @@ A partire dal 31 gennaio 2017, in Adobe Scene7 verrà ufficialmente terminato il
 
 Per ulteriori informazioni su questa importante modifica, consulta le [domande frequenti sulla terminazione dei visualizzatori Flash](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
 
-### Aggiunta di un componente Scene7 a una pagina {#adding-a-scene-component-to-a-page}
+### Aggiunta di un componente Scene7 a una pagina  {#adding-a-scene-component-to-a-page}
 
 Aggiungere un componente di Scene7 a una pagina è come aggiungere un componente a qualsiasi pagina. I componenti di Scene7 sono descritti in dettaglio nelle sezioni seguenti.
 
@@ -166,7 +166,7 @@ Per aggiungere un componente o visualizzatore di Scene7 a una pagina nell’inte
 
 1. Se non sono disponibili componenti di Scene7, fai clic sul righello nella barra laterale per accedere alla modalità **Progettazione**, fai clic su parsys **Modifica** e seleziona tutti i componenti di **Scene7** per renderli disponibili.
 
-1. Return to **Edit** mode by clicking the pencil in the sidekick.
+1. Tornate alla modalità **Modifica** facendo clic sulla matita nella barra laterale.
 
 1. Trascina un componente dal gruppo **Scene7** nella barra laterale sulla pagina nella posizione desiderata.
 
@@ -174,17 +174,17 @@ Per aggiungere un componente o visualizzatore di Scene7 a una pagina nell’inte
 
 1. Se necessario, modifica il componente, quindi fai clic su **OK** per salvare le modifiche.
 
-### Aggiunta di esperienze di visualizzazione interattive a un sito web reattivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Aggiunta di esperienze di visualizzazione interattive a un sito web reattivo  {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Una progettazione reattiva per le risorse significa che queste si adattano a seconda di dove vengono visualizzate. Grazie alla progettazione reattivo, le stesse risorse possono essere visualizzate in modo efficace su dispositivi diversi.
 
 Per aggiungere un’esperienza di visualizzazione interattiva a un sito reattivo nell’interfaccia classica:
 
-1. Log in to AEM, and ensure that you have [configured Adobe Scene7 Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) and that Scene7 components are available.
+1. Accedete a AEM e accertatevi di avere [configurato  Cloud Services Adobe Scene7](/help/sites-administering/scene7.md#configuring-scene-integration) e che i componenti Scene7 siano disponibili.
 
    >[!NOTE]
    >
-   >Se i componenti WCM di Scene7 non sono disponibili, accertatevi di attivarli in modalità Progettazione.
+   >Se i componenti Scene7 WCM non sono disponibili, accertatevi di attivarli in modalità Progettazione.
 
 1. In un sito web con i componenti Scene7 abilitati, trascina un visualizzatore **Immagine** sulla pagina.
 1. Modifica il componente e regola i punti di interruzione nella scheda **Impostazioni di Scene7**.
@@ -193,7 +193,7 @@ Per aggiungere un’esperienza di visualizzazione interattiva a un sito reattivo
 
 1. Verifica che i visualizzatori si ridimensionino in modo reattivo e che tutte le interazioni siano ottimizzate per desktop, tablet e dispositivi mobili.
 
-### Impostazioni comuni a tutti i componenti di Scene7 {#settings-common-to-all-scene-components}
+### Impostazioni comuni a tutti i componenti di Scene7  {#settings-common-to-all-scene-components}
 
 Anche se le opzioni di configurazione variano, le seguenti sono comuni a tutti i componenti di Scene7:
 
@@ -209,13 +209,13 @@ Per impostare queste opzioni di configurazione, apri (fai doppio clic) su un com
 
 Il componente Zoom HTML5 visualizza un’immagine più grande quando si preme il pulsante +.
 
-La risorsa dispone di strumenti di zoom nella parte inferiore. Fai clic su **+** per ingrandire. Fai clic su **-** per ridurre. Clicking the **x** or the reset zoom arrow brings the image back to the original size it was imported as. Fai clic sulle frecce diagonali per renderla a schermo intero. Fai clic su **Modifica** per configurare il componente. With this component, you can configure [settings common to all Scene7 components](#settings-common-to-all-scene-components).
+La risorsa dispone di strumenti di zoom nella parte inferiore. Fai clic su **+** per ingrandire. Fai clic su **-** per ridurre. Facendo clic sulla **x** o sulla freccia di ripristino dello zoom, l&#39;immagine viene riportata alle dimensioni originali con cui è stata importata. Fai clic sulle frecce diagonali per renderla a schermo intero. Fai clic su **Modifica** per configurare il componente. Con questo componente potete configurare le [impostazioni comuni a tutti i componenti Scene7](#settings-common-to-all-scene-components).
 
 ![](do-not-localize/chlimage_1-3.png)
 
 ### A comparsa {#flyout}
 
-Nel componente A comparsa HTML5, la risorsa viene visualizzata come schermo diviso; a sinistra la risorsa nelle dimensioni specificate; a destra viene visualizzata la porzione di zoom. Fai clic su **Modifica** per configurare il componente. With this component, you can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components).
+Nel componente A comparsa HTML5, la risorsa viene visualizzata come schermo diviso; a sinistra la risorsa nelle dimensioni specificate; a destra viene visualizzata la porzione di zoom. Fai clic su **Modifica** per configurare il componente. Con questo componente potete configurare le [impostazioni comuni a tutti i componenti Scene7](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
 >[!NOTE]
 >
@@ -227,51 +227,51 @@ Nel componente A comparsa HTML5, la risorsa viene visualizzata come schermo divi
 
 ### Immagine {#image}
 
-Il componente Immagine di Scene7 consente di aggiungere funzionalità di Scene7 alle immagini, ad esempio modificatori, impostazioni predefinite dell’immagine o del visualizzatore di Scene7 e nitidezza. Il componente Immagine di Scene7 è simile ad altri componenti immagine in AEM con funzionalità speciali di Scene7. In this example, the image has the Scene7 URL modifier, **&amp;op_invert=1** applied.
+Il componente Immagine di Scene7 consente di aggiungere funzionalità di Scene7 alle immagini, ad esempio modificatori, impostazioni predefinite dell’immagine o del visualizzatore di Scene7 e nitidezza. Il componente Immagine di Scene7 è simile ad altri componenti immagine in AEM con funzionalità speciali di Scene7. In questo esempio, all&#39;immagine è applicato il modificatore URL Scene7, **&amp;op_invert=1**.
 
 ![](do-not-localize/chlimage_1-4.png)
 
-**Titolo, Testo** Alt Nella scheda Avanzate, aggiungere un titolo all’immagine e testo alternativo per gli utenti che hanno disattivato la grafica.
+**Titolo,** Testo AltNella scheda Avanzate, aggiungere un titolo all’immagine e testo alternativo per gli utenti che hanno disattivato la grafica.
 
-**URL, Apri in** È possibile impostare una risorsa da cui aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
+**URL, Apri** inPotete impostare una risorsa da cui aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-**Predefinito** visualizzatore Selezionate un predefinito esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
+**Visualizzatore** predefinito: selezionate un predefinito per visualizzatori esistente dal menu a discesa. Se il predefinito per visualizzatori che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per visualizzatori. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
 
-**Configurazione** Scene7 Selezionate la configurazione Scene7 da usare per recuperare i predefiniti per immagini attivi da SPS.
+**Scene7** Configuration: selezionate la configurazione Scene7 da usare per recuperare i predefiniti per immagini attivi da SPS.
 
-**Predefinito** immagine Selezionate un predefinito per immagini esistente dal menu a discesa. Se il predefinito per immagini che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
+**Predefinito immagineSelezionate un predefinito per immagini esistente dal menu a discesa.** Se il predefinito per immagini che cerchi non è visibile, potrebbe essere necessario renderlo visibile. Consulta Gestione dei predefiniti per immagini. Non è possibile selezionare un predefinito per visualizzatori se si utilizza un predefinito per immagini, e viceversa.
 
-**Formato** di output Selezionare il formato di output dell&#39;immagine, ad esempio jpeg. A seconda del formato di output selezionato, è possibile che siano disponibili ulteriori opzioni di configurazione. Consulta Best practice sui predefiniti per immagini.
+**Output** Format: consente di selezionare il formato di output dell&#39;immagine, ad esempio jpeg. A seconda del formato di output selezionato, è possibile che siano disponibili ulteriori opzioni di configurazione. Consulta Best practice sui predefiniti per immagini.
 
-**Nitidezza** Selezionate la modalità di nitidezza dell’immagine. La regolazione della nitidezza è descritta in dettaglio in Best practice sui predefiniti per immagini e Best practice sulla nitidezza.
+**** NitidezzaSelezionate la modalità di nitidezza dell’immagine. La regolazione della nitidezza è descritta in dettaglio in Best practice sui predefiniti per immagini e Best practice sulla nitidezza.
 
-**Modificatori** URL Potete modificare gli effetti immagine fornendo ulteriori comandi immagine S7. Tali situazioni vengono descritte in Predefiniti per immagini e nella Guida ai comandi.
+**URL** ModificatoriPotete modificare gli effetti immagine fornendo ulteriori comandi immagine S7. Tali situazioni vengono descritte in Predefiniti per immagini e nella Guida ai comandi.
 
-**Punti di interruzione** Se il sito Web è reattivo, è necessario regolare i punti di interruzione. I punti di interruzione devono essere separati da virgole (,).
+**Punti di** interruzione: se il sito Web è reattivo, è necessario regolare i punti di interruzione. I punti di interruzione devono essere separati da virgole (,).
 
 ### Modello immagini {#image-template}
 
 I [Modelli immagini di Scene7](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) sono contenuti Photoshop a più livelli importati in Scene7, dove il contenuto e le proprietà sono stati parametrizzati per la variabilità. Il componente **Modello immagini** consente di importare immagini e modificare il testo in modo dinamico in AEM. Inoltre, è possibile configurare il componente **Modello immagini** in modo che utilizzi valori contestuali ClientContext, affinché ogni utente possa avere un’esperienza personalizzata dell’immagine.
 
-Fai clic su **Modifica** per configurare il componente. You can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
+Fai clic su **Modifica** per configurare il componente. È possibile configurare le impostazioni [comuni a tutti i componenti Scene7](/help/sites-administering/scene7.md#settingscommontoallscene7components), nonché altre impostazioni descritte in questa sezione.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**Riferimento file, Larghezza, Altezza** Consultate Impostazioni comuni a tutti i componenti di Scene7.
+**Riferimento file, Larghezza,** AltezzaVedere le impostazioni comuni a tutti i componenti Scene7.
 
 >[!NOTE]
 >
 >I comandi e i parametri URL di Scene7 non possono essere aggiunti direttamente all’URL di File di riferimento. Possono essere definiti solo nell’interfaccia utente del componente del pannello **Parametri**.
 
-**Titolo, Testo** Alt Nella scheda Modello immagine di Scene7, aggiungete un titolo all’immagine e al testo alternativo per gli utenti che hanno disattivato la grafica.
+**Titolo,** Testo AltNella scheda Modello immagine di Scene7, aggiungere un titolo all’immagine e al testo alternativo per gli utenti che hanno disattivato la grafica.
 
-**URL, Apri in** È possibile impostare una risorsa da cui aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
+**URL, Apri** inPotete impostare una risorsa da cui aprire un collegamento. Imposta l’URL e in Apri in indica se desideri aprirlo nella stessa finestra o in una nuova finestra.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-**Pannello** Parametri Quando importate un’immagine, i parametri vengono precompilati con le informazioni dell’immagine. Se non vi sono contenuti modificabili dinamicamente, questa finestra è vuota.
+**Pannello** Parametri: quando importate un’immagine, i parametri vengono precompilati con le informazioni dell’immagine. Se non vi sono contenuti modificabili dinamicamente, questa finestra è vuota.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -287,7 +287,7 @@ Il testo nell’immagine cambia. Per ripristinare il testo al valore originale, 
 
 #### Modifica del testo in base a un valore personalizzato ClientContext {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, click **Select** to open the client-context menu, select the client context, and click **OK**. In questo esempio, il nome cambia perché è collegato al nome formattato nel profilo.
+Per collegare un campo a un valore di contesto client, fare clic su **Seleziona** per aprire il menu di scelta rapida del client, selezionare il contesto client e fare clic su **OK**. In questo esempio, il nome cambia perché è collegato al nome formattato nel profilo.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -300,25 +300,25 @@ Il testo si aggiorna con il nome dell’utente attualmente connesso. Per riprist
 Per fare in modo che il componente Modello immagini di Scene7 diventi un collegamento cliccabile:
 
 1. Nella pagina contenente il componente Modello immagini di Scene7, fai clic su **Modifica**.
-1. Nel campo **URL**, immetti l’URL a cui gli utenti verranno indirizzati quando fanno clic sull’immagine. In the **Open in** field, select whether you want the target to open (a new window or same window).
+1. Nel campo **URL**, immetti l’URL a cui gli utenti verranno indirizzati quando fanno clic sull’immagine. Nel campo **Apri in**, selezionare se si desidera aprire la destinazione (una nuova finestra o una stessa finestra).
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
 1. Fai clic su **OK**.
 
-### Componente video {#video-component}
+### Componente video  {#video-component}
 
-The Scene7 **Video** component (available from the Scene7 section of the sidekick) uses device and bandwidth detection to serve the right video to each screen. Questo componente è un lettore video HTML5; è un singolo visualizzatore che può essere usato su più canali.
+Il componente Scene7 **Video** (disponibile dalla sezione Scene7 della barra laterale) utilizza il rilevamento del dispositivo e della larghezza di banda per trasmettere il video corretto a ogni schermo. Questo componente è un lettore video HTML5; è un singolo visualizzatore che può essere usato su più canali.
 
 Può essere usato per set video adattivi, un singolo video MP4 o un singolo video F4V.
 
-Per ulteriori informazioni sul funzionamento dei video con l’integrazione Scene7, consulta [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md). In addition, see how [the **Scene7 video** component compares to the foundation **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
+Per ulteriori informazioni sul funzionamento dei video con l’integrazione Scene7, consulta [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md). Inoltre, vedere come [il componente **Scene7 video** viene confrontato con il componente **video** di base](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ### Limitazioni note per il componente video {#known-limitations-for-the-video-component}
 
-Adobe DAM e WCM mostrano se un video sorgente principale viene caricato. Non mostrano queste risorse proxy:
+ Adobe DAM e WCM mostra se viene caricato un video sorgente principale. Non mostrano queste risorse proxy:
 
 * Rappresentazioni codificate di Scene7
 * Set di video adattivo di Scene7
@@ -327,7 +327,7 @@ Quando si utilizza un set di video adattivo con il componente video di Scene7, i
 
 ## Browser dei contenuti di Scene7 {#scene-content-browser}
 
-Il browser dei contenuti di Scene7 consente di visualizzarli direttamente in AEM. To access the content browser, in the Content Finder, select **Scene7** in the touch-optimized user interface or the **S7** icon in the classic user interface. La funzionalità è identica nelle due interfacce utente.
+Il browser dei contenuti di Scene7 consente di visualizzarli direttamente in AEM. Per accedere al browser dei contenuti, in Content Finder, selezionate **Scene7** nell&#39;interfaccia utente ottimizzata per il tocco o l&#39;icona **S7** nell&#39;interfaccia utente classica. La funzionalità è identica nelle due interfacce utente.
 
 Se si dispone di più configurazioni, per impostazione predefinita AEM visualizza la [configurazione predefinita](/help/sites-administering/scene7.md#configuring-a-default-configuration). È possibile selezionare diverse configurazioni direttamente nel browser dei contenuti di Scene7 nel menu a discesa.
 
@@ -335,7 +335,7 @@ Se si dispone di più configurazioni, per impostazione predefinita AEM visualizz
 >
 >* Le risorse presenti nella cartella ad-hoc non verranno visualizzate nel browser dei contenuti di Scene7.
 >* Quando l’[anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser dei contenuti di Scene7 vengono visualizzate le risorse pubblicate e non pubblicate in Scene7.
->* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+>* Se non visualizzate l&#39;icona **Scene7** o **S7** come opzione nel browser del contenuto, è necessario [configurare Scene7 in modo che funzioni con AEM](/help/sites-administering/scene7.md).
 >* Per i video, il browser dei contenuti di Scene7 supporta:
    >   * Set di video adattivo: contenitore di tutte le rappresentazioni video necessarie per consentirne la riproduzione su diversi tipi di schermi
    >   * Video MP4 singolo
@@ -374,11 +374,11 @@ Per visualizzare e cercare le risorse è possibile utilizzare l’interfaccia to
 
 Durante la ricerca in una qualsiasi delle interfacce utente, è possibile filtrare in base ai seguenti criteri (mostrati qui nell’interfaccia touch):
 
-**Inserite le parole chiave** Potete cercare le risorse per nome. Durante la ricerca, immetti le parole chiave con cui inizia il nome del file. Ad esempio, se digiti la parola “nuoto” verranno cercati i nomi dei file delle risorse che iniziano con queste lettere, in questo ordine. Assicurati di fare clic su Invia dopo aver digitato il termine per trovare la risorsa.
+**Inserite** le parole chiave: potete cercare le risorse per nome. Durante la ricerca, immetti le parole chiave con cui inizia il nome del file. Ad esempio, se digiti la parola “nuoto” verranno cercati i nomi dei file delle risorse che iniziano con queste lettere, in questo ordine. Assicurati di fare clic su Invia dopo aver digitato il termine per trovare la risorsa.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-**Cartella/percorso** Il nome della cartella visualizzata si basa sulla configurazione selezionata. Per passare alle cartelle di livello inferiore, fai clic sull’icona della cartella e seleziona una sottocartella, quindi fai clic sul segno di spunta per selezionarla.
+**Cartella/** percorsoIl nome della cartella visualizzata si basa sulla configurazione selezionata. Per passare alle cartelle di livello inferiore, fai clic sull’icona della cartella e seleziona una sottocartella, quindi fai clic sul segno di spunta per selezionarla.
 
 Se si immette una parola chiave e si seleziona una cartella, AEM esegue la ricerca in tale cartella e in tutte le relative sottocartelle. Tuttavia, se non si immettono parole chiave durante la ricerca, la selezione della cartella mostrerà solo le risorse in quella cartella, senza includere le sottocartelle.
 
@@ -386,15 +386,15 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
-**Tipo di risorsa** Selezionate Scene7 per sfogliare i contenuti di Scene7. Questa opzione è disponibile solo se Scene7 è stato configurato.
+**Tipo di** risorsa: selezionate Scene7 per sfogliare il contenuto Scene7. Questa opzione è disponibile solo se Scene7 è stato configurato.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configurazione** Se avete definito più di una configurazione Scene7 in Servizi cloud, selezionatela qui. Di conseguenza, la cartella cambierà in base alla configurazione scelta.
+**** Configurazione: se hai più di una configurazione Scene7 definita in Cloud Services, puoi selezionarla qui. Di conseguenza, la cartella cambierà in base alla configurazione scelta.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Tipo** di risorsa Nel browser di Scene7, potete filtrare i risultati in modo da includere i seguenti elementi: immagini, modelli, video e set video adattivi. Se non si seleziona alcun tipo di risorsa, per impostazione predefinita AEM ricerca tutti i tipi di risorsa.
+**Tipo** di risorsaNel browser Scene7 potete filtrare i risultati in modo da includere i seguenti elementi: immagini, modelli, video e set video adattivi. Se non si seleziona alcun tipo di risorsa, per impostazione predefinita AEM ricerca tutti i tipi di risorsa.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -408,6 +408,6 @@ Per impostazione predefinita, AEM cerca nella cartella selezionata e in tutte le
 
 
 
-**Stato** pubblicazione Potete filtrare le risorse in base allo stato di pubblicazione: Non pubblicato o pubblicato. Se non si seleziona nessuno stato di pubblicazione, AEM ricerca per impostazione predefinita tutti gli stati di pubblicazione.
+**Pubblica** statoPotete filtrare le risorse in base allo stato di pubblicazione: Non pubblicato o pubblicato. Se non si seleziona nessuno stato di pubblicazione, AEM ricerca per impostazione predefinita tutti gli stati di pubblicazione.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
