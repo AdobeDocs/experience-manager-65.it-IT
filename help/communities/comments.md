@@ -27,8 +27,8 @@ La funzione commenti consente ai visitatori del sito che hanno effettuato l’ac
 
 Il documento descrive:
 
-* Aggiunta `Comments` a una pagina.
-* Impostazioni di configurazione per il `Comments` componente.
+* Aggiunta di `Comments` a una pagina.
+* Impostazioni di configurazione per il componente `Comments`.
 
 >[!NOTE]
 >
@@ -36,25 +36,25 @@ Il documento descrive:
 
 ### Aggiunta di commenti a una pagina {#adding-comments-to-a-page}
 
-Per aggiungere un `Comments` componente a una pagina in modalità di creazione, usate il browser dei componenti per individuare
+Per aggiungere un componente `Comments` a una pagina in modalità di creazione, usate il browser componenti per individuare
 
 * `Communities / Comments`
 
 trascinatelo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione in cui gli utenti possono inserire commenti oppure semplicemente nella parte inferiore della pagina.
 
-Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/essentials-comments.md#essentials-for-client-side) richieste, viene visualizzato così il `Comments` componente.
+Quando vengono incluse le [librerie lato client ](/help/communities/essentials-comments.md#essentials-for-client-side), viene visualizzato il componente `Comments`.
 
 ![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
->Su una pagina può esistere un solo `Comments` componente. Alcune funzioni di Communities includono già commenti, ad esempio blog, calendario, forum, QnA e recensioni.
+>Su una pagina può esistere un solo componente `Comments`. Alcune funzioni di Communities includono già commenti, ad esempio blog, calendario, forum, QnA e recensioni.
 
 ### Configurazione dei commenti {#configuring-comments}
 
-Selezionate il `Comments` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Comments` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![icona di configurazione](assets/configure.png)
 
@@ -62,7 +62,7 @@ Selezionate il `Comments` componente inserito a cui accedere e selezionate l’ 
 
 #### Scheda Commenti {#comments-tab}
 
-Nella scheda **Commenti** , specificare il modo in cui i visitatori inseriscono i commenti.
+Nella scheda **Commenti**, specificare il modo in cui i visitatori inseriscono i commenti.
 
 * **Consenti risposte**
 
@@ -106,7 +106,7 @@ Nella scheda **Commenti** , specificare il modo in cui i visitatori inseriscono 
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda Moderazione **** utente, specificate le modalità di gestione dei commenti inviati. Per ulteriori informazioni, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Nella scheda **Moderazione utente**, specificare le modalità di gestione dei commenti inviati. Per ulteriori informazioni, vedere [Moderazione dei contenuti generati dall&#39;utente](/help/communities/moderate-ugc.md).
 
 * **Premoderazione**
 
@@ -142,47 +142,47 @@ Nella scheda Moderazione **** utente, specificate le modalità di gestione dei c
 
 * **Limite segnalazione**
 
-   Specificate quante volte un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **moderazione**. Il valore predefinito è 5.
+   Specificate quante volte un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla **Soglia moderazione**. Il valore predefinito è 5.
 
-#### Scheda Impostazioni ordinamento {#sort-settings-tab}
+#### Scheda Ordina impostazioni {#sort-settings-tab}
 
-Nella scheda **Impostazioni** ordinamento, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
+Nella scheda **Ordina impostazioni**, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
 
 * **Campo di ordinamento**
 
-   Per selezionare uno dei `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`.
+   Per selezionare una delle `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`, fare clic su Estrai.
 
 * **Ordinamento**
 
-   Per selezionare una delle `Ascending` opzioni o `Descending`, trascinate verso il basso.
+   Premere il tasto freccia giù per selezionare una delle `Ascending` o `Descending`.
 
 ### Passaggio a un tipo di commento personalizzato {#changing-to-a-custom-comment-type}
 
 Modificando il Tipo risorsa commento, il sistema di commenti non genera più un&#39;istanza di commento utilizzando l&#39;impostazione predefinita, ma piuttosto un&#39;istanza che è stata personalizzata (estesa) dagli sviluppatori.
 
-Una volta noti i tipi di risorse personalizzati, immettete la modalità [](/help/sites-authoring/default-components-designmode.md) Progettazione e fate doppio clic sul `Comments` componente inserito per aprire una finestra di dialogo con una scheda aggiuntiva.
+Una volta noti i tipi di risorse personalizzati, immettete [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) e fate doppio clic sul componente `Comments` inserito per aprire una finestra di dialogo con una scheda aggiuntiva.
 
-Nella scheda Tipi **di** risorse, specificare il resourceType personalizzato per le nuove istanze dei `Comments or Voting` componenti:
+Nella scheda **Tipi di risorse**, specificare il resourceType personalizzato per le nuove istanze dei componenti `Comments or Voting`:
 
 ![resource-type](assets/resource-type.png)
 
 * **Tipo risorsa commento**
 
-   Passa a resourceType di un `comment` componente esteso (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
+   Passa a resourceType di un componente esteso `comment` (commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
 
    Questa risorsa identifica il resourceType dell&#39;UGC creato quando un visitatore inserisce un commento.
 
 * **Tipo di risorsa per votazione**
 
-   Passa a resourceType di un `voting` componente esteso in /apps. Esempio, `/apps/social/components/hbs/voting`
+   Passa a resourceType di un componente esteso `voting` in /apps. Esempio, `/apps/social/components/hbs/voting`
 
    Questa risorsa identifica il tipo di risorsa dell&#39;UGC creato quando un visitatore pubblica un voto.
 
 * **Tipo risorsa sistema commenti**
 
-   Passa a resourceType di un `comments`componente esteso (sistema di commenti) in /apps. Lasciate vuoto, a meno che il modello di pagina includa [](/help/communities/scf.md#add-or-include-a-communities-component) dinamicamente il sistema di commenti nello script sottostante, anziché essere aggiunto alla pagina come risorsa (nodo commenti). Ulteriori informazioni leggendo l&#39;helper [](/help/communities/handlebars-helpers.md#include){{include}}.
+   Passa a resourceType di un componente esteso `comments`(sistema di commenti) in /apps. Lasciate vuoto, a meno che il modello di pagina [includa dinamicamente](/help/communities/scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante anziché essere aggiunto alla pagina come risorsa (nodo di commenti). Per saperne di più, leggi l&#39; [{{include}} helper](/help/communities/handlebars-helpers.md#include).
 
-### Esperienza dei visitatori del sito {#site-visitor-experience}
+### Esperienza visitatori del sito {#site-visitor-experience}
 
 #### Moderatori e amministratori {#moderators-and-administrators}
 
@@ -203,8 +203,8 @@ I visitatori del sito che non hanno effettuato l&#39;accesso possono solo legger
 
 ### Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [Comments Essentials](/help/communities/essentials-comments.md) per gli sviluppatori.
+Ulteriori informazioni sono disponibili sulla pagina [Comments Essentials](/help/communities/essentials-comments.md) per gli sviluppatori.
 
-Per la moderazione dei commenti pubblicati, vedere [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Per la moderazione dei commenti inviati, vedere [Contenuto generato dall&#39;utente moderatore](/help/communities/moderate-ugc.md).
 
-Per la traduzione dei commenti postati, vedere [Traduzione del contenuto](/help/communities/translate-ugc.md)generato dall&#39;utente.
+Per la traduzione dei commenti inviati, vedere [Traduzione di contenuti generati dall&#39;utente](/help/communities/translate-ugc.md).
