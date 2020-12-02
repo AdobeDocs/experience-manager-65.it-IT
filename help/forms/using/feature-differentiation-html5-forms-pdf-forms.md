@@ -1,8 +1,8 @@
 ---
-title: Differenza tra le funzioni dei moduli HTML5 e dei moduli PDF
-seo-title: Differenza tra le funzioni dei moduli HTML5 e dei moduli PDF
-description: Funzionalità supportate nei moduli HTML5 e PDF
-seo-description: Funzionalità supportate nei moduli HTML5 e PDF
+title: Differenza delle funzioni tra moduli HTML5 e PDF forms
+seo-title: Differenza delle funzioni tra moduli HTML5 e PDF forms
+description: Funzionalità supportata nei moduli e PDF forms HTML5
+seo-description: Funzionalità supportata nei moduli e PDF forms HTML5
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -12,18 +12,21 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 3%
 
 ---
 
 
-# Differenza tra le funzioni dei moduli HTML5 e dei moduli PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Differenza delle funzioni tra moduli HTML5 e PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-La tabella seguente specifica la funzione di supporto fornita per i moduli HTML5 e PDF:
+La tabella seguente specifica il supporto delle funzioni fornito per moduli e PDF forms HTML5:
 
 <table>
  <tbody>
   <tr>
-   <th>Funzione</th>
+   <th>Funzione obsoleta</th>
    <th>Moduli HTML5</th>
    <th>PDF</th>
   </tr>
@@ -34,8 +37,8 @@ La tabella seguente specifica la funzione di supporto fornita per i moduli HTML5
   </tr>
   <tr>
    <td>Campo firma<br /> </td>
-   <td><strong>Le firme</strong> digitali non sono supportate, ma è stato aggiunto un nuovo campo <strong>Firma</strong> scarabocchio per le firme cartacee. È possibile creare uno script per la firma sul modulo utilizzando il campo <strong>Firma</strong> scarabocchio. La firma viene salvata nel modulo come immagine. È possibile salvare le informazioni sulla geolocalizzazione nel campo <strong>Firma</strong> scarabocchio.</td>
-   <td>Campo firma disponibile per <strong>Digital Signatures</strong>.</td>
+   <td><strong>Le </strong> firme digitali non sono supportate, ma è stato aggiunto un nuovo  <strong>campo </strong> firma Scribble per le firme cartacee. È possibile inserire la firma nel modulo utilizzando il campo <strong>Firma scarabocchio</strong>. La firma viene salvata nel modulo come immagine. È possibile salvare le informazioni sulla geolocalizzazione nel campo <strong>Firma scarabocchio</strong>.</td>
+   <td>Campo firma disponibile per <strong>Firme digitali</strong>.</td>
   </tr>
   <tr>
    <td>Unione dati</td>
@@ -49,12 +52,12 @@ La tabella seguente specifica la funzione di supporto fornita per i moduli HTML5
   </tr>
   <tr>
    <td>Paginazione<br /> </td>
-   <td><p>Un modulo HTML5 è suddiviso in pannelli e caselle per conferirgli un aspetto simile ai moduli PDF. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta e non viene visualizzato uno spazio vuoto (spazio vuoto) tra le pagine sopra e sotto la pagina vuota.</p> <p>Se l'unione dei dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Al modulo non vengono aggiunte nuove pagine per contenere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> Quando tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre.</p> </td>
+   <td><p>Un modulo HTML5 è suddiviso in pannelli e caselle per conferirgli un aspetto simile ai PDF forms. Le dimensioni della pagina vengono calcolate in modo dinamico. Se tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota viene nascosta e non viene visualizzato uno spazio vuoto (spazio vuoto) tra le pagine sopra e sotto la pagina vuota.</p> <p>Se l'unione dei dati o gli script aggiungono contenuto a una pagina, la lunghezza della pagina si espande per adattarsi al contenuto appena aggiunto. Al modulo non vengono aggiunte nuove pagine per contenere il contenuto appena aggiunto. </p> <p><strong>Nota:</strong> quando tutti i contenuti di una pagina in un modulo HTML5 vengono eliminati o contrassegnati come nascosti, la pagina vuota (spazio vuoto) rimane visibile tra la prima e la seconda pagina, ma non tra le altre.</p> </td>
    <td>L'impaginazione in PDF dipende dal contenuto dei dati unito o contenuto utente e il conteggio delle pagine viene aumentato o ridotto in base a tale contenuto.</td>
   </tr>
   <tr>
    <td>Intestazioni/Piè di pagina </td>
-   <td>Supportato. <br /> <br /> Poiché i moduli mobili HTML5 non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati solo una volta. Tuttavia, è possibile impostarle nel layout in modo che vengano visualizzate in più posizioni nell'anteprima dei moduli per dispositivi mobili.<br /> </td>
+   <td>Supportato. <br /> <br /> Poiché i moduli mobili HTML5 non supportano le interruzioni di pagina, le intestazioni e i piè di pagina vengono visualizzati solo una volta. Tuttavia, è possibile impostarle nel layout in modo che vengano visualizzate in più posizioni nell'anteprima dei moduli mobili.<br /> </td>
    <td>Supportato.</td>
   </tr>
   <tr>
@@ -64,13 +67,13 @@ La tabella seguente specifica la funzione di supporto fornita per i moduli HTML5
   </tr>
   <tr>
    <td>API script XFA</td>
-   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati, vedere <a href="/help/forms/using/scripting-support.md">Supporto</a>script.</td>
+   <td>Supporta i costrutti di script XFA più comunemente utilizzati. Per un elenco dettagliato dei costrutti supportati, vedere <a href="/help/forms/using/scripting-support.md">supporto degli script</a>.</td>
    <td>Supporta tutti i costrutti di script XFA.</td>
   </tr>
   <tr>
-   <td>API di Acrobat Script </td>
-   <td>I moduli HTML5 supportano le API più utilizzate. Per informazioni dettagliate, vedere <a href="/help/forms/using/scripting-support.md">Supporto</a>per gli script.</td>
-   <td>Se il file PDF viene aperto in Acrobat o Reader, supporta anche tutte le API di script fornite da Acrobat.</td>
+   <td> API di Acrobat Script </td>
+   <td>I moduli HTML5 supportano le API più utilizzate. Per informazioni dettagliate, vedere <a href="/help/forms/using/scripting-support.md">supporto degli script</a>.</td>
+   <td>Se il file PDF viene aperto in  Acrobat o Reader, supporta anche tutte le API di script  Acrobat.</td>
   </tr>
   <tr>
    <td>Supporto delle lingue da destra a sinistra </td>
