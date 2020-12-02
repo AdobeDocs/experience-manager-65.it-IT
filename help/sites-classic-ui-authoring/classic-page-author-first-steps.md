@@ -44,7 +44,7 @@ Prima di iniziare le attività di modifica, devi [creare una nuova pagina](/help
 
 Per molte azioni, come la modifica, è necessario [aprire una pagina](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
-### Modifica di una pagina {#editing-a-page}
+### Modifica di una pagina  {#editing-a-page}
 
 Se l’istanza in uso include già una o più pagine, oppure hai appena creato una nuova pagina, puoi [modificare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) effettuando le operazioni seguenti:
 
@@ -58,11 +58,11 @@ Se l’istanza in uso include già una o più pagine, oppure hai appena creato u
 * [Blocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Sblocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### Pubblicazione di una pagina {#publishing-a-page}
+### Pubblicazione di una pagina  {#publishing-a-page}
 
 Terminata la modifica della pagina, devi [pubblicarla (o attivarla)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) in modo da renderla accessibile ai visitatori del sito web.
 
-## Azioni aggiuntive {#further-actions}
+## Azioni aggiuntive  {#further-actions}
 
 Oltre ai passaggi di base, durante l’authoring sono disponibili molte altre azioni.
 
@@ -74,7 +74,7 @@ A volte è più facile [copiare una pagina](/help/sites-classic-ui-authoring/cla
 
 Per [spostare e rinominare le pagine](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page) si esegue praticamente la stessa azione.
 
-### Annullamento della pubblicazione di una pagina {#unpublishing-a-page}
+### Annullamento della pubblicazione di una pagina  {#unpublishing-a-page}
 
 Per rendere inaccessibile contenuti pubblicati (o attivati) in precedenza nel sito Web pubblico, devi [annullare la pubblicazione della pagina, ossia disattivarla](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
@@ -82,14 +82,14 @@ Per rendere inaccessibile contenuti pubblicati (o attivati) in precedenza nel si
 
 Se una pagina non è più necessaria, è consigliabile [eliminarla](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#deleting-a-page).
 
-### Impostazione delle proprietà pagina {#setting-the-page-properties}
+### Impostazione delle proprietà pagina  {#setting-the-page-properties}
 
 Ogni [pagina dispone di proprietà](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) che possono essere definite per controllare alcuni aspetti del suo funzionamento
 
-### Creazione di una versione di una pagina {#creating-a-version-of-a-page}
+### Creazione di una versione di una pagina  {#creating-a-version-of-a-page}
 
 È possibile [creare una versione di una pagina](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) e in seguito, se necessario, [ripristinare una versione precedente](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
-## Ulteriori informazioni {#more-information}
+## Ulteriori informazioni  {#more-information}
 
 Per accedere a ulteriori informazioni sull’authoring, consulta [Authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author.md) e [Utilizzo dell’ambiente di authoring](/help/sites-classic-ui-authoring/author-env.md).
