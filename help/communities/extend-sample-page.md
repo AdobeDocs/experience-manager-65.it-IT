@@ -19,27 +19,27 @@ ht-degree: 1%
 ---
 
 
-# Aggiungi commento a pagina di esempio  {#add-comment-to-sample-page}
+# Aggiungi commento a pagina di esempio {#add-comment-to-sample-page}
 
 Ora che i componenti per il sistema di commenti personalizzato sono presenti nella directory dell&#39;applicazione (/apps), è possibile utilizzare il componente esteso. L’istanza del sistema di commenti in un sito Web da modificare deve impostare resourceType come sistema di commenti personalizzato e includere tutte le librerie client necessarie.
 
-## Identifica ClientLibs Richiesti {#identify-required-clientlibs}
+## Identificare Clientlibs richiesti {#identify-required-clientlibs}
 
 Le librerie client necessarie per lo stile e il funzionamento dei commenti predefiniti sono necessarie anche per i commenti estesi.
 
-La Guida ai componenti [della](/help/communities/components-guide.md) community identifica le librerie client richieste. Passare alla Guida ai componenti e visualizzare il componente Commenti, ad esempio:
+La [Guida ai componenti della community](/help/communities/components-guide.md) identifica le librerie client richieste. Passare alla Guida ai componenti e visualizzare il componente Commenti, ad esempio:
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-Tenere presenti le tre librerie client necessarie affinché Commenti possa eseguire correttamente il rendering e il funzionamento. Devono essere inclusi dove si fa riferimento ai commenti estesi e nella libreria [client dei commenti](/help/communities/extend-create-components.md#create-a-client-library-folder) estesi ( `apps.custom.comments`).
+Tenere presenti le tre librerie client necessarie affinché Commenti possa eseguire correttamente il rendering e il funzionamento. Questi dovranno essere inclusi nel punto in cui viene fatto riferimento ai commenti estesi e nella libreria client [Extended Comments&#39;](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-### Aggiunta di commenti personalizzati a una pagina {#add-custom-comments-to-a-page}
+### Aggiungi commenti personalizzati a una pagina {#add-custom-comments-to-a-page}
 
-Poiché per ogni pagina può essere presente un solo sistema di commenti, è più semplice creare una pagina di esempio come descritto nella breve esercitazione [Crea una pagina](/help/communities/create-sample-page.md) di esempio.
+Poiché per ogni pagina può essere presente un solo sistema di commenti, è più semplice creare una pagina di esempio come descritto nella breve [Creazione di una pagina di esempio](/help/communities/create-sample-page.md) esercitazione.
 
-Una volta creato, entrate in modalità Progettazione e rendete disponibile il gruppo di componenti Personalizzato per consentire l’aggiunta del `Alt Comments` componente alla pagina.
+Una volta creato, entrate in modalità Progettazione e rendete disponibile il gruppo di componenti Personalizzato per consentire l&#39;aggiunta del componente `Alt Comments` alla pagina.
 
 Affinché il commento venga visualizzato e funzioni correttamente, è necessario aggiungere le librerie client per i commenti all&#39;elenco clientlibslist della pagina (vedere [Clientlibs for Communities Components](/help/communities/clientlibs.md)).
 
@@ -59,11 +59,11 @@ Affinché il commento venga visualizzato e funzioni correttamente, è necessario
 
 #### Pubblica pagina di esempio {#publish-sample-page}
 
-Dopo che il componente personalizzato è stato aggiunto alla pagina, è necessario anche (ri) [pubblicare la pagina](/help/communities/sites-console.md#publishing-the-site).
+Dopo che il componente personalizzato è stato aggiunto alla pagina, è inoltre necessario (ri) [pubblicare la pagina](/help/communities/sites-console.md#publishing-the-site).
 
 #### Pubblica: Commento Alt sulla pagina di esempio {#publish-alt-comment-on-sample-page}
 
-Dopo aver pubblicato l&#39;applicazione personalizzata e la pagina di esempio, è possibile inserire un commento. Una volta effettuato l’accesso, con un utente [](/help/communities/tutorials.md#demo-users) dimostrativo o un amministratore, è possibile pubblicare un commento.
+Dopo aver pubblicato l&#39;applicazione personalizzata e la pagina di esempio, è possibile inserire un commento. Quando si effettua l&#39;accesso, con un utente [demo](/help/communities/tutorials.md#demo-users) o un amministratore, è possibile pubblicare un commento.
 
 Di seguito è riportato aaron.mcdonald@mailinator.com di un commento:
 
