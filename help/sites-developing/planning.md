@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 0%
 
 ---
 
@@ -27,25 +30,25 @@ In questo documento viene descritto ciò che è necessario sapere per pianificar
 
 Prima di iniziare con l’analisi e la definizione effettive dei test, controllate le informazioni seguenti:
 
-**Architettura** AEM - Consulta Concetti di base per scoprire l’architettura e i principi di base di AEM.
+**AEM Architettura** - Vedere Concetti di base per presentarsi all&#39;architettura e ai principi di base di AEM.
 
-**Documentazione** - Per ulteriori informazioni, vedere le sezioni della documentazione o gli articoli How To.
+**Documentazione**  - Per ulteriori informazioni, vedere le sezioni della documentazione o gli articoli How To.
 
 **Principi di base dei test** - È necessario essere consapevoli dei principi di base dei test software e della garanzia della qualità. Preferibilmente dovreste avere esperienza nel testing di progetti.
 
 Ci sono molti siti web, libri e corsi che si occupano di tali principi e quindi non saranno trattati nei dettagli in questo documento.
 
-**Ipotesi da evitare** - Il più grande presupposto (fatto regolarmente) è che il vostro sito web avrà bisogno di servire milioni di richieste ogni giorno. In alcune circostanze ciò può essere vero, ma non si può presupporre.
+**Ipotesi da evitare**  - Il più grande presupposto (fatto regolarmente) è che il tuo sito web avrà bisogno di servire milioni di richieste ogni giorno. In alcune circostanze ciò può essere vero, ma non si può presupporre.
 
-Anche se i numeri futuri non possono essere previsti con una precisione del 100%, osservare il sito esistente e il traffico registrato darà una buona indicazione. È quindi possibile fare delle stime in base al fattore in base al quale si prevede / si spera che il traffico aumenterà.
+Anche se i numeri futuri non possono essere previsti con una precisione del 100%, osservare il sito esistente e il traffico sperimentato darà una buona indicazione. È quindi possibile fare delle stime in base al fattore in base al quale si prevede / si spera che il traffico aumenterà.
 
-**Impegno per la Qualità** - È di fondamentale importanza che chiunque effettui test rimanga neutrale e riferisca semplicemente i risultati dei test effettuati.
+**Impegno per la Qualità**  - È di fondamentale importanza che chiunque effettui test rimanga neutrale e riferisca semplicemente i risultati dei test effettuati.
 
 È responsabilità del Project Manager decidere e avviare azioni in base ai risultati.
 
-**Diventa Coinvolto** - Anche se è responsabilità del Project Manager garantire che tutte le parti siano pienamente coinvolte in qualsiasi riunione (stato, workshop, ecc.), è necessario anche cercare di essere coinvolti il prima possibile nel ciclo di progetto, inclusi i processi di raccolta delle informazioni e analisi dei requisiti.
+**Diventa Coinvolto**  - Anche se è responsabilità del Project Manager garantire che tutte le parti siano pienamente coinvolte a qualsiasi riunione (stato, workshop, ecc.), è necessario anche cercare di essere coinvolti il prima possibile nel ciclo di progetto, compresi i processi di raccolta delle informazioni e analisi dei requisiti.
 
-**Coinvolgi il cliente** - Su un tema simile, cerca di coinvolgere il cliente (ove possibile) nella definizione dei test case e del piano.
+**Coinvolgi il cliente** - Su un tema simile, cerca di coinvolgere il cliente (ove possibile) nella definizione dei casi di test e del piano.
 
 ## Tipi di test {#types-of-tests}
 
@@ -55,21 +58,21 @@ Esistono diverse classificazioni standard di test che possono essere utilizzate 
 >
 >Questi sono elencati nel loro ordine cronologico di applicazione.
 
-**Prove** di unità - Test (solitamente) effettuati dal team di sviluppo per garantire che i singoli elementi funzionino correttamente, anche se in modo isolato.
+**Prove**  di unità - Test (solitamente) effettuati dal team di sviluppo per garantire che i singoli elementi funzionino correttamente, anche se in modo isolato.
 
-**Prove** di integrazione - Prove dei moduli se combinati. Questi test vengono eseguiti dopo il testing di unità, ma prima del test di sistema.
+**Prove**  di integrazione - Moduli di test se combinati. Questi test vengono eseguiti dopo il testing di unità, ma prima del test di sistema.
 
-**Prove** sul fumo: questi sono test veloci e sporchi utilizzati per dimostrare che il software è in esecuzione e che le funzionalità di alto livello sono disponibili. I dettagli non vengono testati.
+**Test**  di fumo - Questi sono test veloci e sporchi utilizzati per dimostrare che il software è in esecuzione e le funzionalità di alto livello sono disponibili. I dettagli non vengono testati.
 
-**Test** funzionali - Utilizzati per testare la funzionalità del software. Una serie di test sarà progettata per coprire tutti i dettagli funzionali, con input sia previsto che imprevisti e/o errati.
+**Test**  funzionali - Utilizzati per testare la funzionalità del software. Una serie di test sarà progettata per coprire tutti i dettagli funzionali, con input sia previsto che imprevisti e/o errati.
 
 Le prove in scatola nera sono prove funzionali di un&#39;unità/componente/modulo completo, eseguite senza conoscere il funzionamento interno dell&#39;elemento in questione.
 
-**Test** di sistema - Questi test testano l&#39;intero sistema una volta che è stato completamente integrato e installato su una piattaforma adeguata.
+**Test**  di sistema: questi consentono di testare l&#39;intero sistema una volta che è stato completamente integrato e installato su una piattaforma adeguata.
 
 La funzionalità viene verificata a livello di scatola nera.
 
-**Test** delle prestazioni - I test delle prestazioni sono fondamentali quando si esegue il test di AEM.
+**Test**  delle prestazioni - I test delle prestazioni sono fondamentali quando si esegue il test AEM.
 
 Sono utilizzati per illustrare le prestazioni in condizioni diverse:
 
@@ -87,37 +90,37 @@ Sono utilizzati per illustrare le prestazioni in condizioni diverse:
 
    Queste circostanze vengono a volte visualizzate quando i biglietti per eventi specifici sono disponibili, o un sito web molto atteso viene pubblicato per la prima volta.
 
-I risultati vengono quindi utilizzati per ottimizzare l’applicazione.
+I risultati vengono quindi utilizzati per sintonizzare l’applicazione.
 
-**Test** di stress - Vengono eseguiti test di stress per confermare il comportamento di un componente o di un’applicazione in condizioni estreme. In particolare, questi test vengono utilizzati per mostrare il deterioramento del comportamento, quando l&#39;elemento avrà esito negativo e come.
+**Test**  di stress - I test di stress vengono eseguiti per confermare il comportamento di un componente o di un’applicazione in condizioni estreme. In particolare, questi test vengono utilizzati per mostrare il deterioramento del comportamento, quando l&#39;elemento avrà esito negativo e come.
 
-**Prove** di regressione - I test di regressione vengono utilizzati per confermare che la funzionalità già provata in una versione precedente del software è ancora funzionante correttamente.
+**Prove**  di regressione - I test di regressione vengono utilizzati per confermare che la funzionalità già provata in una versione precedente del software è ancora in funzione correttamente.
 
 I test di regressione sono buoni candidati per l&#39;automazione (se possibile) per garantire che possano essere ripetuti rapidamente e coerentemente.
 
-**Test** di accettazione - I test di accettazione sono una categoria speciale in quanto sono utilizzati per indicare l&#39;accettazione del progetto da parte del cliente.
+**Test**  di accettazione - I test di accettazione sono una categoria speciale in quanto sono utilizzati per indicare l&#39;accettazione del progetto da parte del cliente.
 
-L&#39;elenco dei test di accettazione può contenere una combinazione di test delle diverse categorie sopra elencate e viene selezionato per verificare che il progetto soddisfi i requisiti del cliente
+L&#39;elenco dei test di accettazione può contenere una combinazione di test delle varie categorie sopra elencate e viene selezionato per verificare che il progetto soddisfi i requisiti del cliente
 
-Per ulteriori informazioni, consulta [Accettazione e disconnessione](/help/sites-developing/acceptance-signoff.md) .
+Per ulteriori informazioni, vedere [Accettazione e disconnessione](/help/sites-developing/acceptance-signoff.md).
 
-## Introduzione {#getting-started}
+## Guida introduttiva {#getting-started}
 
 Prima di iniziare il test case e il piano di test dettagliati puoi:
 
-**Definizione degli obiettivi** - Definite gli obiettivi di alto livello da utilizzare come punto di partenza per l&#39;ottimizzazione man mano che i test procedono. Si desidera:
+**Definizione degli obiettivi**  - Definite gli obiettivi di alto livello da utilizzare come punto di partenza per l&#39;ottimizzazione man mano che i test procedono. Si desidera:
 
 * Verificate la funzionalità in base alla specifica dettagliata dei requisiti.
-* Verifica le prestazioni in base alle metriche [di](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics)Target.
+* Prestazioni del test in base alle [Metriche di destinazione](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
 tra gli altri.
 
-**Raccogliere le statistiche sul traffico dal sito Web** esistente - Queste informazioni possono essere estratte dai file di registro - vedere Monitoraggio delle prestazioni per ulteriori dettagli.
+**Raccogliere le statistiche sul traffico dal sito Web**  esistente - Queste informazioni possono essere estratte dai file di registro - vedere Monitoraggio delle prestazioni per ulteriori dettagli.
 
 Queste cifre indicheranno il traffico corrente (volume e diffusione) sul sito Web esistente e potranno essere utilizzate per costituire un punto di base per il nuovo sito.
 
-**Raccolta di statistiche sul traffico da siti** esterni - Se possibile è possibile cercare di raccogliere statistiche sul traffico da altri siti Web per il confronto, ma queste cifre non vengono sempre pubblicate.
+**Raccolta di statistiche sul traffico da siti**  esterni - Se possibile è possibile cercare di raccogliere statistiche sul traffico da altri siti Web per il confronto, ma queste cifre non vengono sempre pubblicate.
 
-**Conferma metriche** Target - Le metriche vengono utilizzate per definire le misurazioni quantitative per la qualità del sito Web, in quanto rappresentano gli obiettivi prestazionali da raggiungere.
+**Conferma metriche**  Target: le metriche vengono utilizzate per definire le misurazioni quantitative per la qualità del sito Web, in quanto rappresentano gli obiettivi prestazionali da raggiungere.
 
-Devono essere definiti all&#39;inizio del progetto insieme al cliente. Per ulteriori informazioni, vedi Metriche [di](/help/sites-developing/planning.md) Target.
+Devono essere definiti all&#39;inizio del progetto insieme al cliente. Per ulteriori informazioni, vedere [Metriche di destinazione](/help/sites-developing/planning.md).
