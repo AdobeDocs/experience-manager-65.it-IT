@@ -36,7 +36,7 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.Voto<br /> cq.social.hbs.forum</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.registration<br /> cq.social.hbs.forum</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -48,7 +48,7 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consultate Funzione <a href="forum.md">Forum</a></td>
+   <td>Vedere <a href="forum.md">Funzionalità forum</a></td>
   </tr>
  </tbody>
 </table>
@@ -65,21 +65,21 @@ Questa pagina contiene le informazioni essenziali per l’utilizzo della funzion
 
 ### Funzione Forum {#forum-function}
 
-Una struttura del sito della community che include la funzione [](functions.md#forum-function)Forum, include un `forum` componente configurato, oltre alle impostazioni relative a moderazione, tag e traduzione.
+Una struttura del sito della community che include la funzione [Forum](functions.md#forum-function), include un componente `forum` configurato, oltre alle impostazioni relative a moderazione, tag e traduzione.
 
-### Accesso ai post dei forum (UGC) {#accessing-forum-posts-ugc}
+### Accesso ai post del forum (UGC) {#accessing-forum-posts-ugc}
 
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
+Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
-* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Panoramica](srp.md)  del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con linee guida SRP](accessing-ugc-with-srp.md) - Codifica.
+* [Refactoring](socialutils.md)  SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
