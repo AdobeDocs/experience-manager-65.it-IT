@@ -49,7 +49,7 @@ La barra degli strumenti di ContextHub è disponibile nella modalità di antepri
 
 Ogni modulo di interfaccia utente fornisce un diverso insieme di funzioni, ma i seguenti tipi di funzioni sono comuni. Poiché i moduli di interfaccia utente sono estensibili, lo sviluppatore può implementare altre funzioni, a seconda delle necessità.
 
-### Contenuto della barra degli strumenti {#toolbar-content}
+### Contenuto della barra degli strumenti  {#toolbar-content}
 
 I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli dell’interfaccia utente utilizzano un’icona e un titolo per identificarsi.
 
@@ -65,7 +65,7 @@ Alcuni moduli di interfaccia utente visualizzano una finestra a comparsa quando 
 
 La finestra a comparsa di un modulo può includere elementi modulo che ti consentono di modificare i dati nell’archivio di ContextHub. Se il contenuto della pagina viene determinato dai dati archiviati, puoi utilizzare il modulo e visualizzare le modifiche apportate al contenuto della pagina.
 
-### Modalità a schermo intero {#fullscreen-mode}
+### Modalità a schermo intero  {#fullscreen-mode}
 
 Le finestre a comparsa possono includere un’icona su cui fare clic o toccare per espandere il contenuto a comparsa fino a coprire l’intera finestra del browser o schermata.
 
