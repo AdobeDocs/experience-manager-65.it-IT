@@ -21,16 +21,16 @@ ht-degree: 0%
 
 # Calcolo dei dati del modulo {#calculating-form-data}
 
-Il servizio Forms consente di calcolare i valori immessi dall&#39;utente in un modulo e di visualizzare i risultati. Per calcolare i dati del modulo, è necessario eseguire due operazioni. Innanzitutto, si crea uno script della struttura del modulo che calcola i dati del modulo. Una struttura del modulo supporta tre tipi di script. Un tipo di script viene eseguito sul client, un altro sul server e il terzo tipo viene eseguito sia sul server che sul client. Il tipo di script descritto in questo argomento viene eseguito sul server. I calcoli sul lato server sono supportati per le trasformazioni HTML, PDF e della guida ai moduli (obsoleto).
+Il servizio Forms può calcolare i valori immessi dall&#39;utente in un modulo e visualizzare i risultati. Per calcolare i dati del modulo, è necessario eseguire due operazioni. Innanzitutto, si crea uno script della struttura del modulo che calcola i dati del modulo. Una struttura del modulo supporta tre tipi di script. Un tipo di script viene eseguito sul client, un altro sul server e il terzo tipo viene eseguito sia sul server che sul client. Il tipo di script descritto in questo argomento viene eseguito sul server. I calcoli sul lato server sono supportati per le trasformazioni HTML, PDF e della guida ai moduli (obsoleto).
 
 Durante il processo di progettazione del modulo è possibile utilizzare calcoli e script per migliorare l&#39;esperienza dell&#39;utente. I calcoli e gli script possono essere aggiunti alla maggior parte dei campi e degli oggetti modulo. È necessario creare uno script della struttura del modulo per eseguire operazioni di calcolo sui dati immessi dall&#39;utente in un modulo interattivo.
 
 L&#39;utente immette dei valori nel modulo e fa clic sul pulsante Calcola per visualizzare i risultati. Il seguente processo descrive un&#39;applicazione di esempio che consente a un utente di calcolare i dati:
 
 * L&#39;utente accede a una pagina HTML denominata StartLoan.html che funge da pagina iniziale dell&#39;applicazione Web. Questa pagina richiama un servlet Java denominato `GetLoanForm`.
-* Il `GetLoanForm` servlet esegue il rendering di un modulo di prestito. Questo modulo contiene uno script, campi interattivi, un pulsante di calcolo e un pulsante di invio.
-* L&#39;utente immette valori nei campi del modulo e fa clic sul pulsante Calcola. Il modulo viene inviato al Servlet `CalculateData` Java in cui viene eseguito lo script. Il modulo viene inviato all&#39;utente con i risultati di calcolo visualizzati nel modulo.
-* L&#39;utente continua a immettere e calcolare i valori finché non viene visualizzato un risultato soddisfacente. Una volta soddisfatto, l&#39;utente fa clic sul pulsante Invia per elaborare il modulo. Il modulo viene inviato a un altro servlet Java denominato `ProcessForm` responsabile del recupero dei dati inviati. (Vedere [Gestione Dei Moduli](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Inviati.)
+* Il servlet `GetLoanForm` esegue il rendering di un modulo di prestito. Questo modulo contiene uno script, campi interattivi, un pulsante di calcolo e un pulsante di invio.
+* L&#39;utente immette valori nei campi del modulo e fa clic sul pulsante Calcola. Il modulo viene inviato al servlet Java `CalculateData` in cui viene eseguito lo script. Il modulo viene inviato all&#39;utente con i risultati di calcolo visualizzati nel modulo.
+* L&#39;utente continua a immettere e calcolare i valori finché non viene visualizzato un risultato soddisfacente. Una volta soddisfatto, l&#39;utente fa clic sul pulsante Invia per elaborare il modulo. Il modulo viene inviato a un altro Servlet Java denominato `ProcessForm` responsabile del recupero dei dati inviati. (Vedere [Gestione di Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms) inviato.)
 
 
 Il diagramma seguente mostra il flusso logico dell&#39;applicazione.
@@ -49,15 +49,15 @@ La tabella seguente descrive i passaggi descritti in questo diagramma.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>Il servlet <code>GetLoanForm</code> Java viene richiamato dalla pagina iniziale HTML. </p></td>
+   <td><p>Il servlet Java <code>GetLoanForm</code> viene richiamato dalla pagina iniziale HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Il servlet <code>GetLoanForm</code> Java utilizza l'API client del servizio Forms per eseguire il rendering del modulo di prestito nel browser Web del client. La differenza tra il rendering di un modulo che contiene uno script configurato per l'esecuzione sul server e il rendering di un modulo che non contiene uno script sta nel fatto che è necessario specificare il percorso di destinazione utilizzato per eseguire lo script. Se non viene specificata una posizione di destinazione, non viene eseguito uno script configurato per l'esecuzione sul server. Ad esempio, considerare l'applicazione introdotta in questa sezione. Il Servlet <code>CalculateData</code> Java è la posizione di destinazione in cui viene eseguito lo script.</p></td>
+   <td><p>Il servlet <code>GetLoanForm</code> Java utilizza l'API client del servizio Forms per eseguire il rendering del modulo di prestito nel browser Web del client. La differenza tra il rendering di un modulo che contiene uno script configurato per l'esecuzione sul server e il rendering di un modulo che non contiene uno script sta nel fatto che è necessario specificare il percorso di destinazione utilizzato per eseguire lo script. Se non viene specificata una posizione di destinazione, non viene eseguito uno script configurato per l'esecuzione sul server. Ad esempio, considerare l'applicazione introdotta in questa sezione. Il servlet Java <code>CalculateData</code> è il percorso di destinazione in cui viene eseguito lo script.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>L'utente immette i dati in campi interattivi e fa clic sul pulsante Calcola. Il modulo viene inviato al Servlet <code>CalculateData</code> Java, dove viene eseguito lo script. </p></td>
+   <td><p>L'utente immette i dati in campi interattivi e fa clic sul pulsante Calcola. Il modulo viene inviato al servlet Java <code>CalculateData</code> in cui viene eseguito lo script. </p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
@@ -76,7 +76,7 @@ Per illustrare l&#39;uso di uno script della struttura del modulo, in questa sez
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-**A.** Un campo denominato NumericField1 **B.** Campo denominato NumericField2 **C.** Campo denominato NumericField3
+**A.** Un campo denominato NumericField1  **B.** A campo denominato NumericField2  **C.** A campo denominato NumericField3
 
 La sintassi dello script in questa struttura del modulo è la seguente:
 
@@ -84,22 +84,22 @@ La sintassi dello script in questa struttura del modulo è la seguente:
      NumericField3 = NumericField2 + NumericField1
 ```
 
-In questa struttura del modulo, il pulsante Calcola è un pulsante di comando e lo script si trova nell&#39; `Click` evento del pulsante. Quando un utente immette valori nei primi due campi (NumericField1 e NumericField2) e fa clic sul pulsante Calcola, il modulo viene inviato al servizio Forms, dove viene eseguito lo script. Il servizio Forms esegue il rendering del modulo sul dispositivo client con i risultati del calcolo visualizzato nel campo NumericField3.
+In questa struttura del modulo, il pulsante Calcola è un pulsante di comando e lo script si trova nell&#39;evento `Click` del pulsante. Quando un utente immette valori nei primi due campi (NumericField1 e NumericField2) e fa clic sul pulsante Calcola, il modulo viene inviato al servizio Forms, dove viene eseguito lo script. Il servizio Forms esegue il rendering del modulo sul dispositivo client con i risultati del calcolo visualizzato nel campo NumericField3.
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di uno script per la struttura del modulo, vedere [Designer](https://www.adobe.com/go/learn_aemforms_designer_63)di moduli.
+>Per informazioni sulla creazione di uno script per la struttura del modulo, vedere [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Forms, vedere Riferimento [servizi per gli AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Forms, vedere [Guida di riferimento dei servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Riepilogo dei passaggi {#summary-of-steps}
 
 Per calcolare i dati del modulo, effettuare le seguenti operazioni:
 
 1. Includere i file di progetto.
-1. Creare un oggetto API client Forms.
+1. Creare un oggetto Forms Client API.
 1. Recuperare un modulo contenente uno script di calcolo.
 1. Reinserire il flusso di dati del modulo nel browser Web del client
 
@@ -107,25 +107,31 @@ Per calcolare i dati del modulo, effettuare le seguenti operazioni:
 
 Includete i file necessari nel progetto di sviluppo. Se create un&#39;applicazione client utilizzando Java, includete i file JAR necessari. Se utilizzate i servizi Web, accertatevi di includere i file proxy.
 
-**Creare un oggetto API client Forms**
+**Creare un oggetto Forms Client API**
 
-Prima di eseguire un&#39;operazione API client del servizio Forms a livello di programmazione, è necessario creare un client del servizio Forms. Se utilizzate l&#39;API Java, create un `FormsServiceClient` oggetto. Se si utilizza l&#39;API del servizio Web Forms, creare un `FormsServiceService` oggetto.
+Prima di eseguire un&#39;operazione API client di Forms Service a livello di programmazione, è necessario creare un client di servizi Forms. Se utilizzate l&#39;API Java, create un oggetto `FormsServiceClient`. Se utilizzate l&#39;API del servizio Web di Forms, create un oggetto `FormsServiceService`.
 
 **Recuperare un modulo contenente uno script di calcolo**
 
-È possibile utilizzare l&#39;API client del servizio Forms per creare una logica applicativa che gestisca un modulo contenente uno script configurato per l&#39;esecuzione sul server. Il processo è simile alla gestione di un modulo inviato. (Vedere [Gestione Dei Moduli](/help/forms/developing/handling-submitted-forms.md)Inviati.)
+È possibile utilizzare Forms Service Client API per creare una logica applicativa che gestisce un modulo contenente uno script configurato per l&#39;esecuzione sul server. Il processo è simile alla gestione di un modulo inviato. (Vedere [Gestione di Forms](/help/forms/developing/handling-submitted-forms.md) inviato.)
 
-Verificare che lo stato di elaborazione associato al modulo inviato sia `1``(Calculate)`, ovvero che il servizio Forms stia eseguendo un&#39;operazione di calcolo sui dati del modulo e che i risultati debbano essere riscritti all&#39;utente. In questa situazione, viene eseguito automaticamente uno script configurato per l&#39;esecuzione sul server.
+Verificare che lo stato di elaborazione associato al modulo inviato sia `1` `(Calculate)`, ovvero che il servizio Forms stia eseguendo un&#39;operazione di calcolo sui dati del modulo e che i risultati debbano essere riscritti all&#39;utente. In questa situazione, viene eseguito automaticamente uno script configurato per l&#39;esecuzione sul server.
 
 **Reinserire il flusso di dati del modulo nel browser Web del client**
 
-Dopo aver verificato lo stato di elaborazione associato a un modulo inviato, è `1`necessario scrivere i risultati nel browser Web del client. Quando il modulo viene visualizzato, il valore calcolato viene visualizzato nei campi appropriati.
+Dopo aver verificato che lo stato di elaborazione associato a un modulo inviato sia `1`, è necessario riscrivere i risultati nel browser Web del client. Quando il modulo viene visualizzato, il valore calcolato viene visualizzato nei campi appropriati.
 
 **Consulta anche**
 
-[Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)di libreria Java AEM Forms[Calcola i dati del modulo utilizzando l&#39;API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)Java[Calcola i dati del modulo utilizzando il servizio Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione[dell&#39;API di servizio](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Forms Avvio[rapido](/help/forms/developing/rendering-interactive-pdf-forms.md)[Rendering PDF forms interattiviCreazione di applicazioni Web per il rendering di moduli](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Inclusione  ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[file di libreria AEM Forms JavaCalcolare i dati del modulo utilizzando Java ](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[APICalculate i dati del modulo utilizzando il servizio Web ](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[APISetting connection ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[propertiesForms Service API Quick ](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[StartsRendering Interactive PDF ](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[FormsCreazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Calcolare i dati del modulo utilizzando l&#39;API Java {#calculate-form-data-using-the-java-api}
+## Calcola i dati del modulo utilizzando l&#39;API Java {#calculate-form-data-using-the-java-api}
 
 Calcola i dati del modulo utilizzando l&#39;API Forms (Java):
 
@@ -133,85 +139,87 @@ Calcola i dati del modulo utilizzando l&#39;API Forms (Java):
 
    Includete file JAR client, ad esempio adobe-forms-client.jar nel percorso di classe del progetto Java.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
-   * Creare un `ServiceClientFactory` oggetto che contenga proprietà di connessione.
-   * Creare un `FormsServiceClient` oggetto utilizzando il relativo costruttore e passando l&#39; `ServiceClientFactory` oggetto.
+   * Creare un oggetto `ServiceClientFactory` che contiene le proprietà di connessione.
+   * Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 
 1. Recuperare un modulo contenente uno script di calcolo
 
-   * Per recuperare i dati del modulo che contengono uno script di calcolo, creare un `com.adobe.idp.Document` oggetto utilizzando il relativo costruttore e richiamando il metodo dell&#39; `javax.servlet.http.HttpServletResponse` oggetto `getInputStream` dall&#39;interno del costruttore.
-   * Richiama il metodo dell’ `FormsServiceClient` oggetto `processFormSubmission` e passa i seguenti valori:
+   * Per recuperare i dati del modulo che contengono uno script di calcolo, creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e richiamando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getInputStream` dall&#39;interno del costruttore.
+   * Richiamare il metodo `FormsServiceClient` dell&#39;oggetto `processFormSubmission` e trasmettere i seguenti valori:
 
-      * L&#39; `com.adobe.idp.Document` oggetto che contiene i dati del modulo.
-      * Valore stringa che specifica le variabili di ambiente, comprese tutte le intestazioni HTTP rilevanti. È necessario specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di `CONTENT_TYPE` ambiente. Ad esempio, per gestire i dati XML e PDF, specificare il seguente valore di stringa per questo parametro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Un valore di stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un `RenderOptionsSpec` oggetto che memorizza le opzioni di esecuzione.
+      * L&#39;oggetto `com.adobe.idp.Document` che contiene i dati del modulo.
+      * Valore stringa che specifica le variabili di ambiente, comprese tutte le intestazioni HTTP rilevanti. È necessario specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di ambiente `CONTENT_TYPE`. Ad esempio, per gestire i dati XML e PDF, specificare il seguente valore di stringa per questo parametro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Un valore di stringa che specifica il valore di intestazione `HTTP_USER_AGENT`; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di esecuzione.
 
-      Il `processFormSubmission` metodo restituisce un `FormsResult` oggetto contenente i risultati dell&#39;invio del modulo.
+      Il metodo `processFormSubmission` restituisce un oggetto `FormsResult` contenente i risultati dell&#39;invio del modulo.
 
-   * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il `FormsResult` metodo dell&#39; `getAction` oggetto. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere riscritti nel browser Web del client.
+   * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il metodo `FormsResult` dell&#39;oggetto `getAction`. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere riscritti nel browser Web del client.
 
 
 1. Reinserire il flusso di dati del modulo nel browser Web del client
 
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati del modulo al browser Web del client.
-   * Creare un `com.adobe.idp.Document` oggetto richiamando il `FormsResult` metodo ‘s `getOutputContent` .
-   * Creare un `java.io.InputStream` oggetto richiamando il `com.adobe.idp.Document` metodo dell&#39; `getInputStream` oggetto.
-   * Creare un array di byte e compilarlo con il flusso di dati del modulo richiamando il metodo dell&#39; `InputStream` oggetto `read` e passando l&#39;array di byte come argomento.
-   * Richiamare il metodo dell&#39; `javax.servlet.ServletOutputStream` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per inviare un flusso di dati del modulo al browser Web del client.
+   * Creare un oggetto `com.adobe.idp.Document` richiamando il metodo `FormsResult` object ‘s `getOutputContent`.
+   * Creare un oggetto `java.io.InputStream` richiamando il metodo `com.adobe.idp.Document` dell&#39;oggetto `getInputStream`.
+   * Creare un array di byte e compilarlo con il flusso di dati del modulo richiamando il metodo `InputStream` dell&#39;oggetto `read` e passando l&#39;array di byte come argomento.
+   * Richiamare il metodo `javax.servlet.ServletOutputStream` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
 **Consulta anche**
 
 
-[Inclusione di file](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)libreria Java AEM Forms[Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Inclusione  ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[file libreria AEM Forms JavaImpostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Calcolare i dati del modulo utilizzando l&#39;API del servizio Web {#calculate-form-data-using-the-web-service-api}
+## Calcola i dati del modulo utilizzando l&#39;API del servizio Web {#calculate-form-data-using-the-web-service-api}
 
 Calcola i dati del modulo utilizzando l&#39;API Forms (servizio Web):
 
 1. Includi file di progetto
 
-   * Creare classi proxy Java che utilizzano il WSDL del servizio Forms.
+   * Creare classi proxy Java che utilizzano il servizio WSDL di Forms.
    * Includete le classi proxy Java nel percorso della classe.
 
-1. Creare un oggetto API client Forms
+1. Creare un oggetto Forms Client API
 
-   Creare un `FormsService` oggetto e impostare i valori di autenticazione.
+   Creare un oggetto `FormsService` e impostare i valori di autenticazione.
 
 1. Recuperare un modulo contenente uno script di calcolo
 
-   * Per recuperare i dati del modulo inviati a un Servlet Java, creare un `BLOB` oggetto utilizzando il relativo costruttore.
-   * Creare un `java.io.InputStream` oggetto utilizzando il `javax.servlet.http.HttpServletResponse` metodo dell&#39; `getInputStream` .
-   * Creare un `java.io.ByteArrayOutputStream` oggetto utilizzando il relativo costruttore e passando la lunghezza dell&#39; `java.io.InputStream` oggetto.
-   * Copiare il contenuto dell&#39; `java.io.InputStream` oggetto nell&#39; `java.io.ByteArrayOutputStream` oggetto.
-   * Creare un array di byte richiamando il metodo dell&#39; `java.io.ByteArrayOutputStream` oggetto `toByteArray` .
-   * Compilare l&#39; `BLOB` oggetto richiamandone il `setBinaryData` metodo e passando l&#39;array di byte come argomento.
-   * Creare un `RenderOptionsSpec` oggetto utilizzando il relativo costruttore. Impostare il valore delle impostazioni internazionali richiamando il metodo dell&#39; `RenderOptionsSpec` oggetto `setLocale` e passando un valore di stringa che specifica il valore delle impostazioni internazionali.
-   * Richiama il metodo dell’ `FormsServiceClient` oggetto `processFormSubmission` e passa i seguenti valori:
+   * Per recuperare i dati del modulo inviati a un Servlet Java, creare un oggetto `BLOB` utilizzando il relativo costruttore.
+   * Creare un oggetto `java.io.InputStream` utilizzando il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `getInputStream`.
+   * Creare un oggetto `java.io.ByteArrayOutputStream` utilizzando il relativo costruttore e passando la lunghezza dell&#39;oggetto `java.io.InputStream`.
+   * Copiare il contenuto dell&#39;oggetto `java.io.InputStream` nell&#39;oggetto `java.io.ByteArrayOutputStream`.
+   * Creare un array di byte richiamando il metodo `java.io.ByteArrayOutputStream` dell&#39;oggetto `toByteArray`.
+   * Compilare l&#39;oggetto `BLOB` richiamandone il metodo `setBinaryData` e passando l&#39;array di byte come argomento.
+   * Creare un oggetto `RenderOptionsSpec` utilizzando il relativo costruttore. Impostare il valore delle impostazioni internazionali richiamando il metodo `setLocale` dell&#39;oggetto `RenderOptionsSpec` e passando un valore di stringa che specifica il valore delle impostazioni internazionali.
+   * Richiamare il metodo `FormsServiceClient` dell&#39;oggetto `processFormSubmission` e trasmettere i seguenti valori:
 
-      * L&#39; `BLOB` oggetto che contiene i dati del modulo.
+      * L&#39;oggetto `BLOB` che contiene i dati del modulo.
       * Un valore di stringa che specifica le variabili di ambiente includeva tutte le intestazioni HTTP rilevanti. Ad esempio, è possibile specificare il seguente valore di stringa: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
-      * Un valore di stringa che specifica il valore dell&#39; `HTTP_USER_AGENT` intestazione; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un `RenderOptionsSpec` oggetto che memorizza le opzioni di esecuzione. Per ulteriori informazioni, .
-      * Un oggetto vuoto `BLOBHolder` compilato dal metodo.
-      * Un oggetto vuoto `javax.xml.rpc.holders.StringHolder` compilato dal metodo.
-      * Un oggetto vuoto `BLOBHolder` compilato dal metodo.
-      * Un oggetto vuoto `BLOBHolder` compilato dal metodo.
-      * Un oggetto vuoto `javax.xml.rpc.holders.ShortHolder` compilato dal metodo.
-      * Un oggetto vuoto `MyArrayOf_xsd_anyTypeHolder` compilato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati inviati insieme al modulo.
-      * Un `FormsResultHolder` oggetto vuoto compilato dal metodo con il modulo inviato.
+      * Un valore di stringa che specifica il valore di intestazione `HTTP_USER_AGENT`; ad esempio, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di esecuzione. Per ulteriori informazioni, .
+      * Un oggetto `BLOBHolder` vuoto compilato dal metodo.
+      * Un oggetto `javax.xml.rpc.holders.StringHolder` vuoto compilato dal metodo.
+      * Un oggetto `BLOBHolder` vuoto compilato dal metodo.
+      * Un oggetto `BLOBHolder` vuoto compilato dal metodo.
+      * Un oggetto `javax.xml.rpc.holders.ShortHolder` vuoto compilato dal metodo.
+      * Un oggetto `MyArrayOf_xsd_anyTypeHolder` vuoto compilato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati inviati insieme al modulo.
+      * Un oggetto `FormsResultHolder` vuoto compilato dal metodo con il modulo inviato.
 
-      Il `processFormSubmission` metodo compila il `FormsResultHolder` parametro con i risultati dell&#39;invio del modulo. Il `processFormSubmission` metodo restituisce un `FormsResult` oggetto contenente i risultati dell&#39;invio del modulo.
+      Il metodo `processFormSubmission` popola il parametro `FormsResultHolder` con i risultati dell&#39;invio del modulo. Il metodo `processFormSubmission` restituisce un oggetto `FormsResult` contenente i risultati dell&#39;invio del modulo.
 
-   * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il `FormsResult` metodo dell&#39; `getAction` oggetto. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere riscritti nel browser Web del client.
+   * Verificare che lo stato di elaborazione associato a un modulo inviato sia `1` richiamando il metodo `FormsResult` dell&#39;oggetto `getAction`. Se questo metodo restituisce il valore `1`, il calcolo è stato eseguito e i dati possono essere riscritti nel browser Web del client.
 
 
 1. Reinserire il flusso di dati del modulo nel browser Web del client
 
-   * Creare un `javax.servlet.ServletOutputStream` oggetto utilizzato per inviare un flusso di dati del modulo al browser Web del client.
-   * Creare un `BLOB` oggetto che contenga dati del modulo richiamando il `FormsResult` metodo dell&#39; `getOutputContent` oggetto.
-   * Creare un array di byte e compilarlo richiamando il metodo dell&#39; `BLOB` oggetto `getBinaryData` . Questa attività assegna il contenuto dell&#39; `FormsResult` oggetto all&#39;array di byte.
-   * Richiamare il metodo dell&#39; `javax.servlet.http.HttpServletResponse` oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passa l&#39;array di byte al `write` metodo.
+   * Creare un oggetto `javax.servlet.ServletOutputStream` utilizzato per inviare un flusso di dati del modulo al browser Web del client.
+   * Creare un oggetto `BLOB` contenente dati del modulo richiamando il metodo `FormsResult` dell&#39;oggetto `getOutputContent`.
+   * Creare un array di byte e compilarlo richiamando il metodo `BLOB` dell&#39;oggetto `getBinaryData`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` all&#39;array di byte.
+   * Richiamare il metodo `javax.servlet.http.HttpServletResponse` dell&#39;oggetto `write` per inviare il flusso di dati del modulo al browser Web del client. Passate l&#39;array di byte al metodo `write`.
 
-**Vedere anche**[Chiamata di AEM Forms mediante codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Vedere**
+[ancheRichiamo  AEM Forms con codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
