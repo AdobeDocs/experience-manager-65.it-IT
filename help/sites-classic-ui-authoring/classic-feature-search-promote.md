@@ -12,6 +12,9 @@ discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +40,7 @@ Sul server Search&amp;Promote sono configurati i facet, così come le informazio
   </tr>
   <tr>
    <td>Banner</td>
-   <td>Visualizza gli annunci pubblicitari dei banner. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td>
+   <td>Visualizza gli annunci pubblicitari dei banner. I banner sono selezionati in base ai dati raccolti attraverso i Search&amp;Promote.<br /> </td>
   </tr>
   <tr>
    <td>Breadcrumb</td>
@@ -91,9 +94,9 @@ Puoi configurare le seguenti proprietà dei componenti in modalità Modifica per
 
 ### Abilita il filtraggio dei risultati per facet. {#enabling-the-filtering-of-results-by-facets}
 
-Puoi consentire agli utenti di filtrare i risultati della ricerca per facet. The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components enable users to select one or more facets for filtering. Quando si utilizzano questi componenti, è necessario includere anche il componente **Breadcrumb**. Le Breadcrumb indicano i filtri attuali utilizzati.
+Puoi consentire agli utenti di filtrare i risultati della ricerca per facet. I componenti Facet **Elenco caselle di controllo**, **Facet a discesa** e **Facet elenco collegamenti** consentono agli utenti di selezionare uno o più facet per il filtro. Quando si utilizzano questi componenti, è necessario includere anche il componente **Breadcrumb**. Le Breadcrumb indicano i filtri attuali utilizzati.
 
-The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components each have the following properties that you configure in **Edit** mode:
+I componenti **Facet elenco di controllo**, **Facet a discesa** e **Facet elenco collegamenti** dispongono delle seguenti proprietà che è possibile configurare in modalità **Modifica**:
 
 * **Nome facet:** il nome del facet che viene utilizzato per i filtri.
 
@@ -126,7 +129,7 @@ Puoi configurare le seguenti proprietà per Breadcrumb in modalità Modifica per
 * Delimitatore: definisci il carattere o la stringa di caratteri che agiscono come delimitatore tra ogni breadcrumb. Il campo Delimitatore accetta qualsiasi stringa di caratteri come input. L&#39;impostazione predefinita è: &quot;>&quot; (senza virgolette)
 * Delimitatore trailing: definire un carattere o una stringa di caratteri da visualizzare alla fine delle breadcrumb. Il campo Delimitatore trailing accetta qualsiasi stringa di caratteri come input. L&#39;impostazione predefinita per questo è *vuoto* (ovvero, non viene visualizzato niente alla fine della riga della breadcrumb)
 
-### Aggiunta di caselle di ricerca {#adding-search-boxes}
+### Aggiunta di caselle di ricerca  {#adding-search-boxes}
 
 Il componente Ricerca consente ai clienti di eseguire ricerche per parola chiave. Aggiungi Componenti di ricerca in ogni pagina in cui si desidera fornire l&#39;accesso alla ricerca.
 
@@ -139,7 +142,7 @@ Configura le seguenti proprietà in modalità Modifica per controllare il compor
 
 ### Aggiunta di banner {#adding-banners}
 
-Il componente Banner visualizza gli annunci banner in base alle ricerche Search&amp;Promote effettuate dal cliente. La logica sul server Search&amp;Replace determina quale banner mostrare. Ad esempio, una ricerca sui jeans potrebbe far apparire un banner legato alla moda. Il filtro sul reparto Uomini potrebbe affinare ulteriormente la scelta del banner.
+Il componente Banner visualizza gli annunci pubblicitari dei banner in base alle ricerche effettuate dal cliente. La logica sul server Search&amp;Replace determina quale banner mostrare. Ad esempio, una ricerca sui jeans potrebbe far apparire un banner legato alla moda. Il filtro sul reparto Uomini potrebbe affinare ulteriormente la scelta del banner.
 
 Il componente Banner fornisce una proprietà configurabile denominata Area banner. In modalità Modifica, seleziona uno dei valori delle proprietà per specificare la modalità di visualizzazione del banner. Il servizio di Search&amp;Promote determina l&#39;elenco di valori selezionabili.
 
@@ -147,4 +150,4 @@ Il componente Banner fornisce una proprietà configurabile denominata Area banne
 
 Questo diagramma mostra i componenti che vengono aggiunti a una pagina per creare la sottostante pagina completamente funzionale dei risultati di Search&amp;Promote.
 
-![1328213789109](assets/1328213789109.png) , ![esempio](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandpageexample](assets/sandppageexample.png)
