@@ -1,8 +1,8 @@
 ---
 title: Scaricamento dei processi
 seo-title: Scaricamento dei processi
-description: Scopri come configurare e utilizzare le istanze di AEM in una topologia per eseguire tipi specifici di elaborazione.
-seo-description: Scopri come configurare e utilizzare le istanze di AEM in una topologia per eseguire tipi specifici di elaborazione.
+description: Scoprite come configurare e utilizzare AEM istanze in una topologia per eseguire tipi specifici di elaborazione.
+seo-description: Scoprite come configurare e utilizzare AEM istanze in una topologia per eseguire tipi specifici di elaborazione.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,15 +18,15 @@ ht-degree: 1%
 ---
 
 
-# Scaricamento dei processi{#offloading-jobs}
+# Scaricamento di processi{#offloading-jobs}
 
 ## Introduzione {#introduction}
 
-L&#39;offload distribuisce le attività di elaborazione tra  istanze Experience Manager in una topologia. Con lo scaricamento, potete utilizzare istanze Experience Manager  specifiche per eseguire tipi di elaborazione specifici. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
+Lo scarico distribuisce le attività di elaborazione tra  istanze di Experience Manager in una topologia. Con lo scaricamento, potete utilizzare istanze di Experienci Manager  specifiche per eseguire specifici tipi di elaborazione. L&#39;elaborazione specializzata consente di ottimizzare l&#39;utilizzo delle risorse server disponibili.
 
-L&#39;offload è basato sulle funzionalità [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Per utilizzare lo scaricamento, è possibile aggiungere  cluster Experience Manager a una topologia e identificare gli argomenti del processo che il cluster elabora. I cluster sono formati da una o più istanze Experience Manager , in modo che una singola istanza sia considerata un cluster.
+L&#39;offload è basato sulle funzionalità [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Per utilizzare lo scaricamento, è possibile aggiungere  cluster di Experienci Manager a una topologia e identificare gli argomenti del processo che il cluster elabora. I cluster sono formati da una o più istanze  Experience Manager, in modo che una singola istanza sia considerata un cluster.
 
-Per informazioni sull&#39;aggiunta di istanze a una topologia, consultate [Amministrazione delle topologie](/help/sites-deploying/offloading.md#administering-topologies).
+Per informazioni sull&#39;aggiunta di istanze a una topologia, vedere [Amministrazione delle topologie](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Distribuzione processo {#job-distribution}
 
@@ -35,12 +35,12 @@ Sling JobManager e JobConsumer consentono la creazione di processi elaborati in 
 * JobManager: Un servizio che crea processi per argomenti specifici.
 * JobConsumer: Un servizio che esegue processi relativi a uno o più argomenti. Più servizi JobConsumer possono essere registrati per lo stesso argomento.
 
-Quando JobManager crea un processo, il framework Offloading seleziona un cluster Experience Manager  nella topologia per eseguire il processo:
+Quando JobManager crea un processo, il framework Offloading seleziona un cluster di Experienci Manager  nella topologia per eseguire il processo:
 
 * Il cluster deve includere una o più istanze che eseguono un JobConsumer registrato per l&#39;argomento del processo.
 * L&#39;argomento deve essere abilitato per almeno un&#39;istanza del cluster.
 
-Consultate [Configurazione del consumo](/help/sites-deploying/offloading.md#configuring-topic-consumption) argomento per informazioni sul miglioramento della distribuzione dei processi.
+Per informazioni sull&#39;ottimizzazione della distribuzione dei processi, vedere [Configurazione del consumo di argomenti](/help/sites-deploying/offloading.md#configuring-topic-consumption).
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -54,9 +54,9 @@ Dopo la creazione di un processo, il payload è garantito solo nell’istanza ch
 
 ## Amministrazione delle topologie {#administering-topologies}
 
-Le topologie sono  cluster Experience Manager a accoppiamento approssimativo che partecipano allo scarico. Un cluster è costituito da una o più istanze  server Experience Manager (una singola istanza è considerata un cluster).
+Le topologie sono cluster di Experienci Manager  a accoppiamento approssimativo che partecipano allo scarico. Un cluster è costituito da una o più istanze  server di Experience Manager (una singola istanza è considerata un cluster).
 
-Ogni istanza di Experience Manager  esegue i seguenti servizi relativi allo scaricamento:
+Ogni istanza  Experience Manager esegue i seguenti servizi relativi allo scarico:
 
 * Servizio di individuazione: Invia richieste a un connettore topologia per partecipare alla topologia.
 * Connettore topologia: Riceve le richieste di partecipazione e accetta o rifiuta ogni richiesta.
@@ -69,7 +69,7 @@ Ogni cluster nella topologia contiene un&#39;istanza riconosciuta come leader. I
 
 ### Visualizzazione della topologia {#viewing-the-topology}
 
-Utilizzate il Browser topologia per esplorare lo stato della topologia a cui partecipa l&#39;istanza di Experience Manager . Il Browser topologia mostra i cluster e le istanze della topologia.
+Utilizzate il Browser topologia per esplorare lo stato della topologia a cui partecipa l&#39;istanza del Experience Manager . Il Browser topologia mostra i cluster e le istanze della topologia.
 
 Per ciascun cluster viene visualizzato un elenco di membri del cluster che indica l&#39;ordine in cui ciascun membro è entrato nel cluster e quale membro è il membro iniziale. La proprietà Current (Corrente) indica l&#39;istanza attualmente amministrata.
 
@@ -106,9 +106,9 @@ Per aprire la pagina Gestione topologia della console Web, effettuate le seguent
 
 ### Configurazione dell&#39;appartenenza alla topologia {#configuring-topology-membership}
 
-Il servizio di individuazione basata sulle risorse Apache Sling viene eseguito su ogni istanza per controllare in che modo  istanze Experience Manager interagiscono con una topologia.
+Il servizio di individuazione basata sulle risorse Apache Sling viene eseguito su ogni istanza per controllare in che modo  istanze di Experience Manager interagiscono con una topologia.
 
-Il servizio Discovery invia periodicamente richieste POST (heartbeat) ai servizi del connettore Topologia per stabilire e mantenere connessioni con la topologia. Il servizio Connettore topologia mantiene un elenco consentiti  di indirizzi IP o nomi host che possono essere aggiunti alla topologia:
+Il servizio Discovery invia richieste POST periodiche (heartbeat) ai servizi del connettore Topologia per stabilire e gestire le connessioni con la topologia. Il servizio Connettore topologia mantiene un elenco consentiti  di indirizzi IP o nomi host che possono essere aggiunti alla topologia:
 
 * Per unire un&#39;istanza a una topologia, specificate l&#39;URL del servizio Connettore topologia del membro principale.
 * Per abilitare un&#39;istanza a partecipare a una topologia, aggiungere l&#39;istanza al elenco consentiti  del servizio Connettore topologia del membro principale.
@@ -148,7 +148,7 @@ Utilizzate la console Web o un nodo sling:OsgiConfig per configurare le seguenti
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>elenco consentiti  connettore topologia</td>
+   <td>Elenco consentiti  connettore topologia</td>
    <td>topologyConnectorWhitelist</td>
    <td>L'elenco di indirizzi IP o nomi host consentiti dal servizio locale Connettore topologia nella topologia. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
@@ -176,9 +176,9 @@ Eseguire la procedura seguente sul membro principale della topologia. La procedu
 1. Fate clic su Configura servizio di individuazione.
 1. Per ciascun membro della topologia, aggiungete un elemento alla proprietà  elenco consentiti del connettore topologia e specificate il nome host o l&#39;indirizzo IP del membro della topologia.
 
-## Configurazione del consumo dell&#39;argomento {#configuring-topic-consumption}
+## Configurazione consumo argomento {#configuring-topic-consumption}
 
-Utilizzate il browser offload per configurare il consumo dell&#39;argomento per le istanze Experience Manager  nella topologia. Per ogni istanza, potete specificare gli argomenti che essa consuma. Ad esempio, per configurare la topologia in modo che solo un&#39;istanza utilizzi argomenti di un tipo specifico, disattivate l&#39;argomento per tutte le istanze tranne una.
+Utilizzate il browser di scaricamento per configurare il consumo dell&#39;argomento per le istanze del Experience Manager  nella topologia. Per ogni istanza, potete specificare gli argomenti che essa consuma. Ad esempio, per configurare la topologia in modo che solo un&#39;istanza utilizzi argomenti di un tipo specifico, disattivate l&#39;argomento per tutte le istanze tranne una.
 
 I processi vengono distribuiti tra le istanze per le quali è stato attivato l’argomento associato tramite la logica round-robin.
 
@@ -201,7 +201,7 @@ I processi vengono distribuiti tra le istanze per le quali è stato attivato l�
    * Disattivato: In questa istanza non vengono utilizzati processi di questo argomento.
    * Esclusivo: Questa istanza utilizza solo i processi di questo argomento.
 
-   **Nota:** Quando si seleziona Esclusivo per un argomento, tutti gli altri argomenti vengono impostati automaticamente su Disattivato.
+   **Nota:** quando selezionate Esclusivo per un argomento, tutti gli altri argomenti vengono impostati automaticamente su Disattivato.
 
 ### Consumatori di lavori installati {#installed-job-consumers}
 
@@ -218,26 +218,26 @@ Diverse implementazioni JobConsumer sono installate con  Experience Manager. Gli
 
 ### Disattivazione e abilitazione degli argomenti per un&#39;istanza {#disabling-and-enabling-topics-for-an-instance}
 
-Il servizio Apache Sling Job Consumer Manager fornisce le proprietà dell&#39;argomento  elenco consentiti e  elenco Bloccati. Configurate queste proprietà per abilitare o disabilitare l&#39;elaborazione di argomenti specifici su un&#39;istanza di Experience Manager .
+Il servizio Apache Sling Job Consumer Manager fornisce le proprietà dell&#39;argomento  elenco consentiti e  elenco Bloccati. Configurate queste proprietà per abilitare o disabilitare l&#39;elaborazione di argomenti specifici in un&#39;istanza di Experience Manager .
 
-**Nota:** Se l&#39;istanza appartiene a una topologia, potete anche utilizzare il browser di scaricamento su qualsiasi computer della topologia per attivare o disattivare gli argomenti.
+**Nota:** se l&#39;istanza appartiene a una topologia, puoi anche utilizzare Offload Browser su qualsiasi computer della topologia per attivare o disattivare gli argomenti.
 
-La logica che crea l&#39;elenco di argomenti abilitati prima consente di tutti gli argomenti presenti nel elenco consentiti , quindi rimuove gli argomenti presenti nel elenco Bloccati . Per impostazione predefinita, tutti gli argomenti sono attivati (il valore di elenco consentiti  è `*`) e nessun argomento è disabilitato (il elenco Bloccati  non ha alcun valore).
+La logica che crea l&#39;elenco di argomenti abilitati prima consente di tutti gli argomenti presenti nel elenco consentiti , quindi rimuove gli argomenti presenti nel elenco Bloccati . Per impostazione predefinita, tutti gli argomenti sono attivati (il valore  elenco consentiti è `*`) e non vengono disabilitati argomenti (il elenco Bloccati  non ha alcun valore).
 
-Utilizzare la console Web o un `sling:OsgiConfig` nodo per configurare le seguenti proprietà. Per `sling:OsgiConfig` i nodi, il PID del servizio Job Consumer Manager è org.apache.sling.event.impl.jobs.JobConsumerManager.
+Utilizzate Console Web o un nodo `sling:OsgiConfig` per configurare le seguenti proprietà. Per i nodi `sling:OsgiConfig`, il PID del servizio Job Consumer Manager è org.apache.sling.event.impl.jobs.JobConsumerManager.
 
 | Nome proprietà nella console Web | OSGi ID | Descrizione |
 |---|---|---|
-| elenco consentiti  argomento | job.consumermanager.whitelist | Elenco di argomenti elaborati dal servizio JobManager locale. Il valore predefinito di &amp;ast; determina l&#39;invio di tutti gli argomenti al servizio TopicConsumer registrato. |
-| elenco Bloccati  argomento | job.consumermanager.blacklist | Un elenco di argomenti che il servizio JobManager locale non elabora. |
+| Elenco consentiti  argomento | job.consumermanager.whitelist | Elenco di argomenti elaborati dal servizio JobManager locale. Il valore predefinito di &amp;ast; determina l&#39;invio di tutti gli argomenti al servizio TopicConsumer registrato. |
+| Elenco Bloccati  argomento | job.consumermanager.blacklist | Un elenco di argomenti che il servizio JobManager locale non elabora. |
 
-## Creazione Di Agenti Di Replica Per L&#39;Offload {#creating-replication-agents-for-offloading}
+## Creazione Di Agenti Di Replica Per Lo Scaricamento Di {#creating-replication-agents-for-offloading}
 
 Il framework di scarico utilizza la replica per il trasporto delle risorse tra autore e lavoratore. Il framework di scaricamento crea automaticamente agenti di replica quando le istanze si uniscono alla topologia. Gli agenti vengono creati con valori predefiniti. È necessario modificare manualmente la password utilizzata dagli agenti per l&#39;autenticazione.
 
 >[!CAUTION]
 >
->Un problema noto con gli agenti di replica generati automaticamente richiede la creazione manuale di nuovi agenti di replica. Seguire la procedura descritta in [Problemi relativi all&#39;utilizzo degli agenti](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) di replica generati automaticamente prima di creare gli agenti per il caricamento.
+>Un problema noto con gli agenti di replica generati automaticamente richiede la creazione manuale di nuovi agenti di replica. Seguire la procedura descritta in [Problemi relativi all&#39;utilizzo degli agenti di replica generati automaticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) prima di creare gli agenti per lo scarico.
 
 Creare gli agenti di replica che trasportano i payload di processo tra le istanze per lo scarico. L&#39;illustrazione seguente mostra gli agenti che devono essere scaricati dall&#39;istanza di creazione a un&#39;istanza di lavoro. L’autore ha un Sling ID pari a 1 e l’istanza di lavoro ha un Sling ID pari a 2:
 
@@ -255,19 +255,19 @@ Lo schema di replica è simile a quello utilizzato tra le istanze di creazione e
 >
 >Il framework di offload utilizza la topologia per ottenere gli indirizzi IP delle istanze di scarico. Il framework quindi crea automaticamente gli agenti di replica basati su questi indirizzi IP. Se gli indirizzi IP delle istanze di scaricamento cambiano successivamente, la modifica viene propagata automaticamente sulla topologia dopo il riavvio dell&#39;istanza. Tuttavia, il framework di offload non aggiorna automaticamente gli agenti di replica per riflettere i nuovi indirizzi IP. Per evitare questa situazione, utilizzare indirizzi IP fissi per tutte le istanze della topologia.
 
-### Denominazione degli agenti di replica per lo scarico {#naming-the-replication-agents-for-offloading}
+### Denominazione degli agenti di replica per l&#39;offload di {#naming-the-replication-agents-for-offloading}
 
 Utilizzare un formato specifico per la proprietà ***Name*** degli agenti di replica, in modo che il framework di scarico utilizzi automaticamente l&#39;agente corretto per istanze di lavoro specifiche.
 
 **Denominazione dell’agente in uscita nell’istanza di creazione:**
 
-`offloading_<slingid>`, dove `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
+`offloading_<slingid>`, dove  `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
 
 Esempio: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Denominazione dell’agente inverso nell’istanza di creazione:**
 
-`offloading_reverse_<slingid>`, dove `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
+`offloading_reverse_<slingid>`, dove  `<slingid>` è l&#39;ID Sling dell&#39;istanza di lavoro.
 
 Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -277,7 +277,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creazione dell&#39;agente in uscita {#creating-the-outgoing-agent}
 
-1. Creare un agente **di** replica in fase di creazione. (consultate la [documentazione relativa agli agenti](/help/sites-deploying/replication.md)di replica). Specificate un **Titolo**. Il **nome** deve seguire la convenzione di denominazione.
+1. Creare un **Agente di replica** sull&#39;autore. (vedere la [documentazione relativa agli agenti di replica](/help/sites-deploying/replication.md)). Specificare un **Titolo**. La **Name** deve seguire la convenzione di denominazione.
 1. Create l&#39;agente utilizzando le seguenti proprietà:
 
    | Proprietà | Valore |
@@ -291,7 +291,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creazione dell&#39;agente inverso {#creating-the-reverse-agent}
 
-1. Creare un agente **di replica** inversa all&#39;autore. (consultate la [documentazione relativa agli agenti](/help/sites-deploying/replication.md)di replica.) Specificate un **Titolo**. Il **nome** deve seguire la convenzione di denominazione.
+1. Creare un **agente di replica inversa** sull&#39;autore. (vedere la [documentazione relativa agli agenti di replica](/help/sites-deploying/replication.md).) Specificare un **Titolo**. La **Name** deve seguire la convenzione di denominazione.
 1. Create l&#39;agente utilizzando le seguenti proprietà:
 
    | Proprietà | Valore |
@@ -302,9 +302,9 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Trasporto > Password trasporto | Password utente di replica nell&#39;istanza di destinazione |
    | Extended > Metodo HTTP | GET |
 
-### Creazione dell’agente di output {#creating-the-outbox-agent}
+### Creazione dell&#39;agente di posta in uscita {#creating-the-outbox-agent}
 
-1. Creare un agente **di** replica nell&#39;istanza di lavoro. (consultate la [documentazione relativa agli agenti](/help/sites-deploying/replication.md)di replica.) Specificate un **Titolo**. Il **Nome** deve essere `offloading_outbox`.
+1. Creare un **Agente di replica** nell&#39;istanza di lavoro. (vedere la [documentazione relativa agli agenti di replica](/help/sites-deploying/replication.md).) Specificare un **Titolo**. Il **Nome** deve essere `offloading_outbox`.
 1. Create l&#39;agente utilizzando le proprietà seguenti.
 
    | Proprietà | Valore |
@@ -313,11 +313,11 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Trasporto > URI trasporto | repo://var/replication/outbox |
    | Trigger > Ignore Default | Vero |
 
-### Ricerca dell’ID Sling {#finding-the-sling-id}
+### Ricerca dell&#39;ID Sling {#finding-the-sling-id}
 
 Ottenete l’ID Sling di un’istanza di Experience Manager  utilizzando uno dei seguenti metodi:
 
-* Aprite la console Web e, in Impostazioni Sling, individuate il valore della proprietà Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Questo metodo è utile se l’istanza non fa ancora parte della topologia.
+* Aprite la console Web e, nelle Impostazioni Sling, individuate il valore della proprietà Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Questo metodo è utile se l’istanza non fa ancora parte della topologia.
 * Utilizzate il browser Topologia se l&#39;istanza fa già parte della topologia.
 
 <!--
@@ -352,8 +352,8 @@ The following procedure assumes the following characteristics for the offloading
 1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
 -->
 
-## Lettura {#further-reading}
+## Lettura successiva {#further-reading}
 
 Oltre ai dettagli presentati in questa pagina, potete anche leggere quanto segue:
 
-* Per informazioni sull’utilizzo delle API Java per creare posti di lavoro e consumatori di lavoro, consultate [Creazione e utilizzo di processi per lo scaricamento](/help/sites-developing/dev-offloading.md).
+* Per informazioni sull&#39;utilizzo delle API Java per creare posti di lavoro e consumatori di lavoro, vedere [Creazione e utilizzo di processi per lo scarico](/help/sites-developing/dev-offloading.md).
