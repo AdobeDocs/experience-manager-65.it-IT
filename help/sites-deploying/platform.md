@@ -12,17 +12,20 @@ discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 0%
 
 ---
 
 
 # Introduzione alla piattaforma AEM{#introduction-to-the-aem-platform}
 
-La piattaforma AEM in AEM 6 è basata su Apache Jackrabbit Oak.
+La piattaforma AEM in AEM 6 si basa su Apache Jackrabbit Oak.
 
 Apache Jackrabbit Oak è uno sforzo per implementare un archivio di contenuti gerarchici scalabile e performante da usare come base per i siti Web moderni e altre applicazioni di contenuto esigenti.
 
-È il successore di Jackrabbit 2 e viene utilizzato da AEM 6 come backend predefinito per il repository dei contenuti, CRX.
+È il successore di Jackrabbit 2 ed è utilizzato da AEM 6 come backend predefinito per il suo repository di contenuti, CRX.
 
 ## Principi e obiettivi di progettazione {#design-principles-and-goals}
 
@@ -39,7 +42,7 @@ Oak implementa la specifica [JSR-283](https://www.day.com/day/en/products/jcr/js
 
 ### Archiviazione {#storage}
 
-Lo scopo del livello Storage è:
+Lo scopo del livello Storage è di:
 
 * Implementare un modello ad albero
 * Rendere lo storage collegabile
@@ -66,11 +69,11 @@ Inoltre, ora sono possibili implementazioni non Java e fanno parte del concetto 
 
 Il livello di memorizzazione Oak fornisce un livello di astrazione per lo storage effettivo del contenuto.
 
-In AEM6 sono attualmente disponibili due implementazioni di storage: **Tar Storage** e **MongoDB Storage**.
+Al momento sono disponibili due implementazioni di storage in AEM6: **Tar Storage** e **MongoDB Storage**.
 
-### Archiviazione Tar {#tar-storage}
+### Archiviazione delle barre {#tar-storage}
 
-L&#39;archiviazione Tar utilizza file tar. Il contenuto viene memorizzato come vari tipi di record all&#39;interno di segmenti più grandi. Le scritture contabili vengono utilizzate per tenere traccia dello stato più recente della directory archivio.
+L&#39;archiviazione Tar utilizza i file tar. Il contenuto viene memorizzato come vari tipi di record all&#39;interno di segmenti più grandi. Le scritture contabili vengono utilizzate per tenere traccia dello stato più recente della directory archivio.
 
 Esistono diversi principi chiave di progettazione su cui è stato costruito:
 
@@ -88,9 +91,9 @@ I record correlati come un nodo e i relativi elementi figlio immediati vengono g
 
 La formattazione dei record è ottimizzata per ridurre i costi di I/O e per adattare il maggior numero possibile di contenuti nelle cache.
 
-### Mongo Storage {#mongo-storage}
+### Archiviazione Mongo {#mongo-storage}
 
-Lo storage MongoDB utilizza MongoDB per la condivisione e il clustering. La struttura dell&#39;archivio è contenuta in un database MongoDB in cui ogni nodo è un documento separato.
+Lo storage MongoDB utilizza MongoDB per la condivisione e il clustering. La struttura dell&#39;archivio è memorizzata in un database MongoDB in cui ogni nodo è un documento separato.
 
 Essa presenta diverse particolarità:
 
@@ -114,13 +117,13 @@ L&#39;archiviazione MongoDB aggiunge dati a un documento con ogni modifica. Tutt
 
 I dati sui nodi del cluster attivi e inattivi vengono conservati nel database per facilitare le operazioni del cluster.
 
-Configurazione cluster AEM tipica con storage MongoDB:
+Configurazione tipica AEM cluster con storage MongoDB:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 ## Cos&#39;è diverso da Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Poiché Oak è progettato per essere compatibile con lo standard JCR 1.0, non ci saranno quasi modifiche a livello di utente. Tuttavia, durante l’impostazione di un’installazione AEM basata su Oak è necessario tenere conto di alcune differenze notevoli:
+Poiché Oak è progettato per essere compatibile con lo standard JCR 1.0, non ci saranno quasi modifiche a livello di utente. Tuttavia, durante l&#39;impostazione di un&#39;installazione AEM basata su Oak è necessario tenere conto di alcune differenze notevoli:
 
 * Oak non crea indici automaticamente. Per questo motivo, se necessario, sarà necessario creare indici personalizzati.
 * A differenza di Jackrabbit 2, dove le sessioni riflettono sempre lo stato più recente del repository, con Oak una sessione riflette una vista stabile del repository dal momento in cui la sessione è stata acquisita. Ciò è dovuto al modello MVCC su cui si basa Oak.
@@ -128,10 +131,10 @@ Poiché Oak è progettato per essere compatibile con lo standard JCR 1.0, non ci
 
 ## Documentazione correlata ad altre piattaforme {#other-platform-related-documentation}
 
-Per ulteriori informazioni sulla piattaforma AEM, consulta anche gli articoli seguenti:
+Per ulteriori informazioni sulla piattaforma AEM, consultate anche gli articoli seguenti:
 
-* [Configurazione degli archivi di nodi e dei data store in AEM 6](/help/sites-deploying/data-store-config.md)
+* [Configurazione dei nodi e dei data store in AEM 6](/help/sites-deploying/data-store-config.md)
 * [Query e indicizzazione Oak](/help/sites-deploying/queries-and-indexing.md)
-* [Elementi di archiviazione in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementi di storage in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM con MongoDB](/help/sites-deploying/aem-with-mongodb.md)
 
