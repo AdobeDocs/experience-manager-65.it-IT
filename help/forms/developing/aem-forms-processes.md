@@ -61,21 +61,21 @@ Quando viene richiamato questo processo di breve durata, esegue le azioni seguen
 
    *La programmazione con AEM* moduli descrive i seguenti modi in cui è possibile invocare questo processo di breve durata a livello di programmazione:
 
-   * [Richiamo di un processo di breve durata passando un documento non sicuro utilizzando  AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (utilizzando un&#39;applicazione Flex)
-   * [Richiamo di un processo di breve durata tramite l&#39;API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) di incitamento (Java Invocation API)
-   * [Richiamo  AEM Forms con codifica](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (esempio di servizio Web)
-   * [Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (esempio di servizio Web)
-   * [Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (esempio di servizio Web)
-   * [Chiamata  AEM Forms tramite dati BLOB su HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (esempio di servizio Web)
-   * [Chiamata  AEM Forms tramite DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (esempio di servizio Web)
+   * [Richiamo di un processo di breve durata passando un documento non sicuro tramite  AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  (utilizzando un&#39;applicazione Flex)
+   * [Richiamo di un processo di breve durata tramite l&#39;API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)  di incitamento (Java Invocation API)
+   * [Richiamo  AEM Forms con codifica](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  Base64 (esempio di servizio Web)
+   * [Chiamata  AEM Forms tramite MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  (esempio di servizio Web)
+   * [Chiamata  AEM Forms tramite SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)  (esempio di servizio Web)
+   * [Richiamo  AEM Forms utilizzando dati BLOB su HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  (esempio di servizio Web)
+   * [Chiamata  AEM Forms tramite DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)  (esempio di servizio Web)
    * [Richiamo del processo MyApplication/EncryptDocument tramite REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Esempio di processo longevo**
 
 L&#39;illustrazione seguente è un esempio di processo di lunga durata.
 
-Questa procedura viene invocata quando un richiedente presenta un modulo di prestito. Il processo non è completo finché un funzionario del prestito non approva o rifiuta la richiesta di prestito. Il nome di questo processo longevo è *FirstAppSolution/PreLoanProcess* e il suo funzionamento è `invoke_Async`. Questo processo deve essere richiamato in modo asincrono. Per informazioni su come invocare questo processo a lungo termine a livello di programmazione, vedere [Richiamo di processi](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)a vita lunga incentrati sull’uomo.
+Questa procedura viene invocata quando un richiedente presenta un modulo di prestito. Il processo non è completo finché un funzionario del prestito non approva o rifiuta la richiesta di prestito. Il nome di questo processo longevo è *FirstAppSolution/PreLoanProcess* e il suo funzionamento è `invoke_Async`. Questo processo deve essere richiamato in modo asincrono. Per informazioni su come richiamare questo processo a lungo termine a livello di programmazione, vedere [Richiamo Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >
->Questo processo può essere creato seguendo l&#39;esercitazione specificata in [Creazione della prima applicazione](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)AEM Forms .
+>Questo processo può essere creato seguendo l&#39;esercitazione specificata in [Creazione della prima applicazione AEM Forms ](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
