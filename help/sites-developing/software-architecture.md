@@ -11,19 +11,22 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 0%
 
 ---
 
 
-# Architettura del software{#software-architecture}
+# Architettura software{#software-architecture}
 
-## Progettazione di aggiornamenti {#design-for-upgrades}
+## Progettazione per gli aggiornamenti {#design-for-upgrades}
 
-Quando si estendono i comportamenti OOTB, è importante tenere presenti gli aggiornamenti. Applicate sempre le personalizzazioni nella directory /apps e sovrapponete ai nodi corrispondenti nella directory /libs oppure utilizzate sling:resourceSuperType per estendere il comportamento out-of-the-box. Anche se possono essere necessarie alcune modifiche per supportare una nuova versione di AEM, se seguite questa procedura, la nuova versione non deve sovrascrivere le personalizzazioni.
+Quando si estendono i comportamenti OOTB, è importante tenere a mente gli aggiornamenti. Applicate sempre le personalizzazioni nella directory /apps e sovrapponete ai nodi corrispondenti nella directory /libs oppure utilizzate sling:resourceSuperType per estendere il comportamento out-of-the-box. Anche se possono essere necessarie alcune modifiche per supportare una nuova versione AEM, la nuova versione non deve sovrascrivere le personalizzazioni se questa procedura viene seguita.
 
 ### Riutilizza modelli e componenti quando possibile {#reuse-template-and-components-when-possible}
 
-In questo modo il sito potrà mantenere un aspetto e un aspetto più coerenti e semplificare la manutenzione del codice. Quando è necessario un nuovo modello, accertatevi di estenderlo da un modello di base condiviso in modo che i requisiti globali come l&#39;inclusione clientlib possano essere codificati in un&#39;unica posizione. Quando è necessario un nuovo componente, cercate le opportunità di estendere da un componente esistente.
+In questo modo il sito potrà mantenere un aspetto e un aspetto più coerenti e semplificare la manutenzione del codice. Quando è necessario un nuovo modello, accertatevi di estenderlo da un modello di base condiviso in modo che i requisiti globali, come l&#39;inclusione clientlib, possano essere codificati in un&#39;unica posizione. Quando è necessario un nuovo componente, cercate le opportunità di estendere da un componente esistente.
 
 ### Progettazione di modelli {#design-template-designs}
 
@@ -51,8 +54,8 @@ Picchi e codice di test sono parte integrante di qualsiasi implementazione softw
 
 ### Implementare gli script di migrazione dei dati nel proprio modulo {#implement-data-migration-scripts-in-their-own-module}
 
-Gli script di migrazione dei dati, mentre il codice di produzione, vengono in genere eseguiti una sola volta all&#39;avvio iniziale di un sito. Pertanto, non appena il sito è attivo, questo diventa codice morto. Per evitare che venga creato codice di implementazione che dipende dagli script di migrazione, è necessario implementarlo nel proprio modulo. Questo ci permette anche di rimuovere e ritirare questo codice subito dopo il lancio, eliminando codice morto dal sistema.
+Gli script di migrazione dei dati, mentre il codice di produzione, vengono in genere eseguiti una sola volta all&#39;avvio iniziale di un sito. Pertanto, non appena il sito è attivo, questo diventa codice morto. Per evitare che venga creato codice di implementazione che dipende dagli script di migrazione, questi devono essere implementati nel proprio modulo. Questo ci permette anche di rimuovere e ritirare questo codice subito dopo il lancio, eliminando il codice morto dal sistema.
 
-### Seguire le convenzioni pubblicate di Paradiso nei file POM {#follow-published-maven-conventions-in-pom-files}
+### Seguite le convenzioni pubblicate in formato Maven nei file POM {#follow-published-maven-conventions-in-pom-files}
 
-Apache ha pubblicato le convenzioni di stile all&#39;indirizzo [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). E&#39; meglio seguire queste convenzioni, in quanto renderà più facile reperire rapidamente nuove risorse.
+Apache ha pubblicato le convenzioni di stile in [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). E&#39; meglio seguire queste convenzioni, in quanto renderà più facile reperire rapidamente nuove risorse.
