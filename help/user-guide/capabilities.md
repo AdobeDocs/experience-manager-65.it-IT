@@ -1,24 +1,24 @@
 ---
-title: Guida utente delle funzionalità di AEM 6.5
-seo-title: Guida utente delle funzionalità di AEM 6.5
-description: Panoramica delle funzionalità essenziali di AEM 6.5
-seo-description: Panoramica delle funzionalità essenziali di AEM 6.5
+title: AEM 6.5 - Guida utente alle funzionalità
+seo-title: AEM 6.5 - Guida utente alle funzionalità
+description: Una panoramica delle capacità essenziali della AEM 6.5
+seo-description: Una panoramica delle capacità essenziali della AEM 6.5
 translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 45%
 
 ---
 
 
-# Guida utente per le funzionalità di AEM 6.5 {#aem-65-capabilities-user-guides}
+# AEM 6.5 Funzionalità - Guide utente {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Scopri di più sull&#39;installazione, la distribuzione e l&#39;architettura dell&#39;Adobe Experience Manager 6.5](/help/sites-deploying/home.md), inclusa la distribuzione cloud  Adobi Managed Services.
+[Ulteriori informazioni sull&#39;installazione, l&#39;implementazione e l&#39;architettura di Adobe Experience Manager 6.5](/help/sites-deploying/home.md), inclusa la distribuzione cloud dei servizi gestiti Adobe.
 
-[Scopri come gestire un progetto](/help/managing/home.md)AEM.
+[Scopri come gestire un progetto AEM](/help/managing/home.md).
 
 ## AEM Sites {#aem-sites}
 
@@ -28,11 +28,11 @@ ht-degree: 9%
 
 ## AEM Assets {#aem-assets}
 
-[Creazione, gestione, distribuzione e ottimizzazione di risorse digitali.](/help/assets/home.md)
+[Crea, gestisci, distribuisci e ottimizza risorse digitali.](/help/assets/home.md)
 
 ## AEM Forms {#aem-forms}
 
-[Creare, gestire, pubblicare e aggiornare moduli digitali.](/help/forms/home.md)
+[Crea, gestisci, pubblica e aggiorna moduli digitali.](/help/forms/home.md)
 
 ## AEM Screens {#aem-screens}
 
@@ -40,7 +40,7 @@ ht-degree: 9%
 
 ## AEM Communities {#aem-communities}
 
-[Create esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni per social network.](/help/communities/home.md)
+[Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.](/help/communities/home.md)
 
 ## AEM Livefyre {#aem-livefyre}
 
@@ -48,4 +48,4 @@ ht-degree: 9%
 
 ## AEM Mobile {#aem-mobile}
 
-[Creare e gestire il contenuto per le app mobili.](/help/mobile/home.md)
+[Crea e gestisci contenuti per le app mobili.](/help/mobile/home.md)
