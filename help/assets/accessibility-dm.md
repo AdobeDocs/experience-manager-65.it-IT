@@ -19,22 +19,22 @@ ht-degree: 0%
 
 ## Supporto per l&#39;accessibilità da tastiera in [!DNL Dynamic Media]
 
-Poiché [!DNL Dynamic Media] è un plug-in per [!DNL Adobe Experience Manager Assets], la maggior parte del comportamento dei controlli da tastiera è esattamente uguale a quello di [!DNL Experience Manager Assets]. Ad esempio, il `Cancel` pulsante in [!DNL Dynamic Media] ha la stessa evidenziazione dello stato attivo [!DNL Experience Manager Assets]e reagisce alla `Spacebar` chiave come in [!DNL Experience Manager Assets]. Consultate Scelte rapide da [tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
+Poiché [!DNL Dynamic Media] è un plug-in per [!DNL Adobe Experience Manager Assets], la maggior parte del comportamento del controllo da tastiera è esattamente lo stesso di [!DNL Experience Manager Assets]. Ad esempio, il pulsante `Cancel` in [!DNL Dynamic Media] ha la stessa evidenziazione dello stato attivo di [!DNL Experience Manager Assets] e reagisce al tasto `Spacebar` come in [!DNL Experience Manager Assets]. Vedere [Scelte rapide da tastiera in Risorse](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Nella maggior parte dei casi, i tasti supportati dai singoli elementi dell&#39;interfaccia utente [!DNL Dynamic Media] sono evidenti e facili da scoprire. Il controllo della tastiera in [!DNL Dynamic Media] è circa quanto segue:
+Nella maggior parte dei casi, i tasti supportati dai singoli elementi dell&#39;interfaccia utente in [!DNL Dynamic Media] sono evidenti e facili da scoprire. Il controllo della tastiera in [!DNL Dynamic Media] riguarda quanto segue:
 
-* Possibilità di utilizzare `Tab` e `Shift+Tab` tasti per spostarsi tra gli elementi interattivi sulla pagina.
-L&#39;utilizzo di `Tab` rende più attivo il successivo elemento dell&#39;interfaccia utente nell&#39;ordine di tabulazione; l&#39;utilizzo `Shift+Tab` ripristina l&#39;input dell&#39;elemento dell&#39;interfaccia utente precedente.
+* Possibilità di utilizzare i tasti `Tab` e `Shift+Tab` per spostarsi tra gli elementi interattivi sulla pagina.
+L&#39;utilizzo di `Tab` rende più attivo il successivo elemento dell&#39;interfaccia utente nell&#39;ordine di tabulazione; l&#39;utilizzo di `Shift+Tab` riattiva l&#39;elemento dell&#39;interfaccia utente precedente.
 La barra laterale di messa a fuoco segue la posizione naturale dell&#39;elemento dell&#39;interfaccia utente sullo schermo e si sposta in ordine da sinistra a destra, quindi dall&#39;alto verso il basso. Inoltre, se un campo ha un errore, è possibile premere `Tab` per attivarlo.
-* Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare gli elementi standard dell&#39;interfaccia utente, ad esempio pulsanti, elenchi a discesa e così via.
+* Possibilità di utilizzare il tasto `Spacebar` e `Enter` per attivare gli elementi standard dell&#39;interfaccia utente, ad esempio pulsanti, elenco a discesa e così via.
 * Possibilità di visualizzare l&#39;evidenziazione dello stato attivo. L&#39;elemento dell&#39;interfaccia utente attivo può ricevere un&#39;indicazione visiva come bordo intorno all&#39;elemento dell&#39;interfaccia utente.
 * Nell&#39;editor dei punti di attivazione è possibile utilizzare alcuni tasti di scelta rapida personalizzati, ad esempio i tasti freccia, per interagire con elementi dell&#39;interfaccia utente complessi per riposizionare i punti di attivazione.
-* Nell’editor video interattivo, potete usare l’icona `Spacebar` per selezionare un’immagine e aggiungerla a un segmento. Inoltre, potete utilizzare la `Backspace` chiave per eliminare l&#39;elemento selezionato dalla scheda **[!UICONTROL Contenuto]** . Inoltre, premendo `Tab` le funzioni desiderate per spostarsi tra gli elementi interattivi sulla pagina.
+* Nell&#39;editor video interattivo, potete utilizzare il simbolo `Spacebar` per selezionare un&#39;immagine e aggiungerla a un segmento. Inoltre, è possibile utilizzare il tasto `Backspace` per eliminare l&#39;elemento selezionato dalla scheda **[!UICONTROL Content]**. Inoltre, premendo `Tab` è possibile navigare tra gli elementi interattivi della pagina.
 * Nell’editor Ritaglio immagine/Ritaglio avanzato, potete effettuare le seguenti operazioni:
    * Usate i tasti freccia per ritagliare le dimensioni della cornice, riposizionare l’immagine o entrambi.
-   * La prima `Tab` interruzione evidenzia l’intera cornice dell’immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare il fotogramma.
+   * La prima `Tab` interruzione evidenzia l&#39;intera cornice dell&#39;immagine. È quindi possibile utilizzare i tasti freccia sulla tastiera per riposizionare il fotogramma.
    * Le quattro `Tab` fermate successive sono i quattro angoli del telaio. Quando lo stato attivo è posizionato su un angolo cornice, l&#39;angolo è evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo attivo.
-Consultate [Modifica del ritaglio avanzato o del campione avanzato di una singola immagine](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+Vedere [Modifica del ritaglio avanzato o del campione avanzato di una singola immagine](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
@@ -44,20 +44,20 @@ Consultate [Modifica del ritaglio avanzato o del campione avanzato di una singol
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Supporto per la tecnologia di assistenza in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
+## Supporto della tecnologia di assistenza in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
 
-[!DNL Dynamic Media] gli elementi dell&#39;interfaccia utente funzionano con tecnologie di assistenza come gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si spostano i punti di riferimento tramite scelte rapide da tastiera `D` o aree geografiche utilizzando le scelte rapide da tastiera `R`. Inoltre, l&#39;intestazione viene riportata quando si naviga utilizzando la scelta rapida da tastiera del titolo `H`.
+[!DNL Dynamic Media] gli elementi dell&#39;interfaccia utente funzionano con tecnologie di assistenza come gli assistenti vocali. Ad esempio, riconosce i punti di riferimento in una pagina quando si spostano i punti di riferimento utilizzando la scelta rapida da tastiera `D` o aree mediante la scelta rapida da tastiera `R`. Inoltre, viene riportata l&#39;intestazione durante la navigazione tramite la scelta rapida da tastiera del titolo `H`.
 
-## Supporto per l&#39;accessibilità da tastiera nei [!DNL Dynamic Media] visualizzatori {#keyboard-accessibility-for-dm-viewers}
+## Supporto per l&#39;accessibilità da tastiera nei visualizzatori [!DNL Dynamic Media] {#keyboard-accessibility-for-dm-viewers}
 
-Tutti i componenti [!DNL Dynamic Media] per visualizzatori integrati supportano l’accessibilità da tastiera per i clienti.
+Tutti i componenti [!DNL Dynamic Media] visualizzatori integrati supportano l&#39;accessibilità da tastiera per i clienti.
 
-Consultate Accessibilità [della tastiera e navigazione](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori per contenuti multimediali dinamici.
+Consultate [Accessibilità e navigazione da tastiera](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori per contenuti multimediali dinamici.
 
-## Supporto della tecnologia di assistenza nei [!DNL Dynamic Media] visualizzatori {#assistive-technology-support-for-dm-viewers}
+## Supporto della tecnologia di assistenza nei visualizzatori [!DNL Dynamic Media] {#assistive-technology-support-for-dm-viewers}
 
-Tutti i componenti [!DNL Dynamic Media] del visualizzatore supportano ruoli e attributi ARIA (Accessible Rich Internet Applications) per migliorare l&#39;integrazione con tecnologie di supporto come gli assistenti vocali.
-Consultate l’argomento della guida del supporto **per la tecnologia di** assistenza in qualsiasi argomento del visualizzatore personalizzato nella guida di riferimento dei visualizzatori per contenuti multimediali dinamici. Ad esempio, consultate Supporto per la tecnologia [di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video o Supporto per la tecnologia di [assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
+Tutti i componenti [!DNL Dynamic Media] del visualizzatore supportano i ruoli e gli attributi ARIA (Accessible Rich Internet Applications) per migliorare l&#39;integrazione con tecnologie di supporto come gli assistenti vocali.
+Consultate l&#39;argomento della guida **Supporto per la tecnologia di assistenza** in qualsiasi argomento della personalizzazione del visualizzatore nella Guida di riferimento per i visualizzatori per contenuti multimediali dinamici. Ad esempio, consultate [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore video, oppure [Supporto per la tecnologia di assistenza](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattive.
 
 >[!MORELIKETHIS]
 >
