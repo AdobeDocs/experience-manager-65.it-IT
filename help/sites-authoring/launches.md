@@ -12,6 +12,9 @@ discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 96%
 
 ---
 
@@ -46,18 +49,19 @@ La funzione Lanci consente di sviluppare i contenuti per il rilascio futuro di u
 
 I lanci permettono di:
 
-* Creare una copia delle pagine sorgenti:
+* Crea una copia delle pagine sorgente:
 
-   * La copia corrisponde al lancio.
-   * Le pagine sorgenti di primo livello sono dette **Produzione**.
+   * La copia è il lancio.
+   * Le pagine sorgente di primo livello sono note come **Produzione**.
 
       * Le pagine sorgenti possono essere prelevate dai rami multipli (separati).
+
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-* Modifica la configurazione di lancio:
+* Modifica la configurazione del lancio:
 
    * Aggiungi o rimuovi pagine e/o rami al/dal lancio.
-   * Modifica le proprietà di lancio; ad esempio, **Titolo lancio**, **Data lancio**, **Flag pronto** per la produzione.
+   * Modifica le proprietà di lancio, come **Titolo**, **Data lancio** e il flag **Production Ready**.
 
 * Puoi promuovere e pubblicare i contenuti manualmente o automaticamente:
 
@@ -71,7 +75,7 @@ I lanci permettono di:
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
 
       * Il flag **pronto per la produzione**: può essere impostato solo quando si modifica un lancio.
-      * Se il flag **pronto per la produzione** è impostato, il lancio verrà promosso automaticamente sulla pagine di produzione alla **data** **lancio**(**Live**) specificata. Dopo la promozione, le pagine di produzione sono pubblicate automaticamente.\
+      * Se il flag **pronto per la produzione** è impostato, il lancio verrà promosso automaticamente sulla pagine di produzione alla **data** **lancio**(**Live**) specificata. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
          Se la data non è stata impostata, il flag non ha alcun effetto.
 
 
@@ -79,12 +83,14 @@ I lanci permettono di:
 
    * Le modifiche apportate alle pagine sorgenti vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
    * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 * [Crea un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - un lancio all&#39;interno di un lancio:
 
    * L’origine è un lancio esistente.
    * Puoi [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio padre o di pagine sorgenti di primo livello (Produzione).
+
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
    >[!CAUTION]
@@ -93,7 +99,7 @@ I lanci permettono di:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La creazione e la modifica di avvii richiede diritti di accesso a `/content/launches`, come nel caso del gruppo predefinito `content-authors`.
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
 
@@ -103,7 +109,7 @@ La console dei lanci fornisce una panoramica dei tuoi lanci e consente di intrap
 
 * La console **Strumenti**: **Strumenti**, **Sites**, **Lanci**.
 
-* Or directly with [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* Oppure direttamente con [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Lanci nei Riferimenti (console Sites) {#launches-in-references-sites-console}
 
