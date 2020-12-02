@@ -14,10 +14,10 @@ ht-degree: 84%
 ---
 
 
-# AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
+# AEM 6.5 Classic UI Authoring Guida utente {#classic-ui}
 
 + [Panoramica della guida all’authoring con l’interfaccia classica](home.md)
-+ Introduzione all’authoring con l’interfaccia classica {#introduction}
++ Introduzione all&#39;authoring con l&#39;interfaccia classica {#introduction}
    + [Primi passi per gli autori](classic-page-author-first-steps.md)
    + [Authoring nell’interfaccia classica](classicui.md)
    + [Utilizzo dell’ambiente Authoring](author-env.md)
@@ -78,7 +78,7 @@ ht-degree: 84%
    + [Componenti di Adobe Campaign](classic-personalization-ac-components.md)
    + [Targeting con Adobe Campaign](classic-personalization-ac-target.md)
    + [Creazione di moduli di Adobe Campaign in AEM](classic-personalization-ac-forms.md)
-+ Authoring delle risorse nell’interfaccia classica {#assets}
++ Authoring delle risorse nell&#39;interfaccia classica {#assets}
    + [Utilizzo delle risorse](classicui-assets.md)
    + [Distribuzione di risorse Dynamic Media](dynamic-media-assets-delivering.md)
    + [Aggiunta di Risorse multimediali dinamiche alle pagine](dynamic-media-assets-adding-to-page.md)
