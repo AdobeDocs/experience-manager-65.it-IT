@@ -29,7 +29,7 @@ Java API Quick Start(SOAP) è disponibile per il servizio Credential.
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili nella sezione Programmazione con AEM moduli si basano sulla distribuzione di FormsServer su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Gli avvii rapidi disponibili nella sezione Programmazione con AEM moduli si basano sulla distribuzione di FormsServer su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Java API Quick Start(SOAP) è disponibile per il servizio Credential.
 
 ## Avvio rapido (modalità SOAP): Importazione di credenziali tramite l&#39;API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare la credenziale è `Secure`. (vedere [Importazione di credenziali tramite l&#39;API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)di Trust Manager).
+Nell&#39;esempio di codice seguente viene importata una credenziale basata su un file denominato *cred.p12*. Il valore alias utilizzato per importare la credenziale è `Secure`. (Vedere [Importazione di credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -138,7 +138,7 @@ Nell&#39;esempio di codice seguente viene importata una credenziale basata su un
 
 ## Avvio rapido (modalità SOAP): Eliminazione delle credenziali tramite l&#39;API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-Nell&#39;esempio di codice riportato di seguito viene eliminata una credenziale basata su un valore alias *protetto*. (vedere [Eliminazione delle credenziali tramite l&#39;API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)di Trust Manager).
+Nell&#39;esempio di codice riportato di seguito viene eliminata una credenziale basata su un valore alias *secure*. (Vedere [Eliminazione delle credenziali tramite l&#39;API di Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
