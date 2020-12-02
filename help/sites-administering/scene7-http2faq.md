@@ -49,31 +49,31 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 
 * Usa HTTPS sicuro per le tue richieste rich media.
 * Utilizzate la rete CDN (rete di distribuzione dei contenuti)  Adobe inclusa nella licenza per Dynamic Media Classic.
-* Utilizzate un dominio dedicato ( `images.company.com` o `mycompany.scene7.com`), non un dominio Dynamic Media Classic generico (ovvero, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
+* Utilizzate un dominio dedicato (ovvero `images.company.com` o `mycompany.scene7.com`), non un dominio Dynamic Media Classic generico (ovvero `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
 
-   Per trovare i domini, [accedete all’istanza di Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ciascun account società.
+   Per trovare i domini, [accedete all&#39;istanza di Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ciascun account aziendale.
 
    Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]** Cercate il campo con l’etichetta Nome **server** pubblicato. Se utilizzate un dominio Scene7 generico, potete richiedere il passaggio al vostro dominio personalizzato come parte di questa transizione.
 
 ## Qual è la procedura per abilitare HTTP/2 per il mio account Dynamic Media Classic? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. È necessario [utilizzare il Admin Console  per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di supporto e richiedere di passare a HTTP/2; non viene eseguita automaticamente.
+1. È necessario [utilizzare il Admin Console  per creare un caso di supporto](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) e richiedere di passare a HTTP/2; non viene eseguita automaticamente.
 1. Fornite le seguenti informazioni nel caso di assistenza:
 
    * Nome contatto principale, indirizzo e-mail e numero di telefono.
-   * Tutti i domini da trasferire a HTTP2. Questo è, `images.company.com` o `mycompany.scene7.com`.
+   * Tutti i domini da trasferire a HTTP2. Ovvero `images.company.com` o `mycompany.scene7.com`.
 
-   Per trovare i domini, [accedete all’istanza di Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ciascun account società.
+   Per trovare i domini, [accedete all&#39;istanza di Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ciascun account aziendale.
 
-   Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]** Cercate il campo denominato Nome server **[!UICONTROL pubblicato.]**
+   Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]** Cercate il campo denominato Nome server  **[!UICONTROL pubblicato.]**
 
    * Verificate di utilizzare il protocollo HTTPS protetto per le richieste rich media.
    * Verifica di utilizzare la CDN tramite  Adobe e di non essere gestito con una relazione diretta.
-   * Verifica di utilizzare un dominio dedicato. Ovvero `images.company.com` o `mycompany.scene7.com`non è un dominio Scene7 generico come `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Verifica di utilizzare un dominio dedicato. Ovvero, `images.company.com` o `mycompany.scene7.com`, non un dominio Scene7 generico come `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Per trovare i domini, [accedete all’istanza di Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ciascun account società.
+   Per trovare i domini, [accedete all&#39;istanza di Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) per ciascun account aziendale.
 
-   Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]** Cercate il campo denominato Nome server **[!UICONTROL pubblicato.]** Se utilizzate un dominio Scene7 generico, potete richiedere il passaggio al vostro dominio personalizzato come parte di questa transizione.
+   Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]** Cercate il campo denominato Nome server  **[!UICONTROL pubblicato.]** Se utilizzate un dominio Scene7 generico, potete richiedere il passaggio al vostro dominio personalizzato come parte di questa transizione.
 
    1. Il supporto tecnico aggiunge l’utente alla lista di attesa dei clienti HTTP/2 in base all’ordine in cui sono state inviate le richieste.
    1. Quando  Adobe è pronto per gestire la richiesta, il supporto vi contatterà per coordinare la transizione e impostare una data di destinazione.
@@ -97,4 +97,4 @@ Il contenuto non memorizzato nella cache arriva direttamente  server  origine de
 
 ## Come verificare se un URL o un sito Web è attivato con HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-È necessario scaricare un&#39;esternalizzazione da utilizzare con il browser Web. Per Firefox e Chrome esiste un&#39;estensione chiamata **[!UICONTROL HTTP/2 e SPDY Indicator.]** I browser supportano solo HTTP/2 in modo sicuro, pertanto è necessario richiamare un URL con HTTPS per la verifica. Se HTTP/2 è supportato, questo è indicato dall’estensione sotto forma di simbolo di Flash blu e di intestazione &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
+È necessario scaricare un&#39;esternalizzazione da utilizzare con il browser Web. Per Firefox e Chrome esiste un&#39;estensione denominata **[!UICONTROL HTTP/2 e SPDY Indicator.]** I browser supportano solo HTTP/2 in modo sicuro, pertanto è necessario richiamare un URL con HTTPS per la verifica. Se HTTP/2 è supportato, questo è indicato dall’estensione sotto forma di simbolo di Flash blu e di intestazione &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
