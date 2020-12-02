@@ -44,7 +44,7 @@ Nella tabella seguente sono elencati i nomi degli eventi che si verificano per g
 | ContextHub.Constants.SERVICE_LAST_URL_KEY | Memorizza l’URL specifico del servizio JSON utilizzato durante l’ultima chiamata | /_/url |
 | ContextHub.Constants.IS_CONTAINER_EXPANDED | Indica se l&#39;interfaccia utente di ContextHub è espansa | /_/container-espanso |
 
-### Costanti evento interfaccia utente {#ui-event-constants}
+### Costanti evento interfaccia {#ui-event-constants}
 
 Nella tabella seguente sono elencati i nomi degli eventi che si verificano per l’interfaccia utente ContextHub.
 
@@ -152,7 +152,7 @@ La classe base per gli store ContextHub.
 
 #### evento {#eventing}
 
-Un oggetto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) . Utilizzare questo oggetto per eseguire il binding delle funzioni per memorizzare gli eventi. Per informazioni sul valore predefinito e sull&#39;inizializzazione, vedere [init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).
+Un oggetto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing). Utilizzare questo oggetto per eseguire il binding delle funzioni per memorizzare gli eventi. Per informazioni sul valore predefinito e sull&#39;inizializzazione, vedere [init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).
 
 #### name {#name}
 
@@ -160,30 +160,30 @@ Il nome dello store.
 
 #### persistenza {#persistence}
 
-Un oggetto ContextHub.Utils.Persistenza. Per informazioni sul valore predefinito e sull&#39;inizializzazione, vedete `[init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).`
+Un oggetto ContextHub.Utils.Persistenza. Per informazioni sul valore predefinito e sull&#39;inizializzazione, vedere `[init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).`
 
 ### Funzioni (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems(struttura ad albero, opzioni) {#addallitems-tree-options}
+#### addAllItems(tree, options) {#addallitems-tree-options}
 
-Unisce un oggetto dati o una matrice ai dati dello store. Ogni coppia chiave/valore nell&#39;oggetto o nella matrice viene aggiunta allo store (tramite la `setItem` funzione):
+Unisce un oggetto dati o una matrice ai dati dello store. Ogni coppia chiave/valore nell&#39;oggetto o nella matrice viene aggiunta allo store (tramite la funzione `setItem`):
 
-* **Oggetto:** Le chiavi sono i nomi delle proprietà.
-* **Array:** Le chiavi sono gli indici degli array.
+* **Oggetto:** I tasti sono i nomi delle proprietà.
+* **Array:** Le chiavi sono indici di array.
 
 I valori possono essere oggetti.
 
 **Parametri**
 
-* **struttura:** (Oggetto o array) I dati da aggiungere allo store.
-* **opzioni:** (Oggetto) Un oggetto facoltativo di opzioni passato alla funzione setItem. Per informazioni, vedi il `options` parametro di [setItem(key,value,options)](/help/sites-developing/contexthub-api.md#setitem-key-value-options).
+* **tree:** (Object o array) I dati da aggiungere allo store.
+* **options:** (Object) Un oggetto facoltativo di opzioni passato alla funzione setItem. Per informazioni, vedere il parametro `options` di [setItem(key,value,options)](/help/sites-developing/contexthub-api.md#setitem-key-value-options).
 
 **Valore restituito**
 
-Un `boolean` valore:
+Valore `boolean`:
 
-* Il valore di `true` indica che l&#39;oggetto dati è stato memorizzato.
-* Il valore di `false` indica che l&#39;archivio dati è invariato.
+* Un valore di `true` indica che l&#39;oggetto dati è stato memorizzato.
+* Un valore di `false` indica che l&#39;archivio dati è invariato.
 
 #### addReference(key, anotherKey) {#addreference-key-anotherkey}
 
@@ -191,20 +191,20 @@ Crea un riferimento da una chiave a un&#39;altra chiave. Una chiave non può far
 
 **Parametri**
 
-* **key:** La chiave a cui fa riferimento `anotherKey`.
+* **key:** la chiave a cui fa riferimento  `anotherKey`.
 
-* **altra chiave:** Chiave a cui fa riferimento `key`.
+* **altra chiave:** Chiave a cui fa riferimento  `key`.
 
 **Valore restituito**
 
-Un `boolean` valore:
+Valore `boolean`:
 
 * Un valore di `true` indica che il riferimento è stato aggiunto.
 * Un valore di `false` indica che non è stato aggiunto alcun riferimento.
 
 #### announceReadiness() {#announcereadiness}
 
-Attiva l’ `ready` evento per lo store. Questa funzione non ha parametri e non restituisce alcun valore.
+Attiva l&#39;evento `ready` per lo store. Questa funzione non ha parametri e non restituisce alcun valore.
 
 #### clean() {#clean}
 
@@ -222,13 +222,13 @@ Restituisce il valore associato a una chiave.
 
 Un oggetto che rappresenta il valore della chiave.
 
-#### getKeys(includeInternali) {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 Recupera le chiavi dallo store. Facoltativamente potete recuperare le chiavi utilizzate internamente dal framework ContextHub.
 
 **Parametri**
 
-* **includeInternali:** Un valore di `true` include le chiavi utilizzate internamente nei risultati. Queste chiavi iniziano con il carattere di sottolineatura (&quot;_&quot;). Il valore predefinito è `false`.
+* **includeInterni:** Un valore di  `true` include nei risultati le chiavi utilizzate internamente. Queste chiavi iniziano con il carattere di sottolineatura (&quot;_&quot;). Il valore predefinito è `false`.
 
 **Valore restituito**
 
@@ -242,9 +242,9 @@ Recupera i riferimenti dallo store.
 
 Un array che utilizza chiavi di riferimento come indici per le chiavi di riferimento:
 
-* Le chiavi di riferimento corrispondono al `key` parametro della `addReference` funzione.
+* Le chiavi di riferimento corrispondono al parametro `key` della funzione `addReference`.
 
-* Le chiavi di riferimento corrispondono al `anotherKey` parametro della `addReference` funzione.
+* Le chiavi di riferimento corrispondono al parametro `anotherKey` della funzione `addReference`.
 
 #### getTree(includeInterni) {#gettree-includeinternals}
 
@@ -252,7 +252,7 @@ Recupera la struttura dati dallo store. Facoltativamente potete includere le cop
 
 **Parametri**
 
-* `includeInternals:` Un valore di `true` include nei risultati coppie chiave/valore utilizzate internamente. Le chiavi di questi dati iniziano con il carattere di sottolineatura (&quot;_&quot;). Il valore predefinito è `false`.
+* `includeInternals:` Un valore di  `true` include coppie chiave/valore utilizzate internamente nei risultati. Le chiavi di questi dati iniziano con il carattere di sottolineatura (&quot;_&quot;). Il valore predefinito è `false`.
 
 **Valore restituito**
 
@@ -264,7 +264,7 @@ Inizializza lo store.
 
 * Imposta i dati dello store su un oggetto vuoto.
 * Imposta i riferimenti dell&#39;archivio su un oggetto vuoto.
-* eventChannel è data:*name*, dove *name* è il nome dell&#39;archivio.
+* eventChannel è un dato:*name*, dove *name* è il nome dello store.
 
 * StoreDataKey è /store/*name*, dove *name* è il nome dello store.
 
@@ -296,23 +296,23 @@ Sospende l&#39;evento per lo store in modo da non attivare eventi. Questa funzio
 
 Rimuove una coppia chiave/valore dallo store.
 
-Quando una chiave viene rimossa, la funzione attiva l&#39; `data` evento. I dati dell&#39;evento includono il nome dell&#39;archivio, il nome della chiave che è stata rimossa, il valore rimosso, il nuovo valore per la chiave (null) e il tipo di azione &quot;remove&quot;.
+Quando una chiave viene rimossa, la funzione attiva l&#39;evento `data`. I dati dell&#39;evento includono il nome dell&#39;archivio, il nome della chiave che è stata rimossa, il valore rimosso, il nuovo valore per la chiave (null) e il tipo di azione &quot;remove&quot;.
 
-Facoltativamente, potete impedire l&#39;attivazione dell&#39; `data` evento.
+Facoltativamente, potete impedire l&#39;attivazione dell&#39;evento `data`.
 
 **Parametri**
 
-* **key:** (Stringa) Il nome della chiave da rimuovere.
+* **key:** (String) Il nome della chiave da rimuovere.
 * **opzioni:** (Oggetto) Un oggetto di opzioni. Le seguenti proprietà dell&#39;oggetto sono valide:
 
-   * silenzioso: Un valore di `true` impedisce l&#39;attivazione dell&#39; `data` evento. Il valore predefinito è `false`.
+   * silenzioso: Il valore `true` impedisce l&#39;attivazione dell&#39;evento `data`. Il valore predefinito è `false`.
 
 **Valore restituito**
 
-Un `boolean` valore:
+Valore `boolean`:
 
 * Un valore di `true` indica che la coppia chiave/valore è stata rimossa.
-* Il valore di `false` indica che l&#39;archivio dati è invariato perché la chiave non è stata trovata nello store.
+* Un valore di `false` indica che l&#39;archivio dati è invariato perché la chiave non è stata trovata nello store.
 
 #### removeReference(key) {#removereference-key}
 
@@ -320,16 +320,16 @@ Rimuove un riferimento dallo store.
 
 **Parametri**
 
-* **key:** Il riferimento chiave da rimuovere. Questo parametro corrisponde al `key` parametro della `addReference` funzione.
+* **key:** il riferimento chiave da rimuovere. Questo parametro corrisponde al parametro `key` della funzione `addReference`.
 
 **Valore restituito**
 
-Un `boolean` valore:
+Valore `boolean`:
 
 * Un valore di `true` indica che il riferimento è stato rimosso.
-* Il valore di `false` indica che la chiave non era valida e che lo store non è cambiato.
+* Un valore di `false` indica che la chiave non era valida e che lo store è rimasto invariato.
 
-#### reset(keepRemainData) {#reset-keepremainingdata}
+#### reset(keepRestainData) {#reset-keepremainingdata}
 
 Ripristina i valori iniziali dei dati persistenti dello store. Facoltativamente, puoi rimuovere tutti gli altri dati dallo store. L&#39;evento viene messo in pausa per lo store mentre lo store viene reimpostato. Questa funzione non restituisce alcun valore.
 
@@ -337,7 +337,7 @@ I valori iniziali sono forniti nella proprietà initialValues dell&#39;oggetto c
 
 **Parametri**
 
-* **keepRestainData:** (Booleano) Un valore true causa la persistenza dei dati non iniziali. Se si imposta il valore false, tutti i dati vengono rimossi, ad eccezione dei valori iniziali.
+* **keepRemainData:** (Boolean) Un valore true causa la persistenza dei dati non iniziali. Se si imposta il valore false, tutti i dati vengono rimossi, ad eccezione dei valori iniziali.
 
 Ripristina i valori iniziali dei dati persistenti dello store. Facoltativamente, puoi rimuovere tutti gli altri dati dallo store. L&#39;evento viene messo in pausa per lo store mentre lo store viene reimpostato. Questa funzione non restituisce alcun valore.
 
@@ -353,13 +353,13 @@ Recupera una chiave di riferimento. Facoltativamente, è possibile specificare i
 
 **Parametri**
 
-* **key:** (String) La chiave per la quale risolvere il riferimento. Questo `key` parametro corrisponde al `key` parametro della `addReference` funzione.
+* **key:** (String) La chiave per la quale risolvere il riferimento. Questo parametro `key` corrisponde al parametro `key` della funzione `addReference`.
 
-* **try:** (Numero) Il numero di iterazioni da utilizzare.
+* **try:** (Number) Numero di iterazioni da utilizzare.
 
 **Valore restituito**
 
-Un `string` valore che rappresenta la chiave di riferimento. Se non viene risolto alcun riferimento, viene restituito il valore del `key` parametro.
+Un valore `string` che rappresenta la chiave di riferimento. Se non viene risolto alcun riferimento, viene restituito il valore del parametro `key`.
 
 #### curriculumEventing() {#resumeeventing}
 
@@ -369,29 +369,29 @@ Riprende l&#39;evento per lo store in modo da attivare gli eventi. Questa funzio
 
 Aggiunge una coppia chiave/valore allo store.
 
-Attiva l&#39; `data` evento solo se il valore della chiave è diverso dal valore attualmente memorizzato per la chiave. Facoltativamente, potete impedire l&#39;attivazione dell&#39; `data` evento.
+Attiva l&#39;evento `data` solo se il valore della chiave è diverso dal valore attualmente memorizzato per la chiave. Facoltativamente, potete impedire l&#39;attivazione dell&#39;evento `data`.
 
-I dati dell&#39;evento includono il nome dello store, la chiave, il valore precedente, il nuovo valore e il tipo di azione di `set`.
+I dati dell&#39;evento includono il nome dello store, la chiave, il valore precedente, il nuovo valore e il tipo di azione `set`.
 
 **Parametri**
 
 * **key:** (String) Il nome della chiave.
 * **opzioni:** (Oggetto) Un oggetto di opzioni. Le seguenti proprietà dell&#39;oggetto sono valide:
 
-   * silenzioso: Un valore di `true` impedisce l&#39;attivazione dell&#39; `data` evento. Il valore predefinito è `false`.
+   * silenzioso: Il valore `true` impedisce l&#39;attivazione dell&#39;evento `data`. Il valore predefinito è `false`.
 
-* **value:** (Oggetto) Il valore da associare alla chiave.
+* **value:** (Object) Il valore da associare alla chiave.
 
 **Valore restituito**
 
-Un `boolean` valore:
+Valore `boolean`:
 
-* Il valore di `true` indica che l&#39;oggetto dati è stato memorizzato.
-* Il valore di `false` indica che l&#39;archivio dati è invariato.
+* Un valore di `true` indica che l&#39;oggetto dati è stato memorizzato.
+* Un valore di `false` indica che l&#39;archivio dati è invariato.
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Uno store che contiene dati JSON. I dati vengono recuperati da un servizio JSONP esterno o, facoltativamente, da un servizio che restituisce dati JSON. Specificate i dettagli del servizio utilizzando la [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) funzione al momento della creazione di un&#39;istanza di questa classe.
+Uno store che contiene dati JSON. I dati vengono recuperati da un servizio JSONP esterno o, facoltativamente, da un servizio che restituisce dati JSON. Specificare i dettagli del servizio utilizzando la funzione [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) quando si crea un&#39;istanza di questa classe.
 
 Lo store utilizza la persistenza in memoria (variabile Javascript). I dati dello store sono disponibili solo per tutta la durata della pagina.
 
@@ -418,7 +418,7 @@ Configura i dettagli per la connessione al servizio JSONP utilizzato da questo o
       * true: https://
       * false: https://
 
-* **override:** (Boolean). Un valore di `true` determina la sostituzione della configurazione del servizio esistente con le proprietà di `serviceConfig`. Un valore di `false` determina l&#39;unione delle proprietà di configurazione del servizio esistenti con quelle di `serviceConfig`.
+* **override:** (booleano). Un valore di `true` determina la sostituzione della configurazione del servizio esistente con le proprietà di `serviceConfig`. Un valore di `false` determina l&#39;unione delle proprietà di configurazione del servizio esistenti con le proprietà di `serviceConfig`.
 
 #### getRawResponse() {#getrawresponse}
 
@@ -437,11 +437,11 @@ Recupera l&#39;oggetto del servizio per questo oggetto ContextHub.Store.JSONPSto
 Un oggetto con le seguenti proprietà:
 
 * **host:** (String) Il nome del server o l&#39;indirizzo IP.
-* **jsonp:** (Booleano) Il valore true indica che il servizio è un servizio JSONP, false in caso contrario. Se true, il callback {callback: &quot;ContextHub.Callback.*L&#39;oggetto Object.name*} viene aggiunto all&#39;oggetto service.params.
+* **jsonp:** (booleano) Il valore true indica che il servizio è un servizio JSONP, false in caso contrario. Se true, il callback {callback: &quot;ContextHub.Callback.*L&#39;oggetto Object.name*} viene aggiunto all&#39;oggetto service.params.
 
-* **params:** (Oggetto) Parametri URL rappresentati come proprietà dell&#39;oggetto. I nomi dei parametri sono nomi di proprietà e i valori dei parametri sono valori di proprietà.
-* **percorso:** (String) Il percorso del servizio.
-* **porta:** (Numero) Il numero di porta del servizio.
+* **params:** (Object) parametri URL rappresentati come proprietà dell&#39;oggetto. I nomi dei parametri sono nomi di proprietà e i valori dei parametri sono valori di proprietà.
+* **path:** (String) Il percorso del servizio.
+* **porta:** (numero) Il numero di porta del servizio.
 * **secure:** (String o Boolean) Determina il protocollo da utilizzare per l&#39;URL del servizio:
 
    * auto: //
@@ -454,11 +454,11 @@ Recupera l&#39;URL del servizio JSONP.
 
 **Parametri**
 
-* **resolve:** (Booleano) Determina se includere nell&#39;URL i parametri risolti. Un valore di `true` risolve i parametri e `false` non lo è.
+* **resolve:** (booleano) Determina se includere nell&#39;URL i parametri risolti. Un valore di `true` risolve i parametri e `false` no.
 
 **Valore restituito**
 
-Un `string` valore che rappresenta l&#39;URL del servizio.
+Un valore `string` che rappresenta l&#39;URL del servizio.
 
 #### init(name, config) {#init-name-config-1}
 
@@ -467,15 +467,15 @@ inizializza l&#39;oggetto ContextHub.Store.JSONPStore.
 **Parametri**
 
 * **name:** (String) Il nome dello store.
-* **config:** (Oggetto) Un oggetto che contiene la proprietà service. L&#39;oggetto JSONPStore utilizza le proprietà dell&#39; `service` oggetto per creare l&#39;URL del servizio JSONP:
+* **config:** (Object) Un oggetto che contiene la proprietà service. L&#39;oggetto JSONPStore utilizza le proprietà dell&#39;oggetto `service` per creare l&#39;URL del servizio JSONP:
 
    * eventDeferring: 32.
-   * evento: L&#39;oggetto ContextHub.Utils.Eventing per lo store. Il valore predefinito è l&#39; `ContextHub.eventing` oggetto.
+   * evento: L&#39;oggetto ContextHub.Utils.Eventing per lo store. Il valore predefinito è l&#39;oggetto `ContextHub.eventing`.
    * persistenza: L&#39;oggetto ContextHub.Utils.Persistenza per lo store. Per impostazione predefinita, viene utilizzata la persistenza della memoria (oggetto Javascript).
    * service: (Oggetto)
 
       * host: (String) Il nome del server o l&#39;indirizzo IP.
-      * jsonp: (Booleano) Il valore true indica che il servizio è un servizio JSONP, false in caso contrario. Quando è true, l&#39; `{callback: "ContextHub.Callbacks.*Object.name*}`oggetto viene aggiunto a `service.params`.
+      * jsonp: (Booleano) Il valore true indica che il servizio è un servizio JSONP, false in caso contrario. Se true, l&#39;oggetto `{callback: "ContextHub.Callbacks.*Object.name*}`viene aggiunto a `service.params`.
       * params: (Oggetto) Parametri URL rappresentati come proprietà dell&#39;oggetto. I nomi e i valori dei parametri sono rispettivamente i nomi e i valori delle proprietà dell&#39;oggetto.
       * percorso: (String) Il percorso del servizio.
       * porta: (Numero) Il numero di porta del servizio.
@@ -485,18 +485,18 @@ inizializza l&#39;oggetto ContextHub.Store.JSONPStore.
          * true: https://
          * false: https://
       * timeout: (Numero) Il tempo di attesa che il servizio JSONP risponda prima del timeout, in millisecondi.
-      * ttl: Il tempo minimo in millisecondi che trascorre tra le chiamate al servizio JSONP. (Vedere la funzione [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) ).
+      * ttl: Il tempo minimo in millisecondi che trascorre tra le chiamate al servizio JSONP. (Vedere la funzione [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
 
 
 #### queryService(reload) {#queryservice-reload}
 
-Interrompe il servizio JSONP remoto e memorizza nella cache la risposta. Se il tempo trascorso dalla precedente chiamata a questa funzione è inferiore al valore di `config.service.ttl`, il servizio non viene chiamato e la risposta nella cache non viene modificata. Facoltativamente, puoi forzare la chiamata al servizio. La `config.service.ttl`proprietà viene impostata quando si chiama la funzione [init](/help/sites-developing/contexthub-api.md#init-name-config) per inizializzare lo store.
+Interrompe il servizio JSONP remoto e memorizza nella cache la risposta. Se il tempo trascorso dalla precedente chiamata a questa funzione è inferiore al valore di `config.service.ttl`, il servizio non viene chiamato e la risposta nella cache non viene modificata. Facoltativamente, puoi forzare la chiamata al servizio. La proprietà `config.service.ttl`è impostata quando si chiama la funzione [init](/help/sites-developing/contexthub-api.md#init-name-config) per inizializzare lo store.
 
 Attiva l’evento ready al termine della query. Se l&#39;URL del servizio JSONP non è impostato, la funzione non esegue alcuna operazione.
 
 **Parametri**
 
-* **ricaricare:** (Booleano) Il valore true rimuove la risposta memorizzata nella cache e forza la chiamata al servizio JSONP.
+* **reload:** (booleano) Il valore true rimuove la risposta memorizzata nella cache e forza la chiamata del servizio JSONP.
 
 #### reset {#reset}
 
@@ -506,7 +506,7 @@ I valori iniziali sono forniti nella proprietà initialValues dell&#39;oggetto c
 
 **Parametri**
 
-* **keepRestainData:** (Booleano) Un valore true causa la persistenza dei dati non iniziali. Se si imposta il valore false, tutti i dati vengono rimossi, ad eccezione dei valori iniziali.
+* **keepRemainData:** (Boolean) Un valore true causa la persistenza dei dati non iniziali. Se si imposta il valore false, tutti i dati vengono rimossi, ad eccezione dei valori iniziali.
 
 #### resolveParameter(f) {#resolveparameter-f}
 
@@ -514,7 +514,7 @@ Risolve il parametro specificato.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-ContextHub.Store.PersistedJSONPStore estende [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) in modo da ereditare tutte le funzioni di tale classe. Tuttavia, i dati recuperati dal servizio JSONP vengono memorizzati in base alla configurazione della persistenza ContextHub. (Vedere Modalità [di persistenza](/help/sites-developing/ch-adding.md#persistence-modes).)
+ContextHub.Store.PersistedJSONPStore estende [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) in modo da ereditare tutte le funzioni di tale classe. Tuttavia, i dati recuperati dal servizio JSONP vengono memorizzati in base alla configurazione della persistenza ContextHub. (Vedere [Modalità di persistenza](/help/sites-developing/ch-adding.md#persistence-modes).)
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
@@ -532,13 +532,13 @@ Gestisce i moduli dell’interfaccia utente e i renderer dei moduli dell’inter
 
 #### registerRenderer(moduleType, renderer, DontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registra un renderer di moduli dell&#39;interfaccia utente con ContextHub. Dopo la registrazione del renderer, può essere utilizzato per [creare moduli](ch-configuring.md#adding-a-ui-module)di interfaccia utente. Utilizzate questa funzione quando [estendete ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) per creare un renderer di moduli interfaccia utente personalizzato.
+Registra un renderer di moduli dell&#39;interfaccia utente con ContextHub. Dopo la registrazione del renderer, può essere utilizzato per [creare moduli dell&#39;interfaccia utente](ch-configuring.md#adding-a-ui-module). Utilizzate questa funzione quando [estendete ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) per creare un renderer di moduli dell&#39;interfaccia utente personalizzato.
 
 **Parametri**
 
-* **moduleType:** (String) Identificatore per il renderer del modulo dell&#39;interfaccia utente. Se un renderer è già registrato utilizzando il valore specificato, il renderer esistente non viene registrato prima della registrazione del renderer.
+* **moduleType:** (String) L&#39;identificatore del renderer del modulo dell&#39;interfaccia utente. Se un renderer è già registrato utilizzando il valore specificato, il renderer esistente non viene registrato prima della registrazione del renderer.
 * **renderer:** (String) Il nome della classe che esegue il rendering del modulo dell&#39;interfaccia utente.
-* **dontRender:** (Booleano) Impostato `true` per impedire il rendering dell&#39;interfaccia utente ContextHub dopo la registrazione del renderer. Il valore predefinito è `false`.
+* **dontRender:** (booleano) Impostato in modo  `true` da impedire il rendering dell&#39;interfaccia utente ContextHub dopo la registrazione del renderer. Il valore predefinito è `false`.
 
 **Esempio**
 
@@ -560,11 +560,11 @@ Determina se esiste un cookie.
 
 **Parametri**
 
-* **key:** Un elemento `String` che contiene la chiave del cookie per il quale si sta eseguendo il test.
+* **key:** Un elemento  `String` che contiene la chiave del cookie per il quale si sta eseguendo il test.
 
 **Valore restituito**
 
-Il `boolean` valore true indica che il cookie esiste.
+Il valore `boolean` di true indica che il cookie esiste.
 
 **Esempio**
 
@@ -603,7 +603,7 @@ Restituisce un valore di cookie.
 
 **Parametri**
 
-* **key:** Chiave del cookie per il quale si desidera ottenere il valore.
+* **key:** la chiave del cookie per il quale si desidera ottenere il valore.
 
 **Valore restituito**
 
@@ -644,9 +644,9 @@ Rimuove un cookie. Per rimuovere il cookie, il valore è impostato su una string
 
 **Parametri**
 
-* **key:** Un `String` valore che rappresenta la chiave del cookie da rimuovere.
+* **key:** Un  `String` valore che rappresenta la chiave del cookie da rimuovere.
 
-* **opzioni:** Un oggetto che contiene i valori delle proprietà per la configurazione degli attributi del cookie. Vedere la ` [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)` funzione per ulteriori informazioni. La `expires` proprietà non ha effetto.
+* **opzioni:** Un oggetto che contiene i valori delle proprietà per la configurazione degli attributi del cookie. Per ulteriori informazioni, vedere la funzione ` [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)`. La proprietà `expires` non ha alcun effetto.
 
 **Valore restituito**
 
@@ -669,8 +669,8 @@ Crea un cookie della chiave e del valore specificati e aggiunge il cookie al doc
 * **opzioni:** (Facoltativo) Un oggetto che contiene una delle seguenti proprietà che configurano gli attributi del cookie:
 
    * expires: Un valore `date` o `number` che specifica quando scade il cookie. Un valore data specifica l&#39;ora assoluta di scadenza. Un numero (in giorni) imposta l&#39;ora di scadenza sull&#39;ora corrente più il numero. Il valore predefinito è `undefined`.
-   * secure: Un `boolean` valore che specifica l&#39; `Secure` attributo del cookie. Il valore predefinito è `false`.
-   * percorso: Un `String` valore da utilizzare come `Path` attributo del cookie. Il valore predefinito è `undefined`.
+   * secure: Un valore `boolean` che specifica l&#39;attributo `Secure` del cookie. Il valore predefinito è `false`.
+   * percorso: Un valore `String` da utilizzare come attributo `Path` del cookie. Il valore predefinito è `undefined`.
 
 **Valore restituito**
 
@@ -693,9 +693,9 @@ Rimuove tutti i cookie che corrispondono a un determinato filtro. I cookie vengo
 
 **Parametri**
 
-* **filter:** L&#39; `filter` argomento da utilizzare nella chiamata alla `[getKeys](/help/sites-developing/contexthub-api.md#getkeys-filter)` funzione.
+* **filter:** L&#39; `filter` argomento da utilizzare nella chiamata alla  `[getKeys](/help/sites-developing/contexthub-api.md#getkeys-filter)` funzione.
 
-* **opzioni:** L&#39; `options` argomento da utilizzare nella chiamata alla `[removeItem](/help/sites-developing/contexthub-api.md#removeitem-key-options)` funzione.
+* **opzioni:** L&#39; `options` argomento da utilizzare nella chiamata alla  `[removeItem](/help/sites-developing/contexthub-api.md#removeitem-key-options)` funzione.
 
 **Valore restituito**
 
@@ -707,15 +707,15 @@ Consente di eseguire il binding e la disassociazione delle funzioni agli eventi 
 
 ### Funzioni (ContextHub.Utils.Eventing) {#functions-contexthub-utils-eventing}
 
-#### off(name, selector) {#off-name-selector}
+#### off(name, selettore) {#off-name-selector}
 
 Separa una funzione da un evento.
 
 **Parametri**
 
-* **name:** Il [nome dell&#39;evento](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) per il quale si desidera annullare il binding della funzione.
+* **name:** Il  [nome dell&#39;](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) evento per il quale si sta annullando il binding della funzione.
 
-* **selettore:** Selettore che identifica il binding. (Vedere il `selector` parametro per le funzioni [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) e [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) ).
+* **selettore:** Il selettore che identifica il binding. (Vedere il parametro `selector` per le funzioni [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) e [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents)).
 
 **Valore restituito**
 
@@ -727,16 +727,16 @@ Collega una funzione a un evento. La funzione viene chiamata ogni volta che si v
 
 **Parametri**
 
-* **name:** (Stringa) Il [nome dell&#39;evento](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) a cui si sta effettuando il binding della funzione.
+* **name:** (String) Il  [nome dell&#39;](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) evento a cui si sta effettuando il binding della funzione.
 
-* **handler:** (Funzione) La funzione da associare all&#39;evento.
-* **selettore:** (String) Un identificatore univoco per il binding. È necessario che il selettore identifichi il binding se si desidera utilizzare la `off` funzione per rimuovere il binding.
+* **handler:** (Function) La funzione da associare all&#39;evento.
+* **selector:** (String) Un identificatore univoco per il binding. È necessario che il selettore identifichi il binding se si desidera utilizzare la funzione `off` per rimuovere il binding.
 
-* **triggerForPastEvents:** (Boolean) Indica se il gestore deve essere eseguito per gli eventi che si sono verificati in passato. Un valore di `true` chiama il gestore per gli eventi passati. Un valore che `false` richiama il gestore per gli eventi futuri. Il valore predefinito è `true`.
+* **triggerForPastEvents:** (Boolean) Indica se il gestore deve essere eseguito per gli eventi che si sono verificati in passato. Un valore di `true` richiama il gestore per gli eventi passati. Un valore di `false` richiama il gestore per gli eventi futuri. Il valore predefinito è `true`.
 
 **Valore restituito**
 
-Quando l&#39; `triggerForPastEvents` argomento è `true`, questa funzione restituisce un `boolean` valore che indica se l&#39;evento si è verificato in passato:
+Quando l&#39;argomento `triggerForPastEvents` è `true`, questa funzione restituisce un valore `boolean` che indica se l&#39;evento si è verificato in passato:
 
 * `true`: L&#39;evento si è verificato in passato e il gestore verrà chiamato.
 * `false`: L&#39;evento non si è verificato in passato.
@@ -769,16 +769,16 @@ Collega una funzione a un evento. La funzione viene chiamata una sola volta, per
 
 **Parametri**
 
-* **name:** (Stringa) Il [nome dell&#39;evento](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) a cui si sta effettuando il binding della funzione.
+* **name:** (String) Il  [nome dell&#39;](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) evento a cui si sta effettuando il binding della funzione.
 
-* **handler:** (Funzione) La funzione da associare all&#39;evento.
-* **selettore:** (String) Un identificatore univoco per il binding. È necessario che il selettore identifichi il binding se si desidera utilizzare la `off` funzione per rimuovere il binding.
+* **handler:** (Function) La funzione da associare all&#39;evento.
+* **selector:** (String) Un identificatore univoco per il binding. È necessario che il selettore identifichi il binding se si desidera utilizzare la funzione `off` per rimuovere il binding.
 
-* **triggerForPastEvents:** (Boolean) Indica se il gestore deve essere eseguito per gli eventi che si sono verificati in passato. Un valore di `true` chiama il gestore per gli eventi passati. Un valore che `false` richiama il gestore per gli eventi futuri. Il valore predefinito è `true`.
+* **triggerForPastEvents:** (Boolean) Indica se il gestore deve essere eseguito per gli eventi che si sono verificati in passato. Un valore di `true` richiama il gestore per gli eventi passati. Un valore di `false` richiama il gestore per gli eventi futuri. Il valore predefinito è `true`.
 
 **Valore restituito**
 
-Quando l&#39; `triggerForPastEvents` argomento è `true`, questa funzione restituisce un `boolean` valore che indica se l&#39;evento si è verificato in passato:
+Quando l&#39;argomento `triggerForPastEvents` è `true`, questa funzione restituisce un valore `boolean` che indica se l&#39;evento si è verificato in passato:
 
 * `true`: L&#39;evento si è verificato in passato e il gestore verrà chiamato.
 * `false`: L&#39;evento non si è verificato in passato.
@@ -797,8 +797,8 @@ Fa sì che un oggetto erediti le proprietà e i metodi di un altro oggetto.
 
 **Parametri**
 
-* **bambino:** (Oggetto) L&#39;oggetto che eredita.
-* **parent:** (Oggetto) L&#39;oggetto che definisce le proprietà e i metodi ereditati.
+* **child:** (Object) L&#39;oggetto che eredita.
+* **parent:** (Object) L&#39;oggetto che definisce le proprietà e i metodi ereditati.
 
 ## ContextHub.Utils.JSON {#contexthub-utils-json}
 
@@ -812,7 +812,7 @@ Analizza un valore di stringa come JSON e lo converte in un oggetto javascript.
 
 **Parametri**
 
-* **data:** Un valore stringa in formato JSON.
+* **data:** valore di stringa in formato JSON.
 
 **Valore restituito**
 
@@ -840,7 +840,7 @@ Serializza i valori e gli oggetti JavaScript in valori stringa del formato JSON.
 
 **Valore restituito**
 
-Il valore di stringa serializzato. Quando `data` `egExp` è un valore R, questa funzione restituisce un oggetto vuoto. Quando `data` è una funzione, restituisce `undefined`.
+Il valore di stringa serializzato. Se `data` è un valore R `egExp`, questa funzione restituisce un oggetto vuoto. Quando `data` è una funzione, restituisce `undefined`.
 
 **Esempio**
 
@@ -866,8 +866,8 @@ Crea una copia di un oggetto dati e vi aggiunge la struttura dati da un secondo 
 
 **Parametri**
 
-* **struttura:** L&#39;oggetto copiato.
-* **SecondTree:** L&#39;oggetto unito alla copia dell&#39; `tree` oggetto.
+* **struttura:** oggetto copiato.
+* **secondoTree:** L&#39;oggetto unito alla copia dell&#39; `tree` oggetto.
 
 **Valore restituito**
 
@@ -891,12 +891,12 @@ Recupera il valore da un oggetto per la chiave.
 
 **Parametri**
 
-* **struttura:** L&#39;oggetto data.
-* **key:** Chiave per il valore da recuperare.
+* **struttura:** L&#39;oggetto dati.
+* **key:** la chiave per il valore da recuperare.
 
 **Valore restituito**
 
-Il valore corrispondente alla chiave. Quando la chiave dispone di chiavi figlio, questa funzione restituisce un oggetto complesso. Quando il tipo del valore della chiave è `undefined`, `null` viene restituito.
+Il valore corrispondente alla chiave. Quando la chiave dispone di chiavi figlio, questa funzione restituisce un oggetto complesso. Quando il tipo del valore della chiave è `undefined`, viene restituito `null`.
 
 **Esempio**
 
@@ -949,8 +949,8 @@ Recupera tutte le chiavi dalla struttura dati di un oggetto. Facoltativamente, �
 **Parametri**
 
 * **struttura:** L&#39;oggetto da cui recuperare le chiavi della struttura dati.
-* **parent:** (Facoltativo) Chiave di un elemento nella struttura dei dati per la quale si desidera recuperare le chiavi degli elementi secondari.
-* **ordine:** (Facoltativo) Funzione che determina l&#39;ordine delle chiavi restituite. (Vedere [Array.prototype.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) in Mozilla Developer Network.)
+* **parent:** (facoltativo) la chiave di un elemento nella struttura di dati per la quale si desidera recuperare le chiavi degli elementi figlio.
+* **order:** (facoltativo) Funzione che determina l&#39;ordinamento delle chiavi restituite. (Vedere [Array.prototype.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) nella rete per sviluppatori di Mozilla.)
 
 **Valore restituito**
 
@@ -977,7 +977,7 @@ myObject {
 }
 ```
 
-Lo `ContextHub.Utils.JSON.tree.getKeys(myObject);` script restituisce la seguente matrice:
+Lo script `ContextHub.Utils.JSON.tree.getKeys(myObject);` restituisce la seguente matrice:
 
 ```
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1042,15 +1042,15 @@ Rimuove i valori stringa per renderli utilizzabili come chiavi. Per eliminare un
 
 Utilizzare l&#39;array risultante per creare una chiave utilizzabile.  **Parametri**
 
-* **key:** La `string` pulizia.
+* **key:** La  `string` pulizia.
 
 **Valore restituito**
 
-Un array di `string` valori in cui ogni stringa è la porzione di `key` cui sono state delimitate le barre. rappresenta la chiave sanizzata. Se la matrice sanizzata ha una lunghezza pari a zero, questa funzione restituisce `null`.
+Un array di valori `string` in cui ogni stringa è la porzione di `key` delimitata da barre. rappresenta la chiave sanizzata. Se la lunghezza dell&#39;array sanificato è pari a zero, questa funzione restituisce `null`.
 
 **Esempio**
 
-Il codice seguente rimuove una stringa per generare l&#39;array `["this", "is", "a", "path"]`e genera quindi la chiave `"/this/is/a/path"` dall&#39;array:
+Il codice seguente rimuove una stringa per produrre la matrice `["this", "is", "a", "path"]`, quindi genera la chiave `"/this/is/a/path"` dall&#39;array:
 
 ```
 var key = " / this////is/a/path ";
@@ -1065,12 +1065,12 @@ Aggiunge una coppia chiave/valore alla struttura dati di una copia di un oggetto
 **Parametri**
 
 * struttura: Un oggetto dati.
-* key: Chiave da associare al valore che si sta aggiungendo. La chiave è il percorso dell&#39;elemento nella struttura dei dati. Questa funzione richiede `ContextHub.Utils.JSON.tree.sanitize` di rimuovere completamente la chiave prima di aggiungerla.
+* key: Chiave da associare al valore che si sta aggiungendo. La chiave è il percorso dell&#39;elemento nella struttura dei dati. Questa funzione chiama `ContextHub.Utils.JSON.tree.sanitize` per rimuovere completamente la chiave prima di aggiungerla.
 * value: Valore da aggiungere alla struttura dati.
 
 **Valore restituito**
 
-Una copia dell&#39; `tree` oggetto che include la coppia `key`/ `value` .
+Una copia dell&#39;oggetto `tree` che include la coppia `key`/ `value`.
 
 **Esempio**
 
@@ -1109,7 +1109,7 @@ Restituisce i tipi di store registrati come candidati store. Recuperare i candic
 
 **Parametri**
 
-* **storeType:** (String) Il nome del tipo di store. Vedere il `storeType` parametro della [ funzione `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) .
+* **storeType:** (String) Il nome del tipo di store. Vedere il parametro `storeType` della funzione [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates).
 
 **Valore restituito**
 
@@ -1121,7 +1121,7 @@ Restituisce un tipo di archivio dai candidati registrati. Se viene registrato pi
 
 **Parametri**
 
-* storeType: (String) Il nome del candidato dello store. Vedere il `storeType` parametro della [ funzione `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) .
+* storeType: (String) Il nome del candidato dello store. Vedere il parametro `storeType` della funzione [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies).
 
 **Valore restituito**
 
@@ -1133,7 +1133,7 @@ Restituisce i nomi dei tipi di store registrati come candidati store. Questa fun
 
 **Valore restituito**
 
-Un array di valori stringa, in cui ogni stringa è il tipo di storetype con cui è stato registrato un candidato all&#39;archiviazione. Vedere il `storeType` parametro della [ funzione `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) .
+Un array di valori stringa, in cui ogni stringa è il tipo di storetype con cui è stato registrato un candidato all&#39;archiviazione. Vedere il parametro `storeType` della funzione [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates).
 
 #### registerStoreCandidate(store, storeType, priority, apply) {#registerstorecandidate-store-storetype-priority-applies}
 
@@ -1143,10 +1143,10 @@ La priorità è un numero che indica l&#39;importanza degli store con lo stesso 
 
 **Parametri**
 
-* **store:** (Oggetto) L&#39;oggetto store da registrare come candidato store.
-* **storeType:** (String) Il nome del candidato dello store. Questo valore è richiesto quando si crea un&#39;istanza del candidato store.
-* **priorità:** (Numero) La priorità del candidato del negozio.
-* **si applica:** (Funzione) La funzione da richiamare che valuta l&#39;applicabilità dello store nell&#39;ambiente corrente. La funzione deve restituire `true` se lo store è applicabile e `false` in caso contrario. Il valore predefinito è una funzione che restituisce true: `function() {return true;}`
+* **store:** (Object) L&#39;oggetto store da registrare come candidato store.
+* **storeType:** (String) Il nome del candidato allo store. Questo valore è richiesto quando si crea un&#39;istanza del candidato store.
+* **priority:** (Number) La priorità del candidato del negozio.
+* **apply:** (Funzione) La funzione da richiamare che valuta l&#39;applicabilità dello store nell&#39;ambiente corrente. La funzione deve restituire `true` se è applicabile lo store e `false` in caso contrario. Il valore predefinito è una funzione che restituisce true: `function() {return true;}`
 
 **Esempio**
 
