@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-#  AEM Forms su gruppi e privilegi OSGi{#aem-forms-on-osgi-groups-and-privileges}
+#  AEM Forms su OSGi Groups and Privileges{#aem-forms-on-osgi-groups-and-privileges}
 
-Potete [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Tali criteri controllano i privilegi degli utenti che fanno parte del gruppo.
+È possibile [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in AEM. Tali criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 
-Dopo aver installato [pacchetto](../../forms/using/installing-configuring-aem-forms-osgi.md)aggiuntivo AEM Forms, i gruppi menzionati in questo articolo, quali form-users e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per  AEM Forms in OSGi in base alle assegnazioni del gruppo:
+Dopo aver installato [ pacchetto aggiuntivo AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), i gruppi menzionati in questo articolo, quali form-users e form-power-user, sono automaticamente disponibili per l&#39;assegnazione. Nella tabella seguente sono elencate le attività che un utente può eseguire per  AEM Forms in OSGi in base alle assegnazioni del gruppo:
 
 <table>
  <tbody>
@@ -94,7 +94,7 @@ Dopo aver installato [pacchetto](../../forms/using/installing-configuring-aem-fo
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>AEM applicazioni<br /> inbox <strong>Nota: </strong>Per accedere all'interfaccia utente di Interactive Communications Agent nella casella in AEM in entrata è necessario disporre di assegnazioni di gruppi di agenti e utenti del flusso di lavoro.</li> 
+     <li>Utilizzate AEM applicazioni inbox<br /> <strong>Nota: </strong>Per accedere all'interfaccia utente di Interactive Communications Agent in AEM inbox, è necessario disporre di assegnazioni di gruppi di utenti e utenti con agente di gestione di cm-agent.</li> 
      <li>Gestione delle istanze del flusso di lavoro</li> 
     </ul> </td> 
   </tr>
