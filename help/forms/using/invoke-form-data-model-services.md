@@ -1,6 +1,6 @@
 ---
-title: API per richiamare il servizio del modello dati modulo dai moduli adattivi
-seo-title: API per richiamare il servizio del modello dati modulo dai moduli adattivi
+title: API per richiamare il servizio del modello dati del modulo dai moduli adattivi
+seo-title: API per richiamare il servizio del modello dati del modulo dai moduli adattivi
 description: Spiega l'API invokeWebServices che è possibile utilizzare per richiamare i servizi Web scritti in WSDL da un campo modulo adattivo.
 seo-description: Spiega l'API invokeWebServices che è possibile utilizzare per richiamare i servizi Web scritti in WSDL da un campo modulo adattivo.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
@@ -20,19 +20,19 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-I AEM Forms consentono agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API nell&#39;editor di codice dell&#39;editor [di](/help/forms/using/rule-editor.md)regole.
+ AEM Forms consente agli autori dei moduli di semplificare e migliorare ulteriormente l&#39;esperienza di compilazione richiamando i servizi configurati in un modello dati modulo da un campo modulo adattivo. Per richiamare un servizio del modello dati, è possibile creare una regola nell&#39;editor visivo o specificare un JavaScript utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` nell&#39;editor di codice dell&#39; [editor di regole](/help/forms/using/rule-editor.md).
 
-Questo documento è incentrato sulla scrittura di JavaScript tramite l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare un servizio.
+Questo documento è incentrato sulla scrittura di un JavaScript utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare un servizio.
 
 ## Utilizzo dell&#39;API {#using-the-api}
 
-L&#39; `guidelib.dataIntegrationUtils.executeOperation` API richiama un servizio dall&#39;interno di un campo modulo adattivo. La sintassi API è la seguente:
+L&#39;API `guidelib.dataIntegrationUtils.executeOperation` richiama un servizio dall&#39;interno di un campo modulo adattivo. La sintassi API è la seguente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-La struttura dell&#39; `guidelib.dataIntegrationUtils.executeOperation` API specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
+La struttura dell&#39;API `guidelib.dataIntegrationUtils.executeOperation` specifica i dettagli sull&#39;operazione del servizio. La sintassi della struttura è la seguente.
 
 ```javascript
 var operationInfo = {
@@ -76,24 +76,24 @@ La struttura API specifica i seguenti dettagli sull&#39;operazione del servizio.
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>Mappa uno o più oggetti modulo ai valori di output dell'operazione del servizio per compilare i campi del modulo<br /> </td>
+   <td>Mappa uno o più oggetti modulo ai valori di output dall'operazione del servizio per compilare i campi modulo<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
-   <td>Restituisce valori basati sugli argomenti di input per l'operazione del servizio. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
+   <td>Restituisce valori basati sugli argomenti di input per l'operazione del servizio. È un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
   </tr>
   <tr>
    <td><code>failure</code></td>
-   <td>Visualizza un messaggio di errore se la funzione di callback success non visualizza i valori di output in base agli argomenti di input. Si tratta di un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
+   <td>Visualizza un messaggio di errore se la funzione di callback success non visualizza i valori di output in base agli argomenti di input. È un parametro facoltativo utilizzato come funzione di callback.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Script di esempio per richiamare un servizio {#sample-script-to-invoke-a-service}
 
-Lo script di esempio seguente utilizza l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare l&#39;operazione di `getAccountById` servizio configurata nel modello dati del `employeeAccount` modulo.
+Lo script di esempio seguente utilizza l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare l&#39;operazione del servizio `getAccountById` configurata nel modello di dati del modulo `employeeAccount`.
 
-L&#39; `getAccountById` operazione prende il valore nel campo `employeeID` modulo come input per l&#39; `empId` argomento e restituisce il nome del dipendente, il numero del conto e il saldo del conto per il dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore nell&#39; `name` argomento è popolato nell&#39;elemento `fullName` modulo e il valore per l&#39; `accountNumber` argomento nell&#39;elemento `account` modulo.
+L&#39;operazione `getAccountById` prende il valore nel campo del modulo `employeeID` come input per l&#39;argomento `empId` e restituisce il nome del dipendente, il numero di conto e il saldo del conto per il dipendente corrispondente. I valori di output vengono compilati nei campi modulo specificati. Ad esempio, il valore nell&#39;argomento `name` viene popolato nell&#39;elemento modulo `fullName` e nel valore per l&#39;argomento `accountNumber` nell&#39;elemento modulo `account`.
 
 ```javascript
 var operationInfo = {
@@ -111,25 +111,25 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
-## Utilizzo dell&#39;API con la funzione di callback {#using-the-api-callback}
+## Utilizzo dell&#39;API con funzione di callback {#using-the-api-callback}
 
-È inoltre possibile richiamare il servizio del modello dati modulo utilizzando l&#39; `guidelib.dataIntegrationUtils.executeOperation` API con una funzione di callback. La sintassi API è la seguente:
+È inoltre possibile richiamare il servizio del modello dati modulo utilizzando l&#39;API `guidelib.dataIntegrationUtils.executeOperation` con una funzione di callback. La sintassi API è la seguente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-La funzione call back può avere funzioni `success` e `failure` callback.
+La funzione di richiamata può avere le funzioni di callback `success` e `failure`.
 
 ### Script di esempio con funzioni di callback success e failure {#callback-function-success-failure}
 
-Lo script di esempio seguente utilizza l&#39; `guidelib.dataIntegrationUtils.executeOperation` API per richiamare l&#39;operazione di `GETOrder` servizio configurata nel modello dati del `employeeOrder` modulo.
+Lo script di esempio seguente utilizza l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare l&#39;operazione del servizio `GETOrder` configurata nel modello di dati del modulo `employeeOrder`.
 
-L&#39; `GETOrder` operazione assume il valore nel campo `Order ID` modulo come input per l&#39; `orderId` argomento e restituisce il valore della quantità dell&#39;ordine nella funzione di `success` callback.  Se la funzione di `success` callback non restituisce la quantità dell&#39;ordine, la funzione di `failure` callback visualizza il `Error occured` messaggio.
+L&#39;operazione `GETOrder` prende il valore nel campo del modulo `Order ID` come input per l&#39;argomento `orderId` e restituisce il valore della quantità dell&#39;ordine nella funzione di callback `success`.  Se la funzione di callback `success` non restituisce la quantità dell&#39;ordine, la funzione di callback `failure` visualizza il messaggio `Error occured`.
 
 >[!NOTE]
 >
-> Se si utilizza la funzione di `success` callback, i valori di output non vengono inseriti nei campi modulo specificati.
+> Se si utilizza la funzione di callback `success`, i valori di output non vengono inseriti nei campi modulo specificati.
 
 ```javascript
 var operationInfo = {
