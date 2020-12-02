@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Sideloading componente {#component-sideloading}
+# Sedeloading componente {#component-sideloading}
 
 ## Panoramica {#overview}
 
@@ -34,7 +34,7 @@ I passaggi per aggiungere dinamicamente i componenti SCF sono i seguenti:
 
 1. [Aggiungere il componente al DOM](#dynamically-add-component-to-dom)
 
-1. [Ricaricare localmente il componente](#sideload-by-invoking-scf) utilizzando uno dei due metodi seguenti:
+1. [Spostare localmente il ](#sideload-by-invoking-scf) componente utilizzando uno dei due metodi seguenti:
 
 * [Integrazione dinamica](#dynamic-inclusion)
    * Boostrap tutti i componenti aggiunti dinamicamente
@@ -43,9 +43,9 @@ I passaggi per aggiungere dinamicamente i componenti SCF sono i seguenti:
 
 >[!NOTE]
 >
->Il sideloading delle risorse [](scf.md#add-or-include-a-communities-component) non esistenti non è supportato.
+>Il sideloading di [risorse non esistenti](scf.md#add-or-include-a-communities-component) non è supportato.
 
-## Aggiunta dinamica di un componente a DOM {#dynamically-add-component-to-dom}
+## Aggiunta dinamica di un componente al DOM {#dynamically-add-component-to-dom}
 
 Sia che il componente sia incluso in modo dinamico o caricato in modo dinamico, deve prima essere aggiunto al DOM.
 
@@ -72,7 +72,7 @@ Esempio di un componente per commenti aggiunto:
 </div>
 ```
 
-## Trasferimento locale tramite chiamata SCF {#sideload-by-invoking-scf}
+## Trasferimento locale richiamando SCF {#sideload-by-invoking-scf}
 
 ### Inclusione dinamica {#dynamic-inclusion}
 
@@ -90,4 +90,4 @@ Invece di avviare tutti i componenti SCF presenti nel DOM, è possibile specific
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-Dove `someId` è il valore dell&#39; `data-component-id` attributo.
+Dove `someId` è il valore dell&#39;attributo `data-component-id`.
