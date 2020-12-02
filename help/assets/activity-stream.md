@@ -11,9 +11,9 @@ ht-degree: 23%
 ---
 
 
-# Flusso di attività nella timeline {#activity-stream-in-timeline}
+# Flusso di attività nella cronologia {#activity-stream-in-timeline}
 
-Questa funzione consente di visualizzare i registri attività per le risorse nella timeline. Se eseguite una delle seguenti operazioni relative alle risorse in [!DNL Adobe Experience Manager Assets], la funzione del flusso di attività aggiorna la timeline per riflettere l&#39;attività.
+Questa funzione consente di visualizzare i registri attività per le risorse nella timeline. Se eseguite una delle seguenti operazioni relative alle risorse in [!DNL Adobe Experience Manager Assets], la funzione del flusso di attività aggiorna la cronologia per riflettere l&#39;attività.
 
 Le seguenti operazioni vengono registrate nel flusso di attività:
 
@@ -26,7 +26,7 @@ Le seguenti operazioni vengono registrate nel flusso di attività:
 * Rifiuta
 * Sposta
 
-I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into [!DNL Experience Manager] via [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+I registri attività da visualizzare nella timeline vengono recuperati dalla posizione `/var/audit/com.day.cq.dam/content/dam` di CRX, dove vengono memorizzati i file di registro. Inoltre, l&#39;attività della cronologia viene registrata quando vengono caricate nuove risorse o le risorse esistenti vengono modificate e sottoposte a Check-In in [ collegamento risorsa Adobe](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) o [&#39;app desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).[!DNL Experience Manager]
 
 >[!NOTE]
 >
