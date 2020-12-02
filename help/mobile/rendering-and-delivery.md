@@ -10,17 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
 source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 8%
 
 ---
 
 
-# Rendering e distribuzione{#rendering-and-delivery}
+# Rendering e consegna{#rendering-and-delivery}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-Il rendering del contenuto AEM può essere facilmente eseguito tramite i servlet [predefiniti](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) Sling per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
+AEM contenuto può essere facilmente rappresentato tramite [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) per eseguire il rendering di [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e altri formati.
 
 Tali rendering out-of-the-box generalmente passano alla directory archivio e restituiscono il contenuto così com&#39;è.
 
@@ -34,7 +37,7 @@ Nel diagramma seguente è illustrato il rendering dei servizi di contenuto.
 
 ## Richiesta JSON {#requesting-json}
 
-Usa **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** per richiedere JSON.
+Utilizzare **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto per richiedere JSON.**
 
 <table>
  <tbody>
@@ -44,11 +47,11 @@ Usa **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** per richi
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>una configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /><br /> Se omesso, verrà applicata la configurazione di esportazione predefinita </p> </td>
+   <td><p><strong>FACOLTATIVO</strong><br /> </p> <p>una configurazione di esportazione trovata in /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omessa, verrà applicata la configurazione di esportazione predefinita </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>ricorsività di profondità FACOLTIONAL</strong><br /> <br /> per il rendering di elementi figlio come utilizzato nel rendering Sling</td>
+   <td><strong>Ripetizione </strong><br /> <br /> OPTIONALdeep per il rendering di elementi figlio come utilizzato nel rendering Sling</td>
   </tr>
  </tbody>
 </table>
@@ -57,7 +60,7 @@ Usa **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** per richi
 
 Potete creare configurazioni di esportazione per personalizzare il rendering JSON.
 
-Potete creare un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
+È possibile creare un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
 
 | Nome nodo | Nome della configurazione (per il selettore di rendering) |
 |---|---|
@@ -107,7 +110,7 @@ La tabella seguente mostra le proprietà di Export Configs:
    <td>Stringa[]</td>
    <td>include tutto</td>
    <td>Nomi proprietà</td>
-   <td><p>se excludePropertyPrefixes impostato<br /> include proprietà specificate nonostante la corrispondenza del prefisso sia esclusa,</p> <p>else (le proprietà di esclusione vengono ignorate) includono solo queste proprietà</p> </td>
+   <td><p>se excludePropertyPrefixes set<br /> include proprietà specificate nonostante sia escluso il prefisso corrispondente,</p> <p>else (le proprietà di esclusione vengono ignorate) includono solo queste proprietà</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -127,7 +130,7 @@ La tabella seguente mostra le proprietà di Export Configs:
    <td>renameProperties</td>
    <td>Stringa[]<br /> <br /> </td>
    <td>rename nothing</td>
-   <td>&lt;nome_proprietà_effettiva&gt;,&lt;nome_proprietà_sostitutivo&gt;</td>
+   <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>rinominare le proprietà utilizzando le sostituzioni</td>
   </tr>
  </tbody>
@@ -135,11 +138,11 @@ La tabella seguente mostra le proprietà di Export Configs:
 
 ### Sovrapposizioni per l&#39;esportazione del tipo di risorsa {#resource-type-export-overrides}
 
-Create un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
+Creare un nodo di configurazione in */apps/mobileapps/caas/exportConfigs.*
 
-| nome | resourceTypeOverrides |
+| name | resourceTypeOverrides |
 |---|---|
-| jcr:primaryType | nt:unstructured |
+| jcr:PrimaryType | nt:non strutturato |
 
 Nella tabella seguente sono riportate le proprietà:
 
@@ -153,11 +156,11 @@ Nella tabella seguente sono riportate le proprietà:
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
-   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>&lt;selector_to_inc&gt;</td>
    <td>Stringa[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Per i seguenti tipi di risorse di sling, non restituire l'esportazione predefinita CaaS json.<br /> Restituire l’esportazione di un singolo cliente eseguendo il rendering della risorsa come;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Per i seguenti tipi di risorse di sling, non restituire l'esportazione predefinita CaaS json.<br /> Restituire un'esportazione di json cliente eseguendo il rendering della risorsa come;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -173,7 +176,7 @@ Content Services include due configurazioni di esportazione:
 
 Se nell&#39;URI richiesto è specificata una configurazione, verrà applicata la configurazione di esportazione predefinita di Content Services.
 
-&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
+&lt;resource>.caas[.&lt;depth-int>].json
 
 <table>
  <tbody>
@@ -211,7 +214,7 @@ Se nell&#39;URI richiesto è specificata una configurazione, verrà applicata la
   </tr>
   <tr>
    <td>Sovrapposizioni JSON Sling</td>
-   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapp/caas/components/data/contentRiferimento<br /> mobileapp/caas/components/data/assetlist</td>
+   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/content/ContentReference<br /> mobileapps/caas/components/data/assetlist</td>
   </tr>
  </tbody>
 </table>
@@ -220,9 +223,9 @@ Se nell&#39;URI richiesto è specificata una configurazione, verrà applicata la
 
 Questa configurazione estende l&#39;impostazione predefinita per includere il raggruppamento di elementi secondari sotto un nodo figlio.
 
-&lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
+&lt;site_page>.caas.page[.&lt;depth-int>].json
 
-### Additional Resources {#additional-resources}
+### Risorse aggiuntive {#additional-resources}
 
 Consultate le risorse di seguito per ulteriori argomenti in Content Services:
 
