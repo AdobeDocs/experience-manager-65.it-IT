@@ -1,8 +1,8 @@
 ---
 title: Creazione di un’azione personalizzata per la barra degli strumenti
 seo-title: Creazione di un’azione personalizzata per la barra degli strumenti
-description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
-seo-description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
+description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in  AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
+seo-description: Gli sviluppatori di moduli possono creare azioni personalizzate sulla barra degli strumenti per i moduli adattivi in  AEM Forms. L'utilizzo di azioni personalizzate da parte degli autori di moduli consente agli utenti finali di disporre di più flussi di lavoro e opzioni.
 uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Creazione di un’azione personalizzata per la barra degli strumenti{#creating-a-custom-toolbar-action}
+# Creazione di un&#39;azione personalizzata per la barra degli strumenti{#creating-a-custom-toolbar-action}
 
 ## Prerequisiti {#prerequisite}
 
-Prima di creare un&#39;azione personalizzata per la barra degli strumenti, acquisire familiarità con [l&#39;utilizzo delle librerie](/help/sites-developing/clientlibs.md) lato client e lo [sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Prima di creare un&#39;azione personalizzata per la barra degli strumenti, acquisire familiarità con [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md) e [Sviluppo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Azione {#what-is-an-action-br}
 
@@ -36,26 +36,26 @@ Oltre al set di azioni fornito per impostazione predefinita, nella barra degli s
 
 Per illustrare la creazione di un&#39;azione personalizzata per la barra degli strumenti, la seguente procedura consente di creare un pulsante che consenta agli utenti finali di visualizzare tutti i campi modulo adattivi prima di inviare un modulo compilato.
 
-1. Tutte le azioni predefinite supportate dai moduli adattivi sono presenti nella `/libs/fd/af/components/actions` cartella. In CRXDE, copiare il `fileattachmentlisting` nodo da `/libs/fd/af/components/actions/fileattachmentlisting` a `/apps/customaction`.
+1. Tutte le azioni predefinite supportate dai moduli adattivi sono presenti nella cartella `/libs/fd/af/components/actions`. In CRXDE, copiare il nodo `fileattachmentlisting` da `/libs/fd/af/components/actions/fileattachmentlisting` a `/apps/customaction`.
 
-1. Dopo aver copiato il nodo nella `apps/customaction` cartella, rinominate il nome del nodo in `reviewbeforesubmit`. Inoltre, modificare le `jcr:title` proprietà e `jcr:description` le proprietà del nodo.
+1. Dopo aver copiato il nodo nella cartella `apps/customaction`, rinominare il nome del nodo in `reviewbeforesubmit`. Inoltre, modificare le proprietà `jcr:title` e `jcr:description` del nodo.
 
-   La `jcr:title` proprietà contiene il nome dell&#39;azione visualizzata nella finestra di dialogo della barra degli strumenti. La `jcr:description` proprietà contiene ulteriori informazioni che vengono visualizzate quando un utente passa il puntatore sull&#39;azione.
+   La proprietà `jcr:title` contiene il nome dell&#39;azione visualizzata nella finestra di dialogo della barra degli strumenti. La proprietà `jcr:description` contiene ulteriori informazioni che vengono visualizzate quando un utente passa il puntatore sull&#39;azione.
 
    ![Gerarchia dei nodi per la personalizzazione della barra degli strumenti](assets/action3.png)
 
-1. Selezionare `cq:template` il nodo nel `reviewbeforesubmit` nodo. Assicurarsi che il valore della `guideNodeClass` proprietà sia `guideButton` e modificare di conseguenza la `jcr:title` proprietà.
-1. Modificare la proprietà type nel `cq:Template` nodo. Per l&#39;esempio corrente, modificare la proprietà type in button.
+1. Selezionare il nodo `cq:template` nel nodo `reviewbeforesubmit`. Assicurarsi che il valore della proprietà `guideNodeClass` sia `guideButton` e modificare di conseguenza la proprietà `jcr:title`.
+1. Modificare la proprietà type nel nodo `cq:Template`. Per l&#39;esempio corrente, modificare la proprietà type in button.
 
    Il valore type viene aggiunto come classe CSS nel codice HTML generato per il componente. Gli utenti possono utilizzare la classe CSS per definire lo stile delle proprie azioni. Lo stile predefinito per i dispositivi mobili e desktop è disponibile per i valori di pulsante, invio, ripristino e salvataggio.
 
 1. Selezionare l&#39;azione personalizzata dalla finestra di dialogo della barra degli strumenti per la modifica di moduli adattivi. Nella barra degli strumenti del pannello viene visualizzato il pulsante Revisione.
 
-   ![L&#39;azione personalizzata è disponibile nella barra degli strumenti](assets/custom_action_available_in_toolbar.png) ![Visualizza l&#39;azione personalizzata della barra degli strumenti](assets/action7.png)
+   ![L’azione personalizzata è disponibile nella ](assets/custom_action_available_in_toolbar.png) ![barra degli strumentiVisualizzazione dell’azione personalizzata della barra degli strumenti](assets/action7.png)
 
-1. Per fornire funzionalità al pulsante Review, aggiungete codice JavaScript e CSS e codice lato server nel file init.jsp, presente all&#39;interno del `reviewbeforesubmit` nodo.
+1. Per fornire funzionalità al pulsante Review, aggiungete codice JavaScript e CSS e codice lato server nel file init.jsp, presente all&#39;interno del nodo `reviewbeforesubmit`.
 
-   Aggiungi il seguente codice in `init.jsp`.
+   Aggiungete il seguente codice in `init.jsp`.
 
    ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -113,7 +113,7 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
    </div><!-- /.modal -->
    ```
 
-   Aggiungi il codice seguente nel `ReviewBeforeSubmit.js` file.
+   Aggiungi il codice seguente nel file `ReviewBeforeSubmit.js`.
 
    ```javascript
    /*anonymous function to handle show of review before submit view */
@@ -148,7 +148,7 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
    });
    ```
 
-   Aggiungi il codice seguente al `ReviewBeforeSubmit.css` file.
+   Aggiungi il codice seguente al file `ReviewBeforeSubmit.css`.
 
    ```css
    .modal-list .reviewlabel {
@@ -181,7 +181,7 @@ Per illustrare la creazione di un&#39;azione personalizzata per la barra degli s
 
    >[!NOTE]
    >
-   >La `GuideBridge` libreria non viene caricata in modalità di creazione. Questa azione personalizzata non funziona quindi in modalità di authoring.
+   >La libreria `GuideBridge` non viene caricata in modalità di creazione. Questa azione personalizzata non funziona quindi in modalità di authoring.
 
    ![Dimostrazione dell&#39;azione del pulsante di revisione personalizzato](assets/action9.png)
 
