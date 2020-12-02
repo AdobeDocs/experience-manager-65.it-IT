@@ -1,8 +1,8 @@
 ---
 title: Implementazione di un componente React per SPA
 seo-title: Implementazione di un componente React per SPA
-description: In questo articolo viene illustrato come adattare un componente React semplice ed esistente per lavorare con l’editor AEM SPA.
-seo-description: In questo articolo viene illustrato come adattare un componente React semplice ed esistente per lavorare con l’editor AEM SPA.
+description: Questo articolo illustra come adattare un componente React semplice ed esistente per lavorare con l’editor SPA AEM.
+seo-description: Questo articolo illustra come adattare un componente React semplice ed esistente per lavorare con l’editor SPA AEM.
 uuid: ae6a0a6f-0c3c-4820-9b58-c2a85a9f5291
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,36 +21,36 @@ ht-degree: 2%
 
 # Implementazione di un componente React per SPA{#implementing-a-react-component-for-spa}
 
-Le applicazioni SPA (Single Page Applications) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando i framework SPA e gli autori desiderano modificare i contenuti all&#39;interno AEM per un sito creato utilizzando i framework SPA.
+Le applicazioni a pagina singola (SPA) possono offrire esperienze coinvolgenti agli utenti di siti Web. Gli sviluppatori desiderano essere in grado di creare siti utilizzando SPA framework e gli autori desiderano modificare i contenuti all&#39;interno di AEM per un sito creato utilizzando SPA framework.
 
-La funzione di authoring SPA offre una soluzione completa per supportare gli SPA in AEM. In questo articolo viene illustrato come adattare un componente React semplice ed esistente per lavorare con l’editor AEM SPA.
+La funzione di authoring SPA offre una soluzione completa per SPA di supporto in AEM. Questo articolo illustra come adattare un componente React semplice ed esistente per lavorare con l’editor SPA AEM.
 
 >[!NOTE]
 >
->SPA Editor è la soluzione consigliata per i progetti che richiedono il rendering lato client basato su SPA (ad esempio React o Angular).
+>SPA Editor è la soluzione consigliata per i progetti che richiedono SPA rendering lato client basato su framework (ad es. React o Angular).
 
 ## Introduzione {#introduction}
 
-Grazie al contratto semplice e leggero richiesto da AEM e stabilito tra SPA e SPA Editor, prendere un&#39;applicazione Javascript esistente e adattarla per l&#39;utilizzo con un SPA in AEM è una questione semplice.
+Grazie al contratto semplice e leggero che è richiesto da AEM e stabilito tra il SPA e l&#39;Editor SPA, prendere un&#39;applicazione Javascript esistente e adattarlo per l&#39;uso con SPA in AEM è una questione semplice.
 
-Questo articolo illustra l’esempio del componente meteo presente nell’esempio di SPA di We.Retail Journal.
+Questo articolo illustra l’esempio del componente meteo nel SPA di esempio We.Retail Journal.
 
-Prima di leggere questo articolo, è necessario avere familiarità con la [struttura di un&#39;applicazione SPA per AEM](/help/sites-developing/spa-getting-started-react.md) .
+Prima di leggere questo articolo, è necessario avere familiarità con la struttura [di un&#39;applicazione SPA per AEM](/help/sites-developing/spa-getting-started-react.md).
 
 >[!CAUTION]
->Questo documento utilizza l&#39;app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
+>Questo documento utilizza l&#39;app [We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) solo a scopo dimostrativo. Non deve essere utilizzato per nessun progetto.
 >
->Qualsiasi progetto AEM dovrebbe sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta i progetti SPA utilizzando React o Angular e sfrutta l’SDK SPA.
+>Qualsiasi progetto AEM deve sfruttare il [AEM Project Archetype](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/overview.html), che supporta SPA progetti utilizzando React o Angular e sfrutta l&#39;SDK SPA.
 
-## Componente Meteo {#the-weather-component}
+## Componente meteo {#the-weather-component}
 
 Il componente meteo si trova in alto a sinistra nell&#39;app We.Retail Journal. Visualizza il tempo corrente di una posizione definita, estraendo i dati meteo in modo dinamico.
 
-### Utilizzo del widget Meteo {#using-the-weather-widget}
+### Utilizzo del widget meteo {#using-the-weather-widget}
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Quando si creano contenuti dell&#39;SPA nell&#39;editor SPA, il componente meteo viene visualizzato come qualsiasi altro componente AEM, completo di una barra degli strumenti ed è modificabile.
+Durante la creazione di contenuti del SPA nell’editor SPA, il componente meteo viene visualizzato come qualsiasi altro componente AEM, completo di una barra degli strumenti ed è modificabile.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
@@ -62,9 +62,9 @@ Il cambiamento è persistente e il componente si aggiorna automaticamente con i 
 
 ![screen_shot_2018-06-08at143524](assets/screen_shot_2018-06-08at143524.png)
 
-### Implementazione dei componenti del tempo {#weather-component-implementation}
+### Implementazione componente meteo {#weather-component-implementation}
 
-La componente meteo è in realtà basata su un componente React disponibile al pubblico, chiamato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per lavorare come componente nell&#39;applicazione SPA di esempio We.Retail Journal
+Il componente meteo è in realtà basato su un componente React disponibile al pubblico, denominato [React Open Weather](https://www.npmjs.com/package/react-open-weather), che è stato adattato per funzionare come un componente all&#39;interno dell&#39;applicazione di esempio SPA We.Retail Journal.
 
 Di seguito sono riportati alcuni esempi della documentazione NPM relativa all’utilizzo del componente React Open Weather.
 
@@ -73,11 +73,11 @@ Di seguito sono riportati alcuni esempi della documentazione NPM relativa all’
 Revisione del codice del componente meteo personalizzato ( `Weather.js`) nell&#39;applicazione We.Retail Journal:
 
 * **Linea 16**: Il widget React Open Weather viene caricato come necessario.
-* **Linea 46**: La `MapTo` funzione collega questo componente React a un componente AEM corrispondente, in modo che possa essere modificato nell&#39;editor SPA.
+* **Linea 46**: La  `MapTo` funzione collega questo componente React a un componente AEM corrispondente in modo che possa essere modificato nell’editor SPA.
 
-* **Linee 22-29**: Il valore `EditConfig` è definito, controllando se la città è stata popolata e definendo il valore se vuoto.
+* **Linee 22-29**: Il valore  `EditConfig` è definito, controllando se la città è stata popolata e definendo il valore se vuoto.
 
-* **Linee 31-44**: Il componente Meteo estende la `Component` classe e fornisce i dati richiesti come definito nella documentazione sull’utilizzo di NPM per il componente React Open Weather ed esegue il rendering del componente.
+* **Linee 31-44**: Il componente Meteo estende la  `Component` classe e fornisce i dati richiesti come definito nella documentazione sull’utilizzo di NPM per il componente React Open Weather ed esegue il rendering del componente.
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,8 +128,8 @@ class Weather extends Component {
 MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig);
 ```
 
-Anche se un componente back-end deve già esistere, lo sviluppatore front-end può sfruttare il componente React Open Weather nell&#39;SPA We.Retail Journal con pochissima codifica.
+Anche se un componente back-end deve già esistere, lo sviluppatore front-end può sfruttare il componente React Open Weather nel SPA We.Retail Journal con pochissima codifica.
 
 ## Passaggio successivo {#next-step}
 
-Per ulteriori informazioni sullo sviluppo di SPA per AEM consultate l&#39;articolo [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md).
+Per ulteriori informazioni sullo sviluppo di SPA per AEM vedere l&#39;articolo [Sviluppo SPA per AEM](/help/sites-developing/spa-architecture.md).
