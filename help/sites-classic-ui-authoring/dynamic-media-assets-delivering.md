@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di risorse per file multimediali dinamici
-seo-title: Distribuzione di risorse per file multimediali dinamici
+title: Distribuzione di risorse Dynamic Media
+seo-title: Distribuzione di risorse Dynamic Media
 description: Con gli elementi multimediali dinamici hai diverse opzioni a disposizione per distribuire le tue risorse degli elementi multimediali dinamici, sia video che immagini, all'interno del sito web.
 seo-description: Con gli elementi multimediali dinamici hai diverse opzioni a disposizione per distribuire le tue risorse degli elementi multimediali dinamici, sia video che immagini, all'interno del sito web.
 uuid: 88a3ceec-034d-43a6-8623-3ef8b926a338
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
 translation-type: tm+mt
 source-git-commit: 87cafce93f4e7ed6db426fd425cd7b08c222070e
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 84%
 
 ---
 
 
-# Delivering Dynamic Media assets{#delivering-dynamic-media-assets}
+# Distribuzione di risorse Dynamic Media{#delivering-dynamic-media-assets}
 
 La modalità di distribuzione delle risorse per contenuti multimediali dinamici, sia video che immagini, dipende dall’implementazione del sito Web.
 
@@ -26,5 +29,5 @@ Con l’elemento multimediale dinamico hai a disposizione diverse opzioni:
 
 Per ulteriori informazioni, consulta i seguenti argomenti:
 
-* [Aggiunta di risorse per elementi multimediali dinamici alle pagine](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+* [Aggiunta di risorse Dynamic Media alle pagine](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
 
