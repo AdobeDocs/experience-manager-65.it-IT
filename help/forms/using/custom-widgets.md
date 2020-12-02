@@ -19,9 +19,9 @@ ht-degree: 0%
 ---
 
 
-# Creazione di un aspetto personalizzato nei moduli HTML5{#create-custom-appearances-in-html-forms}
+# Creare un aspetto personalizzato nei moduli HTML5{#create-custom-appearances-in-html-forms}
 
-Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetto. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere Framework [Aspetto per i moduli](/help/forms/using/introduction-widgets.md) adattivi e HTML5.
+Puoi collegare widget personalizzati a un Forms Mobile. Potete estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetto. Il motore XFA utilizza vari widget. Per ulteriori informazioni, vedere [Struttura di aspetto per i moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md).
 
 ![Un esempio di widget predefinito e personalizzato](assets/custom-widgets.jpg)
 
@@ -31,11 +31,11 @@ Un esempio di widget predefinito e personalizzato
 
 ### Creazione di un profilo  {#create-a-profile-nbsp}
 
-Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione dei profili, consultate [Creazione di un profilo](/help/forms/using/custom-profile.md)personalizzato.
+Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget personalizzato. Per ulteriori informazioni sulla creazione dei profili, vedere [Creazione di un profilo personalizzato](/help/forms/using/custom-profile.md).
 
 ### Creare un widget {#create-a-widget}
 
-I moduli HTML5 forniscono un&#39;implementazione del framework di widget che può essere esteso per creare nuovi widget. L’implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/sostituendo le funzioni elencate di seguito.
+I moduli HTML5 forniscono un&#39;implementazione del framework di widget che può essere esteso per creare nuovi widget. L&#39;implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/sostituendo le funzioni elencate di seguito.
 
 <table>
  <tbody>
@@ -49,7 +49,7 @@ I moduli HTML5 forniscono un&#39;implementazione del framework di widget che pu�
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /><br /> } In questo esempio viene mostrato che la sfocatura è un evento HTML e che XFA_EXIT_EVENT è un evento XFA corrispondente. </td>
+   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e che XFA_EXIT_EVENT è un evento XFA corrispondente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -78,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrazione di un widget personalizzato con il motore di script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando il codice widget personalizzato è pronto, registrate il widget con il motore di script utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). È necessario widgetConfigObject come input.
+Quando il codice widget personalizzato è pronto, registrare il widget con il motore di script utilizzando l&#39;API `registerConfig`per [Form Bridge](/help/forms/using/form-bridge-apis.md). È necessario widgetConfigObject come input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
