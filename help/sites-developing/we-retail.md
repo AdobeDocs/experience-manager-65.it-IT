@@ -18,19 +18,19 @@ ht-degree: 12%
 ---
 
 
-# Implementazione di riferimento We.Retail{#we-retail-reference-implementation}
+# Implementazione riferimento We.Retail{#we-retail-reference-implementation}
 
 ## Introduzione {#introduction}
 
-We.Retail è un&#39;implementazione di riferimento e un contenuto di esempio che illustra il modo consigliato di impostare una presenza online con  Adobe Experience Manager.
+We.Retail è un&#39;implementazione di riferimento e un contenuto di esempio che illustra il modo consigliato per configurare una presenza online con Adobe Experience Manager.
 
-We.Retail si avvale delle tecnologie AEM più recenti, come HTL, layout reattivi, modelli modificabili, componenti core e molto altro ancora.
+We.Retail si avvale delle tecnologie AEM più recenti come HTL, layout reattivi, modelli modificabili, componenti core e molto altro ancora.
 
 Anche se illustra una vendita al dettaglio verticale, la modalità di configurazione del sito può essere applicata a qualsiasi verticale, e solo il catalogo prodotti e le funzioni del carrello sono specifiche per la vendita al dettaglio.
 
 ## Funzioni {#features}
 
-Come implementazione di riferimento standard di AEM, We.Retail presenta alcune delle funzioni più potenti di AEM.
+Come implementazione standard di riferimento, We.Retail mostra alcune delle funzioni più potenti di AEM.
 
 | **Funzione rimossa** | **Descrizione** | **Interessato?** |
 |---|---|---|
@@ -46,39 +46,39 @@ Come implementazione di riferimento standard di AEM, We.Retail presenta alcune d
 
 ## Guida introduttiva {#getting-started}
 
-We.Retail viene distribuito come contenuto di esempio di AEM. Per utilizzarlo, [avviate AEM come di consueto](/help/sites-deploying/deploy.md#getting-started), accertatevi che il contenuto di esempio non sia disabilitato.
+We.Retail viene distribuito come AEM contenuto di esempio. Per poter essere utilizzato, è sufficiente [iniziare AEM come si fa normalmente](/help/sites-deploying/deploy.md#getting-started), per essere certi che il contenuto di esempio non sia disabilitato.
 
 >[!CAUTION]
 >
->We.Retail non deve essere installato nelle istanze di produzione. Le istanze di produzione devono essere avviate in `nosamplecontent` modalità [di esecuzione](/help/sites-deploying/configure-runmodes.md).
+>We.Retail non deve essere installato nelle istanze di produzione. Le istanze di produzione devono essere avviate in `nosamplecontent` [modalità di esecuzione](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
->We.Retail si basa sulla più recente tecnologia AEM e pertanto non supporta l’authoring [dell’interfaccia utente](/help/sites-classic-ui-authoring/home.md)classica.
+>We.Retail si basa sulla tecnologia di AEM più recente e pertanto non supporta l&#39;authoring dell&#39;interfaccia classica [.](/help/sites-classic-ui-authoring/home.md)
 
 ### Ultima versione {#latest-version}
 
-Anche se We.Retail è distribuito con la release di AEM, gli aggiornamenti al contenuto e alle relative funzioni possono essere effettuati dopo il rilascio. È quindi possibile [scaricare l’ultima versione da GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) , [caricare](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) e [installare](/help/sites-administering/package-manager.md#installing-packages) l’ultima versione come pacchetto nell’istanza di AEM.
+Anche se We.Retail è distribuito con la versione AEM, gli aggiornamenti al contenuto e alle sue funzioni possono essere effettuati dopo il rilascio. È quindi possibile [scaricare la versione più recente da GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) e quindi [caricare](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) e [installare](/help/sites-administering/package-manager.md#installing-packages) come pacchetto nell&#39;istanza AEM.
 
 ### Primi passi {#first-steps}
 
-1. Una volta avviato AEM (e/o installato We.Retail), il sito **We.Retail** è disponibile nella console [](/help/sites-authoring/basic-handling.md#global-navigation)Siti.
-1. Ad esempio, è possibile aprire la pagina seguente e visualizzarla come illustrato nell’ [appendice](#appendix) seguente:
+1. Una volta avviata la AEM (e/o installato We.Retail), il sito **We.Retail** è disponibile nella [console Siti](/help/sites-authoring/basic-handling.md#global-navigation).
+1. Ad esempio, è possibile aprire la pagina seguente e visualizzarla come nell&#39; [appendice](#appendix) seguente:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
-## We.Retail e Geometrixx {#we-retail-geometrixx}
+## We.Retail &amp; Geometrixx {#we-retail-geometrixx}
 
-Geometrixx e le sue numerose incarnazioni erano contenuti campione nelle versioni precedenti di AEM. Dalla versione 6.3, We.Retail è il contenuto di esempio fornito con AEM e funge da nuova implementazione standard di riferimento.
+Geometrixx e le sue numerose incarnazioni servivano da contenuto campione nelle versioni precedenti di AEM. Dalla versione 6.3, We.Retail è il contenuto di esempio fornito con AEM e serve come nuova implementazione standard di riferimento.
 
-We.Retail è tecnicamente più robusto e sfrutta la più recente tecnologia AEM per essere più flessibile e scalabile, dimostrando al contempo le nuove caratteristiche del prodotto.
+We.Retail è tecnicamente più robusta e sfrutta la tecnologia AEM più recente per essere più flessibile e scalabile, dimostrando al contempo le nuove caratteristiche del prodotto.
 
 ### Confronto delle funzioni {#feature-comparison}
 
-La tabella seguente fornisce una panoramica delle principali funzioni disponibili in We.Retail rispetto a Geometrixx.
+La tabella seguente offre una panoramica delle principali funzioni disponibili in We.Retail rispetto ai Geometrixx.
 
-* **Disponibile** significa che alcuni esempi della funzione sono disponibili nel contenuto di esempio.
-* **Non disponibile** significa che alcuni esempi della funzione non sono disponibili nel contenuto di esempio, ma non significa che la funzione non sia disponibile.
+* **Sono** disponibili alcuni esempi di questa funzione nel contenuto di esempio.
+* **Non** disponibile: gli esempi della funzione non sono disponibili nel contenuto di esempio, ma non indicano che la funzione non è disponibile.
 
 | **Funzione rimossa** | **We.Retail** | **Geometrixx** |
 |---|---|---|
@@ -109,14 +109,14 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri progetto di vendita al dettaglio su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip)
+* [Open aem-sample-we-retail project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* Scarica il progetto come [un file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip)
 
-L&#39;ultima versione può essere [scaricata direttamente](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) come pacchetto installabile.
+L&#39;ultima versione può essere scaricata anche [direttamente](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) come pacchetto installabile.
 
-In caso di problemi, archiviate i problemi relativi a [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+In caso di problemi, archiviare [Problemi GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
-Sentitevi liberi di forchire o di contribuire con le richieste [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls)pull.
+Sentitevi liberi di fork o di contribuire con [richieste pull](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 
 ## Anteprima {#preview}
 
