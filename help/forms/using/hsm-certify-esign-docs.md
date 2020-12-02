@@ -31,7 +31,7 @@ I moduli di sicurezza hardware (HSM) e i token sono dispositivi informatici dedi
 
 ## Prima di configurare i dispositivi HSM o etoken con  AEM Forms {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) package.
+* Installate il pacchetto [ AEM Forms add-on](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
 * Installate e configurate il software client HSM o etoken sullo stesso computer AEM server. Il software client è richiesto per comunicare con i dispositivi HSM e etoken.
 * (Solo Microsoft Windows) Impostate la variabile di ambiente JAVA_HOME_32 in modo che punti alla directory in cui è installata la versione a 32 bit di Java 8 Development Kit (JDK 8). Il percorso predefinito della directory è C:\Program Files(x86)\Java\jdk&lt;versione>
 * ( AEM Forms solo su OSGi) Installate il certificato principale nell&#39;archivio delle fonti attendibili. È necessario verificare il PDF firmato
@@ -46,11 +46,11 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
 
 1. Arrestate l&#39;istanza Author del vostro ambiente AEM Forms .
 
-1. Aprite il file [AEM_root]\crx-quickstart\conf\sling.properties per la modifica.
+1. Aprire il file [AEM_root]\crx-quickstart\conf\sling.properties per la modifica.
 
    >[!NOTE]
    >
-   >Se avete utilizzato il file [AEM_root]\crx-quickstart\bin\start.bat per avviare l&#39;istanza AEM, aprite il file [AEM_root]\crx-quickstart\sling.properties per la modifica.
+   >Se avete utilizzato il file [AEM_root]\crx-quickstart\bin\start.bat per avviare l&#39;istanza AEM, quindi aprite il file [AEM_root]\crx-quickstart\sling.properties per la modifica.
 
 1. Aggiungete o sostituite le seguenti proprietà al file sling.properties:
 
@@ -69,23 +69,23 @@ Per impostare i certificati, effettuate le seguenti operazioni:
 
 1. Accedete all&#39;istanza di AEM Author come amministratore.
 
-1. **Fate clic su Adobe  Experience Manager** nella barra di navigazione globale. Vai a **Strumenti** > **Protezione** > **Utenti**.
-1. Fate clic sul campo del **nome** dell’account utente. Viene visualizzata la pagina **Modifica impostazioni** utente.
-1. Nell&#39;istanza di AEM Author, i certificati risiedono in un KeyStore. Se non avete già creato un KeyStore in precedenza, fate clic su **Create KeyStore** e impostate una nuova password per KeyStore. Se il server contiene già un KeyStore, ignora questo passaggio.
+1. Fare clic su **Adobe Experience Manager** nella barra di navigazione globale. Accedete a **Strumenti** > **Sicurezza** > **Utenti**.
+1. Fare clic sul campo **name** dell&#39;account utente. Viene visualizzata la pagina **Edit User Settings** (Modifica impostazioni utente&lt;a1/>).
+1. Nell&#39;istanza di AEM Author, i certificati risiedono in un KeyStore. Se non avete creato un KeyStore in precedenza, fate clic su **Crea KeyStore** e impostate una nuova password per KeyStore. Se il server contiene già un KeyStore, ignora questo passaggio.
 
-1. Nella pagina **Modifica impostazioni** utente, fate clic su **Gestisci archivio** chiavi.
+1. Nella pagina **Edit User Settings**, fare clic su **Manage KeyStore**.
 
-1. Nella finestra di dialogo Gestione KeyStore, espandete l&#39;opzione **Aggiungi chiave privata dal file** archivio chiavi e fornite un alias. L&#39;alias viene utilizzato per eseguire l&#39;operazione Estensioni Reader.
-1. Per caricare il file del certificato, fate clic su **Seleziona file** archivio chiavi e caricate un `.pfx` file.
-1. Aggiungete ai rispettivi campi la password **archivio** chiavi, la password **della chiave** privata e l’alias **della chiave** privata associati al certificato. Fate clic su **Invia**.
-
-   >[!NOTE]
-   >
-   >Per determinare l&#39;alias **di chiave** privata di un certificato, è possibile utilizzare il comando Java keytool: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+1. Nella finestra di dialogo Gestione KeyStore, espandere l&#39;opzione **Aggiungi chiave privata dal file archivio chiavi** e fornire un alias. L&#39;alias viene utilizzato per eseguire l&#39;operazione Estensioni Reader.
+1. Per caricare il file del certificato, fare clic su **Seleziona file archivio chiavi** e caricare un file `.pfx`.
+1. Aggiungete la **Password archivio chiavi**,**Password chiave privata** e **Alias chiave privata** associata al certificato ai rispettivi campi. Fare clic su **Invia**.
 
    >[!NOTE]
    >
-   >Nei campi Password **archivio** chiavi e Password **chiave** privata, specificate la password fornita con il file del certificato.
+   >Per determinare l&#39;alias di chiave privata P **alias di chiave privata** di un certificato, è possibile utilizzare il comando Java keytool: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+
+   >[!NOTE]
+   >
+   >Nei campi **Password archivio chiavi** e **Password chiave privata**, specificare la password fornita con il file del certificato.
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Per impostare i certificati, effettuate le seguenti operazioni:
 L&#39;alias contiene tutti i parametri richiesti da un HSM o etoken. Per creare un alias per ciascuna credenziale HSM o etoken utilizzata da eSign o Digital Signatures, attenersi alle istruzioni riportate di seguito.
 
 1. Aprite AEM console. L&#39;URL predefinito di AEM console è https://&lt;host>:&lt;porta>/system/console/configMgr
-1. Aprite il servizio **di configurazione delle credenziali** HSM e specificate i valori per i seguenti campi:
+1. Aprire il **servizio di configurazione delle credenziali HSM** e specificare i valori per i campi seguenti:
 
    * **Alias** credenziali: Specificare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni Digital Signatures, ad esempio l&#39;operazione Sign Signature Field.
    * **Percorso** DLL: Specificate il percorso completo della libreria HSM o client di etoken sul server. Ad esempio, C:\Program Files\LunaSA\cryptoki.dll. In un ambiente cluster, questo percorso deve essere identico per tutti i server del cluster.
