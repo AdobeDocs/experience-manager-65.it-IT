@@ -22,9 +22,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework di applicazioni a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
-La sezione **Gestisci app** e la pagina &quot;Gestisci app&quot; forniscono uno strumento per visualizzare e modificare i metadati dell&#39;applicazione. I metadati dell&#39;app sono necessari dettagli per il rilascio di un&#39;applicazione allo store di un fornitore. Ciò può includere metadati comuni, metadati iOS e screenshot. Consultate [Gestione sezione](/help/mobile/phonegap-app-details-tile.md) app per ulteriori dettagli sui metadati comuni e iOS.
+La sezione **Gestione app** e la pagina &quot;Gestisci app&quot; forniscono uno strumento per visualizzare e modificare i metadati dell&#39;applicazione. I metadati dell&#39;app sono necessari dettagli per il rilascio di un&#39;applicazione allo store di un fornitore. Ciò può includere metadati comuni, metadati iOS e screenshot. Per ulteriori informazioni sui metadati comuni e iOS, consultate [Gestione sezione app](/help/mobile/phonegap-app-details-tile.md).
 
 ## Modifica dei dati dell&#39;app {#editing-the-app-data}
 
@@ -34,7 +34,7 @@ Per modificare i metadati dell&#39;app:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Per visualizzare o modificare i dettagli facendo clic su &#39;...&#39; nell&#39;angolo in basso a destra della sezione **Gestisci app** .
+1. Per visualizzare o modificare i dettagli facendo clic su &#39;...&#39; nell&#39;angolo in basso a destra della sezione **Gestisci app**.
 
 1. Immettere o visualizzare i dettagli in una delle cinque schede disponibili, come mostrato nella figura seguente.
 
@@ -51,7 +51,7 @@ Potete modificare i metadati comuni e IOS:
 
 ## Aggiunta e rimozione di schermate {#add-and-remove-screenshots}
 
-Potete includere le schermate app nel rollup dei metadati. Alcuni fornitori richiedono screenshot precisi quando inviano qualsiasi app al loro app store. Queste immagini devono già esistere in Risorse. Consultate [Selezione](../assets/search-assets.md#assetpicker) risorse per caricare le schermate.
+Potete includere le schermate app nel rollup dei metadati. Alcuni fornitori richiedono screenshot precisi quando inviano un&#39;app al proprio app store. Queste immagini devono già esistere in Risorse. Consultate [Selezione risorse](../assets/search-assets.md#assetpicker) per caricare le schermate.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -59,12 +59,12 @@ Potete includere le schermate app nel rollup dei metadati. Alcuni fornitori rich
 
 Per aggiungere una risorsa come schermata:
 
-1. In modalità di modifica della pagina **Gestisci app** , fai clic su Aggiungi (icona più).
-1. Selezionate la risorsa e fate clic su **Seleziona** per aggiungerla.
+1. In modalità di modifica della pagina **Gestisci app**, fai clic su Aggiungi (icona più).
+1. Selezionate la risorsa e fate clic su **Seleziona** per aggiungere la risorsa.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Selezionate la risorsa e fate clic su **Seleziona** per aggiungerla.
+1. Selezionate la risorsa e fate clic su **Seleziona** per aggiungere la risorsa.
 
 >[!NOTE]
 >
