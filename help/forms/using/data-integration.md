@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# [!DNL AEM Forms] Integrazione dei dati {#aem-forms-data-integration}
+# [!DNL AEM Forms] Integrazione dei dati  {#aem-forms-data-integration}
 
 ![](do-not-localize/data-integeration.png)
 
-Le infrastrutture aziendali includono diversi sistemi back-end o origini dati come database, servizi Web, servizi REST, servizi OData e soluzioni CRM. Insieme, creano un sistema informativo che trasmette dati alle applicazioni aziendali per svolgere attività quotidiane. D&#39;altro canto, le applicazioni acquisiscono i dati e li inviano di nuovo per aggiornare le origini dati.
+Le infrastrutture aziendali includono diversi sistemi back-end o origini dati come database, servizi Web, servizi REST, servizi OData e soluzioni CRM. Insieme, creano un sistema di informazione che trasmette dati alle applicazioni aziendali per svolgere attività quotidiane. D&#39;altro canto, le applicazioni acquisiscono i dati e li inviano di nuovo per aggiornare le origini dati.
 
 [!DNL AEM Forms] applicazioni come moduli adattivi e comunicazioni interattive richiedono l&#39;integrazione con le origini dati per recuperare i dati dei clienti durante il rendering dei moduli e la creazione di comunicazioni interattive. Esistono casi d&#39;uso in cui i dati vengono estratti da origini dati in base agli input dell&#39;utente nei moduli adattivi. Inoltre, i dati del modulo adattivo inviati possono essere riscritti per aggiornare le rispettive origini dati.
 
@@ -32,7 +32,7 @@ Mentre un sistema modulare distribuito ha i propri vantaggi, la sfida consiste n
 
 ![integrazione AEM-forms-data](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] L&#39;integrazione dei dati consente di configurare e collegare origini dati diverse con [!DNL AEM Forms]. Fornisce un&#39;interfaccia utente intuitiva per creare uno schema di rappresentazione dati unificato di entità e servizi aziendali tra origini dati connesse. La rappresentazione unificata è nota come modello dati modulo, un&#39;estensione dello schema JSON. Le entità in un modello dati modulo sono definite oggetti modello dati. Un modello dati del modulo consente di:
+[!DNL AEM Forms] L&#39;integrazione dei dati consente di configurare e collegare origini dati diverse con  [!DNL AEM Forms]. Fornisce un&#39;interfaccia utente intuitiva per creare uno schema di rappresentazione dati unificato di entità e servizi aziendali tra origini dati connesse. La rappresentazione unificata è nota come modello dati modulo, un&#39;estensione dello schema JSON. Le entità in un modello dati modulo sono definite oggetti modello dati. Un modello dati del modulo consente di:
 
 * Accesso a oggetti, proprietà e servizi del modello dati da origini dati connesse.
 * Creazione di oggetti e proprietà del modello dati personalizzato
