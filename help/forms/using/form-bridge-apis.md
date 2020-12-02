@@ -53,7 +53,7 @@ Restituisce il numero di versione della libreria Script
 **isConnected()** Controlla se lo stato del modulo è stato inizializzato
 
 * **Input**: None
-* **Output**: **True** se lo stato del modulo XFA è stato inizializzato
+* **Output**:  **True** se lo stato del modulo XFA è stato inizializzato
 
 * **Errori**: None
 
@@ -62,7 +62,7 @@ Restituisce il numero di versione della libreria Script
 * **Input**:
 
    * **handler**: Funzione da eseguire dopo la connessione di Form Bridge
-   * **contesto**: L&#39;oggetto a cui è impostato il contesto (this) della funzione *handler* .
+   * **contesto**: L&#39;oggetto a cui è impostato il contesto (questo) della  ** funzione handlerfunction.
 
 * **Output**: None
 * **Errore**: None
@@ -71,32 +71,32 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **opzioni:** Oggetto JavaScript contenente le proprietà seguenti:
+   * **opzioni:oggetto** JavaScript contenente le proprietà seguenti:
 
       * **Errore**: Funzione gestore errori
-      * **success**: Funzione gestore di successo. A questa funzione viene passato un oggetto contenente XML nella proprietà *data* .
-      * **contesto**: L&#39;oggetto a cui è impostato il contesto (questo) della funzione *success*
+      * **success**: Funzione gestore di successo. A questa funzione viene passato un oggetto contenente XML nella proprietà *data*.
+      * **contesto**: L&#39;oggetto a cui è impostato il contesto (questo) della  ** funzione successiva
       * **validationChecker**: Funzione da chiamare per verificare gli errori di convalida ricevuti dal server. Alla funzione di convalida viene passato un array di stringhe di errore.
       * **formState**: Lo stato JSON del modulo XFA per il quale è necessario restituire i dati XML. Se non viene specificato, restituisce l&#39;XML dei dati per il modulo attualmente rappresentato.
 
 * **Output:** None
-* **Errore:** None
+* **Errore:** Nessuno
 
 **registerConfig(configName, config)** Registra le configurazioni utente/portale specifiche con FormBridge. Queste configurazioni ignorano le configurazioni predefinite. Le configurazioni supportate sono specificate nella sezione di configurazione.
 
-* **Input:**
+* **Ingresso:**
 
-   * **configName:** Nome della configurazione da ignorare
+   * **configName:** nome della configurazione da ignorare
 
-      * **widgetConfig:** Consente all&#39;utente di ignorare i widget predefiniti nel modulo con widget personalizzati. La configurazione viene sostituita come segue:
+      * **widgetConfig:** consente all&#39;utente di ignorare i widget predefiniti nel modulo con widget personalizzati. La configurazione viene sostituita come segue:
 
          *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **pagingConfig:** Consente all&#39;utente di ignorare il comportamento predefinito del rendering solo della prima pagina. La configurazione viene sostituita come segue:
+      * **pagingConfig:** consente all&#39;utente di ignorare il comportamento predefinito del rendering solo della prima pagina. La configurazione viene sostituita come segue:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled:  &lt;true>, shrinkPageDisabled:  &lt;true> }).*
 
-      * **LoggingConfig:** Consente all&#39;utente di ignorare il livello di registrazione, disabilitare la registrazione per una categoria o se visualizzare la console dei registri o inviare al server. La configurazione può essere ignorata e sostituita come segue:
+      * **LoggingConfig:** consente all&#39;utente di ignorare il livello di registrazione, disabilitare la registrazione per una categoria o se visualizzare la console dei registri o inviarla al server. La configurazione può essere ignorata e sostituita come segue:
 
       ```javascript
       formBridge.registerConfig{
@@ -110,7 +110,7 @@ Restituisce il numero di versione della libreria Script
         }
       ```
 
-      * **SubmitServiceProxyConfig:** Consentire agli utenti di registrare i servizi proxy di invio e registrazione.
+      * **SubmitServiceProxyConfig:** consente agli utenti di registrare i servizi proxy di invio e registrazione.
 
          ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
@@ -124,27 +124,27 @@ Restituisce il numero di versione della libreria Script
 
 
 
-* **Output:** Oggetto contenente il valore originale della configurazione nella proprietà *data* .
+* **Output:** oggetto contenente il valore originale della configurazione in  ** data property.
 
-* **Errore:** None
+* **Errore:** Nessuno
 
 **hideFields(fieldArray)** Nasconde i campi le cui espressioni Som sono fornite in fieldArray. Imposta la proprietà presence dei campi specificati su invisibile
 
-* **Input:**
+* **Ingresso:**
 
    * **fieldArray:** Array di espressioni Som per i campi da nascondere
 
 * **Output:** None
-* **Errore:** None
+* **Errore:** Nessuno
 
 **showFields(fieldArray)** Mostra i campi le cui espressioni Som sono fornite in fieldArray. Imposta la proprietà presence dei campi forniti su visible
 
-* **Input:**
+* **Ingresso:**
 
    * **fieldArray:** Array di espressioni Som per i campi da visualizzare
 
 * **Output:** None
-* **Errore:** None
+* **Errore:** Nessuno
 
 **hideSubmitButtons()** Nasconde tutti i pulsanti Invia del modulo
 
@@ -154,47 +154,47 @@ Restituisce il numero di versione della libreria Script
 
 **getFormState()** Restituisce il JSON che rappresenta lo stato del modulo
 
-* **Ingresso:** None
-* **Output:** Oggetto contenente JSON che rappresenta lo stato del modulo corrente nella proprietà *data* .
+* **Input:** Nessuno
+* **Output:** oggetto contenente JSON che rappresenta lo stato del modulo corrente nella proprietà  ** data.
 
-* **Errore:** None
+* **Errore:** Nessuno
 
 **restoreFormState(options)** Ripristina lo stato del modulo dallo stato JSON fornito nell&#39;oggetto options. Lo stato viene applicato e i gestori di errori o di successo vengono chiamati al termine dell&#39;operazione
 
-* **Input:**
+* **Ingresso:**
 
-   * **Opzioni:** Oggetto JavaScript contenente le proprietà seguenti:
+   * **Opzioni:oggetto** JavaScript contenente le proprietà seguenti:
 
       * **Errore**: Funzione gestore errori
       * **success**: Funzione gestore di successo
-      * **contesto**: L&#39;oggetto a cui è impostato il contesto (questo) della funzione *success*
+      * **contesto**: L&#39;oggetto a cui è impostato il contesto (questo) della  ** funzione successiva
       * **formState**: Stato JSON del modulo. Il modulo viene ripristinato allo stato JSON.
 
 * **Output:** None
-* **Errore:** None
+* **Errore:** Nessuno
 
 **setFocus (som)** Imposta lo stato attivo sul campo specificato nell&#39;espressione Som
 
-* **Ingresso:** Espressione del campo su cui impostare lo stato attivo
+* **Input:** Espressione del campo su cui impostare lo stato attivo
 * **Output:** None
-* **Errore:** Genera un&#39;eccezione in caso di espressione Som non corretta
+* **Errore:** genera un&#39;eccezione in caso di espressione Som non corretta
 
 **setFieldValue (som, value)** Imposta il valore dei campi per le espressioni Som date
 
-* **Input:**
+* **Ingresso:**
 
    * **som:** Array contenente le espressioni Som del campo. La stessa espressione per impostare il valore dei campi.
-   * **value:** Array contenente valori corrispondenti alle espressioni Som fornite in un **** array. Se il tipo di dati del valore non è lo stesso di fieldType, il valore non viene modificato.
+   * **value:** Array contenente valori corrispondenti alle espressioni Som fornite in un  **** somarray. Se il tipo di dati del valore non è lo stesso di fieldType, il valore non viene modificato.
 
 * **Output:** None
-* **Errore:** Genera un&#39;eccezione nel caso di un&#39;espressione Som non corretta
+* **Errore:** genera un&#39;eccezione nel caso di un&#39;espressione Som non corretta
 
 **getFieldValue (som)** Restituisce il valore dei campi per le espressioni Som specificate
 
-* **Ingresso:** Array contenente le espressioni Som dei campi il cui valore deve essere recuperato
-* **Output:** Oggetto contenente il risultato come Array nella proprietà **data** .
+* **Input:** Array contenente le espressioni Som dei campi il cui valore deve essere recuperato
+* **Output:** Object contenente il risultato come Array nella proprietà  **** data.
 
-* **Errore:** None
+* **Errore:** Nessuno
 
 ### Esempio di API getFieldValue() {#example-of-nbsp-getfieldvalue-api}
 
@@ -211,25 +211,25 @@ if(a.errors) {
 
 **getFieldProperties(som, proprietà)** Recupera l&#39;elenco di valori per la proprietà data dei campi specificati nelle espressioni Som
 
-* **Input:**
+* **Ingresso:**
 
    * **som:** Array contenente le espressioni Som per i campi
    * **proprietà**: Nome della proprietà il cui valore è obbligatorio
 
-* **Output:** Oggetto contenente il risultato come Array nella proprietà *data*
+* **Output:** Oggetto contenente il risultato come Array nella proprietà  ** data
 
-* **Errore:** None
+* **Errore:** Nessuno
 
 **setFieldProperties(som, property, values)** Imposta il valore della proprietà data per tutti i campi specificati nelle espressioni Som
 
-* **Input:**
+* **Ingresso:**
 
    * **som:** Array contenente le espressioni Som dei campi il cui valore deve essere impostato
    * **proprietà**: Proprietà il cui valore deve essere impostato
    * **value:** Array contenente i valori della proprietà data per i campi specificati nelle espressioni Som
 
 * **Output:** None
-* **Errore:** None
+* **Errore:** Nessuno
 
 ## Esempio di utilizzo dell&#39;API Form Bridge {#sample-usage-of-form-bridge-api}
 
