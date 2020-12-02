@@ -1,8 +1,8 @@
 ---
-title: AEM Sites - Preparazione GDPR
-seo-title: AEM Sites - Preparazione GDPR
-description: Scopri i dettagli di GDPR Readiness for AEM Sites.
-seo-description: Scopri i dettagli di GDPR Readiness for AEM Sites.
+title: ' AEM Sites - Preparazione GDPR'
+seo-title: ' AEM Sites - Preparazione GDPR'
+description: Scopri i dettagli di GDPR Readiness per  AEM Sites.
+seo-description: Scopri i dettagli di GDPR Readiness per  AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Sites - Preparazione GDPR{#aem-sites-gdpr-readiness}
+#  AEM Sites - GDPR: prontezza{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -26,39 +26,39 @@ ht-degree: 0%
 
 Il regolamento generale dell&#39;Unione europea sulla protezione dei dati in materia di diritti sulla privacy ha effetto a maggio 2018.
 
-I AEM Sites sono pronti ad aiutare i clienti a rispettare gli obblighi di conformità ai requisiti GDPR. Questa pagina illustra ai clienti le procedure per gestire le richieste GDPR in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.
+ AEM Sites è pronta ad aiutare i clienti a rispettare gli obblighi di conformità ai requisiti GDPR. Questa pagina illustra ai clienti le procedure per gestire le richieste GDPR in  AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con il codice.
 
-Per ulteriori informazioni, consulta la pagina [GDPR all’Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Per ulteriori informazioni, vedere la pagina [GDPR all&#39; Centro per la privacy del Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [AEM GDPR](/help/managing/data-protection-and-privacy.md) .
+>Per ulteriori informazioni, vedere [AEM GDPR Readiness](/help/managing/data-protection-and-privacy.md).
 
 ## Author Server {#author-server}
 
-Gli account utente e i contenuti UGC sul server di creazione sono descritti nella documentazione [GDPR di](/help/managing/data-protection-and-privacy.md)Platform.
+Gli account utente e i contenuti UGC sul server di creazione sono trattati nella [Documentazione GDPR della piattaforma](/help/managing/data-protection-and-privacy.md).
 
 ## Server di pubblicazione {#publish-server}
 
-Gli account utente utilizzati per autenticare i visitatori del sito e i contenuti UGC sul server di pubblicazione sono descritti nella documentazione [GDPR di](/help/managing/data-protection-and-privacy.md)Platform.
+Gli account utente utilizzati per autenticare i visitatori del sito e i contenuti UGC sul server di pubblicazione sono descritti nella documentazione [Platform GDPR](/help/managing/data-protection-and-privacy.md).
 
-Per impostazione predefinita, i componenti AEM Sites non memorizzano i dati del modulo immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o a un Adobe Campaign  per un&#39;ulteriore elaborazione.
+Per impostazione predefinita,  componenti AEM Sites non memorizzano i dati dei moduli immessi dai visitatori sul server di pubblicazione. Si consiglia di inoltrare i dati a un sistema di terze parti o  Adobe Campaign per un&#39;ulteriore elaborazione.
 
 ## Opt-In/Opt-Out {#opt-in-opt-out}
 
-In AEM è disponibile un servizio [di rinuncia ai](/help/sites-developing/cookie-optout.md) cookie che può essere utilizzato per gestire il consenso o il rifiuto per gli utenti.
+AEM dispone di un [servizio di rinuncia ai cookie](/help/sites-developing/cookie-optout.md) che può essere utilizzato per gestire il consenso o il rifiuto per gli utenti.
 
-## Approfondimenti migliorati di  Analytics {#enhanced-insights-by-analytics}
+## Approfondimenti migliorati di Analytics {#enhanced-insights-by-analytics}
 
-I AEM Sites includono un&#39;integrazione opzionale con Enhanced Insights di  Analytics che utilizza funzionalità all&#39;interno di Adobe  Analytics On-demand Service.
+ AEM Sites include un&#39;integrazione opzionale con Enhanced Insights di Analytics che utilizza funzionalità all&#39;interno  Adobe Analytics On-demand Service.
 
-Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative ad Adobe  Analytics, consulta [Adobe  Analytics e GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative a  Adobe Analytics, vedere [ Adobe Analytics e GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalizzazione avanzata di Target {#enhanced-personalization-by-target}
+## Personalizzazione avanzata per Target {#enhanced-personalization-by-target}
 
-I AEM Sites includono un&#39;integrazione opzionale con Enhanced Personalization by Target, che utilizza funzionalità all&#39;interno Adobe Target servizio on-demand del .
+ AEM Sites include un&#39;integrazione opzionale con Enhanced Personalization by Target, che utilizza funzionalità all&#39;interno  Adobe Target On-demand Service.
 
-Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative a  Adobe Target, consulta [Adobe Target - Privacy e Regolamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)generale sulla protezione dei dati.
+Per ulteriori informazioni sulla gestione delle richieste di dati GDPR relative a  Adobe Target, vedere [ Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -68,11 +68,11 @@ Per impostazione predefinita, questi dati visitatore non sono memorizzati in AEM
 
 >[!NOTE]
 >
->Prima di Adobe CQ 5.6, ClientContext (una versione precedente di ContextHub) inviava i dati al server, ma non li memorizzava.
+>Prima di  Adobe CQ 5.6, l&#39;ClientContext (una versione precedente di ContextHub) inviava i dati al server, ma non li memorizzava.
 >
->Adobe CQ 5.5 e versioni precedenti sono ora EOL e non sono coperti da questa documentazione.
+> Adobe CQ 5.5 e versioni precedenti sono ora EOL e non sono coperti da questa documentazione.
 
-### Implementazione del consenso/rifiuto {#implementing-opt-in-opt-out}
+### Implementazione consenso/rifiuto {#implementing-opt-in-opt-out}
 
 Il proprietario del sito deve implementare un componente di rinuncia in base alle seguenti linee guida.
 
