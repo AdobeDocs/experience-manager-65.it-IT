@@ -12,6 +12,9 @@ discoiquuid: f658da57-0134-4458-9ef9-a99787b66742
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ Quando un autore crea un modulo adattivo utilizzando un [modello](../../forms/us
 
 ## Modifica dei criteri di contenuto di un modello {#changing-the-content-policy-of-a-template}
 
-Quando create un modello, questo viene creato `/conf` nell’archivio dei contenuti. In base alle cartelle create nella `/conf` directory, il percorso del modello è: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Quando create un modello, questo viene creato in `/conf` nell&#39;archivio dei contenuti. In base alle cartelle create nella directory `/conf`, il percorso del modello è: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Effettuate le seguenti operazioni per mostrare i componenti nella barra laterale in base ai criteri di contenuto di un modello:
 
@@ -38,23 +41,23 @@ Effettuate le seguenti operazioni per mostrare i componenti nella barra laterale
 
    Percorso del criterio contenuto predefinito: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   Nella `gridFluidLayout` cartella, copiate e incollate il criterio predefinito, quindi rinominatelo. Esempio, `myPolicy`.
+   Nella cartella `gridFluidLayout`, copiate e incollate il criterio predefinito, quindi rinominatelo. Esempio, `myPolicy`.
 
    ![Copia dei criteri predefiniti](assets/crx-default1.png)
 
-1. Selezionate il nuovo criterio creato, quindi selezionate la proprietà **components** nel pannello a destra con il tipo `string[]`.
+1. Selezionate il nuovo criterio creato e selezionate la proprietà **components** nel pannello a destra con il tipo `string[]`.
 
-   Quando si seleziona e si apre la proprietà components, viene visualizzata la finestra di dialogo Modifica componenti. La finestra di dialogo Modifica componenti consente di aggiungere o rimuovere gruppi di componenti utilizzando i **+** e **** i pulsanti. È possibile aggiungere un gruppo di componenti che include i componenti che gli autori desiderano usare.
+   Quando si seleziona e si apre la proprietà Components (Componenti), viene visualizzata la finestra di dialogo Edit components (Modifica componenti). La finestra di dialogo Modifica componenti consente di aggiungere o rimuovere gruppi di componenti utilizzando i pulsanti **+** e **-**. È possibile aggiungere un gruppo di componenti che include i componenti per il modulo che gli autori desiderano utilizzare.
 
    ![Aggiunta o rimozione di componenti nel criterio](assets/add-components-list1.png)
 
-   Dopo aver aggiunto un gruppo di componenti, fate clic su **OK** per aggiornare l’elenco, quindi fate clic su **Salva tutto** sopra la barra degli indirizzi CRXDE e aggiornate.
+   Dopo aver aggiunto un gruppo di componenti, fare clic su **OK** per aggiornare l&#39;elenco, quindi fare clic su **Salva tutto** sopra la barra degli indirizzi CRXDE e aggiornare.
 
-1. Nel modello, modificate il criterio del contenuto da predefinito al nuovo criterio creato. ( `myPolicy` in questo esempio).
+1. Nel modello, modificate il criterio del contenuto da predefinito al nuovo criterio creato. ( `myPolicy` in questo esempio.)
 
    Per modificare il criterio, in CRXDE, passare a `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
-   Nella `cq:policy` proprietà, passate `default` al nuovo nome del criterio ( `myPolicy`).
+   Nella proprietà `cq:policy`, cambiare `default` nel nuovo nome del criterio ( `myPolicy`).
 
    ![Aggiornamento dei criteri per il contenuto dei modelli](assets/updated-policy.png)
 
