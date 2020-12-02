@@ -1,6 +1,6 @@
 ---
-title: Aggiornamento ad AEM 6.5 Forms
-seo-title: Aggiornamento ad AEM 6.5 Forms
+title: Aggiornamento a AEM 6.5 Forms
+seo-title: Aggiornamento a AEM 6.5 Forms
 description: È possibile eseguire un aggiornamento diretto da AEM 6.3 Forms e AEM 6.4 Forms a AEM 6.5 Forms.
 seo-description: È possibile eseguire un aggiornamento diretto da AEM 6.3 Forms e AEM 6.4 Forms a AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
@@ -18,44 +18,44 @@ ht-degree: 0%
 ---
 
 
-# Aggiornamento ad AEM 6.5 Forms{#upgrade-to-aem-forms}
+# Aggiornamento a AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-AEM 6.5 Forms include diverse nuove funzioni e miglioramenti che semplificano la creazione, la gestione e l&#39;esperienza utente con moduli e corrispondenze. Per informazioni su tutte le nuove funzionalità e i miglioramenti di AEM 6.5 Forms, consulta [Nuovo documento](../../forms/using/whats-new.md)di riepilogo delle funzioni.
+AEM 6.5 Forms include diverse nuove funzioni e miglioramenti che semplificano la creazione, la gestione e l&#39;esperienza utente con moduli e corrispondenze. Per informazioni su tutte le nuove funzionalità e i miglioramenti di Forms AEM 6.5, consultate [Nuovo documento di riepilogo delle funzioni](../../forms/using/whats-new.md).
 
-È possibile aggiornare l&#39;installazione esistente di LiveCycle o AEM Forms per ottenere nuove funzionalità e miglioramenti offerti in AEM 6.5 Forms mantenendo intatti i dati, i processi e le risorse esistenti. Durante l&#39;aggiornamento, vengono conservati anche i metadati e lo stato dei processi. Potete scegliere un percorso di aggiornamento per iniziare a eseguire l&#39;aggiornamento.
+Puoi aggiornare il LiveCycle esistente o &#39;installazione di AEM Forms per ottenere nuove funzionalità e miglioramenti offerti in AEM 6.5 Forms, mantenendo intatti i dati, i processi e le risorse esistenti. Durante l&#39;aggiornamento, vengono conservati anche i metadati e lo stato dei processi. Potete scegliere un percorso di aggiornamento per iniziare a eseguire l&#39;aggiornamento.
 
-Nel diagramma seguente sono visualizzati i percorsi di aggiornamento disponibili per i AEM Forms in OSGi:
+Nel diagramma seguente sono visualizzati i percorsi di aggiornamento disponibili per  AEM Forms su OSGi:
 
 ![](do-not-localize/osgi-upgrade-path.png)
 
 Puoi eseguire un aggiornamento diretto da:
 
-* Moduli AEM 6.3 su OSGi
-* Moduli AEM 6.4 su OSGi
+* AEM 6.3 Forms su OSGi
+* AEM 6.4 Forms su OSGi
 
 È inoltre possibile eseguire un aggiornamento multi-hop da
 
-* Moduli AEM 6.0 su OSGi
-* Moduli AEM 6.1 su OSGi
-* Moduli AEM 6.2 su OSGi
+* AEM 6.0 Forms su OSGi
+* AEM 6.1 Forms su OSGi
+* AEM 6.2 Forms su OSGi
 
-Nel diagramma seguente sono visualizzati i percorsi di aggiornamento disponibili per i AEM Forms su JEE:
+Nel diagramma seguente sono visualizzati i percorsi di aggiornamento disponibili per  AEM Forms su JEE:
 
 ![](do-not-localize/jee-upgrade-6-5.png)
 
 Puoi eseguire un aggiornamento diretto da:
 
-* Moduli AEM 6.3 su JEE
-* Moduli AEM 6.4 su JEE
+* AEM 6.3 Forms su JEE
+* AEM 6.4 Forms su JEE
 
 È inoltre possibile eseguire un aggiornamento multi-hop da
 
 * LiveCycle ES2
 * LiveCycle ES3
 * LiveCycle ES4 SP1
-* Moduli AEM 6.0 su JEE
-* Moduli AEM 6.1 su JEE
-* Moduli AEM 6.2 su JEE
+* AEM 6.0 Forms su JEE
+* AEM 6.1 Forms su JEE
+* AEM 6.2 Forms su JEE
 
 <!--
 [Work in Progress]
