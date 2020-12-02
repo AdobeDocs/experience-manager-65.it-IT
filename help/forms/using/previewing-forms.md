@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Panoramica {#overview}
 
-In AEM Forms è possibile visualizzare l&#39;anteprima dei moduli e dei documenti presenti nell&#39;archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli quando vengono rilasciati agli utenti finali.
+In  AEM Forms è possibile visualizzare l&#39;anteprima dei moduli e dei documenti presenti nella directory archivio. La funzione Anteprima consente di sapere esattamente l’aspetto e il funzionamento dei moduli quando vengono rilasciati agli utenti finali.
 
 Durante la visualizzazione dell&#39;anteprima dei moduli, viene eseguito il rendering nell&#39;interfaccia interattiva e l&#39;utente può compilare i moduli con i dati. Durante l&#39;anteprima dei documenti, il rendering viene eseguito in modalità non interattiva e l&#39;utente può visualizzare solo il documento. Per i moduli è disponibile un&#39;ulteriore opzione di Anteprima personalizzata. Utilizzando questa opzione, è possibile visualizzare l&#39;anteprima del modulo utilizzando i dati provenienti da un file XML. I dati riempiono alcuni o tutti i campi del modulo di cui si sta visualizzando l&#39;anteprima.
 
@@ -35,7 +38,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
   </tr>
   <tr>
    <td>Modulo PDF</td>
-   <td>Anteprima e anteprima PDF con dati<br /> </td>
+   <td>Anteprima PDF con dati<br /> </td>
   </tr>
   <tr>
    <td>modulo adattivo</td>
@@ -50,7 +53,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
 
 ## Anteprima di un modulo {#previewing-a-form-1}
 
-1. Selezionate una risorsa da visualizzare in anteprima, quindi fate clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra degli strumenti delle azioni.
+1. Selezionate una risorsa da visualizzare in anteprima e fate clic su Anteprima ![aem6forms_preview](assets/aem6forms_preview.png) nella barra degli strumenti delle azioni.
 
    >[!NOTE]
    >
