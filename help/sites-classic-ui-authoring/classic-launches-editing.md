@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 100%
 
 ---
 
@@ -47,6 +50,7 @@ Dopo aver creato un lancio è possibile modificarne il nome e la data. È inoltr
       * **Titolo**
       * **Data attivazione**: è equivalente alla data di lancio
       * **Produzione pronta**
+
       Consulta [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e l&#39;interazione con questi campi.
 
    * Nella scheda **Immagini, è possibile caricare un file di immagine.**
