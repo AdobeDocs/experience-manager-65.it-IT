@@ -1,6 +1,6 @@
 ---
 title: Content Services
-seo-title: Content Services
+seo-title: Servizi contenuto
 description: 'null'
 seo-description: 'null'
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
@@ -43,7 +43,7 @@ Content Services può distribuire i contenuti come risorse, pacchetti HTML (HTML
 >
 >Prima di iniziare a utilizzare Content Services, assicurati di abilitare il flag Content Services. Per abilitare la creazione e la gestione di modelli nell&#39;app, devi abilitare i modelli di dati nel browser di configurazione.
 >
->Per ulteriori informazioni, consulta **[Amministrazione di Content Services](/help/mobile/developing-content-services.md)** e la documentazione del browser [di](/help/sites-administering/configurations.md) configurazione.
+>Per ulteriori informazioni, vedere **[Amministrazione di Content Services](/help/mobile/developing-content-services.md)** e la documentazione del [browser di configurazione](/help/sites-administering/configurations.md).
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
