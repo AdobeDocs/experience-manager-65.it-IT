@@ -1,6 +1,6 @@
 ---
-title: Foglio di lavoro Sling
-seo-title: Foglio di lavoro Sling
+title: Guida di riferimento rapido per Sling
+seo-title: Guida di riferimento rapido per Sling
 description: Un semplice riferimento Sling
 seo-description: Un semplice riferimento Sling
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
@@ -13,13 +13,13 @@ translation-type: tm+mt
 source-git-commit: c6b1d651940b5c556dea81d19354aac36d14b423
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
 
-# Foglio di lavoro Sling{#sling-cheatsheet}
+# Guida di riferimento rapido per Sling{#sling-cheatsheet}
 
 ![Comprendere la risoluzione dello script Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Utilizzo di SlingPostServlet: è il gestore predefinito per le richieste POST; può fare quasi tutto.](assets/sling-cheatsheet-02.png)
+![Utilizzo di SlingPostServlet - questo è il gestore predefinito per le richieste POST; può fare quasi tutto.](assets/sling-cheatsheet-02.png)
