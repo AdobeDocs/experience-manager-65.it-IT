@@ -27,23 +27,23 @@ Con una licenza di AEM Communities, oltre a creare siti di community, è possibi
 
 Per ulteriori informazioni sulla creazione di un sito community, visitate:
 
-* [Panoramica di AEM Communities](/help/communities/overview.md)
+* [ Panoramica di AEM Communities](/help/communities/overview.md)
 * [Guida introduttiva di AEM Communities](/help/communities/getting-started.md)
 * [Guida introduttiva  AEM Communities per l’abilitazione](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
->Se non avete familiarità con l’ambiente di authoring, consultate la documentazione sulla gestione [](/help/sites-authoring/basic-handling.md) di base e una guida [rapida all’authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
+>Se non hai familiarità con l&#39;ambiente di authoring, consulta la documentazione in [operazioni di base](/help/sites-authoring/basic-handling.md) e una [guida rapida all&#39;authoring delle pagine](/help/sites-authoring/qg-page-authoring.md).
 
 ## Componenti community disponibili {#available-communities-components}
 
 Nella tabella seguente sono elencati i componenti Community visibili agli autori quando sono attivati nel browser Componenti (barra laterale).
 
-Vedere anche la guida [interattiva sui componenti](/help/communities/components-guide.md)community.
+Vedere anche la [Guida interattiva ai componenti della community](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Leggi [Community Components Basics (Nozioni di base sui](/help/communities/basics.md) componenti di Community) in quanto contiene le informazioni necessarie per la creazione con i componenti Community.
+>Leggi [Communities Components Basics](/help/communities/basics.md) (Nozioni di base sui componenti delle community) in quanto contiene le informazioni necessarie per l&#39;authoring con i componenti Community.
 
 | **Titolo componente** | **Funzione rimossa** |
 |---|---|
@@ -82,11 +82,11 @@ Vedere anche la guida [interattiva sui componenti](/help/communities/components-
 >
 >Il componente del sondaggio non è più disponibile e supportato in  Community Experience Manager.
 
-## Documentazione di Community correlate {#related-communities-documentation}
+## Documentazione sulle community correlate {#related-communities-documentation}
 
-* Per informazioni sulle distribuzioni consigliate, visitate [Implementazione delle community](/help/communities/deploy-communities.md) .
+* Per informazioni sulle distribuzioni consigliate, visitare [Implementazione di Communities](/help/communities/deploy-communities.md).
 
-* Visitate [Administering Communities Sites](/help/communities/administer-landing.md) per informazioni su come creare un sito community, configurare modelli di sito community, moderare i contenuti della community, gestire i membri e configurare i messaggi.
+* Per informazioni su come creare un sito community, configurare i modelli di sito community, moderare i contenuti della community, gestire i membri e configurare i messaggi, visitate [Administering Communities Sites](/help/communities/administer-landing.md).
 
-* Visitate [Developing Communities](/help/communities/communities.md) per informazioni sul framework dei componenti sociali (SCF) e sulla personalizzazione dei componenti e delle funzionalità di Communities.
+* Visitate [Developing Communities](/help/communities/communities.md) per informazioni sul framework dei componenti social network (SCF) e sulla personalizzazione dei componenti e delle funzioni di Communities.
 
