@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Vari ruoli possono essere coinvolti nei test e nelle varie fasi di sviluppo dei 
 <table>
  <tbody>
   <tr>
-   <td>Team Test</td>
+   <td>Team di test</td>
    <td>Responsabile per... </td>
    <td>Quando...</td>
   </tr>
@@ -42,7 +45,7 @@ Vari ruoli possono essere coinvolti nei test e nelle varie fasi di sviluppo dei 
     <ul>
      <li><p>Fornisce al cliente l'esperienza del progetto in fase di sviluppo.</p> </li>
      <li><p>Fornisce feedback anticipati dal cliente.</p> </li>
-     <li><p>Gli utenti spesso esprimono le loro esigenze in termini di esperienza passata; coinvolgere i clienti nel test il prima possibile aumenta l'esperienza del nuovo progetto in termini di <i>esperienza pratica</i> .</p> </li>
+     <li><p>Gli utenti spesso esprimono le loro esigenze in termini di esperienza passata; coinvolgere i clienti nel test il prima possibile aumenta l'esperienza del nuovo progetto in termini di <i>esperienza pratica</i>.</p> </li>
     </ul> </td>
    <td><p>Anche in questo caso il coinvolgimento anticipato è positivo, anche se qualsiasi rilascio utilizzato dai clienti dovrebbe essere stabile, con funzionalità ragionevoli.</p> <p>Le prime impressioni sono sempre importanti.</p> </td>
   </tr>
