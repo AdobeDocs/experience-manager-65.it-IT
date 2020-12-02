@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 0%
 
 ---
 
@@ -44,9 +47,9 @@ Potete creare tutti i modelli di ricerca richiesti.
 
    * Nella parte superiore della scheda Criteri, selezionare un elemento di processo o un elemento di attività.
 
-      **Suggerimento**: *Se in precedenza è stato selezionato l&#39;elemento Nome processo e specificato un processo, tutte le variabili di processo definite in tale processo sono disponibili anche per la selezione.*
+      **Suggerimento**:  *Se in precedenza è stato selezionato l&#39;elemento Nome processo e specificato un processo, tutte le variabili di processo definite in tale processo sono disponibili anche per la selezione.*
 
-      **Suggerimento**: *Se si seleziona l&#39;elemento Visibile attività, gli utenti potranno rimuovere i task completati dai risultati della ricerca.*
+      **Suggerimento**:  *Se si seleziona l&#39;elemento Visibile attività, gli utenti potranno rimuovere i task completati dai risultati della ricerca.*
 
       I campi dei criteri di ricerca per l&#39;elemento selezionato vengono visualizzati nella parte inferiore della scheda Criteri.
 
@@ -55,9 +58,10 @@ Potete creare tutti i modelli di ricerca richiesti.
       * Selezionare un operatore relazionale (ad esempio &quot;essere uguale a&quot;) dall&#39;elenco fornito e specificare il valore dell&#39;operando nella casella accanto ad esso.
       * (Facoltativo) Per consentire agli utenti di modificare il valore dell&#39;operando in Workspace, selezionare Consenti all&#39;utente di modificare l&#39;operando.
       * (Facoltativo) Per consentire agli utenti di modificare l&#39;operatore relazionale, selezionare Consenti all&#39;utente di selezionare un altro operatore relazionale. Nell&#39;elenco visualizzato, selezionate gli operatori che saranno disponibili per l&#39;utente.
-      **Suggerimento**: *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo dell&#39;operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
 
-      **Suggerimento**: Per *eliminare un elemento dal modello di ricerca, fate clic sull&#39;icona Elimina accanto ai criteri di ricerca dell&#39;elemento.*
+      **Suggerimento**:  *Se come elemento è stato selezionato Nome processo, è possibile fare clic sull&#39;icona accanto al campo operando per visualizzare un elenco in cui è possibile selezionare un processo in esecuzione sul server dei moduli. Dopo aver selezionato un processo, tutte le variabili di processo definite in tale processo sono disponibili per la selezione in Variabili di processo nella sezione superiore della scheda Criteri.*
+
+      **Suggerimento**:  *Per eliminare un elemento dal modello di ricerca, fate clic sull&#39;icona Elimina accanto ai criteri di ricerca dell&#39;elemento.*
 
 
 1. (Facoltativo) Per ogni intestazione di colonna da visualizzare nei risultati della ricerca, fare clic sulla scheda Layout ed eseguire le operazioni seguenti:
@@ -65,6 +69,7 @@ Potete creare tutti i modelli di ricerca richiesti.
    * Selezionate un processo o un elemento attività e fate clic sulla freccia destra per spostarlo nell’elenco Colonne in cui visualizzare il rapporto.
    * Nell&#39;elenco Colonne su rapporto, selezionare il processo o l&#39;elemento attività e fare clic sulla freccia su o sulla freccia giù per portarlo nella posizione desiderata nell&#39;ordine delle colonne. Le intestazioni di colonna nei risultati della ricerca vengono visualizzate nell’ordine in cui sono elencate qui.
    * (Facoltativo) Per modificare il nome dell&#39;elemento per l&#39;intestazione della colonna, selezionate l&#39;elemento dall&#39;elenco Colonne in rapporto e fornite il nuovo nome.
+
    >[!NOTE]
    >
    >Il layout specificato nel modello di ricerca ha la priorità sulle preferenze dell&#39;utente specificate per le intestazioni di colonna in Workspace.
