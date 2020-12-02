@@ -25,9 +25,9 @@ ht-degree: 0%
 * Utilizzo della cartella esaminata
 * Utilizzo di e-mail
 
-Per ulteriori informazioni sulla creazione  processo del flusso di lavoro AEM Forms JEE, vedere la Guida [di](http://www.adobe.com/go/learn_aemforms_workbench_65)Workbench.
+Per ulteriori informazioni sulla creazione  processo del flusso di lavoro AEM Forms JEE, vedere [Guida di Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
-## Archivio dati utente e data {#user-data-and-data-stores}
+## Archivio dati utente {#user-data-and-data-stores}
 
 Quando un processo viene avviato e in corso, acquisisce i dati sui partecipanti al processo, i dati immessi dai partecipanti nel modulo associato al processo e gli allegati aggiunti al modulo. I dati vengono memorizzati  database del server AEM Forms JEE e, se configurato, alcuni dati come gli allegati vengono memorizzati nella directory Global Document Storage (GDS). La directory GDS può essere configurata su un file system condiviso o su un database.
 
@@ -39,32 +39,32 @@ Tuttavia, non potete identificare l’ID dell’istanza di processo per un inizi
 
 * **Processo avviato tramite una cartella** controllata: Un&#39;istanza di processo non può essere identificata utilizzando il relativo iniziatore se il processo viene avviato da una cartella esaminata. In questo caso, le informazioni utente sono codificate nei dati memorizzati.
 * **Processo avviato dall’istanza** pubblica AEM: Tutte le istanze di processo attivate AEM&#39;istanza di pubblicazione non acquisiscono informazioni sull&#39;iniziatore. Tuttavia, i dati utente possono essere acquisiti nel modulo associato al processo, memorizzato nelle variabili del flusso di lavoro.
-* **Processo avviato tramite e-mail**: L&#39;ID e-mail del mittente viene acquisito come proprietà in una colonna BLOB opaca della tabella del `tb_job_instance` database, che non può essere interrogata direttamente.
+* **Processo avviato tramite e-mail**: L&#39;ID e-mail del mittente viene acquisito come proprietà in una colonna BLOB opaca della tabella del  `tb_job_instance` database, che non può essere interrogata direttamente.
 
-### Identificare gli ID dell’istanza del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto {#initiator-participant}
+### Identificare gli ID dell&#39;istanza del processo quando l&#39;iniziatore del flusso di lavoro o il partecipante è noto {#initiator-participant}
 
 Effettuate le seguenti operazioni per identificare gli ID dell’istanza di processo per un iniziatore di flusso di lavoro o un partecipante:
 
-1. Eseguite il seguente comando  database del server AEM Forms per recuperare l&#39;ID principale per l&#39;iniziatore di workflow o il partecipante dalla tabella del `edcprincipalentity` database.
+1. Eseguite il seguente comando  database del server AEM Forms per recuperare l&#39;ID principale per l&#39;iniziatore del flusso di lavoro o il partecipante dalla tabella di database `edcprincipalentity`.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
    ```
 
-   La query restituisce l&#39;ID principale per l&#39;ID specificato `user_ID`.
+   La query restituisce l&#39;ID principale per l&#39;elemento `user_ID` specificato.
 
-1. (**Per l&#39;iniziatore** del flusso di lavoro) Esegui il comando seguente per recuperare dalla tabella del `tb_task` database tutte le attività associate all&#39;ID principale per l&#39;iniziatore.
+1. (**Per l&#39;iniziatore del flusso di lavoro**) Esegui il comando seguente per recuperare tutte le attività associate all&#39;ID principale per l&#39;iniziatore dalla tabella del database `tb_task`.
 
    ```sql
    select * from tb_task where start_task = 1 and create_user_id= 'initiator_principal_id'
    ```
 
-   La query restituisce le attività iniziate dal `initiator`_ specificato `principal_id`. Le attività sono di due tipi:
+   La query restituisce le attività avviate dalla `initiator`_ `principal_id` specificata. Le attività sono di due tipi:
 
-   * **Attività** completate: Tali attività sono state inviate e presentano un valore alfanumerico nel `process_instance_id` campo. Prendete nota di tutti gli ID di istanza del processo per le attività inviate e continuate con i passaggi.
-   * **Attività avviate ma non completate**: Tali attività sono iniziate ma non ancora inviate. Il valore nel `process_instance_id` campo di queste attività è **0** (zero). In questo caso, prendere nota degli ID attività corrispondenti e vedere [Operazioni con le attività](#orphan)orfane.
+   * **Attività** completate: Queste attività sono state inviate e presentano un valore alfanumerico nel  `process_instance_id` campo. Prendete nota di tutti gli ID di istanza del processo per le attività inviate e continuate con i passaggi.
+   * **Attività avviate ma non completate**: Tali attività sono iniziate ma non ancora inviate. Il valore nel campo `process_instance_id` per queste attività è **0** (zero). In questo caso, prendere nota degli ID attività corrispondenti e vedere [Operazioni con le attività orfane](#orphan).
 
-1. (**Per i partecipanti** al flusso di lavoro) Esegui il comando seguente per recuperare gli ID dell’istanza di processo associati all’ID principale del partecipante al processo per l’iniziatore dalla tabella del `tb_assignment` database.
+1. (**Per i partecipanti al flusso di lavoro**) Esegui il comando seguente per recuperare gli ID dell&#39;istanza di processo associati all&#39;ID principale del partecipante al processo per l&#39;iniziatore dalla tabella di database `tb_assignment`.
 
    ```sql
    select distinct a.process_instance_id from tb_assignment a join tb_queue q on a.queue_id = q.id where q.workflow_user_id='participant_principal_id'
@@ -74,11 +74,11 @@ Effettuate le seguenti operazioni per identificare gli ID dell’istanza di proc
 
    Prendete nota di tutti gli ID di istanza del processo per le attività inviate e continuate con i passaggi.
 
-   Per le attività o le attività orfane in cui il valore `process_instance_id` è 0 (zero), prendere nota degli ID attività corrispondenti e vedere [Operazioni con le attività](#orphan)orfane.
+   Per le attività o le attività orfane in cui `process_instance_id` è 0 (zero), prendere nota degli ID attività corrispondenti e vedere [Operazioni con le attività orfane](#orphan).
 
-1. Seguite le istruzioni riportate nella sezione [Rimuovi i dati utente dalle istanze del flusso di lavoro in base agli ID](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) dell&#39;istanza del processo per eliminare i dati utente per gli ID di istanza del processo identificati.
+1. Seguite le istruzioni riportate nella sezione [Rimozione dei dati utente dalle istanze del flusso di lavoro in base agli ID di istanza del processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) per eliminare i dati utente per gli ID di istanza del processo identificati.
 
-### Identificare gli ID dell’istanza del processo quando i dati dell’utente vengono memorizzati in variabili primitive {#primitive}
+### Identificare gli ID dell&#39;istanza del processo quando i dati dell&#39;utente vengono memorizzati in variabili primitive {#primitive}
 
 Un flusso di lavoro può essere progettato in modo che i dati utente vengano acquisiti in una variabile che viene memorizzata come BLOB nel database. In questi casi, potete eseguire una query sui dati utente solo se sono memorizzati in una delle seguenti variabili di tipo primitivo:
 
@@ -94,41 +94,41 @@ Per determinare se un flusso di lavoro che memorizza i dati in variabili di tipo
    select database_table from omd_object_type where name='pt_<app_name>/<workflow_name>'
    ```
 
-   La query restituisce un nome di tabella in `tb_<number>` formato per l&#39;applicazione ( `app_name`) e il flusso di lavoro ( `workflow_name`) specificati.
+   La query restituisce un nome di tabella in formato `tb_<number>` per l&#39;applicazione specificata ( `app_name`) e il flusso di lavoro ( `workflow_name`).
 
    >[!NOTE]
    >
-   >Il valore della `name` proprietà può essere complesso se il flusso di lavoro è nidificato all&#39;interno di sottocartelle all&#39;interno dell&#39;applicazione. Accertatevi di specificare il percorso completo esatto del flusso di lavoro, che potete ottenere dalla tabella del `omd_object_type` database.
+   >Il valore della proprietà `name` può essere complesso se il flusso di lavoro è nidificato all&#39;interno di sottocartelle all&#39;interno dell&#39;applicazione. Assicurarsi di specificare il percorso completo esatto del flusso di lavoro, che è possibile ottenere dalla tabella del database `omd_object_type`.
 
-1. Esaminare lo schema della `tb_<number>` tabella. La tabella contiene variabili che memorizzano i dati utente per il flusso di lavoro specificato. Le variabili della tabella corrispondono alle variabili del flusso di lavoro.
+1. Esaminare lo schema della tabella `tb_<number>`. La tabella contiene variabili che memorizzano i dati utente per il flusso di lavoro specificato. Le variabili della tabella corrispondono alle variabili del flusso di lavoro.
 
    Identificate e prendete nota della variabile corrispondente alla variabile del flusso di lavoro contenente l’ID utente. Se la variabile identificata è di tipo primitivo, potete eseguire una query per determinare le istanze del flusso di lavoro associate a un ID utente.
 
-1. Esegui il seguente comando del database. In questo comando, la variabile `user_var` è di tipo primitivo e contiene l’ID utente.
+1. Esegui il seguente comando del database. In questo comando, `user_var` è la variabile di tipo primitivo che contiene l&#39;ID utente.
 
    ```sql
    select process_instance_id from <tb_name> where <user_var>=<user_ID>
    ```
 
-   La query restituisce tutti gli ID dell&#39;istanza di processo associati all&#39;istanza specificata `user_ID`.
+   La query restituisce tutti gli ID di istanza del processo associati alla `user_ID` specificata.
 
-1. Seguite le istruzioni riportate nella sezione [Rimuovi i dati utente dalle istanze del flusso di lavoro in base agli ID](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) dell&#39;istanza del processo per eliminare i dati utente per gli ID di istanza del processo identificati.
+1. Seguite le istruzioni riportate nella sezione [Rimozione dei dati utente dalle istanze del flusso di lavoro in base agli ID di istanza del processo](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) per eliminare i dati utente per gli ID di istanza del processo identificati.
 
-### Rimozione dei dati utente dalle istanze del flusso di lavoro in base agli ID delle istanze del processo {#purge}
+### Elimina i dati utente dalle istanze del flusso di lavoro in base agli ID dell&#39;istanza di processo {#purge}
 
 Dopo aver identificato gli ID dell’istanza di processo associati a un utente, effettuate le seguenti operazioni per eliminare i dati utente dalle rispettive istanze di processo.
 
-1. Esegui il comando seguente per recuperare l’ID chiamata e lo stato di lunga durata per un’istanza di processo dalla `tb_process_instance` tabella.
+1. Eseguite il comando seguente per recuperare l&#39;ID chiamata e lo stato di lunga durata per un&#39;istanza di processo dalla tabella `tb_process_instance`.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
    ```
 
-   La query restituisce l&#39;ID chiamata longevo e lo stato per quello specificato `process_instance_id`.
+   La query restituisce l&#39;ID chiamata longevo e lo stato per l&#39;elemento `process_instance_id` specificato.
 
-1. Create un&#39;istanza del `ProcessManager` client pubblico ( `com.adobe.idp.workflow.client.ProcessManager`) utilizzando un&#39; `ServiceClientFactory` istanza con le impostazioni di connessione corrette.
+1. Creare un&#39;istanza del client pubblico `ProcessManager` ( `com.adobe.idp.workflow.client.ProcessManager`) utilizzando un&#39;istanza `ServiceClientFactory` con le impostazioni di connessione corrette.
 
-   Per ulteriori informazioni, consultate Riferimento API Java per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Per ulteriori informazioni, consultare il riferimento alle API Java per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controllare lo stato dell&#39;istanza del flusso di lavoro. Se lo stato è diverso da 2 (COMPLETE) o 4 (TERMINATED), terminare l’istanza chiamando il seguente metodo:
 
@@ -138,11 +138,11 @@ Dopo aver identificato gli ID dell’istanza di processo associati a un utente, 
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   Il `purgeProcessInstance` metodo elimina completamente tutti i dati per l’ID di chiamata specificato dal database del server AEM Forms e da GDS, se configurato.
+   Il metodo `purgeProcessInstance` elimina completamente tutti i dati per l&#39;ID di chiamata specificato  database del server AEM Forms e GDS, se configurato.
 
 ### Operazioni con le attività orfane {#orphan}
 
-Le attività orfane sono le attività il cui processo di contenimento è stato avviato ma non ancora inviato. in questo caso, il valore `process_instance_id` è **0** (zero). Pertanto, non è possibile tracciare i dati utente memorizzati per le attività orfane utilizzando gli ID di istanza del processo. Tuttavia, è possibile tracciarlo utilizzando l&#39;ID attività per un&#39;attività orfana. Potete identificare gli ID delle attività dalla `tb_task` tabella relativa a un utente come descritto in [Identificare gli ID delle istanze del processo quando l’iniziatore del flusso di lavoro o il partecipante è noto](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Le attività orfane sono le attività il cui processo di contenimento è stato avviato ma non ancora inviato. in questo caso, il `process_instance_id` è **0** (zero). Pertanto, non è possibile tracciare i dati utente memorizzati per le attività orfane utilizzando gli ID di istanza del processo. Tuttavia, è possibile tracciarlo utilizzando l&#39;ID attività per un&#39;attività orfana. È possibile identificare gli ID delle attività dalla tabella `tb_task` per un utente come descritto in [Identificare gli ID dell&#39;istanza del processo quando l&#39;iniziatore del flusso di lavoro o il partecipante è noto](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Dopo aver ottenuto gli ID attività, effettuate le seguenti operazioni per eliminare i file e i dati associati con un&#39;attività orfana da GDS e database.
 
@@ -152,7 +152,7 @@ Dopo aver ottenuto gli ID attività, effettuate le seguenti operazioni per elimi
    select id from tb_form_data where task_id=<task_id>
    ```
 
-   La query restituisce un elenco di ID. Per ciascun ID ( `fd_id`) restituito nei risultati, crea un elenco di stringhe ID sessione come segue:
+   La query restituisce un elenco di ID. Per ciascun ID ( `fd_id`) restituito nei risultati, create un elenco di stringhe ID sessione come segue:
 
    * _ `wfattach<task_id>`
    * `_wftask<fd_id>`
@@ -173,7 +173,7 @@ Dopo aver ottenuto gli ID attività, effettuate le seguenti operazioni per elimi
 
       `<file_name_guid>.session<session_id_string>`
 
-      1. Eliminate tutti i file marcatore e altri file con il nome file esatto come `<file_name_guid>` dal file system.
+      1. Eliminate dal file system tutti i file marcatore e altri file con il nome file esatto come `<file_name_guid>`.
    1. **GDS nel database**
 
       Eseguite i comandi seguenti per ciascun ID sessione:
