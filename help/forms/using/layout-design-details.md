@@ -18,12 +18,12 @@ ht-degree: 0%
 ---
 
 
-# Progettazione layout{#layout-design}
+# Layout Design{#layout-design}
 
 I modelli di modulo XFA o XDP sono i modelli per:
 
 * [Lettere](/help/forms/using/create-letter.md)
-* [Canale](/help/forms/using/web-channel-print-channel.md#printchannel) di stampa delle comunicazioni [interattive](/help/forms/using/interactive-communications-overview.md)
+* [Canale di stampa ](/help/forms/using/web-channel-print-channel.md#printchannel) delle comunicazioni  [interattive](/help/forms/using/interactive-communications-overview.md)
 
 * Frammenti di layout
 
@@ -56,43 +56,43 @@ Dopo aver analizzato il layout richiesto per creare la comunicazione interattiva
 
 >[!NOTE]
 >
->Aggiungere contenuto al canale Stampa della comunicazione interattiva anziché aggiungere contenuto al componente sottomodulo nel modello XDP. Aggiungere contenuti alle aree di destinazione del canale Stampa utilizzando frammenti di [documento, grafici, immagini](create-interactive-communication.md#step2)e frammenti di layout.
+>Aggiungere contenuto al canale Stampa della comunicazione interattiva anziché aggiungere contenuto al componente sottomodulo nel modello XDP. Aggiungere contenuti alle aree di destinazione del canale di stampa utilizzando frammenti di documento [grafici, immagini](create-interactive-communication.md#step2) e frammenti di layout.
 
 Effettuare le seguenti operazioni per utilizzare il sottomodulo in un modello XDP:
 
-1. Aprire Forms Designer, selezionare **File** > **Nuovo** > **Usa un modulo** vuoto, toccare **Avanti**, quindi **Fine** per aprire il modulo per la creazione del modello.
+1. Aprire Forms Designer, selezionare **File** > **Nuovo** > **Usa un modulo vuoto**, toccare **Avanti**, quindi toccare **Fine** per aprire il modulo per la creazione del modello.
 
-   Assicurarsi che le opzioni Libreria **** oggetto e **Oggetto** siano selezionate dal menu **Finestra** .
+   Assicurarsi che le opzioni **Libreria oggetto** e **Oggetto** siano selezionate dal menu **Finestra**.
 
-1. Trascinare il componente **Sottomodulo** dalla Libreria **** oggetto al modulo.
+1. Trascinare il componente **Sottomodulo** dalla **Libreria oggetto** al modulo.
 
    ![Designer componenti](assets/subform_component_designer_new.png)
 
-1. Selezionare il sottomodulo per visualizzare le opzioni del sottomodulo nella finestra **Oggetto** , nel riquadro a destra.
-1. Selezionare la scheda **Sottomodulo** e selezionare **Flusso** dall&#39;elenco a discesa **Contenuto** . Trascinare l&#39;endpoint sinistro del sottomodulo per regolare la lunghezza.
+1. Selezionare il sottomodulo per visualizzare le opzioni relative al sottomodulo nella finestra **Oggetto** nel riquadro a destra.
+1. Selezionare la scheda **Sottomodulo** e selezionare **Flusso** dall&#39;elenco a discesa **Contenuto**. Trascinare l&#39;endpoint sinistro del sottomodulo per regolare la lunghezza.
 
    ![Sottomodulo scorrevole](assets/object_subform_flowed_new.png)
 
-1. Nella scheda **Binding** :
+1. Nella scheda **Binding**:
 
-   1. Specificare un nome per il sottomodulo nel campo **Nome** .
-   1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+   1. Specificare un nome per il sottomodulo nel campo **Name**.
+   1. Selezionare **No data binding** dall&#39;elenco a discesa **Binding dei dati**.
 
 1. Analogamente, selezionare il sottomodulo principale dal riquadro a sinistra.
 
    ![Sottomodulo principale](assets/root_subform_designer_new.png)
 
-1. Selezionare la scheda **Sottomodulo** e selezionare **Flusso** dall&#39;elenco a discesa **Contenuto** . Nella scheda **Binding** :
+1. Selezionare la scheda **Sottomodulo** e selezionare **Flusso** dall&#39;elenco a discesa **Contenuto**. Nella scheda **Binding**:
 
-   1. Specificare un nome per il sottomodulo nel campo **Nome** .
-   1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+   1. Specificare un nome per il sottomodulo nel campo **Name**.
+   1. Selezionare **No data binding** dall&#39;elenco a discesa **Binding dei dati**.
 
    Ripetere i passaggi da 2 a 5 per aggiungere altri sottomoduli al modello XDP. Aggiungere [testo, frammenti di documento, immagini e grafici](create-interactive-communication.md#step2) alle aree di destinazione solo durante la creazione della comunicazione interattiva.
 
 1. Selezionare **File** > **Salva con nome** per salvare il file nel file system locale:
 
    1. Andate alla posizione in cui salvare il file e specificate un nome per il modello XDP.
-   1. Selezionate **.xdp** dall&#39;elenco a discesa **Salva come** .
+   1. Selezionare **.xdp** dall&#39;elenco a discesa **Salva come**.
 
    1. Toccate **Salva**.
 
@@ -102,16 +102,16 @@ Utilizzare il componente Campo immagine o Sottomodulo nel modello XDP e aggiunge
 
 >[!NOTE]
 >
->Aggiungere un’immagine al canale di stampa della comunicazione interattiva invece di aggiungere un’immagine al componente Campo immagine o Sottomodulo nel modello XDP. Per ulteriori informazioni, consultate [Aggiunta di contenuti alla comunicazione](../../forms/using/create-interactive-communication.md#step2)interattiva.
+>Aggiungere un’immagine al canale di stampa della comunicazione interattiva invece di aggiungere un’immagine al componente Campo immagine o Sottomodulo nel modello XDP. Per ulteriori informazioni, vedere [Aggiunta di contenuti alla comunicazione interattiva](../../forms/using/create-interactive-communication.md#step2).
 
 Per usare il componente Campo immagine in un modello XDP, effettuate le seguenti operazioni:
 
-1. Trascinare il componente Campo **** immagine dalla Libreria **** oggetto al modulo.
-1. Selezionare il sottomodulo per visualizzare le opzioni del sottomodulo nella finestra **Oggetto** , nel riquadro a destra.
-1. Nella scheda **Binding** :
+1. Trascinare il componente **Campo immagine** dalla **Libreria oggetto** al modulo.
+1. Selezionare il sottomodulo per visualizzare le opzioni relative al sottomodulo nella finestra **Oggetto** nel riquadro a destra.
+1. Nella scheda **Binding**:
 
-   1. Specificate un nome per il campo immagine nel campo **Nome** .
-   1. Selezionare **Nessun binding** dati dall&#39;elenco a discesa Binding **** dati.
+   1. Specificate un nome per il campo immagine nel campo **Name**.
+   1. Selezionare **No data binding** dall&#39;elenco a discesa **Binding dei dati**.
 
 ### Creare un modello XDP per i frammenti di layout {#xdplayoutfragments}
 
@@ -119,31 +119,31 @@ Utilizzare il componente Tabella di Forms Designer per creare frammenti di layou
 
 >[!NOTE]
 >
->Immettere il testo nelle celle della tabella o [creare il binding con gli oggetti](create-interactive-communication.md#step2) del modello dati del modulo solo durante la creazione della comunicazione interattiva.
+>Immettere il testo nelle celle della tabella oppure [creare il binding con gli oggetti del modello dati del modulo](create-interactive-communication.md#step2) solo durante la creazione della comunicazione interattiva.
 
 Per utilizzare il componente Tabella nel modello XDP utilizzando Forms Designer, procedere come segue:
 
-1. Trascinare il componente **Tabella** dalla Libreria **** oggetto al modulo.
-1. Nella finestra di dialogo **Inserisci tabella** :
+1. Trascinare il componente **Tabella** dalla **Libreria oggetto** al modulo.
+1. Nella finestra di dialogo **Inserisci tabella**:
 
    1. Specificare il numero di righe e colonne della tabella.
    1. Selezionare la casella di controllo **Includi riga intestazione nella tabella** per includere una riga per l&#39;intestazione della tabella.
    1. Toccate **OK**.
 
-1. Toccare **+** nel riquadro a sinistra accanto al nome della tabella, fare clic con il pulsante destro del mouse sui nomi delle celle inclusi nell&#39;intestazione e nelle altre righe, quindi selezionare **Rinomina oggetto** per rinominare le celle della tabella.
-1. Fare clic sui campi di testo dell&#39;intestazione della tabella nella vista **** Struttura e rinominarli.
-1. Trascinare il componente Campo **di** testo dalla Libreria **** oggetto a ciascuna cella della tabella nella vista **** Struttura. Eseguire questo passaggio per eseguire il binding delle celle della tabella con gli oggetti del modello dati del modulo durante la creazione della comunicazione interattiva.
+1. Toccate **+** nel riquadro a sinistra accanto al nome della tabella, fate clic con il pulsante destro del mouse sui nomi delle celle inclusi nell&#39;intestazione e nelle altre righe, quindi selezionate **Rinomina oggetto** per rinominare le celle della tabella.
+1. Fare clic sui campi di testo dell&#39;intestazione della tabella in **Visualizzazione struttura** e rinominarli.
+1. Trascinare il componente **Campo di testo** dalla **Libreria oggetto** a ciascuna cella della tabella nella **Visualizzazione struttura**. Eseguire questo passaggio per eseguire il binding delle celle della tabella con gli oggetti del modello dati del modulo durante la creazione della comunicazione interattiva.
 
    ![Campi di testo in una tabella](assets/text_fields_table_new.png)
 
-1. Selezionare il nome della riga nel riquadro a sinistra, quindi selezionare **Oggetto** > **Binding** > **Ripeti riga per ogni elemento** dati. Eseguire questo passaggio per garantire che, se viene creato un binding tra le celle della tabella di questa riga e gli oggetti modello dati del modulo di tipo raccolta, la riga della tabella venga ripetuta automaticamente per ogni elemento dati disponibile nel database.
+1. Selezionare il nome della riga nel riquadro a sinistra, quindi selezionare **Oggetto** > **Binding** > **Ripeti riga per ogni elemento dati**. Eseguire questo passaggio per garantire che, se viene creato un binding tra le celle della tabella di questa riga e gli oggetti modello dati del modulo di tipo raccolta, la riga della tabella venga ripetuta automaticamente per ogni elemento dati disponibile nel database.
 
-   Immettere il testo nelle celle della tabella o [creare il binding con gli oggetti](create-interactive-communication.md#step2) del modello dati del modulo solo durante la creazione della comunicazione interattiva.
+   Immettere il testo nelle celle della tabella oppure [creare il binding con gli oggetti del modello dati del modulo](create-interactive-communication.md#step2) solo durante la creazione della comunicazione interattiva.
 
 1. Selezionare **File** > **Salva con nome** per salvare il file nel file system locale:
 
    1. Andate alla posizione in cui salvare il file e specificate il nome per il modello XDP.
-   1. Selezionate **.xdp** dall&#39;elenco a discesa **Salva come** .
+   1. Selezionare **.xdp** dall&#39;elenco a discesa **Salva come**.
 
    1. Toccate **Salva**.
 
@@ -151,11 +151,11 @@ Per utilizzare il componente Tabella nel modello XDP utilizzando Forms Designer,
 
 Dopo aver creato un modello XDP utilizzando Forms Designer, è necessario caricarlo  server AEM Forms in modo che sia disponibile per l&#39;uso durante la creazione della comunicazione interattiva.
 
-1. Selezionate **Forms** > **Forms e documenti**.
-1. Toccate **Crea** > Caricamento **** file.
+1. Selezionare **Forms** > **Forms &amp; Documents**.
+1. Toccate **Crea** > **Caricamento file**.
 1. Andate alla posizione del modello XDP nel file system locale e toccate **Apri** per importare il modello XDP nel server AEM Forms .
 
-## Uso dello schema {#using-schema}
+## Utilizzo dello schema {#using-schema}
 
 È possibile utilizzare uno schema in un layout o in un frammento di layout, ma non è obbligatorio. Se utilizzate uno schema, accertatevi di quanto segue:
 
@@ -186,7 +186,7 @@ Fintanto che un campo relativo soddisfa i criteri descritti in precedenza, può 
 
 I campi sono più flessibili nella configurazione del layout rispetto ai sottomoduli dell&#39;area di destinazione; tuttavia sono legati a un singolo tipo di valore. È possibile impostare un campo di grandi dimensioni o su una larghezza, un&#39;altezza e così via. Il risultato risolto del modulo o della regola viene inserito nel campo.
 
-## Definizione di quando utilizzare sottomoduli e campi di testo {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## Decide quando utilizzare sottomoduli e campi di testo {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 Utilizzare un sottomodulo se si desidera acquisire più contenuto del modulo in un layout verticale con scorrimento dall&#39;alto verso il basso (più paragrafi o immagini). Il layout deve gestire l&#39;aumento dell&#39;altezza del sottomodulo per adattarlo al contenuto. Se non si può essere certi che la lunghezza del contenuto associato al sottomodulo o alla destinazione non superi mai lo spazio riservato al sottomodulo nel layout, creare il sottomodulo come elemento secondario all&#39;interno di un contenitore di sottomoduli scorrevole. Questo processo assicura che gli oggetti layout sotto il sottomodulo scorrano verso il basso man mano che il sottomodulo cresce.
 
@@ -233,5 +233,5 @@ Quando elementi come il logo e l&#39;indirizzo dell&#39;organizzazione vengono v
 
 Utilizzare il formato di rendering del server del layout su Modulo XML dinamico; in caso contrario, il rendering di lettere/comunicazioni interattive basate su questo layout non può essere eseguito correttamente. Per impostazione predefinita, il formato di rendering del server in Forms Designer è impostato su Modulo XML dinamico. Per verificare di utilizzare il formato corretto:
 
-* In Designer, fare clic su **File** > Proprietà **** modulo > **Valori predefiniti**, quindi assicurarsi che l&#39;impostazione Rendering/Formato PDF sia impostata su Modulo XML dinamico.
+* In Designer, fare clic su **File** > **Proprietà modulo** > **Valori predefiniti** e assicurarsi che l&#39;impostazione Rendering/Formato PDF sia impostata su Modulo XML dinamico.
 
