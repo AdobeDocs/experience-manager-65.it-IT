@@ -47,7 +47,7 @@ Miglioramenti nell&#39;ultima versione di Smart Imaging:
 * La funzione Smart Imaging può essere disattivata utilizzando il parametro URL &quot;bfc&quot;.
 * TTL (Time To Live) indipendente. Precedentemente, era obbligatorio un limite minimo di 12 ore per l&#39;utilizzo di Smart Imaging.
 * Precedentemente, sia le immagini originali che quelle derivate erano memorizzate nella cache, ed era un processo in due fasi per annullare la validità della cache. Nella versione più recente di Smart Imaging, solo i derivati vengono memorizzati nella cache, consentendo un singolo processo di annullamento della validità della cache.
-* I clienti che utilizzano intestazioni personalizzate nel set di regole (ad esempio, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; come suggerito in [Aggiunta di un valore intestazione personalizzato alle risposte alle immagini|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) trarranno vantaggio dall’ultima Smart Imaging, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging.
+* I clienti che utilizzano intestazioni personalizzate nel set di regole (ad esempio, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; come suggerito in [Aggiunta di un valore di intestazione personalizzato alle risposte alle immagini|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) trarranno vantaggio dall&#39;ultima Smart Imaging, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging.
 
 ## Esistono costi di licenza associati all&#39;imaging intelligente? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -106,7 +106,7 @@ Smart Imaging funziona perfettamente con gli URL esistenti delle immagini e i pr
 
 Nel caso sia necessario configurare un nuovo dominio personalizzato per l&#39;utilizzo di Smart Imaging, gli URL dovranno essere aggiornati per riflettere questo dominio personalizzato.
 
-Vedete [Posso usare le Smart Imaging?](#am-i-eligible-to-use-smart-imaging) per comprendere i prerequisiti per la funzione Smart Imaging.
+Vedere anche [Sono idoneo a utilizzare le immagini intelligenti?](#am-i-eligible-to-use-smart-imaging) per comprendere i prerequisiti per la funzione Smart Imaging.
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -121,11 +121,11 @@ Smart Imaging funziona con immagini distribuite tramite HTTP o HTTPS. Inoltre, f
 Per utilizzare l&#39;imaging intelligente, l&#39;account Dynamic Media Classic o Dynamic Media della tua azienda deve soddisfare AEM requisiti seguenti:
 
 * Utilizzate la rete CDN  (Content Delivery Network) inclusa nel Adobe come parte della licenza.
-* Utilizzate un dominio dedicato (ad esempio `images.company.com` o `mycompany.scene7.com`), non un dominio generico (ad esempio, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
+* Utilizzate un dominio dedicato (ad esempio, `images.company.com` o `mycompany.scene7.com`), non un dominio generico (ad esempio, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
 
 Per trovare i domini, accedi al tuo account o account della società.
 
-Tap **[!UICONTROL Setup > Application Setup > General Settings.]** Cercate il campo denominato Nome server **[!UICONTROL pubblicato.]** Se utilizzate un dominio generico, potete richiedere il passaggio al vostro dominio personalizzato come parte di questa transizione quando inviate un ticket di assistenza tecnica.
+Toccate **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]** Cercate il campo denominato Nome server  **[!UICONTROL pubblicato.]** Se utilizzate un dominio generico, potete richiedere il passaggio al vostro dominio personalizzato come parte di questa transizione quando inviate un ticket di assistenza tecnica.
 
 Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per contenuti multimediali dinamici.
 
@@ -137,21 +137,21 @@ Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per
 1. Fornite le seguenti informazioni nel caso di assistenza:
 
    1. Nome contatto principale, email, telefono.
-   1. Tutti i domini da abilitare per l&#39;imaging intelligente (ossia `images.company.com` o `mycompany.scene7.com`).
+   1. Tutti i domini da abilitare per l&#39;imaging intelligente (ovvero `images.company.com` o `mycompany.scene7.com`).
 
       Per trovare i domini, accedi al tuo account o account della società.
 
       Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]**
 
-      Cercate il campo denominato Nome server **[!UICONTROL pubblicato.]**
+      Cercare il campo con l&#39;etichetta **[!UICONTROL Nome server pubblicato.]**
    1. Verificate di utilizzare la CDN tramite  Adobe e di non essere gestiti con una relazione diretta.
-   1. Verifica di utilizzare un dominio dedicato, ad esempio `images.company.com` o `mycompany.scene7.com`, e non un dominio generico, ad esempio `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   1. Verificare di utilizzare un dominio dedicato, ad esempio `images.company.com` o `mycompany.scene7.com`, e non un dominio generico, ad esempio `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
       Per trovare i domini, accedi al tuo account o account della società.
 
       Fai clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazioni generali.]**
 
-      Cercate il campo denominato Nome server **[!UICONTROL pubblicato.]** Se utilizzate un dominio Dynamic Media Classic generico, potete richiedere il passaggio al dominio personalizzato come parte di questa transizione.
+      Cercare il campo con l&#39;etichetta **[!UICONTROL Nome server pubblicato.]** Se utilizzate un dominio Dynamic Media Classic generico, potete richiedere il passaggio al dominio personalizzato come parte di questa transizione.
    1. Indicate se è necessario utilizzare anche questo metodo su HTTP/2.
 
 1. Il supporto tecnico vi aggiunge all&#39;Elenco di attesa clienti Smart Imaging in base all&#39;ordine in cui sono state inviate le richieste.
@@ -160,8 +160,8 @@ Il primo dominio personalizzato non prevede costi aggiuntivi con una licenza per
 1. Una volta completato il corso, riceverete una notifica.
 1. Per ottimizzare le prestazioni di Smart Imaging,  Adobe consiglia di impostare il tempo di trasmissione (TTL) su 24 ore o più. Il TTL definisce il tempo in cui le risorse vengono memorizzate nella cache dalla rete CDN. Per modificare questa impostazione:
 
-   1. Se utilizzate Dynamic Media Classic, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server immagini.]** Impostate il valore **[!UICONTROL Default Cache Time To Live]** (Tempo cache client predefinito su Live) su 24 o più.
-   1. Se utilizzate Contenuti multimediali dinamici, seguite [queste istruzioni](config-dynamic.md). Impostate il valore **[!UICONTROL Scadenza]** su 24 ore o più.
+   1. Se utilizzate Dynamic Media Classic, fate clic su **[!UICONTROL Configurazione > Impostazione applicazione > Impostazione pubblicazione > Server immagini.]** Impostate il tempo  **[!UICONTROL predefinito della cache del client su]** Livevalue su 24 o più.
+   1. Se utilizzate gli elementi multimediali dinamici, seguite [le istruzioni riportate di seguito](config-dynamic.md). Impostare il valore **[!UICONTROL Scadenza]** su 24 ore o più.
 
 ## Quando posso aspettarmi che il mio account sia abilitato con Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -179,12 +179,12 @@ Durante la transizione iniziale, le immagini non memorizzate nella cache arrivan
 ## Come posso verificare se la funzione di imaging intelligente funziona come previsto?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Dopo aver configurato l’account con l’imaging intelligente, caricate nel browser un URL immagine per elemento multimediale dinamico Classic (Scene7)/elemento multimediale dinamico.
-1. Aprite il riquadro per gli sviluppatori di Chrome facendo clic su **[!UICONTROL Visualizza > Sviluppatore > Strumenti]** per sviluppatori nel browser. Oppure, scegliete uno strumento di sviluppo browser a vostra scelta.
+1. Aprite il riquadro per gli sviluppatori di Chrome facendo clic su **[!UICONTROL Visualizza > Sviluppatore > Strumenti per sviluppatori]** nel browser. Oppure, scegliete uno strumento di sviluppo browser a vostra scelta.
 
 1. Verificate che la cache sia disattivata quando gli strumenti di sviluppo sono aperti.
 
-   * In Windows: individuate le impostazioni nel riquadro dello strumento di sviluppo, quindi selezionate la casella di controllo **[!UICONTROL Disattiva cache (mentre è aperto il dispositivo)]** .
-   * On Mac – in the developer pane, under the **[!UICONTROL Network]** tab, select **[!UICONTROL disable cache]** .
+   * In Windows: individuate le impostazioni nel riquadro degli strumenti dello sviluppatore, quindi selezionate la casella di controllo **[!UICONTROL Disattiva cache (mentre i dispositivi sono aperti)]**.
+   * In Mac - nel riquadro dello sviluppatore, nella scheda **[!UICONTROL Rete]**, selezionare **[!UICONTROL disable cache]** .
 
 1. Osserva il tipo di contenuto viene trasformato nel formato appropriato. La schermata seguente mostra un&#39;immagine PNG convertita dinamicamente in WebP su Chrome.
 1. Ripetete questo test su diversi browser e condizioni utente.
@@ -196,7 +196,7 @@ Non tutte le immagini sono convertite. La funzione Smart Imaging decide se la co
 
 ## È possibile disattivare la funzione Smart Imaging per qualsiasi richiesta? {#turning-off-smart-imaging}
 
-Sì. Per disattivare l’immagine avanzata, aggiungete il modificatore `bfc=off` all’URL.
+Sì. Potete disattivare l&#39;immagine avanzata aggiungendo all&#39;URL il modificatore `bfc=off`.
 
 ## Quale &quot;tuning&quot; è disponibile? Esistono impostazioni o comportamenti che possono essere definiti? (#tuning-settings)
 
