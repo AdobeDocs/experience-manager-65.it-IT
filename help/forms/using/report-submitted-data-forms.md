@@ -23,13 +23,13 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione di revisori per l&#39;invio a un modulo](/help/forms/using/adding-reviewers-form.md).
+>Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione dei revisori di invio a un modulo](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Restituisce un elenco di tutti i moduli idonei.
 
-### URL parameters {#url-parameters}
+### parametri URL {#url-parameters}
 
 Questa API non richiede parametri aggiuntivi.
 
@@ -63,7 +63,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 
 Restituisce i dettagli di tutti i moduli inviati. Tuttavia, potete utilizzare i parametri URL per limitare i risultati.
 
-### URL parameters {#url-parameters-1}
+### parametri URL {#url-parameters-1}
 
 Specificate i seguenti parametri nell’URL della richiesta:
 
@@ -87,11 +87,11 @@ Specificate i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (facoltativo)</td>
-   <td>Specifica la proprietà per l'ordinamento dei risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all’ora dell’ultima modifica.</td>
+   <td>Specifica la proprietà per l'ordinamento dei risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all'ora dell'ultima modifica.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (facoltativo)</td>
-   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che ordina i risultati in ordine decrescente. Potete specificare <code>asc</code> l'ordinamento crescente dei risultati.</td>
+   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che ordina i risultati in ordine decrescente. È possibile specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facoltativo)</td>
@@ -133,7 +133,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 Aggiunge un commento all&#39;istanza di invio specificata.
 
-### URL parameters {#url-parameters-2}
+### parametri URL {#url-parameters-2}
 
 Specificate i seguenti parametri nell’URL della richiesta:
 
@@ -164,7 +164,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 Restituisce tutti i commenti inviati nell&#39;istanza di invio specificata.
 
-### URL parameters {#url-parameters-3}
+### parametri URL {#url-parameters-3}
 
 Specificate il seguente parametro nell’URL della richiesta:
 
@@ -198,11 +198,11 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## POST /content/forms/portal/submission.review.json?func=updateInvio {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Aggiorna il valore della proprietà specificata dell&#39;istanza di modulo inviata specificata.
 
-### URL parameters {#url-parameters-4}
+### parametri URL {#url-parameters-4}
 
 Specificate i seguenti parametri nell’URL della richiesta:
 
