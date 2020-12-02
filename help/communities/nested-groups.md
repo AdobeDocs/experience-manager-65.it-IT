@@ -19,20 +19,20 @@ ht-degree: 5%
 ---
 
 
-# Creazione di gruppi nidificati{#authoring-nested-groups}
+# Authoring di gruppi nidificati{#authoring-nested-groups}
 
 ## Creazione di gruppi sull&#39;autore {#creating-groups-on-author}
 
-Nell&#39;istanza AEM Author, dalla navigazione globale:
+Nell&#39;istanza di AEM Author, dalla navigazione globale:
 
-* Selezionate **[!UICONTROL Community]** > **[!UICONTROL Siti]**.
-* Selezionate **[!UICONTROL la cartella]** di coinvolgimento per aprirla.
+* Selezionare **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
+* Selezionare **[!UICONTROL cartella di coinvolgimento]** per aprirla.
 * Selezionate la scheda per il sito **[!UICONTROL Guida introduttiva all&#39;esercitazione]** inglese.
 
    * Selezionate l&#39;immagine della scheda.
-   * Non *selezionate* un&#39;icona.
+   * *not* selezionare un&#39;icona.
 
-Il risultato è di raggiungere la console [](/help/communities/groups.md)Gruppi:
+Il risultato è quello di raggiungere la [console Gruppi](/help/communities/groups.md):
 
 ![create-group](assets/create-group.png)
 
@@ -42,20 +42,20 @@ La funzione dei gruppi verrà visualizzata come una cartella in cui vengono crea
 
 ## Crea gruppo di arti principali {#create-main-arts-group}
 
-Questo gruppo può essere creato perché la struttura del sito per il coinvolgimento include una funzione di gruppi. Per impostazione predefinita, la configurazione della funzione nel sito `Reference Template` consente la selezione di qualsiasi modello di gruppo abilitato. Pertanto, il modello scelto per questo nuovo gruppo è il `Reference Group`.
+Questo gruppo può essere creato perché la struttura del sito per il coinvolgimento include una funzione di gruppi. Per impostazione predefinita, la configurazione della funzione in `Reference Template` del sito consente la selezione di qualsiasi modello di gruppo abilitato. Pertanto, il modello scelto per questo nuovo gruppo è il `Reference Group`.
 
 Queste console sono simili alla console Siti community.
 
-* Selezionate **[!UICONTROL Crea gruppo]**.
+* Selezionare **[!UICONTROL Crea gruppo]**.
 
 * **Modello per gruppo community**:
 
    * **[!UICONTROL Titolo]** gruppo community: Arti.
    * **[!UICONTROL Descrizione]** gruppo community: Un gruppo padre per vari gruppi artistici.
-   * **[!UICONTROL Radice]** gruppo community: *lasciate come predefinito*.
+   * **[!UICONTROL Radice]** gruppo community:  *lasciate come predefinito*.
    * **[!UICONTROL Lingue aggiuntive disponibili per i gruppi]** community: utilizzate il menu a discesa per selezionare le lingue dei gruppi di community disponibili. Nel menu vengono visualizzate tutte le lingue in cui viene creato il sito community principale. Gli utenti possono selezionare una di queste lingue per creare gruppi in più lingue in questo singolo passaggio. Lo stesso gruppo viene creato in più lingue specificate nella console Gruppi dei rispettivi siti della community.
    * **[!UICONTROL Nome]** gruppo community: arti.
-   * **[!UICONTROL Modello]**: a discesa per selezionare `Reference Group.`
+   * **[!UICONTROL Modello]**: a discesa per selezionare  `Reference Group.`
    * Seleziona **[!UICONTROL Avanti]**.
 
 ![Gruppi di community nidificati](assets/parent-to-nestedgroup.png)
@@ -74,7 +74,7 @@ Proseguite attraverso gli altri pannelli con le seguenti impostazioni:
       * Lasciate vuoto (ereditate dal sito padre).
    * **[!UICONTROL Iscrizione]**
 
-      * Use default `Optional Membership.`
+      * Usa predefinito `Optional Membership.`
 
       * **[!UICONTROL Miniatura]**
          * `optional.*`
@@ -84,15 +84,15 @@ Proseguite attraverso gli altri pannelli con le seguenti impostazioni:
 
 * Seleziona **[!UICONTROL Crea]**.
 
-### Nidificazione di gruppi all&#39;interno del gruppo Arti {#nesting-groups-within-arts-group}
+### Nidificazione di gruppi nel gruppo Arti {#nesting-groups-within-arts-group}
 
-La `groups` cartella ora contiene due gruppi (aggiorna la pagina).
+La cartella `groups` ora contiene due gruppi (aggiorna la pagina).
 
 ![Nidificazione dei gruppi](assets/create-community-group.png)
 
 #### Pubblica gruppo{#publish-group}
 
-Prima di creare gruppi nidificati all&#39;interno del `arts` gruppo, passate il mouse sulla `arts` scheda e selezionate l&#39;icona Pubblica per pubblicarla.
+Prima di creare gruppi nidificati all&#39;interno del gruppo `arts`, passate il puntatore del mouse sulla scheda `arts` e selezionate l&#39;icona di pubblicazione per pubblicarla.
 
 ![sito di pubblicazione](assets/publish-site.png)
 
@@ -100,42 +100,42 @@ Attendete la conferma della pubblicazione del gruppo.
 
 ![pubblicato in gruppo](assets/group-published.png)
 
-Il `arts` gruppo deve contenere anche una `groups` cartella, ma vuota e in cui è possibile creare nuovi gruppi. Andate alla cartella del gruppo di arti e create 3 gruppi nidificati, ciascuno con un&#39;impostazione di appartenenza diversa:
+Il gruppo `arts` deve contenere anche una cartella `groups`, ma vuota e in cui è possibile creare nuovi gruppi. Andate alla cartella del gruppo di arti e create 3 gruppi nidificati, ciascuno con un&#39;impostazione di appartenenza diversa:
 
 1. **[!UICONTROL Visuale]**
 
    * Titolo: `Visual Arts`
    * Nome: `visual`
    * Modello: `Reference Group`
-   * Appartenenza: selezionate `Optional Membership`, un gruppo pubblico, e aprite a tutti i membri.
+   * Appartenenza: selezionate `Optional Membership`, un gruppo pubblico, aperto a tutti i membri.
 
 1. **[!UICONTROL Auditory]**
 
    * Titolo: `Auditory Arts`
    * Nome: `auditory`
    * Modello: `Reference Group`
-   * Appartenenza: selezionare `Required Membership`, un gruppo aperto, disponibile per i membri a cui partecipare.
+   * Appartenenza: selezionate `Required Membership`, un gruppo aperto, disponibile per i membri a cui partecipare.
 
 1. **[!UICONTROL Storia]**
 
    * Titolo: `Art History`
    * Nome: `history`
    * Modello: `Reference Group`
-   * Appartenenza: select `Restricted Membership`, un gruppo segreto, visibile solo ai membri invitati. Ad esempio, invitate un utente [](/help/communities/tutorials.md#demo-users) demo `emily.andrews@mailinator.com`.
+   * Appartenenza: selezionate `Restricted Membership`, un gruppo segreto, visibile solo ai membri invitati. Ad esempio, invitare [utente dimostrativo](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
 Aggiornate la pagina per visualizzare tutti e tre i gruppi nidificati (sottocomunità).
 
 Per accedere ai gruppi nidificati dalla console Siti community:
 
-* Seleziona cartella **[!UICONTROL di coinvolgimento]**
-* Seleziona scheda **[!UICONTROL Esercitazione introduttiva]**
-* Seleziona cartella **[!UICONTROL Gruppi]**
-* Seleziona scheda **[!UICONTROL arti]**
-* Seleziona cartella **[!UICONTROL Gruppi]**
+* Selezionare **[!UICONTROL cartella di coinvolgimento]**
+* Selezionare la **[!UICONTROL Guida introduttiva all&#39;esercitazione]**
+* Selezionare la cartella **[!UICONTROL Groups]**
+* Selezionare **[!UICONTROL scheda grafica]**
+* Selezionare la cartella **[!UICONTROL Groups]**
 
 ![create-new-group2](assets/create-new-group2.png)
 
-## Pubblicazione di gruppi {#publishing-groups}
+## Gruppi di pubblicazione {#publishing-groups}
 
 ![sito di pubblicazione](assets/publish-site.png)
 
@@ -153,7 +153,7 @@ Dopo la pubblicazione del sito della community principale:
 
 ## Esperienza su Pubblica {#experience-on-publish}
 
-È possibile utilizzare i diversi gruppi al momento dell&#39;accesso, ad esempio con gli utenti [](/help/communities/tutorials.md#demo-users) demo utilizzati per:
+È possibile provare i diversi gruppi al momento dell&#39;accesso, ad esempio con gli utenti [demo](/help/communities/tutorials.md#demo-users) utilizzati per:
 
 * Membro del gruppo Art/History: emily.andrews@mailinator.com/password
    * Il gruppo limitato (segreto), arte/storia, è visibile:
@@ -166,5 +166,5 @@ Dopo la pubblicazione del sito della community principale:
    * Può partecipare a gruppi limitati (aperti).
    * Impossibile visualizzare i gruppi limitati (segreti).
 
-Accedete alle console [Membri e Gruppi della community](/help/communities/members.md) sull’autore per aggiungere altri utenti a vari gruppi di membri che corrispondono ai gruppi della community.
+Accedete alle console Community [Membri e gruppi](/help/communities/members.md) sull&#39;autore per aggiungere altri utenti a vari gruppi di membri che corrispondono ai gruppi della community.
 
