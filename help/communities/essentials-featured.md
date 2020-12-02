@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Contenuto essenziale  {#featured-content-essentials}
+# Content Essentials in evidenza {#featured-content-essentials}
 
 Questa pagina contiene le informazioni essenziali per l’utilizzo dei contenuti contenuti contenuti.
 
@@ -51,7 +51,7 @@ A differenza del blocco di un post nella parte superiore di un forum, questa fun
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consultate Contenuto <a href="featured.md">in evidenza</a></td>
+   <td>Vedere <a href="featured.md">Contenuto in evidenza</a></td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ A differenza del blocco di un post nella parte superiore di un forum, questa fun
 
 ### Funzione Libreria file {#file-library-function}
 
-Una struttura del sito della community che include la funzione [Contenuto](functions.md#featured-content-function)disponibile, include un `featured content` componente configurato.
+Una struttura del sito della community che include la funzione [Contenuto disponibile](functions.md#featured-content-function), include un componente `featured content` configurato.
