@@ -11,6 +11,9 @@ discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +37,7 @@ Ad esempio, il portale personalizzato prepara l&#39;URL come\
 
 >[!NOTE]
 >
->Le chiamate in questo modo non sono sicure poiché i parametri necessari vengono passati come una richiesta GET, esponendo lo stesso (chiaramente visibile) nell&#39;URL.
+>La chiamata in questo modo non è sicura, in quanto i parametri necessari vengono passati come una richiesta di GET, esponendo lo stesso (chiaramente visibile) nell’URL.
 
 >[!NOTE]
 >
@@ -42,7 +45,7 @@ Ad esempio, il portale personalizzato prepara l&#39;URL come\
 
 ## Chiamata in linea basata sui dati {#inline-data-based-invocation}
 
-Un altro metodo (e più sicuro) per chiamare l’applicazione Create Correspondence potrebbe essere quello di accedere semplicemente all’URL in https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, inviando i parametri e i dati per chiamare l’applicazione Create Correspondence come richiesta POST (nascondendoli dall’utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
+Un altro metodo (e più sicuro) per chiamare l&#39;applicazione Create Correspondence potrebbe essere quello di accedere semplicemente all&#39;URL all&#39;indirizzo https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, inviando i parametri e i dati per chiamare l&#39;applicazione Create Correspondence come richiesta di POST (nascondendoli dall&#39;utente finale). Ciò significa anche che ora è possibile trasmettere i dati XML per l&#39;applicazione Create Correspondence in linea (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell&#39;approccio precedente.
 
 ### Parametri per la specifica della lettera {#parameters-for-specifying-letter}
 
