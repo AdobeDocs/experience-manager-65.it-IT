@@ -18,15 +18,15 @@ Potete utilizzare la modalità Layout per ridimensionare i componenti per tutti 
 
 >[!NOTE]
 >
->Se si crea il canale Web utilizzando il canale [Stampa come master](../../forms/using/create-interactive-communication.md) per una comunicazione interattiva, i componenti disponibili per il ridimensionamento includono anche i sottomoduli e i campi generati automaticamente nel canale Web utilizzando il canale Stampa. Il canale Web mantiene il layout degli elementi del canale di stampa in modalità Layout.
+>Se si crea il canale Web utilizzando [Canale di stampa come master](../../forms/using/create-interactive-communication.md) per una comunicazione interattiva, i componenti disponibili per il ridimensionamento includono anche i sottomoduli e i campi generati automaticamente nel canale Web utilizzando il canale Stampa. Il canale Web mantiene il layout degli elementi del canale di stampa in modalità Layout.
 
-## Accesso alla modalità Layout {#access-layout-mode}
+## Modalità Layout di accesso {#access-layout-mode}
 
-Selezionate **Layout** dall’elenco a discesa che compare nella parte superiore dell’interfaccia di authoring delle comunicazioni interattive accanto all’opzione **Anteprima** . Il modulo viene visualizzato in modalità Layout.
+Selezionare **Layout** dall&#39;elenco a discesa che viene visualizzato nella parte superiore dell&#39;interfaccia di authoring delle comunicazioni interattive accanto all&#39;opzione **Anteprima**. Il modulo viene visualizzato in modalità Layout.
 
-1. Accedete all’istanza di creazione AEM e passate a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
-1. Crea una nuova comunicazione [interattiva o apri una comunicazione](../../forms/using/create-interactive-communication.md)interattiva esistente.
-1. Selezionate **Layout** dall’elenco a discesa nella parte superiore accanto all’opzione **Anteprima** . Il modulo viene visualizzato in modalità Layout.
+1. Accedete all&#39;istanza di creazione AEM e andate a **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents**.
+1. Crea una nuova o apri una [Comunicazione interattiva](../../forms/using/create-interactive-communication.md) esistente.
+1. Selezionare **Layout** dall&#39;elenco a discesa visualizzato nella parte superiore accanto all&#39;opzione **Anteprima**. Il modulo viene visualizzato in modalità Layout.
 
    ![Modalità Layout per le comunicazioni interattive](assets/layout_mode_ic_new.png)
 
@@ -39,10 +39,10 @@ Selezionate **Layout** dall’elenco a discesa che compare nella parte superiore
 
    La barra degli strumenti visualizzata dopo aver toccato i componenti è composta dalle seguenti opzioni:
 
-   * **Elemento padre:** Selezionate l’elemento padre di un componente.
-   * **Mobile in nuova riga:** Se sono presenti più componenti nella stessa riga, sposta il componente sulla riga successiva.
+   * **Elemento padre:** selezionare l’elemento padre di un componente.
+   * **Mobile in nuova riga:** sposta il componente sulla riga successiva se all’interno della stessa riga sono presenti più componenti.
 
-   Potete annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito al pannello contenente i componenti ridimensionati utilizzando l’opzione **[!UICONTROL Ripristina layout]** punto di interruzione ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)). Toccate l’elemento padre del componente ridimensionato per visualizzare l’opzione.
+   È possibile annullare tutte le modifiche di ridimensionamento e applicare il layout predefinito al pannello contenente componenti ridimensionati utilizzando l&#39;opzione **[!UICONTROL Ripristina layout punto di interruzione]** ( ![Ripristina punto di interruzione](assets/reverttopreviouslypublishedversion.png)). Toccate l’elemento padre del componente ridimensionato per visualizzare l’opzione.
 
    >[!NOTE]
    >
@@ -50,7 +50,7 @@ Selezionate **Layout** dall’elenco a discesa che compare nella parte superiore
 
 ### Esempio {#example}
 
-**Obiettivo:** Inserire un componente tabella e un componente Immagine e posizionarli parallelamente in una comunicazione interattiva.
+**Obiettivo:** inserire un componente tabella e un componente Immagine e posizionarli parallelamente in una comunicazione interattiva.
 
 1. Inserire i componenti di tabella e immagine utilizzando la modalità Modifica nel canale Web di una comunicazione interattiva. Il componente Immagine viene visualizzato dopo il componente Tabella.
 1. Passate alla modalità Layout e toccate il componente Tabella. I punti blu per ridimensionare il componente vengono visualizzati nelle colonne 1 e 12.
@@ -62,28 +62,28 @@ Selezionate **Layout** dall’elenco a discesa che compare nella parte superiore
 
    ![Tabella e immagine in parallelo in modalità Layout](assets/table_image_parallel_new.png)
 
-   Potete selezionare il componente Immagine e toccare l’opzione **Mobile in nuova riga** disponibile nella barra degli strumenti per spostare il componente Immagine sulla riga successiva.
+   Potete selezionare il componente Immagine e toccare l&#39;opzione **Mobile in nuova riga** disponibile nella barra degli strumenti per spostare il componente Immagine sulla riga successiva.
 
 ## Ridimensionare i pannelli {#resize-panels-layout-mode}
 
 Per ridimensionare l’intero pannello invece dei singoli componenti, eseguite i seguenti passaggi:
 
-1. Toccate uno dei componenti del pannello che desiderate ridimensionare, selezionate ![Seleziona elemento padre](assets/select_parent_icon.svg), quindi selezionate la prima opzione nell’elenco a discesa, se il pannello è l’elemento padre immediato del componente.
+1. Toccate uno dei componenti del pannello che desiderate ridimensionare, selezionate ![Seleziona padre](assets/select_parent_icon.svg), quindi selezionate la prima opzione nell&#39;elenco a discesa, se il pannello è l&#39;elemento padre immediato del componente.
 
    I punti blu vengono visualizzati all&#39;inizio e alla fine della griglia reattiva.
 
 1. Trascinate e rilasciate i punti blu per definire la posizione del pannello nella griglia reattiva.
-Potete ripetere i passaggi 1 e 2 e selezionare ![Seleziona padre](assets/float_to_new_line_icon.svg) per spostare il pannello ridimensionato sulla riga successiva.
+È possibile ripetere i passaggi 1 e 2 e selezionare ![Seleziona padre](assets/float_to_new_line_icon.svg) per spostare il pannello ridimensionato sulla riga successiva.
 
 ## Definire il layout a più colonne per un pannello
 
 Per definire il numero di colonne per un pannello, eseguite i seguenti passaggi:
 
-1. In modalità **[!UICONTROL Modifica]** , toccate il pannello, selezionate ![Configura](assets/configure_icon.png)e selezionate **[!UICONTROL Reattivo - tutto sulla pagina senza l’opzione di navigazione]** dall’elenco a discesa Layout **** pannello.
+1. In modalità **[!UICONTROL Modifica]**, toccate il pannello, selezionate ![Configura](assets/configure_icon.png), quindi selezionate **[!UICONTROL Reattivo - tutti gli elementi della pagina senza navigazione]** dall&#39;elenco a discesa **[!UICONTROL Layout pannello]**.
 
 1. Toccate ![Salva](assets/save_icon.svg) per salvare le proprietà.
 
-1. In modalità **[!UICONTROL Layout]** , toccate uno dei componenti del pannello, selezionate ![Seleziona elemento padre](assets/select_parent_icon.svg), quindi selezionate il pannello.
+1. Nella modalità **[!UICONTROL Layout]**, toccate uno dei componenti del pannello, selezionate ![Seleziona padre](assets/select_parent_icon.svg), quindi selezionate il pannello.
 
 1. Toccate ![più colonne](assets/multi-column.svg) e selezionate il numero di colonne dall&#39;elenco a discesa. Il numero di colonne può essere compreso tra 1 e 12. Il pannello viene diviso in un layout a più colonne.
 
@@ -95,11 +95,11 @@ Per definire il numero di colonne per un pannello, eseguite i seguenti passaggi:
 
 Per disattivare la modalità Layout, effettuate le seguenti operazioni:
 
-1. Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]** e aprire il modello utilizzato nel modulo in modalità **[!UICONTROL Modifica]** .
-1. Selezionate il Contenitore documento nel riquadro a sinistra e toccate **[!UICONTROL Criterio.]**
+1. Selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Modelli]** e aprire il modello utilizzato nel modulo in modalità **[!UICONTROL Modifica]**.
+1. Selezionare il Contenitore documento nel riquadro a sinistra e toccare **[!UICONTROL Criterio.]**
 
    ![Disattiva modalità Layout](assets/policy_disable_layout_mode.png)
 
-1. Toccate la scheda Impostazioni **[!UICONTROL di]** layout e selezionate **[!UICONTROL Disattiva modalità]** di layout.
+1. Toccate la scheda **[!UICONTROL Impostazioni layout]** e selezionate **[!UICONTROL Disattiva modalità layout]**.
 1. Toccate ![Salva modifiche](assets/save_icon.png) per salvare le proprietà del modello.
 
