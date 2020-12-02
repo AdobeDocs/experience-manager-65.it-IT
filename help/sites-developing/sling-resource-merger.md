@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 1%
 
 ---
 
@@ -21,15 +24,15 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 Sling Resource Merger fornisce servizi per accedere e unire le risorse. Fornisce meccanismi di diff (differenziazione) per entrambi:
 
-* **[Sovrapposizioni](/help/sites-developing/overlays.md)**di risorse tramite i percorsi[di ricerca](/help/sites-developing/overlays.md#configuring-the-search-paths)configurati.
+* **[Sovrapposizioni](/help/sites-developing/overlays.md)** di risorse tramite i percorsi [ di ricerca ](/help/sites-developing/overlays.md#configuring-the-search-paths)configurati.
 
-* **Ignora** le finestre di dialogo dei componenti per l’interfaccia touch (`cq:dialog`), utilizzando la gerarchia dei tipi di risorse (tramite la proprietà `sling:resourceSuperType`).
+* **Sovrapposizioni** di finestre di dialogo dei componenti per l’interfaccia touch (`cq:dialog`), utilizzando la gerarchia dei tipi di risorse (tramite la proprietà  `sling:resourceSuperType`).
 
-Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclusione vengono unite alle risorse/proprietà originali:
+Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclusione vengono unite con le risorse/proprietà originali:
 
-* Il contenuto della definizione personalizzata ha una priorità maggiore rispetto a quello dell&#39;originale (ovvero *sovrapposizioni* o *sostituzioni* ).
+* Il contenuto della definizione personalizzata ha una priorità maggiore rispetto a quella dell&#39;originale (ovvero *sovrapposizioni* o *sostituiscono*).
 
-* Se necessario, [le proprietà](#properties) definite nella personalizzazione indicano in che modo verrà utilizzato il contenuto unito dall&#39;originale.
+* Se necessario, le [proprietà](#properties) definite nella personalizzazione indicano in che modo verrà utilizzato il contenuto unito dall&#39;originale.
 
 >[!CAUTION]
 >
@@ -37,33 +40,34 @@ Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/esclu
 >
 >Le sovrapposizioni/sostituzioni per altre aree (compresi altri aspetti di un componente touch o dell’interfaccia classica) richiedono la copia del nodo e della struttura appropriati dall’originale alla posizione in cui verrà definita la personalizzazione.
 
-### Obiettivi di AEM {#goals-for-aem}
+### Obiettivi per AEM {#goals-for-aem}
 
-Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
+Gli obiettivi per l&#39;utilizzo di Sling Resource Merger in AEM sono:
 
-* accertatevi che le modifiche alla personalizzazione non vengano effettuate in `/libs`.
+* assicurarsi che le modifiche alla personalizzazione non vengano effettuate in `/libs`.
 * ridurre la struttura replicata da `/libs`.
 
-   Quando si utilizza la Fusione risorse Sling si consiglia di non copiare l&#39;intera struttura da `/libs` perché ciò comporterebbe la conservazione di troppe informazioni nella personalizzazione (in genere `/apps`). Duplicare le informazioni aumenta inutilmente la possibilità di problemi quando il sistema viene aggiornato in qualsiasi modo.
+   Quando si utilizza Sling Resource Merger, non è consigliabile copiare l&#39;intera struttura da `/libs`, in quanto ciò comporterebbe la conservazione di troppe informazioni nella personalizzazione (in genere `/apps`). Duplicare le informazioni aumenta inutilmente la possibilità di problemi quando il sistema viene aggiornato in qualsiasi modo.
 
 >[!NOTE]
 >
->Le sostituzioni non dipendono dai percorsi di ricerca, ma utilizzano la proprietà `sling:resourceSuperType` per creare la connessione.
+>Le sostituzioni non dipendono dai percorsi di ricerca, ma utilizzano la proprietà `sling:resourceSuperType` per stabilire la connessione.
 >
->Tuttavia, le sostituzioni sono spesso definite in `/apps`, in quanto la best practice in AEM consiste nel definire le personalizzazioni in `/apps`; questo è perché non devi cambiare niente sotto `/libs`.
+>Tuttavia, le sostituzioni sono spesso definite in `/apps`, in quanto la best practice in AEM consiste nel definire le personalizzazioni in `/apps`; questo perché non è necessario modificare nulla in `/libs`.
 
 >[!CAUTION]
 >
->Non ***devi*** cambiare nulla nel `/libs` percorso.
+>***non è necessario*** modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+>Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
 >1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
    >
    >
-1. Apportare modifiche all&#39;interno `/apps`
+1. Apportare modifiche all&#39;interno di `/apps`
+
 >
 
 
@@ -72,27 +76,27 @@ Gli obiettivi per l’utilizzo di Sling Resource Merger in AEM sono:
 
 La fusione delle risorse fornisce le seguenti proprietà:
 
-* `sling:hideProperties` ( `String` o `String[]`)
+* `sling:hideProperties` (  `String` o  `String[]`)
 
-   Specifica la proprietà o l&#39;elenco di proprietà da nascondere.
+   Specifica la proprietà, o l&#39;elenco di proprietà, da nascondere.
 
-   Il carattere jolly `*` nasconde tutto.
+   Il carattere jolly `*` nasconde tutti.
 
 * `sling:hideResource` ( `Boolean`)
 
    Indica se le risorse devono essere completamente nascoste, inclusi i relativi elementi figlio.
 
-* `sling:hideChildren` ( `String` o `String[]`)
+* `sling:hideChildren` (  `String` o  `String[]`)
 
    Contiene il nodo secondario, o elenco di nodi secondari, da nascondere. Le proprietà del nodo verranno mantenute.
 
-   Il carattere jolly `*` nasconde tutto.
+   Il carattere jolly `*` nasconde tutti.
 
 * `sling:orderBefore` ( `String`)
 
    Contiene il nome del nodo di pari livello al quale il nodo corrente deve essere posizionato davanti.
 
-Queste proprietà influiscono sul modo in cui le risorse/proprietà (da `/libs`) corrispondenti/originali vengono utilizzate dalla sovrapposizione/sostituzione (spesso in `/apps`).
+Queste proprietà influiscono sul modo in cui le risorse/proprietà corrispondenti/originali (da `/libs`) vengono utilizzate dalla sovrapposizione/sostituzione (spesso in `/apps`).
 
 ### Creazione della struttura {#creating-the-structure}
 
@@ -135,25 +139,25 @@ Nell&#39;esempio di sovrapposizione riportato sopra, sono necessari i seguenti n
 
 >[!NOTE]
 >
->Quando si utilizza la funzione Sling Resource Merger (ovvero quando si utilizza l’interfaccia touch standard), si consiglia di non copiare l’intera struttura da `/libs` tale funzionalità, in quanto comporterebbe la memorizzazione di troppe informazioni `/apps`. Ciò può causare problemi quando il sistema viene aggiornato in qualsiasi modo.
+>Quando si utilizza la funzione Sling Resource Merger (ovvero quando si utilizza l&#39;interfaccia touch standard), si consiglia di non copiare l&#39;intera struttura da `/libs`, in quanto ciò comporterebbe la memorizzazione di troppe informazioni in `/apps`. Ciò può causare problemi quando il sistema viene aggiornato in qualsiasi modo.
 
-### Use Cases {#use-cases}
+### Casi di utilizzo {#use-cases}
 
-Oltre alle funzionalità standard, queste consentono di:
+Questi, insieme alle funzionalità standard, consentono di:
 
 * **Aggiunta di una proprietà**
 
-   La proprietà non esiste nella `/libs` definizione, ma è obbligatoria nella `/apps` sovrapposizione o nella sostituzione.
+   La proprietà non esiste nella definizione `/libs`, ma è necessaria nella sovrapposizione/esclusione `/apps`.
 
-   1. Crea il nodo corrispondente all&#39;interno `/apps`
+   1. Crea il nodo corrispondente all&#39;interno di `/apps`
    1. Crea la nuova proprietà su questo nodo &quot;
 
 * **Ridefinire una proprietà (proprietà non create automaticamente)**
 
-   La proprietà è definita in `/libs`, ma è necessario un nuovo valore nella `/apps` sovrapposizione/sostituzione.
+   La proprietà è definita in `/libs`, ma è necessario un nuovo valore nella sovrapposizione/sostituzione di `/apps`.
 
-   1. Crea il nodo corrispondente all&#39;interno `/apps`
-   1. Crea la proprietà corrispondente su questo nodo (sotto / `apps`)
+   1. Crea il nodo corrispondente all&#39;interno di `/apps`
+   1. Creare la proprietà corrispondente su questo nodo (in / `apps`)
 
       * La proprietà avrà una priorità in base alla configurazione di Sling Resource Resolver.
       * È supportata la modifica del tipo di proprietà.
@@ -165,27 +169,27 @@ Oltre alle funzionalità standard, queste consentono di:
 
 * **Ridefinire una proprietà creata automaticamente**
 
-   Per impostazione predefinita, le proprietà create automaticamente (come `jcr:primaryType`) non sono soggette a sovrapposizione/override per garantire che il tipo di nodo attualmente in uso `/libs` sia rispettato. Per imporre una sovrapposizione/sostituzione è necessario ricreare il nodo in `/apps`, nascondere esplicitamente la proprietà e ridefinirla:
+   Per impostazione predefinita, le proprietà create automaticamente (come `jcr:primaryType`) non sono soggette a sovrapposizione/override per garantire che il tipo di nodo attualmente sotto `/libs` sia rispettato. Per imporre una sovrapposizione/sostituzione è necessario ricreare il nodo in `/apps`, nascondere esplicitamente la proprietà e ridefinirla:
 
-   1. Crea il nodo corrispondente sotto `/apps` con quello desiderato `jcr:primaryType`
+   1. Crea il nodo corrispondente sotto `/apps` con la `jcr:primaryType` desiderata
    1. Creare la proprietà `sling:hideProperties` su tale nodo, con il valore impostato su quello della proprietà creata automaticamente; ad esempio, `jcr:primaryType`
 
-      Questa proprietà, definita in `/apps`, avrà ora priorità rispetto a quella definita in `/libs`
+      Questa proprietà, definita in `/apps`, ha ora priorità rispetto a quella definita in `/libs`
 
 * **Ridefinire un nodo e i relativi elementi secondari**
 
-   Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma è necessaria una nuova configurazione nella `/apps` sovrapposizione/sostituzione.
+   Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma è necessaria una nuova configurazione nella sovrapposizione/esclusione `/apps`.
 
    1. Combinare le azioni di:
 
       1. Nascondere gli elementi secondari di un nodo (mantenendo le proprietà del nodo)
-      1. Ridefinire le proprietà
+      1. Ridefinire proprietà/proprietà
 
 * **Nascondere una proprietà**
 
-   La proprietà è definita in `/libs`, ma non è necessaria nella `/apps` sovrapposizione/sostituzione.
+   La proprietà è definita in `/libs`, ma non è necessaria nella sovrapposizione/sostituzione di `/apps`.
 
-   1. Crea il nodo corrispondente all&#39;interno `/apps`
+   1. Crea il nodo corrispondente all&#39;interno di `/apps`
    1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Utilizzate questa opzione per specificare le proprietà da nascondere o ignorare. È inoltre possibile utilizzare i caratteri jolly. Esempio:
 
       * `*`
@@ -195,7 +199,7 @@ Oltre alle funzionalità standard, queste consentono di:
 
 * **Nascondere un nodo e i relativi elementi secondari**
 
-   Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma non sono richiesti nella `/apps` sovrapposizione/sostituzione.
+   Il nodo e i relativi elementi secondari sono definiti in `/libs`, ma non sono richiesti nella sovrapposizione/esclusione `/apps`.
 
    1. Crea il nodo corrispondente in /apps
    1. Creare una proprietà `sling:hideResource`
@@ -205,26 +209,27 @@ Oltre alle funzionalità standard, queste consentono di:
 
 * **Nascondere gli elementi secondari di un nodo (mantenendo le proprietà del nodo)**
 
-   Il nodo, le relative proprietà e i relativi elementi secondari sono definiti in `/libs`. Il nodo e le relative proprietà sono obbligatori nella `/apps` sovrapposizione/sostituzione, ma alcuni o tutti i nodi secondari non sono richiesti nella `/apps` sovrapposizione/sostituzione.
+   Il nodo, le relative proprietà e i relativi elementi secondari sono definiti in `/libs`. Il nodo e le relative proprietà sono obbligatori nella `/apps` sovrapposizione/esclusione, ma alcuni o tutti i nodi secondari non sono richiesti nella `/apps` sovrapposizione/sostituzione.
 
    1. Crea il nodo corrispondente sotto `/apps`
    1. Creare la proprietà `sling:hideChildren`:
 
       * tipo: `String[]`
       * value: un elenco dei nodi secondari (come definito in `/libs`) da nascondere/ignorare
+
       Il carattere jolly &amp;ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
 
 
 * **Riordinare i nodi**
 
-   Il nodo e i relativi elementi di pari livello sono definiti in `/libs`. È necessaria una nuova posizione per ricreare il nodo nella `/apps` sovrapposizione/sostituzione, dove la nuova posizione viene definita in riferimento al nodo di pari livello appropriato in `/libs`.
+   Il nodo e i relativi elementi di pari livello sono definiti in `/libs`. È necessaria una nuova posizione per ricreare il nodo nella sovrapposizione/esclusione `/apps`, dove la nuova posizione viene definita in riferimento al nodo di pari livello appropriato in `/libs`.
 
-   * Utilizzare la `sling:orderBefore` proprietà:
+   * Utilizzare la proprietà `sling:orderBefore`:
 
       1. Crea il nodo corrispondente sotto `/apps`
       1. Creare la proprietà `sling:orderBefore`:
 
-         Indica il nodo (come in `/libs`) in cui il nodo corrente deve essere posizionato prima:
+         Questo specifica il nodo (come in `/libs`) in cui il nodo corrente deve essere posizionato prima:
 
          * tipo: `String`
          * valore: `<before-SiblingName>`
@@ -235,16 +240,16 @@ Sling Resource Merger include due provider di risorse personalizzate, uno per le
 
 >[!NOTE]
 >
->Per accedere alla risorsa, si consiglia di utilizzare il punto di montaggio appropriato.
+>Quando accedete alla risorsa, si consiglia di utilizzare il punto di montaggio appropriato.
 >
->In questo modo viene richiamato Sling Resource Merger e viene restituita la risorsa completamente unita (riducendo la struttura da cui replicare `/libs`).
+>In questo modo viene richiamato Sling Resource Merger e viene restituita la risorsa completamente unita (riducendo la struttura da replicare da `/libs`).
 
 * Sovrapposizione:
 
    * finalità: unire risorse in base al percorso di ricerca
    * punto di montaggio: `/mnt/overlay`
    * usage: `mount point + relative path`
-   *  esempio:
+   * esempio:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
@@ -253,7 +258,7 @@ Sling Resource Merger include due provider di risorse personalizzate, uno per le
    * finalità: unire le risorse in base al relativo super-type
    * punto di montaggio: `/mnt/overide`
    * usage: `mount point + absolute path`
-   *  esempio:
+   * esempio:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
