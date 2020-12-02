@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# Funzioni di base {#liking-essentials}
+# Elementi essenziali {#liking-essentials}
 
-Il componente piacevole, una sottoclasse [tally](tally.md) , è uno strumento utile che consente ai membri di esprimere un&#39;opinione positiva su un particolare contenuto semplicemente selezionando l&#39;icona del cuore.
+Il componente piacevole, una sottoclasse [tally](tally.md), è uno strumento utile che consente ai membri di esprimere un&#39;opinione positiva su un particolare contenuto semplicemente selezionando l&#39;icona del cuore.
 
-È possibile posizionare più istanze di un componente di collegamento sulla stessa pagina; ogni istanza deve essere configurata con una `tally name` proprietà univoca.
+È possibile posizionare più istanze di un componente di collegamento sulla stessa pagina; ogni istanza deve essere configurata con una proprietà `tally name` univoca.
 
 L&#39;invio anonimo di un file simile non è supportato. Per partecipare, i visitatori del sito devono registrarsi ed effettuare l’accesso. Il visitatore che ha effettuato l’accesso (membro) può attivare e disattivare in qualsiasi momento.
 
@@ -37,7 +37,7 @@ L&#39;invio anonimo di un file simile non è supportato. Per partecipare, i visi
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusa</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>modalità </i>di progettazione</td>
+   <td>Sì - le proprietà sono modificabili in <i>modalità di progettazione </i>modo</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -71,16 +71,16 @@ L&#39;invio anonimo di un file simile non è supportato. Per partecipare, i visi
 ### Accesso al Voto Pubblicato (UGC) {#accessing-posted-voting-ugc}
 
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
+Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider delle risorse di storage - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
-* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida di codifica.
-* [Refactoring](socialutils.md) SocialUtils - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Panoramica](srp.md)  del provider delle risorse di storage - introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con linee guida di codifica SRP](accessing-ugc-with-srp.md) .
+* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
