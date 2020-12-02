@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Configurazione della pagina per la modifica collettiva delle proprietà pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[La modifica collettiva delle proprietà](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) di pagina consente di modificare le proprietà di più pagine alla volta.
+[La modifica collettiva delle ](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) proprietà della pagina consente di modificare le proprietà di più pagine alla volta.
 
 A causa della possibilità di valori diversi, per impostazione predefinita le proprietà della pagina non sono abilitate per la modifica collettiva. Devono essere esplicitamente consentiti (abilitati). Per definire le proprietà della pagina in modo che siano disponibili per la modifica collettiva, è necessario considerare alcune implicazioni, ad esempio:
 
@@ -43,7 +43,7 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 
 >[!NOTE]
 >
->La modifica collettiva è disponibile anche per le risorse. È molto simile, ma differisce in alcuni punti. See [Editing Properties of Multiple Assets](/help/assets/metadata.md) for full information. Puoi personalizzare i campi nell’editor metadati di massa per le risorse utilizzando l’editor [](/help/assets/metadata-schemas.md)schema.
+>La modifica collettiva è disponibile anche per le risorse. È molto simile, ma differisce in alcuni punti. Per ulteriori informazioni, vedere [Modifica delle proprietà di più risorse](/help/assets/metadata.md). Potete personalizzare i campi nell&#39;editor metadati di massa per le risorse utilizzando l&#39; [Editor schema](/help/assets/metadata-schemas.md).
 
 ## Abilitazione di un campo {#enabling-a-field}
 
@@ -62,7 +62,7 @@ A causa della possibilità di valori diversi, per impostazione predefinita le pr
 
 
 
-I campi sono attivati sul componente pagina (*non* sul modello):
+I campi sono attivati sul componente pagina (*non* nel modello):
 
 1. Utilizzando un CRXDE Lite (o un metodo equivalente) potete aprire il componente della pagina.
 
@@ -70,16 +70,16 @@ I campi sono attivati sul componente pagina (*non* sul modello):
 
    >[!NOTE]
    >
-   >Nell&#39;esempio si presuppone che nell&#39;istanza siano stati installati i componenti core, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html) for more information.
+   >Nell&#39;esempio si presuppone che nell&#39;istanza siano stati installati i componenti core, il che si verifica se l&#39;istanza è in esecuzione con contenuto di esempio We.Retail. Per ulteriori informazioni, consulta la [Documentazione sui componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html).
 
-1. Andate al campo obbligatorio nella `cq:dialog` definizione.
+1. Andate al campo obbligatorio all&#39;interno della definizione `cq:dialog`.
 1. Definire la seguente proprietà sul nodo campo:
 
    * **Nome**: `allowBulkEdit`
    * **Tipo**: `Boolean`
-   * **Valore**: `true`
+   * **Valore**:  `true`
 
-   Ad esempio, per il componente [pagina standard](/help/sites-authoring/default-components-foundation.md)foundation:
+   Ad esempio, per la pagina standard [foundation component](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
@@ -89,15 +89,15 @@ I campi sono attivati sul componente pagina (*non* sul modello):
 
    >[!CAUTION]
    >
-   >Non ***devi*** cambiare nulla nel `/libs` percorso.
+   >***non è necessario*** modificare nulla nel percorso `/libs`.
    >
-   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+   >Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
    >
    >Il metodo consigliato per la configurazione e altre modifiche è:
    >
    >    1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
-   >    1. Apportare modifiche all&#39;interno `/apps`
+   >    1. Apportare modifiche all&#39;interno di `/apps`
 
 
-1. Selezionate **Salva tutto** per mantenere gli aggiornamenti.
+1. Selezionare **Salva tutto** per mantenere gli aggiornamenti.
 
