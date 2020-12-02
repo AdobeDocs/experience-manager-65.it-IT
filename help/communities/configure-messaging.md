@@ -19,27 +19,27 @@ ht-degree: 4%
 ---
 
 
-# Funzionalità di messaggistica {#messaging-feature}
+# Funzione di messaggistica {#messaging-feature}
 
 Oltre alle interazioni pubblicamente visibili che si verificano nei forum e nei commenti, la funzione di messaggistica di  AEM Communities consente ai membri della community di interagire più privatamente tra di loro.
 
-Questa funzione può essere inclusa quando si crea un sito [](/help/communities/overview.md#communitiessites) community.
+Questa funzione può essere inclusa quando si crea un [sito community](/help/communities/overview.md#communitiessites).
 
 La funzione di messaggistica consente di:
 
-**A** - invia un messaggio a uno o più membri della community
+**A** - inviare un messaggio a uno o più membri della community
 
-**B** - inviare [in massa messaggi diretti ai gruppi di membri della comunità](/help/communities/messaging.md#group-messaging)
+**B** - inviare messaggi diretti in  [massa a gruppi di membri della community](/help/communities/messaging.md#group-messaging)
 
-**C** - Invia un messaggio con allegati
+**C** - inviare un messaggio con gli allegati
 
-**D** - Inoltra un messaggio
+**D** - inoltrare un messaggio
 
 **E** - risposta a un messaggio
 
-**F** - eliminazione di un messaggio
+**F** - eliminare un messaggio
 
-**G** - ripristino di un messaggio eliminato
+**G** - ripristinare un messaggio eliminato
 
 ![messaging-section](assets/messaging-section.png)
 
@@ -47,42 +47,42 @@ La funzione di messaggistica consente di:
 
 Per attivare e modificare la funzione di messaggistica, vedi:
 
-* [Configurare i messaggi](/help/communities/messaging.md) per gli amministratori
-* [Messaging Essentials](/help/communities/essentials-messaging.md) for developer
+* [Configurare i ](/help/communities/messaging.md) messaggi per gli amministratori
+* [Messaging ](/help/communities/essentials-messaging.md) Essentials for developer
 
 >[!NOTE]
 >
->Non è supportato l’aggiunta di `Compose Message, Message, or Message List` componenti (nel gruppo di `Communities`componenti) a una pagina in modalità di modifica dell’autore.
+>Non è supportato l&#39;aggiunta di componenti `Compose Message, Message, or Message List` (nel gruppo di componenti `Communities`) a una pagina in modalità di modifica dell&#39;autore.
 
-## Configurare i componenti per la messaggistica {#configure-messaging-components}
+## Configurare i componenti di messaggistica {#configure-messaging-components}
 
 Quando la messaggistica è abilitata per un sito community, viene configurata senza bisogno di ulteriori configurazioni. Le informazioni vengono fornite se è necessario modificare la configurazione predefinita.
 
 ### Configura elenco messaggi (finestra di messaggio) {#configure-message-list-message-box}
 
-Per modificare la configurazione dell’elenco di messaggi per le pagine **Posta in arrivo**, **Inviati** e **Cestino** della funzione di messaggistica, aprite il sito in modalità [di modifica](/help/communities/sites-console.md#authoring-site-content)dell’autore.
+Per modificare la configurazione dell&#39;elenco dei messaggi per le pagine **Inbox**, **Posta inviata** e **Cestino** della funzione di messaggistica, aprire il sito in [modalità di modifica dell&#39;autore](/help/communities/sites-console.md#authoring-site-content).
 
-1. In `Preview` modalità, selezionate il collegamento **Messaggi** per aprire la pagina di messaggi principale. Selezionate quindi **Inbox**, **Inviati elementi** o **Cestino** per configurare il componente per l’elenco dei messaggi.
+1. In modalità `Preview`, selezionare il collegamento **Messages** per aprire la pagina di messaggi principale. Selezionare quindi **Inbox**, **Posta inviata** o **Cestino** per configurare il componente per l&#39;elenco dei messaggi.
 
-1. In `Edit` modalità, selezionate il componente sulla pagina.
-1. Per accedere alla finestra di dialogo di configurazione, annullare l’ereditarietà selezionando l’ `link` icona .
+1. In modalità `Edit`, selezionate il componente sulla pagina.
+1. Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
 Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di configurazione per aprire la finestra di dialogo di configurazione.
 
-1. Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39; `broken link` icona.
+1. Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 
 ![configure-message-list](assets/configure-message-list.png)
 
-#### Basic tab {#basic-tab}
+#### Scheda di base {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
 * **Selezione servizio**
 
-   (*Obbligatorio*) Impostare questa proprietà sul valore **`serviceSelector.name`** della proprietà del [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
+   (*Obbligatorio*) Impostare questo valore sulla proprietà **`serviceSelector.name`** dal [ AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
 * **Componi pagina**
 
-   (*Obbligatorio*) La pagina da aprire quando un membro fa clic sul **`Reply`** pulsante. La pagina di destinazione deve contenere il modulo **Componi messaggio** .
+   (*Obbligatorio*) La pagina da aprire quando un membro fa clic sul pulsante **`Reply`**. La pagina di destinazione deve contenere il modulo **Componi messaggio**.
 
 * **Rispondi/Visualizza come risorsa**
 
@@ -98,27 +98,27 @@ Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di
 
 * **Percorsi cartella**
 
-   (*Obbligatorio*) Riferimento ai valori impostati per **inbox.path.name** e **sentitems.path.name** nel [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Quando si configura per un `Inbox`, aggiungere una voce utilizzando il valore di **inbox.path.name**. Quando si configura per un `Outbox`, aggiungere una voce utilizzando il valore di **sentitems.path.name**. Durante la configurazione per `Trash`, aggiungere due voci con entrambi i valori.
+   (*Obbligatorio*) Riferimento ai valori impostati per **inbox.path.name** e **sentitems.path.name** in [ AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Durante la configurazione di un `Inbox`, aggiungere una voce utilizzando il valore di **inbox.path.name**. Durante la configurazione per un `Outbox`, aggiungere una voce utilizzando il valore di **sentitems.path.name**. Durante la configurazione per `Trash`, aggiungere due voci con entrambi i valori.
 
-#### Scheda Visualizzazione {#display-tab}
+#### Scheda Visualizza {#display-tab}
 
 ![display-tab-message-list](assets/display-tab-message-list.png)
 
 * **Contrassegna pulsante Lettura**
 
-   Se questa opzione è selezionata, visualizza un `Read`pulsante che consente di contrassegnare il messaggio come letto.
+   Se questa opzione è selezionata, visualizza un pulsante `Read`che consente di contrassegnare un messaggio come letto.
 
 * **Contrassegna pulsante Non letto**
 
-   Se questa opzione è selezionata, visualizza un `Mark Unread` pulsante che consente di contrassegnare il messaggio come letto.
+   Se questa opzione è selezionata, visualizza un pulsante `Mark Unread` che consente di contrassegnare un messaggio come letto.
 
 * **Pulsante Elimina**
 
-   Se questa opzione è selezionata, visualizza un `Delete` pulsante che consente di contrassegnare il messaggio come letto. Duplica la funzionalità di eliminazione se **`Message Options`** è selezionata.
+   Se questa opzione è selezionata, visualizza un pulsante `Delete` che consente di contrassegnare un messaggio come letto. Duplica la funzionalità di eliminazione se è selezionata anche **`Message Options`**.
 
 * **Opzioni messaggio**
 
-   Se questa opzione è selezionata, vengono visualizzati **`Reply`**, **`Reply All`** e **`Forward`** **`Delete`** i pulsanti che consentono di inviare o eliminare un messaggio. Duplica la funzionalità di eliminazione se **`Delete Button`** è selezionata.
+   Se questa opzione è selezionata, visualizza i pulsanti **`Reply`**, **`Reply All`**, **`Forward`** e **`Delete`** che consentono di inviare o eliminare un messaggio. Duplica la funzionalità di eliminazione se è selezionata anche **`Delete Button`**.
 
 * **Messaggi per pagina**
 
@@ -130,23 +130,23 @@ Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di
 
 * **Visualizza utente**
 
-   Scegliete **`Sender`** o **`Recipients`** per determinare se visualizzare il mittente o i destinatari.
+   Scegliere **`Sender`** o **`Recipients`** per determinare se visualizzare il mittente o i destinatari.
 
 ### Configura messaggio di composizione {#configure-compose-message}
 
-Per modificare la configurazione della pagina di composizione del messaggio, aprite il sito in modalità [di modifica](/help/communities/sites-console.md#authoring-site-content)dell’autore.
+Per modificare la configurazione della pagina dei messaggi di composizione, aprire il sito in [modalità di modifica dell&#39;autore](/help/communities/sites-console.md#authoring-site-content).
 
-* In `Preview` modalità, selezionate il collegamento **Messaggi** per aprire la pagina di messaggi principale. Quindi fate clic sul pulsante Nuovo messaggio per aprire la `Compose Message` pagina.
+* In modalità `Preview`, selezionare il collegamento **Messages** per aprire la pagina di messaggi principale. Quindi fate clic sul pulsante Nuovo messaggio per aprire la pagina `Compose Message`.
 
-* In `Edit` modalità, selezionate il componente principale nella pagina contenente il corpo del messaggio.
-* Per accedere alla finestra di dialogo di configurazione, annullare l’ereditarietà selezionando l’ `link` icona .
+* In modalità `Edit`, selezionate il componente principale nella pagina contenente il corpo del messaggio.
+* Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
 Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di configurazione per aprire la finestra di dialogo di configurazione.
 
-* Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39; `broken link` icona.
+* Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 
 ![config-compose-message](assets/config-compose-message.png)
 
-#### Basic tab {#basic-tab-1}
+#### Scheda di base {#basic-tab-1}
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
@@ -168,35 +168,35 @@ Una volta annullata l&#39;ereditarietà, è possibile selezionare l&#39;icona di
 
 * **Selezione servizio**
 
-   (*Obbligatorio*) Impostare questa proprietà sul valore **`serviceSelector.name`** della proprietà del [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
+   (*Obbligatorio*) Impostare questo valore sulla proprietà **`serviceSelector.name`** dal [ AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
-#### Scheda Visualizzazione {#display-tab-1}
+#### Scheda Visualizza {#display-tab-1}
 
 ![display-tab-compose](assets/display-tab-compose.png)
 
 * **Mostra campo oggetto**
 
-   Se questa opzione è selezionata, mostrare il `Subject` campo e abilitare l&#39;aggiunta di un oggetto al messaggio. Il valore predefinito non è selezionato.
+   Se questa opzione è selezionata, mostrare il campo `Subject` e abilitare l&#39;aggiunta di un oggetto al messaggio. Il valore predefinito non è selezionato.
 
 * **Etichetta oggetto**
 
-   Immettere il testo da visualizzare accanto al `Subject` campo. Default is `Subject`.
+   Immettere il testo da visualizzare accanto al campo `Subject`. Il valore predefinito è `Subject`.
 
 * **Mostra campo Allega file**
 
-   Se questa opzione è selezionata, mostrare il `Attachment` campo e abilitare l&#39;aggiunta di allegati al messaggio. Il valore predefinito non è selezionato.
+   Se questa opzione è selezionata, mostrare il campo `Attachment` e abilitare l&#39;aggiunta di allegati al messaggio. Il valore predefinito non è selezionato.
 
 * **Etichetta Allega file**
 
-   Immettere il testo da visualizzare accanto al `Attachment` campo. Default is **`Attach File`**.
+   Immettere il testo da visualizzare accanto al campo `Attachment`. Il valore predefinito è **`Attach File`**.
 
 * **Mostra campo contenuto**
 
-   Se questa opzione è selezionata, mostrare il `Content` campo e abilitare l&#39;aggiunta di un corpo del messaggio. Il valore predefinito non è selezionato.
+   Se questa opzione è selezionata, mostrare il campo `Content` e abilitare l&#39;aggiunta di un corpo del messaggio. Il valore predefinito non è selezionato.
 
 * **Etichetta contenuto**
 
-   Immettere il testo da visualizzare accanto al `Content` campo. Default is **`Body`**.
+   Immettere il testo da visualizzare accanto al campo `Content`. Il valore predefinito è **`Body`**.
 
 * **Con editor Rich Text**
 
