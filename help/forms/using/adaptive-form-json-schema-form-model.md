@@ -26,9 +26,9 @@ Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo
 * [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
-## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
+## Utilizzo di uno schema JSON come modello di modulo {#using-a-json-schema-as-form-model}
 
-I AEM Forms supportano la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle specifiche [](https://json-schema.org/draft-04/schema)v4.
+ AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle [specifiche v4](https://json-schema.org/draft-04/schema).
 
 Le caratteristiche chiave dell&#39;utilizzo di uno schema JSON sono:
 
@@ -86,24 +86,24 @@ La mappatura degli elementi JSON con componenti per moduli adattivi è la seguen
    <td><br /> <br /> Campo di testo<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>number, proprietà<br /> </td>
+   <td>number property<br /> </td>
    <td>Campo numerico con sottotipo impostato su Mobile<br /> </td>
   </tr>
   <tr>
-   <td>integer, proprietà<br /> </td>
-   <td>Campo numerico con sottotipo impostato su numero intero<br /> </td>
+   <td>proprietà integer<br /> </td>
+   <td>Campo numerico con sottotipo impostato su integer<br /> </td>
   </tr>
   <tr>
-   <td>boolean, proprietà<br /> </td>
+   <td>proprietà booleana<br /> </td>
    <td>Scambia<br /> </td>
   </tr>
   <tr>
-   <td>object property<br /> </td>
+   <td>proprietà object<br /> </td>
    <td>Pannello<br /> </td>
   </tr>
   <tr>
    <td>array, proprietà</td>
-   <td>Pannello ripetibile con min e max uguali rispettivamente a minItems e maxItems. Sono supportati solo gli array omogenei. Pertanto, il vincolo elementi deve essere un oggetto e non un array.<br /> </td>
+   <td>Pannello ripetibile con min e max uguali rispettivamente a minItems e maxItems. Sono supportati solo gli array omogenei. Pertanto, il vincolo degli elementi deve essere un oggetto e non un array.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -359,9 +359,9 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente dispon
 }
 ```
 
-## Configurare script o espressioni per gli oggetti modulo  {#configure-scripts-or-expressions-for-form-objects}
+## Configurare script o espressioni per gli oggetti modulo {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. È possibile preconfigurare gli oggetti modulo per [valutare un&#39;espressione](../../forms/using/adaptive-form-expressions.md) su un evento del modulo.
+JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API per modelli di script di moduli adattivi. È possibile pre-configurare gli oggetti modulo in modo che [valuti un&#39;espressione](../../forms/using/adaptive-form-expressions.md) in un evento del modulo.
 
 Utilizzare la proprietà aem:afproperties per preconfigurare le espressioni di modulo adattivo o gli script per i componenti modulo adattivi. Ad esempio, quando si attiva l&#39;evento initialize, il codice seguente imposta il valore del campo telefonico e stampa un valore nel registro:
 
@@ -381,7 +381,7 @@ Utilizzare la proprietà aem:afproperties per preconfigurare le espressioni di m
 }
 ```
 
-È necessario essere membri del gruppo [](/help/forms/using/forms-groups-privileges-tasks.md) form-power-user per configurare script o espressioni per l&#39;oggetto modulo. Nella tabella seguente sono elencati tutti gli eventi di script supportati per un componente modulo adattivo.
+Per configurare script o espressioni per l&#39;oggetto modulo, è necessario essere membri del gruppo [forms-power-user](/help/forms/using/forms-groups-privileges-tasks.md). Nella tabella seguente sono elencati tutti gli eventi di script supportati per un componente modulo adattivo.
 
 <table>
  <tbody>
@@ -586,11 +586,11 @@ Utilizzare la proprietà aem:afproperties per preconfigurare le espressioni di m
  </tbody>
 </table>
 
-Alcuni esempi dell&#39;utilizzo degli eventi in un JSON nascondono un campo in corrispondenza dell&#39;evento initialize e configurano il valore di un altro campo in corrispondenza dell&#39;evento value commit. Per informazioni dettagliate sulla creazione di espressioni per gli eventi di script, vedere Espressioni [modulo](../../forms/using/adaptive-form-expressions.md)adattive.
+Alcuni esempi dell&#39;utilizzo degli eventi in un JSON nascondono un campo in corrispondenza dell&#39;evento initialize e configurano il valore di un altro campo in corrispondenza dell&#39;evento value commit. Per informazioni dettagliate sulla creazione di espressioni per gli eventi di script, vedere [Espressioni modulo adattive](../../forms/using/adaptive-form-expressions.md).
 
 Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
 
-### Nascondere un campo durante l&#39;evento initialize {#hiding-a-field-on-initialize-event}
+### Nascondere un campo all&#39;evento di inizializzazione {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
@@ -603,7 +603,7 @@ Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
 }
 ```
 
-#### Configurare il valore di un altro campo in caso di evento commit del valore {#configure-value-of-another-field-on-value-commit-event}
+#### Configurare il valore di un altro campo sull&#39;evento di commit del valore {#configure-value-of-another-field-on-value-commit-event}
 
 ```json
 "Income": {
@@ -725,7 +725,7 @@ Di seguito è riportato il codice JSON di esempio per i suddetti esempi.
  </tbody>
 </table>
 
-## costrutti non supportati  {#non-supported-constructs}
+## costrutti non supportati {#non-supported-constructs}
 
 I moduli adattivi non supportano i seguenti costrutti dello schema JSON:
 
