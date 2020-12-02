@@ -18,7 +18,7 @@ ht-degree: 92%
 # Guida utente all’authoring di AEM 6.5 {#authoring}
 
 + [Panoramica della Guida utente all’authoring](home.md)
-+ Attività, strumenti e concetti essenziali per l’authoring AEM {#essentials}
++ Attività, strumenti e concetti essenziali per AEM authoring {#essentials}
    + [Primi passi per gli autori](first-steps.md)
    + [Authoring delle pagine](page-authoring.md)
    + [Guida rapida all’authoring delle pagine](qg-page-authoring.md)
