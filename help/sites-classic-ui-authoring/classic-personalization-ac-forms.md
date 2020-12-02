@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 62%
 
 ---
 
@@ -43,7 +46,7 @@ Il modulo si aggiorna automaticamente a seconda dell’utente. Per ulteriori inf
 
 Prima di poter creare i moduli specifici di Adobe Campaign, è necessario rendere disponibili i diversi modelli nell&#39;applicazione AEM.
 
-To do this, see the [Templates documentation](/help/sites-developing/page-templates-static.md#templateavailability).
+A tale scopo, consultare la [Documentazione sui modelli](/help/sites-developing/page-templates-static.md#templateavailability).
 
 Innanzitutto, verifica che la connessione tra le istanze di creazione e pubblicazione e Adobe Campaign funzioni correttamente. Consulta [Integrazione con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) o [Integrazione con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
 
@@ -56,80 +59,81 @@ Innanzitutto, verifica che la connessione tra le istanze di creazione e pubblica
 
 1. Inizia da siteadmin.
 1. Scorri attraverso la struttura a albero per arrivare al punto in cui puoi creare il modulo nel tuo sito web.
-1. **Selezionare** Nuovo **>** Nuova pagina... .
-1. Select either **Adobe Campaign Profile (AC 6.1)** or **Adobe Campaign Profile (ACS)** template and enter the page properties.
+1. Selezionare **Nuova** > **Nuova pagina...**.
+1. Selezionare il modello **profilo Adobe Campaign (AC 6.1)** o **profilo Adobe Campaign (ACS)** e immettere le proprietà della pagina.
 
    >[!NOTE]
    >
-   >If the template is not available, refer to the [Making a template available](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) section.
+   >Se il modello non è disponibile, fare riferimento alla sezione [Rendere disponibile un modello](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
-1. Click **Create** to create the form.
+1. Fare clic su **Crea** per creare il modulo.
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
 
    Ora puoi [modificare e configurare il contenuto del tuo modulo](#editing-form-content).
 
-## Modifica del contenuto del modulo {#editing-form-content}
+## Modifica del contenuto del modulo  {#editing-form-content}
 
 I moduli dedicati ad Adobe Campaign hanno componenti specifici. Questi componenti dispongono di un’opzione per consentire di collegare ciascun campo del modulo a un campo del database di Adobe Campaign.
 
 >[!NOTE]
 >
->If the desired template is not available, see [Making a template available](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
+>Se il modello desiderato non è disponibile, vedere [Come rendere disponibile un modello](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
-Questa sezione contiene solo dettagli sui collegamenti specifici a Adobe Campaign. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
+Questa sezione contiene solo dettagli sui collegamenti specifici a Adobe Campaign. Per ulteriori informazioni su una panoramica più generale dell&#39;uso dei moduli in Adobe Experience Manager, vedere [Componenti Editmode](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Spostati sul modulo che desideri modificare.
-1. **Nella casella degli strumenti, selezionare** Pagina **> Proprietà** pagina. quindi andate alla scheda Servizi **** cloud della finestra a comparsa.
-1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service&#39;s drop down list. Questa configurazione viene mantenuta quando viene impostata la connessione tra le tue istanze. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Nella casella degli strumenti, selezionare **Pagina** > **Proprietà pagina...** quindi passare alla scheda **Cloud Services** della finestra a comparsa.
+1. Aggiungi il servizio Adobe Campaign  facendo clic su **Aggiungi servizio**, quindi selezionando la configurazione che corrisponde all&#39;istanza Adobe Campaign  nell&#39;elenco a discesa del servizio. Questa configurazione viene mantenuta quando viene impostata la connessione tra le tue istanze. Per ulteriori informazioni, vedere [Collegamento AEM a  Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
    >Se necessario, sblocca la configurazione facendo clic sull&#39;icona a forma di lucchetto per poter aggiungere il servizio Adobe Campaign.
 
-1. Access the form&#39;s general parameters using the **Edit** button found at the start of the form. The **Form** tab allows you to select a thank you page to which the user will be redirected after having validated the form.
+1. Accedere ai parametri generali del modulo utilizzando il pulsante **Modifica** disponibile all&#39;inizio del modulo. La scheda **Modulo** consente di selezionare una pagina di ringraziamento alla quale verrà reindirizzato l&#39;utente dopo aver convalidato il modulo.
 
-   The **Advanced** form allows you to select the type of form. The **Post Options** field gives you the choice between three types of Adobe Campaign forms:
+   Il modulo **Advanced** consente di selezionare il tipo di modulo. Il campo **Opzioni post** consente di scegliere tra tre tipi di moduli Adobe Campaign :
 
    * **Adobe Campaign: Salva profilo**: consente di creare o aggiornare un destinatario in Adobe Campaign (valore predefinito).
    * **Adobe Campaign: iscrizione a servizi**: consente di gestire le iscrizioni dei destinatari in Adobe Campaign.
    * **Adobe Campaign: Annulla iscrizione a servizi**: consente di annullare le iscrizioni dei destinatari in Adobe Campaign.
-   The **Action Configuration** field lets you specify whether or not you would like to create the recipient profile in the Adobe Campaign database if it does not yet exist. To do this, check the **Create user if not existing** option.
+
+   Il campo **Configurazione azione** consente di specificare se creare o meno il profilo del destinatario nel database Adobe Campaign , se ancora non esiste. A questo scopo, selezionare l&#39;opzione **Crea utente se non esistente**.
 
 1. Aggiungi i componenti selezionati trascinandoli dalla casella strumenti e rilasciandoli nel modulo. Per ulteriori informazioni sui componenti specifici per Adobe Campaign disponibili, consulta [Componenti Adobe Form](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Configura i campi aggiunti selezionandoli con doppio clic. The **Adobe Campaign** tab lets you link the field to a field in the Adobe Campaign recipient table. Puoi anche specificare se il campo fa parte della chiave di riconciliazione che consente di essere riconosciuti ai destinatari già presenti nel database di Adobe Campaign.
+1. Configura i campi aggiunti selezionandoli con doppio clic. La scheda **Adobe Campaign** consente di collegare il campo a un campo nella  tabella dei destinatari Adobe Campaign. Puoi anche specificare se il campo fa parte della chiave di riconciliazione che consente di essere riconosciuti ai destinatari già presenti nel database di Adobe Campaign.
 
    >[!CAUTION]
    >
-   >The **Element Name** must be different for each form field. Se necessario, modificalo.
+   >Il **Nome elemento** deve essere diverso per ciascun campo modulo. Se necessario, modificalo.
    >
-   >Each form must contain an **Encrypted Primary Key** component in order to correctly manage recipients in the Adobe Campaign database.
+   >Ogni modulo deve contenere un componente **Chiave primaria crittografata** per gestire correttamente i destinatari nel database Adobe Campaign .
 
-1. Activate the page by selecting **Page** > **Activate Page** in the toolbox. La pagina viene attivata sul tuo sito. È possibile visualizzarla accedendo al’&#39;istanza di pubblicazione di AEM. I dati nel database di Adobe Campaign vengono aggiornati quando viene convalidato un modulo.
+1. Attivare la pagina selezionando **Page** > **Activate Page** (Attiva pagina) nella casella degli strumenti. La pagina viene attivata sul tuo sito. È possibile visualizzarla accedendo al’&#39;istanza di pubblicazione di AEM. I dati nel database di Adobe Campaign vengono aggiornati quando viene convalidato un modulo.
 
-## Test di un modulo {#testing-a-form}
+## Test di un modulo  {#testing-a-form}
 
 Dopo aver creato un modulo e modificato il suo contenuto, potresti voler verificare che funzioni come previsto.
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. In Components (Componenti), in modo che solo i social media siano visibili.
+>È necessario disporre di un componente **Chiave primaria crittografata** su ciascun modulo. In Componenti  Adobe Campaign, in modo che solo tali componenti siano visibili.
 >
 >Anche se in questa procedura si inserisce il numero EPK manualmente, in pratica gli utenti otterrebbero un collegamento a questa pagina (che sia per annullare l’iscrizione, iscriversi o aggiornare il profilo) all&#39;interno di una newsletter. In base all&#39;utente, l’EPK si aggiorna automaticamente.
 >
->To create that link, you use the variable **Main resource identifier**(Adobe Campaign Standard) or **Encrypted identifier** (Adobe Campaign 6.1) (for example, in a **Text &amp; Personalization (Campaign)** component), which links to the epk in Adobe Campaign.
+>Per creare tale collegamento, è possibile utilizzare la variabile **Identificatore risorsa principale**( Adobe Campaign Standard) o **Identificatore crittografato** ( Adobe Campaign 6.1) (ad esempio, in un componente **Testo e personalizzazione (Campaign)**), che si collega all&#39;epk in  Adobe Campaign.
 
 Per eseguire questa operazione, è necessario ottenere manualmente l&#39;EPK da un profilo Adobe Campaign e aggiungerlo all&#39;URL:
 
 1. Per ottenere la chiave crittografata primaria (EPK) di un profilo Adobe Campaign:
 
-   * In Adobe Campaign Standard - Navigate to **Profiles and Audiences** > **Profiles**, which lists the existing profiles. Make sure the table displays the **Main Resource Identifier** field in a column (This can be configured by clicking/tapping **Configure list**). Copia l’identificatore della risorsa principale del profilo desiderato.
-   * In Adobe Campaign 6.11, go to **Profiles and Targets** >  **Recipients**, which lists the existing profiles. Make sure the table displays the **Encrypted identifier** field in a column (This can be configured by right-clicking on an entry and selecting **Configure list...**). Copia l’identificatore crittografato del profilo desiderato.
+   * In  Adobe Campaign Standard - Passare a **Profili e pubblico** > **Profili**, in cui sono elencati i profili esistenti. Assicurarsi che la tabella visualizzi il campo **Identificatore risorsa principale** in una colonna (per configurarlo, fare clic o toccare **Configura elenco**). Copia l’identificatore della risorsa principale del profilo desiderato.
+   * In  Adobe Campaign 6.11, andate a **Profili e destinazioni** > **Destinatari**, in cui sono elencati i profili esistenti. Assicurarsi che la tabella visualizzi il campo **Identificatore crittografato** in una colonna (è possibile configurare facendo clic con il pulsante destro del mouse su una voce e selezionando l&#39;elenco **Configura...**). Copia l’identificatore crittografato del profilo desiderato.
 
-1. In AEM, open the form page on the publish instance and append the EPK from step 1 as a URL parameter: use the same name that you previously defined in the EPK component when authoring the form (for example: `?epk=...`)
+1. In AEM, aprite la pagina del modulo nell’istanza di pubblicazione e aggiungete l’EPK dal passaggio 1 come parametro URL: durante la creazione del modulo, usate lo stesso nome definito in precedenza nel componente EPK (ad esempio: `?epk=...`)
 1. Ora puoi usare il modulo per modificare i dati e le iscrizioni associati al profilo Adobe Campaign collegato. Dopo aver modificato alcuni campi e inviato il modulo, puoi verificare in Adobe Campaign che siano stati aggiornati i dati relativi.
 
 I dati nel database di Adobe Campaign vengono aggiornati quando viene convalidato un modulo.
