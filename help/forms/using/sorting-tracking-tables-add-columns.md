@@ -1,8 +1,8 @@
 ---
 title: Personalizzare le tabelle di tracciamento
 seo-title: Personalizzare le tabelle di tracciamento
-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro AEM Forms.
-seo-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro AEM Forms.
+description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro di  AEM Forms.
+seo-description: Procedura per personalizzare la visualizzazione dei dettagli dei processi utente nella tabella delle attività visualizzata nella scheda di tracciamento dell’area di lavoro di  AEM Forms.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,13 +19,13 @@ ht-degree: 3%
 
 # Personalizzare le tabelle di tracciamento{#customize-tracking-tables}
 
-La scheda di tracciamento nell’area di lavoro AEM Forms viene utilizzata per visualizzare i dettagli delle istanze del processo in cui è coinvolto l’utente che ha effettuato l’accesso. Per visualizzare le tabelle di tracciamento, selezionare innanzitutto un nome di processo nel riquadro a sinistra per visualizzare l&#39;elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare nel riquadro a destra una tabella delle attività generate dall&#39;istanza. Per impostazione predefinita, nelle colonne della tabella sono visualizzati i seguenti attributi attività (l&#39;attributo corrispondente nel modello attività è specificato tra parentesi):
+La scheda di tracciamento nellarea di lavoro AEM Forms viene utilizzata per visualizzare i dettagli delle istanze del processo in cui è coinvolto l&#39;utente che ha effettuato l&#39;accesso. Per visualizzare le tabelle di tracciamento, selezionare innanzitutto un nome di processo nel riquadro a sinistra per visualizzare l&#39;elenco delle istanze nel riquadro centrale. Selezionare un&#39;istanza di processo per visualizzare nel riquadro a destra una tabella delle attività generate dall&#39;istanza. Per impostazione predefinita, nelle colonne della tabella sono visualizzati i seguenti attributi attività (l&#39;attributo corrispondente nel modello attività è indicato tra parentesi):
 
 * ID ( `taskId`)
 * Nome ( `stepName`)
 * Istruzioni ( `instructions`)
 * Azione selezionata ( `selectedRoute`)
-* Ora creazione ( `createTime`)
+* Ora di creazione ( `createTime`)
 * Tempo di completamento ( `completeTime`)
 * Proprietario ( `currentAssignment.queueOwner`)
 
@@ -116,7 +116,7 @@ Gli attributi rimanenti nel modello attività disponibili per la visualizzazione
  </tbody>
 </table>
 
-Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche nel codice sorgente. Consultate [Introduzione all’area](/help/forms/using/introduction-customizing-html-workspace.md) di lavoroPersonalizzazione AEM Forms per informazioni su come effettuare modifiche semantiche utilizzando l’SDK dell’area di lavoro e come creare un pacchetto ridotto dall’origine modificata.
+Per le seguenti personalizzazioni nella tabella delle attività, è necessario apportare modifiche semantiche nel codice sorgente. Consultate [Introduzione alla personalizzazione &#39;area di lavoro AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) per informazioni su come apportare modifiche semantiche utilizzando l&#39;SDK dell&#39;area di lavoro e creare un pacchetto ridotto dall&#39;origine modificata.
 
 ## Modifica delle colonne di tabella e relativo ordine {#changing-table-columns-and-their-order}
 
@@ -158,7 +158,7 @@ Per le seguenti personalizzazioni nella tabella delle attività, è necessario a
 
 Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#39;intestazione della colonna:
 
-1. Registra un gestore di clic per `.fixedTaskTableHeader th` il file `js/runtime/views/processinstancehistory.js`.
+1. Registrare un gestore di clic per `.fixedTaskTableHeader th` nel file `js/runtime/views/processinstancehistory.js`.
 
    ```javascript
    events: {
@@ -168,7 +168,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
    }
    ```
 
-   Nel gestore, richiamare la `onTaskTableHeaderClick` funzione di `js/runtime/util/history.js`.
+   Nel gestore, richiamare la funzione `onTaskTableHeaderClick` di `js/runtime/util/history.js`.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -176,7 +176,7 @@ Per ordinare la tabella dell&#39;elenco delle attività quando si fa clic sull&#
    }
    ```
 
-1. Esporre il `TaskTableHeaderClick` metodo in `js/runtime/util/history.js`.
+1. Esporre il metodo `TaskTableHeaderClick` in `js/runtime/util/history.js`.
 
    Il metodo trova l&#39;attributo task dall&#39;evento click, ordina l&#39;elenco task su tale attributo ed esegue il rendering della tabella task con l&#39;elenco task ordinato.
 
