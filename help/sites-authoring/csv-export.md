@@ -12,6 +12,9 @@ discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 86%
 
 ---
 
@@ -53,7 +56,7 @@ Il file `export.csv` risultante può essere aperto in Excel o in un’altra appl
 
 ![etc-01](assets/etc-01.png)
 
-The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+L&#39;opzione Crea rapporto CSV **è disponibile quando si sfoglia la console** Siti **(in vista Elenco): è un&#39;opzione del menu a discesa** Crea **:**
 
 ![etc-02](assets/etc-02.png)
 
