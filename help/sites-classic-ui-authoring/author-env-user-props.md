@@ -12,6 +12,9 @@ discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +25,8 @@ Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambi
 
 Le [impostazioni dell’account](#account-settings) e le [preferenze utente](#user-preferences) consentono di definire le opzioni e le preferenze elencate di seguito:
 
-* **Barra degli strumenti di modifica** Consente di specificare se visualizzare o meno la barra degli strumenti di modifica globale. Tale barra degli strumenti, nella parte superiore della finestra del browser, include i pulsanti **Copia**, **Taglia**, **Incolla** ed **Elimina**, utilizzabili con i componenti paragrafo della pagina:
+* **Barra degli strumenti di modifica** Consente di specificare se visualizzare o meno la barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, fornisce 
+**Copia**,  **Taglia**,  **Incolla**,  **** Elimina per l’utilizzo con i componenti paragrafo della pagina:
 
    * Mostra se necessario (predefinito)
    * Mostra sempre
@@ -30,7 +34,8 @@ Le [impostazioni dell’account](#account-settings) e le [preferenze utente](#us
 
 * **Impersona** La funzionalità [Impersona](/help/sites-administering/security.md#impersonating-another-user) permette a un utente di lavorare a nome di un altro utente.
 
-* **Lingua** Lingua da usare nell’interfaccia dell’ambiente Authoring.Selezionate la lingua desiderata dall’elenco delle lingue disponibili.
+* **Lingua**
+Indica la lingua da usare nell’interfaccia dell’ambiente Authoring. Selezionate la lingua desiderata dall’elenco delle lingue disponibili.
 
 * **Gestione finestre** Seleziona una delle seguenti opzioni:
 
