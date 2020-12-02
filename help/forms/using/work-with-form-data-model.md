@@ -33,7 +33,7 @@ Per informazioni dettagliate sulle varie attività e configurazioni che è possi
 
 >[!NOTE]
 >
->È necessario essere membri sia dei gruppi **fdm-author** che **form-user** per poter creare e utilizzare il modello dati del modulo. Contattate il vostro amministratore AEM per diventare membro dei gruppi.
+>È necessario essere membri dei gruppi **fdm-author** e **forms-user** per poter creare e utilizzare il modello dati del modulo. Contattate il vostro amministratore AEM per diventare membro dei gruppi.
 
 ## Aggiunta di oggetti e servizi del modello dati {#add-data-model-objects-and-services}
 
@@ -43,9 +43,9 @@ Se si è creato un modello dati modulo con origini dati, è possibile utilizzare
 
 Per aggiungere oggetti e servizi del modello dati:
 
-1. Accedere all&#39;istanza di creazione AEM, accedere a **[!UICONTROL Forms > Integrazioni]** dati e aprire il modello dati del modulo in cui si desidera aggiungere gli oggetti del modello dati.
+1. Accedere all&#39;istanza di creazione AEM, passare a **[!UICONTROL Forms > Integrazioni dati]** e aprire il modello dati del modulo in cui si desidera aggiungere gli oggetti del modello dati.
 1. Nel riquadro Origini dati espandere le origini dati per visualizzare gli oggetti e i servizi del modello dati disponibili.
-1. Selezionare gli oggetti del modello dati e i servizi che si desidera aggiungere al modello dati del modulo e toccare **[!UICONTROL Aggiungi selezionato]**.
+1. Selezionare gli oggetti e i servizi del modello dati che si desidera aggiungere al modello dati del modulo e toccare **[!UICONTROL Aggiungi elemento selezionato]**.
 
    ![selected-objects](assets/selected-objects.png)
 
@@ -69,23 +69,23 @@ Per aggiungere oggetti e servizi del modello dati:
 
    >[!NOTE]
    >
-   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione dei servizi](#navigation-properties-odata)OData.
+   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione di OData services](#navigation-properties-odata).
 
 1. Toccare **[!UICONTROL Salva]** per salvare l&#39;oggetto modello di modulo.
 
    >[!NOTE]
    >
-   >È possibile richiamare i servizi configurati nella scheda Servizi di un modello dati modulo utilizzando le regole del modulo adattivo. I servizi configurati sono disponibili nell&#39;azione di attivazione dei servizi dell&#39;editor delle regole. Per ulteriori informazioni sull&#39;utilizzo di questi servizi nelle regole dei moduli adattivi, vedere Invocare servizi e Impostare il valore delle regole nell&#39;editor [delle](/help/forms/using/rule-editor.md)regole.
+   >È possibile richiamare i servizi configurati nella scheda Servizi di un modello dati modulo utilizzando le regole del modulo adattivo. I servizi configurati sono disponibili nell&#39;azione di attivazione dei servizi dell&#39;editor delle regole. Per ulteriori informazioni sull&#39;utilizzo di questi servizi nelle regole dei moduli adattivi, vedere Invoca servizi e Imposta valore delle regole in [editor delle regole](/help/forms/using/rule-editor.md).
 
 ## Creazione di oggetti modello dati e proprietà figlio {#create-data-model-objects-and-child-properties}
 
-### Creazione di oggetti modello dati {#create-data-model-objects}
+### Creare oggetti modello dati {#create-data-model-objects}
 
 Anche se è possibile aggiungere oggetti modello dati da origini dati configurate, è anche possibile creare oggetti modello dati o entità senza origini dati. È utile soprattutto se non sono state configurate origini dati nel modello dati del modulo.
 
 Per creare un oggetto modello dati senza origini dati:
 
-1. Accedere all&#39;istanza di creazione AEM, accedere a **[!UICONTROL Forms > Integrazioni]** dati e aprire il modello dati del modulo in cui si desidera creare un oggetto o un&#39;entità del modello dati.
+1. Accedere all&#39;istanza di creazione AEM, passare a **[!UICONTROL Forms > Integrazioni dati]** e aprire il modello dati del modulo in cui si desidera creare un oggetto o un&#39;entità del modello dati.
 1. Toccate **[!UICONTROL Crea entità]**.
 1. Nella finestra di dialogo Crea modello dati, specificare un nome per l&#39;oggetto modello dati e toccare **[!UICONTROL Aggiungi]**. Un oggetto modello dati viene aggiunto al modello dati del modulo. L&#39;oggetto modello dati appena aggiunto non è associato a un&#39;origine dati e non dispone di proprietà come illustrato nell&#39;immagine seguente.
 
@@ -99,24 +99,24 @@ L&#39;editor dei modelli di dati modulo consente di creare proprietà figlio in 
 
 Per creare una proprietà figlio:
 
-1. In un modello dati modulo, selezionare un oggetto modello dati e toccare **[!UICONTROL Crea proprietà]** figlio.
-1. Nella finestra di dialogo **[!UICONTROL Crea proprietà]** figlio, specificate un nome e un tipo di dati per la proprietà rispettivamente nei campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** . Facoltativamente è possibile specificare un titolo e una descrizione per la proprietà.
-1. Abilitare Computed se la proprietà è una proprietà calcolata. Il valore di una proprietà calcolata viene valutato in base a una regola o un&#39;espressione. Per ulteriori informazioni, vedere [Modificare le proprietà](#edit-properties).
+1. In un modello dati modulo, selezionare un oggetto modello dati e toccare **[!UICONTROL Crea proprietà figlio]**.
+1. Nella finestra di dialogo **[!UICONTROL Crea proprietà figlia]**, specificare un nome e un tipo di dati per la proprietà, rispettivamente, nei campi **[!UICONTROL Name]** e **[!UICONTROL Type]**. Facoltativamente è possibile specificare un titolo e una descrizione per la proprietà.
+1. Abilitare Computed se la proprietà è una proprietà calcolata. Il valore di una proprietà calcolata viene valutato in base a una regola o un&#39;espressione. Per ulteriori informazioni, vedere [Modifica proprietà](#edit-properties).
 1. Se l&#39;oggetto del modello dati è associato a un&#39;origine dati, la proprietà figlia aggiunta viene automaticamente associata alla proprietà dell&#39;oggetto modello dati padre con lo stesso nome e tipo di dati.
 
-   Per eseguire un binding manuale di una proprietà figlia con una proprietà oggetto modello dati, toccare l&#39;icona Sfoglia accanto al campo Riferimento **** binding. Nella finestra di dialogo **[!UICONTROL Seleziona oggetto]** sono elencate tutte le proprietà dell&#39;oggetto modello dati principale. Selezionare una proprietà con cui eseguire il binding e toccare l&#39;icona del segno di spunta. È possibile selezionare solo una proprietà dello stesso tipo di dati della proprietà figlio.
+   Per eseguire un binding manuale di una proprietà figlia con una proprietà oggetto modello dati, toccare l&#39;icona Sfoglia accanto al campo **[!UICONTROL Riferimento binding]**. La finestra di dialogo **[!UICONTROL Seleziona oggetto]** elenca tutte le proprietà dell&#39;oggetto modello dati principale. Selezionare una proprietà con cui eseguire il binding e toccare l&#39;icona del segno di spunta. È possibile selezionare solo una proprietà dello stesso tipo di dati della proprietà figlio.
 
-1. Toccate **[!UICONTROL Fine]** per salvare la proprietà figlio e toccate **[!UICONTROL Salva]** per salvare il modello dati del modulo. La proprietà figlio viene ora aggiunta all&#39;oggetto modello dati.
+1. Toccate **[!UICONTROL Fine]** per salvare la proprietà figlio, quindi toccate **[!UICONTROL Salva]** per salvare il modello dati del modulo. La proprietà figlio viene ora aggiunta all&#39;oggetto modello dati.
 
-Dopo aver creato oggetti e proprietà del modello dati, è possibile continuare a creare moduli adattivi e comunicazioni interattive basate sul modello dati del modulo. Successivamente, quando sono disponibili e configurate origini dati, è possibile eseguire il binding del modello dati del modulo con origini dati. Il binding viene aggiornato automaticamente nei moduli adattivi associati e nelle comunicazioni interattive. Per ulteriori informazioni sulla creazione di moduli adattivi e sulle comunicazioni interattive mediante il modello dati del modulo, vedere [Uso del modello](/help/forms/using/using-form-data-model.md)dati del modulo.
+Dopo aver creato oggetti e proprietà del modello dati, è possibile continuare a creare moduli adattivi e comunicazioni interattive basate sul modello dati del modulo. Successivamente, quando sono disponibili e configurate origini dati, è possibile eseguire il binding del modello dati del modulo con origini dati. Il binding viene aggiornato automaticamente nei moduli adattivi associati e nelle comunicazioni interattive. Per ulteriori informazioni sulla creazione di moduli adattivi e sulle comunicazioni interattive mediante il modello dati del modulo, vedere [Uso del modello dati del modulo](/help/forms/using/using-form-data-model.md).
 
 ### Binding di oggetti del modello dati e proprietà {#bind-data-model-objects-and-properties}
 
-Quando sono disponibili le origini dati che si desidera integrare con il modello dati del modulo, è possibile aggiungerle al modello dati del modulo come descritto in [Aggiorna origini](/help/forms/using/create-form-data-models.md#update)dati. Quindi, eseguire le operazioni seguenti per eseguire il binding degli oggetti e delle proprietà del modello dati non associati:
+Quando sono disponibili le origini dati che si desidera integrare con il modello dati del modulo, è possibile aggiungerle al modello dati del modulo come descritto in [Aggiorna origini dati](/help/forms/using/create-form-data-models.md#update). Quindi, eseguire le operazioni seguenti per eseguire il binding degli oggetti e delle proprietà del modello dati non associati:
 
 1. Nel modello dati del modulo, selezionare l&#39;origine dati non associata che si desidera associare a un&#39;origine dati.
 1. Toccate **[!UICONTROL Modifica proprietà]**.
-1. Nel riquadro **[!UICONTROL Modifica proprietà]** , toccare l&#39;icona Sfoglia accanto al campo **[!UICONTROL Binding]** . Si apre la finestra di dialogo **[!UICONTROL Seleziona oggetto]** in cui sono elencate le origini dati aggiunte nel modello dati del modulo.
+1. Nel riquadro **[!UICONTROL Modifica proprietà]**, toccare l&#39;icona Sfoglia accanto al campo **[!UICONTROL Binding]**. Apre la finestra di dialogo **[!UICONTROL Seleziona oggetto]** in cui sono elencate le origini dati aggiunte nel modello dati del modulo.
 
    ![select-object](assets/select-object.png)
 
@@ -146,9 +146,9 @@ Per leggere e scrivere i dati per un oggetto modello dati, effettuare le seguent
    >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. Quando si aggiunge un&#39;origine dati del servizio OData a un modello dati modulo, è disponibile un servizio nel modello dati modulo per tutte le proprietà di navigazione in un oggetto modello dati. È possibile utilizzare questo servizio per leggere le proprietà di navigazione dell&#39;oggetto modello dati corrispondente.
    >
    >
-   >Per ulteriori informazioni sull&#39;utilizzo del servizio, vedere [Uso delle proprietà di navigazione dei servizi](#navigation-properties-odata)OData.
+   >Per ulteriori informazioni sull&#39;utilizzo del servizio, vedere [Uso delle proprietà di navigazione di OData services](#navigation-properties-odata).
 
-1. Attiva/disattiva l&#39;oggetto **[!UICONTROL di livello]** superiore per specificare se l&#39;oggetto del modello dati è un oggetto modello di livello principale.
+1. Attivare/disattivare l&#39;oggetto di livello principale **[!UICONTROL Oggetto di livello principale]** per specificare se l&#39;oggetto del modello dati è un oggetto modello di livello principale.
 
    Gli oggetti del modello dati configurati in un modello dati del modulo sono disponibili per l&#39;uso nella scheda Oggetti modello dati del browser Contenuto di un modulo adattivo basato sul modello dati del modulo. Quando si aggiunge un&#39;associazione tra due oggetti modello dati, l&#39;oggetto modello dati a cui si sta associando è nidificato sotto l&#39;oggetto modello dati da cui si sta associando nella scheda Oggetti modello dati. Se il modello dati nidificato è un oggetto di primo livello, verrà visualizzato anche separatamente nella scheda Oggetti modello dati. Di conseguenza, verranno visualizzate due voci di esso, una all&#39;interno e l&#39;altra all&#39;esterno della gerarchia nidificata, che potrebbero confondere gli autori dei moduli. Per fare in modo che l&#39;oggetto del modello dati associato venga visualizzato solo nella gerarchia nidificata, disabilitare la proprietà Oggetto di primo livello.
 
@@ -158,44 +158,44 @@ Per leggere e scrivere i dati per un oggetto modello dati, effettuare le seguent
 
    Servizi di lettura e scrittura configurati per l&#39;origine dati dipendente
 
-1. Toccate ![aem_6_3_edit](assets/aem_6_3_edit.png) per l&#39;argomento del servizio di lettura per [associare l&#39;argomento a un attributo di profilo utente, un attributo di richiesta o un valore](#bindargument) letterale e specificate il valore di binding.
-1. Toccare **[!UICONTROL Fine]** per salvare l&#39;argomento, **[!UICONTROL Fine]** per salvare le proprietà, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Toccate ![aem_6_3_edit](assets/aem_6_3_edit.png) per l&#39;argomento del servizio di lettura per eseguire il binding dell&#39;argomento a un attributo di profilo utente, un attributo di richiesta o un valore letterale](#bindargument) e specificate il valore di binding.[
+1. Toccare **[!UICONTROL Done]** per salvare l&#39;argomento, **[!UICONTROL Done]** per salvare le proprietà, quindi **[!UICONTROL Save]** per salvare il modello dati del modulo.
 
 ### Binding degli argomenti del servizio di lettura {#bindargument}
 
 Associare l&#39;argomento del servizio di lettura a un attributo di profilo utente, un attributo di richiesta o un valore letterale in base a un valore di binding. Il valore viene passato al servizio come argomento per recuperare i dettagli associati al valore specificato dall&#39;origine dati.
 
-#### Literal value {#literal-value}
+#### Valore letterale {#literal-value}
 
-Selezionare **[!UICONTROL Letterale]** dal menu a discesa **[!UICONTROL Binding a]** e immettere un valore nel campo Valore **** binding. I dettagli associati al valore vengono recuperati dall&#39;origine dati. Utilizzare questa opzione per recuperare i dettagli associati a un valore statico.
+Selezionare **[!UICONTROL Letterale]** dal menu a discesa **[!UICONTROL Binding a]** e immettere un valore nel campo **[!UICONTROL Valore di binding]**. I dettagli associati al valore vengono recuperati dall&#39;origine dati. Utilizzare questa opzione per recuperare i dettagli associati a un valore statico.
 
-In questo esempio, i dettagli associati con **4367655678**, come valore per l&#39; `mobilenum` argomento, vengono recuperati dall&#39;origine dati. I dettagli associati se trasmettete il valore per un argomento relativo al numero di cellulare possono includere proprietà quali il nome del cliente, l&#39;indirizzo del cliente e la città.
+In questo esempio, i dettagli associati a **4367655678**, come valore per l&#39;argomento `mobilenum`, vengono recuperati dall&#39;origine dati. I dettagli associati se trasmettete il valore per un argomento relativo al numero di cellulare possono includere proprietà quali il nome del cliente, l&#39;indirizzo del cliente e la città.
 
 ![Valore letterale](assets/fdm_binding_literal_new.png)
 
 #### Attributo profilo utente {#user-profile-attribute}
 
-Selezionare Attributo **[!UICONTROL profilo]** utente dal menu a discesa **[!UICONTROL Binding a]** e immettere il nome dell&#39;attributo nel campo Valore **** binding. I dettagli dell&#39;utente che ha eseguito l&#39;accesso all&#39;istanza AEM vengono recuperati dall&#39;origine dati in base al nome dell&#39;attributo.
+Selezionare **[!UICONTROL Attributo profilo utente]** dal menu a discesa **[!UICONTROL Binding a]** e immettere il nome dell&#39;attributo nel campo **[!UICONTROL Valore di binding]**. I dettagli dell&#39;utente che ha eseguito l&#39;accesso all&#39;istanza AEM vengono recuperati dall&#39;origine dati in base al nome dell&#39;attributo.
 
-Il nome dell&#39;attributo specificato nel campo Valore **** di binding deve includere il percorso di binding completo fino al nome dell&#39;attributo per l&#39;utente. Aprite il seguente URL per accedere ai dettagli utente su CRXDE:
+Il nome dell&#39;attributo specificato nel campo **[!UICONTROL Valore di binding]** deve includere il percorso di binding completo fino al nome dell&#39;attributo per l&#39;utente. Aprite il seguente URL per accedere ai dettagli utente su CRXDE:
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Profilo utente](assets/binding_crxde_user_profile_new.png)
 
-In questo esempio, specificare `profile.empid` nel campo **[!UICONTROL Valore]** di binding per l&#39; `grios` utente.
+In questo esempio, specificare `profile.empid` nel campo **[!UICONTROL Valore di binding]** per l&#39;utente `grios`.
 
 ![Modifica argomento](assets/edit_argument_user_profile_new.png)
 
-L&#39; `id` argomento prende il valore dell&#39; `empid` attributo del profilo utente e lo trasmette come argomento al servizio di lettura. Legge e restituisce valori delle proprietà associate dall&#39;oggetto modello dati dipendente per l&#39;utente `empid` associato all&#39;utente connesso.
+L&#39;argomento `id` prende il valore dell&#39;attributo `empid` del profilo utente e lo trasmette come argomento al servizio di lettura. Vengono letti e restituiti i valori delle proprietà associate dall&#39;oggetto del modello dati dipendente per `empid` associato all&#39;utente connesso.
 
 #### Richiedi attributo {#request-attribute}
 
 Utilizzare l&#39;attributo request per recuperare le proprietà associate dall&#39;origine dati.
 
-1. Selezionare **[!UICONTROL Richiedi attributo]** dal menu a discesa **[!UICONTROL Binding a]** e immettere il nome dell&#39;attributo nel campo Valore **** binding.
+1. Selezionare **[!UICONTROL Richiedi attributo]** dal menu a discesa **[!UICONTROL Binding a]** e immettere il nome dell&#39;attributo nel campo **[!UICONTROL Valore di binding]**.
 
-1. Create una [sovrapposizione](../../../help/sites-developing/overlays.md) per head.jsp. Per creare la sovrapposizione, aprite CRX DE e copiate il `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` file in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Create una [sovrapposizione](../../../help/sites-developing/overlays.md) per head.jsp. Per creare la sovrapposizione, aprite CRX DE e copiate il file `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >
@@ -205,7 +205,7 @@ Utilizzare l&#39;attributo request per recuperare le proprietà associate dall&#
       >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
-1. Impostato [!DNL paramMap] per l’attributo request. Ad esempio, includete il seguente codice nel file .jsp nella cartella delle app:
+1. Impostate [!DNL paramMap] per l&#39;attributo request. Ad esempio, includete il seguente codice nel file .jsp nella cartella delle app:
 
    ```javascript
    <%Map paraMap = new HashMap();
@@ -224,11 +224,11 @@ Utilizzare l&#39;attributo request per recuperare le proprietà associate dall&#
 
 I dettagli vengono recuperati dall&#39;origine dati in base al nome attributo specificato nella richiesta.
 
-Ad esempio, specificando l&#39;attributo come `petid=100` nella richiesta, si recupereranno dall&#39;origine dati le proprietà associate al valore dell&#39;attributo.
+Ad esempio, se si specifica l&#39;attributo come `petid=100` nella richiesta, vengono recuperate dall&#39;origine dati le proprietà associate al valore dell&#39;attributo.
 
 ## Aggiungi associazioni {#add-associations}
 
-In genere, esistono associazioni create tra gli oggetti del modello dati in un&#39;origine dati. L&#39;associazione può essere uno a uno o uno a molti. Ad esempio, possono essere associati più dipendenti a un dipendente. Viene definita associazione uno-a-molti e rappresentata dalla linea che collega `1:n` gli oggetti del modello dati associati. Tuttavia, se un&#39;associazione restituisce un nome univoco del dipendente per un dato ID dipendente, viene definita associazione uno-a-uno.
+In genere, esistono associazioni create tra gli oggetti del modello dati in un&#39;origine dati. L&#39;associazione può essere uno a uno o uno a molti. Ad esempio, possono essere associati più dipendenti a un dipendente. Viene definita associazione uno-molti e rappresentata da `1:n` sulla linea che collega gli oggetti del modello dati associati. Tuttavia, se un&#39;associazione restituisce un nome univoco del dipendente per un dato ID dipendente, viene definita associazione uno-a-uno.
 
 Quando si aggiungono oggetti del modello dati associati in un&#39;origine dati a un modello dati del modulo, le relative associazioni vengono mantenute e visualizzate come collegate dalle linee freccia. È possibile aggiungere associazioni tra gli oggetti del modello dati attraverso origini dati diverse in un modello dati del modulo.
 
@@ -244,7 +244,7 @@ Per aggiungere un&#39;associazione:
 
    >[!NOTE]
    >
-   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. È possibile utilizzare queste proprietà di navigazione quando si aggiungono associazioni nel modello dati modulo. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione dei servizi](#navigation-properties-odata)OData.
+   >Oltre agli oggetti e ai servizi del modello dati, il documento di metadati del servizio OData include proprietà di navigazione che definiscono l&#39;associazione tra due oggetti del modello dati. È possibile utilizzare queste proprietà di navigazione quando si aggiungono associazioni nel modello dati modulo. Per ulteriori informazioni, vedere [Uso delle proprietà di navigazione di OData services](#navigation-properties-odata).
 
    Viene visualizzata la finestra di dialogo Aggiungi associazione.
 
@@ -265,22 +265,22 @@ Per aggiungere un&#39;associazione:
 
    L&#39;argomento predefinito per il servizio di lettura Dipendenti è Dependentid
 
-   Tuttavia, l&#39;argomento deve essere una proprietà comune tra l&#39;oggetto del modello dati associato, che in questo esempio è `Employeeid`. Pertanto, l&#39; `Employeeid` argomento deve essere associato alla `id` proprietà dell&#39;oggetto del modello dati Dipendente per recuperare i dettagli relativi ai dipendenti associati dall&#39;oggetto del modello dati Dipendenti.
+   Tuttavia, l&#39;argomento deve essere una proprietà comune tra l&#39;oggetto del modello dati associato, che in questo esempio è `Employeeid`. Pertanto, l&#39;argomento `Employeeid` deve essere associato alla proprietà `id` dell&#39;oggetto del modello dati Dipendente per recuperare i dettagli associati relativi dall&#39;oggetto del modello dati Dipendenti.
 
    ![add-Association-example-2](assets/add-association-example-2.png)
 
    Argomento e binding aggiornati
 
-   Toccate **[!UICONTROL Fine]** per salvare l’argomento.
+   Toccate **[!UICONTROL Fine]** per salvare l&#39;argomento.
 
-1. Toccate **[!UICONTROL Fine]** per salvare l&#39;associazione, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Toccare **[!UICONTROL Done]** per salvare l&#39;associazione, quindi **[!UICONTROL Save]** per salvare il modello dati del modulo.
 1. Ripetere i passaggi per creare ulteriori associazioni come necessario.
 
 >[!NOTE]
 >
 >L&#39;associazione aggiunta viene visualizzata nella casella dell&#39;oggetto modello dati con il titolo specificato e una linea che collega gli oggetti del modello dati associati.
 >
->Per modificare un&#39;associazione, selezionate la casella di controllo e toccate **[!UICONTROL Modifica associazione]**.
+>Per modificare un&#39;associazione, seleziona la casella di controllo e tocca **[!UICONTROL Modifica associazione]**.
 
 ![associazione](assets/added-association.png)
 
@@ -291,7 +291,7 @@ Per aggiungere un&#39;associazione:
 Per modificare le proprietà:
 
 1. Selezionare la casella di controllo accanto a un oggetto del modello dati, a una proprietà o a un servizio nel modello dati del modulo.
-1. Toccate **[!UICONTROL Modifica proprietà]**. Viene visualizzato il riquadro **[!UICONTROL Modifica proprietà]** per l&#39;oggetto modello, la proprietà o il servizio selezionato.
+1. Toccate **[!UICONTROL Modifica proprietà]**. Viene aperto il riquadro **[!UICONTROL Edit Properties]** relativo all&#39;oggetto modello, alla proprietà o al servizio selezionato.
 
    * **Oggetto** del modello dati: Specificare i servizi di lettura e scrittura e gli argomenti di modifica.
    * **Proprietà**: Specificare il tipo, il sottotipo e il formato della proprietà. È inoltre possibile specificare se la proprietà selezionata è la chiave primaria per l&#39;oggetto modello dati.
@@ -301,16 +301,16 @@ Per modificare le proprietà:
 
    Finestra di dialogo Modifica proprietà per un servizio get
 
-1. Toccare **[!UICONTROL Fine]** per salvare le proprietà, quindi **[!UICONTROL Salva]** per salvare il modello dati del modulo.
+1. Toccare **[!UICONTROL Done]** per salvare le proprietà, quindi **[!UICONTROL Save]** per salvare il modello dati del modulo.
 
 ### Creare proprietà calcolate {#computed}
 
 Una proprietà calcolata è quella il cui valore viene calcolato in base a una regola o un&#39;espressione. Utilizzando una regola, è possibile impostare il valore di una proprietà calcolata su una stringa letterale, un numero, il risultato di un&#39;espressione matematica o il valore di un&#39;altra proprietà nel modello dati del modulo.
 
-Ad esempio, è possibile creare una proprietà calcolata **FullName** il cui valore è il risultato della concatenazione delle proprietà esistenti **FirstName** e **LastName** . A questo scopo:
+Ad esempio, è possibile creare una proprietà calcolata **FullName** il cui valore è il risultato della concatenazione delle proprietà **FirstName** e **LastName** esistenti. A questo scopo:
 
 1. Creare una nuova proprietà con il nome `FullName` il cui tipo di dati è String.
-1. Attivate **[!UICONTROL Calcolato]** e toccate **[!UICONTROL Fine]** per creare la proprietà.
+1. Selezionare **[!UICONTROL Computed]** e toccare **[!UICONTROL Done]** per creare la proprietà.
 
    ![calcolato](assets/computed.png)
 
@@ -318,14 +318,14 @@ Ad esempio, è possibile creare una proprietà calcolata **FullName** il cui val
 
    ![computed-prop](assets/computed-prop.png)
 
-1. Selezionate la proprietà FullName e toccate **[!UICONTROL Modifica regola]**. Si apre una finestra dell&#39;editor di regole.
-1. Nella finestra Editor regole, toccate **[!UICONTROL Crea]**. Viene visualizzata la finestra **[!UICONTROL Imposta regola valore]** .
+1. Selezionare la proprietà FullName e toccare **[!UICONTROL Modifica regola]**. Si apre una finestra dell&#39;editor di regole.
+1. Nella finestra dell&#39;editor delle regole, toccare **[!UICONTROL Crea]**. Viene visualizzata la finestra della regola **[!UICONTROL Imposta valore]**.
 
-   Dal menu a discesa Seleziona opzione, selezionate Espressione **** matematica. Altre opzioni disponibili sono Oggetto **[!UICONTROL modello dati]** modulo e **[!UICONTROL Stringa]**.
+   Dal menu a discesa Seleziona opzione, selezionare **[!UICONTROL Espressione matematica]**. Altre opzioni disponibili sono **[!UICONTROL Oggetto modello dati modulo]** e **[!UICONTROL String]**.
 
-1. Nell&#39;espressione matematica, selezionare **[!UICONTROL FirstName]** e **[!UICONTROL LastName]** rispettivamente nel primo e nel secondo oggetto. Selezionare **[!UICONTROL più]** come operatore.
+1. Nell&#39;espressione matematica, selezionare **[!UICONTROL FirstName]** e **[!UICONTROL LastName]** rispettivamente nel primo e nel secondo oggetto. Selezionare **[!UICONTROL plus]** come operatore.
 
-   Toccate **[!UICONTROL Fine]** e quindi **[!UICONTROL Chiudi]** per chiudere la finestra dell&#39;editor di regole. La regola ha un aspetto simile al seguente.
+   Toccate **[!UICONTROL Fine]**, quindi toccate **[!UICONTROL Chiudi]** per chiudere la finestra dell&#39;editor di regole. La regola ha un aspetto simile al seguente.
 
    ![regola](assets/rule.png)
 
@@ -333,9 +333,9 @@ Ad esempio, è possibile creare una proprietà calcolata **FullName** il cui val
 
 ## Operazioni con le proprietà di navigazione dei servizi OData {#work-with-navigation-properties-of-odata-services}
 
-Nei servizi OData, le proprietà di navigazione vengono utilizzate per definire le associazioni tra due oggetti modello dati. Tali proprietà sono definite in un tipo di entità o in un tipo complesso. Ad esempio, nel seguente estratto dal file di metadati dei servizi di esempio di [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData, l&#39;entità persona contiene tre proprietà di navigazione: Amici, Migliori amici e Viaggi.
+Nei servizi OData, le proprietà di navigazione vengono utilizzate per definire le associazioni tra due oggetti modello dati. Tali proprietà sono definite in un tipo di entità o in un tipo complesso. Ad esempio, nel seguente estratto dal file di metadati dei servizi di esempio [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData di esempio, l&#39;entità persona contiene tre proprietà di navigazione: Amici, Migliori amici e Viaggi.
 
-Per ulteriori informazioni sulle proprietà di navigazione, consulta la documentazione [](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536)OData.
+Per ulteriori informazioni sulle proprietà di navigazione, vedere la [documentazione di OData](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
 
 ```xml
 <edmx:Edmx xmlns:edmx="https://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
@@ -363,47 +363,47 @@ Per ulteriori informazioni sulle proprietà di navigazione, consulta la document
 </EntityType>
 ```
 
-Quando si configura un servizio OData in un modello dati modulo, tutte le proprietà di navigazione in un contenitore entità vengono rese disponibili tramite un servizio nel modello dati modulo. In questo esempio di servizio TripPin OData, le tre proprietà di navigazione nel contenitore `Person` entità possono essere lette utilizzando un `GET LINK` servizio nel modello dati modulo.
+Quando si configura un servizio OData in un modello dati modulo, tutte le proprietà di navigazione in un contenitore entità vengono rese disponibili tramite un servizio nel modello dati modulo. In questo esempio di servizio TripPin OData, le tre proprietà di navigazione nel contenitore di entità `Person` possono essere lette utilizzando un servizio `GET LINK` nel modello dati modulo.
 
-Di seguito viene evidenziato il `GET LINK of Person /People` servizio nel modello dati modulo, che è un servizio combinato per le tre proprietà di navigazione nell&#39; `Person` entità del servizio TripPin OData.
+Di seguito viene evidenziato il servizio `GET LINK of Person /People` nel modello dati modulo, che è un servizio combinato per le tre proprietà di navigazione nell&#39;entità `Person` del servizio TripPin OData.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Dopo aver aggiunto il `GET LINK` servizio alla scheda Servizi nel modello dati modulo, è possibile modificare le proprietà per scegliere l&#39;oggetto modello di output e la proprietà di navigazione da utilizzare nel servizio. Ad esempio, il seguente `GET LINK of Person /People` servizio nell&#39;esempio seguente utilizza Trip come oggetto modello di output e la proprietà di navigazione come Trips.
+Dopo aver aggiunto il servizio `GET LINK` alla scheda Servizi nel modello dati modulo, è possibile modificare le proprietà per scegliere l&#39;oggetto modello di output e la proprietà di navigazione da utilizzare nel servizio. Ad esempio, il seguente servizio `GET LINK of Person /People` nell&#39;esempio seguente utilizza Trip come oggetto modello di output e la proprietà di navigazione come Trips.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
 >[!NOTE]
 >
->I valori disponibili nel campo Valore **** predefinito dell&#39;argomento **NavigationPropertyName** dipendono dallo stato dell&#39;array **Return?** pulsante di attivazione/disattivazione. Quando è attivato, mostra le proprietà di navigazione del tipo Collection.
+>I valori disponibili nel campo **Valore predefinito** dell&#39;argomento **NavigationPropertyName** dipendono dallo stato dell&#39;array **Return?** pulsante di attivazione/disattivazione. Quando è attivato, mostra le proprietà di navigazione del tipo Collection.
 
-In questo esempio, è anche possibile scegliere l&#39;oggetto modello di output come argomento Persona e proprietà di navigazione come Amici o Migliore amico (a seconda se array **Return?** è abilitata o disabilitata).
+In questo esempio, è anche possibile scegliere l&#39;oggetto modello di output come argomento Persona e proprietà di navigazione come Amici o Migliore amico (a seconda se l&#39;array **Return?** è abilitata o disabilitata).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Allo stesso modo, è possibile scegliere un `GET LINK` servizio e configurarne le proprietà di navigazione quando si aggiungono associazioni nel modello dati modulo. Tuttavia, per poter selezionare una proprietà di navigazione, assicurarsi che il campo **** Binding a sia impostato su **Letterale**.
+Allo stesso modo, è possibile scegliere un servizio `GET LINK` e configurarne le proprietà di navigazione quando si aggiungono associazioni nel modello dati del modulo. Tuttavia, per poter selezionare una proprietà di navigazione, assicurarsi che il campo **[!UICONTROL Binding a]** sia impostato su **Letterale**.
 
 ![add-Association-nav-prop](assets/add-association-nav-prop.png)
 
-## Generazione e modifica di dati di esempio {#sample}
+## Generazione e modifica dei dati di esempio {#sample}
 
 L&#39;editor dei modelli di dati modulo consente di generare dati di esempio per tutte le proprietà degli oggetti del modello di dati, incluse le proprietà calcolate, in un modello di dati del modulo. Si tratta di un insieme di valori casuali conformi al tipo di dati configurato per ciascuna proprietà. È inoltre possibile modificare e salvare i dati, che vengono conservati anche se si rigenerano i dati di esempio.
 
 Per generare e modificare dati di esempio, effettuate le seguenti operazioni:
 
-1. Aprire un modello dati del modulo e toccare **[!UICONTROL Modifica dati]** di esempio. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
+1. Aprire un modello dati modulo e toccare **[!UICONTROL Modifica dati di esempio]**. Genera e visualizza i dati di esempio nella finestra Modifica dati di esempio.
 
    ![Genera dati di esempio](assets/form_data_model_generate_sample_data_new.png)
 
-1. Nella finestra **[!UICONTROL Modifica dati]** di esempio, modificare i dati in base alle esigenze e toccare **[!UICONTROL Salva]**.
+1. Nella finestra **[!UICONTROL Edit Sample Data]** (Modifica dati campione), modificare i dati, come necessario, quindi toccare **[!UICONTROL Save]**.
 
-È quindi possibile utilizzare i dati di esempio per precompilare e testare le comunicazioni interattive basate sul modello di dati del modulo. Per ulteriori informazioni, vedere [Uso del modello](/help/forms/using/using-form-data-model.md)dati del modulo.
+È quindi possibile utilizzare i dati di esempio per precompilare e testare le comunicazioni interattive basate sul modello di dati del modulo. Per ulteriori informazioni, vedere [Uso del modello dati del modulo](/help/forms/using/using-form-data-model.md).
 
 ## Test di oggetti e servizi del modello dati {#test-data-model-objects-and-services}
 
 Il modello dati del modulo è configurato, ma prima di utilizzarlo, potrebbe essere necessario verificare se gli oggetti e i servizi del modello dati configurati funzionano come previsto. Per verificare gli oggetti e i servizi del modello dati:
 
-1. Selezionare un oggetto modello dati o un servizio nel modello dati del modulo e toccare, rispettivamente, Oggetto **[!UICONTROL modello di]** prova o Servizio **[!UICONTROL di]** prova.
+1. Selezionare un oggetto modello dati o un servizio nel modello dati del modulo e toccare, rispettivamente, **[!UICONTROL Oggetto modello di prova]** o **[!UICONTROL Servizio di prova]**.
 
    Viene visualizzata la finestra Modello dati modulo di prova.
 
@@ -419,7 +419,7 @@ Allo stesso modo, è possibile verificare altri oggetti e servizi del modello da
 
 ## Convalida automatizzata dei dati di input {#automated-validation-of-input-data}
 
-Il modello dati del modulo convalida i dati ricevuti come input durante la chiamata dell&#39;API DermisBridge (in base ai criteri di convalida disponibili nel modello dati del modulo). La convalida si basa sul `ValidationOptions` flag impostato nell&#39;oggetto query utilizzato per richiamare l&#39;API.
+Il modello dati del modulo convalida i dati ricevuti come input durante la chiamata dell&#39;API DermisBridge (in base ai criteri di convalida disponibili nel modello dati del modulo). La convalida si basa sul flag `ValidationOptions` impostato nell&#39;oggetto query utilizzato per richiamare l&#39;API.
 
 Il flag può essere impostato su uno dei seguenti valori:
 
@@ -427,9 +427,9 @@ Il flag può essere impostato su uno dei seguenti valori:
 * **OFF**: Nessuna convalida
 * **BASE**: FDM esegue la convalida in base ai vincoli &quot;obbligatori&quot; e &quot;nullable&quot;
 
-Se non viene impostato alcun valore per il `ValidationOptions`flag, ai dati di input viene eseguita la convalida **BASIC** .
+Se non viene impostato alcun valore per il flag `ValidationOptions`viene eseguita la convalida **BASIC** sui dati di input.
 
-Di seguito è riportato un esempio di impostazione del flag di convalida su **FULL**:
+Esempio di impostazione del flag di convalida su **FULL**:
 
 ```java
 operationOptions.setValidationOptions(ValidationOptions.FULL);
@@ -438,7 +438,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 >[!NOTE]
 >
 >Il valore fornito per un attributo nei dati di input deve corrispondere al tipo di dati definito per l&#39;attributo nel documento di metadati.\
->Se il valore non corrisponde al tipo di dati definito per l&#39;attributo, l&#39;API DermisBridge visualizza un&#39;eccezione indipendentemente dal valore del `ValidationOptions` flag. Se il livello di registro è impostato su Debug, viene registrato un errore nel file **error.log** .
+>Se il valore non corrisponde al tipo di dati definito per l&#39;attributo, l&#39;API DermisBridge visualizza un&#39;eccezione indipendentemente dal valore del flag `ValidationOptions`. Se il livello di registro è impostato su Debug, viene registrato un errore nel file **error.log**.
 
 Il modello dati del modulo convalida i dati di input in base a un elenco di vincoli relativi al tipo di dati. L&#39;elenco di vincoli per i dati di input può variare in base all&#39;origine dati.
 
@@ -541,7 +541,7 @@ In questo esempio, i dati di input vengono convalidati in base ai vincoli massim
    ]
 ```
 
-Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log** . Esempio,
+Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log**. Esempio,
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
@@ -549,4 +549,4 @@ Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&
 
 ## Passaggi successivi {#next-steps}
 
-È disponibile un modello dati modulo di lavoro che è ora pronto per essere utilizzato nei moduli adattivi e nei flussi di lavoro di comunicazione interattiva. Per ulteriori informazioni, vedere [Uso del modello](/help/forms/using/using-form-data-model.md)dati del modulo.
+È disponibile un modello dati modulo di lavoro che è ora pronto per essere utilizzato nei moduli adattivi e nei flussi di lavoro di comunicazione interattiva. Per ulteriori informazioni, vedere [Uso del modello dati del modulo](/help/forms/using/using-form-data-model.md).
