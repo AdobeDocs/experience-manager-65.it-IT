@@ -1,6 +1,6 @@
 ---
-title: Data Modeling - Modello di David Nuescheler
-seo-title: Data Modeling - Modello di David Nuescheler
+title: Modellazione dei dati - Modello di David Nuescheler
+seo-title: Modellazione dei dati - Modello di David Nuescheler
 description: Raccomandazioni di David Nuescheler sulla modellazione dei contenuti
 seo-description: Raccomandazioni di David Nuescheler sulla modellazione dei contenuti
 uuid: acb27e81-9143-4e0d-a37a-ba26491a841f
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 0%
 
 ---
 
 
-# Data Modeling - Modello di David Nuescheler{#data-modeling-david-nuescheler-s-model}
+# Modellazione dei dati - Modello di David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Origine {#source}
 
 I seguenti dettagli sono idee e commenti espressi da David Nuescheler.
 
-David è stato co-fondatore e CTO of Day Software AG, uno dei principali fornitori di software per la gestione dei contenuti e l&#39;infrastruttura a livello globale, richiesto da Adobe nel 2010. È ora membro e vicepresidente della tecnologia Enterprise di Adobe e guida lo sviluppo di JSR-170, l&#39;API (Application Programming Interface) Java Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
+David è stato co-fondatore e CTO of Day Software AG, uno dei principali fornitori di software globali per la gestione dei contenuti e l&#39;infrastruttura dei contenuti, richiesto  Adobe nel 2010. È ora membro e vicepresidente di Enterprise Technology  Adobe e guida lo sviluppo di JSR-170, l&#39;API (Application Programming Interface) Java Content Repository (JCR), lo standard tecnologico per la gestione dei contenuti.
 
-Ulteriori aggiornamenti sono disponibili su [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Ulteriori aggiornamenti sono disponibili anche su [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Introduzione da David {#introduction-from-david}
 
@@ -57,7 +60,7 @@ Ulteriori vincoli relativi ai dati, come i vincoli obbligatori o di tipo e di va
 
 #### Esempio {#example-1}
 
-L&#39;esempio precedente relativo all&#39;utilizzo di una proprietà `lastModified` Date, ad esempio nel nodo &quot;post di blog&quot;, non significa in realtà che sia necessario un tipo di nodo speciale. Utilizzerei sicuramente `nt:unstructured` per i miei nodi post di blog almeno inizialmente. Dal momento che nella mia applicazione di blog tutto ciò che farò è mostrare la data dell&#39;ultima modifica comunque (forse &quot;ordine entro&quot;) mi importa a malapena se è un Data. Dato che mi fido implicitamente della mia applicazione di scrittura di blog per inserire una &quot;data&quot; comunque, non c&#39;è davvero bisogno di dichiarare la presenza di una data nella forma di un nodetype. `lastModified`
+L&#39;esempio precedente relativo all&#39;utilizzo di una proprietà `lastModified` Date, ad esempio il nodo &quot;post blog&quot;, non significa in realtà che sia necessario un tipo di nodo speciale. Utilizzerei sicuramente `nt:unstructured` per i nodi post del mio blog almeno inizialmente. Dal momento che nella mia applicazione di blog tutto ciò che farò è mostrare la data dell&#39;ultima modifica comunque (forse &quot;ordine entro&quot;) mi importa a malapena se è un Data. Dato che mi fido implicitamente della mia applicazione di scrittura di blog per inserire una &quot;data&quot; comunque, non c&#39;è davvero bisogno di dichiarare la presenza di una data `lastModified` nella forma di un nodetype.
 
 ### Regola n. 2: Guidare la gerarchia dei contenuti, non lasciarla accadere. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -73,9 +76,9 @@ Personalmente preferisco le convenzioni gerarchiche rispetto al sistema di digit
 
 >[!CAUTION]
 >
->Anche la struttura di un archivio dei contenuti può influire sulle prestazioni. Per ottenere prestazioni ottimali, il numero di nodi secondari associati a singoli nodi in un archivio dei contenuti non deve in genere superare 1000.
+>Anche la struttura di un archivio dei contenuti può avere un impatto sulle prestazioni. Per ottenere prestazioni ottimali, il numero di nodi secondari associati a singoli nodi in un archivio dei contenuti non deve in genere superare 1000.
 >
->Vedere [Quanti dati è in grado di gestire il CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) per ulteriori informazioni.
+>Vedere [Quanti dati è in grado di gestire CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) per ulteriori informazioni.
 
 #### Esempio {#example-2}
 
@@ -101,7 +104,7 @@ Utilizzando il modello di contenuto sopra riportato, posso facilmente consentire
 
 #### Spiegazione {#explanation-3}
 
-Se non si utilizzano `clone()`, `merge()` o `update()` metodi nell&#39;applicazione è probabile che un&#39;unica area di lavoro sia la strada giusta.
+Se non si utilizzano i metodi `clone()`, `merge()` o `update()` nell&#39;applicazione, è probabile che un&#39;unica area di lavoro sia la strada da seguire.
 
 &quot;nodi corrispondenti&quot; è un concetto definito nella specifica JCR. Essenzialmente, si riduce a nodi che rappresentano lo stesso contenuto, in diverse aree di lavoro.
 
@@ -166,7 +169,7 @@ Personalmente mi assicuro di utilizzare sempre i riferimenti solo quando non rie
 
 Supponiamo di consentire &quot;riferimenti&quot; da un documento (a) a un altro documento (b). Se faccio un modello di questa relazione utilizzando le proprietà di riferimento, ciò significa che i due documenti sono collegati a livello di repository. Non è possibile esportare/importare documenti (a) singolarmente, poiché la destinazione della proprietà di riferimento potrebbe non esistere. Vengono interessate anche altre operazioni quali unione, aggiornamento, ripristino o duplicazione.
 
-Quindi potrei modellare questi riferimenti come &quot;riferimenti deboli&quot; (in JCR v1.0 questo sostanzialmente si riduce a proprietà stringa che contengono l&#39;uuid del nodo di destinazione) o semplicemente utilizzare un percorso. A volte il percorso è più significativo per iniziare.
+Quindi potrei modellare questi riferimenti come &quot;riferimenti deboli&quot; (in JCR v1.0 questo sostanzialmente si riduce a proprietà stringa che contengono l&#39;uuid del nodo di destinazione) o semplicemente utilizzare un percorso. A volte il percorso è più significativo da iniziare.
 
 Penso che ci siano casi d&#39;uso in cui un sistema non può realmente funzionare se un riferimento è penzolante, ma non riesco a trovare un buon esempio &quot;reale&quot; ma semplice dalla mia esperienza diretta.
 
@@ -174,13 +177,13 @@ Penso che ci siano casi d&#39;uso in cui un sistema non può realmente funzionar
 
 #### Spiegazione {#explanation-6}
 
-Se un modello di contenuto espone qualcosa che ha anche un *odore* remoto come un file o una cartella che cerco di utilizzare (o estendere da) `nt:file`, `nt:folder` e `nt:resource`.
+Se un modello di contenuto espone qualcosa che ha un odore anche remoto *come un file o una cartella che cerco di utilizzare (o estendere da) `nt:file`, `nt:folder` e `nt:resource`.*
 
 Nella mia esperienza molte applicazioni generiche consentono l&#39;interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se sono arricchiti con ulteriori metadati. Ad esempio, un&#39;interazione diretta con le implementazioni del file server come CIFS o WebDAV che si trovano sopra JCR diventa implicita.
 
-Credo che, come buona regola, si possa usare quanto segue: Se dovete memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una corrispondenza molto buona. Se si possono avere più &quot;file&quot;, un nt:folder è un buon punto in cui memorizzarli.
+Credo che, come buona regola del pollice, si possa usare quanto segue: Se è necessario memorizzare il nome del file e il tipo mime, `nt:file`/ `nt:resource` è una corrispondenza molto buona. Se si possono avere più &quot;file&quot;, un nt:folder è un buon punto in cui memorizzarli.
 
-Se è necessario aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendere `nt:resource` non la `nt:file`. Estendo raramente nt:file e frequentemente `nt:resource`.
+Se è necessario aggiungere metadati alla risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendere `nt:resource` non la `nt:file`. Estendo raramente nt:file e estendendo frequentemente `nt:resource`.
 
 #### Esempio {#example-6}
 
@@ -206,13 +209,13 @@ Anche se ci sono sicuramente buoni casi d&#39;uso per utilizzare solo una propri
 
 Nei database relazionali gli ID sono un mezzo necessario per esprimere le relazioni, in modo che le persone tendono ad utilizzarli anche nei modelli di contenuto. Principalmente per le ragioni sbagliate.
 
-Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quot;, probabilmente non state utilizzando correttamente la gerarchia.
+Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quot;, probabilmente non state sfruttando correttamente la gerarchia.
 
 È vero che alcuni nodi necessitano di un&#39;identificazione stabile durante tutto il loro ciclo di vita. Molto meno di quanto potresti pensare. mix:referenceable fornisce un meccanismo di questo tipo integrato nel repository, quindi non c&#39;è davvero bisogno di trovare un modo aggiuntivo per identificare un nodo in modo stabile.
 
 Tenete anche presente che gli elementi possono essere identificati per percorso, e tanto più che &quot;symlinks&quot; ha senso per la maggior parte degli utenti che non i collegamenti diretti in un file system unix, un percorso ha senso per la maggior parte delle applicazioni fare riferimento a un nodo di destinazione.
 
-Ma soprattutto, è **mix**:referenceable, il che significa che può essere applicato a un nodo nel momento in cui è effettivamente necessario farvi riferimento.
+Inoltre, è **mix**:referenceable, il che significa che può essere applicato a un nodo nel momento in cui è effettivamente necessario farvi riferimento.
 
 Diciamo che solo perché si desidera poter fare riferimento potenzialmente a un nodo di tipo &quot;Documento&quot; non significa che il tipo di nodo &quot;Documento&quot; deve estendersi da mix:referenceable in modo statico, in quanto può essere aggiunto a qualsiasi istanza del &quot;Documento&quot; in modo dinamico.
 
