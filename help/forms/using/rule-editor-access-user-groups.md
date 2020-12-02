@@ -24,16 +24,16 @@ ht-degree: 1%
 
 Potete avere diversi tipi di utenti con competenze diverse che funzionano con Forms adattivo. Anche se gli utenti esperti possono avere la conoscenza necessaria per lavorare con script e regole complesse, potrebbero essere presenti utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
 
- AEM Forms consente di limitare l&#39;accesso all&#39;editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione Forms adattivo, potete specificare i gruppi [di](/help/sites-administering/security.md) utenti che possono visualizzare e accedere all&#39;editor delle regole.
+ AEM Forms consente di limitare l&#39;accesso all&#39;editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione Forms adattivo, potete specificare i [gruppi di utenti](/help/sites-administering/security.md) che possono visualizzare e accedere all&#39;editor delle regole.
 
 ## Specificare i gruppi di utenti che possono accedere all&#39;editor delle regole {#specify-user-groups-that-can-access-rule-editor}
 
 1. Accedete a  AEM Forms come amministratore.
-1. Nell’istanza di authoring, fate clic su ![](assets/adobeexperiencemanager.png)adobeexperience emanagerExperience Manager  Adobe > ![martello](assets/hammer.png) Strumenti > Operazioni > Console Web. La console Web si apre in una nuova finestra.
+1. Nell&#39;istanza di authoring, fare clic su ![adobeexperience emanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![martello](assets/hammer.png) > Operazioni > Console Web. La console Web si apre in una nuova finestra.
 
    ![1-2](assets/1-2.png)
 
-1. Nella finestra Console Web, individuare e fare clic su Servizio **di configurazione modulo** adattivo. **Viene visualizzata la finestra di dialogo del servizio** di configurazione del modulo adattivo. Non modificate alcun valore e fate clic su **Salva**.
+1. Nella finestra Console Web, individuare e fare clic su **Servizio configurazione modulo adattivo**. **Viene visualizzata** la finestra di dialogo Servizio configurazione modulo adattivo. Non modificare alcun valore e fare clic su **Salva**.
 
    Crea un file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-repository.
 
@@ -48,7 +48,7 @@ Potete avere diversi tipi di utenti con competenze diverse che funzionano con Fo
 
    ![Crea utente](assets/create_user_new.png)
 
-   Ora, quando un utente che non fa parte di un gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l’icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile per l’utente nella barra degli strumenti dei componenti:
+   Ora, quando un utente che non fa parte di un gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l&#39;icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile per l&#39;utente nella barra degli strumenti dei componenti:
 
    ![componentstoolbarwith](assets/componentstoolbarwithre.png)
 
@@ -58,5 +58,5 @@ Potete avere diversi tipi di utenti con competenze diverse che funzionano con Fo
 
    Barra degli strumenti dei componenti visibile a un utente senza accesso all&#39;editor di regole
 
-   Per istruzioni su come aggiungere utenti ai gruppi, consultate Amministrazione [utente e sicurezza](/help/sites-administering/security.md).
+   Per istruzioni sull&#39;aggiunta di utenti ai gruppi, consultate [Amministrazione utente e sicurezza](/help/sites-administering/security.md).
 
