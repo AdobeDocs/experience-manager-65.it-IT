@@ -27,46 +27,46 @@ ht-degree: 0%
 
 ## Abilita salvataggio automatico per un modulo adattivo {#enable-autosave-for-an-adaptive-form}
 
-Per un modulo adattivo, l&#39;opzione di salvataggio automatico non è abilitata. È possibile abilitare l&#39;opzione di salvataggio automatico dalla sezione Salvataggio **** automatico nelle proprietà di un modulo adattivo. La sezione Salvataggio **** automatico offre anche diverse altre opzioni di configurazione. Per attivare e configurare l’opzione di salvataggio automatico per un modulo adattivo, effettuate le seguenti operazioni:
+Per un modulo adattivo, l&#39;opzione di salvataggio automatico non è abilitata. È possibile abilitare l&#39;opzione di salvataggio automatico dalla sezione **Salvataggio automatico** nelle proprietà di un modulo adattivo. La sezione **Salvataggio automatico** offre anche diverse altre opzioni di configurazione. Per attivare e configurare l’opzione di salvataggio automatico per un modulo adattivo, effettuate le seguenti operazioni:
 
-1. Per accedere alla sezione di salvataggio automatico nelle proprietà, selezionare un componente, quindi toccare il livello ![del](assets/field-level.png) campo > Contenitore **[!UICONTROL modulo]** adattivo, quindi toccare ![cmppr](assets/cmppr.png).
-1. Nella sezione Salvataggio **** automatico, **[!UICONTROL selezionate]** l’opzione di salvataggio automatico.
-1. Nella casella Evento **[!UICONTROL modulo]** adattivo, specificare 1 o TRUE per avviare automaticamente il salvataggio del modulo quando il modulo viene caricato nel browser. È inoltre possibile specificare un&#39;espressione condizionale per un evento che, quando viene attivato e restituisce true, inizia a salvare il contenuto del modulo.
+1. Per accedere alla sezione di salvataggio automatico nelle proprietà, selezionare un componente, quindi toccare ![livello campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]**, quindi toccare ![cmppr](assets/cmppr.png).
+1. Nella sezione **[!UICONTROL Salvataggio automatico]**, **[!UICONTROL Abilitare]** l&#39;opzione di salvataggio automatico.
+1. Nella casella **[!UICONTROL Evento modulo adattivo]**, specificare 1 o TRUE per avviare automaticamente il salvataggio del modulo quando il modulo viene caricato nel browser. È inoltre possibile specificare un&#39;espressione condizionale per un evento che, quando viene attivato e restituisce true, inizia a salvare il contenuto del modulo.
 1. Specifica l&#39;attivatore. Il salvataggio automatico viene attivato in base alla configurazione in uso. Le opzioni disponibili sono:
 
-   * **[!UICONTROL Basato su ora:]** Selezionate l’opzione per iniziare a salvare il contenuto in base a un intervallo di tempo specifico.
-   * **[!UICONTROL Basato sull&#39;evento:]** Selezionate l&#39;opzione per iniziare a salvare il contenuto in base all&#39;attivazione di un evento.
+   * **[!UICONTROL Base temporale:]** selezionare l&#39;opzione per iniziare a salvare il contenuto in base a un intervallo di tempo specifico.
+   * **[!UICONTROL Basato su evento:]** selezionare l&#39;opzione per avviare il salvataggio del contenuto in base all&#39;attivazione di un evento.
 
    Quando selezionate un attivatore, la casella Configurazione strategia è abilitata. La finestra Configurazione strategia consente di:
 
-   * Specificate un intervallo di tempo se selezionate l&#39;attivatore **[!UICONTROL basato su]** tempo.
-   * Specificate un nome evento se selezionate l&#39;attivatore basato sull **[!UICONTROL &#39;]** evento.
+   * Specificare un intervallo di tempo se si seleziona il trigger **[!UICONTROL Time based]**.
+   * Specificate un nome evento se selezionate l&#39;attivatore **[!UICONTROL basato sull&#39;evento]**.
 
    Potete anche creare e aggiungere all&#39;elenco una strategia personalizzata. Per informazioni dettagliate, vedere [Implementazione di una strategia personalizzata per l&#39;salvataggio automatico dei moduli](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Solo salvataggio automatico basato su tempo) Effettuate le seguenti operazioni per configurare le opzioni per l&#39;salvataggio automatico basato su tempo.
 
-   1. Nella casella **[!UICONTROL Salvataggio automatico in questo intervallo]** , specificare l’intervallo di tempo in secondi. Il modulo viene salvato ripetutamente dopo la scadenza del numero di secondi specificato nella casella di intervallo.
+   1. Nella casella **[!UICONTROL Salvataggio automatico su questo intervallo]**, specificare l&#39;intervallo di tempo in secondi. Il modulo viene salvato ripetutamente dopo la scadenza del numero di secondi specificato nella casella di intervallo.
 
 1. (Solo salvataggio automatico basato su eventi) Effettuate le seguenti operazioni per configurare le opzioni per il salvataggio automatico basato su eventi.
 
-   1. Nella casella **Salvataggio automatico dopo l&#39;evento** , specificate un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) . Il modulo viene salvato ogni volta che l&#39;espressione restituisce TRUE.
+   1. Nella casella **Salvataggio automatico dopo questo evento**, specificare un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l&#39;espressione restituisce TRUE.
 
-1. (Facoltativo) Per salvare automaticamente il contenuto per gli utenti anonimi, selezionate l’opzione **Abilita salvataggio automatico per utenti** anonimi e fate clic su **[!UICONTROL OK]**.
+1. (Facoltativo) Per salvare automaticamente il contenuto per gli utenti anonimi, selezionare l&#39;opzione **Abilita salvataggio automatico per utenti anonimi**, quindi fare clic su **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Affinché l&#39;opzione di salvataggio automatico funzioni correttamente per gli utenti anonimi, è necessario configurare Forms Common Configuration Service in modo da consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
+   >Affinché l&#39;opzione di salvataggio automatico funzioni correttamente per gli utenti anonimi, è necessario configurare il servizio di configurazione comune di Forms in modo da consentire a tutti gli utenti di visualizzare in anteprima, verificare e firmare i moduli.
    >
-   >Per configurare il servizio, andate alla configurazione della console Web di AEM in `https://server:port/system/console/configMgr` e modificate il servizio **[!UICONTROL di configurazione comune]** Forms per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvate la configurazione.
+   >Per configurare il servizio, andate AEM configurazione della console Web in `https://server:port/system/console/configMgr` e modificate il **[!UICONTROL servizio di configurazione comune Forms]** per scegliere l&#39;opzione **[!UICONTROL Tutti gli utenti]** nel campo **[!UICONTROL Consenti]** e salvate la configurazione.
 
-## Implementare una strategia personalizzata per abilitare l&#39;salvataggio automatico per i moduli adattivi {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
+## Implementare una strategia personalizzata per abilitare il salvataggio automatico per i moduli adattivi {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 
 Potete implementare un evento personalizzato per attivare la funzionalità di salvataggio automatico. Per creare e implementare l&#39;evento personalizzato, effettuate le seguenti operazioni:
 
-1. Creare cartelle libreria client e libreria client. Per i passaggi dettagliati, consultate il documento [Utilizzo delle librerie lato client](/help/sites-developing/clientlibs.md).
+1. Creare cartelle libreria client e libreria client. Per i passaggi dettagliati, vedere il documento [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
 
-   Ad esempio, lo script seguente utilizza l&#39; `emailFocusChange`evento personalizzato per attivare la funzionalità di salvataggio automatico:
+   Ad esempio, lo script seguente utilizza l&#39;evento `emailFocusChange`personalizzato per attivare la funzionalità di salvataggio automatico:
 
    ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
@@ -85,7 +85,7 @@ Potete implementare un evento personalizzato per attivare la funzionalità di sa
 
 1. Aprite il modulo adattivo in modalità di creazione.
 
-1. In modalità di modifica, selezionare un componente, quindi toccare il livello ![](assets/field-level.png) campo > Contenitore **[!UICONTROL modulo]** adattivo, quindi toccare ![cmppr](assets/cmppr.png).
-1. Nelle proprietà, aprire la sezione **[!UICONTROL Base]** . Nella casella Categoria **[!UICONTROL libreria]** client, immettere il valore della proprietà category definita durante la creazione delle cartelle libreria client.
-1. Aprite la sezione Salvataggio automatico. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** , specificate un evento personalizzato già definito nella libreria client. Fai clic su **[!UICONTROL OK]**.
+1. In modalità di modifica, selezionate un componente, quindi toccate ![livello campo](assets/field-level.png) > **[!UICONTROL Contenitore modulo adattivo]**, quindi toccate ![cmppr](assets/cmppr.png).
+1. Nelle proprietà, aprire la sezione **[!UICONTROL Base]**. Nella casella **[!UICONTROL Categoria libreria client]**, immettere il valore della proprietà category definita durante la creazione delle cartelle libreria client.
+1. Aprite la sezione Salvataggio automatico. Nella casella **[!UICONTROL Salvataggio automatico dopo questo evento]**, specificate un evento personalizzato già definito nella libreria client. Fai clic su **[!UICONTROL OK]**.
 
