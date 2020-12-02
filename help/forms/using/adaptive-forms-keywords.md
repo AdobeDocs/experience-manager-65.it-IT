@@ -9,11 +9,14 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 15%
 
 ---
 
 
-# Parole chiave moduli adattivi {#adaptive-forms-keywords}
+# Parole chiave per moduli adattivi {#adaptive-forms-keywords}
 
 Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati che hanno un significato speciale per i moduli adattivi. Non è possibile utilizzare queste parole chiave come identificatori nei moduli adattivi. Nella tabella seguente sono elencate tutte le parole chiave che sono identificatori riservati per i moduli adattivi.
 
@@ -97,7 +100,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
   <tr>
    <td><p>editPictureClause</p> </td>
    <td><p>xsdRef</p> </td>
-   <td><p>nome</p> </td>
+   <td><p>name</p> </td>
   </tr>
   <tr>
    <td><p>mandatory</p> </td>
@@ -225,7 +228,7 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>repeatPanelPath</p> </td>
+   <td><p>ripetablePanelPath</p> </td>
    <td><p>getItemIdentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>
@@ -237,4 +240,4 @@ Le parole chiave dei moduli adattivi sono identificatori predefiniti e riservati
  </tbody>
 </table>
 
-Oltre alle parole chiave elencate sopra, evitare di utilizzare nomi simili alle API JavaScript dei moduli [adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Oltre alle parole chiave elencate sopra, evitare di utilizzare nomi simili a [moduli adattivi API JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
