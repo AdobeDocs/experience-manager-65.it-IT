@@ -19,7 +19,7 @@ ht-degree: 4%
 ---
 
 
-# Analisi con fornitori esterni {#analytics-with-external-providers}
+# Analytics con provider esterni {#analytics-with-external-providers}
 
 Analytics può fornire informazioni importanti e interessanti su come viene utilizzato il sito Web.
 
@@ -28,13 +28,13 @@ Sono disponibili diverse configurazioni pronte all&#39;uso per l&#39;integrazion
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Puoi anche configurare la tua istanza di Snippet di analisi **generici** per definire una nuova configurazione del servizio.
+Puoi anche configurare la tua istanza di **Snippet di analisi generici** per definire una nuova configurazione del servizio.
 
 Le informazioni vengono quindi raccolte tramite piccoli frammenti di codice aggiunti alle pagine Web. Esempio:
 
 >[!CAUTION]
 >
->Gli script non devono essere racchiusi tra `script` tag.
+>Gli script non devono essere racchiusi tra tag `script`.
 
 ```
 var _gaq = _gaq || [];
@@ -57,19 +57,19 @@ Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dat
 
 >[!CAUTION]
 >
->Il sito dimostrativo Geometrixx-esterno è configurato in modo che gli attributi forniti in Proprietà pagina vengano aggiunti al codice sorgente HTML (appena sopra il `</html>` tag endtag) nello `js` script corrispondente.
+>Il sito dimostrativo Geometrixx-esterno è configurato in modo che gli attributi forniti in Proprietà pagina vengano aggiunti al codice sorgente HTML (appena sopra il tag `</html>`) nello script `js` corrispondente.
 >
->Se `/apps` non si eredita dal componente pagina predefinito ( `/libs/foundation/components/page`), è necessario assicurarsi che gli `js` script corrispondenti siano inclusi, ad esempio includendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizzando un meccanismo simile.
+>Se il proprio `/apps` non eredita dal componente di pagina predefinito ( `/libs/foundation/components/page`), è necessario assicurarsi che gli script `js` corrispondenti siano inclusi, ad esempio includendo `cq/cloudserviceconfigs/components/servicescomponents` o utilizzando un meccanismo simile.
 >
 >Senza questo, nessuno dei servizi (Generico, Analytics, Target, ecc.) funzionerà.
 
-## Creazione di un nuovo servizio con uno snippet generico {#creating-a-new-service-with-a-generic-snippet}
+## Creazione di un nuovo servizio con un snippet generico {#creating-a-new-service-with-a-generic-snippet}
 
 Per la configurazione di base:
 
-1. Open the **Tools** console.
-1. Nel riquadro a sinistra, espandete Configurazioni **per** Cloud Services.
-1. Fate doppio clic su Snippet di analisi **generici** per aprire la pagina:
+1. Aprire la console **Strumenti**.
+1. Dal riquadro a sinistra espandere **Configurazioni Cloud Services**.
+1. Fate doppio clic su **Snippet di analisi generica** per aprire la pagina:
 
    ![](assets/analytics_genericoverview.png)
 
@@ -77,24 +77,24 @@ Per la configurazione di base:
 
    ![](assets/analytics_addconfig.png)
 
-1. Fate clic su **Crea**, la finestra di dialogo degli snippet si aprirà immediatamente. Incollate lo snippet JavaScript appropriato nel campo:
+1. Fare clic su **Crea**, la finestra di dialogo degli snippet si aprirà immediatamente e incollare lo snippet javascript appropriato nel campo:
 
    ![](assets/analytics_snippet.png)
 
 1. Fate clic su **OK** per salvare. 
 
-## Utilizzo del nuovo servizio sulle pagine {#using-your-new-service-on-pages}
+## Utilizzo del nuovo servizio nelle pagine {#using-your-new-service-on-pages}
 
 Dopo aver creato la configurazione del servizio è ora necessario configurare le pagine necessarie per utilizzarla:
 
 1. Passate alla pagina.
-1. Aprite Proprietà **** pagina dalla barra laterale, quindi dalla scheda **Cloud Services** .
-1. Fate clic su **Aggiungi servizio**, quindi selezionate il servizio richiesto; ad esempio, lo snippet di analisi **generico**:
+1. Aprite la scheda **Proprietà pagina** dalla barra laterale, quindi la scheda **Cloud Services**.
+1. Fare clic su **Aggiungi servizio**, quindi selezionare il servizio richiesto; ad esempio, il **Snippet di analisi generico**:
 
    ![](assets/analytics_selectservice.png)
 
 1. Fate clic su **OK** per salvare. 
-1. Viene nuovamente visualizzata la scheda **Cloud Services** . Lo snippet di analisi **generico** è ora elencato con il messaggio `Configuration reference missing`. Utilizzate l&#39;elenco a discesa per selezionare la vostra istanza di servizio specifica; ad esempio google-analytics:
+1. Verrà nuovamente visualizzata la scheda **Cloud Services**. Il **snippet di analisi generico** è ora elencato con il messaggio `Configuration reference missing`. Utilizzate l&#39;elenco a discesa per selezionare la vostra istanza di servizio specifica; ad esempio google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
