@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Community Group Essentials  {#community-group-essentials}
+# Elementi fondamentali del gruppo community {#community-group-essentials}
 
 La funzione per i gruppi della community è la possibilità per una sottocomunità di essere creata in modo dinamico all&#39;interno di un sito della community da utenti autorizzati dagli ambienti di pubblicazione e authoring.
 
-A partire dal [](deploy-communities.md#latestfeaturepack)feature pack 1 di Communities, è possibile che i gruppi siano nidificati all&#39;interno di altri gruppi
+A partire da Communities [feature pack 1](deploy-communities.md#latestfeaturepack), è possibile che i gruppi siano nidificati all&#39;interno di altri gruppi
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -48,7 +48,7 @@ A partire dal [](deploy-communities.md#latestfeaturepack)feature pack 1 di Commu
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Consulta Gruppo <a href="creating-groups.md">community</a></td>
+   <td>Vedere <a href="creating-groups.md">Gruppo community</a></td>
   </tr>
  </tbody>
 </table>
@@ -86,17 +86,17 @@ A partire dal [](deploy-communities.md#latestfeaturepack)feature pack 1 di Commu
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Funzione Groups {#groups-function}
+### Funzione dei gruppi {#groups-function}
 
-Una struttura del sito della community che include una funzione [](functions.md#groups-function) Gruppi supporterà la creazione di nuovi `community groups` dagli ambienti di pubblicazione e di authoring. Il gruppo community creato includerà un `community groups member list` componente che elenca i membri del gruppo.
+Una struttura del sito della community che include una funzione [Groups](functions.md#groups-function) supporterà la creazione di nuove `community groups` dagli ambienti di pubblicazione e authoring. Il gruppo di community creato includerà un componente `community groups member list` che elenca i membri del gruppo.
 
-Uno o più modelli [di gruppo di](tools-groups.md)community, che forniscono la progettazione delle pagine di gruppo community, possono essere configurati per la funzione Groups quando la funzione viene aggiunta a un modello [di sito](sites.md) community o nidificata all&#39;interno di un modello di gruppo community.
+È possibile configurare uno o più [modelli di gruppo community](tools-groups.md), che forniscono la progettazione delle pagine di gruppo community, per la funzione Groups quando la funzione viene aggiunta a un [modello di sito community](sites.md) o nidificata all&#39;interno di un modello di gruppo community.
 
-L&#39;inclusione di più modelli di gruppi di community comporta la presentazione di una scelta del progetto all&#39;utente autorizzato al momento della creazione di un nuovo gruppo di community per il sito della community, come illustrato nella sezione sui gruppi [di](creating-groups.md) community per gli autori.
+L&#39;inclusione di più modelli di gruppo community comporta la presentazione di una scelta di progettazione all&#39;utente autorizzato al momento della creazione di un nuovo gruppo community per il sito community, come illustrato nella sezione relativa ai [gruppi community](creating-groups.md) per gli autori.
 
 ### Gruppi nidificati {#nested-groups}
 
-Nel [FP1](deploy-communities.md#latestfeaturepack)di Communities è possibile includere una funzione Gruppi all&#39;interno di un modello di gruppo, consentendo così l&#39;inclusione di gruppi nidificati (sub-community).
+Per quanto riguarda Community [FP1](deploy-communities.md#latestfeaturepack), è possibile includere una funzione Gruppi in un modello di gruppo, consentendo così l&#39;inclusione di gruppi nidificati (sub community).
 
 Quando un sito o un modello di gruppo community include la funzione Groups, è possibile:
 
@@ -104,7 +104,7 @@ Quando un sito o un modello di gruppo community include la funzione Groups, è p
 
 * Create un gruppo nell’ambiente di pubblicazione, se configurato per consentirlo.
 
-Quando create un gruppo nell’ambiente di authoring, è necessario prima pubblicare il sito della community, quindi pubblicare il gruppo. La pubblicazione del sito della community consente di pubblicare le pagine del gruppo, senza creare i gruppi membri della sottocomunità ai quali sono impostati gli ACL. Pertanto, un gruppo con restrizioni (segreto) può essere visibile finché il gruppo non viene pubblicato in modo esplicito.
+Quando create un gruppo nell’ambiente di authoring, è necessario prima pubblicare il sito della community, quindi pubblicarlo. La pubblicazione del sito della community consente di pubblicare le pagine del gruppo, senza creare i gruppi membri della sottocomunità ai quali sono impostati gli ACL. Pertanto, un gruppo con restrizioni (segreto) può essere visibile finché il gruppo non viene pubblicato in modo esplicito.
 
 ## Collegamenti e informazioni correlate {#links-and-related-information}
 
