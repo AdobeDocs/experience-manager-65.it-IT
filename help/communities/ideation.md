@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 4%
 
 ---
 
 
-# Idee Essenziali {#ideation-essentials}
+# Idee Essentials {#ideation-essentials}
 
 Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzione ideazione, che è simile a un forum, ma con la possibilità di salvare come bozza e un tocco più collaborativo.
 
@@ -33,7 +36,7 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.Voting<br /> cq.social.hbs.like<br /> cq.social.hbs.ideation</td>
+   <td>cq.social.hbs.publication<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -45,7 +48,7 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consultate Funzione <a href="ideation-feature.md">Ideazione</a></td>
+   <td>Vedere <a href="ideation-feature.md">Ideazione Feature</a></td>
   </tr>
  </tbody>
 </table>
@@ -54,4 +57,4 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
 
 ### Funzione ideazione {#ideation-function}
 
-Una struttura del sito community che include la funzione [Ideazione](functions.md#ideation-function), include un `ideation` componente configurato.
+Una struttura del sito community che include la [funzione Ideazione](functions.md#ideation-function), include un componente `ideation` configurato.
