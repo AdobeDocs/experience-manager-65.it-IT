@@ -1,8 +1,8 @@
 ---
 title: Suggerimenti sulla codifica
 seo-title: Suggerimenti sulla codifica
-description: Suggerimenti per la codifica per AEM
-seo-description: Suggerimenti per la codifica per AEM
+description: Suggerimenti per la codifica dei AEM
+seo-description: Suggerimenti per la codifica dei AEM
 uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,29 +11,32 @@ topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
 
-# Suggerimenti sulla codifica{#coding-tips}
+# Suggerimenti per la codifica{#coding-tips}
 
 ## Usare il più possibile taglibs o HTL {#use-taglibs-or-htl-as-much-as-possible}
 
 L&#39;inclusione di script in JSP rende difficile il debug dei problemi nel codice. Inoltre, includendo gli script in JSP, è difficile separare la logica aziendale dal livello di visualizzazione, che è una violazione del principio di responsabilità singola e del modello di progettazione MVC.
 
-### Scrivere codice leggibile {#write-readable-code}
+### Codice leggibile in scrittura {#write-readable-code}
 
 Il codice viene scritto una volta, ma letto più volte. Trascorrere un po &#39;di tempo in avanti per pulire il codice che scriviamo pagherà i dividendi lungo la strada come noi e altri sviluppatori hanno bisogno di leggerlo più tardi.
 
-### Scegliere i nomi che rivelano le intenzioni {#choose-intention-revealing-names}
+### Scegliere i nomi di rivelazione delle intenzioni {#choose-intention-revealing-names}
 
 Idealmente, un altro programmatore non dovrebbe dover aprire un modulo per capire cosa fa. Allo stesso modo, dovrebbero essere in grado di capire cosa fa un metodo senza leggerlo. Meglio possiamo abbonarci a queste idee, più facile sarà leggere il nostro codice e più velocemente saremo in grado di scrivere e cambiare il nostro codice.
 
-Nella base di codice di AEM vengono utilizzate le seguenti convenzioni:
+Nella base di codici AEM sono utilizzate le seguenti convenzioni:
 
 
-* Viene denominata un&#39;unica implementazione di un&#39;interfaccia `<Interface>Impl`, ovvero `ReaderImpl`.
-* Vengono denominate `<Variant><Interface>`più implementazioni di un&#39;interfaccia, ad esempio `JcrReader` e `FileSystemReader`.
+* Un&#39;unica implementazione di un&#39;interfaccia è denominata `<Interface>Impl`, ovvero `ReaderImpl`.
+* Più implementazioni di un&#39;interfaccia sono denominate `<Variant><Interface>`, ovvero `JcrReader` e `FileSystemReader`.
 * Le classi di base astratte sono denominate `Abstract<Interface>` o `Abstract<Variant><Interface>`.
 * I pacchetti sono denominati `com.adobe.product.module`.  Ogni manufatto Maven o bundle OSGi deve avere un proprio pacchetto.
 * Le implementazioni Java vengono inserite in un pacchetto impl sotto la relativa API.
@@ -60,13 +63,13 @@ Idealmente, i nomi dovrebbero rivelare le loro intenzioni. Un test comune del co
  </tbody>
 </table>
 
-### Non ripeterti {#don-t-repeat-yourself}
+### Non ripetere {#don-t-repeat-yourself}
 
 DRY afferma che lo stesso set di codici non deve mai essere duplicato. Questo vale anche per cose come i letterali stringa. La duplicazione del codice apre la porta a difetti ogni volta che qualcosa deve cambiare e deve essere ricercato ed eliminato.
 
-### Evitare regole CSS non utilizzate {#avoid-naked-css-rules}
+### Evitare regole CSS nude {#avoid-naked-css-rules}
 
-Le regole CSS devono essere specifiche per l&#39;elemento di destinazione nel contesto dell&#39;applicazione. Ad esempio, una regola CSS applicata a *.content.center* sarebbe troppo ampia e potrebbe potenzialmente avere un impatto su un sacco di contenuto nel sistema, richiedendo ad altri di ignorare questo stile in futuro. *.myapp-centertext* sarebbe una regola più specifica in quanto specifica *il testo* centrato nel contesto dell&#39;applicazione.
+Le regole CSS devono essere specifiche per l&#39;elemento di destinazione nel contesto dell&#39;applicazione. Ad esempio, una regola CSS applicata a *.content.center* sarebbe troppo ampia e potrebbe potenzialmente avere un impatto su un sacco di contenuto nel sistema, richiedendo ad altri di ignorare questo stile in futuro. *.myapp-* centertextè una regola più specifica in quanto specifica il  ** testo centrato nel contesto dell&#39;applicazione.
 
 ### Eliminazione dell&#39;utilizzo di API obsolete {#eliminate-usage-of-deprecated-apis}
 
@@ -78,18 +81,18 @@ Le stringhe che non vengono fornite da un autore devono essere racchiuse in una 
 
 ### Escape resource path for security {#escape-resource-paths-for-safety}
 
-Mentre i percorsi nel JCR non devono contenere spazi, la loro presenza non deve causare l&#39;interruzione del codice. Jackrabbit fornisce una classe di utilità Text con metodi *escape()* e *escapePath()* . Per i JSP, l&#39;interfaccia Granite espone una funzione EL ** granite:encodeURIPath().
+Mentre i percorsi nel JCR non devono contenere spazi, la loro presenza non deve causare l&#39;interruzione del codice. Jackrabbit fornisce una classe di utilità Testo con i metodi *escape()* e *escapePath()*. Per i JSP, l&#39;interfaccia Granite espone una funzione *granite:encodeURIPath() EL*.
 
 ### Utilizzate l&#39;API XSS e/o l&#39;HTL per proteggere dagli attacchi di script tra siti {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM fornisce un’API XSS per cancellare facilmente i parametri e garantire la sicurezza dagli attacchi di script tra siti. Inoltre, HTL ha queste protezioni integrate direttamente nel linguaggio di modellazione. Un foglio di supporto API è disponibile per il download in [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
+AEM fornisce un&#39;API XSS per pulire facilmente i parametri e garantire la sicurezza dagli attacchi di script tra siti. Inoltre, HTL ha queste protezioni integrate direttamente nel linguaggio di modellazione. Un foglio di supporto API è disponibile per il download all&#39;indirizzo [Sviluppo - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Implementare la registrazione appropriata {#implement-appropriate-logging}
 
-Per il codice Java, AEM supporta slf4j come API standard per la registrazione dei messaggi e deve essere utilizzato insieme alle configurazioni rese disponibili tramite la console OSGi per garantire la coerenza dell’amministrazione. Slf4j espone cinque diversi livelli di registrazione. Per scegliere quale livello registrare un messaggio, consigliamo di utilizzare le seguenti linee guida:
+Per il codice Java, AEM supporta slf4j come API standard per la registrazione dei messaggi e dovrebbe essere utilizzato insieme alle configurazioni rese disponibili tramite la console OSGi per garantire la coerenza dell&#39;amministrazione. Slf4j espone cinque diversi livelli di registrazione. Per scegliere quale livello registrare un messaggio, consigliamo di utilizzare le seguenti linee guida:
 
 * ERRORE: Quando un elemento è danneggiato nel codice e l&#39;elaborazione non può continuare. Ciò si verificherà spesso a seguito di un&#39;eccezione imprevista. In genere è utile includere tracce di stack in questi scenari.
-* AVVISO: Quando qualcosa non funziona correttamente, ma l&#39;elaborazione può continuare. Spesso questo è il risultato di un&#39;eccezione prevista, ad esempio un&#39;eccezione *PathNotFoundException*.
+* AVVISO: Quando qualcosa non funziona correttamente, ma l&#39;elaborazione può continuare. Spesso questo è il risultato di un&#39;eccezione prevista, ad esempio *PathNotFoundException*.
 * INFORMAZIONI: Informazioni utili per il monitoraggio di un sistema. Tieni presente che questa è l&#39;impostazione predefinita e che la maggior parte dei clienti lascerà tale impostazione agli ambienti. Pertanto, non utilizzarla eccessivamente.
 * DEBUG: Informazioni di livello inferiore sull&#39;elaborazione. Utile quando si esegue il debug di un problema con il supporto.
 * TRACE: Le informazioni di livello più basso, ad esempio i metodi di immissione/uscita. In genere questo viene utilizzato solo dagli sviluppatori.
