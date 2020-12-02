@@ -18,38 +18,38 @@ ht-degree: 1%
 ---
 
 
-# Configurazione delle notifiche e-mail{#configuring-email-notification}
+# Configurazione di Email Notification{#configuring-email-notification}
 
 AEM invia notifiche e-mail agli utenti che:
 
-* Hanno effettuato la sottoscrizione a eventi di pagina, ad esempio modifiche o replica. La sezione Inbox [](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) notifica descrive come effettuare la sottoscrizione a tali eventi.
+* Hanno effettuato la sottoscrizione a eventi di pagina, ad esempio modifiche o replica. La sezione [Inbox notifica](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) descrive come effettuare la sottoscrizione a tali eventi.
 
 * Hanno effettuato la sottoscrizione agli eventi forum.
-* Eseguire un passaggio in un flusso di lavoro. La sezione Passaggio [](/help/sites-developing/workflows-step-ref.md#participant-step) partecipante descrive come attivare la notifica e-mail in un flusso di lavoro.
+* Eseguire un passaggio in un flusso di lavoro. La sezione [Passo partecipante](/help/sites-developing/workflows-step-ref.md#participant-step) descrive come attivare la notifica e-mail in un flusso di lavoro.
 
 Prerequisiti:
 
 * Gli utenti devono avere un indirizzo e-mail valido definito nel suo profilo.
-* Il servizio **di posta** Day CQ deve essere configurato correttamente.
+* Il **Day CQ Mail Service** deve essere configurato correttamente.
 
 Quando un utente riceve una notifica, riceve un messaggio e-mail nella lingua definita nel suo profilo. Ogni lingua ha un proprio modello che può essere personalizzato. È possibile aggiungere nuovi modelli di e-mail per le nuove lingue.
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>Quando lavorate con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per ulteriori informazioni e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 ## Configurazione di Mail Service {#configuring-the-mail-service}
 
-Per AEM poter inviare e-mail, è necessario configurare correttamente il servizio **di posta** Day CQ Mail. Potete visualizzare la configurazione nella console Web. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+Per AEM poter inviare e-mail, è necessario configurare correttamente il **Day CQ Mail Service**. Potete visualizzare la configurazione nella console Web. Quando lavorate con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per ulteriori informazioni e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Si applicano i seguenti vincoli:
 
-* La porta **del server** SMTP deve essere 25 o superiore.
+* La **porta del server SMTP** deve essere uguale o superiore a 25.
 
-* Il nome **host del server** SMTP non deve essere vuoto.
-* L&#39;indirizzo **** &quot;Da&quot; non deve essere vuoto.
+* Il nome host del server **SMTP** non deve essere vuoto.
+* L&#39;indirizzo **&quot;From&quot;** non deve essere vuoto.
 
-Per risolvere un problema con il servizio **** Day CQ Mail, è possibile controllare i registri del servizio:
+Per risolvere un problema con il servizio **Day CQ Mail Service**, è possibile controllare i registri del servizio:
 
 `com.day.cq.mailer.DefaultMailService`
 
@@ -59,33 +59,33 @@ Nella console Web, la configurazione è la seguente:
 
 ## Configurazione del canale di notifica e-mail {#configuring-the-email-notification-channel}
 
-Quando vi iscrivete alle notifiche degli eventi di pagina o forum, l’indirizzo e-mail è impostato su `no-reply@acme.com` per impostazione predefinita. Potete modificare questo valore configurando il servizio Canale **e-mail di** notifica nella console Web.
+Quando vi iscrivete alle notifiche degli eventi di pagina o forum, l’indirizzo e-mail è impostato su `no-reply@acme.com` per impostazione predefinita. Puoi modificare questo valore configurando il servizio **Canale e-mail di notifica** nella console Web.
 
-Per configurare l’indirizzo e-mail, aggiungete un `sling:OsgiConfig` nodo alla directory archivio. Utilizzare la procedura seguente per aggiungere il nodo direttamente utilizzando CRXDE Lite:
+Per configurare l&#39;indirizzo e-mail, aggiungere un nodo `sling:OsgiConfig` alla directory archivio. Utilizzare la procedura seguente per aggiungere il nodo direttamente utilizzando CRXDE Lite:
 
 1. In CRXDE Lite, aggiungete una cartella denominata `config` sotto la cartella dell’applicazione.
 1. Nella cartella di configurazione, aggiungete un nodo denominato:
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` di tipo `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` di tipo  `sling:OsgiConfig`
 
-1. Aggiungere una `String` proprietà al nodo denominato `email.from`. Per il valore, specificate l&#39;indirizzo e-mail che desiderate utilizzare.
+1. Aggiungete una proprietà `String` al nodo denominato `email.from`. Per il valore, specificate l&#39;indirizzo e-mail che desiderate utilizzare.
 
-1. Fate clic su **Salva tutto**.
+1. Fare clic su **Salva tutto**.
 
 Utilizzate la procedura seguente per definire il nodo nelle cartelle di origine del pacchetto di contenuto:
 
-1. Create un file `jcr_root/apps/*app_name*/config folder`denominato `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. In `jcr_root/apps/*app_name*/config folder`, create un file denominato `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Aggiungete il seguente codice XML per rappresentare il nodo:
 
    `<?xml version="1.0" encoding="UTF-8"?> <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig" email.from="name@server.com"/>`
-1. Sostituite il valore dell’ `email.from` attributo ( `name@server.com`) con l’indirizzo e-mail.
+1. Sostituite il valore dell&#39;attributo `email.from` ( `name@server.com`) con l&#39;indirizzo e-mail.
 
 1. Salvate il file.
 
 ## Configurazione del servizio di notifica e-mail flusso di lavoro {#configuring-the-workflow-email-notification-service}
 
-Quando ricevete notifiche e-mail dal flusso di lavoro, sia l’indirizzo e-mail che il prefisso dell’URL dell’host vengono impostati sui valori predefiniti. Potete modificare questi valori configurando il servizio **** di notifica e-mail giorno CQ Workflow nella console Web. In questo caso, si consiglia di mantenere la modifica nella directory archivio.
+Quando ricevete notifiche e-mail dal flusso di lavoro, sia l’indirizzo e-mail che il prefisso dell’URL dell’host vengono impostati sui valori predefiniti. Potete modificare questi valori configurando il **Day CQ Workflow Notification Service** nella console Web. In questo caso, si consiglia di mantenere la modifica nella directory archivio.
 
 Nella console Web la configurazione predefinita è la seguente:
 
@@ -145,7 +145,7 @@ Dove &lt;text_x> può essere un mix di testo statico e variabili di stringa dina
 * `${userId}`, l&#39;ID dell&#39;utente che ha attivato l&#39;evento.
 * `${modifications}`, descrive il tipo di evento pagina e il percorso della pagina nel formato:
 
-   &lt;tipo evento pagina> => &lt;percorso pagina>
+   &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
 
    Esempio:
 
@@ -194,7 +194,7 @@ Il modello deve avere il formato seguente:
  footer=<text_4>
 ```
 
-Dove `<text_x>` possono essere combinati testo statico e variabili di stringa dinamiche.
+Dove `<text_x>` può essere un mix di testo statico e variabili stringa dinamiche.
 
 Le seguenti variabili possono essere utilizzate nel modello e-mail per le notifiche del forum:
 
@@ -251,11 +251,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Dove `<text_x>` possono essere combinati testo statico e variabili di stringa dinamiche. Ogni riga di un `<text_x>` elemento deve essere terminata con una barra rovesciata ( `\`), fatta eccezione per l&#39;ultima istanza, quando l&#39;assenza della barra rovesciata indica la fine della variabile della `<text_x>` stringa.
+>Dove `<text_x>` può essere un mix di testo statico e variabili stringa dinamiche. Ogni riga di un elemento `<text_x>` deve essere terminata con una barra rovesciata ( `\`), fatta eccezione per l&#39;ultima istanza, quando l&#39;assenza della barra rovesciata indica la fine della variabile di stringa `<text_x>`.
 >
->Ulteriori informazioni sul formato del modello sono reperibili nei [javadocs del metodo Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) .
+>Ulteriori informazioni sul formato del modello sono disponibili in [javadocs del metodo Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-Il metodo `${payload.path.open}` rivela il percorso del payload dell&#39;elemento di lavoro. Ad esempio, per una pagina in Sites `payload.path.open` sarà simile a `/bin/wcmcommand?cmd=open&path=…`.; senza il nome del server, motivo per cui il modello precede con `${host.prefix}`.
+Il metodo `${payload.path.open}` rivela il percorso del payload dell&#39;elemento di lavoro. Ad esempio, per una pagina in Sites, `payload.path.open` sarà simile a `/bin/wcmcommand?cmd=open&path=…`.; senza il nome del server, motivo per cui il modello prepende questo con `${host.prefix}`.
 
 Le seguenti variabili possono essere utilizzate nel modello e-mail:
 
@@ -291,7 +291,7 @@ Le seguenti variabili possono essere utilizzate nel modello e-mail:
 
 Per aggiungere un modello per una nuova lingua:
 
-1. In CRXDE, aggiungete un file `<language-code>.txt` di seguito:
+1. In CRXDE, aggiungete un file `<language-code>.txt` sotto:
 
    * `/etc/notification/email/default/com.day.cq.wcm.core.page` : per le notifiche di pagina
    * `/etc/notification/email/default/com.day.cq.collab.forum` : per le notifiche forum
@@ -302,13 +302,13 @@ Per aggiungere un modello per una nuova lingua:
 
 >[!NOTE]
 >
->Il nome `<language-code>` utilizzato come nome file per il modello e-mail deve essere un codice della lingua minuscola a due lettere riconosciuto da AEM. Per i codici lingua, AEM si basa su ISO-639-1.
+>Il `<language-code>` utilizzato come nome file per il modello e-mail deve essere un codice della lingua minuscola a due lettere riconosciuto da AEM. Per i codici lingua, AEM si basa su ISO-639-1.
 
 ## Configurazione  notifiche e-mail AEM Assets {#assetsconfig}
 
 Quando le raccolte in  AEM Assets vengono condivise o non condivise, gli utenti possono ricevere notifiche e-mail da AEM. Per configurare le notifiche e-mail, effettuate le seguenti operazioni.
 
-1. Configurate il servizio e-mail, come descritto in precedenza in [Configurazione del servizio](/help/sites-administering/notification.md#configuring-the-mail-service)e-mail.
-1. Accedete a AEM come amministratore. Fate clic su **Strumenti** > **Operazioni** > Console **** Web per aprire Configurazione console Web.
-1. Modifica servlet **raccolta risorse CQ DAM** Day. Selezionate **Invia e-mail**. Fai clic su **Salva**.
+1. Configurate il servizio e-mail, come descritto sopra in [Configurazione del servizio e-mail](/help/sites-administering/notification.md#configuring-the-mail-service).
+1. Accedete a AEM come amministratore. Fare clic su **Strumenti** > **Operazioni** > **Console Web** per aprire Configurazione console Web.
+1. Modificare **Giorno CQ DAM Resource Collection Servlet**. Selezionare **Invia e-mail**. Fai clic su **Salva**.
 
