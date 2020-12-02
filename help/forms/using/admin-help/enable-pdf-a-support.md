@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
@@ -22,5 +25,5 @@ PDF Generator supporta la creazione di file conformi con PDF/A da file Microsoft
 1. Nella console di amministrazione, fare clic su Servizi > PDF Generator > Impostazioni tipo di file.
 1. Fate clic su Nuovo o selezionate un&#39;impostazione per il tipo di file esistente.
 1. Fare clic su Microsoft Excel, Microsoft PowerPoint o Microsoft Word, quindi selezionare Crea file conforme PDF/A-1a e salvare le modifiche.
-1. Nell&#39;applicazione nativa (come Microsoft Word), fare clic su Adobe PDF > Modifica impostazioni conversione, quindi selezionare PDF/A-1b.
+1. Nell&#39;applicazione nativa (come Microsoft Word), fare clic su  Adobe PDF > Modifica impostazioni conversione, quindi selezionare PDF/A-1b.
 
