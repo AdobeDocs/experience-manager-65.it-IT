@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# MSRP - Provider di risorse di storage MongoDB {#msrp-mongodb-storage-resource-provider}
+# MSRP - Provider risorse di storage MongoDB {#msrp-mongodb-storage-resource-provider}
 
 ## Informazioni su MSRP {#about-msrp}
 
 Quando  AEM Communities è configurato per utilizzare MSRP come store comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di creazione e pubblicazione senza la necessità di eseguire la sincronizzazione e la replica.
 
-Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics-of-srp-options) SRP e topologie [](topologies.md)consigliate.
+Vedere anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologie consigliate](topologies.md).
 
 ## Requisiti {#requirements}
 
@@ -32,7 +32,7 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
 
    * Versione 2.6 o successiva
    * Non è necessario configurare i logo o la condivisione
-   * Consiglia vivamente l&#39;utilizzo di un set di [replica](#mongoreplicaset)
+   * Consiglia vivamente l&#39;uso di un [set di repliche](#mongoreplicaset)
    * Può essere eseguito sullo stesso host AEM o in remoto
 
 * [Apache Solr](https://lucene.apache.org/solr/):
@@ -42,24 +42,24 @@ Vedere anche [Caratteristiche delle opzioni](working-with-srp.md#characteristics
    * Nessun servizio necessario
    * Scelta delle modalità di esecuzione:
       * Modalità indipendente
-      * [Modalità](solr.md#solrcloud-mode) SolrCloud (consigliato per gli ambienti di produzione)
+      * [Modalità](solr.md#solrcloud-mode)  SolrCloud (consigliato per ambienti di produzione)
    * Scelta della ricerca multilingue (MLS):
       * [Installazione di MLS standard](solr.md#installing-standard-mls)
       * [Installazione di MLS avanzate](solr.md#installing-advanced-mls)
 
-## MongoDB Configuration {#mongodb-configuration}
+## Configurazione MongoDB {#mongodb-configuration}
 
-### Select MSRP {#select-msrp}
+### Selezionare MSRP {#select-msrp}
 
-La console [Configurazione](srp-config.md) storage consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione di SRP da utilizzare.
+La [console di configurazione dell&#39;archivio](srp-config.md) consente di selezionare la configurazione di storage predefinita, che identifica l&#39;implementazione dell&#39;SRP da utilizzare.
 
 Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
-* Dalla navigazione globale, selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Configurazione **** archiviazione.
+* Dalla navigazione globale, selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > **[!UICONTROL Configurazione dell&#39;archiviazione]**.
 
 ![msrp](assets/msrp.png)
 
-* Select **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
+* Selezionare **[!UICONTROL Provider risorse di storage MongoDB (MSRP)]**
 * **[!UICONTROL Configurazione mongoDB]**
 
    * **[!UICONTROL URI di mongoDB]**
@@ -82,19 +82,21 @@ Per accedere alla console di configurazione dell&#39;archivio, all&#39;autore:
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host**
 
-      In modalità [SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper esterno, imposta questo valore su `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181*
+      In modalità [SolrCloud](solr.md#solrcloud-mode) con ZooKeeper esterno, imposta questo valore su `HOST:PORT` per ZooKeeper, ad esempio *my.server.com:2181*
 
-      Per un ensemble ZooKeeper, inserite `HOST:PORT` valori separati da virgole, ad esempio *host1:2181,host2:2181*
+      Per un Ensemble ZooKeeper, immettete valori separati da virgola `HOST:PORT`, ad esempio *host1:2181,host2:2181*
 
       Lasciate vuoto se eseguite Solr in modalità standalone utilizzando ZooKeeper interno.
-      *Predefinito*: *&lt;blank>*
+      *Predefinito*:  *&lt;blank>*
 
-      * **[!UICONTROL URL]**solare L’URL utilizzato per comunicare con Solr in modalità standalone.
+      * **[!UICONTROL Solr]**
+URLTl’URL utilizzato per comunicare con Solr in modalità standalone.
 Lasciate vuoto se eseguite in modalità SolrCloud.
 
          *Predefinito*: https://127.0.0.1:8983/solr/
 
-      * **[!UICONTROL Raccolta]**Solr Il nome della raccolta Solr.
+      * **[!UICONTROL Solr]**
+CollectionIl nome della raccolta Solr.
 
          *Predefinito*: collection1
 
@@ -102,17 +104,17 @@ Lasciate vuoto se eseguite in modalità SolrCloud.
 
 >[!NOTE]
 >
->Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di [nodi o gli archivi](../../help/sites-deploying/data-store-config.md)di dati (binari). Vedere anche [Elementi di storage in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>Il database mongoDB, che per impostazione predefinita corrisponde al nome `communities`, non deve essere impostato sul nome di un database utilizzato per gli archivi di nodi o i punti di memorizzazione di dati [binari](../../help/sites-deploying/data-store-config.md). Vedere anche [Elementi di storage in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### Set di replica MongoDB {#mongodb-replica-set}
 
 Per l&#39;ambiente di produzione, si consiglia vivamente di impostare un set di repliche, un cluster di server MongoDB che implementa la replica primaria secondaria e il failover automatizzato.
 
-Per ulteriori informazioni sui set di repliche, consultare la documentazione [Replica](https://docs.mongodb.org/manual/replication/) di MongoDB.
+Per ulteriori informazioni sui set di repliche, consultare la documentazione di MongoDB [Replication](https://docs.mongodb.org/manual/replication/).
 
-Per utilizzare i set di repliche e definire le connessioni tra le applicazioni e le istanze MongoDB, consultare la documentazione relativa al formato [URI della stringa di](https://docs.mongodb.org/manual/reference/connection-string/) connessione di MongoDB.
+Per utilizzare i set di repliche e definire le connessioni tra le applicazioni e le istanze MongoDB, consultare la documentazione di MongoDB [Connection String URI Format](https://docs.mongodb.org/manual/reference/connection-string/).
 
-#### Url di esempio per la connessione a un set di replica  {#example-url-for-connecting-to-a-replica-set}
+#### Url di esempio per la connessione a un set di replica {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -128,19 +130,20 @@ Un&#39;installazione Solr può essere condivisa tra l&#39;archivio nodi (Oak) e 
 
 Se le raccolte Oak e MSRP vengono utilizzate intensamente, per motivi di prestazioni potrebbe essere installato un secondo Solr.
 
-Per gli ambienti di produzione, la modalità [](solr.md#solrcloud-mode) SolrCloud offre prestazioni migliori rispetto alla modalità standalone (una singola configurazione Solr locale).
+Per gli ambienti di produzione, la [modalità SolrCloud](solr.md#solrcloud-mode) offre prestazioni migliori rispetto alla modalità standalone (una singola configurazione Solr locale).
 
-Per informazioni dettagliate sulla configurazione, consultate Configurazione [Solr per SRP](solr.md).
+Per informazioni dettagliate sulla configurazione, vedere [Configurazione Solr per SRP](solr.md).
 
 ### Aggiornamento {#upgrading}
 
 Se si esegue l&#39;aggiornamento da una versione precedente configurata con MSRP, sarà necessario:
 
-1. Eseguire l&#39; [aggiornamento a  AEM Communities](upgrade.md)
+1. Eseguire l&#39;aggiornamento di [ AEM Communities](upgrade.md)
 1. Installare nuovi file di configurazione Solr
-   * Per MLS [standard](solr.md#installing-standard-mls)
-   * Per MLS [avanzati](solr.md#installing-advanced-mls)
-1. Reindicizzare la sezione MSRPSee [MSRP Reindex Tool](#msrp-reindex-tool)
+   * Per [MLS standard](solr.md#installing-standard-mls)
+   * Per [MLS avanzate](solr.md#installing-advanced-mls)
+1. Reindicizza MSRP
+Vedere la sezione [MSRP Reindex Tool](#msrp-reindex-tool)
 
 ## Pubblicazione della configurazione {#publishing-the-configuration}
 
@@ -149,19 +152,19 @@ MSRP deve essere identificato come store comune in tutte le istanze di creazione
 Per rendere disponibile la stessa configurazione nell’ambiente di pubblicazione, effettuate l’accesso all’istanza di creazione e seguite i passaggi seguenti:
 
 * Passare dal menu principale a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Replica]**.
-* Seleziona **[!UICONTROL Attiva albero]**
+* Selezionare **[!UICONTROL Attiva albero]**
 * **[!UICONTROL Percorso iniziale]**:
    * Passa a `/etc/socialconfig/srpc/`
-* Seleziona **[!UICONTROL attiva]**
+* Selezionare **[!UICONTROL Activate]**
 
 ## Gestione dei dati utente {#managing-user-data}
 
-Per informazioni sugli *utenti*, i profili ** utente e i gruppi *di* utenti, spesso inseriti nell’ambiente di pubblicazione, visita
+Per informazioni su *utenti*, *profili utente* e *gruppi di utenti*, spesso inseriti nell&#39;ambiente di pubblicazione, visita
 
 * [Sincronizzazione utente](sync.md)
 * [Gestione di utenti e gruppi di utenti](users.md)
 
-## Strumento Reindicizzazione MSRP {#msrp-reindex-tool}
+## Strumento di reindicizzazione MSRP {#msrp-reindex-tool}
 
 Esiste un endpoint HTTP per la reindicizzazione Solr per MSRP quando si installano nuovi file di configurazione o si ripara un indice Solr danneggiato.
 
@@ -186,25 +189,25 @@ Il formato di base è:
 
 cURL -u *signin* -d *data* *reindex-url*
 
-*signin* = administrator-id:passwordAd esempio: admin:admin
+*signin* = administrator-id:password Ad esempio: admin:admin
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
-*size* = quante voci UGC reindicizzare per operazione
+*size* = quante voci UGC reindicizzare per operazione 
 `/content/usergenerated/asi/mongo/`
 
 *path* = posizione radice della struttura ad albero di UGC da reindicizzare
 
-* Per reindicizzare tutti gli UGC, specificate il valore della `asipath`proprietà di
+* Per reindicizzare tutti gli UGC, specificate il valore della proprietà `asipath`di
    `/etc/socialconfig/srpc/defaultconfiguration`
-* Per limitare l’indice ad alcuni UGC, specificate una sottostruttura di `asipath`
+* Per limitare l&#39;indice ad alcuni UGC, specificate una sottostruttura di `asipath`
 
-*reindex-url* = l&#39;endpoint per la reindicizzazione di SRP
+*reindex-url* = l&#39;endpoint per la reindicizzazione di SRP 
 `http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
->Se state [reindicizzando DSRP Solr](dsrp.md), l’URL è **/services/social/datastore/rdb/reindex**
+>Se si dispone di [reindicizzazione DSRP Solr](dsrp.md), l&#39;URL è **/services/social/datastore/rdb/reindex**
 
 ### Esempio di reindicizzazione MSRP {#msrp-reindex-example}
 
@@ -214,7 +217,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 ## Come demo MSRP {#how-to-demo-msrp}
 
-Per impostare MSRP per un ambiente di dimostrazione o di sviluppo, vedere [Come impostare MongoDB per Demo](demo-mongo.md).
+Per impostare MSRP per un ambiente di dimostrazione o di sviluppo, vedere [HowTo Setup MongoDB for Demo](demo-mongo.md).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -222,28 +225,28 @@ Per impostare MSRP per un ambiente di dimostrazione o di sviluppo, vedere [Come 
 
 Verificate che MSRP sia stato configurato come provider predefinito, verificando la configurazione dell&#39;opzione di archiviazione. Per impostazione predefinita, il provider delle risorse di storage è JSRP.
 
-Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console [Configurazione](srp-config.md) archiviazione o controllate l&#39;archivio AEM:
+Per tutte le istanze di creazione e pubblicazione AEM, rivisitate la [console di configurazione dell&#39;archivio](srp-config.md) o verificate l&#39;archivio AEM:
 
 * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa che il provider di archiviazione è JSRP.
+   * Non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa che il provider di archiviazione è JSRP.
    * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito.
 
 ### UGC scompare dopo l&#39;aggiornamento {#ugc-disappears-after-upgrade}
 
-Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0  esistente, qualsiasi UGC preesistente deve essere convertito in modo da essere conforme alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a  AEM Communities 6.3.
+Se si esegue l&#39;aggiornamento da un sito AEM Communities 6.0 esistente , qualsiasi UGC preesistente deve essere convertito in modo da essere conforme alla struttura richiesta per l&#39;API [SRP](srp.md) dopo l&#39;aggiornamento a  AEM Communities 6.3.
 
 È disponibile uno strumento open source su GitHub per questo scopo:
 
-* [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [ AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 Lo strumento di migrazione può essere personalizzato per esportare UGC da versioni precedenti di AEM social community da importare in  AEM Communities 6.1 o versioni successive.
 
-### Errore - provider_id campo non definito {#error-undefined-field-provider-id}
+### Errore: provider_id campo non definito {#error-undefined-field-provider-id}
 
 Se nei registri viene visualizzato il seguente errore, significa che il file dello schema Solr non è configurato correttamente.
 
-#### JsonMappingException: field provider_id non definito {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException: provider_id campo non definito {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
@@ -253,7 +256,7 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-Per risolvere l&#39;errore, quando si seguono le istruzioni per l&#39; [installazione di MLS](solr.md#installing-standard-mls)standard, verificare quanto segue:
+Per risolvere l&#39;errore, quando si seguono le istruzioni per l&#39;installazione di [MLS standard](solr.md#installing-standard-mls), assicurarsi di:
 
 * I file di configurazione XML sono stati copiati nel percorso Solr corretto.
 * Solr è stato riavviato dopo che i nuovi file di configurazione hanno sostituito quelli esistenti.
