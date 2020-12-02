@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Il servizio informazioni di sistema fornisce un set di REST APIs per recuperare 
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[porta]'/rest/services/SystemInfo.properties`</p></td>
-   <td><p>Questa API è un wrapper per l'API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> . Recupera la configurazione dell'ambiente di lavoro corrente. </p></td>
+   <td><p>Questa API è un wrapper per l'API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Recupera la configurazione dell'ambiente di lavoro corrente. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -51,10 +54,10 @@ Il servizio informazioni di sistema fornisce un set di REST APIs per recuperare 
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://'[server]:[porta]'/rest/services/ SystemInfo.services</p></td>
-   <td><p>Recupera i parametri di stato e di configurazione dei servizi di moduli AEM.</p></td>
+   <td><p>Recupera i parametri di stato e di configurazione dei servizi AEM moduli.</p></td>
   </tr>
   <tr>
-   <td><p>SystemInfo.criticalDetails</p></td>
+   <td><p>SystemInfo.vitalDetails</p></td>
    <td><p>https://'[server]:[porta]'/rest/services/ SystemInfo.criticalDetails</p></td>
    <td><p>Recupera i tempi di attività del server, gli argomenti JVM, la memoria di sistema, la dimensione heap, il nome del sistema operativo, il numero di thread attivi e il numero di thread. </p></td>
   </tr>
@@ -85,7 +88,7 @@ Il servizio informazioni di sistema fornisce un set di REST APIs per recuperare 
   <tr>
    <td><p>SystemInfo.licenseInfo</p></td>
    <td><p>https://'[server]:[porta]'/rest/services/ SystemInfo.licenseInfo</p></td>
-   <td><p>Recupera le informazioni sulla versione e la licenza dei componenti AEM installati. </p></td>
+   <td><p>Recupera le informazioni sulla versione e sulla licenza dei componenti AEM moduli installati. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td>
