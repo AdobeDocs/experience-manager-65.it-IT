@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 5%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 I moduli HTML5 supportano la clausola XFA Picture per la visualizzazione di valori e valori formattati per data, testo e simboli numerici. Sono supportate le seguenti espressioni della clausola illustrazione:
 
-* category(locale){clausola-immagine}| category(locale){clausola illustrazione}| category(locale){clausola illustrazione}
+* category(locale){clausola-immagine} | category(locale){clausola illustrazione} | category(locale){clausola illustrazione}
 * category.subcategory{}
 
 >[!NOTE]
 >
->Al momento, Mobile Forms non supporta la clausola Edit Picture. Inoltre, i simboli delle clausole DateTime e Time Picture non sono supportati.
+>Attualmente, Mobile Forms non supporta la clausola Edit Picture. Inoltre, i simboli delle clausole DateTime e Time Picture non sono supportati.
 
 ## Simboli dei campi data supportati {#supported-date-field-symbols}
 
@@ -53,15 +56,15 @@ Espressione supportata per la clausola Date Picture:
   </tr>
   <tr>
    <td>DD</td>
-   <td>Zero-padded two digit (01-31) day of the month.<br /> </td>
+   <td>Giorno del mese di due cifre completato con zero (01-31).<br /> </td>
   </tr>
   <tr>
    <td>M</td>
-   <td>1- or 2-digit (1-12) month of the year.<br /> </td>
+   <td>Mese dell'anno di 1 o 2 cifre (1-12).<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
-   <td>Mese dell’anno di due cifre completato con zero (01-12).<br /> </td>
+   <td>Mese dell'anno di due cifre completato con zero (01-12).<br /> </td>
   </tr>
   <tr>
    <td>MMM</td>
@@ -73,11 +76,11 @@ Espressione supportata per la clausola Date Picture:
   </tr>
   <tr>
    <td>EEE</td>
-   <td>Nome abbreviato del giorno feriale delle impostazioni internazionali correnti<br /> </td>
+   <td>Nome abbreviato del giorno della settimana delle impostazioni internazionali correnti<br /> </td>
   </tr>
   <tr>
    <td>EEEE</td>
-   <td>Nome completo del giorno feriale delle impostazioni internazionali correnti<br /> </td>
+   <td>Nome completo del giorno della settimana della lingua corrente<br /> </td>
   </tr>
   <tr>
    <td>YY</td>
@@ -85,26 +88,26 @@ Espressione supportata per la clausola Date Picture:
   </tr>
   <tr>
    <td>YYYY</td>
-   <td>anno di 4 cifre<br /> </td>
+   <td>Anno di 4 cifre<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Clausola illustrazione numerica {#numeric-picture-clause}
 
-I moduli HTML5 supportano i simboli illustrazione numerica. Tuttavia, esiste una differenza nel supporto tra moduli PDF e moduli HTML.
+I moduli HTML5 supportano i simboli illustrazione numerica. Tuttavia, esiste una differenza nel supporto tra PDF forms e Forms HTML.
 
-Nei moduli **** PDF, viene formattato un numero indipendentemente dal numero di simboli presenti nella clausola Immagine
+In **PDF forms**, viene formattato un numero indipendentemente dal numero di simboli nella clausola Picture
 
 In **HTML Forms**, un numero è formattato solo se il numero ha cifre inferiori al numero di simboli nella clausola Immagine.
 
 **Esempio**: Considerare una clausola Picture: num{zzz,zzz,zz9}.
 
-Il numero **10000** è formattato come **10.000** sia nei moduli HTML che PDF.
+Il numero **10000** è formattato come **10.000** sia in HTML che in PDF forms.
 
-Il numero 1000000 è formattato come 1000.000 nei moduli PDF. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
+Il numero 1000000 è formattato come 10000000 in PDF forms. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
 
-Le espressioni supportate per la clausola Immagine numerica in **HTML Forms** sono:
+Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
 
 * num.integer{}
 * num.decimal{}
@@ -121,22 +124,22 @@ Le espressioni supportate per la clausola Immagine numerica in **HTML Forms** so
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formattazione</strong>output: una cifra singola. Oppure per la cifra zero se i dati di input sono vuoti o uno spazio nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione</strong> output: una cifra singola. Oppure per la cifra zero se i dati di input sono vuoti o uno spazio nella posizione corrispondente.<br /> </td>
    <td>Singola cifra</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>Formattazione</strong>output: una cifra singola. Oppure per uno spazio se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione</strong> output: una cifra singola. Oppure per uno spazio se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
    <td>Singola cifra o spazio</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Formattazione</strong>output: una cifra singola. Oppure nulla se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
+   <td><strong>Formattazione</strong> output: una cifra singola. Oppure nulla se i dati di input sono vuoti, uno spazio o la cifra zero nella posizione corrispondente.<br /> </td>
    <td>Singola cifra o niente</td>
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Formattazione</strong>output: la parte esponenziale di un numero a virgola mobile costituita dal simbolo esponenziale (E). Seguito dal segno più o meno facoltativo. Seguito dal valore esponenziale.<br /> </td>
+   <td><strong>Formattazione</strong> output: la parte esponenziale di un numero a virgola mobile costituita dal simbolo esponenziale (E). Seguito dal segno più o meno facoltativo. Seguito dal valore esponenziale.<br /> </td>
    <td>Come per la formattazione dell'output</td>
   </tr>
   <tr>
