@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Esercitazione: Creazione della prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
+# Esercitazione: Creare la prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
 
 Scopri come creare la tua prima comunicazione interattiva.
 
@@ -37,7 +37,7 @@ Al termine di questa esercitazione, potrete:
 * Creazione di una comunicazione interattiva
 * Test e pubblicazione di una comunicazione interattiva
 
-## Use case {#use-case}
+## Caso di utilizzo {#use-case}
 
 Il viaggio inizia con l&#39;apprendimento del caso d&#39;uso:
 
@@ -50,9 +50,9 @@ Un operatore di telecomunicazioni invia mensilmente ai clienti via e-mail. Il pr
 ## Prerequisiti {#prerequisites}
 
 * Configurate un’istanza AEM di creazione.
-* Installazione [componente aggiuntivo](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms nell’istanza di creazione
+* Installazione di [ componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di creazione
 * Configurare il database MYSQL
-* Ottenete il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell&#39;esercitazione si basano sul database MySQL e utilizzano il driver [di database Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html)MySQL JDBC.
+* Ottenete il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell&#39;esercitazione si basano sul database MySQL e utilizzano  driver di database Oracle [MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Passaggio 1: Pianificare la comunicazione interattiva {#step-plan-the-interactive-communication}
 
@@ -66,17 +66,17 @@ Per creare un&#39;anatomia per la comunicazione interattiva con le seguenti moda
 
 * Testo statico
 * Modello dati modulo
-* INTERFACCIA UTENTE agente
+* Interfaccia utente agente
 * Dati condizionali
 * Immagini
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
-## Step 2: Create form data model {#step-create-form-data-model}
+## Passaggio 2: Crea modello dati modulo {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modello dati del modulo consente di collegare una comunicazione interattiva a origini dati diverse. Ad esempio, AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità e servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare dati da origini dati connesse. Per ulteriori informazioni sul modello di dati del modulo, vedere [Integrazione](/help/forms/using/data-integration.md)dei dati AEM Forms.
+Un modello dati del modulo consente di collegare una comunicazione interattiva a origini dati diverse. Ad esempio, AEM profilo utente, servizi Web RESTful, servizi Web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità e servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare dati da origini dati connesse. Per ulteriori informazioni sul modello di dati del modulo, vedere [ Integrazione dei dati AEM Forms](/help/forms/using/data-integration.md).
 
 **Obiettivi:**
 
@@ -91,7 +91,7 @@ Un modello dati del modulo consente di collegare una comunicazione interattiva a
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
-## Passaggio 3: Creazione di frammenti di documento {#step-create-document-fragments}
+## Passaggio 3: Creare frammenti di documento {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -105,7 +105,7 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
-## Passaggio 4: Creare i modelli {#step-create-templates}
+## Passaggio 4: Creare modelli {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -142,7 +142,7 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: S
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## Passaggio 6: Test della comunicazione interattiva {#step-test-your-interactive-communication}
+## Passaggio 6: Verificare la comunicazione interattiva {#step-test-your-interactive-communication}
 
 ![11 test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
