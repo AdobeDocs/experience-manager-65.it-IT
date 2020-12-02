@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM&#39;app desktop consente di mappare l&#39;archivio delle risorse Adobe Experience Manager (AEM) e  file binari di AEM Forms in una directory di rete del sistema. Potete visualizzare le risorse sincronizzate e i file binari in un file Explorer e utilizzare diverse app per modificare i file come desiderate. Oltre a visualizzare i file, potete anche creare, caricare ed eliminare i file binari. È inoltre possibile aprire, modificare e salvare i file direttamente dal software. Ad esempio, è possibile aprire e modificare direttamente un file XDP da Designer. Le modifiche apportate localmente alle risorse si riflettono  archivio AEM Assets e  interfaccia utente di AEM Forms.
 
-Potete scaricare l&#39;app da un&#39;istanza AEM. Per informazioni dettagliate sul download dell&#39;app, consultate [AEM note](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html)sulla versione dell&#39;app desktop.
+Potete scaricare l&#39;app da un&#39;istanza AEM. Per informazioni dettagliate sul download dell&#39;app, consultate [AEM note sulla versione dell&#39;app desktop](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html).
 
 ##  risorse AEM Forms supportate nell&#39;app AEM desktop {#aem-forms-assets-supported-in-aem-desktop-app}
 
@@ -36,11 +36,11 @@ Potete scaricare l&#39;app da un&#39;istanza AEM. Per informazioni dettagliate s
 AEM&#39;app desktop utilizza il protocollo WebDAV su Microsoft Windows e SMB1 su Mac OS X per connettersi a un server AEM Forms .  server AEM Forms non è abilitato per la sincronizzazione di file binari e altre risorse con un client WebDAV o SMB. Effettuate le seguenti operazioni per attivare  AEM Forms per AEM app desktop:
 
 1. Accedete a  AEM Forms come amministratore.
-1. Nell’istanza di creazione, fate clic su ![adobeexperienceemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Strumenti]** ![martello](assets/hammer.png) **[!UICONTROL > Distribuzione > Operazioni > Console]** Web. La console Web si apre in una nuova finestra.
-1. Nella finestra Console Web individuare e aprire l&#39;opzione di configurazione **[!UICONTROL del componente aggiuntivo]** FormsManager.
-1. Nella finestra di dialogo Configurazione AddOn di FormsManager, deselezionare la casella di controllo **[!UICONTROL Sincronizza risorse]** in modo asincrono e fare clic su **[!UICONTROL Salva]**.
+1. Nell&#39;istanza dell&#39;autore, fare clic su ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Strumenti]** ![martello](assets/hammer.png) **[!UICONTROL > Distribuzione > Operazioni > Console Web]**. La console Web si apre in una nuova finestra.
+1. Nella finestra Console Web individuare e aprire l&#39;opzione **[!UICONTROL Configurazione del componente aggiuntivo FormsManager]**.
+1. Nella finestra di dialogo Configurazione AddOn di FormsManager, deselezionare la casella di controllo **[!UICONTROL Sincronizza in modo asincrono risorse]** e fare clic su **[!UICONTROL Salva]**.
 1. Riavviate il server AEM Forms . Dopo il riavvio,  server AEM Forms è abilitato ad accettare e condividere il contenuto con AEM app desktop.
 1. Aprite l&#39;app e collegatevi  server AEM Forms.
 
-   Una volta stabilita la connessione, l&#39;app compila le cartelle `content/dam` e `content/dam/formsanddocuments` . Oltre a spostare i file da cartelle superiori a cartelle locali e viceversa, potete utilizzare l&#39;app per spostare il contenuto tra cartelle popolate automaticamente.
+   In caso di connessione riuscita, l&#39;app compila le cartelle `content/dam` e `content/dam/formsanddocuments`. Oltre a spostare i file da cartelle superiori a cartelle locali e viceversa, potete utilizzare l&#39;app per spostare il contenuto tra cartelle popolate automaticamente.
 
