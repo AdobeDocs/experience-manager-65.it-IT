@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Questa sezione contiene le preoccupazioni comuni e i problemi noti.
 
 ## Problemi noti {#known-issues}
 
-### Recupero Dispatcher Non Riuscito {#dispatcher-refetch-fails}
+### Recupero del dispatcher non riuscito {#dispatcher-refetch-fails}
 
 Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un recupero potrebbe causare l&#39;impossibilità di ricevere la risposta dal server remoto dopo l&#39;attesa del timeout della richiesta.
 
@@ -29,9 +32,10 @@ L&#39;utilizzo del dispatcher 4.1.6 o versione successiva risolverà il problema
 
 ### Impossibile accedere al post del forum dopo l&#39;aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Se un forum è stato creato su CQ 5.4 e gli argomenti pubblicati e successivamente il sito è stato aggiornato ad AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore sulla pagina:
+Se un forum è stato creato su CQ 5.4 e gli argomenti pubblicati, e quindi il sito è stato aggiornato a AEM 5.6.1 o versione successiva, il tentativo di visualizzare i post esistenti potrebbe causare un errore sulla pagina:
 
-Carattere pattern non valido &#39;a&#39;: impossibile distribuire la richiesta a `/content/demoforums/forum-test.html` questo server e i file di registro contengono quanto segue:
+Carattere pattern non valido &#39;a&#39;
+Impossibile distribuire la richiesta a `/content/demoforums/forum-test.html` su questo server e i file di registro contengono quanto segue:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -49,7 +53,7 @@ Pertanto, qualsiasi codice che utilizza l&#39;API RelativeTimeFormat() deve esse
 
 L’errore è diverso in fase di creazione e pubblicazione. L’autore non riesce in modo invisibile e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, l’errore viene visualizzato sulla pagina.
 
-Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
 
 ## Preoccupazioni comuni {#common-concerns}
 
@@ -57,9 +61,9 @@ Per ulteriori informazioni, consultate l&#39;API [com.day.cq.commons.date.Relati
 
 Durante l&#39;avvio (non il primo, ma ogni altro dopo) nei registri potrebbe essere visualizzato il seguente avviso:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` è stato sostituito da `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` è stato sostituito da  `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Questo avviso può essere ignorato in modo sicuro in quanto `jknack.handlebars.Handlebars`, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All’avvio, viene sostituito da un helper [](handlebars-helpers.md#i-n)i18n specifico di AEM. Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
+Questo avviso può essere ignorato in modo sicuro, in quanto `jknack.handlebars.Handlebars`, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato di una propria utility helper i18n. All&#39;avvio, viene sostituito con un [helper i18n specifico AEM](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;esclusione di un helper esistente.
 
 ### Avvertenza nei registri: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
@@ -78,7 +82,7 @@ Questi avvisi possono essere ignorati in modo sicuro.
 
 ### Errore nei registri: NoClassDefFoundError per IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-L’aggiornamento di AEM 5.6.1 GA all’ultima versione di cq-socialcommunity-pkg-1.4.x o AEM 6.0 genera errori nel file di registro durante l’avvio, a causa di una condizione che si risolve da sola come evidenziato dall’errore non visualizzato al riavvio.
+L&#39;aggiornamento AEM 5.6.1 GA alla versione più recente di cq-socialcommunity-pkg-1.4.x o a AEM 6.0 genera errori nel file di registro durante l&#39;avvio per una condizione che si risolve da sola come evidenziato dall&#39;errore non visualizzato al riavvio.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
