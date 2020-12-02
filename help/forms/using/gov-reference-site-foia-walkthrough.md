@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Procedura dettagliata sul sito di riferimento We.Gov {#we-gov-reference-site-foia-walkthrough}
+# Sito di riferimento We.Gov FOIA Procedura dettagliata {#we-gov-reference-site-foia-walkthrough}
 
 ## Scenario di riferimento Freedom Information Act {#reference-site-freedom-of-information-act-scenario}
 
@@ -28,7 +28,7 @@ We.Gov è un&#39;organizzazione governativa che permette ai genitori adottivi di
 * Dipartimento della Marina
 * Agenzia per la protezione ambientale
 
-Per ulteriori informazioni sulla legge sulla libertà di informazione, consultate [www.foia.gov](https://www.foia.gov).
+Per ulteriori informazioni sulla legge sulla libertà di informazione, vedere [www.foia.gov](https://www.foia.gov).
 
 Lo scenario coinvolge le seguenti persone:
 
@@ -36,21 +36,21 @@ Lo scenario coinvolge le seguenti persone:
 * John Jacobs, la persona che gestisce la richiesta la inoltra al reparto appropriato
 * Gloria Rios, dipendente del governo che fornisce le informazioni secondo la richiesta
 
-## Sarah avvia la richiesta di informazioni in base alla FOIA {#sarah-initiates-request-for-information-under-foia}
+## Sarah avvia la richiesta di informazioni in FOIA {#sarah-initiates-request-for-information-under-foia}
 
 Secondo la legge sulla libertà d&#39;informazione, Sarah richiede una copia del registro di casi dell&#39;Amministrazione per bambini e famiglie per anni (anno fiscale 2013-2016). Sarah presenta questa richiesta al Dipartimento di giustizia e ufficio per la politica d&#39;informazione e indica che è disposta a pagare fino a 100 dollari per le spese di stampa e di spedizione.
 
 ### Come funziona {#how-it-works}
 
-### Vedi te stesso {#see-it-yourself}
+### Vedere da soli {#see-it-yourself}
 
 Nel browser, aprite `https://<hostname>:<PublishPort>/wegov`. Nel sito We.Gov, toccate Applicazioni > Tutte le applicazioni. Nella pagina Tutte le applicazioni, toccate Applica in Applicazione per richiesta FOIA.
 
-## Sarah inizia la sua richiesta di informazioni in FOIA {#sarah-starts-her-application-for-information-under-foia}
+## Sarah avvia la sua applicazione per informazioni in FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah fa clic su **Applica** e nella pagina Modulo di richiesta per il Freedom of Information Act, Sarah immette informazioni tra cui:
+Sarah fa clic su **Applica** e nella pagina Modulo di richiesta Freedom of Information Act, Sarah inserisce informazioni tra cui:
 
-* **Agenzia:** Sarah specifica l&#39;agenzia a cui la richiesta è stata indirizzata come Dipartimento di Giustizia - Ufficio per la Politica d&#39;Informazione.
+* **Agenzia:** Sarah specifica l&#39;agenzia a cui la richiesta è stata indirizzata come Dipartimento di Giustizia - Ufficio della Politica di Informazione.
 
 * **Pagherà Fino** A: Sarah specifica che è disposta a pagare fino a 100 dollari per la stampa e le spese postali.
 * **Descrivete dettagliatamente** la richiesta: Sarah specifica &quot;Richiesta di copia dei casi di Amministrazione per bambini e famiglie per gli esercizi fiscali dal 2013 al 2016&quot;.
@@ -73,9 +73,9 @@ John Jacobs riceve le richieste e le indirizza alla persona giusta. AEM Posta in
 
 Quando Sarah riempie e invia l&#39;applicazione FOIA, un record dell&#39;applicazione viene inviato alla inbox di John Jacobs. John Jacobs può visualizzare la domanda inviata e accettarla o rifiutarla.
 
-### Vedi te stesso {#see-it-yourself-1}
+### Vedere da soli {#see-it-yourself-1}
 
-Potete accedere alla AEM inbox all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedete alla casella in entrata AEM utilizzando jjacobs/password come nome utente/password per John Jacobs, e vedete l&#39;applicazione FOIA. Per informazioni sull&#39;utilizzo di AEM Inbox per le attività relative ai flussi di lavoro incentrate sui moduli, vedere [Gestione delle applicazioni e delle attività Forms in AEM Posta in arrivo](/help/forms/using/manage-applications-inbox.md).
+Potete accedere alla AEM inbox all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedete alla casella in entrata AEM utilizzando jjacobs/password come nome utente/password per John Jacobs, e vedete l&#39;applicazione FOIA. Per informazioni sull&#39;utilizzo di AEM Inbox per le attività relative ai flussi di lavoro incentrate sui moduli, vedere [Gestione di applicazioni e attività Forms in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -99,7 +99,7 @@ Dopo che John Jacobs ha compilato le informazioni richieste e approvato la richi
 
 Quando John Jacobs approva la richiesta FOIA, viene creato un PDF o un documento di registrazione dell&#39;applicazione e inviato alla inbox di Gloria Rios. Gloria può visualizzare la richiesta inviata e approvarla o rifiutarla.
 
-### Vedi da solo {#see-for-yourself}
+### Vedere per se stessi {#see-for-yourself}
 
 Potete accedere alla AEM inbox all&#39;indirizzo https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Accedete alla casella in entrata AEM utilizzando grios/password come nome utente/password per Gloria Rios e vedete la richiesta FOIS.
 
