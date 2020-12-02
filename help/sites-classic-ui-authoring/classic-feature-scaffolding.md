@@ -12,6 +12,9 @@ discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1502'
+ht-degree: 80%
 
 ---
 
@@ -28,7 +31,7 @@ Con la funzione di scaffolding è invece possibile creare un modulo (scaffolding
 
 ## Utilizzo dello scaffolding {#how-scaffolding-works}
 
-Scaffolds are stored in the **Tools** console of the site admin.
+Le scaffolding sono memorizzate nella console **Strumenti** dell&#39;amministratore del sito.
 
 * Apri la console **Strumenti** e fai clic su **Scaffolding pagine predefinito**.
 * Quindi fai clic su **geometrixx**.
@@ -36,7 +39,7 @@ Scaffolds are stored in the **Tools** console of the site admin.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-The scaffold consists of a form with a field for each piece of content that will make up the page to be created and four important parameters which are accessed through the **Page Properties** of the scaffold page.
+La pagina di scaffolding è costituita da un modulo con un campo per ogni elemento di contenuto che costituirà la pagina da creare e quattro parametri importanti a cui si accede tramite la pagina **Proprietà pagina** della pagina di scaffolding.
 
 ![pageprops](assets/pageprops.png)
 
@@ -45,7 +48,7 @@ Le proprietà della pagina di scaffolding sono:
 * **Testo titolo**: nome della pagina di scaffolding stessa. In questo esempio è denominata “News”.
 * **Descrizione**: visualizzata sotto il titolo della pagina di scaffolding.
 * **Modello di destinazione**: modello che verrà utilizzato dalla pagina di scaffolding per creare una nuova pagina. In questo esempio il modello è *Pagina contenuto Geometrixx*.
-* **Percorso di destinazione**: percorso della pagina padre in cui la pagina di scaffolding dovrà creare le nuove pagine. In this example the path is */content/geometrixx/en/news*.
+* **Percorso di destinazione**: percorso della pagina padre in cui la pagina di scaffolding dovrà creare le nuove pagine. In questo esempio il percorso è */content/geometrixx/en/news*.
 
 Il corpo della pagina di scaffolding è costituito dal modulo. Se un utente desidera creare una pagina tramite la pagina di scaffolding, deve compilare il modulo e fare clic su *Crea* in basso. Il modulo **News** dell’esempio precedente include i campi seguenti:
 
@@ -54,17 +57,17 @@ Il corpo della pagina di scaffolding è costituito dal modulo. Se un utente desi
 * **Immagine**: Questo campo corrisponde a un componente Immagine nella pagina risultante.
 * **Immagine/Avanzato** - **Titolo**: titolo dell’immagine.
 * **Immagine/Avanzato** - **Testo Alt**: testo alternativo dell’immagine.
-* **Immagine/Avanzato**: **Descrizione**: Descrizione dell’immagine.
+* **Immagine/Avanzato**:  **Descrizione**: Descrizione dell’immagine.
 * **Immagine/Avanzato**: **Dimensione**: dimensione dell’immagine.
 * **Tag/Parole chiave**: metadati da assegnare alla pagina. Questo campo è presente in tutte le pagine di scaffolding.
 
 ### Creazione di uno scaffolding {#creating-a-scaffold}
 
-To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
+Per creare una nuova pagina di scaffolding, passate alla console **Strumenti**, quindi **Scaffolding pagina predefinito** e create una nuova pagina. Sarà disponibile un singolo tipo di modello di pagina, il modello *Scaffolding.*
 
-Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template* and *Target Path*, as described above.
+Passare alla sezione **Proprietà pagina** della nuova pagina e impostare *Testo titolo*, *Descrizione*, *Modello destinazione* e *Percorso destinazione* come descritto sopra.
 
-Occorre quindi definire la struttura della pagina che verrà creata dalla pagina di scaffolding. To do this go into **[design mode](/help/sites-authoring/page-authoring.md#sidekick)**on the scaffold page. Viene visualizzato un collegamento che consente di modificare la pagina di scaffolding nell’**editor basato su finestra di dialogo**.
+Occorre quindi definire la struttura della pagina che verrà creata dalla pagina di scaffolding. A tale scopo, passare alla **[modalità di progettazione](/help/sites-authoring/page-authoring.md#sidekick)** nella pagina di scaffolding. Viene visualizzato un collegamento che consente di modificare la pagina di scaffolding nell’**editor basato su finestra di dialogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -78,7 +81,7 @@ La definizione della finestra di dialogo per una pagina di scaffolding funziona 
 
 Per comprendere il funzionamento, è possibile osservare la finestra di dialogo della pagina di scaffolding **News** nell’esempio nell’editor basato su finestra di dialogo. Apri la pagina di scaffolding in modalità progettazione e fai clic sul collegamento per l’editor basato su finestra di dialogo.
 
-Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
+Ora, fare clic sul campo della finestra di dialogo **Finestra di dialogo > Pannello a schede > Testo > Testo**, come segue:
 
 ![textedit](assets/textedit.png)
 
@@ -99,7 +102,7 @@ Tale valore definisce il percorso di memorizzazione del contenuto per il testo c
 
 Nella finestra di dialogo di un componente normale, non sarebbe necessario specificare tali informazioni perché sono implicite, essendo la finestra di dialogo già associata a un componente specifico.
 
-Per specificare queste due informazioni si utilizzano i campi nascosti. Click on the first hidden field **Dialog > Tab Panel > Text > Hidden**, like this:
+Per specificare queste due informazioni si utilizzano i campi nascosti. Fare clic sul primo campo nascosto **Finestra di dialogo > Pannello a schede > Testo > Nascosto**, come segue:
 
 ![nascosto](assets/hidden.png)
 
@@ -111,13 +114,13 @@ La proprietà nome del campo nascosto è
 
 `./jcr:content/par/text/textIsRich`
 
-This is a boolean property used to interpret the text string stored at `./jcr:content/par/text/text`.
+Si tratta di una proprietà booleana utilizzata per interpretare la stringa di testo memorizzata in `./jcr:content/par/text/text`.
 
-Because we know that the text should be interpreted as a rich text we specify the `value` property of this field as `true`.
+Poiché il testo deve essere interpretato come testo RTF, è necessario specificare la proprietà `value` di questo campo come `true`.
 
 >[!CAUTION]
 >
->The dialog editor allows the user to change the values of *existing* properties in the dialog definition. Per aggiungere una nuova proprietà, l’utente deve utilizzare [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, i nuovi campi nascosti aggiunti alla definizione di una finestra di dialogo con l’editor basato su finestra di dialogo non dispongono della proprietà *valore*, ovvero una proprietà di nome &quot;valore&quot;. Se per il campo nascosto in questione è necessario impostare una proprietà *valore* predefinita, quest’ultima dovrà essere aggiunta manualmente tramite uno degli strumenti CRX. Il valore non può essere aggiunto direttamente tramite l’editor basato su finestra di dialogo. Se tuttavia la proprietà è già presente, è possibile modificarne il valore tramite l’editor basato su finestra di dialogo.
+>L&#39;editor basato su finestra di dialogo consente all&#39;utente di modificare i valori delle proprietà *esistenti* nella definizione della finestra di dialogo. Per aggiungere una nuova proprietà, l’utente deve utilizzare [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, i nuovi campi nascosti aggiunti alla definizione di una finestra di dialogo con l’editor basato su finestra di dialogo non dispongono della proprietà *valore*, ovvero una proprietà di nome &quot;valore&quot;. Se per il campo nascosto in questione è necessario impostare una proprietà *valore* predefinita, quest’ultima dovrà essere aggiunta manualmente tramite uno degli strumenti CRX. Il valore non può essere aggiunto direttamente tramite l’editor basato su finestra di dialogo. Se tuttavia la proprietà è già presente, è possibile modificarne il valore tramite l’editor basato su finestra di dialogo.
 
 Il secondo campo nascosto può essere visualizzato facendo clic su di esso, come mostrato nella figura:
 
@@ -135,7 +138,7 @@ e il valore fisso specificato per tale proprietà è
 
 `foundation/components/textimage`
 
-Tale valore indica che per rappresentare il contenuto di testo del paragrafo è necessario utilizzare il componente *Testo e immagine*. Using with the `isRichText` boolean specified in the other hidden field, the component can render the actual text string stored at `./jcr:content/par/text/text` in the desired way.
+Tale valore indica che per rappresentare il contenuto di testo del paragrafo è necessario utilizzare il componente *Testo e immagine*. Utilizzando con il valore booleano `isRichText` specificato nell&#39;altro campo nascosto, il componente può eseguire il rendering della stringa di testo effettiva memorizzata in `./jcr:content/par/text/text` nel modo desiderato.
 
 ### Scaffolding con ereditarietà MSM {#scaffolding-with-msm-inheritance}
 
@@ -165,4 +168,4 @@ Dopo lo sblocco è possibile ripristinare l’ereditarietà con un clic sul simb
 
 >[!NOTE]
 >
->If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
+>Se l&#39;ereditarietà viene annullata a livello di pagina (dalla scheda LiveCopy di Proprietà pagina), tutti i componenti saranno modificabili in modalità **Scaffolding** (verranno visualizzati in stato non bloccato).
