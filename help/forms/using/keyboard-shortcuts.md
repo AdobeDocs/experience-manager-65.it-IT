@@ -71,7 +71,7 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 >
 >I tasti di scelta rapida contrassegnati con un&#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando in Mac OS.
 
-## Browser contenuto  {#contentbrowser}
+## Browser contenuti {#contentbrowser}
 
 | **Azione** | **Tasti di scelta rapida per Windows** | **Scelta rapida in Mac OS** |
 |---|---|---|
@@ -82,17 +82,17 @@ In questo articolo sono elencate le scelte rapide da tastiera utilizzabili con E
 | Selezionare l&#39;elemento successivo nella struttura degli oggetti di Forms |  Freccia giù |  Freccia giù |
 | Selezionare l&#39;elemento precedente nell&#39;albero Oggetti di Forms | Freccia su | Freccia su |
 
-[1] Sostituisce Ctrl + Freccia destra per Windows e Comando + Freccia destra per Mac OS.\
-[2] Sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per Mac OS.
+[1 ] Sostituisce Ctrl + Freccia destra per Windows e Comando + Freccia destra per Mac OS.\
+[2 ] Sostituisce Ctrl + Freccia sinistra per Windows e Comando + Freccia sinistra per Mac OS.
 
 ## Gestione della corrispondenza {#correspondence-management}
 
 In questa sezione sono elencate le varie tastiere e i collegamenti per l&#39;accesso facilitato che potete utilizzare nell&#39;editor di testo Gestione della corrispondenza. Potete utilizzare i seguenti collegamenti mentre siete:
 
 * Creazione o modifica di una risorsa [Testo](texts-interactive-communications.md)
-* Modifica di un modulo di testo dopo aver toccato l’icona Modifica ( ![edittextmodule](assets/edittextmodule.png)) durante la [creazione di una corrispondenza](/help/forms/using/create-correspondence.md).
+* Modifica di un modulo di testo dopo aver toccato l&#39;icona Modifica corrispondente ( ![edittextmodule](assets/edittextmodule.png)) quando [si crea una corrispondenza](/help/forms/using/create-correspondence.md).
 
-### Selezione del testo e spostamento del cursore {#text-selection-and-moving-the-cursor-around}
+### Selezione del testo e spostamento del cursore intorno a {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -308,7 +308,7 @@ In questa sezione sono elencate le varie tastiere e i collegamenti per l&#39;acc
  </tbody>
 </table>
 
-### Copiare e incollare {#copy-and-paste}
+### Copia e incolla {#copy-and-paste}
 
 <table> 
  <tbody>
