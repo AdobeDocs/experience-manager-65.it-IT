@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +26,8 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
    >
    >
 * Alcune funzionalità non sono disponibili su tutte le console e/o certe funzionalità aggiuntive sono disponibili solo in determinate console. In altre sezioni puoi trovare informazioni specifiche sulle singole console e le relative funzionalità.
->* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’ [utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’[utilizzo delle console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+
 >
 
 
@@ -63,7 +67,7 @@ Le console principali sono:
    <td>In molti casi, le attività secondarie di un flusso di lavoro coinvolgono più persone, ognuna delle quali deve completare un passaggio prima che il lavoro possa essere passato alla persona successiva. La Casella in entrata permette di visualizzare tutte le notifiche relative a tali attività. Consultate <a href="/help/sites-administering/workflows.md">Lavorare con flussi di lavoro</a>. <br /> </td>
   </tr>
   <tr>
-   <td><strong>Assegnazione di tag</strong></td>
+   <td><strong>Assegnazione tag</strong></td>
    <td>Questa console consente di gestire i tag. I tag sono parole o termini con cui è possibile e annotare i contenuti per facilitarne la ricerca e l’organizzazione. Per ulteriori informazioni consultate <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Uso e Gestione dei tag</a>.</td>
   </tr>
   <tr>
@@ -145,7 +149,7 @@ Nella console **Siti web** le pagine di contenuto sono elencate in una struttura
 >
 >Per ulteriori informazioni, consulta [SiteAdmin in CQ Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
-## Informazioni sulla pagina nella console Siti web {#page-information-on-the-websites-console}
+## Informazioni sulla pagina nella console Siti web  {#page-information-on-the-websites-console}
 
 Nel riquadro a destra nella console **Siti web** è disponibile una vista a elenco con le seguenti informazioni sulle pagine:
 
@@ -160,7 +164,7 @@ Sono disponibili le seguenti informazioni; un sottoinsieme di questi campi figur
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
-   <td>Miniatura</td>
+   <td>Miniatura </td>
    <td>Miniatura della pagina</td>
   </tr>
   <tr>
@@ -204,7 +208,7 @@ Sono disponibili le seguenti informazioni; un sottoinsieme di questi campi figur
    <td>Indica se una pagina è stata bloccata e l’account utente che l’ha bloccata.</td>
   </tr>
   <tr>
-   <td>Live Copy</td>
+   <td>Live Copy </td>
    <td>Indica se la pagina fa parte di una Live Copy.</td>
   </tr>
  </tbody>
