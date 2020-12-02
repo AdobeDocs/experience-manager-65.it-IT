@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 1%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 In qualsiasi momento, come sviluppatore, puoi eseguire l&#39;app su un dispositivo o all&#39;interno di un emulatore, a condizione che sia stato configurato l&#39;ambiente di sviluppo.
 
 Per eseguire gli esempi seguenti è necessario un sistema che esegue OSx (Mac) con Xcode, oppure un sistema Mac/Win/Linux con Android SDK installato.
 
-## Avviate l&#39;ambiente di sviluppo {#bootstrap-your-development-environment}
+## Bootstrap dell&#39;ambiente di sviluppo {#bootstrap-your-development-environment}
 
 [Configurazione CLI PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
@@ -39,11 +42,11 @@ Per Android: Per sviluppare per iPhone e iPad, è necessario Google Android Stui
 * Scaricatelo gratuitamente [qui](https://developer.android.com/sdk/index.html).
 * [Guida alla piattaforma PhoneGap Android](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
-## Scarica l&#39;origine {#download-the-source}
+## Scarica la sorgente {#download-the-source}
 
-Dopo aver eseguito correttamente il boot dell&#39;ambiente di sviluppo, scaricate l&#39;origine dalla sezione AEM App Build:
+Dopo aver eseguito correttamente il boot dell&#39;ambiente di sviluppo, scarica l&#39;origine dalla sezione AEM App Build:
 
-* Fate clic sulla freccia a discesa della sezione PhoneGap Build.
+* Fare clic sulla freccia a discesa della PhoneGap Build.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -59,15 +62,15 @@ Dopo aver eseguito correttamente il boot dell&#39;ambiente di sviluppo, scaricat
 >Se non preparate mai l&#39;app, selezionando Staging viene attivato il flusso di lavoro di verifica (suggerimento: questo verrà visualizzato come app per fasi nell’app visualizzatore PhoneGap Enterprise disponibile in AppStore e Google PlayStore).
 
 * Fate clic su Scarica e salvate il file ZIP nel computer.
-* Estrarre il file zip scaricato nella vostra area di lavoro.
+* Estraete il file zip scaricato nella vostra area di lavoro.
 
-## Creare e caricare l&#39;app (dalla sorgente) {#build-and-load-the-app-from-source}
+## Creare e caricare l&#39;app (dall&#39;origine) {#build-and-load-the-app-from-source}
 
 L&#39;interfaccia CLI di PhoneGap può creare un progetto di piattaforma, compilare l&#39;origine e distribuire l&#39;app in un unico comando.
 
 >[!NOTE]
 >
->È possibile eseguire tutti questi passaggi separatamente, vedere i documenti CLI di [PhoneGap](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>È possibile eseguire tutti questi passaggi separatamente, vedere [PhoneGap CLI docs](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
 
 1. Accertatevi di aver installato l&#39;interfaccia CLI di PhoneGap, come descritto sopra.
 1. In una finestra della console (o terminale), andate alla directory principale dell’origine estratta.
@@ -86,11 +89,12 @@ phonegap run ios
 >In caso di problemi a questo punto, tornate alle basi per risolvere i problemi -
 >
 >1. Creare una nuova cartella (test mkdir)
->1. Accedete alla nuova cartella (test cd)
+>1. Accedete a questa nuova cartella (test cd)
 >1. Eseguire &#39;phonegap create helloWorld&#39;
 >1. Passare a helloWorld (cd helloWorld)
 >1. Eseguire &#39;phonegap run android (o sostituire android con iOS come sopra).
 >1. L&#39;emulatore si aprirà eseguendo l&#39;app PhoneGap appena creata, dicendo &#39;Device Ready&#39; se è operativo il ponte JavaScript verso l&#39;app nativa.
+
 >
 >
 Questo verifica che l&#39;ambiente di sviluppo CLI PhoneGap sia attivato e funzionante correttamente.
@@ -115,7 +119,7 @@ Per attivare gli strumenti di sviluppo:
 * Selezionare &quot;Mostra menu sviluppo nella barra dei menu&quot;
 * Chiudi la finestra Preferenze
 
-## Connessione di Safari a iOS {#connect-safari-to-ios}
+## Connetti Safari a iOS {#connect-safari-to-ios}
 
 Potete collegare Safari a un dispositivo iOS o a un emulatore.
 
@@ -137,7 +141,7 @@ phonegap run <platform> --emulator
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-## Debug di JavaScript con Safari&#39;s Web Inspector {#debug-javascript-with-safari-s-web-inspector}
+## Debug di JavaScript con la finestra di ispezione Web di Safari {#debug-javascript-with-safari-s-web-inspector}
 
 Puoi impostare punti di interruzione ovunque nella tua origine. Quando interagisci con l’emulatore o il dispositivo, l’esecuzione dell’app si interrompe a quei punti di interruzione. È possibile eseguire l&#39;esecuzione e ispezionare i valori nelle variabili.
 
@@ -158,4 +162,4 @@ Puoi impostare punti di interruzione ovunque nella tua origine. Quando interagis
 
 ## Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso come sviluppare app con l&#39;interfaccia CLI di PhoneGap, consulta [Accesso alle funzioni](/help/mobile/phonegap-access-device-features.md)del dispositivo.
+Dopo aver appreso come sviluppare app con l&#39;interfaccia CLI di PhoneGap, vedere [Accesso alle funzionalità del dispositivo](/help/mobile/phonegap-access-device-features.md).
