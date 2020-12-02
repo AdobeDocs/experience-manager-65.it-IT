@@ -40,10 +40,10 @@ A tal fine, è necessario:
 
 Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate le seguenti operazioni:
 
-1. Accedete a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
+1. Andate a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedete come amministratore.
 1. Nella cartella delle app, create una cartella denominata config con percorso/struttura simile alla cartella di configurazione, che si trova in libs/fd/cm/config, utilizzando i seguenti passaggi:
 
-   1. Fate clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e selezionate Nodo **** sovrapposizione:
+   1. Fate clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e selezionate **Overlay Node**:
 
       `/libs/fd/cm/config`
 
@@ -53,20 +53,20 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate l
 
       **Percorso:** /libs/fd/cm/config
 
-      **Posizione:** /apps/
+      **Posizione:** /app/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** Selezionati
 
       ![Sovrapposizione, nodo](assets/2.png)
 
    1. Fai clic su **OK**. La struttura delle cartelle viene creata nella cartella delle app.
 
-   1. Fate clic su **Salva tutto**.
+   1. Fare clic su **Salva tutto**.
 
 1. Create una copia del file tbxeditor-config.xml nella cartella di configurazione appena creata, eseguendo la procedura seguente:
 
-   1. Fate clic con il pulsante destro del mouse sul file tbxeditor-config.xml in libs/fd/cm/config e selezionate **Copia**.
-   1. Fate clic con il pulsante destro del mouse sulla cartella seguente e selezionate **Incolla:**
+   1. Fare clic con il pulsante destro del mouse sul file tbxeditor-config.xml in libs/fd/cm/config, quindi selezionare **Copy**.
+   1. Fare clic con il pulsante destro del mouse sulla cartella seguente e selezionare **Incolla:**
 
       `apps/fd/cm/config`
 
@@ -168,11 +168,11 @@ Per personalizzare i font modificando il file tbxeditor-config.xml, effettuate l
       * Valori predefiniti di famiglia e dimensione del font, altezza, spaziatura tra le lettere e formato della data
       * Punti elenco
 
-      Ad esempio, per aggiungere un font giapponese denominato Sazanami Mincho Medium, è necessario inserire la voce seguente nel file XML: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo font sia installato nel computer client e utilizzato per accedere e utilizzare la personalizzazione dei font. Per ulteriori informazioni, vedere [Aggiunta di font personalizzati al computer](#addcustomfonts)client.
+      Ad esempio, per aggiungere un font giapponese denominato Sazanami Mincho Medium, è necessario inserire la voce seguente nel file XML: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo font sia installato nel computer client e utilizzato per accedere e utilizzare la personalizzazione dei font. Per ulteriori informazioni, vedere [Aggiungere font personalizzati al computer client](#addcustomfonts).
 
       Potete inoltre modificare le impostazioni predefinite per vari aspetti del testo e, rimuovendo le voci, rimuovere i font dall’editor di testo.
 
-   1. Fate clic su **Salva tutto**.
+   1. Fare clic su **Salva tutto**.
 
 
 ## Aggiunta di font personalizzati al computer client {#addcustomfonts}
@@ -186,9 +186,9 @@ Per ulteriori informazioni sull&#39;installazione dei font, consultate i seguent
 
 ## Accesso alle personalizzazioni dei font {#access-font-customizations}
 
-Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e installato i font richiesti nel computer client utilizzato per accedere ai AEM Forms, le modifiche vengono visualizzate nell&#39;editor di testo.
+Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e installato i font richiesti nel computer client utilizzato per accedere  AEM Forms, le modifiche vengono visualizzate nell&#39;editor di testo.
 
-Ad esempio, il font Sazanami Mincho Medium aggiunto nei font [Customize modificando il file tbxeditor-config.xml nella procedura CRX](#customizefonts) viene visualizzato nell’interfaccia utente dell’editor di testo come segue:
+Ad esempio, il font Sazanami Mincho Medium aggiunto in [Personalizza i font modificando il file tbxeditor-config.xml nella procedura CRX](#customizefonts) viene visualizzato nell&#39;interfaccia utente dell&#39;editor di testo come segue:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
