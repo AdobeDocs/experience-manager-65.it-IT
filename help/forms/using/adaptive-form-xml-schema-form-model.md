@@ -10,11 +10,14 @@ discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+workflow-type: tm+mt
+source-wordcount: '1081'
+ht-degree: 5%
 
 ---
 
 
-# Creazione di moduli adattivi tramite lo schema XML{#creating-adaptive-forms-using-xml-schema}
+# Creazione di moduli adattivi utilizzando lo schema XML{#creating-adaptive-forms-using-xml-schema}
 
 ## Prerequisiti {#prerequisites}
 
@@ -25,13 +28,13 @@ Per creare un modulo adattivo utilizzando uno schema XML come modello di modulo,
 
 ## Uso di uno schema XML come modello di modulo {#using-an-xml-schema-as-form-model}
 
-AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema XML esistente come modello di modulo. Questo schema XML rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione.
+ AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema XML esistente come modello di modulo. Questo schema XML rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione.
 
 Le caratteristiche principali dell&#39;utilizzo di uno schema XML sono:
 
 * La struttura di XSD viene visualizzata come struttura ad albero nella scheda Content Finder nella modalità di creazione per un modulo adattivo. È possibile trascinare e aggiungere elementi dalla gerarchia XSD al modulo adattivo.
 * È possibile precompilare il modulo utilizzando codice XML conforme allo schema associato.
-* All&#39;invio, i dati immessi dall&#39;utente vengono inviati come XML che si allinea allo schema associato.
+* Al momento dell&#39;invio, i dati immessi dall&#39;utente vengono inviati come XML che si allinea allo schema associato.
 
 Uno schema XML è costituito da tipi di elementi semplici e complessi. Gli elementi hanno attributi che aggiungono regole all&#39;elemento. Quando questi elementi e attributi vengono trascinati su un modulo adattivo, vengono mappati automaticamente sul componente modulo adattivo corrispondente.
 
@@ -69,7 +72,7 @@ La mappatura degli elementi XML con componenti per moduli adattivi è la seguent
   <tr>
    <td><code class="code">xs:enumeration
       </code></td>
-   <td>Rilascia</td>
+   <td>Drop (Giù)</td>
   </tr>
   <tr>
    <td>Qualsiasi elemento di tipo complesso</td>
@@ -167,9 +170,10 @@ Esempio di uno schema XML.
 >
 >* Capitalizzazione del primo carattere del nome dell&#39;elemento
 >* Inserimento di spazio bianco ai bordi della cassa del cammello.
+
 >
 >
-Ad esempio, se si aggiunge l&#39;elemento `userFirstName` schema, la didascalia generata nel modulo adattivo è `User First Name`.
+Ad esempio, se si aggiunge l&#39;elemento dello schema `userFirstName`, la didascalia generata nel modulo adattivo è `User First Name`.
 
 ## Limitare i valori accettabili per un componente modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -276,7 +280,7 @@ Ad esempio, se si aggiunge l&#39;elemento `userFirstName` schema, la didascalia 
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Stringa</p> </td>
-   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi a un pattern specificato.</p> <p>La proprietà pattern viene mappata sul pattern di convalida del componente modulo adattivo corrispondente.</p> </td>
+   <td><p>Specifica la sequenza dei caratteri. Un componente accetta i caratteri se questi sono conformi al pattern specificato.</p> <p>La proprietà pattern viene mappata sul pattern di convalida del componente modulo adattivo corrispondente.</p> </td>
    <td>
     <ul>
      <li>Tutti i componenti di moduli adattivi mappati a uno schema XSD </li>
@@ -285,11 +289,11 @@ Ad esempio, se si aggiunge l&#39;elemento `userFirstName` schema, la didascalia 
  </tbody>
 </table>
 
-## Frequently asked questions {#frequently-asked-questions}
+## Domande frequenti {#frequently-asked-questions}
 
-**Come posso sapere quale elemento della struttura è associato a quale elemento XML?**
+**Come si fa a sapere quale elemento della struttura è associato a quale elemento XML?**
 
-Quando si fa doppio clic su un elemento in Content Finder, viene visualizzato un nome di campo e una proprietà denominata `bindRef`. Questa proprietà associa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
+Quando si fa doppio clic su un elemento in Content Finder, in una finestra a comparsa vengono visualizzati il nome di un campo e una proprietà denominata `bindRef`. Questa proprietà associa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
 
 ![Un campo associato a un elemento dello schema XML](assets/dblclick.png)
 
@@ -297,7 +301,7 @@ Il campo bindRef</code> mostra l&#39;associazione tra un elemento ad albero e un
 
 >[!NOTE]
 >
->Gli attributi hanno un `@` simbolo nel relativo `bindRef`valore per distinguerli dagli elementi. Esempio, `/config/projectDetails/@duration`.
+>Gli attributi hanno un simbolo `@` nel relativo valore `bindRef`per distinguerli dagli elementi. Esempio, `/config/projectDetails/@duration`.
 
 **Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccurs sono maggiori di 1)?**
 
@@ -312,4 +316,4 @@ Sono disponibili due opzioni:
 
 **Cos&#39;è un bindRef?**
 
-Una `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo dello schema. Determina la `XPath` posizione in cui il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. Un oggetto `bindRef`viene utilizzato anche per precompilare un valore di campo da un XML precompilato (precompilato).
+Un `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo dello schema. Determina il `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. Un elemento `bindRef`viene utilizzato anche per precompilare un valore di campo da un XML precompilato (precompilato).
