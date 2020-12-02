@@ -13,13 +13,13 @@ ht-degree: 8%
 
 # Configurare approfondimenti risorse {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] recupera i dati di utilizzo relativi alle risorse digitali utilizzate da siti Web di terze parti da [!DNL Adobe Analytics]. Per abilitare Asset Insights per recuperare questi dati e generare approfondimenti, configura innanzitutto la funzione da integrare con  Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] recupera i dati di utilizzo relativi alle risorse digitali utilizzate da siti Web di terze parti da  [!DNL Adobe Analytics]. Per abilitare Asset Insights per recuperare questi dati e generare approfondimenti, configura innanzitutto la funzione da integrare con  Adobe Analytics.
 
 >[!NOTE]
 >
 >Le informazioni approfondite sono supportate e fornite solo per le immagini.
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. In [!DNL Experience Manager], fare clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
@@ -28,17 +28,17 @@ ht-degree: 8%
 
    ![Configurare  Adobe Analytics per Assets Insights in  Experience Manager](assets/insights_config2.png)
 
-   *Figura: Configura [!DNL Adobe Analytics] per informazioni approfondite sulle risorse in [!DNL Experience Manager].*
+   *Figura: Configura  [!DNL Adobe Analytics] per informazioni approfondite sulle risorse in  [!DNL Experience Manager].*
 
-1. Fate clic su **[!UICONTROL Autenticazione]**.
-1. Dopo aver [!DNL Experience Manager] autenticato le credenziali, dall’elenco Suite **[!UICONTROL di]** rapporti, scegliete una suite di [!DNL Adobe Analytics] rapporti da cui recuperare i dati mediante approfondimenti delle risorse. Fate clic su **[!UICONTROL Aggiungi]**.
-1. Dopo aver [!DNL Experience Manager] impostato la suite di rapporti, fate clic su **[!UICONTROL Fine]**.
+1. Fare clic su **[!UICONTROL Autenticazione]**.
+1. Dopo che [!DNL Experience Manager] esegue l&#39;autenticazione delle credenziali, dall&#39;elenco **[!UICONTROL Suite di rapporti]**, scegliete una suite di rapporti [!DNL Adobe Analytics] da cui recuperare i dati mediante Asset Insights. Fate clic su **[!UICONTROL Aggiungi]**.
+1. Dopo che [!DNL Experience Manager] ha impostato la suite di rapporti, fare clic su **[!UICONTROL Fine]**.
 
 ## Tracciatore pagina {#page-tracker}
 
-Dopo aver configurato l’ [!DNL Adobe Analytics] account, viene generato il codice Tracciatore pagina. Per abilitare Assets Insights per tenere traccia delle [!DNL Experience Manager] risorse utilizzate in siti Web di terze parti, includi il codice di tracciamento delle pagine nel codice del sito Web. Utilizzate l&#39;utility [!UICONTROL Page Tracker] in [!DNL Experience Manager Assets] per generare il codice di tracciamento pagina. Per ulteriori informazioni su come includere il codice Tracciatore pagina nelle pagine Web di terze parti, consultate [Utilizzare il tracciatore di pagina e il codice da incorporare nelle pagine](/help/assets/use-page-tracker.md)Web.
+Dopo aver configurato l&#39;account [!DNL Adobe Analytics], viene generato il codice Page Tracker. Per abilitare Assets Insights a tenere traccia delle risorse [!DNL Experience Manager] utilizzate in siti Web di terze parti, includi il codice di tracciamento delle pagine nel codice del sito Web. Utilizzare l&#39;utility [!UICONTROL Page Tracker] in [!DNL Experience Manager Assets] per generare il codice di tracciamento pagina. Per ulteriori informazioni su come includere il codice Page Tracker nelle pagine Web di terze parti, vedere [Utilizzare il tracciatore di pagina e il codice da incorporare nelle pagine Web](/help/assets/use-page-tracker.md).
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. In [!DNL Experience Manager], fare clic su **[!UICONTROL Strumenti]** > **[!UICONTROL Risorse]**.
 
    ![chlimage_1-73](assets/chlimage_1-214.png)
 
