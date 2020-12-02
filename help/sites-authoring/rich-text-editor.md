@@ -47,9 +47,9 @@ Questa barra degli strumenti contiene le opzioni seguenti:
 
 ## Modifica a schermo intero {#full-screen-editing}
 
-For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+Per i componenti basati su testo, toccando la modalità a schermo intero dalla barra degli strumenti ![](do-not-localize/screen_shot_2018-03-21at163236.png) si apre l&#39;editor Rich Text e si nasconde il resto del contenuto della pagina.
 
-La modalità a schermo intero visualizza tutte le opzioni configurate per l’authoring. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
+La modalità a schermo intero visualizza tutte le opzioni configurate per l’authoring. La disponibilità è opzioni [dipende dalla configurazione](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
