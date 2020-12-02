@@ -20,11 +20,11 @@ ht-degree: 2%
 
 ![](do-not-localize/10-test-your-adaptive-form.png)
 
-Questa esercitazione è un passaggio della serie [Crea il primo modulo](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) adattivo. Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
+Questa esercitazione è un passaggio della serie [Crea il tuo primo modulo adattivo](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Si consiglia di seguire le serie in sequenza cronologica per comprendere, eseguire e dimostrare l&#39;uso completo dell&#39;esercitazione.
 
 Una volta che il modulo adattivo è pronto, è importante verificare l&#39;adattivo prima di distribuirlo agli utenti finali. È possibile testare manualmente (test funzionale) ogni campo o automatizzare il test del modulo adattivo. In presenza di più moduli adattivi, il test manuale di tutti i campi di tutti i moduli adattivi diventa un&#39;attività scoraggiante.
 
-AEM [!DNL Forms] fornire un framework di test, Calvin, per automatizzare il test dei moduli adattivi. Utilizzando il framework, potete scrivere ed eseguire test di interfaccia direttamente in un browser Web. Il framework fornisce API JavaScript per la creazione di test. Il test automatizzato consente di verificare l&#39;esperienza di precompilazione di un modulo adattivo, inviare esperienze relative a un modulo adattivo, regole di espressione, da convalide, caricamento lento e interazioni dell&#39;interfaccia utente. Questa esercitazione illustra i passaggi necessari per creare ed eseguire test automatici su un modulo adattivo. Al termine di questa esercitazione, potrete:
+AEM [!DNL Forms] fornisce un framework di test, Calvin, per automatizzare il test dei moduli adattivi. Utilizzando il framework, potete scrivere ed eseguire test di interfaccia direttamente in un browser Web. Il framework fornisce API JavaScript per la creazione di test. Il test automatizzato consente di verificare l&#39;esperienza di precompilazione di un modulo adattivo, inviare esperienze relative a un modulo adattivo, regole di espressione, da convalide, caricamento lento e interazioni dell&#39;interfaccia utente. Questa esercitazione illustra i passaggi necessari per creare ed eseguire test automatici su un modulo adattivo. Al termine di questa esercitazione, potrete:
 
 * [Creare una suite di test per il modulo adattivo](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Creazione di test per il modulo adattivo](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -34,10 +34,10 @@ AEM [!DNL Forms] fornire un framework di test, Calvin, per automatizzare il test
 
 Le suite di test dispongono di una raccolta di casi di test. Potete avere più suite di test. È consigliabile disporre di una suite di test distinta per ciascun modulo. Per creare una suite di test:
 
-1. Accedete a AEM’istanza di creazione in qualità di amministratore. [!DNL Forms] Apri [!UICONTROL CRXDE Lite]. Toccate AEM Logo > **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]** oppure aprite l’URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in un browser per aprire CRXDE Lite.
+1. Accedete a AEM l&#39;istanza di creazione [!DNL Forms] come amministratore. Aprire [!UICONTROL CRXDE Lite]. Toccate AEM Logo > **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]** oppure aprite l&#39;URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in un browser per aprire CRXDE Lite.
 
-1. Andate a /etc/clientlibs in [!UICONTROL CRXDE Lite]. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Nel campo **[!UICONTROL Nome]** digitare **WeRetailFormTestCase**. Selezionare il tipo come **cq:ClientLibraryFolder** e fare clic su **[!UICONTROL OK]**. Crea un nodo. Potete usare qualsiasi nome al posto di `WeRetailFormTestCases`.
-1. Aggiungi le seguenti proprietà al `WeRetailFormTestCases` nodo e tocca **[!UICONTROL Salva tutto]**.
+1. Andate a /etc/clientlibs in [!UICONTROL CRXDE Lite]. Fare clic con il pulsante destro del mouse sulla sottocartella /etc/clientlibs e scegliere **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**. Nel campo **[!UICONTROL Name]** digitare **WeRetailFormTestCase**. Selezionare il tipo come **cq:ClientLibraryFolder** e fare clic su **[!UICONTROL OK]**. Crea un nodo. È possibile utilizzare qualsiasi nome al posto di `WeRetailFormTestCases`.
+1. Aggiungete le seguenti proprietà al nodo `WeRetailFormTestCases` e toccate **[!UICONTROL Salva ALL]**.
 
    <table>
     <tbody>
@@ -75,7 +75,7 @@ Le suite di test dispongono di una raccolta di casi di test. Potete avere più s
 
    ![dipendenze](assets/dependencies.png)
 
-1. Fare clic con il pulsante destro del mouse sul nodo **[!UICONTROL WeRetailFormTestCase]** , fare clic su **[!UICONTROL Crea]** > **[!UICONTROL Crea file]**. Nel campo **[!UICONTROL Nome]** , digitare `js.txt` e fare clic su **[!UICONTROL OK]**.
+1. Fare clic con il pulsante destro del mouse sul nodo **[!UICONTROL WeRetailFormTestCase]** fare clic su **[!UICONTROL Crea]** > **[!UICONTROL Crea file]**. Nel campo **[!UICONTROL Name]** digitare `js.txt` e fare clic su **[!UICONTROL OK]**.
 1. Aprite il file js.txt per la modifica, aggiungete il codice seguente e salvate il file:
 
    ```text
@@ -83,7 +83,7 @@ Le suite di test dispongono di una raccolta di casi di test. Potete avere più s
     init.js
    ```
 
-1. Create un file, init.js, nel `WeRetailFormTestCases`nodo. Aggiungi il codice seguente al file e tocca **[!UICONTROL Salva tutto]**.
+1. Create un file, init.js, nel nodo `WeRetailFormTestCases`. Aggiungete il codice seguente al file e toccate **[!UICONTROL Salva tutto]**.
 
    ```javascript
    (function(window, hobs) {
@@ -99,9 +99,9 @@ Le suite di test dispongono di una raccolta di casi di test. Potete avere più s
    }(window, window.hobs));
    ```
 
-   Il codice riportato sopra crea una suite di test denominata **We retail - Test**.
+   Il codice riportato sopra crea una suite di test denominata **We retail - Tests**.
 
-1. Aprite AEM’interfaccia utente di test (AEM > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Test]**). La suite di test - **We retail - Test** - è elencata nell&#39;interfaccia utente.
+1. Aprite AEM interfaccia utente di test (AEM > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Test]**). La suite di test - **We retail - Test** - è elencata nell&#39;interfaccia utente.
 
    ![we-retail-test-suite](assets/we-retail-test-suite.png)
 
@@ -111,7 +111,7 @@ Un test case è un insieme di azioni per testare una funzionalità specifica. Ad
 
 Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fare clic su un pulsante. Per creare un caso di test e azioni per convalidare l’input dell’utente per ciascun campo modulo adattivo:
 
-1. In [!UICONTROL CRXDE lite], andate alla `/content/forms/af/create-first-adaptive-form` cartella. Fare clic con il pulsante destro del mouse sul nodo della cartella **[!UICONTROL create-first-adaptive-form]** e scegliere **[!UICONTROL Crea]**> **[!UICONTROL Crea file]**. Nel campo **[!UICONTROL Nome]** , digitare `prefill.xml` e fare clic su **[!UICONTROL OK]**. Aggiungi al file il codice seguente:
+1. In [!UICONTROL CRXDE lite], passare alla cartella `/content/forms/af/create-first-adaptive-form`. Fare clic con il pulsante destro del mouse sul nodo di cartella **[!UICONTROL create-first-adaptive-form]** e scegliere **[!UICONTROL Crea]** **[!UICONTROL Crea file]**. Nel campo **[!UICONTROL Name]** digitare `prefill.xml` e fare clic su **[!UICONTROL OK]**. Aggiungi al file il codice seguente:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -130,11 +130,11 @@ Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fa
    </afData>
    ```
 
-1. Accedi a `/etc/clientlibs`. Fare clic con il pulsante destro del mouse sulla `/etc/clientlibs` sottocartella e scegliere **[!UICONTROL Crea]**> **[!UICONTROL Crea nodo]**.
+1. Accedi a `/etc/clientlibs`. Fare clic con il pulsante destro del mouse sulla sottocartella `/etc/clientlibs` e scegliere **[!UICONTROL Crea]**> **[!UICONTROL Crea nodo]**.
 
-   Nel campo **[!UICONTROL Nome]** digitare `WeRetailFormTests`. Selezionate il tipo come `cq:ClientLibraryFolder` e fate clic su **[!UICONTROL OK]**.
+   Nel campo **[!UICONTROL Name]** digitare `WeRetailFormTests`. Selezionare il tipo come `cq:ClientLibraryFolder` e fare clic su **[!UICONTROL OK]**.
 
-1. Aggiungete le seguenti proprietà al nodo **[!UICONTROL WeRetailFormTest]** .
+1. Aggiungete le seguenti proprietà al nodo **[!UICONTROL WeRetailFormTest]**.
 
    <table>
     <tbody>
@@ -166,16 +166,16 @@ Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fa
      </tbody>
    </table>
 
-1. Create un file, js.txt, nel nodo **[!UICONTROL WeRetailFormTest]** . Aggiungete quanto segue al file:
+1. Create un file, js.txt, nel nodo **[!UICONTROL WeRetailFormTest]**. Aggiungete quanto segue al file:
 
    ```shell
    #base=.
    prefillTest.js
    ```
 
-   Fate clic su **[!UICONTROL Salva tutto]**.
+   Fare clic su **[!UICONTROL Salva tutto]**.
 
-1. Create un file, `prefillTest.js`, nel nodo **[!UICONTROL WeRetailFormTest]** . Aggiungi il codice seguente al file. Il codice crea un test case. Il test case precompila tutti i campi di un modulo e convalida alcuni campi per garantire che vengano immessi valori corretti.
+1. Create un file, `prefillTest.js`, nel nodo **[!UICONTROL WeRetailFormTest]**. Aggiungi il codice seguente al file. Il codice crea un test case. Il test case precompila tutti i campi di un modulo e convalida alcuni campi per garantire che vengano immessi valori corretti.
 
    ```javascript
    (function (window, hobs) {
@@ -209,27 +209,27 @@ Un&#39;azione è un&#39;attività specifica in un modulo adattivo, ad esempio fa
 
    Il test case viene creato e pronto per essere eseguito. È possibile creare test case per convalidare vari aspetti di un modulo adattivo, ad esempio per controllare l&#39;esecuzione dello script calculate, convalidare i pattern e convalidare l&#39;esperienza di invio di un modulo adattivo. Per informazioni su vari aspetti del test dei moduli adattivi, vedere verifica automatica dei moduli adattivi.
 
-## Passaggio 3: Eseguire tutti i test in una suite o singoli casi di test {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
+## Passaggio 3: Eseguire tutti i test in una suite o singoli test case {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
 
 Una suite di test può contenere più casi di test. Potete eseguire tutti i casi di test in una suite di test contemporaneamente o singolarmente. Quando eseguite un test, le icone indicano i risultati:
 
 * Un&#39;icona a forma di segno di spunta indica un test superato: ![save_icon](assets/save_icon.svg)
-* Un&#39;icona &quot;X&quot; indica un test non riuscito: ![close-icon](assets/close-icon.svg)
+* Un&#39;icona &quot;X&quot; indica un test non riuscito: ![icona di chiusura](assets/close-icon.svg)
 
-1. Passa all&#39;icona AEM > **[!UICONTROL Strumenti]**> **[!UICONTROL Operazioni]**> **[!UICONTROL Test]**
+1. Passare all&#39;icona AEM > **[!UICONTROL Strumenti]** **[!UICONTROL Operazioni]**> **[!UICONTROL Test]**
 1. Per eseguire tutti i test della suite di test:
 
-   1. Nel pannello [!UICONTROL Test] , toccate **[!UICONTROL We retail - Test (1)]**. La suite si espande per visualizzare l&#39;elenco dei test.
-   1. Toccate il pulsante **[!UICONTROL Esegui test]** . L&#39;area vuota sul lato destro dello schermo viene sostituita con un modulo adattivo durante l&#39;esecuzione del test.
+   1. Nel pannello [!UICONTROL Test], toccare **[!UICONTROL Vendita al dettaglio - Test (1)]**. La suite si espande per visualizzare l&#39;elenco dei test.
+   1. Toccate il pulsante **[!UICONTROL Esegui test]**. L&#39;area vuota sul lato destro dello schermo viene sostituita con un modulo adattivo durante l&#39;esecuzione del test.
 
       ![run-all-test](assets/run-all-test.png)
 
 1. Per eseguire un singolo test dalla suite di test:
 
-   1. Nel pannello Test, toccate **[!UICONTROL We retail - Test (1)]**. La suite si espande per visualizzare l&#39;elenco dei test.
-   1. Toccate il test di **[!UICONTROL precompilazione]** e toccate il pulsante **[!UICONTROL Esegui test]** . L&#39;area vuota sul lato destro dello schermo viene sostituita con un modulo adattivo durante l&#39;esecuzione del test.
+   1. Nel pannello Test, toccare **[!UICONTROL We retail - Test (1)]**. La suite si espande per visualizzare l&#39;elenco dei test.
+   1. Toccate il tasto **[!UICONTROL Precompila test]** e toccate il pulsante **[!UICONTROL Esegui test]**. L&#39;area vuota sul lato destro dello schermo viene sostituita con un modulo adattivo durante l&#39;esecuzione del test.
 
-1. Toccate il nome del test, Test di precompilazione, per esaminare i risultati del test case. Viene aperto il pannello [!UICONTROL Risultato] . Toccate il nome del test case nel pannello [!UICONTROL Risultato] per visualizzare tutti i dettagli del test.
+1. Toccate il nome del test, Test di precompilazione, per esaminare i risultati del test case. Apre il pannello [!UICONTROL Risultato]. Toccate il nome del caso di test nel pannello [!UICONTROL Risultato] per visualizzare tutti i dettagli del test.
 
    ![review-Results](assets/review-results.png)
 
