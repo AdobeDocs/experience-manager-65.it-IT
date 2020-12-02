@@ -1,8 +1,8 @@
 ---
 title: Utilizzo dei registri
 seo-title: Utilizzo dei registri
-description: Scopri come risolvere i problemi di AEM utilizzando i registri.
-seo-description: Scopri come risolvere i problemi di AEM utilizzando i registri.
+description: Scoprite come risolvere AEM utilizzando i file di registro.
+seo-description: Scoprite come risolvere AEM utilizzando i file di registro.
 uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,6 +12,9 @@ discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 3%
 
 ---
 
@@ -52,7 +55,7 @@ I livelli di registro sono i seguenti:
 | 2 | Avvertenza | L&#39;azione è riuscita ma ha incontrato dei problemi. CRX può funzionare o meno correttamente. |
 | 3 | Informazioni | L&#39;azione è riuscita. |
 
-## Opzioni dettagliate utilizzate per la risoluzione dei problemi {#verbose-option-used-for-troubleshooting}
+## Opzione dettagliata utilizzata per la risoluzione dei problemi {#verbose-option-used-for-troubleshooting}
 
 Quando avviate CRX, potete aggiungere l&#39;opzione -v (verbose) alla riga di comando come in:
 
