@@ -18,21 +18,21 @@ ht-degree: 3%
 ---
 
 
-# Rich Text Editor Essentials {#rich-text-editor-essentials}
+# Funzioni di base dell&#39;editor Rich Text {#rich-text-editor-essentials}
 
 ## Panoramica {#overview}
 
 Un editor Rich Text (RTE) consente di immettere testo con la marcatura.
 
-Per i componenti Community, anche se simili all’editor di testo [RTF nell’ambiente](../../help/sites-authoring/rich-text-editor.md)di authoring, questo incide sul testo immesso nell’ambiente di pubblicazione.
+Per i componenti Community, anche se simili all&#39;editor di testo RTF [nell&#39;ambiente di authoring](../../help/sites-authoring/rich-text-editor.md), questo incide sul testo immesso nell&#39;ambiente di pubblicazione.
 
 ![editor Rich Text](assets/rich-text-editor.png)
 
 ## Abilitazione dell&#39;editor Rich Text {#enabling-rich-text-editor}
 
-È possibile abilitare i componenti community che consentono l’editor Rich Text per contenuti generati dall’utente (UGC). A seconda che il componente sia stato aggiunto a una pagina o incluso in una [funzione](functions.md), per impostazione predefinita l’editor Rich Text potrebbe non essere abilitato.
+È possibile abilitare i componenti community che consentono l’editor Rich Text per contenuti generati dall’utente (UGC). A seconda che il componente sia stato aggiunto a una pagina o incluso in una [funzione](functions.md), l&#39;editor Rich Text potrebbe non essere abilitato per impostazione predefinita.
 
-Se non è abilitata, è sufficiente attivare la modalità [di modifica](sites-console.md#authoring-site-content)dell’autore, selezionare il componente per la modifica e selezionare la `Rich Text Editor` casella di controllo.
+Se non è abilitata, è sufficiente immettere [modalità di modifica dell&#39;autore](sites-console.md#authoring-site-content), selezionare il componente per la modifica e selezionare la casella di controllo `Rich Text Editor`.
 
 L&#39;editor Rich Text è disponibile per i seguenti componenti Community:
 
@@ -47,9 +47,9 @@ L&#39;editor Rich Text è disponibile per i seguenti componenti Community:
 
 ## Personalizzazione {#customization}
 
-È possibile personalizzare l’editor Rich Text in quanto l’implementazione è basata su [CKEditor](https://www.ckeditor.com/).
+È possibile personalizzare l&#39;editor Rich Text in quanto l&#39;implementazione è basata su [CKEditor](https://www.ckeditor.com/).
 
-La configurazione corrente per i componenti Community si trova nel `cq.social.  scf   clientlib`, nella directory archivio all&#39;indirizzo
+La configurazione corrente per i componenti Community si trova nel `cq.social.  scf   clientlib`, situato nella directory archivio all&#39;indirizzo
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -63,7 +63,7 @@ Per aggiungere le opzioni relative al collegamento ipertestuale alla barra degli
 
 * Aggiungere una barra degli strumenti denominata &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Seleziona **[!UICONTROL Salva tutto]**
+* Selezionare **[!UICONTROL Salva tutto]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 
