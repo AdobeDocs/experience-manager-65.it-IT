@@ -12,19 +12,22 @@ topic-tags: operations
 discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 1%
 
 ---
 
 
-# Assemblare documenti PDF {#assembling-pdf-documents}
+# Assemblaggio di documenti PDF {#assembling-pdf-documents}
 
 **Informazioni su Assembler Service**
 
 Il servizio Assembler può assemblare più documenti PDF in un unico documento PDF o smontare un documento PDF in più documenti PDF. Il servizio Assembler può manipolare i documenti in vari modi, ad esempio modificando le dimensioni della pagina e ruotando il contenuto. Può inserire contenuto aggiuntivo, come intestazioni, piè di pagina e un sommario, e può conservare, importare o esportare contenuto esistente, come annotazioni, allegati di file e segnalibri.
 
-A partire da LiveCycle ES 8.0 e versioni successive, il supporto per i pacchetti PDF è disponibile nel servizio Assembler.
+A partire dall&#39;LiveCycle ES 8.0 e versioni successive, il supporto per i pacchetti PDF è disponibile nel servizio Assembler.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul servizio Assembler, consultate Guida di riferimento [ai servizi per AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Per ulteriori informazioni sul servizio Assembler, vedere [Guida di riferimento dei servizi per  AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
