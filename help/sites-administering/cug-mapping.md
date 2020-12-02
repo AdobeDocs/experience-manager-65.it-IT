@@ -33,12 +33,12 @@ ht-degree: 1%
   <tr>
    <td><p>Proprietà: cq:cugEnabled</p> <p>Dichiarazione del tipo di nodo: N/D, proprietà residua</p> </td>
    <td><p>Autorizzazione:</p> <p>Nodo: rep:cugPolicy di tipo nodo rep:CugPolicy</p> <p>Dichiarazione del tipo di nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticazione:</p> <p>Tipo di mixin: granite:AuthenticationRequired</p> </td>
-   <td><p>Per limitare l'accesso in lettura, al nodo di destinazione viene applicato un criterio CUG dedicato.</p> <p>NOTA: I criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>i nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando chiamate API JCR regolari; utilizzate invece la gestione del controllo di accesso JCR.</p> <p>Consulta <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a> per ulteriori informazioni.</p> <p>Per applicare i requisiti di autenticazione su un nodo è sufficiente aggiungere il tipo di mixin granite:AuthenticationRequired.</p> <p>NOTA: Rispettato solo sotto i percorsi supportati configurati.</p> </td>
+   <td><p>Per limitare l'accesso in lettura, al nodo di destinazione viene applicato un criterio CUG dedicato.</p> <p>NOTA: I criteri possono essere applicati solo ai percorsi supportati configurati.</p> <p>i nodi con nome rep:cugPolicy e tipo rep:CugPolicy sono protetti e non possono essere scritti utilizzando chiamate API JCR regolari; utilizzate invece la gestione del controllo di accesso JCR.</p> <p>Per ulteriori informazioni, vedere <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">questa pagina</a>.</p> <p>Per applicare i requisiti di autenticazione su un nodo è sufficiente aggiungere il tipo di mixin granite:AuthenticationRequired.</p> <p>NOTA: Rispettato solo sotto i percorsi supportati configurati.</p> </td>
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugPrincipals</p> <p>Dichiarazione del tipo di nodo: NA, proprietà residua</p> </td>
    <td><p>Proprietà: rep:principalNames</p> <p>Dichiarazione del tipo di nodo: rep:CugPolicy</p> </td>
-   <td><p>La proprietà contenente i nomi delle entità autorizzate a leggere il contenuto al di sotto del CUG limitato è protetta e non può essere scritta utilizzando chiamate API JCR regolari; utilizzate invece la gestione del controllo di accesso JCR.</p> <p>Per <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">ulteriori dettagli sull’implementazione, consultate questa pagina</a> .</p> </td>
+   <td><p>La proprietà contenente i nomi delle entità autorizzate a leggere il contenuto al di sotto del CUG limitato è protetta e non può essere scritta utilizzando chiamate API JCR regolari; utilizzate invece la gestione del controllo di accesso JCR.</p> <p>Per ulteriori informazioni sull'implementazione, vedere <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">questa pagina</a>.</p> </td>
   </tr>
   <tr>
    <td><p>Proprietà: cq:cugLoginPage</p> <p>Dichiarazione del tipo di nodo: NA, proprietà residua</p> </td>
@@ -53,7 +53,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## Confronto dei servizi OSGi {#comparison-of-osgi-services}
+## Confronto tra OSGi Services {#comparison-of-osgi-services}
 
 **Versioni AEM precedenti**
 
@@ -89,7 +89,7 @@ Servizio per configurare l&#39;elenco di esclusione delle entità che non dovreb
 
    >[!NOTE]
    > 
-   >Se `CugExcludeImpl` non è configurata, `CugConfiguration` tornerà all&#39;impostazione predefinita.
+   >Se la `CugExcludeImpl` non è configurata, la `CugConfiguration` tornerà all&#39;impostazione predefinita.
 
    È possibile collegare un&#39;implementazione personalizzata di CugExclude in caso di esigenze specifiche.
 
