@@ -1,8 +1,8 @@
 ---
 title: Come utilizzare lo strumento VLT
 seo-title: Come utilizzare lo strumento VLT
-description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM nel file system
-seo-description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM nel file system
+description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM al file system
+seo-description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da Apache Foundation che mappa il contenuto di un'istanza Jackrabbit/AEM al file system
 uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,40 +11,43 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 2%
 
 ---
 
 
 # Come utilizzare lo strumento VLT {#how-to-use-the-vlt-tool}
 
-Lo strumento Jackrabbit FileVault (VLT) è uno strumento sviluppato da [Apache Foundation](https://www.apache.org/) che mappa il contenuto di un&#39;istanza Jackrabbit/AEM nel file system. Lo strumento VLT ha funzioni simili a quelle del client del sistema di controllo del codice sorgente (come un client Subversion (SVN)), che fornisce le normali operazioni di check-in, check-out e gestione, nonché opzioni di configurazione per una rappresentazione flessibile del contenuto del progetto.
+Lo strumento Jackrabbit FileVault (VLT) è uno strumento sviluppato da [Apache Foundation](https://www.apache.org/) che mappa il contenuto di un&#39;istanza Jackrabbit/AEM al file system. Lo strumento VLT ha funzioni simili a quelle del client del sistema di controllo del codice sorgente (come un client Subversion (SVN)), che fornisce le normali operazioni di check-in, check-out e gestione, nonché opzioni di configurazione per una rappresentazione flessibile del contenuto del progetto.
 
-Lo strumento VLT viene eseguito dalla riga di comando. Questo documento descrive come utilizzare lo strumento, incluso come iniziare e ricevere assistenza, nonché un elenco di tutti i [comandi](#vlt-commands) e [le opzioni](#vlt-global-options)disponibili.
+Lo strumento VLT viene eseguito dalla riga di comando. Questo documento descrive come utilizzare lo strumento, incluso come iniziare e ottenere assistenza, nonché un elenco di tutti i [comandi](#vlt-commands) e le opzioni [disponibili](#vlt-global-options).
 
 ## Concetti e architettura {#concepts-and-architecture}
 
-Consulta la pagina [Filevault Overview](https://jackrabbit.apache.org/filevault/overview.html) and [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) della documentazione [ufficiale](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault per una panoramica completa dei concetti e della struttura dello strumento Filevault.
+Per una panoramica completa dei concetti e della struttura dello strumento Filevault, vedere la pagina [Filevault Overview](https://jackrabbit.apache.org/filevault/overview.html) and [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) della documentazione ufficiale [Apache Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/index.html).
 
 ## Guida introduttiva a VLT {#getting-started-with-vlt}
 
 Per iniziare a utilizzare VLT, è necessario effettuare le seguenti operazioni:
 
 1. Installate VLT, aggiornate le variabili di ambiente e aggiornate i file di sovversione ignorati globali.
-1. Configurate l’archivio AEM (se non lo avete già fatto).
-1. Controllate l&#39;archivio AEM.
+1. Configurate l&#39;archivio AEM (se non lo avete già fatto).
+1. Esaminare il repository AEM.
 1. Sincronizzare con la directory archivio.
 1. Verificare il funzionamento della sincronizzazione.
 
-### Installazione di VLT Tool {#installing-the-vlt-tool}
+### Installazione dello strumento VLT {#installing-the-vlt-tool}
 
 Per utilizzare lo strumento VLT, è prima necessario installarlo. Per impostazione predefinita, non è installato in quanto è uno strumento aggiuntivo. Inoltre, è necessario impostare la variabile di ambiente del sistema.
 
-1. Scaricare il file di archivio FileVault dall&#39;archivio [Maven artifact.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
+1. Scaricare il file di archivio FileVault dal repository degli artifact di [Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >L&#39;origine dello strumento VLT è [disponibile su GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Estrarre l&#39;archivio.
-1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file dei comandi `vlt` o `vlt.bat` siano accessibili come appropriato. Esempio:
+1. Aggiungere `<archive-dir>/vault-cli-<version>/bin` all&#39;ambiente `PATH` in modo che i file di comando `vlt` o `vlt.bat` siano accessibili a seconda delle necessità. Esempio:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -91,7 +94,7 @@ VLT gestisce automaticamente End of Line (EOF) in base alle seguenti regole:
 * linee di file estratti su Linux/Unix con un `LF`
 * righe di file inviate alla fine del repository con un `LF`
 
-Per garantire la corrispondenza tra la configurazione VLT e SVN, è necessario impostare la `svn:eol-style` proprietà su `native` per l&#39;estensione dei file memorizzati nella directory archivio. Modificate le impostazioni di salvataggio e aggiungete quanto segue:
+Per garantire la corrispondenza tra la configurazione VLT e SVN, impostare la proprietà `svn:eol-style` su `native` per l&#39;estensione dei file memorizzati nella directory archivio. Modificate le impostazioni di salvataggio e aggiungete quanto segue:
 
 ```xml
 [auto-props]
@@ -116,12 +119,12 @@ Estrarre il repository utilizzando il sistema di controllo del codice sorgente. 
 svn co https://svn.server.com/repos/myproject
 ```
 
-### Sincronizzazione con l&#39;archivio {#synchronizing-with-the-repository}
+### Sincronizzazione con il repository {#synchronizing-with-the-repository}
 
 È necessario sincronizzare l&#39;archivio dei file con l&#39;archivio. Per effettuare ciò:
 
 1. Nella riga di comando, passare a `content/jcr_root`.
-1. Per controllare il repository, digitate il seguente testo (sostituendo il numero di porta a **4502** e le password dell&#39;amministratore):
+1. Per controllare il repository, digitate il seguente numero di porta (sostituendo il numero **4502** con le password dell&#39;amministratore):
 
    ```shell
    vlt --credentials admin:admin co --force http://localhost:4502/crx
@@ -129,16 +132,16 @@ svn co https://svn.server.com/repos/myproject
 
    >[!NOTE]
    >
-   >Le credenziali devono essere specificate una sola volta al momento dell&#39;estrazione iniziale. Saranno quindi memorizzati nella directory principale all&#39;interno `.vault/auth.xml`.
+   >Le credenziali devono essere specificate una sola volta al momento dell&#39;estrazione iniziale. Saranno quindi memorizzati nella directory principale all&#39;interno di `.vault/auth.xml`.
 
 ### Verifica del funzionamento della sincronizzazione {#testing-whether-the-synchronization-worked}
 
-Dopo aver estratto l&#39;archivio e averlo sincronizzato, è necessario verificare che tutto funzioni correttamente. Un modo semplice per farlo è modificare un file **.jsp** e vedere se le modifiche vengono applicate dopo il commit delle modifiche.
+Dopo aver estratto l&#39;archivio e averlo sincronizzato, è necessario verificare che tutto funzioni correttamente. Un modo semplice per farlo è modificare un file **.jsp** e verificare se le modifiche vengono applicate dopo il commit delle modifiche.
 
 Per verificare la sincronizzazione:
 
 1. Accedi a `.../jcr_content/libs/foundation/components/text`.
-1. Modificate qualcosa in `text.jsp`.
+1. Modificate un elemento in `text.jsp`.
 1. Visualizzare i file modificati digitando `vlt st`
 1. Visualizzare le modifiche digitando `vlt diff text.jsp`
 1. Conferma le modifiche: `vlt ci test.jsp`.
@@ -217,17 +220,17 @@ Di seguito sono riportate alcune attività comuni eseguite in VLT. Per informazi
 
 ### Estrazione di una sottostruttura {#checking-out-a-subtree}
 
-Se desiderate ad esempio estrarre solo una sottostruttura dell&#39;archivio, `/apps/geometrixx`digitate quanto segue:
+Se si desidera estrarre solo una sottostruttura dell&#39;archivio, ad esempio `/apps/geometrixx`, è possibile eseguire questa operazione digitando quanto segue:
 
 ```shell
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 ```
 
-In questo modo si crea una nuova radice di esportazione `geo` con una `META-INF` directory e `jcr_root` e si inseriscono tutti i file `/apps/geometrixx` in `geo/jcr_root`.
+In questo modo si crea una nuova radice di esportazione `geo` con una directory `META-INF` e `jcr_root` e tutti i file vengono inseriti sotto `/apps/geometrixx` in `geo/jcr_root`.
 
 ### Esecuzione di un checkout filtrato {#performing-a-filtered-checkout}
 
-Se disponete di un filtro dell&#39;area di lavoro esistente e desiderate utilizzarlo per il checkout, potete prima creare la `META-INF/vault` directory e inserire il filtro in tale area oppure specificarlo sulla riga di comando come segue:
+Se disponete di un filtro dell&#39;area di lavoro esistente e desiderate utilizzarlo per il checkout, potete prima creare la directory `META-INF/vault` e inserire il filtro in tale area oppure specificarlo sulla riga di comando come segue:
 
 ```shell
 $ vlt co --filter filter.xml http://localhost:4502/crx/-/jcr:root geo
@@ -243,11 +246,11 @@ Esempio di filtro:
 </workspaceFilter>
 ```
 
-### Utilizzo di Importa/Esporta al posto del controllo .vlt {#using-import-export-instead-of-vlt-control}
+### Utilizzo di Importa/Esporta invece del controllo .vlt {#using-import-export-instead-of-vlt-control}
 
 È possibile importare ed esportare contenuti tra un repository JCR e il file system locale senza utilizzare file di controllo.
 
-Per importare ed esportare contenuti senza ricorrere al `.vlt` controllo:
+Per importare ed esportare contenuti senza utilizzare il controllo `.vlt`:
 
 1. Configurare inizialmente la directory archivio:
 
@@ -362,7 +365,7 @@ vlt export http://localhost:4502/crx /apps/geometrixx myproject
 
 ### Importa {#import}
 
-Importa il file system locale (a partire `<local-path>` dal file system vault in `<uri>`. È possibile specificare una radice `<jcr-path>` di importazione. Se `--sync` viene specificato, i file importati vengono automaticamente messi sotto controllo vault.
+Importa il file system locale (a partire da `<local-path>` nel file system vault in corrispondenza di `<uri>`. È possibile specificare `<jcr-path>` come radice di importazione. Se si specifica `--sync`, i file importati vengono automaticamente sottoposti al controllo vault.
 
 #### Sintassi {#syntax-1}
 
@@ -402,7 +405,7 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 |--- |--- |
 | `--force` | forza il checkout per sovrascrivere i file locali, se già esistenti |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-f (--filter) <file>` | specifica i filtri automatici se non ne sono definiti nessuno |
 | `<uri>` | uri di montagna |
 | `<jcrPath>` | (facoltativo) percorso remoto |
@@ -442,16 +445,16 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf per i collegamenti con hotfix (nome, id, ad esempio) `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf per i collegamenti con hotfix (nome,id), ad esempio `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `<localPaths> [<localPaths> ...]` | percorso locale |
 
 ### Stato {#status}
 
 Stampa lo stato dei file di copia di lavoro e delle directory.
 
-Se `--show-update` viene specificato, ogni file viene controllato rispetto alla versione remota. La seconda lettera specifica quindi quale azione verrà eseguita da un&#39;operazione di aggiornamento.
+Se si specifica `--show-update`, ogni file viene controllato rispetto alla versione remota. La seconda lettera specifica quindi quale azione verrà eseguita da un&#39;operazione di aggiornamento.
 
 #### Sintassi {#syntax-4}
 
@@ -464,7 +467,7 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-u (--show-update)` | visualizza informazioni di aggiornamento |
 | `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `<file> [<file> ...]` | file o directory per visualizzare lo stato |
@@ -484,7 +487,7 @@ update -v|-q|--force|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `--force` | forza la sovrascrittura dei file locali |
 | `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `<file> [<file> ...]` | file o directory da aggiornare |
@@ -504,7 +507,7 @@ info -v|-q|-R <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-R (--recursive)` | opera ricorsiva |
 | `<file> [<file> ...]` | file o directory per visualizzare le informazioni |
 
@@ -523,7 +526,7 @@ commit -v|-q|--force|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `--force` | forza il commit anche se la copia remota viene modificata |
 | `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `<file> [<file> ...]` | file o directory da impegnare |
@@ -542,13 +545,13 @@ revert -q|-R <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<file> [<file> ...]` | file o directory da impegnare |
 
 ### Risolto {#resolved}
 
-Rimuove lo stato **in conflitto** durante il lavoro dei file o delle directory di copia.
+Rimuove lo stato **in conflitto** per i file o le directory di copia di lavoro.
 
 >[!NOTE]
 >
@@ -564,7 +567,7 @@ resolved -q|-R|--force <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `--force` | risolve, anche in presenza di indicatori di conflitto |
 | `<file> [<file> ...]` | file o directory da risolvere |
@@ -583,7 +586,7 @@ propget -q|-R <propname> <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<propname>` | il nome della proprietà |
 | `<file> [<file> ...]` | file o directory da cui ottenere la proprietà |
@@ -602,11 +605,11 @@ proplist -q|-R <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<file> [<file> ...]` | file o directory per elencare le proprietà da |
 
-### Proset {#propset}
+### Progetti {#propset}
 
 Imposta il valore di una proprietà su file o directory.
 
@@ -628,7 +631,7 @@ propset -q|-R <propname> <propval> <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-R (--recursive)` | discendenti ricorsivamente |
 | `<propname>` | il nome della proprietà |
 | `<propval>` | il valore della proprietà |
@@ -649,7 +652,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `-N (--non-recursive)` | opera su un&#39;unica directory |
 | `--force` | forza l&#39;esecuzione dell&#39;operazione |
 | `<file> [<file> ...]` | file o directory locale da aggiungere |
@@ -669,7 +672,7 @@ delete -v|-q|--force <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | output dettagliato |
-| `-q (--quiet)` | stampa il minor numero possibile |
+| `-q (--quiet)` | il minor numero possibile di stampe |
 | `--force` | forza l&#39;esecuzione dell&#39;operazione |
 | `<file> [<file> ...]` | file o directory locale da eliminare |
 
@@ -708,7 +711,7 @@ console -F <file>
 
 ### Rcp {#rcp}
 
-Copia una struttura di nodi da un repository remoto a un altro. `<src>` punta al nodo di origine e `<dst>` specifica il percorso di destinazione, dove deve esistere il nodo principale. Rcp elabora i nodi eseguendo lo streaming dei dati.
+Copia una struttura di nodi da un repository remoto a un altro. `<src>` punta al nodo di origine e  `<dst>` specifica il percorso di destinazione, dove deve esistere il nodo principale. Rcp elabora i nodi eseguendo lo streaming dei dati.
 
 #### Sintassi {#syntax-17}
 
@@ -738,7 +741,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->Le `--exclude` opzioni devono essere seguite da un&#39;altra opzione prima degli `<src>` argomenti e `<dst>` . Esempio:
+>Le opzioni `--exclude` devono essere seguite da un&#39;altra opzione prima degli argomenti `<src>` e `<dst>`. Esempio:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
@@ -787,9 +790,9 @@ Il servizio di sincronizzazione di archivi viene utilizzato per sincronizzare il
 
 ### Installazione del servizio tramite vlt {#installing-the-service-using-vlt}
 
-Il `vlt sync install` comando può essere utilizzato per installare automaticamente il bundle e la configurazione del servizio di sincronizzazione di volta in volta.
+Il comando `vlt sync install` può essere utilizzato per installare automaticamente il bundle del servizio di sincronizzazione di archivi e la configurazione.
 
-Il bundle viene installato di seguito `/libs/crx/vault/install` e il nodo di configurazione viene creato in `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Inizialmente il servizio è attivato ma non sono configurate radici di sincronizzazione.
+Il bundle viene installato sotto `/libs/crx/vault/install` e il nodo di configurazione viene creato in `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Inizialmente il servizio è attivato ma non sono configurate radici di sincronizzazione.
 
 L&#39;esempio seguente installa il servizio di sincronizzazione nell&#39;istanza CRX accessibile dall&#39;URI specificato.
 
@@ -799,7 +802,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### Visualizzazione dello stato del servizio {#displaying-the-service-status}
 
-Il `status` comando può essere utilizzato per visualizzare informazioni sul servizio di sincronizzazione in esecuzione. &quot;
+Il comando `status` può essere utilizzato per visualizzare informazioni sul servizio di sincronizzazione in esecuzione. &quot;
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx
@@ -811,11 +814,11 @@ Listing sync status for http://localhost:4502/crx/server/-/jcr:root
 
 >[!NOTE]
 >
->Il `status` comando non recupera dati dal servizio, ma legge la configurazione in `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
+>Il comando `status` non recupera dati dal servizio, ma legge la configurazione in `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
 
 ### Aggiunta di una cartella di sincronizzazione {#adding-a-sync-folder}
 
-Il `register` comando viene utilizzato per aggiungere una cartella da sincronizzare con la configurazione.
+Il comando `register` viene utilizzato per aggiungere una cartella da sincronizzare alla configurazione.
 
 ```shell
 $ vlt sync register
@@ -825,11 +828,11 @@ Added new sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->Il `register` comando non attiva la sincronizzazione finché non configuri la `sync-once` configurazione.
+>Il comando `register` non attiva la sincronizzazione finché non si configura la configurazione `sync-once`.
 
 ### Rimozione di una cartella di sincronizzazione {#removing-a-sync-folder}
 
-Il `unregister` comando viene utilizzato per rimuovere dalla configurazione una cartella da sincronizzare.
+Il comando `unregister` viene utilizzato per rimuovere dalla configurazione una cartella da sincronizzare.
 
 ```shell
 $  vlt sync unregister
@@ -843,7 +846,7 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 ### Configurazione della sincronizzazione {#configuring-synchronization}
 
-#### Service configuration {#service-configuration}
+#### Configurazione del servizio {#service-configuration}
 
 Una volta che il servizio è in esecuzione, può essere configurato con i seguenti parametri:
 
@@ -854,9 +857,9 @@ Una volta che il servizio è in esecuzione, può essere configurato con i seguen
 
 >[!NOTE]
 >
->Il servizio può essere configurato con la console Web o con un `sling:OsgiConfig` nodo (con il nome `com.day.jcr.sync.impl.VaultSyncServiceImpl`) nella directory archivio.
+>Il servizio può essere configurato con la console Web o con un nodo `sling:OsgiConfig` (con il nome `com.day.jcr.sync.impl.VaultSyncServiceImpl`) nella directory archivio.
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+>Quando lavorate con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per informazioni dettagliate, consultate [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Sincronizza configurazione cartella {#sync-folder-configuration}
 
@@ -865,18 +868,18 @@ Ogni cartella di sincronizzazione memorizza configurazione e stato in tre file:
 * `.vlt-sync-config.properties`: file di configurazione.
 
 * `.vlt-sync.log`: file di registro contenente informazioni sulle operazioni eseguite durante la sincronizzazione.
-* `.vlt-sync-filter.xml`: filtri che definiscono quali porzioni del repository vengono sincronizzate. Il formato di questo file è descritto dalla sezione [Esecuzione di un checkout](#performing-a-filtered-checkout) filtrato.
+* `.vlt-sync-filter.xml`: filtri che definiscono quali porzioni del repository vengono sincronizzate. Il formato di questo file è descritto dalla sezione [Esecuzione di un checkout filtrato](#performing-a-filtered-checkout).
 
-Il `.vlt-sync-config.properties` file consente di configurare le seguenti proprietà:
+Il file `.vlt-sync-config.properties` consente di configurare le seguenti proprietà:
 
-**disattivato** Attiva o disattiva la sincronizzazione. Per impostazione predefinita, questo parametro è impostato su false per consentire la sincronizzazione.
+**** disabledAttiva o disattiva la sincronizzazione. Per impostazione predefinita, questo parametro è impostato su false per consentire la sincronizzazione.
 
-**sync-once** Se non è vuoto la scansione successiva sincronizzerà la cartella nella direzione specificata, il parametro verrà cancellato. Sono supportati due valori:
+**sync-** onceSe non è vuoto la scansione successiva sincronizzerà la cartella nella direzione specificata, il parametro verrà cancellato. Sono supportati due valori:
 
 * `JCR2FS`: esporta tutto il contenuto nell&#39;archivio JCR e scrive sul disco locale.
 * `FS2JCR`: importa tutto il contenuto dal disco nell&#39;archivio JCR.
 
-**sync-log** Definisce il nome del file di registro. Per impostazione predefinita, il valore è .vlt-sync.log
+**sync-** logDefinisce il nome del file di registro. Per impostazione predefinita, il valore è .vlt-sync.log
 
 ### Utilizzo della sincronizzazione VLT per lo sviluppo {#using-vlt-sync-for-development}
 
@@ -890,7 +893,7 @@ Per impostare un ambiente di sviluppo basato su una cartella di sincronizzazione
 
    >[!NOTE]
    >
-   >Potete utilizzare i filtri solo per estrarre i percorsi appropriati. Per informazioni, vedere [Esecuzione di un checkout](#performing-a-filtered-checkout) filtrato.
+   >Potete utilizzare i filtri solo per estrarre i percorsi appropriati. Per informazioni, vedere la sezione [Esecuzione di un checkout filtrato](#performing-a-filtered-checkout).
 
 1. Passate alla cartella principale della copia di lavoro:
 
@@ -921,7 +924,7 @@ Per impostare un ambiente di sviluppo basato su una cartella di sincronizzazione
    appropriate flag in the /Users/trushton/Applications/aem/vltsync/sandbox/dev/jcr_root/.vlt-sync-config.properties file.
    ```
 
-1. Modificate il file `.vlt-sync-config.properties` nascosto e configurate la sincronizzazione per sincronizzare il contenuto del repository:
+1. Modificate il file nascosto `.vlt-sync-config.properties` e configurate la sincronizzazione per sincronizzare il contenuto del repository:
 
    ```xml
    sync-once=JCR2FS
