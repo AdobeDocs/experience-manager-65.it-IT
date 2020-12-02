@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Estendi componente commenti  {#extend-comments-component}
+# Estendi componente commenti {#extend-comments-component}
 
-L’intenzione di [estendere](client-customize.md#extensions) un componente predefinito consiste nel modificare l’aspetto o il comportamento di un componente per usi specifici.
+L&#39;intenzione di [estendere](client-customize.md#extensions) un componente predefinito è di modificare l&#39;aspetto o il comportamento di un componente per usi specifici.
 
 Il percorso del componente è univoco e fa riferimento al componente predefinito come super tipo di risorsa. Il rischio è minore in quanto l’ambito è limitato rispetto all’ambito globale di una sovrapposizione di componente.
 
 >[!NOTE]
 >
->L’estensione di un componente [sovrapposto](client-customize.md#overlays) non è supportata.
+>L&#39;estensione di un componente [overlay](client-customize.md#overlays) non è supportata.
 
 ## Esempio {#example}
 
@@ -34,7 +34,7 @@ Supponiamo che l’intestazione del componente commento debba essere visualizzat
 
 Per implementare questa soluzione, crea un nuovo componente che estende (sostituisce) quello esistente e modifica lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quella estesa, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
 
-Il componente commento è in realtà uno dei due componenti che compongono il sistema di commenti. Esistono quindi due componenti da estendere: *commenti* e *commenti*. Lo script da modificare si trova nel *file del componente* commento `header.hbs` , mentre il componente *commenti* principale (il sistema dei commenti) è quello che un autore aggiunge alla pagina.
+Il componente commento è in realtà uno dei due componenti che compongono il sistema di commenti. Esistono quindi due componenti da estendere: *commenti* e *commenti*. Lo script da modificare si trova nel file *comment* del componente `header.hbs`, mentre il componente *comments* principale (il sistema dei commenti) è quello che un autore aggiunge alla pagina.
 
 Per estendere i commenti è necessario:
 
