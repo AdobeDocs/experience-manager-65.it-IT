@@ -11,11 +11,11 @@ ht-degree: 8%
 ---
 
 
-# Elenco AEM Delle Funzioni Di Esperienze Fluide{#aem-fluid-experiences-feature-list}
+# Elenco delle funzioni AEM esperienze fluide{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager Fluid Experiences si avvale delle potenti funzionalità di  AEM Sites, AEM Dynamic Media e  AEM Assets per offrire una soluzione affidabile per la distribuzione di contenuti senza precedenti.
 
-AEM Esperienze fluide si distingue dai AEM classici, in quanto vengono affrontati solo i casi di utilizzo headless. Le soluzioni per l&#39;authoring e la distribuzione di contenuti AEM e il supporto per casi di utilizzo ibridi sono disponibili con le soluzioni AEM Sites, Assets e Dynamic Media [complete .](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Esperienze fluide si distingue dai AEM classici, in quanto vengono affrontati solo i casi di utilizzo headless. Le soluzioni per l&#39;authoring e la distribuzione di contenuti di prima qualità e il supporto AEM per casi di utilizzo ibridi sono disponibili con le soluzioni [AEM Sites, Assets e Dynamic Media complete .](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 Le tabelle che seguono definiscono le caratteristiche delle esperienze AEM fluide e collegano alla documentazione di supporto pertinente.
 
@@ -37,7 +37,7 @@ Le tabelle che seguono definiscono le caratteristiche delle esperienze AEM fluid
 | [Rappresentazioni delle immagini](/help/assets/image-presets.md) |
 | [Gestione di metadati e tag](/help/assets/metadata.md) |
 | [Ricerca](/help/assets/manage-assets.md) |
-| [Raccolte](/help/assets/manage-assets.md) e [scatola luminosa](/help/assets/light-box.md) |
+| [](/help/assets/manage-assets.md) Raccolte e  [scatola luminosa](/help/assets/light-box.md) |
 | [Profili](/help/assets/processing-profiles.md) |
 | [Controllo versione](/help/assets/manage-assets.md) |
 | [Rilevamento di duplicati](/help/assets/duplicate-detection.md) |
@@ -72,7 +72,7 @@ Le tabelle che seguono definiscono le caratteristiche delle esperienze AEM fluid
 | [Flussi di lavoro](/help/sites-administering/workflows-starting.md) |
 | Connettività (servizi cloud) |
 
-## Analisi e personalizzazione {#analytics-and-personalization}
+## Analytics e personalizzazione {#analytics-and-personalization}
 
 |  |
 |---|
