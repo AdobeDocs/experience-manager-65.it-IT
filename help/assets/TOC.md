@@ -22,12 +22,12 @@ ht-degree: 39%
 + [Informazioni su DAM](assets.md)
 + [Best practice per le risorse](best-practices-for-assets.md)
 + [Accessibilità in [!DNL Assets]](accessibility.md)
-+ Utilizzare  risorse Experience Manager {#using}
++ Usa risorse  Experience Manager {#using}
    + [[!DNL Assets] esperienza home page](assets-home-page.md)
    + [Cercare risorse digitali](search-assets.md)
    + [Operazioni con i metadati delle risorse](metadata.md)
    + [Risorse in più lingue](multilingual-assets.md)
-   + [Risorse [!DNL Adobe Stock] da usare in Risorse](aem-assets-adobe-stock.md)
+   + [Risorse  [!DNL Adobe Stock] da usare in Risorse](aem-assets-adobe-stock.md)
    + [Anteprima delle risorse 3D](previewing-3d-assets.md)
    + [Esaminare raccolte e risorse delle cartelle](bulk-approval.md)
    + [Tag avanzati migliorati](enhanced-smart-tags.md)
@@ -87,11 +87,11 @@ ht-degree: 39%
    + [Personalizza ed estende [!DNL Assets]](extending-assets.md)
    + [Elaborazione delle risorse tramite gestori e flussi di lavoro di contenuti multimediali](media-handlers.md)
    + [Estendi funzionalità di ricerca](searchx.md)
-   + [Installazione e [!DNL ImageMagick] configurazione per l&#39;utilizzo [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installazione e  [!DNL ImageMagick] configurazione per l&#39;utilizzo [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrare le risorse con il flusso di attività](extending-activity-stream.md)
    + [Estendi editor risorse](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Supporto dei frammenti di contenuto [!DNL Assets] nell&#39;API HTTP](assets-api-content-fragments.md)
+   + [Supporto dei frammenti di contenuto  [!DNL Assets] nell&#39;API HTTP](assets-api-content-fragments.md)
    + [[!DNL Assets] sviluppo proxy](proxy.md)
 + Amministrazione delle risorse {#administer}
    + [Formati di file supportati](assets-formats.md)
@@ -141,7 +141,7 @@ ht-degree: 39%
    + [Frammenti di contenuto - Considerazioni sull’eliminazione](content-fragments/content-fragments-delete.md)
    + [Frammenti di contenuto - Markdown](content-fragments/content-fragments-markdown.md)
    + [Creazione di progetti di traduzione per i frammenti di contenuto](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Gestisci risorse {#managing}
    + [Consente di gestire i contenuti digitali](manage-assets.md)
    + [Gestire le raccolte](manage-collections.md)
    + [Abilita rilevamento duplicati](duplicate-detection.md)
