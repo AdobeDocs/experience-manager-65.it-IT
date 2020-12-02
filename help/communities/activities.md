@@ -19,11 +19,11 @@ ht-degree: 4%
 ---
 
 
-# Funzionalità Flussi di attività {#activity-streams-feature}
+# Funzionalità dei flussi di attività {#activity-streams-feature}
 
 ## Introduzione {#introduction}
 
-Le attività di un membro della comunità firmato, come l&#39;invio a un forum o blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi attraverso la configurazione del `Activity Streams` componente.
+Le attività di un membro della comunità firmato, come l&#39;invio a un forum o blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi attraverso la configurazione del componente `Activity Streams`.
 
 La possibilità di seguire aggiunge un&#39;altra visione delle attività quando i membri della comunità seguono i post di interesse o seguono le attività di altri membri della comunità.
 
@@ -34,25 +34,25 @@ Il documento descrive:
 
 ### Aggiunta di flussi di attività a una pagina {#adding-activity-streams-to-a-page}
 
-Se si desidera aggiungere un `Activity Streams` componente a una pagina in modalità di creazione, utilizzare il browser Componenti per individuare
+Se si desidera aggiungere un componente `Activity Streams` a una pagina in modalità di creazione, utilizzare il browser componenti per individuare
 
 * `Communities / Activity Streams`
 
 e trascinatelo nella stessa posizione in una pagina in cui dovrebbero essere visualizzati i flussi di attività.
 
-Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/essentials-activities.md#essentials-for-client-side) richieste, verrà visualizzato il `Activity Streams` componente:
+Quando vengono incluse le [librerie lato client ](/help/communities/essentials-activities.md#essentials-for-client-side), viene visualizzato il componente `Activity Streams`:
 
 ![activity-streams](assets/activity-component.png)
 
 ### Configurazione dei flussi di attività {#configuring-activity-streams}
 
-Selezionate il `Activity Streams` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Activity Streams` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![configure](assets/configure-new.png)
 
-Nella scheda Attività **** utente, specificate le attività da visualizzare:
+Nella scheda **Attività utente**, specificare le attività da visualizzare:
 
 ![attività degli utenti](assets/user-activities.png)
 
@@ -78,15 +78,15 @@ Nella scheda Attività **** utente, specificate le attività da visualizzare:
 
 ### Visualizzazione seguente {#following-view}
 
-I componenti devono essere configurati per abilitare quanto segue. Le funzioni che consentono di seguire sono [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filibreria](/help/communities/file-library.md)[](/help/communities/comments.md), commenti.
+I componenti devono essere configurati per abilitare quanto segue. Le funzioni che consentono di seguire sono [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md) e [commenti](/help/communities/comments.md).
 
 ![visualizzazione](assets/following-activities.png)
 
-Il pulsante **Segui** consente di seguire le voci come attività, [notifiche](/help/communities/notifications.md)o [iscrizioni](/help/communities/subscriptions.md). Ogni volta che si seleziona il pulsante **Segui** , è possibile attivare o disattivare una selezione. La `Email Subscriptions` selezione è presente solo se configurata.
+Il pulsante **Segui** consente di seguire le voci come attività, [notifiche](/help/communities/notifications.md) o [iscrizioni](/help/communities/subscriptions.md). Ogni volta che il tasto **Segui** è selezionato, è possibile attivare o disattivare una selezione. La selezione `Email Subscriptions` è presente solo se configurata.
 
-Se è selezionato un metodo di seguito, il testo del pulsante diventa **Seguente**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
+Se è selezionato un metodo di seguito, il testo del pulsante diventa **Successivo**. Per comodità, è possibile selezionare `Unfollow All` per disattivare tutti i metodi.
 
-Verrà visualizzato il pulsante **Segui** :
+Verrà visualizzato il pulsante **Segui**:
 
 * Visualizzando il profilo di un altro membro.
 * In una pagina delle funzioni principali, ad esempio forum, QnA e blog.
