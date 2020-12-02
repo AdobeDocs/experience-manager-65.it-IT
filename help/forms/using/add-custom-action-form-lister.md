@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Aggiunta di un&#39;azione personalizzata agli elementi del modulo{#adding-custom-action-on-form-lister-items}
+# Aggiunta di un&#39;azione personalizzata agli elementi dell&#39;elenco moduli{#adding-custom-action-on-form-lister-items}
 
-In AEM Forms, è possibile creare una pagina del portale in cui sono elencati i moduli disponibili. Per impostazione predefinita, è possibile cercare ed elencare i moduli in una pagina del portale. È possibile aprire i moduli da compilare e inviare le informazioni. Solo le azioni di rendering vengono fornite al di fuori della casella per i moduli elencati in una pagina del portale. Per ulteriori informazioni sulle azioni disponibili in una pagina del portale, vedere [Creazione di una pagina](../../forms/using/creating-form-portal-page.md)del portale dei moduli.
+In  AEM Forms è possibile creare una pagina del portale in cui sono elencati i moduli disponibili. Per impostazione predefinita, è possibile cercare ed elencare i moduli in una pagina del portale. È possibile aprire i moduli da compilare e inviare le informazioni. Solo le azioni di rendering vengono fornite al di fuori della casella per i moduli elencati in una pagina del portale. Per ulteriori informazioni sulle azioni disponibili in una pagina del portale, vedere [Creazione di una pagina del portale dei moduli](../../forms/using/creating-form-portal-page.md).
 
 È possibile aggiungere altre opzioni alla pagina del portale. Queste opzioni o azioni possono essere personalizzate personalizzando il modello del portale dei moduli.
 
 In questo articolo viene illustrato come creare un pulsante per inviare il collegamento di un modulo, direttamente dalla pagina del portale dei moduli. Questa personalizzazione richiede l’aggiornamento del modello per il componente Ricerca e filtro.
 
-Il codice richiesto per aggiungere l’azione al modello è disponibile di seguito. L&#39; `onclick` attributo nello snippet di codice ha uno script per inviare un collegamento di un modulo tramite e-mail.
+Il codice richiesto per aggiungere l’azione al modello è disponibile di seguito. L&#39;attributo `onclick` nello snippet di codice ha uno script per inviare un collegamento di un modulo tramite e-mail.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -47,7 +47,7 @@ Il codice richiesto per aggiungere l’azione al modello è disponibile di segui
 </div>
 ```
 
-Potete aggiungere azioni simili nel modello personalizzato. Per definire una funzione JavaScript, aggiungere la funzione su uno script a livello di pagina e collegarla con l&#39;elemento HTML richiesto. Nell&#39;esempio precedente, l&#39; `onclick` espressione è la funzione collegata.
+Potete aggiungere azioni simili nel modello personalizzato. Per definire una funzione JavaScript, aggiungere la funzione su uno script a livello di pagina e collegarla con l&#39;elemento HTML richiesto. Nell&#39;esempio precedente, l&#39;espressione `onclick` è la funzione collegata.
 
 Dopo aver apportato le modifiche al modello, la pagina del portale di esempio contiene un pulsante per inviare il collegamento del modulo tramite e-mail, come mostrato di seguito.
 
