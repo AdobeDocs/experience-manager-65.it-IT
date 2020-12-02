@@ -1,8 +1,8 @@
 ---
 title: Apertura di un'attività
 seo-title: Apertura di un'attività
-description: Passaggi per aprire un’attività nell’app AEM Forms.
-seo-description: Passaggi per aprire un’attività nell’app AEM Forms.
+description: Passaggi per aprire un’attività nell’app  AEM Forms.
+seo-description: Passaggi per aprire un’attività nell’app  AEM Forms.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,15 +10,18 @@ topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
 
 # Apertura di un&#39;attività {#opening-a-task}
 
-Se l’app AEM Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività assegnate all’utente. Le attività sono passaggi nel flusso di lavoro definito in Workbench o nell’editor flussi di lavoro AEM.
+Se l&#39;app AEM Forms  si sincronizza con un server AEM Forms , potete lavorare con le attività assegnate. Le attività sono passi nel flusso di lavoro definito in workbench o nell&#39;editor del flusso di lavoro AEM.
 
-Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consultate [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
+Gli altri moduli vengono salvati come bozza nella scheda Bozze. Vedere [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
 
 **Per aprire un&#39;attività**
 
@@ -35,7 +38,7 @@ Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consultate [Salv
 
 **Per aprire un&#39;applicazione**
 
-1. Toccare l&#39; **applicazione** nella scheda **Moduli** .
+1. Toccate l&#39;applicazione **application** nella scheda **Forms**.
 
    Quando selezionate un&#39;applicazione, la descrizione dell&#39;applicazione viene visualizzata sotto il nome dell&#39;applicazione. Dopo la descrizione, vengono visualizzate le azioni/azioni dell&#39;utente associate all&#39;applicazione.
 
@@ -44,4 +47,4 @@ Gli altri moduli vengono salvati come bozza nella scheda Bozze. Consultate [Salv
 
 1. Toccate l&#39;attività per aprirla.
 
-   Toccate **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.
+   È possibile toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.
