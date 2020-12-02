@@ -33,9 +33,9 @@ Java API Quick Start(SOAP) è disponibile per il servizio Application Manager.
 
 >[!NOTE]
 >
->Java API(SOAP) Avvio rapido disponibile nella programmazione con moduli AEM si basa sull&#39;Forms se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Java API(SOAP) Avvio rapido disponibile nella programmazione con moduli AEM si basa sull&#39;Forms se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Distribuzione di applicazioni tramite l&#39;API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Avvio rapido (modalità SOAP): Distribuzione di applicazioni mediante l&#39;API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene importata un&#39;applicazione basata su un file LCA esistente denominato *EncryptDocument.lca*.
 
@@ -137,7 +137,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene importata un&#39;appl
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di un&#39;applicazione tramite l&#39;API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di un&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene rimossa un&#39;applicazione denominata *EncryptDocument*.
 
