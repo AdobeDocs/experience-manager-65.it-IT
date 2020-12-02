@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 translation-type: tm+mt
 source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 92%
 
 ---
 
@@ -61,26 +64,26 @@ I membri del gruppo utenti amministratori-analytics possono configurare la conso
 >
 >Quando una struttura ad albero di pagine contiene elementi secondari associati a diverse configurazioni cloud di Adobe Analytics, non potrai configurare le colonne di dati disponibili per le pagine.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
+1. In visualizzazione Elenco, utilizzate i selettori di visualizzazione (a destra della barra degli strumenti), selezionate **Visualizza impostazioni**, quindi **Aggiungi dati di analisi personalizzati**.
 
    ![a-15](assets/aa-15.png)
 
 1. Seleziona le metriche che desideri esporre agli autori nella console Sites, quindi fai clic su **Aggiungi**.
 
-   Le colonne visualizzate vengono recuperate da Adobe Analytics.
+   Le colonne visualizzate vengono recuperate da  Adobe Analytics.
 
    ![a-16](assets/aa-16.png)
 
 ### Apertura di approfondimenti sui contenuti da Sites {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+Aprite [Content Insight](/help/sites-authoring/content-insights.md) dalla console Siti per approfondire l&#39;efficacia della pagina.
 
 1. Nella console Sites, seleziona la pagina per la quale desideri visualizzare gli approfondimenti dei contenuti.
 1. Nella barra degli strumenti, fai clic sull’icona di Analytics e Recommendations.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Dati analitici visibili dall’Editor pagine (Mappa attività) {#analytics-visible-from-the-page-editor-activity-map}
+## Dati analitici visibili dall’Editor pagine (Mappa attività)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
