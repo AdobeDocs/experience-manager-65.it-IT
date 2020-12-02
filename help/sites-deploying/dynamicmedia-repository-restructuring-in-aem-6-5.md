@@ -1,8 +1,8 @@
 ---
-title: Ristrutturazione dell’archivio di contenuti multimediali dinamici in AEM 6.5
-seo-title: Ristrutturazione dell’archivio di contenuti multimediali dinamici in AEM 6.5
-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura del repository in AEM 6.5 per gli elementi multimediali dinamici.
-seo-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura del repository in AEM 6.5 per gli elementi multimediali dinamici.
+title: Ristrutturazione archivio multimediale dinamico in AEM 6.5
+seo-title: Ristrutturazione archivio multimediale dinamico in AEM 6.5
+description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.5 per gli elementi multimediali dinamici.
+seo-description: Scoprite come apportare le modifiche necessarie per eseguire la migrazione alla nuova struttura del repository in AEM 6.5 per gli elementi multimediali dinamici.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,20 +10,23 @@ topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 translation-type: tm+mt
 source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 4%
 
 ---
 
 
-# Ristrutturazione dell’archivio di contenuti multimediali dinamici in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Ristrutturazione archivio multimediale dinamico in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/help/sites-deploying/repository-restructuring.md) , i clienti che effettuano l’aggiornamento ad AEM 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che influiscono sulla soluzione Dynamic Media. Alcune modifiche richiedono sforzi durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere posticipate fino a un aggiornamento futuro.
+Come descritto nella pagina [Ristrutturazione del repository principale di AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che effettuano l&#39;aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche del repository che influiscono sulla soluzione Dynamic Media. Alcune modifiche richiedono sforzi di lavoro durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere posticipate fino a un aggiornamento futuro.
 
 **Prima dell&#39;aggiornamento futuro**
 
 * [Configurazioni di codifica video adattiva personalizzate](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Configurazione cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
-* [Configurazione del servizio Dynamic Media (DM Hybrid) Cloud](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Dynamic Media - Configurazione del servizio YouTube Cloud](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Configurazione Cloud Service Dynamic Media (DM Hybrid)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
+* [Contenuti multimediali dinamici - Configurazione Cloud Service YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Prima dell&#39;aggiornamento futuro {#prior-to-upgrade}
@@ -42,7 +45,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>È possibile eseguire il seguente script di migrazione per eseguire la migrazione alla nuova posizione:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione nell’interfaccia utente di AEM e salvare le modifiche nella nuova posizione.</p> </td>
+   <td><p>È possibile eseguire il seguente script di migrazione per eseguire la migrazione alla nuova posizione:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione AEM'interfaccia utente e salvare le modifiche nella nuova posizione.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
@@ -51,7 +54,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/
  </tbody>
 </table>
 
-### Dynamic Media (DMS7) Cloud configuration {#dynamic-media-dms-cloud-configuration}
+### Configurazione cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -65,7 +68,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Il cliente può eseguire uno script di migrazione nel seguente percorso:<br /> </p>
+   <td><p>Il cliente può eseguire uno script di migrazione nel percorso seguente:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>Riavviate il bundle Dynamic Media OSGi.</li>
@@ -78,7 +81,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/
  </tbody>
 </table>
 
-### Configurazione Dynamic Media (DM Hybrid) Cloud Service {#cloudserviceconfiguration}
+### Configurazione Cloud Service Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -101,7 +104,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/
  </tbody>
 </table>
 
-### Dynamic Media - Configurazione del servizio YouTube Cloud {#youtubecloudserviceconfiguration}
+### Contenuti multimediali dinamici - Configurazione Cloud Service YouTube {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -115,7 +118,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>1. Annullate la pubblicazione di tutti i video da YouTube<br /> 2. Create la configurazione di YouTube utilizzando la nuova interfaccia touch (da <code>/conf</code>), compresa la copia di tutti i canali dalla vecchia posizione<br /> 3. Pubblicate tutti i video su YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annullate la pubblicazione prima di creare una nuova configurazione di YouTube per l’interfaccia touch, avrete più URL YouTube elencati in Proprietà, in quanto i canali ricreati verranno pubblicati di nuovo, se ne avrete la possibilità. Questo significa che avrete degli URL inutili elencati in Proprietà.</p> </td>
+   <td><p>1. Annullate la pubblicazione di tutti i video da YouTube<br /> 2. Create la configurazione di YouTube utilizzando la nuova interfaccia touch (da <code>/conf</code>), compresa la copia di tutti i canali dalla vecchia posizione<br /> 3. Pubblicate tutti i video su YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL per YouTube. Se non annullate la pubblicazione prima di creare una nuova configurazione di YouTube per l’interfaccia touch, avrete più URL YouTube elencati in Proprietà, perché i canali ricreati verranno pubblicati di nuovo se ne è data la possibilità. Questo significa che avrete degli URL inutili elencati in Proprietà.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
@@ -138,7 +141,7 @@ Come descritto nella pagina Ristrutturazione del [repository padre in AEM 6.5](/
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>Il cliente può eseguire lo script di migrazione riportato di seguito.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione nell’interfaccia utente di AEM e salvare le modifiche nella nuova posizione.</p> </td>
+   <td><p>Il cliente può eseguire lo script di migrazione riportato di seguito.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>In alternativa, puoi modificare la configurazione AEM'interfaccia utente e salvare le modifiche nella nuova posizione.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>
