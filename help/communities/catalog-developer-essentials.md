@@ -18,15 +18,15 @@ ht-degree: 3%
 ---
 
 
-# Catalog Essentials {#catalog-essentials}
+# Nozioni di base del catalogo {#catalog-essentials}
 
 Questa pagina fornisce le informazioni essenziali per l&#39;utilizzo della funzione di catalogo per l&#39;abilitazione dei siti della community.
 
 La funzione catalogo, se inclusa in un sito community, consente ai membri della community di sfogliare e selezionare le risorse di abilitazione elencate in un catalogo.
 
-Il [ componente `enablement catalog` consente ai membri della community di accedere a un catalogo di risorse per l&#39;](catalog.md) abilitazione [](resources.md). L’utilizzo di tag AEM è una parte importante della gestione dell’aspetto delle risorse di abilitazione in un catalogo.
+Il componente [ `enablement catalog` ](catalog.md) consente ai membri della community di accedere a un catalogo di [risorse di abilitazione](resources.md). L’utilizzo di tag AEM è una parte importante della gestione dell’aspetto delle risorse di abilitazione in un catalogo.
 
-Consultate [Assegnazione di tag alle risorse](tag-resources.md)di abilitazione.
+Vedere [Risorse per l&#39;abilitazione dei tag](tag-resources.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -54,7 +54,7 @@ Consultate [Assegnazione di tag alle risorse](tag-resources.md)di abilitazione.
   </tr>
   <tr>
    <td><strong> proprietà</strong></td>
-   <td>Consultate Funzione <a href="catalog.md">Catalogo</a></td>
+   <td>Vedere <a href="catalog.md">Funzioni del catalogo</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,13 +63,13 @@ Consultate [Assegnazione di tag alle risorse](tag-resources.md)di abilitazione.
 
 ### Funzione Catalogo {#catalog-function}
 
-Una struttura del sito community che include la funzione [](functions.md#catalog-function)Catalogo include un `enablement catalog` componente configurato.
+Una struttura del sito community che include la funzione [Catalog](functions.md#catalog-function), include un componente `enablement catalog` configurato.
 
 ### Pre-filtri {#pre-filters}
 
 Quando una funzione Catalogo è stata aggiunta a un sito community, è possibile limitare le risorse di abilitazione e i percorsi di apprendimento visualizzati nel catalogo specificando un pre-filtro. A questo scopo, è possibile impostare le proprietà sull’istanza della risorsa catalogo per il sito.
 
-Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di abilitazione:
+Utilizzando l&#39;esempio della [Esercitazione di abilitazione](getting-started-enablement.md):
 
 * Sull’autore
 * Utilizzo di [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
@@ -82,25 +82,25 @@ Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di
 
 * Aggiunta di un nodo di filtri figlio
 
-   * Selezionare il `catalog`nodo
-   * Seleziona **[!UICONTROL Crea nodo]**
+   * Selezionare il nodo `catalog`
+   * Selezionare **[!UICONTROL Crea nodo]**
 
       * Nome: `filters`
       * Tipo: `nt:unstructured`
-      * Seleziona **[!UICONTROL Salva tutto]**
+      * Selezionare **[!UICONTROL Salva tutto]**
 
-* Aggiungi `se_resource-tags` proprietà al `filters` nodo
+* Aggiungi la proprietà `se_resource-tags` al nodo `filters`
 
-   * Selezionare il `filters` nodo
+   * Selezionare il nodo `filters`
    * Aggiungere una proprietà Multi
 
       * Nome: `se_resource-tags`
       * Tipo: Stringa
-      * Valore: *&lt;immettere un[ID](#pre-filter-tagids)tag>*
-         * Seleziona **[!UICONTROL multipla]**
-         * Seleziona **[!UICONTROL Aggiungi]**
+      * Valore: *&lt;immettere un [TagID](#pre-filter-tagids)>*
+         * Selezionare **[!UICONTROL Multi]**
+         * Selezionare **[!UICONTROL Aggiungi]**
 
-            * Nella finestra di dialogo a comparsa, selezionate `+` per aggiungere altri ID tag pre-filtro
+            * Nella finestra di dialogo a comparsa, selezionare `+` per aggiungere altri ID di tag pre-filtro
 
 * Ripubblica il sito della community
 
@@ -108,7 +108,7 @@ Utilizzando l’esempio dell’ [Esercitazione](getting-started-enablement.md)di
 
 #### ID tag pre-filtro {#pre-filter-tagids}
 
-Gli [IDtag](../../help/sites-developing/framework.md#tagid) pre-filtro devono corrispondere esattamente ai tag applicati alle risorse di abilitazione. Questi sono visibili nella `resources` cartella del sito come valori della proprietà `se_resource-tags`.
+Il pre-filtro [TagIDs](../../help/sites-developing/framework.md#tagid) deve corrispondere esattamente ai tag applicati alle risorse di abilitazione. Questi sono visibili nella cartella `resources` del sito come valori della proprietà `se_resource-tags`.
 
 ![configure-Filters](assets/configure-catalog1.png)
 
