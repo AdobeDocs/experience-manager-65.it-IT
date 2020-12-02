@@ -24,37 +24,37 @@ ht-degree: 0%
 
 Il CSRF (Cross-site request forgery) è una vulnerabilità del sito Web in cui un browser di utenti valido viene utilizzato per inviare una richiesta dannosa, possibilmente tramite un iFrame. Poiché il browser invia i cookie a livello di dominio, se l&#39;utente ha attualmente eseguito il login a un&#39;applicazione, i dati dell&#39;utente potrebbero essere compromessi.
 
-Ad esempio, considerate uno scenario in cui avete eseguito l’accesso alla console di amministrazione in un browser. Riceverete un messaggio e-mail contenente un collegamento. Fai clic sul collegamento per aprire una nuova scheda nel browser. La pagina aperta contiene un iFrame nascosto che invia una richiesta dannosa al server dei moduli tramite il cookie proveniente dalla sessione autenticata dei moduli AEM. Poiché User Management riceve un cookie valido, trasmette la richiesta.
+Ad esempio, considerate uno scenario in cui avete eseguito l’accesso alla console di amministrazione in un browser. Riceverete un messaggio e-mail contenente un collegamento. Fai clic sul collegamento per aprire una nuova scheda nel browser. La pagina aperta contiene un iFrame nascosto che esegue una richiesta dannosa al server dei moduli utilizzando il cookie della sessione dei moduli AEM autenticati. Poiché User Management riceve un cookie valido, trasmette la richiesta.
 
-## Termini relativi al CSRF {#csrf-related-terms}
+## Termini relativi a CSRF {#csrf-related-terms}
 
-**Referente:** L&#39;indirizzo della pagina di origine da cui proviene la richiesta. Ad esempio, una pagina Web sul sito1.com contiene un collegamento a sito2.com. Facendo clic sul collegamento si invia una richiesta a site2.com. Il referente di questa richiesta è site1.com perché la richiesta viene effettuata da una pagina la cui origine è site1.com.
+**Referente:** l&#39;indirizzo della pagina di origine da cui proviene una richiesta. Ad esempio, una pagina Web sul sito1.com contiene un collegamento a sito2.com. Facendo clic sul collegamento si invia una richiesta a site2.com. Il referente di questa richiesta è site1.com perché la richiesta viene effettuata da una pagina la cui origine è site1.com.
 
-**URI consentiti:** Gli URI identificano le risorse sul server dei moduli che vengono richieste, ad esempio, /adminui o /contentspace. Alcune risorse possono consentire l&#39;accesso all&#39;applicazione da siti esterni. Queste risorse sono considerate URI consentiti. Il server moduli non esegue mai un controllo referente dagli URI consentiti.
+**URI inseriti nell&#39;elenco Consentiti:** gli URI identificano le risorse sul server dei moduli che vengono richieste, ad esempio, /adminui o /contentspace. Alcune risorse possono consentire l&#39;accesso all&#39;applicazione da siti esterni. Queste risorse vengono considerate URI inseriti nell&#39;elenco Consentiti. Il server dei moduli non esegue mai un controllo referente dagli URI inseriti nell&#39;elenco Consentiti.
 
-**Referente nullo:** Quando aprite una nuova finestra o scheda del browser, digitate un indirizzo e premete Invio, il referente è nullo. La richiesta è completamente nuova e non proviene da una pagina Web padre; pertanto, non esiste un referente per la richiesta. Il server moduli può ricevere un referente nullo da:
+**Referente nullo:** Quando si apre una nuova finestra o scheda del browser, si digita un indirizzo e si preme Invio, il referente è nullo. La richiesta è completamente nuova e non proviene da una pagina Web padre; pertanto, non esiste un referente per la richiesta. Il server moduli può ricevere un referente nullo da:
 
-* richieste effettuate sugli endpoint SOAP o REST di Acrobat
-* qualsiasi client desktop che esegue una richiesta HTTP su un endpoint SOAP o REST di moduli AEM
-* quando si apre una nuova finestra del browser e viene inserito l’URL di qualsiasi pagina di accesso dell’applicazione Web AEM
+* richieste effettuate su endpoint SOAP o REST da  Acrobat
+* qualsiasi client desktop che esegue una richiesta HTTP su un endpoint SOAP o REST AEM moduli
+* quando si apre una nuova finestra del browser e viene inserito l&#39;URL per qualsiasi pagina di login AEM modulo per l&#39;applicazione Web
 
-Consentire un referente nullo sugli endpoint SOAP e REST. Consentite inoltre un referente nullo su tutte le pagine di login URI, ad esempio /adminui e /contentspace, e sulle relative risorse mappate. Ad esempio, il servlet mappato per /contentspace è /contentspace/faces/jsp/login.jsp, che deve essere un&#39;eccezione di riferimento null. Questa eccezione è necessaria solo se abilitate il filtro GET per l&#39;applicazione Web. Le applicazioni possono specificare se consentire referenti null. Consulta &quot;Protezione dagli attacchi di contraffazione delle richieste cross-site&quot; in [Sicurezza e protezione per i moduli](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)AEM.
+Consentire un referente nullo sugli endpoint SOAP e REST. Consentite inoltre un referente nullo su tutte le pagine di login URI, ad esempio /adminui e /contentspace, e sulle relative risorse mappate. Ad esempio, il servlet mappato per /contentspace è /contentspace/faces/jsp/login.jsp, che deve essere un&#39;eccezione di riferimento null. Questa eccezione è necessaria solo se si abilita il filtro GET per l&#39;applicazione Web. Le applicazioni possono specificare se consentire referenti null. Vedere &quot;Protezione dagli attacchi di contraffazione delle richieste tra siti&quot; in [Protezione e protezione per AEM moduli](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
-**Eccezione Referente Consentita:** Eccezione referente consentita è un sottoelenco dell&#39;elenco di referenti consentiti, dal quale le richieste vengono bloccate. Le eccezioni di riferimento consentite sono particolari per un&#39;applicazione Web. Se a un sottoinsieme dei Referenti consentiti non è consentito richiamare una particolare applicazione Web, è possibile bloccare i referenti tramite Eccezioni referente consentite. Le eccezioni di riferimento consentite sono specificate nel file web.xml dell&#39;applicazione. (consultate &quot;Proteggere dagli attacchi di contraffazione delle richieste cross-site&quot; nei moduli Hardening e Security for AEM nella pagina Guida ed esercitazioni).
+**Eccezione referente consentita:** Eccezione referente consentita è un sottoelenco dell&#39;elenco di referenti consentiti, da cui vengono bloccate le richieste. Le eccezioni di riferimento consentite sono particolari per un&#39;applicazione Web. Se un sottoinsieme dei Referenti Consentiti non deve essere autorizzato a richiamare una particolare applicazione Web, è   i referenti tramite Eccezioni Referente Consentite. Le eccezioni di riferimento consentite sono specificate nel file web.xml dell&#39;applicazione. (Vedere &quot;Protezione dagli attacchi di contraffazione delle richieste cross-site&quot; nella pagina Hardening and Security for AEM forms on Help and Tutorials.)
 
-## Funzionamento dei referenti consentiti {#how-allowed-referers-work}
+## Come funzionano i referenti {#how-allowed-referers-work}
 
-I moduli AEM forniscono un filtro di riferimento che può aiutare a prevenire attacchi CSRF. Come funziona il filtro dei riferimenti:
+AEM moduli fornisce un filtro di riferimento, che può aiutare a prevenire attacchi CSRF. Come funziona il filtro dei riferimenti:
 
 1. Il server dei moduli verifica il metodo HTTP utilizzato per la chiamata:
 
-   * Se è POST, il server dei moduli esegue il controllo dell&#39;intestazione del referente.
-   * Se si tratta di GET, il server dei moduli bypassa il controllo del referer, a meno che CSRF_CHECK_GETS non sia impostato su true, nel qual caso esegue il controllo dell&#39;intestazione del referer. CSRF_CHECK_GETS è specificato nel file web.xml dell’applicazione. (vedere &quot;Proteggere dagli attacchi di contraffazione delle richieste cross-site&quot; nella guida all&#39; [applicazione e alla](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)sicurezza).
+   * Se si tratta di un POST, il server dei moduli esegue il controllo dell&#39;intestazione del referente.
+   * Se è GET, il server dei moduli bypassa il controllo del referer, a meno che CSRF_CHECK_GETS non sia impostato su true, nel qual caso esegue il controllo dell&#39;intestazione del referente. CSRF_CHECK_GETS è specificato nel file web.xml dell’applicazione. (Vedere &quot;Protezione dagli attacchi di contraffazione delle richieste cross-site&quot; in [Guida all&#39;indurimento e alla sicurezza](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
-1. Il server dei moduli verifica se l’URI richiesto è consentito nell’elenco:
+1. Il server dei moduli verifica se l&#39;URI richiesto è inserito nell&#39;elenco Consentiti:
 
-   * Se l’URI è consentito, il server supera la richiesta.
-   * Se l’URI richiesto non è elencato, il server recupera il referente della richiesta.
+   * Se l’URI viene inserito nell&#39;elenco Consentiti, il server trasmette la richiesta.
+   * Se l’URI richiesto non viene inserito nell&#39;elenco Consentiti, il server recupera il referente della richiesta.
 
 1. Se nella richiesta è presente un referente, il server verifica se si tratta di un referente consentito. Se consentita, il server verifica la presenza di un&#39;eccezione di referente:
 
@@ -81,5 +81,5 @@ Quando si esegue Configuration Manager, l&#39;host e l&#39;indirizzo IP predefin
 
    Se l’elenco di riferimenti consentiti è vuoto, la funzione CSRF smette di funzionare e il sistema diventa insicuro.
 
-1. Dopo aver modificato l&#39;elenco Referente autorizzato, riavvia il server moduli AEM.
+1. Dopo aver modificato l&#39;elenco Referente consentito, riavviare il server moduli AEM.
 
