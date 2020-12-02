@@ -36,9 +36,9 @@ La seguente struttura decisionale fornisce indicazioni per ridurre il collo di b
 
 ## Configurazione dei file di registro e dei registri di controllo {#configuring-log-files-and-audit-logs}
 
-AEM registra i registri dettagliati che potresti voler configurare per risolvere eventuali problemi di installazione. Per ulteriori informazioni, vedere la sezione [Uso dei record di controllo e dei file](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) di registro.
+AEM registra i registri dettagliati che potresti voler configurare per risolvere eventuali problemi di installazione. Per informazioni, vedere la sezione [Uso dei record di controllo e dei file di registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-## Utilizzo dell’opzione Verbose {#using-the-verbose-option}
+## Utilizzo dell&#39;opzione Verbose {#using-the-verbose-option}
 
 Quando si avvia AEM WCM, è possibile aggiungere l&#39;opzione -v (verbose) alla riga di comando come in: java -jar cq-wcm-quickstart-&lt;versione>.jar -v.
 
@@ -65,11 +65,11 @@ Per risolvere i problemi, effettuate le seguenti operazioni:
 * A volte la reinstallazione della versione Java supportata consente di ripristinare l&#39;associazione corretta.
 * È sempre possibile eseguire CRX utilizzando la riga di comando o gli script start/stop come descritto in precedenza in questo documento.
 
-### La mia applicazione in esecuzione su CRX genera errori di memoria insufficiente {#my-application-running-on-crx-throws-out-of-memory-errors}
+### La mia applicazione in esecuzione su CRX causa errori di memoria insufficiente {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Vedere anche [Analisi dei problemi](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)di memoria.
+>Vedere anche [Analizzare i problemi di memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
 Il CRX stesso ha un&#39;ingombro di memoria molto basso. Se l&#39;applicazione in esecuzione in CRX ha requisiti di memoria maggiori o richiede operazioni con molta memoria (ad esempio, transazioni di grandi dimensioni), l&#39;istanza JVM in cui è in esecuzione CRX deve essere avviata con le impostazioni di memoria appropriate.
@@ -100,21 +100,21 @@ Se tutto il resto non riesce, controllare i registri per scoprire cosa è succes
 
 ## Risoluzione dei problemi relativi alle installazioni con un server applicazioni {#troubleshooting-installations-with-an-application-server}
 
-### Pagina non trovata restituita quando si richiede una pagina geometrixx-outdoor {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
+### Pagina non trovata restituita quando si richiede una pagina geometrixx outdoor {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Applicabile a WebLogic 10.3.5 e JBoss 5.1**
 
 Quando una richiesta a pagina geometrixx-outdoors/en restituisce un 404 (Page Not Folio), potete verificare di aver impostato la proprietà sling aggiuntiva nel file sling.properties necessario per questi Application Server specifici.
 
-Consultate i passaggi *Implementazione AEM applicazione* Web per i dettagli.
+Per i dettagli, vedere i passaggi *Implementare AEM applicazione Web*.
 
 ### La dimensione dell&#39;intestazione della risposta può essere maggiore di 4 Kb {#response-header-size-can-be-greater-than-kb}
 
 502 errori possono indicare che il server Web non è in grado di gestire le dimensioni dell&#39;intestazione AEM risposta HTTP. AEM generare intestazioni di risposta HTTP che includono cookie di dimensione maggiore di 4Kb. Accertatevi che il contenitore del servlet sia configurato in modo che la dimensione massima dell’intestazione della risposta possa superare i 4 kb.
 
-Ad esempio, per Tomcat 7.0, l’attributo maxHttpHeaderSize del connettore [](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) HTTP controlla le limitazioni delle dimensioni dell’intestazione.
+Ad esempio, per Tomcat 7.0, l&#39;attributo maxHttpHeaderSize del [Connettore HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controlla le limitazioni delle dimensioni dell&#39;intestazione.
 
-## Uninstalling Adobe Experience Manager {#uninstalling-adobe-experience-manager}
+## Disinstallazione di Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
 Poiché AEM installato in una singola directory, non è necessario installare un&#39;utilità di disinstallazione. La disinstallazione può essere semplice come l&#39;eliminazione dell&#39;intera directory di installazione, anche se la modalità di disinstallazione AEM dipende da ciò che si desidera ottenere e da quale archivio permanente si utilizza.
 
@@ -128,4 +128,5 @@ Se l&#39;installazione di AEM utilizza un archivio esterno, ad esempio un server
 
 ### I file JSP non sono compilati su JBoss {#jsp-files-are-not-compiled-on-jboss}
 
-Se installate o aggiornate i file JSP in  Experience Manager su JBoss e i servlet corrispondenti non vengono compilati, accertatevi che il compilatore JBoss JSP sia configurato correttamente. Per informazioni, consultate l&#39;articolo sui[problemi di compilazione JSP in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) .
+Se installate o aggiornate i file JSP in  Experience Manager su JBoss e i servlet corrispondenti non vengono compilati, accertatevi che il compilatore JBoss JSP sia configurato correttamente. Per ulteriori informazioni, consulta la
+[Problemi di compilazione JSP nell&#39;articolo JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
