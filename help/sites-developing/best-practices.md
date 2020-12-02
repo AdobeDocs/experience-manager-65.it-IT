@@ -1,8 +1,8 @@
 ---
 title: 'Best practice  '
 seo-title: 'Best practice  '
-description: I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM
-seo-description: I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM
+description: ' team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori'
+seo-description: ' team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori'
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
 
 ## Best practice per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
-I team Adobe Engineering e Consulting hanno sviluppato una serie completa di best practice per gli sviluppatori di AEM. Gli sviluppatori Adobe aderiscono a queste best practice man mano che sviluppano aggiornamenti di prodotto AEM e codice cliente per le implementazioni dei clienti.
+ team di progettazione e consulenza di Adobe hanno sviluppato una serie completa di best practice per AEM sviluppatori.  conformità degli sviluppatori di Adobi a queste best practice per sviluppare aggiornamenti AEM prodotti di base e codice cliente per le implementazioni dei clienti.
 
 Prima di avviare il progetto di sviluppo AEM, controlla innanzitutto le best practice seguenti:
 
@@ -79,18 +82,18 @@ Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le b
 
 ## Communities {#communities}
 
-[AEM Communities](/help/communities/overview.md) semplifica la creazione e la gestione di community locali.
+[AEM ](/help/communities/overview.md) Comunità semplifica la creazione e la gestione delle comunità locali.
 
 Alcune best practice per Community sono descritte di seguito:
 
 |  |  |  |
 |---|---|---|
-| Procedure ottimali per l&#39;utilizzo dei contenuti generati dagli utenti (UGC) | [Linee guida sulla codifica](/help/communities/code-guide.md) | Linee guida per lo sviluppo di codici flessibili e portatili per il quadro [delle componenti](/help/communities/scf.md) sociali (SCF). |
+| Procedure ottimali per l&#39;utilizzo dei contenuti generati dagli utenti (UGC) | [Linee guida sulla codifica](/help/communities/code-guide.md) | Linee guida per lo sviluppo di codice flessibile e portatile per il [social component framework](/help/communities/scf.md) (SCF). |
 | Esempio di utilizzo dei componenti Community | [Guida ai componenti community](/help/communities/components-guide.md) | Uno strumento di sviluppo interattivo. |
 
 ## Tooling/HTL {#tooling-htl}
 
-HTML Template Language (HTL) è un nuovo sistema di modelli HTML introdotto con AEM 6.0. Sostituisce JSP e ESP come sistema di templazione preferito di AEM.
+HTML Template Language (HTL) è un nuovo sistema di modelli HTML, introdotto con AEM 6.0. Sostituisce JSP e ESP come sistema di AEM preferito.
 
 |  |  |  |
 |---|---|---|
@@ -99,6 +102,6 @@ HTML Template Language (HTL) è un nuovo sistema di modelli HTML introdotto con 
 
 >[!NOTE]
 >
->Per la procedura ottimale, l’esercitazione con più parti potrebbe interessare impostare un nuovo progetto AEM, con informazioni dettagliate sui componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti:
->[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>Per la procedura ottimale per l’impostazione di un nuovo progetto AEM, con i dettagli Componenti principali, Modelli modificabili, Librerie client e sviluppo di componenti potrebbe essere utile seguire un’esercitazione con più parti:
+>[Guida introduttiva ad AEM Sites: tutorial WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
