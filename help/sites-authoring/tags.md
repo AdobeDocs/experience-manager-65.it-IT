@@ -23,8 +23,8 @@ ht-degree: 84%
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. I tag possono essere paragonati a parole chiave o etichette assegnate a una pagina, una risorsa o ad altro contenuto per consentire la ricerca di contenuti specifici e correlati.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Per informazioni sulla creazione e la gestione dei tag, nonché sui tag di contenuto applicati, consultate [Amministrazione dei tag](/help/sites-administering/tags.md).
+* Per informazioni sul framework dei tag, nonché sull&#39;inclusione e l&#39;estensione dei tag nelle applicazioni personalizzate, consultate [Tagging per sviluppatori](/help/sites-developing/tags.md).
 
 ## Dieci motivi per utilizzare l’assegnazione tag {#ten-reasons-to-use-tagging}
 
@@ -45,7 +45,7 @@ Quando progetti la struttura dei contenuti di un sito e lo schema di metadati pe
 
 Nell’ambiente di authoring gli autori possono applicare i tag accedendo alle proprietà della pagina e immettendo uno o più tag nel campo **Tag/Parole chiave**.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. La scheda **Tag standard** è il namespace predefinito, il che significa che non esiste una `namespace-string:` aggiunta come prefisso alla tassonomia.
+Per applicare [tag predefiniti](/help/sites-administering/tags.md), nella finestra **Proprietà pagina** utilizzare il campo **Tag** e la finestra **Seleziona tag**. La scheda **Tag standard** è il namespace predefinito, il che significa che non esiste una `namespace-string:` aggiunta come prefisso alla tassonomia.
 
 ![Selezionare la finestra Tag; utilizzare il pulsante X per deselezionare i tag attualmente selezionati](assets/chlimage_1-41.png)
 
