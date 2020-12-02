@@ -12,13 +12,16 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
 
-# Creazione di una directory principale della lingua mediante l’interfaccia classica{#creating-a-language-root-using-the-classic-ui}
+# Creazione di una directory principale della lingua mediante l&#39;interfaccia classica{#creating-a-language-root-using-the-classic-ui}
 
-La procedura seguente utilizza l’interfaccia classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, vedere [Creazione di una directory principale](/help/sites-administering/tc-prep.md#creating-a-language-root)della lingua.
+La procedura seguente utilizza l’interfaccia classica per creare una directory principale della lingua di un sito. Per ulteriori informazioni, vedere [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. Nella console Siti Web, nella struttura Siti Web, selezionate la pagina principale del sito. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Aggiungete una nuova pagina figlia che rappresenta la versione in lingua del sito:
@@ -29,6 +32,7 @@ La procedura seguente utilizza l’interfaccia classica per creare una directory
       * Il codice della lingua supportato è un codice di due lettere minuscoli, come definito dallo standard ISO-639-1
       * Il codice del paese supportato è un codice di due lettere minuscolo o superiore, come definito dallo standard ISO 3166
    1. Selezionate il modello e fate clic su Crea.
+
    ![newpage](assets/newpagefr.png)
 
 1. Nella console Siti Web, nella struttura Siti Web, selezionate la pagina principale del sito.
