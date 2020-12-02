@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 75%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Adobe non intende migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).
->È consigliabile sfruttare [Adobe Campaign e la relativa integrazione](/help/sites-administering/campaign.md)AEM.
+> Adobe non prevede di migliorare ulteriormente questa funzionalità (Gestione di lead ed elenchi).
+>È consigliabile sfruttare [ Adobe Campaign e la relativa integrazione AEM](/help/sites-administering/campaign.md).
 
-Users can be asked to subscribe to **Email Service Provider&#39;s** mailing lists with the help of the **Form** component used on an AEM web page. Per preparare una pagina AEM con un modulo per l’iscrizione alle mailing list dei servizi di posta elettronica, è necessario applicare la configurazione del servizio corrispondente alla pagina AEM che il potenziale sottoscrittore visiterà.
+È possibile chiedere agli utenti di iscriversi alle mailing list **Email Service Provider** con l&#39;aiuto del componente **Form** utilizzato in una pagina Web AEM. Per preparare una pagina AEM con un modulo per l’iscrizione alle mailing list dei servizi di posta elettronica, è necessario applicare la configurazione del servizio corrispondente alla pagina AEM che il potenziale sottoscrittore visiterà.
 
 ## Applicazione della configurazione del servizio e-mail a una pagina {#applying-email-service-configuration-to-a-page}
 
 Per configurare una pagina di AEM:
 
 1. Passa alla scheda **Siti web**.
-1. Seleziona la pagina da configurare per il servizio. Right-click the page and select **Properties**.
+1. Seleziona la pagina da configurare per il servizio. Fare clic con il pulsante destro del mouse sulla pagina e selezionare **Proprietà**.
 
-1. Select **Cloud Services** then **Add Service**. Selezionate una configurazione dall’elenco delle configurazioni disponibili.
+1. Selezionare **Cloud Services**, quindi **Aggiungi servizio**. Selezionate una configurazione dall’elenco delle configurazioni disponibili.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -45,9 +48,9 @@ Per creare un modulo di registrazione e configurarlo per le iscrizioni alle mail
 1. Applica la configurazione del Fornitore di servizi e-mail alla pagina.
 
 1. Aggiungi alla pagina un componente **Modulo** trascinandolo dalla barra laterale. Se il componente non è disponibile, passa alla modalità di progettazione e attiva il gruppo **Modulo**.
-1. Click **Edit** in the **Start of Form** bar and navigate to the **Advanced** tab.
-1. In the **Form** drop-down menu, select **E-mail Service: Create Subscriber** and add to list.
-1. At the bottom of the dialog box, open the **Action Configuration** drop-down, which allows you to select one or more subscription lists.
+1. Fare clic su **Modifica** nella barra **Inizio del modulo** e passare alla scheda **Avanzate**.
+1. Nel menu a discesa **Modulo**, selezionare **Servizio e-mail: Create Subscriber** e aggiungete all&#39;elenco.
+1. Nella parte inferiore della finestra di dialogo, aprite il menu a discesa **Configurazione azione**, che consente di selezionare uno o più elenchi di iscrizioni.
 1. In **Seleziona elenco**, seleziona la mailing list a cui iscrivere l’utente. Puoi aggiungere più elenchi utilizzando il pulsante più (**Aggiungi elemento**).
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
@@ -65,31 +68,31 @@ Per creare un modulo di registrazione e configurarlo per le iscrizioni alle mail
    >
    >Affinché la funzione di iscrizione funzioni correttamente nel modulo, [occorre esportare le chiavi di codifica dall’istanza di creazione ed importarle nell’istanza di pubblicazione](#exporting-keys-from-author-and-importing-on-publish).
 
-## Esportazione delle chiavi dall’istanza di creazione e importazione nell’istanza di pubblicazione {#exporting-keys-from-author-and-importing-on-publish}
+## Esportazione delle chiavi dall’istanza di creazione e importazione nell’istanza di pubblicazione  {#exporting-keys-from-author-and-importing-on-publish}
 
 Affinché la funzione di iscrizione e cancellazione funzioni correttamente nel modulo di registrazione dell’istanza di pubblicazione, effettua i seguenti passaggi:
 
 1. Nell’istanza di creazione, vai a Gestione pacchetti.
-1. Crea un nuovo pacchetto. Set the filter as `/etc/key`.
+1. Crea un nuovo pacchetto. Impostate il filtro su `/etc/key`.
 1. Genera e scarica il pacchetto.
 1. Passa a Gestione pacchetti nell’istanza di pubblicazione e carica il pacchetto.
 1. Passa alla console di Pubblicazione osgi e riavvia il bundle denominato **Adobe Granite Crypto Support**.
 
-## Cancellazione dell’iscrizione degli utenti dagli elenchi {#unsubscribing-users-from-lists}
+## Cancellazione dell’iscrizione degli utenti dagli elenchi  {#unsubscribing-users-from-lists}
 
 Per cancellare la sottoscrizione degli utenti dagli elenchi:
 
 1. Apri le proprietà della pagina AEM che contiene il modulo per la cancellazione della sottoscrizione.
 1. Applica alla pagina la configurazione del servizio.
 1. Crea un modulo di iscrizione sulla pagina.
-1. While configuring the component, select the action **E-mail Service**: **Unsubscribe user from list.**
+1. Durante la configurazione del componente, selezionare l&#39;azione **Servizio e-mail**: **Annulla sottoscrizione a mailing list.**
 1. Dal menu a discesa, seleziona la mailing list da cui dovrà essere rimosso l’utente.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
 1. Esporta le chiavi dall’istanza di creazione all’istanza di pubblicazione.
 
-## Configurazione di messaggi di risposta automatica per il servizio e-mail {#configuring-auto-responder-emails-for-email-service}
+## Configurazione di messaggi di risposta automatica per il servizio e-mail  {#configuring-auto-responder-emails-for-email-service}
 
 Per configurare un messaggio e-mail di risposta automatica quando un utente si iscrive:
 
@@ -97,14 +100,14 @@ Per configurare un messaggio e-mail di risposta automatica quando un utente si i
 1. Applicate alla pagina la configurazione ExactTarget.
 
 1. Aggiungi alla pagina un componente **Modulo** trascinandolo dalla barra laterale. Se il componente non è disponibile, passa alla modalità di progettazione e attiva il gruppo **Modulo**.
-1. Click **Edit** in the **Start of Form** bar and navigate to the **Advanced** tab.
-1. In the **Form** drop-down menu, select **E-mail Service: Send auto responder email.**
-1. **Selezionate un messaggio e-mail** (si tratta del messaggio inviato come messaggio di risposta automatica).
+1. Fare clic su **Modifica** nella barra **Inizio del modulo** e passare alla scheda **Avanzate**.
+1. Nel menu a discesa **Modulo**, selezionare **Servizio e-mail: Invia messaggio di risposta automatica.**
+1. **Selezionate un messaggio e-mail**  (si tratta del messaggio inviato come messaggio di risposta automatica).
 
-1. **Seleziona classificazione** (classificazione utilizzata per inviare l’e-mail).
-1. Select the **Thank you** page (the page where users are directed to once they submit the form).
+1. **Seleziona classificazione**  (classificazione utilizzata per inviare l’e-mail).
+1. Selezionare la pagina **Grazie** (la pagina a cui verranno indirizzati gli utenti dopo l&#39;invio del modulo).
 
-   In the **Form** tab, select the thank you page you want users to go to after they submit the form. (If left blank, the form redisplays upon submission.) Fai clic su **OK**. 
+   Nella scheda **Modulo**, selezionare la pagina di ringraziamento alla quale gli utenti dovranno passare dopo l&#39;invio del modulo. Se questo campo viene lasciato vuoto, all’invio viene nuovamente visualizzato il modulo. Fai clic su **OK**.
 
 1. Esporta le chiavi dall’istanza di creazione all’istanza di pubblicazione.
 1. Aggiungi il componente per il pulsante **Invia** dalla sezione **Modulo** nella barra laterale.
