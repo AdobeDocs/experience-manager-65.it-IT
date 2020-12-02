@@ -52,7 +52,7 @@ Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferim
    * Creare e modificare modelli per app a pagina singola che utilizzano l’SDK JS (detto anche editor SPA)
 
 * Sito di riferimento We.Retail 4.0, consulta le [note sulla versione su Github](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
-* Toolkit to upgrade existing sites to leverage the latest editor capabilities, see [Github repository](https://github.com/adobe/aem-modernize-tools)
+* Toolkit per aggiornare i siti esistenti e sfruttare le funzionalità più recenti dell&#39;editor, vedere [repository di Github](https://github.com/adobe/aem-modernize-tools)
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferim
 ## Editor e frammenti di contenuto {#content-fragments-amp-editor}
 
 * Nuova barra [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) nell’Editor frammento di contenuto per lasciare commenti generali e visualizzare i commenti all’interno del testo (anche nella barra Timeline)
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* Possibilità di impostare il tipo di contenuto predefinito di un elemento di testo a più righe in un [modello di frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md) su testo semplice, RTF o marketing
 * Aggiunta di [commenti/annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) selezionando il testo nell’editor di testo avanzato (visualizzazione a schermo intero)
 * [Confronto tra le versioni](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) di un frammento di contenuto affiancate mediante la barra Riferimento
 * Il rapporto di download delle risorse ora mostra i relativi frammenti di contenuto
@@ -83,7 +83,7 @@ Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferim
 * Miglioramento dell’indicizzazione dei [frammenti esperienza](/help/sites-authoring/experience-fragments.md), in modo che il loro contenuto si trovi nella ricerca delle pagine in cui vengono utilizzati
 * L’opzione [Export to Target](/help/sites-administering/experience-fragments-target.md) (Esporta per destinazione) permette ora di inviare il frammento di esperienza come JSON (l’impostazione predefinita è HTML) o in entrambi i formati
 
-## Traduzione {#translation}
+## Traduzione  {#translation}
 
 * Semplificazione della creazione di progetti di traduzione utilizzando la funzione di “progetti principali”
 * Semplificazione dell’esecuzione dei progetti di traduzione impostando i lavori di traduzione sullo stato Approvato per impostazione predefinita
@@ -95,44 +95,44 @@ Per informazioni sui miglioramenti di AEM Sites 6.5, consulta i seguenti riferim
 
 * Per le configurazioni di rollout che utilizzano PushOnModify, una migliore gestione dell&#39;operazione di spostamento delle pagine per evitare uno stato incoerente
 * La creazione di una nuova pagina all’interno della struttura di livecopy creerà ora per impostazione predefinita una pagina autonoma
-* Utilizzate le funzionalità MSM nelle app a pagina singola che utilizzano l&#39;SDK JS (detto anche editor SPA)
+* Utilizzare le funzionalità MSM nelle app a pagina singola che utilizzano l&#39;SDK JS (altrimenti denominato Editor SPA)
 
 ## Lanci {#launches}
 
 * Nuovo flusso di lavoro di revisione e approvazione per i lanci e possibilità di promuovere solo le pagine di lancio approvate
 * Aggiunta di un’[opzione nell’interfaccia utente per scegliere di eliminare il lancio subito dopo la fase di promozione](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
-## Simulazione e targeting dei contenuti {#content-targeting-simulation}
+## Simulazione e targeting dei contenuti  {#content-targeting-simulation}
 
 * Il codice JavaScript del livello dati ContextHub e del motore delle regole lato client è stato aggiornato per utilizzare jQuery 3 per impostazione predefinita.
 
-## Adobe Target AEM e  {#aem-amp-adobe-target}
+## AEM e  Adobe Target {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
 >at.js 2.x non è supportato da AEM al momento della release AEM 6.5. Utilizzare la versione più recente di at.js 1.x
 
-* L’integrazione di Adobe Target consente ora di utilizzare l’API standard di Target. Le versioni precedenti di AEM utilizzano l&#39;API HTTP Target Classic, che ora è obsoleta.
-* Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
-* `at.js` è ora inclusa la versione 1.5.0. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
+* L’integrazione di Adobe Target consente ora di utilizzare l’API standard di Target. Le versioni precedenti di AEM utilizzano l&#39;API HTTP di Target Classic, che ora è obsoleta.
+*  Adobe Target `mbox.js` versione 63 è inclusa.  Adobe consiglia vivamente di passare all&#39;implementazione a `at.js` v1.x.
+* `at.js` è ora inclusa la versione 1.5.0.  Adobe consiglia di utilizzare [ Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) per eseguire il provisioning di `at.js` v1.x nel sito.
 
 ## AEM e  Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 è incluso.  Adobe consiglia di passare all&#39;implementazione in `AppMeasurement.js`
-* `AppMeasurement.js` La versione 1.8.0 è inclusa. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
+* `AppMeasurement.js` La versione 1.8.0 è inclusa.  Adobe consiglia di utilizzare [ Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) per eseguire il provisioning di AppMeasurement.js nel sito.
 
-## AEM e commercio {#aem-commerce}
+## AEM e Commerce {#aem-commerce}
 
-Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
+I miglioramenti a Commerce Integration Framework sono in corso in un ciclo di rilascio più rapido a partire da AEM 6.4. [Ulteriori informazioni sono disponibili qui](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
 ## Add-on Communities {#communities-add-on}
 
 Consulta la [pagina delle note sulla versione di Communities](../release-notes/communities-release-notes.md)
 
-## Add-on Screens {#screens-add-on}
+## Add-on Screens  {#screens-add-on}
 
 * Utilizzo dei lanci per pianificare future modifiche al contenuto per i contenuti di segnaletica
 * Riproduzione controllata in un canale sequenziale
 * Creazione automatica della struttura del progetto utilizzando un file sorgente, ad esempio un foglio Excel
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Per ulteriori dettagli sulle modifiche ad  AEM Screens, consultare le Note sulla versione nella [ Guida utente di AEM Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
