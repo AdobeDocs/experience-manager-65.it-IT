@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Guida rapida API Java per componenti e servizi (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Guida rapida a Java per componenti e servizi (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 Java API Quick Start(SOAP) è disponibile per componenti e servizi.
 
@@ -43,7 +43,7 @@ Java API Quick Start(SOAP) è disponibile per componenti e servizi.
 
 >[!NOTE]
 >
->Avvio rapido in Programmazione con AEM moduli si basa sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Avvio rapido in Programmazione con AEM moduli si basa sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Java API Quick Start(SOAP) è disponibile per componenti e servizi.
 
 ## Avvio rapido (modalità SOAP): Distribuzione di un componente tramite l&#39;API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-L’esempio Java seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
+L&#39;esempio Java seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 
 ```java
  /* 
@@ -151,7 +151,7 @@ L’esempio Java seguente distribuisce un componente basato su un file JAR denom
  
 ```
 
-## Avvio rapido (modalità SOAP): Impostazione del contesto di esecuzione di un servizio tramite l&#39;API Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
+## Avvio rapido (modalità SOAP): Impostazione del contesto di esecuzione di un servizio mediante l&#39;API Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
 L&#39;esempio di codice Java seguente imposta il contesto di esecuzione di Run-As Invoker su un servizio di esempio denominato *EncryptDocument*.
 
@@ -356,7 +356,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene disattivata la protez
  
 ```
 
-## Avvio rapido (modalità SOAP): Avvio di un servizio tramite l&#39;API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
+## Avvio rapido (modalità SOAP): Avvio di un servizio mediante l&#39;API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene avviato un servizio denominato *SendEmailService*.
 
@@ -526,7 +526,7 @@ L&#39;esempio Java seguente modifica i valori di configurazione appartenenti a S
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di componenti tramite l&#39;API Java {#quick-start-soap-mode-removing-components-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di componenti tramite Java API {#quick-start-soap-mode-removing-components-using-the-java-api}
 
 Nell&#39;esempio di codice Java riportato di seguito viene rimosso un componente utilizzando l&#39;API Java.
 
