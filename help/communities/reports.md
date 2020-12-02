@@ -29,7 +29,7 @@ In generale, le relazioni sono le seguenti:
 
 * [Rapporto assegnazioni](#assignments-report)
 
-   Per una comunità di [abilitazione](/help/communities/overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli studenti nelle loro mansioni, inclusa una valutazione associata nell&#39;implementazione dello standard SCORM.
+   Per una [community di abilitazione](/help/communities/overview.md#enablement-community), fornisce una panoramica dei progressi compiuti dagli utenti in formazione nelle loro mansioni, inclusa una valutazione associata nell&#39;implementazione dello standard SCORM.
 
 * [Rapporto visualizzazioni](#views-report)
 
@@ -39,13 +39,13 @@ In generale, le relazioni sono le seguenti:
 
    Fornisce un grafico dei vari tipi di post dei membri della community in qualsiasi sito della community.
 
-Quando [Adobe Analytics è abilitato](/help/communities/sites-console.md#analytics), i rapporti includeranno il numero di visualizzazioni, riproduzioni, commenti e valutazioni per ciascuna risorsa di abilitazione nel tempo.
+Quando [ Adobe Analytics è abilitato](/help/communities/sites-console.md#analytics), i report includeranno il numero di visualizzazioni, riproduzioni, commenti e valutazioni per ogni risorsa di abilitazione nel tempo.
 
 I rapporti tabulari possono essere esportati in formato .csv per l’elaborazione successiva.
 
 ## Console di reporting {#reporting-consoles}
 
-### Report per siti community {#reports-for-community-sites}
+### Rapporti per siti community {#reports-for-community-sites}
 
 * Dalla navigazione globale: **[!UICONTROL Navigazione]** > **[!UICONTROL Community]** > **[!UICONTROL Rapporti]**
 
@@ -71,9 +71,9 @@ I rapporti tabulari possono essere esportati in formato .csv per l’elaborazion
 
 * Selezionate un sito community di abilitazione esistente:
 
-   * Selezionate l’icona **Rapporto** per generare rapporti che coprono tutte le risorse di abilitazione.
+   * Selezionate l&#39;icona **Report** per generare rapporti che coprono tutte le risorse di abilitazione.
    * Selezionate un percorso di apprendimento per l’abilitazione.
-   * Selezionate l’icona **Rapporto** per generare i rapporti per:
+   * Selezionare l&#39;icona **Report** per generare i report per:
 
       * Risorse di abilitazione incluse.
       * Gli studenti assegnati al percorso di apprendimento.
@@ -88,7 +88,7 @@ I rapporti tabulari possono essere esportati in formato .csv per l’elaborazion
       * Numero di osservazioni fatte
       * Valutazione a stella
 
-Per ulteriori dettagli, consultate la sezione [](/help/communities/resources.md#report) Rapporti della console Risorse.
+Per ulteriori dettagli, vedere [Sezione Rapporti](/help/communities/resources.md#report) della console Risorse.
 
 ## Rapporto assegnazioni {#assignments-report}
 
@@ -114,7 +114,7 @@ Seleziona i criteri per il rapporto:
 
    Scegliete tra le risorse di abilitazione assegnate agli studenti selezionati.
 
-Selezionate **Genera** per creare il rapporto:
+Selezionare **Generate** per creare il rapporto:
 
 ![generate-report](assets/generate-assignment-report.png)
 
@@ -134,7 +134,7 @@ Seleziona i criteri per il rapporto:
 
    Può scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito.
 
-* **[!UICONTROL Time frame]**
+* **[!UICONTROL Intervallo di tempo]**
 
    Selezionate una delle seguenti opzioni:
 
@@ -143,7 +143,7 @@ Seleziona i criteri per il rapporto:
    * Ultimi 90 giorni
    * Ultimo anno
 
-Selezionate **[!UICONTROL Genera]** per creare il rapporto.
+Selezionare **[!UICONTROL Generate]** per creare il rapporto.
 
 ![generate-views](assets/generate-views.png)
 
@@ -163,7 +163,7 @@ Seleziona i criteri per il rapporto:
 
    Può scegliere Tutto il contenuto o selezionare una delle funzioni presenti sul sito.
 
-* **[!UICONTROL Time frame]**
+* **[!UICONTROL Intervallo di tempo]**
 
    Selezionate una delle seguenti opzioni:
 
@@ -172,7 +172,7 @@ Seleziona i criteri per il rapporto:
    * Ultimi 90 giorni
    * Ultimo anno
 
-Selezionate **[!UICONTROL Genera]** per creare il rapporto.
+Selezionare **[!UICONTROL Generate]** per creare il rapporto.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -182,8 +182,8 @@ Selezionate **[!UICONTROL Genera]** per creare il rapporto.
 
 Se non è presente alcun sito community, accertatevi che  Adobe Analytics sia stato abilitato per un sito. Se scegli rapporti sulle assegnazioni, assicurati che la funzione delle assegnazioni sia nella struttura del sito della community.
 
-### I rapporti non vengono visualizzati nell&#39;istanza di AEM Author {#reports-do-not-show-in-aem-author-instance}
+### I report non vengono visualizzati nell&#39;istanza di AEM Author {#reports-do-not-show-in-aem-author-instance}
 
-Se i rapporti non vengono visualizzati nell&#39;istanza di AEM Author, controllate se sono disponibili personalizzazioni, ad esempio la mappatura URL sull&#39;istanza di Publish. Se la mappatura URL viene effettuata solo sull’istanza AEM Publish del sito community, accertatevi che lo stesso sia stato configurato nell’istanza AEM Author nella configurazione **Site Trend Report Social Component Factory** .
+Se i rapporti non vengono visualizzati nell&#39;istanza di AEM Author, controllate se sono disponibili personalizzazioni, ad esempio la mappatura URL sull&#39;istanza di Publish. Se la mappatura URL viene effettuata solo sull&#39;istanza AEM Publish del sito community, accertatevi che lo stesso sia stato configurato nell&#39;istanza AEM Author nella configurazione **Site Trend Report Social Component Factory** (Fabbrica componente social report sulle tendenze del sito).
 
 ![Mappatura URL su AEM Author](assets/sitetrend.png)
