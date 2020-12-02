@@ -1,6 +1,6 @@
 ---
-title: Riepilogo delle nuove funzioni| Moduli AEM 6.5
-seo-title: Riepilogo delle nuove funzioni| Moduli AEM 6.5
+title: Riepilogo delle nuove funzioni | AEM 6.5 Forms
+seo-title: Riepilogo delle nuove funzioni | AEM 6.5 Forms
 description: Ultime funzioni e miglioramenti a moduli e documenti della soluzione di gestione dell'esperienza digitale più avanzata al mondo.
 seo-description: Ultime funzioni e miglioramenti a moduli e documenti della soluzione di gestione dell'esperienza digitale più avanzata al mondo.
 uuid: 179d372d-b7f6-4771-8349-fc6b7854efac
@@ -10,11 +10,14 @@ discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a417094c1d7b28ec54a6e84303d7a9747bb0c510
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 0%
 
 ---
 
 
-# Riepilogo delle nuove funzioni| Moduli AEM 6.5{#new-features-summary-aem-forms}
+# Riepilogo delle nuove funzioni | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 ## Report transazione {#transaction-reports}
 
@@ -24,7 +27,7 @@ I rapporti sulle transazioni consentono di acquisire e tenere traccia del numero
 * Rendering di una versione cartacea o Web di una comunicazione interattiva
 * Conversione di un documento da un formato di file a un altro
 
-Per informazioni sulla configurazione e l&#39;utilizzo dei rapporti sulle transazioni, vedere Panoramica [dei rapporti sulle](../../forms/using/transaction-reports-overview.md)transazioni.
+Per informazioni sulla configurazione e l&#39;utilizzo dei rapporti sulle transazioni, vedere [Panoramica sui rapporti sulle transazioni](../../forms/using/transaction-reports-overview.md).
 
 ![Un esempio di rapporto sulle transazioni](assets/surface_transaction_reporting.png)
 
@@ -32,23 +35,23 @@ Per informazioni sulla configurazione e l&#39;utilizzo dei rapporti sulle transa
 
 **Definire i pattern di visualizzazione dei dati**
 
-Gli autori delle comunicazioni interattive ora possono definire pattern [di visualizzazione dei](create-interactive-communication.md#datadisplaypatterns) dati per campi, variabili ed elementi del modello di dati del modulo. Ad esempio, i formati data, valuta o telefono.
+Gli autori delle comunicazioni interattive ora possono definire [pattern di visualizzazione dei dati](create-interactive-communication.md#datadisplaypatterns) per campi, variabili ed elementi del modello di dati del modulo. Ad esempio, i formati data, valuta o telefono.
 
 **Utilizzare nuovi tipi di grafici**
 
-È ora possibile aggiungere grafici [quadranti e grafici con più serie](../../forms/using/chart-component-interactive-communications.md) alle comunicazioni interattive.
+È ora possibile aggiungere alle comunicazioni interattive grafici e grafici [Quadranti con più serie](../../forms/using/chart-component-interactive-communications.md).
 
 **Ordinare le colonne in una tabella**
 
-È ora possibile [ordinare le colonne di una tabella](../../forms/using/create-interactive-communication.md#sortcolumns) nella comunicazione interattiva. È possibile eseguire il binding e l&#39;ordinamento delle colonne di tabella con oggetti di testo statici o modelli di dati.
+Ora è possibile [ordinare le colonne di una tabella](../../forms/using/create-interactive-communication.md#sortcolumns) nella comunicazione interattiva. È possibile eseguire il binding e l&#39;ordinamento delle colonne di tabella con oggetti di testo statici o modelli di dati.
 
 **Utilizzare nuovi componenti in un canale Web**
 
-È ora possibile aggiungere i componenti Pulsante e Separatore al canale Web. Per ulteriori informazioni, vedere [Aggiungi componente Pulsante al canale](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) Web e Componente [Separatore nel canale](../../forms/using/create-interactive-communication.md#separatorcomponent)Web.
+È ora possibile aggiungere i componenti Pulsante e Separatore al canale Web. Per ulteriori informazioni, vedere [Aggiungi componente Pulsante al canale Web](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) e [Separatore componente nel canale Web](../../forms/using/create-interactive-communication.md#separatorcomponent).
 
 **Modalità Layout per ridimensionare i componenti**
 
-È ora possibile passare alla modalità [](../../forms/using/resize-using-layout-mode.md) Layout per ridimensionare i componenti nel canale Web utilizzando un&#39;interfaccia WYSIWYG.
+È ora possibile passare alla [modalità Layout](../../forms/using/resize-using-layout-mode.md) per ridimensionare i componenti nel canale Web utilizzando un&#39;interfaccia WYSIWYG.
 
 **Miglioramenti a livello di usabilità**
 
@@ -70,29 +73,29 @@ Sono stati introdotti diversi miglioramenti nel layout del canale Web generato a
 
 ## Moduli adattivi {#adaptive-forms}
 
-### Utilizzare le firme digitali basate sul cloud di Adobe Sign nei moduli adattivi {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
+### Utilizzare  firme digitali basate su cloud Adobe Sign in Forms adattivo {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Le firme](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) digitali o le firme remote basate su cloud sono una nuova generazione di firme digitali utilizzabili tra computer desktop, dispositivi mobili e Web. e soddisfare i massimi livelli di conformità e garanzia per l&#39;autenticazione dei firmatari. È ora possibile [firmare un modulo](../../forms/using/working-with-adobe-sign.md) adattivo con firme digitali basate su cloud.
+[Le ](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) firme digitali o le firme remote basate su cloud rappresentano una nuova generazione di firme digitali utilizzabili tra computer desktop, dispositivi mobili e Web. e soddisfare i massimi livelli di conformità e garanzia per l&#39;autenticazione dei firmatari. Ora è possibile [firmare un modulo adattivo](../../forms/using/working-with-adobe-sign.md) con firme digitali basate su cloud.
 
-#### Incorporare un modulo adattivo o una comunicazione interattiva nelle applicazioni di pagina singola AEM Sites {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
+#### Incorporazione di un modulo adattivo o di una comunicazione interattiva  applicazioni AEM Sites a pagina singola {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-AEM Forms consente di incorporare [facilmente un modulo](../../forms/using/embed-adaptive-form-aem-sites-spa.md) adattivo o una comunicazione interattiva in un’applicazione SPA (Single Page Application) AEM Sites. Il modulo adattivo e la comunicazione interattiva incorporati sono completamente funzionanti e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente agli utenti di restare nel contesto di altri elementi della pagina Web e di interagire contemporaneamente con il modulo adattivo o la comunicazione interattiva.
+ AEM Forms consente di [incorporare facilmente un modulo adattivo](../../forms/using/embed-adaptive-form-aem-sites-spa.md) o una comunicazione interattiva in un&#39;applicazione AEM Sites a pagina singola (SPA) . Il modulo adattivo e la comunicazione interattiva incorporati sono completamente funzionanti e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente agli utenti di restare nel contesto di altri elementi della pagina Web e di interagire contemporaneamente con il modulo adattivo o la comunicazione interattiva.
 
-#### Ordinare le colonne di tabelle Modulo adattivo {#sort-columns-of-adaptive-form-tables}
+#### Ordinare le colonne delle tabelle dei moduli adattivi {#sort-columns-of-adaptive-form-tables}
 
-È possibile [ordinare qualsiasi colonna di una tabella](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) Modulo adattivo in ordine crescente o decrescente. È possibile applicare l&#39;ordinamento alle colonne di tabella con testo statico, proprietà dell&#39;oggetto modello dati o una combinazione di proprietà statiche dell&#39;oggetto testo e modello dati.
+È possibile [ordinare qualsiasi colonna di una tabella per moduli adattivi](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) in ordine crescente o decrescente. È possibile applicare l&#39;ordinamento alle colonne di tabella con testo statico, proprietà dell&#39;oggetto modello dati o una combinazione di proprietà statiche dell&#39;oggetto testo e modello dati.
 
-#### Limitare la disponibilità di modelli di moduli adattivi per percorsi specifici {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
+#### Limitare la disponibilità di modelli Forms adattivi a percorsi specifici {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-I moduli adattivi hanno aggiunto il supporto per la proprietà cq:allowPaths. La proprietà [limita la disponibilità dei modelli di moduli adattivi a percorsi](creating-adaptive-form.md#adaptive-form-templates)specifici.
+I moduli adattivi hanno aggiunto il supporto per la proprietà cq:allowPaths. La proprietà [limita la disponibilità dei modelli Forms adattivi a percorsi specifici](creating-adaptive-form.md#adaptive-form-templates).
 
-#### Aggiunta dinamica delle caselle di controllo al modulo adattivo {#add-check-boxes-to-the-adaptive-form-dynamically}
+#### Aggiungere dinamicamente le caselle di controllo al modulo adattivo {#add-check-boxes-to-the-adaptive-form-dynamically}
 
-È ora possibile definire regole per [aggiungere al modulo adattivo le caselle di controllo in modo dinamico](../../forms/using/rule-editor.md#setpropertyrule) in base a una funzione personalizzata, a un oggetto modulo o a una proprietà oggetto.
+È ora possibile definire regole per [aggiungere caselle di controllo al modulo adattivo in modo dinamico](../../forms/using/rule-editor.md#setpropertyrule) in base a una funzione personalizzata, a un oggetto modulo o a una proprietà oggetto.
 
 ## Flussi di lavoro AEM {#aem-workflows}
 
-### Utilizzare le variabili nei flussi di lavoro AEM {#use-variables-in-aem-workflows}
+### Utilizzare le variabili in AEM flussi di lavoro {#use-variables-in-aem-workflows}
 
 Le variabili consentono ai passaggi del flusso di lavoro di contenere e trasmettere i metadati tra le fasi del flusso di lavoro in fase di esecuzione. È possibile creare diversi tipi di variabili per memorizzare diversi tipi di dati. Ad esempio, numeri interi, stringhe, documenti o istanze del modello dati del modulo. In genere, si utilizza una variabile o una raccolta di variabili quando è necessario prendere una decisione in base al valore che contiene o per memorizzare le informazioni necessarie in un secondo momento in un processo.
 
@@ -102,15 +105,15 @@ Le variabili sono un&#39;estensione dell&#39;interfaccia [MetaDataMap](https://h
 * Recuperare e aggiornare i valori direttamente in un modello dati e in un file dati del modulo (XML/JSON) di un modulo inviato
 * Archiviare documenti completi in una variabile per eseguire l&#39;elaborazione dei documenti
 
-Il passaggio Vai a, O Dividi e tutti i passaggi del flusso di lavoro di AEM Forms supportano le variabili. Puoi utilizzare l’interfaccia MetaDataMap per accedere alle variabili nei passaggi del flusso di lavoro che non dispongono di un supporto nativo per le variabili. Per ulteriori informazioni, consultate [Variabili nei flussi di lavoro](../../forms/using/variable-in-aem-workflows.md)AEM.
+Il passaggio Vai a, O Dividi e tutti  passaggi del flusso di lavoro AEM Forms supportano le variabili. Puoi utilizzare l’interfaccia MetaDataMap per accedere alle variabili nei passaggi del flusso di lavoro che non dispongono di un supporto nativo per le variabili. Per ulteriori informazioni, vedere [Variabili in AEM flussi di lavoro](../../forms/using/variable-in-aem-workflows.md).
 
 ![Impostazione di una variabile per in un flusso di lavoro](assets/variable.png)
 
-#### Utilizzare un flusso di lavoro con diversi moduli adattivi {#use-a-workflow-with-different-adaptive-forms}
+#### Utilizzare un flusso di lavoro con Forms adattivo diverso {#use-a-workflow-with-different-adaptive-forms}
 
-È possibile [specificare un modulo adattivo per l&#39;attività](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) di assegnazione e il passaggio del documento del record dei flussi di lavoro incentrati sui moduli in fase di esecuzione. Consente di utilizzare un flusso di lavoro con diversi moduli adattivi. È possibile scegliere il metodo per selezionare un modulo adattivo durante la progettazione del flusso di lavoro. Il modulo adattivo può trovarsi in un percorso assoluto, essere inviato come payload al flusso di lavoro o essere disponibile in un percorso calcolato utilizzando una variabile.
+È possibile [specificare un modulo adattivo per l&#39;attività di assegnazione](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) e il passaggio del documento del record dei flussi di lavoro incentrati sui moduli nel runtime. Consente di utilizzare un flusso di lavoro con diversi Forms adattivi. È possibile scegliere il metodo per selezionare un modulo adattivo durante la progettazione del flusso di lavoro. Il modulo adattivo può trovarsi in un percorso assoluto, essere inviato come payload al flusso di lavoro o essere disponibile in un percorso calcolato utilizzando una variabile.
 
-#### Utilizzare funzionalità di registrazione avanzate per i passaggi di flusso di lavoro incentrati sui moduli {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
+#### Utilizzare funzionalità di registrazione avanzate per i passaggi del flusso di lavoro incentrati sui moduli {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
 Le funzionalità di registrazione dei passaggi di flusso di lavoro incentrati sui moduli sono standardizzate. Ora, tutti i passaggi del flusso di lavoro incentrati sui moduli producono file di registro standardizzati simili. Consente di migliorare la velocità di debug.
 
@@ -118,16 +121,16 @@ Le funzionalità di registrazione dei passaggi di flusso di lavoro incentrati su
 
 Ora puoi:
 
-* [Convalida dei dati](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) di input in base a un elenco di vincoli. In questo modo si garantisce che solo i dati validi vengano inviati all&#39;origine dati.
-* [Ignora endpoint](../../forms/using/configure-data-sources.md#configure-soap-web-services) predefinito definito in un file WSDL (Web Services Description Language).
+* [Convalida del ](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) database di input in base a un elenco di vincoli. In questo modo si garantisce che solo i dati validi vengano inviati all&#39;origine dati.
+* [Ignora ](../../forms/using/configure-data-sources.md#configure-soap-web-services) endpoint predefiniti definiti in un file WSDL (Web Services Description Language).
 
-* [Ignora](../../forms/using/configure-data-sources.md#configure-restful-web-services) schema predefinito [, host e percorso](../../forms/using/configure-data-sources.md#configure-restful-web-services) base definiti nel file di definizione Swagger.
+* [Ignora schema ](../../forms/using/configure-data-sources.md#configure-restful-web-services) [predefinito, host e ](../../forms/using/configure-data-sources.md#configure-restful-web-services) percorso di base definiti nel file di definizione Swagger.
 
-## Aggiornamenti per piattaforma e sicurezza {#platform-and-security-updates}
+## Aggiornamenti di piattaforma e sicurezza {#platform-and-security-updates}
 
-### Aggiornamenti principali delle piattaforme {#major-platform-updates}
+### Aggiornamenti principali della piattaforma {#major-platform-updates}
 
-I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di sistemi operativi, server applicazione, database, driver di database, JDK, server LDAP e server e-mail supportati. Di seguito sono riportate le principali modifiche apportate alle piattaforme [](../../forms/using/aem-forms-jee-supported-platforms.md)supportate:
+ AEM Forms può essere configurato utilizzando qualsiasi combinazione di sistemi operativi, server applicazioni, database, driver di database, JDK, server LDAP e server di posta elettronica supportati. Di seguito sono riportate le principali modifiche apportate alle [piattaforme supportate](../../forms/using/aem-forms-jee-supported-platforms.md):
 
 <table>
  <tbody>
@@ -149,7 +152,7 @@ I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di si
    <td>
     <ul>
     <li>Profilo WebSphere Liberty</li>
-    <li>Oracle WebLogic</li>
+    <li> Oracle WebLogic</li>
     </ul> </td>
   </tr>
   <tr>
@@ -157,7 +160,7 @@ I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di si
    <td>
     <ul>
      <li>IBM DB2 <br /> </li>
-     <li>Oracle RAC</li>
+     <li> Oracle RAC</li>
     </ul> </td>
   </tr>
   <tr>
@@ -185,7 +188,7 @@ I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di si
     </ul> </td>
   </tr>
   <tr>
-   <td>AEM Forms app<br /> </td>
+   <td> app AEM Forms<br /> </td>
    <td>
     <ul>
      <li>Supporto di Windows 8.1</li>
@@ -201,17 +204,17 @@ I moduli AEM possono essere configurati utilizzando qualsiasi combinazione di si
  </tbody>
 </table>
 
-* Per informazioni sulla migrazione a un&#39;altra piattaforma, contattate il supporto Adobe
+* Contatta  supporto Adobe per informazioni sulla migrazione a un&#39;altra piattaforma
 
 #### Nuova interfaccia utente basata su HTML5 {#new-html-based-uis}
 
-In linea con l’EOL pianificato di Adobe Flash Player e con la direzione generale della migrazione dei contenuti basati su Flash agli standard aperti, AEM 6.5 Forms ha sostituito l’interfaccia utente basata su Flash di Health Monitor, Process Management, Reader Extension e Category Management UI di AEM Forms nella console di amministrazione JEE con interfaccia utente basata su HTML5.
+In linea con l’EOL pianificato del Flash Player  Adobe e con la direzione generale della migrazione Flash contenuto basato su  agli standard aperti, AEM 6.5 Forms ha sostituito l’interfaccia utente basata su Flash di Monitor integrità, Gestione dei processi, Estensione dei Reader e Gestione delle categorie di AEM Forms nella console di amministrazione JEE con interfaccia utente basata su HTML5.
 
-#### Miglioramenti della sicurezza {#security-improvements}
+#### Miglioramenti alla sicurezza {#security-improvements}
 
-* AEM 6.5 Forms nell’interfaccia utente della console di amministrazione JEE ora si basa su Apache Struts 2.5.
-* AEM 6.5 Forms utilizza ora jQuery per 3.2.1 e jQuery UI 1.12.1. Consulta la documentazione [di](/help/forms/home.md) aggiornamento per verificare l’impatto della modifica.
+* AEM 6.5 Forms nell’interfaccia della console di amministrazione JEE è ora basato su Apache Struts 2.5.
+* AEM 6.5 Forms utilizza ora jQuery per 3.2.1 e jQuery UI 1.12.1. Per informazioni sull&#39;impatto della modifica, consultare la [documentazione relativa all&#39;aggiornamento](/help/forms/home.md).
 
 #### Miglioramenti all&#39;accessibilità {#accessibility-improvements}
 
-AEM 6.5 Forms offre una migliore accessibilità ad AEM Forms Workspace.
+AEM 6.5 Forms ha migliorato l&#39;accessibilità di  AEM Forms Workspace.
