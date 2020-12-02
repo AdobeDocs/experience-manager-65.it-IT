@@ -152,7 +152,7 @@ in una query potete utilizzare un numero qualsiasi di caratteri jolly.
 
 >[!NOTE]
 >
->You can also use [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) search.
+>È inoltre possibile utilizzare la ricerca [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Visualizzazione di riferimenti {#showing-references}
 
@@ -164,7 +164,7 @@ Per visualizzare i riferimenti diretti alle pagine:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
+1. Selezionare **Mostra riferimenti...** AEM apre la finestra Riferimenti e visualizza le pagine che fanno riferimento alla pagina selezionata, inclusi i relativi percorsi.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -185,9 +185,9 @@ Il **Registro di controllo** è accessibile dalla scheda **Informazioni** della 
 
 ## Informazioni sulle pagine {#page-information}
 
-The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
+La console Siti Web fornisce inoltre [informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) come pubblicazione, modifica, blocco, Live Copy e così via.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina    {#page-modes}
 
 Quando modificate una pagina nell’interfaccia classica, potete accedere a diverse modalità mediante le icone che si trovano nella parte inferiore della barra laterale:
 
