@@ -1,5 +1,5 @@
 ---
-title: Modifica delle proprietà pagina
+title: Modifica delle proprietà di una pagina
 seo-title: Modifica delle proprietà di una pagina
 description: Le proprietà di una pagina possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
 seo-description: Le proprietà di una pagina possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +82,7 @@ Le proprietà sono distribuite su più schede:
 
    Consente di inserire un URL personalizzato per questa pagina. Questo consente di ottenere un URL più breve e significativo.
 
-   Ad esempio, se l’URL personalizzato è impostato su w `elcome`per la pagina identificata dal percorso / `v1.0/startpage`per il sito Web h `ttp://example.com,` allora h `ttp://example.com/welcome`sarebbe l’URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
+   Ad esempio, se l&#39;URL personalizzato è impostato su w `elcome`nella pagina identificata dal percorso / `v1.0/startpage`per il sito Web h `ttp://example.com,`, h `ttp://example.com/welcome`sarà l&#39;URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -93,7 +96,7 @@ Le proprietà sono distribuite su più schede:
 
    Specifica se vuoi che la pagina usi l’URL personalizzato.
 
-### Avanzate {#advanced}
+### Avanzate  {#advanced}
 
 * **Lingua**
 
@@ -131,11 +134,11 @@ Le proprietà sono distribuite su più schede:
 
    Consente di specificare una configurazione di esportazione.
 
-### Miniatura {#thumbnail}
+### Miniatura   {#thumbnail}
 
 * **Miniatura pagina**
 
-   Mostra la miniatura della pagina. Tieni presente quanto segue:
+   Mostra la miniatura della pagina. Operazioni disponibili:
 
    * **Genera anteprima**
 
@@ -145,9 +148,9 @@ Le proprietà sono distribuite su più schede:
 
       Carica un’immagine da usare come miniatura.
 
-### Servizi cloud {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Servizi cloud**
+* **Cloud Services**
 
    Consente di definire le proprietà per i [servizi cloud](/help/sites-developing/extending-cloud-config.md).
 
@@ -155,9 +158,9 @@ Le proprietà sono distribuite su più schede:
 
 * **Personalizzazione**
 
-   Seleziona un [marchio per specificare l’ambito di impostazione della destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+   Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Autorizzazioni {#permissions}
+### Autorizzazioni    {#permissions}
 
 * **Autorizzazioni** (interfaccia touch)
 
@@ -169,15 +172,15 @@ Le proprietà sono distribuite su più schede:
 
    Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Livecopy**
 
    Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito {#site-structure}
+### Struttura sito   {#site-structure}
 
-* Fornisce dei collegamenti verso pagine che offrono funzionalità a livello di sito, come **Pagina registrazione**, **Pagina offline** e altre.
+* Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-2}
 
