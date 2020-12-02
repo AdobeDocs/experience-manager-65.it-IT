@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Tag Decoration{#decoration-tag}
+# Tag decorazione{#decoration-tag}
 
 Quando viene eseguito il rendering di un componente in una pagina Web, è possibile generare un elemento HTML che racchiude il componente renderizzato all’interno di se stesso. Ciò ha principalmente due finalità:
 
@@ -33,27 +33,27 @@ Di seguito sono riportate alcune raccomandazioni generali su quando includere l&
 * L’elemento wrapper deve essere aggiunto a tutti i componenti modificabili, in modo che l’editor pagina possa inizializzarli e aggiornarli correttamente.
 * Per i componenti non modificabili, l&#39;elemento wrapper può essere evitato se non svolge alcuna funzione particolare, in modo che il markup risultante non sia necessariamente gonfiato.
 
-## Controlli per componenti {#component-controls}
+## Controlli componente {#component-controls}
 
 Le proprietà e i nodi seguenti possono essere applicati ai componenti per controllare il comportamento del relativo tag di decorazione:
 
-* **`cq:noDecoration {boolean}`:**Questa proprietà può essere aggiunta a un componente e un valore vero forza AEM a non generare alcun elemento wrapper sul componente.
+* **`cq:noDecoration {boolean}`:** Questa proprietà può essere aggiunta a un componente e un valore vero forza AEM non generare alcun elemento wrapper sul componente.
 
-* **`cq:htmlTag`node:**Questo nodo può essere aggiunto sotto un componente e può avere le seguenti proprietà:
+* **`cq:htmlTag`node:** Questo nodo può essere aggiunto sotto un componente e può avere le seguenti proprietà:
 
-   * **`cq:tagName {String}`:**Questo può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per racchiudere i componenti al posto dell&#39;elemento DIV predefinito.
-   * **`class {String}`:**Può essere utilizzato per specificare i nomi delle classi css da aggiungere al wrapper.
+   * **`cq:tagName {String}`:** Può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per racchiudere i componenti al posto dell&#39;elemento DIV predefinito.
+   * **`class {String}`:** Può essere utilizzato per specificare i nomi delle classi css da aggiungere al wrapper.
    * Altri nomi di proprietà saranno aggiunti come attributi HTML con lo stesso valore String fornito.
 
 ## Controlli script {#script-controls}
 
-Il comportamento del wrapper varia tuttavia a seconda se per includere l’elemento viene utilizzato [HTL](/help/sites-developing/decoration-tag.md#htl) o [JSP](/help/sites-developing/decoration-tag.md#jsp) .
+Il comportamento del wrapper varia tuttavia a seconda che per includere l&#39;elemento venga utilizzato [HTL](/help/sites-developing/decoration-tag.md#htl) o [JSP](/help/sites-developing/decoration-tag.md#jsp).
 
 ### HTL {#htl}
 
 In generale, il comportamento del wrapper in HTL può essere riassunto come segue:
 
-* Per impostazione predefinita non viene eseguito il rendering di alcun DIV per wrapper (solo durante l’operazione `data-sly-resource="foo"`).
+* Per impostazione predefinita, non viene eseguito il rendering di alcun wrapper DIV (quando si esegue solo `data-sly-resource="foo"`).
 * Tutte le modalità wcm (disabilitate, visualizzate in anteprima, modificate sia l’autore che la pubblicazione) vengono sottoposte a rendering nello stesso modo.
 
 Il comportamento del wrapper può anche essere controllato completamente.
@@ -63,7 +63,7 @@ Il comportamento del wrapper può anche essere controllato completamente.
 
 È possibile controllare completamente il comportamento dei tag wrapper dagli script HTL e la relativa logica.
 
-Per ulteriori informazioni sullo sviluppo in HTL consultate la documentazione [](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)HTL.
+Per ulteriori informazioni sullo sviluppo in HTL, consultate la [documentazione HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html).
 
 #### Albero decisionale {#decision-tree}
 
@@ -71,7 +71,7 @@ Questa struttura decisionale riepiloga la logica che determina il comportamento 
 
 ![chlimage_1-75](assets/chlimage_1-75a.png)
 
-#### Use Cases {#use-cases}
+#### Casi di utilizzo {#use-cases}
 
 I tre esempi di utilizzo riportati di seguito illustrano come vengono gestiti i tag wrapper e come è semplice controllare il comportamento desiderato dei tag wrapper.
 
@@ -97,7 +97,7 @@ Tutti gli esempi che seguono si basano sulla seguente struttura di contenuto e c
 
 #### Caso d’uso 1: Includi un componente per il riutilizzo del codice {#use-case-include-a-component-for-code-reuse}
 
-Il caso d’uso più tipico è quello in cui un componente include un altro componente per motivi di riutilizzo del codice. In tal caso, il componente incluso non è desiderato per essere modificabile con una propria barra degli strumenti e una propria finestra di dialogo, pertanto non è necessario alcun wrapper e il componente `cq:htmlTag` verrà ignorato. Questo può essere considerato il comportamento predefinito.
+Il caso d’uso più tipico è quello in cui un componente include un altro componente per motivi di riutilizzo del codice. In tal caso, il componente incluso non è desiderato per essere modificabile con una propria barra degli strumenti e una propria finestra di dialogo, pertanto non è necessario alcun wrapper e l&#39;elemento `cq:htmlTag` del componente verrà ignorato. Questo può essere considerato il comportamento predefinito.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -109,11 +109,11 @@ Output risultante su `/content/test.html`:
 
 Un esempio potrebbe essere un componente che include un componente immagine di base per visualizzare un’immagine, in genere utilizzando una risorsa sintetica, che consiste nell’includere un componente figlio virtuale trasmettendo a una risorsa semplice di dati un oggetto Mappa che rappresenta tutte le proprietà del componente.
 
-#### Caso d’uso 2: Includi un componente modificabile {#use-case-include-an-editable-component}
+#### Caso d’uso 2: Includere un componente modificabile {#use-case-include-an-editable-component}
 
-Un altro esempio di utilizzo comune è rappresentato dai componenti contenitore che includono componenti secondari modificabili, come un Contenitore di layout. In questo caso, ogni bambino incluso ha bisogno di un wrapper per il funzionamento dell&#39;editor (a meno che non sia esplicitamente disabilitato con la `cq:noDecoration` proprietà).
+Un altro esempio di utilizzo comune è rappresentato dai componenti contenitore che includono componenti secondari modificabili, come un Contenitore di layout. In questo caso, ogni bambino incluso ha bisogno di un wrapper per il funzionamento dell&#39;editor (a meno che non sia esplicitamente disabilitato con la proprietà `cq:noDecoration`).
 
-Poiché in questo caso il componente incluso è un componente indipendente, per il funzionamento dell’editor è necessario un elemento wrapper e per definire il layout e lo stile da applicare. Per attivare questo comportamento, è disponibile l&#39; `decoration=true` opzione.
+Poiché in questo caso il componente incluso è un componente indipendente, per il funzionamento dell’editor è necessario un elemento wrapper e per definire il layout e lo stile da applicare. Per attivare questo comportamento, è disponibile l&#39;opzione `decoration=true`.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -140,14 +140,14 @@ Output risultante `/content/test.html`:
 
 ## JSP {#jsp}
 
-Quando includete un componente che utilizza `cq:includ`e o `sling:include`, il comportamento predefinito in AEM consiste nell’utilizzare un DIV per racchiudere l’elemento. Tuttavia, questo wrapper può essere personalizzato in due modi:
+Quando si inserisce un componente utilizzando `cq:includ`e o `sling:include`, il comportamento predefinito in AEM consiste nell&#39;utilizzare un DIV per racchiudere l&#39;elemento. Tuttavia, questo wrapper può essere personalizzato in due modi:
 
-* Comunicate esplicitamente ad AEM di non mandare a capo il componente utilizzando `cq:noDecoration`.
-* Usate un tag HTML personalizzato per racchiudere il componente con `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
+* Dire esplicitamente AEM di non mandare a capo il componente utilizzando `cq:noDecoration`.
+* Utilizzate un tag HTML personalizzato per racchiudere il componente con `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
 
 ### Albero decisionale {#decision-tree-1}
 
-Nella struttura di decisione seguente è illustrato come `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`e `decorationTagName` influenzare il comportamento del wrapper.
+La struttura decisionale seguente illustra come `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` e `decorationTagName` influiscono sul comportamento del wrapper.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)
 
