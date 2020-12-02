@@ -25,7 +25,7 @@ Una volta che un tag è stato preparato e pronto, il servizio ora può applicare
 
 In background, Smart Content Service utilizza  framework Adobe Sensei AI per formare il proprio algoritmo di riconoscimento delle immagini sulla struttura dei tag e la tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un altro set di risorse.
 
-Smart Content Service è un servizio cloud ospitato su  I/O Adobe. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la [!DNL Experience Manager] distribuzione con  I/O Adobe.
+Smart Content Service è un servizio cloud ospitato su  Adobe I/O. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la distribuzione [!DNL Experience Manager] con  Adobe I/O.
 
 Di seguito sono riportati i passaggi principali per utilizzare Smart Content Service:
 
@@ -42,38 +42,38 @@ Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto seg
 
 * Disponi di un account Adobe ID con privilegi di amministratore dell’organizzazione.
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione.
-* Smart Content Services Base Package può essere aggiunto solo a una distribuzione in cui sono stati concessi in licenza pacchetti [!DNL Sites] di base e [!DNL Assets] componenti aggiuntivi.
+* È possibile aggiungere il pacchetto di base Smart Content Services solo a una distribuzione in cui sono stati concessi in licenza i componenti aggiuntivi [!DNL Sites] e [!DNL Assets].
 
 ## Onboarding {#onboarding}
 
-Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento a  I/O Adobe.
+Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager]. Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento a  Adobe I/O.
 
-L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con [!DNL Experience Manager]. Per integrare il servizio con [!DNL Experience Manager Assets], consultate [Configurare i tag](config-smart-tagging.md)avanzati.
+L&#39;amministratore può seguire il collegamento per integrare Smart Content Service con [!DNL Experience Manager]. Per integrare il servizio con [!DNL Experience Manager Assets], vedere [Configurare i tag avanzati](config-smart-tagging.md).
 
-La procedura di registrazione è completa quando l’amministratore configura il servizio e aggiunge utenti in [!DNL Experience Manager].
+Il processo di registrazione è completo quando l&#39;amministratore configura il servizio e aggiunge utenti in [!DNL Experience Manager].
 
 >[!NOTE]
 >
->Se utilizzate la versione [!DNL Experience Manager] 6.3 o precedente e necessitate di un servizio di tag per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità AI più recenti e sono quindi meno precisi del servizio avanzato di smart tag.
+>Se utilizzate [!DNL Experience Manager] 6.3 o una versione precedente e necessitate di un servizio di tag per le risorse, consultate [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). I tag avanzati non utilizzano le funzionalità AI più recenti e sono quindi meno precisi del servizio avanzato di smart tag.
 
 ## Rivedere risorse e tag {#reviewing-assets-and-tags}
 
 Dopo essere stati a bordo, la prima cosa da fare è identificare un insieme di tag che meglio descrivono queste immagini nel contesto della vostra attività.
 
-Quindi, rivedete le immagini per identificare un set di immagini che meglio rappresentano il vostro prodotto per un particolare requisito aziendale. Assicurati che le risorse del set selezionato siano conformi alle linee guida [di formazione di](/help/assets/config-smart-tagging.md#training-the-smart-content-service)Smart Content Service.
+Quindi, rivedete le immagini per identificare un set di immagini che meglio rappresentano il vostro prodotto per un particolare requisito aziendale. Assicurati che le risorse del set selezionato siano conformi alle [linee guida di formazione per Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 
 Aggiungete le risorse a una cartella e applicate i tag a ciascuna risorsa dalla pagina delle proprietà. Quindi, eseguite il flusso di lavoro di formazione su questa cartella. La serie di risorse selezionata consente a Smart Content Service di formare in modo efficace più risorse utilizzando le definizioni della tassonomia.
 
 >[!NOTE]
 >
 >1. La formazione è un processo irrevocabile.  Adobe consiglia di rivedere i tag nel set di risorse curato prima di addestrare Smart Content Service sui tag.
->1. Prima di iniziare la formazione per un tag, consultate le linee guida [di formazione per](/help/assets/config-smart-tagging.md#training-the-smart-content-service)Smart Content Service.
+>1. Prima di iniziare la formazione per un tag, consultate [Linee guida per la formazione sui servizi di contenuto avanzato](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Quando formate Smart Content Service per la prima volta,  Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 
-## Comprendere i risultati [!DNL Experience Manager] di ricerca con gli smart tag {#understandsearch}
+## Comprendere i risultati della ricerca [!DNL Experience Manager] con gli smart tag {#understandsearch}
 
-Per impostazione predefinita, [!DNL Experience Manager] la ricerca combina i termini di ricerca con una `AND` clausola. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una `OR` clausola aggiuntiva per individuare qualsiasi termine di ricerca negli smart tag applicati. For example, consider searching for `woman running`. Per impostazione predefinita, le risorse con una sola parola chiave `woman` o una sola `running` parola chiave nei metadati non vengono visualizzate nei risultati della ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con `woman` o `running` tramite smart tag. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i termini di ricerca con una clausola `AND`. L&#39;utilizzo di smart tag non modifica questo comportamento predefinito. L&#39;utilizzo di smart tag aggiunge una clausola `OR` aggiuntiva per individuare i termini di ricerca negli smart tag applicati. Ad esempio, è consigliabile cercare `woman running`. Per impostazione predefinita, le risorse con una semplice parola chiave `woman` o semplicemente `running` nei metadati non vengono visualizzate nei risultati di ricerca. Tuttavia, in una query di ricerca di questo tipo viene visualizzata una risorsa con tag `woman` o `running` che utilizza gli smart tag. Quindi i risultati della ricerca sono una combinazione di:
 
 * risorse con `woman` e `running` parole chiave nei metadati.
 
@@ -82,12 +82,12 @@ Per impostazione predefinita, [!DNL Experience Manager] la ricerca combina i ter
 I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a uno qualsiasi dei termini di ricerca negli smart tag. Nell&#39;esempio precedente, l&#39;ordine approssimativo di visualizzazione dei risultati della ricerca è:
 
 1. corrispondenze di `woman running` nei vari campi di metadati.
-1. corrispondenze di `woman running` in smart tag.
-1. corrispondenze di `woman` o di `running` in smart tag.
+1. corrispondenze di `woman running` negli smart tag.
+1. corrispondenze di `woman` o di `running` negli smart tag.
 
 >[!CAUTION]
 >
->Se l&#39;indicizzazione Lucene viene effettuata [!DNL Adobe Experience Manager] quindi la ricerca basata sugli smart tag non funziona come previsto.
+>Se l&#39;indicizzazione Lucene viene effettuata su [!DNL Adobe Experience Manager], la ricerca basata sugli smart tag non funziona come previsto.
 
 ## Assegnare automaticamente tag alle risorse {#tagging-assets-automatically}
 
@@ -101,7 +101,7 @@ Potete eseguire il flusso di lavoro dei tag periodicamente o quando necessario.
 
 ### Assegnazione periodica di tag {#periodic-tagging}
 
-Potete abilitare Smart Content Service per assegnare tag periodici alle risorse all’interno di una cartella. Aprite la pagina delle proprietà della cartella di risorse, selezionate **[!UICONTROL Abilita tag]** avanzati nella scheda **[!UICONTROL Dettagli]** e salvate le modifiche.
+Potete abilitare Smart Content Service per assegnare tag periodici alle risorse all’interno di una cartella. Aprite la pagina delle proprietà della cartella di risorse, selezionate **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salvate le modifiche.
 
 Quando questa opzione è selezionata per una cartella, Smart Content Service assegna automaticamente i tag alle risorse all’interno della cartella. Per impostazione predefinita, il flusso di lavoro dei tag viene eseguito ogni giorno alle 12:00.
 
@@ -115,28 +115,28 @@ Potete attivare il flusso di lavoro dei tag dalla console del flusso di lavoro o
 
 #### Assegnare tag alle risorse dalla console del flusso di lavoro {#tagging-assets-from-the-workflow-console}
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+1. Nell&#39;interfaccia [!DNL Experience Manager], passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelli]**.
+1. Dalla pagina **[!UICONTROL Modelli di workflow]**, selezionare il flusso di lavoro **[!UICONTROL Risorse tag avanzati DAM]**, quindi fare clic su **[!UICONTROL Avvia flusso di lavoro]** dalla barra degli strumenti.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]** , individuate la cartella payload contenente le risorse per le quali desiderate applicare automaticamente i tag.
-1. Specificate un titolo per il flusso di lavoro e un commento facoltativo. Fate clic su **[!UICONTROL Esegui]**.
+1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]**, individuate la cartella payload contenente le risorse sulle quali desiderate applicare automaticamente i tag.
+1. Specificate un titolo per il flusso di lavoro e un commento facoltativo. Fare clic su **[!UICONTROL Esegui]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
    Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse.
 
-#### Applicare tag alle risorse dalla timeline {#tagging-assets-from-the-timeline}
+#### Assegnare tag alle risorse dalla timeline {#tagging-assets-from-the-timeline}
 
-1. Dall’interfaccia [!DNL Assets] utente, selezionate la cartella contenente le risorse o risorse specifiche a cui desiderate applicare gli smart tag.
-1. Dall&#39;angolo superiore sinistro, aprite la **[!UICONTROL timeline]**.
+1. Dall&#39;interfaccia utente di [!DNL Assets], selezionate la cartella contenente le risorse o risorse specifiche a cui desiderate applicare gli smart tag.
+1. Dall&#39;angolo superiore sinistro, aprire la **[!UICONTROL Timeline]**.
 1. Aprite le azioni nella parte inferiore della barra laterale sinistra e fate clic su **[!UICONTROL Avvia flusso di lavoro]**.
 
    ![start_workflow](assets/start_workflow.png)
 
 1. Selezionate il flusso di lavoro **[!UICONTROL DAM Smart Tag Assets]** e specificate un titolo per il flusso di lavoro.
-1. Fate clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse.
+1. Fare clic su **[!UICONTROL Start]**. Il flusso di lavoro applica i tag alle risorse. Andate alla cartella delle risorse e controllate i tag per verificare se Smart Content Service ha applicato correttamente i tag alle risorse.
 
 >[!NOTE]
 >
@@ -152,11 +152,11 @@ Potete anche assegnare un rango più alto a un tag per aumentarne la rilevanza r
 
 1. Nella casella di ricerca Omnico, cercate le risorse in base a un tag.
 1.  Inspect i risultati della ricerca per identificare un’immagine che non si trova rilevante ai fini della ricerca.
-1. Selezionate l’immagine e fate clic su **[!UICONTROL Gestisci tag]** nella barra degli strumenti.
-1. Dalla pagina **[!UICONTROL Gestisci tag]** , ispezionate i tag. Se non desiderate che l’immagine venga cercata in base a un tag specifico, selezionate il tag e fate clic su **[!UICONTROL Elimina]** nella barra degli strumenti. In alternativa, fate clic sul `x` simbolo visualizzato accanto al tag .
-1. Se necessario, per assegnare un rango più alto a un tag, selezionate il tag e fate clic su **[!UICONTROL Promuovi]** nella barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
-1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
-1. Passate alla pagina **[!UICONTROL Proprietà]** dell’immagine. Osservate che al tag promosso viene assegnata maggiore rilevanza e che compare prima nei risultati della ricerca.
+1. Selezionate l&#39;immagine e fate clic su **[!UICONTROL Gestisci tag]** nella barra degli strumenti.
+1. Dalla pagina **[!UICONTROL Gestisci tag]**, ispezionare i tag. Se non desiderate che l&#39;immagine venga cercata in base a un tag specifico, selezionate il tag e fate clic su **[!UICONTROL Elimina]** nella barra degli strumenti. In alternativa, fate clic sul simbolo `x` visualizzato accanto a un tag.
+1. Facoltativamente, per assegnare un rango più alto a un tag, selezionate il tag e fate clic su **[!UICONTROL Promote]** nella barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]**.
+1. Fare clic su **[!UICONTROL Save]**, quindi fare clic su **[!UICONTROL OK]**
+1. Passare alla pagina **[!UICONTROL Proprietà]** dell&#39;immagine. Osservate che al tag promosso viene assegnata maggiore rilevanza e che compare prima nei risultati della ricerca.
 
 ## Suggerimenti e limitazioni {#tips-best-practices-limitations}
 
