@@ -131,4 +131,4 @@ Anche se potete ancora essere live in produzione con visualizzatori basati su DH
 
 **Chi posso contattare per maggiori informazioni?**
 
-Se questa domanda frequente non risponde a tutte le tue domande, [utilizza il Admin Console  per creare un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) di assistenza o contatta il tuo account manager  Adobe.
+Se questa domanda frequente non risponde a tutte le tue domande, [utilizza il Admin Console  per creare un caso di assistenza](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) o contatta il tuo account manager  Adobe.
