@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 59b03638-7e1c-4cbd-bd37-671a16afa10f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Questo elenco contiene collegamenti ai siti Web del produttore per tutti i server applicazioni supportati.
 
-**** JBoss: https://www.jboss.com/products/platforms/application
+**JBoss:** https://www.jboss.com/products/platforms/application
 
-**** Oracle WebLogic: www.oracle.com/us/products/middleware/application-server/index.html
+**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
-**** IBM WebSphere: www-01.ibm.com/software/websphere/
+**IBM WebSphere:** www-01.ibm.com/software/websphere/
