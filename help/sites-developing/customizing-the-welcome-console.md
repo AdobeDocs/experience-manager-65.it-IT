@@ -1,8 +1,8 @@
 ---
 title: Personalizzazione della console di benvenuto (interfaccia classica)
 seo-title: Personalizzazione della console di benvenuto (interfaccia classica)
-description: La console Benvenuto contiene un elenco di collegamenti alle varie console e funzionalità di AEM
-seo-description: La console Benvenuto contiene un elenco di collegamenti alle varie console e funzionalità di AEM
+description: La console di benvenuto contiene un elenco di collegamenti alle varie console e funzionalità presenti in AEM
+seo-description: La console di benvenuto contiene un elenco di collegamenti alle varie console e funzionalità presenti in AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 9%
 
 ---
 
@@ -21,16 +24,16 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 >
 >Questa pagina fa riferimento all’interfaccia utente classica.
 >
->Consultate [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md) per informazioni dettagliate sull’interfaccia touch standard.
+>Per informazioni dettagliate sull&#39;interfaccia touch standard, consultate [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md).
 
-La console Benvenuto contiene un elenco di collegamenti alle varie console e funzionalità di AEM.
+La console Benvenuto contiene un elenco di collegamenti alle varie console e funzionalità presenti in AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
 È possibile configurare i collegamenti visibili. Questo può essere definito per utenti e/o gruppi specifici. Le azioni da eseguire dipendono dal tipo di destinazione (correlato alla sezione della console in cui si trovano):
 
-* [Console](#links-in-main-console-left-pane) principali - Collegamenti nella console principale (riquadro a sinistra)
-* [Risorse, documentazione e riferimenti, funzioni](#links-in-sidebar-right-pane) - Collegamenti nella barra laterale (riquadro a destra)
+* [Console](#links-in-main-console-left-pane)  principali - Collegamenti nella console principale (riquadro a sinistra)
+* [Risorse, documentazione e riferimenti, funzioni](#links-in-sidebar-right-pane)  - Collegamenti nella barra laterale (riquadro a destra)
 
 ## Collegamenti nella console principale (riquadro a sinistra) {#links-in-main-console-left-pane}
 
@@ -46,7 +49,7 @@ Le autorizzazioni a livello di nodo determinano se il collegamento può essere v
 
 * **Risorse digitali:** `/libs/wcm/core/content/damadmin`
 
-* **** Community: `/libs/collab/core/content/admin`
+* **Community:** `/libs/collab/core/content/admin`
 
 * **Campagne:** `/libs/mcm/content/admin`
 
@@ -64,13 +67,13 @@ Esempio:
 
    `/libs/wcm/core/content/misc`
 
-Per ulteriori informazioni su come impostare le autorizzazioni desiderate, consultate la sezione [](/help/sites-administering/security.md) Protezione.
+Per ulteriori informazioni sull&#39;impostazione delle autorizzazioni desiderate, vedere la sezione [Protezione](/help/sites-administering/security.md).
 
 ### Collegamenti nella barra laterale (riquadro a destra) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-Questi collegamenti si basano sull&#39;esistenza di un accesso in lettura ** e di accesso ai nodi nel percorso seguente:
+Questi collegamenti si basano sull&#39;esistenza di *e* accesso in lettura ai nodi nel percorso seguente:
 
 `/libs/cq/core/content/welcome`
 
@@ -79,11 +82,11 @@ Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermen
 <table>
  <tbody>
   <tr>
-   <td><strong>Risorse</strong></td>
+   <td><strong>Riferimenti</strong></td>
    <td> </td>
   </tr>
   <tr>
-   <td> Servizi cloud</td>
+   <td> Cloud Services</td>
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>
@@ -119,7 +122,7 @@ Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermen
    <td><code>/libs/cq/core/content/welcome/docs/docs</code></td>
   </tr>
   <tr>
-   <td> Risorse per sviluppatori</td>
+   <td> Riferimenti per sviluppatori</td>
    <td><code>/libs/cq/core/content/welcome/docs/dev</code></td>
   </tr>
   <tr>
@@ -157,7 +160,7 @@ Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermen
  </tbody>
 </table>
 
-#### Configurazione della visibilità dei collegamenti della barra laterale {#configuring-whether-sidebar-links-are-visible}
+#### Configurazione dei collegamenti della barra laterale visibili {#configuring-whether-sidebar-links-are-visible}
 
 È possibile nascondere un collegamento da utenti o gruppi specifici rimuovendo l&#39;accesso in lettura ai nodi che rappresentano il collegamento.
 
@@ -175,38 +178,39 @@ Per impostazione predefinita sono disponibili tre sezioni (distanziate leggermen
 
 Esempio:
 
-* Per rimuovere il collegamento a **Rapporti**, rimuovi l’accesso in lettura da
+* Per rimuovere il collegamento a **Reports**, rimuovere l&#39;accesso in lettura da
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Per rimuovere il collegamento ai **pacchetti**, rimuovete l&#39;accesso in lettura da
+* Per rimuovere il collegamento a **Packages**, rimuovere l&#39;accesso in lettura da
 
    `/libs/cq/core/content/welcome/features/packages`
 
-Per ulteriori informazioni su come impostare le autorizzazioni desiderate, consultate la sezione [](/help/sites-administering/security.md) Protezione.
+Per ulteriori informazioni sull&#39;impostazione delle autorizzazioni desiderate, vedere la sezione [Protezione](/help/sites-administering/security.md).
 
 ### Meccanismo di selezione del collegamento {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` uso è fatto di [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), che esegue una query sui nodi che hanno la proprietà:
+In `/libs/cq/core/components/welcome/welcome.jsp` viene utilizzato [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), che esegue una query sui nodi che hanno la proprietà:
 
-* `jcr:mixinTypes` con il valore: `cq:Console`
+* `jcr:mixinTypes` con il valore:  `cq:Console`
 
 >[!NOTE]
 >
 >Esegui la seguente query per visualizzare l&#39;elenco esistente:
 >
 >* `select * from cq:Console`
+
 >
 
 
 
-Quando un utente o un gruppo non dispone dell&#39;autorizzazione di lettura su un nodo con il mixin `cq:Console`, tale nodo non viene recuperato dalla `ConsoleUtil` ricerca, pertanto non viene elencato nella console.
+Se un utente o un gruppo non dispone dell&#39;autorizzazione di lettura su un nodo con il mixin `cq:Console`, tale nodo non viene recuperato dalla ricerca `ConsoleUtil`, pertanto non viene elencato nella console.
 
 ### Aggiunta di un elemento personalizzato {#adding-a-custom-item}
 
-Il meccanismo [di selezione del](#link-selection-mechanism) collegamento può essere utilizzato per aggiungere un elemento personalizzato all&#39;elenco dei collegamenti.
+Il [meccanismo di selezione dei collegamenti](#link-selection-mechanism) può essere utilizzato per aggiungere un elemento personalizzato all&#39;elenco dei collegamenti.
 
-Aggiungi l&#39;elemento personalizzato all&#39;elenco aggiungendo il `cq:Console` mixin al widget o alla risorsa. Questa operazione viene eseguita definendo la proprietà:
+Aggiungi l&#39;elemento personalizzato all&#39;elenco aggiungendo il mixin `cq:Console` al widget o alla risorsa. Questa operazione viene eseguita definendo la proprietà:
 
-* `jcr:mixinTypes` con il valore: `cq:Console`
+* `jcr:mixinTypes` con il valore:  `cq:Console`
 
