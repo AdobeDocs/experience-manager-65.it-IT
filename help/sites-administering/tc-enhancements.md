@@ -10,23 +10,26 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
 
 # Miglioramenti della traduzione{#translation-enhancements}
 
-Questa pagina presenta miglioramenti e miglioramenti incrementali alle funzionalità di gestione della traduzione AEM.
+Questa pagina presenta miglioramenti e miglioramenti incrementali alle funzionalità di gestione AEM traduzione.
 
-## Automazione del progetto di traduzione {#translation-project-automation}
+## Automazione progetto di traduzione {#translation-project-automation}
 
 Sono state aggiunte opzioni per migliorare la produttività nell’utilizzo dei progetti di traduzione, ad esempio per promuovere ed eliminare automaticamente i lanci di traduzione e per pianificare l’esecuzione ricorrente di un progetto di traduzione.
 
-1. Nel progetto di traduzione, tocca o fai clic sui puntini di sospensione nella parte inferiore della sezione Riepilogo **** traduzione.
+1. Nel progetto di traduzione, tocca o fai clic sui puntini di sospensione nella parte inferiore della sezione **Riepilogo traduzione**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Passate alla scheda **Avanzate** . In basso, potete selezionare Promuovi **automaticamente lanci** di traduzione.
+1. Passate alla scheda **Avanzate**. In basso, potete selezionare **Promuovi automaticamente lanci di traduzione**.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -42,15 +45,15 @@ Sono state aggiunte opzioni per migliorare la produttività nell’utilizzo dei 
 
 È possibile configurare più lingue di destinazione in un progetto di traduzione, per ridurre il numero totale di progetti di traduzione creati.
 
-1. Nel progetto di traduzione, tocca o fai clic sui punti in fondo alla sezione Riepilogo **** traduzione.
+1. Nel progetto di traduzione, tocca o fai clic sui punti in fondo alla sezione **Riepilogo traduzione**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Passate alla scheda **Avanzate** . Potete aggiungere più lingue in Lingua **di** destinazione.
+1. Passate alla scheda **Avanzate**. È possibile aggiungere più lingue in **Lingua di destinazione**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
-1. In alternativa, se iniziate la traduzione tramite la barra laterale Riferimenti in Siti, aggiungete le lingue e selezionate **Crea progetto** di traduzione in più lingue.
+1. In alternativa, se iniziate la traduzione tramite la barra laterale Riferimenti in Siti, aggiungete le lingue e selezionate **Crea progetto di traduzione in più lingue**.
 
    ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
@@ -58,21 +61,21 @@ Sono state aggiunte opzioni per migliorare la produttività nell’utilizzo dei 
 
    ![screen_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
 
-## Aggiornamenti alla memoria di traduzione {#translation-memory-updates}
+## Aggiornamenti della memoria di traduzione {#translation-memory-updates}
 
 Le modifiche manuali dei contenuti tradotti possono essere sincronizzate con il sistema TMS (Translation Management System) per formare la sua memoria di traduzione.
 
-1. Dalla console Siti, dopo aver aggiornato il testo in una pagina tradotta, selezionate **Aggiorna memoria** traduzione.
+1. Dalla console Siti, dopo aver aggiornato il contenuto di testo in una pagina tradotta, selezionare **Aggiorna memoria di traduzione**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Una vista a elenco mostra un confronto affiancato tra l’origine e la traduzione per ogni componente di testo modificato. Selezionate gli aggiornamenti di traduzione da sincronizzare con la memoria di traduzione e selezionate **Aggiorna memoria**.
+1. Una vista a elenco mostra un confronto affiancato tra l’origine e la traduzione per ogni componente di testo modificato. Selezionare gli aggiornamenti di traduzione da sincronizzare con la memoria di traduzione, quindi selezionare **Aggiorna memoria**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
    >[!NOTE]
    >
-   >AEM restituirà le stringhe selezionate al sistema di gestione della traduzione.
+   >AEM rispedirà le stringhe selezionate al Sistema di gestione della traduzione.
 
 ## Copie della lingua a più livelli {#language-copies-on-multiple-levels}
 
@@ -82,23 +85,24 @@ Le radici delle lingue ora possono essere raggruppate sotto i nodi, ad esempio p
 
 >[!CAUTION]
 >
->È consentito un solo livello. Ad esempio, quanto segue non consente alla pagina &quot;es&quot; di risolvere una copia per lingua:
+>È consentito un solo livello. Ad esempio, quanto segue non consente alla pagina &quot;es&quot; di trovare una copia per lingua:
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
+
 >
 >
-Questa `es` copia della lingua non verrà rilevata perché si trova a 2 livelli (America centrale/America centrale) lontano dal `en` nodo.
+Questa copia della lingua `es` non verrà rilevata perché si trova a 2 livelli (America centrale/America centrale) lontano dal nodo `en`.
 
 >[!NOTE]
 >
->Le radici della lingua possono avere un nome di pagina qualsiasi, anziché semplicemente il codice ISO della lingua. AEM controllerà sempre prima il percorso e il nome, ma se il nome della pagina non identifica una lingua, AEM controllerà la proprietà cq:language della pagina per l’identificazione della lingua.
+>Le radici della lingua possono avere un nome di pagina qualsiasi, anziché semplicemente il codice ISO della lingua. AEM sempre controllare prima il percorso e il nome, ma se il nome della pagina non identifica una lingua, AEM controllare la proprietà cq:language della pagina per l’identificazione della lingua.
 
 ## Report stato conversione {#translation-status-reporting}
 
 È ora possibile selezionare una proprietà nella visualizzazione Elenco siti che mostra se una pagina è stata tradotta, è in traduzione o non è ancora stata tradotta. Per visualizzarlo:
 
-1. In Siti, passate alla vista **Elenco.**
+1. In Siti, passare a **Visualizzazione elenco.**
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
@@ -106,11 +110,11 @@ Questa `es` copia della lingua non verrà rilevata perché si trova a 2 livelli 
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Selezionare la casella di controllo **Convertito** in **Traduzione** e toccare o fare clic su **Aggiorna**.
+1. Selezionare la casella di controllo **Translated** in **Translation** e toccare/fare clic su **Aggiorna**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
-È ora possibile visualizzare una colonna **Tradotto** che mostra lo stato di traduzione delle pagine.
+È ora possibile visualizzare una colonna **Translated** che mostra lo stato di traduzione delle pagine.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
 
