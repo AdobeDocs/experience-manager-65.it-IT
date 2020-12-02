@@ -28,25 +28,25 @@ La funzione di libreria dei file consente ai visitatori del sito che hanno effet
 Questa sezione della documentazione descrive quanto segue:
 
 * Aggiunta della funzione di libreria file a un sito AEM.
-* Impostazioni di configurazione per il `File Library` componente.
+* Impostazioni di configurazione per il componente `File Library`.
 
 ### Aggiunta di una libreria di file a una pagina {#adding-a-file-library-to-a-page}
 
-Per aggiungere un `File Library` componente a una pagina in modalità di creazione, individuare il componente:
+Per aggiungere un componente `File Library` a una pagina in modalità di creazione, individuare il componente:
 
 * `Communities / File Library`
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/essentials-file-library.md#essentials-for-client-side) richieste, verrà visualizzato il `File Library` componente:
+Quando vengono incluse le [librerie lato client ](/help/communities/essentials-file-library.md#essentials-for-client-side), viene visualizzato il componente `File Library`:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
-### Configurazione della libreria dei file {#configuring-file-library}
+### Configurazione della libreria di file {#configuring-file-library}
 
-Selezionate il `File Library` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `File Library` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-431](assets/chlimage_1-431.png)
 
@@ -54,7 +54,7 @@ Selezionate il `File Library` componente inserito a cui accedere e selezionate l
 
 #### Scheda Commenti {#comments-tab}
 
-Nella scheda **Commenti** , specificate se e come vengono visualizzati i commenti per i file caricati:
+Nella scheda **Commenti**, specificate se e come vengono visualizzati i commenti per i file caricati:
 
 * **Consenti commenti sui file**
 
@@ -62,7 +62,7 @@ Nella scheda **Commenti** , specificate se e come vengono visualizzati i comment
 
 * **Commenti per pagina**
 
-   Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Default is **10**.
+   Limita il numero di commenti visualizzati per pagina e il numero di risposte visualizzate. Il valore predefinito è **10**.
 
 * **Dimensione file massima**
 
@@ -102,7 +102,7 @@ Nella scheda **Commenti** , specificate se e come vengono visualizzati i comment
 
 * **Consenti Segui**
 
-   Se questa opzione è attivata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](/help/communities/notifications.md) sui nuovi post. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, includete la seguente funzione per gli articoli di blog, che consente ai membri di ricevere [notifiche](/help/communities/notifications.md) di nuovi post. Il valore predefinito è deselezionato.
 
 * **Abilita menzione**
 
@@ -122,7 +122,7 @@ Nella scheda **Commenti** , specificate se e come vengono visualizzati i comment
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda Moderazione **** utente, configurare la moderazione dei commenti, se i commenti sono consentiti:
+Nella scheda **Moderazione utente**, configurare la moderazione dei commenti, se i commenti sono consentiti:
 
 * **Premoderazione**
 
@@ -158,9 +158,9 @@ Nella scheda Moderazione **** utente, configurare la moderazione dei commenti, s
 
 * **Limite segnalazione**
 
-   Specificate quante volte un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla soglia di **moderazione**. Il valore predefinito è 5.
+   Specificate quante volte un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla **Soglia moderazione**. Il valore predefinito è 5.
 
-### Scheda Impostazioni ordinamento {#sort-settings-tab}
+### Scheda Ordina impostazioni {#sort-settings-tab}
 
 Ordina per
 
@@ -170,6 +170,6 @@ Imposta come predefinito
 
 Ulteriori informazioni sono disponibili nella pagina [File Library Essentials](/help/communities/essentials-file-library.md) per gli sviluppatori.
 
-Per la moderazione degli argomenti e dei commenti pubblicati, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Per la moderazione degli argomenti e dei commenti pubblicati, vedere [Moderazione dei contenuti generati dall&#39;utente](/help/communities/moderate-ugc.md).
 
-Per assegnare tag agli argomenti e ai commenti inviati, consultate [Assegnazione di tag ai contenuti](/help/communities/tag-ugc.md)generati dagli utenti.
+Per assegnare tag agli argomenti e ai commenti inviati, consultate [Assegnazione di tag ai contenuti generati dall&#39;utente](/help/communities/tag-ugc.md).
