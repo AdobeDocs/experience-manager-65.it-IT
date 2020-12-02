@@ -25,7 +25,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->L’API [HTTP](/help/assets/mac-api-assets.md) Assets include:
+>L&#39;API HTTP [Assets](/help/assets/mac-api-assets.md) include:
 >
 >* API REST di Assets
 >* incluso il supporto per i frammenti di contenuto
@@ -34,13 +34,13 @@ ht-degree: 3%
 >
 L&#39;implementazione corrente di  API HTTP AEM Assets è REST.
 
-L’API [REST di Adobe Experience Manager (AEM)](/help/assets/mac-api-assets.md) Assets consente agli sviluppatori di accedere al contenuto (memorizzato in AEM) direttamente tramite l’API HTTP, tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
+Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) consente agli sviluppatori di accedere al contenuto (memorizzato in AEM) direttamente tramite l&#39;API HTTP, tramite operazioni CRUD (Crea, Leggi, Aggiorna, Elimina).
 
 L&#39;API consente di utilizzare AEM come CMS headless (Content Management System) fornendo Content Services a un&#39;applicazione front-end JavaScript. Oppure qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire le risposte JSON.
 
-Ad esempio, le applicazioni SPA (Single Page Applications), basate su framework o personalizzate, richiedono il contenuto fornito tramite l&#39;API HTTP, spesso in formato JSON.
+Ad esempio, le applicazioni per pagina singola (SPA), basate su framework o personalizzate, richiedono il contenuto fornito tramite l&#39;API HTTP, spesso in formato JSON.
 
-I componenti core AEM forniscono un&#39;API molto completa, flessibile e personalizzabile che può servire le operazioni di lettura necessarie a questo scopo, e il cui output JSON può essere personalizzato, ma richiedono AEM know-how WCM (Web Content Management) per l&#39;implementazione, in quanto devono essere ospitati in pagine (API) basate su modelli AEM dedicati. Non tutte le organizzazioni di sviluppo SPA hanno accesso a tali risorse.
+I componenti core AEM forniscono un&#39;API molto completa, flessibile e personalizzabile che può servire le operazioni di lettura necessarie a questo scopo, e il cui output JSON può essere personalizzato, ma richiedono AEM know-how WCM (Web Content Management) per l&#39;implementazione, in quanto devono essere ospitati in pagine (API) basate su modelli AEM dedicati. Non tutte SPA organizzazioni di sviluppo hanno accesso a tali risorse.
 
 Questo è il momento in cui è possibile utilizzare l&#39;API REST di Risorse. Consente agli sviluppatori di accedere direttamente alle risorse (ad esempio, immagini e frammenti di contenuto), senza dover prima incorporarle in una pagina e distribuire i contenuti in formato JSON serializzato. (Non è possibile personalizzare l&#39;output JSON dall&#39;API REST di Assets). L’API REST di Risorse consente inoltre agli sviluppatori di modificare il contenuto, creando nuove risorse, aggiornando o eliminando risorse esistenti, frammenti di contenuto e cartelle.
 
@@ -56,7 +56,7 @@ L’API REST di Assets è disponibile per ogni installazione out-of-the-box di u
 
 ## Concetti fondamentali {#key-concepts}
 
-L’API REST di Risorse offre l’accesso [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)alle risorse memorizzate in un’istanza AEM. Utilizza l’ `/api/assets` endpoint e richiede il percorso della risorsa per accedervi (senza l’interlinea `/content/dam`).
+L&#39;API REST di Risorse offre l&#39;accesso [stile REST](https://en.wikipedia.org/wiki/Representational_state_transfer) alle risorse memorizzate in un&#39;istanza AEM. Utilizza l&#39;endpoint `/api/assets` e richiede il percorso della risorsa per accedervi (senza l&#39;endpoint `/content/dam` iniziale).
 
 Il metodo HTTP determina l’operazione da eseguire:
 
@@ -67,29 +67,29 @@ Il metodo HTTP determina l’operazione da eseguire:
 
 >[!NOTE]
 >
->Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, specificate che una cartella o una risorsa debba essere creata da una richiesta di **POST** .
+>Il corpo della richiesta e/o i parametri URL possono essere utilizzati per configurare alcune di queste operazioni; ad esempio, definite che una cartella o una risorsa debba essere creata da una richiesta **POST**.
 
-Il formato esatto delle richieste supportate è definito nella documentazione [API Reference](/help/assets/assets-api-content-fragments.md#api-reference) .
+Il formato esatto delle richieste supportate è definito nella documentazione [Riferimento API](/help/assets/assets-api-content-fragments.md#api-reference).
 
-### Comportamento Transazionale {#transactional-behavior}
+### Comportamento transazionale {#transactional-behavior}
 
 Tutte le richieste sono atomiche.
 
 Ciò significa che le richieste successive (`write`) non possono essere combinate in una singola transazione che potrebbe avere esito positivo o negativo come singola entità.
 
-### API REST AEM (Risorse) e componenti AEM {#aem-assets-rest-api-versus-aem-components}
+### API REST AEM (risorse) rispetto ai componenti AEM {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <tbody>
   <tr>
    <td>Aspetto</td>
    <td>API REST di Assets<br /> </td>
-   <td>Componente<br /> AEM (componenti che utilizzano i modelli Sling)</td>
+   <td>AEM Component<br /> (componenti che utilizzano i modelli Sling)</td>
   </tr>
   <tr>
    <td>Casi d’uso supportati</td>
    <td>Scopo generale.</td>
-   <td><p>Ottimizzato per il consumo in un'applicazione a pagina singola (SPA) o in qualsiasi altro contesto (che utilizza contenuti).</p> <p>Può anche contenere informazioni sul layout.</p> </td>
+   <td><p>Ottimizzato per il consumo in un'applicazione (SPA) a pagina singola o in qualsiasi altro contesto (che utilizza contenuti).</p> <p>Può anche contenere informazioni sul layout.</p> </td>
   </tr>
   <tr>
    <td>Operazioni supportate</td>
@@ -98,9 +98,9 @@ Ciò significa che le richieste successive (`write`) non possono essere combinat
   </tr>
   <tr>
    <td>Accesso</td>
-   <td><p>È accessibile direttamente.</p> <p>Utilizza l’ <code>/api/assets </code>endpoint mappato su <code>/content/dam</code> (nella directory archivio).</p> <p>Ad esempio, per accedere a:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> richiesta:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
-   <td><p>È necessario fare riferimento a un componente AEM in una pagina AEM.</p> <p>Utilizza il <code>.model</code> selettore per creare la rappresentazione JSON.</p> <p>Esempio di URL:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>È accessibile direttamente.</p> <p>Utilizza l'endpoint <code>/api/assets </code>mappato su <code>/content/dam</code> (nella directory archivio).</p> <p>Ad esempio, per accedere alla richiesta:<code class="code">
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br />:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>È necessario fare riferimento a un componente AEM in una pagina AEM.</p> <p>Utilizza il selettore <code>.model</code> per creare la rappresentazione JSON.</p> <p>Esempio di URL:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
   </tr>
   <tr>
    <td>Sicurezza</td>
@@ -139,11 +139,11 @@ Negli ambienti con requisiti di autenticazione specifici, è consigliabile OAuth
 
 ## Funzioni disponibili {#available-features}
 
-I frammenti di contenuto sono un tipo specifico di risorsa. Consultate [Utilizzo dei frammenti](/help/assets/content-fragments/content-fragments.md)di contenuto.
+I frammenti di contenuto sono un tipo specifico di risorsa. Consultate [Utilizzo dei frammenti di contenuto](/help/assets/content-fragments/content-fragments.md).
 
 Per ulteriori informazioni sulle funzioni disponibili tramite l&#39;API, vedete:
 
-* [Funzionalità](/help/assets/mac-api-assets.md#assets) disponibili dell’API REST di Assets
+* [Funzioni disponibili ](/help/assets/mac-api-assets.md#assets) dell’API REST di Assets
 * [Tipi di entità](/help/assets/assets-api-content-fragments.md#entity-types)
 
 ### Pagine {#paging}
@@ -153,7 +153,7 @@ L’API REST di Assets supporta il paging (per richieste di GET) tramite i param
 * `offset` - il numero della prima entità (figlio) da recuperare
 * `limit` - il numero massimo di entità restituite
 
-La risposta conterrà informazioni di paging come parte della `properties` sezione dell&#39;output SIREN. Questa `srn:paging` proprietà contiene il numero totale di entità (figlio) ( `total`), l&#39;offset e il limite ( `offset`, `limit`) come specificato nella richiesta.
+La risposta conterrà informazioni di paging come parte della sezione `properties` dell&#39;output SIREN. Questa proprietà `srn:paging` contiene il numero totale di entità (secondarie) ( `total`), l&#39;offset e il limite ( `offset`, `limit`) come specificato nella richiesta.
 
 >[!NOTE]
 >
@@ -195,26 +195,26 @@ Se viene richiesta una risorsa, la risposta restituirà i relativi metadati; com
 
 I dati binari di una risorsa sono esposti come collegamento SIREN di tipo `content` (noto anche come `rel attribute`).
 
-Le risorse possono avere più rappresentazioni. In genere sono esposte come entità figlie, con una sola eccezione rappresentata dalla rappresentazione in miniatura, che viene esposta come collegamento di tipo `thumbnail` ( `rel="thumbnail"`).
+Le risorse possono avere più rappresentazioni. Questi sono in genere esposti come entità figlie, una delle quali è una rappresentazione in miniatura, che viene esposta come un collegamento di tipo `thumbnail` ( `rel="thumbnail"`).
 
 ### Frammenti di contenuto {#content-fragments}
 
-Un frammento [di](/help/assets/content-fragments/content-fragments.md) contenuto è un tipo speciale di risorsa. Possono essere utilizzati per accedere a dati strutturati, come testi, numeri, date, ecc.
+Un [frammento di contenuto](/help/assets/content-fragments/content-fragments.md) è un tipo speciale di risorsa. Possono essere utilizzati per accedere a dati strutturati, come testi, numeri, date, ecc.
 
-Poiché le risorse *standard* sono diverse (ad esempio immagini o audio), per gestirle è necessario applicare alcune regole aggiuntive.
+Poiché le risorse *standard* (come immagini o audio) presentano diverse differenze, per gestirle è necessario applicare alcune regole aggiuntive.
 
-#### Rappresentanza {#representation}
+#### Rappresentazione {#representation}
 
 Frammenti di contenuto:
 
 * Non esporre dati binari.
-* Sono completamente contenuti nell&#39;output JSON (all&#39;interno della `properties` proprietà).
+* Sono completamente contenuti nell&#39;output JSON (all&#39;interno della proprietà `properties`).
 
 * Sono anche considerati atomici, ovvero gli elementi e le variazioni sono esposti come parte delle proprietà del frammento rispetto a come collegamenti o entità figlio. Questo consente un accesso efficiente al payload di un frammento.
 
 #### Modelli di contenuto e frammenti di contenuto {#content-models-and-content-fragments}
 
-Attualmente i modelli che definiscono la struttura di un frammento di contenuto non sono esposti tramite un&#39;API HTTP. Pertanto, il *consumatore* deve conoscere il modello di un frammento (almeno un minimo), anche se la maggior parte delle informazioni può essere ricavata dal payload; come tipi di dati, ecc. fanno parte della definizione.
+Attualmente i modelli che definiscono la struttura di un frammento di contenuto non sono esposti tramite un&#39;API HTTP. Pertanto, il *consumer* deve conoscere il modello di un frammento (almeno un minimo), sebbene la maggior parte delle informazioni possa essere ricavata dal payload; come tipi di dati, ecc. fanno parte della definizione.
 
 Per creare un nuovo frammento di contenuto, è necessario fornire il percorso (archivio interno).
 
@@ -226,7 +226,7 @@ Il contenuto associato al momento non è esposto.
 
 L’utilizzo può variare a seconda se usate un ambiente di authoring o pubblicazione AEM e se usate un caso d’uso specifico.
 
-* La creazione è strettamente legata a un&#39;istanza di creazione ([e al momento non esiste alcun modo per replicare un frammento da pubblicare utilizzando questa API](/help/assets/assets-api-content-fragments.md#limitations)).
+* La creazione è strettamente legata a un&#39;istanza di autore ([e attualmente non esiste alcun modo per replicare un frammento da pubblicare utilizzando questa API](/help/assets/assets-api-content-fragments.md#limitations)).
 * La consegna è possibile da entrambi, in quanto AEM il contenuto richiesto solo in formato JSON.
 
    * L’archiviazione e la distribuzione da un’istanza di creazione AEM dovrebbero essere sufficienti per le applicazioni libreria multimediale protette dal firewall.
@@ -238,9 +238,9 @@ L’utilizzo può variare a seconda se usate un ambiente di authoring o pubblica
 
 >[!NOTE]
 >
->Per ulteriori dettagli, consultate [API Reference](/help/assets/assets-api-content-fragments.md#api-reference)(Riferimento API). In particolare, API [Adobe Experience Manager Assets - Frammenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)di contenuto.
+>Per ulteriori dettagli, vedere [Riferimento API](/help/assets/assets-api-content-fragments.md#api-reference). In particolare, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
-### Lettura/Consegna {#read-delivery}
+### Lettura/consegna {#read-delivery}
 
 Utilizzo tramite:
 
@@ -263,7 +263,7 @@ Utilizzo tramite:
 
 `POST /{cfParentPath}/{cfName}`
 
-Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare la `cq:model` proprietà e puntare a un modello di frammento di contenuto valido. In caso contrario si verificherà un errore. È inoltre necessario aggiungere un&#39;intestazione `Content-Type` impostata su `application/json`.
+Il corpo deve contenere una rappresentazione JSON del frammento di contenuto da creare, incluso qualsiasi contenuto iniziale da impostare sugli elementi del frammento di contenuto. È obbligatorio impostare la proprietà `cq:model` e puntare a un modello di frammento di contenuto valido. In caso contrario si verificherà un errore. È inoltre necessario aggiungere un&#39;intestazione `Content-Type` impostata su `application/json`.
 
 ### Aggiorna {#update}
 
@@ -273,7 +273,7 @@ Utilizzo tramite
 
 Il corpo deve contenere una rappresentazione JSON di ciò che deve essere aggiornato per il frammento di contenuto specificato.
 
-Può trattarsi semplicemente del titolo o della descrizione di un frammento di contenuto, di un singolo elemento o di tutti i valori e/o metadati dell&#39;elemento. È inoltre obbligatorio fornire una `cq:model` proprietà valida per gli aggiornamenti.
+Può trattarsi semplicemente del titolo o della descrizione di un frammento di contenuto, di un singolo elemento o di tutti i valori e/o metadati dell&#39;elemento. È inoltre obbligatorio fornire una proprietà `cq:model` valida per gli aggiornamenti.
 
 ### Elimina {#delete}
 
@@ -285,7 +285,7 @@ Utilizzo tramite:
 
 Esistono alcuni limiti:
 
-* **Le varianti non possono essere scritte e aggiornate.** Se tali varianti vengono aggiunte a un payload (ad es. per gli aggiornamenti), verranno ignorate. Tuttavia, la variazione sarà servita tramite consegna ( `GET`).
+* **Le varianti non possono essere scritte e aggiornate.** Se tali varianti vengono aggiunte a un payload (ad es. per gli aggiornamenti), verranno ignorate. Tuttavia, la variante verrà servita tramite consegna ( `GET`).
 
 * **I modelli di frammento di contenuto non sono attualmente supportati**: non possono essere letti o creati. Per poter creare un nuovo frammento di contenuto o aggiornarne uno esistente, gli sviluppatori devono conoscere il percorso corretto del modello di frammento di contenuto. Attualmente l’unico metodo per ottenere una panoramica di questi metodi è tramite l’interfaccia utente di amministrazione.
 * **I riferimenti vengono ignorati**. Al momento non è disponibile alcun controllo per verificare se a un frammento di contenuto esistente viene fatto riferimento. Pertanto, ad esempio, l&#39;eliminazione di un frammento di contenuto potrebbe causare problemi in una pagina che contiene un riferimento.
@@ -363,7 +363,7 @@ I seguenti codici di stato possono essere visti nelle circostanze pertinenti:
    }
    ```
 
-## API Reference {#api-reference}
+## Riferimento API {#api-reference}
 
 Consultate qui per riferimenti API dettagliati:
 
