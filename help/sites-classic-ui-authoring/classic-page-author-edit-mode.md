@@ -31,9 +31,9 @@ Alcuni sono immediatamente disponibili nella barra laterale, altri anche utilizz
 >
 >A seconda dell’istanza corrente è possibile che siano presenti componenti personalizzati sviluppati esplicitamente per le tue esigenze. Questi possono anche avere lo stesso nome di alcuni dei componenti qui descritti.
 
-The components are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) from the **Components** tab of the sidekick and the **Insert New Component** selector (when you double-click in the **Drag components or assets here** area).
+I componenti sono disponibili quando [modificate una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) dalla scheda **Componenti** della barra laterale e dal selettore **Inserisci nuovo componente** (quando fate doppio clic nell&#39;area **Trascinate qui i componenti o le risorse**).
 
-You can select a component and drag it to the required location on your page and then [Edit Content and Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+È possibile selezionare un componente e trascinarlo nella posizione desiderata sulla pagina, quindi [Modifica contenuto e proprietà](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 I componenti sono ordinati in base a varie categorie (gruppi di componenti), che comprendono (per l’authoring delle pagine):
 
@@ -51,7 +51,7 @@ I componenti del gruppo Generale sono i componenti di base utilizzati per creare
 
 ![](do-not-localize/chlimage_1-2.png)
 
-### Immagine adattiva {#adaptive-image}
+### Immagine adattiva  {#adaptive-image}
 
 Il componente Immagine adattiva genera immagini che vengono ridimensionate in base alla finestra nella quale viene aperta la pagina web. Per utilizzare questo componente, occorre fornire una risorsa immagine dal file system o DAM. Quando la pagina web viene aperta, il browser scarica una copia dell’immagine ridimensionata, adatta per la finestra corrente.
 
@@ -152,7 +152,8 @@ Sono disponibili in due schede:
          * **Pagina padre** Consente di specificare il percorso manualmente o utilizzando il selettore. Non specificare nulla per utilizzare la pagina corrente come pagina padre.
       * **Opzioni per elenco fisso**
 
-         * **Pagine** Selezionare un elenco di pagine. Use 
+         * ****
+Pagine: consente di selezionare un elenco di pagine. Use 
 `+` per aggiungere altre voci e i pulsanti su/giù per regolare l&#39;ordine.
       * **Opzioni per la ricerca**
 
@@ -162,8 +163,9 @@ Sono disponibili in due schede:
       * **Opzioni di ricerca avanzata**
 
          * **Notazione predicato QueryBuilder** Consente di inserire una query di ricerca utilizzando la notazione del predicato QueryBuilder. Ad esempio, è possibile inserire “fulltext=Marketing” per visualizzare nel Carosello tutte le pagine il cui contenuto include “Marketing”. Consulta [API di QueryBuilder](/help/sites-developing/querybuilder-api.md) per una descrizione approfondita delle espressioni di query e per altri esempi.
-   * **Ordina per** selezione 
-`jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` dal menu a discesa.
+   * **Ordina**
+perSeleziona 
+`jcr:title`,  `jcr:created`,  `cq:lastModified`o  `cq:template` dal menu a discesa.
 
    * **Limite** Il numero massimo di voci da utilizzare nel Carosello, facoltativo.
 
@@ -174,7 +176,7 @@ Sono disponibili in due schede:
 >[!NOTE]
 Puoi creare un componente Carosello personalizzato per Adobe Experience Manager, per la visualizzazione delle risorse digitali presenti in DAM AEM. Per ulteriori informazioni, consulta [Creazione di componenti Carosello personalizzati per Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
-### Grafico {#chart}
+### Grafico  {#chart}
 
 Il componente Grafico consente di aggiungere un grafico a barre, a linee o a torta. AEM crea un grafico a partire dai dati forniti. I dati vengono specificati digitando direttamente nella scheda Dati, o copiando e incollando un foglio di calcolo.
 
@@ -254,7 +256,7 @@ L’applicazione esterna viene integrata nel sistema paragrafo della pagina AEM,
 >[!NOTE]
 A seconda del caso d’uso, per l’integrazione di applicazioni esterne possono essere disponibili altre opzioni, ad esempio l’[Integrazione di portlet](/help/sites-administering/aem-as-portal.md).
 
-### Flash {#flash}
+### Flash  {#flash}
 
 Il componente Flash permette di caricare un filmato Flash. Puoi trascinare una risorsa Flash da Content Finder sul componente oppure usare la finestra di dialogo:
 
@@ -294,7 +296,7 @@ Il componente Flash permette di caricare un filmato Flash. Puoi trascinare una r
 
       Eventuali altri attributi richiesti.
 
-### Immagine {#image}
+### Immagine  {#image}
 
 Il componente Immagine visualizza un’immagine e il relativo testo in base ai parametri specificati.
 
@@ -307,7 +309,7 @@ Puoi trascinare un’immagine da [Content Finder](/help/sites-classic-ui-authori
 >[!NOTE]
 In Internet Explorer non è possibile monitorare l’avanzamento del caricamento.
 Se si utilizza Internet Explorer è necessario caricare l’immagine e fare clic su **OK**, quindi riaprire l’immagine per vedere il file caricato nell’anteprima e per eseguire eventuali modifiche (ad es. ritagliare l’immagine).
-See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+Per ulteriori informazioni sulle funzioni HTML5 utilizzate da AEM, consultate la sezione [Piattaforme certificate](/help/release-notes/release-notes.md#certifiedplatforms).
 
 Quando carichi un’immagine, puoi configurare le opzioni seguenti:
 
@@ -395,10 +397,10 @@ Il componente Elenco permette di configurare criteri di ricerca per la creazione
 
             Potete inserire una query di ricerca utilizzando la notazione predicato Querybuilder. Ad esempio, potete immettere &quot;fulltext=Marketing&quot; per visualizzare nel carosello tutte le pagine con &quot;Marketing&quot; nel contenuto.
 
-            Per informazioni complete sulle espressioni di query e per ulteriori esempi, consultate API [](/help/sites-developing/querybuilder-api.md) QueryBuilder.
+            Per informazioni complete sulle espressioni di query e per ulteriori esempi, vedere [API di QueryBuilder](/help/sites-developing/querybuilder-api.md).
       * **Tag**
 
-         Specify the **Parent page**, **Tags/Keywords** and your required match criteria.
+         Specificare la **Pagina padre**, **Tag/Parole chiave** e i criteri di corrispondenza richiesti.
    * **Visualizza come**
 
       Come devono essere elencati gli elementi: come Collegamenti, Teaser o Notizie.
@@ -522,7 +524,7 @@ Puoi configurare i parametri seguenti:
 
    * **Tipi di nodo**
 
-      If the search is to be restricted to specific node type list them here; for example, `cq:Page`.
+      Se la ricerca deve essere limitata a un tipo di nodo specifico, elencali qui; ad esempio, `cq:Page`.
 
    * **Percorso di ricerca**
 
@@ -591,7 +593,7 @@ Se necessario è possibile configurare:
 
       Percorso di inizio per la creazione dell’elenco.
 
-### Slideshow {#slideshow}
+### Slideshow  {#slideshow}
 
 Questo componente permette di caricare una serie di immagini da visualizzare sulla pagina sotto forma di slideshow. Puoi aggiungere o rimuovere immagini e assegnare un titolo a ognuna di esse. In Avanzate è inoltre possibile specificare la dimensione dell’area di visualizzazione.
 
@@ -601,7 +603,7 @@ Puoi configurare i parametri seguenti:
 
    * **Nuova diapositiva**
 
-      You can specify a selection of slides using the **Add** (and **Remove**) buttons.
+      È possibile specificare una selezione di diapositive utilizzando i pulsanti **Aggiungi** (e **Rimuovi**).
 
    * **Titolo**
 
@@ -683,11 +685,11 @@ Il componente Testo e immagine aggiunge un blocco di testo e un’immagine. È i
 
 Puoi configurare i parametri seguenti:
 
-* **Stili** componente (**Stili**)
+* **Stili**  componente (**Stili**)
 
    Qui è possibile specificare l’allineamento a sinistra o a destra dell’immagine. L’impostazione predefinita prevede l’allineamento dell’immagine a **Sinistra**.
 
-* **Proprietà** immagine (proprietà&#x200B;**immagine** avanzate)
+* **Proprietà**  immagine (**Proprietà** immagine avanzate)
 
    Potete specificare i seguenti parametri:
 
@@ -760,7 +762,7 @@ Dopo aver posizionato un’istanza del componente sulla pagina puoi configurare 
 
    * **Dimensione**
 
-      Le dimensioni native del video (larghezza x altezza, in pixel) vengono riportate nelle caselle accanto a Dimensione (ved. sopra). Per escludere le dimensioni native del video, potete inserire manualmente nuovi valori di larghezza e altezza. Click **OK** to dismiss the dialog.
+      Le dimensioni native del video (larghezza x altezza, in pixel) vengono riportate nelle caselle accanto a Dimensione (ved. sopra). Per escludere le dimensioni native del video, potete inserire manualmente nuovi valori di larghezza e altezza. Fare clic su **OK** per chiudere la finestra di dialogo.
 
 >[!NOTE]
 Tra i formati supportati:
@@ -782,7 +784,7 @@ L’esempio seguente illustra l’utilizzo dei componenti 2 Colonne e 3 Colonne.
 
 Componente Controllo colonna con impostazione predefinita di 2 colonne uguali.
 
-### 3 Colonne {#columns-2}
+### 3 Colonne  {#columns-2}
 
 Componente Controllo colonna con impostazione predefinita di 3 colonne uguali.
 
@@ -909,7 +911,7 @@ Questo campo è obbligatorio e può contenere solo i seguenti caratteri:
 
    * **CSS**
 
-### Modulo (componente) {#form-component}
+### Modulo (componente)  {#form-component}
 
 Il componente Modulo definisce l’inizio e la fine di un modulo con gli elementi **Inizio modulo** e **Fine modulo**. Questi sono sempre utilizzati in coppia per garantire la corretta definizione del modulo.
 
@@ -917,7 +919,7 @@ Il componente Modulo definisce l’inizio e la fine di un modulo con gli element
 
 Tra l’inizio e la fine di un modulo puoi aggiungere componenti modulo che definiscono i campi di immissione presentati agli utenti.
 
-#### Inizio del modulo {#start-of-form}
+#### Inizio del modulo  {#start-of-form}
 
 Questo componente è necessario per definire l’inizio di un nuovo modulo su una pagina. Puoi configurare i parametri seguenti:
 
@@ -935,7 +937,7 @@ Questo componente è necessario per definire l’inizio di un nuovo modulo su un
 
    * **Tipo di azione**
 
-      Un modulo richiede un’azione che definisca l’operazione da avviare con i dati inviati dall’utente (simile a action= in HTML). Alcuni richiedono una configurazione **** azione corrispondente.
+      Un modulo richiede un’azione che definisca l’operazione da avviare con i dati inviati dall’utente (simile a action= in HTML). Alcuni richiedono una **Configurazione azione** corrispondente.
 
       Una selezione di tipi di azione è inclusa in un&#39;installazione standard AEM:
 
@@ -970,7 +972,7 @@ Questo componente è necessario per definire l’inizio di un nuovo modulo su un
 
       Percorso delle proprietà nodo utilizzato per caricare valori predefiniti nei campi del modulo.
 Si tratta di un campo facoltativo, per specificare il percorso di un nodo nella directory archivio. Quando alcune proprietà di questo nodo corrispondono ai nomi dei campi, i relativi campi del modulo vengono precompilati con il valore della proprietà corrispondente. In assenza di proprietà corrispondenti, il campo contiene il valore predefinito.
-Utilizzando **Percorso di caricamento** potete precaricare il modulo con valori inseriti nei campi necessari. Vedere [Precaricamento dei valori](/help/sites-developing/developing-forms.md#preloading-form-values)del modulo.
+Utilizzando **Percorso di caricamento** potete precaricare il modulo con valori inseriti nei campi necessari. Vedere [Precaricamento dei valori dei moduli](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **Convalida client**
 
@@ -989,15 +991,15 @@ Utilizzando **Percorso di caricamento** potete precaricare il modulo con valori 
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Configurazione azione**
 
-      The options available in **Action Configuration** are dependent on the **Action Type** selected:
+      Le opzioni disponibili in **Configurazione azione** dipendono dalla **Tipo azione** selezionata:
 
       * **Richiesta account**
 
          * **Pagina di creazione account** Pagina utilizzata per la creazione di un nuovo account.
       * **Crea contenuto**
 
-         * Content Path
-The content path for any content that the form dumps. Enter a path that ends with a slash `/`. The slash means that for each form port, a new node is created at the given location; for example:
+         * Percorso contenuto
+Percorso di eventuale contenuto riprodotto nel modulo. Inserite un percorso che termina con una barra `/`. La barra indica che per ciascuna porta del modulo viene creato un nuovo nodo nella posizione specificata; ad esempio:
             `/forms/feedback/`
 
          * **Tipo**
@@ -1014,7 +1016,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
 
          * **Tipo risorsa**
 
-            Se impostato, questo viene aggiunto a ogni commento come `sling:resourceType`
+            Se impostato, questo viene aggiunto a ciascun commento come `sling:resourceType`
 
          * **Selettore vista**
       * **Crea lead**
@@ -1036,7 +1038,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
 
          * **Visualizza dati...**
 
-            Fate clic su questo pulsante per accedere a informazioni sui risultati del modulo in Bulk Editor. From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
+            Fate clic su questo pulsante per accedere a informazioni sui risultati del modulo in Bulk Editor. Da qui è possibile esportare le informazioni in un file `.tsv` (separato da tabulazioni) da utilizzare, ad esempio, in un foglio di calcolo Excel.
       * **Mail**
 
          * **Da**
@@ -1075,7 +1077,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
             Fate clic su questo pulsante per accedere a informazioni sui risultati del modulo in Bulk Editor. Da qui è possibile esportare le informazioni in un file .tsv (separato da tab) da utilizzare, ad esempio, in un foglio di calcolo Excel).
       * **Contenuto store con caricamenti**
 
-         Sono disponibili le stesse opzioni di **Store Content**.
+         Sono disponibili le stesse opzioni di **Contenuto store**.
 
       * **Annulla sottoscrizione utente**
 
@@ -1136,7 +1138,7 @@ Consente di inserire un campo di indirizzo internazionale nel seguente formato:
 
 Il componente è configurato per l’utilizzo immediato, ma puoi modificare la configurazione se necessario. Ad esempio, possono essere aggiunti vincoli per i singoli elementi dell’indirizzo. Lasciando i campi vuoti saranno utilizzate le impostazioni predefinite.
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 Il componente Captcha richiede all’utente di inserire la stringa alfanumerica visualizzata sullo schermo. Con ogni aggiornamento della schermata viene visualizzata una stringa diversa.
 
@@ -1144,7 +1146,7 @@ Il componente Captcha richiede all’utente di inserire la stringa alfanumerica 
 
 Puoi configurare vari parametri per questo componente, incluso un messaggio da visualizzare se la stringa Captcha non è valida.
 
-### Gruppo di caselle di selezione {#checkbox-group}
+### Gruppo di caselle di selezione  {#checkbox-group}
 
 Una casella di selezione consente di generare un elenco composto di una o più caselle. L’utente potrà selezionare più caselle.
 
@@ -1183,7 +1185,7 @@ Il componente Caricamento file offre all’utente la possibilità di selezionare
 >[!NOTE]
 Puoi creare un componente di caricamento personalizzato per caricare i file su un Servlet Sling. Per ulteriori informazioni, consulta [Caricamento dei file in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
-### Campo nascosto {#hidden-field}
+### Campo nascosto  {#hidden-field}
 
 Questo componente consente di creare un campo nascosto. Questi possono essere utilizzati per vari scopi; ad esempio, quando è necessario eseguire un’azione dopo l’invio del modulo, o quando dati nascosti sono necessari in fase di post-elaborazione.
 
@@ -1193,7 +1195,7 @@ Questo componente consente di creare un campo nascosto. Questi possono essere ut
 Puoi inoltre personalizzare il modulo in modo da mostrare o nascondere specifici componenti a seconda dei valori di altri campi nel modulo. La modifica della visibilità di un campo modulo è utile se il campo è richiesto solo in presenza di particolari condizioni.
 Consulta [Mostrare e nascondere i componenti di un modulo](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Pulsante immagine {#image-button}
+### Pulsante immagine  {#image-button}
 
 Un pulsante immagine consente di creare un pulsante con testo e immagine personalizzati:
 
@@ -1213,7 +1215,7 @@ Il componente Campo collegamento permette di specificare un URL:
 
 Viene utilizzato frequentemente per il modulo Evento calendario, in cui fornisce un campo URL/collegamento per un evento.
 
-### Campo password {#password-field}
+### Campo password  {#password-field}
 
 Viene utilizzato per consentire all’utente di inserire la propria password:
 
@@ -1282,7 +1284,7 @@ Il campo di testo standard può essere configurato con la dimensione richiesta e
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Workflow Submit Button(s) {#workflow-submit-button-s}
+### Pulsanti invio flusso di lavoro {#workflow-submit-button-s}
 
 Questo consente di creare un pulsante Invia da utilizzare in un flusso di lavoro.
 
