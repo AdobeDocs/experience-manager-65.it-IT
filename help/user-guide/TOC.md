@@ -13,7 +13,7 @@ ht-degree: 6%
 ---
 
 
-# AEM 6.5 User Guide {#user-guide}
+# Guida utente di AEM 6.5 {#user-guide}
 
 + [Hub guida utente di AEM 6.5](home.md)
 + Guide utente e risorse{#user-guides}
