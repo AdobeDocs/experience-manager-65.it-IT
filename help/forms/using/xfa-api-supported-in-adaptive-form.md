@@ -141,7 +141,7 @@ Nella tabella seguente è illustrato il funzionamento dei vari script XFA defini
    <td><p>Mappata alla proprietà short description in forma adattiva.</p> </td>
   </tr>
   <tr>
-   <td><p>didascalia<em> (tutti i tipi di campo)</em></p> </td>
+   <td><p>caption<em> (tutti i tipi di campo)</em></p> </td>
    <td><p>Mappata alla proprietà Titolo in modulo adattivo.</p> </td>
   </tr>
   <tr>
@@ -153,19 +153,19 @@ Nella tabella seguente è illustrato il funzionamento dei vari script XFA defini
    <td><p>Mappata alla proprietà value in Modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>voci<em> (casella di riepilogo, casella di controllo)</em></p> </td>
+   <td><p>items<em> (casella di riepilogo, casella di controllo)</em></p> </td>
    <td><p>Mappata alla proprietà options in modulo adattivo. È possibile ignorarlo utilizzando l'espressione Opzioni.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (campo di testo)</em></p> </td>
+   <td><p>maxChar<em> (Campo di testo)</em></p> </td>
    <td><p>Mappata alla proprietà Numero massimo di caratteri consentiti in un modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>multiline<em> (campo di testo)</em></p> </td>
+   <td><p>multiline<em> (Campo di testo)</em></p> </td>
    <td><p>Mappata alla proprietà Consenti righe multiple nel modulo adattivo.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (campo numerico, campo decimale)</em></p> </td>
+   <td><p>fracDigit<em> (Campo numerico, Campo decimale)</em></p> </td>
    <td><p>Mappata alla proprietà Frac Cifre in modulo adattivo.</p> </td>
   </tr>
   <tr>
