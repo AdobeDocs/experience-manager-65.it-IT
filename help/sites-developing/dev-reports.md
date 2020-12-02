@@ -1,8 +1,8 @@
 ---
 title: Sviluppo di report
 seo-title: Sviluppo di report
-description: AEM offre una selezione di report standard basati su un framework di reporting
-seo-description: AEM offre una selezione di report standard basati su un framework di reporting
+description: AEM fornisce una selezione di report standard basati su un framework di reporting
+seo-description: AEM fornisce una selezione di report standard basati su un framework di reporting
 uuid: 1b406d15-bd77-4531-84c0-377dbff5cab2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 0%
 
 ---
 
 
 # Sviluppo di report{#developing-reports}
 
-AEM offre una selezione di rapporti [](/help/sites-administering/reporting.md) standard, la maggior parte dei quali basati su un framework di reporting.
+AEM fornisce una selezione di [report standard](/help/sites-administering/reporting.md) la maggior parte dei quali sono basati su un framework di reporting.
 
 Utilizzando il framework è possibile estendere questi rapporti standard o sviluppare rapporti personalizzati completamente nuovi. Il framework di reporting si integra strettamente con i concetti e i principi esistenti di CQ5, in modo che gli sviluppatori possano utilizzare la conoscenza già acquisita di CQ5 come piattaforma di sviluppo per lo sviluppo di rapporti.
 
@@ -30,7 +33,7 @@ Per i rapporti standard forniti con AEM:
    * [Report utente](/help/sites-administering/reporting.md#user-report)
    * [Report di istanze flusso di lavoro](/help/sites-administering/reporting.md#workflow-instance-report)
 
-* Le seguenti relazioni si basano su principi individuali e pertanto non possono essere prorogate:
+* Le seguenti relazioni si basano su principi individuali e pertanto non possono essere estese:
 
    * [Utilizzo disco](/help/sites-administering/reporting.md#disk-usage)
    * [Verifica stato](/help/sites-administering/reporting.md#health-check)
@@ -52,13 +55,13 @@ Per i rapporti standard forniti con AEM:
 * `N:<name> [<nodeType>]`
    >
    >     
-   Descrive un nodo con il nome `<*name*>` e il tipo di nodo di `<*nodeType*>`*.*
+   Descrive un nodo con il nome di `<*name*>` e il tipo di nodo di `<*nodeType*>`*.*
    >
    >  
 * `P:<name> [<propertyType]`
    >
    >     
-   Descrive una proprietà con il nome `<*name*>` e un tipo di proprietà di `<*propertyType*>`.
+   Descrive una proprietà con il nome di `<*name*>` e un tipo di proprietà di `<*propertyType*>`.
    >
    >  
 * `P:<name> = <value>`
@@ -68,17 +71,18 @@ Per i rapporti standard forniti con AEM:
    >
    >
 * Il rientro mostra le dipendenze gerarchiche tra i nodi.
->* Elementi separati da| indica un elenco di possibili elementi; ad esempio, tipi o nomi:
+>* Elementi separati da | indica un elenco di possibili elementi; ad esempio, tipi o nomi:
+
 >
 >  
-Ad esempio, `String|String[]` la proprietà può essere String o String[].
+ad esempio `String|String[]` indica che la proprietà può essere String o String[].
 >
->* `[]` rappresenta un array; come Stringa[] o un array di nodi come nella definizione [della](#query-definition)query.
+>* `[]` rappresenta un array; come [] Stringing o array di nodi come nella definizione [ della ](#query-definition)query.
 >
 >
 Salvo diversa indicazione, i tipi predefiniti sono:
 >
->* Nodes - `nt:unstructured`
+>* Nodi - `nt:unstructured`
 >* Proprietà - `String`
 
 
@@ -102,33 +106,33 @@ Il framework di reporting (illustrato dalla struttura di un report standard) uti
 La pagina del rapporto:
 
 * È una pagina standard di CQ5.
-* Si basa su un modello CQ5 [standard configurato per il rapporto](#report-template).
+* Si basa su un modello [standard CQ5, configurato per il report](#report-template).
 
 ### Base report {#report-base}
 
-Il [ componente `reportbase`](#report-base-component) costituisce la base di qualsiasi rapporto:
+Il componente [ `reportbase` ](#report-base-component) costituisce la base di qualsiasi rapporto così come è:
 
 * Contiene la definizione della [query](#the-query-and-data-retrieval) che fornisce il set di risultati sottostante di dati.
 
-* È un sistema paragrafo adattato che conterrà tutte le colonne ( `columnbase`) aggiunte al rapporto.
+* È un sistema paragrafo adattato che conterrà tutte le colonne ( `columnbase`) aggiunte al report.
 * Definisce i tipi di grafico disponibili e quelli attualmente attivi.
 * Definisce la finestra di dialogo Modifica, che consente all’utente di configurare alcuni aspetti del rapporto.
 
 ### Base colonna {#column-base}
 
-Ogni colonna è un’istanza del [`columnbase` componente](#column-base-component) che:
+Ogni colonna è un&#39;istanza del [ `columnbase` componente](#column-base-component) che:
 
-* È un paragrafo, utilizzato dal parsys ( `reportbase`) del rispettivo rapporto.
-* Definisce il collegamento al set [di risultati](#the-query-and-data-retrieval)sottostante; ad esempio, definisce i dati specifici a cui si fa riferimento all&#39;interno di questo set di risultati e come viene elaborato.
+* È un paragrafo, utilizzato da parsys ( `reportbase`) del rispettivo rapporto.
+* definisce il collegamento al set di risultati [sottostante](#the-query-and-data-retrieval); ad esempio, definisce i dati specifici a cui si fa riferimento all&#39;interno di questo set di risultati e come viene elaborato.
 * contiene definizioni supplementari; quali gli aggregati e i filtri disponibili, insieme a eventuali valori predefiniti.
 
 ### Query e recupero dati {#the-query-and-data-retrieval}
 
 Query:
 
-* È definito come parte del [`reportbase`](#report-base) componente.
+* È definito come parte del componente [ `reportbase`](#report-base).
 * Si basa su [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
-* Recupera i dati utilizzati come base del rapporto. Ogni riga del set di risultati (tabella) è associata a un nodo come restituito dalla query. Da questo set di dati vengono quindi estratte informazioni specifiche per [singole colonne](#column-base-component) .
+* Recupera i dati utilizzati come base del rapporto. Ogni riga del set di risultati (tabella) è associata a un nodo come restituito dalla query. Informazioni specifiche per [singole colonne](#column-base-component) vengono quindi estratte da questo set di dati.
 
 * In genere si compone di:
 
@@ -136,7 +140,7 @@ Query:
 
       Specifica la struttura ad albero secondaria del repository in cui effettuare la ricerca.
 
-      Per ridurre al minimo l&#39;impatto sulle prestazioni, è consigliabile (provare) limitare la query a un sottoalbero specifico del repository. Il percorso principale può essere predefinito nel modello [di](#report-template) rapporto o impostato dall&#39;utente nella finestra di dialogo [](#configuration-dialog)Configurazione (Modifica).
+      Per ridurre al minimo l&#39;impatto sulle prestazioni, è consigliabile (provare) limitare la query a un sottoalbero specifico del repository. Il percorso principale può essere predefinito nel [modello di report](#report-template) oppure impostato dall&#39;utente nella finestra di dialogo [Configurazione (Edit)](#configuration-dialog).
 
    * [Uno o più criteri](#query-definition).
 
@@ -144,7 +148,7 @@ Query:
 
 **Il punto chiave qui è che ogni singolo nodo restituito nel set di risultati della query viene utilizzato per generare una singola riga nel report (ovvero una relazione 1:1).**
 
-Lo sviluppatore deve assicurarsi che la query definita per un report restituisca un set di nodi appropriato per quel report. Tuttavia, il nodo stesso non deve contenere tutte le informazioni richieste, ma può anche essere derivato dai nodi padre e/o figlio. Ad esempio, la query utilizzata per il report [](/help/sites-administering/reporting.md#user-report) utente seleziona i nodi in base al tipo di nodo (in questo caso `rep:user`). Tuttavia, la maggior parte delle colonne del rapporto non riceve i dati direttamente da questi nodi, ma dai nodi secondari `profile`.
+Lo sviluppatore deve assicurarsi che la query definita per un report restituisca un set di nodi appropriato per quel report. Tuttavia, il nodo stesso non deve contenere tutte le informazioni richieste, ma può anche essere derivato dai nodi padre e/o figlio. Ad esempio, la query utilizzata per il [Rapporto utente](/help/sites-administering/reporting.md#user-report) seleziona i nodi in base al tipo di nodo (in questo caso `rep:user`). Tuttavia, la maggior parte delle colonne del report non prende i propri dati direttamente da questi nodi, ma dai nodi secondari `profile`.
 
 ### Coda di elaborazione {#processing-queue}
 
@@ -158,7 +162,7 @@ Questo consente di:
 
 * risoluzione dei valori estratti; questo può essere fatto in diversi modi.
 
-   Ad esempio, i percorsi possono essere mappati su un titolo (come nel contenuto leggibile dall&#39;utente della rispettiva proprietà *jcr:title* ).
+   Ad esempio, i percorsi possono essere mappati su un titolo (come nel contenuto leggibile dall&#39;utente della rispettiva proprietà *jcr:title*).
 
 * Applicazione di filtri in diversi punti.
 * Se necessario, create dei valori composti.
@@ -175,51 +179,51 @@ Il seguente flusso di lavoro rappresenta la coda di elaborazione:
 
 Laddove le fasi e gli elementi dettagliati siano:
 
-1. Trasforma i risultati restituiti dalla query [iniziale (base di report)](#query-definition) nel set di risultati di base utilizzando gli estrattori di valore.
+1. Trasforma i risultati restituiti dalla [query iniziale (base di report)](#query-definition) nel set di risultati di base utilizzando gli estrattori di valore.
 
-   Gli estrattori di valore vengono scelti automaticamente a seconda del tipo [di](#column-specific-definitions)colonna. Sono utilizzati per leggere i valori dalla query JCR sottostante e creare un set di risultati da essi; dopo di che può essere successivamente applicata un&#39;ulteriore trasformazione. Ad esempio, per il `diff` tipo, l&#39;estrattore di valori legge due proprietà, calcola il singolo valore che viene quindi aggiunto al set di risultati. Impossibile configurare gli estrattori di valore.
+   Gli estrattori di valore vengono scelti automaticamente in base al tipo di colonna [](#column-specific-definitions). Sono utilizzati per leggere i valori dalla query JCR sottostante e creare un set di risultati da essi; dopo di che può essere successivamente applicata un&#39;ulteriore trasformazione. Ad esempio, per il tipo `diff`, l&#39;estrattore di valori legge due proprietà, calcola il valore singolo che viene quindi aggiunto al set di risultati. Impossibile configurare gli estrattori di valore.
 
-1. A quel set di risultati iniziale, contenente dati non elaborati, viene applicato il filtraggio [](#column-specific-definitions) iniziale (fase *non* elaborata).
+1. A tale set di risultati iniziale, contenente dati non elaborati, viene applicato il filtro iniziale [a](#column-specific-definitions) (*fase raw*).
 
-1. I valori sono [preelaborati](#processing-queue); come definito per la fase di *applicazione* .
+1. I valori sono [preelaborati](#processing-queue); come definito per la fase *apply*.
 
-1. [Il filtraggio](#column-specific-definitions) (assegnato alla fase *preelaborata* ) viene eseguito sui valori preelaborati.
+1. [Il filtraggio](#column-specific-definitions)  (assegnato alla fase  ** preelaborata) viene eseguito sui valori preelaborati.
 
-1. I valori sono risolti; secondo il risolutore [definito](#processing-queue).
-1. [Il filtraggio](#column-specific-definitions) (assegnato alla fase *risolta* ) viene eseguito sui valori risolti.
+1. I valori sono risolti; secondo il [risolutore definito](#processing-queue).
+1. [Il filtraggio](#column-specific-definitions)  (assegnato alla fase  ** risolta) viene eseguito sui valori risolti.
 
 1. I dati sono [raggruppati e aggregati](#column-specific-definitions).
 1. I dati della matrice vengono risolti convertendola in un elenco (basato su stringhe).
 
    Si tratta di un passaggio implicito che converte un risultato con più valori in un elenco che può essere visualizzato; è richiesto per i valori delle celle (non aggregati) basati su proprietà JCR con più valori.
 
-1. I valori sono nuovamente [preelaborati](#processing-queue); come definito per la fase *afterApply* .
+1. I valori sono di nuovo [preelaborati](#processing-queue); come definito per la fase *afterApply*.
 
 1. I dati sono ordinati.
 1. I dati elaborati vengono trasferiti al client.
 
 >[!NOTE]
 >
->La query iniziale che restituisce il set di risultati dei dati di base è definita per il `reportbase` componente.
+>La query iniziale che restituisce il set di risultati dei dati di base è definita per il componente `reportbase`.
 >
->Altri elementi della coda di elaborazione sono definiti sui `columnbase` componenti.
+>Altri elementi della coda di elaborazione sono definiti sui componenti `columnbase`.
 
-## Costruzione e configurazione dei report {#report-construction-and-configuration}
+## Costruzione report e configurazione {#report-construction-and-configuration}
 
 Per creare e configurare un rapporto sono necessari i seguenti elementi:
 
-* una [posizione per la definizione dei componenti per report](#location-of-report-components)
-* un [`reportbase` componente](#report-base-component)
-* uno o più [`columnbase` componenti](#column-base-component)
-* un componente [pagina](#page-component)
-* una progettazione di [rapporti](#report-design)
-* un modello di [rapporto](#report-template)
+* una [posizione per la definizione dei componenti del report](#location-of-report-components)
+* a [ `reportbase` componente](#report-base-component)
+* uno o più componenti [ `columnbase`](#column-base-component)
+* a [componente pagina](#page-component)
+* a [report design](#report-design)
+* a [modello di report](#report-template)
 
 ### Posizione dei componenti del report {#location-of-report-components}
 
 I componenti di reporting predefiniti sono contenuti in `/libs/cq/reporting/components`.
 
-Tuttavia, si consiglia vivamente di non aggiornare tali nodi, ma di creare nodi componenti personalizzati sotto `/apps/cq/reporting/components` o se più appropriato `/apps/<yourProject>/reports/components`.
+Tuttavia, si consiglia vivamente di non aggiornare tali nodi, ma di creare nodi componenti personalizzati in `/apps/cq/reporting/components` o se appropriato `/apps/<yourProject>/reports/components`.
 
 Dove (ad esempio):
 
@@ -244,7 +248,7 @@ N:apps
 
 ### Componente pagina {#page-component}
 
-Una pagina di report deve utilizzare il `sling:resourceType` simbolo di `/libs/cq/reporting/components/reportpage`.
+Una pagina di report deve utilizzare il simbolo `sling:resourceType` di `/libs/cq/reporting/components/reportpage`.
 
 Nella maggior parte dei casi, non deve essere necessario personalizzare un componente pagina.
 
@@ -254,9 +258,9 @@ Ogni tipo di rapporto richiede un componente contenitore derivato da `/libs/cq/r
 
 Questo componente funge da contenitore per il rapporto nel suo insieme e fornisce informazioni per:
 
-* Definizione [della](#query-definition)query.
-* Finestra di dialogo [](#configuration-dialog) (opzionale) per la configurazione del rapporto.
-* Eventuali [grafici](#chart-definitions) integrati nel rapporto.
+* La [definizione query](#query-definition).
+* Una finestra di dialogo [(opzionale)](#configuration-dialog) per la configurazione del rapporto.
+* Qualsiasi [Charts](#chart-definitions) integrato nel rapporto.
 
 ```
 N:<reportname> [cq:Component]
@@ -299,7 +303,7 @@ N:queryBuilder
     ]
    ```
 
-   Restituisce tutti `textimage` i componenti modificati per l&#39;ultima volta dall&#39; `admin` utente.
+   Restituirebbe tutti i componenti `textimage` modificati per l&#39;ultima volta dall&#39;utente `admin`.
 
 * `nodeTypes`
 
@@ -307,7 +311,7 @@ N:queryBuilder
 
 * `mandatoryProperties`
 
-   Può essere utilizzato per limitare il set di risultati ai nodi con *tutte* le proprietà specificate. Il valore delle proprietà non viene preso in considerazione.
+   Può essere utilizzato per limitare il set di risultati ai nodi con *all* delle proprietà specificate. Il valore delle proprietà non viene preso in considerazione.
 
 Tutte le opzioni sono facoltative e possono essere combinate come necessario, ma è necessario definirne almeno una.
 
@@ -336,7 +340,7 @@ N:charting
 
    * `active`
 
-      Poiché è possibile definire più impostazioni, è possibile utilizzarle per definire quali sono attualmente attive. Questi sono definiti da una serie di nodi (non esiste una convenzione di denominazione obbligatoria per questi nodi, ma i report standard spesso utilizzano `0`, `1`.. `x`), ciascuna con la seguente proprietà:
+      Poiché è possibile definire più impostazioni, è possibile utilizzarle per definire quali sono attualmente attive. Questi sono definiti da una serie di nodi (non esiste una convenzione di denominazione obbligatoria per questi nodi, ma i report standard spesso utilizzano `0`, `1`. `x`), ciascuna con la seguente proprietà:
 
       * `id`
 
@@ -344,9 +348,9 @@ N:charting
 
 * `definitions`
 
-   Definisce i tipi di grafico potenzialmente disponibili per il rapporto. Le `definitions` `active` impostazioni specificate verranno utilizzate.
+   Definisce i tipi di grafico potenzialmente disponibili per il rapporto. Le `definitions` da utilizzare verranno specificate dalle impostazioni `active`.
 
-   Le definizioni vengono specificate utilizzando un array di nodi (spesso denominati `0`, `1`.. `x`), ciascuna con le seguenti proprietà:
+   Le definizioni vengono specificate utilizzando un array di nodi (spesso denominati `0`, `1`. `x`), ciascuna con le seguenti proprietà:
 
    * `id`
 
@@ -367,18 +371,18 @@ Serie di linee (punti di connessione che rappresentano le istantanee effettive).
 
          * `maxRadius` ( `Double/Long`)
 
-            Raggio massimo consentito per il grafico a torta; pertanto la dimensione massima consentita per il grafico (senza legenda). Ignorato se `fixedRadius` è definito.
+            Raggio massimo consentito per il grafico a torta; pertanto la dimensione massima consentita per il grafico (senza legenda). Ignorato se è definito `fixedRadius`.
 
          * `minRadius` ( `Double/Long`)
 
-            Raggio minimo consentito per il grafico a torta. Ignorato se `fixedRadius` è definito.
+            Raggio minimo consentito per il grafico a torta. Ignorato se è definito `fixedRadius`.
 
-         * `fixedRadius` ( `Double/Long`)Definisce un raggio fisso per il grafico a torta.
+         * `fixedRadius` (  `Double/Long`) Definisce un raggio fisso per il grafico a torta.
       * per il tipo di grafico [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
          * `totals` ( `Boolean`)
 
-            True se deve essere visualizzata una riga aggiuntiva che mostra il **Totale** .
+            True se deve essere visualizzata una riga aggiuntiva che mostra il **Totale**.
 impostazione predefinita: `false`
 
          * `series` ( `Long`)
@@ -390,7 +394,7 @@ default: `9` (è anche il massimo consentito)
 
             Numero massimo di istantanee aggregate (punti visualizzati su ogni linea orizzontale, che rappresentano valori distinti) per le quali devono essere visualizzati i pop-up, ossia quando l&#39;utente passa il puntatore del mouse su un valore distinto o un&#39;etichetta corrispondente nella legenda del grafico.
 
-            default: `35` (ossia, se per le impostazioni correnti del grafico sono applicabili più di 35 valori distinti, non vengono visualizzati alcun pop.)
+            default: `35` (ossia, se per le impostazioni correnti del grafico non sono disponibili più di 35 valori distinti, non vengono visualizzati alcun risultato).
 
             Esiste un ulteriore limite di 10 popup che possono essere mostrati in parallelo (più popup possono essere mostrati quando il mouse sopra i testi della legenda).
 
@@ -398,9 +402,9 @@ default: `9` (è anche il massimo consentito)
 
 ### Finestra di dialogo Configurazione {#configuration-dialog}
 
-Ogni rapporto può avere una finestra di dialogo di configurazione, che consente all&#39;utente di specificare vari parametri per il rapporto. Questa finestra di dialogo è accessibile tramite il pulsante **Modifica** quando la pagina del rapporto è aperta.
+Ogni rapporto può avere una finestra di dialogo di configurazione, che consente all&#39;utente di specificare vari parametri per il rapporto. Questa finestra di dialogo è accessibile tramite il pulsante **Modifica** all&#39;apertura della pagina del rapporto.
 
-Questa finestra di dialogo è una [finestra](/help/sites-developing/components-basics.md#dialogs) standard di CQ e può essere configurata come tale (per ulteriori informazioni, vedere [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) ).
+Questa finestra di dialogo è una finestra di dialogo standard di CQ [e può essere configurata come tale (vedere [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) per ulteriori informazioni).](/help/sites-developing/components-basics.md#dialogs)
 
 Esempio di finestra di dialogo:
 
@@ -441,7 +445,7 @@ Esempio di finestra di dialogo:
 </jcr:root>
 ```
 
-Sono disponibili diversi componenti preconfigurati; è possibile fare riferimento a tali elementi nella finestra di dialogo utilizzando la `xtype` proprietà con un valore di `cqinclude`:
+Sono disponibili diversi componenti preconfigurati; è possibile fare riferimento a questi elementi nella finestra di dialogo utilizzando la proprietà `xtype` con un valore di `cqinclude`:
 
 * **`title`**
 
@@ -469,7 +473,7 @@ Sono disponibili diversi componenti preconfigurati; è possibile fare riferiment
 
 >[!NOTE]
 >
->I componenti di riferimento devono essere inclusi utilizzando il `.infinity.json` suffisso (vedere l&#39;esempio precedente).
+>I componenti di riferimento devono essere inclusi utilizzando il suffisso `.infinity.json` (vedere l&#39;esempio precedente).
 
 ### Percorso directory principale {#root-path}
 
@@ -477,11 +481,11 @@ Sono disponibili diversi componenti preconfigurati; è possibile fare riferiment
 
 * **`rootPath`**
 
-   Questo limita il rapporto a una determinata sezione (struttura ad albero o sottostruttura) del repository, consigliata per l&#39;ottimizzazione delle prestazioni. Il percorso principale è specificato dalla `rootPath` proprietà del `report` nodo di ciascuna pagina di report (ricavato dal modello al momento della creazione della pagina).
+   Questo limita il rapporto a una determinata sezione (struttura ad albero o sottostruttura) del repository, consigliata per l&#39;ottimizzazione delle prestazioni. Il percorso principale è specificato dalla proprietà `rootPath` del nodo `report` di ciascuna pagina di report (ripresa dal modello al momento della creazione della pagina).
 
    Può essere specificato da:
 
-   * il modello [di](#report-template) report (come valore fisso o come valore predefinito per la finestra di dialogo di configurazione).
+   * il [modello di report](#report-template) (come valore fisso o come valore predefinito per la finestra di dialogo di configurazione).
    * l&#39;utente (utilizzando questo parametro)
 
 ## Componente base colonna {#column-base-component}
@@ -490,13 +494,13 @@ Ogni tipo di colonna richiede un componente derivato da `/libs/cq/reporting/comp
 
 Un componente per colonna definisce una combinazione di quanto segue:
 
-* Configurazione query [specifica per la](#column-specific-query) colonna.
-* Risolutori e [preelaborazione](#resolvers-and-preprocessing).
-* Definizioni [specifiche della](#column-specific-definitions) colonna (ad esempio filtri e aggregati); nodo `definitions` secondario).
-* [Valori](#column-default-values)predefiniti colonna.
-* Filtro [](#client-filter) client per estrarre le informazioni da visualizzare dai dati restituiti dal server.
-* Inoltre, un componente di colonna deve fornire un’istanza appropriata di `cq:editConfig`. per definire gli [eventi e le azioni](#events-and-actions) richiesti.
-* Configurazione per colonne [](#generic-columns)generiche.
+* La configurazione [Query specifica per la colonna](#column-specific-query).
+* [Risolutori e pre-elaborazione](#resolvers-and-preprocessing).
+* Le [Definizioni specifiche della colonna](#column-specific-definitions) (ad esempio filtri e aggregati); `definitions` nodo figlio).
+* [Valori](#column-default-values) predefiniti colonna.
+* Il [Filtro client](#client-filter) per estrarre le informazioni da visualizzare dai dati restituiti dal server.
+* Inoltre, un componente colonna deve fornire un&#39;istanza appropriata di `cq:editConfig`. per definire gli [Eventi e azioni](#events-and-actions) richiesti.
+* Configurazione per [colonne generiche](#generic-columns).
 
 ```
 N:<columnname> [cq:Component]
@@ -522,11 +526,11 @@ N:<columnname> [cq:Component]
       N:aggregates [cq:WidgetCollection] // Column Specific Definitions
 ```
 
-Vedere anche [Definizione del nuovo rapporto](#defining-your-new-report).
+Vedere anche [Definizione del nuovo report](#defining-your-new-report).
 
-### Query specifica per la colonna {#column-specific-query}
+### Query specifica colonna {#column-specific-query}
 
-Definisce l’estrazione dati specifica (dal set [di risultati dei dati del](#the-query-and-data-retrieval)rapporto) da utilizzare nella singola colonna.
+Definisce l&#39;estrazione dati specifica (dal [set di risultati dei dati del report](#the-query-and-data-retrieval)) da utilizzare nella singola colonna.
 
 ```xml
 N:definitions
@@ -541,7 +545,7 @@ N:definitions
 
    Definisce la proprietà da utilizzare per calcolare il valore effettivo della cella.
 
-   Se la proprietà è definita come Stringa[] , vengono scansionate più proprietà (in sequenza) per trovare il valore effettivo.
+   Se la proprietà è definita come String[], vengono scansionate più proprietà (in sequenza) per trovare il valore effettivo.
 
    Ad esempio, nel caso di:
 
@@ -564,9 +568,9 @@ N:definitions
 
 * `secondarySubPath`
 
-   Simile a subPath, se `secondaryProperty` utilizzato.
+   Simile a subPath, quando si utilizza `secondaryProperty`.
 
-Nella maggior parte dei casi, `property` verrà utilizzato solo.
+Nella maggior parte dei casi, verrà utilizzato solo `property`.
 
 ### Filtro client {#client-filter}
 
@@ -601,7 +605,7 @@ function(v) {
 
 ### Risolutori e pre-elaborazione {#resolvers-and-preprocessing}
 
-La coda [di](#processing-queue) elaborazione definisce i vari risolutori e configura la preelaborazione:
+La [coda di elaborazione](#processing-queue) definisce i vari risolutori e configura la preelaborazione:
 
 ```xml
 N:definitions
@@ -619,7 +623,7 @@ N:definitions
 
    * `const`
 
-      Mappa i valori ad altri valori; ad esempio, viene utilizzato per risolvere costanti come `en` il valore equivalente `English`.
+      Mappa i valori ad altri valori; ad esempio, viene utilizzato per risolvere costanti come `en` con il valore equivalente `English`.
 
    * `default`
 
@@ -627,25 +631,25 @@ N:definitions
 
    * `page`
 
-      risolve un valore di percorso al percorso della pagina appropriata; più precisamente, al `jcr:content` nodo corrispondente. Ad esempio, `/content/.../page/jcr:content/par/xyz` è risolto in `/content/.../page/jcr:content`.
+      risolve un valore di percorso al percorso della pagina appropriata; più precisamente, al nodo `jcr:content` corrispondente. Ad esempio, `/content/.../page/jcr:content/par/xyz` è risolto in `/content/.../page/jcr:content`.
 
    * `path`
 
-      Risolve un valore di percorso aggiungendo facoltativamente un percorso secondario e prendendo il valore effettivo da una proprietà del nodo (come definita da `resolverConfig`) nel percorso risolto. Ad esempio, una `path` di `/content/.../page/jcr:content` queste proprietà può essere risolta nel contenuto della `jcr:title` proprietà, il che significa che il percorso di pagina viene risolto nel titolo della pagina.
+      Risolve un valore di percorso aggiungendo facoltativamente un percorso secondario e prendendo il valore effettivo da una proprietà del nodo (come definito da `resolverConfig`) nel percorso risolto. Ad esempio, è possibile risolvere un `path` di `/content/.../page/jcr:content` nel contenuto della proprietà `jcr:title`, il che significa che il percorso di pagina viene risolto nel titolo della pagina.
 
    * `pathextension`
 
-      Risolve un valore anteponendo un percorso e prendendo il valore effettivo da una proprietà del nodo nel percorso risolto. Ad esempio, un valore `de` potrebbe essere preceduto da un percorso, ad esempio `/libs/wcm/core/resources/languages`, partendo dal valore della proprietà `language`, per risolvere il codice del paese `de` alla descrizione della lingua `German`.
+      Risolve un valore anteponendo un percorso e prendendo il valore effettivo da una proprietà del nodo nel percorso risolto. Ad esempio, un valore `de` potrebbe essere preceduto da un percorso come `/libs/wcm/core/resources/languages`, che sfrutta il valore della proprietà `language`, per risolvere il codice del paese `de` nella descrizione della lingua `German`.
 
 * `resolverConfig`
 
-   Fornisce le definizioni per il risolutore; le opzioni disponibili dipendono dalla `resolver` selezione:
+   Fornisce le definizioni per il risolutore; le opzioni disponibili dipendono dalla `resolver` selezionata:
 
    * `const`
 
       Utilizzare le proprietà per specificare le costanti per la risoluzione. Il nome della proprietà definisce la costante da risolvere; il valore della proprietà definisce il valore risolto.
 
-      Ad esempio, una proprietà con **Name**= `1` e **Value** `=One` verrà risolta da 1 a 1.
+      Ad esempio, una proprietà con **Name**= `1` e **Value** `=One` risolverà 1 in Uno.
 
    * `default`
 
@@ -655,12 +659,12 @@ N:definitions
 
       * `propertyName` (facoltativo)
 
-         Definisce il nome della proprietà da utilizzare per risolvere il valore. Se non viene specificato, viene utilizzato il valore predefinito *jcr:title* (titolo della pagina); per il `page` risolutore, questo significa che prima il percorso viene risolto sul percorso della pagina, quindi ulteriormente risolto nel titolo della pagina.
+         Definisce il nome della proprietà da utilizzare per risolvere il valore. Se non viene specificato, viene utilizzato il valore predefinito *jcr:title* (il titolo della pagina); per il risolutore `page`, questo significa che prima il percorso viene risolto nel percorso della pagina, quindi ulteriormente risolto nel titolo della pagina.
    * `path`
 
       * `propertyName` (facoltativo)
 
-         Specifica il nome della proprietà da utilizzare per risolvere il valore. Se non viene specificato, `jcr:title` viene utilizzato il valore predefinito di.
+         Specifica il nome della proprietà da utilizzare per risolvere il valore. Se non viene specificato, viene utilizzato il valore predefinito `jcr:title`.
 
       * `subPath` (facoltativo)
 
@@ -671,35 +675,35 @@ N:definitions
 
          Definisce il percorso da anteporre.
 
-      * `propertyName` (mandatory)
+      * `propertyName` (obbligatorio)
 
          Definisce la proprietà sul percorso risolto in cui si trova il valore effettivo.
 
       * `i18n` (facoltativo; type Boolean)
 
-         Stabilisce se il valore risolto deve essere *internazionalizzato* (ad es. utilizzando i servizi [di internazionalizzazione di](/help/sites-administering/tc-manage.md)CQ5).
+         Determina se il valore risolto deve essere *internazionalizzato* (ovvero mediante i servizi di internazionalizzazione di [CQ5](/help/sites-administering/tc-manage.md)).
 
 
 
 * `preprocessing`
 
-   La preelaborazione è facoltativa e può essere associata (separatamente) alle fasi di elaborazione *applicata* o *applicataDopo*:
+   La preelaborazione è facoltativa e può essere associata (separatamente) alle fasi di elaborazione *applicare* o *applicareAfter*:
 
    * `apply`
 
-      Fase iniziale di preelaborazione ([fase 3 nella rappresentazione della coda](#processing-queue)di elaborazione).
+      Fase di preelaborazione iniziale ([passaggio 3 nella rappresentazione della coda di elaborazione](#processing-queue)).
 
    * `applyAfter`
 
-      Applica dopo la preelaborazione ([passaggio 9 nella rappresentazione della coda](#processing-queue)di elaborazione).
+      Applicare dopo la preelaborazione ([passaggio 9 nella rappresentazione della coda di elaborazione](#processing-queue)).
 
-#### Resolver {#resolvers}
+#### Risolutori {#resolvers}
 
 I risolutori vengono utilizzati per estrarre le informazioni richieste. Alcuni esempi dei vari risolutori sono:
 
 **Contenuti**
 
-Di seguito viene risolto un valore di contenuto pari `VersionCreated` alla stringa `New version created`.
+Di seguito viene risolto un valore costante di `VersionCreated` nella stringa `New version created`.
 
 Consulta `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
 
@@ -725,7 +729,7 @@ N:data
 
 **Percorso**
 
-Di seguito viene risolto un percorso `/content/.../page` al contenuto della `jcr:title` proprietà, il che significa che il percorso di pagina viene risolto nel titolo della pagina.
+Quanto segue risolve un percorso di `/content/.../page` al contenuto della proprietà `jcr:title`, il che significa che il percorso di pagina viene risolto nel titolo della pagina.
 
 Consulta `/libs/cq/reporting/components/auditreport/pagecol/definitions/data`.
 
@@ -739,7 +743,7 @@ N:data
 
 **Estensione percorso**
 
-Di seguito viene anteposto un valore `de` con l&#39;estensione percorso `/libs/wcm/core/resources/languages`, quindi il valore della proprietà `language`, per risolvere il codice del paese `de` alla descrizione della lingua `German`.
+Il valore seguente viene anteposto a `de` con l&#39;estensione percorso `/libs/wcm/core/resources/languages`, quindi prende il valore dalla proprietà `language`, per risolvere il codice del paese `de` alla descrizione della lingua `German`.
 
 Consulta `/libs/cq/reporting/components/userreport/languagecol/definitions/data`.
 
@@ -753,21 +757,22 @@ N:data
 
 #### Pre-elaborazione {#preprocessing}
 
-La `preprocessing` definizione può essere applicata a:
+La definizione `preprocessing` può essere applicata a:
 
 * valore originale:
 
-   La definizione di preelaborazione per il valore originale viene specificata su `apply` e/o `applyAfter` direttamente.
+   La definizione di preelaborazione per il valore originale viene specificata direttamente in `apply` e/o `applyAfter`.
 
 * nel suo stato aggregato:
 
    Se necessario, è possibile fornire una definizione separata per ogni aggregazione.
 
-   Per specificare la preelaborazione esplicita per i valori aggregati, le definizioni di preelaborazione devono risiedere su un rispettivo nodo `aggregated` secondario ( `apply/aggregated`, `applyAfter/aggregated`). Se è richiesta la preelaborazione esplicita per aggregati distinti, la definizione di preelaborazione è collocata su un nodo secondario con il nome del rispettivo aggregato (ad esempio `apply/aggregated/min/max` o altri aggregati).
+   Per specificare la preelaborazione esplicita per i valori aggregati, le definizioni di preelaborazione devono risiedere in un rispettivo nodo secondario `aggregated` ( `apply/aggregated`, `applyAfter/aggregated`). Se è richiesta la preelaborazione esplicita per gli aggregati distinti, la definizione di preelaborazione si trova su un nodo secondario con il nome del rispettivo aggregato (ad esempio `apply/aggregated/min/max` o altri aggregati).
 
 Durante la preelaborazione potete specificare una delle seguenti opzioni:
 
-* [trova e sostituisce i pattern](#preprocessing-find-and-replace-patterns)Una volta trovati, il pattern specificato (definito come espressione regolare) viene sostituito da un altro pattern; ad esempio, può essere utilizzato per estrarre una sottostringa dell&#39;originale.
+* [trova e sostituisce ](#preprocessing-find-and-replace-patterns)
+i patternQuando viene trovato, il pattern specificato (definito come espressione regolare) viene sostituito da un altro pattern; ad esempio, può essere utilizzato per estrarre una sottostringa dell&#39;originale.
 
 * [formattatori del tipo di dati](#preprocessing-data-type-formatters)
 
@@ -788,7 +793,7 @@ N:definitions
 
 #### Pre-elaborazione - Trova e sostituisci pattern {#preprocessing-find-and-replace-patterns}
 
-Per la preelaborazione è possibile specificare un `pattern` (definito come espressione [](https://en.wikipedia.org/wiki/Regular_expression) regolare o regex) che si trova e quindi viene sostituito dal `replace` pattern:
+Per la preelaborazione è possibile specificare un `pattern` (definito come [espressione regolare](https://en.wikipedia.org/wiki/Regular_expression) o regex) che si trova e quindi sostituito dal pattern `replace`:
 
 * `pattern`
 
@@ -796,14 +801,14 @@ Per la preelaborazione è possibile specificare un `pattern` (definito come espr
 
 * `replace`
 
-   Stringa o rappresentazione della stringa che verrà utilizzata come sostituzione della stringa originale. Spesso questo rappresenta una sottostringa della stringa situata nell&#39;espressione regolare `pattern`.
+   Stringa o rappresentazione della stringa che verrà utilizzata come sostituzione della stringa originale. Spesso questo rappresenta una sottostringa della stringa ubicata dall&#39;espressione regolare `pattern`.
 
 Un esempio di sostituzione può essere suddiviso come:
 
 * Per il nodo `definitions/data/preprocessing/apply` con le due seguenti proprietà:
 
    * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+   * `replace`:  `$1`
 
 * Stringa in arrivo come:
 
@@ -812,19 +817,19 @@ Un esempio di sostituzione può essere suddiviso come:
 * Saranno suddivise in quattro sezioni:
 
    * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+   * `$2` -  `(/jcr:content)` -  `/jcr:content`
+   * `$3` -  `(/|$)` -  `/`
+   * `$4` -  `(.*)` -  `par/text`
 
 * E sostituito con la stringa rappresentata da `$1`:
 
    * `/content/geometrixx/en/services`
 
-#### Pre-elaborazione - Tipo di dati {#preprocessing-data-type-formatters}
+#### Pre-elaborazione - Tipo di dati per materie {#preprocessing-data-type-formatters}
 
 Questi formati convertono un valore numerico in una stringa relativa.
 
-Ad esempio, può essere utilizzato per una colonna temporale che consente `min`, `avg` e `max` aggrega. Gli aggregati `min`/ `avg`/ `max` vengono visualizzati come una differenza di ** tempo (ad esempio `10 days ago`) richiedono un formattatore di dati. A questo scopo, viene applicato un `datedelta` formattatore ai valori `min`/ `avg`/ `max` aggregati. Se è disponibile anche un `count` &#39;aggregazione, non è necessario un formattatore, né il valore originale.
+Ad esempio, questo può essere utilizzato per una colonna temporale che consente gli aggregati `min`, `avg` e `max`. Gli aggregati `min`/ `avg`/ `max` vengono visualizzati come *differenza di tempo* (ad esempio `10 days ago`), richiedono un formattatore di dati. A questo scopo, un formattatore `datedelta` viene applicato ai valori aggregati `min`/ `avg`/ `max`. Se è disponibile anche un&#39;aggregazione `count`, non è necessario aggiungere un formattatore, né il valore originale.
 
 Attualmente i formati dei tipi di dati disponibili sono:
 
@@ -844,7 +849,7 @@ Attualmente i formati dei tipi di dati disponibili sono:
 
       Converte il valore numerico (interpretato come differenza di ora in giorni) in una stringa data relativa. Ad esempio, 1 è formattato come 1 giorno fa.
 
-L&#39;esempio seguente definisce `datedelta` la formattazione per `min` e `max` gli aggregati:
+L&#39;esempio seguente definisce la formattazione `datedelta` per gli aggregati `min` e `max`:
 
 ```xml
 N:definitions
@@ -903,16 +908,16 @@ N:definitions
 
    Un tipo può (facoltativamente) accettare un parametro. Ad esempio, `timeslot:year` estrae l&#39;anno da un campo data. Tipi con i relativi parametri:
 
-   * `timeslot` - I valori sono paragonabili alle costanti corrispondenti di `java.utils.Calendar`.
+   * `timeslot` - I valori sono paragonabili alle costanti corrispondenti di  `java.utils.Calendar`.
 
       * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+      * `timeslot:month-of-year` -  `Calendar.MONTH`
+      * `timeslot:week-of-year` -  `Calendar.WEEK_OF_YEAR`
+      * `timeslot:day-of-month` -  `Calendar.DAY_OF_MONTH`
+      * `timeslot:day-of-week` -  `Calendar.DAY_OF_WEEK`
+      * `timeslot:day-of-year` -  `Calendar.DAY_OF_YEAR`
+      * `timeslot:hour-of-day` -  `Calendar.HOUR_OF_DAY`
+      * `timeslot:minute-of-hour` -  `Calendar.MINUTE`
 
 
 * `groupable`
@@ -957,7 +962,7 @@ N:definitions
 
    * `text`
 
-      Nome testuale dell&#39;aggregazione. Se non `text` viene specificato, verrà utilizzata la descrizione predefinita dell&#39;aggregato; ad esempio, `minimum` verrà utilizzata per l&#39; `min` aggregazione.
+      Nome testuale dell&#39;aggregazione. Se `text` non è specificato, verrà utilizzata la descrizione predefinita dell&#39;aggregazione; ad esempio, `minimum` verrà utilizzato per l&#39;aggregazione `min`.
 
    * `type`
 
@@ -1006,11 +1011,11 @@ N:defaults
 
 * `aggregate`
 
-   I `aggregate` valori validi sono gli stessi di `type` cui alla sezione `aggregates` (vedere Definizioni specifiche delle [colonne (definizioni - filtri/aggregati)](#column-specific-definitions) ).
+   I valori `aggregate` validi sono gli stessi di `type` in `aggregates` (vedere [Definizioni specifiche per le colonne (definizioni - filtri / aggregati)](#column-specific-definitions) ).
 
 ### Eventi e azioni {#events-and-actions}
 
-Edit Configuration (Modifica configurazione) definisce gli eventi necessari ai listener per rilevare e le azioni da applicare dopo che si sono verificati tali eventi. Per informazioni di base, consultate l&#39; [introduzione allo sviluppo](/help/sites-developing/components.md) di componenti.
+Edit Configuration (Modifica configurazione) definisce gli eventi necessari ai listener per rilevare e le azioni da applicare dopo che si sono verificati tali eventi. Per informazioni di base, vedere [introduzione allo sviluppo di componenti](/help/sites-developing/components.md).
 
 È necessario definire i seguenti valori per garantire che tutte le azioni richieste siano soddisfatte:
 
@@ -1032,31 +1037,31 @@ N:cq:editConfig [cq:EditConfig]
 
 Le colonne generiche sono un&#39;estensione in cui (la maggior parte) le definizioni di colonna sono memorizzate nell&#39;istanza del nodo di colonna (anziché nel nodo del componente).
 
-Usano una finestra di dialogo (standard), che potete personalizzare, per il singolo componente generico. Questa finestra di dialogo consente all&#39;utente del rapporto di definire le proprietà delle colonne di una colonna generica nella pagina del rapporto (utilizzando l&#39;opzione di menu Proprietà **colonna...**).
+Usano una finestra di dialogo (standard), che potete personalizzare, per il singolo componente generico. Questa finestra di dialogo consente all&#39;utente del report di definire le proprietà delle colonne di una colonna generica nella pagina del report (utilizzando l&#39;opzione di menu **Proprietà delle colonne...**).
 
-Un esempio è la colonna **Generico** del report **** utente; vedi `/libs/cq/reporting/components/userreport/genericcol`.
+Un esempio è rappresentato dalla colonna **Generico** del report utente **Report utente**; vedere `/libs/cq/reporting/components/userreport/genericcol`.
 
 Per creare una colonna generica:
 
-* Impostare la `type` proprietà del `definition` nodo della colonna su `generic`.
+* Impostare la proprietà `type` del nodo `definition` della colonna su `generic`.
 
    Consulta `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
-* Specificate una definizione di finestra di dialogo (standard) sotto il `definition` nodo della colonna.
+* Specificate una definizione di finestra di dialogo (standard) sotto il nodo `definition` della colonna.
 
    Consulta `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
    * I campi della finestra di dialogo devono fare riferimento agli stessi nomi della proprietà del componente corrispondente (incluso il percorso).
 
-      Ad esempio, se si desidera rendere configurabile il tipo di colonna generica tramite la finestra di dialogo, utilizzare un campo con il nome di `./definitions/type`.
+      Ad esempio, se si desidera rendere configurabile il tipo di colonna generica tramite la finestra di dialogo, utilizzare un campo con il nome `./definitions/type`.
 
-   * Le proprietà definite mediante l’interfaccia o la finestra di dialogo hanno la precedenza su quelle definite per il `columnbase` componente.
+   * Le proprietà definite mediante l&#39;interfaccia utente/finestra di dialogo hanno la precedenza su quelle definite nel componente `columnbase`.
 
 * Definite Edit Configuration (Modifica configurazione).
 
    Consulta `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
-* Utilizzate le metodologie standard di AEM per definire (ulteriori) proprietà delle colonne.
+* Utilizzare metodologie AEM standard per definire (ulteriori) proprietà delle colonne.
 
    Tenere presente che per le proprietà definite nelle istanze di componenti e colonne, il valore nell’istanza di colonna ha la precedenza.
 
@@ -1066,28 +1071,29 @@ Per creare una colonna generica:
    * `definitions/aggregates` - aggregati
    * `definitions/filters` - filtri
    * `definitions/type`- il tipo di colonna (deve essere definito nella finestra di dialogo, utilizzando un selettore/una casella di controllo o un campo nascosto)
-   * `definitions/data/resolver` e `definitions/data/resolverConfig` (ma non `definitions/data/preprocessing` o `.../clientFilter`) - il risolutore e la configurazione
+   * `definitions/data/resolver` e  `definitions/data/resolverConfig` (ma non  `definitions/data/preprocessing` o  `.../clientFilter`) - il risolutore e la configurazione
    * `definitions/queryBuilder` - la configurazione del generatore di query
    * `defaults/aggregate` - l&#39;aggregato predefinito
-   Nel caso di una nuova istanza della colonna generica nel report **** utente, le proprietà definite con la finestra di dialogo vengono mantenute in:
+
+   Nel caso di una nuova istanza della colonna generica nel **Rapporto utente**, le proprietà definite con la finestra di dialogo sono persistenti in:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
-## Progettazione report {#report-design}
+## Struttura report {#report-design}
 
 La struttura definisce i tipi di colonna disponibili per la creazione di un rapporto. Definisce inoltre il sistema paragrafo a cui vengono aggiunte le colonne.
 
-Si consiglia vivamente di creare una singola progettazione per ciascun rapporto. Ciò garantisce la massima flessibilità. Vedere anche [Definizione del nuovo rapporto](#defining-your-new-report).
+Si consiglia vivamente di creare una singola progettazione per ciascun rapporto. Ciò garantisce la massima flessibilità. Vedere anche [Definizione del nuovo report](#defining-your-new-report).
 
 I componenti di reporting predefiniti sono contenuti in `/etc/designs/reports`.
 
 La posizione dei rapporti può dipendere dalla posizione in cui si trovano i componenti:
 
-* `/etc/designs/reports/<yourReport>` è adatto se il rapporto è situato sotto `/apps/cq/reporting`
+* `/etc/designs/reports/<yourReport>` è adatto se il rapporto è situato sotto  `/apps/cq/reporting`
 
-* `/etc/designs/<yourProject>/reports/<*yourReport*>` per report che utilizzano il `/apps/<yourProject>/reports` pattern
+* `/etc/designs/<yourProject>/reports/<*yourReport*>` per i report che utilizzano il  `/apps/<yourProject>/reports` pattern
 
-Le proprietà di progettazione richieste sono registrate `jcr:content/reportpage/report/columns` (ad esempio, `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`) in:
+Le proprietà di progettazione necessarie sono registrate in `jcr:content/reportpage/report/columns` (ad esempio, `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`):
 
 * `components`
 
@@ -1129,16 +1135,16 @@ Non è necessario specificare le strutture per singole colonne. Le colonne dispo
 >
 >Le colonne predefinite possono essere create automaticamente quando viene creato un rapporto. Questi sono specificati nel modello.
 
-## Modello rapporto {#report-template}
+## Modello report {#report-template}
 
-Ogni tipo di rapporto deve fornire un modello. Si tratta di modelli [](/help/sites-developing/templates.md) CQ standard e possono essere configurati come tali.
+Ogni tipo di rapporto deve fornire un modello. Sono modelli [CQ](/help/sites-developing/templates.md) standard e possono essere configurati come tali.
 
 Il modello deve:
 
-* imposta `sling:resourceType` su `cq/reporting/components/reportpage`
+* impostare `sling:resourceType` su `cq/reporting/components/reportpage`
 
 * indicare la progettazione da utilizzare
-* creare un nodo `report` secondario che faccia riferimento al componente contenitore ( `reportbase`) tramite la `sling:resourceType` proprietà
+* creare un nodo secondario `report` che faccia riferimento al componente contenitore ( `reportbase`) tramite la proprietà `sling:resourceType`
 
 Un frammento di modello di esempio (tratto dal modello di rapporto dei componenti) è:
 
@@ -1171,11 +1177,11 @@ Un frammento di modello di esempio, che mostra la definizione del percorso princ
 <!-- .. -->
 ```
 
-I modelli di reporting predefiniti sono disponibili in `/libs/cq/reporting/templates`.
+I modelli di reporting predefiniti sono contenuti in `/libs/cq/reporting/templates`.
 
-Tuttavia, si consiglia vivamente di non aggiornare tali nodi, ma di creare nodi componenti personalizzati sotto `/apps/cq/reporting/templates` o se più appropriato `/apps/<yourProject>/reports/templates`.
+Tuttavia, si consiglia vivamente di non aggiornare tali nodi, ma di creare nodi componenti personalizzati in `/apps/cq/reporting/templates` o se appropriato `/apps/<yourProject>/reports/templates`.
 
-Dove, ad esempio (vedere anche [Posizione dei componenti](#location-of-report-components)per report):
+Dove, ad esempio (vedere anche [Posizione dei componenti del report](#location-of-report-components)):
 
 ```xml
 N:apps
@@ -1194,9 +1200,9 @@ N:apps
                 N:<reportname> [sling:Folder]
 ```
 
-## Creazione Di Un Rapporto Personale - Un Esempio {#creating-your-own-report-an-example}
+## Creazione di un report personalizzato - Esempio {#creating-your-own-report-an-example}
 
-### Definizione del nuovo rapporto {#defining-your-new-report}
+### Definizione del nuovo report {#defining-your-new-report}
 
 Per definire un nuovo rapporto è necessario creare e configurare:
 
@@ -1207,7 +1213,7 @@ Per definire un nuovo rapporto è necessario creare e configurare:
 1. Livello principale per il modello di rapporto.
 1. Modello di rapporto.
 
-Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in cui sono elencate tutte le configurazioni OSGi all&#39;interno del repository; ovvero tutte le istanze del `sling:OsgiConfig` nodo.
+Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in cui sono elencate tutte le configurazioni OSGi all&#39;interno del repository; ovvero tutte le istanze del nodo `sling:OsgiConfig`.
 
 >[!NOTE]
 >
@@ -1215,7 +1221,7 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
 
 1. Crea il nodo principale per il nuovo report.
 
-   Ad esempio, sotto `/apps/cq/reporting/components/osgireport`.
+   Ad esempio, in `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:cq [nt:folder]
@@ -1224,7 +1230,7 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
                N:osgireport [sling:Folder]
    ```
 
-1. Definite la base di report. Ad esempio `osgireport[cq:Component]` sotto `/apps/cq/reporting/components/osgireport`.
+1. Definite la base di report. Ad esempio `osgireport[cq:Component]` in `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1273,10 +1279,10 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
    Definisce un componente base di report che:
 
    * cerca tutti i nodi di tipo `sling:OsgiConfig`
-   * visualizza sia `pie` che `lineseries` grafici
+   * visualizza i grafici `pie` e `lineseries`
    * fornisce una finestra di dialogo che consente all&#39;utente di configurare il rapporto
 
-1. Definire il primo componente di colonna (columnbase). Ad esempio `bundlecol[cq:Component]` sotto `/apps/cq/reporting/components/osgireport`.
+1. Definire il primo componente di colonna (columnbase). Ad esempio `bundlecol[cq:Component]` in `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1306,12 +1312,13 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
 
    Definisce un componente base di colonna che:
 
-   * cerca e restituisce il valore ricevuto dal server; in questo caso, la proprietà `jcr:path` per ogni `sling:OsgiConfig` nodo
-   * fornisce l&#39; `count` aggregazione
+   * cerca e restituisce il valore ricevuto dal server; in questo caso, la proprietà `jcr:path` per ogni nodo `sling:OsgiConfig`
+   * fornisce l&#39;aggregazione `count`
    * non raggruppabile
-   * ha il titolo `Bundle` (titolo della colonna all&#39;interno della tabella)
+   * ha il titolo `Bundle` (titolo colonna all&#39;interno della tabella)
    * si trova nel gruppo della barra laterale `OSGi Report`
    * aggiorna in corrispondenza di eventi specificati
+
    >[!NOTE]
    >
    >In questo esempio non esistono definizioni di `N:data` e `P:clientFilter`. Questo perché il valore ricevuto dal server viene restituito su base 1:1, che è il comportamento predefinito.
@@ -1326,7 +1333,7 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
    >
    >Se la funzione restituisce semplicemente il valore ricevuto.
 
-1. Definite la struttura del rapporto. Ad esempio `osgireport[cq:Page]` sotto `/etc/designs/reports`.
+1. Definite la struttura del rapporto. Ad esempio `osgireport[cq:Page]` in `/etc/designs/reports`.
 
    ```xml
    N:osgireport [cq:Page]
@@ -1342,7 +1349,7 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
 
 1. Crea il nodo principale per il nuovo modello di rapporto.
 
-   Ad esempio, sotto `/apps/cq/reporting/templates/osgireport`.
+   Ad esempio, in `/apps/cq/reporting/templates/osgireport`.
 
    ```xml
    N:cq [nt:folder]
@@ -1351,7 +1358,7 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
                N:osgireport [cq:Template]
    ```
 
-1. Definite il modello di rapporto. Ad esempio `osgireport[cq:Template]` sotto `/apps/cq/reporting/templates`.
+1. Definite il modello di rapporto. Ad esempio `osgireport[cq:Template]` in `/apps/cq/reporting/templates`.
 
    ```xml
    N:osgireport [cq:Template]
@@ -1371,24 +1378,24 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
 
    Definisce un modello che:
 
-   * definisce i rapporti `allowedPaths` risultanti, nel caso precedente in qualsiasi punto della sezione `/etc/reports`
+   * definisce la `allowedPaths` per i report risultanti, nel caso precedente in un punto qualsiasi all&#39;interno di `/etc/reports`
    * fornisce titoli e descrizioni per il modello
    * fornisce un&#39;immagine in miniatura da utilizzare nell&#39;elenco dei modelli (la definizione completa di questo nodo non è elencata sopra - è più semplice copiare un&#39;istanza di thumbnail.png da un report esistente).
 
-### Creazione di un&#39;istanza del nuovo rapporto {#creating-an-instance-of-your-new-report}
+### Creazione di un&#39;istanza del nuovo report {#creating-an-instance-of-your-new-report}
 
 È ora possibile creare un&#39;istanza del nuovo rapporto:
 
-1. Open the **Tools** console.
+1. Aprire la console **Strumenti**.
 
-1. Selezionate **Rapporti** nel riquadro a sinistra.
-1. Poi **Nuovo...** dalla barra degli strumenti. Definite un **titolo** e un **nome**, selezionate il nuovo tipo di rapporto (il modello **di rapporto** OSGi) dall’elenco dei modelli, quindi fate clic su **Crea**.
+1. Selezionare **Reports** nel riquadro a sinistra.
+1. Quindi **Nuovo...** dalla barra degli strumenti. Definite un **Titolo** e **Nome**, selezionate il nuovo tipo di rapporto (il **modello di rapporto OSGi**) dall&#39;elenco dei modelli, quindi fate clic su **Crea**.
 1. La nuova istanza di report verrà visualizzata nell&#39;elenco. Fate doppio clic su questo per aprire.
-1. Trascinate un componente (ad esempio, **Bundle** nel gruppo di rapporti **** OSGi) dalla barra laterale per creare la prima colonna e [avviare la definizione](/help/sites-administering/reporting.md#the-basics-of-report-customization)del rapporto.
+1. Trascinate un componente (ad esempio, **Bundle** nel gruppo **OSGi Report**) dalla barra laterale per creare la prima colonna e [avviare la definizione del rapporto](/help/sites-administering/reporting.md#the-basics-of-report-customization).
 
    >[!NOTE]
    >
-   >Poiché in questo esempio non sono presenti colonne raggruppabili, i grafici non saranno disponibili. Per visualizzare i grafici, impostate `groupable` su `true`:
+   >Poiché in questo esempio non sono presenti colonne raggruppabili, i grafici non saranno disponibili. Per visualizzare i grafici, impostare `groupable` su `true`:
    >
    >
    ```
@@ -1402,25 +1409,25 @@ Per illustrare questi passaggi, l&#39;esempio seguente definisce un rapporto in 
 
 Questa sezione descrive le opzioni di configurazione avanzate per i servizi OSGi che implementano il framework dei report.
 
-Per visualizzarli, usate il menu Configurazione della console Web (disponibile ad esempio in `http://localhost:4502/system/console/configMgr`). When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+Per visualizzarli, utilizzate il menu Configurazione della console Web (disponibile ad esempio in `http://localhost:4502/system/console/configMgr`). Quando lavorate con AEM esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi; per ulteriori informazioni e procedure consigliate, vedere [Configurazione di OSGi](/help/sites-deploying/configuring-osgi.md).
 
-### Servizio di base (Configurazione del reporting di CQ Day) {#basic-service-day-cq-reporting-configuration}
+### Servizio di base (configurazione di generazione rapporti di CQ Day) {#basic-service-day-cq-reporting-configuration}
 
-* **Fuso orario** definisce i dati storici relativi al fuso orario per cui vengono creati. In questo modo, il grafico storico visualizzerà gli stessi dati per ogni utente in tutto il mondo.
-* **Le impostazioni internazionali** definiscono le impostazioni internazionali da utilizzare insieme al **Fuso orario** per i dati storici. Le impostazioni internazionali vengono utilizzate per determinare alcune impostazioni di calendario specifiche per le impostazioni internazionali, ad esempio se il primo giorno di una settimana è domenica o lunedì.
+* **** Timezonedefinisce i dati storici relativi al fuso orario per cui vengono creati. In questo modo, il grafico storico visualizzerà gli stessi dati per ogni utente in tutto il mondo.
+* **** Localedefinisce le impostazioni internazionali da utilizzare insieme a  **** Timezoneper i dati storici. Le impostazioni internazionali vengono utilizzate per determinare alcune impostazioni di calendario specifiche per le impostazioni internazionali, ad esempio se il primo giorno di una settimana è domenica o lunedì.
 
-* **Il percorso** dell&#39;istantanea definisce il percorso principale in cui sono memorizzate le istantanee dei grafici storici.
-* **Il percorso dei rapporti** definisce il percorso in cui si trovano i rapporti. Questo viene utilizzato dal servizio di snapshot per determinare i report per i quali eseguire effettivamente delle istantanee.
-* **Le istantanee** giornaliere definiscono l&#39;ora di ogni giorno in cui vengono scattate le istantanee giornaliere. L&#39;ora specificata è nel fuso orario locale del server.
-* **Le istantanee** orarie definiscono il minuto di ogni ora in cui vengono scattate le istantanee orarie.
+* **Il** percorso dell&#39;istantanea definisce il percorso principale in cui sono memorizzate le istantanee dei grafici storici.
+* **Il percorso dei** rapporti definisce il percorso in cui si trovano i rapporti. Questo viene utilizzato dal servizio di snapshot per determinare i report per i quali eseguire effettivamente delle istantanee.
+* **Gli** snapshot giornalieri definiscono l&#39;ora di ogni giorno in cui vengono scattate le istantanee giornaliere. L&#39;ora specificata è nel fuso orario locale del server.
+* **Gli** snapshot orari definiscono il minuto di ogni ora in cui vengono scattate le istantanee orari.
 * **Righe (max)** definisce il numero massimo di righe memorizzate per ogni snapshot. Tale valore dovrebbe essere scelto in modo ragionevole; se è troppo alto, questo influirà sulle dimensioni del repository, se troppo basso, i dati potrebbero non essere precisi a causa del modo in cui vengono gestiti i dati storici.
-* **I dati** falsi, se attivati, possono essere creati falsi dati storici utilizzando il `fakedata` selettore; se disabilitato, l&#39;utilizzo del `fakedata` selettore genererà un&#39;eccezione.
+* **I dati** falsi, se attivati, possono essere creati falsi dati storici utilizzando il  `fakedata` selettore; se disabilitato, l&#39;utilizzo del  `fakedata` selettore genererà un&#39;eccezione.
 
    Poiché i dati sono falsi, devono essere utilizzati *solo* a scopo di test e debug.
 
-   L&#39;utilizzo del `fakedata` selettore finirà implicitamente il rapporto, in modo che tutti i dati esistenti andranno persi; i dati possono essere ripristinati manualmente, ma questo può richiedere molto tempo.
+   Se si utilizza il selettore `fakedata`, il rapporto viene completato in modo implicito, in modo che tutti i dati esistenti vadano persi; i dati possono essere ripristinati manualmente, ma questo può richiedere molto tempo.
 
-* **Utente** snapshot definisce un utente facoltativo che può essere utilizzato per scattare istantanee.
+* **L’** utente delle istantanee definisce un utente facoltativo che può essere utilizzato per scattare delle istantanee.
 
    In sostanza, vengono effettuate istantanee per l’utente che ha completato il rapporto. Potrebbero verificarsi situazioni (ad esempio in un sistema di pubblicazione, in cui l’utente non esiste in quanto il suo account non è stato replicato) in cui si desidera specificare un utente fallback da utilizzare.
 
@@ -1428,18 +1435,19 @@ Per visualizzarli, usate il menu Configurazione della console Web (disponibile a
 
 * **Applica agli utenti** snapshot, se abilitata, tutte le istantanee verranno scattate con l&#39;utente specificato in Utente ** snapshot. Questo potrebbe avere gravi conseguenze sulla sicurezza se non gestito correttamente.
 
-### Impostazioni cache (cache di reporting di CQ Day) {#cache-settings-day-cq-reporting-cache}
+### Impostazioni cache (cache di reporting di CQ giorno) {#cache-settings-day-cq-reporting-cache}
 
 * **Abilita** consente di abilitare o disabilitare la memorizzazione nella cache dei dati del rapporto. Se si abilita la cache dei report, i dati dei report rimarranno in memoria durante diverse richieste. Ciò può migliorare le prestazioni, ma comporta un maggiore consumo di memoria e, in circostanze estreme, può causare una perdita di memoria.
 * **TTL** definisce il tempo (in secondi) per il quale i dati del rapporto vengono memorizzati nella cache. Un numero più elevato aumenterà le prestazioni, ma potrebbe anche restituire dati imprecisi se i dati cambiano nel periodo di tempo.
-* **Il numero massimo di voci** definisce il numero massimo di rapporti da memorizzare nella cache alla volta.
+* **Il numero massimo di** voci definisce il numero massimo di rapporti da memorizzare nella cache alla volta.
 
 >[!NOTE]
 >
->I dati del rapporto possono essere diversi per ciascun utente e lingua. Pertanto, i dati del rapporto sono memorizzati nella cache per rapporto, utente e lingua. Ciò significa che un valore **Max immette** i dati nella cache `2` di uno dei due elementi:
+>I dati del rapporto possono essere diversi per ciascun utente e lingua. Pertanto, i dati del rapporto sono memorizzati nella cache per rapporto, utente e lingua. Ciò significa che un valore **Max entry** di `2` memorizza nella cache i dati per:
 >
 >* un rapporto per due utenti con impostazioni di lingua diverse
 >* un utente e due rapporti
+
 >
 
 
