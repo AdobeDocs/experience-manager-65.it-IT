@@ -18,34 +18,34 @@ ht-degree: 0%
 ---
 
 
-# Provisioning degli utenti in tempo reale {#just-in-time-user-provisioning}
+# Provisioning dell&#39;utente in tempo reale {#just-in-time-user-provisioning}
 
-I moduli AEM supportano il provisioning temporaneo di utenti che non esistono ancora in Gestione utente. Con il provisioning &quot;in-time&quot;, gli utenti vengono automaticamente aggiunti a Gestione utente dopo che le loro credenziali sono state autenticate correttamente. Inoltre, i ruoli e i gruppi rilevanti vengono assegnati in modo dinamico al nuovo utente.
+AEM moduli supporta il provisioning temporaneo di utenti che non esistono ancora in Gestione utente. Con il provisioning &quot;in-time&quot;, gli utenti vengono automaticamente aggiunti a Gestione utente dopo che le loro credenziali sono state autenticate correttamente. Inoltre, i ruoli e i gruppi rilevanti vengono assegnati in modo dinamico al nuovo utente.
 
-## Necessità di un provisioning utente &quot;just-in-time&quot; {#need-for-just-in-time-user-provisioning}
+## Necessità di un provisioning semplice da parte dell&#39;utente {#need-for-just-in-time-user-provisioning}
 
 Questo è il funzionamento dell&#39;autenticazione tradizionale:
 
-1. Quando un utente tenta di accedere ai moduli AEM, Gestione utente passa le credenziali dell&#39;utente in sequenza a tutti i provider di autenticazione disponibili. (Le credenziali di accesso includono una combinazione nome utente/password, ticket Kerberos, firma PKCS7 e così via).
+1. Quando un utente tenta di accedere ai AEM moduli, Gestione utente passa le credenziali dell&#39;utente in sequenza a tutti i provider di autenticazione disponibili. (Le credenziali di accesso includono una combinazione nome utente/password, ticket Kerberos, firma PKCS7 e così via).
 1. Il provider di autenticazione convalida le credenziali.
 1. Il provider di autenticazione verifica quindi se l&#39;utente esiste nel database Gestione utente. Sono possibili i seguenti risultati:
 
-   **Esiste:** Se l&#39;utente è corrente e sbloccato, Gestione utente restituisce il successo dell&#39;autenticazione. Tuttavia, se l&#39;utente non è corrente o è bloccato, Gestione utente restituisce un errore di autenticazione.
+   **Esiste:** se l&#39;utente è corrente e sbloccato, Gestione utente restituisce il successo dell&#39;autenticazione. Tuttavia, se l&#39;utente non è corrente o è bloccato, Gestione utente restituisce un errore di autenticazione.
 
-   **Non esiste:** Gestione utente restituisce un errore di autenticazione.
+   **Non esiste:** User Management restituisce un errore di autenticazione.
 
-   **Non valido:** Gestione utente restituisce un errore di autenticazione.
+   **Non valido:** User Management restituisce un errore di autenticazione.
 
 1. Il risultato restituito dal provider di autenticazione viene valutato. Se il provider di autenticazione ha restituito un esito positivo, l&#39;utente può effettuare l&#39;accesso. In caso contrario, Gestione utente verifica con il provider di autenticazione successivo (passaggi da 2 a 3).
 1. L&#39;errore di autenticazione viene restituito se nessun provider di autenticazione disponibile convalida le credenziali utente.
 
 Quando viene implementato il provisioning &quot;in-time&quot;, un nuovo utente viene creato in modo dinamico in Gestione utente se uno dei provider di autenticazione convalida le credenziali dell&#39;utente. (Dopo il passaggio 3 della procedura di autenticazione tradizionale, sopra).
 
-## Implementare il provisioning degli utenti &quot;just-in-time&quot; {#implement-just-in-time-user-provisioning}
+## Implementare il provisioning dell&#39;utente &quot;just-in-time&quot; {#implement-just-in-time-user-provisioning}
 
-### API per il provisioning &quot;just-in-time&quot; {#apis-for-just-in-time-provisioning}
+### API per il provisioning in tempo reale {#apis-for-just-in-time-provisioning}
 
-I moduli AEM forniscono le seguenti API per il provisioning &quot;just-in-time&quot;:
+AEM moduli forniscono le seguenti API per il provisioning just-in-time:
 
 ```java
 package com.adobe.idp.um.spi.authentication  ;
@@ -82,12 +82,12 @@ public Boolean assign(User user);
 }
 ```
 
-### Considerazioni durante la creazione di un dominio abilitato solo nel tempo {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Considerazioni durante la creazione di un dominio abilitato nel tempo {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Durante la creazione di un dominio ibrido `IdentityCreator` per un dominio ibrido, accertatevi che per l&#39;utente locale sia specificata una password fittizia. Non lasciate vuoto questo campo password.
-* Raccomandazione: Utilizzare `DomainSpecificAuthentication` per convalidare le credenziali utente rispetto a un dominio specifico.
+* Durante la creazione di un `IdentityCreator` personalizzato per un dominio ibrido, accertatevi che per l&#39;utente locale sia specificata una password fittizia. Non lasciate vuoto questo campo password.
+* Raccomandazione: Utilizzate `DomainSpecificAuthentication` per convalidare le credenziali utente rispetto a un dominio specifico.
 
-### Creazione di un dominio abilitato solo nel tempo {#create-a-just-in-time-enabled-domain}
+### Crea un dominio abilitato solo nel tempo {#create-a-just-in-time-enabled-domain}
 
 1. Scrivete un DSC che implementa le API nella sezione &quot;API per il provisioning just-in-time&quot;.
 1. Implementare il DSC nel server dei moduli.
@@ -101,15 +101,15 @@ public Boolean assign(User user);
 
 ## Dietro le quinte {#behind-the-scenes}
 
-Supponete che un utente stia tentando di accedere ai moduli AEM e che un provider di autenticazione accetti le credenziali utente. Se l&#39;utente non esiste ancora nel database Gestione utente, il controllo dell&#39;identità dell&#39;utente non riesce. I moduli AEM ora eseguono le azioni seguenti:
+Si supponga che un utente stia tentando di accedere AEM moduli e che un provider di autenticazione accetti le credenziali utente. Se l&#39;utente non esiste ancora nel database Gestione utente, il controllo dell&#39;identità dell&#39;utente non riesce. AEM moduli ora esegue le azioni seguenti:
 
-1. Creare un `UserProvisioningBO` oggetto con i dati di autenticazione e inserirlo in una mappa delle credenziali.
-1. In base alle informazioni di dominio restituite da `UserProvisioningBO`, recuperate e richiamate il dominio registrato `IdentityCreator` e `AssignmentProvider` per il dominio.
-1. Richiama `IdentityCreator`. Se restituisce un esito positivo, `AuthResponse`estrarre `UserInfo` dalla mappa delle credenziali. Trasferirlo all&#39;assegnazione `AssignmentProvider` per gruppo/ruolo e a qualsiasi altra post-elaborazione dopo la creazione dell&#39;utente.
+1. Creare un oggetto `UserProvisioningBO` con i dati di autenticazione e inserirlo in una mappa delle credenziali.
+1. In base alle informazioni sul dominio restituite da `UserProvisioningBO`, recupera e richiama le `IdentityCreator` e `AssignmentProvider` registrate per il dominio.
+1. Richiama `IdentityCreator`. Se restituisce un `AuthResponse` riuscito, estrarre `UserInfo` dalla mappa delle credenziali. Trasferitelo a `AssignmentProvider` per l&#39;assegnazione di gruppo/ruolo e qualsiasi altro post-elaborazione dopo la creazione dell&#39;utente.
 1. Se l’utente è stato creato correttamente, restituite il tentativo di accesso da parte dell’utente come riuscito.
 1. Per i domini ibridi, estraete le informazioni utente dai dati di autenticazione forniti al provider di autenticazione. Se queste informazioni vengono recuperate correttamente, create l’utente al volo.
 
 >[!NOTE]
 >
->La funzione di provisioning &quot;just-in-time&quot; viene fornita con un&#39;implementazione predefinita di `IdentityCreator` cui è possibile creare gli utenti in modo dinamico. Gli utenti vengono creati con le informazioni associate alle directory del dominio.
+>La funzione di provisioning just-in-time viene fornita con un&#39;implementazione predefinita di `IdentityCreator` che potete utilizzare per creare gli utenti in modo dinamico. Gli utenti vengono creati con le informazioni associate alle directory del dominio.
 
