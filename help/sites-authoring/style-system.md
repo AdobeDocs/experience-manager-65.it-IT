@@ -12,24 +12,24 @@ translation-type: tm+mt
 source-git-commit: 0985ba24f7430381fccc40faf3a316d3abd85a30
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 69%
+ht-degree: 96%
 
 ---
 
 
 # Sistema di stili{#style-system}
 
-Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Questi stili possono essere variazioni visive alternative di un componente, rendendo il componente più flessibile.
+Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, allo scopo di renderlo più flessibile.
 
 In questo modo si elimina la necessità di creare un componente personalizzato per ogni stile o di personalizzare la finestra di dialogo del componente per attivare questa funzionalità. Il risultato sono componenti che possono essere riutilizzati più rapidamente e adattati in modo semplice e veloce alle esigenze degli autori di contenuti, senza ricorrere allo sviluppo back-end in AEM.
 
-## Caso d’uso   {#use-case}
+## Caso d’uso  {#use-case}
 
 Gli autori di modelli non solo hanno bisogno della possibilità di configurare il funzionamento dei componenti per gli autori di contenuti, ma devono anche poter configurare una serie di varianti visive alternative di un componente.
 
 Allo stesso modo, gli autori di contenuti non solo devono poter strutturare e organizzare i contenuti, ma anche selezionare come presentarlo visivamente.
 
-Il sistema Style offre una soluzione unificata ai requisiti dell&#39;autore del modello e dell&#39;autore del contenuto:
+Il sistema di stili offre una soluzione unificata alle esigenze degli autori di modelli e di contenuti:
 
 * Gli autori di modelli possono definire le classi di stile nel criterio dei contenuti dei componenti.
 * Gli autori di contenuti possono quindi selezionare tali classi da un menu a discesa quando modificano il componente su una pagina, per applicarvi gli stili corrispondenti.
@@ -38,7 +38,7 @@ La classe di stile viene quindi inserita nell’elemento wrapper decorativo del 
 
 ## Panoramica {#overview}
 
-L&#39;utilizzo di Style System in genere ha il seguente modulo.
+La procedura per l’uso del sistema di stili è simile alla seguente.
 
 1. Il web designer crea diverse varianti grafiche di un componente.
 
@@ -58,28 +58,28 @@ Solo gli ultimi tre passaggi vengono effettivamente effettuati in AEM. Tutte le 
 
 L’implementazione degli stili richiede infatti solo la distribuzione in AEM e la selezione all’interno dei componenti dei modelli desiderati.
 
-Nel diagramma seguente è illustrata l&#39;architettura di Style System.
+Il diagramma seguente illustra l’architettura del sistema di stili.
 
-![sistema aem-style](assets/aem-style-system.png)
+![aem-style-system](assets/aem-style-system.png)
 
 ## Utilizzo {#use}
 
-A dimostrazione di questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)del componente [](https://www.adobe.com/go/aem_cmp_title_v2) titolo del componente principale.
+Per illustrare questa funzione, come esempio verrà utilizzata l’implementazione [WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) del [componente titolo](https://www.adobe.com/go/aem_cmp_title_v2_it) del componente core.
 
-The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+Le sezioni seguenti, [Autore di contenuti](#as-a-content-author) e [Autore di modelli](#as-a-template-author) descrivono come verificare la funzionalità del sistema di stili utilizzando il sistema di stili di WKND.
 
-Se si desidera utilizzare il Sistema di stile per i propri componenti, effettuare le seguenti operazioni:
+Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le seguenti operazioni:
 
 1. Installa il CSS come librerie client come illustrato nella sezione [Panoramica](#overview).
 1. Configura le classi CSS da rendere disponibili agli autori di contenuti come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
-### Autore di contenuti  {#as-a-content-author}
+### Autore di contenuti   {#as-a-content-author}
 
-1. Dopo aver installato il progetto WKND, andate alla home page della lingua inglese di WKND in `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e modificate la pagina.
-1. Selezionate un componente **Titolo** più in basso nella pagina
+1. Dopo aver installato il progetto WKND, visita la pagina principale in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e modifica la pagina.
+1. Seleziona un componente **Titolo** più in basso nella pagina.
 
-   ![Sistema di stile per l&#39;autore](assets/style-system-author.png)
+   ![Sistema di stili per l’autore](assets/style-system-author.png)
 
 1. Tocca o fai clic sul pulsante **Stili** nella barra degli strumenti del componente **Elenco** per aprire il menu degli stili e modificare l’aspetto del componente.
 
@@ -87,52 +87,53 @@ Se si desidera utilizzare il Sistema di stile per i propri componenti, effettuar
 
    >[!NOTE]
    >
-   >In questo esempio, gli stili **Colori** (**Nero**, **Bianco** e **Grigio**) si escludono a vicenda, mentre le opzioni **Stile**************(Sottolineato, Allinea a destra, Allinea a destra, MiniSping) possono essere combinate. Tutto questo può essere [configurato nel modello se si è l’autore del modello](#as-a-template-author).
+   >In questo esempio, gli stili **Colori** (**Nero**, **Bianco** e **Grigio**) si escludono a vicenda, mentre le opzioni di **Stile** (**Sottolineato**, **Allinea a destra** e **Spaziatura minima**) possono essere combinate. Tutto questo può essere [configurato nel modello se si è l’autore del modello](#as-a-template-author).
 
-### Autore di modelli  {#as-a-template-author}
+### Autore di modelli   {#as-a-template-author}
 
-1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
+1. Durante la modifica della pagina mastro in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifica il modello di pagina da **Informazioni pagina > Modifica modello**.
 
    ![Modifica modello](assets/style-system-edit-template.png)
 
-1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
+1. Modifica il criterio del componente **Titolo** toccando o facendo clic sul pulsante **Criterio** del componente.
 
-   ![Modifica criterio](assets/style-system-edit-policy.png)
+   ![Modifica del criterio](assets/style-system-edit-policy.png)
 
 1. Nella scheda Stili delle proprietà puoi vedere come sono stati configurati gli stili.
 
-   ![Modifica proprietà](assets/style-system-properties.png)
+   ![Modifica delle proprietà](assets/style-system-properties.png)
 
    * **Nome gruppo:** gli stili possono essere raggruppati all’interno del menu stile che l’autore del contenuto visualizza durante la configurazione dello stile del componente.
    * **Gli stili possono essere combinati:** consente di selezionare diversi stili all’interno del gruppo in una sola volta.
    * **Nome stile:** descrizione dello stile che verrà visualizzata dall’autore del contenuto durante la configurazione dello stile del componente.
    * **Classi CSS:** nome effettivo della classe CSS associata allo stile.
+
    Utilizza le maniglie di trascinamento per definire l’ordine dei gruppi e degli stili all’interno dei gruppi. Utilizza le icone Aggiungi o Elimina per aggiungere o rimuovere gruppi o stili all’interno dei gruppi.
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>Per poter funzionare, le classi CSS (così come qualsiasi codice JavaScript necessario) configurate come proprietà di stile del criterio di un componente devono essere distribuite come [librerie client](/help/sites-developing/clientlibs.md).
 
 ## Configurazione {#setup}
 
-I componenti core versione 2 e successive sono completamente attivati per sfruttare lo Style System e non richiedono alcuna configurazione aggiuntiva.
+I componenti core versione 2 e successive sono già configurati in modo da sfruttare il sistema di stili e non richiedono alcuna configurazione aggiuntiva.
 
-I passaggi seguenti sono necessari solo per abilitare il Sistema di stile per i propri componenti personalizzati o per [abilitare la scheda Stili facoltativi nella finestra di dialogo Modifica.](#enable-styles-tab-edit)
+I passaggi seguenti sono necessari solo per abilitare il sistema di stile per i componenti personalizzati o per [abilitare la scheda Stili opzionale nella finestra di dialogo Modifica](#enable-styles-tab-edit).
 
-### Abilita scheda Stile nella finestra di dialogo Progettazione {#enable-styles-tab-design}
+### Abilitare la scheda Stili nella finestra di dialogo di progettazione {#enable-styles-tab-design}
 
-Affinché un componente funzioni con il sistema di stile di AEM e visualizzi la scheda di stile nella relativa finestra di dialogo di progettazione, lo sviluppatore deve includere nel componente la scheda di stile con le seguenti impostazioni:
+Affinché un componente possa funzionare con il sistema di stili di AEM e visualizzare la scheda Stili nella finestra di dialogo di progettazione, lo sviluppatore del componente deve includere tale scheda con le seguenti impostazioni sul componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 Con il componente configurato, gli stili configurati dall’autore della pagina vengono automaticamente inseriti da AEM sull’elemento decorativo in cui AEM racchiude in automatico ciascun componente modificabile. Il componente in sé non deve fare altro affinché questo accada.
 
-### Abilita scheda Stili nella finestra di dialogo di modifica {#enable-styles-tab-edit}
+### Abilitare la scheda Stili nella finestra di dialogo Modifica {#enable-styles-tab-edit}
 
-Dalla versione 6.5.3.0 di AEM è ora disponibile una scheda Stili opzionale nella finestra di dialogo Modifica. A differenza della scheda Finestra di dialogo Progettazione, la scheda nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stile, ma è un&#39;interfaccia alternativa opzionale per l&#39;impostazione degli stili da parte dell&#39;autore del contenuto.
+AEM versione 6.5.3.0 è ora disponibile una scheda Stili nella finestra di dialogo Modifica. A differenza della scheda della finestra di progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
 
-La scheda della finestra di dialogo di modifica può essere inclusa in modo simile alla scheda della finestra di dialogo di progettazione:
+La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo a quella della finestra di dialogo di progettazione:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
@@ -156,6 +157,7 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 >1. HTL ha la precedenza su tutto: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Poi, tra più stili attivi, viene considerato il primo nell’elenco degli stili configurati nel criterio del componente.
 >1. Infine, il `cq:tagName`/ `cq:htmlTag` del componente sarà considerato un valore di fallback.
+
 >
 
 
