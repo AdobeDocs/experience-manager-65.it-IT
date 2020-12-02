@@ -32,7 +32,7 @@ Ciò potrebbe servire come valutazione dello sforzo di sviluppo che comporta l&#
 
 ## Configurazione {#how-to-set-up}
 
-Il rilevamento dei pattern viene rilasciato separatamente come un [unico pacchetto](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione di AEM di origine da 6.1 a 6.5 per l&#39;AEM di destinazione 6.5. Può essere installato utilizzando [Package Manager](/help/sites-administering/package-manager.md).
+Il rilevamento dei pattern viene rilasciato separatamente come [un pacchetto](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione di AEM sorgente da 6.1 a 6.5 per l&#39;AEM di destinazione 6.5. Può essere installato utilizzando la [Gestione pacchetti](/help/sites-administering/package-manager.md).
 
 ## Guida all’uso {#how-to-use}
 
@@ -45,14 +45,14 @@ Il rilevamento dei pattern viene rilasciato separatamente come un [unico pacchet
 
 >
 >
-allo stesso tempo, si consiglia di eseguirlo **in ambienti** di pre-produzione il più vicino possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
+allo stesso tempo si consiglia di eseguire **in ambienti di pre-produzione** che siano il più vicino possibile a quelli di produzione nelle aree delle applicazioni utente, dei contenuti e delle configurazioni.
 
 È possibile utilizzare diversi metodi per controllare l&#39;output di Rilevamento pattern:
 
 * **Tramite la console di Felix Inventory:**
 
 1. Andate alla console Web AEM sfogliando *https://serveraddress:serverport/system/console/configMgr*
-1. Seleziona **stato - Rilevamento** pattern come illustrato nell&#39;immagine seguente:
+1. Selezionare **Stato - Rilevamento pattern** come illustrato nell&#39;immagine seguente:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -70,7 +70,7 @@ L’output è attualmente disponibile in 2 URL:
 1. Interfaccia testo semplice
 1. Interfaccia JSON
 
-## Gestione dell’interfaccia di testo semplice {#handling-the-plain-text-interface}
+## Gestione dell&#39;interfaccia di testo normale {#handling-the-plain-text-interface}
 
 Le informazioni nell&#39;output sono formattate come una serie di voci dell&#39;evento. Esistono due canali: uno per pubblicare le violazioni e l’altro per pubblicare i progressi correnti.
 
@@ -86,7 +86,7 @@ L&#39;output sarà simile al seguente:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-L&#39;avanzamento può essere filtrato utilizzando il `grep` comando:
+L&#39;avanzamento può essere filtrato utilizzando il comando `grep`:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -100,9 +100,9 @@ che genera il seguente output:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Gestione dell’interfaccia JSON {#handling-the-json-interface}
+## Gestione dell&#39;interfaccia JSON {#handling-the-json-interface}
 
-Allo stesso modo, JSON può essere elaborato utilizzando lo strumento [](https://stedolan.github.io/jq/) jq non appena viene pubblicato.
+Allo stesso modo, JSON può essere elaborato utilizzando [jq tool](https://stedolan.github.io/jq/) non appena viene pubblicato.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -212,7 +212,7 @@ Con l&#39;uscita:
 
 >[!NOTE]
 >
->L&#39;approccio consigliato consiste nel salvare l&#39;intero output dall&#39;archivio e quindi elaborarlo tramite `jq` o `grep` filtrare il tipo di informazioni.
+>L&#39;approccio consigliato consiste nel salvare l&#39;intero output dall&#39;archivio e quindi elaborarlo tramite `jq` o `grep` per filtrare il tipo di informazioni.
 
 ## Ambito di rilevamento {#scope}
 
