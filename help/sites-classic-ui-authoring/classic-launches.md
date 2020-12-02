@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 74%
 
 ---
 
@@ -23,12 +26,12 @@ Il lancio creato consente di preparare modifiche pronte alla pubblicazione futur
 
 >[!NOTE]
 >
->The theory behind launches is described in detail under [Launches](/help/sites-authoring/launches.md) in the standard authoring documentation.
+>La teoria che sta dietro agli avvii è descritta in [Lanci](/help/sites-authoring/launches.md) nella documentazione di authoring standard.
 >
->Information specific to using launches in the classic UI can be found in the following documentation together with [Creating Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md), and [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Informazioni specifiche sull&#39;utilizzo degli avvii nell&#39;interfaccia classica sono disponibili nella seguente documentazione insieme a [Creazione di lanci](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modifica di lanci](/help/sites-classic-ui-authoring/classic-launches-editing.md) e [Promozione di lanci](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Nell’interfaccia classica non è possibile utilizzare più rami sorgente per un lancio.
 
-The Launches console can be directly accessed with [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+È possibile accedere direttamente alla console Lanci con [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
