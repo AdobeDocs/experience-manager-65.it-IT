@@ -12,6 +12,9 @@ discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1069'
+ht-degree: 79%
 
 ---
 
@@ -28,15 +31,15 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >
 >Alcuni termini correlati alla pubblicazione possono creare confusione:
 >
->* **Pubblicare / Annullare la pubblicazione**
-   >  Termini principali per le azioni che rendono o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>* **Pubblicare/Annullare la pubblicazione**
+   >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
    >
    >
-* **Attiva/Disattiva**
+* **Attivare/Disattivare**
    >  Sinonimi di pubblicare/annullare la pubblicazione.
    >
    >
-* **Replicare / Replica**
+* **Replicare/Replica**
    >  Si tratta dei termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all&#39;altro, ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
 
@@ -48,6 +51,7 @@ Puoi pubblicare o annullare la pubblicazione di una pagina immediatamente o in u
 >
 >* Viene avviato un flusso di lavoro per comunicare al soggetto adeguato la tua richiesta di pubblicazione.
 >* Viene visualizzato brevemente un messaggio di notifica al riguardo.
+
 >
 
 
@@ -70,7 +74,7 @@ Per attivare una pagina è possibile procedere in due modi:
 1. Nella console Siti web seleziona la pagina da attivare.
 1. Seleziona **Attiva** nel menu principale o nel menu a discesa dell’elemento pagina selezionato.
 
-   Per attivare il contenuto della pagina e di tutte le relative sottopagine, utilizza la console [**Strumenti **](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Per attivare il contenuto della pagina e di tutte le relative sottopagine, utilizza la console [**Strumenti**](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
@@ -117,7 +121,7 @@ Per disattivare la pagina:
 Per pianificare l’attivazione in un momento successivo:
 
 1. Nella console Siti Web selezionate **Attiva più tardi** nel menu **Attiva**.
-1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
+1. Nella finestra di dialogo visualizzata specificate la data e l&#39;ora dell&#39;attivazione e fate clic su **OK**. Viene creata una versione della pagina che viene attivata al momento specificato.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -125,13 +129,13 @@ Verrà avviato un flusso di lavoro per attivare tale versione della pagina alla 
 
 Per annullare questa attività di attivazione/disattivazione, accedi alla [console Flusso di lavoro](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) e interrompi il flusso di lavoro corrispondente.
 
-### Disattiva più tardi {#deactivate-later}
+### Disattiva più tardi  {#deactivate-later}
 
 Per pianificare la disattivazione in un momento successivo:
 
-1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
+1. Nella console Siti Web, andare al menu **Disattiva** e selezionare **Disattiva più tardi**.
 
-1. In the dialog that opens you provide the date and time for deactivation and click **OK**.
+1. Nella finestra di dialogo visualizzata specificate la data e l&#39;ora della disattivazione e fate clic su **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
@@ -139,7 +143,7 @@ Per pianificare la disattivazione in un momento successivo:
 
 Per annullare questa attività di disattivazione, accedi alla [console Flusso di lavoro](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) e interrompi il flusso di lavoro corrispondente.
 
-## Attivazione/Disattivazione pianificata (ora di attivazione/disattivazione) {#scheduled-activation-deactivation-on-off-time}
+## Attivazione/Disattivazione pianificata (ora di attivazione/disattivazione)  {#scheduled-activation-deactivation-on-off-time}
 
 Puoi pianificare il momento della pubblicazione o dell’annullamento della pubblicazione di una pagina tramite le opzioni **Ora di attivazione** e **Ora di disattivazione** nelle [Proprietà pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -147,21 +151,21 @@ Puoi pianificare il momento della pubblicazione o dell’annullamento della pubb
 
 Lo stato è visibile dalla [console Siti web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). I colori indicano lo stato di pubblicazione.
 
-## Attivazione di una sezione (struttura ad albero) completa del sito web {#activating-a-complete-section-tree-of-your-website}
+## Attivazione di una sezione (struttura ad albero) completa del sito web  {#activating-a-complete-section-tree-of-your-website}
 
 La scheda **Siti web** consente di attivare le singole pagine. Dopo avere inserito o aggiornato un numero considerevole di pagine di contenuto, tutte residenti sotto la stessa pagina principale, può essere più semplice attivare l’intero albero con una singola azione. Puoi anche eseguire una prova per simulare l’attivazione e identificare le pagine da attivare.
 
-1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `https://localhost:4502/etc/replication.html`).
+1. Aprite la console **Strumenti** selezionandola dalla pagina **Benvenuti**, quindi fate doppio clic su **Replica** per aprire la console ( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. Nella console **Replica** fai clic su **Attiva albero**.
 
-   The following window ( `https://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
+   Verrà visualizzata la finestra seguente ( `https://localhost:4502/etc/replication/treeactivation.html`).
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Enter the **Start Path**. This specifies the path to the root of the section you want to activate (publish). This page and all pages underneath are considered for activation (or used in the emulation if a Dry Run is selected).
+1. Immettere il percorso **Start**. Specifica il percorso della directory principale della sezione da attivare (pubblicare). Questa pagina e tutte le pagine sottostanti vengono considerate per l’attivazione (o utilizzate per l’emulazione, se è selezionata un’opzione Prova).
 1. Attiva il criterio di selezione come necessario:
 
    * **Solo elementi modificati**: vengono attivate solo le pagine che sono state modificate.
@@ -170,6 +174,6 @@ La scheda **Siti web** consente di attivare le singole pagine. Dopo avere inseri
 
 1. Seleziona l’azione da eseguire:
 
-   1. Select **Dry Run** if you want to check which pages *would* be activated. This is only an emulation, no pages will be activated.
+   1. Selezionare **Prova a secco** per verificare quali pagine *devono essere attivate*. Si tratta solo di un&#39;emulazione, non verrà attivata alcuna pagina.
 
-   1. Select **Activate** if you want to activate the pages.
+   1. Selezionare **Activate** per attivare le pagine.
