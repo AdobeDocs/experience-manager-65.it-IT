@@ -15,13 +15,14 @@ ht-degree: 1%
 
 La funzione multi-tenant consente di separare i contenuti in CRX in base al prefisso dell’organizzazione e all’ID organizzazione per proteggere i contenuti dall’accesso non autorizzato da parte degli utenti di altre organizzazioni.
 
-[!DNL Adobe Experience Manager Assets] archivia i dati per ogni organizzazione in un percorso diverso. Ciascun percorso specifico per l’organizzazione è identificato dal prefisso dell’organizzazione e dall’ID organizzazione inclusi nella posizione tradizionale in cui sono memorizzati in CRX diversi tipi di risorse.
+[!DNL Adobe Experience Manager Assets] archivia i dati per ogni organizzazione in un percorso diverso. Ciascun percorso specifico dell&#39;organizzazione è identificato dal prefisso dell&#39;organizzazione e dall&#39;ID organizzazione
+inclusa nella posizione tradizionale in cui sono memorizzati in CRX diversi tipi di risorse.
 
-Ad esempio, se create una cartella denominata `Demo`, in genere [!DNL Experience Manager] le risorse memorizzano la cartella in `../content/dam/Demo`. Con l&#39;opzione multi-tenant abilitata, ora è possibile archiviare i dati in `../content/dam/<organization prefix>/<organization id>Demo`
+Ad esempio, se create una cartella denominata `Demo`, le risorse [!DNL Experience Manager] in genere memorizzano la cartella in `../content/dam/Demo`. Con l&#39;opzione multi-tenant abilitata, ora è possibile archiviare i dati in `../content/dam/<organization prefix>/<organization id>Demo`
 
-Ad esempio, se per [!DNL Adobe Marketing Cloud] gli utenti di [!DNL Assets] (su richiesta) assegnati all&#39; `aodpremium` organizzazione, potete utilizzare la funzione multi-tenant per configurare il `../content/dam/<mac>/<aodpremium>Demo` percorso per la separazione del contenuto. In questo esempio `mac` è il prefisso dell&#39;organizzazione e `aodpremium` l&#39;ID organizzazione.
+Ad esempio, se per [!DNL Adobe Marketing Cloud] utenti di [!DNL Assets] (su richiesta) assegnati all&#39;organizzazione `aodpremium`, potete utilizzare la funzione multi-tenant per configurare il percorso `../content/dam/<mac>/<aodpremium>Demo` per la separazione del contenuto. In questo esempio, `mac` è il prefisso dell&#39;organizzazione e `aodpremium` è l&#39;ID organizzazione.
 
-In base all&#39;organizzazione e all&#39;ID dell&#39;utente, questo percorso qualificato viene visualizzato nell&#39; [!DNL Assets] interfaccia e nelle varie procedure guidate, comprese le procedure guidate per la creazione di Sposta e Snippet per applicare la segregazione.
+In base all&#39;organizzazione e all&#39;ID dell&#39;utente, questo percorso qualificato viene visualizzato nell&#39;interfaccia [!DNL Assets] e in varie procedure guidate, comprese le procedure guidate per la creazione di Sposta e Snippet per applicare la segregazione.
 
 La funzione Multi-Tenancy permette di separare i seguenti tipi di risorse e componenti:
 
