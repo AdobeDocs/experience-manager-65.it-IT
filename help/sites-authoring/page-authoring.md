@@ -12,6 +12,9 @@ discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 100%
 
 ---
 
@@ -38,13 +41,13 @@ L’ambiente di authoring offre diverse funzionalità tra cui:
 
 * **Modifica diretta** I componenti Testo e Immagine possono essere modificati direttamente sulla pagina web senza aprire alcuna finestra di dialogo e senza dover effettuare un’azione Salva.
 
-* **[Browser Componenti](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**È possibile aprire un browser scorrevole a sinistra di una pagina modificabile, dal quale trascinare e inserire componenti sulla pagina.
+* **[Browser Componenti](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)** È possibile aprire un browser scorrevole a sinistra di una pagina modificabile, dal quale trascinare e inserire componenti sulla pagina.
 
-* **[Browser Risorse](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**È possibile aprire un browser scorrevole a sinistra di una pagina modificabile, dal quale trascinare risorse sulla pagina, ad esempio per inserire delle risorse o creare dei collegamenti verso altre pagine.
+* **[Browser Risorse](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)** È possibile aprire un browser scorrevole a sinistra di una pagina modificabile, dal quale trascinare risorse sulla pagina, ad esempio per inserire delle risorse o creare dei collegamenti verso altre pagine.
 
 * **Barra degli strumenti del componente** Per visualizzare la barra degli strumenti di modifica diretta, fai un tocco o un clic singolo; per visualizzare la barra degli strumenti completa, fai un tocco o un clic doppio lento.
 
-* **[Layout reattivo](/help/sites-authoring/responsive-layout.md)**Offre un sistema a paragrafi che consente di posizionare i componenti in una griglia reattiva.
+* **[Layout reattivo](/help/sites-authoring/responsive-layout.md)** Offre un sistema a paragrafi che consente di posizionare i componenti in una griglia reattiva.
 
 * **Ricerca durante la scrittura** In alcune situazioni (ad esempio nella selezione del percorso in una finestra di dialogo) la ricerca di contenuti tramite l’interfaccia di AEM presenta corrispondenze dinamiche mano a mano che digiti il testo da cercare.
 
