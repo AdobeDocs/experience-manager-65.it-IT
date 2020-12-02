@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
 
 # Tag Essentials {#tag-essentials}
 
-Quando i componenti di AEM Communities sono configurati con l&#39;assegnazione di tag abilitata, i membri della community possono assegnare tag ai contenuti pubblicati nell&#39;ambiente di pubblicazione.
+Quando  componenti AEM Communities sono configurati con l’assegnazione di tag abilitata, i membri della community possono assegnare tag ai contenuti pubblicati nell’ambiente di pubblicazione.
 
 L’infrastruttura sottostante per i tag applicati nell’ambiente di pubblicazione è identica a quella per i tag applicati al contenuto nell’ambiente di authoring, ad esempio pagine e risorse:
 
-* Per informazioni sulla creazione e la gestione dei tag, consultate [Amministrazione di tag](../../help/sites-administering/tags.md) e [assegnazione di tag ai contenuti](tag-ugc.md) generati dall’utente (UGC).
+* Per informazioni sulla creazione e la gestione dei tag, vedere [Amministrazione dei tag](../../help/sites-administering/tags.md) e [Assegnazione tag a contenuti generati dall&#39;utente](tag-ugc.md) (UGC).
 
-* See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
+* Per informazioni sul [framework di tag](../../help/sites-developing/framework.md) per gli sviluppatori, vedere [Tagging per gli sviluppatori](../../help/sites-developing/tags.md), nonché sull&#39;inclusione e l&#39;estensione dei tag in [applicazioni personalizzate](../../help/sites-developing/building.md).
 
-* Consultate [Utilizzo di Social Tag Cloud](tagcloud.md) per informazioni per gli autori su come aggiungere un `social tag cloud` componente a una pagina per evidenziare i tag applicati a UGC nell’ambiente di pubblicazione.
+* Consultate [Utilizzo di Social Tag Cloud](tagcloud.md) per informazioni per gli autori su come aggiungere un componente `social tag cloud` a una pagina per evidenziare i tag applicati a UGC nell&#39;ambiente di pubblicazione.
 
-* Consultate [Assegnazione di tag alle risorse](tag-resources.md) di abilitazione per informazioni sui tag delle risorse per i cataloghi.
+* Per informazioni sull’assegnazione di tag alle risorse per i cataloghi, consultate [Tagging Enablement Resources](tag-resources.md).
 
-Quando si configura un sito [](sites-console.md#tagging) community o una delle seguenti funzioni, è possibile abilitare l&#39;assegnazione di tag UGC:
+L&#39;assegnazione di tag UGC può essere abilitata durante la configurazione di un [sito community](sites-console.md#tagging) o di una delle seguenti funzioni:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -65,7 +68,7 @@ Quando si configura un sito [](sites-console.md#tagging) community o una delle s
   </tr>
   <tr>
    <td><strong>proprietà</strong></td>
-   <td>Consultate <a href="tagcloud.md">Utilizzo di Social Tag Cloud</a></td>
+   <td>Vedere <a href="tagcloud.md">Utilizzo di Social Tag Cloud</a></td>
   </tr>
  </tbody>
 </table>
@@ -82,6 +85,6 @@ Quando si configura un sito [](sites-console.md#tagging) community o una delle s
 
 ## Ricerca tag {#tag-searching}
 
-A partire dal [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la ricerca tag viene eseguita utilizzando i titoli [](../../help/sites-developing/framework.md#tag-characteristics)dei tag.
+A partire dal [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la ricerca tag viene eseguita utilizzando i titoli dei tag [tag](../../help/sites-developing/framework.md#tag-characteristics).
 
-Prima di FP1, la ricerca veniva eseguita utilizzando gli ID [](../../help/sites-developing/framework.md#tagid)tag.
+Prima di FP1, la ricerca è stata eseguita utilizzando [tag id](../../help/sites-developing/framework.md#tagid).
