@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# Installa Workbench {#install-workbench}
+# Installazione di Workbench {#install-workbench}
 
 Questo documento fornisce istruzioni per l&#39;installazione e la configurazione  AEM Forms Workbench. Il programma di installazione installa anche Forms Designer.
 
-## Who should read this document? {#who-should-read-this-doc}
+## Chi dovrebbe leggere questo documento? {#who-should-read-this-doc}
 
 Questo documento è destinato agli amministratori o agli sviluppatori responsabili dell&#39;installazione, configurazione, amministrazione o implementazione di Workbench. Sono incluse anche le informazioni necessarie per configurare il sistema in modo da supportare i processi AEM Forms  aggiornati. Le informazioni fornite si basano sul presupposto che chiunque legga questo documento abbia familiarità con il sistema operativo Microsoft® Windows®.
 
@@ -36,15 +36,15 @@ Le risorse riportate in questa tabella sono utili per ottenere ulteriori informa
   </tr>
   <tr>
    <td><p>Informazioni generali su  AEM Forms e come si integra con altri prodotti  Adobe</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65"> Panoramica di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Tutta la documentazione disponibile per  AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">documentazione AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65"> documentazione AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
-   <td><p>Contatta  Adobe Supporto Enterprise</a><br /> <br /> </p> </td>
+   <td><p>Contatta  Adobe Enterprise Support</a><br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -53,7 +53,7 @@ Le risorse riportate in questa tabella sono utili per ottenere ulteriori informa
 >
 >Flex Workspace è obsoleto per  AEM Forms. È disponibile per la versione  di AEM Forms.
 
-## Before You Install {#before-you-install}
+## Prima di installare {#before-you-install}
 
 ### Panoramica sull&#39;installazione di Workbench {#workbench-installation-overview}
 
@@ -75,8 +75,8 @@ Questa sezione descrive i requisiti hardware e software e le piattaforme support
 
 ### Requisiti hardware e software minimi {#minimum-hardware-software-requirements}
 
-**Workbench**Sono consigliati almeno i seguenti requisiti:
-Spazio su disco per l&#39;installazione:
+****
+WorkbenchCome minimo si consigliano i seguenti requisiti: Spazio su disco per l&#39;installazione:
 * 680 MB solo per Workbench.
 * 2,15 GB su un&#39;unica unità per l&#39;installazione completa di Workbench, Designer e dell&#39;assembly di esempio.
 * 400 MB per le directory di installazione temporanea - 200 MB nella directory \temp dell&#39;utente e 200 MB nella directory temporanea di Windows.
@@ -98,7 +98,7 @@ Spazio su disco per l&#39;installazione:
 
 ### Piattaforme supportate {#supported-platforms}
 
-Consultare l&#39;elenco completo delle piattaforme supportate per Workbench [piattaforme](http://adobe.com/go/learn_aemforms_supportedplatforms_65)supportate da AEM Forms.
+Consultare l&#39;elenco completo delle piattaforme supportate per Workbench in [ piattaforme supportate da AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerazioni sull&#39;installazione di Designer {#designer-installation-considerations}
 
@@ -127,9 +127,9 @@ L'installazione di Workbench rileva nel computer un'istanza di Designer installa
 
 ### Disinstallazione di Designer (autonoma) in Windows 10 {#uninstall-designer-standalone-windows10}
 
-1. Vai al **Pannello di controllo Campaign > Programmi > Programmi e funzionalità**
-1. Nell&#39;elenco Programmi attualmente installati, selezionare **Designer** Adobe.
-1. Fate clic su **Disinstalla** , quindi fate clic su **Sì**.
+1. Vai a **Pannello di controllo Campaign > Programmi > Programmi e funzionalità**
+1. Nell&#39;elenco Programmi attualmente installati, selezionare **Designer Adobi**.
+1. Fare clic su **Disinstalla**, quindi fare clic su **Sì**.
 
 ## Installazione di Workbench {#installing-workbench}
 
@@ -137,7 +137,7 @@ Questo capitolo descrive come installare Workbench.
 
 ### Installazione ed esecuzione di Workbench {#installing-and-running-workbench}
 
-Prima di installare Workbench, è necessario assicurarsi che nell&#39;ambiente in uso siano inclusi il software e l&#39;hardware necessari per eseguire Workbench (vedere la sezione: **Prima Di Installare**).
+Prima di installare Workbench, è necessario assicurarsi che nell&#39;ambiente in uso siano inclusi il software e l&#39;hardware necessari per eseguire Workbench (vedere la sezione: **Prima di installare**).
 
 **Per installare ed eseguire Workbench:**
 
@@ -161,7 +161,7 @@ Prima di installare Workbench, è necessario assicurarsi che nell&#39;ambiente i
    >
    >È possibile continuare a utilizzare Designer installato con  Acrobat 10 lasciando questa opzione deselezionata.
 
-1. Accettare la directory predefinita elencata oppure fare clic su Scegli e passare alla directory in cui si installa Workbench, quindi fare clic su Avanti.
+1. Accettare la directory predefinita come elencata oppure   fare clic su Scegli e passare alla directory in cui si installa Workbench, quindi fare clic su Avanti.
 
    >[!NOTE]
    >
@@ -171,9 +171,9 @@ Prima di installare Workbench, è necessario assicurarsi che nell&#39;ambiente i
 1. Esaminate il riepilogo dell&#39;installazione. Selezionare Avvia  AEM Forms Workbench per avviare Workbench e fare clic su Avanti.
 1. Esaminate le note sulla versione e fate clic su Fine.
 1. I seguenti elementi sono ora installati nel computer:
-   * **Workbench**: Per eseguire Workbench dal menu Start, selezionare Tutti i programmi >  AEM Forms > Workbench, se si desidera memorizzare la cartella dei collegamenti. Per ulteriori informazioni, vedere la documentazione <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Uso di Workbench</a> .
-   * **Designer**: È possibile accedere a Designer dall&#39;interno di Workbench. Per ulteriori informazioni, vedere l&#39;argomento della Guida introduttiva nella Guida <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">di</a>Designer.
-   * **AEM Forms SDK**: Per ulteriori informazioni sull’utilizzo dell’SDK, consulta <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmazione con  AEM Forms</a>.
+   * **Workbench**: Per eseguire Workbench dal menu Start, selezionare Tutti i programmi >  AEM Forms > Workbench, se si desidera memorizzare la cartella dei collegamenti. Per informazioni,   consultare la documentazione di <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilizzo di Workbench</a>.
+   * **Designer**: È possibile accedere a Designer dall&#39;interno di Workbench. Per ulteriori informazioni, vedere l&#39;argomento della Guida introduttiva nella Guida di <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer</a>.
+   * **AEM Forms SDK**: Per ulteriori informazioni sull’utilizzo dell’SDK, consulta  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmazione con  AEM Forms</a>.
 
 ## Aggiornamento dei processi {#upgrading-processes}
 
@@ -181,7 +181,7 @@ Prima di installare Workbench, è necessario assicurarsi che nell&#39;ambiente i
 
 ### Configurazione e accesso a un server {#configuring-and-logging-server}
 
-Per utilizzare Workbench, è necessario disporre di un&#39;istanza di  AEM Forms in esecuzione, in genere su un computer a parte. È necessario disporre di un nome utente e di una password per accedere a  AEM Forms, nonché di dettagli sulla posizione del server.
+Per utilizzare Workbench, è necessario disporre di un&#39;istanza di  AEM Forms in esecuzione, in genere su un computer a parte. È necessario disporre di un nome utente e di una password per accedere a  AEM Forms, nonché dei dettagli sulla posizione del server.
 
 >[!NOTE]
 >
@@ -189,15 +189,15 @@ Per utilizzare Workbench, è necessario disporre di un&#39;istanza di  AEM Forms
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
-Per impostazione predefinita, Workbench si chiude dopo due ore, indipendentemente dall&#39;attività o dall&#39;inattività. Per modificare l’impostazione relativa al timeout, consultate &quot;Configuring User Management > Configure advanced system attribute&quot; (Configurazione della gestione utente > Configura attributi di sistema avanzati) nella guida <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">della console di</a>amministrazione.
+Per impostazione predefinita, Workbench si chiude dopo due ore, indipendentemente dall&#39;attività o dall&#39;inattività. Per modificare l&#39;impostazione del timeout, vedere &quot;Configuring User Management > Configure advanced system attribute&quot; (Configurazione di gestione utente > Configura attributi di sistema avanzati) nella <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Guida della console di amministrazione</a>.
 
 ### Configurazione di Workbench per la connessione mediante HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-Per connettere Workbench a un server AEM Forms  tramite HTTPS, è necessario assicurarsi che l&#39;autorità di certificazione (CA) che ha emesso la chiave pubblica sia riconosciuta come attendibile da Workbench. Se il certificato non viene riconosciuto come proveniente da un&#39;origine affidabile, è necessario aggiornare il file di registro che si trova nella directory [Workbench_HOME]/workbench/jre/lib/security.
+Per connettere Workbench a un server AEM Forms  tramite HTTPS, è necessario assicurarsi che l&#39;autorità di certificazione (CA) che ha emesso la chiave pubblica sia riconosciuta come attendibile da Workbench. Se il certificato non viene riconosciuto come proveniente da un&#39;origine affidabile, è necessario aggiornare il file del certificato che si trova nella directory [Workbench_HOME]/workbench/jre/lib/security.
 
 >[!NOTE]
 >
->[Workbench_HOME] rappresenta la directory in cui è stato installato Workbench. Il percorso predefinito è C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
+>[Workbench_] HOMErappresenta la directory in cui è stato installato Workbench. Il percorso predefinito è C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
 
 Assicuratevi di connettervi a HTTPS utilizzando il nome specificato nel certificato. Questo nome è in genere il nome host completo.
 
@@ -267,7 +267,7 @@ Utilizzando XDC Editor, gli amministratori della stampante di rete possono crear
 Prima che l&#39;amministratore della stampante di rete utilizzi XDC Editor, è necessario riposizionare i file XDC di esempio e vedere Creazione di profili dispositivo tramite XDC Editor.
 
 **Per ottenere i file** XDC di esempio:
-1. Nel server AEM Forms , individuare la cartella XDC nella cartella [radice]\sdk\samples\Output\IVS di AEM Forms.
+1. Sul server AEM Forms , individuare la cartella XDC in [ radice AEM Forms]\sdk\samples\Output\IVS.
 1. Copiare il contenuto di questa cartella in una directory accessibile da Workbench o dal sistema Eclipse.
 
 **Per ottenere la Guida** di XDC Editor:
