@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 2%
 
 ---
 
@@ -34,4 +37,4 @@ Il seguente elenco di controllo evidenzia alcuni dei problemi principali. Per ma
 
 >[!NOTE]
 >
->Per ulteriori elenchi di controllo relativi all’intero progetto, è inoltre possibile visualizzare l’elenco di controllo [Gestione progetti - Best Practices](/help/managing/best-practices.md) .
+>Per ulteriori elenchi di controllo relativi all&#39;intero progetto, è inoltre possibile vedere la [Gestione dei progetti - Best Practices Checklist](/help/managing/best-practices.md).
