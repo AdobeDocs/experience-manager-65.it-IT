@@ -27,8 +27,8 @@ ht-degree: 0%
 >
 >6.5.3.0
 >
->* **È ora possibile selezionare Domini** di esternalizzatore.
-   >  **Nota:** I domini di Externalizer sono pertinenti solo al contenuto del frammento esperienza inviato a Target, e non ai metadati come Visualizza contenuto offerta.
+>* **È ora possibile selezionare** Domainscan Externalizer.
+   >  **Nota: i domini** di Externalizer sono pertinenti solo al contenuto del frammento esperienza inviato a Target, e non ai metadati come Visualizza contenuto offerta.
 >
 >
 6.5.2.0:
@@ -38,9 +38,9 @@ ht-degree: 0%
    >   
    * l&#39;area di lavoro predefinita.
    >   * un&#39;area di lavoro denominata, specificata in Configurazione cloud.
-   >   * **Nota:** L&#39;esportazione in aree di lavoro specifiche richiede  Adobe Target Premium.
+   >   * **Nota:** l&#39;esportazione in aree di lavoro specifiche richiede  Adobe Target Premium.
 >
->* AEM deve essere [integrato con  Adobe Target utilizzando  I/O](/help/sites-administering/integration-ims-adobe-io.md)Adobe.
+>* AEM deve essere [integrato con  Adobe Target utilizzando  Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 
 >
 >
@@ -48,10 +48,10 @@ ht-degree: 0%
 AEM 6.5.0.0 e 6.5.1.0:
 >
 >* I frammenti esperienza AEM vengono esportati nell’area di lavoro predefinita di  Adobe Target.
->* AEM deve essere integrato con  Adobe Target in base alle istruzioni in [Integrazione con  Adobe Target](/help/sites-administering/target.md).
+>* AEM deve essere integrato con  Adobe Target secondo le istruzioni riportate in [Integrazione con  Adobe Target](/help/sites-administering/target.md).
 
 
-Puoi esportare frammenti [](/help/sites-authoring/experience-fragments.md)esperienza creati in Adobe Experience Manager (AEM) in  Adobe Target (Target). Possono quindi essere utilizzati come offerte nelle attività Target, per sottoporre a test e personalizzare le esperienze su scala.
+È possibile esportare [Frammenti esperienza](/help/sites-authoring/experience-fragments.md), creati in Adobe Experience Manager (AEM), in  Adobe Target (Target). Possono quindi essere utilizzati come offerte nelle attività Target, per sottoporre a test e personalizzare le esperienze su scala.
 
 Per esportare un frammento esperienza in  Adobe Target sono disponibili tre opzioni di formato:
 
@@ -59,11 +59,11 @@ Per esportare un frammento esperienza in  Adobe Target sono disponibili tre opzi
 * JSON: Supporto per la distribuzione headless dei contenuti
 * HTML e JSON
 
-AEM frammenti esperienza possono essere esportati nell’area di lavoro predefinita in  Adobe Target o in aree di lavoro definite dall’utente per  Adobe Target. Questo avviene tramite  I/O Adobe, per il quale AEM deve essere [integrato con  Adobe Target utilizzando  Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+AEM frammenti esperienza possono essere esportati nell’area di lavoro predefinita in  Adobe Target o in aree di lavoro definite dall’utente per  Adobe Target. Questo avviene tramite  Adobe I/O, per il quale AEM deve essere [integrato con  Adobe Target utilizzando  Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 
 >[!NOTE]
 >
->Le aree di lavoro  Adobe Target non esistono  Adobe Target. Vengono definiti e gestiti in  Adobe IMS ( Identity Management System), quindi selezionati per l&#39;utilizzo tra le soluzioni utilizzando  integrazioni I/O Adobe.
+>Le aree di lavoro  Adobe Target non esistono  Adobe Target. Vengono definiti e gestiti in  Adobe IMS ( Identity Management System), quindi selezionati per l&#39;utilizzo tra le soluzioni utilizzando  integrazioni Adobe I/O.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ AEM frammenti esperienza possono essere esportati nell’area di lavoro predefin
 >
 >Per ulteriori informazioni, consulta anche:
 >
->* [sviluppo Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
+>* [ sviluppo Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Componenti di base - Frammenti esperienza](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 
 >
@@ -88,26 +88,26 @@ AEM frammenti esperienza possono essere esportati nell’area di lavoro predefin
 
 Sono necessarie diverse azioni:
 
-1. È necessario [integrare AEM con  Adobe Target utilizzando  I/O](/help/sites-administering/integration-ims-adobe-io.md).
-2. I frammenti esperienza vengono esportati dall’istanza di creazione AEM, pertanto è necessario [configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) nell’istanza di creazione per garantire che eventuali riferimenti all’interno del frammento esperienza siano esternalizzati per la distribuzione sul Web.
+1. È necessario [integrare AEM con  Adobe Target utilizzando  Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+2. I frammenti esperienza vengono esportati dall&#39;istanza di creazione AEM, pertanto è necessario [configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) nell&#39;istanza di creazione per garantire che eventuali riferimenti all&#39;interno del frammento esperienza siano esternalizzati per la distribuzione sul Web.
 
    >[!NOTE]
    >
-   >Per la riscrittura dei collegamenti non coperta dall’impostazione predefinita, è disponibile il provider [di riscrittura dei collegamenti dei frammenti](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) esperienza. Con questo, è possibile sviluppare regole personalizzate per la vostra istanza.
+   >Per la riscrittura dei collegamenti non coperta dall&#39;impostazione predefinita, è disponibile il [provider di riscrittura dei collegamenti dei frammenti esperienza](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Con questo, è possibile sviluppare regole personalizzate per la vostra istanza.
 
 ## Aggiungi configurazione cloud {#add-the-cloud-configuration}
 
-Prima di esportare un frammento è necessario aggiungere al frammento o alla cartella la Configurazione **** Cloud per **Adobe Target** . Questo consente anche di:
+Prima di esportare un frammento è necessario aggiungere al frammento o alla cartella **Configurazione cloud** per **Adobe Target**. Questo consente anche di:
 
 * specificare le opzioni di formato da utilizzare per l&#39;esportazione
 * selezionate un&#39;area di lavoro Target come destinazione
 * selezionate un dominio esternalizzatore per riscrivere i riferimenti nel frammento esperienza (facoltativo)
 
-Le opzioni richieste possono essere selezionate in Proprietà **** pagina della cartella e/o del frammento richiesti; la specifica verrà ereditata in base alle esigenze.
+Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella e/o del frammento richiesto; la specifica verrà ereditata in base alle esigenze.
 
-1. Navigate to the **Experience Fragments** console.
+1. Andate alla console **Frammenti esperienza**.
 
-1. Aprire Proprietà **** pagina per la cartella o il frammento appropriato.
+1. Aprire **Proprietà pagina** per la cartella o il frammento appropriato.
 
    >[!NOTE]
    >
@@ -116,9 +116,9 @@ Le opzioni richieste possono essere selezionate in Proprietà **** pagina della 
    >
    >Se aggiungi la configurazione cloud allo stesso frammento esperienza, la configurazione viene ereditata da tutte le varianti.
 
-1. Selezionate la scheda **Cloud Services** .
+1. Selezionare la scheda **Cloud Services**.
 
-1. In Configurazione **** Cloud Service, selezionate **Adobe Target** dall&#39;elenco a discesa.
+1. In **Configurazione Cloud Service**, selezionare **Adobe Target** dall&#39;elenco a discesa.
 
    >[!NOTE]
    >
@@ -139,13 +139,13 @@ Le opzioni richieste possono essere selezionate in Proprietà **** pagina della 
    >
    >Il dominio esternalizzatore è facoltativo.
    >
-   > Un esternalizzatore AEM è configurato quando desiderate che il contenuto esportato faccia riferimento a un dominio di *pubblicazione* specifico. Per ulteriori dettagli, consultate [Configurazione di AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   > Un esternalizzatore AEM è configurato quando desiderate che il contenuto esportato punti a un dominio specifico *publish*. Per ulteriori dettagli, vedere [Configurazione di AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
    > Inoltre, i domini di Externalizer sono pertinenti solo al contenuto del frammento esperienza inviato a Target, e non ai metadati come Visualizza contenuto offerta.
 
    Ad esempio, per una cartella:
 
-   ![Cartella - Cloud](assets/xf-target-integration-01.png "ServicesFolder - Cloud Services")
+   ![Cartella - Cloud ](assets/xf-target-integration-01.png "ServicesFolder - Cloud Services")
 
 1. **Salva e chiudi**.
 
@@ -166,41 +166,41 @@ Per esportare un frammento esperienza da AEM a Target (dopo aver specificato la 
    >
    >Deve essere una variante Web del frammento esperienza.
 
-1. Toccate o fate clic su **Esporta per  Adobe Target**.
+1. Toccate/fate clic su **Esporta in  Adobe Target**.
 
    >[!NOTE]
    >
-   >Se il frammento esperienza è già stato esportato, selezionate **Aggiorna in  Adobe Target**.
+   >Se il frammento esperienza è già stato esportato, selezionare **Aggiorna in  Adobe Target**.
 
-1. Toccate/fate clic su **Esporta senza pubblicare** o **pubblicare** come necessario.
+1. Toccate/fate clic su **Esporta senza pubblicare** o **Pubblica** come necessario.
 
    >[!NOTE]
    >
-   >Se selezionate **Pubblica** , il frammento esperienza viene subito pubblicato e inviato a Target.
+   >Selezionando **Pubblica** il frammento esperienza verrà pubblicato immediatamente e inviato a Target.
 
-1. Toccate o fate clic su **OK** nella finestra di dialogo di conferma.
+1. Toccate/fate clic su **OK** nella finestra di dialogo di conferma.
 
    Il frammento esperienza deve ora essere in Target.
 
    >[!NOTE]
    >
-   >[Vari dettagli](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) dell’esportazione sono disponibili nella vista **a** elenco della console e nelle **proprietà**.
+   >[Vari ](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) dettagli dell’esportazione sono disponibili nella  **vista** Elenco della console e nelle  **proprietà**.
 
    >[!NOTE]
    >
-   >Quando si visualizza un frammento esperienza in  Adobe Target, la data dell&#39; *ultima modifica* visualizzata corrisponde alla data dell&#39;ultima modifica AEM del frammento, non alla data dell&#39;ultima esportazione &#39;Adobe Target.
+   >Quando si visualizza un frammento esperienza in  Adobe Target, la data dell&#39; *ultima modifica* visualizzata corrisponde alla data dell&#39;ultima modifica del frammento in AEM, non alla data dell&#39;ultima esportazione del frammento  Adobe Target.
 
 >[!NOTE]
 >
->In alternativa, potete eseguire l’esportazione dall’editor pagina utilizzando comandi comparabili nel menu Informazioni [](/help/sites-authoring/author-environment-tools.md#page-information) pagina.
+>In alternativa, è possibile eseguire l&#39;esportazione dall&#39;Editor pagina utilizzando comandi comparabili nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information).
 
 ## Utilizzo dei frammenti esperienza in  Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Dopo aver eseguito le attività precedenti, il frammento esperienza viene visualizzato nella pagina Offerte in Target. Consulta la documentazione [](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) specifica di Target per saperne di più sui risultati ottenuti.
+Dopo aver eseguito le attività precedenti, il frammento esperienza viene visualizzato nella pagina Offerte in Target. Consulta la [documentazione specifica di Target](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) per saperne di più sui risultati ottenuti.
 
 >[!NOTE]
 >
->Quando si visualizza un frammento esperienza in  Adobe Target, la data dell&#39; *ultima modifica* visualizzata corrisponde alla data dell&#39;ultima modifica AEM del frammento, non alla data dell&#39;ultima esportazione &#39;Adobe Target.
+>Quando si visualizza un frammento esperienza in  Adobe Target, la data dell&#39; *ultima modifica* visualizzata corrisponde alla data dell&#39;ultima modifica del frammento in AEM, non alla data dell&#39;ultima esportazione del frammento  Adobe Target.
 
 ## Eliminazione di un frammento esperienza già esportato in  Adobe Target {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
