@@ -19,10 +19,10 @@ Tutte le risorse digitali, i metadati e il contenuto di documenti Microsoft Offi
 
 ## Organizzare le risorse nelle cartelle {#organize-using-folders}
 
-Il modo più semplice per organizzare le risorse è salvarle in cartelle. È analogo all&#39;organizzazione di file in cartelle nel nostro file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consultate [Gestire le risorse](manage-assets.md). Il modo in cui denominate file e cartelle, come vengono disposte le sottocartelle e come vengono gestiti i file all’interno di tali cartelle possono avere un impatto significativo sulla modalità di elaborazione delle risorse. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio il vostro archivio delle risorse digitali.
+Il modo più semplice per organizzare le risorse è salvarle in cartelle. È analogo all&#39;organizzazione di file in cartelle nel nostro file system locale. Per ulteriori informazioni su come creare e gestire le cartelle, consultate [Gestione delle risorse](manage-assets.md). Il modo in cui denominate file e cartelle, come vengono disposte le sottocartelle e come vengono gestiti i file all’interno di tali cartelle possono avere un impatto significativo sulla modalità di elaborazione delle risorse. Utilizzando strategie di denominazione di file e cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, potete sfruttare al meglio il vostro archivio delle risorse digitali.
 
 * Nella maggior parte dei casi, l’archivio delle risorse digitali è in continua crescita. Pertanto, è importante formalizzare l’utilizzo dei metadati, la struttura delle cartelle e la denominazione dei file all’inizio del ciclo di creazione dei contenuti.
-* Utilizzate le cartelle solo per imporre una struttura di memorizzazione coerente alle risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono essere utili per utilizzare [i profili appropriati per l’elaborazione](processing-profiles.md)delle risorse:
+* Utilizzate le cartelle solo per imporre una struttura di memorizzazione coerente alle risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono essere utili per utilizzare i profili [appropriati per l&#39;elaborazione delle risorse](processing-profiles.md):
 
    * **Cartelle** di sviluppo: contiene le risorse digitali su cui state lavorando.
    * **Cartelle** client: contiene risorse digitali basate su client o nomi di progetti.
@@ -35,9 +35,9 @@ Il modo più semplice per organizzare le risorse è salvarle in cartelle. È ana
    * **Cartelle** basate su data: contiene risorse digitali in base a una data di creazione o all’ultima data di modifica.
 
 * Create una directory di cartelle che probabilmente non verrà modificata in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
-* Se una risorsa è già pubblicata, potete spostarla [!DNL Experience Manager] in un’altra cartella e ripubblicarla dalla nuova posizione, il percorso originale della risorsa pubblicata sarà ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, viene *perduta* [!DNL Experience Manager] e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
+* Se una risorsa è già pubblicata, usate [!DNL Experience Manager] per spostare la risorsa in un’altra cartella e ripubblicate dalla nuova posizione, il percorso originale della risorsa pubblicata sarà ancora disponibile, insieme alla nuova risorsa pubblicata di nuovo. La risorsa pubblicata originale, tuttavia, è *persa* in [!DNL Experience Manager] e non può essere annullata dalla pubblicazione. Di conseguenza, si consiglia di annullare la pubblicazione di una risorsa e spostarla in un’altra cartella.
 
-## Organizzare le risorse tramite i tag {#use-tags-to-organize-assets}
+## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 
 Utilizzando i tag come metadati potete facilmente cercare le risorse, creare raccolte utilizzando i risultati di ricerca, migliorare la classificazione delle ricerche per alcune risorse e sfruttare gli algoritmi AI di  Adobe Sensei per l&#39;individuazione delle risorse.
 
@@ -49,18 +49,18 @@ Per ulteriori informazioni, consultate i seguenti articoli:
 * [Modificare i metadati delle risorse](metadata.md)
 * [Tag avanzati migliorati nelle risorse](enhanced-smart-tags.md)
 
-## Organizzare come raccolte {#organize-as-collections}
+## Organizza come raccolte {#organize-as-collections}
 
 Con le raccolte di risorse in [!DNL Experience Manager Assets], potete semplificare la possibilità di creare, modificare e condividere risorse tra gli utenti. Create diversi tipi di raccolte in base al modo in cui le utilizzate, comprese le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte, nonché le raccolte che richiamano risorse in base ai criteri di ricerca.  Potete anche creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica dei privilegi.
 
-Per ulteriori informazioni, vedete [Gestione delle raccolte](manage-collections.md)
+Per ulteriori informazioni, vedere [gestire le raccolte](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
 Add back links to blog posts by marketing?
 -->
 
-## Organizzare le risorse per utilizzare i profili {#organize-to-use-profiles}
+## Organizzate le risorse per utilizzare i profili {#organize-to-use-profiles}
 
 Un profilo di elaborazione contiene [!DNL Assets] comandi di elaborazione applicabili alle risorse che vengono caricate in cartelle predefinite. I profili vengono utilizzati per automatizzare l’elaborazione del contenuto di una cartella o di risorse appena caricate. Potete sfruttare i profili per organizzare meglio le risorse.
 
@@ -70,6 +70,6 @@ La standardizzazione dell’utilizzo dei metadati, della denominazione dei file 
 >
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Profili metadati](/help/assets/metadata-config.md#metadata-profiles).
->* [Profili](video-profiles.md)video.
->* [Profili](image-profiles.md)immagine per elementi multimediali dinamici.
+>* [Profili](video-profiles.md) video.
+>* [Profili](image-profiles.md) immagine per elementi multimediali dinamici.
 
