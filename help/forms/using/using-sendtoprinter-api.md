@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 13%
 
 ---
 
@@ -18,18 +21,18 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Panoramica {#overview}
 
-In AEM Forms, è possibile utilizzare il servizio SendToPrinter per inviare un documento alla stampante. Il servizio SendToPrinter supporta i seguenti meccanismi di accesso alla stampa:
+In  AEM Forms, è possibile utilizzare il servizio SendToPrinter per inviare un documento alla stampante. Il servizio SendToPrinter supporta i seguenti meccanismi di accesso alla stampa:
 
-* **Stampante** con accesso diretto `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
+* **Stampante con accesso diretto** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
-* **Stampante** con accesso indiretto `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
+* **Stampante con accesso indiretto** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
    Quando si invia un documento a una stampante, specificare uno dei seguenti protocolli di stampa:
 
-   * **CUPS**`: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter**`: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+   * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: Il servizio Output supporta il protocollo CIFS (Common Internet File System) per la stampa.
 
 ## Utilizzo di SendToPrinter Service {#using-sendtoprinter-service}
@@ -61,11 +64,11 @@ La tabella seguente elenca:
 
 ## Supporto per l&#39;autenticazione {#authentication-support}
 
-L&#39;autenticazione è supportata solo per la stampa CIFS. Per eseguire l&#39;autenticazione, specificare il nome utente/password/dominio in PrinterSpec. Puoi crittografare una password utilizzando il servizio AEM Granite CyprusSupport eseguendo i seguenti passaggi:
+L&#39;autenticazione è supportata solo per la stampa CIFS. Per eseguire l&#39;autenticazione, specificare il nome utente/password/dominio in PrinterSpec. È possibile crittografare una password utilizzando AEM Granite CyprusSupport Service eseguendo i seguenti passaggi:
 
 1. Andate a https://&lt;server>:&lt;porta>/sistema/console.
 
-1. Vai a **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
+1. Andate a **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
 
-1. Inserite del testo normale e fate clic su **[!UICONTROL Proteggi]**.
+1. Inserite del testo normale e fate clic su **[!UICONTROL Protect]**.
 
