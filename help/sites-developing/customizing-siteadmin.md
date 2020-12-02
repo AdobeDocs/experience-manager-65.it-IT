@@ -23,13 +23,13 @@ ht-degree: 0%
 
 ## Aggiunta di una colonna personalizzata alla console Siti Web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
-La console Amministrazione siti Web può essere estesa per visualizzare colonne personalizzate. La console è basata su un oggetto JSON che può essere esteso creando un servizio OSGI che implementa l&#39; `ListInfoProvider` interfaccia. Tale servizio modifica l&#39;oggetto JSON inviato al client per creare la console.
+La console Amministrazione siti Web può essere estesa per visualizzare colonne personalizzate. La console è basata su un oggetto JSON che può essere esteso creando un servizio OSGI che implementa l&#39;interfaccia `ListInfoProvider`. Tale servizio modifica l&#39;oggetto JSON inviato al client per creare la console.
 
-Questa esercitazione passo-passo spiega come visualizzare una nuova colonna nella console Amministrazione siti Web implementando l’ `ListInfoProvider` interfaccia. Si compone dei seguenti passaggi:
+Questa esercitazione dettagliata spiega come visualizzare una nuova colonna nella console Amministrazione siti Web implementando l&#39;interfaccia `ListInfoProvider`. Si compone dei seguenti passaggi:
 
-1. [Creazione del servizio](#creating-the-osgi-service) OSGI e implementazione del bundle che lo contiene nel server AEM.
-1. (facoltativo) [Verifica del nuovo servizio](#testing-the-new-service) mediante una chiamata JSON per richiedere l’oggetto JSON utilizzato per creare la console.
-1. [Visualizzazione della nuova colonna](#displaying-the-new-column) estendendo la struttura dei nodi della console nella directory archivio.
+1. [Creazione del ](#creating-the-osgi-service) servizio OSGI e distribuzione del bundle che lo contiene nel server AEM.
+1. (facoltativo) [Verifica del nuovo servizio](#testing-the-new-service) mediante una chiamata JSON per richiedere l&#39;oggetto JSON utilizzato per creare la console.
+1. [Visualizzazione della nuova ](#displaying-the-new-column) colonna estendendo la struttura dei nodi della console nella directory archivio.
 
 >[!NOTE]
 >
@@ -37,13 +37,14 @@ Questa esercitazione passo-passo spiega come visualizzare una nuova colonna nell
 >
 >* la console Risorse digitali
 >* la console Community
+
 >
 
 
 
 ### Creazione del servizio OSGI {#creating-the-osgi-service}
 
-L&#39; `ListInfoProvider` interfaccia definisce due metodi:
+L&#39;interfaccia `ListInfoProvider` definisce due metodi:
 
 * `updateListGlobalInfo`, per aggiornare le proprietà globali dell&#39;elenco,
 * `updateListItemInfo`, per aggiornare una singola voce di elenco.
@@ -56,13 +57,13 @@ Gli argomenti di entrambi i metodi sono:
 
 Esempio di implementazione:
 
-* Aggiunge una proprietà *Starred* per ogni elemento, ossia `true` se il nome della pagina inizia con un *e*, `false` altrimenti.
+* Aggiunge una proprietà *starred* per ogni elemento, che è `true` se il nome della pagina inizia con un *e*, altrimenti `false`.
 
-* Aggiunge una proprietà *starredCount* , che è globale per l&#39;elenco e contiene il numero di elementi dell&#39;elenco di destinazione.
+* Aggiunge una proprietà *starredCount*, che è globale per l&#39;elenco e contiene il numero di voci dell&#39;elenco di destinazione.
 
 Per creare il servizio OSGI:
 
-1. In CRXDE Lite, [create un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. In CRXDE Lite, [creare un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Aggiungete il codice di esempio riportato di seguito.
 1. Create il bundle.
 
@@ -111,14 +112,15 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* In base alla richiesta e/o alla risorsa fornita, l&#39;implementazione deve decidere se aggiungere o meno le informazioni all&#39;oggetto JSON.
->* Se l&#39; `ListInfoProvider` implementazione definisce una proprietà già esistente nell&#39;oggetto response, il relativo valore verrà sovrascritto da quello fornito.
+>* Se l&#39;implementazione `ListInfoProvider` definisce una proprietà già esistente nell&#39;oggetto response, il suo valore verrà sovrascritto da quello fornito.
+
 >
 >  
-Potete utilizzare la classificazione [del](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) servizio per gestire l&#39;ordine di esecuzione di più `ListInfoProvider` implementazioni.
+È possibile utilizzare la classificazione [del servizio](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) per gestire l&#39;ordine di esecuzione di più implementazioni `ListInfoProvider`.
 
 ### Verifica del nuovo servizio {#testing-the-new-service}
 
-Quando aprite la console di amministrazione dei siti Web e sfogliate il sito, il browser esegue una chiamata ajax per ottenere l’oggetto JSON utilizzato per creare la console. Ad esempio, quando individuate la `/content/geometrixx` cartella, la seguente richiesta viene inviata al server AEM per creare la console:
+Quando aprite la console di amministrazione dei siti Web e sfogliate il sito, il browser esegue una chiamata ajax per ottenere l’oggetto JSON utilizzato per creare la console. Ad esempio, quando individuate la cartella `/content/geometrixx`, la seguente richiesta viene inviata al server AEM per creare la console:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -133,52 +135,53 @@ Per essere certi che il nuovo servizio sia in esecuzione dopo aver distribuito i
 
 ### Visualizzazione della nuova colonna {#displaying-the-new-column}
 
-L’ultimo passaggio consiste nell’adattare la struttura dei nodi della console Amministrazione siti Web per visualizzare la nuova proprietà per tutte le pagine Geometrixx sovrapponendo `/libs/wcm/core/content/siteadmin`. Procedere come segue:
+L&#39;ultimo passaggio consiste nell&#39;adattare la struttura dei nodi della console Amministrazione siti Web per visualizzare la nuova proprietà per tutte le pagine di Geometrixx sovrapponendo `/libs/wcm/core/content/siteadmin`. Procedere come segue:
 
-1. In CRXDE Lite, create la struttura dei nodi `/apps/wcm/core/content` con nodi di tipo `sling:Folder` per riflettere la struttura `/libs/wcm/core/content`.
+1. In CRXDE Lite, creare la struttura dei nodi `/apps/wcm/core/content` con nodi di tipo `sling:Folder` per riflettere la struttura `/libs/wcm/core/content`.
 
 1. Copiare il nodo `/libs/wcm/core/content/siteadmin` e incollarlo sotto `/apps/wcm/core/content`.
 
-1. Copia il nodo `/apps/wcm/core/content/siteadmin/grid/assets` in `/apps/wcm/core/content/siteadmin/grid/geometrixx` e ne modifica le proprietà:
+1. Copiare il nodo `/apps/wcm/core/content/siteadmin/grid/assets` in `/apps/wcm/core/content/siteadmin/grid/geometrixx` e modificarne le proprietà:
 
    * Rimuovi **pageText**
 
-   * Impostate **pathRegex** su `/content/geometrixx(/.*)?`Questo rende attiva la configurazione della griglia per tutti i siti Web geometrixx.
+   * Impostare **pathRegex** su `/content/geometrixx(/.*)?`
+In questo modo la configurazione della griglia sarà attiva per tutti i siti Web geometrixx.
 
-   * Imposta **storeProxySuffix** su `.pages.json`
+   * Impostare **storeProxySuffix** su `.pages.json`
 
-   * Modificare la proprietà multivalore **storeReaderFields** e aggiungere il `starred` valore.
+   * Modificare la proprietà multivalore **storeReaderFields** e aggiungere il valore `starred`.
 
-   * Per attivare la funzionalità MSM, aggiungere i seguenti parametri MSM alla proprietà multi-String **storeReaderFields**:
+   * Per attivare la funzionalità MSM, aggiungere i seguenti parametri MSM alla proprietà multi-stringa **storeReaderFields**:
 
       * **msm:isSource**
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Aggiungi un `starred` nodo (di tipo **nt:unstructure**) di seguito `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` con le seguenti proprietà:
+1. Aggiungete un nodo `starred` (di tipo **nt:unstructure**) sotto `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` con le seguenti proprietà:
 
-   * **dataIndex**: `starred` di tipo String
+   * **dataIndex**:  `starred` di tipo String
 
-   * **intestazione**: `Starred` di tipo String
+   * **intestazione**:  `Starred` di tipo String
 
-   * **xtype**: `gridcolumn` di tipo String
+   * **xtype**:  `gridcolumn` di tipo String
 
-1. (facoltativo) Rilasciare le colonne sulle quali non si desidera visualizzare `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (facoltativo) Rilasciare le colonne che non si desidera visualizzare in `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
-1. `/siteadmin` è un percorso personalizzato che, come impostazione predefinita, punta a `/libs/wcm/core/content/siteadmin`.
-Per reindirizzare questa opzione alla versione dell&#39;amministratore del sito, `/apps/wcm/core/content/siteadmin` definire la proprietà `sling:vanityOrder` con un valore superiore a quello definito in `/libs/wcm/core/content/siteadmin`. Il valore predefinito è 300, quindi è adatto qualsiasi valore superiore.
+1. `/siteadmin` è un percorso personalizzato che, come impostazione predefinita, punta a  `/libs/wcm/core/content/siteadmin`.
+Per reindirizzare l&#39;utente alla versione dell&#39;amministratore del sito in `/apps/wcm/core/content/siteadmin`, definire la proprietà `sling:vanityOrder` in modo che abbia un valore superiore a quello definito in `/libs/wcm/core/content/siteadmin`. Il valore predefinito è 300, quindi è adatto qualsiasi valore superiore.
 
-1. Passate alla console Amministrazione siti Web e andate al sito Geometrixx:
+1. Passate alla console di amministrazione dei siti Web e individuate il sito di Geometrixx:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
 
-1. È disponibile la nuova colonna **Starred** , con le seguenti informazioni personalizzate:
+1. È disponibile la nuova colonna denominata **Starred**, con le seguenti informazioni personalizzate:
 
 ![screen_shot_2012-02-14at104602](assets/screen_shot_2012-02-14at104602.png)
 
 >[!CAUTION]
 >
->Se più configurazioni della griglia corrispondono al percorso richiesto definito dalla proprietà **pathRegex** , verrà utilizzato il primo, e non il più specifico, il che significa che l&#39;ordine delle configurazioni è importante.
+>Se più configurazioni della griglia corrispondono al percorso richiesto definito dalla proprietà **pathRegex**, verrà utilizzato il primo, e non il percorso più specifico, il che significa che l&#39;ordine delle configurazioni è importante.
 
 ### Pacchetto di esempio {#sample-package}
 
-Il risultato di questa esercitazione è disponibile nel pacchetto [Personalizzazione della console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) di amministrazione dei siti Web su Condivisione pacchetti.
+Il risultato di questa esercitazione è disponibile nel pacchetto [Customizing the Websites Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) on Package Share (Personalizzazione della console di amministrazione dei siti Web).
