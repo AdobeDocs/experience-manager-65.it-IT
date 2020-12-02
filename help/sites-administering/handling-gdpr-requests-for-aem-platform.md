@@ -1,6 +1,6 @@
 ---
-title: Gestione delle richieste GDPR per AEM Foundation
-seo-title: Gestione delle richieste GDPR per AEM Foundation
+title: Gestione delle richieste GDPR per la AEM Foundation
+seo-title: Gestione delle richieste GDPR per la AEM Foundation
 description: 'null'
 seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
@@ -8,6 +8,9 @@ contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
 source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 6%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
 
 ## Supporto GDPR di AEM Foundation {#aem-foundation-gdpr-support}
 
-A livello di AEM Foundation, i Dati personali memorizzati sono il Profilo utente. Di conseguenza, le informazioni contenute in questo articolo riguardano principalmente come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e eliminazione del GDPR.
+A livello di AEM Foundation, i Dati Personali memorizzati sono il Profilo Utente. Di conseguenza, le informazioni contenute in questo articolo riguardano principalmente come accedere e eliminare i profili utente, rispettivamente per soddisfare le richieste di accesso e eliminazione del GDPR.
 
 ## Accesso a un profilo utente {#accessing-a-user-profile}
 
 ### Passaggi manuali {#manual-steps}
 
-1. Aprite la console Amministrazione utente, accedendo a **[!UICONTROL Impostazioni - Protezione - Utenti]** o sfogliando direttamente `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Aprite la console Amministrazione utente, accedendo a **[!UICONTROL Impostazioni - Protezione - Utenti]** o visitando direttamente `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -34,13 +37,13 @@ A livello di AEM Foundation, i Dati personali memorizzati sono il Profilo utente
 
    ![usersearch](assets/usersearch.png)
 
-1. Infine, aprite il profilo utente facendo clic su di esso, quindi selezionate nella scheda **[!UICONTROL Dettagli]** .
+1. Infine, apri il profilo utente facendo clic su di esso, quindi seleziona la scheda **[!UICONTROL Dettagli]**.
 
    ![userprofile_small](assets/userprofile_small.png)
 
 ### API HTTP {#http-api}
 
-Come già detto, Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
+Come già detto,  Adobe fornisce API per l&#39;accesso ai dati utente, al fine di facilitare l&#39;automazione. Esistono diversi tipi di API che potete utilizzare:
 
 **API UserProperties**
 
@@ -90,23 +93,24 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Elimina informazioni profilo utente {#delete-user-profile-information}
 
-1. Accedete a CRXDE Lite, quindi cercate `[!UICONTROL userId]`:
+1. Accedete al CRXDE Lite , quindi cercate `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Apri il nodo utente in cui si trova per impostazione `[!UICONTROL /home/users]` predefinita:
+1. Apri il nodo utente che si trova in `[!UICONTROL /home/users]` per impostazione predefinita:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Eliminare i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione di AEM:
+1. Eliminare i nodi del profilo e tutti i relativi elementi figlio. Esistono due formati per i nodi del profilo, a seconda della versione AEM:
 
-   1. Il profilo privato predefinito in `[!UICONTROL /profile]`
+   1. Profilo privato predefinito in `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`, per i nuovi profili creati con AEM 6.5.
+
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### API HTTP {#http-api-1}
 
-Le procedure seguenti utilizzano lo strumento della riga di `curl` comando per illustrare come disabilitare l&#39;utente con la **[!UICONTROL caverna]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
+Le procedure seguenti utilizzano lo `curl`strumento della riga di comando per illustrare come disabilitare l’utente con **[!UICONTROL cavery]** `userId` ed eliminare i profili disponibili nel percorso predefinito.
 
 * *Individuazione della home page dell&#39;utente*
 
