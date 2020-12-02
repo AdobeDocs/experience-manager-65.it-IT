@@ -12,6 +12,9 @@ discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 97%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
 
 La console Componenti consente di consultare tutti i componenti definiti nell’istanza e di visualizzare le informazioni chiave di ciascun componente.
 
-It can be accessed from **Tools ->** **General ->** **Components**. Nella console sono disponibili le viste a scheda e a elenco. Poiché non vi è alcuna struttura ad albero per i componenti, la vista a colonne non è disponibile.
+È possibile accedervi da **Strumenti ->** **Generale ->** **Componenti**. Nella console sono disponibili le viste a schede e a elenco. Poiché non esiste una struttura ad albero per i componenti, la vista a colonne non è disponibile.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
->La console dei componenti mostra tutti i componenti del sistema. Il [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) mostra i componenti disponibili agli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
+>La console dei componenti mostra tutti i componenti del sistema. Il [browser Componenti](/help/sites-authoring/author-environment-tools.md#components-browser) mostra i componenti disponibili per gli autori e nasconde eventuali gruppi di componenti che iniziano con un punto ( `.`).
 
 ## Ricerca {#searching}
 
@@ -34,7 +37,7 @@ L’icona **Solo contenuto** (in alto a sinistra) permette di aprire il pannello
 
 ![screen-shot_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
 
-### Dettagli componente {#component-details}
+### Dettagli dei componenti {#component-details}
 
 Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic sulla risorsa desiderata. Sono disponibili tre schede:
 
@@ -53,7 +56,7 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
       * Facendo clic su Super Type della risorsa passerai al relativo componente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Poiché `/apps` non è modificabile in fase di esecuzione, la console Componenti è disponibile in sola lettura.
 
 * **Criteri**
 
@@ -69,7 +72,7 @@ Per visualizzare i dettagli relativi a un componente specifico, tocca/fai clic s
 
 * **Documentazione**
 
-   Se lo sviluppatore ha fornito la [documentazione per il componente](/help/sites-developing/developing-components.md#documenting-your-component), questa viene visualizzata nella scheda **Documentazione**. Se non è presente documentazione, la scheda **Documentazione** non verrà visualizzata.
+   Se lo sviluppatore ha fornito la [documentazione per il componente](/help/sites-developing/developing-components.md#documenting-your-component), questa viene visualizzata nella scheda **Documentazione**. Se la documentazione non è disponibile, la scheda **Documentazione** non verrà visualizzata.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
