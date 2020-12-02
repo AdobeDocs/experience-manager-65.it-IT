@@ -1,6 +1,6 @@
 ---
-title: Configurazioni servizi cloud
-seo-title: Configurazioni servizi cloud
+title: Configurazioni Cloud Service
+seo-title: Configurazioni Cloud Service
 description: Potete estendere le istanze esistenti per creare configurazioni personalizzate
 seo-description: Potete estendere le istanze esistenti per creare configurazioni personalizzate
 uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
 
-# Configurazioni servizi cloud{#cloud-service-configurations}
+# Configurazioni Cloud Service{#cloud-service-configurations}
 
 Le configurazioni sono progettate per fornire la logica e la struttura per la memorizzazione delle configurazioni del servizio.
 
 Potete estendere le istanze esistenti per creare configurazioni personalizzate.
 
-##  Concetti {#concepts}
+## Concetti {#concepts}
 
 I principi utilizzati nello sviluppo delle configurazioni si sono basati sui seguenti concetti:
 
@@ -29,8 +32,8 @@ I principi utilizzati nello sviluppo delle configurazioni si sono basati sui seg
 * Le configurazioni (ad es. proprietà/paragrafi) vengono ereditate dagli elementi padre.
 * Riferimento dai nodi di analisi per percorso.
 * Facilmente estensibile.
-* Dispone della flessibilità necessaria per gestire configurazioni più complesse, come [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Il supporto per le dipendenze (ad esempio, i plug-in di [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) richiedono una configurazione di [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Offre la flessibilità necessaria per gestire configurazioni più complesse, ad esempio [ Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Supporto per dipendenze (ad es. [ i plug-in Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) necessitano di una configurazione [ Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Struttura {#structure}
 
@@ -51,7 +54,7 @@ Per fornire una configurazione per un nuovo servizio è necessario:
    * un modello di configurazione
    * un componente di configurazione
 
-Il modello e il componente devono ereditare il modello `sling:resourceSuperType` dal modello base:
+Il modello e il componente devono ereditare il simbolo `sling:resourceSuperType` dal modello di base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -69,7 +72,7 @@ Il modello verrà esteso:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-e definire un componente `resourceType` che punti al componente personalizzato.
+e definire un `resourceType` che punti al componente personalizzato.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -106,7 +109,7 @@ Dopo aver configurato il modello e il componente, puoi aggiungere la configurazi
 
 `/etc/cloudservices/<service-name>`
 
-### Modello contenuto {#content-model}
+### Modello di contenuto {#content-model}
 
 Il modello di contenuto è memorizzato come `cq:Page` in:
 
@@ -119,9 +122,9 @@ Il modello di contenuto è memorizzato come `cq:Page` in:
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-Le configurazioni sono memorizzate sotto il nodo secondario `jcr:content`.
+Le configurazioni sono memorizzate nel nodo secondario `jcr:content`.
 
-* Le proprietà fisse, definite in una finestra di dialogo, devono essere memorizzate `jcr:node` direttamente.
+* Le proprietà fisse definite in una finestra di dialogo devono essere memorizzate direttamente in `jcr:node`.
 * Gli elementi dinamici (che utilizzano `parsys` o `iparsys`) utilizzano un nodo secondario per memorizzare i dati del componente.
 
 ```xml
@@ -139,7 +142,7 @@ Per la documentazione di riferimento sull&#39;API, vedete [com.day.cq.wcm.webser
 
 ### Integrazione AEM {#aem-integration}
 
-I servizi disponibili sono elencati nella scheda Servizi **** cloud della finestra di dialogo Proprietà **di** pagina (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
+I servizi disponibili sono elencati nella scheda **Cloud Services** della finestra di dialogo **Proprietà pagina** (di qualsiasi pagina che eredita da `foundation/components/page` o `wcm/mobile/components/page`).
 
 La scheda fornisce inoltre:
 
@@ -150,19 +153,19 @@ La scheda fornisce inoltre:
 
 Quando si memorizzano le credenziali utente per il servizio, tutte le password devono essere crittografate.
 
-A tal fine, è possibile aggiungere un campo modulo nascosto. Questo campo deve avere l&#39;annotazione `@Encrypted` nel nome della proprietà; ad esempio, per il `password` campo il nome sarà scritto come:
+A tal fine, è possibile aggiungere un campo modulo nascosto. Questo campo deve contenere l&#39;annotazione `@Encrypted` nel nome della proprietà; ad esempio, per il campo `password` il nome verrà scritto come segue:
 
 `password@Encrypted`
 
-La proprietà verrà quindi crittografata automaticamente (utilizzando il `CryptoSupport` servizio) dal `EncryptionPostProcessor`.
+La proprietà verrà quindi cifrata automaticamente (utilizzando il servizio `CryptoSupport`) dal `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->È simile alle ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` annotazioni standard.
+>È simile alle annotazioni ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` standard.
 
 >[!NOTE]
 >
->Per impostazione predefinita, le `EcryptionPostProcessor` sole richieste di cifratura `POST` effettuate a `/etc/cloudservices`.
+>Per impostazione predefinita, `EcryptionPostProcessor` codifica solo le richieste `POST` effettuate a `/etc/cloudservices`.
 
 #### Proprietà aggiuntive per jcr pagina di servizio:nodi di contenuto {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -174,7 +177,7 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando il `Crypt
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Percorso di riferimento per un componente da includere automaticamente nella pagina.<br /> Viene utilizzato per ulteriori funzionalità e inclusione JS.<br /> Questo include il componente sulla pagina in cui<br /> è incluso (normalmente prima del <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> <code>body</code> tag).<br /> Nel caso in cui Analytics e Target utilizzino questa funzionalità per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
+   <td>Percorso di riferimento per un componente da includere automaticamente nella pagina.<br /> Viene utilizzato per ulteriori funzionalità e inclusione JS.<br /> Questo include il componente sulla pagina <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> in cui è incluso (in genere prima del  <code>body</code> tag).<br /> Nel caso in cui Analytics e Target utilizzino questa funzionalità per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
   </tr>
   <tr>
    <td>descrizione</td>
@@ -211,11 +214,11 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando il `Crypt
  </tbody>
 </table>
 
-### Use Cases {#use-cases}
+### Casi di utilizzo {#use-cases}
 
 Questi servizi sono forniti per impostazione predefinita:
 
-* [Snippet](/help/sites-administering/external-providers.md) Tracker (Google, WebTrends, ecc.)
+* [Snippet](/help/sites-administering/external-providers.md)  Tracker (Google, WebTrends, ecc.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
@@ -223,5 +226,5 @@ Questi servizi sono forniti per impostazione predefinita:
 
 >[!NOTE]
 >
->Consultate anche [Creazione di un servizio](/help/sites-developing/extending-cloud-config-custom-cloud.md)cloud personalizzato.
+>Vedere anche [Creazione di un Cloud Service personalizzato](/help/sites-developing/extending-cloud-config-custom-cloud.md).
 
