@@ -1,8 +1,8 @@
 ---
 title: eCommerce
 seo-title: eCommerce
-description: AEM eCommerce consente agli esperti di marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network.
-seo-description: AEM eCommerce consente agli esperti di marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network.
+description: AEM eCommerce consente ai professionisti del marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network.
+seo-description: AEM eCommerce consente ai professionisti del marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network.
 uuid: 75818c60-1cf1-4a91-94ce-d722563b661c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,16 +12,19 @@ discoiquuid: e972ee05-f0cb-40ca-9ae2-34395791c709
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 46610888fd61900c52b197e73a8a5850dc9c4c35
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 1%
 
 ---
 
 
 # eCommerce{#ecommerce}
 
-* [Concetti](/help/sites-administering/concepts.md)
+* [Concetti ](/help/sites-administering/concepts.md)
 * [Amministrazione (generica)](/help/sites-administering/generic.md)
 
-Adobe fornisce due versioni di Commerce Integration Framework:
+ Adobe fornisce due versioni di Commerce Integration Framework:
 
 <table>
  <tbody>
@@ -52,14 +55,14 @@ Adobe fornisce due versioni di Commerce Integration Framework:
   </tr>
   <tr>
    <td><p>Front-end</p> </td>
-   <td><p>AEM, pagine sottoposte a rendering sul lato server</p> </td>
+   <td><p>AEM pagine sottoposte a rendering sul lato server</p> </td>
    <td>Applicazione a pagina mista (rendering ibrido)</td>
   </tr>
   <tr>
    <td><p>Catalogo prodotti</p> </td>
    <td>
     <ul>
-     <li>Importazione prodotti, editor, caching in AEM</li>
+     <li>Importazione prodotti, editor, memorizzazione nella cache in AEM</li>
      <li>Cataloghi regolari con pagine AEM o proxy</li>
     </ul> </td>
    <td>
@@ -89,8 +92,8 @@ Adobe fornisce due versioni di Commerce Integration Framework:
   </tr>
   <tr>
    <td>Disponibilità</td>
-   <td><p>Sì. SAP Commerce Cloud (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantenere la compatibilità con Hybris 4</p> <p>Salesforce Commerce Cloud (connettore open-source per il supporto di AEM 6.4)</p> </td>
-   <td>Sì tramite open source tramite GitHub. Magento Commerce (Supporta Magento 2.3.2 (predefinito) e compatibile con Magento 2.3.1).</td>
+   <td><p>Sì. COMMERCE CLOUD SAP (estensione aggiornata per supportare AEM 6.4 e Hybris 5 (impostazione predefinita) e mantenere la compatibilità con Hybris 4</p> <p>Commerce Cloud Salesforce (connettore open-source per supportare AEM 6.4)</p> </td>
+   <td>Sì tramite open source tramite GitHub. Magento Commerce (Supporta l'Magento 2.3.2 (predefinito) e compatibile con Magento 2.3.1).</td>
   </tr>
   <tr>
    <td>Quando utilizzare</td>
@@ -109,7 +112,7 @@ eCommerce, insieme a Product Information Management (PIM), gestisce le attività
 * Record di archiviazione live e centralizzati
 * Interfacce Web
 
-AEM eCommerce consente agli esperti di marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network. L’ambiente di authoring di AEM consente di personalizzare pagine e componenti in base al contesto del visitatore e alle strategie di merchandising di destinazione; ad esempio:
+AEM eCommerce consente ai professionisti del marketing di offrire esperienze di acquisto personalizzate e personalizzate su siti Web, dispositivi mobili e social network. L’ambiente di authoring AEM consente di personalizzare pagine e componenti in base al contesto del visitatore e alle strategie di merchandising; ad esempio:
 
 * Pagine prodotto
 * Componenti per carrello acquisti
@@ -126,13 +129,13 @@ L&#39;implementazione consente l&#39;accesso in tempo reale alle informazioni su
 >
 >Per utilizzare il framework di integrazione con i provider di eCommerce esterni, è innanzitutto necessario installare i pacchetti richiesti. Per ulteriori informazioni, vedere [Distribuzione di eCommerce](/help/sites-deploying/ecommerce.md).
 >
->Per informazioni sull’estensione delle funzionalità eCommerce, consultate [Sviluppo di eCommerce](/help/sites-developing/ecommerce.md).
+>Per informazioni sull&#39;estensione delle funzionalità di eCommerce, vedere [Sviluppo di eCommerce](/help/sites-developing/ecommerce.md).
 
 ## Funzioni principali {#main-features}
 
 AEM eCommerce fornisce:
 
-* Una serie di componenti **AEM** integrati per illustrare i risultati ottenuti per il progetto:
+* Una serie di **componenti AEM out-of-the-box** per illustrare i risultati che è possibile ottenere per il progetto:
 
    * Visualizzazione del prodotto
    * Carrello
@@ -140,32 +143,35 @@ AEM eCommerce fornisce:
    * Prodotti visualizzati di recente
    * Voucher
    * e altri
+
    ![](assets/chlimage_1-130.png)
 
    >[!NOTE]
    >
-   >Il framework di integrazione fornito da AEM consente inoltre di creare ulteriori componenti AEM per le funzionalità di eCommerce, indipendentemente dal motore specifico utilizzato.
+   >Il framework di integrazione fornito da AEM consente inoltre di creare componenti AEM aggiuntivi per le funzionalità di eCommerce, indipendentemente dal motore specifico utilizzato.
 
-* **Ricerca** - tramite:
+* **Cerca** - utilizzando:
 
    * ricerca AEM
    * la ricerca del sistema eCommerce
-   * una ricerca di terze parti (ad esempio Search&amp;Promote)
+   * una ricerca di terze parti (ad esempio, Search&amp;Promote)
    * o una loro combinazione.
+
    ![](assets/chlimage_1-131.png)
 
-* AEM consente di **presentare i contenuti su più canali**, indipendentemente dalla finestra del browser completa o dal dispositivo mobile. In questo modo, i contenuti vengono distribuiti nel formato richiesto dai visitatori.
+* Utilizza la capacità AEM di **presentare i contenuti su più canali**, indipendentemente dalla finestra del browser completa o dal dispositivo mobile. In questo modo, i contenuti vengono distribuiti nel formato richiesto dai visitatori.
 
    ![](assets/chlimage_1-132.png)
 
-* Possibilità di **sviluppare un’implementazione personalizzata dell’integrazione basata sul framework[eCommerce di](#the-framework)**AEM.
+* La capacità di **sviluppare la propria implementazione di integrazione in base al [AEM eCommerce framework](#the-framework)**.
 
    Le due implementazioni attualmente disponibili sono entrambe basate sulla stessa base, oltre all&#39;API generale (il framework). L&#39;implementazione di una nuova integrazione richiede solo l&#39;implementazione delle funzioni necessarie per l&#39;integrazione. I componenti front-end possono essere utilizzati da qualsiasi nuova implementazione utilizzando interfacce (in modo che siano indipendenti dall&#39;implementazione).
 
-* La possibilità di sviluppare un&#39;attività commerciale basata sull&#39; **esperienza basata sui dati e sulle attività** dell&#39;acquirente. Questo consente di realizzare molti scenari:
+* La possibilità di sviluppare **e-commerce basato sull&#39;esperienza in base ai dati e alle attività dell&#39;acquirente**. Questo consente di realizzare molti scenari:
 
-   * Un esempio potrebbe essere la riduzione dei costi di spedizione quando l&#39;ordine totale supera un importo specifico.
+   * Un esempio potrebbe consistere nel fornire riduzioni dei costi di spedizione quando l&#39;ordine totale supera un importo specifico.
    * Un altro potrebbe consentire di fornire offerte stagionali che utilizzano i dati del profilo (ad esempio la posizione). Questi possono quindi essere evidenziati, sempre in base ad altri fattori, se necessario.
+
    Nell’esempio di seguito, un teaser viene visualizzato in quanto il contenuto del carrello è inferiore a $75:
 
    ![](assets/chlimage_1-133.png)
@@ -180,9 +186,9 @@ AEM eCommerce fornisce:
    * Cronologia ordine completo
    * Aggiornamento del catalogo espresso
 
-## Il Quadro {#the-framework}
+## Framework {#the-framework}
 
-La sezione [Concetti](/help/sites-administering/concepts.md) descrive la struttura in modo più dettagliato, ma quanto segue fornisce una vista ad alto livello della struttura:
+La sezione [Concetti](/help/sites-administering/concepts.md) descrive il framework in modo più dettagliato, ma quanto segue fornisce una visualizzazione ad alto livello del framework:
 
 ### Cosa? {#what}
 
