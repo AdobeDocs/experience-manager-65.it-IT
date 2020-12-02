@@ -12,6 +12,9 @@ discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 1%
 
 ---
 
@@ -22,11 +25,13 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 >
 >Questo documento descrive come personalizzare le console nell’interfaccia touch moderna e non applicabile all’interfaccia classica.
 
-AEM offre diversi metodi per personalizzare le console (e la funzionalità [di authoring delle](/help/sites-developing/customizing-page-authoring-touch.md)pagine) dell’istanza di authoring.
+AEM offre diversi metodi per personalizzare le console (e la [funzionalità di authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)) dell’istanza di authoring.
 
-* ClientlibsClientlibs consente di estendere l&#39;implementazione predefinita per realizzare nuove funzionalità, riutilizzando al contempo le funzioni, gli oggetti e i metodi standard. Quando personalizzate, potete creare clientlib personalizzate in `/apps.` Ad esempio, può contenere il codice richiesto per il componente personalizzato.
+* Clientlibs
+Clientlibs consente di estendere l&#39;implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Quando si personalizzano, è possibile creare clientlib personalizzate in `/apps.` Ad esempio, può contenere il codice richiesto per il componente personalizzato.
 
-* OverlaysOverlays Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la propria funzionalità personalizzata (in `/apps`). Quando create una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione delle risorse di sling consente l’ereditarietà.
+* Sovrapposizioni
+Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la propria funzionalità personalizzata (in `/apps`). Quando create una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione delle risorse di sling consente l’ereditarietà.
 
 che possono essere utilizzati in molti modi per estendere le console AEM. Di seguito è riportata una piccola selezione (ad alto livello).
 
@@ -37,27 +42,29 @@ che possono essere utilizzati in molti modi per estendere le console AEM. Di seg
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
 >* [GRANITE](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
-Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - Personalizzazione dell&#39;interfaccia [utente per AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Questo argomento è trattato anche nella sessione [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - [Personalizzazione dell&#39;interfaccia utente per AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
->Non ***devi*** cambiare nulla nel `/libs` percorso.
+>***non è necessario*** modificare nulla nel percorso `/libs`.
 >
->Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell’istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
+>Questo perché il contenuto di `/libs` viene sovrascritto al successivo aggiornamento dell&#39;istanza (e potrebbe essere sovrascritto quando si applica un hotfix o un feature pack).
 >
 >Il metodo consigliato per la configurazione e altre modifiche è:
 >
 >1. Ricreare l&#39;elemento richiesto (ovvero come esiste in `/libs`) in `/apps`
    >
    >
-1. Apportare modifiche all&#39;interno `/apps`
+1. Apportare modifiche all&#39;interno di `/apps`
+
 >
 
 
 
-Ad esempio, è possibile sovrapporre la seguente posizione all’interno della `/libs` struttura:
+Ad esempio, è possibile sovrapporre la seguente posizione all&#39;interno della struttura `/libs`:
 
 * console (qualsiasi console basata sulle pagine dell’interfaccia Granite); ad esempio:
 
@@ -65,7 +72,7 @@ Ad esempio, è possibile sovrapporre la seguente posizione all’interno della `
 
 >[!NOTE]
 >
->Per ulteriori suggerimenti e strumenti, consulta l’articolo della Knowledge Base [Risoluzione di problemi](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)relativi all’interfaccia utente AEM Touch.
+>Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base, [Risoluzione dei problemi AEM TouchUI issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 
 ## Personalizzazione della visualizzazione predefinita per una console {#customizing-the-default-view-for-a-console}
 
@@ -91,11 +98,11 @@ Potete personalizzare la visualizzazione predefinita (colonna, scheda, elenco) p
 
    * **Nome**: `sling:orderBefore`
    * **Tipo**: `String`
-   * **Valore**: `column`
+   * **Valore**:  `column`
 
 ### Aggiungi nuova azione alla barra degli strumenti {#add-new-action-to-the-toolbar}
 
-1. Potete creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un&#39;azione **Promote to Twitter** all&#39;indirizzo:
+1. Potete creare componenti personalizzati e includere le librerie client corrispondenti per le azioni personalizzate. Ad esempio, un&#39;azione **Passa a Twitter** all&#39;indirizzo:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -107,7 +114,7 @@ Potete personalizzare la visualizzazione predefinita (colonna, scheda, elenco) p
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-### Limitare un&#39;azione barra degli strumenti a un gruppo specifico {#restrict-a-toolbar-action-to-a-specific-group}
+### Limita un&#39;azione barra degli strumenti a un gruppo specifico {#restrict-a-toolbar-action-to-a-specific-group}
 
 1. Potete utilizzare una condizione di rendering personalizzata per sovrapporre l&#39;azione standard e imporre condizioni specifiche che devono essere soddisfatte prima del rendering.
 
@@ -127,7 +134,7 @@ Potete personalizzare la visualizzazione predefinita (colonna, scheda, elenco) p
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Utilizzando le proprietà di questo nodo è possibile definire le `groups` autorizzazioni per eseguire l&#39;azione specifica; ad esempio, `administrators`
+   Utilizzando le proprietà di questo nodo è possibile definire il `groups` consentito per eseguire l&#39;azione specifica; ad esempio, `administrators`
 
 ### Personalizzazione delle colonne nella vista Elenco {#customizing-columns-in-the-list-view}
 
@@ -146,12 +153,13 @@ Per personalizzare le colonne nella vista a elenco:
       ```
 
    * Aggiungete le nuove colonne o rimuovete quelle esistenti.
-   Per ulteriori informazioni, consultate [Utilizzo delle sovrapposizioni (e Sling Resource Merger)](/help/sites-developing/overlays.md) .
+   Per ulteriori informazioni, vedere [Utilizzo delle sovrapposizioni (e la fusione delle risorse Sling)](/help/sites-developing/overlays.md).
 
 1. Facoltativamente:
 
-   * Se si desidera collegare dati aggiuntivi, è necessario scrivere una pagina [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
+   * Se si desidera collegare dati aggiuntivi, è necessario scrivere una [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
       `pageInfoProviderType` proprietà.
+
    Ad esempio, vedete la classe/pacchetto collegato (da GitHub) di seguito.
 
 1. È ora possibile selezionare la colonna nel configuratore colonna della vista a elenco.
@@ -160,4 +168,4 @@ Per personalizzare le colonne nella vista a elenco:
 
 Quando si utilizza una console, un caso comune è quando l’utente deve selezionare una delle risorse (ad esempio pagine, componenti, risorse ecc.). Può assumere la forma di un elenco, ad esempio da cui l’autore deve scegliere un elemento.
 
-Per mantenere l&#39;elenco a dimensioni ragionevoli e anche pertinente al caso d&#39;uso, è possibile implementare un filtro sotto forma di predicato personalizzato. Consultate [questo articolo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) per i dettagli.
+Per mantenere l&#39;elenco a dimensioni ragionevoli e anche pertinente al caso d&#39;uso, è possibile implementare un filtro sotto forma di predicato personalizzato. Per ulteriori informazioni, vedere [questo articolo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).
