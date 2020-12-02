@@ -1,6 +1,6 @@
 ---
 title: Newsletter per contenuti multimediali dinamici
-description: 'La newsletter Dynamic Media Newsletter di Experience League è una newsletter mensile. È stato progettato per aiutarvi a imparare a usare i contenuti multimediali dinamici e i contenuti multimediali dinamici Classic in modo da poter iniziare subito a creare valore. In questa newsletter sono disponibili preziose risorse per la creazione di conoscenze, tra cui video, panoramiche delle soluzioni e introduzione ad alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora. '
+description: 'La newsletter Dynamic Media Newsletter di  Experience League è una newsletter mensile. È stato progettato per aiutarvi a imparare a usare i contenuti multimediali dinamici e i contenuti multimediali dinamici Classic in modo da poter iniziare subito a creare valore. In questa newsletter sono disponibili preziose risorse per la creazione di conoscenze, tra cui video, panoramiche delle soluzioni e introduzione ad alcune delle funzioni e funzionalità chiave come i predefiniti per immagini, i predefiniti per visualizzatori, i profili video e altro ancora. '
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # ![Logo di Dynamic Media Newsletter](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-La newsletter mensile per contenuti multimediali dinamici di Experience League è stata progettata per consentirti di acquisire rapidamente contenuti multimediali dinamici e contenuti multimediali dinamici classici e di iniziare subito a sfruttarne il valore.
+La newsletter mensile per contenuti multimediali dinamici di  Experience League è stata progettata per consentirvi di imparare a usare al meglio i contenuti multimediali dinamici e i contenuti multimediali dinamici classici e di iniziare subito a sfruttarli.
 
 In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse per la creazione di conoscenze, come video introduttivi, panoramica delle soluzioni e introduzione ad alcune delle caratteristiche e funzionalità chiave della soluzione, come predefiniti per immagini, predefiniti per visualizzatori, profili video e altro ancora.
 
 ## Lasciatevi ispirare. Rimanete informati.
 
-[Registratevi](https://www.adobe.com/subscription/dynamic-media-newsletter.html) per ricevere la newsletter per contenuti multimediali dinamici mensilmente nella casella in entrata.
+[Registratevi ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) per ricevere la newsletter per contenuti multimediali dinamici mensilmente nella casella in entrata.
 
 ## È stato risolto un problema della Dynamic Media Newsletter?
 
@@ -95,7 +95,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
    * Un articolo CMSwire che spiega come aggiornare la strategia rich media per soddisfare le aspettative dei clienti attuali.
    * Accesso al webinar on-demand su contenuti multimediali dinamici dalla serie di Experience Builder.
    * Incontra Nick Peters, Manager, Site Reliability Engineering, Adobe Experience Manager.
-   * Scopri i contenuti multimediali dinamici e Dynamic Media Classic in Experience League.
+   * Scopri i contenuti multimediali dinamici e Dynamic Media Classic in  Experience League.
 
 * **[Settembre 2019, Numero 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
@@ -106,7 +106,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
    * Una seconda possibilità per accedere a due seminari Web di Generatore di abilità recente.
    * Guardate il webinar on-demand sulla protezione delle risorse digitali dalla pirateria.
    * Scopri Bridget Roman, Senior Product Marketing Manager per Adobe Experience Manager Assets.
-   * Scopri i contenuti multimediali dinamici e Dynamic Media Classic in Experience League.
+   * Scopri i contenuti multimediali dinamici e Dynamic Media Classic in  Experience League.
 
 
 * **[Agosto 2019, Numero 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
@@ -115,7 +115,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
 
    * Scoprite le funzioni importanti disponibili solo quando eseguite l&#39;aggiornamento a Dynamic Media.
    * Scopri una serie di webinar progettati per consentirti di imparare a usare le risorse Adobe Experience Manager e i contenuti multimediali dinamici.
-   * Inizia il tuo viaggio ottenendo valore da Dynamic Media su Experience League.
+   * Inizia il tuo viaggio ottenendo valore da Dynamic Media su  Experience League.
    * Scopri in anteprima la potente integrazione di settembre che ti permetterà di analizzare in che modo i visitatori interagiscono con i tuoi contenuti multimediali.
    * Scopri PieterJan Pieper, il sito Web di supporto tecnico per contenuti multimediali dinamici.
 
@@ -136,7 +136,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
    In questo numero:
 
    * Godetevi i video che evidenziano la comodità dell&#39;aggiornamento a Contenuti multimediali dinamici in  AEM Assets.
-   * Guarda i video chiave di Experience League.
+   * Guarda i video principali su come  Experience League.
    * Scopri di più sul  Adobe Insider Tour.
    * Scopri come proteggere le risorse digitali dalla pirateria.
    * Scoprite come ritagliare le immagini in base all&#39;interfaccia utente grafica basata sull&#39;interfaccia utente.
@@ -147,7 +147,7 @@ In questa newsletter &quot;one-stop shop&quot; potete trovare preziose risorse p
    In questo numero:
 
    * Scopri le 10 funzionalità nascoste di Dynamic Media Classic in un post di blog.
-   * Guarda i video chiave di Experience League.
+   * Guarda i video principali su come  Experience League.
    * Scopri il prossimo  Adobe Insider Tour.
    * Leggete una serie di blog in tre parti per aggiornare la strategia rich media.
    * Scoprite come ritagliare i video basati sull’interfaccia utente grafica dinamica.
