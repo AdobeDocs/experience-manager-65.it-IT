@@ -12,13 +12,16 @@ discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
 
 # Componenti per community di sovrapposizioni {#overlay-communities-components}
 
-L’intenzione di [sovrapporre](/help/communities/client-customize.md#overlays) un componente predefinito consiste nel modificare l’aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di cercare nella cartella /libs. Il percorso del componente è quindi identico al percorso del componente predefinito, ma si trova nella cartella /apps e non nella cartella /libs.
+L&#39;intenzione di [overlay](/help/communities/client-customize.md#overlays) di un componente predefinito è di modificare l&#39;aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di cercare nella cartella /libs. Il percorso del componente è quindi identico al percorso del componente predefinito, ma si trova nella cartella /apps e non nella cartella /libs.
 
 ## Esempio {#example}
 
@@ -34,9 +37,9 @@ Per sovrapporre i commenti è necessario:
 
 **E-mail di notifiche overlay**
 
-Se desiderate personalizzare il messaggio delle notifiche e-mail, potete farlo [sovrapponendo](/help/communities/client-customize.md#overlays) i modelli in **/libs/settings/community/templates/email/html**.
+Supponiamo che desideriate personalizzare il messaggio delle notifiche e-mail, potete farlo sovrapponendo [i modelli in **/libs/settings/community/templates/email/html**.](/help/communities/client-customize.md#overlays)
 
-Ad esempio, per modificare le notifiche e-mail di menzioni (per un componente community specifico in cui viene creato ugc) aggiungete una condizione **if** per il **riferimento** al verbo nei modelli dei componenti per i quali avete attivato il supporto **@menzioni** .
+Ad esempio, per modificare le notifiche e-mail di menzioni (per un componente community specifico in cui viene creato ugc) aggiungere una condizione **if** per il verbo **speak** nei modelli dei componenti per i quali è stato abilitato il supporto **@menzioni**.
 
 ```java
 {{#equals this.verb "mention"}}\
