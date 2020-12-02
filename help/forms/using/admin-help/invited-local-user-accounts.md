@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Utilizzate la pagina Utenti invitati e locali per gestire gli utenti invitati e locali. Questa pagina viene visualizzata solo se sono soddisfatti i seguenti requisiti:
 
-* Siete un amministratore a cui vengono assegnati il ruolo Gestisci utenti invitati e locali sulla protezione del documento e il ruolo Utente nella console di amministrazione. Consultate [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
-* La registrazione degli utenti invitati è abilitata. Consultate [Configurazione della registrazione](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)degli utenti invitati.
+* Siete un amministratore a cui vengono assegnati il ruolo Gestisci utenti invitati e locali per la protezione dei documenti e il ruolo Utente della console di amministrazione. (Vedere [Creazione e configurazione di ruoli](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+* La registrazione degli utenti invitati è abilitata. Consultate [Configurazione della registrazione dell&#39;utente invitato](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).
 
 La pagina Utenti invitati e locali contiene due schede che potete utilizzare per cercare, visualizzare, modificare, bloccare, sbloccare ed eliminare gli account utente invitati e locali.
 
@@ -37,11 +40,11 @@ Potete aggiungere uno o più account utente invitati alla volta per la protezion
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali, quindi fate clic su Invita nuovo utente.
 1. Digitate gli indirizzi e-mail degli utenti che desiderate invitare. Inserite più indirizzi su una riga, separati da una virgola.
 
-   Il messaggio creato quando si abilita la registrazione degli utenti invitati viene inviato agli utenti. Consultate [Configurazione della registrazione](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)degli utenti invitati.
+   Il messaggio creato quando si abilita la registrazione degli utenti invitati viene inviato agli utenti. Consultate [Configurazione della registrazione dell&#39;utente invitato](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).
 
-1. Fate clic su OK.
+1. Fai clic su OK.
 
-## Visualizzazione delle informazioni su un utente locale {#view-information-about-a-local-user}
+## Visualizza informazioni su un utente locale {#view-information-about-a-local-user}
 
 Potete visualizzare informazioni sugli utenti locali, inclusi nome, indirizzo e-mail, organizzazione, stato di registrazione e dominio.
 
@@ -50,7 +53,7 @@ Potete visualizzare informazioni sugli utenti locali, inclusi nome, indirizzo e-
 
    I dettagli utente vengono visualizzati e potete ripristinare la password dell&#39;utente e disattivare l&#39;account.
 
-## Invio di un&#39;e-mail a un utente esterno non registrato {#send-an-email-to-an-unregistered-external-user}
+## Invia un&#39;e-mail a un utente esterno non registrato {#send-an-email-to-an-unregistered-external-user}
 
 Quando si aggiunge un utente invitato, Document Security invia automaticamente all&#39;utente una richiesta di posta elettronica di registrazione. Potete inoltre generare manualmente un messaggio e-mail di registrazione da inviare a un utente invitato che non si è ancora registrato. A questo scopo, ad esempio, potete inviare un nuovo invito se scade il messaggio e-mail di registrazione di un utente invitato.
 
@@ -62,7 +65,7 @@ Quando si aggiunge un utente invitato, Document Security invia automaticamente a
 
 Potete ripristinare le password per gli utenti invitati attivati che si sono registrati con Document Security ma hanno dimenticato la password. Quando reimpostate una password, viene generato un messaggio e-mail che contiene una nuova password temporanea per l’utente.
 
-Quando avete attivato il processo di registrazione degli utenti invitati, avete creato un messaggio e-mail che verrà inviato agli utenti che chiedono loro di ripristinare le password. Consultate [Configurazione della registrazione](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)degli utenti invitati.
+Quando avete attivato il processo di registrazione degli utenti invitati, avete creato un messaggio e-mail che verrà inviato agli utenti che chiedono loro di ripristinare le password. Consultate [Configurazione della registrazione dell&#39;utente invitato](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali e fate clic sulla scheda Utenti locali.
 1. Nell’elenco di utenti, selezionate l’utente appropriato.
@@ -94,19 +97,19 @@ Se eliminate un account utente, solo voi o un altro amministratore potete ripris
 
 >[!NOTE]
 >
->Gli utenti invitati che sono stati eliminati tramite l&#39;interfaccia di gestione utenti di AEM non possono essere nuovamente invitati finché non sono stati eliminati di nuovo utilizzando la procedura seguente.
+>Gli utenti invitati che sono stati eliminati tramite l&#39;interfaccia di gestione utenti dei moduli AEM non possono essere nuovamente invitati fino a quando non sono stati nuovamente eliminati utilizzando la procedura seguente.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali e fate clic sulla scheda Utenti invitati.
 1. Selezionate la casella di controllo accanto a uno o più utenti, fate clic su Elimina, quindi su OK.
 
-## Cercare un account utente invitato {#search-for-an-invited-user-account}
+## Cerca un account utente invitato {#search-for-an-invited-user-account}
 
 Potete cercare gli account utente invitati utilizzando un indirizzo e-mail.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali.
 1. Nella casella Trova e-mail, digitate l’indirizzo e-mail dell’utente e fate clic su Trova.
 
-## Ricerca di un account utente locale {#search-for-a-local-user-account}
+## Cerca un account utente locale {#search-for-a-local-user-account}
 
 Potete cercare un utente locale utilizzando l&#39;indirizzo e-mail o il nome e il dominio dell&#39;utente.
 
@@ -115,12 +118,12 @@ Potete cercare un utente locale utilizzando l&#39;indirizzo e-mail o il nome e i
 
 ## Rimozione di un account utente locale {#remove-a-local-user-account}
 
-È possibile eliminare account utente locali dalla protezione dei documenti. Potreste desiderare di eliminare account, ad esempio, quando gli utenti modificano le informazioni personali del loro account e-mail.
+È possibile eliminare gli account utente locali dalla protezione dei documenti. Potreste desiderare di eliminare account, ad esempio, quando gli utenti modificano le informazioni personali del loro account e-mail.
 
 1. Nella console di amministrazione, fate clic su Servizi > Document Security > Utenti invitati e locali e fate clic sulla scheda Utenti locali.
 1. Selezionate la casella di controllo accanto a uno o più utenti, fate clic su Elimina, quindi su OK.
 
-## Ordinare l’elenco di utenti {#sort-the-user-list}
+## Ordinare l&#39;elenco di utenti {#sort-the-user-list}
 
 Per trovare più facilmente gli utenti, ordinate l’elenco di utenti per intestazione di colonna. Le icone a triangolo accanto all’intestazione della colonna indicano quale colonna è attualmente utilizzata per ordinare:
 
