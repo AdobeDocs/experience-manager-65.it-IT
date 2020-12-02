@@ -61,30 +61,30 @@ In entrambi i casi, è necessario:
 
 * [Specificare i Dettagli del flusso di lavoro nella Procedura guidata Crea flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Avviare un flusso di lavoro dalla barra degli strumenti di Sites {#starting-a-workflow-from-the-sites-toolbar}
+### Avviare un flusso di lavoro dalla barra degli strumenti di Sites  {#starting-a-workflow-from-the-sites-toolbar}
 
-You can start a workflow from the toolbar of the **Sites** console:
+È possibile avviare un flusso di lavoro dalla barra degli strumenti della console **Siti**:
 
 1. Vai alla pagina richiesta e selezionala.
 
-1. From the **Create** option in the toolbar you can now select **Workflow**.
+1. Dall&#39;opzione **Crea** nella barra degli strumenti è ora possibile selezionare **Workflow**.
 
    ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
 1. La procedura guidata **Crea flusso di lavoro** consente di [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Avviare un flusso di lavoro dalla Timeline {#starting-a-workflow-from-the-timeline}
+### Avviare un flusso di lavoro dalla Timeline  {#starting-a-workflow-from-the-timeline}
 
 Puoi avviare un flusso di lavoro da applicare alla risorsa selezionata dalla **Timeline** 
 
-1. [Selezionate la risorsa](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) e aprite [Timeline](/help/sites-authoring/basic-handling.md#timeline) (oppure aprite Timeline e selezionate la risorsa).
+1. [Selezionate la ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) risorsa e aprite  [Timeline](/help/sites-authoring/basic-handling.md#timeline)  (oppure aprite Timeline e selezionate la risorsa).
 1. Puoi utilizzare la freccia dal campo commento per visualizzare **Avvia flusso di lavoro**:
 
    ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
 1. La procedura guidata **Crea flusso di lavoro** consente di [specificare i dettagli del flusso di lavoro](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Specificazione dei Dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Specificazione dei Dettagli del flusso di lavoro nella procedura guidata Crea flusso di lavoro  {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 La procedura guidata **Crea flusso di lavoro** consente di selezionare il flusso di lavoro e specificare i dettagli necessari.
 
@@ -118,7 +118,7 @@ Puoi specificare i dettagli:
 
 1. Al passaggio **Ambito** puoi selezionare:
 
-   * **Aggiungi contenuto** per aprire il [browser](/help/sites-authoring/author-environment-tools.md#path-browser) dei percorsi e selezionare ulteriori risorse; nel browser, tocca o fai clic su **Seleziona** per aggiungere il contenuto all’istanza del flusso di lavoro.
+   * **Aggiungi** contenuto per aprire il  [browser ](/help/sites-authoring/author-environment-tools.md#path-browser) percorso e selezionare ulteriori risorse; nel browser, tocca o fai clic su  **** Seleziona per aggiungere il contenuto all’istanza del flusso di lavoro.
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 
@@ -139,9 +139,9 @@ Una finestra di dialogo si apre per permettere di perfezionare la selezione incl
    >
    >Se aggiungi ulteriori risorse, puoi selezionare **Indietro** per regolare l’impostazione di **Mantieni pacchetto flusso di lavoro** nel passaggio **Proprietà**.
 
-1. Use **Create** to close the wizard and create the workflow instance. Una notifica appare nella console Sites.
+1. Utilizzare **Create** per chiudere la procedura guidata e creare l&#39;istanza del flusso di lavoro. Una notifica appare nella console Sites.
 
-## Avviare un flusso di lavoro dall&#39;editor pagina {#starting-a-workflow-from-the-page-editor}
+## Avviare un flusso di lavoro dall&#39;editor pagina  {#starting-a-workflow-from-the-page-editor}
 
 Quando modifichi una pagina, puoi selezionare **Informazioni pagina** nella barra degli strumenti. Il menu a discesa contiene l&#39;opzione **Avvia nel flusso di lavoro**. Questa apre una finestra di dialogo nella quale puoi specificare il flusso di lavoro obbligatorio, insieme a un titolo richiesto:
 
