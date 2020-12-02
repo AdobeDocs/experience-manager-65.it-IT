@@ -19,13 +19,13 @@ ht-degree: 2%
 ---
 
 
-# Verifica dell’interfaccia{#testing-your-ui}
+# Verifica dell&#39;interfaccia utente{#testing-your-ui}
 
 >[!NOTE]
 >
 >A partire da AEM 6.5, il framework di test dell&#39;interfaccia utente di hobbes.js è obsoleto.  Adobe non prevede di apportare ulteriori miglioramenti e consiglia ai clienti di utilizzare l&#39;automazione Selenium.
 >
->See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
+>Vedere [Funzioni obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
 AEM fornisce un framework per l&#39;automazione dei test per l&#39;interfaccia utente AEM. Utilizzando il framework, potete scrivere ed eseguire test di interfaccia direttamente in un browser Web. Il framework fornisce un&#39;API javascript per la creazione di test.
 
@@ -33,16 +33,16 @@ Il framework di test AEM utilizza Hobbes.js, una libreria di test scritta in Jav
 
 >[!NOTE]
 >
->Per informazioni dettagliate sull&#39;API, consultate la [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) di Hobbes.js.
+>Per informazioni dettagliate sull&#39;API, consultare la documentazione di Hobbes.js [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 ## Struttura dei test {#structure-of-tests}
 
 Quando si utilizzano test automatizzati all&#39;interno di AEM, è importante comprendere i termini seguenti:
 
-| Azione | Un&#39; **azione** è un&#39;attività specifica in una pagina Web, ad esempio fare clic su un collegamento o un pulsante. |
+| Azione | Un **Action** è un&#39;attività specifica in una pagina Web, ad esempio fare clic su un collegamento o un pulsante. |
 |---|---|
-| Caso di prova | Un caso **di** prova è una situazione specifica che può essere costituita da una o più **azioni**. |
-| Suite di test | Una suite **di** test è un gruppo di casi **di** test correlati che insieme testano un caso d’uso specifico. |
+| Caso di prova | Un **Test Case** è una situazione specifica che può essere composta da una o più **Actions**. |
+| Suite di test | Una **Suite di test** è un gruppo di casi di test **correlati** che insieme testano un caso d&#39;uso specifico. |
 
 ## Esecuzione di test {#executing-tests}
 
@@ -50,7 +50,7 @@ Quando si utilizzano test automatizzati all&#39;interno di AEM, è importante co
 
 Aprite la console di test per visualizzare le suite di test registrate. Il pannello Test contiene un elenco delle suite di test e dei relativi casi di test.
 
-Passate alla console Strumenti tramite Navigazione **globale > Strumenti > Operazioni > Test**.
+Passare alla console Strumenti tramite **Navigazione globale -> Strumenti > Operazioni -> Test**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -76,7 +76,7 @@ Per eseguire una suite di test:
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Tocca o fai clic sul pulsante **Esegui test** .
+1. Tocca o fai clic sul pulsante **Esegui test**.
 
    ![](do-not-localize/chlimage_1-4.png)
 
@@ -84,7 +84,7 @@ Per eseguire una suite di test:
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Esaminate i risultati del test case toccando o facendo clic sulla descrizione per aprire il pannello **Risultato** . Toccando o facendo clic sul nome del test case nel pannello **Risultato** vengono visualizzati tutti i dettagli.
+1. Esaminare i risultati del test case toccando o facendo clic sulla descrizione per aprire il pannello **Result**. Toccando o facendo clic sul nome del test case nel pannello **Result** vengono visualizzati tutti i dettagli.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -94,7 +94,7 @@ Le suite di test vengono eseguite in sequenza nell&#39;ordine in cui appaiono ne
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Nel pannello Test, toccate o fate clic sul pulsante **Esegui tutti i test** o sul pulsante **Esegui test** sotto il titolo della suite di test da eseguire.
+1. Nel pannello Test, toccate o fate clic sul pulsante **Esegui tutti i test** oppure sul pulsante **Esegui test** sotto il titolo della suite di test da eseguire.
 
    ![](do-not-localize/chlimage_1-5.png)
 
@@ -104,13 +104,13 @@ Le suite di test vengono eseguite in sequenza nell&#39;ordine in cui appaiono ne
 
 ## Creazione e utilizzo di una suite di test semplice {#creating-and-using-a-simple-test-suite}
 
-La procedura seguente illustra la creazione ed esecuzione di una suite di test con contenuto [](/help/sites-developing/we-retail.md)We.Retail, ma è possibile modificare facilmente il test per utilizzare una pagina Web diversa.
+La procedura seguente illustra la creazione ed esecuzione di una suite di test con [We.Retail content](/help/sites-developing/we-retail.md), ma è possibile modificare facilmente il test per utilizzare una pagina Web diversa.
 
-Per informazioni dettagliate sulla creazione di suite di test, consultate la documentazione [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)Hobbes.js.
+Per informazioni dettagliate sulla creazione di suite di test, consultate la [documentazione API di Hobbes.js](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Apri CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
-1. Fate clic con il pulsante destro del mouse sulla `/etc/clientlibs` cartella e fate clic su **Crea > Crea cartella**. Digitare `myTests` il nome e fare clic su **OK**.
-1. Fare clic con il pulsante destro del mouse sulla `/etc/clientlibs/myTests` cartella e scegliere **Crea > Crea nodo**. Utilizzate i seguenti valori di proprietà e fate clic su **OK**:
+1. Fare clic con il pulsante destro del mouse sulla cartella `/etc/clientlibs` e scegliere **Crea > Crea cartella**. Digitare `myTests` per il nome e fare clic su **OK**.
+1. Fare clic con il pulsante destro del mouse sulla cartella `/etc/clientlibs/myTests` e scegliere **Crea > Crea nodo**. Utilizzare i seguenti valori delle proprietà e quindi fare clic su **OK**:
 
    * Nome: `myFirstTest`
    * Tipo: `cq:ClientLibraryFolder`
@@ -130,23 +130,23 @@ Per informazioni dettagliate sulla creazione di suite di test, consultate la doc
    >Per verificare i moduli adattivi, aggiungere i seguenti valori alle categorie e alle dipendenze. Esempio:
    >
    >
-   >**categorie**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categorie**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
    >
-   >**dipendenze**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
+   >**dipendenze**:  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
-1. Fate clic su **Salva tutto**.
-1. Fare clic con il pulsante destro del mouse sul `myFirstTest` nodo e scegliere **Crea > Crea file**. Name the file `js.txt` and click **OK**.
-1. Nel `js.txt` file, immettete il testo seguente:
+1. Fare clic su **Salva tutto**.
+1. Fare clic con il pulsante destro del mouse sul nodo `myFirstTest` e scegliere **Crea > Crea file**. Denominate il file `js.txt` e fate clic su **OK**.
+1. Nel file `js.txt`, immettete il testo seguente:
 
    ```
    #base=.
    myTestSuite.js
    ```
 
-1. Fate clic su **Salva tutto** , quindi chiudete il `js.txt` file.
-1. Fare clic con il pulsante destro del mouse sul `myFirstTest` nodo e scegliere **Crea > Crea file**. Name the file `myTestSuite.js` and click **OK**.
-1. Copiate il seguente codice nel `myTestSuite.js` file e salvate il file:
+1. Fare clic su **Salva tutto**, quindi chiudere il file `js.txt`.
+1. Fare clic con il pulsante destro del mouse sul nodo `myFirstTest` e scegliere **Crea > Crea file**. Denominate il file `myTestSuite.js` e fate clic su **OK**.
+1. Copiate il codice seguente nel file `myTestSuite.js`, quindi salvate il file:
 
    ```
    new hobs.TestSuite("Experience Content Test Suite", {path:"/etc/clientlibs/myTests/myFirstTest/myTestSuite.js"})
@@ -161,4 +161,4 @@ Per informazioni dettagliate sulla creazione di suite di test, consultate la doc
    );
    ```
 
-1. Passate alla console **Test** per provare la suite di test.
+1. Andate alla console **Testing** per provare la suite di test.
