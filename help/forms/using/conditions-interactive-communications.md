@@ -10,6 +10,9 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1511'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Creazione e modifica di frammenti di condizione da utilizzare nelle comunicazion
 
 ## Panoramica {#overview}
 
-Condizione è un frammento di documento che è possibile includere in una comunicazione interattiva. Gli altri frammenti di documento sono [testo](../../forms/using/texts-interactive-communications.md), elenco e frammento di layout. Le condizioni consentono di definire una o più risorse contestuali da includere in una comunicazione interattiva basata sui dati e sulle regole fornite.
+Condizione è un frammento di documento che è possibile includere in una comunicazione interattiva. Gli altri frammenti di documento sono [text](../../forms/using/texts-interactive-communications.md), un elenco e un frammento di layout. Le condizioni consentono di definire una o più risorse contestuali da includere in una comunicazione interattiva basata sui dati e sulle regole fornite.
 
 Esempi:
 
@@ -36,9 +39,9 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
 * Espressioni matematiche
 * Date
 
-## Create condition {#createcondition}
+## Crea condizione {#createcondition}
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Frammenti documento]**.
 1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Condizione]**.
 1. Specificate le seguenti informazioni:
 
@@ -46,11 +49,11 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
    * **[!UICONTROL Nome]**: Nome univoco della condizione, all’interno di una cartella. In uno stato non possono esistere due frammenti di documento (testo, condizione o elenco) con lo stesso nome all’interno di una cartella. Nel campo Nome, è possibile immettere solo caratteri, numeri e trattini della lingua inglese. Il campo Nome viene compilato automaticamente in base al campo Titolo. I caratteri speciali, gli spazi, i numeri e i caratteri non inglesi immessi nel campo Titolo vengono sostituiti con i trattini nel campo Nome. Anche se il valore nel campo Titolo viene automaticamente copiato nel campo Nome, è possibile modificarlo.
 
    * **[!UICONTROL Descrizione]**: Digitare una descrizione del frammento di documento.
-   * **[!UICONTROL Modello]** dati modulo: Facoltativamente, selezionare il pulsante di opzione Modello dati modulo per creare la condizione in base a un modello dati del modulo. Quando si seleziona il pulsante di scelta Modello dati modulo, viene visualizzato il campo Modello **[!UICONTROL dati]** modulo. Individuare e selezionare un modello dati del modulo. Durante la creazione di una condizione per una comunicazione interattiva, accertatevi di utilizzare lo stesso modello dati che intendete utilizzare nella comunicazione interattiva. Per ulteriori informazioni sul modello dati del modulo, vedere Integrazione [](../../forms/using/data-integration.md)dei dati.
+   * **[!UICONTROL Modello]** dati modulo: Facoltativamente, selezionare il pulsante di opzione Modello dati modulo per creare la condizione in base a un modello dati del modulo. Quando si seleziona il pulsante di scelta Modello dati modulo, viene visualizzato il campo **[!UICONTROL Modello dati modulo]**. Individuare e selezionare un modello dati del modulo. Durante la creazione di una condizione per una comunicazione interattiva, accertatevi di utilizzare lo stesso modello dati che intendete utilizzare nella comunicazione interattiva. Per ulteriori informazioni sul modello di dati del modulo, vedere [Integrazione dei dati](../../forms/using/data-integration.md).
 
    * **[!UICONTROL Tag]**: Se necessario, per creare un tag personalizzato immettete un valore nel campo di testo e toccate Invio. Quando salvate questa condizione, vengono creati i nuovi tag aggiunti.
 
-1. Toccate **[!UICONTROL Avanti]**.
+1. Toccare **[!UICONTROL Next]**.
 
    Viene visualizzata la pagina Crea condizione.
 
@@ -74,15 +77,19 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Un]Rifiuto Del Cambiamento.**Toccate questa icona per rifiutare le modifiche eventualmente apportate alla risorsa e alla regola nella condizione.   **[B]Accetta Modifica.**Toccate questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.   **[C]Duplica risorsa.**Toccate questa icona per creare una copia della risorsa insieme alla regola applicata, se presente, nella condizione. Quindi potete procedere alla modifica della regola e della risorsa per la risorsa duplicata. Duplicare una risorsa è utile per creare regole simili per visualizzare risorse alternative basate su un contesto particolare.   **[D]Mostra anteprima.**Toccate questa icona per visualizzare un&#39;anteprima della risorsa nella pagina Crea\Modifica condizione.   **&#39;server&#39; Reorder.** Toccate e tenete premuto questa icona per trascinare le risorse e riordinarle in una condizione.
+   **[Modifica ] di espulsione.** Toccate questa icona per rifiutare le modifiche eventualmente apportate alla risorsa e alla regola nella condizione.
+   **[Modifica ] BAccept.** Toccate questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.
+   **[Risorsa ] CDuplicate.** Toccate questa icona per creare una copia della risorsa insieme alla regola applicata, se presente, nella condizione. Quindi potete procedere alla modifica della regola e della risorsa per la risorsa duplicata. Duplicare una risorsa è utile per creare regole simili per visualizzare risorse alternative basate su un contesto particolare.
+   **[Anteprima ] DShow.** Toccate questa icona per visualizzare un&#39;anteprima della risorsa nella pagina Crea\Modifica condizione.
+   **&#39;server&#39; Reorder.** Toccate e tenete premuto questa icona per trascinare le risorse e riordinarle in una condizione.
 
    Potete selezionare le seguenti opzioni per specificare il comportamento della condizione in fase di esecuzione:
 
    * **Valutazione Di Più Risultati Disabilitata\Valutazione Di Più Risultati Abilitata**: Quando questa opzione è attivata (viene visualizzata come &quot;Valutazione di più risultati abilitata&quot;), vengono valutate tutte le regole e il risultato è la somma di tutte le regole vere. Se questa opzione è disabilitata (viene visualizzata come &quot;Valutazione di più risultati disabilitata&quot;), viene valutata solo la prima regola che si è rivelato vera e diventa l&#39;output della condizione.
 
-   * **Interruzione** pagina: Selezionate questa opzione ( ![interruzione](assets/break.png)) per aggiungere un&#39;interruzione di pagina tra le risorse delle condizioni. Se questa opzione non è selezionata ( ![nobreak](assets/nobreak.png)), se una condizione è in eccesso rispetto alla pagina successiva nell&#39;output di stampa, l&#39;intera condizione viene spostata sulla pagina successiva invece di interrompere la pagina tra le risorse nella condizione.
+   * **Interruzione** pagina: Selezionate questa opzione ( ![interruzione](assets/break.png)) per aggiungere un&#39;interruzione di pagina tra le risorse delle condizioni. Se questa opzione non è selezionata ( ![nobreak](assets/nobreak.png)), se una condizione è in eccesso alla pagina successiva nell&#39;output di stampa, l&#39;intera condizione viene spostata nella pagina successiva invece di interrompere la pagina tra le risorse nella condizione.
 
-1. Toccate **[!UICONTROL Crea regola]** per aggiungere regole per visualizzare o nascondere le risorse, a seconda delle necessità. Per utilizzare le variabili nelle regole, vedere [Creazione di variabili](#variables). Per ulteriori informazioni, vedere [Aggiunta di regole alla condizione](#ruleeditor).
+1. Toccate **[!UICONTROL Crea regola]** per aggiungere regole per visualizzare o nascondere le risorse, a seconda delle necessità. Per utilizzare le variabili nelle regole, vedere [creazione di variabili](#variables). Per ulteriori informazioni, vedere [Aggiunta di regole alla condizione](#ruleeditor).
 
    Le regole create vengono visualizzate nella colonna REGOLA nella schermata Crea condizione.
 
@@ -102,17 +109,17 @@ Le risorse nelle condizioni di cui viene eseguito il rendering in base alle rego
 
 ## Modificare una condizione {#edit-a-condition}
 
-È possibile modificare una condizione seguendo la procedura seguente. È inoltre possibile scegliere di modificare una condizione da una comunicazione interattiva selezionando Modifica frammento nel menu a comparsa.
+È possibile modificare una condizione seguendo la procedura seguente. È inoltre possibile scegliere di modificare una condizione all&#39;interno di una comunicazione interattiva selezionando Modifica frammento nel menu a comparsa.
 
-1. Selezionare **[!UICONTROL Moduli]** > Frammenti **** documento.
+1. Selezionare **[!UICONTROL Forms]** > **[!UICONTROL Frammenti documento]**.
 1. Passate alla condizione e selezionatela.
 1. Toccate **[!UICONTROL Modifica]**.
-1. Apportate le modifiche necessarie alla condizione. Per ulteriori dettagli sulle informazioni che puoi modificare in una condizione, consulta [Creare una condizione](#createcondition).
-1. Toccate **[!UICONTROL Salva]** , quindi toccate **[!UICONTROL Chiudi]**.
+1. Apportate le modifiche necessarie alla condizione. Per ulteriori informazioni sulle informazioni che è possibile modificare in una condizione, vedere [Crea condizione](#createcondition).
+1. Toccate **[!UICONTROL Save]**, quindi toccate **[!UICONTROL Close]**.
 
-## Creazione di regole in condizioni {#ruleeditor}
+## Creare le regole nella condizione {#ruleeditor}
 
-Utilizzando l’editor di regole in una condizione, potete creare regole per visualizzare o nascondere le risorse in base alle condizioni **** preimpostate. Queste condizioni possono essere costruite sulla base di:
+Utilizzando l&#39;editor di regole in una condizione, potete creare regole per visualizzare o nascondere le risorse in base alle **condizioni preimpostate**. Queste condizioni possono essere costruite sulla base di:
 
 * Stringhe
 * Numeri
@@ -121,14 +128,15 @@ Utilizzando l’editor di regole in una condizione, potete creare regole per vis
 * Proprietà del modello dati del modulo associato
 * Qualsiasi [variabile](#variables) eventualmente creata
 
-### Crea regola in condizione {#create-rule-in-condition}
+### Crea regola nella condizione {#create-rule-in-condition}
 
-1. Durante la creazione o la modifica di una condizione, toccate l&#39;icona ![ruleeditoricon](assets/ruleeditoricon.png) (Editor regola) per la risorsa pertinente.
+1. Durante la creazione o la modifica di una condizione, toccate l&#39;icona ![ruleeditoricon](assets/ruleeditoricon.png) (Editor regole) per la risorsa pertinente.
 
    Viene visualizzata la finestra di dialogo Crea regola. Oltre a stringa, numero, espressione matematica e data, nell&#39;Editor regola sono disponibili anche le seguenti informazioni per la creazione di istruzioni delle regole:
 
    * Proprietà del modello dati del modulo associato
-   * Qualsiasi [variabile](#variables) creata.
+   * Qualsiasi [variabile](#variables) eventualmente creata.
+
    ![createruledialog](assets/createruledialog.png)
 
    Selezionare l&#39;opzione appropriata da valutare.
@@ -154,7 +162,7 @@ Utilizzando l’editor di regole in una condizione, potete creare regole per vis
 
 ## Creazione e utilizzo di variabili in una condizione {#variables}
 
-Quando create o modificate una regola in una condizione, potete toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola. La finestra di dialogo estesa e completa consente di:
+Durante la creazione o la modifica di una regola in una condizione, potete toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola. La finestra di dialogo estesa e completa consente di:
 
 * Creazione e utilizzo di variabili nella regola
 * Trascinare le proprietà e le variabili del modello dati modulo nella regola
@@ -163,13 +171,13 @@ Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola
 
 ### Creare variabili {#create-variables}
 
-1. Quando create o modificate una regola in una condizione, potete toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola.
+1. Durante la creazione o la modifica di una regola in una condizione, potete toccare ![icon_resize](assets/icon_resize.png) (Ridimensiona) per espandere la finestra di dialogo Crea regola\Modifica regola.
 
    Viene visualizzata la finestra di dialogo Espansa e completa.
 
    ![expandeditrulefinestra di dialogo](assets/expandededitruledialog.png)
 
-1. Nel riquadro a sinistra, toccate **[!UICONTROL Variabili]**.
+1. Nel riquadro a sinistra, toccare **[!UICONTROL Variabili]**.
 
    Viene visualizzato il riquadro Variabili.
 
@@ -179,19 +187,19 @@ Toccate nuovamente Ridimensiona per tornare alla finestra di dialogo Crea regola
 
    Viene visualizzato il riquadro Crea variabili.
 
-1. Immettete le seguenti informazioni e toccate **[!UICONTROL Crea]**:
+1. Immettere le informazioni seguenti e toccare **[!UICONTROL Crea]**:
 
    * **[!UICONTROL Nome]**: Nome della variabile.
    * **[!UICONTROL Descrizione]**: Facoltativamente, immettete una descrizione della variabile.
    * **[!UICONTROL Tipo]**: Selezionare un tipo di variabile: Stringa, Numero, Booleano o Data.
-   * **[!UICONTROL Consenti solo]** valori specifici: Per le variabili String e Number, potete fare in modo che l&#39;agente scelga da un set specifico di valori per un segnaposto nell&#39;interfaccia utente dell&#39;agente. Per specificare il set di valori, selezionare questa opzione e specificare i valori separati da virgola consentiti nel campo **[!UICONTROL Valori]** .
+   * **[!UICONTROL Consenti solo]** valori specifici: Per le variabili String e Number, potete fare in modo che l&#39;agente scelga da un set specifico di valori per un segnaposto nell&#39;interfaccia utente dell&#39;agente. Per specificare il set di valori, selezionare questa opzione e specificare i valori separati da virgola consentiti nel campo **[!UICONTROL Values]**.
 
 1. Toccate **[!UICONTROL Crea]**.
 
    La variabile viene creata ed elencata nel riquadro Variabili.
 
 1. Per inserire una variabile nella regola, trascinatela in un segnaposto per un&#39;opzione nella regola.
-1. Dopo aver creato una regola valida, toccate **[!UICONTROL Fine]**.
+1. Dopo aver creato una regola valida, toccare **[!UICONTROL Fine]**.
 
    Se necessario, apportate ulteriori modifiche alla condizione e salvatela.
 
