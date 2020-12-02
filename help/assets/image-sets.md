@@ -33,7 +33,7 @@ Ad esempio, supponete di voler presentare immagini di berretti con diverse bolle
 
 >[!NOTE]
 >
->Per informazioni sull’interfaccia utente di Assets, consulta [Gestione delle risorse](/help/assets/manage-assets.md).
+>Per informazioni sull&#39;interfaccia utente di Assets, vedi [Gestione risorse](/help/assets/manage-assets.md).
 
 ## Avvio rapido: Set di immagini {#quick-start-image-sets}
 
@@ -49,43 +49,43 @@ Per iniziare subito a lavorare:
 
    In Set immagini, gli utenti fanno clic sulle miniature nel visualizzatore di set di immagini.
 
-   Per creare un set di immagini nelle risorse, toccate o fate clic su **[!UICONTROL Crea > Set immagini.]** Quindi, aggiungete le immagini e fate clic su **[!UICONTROL Salva.]**
+   Per creare un set di immagini nelle risorse, toccate o fate clic su **[!UICONTROL Crea > Set immagini.]** Quindi, aggiungete le immagini e fate clic su  **[!UICONTROL Salva.]**
 
-   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md).
+   È inoltre possibile creare automaticamente i set di immagini mediante i predefiniti per set di batch [predefiniti](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
    >I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 
    Consultate [Preparazione delle risorse di set di immagini per il caricamento e Caricamento dei file](#uploading-assets-in-image-sets).
 
-   See [Working with Selectors.](/help/assets/working-with-selectors.md)
+   Vedere [Uso dei selettori.](/help/assets/working-with-selectors.md)
 
-1. Aggiungete i predefiniti [per visualizzatori di set di](/help/assets/managing-viewer-presets.md)immagini in base alle vostre esigenze.
+1. Aggiungete i predefiniti per visualizzatori di set di immagini [a seconda delle necessità.](/help/assets/managing-viewer-presets.md)
 
-   Gli amministratori possono creare o modificare i predefiniti per visualizzatori di set di immagini. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers.]**
+   Gli amministratori possono creare o modificare i predefiniti per visualizzatori di set di immagini. Per visualizzare il set di immagini con un predefinito per visualizzatori, selezionate il set di immagini e, nel menu a discesa a sinistra, selezionate **[!UICONTROL Visualizzatori.]**
 
-   Consultate **[!UICONTROL Strumenti > Risorse > Predefiniti]** visualizzatore per creare o modificare i predefiniti per visualizzatori.
+   Per creare o modificare i predefiniti per visualizzatori, consultate **[!UICONTROL Strumenti > Risorse > Predefiniti visualizzatore]**.
 
-1. (Facoltativo) [Visualizzazione di set](/help/assets/image-sets.md#viewing-image-sets) di immagini creati con predefiniti per set di batch.
+1. (Facoltativo) [Visualizzazione di set di immagini](/help/assets/image-sets.md#viewing-image-sets) creati utilizzando i predefiniti per set di batch.
 1. [Anteprima set di immagini.](/help/assets/previewing-assets.md)
 
-   Selezionate il set di immagini ed effettuate l’anteprima. Fate clic sulle icone delle miniature per esaminare il set di immagini nel visualizzatore selezionato. Potete scegliere diversi visualizzatori dal menu **[!UICONTROL Visualizzatori]** , disponibile dal menu a discesa della barra a sinistra.
+   Selezionate il set di immagini ed effettuate l’anteprima. Fate clic sulle icone delle miniature per esaminare il set di immagini nel visualizzatore selezionato. Potete scegliere diversi visualizzatori dal menu **[!UICONTROL Visualizzatori]**, disponibile dal menu a discesa della barra a sinistra.
 
 1. [Pubblicare i set di immagini.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   Quando si pubblica un set di immagini, vengono attivati l’URL e il codice da incorporare. Inoltre, dovete [pubblicare qualsiasi predefinito](/help/assets/managing-viewer-presets.md) per visualizzatori personalizzato creato. I predefiniti per visualizzatori forniti sono già stati pubblicati.
+   Quando si pubblica un set di immagini, vengono attivati l’URL e il codice da incorporare. Inoltre, è necessario [pubblicare qualsiasi predefinito per visualizzatori personalizzato](/help/assets/managing-viewer-presets.md) creato. I predefiniti per visualizzatori forniti sono già stati pubblicati.
 
-1. [Collegare gli URL all’applicazione](/help/assets/linking-urls-to-yourwebapplication.md) Web o [incorporare il visualizzatore](/help/assets/embed-code.md)video o immagini.
+1. [Collegate gli URL all’](/help/assets/linking-urls-to-yourwebapplication.md) applicazione Web o  [incorporate il visualizzatore](/help/assets/embed-code.md) video o immagini.
 
     AEM Assets crea richieste URL per i set di immagini e le attiva dopo la pubblicazione dei set di immagini. Potete copiare questi URL quando visualizzate l’anteprima delle risorse. In alternativa, potete incorporarli nel sito Web.
 
-   Select the Image Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers.]**
+   Selezionate il set di immagini, quindi nel menu a discesa della barra a sinistra, selezionate **[!UICONTROL Visualizzatori.]**
 
    Consulta le sezioni [Collegamento di un set di immagini a una pagina web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporamento di un visualizzatore di video o immagini](/help/assets/embed-code.md).
 
-Per modificare i set di immagini, consultate [Modifica dei set di immagini.](#editing-image-sets) Inoltre, potete visualizzare e modificare le proprietà [dei set di](/help/assets/manage-assets.md#editing-properties)immagini.
+Per modificare i set di immagini, consultate [modifica dei set di immagini.](#editing-image-sets) Inoltre, potete visualizzare e modificare le proprietà [ dei set di ](/help/assets/manage-assets.md#editing-properties)immagini.
 
-In caso di problemi durante la creazione di set, consulta Immagini e set in [Risoluzione di problemi relativi a file multimediali dinamici - modalità](/help/assets/troubleshoot-dms7.md#images-and-sets)Scene7.
+In caso di problemi durante la creazione di set, consultate Immagini e set in [Risoluzione di problemi relativi ai file multimediali dinamici - Modalità Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
 ## Caricamento delle risorse nei set di immagini {#uploading-assets-in-image-sets}
 
@@ -117,8 +117,8 @@ Potete creare i set di immagini tramite l’interfaccia utente o l’API. Questa
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->**Importante:** I set di batch vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
+>È inoltre possibile creare automaticamente i set di immagini mediante i predefiniti per set di batch [predefiniti](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>**Importante: i set di batch** vengono creati dall’IPS (Image Production System) come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 
 Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte in ordine alfanumerico. Potete riordinare o ordinare manualmente le risorse dopo averle aggiunte.
 
@@ -134,7 +134,7 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. Nella pagina Editor set di immagini, nel campo **[!UICONTROL Titolo]** , inserite un nome per il set di immagini. Il nome viene visualizzato nel banner lungo il set di immagini. Facoltativamente, immettete una descrizione.
+1. Nella pagina Editor set di immagini, nel campo **[!UICONTROL Titolo]** immettete un nome per il set di immagini. Il nome viene visualizzato nel banner lungo il set di immagini. Facoltativamente, immettete una descrizione.
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
@@ -142,12 +142,12 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
    * Nell’angolo in alto a sinistra della pagina Editor set di immagini, toccate **[!UICONTROL Aggiungi risorsa.]**
 
-   * Nella parte centrale della pagina Editor set di immagini, toccate **[!UICONTROL Toccate per aprire il selettore delle risorse.]**
-   Toccate per selezionare le risorse da includere nel set di immagini. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select.]**
+   * Al centro della pagina Editor set di immagini, toccate **[!UICONTROL Toccate per aprire il selettore delle risorse.]**
+   Toccate per selezionare le risorse da includere nel set di immagini. Le risorse selezionate dispongono di un’icona a forma di segno di spunta. Al termine, nell&#39;angolo superiore destro della pagina, toccare **[!UICONTROL Seleziona.]**
 
    Con il Selettore risorse, puoi cercare le risorse digitando una parola chiave e toccando o facendo clic su **[!UICONTROL Invio.]** Per perfezionare i risultati della ricerca, puoi anche applicare i filtri. Puoi filtrare in base a percorso, raccolta, tipo di file e tag. Seleziona il filtro e tocca l’icona **[!UICONTROL Filtro]** nella barra degli strumenti. Per modificare la visualizzazione, tocca l’icona Visualizza e fai clic su **[!UICONTROL Vista a colonne]**, **[!UICONTROL Vista a schede]** o **[!UICONTROL Vista a elenco.]**
 
-   See [Working with Selectors.](/help/assets/working-with-selectors.md)
+   Vedere [Uso dei selettori.](/help/assets/working-with-selectors.md)
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
@@ -161,34 +161,34 @@ Quando aggiungete delle risorse al set, queste vengono automaticamente aggiunte 
 
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
-   * Per eliminare un’immagine, selezionatela e toccate **[!UICONTROL Elimina risorsa.]**
+   * Per eliminare un&#39;immagine, selezionatela e toccate **[!UICONTROL Elimina risorsa.]**
 
-   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
+   * Per applicare un predefinito, nell’angolo superiore destro della pagina toccate **[!UICONTROL Preset]**, quindi selezionate un predefinito da applicare a tutte le risorse alla volta.
    >[!NOTE]
    >
    >Quando crei il set di immagini, puoi modificare la miniatura del set o consentire ad AEM di selezionarla automaticamente in base alle risorse del set di immagini. Per selezionare una miniatura, tocca l’opzione **[!UICONTROL Cambia miniatura]** posta sopra il campo Titolo nella pagina Editor set di immagini, quindi seleziona un’immagine a piacere. Per trovare le immagini, puoi esplorare anche altre cartelle. Se hai selezionato una miniatura e vuoi che AEM ne generi una dal set di immagini, fai clic su **[!UICONTROL Passa alla]** **[!UICONTROL Miniatura automatica.]**
 
 1. Fai clic su **[!UICONTROL Salva.]** Il set di immagini appena creato viene visualizzato nella cartella in cui è stato creato.
 
-## Visualizzazione di set di immagini {#viewing-image-sets}
+## Visualizzazione dei set di immagini {#viewing-image-sets}
 
-Potete creare i set di immagini nell’interfaccia utente o automaticamente utilizzando i predefiniti [per set di](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)batch.
+Potete creare i set di immagini nell&#39;interfaccia utente o automaticamente utilizzando i predefiniti per set di batch [](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 >[!IMPORTANT]
 >
->I set di batch vengono creati da IPS [Image Production System] come parte dell’assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.)
+>I set di batch vengono creati dall&#39;IPS [Image Production System] come parte dell&#39;assimilazione delle risorse e sono disponibili solo in modalità Dynamic Media - Scene7.
 
-Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono visualizzati nell’interfaccia utente. Potete visualizzare questi set in tre modi diversi. (Questi metodi sono disponibili anche se avete creato i set di immagini nell’interfaccia utente).
+Tuttavia, i set creati utilizzando i predefiniti per set di batch, non *vengono visualizzati nell’interfaccia utente.* Potete visualizzare questi set in tre modi diversi. (Questi metodi sono disponibili anche se avete creato i set di immagini nell’interfaccia utente).
 
 * Aprite le proprietà di una singola risorsa. Le proprietà indicano i set di risorse selezionate a cui viene fatto riferimento per un membro. Fate clic sul nome del set per visualizzare l’intero set.
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* Da un’immagine inclusa in un qualsiasi set. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
+* Da un’immagine inclusa in un qualsiasi set. Selezionate il menu **[!UICONTROL Set]** per visualizzare i set di cui la risorsa è membro.
 
    ![6_5_imageset-setspullmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
+* Dalla ricerca è possibile selezionare **[!UICONTROL Filtro]**, quindi espandere **[!UICONTROL Contenuti multimediali dinamici]** e selezionare **[!UICONTROL Set.]**
 
    La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca &quot;Inizia con&quot;, diversi dalla ricerca AEM basata sull&#39;utilizzo dei criteri di ricerca &quot;Contiene&quot;. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per eseguire la ricerca nei set automatizzati.
 
@@ -196,7 +196,7 @@ Tuttavia, i set creati utilizzando i predefiniti per set di batch *non* vengono 
 
 >[!NOTE]
 >
->Potete visualizzare i set mediante l’interfaccia utente come descritto in [Modifica dei set](#editing-image-sets)di immagini.
+>È possibile visualizzare i set mediante l&#39;interfaccia utente come descritto in [Modifica di set di immagini](#editing-image-sets).
 
 ## Modifica dei set di immagini {#editing-image-sets}
 
@@ -212,7 +212,7 @@ Potete eseguire diverse attività di modifica sui set di immagini, ad esempio:
 
 1. Effettuate una delle seguenti operazioni:
 
-   * Passate il puntatore del mouse su una risorsa del set di immagini, quindi toccate **[!UICONTROL Modifica]** (icona matita).
+   * Passate il puntatore del mouse su una risorsa del set di immagini, quindi toccate **[!UICONTROL Modifica]** (icona a forma di matita).
    * Passate il puntatore del mouse su una risorsa del set di immagini, toccate **[!UICONTROL Seleziona]** (icona a forma di segno di spunta), quindi toccate **[!UICONTROL Modifica]** sulla barra degli strumenti.
    * Toccate una risorsa set di immagini, quindi toccate **[!UICONTROL Modifica]** (icona matita) sulla barra degli strumenti.
 
@@ -220,14 +220,14 @@ Potete eseguire diverse attività di modifica sui set di immagini, ad esempio:
 
    * Per riordinare le risorse, trascinate un’immagine in una nuova posizione (selezionate l’icona di riordinamento per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, fate clic sull’intestazione della colonna.
-   * Per aggiungere una risorsa o aggiornare una risorsa esistente, fate clic su **[!UICONTROL Aggiungi risorsa.]** Passate a una risorsa, selezionatela, quindi toccate **[!UICONTROL Seleziona]** vicino all’angolo superiore destro della pagina.
+   * Per aggiungere una risorsa o aggiornare una risorsa esistente, fate clic su **[!UICONTROL Aggiungi risorsa.]** Passate a una risorsa, selezionatela, quindi toccate  **** Seleziona nell’angolo in alto a destra della pagina.
 
       >[!NOTE]
       >
       >Se eliminate l’immagine che AEM usata per la miniatura sostituendola con un’altra immagine, viene comunque visualizzata la risorsa originale.
    * Per eliminare una risorsa, selezionatela e toccate o fate clic su **[!UICONTROL Elimina risorsa.]**
-   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
-   * Per aggiungere o modificare una miniatura, selezionate l’icona della miniatura accanto alla parte destra della risorsa. Passate alla nuova miniatura o alla nuova risorsa campione, selezionatela, quindi toccate **[!UICONTROL Seleziona.]**
+   * Per applicare un predefinito, nell’angolo superiore destro della pagina toccate **[!UICONTROL Preset]**, quindi selezionate un predefinito per visualizzatori.
+   * Per aggiungere o modificare una miniatura, selezionate l’icona della miniatura accanto alla parte destra della risorsa. Andate alla nuova miniatura o alla nuova risorsa campione, selezionatela, quindi toccate **[!UICONTROL Seleziona.]**
    * Per eliminare un intero set di immagini, selezionatelo e toccate **[!UICONTROL Elimina.]**
 
    >[!NOTE]
@@ -242,4 +242,4 @@ Consultate [Anteprima delle risorse](/help/assets/previewing-assets.md).
 
 ## Pubblicazione di set di immagini {#publishing-image-sets}
 
-Consultate [Pubblicazione delle risorse](/help/assets/publishing-dynamicmedia-assets.md).
+Consultate [Pubblicazione di risorse](/help/assets/publishing-dynamicmedia-assets.md).
