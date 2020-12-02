@@ -96,7 +96,7 @@ Per ripristinare una versione precedente:
 
 1. Seleziona **Ripristina questa versione**. La versione selezionata viene ripristinata e le informazioni nella timeline vengono aggiornate.
 
-## Anteprima di una versione   {#previewing-a-version}
+## Anteprima di una versione    {#previewing-a-version}
 
 Puoi visualizzare in anteprima una versione specifica:
 
@@ -129,7 +129,7 @@ Per confrontare una versione precedente con quella corrente:
 
 1. Seleziona **Confronta con corrente**. Viene visualizzata la finestra delle [differenze tra le pagine](/help/sites-authoring/page-diff.md), che mostra le differenze.
 
-## Timewarp   {#timewarp}
+## Timewarp    {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di una pagina in specifici momenti nel passato.
 
