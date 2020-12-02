@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Sviluppo con SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
+# Sviluppo con Commerce Cloud SAP {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
->Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce. Alcune specifiche ed esempi qui trattati faranno riferimento alla soluzione [ibrida](https://www.hybris.com/) .
+>Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce. Alcuni esempi e specifiche trattati in questo documento fanno riferimento alla soluzione [hybris](https://www.hybris.com/).
 
 Il framework di integrazione include un livello di integrazione con un&#39;API. Questo consente di:
 
@@ -34,7 +34,7 @@ Il framework di integrazione include un livello di integrazione con un&#39;API. 
 
 >[!NOTE]
 >
->[È disponibile anche la documentazione](/help/sites-developing/ecommerce.md#api-documentation) API.
+>[È disponibile anche ](/help/sites-developing/ecommerce.md#api-documentation) la documentazione API.
 
 Per utilizzare il livello di integrazione sono disponibili diversi componenti AEM predefiniti. Attualmente si tratta di:
 
@@ -44,29 +44,29 @@ Per utilizzare il livello di integrazione sono disponibili diversi componenti AE
 
 Per la ricerca viene fornito un gancio di integrazione che consente di utilizzare la ricerca di AEM, la ricerca del sistema eCommerce, una ricerca di terze parti (come Search&amp;Promote) o una combinazione di esso.
 
-## Selezione motore eCommerce {#ecommerce-engine-selection}
+## Selezione motore di eCommerce {#ecommerce-engine-selection}
 
 Il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce, il motore utilizzato deve essere identificabile da AEM:
 
-* I motori di eCommerce sono servizi OSGi che supportano l&#39; `CommerceService` interfaccia
+* I motori di eCommerce sono servizi OSGi che supportano l&#39;interfaccia `CommerceService`
 
-   * I motori possono essere distinti da una proprietà `commerceProvider` del servizio
+   * I motori possono essere distinti da una proprietà di servizio `commerceProvider`
 
 * AEM supporta `Resource.adaptTo()` per `CommerceService` e `Product`
 
-   * L&#39; `adaptTo` implementazione cerca una `cq:commerceProvider` proprietà nella gerarchia della risorsa:
+   * L&#39;implementazione di `adaptTo` cerca una proprietà `cq:commerceProvider` nella gerarchia della risorsa:
 
       * Se trovato, il valore viene utilizzato per filtrare la ricerca del servizio commerce.
 
       * Se non viene trovato, viene utilizzato il servizio di commercio di livello più elevato.
-   * Viene utilizzato un `cq:Commerce` mixin per `cq:commerceProvider` aggiungere risorse fortemente tipizzate.
+   * Viene utilizzato un mixin `cq:Commerce` per aggiungere il `cq:commerceProvider` alle risorse fortemente tipizzate.
 
 
-* La `cq:commerceProvider` proprietà viene utilizzata anche per fare riferimento alla definizione di fabbrica commerciale appropriata.
+* La proprietà `cq:commerceProvider` viene utilizzata anche per fare riferimento alla definizione di commerce factory appropriata.
 
-   * Ad esempio, una `cq:commerceProvider` proprietà con il valore `hybris` sarà correlata alla configurazione OSGi per **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory), dove `commerceProvider` anche il parametro ha il valore `hybris`.
+   * Ad esempio, una proprietà `cq:commerceProvider` con il valore `hybris` sarà correlata alla configurazione OSGi per **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - dove il parametro `commerceProvider` ha anche il valore `hybris`.
 
-   * In questo caso è possibile configurare ulteriori proprietà, ad esempio la versione **** del catalogo (se appropriato e disponibile).
+   * Qui è possibile configurare ulteriori proprietà, ad esempio **Versione catalogo** (se appropriato e disponibile).
 
 Vedere gli esempi seguenti:
 
@@ -114,7 +114,7 @@ Per sviluppare per Hybris 4 è necessario quanto segue:
 
    `-P hybris4`
 
-   Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel pacchetto `cq-commerce-hybris-server`.
+   Scarica la distribuzione preconfigurata di Hybris 4 e la incorpora nel bundle `cq-commerce-hybris-server`.
 
 * In Gestione configurazione OSGi:
 
@@ -124,13 +124,13 @@ Per sviluppare per Hybris 4 è necessario quanto segue:
 
 ### Gestione sessione {#session-handling}
 
-hybris utilizza una sessione utente per memorizzare informazioni come il carrello acquisti del cliente. L&#39;ID sessione viene restituito da hybris in un `JSESSIONID` cookie che deve essere inviato in seguito a richieste successive ad hybris. Per evitare di memorizzare l’ID sessione nell’archivio, questo viene codificato in un altro cookie memorizzato nel browser dell’acquirente. Vengono eseguiti i seguenti passaggi:
+hybris utilizza una sessione utente per memorizzare informazioni come il carrello acquisti del cliente. L&#39;ID sessione viene restituito da hybris in un cookie `JSESSIONID` che deve essere inviato in seguito a richieste successive a hybris. Per evitare di memorizzare l’ID sessione nell’archivio, questo viene codificato in un altro cookie memorizzato nel browser dell’acquirente. Vengono eseguiti i seguenti passaggi:
 
 * Alla prima richiesta non viene impostato alcun cookie sulla richiesta dell&#39;acquirente; viene quindi inviata una richiesta all’istanza hybris per creare una sessione.
 
 * I cookie di sessione vengono estratti dalla risposta, codificati in un nuovo cookie (ad esempio, `hybris-session-rest`) e impostati sulla risposta dell&#39;acquirente. La codifica in un nuovo cookie è necessaria, perché il cookie originale è valido solo per un determinato percorso e in caso contrario non viene inviato dal browser nelle richieste successive. Le informazioni sul percorso devono essere aggiunte anche al valore del cookie.
 
-* Su richieste successive, i cookie vengono decodificati dai `hybris-session-<*xxx*>` cookie e impostati sul client HTTP utilizzato per richiedere i dati da hybris.
+* Su richieste successive, i cookie vengono decodificati dai cookie `hybris-session-<*xxx*>` e impostati sul client HTTP utilizzato per richiedere i dati da hybris.
 
 >[!NOTE]
 >
@@ -146,15 +146,15 @@ hybris utilizza una sessione utente per memorizzare informazioni come il carrell
 
       `commerceSession.getProductPrice(Product product)`
 
-* Possiede la posizione *di* archiviazione per i dati dell&#39; **ordine**
+* Possiede la *posizione di storage* per i dati **order**
 
    `CommerceSession.getUserContext()`
 
 * Possiede anche la connessione di elaborazione **pagamento**
 
-* Possiede anche la connessione di **evasione**
+* Possiede anche la connessione **fulfillment**
 
-### Sincronizzazione e pubblicazione dei prodotti {#product-synchronization-and-publishing}
+### Sincronizzazione dei prodotti e pubblicazione {#product-synchronization-and-publishing}
 
 I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stato attuato il seguente meccanismo:
 
@@ -186,29 +186,29 @@ I dati di prodotto mantenuti in hybris devono essere disponibili in AEM. È stat
         }
    ```
 
-* La configurazione del catalogo in AEM riconosce le versioni **dei cataloghi Staged** e **Online** .
+* La configurazione del catalogo in AEM riconosce le versioni del catalogo **In fase** e **Online**.
 
 * La sincronizzazione di prodotti tra versioni catalogo richiederà una (disattivazione)attivazione della pagina AEM corrispondente (a, c)
 
-   * L&#39;aggiunta di un prodotto a una versione di catalogo **online** richiede l&#39;attivazione della pagina del prodotto.
+   * L&#39;aggiunta di un prodotto a una versione di catalogo **Online** richiede l&#39;attivazione della pagina del prodotto.
 
    * La rimozione di un prodotto richiede la disattivazione.
 
 * L&#39;attivazione di una pagina in AEM c) richiede un controllo (b) ed è possibile solo se
 
-   * Il prodotto si trova in una versione catalogo **online** per le pagine dei prodotti.
+   * Il prodotto è in una versione di catalogo **Online** per le pagine di prodotto.
 
-   * I prodotti di riferimento sono disponibili in una versione catalogo **online** per altre pagine (ad esempio, pagine di campagna).
+   * I prodotti di riferimento sono disponibili in una versione di catalogo **Online** per altre pagine (ad esempio, pagine di campagna).
 
-* Le pagine di prodotto attivate devono accedere alla versione **online** (d) dei dati del prodotto.
+* Le pagine di prodotto attivate devono accedere alla versione **online** dei dati del prodotto (d).
 
 * L’istanza di pubblicazione AEM richiede l’accesso agli hybris per il recupero di prodotti e dati personalizzati (d).
 
 ### Architettura {#architecture}
 
-#### Architettura di prodotti e varianti {#architecture-of-product-and-variants}
+#### Architettura del prodotto e delle varianti {#architecture-of-product-and-variants}
 
-Un singolo prodotto può presentare più varianti; ad esempio, può variare in base al colore e/o alla dimensione. Un prodotto deve definire quali proprietà determinano la variazione; chiamiamo questi assi ** varianti.
+Un singolo prodotto può presentare più varianti; ad esempio, può variare in base al colore e/o alla dimensione. Un prodotto deve definire quali proprietà determinano la variazione; vengono denominati questi assi *varianti*.
 
 Tuttavia, non tutte le proprietà sono assi variabili. Le variazioni possono interessare anche altre proprietà; ad esempio, il prezzo potrebbe dipendere dalle dimensioni. Queste proprietà non possono essere selezionate dall&#39;acquirente e pertanto non sono considerate assi di variante.
 
@@ -216,11 +216,11 @@ Ciascun prodotto e/o variante è rappresentato da una risorsa e pertanto viene m
 
 La risorsa prodotto/variante non contiene sempre i dati effettivi del prodotto. Può trattarsi di una rappresentazione dei dati effettivamente contenuti in un altro sistema (ad esempio gli ibridi). Ad esempio, le descrizioni dei prodotti, i prezzi, ecc. non vengono memorizzati in AEM, ma recuperati in tempo reale dal motore eCommerce.
 
-Qualsiasi risorsa prodotto può essere rappresentata da un `Product API`. La maggior parte delle chiamate nell&#39;API del prodotto sono specifiche per le varianti (anche se le variazioni possono ereditare valori condivisi da un predecessore), ma ci sono anche chiamate che elencano il set di variazioni ( `getVariantAxes()`, `getVariants()`ecc.).
+Qualsiasi risorsa prodotto può essere rappresentata da un `Product API`. La maggior parte delle chiamate nell&#39;API del prodotto sono specifiche per le varianti (anche se le variazioni possono ereditare valori condivisi da un predecessore), ma ci sono anche chiamate che elencano il set di varianti ( `getVariantAxes()`, `getVariants()`, ecc.).
 
 >[!NOTE]
 >
->In effetti, gli assi di una variante sono determinati da qualsiasi `Product.getVariantAxes()` risultato:
+>In effetti, gli assi di una variante sono determinati da qualsiasi valore restituito da `Product.getVariantAxes()`:
 >* hybris lo definisce per l&#39;implementazione hybris
 >
 >
@@ -232,7 +232,7 @@ Mentre i prodotti (in generale) possono avere molti assi di variante, il compone
 1. più uno
 >
 >
-Questa variante aggiuntiva viene selezionata tramite la `variationAxis` proprietà del riferimento prodotto (in genere `color` per i Geometrixx Outdoors).
+Questa variante aggiuntiva viene selezionata tramite la proprietà `variationAxis` del riferimento prodotto (in genere `color` per Geometrixx Outdoors).
 
 #### Riferimenti prodotto e dati prodotto {#product-references-and-product-data}
 
@@ -269,7 +269,7 @@ Infine, non è previsto l&#39;uso di dati di prodotto. È possibile inserire tut
 
 **API**
 
-#### com.adobe.cq.com di prodotto.api.Interfaccia di prodotto {#com-adobe-cq-commerce-api-product-interface}
+#### com.adobe.cq.comCommerce.api.Interfaccia prodotto {#com-adobe-cq-commerce-api-product-interface}
 
 ```java
 public interface Product extends Adaptable {
@@ -291,7 +291,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -348,14 +348,14 @@ public class AxisFilter implements VariantFilter {
 
       * Un riferimento, con i dati del prodotto memorizzati altrove:
 
-         * I riferimenti ai prodotti contengono una `productData` proprietà che fa riferimento ai dati del prodotto (in genere sotto `/etc/commerce/products`).
+         * I riferimenti ai prodotti contengono una proprietà `productData` che fa riferimento ai dati del prodotto (in genere in `/etc/commerce/products`).
 
          * I dati del prodotto sono gerarchici; gli attributi del prodotto vengono ereditati dagli predecessori di un nodo di dati di prodotto.
 
          * I riferimenti ai prodotti possono anche contenere proprietà locali, che ignorano quelle specificate nei relativi dati di prodotto.
       * Un prodotto:
 
-         * Senza una `productData` proprietà.
+         * Senza una proprietà `productData`.
 
          * Un nodo di prodotto che contiene tutte le proprietà localmente (e non contiene una proprietà productData) eredita gli attributi di prodotto direttamente dai propri predecessori.
 
@@ -415,12 +415,12 @@ public class AxisFilter implements VariantFilter {
 
 **Componenti**
 
-* Il carrello è di proprietà del `CommerceSession:`
+* Il carrello è di proprietà di `CommerceSession:`
 
-   * Consente di `CommerceSession` eseguire operazioni di aggiunta, rimozione e così via.
-   * Vengono `CommerceSession` inoltre eseguiti i vari calcoli sul carrello. &quot;
+   * `CommerceSession` esegue add/remove/etc.
+   * Il `CommerceSession` esegue anche i vari calcoli sul carrello. &quot;
 
-* Anche se non direttamente correlati al carrello, l&#39; `CommerceSession` operatore deve anche fornire informazioni sui prezzi del catalogo (dal momento che possiede i prezzi)
+* Anche se non direttamente collegato al carrello, il `CommerceSession` deve anche fornire informazioni sui prezzi del catalogo (dal momento che possiede i prezzi)
 
    * La determinazione prezzi può avere diversi modificatori:
 
@@ -445,7 +445,7 @@ public class AxisFilter implements VariantFilter {
 * La personalizzazione deve sempre essere guidata dal [ClientContext](/help/sites-administering/client-context.md).
 * Viene creato un ClientContext `/version/` del carrello in tutti i casi:
 
-   * I prodotti devono essere aggiunti utilizzando il `CommerceSession.addCartEntry()` metodo .
+   * I prodotti devono essere aggiunti utilizzando il metodo `CommerceSession.addCartEntry()`.
 
 * Esempio di informazioni sul carrello nel carrello dei ClientContext:
 
@@ -455,7 +455,7 @@ public class AxisFilter implements VariantFilter {
 
 **Dati carrello e ordine**
 
-La proprietà `CommerceSession` possiede i tre elementi:
+Il `CommerceSession` possiede tre elementi:
 
 1. Contenuto del carrello
 1. Prezzi
@@ -486,7 +486,7 @@ La proprietà `CommerceSession` possiede i tre elementi:
 
 1. **Dettagli ordine**
 
-   Tuttavia, i dettagli dell&#39;ordine *non* vengono corretti dall&#39;API:
+   Tuttavia, i dettagli dell&#39;ordine sono *non* corretti dall&#39;API:
 
    ```java
    public void updateOrderDetails(Map<String, String> orderDetails);
@@ -498,9 +498,9 @@ La proprietà `CommerceSession` possiede i tre elementi:
 
 * I moduli di ordine spesso devono presentare più opzioni di spedizione (e prezzi).
 * I prezzi possono essere basati su articoli e dettagli dell&#39;ordine, come peso e/o indirizzo di consegna.
-* L&#39; `CommerceSession` utente ha accesso a tutte le dipendenze, quindi può essere trattato in modo simile al prezzo del prodotto:
+* Il `CommerceSession` ha accesso a tutte le dipendenze, in modo che possa essere trattato in modo simile al prezzo del prodotto:
 
-   * Il `CommerceSession` proprietario del prezzo di spedizione.
+   * La `CommerceSession` possiede i prezzi di spedizione.
    * Può recuperare/aggiornare i dettagli di consegna utilizzando `updateOrder(Map<String, Object> delta)`
 
 >[!NOTE]
@@ -509,26 +509,26 @@ La proprietà `CommerceSession` possiede i tre elementi:
 >
 >`yourProject/commerce/components/shippingpicker`:
 >
->* Essenzialmente questa potrebbe essere una copia di `foundation/components/form/radio`, ma con callback al `CommerceSession` for:
+>* Essenzialmente potrebbe trattarsi di una copia di `foundation/components/form/radio`, ma con callback al `CommerceSession` per:
    >
    >
 * Verifica della disponibilità del metodo
 >* Aggiunta di informazioni sui prezzi
->* Per consentire agli acquirenti di aggiornare la pagina dell&#39;ordine in AEM (incluso il superset di metodi di spedizione e il testo che li descrive), pur mantenendo il controllo per esporre le `CommerceSession` informazioni pertinenti.
+>* Per consentire agli acquirenti di aggiornare la pagina dell&#39;ordine in AEM (incluso il superset di metodi di spedizione e il testo che li descrive), pur mantenendo il controllo per esporre le relative informazioni `CommerceSession`.
 
 
 **Elaborazione pagamenti**
 
-* Possiede `CommerceSession` anche la connessione di elaborazione del pagamento.
+* La `CommerceSession` possiede anche la connessione di elaborazione del pagamento.
 
-* Gli implementatori devono aggiungere chiamate specifiche (al servizio di elaborazione dei pagamenti prescelto) all&#39; `CommerceSession` implementazione.
+* Gli implementatori devono aggiungere chiamate specifiche (al servizio di elaborazione dei pagamenti prescelto) all&#39;implementazione `CommerceSession`.
 
 **Evasione ordine**
 
-* Possiede `CommerceSession` anche la connessione di evasione.
-* Gli esecutori dovranno aggiungere chiamate specifiche (al servizio di elaborazione dei pagamenti prescelto) all&#39; `CommerceSession` implementazione.
+* La `CommerceSession` possiede anche la connessione di evasione.
+* Gli implementatori dovranno aggiungere chiamate specifiche (al servizio di elaborazione dei pagamenti prescelto) all&#39;implementazione `CommerceSession`.
 
-### Ricerca definizione {#search-definition}
+### Definizione di ricerca {#search-definition}
 
 In base al modello di API per i servizi standard, il progetto eCommerce fornisce un set di API relative alla ricerca che possono essere implementate dai singoli motori di commercio.
 
@@ -544,7 +544,7 @@ Il progetto eCommerce contiene un componente di ricerca predefinito, che si trov
 
 ![chlimage_1-14](assets/chlimage_1-14a.png)
 
-Questo utilizza l&#39;API di ricerca per eseguire una query sul motore di eCommerce (vedi Selezione [motore di](#ecommerce-engine-selection)eCommerce) selezionato:
+In questo modo si utilizza l&#39;API di ricerca per eseguire una query sul motore di eCommerce selezionato (vedere [Selezione motore di eCommerce](#ecommerce-engine-selection)):
 
 #### API di ricerca {#search-api}
 
@@ -552,13 +552,13 @@ Il progetto principale offre diverse classi generiche / helper:
 
 1. `CommerceQuery`
 
-   Viene utilizzato per descrivere una query di ricerca (contiene informazioni sul testo della query, la pagina corrente, la dimensione della pagina, l’ordinamento e i facet selezionati). Tutti i servizi eCommerce che implementano l&#39;API di ricerca riceveranno le istanze di questa classe per eseguire la ricerca. È `CommerceQuery` possibile creare un&#39;istanza di un oggetto di richiesta ( `HttpServletRequest`).
+   Viene utilizzato per descrivere una query di ricerca (contiene informazioni sul testo della query, la pagina corrente, la dimensione della pagina, l’ordinamento e i facet selezionati). Tutti i servizi eCommerce che implementano l&#39;API di ricerca riceveranno le istanze di questa classe per eseguire la ricerca. È possibile creare un&#39;istanza `CommerceQuery` da un oggetto di richiesta ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   È una classe di utilità che fornisce un metodo statico, `toParams` , utilizzato per generare stringhe di `GET` parametri da un elenco di facet e un valore attivato. Questa funzione è utile nell’interfaccia utente, dove è necessario visualizzare un collegamento ipertestuale per ciascun valore di ciascun facet, in modo che quando l’utente fa clic sul collegamento ipertestuale il relativo valore venga attivato (ovvero se è stato selezionato, viene rimosso dalla query, altrimenti aggiunto). Questo si occupa di tutte le logiche di gestione di facet multivalore/monomalore, valori prevalenti, ecc.
+   Classe di utilità che fornisce un metodo statico - `toParams` - utilizzato per generare stringhe di parametri `GET` da un elenco di facet e un valore attivato. Questa funzione è utile nell’interfaccia utente, dove è necessario visualizzare un collegamento ipertestuale per ciascun valore di ciascun facet, in modo che quando l’utente fa clic sul collegamento ipertestuale il relativo valore venga attivato (ovvero se è stato selezionato, viene rimosso dalla query, altrimenti aggiunto). Questo si occupa di tutte le logiche di gestione di facet multivalore/monomalore, valori prevalenti, ecc.
 
-Il punto di ingresso per l&#39;API di ricerca è il `CommerceService#search` metodo che restituisce un `CommerceResult` oggetto. Per ulteriori informazioni su questo argomento, consulta la Documentazione [sulle](/help/sites-developing/ecommerce.md#api-documentation) API.
+Il punto di ingresso per l&#39;API di ricerca è il metodo `CommerceService#search` che restituisce un oggetto `CommerceResult`. Per ulteriori informazioni su questo argomento, vedere la [Documentazione API](/help/sites-developing/ecommerce.md#api-documentation).
 
 ### Integrazione utente {#user-integration}
 
@@ -566,7 +566,7 @@ L&#39;integrazione viene fornita tra AEM e vari sistemi di eCommerce. Ciò richi
 
 * Autenticazione
 
-   Si presume che AEM sia l&#39; *unico* web front-end e pertanto esegua *tutta* l&#39;autenticazione.
+   Si presume che AEM sia il front-end Web *only* e pertanto esegue l&#39;autenticazione *all*.
 
 * Account in Hybris
 
@@ -591,7 +591,7 @@ Un front-end AEM può essere posizionato davanti a un&#39;implementazione ibrida
 
       * tentativo di accedere a hybris con nome utente/pwd fornito
       * in caso di esito positivo, create il nuovo utente in AEM con la stessa password (il valore di sale AEM specifico darà luogo a un hash AEM specifico)
-   * L&#39;algoritmo di cui sopra è implementato in una Sling `AuthenticationInfoPostProcessor`
+   * L&#39;algoritmo di cui sopra è implementato in un Sling `AuthenticationInfoPostProcessor`
 
       * Consulta: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
 
@@ -600,9 +600,9 @@ Un front-end AEM può essere posizionato davanti a un&#39;implementazione ibrida
 
 Per sfruttare le funzionalità esistenti del gestore di importazioni personalizzato:
 
-* deve implementare l&#39; `ImportHandler` interfaccia
+* deve implementare l&#39;interfaccia `ImportHandler`
 
-* può estendere il `DefaultImportHandler`.
+* può estendere la `DefaultImportHandler`.
 
 ```java
 /**
@@ -664,7 +664,7 @@ public interface ImportHandler {
 }
 ```
 
-Affinché il gestore personalizzato venga riconosciuto dall&#39;importatore, deve specificare la `service.ranking`proprietà con un valore superiore a 0; ad esempio.
+Affinché il gestore personalizzato venga riconosciuto dall&#39;importatore, deve specificare la proprietà `service.ranking`con un valore superiore a 0; ad esempio.
 
 ```java
 @Component
