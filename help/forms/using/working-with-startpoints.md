@@ -26,24 +26,24 @@ Un startpoint richiama un processo creato in Workbench. È associato a un modulo
 >
 >I termini startpoint, processo di avvio e modulo vengono utilizzati in modo intercambiabile quando si fa riferimento a questo concetto.
 
-Per avviare un processo dall&#39;app AEM Forms , è necessario che nel processo sia presente un punto di partenza di tipo **Workspace** . Inoltre, devi selezionare l&#39;opzione **[!UICONTROL Visibile in Mobile Workspace]** per il punto di avvio.
+Per avviare un processo dall&#39;app AEM Forms , è necessario che nel processo sia presente un punto di partenza di tipo **Workspace**. Inoltre, è necessario selezionare l&#39;opzione **[!UICONTROL Visibile in Mobile Workspace]** per il punto iniziale.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Avvio di un processo definito in Workbench**
 
-1. Per visualizzare i punti di partenza disponibili nell&#39;app AEM Forms , andate alla schermata [](../../forms/using/home-screen.md)iniziale.
-1. Nella schermata **[!UICONTROL Home]** , per impostazione predefinita, viene visualizzato l’elenco **[!UICONTROL Tutti i Forms]** .
+1. Per visualizzare i punti di partenza disponibili nell&#39;app AEM Forms , andate alla [Home screen](../../forms/using/home-screen.md).
+1. Nella schermata **[!UICONTROL Home]**, per impostazione predefinita viene visualizzato l&#39;elenco **[!UICONTROL Tutti i Forms]**.
 
    Il punto di avvio è associato a un modulo. Toccate il modulo associato all&#39;punto di avvio nell&#39;elenco per aprirlo.
 
    Viene aperto il modulo associato al punto di avvio.
 
-1. Immettere i dettagli nel modulo **[!UICONTROL Start]** .
+1. Immettere i dettagli nel modulo **[!UICONTROL Punto di inizio]**.
 
-   È possibile aggiungere annotazioni a questa attività utilizzando il pulsante [Allegato](../../forms/using/add-attachments.md) .
+   È possibile aggiungere annotazioni a questa attività utilizzando il pulsante [attachment](../../forms/using/add-attachments.md).
 
-1. Dopo aver compilato il modulo, toccare il pulsante **[!UICONTROL Invia]** .
+1. Dopo aver compilato il modulo, toccare il pulsante **[!UICONTROL Invia]**.
 
 Se l&#39;app è offline, il modulo e i relativi dati vengono salvati nella cartella Posta in uscita.
 
