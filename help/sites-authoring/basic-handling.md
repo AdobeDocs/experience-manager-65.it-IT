@@ -77,12 +77,12 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **[Navigazione](/help/sites-authoring/basic-handling.md#navigation-panel)**: rappresentata da una bussola
+* **[Navigazione](/help/sites-authoring/basic-handling.md#navigation-panel)**: rappresentata da una bussola 
 * **[Strumenti](/help/sites-authoring/basic-handling.md#tools-panel)**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
-### Pannello di navigazione  {#navigation-panel}
+### Pannello di navigazione   {#navigation-panel}
 
 Il pannello di navigazione consente di accedere alle console AEM:
 
@@ -193,7 +193,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * Breadcrumb
 
-   ![bh-05](assets/bh-05.png)
+   ![bh-03](assets/bh-05.png)
 
    Situate al centro della barra, le breadcrumb mostrano sempre la descrizione dell’elemento attualmente selezionato e consentono di spostarsi all’interno di una console specifica. Nella console Sites puoi spostarti tra i vari livelli del sito web.
 
@@ -205,7 +205,7 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Questa funzione è disponibile solo nella vista a elenco. See [list view](#list-view) for more information.
+   Questa funzione è disponibile solo nella vista a elenco. Per ulteriori informazioni, vedere [visualizzazione elenco](#list-view).
 
 * Pulsante **Crea**
 
@@ -225,9 +225,9 @@ L’intestazione è sempre presente nella parte superiore dello schermo. Anche s
 
 * Navigazione tramite tastiera
 
-   Potete navigare in un sito web utilizzando solo la tastiera. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*.
+   Potete navigare in un sito web utilizzando solo la tastiera. Questo utilizza la funzionalità standard del browser del tasto **TAB** (o **OPT+TAB**) per spostarvi tra gli elementi della pagina che sono *attivabili*.
 
-   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
+   Nella console di **Sites** è stata aggiunta l’opzione per **passare al contenuto principale**. Questo diventa visibile quando si *scheda* attraverso le opzioni di intestazione, e velocizza la navigazione consentendo di saltare gli elementi standard nella barra degli strumenti (prodotto) e di passare direttamente al contenuto principale.
 
    ![bh-30](assets/bh-30.png)
 
@@ -253,7 +253,7 @@ Sono disponibili diverse risorse di Aiuto:
 
    Esamina questa panoramica come faresti con la [panoramica di navigazione del prodotto](/help/sites-authoring/basic-handling.md#product-navigation) la prima volta che accedi a una console.
 
-   Dal menu [**Informazioni sulle pagine **puoi selezionare** Aiuto **](/help/sites-authoring/author-environment-tools.md#accessing-help)per accedervi di nuovo in un secondo tempo.
+   Dal menu [**Informazioni sulle pagine** puoi selezionare **Aiuto**](/help/sites-authoring/author-environment-tools.md#accessing-help) per accedervi di nuovo in un secondo tempo.
 
 * **Console Strumenti**
 
@@ -272,7 +272,7 @@ Sono disponibili diverse risorse di Aiuto:
    >    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barra delle azioni  {#actions-toolbar}
+## Barra delle azioni   {#actions-toolbar}
 
 Ogni volta che selezioni una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -292,7 +292,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide  {#quick-actions}
+## Azioni rapide   {#quick-actions}
 
 Nella [Vista a schede](#cardviewquickactions) alcune azioni sono disponibili come icone di scelta rapida, oltre che dalla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -315,7 +315,7 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse  {#selecting-resources}
+### Selezionare le risorse   {#selecting-resources}
 
 La selezione di una specifica risorsa dipende dalla combinazione della vista e del dispositivo utilizzati:
 
@@ -343,13 +343,13 @@ La selezione di una specifica risorsa dipende dalla combinazione della vista e d
    <td>Vista a schede<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
+     <li>Desktop:<br /> Passate il puntatore del mouse, quindi utilizzate l'azione rapida con il segno di spunta</li>
      <li>Dispositivo mobile: <br /> Tenete premuto sulla scheda</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Click the card</li>
-     <li>Mobile device:<br /> Tap the card</li>
+     <li>Desktop:<br /> Fate clic sulla scheda</li>
+     <li>Dispositivo mobile:<br /> Toccate la scheda</li>
     </ul> </td>
   </tr>
   <tr>
@@ -396,7 +396,7 @@ In tutte le viste, tutti gli elementi possono essere deselezionati con il tasto 
 
 1. Ad esempio, nella vista a schede:
 
-   ![bh-15](assets/bh-15.png)
+   ![bh-17](assets/bh-15.png)
 
 1. Dopo la selezione di una risorsa, l’intestazione superiore è coperta dalla [barra delle azioni](#actionstoolbar), che permette di accedere alle azioni applicabili alla risorsa selezionata.
 
@@ -414,7 +414,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
    * Il nome della risorsa e la freccia vengono evidenziati quando tocchi o fai clic su tali elementi.
 
-   ![bh-17](assets/bh-17.png)
+   ![bh-15](assets/bh-17.png)
 
    * Gli elementi figlio della risorsa che hai toccato o su cui hai fatto clic vengono visualizzati nella colonna a destra di tale risorsa.
    * Se tocchi o fai clic sul nome di una risorsa che non presenta elementi figlio, i relativi dettagli verranno visualizzati nella colonna finale.
@@ -458,7 +458,7 @@ Quando si seleziona una risorsa nella prima colonna a sinistra, vengono visualiz
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco  {#list-view}
+### Vista a elenco   {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -540,7 +540,7 @@ Mediante il pannello laterale della struttura del contenuto, insieme alla vista 
 >
 >Per ulteriori informazioni, vedi le [scelte rapide da tastiera](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Timeline  {#timeline}
+### Timeline   {#timeline}
 
 Con la timeline puoi visualizzare e/o attivare gli eventi della risorsa selezionata. Per aprire la colonna della timeline, utilizza il selettore della barra a sinistra:
 
