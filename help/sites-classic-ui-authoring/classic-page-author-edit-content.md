@@ -12,6 +12,9 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
@@ -76,6 +79,7 @@ Per inserire un nuovo componente:
 
    * Trascinate un componente dalla barra degli strumenti mobile (o barra laterale) per inserire un nuovo paragrafo.
    * Fai clic con il pulsante destro del mouse su un paragrafo esistente e seleziona **Nuovo**: si apre la barra degli strumenti Inserisci nuovo componente. Seleziona un componente e fai clic su **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. Sia nella barra laterale che nella barra degli strumenti **Inserisci nuovo componente** viene visualizzato un elenco dei tipi di componenti (o paragrafi) disponibili. Questi ultimi sono suddivisi in varie categorie (ad esempio Generale, Colonne e così via), che possono essere espanse.
@@ -84,7 +88,7 @@ Per inserire un nuovo componente:
 
 1. Inserisci nella pagina il componente desiderato. Quindi fai doppio clic sul paragrafo. Viene visualizzata una finestra che consente di configurare il paragrafo e aggiungere il contenuto.
 
-### Inserimento di un componente tramite Content Finder {#inserting-a-component-using-the-content-finder}
+### Inserimento di un componente tramite Content Finder  {#inserting-a-component-using-the-content-finder}
 
 Per aggiungere un nuovo componente alla pagina, puoi anche trascinare una risorsa da [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). In questo modo, si crea automaticamente un nuovo componente di tipo appropriato, che contiene la risorsa.
 
@@ -103,7 +107,7 @@ Questo vale per i seguenti tipi di risorse (alcune dipenderanno dal sistema dell
 
 Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
-1. Assicurati che la pagina sia in [**modalità Modifica **.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
+1. Assicurati che la pagina sia in [**modalità Modifica**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 1. Apri [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Trascina la risorsa richiesta nella posizione desiderata. Il [segnaposto](#componentplaceholder) indica dove sarà posizionato il componente.
 
@@ -111,7 +115,7 @@ Per creare un componente trascinando uno dei tipi di risorsa indicati sopra:
 
 1. Se necessario, [modifica](#editmovecopypastedelete) il componente.
 
-## Modifica di un componente (contenuto e proprietà) {#editing-a-component-content-and-properties}
+## Modifica di un componente (contenuto e proprietà)  {#editing-a-component-content-and-properties}
 
 Per modificare un paragrafo esistente, è possibile effettuare una delle seguenti operazioni:
 
@@ -134,7 +138,7 @@ Per spostare un paragrafo:
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. Trascina il paragrafo nella nuova posizione. In AEM le posizioni in cui è possibile spostare il paragrafo sono indicate da una spunta verde. Rilascia il paragrafo nella posizione desiderata.
-1. Il paragrafo viene spostato.
+1. Il paragrafo è stato spostato:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
@@ -185,9 +189,11 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
    Un’icona a forma di lucchetto identifica i componenti che fanno parte di una Live Copy o di un lancio. È possibile fare clic sul lucchetto per annullare l’ereditarietà.
 
    * L’icona a forma di lucchetto viene visualizzata quando il componente è selezionato, ad esempio:
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
    * L’icona a forma di lucchetto viene visualizzata anche nella finestra di dialogo dei componenti, ad esempio:
+
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **Un sistema paragrafo ereditato**
@@ -200,7 +206,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 Le [annotazioni](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) consentono agli autori di fornire feedback sui contenuti. Spesso vengono utilizzate a scopo di revisione e convalida.
 
-## Anteprima delle pagine {#previewing-pages}
+## Anteprima delle pagine    {#previewing-pages}
 
 Lungo il lato inferiore della barra laterale sono disponibili due icone importanti per visualizzare le pagine in anteprima:
 
@@ -220,7 +226,7 @@ Lungo il lato inferiore della barra laterale sono disponibili due icone importan
 
 ## Trova e sostituisci {#find-replace}
 
-Per modificare più occorrenze di una stessa parola o frase, l’opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**consente di cercare e sostituire più istanze di una stringa in una sezione del sito Web.
+Per modificare più occorrenze di una stessa parola o frase, l’opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** consente di cercare e sostituire più istanze di una stringa in una sezione del sito Web.
 
 ## Blocco di una pagina {#locking-a-page}
 
@@ -250,7 +256,7 @@ Per sbloccare una pagina:
 1. Fai doppio clic sulla pagina per aprirla.
 1. Nella scheda **Pagina** della barra laterale seleziona **Sblocca pagina**.
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## Annullamento e ripristino di operazioni di modifica delle pagine {#undoing-and-redoing-page-edits}
 
 Con il frame del contenuto della pagina attivo, usa le seguenti scelte rapide da tastiera:
 
@@ -277,11 +283,12 @@ Il comportamento dei comandi di annullamento e ripristino è simile a quello del
 
 >[!NOTE]
 >
->Tieni presente quanto segue:
+>Operazioni disponibili:
 >
 >* Le azioni annullate possono essere ripristinate solo se dopo l’annullamento non sono state apportate altre modifiche alla pagina.
 >* Per impostazione predefinita, è possibile annullare fino a 20 azioni di modifica.
 >* Puoi eseguire le operazioni Annulla e Ripristina anche con le relative [scelte rapide da tastiera](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+
 >
 
 
