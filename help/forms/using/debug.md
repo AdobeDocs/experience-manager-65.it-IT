@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Debug di moduli HTML5 {#debugging-html-forms}
 
-Questo documento include diversi scenari di risoluzione dei problemi. Per ogni scenario, vengono forniti alcuni passaggi per risolvere il problema. Segui questi passaggi e, se il problema persiste, configura il logger per ottenere e rivedere i registri per individuare eventuali errori o avvisi. Per ulteriori dettagli sulla registrazione dei moduli HTML5, vedere [Generazione di registri per i moduli](/help/forms/using/enable-logs.md)HTML5.
+Questo documento include diversi scenari di risoluzione dei problemi. Per ogni scenario, vengono forniti alcuni passaggi per risolvere il problema. Segui questi passaggi e, se il problema persiste, configura il logger per ottenere e rivedere i registri per individuare eventuali errori o avvisi. Per ulteriori dettagli sulla registrazione dei moduli HTML5, vedere [Generazione di registri per i moduli HTML5](/help/forms/using/enable-logs.md).
 
 ## Problema: Quando si esegue il rendering del modulo, viene visualizzata la pagina di eccezione org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
@@ -57,7 +57,7 @@ Controllate i seguenti parametri:
 
 ## Problema: Impossibile eseguire il rendering di un modulo (viene visualizzato un messaggio di errore) {#problem-unable-to-render-form}
 
-1. Verificate che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, consultate Parametri di [rendering](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
+1. Verificate che i parametri specificati siano corretti. Per informazioni dettagliate sui parametri, vedere [Parametri di rendering](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. Accedete a CRX Package Manager (all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/packmgr/index.jsp) e verificate che i pacchetti seguenti siano installati correttamente:
 
    * adobe-lc-forms-content-pkg-&lt;versione>.zip
@@ -81,7 +81,7 @@ Controllate i seguenti parametri:
 
 ## Problema: Rendering del modulo senza stili {#problem-form-renders-without-styles}
 
-1. Nel browser, aprite **Strumenti** per sviluppatori. Verifica che profile.css sia disponibile.
+1. Nel browser, aprire **Developer Tools**. Verifica che profile.css sia disponibile.
 1. Se il file profile.css non è disponibile, accedete a CRX DE all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/de.
 1. Nella gerarchia delle cartelle a sinistra, andate a /etc/clientlibs/fd/xfaforms/. Aprite i file css.txt elencati nelle cartelle.
 
@@ -104,11 +104,11 @@ Controllate i seguenti parametri:
 
 1. Se i file indicati non sono disponibili, installate di nuovo il pacchetto adobe-lc-forms-runtime-pkg-&lt;versione>.zip.
 
-### Problema: Errore imprevisto {#problem-unexpected-error-encountered}
+### Problema: Errore imprevisto rilevato {#problem-unexpected-error-encountered}
 
 1. Nell&#39;URL del modulo, aggiungere un parametro di query debugClientLibs e impostarne il valore su true (ad esempio: https://&lt;server>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;percorso>&amp;template=&lt;nome del file xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Nel browser desktop come Chrome, andate a Strumenti per sviluppatori -> Console.
-1. Aprire i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, vedere [registri per i moduli](/help/forms/using/enable-logs.md)HTML5.
+1. Aprire i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, vedere [registri per i moduli HTML5](/help/forms/using/enable-logs.md).
 1. Vai a Strumenti per sviluppatori > Console. Utilizzare la traccia dello stack per individuare il codice che causa l&#39;errore. Eseguire il debug dell&#39;errore per risolvere il problema.
 
    >[!NOTE]
@@ -119,12 +119,12 @@ Controllate i seguenti parametri:
 
 1. Verificate di disporre dei diritti di accesso al server AEM e di essere connessi al server.
 1. Verificate che il parametro submitUrl sia corretto.
-1. Abilitare i registri lato client come indicato in [Registri per i moduli](/help/forms/using/enable-logs.md) HTML5 utilizzando l&#39;opzione di debug come **1-a5-b5-c5**. Quindi, eseguite il rendering del modulo e fate clic su Invia. Aprite la console di debug del browser e verificate se si è verificato un errore.
-1. Individuare i registri del server come indicato in [Registri per i moduli](/help/forms/using/enable-logs.md)HTML5. Verificare se si è verificato un errore nei registri del server durante l&#39;invio.
+1. Abilitare i registri lato client come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md) utilizzando l&#39;opzione di debug come **1-a5-b5-c5**. Quindi, eseguite il rendering del modulo e fate clic su Invia. Aprite la console di debug del browser e verificate se si è verificato un errore.
+1. Individuare i registri del server come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md). Verificare se si è verificato un errore nei registri del server durante l&#39;invio.
 
 ## Problema: I messaggi di errore localizzati non vengono visualizzati {#problem-localized-error-messages-do-not-display}
 
-1. Eseguire il rendering del modulo con il parametro di query aggiuntivo **debugClientLibs=true** nel browser desktop, quindi passare a Strumenti sviluppatore -> Risorse e verificare il file I18N.css.
+1. Eseguire il rendering del modulo con il parametro di query aggiuntivo **debugClientLibs=true** nel browser desktop, quindi passare a Strumenti per sviluppatori -> Risorse e verificare il file I18N.css.
 1. Se il file non è disponibile, accedete a CRX DE all&#39;indirizzo https://&lt;server>:&lt;porta>/crx/de.
 1. Nella gerarchia delle cartelle a sinistra, andate a /libs/fd/xfaforms/clientlibs/I18N e verificate che siano presenti i file e le cartelle seguenti:
 
@@ -132,7 +132,7 @@ Controllate i seguenti parametri:
    * LogMessages.js
    * Cartelle per le lingue
 
-1. Se uno dei file o delle cartelle di cui sopra non esiste, installate di nuovo il pacchetto **adobe-lc-forms-runtime-pkg-&lt;versione>.zip** .
+1. Se uno dei file o delle cartelle di cui sopra non esiste, installate di nuovo il pacchetto **adobe-lc-forms-runtime-pkg-&lt;versione>.zip**.
 1. Individuate la cartella che ha lo stesso nome delle impostazioni internazionali e verificarne il contenuto. La cartella deve contenere i file seguenti:
 
    * I18N.js
