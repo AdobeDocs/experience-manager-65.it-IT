@@ -27,12 +27,12 @@ Lo script comment.hbs è responsabile della creazione dell&#39;HTML complessivo 
 
 Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
 
-1. Copia `comment.hbs`da `libs`a `apps`
+1. Copiare `comment.hbs`da `libs`a `apps`
 
    1. Seleziona `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Seleziona **[!UICONTROL copia]**
+   1. Selezionare **[!UICONTROL Copia]**
    1. Seleziona `/apps/social/commons/components/hbs/comments/comment`
-   1. Seleziona **[!UICONTROL Incolla]**
+   1. Selezionare **[!UICONTROL Incolla]**
 
 1. Aprire la sovrapposizione `comment.hbs`
 
@@ -45,7 +45,7 @@ Per non visualizzare l&#39;avatar accanto a ciascun commento pubblicato:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Eliminare le righe o circondarle `<!--` e `-->` commentare le righe. Inoltre, i caratteri &#39;xxx&#39; vengono aggiunti come indicatore visivo del punto in cui l&#39;avatar sarebbe stato.
+Eliminare le righe o circondarle con `<!--` e `-->` per escluderle. Inoltre, i caratteri &#39;xxx&#39; vengono aggiunti come indicatore visivo del punto in cui l&#39;avatar sarebbe stato.
 
 ```xml
    xxx
@@ -60,11 +60,11 @@ Inviate il componente dei commenti sovrapposti all’istanza di pubblicazione ut
 
 >[!NOTE]
 >
->Una replica più affidabile consiste nel creare un pacchetto in Gestione pacchetti e [attivarlo](/help/sites-administering/package-manager.md#replicating-packages) . Un pacchetto può essere esportato e archiviato.
+>Una replica più affidabile sarebbe quella di creare un pacchetto in Gestione pacchetti e [attivarlo](/help/sites-administering/package-manager.md#replicating-packages). Un pacchetto può essere esportato e archiviato.
 
-Dalla navigazione globale, selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** , quindi fare clic su **[!UICONTROL Attiva albero]**.
+Dalla navigazione globale, selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Replica]** e fare clic su **[!UICONTROL Attiva albero]**.
 
-Per Percorso iniziale, immettete `/apps/social/commons` e selezionate **[!UICONTROL Attiva]**.
+Per Percorso iniziale, immettere `/apps/social/commons` e selezionare **[!UICONTROL Attiva]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
