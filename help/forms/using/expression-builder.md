@@ -24,7 +24,7 @@ Utilizzando il Generatore di espressioni, è possibile creare espressioni o cond
 
 ## Creazione di espressioni e funzioni remote con il generatore di espressioni {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Il Generatore di espressioni utilizza internamente le librerie JSP EL, pertanto l&#39;espressione è conforme alla sintassi JSPEL. Per ulteriori informazioni, vedere [Espressioni](#exampleexpressions)di esempio.
+Il Generatore di espressioni utilizza internamente le librerie JSP EL, pertanto l&#39;espressione è conforme alla sintassi JSPEL. Per ulteriori informazioni, vedere [Espressioni di esempio](#exampleexpressions).
 
 ![Generatore di espressione](assets/expressionbuilder.png)
 
@@ -40,9 +40,9 @@ Di seguito sono riportati alcuni esempi JSP EL comunemente utilizzati per la sol
 * Per concatenare due stringhe: ${str1} ${str2}
 * Per confrontare due numeri: ${age &lt; 18}
 
-Per ulteriori informazioni, consulta la specifica [EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)JSP. Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
+Ulteriori informazioni sono disponibili nella [specifica JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
 
-* Gli indici delle raccolte e le chiavi di mappa (utilizzando la [] notazione) non sono supportati nei nomi delle variabili per le espressioni valutate sul lato client.
+* Gli indici delle raccolte e le chiavi di mappa (utilizzando la notazione []) non sono supportati nei nomi delle variabili per le espressioni valutate sul lato client.
 * Di seguito sono riportati i tipi di parametro o i tipi di restituzione delle funzioni utilizzate nelle espressioni:
 
    * java.lang.String
@@ -157,8 +157,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Di seguito sono riportati alcuni esempi di archivi da utilizzare:
 
-* **GoodFunctions.jar.zip** è il file jar con bundle contenente una definizione di funzione remota di esempio. Scaricate il file GoodFunctions.jar.zip e decomprimetelo per ottenere il file jar.
-* **GoodFunctions.zip** è il pacchetto di codice sorgente per la definizione di una funzione remota personalizzata e la creazione di un bundle per essa.
+* **GoodFunctions.jar.** zipis il file jar con il bundle contenente una definizione di funzione remota di esempio. Scaricate il file GoodFunctions.jar.zip e decomprimetelo per ottenere il file jar.
+* **GoodFunctions.** zipis il pacchetto di codice sorgente per la definizione di una funzione remota personalizzata e la creazione di un bundle per essa.
 
 GoodFunctions.jar.zip
 
