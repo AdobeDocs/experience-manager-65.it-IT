@@ -14,12 +14,12 @@ ht-degree: 11%
 ---
 
 
-# Adobe Experience Manager 6.5 Communities Guide {#communities}
+# Guida di Adobe Experience Manager 6.5 Communities {#communities}
 
 + [Guida a Communities](home.md)
-+ Introduction to AEM Communities {#introduction}
++ Introduzione a  AEM Communities {#introduction}
    + [Siti community](administer-landing.md)
-   + [Panoramica di AEM Communities](overview.md)
+   + [ Panoramica di AEM Communities](overview.md)
    + [Note sulla versione di AEM Communities](/help/release-notes/communities-release-notes.md)
    + [Guida introduttiva di AEM Communities](getting-started.md)
    + [Guida introduttiva  AEM Communities per l’abilitazione](getting-started-enablement.md)
@@ -31,7 +31,7 @@ ht-degree: 11%
    + [Creazione di un nuovo sito community per l&#39;abilitazione](enablement-create-site.md)
    + [Creazione e assegnazione di risorse di abilitazione](resource.md)
    + [Scopri il sito di abilitazione pubblicato](enablement-published-site.md)
-+ Distribuzione {#deploy}
++ Implementazione di {#deploy}
    + [Implementazione di Communities](deploy-communities.md)
    + [Aggiornamento ad AEM 6.5 Communities](upgrade.md)
    + [Topologie consigliate per community](topologies.md)
