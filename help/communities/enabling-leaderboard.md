@@ -23,24 +23,24 @@ ht-degree: 11%
 
 ## Introduzione {#introduction}
 
-Il `Leaderboard` componente fornisce la capacità di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, classificando i membri in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
+Il componente `Leaderboard` consente di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
 
-Prima di includere il componente della classifica in una pagina, è necessario configurare [Communities Scoring and Badges](/help/communities/implementing-scoring.md).
+Prima di includere il componente della classifica in una pagina, è necessario configurare [Punteggio community e Badges](/help/communities/implementing-scoring.md).
 
 Questa sezione della documentazione descrive quanto segue:
 
-* Aggiunta del `Leaderboard` componente a un sito [](/help/communities/overview.md#community-sites)community.
-* Impostazioni di configurazione per il `Leaderboard` componente.
+* Aggiunta del componente `Leaderboard` a un [sito community](/help/communities/overview.md#community-sites).
+* Impostazioni di configurazione per il componente `Leaderboard`.
 
-### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+### Aggiunta di una classifica a una pagina {#adding-a-leaderboard-to-a-page}
 
-Per aggiungere un `Leaderboard` componente a una pagina in modalità di creazione, individuare il componente
+Per aggiungere un componente `Leaderboard` a una pagina in modalità di creazione, individuare il componente
 
 * `Communities / Leaderboard`
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](/help/communities/basics.md).
 
 La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
 
@@ -48,15 +48,15 @@ La prima volta che il componente viene inserito in una pagina di un sito communi
 
 ### Configurazione della classifica {#configuring-leaderboard}
 
-Selezionate il `Leaderboard` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Leaderboard` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
-#### scheda Impostazioni {#settings-tab}
+#### Scheda Impostazioni {#settings-tab}
 
-Nella scheda **[!UICONTROL Impostazioni]** , specificate le informazioni relative al membro da visualizzare:
+Nella scheda **[!UICONTROL Impostazioni]**, specificare quali informazioni relative al membro vengono visualizzate:
 
 * **Nome visualizzato**
 
@@ -80,7 +80,7 @@ Il valore predefinito è deselezionato.
 
 #### Scheda Regole {#rules-tab}
 
-Nella scheda **Regole** , il sito della community e le relative regole di valutazione e contrassegno
+Nella scheda **Regole**, il sito della community e le relative regole di valutazione e contrassegno
 
 * **Percorso regola**
 
@@ -147,6 +147,6 @@ Configurazione del componente della classifica:
 
 ### Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [Leaderboard Essentials](/help/communities/leaderboard.md) per gli sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Leaderboard Essentials](/help/communities/leaderboard.md) dedicata agli sviluppatori.
 
-Le istruzioni per la creazione di regole sono fornite nella pagina [Communities Scoring and Badges](/help/communities/implementing-scoring.md) (Punteggio e Badgecommunity) per gli amministratori.
+Le istruzioni per la creazione di regole sono fornite nella pagina [Communities Scoring and Badges](/help/communities/implementing-scoring.md) per gli amministratori.
