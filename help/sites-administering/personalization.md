@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 16%
 
 ---
 
@@ -28,7 +31,7 @@ La personalizzazione è caratterizzata da tre elementi principali:
 **Utenti**
 
 * con profili, sia individuali che di gruppo. Questi profili contengono caratteristiche (come descrizione del lavoro, posizione, interessi) che possono essere utilizzate per personalizzare i contenuti che possono vedere.
-* intraprendere azioni. Questi possono quindi essere analizzati e confrontati con regole di comportamento per adattare i contenuti visualizzati.
+* intraprendere azioni. Questi possono quindi essere analizzati e confrontati con le regole di comportamento per adattare i contenuti visualizzati.
 
 **Contenuto**
 
@@ -38,7 +41,7 @@ La personalizzazione è caratterizzata da tre elementi principali:
 
 **Regole**
 
-* definire in che modo si realizza effettivamente la personalizzazione, quali contenuti possono essere visualizzati e quando.
+* definire in che modo si realizza effettivamente la personalizzazione, quali contenuti possono essere visualizzati dall&#39;utente e quando.
 
 La personalizzazione può essere:
 
@@ -70,7 +73,7 @@ La personalizzazione può essere utilizzata in molti casi, ad esempio:
 
 **Sito Web di vendita e distribuzione**
 
-* I siti Web di vendita e distribuzione, come Amazon, possono combinare un profilo utente, la cronologia delle vendite dell&#39;utente e la cronologia delle loro ricerche per suggerire quali potrebbero interessare all&#39;utente successivo.
+* I siti Web di vendita e distribuzione, come  Amazon, possono combinare un profilo utente, la cronologia delle vendite dell&#39;utente e la cronologia delle loro ricerche per suggerire quali potrebbero interessare all&#39;utente successivo.
 
 **Ricerca siti Web**
 
@@ -98,9 +101,9 @@ Quando si utilizza la personalizzazione, tenere presente quanto segue:
 
 * La personalizzazione richiede un meccanismo di login in quanto il sito Web deve essere in grado di identificare l’utente.
 
-**Cache**
+**Caching**
 
-* La memorizzazione nella cache è un aspetto che l&#39;utente vedrà in termini di prestazioni e precisione: quanto velocemente il sito Web distribuisce contenuti personalizzati ed è sempre attuale.
+* La memorizzazione nella cache è un aspetto che l&#39;utente vedrà in termini di prestazioni e precisione: quanto velocemente il sito Web distribuisce contenuti personalizzati, ed è sempre attuale.
 * La memorizzazione nella cache è un aspetto fondamentale per la configurazione della personalizzazione e occorre prendere il tempo necessario per garantire che venga utilizzata la corretta implementazione. Questo verrà discusso più dettagliatamente in seguito.
 
 **Precisione delle regole**
@@ -124,29 +127,29 @@ La personalizzazione deve essere considerata separatamente dal controllo dell&#3
 
 La personalizzazione stessa non crea alcuna forma di controllo degli accessi. Si tratta semplicemente di un metodo di guida di ciò che l&#39;utente vede; non impedisce all&#39;utente di accedere ad altri contenuti e, come per qualsiasi contenuto, deve già essere assegnato il controllo di accesso corretto.
 
-Tuttavia, il controllo degli accessi può essere utilizzato per creare una forma di personalizzazione. Se consentite o negate a un utente l’accesso ai contenuti, ciò influisce inevitabilmente sulla scelta dei contenuti disponibili, personalizzando in tal modo la propria esperienza Web.
+Tuttavia, il controllo degli accessi può essere utilizzato per creare una forma di personalizzazione. Se consentite o negate a un utente l&#39;accesso ai contenuti, ciò influisce inevitabilmente sulla scelta dei contenuti disponibili, personalizzando in tal modo la propria esperienza Web.
 
 ## Componenti disponibili per la personalizzazione {#components-available-for-personalization}
 
-AEM offre diversi componenti per la personalizzazione. Alcuni consentono agli utenti di accedere e modificare i propri profili, altri (come I miei gadget) consentono agli utenti di configurare una pagina specifica:
+Sono disponibili diversi componenti con AEM per la personalizzazione. Alcuni consentono agli utenti di accedere e modificare i propri profili, altri (come I miei gadget) consentono agli utenti di configurare una pagina specifica:
 
 | Titolo nella barra laterale | Scopo |
 |---|---|
 | Campo per password verificata | Richiede password e conferma della password. |
 | Accesso combinato | Consente all&#39;utente di accedere a un account esistente o di registrarsi per un nuovo account. |
-| Campo indirizzo moduli | Campo complesso per l’inserimento di un indirizzo internazionale. |
-| Inizio moduli | Avvia una definizione del modulo |
-| Captcha moduli | Campo che consiste di un termine alfanumerico che viene aggiornato automaticamente. Il componente captcha viene usato per proteggere i siti Web dai bot. |
-| Gruppo di controllo Moduli | Più elementi organizzati in un elenco e preceduti da caselle di selezione. Gli utenti possono selezionare più caselle. |
-| Elenco a discesa Moduli | Più elementi organizzati in un elenco a discesa. Il controllo Per selezione multipla specifica se è possibile selezionare più elementi dell’elenco. |
-| Fine moduli | Termina la definizione del modulo. |
-| Caricamento file moduli | Elemento che consente all’utente di caricare un file nel server. |
-| Campo nascosto moduli | Campo che non viene presentato all’utente. Può essere usato per trasferire un valore al client e di nuovo al server. Questo campo non deve presentare vincoli. |
-| Pulsante Immagine Moduli | Pulsante di invio aggiuntivo per il modulo, rappresentato da un’immagine. |
-| Campo password moduli | Come un campo testo, ma per l’inserimento di una sola riga di testo. Inoltre il testo inserito dall’utente non è visibile nel campo. |
-| Gruppo pulsanti di scelta moduli | Più elementi organizzati in un elenco e preceduti da un pulsante di scelta. Gli utenti possono selezionare un solo pulsante di scelta. |
-| Pulsante Invia moduli | Pulsante di invio aggiuntivo per il modulo. Il titolo rappresenta il testo visualizzato sul pulsante. |
-| Campo di testo Moduli | Campo di testo che consente agli utenti di inserire delle informazioni. |
+| Campo indirizzo Forms | Campo complesso per l’inserimento di un indirizzo internazionale. |
+| Forms Begin | Avvia una definizione del modulo |
+| Forms Captcha | Campo che consiste di un termine alfanumerico che viene aggiornato automaticamente. Il componente captcha viene usato per proteggere i siti Web dai bot. |
+| Gruppo di caselle di controllo Forms | Più elementi organizzati in un elenco e preceduti da caselle di selezione. Gli utenti possono selezionare più caselle. |
+| Elenco a discesa Forms | Più elementi organizzati in un elenco a discesa. Il controllo Per selezione multipla specifica se è possibile selezionare più elementi dell’elenco. |
+| Fine Forms | Termina la definizione del modulo. |
+| Caricamento file Forms | Elemento che consente all’utente di caricare un file nel server. |
+| Campo nascosto Forms | Campo che non viene presentato all’utente. Può essere usato per trasferire un valore al client e di nuovo al server. Questo campo non deve presentare vincoli. |
+| Pulsante immagine Forms | Pulsante di invio aggiuntivo per il modulo, rappresentato da un’immagine. |
+| Campo password Forms | Come un campo testo, ma per l’inserimento di una sola riga di testo. Inoltre il testo inserito dall’utente non è visibile nel campo. |
+| Forms Radio Group | Più elementi organizzati in un elenco e preceduti da un pulsante di scelta. Gli utenti possono selezionare un solo pulsante di scelta. |
+| Pulsante Invia Forms | Pulsante di invio aggiuntivo per il modulo. Il titolo rappresenta il testo visualizzato sul pulsante. |
+| Campo di testo Forms | Campo di testo che consente agli utenti di inserire delle informazioni. |
 | My Gadgets | Consente di includere una selezione di gadget disponibili. |
 | Foto avatar profilo | Consente di inserire una foto avatar. |
 | Nome completo profilo | Consente di inserire il nome, compreso eventuali elementi quali qualifica, secondo nome e suffisso. |
@@ -163,9 +166,9 @@ AEM offre diversi componenti per la personalizzazione. Alcuni consentono agli ut
 
 ## Personalizzazione e contenuto della community {#personalization-and-community-content}
 
-Le funzioni della community Internet, quali blog, forum e calendari, consentono di creare contenuti per la community, comunemente denominati contenuti generati dall’utente (UGC). Quando UGC viene immesso in un ambiente di pubblicazione composto da più istanze di AEM (una farm [di](/help/communities/topologies.md)pubblicazione), un problema principale è stato come sincronizzare l’UGC tra tutte le istanze.
+Le funzioni della community Internet, quali blog, forum e calendari, consentono di creare contenuti per la community, comunemente denominati contenuti generati dall’utente (UGC). Quando UGC viene immesso in un ambiente di pubblicazione composto da più istanze di AEM (una [pubblicazione farm](/help/communities/topologies.md)), un problema principale è rappresentato dalla modalità di sincronizzazione UGC tra tutte le istanze.
 
-Con l&#39;estensione [AEM Communities 6.1](/help/communities/overview.md) , questo problema viene risolto utilizzando uno store [comune per UGC](/help/communities/working-with-srp.md). Per quanto riguarda la personalizzazione, Communities include [Social Login](/help/communities/social-login.md) - la capacità di fornire ai visitatori del sito la possibilità di accedere con Facebook e Twitter.
+Con l&#39;estensione [ AEM Communities 6.1](/help/communities/overview.md), questo problema viene risolto utilizzando un [store comune per UGC](/help/communities/working-with-srp.md). Per quanto riguarda la personalizzazione, Communities include [Social Login](/help/communities/social-login.md) - la possibilità di fornire ai visitatori del sito la possibilità di accedere con Facebook e Twitter.
 
 Senza l&#39;estensione Community, vari metodi da esplorare per affrontare la questione della coerenza UGC sono:
 
