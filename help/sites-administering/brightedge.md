@@ -1,8 +1,8 @@
 ---
 title: Integrazione con BrightEdge Content Optimizer
 seo-title: Integrazione con BrightEdge Content Optimizer
-description: Scopri come integrare AEM con BrightEdge Content Optimizer.
-seo-description: Scopri come integrare AEM con BrightEdge Content Optimizer.
+description: Scoprite come integrare AEM con BrightEdge Content Optimizer.
+seo-description: Scoprite come integrare AEM con BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 1%
 
 ---
 
@@ -21,22 +24,23 @@ Crea una configurazione cloud BrightEdge in modo che AEM possa connettersi utili
 
 Quando create la configurazione, specificate un titolo. Il titolo deve essere descrittivo in modo che gli utenti possano correlare la configurazione con l&#39;account BrightEdge. Quando un autore o un amministratore di pagina associa una pagina Web all’account BrightEdge, questo titolo viene presentato in un elenco a discesa.
 
-1. Nella barra laterale fate clic su Strumenti > Operazioni > Cloud > Servizi cloud.
+1. Nella barra laterale, fate clic su Strumenti > Operazioni > Cloud > Cloud Services.
 1. Fate clic sul collegamento visualizzato nella sezione BrightEdge Content Optimizer. La creazione o meno di una configurazione BrightEdge determina il testo del collegamento:
 
    * Configura ora: Questo collegamento viene visualizzato quando non è stata creata alcuna configurazione.
    * Mostra configurazioni: Questo collegamento viene visualizzato quando sono state create una o più configurazioni.
+
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. Se avete fatto clic su Mostra configurazioni, fate clic sul collegamento + accanto a Configurazioni disponibili.
-1. Digitare un titolo per la configurazione. Facoltativamente, digitare un nome per il nodo utilizzato per memorizzare la configurazione nella directory archivio. Fate clic su Crea.
+1. Digitare un titolo per la configurazione. Facoltativamente, digitare un nome per il nodo utilizzato per memorizzare la configurazione nella directory archivio. Fai clic su Crea.
 1. Nella finestra di dialogo Configurazione BrightEdge Content Optimizer, digitate il nome utente e la password dell&#39;account BrightEdge, quindi fate clic su OK.
 
 ## Modifica di una configurazione BrightEdge {#editing-a-brightedge-configuration}
 
 Se necessario, modificate il nome utente e la password di una configurazione BrightEdge. Le modifiche interessano tutte le pagine che utilizzano la configurazione.
 
-1. Nella barra laterale fate clic su Strumenti > Operazioni > Cloud > Servizi cloud.
+1. Nella barra laterale, fate clic su Strumenti > Operazioni > Cloud > Cloud Services.
 1. Nella sezione BrightEdge Content Optimizer, fate clic su Mostra configurazioni.
 
    ![chlimage_1-5](assets/chlimage_1-5a.png)
@@ -50,8 +54,8 @@ Associate le pagine a una configurazione BrightEdge per inviare i dati di pagina
 
 1. Aprite la console Siti Web classici. ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
 1. Nella struttura Siti Web selezionate la cartella o la pagina che contiene la pagina da associare alla configurazione BrightEdge.
-1. Nell’elenco delle pagine, fare clic con il pulsante destro del mouse sulla pagina da configurare e scegliere Proprietà.
-1. Nella scheda Servizi cloud, fai clic sul pulsante Aggiungi servizio, quindi nella finestra di dialogo Servizi cloud seleziona BrightEdge Content Optimizer, quindi fai clic su OK.
+1. Nell’elenco delle pagine, fare clic con il pulsante destro del mouse sulla pagina da configurare e fare clic su Proprietà.
+1. Nella scheda Cloud Services, fate clic sul pulsante Aggiungi servizio, quindi nella finestra di dialogo Cloud Services selezionate BrightEdge Content Optimizer e fate clic su OK.
 1. Nell&#39;elenco BrightEdge Content Optimizer, selezionare la configurazione BrightEdge da associare alla pagina, quindi fare clic su OK.
 
    ![chlimage_1-6](assets/chlimage_1-6a.png)
