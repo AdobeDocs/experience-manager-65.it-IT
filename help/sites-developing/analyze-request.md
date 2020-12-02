@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 1%
 
 ---
 
 
-# Richiedi script di analisi{#request-analysis-script}
+# Request Analysis Script{#request-analysis-script}
 
 ## Scarica {#download}
 
-Questo script è stato creato per semplificare l&#39;analisi dei `access.log` file producendo un rapporto leggibile per l&#39;elaborazione successiva.
+Questo script consente di semplificare l&#39;analisi dei file `access.log` generando un report leggibile per l&#39;elaborazione successiva.
 
 [Ottieni file](assets/analyse-access.sh)
 
 ## Descrizione {#description}
 
-Questo script è stato creato per semplificare l&#39;analisi dei `access.log` file producendo un rapporto leggibile per l&#39;elaborazione successiva.
+Questo script consente di semplificare l&#39;analisi dei file `access.log` generando un report leggibile per l&#39;elaborazione successiva.
 
-Produce il numero complessivo di richieste, GET vs POST, Distribuzione delle richieste nel tempo e molto altro.
+Produce il numero complessivo di richieste, GET e POST, la distribuzione delle richieste nel tempo e più.
 
 L&#39;output è in sintassi di Markdown, quindi sarà più semplice convertirlo in PDF con strumenti come pandoc o visualizzarlo in un browser con plug-in come visualizzatore Markdown.
 
