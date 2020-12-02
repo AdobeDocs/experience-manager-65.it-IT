@@ -1,8 +1,8 @@
 ---
 title: Misurazione e miglioramento dell'efficacia e della conversione dei moduli
 seo-title: Misurazione e miglioramento dell'efficacia e della conversione dei moduli
-description: AEM Forms si integra con le soluzioni Adobe Target e Adobe Analytics che consentono di misurare e migliorare le prestazioni e il tasso di conversione dei moduli.
-seo-description: AEM Forms si integra con le soluzioni Adobe Target e Adobe Analytics che consentono di misurare e migliorare le prestazioni e il tasso di conversione dei moduli.
+description: ' AEM Forms si integra con  soluzioni Adobe Target e  Adobe Analytics che consentono di misurare e migliorare le prestazioni e il tasso di conversione dei moduli.'
+seo-description: ' AEM Forms si integra con  soluzioni Adobe Target e  Adobe Analytics che consentono di misurare e migliorare le prestazioni e il tasso di conversione dei moduli.'
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,6 +11,9 @@ discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 translation-type: tm+mt
 source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 0%
 
 ---
 
@@ -31,22 +34,22 @@ Per massimizzare il ROI, le organizzazioni devono monitorare il modo in cui i cl
 
 ## La soluzione {#the-solution}
 
-AEM Forms si integra con le soluzioni [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - per monitorare e analizzare le prestazioni dei moduli e consentire di sperimentare e identificare l&#39;esperienza che porta a un migliore tasso di conversione.
+ AEM Forms si integra con soluzioni [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [ Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [ Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - che possono aiutarti a monitorare e analizzare le prestazioni dei moduli e consentirti di sperimentare e identificare l&#39;esperienza che porta a un migliore tasso di conversione.
 
-## Il flusso di lavoro {#the-workflow}
+## Flusso di lavoro {#the-workflow}
 
-Passiamo ai dettagli di come misurare le prestazioni e migliorare i tassi di conversione per i moduli.
+Analizziamo i dettagli di come misurare le prestazioni e migliorare i tassi di conversione per i moduli.
 
-### Target audience {#target-audience}
+### Destinatari {#target-audience}
 
-* Utenti e analisti aziendali responsabili di strategie di marketing e successo
+* Utenti e analisti aziendali responsabili di strategie di marketing e di successo
 * Personale IT che si occupa della configurazione e manutenzione dell&#39;infrastruttura e delle soluzioni
 
-### Componenti e funzionalità di AEM Forms {#aem-forms-components-and-features-involved}
+###  componenti e funzionalità di AEM Forms coinvolti {#aem-forms-components-and-features-involved}
 
 * Moduli adattivi
-* Integrazione con Adobe Analytics per la raccolta, l&#39;organizzazione e il reporting delle interazioni dei clienti con i moduli adattivi
-* Integrazione con Adobe Target per eseguire test A/B per i moduli adattivi
+* Integrazione con  Adobe Analytics per raccogliere, organizzare e segnalare le interazioni dei clienti con i moduli adattivi
+* Integrazione con  Adobe Target per eseguire test A/B per i moduli adattivi
 
 ### Ipotesi {#assumptions}
 
@@ -55,37 +58,37 @@ Passiamo ai dettagli di come misurare le prestazioni e migliorare i tassi di con
 
 ### Passaggi del flusso di lavoro {#workflow-steps}
 
-#### Passaggio 1: Configurare Analytics e Target in AEM Forms {#step-configure-analytics-and-target-in-aem-forms-br}
+#### Passaggio 1: Configurare Analytics e Target in  AEM Forms {#step-configure-analytics-and-target-in-aem-forms-br}
 
 **Configura Analytics**
 
-Per ottenere informazioni approfondite sulle interazioni dei clienti con i moduli, devi prima configurare Analytics in AEM Forms. Effettuate le seguenti operazioni:
+Per ottenere informazioni approfondite sulle interazioni dei clienti con i moduli, è innanzitutto necessario configurare Analytics in  AEM Forms. Effettuate le seguenti operazioni:
 
-1. Creare una suite di rapporti in Adobe Analytics
-1. Creare la configurazione del servizio cloud in AEM
-1. Creare il framework del servizio cloud in AEM
-1. Configurare il servizio di configurazione di AEM Forms Analytics in AEM
+1. Creare una suite di rapporti in  Adobe Analytics
+1. Crea configurazione del servizio cloud in AEM
+1. Crea framework di servizi cloud in AEM
+1. Configurare  servizio di configurazione AEM Forms Analytics in AEM
 1. Abilitare l&#39;analisi del modulo in AEM
 
-Per i passaggi dettagliati, vedere [Configurazione di analisi e rapporti per i moduli](../../forms/using/configure-analytics-forms-documents.md)adattivi.
+Per i passaggi dettagliati, vedere [Configurazione di analisi e rapporti per i moduli adattivi](../../forms/using/configure-analytics-forms-documents.md).
 
 **Configurare Target**
 
-Per creare ed eseguire test A/B per i moduli adattivi, configurare Target in AEM Forms come descritto in [Configurare e integrare Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Per creare ed eseguire test A/B per i moduli adattivi, configurare Target in  AEM Forms come descritto in [Configurare e integrare Target in  AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
-#### Passaggio 2: Visualizza rapporto analisi {#step-view-analytics-report-br}
+#### Passaggio 2: Visualizza report di analisi {#step-view-analytics-report-br}
 
 Quando i clienti accedono e interagiscono con i moduli su cui hai attivato Analytics, le loro interazioni vengono acquisite in database Analytics altamente protetti. I database sono segmentati dai client e accessibili tramite connessioni sicure.
 
-È possibile visualizzare un rapporto dall&#39;interno di AEM per i moduli abilitati per l&#39;analisi e per analizzare i dati. Per visualizzare il rapporto:
+È possibile visualizzare un rapporto dall&#39;interno AEM per i moduli abilitati per l&#39;analisi e analizzare i dati. Per visualizzare il rapporto:
 
-1. Nel server AEM, passa a **Moduli > Moduli e documenti**.
+1. Sul AEM server, andate a **Forms > Forms &amp; Documents**.
 1. Selezionare il modulo per il quale si desidera visualizzare il rapporto di analisi.
-1. Fate clic sull&#39;icona Report di Analytics. Viene visualizzato il rapporto.
+1. Fate clic sull&#39;icona Rapporti di Analytics. Il rapporto viene visualizzato.
 
 Esaminiamo i punti dati raccolti e i rapporti di Analytics per i moduli.
 
-**Report analisi moduli**
+**Report di analisi Forms**
 
 Il rapporto di analisi per i moduli adattivi acquisisce i seguenti indicatori prestazioni chiave (KPI) a livello di modulo:
 
@@ -109,11 +112,11 @@ Inoltre, vengono forniti i seguenti dettagli su ciascun pannello del modulo:
 
 ![Report di analisi di esempio per un modulo adattivo](assets/summary-report.png)
 
-Per ulteriori dettagli sui rapporti di analisi dei moduli, consultate [Visualizzazione e comprensione dei rapporti](../../forms/using/view-understand-aem-forms-analytics-reports.md)di analisi dei moduli AEM.
+Per ulteriori dettagli sui report di analisi dei moduli, vedere [Visualizzazione e comprensione  report di analisi AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
->Puoi visualizzare rapporti dettagliati e ottenere informazioni più approfondite sui clienti e sulle loro interazioni con i moduli dall&#39;account Analytics in Adobe Marketing Cloud.
+>Puoi visualizzare rapporti dettagliati e ottenere informazioni più approfondite sui clienti e sulle loro interazioni con i moduli dall&#39;account Analytics su Adobe Marketing Cloud.
 
 #### Passaggio 3: Analizzare i punti dati {#step-analyze-data-points}
 
@@ -131,19 +134,19 @@ In questo passaggio sarà possibile convalidare le modifiche apportate nel modul
 
 **Eseguire un test A/B**
 
-L&#39;integrazione di AEM Forms con Target consente di creare test A/B per i moduli adattivi. Nei test A/B, potete presentare in tempo reale ai clienti diverse esperienze di un modulo per sapere quale funziona meglio o genera più conversioni. Una volta ottenuti dati significativi che indicano un&#39;esperienza di conversione migliore dell&#39;altra, potete dichiarare che le esperienze sono vincenti e, andando avanti, diventerà l&#39;esperienza predefinita visibile a tutti i clienti.
+L&#39;integrazione di  AEM Forms con Target consente di creare test A/B per i moduli adattivi. Nei test A/B, potete presentare in tempo reale ai clienti diverse esperienze di un modulo per sapere quale funziona meglio o genera più conversioni. Una volta ottenuti dati significativi che indicano un&#39;esperienza di conversione migliore dell&#39;altra, potete dichiarare che le esperienze sono vincenti e, andando avanti, diventerà l&#39;esperienza predefinita visibile a tutti i clienti.
 
-Per ulteriori informazioni sulla creazione di un test A/B per un modulo adattivo, vedere Test [A/B dei moduli](../../forms/using/ab-testing-adaptive-forms.md)adattivi.
+Per ulteriori informazioni sulla creazione di un test A/B per un modulo adattivo, vedere [Test A/B dei moduli adattivi](../../forms/using/ab-testing-adaptive-forms.md).
 
 ![Un esempio di rapporto sintetico del test A/B per un modulo adattivo](assets/ab-test-report-4.png)
 
-## Best practices {#best-practices}
+## Best practice {#best-practices}
 
 Le best practice effettive sono quelle che ti identifichi mentre esegui questo flusso di lavoro. Sono esclusivi per il tuo ambiente e i tuoi requisiti. Acquisite le informazioni nel flusso di lavoro e documentatele come best practice.
 
 Alcune raccomandazioni sulla progettazione di moduli e l&#39;esecuzione di test A/B sono le seguenti:
 
-**Struttura dei moduli**
+**Progettazione Forms**
 
 * Semplificare, ridurre e semplificare la navigazione del modulo. Utilizzate suggerimenti direzionali per la navigazione.
 * Utilizzare terminologie standard o comuni per i campi del modulo.
