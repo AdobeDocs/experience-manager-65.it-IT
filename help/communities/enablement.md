@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Panoramica {#overview}
 
-Le funzioni di abilitazione consentono di creare comunità di [abilitazione](overview.md#enablement-community).
+Le funzioni di abilitazione consentono di creare [community di abilitazione](overview.md#enablement-community).
 
 * Questa funzione richiede licenze aggiuntive per l&#39;utilizzo in un ambiente di produzione.
 
@@ -40,19 +40,19 @@ Installazione di:
 
 * **FFmpeg**
 
-   FFmpeg è una soluzione per la conversione e lo streaming audio e video e, se installato, viene utilizzato per la corretta transcodifica di risorse [](../../help/sites-authoring/default-components-foundation.md#video)video. Per le comunità di abilitazione, viene utilizzata nell’ambiente di authoring per ottenere i metadati per le risorse caricate e generare una miniatura da visualizzare quando si elenca le risorse.
+   FFmpeg è una soluzione per la conversione e lo streaming audio e video e, se installato, viene utilizzato per la corretta transcodifica di [Video Assets](../../help/sites-authoring/default-components-foundation.md#video). Per le comunità di abilitazione, viene utilizzata nell’ambiente di authoring per ottenere i metadati per le risorse caricate e generare una miniatura da visualizzare quando si elenca le risorse.
 
 Configurazione di:
 
 * **Manager community**
 
-   Per le comunità di abilitazione, solo ai membri del gruppo di `Community Enablement Managers` utenti può essere assegnato il ruolo di `Community Site Enablement Manager`, le cui autorizzazioni possono includere la creazione di contenuto, le assegnazioni e la gestione di membri nell&#39;ambiente di pubblicazione.
+   Per le comunità di abilitazione, solo ai membri del gruppo di utenti `Community Enablement Managers` può essere assegnato il ruolo di `Community Site Enablement Manager`, le cui autorizzazioni possono includere la creazione di contenuto, le assegnazioni e la gestione di membri nell&#39;ambiente di pubblicazione.
 
 Configurazione opzionale di:
 
 * **Adobe Analytics**
 
-   L&#39;integrazione con Adobe  Analytics aggiunge funzionalità di reporting complete e supporta l&#39;aggiunta di heartbeat video a  Analytics.
+   L&#39;integrazione con  Adobe Analytics aggiunge funzionalità di reporting complete e supporta l&#39;aggiunta di heartbeat video ad Analytics.
 
 * **Dispatcher**
 
@@ -68,7 +68,7 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
    Usa console Web (bundle): *http://localhost:4502/system/console/bundles*
 
-   Installare *prima* di installare il pacchetto SCORM
+   Installare *prima* l&#39;installazione del pacchetto SCORM
 
 1. **[Installare il pacchetto SCORM](deploy-communities.md#scorm-package)**
 
@@ -105,9 +105,9 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
 **Nell’istanza di creazione:**
 
-1. (*Facoltativo*) **[Configurare  servizio Analytics](analytics.md)**
+1. (*Facoltativo*) **[Configura servizio Analytics](analytics.md)**
 
-   Usa console Strumenti, Implementazione, Servizi cloud: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Usa console Strumenti, Implementazione, Cloud Services: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[Configurare FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -130,4 +130,4 @@ Ogni passaggio fa riferimento alla documentazione che fornisce i dettagli necess
 
 ## Dispatcher {#dispatcher}
 
-Quando la distribuzione include l&#39;Dispatcher [di](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM `clientheader` , affinché le funzioni di abilitazione funzionino correttamente, le `filter` sezioni ele sezioni devono essere modificate. Consultate [Configurazione di Dispatcher per Communities](dispatcher.md#enablement).
+Se la distribuzione include [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), affinché le funzioni di abilitazione funzionino correttamente, è necessario modificare le sezioni `clientheader` e `filter`. Vedere [Configurazione del dispatcher per Communities](dispatcher.md#enablement).
