@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7be7d33-9d06-4d07-b7a0-e23251e26cb8
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -27,4 +30,4 @@ In ogni caso, può essere utile pianificare la prossima release:
 
    Ciò potrebbe facilitare i requisiti del modulo per la prossima release; ad esempio, l&#39;esperienza del cliente nel prodotto è aumentata durante il test.
 
-Poiché la prossima release potrebbe essere una migrazione qualsiasi informazione relativa a questo sarà utile.
+Poiché la prossima release potrebbe essere una migrazione qualsiasi informazione relativa a questo si rivelerà utile.
