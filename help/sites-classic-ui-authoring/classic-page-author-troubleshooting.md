@@ -1,6 +1,6 @@
 ---
-title: Risoluzione di problemi AEM durante l’authoring
-seo-title: Risoluzione di problemi AEM nell’ambiente di creazione
+title: Risoluzione di problemi AEM nell’ambiente di authoring
+seo-title: Risoluzione di problemi AEM nell’ambiente di authoring
 description: Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 seo-description: Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
 
-# Risoluzione di problemi AEM nell’ambiente di creazione{#troubleshooting-aem-when-authoring}
+# Risoluzione di problemi AEM nell’ambiente di authoring {#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 
@@ -40,15 +43,15 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 * **Soluzioni**:
 
    * Esistono diverse possibilità:
-   * Verifica che la pagina sia stata replicata correttamente. Controllate lo stato della pagina e, se necessario, lo stato della coda di replica.
+   * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
-   * Add `?` to the end of the page URL. For example:
+   * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
 
       `http://localhost:4502/sites.html/content?`
 
-      Questo fa sì che la pagina venga richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
+      In questo modo la pagina viene richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
 
-   * In caso di problemi relativi alla coda di replica, rivolgetevi al vostro amministratore di sistema.
+   * In caso di problemi relativi alla coda di replica, rivolgiti all’amministratore di sistema.
 
 ## La barra laterale non è visibile {#sidekick-not-visible}
 
@@ -66,9 +69,9 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 ## Trova e sostituisci - Non vengono sostituite tutte le istanze {#find-replace-not-all-instances-are-replaced}
 
-* **Problema**:
+* **Problema:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Quando si utilizza l&#39;opzione **Trova e sostituisci** è possibile che non tutte le istanze del termine `find` vengano sostituite in una pagina.
 
 * **Motivo**:
 
