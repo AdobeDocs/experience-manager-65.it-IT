@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +51,7 @@ Vedi [Modifica del periodo di riferimento](/help/sites-authoring/ci-analyze.md#c
 
 >[!NOTE]
 >
->I rapporti sugli Approfondimenti contenuto richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>I rapporti sugli Approfondimenti contenuto richiedono che l’amministratore abbia integrato AEM con SiteCatalyst, Target e BrightEdge. Consultate [Integrazione con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrazione con  Adobe Target](/help/sites-administering/target.md) e [Integrazione con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Il Rapporto delle visualizzazioni {#the-views-report}
 
