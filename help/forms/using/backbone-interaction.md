@@ -1,8 +1,8 @@
 ---
 title: Interazione con il dorso
 seo-title: Interazione con il dorso
-description: Informazioni concettuali sull'utilizzo di modelli JavaScript di base nell'area di lavoro di AEM Forms.
-seo-description: Informazioni concettuali sull'utilizzo di modelli JavaScript di base nell'area di lavoro di AEM Forms.
+description: Informazioni concettuali sull'utilizzo di modelli JavaScript di backbone nell'area di lavoro  AEM Forms.
+seo-description: Informazioni concettuali sull'utilizzo di modelli JavaScript di backbone nell'area di lavoro  AEM Forms.
 uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,23 +11,26 @@ discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
 
-# Interazione con il dorso{#backbone-interaction}
+# Interazione con la spina dorsale{#backbone-interaction}
 
-Backbone è una libreria che consente di creare e seguire l&#39;architettura MVC nelle applicazioni Web. L&#39;idea di base di Backbone consiste nell&#39;organizzare l&#39;interfaccia in viste logiche, affiancate da modelli, ciascuno dei quali può essere aggiornato indipendentemente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni sulla barra laterale, vedere [https://backbonejs.org](https://backbonejs.org/).
+Backbone è una libreria che consente di creare e seguire l&#39;architettura MVC nelle applicazioni Web. L&#39;idea di base di Backbone consiste nell&#39;organizzare l&#39;interfaccia in viste logiche, affiancate da modelli, ciascuno dei quali può essere aggiornato indipendentemente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni sulla dorsale, vedere [https://backbonejs.org](https://backbonejs.org/).
 
 Alcuni concetti chiave sono i seguenti:
 
-**Modello** backbone Contiene i dati e la maggior parte della logica correlata a tali dati.
+**Backbone** modelContiene i dati e la maggior parte della logica ad essi correlati.
 
-**Vista** dorsale Utilizzata per rappresentare lo stato del modello corrispondente. Una vista dorsale si comporta come un controller, ascoltando eventi dell&#39;interfaccia utente come clic dell&#39;utente o eventi del modello (come i dati modificati) e modificando l&#39;interfaccia utente a seconda delle necessità.
+**Backbone** viewUtilizzato per rappresentare lo stato del modello corrispondente. Una vista dorsale si comporta come un controller, ascoltando eventi dell&#39;interfaccia utente come clic dell&#39;utente o eventi del modello (come i dati modificati) e modificando l&#39;interfaccia utente a seconda delle necessità.
 
-**Modello** HTML Un modello di wrapper con segnaposto popolati dal modello.
+**HTML** templateModello wrapper con segnaposto popolati dal modello.
 
-**Area di lavoro** Moduli AEM Contiene diversi componenti singoli. Ciascun componente:
+**** area di lavoro AEM FormsContiene diversi componenti singoli. Ciascun componente:
 
 * Rappresenta un singolo elemento di interfaccia utente logico.
 * Può essere un insieme di componenti simili.
@@ -51,8 +54,8 @@ Esempio:
 
 1. L&#39;utente fa clic su un modello di attività nell&#39;elenco delle attività.
 1. La visualizzazione Attività ascolta il clic e richiama la funzione di rendering sul modello attività.
-1. Il modello di attività richiama in seguito il servizio, che rappresenta un punto comune per tutte le comunicazioni con il server AEM Forms.
-1. La classe di servizio chiama l’endpoint REST di AEM Forms per il metodo di rendering tramite ajax.
+1. Il modello di task chiama in seguito il servizio che è un punto comune per tutte le comunicazioni con  server AEM Forms.
+1. Chiamate della classe di servizio  endpoint REST di AEM Forms per il metodo di rendering tramite ajax.
 1. Il callback di riuscita per questa chiamata Ajax è definito nel modello attività.
 1. Il modello di task genera un evento dorsale come notifica del completamento della chiamata di rendering.
 1. Un&#39;altra visualizzazione, la visualizzazione dei dettagli dell&#39;attività, ascolta l&#39;evento dal modello dell&#39;attività.
