@@ -18,19 +18,19 @@ ht-degree: 2%
 ---
 
 
-# Configurazione del dispatcher per Communities {#configuring-dispatcher-for-communities}
+# Configurazione del dispatcher per le community {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
-Per  AEM Communities, è necessario configurare il dispatcher per garantire il corretto funzionamento dei siti [](overview.md#community-sites)della community. Sono necessarie configurazioni aggiuntive quando si includono funzioni come l&#39;abilitazione Community e il login per social network.
+Per  AEM Communities, è necessario configurare il dispatcher per garantire il corretto funzionamento dei [siti della community](overview.md#community-sites). Sono necessarie configurazioni aggiuntive quando si includono funzioni come l&#39;abilitazione Community e il login per social network.
 
 Per informazioni sulle esigenze di implementazione e progettazione del sito
 
-* Contact [Customer Care](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
+* Contattare [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
 
-Vedi anche la documentazione [principale del](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)dispatcher.
+Vedere anche la [documentazione del dispatcher principale](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Dispatcher Caching {#dispatcher-caching}
+## Cache del dispatcher {#dispatcher-caching}
 
 ### Panoramica {#overview}
 
@@ -54,7 +54,7 @@ Quando è configurata per supportare il caching del dispatcher, all&#39;intestaz
 
 La configurazione OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** imposta la scadenza delle pagine memorizzate nella cache che vengono visualizzate sotto un percorso specificato.
 
-* Dalla console [Web](../../help/sites-deploying/configuring-osgi.md)
+* Dalla [console Web](../../help/sites-deploying/configuring-osgi.md)
 
    * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -69,15 +69,15 @@ La configurazione OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 * **Cache-Control Max Age**
 
-   *(richiesto)* La durata massima (in secondi) da aggiungere all&#39;intestazione Controllo cache. Il valore deve essere maggiore di zero (0).
+   *(obbligatorio)* La pagina massima (in secondi) da aggiungere all&#39;intestazione Controllo cache. Il valore deve essere maggiore di zero (0).
 
 ## Intestazioni client del dispatcher {#dispatcher-client-headers}
 
-Nella sezione /clientheaders di `dispatcher.any`, se viene elencato un set specifico di intestazioni, è necessario includerlo `"CSRF-Token"` per consentire il corretto funzionamento della funzione [Abilitazione](enablement.md) .
+Nella sezione /clientheaders di `dispatcher.any`, se si elenca un set specifico di intestazioni, è necessario includere `"CSRF-Token"` affinché la [caratteristica Abilitazione](enablement.md) funzioni correttamente.
 
-## Dispatcher Filters {#dispatcher-filters}
+## Filtri del dispatcher {#dispatcher-filters}
 
-La sezione /filter del `dispatcher.any` file è documentata in [Configurazione dell&#39;accesso al contenuto - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+La sezione /filter del file `dispatcher.any` è documentata in [Configuring Access to Content - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
 Questa sezione descrive le voci probabilmente necessarie per il corretto funzionamento delle funzioni Community.
 
@@ -97,7 +97,7 @@ Consulta anche:
 
 >[!CAUTION]
 >
->Per ulteriori considerazioni su come limitare l&#39;accesso tramite Dispatcher, consulta l&#39;elenco di controllo [Protezione dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) . Inoltre, leggete l&#39;elenco di controllo [AEM sicurezza](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) per ulteriori dettagli di sicurezza relativi all&#39;installazione AEM.
+>Per ulteriori considerazioni sulla limitazione dell&#39;accesso tramite Dispatcher, vedere l&#39; [Elenco di controllo per la protezione del dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en). Inoltre, leggere la [AEM lista di controllo della sicurezza](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) per ulteriori informazioni sulla sicurezza relativa all&#39;installazione AEM.
 
 
 Le seguenti voci devono essere aggiunte alla fine della sezione /filter, specialmente dopo che tutte le voci negano.
@@ -172,7 +172,7 @@ Le seguenti voci devono essere aggiunte alla fine della sezione /filter, special
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Regole Dispatcher {#dispatcher-rules}
+## Regole del dispatcher {#dispatcher-rules}
 
 La sezione delle regole di `dispatcher.any` definisce le risposte da memorizzare nella cache in base all&#39;URL richiesto. Per Communities, la sezione rules (Regole) viene utilizzata per definire cosa non deve mai essere memorizzato nella cache.
 
@@ -203,7 +203,7 @@ Il primo pattern di filtro viene spesso utilizzato per negare tutto, in modo che
 
 ## dispatcher di esempio.any {#sample-dispatcher-any}
 
-Di seguito è riportato un file di esempio `dispatcher.any` che include Community /filtri e /rules.
+Di seguito è riportato un file di esempio `dispatcher.any` che include Community /filter e /rules.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)
