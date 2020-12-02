@@ -69,7 +69,7 @@ Sono inoltre disponibili attività amministrative per la gestione dei contenuti:
 
 #### Ambiente di pubblicazione {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
+Quando è pronto, il contenuto del sito AEM viene pubblicato nell&#39; **ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
 
 Solitamente, l’ambiente di pubblicazione si trova nella cosiddetta zona demilitarizzata. In altre parole, è accessibile da Internet ma non usufruisce più della protezione completa offerta dalla rete interna.
 
