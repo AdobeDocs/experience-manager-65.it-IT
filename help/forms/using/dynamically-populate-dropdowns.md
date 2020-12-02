@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## Procedura per la compilazione dinamica degli elenchi a discesa {#procedure-to-dynamically-populate-drop-down-lists}
 
-Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **Stato** in base a un valore selezionato nell&#39;elenco a discesa **Paese** . Se si seleziona Australia nell&#39;elenco a discesa **Paese** , nell&#39;elenco a discesa **Stato** vengono visualizzati gli stati in Australia. La procedura seguente descrive come eseguire questa operazione.
+Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **State** in base a un valore selezionato nell&#39;elenco a discesa **Country**. Se si seleziona Australia nell&#39;elenco a discesa **Paese**, nell&#39;elenco a discesa **Stato** vengono visualizzati gli stati presenti in Australia. La procedura seguente descrive come eseguire questa operazione.
 
 1. Crea un progetto con i seguenti moduli:
 
@@ -147,7 +147,7 @@ Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **S
    }
    ```
 
-1. Create un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (ad esempio, create un nodo in /apps/myfolder/demo). Assicurarsi che il `sling:resourceType` parametro del nodo sia lo stesso a cui corrispondono i servlet point (/apps/popolatedropdown).
+1. Create un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (ad esempio, create un nodo in /apps/myfolder/demo). Assicurarsi che il parametro `sling:resourceType` per il nodo sia lo stesso del punto servlet (/apps/popolatedropdown).
 
    ![Creare un nodo a discesa](assets/dropdown-node.png)
 
@@ -156,7 +156,7 @@ Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **S
 
    Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell&#39;elenco Stato, aggiungere uno script per compilarlo in base al nome del paese nell&#39;elenco Paese.
 
-   ![Aggiunta di nomi](assets/country-dropdown.png) di paese ![Aggiunta di script per la compilazione di elenchi a discesa di stati](assets/state-dropdown.png) ![Paese e Stato](assets/2dropdowns.png)
+   ![Aggiunta di ](assets/country-dropdown.png) ![nomi di paeseAggiunta di script per la compilazione di ](assets/state-dropdown.png) ![nomi di statoMenu a discesa Paese e Stato](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
