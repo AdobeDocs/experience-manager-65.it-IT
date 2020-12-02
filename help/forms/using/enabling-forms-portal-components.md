@@ -10,31 +10,34 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 translation-type: tm+mt
 source-git-commit: a209b2dda04985a3f2d7c6838f11f0b5dc62d520
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 
 # Abilitazione dei componenti del portale moduli {#enabling-forms-portal-components}
 
-I componenti del portale moduli non sono disponibili per l&#39;uso. Per visualizzare i componenti nell’elenco dei componenti disponibili nella barra laterale di AEM, effettuate le seguenti operazioni:
+I componenti del portale moduli non sono disponibili per l&#39;uso. Per visualizzare i componenti nell’elenco dei componenti disponibili AEM barra laterale, effettuate le seguenti operazioni:
 
-1. Accedete all’istanza di creazione del sito Web e aprite una pagina AEM Sites.
+1. Accedete all’istanza di creazione del sito Web e aprite una pagina AEM Sites .
 
 1. Per le pagine che utilizzano un modello statico, effettuare le seguenti operazioni:
 
-   1. Nell’intestazione della pagina, toccate ![canvas-menu a discesa](assets/canvas-drop-down.png) > **Progettazione** per aprire la pagina in modalità Progettazione.
-   1. Toccate un componente (con bordo blu), quindi toccate il livello ![del](assets/field-level.png) campo per selezionare il sistema di paragrafi contenente il componente corrente.
-   1. Nel sistema di paragrafi, toccate ![settings_icon](assets/settings_icon.png) per aprire la finestra di dialogo Modifica per il sistema di paragrafi.
-   1. Dall&#39;elenco dei componenti **** consentiti, abilitare le caselle di controllo per i componenti di **[!UICONTROL Document Services]** e Predicati di **[!UICONTROL Document Services]** . Toccate **[!UICONTROL OK]**.
+   1. Nell&#39;intestazione della pagina, toccate ![canvas-drop-down](assets/canvas-drop-down.png) > **Design** per aprire la pagina in modalità Progettazione.
+   1. Toccate un componente (con un bordo blu), quindi toccate ![livello campo](assets/field-level.png) per selezionare il sistema di paragrafi contenente il componente corrente.
+   1. Nel sistema di paragrafi, toccare ![settings_icon](assets/settings_icon.png) per aprire la finestra di dialogo Modifica per il sistema di paragrafi.
+   1. Dall&#39;elenco **[!UICONTROL Componenti consentiti]**, abilitare le caselle di controllo per i componenti **[!UICONTROL Document Services]** e **[!UICONTROL Document Services Predicates]**. Toccate **[!UICONTROL OK]**.
 
 1. Per le pagine che utilizzano un modello dinamico, effettuare le seguenti operazioni:
 
-   1. Nell’intestazione della pagina, toccate ![proprietà](assets/properties.png) > **Modifica modello** per aprire il modello della pagina.
-   1. Toccate Contenitore **di** layout e toccate ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Nella scheda Componenti **** consentiti, abilitare le opzioni **Document Services e Document Services Predicates** e toccare ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Nell&#39;intestazione della pagina, toccare ![properties](assets/properties.png) > **Edit Template** (Modifica modello) per aprire il modello della pagina.
+   1. Toccate **Contenitore di layout** e toccate ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Nella scheda **Componenti consentiti**, abilitare le opzioni **Document Services and Document Services Predicates** e toccare ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >
->Potete anche attivare componenti specifici di queste categorie selezionando i componenti. Per ulteriori informazioni sui componenti e sul loro utilizzo, vedere [Creazione di una pagina](/help/forms/using/creating-form-portal-page.md) del portale dei moduli e [Incorporazione di un componente collegamento in una pagina](/help/forms/using/embedding-link-component-page.md).
+>Potete anche attivare componenti specifici di queste categorie selezionando i componenti. Per ulteriori informazioni sui componenti e sul loro utilizzo, vedere [Creazione di una pagina del portale dei moduli](/help/forms/using/creating-form-portal-page.md) e [Incorporazione di un componente collegamento in una pagina](/help/forms/using/embedding-link-component-page.md).
 
 Ora, le categorie di componenti di Document Services e Document Services Predicates sono disponibili nel browser Componenti. I componenti sono abilitati per tutte le pagine che utilizzano lo stesso modello.
 
