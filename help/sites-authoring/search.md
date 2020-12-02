@@ -12,6 +12,9 @@ discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 96%
 
 ---
 
@@ -26,21 +29,21 @@ L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti,
 
 ## Informazioni di base sulla ricerca {#search-basics}
 
-La ricerca è disponibile nella barra degli strumenti superiore:
+La funzione Ricerca è disponibile nella barra degli strumenti superiore:
 
 ![](do-not-localize/chlimage_1-17.png)
 
 La barra di ricerca consente di effettuare le seguenti operazioni:
 
 * Cercare una parola chiave, un percorso o un tag specifico.
-* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file ecc.
+* Filtrare in base a criteri specifici per le risorse come date di modifica, stato della pagina, dimensione del file e così via
 * Definire e utilizzare una [ricerca salvata](#saved-searches) in base ai criteri impostati.
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>La ricerca può anche essere avviata mediante il tasto di scelta rapida `/` (barra) ogni volta che la barra di ricerca è visibile.
 
-## Ricerca e Filtro {#search-and-filter}
+## Ricerca e filtro {#search-and-filter}
 
 Per cercare e filtrare le risorse:
 
@@ -71,6 +74,7 @@ Per cercare e filtrare le risorse:
    * Directory di ricerca
    * Tag
    * Criteri di ricerca, ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy.
+
    >[!NOTE]
    >
    >I criteri di ricerca possono variare:
@@ -83,7 +87,7 @@ Per cercare e filtrare le risorse:
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
-1. Puoi inoltre aggiungere termini di ricerca aggiuntivi:
+1. Puoi anche aggiungere altri termini di ricerca:
 
    ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
@@ -95,7 +99,7 @@ Per cercare e filtrare le risorse:
 >
 >Quando selezioni un elemento nella pagina dei risultati, e quindi torni alla pagina di ricerca dopo avere utilizzato il pulsante indietro del browser, i criteri di ricerca rimangono.
 
-## Saved Searches {#saved-searches}
+## Ricerche salvate {#saved-searches}
 
 Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare una specifica configurazione di ricerca per riutilizzarla in un secondo momento.
 
@@ -116,6 +120,6 @@ Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare u
    * Utilizzare la **x** (in corrispondenza del nome di una ricerca salvata) per avviare una nuova ricerca (la ricerca salvata non verrà eliminata).
    * Seleziona **Modifica ricerca salvata**, modifica le condizioni di ricerca e seleziona nuovamente **Salva**.
 
-Le ricerche salvate possono essere modificate selezionando la ricerca salvata e facendo clic su **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.
+Per modificare le ricerche salvate, seleziona una ricerca e fai clic sull’opzione **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.
 
 ![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
