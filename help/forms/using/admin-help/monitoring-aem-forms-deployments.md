@@ -1,8 +1,8 @@
 ---
 title: Monitoraggio delle distribuzioni di moduli AEM
 seo-title: Monitoraggio delle distribuzioni di moduli AEM
-description: È possibile monitorare le distribuzioni dei moduli AEM sia a livello di sistema che a livello interno. Ulteriori informazioni sul monitoraggio delle distribuzioni di moduli AEM da questo documento.
-seo-description: È possibile monitorare le distribuzioni dei moduli AEM sia a livello di sistema che a livello interno. Ulteriori informazioni sul monitoraggio delle distribuzioni di moduli AEM da questo documento.
+description: È possibile monitorare AEM distribuzioni dei moduli sia a livello di sistema che a livello interno. Per ulteriori informazioni sul monitoraggio AEM distribuzione dei moduli, consultare questo documento.
+seo-description: È possibile monitorare AEM distribuzioni dei moduli sia a livello di sistema che a livello interno. Per ulteriori informazioni sul monitoraggio AEM distribuzione dei moduli, consultare questo documento.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
@@ -20,18 +20,18 @@ ht-degree: 0%
 
 # Monitoraggio delle distribuzioni di moduli AEM {#monitoring-aem-forms-deployments}
 
-È possibile monitorare le distribuzioni dei moduli AEM sia a livello di sistema che a livello interno. Potete utilizzare strumenti di gestione specializzati come HP OpenView, IBM Tivoli e CA UniCenter e un monitor JMX di terze parti denominato *JConsole* per monitorare specificamente l&#39;attività Java. L&#39;implementazione di una strategia di monitoraggio migliora la disponibilità, l&#39;affidabilità e le prestazioni delle installazioni dei moduli AEM.
+È possibile monitorare AEM distribuzioni dei moduli sia a livello di sistema che a livello interno. Potete utilizzare strumenti di gestione specializzati come HP OpenView, IBM Tivoli e CA UniCenter e un monitor JMX di terze parti denominato *JConsole* per monitorare specificamente l&#39;attività Java. L&#39;implementazione di una strategia di monitoraggio migliora la disponibilità, l&#39;affidabilità e le prestazioni delle installazioni dei moduli AEM.
 
-Per ulteriori informazioni sul monitoraggio delle distribuzioni di moduli AEM, consulta [Una guida tecnica per il monitoraggio delle distribuzioni](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf)di moduli AEM.
+Per ulteriori informazioni sul monitoraggio AEM distribuzione dei moduli, vedere [Guida tecnica per il monitoraggio AEM distribuzione dei moduli](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
 
-## Monitoraggio con MBeans {#monitoring-using-mbeans}
+## Monitoraggio utilizzando MBeans {#monitoring-using-mbeans}
 
-I moduli AEM forniscono due MBeans registrati che forniscono informazioni di navigazione e statistiche. Sono gli unici MBeans supportati per l&#39;integrazione e l&#39;ispezione:
+AEM moduli fornisce due MBeans registrati che forniscono informazioni statistiche e di navigazione. Sono gli unici MBeans supportati per l&#39;integrazione e l&#39;ispezione:
 
-* **ServiceStatistic:** Questo MBean fornisce informazioni sul nome del servizio e sulla sua versione.
-* **OperationStatistic:** Questo MBean fornisce le statistiche di ogni servizio del server dei moduli. È qui che gli amministratori possono ottenere informazioni su un particolare servizio, ad esempio ora di chiamata, numero di errori e così via.
+* **ServiceStatistic:** Questo MBean fornisce informazioni sul nome del servizio e sulla relativa versione.
+* **OperationStatistic:** Questo MBean fornisce le statistiche di ogni servizio server di moduli. È qui che gli amministratori possono ottenere informazioni su un particolare servizio, ad esempio ora di chiamata, numero di errori e così via.
 
-### Interfacce pubbliche ServiceStatisticMava {#servicestatisticmbean-public-interfaces}
+### Interfacce pubbliche ServiceStatisticM {#servicestatisticmbean-public-interfaces}
 
 È possibile accedere alle seguenti interfacce pubbliche di ServiceStatistic MBean a scopo di test:
 
@@ -41,7 +41,7 @@ I moduli AEM forniscono due MBeans registrati che forniscono informazioni di nav
  public int getMinorVersion();
 ```
 
-### Interfacce pubbliche OperationStatisticMfava {#operationstatisticmbean-public-interfaces}
+### Interfacce pubbliche OperationStatisticMava {#operationstatisticmbean-public-interfaces}
 
 È possibile accedere a queste interfacce pubbliche di OperationStatistic MBean a scopo di test:
 
@@ -75,33 +75,33 @@ Utilizzando una console JConsole (JMX console), sono disponibili le statistiche 
 
 **MBean tree**
 
-**Nome dominio Adobe:** Dipende da Application Server. Se Application Server non definisce il dominio, il valore predefinito è adobe.com.
+**Nome Di Dominio  Adobe:** Dipende dal server applicazione. Se Application Server non definisce il dominio, il valore predefinito è adobe.com.
 
 **ServiceType:** AdobeService è il nome utilizzato per elencare tutti i servizi.
 
-**AdobeServiceName:** Nome servizio o ID servizio.
+**AdobeServiceName:** Service Name o Service ID.
 
 **Versione:** Versione del servizio.
 
 **Statistiche operazione**
 
-**Tempo di richiamo:** Tempo necessario per l&#39;esecuzione del metodo. Ciò non include l&#39;ora in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
+**Tempo di chiamata:** tempo impiegato per l&#39;esecuzione del metodo. Ciò non include l&#39;ora in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
 
-**Numero di vocazioni:** Il numero di volte in cui il servizio viene richiamato.
+**Conteggio chiamate:** il numero di volte in cui il servizio viene richiamato.
 
-**Tempo medio di chiamata:** Tempo medio di tutte le chiamate eseguite dall&#39;avvio del server.
+**Tempo medio di chiamata: tempo** medio di tutte le chiamate eseguite dall&#39;avvio del server.
 
-**Tempo massimo di chiamata:** Durata della chiamata più lunga eseguita dall&#39;avvio del server.
+**Tempo massimo di chiamata:** durata della chiamata più lunga eseguita dall&#39;avvio del server.
 
-**Tempo minimo di chiamata:** Durata della chiamata più breve eseguita dall&#39;avvio del server.
+**Tempo minimo di chiamata:** durata della chiamata più breve eseguita dall&#39;avvio del server.
 
-**Conteggio eccezioni:** Numero di chiamate che hanno generato errori.
+**Conteggio eccezioni:** numero di chiamate che hanno generato errori.
 
-**Messaggio eccezione:** Messaggio di errore dell&#39;ultima eccezione che si è verificata.
+**Messaggio eccezione:** messaggio di errore dell&#39;ultima eccezione che si è verificata.
 
-**Data ultima campionamento:** Data dell’ultima chiamata.
+**Data e ora dell’ultimo campionamento:** la data dell’ultima chiamata.
 
-**Unità di tempo:** Il valore predefinito è millisecondi.
+**Unità di tempo: il valore** predefinito è millisecondi.
 
 Per abilitare il monitoraggio JMX, i server applicazione in genere necessitano di una certa configurazione. Per informazioni specifiche, consultate la documentazione del server applicazione.
 
