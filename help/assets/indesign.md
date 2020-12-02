@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Assets] Integrate con [!DNL InDesign Server]'
-description: Scopri come [!DNL Adobe Experience Manager Assets] integrarsi [!DNL Adobe InDesign Server].
+title: Integrare  [!DNL Assets] con [!DNL InDesign Server]
+description: Scopri come integrare  [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 117208c634613559bb13556e12f094add70006e2
@@ -11,70 +11,70 @@ ht-degree: 4%
 ---
 
 
-# Integrazione [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
+# Integrare [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] use:
 
-* Un proxy per distribuire il carico di alcune attività di elaborazione. Un proxy è un&#39; [!DNL Experience Manager] istanza che comunica con un lavoratore proxy per eseguire un&#39;attività specifica e altre [!DNL Experience Manager] istanze per fornire i risultati.
+* Un proxy per distribuire il carico di alcune attività di elaborazione. Un proxy è un&#39;istanza [!DNL Experience Manager] che comunica con un lavoratore proxy per eseguire un&#39;attività specifica, e con altre istanze [!DNL Experience Manager] per fornire i risultati.
 * Un lavoratore proxy per definire e gestire un&#39;attività specifica.
-Questi possono coprire un&#39;ampia gamma di compiti; ad esempio, l&#39;uso di un [!DNL InDesign Server] per elaborare i file.
+Questi possono coprire un&#39;ampia gamma di compiti; ad esempio, l&#39;utilizzo di un [!DNL InDesign Server] per elaborare i file.
 
-Per caricare completamente i file in [!DNL Experience Manager Assets] cui avete creato [!DNL Adobe InDesign] un proxy, viene utilizzato. Questo utilizza un proxy worker per comunicare con il [!DNL Adobe InDesign Server], dove [gli script](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) vengono eseguiti per estrarre i metadati e generare diverse rappresentazioni per [!DNL Experience Manager Assets]. Il lavoratore proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e le [!DNL Experience Manager] istanze in una configurazione cloud.
+Per caricare completamente i file in [!DNL Experience Manager Assets] creati con [!DNL Adobe InDesign] viene utilizzato un proxy. Questo utilizza un proxy worker per comunicare con [!DNL Adobe InDesign Server], dove [gli script](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) vengono eseguiti per estrarre i metadati e generare diverse rappresentazioni per [!DNL Experience Manager Assets]. Il lavoratore proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] viene offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare a livello di programmazione documenti automatizzati basati su ciò che è stato creato [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore ExtendScript [](https://www.adobe.com/devnet/scripting.html) .Gli script sono scritti in [!DNL ExtendScript], che è simile a [!DNL JavaScript]. Per informazioni sugli [!DNL InDesign] script, vedere [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] viene offerto come due offerte separate. [&#39;app desktop ](https://www.adobe.com/products/indesign.html) InDesign di Adobe utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [ Adobe InDesign ](https://www.adobe.com/products/indesignserver.html) Server consente di creare a livello di programmazione documenti automatizzati basati su ciò che è stato creato con  [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ ExtendScript](https://www.adobe.com/devnet/scripting.html).Gli script sono scritti in [!DNL ExtendScript], che è simile a [!DNL JavaScript]. Per informazioni sugli script [!DNL InDesign], vedere [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## Funzionamento dell&#39;estrazione {#how-the-extraction-works}
 
-È [!DNL Adobe InDesign Server] possibile integrare i file INDD creati con [!DNL Experience Manager Assets] cui [!DNL InDesign] possono essere caricati, generati, tutti i file multimediali estratti (ad esempio, video) e memorizzati come risorse:
+È possibile integrare [!DNL Adobe InDesign Server] con [!DNL Experience Manager Assets] per caricare i file INDD creati con [!DNL InDesign], generare le rappresentazioni, estrarre tutti i file multimediali (ad esempio, video) e memorizzarli come risorse:
 
 >[!NOTE]
 >
->Le versioni precedenti di [!DNL Experience Manager] erano in grado di estrarre XMP e la miniatura, ora tutti i supporti possono essere estratti.
+>Le versioni precedenti di [!DNL Experience Manager] erano in grado di estrarre XMP e la miniatura, ora è possibile estrarre tutti i supporti.
 
 1. Caricate il file INDD in [!DNL Experience Manager Assets].
-1. Un framework invia script di comando [!DNL InDesign Server] tramite SOAP (Simple Object Access Protocol).
+1. Un framework invia script di comando a [!DNL InDesign Server] tramite SOAP (Simple Object Access Protocol).
 Questo script di comando:
 
    * Recuperate il file INDD.
-   * Esegui [!DNL InDesign Server] comandi:
+   * Esegui comandi [!DNL InDesign Server]:
 
       * Vengono estratti la struttura, il testo e tutti i file multimediali.
       * Vengono generate rappresentazioni PDF e JPG.
       * Vengono generate rappresentazioni HTML e IDML.
-   * Ripubblica i file risultanti in [!DNL Experience Manager Assets].
+   * Riportare i file risultanti su [!DNL Experience Manager Assets].
 
    >[!NOTE]
    >
-   >IDML è un formato basato su XML che esegue il rendering di tutti i contenuti del [!DNL InDesign] file. Viene memorizzato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip) . Per ulteriori informazioni, vedere [formati di interscambio InDesign INX e IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML è un formato basato su XML che esegue il rendering di tutti i contenuti del file [!DNL InDesign]. Viene memorizzato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip). Per ulteriori informazioni, vedere [ formati di interscambio InDesign INX e IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
-   >Se il file [!DNL InDesign Server] non è installato o non è configurato, potete comunque caricare un file INDD in [!DNL Experience Manager]. Tuttavia, le rappresentazioni generate saranno limitate a PNG e JPEG. Non sarà possibile generare rappresentazioni HTML, .idml o di pagina.
+   >Se [!DNL InDesign Server] non è installato o non è configurato, è comunque possibile caricare un file INDD in [!DNL Experience Manager]. Tuttavia, le rappresentazioni generate saranno limitate a PNG e JPEG. Non sarà possibile generare rappresentazioni HTML, .idml o di pagina.
 
 1. Dopo la generazione di estrazione e rappresentazione:
 
    * La struttura viene replicata in un `cq:Page` (tipo di rappresentazione).
-   * Il testo e i file estratti vengono memorizzati in [!DNL Experience Manager Assets].
-   * Tutte le rappresentazioni sono memorizzate nella [!DNL Experience Manager Assets], nella risorsa stessa.
+   * Il testo e i file estratti sono memorizzati in [!DNL Experience Manager Assets].
+   * Tutte le rappresentazioni sono memorizzate in [!DNL Experience Manager Assets], nella risorsa stessa.
 
-## Integrare l&#39; [!DNL InDesign Server] con  Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integrare il [!DNL InDesign Server] con  Experience Manager {#integrating-the-indesign-server-with-aem}
 
-Per integrare l&#39; [!DNL InDesign Server] utilizzo con [!DNL Experience Manager Assets] e dopo la configurazione del proxy, è necessario:
+Per integrare [!DNL InDesign Server] per l&#39;utilizzo con [!DNL Experience Manager Assets] e dopo aver configurato il proxy, è necessario:
 
-1. [Installare il InDesign Server](#installing-the-indesign-server).
-1. Se necessario, [configura il flusso di lavoro](#configuring-the-aem-assets-workflow)Risorse Experience Manager .
+1. [Installare il InDesign Server](#installing-the-indesign-server) .
+1. Se necessario, [configura il flusso di lavoro risorse del Experience Manager ](#configuring-the-aem-assets-workflow).
 Ciò è necessario solo se i valori predefiniti non sono appropriati per l’istanza in uso.
-1. Configurare un lavoratore [proxy per il InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
+1. Configurare un lavoratore proxy [per il  InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installa [!DNL InDesign Server] {#installing-the-indesign-server}
+### Installare [!DNL InDesign Server] {#installing-the-indesign-server}
 
-Per installare e avviare l’ [!DNL InDesign Server] utilizzo con [!DNL Experience Manager]:
+Per installare e avviare [!DNL InDesign Server] per l&#39;utilizzo con [!DNL Experience Manager]:
 
 1. Scaricate e installate il [!DNL InDesign Server].
 
-1. Se necessario, potete personalizzare la configurazione dell’ [!DNL InDesign Server] istanza.
+1. Se necessario, potete personalizzare la configurazione dell&#39;istanza [!DNL InDesign Server].
 
 1. Dalla riga di comando, avviate il server:
 
@@ -87,18 +87,18 @@ Per installare e avviare l’ [!DNL InDesign Server] utilizzo con [!DNL Experien
    >Se si desidera salvare i messaggi di output in un file, utilizzare redirection; ad esempio, in Windows:
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### Configurare il [!DNL Experience Manager Assets] flusso di lavoro {#configuring-the-aem-assets-workflow}
+### Configurare il flusso di lavoro [!DNL Experience Manager Assets] {#configuring-the-aem-assets-workflow}
 
-[!DNL Experience Manager Assets] dispone di un flusso di lavoro preconfigurato **[!UICONTROL DAM Update Asset]**, con diversi passaggi di processo specifici per [!DNL InDesign]:
+[!DNL Experience Manager Assets] dispone di un flusso di lavoro preconfigurato  **[!UICONTROL DAM Update Asset]**, con diversi passaggi di processo specifici per  [!DNL InDesign]:
 
 * [Estrazione file multimediali](#media-extraction)
 * [Estrazione pagina](#page-extraction)
 
 Questo flusso di lavoro è configurato con valori predefiniti che possono essere adattati per la configurazione nelle varie istanze di authoring (si tratta di un flusso di lavoro standard, per cui ulteriori informazioni sono disponibili in [Modifica di un flusso di lavoro](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Se si utilizzano i valori predefiniti (inclusa la porta SOAP), non è necessaria alcuna configurazione.
 
-Dopo l’impostazione, il caricamento di [!DNL InDesign] file in [!DNL Experience Manager Assets] (con uno dei metodi più comuni) attiva il flusso di lavoro per elaborare la risorsa e preparare le varie rappresentazioni. Verifica la configurazione caricando un file INDD in [!DNL Experience Manager Assets] modo da confermare la visualizzazione delle diverse rappresentazioni create da IDS in `<*your_asset*>.indd/Renditions`
+Dopo l’impostazione, il caricamento di [!DNL InDesign] file in [!DNL Experience Manager Assets] (con uno dei metodi consueti) attiva il flusso di lavoro per elaborare la risorsa e preparare le varie rappresentazioni. Verificare la configurazione caricando un file INDD in [!DNL Experience Manager Assets] per confermare che vengono visualizzate le diverse rappresentazioni create da IDS in `<*your_asset*>.indd/Renditions`
 
-#### Media extraction {#media-extraction}
+#### Estrazione file multimediali {#media-extraction}
 
 Questo passaggio controlla l’estrazione di file multimediali dal file INDD.
 
@@ -110,28 +110,28 @@ Argomenti di estrazione dei supporti e percorsi di script
 
 * **Libreria** ExtendScript : Si tratta di una semplice libreria di metodi http get/post, richiesta dagli altri script.
 
-* **Estendi script**: Qui è possibile specificare diverse combinazioni di script. Se si desidera che gli script personalizzati siano eseguiti sul [!DNL InDesign Server]computer, salvare gli script in `/apps/settings/dam/indesign/scripts`.
+* **Estendi script**: Qui è possibile specificare diverse combinazioni di script. Se si desidera che gli script personalizzati siano eseguiti sul [!DNL InDesign Server], salvare gli script in `/apps/settings/dam/indesign/scripts`.
 
-Per informazioni sugli [!DNL Adobe InDesign] script, consultate la documentazione per lo sviluppo di [InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Per informazioni sugli script [!DNL Adobe InDesign], vedere la [documentazione per lo sviluppo di InDesign ](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
->Non modificare la libreria ExtendScript. Questa libreria fornisce la funzionalità HTTP necessaria per comunicare con Sling. Questa impostazione specifica la libreria da inviare alla libreria [!DNL InDesign Server] per utilizzarla.
+>Non modificare la libreria ExtendScript. Questa libreria fornisce la funzionalità HTTP necessaria per comunicare con Sling. Questa impostazione specifica la libreria da inviare a [!DNL InDesign Server] per l&#39;utilizzo in tale libreria.
 
-Lo `ThumbnailExport.jsx` script eseguito dal passaggio del flusso di lavoro Estrazione file multimediali genera una rappresentazione in miniatura in formato JPG. Questa rappresentazione viene utilizzata dal passaggio del flusso di lavoro Miniature di processo per generare le rappresentazioni statiche richieste da [!DNL Experience Manager].
+Lo script `ThumbnailExport.jsx` eseguito dal passaggio del flusso di lavoro Media Extraction genera una rappresentazione in miniatura in formato JPG. Questa rappresentazione viene utilizzata dal passaggio del flusso di lavoro Miniature di processo per generare le rappresentazioni statiche richieste da [!DNL Experience Manager].
 
-Potete configurare il passaggio del flusso di lavoro Miniature di processo per generare rappresentazioni statiche di dimensioni diverse. Assicuratevi di non rimuovere le impostazioni predefinite, perché sono richieste dall&#39; [!DNL Experience Manager Assets] interfaccia. Infine, il passaggio del flusso di lavoro Elimina anteprima immagine rimuove la rappresentazione in miniatura JPG, in quanto non è più necessaria.
+Potete configurare il passaggio del flusso di lavoro Miniature di processo per generare rappresentazioni statiche di dimensioni diverse. Assicurarsi di non rimuovere i valori predefiniti, perché sono richiesti dall&#39;interfaccia [!DNL Experience Manager Assets]. Infine, il passaggio del flusso di lavoro Elimina anteprima immagine rimuove la rappresentazione in miniatura JPG, in quanto non è più necessaria.
 
-#### Page extraction {#page-extraction}
+#### Estrazione pagina {#page-extraction}
 
-Viene creata una [!DNL Experience Manager] pagina dagli elementi estratti. Un gestore di estrazione viene utilizzato per estrarre i dati da una rappresentazione (attualmente HTML o IDML). Questi dati vengono quindi utilizzati per creare una pagina con PageBuilder.
+Viene creata una pagina [!DNL Experience Manager] dagli elementi estratti. Un gestore di estrazione viene utilizzato per estrarre i dati da una rappresentazione (attualmente HTML o IDML). Questi dati vengono quindi utilizzati per creare una pagina con PageBuilder.
 
 Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]** del passaggio **[!UICONTROL Estrazione pagina]**.
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Gestore** estrazione pagina: Dall&#39;elenco a comparsa, selezionare il gestore che si desidera utilizzare. Un gestore estrazione opera su un rendering specifico, scelto da un `RenditionPicker` correlato (consulta l’API `ExtractionHandler`). In a standard [!DNL Experience Manager] installation the following is available:
-   * Maniglia estrazione esportazione IDML: Funziona sulla `IDML` rappresentazione generata nel passaggio MediaExtract.
+* **Gestore** estrazione pagina: Dall&#39;elenco a comparsa, selezionare il gestore che si desidera utilizzare. Un gestore estrazione opera su un rendering specifico, scelto da un `RenditionPicker` correlato (consulta l’API `ExtractionHandler`). In un&#39;installazione [!DNL Experience Manager] standard è disponibile quanto segue:
+   * Maniglia estrazione esportazione IDML: Funziona sulla rappresentazione `IDML` generata nel passaggio MediaExtract.
 
 * **Nome** pagina: Specificate il nome che desiderate assegnare alla pagina risultante. Se lasciato vuoto, il nome è &quot;page&quot; (o un derivato, se &quot;page&quot; esiste già).
 
@@ -143,57 +143,58 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 
 * **Progettazione** pagina: Struttura della pagina da utilizzare per la generazione della pagina risultante.
 
-### Configurare il lavoratore proxy per [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
+### Configurare il proxy per [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
 >Il lavoratore risiede nell&#39;istanza proxy.
 
-1. Nella console Strumenti, espandete Configurazioni **** Cloud Services nel riquadro a sinistra. Quindi espandete Configurazione **[!UICONTROL proxy]** Cloud.
+1. Nella console Strumenti, espandere **[!UICONTROL Configurazioni Cloud Services]** nel riquadro a sinistra. Quindi espandere **[!UICONTROL Configurazione proxy cloud]**.
 
 1. Per aprire la configurazione, fai doppio clic su **[!UICONTROL IDS worker]**.
 
-1. Fate clic su **[!UICONTROL Modifica]** per aprire la finestra di dialogo di configurazione e definire le impostazioni richieste:
+1. Fare clic su **[!UICONTROL Modifica]** per aprire la finestra di dialogo di configurazione e definire le impostazioni richieste:
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **Pool** IDS Gli endpoint SOAP da utilizzare per comunicare con l&#39;app [!DNL InDesign Server]. È possibile aggiungere, rimuovere e ordinare gli elementi necessari.
+   * **IDS**
+PoolGli endpoint SOAP da utilizzare per comunicare con l&#39; [!DNL InDesign Server]. È possibile aggiungere, rimuovere e ordinare gli elementi necessari.
 
 1. Fai clic su OK per salvare.
 
 ### Configurare Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
-Se l&#39;applicazione [!DNL InDesign Server] e l&#39; [!DNL Experience Manager] esecuzione su host diversi o una o entrambe le applicazioni non vengono eseguite sulle porte predefinite, configurate [!UICONTROL Day CQ Link Externalizer] per impostare il nome host, la porta e il percorso del contenuto per l&#39;host [!DNL InDesign Server].
+Se le [!DNL InDesign Server] e [!DNL Experience Manager] vengono eseguite su host diversi o su entrambe le applicazioni non vengono eseguite sulle porte predefinite, configurate [!UICONTROL Day CQ Link Externalizer] per impostare il nome host, la porta e il percorso del contenuto per [!DNL InDesign Server].
 
 1. Accedi alla console Web all&#39;indirizzo `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
-1. Specificate il nome host e il percorso contestuale per il file [!DNL Adobe InDesign Server] e fate clic su **Salva**.
+1. Individuare la configurazione **[!UICONTROL Day CQ Link Externalizer]**, quindi fare clic su **[!UICONTROL Edit]** per aprirla.
+1. Specificare il nome host e il percorso contestuale per la [!DNL Adobe InDesign Server] e fare clic su **Salva**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
 ### Abilita elaborazione processi paralleli per [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
 
-È ora possibile abilitare l&#39;elaborazione processi paralleli per gli ID. Determinare il numero massimo di processi paralleli (`x`) che è [!DNL InDesign Server] possibile elaborare:
+È ora possibile abilitare l&#39;elaborazione processi paralleli per gli ID. Determinare il numero massimo di processi paralleli (`x`) che possono essere elaborati da [!DNL InDesign Server]:
 
-* Su un singolo computer multiprocessore, il numero massimo di processi paralleli (`x`) che un utente [!DNL InDesign Server] può elaborare è inferiore di uno al numero di processori che eseguono IDS.
+* Su un singolo computer multiprocessore, il numero massimo di processi paralleli (`x`) che un processo [!DNL InDesign Server] può elaborare è inferiore di uno al numero di processori che eseguono IDS.
 * Quando si esegue IDS su più computer è necessario contare il numero totale di processori disponibili (ossia su tutti i computer), quindi sottrarre il numero totale di computer.
 
 Per configurare il numero di processi IDS paralleli:
 
 1. Aprite la scheda **[!UICONTROL Configurazioni]** della console Felix; ad esempio: `https://[aem_server]:[port]/system/console/configMgr`.
 
-1. Selezionare la coda di elaborazione IDS sotto `Apache Sling Job Queue Configuration`.
+1. Selezionare la coda di elaborazione IDS in `Apache Sling Job Queue Configuration`.
 
 1. Imposta:
 
    * **Tipo** - `Parallel`
-   * **Processi** paralleli massimi - `<*x*>` (come calcolato sopra)
+   * **Numero massimo di processi**  paralleli-  `<*x*>` (come calcolato sopra)
 
 1. Salvate queste modifiche.
-1. Per abilitare il supporto per più sessioni per  Adobe CS6 e versioni successive, selezionate `enable.multisession.name` casella di controllo, in `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione.
-1. Create un [pool di lavoratori `x` IDS aggiungendo endpoint SOAP alla configurazione](#configuring-the-proxy-worker-for-indesign-server)IDS Worker.
+1. Per abilitare il supporto per più sessioni per  Adobe CS6 e versioni successive, selezionate la casella di controllo `enable.multisession.name`, in `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione.
+1. Create un [pool di `x` lavoratori IDS aggiungendo endpoint SOAP alla configurazione di IDS Worker](#configuring-the-proxy-worker-for-indesign-server).
 
-   Se sono in esecuzione più computer [!DNL InDesign Server], aggiungere endpoint SOAP (numero di processori per computer -1) per ogni computer.
+   Se sono presenti più computer con [!DNL InDesign Server], aggiungere endpoint SOAP (numero di processori per computer -1) per ogni computer.
 
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
@@ -203,27 +204,27 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >Quando si lavora con un pool di lavoratori, è possibile abilitare  elenco Bloccati di lavoratori IDS.
 >
->A tal fine, abilitare la casella di controllo **[!UICONTROL enable.try.name]** , nella `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configurazione, che consente di recuperare i processi IDS.
+>A tal fine, abilitare la casella di controllo **[!UICONTROL enable.try.name]**, nella configurazione `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, che consente di recuperare i processi IDS.
 >
->Inoltre, nella `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configurazione, impostare un valore positivo per il `max.errors.to.blacklist` parametro che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
+>Inoltre, nella configurazione `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, impostare un valore positivo per il parametro `max.errors.to.blacklist` che determina il numero di recuperi di processi prima di barrare un ID dall&#39;elenco dei gestori di processi.
 >
->Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoro IDS viene riconvalidato. Se il lavoratore viene trovato online, viene rimosso dal elenco Bloccati .
+>Per impostazione predefinita, dopo l&#39;ora configurabile (`retry.interval.to.whitelist.name`) in minuti, il lavoro IDS viene nuovamente convalidato. Se il lavoratore viene trovato online, viene rimosso dal elenco Bloccati .
 
-## Abilita il supporto per la versione [!DNL InDesign Server] 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
+## Abilita il supporto per [!DNL InDesign Server] 10.0 o versione successiva {#enabling-support-for-indesign-server-or-later}
 
 Per [!DNL InDesign Server] 10.0 o versione successiva, eseguite i seguenti passaggi per abilitare il supporto per più sessioni.
 
-1. Aprite Configuration Manager dall&#39; [!DNL Experience Manager Assets] istanza `https://[aem_server]:[port]/system/console/configMgr`.
-1. Modificate la configurazione `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
-1. Selezionate l’opzione **[!UICONTROL ids.cc.enable]** e fate clic su **[!UICONTROL Salva]**.
+1. Aprire Configuration Manager dall&#39;istanza [!DNL Experience Manager Assets] `https://[aem_server]:[port]/system/console/configMgr`.
+1. Modificare la configurazione `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
+1. Selezionare l&#39;opzione **[!UICONTROL ids.cc.enable]**, quindi fare clic su **[!UICONTROL Salva]**.
 
 >[!NOTE]
 >
->Per [!DNL InDesign Server] l&#39;integrazione con [!DNL Experience Manager Assets], utilizzate un processore multi-core perché la funzione di supporto delle sessioni necessaria per l&#39;integrazione non è supportata nei sistemi single core.
+>Per l&#39;integrazione di [!DNL InDesign Server] con [!DNL Experience Manager Assets], utilizzate un processore multi-core perché la funzione di supporto delle sessioni necessaria per l&#39;integrazione non è supportata nei sistemi single core.
 
-## Configurare [!DNL Experience Manager] le credenziali {#configure-aem-credentials}
+## Configurare le credenziali [!DNL Experience Manager] {#configure-aem-credentials}
 
-Potete modificare le credenziali di amministratore predefinite (nome utente e password) per accedere al [!DNL InDesign Server] contenuto dalla [!DNL Experience Manager] distribuzione senza interrompere l&#39;integrazione con il [!DNL InDesign Server].
+Potete modificare le credenziali di amministratore predefinite (nome utente e password) per accedere alla [!DNL InDesign Server] dalla distribuzione [!DNL Experience Manager] senza interrompere l&#39;integrazione con la [!DNL InDesign Server].
 
 1. Passa a `/etc/cloudservices/proxy.html`.
 1. Nella finestra di dialogo, specificate il nuovo nome utente e la nuova password.
