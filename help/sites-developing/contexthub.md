@@ -24,11 +24,11 @@ ContextHub è un framework per la memorizzazione, la manipolazione e la presenta
 
 >[!NOTE]
 >
->L’implementazione [di riferimento](/help/sites-developing/we-retail.md) We.Retail implementa ContextHub e può fungere da riferimento quando integri ContextHub nel tuo progetto.
+>L&#39;implementazione di riferimento di [We.Retail](/help/sites-developing/we-retail.md) implementa ContextHub e può fungere da riferimento quando integri ContextHub nel tuo progetto.
 
 >[!CAUTION]
 >
->Il percorso contenente la configurazione ContextHub di esempio utilizzata dall&#39;implementazione [di riferimento](/help/sites-developing/we-retail.md) We.Retail ( `/libs/settings/cloudsettings/legacy`) deve essere utilizzato solo come riferimento per la creazione di una propria configurazione.
+>Il percorso contenente la configurazione ContextHub di esempio utilizzata dall&#39;implementazione di riferimento [We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) deve essere utilizzato solo come riferimento per la creazione di una configurazione personalizzata.
 >
 >Non deve essere utilizzato in un progetto come configurazione ContextHub personalizzata.
 
@@ -38,24 +38,24 @@ ContextHub memorizza i dati contestuali persistenti sul client. L&#39;API Contex
 
 Ciascun archivio ContextHub è un&#39;istanza di un tipo di store predefinito:
 
-* ContextHub fornisce diversi tipi [di archivio di](/help/sites-developing/ch-samplestores.md)esempio.
+* ContextHub fornisce diversi [tipi di store di esempio](/help/sites-developing/ch-samplestores.md).
 * Utilizzate AEM console per [creare store](ch-configuring.md#creating-a-contexthub-store).
-* Gli sviluppatori possono [creare tipi](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)di store personalizzati.
-* Gli sviluppatori possono [accedere ai dati](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) dell&#39;archivio tramite Javascript.
+* Gli sviluppatori possono [creare tipi di store personalizzati](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
+* Gli sviluppatori possono [accedere ai dati dell&#39;archivio](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) tramite Javascript.
 
 ## Segmentazione {#segmentation}
 
-ContextHub include un motore di segmentazione che gestisce i segmenti e determina quali segmenti vengono risolti per il contesto corrente. Sono definiti diversi segmenti. Puoi utilizzare l&#39;API Javascript per [determinare i segmenti](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments)risolti.
+ContextHub include un motore di segmentazione che gestisce i segmenti e determina quali segmenti vengono risolti per il contesto corrente. Sono definiti diversi segmenti. Puoi utilizzare l&#39;API Javascript per [determinare i segmenti risolti](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 
 ## Presentazione {#presentation}
 
-La barra degli strumenti [](/help/sites-authoring/ch-previewing.md) ContextHub consente agli esperti di marketing e agli autori di visualizzare e manipolare i dati dell&#39;archivio per simulare l&#39;esperienza utente durante l&#39;authoring delle pagine. La barra degli strumenti è composta da gruppi di moduli dell’interfaccia utente che forniscono l’accesso agli store ContextHub.
+La [barra degli strumenti ContextHub](/help/sites-authoring/ch-previewing.md) consente agli esperti di marketing e agli autori di visualizzare e manipolare i dati dello store per simulare l&#39;esperienza utente durante l&#39;authoring delle pagine. La barra degli strumenti è composta da gruppi di moduli dell’interfaccia utente che forniscono l’accesso agli store ContextHub.
 
 Ciascun modulo dell’interfaccia utente ContextHub è un’istanza di tipo di modulo predefinito:
 
-* ContextHub offre diversi tipi [di moduli di](/help/sites-developing/ch-samplemodules.md)esempio.
-* Utilizzate AEM console per [aggiungere moduli](ch-configuring.md#adding-a-ui-module)dell&#39;interfaccia utente e per [raggrupparli in modalità](ch-configuring.md#adding-a-ui-mode)di interfaccia.
+* ContextHub fornisce diversi [tipi di moduli di esempio](/help/sites-developing/ch-samplemodules.md).
+* Utilizzare AEM console per [aggiungere moduli dell&#39;interfaccia utente](ch-configuring.md#adding-a-ui-module) e per [raggrupparli in modalità di interfaccia utente](ch-configuring.md#adding-a-ui-mode).
 
-* Gli sviluppatori possono [creare tipi](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)di moduli personalizzati.
+* Gli sviluppatori possono [creare tipi di moduli personalizzati](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
 Gli sviluppatori devono [aggiungere il componente ContextHub alla pagina](/help/sites-developing/ch-adding.md).
