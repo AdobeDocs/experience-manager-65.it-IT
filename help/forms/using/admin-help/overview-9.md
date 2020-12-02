@@ -1,8 +1,8 @@
 ---
 title: Panoramica del flusso di lavoro Forms
 seo-title: Panoramica del flusso di lavoro Forms
-description: Il flusso di lavoro Moduli consente agli utenti di progettare, gestire e ottimizzare processi incentrati sulle persone. Utilizzando il flusso di lavoro dei moduli, gli utenti possono inoltre gestire applicazioni automatizzate per i processi aziendali che collegano sistemi e persone.
-seo-description: Il flusso di lavoro Moduli consente agli utenti di progettare, gestire e ottimizzare processi incentrati sulle persone. Utilizzando il flusso di lavoro dei moduli, gli utenti possono inoltre gestire applicazioni automatizzate per i processi aziendali che collegano sistemi e persone.
+description: Il flusso di lavoro Forms consente agli utenti di progettare, gestire e ottimizzare processi incentrati sulle persone. Utilizzando il flusso di lavoro dei moduli, gli utenti possono inoltre gestire applicazioni automatizzate per l'elaborazione aziendale che collegano sistemi e persone.
+seo-description: Il flusso di lavoro Forms consente agli utenti di progettare, gestire e ottimizzare processi incentrati sulle persone. Utilizzando il flusso di lavoro dei moduli, gli utenti possono inoltre gestire applicazioni automatizzate per l'elaborazione aziendale che collegano sistemi e persone.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
 content-type: reference
@@ -11,22 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 2%
 
 ---
 
 
 # Panoramica del flusso di lavoro Forms {#overview-of-forms-workflow}
 
-Il flusso di lavoro Moduli consente agli utenti di progettare, gestire e ottimizzare processi incentrati sulle persone. Utilizzando il flusso di lavoro dei moduli, gli utenti possono inoltre gestire applicazioni automatizzate per i processi aziendali che collegano sistemi e persone.
+Il flusso di lavoro Forms consente agli utenti di progettare, gestire e ottimizzare processi incentrati sulle persone. Utilizzando il flusso di lavoro dei moduli, gli utenti possono inoltre gestire applicazioni automatizzate per l&#39;elaborazione aziendale che collegano sistemi e persone.
 
-In ogni pagina del flusso di lavoro di Forms nella console di amministrazione, è possibile eseguire un insieme diverso di operazioni, come illustrato nella tabella seguente.
+In ogni pagina del flusso di lavoro Forms nella console di amministrazione, potete eseguire un diverso set di attività, come illustrato nella tabella.
 
 <table>
  <thead>
   <tr>
    <th><p>Pagina</p></th>
    <th><p>Attività</p></th>
-   <th><p>Vedi</p></th>
+   <th><p>Consulta</p></th>
   </tr>
  </thead>
  <tbody>
