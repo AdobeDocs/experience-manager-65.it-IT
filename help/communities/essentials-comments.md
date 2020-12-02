@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Elementi essenziali dei commenti {#comments-essentials}
+# Osservazioni Essentials {#comments-essentials}
 
 Questa pagina fornisce le informazioni fondamentali sull’utilizzo del sistema di commenti (componente commenti) e delle opzioni per la gestione del contenuto generato dall’utente (UGC) prodotto quando i membri pubblicano commenti o risposte.
 
@@ -34,11 +34,11 @@ Il componente Commenti stabilisce un sistema di commenti in modo che ogni singol
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusa</strong></a></td>
-   <td>Sì - le proprietà sono modificabili in <i>modalità </i>di progettazione</td>
+   <td>Sì - le proprietà sono modificabili in <i>modalità di progettazione </i>modo</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.Voto</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.registration</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -86,19 +86,19 @@ Questo vale per qualsiasi componente che estende un sistema di commenti.
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Accesso ai commenti registrati (UGC) {#accessing-posted-comments-ugc}
+### Accesso ai commenti inviati (UGC) {#accessing-posted-comments-ugc}
 
 UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.
-Consultate [Moderazione del contenuto](moderate-ugc.md)generato dall&#39;utente.
+Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l’utilizzo di uno store [](working-with-srp.md) comune per UGC include l’accesso programmatico a UGC, indipendentemente dall’opzione di archiviazione scelta (ad esempio ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
 
 **La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md) del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
-* [SRP e UGC Essentials](srp-and-ugc.md) - Metodi e esempi di utilità SRP.
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - Linee guida per la codifica.
-* [Refactoring](socialutils.md) SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
+* [Panoramica](srp.md)  del provider delle risorse di storage - Introduzione e panoramica sull&#39;utilizzo dell&#39;archivio.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - Metodi e esempi di utilità SRP.
+* [Accesso a UGC con linee guida SRP](accessing-ugc-with-srp.md) - Codifica.
+* [Refactoring](socialutils.md)  SocialUtils - Mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti.
 
