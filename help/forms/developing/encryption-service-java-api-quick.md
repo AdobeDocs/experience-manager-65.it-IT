@@ -35,11 +35,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili nella sezione Programmazione con AEM moduli si basano sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Gli avvii rapidi disponibili nella sezione Programmazione con AEM moduli si basano sulla distribuzione di Forms Server su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Cifratura di un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
+## Avvio rapido (modalità SOAP): Cifratura di un documento PDF mediante l&#39;API Java {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene crittografato un documento PDF denominato *Loan.pdf* con un valore di password pari a `OpenPassword`. La password master è `PermissionPassword`. Il documento PDF protetto viene salvato come file PDF denominato *EncryptLoan.pdf*. (vedere [Cifratura di documenti PDF con una password](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
+Nell&#39;esempio di codice Java riportato di seguito viene crittografato un documento PDF denominato *Loan.pdf* con un valore di password `OpenPassword`. La password master è `PermissionPassword`. Il documento PDF protetto viene salvato come file PDF denominato *EncryptLoan.pdf*. (Vedere [Cifratura di documenti PDF con una password](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 ```java
  /*
@@ -159,7 +159,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene crittografato un docu
 
 ## Avvio rapido (modalità SOAP): Rimozione della crittografia basata su password tramite l&#39;API Java {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su password da un documento PDF denominato *EncryptLoan.pdf*. Il valore della password master utilizzato per rimuovere la cifratura basata su password è *PermissionPassword*. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione della cifratura](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)della password.)
+Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su password da un documento PDF denominato *EncryptLoan.pdf*. Il valore della password master utilizzato per rimuovere la cifratura basata su password è *PermissionPassword*. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione della crittografia della password](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
 ```java
  /*
@@ -254,9 +254,9 @@ Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura 
  }
 ```
 
-## Avvio rapido (modalità SOAP): Cifratura di un documento PDF con un certificato tramite l&#39;API Java {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
+## Avvio rapido (modalità SOAP): Cifratura di un documento PDF con un certificato mediante l&#39;API Java {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene crittografato un documento PDF denominato *Loan.pdf* con un certificato denominato *Encryption.cer*. Il documento PDF crittografato viene salvato come file PDF denominato *EncryptLoanCert.pdf*. (vedere [Cifratura di documenti PDF con certificati](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)).
+Nell&#39;esempio di codice Java riportato di seguito viene crittografato un documento PDF denominato *Loan.pdf* con un certificato denominato *Encryption.cer*. Il documento PDF crittografato viene salvato come file PDF denominato *EncryptLoanCert.pdf*. (Vedere [Cifratura di documenti PDF con certificati](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
 ```java
  /*
@@ -385,7 +385,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene crittografato un docu
 
 ## Avvio rapido (modalità SOAP): Rimozione della crittografia basata su certificato tramite l&#39;API Java {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su certificato da un documento PDF denominato *EncryptLoanCert.pdf*. L&#39;alias della chiave pubblica utilizzata per rimuovere la crittografia è `Encryption`. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione della cifratura](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption)basata su certificato.)
+Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura basata su certificato da un documento PDF denominato *EncryptLoanCert.pdf*. L&#39;alias della chiave pubblica utilizzata per rimuovere la crittografia è `Encryption`. Il documento PDF non protetto viene salvato come file PDF denominato *noEncryptionLoan.pdf*. (Vedere [Rimozione di crittografia basata su certificato](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 
 ```java
  /*
@@ -482,7 +482,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene rimossa la cifratura 
 
 ## Avvio rapido (modalità SOAP): Sblocco di un documento PDF crittografato tramite l&#39;API Java {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-Nell’esempio di codice Java riportato di seguito viene sbloccato un documento PDF con password crittografata denominato *EncryptLoan.pdf*. (Vedere [Sblocco di documenti](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF crittografati.)
+Nell&#39;esempio di codice Java riportato di seguito viene sbloccato un documento PDF crittografato con password denominato *EncryptLoan.pdf*. (Vedere [Sblocco di documenti PDF crittografati](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -576,9 +576,9 @@ Nell’esempio di codice Java riportato di seguito viene sbloccato un documento 
  
 ```
 
-## Avvio rapido (modalità SOAP): Determinazione del tipo di crittografia tramite l&#39;API Java {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
+## Avvio rapido (modalità SOAP): Determinazione del tipo di crittografia mediante l&#39;API Java {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene determinato il tipo di cifratura che protegge un documento PDF denominato *EncryptLoan.pdf*. (Vedere [Determinazione del tipo](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type)di cifratura.)
+L&#39;esempio di codice Java seguente determina il tipo di cifratura che protegge un documento PDF denominato *EncryptLoan.pdf*. (Vedere [Determinazione del tipo di cifratura](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
 ```java
  /*
