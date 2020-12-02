@@ -14,17 +14,17 @@ ht-degree: 29%
 ---
 
 
-# Adobe Experience Manager 6.5 Release Notes {#release-notes}
+# Note sulla versione di Adobe Experience Manager 6.5 {#release-notes}
 
 + [Panoramica di AEM 6.5](home.md)
 + [Note generali sulla versione](release-notes.md)
-+ Service Pack Release Notes {#service-pack}
++ Note sulla versione di Service Pack {#service-pack}
    + [Novità](new-features-latest-service-pack.md)
    + [Note sulla versione di Service Pack 7](sp-release-notes.md)
    + [Note sulla versione di Service Pack precedente](previous-hotfixes-featurepacks.md)
 + [Note sulla versione di AEM Sites](sites.md)
 + [Note sulla versione di AEM Assets](assets.md)
-+ [programma di installazione patch JEE AEM Forms](jee-patch-installer-65.md)
++ [ programma di installazione patch JEE AEM Forms](jee-patch-installer-65.md)
 + [Note sulla versione di AEM Communities](communities-release-notes.md)
 + [Funzioni obsolete e rimosse](deprecated-removed-features.md)
 + [Problemi noti](known-issues.md)
