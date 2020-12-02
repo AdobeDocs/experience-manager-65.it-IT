@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Avvio rapido API Java di Document Security Service (SOAP) {#document-security-service-javaapi-quick-start-soap}
+# Avvio rapido dell&#39;API Java di Document Security Service (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
 Java API Quick Start(SOAP) è disponibile per il servizio di Rights Management:
 
@@ -49,11 +49,11 @@ Java API Quick Start(SOAP) è disponibile per il servizio di Rights Management:
 
 >[!NOTE]
 >
->Quick Start situato in Programmazione con  AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Quick Start situato in Programmazione con  AEM Forms si basa sul sistema operativo del server Forms. Tuttavia, se si utilizza un altro sistema operativo, come UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzate un altro server applicazione J2EE, accertatevi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP): Creazione di un criterio tramite l&#39;API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio denominato *Consenti copia*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Questo set di criteri esiste per impostazione predefinita. Consultate [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).
+Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo criterio denominato *Consenti copia*. Il set di criteri a cui viene aggiunto il criterio è denominato *Set di criteri globali*. Questo set di criteri esiste per impostazione predefinita. (Vedere [Creazione di criteri](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
 ```java
  /*
@@ -182,7 +182,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene creato un nuovo crite
 
 ## Avvio rapido (modalità SOAP): Modifica di un criterio tramite l&#39;API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-L&#39;esempio di codice Java seguente modifica un criterio denominato *Consenti copia* impostando il periodo di tempo consentito offline su 40 giorni. (Vedere [Modifica dei criteri](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
+Nell&#39;esempio di codice Java riportato di seguito viene modificato un criterio denominato *Consenti copia* impostando il periodo di tempo consentito per l&#39;utilizzo non in linea su 40 giorni. (Vedere [Modifica dei criteri](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
 ```java
  /*
@@ -375,7 +375,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene eliminato un criterio
 
 ## Avvio rapido (modalità SOAP): Applicazione di un criterio a un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento PDF denominato *Loan.pdf*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file PDF denominato *PolicyProtectedLoanDoc.pdf. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento PDF denominato *Loan.pdf*. Il set di criteri a cui viene aggiunto il criterio è denominato *Set di criteri globali*. Il documento protetto tramite criterio viene salvato come file PDF denominato *PolicyProtectedLoanDoc.pdf. *(Vedere [Applicazione dei criteri ai documenti PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```java
  /*
@@ -481,7 +481,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
 
 ## Avvio rapido (modalità SOAP): Rimozione di un criterio da un documento PDF tramite l&#39;API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento PDF denominato *PolicyProtectedLoanDoc.pdf*. Il documento PDF non protetto viene salvato come *unProtectedLoan.pdf*. (Vedere [Rimozione di criteri dai documenti](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.)
+Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento PDF denominato *PolicyProtectedLoanDoc.pdf*. Il documento PDF non protetto viene salvato come *unProtectedLoan.pdf*. (Vedere [Rimozione di criteri da documenti PDF](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
 
 ```java
  /*
@@ -588,7 +588,7 @@ Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento PD
 
 ## Avvio rapido (modalità SOAP): Revoca di un documento tramite l&#39;API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-Il seguente esempio di codice Java revoca un documento protetto tramite criterio denominato *PolicyProtectedLoanDoc.pdf*. Un documento PDF rivisto si trova nel seguente percorso URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Vedere [Revoca dell&#39;accesso ai documenti](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+Il seguente esempio di codice Java revoca un documento protetto tramite criterio denominato *PolicyProtectedLoanDoc.pdf*. Un documento PDF modificato si trova nel seguente percorso URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Vedere [Revoca dell&#39;accesso ai documenti](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
 ```java
  /*
@@ -702,7 +702,7 @@ Il seguente esempio di codice Java revoca un documento protetto tramite criterio
 
 ## Avvio rapido (modalità SOAP): Verifica dei documenti PDF protetti tramite criterio tramite l&#39;API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene analizzato un documento PDF protetto tramite criterio denominato *PolicyProtectedLoanDoc.* pdf. (Vedere [Ispezione dei documenti](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protetti tramite criterio.)
+Nell&#39;esempio di codice Java riportato di seguito viene analizzato un documento PDF protetto tramite criterio denominato *PolicyProtectedLoanDoc.pd* f. (Vedere [Analisi dei documenti PDF protetti tramite criterio](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
 
 ```java
  /*
@@ -820,7 +820,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene analizzato un documen
 
 ## Avvio rapido (modalità SOAP): Ripristino dell&#39;accesso a un documento revocato tramite l&#39;API Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene ripristinato l&#39;accesso a un documento PDF revocato denominato *PolicyProtectedLoanDoc.pdf*. (Vedere [Ripristino dell&#39;accesso ai documenti](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)revocati.)
+Nell&#39;esempio di codice Java riportato di seguito viene ripristinato l&#39;accesso a un documento PDF revocato denominato *PolicyProtectedLoanDoc.pdf*. (Vedere [Reinstallazione dell&#39;accesso ai documenti revisionati](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
 
 ```java
  /*
@@ -926,7 +926,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ripristinato l&#39;ac
 
 ## Avvio rapido (modalità SOAP): Creazione di una filigrana PDF tramite l&#39;API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana PDF denominata &#39;Esempio di filigrana PDF&#39;. Questa filigrana contiene un singolo elemento (consultate [Creazione di filigrane](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
+Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana PDF denominata &#39;Esempio di filigrana PDF&#39;. Questa filigrana contiene un singolo elemento (vedere [Creazione di filigrane](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
 ```java
 /*
@@ -1057,9 +1057,9 @@ public class PDFWatermarksSOAPMode {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Creazione di una filigrana di testo tramite l&#39;API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
+## Avvio rapido (modalità SOAP): Creazione di una filigrana di testo mediante l&#39;API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana di testo denominata Filigrana di testo *di esempio*. Questa filigrana contiene un singolo elemento.
+Nell&#39;esempio di codice Java riportato di seguito viene creata una nuova filigrana di testo denominata *Esempio di filigrana di testo*. Questa filigrana contiene un singolo elemento.
 
 ```java
 /*
@@ -1320,7 +1320,7 @@ public class ModifyWatermarks {
 
 ## Avvio rapido (modalità SOAP): Modifica di una filigrana mediante l&#39;API Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene modificata una filigrana denominata *Confidential* modificando il valore dell&#39; `opacity` attributo su 80.
+Nell&#39;esempio di codice Java riportato di seguito viene modificata una filigrana denominata *Confidential* modificando il valore dell&#39;attributo `opacity` su 80.
 
 ```java
  /*
@@ -1531,7 +1531,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene ricercato l&#39;event
 
 ## Avvio rapido (SOAP): Applicazione di un criterio a un documento Word tramite l&#39;API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento Word denominato *Loan.doc*. Il set di criteri a cui viene aggiunto il criterio è denominato Set *di criteri* globali. Il documento protetto tramite criterio viene salvato come file DOC denominato *PolicyProtectedLoanDoc.doc. *(Vedere [Applicazione dei criteri ai documenti](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
+Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio denominato *Consenti copia* a un documento Word denominato *Loan.doc*. Il set di criteri a cui viene aggiunto il criterio è denominato *Set di criteri globali*. Il documento protetto tramite criterio viene salvato come file DOC denominato *PolicyProtectedLoanDoc.doc. *(Vedere [Applicazione dei criteri ai documenti PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```java
  /*
@@ -1646,7 +1646,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene applicato un criterio
 
 ## Avvio rapido (modalità SOAP): Rimozione di un criterio da un documento Word tramite l&#39;API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento di Word denominato *PolicyProtectedLoanDoc.doc*. Il documento Word non protetto viene salvato come *unProtectedLoan.doc*. (Vedere [Rimozione di criteri dai documenti](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)di Word.)
+Nell&#39;esempio di codice seguente viene rimosso un criterio da un documento Word denominato *PolicyProtectedLoanDoc.doc*. Il documento Word non protetto viene salvato come *unProtectedLoan.doc*. (Vedere [Rimozione di criteri da documenti di Word](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
 
 ```java
  /*
