@@ -12,11 +12,14 @@ discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a156e09e77951041dce017f2f78069bc050b6bdb
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
 
-# Visualizzazione principale per la gestione delle autorizzazioni{#principal-view-for-permissions-management}
+# Vista principale per Gestione autorizzazioni{#principal-view-for-permissions-management}
 
 ## Panoramica {#overview}
 
@@ -24,7 +27,7 @@ AEM 6.5 introduce la gestione delle autorizzazioni per utenti e gruppi. La funzi
 
 ## Guida all’uso {#how-to-use}
 
-### Accesso all’interfaccia {#accessing-the-ui}
+### Accesso all&#39;interfaccia {#accessing-the-ui}
 
 La nuova gestione delle autorizzazioni basata sull&#39;interfaccia utente è accessibile dalla scheda Autorizzazioni in Protezione, come illustrato di seguito:
 
@@ -36,7 +39,7 @@ CRXDE per gestire privilegi e restrizioni avanzati. È stato consolidato nella s
 
 ![](assets/unu-1.png)
 
-Esiste un filtro che consente all&#39;utente di selezionare il tipo di entità da esaminare in **Utenti**, **Gruppi** o **Tutto** e cercare qualsiasi entità&#x200B;**.**
+È presente un filtro che consente all&#39;utente di selezionare il tipo di entità da esaminare in **Utenti**, **Gruppi** o **Tutti** e cercare qualsiasi entità&#x200B;**.**
 
 ![](assets/image2019-3-20_23-52-51.png)
 
@@ -60,17 +63,17 @@ Viene visualizzata la finestra mostrata di seguito, il passaggio successivo cons
 
 ![](assets/cinci-1.png)
 
-Qui si seleziona il percorso in cui si desidera configurare un&#39;autorizzazione per gli utenti **DAM**:
+Qui si seleziona un percorso in cui si desidera configurare un&#39;autorizzazione per **dam-users**:
 
 ![](assets/sase-1.png)
 
-Dopo aver selezionato il percorso, il flusso di lavoro torna a questa schermata, dove l&#39;utente può selezionare uno o più privilegi dagli spazi dei nomi disponibili (come `jcr`, `rep` o `crx`) come mostrato di seguito.
+Dopo aver selezionato il percorso, il flusso di lavoro torna a questa schermata, in cui l&#39;utente può selezionare uno o più privilegi dagli spazi dei nomi disponibili (come `jcr`, `rep` o `crx`) come mostrato di seguito.
 
 I privilegi possono essere aggiunti ricercando il campo di testo e quindi selezionando dall&#39;elenco.
 
 >[!NOTE]
 >
->Per un elenco completo dei privilegi e delle descrizioni, consultate [questa pagina](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Per un elenco completo dei privilegi e delle descrizioni, vedere [questa pagina](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
@@ -88,15 +91,15 @@ Oltre all&#39;elenco dei privilegi e al tipo di autorizzazione per un determinat
 >
 >Per ulteriori informazioni sul significato di ogni limitazione, consultare [questa pagina](/help/sites-administering/user-group-ac-admin.md#restrictions).
 
-Per aggiungere restrizioni, scegliete il tipo di restrizione, immettete il valore e premete il tasto **+** . ![](assets/sapte-1.png) ![](assets/opt-1.png)
+È possibile aggiungere restrizioni come mostrato di seguito scegliendo il tipo di restrizione, immettendo il valore e premendo l&#39;icona **+**. ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-Il nuovo controllo ACE si riflette nell&#39;elenco di controllo degli accessi come mostrato di seguito. Si noti che `jcr:write` è un privilegio aggregato che include `jcr:removeNode` che è stato aggiunto sopra, ma non è mostrato sotto come il relativo coperto in `jcr:write`.
+Il nuovo controllo ACE si riflette nell&#39;elenco di controllo degli accessi come mostrato di seguito. Tenere presente che `jcr:write` è un privilegio di aggregazione che include `jcr:removeNode` aggiunto sopra, ma che non è mostrato sotto come coperto in `jcr:write`.
 
-### Modifica di ACEs {#editing-aces}
+### Modifica di ACE {#editing-aces}
 
 Per modificare le voci di controllo di accesso, selezionate un’entità e scegliete l’ACE da modificare.
 
-Ad esempio, qui è possibile modificare la voce seguente per gli utenti **di** dighe facendo clic sull&#39;icona matita a destra:
+Ad esempio, qui è possibile modificare la voce seguente per **dam-users** facendo clic sull&#39;icona matita a destra:
 
 ![](assets/image2019-3-21_0-35-39.png)
 
@@ -104,7 +107,7 @@ La schermata di modifica viene visualizzata con le voci ACE configurate preselez
 
 ![](assets/noua-1.png)
 
-Qui stiamo aggiungendo il `addChildNodes` privilegio per **gli utenti** DAM sul percorso specificato.
+Qui si aggiunge il privilegio `addChildNodes` per **dam-users** nel percorso specificato.
 
 ![](assets/image2019-3-21_0-45-35.png)
 
@@ -118,7 +121,7 @@ Le voci di controllo di accesso possono essere eliminate per rimuovere tutte le 
 
 ![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
 
-### Combinazioni privilegi interfaccia classica {#classic-ui-privilege-combinations}
+### Combinazioni di privilegi per l&#39;interfaccia classica {#classic-ui-privilege-combinations}
 
 La nuova interfaccia utente delle autorizzazioni utilizza in modo esplicito il set di privilegi di base invece di combinazioni predefinite che non rispecchiano realmente i privilegi sottostanti esatti assegnati.
 
@@ -127,7 +130,7 @@ Ciò causava confusione riguardo alla configurazione esatta. La tabella seguente
 <table>
  <tbody>
   <tr>
-   <th>Combinazioni privilegi interfaccia classica</th>
+   <th>Combinazioni di privilegi per l’interfaccia classica</th>
    <th>Privilegi dell’interfaccia utente Autorizzazioni</th>
   </tr>
   <tr>
