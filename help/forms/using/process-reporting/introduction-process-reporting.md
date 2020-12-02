@@ -1,8 +1,8 @@
 ---
 title: Introduzione a Process Reporting
 seo-title: Introduzione a Process Reporting
-description: Introduzione e funzionalità chiave di AEM Forms su JEE Process Reporting
-seo-description: Introduzione e funzionalità chiave di AEM Forms su JEE Process Reporting
+description: Introduzione e funzionalità chiave di  AEM Forms su JEE Process Reporting
+seo-description: Introduzione e funzionalità chiave di  AEM Forms su JEE Process Reporting
 uuid: a7f2455b-1b09-41a7-817b-e2e7a1ff9936
 content-type: reference
 topic-tags: process-reporting
@@ -11,6 +11,9 @@ discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +22,17 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ![reporting dei processi](assets/process-reporting.png)
 
-Process Reporting è uno strumento basato su browser che consente di creare e visualizzare rapporti sui processi e sulle attività di AEM Forms.
+Process Reporting è uno strumento basato su browser che consente di creare e visualizzare rapporti  processi e attività AEM Forms.
 
-Process Reporting fornisce una serie di report out-of-the-box che consentono di filtrare, visualizzare informazioni sui processi in esecuzione prolungati, la durata del processo e il volume del flusso di lavoro.
+Process Reporting fornisce una serie di report out-of-the-box che consentono di filtrare, visualizzare informazioni sui processi in esecuzione lunghi, la durata del processo e il volume del flusso di lavoro.
 
 Inoltre Process Reporting fornisce un&#39;interfaccia per eseguire query ad hoc e integrare visualizzazioni di report personalizzate nell&#39;interfaccia utente di Process Reporting.
 
-Per l&#39;elenco dei browser supportati, consultate Piattaforme [supportate da](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
+Per l&#39;elenco dei browser supportati, vedere [ piattaforme supportate da AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Process Reporting è basato su moduli che:
 
-* Lettura dei dati del processo dal database AEM Forms
+* Leggere i dati del processo da  database AEM Forms
 * Pubblicare i dati del processo in un archivio di Process Reporting incorporato
 * Fornisce un&#39;interfaccia utente basata su browser per visualizzare i rapporti
 
@@ -43,7 +46,7 @@ Visualizza l&#39;elenco dei processi con esecuzione prolungata, dei grafici dell
 
 Process Reporting (Generazione di rapporti sui processi) offre anche la possibilità di esportare i dati del rapporto e della query in formato CSV.
 
-### Report Adhoc {#adhoc-reports}
+### Rapporti Adhoc {#adhoc-reports}
 
 ![print-and-color](assets/print-&-colour.png)
 
@@ -59,7 +62,7 @@ Puoi quindi salvare i filtri per report da eseguire in una data o in un&#39;ora 
 
 ![gestione dei file](assets/file-management.png)
 
-I server AEM Forms eseguono numerosi processi in parallelo. Questi processi continuano a passare da uno stato all’altro. Pubblicando periodicamente i dati di Forms nell&#39;archivio Process Reporting (Generazione di rapporti sui processi), Process Reporting conserva le informazioni sui processi di transizione in esecuzione in AEM Forms.
+ server AEM Forms eseguono numerosi processi in parallelo. Questi processi continuano a passare da uno stato all’altro. Pubblicando a intervalli regolari i dati di Forms nell&#39;archivio di Process Reporting, Process Reporting conserva le informazioni di transizione sui processi in esecuzione in  AEM Forms.
 
 ### Controllo accesso {#access-control-br}
 
