@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 5%
 
 ---
 
@@ -21,12 +24,12 @@ Quando amministri flussi di lavoro puoi avviarli utilizzando diversi metodi:
 
 * Manualmente:
 
-   * Da un modello [di](#workflow-models)flusso di lavoro.
-   * Utilizzo di un pacchetto di workflow per l&#39;elaborazione [](#workflow-packages-for-batch-processing)batch.
+   * Da un [modello di flusso di lavoro](#workflow-models).
+   * Utilizzo di un pacchetto di workflow per l&#39; [elaborazione batch](#workflow-packages-for-batch-processing).
 
 * Automaticamente:
 
-   * In risposta alle modifiche ai nodi; [utilizzo di un Launcher](#workflows-launchers).
+   * In risposta alle modifiche ai nodi; [utilizzando un Launcher](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -36,19 +39,20 @@ Quando amministri flussi di lavoro puoi avviarli utilizzando diversi metodi:
 >* [Come applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Progetti traduzione](/help/sites-administering/tc-manage.md)
+
 >
 
 
 
 ## Modelli flusso di lavoro {#workflow-models}
 
-Potete avviare un flusso di lavoro [basato su uno dei modelli](/help/sites-administering/workflows.md#workflow-models-and-instances) elencati nella console Modelli di flusso di lavoro. L’unica informazione obbligatoria è il payload, anche se è possibile aggiungere un titolo e/o un commento.
+È possibile avviare un flusso di lavoro [in base a uno dei modelli](/help/sites-administering/workflows.md#workflow-models-and-instances) elencati nella console Modelli di workflow. L’unica informazione obbligatoria è il payload, anche se è possibile aggiungere un titolo e/o un commento.
 
 ## Lanci flussi di lavoro {#workflows-launchers}
 
 Workflow Launcher monitora le modifiche nell&#39;archivio dei contenuti per avviare flussi di lavoro in base alla posizione e al tipo di risorsa del nodo modificato.
 
-Utilizzando **Launcher** potete:
+Utilizzando **Launcher** è possibile:
 
 * Vedere i flussi di lavoro già avviati per nodi specifici.
 * Selezionare un flusso di lavoro da avviare quando un determinato nodo/tipo di nodo è stato creato/modificato/rimosso.
@@ -57,7 +61,7 @@ Utilizzando **Launcher** potete:
 È possibile creare un avvio per qualsiasi nodo. Tuttavia, le modifiche apportate a determinati nodi non avviano flussi di lavoro. Le modifiche apportate ai nodi sotto i seguenti percorsi non causano l&#39;avvio di flussi di lavoro:
 
 * `/var/workflow/instances`
-* Qualsiasi nodo workflow-inbox ubicato in un punto qualsiasi del `/home/users` ramo
+* Qualsiasi nodo Workflow-inbox ubicato in un punto qualsiasi del ramo `/home/users`
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -66,7 +70,7 @@ Utilizzando **Launcher** potete:
 * `/var/mobile`
 * `/var/statistics`
 
-   * Eccezione: Le modifiche apportate ai nodi sottostanti `/var/statistics/tracking` non *causano* l&#39;avvio dei flussi di lavoro.
+   * Eccezione: Le modifiche apportate ai nodi sotto `/var/statistics/tracking` *do* causano l&#39;avvio dei flussi di lavoro.
 
 Diverse definizioni sono incluse nell&#39;installazione standard. Sono utilizzati per le attività di gestione delle risorse digitali e di collaborazione social:
 
@@ -84,18 +88,18 @@ Un pacchetto di workflow:
 * può essere utilizzato più volte.
 * può essere modificato dall&#39;utente (aggiungi o rimuovi risorse) mentre l&#39;istanza del flusso di lavoro è in esecuzione.
 
-## Starting a Workflow from the Models Console {#starting-a-workflow-from-the-models-console}
+## Avvio di un flusso di lavoro dalla console Modelli {#starting-a-workflow-from-the-models-console}
 
-1. Passa alla console **Modelli** utilizzando **Strumenti**, **Flusso** di lavoro **e quindi** Modelli.
+1. Andate alla console **Modelli** utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Modelli**.
 1. Selezionate il flusso di lavoro (in base alla vista della console); potete anche utilizzare Cerca (in alto a sinistra) se necessario:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >L’indicatore **[Transient](/help/sites-developing/workflows.md#transient-workflows)**mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non verrà persistente.
+   >L&#39;indicatore **[Transient](/help/sites-developing/workflows.md#transient-workflows)** mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non sarà persistente.
 
-1. Selezionate **Avvia flusso di lavoro** dalla barra degli strumenti.
+1. Selezionare **Avvia flusso di lavoro** dalla barra degli strumenti.
 1. Viene visualizzata la finestra di dialogo Esegui flusso di lavoro, che consente di specificare:
 
    * **Payload**
@@ -113,8 +117,8 @@ Un pacchetto di workflow:
 
 ## Creazione di una configurazione di avvio {#creating-a-launcher-configuration}
 
-1. Passa alla console **Workflow Launcher** utilizzando **Strumenti**, **Flusso** di lavoro e **Lanci**.
-1. Selezionate **Crea**, quindi **Aggiungi avviatore** per aprire la finestra di dialogo:
+1. Andate alla console **Workflow Launchers** utilizzando **Tools**, **Workflow**, quindi **Launchers**.
+1. Selezionare **Crea**, quindi **Aggiungi avvio** per aprire la finestra di dialogo:
 
    ![wf-105](assets/wf-105.png)
 
@@ -135,11 +139,11 @@ Un pacchetto di workflow:
 
    * **Modalità di esecuzione**
 
-      Il tipo di server a cui si applica l&#39;avvio del flusso di lavoro. Selezionate **Autore**, **Pubblica** o **Crea e pubblica**.
+      Il tipo di server a cui si applica l&#39;avvio del flusso di lavoro. Selezionare **Autore**, **Pubblica** o **Autore e pubblicazione**.
 
    * **Condizioni**
 
-      Elenco di condizioni per i valori dei nodi che, se valutati, determinano se il flusso di lavoro viene avviato. Ad esempio, la condizione seguente determina l&#39;avvio del flusso di lavoro quando il nodo ha un nome di proprietà con il valore Utente:
+      Un elenco di condizioni per i valori dei nodi che, se valutati, determinano se il flusso di lavoro viene avviato. Ad esempio, la condizione seguente determina l&#39;avvio del flusso di lavoro quando il nodo ha un nome di proprietà con il valore Utente:
 
       name==Utente
 
@@ -148,6 +152,7 @@ Un pacchetto di workflow:
       Elenco delle funzioni da abilitare. Selezionate le feature desiderate utilizzando il selettore a discesa.
 
    * **Funzioni disabilitate**
+
    Elenco delle funzioni da disattivare. Selezionate le feature desiderate utilizzando il selettore a discesa.
 
    * **Modello flusso di lavoro**
@@ -162,16 +167,17 @@ Un pacchetto di workflow:
 
       Controlla se l’avvio del flusso di lavoro è attivato:
 
-      * Selezionate **Abilita** per avviare flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
-      * Selezionate **Disattiva** quando il flusso di lavoro non deve essere eseguito (non anche quando le proprietà di configurazione sono soddisfatte).
+      * Selezionare **Abilita** per avviare flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
+      * Selezionare **Disattiva** quando il flusso di lavoro non deve essere eseguito (non anche quando le proprietà di configurazione sono soddisfatte).
    * **Escludi elenco**
 
       Specifica tutti gli eventi JCR da escludere (ovvero da ignorare) quando si determina se un flusso di lavoro deve essere attivato.
 
       Questa proprietà di avvio è un elenco separato da virgole di elementi: &quot;
 
-      * `property-name` ignora qualsiasi `jcr` evento attivato sul nome della proprietà specificata. &quot;
-      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene il `*<someValue*`> `user-data` impostato tramite l&#39; [ `ObservationManager` API](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` ignora qualsiasi  `jcr` evento attivato sul nome della proprietà specificata. &quot;
+      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene il  `*<someValue*`>  `user-data` impostato tramite l&#39; [ `ObservationManager` API] (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+
       Esempio:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
@@ -184,10 +190,10 @@ Un pacchetto di workflow:
 
 
 
-1. Selezionate **Crea**, per creare il modulo di avvio e tornare alla console.
+1. Selezionare **Crea** per creare il modulo di avvio e tornare alla console.
 
    Una volta che si verifica l&#39;evento appropriato, viene avviato il programma di avvio e il flusso di lavoro viene avviato.
 
 ## Gestione di una configurazione di avvio {#managing-a-launcher-configuration}
 
-Dopo aver creato la configurazione del modulo di avvio, puoi usare la stessa console per selezionare l’istanza, quindi **Visualizza proprietà** (e modificarle) o **Elimina**.
+Dopo aver creato la configurazione di avvio, è possibile utilizzare la stessa console per selezionare l&#39;istanza, quindi **Visualizza proprietà** (e modificarle) o **Elimina**.
