@@ -29,7 +29,7 @@ Il contenuto associato consente la connessione in modo che le risorse (ad es.) p
 >
 >Esistono diversi metodi per aggiungere [risorse visive (ad es. immagini)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al frammento e/o alla pagina.
 
-Per creare l&#39;associazione, dovete prima [aggiungere le risorse multimediali a una raccolta](/help/assets/manage-collections.md#adding-assets-to-a-collection). Una volta completata questa operazione, è possibile:
+Per creare l&#39;associazione è necessario [aggiungere le risorse multimediali a una raccolta](/help/assets/manage-collections.md#adding-assets-to-a-collection). Una volta completata questa operazione, è possibile:
 
 1. Apri il frammento e seleziona **Contenuto associato** dal pannello laterale.
 
@@ -50,8 +50,8 @@ Per creare l&#39;associazione, dovete prima [aggiungere le risorse multimediali 
 
 Una volta associata una raccolta potete:
 
-* **Rimuovere** l&#39;associazione.
-* **Aggiungete risorse** alla raccolta.
+* **Rimuove** l&#39;associazione.
+* **Aggiungere** risorse alla raccolta.
 * Selezionate una risorsa per ulteriori azioni.
 * Modificare il contenuto.
 
