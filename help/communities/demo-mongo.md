@@ -22,13 +22,13 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Questa esercitazione descrive come impostare [MSRP](msrp.md) per *un’istanza di creazione* e *un’istanza di pubblicazione* .
+Questa esercitazione descrive come impostare [MSRP](msrp.md) per *un&#39;istanza di autore* e *un&#39;istanza di pubblicazione*.
 
 Con questa configurazione, il contenuto della community è accessibile sia dall’ambiente di creazione che da quello di pubblicazione senza dover inoltrare o invertire il contenuto generato dall’utente (UGC).
 
-Questa configurazione è ideale per ambienti *non di produzione* , ad esempio per lo sviluppo e/o la dimostrazione.
+Questa configurazione è adatta per ambienti *non di produzione*, ad esempio per lo sviluppo e/o la dimostrazione.
 
-**Un ambiente *produttivo*dovrebbe:**
+**Un ambiente  ** produttivo dovrebbe:**
 
 * Eseguire MongoDB con un set di repliche
 * Usa SolrCloud
@@ -38,7 +38,7 @@ Questa configurazione è ideale per ambienti *non di produzione* , ad esempio pe
 
 ### Installazione di MongoDB {#install-mongodb}
 
-* Scaricate MongoDB da [https://www.mongodb.org/](https://www.mongodb.org/)
+* Scarica MongoDB da [https://www.mongodb.org/](https://www.mongodb.org/)
 
    * Scelta del sistema operativo:
 
@@ -64,7 +64,7 @@ Questa configurazione è ideale per ambienti *non di produzione* , ad esempio pe
 
 ### Avvia MongoDB {#start-mongodb}
 
-* &lt;mongo-install>/bin/mondio —dbpath &lt;mongo-dbpath>
+* &lt;mongo-install>/bin/mondio —dbpath  &lt;mongo-dbpath>
 
 Verrà avviato un server MongoDB utilizzando la porta predefinita 27017.
 
@@ -94,7 +94,7 @@ I comandi seguenti sono un esempio di configurazione di un set di repliche con 3
 
 ## Solr {#solr}
 
-### Installa Solr {#install-solr}
+### Installazione di Solr {#install-solr}
 
 * Scarica Solr da [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
@@ -113,11 +113,11 @@ I comandi seguenti sono un esempio di configurazione di un set di repliche con 3
 Per configurare una raccolta Solr per MSRP per la demo, sono necessarie due decisioni (per i dettagli, selezionare i collegamenti alla documentazione principale):
 
 1. Eseguire Solr in modalità standalone o [SolrCloud](msrp.md#solrcloudmode).
-1. Installate MLS ( [standard](msrp.md#installingstandardmls) o [avanzato](msrp.md#installingadvancedmls) per la ricerca multilingue).
+1. Installate [standard](msrp.md#installingstandardmls) o [advanced](msrp.md#installingadvancedmls) multilingual search (MLS).
 
-### Solar standalone {#standalone-solr}
+### Solr autonomo {#standalone-solr}
 
-Il metodo di esecuzione di Solr può variare a seconda della versione e del modo di installazione. La guida [di riferimento](https://archive.apache.org/dist/lucene/solr/ref-guide/) Solr è la documentazione autorevole.
+Il metodo di esecuzione di Solr può variare a seconda della versione e del modo di installazione. La [Guida di riferimento Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) è la documentazione autorevole.
 
 Per semplicità, utilizzando la versione 4.10 come esempio, avviate Solr in modalità standalone:
 
@@ -145,32 +145,32 @@ Avviate le istanze di creazione e pubblicazione AEM, se necessario.
 
 Se AEM in esecuzione prima dell&#39;avvio di MongoDB, è necessario riavviare le istanze AEM.
 
-Seguite le istruzioni riportate nella pagina principale della documentazione: [MSRP - Store comune MongoDB](msrp.md)
+Seguite le istruzioni riportate nella pagina principale della documentazione: [MSRP - MongoDB Common Store](msrp.md)
 
 ## Prova {#test}
 
 Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’istanza di pubblicazione e visualizzatela nell’istanza di creazione, nonché visualizzate l’UGC in MongoDB e Solr:
 
-1. Nell’istanza di pubblicazione, accedete alla pagina Guida ai componenti [community](http://localhost:4503/content/community-components/en/comments.html) e selezionate il componente Commenti.
+1. Nell&#39;istanza di pubblicazione, andare alla pagina [Guida ai componenti della community](http://localhost:4503/content/community-components/en/comments.html) e selezionare il componente Commenti.
 1. Accedete per pubblicare un commento:
 1. Immettete il testo nella casella di immissione del commento e fate clic su **[!UICONTROL Post]**
 
    ![post-commento](assets/post-comment.png)
 
-1. È sufficiente visualizzare il commento sull’istanza [di](http://localhost:4502/content/community-components/en/comments.html) authoring (con probabilità ancora eseguito l’accesso come amministratore/amministratore).
+1. È sufficiente visualizzare il commento sull&#39; [istanza di creazione](http://localhost:4502/content/community-components/en/comments.html) (probabilmente ancora eseguito l&#39;accesso come amministratore / amministratore).
 
    ![view-comment](assets/view-comment.png)
 
-   Nota: Sebbene sull’autore siano presenti nodi JCR sotto il *percorso* asiatico, questi sono per il framework SCF. L&#39;UGC effettivo non è in JCR, è in MongoDB.
+   Nota: Sebbene sull&#39;autore siano presenti nodi JCR sotto il percorso *asipath*, questi sono per il framework SCF. L&#39;UGC effettivo non è in JCR, è in MongoDB.
 
-1. Visualizzare l’UGC in **[!UICONTROL Mongodb Communities]** > **[!UICONTROL Raccolte]** > **[!UICONTROL Contenuto]**
+1. Visualizzare l&#39;UGC in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 
    ![ugc-content](assets/ugc-content.png)
 
 1. Visualizzare l’UGC in Solr:
 
    * Passa al dashboard Solr: [http://localhost:8983/solr/](http://localhost:8983/solr/).
-   * Utente `core selector` da selezionare `collection1`.
+   * Utente `core selector` per selezionare `collection1`.
    * Seleziona `Query`.
    * Seleziona `Execute Query`.
 
@@ -178,15 +178,15 @@ Per testare e verificare lo store comune MongoDB, pubblicate un commento sull’
 
 ## Risoluzione dei problemi {#troubleshooting}
 
-### Nessun UGC {#no-ugc-appears}
+### Nessun UGC visualizzato {#no-ugc-appears}
 
 1. Verificare che MongoDB sia installato ed eseguito correttamente.
 
 1. Verificate che MSRP sia stato configurato come provider predefinito:
 
-   * Per tutte le istanze di creazione e pubblicazione AEM, rivedete la console [Configurazione](srp-config.md) archiviazione o controllate l&#39;archivio AEM:
+   * Per tutte le istanze di creazione e pubblicazione AEM, rivisitate la [console di configurazione dell&#39;archivio](srp-config.md) o verificate l&#39;archivio AEM:
 
-   * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa che il provider di storage è JSRP.
+   * In JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) non contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa che il provider di storage è JSRP.
    * Se il nodo srpc esiste e contiene il nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), le proprietà della configurazione predefinita devono definire MSRP come provider predefinito.
 
 1. Verificare che AEM sia stato riavviato dopo aver selezionato MSRP.
