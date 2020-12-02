@@ -20,14 +20,14 @@ ht-degree: 1%
 
 # Feature catalogo {#catalog-feature}
 
-I [`Enablement Assignments`](assignments.md) componenti e `Enablement Catalog` i componenti del gruppo Community nel browser Componenti sono componenti di una community di [abilitazione](overview.md#enablement-community).
+I componenti [`Enablement Assignments`](assignments.md) e `Enablement Catalog` del gruppo Community nel browser Componenti sono componenti di una [community di abilitazione](overview.md#enablement-community).
 
-Il `Enablement Catalog` componente consente ai membri della community di accedere a un catalogo di risorse [di](resources.md)abilitazione. L’utilizzo dei tag AEM è una parte importante della gestione dell’elenco delle risorse di abilitazione in un catalogo (consultate [Assegnazione di tag alle risorse](tag-resources.md)di abilitazione).
+Il componente `Enablement Catalog` consente ai membri della community di accedere a un catalogo di [risorse di abilitazione](resources.md). L&#39;utilizzo di tag AEM è una parte importante della gestione dell&#39;elenco delle risorse di abilitazione in un catalogo (consultate [Risorse di abilitazione per l&#39;assegnazione di tag](tag-resources.md)).
 
-Nell’esercitazione [Guida introduttiva ai AEM Communities per l’abilitazione](getting-started-enablement.md) , vedete la visualizzazione di assegnazioni e cataloghi da parte di un membro nella sezione [Esperienza del sito](enablement-published-site.md) pubblicato.
+Nell&#39;esercitazione [Guida introduttiva  AEM Communities per l&#39;abilitazione](getting-started-enablement.md), vedere la visualizzazione delle assegnazioni e dei cataloghi da parte di un membro nella sezione [Esperienza del sito pubblicato](enablement-published-site.md).
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [Catalog Essentials](catalog-developer-essentials.md) per gli sviluppatori.
+Ulteriori informazioni sono disponibili sulla pagina [Catalog Essentials](catalog-developer-essentials.md) per gli sviluppatori.
 
-La funzione [](functions.md#catalog-function) catalogo è disponibile quando si crea un sito [](sites-console.md)community.
+La funzione di [catalogo](functions.md#catalog-function) è disponibile quando si crea un [sito della community](sites-console.md).
