@@ -25,17 +25,17 @@ ht-degree: 11%
 
 È possibile visualizzare e modificare i metadati (proprietà) per i frammenti di contenuto:
 
-1. Nella console **Risorse** , andate alla posizione del frammento di contenuto.
+1. Nella console **Risorse** individuate la posizione del frammento di contenuto.
 1. Effettua una delle seguenti operazioni:
 
-   * Selezionate [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-assets.md#editing-properties). Una volta aperto per la visualizzazione è possibile modificare.
-   * Aprite il frammento di [contenuto per Modifica](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), quindi selezionate **Metadati** dal pannello laterale.
+   * Selezionare [**Visualizza proprietà** per aprire le finestre di dialogo](/help/assets/manage-assets.md#editing-properties). Una volta aperto per la visualizzazione è possibile modificare.
+   * Aprire il frammento di contenuto [per Modifica](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), quindi selezionare **Metadati** dal pannello laterale.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. La scheda **Base** contiene le opzioni che è possibile visualizzare o modificare:
+1. La scheda **Base** fornisce le opzioni che è possibile visualizzare o modificare:
 
-   * Miniatura, per la quale è possibile **caricare l’immagine**
+   * Miniatura per la quale è possibile **caricare l&#39;immagine**
    * **Titolo**
    * **Descrizione**
    * **Tag**
