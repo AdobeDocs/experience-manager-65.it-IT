@@ -25,23 +25,23 @@ Esistono diversi metodi per tenere traccia degli eventi video, due dei quali son
 
 >[!NOTE]
 >
->Prima di continuare, accertatevi di disporre di un video **** riproducibilecaricato all’interno di AEM.
+>Prima di continuare, accertatevi di disporre di un **video riproducibile** caricato all&#39;interno AEM.
 >
->Per essere certi che i video vengano riprodotti sulla pagina, consultate **[questa esercitazione](/help/sites-authoring/default-components-foundation.md#video)** per informazioni su come transcodificare i file video in AEM.
+>Per essere certi che i video vengano riprodotti sulla pagina, consultare **[questa esercitazione](/help/sites-authoring/default-components-foundation.md#video)** per informazioni su come transcodificare i file video in AEM.
 
 Per impostare un framework per il tracciamento video con ciascun metodo, utilizzate la procedura seguente.
 
 >[!NOTE]
 >
->Per le nuove implementazioni, si consiglia di **non utilizzare** le opzioni legacy per il tracciamento video. Utilizzare invece il metodo **Milestones** .
+>Per le nuove implementazioni, si consiglia di **non utilizzare** le opzioni legacy per il tracciamento video. Utilizzare invece il metodo **Milestones**.
 
 ## Passaggi comuni {#common-steps}
 
-1. Per impostare una pagina Web, trascinate un componente **** video dalla barra laterale e aggiungete un **video riproducibile come risorsa** per il componente
+1. Per impostare una pagina Web, trascinate un **componente video** dalla barra laterale e aggiungete un video riproducibile **come risorsa** per il componente
 
-1. [Creare una configurazione e un framework](/help/sites-administering/adobeanalytics.md)Adobe Analytics .
+1. [Creare una configurazione e un framework](/help/sites-administering/adobeanalytics.md) Adobe Analytics .
 
-   * Gli esempi nelle sezioni seguenti utilizzano il nome **my-sc-configuration** per la configurazione e il **video** per il framework.
+   * Gli esempi nelle sezioni seguenti utilizzano il nome **my-sc-configuration** per la configurazione e **videofw** per il framework.
 
 1. Nella pagina del framework, selezionate un RSID e impostate l’utilizzo su tutti. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. Dalla categoria del componente Generale nella barra laterale, trascinate il componente Video nella cornice.
@@ -54,7 +54,7 @@ Per impostare un framework per il tracciamento video con ciascun metodo, utilizz
 
 1. Quando si seleziona un metodo di tracciamento, l’elenco delle variabili CQ cambia di conseguenza. Utilizzate le sezioni seguenti per informazioni su come configurare ulteriormente il componente e mappare le variabili CQ con  proprietà Adobe Analytics.
 
-## Milestones {#milestones}
+## Pietre miliari {#milestones}
 
 Il metodo Milestones monitora la maggior parte delle informazioni sul video, è altamente personalizzabile e facile da configurare.
 
@@ -82,7 +82,7 @@ Nella tabella seguente sono descritte le variabili CQ predefinite fornite per il
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>Le variabili mappate a questo file conterranno il nome <strong>intuitivo</strong> (<strong>Titolo</strong>) del video, se impostato in DAM; se non è impostato, viene inviato il nome <strong>del</strong> file del video. È stato inviato solo una volta, all’inizio della riproduzione di un video.</td>
+   <td>Le variabili mappate a questo file conterranno il nome <strong>descrittivo</strong> (<strong>Title</strong>) del video, se impostato in DAM; se non è impostato, verrà inviato il file <strong>name</strong> del video. È stato inviato solo una volta, all’inizio della riproduzione di un video.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -110,11 +110,11 @@ Nella tabella seguente sono descritte le variabili CQ predefinite fornite per il
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
-   <td>Inviato quando il milestone viene passato, X indica il secondo in cui il cardine viene attivato a<br /> </td>
+   <td>Inviato quando il milestone viene passato, X rappresenta il secondo momento in cui il milestone viene attivato a<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Inviato su ogni pietra miliare; viene visualizzato come pev3 nella chiamata Adobe Analytics , solitamente inviato come "video"<br /> </td>
+   <td>Inviato su ogni pietra miliare; viene visualizzato come pev3 nella chiamata Adobe Analytics , in genere inviato come "video"<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -129,7 +129,7 @@ Nella tabella seguente sono descritte le variabili CQ predefinite fornite per il
 
 >[!NOTE]
 >
->Potete impostare un nome **semplice** per un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato.
+>Potete impostare il nome di un video **facile da usare** aprendo il video per la modifica in DAM e impostando il campo di metadati **Title** sul nome desiderato.
 
 1. Dopo aver selezionato Valori intermedi come metodo di tracciamento, nella casella Offset traccia immettete un elenco separato da virgole di scostamenti di tracciamento in secondi. Ad esempio, il seguente valore definisce le pietre miliari a 4, 8, 16, 20 e 28 secondi dall’inizio del video:
 
@@ -141,10 +141,10 @@ Nella tabella seguente sono descritte le variabili CQ predefinite fornite per il
 
 1. Per mappare le variabili CQ su  proprietà Adobe Analytics, trascinate le proprietà  Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull’ottimizzazione delle mappature, consultate la guida [Measuring Video in  Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la guida [Measuring Video in  Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
-1. [Aggiungete il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
-1. Per verificare l’impostazione in modalità **** Anteprima, riprodurre il video per attivare  chiamate Adobe Analytics.
+1. [Aggiungete il ](/help/sites-administering/adobeanalytics.md) framework alla pagina.
+1. Per verificare la configurazione in **Modalità anteprima**, riprodurre il video per ottenere  chiamate Adobe Analytics da attivare.
 
 Gli esempi  di dati di tracciamento Adobe Analytics che seguono si applicano al tracciamento delle attività cardine utilizzando gli offset di tracciamento di 4,8,16,20 e 24, e le mappature seguenti per le variabili CQ:
 
@@ -204,7 +204,7 @@ Gli esempi  di dati di tracciamento Adobe Analytics che seguono si applicano al 
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>eVar3</td>
+   <td> eVar 3</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -212,7 +212,7 @@ Gli esempi  di dati di tracciamento Adobe Analytics che seguono si applicano al 
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>eVar2</td>
+   <td> eVar 2</td>
   </tr>
  </tbody>
 </table>
@@ -229,7 +229,7 @@ Le chiamate a  Adobe Analytics utilizzando l&#39;esempio fornito dovrebbero esse
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Si tratta della **prima chiamata**effettuata a  Adobe Analytics contenente i valori seguenti:*
+*Si tratta del **primo**callback a  Adobe Analytics contenente i seguenti valori:*
 
 * *prop1 e  eVar1 per eventdata.a.media.name,*
 * *props2-4, insieme a  eVar2 e eVar3 contenente contentType (video) e segmento (1:O:1-4)*
@@ -237,7 +237,7 @@ Le chiamate a  Adobe Analytics utilizzando l&#39;esempio fornito dovrebbero esse
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Questa è la **terza chiamata**effettuata a  Adobe Analytics:*
+*Questa è la **terza**chiamata a  Adobe Analytics:*
 
 * *prop1 e  eVar1 contengono a.media.name;*
 * *event1 perché è stato visualizzato un segmento*
@@ -250,7 +250,7 @@ Le chiamate a  Adobe Analytics utilizzando l&#39;esempio fornito dovrebbero esse
 Il metodo Milestones non legacy è simile al metodo Milestones, tranne che per le pietre miliari, che vengono definite utilizzando percentuali della lunghezza del binario. I comuni sono i seguenti:
 
 * Quando la riproduzione di un video supera una fase cardine, la pagina chiama  Adobe Analytics per tenere traccia dell’evento.
-* Set [statico di variabili](#cqvars) CQ definite per la mappatura con  proprietà Adobe Analytics.
+* Il [set statico di variabili CQ](#cqvars), definito per la mappatura con  proprietà Adobe Analytics.
 * Per ogni pietra miliare definita, il componente crea una variabile CQ che è possibile mappare a una proprietà Adobe Analytics .
 
 Il nome di queste variabili CQ utilizza il formato seguente:
@@ -276,14 +276,14 @@ eventdata.events.milestoneXX
 
 1. Per mappare le variabili CQ su  proprietà Adobe Analytics, trascinate le proprietà  Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull’ottimizzazione delle mappature, consultate la guida [Measuring Video in  Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la guida [Measuring Video in  Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
-1. [Aggiungete il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
-1. Per verificare l’impostazione in modalità **** Anteprima, riprodurre il video per attivare  chiamate Adobe Analytics.
+1. [Aggiungete il ](/help/sites-administering/adobeanalytics.md) framework alla pagina.
+1. Per verificare la configurazione in **Modalità anteprima**, riprodurre il video per ottenere  chiamate Adobe Analytics da attivare.
 
-## Precedenti pietre miliari {#legacy-milestones}
+## Lettere cardine precedenti {#legacy-milestones}
 
-Questo metodo è simile al metodo Pietre miliari con la differenza che le pietre miliari specificate nel campo Offset ** tracciamento sono percentuali invece che punti impostati all’interno del video.
+Questo metodo è simile al metodo Milestones con la differenza che le pietre miliari specificate nel campo *Offset tracciamento* sono percentuali invece di punti impostati all&#39;interno del video.
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ Questo metodo è simile al metodo Pietre miliari con la differenza che le pietre
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Le variabili mappate a questo file conterranno il nome <strong>intuitivo</strong> (<strong>Titolo</strong>) del video, se impostato in DAM; se il Titolo non è impostato, viene inviato il nome <strong>del</strong> file del video. È stato inviato solo una volta, all’inizio della riproduzione di un video.<br /> </td>
+   <td>Le variabili mappate a questo file conterranno il nome <strong>descrittivo</strong> (<strong>Title</strong>) del video, se impostato in DAM; se il Titolo non è impostato, verrà inviato il file <strong>name</strong> del video. Inviato solo una volta, all'inizio della riproduzione di un video.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -314,29 +314,29 @@ Questo metodo è simile al metodo Pietre miliari con la differenza che le pietre
 
 >[!NOTE]
 >
->Potete impostare un nome **semplice** per un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. È inoltre necessario salvare le modifiche apportate al termine.
+>Potete impostare il nome di un video **facile da usare** aprendo il video per la modifica in DAM e impostando il campo di metadati **Title** sul nome desiderato. È inoltre necessario salvare le modifiche apportate al termine.
 
 1. Mappatura di queste variabili su prop da 1 a 3
 
-   Il **resto delle informazioni** pertinenti nella chiamata sarà inviato concatenato in **una** variabile denominata **pev3**.
+   Il resto **delle informazioni pertinenti** nella chiamata verrà inviato concatenato in **una variabile** denominata **pev3**.
 
-   **Le chiamate** di esempio per  Adobe Analytics utilizzando l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
+   **Le** chiamate di esempio per  Adobe Analytics utilizzando l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
 
    ![lmilestones1](assets/lmilestones1.png)
 
-   *La variabile **pev3**inviata nella chiamata contiene le informazioni seguenti:*
+   *La **variabile pev3**inviata nella chiamata contiene le informazioni seguenti:*
 
    * *Nome* - Il nome del file video (*film.avi*)
 
-   * *Lunghezza* : lunghezza del file video, in secondi (*100*)
+   * *Lunghezza*  - Lunghezza del file video, in secondi (*100*)
 
-   * *Nome* lettore - Il lettore video utilizzato per riprodurre il file video (video ** HTML5)
+   * *Nome*  lettore - Il lettore video utilizzato per riprodurre il file video (video ** HTML5)
 
-   * *Secondi totali riprodotti* - Il numero totale di secondi di riproduzione del video (*25*)
+   * *Secondi totali riprodotti*  - Il numero totale di secondi di riproduzione del video (*25*)
 
-   * *Timestamp* di inizio - Timestamp che identifica l&#39;avvio della riproduzione video (*1331035567*)
+   * *Timestamp*  di inizio - Timestamp che identifica l’inizio della riproduzione video (*1331035567*)
 
-   * *Riproduci sessione* - I dettagli della sessione di riproduzione. Questo campo indica in che modo l’utente ha interagito con il video. Ciò potrebbe includere dati quali la posizione di inizio della riproduzione del video, l’utilizzo del cursore video per far avanzare il video e la posizione in cui si è interrotta la riproduzione del video (*L10E24S58L58 - video arrestato al secondo. 25 della sezione L10, quindi saltato al secondo. 48*)
+   * *Riproduci sessione*  - I dettagli della sessione di riproduzione. Questo campo indica in che modo l’utente ha interagito con il video. Questo potrebbe includere dati come dove hanno iniziato a riprodurre il video, se hanno usato il cursore video per far avanzare il video e dove hanno interrotto la riproduzione del video (*L10E24S58L58 - video è stato arrestato al secondo. 25 della sezione L10, quindi saltato al secondo. 48*)
 
 ## Secondi precedenti {#legacy-seconds}
 
@@ -355,7 +355,7 @@ Quando si utilizza il metodo** dei secondi precedenti**,  chiamate Adobe Analyti
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Le variabili mappate a questo file conterranno il nome <strong>intuitivo</strong> (<strong>Titolo</strong>) del video, se impostato in DAM; se il Titolo non è impostato, viene inviato il nome <strong>del</strong> file del video. È stato inviato solo una volta, all’inizio della riproduzione di un video.<br /> </td>
+   <td>Le variabili mappate a questo file conterranno il nome <strong>descrittivo</strong> (<strong>Title</strong>) del video, se impostato in DAM; se il Titolo non è impostato, verrà inviato il file <strong>name</strong> del video. Inviato solo una volta, all'inizio della riproduzione di un video.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -370,17 +370,17 @@ Quando si utilizza il metodo** dei secondi precedenti**,  chiamate Adobe Analyti
 
 >[!NOTE]
 >
->Potete impostare un nome **semplice** per un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. È inoltre necessario salvare le modifiche apportate al termine.
+>Potete impostare il nome di un video **facile da usare** aprendo il video per la modifica in DAM e impostando il campo di metadati **Title** sul nome desiderato. È inoltre necessario salvare le modifiche apportate al termine.
 
 1. Mappare queste variabili a prop1, prop2 e prop3
 
-   Il **resto delle informazioni** pertinenti nella chiamata sarà inviato concatinato in **una** variabile denominata **pev3**.
+   Il resto **delle informazioni pertinenti** nella chiamata verrà inviato concatinato in **una variabile** denominata **pev3**.
 
    Le chiamate a  Adobe Analytics utilizzando l&#39;esempio fornito dovrebbero essere simili a quelle riportate di seguito quando vengono visualizzate con DigitalPulse Debugger:
 
    ![lsecondi](assets/lseconds.png)
 
-   *La chiamata è simile alla precedente chiamata Legacy Milestones. Si prega di vedere le informazioni su pev3 **[fornito lì](/help/sites-administering/adobeanalytics.md)**.*
+   *La chiamata è simile alla precedente chiamata Legacy Milestones. Si prega di vedere le informazioni su pev3 **[fornito in](/help/sites-administering/adobeanalytics.md)**.*
 
 **Riferimenti utilizzati in questa esercitazione:**
 
