@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Database di Microsoft SQL Server: Ottimizzazione della configurazione {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
-Modificare le impostazioni di configurazione predefinite quando si utilizza Microsoft SQL Server. Fare clic con il pulsante destro del mouse sul server locale in Oracle Enterprise Manager per accedere alla finestra di dialogo delle proprietà.
+Modificare le impostazioni di configurazione predefinite quando si utilizza Microsoft SQL Server. Fare clic con il pulsante destro del mouse sul server locale in  Oracle Enterprise Manager per accedere alla finestra di dialogo delle proprietà.
 
 ## Impostazioni memoria {#memory-settings}
 
@@ -30,7 +30,7 @@ Modificate l&#39;allocazione minima di memoria in un numero il più grande possi
 
 Modificare le impostazioni del processore e, soprattutto, selezionare la casella di controllo Aumenta priorità SQL Server in Windows in modo che il server utilizzi il maggior numero possibile di cicli. L&#39;impostazione Usa fibre NT è meno importante, ma potrebbe essere utile selezionarla.
 
-## Impostazioni del database {#database-settings}
+## Impostazioni database {#database-settings}
 
 Modificate le impostazioni del database. L&#39;impostazione più importante è l&#39;intervallo di recupero, che specifica la quantità massima di tempo per aspettare il ripristino dopo un arresto anomalo. L’impostazione predefinita è un minuto. L&#39;utilizzo di un valore maggiore, da 5 a 15 minuti, migliora le prestazioni perché offre al server più tempo per scrivere le modifiche dal registro del database nei file del database.
 
