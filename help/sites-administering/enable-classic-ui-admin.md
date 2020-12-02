@@ -1,8 +1,8 @@
 ---
-title: Console di amministrazione
-seo-title: Console di amministrazione
-description: Scopri come utilizzare le console di amministrazione disponibili in AEM.
-seo-description: Scopri come utilizzare le console di amministrazione disponibili in AEM.
+title: 'Admin Console '
+seo-title: 'Admin Console '
+description: Scoprite come utilizzare gli Admin Console  disponibili in AEM.
+seo-description: Scoprite come utilizzare gli Admin Console  disponibili in AEM.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,15 +12,18 @@ discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 2%
 
 ---
 
 
-# Console di amministrazione{#admin-consoles}
+# Admin Console {#admin-consoles}
 
 Per impostazione predefinita, è stata disattivata la possibilità di passare all’interfaccia classica tramite le console di amministrazione. Pertanto, le icone a comparsa visualizzate quando si passa il mouse su determinate icone della console e si consente l’accesso all’interfaccia classica, non vengono più visualizzate.
 
-Ogni console con una versione dell’interfaccia classica in `/libs/cq/core/content/nav` può essere riattivata singolarmente, in modo che l’opzione dell’interfaccia **** classica venga nuovamente visualizzata sopra l’icona della console quando viene spostata.
+Ogni console con una versione dell&#39;interfaccia classica in `/libs/cq/core/content/nav` può essere riattivata singolarmente, in modo che l&#39;opzione **Interfaccia classica** venga nuovamente visualizzata sopra l&#39;icona della console quando viene spostata.
 
 In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
@@ -36,7 +39,7 @@ In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Create una sovrapposizione utilizzando l’opzione **Overlay Node** (Nodo sovrapposizione); ad esempio:
+1. Create una sovrapposizione utilizzando l&#39;opzione **Overlay Node**; ad esempio:
 
    * **Percorso**: `/apps/cq/core/content/nav/sites`
    * **Posizione sovrapposizione**: `/apps/`
@@ -46,7 +49,7 @@ In questo esempio viene riattivata l’interfaccia classica per la console Siti.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. L’opzione Interfaccia **** classica è nuovamente disponibile come opzione di pover nella console di amministrazione.
+1. L&#39;opzione **Interfaccia classica** è nuovamente disponibile come opzione del puntatore nella console di amministrazione.
 
    ![](assets/syui-01-2019-02-27-15-16-55.png)
 
