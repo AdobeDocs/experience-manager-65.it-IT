@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Il server proxy funge da server intermedio che invia le richieste tra un client e un server. Il server proxy tiene traccia di tutte le interazioni client-server e genera un registro dell&#39;intera comunicazione TCP. Questo consente di monitorare esattamente ciò che sta accadendo, senza dover accedere al server principale.
 
-Il server proxy è disponibile nell’installazione di AEM:
+Il server proxy è disponibile nell&#39;installazione AEM:
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
@@ -30,7 +33,7 @@ Il server proxy è disponibile nell’installazione di AEM:
 * SMTP per i messaggi e-mail
 * LDAP per la gestione degli utenti
 
-Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP; Ad esempio, un browser Web e AEM. Questo consente di monitorare esattamente ciò che accade quando si richiede una pagina CQ.
+Ad esempio, è possibile posizionare il server proxy tra due applicazioni che comunicano tramite una rete TCP/IP; ad esempio un browser Web e AEM. Questo consente di monitorare esattamente ciò che accade quando si richiede una pagina CQ.
 
 ## Avvio dello strumento Proxy Server {#starting-the-proxy-server-tool}
 
@@ -42,11 +45,11 @@ Avviate il server dalla riga di comando:
 
 `<host>`
 
-Questo è l&#39;indirizzo host dell&#39;istanza CRX a cui si desidera connettersi. Se l&#39;istanza si trova nel computer locale, lo sarà `localhost`.
+Questo è l&#39;indirizzo host dell&#39;istanza CRX a cui si desidera connettersi. Se l&#39;istanza si trova nel computer locale, sarà `localhost`.
 
 `<remoteport>`
 
-Si tratta della porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione di AEM è **`4502`** e il valore predefinito per una nuova istanza di creazione di AEM è `4502`.
+Si tratta della porta host dell&#39;istanza CRX di destinazione. Ad esempio, il valore predefinito di una nuova installazione AEM è **`4502`** e il valore predefinito per una nuova istanza di creazione AEM installata è `4502`.
 
 `<localport>`
 
@@ -80,13 +83,13 @@ Le voci di registro prodotte da proxy-2.1.jar hanno tutti il seguente formato:
 
 `[timestamp (optional)] [Client|Server]-[ConnectionNumber]-[BytePosition] ->[Character Stream]`
 
-Ad esempio, una richiesta per una pagina Web potrebbe essere:
+Ad esempio, una richiesta per una pagina Web può essere visualizzata come segue:
 
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
 * C significa che questa voce proviene dal client (è una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
-* &#x200B;# 00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
+* # 00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
 * `[GET <?>]` è il contenuto della richiesta, nell’esempio di una delle intestazioni HTTP (url).
 
 Quando una connessione viene chiusa, vengono registrate le informazioni seguenti:
@@ -96,7 +99,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Mostra il numero di byte passati tra client ( `C`) e server ( `S`) sulla 6a connessione e alla velocità media.
+Questo mostra il numero di byte passati tra client ( `C`) e server ( `S`) sulla 6a connessione e alla velocità media.
 
 **Esempio di output di registro**
 
@@ -126,13 +129,13 @@ Il contenuto di `test.html` è:
 </html>
 ```
 
-Se l’istanza di AEM è in esecuzione su `localhost:4502` avviamo il proxy come segue:
+Presupponendo che l&#39;istanza AEM sia in esecuzione su `localhost:4502`, avvieremo il proxy come segue:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Ora è possibile accedere all&#39;istanza CQ/CRX tramite il proxy `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate `test.log`.
+Ora è possibile accedere all&#39;istanza CQ/CRX tramite il proxy su `localhost:4444` e tutte le comunicazioni tramite questa porta sono registrate su `test.log`.
 
-Se ora guardiamo l&#39;output del proxy, verrà visualizzata l&#39;interazione tra il browser e l&#39;istanza AEM.
+Se ora guardiamo l&#39;output del proxy, vedremo l&#39;interazione tra il browser e l&#39;istanza AEM.
 
 All&#39;avvio, il proxy emette quanto segue:
 
@@ -162,7 +165,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-L’istanza AEM risponde al contenuto del file `test.html`:
+L&#39;istanza AEM risponde con il contenuto del file `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -221,7 +224,7 @@ Se si perdono richieste in un server complesso, ad esempio con un firewall e un 
 
 * Avviare un proxy prima di un firewall
 * Avviare un altro proxy dopo un firewall
-* Utilizzate questi elementi per vedere quanto sono state estese le richieste.
+* Utilizzate questi elementi per vedere fino a che punto sono arrivate le richieste.
 
 **Gestione richieste**
 
@@ -229,5 +232,5 @@ Se si verificano richieste sporgenti di tanto in tanto:
 
 * Avviate il proxy.
 * Attendi o scrivi il registro di accesso in un file con ciascuna voce con una marca temporale.
-* Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale di esse causa problemi.
+* Quando la richiesta inizia con l’appesa, potete vedere quante connessioni erano aperte e quale è la richiesta che causa problemi.
 
