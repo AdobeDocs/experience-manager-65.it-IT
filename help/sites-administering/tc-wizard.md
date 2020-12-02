@@ -12,13 +12,16 @@ discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 2%
 
 ---
 
 
 # Copia guidata lingua{#language-copy-wizard}
 
-La procedura guidata Copia lingua è un’esperienza guidata per la creazione e la gestione di una struttura di contenuti multilingue. Ora è molto più semplice e rapido creare una copia per la lingua.
+La procedura guidata Copia lingua è un’esperienza guidata per la creazione e la strumentalizzazione di una struttura di contenuti multilingue. Ora è molto più semplice e rapido creare una copia per la lingua.
 
 >[!NOTE]
 >
@@ -38,15 +41,15 @@ Per accedere a questa procedura guidata:
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. Il pulsante **Avanti** consente di passare al passaggio **Configura** della procedura guidata. Qui è possibile aggiungere o rimuovere le lingue e selezionare il metodo di traduzione.
+1. Il pulsante **Next** consente di passare al passaggio **Configure** della procedura guidata. Qui è possibile aggiungere o rimuovere le lingue e selezionare il metodo di traduzione.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, è presente una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Consultate [Configurazione del framework](/help/sites-administering/tc-tic.md)di integrazione della traduzione.
+   >Per impostazione predefinita, è presente una sola impostazione di traduzione. Per poter selezionare altre impostazioni, devi prima configurare le configurazioni cloud. Vedere [Configurazione del framework di integrazione della traduzione](/help/sites-administering/tc-tic.md).
 
-1. Il pulsante **Avanti** consente di passare al passaggio **Traduci** della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere a un progetto di traduzione esistente.
+1. Il pulsante **Next** consente di passare al passaggio **Translate** della procedura guidata. Qui puoi scegliere se creare solo la struttura, creare un nuovo progetto di traduzione o aggiungere a un progetto di traduzione esistente.
 
    >[!NOTE]
    >
