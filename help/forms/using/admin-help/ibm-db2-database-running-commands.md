@@ -18,33 +18,33 @@ ht-degree: 0%
 ---
 
 
-# Database IBM DB2: Esecuzione di comandi per una manutenzione regolare {#ibm-db-database-running-commands-for-regular-maintenance}
+# Database IBM DB2: Esecuzione di comandi per la manutenzione regolare {#ibm-db-database-running-commands-for-regular-maintenance}
 
-I seguenti comandi IBM DB2 sono consigliati per la manutenzione regolare del database dei moduli AEM. Per informazioni dettagliate sulla manutenzione e l&#39;ottimizzazione delle prestazioni per il database DB2, vedere la Guida *all&#39;amministrazione* IBM DB2.
+I seguenti comandi IBM DB2 sono consigliati per la manutenzione regolare del database dei moduli AEM. Per informazioni dettagliate sulla manutenzione e l&#39;ottimizzazione delle prestazioni per il database DB2, vedere *Guida all&#39;amministrazione DB2 di IBM*.
 
-* **runstats:** Questo comando aggiorna le statistiche che descrivono le caratteristiche fisiche di una tabella di database, insieme ai relativi indici associati. Le istruzioni SQL dinamiche generate dai moduli AEM utilizzano automaticamente queste statistiche aggiornate, ma anche le istruzioni SQL statiche create all&#39;interno di un database richiedono l&#39;esecuzione del `db2rbind` comando.
-* **db2rbind:** Questo comando ripristina tutti i pacchetti nel database. Utilizzate questo comando dopo aver eseguito l&#39; `runstats` utility per convalidare nuovamente tutti i pacchetti nel database.
-* **riorganizzazione tabella o indice:** Questo comando controlla se è necessaria una riorganizzazione di alcune tabelle e indici.
+* **runstats:** Questo comando aggiorna le statistiche che descrivono le caratteristiche fisiche di una tabella di database, insieme ai relativi indici associati. Le istruzioni SQL dinamiche generate dai moduli utilizzano automaticamente queste statistiche aggiornate, ma le istruzioni SQL statiche create all&#39;interno di un database richiedono l&#39;esecuzione anche del comando `db2rbind`.
+* **db2rbind:** questo comando ripristina tutti i pacchetti nel database. Utilizzare questo comando dopo l&#39;esecuzione dell&#39;utility `runstats` per convalidare nuovamente tutti i pacchetti nel database.
+* **riorganizzazione tabella o indice:** questo comando controlla se è necessaria una riorganizzazione di alcune tabelle e indici.
 
    Con la crescita e la modifica dei database, il ricalcolo delle statistiche delle tabelle è fondamentale per migliorare le prestazioni del database e deve essere eseguito regolarmente. Questi comandi possono essere eseguiti manualmente tramite script o tramite un processo cron.
 
 >[!NOTE]
 >
->Prima di eseguire il `runstats` comando, il database deve contenere dei dati e deve essere stata eseguita almeno una sincronizzazione di directory.
+>Prima di eseguire il comando `runstats`, il database deve contenere dati e deve essere stata eseguita almeno una sincronizzazione di directory.
 
-Per un database di dimensioni ridotte, ad esempio per 10.000 utenti o 2.500 gruppi, è sufficiente richiamare il `runstats` comando per ridurre i tempi di sincronizzazione.
+Per un database di dimensioni ridotte, ad esempio per 10.000 utenti o 2.500 gruppi, è sufficiente richiamare il comando `runstats` per ridurre i tempi di sincronizzazione.
 
-Per i database di dimensioni maggiori, ad esempio per 100.000 utenti o 10.000 gruppi, eseguire il `reorg` comando prima di eseguire il `runstats` comando.
+Per i database di dimensioni maggiori, ad esempio per 100.000 utenti o 10.000 gruppi, eseguire il comando `reorg` prima di eseguire il comando `runstats`.
 
 ## Utilizzare il comando runstats nel database dei moduli AEM {#use-the-runstats-command-on-your-aem-forms-database}
 
-Esegui il `runstats` comando nelle tabelle e negli indici del database dei moduli AEM seguenti.
+Eseguire il comando `runstats` nelle tabelle e negli indici del database dei moduli AEM seguenti.
 
 >[!NOTE]
 >
->Il `runstats` comando deve essere eseguito solo durante la prima sincronizzazione del database. Tuttavia, durante tale processo deve essere eseguito due volte: una volta durante la sincronizzazione di Utenti e Gruppi e quindi durante la sincronizzazione dei Membri del Gruppo. Assicurarsi che lo script venga eseguito completamente ogni volta che viene eseguito.
+>Il comando `runstats` deve essere eseguito solo durante la prima sincronizzazione del database. Tuttavia, durante tale processo deve essere eseguito due volte: una volta durante la sincronizzazione di Utenti e Gruppi e quindi durante la sincronizzazione dei Membri del Gruppo. Assicurarsi che lo script venga eseguito completamente ogni volta che viene eseguito.
 
-Per una sintassi e un utilizzo corretti, consultate la documentazione del produttore del database. Di seguito `<schema>` viene utilizzato per indicare lo schema associato al nome utente DB2. Se si dispone di una semplice installazione DB2 predefinita, si tratta del nome dello schema del database.
+Per una sintassi e un utilizzo corretti, consultate la documentazione del produttore del database. Sotto, `<schema>` è utilizzato per indicare lo schema associato al nome utente DB2. Se si dispone di una semplice installazione DB2 predefinita, si tratta del nome dello schema del database.
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
@@ -70,7 +70,7 @@ Per una sintassi e un utilizzo corretti, consultate la documentazione del produt
 
 ## Eseguire il comando reorg nel database dei moduli AEM {#run-the-reorg-command-on-your-aem-forms-database}
 
-Esegui il `reorg` comando nelle tabelle e negli indici del database dei moduli AEM seguenti. Per una sintassi e un utilizzo corretti, consultate la documentazione del produttore del database.
+Eseguire il comando `reorg` nelle tabelle e negli indici del database dei moduli AEM seguenti. Per una sintassi e un utilizzo corretti, consultate la documentazione del produttore del database.
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
