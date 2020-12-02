@@ -12,6 +12,9 @@ discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 39%
 
 ---
 
@@ -20,13 +23,14 @@ source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
 
 Questa sezione è dedicata alla console di assegnazione tag dell’interfaccia classica.
 
-La console Tagging dell’interfaccia touch è disponibile [qui](/help/sites-administering/tags.md#tagging-console).
+La console Tagging dell’interfaccia touch è [qui](/help/sites-administering/tags.md#tagging-console).
 
 Per accedere alla console Tag dell’interfaccia classica:
 
 * sull&#39;autore
 * accesso con privilegi amministrativi
-* ad esempio, [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* passare alla console
+ad esempio, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -44,17 +48,25 @@ Per accedere alla console Tag dell’interfaccia classica:
 
 1. In entrambi i casi, immettere
 
-   * **Titolo**(*obbligatorio*) Titolo visualizzato per il tag . Anche se è possibile inserire un carattere qualsiasi, si consiglia di non utilizzare i seguenti caratteri speciali:
+   * **Titolo**
+(
+*Obbligatorio*) Titolo visualizzato per il tag . È possibile inserire qualsiasi carattere,
+si consiglia di non utilizzare i seguenti caratteri speciali:
 
       * `colon (:)` - delimitatore dello spazio nomi
       * `forward slash (/)` - delimitatore di tag secondari
+
       Questi caratteri non verranno visualizzati se immessi.
 
-   * **Nome**(*obbligatorio*) Il nome del nodo per il tag.
+   * **Nome**
+(
+*Obbligatorio*) Il nome del nodo per il tag.
 
-   * **Descrizione**(*facoltativo*) Una descrizione del tag.
+   * **Descrizione**
+(
+*Facoltativo*) Una descrizione del tag.
 
-   * select **Create**
+   * selezionare **Crea**
 
 
 ## Modifica dei tag {#editing-tags}
@@ -68,7 +80,7 @@ Per accedere alla console Tag dell’interfaccia classica:
 
 1. Nel riquadro a destra, selezionate il tag da eliminare.
 1. Fai clic su **Elimina**.
-1. Click **Yes** to close the dialog.
+1. Fare clic su **Sì** per chiudere la finestra di dialogo.
 
    Il tag non deve più essere elencato.
 
@@ -77,7 +89,7 @@ Per accedere alla console Tag dell’interfaccia classica:
 1. Nel riquadro a destra, selezionate lo spazio nomi o il tag da attivare (pubblicare) o da disattivare (annullare la pubblicazione).
 1. Fare clic su **Attiva** o su **Disattiva**, come necessario.
 
-## Elenco - Indicazione di dove si trovano i riferimenti ai tag {#list-showing-where-tags-are-referenced}
+## Elenco - Indicazione di dove si trovano i riferimenti ai tag  {#list-showing-where-tags-are-referenced}
 
 L’opzione **Elenco** consente di aprire una nuova finestra con i percorsi di tutte le pagine che usano il tag evidenziato:
 
@@ -102,7 +114,7 @@ La finestra di dialogo **Muovi tag** si presenta così:
 
 >[!NOTE]
 >
->Gli autori non devono spostare i tag o rinominare un ID di tag. Se necessario, gli autori devono [cambiare solo i titoli](#editing-tags)dei tag.
+>Gli autori non devono spostare i tag o rinominare un ID di tag. Se necessario, gli autori devono modificare solo i titoli dei tag [a1/>.](#editing-tags)
 
 ## Unione dei tag {#merging-tags}
 
@@ -118,7 +130,7 @@ Per unire un tag a un altro:
 
 1. Fate clic su **Unisci**.
 
-The **Merge Tag** dialog looks as follows:
+La finestra di dialogo **Unisci tag** si presenta come segue:
 
 ![](assets/mergetag.png)
 
@@ -129,16 +141,16 @@ Per verificare quante volte compare un determinato tag:
 1. Aprite la console **Tagging**.
 1. Fate clic su **Utilizzo conteggio** nella barra degli strumenti superiore. Il risultato viene visualizzato nella colonna Conteggio.
 
-## Gestione dei tag in diverse lingue {#managing-tags-in-different-languages}
+## Gestione dei tag in diverse lingue  {#managing-tags-in-different-languages}
 
-La `title`proprietà opzionale di un tag può essere tradotta in più lingue. Tag `titles` can then be displayed according to the user language or to the page language.
+La proprietà opzionale `title`di un tag può essere tradotta in più lingue. Il tag `titles` può quindi essere visualizzato in base alla lingua dell&#39;utente o alla lingua della pagina.
 
 ### Definizione dei titoli dei tag in diverse lingue {#defining-tag-titles-in-multiple-languages}
 
-The following procedure shows how to translate the `title`of the tag **Animals** into English, German and French:
+La procedura seguente illustra come tradurre il `title`del tag **Animals** in inglese, tedesco e francese:
 
-1. Go to the **Tagging** console.
-1. Edit the tag **Animals** below **Tags** > **Stock Photography**.
+1. Passate alla console **Tagging**.
+1. Modificate il tag **Animals** sotto **Tags** > **Stock Photography**.
 1. Aggiungete le traduzioni nelle lingue seguenti:
 
    * **Inglese**: Animals
@@ -153,25 +165,25 @@ La finestra di dialogo si presenta come segue:
 
 La console Tagging utilizza l’impostazione della lingua utente, pertanto per il tag Animals viene visualizzato &quot;Animaux&quot; per un utente che imposta la lingua francese nelle proprietà dell’utente.
 
-To add a new language to the dialog, please refer to the section [Adding a New Language to the Edit Tag Dialog](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in the **Tagging for Developers** section.
+Per aggiungere una nuova lingua alla finestra di dialogo, fare riferimento alla sezione [Aggiunta di una nuova lingua alla finestra di dialogo Modifica tag](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) nella sezione **Assegnazione tag agli sviluppatori**.
 
-### Visualizzazione dei titoli dei tag in Proprietà pagina in una lingua specificata {#displaying-tag-titles-in-page-properties-in-a-specified-language}
+### Visualizzazione dei titoli dei tag in Proprietà pagina in una lingua specifica {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-By default the tag `titles`in the page properties are displayed in the page language. The tag dialog in the page properties has a language field that enables the display of tag `titles`in a different language. The following procedure describes how to display the tag `titles`in French:
+Per impostazione predefinita, il tag `titles`nelle proprietà della pagina viene visualizzato nella lingua della pagina. La finestra di dialogo dei tag nelle proprietà della pagina dispone di un campo della lingua che consente la visualizzazione del tag `titles`in una lingua diversa. La procedura seguente descrive come visualizzare il tag `titles`in francese:
 
-1. Refer to the previous section to add the French translation to the **Animals** below **Tags** > **Stock Photography**.
+1. Fare riferimento alla sezione precedente per aggiungere la traduzione francese alla **Animals** sotto **Tags** > **Stock Photography**.
 1. Aprite le proprietà della pagina **Products** nel ramo inglese del sito **Geometrixx**.
-1. Aprire la finestra di dialogo **Tag/Parole chiave** (selezionando il menu a discesa a destra dell&#39;area di visualizzazione Tag/Parole chiave) e selezionare la lingua **francese** dal menu a discesa nell&#39;angolo in basso a destra.
-1. Scorri utilizzando le frecce a sinistra e a destra fino a selezionare la scheda **Stock Photography**
+1. Aprire la finestra di dialogo **Tag/Parole chiave** (selezionando il menu a discesa a destra dell&#39;area di visualizzazione Tag/Parole chiave) e selezionare la lingua **Francese** dal menu a discesa nell&#39;angolo in basso a destra.
+1. Scorri utilizzando le frecce a sinistra fino a selezionare la scheda **Stock Photography**
 
-   Selezionate il tag **Animals** (**Animaux**) e selezionate all’esterno della finestra di dialogo per chiuderlo e aggiungere il tag alle proprietà della pagina.
+   Selezionate il tag **Animals** (**Animaux**) e selezionate all&#39;esterno della finestra di dialogo per chiuderlo e aggiungere il tag alle proprietà della pagina.
 
    ![](assets/french_tag.png)
 
-By default, the Page Properties dialog displays the tag `titles`according to the page language.
+Per impostazione predefinita, nella finestra di dialogo Proprietà pagina viene visualizzato il tag `titles`in base alla lingua della pagina.
 
 In generale, la lingua del tag viene presa dalla lingua della pagina, se disponibile. Quando si utilizza il widget [`tag` in altre situazioni (ad esempio nei moduli o nelle finestre di dialogo) la lingua del tag dipende dal contesto.](/help/sites-developing/building.md#tagging-on-the-client-side)
 
 >[!NOTE]
 >
->The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
+>Il tag cloud e le parole chiave meta nel componente di pagina standard utilizzano il tag localizzato `titles`in base alla lingua della pagina, se disponibile.
