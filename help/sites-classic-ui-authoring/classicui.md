@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 84%
 
 ---
 
 
 # Authoring nell’interfaccia classica{#authoring-in-the-classic-ui}
 
-## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
+## Interfaccia classica e interfaccia utente touch {#classic-ui-and-touch-enabled-ui}
 
-L’interfaccia classica è l’interfaccia utente orientata al desktop disponibile a partire da CQ5 (il predecessore di AEM). La seguente documentazione sull’authoring è incentrata su tale interfaccia utente.
+L’interfaccia classica è l’interfaccia utente orientata al desktop disponibile a partire da CQ5 (il predecessore AEM). La seguente documentazione sull’authoring è incentrata su tale interfaccia utente.
 
 L’interfaccia utente touch è la nuova interfaccia standard di AEM, utilizzabile sia sui dispositivi touch che sui dispositivi desktop. Per ulteriori informazioni, consulta la [documentazione standard sull’authoring.](/help/sites-authoring/author.md)
 
