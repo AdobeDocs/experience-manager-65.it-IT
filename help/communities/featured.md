@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Funzionalità Contenuto {#featured-content-feature}
+# Funzionalità contenuto in evidenza {#featured-content-feature}
 
 ## Introduzione {#introduction}
 
@@ -37,57 +37,57 @@ La possibilità di visualizzare il contenuto può essere consentita o disabilita
 Questa sezione della documentazione descrive quanto segue:
 
 * Aggiunta di contenuti contenuti a un sito community.
-* Impostazioni di configurazione per il `Featured Content` componente.
+* Impostazioni di configurazione per il componente `Featured Content`.
 
-## Aggiunta di contenuti contenuti a una pagina {#adding-featured-content-to-a-page}
+## Aggiunta di contenuti contenuti contenuti a una pagina {#adding-featured-content-to-a-page}
 
-Per aggiungere un `Featured Content` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un componente `Featured Content` a una pagina in modalità di creazione, usate il browser componenti per individuare
 
 * `Communities / Featured Content`
 
 trascinatelo nella posizione desiderata su una pagina in cui deve comparire il contenuto in primo piano.
 
-Per le informazioni necessarie, consulta [Community Components Basics](basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
 
-Quando sono incluse le librerie [lato client](essentials-featured.md#essentials-for-client-side) richieste, verrà visualizzato il `Featured Content` componente:
+Quando vengono incluse le [librerie lato client ](essentials-featured.md#essentials-for-client-side), viene visualizzato il componente `Featured Content`:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-## Configurazione di contenuti contenuti {#configuring-featured-content}
+## Configurazione del contenuto disponibile {#configuring-featured-content}
 
-Selezionate il `Featured Content` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Featured Content` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
-### scheda Impostazioni {#settings-tab}
+### Scheda Impostazioni {#settings-tab}
 
-Nella scheda **[!UICONTROL Impostazioni]** , identificate il contenuto da includere:
+Nella scheda **[!UICONTROL Impostazioni]**, identificate il contenuto da includere:
 
 * **[!UICONTROL Nome visualizzato]**
 
-   Titolo per l’elenco del contenuto disponibile. For example `Featured Questions` or `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
+   Titolo per l’elenco del contenuto disponibile. Ad esempio `Featured Questions` o `Featured Ideas`. Il valore predefinito è `Featured Content` se lasciato vuoto.
 
 * **[!UICONTROL Posizione del contenuto in primo piano]**
 
-   *(Obbligatorio)* Passate alla pagina contenente il contenuto che potrebbe essere una funzione (i componenti di tale pagina devono essere configurati per Consenti contenuto disponibile). Esempio, `/content/sites/engage/en/forum`.
+   *(Obbligatorio)* Individuate la pagina contenente il contenuto che potrebbe essere una funzione (i componenti di tale pagina devono essere configurati per Consenti contenuto disponibile). Esempio, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Limite di visualizzazione]**
 
    Il numero massimo di contenuti contenuti da visualizzare. Il valore predefinito è 5.
 
-## Esperienza dei visitatori del sito {#site-visitor-experience}
+## Esperienza visitatori del sito {#site-visitor-experience}
 
 La capacità di contrassegnare il contenuto come contenuto in primo piano richiede privilegi di moderatore.
 
-Quando un moderatore visualizza il contenuto pubblicato, ha accesso ai flag di moderazione contestuali, che includono il nuovo `Feature` flag.
+Quando un moderatore visualizza il contenuto pubblicato, ha accesso ai flag di moderazione contestuale, che includono il nuovo flag `Feature`.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Una volta contrassegnata come feature, il flag di moderazione diventa `Unfeature`.
+Una volta contrassegnata come feature, il flag di modem diventa `Unfeature`.
 
-La pagina contenente il `Featured Content` componente ora includerà questo post.
+La pagina contenente il componente `Featured Content` ora includerà questo post.
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -95,6 +95,6 @@ La pagina contenente il `Featured Content` componente ora includerà questo post
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina Contenuto [](essentials-featured.md) disponibile per gli sviluppatori.
+Ulteriori informazioni sono disponibili nella pagina [Contenuto in evidenza](essentials-featured.md) per gli sviluppatori.
 
-Per contrassegnare i contenuti come disponibili, consultate [Moderazione dei contenuti](moderate-ugc.md)generati dagli utenti.
+Per contrassegnare i contenuti come disponibili, consultate [Moderating User Generated Content](moderate-ugc.md) (Contenuto generato dall&#39;utente).
