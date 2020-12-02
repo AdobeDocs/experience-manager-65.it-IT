@@ -27,9 +27,9 @@ Gestione utente è un componente AEM Forms JEE  che consente di creare, gestire 
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
-## Archivio dati utente e data {#user-data-and-data-stores}
+## Archivio dati utente {#user-data-and-data-stores}
 
-La gestione utente memorizza i dati utente in un database, ad esempio My Sql, Oracle, MS SQL Server e IBM DB2. Inoltre, ogni utente che ha eseguito l&#39;accesso almeno una volta nelle applicazioni Forms all&#39;AEM dell&#39;autore, `https://'[server]:[port]'lc`viene creato AEM repository. Pertanto, la gestione degli utenti viene memorizzata nei seguenti archivi di dati:
+La gestione utente memorizza i dati utente in un database, ad esempio My Sql,  Oracle, MS SQL Server e IBM DB2. Inoltre, ogni utente che ha eseguito l&#39;accesso almeno una volta nelle applicazioni Forms all&#39;AEM autore in `https://'[server]:[port]'lc`, viene creato AEM repository. Pertanto, la gestione degli utenti viene memorizzata nei seguenti archivi di dati:
 
 * Database
 * AEM repository
@@ -59,16 +59,16 @@ La gestione utente memorizza i dati utente nelle seguenti tabelle di database:
   </tr>
   <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(database Oracle e MS SQL)</p> </td>
+       </code>( database Oracle e MS SQL)</p> </td>
    <td>Memorizza i dati solo per gli utenti locali.</td>
   </tr>
   <tr>
    <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
-       </code>(database Oracle e MS SQL)</p> </td>
+       </code>( database Oracle e MS SQL)</p> </td>
    <td>Contiene voci di tutti gli utenti provenienti da domini locali, enterprise e ibridi. Contiene gli ID e-mail dell’utente.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> (database Oracle e MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> ( database Oracle e MS SQL)</p> </td>
    <td>Memorizza la mappatura tra utenti e gruppi.</td>
   </tr>
   <tr>
@@ -80,8 +80,8 @@ La gestione utente memorizza i dati utente nelle seguenti tabelle di database:
    <td>Memorizza la mappatura tra entità e autorizzazioni per utenti e gruppi.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (database Oracle e MS SQL)</p> </td>
-   <td>Memorizza valori attributo vecchi e nuovi corrispondenti a un'entità.<br /> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> ( database Oracle e MS SQL)</p> </td>
+   <td>Memorizza i valori degli attributi vecchi e nuovi corrispondenti a un'entità.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -96,9 +96,9 @@ I dati di gestione utenti per gli utenti che hanno eseguito almeno una volta l&#
 
 ### Database {#database-1}
 
-Per esportare o eliminare i dati utente dal database di gestione utenti, è necessario connettersi al database utilizzando un client di database e individuare l&#39;ID principale in base ad alcuni PII dell&#39;utente. Ad esempio, per recuperare l&#39;ID principale di un utente utilizzando un ID di login, eseguite il `select` comando seguente sul database.
+Per esportare o eliminare i dati utente dal database di gestione utenti, è necessario connettersi al database utilizzando un client di database e individuare l&#39;ID principale in base ad alcuni PII dell&#39;utente. Ad esempio, per recuperare l&#39;ID principale di un utente utilizzando un ID di login, eseguite il seguente comando `select` nel database.
 
-Nel `select` comando, sostituite l’ID `<user_login_id>` con l’ID di login dell’utente di cui desiderate recuperare l’ID principale.
+Nel comando `select`, sostituire il `<user_login_id>` con l&#39;ID di login dell&#39;utente di cui si desidera recuperare l&#39;ID principale.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -108,22 +108,22 @@ Una volta noto l’ID principale, potete esportare o eliminare i dati utente.
 
 #### Esportare i dati utente {#export-user-data}
 
-Eseguite i seguenti comandi del database per esportare i dati di gestione utente per un ID principale dalle tabelle del database. Nel `select` comando, sostituire `<principal_id>` con l&#39;ID principale dell&#39;utente di cui si desidera esportare i dati.
+Eseguite i seguenti comandi del database per esportare i dati di gestione utente per un ID principale dalle tabelle del database. Nel comando `select`, sostituire `<principal_id>` con l&#39;ID principale dell&#39;utente di cui si desidera esportare i dati.
 
 >[!NOTE]
 >
->I seguenti comandi utilizzano i nomi delle tabelle del database nei database My SQL e IBM DB2. Durante l&#39;esecuzione di questi comandi nei database Oracle e MS SQL, sostituire i seguenti nomi di tabella nei comandi:
+>I seguenti comandi utilizzano i nomi delle tabelle del database nei database My SQL e IBM DB2. Quando eseguite questi comandi  database Oracle e MS SQL, sostituite i seguenti nomi di tabella nei comandi:
 >
->* Replace `EdcPrincipalLocalAccountEntity` with `EdcPrincipalLocalAccount`
+>* Sostituire `EdcPrincipalLocalAccountEntity` con `EdcPrincipalLocalAccount`
    >
    >
-* Replace `EdcPrincipalEmailAliasEntity` with `EdcPrincipalEmailAliasEn`
+* Sostituire `EdcPrincipalEmailAliasEntity` con `EdcPrincipalEmailAliasEn`
    >
    >
-* Replace `EdcPrincipalMappingEntity` with `EdcPrincipalMappingEntit`
+* Sostituire `EdcPrincipalMappingEntity` con `EdcPrincipalMappingEntit`
    >
    >
-* Replace `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+* Sostituire `EdcPrincipalGrpCtmntEntity` con `EdcPrincipalGrpCtmntEnti`
 
 >
 
@@ -147,13 +147,13 @@ Select * from EdcPrincipalGrpCtmntEntity where refchildprincipalid in (Select id
 Select * from EdcPrincipalEntity where id='<principal_id>';
 ```
 
-#### Eliminare i dati utente {#delete-user-data}
+#### Elimina dati utente {#delete-user-data}
 
 Effettuate le seguenti operazioni per eliminare i dati di gestione utente per un ID entità dalle tabelle del database.
 
-1. Eliminate i dati utente AEM repository, se applicabile, come descritto in [Elimina dati](/help/forms/using/user-management-handling-user-data.md#delete-aem)utente.
+1. Eliminate i dati utente AEM repository, se applicabile, come descritto in [Elimina dati utente](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Arrestate il  server AEM Forms.
-1. Eseguite i seguenti comandi del database per eliminare i dati di gestione utente per un ID principale dalle tabelle del database. Nel `Delete` comando, sostituire `<principal_id>` con l&#39;ID principale dell&#39;utente di cui si desidera eliminare i dati.
+1. Eseguite i seguenti comandi del database per eliminare i dati di gestione utente per un ID principale dalle tabelle del database. Nel comando `Delete`, sostituire `<principal_id>` con l&#39;ID principale dell&#39;utente di cui si desidera eliminare i dati.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -181,14 +181,14 @@ Gli utenti Forms JEE hanno i propri dati AEM repository se hanno eseguito l&#39;
 
 #### Accesso ai dati utente {#access-user-data}
 
-Per visualizzare l&#39;utente creato AEM repository, accedere `https://'[server]:[port]'/lc/useradmin` con AEM credenziali di amministratore. Nell’URL `server` e `port` nell’URL si trova l’istanza di creazione AEM. Qui potete cercare gli utenti con il loro nome utente. Fate doppio clic su un utente per visualizzare informazioni quali proprietà, autorizzazioni e gruppi per l’utente. La `Path` proprietà di un utente specifica il percorso del nodo utente creato in AEM repository.
+Per visualizzare l&#39;utente creato AEM repository, accedere a `https://'[server]:[port]'/lc/useradmin` con AEM credenziali di amministratore. Tenere presente che `server` e `port` nell&#39;URL sono quelli dell&#39;istanza di autore AEM. Qui potete cercare gli utenti con il loro nome utente. Fate doppio clic su un utente per visualizzare informazioni quali proprietà, autorizzazioni e gruppi per l’utente. La proprietà `Path` di un utente specifica il percorso del nodo utente creato AEM repository.
 
-#### Eliminare i dati utente {#delete-aem}
+#### Elimina dati utente {#delete-aem}
 
 Per eliminare un utente:
 
-1. Accedete a `https://'[server]:[port]'/lc/useradmin` con AEM credenziali di amministratore.
-1. Cercate un utente e fate doppio clic sul nome utente per aprire le proprietà utente. Copiare la `Path` proprietà.
-1. Passate AEM CRX DELite in corrispondenza di `https://'[server]:[port]'/lc/crx/de/index.jsp` e individuate o ricercate il percorso utente.
-1. Eliminate il percorso e fate clic su **[!UICONTROL Salva tutto]** per eliminare definitivamente l’utente AEM repository.
+1. Andate a `https://'[server]:[port]'/lc/useradmin` con AEM credenziali di amministratore.
+1. Cercate un utente e fate doppio clic sul nome utente per aprire le proprietà utente. Copiare la proprietà `Path`.
+1. Andate AEM CRX DELite in `https://'[server]:[port]'/lc/crx/de/index.jsp` e individuate o cercate il percorso utente.
+1. Eliminate il percorso e fate clic su **[!UICONTROL Salva tutto]** per eliminare definitivamente l&#39;utente AEM repository.
 
