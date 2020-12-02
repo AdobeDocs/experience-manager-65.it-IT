@@ -19,7 +19,7 @@ ht-degree: 10%
 ---
 
 
-# Ideazione {#ideation-feature}
+# Caratteristica ideazione {#ideation-feature}
 
 ## Introduzione {#introduction}
 
@@ -35,31 +35,31 @@ Questa sezione della documentazione descrive quanto segue:
 * Aggiunta della funzione di ideazione a un sito AEM.
 * Impostazioni di configurazione per il componente Ideazione.
 
-### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
+### Aggiunta di un&#39;idea a una pagina {#adding-a-ideation-to-a-page}
 
-Per aggiungere un `Ideation` componente a una pagina in modalità di creazione, usate il browser Componenti per individuare
+Per aggiungere un componente `Ideation` a una pagina in modalità di creazione, usate il browser componenti per individuare
 
 * `Communities / Ideation`
 
 e trascinatela nella posizione desiderata su una pagina in cui deve comparire l’idea.
 
-Per le informazioni necessarie, consulta [Community Components Basics](/help/communities/basics.md).
+Per le informazioni necessarie, visitare [Community Components Basics](/help/communities/basics.md).
 
-Quando sono incluse le librerie [lato client](/help/communities/ideation.md#essentials-for-client-side) richieste, verrà visualizzato il `Ideation` componente:
+Quando vengono incluse le [librerie lato client ](/help/communities/ideation.md#essentials-for-client-side), viene visualizzato il componente `Ideation`:
 
 ![ideazione](assets/ideation.png)
 
 ### Configurazione di un&#39;idea {#configuring-an-ideation}
 
-Selezionate il `Ideation` componente inserito a cui accedere e selezionate l’ `Configure` icona che apre la finestra di dialogo di modifica.
+Selezionare il componente `Ideation` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
 
 ![configure-new](assets/configure-new.png)
 
 ![ideation-settings](assets/ideation-settings.png)
 
-#### scheda Impostazioni {#settings-tab}
+#### Scheda Impostazioni {#settings-tab}
 
-Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per idee e commenti:
+Nella scheda **[!UICONTROL Impostazioni]**, specificate le impostazioni per idee e commenti:
 
 * **Consenti miniatura allegato**
 * **Dimensione max miniatura allegato**
@@ -70,7 +70,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 * **Blocca i contenuti generati dagli utenti in modalità di modifica Creazione**
 * **Titolo ideazione**
 
-* Titolo visualizzato per l’idea. Default is `Ideation`.
+* Titolo visualizzato per l’idea. Il valore predefinito è `Ideation`.
 * **Descrizione ideazione**
 
    Descrizione da visualizzare come sottotitolo per l’idea. Il valore predefinito non è una descrizione.
@@ -93,7 +93,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 * **Consenti assegnazione tag**
 
-   Se questa opzione è selezionata, consentire ai membri di aggiungere etichette di tag al proprio post (consultate la scheda Campo **** tag ). Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consentire ai membri di aggiungere etichette di tag al proprio post (vedere la scheda **[!UICONTROL Campo tag]**). Il valore predefinito è deselezionato.
 
 * **Consenti caricamenti file**
 
@@ -101,11 +101,11 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 * **Dimensione file massima**
 
-   Pertinente solo se `Allow File Uploads` è controllato. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
+   Rilevante solo se è selezionato `Allow File Uploads`. Questo campo limita la dimensione (in byte) di un file caricato. Il valore predefinito è 104857600 (10 Mb).
 
 * **Tipi di file consentiti**
 
-   Pertinente solo se `Allow File Uploads` è controllato. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+   Rilevante solo se è selezionato `Allow File Uploads`. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, non sarà possibile caricare quelli non specificati. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
 
 * **Dimensione massima per file immagine allegato**
 
@@ -125,11 +125,11 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 * **Consenti Segui**
 
-   Se questa opzione è selezionata, includete la seguente funzione per i post di idee, che consente ai membri di ricevere [notifiche](/help/communities/notifications.md) sui nuovi post. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, includete la seguente funzione per i post di idee, che consente ai membri di ricevere [notifiche](/help/communities/notifications.md) di nuovi post. Il valore predefinito è deselezionato.
 
 * **Consenti iscrizioni e-mail**
 
-   Se questa opzione è attivata, consentite ai membri di ricevere notifiche sui nuovi post via e-mail ([iscrizione](/help/communities/subscriptions.md)). Richiede `Allow Following` di essere selezionato e configurato [per l’](/help/communities/email.md)e-mail. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, consentire ai membri di ricevere notifiche sui nuovi post via e-mail ([subscription](/help/communities/subscriptions.md)). È necessario che `Allow Following` sia selezionato e che [e-mail sia configurato](/help/communities/email.md). Il valore predefinito è deselezionato.
 
 * **Consenti votazione**
 
@@ -137,13 +137,13 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 * **Visualizza badge**
 
-   Se questa opzione è selezionata, vengono visualizzati [i simboli](/help/communities/implementing-scoring.md) guadagnati e assegnati con l&#39;idea di un membro. Il valore predefinito è deselezionato.
+   Se questa opzione è attivata, vengono visualizzati i simboli guadagnati e assegnati [con l&#39;idea di un membro. ](/help/communities/implementing-scoring.md) Il valore predefinito è deselezionato.
 
 * **Non ricevere risposte sulla pagina di elenco**
 
 * **Consenti contenuto in primo piano**
 
-   Se questa opzione è selezionata, l’idea può essere identificata come contenuto [](/help/communities/featured.md)disponibile. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, l&#39;idea può essere identificata come [contenuto in evidenza](/help/communities/featured.md). Il valore predefinito è deselezionato.
 
 * **Abilita menzione**
 * **Max menzioni**
@@ -151,7 +151,7 @@ Nella scheda **[!UICONTROL Impostazioni]** , specificate le impostazioni per ide
 
 #### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda Moderazione **** utente, specificate le modalità di gestione delle idee e dei commenti pubblicati (contenuto generato dall’utente). Per ulteriori informazioni, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Nella scheda **[!UICONTROL Moderazione utente]**, specificate in che modo vengono gestiti le idee e i commenti pubblicati (contenuto generato dall&#39;utente). Per ulteriori informazioni, vedere [Moderazione dei contenuti generati dall&#39;utente](/help/communities/moderate-ugc.md).
 
 * **Rifiuta post**
 
@@ -183,37 +183,37 @@ Nella scheda Moderazione **** utente, specificate le modalità di gestione delle
 
 #### Scheda Campo tag {#tag-field-tab}
 
-Nella scheda Campo **** tag, i tag che possono essere applicati, se consentiti nella scheda **[!UICONTROL Impostazioni]** , sono limitati in base agli spazi dei nomi selezionati.
+Nella scheda **[!UICONTROL Tag field]** (Campo tag), i tag che possono essere applicati, se consentiti nella scheda **[!UICONTROL Settings]** (Impostazioni), sono limitati in base agli spazi dei nomi scelti.
 
 * **Namespace consentiti**
 
-   Pertinente se `Allow Tagging` è selezionato sotto la scheda **[!UICONTROL Impostazioni]** . I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L&#39;elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
+   Pertinente se `Allow Tagging` è selezionato nella scheda **[!UICONTROL Settings]**. I tag che possono essere applicati sono limitati a quelli all&#39;interno delle categorie dello spazio nomi selezionate. L’elenco degli spazi dei nomi include &quot;Tag standard&quot; (lo spazio dei nomi predefinito) e &quot;Includi tutti i tag&quot;. Il valore predefinito non è selezionato, il che significa che tutti gli spazi dei nomi sono consentiti.
 
 * **Limite di suggerimenti**
 
-   Immettete il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore pari a **-1** non indica alcun limite. Il valore predefinito è 0.
+   Immettete il numero di tag da visualizzare come suggerimento al membro che invia il messaggio al forum. Un valore di **-1** non indica alcun limite. Il valore predefinito è 0.
 
-#### Scheda Impostazioni ordinamento {#sort-settings-tab}
+#### Scheda Ordina impostazioni {#sort-settings-tab}
 
-Nella scheda **[!UICONTROL Impostazioni]** ordinamento, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
+Nella scheda **[!UICONTROL Ordina impostazioni]**, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
 
 * **Ordina per**
 
-   Seleziona tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
+   Seleziona tutte le selezioni di ordinamento consentite: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Il valore predefinito è `Newest, Oldest, Last Updated`.
 
 * **Imposta come predefinito**
 
-   Estrai per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Default is `Newest`.
+   Estrai per selezionare una delle opzioni di ordinamento selezionate da visualizzare come predefinita. Il valore predefinito è `Newest`.
 
 * **Seleziona le opzioni di tempo per l&#39;ordinamento Analytics**
 
-   Per selezionare una delle due opzioni, trascinate verso il basso `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Default is `All`.
+   Per selezionare una delle `All, Last 24 Hours, Last 7 Days, Last 30 Days`, scendere verso il basso. Il valore predefinito è `All`.
 
-## Esperienza dei visitatori del sito {#site-visitor-experience}
+## Esperienza visitatori del sito {#site-visitor-experience}
 
-### Creazione di Idea {#creating-idea}
+### Creazione di un&#39;idea {#creating-idea}
 
-Come per tutte le funzioni Community, se non è stato effettuato l’accesso, un visitatore del sito può solo leggere idee e visualizzare altre opinioni (tramite commenti e voti/clic).
+Come per tutte le funzioni di Community, se non è stato effettuato l’accesso, un visitatore del sito può solo leggere idee e visualizzare altre opinioni (tramite commenti e voti).
 
 Una volta effettuato l’accesso, un membro può creare una nuova idea.
 
@@ -221,11 +221,11 @@ Una volta effettuato l’accesso, un membro può creare una nuova idea.
 
 Prima di inviare l&#39;idea, è possibile salvare una bozza.
 
-Selezionando il `Save as Draft` pulsante, viene salvata una bozza.
+Selezionando il pulsante `Save as Draft`, viene salvata una bozza.
 
 ![save-idea](assets/save-idea.png)
 
-Quando visualizzate le bozze salvate nella `My Drafts` scheda, selezionate `Read More` di nuovo la modalità di modifica:
+Quando visualizzate le bozze salvate nella scheda `My Drafts`, selezionate `Read More` per rientrare in modalità di modifica:
 
 ![edit-idea](assets/edit-idea.png)
 
@@ -239,6 +239,6 @@ Una volta pubblicata l&#39;idea, altri membri possono accedere, aprire l&#39;ide
 
 Ulteriori informazioni sono disponibili nella pagina [Ideation Essentials](/help/communities/ideation.md) per gli sviluppatori.
 
-Per la moderazione degli argomenti e dei commenti pubblicati, consultate [Moderazione del contenuto](/help/communities/moderate-ugc.md)generato dall&#39;utente.
+Per la moderazione degli argomenti e dei commenti pubblicati, vedere [Moderazione dei contenuti generati dall&#39;utente](/help/communities/moderate-ugc.md).
 
-Per assegnare tag agli argomenti e ai commenti inviati, consultate [Assegnazione di tag ai contenuti](/help/communities/tag-ugc.md)generati dagli utenti.
+Per assegnare tag agli argomenti e ai commenti inviati, consultate [Assegnazione di tag ai contenuti generati dall&#39;utente](/help/communities/tag-ugc.md).
