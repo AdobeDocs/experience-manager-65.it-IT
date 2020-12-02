@@ -12,6 +12,9 @@ discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 96%
 
 ---
 
@@ -62,7 +65,7 @@ Questo documento descrive le nozioni di base per la creazione di newsletter in A
 
    ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
 
-1. Fate clic su **Crea**.
+1. Fai clic su **Crea**.
 
 1. Si apre automaticamente una nuova finestra di dialogo in cui puoi inserire le proprietà della newsletter.
 
@@ -130,7 +133,7 @@ Per personalizzare una newsletter e simularne l’aspetto risultante:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Prima di inviare le newsletter, controllate la configurazione OSGi per Day CQ Link Externalizer all&#39;indirizzo `https://localhost:4502/system/console/configMgr`.
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l’operazione non può essere completata se si cambia la porta per l’esecuzione dell’istanza.
 
@@ -179,7 +182,7 @@ Per personalizzare le impostazioni della newsletter:
 
 1. Seleziona un **Elenco destinatari predefiniti** dall’elenco a discesa.
 
-1. Fai clic su **OK**. 
+1. Fai clic su **OK**.
 
    Quando si effettua una prova rapida della newsletter o la si invia, i destinatari ricevono un messaggio e-mail con l’indirizzo e-mail e l’oggetto specificati.
 
@@ -218,7 +221,7 @@ Per effettuare una prova rapida della newsletter:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Prima di inviare le newsletter, controllate la configurazione OSGi per Day CQ Link Externalizer all&#39;indirizzo `https://localhost:4502/system/console/configMgr`.
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l’operazione non può essere completata se si cambia la porta per l’esecuzione dell’istanza.
 
@@ -253,7 +256,7 @@ Per inviare una newsletter dalla campagna:
    >
    >Accertatevi di essere tra i destinatari, in modo da verificare personalmente che la newsletter arrivi a destinazione.
 
-### Invio delle newsletter da un elenco {#sending-newsletters-from-a-list}
+### Invio delle newsletter da un elenco  {#sending-newsletters-from-a-list}
 
 Per inviare una newsletter da un elenco:
 
@@ -283,7 +286,7 @@ Per inviare una newsletter da un elenco:
 
 Questa sezione descrive come registrarsi ad una newsletter.
 
-### Registrazione a una newsletter {#subscribing-to-a-newsletter-1}
+### Registrazione a una newsletter  {#subscribing-to-a-newsletter-1}
 
 Per effettuare la sottoscrizione a una newsletter (utilizzando come esempio il sito Web Geometrixx):
 
