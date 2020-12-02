@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 15%
 
 ---
 
 
-# Deploying Best Practices{#deploying-best-practices}
+# Implementazione delle best practice{#deploying-best-practices}
 
-Le best practice di distribuzione descrivono come implementare o mantenere AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
+Le best practice di distribuzione descrivono come implementare o mantenere AEM nel modo più efficiente ed efficace possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 
 Nelle aree seguenti è disponibile la documentazione relativa all&#39;implementazione e alla manutenzione delle procedure ottimali e delle raccomandazioni:
 
@@ -36,7 +39,7 @@ Nelle tabelle che seguono è riportata una descrizione di ciascun documento con 
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) è un archivio di contenuti gerarchici scalabile e performante, alla base di AEM.
+[](/help/sites-deploying/platform.md) Oakis, un archivio di contenuti gerarchici scalabile e performante che è alla base di AEM.
 
 <table>
  <tbody>
@@ -58,7 +61,7 @@ Nelle tabelle che seguono è riportata una descrizione di ciascun documento con 
   <tr>
    <td>Opzioni DataStore</td>
    <td><a href="/help/sites-deploying/data-store-config.md">Configurazione di nodi e archivi dati</a></td>
-   <td>Questo documento descrive le procedure ottimali per la memorizzazione di dati binari e nodi di contenuto. Include informazioni sull'utilizzo dell'archivio dati Amazon S3.</td>
+   <td>Questo documento descrive le procedure ottimali per la memorizzazione di dati binari e nodi di contenuto. Include informazioni sull'utilizzo  archivio dati Amazon S3.</td>
   </tr>
   <tr>
    <td>Cerca in OAK</td>
@@ -70,17 +73,17 @@ Nelle tabelle che seguono è riportata una descrizione di ciascun documento con 
 
 ## Communities {#communities}
 
-AEM Communities semplifica la creazione e la gestione di community locali. Le best practice per AEM Communities sono descritte di seguito:
+ AEM Communities semplifica la creazione e la gestione di community locali. Le best practice per  AEM Communities sono descritte di seguito:
 
-[Archivio](/help/communities/working-with-srp.md) di contenuti community - Consente di esaminare la nuova funzione di memorizzazione condivisa per i contenuti generati dall&#39;utente (UGC) e le considerazioni per la scelta della [topologia](/help/communities/topologies.md)sottostante.
+[Archivio](/help/communities/working-with-srp.md)  di contenuti community: descrive la nuova funzione di memorizzazione condivisa per i contenuti generati dall&#39;utente (UGC) e le considerazioni per la scelta della  [topologia](/help/communities/topologies.md) sottostante.
 
-[Implementazioni consigliate per le community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descrive le distribuzioni consigliate per community. |
+[Implementazioni consigliate per le community](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - Descrive le distribuzioni consigliate per community. |
 
 ## Interfaccia {#ui}
 
 Le best practice relative all&#39;interfaccia utente sono descritte qui:
 
-[Raccomandazioni in merito all&#39;interfaccia utente per i clienti](/help/sites-deploying/ui-recommendations.md)
+[Interfaccia utente Recommendations per clienti](/help/sites-deploying/ui-recommendations.md)
 
 AEM dispone attualmente di due interfacce: Interfaccia classica e touch nella stessa versione. Pertanto, i clienti devono prendere una decisione su quale utilizzo utilizzare durante l&#39;implementazione del progetto. Questo documento è inteso a facilitare la scelta giusta.
 
@@ -93,7 +96,7 @@ Le best practice relative alle prestazioni sono elencate di seguito:
   <tr>
    <td>Best practice per la garanzia della qualità</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best practice per la garanzia della qualità</a></td>
-   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test di prestazioni nell’ambiente di <em>pubblicazione</em> . Ciò è particolarmente interessante per ingegneri di QA, project manager e amministratori di sistema.</td>
+   <td>Panoramica standardizzata dei problemi relativi alla definizione di un concetto di test specifico per i test di prestazioni nell'ambiente <em>publish</em>. Ciò è particolarmente interessante per ingegneri di QA, project manager e amministratori di sistema.</td>
   </tr>
   <tr>
    <td>Utilizzo di Dispatcher con una rete CDN</td>
