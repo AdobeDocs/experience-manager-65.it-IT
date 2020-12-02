@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # Gestione della corrispondenza | Gestione dei dati utente {#correspondence-management-handling-user-data}
 
- AEM Forms Correspondence Management consente di creare, gestire e semplificare le corrispondenze dei clienti sicure e personalizzate. Offre agli utenti aziendali un&#39;interfaccia utente intuitiva per creare le corrispondenze utilizzando blocchi di contenuto e elementi multimediali già approvati. Per ulteriori informazioni sulla creazione delle corrispondenze, consultate [Creare corrispondenza](/help/forms/using/create-correspondence.md).
+ AEM Forms Correspondence Management consente di creare, gestire e semplificare le corrispondenze dei clienti sicure e personalizzate. Offre agli utenti aziendali un&#39;interfaccia utente intuitiva per creare le corrispondenze utilizzando blocchi di contenuto e elementi multimediali già approvati. Per ulteriori informazioni sulla creazione delle corrispondenze, vedere [Crea corrispondenza](/help/forms/using/create-correspondence.md).
 
 Quando un utente aziendale o un agente salva una corrispondenza come bozza o la invia, viene salvata un&#39;istanza di lettera nell&#39;archivio AEM. L’istanza letter include i dati e i metadati della corrispondenza.
 
 >[!NOTE]
 >
->AEM 6.5 Forms, la gestione della corrispondenza non è disponibile. Se state effettuando l’aggiornamento da una versione precedente di AEM Forms , installate il pacchetto di compatibilità ed eseguite la migrazione delle risorse di gestione della corrispondenza per continuare a utilizzarle in AEM Forms 6.5. Per ulteriori informazioni, consultate [Pacchetto](/help/forms/using/compatibility-package.md)Compatibilità.
+>AEM 6.5 Forms, la gestione della corrispondenza non è disponibile. Se state effettuando l’aggiornamento da una versione precedente di AEM Forms , installate il pacchetto di compatibilità ed eseguite la migrazione delle risorse di gestione della corrispondenza per continuare a utilizzarle in AEM Forms 6.5. Per ulteriori informazioni, vedere [Pacchetto di compatibilità](/help/forms/using/compatibility-package.md).
 
-## Archivio dati utente e data {#data}
+## Archivio dati utente {#data}
 
-La gestione della corrispondenza memorizza i dati per le bozze e le lettere inviate AEM repository solo se l&#39;istanza di pubblicazione è configurata per gestire le istanze di lettere. Per ulteriori informazioni sulla configurazione, consultate Proprietà [di configurazione di](/help/forms/using/cm-configuration-properties.md)Correspondence Management.
+La gestione della corrispondenza memorizza i dati per le bozze e le lettere inviate AEM repository solo se l&#39;istanza di pubblicazione è configurata per gestire le istanze di lettere. Per ulteriori informazioni sulla configurazione, vedere [Proprietà di configurazione della gestione della corrispondenza](/help/forms/using/cm-configuration-properties.md).
 
 A seconda della persistenza dell&#39;archivio dati configurata per la distribuzione AEM, le bozze e i dati di corrispondenza inviati vengono memorizzati nelle seguenti posizioni.
 
@@ -57,7 +57,7 @@ Nel percorso AEM repository specificato sopra:
 * `[node-id]` è l’ID assegnato alla cartella contenente la lettera
 * `[letter-instance-name]` è il nome specificato al momento del salvataggio o dell&#39;invio di una lettera
 
-Sotto il nodo [letter-instance-name] , viene creata la seguente struttura di nodi e i dati per ogni istanza letter vengono memorizzati nell&#39;archivio AEM:
+Sotto il nodo [letter-instance-name] viene creata la seguente struttura di nodi e i dati per ogni istanza di lettera vengono memorizzati nell&#39;archivio AEM:
 
 | Node | Descrizione |
 |---|---|
@@ -72,11 +72,11 @@ Sotto il nodo [letter-instance-name] , viene creata la seguente struttura di nod
 
 ### Accesso ai dati utente {#access-user-data}
 
-La gestione della corrispondenza fornisce API che potete utilizzare per trovare e accedere alle istanze di bozza e lettera inviata. Utilizzando le API, potete trovare e aprire le istanze di lettere utilizzando l&#39;ID istanza lettera o l&#39;utente che ha salvato o inviato la corrispondenza. Per ulteriori informazioni, consultate [API per accedere alle istanze](/help/forms/using/cm-apis-to-access-letter-instances.md)di lettere.
+La gestione della corrispondenza fornisce API che potete utilizzare per trovare e accedere alle istanze di bozza e lettera inviata. Utilizzando le API, potete trovare e aprire le istanze di lettere utilizzando l&#39;ID istanza lettera o l&#39;utente che ha salvato o inviato la corrispondenza. Per ulteriori informazioni, vedere [API per accedere alle istanze di lettere](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-In alternativa, è possibile passare all&#39;istanza della lettera AEM repository utilizzando CRX DELite. Per informazioni sui dati archiviati e sulla posizione dell&#39;archivio, vedere Archivio [](/help/forms/using/correspondence-management-handling-user-data.md#data) dati e archivi dati.
+In alternativa, è possibile passare all&#39;istanza della lettera AEM repository utilizzando CRX DELite. Per informazioni sui dati archiviati e sulla posizione dell&#39;archivio, vedere [Archivio dati utente e data store](/help/forms/using/correspondence-management-handling-user-data.md#data).
 
-### Eliminare i dati utente {#delete-user-data}
+### Elimina dati utente {#delete-user-data}
 
 Per trovare un&#39;istanza della lettera contenente i dati di un utente specifico, è possibile:
 
