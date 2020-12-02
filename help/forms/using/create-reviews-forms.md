@@ -1,8 +1,8 @@
 ---
 title: Creazione e gestione di revisioni per le risorse nei moduli
 seo-title: Creazione e gestione di revisioni per le risorse nei moduli
-description: 'Una revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo. '
-seo-description: 'Una revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo. '
+description: 'Una revisione è un meccanismo che consente a uno o più revisori di inserire commenti su una risorsa disponibile in un modulo. '
+seo-description: 'Una revisione è un meccanismo che consente a uno o più revisori di inserire commenti su una risorsa disponibile in un modulo. '
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,6 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ## Recensione {#review}
 
-Una revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo.
+Una revisione è un meccanismo che consente a uno o più revisori di inserire commenti su una risorsa disponibile in un modulo.
 
 ## Impostazione di una revisione {#setting-up-a-review}
 
-1. Passare alla scheda Moduli e selezionare un modulo.
-1. Se la risorsa non dispone di una revisione in corso, nella barra delle azioni viene visualizzata l’icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) . Fate clic sull’icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Passare alla scheda Forms e selezionare un modulo.
+1. Se la risorsa non dispone di una revisione in corso, nella barra delle azioni viene visualizzata l&#39;icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Fare clic sull&#39;icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Inserite le seguenti informazioni:
 
    * Nome revisione: Obbligatorio, può contenere caratteri alfanumerici, trattini o caratteri di sottolineatura.
@@ -53,11 +56,11 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 >
 >È possibile modificare solo le revisioni in corso. Le revisioni complete non possono essere modificate.
 
-1. Passare alla scheda Moduli e selezionare un modulo.
+1. Passare alla scheda Forms e selezionare un modulo.
 
-1. Se una risorsa dispone di una revisione in corso e l’utente è l’iniziatore della revisione, nella barra delle azioni viene visualizzata un’icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) . Solo l&#39;iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
+1. Se una risorsa dispone di una revisione in corso e l&#39;utente è l&#39;iniziatore della revisione, nella barra delle azioni viene visualizzata l&#39;icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Solo l&#39;iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
 
-   Fate clic su Gestisci revisione ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)commenticon.
+   Fare clic sull&#39;icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
    Per gli utenti diversi dall&#39;iniziatore, l&#39;icona Gestisci revisione è disabilitata.
 
@@ -81,7 +84,7 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 
 ### Azioni che si verificano quando una revisione viene modificata {#actions-that-occur-when-a-review-is-modified}
 
-Questa sezione descrive cosa accade sulla fine revisione / modifica:
+Questa sezione descrive cosa accade in Rivedi fine / modifica:
 
 1. Se la descrizione Review viene modificata, viene aggiornata l&#39;attività corrispondente dei revisori e dell&#39;iniziatore.
 1. Se la scadenza Rivedi viene modificata, l&#39;attività corrispondente per i revisori viene aggiornata con la nuova data.
