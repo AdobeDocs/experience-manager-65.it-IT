@@ -48,8 +48,8 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-## Copyright, licenses, and disclaimers {#copyright-licenses-and-disclaimers}
+## Copyright, licenze e clausole di non responsabilità {#copyright-licenses-and-disclaimers}
 
-Per ulteriori informazioni, consultate [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+Per ulteriori informazioni, vedere [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
-Notice of third party licenses: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Avviso di titoli di terzi: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
