@@ -107,9 +107,9 @@ Se una pagina fa parte di uno o più [flussi di lavoro](/help/sites-authoring/wo
 
 La notifica riporta il flusso di lavoro in esecuzione sulla pagina. Se l’utente è coinvolto nella fase attuale del flusso di lavoro, sono anche disponibili opzioni per [modificare lo stato del flusso di lavoro](/help/sites-authoring/workflows-participating.md) e ottenere ulteriori informazioni sul flusso di lavoro. Per esempio:
 
-* **Completa** - Apre la finestra di dialogo **Completa elemento** di lavoro
+* **Completa**  - Apre la finestra di dialogo  **Completa** workitemdialog
 
-* **Delega** - Apre la finestra di dialogo **Completa elemento** di lavoro
+* **Delega**  - Apre la finestra di dialogo  **Completa** workitemdialog
 
 * **Visualizza dettagli**: apre la finestra **Dettagli** del flusso di lavoro
 
@@ -166,7 +166,7 @@ Il segnaposto del componente è un indicatore che mostra dove verrà posizionato
 
 1. Il componente selezionato verrà aggiunto in fondo alla pagina. [Modifica](#editmovecopypastedelete) il componente come preferisci.
 
-### Inserimento di un componente utilizzando il browser Risorse   {#inserting-a-component-using-the-assets-browser}
+### Inserimento di un componente utilizzando il browser Risorse    {#inserting-a-component-using-the-assets-browser}
 
 È possibile aggiungere un nuovo componente alla pagina anche trascinando una risorsa dal [browser Risorse](/help/sites-authoring/author-environment-tools.md#assets-browser). Questo determina la creazione automatica di un nuovo componente del tipo appropriato (e che include la risorsa).
 
@@ -312,7 +312,7 @@ Esistono due metodi per aggiungere e/o modificare contenuti nei componenti:
 * Apri la [finestra di dialogo del componente per la modifica](#component-edit-dialog).
 * Per aggiungere direttamente contenuti [trascina una risorsa](#draganddropintocomponent) dal browser risorse.
 
-### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
+### Finestra di dialogo di modifica del componente    {#component-edit-dialog}
 
 Puoi aprire un componente per modificarne il contenuto utilizzando l’icona [Modifica (matita) nella barra degli strumenti del componente](#edit-configure-copy-cut-delete-paste).
 
@@ -355,7 +355,7 @@ Per tipi di componenti specifici è possibile trascinare risorse dal browser ris
 | Video | Flash |
 | Frammento di contenuto | Frammento di contenuto |
 
-## Modifica (contenuto) - Modalità a schermo intero {#edit-content-full-screen-mode}
+## Modifica (contenuto) - Modalità a schermo intero  {#edit-content-full-screen-mode}
 
 Per tutti i componenti è possibile accedere alla (e uscire dalla) modalità a tutto tramite:
 
@@ -454,11 +454,11 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 Se la pagina è basata su un [modello modificabile](/help/sites-authoring/templates.md#editable-and-static-templates), puoi facilmente passare [all’editor modelli](/help/sites-authoring/templates.md#editing-templates-template-authors) selezionando **Modifica modello** nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information).
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+Se la pagina è basata su un [modello statico](/help/sites-authoring/templates.md#editable-and-static-templates), è possibile passare alla [modalità Progettazione](/help/sites-authoring/default-components-designmode.md) utilizzando il [selettore modalità pagina](/help/sites-authoring/author-environment-tools.md#page-modes) sulla barra degli strumenti per attivare/disattivare i componenti da utilizzare sulla pagina.
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-authoring/basic-handling.md#column-view) o [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view).
 
-## Stato della Live Copy   {#live-copy-status}
+## Stato della Live Copy    {#live-copy-status}
 
 La [modalità di pagina Stato Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) consente di visualizzare una panoramica rapida dello stato della live copy e di quali componenti sono ereditati o no:
 
@@ -473,7 +473,7 @@ Esempio:
 
 Le [Annotazioni](/help/sites-authoring/annotations.md) consentono a revisori e altri autori di fornire un riscontro sui contenuti. Spesso sono utilizzate a scopo di revisione e di convalida.
 
-## Anteprima delle pagine   {#previewing-pages}
+## Anteprima delle pagine    {#previewing-pages}
 
 Esistono due opzioni per visualizzare in anteprima una pagina:
 
@@ -561,9 +561,9 @@ Le icone seguenti consentono di annullare o ripristinare un’azione. Vengono vi
 
 >[!NOTE]
 >
->The [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` is also availalbe to undo page edit actions.
+>Per annullare le azioni di modifica della pagina è inoltre disponibile la [scelta rapida da tastiera](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z`.
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>La scelta rapida da tastiera `Ctrl-Y` è disponibile anche per ripristinare le azioni di modifica della pagina.
 
 >[!NOTE]
 >
