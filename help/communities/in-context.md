@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# Moderazione In-Context {#in-context-moderation}
+# Moderazione contestuale {#in-context-moderation}
 
-Per i AEM Communities, la moderazione può essere eseguita dagli amministratori e dai membri della community trusted direttamente nella pagina pubblicata in cui è stato pubblicato il contenuto della community.
+Per  AEM Communities, la moderazione può essere eseguita dagli amministratori e dai membri della community trusted direttamente sulla pagina pubblicata in cui è stato pubblicato il contenuto della community.
 
-Quando si utilizza una console [di](moderation.md)moderazione, le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l&#39;accesso a ulteriori azioni di moderazione disponibili durante la moderazione nel contesto.
+Quando si utilizza una [console di moderazione](moderation.md), le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l&#39;accesso ad ulteriori azioni di moderazione disponibili durante la moderazione nel contesto.
 
 ## Azioni di moderazione {#moderation-actions}
 
-Per una descrizione delle azioni di [moderazione, visita la panoramica sulla moderazione](moderate-ugc.md#moderation-actions).
+Per una descrizione delle [azioni di moderazione](moderate-ugc.md#moderation-actions) visita la panoramica della moderazione.
 
-## Interfaccia utente per moderazione {#moderation-ui}
+## Interfaccia utente di moderazione {#moderation-ui}
 
 L’interfaccia utente presentata al moderatore nell’istanza di pubblicazione è contenuta nella finestra di dialogo per la pubblicazione e la gestione del contenuto generato dall’utente (UGC). Gli elementi dell’interfaccia utente sono determinati dallo stato del visitatore del sito, a prescindere dal fatto che si tratti...
 
@@ -40,13 +40,13 @@ L’interfaccia utente presentata al moderatore nell’istanza di pubblicazione 
 
 ## Esempio {#example}
 
-Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato durante la [Guida introduttiva ai AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare varie attività di moderazione nell’ambiente di pubblicazione, come illustrato di seguito.
+Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato quando [Getting Started with  AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare varie attività di moderazione nell&#39;ambiente di pubblicazione, come illustrato di seguito.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro di fiducia della comunità aggiungendo lui al gruppo di moderatori-coinvolti nella comunità durante la creazione del sito.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo di membri della comunità utilizzando la console [](members.md)Membri.
+Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo di membri della comunità utilizzando la [console Membri](members.md).
 
-Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestione di utenti e gruppi](users.md)di utenti.
+Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestione di utenti e gruppi di utenti](users.md).
 
 ### Creare i post del forum {#create-the-forum-posts}
 
@@ -97,7 +97,7 @@ Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubb
 
 ### Nuovo membro (#4) {#new-member}
 
-All’autore, accedete come amministratore e aggiungete Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo di membri della comunità che utilizzano la console [](members.md)Membri, quindi disconnettetevi.
+All&#39;autore, accedete come amministratore e aggiungete Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo di membri della community-interazione tramite la [console Membri](members.md), quindi disconnettetevi.
 
 Al momento della pubblicazione, accedete come Boyd Larsen e accedete al thread selezionando `Forum`, quindi `Read more` per il post di colibrì.
 
@@ -113,7 +113,7 @@ Disconnetti
 
 ![membro della community-forum](assets/community-forum-member.png)
 
-### Administrator (#3) {#administrator}
+### Amministratore (#3) {#administrator}
 
 Accedete come amministratore (amministratore) e accedete al thread selezionando Forum, quindi Ulteriori informazioni su un post.
 
@@ -124,9 +124,9 @@ Avviso:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Selezionate la voce di menu Amministrazione per accedere alla console [di](moderation.md) moderazione dall’ambiente di pubblicazione.
+Selezionate la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente di pubblicazione.
 
-Tenere presente che, per un amministratore, tutto il contenuto modificabile è visibile, non solo il contenuto del sito della community Geometrixx Engage.
+Tenere presente che, per un amministratore, tutto il contenuto modificabile è visibile, non solo il contenuto del sito della community di Geometrixx Engage.
 
 Il filtro di ricerca è un pannello laterale che attiva o disattiva l’apertura o la chiusura.
 
@@ -147,11 +147,11 @@ Avviso:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Selezionate la voce di menu Amministrazione per accedere alla console [di](moderation.md) moderazione dall’ambiente di pubblicazione.
+Selezionate la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente di pubblicazione.
 
-Per un moderatore della community, è visibile solo il contenuto modificabile del sito della community Geometrixx Engage.
+Per un moderatore della community, è visibile solo il contenuto modificabile presente nel sito della community di Geometrixx Engage.
 
-Il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine è visualizzata con la barra laterale di ricerca disattivata e disattivata), ma non può accedere ad altre console AEM.
+Notate che il moderatore della community dispone delle stesse opzioni dell&#39;amministratore (l&#39;immagine è con la barra laterale di ricerca attivata e disattivata), ma non ha accesso ad altre console AEM.
 
 Disconnetti.
 
