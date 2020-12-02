@@ -1,6 +1,6 @@
 ---
-title: Best practice
-seo-title: Best practice
+title: 'Best practice  '
+seo-title: 'Best practice  '
 description: Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 seo-description: Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 65%
 
 ---
 
 
-# Best practice{#best-practices}
+# Best practice  {#best-practices}
 
 Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
 
 La documentazione relativa alle best practice disponibile per le aree seguenti:
 
-* [Risorse](#assets)
+* [Assets](#assets)
 * [Sites](#sites)
-* [Moduli](#forms)
+* [Forms](#forms)
 
 Per le best practice relative ad amministrazione, distribuzione e manutenzione o sviluppo, consulta uno dei documenti elencati di seguito:
 
@@ -33,7 +36,7 @@ Per le best practice relative ad amministrazione, distribuzione e manutenzione o
 
 Nelle tabelle che seguono è riportata una descrizione di ciascun documento con il collegamento relativo.
 
-## Risorse {#assets}
+## Assets {#assets}
 
 Le best practice relative alle risorse, inclusa la funzionalità per i file multimediali dinamici e l’integrazione con i contenuti multimediali dinamici, sono descritte nei seguenti argomenti:
 
@@ -62,14 +65,14 @@ Le best practice relative alle risorse, inclusa la funzionalità per i file mult
  </tbody>
 </table>
 
-## Siti {#sites}
+## Sites {#sites}
 
 Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le best practice illustrate di seguito:
 
-Authoring: Ambiente e strumenti [di](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) authoring - Fornisce una panoramica su come creare le pagine.
+Authoring: [Ambiente e strumenti di authoring](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornisce una panoramica su come creare le pagine.
 
 ## Forms {#forms}
 
-Moduli adattivi: Procedure [ottimali per l&#39;utilizzo dei moduli](/help/forms/using/adaptive-forms-best-practices.md) adattivi - Illustra le procedure ottimali per l&#39;impostazione, la creazione e la personalizzazione dei moduli adattivi.
+Moduli adattivi: [Procedure ottimali per l&#39;utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md) - Illustra le procedure ottimali per l&#39;impostazione, la creazione e la personalizzazione dei moduli adattivi.
 
-Moduli HTML5: Procedure [ottimali per la progettazione di moduli](/help/forms/using/best-practices-for-html5-forms.md) HTML5 - Illustra le procedure ottimali per l’elaborazione del layout e della progettazione dei moduli HTML5.
+Moduli HTML5: [Procedure ottimali per la progettazione di moduli HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Illustra le procedure ottimali per l&#39;elaborazione del layout e della progettazione dei moduli HTML5.
