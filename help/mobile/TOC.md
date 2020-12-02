@@ -17,25 +17,25 @@ ht-degree: 11%
 # Guida utente ad AEM 6.5 Mobile {#mobile}
 
 + [Panoramica della Guida utente per dispositivi mobili](home.md)
-+ Introduction to AEM Mobile {#introduction}
++ Introduzione a  AEM Mobile {#introduction}
    + [Guida introduttiva di AEM Mobile](getting-started-aem-mobile.md)
-   + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
+   + [ AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [App per dispositivi mobili](mobile-apps.md)
    + [AEM  Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
-   + [AEM Mobile - Preparazione GDPR](aem-mobile-gdpr-compliance.md)
+   + [ AEM Mobile - Preparazione GDPR](aem-mobile-gdpr-compliance.md)
    + [Sviluppo di app mobili](develop-mobile-apps.md)
-+ Creazione di un&#39;app di servizi on-demand {#authoring}
++ Creazione di app di servizi on-demand {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gestione dei contenuti](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Pubblica contenuto annullamento pubblicazione](mobile-on-demand-publishing-unpublishing.md)
-   + [AEM Mobile Application Dashboard](mobile-apps-ondemand-application-dashboard.md)
+   + [ AEM Mobile Application Dashboard](mobile-apps-ondemand-application-dashboard.md)
    + [Azioni di creazione e configurazione delle applicazioni](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gestione degli articoli](mobile-on-demand-managing-articles.md)
    + [Caricamento delle risorse condivise](mobile-on-demand-shared-resources.md)
    + [Configurazione cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestione dei banner](mobile-on-demand-managing-banners.md)
-+ Sviluppo di app di servizi on-demand {#developing}
-   + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
++ Sviluppo dell&#39;app dei servizi on-demand {#developing}
+   + [ AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [Modelli e componenti per app](app-templates-and-components1.md)
    + [Proprietà e nodi contenuto](content-properties.md)
    + [Creazione della configurazione di esportazione delle risorse condivise](creating-shared-resources-export-configuration.md)
@@ -49,8 +49,8 @@ ht-degree: 11%
    + [Content Services](developing-content-services.md)
    + [Distribuzione dei contenuti](develop-content-as-a-service.md)
 + Amministrazione dell&#39;app dei servizi on-demand {#administering}
-   + [AEM Mobile On-Demand](aem-mobile.md)
-   + [configurazione AEM Mobile](aem-mobile-setup.md)
+   + [ AEM Mobile On-Demand](aem-mobile.md)
+   + [ configurazione AEM Mobile](aem-mobile-setup.md)
    + [Configurazione di utenti e gruppi di utenti](aem-mobile-configure-users.md)
    + [Anteprima con verifica preliminare](aem-mobile-manage-ondemand-services.md)
    + [App per dispositivi mobili](administer-mobile-apps.md)
