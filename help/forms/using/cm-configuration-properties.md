@@ -1,8 +1,8 @@
 ---
 title: Proprietà di configurazione della gestione della corrispondenza
 seo-title: Proprietà di configurazione della gestione della corrispondenza
-description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
-seo-description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
+description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte dettagliatamente le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
+seo-description: In questo argomento viene illustrato come modificare Asset Composer con configurazioni specifiche della soluzione. In questo argomento vengono descritte dettagliatamente le proprietà che è possibile modificare, con descrizione, valori predefiniti e valori accettabili.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 3%
 
 ---
 
 
 # Proprietà di configurazione della gestione della corrispondenza {#correspondence-management-configuration-properties}
 
-Per configurare queste proprietà, aprite il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selezionate **Configurazioni** di gestione della corrispondenza.
+Per configurare queste proprietà, aprite il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selezionare **Configurazioni di gestione della corrispondenza**.
 
 Gestione corrispondenza ha le seguenti proprietà di configurazione:
 
@@ -31,19 +34,19 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
   <tr>
    <td><p>Rientro</p> </td>
    <td>Rientro sui moduli<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Numero qualsiasi</p> </td>
   </tr>
   <tr>
    <td>Larghezza minima</td>
    <td>Larghezza minima da applicare al campo punto elenco/numero quando si utilizzano elenchi numerati, ad eccezione dei numeri romani</td>
-   <td>8.0mm</td>
+   <td>8,0 mm</td>
    <td>Numero qualsiasi</td>
   </tr>
   <tr>
    <td><p>Larghezza minima numeri romani</p> </td>
    <td><p>Larghezza minima da applicare al campo punto elenco/numero quando si utilizzano i numeri romani</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Numero qualsiasi</p> </td>
   </tr>
   <tr>
@@ -152,16 +155,16 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
    <td><p>Formati di visualizzazione dei dati</p> </td>
    <td><p>Specifica il formato di visualizzazione specifico per le impostazioni internazionali per i dati</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>Formato modifica dati</p> </td>
    <td><p>Modificare il formato dei dati. Viene utilizzato quando si scrivono dati come Stringa o si analizzano dati da Stringa</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Gestisci istanze lettera su pubblicazione</p> </td>
+   <td><p>Gestisci istanze di lettere su Pubblica</p> </td>
    <td><p>Abilitare/disabilitare la funzionalità Gestisci lettere (applicabile solo per Publish Server)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -241,18 +244,18 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
   <tr>
    <td><p>Directory principale utente di CM</p> </td>
    <td><p>URL della cartella contenente tutte le risorse utente di Gestione corrispondenza</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Percorso cartella valido</p> </td>
   </tr>
   <tr>
    <td><p>Dimensione cache lettera</p> </td>
-   <td><p>Specificate il numero massimo di lettere da mantenere nella cache.</p> <p>Modificando questo valore si otterrà la pulizia della <code>in-memory</code> cache.</p> </td>
+   <td><p>Specificate il numero massimo di lettere da mantenere nella cache.</p> <p>Modificando questo valore si otterrà la pulizia della cache <code>in-memory</code>.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualsiasi valore numerico</p> </td>
   </tr>
   <tr>
    <td><p>Abilita cache lettere</p> </td>
-   <td><p>Abilitare/disabilitare la cache delle lettere.</p> <p>Modificando questo valore si otterrà la pulizia della <code>in-memory </code> cache.</p> </td>
+   <td><p>Abilitare/disabilitare la cache delle lettere.</p> <p>Modificando questo valore si otterrà la pulizia della cache <code>in-memory </code>.</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -264,7 +267,7 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td><p>Ricarica assistenza</p> </td>
-   <td><p>Attiva/Disattiva il supporto per il ricaricamento in lettere sottoposte a rendering sul lato server.</p> <p>La disabilitazione di questa opzione migliorerà le prestazioni di rendering delle lettere.</p> </td>
+   <td><p>Abilitare/disabilitare il supporto per il ricaricamento in lettere sottoposte a rendering sul lato server.</p> <p>La disattivazione di questa opzione migliorerà le prestazioni di rendering delle lettere.</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> <p> </p> </td>
   </tr>
@@ -283,12 +286,12 @@ Gestione corrispondenza ha le seguenti proprietà di configurazione:
   <tr>
    <td>Opzioni di compatibilità</td>
    <td>Opzioni di compatibilità del formato configname:configvalue separate da virgola.</td>
-   <td>acm.compatibleOptions</td>
+   <td>acm.compatibilityOptions</td>
    <td> </td>
   </tr>
   <tr>
    <td><p>Directory di debug </p> <p> </p> </td>
-   <td>Percorso cartella del file system per il debug. Se la directory non lo è, <code>exists</code>non verrà generato alcun dump di debug.</td>
+   <td>Percorso cartella del file system per il debug. Se la directory non è <code>exists</code>, non verrà generato alcun dump di debug.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>
