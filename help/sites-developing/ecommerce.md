@@ -12,6 +12,9 @@ discoiquuid: 612b45de-4505-4fc8-9f11-ae5a0952ed65
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 7e23cfaf8d61ee268bc6062f0b87a3306e1e18ce
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 3%
 
 ---
 
@@ -20,8 +23,8 @@ source-git-commit: 7e23cfaf8d61ee268bc6062f0b87a3306e1e18ce
 
 Il framework di integrazione include un livello di integrazione con un&#39;API. Questo consente di:
 
-* plug-in in un sistema eCommerce ed estrazione di dati di prodotto in AEM
-* creazione di componenti AEM per funzionalità di eCommerce, indipendentemente dallo specifico motore di eCommerce
+* collegare un sistema eCommerce ed estrarre i dati del prodotto in AEM
+* creazione di componenti AEM per funzionalità di e-commerce indipendenti dal motore eCommerce specifico
 
 Per ulteriori informazioni, vedere:
 
@@ -30,13 +33,13 @@ Per ulteriori informazioni, vedere:
 
 >[!NOTE]
 >
->Poiché il framework eCommerce può essere utilizzato con qualsiasi soluzione eCommerce, consulta [Sviluppo (generico)](/help/sites-developing/generic.md) per ulteriori informazioni sullo sviluppo delle possibilità.
+>Poiché il framework eCommerce può essere utilizzato con qualsiasi soluzione di eCommerce, per ulteriori informazioni sullo sviluppo delle possibilità vedi [Sviluppo (generico)](/help/sites-developing/generic.md).
 
 >[!NOTE]
 >
 >Per utilizzare il framework di integrazione con i provider di eCommerce esterni, è innanzitutto necessario installare i pacchetti richiesti. Per ulteriori informazioni, vedere [Distribuzione di eCommerce](/help/sites-deploying/ecommerce.md).
 >
->Per informazioni sui concetti e sulla gestione delle implementazioni eCommerce, consulta [Amministrazione di eCommerce](/help/sites-administering/ecommerce.md).
+>Per informazioni sui concetti e sulla gestione delle implementazioni eCommerce, consultate [Amministrazione di eCommerce](/help/sites-administering/ecommerce.md).
 
 ## Documentazione API {#api-documentation}
 
@@ -44,8 +47,8 @@ L&#39;API eCommerce è fornita dai pacchetti:
 
 `com.adobe.cq.commerce.*`
 
-Per ulteriori informazioni, consultate la documentazione [sulle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) API.
+Per ulteriori informazioni, consultare la [documentazione API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html).
 
 >[!NOTE]
 >
->Per un articolo completo che elenca tutti i passaggi necessari per creare un provider di eCommerce, consultate [Creazione di provider](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)di eCommerce Adobe Experience Manager 6.2 personalizzati.
+>Per un articolo completo che elenca tutti i passaggi necessari per creare un provider di eCommerce, consultate [Creazione di provider di eCommerce personalizzati per Adobe Experience Manager 6.2](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
