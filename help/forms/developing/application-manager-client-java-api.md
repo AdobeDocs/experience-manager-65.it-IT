@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Avvio rapido JavaAPI client Application Manager (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+# Avvio rapido JavaAPI client di Application Manager (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
 La seguente sezione Java API Quick Start(SOAP) è disponibile per il client Application Manager.
 
@@ -41,7 +41,7 @@ La seguente sezione Java API Quick Start(SOAP) è disponibile per il client Appl
 
 >[!NOTE]
 >
->Avvio rapido disponibile in Programmazione con  AEM Forms si basa sul server Forms implementato su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)di connessione.
+>Avvio rapido disponibile in Programmazione con  AEM Forms si basa sul server Forms implementato su JBoss e sul sistema operativo Windows. Tuttavia, se si utilizza un altro sistema operativo, come Unix, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Analogamente, se si utilizza un altro server applicazione J2EE, assicurarsi di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Avvio rapido (modalità SOAP): Creazione di una versione dell&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -142,7 +142,7 @@ public class CreateApplicationVersion_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Esportazione di applicazioni tramite l&#39;API Java {#quick-start-soap-mode-exporting-applications-using-the-java-api}
+## Avvio rapido (modalità SOAP): Esportazione di applicazioni mediante l&#39;API Java {#quick-start-soap-mode-exporting-applications-using-the-java-api}
 
 L&#39;esempio di codice Java seguente esporta un&#39;applicazione utilizzando l&#39;API JAVA.
 
@@ -245,7 +245,7 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Importazione di applicazioni tramite l&#39;API Java {#quick-start-soap-mode-importing-applications-using-the-java-api}
+## Avvio rapido (modalità SOAP): Importazione di applicazioni mediante l&#39;API Java {#quick-start-soap-mode-importing-applications-using-the-java-api}
 
 L&#39;esempio di codice Java seguente importa un&#39;applicazione utilizzando l&#39;API JAVA.
 
@@ -332,7 +332,7 @@ public class ImportLCA_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Ottenimento di un&#39;applicazione tramite l&#39;API Java {#quick-start-soap-mode-getting-a-application-using-the-java-api}
+## Avvio rapido (modalità SOAP): Ottenimento di un&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-getting-a-application-using-the-java-api}
 
 L&#39;esempio di codice Java seguente ottiene un&#39;applicazione utilizzando l&#39;API Java.
 
@@ -439,7 +439,7 @@ public class GetApplication_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP): Ottenimento delle applicazioni tramite l&#39;API Java {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## Avvio rapido (modalità SOAP): Ottenimento delle applicazioni tramite Java API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
 L&#39;esempio di codice Java seguente ottiene le applicazioni utilizzando l&#39;API Java.
 
@@ -643,7 +643,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP):anteprima dell&#39;LiveCycle ES2 e dell&#39;archivio delle applicazioni successivo mediante l&#39;API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Avvio rapido (modalità SOAP):visualizzazione dell&#39;anteprima dell&#39;LiveCycle ES2 e dell&#39;archivio applicazioni successivo tramite l&#39;API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 L&#39;esempio di codice Java riportato di seguito è destinato  anteprima dell&#39;archivio di applicazioni AEM Forms e versioni successive tramite l&#39;API Java.
 
@@ -722,7 +722,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Avvio rapido (modalità SOAP):eliminazione dell&#39;archivio dell&#39;applicazione tramite l&#39;API Java {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Avvio rapido (modalità SOAP):eliminazione dell&#39;archivio dell&#39;applicazione mediante l&#39;API Java {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 Il seguente esempio di codice Java è relativo all&#39;eliminazione di un archivio applicazioni.
 
