@@ -1,6 +1,6 @@
 ---
-title: Utilizzo delle proprietà di contenuto per esportare contenuto
-seo-title: Utilizzo delle proprietà di contenuto per esportare contenuto
+title: Utilizzo delle proprietà di contenuto per esportare il contenuto
+seo-title: Utilizzo delle proprietà di contenuto per esportare il contenuto
 description: La pagina seguente mostra Proprietà app e Nodi.
 seo-description: La pagina seguente mostra Proprietà app e Nodi.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
@@ -11,23 +11,26 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 4%
 
 ---
 
 
-# Utilizzo delle proprietà di contenuto per esportare contenuto{#using-content-properties-to-export-content}
+# Utilizzo delle proprietà contenuto per esportare contenuto{#using-content-properties-to-export-content}
 
 >[!NOTE]
 >
->Adobe consiglia di utilizzare SPA Editor per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
 
 Le app sono rappresentate come *cq:Pages* in AEM.
 
-Condividono le stesse proprietà comuni riscontrate in qualsiasi *cq:Page* oltre ad altre mostrate di seguito che rappresentano le proprietà di supporto dell&#39;integrazione.
+Condividono le stesse proprietà comuni presenti in qualsiasi *cq:Page*, oltre ad altre mostrate di seguito che rappresentano le proprietà di supporto dell&#39;integrazione.
 
 ## Proprietà app {#app-properties}
 
-La tabella seguente mostra le proprietà **dell&#39;app e i nodi**.
+La tabella seguente mostra **Proprietà e nodi dell&#39;app**.
 
 <table>
  <tbody>
@@ -39,7 +42,7 @@ La tabella seguente mostra le proprietà **dell&#39;app e i nodi**.
   <tr>
    <td>dps-cloudConfig</td>
    <td>Stringa:Percorso</td>
-   <td><p>Percorso di un servizio Mobile On-Demand Cloud configurato. Utilizzata per le azioni AEM Mobile per le azioni Mobile On-Demand (chiamata API)</p> <p>Questa associazione viene configurata tramite la sezione Gestisci connessione quando un autore sceglie un servizio cloud Mobile On-Demand a cui associare l'app.</p> </td>
+   <td><p>Percorso di un Cloud Service Mobile On-Demand configurato. Utilizzato per  azioni AEM Mobile su Mobile On-Demand (chiamata API)</p> <p>Questa associazione è configurata tramite la sezione Gestisci connessione quando un autore sceglie un Cloud Service Mobile On-Demand a cui associare l'app.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -49,7 +52,7 @@ La tabella seguente mostra le proprietà **dell&#39;app e i nodi**.
   <tr>
    <td>dps-projectId</td>
    <td>Stringa</td>
-   <td><p>ID/URI del progetto Mobile On-Demand a cui l'app è collegata/associata.</p> <p>Questa associazione è configurata tramite la sezione Gestisci connessione quando un autore sceglie il progetto da un elenco di progetti disponibili per il servizio Mobile On-Demand Cloud Service associato.</p> </td>
+   <td><p>ID/URI del progetto Mobile On-Demand a cui l'app è collegata/associata.</p> <p>Questa associazione viene configurata tramite la sezione Gestisci connessione quando un autore sceglie il progetto da un elenco di progetti disponibili per il Cloud Service Mobile On-Demand associato.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -64,12 +67,12 @@ La tabella seguente mostra le proprietà **dell&#39;app e i nodi**.
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>Data</td>
-   <td>Data dell'ultimo caricamento di risorse condivise da AEM a AEM Mobile.</td>
+   <td>Data dell'ultimo caricamento di risorse condivise da AEM a  AEM Mobile.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>String:userid</td>
-   <td>ID dell'utente che ha eseguito l'ultimo caricamento di richieste di risorse condivise da AEM a AEM Mobile.</td>
+   <td>ID dell'utente che ha eseguito l'ultimo caricamento della richiesta di risorse condivise da AEM a  AEM Mobile.</td>
   </tr>
   <tr>
    <td>page-dashboard-config</td>
@@ -84,7 +87,7 @@ La tabella seguente mostra le proprietà **dell&#39;app e i nodi**.
  </tbody>
 </table>
 
-Potete utilizzare Proprietà ****** contenuto per creare contenuto. Consultate le seguenti risorse per la creazione ed esportazione di articoli e risorse condivise:
+È possibile utilizzare ***Proprietà contenuto*** per creare contenuto. Consultate le seguenti risorse per la creazione ed esportazione di articoli e risorse condivise:
 
 * [Proprietà contenuto](/help/mobile/content-properties.md)
 * [Creazione della configurazione di esportazione degli articoli](/help/mobile/creating-article-export-configuration.md)
