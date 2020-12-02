@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 1%
 
 ---
 
 
 # Specificare le opzioni di configurazione XCI {#specify-xci-configuration-options}
 
-Output consente di specificare un file XCI personalizzato utilizzato per il rendering. (vedere [Specificare i percorsi dei file per Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)). Per impostazione predefinita, Output sostituisce alcune delle opzioni specificate nel file XCI, tra cui:
+Output consente di specificare un file XCI personalizzato utilizzato per il rendering. (Vedere [Specificare i percorsi dei file per Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) Per impostazione predefinita, Output sostituisce alcune delle opzioni specificate nel file XCI, tra cui:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
