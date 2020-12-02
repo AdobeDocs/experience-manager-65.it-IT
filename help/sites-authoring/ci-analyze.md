@@ -12,6 +12,9 @@ discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 translation-type: tm+mt
 source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +63,7 @@ Per modificare il periodo di riferimento di una pagina Approfondimenti contenuto
 
 1. Per modificare la data di fine del periodo di riferimento, trascina il cerchio che appare a destra dell’area ombreggiata fino alla data di fine desiderata.
 
-#### Modifica della granularità del periodo di riferimento {#changing-the-granularity-of-the-reporting-period}
+#### Modifica della granularità del periodo di riferimento  {#changing-the-granularity-of-the-reporting-period}
 
 Modifica il tempo di estensione di ogni punto dei dati nel rapporto. Ad esempio, quando selezioni la granularità Settimana, ciascun punto dati del rapporto Visualizzazioni rappresenta il numero di visualizzazioni in una settimana.
 
@@ -74,7 +77,7 @@ La granularità influisce sui rapporti che rappresentano i dati rispetto al temp
 
 1. Fai clic o tocca sulla granularità desiderata. Una volta selezionato, il rapporto si aggiorna automaticamente in base alla granularità.
 
-### Assegnazione delle attività per Consigli SEO {#assigning-tasks-for-seo-recommendations}
+### Assegnazione delle attività per Consigli SEO  {#assigning-tasks-for-seo-recommendations}
 
 Utilizza il rapporto Consigli SEO per creare attività che migliorano la visibilità della pagina nei motori di ricerca. Per ogni consiglio nel rapporto senza un segno di spunta, puoi creare un’attività da assegnare a un utente necessario per completare il processo.
 
@@ -84,7 +87,7 @@ Lo stato del consiglio SEO indica quando l’attività viene creata ma non è an
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Una volta creata, l’attività viene visualizzata nell’elenco delle attività dell’utente. Per informazioni sulle attività, vedere [Uso delle attività](/help/sites-authoring/task-content.md).
+Una volta creata, l’attività viene visualizzata nell’elenco delle attività dell’utente. Per informazioni sulle attività, vedere [Utilizzo delle attività](/help/sites-authoring/task-content.md).
 
 Segui la procedura seguente per creare un’attività per un consiglio SEO.
 
@@ -94,7 +97,7 @@ Segui la procedura seguente per creare un’attività per un consiglio SEO.
 
 1. Fai clic sull’icona del triangolo circoscritto visualizzata accanto all’icona delle informazioni.
 
-   ![chlimage_1-135](assets/chlimage_1-131.png)
+   ![chlimage_1-131](assets/chlimage_1-131.png)
 
 1. Compila i campi del modulo visualizzati e premi il pulsante Crea:
 
@@ -104,6 +107,7 @@ Segui la procedura seguente per creare un’attività per un consiglio SEO.
    * Descrizione: una descrizione dell’attività necessaria a completare l’attività. La descrizione predefinita è l’informazione che accompagna il consiglio SEO.
    * Priorità attività: la priorità dell’attività.
    * Data di scadenza: la data entro cui l’attività deve essere completata.
+
    **Nota:** l’attività creata contiene inoltre il percorso della pagina a cui si applica il consiglio SEO.
 
 1. Fai clic o tocca Fine per chiudere il messaggio Attività creata.
