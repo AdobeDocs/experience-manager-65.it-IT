@@ -11,25 +11,28 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 0%
 
 ---
 
 
-# Monitoraggio degli eventi {#monitoring-events}
+# Eventi di monitoraggio {#monitoring-events}
 
 Quando la funzionalità di controllo è abilitata, la protezione dei documenti consente di monitorare determinati tipi di eventi. Gli eventi visibili dipendono dal tuo ruolo:
 
-**Utenti:** Può visualizzare gli eventi controllati per i documenti protetti tramite criterio e per tutti i documenti protetti che ricevono e utilizzano.
+**Utenti:** Può visualizzare gli eventi sottoposti a controllo per i documenti protetti tramite criterio e per tutti i documenti protetti che ricevono e utilizzano.
 
-**Coordinatori set di criteri:** Può visualizzare gli eventi controllati, compresi gli eventi relativi a documenti e criteri, per i documenti protetti dai criteri dai relativi set di criteri.
+**Coordinatori set di criteri:** È possibile visualizzare gli eventi sottoposti a controllo, compresi gli eventi dei documenti e dei criteri, per i documenti protetti dai criteri dai relativi set di criteri.
 
-**Amministratori:** Può visualizzare gli eventi controllati relativi a tutti i documenti e gli utenti protetti tramite criterio. Gli amministratori possono inoltre tenere traccia di altri tipi di eventi, inclusi eventi utente, documenti, criteri ed eventi di sistema.
+**Amministratori:** può visualizzare gli eventi sottoposti a controllo correlati a tutti i documenti e gli utenti protetti tramite criterio. Gli amministratori possono inoltre tenere traccia di altri tipi di eventi, inclusi eventi utente, documenti, criteri ed eventi di sistema.
 
 >[!NOTE]
 >
 >Gli eventi eseguiti su una copia di un documento protetto tramite criterio vengono inoltre tracciati come eventi nel documento protetto originale.
 
-Consultate Opzioni [di controllo degli](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options)eventi.
+(Vedere [Opzioni di controllo degli eventi](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).)
 
 Un evento non riuscito viene registrato se un utente non autorizzato tenta di visualizzare un documento o tenta di accedere utilizzando un nome utente o una password non corretti.
 
@@ -45,40 +48,40 @@ Per eseguire il controllo degli eventi, è necessario soddisfare i seguenti requ
 
 * Il sistema o l&#39;amministratore deve abilitare la funzionalità di controllo per il server.
 
-   Consultate [Configurazione del controllo degli eventi e delle impostazioni](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings)di privacy.
+   (Vedere [Configurazione del controllo degli eventi e delle impostazioni di privacy](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
-* Il criterio utilizzato per proteggere il documento deve avere il controllo abilitato. Consultate [Creazione e modifica dei criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+* Il criterio utilizzato per proteggere il documento deve avere il controllo abilitato. (Vedere [Creazione e modifica di criteri](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
-## Ricerca di un evento {#search-for-an-event}
+## Cerca un evento {#search-for-an-event}
 
 È possibile ricercare l&#39;elenco degli eventi e visualizzare descrizioni più dettagliate degli eventi. Le descrizioni dettagliate includono informazioni quali l&#39;ID dell&#39;evento, la descrizione, l&#39;indirizzo IP, l&#39;organizzazione, la data e l&#39;ora in cui si è verificato l&#39;evento, le attività negate e gli eventi offline (quando gli utenti tentano di utilizzare un documento quando non sono connessi alla protezione del documento).
 
 Potete cercare gli eventi nella pagina Eventi utilizzando una combinazione di criteri di ricerca degli eventi e delle date in cui si sono verificati. Gli eventi che potete cercare dipendono dal vostro ruolo:
 
-**Utenti:** Può visualizzare gli eventi controllati per i documenti protetti tramite criterio e per tutti i documenti protetti che ricevono e utilizzano. Sono disponibili le seguenti opzioni di ricerca:
+**Utenti:** Può visualizzare gli eventi sottoposti a controllo per i documenti protetti tramite criterio e per tutti i documenti protetti che ricevono e utilizzano. Sono disponibili le seguenti opzioni di ricerca:
 
-**Eventi relativi a me:** Gli utenti possono trovare gli eventi per qualsiasi documento protetto tramite criterio creato o ricevuto. Ad esempio, se un utente apre, visualizza o stampa un documento protetto da un&#39;altra persona, l&#39;utente visualizza solo questi eventi per tale documento.
+**Eventi correlati a me:** Gli utenti possono trovare eventi per qualsiasi documento protetto tramite criterio creato o ricevuto. Ad esempio, se un utente apre, visualizza o stampa un documento protetto da un&#39;altra persona, l&#39;utente visualizza solo questi eventi per tale documento.
 
-**Eventi relativi ai miei documenti:** Gli utenti possono trovare tutti gli eventi correlati ai propri documenti protetti tramite criterio. Gli utenti visualizzano gli eventi generati da ogni persona che ha gestito i propri documenti.
+**Eventi relativi ai documenti:** gli utenti possono trovare tutti gli eventi correlati ai propri documenti protetti tramite criterio. Gli utenti visualizzano gli eventi generati da ogni persona che ha gestito i propri documenti.
 
-**Coordinatori set di criteri:** Può visualizzare gli eventi controllati, compresi gli eventi relativi a documenti e criteri, per i documenti protetti dai criteri dai relativi set di criteri. Le opzioni disponibili sono:
+**Coordinatori set di criteri:** È possibile visualizzare gli eventi sottoposti a controllo, compresi gli eventi dei documenti e dei criteri, per i documenti protetti dai criteri dai relativi set di criteri. Le opzioni disponibili sono:
 
-**Eventi del documento in cui sono un coordinatore del set di criteri:** I coordinatori di set di criteri che dispongono dell&#39;autorizzazione per la visualizzazione dell&#39;evento possono trovare eventi correlati ai documenti protetti dai relativi set di criteri.
+**Eventi del documento in cui sono un coordinatore del set di criteri:i coordinatori dei set di** criteri che dispongono dell&#39;autorizzazione per l&#39;evento di visualizzazione possono trovare eventi correlati a documenti protetti dai relativi set di criteri.
 
-**Eventi politici in cui sono un coordinatore di set di criteri:** I coordinatori di set di criteri che dispongono dell&#39;autorizzazione per la visualizzazione degli eventi possono trovare gli eventi relativi ai criteri dai rispettivi set di criteri.
+**Eventi dei criteri in cui sono un coordinatore dei set di criteri:i coordinatori dei set di** criteri che dispongono dell&#39;autorizzazione per gli eventi di visualizzazione possono trovare gli eventi correlati ai criteri dai rispettivi set di criteri.
 
-**Amministratori:** Può visualizzare gli eventi controllati relativi a tutti i documenti e gli utenti protetti tramite criterio. Gli amministratori possono anche tenere traccia di altri tipi. Inoltre, gli amministratori possono suddividere ulteriormente le ricerche degli eventi in base al tipo di utente:
+**Amministratori:** può visualizzare gli eventi sottoposti a controllo correlati a tutti i documenti e gli utenti protetti tramite criterio. Gli amministratori possono anche tenere traccia di altri tipi. Inoltre, gli amministratori possono suddividere ulteriormente le ricerche degli eventi in base al tipo di utente:
 
-**Utenti noti:** Gli utenti si trovano nelle directory di origine o sono registrati come utenti esterni.
+**Utenti noti:** gli utenti si trovano nelle directory di origine o sono registrati come utenti esterni.
 
-**Utenti anonimi:** Utenti sconosciuti che accedono a un documento protetto con un criterio che consente l&#39;accesso anonimo.
+**Utenti anonimi:utenti** sconosciuti che accedono a un documento protetto da un criterio che consente l&#39;accesso anonimo.
 
-**Utenti del sistema:** Eventi generati dal server, ad esempio una sincronizzazione della directory.
+**Utenti del sistema:eventi generati dal** server, ad esempio la sincronizzazione di una directory.
 
 1. Nella pagina di protezione del documento, fare clic su Eventi.
 1. Nell’elenco Trova, selezionare i criteri di ricerca da utilizzare. A seconda della selezione nell’elenco Trova, viene visualizzato un secondo elenco che fornisce criteri di ricerca aggiuntivi. Se applicabile, nella casella di testo digitare i criteri di ricerca.
 
-   Per ulteriori dettagli sui tipi di evento specifici, consultate Opzioni [di controllo degli](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options)eventi.
+   Per ulteriori dettagli sui tipi di evento specifici, vedere [Opzioni di controllo degli eventi](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
 1. Nell’elenco Utente, selezionate il tipo di utente che ha eseguito l’evento:
 
