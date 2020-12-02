@@ -1,8 +1,8 @@
 ---
 title: Componenti
 seo-title: Componenti
-description: AEM viene fornito con diversi componenti, che offrono funzionalità complete per gli autori di siti Web.
-seo-description: AEM viene fornito con diversi componenti, che offrono funzionalità complete per gli autori di siti Web.
+description: AEM include diversi componenti predefiniti che offrono funzionalità complete per gli autori di siti web.
+seo-description: AEM include diversi componenti predefiniti che offrono funzionalità complete per gli autori di siti web.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +35,7 @@ Nelle pagine seguenti puoi trovare dei collegamenti verso alcune delle aree prin
 
 * [Componenti per l’authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   I componenti utilizzati per la creazione di contenuti di pagina standard sono contenuti principalmente nei gruppi **Generale**, **Colonne** e **Forms**.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 
