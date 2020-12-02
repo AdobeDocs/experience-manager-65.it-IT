@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di Dynamic Media
 seo-title: Utilizzo di Dynamic Media
-description: Dynamic Media permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando una serie di risorse primarie, Dynamic Media genera e distribuisce in tempo reale diverse varianti di contenuti avanzati attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni
-seo-description: Dynamic Media permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando una serie di risorse primarie, Dynamic Media genera e distribuisce in tempo reale diverse varianti di contenuti avanzati attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni
+description: Dynamic Media permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni
+seo-description: Dynamic Media permette di fornire on-demand risorse visive di marketing e merchandising, ridimensionandole automaticamente per siti web, dispositivi mobili e piattaforme social. Utilizzando una serie di risorse primarie, Dynamic Media genera e offre diverse varianti di contenuti avanzati in tempo reale attraverso la sua rete globale, scalabile e ottimizzata per le prestazioni
 uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -28,5 +28,5 @@ Non è possibile utilizzare Dynamic Media nell’interfaccia utente classica. Co
 
 >[!NOTE]
 >
->If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if [integrate Dynamic Media Classic into AEM](/help/sites-administering/scene7.md). See [enabling Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media è disattivato per impostazione predefinita.
+>Se si utilizza un elemento multimediale dinamico, non è possibile utilizzare simultaneamente caricamenti automatici disponibili se [integrate Dynamic Media Classic in AEM](/help/sites-administering/scene7.md). Vedere [attivazione di contenuti multimediali dinamici](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media è disattivato per impostazione predefinita.
 
