@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 translation-type: tm+mt
 source-git-commit: e3f1c932a5937e8a115e2849935b8f5ea5c2613d
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 100%
 
 ---
 
@@ -25,13 +28,13 @@ Le attività vengono utilizzate anche nei progetti per determinare il livello de
 
 Puoi tenere traccia dell’avanzamento del progetto visualizzando le attività attive o completate all’interno di un progetto, rappresentato dal riquadro **Attività**. L’avanzamento di un progetto può essere determinata da:
 
-* **** Sezione attività: Un avanzamento generale del progetto è rappresentato nella sezione Attività disponibile nella pagina dei dettagli del progetto.
+* **Titolo attività:** l’avanzamento generale del progetto è rappresentato nella sezione Titolo attività, disponibile nella pagina dei dettagli del progetto.
 
-* **** Elenco attività: Quando si fa clic sulla sezione Attività, viene visualizzato un elenco delle attività. Questo elenco contiene informazioni dettagliate su tutte le attività correlate al progetto.
+* **Elenco attività**: quando fai clic su Titolo attività, viene visualizzato un elenco delle attività. L’elenco contiene informazioni dettagliate su tutte le attività correlate al progetto.
 
 Sono elencate sia le attività del flusso di lavoro che quelle create direttamente nel riquadro **Attività**.
 
-### Riquadro attività {#task-tile}
+### Riquadro attività  {#task-tile}
 
 Se un progetto ha attività correlate, viene visualizzato un Riquadro attività all’interno del progetto. Il Riquadro attività mostra lo stato corrente del progetto. Questo si basa sulle attività esistenti all’interno del flusso di lavoro e non include le attività che verranno generate in futuro al procedere del flusso di lavoro. Le informazioni riportate di seguito sono visibili nel riquadro attività:
 
@@ -45,7 +48,7 @@ Se un progetto ha attività correlate, viene visualizzato un Riquadro attività 
 
 Oltre a monitorare i progressi, è anche possibile visualizzare maggiori informazioni sul progetto o modificarlo.
 
-#### Elenco delle attività {#task-list}
+#### Elenco delle attività  {#task-list}
 
 Fai clic sui puntini di sospensione (...) nel riquadro attività per visualizzare l’elenco delle attività correlate al progetto. Le attività sono suddivise per flussi di lavoro principali. I dettagli dell’attività vengono visualizzati insieme ai metadati, come la scadenza, l’assegnatario, la priorità e lo stato.
 
@@ -76,7 +79,7 @@ Per aggiungere un’attività:
 
 1. Tocca o fai clic su **Crea**.
 
-## Lavorare con le attività nella casella in entrata {#working-with-tasks-in-the-inbox}
+## Lavorare con le attività nella casella in entrata  {#working-with-tasks-in-the-inbox}
 
 Un altro modo per accedere alle attività è la Casella in entrata. Dalla casella in entrata puoi aprire il contenuto per implementare le modifiche necessarie. Al termine, l’attività viene impostata su Completato. Le attività compaiono inoltre nella tua casella in entrata quando sono assegnate a un gruppo al quale appartieni. In questo caso, qualsiasi membro del gruppo può eseguire le operazioni necessarie e completare l’attività.
 
