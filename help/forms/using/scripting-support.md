@@ -37,7 +37,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td><p>Non funziona per i menu a discesa e le caselle di riepilogo. <code>PrevText </code>non funziona correttamente per i seguenti casi:</p>
     <ul>
      <li>Digitando alcune chiavi carattere speciali (ad esempio $, (,), &amp;, @ e altro) nei campi numerici dell'iPad e </li>
-     <li>Per il campo Data (data in cui la data viene inserita nel calendario).<br /> </li>
+     <li>Per il campo Data (quando la data viene immessa attraverso il calendario).<br /> </li>
     </ul> <p>L'impostazione del valore tramite script non è supportata.</p> </td>
   </tr>
   <tr>
@@ -48,11 +48,11 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td><code>newtext</code></td>
    <td>Specifica il contenuto del campo dopo che questo è stato modificato in risposta alle azioni dell'utente.</td>
-   <td><p>La <code>newText</code> proprietà non funziona correttamente per i casi seguenti:</p>
+   <td><p>La proprietà <code>newText</code> non funziona correttamente per i seguenti casi:</p>
     <ul>
      <li>Selezione e sostituzione dei testi</li>
      <li>Eliminando, copiando e incollando i testi.</li>
-     <li>Digitando alcuni tasti carattere speciali (ad esempio $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
+     <li>Digitando alcune chiavi carattere speciali (ad esempio $, (, ), &amp;, @ e altro) nei campi numerici<br /> </li>
      <li>Utilizzo di Maiusc+combinazione alfanumerica. </li>
      <li>Quando si utilizzano i campi data/ora.</li>
     </ul>
@@ -131,7 +131,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Specifies whether validation scripts will execute.<br /> </td>
+   <td>Specifica se gli script di convalida verranno eseguiti.<br /> </td>
    <td>Nessuno</td>
   </tr>
   <tr>
@@ -204,17 +204,17 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td><code>formattedValue</code></td>
    <td>Specifica il valore formattato per il campo.</td>
-   <td>L'impostazione <code>formattedValue</code> tramite script non è supportata.</td>
+   <td>L'impostazione di <code>formattedValue</code> tramite script non è supportata.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Specifica il valore di modifica per questo campo.</td>
-   <td>L'impostazione <code>editValue </code>tramite script non è supportata.</td>
+   <td>L'impostazione dello script <code>editValue </code>through non è supportata.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Specifica la stringa del messaggio di convalida del formato per il campo.</td>
-   <td>L'impostazione <code>formatMessage </code>tramite script non è supportata.</td>
+   <td>L'impostazione dello script <code>formatMessage </code>through non è supportata.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -339,7 +339,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td>parentSubform</td>
    <td>Specifica il sottomodulo principale (pagina) del campo.</td>
-   <td>Restituisce sempre il sottomodulo principale invece di restituire il primo sottomodulo primario non di ambito.<br /> </td>
+   <td>Restituisce sempre il sottomodulo principale invece di restituire il primo sottomodulo primario non con ambito.<br /> </td>
   </tr>
   <tr>
    <td>selectedIndex</td>
@@ -380,7 +380,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
 | `remove` | Rimuove un nodo da un elenco di nodi. |
 | `insert` | Inserisce un nodo prima di un nodo specifico nell&#39;elenco dei nodi. |
 
-## node {#node}
+## nodo {#node}
 
 | Proprietà | Descrizione | Eccezione |
 |---|---|---|
@@ -493,7 +493,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
 |---|---|
 | target | L&#39;URL a cui vengono inviati i dati. L&#39;omissione di questo attributo implica che l&#39;applicazione di elaborazione XFA ottiene l&#39;URI utilizzando una tecnica specifica per il prodotto, come l&#39;accesso alle informazioni specifiche per il prodotto nell&#39;oggetto config. |
 
-## tree {#tree}
+## struttura {#tree}
 
 <table>
  <tbody>
@@ -637,7 +637,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td>edge</td>
    <td>L'oggetto edge descrive un arco, una linea o un lato di un bordo o rettangolo.<br /> </td>
-   <td>Gli attributi quali colore, cap e altro non sono supportati.<br /> </td>
+   <td>Attributi come colore, cappuccio e altro non sono supportati.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -720,7 +720,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>didascalia</td>
    <td>L'oggetto caption descrive un'etichetta associata a un oggetto struttura del modulo.</td>
    <td> </td>
   </tr>
@@ -775,7 +775,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
   <tr>
    <td>border</td>
    <td>L'oggetto border descrive il bordo intorno all'oggetto checkButton. </td>
-   <td>Le modifiche si riflettono nel modello e sono disponibili per lo scripting, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell’interfaccia utente.<br /> </td>
+   <td>Le modifiche si riflettono nel modello e sono disponibili per lo scripting, ma non sono sincronizzate con gli elementi HTML. Di conseguenza, le modifiche non vengono riportate nell'interfaccia utente.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -825,7 +825,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
  </tbody>
 </table>
 
-## imageEdit {#imageedit}
+## imageEdit  {#imageedit}
 
 | **Proprietà** | **Descrizione** | **Eccezione** |
 |---|---|---|
@@ -948,7 +948,7 @@ I metodi e le proprietà JavaScript, FormCalc supportati nei moduli HTML5 sono e
    <td>Nessuno</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>didascalia</td>
    <td>L'oggetto caption descrive un'etichetta associata a un oggetto struttura del modulo.<br /> </td>
    <td>Nessuno</td>
   </tr>
@@ -1117,7 +1117,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
 
 ### Funzioni supportate da FormCalc {#formcalc-supported-functions}
 
-### Supporto per le espressioni FormCalc {#formcalc-expression-support}
+### Supporto delle espressioni FormCalc {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1158,7 +1158,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
   <tr>
    <td>per</td>
    <td><br type="_moz" /> </td>
-   <td>per i = da 100 a 1 <br /> do s = s + i endfor</td>
+   <td>per i = 100 fino a 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>per ogni</td>
@@ -1173,7 +1173,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
  </tbody>
 </table>
 
-### Supporto API di Acrobat {#acrobat-api-support}
+###  Supporto API Acrobat {#acrobat-api-support}
 
 1. **Funzioni aritmetiche**
 
@@ -1273,7 +1273,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
   <tr>
    <td>app.execDialog()</td>
    <td>Visualizza una finestra di dialogo modale per l'utente. Le finestre di dialogo modali devono essere chiuse dall'utente prima che l'applicazione host possa essere nuovamente utilizzata direttamente.</td>
-   <td>Non viene eseguita alcuna azione.<br /> </td>
+   <td>Nessuna azione eseguita.<br /> </td>
   </tr>
   <tr>
    <td>app.launchURL()</td>
@@ -1313,7 +1313,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
   <tr>
    <td>app.calculate</td>
    <td>Se true (il valore predefinito), è possibile eseguire i calcoli. Se false, i calcoli non sono consentiti.</td>
-   <td>Sempre true per i moduli HTML5.</td>
+   <td>Sempre true per HTMl5 Forms.</td>
   </tr>
   <tr>
    <td>app.constants</td>
@@ -1332,7 +1332,7 @@ FormCalc è un linguaggio XFA specifico per la creazione di origini di logica e 
   </tr>
   <tr>
    <td>app.language</td>
-   <td>Lingua del visualizzatore Acrobat in esecuzione.</td>
+   <td>Lingua del visualizzatore  Acrobat in esecuzione.</td>
    <td>Sempre "ENU" per i moduli HTMl5.</td>
   </tr>
  </tbody>
@@ -1353,4 +1353,4 @@ Sono supportati i seguenti eventi XFA lato client:
 
 >[!NOTE]
 >
->Il rendering dei moduli HTML5 viene eseguito sul lato client (browser). Si consiglia di utilizzare gli script di **convalida** e **calcolo** lato client invece degli script sul lato server.
+>Il rendering dei moduli HTML5 viene eseguito sul lato client (browser). Si consiglia di utilizzare script sul lato client **validate** e **calculate** invece di script sul lato server.
