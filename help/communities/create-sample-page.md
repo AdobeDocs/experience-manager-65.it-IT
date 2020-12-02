@@ -22,21 +22,21 @@ ht-degree: 2%
 
 A partire da AEM Community 6.1, il modo più semplice per creare una pagina di esempio è creare un sito community semplice, costituito semplicemente da una funzione Pagina.
 
-Questo includerà un componente parsys in modo da poter [abilitare i componenti per l’authoring](basics.md#accessing-communities-components).
+Questo includerà un componente parsys in modo da poter [abilitare i componenti per l&#39;authoring](basics.md#accessing-communities-components).
 
-Un&#39;altra opzione per l&#39;esplorazione con componenti campione consiste nell&#39;utilizzare le funzioni presentate nella Guida [ai componenti](components-guide.md)comunitari.
+Un&#39;altra opzione per l&#39;esplorazione con componenti di esempio consiste nell&#39;utilizzare le funzioni presenti nella [Guida ai componenti della community](components-guide.md).
 
-## Creazione di un sito community {#create-a-community-site}
+## Creare un sito community {#create-a-community-site}
 
 È molto simile alla creazione di un nuovo sito descritto in [Guida introduttiva  AEM Communities](getting-started.md).
 
-La differenza principale è che questa esercitazione creerà un nuovo modello di sito community che contiene solo la funzione [](functions.md#page-function) Pagina per creare un sito community semplice privo di altre funzioni (diverse dalle funzioni precablate di base per tutti i siti community).
+La differenza principale è che questa esercitazione creerà un nuovo modello di sito community che contiene solo la funzione [Page](functions.md#page-function) per creare un sito community semplice privo di altre funzioni (diverse dalle funzioni precablate di base per tutti i siti community).
 
-### Crea nuovo modello del sito {#create-new-site-template}
+### Crea nuovo modello di sito {#create-new-site-template}
 
-Per iniziare, create un semplice modello [di sito per](sites.md)community.
+Per iniziare, create un semplice [modello di sito community](sites.md).
 
-Per la navigazione globale in un’istanza di creazione, selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > Modelli **** sito.
+Per la navigazione globale in un&#39;istanza di creazione, selezionate **[!UICONTROL Strumenti]** > **[!UICONTROL Community]** > **[!UICONTROL Modelli di sito]**.
 
 ![create-site-template](assets/create-site-template1.png)
 
@@ -51,7 +51,7 @@ Per la navigazione globale in un’istanza di creazione, selezionate **[!UICONTR
 
 * STRUTTURA
 
-   * Trascinate una `Page` funzione nel generatore di modelli
+   * Trascinate una funzione `Page` nel generatore di modelli
    * Per i dettagli della funzione di configurazione, immettere
 
       * `Title`: Pagina singola
@@ -59,20 +59,20 @@ Per la navigazione globale in un’istanza di creazione, selezionate **[!UICONTR
 
 ![site-template-editor-structure](assets/site-template-editor1.png)
 
-* Seleziona **`Save`** per la configurazione
+* Selezionare **`Save`** per la configurazione
 * Selezionare **`Save`** per il modello di sito
 
 ### Crea nuovo sito community {#create-new-community-site}
 
 Ora create un nuovo sito community basato sul modello di sito semplice.
 
-Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!UICONTROL Community > Siti]**.
+Dopo aver creato il modello di sito, dalla navigazione globale selezionare **[!UICONTROL Community > Siti]**.
 
 ![create-community-site](assets/create-community-site1.png)
 
-* Seleziona **`Create`** icona
+* Seleziona l&#39;icona **`Create`**
 
-* Incremento `1 - Site Template`
+* Passaggio `1 - Site Template`
 
    * `Title`: Sito community semplice
    * `Description`: Un sito community composto da una singola pagina di sperimentazione.
@@ -82,13 +82,13 @@ Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!U
 
       * url = http://localhost:4502/content/sites/sample
 
-      * `Template`: scegli `Single Page Template`
+      * `Template`: scegli  `Single Page Template`
 
       ![create-community-site-template](assets/create-community-site-template.png)
 
 
 * Seleziona `Next`
-* Incremento `2 - Design`
+* Passaggio `2 - Design`
 
    * Selezionare una progettazione
 
@@ -105,7 +105,7 @@ Dopo aver creato il modello di sito, nella navigazione globale selezionate **[!U
 
 ![sito di pubblicazione](assets/publish-site.png)
 
-Dalla console [Siti](sites-console.md)community, selezionate l’icona Pubblica per pubblicare il sito, per impostazione predefinita, su http://localhost:4503.
+Dalla [console Siti della community](sites-console.md), selezionate l&#39;icona Pubblica per pubblicare il sito, per impostazione predefinita, su http://localhost:4503.
 
 ## Aprire il sito in modalità di modifica {#open-the-site-on-author-in-edit-mode}
 
@@ -113,12 +113,12 @@ Dalla console [Siti](sites-console.md)community, selezionate l’icona Pubblica 
 
 Selezionate l’icona del sito aperto per visualizzare il sito in modalità di modifica.
 
-L’URL sarà [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
+L&#39;URL sarà [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![author-site](assets/author-site.png)
 
 Nella semplice home page è possibile vedere cosa è preconnesso attraverso le funzioni e i modelli della community, e giocare con l&#39;aggiunta e la configurazione di componenti della community.
 
-## Visualizza sito su Pubblica {#view-site-on-publish}
+## Visualizza sito sulla pubblicazione {#view-site-on-publish}
 
-Dopo aver pubblicato la pagina, aprite la pagina nell’istanza [di](http://localhost:4503/content/sites/sample/en.html) pubblicazione per sperimentare le funzioni di visitatore anonimo del sito, membro firmato o amministratore. Il collegamento Amministrazione visibile nell’ambiente di authoring non viene visualizzato nell’ambiente di pubblicazione a meno che un amministratore non effettui l’accesso.
+Dopo aver pubblicato la pagina, aprite la pagina nell&#39; [istanza di pubblicazione](http://localhost:4503/content/sites/sample/en.html) per sperimentare le funzioni di visitatore anonimo del sito, membro registrato o amministratore. Il collegamento Amministrazione visibile nell’ambiente di authoring non viene visualizzato nell’ambiente di pubblicazione a meno che un amministratore non effettui l’accesso.
